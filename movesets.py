@@ -1,17 +1,18 @@
-from bs4 import BeautifulSoup
 import requests
 import json
 url = "http://www.smogon.com/dex/api/query"
 
-fields = {"tag":{"gen":"xy","alias":"ou"},"$":["name","alias","gen","description",{"genfamily":["alias","gen"]},{"pokemonalts":["name","alias","base_alias","gen",{"types":["alias","name","gen"]},{"abilities":["alias","name","gen"]},{"tags":["name","alias","shorthand","gen"]},"weight","height","hp","patk","pdef","spatk","spdef","spe"]}]}
+fields = ["name", "alias", {"movesets":["name",
+                                        {"items":["alias","name"]},
+                                        {"abilities":["alias","name","gen"]},
+                                        {"evconfigs":["hp","patk","pdef","spatk","spdef","spe"]},
+                                        {"natures":["hp","patk","pdef","spatk","spdef","spe"]}]}]
 
-params = {"q": json.dumps(fields)}
+query = {"pokemon":{"gen":"xy","alias":"abomasnow"}, "$": fields}
+params = {"q": json.dumps(query)}
 
-results = requests.get(url, params=params)
-results = results.json()
-if 'result' not in results:
-    print results
+results = requests.get(url, params=params).json()
+if 'result' in results:
+    print results['result']
 else:
-    for result in results["result"]:
-        for alts in result['pokemonalts']:
-            print "Pokemon:", alts["name"]
+    print results
