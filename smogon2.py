@@ -113,13 +113,24 @@ class Move():
         self.accuracy = accuracy
 
 if __name__ == "__main__":
+    f = open("crashes.txt")
+    crashes = f.read()
+    f2 = open("autocrash.txt", "a")
+    f2.write("Crashes: \n")
     smogon = Smogon()
     pokes = smogon.get_all_pokemon()
     poke_objects = []
     for poke in pokes:
-        typing, movesets = smogon.get_pokemon_info(poke)
-        poke_obj = smogon.convert_to_pokemon(typing, movesets)
-        poke_objects.append(poke_obj)
+        try:
+            print poke
+            typing, movesets = smogon.get_pokemon_info(poke)
+            poke_obj = smogon.convert_to_pokemon(typing, movesets)
+            poke_objects.append(poke_obj)
+        except IndexError:
+            f2.write(poke + "\n")
+            continue
+    f2.close()
+
     #typing, movesets = smogon.get_pokemon_info('infernape')
     #poke = smogon.convert_to_pokemon(typing, movesets)
     #poke_dict = poke.to_dict()
