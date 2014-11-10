@@ -7,6 +7,18 @@ class Smogon():
     def __init__(self):
         self.url = self.BASE_URL
 
+    def get_all_pokemon(self):
+        fields = ["name", "alias"]
+        query = {"pokemonalt":{"gen":"xy"}, "$": fields}
+        params = {"q": json.dumps(query)}
+        output = requests.get(self.url, params=params)
+        output = output.json()
+        names = output['result']
+        poke_names = []
+        for name in names:
+            poke_names.append(name['alias'])
+        return poke_names
+
     def get_pokemon_info(self, pokemon):
         moveset_fields = ["name", "alias", {"movesets":["name",
                                                 {"items":["alias","name"]},
@@ -24,9 +36,9 @@ class Smogon():
         typing_params = {"q": json.dumps(typing_query)}
         typing_output = requests.get(self.url, params=typing_params)
         typing_output = typing_output.json()
-        return moveset_output, typing_output
+        return typing_output, moveset_output
 
-    def convert_to_pokemon(self, moveset_output, typing_output):
+    def convert_to_pokemon(self, typing_output, moveset_output):
         moveset_results = moveset_output['result']
         movesets = moveset_results[0]['movesets']
         poke_movesets = []
@@ -51,20 +63,23 @@ class Smogon():
             type_list.append(poke_type['alias'])
         poke = SmogonPokemon(type_list, poke_movesets)
         return poke
-        #for moveset in movesets:
-            #print moveset['name']
+
 
 class SmogonPokemon():
     def __init__(self, typing, movesets):
         #self.name = name
         self.typing = typing
         self.movesets = movesets
+    def to_dict(self):
+        dictionary = {'typing': self.typing, 'movesets': [moveset.to_dict() for moveset in self.movesets]}
+        return dictionary
     def set_name(self, name):
         self.name = name
     def set_typing(self, typing):
         self.typing = typing
     def set_movesets(self, movesets):
         self.movesets = movesets
+
 
 class SmogonMoveset():
     def __init__(self, name, item, ability, evs, nature, moves):
@@ -74,6 +89,9 @@ class SmogonMoveset():
         self.evs = evs
         self.nature = nature
         self.moves = moves
+    def to_dict(self):
+        dictionary = {'name': self.name, 'item': self.item, 'ability': self.ability, 'evs': self.evs, 'nature': self.nature, 'moves': self.moves}
+        return dictionary
     def set_name(self, name):
         self.name = name
     def set_item(self, item):
@@ -87,11 +105,24 @@ class SmogonMoveset():
     def set_moves(self, moves):
         self.moves = moves
 
+class Move():
+    def __init__(self, name, typing, power, accuracy):
+        self.name = name
+        self.typing = typing
+        self.power = power
+        self.accuracy = accuracy
+
 if __name__ == "__main__":
     smogon = Smogon()
-    name = "infernape"
-    typing, movesets = smogon.get_pokemon_info(name)
-    poke = smogon.convert_to_pokemon(typing, movesets)
-    print poke.typing
+    pokes = smogon.get_all_pokemon()
+    poke_objects = []
+    for poke in pokes:
+        typing, movesets = smogon.get_pokemon_info(poke)
+        poke_obj = smogon.convert_to_pokemon(typing, movesets)
+        poke_objects.append(poke_obj)
+    #typing, movesets = smogon.get_pokemon_info('infernape')
+    #poke = smogon.convert_to_pokemon(typing, movesets)
+    #poke_dict = poke.to_dict()
+    #print poke_dict['movesets'][1]['ability']
     #poke = smogon.convert_to_pokemon(output)
     #print poke.movesets[0].nature
