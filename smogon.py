@@ -1,6 +1,5 @@
 import requests
 import json
-from pokemon import Pokemon
 
 class Smogon():
     BASE_URL = "http://www.smogon.com/dex/api/query"
@@ -31,21 +30,29 @@ class Smogon():
         moveset_params = {"q": json.dumps(moveset_query)}
         moveset_output = requests.get(self.url, params=moveset_params)
         moveset_output = moveset_output.json()
-        typing_fields = ["name","alias","gen",{"types":["alias","name","gen"]}]
-        typing_query = {"pokemonalt":{"gen":"xy","alias":"%s" % pokemon}, "$": typing_fields}
-        typing_params = {"q": json.dumps(typing_query)}
-        typing_output = requests.get(self.url, params=typing_params)
-        typing_output = typing_output.json()
-        return typing_output, moveset_output
+        meta_fields = ["name","alias","gen",{"types":["alias","name","gen"]}, {"abilities":["alias","name","gen"]}]
+        meta_query = {"pokemonalt":{"gen":"xy","alias":"%s" % pokemon}, "$": meta_fields}
+        meta_params = {"q": json.dumps(meta_query)}
+        meta_output = requests.get(self.url, params=meta_params)
+        meta_output = meta_output.json()
+        return pokemon, meta_output, moveset_output
 
-    def convert_to_pokemon(self, typing_output, moveset_output):
+    def convert_to_pokemon(self, pokemon, meta_output, moveset_output):
         moveset_results = moveset_output['result']
         movesets = moveset_results[0]['movesets']
         poke_movesets = []
+        meta_results = meta_output['result']
+        abilities = meta_results[0]['abilities']
         for moveset in movesets:
+            if len(moveset['abilities']) != 0:
+                ability = moveset['abilities'][0]['alias']
+            else:
+                ability = abilities[0]['alias']
             name = moveset['name']
-            ability = moveset['abilities'][0]['alias']
-            item = moveset['items'][0]['alias']
+            if len(moveset['items']) != 0:
+                item = moveset['items'][0]['alias']
+            else:
+                item = ""
             evs = moveset['evconfigs'][0]
             moveslots = moveset['moveslots']
             nature = moveset['natures'][0]
@@ -57,21 +64,20 @@ class Smogon():
             poke_moveset = SmogonMoveset(name, item, ability, evs, nature, moves)
             poke_movesets.append(poke_moveset)
         type_list = []
-        typing_results = typing_output['result']
-        types = typing_results[0]['types']
+        types = meta_results[0]['types']
         for poke_type in types:
             type_list.append(poke_type['alias'])
-        poke = SmogonPokemon(type_list, poke_movesets)
+        poke = SmogonPokemon(pokemon, type_list, poke_movesets)
         return poke
 
 
 class SmogonPokemon():
-    def __init__(self, typing, movesets):
-        #self.name = name
+    def __init__(self, name, typing, movesets):
+        self.name = name
         self.typing = typing
         self.movesets = movesets
     def to_dict(self):
-        dictionary = {'typing': self.typing, 'movesets': [moveset.to_dict() for moveset in self.movesets]}
+        dictionary = {'name': self.name, 'typing': self.typing, 'movesets': [moveset.to_dict() for moveset in self.movesets]}
         return dictionary
     def set_name(self, name):
         self.name = name
@@ -80,6 +86,11 @@ class SmogonPokemon():
     def set_movesets(self, movesets):
         self.movesets = movesets
 
+    @staticmethod
+    def from_dict(dictionary):
+        return SmogonPokemon(dictionary['name'], dictionary['typing'], )
+
+poke = SmogonPokemon.from_dict(dictionary)
 
 class SmogonMoveset():
     def __init__(self, name, item, ability, evs, nature, moves):
@@ -113,27 +124,17 @@ class Move():
         self.accuracy = accuracy
 
 if __name__ == "__main__":
-    f = open("crashes.txt")
-    crashes = f.read()
-    f2 = open("autocrash.txt", "a")
-    f2.write("Crashes: \n")
     smogon = Smogon()
     pokes = smogon.get_all_pokemon()
     poke_objects = []
     for poke in pokes:
         try:
             print poke
-            typing, movesets = smogon.get_pokemon_info(poke)
-            poke_obj = smogon.convert_to_pokemon(typing, movesets)
-            poke_objects.append(poke_obj)
+            poke, typing, movesets = smogon.get_pokemon_info(poke)
+            poke_obj = smogon.convert_to_pokemon(poke, typing, movesets)
+            poke_objects.append(poke_obj.to_dict())
         except IndexError:
-            f2.write(poke + "\n")
-            continue
-    f2.close()
+            print "error: " + poke
+    with open('poke.json', 'w') as f:
+        f.write(json.dumps(poke_objects, sort_keys=True,indent=4, separators=(',', ': ')))
 
-    #typing, movesets = smogon.get_pokemon_info('infernape')
-    #poke = smogon.convert_to_pokemon(typing, movesets)
-    #poke_dict = poke.to_dict()
-    #print poke_dict['movesets'][1]['ability']
-    #poke = smogon.convert_to_pokemon(output)
-    #print poke.movesets[0].nature
