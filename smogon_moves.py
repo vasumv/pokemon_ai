@@ -56,7 +56,7 @@ class SmogonMoves():
             with open("data/moves.json", "a") as f:
                 f.write(output)
 
-
+'''
 move = SmogonMoves()
 moves = move.get_all_moves()
 for poke_move in moves:
@@ -65,3 +65,4 @@ for poke_move in moves:
         continue
     info = move.get_move_info(poke_move)
     move.write_damage_move(poke_move, info)
+'''
