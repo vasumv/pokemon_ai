@@ -5,28 +5,56 @@ import re
 from math import floor
 
 class Pokemon():
-    def __init__(self, name, typing, stats, moveset):
+    def __init__(self, name, typing, stats, moveset, alive=True, status=None, backup_switch=""):
         self.name = name
         self.typing = typing
         self.stats = stats
         self.moveset = moveset
         self.final_stats = {}
+        self.alive = alive
+        self.item = moveset.item
+        self.status = status
+        self.backup_switch = backup_switch
         for stat_name, value in self.stats.items():
             if stat_name != 'hp':
                 self.final_stats[stat_name] = floor(floor((2 * value + 31 + moveset.evs[stat_name] / 4.0) + 5) * moveset.nature[stat_name])
             else:
                 self.final_stats[stat_name] = floor((2 * value + 31 + moveset.evs[stat_name] / 4.0) + 110)
+        self.health = self.final_stats['hp']
 
     def get_stat(self, stat_name):
         return self.final_stats[stat_name]
 
+    def set_status(self, status):
+        print self.name, "got", status
+        self.status = status
+
+    def copy(self):
+        poke = Pokemon(self.name, list(self.typing), self.stats, self.moveset)
+        poke.health = self.health
+        poke.alive = self.alive
+        poke.item = self.item
+        return poke
+
+    def __repr__(self):
+        return "%s(%f, %s)" % (self.name, self.health, self.item)
 
 class Team():
     def __init__(self, poke_list):
         self.poke_list = poke_list
+        self.primary_poke = 0
+
+    def copy(self):
+        return Team([p.copy() for p in self.poke_list])
+
+    def primary(self):
+        return self.poke_list[self.primary_poke]
 
     def __getitem__(self, index):
         return self.poke_list.__getitem__(index)
+
+    def __repr__(self):
+        return "[" + ', '.join([repr(x) for x in self.poke_list]) + "]"
 
     @staticmethod
     def convert_nature(nature):
@@ -137,15 +165,10 @@ class Team():
             poke = Pokemon(name, typing, stats, moveset)
             poke_list.append(poke)
         return Team(poke_list)
+
 with open('data/poke.json') as f:
     data = json.loads(f.read())
     poke_dict = smogon.Smogon.convert_to_dict(data)
     with open("pokemon_team2.txt", "r") as f:
         team_text = f.read()
         pokes = Team.make_team(team_text, poke_dict)
-        print pokes[0].get_stat('hp')
-        print pokes[0].get_stat('patk')
-        print pokes[0].get_stat('pdef')
-        print pokes[0].get_stat('spatk')
-        print pokes[0].get_stat('spdef')
-        print pokes[0].get_stat('spe')

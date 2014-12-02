@@ -131,13 +131,6 @@ class SmogonMoveset():
     def set_moves(self, moves):
         self.moves = moves
 
-class Move():
-    def __init__(self, name, typing, power, accuracy):
-        self.name = name
-        self.typing = typing
-        self.power = power
-        self.accuracy = accuracy
-
 if __name__ == "__main__":
     smogon = Smogon()
     pokes = smogon.get_all_pokemon()
