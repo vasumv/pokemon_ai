@@ -15,6 +15,15 @@ class Pokemon():
         self.item = moveset.item
         self.status = status
         self.backup_switch = backup_switch
+        self.stages = {
+            'patk': 0,
+            'spatk': 0,
+            'pdef': 0,
+            'spdef': 0,
+            'spe': 0,
+            'acc': 0,
+            'eva': 0
+        }
         for stat_name, value in self.stats.items():
             if stat_name != 'hp':
                 self.final_stats[stat_name] = floor(floor((2 * value + 31 + moveset.evs[stat_name] / 4.0) + 5) * moveset.nature[stat_name])
@@ -34,6 +43,7 @@ class Pokemon():
         poke.health = self.health
         poke.alive = self.alive
         poke.item = self.item
+        poke.stages = self.stages
         return poke
 
     def __repr__(self):

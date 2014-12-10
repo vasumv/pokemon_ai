@@ -7,12 +7,12 @@ def void_handler(gamestate, my=True):
 
 class Move:
     def __init__(self, name,
-                       power=None,
-                       category=None,
-                       priority=0,
-                       type=None,
-                       accuracy=1.0,
-                       handler=void_handler
+                 power=0,
+                 category=None,
+                 priority=0,
+                 type=None,
+                 accuracy=1.0,
+                 handler=void_handler
                  ):
         self.name = name
         self.power = power
@@ -24,6 +24,43 @@ class Move:
     def handle(self, gamestate, my=True):
         return self.handler(gamestate, my=my)
 
+
+class BoostingMove(Move):
+    def __init__(self, name,
+                 boosts={},
+                 category=None,
+                 priority=0,
+                 type=None,
+                 accuracy=1.0,
+                 handler=void_handler,
+                 ):
+        Move.__init__(self, name,
+                      category=category,
+                      priority=priority,
+                      type=type,
+                      accuracy=accuracy,
+                      handler=handler
+                      )
+        self.boosts = boosts
+
+    def handle(self, gamestate, my=True):
+        if my:
+            poke = gamestate.my_team.primary()
+        else:
+            poke = gamestate.opp_team.primary()
+
+        for boost, amount in self.boosts.items():
+            increase = poke.stages[boost] + amount
+            if increase < -6 or increase > 6:
+                continue
+            poke.stages[boost] = increase
+            print "%s increased %s by %d stages and is now at stage %d" % (
+                        poke.name,
+                        boost,
+                        amount,
+                        poke.stages[boost]
+                        )
+
 class DamagingMove(Move):
 
     def handle(self, gamestate, my=True):
@@ -34,39 +71,55 @@ class DamagingMove(Move):
             attacker = gamestate.opp_team.primary()
             defender = gamestate.my_team.primary()
         if self.category == "Physical":
-            attack = attacker.get_stat("patk")
-            defense = defender.get_stat("pdef")
+            atks = "patk"
+            defs = "pdef"
         else:
-            attack = attacker.get_stat("spatk")
-            defense = defender.get_stat("spdef")
+            atks = "spatk"
+            defs = "spdef"
+        attack = attacker.get_stat(atks)
+        defense = defender.get_stat(defs)
+        print attacker.stages[atks]
+        abs_atk_buffs = 1.0 + 0.5 * attacker.stages[atks]
+        print abs_atk_buffs
+        abs_def_buffs = 1.0 + 0.5 * defender.stages[defs]
+        atk_stage_multiplier = abs_atk_buffs if attacker.stages[atks] > 0 else 1 / abs_atk_buffs
+        def_stage_multiplier = abs_def_buffs if attacker.stages[defs] > 0 else 1 / abs_def_buffs
         stab = 1.5 if self.type in attacker.typing else 1
+        accuracy = self.accuracy
+        print "accuracy: ", accuracy
+        r_acc = random.random()
         type = 1
         type_multipliers = [get_multiplier(x, self.type) for x in defender.typing]
         for x in type_multipliers:
             type *= x
         critical = 1
-        other = 1
+        other = 1.0 * atk_stage_multiplier / def_stage_multiplier
         r = 1
         modifier = stab * type * critical * other * r
         damage = (((42.0) * attack/defense * self.power)/50 + 2) * modifier
-        print "%s took %f damage" % (
-            defender.name,
-            damage
-        )
-        print "%s has %f attack" % (
-            attacker.name,
-            attack
-        )
-        print "%s has %f defense" % (
-            defender.name,
-            defense
-        )
-        defender.health -= damage
-        defender.health = floor(defender.health)
-        print "%s has %f health." % (
-            defender.name,
-            defender.health
-        )
+        if r_acc < accuracy:
+            print "%s has %f attack" % (
+                attacker.name,
+                attack
+            )
+            print "%s has %f defense" % (
+                defender.name,
+                defense
+            )
+            print "%s took %f damage" % (
+                defender.name,
+                damage
+            )
+            defender.health -= damage
+            defender.health = floor(defender.health)
+            print "%s has %f health." % (
+                defender.name,
+                defender.health
+            )
+        else:
+            print "%s missed!" % (
+                attacker.name
+            )
         return self.handler(gamestate, my=my)
 
 def default_handler(gamestate, my=True):

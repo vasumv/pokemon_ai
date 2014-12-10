@@ -23,7 +23,7 @@ class SmogonMoves():
         output = requests.get(self.url, params=params)
         output = output.json()
         return output
-    def write_damage_move(self, move, output):
+    def write_move(self, move, output):
         result = output['result']
         category = result[0]['category']
         if category == "Physical" or category == "Special":
@@ -53,10 +53,22 @@ class SmogonMoves():
                           type,
                           accuracy
                           )
-            with open("data/moves.json", "a") as f:
-                f.write(output)
+        else:
+            name = result[0]['name']
+            type = result[0]['type']['name']
+            output = """"%s": Move("%s",
+                          category="%s",
+                          type="%s"),\n""" % (
+                          name,
+                          name,
+                          category,
+                          type
+                          )
+        with open("data/moves.json", "a") as f:
+            f.write(output)
 
-'''
+
+
 move = SmogonMoves()
 moves = move.get_all_moves()
 for poke_move in moves:
@@ -64,5 +76,4 @@ for poke_move in moves:
     if poke_move == "Pursuit":
         continue
     info = move.get_move_info(poke_move)
-    move.write_damage_move(poke_move, info)
-'''
+    move.write_move(poke_move, info)
