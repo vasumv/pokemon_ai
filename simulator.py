@@ -25,6 +25,7 @@ class Simulator():
 
         if my_action.is_move():
             my_move = moves[gamestate.my_team.primary().moveset.moves[my_action.move_index]]
+            opp_move = moves["Noop"]
         if opp_action.is_move():
             opp_move = moves[gamestate.opp_team.primary().moveset.moves[opp_action.move_index]]
 
@@ -97,5 +98,5 @@ with open("pokemon_team.txt") as f1, open("pokemon_team2.txt") as f2, open("data
     opp = Action.create("switch 2")
     x = simulator.simulate(gamestate, my, opp)
     my = Action.create("move 2")
-    opp = Action.create("move 3")
+    opp = Action.create("move 0")
     x = simulator.simulate(x, my, opp)

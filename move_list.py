@@ -2,6 +2,7 @@ from moves import DamagingMove
 from moves import Move
 from moves import BoostingMove
 moves = {
+    "Noop": Move("Noop"),
     "Absorb": DamagingMove("Absorb",
                            power=20,
                            category="Special",

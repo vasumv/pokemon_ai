@@ -55,7 +55,9 @@ class Team():
         self.primary_poke = 0
 
     def copy(self):
-        return Team([p.copy() for p in self.poke_list])
+        team = Team([p.copy() for p in self.poke_list])
+        team.primary_poke = self.primary_poke
+        return team
 
     def primary(self):
         return self.poke_list[self.primary_poke]
