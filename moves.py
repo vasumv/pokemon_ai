@@ -83,7 +83,7 @@ class DamagingMove(Move):
         print abs_atk_buffs
         abs_def_buffs = 1.0 + 0.5 * defender.stages[defs]
         atk_stage_multiplier = abs_atk_buffs if attacker.stages[atks] > 0 else 1 / abs_atk_buffs
-        def_stage_multiplier = abs_def_buffs if attacker.stages[defs] > 0 else 1 / abs_def_buffs
+        def_stage_multiplier = abs_def_buffs if defender.stages[defs] > 0 else 1 / abs_def_buffs
         stab = 1.5 if self.type in attacker.typing else 1
         accuracy = self.accuracy
         print "accuracy: ", accuracy

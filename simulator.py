@@ -95,7 +95,7 @@ with open("pokemon_team.txt") as f1, open("pokemon_team2.txt") as f2, open("data
     gamestate = GameState(my_team, opp_team)
     simulator = Simulator()
     my = Action.create("move 0")
-    opp = Action.create("switch 2")
+    opp = Action.create("switch 3")
     x = simulator.simulate(gamestate, my, opp)
     my = Action.create("move 2")
     opp = Action.create("move 0")
