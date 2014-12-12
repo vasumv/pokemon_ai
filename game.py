@@ -5,27 +5,30 @@ from gamestate import GameState
 from simulator import Simulator
 from gamestate import Action
 
-def get_action(state, simulator, depth=2):
+def get_action(state, simulator, depth=1):
     if depth == 0:
         return None, state.evaluate()
     my_legal_actions = state.get_legal_actions(0)
     opp_legal_actions = state.get_legal_actions(1)
-
+    cache = {}
     my_v = float("-inf")
     best_action = None
     for my_action in my_legal_actions:
-        print "My Action:", my_action
+        #print "My Action:", my_action
         opp_v = float("inf")
         for opp_action in opp_legal_actions:
-            print "I'm trying", my_action, opp_action
+            #print "I'm trying", my_action, opp_action
             new_state = simulator.simulate(state, my_action, opp_action)
-            _, state_value = get_action(new_state, simulator, depth - 1)
-            print "Value:", state_value
+            if new_state.to_tuple() in cache:
+                best_action, state_value = cache[new_state.to_tuple()]
+            best_action, state_value = get_action(new_state, simulator, depth - 1)
+            cache[new_state.to_tuple()] = (best_action, state_value)
+            #print "Value:", state_value
             opp_v = min(state_value, opp_v)
         if opp_v > my_v:
             best_action = my_action
             my_v = opp_v
-        print "Better", best_action, my_v
+        #print "Better", best_action, my_v
     return best_action, my_v
 
 with open("pokemon_team3.txt") as f1, open("pokemon_team2.txt") as f2, open("data/poke.json") as f3:

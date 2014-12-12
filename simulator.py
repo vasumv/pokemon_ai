@@ -46,26 +46,26 @@ class Simulator():
 
     def make_move(self, gamestate, my_move, opp_move, my=True):
         if my:
-            print "I(%s) used %s." % (
-                gamestate.my_team.primary(),
-                my_move.name
-            )
+            #print "I(%s) used %s." % (
+                #gamestate.my_team.primary(),
+                #my_move.name
+            #)
             my_move.handle(gamestate, True)
-            print "Opp(%s) used %s." % (
-                gamestate.opp_team.primary(),
-                opp_move.name
-            )
+            #print "Opp(%s) used %s." % (
+                #gamestate.opp_team.primary(),
+                #opp_move.name
+            #)
             opp_move.handle(gamestate, False)
         else:
-            print "Opp(%s) used %s." % (
-                gamestate.opp_team.primary(),
-                opp_move.name
-            )
+            #print "Opp(%s) used %s." % (
+                #gamestate.opp_team.primary(),
+                #opp_move.name
+            #)
             opp_move.handle(gamestate, False)
-            print "I(%s) used %s." % (
-                gamestate.my_team.primary(),
-                my_move.name
-            )
+            #print "I(%s) used %s." % (
+                #gamestate.my_team.primary(),
+                #my_move.name
+            #)
             my_move.handle(gamestate, True)
 
 class Action():

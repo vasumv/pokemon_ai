@@ -12,6 +12,9 @@ class GameState():
         state = GameState(self.my_team.copy(), self.opp_team.copy())
         return state
 
+    def to_tuple(self):
+        return (self.my_team.to_tuple(), self.opp_team.to_tuple())
+
     def evaluate(self):
         return sum([x.health for x in self.my_team.poke_list]) - sum([x.health for x in self.opp_team.poke_list])
 

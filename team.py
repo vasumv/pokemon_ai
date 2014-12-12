@@ -46,6 +46,9 @@ class Pokemon():
         poke.stages = dict(self.stages)
         return poke
 
+    def to_tuple(self):
+        return (self.name, self.health, self.typing, self.stats, self.moveset, self.alive, self.status, tuple(self.stages.values()))
+
     def __repr__(self):
         return "%s(%f, %s)" % (self.name, self.health, self.item)
 
@@ -58,6 +61,9 @@ class Team():
         team = Team([p.copy() for p in self.poke_list])
         team.primary_poke = self.primary_poke
         return team
+
+    def to_tuple(self):
+        return tuple(x for x in self.poke_list)
 
     def primary(self):
         return self.poke_list[self.primary_poke]

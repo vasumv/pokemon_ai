@@ -95,36 +95,30 @@ class DamagingMove(Move):
         other = 1.0 * atk_stage_multiplier / def_stage_multiplier
         r = 1
         modifier = stab * type * critical * other * r
-        print "Stab", stab
-        print "Type", type
-        print "Other", other
-        print "Attack multiplier", atk_stage_multiplier
-        print "Defense multiplier", def_stage_multiplier
-        print "Modifier", modifier
         damage = (((42.0) * attack/defense * self.power)/50 + 2) * modifier
         if r_acc < accuracy:
-            print "%s has %f attack" % (
-                attacker.name,
-                attack
-            )
-            print "%s has %f defense" % (
-                defender.name,
-                defense
-            )
-            print "%s took %f damage" % (
-                defender.name,
-                damage
-            )
+            #print "%s has %f attack" % (
+                #attacker.name,
+                #attack
+            #)
+            #print "%s has %f defense" % (
+                #defender.name,
+                #defense
+            #)
+            #print "%s took %f damage" % (
+                #defender.name,
+                #damage
+            #)
             defender.health -= damage
             defender.health = floor(defender.health)
-            print "%s has %f health." % (
-                defender.name,
-                defender.health
-            )
-        else:
-            print "%s missed!" % (
-                attacker.name
-            )
+            #print "%s has %f health." % (
+                #defender.name,
+                #defender.health
+            #)
+        #else:
+            #print "%s missed!" % (
+                #attacker.name
+            #)
         return self.handler(gamestate, my=my)
 
 def default_handler(gamestate, my=True):
