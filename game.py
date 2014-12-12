@@ -5,7 +5,7 @@ from gamestate import GameState
 from simulator import Simulator
 from gamestate import Action
 
-def get_action(state, simulator, depth=1):
+def get_action(state, simulator, depth=2):
     if depth == 0:
         return None, state.evaluate()
     my_legal_actions = state.get_legal_actions(0)
@@ -20,9 +20,10 @@ def get_action(state, simulator, depth=1):
             #print "I'm trying", my_action, opp_action
             new_state = simulator.simulate(state, my_action, opp_action)
             if new_state.to_tuple() in cache:
-                best_action, state_value = cache[new_state.to_tuple()]
-            best_action, state_value = get_action(new_state, simulator, depth - 1)
-            cache[new_state.to_tuple()] = (best_action, state_value)
+                new_action, state_value = cache[new_state.to_tuple()]
+            else:
+                new_action, state_value = get_action(new_state, simulator, depth - 1)
+                cache[new_state.to_tuple()] = (my_action, state_value)
             #print "Value:", state_value
             opp_v = min(state_value, opp_v)
         if opp_v > my_v:
