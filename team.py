@@ -63,8 +63,7 @@ class Team():
         return team
 
     def to_tuple(self):
-        return ((x.to_tuple(), self.primary_poke) for x in self.poke_list)
-
+        return (self.primary_poke, tuple(x.to_tuple() for x in self.poke_list))
     def primary(self):
         return self.poke_list[self.primary_poke]
 
