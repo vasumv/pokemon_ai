@@ -12,7 +12,8 @@ class Move:
                  priority=0,
                  type=None,
                  accuracy=1.0,
-                 handler=void_handler
+                 handler=void_handler,
+                 backup_switch=""
                  ):
         self.name = name
         self.power = power
@@ -20,6 +21,7 @@ class Move:
         self.type = type
         self.accuracy = accuracy
         self.handler = handler
+        self.backup_switch = backup_switch
 
     def handle(self, gamestate, my=True):
         return self.handler(gamestate, my=my)
@@ -54,12 +56,12 @@ class BoostingMove(Move):
             if increase < -6 or increase > 6:
                 continue
             poke.stages[boost] = increase
-            print "%s increased %s by %d stages and is now at stage %d" % (
-                        poke.name,
-                        boost,
-                        amount,
-                        poke.stages[boost]
-                        )
+            #print "%s increased %s by %d stages and is now at stage %d" % (
+                        #poke.name,
+                        #boost,
+                        #amount,
+                        #poke.stages[boost]
+                        #)
 
 class DamagingMove(Move):
 
@@ -78,15 +80,12 @@ class DamagingMove(Move):
             defs = "spdef"
         attack = attacker.get_stat(atks)
         defense = defender.get_stat(defs)
-        print attacker.stages[atks]
         abs_atk_buffs = 1.0 + 0.5 * attacker.stages[atks]
-        print abs_atk_buffs
         abs_def_buffs = 1.0 + 0.5 * defender.stages[defs]
         atk_stage_multiplier = abs_atk_buffs if attacker.stages[atks] > 0 else 1 / abs_atk_buffs
         def_stage_multiplier = abs_def_buffs if defender.stages[defs] > 0 else 1 / abs_def_buffs
         stab = 1.5 if self.type in attacker.typing else 1
         accuracy = self.accuracy
-        print "accuracy: ", accuracy
         r_acc = random.random()
         type = 1
         type_multipliers = [get_multiplier(x, self.type) for x in defender.typing]
@@ -96,6 +95,12 @@ class DamagingMove(Move):
         other = 1.0 * atk_stage_multiplier / def_stage_multiplier
         r = 1
         modifier = stab * type * critical * other * r
+        print "Stab", stab
+        print "Type", type
+        print "Other", other
+        print "Attack multiplier", atk_stage_multiplier
+        print "Defense multiplier", def_stage_multiplier
+        print "Modifier", modifier
         damage = (((42.0) * attack/defense * self.power)/50 + 2) * modifier
         if r_acc < accuracy:
             print "%s has %f attack" % (

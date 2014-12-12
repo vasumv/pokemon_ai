@@ -43,7 +43,7 @@ class Pokemon():
         poke.health = self.health
         poke.alive = self.alive
         poke.item = self.item
-        poke.stages = self.stages
+        poke.stages = dict(self.stages)
         return poke
 
     def __repr__(self):

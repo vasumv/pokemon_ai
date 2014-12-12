@@ -1,9 +1,5 @@
-from team import Team
-from gamestate import GameState
-from smogon import Smogon
 from move_list import moves
 import random
-import json
 
 class Simulator():
 
@@ -11,21 +7,22 @@ class Simulator():
         gamestate = gamestate.deep_copy()
 
         if my_action.is_switch():
-            print "I switched out %s for %s." % (
-                gamestate.my_team.primary().name,
-                gamestate.my_team[my_action.switch_index].name
-            )
+            #print "I switched out %s for %s." % (
+                #gamestate.my_team.primary().name,
+                #gamestate.my_team[my_action.switch_index].name
+            #)
             gamestate.my_team.primary_poke = my_action.switch_index
+            my_move = moves["Noop"]
         if opp_action.is_switch():
-            print "Opponent switched out %s for %s." % (
-                gamestate.opp_team.primary().name,
-                gamestate.opp_team[opp_action.switch_index].name
-            )
+            #print "Opponent switched out %s for %s." % (
+                #gamestate.opp_team.primary().name,
+                #gamestate.opp_team[opp_action.switch_index].name
+            #)
             gamestate.opp_team.primary_poke = opp_action.switch_index
+            opp_move = moves["Noop"]
 
         if my_action.is_move():
             my_move = moves[gamestate.my_team.primary().moveset.moves[my_action.move_index]]
-            opp_move = moves["Noop"]
         if opp_action.is_move():
             opp_move = moves[gamestate.opp_team.primary().moveset.moves[opp_action.move_index]]
 
@@ -70,11 +67,13 @@ class Simulator():
                 my_move.name
             )
             my_move.handle(gamestate, True)
+
 class Action():
-    def __init__(self, type, move_index=None, switch_index=None):
+    def __init__(self, type, move_index=None, switch_index=None, backup_switch=""):
         self.type = type
         self.move_index = move_index
         self.switch_index = switch_index
+        self.backup_switch = backup_switch
 
     def is_move(self):
         return self.type == "move"
@@ -87,16 +86,8 @@ class Action():
         index = int(index)
         return Action(type, move_index=index, switch_index=index)
 
-with open("pokemon_team.txt") as f1, open("pokemon_team2.txt") as f2, open("data/poke.json") as f3:
-    data = json.loads(f3.read())
-    poke_dict = Smogon.convert_to_dict(data)
-    my_team = Team.make_team(f1.read(), poke_dict)
-    opp_team = Team.make_team(f2.read(), poke_dict)
-    gamestate = GameState(my_team, opp_team)
-    simulator = Simulator()
-    my = Action.create("move 0")
-    opp = Action.create("switch 3")
-    x = simulator.simulate(gamestate, my, opp)
-    my = Action.create("move 2")
-    opp = Action.create("move 0")
-    x = simulator.simulate(x, my, opp)
+    def __repr__(self):
+        if self.type == "move":
+            return "%s(%u, %u)" % (self.type, self.move_index, self.backup_switch)
+        elif self.type == "switch":
+            return "%s(%u, %u)" % (self.type, self.switch_index, self.backup_switch)
