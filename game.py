@@ -19,11 +19,12 @@ def get_action(state, simulator, depth=2):
         for opp_action in opp_legal_actions:
             #print "I'm trying", my_action, opp_action
             new_state = simulator.simulate(state, my_action, opp_action)
-            if new_state.to_tuple() in cache:
-                new_action, state_value = cache[new_state.to_tuple()]
+            tuple_state = new_state.to_tuple()
+            if tuple_state in cache:
+                new_action, state_value = cache[tuple_state]
             else:
                 new_action, state_value = get_action(new_state, simulator, depth - 1)
-                cache[new_state.to_tuple()] = (my_action, state_value)
+                cache[tuple_state] = (my_action, state_value)
             #print "Value:", state_value
             opp_v = min(state_value, opp_v)
         if opp_v > my_v:
