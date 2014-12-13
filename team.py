@@ -5,7 +5,7 @@ import re
 from math import floor
 
 class Pokemon():
-    def __init__(self, name, typing, stats, moveset, alive=True, status=None, backup_switch=""):
+    def __init__(self, name, typing, stats, moveset, alive=True, status=None, calculate=True):
         self.name = name
         self.typing = typing
         self.stats = stats
@@ -14,7 +14,6 @@ class Pokemon():
         self.alive = alive
         self.item = moveset.item
         self.status = status
-        self.backup_switch = backup_switch
         self.stages = {
             'patk': 0,
             'spatk': 0,
@@ -24,12 +23,13 @@ class Pokemon():
             'acc': 0,
             'eva': 0
         }
-        for stat_name, value in self.stats.items():
-            if stat_name != 'hp':
-                self.final_stats[stat_name] = floor(floor((2 * value + 31 + moveset.evs[stat_name] / 4.0) + 5) * moveset.nature[stat_name])
-            else:
-                self.final_stats[stat_name] = floor((2 * value + 31 + moveset.evs[stat_name] / 4.0) + 110)
-        self.health = self.final_stats['hp']
+        if calculate:
+            for stat_name, value in self.stats.items():
+                if stat_name != 'hp':
+                    self.final_stats[stat_name] = floor(floor((2 * value + 31 + moveset.evs[stat_name] / 4.0) + 5) * moveset.nature[stat_name])
+                else:
+                    self.final_stats[stat_name] = floor((2 * value + 31 + moveset.evs[stat_name] / 4.0) + 110)
+            self.health = self.final_stats['hp']
 
     def get_stat(self, stat_name):
         return self.final_stats[stat_name]
@@ -39,10 +39,12 @@ class Pokemon():
         self.status = status
 
     def copy(self):
-        poke = Pokemon(self.name, list(self.typing), self.stats, self.moveset)
+        poke = Pokemon(self.name, list(self.typing), self.stats, self.moveset, calculate=False)
+        poke.final_stats = self.final_stats
         poke.health = self.health
         poke.alive = self.alive
         poke.item = self.item
+        poke.status = self.status
         poke.stages = dict(self.stages)
         return poke
 
@@ -66,6 +68,13 @@ class Team():
         return (self.primary_poke, tuple(x.to_tuple() for x in self.poke_list))
     def primary(self):
         return self.poke_list[self.primary_poke]
+
+    def set_primary(self, primary):
+        #print "Switching pokemon from %s to %s" % (
+            #self.poke_list[self.primary_poke],
+            #self.poke_list[primary],
+        #)
+        self.primary_poke = primary
 
     def __getitem__(self, index):
         return self.poke_list.__getitem__(index)

@@ -16,7 +16,7 @@ class GameState():
         return (self.my_team.to_tuple(), self.opp_team.to_tuple())
 
     def evaluate(self):
-        return sum([x.health for x in self.my_team.poke_list]) - sum([x.health for x in self.opp_team.poke_list])
+        return sum([x.health/x.final_stats['hp'] for x in self.my_team.poke_list]) - sum([x.health/x.final_stats['hp'] for x in self.opp_team.poke_list])
 
     def get_legal_actions(self, player):
         if player == 0:

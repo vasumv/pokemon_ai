@@ -13,7 +13,6 @@ class Move:
                  type=None,
                  accuracy=1.0,
                  handler=void_handler,
-                 backup_switch=""
                  ):
         self.name = name
         self.power = power
@@ -21,7 +20,6 @@ class Move:
         self.type = type
         self.accuracy = accuracy
         self.handler = handler
-        self.backup_switch = backup_switch
 
     def handle(self, gamestate, my=True):
         return self.handler(gamestate, my=my)
@@ -95,8 +93,9 @@ class DamagingMove(Move):
         other = 1.0 * atk_stage_multiplier / def_stage_multiplier
         r = 1
         modifier = stab * type * critical * other * r
+        #print "Modifier", modifier
         damage = (((42.0) * attack/defense * self.power)/50 + 2) * modifier
-        if r_acc < accuracy:
+        if 0 < accuracy:
             #print "%s has %f attack" % (
                 #attacker.name,
                 #attack
@@ -110,6 +109,9 @@ class DamagingMove(Move):
                 #damage
             #)
             defender.health -= damage
+            if defender.health <= 0:
+                defender.health = 0.0
+                defender.alive = False
             defender.health = floor(defender.health)
             #print "%s has %f health." % (
                 #defender.name,
