@@ -1617,7 +1617,7 @@ moves = {
                       category="Non-Damaging",
                       type="Steel"),
 "Knock Off": DamagingMove("Knock Off",
-                          power=65,
+                          power=90,
                           category="Physical",
                           priority=0,
                           type="Dark",

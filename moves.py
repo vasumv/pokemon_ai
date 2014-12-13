@@ -20,6 +20,7 @@ class Move:
         self.type = type
         self.accuracy = accuracy
         self.handler = handler
+        self.priority = priority
 
     def handle(self, gamestate, my=True):
         return self.handler(gamestate, my=my)

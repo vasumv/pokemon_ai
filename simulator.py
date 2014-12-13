@@ -30,22 +30,22 @@ class Simulator():
 
         my_speed = gamestate.my_team.primary().get_stat("spe")
         opp_speed = gamestate.opp_team.primary().get_stat("spe")
-        #if my_move.priority > opp_move.priority:
-            #self.make_move(gamestate, my_move, opp_move, True)
-        #elif opp_move.priority > my_move.priority:
-            #self.make_move(gamestate, my_move, opp_move, False)
-        #else:
-        #print "My speed", my_speed
-        #print "Opp speed", opp_speed
-        if my_speed > opp_speed:
+        if my_move.priority > opp_move.priority:
             self.make_move(gamestate, my_move, opp_move, my_action, opp_action, True)
-        elif my_speed < opp_speed:
+        elif opp_move.priority > my_move.priority:
             self.make_move(gamestate, my_move, opp_move, my_action, opp_action, False)
         else:
-            if random.random() < 0.5:
+        #print "My speed", my_speed
+        #print "Opp speed", opp_speed
+            if my_speed > opp_speed:
                 self.make_move(gamestate, my_move, opp_move, my_action, opp_action, True)
-            else:
+            elif my_speed < opp_speed:
                 self.make_move(gamestate, my_move, opp_move, my_action, opp_action, False)
+            else:
+                if random.random() < 0.5:
+                    self.make_move(gamestate, my_move, opp_move, my_action, opp_action, True)
+                else:
+                    self.make_move(gamestate, my_move, opp_move, my_action, opp_action, False)
 
 
 
