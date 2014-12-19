@@ -73,11 +73,13 @@ class Selenium():
         move.click()
         if not self.alive:
             backup_switch(backup_switch)
+        self.wait_for_move()
     def switch(self, index, backup_switch):
         choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (index + 1))
         choose.click()
         if not self.alive:
             backup_switch(backup_switch)
+        self.wait_for_move()
     def check_exists_by_xpath(self, xpath):
         try:
             self.driver.find_element_by_xpath(xpath)
@@ -107,12 +109,14 @@ class Selenium():
                 for j in range(1, 4):
                     opp_health = self.driver.find_element_by_xpath("/html/body/div[4]/div[1]/div/div[8]/div/div[%d]/span[%d]" % (i, j))
                     title = opp_health.get_attribute("title")
+                    print title
                     hp = re.sub("[^0-9]", "", title)
                     health = 100.0 if hp == '' else float(hp)
                     name_info = ''.join([x for x in name_list if x in title])
                     alive = not "fainted" in title
                     primary = "active" in title
                     opp_info[name_info] = (health, alive, primary)
+                    print opp_info
             for name in name_list:
                 info = poke_dict[name]
                 poke = Pokemon(name, info.typing, info.stats, smogon.SmogonMoveset.from_dict(info.movesets[0]))
@@ -120,8 +124,11 @@ class Selenium():
                 poke.alive = opp_info[name][1]
                 poke_list.append(poke)
             team = Team(poke_list)
-            primary = int(''.join([name_list.index(name) for name in name_list if name_list[opp_info[name][2]]]))
-            team.set_primary(name_list[primary])
+            print poke_list
+            primary = [name_list.index(name) for name in name_list if opp_info[name][2]][0]
+            print name_list
+            print primary
+            team.set_primary(primary)
             return team
 
 with open("pokemon_team.txt") as f:
@@ -135,7 +142,7 @@ with open("pokemon_team.txt") as f:
     opp_team = selenium.get_opp_team()
     print "primary:", opp_team.primary()
     print "pokes: ", opp_team.poke_list
-    print "poke: ", opp_team.primary.moveset
+    print "poke: ", opp_team.primary().moveset
 
 #flinch_count = 0
 #chromePath = "/home/vasu/Downloads/chromedriver"
