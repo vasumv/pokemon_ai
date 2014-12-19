@@ -29,7 +29,7 @@ class GameState():
 
         moves = [Action("move",
                         move_index=i,
-                        backup_switch=j)
+                        backup_switch=j, mega=True if team.primary().can_evolve() else False)
                  for i in range(len(team.primary().moveset.moves))
                  for j in valid_switches]
         switches = [Action("switch", switch_index=i, backup_switch=j)

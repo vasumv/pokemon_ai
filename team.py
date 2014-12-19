@@ -1,11 +1,11 @@
 import smogon
 import json
 import re
-
+from mega_items import mega_items
 from math import floor
 
 class Pokemon():
-    def __init__(self, name, typing, stats, moveset, alive=True, status=None, calculate=True):
+    def __init__(self, name, typing, stats, moveset, alive=True, status=None, calculate=True, is_mega=False):
         self.name = name
         self.typing = typing
         self.stats = stats
@@ -14,6 +14,8 @@ class Pokemon():
         self.alive = alive
         self.item = moveset.item
         self.status = status
+        self.is_mega = is_mega
+        self.ability = moveset.ability
         self.stages = {
             'patk': 0,
             'spatk': 0,
@@ -38,14 +40,41 @@ class Pokemon():
         print self.name, "got", status
         self.status = status
 
+    def can_evolve(self):
+        if self.is_mega:
+            return False
+        if self.item in mega_items:
+            if self.name == mega_items[self.item][0]:
+                return True
+        return False
+
+    def mega_evolve(self):
+        if self.can_evolve():
+            with open("data/poke_megas.json") as f:
+                mega_data = json.loads(f.read())
+                poke_dict = smogon.Smogon.convert_to_dict(mega_data)
+                name = mega_items[self.item][1]
+                mega_poke = poke_dict[name]
+                typing = mega_poke.typing
+                stats = mega_poke.stats
+                ability = mega_poke.movesets[0]['ability']
+                moveset = smogon.SmogonMoveset(self.moveset.name, None, ability, self.moveset.evs, self.moveset.nature, self.moveset.moves)
+                alive = self.alive
+                status = self.status
+                poke = Pokemon(name, typing, stats, moveset, alive, status, is_mega=True)
+                return poke
+
     def copy(self):
-        poke = Pokemon(self.name, list(self.typing), self.stats, self.moveset, calculate=False)
+        poke = Pokemon(self.name, self.typing[:], self.stats, self.moveset,
+                       calculate=False)
         poke.final_stats = self.final_stats
         poke.health = self.health
         poke.alive = self.alive
+        poke.ability = self.ability
         poke.item = self.item
         poke.status = self.status
-        poke.stages = dict(self.stages)
+        poke.stages = self.stages.copy()
+        poke.is_mega = self.is_mega
         return poke
 
     def to_tuple(self):
@@ -153,6 +182,10 @@ class Team():
         text_lines = text.split("\n\n")[:6]
         for tl in text_lines:
             line = tl.split('\n')
+            #if "(M)" in line[0]:
+                #line[0] = line[0].replace(" (M)", "")
+            #if "(F)" in line[0]:
+                #line[0] = line[0].replace(" (F)", "")
             match = re.search(r'(.+?)\s*(\((.+?)\))?\s*(@ (.+?))?$', line[0])
             nickname = match.group(1)
             name = match.group(3)

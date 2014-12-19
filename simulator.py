@@ -47,8 +47,6 @@ class Simulator():
                 else:
                     self.make_move(gamestate, my_move, opp_move, my_action, opp_action, False)
 
-
-
         return gamestate
 
     def make_move(self, gamestate, my_move, opp_move, my_action, opp_action, my=True):
@@ -69,31 +67,40 @@ class Simulator():
             defender_move = my_move
             defender_action = my_action
 
+        if attacker_action.mega:
+            poke = attacker.primary().mega_evolve()
+            attacker.poke_list[attacker.primary_poke] = poke
+
+        if defender_action.mega:
+            poke = defender.primary().mega_evolve()
+            defender.poke_list[defender.primary_poke] = poke
+
+        attacker_move.handle(gamestate, my)
         #print "%s used %s." % (
             #attacker.primary(),
             #attacker_move.name
         #)
-        attacker_move.handle(gamestate, my)
         if not defender.primary().alive:
             #print "%s fainted." % defender.primary()
             defender.set_primary(defender_action.backup_switch)
             defender_move = moves['Noop']
 
+        defender_move.handle(gamestate, not my)
         #print "%s used %s." % (
             #defender.primary(),
             #defender_move.name
         #)
-        defender_move.handle(gamestate, not my)
         if not attacker.primary().alive:
             #print "%s fainted." % attacker.primary()
             attacker.set_primary(attacker_action.backup_switch)
 
 class Action():
-    def __init__(self, type, move_index=None, switch_index=None, backup_switch=None):
+    def __init__(self, type, move_index=None, switch_index=None, mega=False, backup_switch=None):
         self.type = type
         self.move_index = move_index
         self.switch_index = switch_index
         self.backup_switch = backup_switch
+        self.mega = mega
         assert backup_switch != None
 
     def is_move(self):
@@ -103,12 +110,13 @@ class Action():
 
     @staticmethod
     def create(move_string):
-        type, index, backup = move_string.split()
+        type, index, backup, str_mega = move_string.split()
         index = int(index)
         backup = int(backup)
-        return Action(type, move_index=index, switch_index=index, backup_switch=backup)
+        mega = bool(str_mega)
+        return Action(type, move_index=index, switch_index=index, mega=mega, backup_switch=backup)
     def __repr__(self):
         if self.type == "move":
-                return "%s(%u, %u)" % (self.type, self.move_index, self.backup_switch)
+                return "%s(%u, %u, %s)" % (self.type, self.move_index, self.backup_switch, self.mega)
         elif self.type == "switch":
             return "%s(%u, %u)" % (self.type, self.switch_index, self.backup_switch)

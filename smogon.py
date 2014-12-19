@@ -1,4 +1,4 @@
-import requests
+#import requests
 import json
 
 class Smogon():
@@ -46,41 +46,50 @@ class Smogon():
 
     def convert_to_pokemon(self, pokemon, meta_output, moveset_output):
         moveset_results = moveset_output['result']
-        movesets = moveset_results[0]['movesets']
-        poke_movesets = []
         meta_results = meta_output['result']
-        stats = {}
         abilities = meta_results[0]['abilities']
+        print abilities
+        type_list = []
+        types = meta_results[0]['types']
+        for poke_type in types:
+            type_list.append(poke_type['name'])
+        if "Mega" in pokemon:
+            movesets = ""
+        else:
+            movesets = moveset_results[0]['movesets']
+        poke_movesets = []
+        stats = {}
         stats['hp'] = meta_results[0]['hp']
         stats['patk'] = meta_results[0]['patk']
         stats['pdef'] = meta_results[0]['pdef']
         stats['spatk'] = meta_results[0]['spatk']
         stats['spdef'] = meta_results[0]['spdef']
         stats['spe'] = meta_results[0]['spe']
-        for moveset in movesets:
-            if len(moveset['abilities']) != 0:
-                ability = moveset['abilities'][0]['name']
-            else:
-                ability = abilities[0]['name']
-            name = moveset['name']
-            if len(moveset['items']) != 0:
-                item = moveset['items'][0]['name']
-            else:
-                item = ""
-            evs = moveset['evconfigs'][0]
-            moveslots = moveset['moveslots']
-            nature = moveset['natures'][0]
-            moves = []
-            for moveslot in moveslots:
-                for move in moveslot['moves']:
-                    moves.append(move['name'])
-            moves = moves
-            poke_moveset = SmogonMoveset(name, item, ability, evs, nature, moves)
+        if "Mega" not in pokemon:
+            for moveset in movesets:
+                if len(moveset['abilities']) != 0:
+                    ability = moveset['abilities'][0]['name']
+                else:
+                    ability = abilities[0]['name']
+                name = moveset['name']
+                if len(moveset['items']) != 0:
+                    item = moveset['items'][0]['name']
+                else:
+                    item = ""
+                evs = moveset['evconfigs'][0]
+                moveslots = moveset['moveslots']
+                nature = moveset['natures'][0]
+                moves = []
+                for moveslot in moveslots:
+                    for move in moveslot['moves']:
+                        moves.append(move['name'])
+                moves = moves
+                poke_moveset = SmogonMoveset(name, item, ability, evs, nature, moves)
+                poke_movesets.append(poke_moveset)
+        else:
+            ability = abilities[0]['name']
+            poke_moveset = SmogonMoveset("","",ability,"","","")
             poke_movesets.append(poke_moveset)
-        type_list = []
-        types = meta_results[0]['types']
-        for poke_type in types:
-            type_list.append(poke_type['name'])
         poke = SmogonPokemon(pokemon, type_list, stats, poke_movesets)
         return poke
 
@@ -137,11 +146,12 @@ if __name__ == "__main__":
     poke_objects = []
     for poke in pokes:
         try:
-            print poke
-            poke, typing, movesets = smogon.get_pokemon_info(poke)
-            poke_obj = smogon.convert_to_pokemon(poke, typing, movesets)
-            poke_objects.append(poke_obj.to_dict())
+            if "Mega" in poke:
+                print poke
+                poke, typing, movesets = smogon.get_pokemon_info(poke)
+                poke_obj = smogon.convert_to_pokemon(poke, typing, movesets)
+                poke_objects.append(poke_obj.to_dict())
         except IndexError:
             print "error: " + poke
-    with open('data/poke.json', 'w') as f:
+    with open('data/poke_megas.json', 'a') as f:
         f.write(json.dumps(poke_objects, sort_keys=True,indent=4, separators=(',', ': ')))
