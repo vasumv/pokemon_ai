@@ -127,6 +127,9 @@ class SmogonMoveset():
     def to_dict(self):
         dictionary = {'name': self.name, 'item': self.item, 'ability': self.ability, 'evs': self.evs, 'nature': self.nature, 'moves': self.moves}
         return dictionary
+    @staticmethod
+    def from_dict(dictionary):
+        return SmogonMoveset(dictionary['name'], dictionary['item'], dictionary['ability'], dictionary['evs'], dictionary['nature'], dictionary['moves'])
     def set_name(self, name):
         self.name = name
     def set_item(self, item):
