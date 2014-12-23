@@ -1,22 +1,28 @@
-import traceback
 import time
-import smogon
-import json
 import re
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
-from team import Team, Pokemon
+
 class Selenium():
     BASE_URL="http://play.pokemonshowdown.com"
-    def __init__(self, agent=None, alive=True, url=BASE_URL, driver_path="/home/vasu/Downloads/chromedriver"):
-        self.agent = agent
+    def __init__(self, alive, state, url=BASE_URL, driver_path="/home/vasu/Downloads/chromedriver"):
         self.url = url
         self.driver_path = driver_path
-        self.alive = alive
         self.driver = webdriver.Chrome(executable_path=self.driver_path)
+        self.alive = self.check_alive()
+        self.state = state
+
     def start_driver(self):
         self.driver.get(self.url)
+
+    def get_state(self):
+        url = self.driver.current_url
+        if "battle" in url:
+            return "battle"
+        else:
+            return "lobby"
+
     def login(self, username, password):
         time.sleep(1)
         #button = driver.find_element_by_xpath("//*[@id='mainmenu']/div/div[1]/div[2]/div[1]/form/p[1]/button")
@@ -36,6 +42,7 @@ class Selenium():
         passwd.send_keys(password)
         passwd.send_keys(Keys.RETURN)
         time.sleep(1)
+
     def start_battle(self):
         url1 = self.driver.current_url
         time.sleep(5)
@@ -49,6 +56,7 @@ class Selenium():
             time.sleep(1.5)
             print "waiting"
         print "found battle"
+
     def make_team(self, team):
         builder = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div[2]/div[2]/p[1]/button")
         builder.click()
@@ -63,27 +71,44 @@ class Selenium():
         save.click()
         self.driver.get(self.url)
         time.sleep(2)
+
     def turn_off_sound(self):
         sound = self.driver.find_element_by_xpath("//*[@id='header']/div[3]/button[2]")
         sound.click()
         mute = self.driver.find_element_by_xpath("/html/body/div[4]/p[3]/label/input")
         mute.click()
+
     def move(self, index, backup_switch):
-        move = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (index + 1))
-        move.click()
-        if not self.alive:
+        if self.alive:
+            move = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (index + 1))
+            move.click()
+        else:
             backup_switch(backup_switch)
+        self.wait_for_move()
+
     def switch(self, index, backup_switch):
+        if self.alive:
+            choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (index + 1))
+            choose.click()
+        else:
+            backup_switch(backup_switch)
+        self.wait_for_move()
+
+    def backup_switch(self, index):
         choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (index + 1))
         choose.click()
-        if not self.alive:
-            backup_switch(backup_switch)
+        self.watch_for_move()
+
+    def check_alive(self):
+        return self.check_exists_by_xpath("/html/body/div[4]/div[1]/div/div[5]/div[2]/strong")
+
     def check_exists_by_xpath(self, xpath):
         try:
             self.driver.find_element_by_xpath(xpath)
         except NoSuchElementException:
             return False
         return True
+
     def wait_for_move(self):
         move_exists = self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[1]")
         while move_exists == False:
@@ -91,38 +116,73 @@ class Selenium():
             time.sleep(2)
             move_exists = self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[1]")
         print "their move just ended"
-    def backup_switch(self, index):
-        choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (index + 1))
-        choose.click()
+
     def get_opp_team(self):
-        with open("data/poke.json") as f:
-            data = json.loads(f.read())
-            poke_dict = smogon.Smogon.convert_to_dict(data)
-            names = self.driver.find_element_by_xpath("/html/body/div[4]/div[3]/div[1]/div[15]/em")
-            name_list = names.text.split("/")
-            name_list = [x.strip(" ") for x in name_list]
-            opp_info = {}
-            poke_list = []
-            for i in range(2, 4):
-                for j in range(1, 4):
-                    opp_health = self.driver.find_element_by_xpath("/html/body/div[4]/div[1]/div/div[8]/div/div[%d]/span[%d]" % (i, j))
-                    title = opp_health.get_attribute("title")
-                    hp = re.sub("[^0-9]", "", title)
-                    health = 100.0 if hp == '' else float(hp)
-                    name_info = ''.join([x for x in name_list if x in title])
-                    alive = not "fainted" in title
-                    primary = "active" in title
-                    opp_info[name_info] = (health, alive, primary)
-            for name in name_list:
-                info = poke_dict[name]
-                poke = Pokemon(name, info.typing, info.stats, smogon.SmogonMoveset.from_dict(info.movesets[0]))
-                poke.health = opp_info[name][0]
-                poke.alive = opp_info[name][1]
-                poke_list.append(poke)
-            team = Team(poke_list)
-            primary = int(''.join([name_list.index(name) for name in name_list if name_list[opp_info[name][2]]]))
-            team.set_primary(name_list[primary])
-            return team
+        names = self.driver.find_element_by_xpath("/html/body/div[4]/div[3]/div[1]/div[15]/em")
+        name_list = names.text.split("/")
+        name_list = [x.strip(" ") for x in name_list]
+        opp_info = {}
+        opp_poke_info = {}
+        for i in range(2, 4):
+            for j in range(1, 4):
+                opp_health = self.driver.find_element_by_xpath("/html/body/div[4]/div[1]/div/div[8]/div/div[%d]/span[%d]" % (i, j))
+                title = opp_health.get_attribute("title")
+                hp = re.sub("[^0-9]", "", title)
+                health = 100.0 if hp == '' else float(hp)
+                name_info = ''.join([x for x in name_list if x in title])
+                alive = not "fainted" in title
+                primary = "active" in title
+                if primary:
+                    opp_poke_info['health'] == self.get_opp_primary_health()
+                else:
+                    opp_poke_info['health'] = health
+                opp_poke_info['alive'] = alive
+                opp_poke_info['primary'] = primary
+                opp_info[name_info] = opp_poke_info
+        return opp_info
+
+    def get_my_team(self):
+        names = self.driver.find_element_by_xpath("/html/body/div[4]/div[3]/div[1]/div[14]/em")
+        name_list = names.text.split("/")
+        name_list = [x.strip(" ") for x in name_list]
+        my_info = {}
+        my_poke_info = {}
+        for i in range(2, 4):
+            for j in range(1, 4):
+                my_health = self.driver.find_element_by_xpath("/html/body/div[4]/div[1]/div/div[7]/div/div[%d]/span[%d]" % (i, j))
+                title = my_health.get_attribute("title")
+                hp = re.sub("[^0-9]", "", title)
+                health = 100.0 if hp == '' else float(hp)
+                name_info = ''.join([x for x in name_list if x in title])
+                alive = not "fainted" in title
+                primary = "active" in title
+                if primary:
+                    my_poke_info['health'] == self.get_my_primary_health()
+                else:
+                    my_poke_info['health'] = health
+                my_poke_info['alive'] = alive
+                my_poke_info['primary'] = primary
+                my_info[name_info] = my_poke_info
+        return my_info
+
+
+    def get_my_primary_health(self):
+        if self.check_exists_by_xpath("/html/body/div[4]/div[1]/div/div[5]/div[contains(@class,'statbar rstatbar')]/div/div[1]"):
+            hp_text = self.driver.find_element_by_xpath("/html/body/div[4]/div[1]/div/div[5]/div[contains(@class,'statbar rstatbar')]/div/div[1]")
+            hp = hp_text.text.strip("%")
+            hp = int(hp)
+        else:
+            hp = 0
+        return hp
+
+    def get_opp_primary_health(self):
+        if self.check_exists_by_xpath("/html/body/div[4]/div[1]/div/div[5]/div[contains(@class,'statbar lstatbar')]/div/div[1]"):
+            hp_text = self.driver.find_element_by_xpath("/html/body/div[4]/div[1]/div/div[5]/div[contains(@class,'statbar lstatbar')]/div/div[1]")
+            hp = hp_text.text.strip("%")
+            hp = int(hp)
+        else:
+            hp = 0
+        return hp
 
 with open("pokemon_team.txt") as f:
     selenium = Selenium()
@@ -131,11 +191,11 @@ with open("pokemon_team.txt") as f:
     selenium.login("asdf8000", "seleniumpython")
     selenium.make_team(f.read())
     selenium.start_battle()
-    selenium.switch(1, 3)
-    opp_team = selenium.get_opp_team()
-    print "primary:", opp_team.primary()
-    print "pokes: ", opp_team.poke_list
-    print "poke: ", opp_team.primary.moveset
+    #selenium.switch(1, 3)
+    #opp_team = selenium.get_opp_team()
+    #print "primary:", opp_team.primary()
+    #print "pokes: ", opp_team.poke_list
+    #print "poke: ", opp_team.primary().moveset
 
 #flinch_count = 0
 #chromePath = "/home/vasu/Downloads/chromedriver"

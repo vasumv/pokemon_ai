@@ -79,59 +79,61 @@ class DamagingMove(Move):
             defs = "spdef"
         attack = attacker.get_stat(atks)
         defense = defender.get_stat(defs)
-        abs_atk_buffs = 1.0 + 0.5 * attacker.stages[atks]
-        abs_def_buffs = 1.0 + 0.5 * defender.stages[defs]
+        abs_atk_buffs = 1.0 + 0.5 * abs(attacker.stages[atks])
+        abs_def_buffs = 1.0 + 0.5 * abs(defender.stages[defs])
         atk_stage_multiplier = abs_atk_buffs if attacker.stages[atks] > 0 else 1 / abs_atk_buffs
         def_stage_multiplier = abs_def_buffs if defender.stages[defs] > 0 else 1 / abs_def_buffs
-        stab = 1.5 if self.type in attacker.typing else 1
         accuracy = self.accuracy
         r_acc = random.random()
         type = 1
-        type_multipliers = [get_multiplier(x, self.type) for x in defender.typing]
+        move_type = self.type
+        other = 1.0 * atk_stage_multiplier / def_stage_multiplier
+
+        if attacker.ability == "Pixilate":
+            if move_type == "Normal":
+                move_type = "Fairy"
+                other *= 1.3
+        elif attacker.ability == "Aerilate":
+            if move_type == "Normal":
+                move_type = "Flying"
+                other *= 1.3
+        elif attacker.ability == "Protean":
+            attacker.typing = [move_type]
+        elif defender.ability == "Levitate" and move_type == "Ground":
+            other *= 0
+        elif attacker.ability == "Technician" and self.power <= 60:
+            other *= 1.5
+
+        if self.name == "Knock Off" and defender.item is not None:
+            other *= 1.5
+
+        if attacker.item in set(["Choice Scarf", "Choice Band", "Choice Specs"]):
+            attacker.choiced = True
+            attacker.move_choice = self.name
+        if attacker.item == "Choice Band" and self.category == "Physical":
+            other *= 1.5
+        if attacker.item == "Choice Specs" and self.category == "Special":
+            other *= 1.5
+
+        stab = 1.5 if move_type in attacker.typing else 1
+        type_multipliers = [get_multiplier(x, move_type) for x in defender.typing]
         for x in type_multipliers:
             type *= x
         critical = 1
-        other = 1.0 * atk_stage_multiplier / def_stage_multiplier
         r = 1
         modifier = stab * type * critical * other * r
-        #print "Modifier", modifier
+        if attacker.ability == "Huge Power":
+            modifier *= 2
         damage = (((42.0) * attack/defense * self.power)/50 + 2) * modifier
         if 0 < accuracy:
-            #print "%s has %f attack" % (
-                #attacker.name,
-                #attack
-            #)
-            #print "%s has %f defense" % (
-                #defender.name,
-                #defense
-            #)
-            #print "%s took %f damage" % (
-                #defender.name,
-                #damage
-            #)
             defender.health -= damage
             if defender.health <= 0:
                 defender.health = 0.0
                 defender.alive = False
             defender.health = floor(defender.health)
-            #print "%s has %f health." % (
-                #defender.name,
-                #defender.health
-            #)
-        #else:
-            #print "%s missed!" % (
-                #attacker.name
-            #)
-        return self.handler(gamestate, my=my)
+        self.handler(gamestate, my=my)
+        return damage
 
 def default_handler(gamestate, my=True):
     pass
-
-def handle_ice_beam(gamestate, my=True):
-    val = random.random()
-    if val < 0.1:
-        if my:
-            gamestate.opp_team.primary().set_status("frozen")
-        else:
-            gamestate.my_team.primary().set_status("frozen")
 

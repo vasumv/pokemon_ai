@@ -1,4 +1,3 @@
-#import requests
 import json
 
 class Smogon():
@@ -27,6 +26,7 @@ class Smogon():
 
     def get_pokemon_info(self, pokemon):
         moveset_fields = ["name", "alias", {"movesets":["name",
+                                                {"tags":["alias","name"]},
                                                 {"items":["alias","name"]},
                                                 {"abilities":["alias","name","gen"]},
                                                 {"evconfigs":["hp","patk","pdef","spatk","spdef","spe"]},
@@ -48,7 +48,6 @@ class Smogon():
         moveset_results = moveset_output['result']
         meta_results = meta_output['result']
         abilities = meta_results[0]['abilities']
-        print abilities
         type_list = []
         types = meta_results[0]['types']
         for poke_type in types:
@@ -67,6 +66,7 @@ class Smogon():
         stats['spe'] = meta_results[0]['spe']
         if "Mega" not in pokemon:
             for moveset in movesets:
+                tag = moveset['tags'][0]['name']
                 if len(moveset['abilities']) != 0:
                     ability = moveset['abilities'][0]['name']
                 else:
@@ -76,6 +76,10 @@ class Smogon():
                     item = moveset['items'][0]['name']
                 else:
                     item = ""
+                if len(moveset['evconfigs']) != 0:
+                    ability = moveset['evconfigs'][0]
+                else:
+                    continue
                 evs = moveset['evconfigs'][0]
                 moveslots = moveset['moveslots']
                 nature = moveset['natures'][0]
@@ -83,8 +87,7 @@ class Smogon():
                 for moveslot in moveslots:
                     for move in moveslot['moves']:
                         moves.append(move['name'])
-                moves = moves
-                poke_moveset = SmogonMoveset(name, item, ability, evs, nature, moves)
+                poke_moveset = SmogonMoveset(name, item, ability, evs, nature, moves, tag)
                 poke_movesets.append(poke_moveset)
         else:
             ability = abilities[0]['name']
@@ -117,19 +120,20 @@ class SmogonPokemon():
         return SmogonPokemon(dictionary['name'], dictionary['typing'], dictionary['stats'], dictionary['movesets'])
 
 class SmogonMoveset():
-    def __init__(self, name, item, ability, evs, nature, moves):
+    def __init__(self, name, item, ability, evs, nature, moves, tag):
         self.name = name
         self.item = item
         self.ability = ability
         self.evs = evs
         self.nature = nature
         self.moves = moves
+        self.tag = tag
     def to_dict(self):
-        dictionary = {'name': self.name, 'item': self.item, 'ability': self.ability, 'evs': self.evs, 'nature': self.nature, 'moves': self.moves}
+        dictionary = {'name': self.name, 'item': self.item, 'ability': self.ability, 'evs': self.evs, 'nature': self.nature, 'moves': self.moves, 'tag': self.tag}
         return dictionary
     @staticmethod
     def from_dict(dictionary):
-        return SmogonMoveset(dictionary['name'], dictionary['item'], dictionary['ability'], dictionary['evs'], dictionary['nature'], dictionary['moves'])
+        return SmogonMoveset(dictionary['name'], dictionary['item'], dictionary['ability'], dictionary['evs'], dictionary['nature'], dictionary['moves'], dictionary['tag'])
     def set_name(self, name):
         self.name = name
     def set_item(self, item):
@@ -149,12 +153,12 @@ if __name__ == "__main__":
     poke_objects = []
     for poke in pokes:
         try:
-            if "Mega" in poke:
+            if "Mega" not in poke:
                 print poke
                 poke, typing, movesets = smogon.get_pokemon_info(poke)
                 poke_obj = smogon.convert_to_pokemon(poke, typing, movesets)
                 poke_objects.append(poke_obj.to_dict())
         except IndexError:
             print "error: " + poke
-    with open('data/poke_megas.json', 'a') as f:
+    with open('data/poke2.json', 'a') as f:
         f.write(json.dumps(poke_objects, sort_keys=True,indent=4, separators=(',', ': ')))

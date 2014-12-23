@@ -3,22 +3,15 @@ import random
 
 class Simulator():
 
-    def simulate(self, gamestate, my_action, opp_action):
+    def simulate(self, gamestate, my_action, opp_action, log=False):
+        assert not gamestate.is_over()
         gamestate = gamestate.deep_copy()
 
         if my_action.is_switch():
-            #print "I switched out %s for %s." % (
-                #gamestate.my_team.primary().name,
-                #gamestate.my_team[my_action.switch_index].name
-            #)
-            gamestate.my_team.primary_poke = my_action.switch_index
+            gamestate.my_team.set_primary(my_action.switch_index)
             my_move = moves["Noop"]
         if opp_action.is_switch():
-            #print "Opponent switched out %s for %s." % (
-                #gamestate.opp_team.primary().name,
-                #gamestate.opp_team[opp_action.switch_index].name
-            #)
-            gamestate.opp_team.primary_poke = opp_action.switch_index
+            gamestate.opp_team.set_primary(opp_action.switch_index)
             opp_move = moves["Noop"]
 
         if my_action.is_move():
@@ -26,30 +19,43 @@ class Simulator():
 
         if opp_action.is_move():
             opp_move = moves[gamestate.opp_team.primary().moveset.moves[opp_action.move_index]]
+        my_spe_buffs = 1.0 + 0.5 * abs(gamestate.my_team.primary().stages['spe'])
+        opp_spe_buffs = 1.0 + 0.5 * abs(gamestate.opp_team.primary().stages['spe'])
+        my_spe_multiplier = my_spe_buffs if gamestate.my_team.primary().stages['spe'] > 0 else 1 / my_spe_buffs
+        opp_spe_multiplier = opp_spe_buffs if gamestate.opp_team.primary().stages['spe'] > 0 else 1 / opp_spe_buffs
+
+        if gamestate.my_team.primary().item == "Choice Scarf":
+            my_spe_multiplier *= 1.5
+        if gamestate.opp_team.primary().item == "Choice Scarf":
+            opp_spe_multiplier *= 1.5
 
 
-        my_speed = gamestate.my_team.primary().get_stat("spe")
-        opp_speed = gamestate.opp_team.primary().get_stat("spe")
+        my_speed = gamestate.my_team.primary().get_stat("spe") * my_spe_multiplier
+        opp_speed = gamestate.opp_team.primary().get_stat("spe") * opp_spe_multiplier
+        if gamestate.my_team.primary().ability == "Gale Wing":
+            if my_move.type == "Flying":
+                my_move.priority += 1
+        if gamestate.opp_team.primary().ability == "Gale Wing":
+            if opp_move.type == "Flying":
+                opp_move.priority += 1
         if my_move.priority > opp_move.priority:
-            self.make_move(gamestate, my_move, opp_move, my_action, opp_action, True)
+            self.make_move(gamestate, my_move, opp_move, my_action, opp_action, True, log=log)
         elif opp_move.priority > my_move.priority:
-            self.make_move(gamestate, my_move, opp_move, my_action, opp_action, False)
+            self.make_move(gamestate, my_move, opp_move, my_action, opp_action, False, log=log)
         else:
-        #print "My speed", my_speed
-        #print "Opp speed", opp_speed
             if my_speed > opp_speed:
-                self.make_move(gamestate, my_move, opp_move, my_action, opp_action, True)
+                self.make_move(gamestate, my_move, opp_move, my_action, opp_action, True, log=log)
             elif my_speed < opp_speed:
-                self.make_move(gamestate, my_move, opp_move, my_action, opp_action, False)
+                self.make_move(gamestate, my_move, opp_move, my_action, opp_action, False, log=log)
             else:
                 if random.random() < 0.5:
-                    self.make_move(gamestate, my_move, opp_move, my_action, opp_action, True)
+                    self.make_move(gamestate, my_move, opp_move, my_action, opp_action, True, log=log)
                 else:
-                    self.make_move(gamestate, my_move, opp_move, my_action, opp_action, False)
+                    self.make_move(gamestate, my_move, opp_move, my_action, opp_action, False, log=log)
 
         return gamestate
 
-    def make_move(self, gamestate, my_move, opp_move, my_action, opp_action, my=True):
+    def make_move(self, gamestate, my_move, opp_move, my_action, opp_action, my=True, log=False):
         if my:
             attacker = gamestate.my_team
             attacker_move = my_move
@@ -75,48 +81,89 @@ class Simulator():
             poke = defender.primary().mega_evolve()
             defender.poke_list[defender.primary_poke] = poke
 
-        attacker_move.handle(gamestate, my)
-        #print "%s used %s." % (
-            #attacker.primary(),
-            #attacker_move.name
-        #)
-        if not defender.primary().alive:
-            #print "%s fainted." % defender.primary()
+        attacker_damage = attacker_move.handle(gamestate, my)
+        if log:
+            print "%s used %s." % (
+                attacker.primary(),
+                attacker_move.name
+            )
+        if attacker_damage > 0 and (attacker_move.name == "U-turn" or attacker_move.name == "Volt Switch") and attacker_action.volt_turn is not None:
+            attacker.set_primary(attacker_action.volt_turn)
+
+        if defender.primary().health <= 0:
+            if log:
+                print "%s fainted." % defender.primary()
+            defender.primary().alive = False
             defender.set_primary(defender_action.backup_switch)
             defender_move = moves['Noop']
 
-        defender_move.handle(gamestate, not my)
-        #print "%s used %s." % (
-            #defender.primary(),
-            #defender_move.name
-        #)
-        if not attacker.primary().alive:
-            #print "%s fainted." % attacker.primary()
+        if gamestate.is_over():
+            return
+
+        defender_damage = defender_move.handle(gamestate, not my)
+        if log:
+            print "%s used %s." % (
+                defender.primary(),
+                defender_move.name
+            )
+        if defender_damage > 0 and (defender_move.name == "U-turn" or defender_move.name == "Volt Switch") and defender_action.volt_turn is not None:
+            defender.set_primary(defender_action.volt_turn)
+        if attacker.primary().health <= 0:
+            if log:
+                print "%s fainted." % attacker.primary()
+            attacker.primary().alive = False
             attacker.set_primary(attacker_action.backup_switch)
 
+        if gamestate.is_over():
+            return
+
 class Action():
-    def __init__(self, type, move_index=None, switch_index=None, mega=False, backup_switch=None):
+    def __init__(self, type, move_index=None, switch_index=None, mega=False, backup_switch=None, volt_turn=None):
         self.type = type
         self.move_index = move_index
         self.switch_index = switch_index
         self.backup_switch = backup_switch
         self.mega = mega
-        assert backup_switch != None
+        self.volt_turn = volt_turn
 
     def is_move(self):
         return self.type == "move"
     def is_switch(self):
         return self.type == "switch"
 
+    def __eq__(self, other):
+        if self.type != other.type:
+            return False
+        if self.type == "move":
+            return (self.move_index == other.move_index and self.backup_switch == other.backup_switch and self.mega == other.mega and self.volt_turn == other.volt_turn)
+        if self.type == "switch":
+            return (self.switch_index == other.switch_index and self.backup_switch == other.backup_switch)
+        return False
+
+    def __hash__(self):
+        if self.type == "move":
+            return hash(self.type, self.move_index, self.backup_switch, self.mega)
+        if self.type == "switch":
+            return (self.type, self.switch_index, self.backup_switch)
+
     @staticmethod
     def create(move_string):
-        type, index, backup, str_mega = move_string.split()
+        splt = move_string.strip().split()
+        if len(splt) == 4:
+            volt_turn = None
+            type, index, backup, str_mega = splt
+        if len(splt) == 5:
+            type, index, backup, str_mega, volt_turn = splt
         index = int(index)
-        backup = int(backup)
-        mega = bool(str_mega)
-        return Action(type, move_index=index, switch_index=index, mega=mega, backup_switch=backup)
+        backup = None if backup == "None" else int(backup)
+        mega = True if str_mega == "True" else False
+        volt_turn = int(volt_turn) if volt_turn is not None else None
+        return Action(type, move_index=index, switch_index=index, mega=mega, backup_switch=backup, volt_turn=volt_turn)
     def __repr__(self):
         if self.type == "move":
-                return "%s(%u, %u, %s)" % (self.type, self.move_index, self.backup_switch, self.mega)
+            if self.volt_turn is None:
+                return "%s(%u, %s, %s)" % (self.type, self.move_index, self.backup_switch, self.mega)
+            else:
+                return "%s(%u, %s, %s, %u)" % (self.type, self.move_index, self.backup_switch, self.mega, self.volt_turn)
         elif self.type == "switch":
-            return "%s(%u, %u)" % (self.type, self.switch_index, self.backup_switch)
+            return "%s(%s, %s)" % (self.type, self.switch_index, self.backup_switch)

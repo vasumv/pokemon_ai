@@ -16,6 +16,7 @@ class Pokemon():
         self.status = status
         self.is_mega = is_mega
         self.ability = moveset.ability
+        self.choiced = False
         self.stages = {
             'patk': 0,
             'spatk': 0,
@@ -35,6 +36,17 @@ class Pokemon():
 
     def get_stat(self, stat_name):
         return self.final_stats[stat_name]
+
+    def reset_stages(self):
+        self.stages = {
+            'patk': 0,
+            'spatk': 0,
+            'pdef': 0,
+            'spdef': 0,
+            'spe': 0,
+            'acc': 0,
+            'eva': 0
+        }
 
     def set_status(self, status):
         print self.name, "got", status
@@ -58,11 +70,13 @@ class Pokemon():
                 typing = mega_poke.typing
                 stats = mega_poke.stats
                 ability = mega_poke.movesets[0]['ability']
-                moveset = smogon.SmogonMoveset(self.moveset.name, None, ability, self.moveset.evs, self.moveset.nature, self.moveset.moves)
+                moveset = smogon.SmogonMoveset(self.moveset.name, None, ability, self.moveset.evs, self.moveset.nature, self.moveset.moves, tag=self.moveset.tag)
                 alive = self.alive
                 status = self.status
                 poke = Pokemon(name, typing, stats, moveset, alive, status, is_mega=True)
+                poke.health = self.health
                 return poke
+        return self
 
     def copy(self):
         poke = Pokemon(self.name, self.typing[:], self.stats, self.moveset,
@@ -75,13 +89,16 @@ class Pokemon():
         poke.status = self.status
         poke.stages = self.stages.copy()
         poke.is_mega = self.is_mega
+        poke.choiced = self.choiced
+        if self.choiced:
+            poke.move_choice = self.move_choice
         return poke
 
     def to_tuple(self):
         return (self.name, self.item, self.health, tuple(self.typing), self.alive, self.status, tuple(self.stages.values()))
 
     def __repr__(self):
-        return "%s(%f, %s)" % (self.name, self.health, self.item)
+        return "%s(%u)" % (self.name, self.health)
 
 class Team():
     def __init__(self, poke_list):
@@ -99,11 +116,16 @@ class Team():
         return self.poke_list[self.primary_poke]
 
     def set_primary(self, primary):
+        if primary is None:
+            self.primary_poke = None
+            return
         #print "Switching pokemon from %s to %s" % (
             #self.poke_list[self.primary_poke],
             #self.poke_list[primary],
         #)
         self.primary_poke = primary
+        self.primary().choiced = False
+        self.primary().reset_stages()
 
     def __getitem__(self, index):
         return self.poke_list.__getitem__(index)
@@ -218,16 +240,21 @@ class Team():
                     evs['spe'] = spe
             nature = line[3][:-7]
             nature = Team.convert_nature(nature)
-            moveset = smogon.SmogonMoveset(name, item, ability, evs, nature, moves)
+            moveset = smogon.SmogonMoveset(name, item, ability, evs, nature, moves, tag=None)
             typing = data[name].typing
             stats = data[name].stats
             poke = Pokemon(name, typing, stats, moveset)
             poke_list.append(poke)
         return Team(poke_list)
 
-with open('data/poke.json') as f:
-    data = json.loads(f.read())
-    poke_dict = smogon.Smogon.convert_to_dict(data)
-    with open("pokemon_team2.txt", "r") as f:
-        team_text = f.read()
-        pokes = Team.make_team(team_text, poke_dict)
+    def alive(self):
+        alive = False
+        for p in self.poke_list:
+            alive = alive or p.alive
+        return alive
+
+
+if __name__ == "__main__":
+    with open('data/poke.json') as f:
+        data = json.loads(f.read())
+        poke_dict = smogon.Smogon.convert_to_dict(data)
