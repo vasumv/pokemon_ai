@@ -7,18 +7,6 @@ class Simulator():
         assert not gamestate.is_over()
         gamestate = gamestate.deep_copy()
 
-        if my_action.is_switch():
-            gamestate.my_team.set_primary(my_action.switch_index)
-            my_move = moves["Noop"]
-        if opp_action.is_switch():
-            gamestate.opp_team.set_primary(opp_action.switch_index)
-            opp_move = moves["Noop"]
-
-        if my_action.is_move():
-            my_move = moves[gamestate.my_team.primary().moveset.moves[my_action.move_index]]
-
-        if opp_action.is_move():
-            opp_move = moves[gamestate.opp_team.primary().moveset.moves[opp_action.move_index]]
         my_spe_buffs = 1.0 + 0.5 * abs(gamestate.my_team.primary().stages['spe'])
         opp_spe_buffs = 1.0 + 0.5 * abs(gamestate.opp_team.primary().stages['spe'])
         my_spe_multiplier = my_spe_buffs if gamestate.my_team.primary().stages['spe'] > 0 else 1 / my_spe_buffs
@@ -32,10 +20,29 @@ class Simulator():
 
         my_speed = gamestate.my_team.primary().get_stat("spe") * my_spe_multiplier
         opp_speed = gamestate.opp_team.primary().get_stat("spe") * opp_spe_multiplier
-        if gamestate.my_team.primary().ability == "Gale Wing":
+
+        if my_action.is_switch():
+            gamestate.my_team.set_primary(my_action.switch_index)
+            my_move = moves["Noop"]
+            if gamestate.my_team.primary().ability == "Intimidate":
+                if log: print gamestate.opp_team.primary(), "got intimidated."
+                gamestate.opp_team.primary().stages['patk'] -= 1
+        if opp_action.is_switch():
+            gamestate.opp_team.set_primary(opp_action.switch_index)
+            opp_move = moves["Noop"]
+            if not my_action.is_switch() and gamestate.opp_team.primary().ability == "Intimidate":
+                gamestate.my_team.primary().stages['patk'] -= 1
+                if log: print gamestate.my_team.primary(), "got intimidated."
+
+        if my_action.is_move():
+            my_move = moves[gamestate.my_team.primary().moveset.moves[my_action.move_index]]
+        if opp_action.is_move():
+            opp_move = moves[gamestate.opp_team.primary().moveset.moves[opp_action.move_index]]
+
+        if gamestate.my_team.primary().ability == "Gale Wings":
             if my_move.type == "Flying":
                 my_move.priority += 1
-        if gamestate.opp_team.primary().ability == "Gale Wing":
+        if gamestate.opp_team.primary().ability == "Gale Wings":
             if opp_move.type == "Flying":
                 opp_move.priority += 1
         if my_move.priority > opp_move.priority:
@@ -89,6 +96,9 @@ class Simulator():
             )
         if attacker_damage > 0 and (attacker_move.name == "U-turn" or attacker_move.name == "Volt Switch") and attacker_action.volt_turn is not None:
             attacker.set_primary(attacker_action.volt_turn)
+            if attacker.primary() and attacker.primary().ability == "Intimidate":
+                if log: print defender.primary(), "got intimidated."
+                defender.primary().stages['patk'] -= 1
 
         if defender.primary().health <= 0:
             if log:
@@ -96,6 +106,9 @@ class Simulator():
             defender.primary().alive = False
             defender.set_primary(defender_action.backup_switch)
             defender_move = moves['Noop']
+            if defender.primary() and defender.primary().ability == "Intimidate":
+                if log: print attacker.primary(), "got intimidated."
+                attacker.primary().stages['patk'] -= 1
 
         if gamestate.is_over():
             return
@@ -108,11 +121,17 @@ class Simulator():
             )
         if defender_damage > 0 and (defender_move.name == "U-turn" or defender_move.name == "Volt Switch") and defender_action.volt_turn is not None:
             defender.set_primary(defender_action.volt_turn)
+            if defender.primary() and defender.primary().ability == "Intimidate":
+                if log: print attacker.primary(), "got intimidated."
+                attacker.primary().stages['patk'] -= 1
         if attacker.primary().health <= 0:
             if log:
                 print "%s fainted." % attacker.primary()
             attacker.primary().alive = False
             attacker.set_primary(attacker_action.backup_switch)
+            if attacker.primary() and attacker.primary().ability == "Intimidate":
+                if log: print defender.primary(), "got intimidated."
+                defender.primary().stages['patk'] -= 1
 
         if gamestate.is_over():
             return

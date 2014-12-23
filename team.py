@@ -119,10 +119,6 @@ class Team():
         if primary is None:
             self.primary_poke = None
             return
-        #print "Switching pokemon from %s to %s" % (
-            #self.poke_list[self.primary_poke],
-            #self.poke_list[primary],
-        #)
         self.primary_poke = primary
         self.primary().choiced = False
         self.primary().reset_stages()

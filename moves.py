@@ -114,16 +114,21 @@ class DamagingMove(Move):
             other *= 1.5
         if attacker.item == "Choice Specs" and self.category == "Special":
             other *= 1.5
+        if defender.item == "Assault Vest" and self.category == "Special":
+            defense *= 1.5
+
 
         stab = 1.5 if move_type in attacker.typing else 1
+        if attacker.ability == "Adaptability" and stab == 1.5:
+            stab = 2
         type_multipliers = [get_multiplier(x, move_type) for x in defender.typing]
         for x in type_multipliers:
             type *= x
         critical = 1
         r = 1
         modifier = stab * type * critical * other * r
-        if attacker.ability == "Huge Power":
-            modifier *= 2
+        if attacker.ability == "Huge Power" or attacker.ability == "Pure Power":
+            attack *= 2
         damage = (((42.0) * attack/defense * self.power)/50 + 2) * modifier
         if 0 < accuracy:
             defender.health -= damage
