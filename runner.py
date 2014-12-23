@@ -97,7 +97,7 @@ class Selenium():
     def backup_switch(self, index):
         choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (index + 1))
         choose.click()
-        self.watch_for_move()
+        self.wait_for_move()
 
     def check_alive(self):
         return self.check_exists_by_xpath("/html/body/div[4]/div[1]/div/div[5]/div[2]/strong")
@@ -196,7 +196,6 @@ with open("pokemon_team.txt") as f:
     #print "primary:", opp_team.primary()
     #print "pokes: ", opp_team.poke_list
     #print "poke: ", opp_team.primary().moveset
-
 #flinch_count = 0
 #chromePath = "/home/vasu/Downloads/chromedriver"
 #url = "http://play.pokemonshowdown.com"
