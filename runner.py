@@ -10,8 +10,10 @@ class Selenium():
         self.url = url
         self.driver_path = driver_path
         self.driver = webdriver.Chrome(executable_path=self.driver_path)
-        self.alive = True
         self.state = None
+        self.poke_map = {
+            0:0,1:1,2:2,3:3,4:4,5:5
+        }
 
     def start_driver(self):
         self.driver.get(self.url)
@@ -80,25 +82,45 @@ class Selenium():
         mute = self.driver.find_element_by_xpath("/html/body/div[4]/p[3]/label/input")
         mute.click()
 
-    def move(self, index, backup_switch):
-        if self.alive:
+    def move(self, index, backup_switch, mega=False):
+        if self.check_alive():
+            if mega:
+                mega_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[5]/div/div[2]/div[2]/label/input')
+                mega_button.click()
             move = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (index + 1))
             move.click()
-        else:
-            self.backup_switch(backup_switch)
         self.wait_for_move()
+        if not self.check_alive():
+            self.backup_switch(backup_switch)
 
     def switch(self, index, backup_switch):
-        if self.alive:
-            choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (index + 1))
+        if self.check_alive():
+            i = self.poke_map[index]
+            choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[3]/div[2]/button[%d]" % (i + 1))
             choose.click()
-        else:
-            self.backup_switch(backup_switch)
+            old_primary = None
+            for k, v in self.poke_map.items():
+                if v == 0:
+                    old_primary = k
+
+            self.poke_map[index] = 0
+            self.poke_map[old_primary] = i
+
         self.wait_for_move()
+        if not self.check_alive():
+            self.backup_switch(backup_switch)
 
     def backup_switch(self, index):
-        choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (index + 1))
+        i = self.poke_map[index]
+        choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (i + 1))
         choose.click()
+        old_primary = None
+        for k, v in self.poke_map.items():
+            if v == 0:
+                old_primary = k
+
+        self.poke_map[index] = 0
+        self.poke_map[old_primary] = i
         self.wait_for_move()
 
     def check_alive(self):

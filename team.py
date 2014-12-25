@@ -4,6 +4,11 @@ import re
 from mega_items import mega_items
 from math import floor
 
+with open("data/poke_megas.json") as f:
+    mega_data = json.loads(f.read())
+    mega_poke_dict = smogon.Smogon.convert_to_dict(mega_data)
+
+
 class Pokemon():
     def __init__(self, name, typing, stats, moveset, alive=True, status=None, calculate=True, is_mega=False):
         self.name = name
@@ -62,20 +67,17 @@ class Pokemon():
 
     def mega_evolve(self):
         if self.can_evolve():
-            with open("data/poke_megas.json") as f:
-                mega_data = json.loads(f.read())
-                poke_dict = smogon.Smogon.convert_to_dict(mega_data)
-                name = mega_items[self.item][1]
-                mega_poke = poke_dict[name]
-                typing = mega_poke.typing
-                stats = mega_poke.stats
-                ability = mega_poke.movesets[0]['ability']
-                moveset = smogon.SmogonMoveset(self.moveset.name, None, ability, self.moveset.evs, self.moveset.nature, self.moveset.moves, tag=self.moveset.tag)
-                alive = self.alive
-                status = self.status
-                poke = Pokemon(name, typing, stats, moveset, alive, status, is_mega=True)
-                poke.health = self.health
-                return poke
+            name = mega_items[self.item][1]
+            mega_poke = mega_poke_dict[name]
+            typing = mega_poke.typing
+            stats = mega_poke.stats
+            ability = mega_poke.movesets[0]['ability']
+            moveset = smogon.SmogonMoveset(self.moveset.name, None, ability, self.moveset.evs, self.moveset.nature, self.moveset.moves, tag=self.moveset.tag)
+            alive = self.alive
+            status = self.status
+            poke = Pokemon(name, typing, stats, moveset, alive, status, is_mega=True)
+            poke.health = self.health
+            return poke
         return self
 
     def copy(self):

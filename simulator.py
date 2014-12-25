@@ -100,19 +100,22 @@ class Simulator():
                 if log: print defender.primary(), "got intimidated."
                 defender.primary().stages['patk'] -= 1
 
+
         if defender.primary().health <= 0:
             if log:
                 print "%s fainted." % defender.primary()
             defender.primary().alive = False
             defender.set_primary(defender_action.backup_switch)
             defender_move = moves['Noop']
+            if gamestate.is_over():
+                return
             if defender.primary() and defender.primary().ability == "Intimidate":
                 if log: print attacker.primary(), "got intimidated."
                 attacker.primary().stages['patk'] -= 1
 
+
         if gamestate.is_over():
             return
-
         defender_damage = defender_move.handle(gamestate, not my)
         if log:
             print "%s used %s." % (
@@ -129,6 +132,8 @@ class Simulator():
                 print "%s fainted." % attacker.primary()
             attacker.primary().alive = False
             attacker.set_primary(attacker_action.backup_switch)
+            if gamestate.is_over():
+                return
             if attacker.primary() and attacker.primary().ability == "Intimidate":
                 if log: print defender.primary(), "got intimidated."
                 defender.primary().stages['patk'] -= 1

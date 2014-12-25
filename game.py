@@ -8,29 +8,35 @@ from gamestate import Action
 cache = {}
 def get_pess_action(state, simulator, depth=1, path=()):
     if state.is_over() or depth == 0:
-        return None, state.evaluate()
+        return None, state.evaluate(), None
     my_legal_actions = state.get_legal_actions(0)
     opp_legal_actions = state.get_legal_actions(1)
-    my_v = float("-inf")
+    my_v = float('-inf')
     best_action = None
+    best_best_opp_action = None
     for my_action in my_legal_actions:
         opp_v = float("inf")
+        best_opp_action = None
         for opp_action in opp_legal_actions:
             this_path = tuple(path)
             this_path += ((my_action, opp_action),)
             new_state = simulator.simulate(state, my_action, opp_action)
             tuple_state = new_state.to_tuple()
-            if tuple_state in cache:
-                new_action, state_value, _ = cache[tuple_state]
+            if (depth, tuple_state) in cache:
+                new_action, state_value = cache[(depth, tuple_state)]
             else:
-                new_action, state_value = get_pess_action(new_state, simulator, depth=depth - 1, path=this_path)
-                cache[tuple_state] = (my_action, state_value, this_path)
+                new_action, state_value, _ = get_pess_action(new_state, simulator, depth=depth - 1, path=this_path)
+                cache[(depth, tuple_state)] = (my_action, state_value)
             if opp_v >= state_value:
                 opp_v = state_value
+                best_opp_action = opp_action
+            if state_value < my_v:
+                break
         if opp_v > my_v:
             best_action = my_action
+            best_best_opp_action = best_opp_action
             my_v = opp_v
-    return best_action, my_v
+    return best_action, my_v, best_best_opp_action
 
 def get_player_action(gamestate, who=0):
     valid = False
@@ -67,6 +73,10 @@ if __name__ == "__main__":
         opp_team = Team.make_team(f1.read(), poke_dict)
         gamestate = GameState(my_team, opp_team)
         simulator = Simulator()
+        #my_action = Action.create("move 1 1 False 5")
+        #opp_action = get_pess_action(gamestate, simulator, depth=args.depth)[0]
+        #import sys
+        #sys.exit(0)
         while not gamestate.is_over():
             print "=========================================================================================="
             print "My primary:", gamestate.opp_team.primary()
@@ -74,8 +84,6 @@ if __name__ == "__main__":
 
             print
             my_action = get_player_action(gamestate, who=1)
-            #import random
-            #my_action = random.choice(gamestate.get_legal_actions(1))
             opp_action = get_pess_action(gamestate, simulator, depth=args.depth)[0]
             gamestate = simulator.simulate(gamestate, opp_action, my_action, log=True)
         if gamestate.opp_team.alive():

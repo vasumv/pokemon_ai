@@ -16,20 +16,24 @@ class GameState():
         return (self.my_team.to_tuple(), self.opp_team.to_tuple())
 
     def evaluate(self):
+        win_bonus = 0
         if self.is_over():
             if self.my_team.alive():
-                return 10000
+                win_bonus = 10000
             else:
-                return -10000
-        my_poke = self.my_team.primary()
-        opp_poke = self.opp_team.primary()
+                win_bonus = -10000
         my_team_health = sum([x.health/x.final_stats['hp'] for x in self.my_team.poke_list])
         opp_team_health = sum([x.health/x.final_stats['hp'] for x in self.opp_team.poke_list])
         my_team_death = len([x for x in self.my_team.poke_list if not x.alive])
         opp_team_death = len([x for x in self.opp_team.poke_list if not x.alive])
-        my_team_stages = my_poke.stages['spatk'] + my_poke.stages['patk']
-        opp_team_stages = opp_poke.stages['spatk'] + opp_poke.stages['patk']
-        return my_team_health - opp_team_health - 0.1 * my_team_death + 0.1 * opp_team_death + 0.07 * (my_team_stages - opp_team_stages)
+        if self.is_over():
+            my_team_stages, opp_team_stages = 0, 0
+        else:
+            my_poke = self.my_team.primary()
+            opp_poke = self.opp_team.primary()
+            my_team_stages = my_poke.stages['spatk'] + my_poke.stages['patk']
+            opp_team_stages = opp_poke.stages['spatk'] + opp_poke.stages['patk']
+        return win_bonus + my_team_health - opp_team_health - 0.1 * my_team_death + 0.1 * opp_team_death + 0.07 * (my_team_stages - opp_team_stages)
 
     def is_over(self):
         return not (self.my_team.alive() and self.opp_team.alive())

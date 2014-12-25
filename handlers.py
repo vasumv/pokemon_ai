@@ -30,3 +30,6 @@ def handle_close_combat(gamestate, my=True):
         poke = gamestate.opp_team.primary()
     poke.stages['spdef'] = max(-6, poke.stages['spdef'] - 1)
     poke.stages['pdef'] = max(-6, poke.stages['pdef'] - 1)
+
+def handle_roost(gamestate, my=True):
+    pass

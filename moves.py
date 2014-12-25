@@ -117,7 +117,6 @@ class DamagingMove(Move):
         if defender.item == "Assault Vest" and self.category == "Special":
             defense *= 1.5
 
-
         stab = 1.5 if move_type in attacker.typing else 1
         if attacker.ability == "Adaptability" and stab == 1.5:
             stab = 2
@@ -138,6 +137,34 @@ class DamagingMove(Move):
             defender.health = floor(defender.health)
         self.handler(gamestate, my=my)
         return damage
+
+class HealingMove(Move):
+    def __init__(self, name,
+                 category=None,
+                 priority=0,
+                 type=None,
+                 accuracy=1.0,
+                 handler=void_handler,
+                 healing_percent=0
+                 ):
+        Move.__init__(self, name,
+                      category=category,
+                      priority=priority,
+                      type=type,
+                      accuracy=accuracy,
+                      handler=handler
+                      )
+        self.healing_percent = healing_percent
+
+    def handle(self, gamestate, my=True):
+        if my:
+            poke = gamestate.my_team.primary()
+        else:
+            poke = gamestate.opp_team.primary()
+        poke.health = min(self.healing_percent * poke.final_stats['hp'],
+                           poke.final_stats['hp'])
+        return self.handler(gamestate, my=my)
+
 
 def default_handler(gamestate, my=True):
     pass
