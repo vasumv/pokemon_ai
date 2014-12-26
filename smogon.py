@@ -10,7 +10,6 @@ class Smogon():
     def convert_to_dict(poke_list):
         poke_dict = {}
         for poke in poke_list:
-            print poke
             poke_dict[poke['name']] = SmogonPokemon.from_dict(poke)
         return poke_dict
 

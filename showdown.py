@@ -1,12 +1,12 @@
 from smogon import SmogonMoveset
 from team import Team, Pokemon
-from runner import Selenium
+from runner import Selenium, SeleniumLog
 from simulator import Simulator, Action
 from gamestate import GameState
 from smogon import Smogon
 import json
 
-from agent import OptimisticMinimaxAgent
+from agent import OptimisticMinimaxAgent, PessimisticMinimaxAgent
 
 class Showdown():
     def __init__(self, team_text, agent, username, password=None, driver_path="./chromedriver"):
@@ -22,6 +22,48 @@ class Showdown():
         self.my_team = Team.make_team(team_text, self.data)
         self.opp_team = None
         self.simulator = Simulator()
+
+    def create_initial_gamestate(self, my_team, opp_team):
+        my_pokes = self.my_team.copy()
+        primary = None
+        for i, poke in enumerate(my_pokes.poke_list):
+            poke_name = poke.name
+            poke.health = my_team[poke_name]['health'] / 100.0 * poke.final_stats['hp']
+            poke.alive = my_team[poke_name]['alive']
+            if my_team[poke_name]['primary']:
+                primary = i
+        my_pokes.primary_poke = primary
+        if not self.opp_team:
+            opp_poke_names = list(opp_team.keys())
+            opp_poke_list = []
+            for name in opp_poke_names:
+                poke_name = poke.name
+                if poke.name[-5:] == "-Mega":
+                    poke_name = poke.name[:-5]
+                moveset = [m for m in self.data[name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag']]
+                assert len(moveset), "No candidate movesets for %s" % name
+                if len(moveset) >= 2:
+                    moveset = SmogonMoveset.from_dict(moveset[1])
+                else:
+                    moveset = SmogonMoveset.from_dict(moveset[0])
+                typing = self.data[name].typing
+                stats = self.data[name].stats
+                poke = Pokemon(name, typing, stats, moveset, calculate=True)
+                opp_poke_list.append(poke)
+
+            self.opp_team = Team(opp_poke_list)
+
+        opp_pokes = self.opp_team.copy()
+        primary = None
+        for i, poke in enumerate(opp_pokes.poke_list):
+            poke.health = opp_team[poke.name]['health'] / 100.0 * poke.final_stats['hp']
+            poke.alive = opp_team[poke.name]['alive']
+            if opp_team[poke.name]['primary']:
+                primary = i
+        opp_pokes.primary_poke = primary
+
+        gamestate = GameState([my_pokes, opp_pokes])
+        return gamestate
 
     def create_gamestate(self, my_team, opp_team):
         my_pokes = self.my_team.copy()
@@ -104,14 +146,14 @@ class Showdown():
 
 
 if __name__ == "__main__":
-    with open('teams/pokemon_team3.txt') as fp:
+    with open('teams/pokemon_team2.txt') as fp:
         team_text = fp.read()
 
 
     showdown = Showdown(
         team_text,
-        OptimisticMinimaxAgent(2),
-        "asdf7000",
+        PessimisticMinimaxAgent(2),
+        "asdf8000",
         password="seleniumpython"
     )
     showdown.start()
