@@ -1,145 +1,123 @@
-from move_list import moves
-import random
+from move_list import moves as MOVES
+
+import logging
+logging.basicConfig()
+
 
 class Simulator():
 
-    def simulate(self, gamestate, my_action, opp_action, log=False):
+    def simulate(self, gamestate, actions, who, log=False):
         assert not gamestate.is_over()
         gamestate = gamestate.deep_copy()
 
-        my_spe_buffs = 1.0 + 0.5 * abs(gamestate.my_team.primary().stages['spe'])
-        opp_spe_buffs = 1.0 + 0.5 * abs(gamestate.opp_team.primary().stages['spe'])
-        my_spe_multiplier = my_spe_buffs if gamestate.my_team.primary().stages['spe'] > 0 else 1 / my_spe_buffs
-        opp_spe_multiplier = opp_spe_buffs if gamestate.opp_team.primary().stages['spe'] > 0 else 1 / opp_spe_buffs
 
-        if gamestate.my_team.primary().item == "Choice Scarf":
+        my_team = gamestate.get_team(who)
+        opp_team = gamestate.get_team(1 - who)
+
+        my_poke = my_team.primary()
+        opp_poke = opp_team.primary()
+
+        my_action = actions[who]
+        opp_action = actions[1 - who]
+
+        my_speed = my_poke.get_stage('spe')
+        opp_speed = opp_poke.get_stage('spe')
+
+        my_spe_buffs = 1.0 + 0.5 * abs(my_speed)
+        opp_spe_buffs = 1.0 + 0.5 * abs(opp_speed)
+
+        my_spe_multiplier = my_spe_buffs if my_speed > 0 else 1 / my_spe_buffs
+        opp_spe_multiplier = opp_spe_buffs if opp_speed > 0 else 1 / opp_spe_buffs
+
+
+        if my_poke.item == "Choice Scarf":
             my_spe_multiplier *= 1.5
-        if gamestate.opp_team.primary().item == "Choice Scarf":
+        if opp_poke.item == "Choice Scarf":
             opp_spe_multiplier *= 1.5
 
 
-        my_speed = gamestate.my_team.primary().get_stat("spe") * my_spe_multiplier
-        opp_speed = gamestate.opp_team.primary().get_stat("spe") * opp_spe_multiplier
+        my_final_speed = my_poke.get_stat("spe") * my_spe_multiplier
+        opp_final_speed = opp_poke.get_stat("spe") * opp_spe_multiplier
 
         if my_action.is_switch():
-            gamestate.my_team.set_primary(my_action.switch_index)
-            my_move = moves["Noop"]
-            if gamestate.my_team.primary().ability == "Intimidate":
-                if log: print gamestate.opp_team.primary(), "got intimidated."
-                gamestate.opp_team.primary().stages['patk'] -= 1
+            gamestate.switch_pokemon(my_action.switch_index, who, log=log)
+            my_move = MOVES["Noop"]
+            my_poke = my_team.primary()
         if opp_action.is_switch():
-            gamestate.opp_team.set_primary(opp_action.switch_index)
-            opp_move = moves["Noop"]
-            if not my_action.is_switch() and gamestate.opp_team.primary().ability == "Intimidate":
-                gamestate.my_team.primary().stages['patk'] -= 1
-                if log: print gamestate.my_team.primary(), "got intimidated."
+            gamestate.switch_pokemon(opp_action.switch_index, 1 - who, log=log)
+            opp_move = MOVES["Noop"]
+            opp_poke = opp_team.primary()
 
         if my_action.is_move():
-            my_move = moves[gamestate.my_team.primary().moveset.moves[my_action.move_index]]
+            my_move = MOVES[my_poke.moveset.moves[my_action.move_index]]
         if opp_action.is_move():
-            opp_move = moves[gamestate.opp_team.primary().moveset.moves[opp_action.move_index]]
+            opp_move = MOVES[opp_poke.moveset.moves[opp_action.move_index]]
 
-        if gamestate.my_team.primary().ability == "Gale Wings":
+        if my_poke.ability == "Gale Wings":
             if my_move.type == "Flying":
                 my_move.priority += 1
-        if gamestate.opp_team.primary().ability == "Gale Wings":
+        if opp_poke.ability == "Gale Wings":
             if opp_move.type == "Flying":
                 opp_move.priority += 1
-        if my_move.priority > opp_move.priority:
-            self.make_move(gamestate, my_move, opp_move, my_action, opp_action, True, log=log)
-        elif opp_move.priority > my_move.priority:
-            self.make_move(gamestate, my_move, opp_move, my_action, opp_action, False, log=log)
-        else:
-            if my_speed > opp_speed:
-                self.make_move(gamestate, my_move, opp_move, my_action, opp_action, True, log=log)
-            elif my_speed < opp_speed:
-                self.make_move(gamestate, my_move, opp_move, my_action, opp_action, False, log=log)
-            else:
-                if random.random() < 0.5:
-                    self.make_move(gamestate, my_move, opp_move, my_action, opp_action, True, log=log)
-                else:
-                    self.make_move(gamestate, my_move, opp_move, my_action, opp_action, False, log=log)
 
+        first = None
+        if log:
+            print "Player 1 speed", my_final_speed
+            print "Player 2 speed", opp_final_speed
+        if my_move.priority > opp_move.priority:
+            first = who
+        elif opp_move.priority > my_move.priority:
+            first = 1 - who
+        else:
+            if my_final_speed > opp_final_speed:
+                first = who
+            elif opp_final_speed > my_final_speed:
+                first = 1 - who
+            else:
+                first = 1#who
+
+        moves = [None, None]
+        moves[who] = my_move
+        moves[1 - who] = opp_move
+        self.make_move(gamestate, moves, actions, first, who, log=log)
         return gamestate
 
-    def make_move(self, gamestate, my_move, opp_move, my_action, opp_action, my=True, log=False):
-        if my:
-            attacker = gamestate.my_team
-            attacker_move = my_move
-            attacker_action = my_action
+    def make_move(self, gamestate, moves, actions, first, who, log=False):
 
-            defender = gamestate.opp_team
-            defender_move = opp_move
-            defender_action = opp_action
-        else:
-            attacker = gamestate.opp_team
-            attacker_move = opp_move
-            attacker_action = opp_action
+        for i in [first, 1 - first]:
+            team = gamestate.get_team(i)
+            other_team = gamestate.get_team(1 - i)
 
-            defender = gamestate.my_team
-            defender_move = my_move
-            defender_action = my_action
+            move = moves[i]
+            action = actions[i]
+            if action.mega:
+                team.poke_list[team.primary_poke] = team.primary().mega_evolve(log=log)
+                gamestate.switch_pokemon(team.primary_poke, i, log=log)
 
-        if attacker_action.mega:
-            poke = attacker.primary().mega_evolve()
-            attacker.poke_list[attacker.primary_poke] = poke
-
-        if defender_action.mega:
-            poke = defender.primary().mega_evolve()
-            defender.poke_list[defender.primary_poke] = poke
-
-        attacker_damage = attacker_move.handle(gamestate, my)
-        if log:
-            print "%s used %s." % (
-                attacker.primary(),
-                attacker_move.name
-            )
-        if attacker_damage > 0 and (attacker_move.name == "U-turn" or attacker_move.name == "Volt Switch") and attacker_action.volt_turn is not None:
-            attacker.set_primary(attacker_action.volt_turn)
-            if attacker.primary() and attacker.primary().ability == "Intimidate":
-                if log: print defender.primary(), "got intimidated."
-                defender.primary().stages['patk'] -= 1
-
-
-        if defender.primary().health <= 0:
+            other_action = actions[1 - i]
+            damage = move.handle(gamestate, i, log=log)
             if log:
-                print "%s fainted." % defender.primary()
-            defender.primary().alive = False
-            defender.set_primary(defender_action.backup_switch)
-            defender_move = moves['Noop']
+                print ("%s used %s and dealt %u damage." % (
+                    team.primary(),
+                    move.name,
+                    damage
+                ))
+            if damage > 0 and move.name in ["U-turn", "Volt Switch"] and action.volt_turn is not None:
+                gamestate.switch_pokemon(action.volt_turn, i, log=log)
+
+            if other_team.primary().health == 0:
+                other_team.primary().alive = False
+                if log:
+                    print (
+                        "%s fainted." % other_team.primary()
+                    )
+
             if gamestate.is_over():
                 return
-            if defender.primary() and defender.primary().ability == "Intimidate":
-                if log: print attacker.primary(), "got intimidated."
-                attacker.primary().stages['patk'] -= 1
 
-
-        if gamestate.is_over():
-            return
-        defender_damage = defender_move.handle(gamestate, not my)
-        if log:
-            print "%s used %s." % (
-                defender.primary(),
-                defender_move.name
-            )
-        if defender_damage > 0 and (defender_move.name == "U-turn" or defender_move.name == "Volt Switch") and defender_action.volt_turn is not None:
-            defender.set_primary(defender_action.volt_turn)
-            if defender.primary() and defender.primary().ability == "Intimidate":
-                if log: print attacker.primary(), "got intimidated."
-                attacker.primary().stages['patk'] -= 1
-        if attacker.primary().health <= 0:
-            if log:
-                print "%s fainted." % attacker.primary()
-            attacker.primary().alive = False
-            attacker.set_primary(attacker_action.backup_switch)
-            if gamestate.is_over():
-                return
-            if attacker.primary() and attacker.primary().ability == "Intimidate":
-                if log: print defender.primary(), "got intimidated."
-                defender.primary().stages['patk'] -= 1
-
-        if gamestate.is_over():
-            return
+            if not other_team.primary().alive:
+                gamestate.switch_pokemon(other_action.backup_switch, 1 - i, log=log)
+                break
 
 class Action():
     def __init__(self, type, move_index=None, switch_index=None, mega=False, backup_switch=None, volt_turn=None):

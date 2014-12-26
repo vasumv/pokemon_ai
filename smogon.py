@@ -1,3 +1,4 @@
+import requests
 import json
 
 class Smogon():
@@ -9,6 +10,7 @@ class Smogon():
     def convert_to_dict(poke_list):
         poke_dict = {}
         for poke in poke_list:
+            print poke
             poke_dict[poke['name']] = SmogonPokemon.from_dict(poke)
         return poke_dict
 
@@ -77,7 +79,7 @@ class Smogon():
                 else:
                     item = ""
                 if len(moveset['evconfigs']) != 0:
-                    ability = moveset['evconfigs'][0]
+                    evs = moveset['evconfigs'][0]
                 else:
                     continue
                 evs = moveset['evconfigs'][0]
@@ -96,6 +98,7 @@ class Smogon():
         poke = SmogonPokemon(pokemon, type_list, stats, poke_movesets)
         return poke
 
+        import smogon
 
 class SmogonPokemon():
     def __init__(self, name, typing, stats, movesets):

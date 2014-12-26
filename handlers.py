@@ -1,35 +1,26 @@
-def handle_draco_meteor(gamestate, my=True):
-    if my:
-        poke = gamestate.my_team.primary()
-    else:
-        poke = gamestate.opp_team.primary()
-    poke.stages['spatk'] = max(-6, poke.stages['spatk'] - 2)
-def handle_superpower(gamestate, my=True):
-    if my:
-        poke = gamestate.my_team.primary()
-    else:
-        poke = gamestate.opp_team.primary()
-    poke.stages['patk'] = max(-6, poke.stages['patk'] - 1)
-    poke.stages['pdef'] = max(-6, poke.stages['pdef'] - 1)
-def handle_icy_wind(gamestate, my=True):
-    if my:
-        poke = gamestate.opp_team.primary()
-    else:
-        poke = gamestate.my_team.primary()
-    poke.stages['spe'] = max(-6, poke.stages['spe'] - 1)
-def handle_knock_off(gamestate, my=True):
-    if my:
-        poke = gamestate.opp_team.primary()
-    else:
-        poke = gamestate.my_team.primary()
-    poke.item = None
-def handle_close_combat(gamestate, my=True):
-    if my:
-        poke = gamestate.my_team.primary()
-    else:
-        poke = gamestate.opp_team.primary()
-    poke.stages['spdef'] = max(-6, poke.stages['spdef'] - 1)
-    poke.stages['pdef'] = max(-6, poke.stages['pdef'] - 1)
+def void_handler(gamestate, damage, who):
+    return 0
 
-def handle_roost(gamestate, my=True):
+def handle_draco_meteor(gamestate, damage, who):
+    gamestate.get_team(who).primary().decrease_stage('spatk', 2)
+def handle_superpower(gamestate, damage, who):
+    gamestate.get_team(who).primary().decrease_stage('patk', 1)
+    gamestate.get_team(who).primary().decrease_stage('pdef', 1)
+def handle_icy_wind(gamestate, damage, who):
+    gamestate.get_team(1 - who).primary().decrease_stage('spe', 1)
+def handle_knock_off(gamestate, damage, who):
+    gamestate.get_team(1 - who).primary().item = None
+def handle_close_combat(gamestate, damage, who):
+    gamestate.get_team(who).primary().decrease_stage('spdef', 1)
+    gamestate.get_team(who).primary().decrease_stage('pdef', 1)
+
+def handle_giga_drain(gamestate, damage, who):
     pass
+
+
+def power_gyro_ball(gamestate, who):
+    my_poke = gamestate.get_team(who).primary()
+    opp_poke = gamestate.get_team(1 - who).primary()
+    return 25.0 * (opp_poke.get_stat('spe') / my_poke.get_stat('spe'))
+
+#TODO: grass knot and low kick, add weights to smogon

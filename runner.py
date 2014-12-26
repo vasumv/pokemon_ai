@@ -82,16 +82,19 @@ class Selenium():
         mute = self.driver.find_element_by_xpath("/html/body/div[4]/p[3]/label/input")
         mute.click()
 
-    def move(self, index, backup_switch, mega=False):
+    def move(self, index, backup_switch, mega=False, volt_turn=None):
         if self.check_alive():
             if mega:
                 mega_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[5]/div/div[2]/div[2]/label/input')
                 mega_button.click()
             move = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (index + 1))
             move.click()
+            if volt_turn is not None:
+                print "Waiting for volt turn"
+                self.wait_for_move()
+                self.volt_turn(volt_turn)
         self.wait_for_move()
-        if not self.check_alive():
-            self.backup_switch(backup_switch)
+        self.backup_switch(backup_switch)
 
     def switch(self, index, backup_switch):
         if self.check_alive():
@@ -107,10 +110,24 @@ class Selenium():
             self.poke_map[old_primary] = i
 
         self.wait_for_move()
-        if not self.check_alive():
-            self.backup_switch(backup_switch)
+        self.backup_switch(backup_switch)
 
     def backup_switch(self, index):
+        print "Backup switching"
+        if not self.check_alive():
+            print "Is alive"
+            i = self.poke_map[index]
+            choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (i + 1))
+            choose.click()
+            old_primary = None
+            for k, v in self.poke_map.items():
+                if v == 0:
+                    old_primary = k
+            self.poke_map[index] = 0
+            self.poke_map[old_primary] = i
+            self.wait_for_move()
+
+    def volt_turn_switch(self, index):
         i = self.poke_map[index]
         choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (i + 1))
         choose.click()
@@ -118,10 +135,18 @@ class Selenium():
         for k, v in self.poke_map.items():
             if v == 0:
                 old_primary = k
-
         self.poke_map[index] = 0
         self.poke_map[old_primary] = i
         self.wait_for_move()
+
+    def volt_turn(self, volt_turn):
+        print "Volt turning"
+        my_team = self.get_my_team()
+        for poke in my_team.values():
+            print poke['primary'], poke['alive']
+            if poke['primary'] and poke['alive']:
+                self.volt_turn_switch(volt_turn)
+                break
 
     def check_alive(self):
         return self.check_exists_by_xpath("/html/body/div[4]/div[1]/div/div[5]/div[2]/strong")
@@ -175,7 +200,7 @@ class Selenium():
                 my_poke_info = {}
                 my_health = self.driver.find_element_by_xpath("/html/body/div[4]/div[1]/div/div[7]/div/div[%d]/span[%d]" % (i, j))
                 title = my_health.get_attribute("title")
-                hp = re.sub("[^0-9]", "", title)
+                hp = re.sub(r"[^0-9\.]", "", title)
                 health = 100.0 if hp == '' else float(hp)
                 name_info = ''.join([x for x in name_list if x in title])
                 alive = not "fainted" in title

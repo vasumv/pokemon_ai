@@ -4,23 +4,30 @@ import re
 from mega_items import mega_items
 from math import floor
 
+import logging
+logging.basicConfig()
+
 with open("data/poke_megas.json") as f:
     mega_data = json.loads(f.read())
     mega_poke_dict = smogon.Smogon.convert_to_dict(mega_data)
 
 
 class Pokemon():
-    def __init__(self, name, typing, stats, moveset, alive=True, status=None, calculate=True, is_mega=False):
+    def __init__(self, name, typing, stats, moveset, alive=True, status=None, calculate=False, is_mega=False, old_typing=None):
         self.name = name
         self.typing = typing
+        if old_typing is not None:
+            self.old_typing = old_typing
+        else:
+            self.old_typing = typing
         self.stats = stats
         self.moveset = moveset
         self.final_stats = {}
-        self.alive = alive
         self.item = moveset.item
         self.status = status
         self.is_mega = is_mega
         self.ability = moveset.ability
+        self.alive = alive
         self.choiced = False
         self.stages = {
             'patk': 0,
@@ -39,8 +46,31 @@ class Pokemon():
                     self.final_stats[stat_name] = floor((2 * value + 31 + moveset.evs[stat_name] / 4.0) + 110)
             self.health = self.final_stats['hp']
 
+    def damage(self, amount):
+        self.health = floor(max(0, self.health - amount))
+
+    def heal(self, percent):
+        self.health = floor(min(self.final_stats['hp'], self.health + percent * self.final_stats['hp']))
+
     def get_stat(self, stat_name):
         return self.final_stats[stat_name]
+
+    def get_stage(self, stat):
+        return self.stages[stat]
+
+    def increase_stage(self, stat, amount):
+        assert amount > 0
+        self.stages[stat] = min(6, self.stages[stat] + amount)
+
+    def decrease_stage(self, stat, amount):
+        assert amount > 0
+        self.stages[stat] = max(-6, self.stages[stat] - amount)
+        if self.ability == "Defiant":
+            logging.debug("%s has Defiant and sharply increased attack." % self)
+            self.increase_stage('patk', 2)
+        elif self.ability == "Competitive":
+            self.increase_stage('spatk', 2)
+            logging.debug("%s has Competitive and sharply increased special attack." % self)
 
     def reset_stages(self):
         self.stages = {
@@ -52,6 +82,9 @@ class Pokemon():
             'acc': 0,
             'eva': 0
         }
+
+    def reset_typing(self):
+        self.typing = self.old_typing
 
     def set_status(self, status):
         print self.name, "got", status
@@ -65,7 +98,7 @@ class Pokemon():
                 return True
         return False
 
-    def mega_evolve(self):
+    def mega_evolve(self, log=False):
         if self.can_evolve():
             name = mega_items[self.item][1]
             mega_poke = mega_poke_dict[name]
@@ -73,31 +106,33 @@ class Pokemon():
             stats = mega_poke.stats
             ability = mega_poke.movesets[0]['ability']
             moveset = smogon.SmogonMoveset(self.moveset.name, None, ability, self.moveset.evs, self.moveset.nature, self.moveset.moves, tag=self.moveset.tag)
-            alive = self.alive
             status = self.status
-            poke = Pokemon(name, typing, stats, moveset, alive, status, is_mega=True)
+            poke = Pokemon(name, typing, stats, moveset, status=status, old_typing=None, calculate=True, is_mega=True)
             poke.health = self.health
+
+            if log:
+                print "%s mega evolved into %s." % (
+                    self,
+                    poke
+                )
             return poke
         return self
 
     def copy(self):
-        poke = Pokemon(self.name, self.typing[:], self.stats, self.moveset,
-                       calculate=False)
+        poke = Pokemon(self.name, self.typing[:], self.stats, self.moveset, status=self.status, alive=self.alive,
+                       calculate=False, old_typing=self.old_typing)
         poke.final_stats = self.final_stats
         poke.health = self.health
-        poke.alive = self.alive
         poke.ability = self.ability
         poke.item = self.item
-        poke.status = self.status
         poke.stages = self.stages.copy()
         poke.is_mega = self.is_mega
         poke.choiced = self.choiced
         if self.choiced:
             poke.move_choice = self.move_choice
         return poke
-
     def to_tuple(self):
-        return (self.name, self.item, self.health, tuple(self.typing), self.alive, self.status, tuple(self.stages.values()))
+        return (self.name, self.item, self.health, tuple(self.typing), self.status, tuple(self.stages.values()))
 
     def __repr__(self):
         return "%s(%u)" % (self.name, self.health)
@@ -114,7 +149,10 @@ class Team():
 
     def to_tuple(self):
         return (self.primary_poke, tuple(x.to_tuple() for x in self.poke_list))
+
     def primary(self):
+        if self.primary_poke is None:
+            return None
         return self.poke_list[self.primary_poke]
 
     def set_primary(self, primary):
@@ -201,7 +239,9 @@ class Team():
         poke_list = []
         text_lines = text.split("\n\n")[:6]
         for tl in text_lines:
-            line = tl.split('\n')
+            if tl.strip() == "":
+                continue
+            line = tl.strip().split('\n')
             #if "(M)" in line[0]:
                 #line[0] = line[0].replace(" (M)", "")
             #if "(F)" in line[0]:
@@ -241,18 +281,26 @@ class Team():
             moveset = smogon.SmogonMoveset(name, item, ability, evs, nature, moves, tag=None)
             typing = data[name].typing
             stats = data[name].stats
-            poke = Pokemon(name, typing, stats, moveset)
+            poke = Pokemon(name, typing, stats, moveset, calculate=True)
             poke_list.append(poke)
         return Team(poke_list)
 
     def alive(self):
         alive = False
-        for p in self.poke_list:
-            alive = alive or p.alive
+        for poke in self.poke_list:
+            alive = alive or poke.alive
+            if alive:
+                return alive
         return alive
-
-
 if __name__ == "__main__":
-    with open('data/poke.json') as f:
+    import json
+    with open("data/poke2.json") as f:
         data = json.loads(f.read())
-        poke_dict = smogon.Smogon.convert_to_dict(data)
+    import smogon
+    poke_dict = smogon.Smogon.convert_to_dict(data)
+    poke = poke_dict['Infernape']
+    print poke
+    print poke.movesets[0]
+    moveset = smogon.SmogonMoveset.from_dict(poke.movesets[0])
+    print moveset.ability
+

@@ -1,9 +1,6 @@
-import random
 from type import get_multiplier
-from math import floor
 
-def void_handler(gamestate, my=True):
-    pass
+from handlers import void_handler
 
 class Move:
     def __init__(self, name,
@@ -13,17 +10,24 @@ class Move:
                  type=None,
                  accuracy=1.0,
                  handler=void_handler,
+                 power_handler=None,
                  ):
         self.name = name
-        self.power = power
+        self._power = power
         self.category = category
         self.type = type
         self.accuracy = accuracy
         self.handler = handler
         self.priority = priority
+        self.power_handler = power_handler
 
-    def handle(self, gamestate, my=True):
-        return self.handler(gamestate, my=my)
+    def power(self, gamestate, who):
+        if self.power_handler is not None:
+            return self.power_handler(gamestate, who)
+        return self._power
+
+    def handle(self, gamestate, who, log=False):
+        return self.handler(gamestate, 0, who)
 
 
 class BoostingMove(Move):
@@ -44,33 +48,20 @@ class BoostingMove(Move):
                       )
         self.boosts = boosts
 
-    def handle(self, gamestate, my=True):
-        if my:
-            poke = gamestate.my_team.primary()
-        else:
-            poke = gamestate.opp_team.primary()
-
+    def handle(self, gamestate, who, log=False):
+        poke = gamestate.get_team(who).primary()
         for boost, amount in self.boosts.items():
-            increase = poke.stages[boost] + amount
-            if increase < -6 or increase > 6:
-                continue
-            poke.stages[boost] = increase
-            #print "%s increased %s by %d stages and is now at stage %d" % (
-                        #poke.name,
-                        #boost,
-                        #amount,
-                        #poke.stages[boost]
-                        #)
+            if amount > 0:
+                poke.increase_stage(boost, amount)
+            else:
+                poke.decrease_stage(boost, -amount)
+        return 0
 
 class DamagingMove(Move):
 
-    def handle(self, gamestate, my=True):
-        if my:
-            attacker = gamestate.my_team.primary()
-            defender = gamestate.opp_team.primary()
-        else:
-            attacker = gamestate.opp_team.primary()
-            defender = gamestate.my_team.primary()
+    def handle(self, gamestate, who, log=False):
+        attacker = gamestate.get_team(who).primary()
+        defender = gamestate.get_team(1 - who).primary()
         if self.category == "Physical":
             atks = "patk"
             defs = "pdef"
@@ -79,14 +70,14 @@ class DamagingMove(Move):
             defs = "spdef"
         attack = attacker.get_stat(atks)
         defense = defender.get_stat(defs)
-        abs_atk_buffs = 1.0 + 0.5 * abs(attacker.stages[atks])
-        abs_def_buffs = 1.0 + 0.5 * abs(defender.stages[defs])
-        atk_stage_multiplier = abs_atk_buffs if attacker.stages[atks] > 0 else 1 / abs_atk_buffs
-        def_stage_multiplier = abs_def_buffs if defender.stages[defs] > 0 else 1 / abs_def_buffs
-        accuracy = self.accuracy
-        r_acc = random.random()
+        abs_atk_buffs = 1.0 + 0.5 * abs(attacker.get_stage(atks))
+        abs_def_buffs = 1.0 + 0.5 * abs(defender.get_stage(defs))
+        atk_stage_multiplier = abs_atk_buffs if attacker.get_stage(atks) > 0 else 1 / abs_atk_buffs
+        def_stage_multiplier = abs_def_buffs if defender.get_stage(defs) > 0 else 1 / abs_def_buffs
         type = 1
         move_type = self.type
+        name = self.name
+        power = self.power(gamestate, who)
         other = 1.0 * atk_stage_multiplier / def_stage_multiplier
 
         if attacker.ability == "Pixilate":
@@ -101,7 +92,7 @@ class DamagingMove(Move):
             attacker.typing = [move_type]
         elif defender.ability == "Levitate" and move_type == "Ground":
             other *= 0
-        elif attacker.ability == "Technician" and self.power <= 60:
+        elif attacker.ability == "Technician" and power <= 60:
             other *= 1.5
 
         if self.name == "Knock Off" and defender.item is not None:
@@ -109,7 +100,7 @@ class DamagingMove(Move):
 
         if attacker.item in set(["Choice Scarf", "Choice Band", "Choice Specs"]):
             attacker.choiced = True
-            attacker.move_choice = self.name
+            attacker.move_choice = name
         if attacker.item == "Choice Band" and self.category == "Physical":
             other *= 1.5
         if attacker.item == "Choice Specs" and self.category == "Special":
@@ -128,14 +119,11 @@ class DamagingMove(Move):
         modifier = stab * type * critical * other * r
         if attacker.ability == "Huge Power" or attacker.ability == "Pure Power":
             attack *= 2
-        damage = (((42.0) * attack/defense * self.power)/50 + 2) * modifier
-        if 0 < accuracy:
-            defender.health -= damage
-            if defender.health <= 0:
-                defender.health = 0.0
-                defender.alive = False
-            defender.health = floor(defender.health)
-        self.handler(gamestate, my=my)
+        damage = (((42.0) * attack/defense * power)/50 + 2) * modifier
+
+        defender.damage(damage)
+
+        self.handler(gamestate, damage, who)
         return damage
 
 class HealingMove(Move):
@@ -156,16 +144,7 @@ class HealingMove(Move):
                       )
         self.healing_percent = healing_percent
 
-    def handle(self, gamestate, my=True):
-        if my:
-            poke = gamestate.my_team.primary()
-        else:
-            poke = gamestate.opp_team.primary()
-        poke.health = min(self.healing_percent * poke.final_stats['hp'],
-                           poke.final_stats['hp'])
-        return self.handler(gamestate, my=my)
-
-
-def default_handler(gamestate, my=True):
-    pass
-
+    def handle(self, gamestate, who, log=False):
+        gamestate.get_team(who).primary().heal(self.healing_percent)
+        self.handler(gamestate, 0, who)
+        return 0
