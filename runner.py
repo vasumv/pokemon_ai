@@ -244,73 +244,10 @@ class Selenium():
         else:
             hp = 0
         return hp
-
-POKE_NAME = '(([^ ]+?)|(.+?) \(([^ ]+?)\))'
-BATTLE_STARTED = r'Battle between (.*?) and (.*?) started!'
-MY_WITHDRAW = r'(.+?), come back!'
-MY_SWITCH = r'Go! %s!' % POKE_NAME
-OPP_WITHDRAW = r'.+? withdrew %s!' % POKE_NAME
-OPP_SWITCH = r'.+? sent out %s!' % POKE_NAME
-MY_MOVE = r'(.+?) used (.+?)!'
-OPP_MOVE = r'The opposing (.+?) used (.+?)!'
-MY_MISS = r'The opposing (.+?) avoided the attack!'
-OPP_MISS = r'(.+?) avoided the attack!'
-MEGA_EVOLVE = ".+? has Mega Evolved into Mega (.+?)!"
-
-class SeleniumLog():
-
-    @staticmethod
-    def parse(text):
-        my_nicknames = {}
-        opp_nicknames = {}
-        for line in text.split('\n'):
-            line = line.strip()
-
-            match = re.match(BATTLE_STARTED, line)
-            if match:
-                continue
-
-            match = re.match(OPP_MOVE, line)
-            if match:
-                print "OPP_MOVE"
-                print opp_nicknames[match.group(1)], match.group(2)
-                continue
-
-            match = re.match(MY_MOVE, line)
-            if match:
-                print "MOVE"
-                print my_nicknames[match.group(1)], match.group(2)
-                continue
-
-            match = re.match(OPP_SWITCH, line)
-            if match:
-                if match.group(3):
-                    opp_nicknames[match.group(3)] = match.group(4)
-                else:
-                    opp_nicknames[match.group(2)] = match.group(2)
-                continue
-
-            match = re.match(MY_SWITCH, line)
-            if match:
-                if match.group(3):
-                    my_nicknames[match.group(3)] = match.group(4)
-                else:
-                    my_nicknames[match.group(2)] = match.group(2)
-                continue
-
-            match = re.match(MEGA_EVOLVE, line)
-            if match:
-                print "MEGA_EVOLVE"
-                print match.group(1)
-                continue
-        print my_nicknames
-        print opp_nicknames
-
-
 if __name__ == "__main__":
-    with open('log2.txt', 'r') as fp:
+    with open('log.txt', 'r') as fp:
         log_text = fp.read()
-    SeleniumLog.parse(log_text)
+    SimulatorLog.parse(log_text)
     #selenium = Selenium(url='http://replay.pokemonshowdown.com/oususpecttest-197218079')
 
     #selenium.start_driver()

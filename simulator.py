@@ -1,10 +1,40 @@
 from move_list import moves as MOVES
+from mega_items import mega_items as MEGA_ITEMS
 
 import logging
 logging.basicConfig()
 
 
 class Simulator():
+
+    def handle_event(self, gamestate, event):
+        def get_pokemon(team, name):
+            for poke in team:
+                if poke.name == name:
+                    return poke
+        def get_mega_item(name):
+            for item, (premega, mega) in MEGA_ITEMS.items():
+                if premega == name:
+                    return item
+
+        player = event.player
+        type = event.type
+        poke = get_pokemon(gamestate.get_team(player), event.poke)
+
+        if type == "faint":
+            poke.health = 0
+            poke.alive = False
+            print "%s fainted." % (poke)
+        elif type == "mega_evolve":
+            poke.item = get_mega_item(poke.name)
+            team = gamestate.get_team(player)
+            team.poke_list[team.primary_poke] = poke.mega_evolve()
+            print "%s mega evolved!" % (poke)
+        elif type == "damage":
+            hp = poke.final_stats['hp']
+            poke.damage(event.details['damage'] / 100 * hp)
+            print "%s got damaged: %f" % (poke, event.details['damage'])
+
 
     def simulate(self, gamestate, actions, who, log=False):
         assert not gamestate.is_over()
