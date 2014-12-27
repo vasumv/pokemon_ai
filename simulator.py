@@ -34,6 +34,14 @@ class Simulator():
             hp = poke.final_stats['hp']
             poke.damage(event.details['damage'] / 100 * hp)
             print "%s got damaged: %f" % (poke, event.details['damage'])
+        elif type == "stat_change":
+            stages = event.details['stages']
+            if stages > 0:
+                poke.increase_stage(event.details['stat'], abs(stages))
+                print "%s increased its %s by %d stages" % (poke, event.details['stat'], stages)
+            else:
+                poke.decrease_stage(event.details['stat'], abs(stages))
+                print "%s decreased its %s by %d stages" % (poke, event.details['stat'], stages)
 
 
     def simulate(self, gamestate, actions, who, log=False):
