@@ -79,21 +79,23 @@ class DamagingMove(Move):
         name = self.name
         power = self.power(gamestate, who)
         other = 1.0 * atk_stage_multiplier / def_stage_multiplier
-
         if attacker.ability == "Pixilate":
             if move_type == "Normal":
                 move_type = "Fairy"
                 other *= 1.3
-        elif attacker.ability == "Aerilate":
+        if attacker.ability == "Aerilate":
             if move_type == "Normal":
                 move_type = "Flying"
                 other *= 1.3
-        elif attacker.ability == "Protean":
+        if attacker.ability == "Protean":
             attacker.typing = [move_type]
-        elif defender.ability == "Levitate" and move_type == "Ground":
+        if defender.ability == "Levitate" and move_type == "Ground":
             other *= 0
-        elif attacker.ability == "Technician" and power <= 60:
+        if attacker.ability == "Technician" and power <= 60:
             other *= 1.5
+        if defender.ability == "Thick Fat" and (move_type == "Fire" or move_type == "Ice"):
+            other *= 0.5
+
 
         if self.name == "Knock Off" and defender.item is not None:
             other *= 1.5

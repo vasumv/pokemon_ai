@@ -348,7 +348,7 @@ moves = {
                              type="Steel",
                              accuracy=1.000000),
 "Bullet Seed": DamagingMove("Bullet Seed",
-                            power=25,
+                            power=25 * 1.5 * 3,
                             category="Physical",
                             priority=0,
                             type="Grass",

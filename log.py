@@ -6,6 +6,7 @@ stat_map = {'Attack': 'patk',
             'Special Defense': 'spdef',
             'Speed': 'spe'}
 modifier_map = {None: 1,
+                'harshly': 2,
                 'sharply': 2,
                 'drastically': 3}
 direction_map = {'fell': -1,
@@ -14,7 +15,7 @@ direction_map = {'fell': -1,
                  'raised': 1}
 
 STATS = '|'.join(list(stat_map.keys()))
-STAT_MODIFIER = r"sharply |drastically "
+STAT_MODIFIER = r"sharply |drastically |harshly "
 ABILITY_STAT_DIRECTION = r"lowered|raised"
 MOVE_STAT_DIRECTION = r"fell|rose"
 
@@ -35,13 +36,16 @@ TURN = r'Turn (.+?)'
 OPP_KNOCK_OFF = r"The opposing (.+?) knocked off (.+?)'s (.+?)!"
 DAMAGE = r'(.*[\.!] )?(?P<opposing>The opposing )?(?P<poke>.+?) lost (?P<damage>[0-9]+(\.[0-9]+)?)% of its health!'
 FAINTED = r'(?P<opposing>The opposing )?(?P<poke>.+?) fainted!'
-
+GAIN_HEALTH = r'(?P<opposing>The opposing )?(?P<poke>.+?) regained health!'
 class SimulatorLog():
 
     def __init__(self):
         self.events = []
         self.event_count = 0
         self.nicknames = [{}, {}]
+
+    def __iter__(self):
+        return iter(self.events)
 
     def handle_line(self, line):
         event = {}
@@ -119,6 +123,19 @@ class SimulatorLog():
             event['details'] = details
             return SimulatorEvent.from_dict(event)
 
+        match = re.match(GAIN_HEALTH, line)
+        if match:
+            self.event_count += 1
+            event['index'] = self.event_count
+            event['type'] = 'regain_health'
+            poke = match.group('poke')
+            player = 1 if match.group('opposing') is not None else 0
+            poke = self.nicknames[player][poke]
+            event['player'] = player
+            event['poke'] = poke
+            details = {}
+            event['details'] = details
+            return SimulatorEvent.from_dict(event)
         match = re.match(OPP_SWITCH, line)
         if match:
             if match.group('nickname'):
@@ -162,6 +179,8 @@ class SimulatorLog():
             player = 1 if match.group('opposing') is not None else 0
             old_poke = poke
 
+            if poke not in self.nicknames[player]:
+                player = 1 - player
             poke = self.nicknames[player][poke]
             event['player'] = player
             details = {}
@@ -179,6 +198,7 @@ class SimulatorLog():
         event = self.handle_line(line)
         if event:
             self.events.append(event)
+        return event
 
     @staticmethod
     def parse(text):

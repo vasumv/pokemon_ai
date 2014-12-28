@@ -39,9 +39,9 @@ class Selenium():
         user = self.driver.find_element_by_name("username")
         user.send_keys(username)
         user.send_keys(Keys.RETURN)
-        time.sleep(2)
+        time.sleep(4)
         while not self.check_exists_by_xpath("/html/body/div[4]/div/form/p[4]/label/input"):
-            time.sleep(2)
+            time.sleep(1)
         passwd = self.driver.find_element_by_xpath("/html/body/div[4]/div/form/p[4]/label/input")
         passwd.send_keys(password)
         passwd.send_keys(Keys.RETURN)
@@ -49,7 +49,6 @@ class Selenium():
 
     def start_battle(self):
         url1 = self.driver.current_url
-        time.sleep(5)
         form = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div[2]/div[1]/form/p[1]/button")
         form.click()
         ou = self.driver.find_element_by_xpath("/html/body/div[4]/ul[1]/li[4]/button")
@@ -73,7 +72,8 @@ class Selenium():
         textfield.send_keys(team)
         save = self.driver.find_element_by_xpath("/html/body/div[4]/div/button[3]")
         save.click()
-        self.driver.get(self.url)
+        close_button = self.driver.find_element_by_xpath("//*[@id='header']/div[2]/div/ul[1]/li[2]/a[2]")
+        close_button.click()
         time.sleep(2)
 
     def turn_off_sound(self):
@@ -158,15 +158,22 @@ class Selenium():
             return False
         return True
 
-    def get_log(self):
-            #log = self.driver.find_element_by_xpath("/html/body/div[4]/div[3]/div[1]")
+    def start_timer(self):
+        if self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/p[2]/button"):
+            timer = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/p[2]/button")
+            if timer.text == "Start timer":
+                timer.click()
 
-            log = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div[2]")
+    def get_log(self):
+            log = self.driver.find_element_by_xpath("/html/body/div[4]/div[3]/div[1]")
+
+            #log = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div[2]")
 
             return log.text
 
     def wait_for_move(self):
         move_exists = self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[1]")
+        self.start_timer()
         while move_exists == False:
             print "waiting for their move"
             time.sleep(2)

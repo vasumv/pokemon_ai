@@ -1,11 +1,22 @@
 from move_list import moves as MOVES
 from mega_items import mega_items as MEGA_ITEMS
+from log import SimulatorLog
 
 import logging
 logging.basicConfig()
 
 
 class Simulator():
+
+    def __init__(self):
+        self.log = SimulatorLog()
+
+    def append_log(self, gamestate, lines):
+        for line in lines:
+            event = self.log.add_event(line)
+            if not event:
+                continue
+            self.handle_event(gamestate, event)
 
     def handle_event(self, gamestate, event):
         def get_pokemon(team, name):
@@ -19,7 +30,8 @@ class Simulator():
 
         player = event.player
         type = event.type
-        poke = get_pokemon(gamestate.get_team(player), event.poke)
+        team = gamestate.get_team(player)
+        poke = get_pokemon(team, event.poke)
 
         if type == "faint":
             poke.health = 0
@@ -34,6 +46,18 @@ class Simulator():
             hp = poke.final_stats['hp']
             poke.damage(event.details['damage'] / 100 * hp)
             print "%s got damaged: %f" % (poke, event.details['damage'])
+        elif type == "move":
+            print "%s used %s." % (poke, event.details['move'])
+            if poke.item in ["Choice Scarf", "Choice Specs", "Choice Band"]:
+                moves = ["Hidden Power" if "Hidden Power" in m else m for m in poke.moveset.moves]
+                try:
+                    move_index = moves.index(event.details['move'])
+                    poke.choiced = True
+                    poke.move_choice = move_index
+                    print "%s is choiced to %s" % (poke, event.details['move'])
+                except:
+                    pass
+
         elif type == "stat_change":
             stages = event.details['stages']
             if stages > 0:
@@ -42,7 +66,11 @@ class Simulator():
             else:
                 poke.decrease_stage(event.details['stat'], abs(stages))
                 print "%s decreased its %s by %d stages" % (poke, event.details['stat'], stages)
-
+        elif type == "switch":
+            team.set_primary(team.poke_list.index(poke))
+            print "Player %d switched in %s" % (player, poke)
+        elif type == "regain_health":
+            poke.heal(0.5)
 
     def simulate(self, gamestate, actions, who, log=False):
         assert not gamestate.is_over()

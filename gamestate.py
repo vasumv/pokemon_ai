@@ -36,7 +36,7 @@ class GameState():
             opp_poke = opp_team.primary()
             my_team_stages = my_poke.stages['spatk'] + my_poke.stages['patk']
             opp_team_stages = opp_poke.stages['spatk'] + opp_poke.stages['patk']
-        return win_bonus + my_team_health - opp_team_health# - 0.5 * my_team_death + 0.5 * opp_team_death# + 0.07 * (my_team_stages - opp_team_stages)
+        return win_bonus + my_team_health - opp_team_health - 0.5 * my_team_death + 0.5 * opp_team_death# + 0.07 * (my_team_stages - opp_team_stages)
 
     def is_over(self):
         return not (self.teams[0].alive() and self.teams[1].alive())
@@ -90,7 +90,7 @@ class GameState():
                                     backup_switch=None
                                 )
                             )
-                        elif j != None and k != None:
+                        elif j != None and k != None and j != k:
                             moves.append(
                                 Action(
                                     "move",
