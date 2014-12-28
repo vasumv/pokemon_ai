@@ -37,6 +37,7 @@ OPP_KNOCK_OFF = r"The opposing (.+?) knocked off (.+?)'s (.+?)!"
 DAMAGE = r'(.*[\.!] )?(?P<opposing>The opposing )?(?P<poke>.+?) lost (?P<damage>[0-9]+(\.[0-9]+)?)% of its health!'
 FAINTED = r'(?P<opposing>The opposing )?(?P<poke>.+?) fainted!'
 GAIN_HEALTH = r'(?P<opposing>The opposing )?(?P<poke>.+?) regained health!'
+LEFTOVERS = r'(?P<opposing>The opposing )?(?P<poke>.+?) restored a little HP using its (?P<item>.+?)!'
 class SimulatorLog():
 
     def __init__(self):
@@ -136,6 +137,21 @@ class SimulatorLog():
             details = {}
             event['details'] = details
             return SimulatorEvent.from_dict(event)
+
+        match = re.match(LEFTOVERS, line)
+        if match:
+            self.event_count += 1
+            event['index'] = self.event_count
+            event['type'] = 'leftovers'
+            poke = match.group('poke')
+            player = 1 if match.group('opposing') is not None else 0
+            poke = self.nicknames[player][poke]
+            event['player'] = player
+            event['poke'] = poke
+            details = {}
+            event['details'] = details
+            return SimulatorEvent.from_dict(event)
+
         match = re.match(OPP_SWITCH, line)
         if match:
             if match.group('nickname'):

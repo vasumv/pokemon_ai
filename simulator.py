@@ -71,6 +71,8 @@ class Simulator():
             print "Player %d switched in %s" % (player, poke)
         elif type == "regain_health":
             poke.heal(0.5)
+        elif type == "leftovers":
+            poke.heal(1.0 / 16)
 
     def simulate(self, gamestate, actions, who, log=False):
         assert not gamestate.is_over()
