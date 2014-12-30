@@ -13,6 +13,13 @@ def handle_knock_off(gamestate, damage, who):
 def handle_close_combat(gamestate, damage, who):
     gamestate.get_team(who).primary().decrease_stage('spdef', 1)
     gamestate.get_team(who).primary().decrease_stage('pdef', 1)
+def handle_stealth_rock(gamestate, damage, who):
+    gamestate.set_rocks(1 - who, True)
+    return 0
+
+def handle_defog(gamestate, damage, who):
+    gamestate.rocks = [False, False]
+    return 0
 
 def handle_giga_drain(gamestate, damage, who):
     pass

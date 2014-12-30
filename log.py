@@ -38,6 +38,7 @@ DAMAGE = r'(.*[\.!] )?(?P<opposing>The opposing )?(?P<poke>.+?) lost (?P<damage>
 FAINTED = r'(?P<opposing>The opposing )?(?P<poke>.+?) fainted!'
 GAIN_HEALTH = r'(?P<opposing>The opposing )?(?P<poke>.+?) regained health!'
 LEFTOVERS = r'(?P<opposing>The opposing )?(?P<poke>.+?) restored a little HP using its (?P<item>.+?)!'
+LEECH_SEED = r"(?P<opposing>The opposing )?(?P<poke>.+?)'s health is sapped by Leech Seed!"
 class SimulatorLog():
 
     def __init__(self):
@@ -152,6 +153,19 @@ class SimulatorLog():
             event['details'] = details
             return SimulatorEvent.from_dict(event)
 
+        match = re.match(LEECH_SEED, line)
+        if match:
+            self.event_count += 1
+            event['index'] = self.event_count
+            event['type'] = 'leftovers'
+            poke = match.group('poke')
+            player = 1 if match.group('opposing') is not None else 0
+            poke = self.nicknames[player][poke]
+            event['player'] = player
+            event['poke'] = poke
+            details = {}
+            event['details'] = details
+            return SimulatorEvent.from_dict(event)
         match = re.match(OPP_SWITCH, line)
         if match:
             if match.group('nickname'):

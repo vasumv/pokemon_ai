@@ -1,20 +1,26 @@
 from simulator import Action
+from type import get_multiplier
 import logging
 logging.basicConfig()
 
 class GameState():
     def __init__(self, teams):
         self.teams = teams
+        self.rocks = [False, False]
 
     def deep_copy(self):
         state = GameState([x.copy() for x in self.teams])
+        state.rocks = self.rocks[:]
         return state
+
+    def set_rocks(self, who, rock_bool):
+        self.rocks[who] = rock_bool
 
     def get_team(self, team):
         return self.teams[team]
 
     def to_tuple(self):
-        return tuple(x.to_tuple() for x in self.teams)
+        return tuple(((x.to_tuple() for x in self.teams), tuple(self.rocks)))
 
     def evaluate(self, who):
         win_bonus = 0
@@ -36,12 +42,14 @@ class GameState():
             opp_poke = opp_team.primary()
             my_team_stages = my_poke.stages['spatk'] + my_poke.stages['patk']
             opp_team_stages = opp_poke.stages['spatk'] + opp_poke.stages['patk']
-        return win_bonus + my_team_health - opp_team_health - 0.5 * my_team_death + 0.5 * opp_team_death# + 0.07 * (my_team_stages - opp_team_stages)
+            rocks = 0.5 if self.rocks[1 - who] else 0
+            return rocks
+        return win_bonus + my_team_health - opp_team_health - 0.5 * my_team_death + 0.5 * opp_team_death + rocks# + 0.07 * (my_team_stages - opp_team_stages)
 
     def is_over(self):
         return not (self.teams[0].alive() and self.teams[1].alive())
 
-    def switch_pokemon(self, switch_index, who, log=False):
+    def switch_pokemon(self, switch_index, who, log=False, hazards=True):
         my_team = self.get_team(who)
         opp_team = self.get_team(1 - who)
         my_team.set_primary(switch_index)
@@ -55,6 +63,17 @@ class GameState():
             if log:
                 print ("%s got intimidated." % opp_poke)
             opp_poke.decrease_stage('patk', 1)
+        if self.rocks[who] and hazards:
+            type = 1.0
+            type_multipliers = [get_multiplier(x, "Rock") for x in my_poke.typing]
+            for x in type_multipliers:
+                type *= x
+            damage = 1.0 / 8 * type
+            d = my_poke.damage_percent(damage)
+            if log:
+                print "%s was damaged %f due to rocks!" % (my_poke, d)
+
+
 
     def get_legal_actions(self, who):
         my_team = self.get_team(who)

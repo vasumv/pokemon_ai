@@ -6,6 +6,7 @@ from selenium.webdriver.common.keys import Keys
 
 class Selenium():
     BASE_URL="http://play.pokemonshowdown.com"
+    #BASE_URL="http://frost.psim.us"
     def __init__(self, url=BASE_URL, driver_path="/home/vasu/Downloads/chromedriver"):
         self.url = url
         self.driver_path = driver_path

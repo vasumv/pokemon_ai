@@ -32,6 +32,7 @@ class Simulator():
         type = event.type
         team = gamestate.get_team(player)
         poke = get_pokemon(team, event.poke)
+        opp_poke = gamestate.get_team(1 - player).primary()
 
         if type == "faint":
             poke.health = 0
@@ -73,6 +74,10 @@ class Simulator():
             poke.heal(0.5)
         elif type == "leftovers":
             poke.heal(1.0 / 16)
+        elif type == "leech_seed":
+            damage = poke.damage_percent(1.0 / 8)
+            opp_poke.heal(damage)
+
 
     def simulate(self, gamestate, actions, who, log=False):
         assert not gamestate.is_over()
@@ -160,7 +165,7 @@ class Simulator():
             action = actions[i]
             if action.mega:
                 team.poke_list[team.primary_poke] = team.primary().mega_evolve(log=log)
-                gamestate.switch_pokemon(team.primary_poke, i, log=log)
+                gamestate.switch_pokemon(team.primary_poke, i, log=log, hazards=False)
 
             other_action = actions[1 - i]
             damage = move.handle(gamestate, i, log=log)

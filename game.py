@@ -13,7 +13,7 @@ if __name__ == "__main__":
     argparser.add_argument('--depth', type=int, default=2)
     args = argparser.parse_args()
 
-    players = [HumanAgent(), OptimisticMinimaxAgent(args.depth)]
+    players = [HumanAgent(), PessimisticMinimaxAgent(args.depth)]
 
     with open(args.team1) as f1, open(args.team2) as f2, open("data/poke2.json") as f3:
         data = json.loads(f3.read())
@@ -22,10 +22,9 @@ if __name__ == "__main__":
 
     gamestate = GameState(teams)
     simulator = Simulator()
-    #gamestate.get_team(1).primary().health = 237
-    #opp_action = players[1].get_action(gamestate, 1)
-    #import sys
-    #sys.exit(0)
+    opp_action = players[1].get_action(gamestate, 1)
+    import sys
+    sys.exit(0)
     while not gamestate.is_over():
         print "=========================================================================================="
         print "Player 1 primary:", gamestate.get_team(0).primary()
