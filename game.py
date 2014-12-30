@@ -22,9 +22,6 @@ if __name__ == "__main__":
 
     gamestate = GameState(teams)
     simulator = Simulator()
-    opp_action = players[1].get_action(gamestate, 1)
-    import sys
-    sys.exit(0)
     while not gamestate.is_over():
         print "=========================================================================================="
         print "Player 1 primary:", gamestate.get_team(0).primary()

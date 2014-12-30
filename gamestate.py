@@ -20,7 +20,7 @@ class GameState():
         return self.teams[team]
 
     def to_tuple(self):
-        return tuple(((x.to_tuple() for x in self.teams), tuple(self.rocks)))
+        return (tuple(x.to_tuple() for x in self.teams), (self.rocks[0], self.rocks[1]))
 
     def evaluate(self, who):
         win_bonus = 0
@@ -42,8 +42,7 @@ class GameState():
             opp_poke = opp_team.primary()
             my_team_stages = my_poke.stages['spatk'] + my_poke.stages['patk']
             opp_team_stages = opp_poke.stages['spatk'] + opp_poke.stages['patk']
-            rocks = 0.5 if self.rocks[1 - who] else 0
-            return rocks
+            rocks = 1.3 if self.rocks[1 - who] else 0
         return win_bonus + my_team_health - opp_team_health - 0.5 * my_team_death + 0.5 * opp_team_death + rocks# + 0.07 * (my_team_stages - opp_team_stages)
 
     def is_over(self):
@@ -72,7 +71,6 @@ class GameState():
             d = my_poke.damage_percent(damage)
             if log:
                 print "%s was damaged %f due to rocks!" % (my_poke, d)
-
 
 
     def get_legal_actions(self, who):
