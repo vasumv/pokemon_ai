@@ -30,6 +30,8 @@ class Showdown():
         primary = None
         for i, poke in enumerate(my_pokes.poke_list):
             poke_name = poke.name
+            if poke_name == "Keldeo-Resolute":
+                poke_name = "Keldeo"
             poke.health = my_team[poke_name]['health'] / 100.0 * poke.final_stats['hp']
             poke.alive = my_team[poke_name]['alive']
             if my_team[poke_name]['primary']:

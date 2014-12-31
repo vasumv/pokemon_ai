@@ -7,26 +7,30 @@ class GameState():
     def __init__(self, teams):
         self.teams = teams
         self.rocks = [False, False]
+        self.spikes = [0, 0]
 
     def deep_copy(self):
         state = GameState([x.copy() for x in self.teams])
         state.rocks = self.rocks[:]
+        state.spikes = self.spikes[:]
         return state
 
     def set_rocks(self, who, rock_bool):
         self.rocks[who] = rock_bool
 
+    def add_spikes(self, who):
+        self.spikes[who] += 1
+
     def get_team(self, team):
         return self.teams[team]
 
     def to_tuple(self):
-        return (tuple(x.to_tuple() for x in self.teams), (self.rocks[0], self.rocks[1]))
+        return (tuple(x.to_tuple() for x in self.teams), (self.rocks[0], self.rocks[1], self.spikes[0], self.spikes[1]))
 
     def evaluate(self, who):
         win_bonus = 0
         my_team = self.get_team(who)
         opp_team = self.get_team(1 - who)
-        burn = 0
         if self.is_over():
             if my_team.alive():
                 win_bonus = 10000
@@ -36,7 +40,8 @@ class GameState():
         opp_team_health = sum([x.health/x.final_stats['hp'] for x in opp_team.poke_list])
         my_team_death = len([x for x in my_team.poke_list if not x.alive])
         opp_team_death = len([x for x in opp_team.poke_list if not x.alive])
-        rocks = 0
+        my_burn, opp_burn = 0, 0
+        my_rocks, opp_rocks = 0, 0
         if self.is_over():
             my_team_stages, opp_team_stages = 0, 0
         else:
@@ -44,9 +49,17 @@ class GameState():
             opp_poke = opp_team.primary()
             my_team_stages = my_poke.stages['spatk'] + my_poke.stages['patk']
             opp_team_stages = opp_poke.stages['spatk'] + opp_poke.stages['patk']
-            rocks = 0.75 if self.rocks[1 - who] else 0
-            burn = 0.5 if (opp_poke.status == "burn" and opp_poke.final_stats['patk'] > 250) else 0
-        return win_bonus + my_team_health - opp_team_health - 0.5 * my_team_death + 0.5 * opp_team_death + rocks + burn# + 0.07 * (my_team_stages - opp_team_stages)
+            opp_rocks = 0.75 if self.rocks[1 - who] else 0
+            my_rocks = -0.75 if self.rocks[who] else 0
+            if self.spikes[1 - who] == 1:
+                spikes = 0.3
+            elif self.spikes[1 - who] == 2:
+                spikes = 0.6
+            elif self.spikes[1 - who] == 3:
+                spikes = 1
+            opp_burn = 0.5 if (opp_poke.status == "burn" and opp_poke.final_stats['patk'] > 250) else 0
+            my_burn = -0.5 if (my_poke.status == "burn" and my_poke.final_stats['patk'] > 250) else 0
+        return win_bonus + my_team_health - opp_team_health - 0.5 * my_team_death + 0.5 * opp_team_death + opp_rocks + my_rocks + opp_burn + my_burn# + 0.07 * (my_team_stages - opp_team_stages)
 
     def is_over(self):
         return not (self.teams[0].alive() and self.teams[1].alive())
@@ -74,6 +87,16 @@ class GameState():
             d = my_poke.damage_percent(damage)
             if log:
                 print "%s was damaged %f due to rocks!" % (my_poke, d)
+            if self.spikes[who] > 0 and "Flying" not in my_poke.typing and my_poke.ability != "Levitate":
+                if self.spikes[who] == 1:
+                    d = my_poke.damage_percent(1.0 / 8)
+                elif self.spikes[who] == 2:
+                    d = my_poke.damage_percent(1.0 / 6)
+                elif self.spikes[who] == 3:
+                    d = my_poke.damage_percent(1.0 / 4)
+                if log:
+                    print "%s was damaged %f due to spikes!" % (my_poke, d)
+
 
 
     def get_legal_actions(self, who):

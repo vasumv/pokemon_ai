@@ -20,6 +20,7 @@ def handle_stealth_rock(gamestate, damage, who):
 
 def handle_defog(gamestate, damage, who):
     gamestate.rocks = [False, False]
+    gamestate.spikes = [0, 0]
     return 0
 
 def handle_giga_drain(gamestate, damage, who):
@@ -34,6 +35,8 @@ def handle_willowisp(gamestate, damage, who):
 def handle_seismic_toss(gamestate, damage, who):
     opp_poke = gamestate.get_team(1 - who).primary()
     opp_poke.damage(100.0)
+def handle_spikes(gamestate, damage, who):
+    gamestate.add_spikes(1 - who)
 
 def power_gyro_ball(gamestate, who):
     my_poke = gamestate.get_team(who).primary()
