@@ -119,7 +119,12 @@ class Showdown():
             self.correct_gamestate(gamestate)
 
 if __name__ == "__main__":
-    with open('teams/volt_turn.txt') as fp:
+    from argparse import ArgumentParser
+    argparser = ArgumentParser()
+    argparser.add_argument('team')
+    args = argparser.parse_args()
+
+    with open(args.team) as fp:
         team_text = fp.read()
 
 

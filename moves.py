@@ -114,6 +114,14 @@ class DamagingMove(Move):
         stab = 1.5 if move_type in attacker.typing else 1
         if attacker.ability == "Adaptability" and stab == 1.5:
             stab = 2
+        if move_type == "Water" and defender.ability == "Water Absorb":
+            other *= 0
+            defender.heal(0.25)
+        if move_type == "Electric" and defender.ability == "Volt Absorb":
+            other *= 0
+            defender.heal(0.25)
+        if move_type == "Fire" and defender.ability == "Flash Fire":
+            other *= 0
         type_multipliers = [get_multiplier(x, move_type) for x in defender.typing]
         for x in type_multipliers:
             type *= x
