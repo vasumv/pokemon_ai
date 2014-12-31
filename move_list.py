@@ -2502,6 +2502,7 @@ moves = {
                              category="Physical",
                              priority=0,
                              type="Fighting",
+                             handler=handle_seismic_toss,
                              accuracy=1.000000),
 "Self-Destruct": DamagingMove("Self-Destruct",
                               power=200,
