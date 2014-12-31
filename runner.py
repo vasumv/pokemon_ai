@@ -58,8 +58,8 @@ class Selenium():
         battle.click()
         while url1 == self.driver.current_url:
             time.sleep(1.5)
-            print "waiting"
-        print "found battle"
+            #print "waiting"
+        #print "found battle"
 
     def make_team(self, team):
         builder = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div[2]/div[2]/p[1]/button")
@@ -91,7 +91,7 @@ class Selenium():
             move = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (index + 1))
             move.click()
             if volt_turn is not None:
-                print "Waiting for volt turn"
+                #print "Waiting for volt turn"
                 self.wait_for_move()
                 self.volt_turn(volt_turn)
         self.wait_for_move()
@@ -114,9 +114,9 @@ class Selenium():
         self.backup_switch(backup_switch)
 
     def backup_switch(self, index):
-        print "Backup switching"
+        #print "Backup switching"
         if not self.check_alive():
-            print "Is alive"
+            #print "Is alive"
             i = self.poke_map[index]
             choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (i + 1))
             choose.click()
@@ -141,10 +141,10 @@ class Selenium():
         self.wait_for_move()
 
     def volt_turn(self, volt_turn):
-        print "Volt turning"
+        #print "Volt turning"
         my_team = self.get_my_team()
         for poke in my_team.values():
-            print poke['primary'], poke['alive']
+            #print poke['primary'], poke['alive']
             if poke['primary'] and poke['alive']:
                 self.volt_turn_switch(volt_turn)
                 break
@@ -176,7 +176,7 @@ class Selenium():
         move_exists = self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[1]")
         self.start_timer()
         while move_exists == False:
-            print "waiting for their move"
+            #print "waiting for their move"
             time.sleep(2)
             move_exists = self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[1]")
             if self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/p[1]/em/button[2]"):
@@ -184,7 +184,7 @@ class Selenium():
                 save_replay.click()
                 import sys
                 sys.exit(0)
-        print "their move just ended"
+        #print "their move just ended"
 
     def get_opp_team(self):
         names = self.driver.find_element_by_xpath("/html/body/div[4]/div[3]/div[1]/div[15]/em")
