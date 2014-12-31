@@ -50,15 +50,15 @@ class GameState():
             my_team_stages = my_poke.stages['spatk'] + my_poke.stages['patk']
             opp_team_stages = opp_poke.stages['spatk'] + opp_poke.stages['patk']
             opp_rocks = 0.75 if self.rocks[1 - who] else 0
-            my_rocks = -0.75 if self.rocks[who] else 0
+            my_rocks = -1.0 if self.rocks[who] else 0
             if self.spikes[1 - who] == 1:
                 spikes = 0.3
             elif self.spikes[1 - who] == 2:
                 spikes = 0.6
             elif self.spikes[1 - who] == 3:
                 spikes = 1
-            opp_burn = 0.5 if (opp_poke.status == "burn" and opp_poke.final_stats['patk'] > 250) else 0
-            my_burn = -0.5 if (my_poke.status == "burn" and my_poke.final_stats['patk'] > 250) else 0
+            opp_burn = 0.75 if (opp_poke.status == "burn" and opp_poke.final_stats['patk'] > 250) else 0
+            my_burn = -0.75 if (my_poke.status == "burn" and my_poke.final_stats['patk'] > 250) else 0
         return win_bonus + my_team_health - opp_team_health - 0.5 * my_team_death + 0.5 * opp_team_death + opp_rocks + my_rocks + opp_burn + my_burn# + 0.07 * (my_team_stages - opp_team_stages)
 
     def is_over(self):
