@@ -31,6 +31,9 @@ def handle_willowisp(gamestate, damage, who):
     if "Fire" not in opp_poke.typing:
         opp_poke.set_status("burn")
     return 0
+def handle_seismic_toss(gamestate, damage, who):
+    opp_poke = gamestate.get_team(1 - who).primary()
+    opp_poke.damage(100.0)
 
 def power_gyro_ball(gamestate, who):
     my_poke = gamestate.get_team(who).primary()
