@@ -109,6 +109,8 @@ class DamagingMove(Move):
             other *= 1.5
         if defender.item == "Assault Vest" and self.category == "Special":
             defense *= 1.5
+        if defender.item == "Eviolite":
+            defense *= 1.5
         if attacker.status == "burn" and self.category == "Physical":
             other /= 2.0
         stab = 1.5 if move_type in attacker.typing else 1
