@@ -26,6 +26,7 @@ class GameState():
         win_bonus = 0
         my_team = self.get_team(who)
         opp_team = self.get_team(1 - who)
+        burn = 0
         if self.is_over():
             if my_team.alive():
                 win_bonus = 10000
@@ -35,6 +36,7 @@ class GameState():
         opp_team_health = sum([x.health/x.final_stats['hp'] for x in opp_team.poke_list])
         my_team_death = len([x for x in my_team.poke_list if not x.alive])
         opp_team_death = len([x for x in opp_team.poke_list if not x.alive])
+        rocks = 0
         if self.is_over():
             my_team_stages, opp_team_stages = 0, 0
         else:
@@ -42,8 +44,9 @@ class GameState():
             opp_poke = opp_team.primary()
             my_team_stages = my_poke.stages['spatk'] + my_poke.stages['patk']
             opp_team_stages = opp_poke.stages['spatk'] + opp_poke.stages['patk']
-            rocks = 1.3 if self.rocks[1 - who] else 0
-        return win_bonus + my_team_health - opp_team_health - 0.5 * my_team_death + 0.5 * opp_team_death + rocks# + 0.07 * (my_team_stages - opp_team_stages)
+            rocks = 0.75 if self.rocks[1 - who] else 0
+            burn = 0.5 if (opp_poke.status == "burn" and opp_poke.final_stats['patk'] > 250) else 0
+        return win_bonus + my_team_health - opp_team_health - 0.5 * my_team_death + 0.5 * opp_team_death + rocks + burn# + 0.07 * (my_team_stages - opp_team_stages)
 
     def is_over(self):
         return not (self.teams[0].alive() and self.teams[1].alive())

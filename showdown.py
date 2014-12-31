@@ -109,7 +109,7 @@ class Showdown():
             self.update_latest_turn(gamestate)
 
 if __name__ == "__main__":
-    with open('teams/volt_turn.txt') as fp:
+    with open('teams/pokemon_team8.txt') as fp:
         team_text = fp.read()
 
 

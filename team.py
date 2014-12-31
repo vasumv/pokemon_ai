@@ -92,8 +92,8 @@ class Pokemon():
         self.typing = self.old_typing
 
     def set_status(self, status):
-        print self.name, "got", status
-        self.status = status
+        if self.status is not None:
+            self.status = status
 
     def can_evolve(self):
         if self.is_mega:

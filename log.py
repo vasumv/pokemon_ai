@@ -39,6 +39,9 @@ FAINTED = r'(?P<opposing>The opposing )?(?P<poke>.+?) fainted!'
 GAIN_HEALTH = r'(?P<opposing>The opposing )?(?P<poke>.+?) regained health!'
 LEFTOVERS = r'(?P<opposing>The opposing )?(?P<poke>.+?) restored a little HP using its (?P<item>.+?)!'
 LEECH_SEED = r"(?P<opposing>The opposing )?(?P<poke>.+?)'s health is sapped by Leech Seed!"
+ROCKS = r"Pointed stones float in the air around (?P<opposing>your|the opposing) team!"
+BURN = r"(?P<opposing>The opposing )?(?P<poke>.+?) was burned!"
+HURT_BURN = r"(?P<opposing>The opposing )?(?P<poke>.+?) was hurt by its burn!"
 class SimulatorLog():
 
     def __init__(self):
@@ -153,6 +156,34 @@ class SimulatorLog():
             event['details'] = details
             return SimulatorEvent.from_dict(event)
 
+        match = re.match(BURN, line)
+        if match:
+            self.event_count += 1
+            event['index'] = self.event_count
+            event['type'] = 'burn'
+            poke = match.group('poke')
+            player = 1 if match.group('opposing') is not None else 0
+            poke = self.nicknames[player][poke]
+            event['player'] = player
+            event['poke'] = poke
+            details = {}
+            event['details'] = details
+            return SimulatorEvent.from_dict(event)
+
+        match = re.match(HURT_BURN, line)
+        if match:
+            self.event_count += 1
+            event['index'] = self.event_count
+            event['type'] = 'hurt_burn'
+            poke = match.group('poke')
+            player = 1 if match.group('opposing') is not None else 0
+            poke = self.nicknames[player][poke]
+            event['player'] = player
+            event['poke'] = poke
+            details = {}
+            event['details'] = details
+            return SimulatorEvent.from_dict(event)
+
         match = re.match(LEECH_SEED, line)
         if match:
             self.event_count += 1
@@ -166,6 +197,19 @@ class SimulatorLog():
             details = {}
             event['details'] = details
             return SimulatorEvent.from_dict(event)
+
+        match = re.match(ROCKS, line)
+        if match:
+            self.event_count += 1
+            event['index'] = self.event_count
+            event['type'] = 'rocks'
+            player = 1 if match.group('opposing') is not None else 0
+            event['player'] = player
+            event['poke'] = None
+            details = {}
+            event['details'] = details
+            return SimulatorEvent.from_dict(event)
+
         match = re.match(OPP_SWITCH, line)
         if match:
             if match.group('nickname'):

@@ -21,6 +21,7 @@ class Simulator():
     def handle_event(self, gamestate, event):
         def get_pokemon(team, name):
             for poke in team:
+                print "Checking", poke
                 if poke.name == name:
                     return poke
         def get_mega_item(name):
@@ -32,6 +33,8 @@ class Simulator():
         type = event.type
         team = gamestate.get_team(player)
         poke = get_pokemon(team, event.poke)
+        print "Event:", event
+        print "poke: ", poke
         opp_poke = gamestate.get_team(1 - player).primary()
 
         if type == "faint":
@@ -77,6 +80,13 @@ class Simulator():
         elif type == "leech_seed":
             damage = poke.damage_percent(1.0 / 8)
             opp_poke.heal(damage)
+        elif type == "rocks":
+            gamestate.set_rocks(player, True)
+        elif type == "burn":
+            poke.set_status("burn")
+        elif type == "hurt_burn":
+            poke.damage_percent(1.0 / 8)
+
 
 
     def simulate(self, gamestate, actions, who, log=False):

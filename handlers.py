@@ -24,7 +24,13 @@ def handle_defog(gamestate, damage, who):
 
 def handle_giga_drain(gamestate, damage, who):
     pass
-
+def handle_explosion(gamestate, damage, who):
+    gamestate.get_team(who).primary().health = 0
+def handle_willowisp(gamestate, damage, who):
+    opp_poke = gamestate.get_team(1 - who).primary()
+    if "Fire" not in opp_poke.typing:
+        opp_poke.set_status("burn")
+    return 0
 
 def power_gyro_ball(gamestate, who):
     my_poke = gamestate.get_team(who).primary()
