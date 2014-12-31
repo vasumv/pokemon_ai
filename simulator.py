@@ -21,7 +21,6 @@ class Simulator():
     def handle_event(self, gamestate, event):
         def get_pokemon(team, name):
             for poke in team:
-                print "Checking", poke
                 if poke.name == name:
                     return poke
         def get_mega_item(name):
@@ -33,8 +32,6 @@ class Simulator():
         type = event.type
         team = gamestate.get_team(player)
         poke = get_pokemon(team, event.poke)
-        print "Event:", event
-        print "poke: ", poke
         opp_poke = gamestate.get_team(1 - player).primary()
 
         if type == "faint":
@@ -75,17 +72,30 @@ class Simulator():
             print "Player %d switched in %s" % (player, poke)
         elif type == "regain_health":
             poke.heal(0.5)
+            print "%s regained health" % poke
         elif type == "leftovers":
+            poke.item = "Leftovers"
             poke.heal(1.0 / 16)
+            print "%s regained health due to leftovers" % poke
         elif type == "leech_seed":
             damage = poke.damage_percent(1.0 / 8)
             opp_poke.heal(damage)
+            print "%s was sapped and %s gained health due to leech seed." % (poke, opp_poke)
         elif type == "rocks":
             gamestate.set_rocks(player, True)
+            print "Player %u got rocked!" % player
         elif type == "burn":
             poke.set_status("burn")
+            print "%s got burned!" % poke
         elif type == "hurt_burn":
             poke.damage_percent(1.0 / 8)
+            print "%s got hurt due to its burn!" % poke
+        elif type == "float_balloon":
+            poke.item = "Air Balloon"
+            print "%s has an air balloon!" % poke
+        elif type == "pop_balloon":
+            poke.item = None
+            print "%s's air balloon was popped!" % poke
 
 
 
@@ -169,14 +179,17 @@ class Simulator():
 
         for i in [first, 1 - first]:
             team = gamestate.get_team(i)
-            other_team = gamestate.get_team(1 - i)
-
-            move = moves[i]
             action = actions[i]
             if action.mega:
                 team.poke_list[team.primary_poke] = team.primary().mega_evolve(log=log)
                 gamestate.switch_pokemon(team.primary_poke, i, log=log, hazards=False)
 
+        for i in [first, 1 - first]:
+            team = gamestate.get_team(i)
+            other_team = gamestate.get_team(1 - i)
+
+            move = moves[i]
+            action = actions[i]
             other_action = actions[1 - i]
             damage = move.handle(gamestate, i, log=log)
             if log:
@@ -185,6 +198,8 @@ class Simulator():
                     move.name,
                     damage
                 ))
+            if damage > 0 and other_team.primary().item == "Air Balloon":
+                other_team.primary().item = None
             if damage > 0 and move.name in ["U-turn", "Volt Switch"] and action.volt_turn is not None:
                 gamestate.switch_pokemon(action.volt_turn, i, log=log)
 

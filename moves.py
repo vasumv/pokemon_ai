@@ -89,7 +89,7 @@ class DamagingMove(Move):
                 other *= 1.3
         if attacker.ability == "Protean":
             attacker.typing = [move_type]
-        if defender.ability == "Levitate" and move_type == "Ground":
+        if (defender.ability == "Levitate" or defender.item == "Air Balloon") and move_type == "Ground":
             other *= 0
         if attacker.ability == "Technician" and power <= 60:
             other *= 1.5
