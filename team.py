@@ -55,7 +55,7 @@ class Pokemon():
         return damage
 
     def heal(self, percent):
-        self.health = floor(in(self.final_stats['hp'], self.health + percent * self.final_stats['hp']))
+        self.health = floor(min(self.final_stats['hp'], self.health + percent * self.final_stats['hp']))
 
     def get_stat(self, stat_name):
         return self.final_stats[stat_name]
