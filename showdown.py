@@ -131,7 +131,7 @@ if __name__ == "__main__":
     showdown = Showdown(
         team_text,
         PessimisticMinimaxAgent(2),
-        "asdf8000",
+        "asdf7000",
         password="seleniumpython"
     )
     showdown.start()
