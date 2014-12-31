@@ -66,6 +66,15 @@ class Showdown():
         gamestate = GameState([my_pokes, opp_pokes])
         return gamestate
 
+    def correct_gamestate(self, gamestate):
+        my_poke_health = self.selenium.get_my_primary_health()
+        opp_poke_health = self.selenium.get_opp_primary_health()
+        my_team = gamestate.get_team(0)
+        opp_team = gamestate.get_team(1)
+        my_team.primary().health = my_poke_health / 100.0 * my_team.primary().final_stats['hp']
+        opp_team.primary().health = opp_poke_health / 100.0 * opp_team.primary().final_stats['hp']
+
+
     def update_latest_turn(self, gamestate):
         text_log = self.selenium.get_log()
         text_list = text_log.split("\n")
@@ -107,9 +116,10 @@ class Showdown():
             else:
                 self.selenium.move(move.move_index, move.backup_switch, mega=move.mega, volt_turn=move.volt_turn)
             self.update_latest_turn(gamestate)
+            self.correct_gamestate(gamestate)
 
 if __name__ == "__main__":
-    with open('teams/pokemon_team8.txt') as fp:
+    with open('teams/volt_turn.txt') as fp:
         team_text = fp.read()
 
 
