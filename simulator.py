@@ -96,6 +96,8 @@ class Simulator():
         elif type == "pop_balloon":
             poke.item = None
             print "%s's air balloon was popped!" % poke
+        elif type == "new_item":
+            poke.item = event.item
 
 
 

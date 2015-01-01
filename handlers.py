@@ -37,7 +37,14 @@ def handle_seismic_toss(gamestate, damage, who):
     opp_poke.damage(100.0)
 def handle_spikes(gamestate, damage, who):
     gamestate.add_spikes(1 - who)
-
+def handle_heal_bell(gamestate, damage, who):
+    my_team = gamestate.get_team(who)
+    for poke in my_team.poke_list:
+        poke.reset_status()
+def handle_aromatherapy(gamestate, damage, who):
+    my_team = gamestate.get_team(who)
+    for poke in my_team.poke_list:
+        poke.reset_status()
 def power_gyro_ball(gamestate, who):
     my_poke = gamestate.get_team(who).primary()
     opp_poke = gamestate.get_team(1 - who).primary()
