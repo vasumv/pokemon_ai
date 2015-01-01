@@ -83,6 +83,15 @@ class Selenium():
         mute = self.driver.find_element_by_xpath("/html/body/div[4]/p[3]/label/input")
         mute.click()
 
+    def get_opp_primary(self):
+        img = self.driver.find_element_by_xpath("/html/body/div[4]/div[1]/div/div[4]/div[1]/img[6]")
+        text = img.get_attribute('src')
+        back = text.rindex('.')
+        poke = text[46:back]
+        if "shiny" in poke:
+            poke = poke[6:]
+        return poke
+
     def move(self, index, backup_switch, mega=False, volt_turn=None):
         if self.check_alive():
             if mega:

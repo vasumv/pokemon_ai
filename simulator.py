@@ -11,9 +11,9 @@ class Simulator():
     def __init__(self):
         self.log = SimulatorLog()
 
-    def append_log(self, gamestate, lines):
+    def append_log(self, gamestate, lines, opp_poke=None):
         for line in lines:
-            event = self.log.add_event(line)
+            event = self.log.add_event(line, opp_poke=opp_poke)
             if not event:
                 continue
             self.handle_event(gamestate, event)
