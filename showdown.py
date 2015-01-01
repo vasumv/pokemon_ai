@@ -41,6 +41,8 @@ class Showdown():
             opp_poke_names = list(opp_team.keys())
             opp_poke_list = []
             for name in opp_poke_names:
+                if not name:
+                    continue
                 poke_name = poke.name
                 moveset = [m for m in self.data[name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag']]
                 assert len(moveset), "No candidate movesets for %s" % name
@@ -89,7 +91,8 @@ class Showdown():
                 buffer = []
             else:
                 buffer.append(line)
-        self.simulator.append_log(gamestate, turns[-1])
+        opp_poke = self.selenium.get_opp_primary()
+        self.simulator.append_log(gamestate, turns[-1], opp_poke=opp_poke)
 
     def start(self):
         self.selenium.start_driver()
@@ -108,7 +111,7 @@ class Showdown():
             print "My primary:", gamestate.get_team(0).primary()
             print "Their primary:", gamestate.get_team(1).primary()
             print "Their moves: ", gamestate.get_team(1).primary().moveset.moves
-            print "Their item: ", gamestate.get_team(1).primary().moveset.item
+            print "Their item: ", gamestate.get_team(1).primary().item
             print "Their ability: ", gamestate.get_team(1).primary().ability
             print "My move:",
             move = self.agent.get_action(gamestate, 0)
@@ -124,6 +127,8 @@ if __name__ == "__main__":
     from argparse import ArgumentParser
     argparser = ArgumentParser()
     argparser.add_argument('team')
+    argparser.add_argument('--username', default='asdf7000')
+    argparser.add_argument('--password', default='seleniumpython')
     args = argparser.parse_args()
 
     with open(args.team) as fp:
@@ -133,7 +138,7 @@ if __name__ == "__main__":
     showdown = Showdown(
         team_text,
         PessimisticMinimaxAgent(2),
-        "asdf7000",
-        password="seleniumpython"
+        args.username,
+        password=args.password,
     )
     showdown.start()

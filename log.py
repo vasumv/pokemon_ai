@@ -55,7 +55,7 @@ class SimulatorLog():
     def __iter__(self):
         return iter(self.events)
 
-    def handle_line(self, line):
+    def handle_line(self, line, opp_poke=None):
         event = {}
         line = line.strip()
 
@@ -234,7 +234,7 @@ class SimulatorLog():
             self.event_count += 1
             event['index'] = self.event_count
             event['type'] = 'rocks'
-            player = 1 if match.group('opposing') is not None else 0
+            player = 1 if match.group('opposing') is not "your" else 0
             event['player'] = player
             event['poke'] = None
             details = {}
@@ -293,14 +293,20 @@ class SimulatorLog():
             event['type'] = type
             event['details'] = details
             event['poke'] = poke
-            if len(mega) == 1:
-                self.nicknames[player][old_poke] = self.nicknames[player][old_poke] + "-Mega"
+            if opp_poke == "charizard-mega-x":
+                self.nicknames[player][old_poke] = "Charizard-Mega-X"
+            elif opp_poke == "charizard-mega-y":
+                self.nicknames[player][old_poke] = "Charizard-Mega-Y"
+            elif opp_poke == "mewtwo-mega-x":
+                self.nicknames[player][old_poke] = "Mewtwo-Mega-Y"
+            elif opp_poke == "mewtwo-mega-y":
+                self.nicknames[player][old_poke] = "Mewtwo-Mega-Y"
             else:
-                self.nicknames[player][old_poke] = self.nicknames[player][old_poke] + "-Mega"+mega[1]
+                self.nicknames[player][old_poke] = self.nicknames[player][old_poke] + "-Mega"
             return SimulatorEvent.from_dict(event)
 
-    def add_event(self, line):
-        event = self.handle_line(line)
+    def add_event(self, line, opp_poke=None):
+        event = self.handle_line(line, opp_poke=opp_poke)
         if event:
             self.events.append(event)
         return event

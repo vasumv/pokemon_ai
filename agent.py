@@ -39,11 +39,20 @@ class MinimaxAgent(Agent):
 
     def get_action(self, state, who, log=True):
         best_action, value, opp_action = self.minimax(state, self.depth, who, log=log)
-        if log:
-            print "I think you are going to use %s and I will use %s." % (
-                opp_action,
-                best_action,
-            )
+        if best_action:
+            if best_action.is_move():
+                my_move_name = state.get_team(who).primary().moveset.moves[best_action.move_index]
+            if opp_action.is_move():
+                opp_move_name = state.get_team(1 - who).primary().moveset.moves[opp_action.move_index]
+            if best_action.is_switch():
+                my_move_name = "Switch[%s]" % state.get_team(who).poke_list[best_action.switch_index]
+            if opp_action.is_switch():
+                opp_move_name = "Switch[%s]" % state.get_team(1 - who).poke_list[opp_action.switch_index]
+            if log:
+                print "I think you are going to use %s(%s, %s, %s) and I will use %s(%s, %s, %s)." % (
+                    opp_move_name, opp_action.backup_switch, opp_action.mega, opp_action.volt_turn,
+                    my_move_name, best_action.backup_switch, best_action.mega, best_action.volt_turn,
+                )
         return best_action
 
 class PessimisticMinimaxAgent(MinimaxAgent):
