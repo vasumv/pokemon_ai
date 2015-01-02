@@ -62,7 +62,7 @@ class DamagingMove(Move):
     def handle(self, gamestate, who, log=False):
         attacker = gamestate.get_team(who).primary()
         defender = gamestate.get_team(1 - who).primary()
-        if self.category == "Physical":
+        if self.category == "Physical" or self.name == "Secret Sword" or self.name == "Psyshock":
             atks = "patk"
             defs = "pdef"
         else:

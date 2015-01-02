@@ -247,7 +247,7 @@ class SimulatorLog():
             self.event_count += 1
             event['index'] = self.event_count
             event['type'] = 'rocks'
-            player = 1 if match.group('opposing') is not "your" else 0
+            player = 1 if match.group('opposing') != "your" else 0
             event['player'] = player
             event['poke'] = None
             details = {}

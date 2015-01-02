@@ -43,7 +43,8 @@ class Showdown():
             for name in opp_poke_names:
                 if not name:
                     continue
-                poke_name = poke.name
+                if poke_name == "Keldeo-Resolute":
+                    name = "Keldeo"
                 moveset = [m for m in self.data[name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag']]
                 assert len(moveset), "No candidate movesets for %s" % name
                 if len(moveset) >= 2:
