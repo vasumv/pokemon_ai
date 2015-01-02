@@ -37,14 +37,28 @@ def handle_seismic_toss(gamestate, damage, who):
     opp_poke.damage(100.0)
 def handle_spikes(gamestate, damage, who):
     gamestate.add_spikes(1 - who)
+    return 0
 def handle_heal_bell(gamestate, damage, who):
     my_team = gamestate.get_team(who)
     for poke in my_team.poke_list:
         poke.reset_status()
+    return 0
 def handle_aromatherapy(gamestate, damage, who):
     my_team = gamestate.get_team(who)
     for poke in my_team.poke_list:
         poke.reset_status()
+    return 0
+def handle_pain_split(gamestate, damage, who):
+    my_poke = gamestate.get_team(who).primary()
+    opp_poke = gamestate.get_team(1 - who).primary()
+    ave_health = (my_poke.health + opp_poke.health) / 2.0
+    my_poke.health = min(my_poke.final_stats['hp'], ave_health)
+    opp_poke.health = min(opp_poke.final_stats['hp'], ave_health)
+    return 0
+def handle_endeavor(gamestate, damage, who):
+    my_health = gamestate.get_team(who).primary().health
+    gamestate.get_team(1 - who).primary().health = my_health
+    return 0
 def power_gyro_ball(gamestate, who):
     my_poke = gamestate.get_team(who).primary()
     opp_poke = gamestate.get_team(1 - who).primary()
