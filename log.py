@@ -46,6 +46,7 @@ HURT_BURN = r"(?P<opposing>The opposing )?(?P<poke>.+?) was hurt by its burn!"
 FLOAT_BALLOON = r"(?P<opposing>The opposing )?(?P<poke>.+?) floats in the air with its Air Balloon!"
 POP_BALLOON = r"(?P<opposing>The opposing )?(?P<poke>.+?)'s Air Balloon popped!"
 NEW_ITEM = r"(?P<opposing>The opposing )?(?P<poke>.+?) obtained one (?P<item>.+?)."
+BELLY_DRUM = r"(?P<opposing>The opposing )?(?P<poke>.+?) cut its own HP and maximized its Attack!"
 class SimulatorLog():
 
     def __init__(self):
@@ -263,6 +264,21 @@ class SimulatorLog():
             player = 1 if match.group('opposing') != "your" else 0
             event['player'] = player
             event['poke'] = None
+            details = {}
+            event['details'] = details
+            return SimulatorEvent.from_dict(event)
+
+        match = re.match(BELLY_DRUM, line)
+        if match:
+            self.event_count += 1
+            event['index'] = self.event_count
+            event['type'] = 'belly_drum'
+            poke = match.group('poke')
+            player = 1 if match.group('opposing') is not None else 0
+            poke = self.nicknames[player][poke]
+            move = match.group('move')
+            event['player'] = player
+            event['poke'] = poke
             details = {}
             event['details'] = details
             return SimulatorEvent.from_dict(event)
