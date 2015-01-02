@@ -52,9 +52,9 @@ class Simulator():
             if poke.item in ["Choice Scarf", "Choice Specs", "Choice Band"]:
                 moves = ["Hidden Power" if "Hidden Power" in m else m for m in poke.moveset.moves]
                 try:
-                    move_index = moves.index(event.details['move'])
+                    moves.index(event.details['move'])
                     poke.choiced = True
-                    poke.move_choice = move_index
+                    poke.move_choice = event.details['move']
                     print "%s is choiced to %s" % (poke, event.details['move'])
                 except:
                     pass
