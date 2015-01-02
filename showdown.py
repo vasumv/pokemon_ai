@@ -128,7 +128,7 @@ if __name__ == "__main__":
     from argparse import ArgumentParser
     argparser = ArgumentParser()
     argparser.add_argument('team')
-    argparser.add_argument('--username', default='asdf7000')
+    argparser.add_argument('--username', default='asdf8000')
     argparser.add_argument('--password', default='seleniumpython')
     args = argparser.parse_args()
 

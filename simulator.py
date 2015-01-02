@@ -84,6 +84,9 @@ class Simulator():
         elif type == "rocks":
             gamestate.set_rocks(player, True)
             print "Player %u got rocked!" % player
+        elif type == "rocks_gone":
+            gamestate.set_rocks(player, False)
+            print "Player %u's rocks disappeared!" % player
         elif type == "burn":
             poke.set_status("burn")
             print "%s got burned!" % poke
