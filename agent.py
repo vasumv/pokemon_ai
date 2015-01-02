@@ -15,7 +15,7 @@ class HumanAgent(Agent):
         my_team = gamestate.get_team(who)
         print "My moves:", [m for m in my_team.primary().moveset.moves]
         print "My switches:", [(m, i) for i, m in enumerate(my_team.poke_list) if m != my_team.primary() and m.alive]
-        my_legal = gamestate.get_legal_actions(who)
+        my_legal = gamestate.get_legal_actions(who, log=True)
         while not valid:
             action_string = raw_input('> ')
             try:
@@ -38,6 +38,7 @@ class MinimaxAgent(Agent):
         self.prune_count = 0
 
     def get_action(self, state, who, log=True):
+        print "My Legal Actions:", state.get_legal_actions(who)
         best_action, value, opp_action = self.minimax(state, self.depth, who, log=log)
         if best_action:
             if best_action.is_move():

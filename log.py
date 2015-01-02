@@ -335,6 +335,7 @@ class SimulatorLog():
             event['type'] = type
             event['details'] = details
             event['poke'] = poke
+            print opp_poke
             if opp_poke == "charizard-mega-x":
                 self.nicknames[player][old_poke] = "Charizard-Mega-X"
             elif opp_poke == "charizard-mega-y":

@@ -99,7 +99,7 @@ class GameState():
 
 
 
-    def get_legal_actions(self, who):
+    def get_legal_actions(self, who, log=False):
         my_team = self.get_team(who)
         my_poke = my_team.primary()
         opp_team= self.get_team(1 - who)
@@ -152,8 +152,8 @@ class GameState():
 
         if opp_poke.ability == "Magnet Pull" and "Steel" in my_poke.typing and "Ghost" not in my_poke.typing:
             switches = []
-        elif my_poke.ability == "Shadow Tag" and "Ghost" not in opp_poke.typing:
+        elif opp_poke.ability == "Shadow Tag" and "Ghost" not in my_poke.typing:
             switches = []
-        elif my_poke.ability == "Arena Trap" and "Ghost" not in opp_poke.typing and "Flying" not in opp_poke.typing:
+        elif opp_poke.ability == "Arena Trap" and "Ghost" not in my_poke.typing and "Flying" not in my_poke.typing:
             switches = []
         return moves + switches
