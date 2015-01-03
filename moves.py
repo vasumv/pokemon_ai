@@ -119,6 +119,9 @@ class DamagingMove(Move):
         if move_type == "Water" and defender.ability == "Water Absorb":
             other *= 0
             defender.heal(0.25)
+        if move_type == "Water" and defender.ability == "Storm Drain":
+            other *= 0
+            defender.increase_stage('spatk', 1)
         if move_type == "Electric" and defender.ability == "Volt Absorb":
             other *= 0
             defender.heal(0.25)
