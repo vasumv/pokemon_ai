@@ -49,6 +49,9 @@ class Simulator():
             print "%s got damaged: %f" % (poke, event.details['damage'])
         elif type == "move":
             print "%s used %s." % (poke, event.details['move'])
+            move = event.details['move']
+            if move not in poke.moveset.moves and move != "Hidden Power":
+                poke.moveset.moves.append(move)
             if poke.item in ["Choice Scarf", "Choice Specs", "Choice Band"]:
                 moves = ["Hidden Power" if "Hidden Power" in m else m for m in poke.moveset.moves]
                 try:
