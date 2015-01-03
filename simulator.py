@@ -100,7 +100,8 @@ class Simulator():
             poke.item = None
             print "%s's air balloon was popped!" % poke
         elif type == "new_item":
-            poke.item = event.item
+            poke.item = event.details['item']
+            print "%s obtained one %s" % (poke, poke.item)
         elif type == "belly_drum":
             poke.increase_stage('patk', 9999)
 
