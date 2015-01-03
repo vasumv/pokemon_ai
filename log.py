@@ -276,7 +276,6 @@ class SimulatorLog():
             poke = match.group('poke')
             player = 1 if match.group('opposing') is not None else 0
             poke = self.nicknames[player][poke]
-            move = match.group('move')
             event['player'] = player
             event['poke'] = poke
             details = {}
