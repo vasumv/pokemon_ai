@@ -33,7 +33,7 @@ OPP_SWITCH = r'.+? sent out %s!' % POKE_NAME
 MOVE = r'(?P<opposing>The opposing )?(?P<poke>.+?) used (?P<move>.+?)!'
 MEGA_EVOLVE = r"(?P<opposing>The opposing )?(?P<poke>.+?) has Mega Evolved into Mega (?P<mega>.+?)!"
 TURN = r'Turn (.+?)'
-OPP_KNOCK_OFF = r"The opposing (.+?) knocked off (.+?)'s (.+?)!"
+LOST_ITEM = r".+? knocked off (?P<opposing>the opposing )?(?P<poke>.+?)'s .+?!"
 DAMAGE = r'(.*[\.!] )?(?P<opposing>The opposing )?(?P<poke>.+?) lost (?P<damage>[0-9]+(\.[0-9]+)?)% of its health!'
 FAINTED = r'(?P<opposing>The opposing )?(?P<poke>.+?) fainted!'
 GAIN_HEALTH = r'(?P<opposing>The opposing )?(?P<poke>.+?) regained health!'
@@ -44,6 +44,7 @@ ROCKS_GONE = r"The pointed stones disappeared from around (?P<opposing>your|the 
 BURN = r"(?P<opposing>The opposing )?(?P<poke>.+?) was burned!"
 HURT_BURN = r"(?P<opposing>The opposing )?(?P<poke>.+?) was hurt by its burn!"
 FLOAT_BALLOON = r"(?P<opposing>The opposing )?(?P<poke>.+?) floats in the air with its Air Balloon!"
+DRAGGED_OUT = r"(?P<opposing>The opposing )?(?P<poke>.+?) was dragged out!"
 POP_BALLOON = r"(?P<opposing>The opposing )?(?P<poke>.+?)'s Air Balloon popped!"
 NEW_ITEM = r"(?P<opposing>The opposing )?(?P<poke>.+?) obtained one (?P<item>.+)."
 BELLY_DRUM = r"(?P<opposing>The opposing )?(?P<poke>.+?) cut its own HP and maximized its Attack!"
@@ -99,6 +100,7 @@ class SimulatorLog():
             poke = self.nicknames[player][poke]
             damage = float(match.group('damage'))
             event['player'] = player
+
             event['poke'] = poke
             details = {'damage': damage}
             event['details'] = details
@@ -216,6 +218,21 @@ class SimulatorLog():
             details = {'item': match.group('item')}
             event['details'] = details
             return SimulatorEvent.from_dict(event)
+
+        match = re.match(LOST_ITEM, line)
+        if match:
+            self.event_count += 1
+            event['index'] = self.event_count
+            event['type'] = 'lost_item'
+            poke = match.group('poke')
+            player = 1 if match.group('opposing') is not None else 0
+            poke = self.nicknames[player][poke]
+            event['player'] = player
+            event['poke'] = poke
+            details = {}
+            event['details'] = details
+            return SimulatorEvent.from_dict(event)
+
         match = re.match(POP_BALLOON, line)
         if match:
             self.event_count += 1
@@ -314,6 +331,19 @@ class SimulatorLog():
             event['details'] = details
             return SimulatorEvent.from_dict(event)
 
+        match = re.match(DRAGGED_OUT, line)
+        if match:
+            self.event_count += 1
+            player = 1 if match.group('opposing') is not None else 0
+            event['index'] = self.event_count
+            event['type'] = 'switch'
+            poke = match.group('poke')
+            event['player'] = player
+            event['poke'] = poke
+            details = {}
+            event['details'] = details
+            return SimulatorEvent.from_dict(event)
+
         match = re.match(MEGA_EVOLVE, line)
         if match:
             self.event_count += 1
@@ -334,17 +364,19 @@ class SimulatorLog():
             event['type'] = type
             event['details'] = details
             event['poke'] = poke
-            print opp_poke
+            mega_name = None
             if opp_poke == "charizard-mega-x":
-                self.nicknames[player][old_poke] = "Charizard-Mega-X"
+                mega_name = "Charizard-Mega-X"
             elif opp_poke == "charizard-mega-y":
-                self.nicknames[player][old_poke] = "Charizard-Mega-Y"
+                mega_name = "Charizard-Mega-Y"
             elif opp_poke == "mewtwo-mega-x":
-                self.nicknames[player][old_poke] = "Mewtwo-Mega-Y"
+                mega_name = "Mewtwo-Mega-X"
             elif opp_poke == "mewtwo-mega-y":
-                self.nicknames[player][old_poke] = "Mewtwo-Mega-Y"
+                mega_name = "Mewtwo-Mega-Y"
             else:
-                self.nicknames[player][old_poke] = self.nicknames[player][old_poke] + "-Mega"
+                mega_name = self.nicknames[player][old_poke] + "-Mega"
+            self.nicknames[player][old_poke] = mega_name
+            event['details']['mega'] = mega_name
             return SimulatorEvent.from_dict(event)
 
     def add_event(self, line, opp_poke=None):
