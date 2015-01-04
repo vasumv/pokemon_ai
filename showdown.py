@@ -48,7 +48,7 @@ class Showdown():
                     poke_name = "Keldeo"
                 moveset = [m for m in self.data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag']]
                 assert len(moveset), "No candidate movesets for %s" % name
-                if len(moveset) >= 2:
+                if len(moveset) >= 2 and poke_name != "Latios":
                     moveset = SmogonMoveset.from_dict(moveset[1])
                 else:
                     moveset = SmogonMoveset.from_dict(moveset[0])

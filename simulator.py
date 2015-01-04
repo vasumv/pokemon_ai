@@ -25,7 +25,7 @@ class Simulator():
                     return poke
         def get_mega_item(name):
             for item, (premega, mega) in MEGA_ITEMS.items():
-                if premega == name:
+                if mega == name:
                     return item
 
         player = event.player
@@ -39,7 +39,7 @@ class Simulator():
             poke.alive = False
             print "%s fainted." % (poke)
         elif type == "mega_evolve":
-            poke.item = get_mega_item(poke.name)
+            poke.item = get_mega_item(event.details['mega'])
             team = gamestate.get_team(player)
             team.poke_list[team.primary_poke] = poke.mega_evolve()
             print "%s mega evolved!" % (poke)
@@ -104,7 +104,9 @@ class Simulator():
             print "%s's air balloon was popped!" % poke
         elif type == "new_item":
             poke.item = event.details['item']
-            print "%s obtained one %s" % (poke, poke.item)
+        elif type == "lost_item":
+            poke.item = None
+            print "%s lost its item!" % poke
         elif type == "belly_drum":
             poke.increase_stage('patk', 9999)
 
