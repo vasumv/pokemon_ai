@@ -116,9 +116,11 @@ class DamagingMove(Move):
         stab = 1.5 if move_type in attacker.typing else 1
         if attacker.ability == "Adaptability" and stab == 1.5:
             stab = 2
-        if move_type == "Water" and defender.ability == "Water Absorb":
+        if move_type == "Water" and (defender.ability == "Water Absorb" or defender.ability == "Dry Skin"):
             other *= 0
             defender.heal(0.25)
+        if move_type == "Fire" and defender.ability == "Dry Skin":
+            other *= 1.25
         if move_type == "Water" and defender.ability == "Storm Drain":
             other *= 0
             defender.increase_stage('spatk', 1)
