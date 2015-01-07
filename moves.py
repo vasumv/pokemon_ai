@@ -2,6 +2,9 @@ from type import get_multiplier
 
 from handlers import void_handler
 
+with open('data/moldbreaker.txt') as fp:
+    MOLDBREAKER = set(fp.read().strip().split(', '))
+
 class Move:
     def __init__(self, name,
                  power=0,
@@ -62,12 +65,14 @@ class DamagingMove(Move):
     def handle(self, gamestate, who, log=False):
         attacker = gamestate.get_team(who).primary()
         defender = gamestate.get_team(1 - who).primary()
-        if self.category == "Physical" or self.name == "Secret Sword" or self.name == "Psyshock":
+        if self.category == "Physical":
             atks = "patk"
             defs = "pdef"
         else:
             atks = "spatk"
             defs = "spdef"
+        if self.name == "Secret Sword" or self.name == "Psyshock":
+            defs = "pdef"
         attack = attacker.get_stat(atks)
         defense = defender.get_stat(defs)
         abs_atk_buffs = 1.0 + 0.5 * abs(attacker.get_stage(atks))
@@ -79,6 +84,9 @@ class DamagingMove(Move):
         name = self.name
         power = self.power(gamestate, who)
         other = 1.0 * atk_stage_multiplier / def_stage_multiplier
+        old_ability = defender.ability
+        if (attacker.ability == "Moldbreaker" or attacker.ability == "Turboblaze" or attacker.ability == "Teravolt") and defender.ability in MOLDBREAKER:
+            defender.ability = None
         if attacker.ability == "Pixilate":
             if move_type == "Normal":
                 move_type = "Fairy"
@@ -145,6 +153,7 @@ class DamagingMove(Move):
         defender.damage(damage)
 
         self.handler(gamestate, damage, who)
+        defender.ability = old_ability
         return damage
 
 class HealingMove(Move):
