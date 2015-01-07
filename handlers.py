@@ -10,6 +10,7 @@ def handle_icy_wind(gamestate, damage, who):
     gamestate.get_team(1 - who).primary().decrease_stage('spe', 1)
 def handle_knock_off(gamestate, damage, who):
     gamestate.get_team(1 - who).primary().item = None
+    gamestate.get_team(1 - who).primary().choiced = False
 def handle_close_combat(gamestate, damage, who):
     gamestate.get_team(who).primary().decrease_stage('spdef', 1)
     gamestate.get_team(who).primary().decrease_stage('pdef', 1)
@@ -24,13 +25,19 @@ def handle_defog(gamestate, damage, who):
     return 0
 
 def handle_giga_drain(gamestate, damage, who):
-    pass
+    my_poke = gamestate.get_team(who).primary()
+    my_poke.heal((damage / 2.0) / my_poke.final_stats['hp'])
 def handle_explosion(gamestate, damage, who):
     gamestate.get_team(who).primary().health = 0
 def handle_willowisp(gamestate, damage, who):
     opp_poke = gamestate.get_team(1 - who).primary()
     if "Fire" not in opp_poke.typing:
         opp_poke.set_status("burn")
+    return 0
+def handle_thunder_wave(gamestate, damage, who):
+    opp_poke = gamestate.get_team(1 - who).primary()
+    if "Electric" not in opp_poke.typing:
+        opp_poke.set_status("paralyze")
     return 0
 def handle_seismic_toss(gamestate, damage, who):
     opp_poke = gamestate.get_team(1 - who).primary()

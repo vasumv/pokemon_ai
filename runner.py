@@ -10,7 +10,12 @@ class Selenium():
     def __init__(self, url=BASE_URL, driver_path="/home/vasu/Downloads/chromedriver"):
         self.url = url
         self.driver_path = driver_path
+        #PROXY = "127.0.0.1:9666"
+        #chrome_options = webdriver.ChromeOptions()
+        #chrome_options.add_argument('--proxy-server=%s' % PROXY)
+        #self.driver = webdriver.Chrome(executable_path=self.driver_path, chrome_options=chrome_options)
         self.driver = webdriver.Chrome(executable_path=self.driver_path)
+
         self.state = None
         self.poke_map = {
             0:0,1:1,2:2,3:3,4:4,5:5
@@ -34,16 +39,17 @@ class Selenium():
             #while text != "Random Battle":
                 #time.sleep(2)
                 #text = button.text
+        while not self.check_exists_by_xpath("//*[@id='mainmenu']/div/div[1]/div[2]/div[1]/form/p[1]/button"):
+            time.sleep(1)
         elem = self.driver.find_element_by_name("login")
         elem.click()
         time.sleep(1)
         user = self.driver.find_element_by_name("username")
         user.send_keys(username)
         user.send_keys(Keys.RETURN)
-        time.sleep(4)
-        while not self.check_exists_by_xpath("/html/body/div[4]/div/form/p[4]/label/input"):
+        while not self.check_exists_by_name("password"):
             time.sleep(1)
-        passwd = self.driver.find_element_by_xpath("/html/body/div[4]/div/form/p[4]/label/input")
+        passwd = self.driver.find_element_by_name("password")
         passwd.send_keys(password)
         passwd.send_keys(Keys.RETURN)
         time.sleep(1)
@@ -138,15 +144,18 @@ class Selenium():
             self.wait_for_move()
 
     def volt_turn_switch(self, index):
-        i = self.poke_map[index]
-        choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (i + 1))
-        choose.click()
-        old_primary = None
-        for k, v in self.poke_map.items():
-            if v == 0:
-                old_primary = k
-        self.poke_map[index] = 0
-        self.poke_map[old_primary] = i
+        if not self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[6]"):
+            pass
+        else:
+            i = self.poke_map[index]
+            choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (i + 1))
+            choose.click()
+            old_primary = None
+            for k, v in self.poke_map.items():
+                if v == 0:
+                    old_primary = k
+            self.poke_map[index] = 0
+            self.poke_map[old_primary] = i
         self.wait_for_move()
 
     def volt_turn(self, volt_turn):
@@ -164,6 +173,13 @@ class Selenium():
     def check_exists_by_xpath(self, xpath):
         try:
             self.driver.find_element_by_xpath(xpath)
+        except NoSuchElementException:
+            return False
+        return True
+
+    def check_exists_by_name(self, name):
+        try:
+            self.driver.find_element_by_name(name)
         except NoSuchElementException:
             return False
         return True

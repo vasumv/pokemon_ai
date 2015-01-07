@@ -106,9 +106,13 @@ class Simulator():
             poke.item = event.details['item']
         elif type == "lost_item":
             poke.item = None
+            poke.choiced = False
             print "%s lost its item!" % poke
         elif type == "belly_drum":
             poke.increase_stage('patk', 9999)
+        elif type == "mold_breaker":
+            poke.ability = "Mold Breaker"
+            print "%s has mold breaker!" % poke
 
 
 
@@ -141,9 +145,11 @@ class Simulator():
         if opp_poke.item == "Choice Scarf":
             opp_spe_multiplier *= 1.5
 
+        my_paralyze = 0.25 if my_poke.status == "paralyze" else 1.0
+        opp_paralyze = 0.25 if opp_poke.status == "paralyze" else 1.0
 
-        my_final_speed = my_poke.get_stat("spe") * my_spe_multiplier
-        opp_final_speed = opp_poke.get_stat("spe") * opp_spe_multiplier
+        my_final_speed = my_poke.get_stat("spe") * my_spe_multiplier * my_paralyze
+        opp_final_speed = opp_poke.get_stat("spe") * opp_spe_multiplier * opp_paralyze
 
         if my_action.is_switch():
             gamestate.switch_pokemon(my_action.switch_index, who, log=log)
