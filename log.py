@@ -49,6 +49,8 @@ POP_BALLOON = r"(?P<opposing>The opposing )?(?P<poke>.+?)'s Air Balloon popped!"
 NEW_ITEM = r"(?P<opposing>The opposing )?(?P<poke>.+?) obtained one (?P<item>.+)."
 BELLY_DRUM = r"(?P<opposing>The opposing )?(?P<poke>.+?) cut its own HP and maximized its Attack!"
 MOLD_BREAKER = r"(?P<opposing>The opposing )?(?P<poke>.+?) breaks the mold!"
+LIFE_ORB = r"(?P<opposing>The opposing )?(?P<poke>.+?) lost some of its HP!"
+IS_OVER = r"(?P<username>.+?) won the battle!"
 class SimulatorLog():
 
     def __init__(self):
@@ -164,6 +166,20 @@ class SimulatorLog():
             event['details'] = details
             return SimulatorEvent.from_dict(event)
 
+        match = re.match(LIFE_ORB, line)
+        if match:
+            self.event_count += 1
+            event['index'] = self.event_count
+            event['type'] = 'life_orb'
+            poke = match.group('poke')
+            player = 1 if match.group('opposing') is not None else 0
+            poke = self.nicknames[player][poke]
+            event['player'] = player
+            event['poke'] = poke
+            details = {}
+            event['details'] = details
+            return SimulatorEvent.from_dict(event)
+
         match = re.match(BURN, line)
         if match:
             self.event_count += 1
@@ -252,13 +268,23 @@ class SimulatorLog():
         if match:
             self.event_count += 1
             event['index'] = self.event_count
-            event['type'] = 'leftovers'
+            event['type'] = 'leech_seed'
             poke = match.group('poke')
             player = 1 if match.group('opposing') is not None else 0
             poke = self.nicknames[player][poke]
             event['player'] = player
             event['poke'] = poke
             details = {}
+            event['details'] = details
+            return SimulatorEvent.from_dict(event)
+
+        match = re.match(IS_OVER, line)
+        if match:
+            self.event_count += 1
+            event['index'] = self.event_count
+            event['type'] = 'over'
+            username = match.group('username')
+            details = {'username': username}
             event['details'] = details
             return SimulatorEvent.from_dict(event)
 
@@ -398,6 +424,17 @@ class SimulatorLog():
         if event:
             self.events.append(event)
         return event
+
+    def is_over(self):
+        for event in self.events:
+            if event.type == "over":
+                return True, event
+        return False, None
+
+    def reset(self):
+        self.events = []
+        self.event_count = 0
+        self.nicknames = [{}, {}]
 
     @staticmethod
     def parse(text):

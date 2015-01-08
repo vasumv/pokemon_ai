@@ -50,6 +50,11 @@ def handle_heal_bell(gamestate, damage, who):
     for poke in my_team.poke_list:
         poke.reset_status()
     return 0
+def handle_vcreate(gamestate, damage, who):
+    my_poke = gamestate.get_team(who).primary()
+    my_poke.decrease_stage('pdef', 1)
+    my_poke.decrease_stage('spdef', 1)
+    my_poke.decrease_stage('spe', 1)
 def handle_aromatherapy(gamestate, damage, who):
     my_team = gamestate.get_team(who)
     for poke in my_team.poke_list:

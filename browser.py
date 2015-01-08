@@ -54,18 +54,26 @@ class Selenium():
         passwd.send_keys(Keys.RETURN)
         time.sleep(1)
 
-    def start_battle(self):
-        url1 = self.driver.current_url
+    def choose_tier(self, tier='ou'):
         form = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div[2]/div[1]/form/p[1]/button")
         form.click()
         ou = self.driver.find_element_by_xpath("/html/body/div[4]/ul[1]/li[4]/button")
         ou.click()
+
+    def start_battle(self):
+        url1 = self.driver.current_url
         battle = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div[2]/div[1]/form/p[3]/button")
         battle.click()
         while url1 == self.driver.current_url:
             time.sleep(1.5)
             #print "waiting"
         #print "found battle"
+
+    def get_battle_id(self):
+        url = self.driver.current_url
+        url_list = url.split('-')
+        id = url_list[-2:]
+        return '-'.join(id)
 
     def make_team(self, team):
         builder = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div[2]/div[2]/p[1]/button")
@@ -191,11 +199,8 @@ class Selenium():
                 timer.click()
 
     def get_log(self):
-            log = self.driver.find_element_by_xpath("/html/body/div[4]/div[3]/div[1]")
-
-            #log = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div[2]")
-
-            return log.text
+        log = self.driver.find_element_by_xpath("/html/body/div[4]/div[3]/div[1]")
+        return log.text.encode('utf-8')
 
     def wait_for_move(self):
         move_exists = self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[1]")
@@ -207,9 +212,23 @@ class Selenium():
             if self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/p[1]/em/button[2]"):
                 save_replay = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/p[1]/em/button[2]")
                 save_replay.click()
-                import sys
-                sys.exit(0)
+                while not self.check_exists_by_name("close"):
+                    time.sleep(1)
+                close = self.driver.find_element_by_name("close")
+                close.click()
+
         #print "their move just ended"
+
+    def reset(self):
+        close = self.driver.find_element_by_xpath("//*[@id='header']/div[2]/div/ul[2]/li/a[2]")
+        close.click()
+        if self.check_exists_by_xpath("/html/body/div[6]/div/form/p[2]/button[1]"):
+            forfeit = self.driver.find_element_by_xpath("/html/body/div[6]/div/form/p[2]/button[1]")
+            forfeit.click()
+        time.sleep(2)
+
+    def close(self):
+        self.driver.close()
 
     def get_opp_team(self):
         names = self.driver.find_element_by_xpath("/html/body/div[4]/div[3]/div[1]/div[15]/em")
