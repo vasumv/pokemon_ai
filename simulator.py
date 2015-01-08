@@ -82,6 +82,9 @@ class Simulator():
             poke.item = "Leftovers"
             poke.heal(1.0 / 16)
             print "%s regained health due to leftovers" % poke
+        elif type == "life_orb":
+            poke.item = "Life Orb"
+            poke.damage_percent(1.0/10)
         elif type == "leech_seed":
             damage = poke.damage_percent(1.0 / 8)
             opp_poke.heal(damage)

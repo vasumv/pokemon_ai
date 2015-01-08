@@ -1,12 +1,12 @@
 from smogon import SmogonMoveset
 from team import Team, Pokemon
-from runner import Selenium
+from browser import Selenium
 from simulator import Simulator
-from log import SimulatorLog
 from gamestate import GameState
 from smogon import Smogon
 import json
 import re
+import traceback
 
 from agent import OptimisticMinimaxAgent, PessimisticMinimaxAgent
 
@@ -96,19 +96,26 @@ class Showdown():
         opp_poke = self.selenium.get_opp_primary()
         self.simulator.append_log(gamestate, turns[-1], opp_poke=opp_poke)
 
-    def start(self):
+    def init(self):
         self.selenium.start_driver()
         self.selenium.turn_off_sound()
         self.selenium.login(self.username, self.password)
         self.selenium.make_team(self.team_text)
+        self.selenium.choose_tier()
+
+    def play_game(self):
+        print "Starting battle"
         self.selenium.start_battle()
+        print "Waiting for move"
         self.selenium.wait_for_move()
+        print "Selecting first pokemon"
         self.selenium.move(0, 0)
         my_team = self.selenium.get_my_team()
         opp_team = self.selenium.get_opp_team()
         gamestate = self.create_initial_gamestate(my_team, opp_team)
         self.update_latest_turn(gamestate)
-        while True:
+        over = False
+        while not over:
             print "=========================================================================================="
             print "My primary:", gamestate.get_team(0).primary()
             print "Their primary:", gamestate.get_team(1).primary()
@@ -124,6 +131,45 @@ class Showdown():
                 self.selenium.move(move.move_index, move.backup_switch, mega=move.mega, volt_turn=move.volt_turn)
             self.update_latest_turn(gamestate)
             self.correct_gamestate(gamestate)
+            over, over_event = self.simulator.log.is_over()
+        return over_event.details['username'] == self.username
+
+
+    def run(self, num_games=1):
+        print "Init"
+        self.init()
+        for i in range(num_games):
+            self.simulator.log.reset()
+            result, error = None, None
+            try:
+                print "Playing game"
+                result = self.play_game()
+            except:
+                error = traceback.format_exc()
+                print "Error", error
+
+            print "Getting log"
+            log = self.selenium.get_log()
+            id = self.selenium.get_battle_id()
+            if result == True:
+                with open('logs/wins/%s.log' % id, 'w') as fp:
+                    fp.write(log)
+            elif result == False:
+                with open('logs/losses/%s.log' % id, 'w') as fp:
+                    fp.write(log)
+            else:
+                with open('logs/crashes/%s.log' % id, 'w') as fp:
+                    fp.write(log)
+                with open('logs/crashes/%s.err' % id, 'w') as fp:
+                    fp.write(error)
+            print "Resetting"
+            self.selenium.reset()
+        self.selenium.close()
+
+
+
+
+
 
 if __name__ == "__main__":
     from argparse import ArgumentParser
@@ -131,6 +177,7 @@ if __name__ == "__main__":
     argparser.add_argument('team')
     argparser.add_argument('--username', default='asdf8000')
     argparser.add_argument('--password', default='seleniumpython')
+    argparser.add_argument('--iterations', type=int, default=1)
     args = argparser.parse_args()
 
     with open(args.team) as fp:
@@ -139,8 +186,8 @@ if __name__ == "__main__":
 
     showdown = Showdown(
         team_text,
-        OptimisticMinimaxAgent(2),
+        PessimisticMinimaxAgent(2),
         args.username,
         password=args.password,
     )
-    showdown.start()
+    showdown.run(args.iterations)
