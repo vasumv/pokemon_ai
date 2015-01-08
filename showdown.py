@@ -1,6 +1,7 @@
 from smogon import SmogonMoveset
 from team import Team, Pokemon
-from browser import Selenium
+from browser import Selenium, SeleniumException
+from log import SimulatorLog
 from simulator import Simulator
 from gamestate import GameState
 from smogon import Smogon
@@ -24,6 +25,11 @@ class Showdown():
         self.my_team = Team.make_team(team_text, self.data)
         self.opp_team = None
         self.simulator = Simulator()
+
+    def reset(self):
+        self.selenium.reset()
+        self.opp_team = None
+        self.my_team = Team.make_team(self.team_text, self.data)
 
     def create_initial_gamestate(self, my_team, opp_team):
         my_pokes = self.my_team.copy()
@@ -104,11 +110,8 @@ class Showdown():
         self.selenium.choose_tier()
 
     def play_game(self):
-        print "Starting battle"
         self.selenium.start_battle()
-        print "Waiting for move"
         self.selenium.wait_for_move()
-        print "Selecting first pokemon"
         self.selenium.move(0, 0)
         my_team = self.selenium.get_my_team()
         opp_team = self.selenium.get_opp_team()
@@ -131,24 +134,22 @@ class Showdown():
                 self.selenium.move(move.move_index, move.backup_switch, mega=move.mega, volt_turn=move.volt_turn)
             self.update_latest_turn(gamestate)
             self.correct_gamestate(gamestate)
-            over, over_event = self.simulator.log.is_over()
-        return over_event.details['username'] == self.username
-
 
     def run(self, num_games=1):
-        print "Init"
         self.init()
         for i in range(num_games):
             self.simulator.log.reset()
             result, error = None, None
             try:
-                print "Playing game"
-                result = self.play_game()
+                self.play_game()
+            except SeleniumException:
+                log = SimulatorLog.parse(self.selenium.get_log())
+                _, over_event = log.is_over()
+                result = over_event.details['username'] == self.username
             except:
                 error = traceback.format_exc()
                 print "Error", error
 
-            print "Getting log"
             log = self.selenium.get_log()
             id = self.selenium.get_battle_id()
             if result == True:
@@ -162,8 +163,7 @@ class Showdown():
                     fp.write(log)
                 with open('logs/crashes/%s.err' % id, 'w') as fp:
                     fp.write(error)
-            print "Resetting"
-            self.selenium.reset()
+            self.reset()
         self.selenium.close()
 
 

@@ -42,6 +42,7 @@ LEECH_SEED = r"(?P<opposing>The opposing )?(?P<poke>.+?)'s health is sapped by L
 ROCKS = r"Pointed stones float in the air around (?P<opposing>your|the opposing) team!"
 ROCKS_GONE = r"The pointed stones disappeared from around (?P<opposing>your|the opposing )? team!"
 BURN = r"(?P<opposing>The opposing )?(?P<poke>.+?) was burned!"
+PARALYZE = r"(?P<opposing>The opposing )?(?P<poke>.+?) was paralyzed! It may be unable to move!"
 HURT_BURN = r"(?P<opposing>The opposing )?(?P<poke>.+?) was hurt by its burn!"
 FLOAT_BALLOON = r"(?P<opposing>The opposing )?(?P<poke>.+?) floats in the air with its Air Balloon!"
 DRAGGED_OUT = r"(?P<opposing>The opposing )?(?P<poke>.+?) was dragged out!"
@@ -194,6 +195,20 @@ class SimulatorLog():
             event['details'] = details
             return SimulatorEvent.from_dict(event)
 
+        match = re.match(PARALYZE, line)
+        if match:
+            self.event_count += 1
+            event['index'] = self.event_count
+            event['type'] = 'paralyze'
+            poke = match.group('poke')
+            player = 1 if match.group('opposing') is not None else 0
+            poke = self.nicknames[player][poke]
+            event['player'] = player
+            event['poke'] = poke
+            details = {}
+            event['details'] = details
+            return SimulatorEvent.from_dict(event)
+
         match = re.match(HURT_BURN, line)
         if match:
             self.event_count += 1
@@ -286,6 +301,8 @@ class SimulatorLog():
             username = match.group('username')
             details = {'username': username}
             event['details'] = details
+            event['player'] = None
+            event['poke'] = None
             return SimulatorEvent.from_dict(event)
 
         match = re.match(ROCKS, line)

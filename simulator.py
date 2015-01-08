@@ -97,6 +97,8 @@ class Simulator():
             print "Player %u's rocks disappeared!" % player
         elif type == "burn":
             poke.set_status("burn")
+        elif type == "paralyze":
+            poke.set_status("paralyze")
             print "%s got burned!" % poke
         elif type == "hurt_burn":
             poke.damage_percent(1.0 / 8)
@@ -109,6 +111,7 @@ class Simulator():
             print "%s's air balloon was popped!" % poke
         elif type == "new_item":
             poke.item = event.details['item']
+            print "%s got a %s" % (poke, event.details['item'])
         elif type == "lost_item":
             poke.item = None
             poke.choiced = False
