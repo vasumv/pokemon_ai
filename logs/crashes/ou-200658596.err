@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "showdown.py", line 145, in run
+    result = self.play_game()
+  File "showdown.py", line 132, in play_game
+    self.update_latest_turn(gamestate)
+  File "showdown.py", line 97, in update_latest_turn
+    self.simulator.append_log(gamestate, turns[-1], opp_poke=opp_poke)
+  File "/home/vasu/Work/pokemon_ai/simulator.py", line 19, in append_log
+    self.handle_event(gamestate, event)
+  File "/home/vasu/Work/pokemon_ai/simulator.py", line 85, in handle_event
+    poke.damage_perceng(1.0/10)
+AttributeError: Pokemon instance has no attribute 'damage_perceng'
