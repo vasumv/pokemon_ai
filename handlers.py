@@ -16,7 +16,11 @@ def handle_close_combat(gamestate, damage, who):
     gamestate.get_team(who).primary().decrease_stage('pdef', 1)
 
 def handle_stealth_rock(gamestate, damage, who):
-    gamestate.set_rocks(1 - who, True)
+    opp_poke = gamestate.get_team(1 - who).primary()
+    if opp_poke.ability == "Magic Bounce":
+        gamestate.set_rocks(who, True)
+    else:
+        gamestate.set_rocks(1 - who, True)
     return 0
 
 def handle_defog(gamestate, damage, who):
