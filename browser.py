@@ -15,6 +15,7 @@ class Selenium():
         #chrome_options.add_argument('--proxy-server=%s' % PROXY)
         #self.driver = webdriver.Chrome(executable_path=self.driver_path, chrome_options=chrome_options)
         self.driver = webdriver.Chrome(executable_path=self.driver_path)
+        #self.driver = webdriver.PhantomJS()
 
         self.state = None
         self.poke_map = {
@@ -185,6 +186,13 @@ class Selenium():
             return False
         return True
 
+    def check_exists_by_id(self, id):
+        try:
+            self.driver.find_element_by_id(id)
+        except NoSuchElementException:
+            return False
+        return True
+
     def check_exists_by_name(self, name):
         try:
             self.driver.find_element_by_name(name)
@@ -195,6 +203,7 @@ class Selenium():
     def start_timer(self):
         if self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/p[2]/button"):
             timer = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/p[2]/button")
+            print "Got timer", timer.text
             if timer.text == "Start timer":
                 timer.click()
 
@@ -212,10 +221,12 @@ class Selenium():
             if self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/p[1]/em/button[2]"):
                 save_replay = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/p[1]/em/button[2]")
                 save_replay.click()
-                while not self.check_exists_by_name("close"):
+                #print "clicked save replay"
+                while not self.check_exists_by_id(self.get_battle_id()):
                     time.sleep(1)
-                close = self.driver.find_element_by_name("close")
-                close.click()
+                ps_overlay = self.driver.find_element_by_xpath("/html/body/div[6]")
+                ps_overlay.click()
+                raise SeleniumException()
 
         #print "their move just ended"
 
@@ -296,6 +307,10 @@ class Selenium():
         else:
             hp = 0
         return hp
+
+class SeleniumException(Exception):
+    pass
+
 if __name__ == "__main__":
     with open('log.txt', 'r') as fp:
         log_text = fp.read()

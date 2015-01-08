@@ -301,6 +301,8 @@ class SimulatorLog():
             username = match.group('username')
             details = {'username': username}
             event['details'] = details
+            event['player'] = None
+            event['poke'] = None
             return SimulatorEvent.from_dict(event)
 
         match = re.match(ROCKS, line)
