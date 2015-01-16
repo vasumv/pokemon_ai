@@ -47,6 +47,9 @@ def handle_thunder_wave(gamestate, damage, who):
 def handle_seismic_toss(gamestate, damage, who):
     opp_poke = gamestate.get_team(1 - who).primary()
     opp_poke.damage(100.0)
+def handle_night_shade(gamestate, damage, who):
+    opp_poke = gamestate.get_team(1 - who).primary()
+    opp_poke.damage(100.0)
 def handle_spikes(gamestate, damage, who):
     gamestate.add_spikes(1 - who)
     return 0
