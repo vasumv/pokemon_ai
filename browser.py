@@ -113,13 +113,8 @@ class Selenium():
             if mega:
                 mega_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[5]/div/div[2]/div[2]/label/input')
                 mega_button.click()
-            while True:
-                try:
-                    move = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (index + 1))
-                    move.click()
-                    break
-                except StaleElementReferenceException:
-                    print "retrying"
+            move = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (index + 1))
+            move.click()
             if volt_turn is not None:
                 #print "Waiting for volt turn"
                 self.wait_for_move()
@@ -130,13 +125,8 @@ class Selenium():
     def switch(self, index, backup_switch):
         if self.check_alive():
             i = self.poke_map[index]
-            while True:
-                try:
-                    choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[3]/div[2]/button[%d]" % (i + 1))
-                    choose.click()
-                    break
-                except StaleElementReferenceException:
-                    print "retrying"
+            choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[3]/div[2]/button[%d]" % (i + 1))
+            choose.click()
             old_primary = None
             for k, v in self.poke_map.items():
                 if v == 0:
@@ -190,6 +180,11 @@ class Selenium():
     def check_alive(self):
         return self.check_exists_by_xpath("/html/body/div[4]/div[1]/div/div[5]/div[2]/strong")
 
+    def chat(self, message):
+        chatbox = self.driver.find_element_by_xpath("/html/body/div[4]/div[4]/form/textarea[2]")
+        chatbox.send_keys(message)
+        chatbox.send_keys(Keys.RETURN)
+
     def check_exists_by_xpath(self, xpath):
         try:
             self.driver.find_element_by_xpath(xpath)
@@ -229,7 +224,7 @@ class Selenium():
 
     def wait_for_move(self):
         move_exists = self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[1]")
-        self.start_timer()
+        #self.start_timer()
         while move_exists == False:
             #print "waiting for their move"
             time.sleep(2)
@@ -247,11 +242,11 @@ class Selenium():
         #print "their move just ended"
 
     def reset(self):
-        close = self.driver.find_element_by_xpath("//*[@id='header']/div[2]/div/ul[2]/li/a[2]")
-        close.click()
-        if self.check_exists_by_xpath("/html/body/div[6]/div/form/p[2]/button[1]"):
-            forfeit = self.driver.find_element_by_xpath("/html/body/div[6]/div/form/p[2]/button[1]")
-            forfeit.click()
+        self.poke_map = {
+            0:0,1:1,2:2,3:3,4:4,5:5
+        }
+        self.chat("gg")
+        self.driver.get(self.url)
         time.sleep(2)
 
     def close(self):

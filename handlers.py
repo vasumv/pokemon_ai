@@ -104,6 +104,9 @@ def handle_relic_song(gamestate, damage, who):
         poke = Pokemon("Meloetta", ['Normal','Psychic'], stats, moveset, alive, status, calculate=True)
         gamestate.get_team(who).poke_list[0] = poke
 
+def handle_powerup_punch(gamestate, damage, who):
+    my_poke = gamestate.get_team(who).primary()
+    my_poke.increase_stage("patk", 1)
 
 def power_gyro_ball(gamestate, who):
     my_poke = gamestate.get_team(who).primary()
