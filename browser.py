@@ -242,6 +242,9 @@ class Selenium():
         #print "their move just ended"
 
     def reset(self):
+        self.poke_map = {
+            0:0,1:1,2:2,3:3,4:4,5:5
+        }
         self.chat("gg")
         self.driver.get(self.url)
         time.sleep(2)

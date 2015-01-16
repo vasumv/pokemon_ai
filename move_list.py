@@ -2160,6 +2160,7 @@ moves = {
                                category="Physical",
                                priority=0,
                                type="Fighting",
+                               handler=handle_powerup_punch,
                                accuracy=1.000000),
 "Precipice Blades": DamagingMove("Precipice Blades",
                                  power=120,
