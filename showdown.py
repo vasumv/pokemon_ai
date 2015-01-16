@@ -20,8 +20,12 @@ class Showdown():
         self.team_text = team_text
         with open("data/poke2.json") as f:
             data = f.read()
+        with open("data/poke_bw.json") as f2:
+            data2 = f2.read()
         poke_data = json.loads(data)
+        poke_bw_data = json.loads(data2)
         self.data = Smogon.convert_to_dict(poke_data)
+        self.bw_data = Smogon.convert_to_dict(poke_bw_data)
         self.my_team = Team.make_team(team_text, self.data)
         self.opp_team = None
         self.simulator = Simulator()
@@ -53,6 +57,8 @@ class Showdown():
                 if name == "Keldeo-Resolute":
                     poke_name = "Keldeo"
                 moveset = [m for m in self.data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag']]
+                if not len(moveset):
+                    moveset = [m for m in self.bw_data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag']]
                 assert len(moveset), "No candidate movesets for %s" % name
                 if len(moveset) >= 2 and poke_name != "Latios":
                     moveset = SmogonMoveset.from_dict(moveset[1])

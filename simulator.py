@@ -90,6 +90,9 @@ class Simulator():
         elif type == "rocks":
             gamestate.set_rocks(player, True)
             print "Player %u got rocked!" % player
+        elif type == "spikes":
+            gamestate.spikes[player] += 1
+            print "Player %u now has %d spikes!" % (player, gamestate.spikes[player])
         elif type == "rocks_gone":
             gamestate.set_rocks(player, False)
             print "Player %u's rocks disappeared!" % player
