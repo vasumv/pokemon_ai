@@ -40,6 +40,7 @@ GAIN_HEALTH = r'(?P<opposing>The opposing )?(?P<poke>.+?) regained health!'
 LEFTOVERS = r'(?P<opposing>The opposing )?(?P<poke>.+?) restored a little HP using its (?P<item>.+?)!'
 LEECH_SEED = r"(?P<opposing>The opposing )?(?P<poke>.+?)'s health is sapped by Leech Seed!"
 ROCKS = r"Pointed stones float in the air around (?P<opposing>your|the opposing) team!"
+SPIKES = r"Spikes were scattered all around the feet of (?P<opposing>your|the opposing) team!"
 ROCKS_GONE = r"The pointed stones disappeared from around (?P<opposing>your|the opposing )? team!"
 BURN = r"(?P<opposing>The opposing )?(?P<poke>.+?) was burned!"
 PARALYZE = r"(?P<opposing>The opposing )?(?P<poke>.+?) was paralyzed! It may be unable to move!"
@@ -310,6 +311,18 @@ class SimulatorLog():
             self.event_count += 1
             event['index'] = self.event_count
             event['type'] = 'rocks'
+            player = 1 if match.group('opposing') != "your" else 0
+            event['player'] = player
+            event['poke'] = None
+            details = {}
+            event['details'] = details
+            return SimulatorEvent.from_dict(event)
+
+        match = re.match(SPIKES, line)
+        if match:
+            self.event_count += 1
+            event['index'] = self.event_count
+            event['type'] = 'spikes'
             player = 1 if match.group('opposing') != "your" else 0
             event['player'] = player
             event['poke'] = None

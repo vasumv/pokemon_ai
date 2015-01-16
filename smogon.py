@@ -15,9 +15,10 @@ class Smogon():
 
     def get_all_pokemon(self):
         fields = ["name"]
-        query = {"pokemonalt":{"gen":"xy"}, "$": fields}
+        query = {"pokemonalt":{"gen":"bw"}, "$": fields}
         params = {"q": json.dumps(query)}
         output = requests.get(self.url, params=params)
+        print output
         output = output.json()
         names = output['result']
         poke_names = []
@@ -34,12 +35,12 @@ class Smogon():
                                                 {"natures":["hp","patk","pdef","spatk","spdef","spe"]},
                                                 {"$groupby":"slot","moveslots":["slot",{"move":["name","alias","gen"]}]},"description"]},{"moves":["name","alias","gen","category","power","accuracy","pp","description",{"type":["alias","name","gen"]}]}
                                                 ]
-        moveset_query = {"pokemon":{"gen":"xy","name":"%s" % pokemon}, "$": moveset_fields}
+        moveset_query = {"pokemon":{"gen":"bw","name":"%s" % pokemon}, "$": moveset_fields}
         moveset_params = {"q": json.dumps(moveset_query)}
         moveset_output = requests.get(self.url, params=moveset_params)
         moveset_output = moveset_output.json()
         meta_fields = ["name","alias","gen",{"types":["alias","name","gen"]}, {"abilities":["alias","name","gen"]}, "hp", "patk", "pdef", "spatk", "spdef", "spe"]
-        meta_query = {"pokemonalt":{"gen":"xy","name":"%s" % pokemon}, "$": meta_fields}
+        meta_query = {"pokemonalt":{"gen":"bw","name":"%s" % pokemon}, "$": meta_fields}
         meta_params = {"q": json.dumps(meta_query)}
         meta_output = requests.get(self.url, params=meta_params)
         meta_output = meta_output.json()
@@ -97,7 +98,6 @@ class Smogon():
         poke = SmogonPokemon(pokemon, type_list, stats, poke_movesets)
         return poke
 
-        import smogon
 
 class SmogonPokemon():
     def __init__(self, name, typing, stats, movesets):
@@ -162,5 +162,5 @@ if __name__ == "__main__":
                 poke_objects.append(poke_obj.to_dict())
         except IndexError:
             print "error: " + poke
-    with open('data/poke2.json', 'a') as f:
+    with open('data/poke_bw.json', 'a') as f:
         f.write(json.dumps(poke_objects, sort_keys=True,indent=4, separators=(',', ': ')))

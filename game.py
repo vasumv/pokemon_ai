@@ -13,7 +13,7 @@ if __name__ == "__main__":
     argparser.add_argument('--depth', type=int, default=2)
     args = argparser.parse_args()
 
-    players = [HumanAgent(), HumanAgent()]
+    players = [HumanAgent(), PessimisticMinimaxAgent(2)]
 
     with open(args.team1) as f1, open(args.team2) as f2, open("data/poke2.json") as f3:
         data = json.loads(f3.read())

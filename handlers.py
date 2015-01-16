@@ -1,3 +1,4 @@
+from team import Pokemon
 def void_handler(gamestate, damage, who):
     return 0
 
@@ -75,6 +76,35 @@ def handle_endeavor(gamestate, damage, who):
     my_health = gamestate.get_team(who).primary().health
     gamestate.get_team(1 - who).primary().health = my_health
     return 0
+def handle_relic_song(gamestate, damage, who):
+    my_poke = gamestate.get_team(who).primary()
+    moveset = my_poke.moveset
+    alive = my_poke.alive
+    status = my_poke.status
+    if my_poke.name == "Meloetta" and "Psychic" in my_poke.typing:
+        stats = {
+            "hp": 100,
+            "patk": 128,
+            "pdef": 90,
+            "spatk": 77,
+            "spdef": 77,
+            "spe": 128
+        }
+        poke = Pokemon("Meloetta", ['Normal','Fighting'], stats, moveset, alive, status, calculate=True)
+        gamestate.get_team(who).poke_list[0] = poke
+    elif my_poke == "Meloetta" and "Fighting" in my_poke.typing:
+        stats = {
+            "hp": 100,
+            "patk": 77,
+            "pdef": 77,
+            "spatk": 128,
+            "spdef": 128,
+            "spe": 90
+        }
+        poke = Pokemon("Meloetta", ['Normal','Psychic'], stats, moveset, alive, status, calculate=True)
+        gamestate.get_team(who).poke_list[0] = poke
+
+
 def power_gyro_ball(gamestate, who):
     my_poke = gamestate.get_team(who).primary()
     opp_poke = gamestate.get_team(1 - who).primary()

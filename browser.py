@@ -2,6 +2,7 @@ import time
 import re
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import StaleElementReferenceException
 from selenium.webdriver.common.keys import Keys
 
 class Selenium():
@@ -112,8 +113,13 @@ class Selenium():
             if mega:
                 mega_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[5]/div/div[2]/div[2]/label/input')
                 mega_button.click()
-            move = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (index + 1))
-            move.click()
+            while True:
+                try:
+                    move = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (index + 1))
+                    move.click()
+                    break
+                except StaleElementReferenceException:
+                    print "retrying"
             if volt_turn is not None:
                 #print "Waiting for volt turn"
                 self.wait_for_move()
@@ -124,8 +130,13 @@ class Selenium():
     def switch(self, index, backup_switch):
         if self.check_alive():
             i = self.poke_map[index]
-            choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[3]/div[2]/button[%d]" % (i + 1))
-            choose.click()
+            while True:
+                try:
+                    choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[3]/div[2]/button[%d]" % (i + 1))
+                    choose.click()
+                    break
+                except StaleElementReferenceException:
+                    print "retrying"
             old_primary = None
             for k, v in self.poke_map.items():
                 if v == 0:
@@ -202,10 +213,15 @@ class Selenium():
 
     def start_timer(self):
         if self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/p[2]/button"):
-            timer = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/p[2]/button")
-            print "Got timer", timer.text
-            if timer.text == "Start timer":
-                timer.click()
+            while True:
+                try:
+                    timer = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/p[2]/button")
+                    print "Got timer", timer.text
+                    if timer.text == "Start timer":
+                        timer.click()
+                    break
+                except StaleElementReferenceException:
+                    print "stale element"
 
     def get_log(self):
         log = self.driver.find_element_by_xpath("/html/body/div[4]/div[3]/div[1]")
