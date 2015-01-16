@@ -113,9 +113,9 @@ class Showdown():
         self.selenium.turn_off_sound()
         self.selenium.login(self.username, self.password)
         self.selenium.make_team(self.team_text)
-        self.selenium.choose_tier()
 
     def play_game(self):
+        self.selenium.choose_tier()
         self.selenium.start_battle()
         self.selenium.wait_for_move()
         self.selenium.move(0, 0)
@@ -155,7 +155,6 @@ class Showdown():
             except:
                 error = traceback.format_exc()
                 print "Error", error
-
             log = self.selenium.get_log()
             id = self.selenium.get_battle_id()
             if result == True:

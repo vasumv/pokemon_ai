@@ -50,6 +50,12 @@ class Simulator():
         elif type == "move":
             print "%s used %s." % (poke, event.details['move'])
             move = event.details['move']
+            if move == "ExtremeSpeed":
+                move = "Extreme Speed"
+            elif move == "ThunderPunch":
+                move = "Thunder Punch"
+            elif move == "SolarBeam":
+                move = "Solar Beam"
             if move not in poke.moveset.moves and move != "Hidden Power":
                 poke.moveset.moves.append(move)
             if poke.item in ["Choice Scarf", "Choice Specs", "Choice Band"]:
