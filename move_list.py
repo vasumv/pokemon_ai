@@ -1958,6 +1958,7 @@ moves = {
                             category="Special",
                             priority=0,
                             type="Ghost",
+                            handler=handle_night_shade,
                             accuracy=1.000000),
 "Night Slash": DamagingMove("Night Slash",
                             power=70,
