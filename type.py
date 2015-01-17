@@ -157,7 +157,10 @@ multipliers = {
     }
 }
 
-def get_multiplier(defender_type, move_type):
+def get_multiplier(defender_type, move_type, scrappy):
     if move_type not in multipliers[defender_type]:
         return 1.0
+    if scrappy:
+        if (move_type == "Fighting" or move_type == "Normal") and defender_type == "Ghost":
+            return 1.0
     return multipliers[defender_type][move_type]

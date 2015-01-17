@@ -85,7 +85,7 @@ class DamagingMove(Move):
         power = self.power(gamestate, who)
         other = 1.0 * atk_stage_multiplier / def_stage_multiplier
         old_ability = defender.ability
-        if (attacker.ability == "Moldbreaker" or attacker.ability == "Turboblaze" or attacker.ability == "Teravolt") and defender.ability in MOLDBREAKER:
+        if (attacker.ability == "Mold Breaker" or attacker.ability == "Turboblaze" or attacker.ability == "Teravolt") and defender.ability in MOLDBREAKER:
             defender.ability = None
         if attacker.ability == "Pixilate":
             if move_type == "Normal":
@@ -140,7 +140,7 @@ class DamagingMove(Move):
             defender.increase_stage('spatk', 1)
         if move_type == "Fire" and defender.ability == "Flash Fire":
             other *= 0
-        type_multipliers = [get_multiplier(x, move_type) for x in defender.typing]
+        type_multipliers = [get_multiplier(x, move_type, attacker.ability=="Scrappy") for x in defender.typing]
         for x in type_multipliers:
             type *= x
         critical = 1
