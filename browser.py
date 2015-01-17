@@ -25,6 +25,9 @@ class Selenium():
 
     def start_driver(self):
         self.driver.get(self.url)
+        while(self.driver.find_element_by_xpath("//*[@id='mainmenu']/div/div[1]/div[2]/div[1]/form/p[1]/button").get_attribute("value") != "randombattle"):
+            print self.driver.find_element_by_xpath("//*[@id='mainmenu']/div/div[1]/div[2]/div[1]/form/p[1]/button").get_attribute("value")
+            time.sleep(1)
 
     def get_state(self):
         url = self.driver.current_url
