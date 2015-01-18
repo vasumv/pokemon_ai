@@ -4,7 +4,19 @@ from log import SimulatorLog
 
 import logging
 logging.basicConfig()
-
+NAME_CORRECTIONS = {"Keldeo-Resolute": "Keldeo",
+                    "Pikachu-Belle": "Pikachu",
+                    "Pikachu-Cosplay": "Pikachu",
+                    "Pikachu-Libre": "Pikachu",
+                    "Pikachu-PhD": "Pikachu",
+                    "Pikachu-Pop-Star": "Pikachu",
+                    "Pikachu-Rock-Star": "Pikachu",
+                    "Meowstic": "Meowstic-M",
+                    "Gourgeist-*": "Gourgeist"}
+MOVE_CORRECTIONS = {"ExtremeSpeed": "Extreme Speed",
+                    "ThunderPunch": "Thunder Punch",
+                    "SolarBeam": "Solar Beam",
+                    "DynamicPunch": "Dynamic Punch"}
 
 class Simulator():
 
@@ -50,14 +62,8 @@ class Simulator():
         elif type == "move":
             print "%s used %s." % (poke, event.details['move'])
             move = event.details['move']
-            if move == "ExtremeSpeed":
-                move = "Extreme Speed"
-            elif move == "ThunderPunch":
-                move = "Thunder Punch"
-            elif move == "SolarBeam":
-                move = "Solar Beam"
-            elif move == "DynamicPunch":
-                move = "Dynamic Punch"
+            if move in MOVE_CORRECTIONS:
+                move = MOVE_CORRECTIONS[move]
             if move not in poke.moveset.moves and move != "Hidden Power":
                 poke.moveset.moves.append(move)
             if poke.item in ["Choice Scarf", "Choice Specs", "Choice Band"]:
