@@ -56,6 +56,8 @@ class Simulator():
                 move = "Thunder Punch"
             elif move == "SolarBeam":
                 move = "Solar Beam"
+            elif move == "DynamicPunch":
+                move = "Dynamic Punch"
             if move not in poke.moveset.moves and move != "Hidden Power":
                 poke.moveset.moves.append(move)
             if poke.item in ["Choice Scarf", "Choice Specs", "Choice Band"]:

@@ -143,6 +143,11 @@ class Showdown():
 
     def run(self, num_games=1):
         self.init()
+        scores = {
+            'wins': 0,
+            'losses': 0,
+            'crashes': 0
+        }
         for i in range(num_games):
             self.simulator.log.reset()
             result, error = None, None
@@ -157,19 +162,33 @@ class Showdown():
                 print "Error", error
             log = self.selenium.get_log()
             id = self.selenium.get_battle_id()
+            battle_url = "http://replay.pokemonshowdown.com/battle-%s" % id
             if result == True:
+                print "---------------"
+                print "Won the battle! - %s" % battle_url
+                print "---------------"
+                scores['wins'] += 1
                 with open('logs/wins/%s.log' % id, 'w') as fp:
                     fp.write(log)
             elif result == False:
+                print "---------------"
+                print "Lost the battle! - %s" % battle_url
+                print "---------------"
+                scores['losses'] += 1
                 with open('logs/losses/%s.log' % id, 'w') as fp:
                     fp.write(log)
             else:
+                print "---------------"
+                print "Crashed! - %s" % id
+                print "---------------"
+                scores['crashes'] += 1
                 with open('logs/crashes/%s.log' % id, 'w') as fp:
                     fp.write(log)
                 with open('logs/crashes/%s.err' % id, 'w') as fp:
                     fp.write(error)
             self.reset()
         self.selenium.close()
+        print scores
 
 
 
