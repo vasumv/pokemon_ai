@@ -11,6 +11,16 @@ import traceback
 
 from agent import OptimisticMinimaxAgent, PessimisticMinimaxAgent
 
+NAME_CORRECTIONS = {"Keldeo-Resolute": "Keldeo",
+                    "Pikachu-Belle": "Pikachu",
+                    "Pikachu-Cosplay": "Pikachu",
+                    "Pikachu-Libre": "Pikachu",
+                    "Pikachu-PhD": "Pikachu",
+                    "Pikachu-Pop-Star": "Pikachu",
+                    "Pikachu-Rock-Star": "Pikachu",
+                    "Meowstic": "Meowstic-M",
+                    "Gourgeist-*": "Gourgeist"}
+
 class Showdown():
     def __init__(self, team_text, agent, username, password=None, driver_path="./chromedriver"):
         self.selenium = Selenium(driver_path=driver_path)
@@ -40,8 +50,8 @@ class Showdown():
         primary = None
         for i, poke in enumerate(my_pokes.poke_list):
             poke_name = poke.name
-            if poke_name == "Keldeo-Resolute":
-                poke_name = "Keldeo"
+            if poke_name in NAME_CORRECTIONS:
+                poke_name = NAME_CORRECTIONS[poke_name]
             poke.health = my_team[poke_name]['health'] / 100.0 * poke.final_stats['hp']
             poke.alive = my_team[poke_name]['alive']
             if my_team[poke_name]['primary']:
@@ -199,7 +209,7 @@ if __name__ == "__main__":
     from argparse import ArgumentParser
     argparser = ArgumentParser()
     argparser.add_argument('team')
-    argparser.add_argument('--username', default='asdf8000')
+    argparser.add_argument('--username', default='asdf7001')
     argparser.add_argument('--password', default='seleniumpython')
     argparser.add_argument('--iterations', type=int, default=1)
     args = argparser.parse_args()
