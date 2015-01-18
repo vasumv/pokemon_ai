@@ -4,15 +4,6 @@ from log import SimulatorLog
 
 import logging
 logging.basicConfig()
-NAME_CORRECTIONS = {"Keldeo-Resolute": "Keldeo",
-                    "Pikachu-Belle": "Pikachu",
-                    "Pikachu-Cosplay": "Pikachu",
-                    "Pikachu-Libre": "Pikachu",
-                    "Pikachu-PhD": "Pikachu",
-                    "Pikachu-Pop-Star": "Pikachu",
-                    "Pikachu-Rock-Star": "Pikachu",
-                    "Meowstic": "Meowstic-M",
-                    "Gourgeist-*": "Gourgeist"}
 MOVE_CORRECTIONS = {"ExtremeSpeed": "Extreme Speed",
                     "ThunderPunch": "Thunder Punch",
                     "SolarBeam": "Solar Beam",
