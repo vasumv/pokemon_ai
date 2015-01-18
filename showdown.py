@@ -64,8 +64,8 @@ class Showdown():
                 if not name:
                     continue
                 poke_name = name
-                if name == "Keldeo-Resolute":
-                    poke_name = "Keldeo"
+                if poke_name in NAME_CORRECTIONS:
+                    poke_name = NAME_CORRECTIONS[poke_name]
                 moveset = [m for m in self.data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag']]
                 if not len(moveset):
                     moveset = [m for m in self.bw_data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag']]
