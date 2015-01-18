@@ -2,7 +2,6 @@ import time
 import re
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
-from selenium.common.exceptions import StaleElementReferenceException
 from selenium.webdriver.common.keys import Keys
 
 class Selenium():
@@ -210,16 +209,10 @@ class Selenium():
         return True
 
     def start_timer(self):
-        if self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/p[2]/button"):
-            while True:
-                try:
-                    timer = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/p[2]/button")
-                    print "Got timer", timer.text
-                    if timer.text == "Start timer":
-                        timer.click()
-                    break
-                except StaleElementReferenceException:
-                    print "stale element"
+        if self.check_exists_by_name("setTimer"):
+            timer = self.driver.find_element_by_name("setTimer")
+            if timer.text == "Start timer":
+                timer.click()
 
     def get_log(self):
         log = self.driver.find_element_by_xpath("/html/body/div[4]/div[3]/div[1]")
@@ -227,12 +220,13 @@ class Selenium():
 
     def wait_for_move(self):
         move_exists = self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[1]")
-        #self.start_timer()
+        self.start_timer()
         while move_exists == False:
             #print "waiting for their move"
             time.sleep(2)
             move_exists = self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[1]")
             if self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/p[1]/em/button[2]"):
+                self.chat("gg")
                 save_replay = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/p[1]/em/button[2]")
                 save_replay.click()
                 #print "clicked save replay"
@@ -248,7 +242,6 @@ class Selenium():
         self.poke_map = {
             0:0,1:1,2:2,3:3,4:4,5:5
         }
-        self.chat("gg")
         self.driver.get(self.url)
         time.sleep(2)
 

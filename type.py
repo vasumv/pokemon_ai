@@ -157,7 +157,7 @@ multipliers = {
     }
 }
 
-def get_multiplier(defender_type, move_type, scrappy):
+def get_multiplier(defender_type, move_type, scrappy=False):
     if move_type not in multipliers[defender_type]:
         return 1.0
     if scrappy:
