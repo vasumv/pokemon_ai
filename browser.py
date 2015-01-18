@@ -233,6 +233,7 @@ class Selenium():
             time.sleep(2)
             move_exists = self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[1]")
             if self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/p[1]/em/button[2]"):
+                self.chat("gg")
                 save_replay = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/p[1]/em/button[2]")
                 save_replay.click()
                 #print "clicked save replay"
@@ -248,7 +249,6 @@ class Selenium():
         self.poke_map = {
             0:0,1:1,2:2,3:3,4:4,5:5
         }
-        self.chat("gg")
         self.driver.get(self.url)
         time.sleep(2)
 
