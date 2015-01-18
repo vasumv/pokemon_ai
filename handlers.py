@@ -111,6 +111,11 @@ def handle_powerup_punch(gamestate, damage, who):
     my_poke = gamestate.get_team(who).primary()
     my_poke.increase_stage("patk", 1)
 
+def power_stored_power(gamestate, damage, who):
+    my_poke = gamestate.get_team(who)
+    stages = sum([stage for stage in my_poke.stages.values() if stage > 0])
+    return 20 + 20 * stages
+
 def power_gyro_ball(gamestate, who):
     my_poke = gamestate.get_team(who).primary()
     opp_poke = gamestate.get_team(1 - who).primary()

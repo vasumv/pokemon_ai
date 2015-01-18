@@ -111,6 +111,7 @@ class Selenium():
         return poke
 
     def move(self, index, backup_switch, mega=False, volt_turn=None):
+        self.check_is_over()
         if self.check_alive():
             if mega:
                 mega_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[5]/div/div[2]/div[2]/label/input')
@@ -125,6 +126,7 @@ class Selenium():
         self.backup_switch(backup_switch)
 
     def switch(self, index, backup_switch):
+        self.check_is_over()
         if self.check_alive():
             i = self.poke_map[index]
             choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[3]/div[2]/button[%d]" % (i + 1))
@@ -142,6 +144,7 @@ class Selenium():
 
     def backup_switch(self, index):
         #print "Backup switching"
+        self.check_is_over()
         if not self.check_alive():
             #print "Is alive"
             i = self.poke_map[index]
@@ -156,6 +159,7 @@ class Selenium():
             self.wait_for_move()
 
     def volt_turn_switch(self, index):
+        self.check_is_over()
         if not self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[6]"):
             pass
         else:
@@ -218,6 +222,18 @@ class Selenium():
         log = self.driver.find_element_by_xpath("/html/body/div[4]/div[3]/div[1]")
         return log.text.encode('utf-8')
 
+    def check_is_over(self):
+        if self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/p[1]/em/button[2]"):
+            self.chat("gg")
+            save_replay = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/p[1]/em/button[2]")
+            save_replay.click()
+            #print "clicked save replay"
+            while not self.check_exists_by_id(self.get_battle_id()):
+                time.sleep(1)
+            ps_overlay = self.driver.find_element_by_xpath("/html/body/div[6]")
+            ps_overlay.click()
+            raise SeleniumException()
+
     def wait_for_move(self):
         move_exists = self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[1]")
         self.start_timer()
@@ -225,16 +241,7 @@ class Selenium():
             #print "waiting for their move"
             time.sleep(2)
             move_exists = self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[1]")
-            if self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/p[1]/em/button[2]"):
-                self.chat("gg")
-                save_replay = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/p[1]/em/button[2]")
-                save_replay.click()
-                #print "clicked save replay"
-                while not self.check_exists_by_id(self.get_battle_id()):
-                    time.sleep(1)
-                ps_overlay = self.driver.find_element_by_xpath("/html/body/div[6]")
-                ps_overlay.click()
-                raise SeleniumException()
+            self.check_is_over()
 
         #print "their move just ended"
 
