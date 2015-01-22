@@ -68,15 +68,18 @@ class Selenium():
         url1 = self.driver.current_url
         battle = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div[2]/div[1]/form/p[3]/button")
         battle.click()
+        battle_click = True
         time.sleep(1)
-        if self.check_exists_by_name("username"):
+        if url1 == self.driver.current_url and self.check_exists_by_name("username"):
             ps_overlay = self.driver.find_element_by_xpath("/html/body/div[5]")
             ps_overlay.click()
-        while self.check_exists_by_name("login"):
+            battle_click = False
+        while url1 == self.driver.current_url and self.check_exists_by_name("login"):
             time.sleep(1)
-        battle = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div[2]/div[1]/form/p[3]/button")
-        battle.click()
-        time.sleep(1)
+        if url1 == self.driver.current_url and not battle_click:
+            battle = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div[2]/div[1]/form/p[3]/button")
+            battle.click()
+            time.sleep(1)
         while url1 == self.driver.current_url:
             time.sleep(1.5)
             #print "waiting"
