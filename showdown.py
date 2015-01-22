@@ -220,8 +220,7 @@ if __name__ == "__main__":
 
     showdown = Showdown(
         team_text,
-        HumanAgent(),
-        #PessimisticMinimaxAgent(2),
+        PessimisticMinimaxAgent(2),
         args.username,
         password=args.password,
     )
