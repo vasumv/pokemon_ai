@@ -9,7 +9,7 @@ import json
 import re
 import traceback
 
-from agent import OptimisticMinimaxAgent, PessimisticMinimaxAgent
+from agent import OptimisticMinimaxAgent, PessimisticMinimaxAgent, HumanAgent
 
 NAME_CORRECTIONS = {"Keldeo-Resolute": "Keldeo",
                     "Pikachu-Belle": "Pikachu",
@@ -220,7 +220,8 @@ if __name__ == "__main__":
 
     showdown = Showdown(
         team_text,
-        PessimisticMinimaxAgent(2),
+        HumanAgent(),
+        #PessimisticMinimaxAgent(2),
         args.username,
         password=args.password,
     )
