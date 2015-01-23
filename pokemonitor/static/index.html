@@ -1,0 +1,36 @@
+<html ng-app='bot'>
+<head>
+<title>Showdown Bot Monitor</title>
+<script type='text/javascript' src='/static/js/angular.min.js'></script>
+<script type='text/javascript' src='/static/js/app.js'></script>
+<script type='text/javascript' src='/static/js/controllers.js'></script>
+<link rel='stylesheet' href='/static/css/bootstrap.min.css'>
+</head>
+<body>
+<div class="jumbotron">
+  <div class="container">
+    <h1>Welcome to the Showdown Bot Monitor</h1>
+    <p>Here we monitor the Showdown Bot.</p>
+  </div>
+</div>
+<div class="container" ng-controller="BotController">
+  <div style='margin-bottom: 5px' class='row' ng-if="bots.length > 0">
+    <button class="btn btn-success" type="submit" ng-click="refresh()">Refresh</button>
+  </div>
+  <div ng-if="bots.length == 0">
+    <h3>Sorry, no bots playing right now.</h3>
+  </div>
+  <div ng-repeat="bot in bots" class="row">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">{{bot.name}}</h3>
+      </div>
+      <div class="panel-body">
+        <div>Current battle: <a href='{{bot.url}}'>{{bot.url}}</a>
+        <div>Record: {{bot.scores.wins}} - {{bot.scores.losses}} - {{bot.scores.crashes}}</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

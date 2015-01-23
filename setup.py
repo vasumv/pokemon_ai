@@ -30,7 +30,8 @@ setup(
     ]),
     entry_points={
         'console_scripts': [
-            'showdownai=showdown_ai.showdown:main'
+            'showdownai=showdown_ai.showdown:main',
+            'showdownmonitor=pokemonitor.__init__:main',
         ],
     },
     install_requires=reqs,

@@ -5,6 +5,10 @@ from log import SimulatorLog
 from simulator import Simulator
 from gamestate import GameState
 from smogon import Smogon
+
+import sys
+import signal
+import requests
 import json
 import re
 import traceback
@@ -22,12 +26,14 @@ NAME_CORRECTIONS = {"Keldeo-Resolute": "Keldeo",
                     "Gourgeist-*": "Gourgeist"}
 
 class Showdown():
-    def __init__(self, team_text, agent, username, password=None, driver_path="./chromedriver"):
+    def __init__(self, team_text, agent, username, password=None, driver_path="./chromedriver",
+                 monitor_url=None):
         self.selenium = Selenium(driver_path=driver_path)
         self.agent = agent
         self.username = username
         self.password = password
         self.team_text = team_text
+        self.monitor_url = monitor_url
         with open("data/poke2.json") as f:
             data = f.read()
         with open("data/poke_bw.json") as f2:
@@ -124,10 +130,31 @@ class Showdown():
         self.selenium.login(self.username, self.password)
         self.selenium.make_team(self.team_text)
 
+    def update_monitor(self, done=False):
+        if self.monitor_url is not None:
+            if done:
+                status = 'done'
+            else:
+                status = 'match'
+            data = {
+                'username': self.username,
+                'status': status,
+                'scores': self.scores,
+                'url': self.battle_url
+            }
+            try:
+                url = self.monitor_url + "/api/update"
+                headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
+                r = requests.post(url, data=json.dumps(data), headers=headers)
+            except:
+                pass
+
     def play_game(self):
         self.selenium.choose_tier()
         self.selenium.start_battle()
         self.selenium.wait_for_move()
+        self.battle_url = self.selenium.driver.current_url
+        self.update_monitor()
         self.selenium.move(0, 0)
         my_team = self.selenium.get_my_team()
         opp_team = self.selenium.get_opp_team()
@@ -153,11 +180,15 @@ class Showdown():
 
     def run(self, num_games=1):
         self.init()
-        scores = {
+        self.scores = {
             'wins': 0,
             'losses': 0,
             'crashes': 0
         }
+        def signal_handler(signal, frame):
+            self.update_monitor(done=True)
+            sys.exit(0)
+        signal.signal(signal.SIGINT, signal_handler)
         for i in range(num_games):
             self.simulator.log.reset()
             result, error = None, None
@@ -177,28 +208,29 @@ class Showdown():
                 print "---------------"
                 print "Won the battle! - %s" % battle_url
                 print "---------------"
-                scores['wins'] += 1
+                self.scores['wins'] += 1
                 with open('logs/wins/%s.log' % id, 'w') as fp:
                     fp.write(log)
             elif result == False:
                 print "---------------"
                 print "Lost the battle! - %s" % battle_url
                 print "---------------"
-                scores['losses'] += 1
+                self.scores['losses'] += 1
                 with open('logs/losses/%s.log' % id, 'w') as fp:
                     fp.write(log)
             else:
                 print "---------------"
                 print "Crashed! - %s" % id
                 print "---------------"
-                scores['crashes'] += 1
+                self.scores['crashes'] += 1
                 with open('logs/crashes/%s.log' % id, 'w') as fp:
                     fp.write(log)
                 with open('logs/crashes/%s.err' % id, 'w') as fp:
                     fp.write(error)
             self.reset()
+        self.update_monitor(done=True)
         self.selenium.close()
-        print scores
+        print self.scores
 
 
 
@@ -211,6 +243,7 @@ def main():
     argparser.add_argument('--username', default='asdf7001')
     argparser.add_argument('--password', default='seleniumpython')
     argparser.add_argument('--iterations', type=int, default=1)
+    argparser.add_argument('--monitor_url', type=str)
     args = argparser.parse_args()
 
     with open(args.team) as fp:
@@ -222,5 +255,6 @@ def main():
         PessimisticMinimaxAgent(2),
         args.username,
         password=args.password,
+        monitor_url=args.monitor_url
     )
     showdown.run(args.iterations)
