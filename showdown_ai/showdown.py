@@ -204,8 +204,7 @@ class Showdown():
 
 
 
-
-if __name__ == "__main__":
+def main():
     from argparse import ArgumentParser
     argparser = ArgumentParser()
     argparser.add_argument('team')
