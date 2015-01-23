@@ -42,6 +42,7 @@ class GameState():
         opp_team_death = len([x for x in opp_team.poke_list if not x.alive])
         my_burn, opp_burn = 0, 0
         my_rocks, opp_rocks = 0, 0
+        spikes = 0
         if self.is_over():
             my_team_stages, opp_team_stages = 0, 0
         else:
@@ -57,8 +58,6 @@ class GameState():
                 spikes = 0.6
             elif self.spikes[1 - who] == 3:
                 spikes = 1
-            else:
-                spikes = 0
             opp_burn = 0.75 if (opp_poke.status == "burn" and opp_poke.final_stats['patk'] > 245 and opp_poke.ability != "Guts") else 0
             my_burn = -1.5 if (my_poke.status == "burn" and my_poke.final_stats['patk'] > 250 and my_poke.ability != "Guts") else 0
         return win_bonus + my_team_health - opp_team_health - 0.5 * my_team_death + 0.5 * opp_team_death + opp_rocks + my_rocks + opp_burn + my_burn + spikes# + 0.07 * (my_team_stages - opp_team_stages)
