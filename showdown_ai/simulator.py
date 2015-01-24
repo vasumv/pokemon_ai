@@ -185,6 +185,12 @@ class Simulator():
         if opp_poke.ability == "Gale Wings":
             if opp_move.type == "Flying":
                 opp_move.priority += 1
+        if my_poke.ability == "Prankster":
+            if my_move.category != "Physical" and my_move.category != "Special":
+                my_move.priority += 1
+        if opp_poke.ability == "Prankster":
+            if opp_move.category != "Physical" and opp_move.category != "Special":
+                opp_move.priority += 1
 
         first = None
         if log:
