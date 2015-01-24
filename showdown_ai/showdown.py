@@ -243,7 +243,7 @@ def main():
     argparser.add_argument('--username', default='asdf7001')
     argparser.add_argument('--password', default='seleniumpython')
     argparser.add_argument('--iterations', type=int, default=1)
-    argparser.add_argument('--monitor_url', type=str)
+    argparser.add_argument('--monitor_url', type=str, default='http://54.149.105.175:9000')
     args = argparser.parse_args()
 
     with open(args.team) as fp:
