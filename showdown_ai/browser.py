@@ -71,7 +71,7 @@ class Selenium():
         battle_click = True
         time.sleep(1)
         if url1 == self.driver.current_url and self.check_exists_by_name("username"):
-            ps_overlay = self.driver.find_element_by_xpath("/html/body/div[5]")
+            ps_overlay = self.driver.find_element_by_xpath("/html/body/div[4]")
             ps_overlay.click()
             battle_click = False
         while url1 == self.driver.current_url and self.check_exists_by_name("login"):
