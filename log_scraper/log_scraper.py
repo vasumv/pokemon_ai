@@ -24,6 +24,8 @@ def get_logs(link):
 
 if __name__ == "__main__":
     usernames = get_usernames()
+    index = usernames.index("Mouzourides")
+    usernames = usernames[index:]
     for user in usernames:
         print user
         links = get_user_replays(user)
