@@ -1,0 +1,623 @@
+|join|AElite-Scourage
+|join|Terra1396
+|player|p1|AElite-Scourage|226
+|player|p2|Terra1396|terra.png
+|gametype|singles
+|gen|6
+|tier|OU Monotype
+|rule|Same Type Clause: Pokemon in a team must share a type
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Skarmory, M
+|poke|p1|Heatran, F
+|poke|p1|Ferrothorn, F
+|poke|p1|Aegislash, F
+|poke|p1|Genesect
+|poke|p1|Mawile, M
+|poke|p2|Zoroark, F
+|poke|p2|Bisharp, M
+|poke|p2|Greninja, M
+|poke|p2|Mandibuzz, F
+|poke|p2|Malamar, M
+|poke|p2|Tyranitar, M
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Aegislash|Aegislash, F|324\/324
+|switch|p2a: Greninja|Greninja, M|286\/286
+|turn|1
+|callback|decision
+|
+|move|p1a: Aegislash|King's Shield|p1a: Aegislash
+|-singleturn|p1a: Aegislash|Protect
+|-start|p2a: Greninja|typechange|Water|[from] Protean
+|move|p2a: Greninja|Hydro Pump|p1a: Aegislash
+|-activate|p1a: Aegislash|Protect
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|352\/352
+|move|p2a: Greninja|Hydro Pump|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|280\/352
+|
+|-heal|p1a: Ferrothorn|302\/352|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|262\/262
+|move|p1a: Ferrothorn|Protect|p1a: Ferrothorn
+|-fail|p1a: Ferrothorn
+|
+|-heal|p1a: Ferrothorn|324\/352|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p1a: Ferrothorn|Protect|p1a: Ferrothorn
+|-singleturn|p1a: Ferrothorn|Protect
+|move|p2a: Mandibuzz|Night Daze|p1a: Ferrothorn
+|-activate|p1a: Ferrothorn|Protect
+|
+|-heal|p1a: Ferrothorn|346\/352|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|386\/386
+|move|p2a: Mandibuzz|Flamethrower|p1a: Heatran
+|-start|p1a: Heatran|ability: Flash Fire
+|
+|turn|6
+|callback|decision
+|chat|Terra1396|lol
+|chat|AElite-Scourage|Felt like a lie,
+|
+|move|p2a: Mandibuzz|Focus Blast|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|178\/386
+|move|p1a: Heatran|Toxic|p2a: Mandibuzz
+|-status|p2a: Mandibuzz|tox
+|
+|-heal|p1a: Heatran|202\/386|[from] item: Leftovers
+|-damage|p2a: Mandibuzz|246\/262 tox|[from] psn
+|turn|7
+|callback|decision
+|chat|Terra1396|iy was
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Mandibuzz|Focus Blast|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-heal|p1a: Heatran|226\/386|[from] item: Leftovers
+|-damage|p2a: Mandibuzz|214\/262 tox|[from] psn
+|turn|8
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, F|324\/324
+|move|p2a: Mandibuzz|Focus Blast|p1a: Aegislash
+|-immune|p1a: Aegislash|[msg]
+|
+|-damage|p2a: Mandibuzz|166\/262 tox|[from] psn
+|turn|9
+|callback|decision
+|chat|Terra1396|your really good at switching
+|
+|move|p1a: Aegislash|King's Shield|p1a: Aegislash
+|-singleturn|p1a: Aegislash|Protect
+|move|p2a: Mandibuzz|Night Daze|p1a: Aegislash
+|-activate|p1a: Aegislash|Protect
+|
+|-damage|p2a: Mandibuzz|102\/262 tox|[from] psn
+|turn|10
+|callback|decision
+|chat|AElite-Scourage|I try
+|
+|move|p2a: Mandibuzz|Night Daze|p1a: Aegislash|[miss]
+|-miss|p2a: Mandibuzz|p1a: Aegislash
+|move|p1a: Aegislash|Swords Dance|p1a: Aegislash
+|-boost|p1a: Aegislash|atk|2
+|
+|-damage|p2a: Mandibuzz|22\/262 tox|[from] psn
+|turn|11
+|callback|decision
+|
+|switch|p2a: Bisharp|Bisharp, M|272\/272
+|move|p1a: Aegislash|King's Shield|p1a: Aegislash
+|-fail|p1a: Aegislash
+|
+|turn|12
+|callback|decision
+|
+|move|p2a: Bisharp|Sucker Punch|p1a: Aegislash
+|-supereffective|p1a: Aegislash
+|-damage|p1a: Aegislash|124\/324
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Sacred Sword|p2a: Bisharp
+|-supereffective|p2a: Bisharp
+|-damage|p2a: Bisharp|0 fnt
+|faint|p2a: Bisharp
+|
+|-heal|p1a: Aegislash|144\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Malamar|Malamar, M|376\/376
+|turn|13
+|callback|decision
+|
+|-formechange|p1a: Aegislash|Aegislash
+|move|p1a: Aegislash|King's Shield|p1a: Aegislash
+|-singleturn|p1a: Aegislash|Protect
+|move|p2a: Malamar|Reflect|p2a: Malamar
+|-sidestart|p2: Terra1396|Reflect
+|
+|-heal|p1a: Aegislash|164\/324|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p2a: Malamar|Topsy-Turvy|p1a: Aegislash
+|-invertboost|p1a: Aegislash|[from] move: Topsy-turvy
+|move|p1a: Aegislash|Swords Dance|p1a: Aegislash
+|-boost|p1a: Aegislash|atk|2
+|
+|-heal|p1a: Aegislash|184\/324|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p2a: Malamar|Light Screen|p2a: Malamar
+|-sidestart|p2: Terra1396|move: Light Screen
+|move|p1a: Aegislash|Swords Dance|p1a: Aegislash
+|-boost|p1a: Aegislash|atk|2
+|
+|-heal|p1a: Aegislash|204\/324|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|424\/424
+|move|p1a: Aegislash|Swords Dance|p1a: Aegislash
+|-boost|p1a: Aegislash|atk|2
+|
+|-heal|p1a: Aegislash|224\/324|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Aegislash|King's Shield|p1a: Aegislash
+|-singleturn|p1a: Aegislash|Protect
+|move|p2a: Mandibuzz|Foul Play|p1a: Aegislash
+|-activate|p1a: Aegislash|Protect
+|-unboost|p2a: Mandibuzz|atk|2
+|
+|-heal|p1a: Aegislash|244\/324|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|move|p2a: Mandibuzz|Foul Play|p1a: Skarmory
+|-damage|p1a: Skarmory|282\/334
+|
+|-heal|p1a: Skarmory|302\/334|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|switch|p2a: Malamar|Malamar, M|22\/262 tox
+|move|p1a: Skarmory|Stealth Rock|p2a: Malamar
+|-sidestart|p2: Terra1396|move: Stealth Rock
+|
+|-heal|p1a: Skarmory|322\/334|[from] item: Leftovers
+|-damage|p2a: Malamar|6\/262 tox|[from] psn
+|turn|20
+|callback|decision
+|chat|AElite-Scourage|SEEMS LEGIT
+|chat|Terra1396|lol
+|
+|switch|p1a: Heatran|Heatran, F|226\/386
+|move|p2a: Malamar|Night Daze|p1a: Heatran
+|-damage|p1a: Heatran|109\/386
+|
+|-heal|p1a: Heatran|133\/386|[from] item: Leftovers
+|-damage|p2a: Malamar|0 fnt|[from] psn
+|-sideend|p2: Terra1396|Reflect
+|faint|p2a: Malamar
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, M|342\/342
+|-damage|p2a: Tyranitar|300\/342|[from] Stealth Rock
+|-weather|Sandstorm
+|turn|21
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|322\/334
+|-formechange|p2a: Tyranitar|Tyranitar-Mega
+|message|Tyranitar has Mega Evolved into Mega Tyranitar!
+|move|p2a: Tyranitar|Dragon Dance|p2a: Tyranitar
+|-boost|p2a: Tyranitar|atk|1
+|-boost|p2a: Tyranitar|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Skarmory|334\/334|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p2a: Tyranitar|Stone Edge|p1a: Skarmory
+|-damage|p1a: Skarmory|126\/334
+|move|p1a: Skarmory|Whirlwind|p2a: Tyranitar
+|drag|p2a: Malamar|Malamar, M|376\/376
+|-damage|p2a: Malamar|329\/376|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Malamar|306\/376|[from] sandstorm
+|-heal|p1a: Skarmory|146\/334|[from] item: Leftovers
+|-sideend|p2: Terra1396|move: Light Screen
+|turn|23
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, F|244\/324
+|move|p2a: Malamar|Reflect|p2a: Malamar
+|-sidestart|p2: Terra1396|Reflect
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Malamar|283\/376|[from] sandstorm
+|-heal|p1a: Aegislash|264\/324|[from] item: Leftovers
+|turn|24
+|callback|decision
+|chat|AElite-Scourage|That did scary ramage
+|
+|switch|p1a: Genesect|Genesect|283\/283
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|move|p2a: Malamar|Light Screen|p2a: Malamar
+|-sidestart|p2: Terra1396|move: Light Screen
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Malamar|260\/376|[from] sandstorm
+|turn|25
+|callback|decision
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|424\/424
+|-damage|p2a: Mandibuzz|318\/424|[from] Stealth Rock
+|move|p1a: Genesect|U-turn|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|278\/424
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|133\/386
+|
+|-weather|none
+|-heal|p2a: Mandibuzz|304\/424|[from] item: Leftovers
+|-heal|p1a: Heatran|157\/386|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|move|p2a: Mandibuzz|Foul Play|p1a: Heatran
+|-damage|p1a: Heatran|70\/386
+|move|p1a: Heatran|Toxic|p2a: Mandibuzz
+|-status|p2a: Mandibuzz|tox
+|
+|-heal|p2a: Mandibuzz|330\/424 tox|[from] item: Leftovers
+|-heal|p1a: Heatran|94\/386|[from] item: Leftovers
+|-damage|p2a: Mandibuzz|304\/424 tox|[from] psn
+|turn|27
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, M|300\/342
+|-formechange|p2a: Tyranitar|Tyranitar-Mega
+|-damage|p2a: Tyranitar|258\/342|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-fail|p1a: Heatran
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Heatran|118\/386|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|move|p2a: Tyranitar|Dragon Dance|p2a: Tyranitar
+|-boost|p2a: Tyranitar|atk|1
+|-boost|p2a: Tyranitar|spe|1
+|move|p1a: Heatran|Toxic|p2a: Tyranitar
+|-status|p2a: Tyranitar|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Heatran|142\/386|[from] item: Leftovers
+|-damage|p2a: Tyranitar|237\/342 tox|[from] psn
+|turn|29
+|callback|decision
+|chat|Terra1396|..
+|chat|Terra1396|im not thinking
+|
+|move|p2a: Tyranitar|Stone Edge|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Tyranitar|195\/342 tox|[from] psn
+|callback|decision
+|chat|AElite-Scourage|That was not a difficult prediction
+|
+|switch|p1a: Aegislash|Aegislash, F|264\/324
+|turn|30
+|callback|decision
+|chat|Terra1396|what's wrong with me 
+|
+|move|p1a: Aegislash|King's Shield|p1a: Aegislash
+|-singleturn|p1a: Aegislash|Protect
+|move|p2a: Tyranitar|Earthquake|p1a: Aegislash
+|-activate|p1a: Aegislash|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Aegislash|284\/324|[from] item: Leftovers
+|-damage|p2a: Tyranitar|132\/342 tox|[from] psn
+|-sideend|p2: Terra1396|Reflect
+|turn|31
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|146\/334
+|move|p2a: Tyranitar|Crunch|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|faint|p1a: Skarmory
+|
+|-weather|none
+|-damage|p2a: Tyranitar|48\/342 tox|[from] psn
+|-sideend|p2: Terra1396|move: Light Screen
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|283\/283
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|turn|32
+|callback|decision
+|
+|move|p1a: Genesect|U-turn|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|callback|decision
+|
+|switch|p1a: Mawile|Mawile, M|304\/304
+|
+|callback|decision
+|
+|switch|p2a: Malamar|Malamar, M|260\/376
+|-damage|p2a: Malamar|213\/376|[from] Stealth Rock
+|turn|33
+|callback|decision
+|
+|-formechange|p1a: Mawile|Mawile-Mega
+|message|Mawile has Mega Evolved into Mega Mawile!
+|move|p2a: Malamar|Reflect|p2a: Malamar
+|-sidestart|p2: Terra1396|Reflect
+|move|p1a: Mawile|Swords Dance|p1a: Mawile
+|-boost|p1a: Mawile|atk|2
+|
+|turn|34
+|callback|decision
+|
+|move|p2a: Malamar|Topsy-Turvy|p1a: Mawile
+|-invertboost|p1a: Mawile|[from] move: Topsy-turvy
+|move|p1a: Mawile|Iron Head|p2a: Malamar
+|-damage|p2a: Malamar|150\/376
+|
+|turn|35
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|283\/283
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|move|p2a: Malamar|Superpower|p1a: Genesect
+|-damage|p1a: Genesect|166\/283
+|-boost|p2a: Malamar|atk|1
+|-boost|p2a: Malamar|def|1
+|
+|turn|36
+|callback|decision
+|
+|move|p1a: Genesect|U-turn|p2a: Malamar
+|-crit|p2a: Malamar
+|-supereffective|p2a: Malamar
+|-damage|p2a: Malamar|0 fnt
+|faint|p2a: Malamar
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|346\/352
+|
+|-heal|p1a: Ferrothorn|352\/352|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Greninja|Greninja, M|286\/286
+|-damage|p2a: Greninja|251\/286|[from] Stealth Rock
+|turn|37
+|callback|decision
+|
+|move|p1a: Ferrothorn|Protect|p1a: Ferrothorn
+|-singleturn|p1a: Ferrothorn|Protect
+|-start|p2a: Greninja|typechange|Ice|[from] Protean
+|move|p2a: Greninja|Ice Beam|p1a: Ferrothorn
+|-activate|p1a: Ferrothorn|Protect
+|
+|turn|38
+|callback|decision
+|
+|move|p2a: Greninja|Ice Beam|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|223\/352
+|move|p1a: Ferrothorn|Leech Seed|p2a: Greninja
+|-start|p2a: Greninja|move: Leech Seed
+|
+|-heal|p1a: Ferrothorn|245\/352|[from] item: Leftovers
+|-damage|p2a: Greninja|216\/286|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|280\/352|[silent]
+|turn|39
+|callback|decision
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|304\/424 tox
+|-damage|p2a: Mandibuzz|198\/424 tox|[from] Stealth Rock
+|move|p1a: Ferrothorn|Thunder Wave|p2a: Mandibuzz
+|-fail|p2a: Mandibuzz
+|
+|-heal|p2a: Mandibuzz|224\/424 tox|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|302\/352|[from] item: Leftovers
+|-damage|p2a: Mandibuzz|198\/424 tox|[from] psn
+|turn|40
+|callback|decision
+|chat|Terra1396|*sigh*
+|chat|Terra1396|gg
+|
+|move|p1a: Ferrothorn|Protect|p1a: Ferrothorn
+|-singleturn|p1a: Ferrothorn|Protect
+|move|p2a: Mandibuzz|Roost|p2a: Mandibuzz
+|-heal|p2a: Mandibuzz|410\/424 tox
+|
+|-heal|p2a: Mandibuzz|424\/424 tox|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|324\/352|[from] item: Leftovers
+|-damage|p2a: Mandibuzz|372\/424 tox|[from] psn
+|-sideend|p2: Terra1396|Reflect
+|turn|41
+|callback|decision
+|chat|AElite-Scourage|Gg
+|
+|switch|p2a: Greninja|Greninja, M|216\/286
+|-damage|p2a: Greninja|181\/286|[from] Stealth Rock
+|move|p1a: Ferrothorn|Leech Seed|p2a: Greninja|[miss]
+|-miss|p1a: Ferrothorn|p2a: Greninja
+|
+|-heal|p1a: Ferrothorn|346\/352|[from] item: Leftovers
+|turn|42
+|callback|decision
+|chat|Terra1396|I haven't won an ou battle for quite awhile ;~;
+|
+|-start|p2a: Greninja|typechange|Ice|[from] Protean
+|move|p2a: Greninja|Ice Beam|p1a: Ferrothorn
+|-crit|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|175\/352
+|-status|p1a: Ferrothorn|frz
+|cant|p1a: Ferrothorn|frz
+|
+|-heal|p1a: Ferrothorn|197\/352 frz|[from] item: Leftovers
+|turn|43
+|callback|decision
+|chat|AElite-Scourage|Don't speak too soon.
+|
+|move|p2a: Greninja|Ice Beam|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|83\/352 frz
+|-curestatus|p1a: Ferrothorn|frz
+|move|p1a: Ferrothorn|Leech Seed|p2a: Greninja
+|-start|p2a: Greninja|move: Leech Seed
+|
+|-heal|p1a: Ferrothorn|105\/352|[from] item: Leftovers
+|-damage|p2a: Greninja|146\/286|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|140\/352|[silent]
+|turn|44
+|callback|decision
+|chat|Terra1396|lol
+|chat|Terra1396|I didn't even move
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|372\/424 tox
+|-damage|p2a: Mandibuzz|266\/424 tox|[from] Stealth Rock
+|move|p1a: Ferrothorn|Leech Seed|p2a: Mandibuzz
+|-start|p2a: Mandibuzz|move: Leech Seed
+|
+|-heal|p2a: Mandibuzz|292\/424 tox|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|162\/352|[from] item: Leftovers
+|-damage|p2a: Mandibuzz|239\/424 tox|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|215\/352|[silent]
+|-damage|p2a: Mandibuzz|213\/424 tox|[from] psn
+|turn|45
+|callback|decision
+|
+|switch|p2a: Greninja|Greninja, M|146\/286
+|-damage|p2a: Greninja|111\/286|[from] Stealth Rock
+|move|p1a: Ferrothorn|Spikes|p2a: Greninja
+|-sidestart|p2: Terra1396|Spikes
+|
+|-heal|p1a: Ferrothorn|237\/352|[from] item: Leftovers
+|turn|46
+|callback|decision
+|
+|-start|p2a: Greninja|typechange|Ice|[from] Protean
+|move|p2a: Greninja|Ice Beam|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|123\/352
+|move|p1a: Ferrothorn|Leech Seed|p2a: Greninja
+|-start|p2a: Greninja|move: Leech Seed
+|
+|-heal|p1a: Ferrothorn|145\/352|[from] item: Leftovers
+|-damage|p2a: Greninja|76\/286|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|180\/352|[silent]
+|turn|47
+|callback|decision
+|chat|Terra1396|A problem of mine
+|chat|Terra1396|is that i don't like spinners and defogers
+|
+|move|p1a: Ferrothorn|Protect|p1a: Ferrothorn
+|-singleturn|p1a: Ferrothorn|Protect
+|move|p2a: Greninja|Ice Beam|p1a: Ferrothorn
+|-activate|p1a: Ferrothorn|Protect
+|
+|-heal|p1a: Ferrothorn|202\/352|[from] item: Leftovers
+|-damage|p2a: Greninja|41\/286|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|237\/352|[silent]
+|turn|48
+|callback|decision
+|
+|move|p2a: Greninja|Ice Beam|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|110\/352
+|move|p1a: Ferrothorn|Thunder Wave|p2a: Greninja
+|-status|p2a: Greninja|par
+|
+|-heal|p1a: Ferrothorn|132\/352|[from] item: Leftovers
+|-damage|p2a: Greninja|6\/286 par|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|167\/352|[silent]
+|turn|49
+|callback|decision
+|chat|AElite-Scourage|Not sure a spinner would have solved all your problems this match
+|
+|move|p1a: Ferrothorn|Protect|p1a: Ferrothorn
+|-singleturn|p1a: Ferrothorn|Protect
+|move|p2a: Greninja|Ice Beam|p1a: Ferrothorn
+|-activate|p1a: Ferrothorn|Protect
+|
+|-heal|p1a: Ferrothorn|189\/352|[from] item: Leftovers
+|-damage|p2a: Greninja|0 fnt|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|195\/352|[silent]
+|faint|p2a: Greninja
+|callback|decision
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|213\/424 tox
+|-damage|p2a: Mandibuzz|107\/424 tox|[from] Stealth Rock
+|turn|50
+|callback|decision
+|chat|Terra1396|idk
+|chat|Terra1396|probs true
+|chat|AElite-Scourage|I love how it says you have zoroark still
+|chat|Terra1396|lol
+|chat|Terra1396|I troll the server
+|
+|move|p2a: Mandibuzz|Foul Play|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|137\/352
+|-damage|p2a: Mandibuzz|54\/424 tox|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|move|p1a: Ferrothorn|Leech Seed|p2a: Mandibuzz
+|-start|p2a: Mandibuzz|move: Leech Seed
+|
+|-heal|p2a: Mandibuzz|80\/424 tox|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|159\/352|[from] item: Leftovers
+|-damage|p2a: Mandibuzz|27\/424 tox|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|212\/352|[silent]
+|-damage|p2a: Mandibuzz|1\/424 tox|[from] psn
+|turn|51
+|callback|decision
+|
+|move|p1a: Ferrothorn|Spikes|p2a: Mandibuzz
+|-sidestart|p2: Terra1396|Spikes
+|move|p2a: Mandibuzz|Whirlwind|p1a: Ferrothorn
+|drag|p1a: Aegislash|Aegislash, F|284\/324
+|
+|-heal|p2a: Mandibuzz|27\/424 tox|[from] item: Leftovers
+|-heal|p1a: Aegislash|304\/324|[from] item: Leftovers
+|-damage|p2a: Mandibuzz|0 fnt|[from] Leech Seed|[of] p1a: Aegislash
+|-heal|p1a: Aegislash|324\/324|[silent]
+|faint|p2a: Mandibuzz
+|
+|win|AElite-Scourage
+|chat|Terra1396|But I think this is it for me
+|chat|AElite-Scourage|Yup, gg.

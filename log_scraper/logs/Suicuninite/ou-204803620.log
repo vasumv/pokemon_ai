@@ -1,0 +1,630 @@
+|join|alwayssleepy
+|join|Suicuninite
+|player|p1|alwayssleepy|1
+|player|p2|Suicuninite|92
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Slowbro, M
+|poke|p1|Tyranitar, M
+|poke|p1|Clefable, M
+|poke|p1|Keldeo
+|poke|p1|Jirachi
+|poke|p1|Landorus-Therian, M
+|poke|p2|Politoed, F
+|poke|p2|Swampert, F
+|poke|p2|Kingdra, M
+|poke|p2|Ferrothorn, F
+|poke|p2|Tornadus-Therian, M
+|poke|p2|Latias, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|319\/319
+|switch|p2a: Ferrothorn|Ferrothorn, F|352\/352
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Ferrothorn
+|-unboost|p2a: Ferrothorn|atk|1
+|turn|1
+|
+|switch|p1a: Jirachi|Jirachi|403\/403
+|move|p2a: Ferrothorn|Stealth Rock|p1a: Jirachi
+|-sidestart|p1: alwayssleepy|move: Stealth Rock
+|
+|turn|2
+|
+|switch|p2a: Politoed|Politoed, F|384\/384
+|-weather|RainDance
+|move|p1a: Jirachi|Stealth Rock|p2a: Politoed
+|-sidestart|p2: Suicuninite|move: Stealth Rock
+|
+|-weather|RainDance|[upkeep]
+|turn|3
+|
+|move|p1a: Jirachi|Body Slam|p2a: Politoed
+|-damage|p2a: Politoed|294\/384
+|-status|p2a: Politoed|par
+|move|p2a: Politoed|Scald|p1a: Jirachi
+|-damage|p1a: Jirachi|301\/403
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Jirachi|326\/403|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Tyranitar|Tyranitar, M|341\/341
+|-damage|p1a: Tyranitar|299\/341|[from] Stealth Rock
+|-weather|Sandstorm
+|switch|p2a: Ferrothorn|Ferrothorn, F|352\/352
+|-damage|p2a: Ferrothorn|330\/352|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Ferrothorn|352\/352|[from] item: Leftovers
+|turn|5
+|
+|switch|p1a: Jirachi|Jirachi|326\/403
+|-damage|p1a: Jirachi|301\/403|[from] Stealth Rock
+|move|p2a: Ferrothorn|Leech Seed|p1a: Jirachi
+|-start|p1a: Jirachi|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Jirachi|326\/403|[from] item: Leftovers
+|-damage|p1a: Jirachi|276\/403|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|6
+|
+|switch|p1a: Keldeo|Keldeo|323\/323
+|-damage|p1a: Keldeo|303\/323|[from] Stealth Rock
+|move|p2a: Ferrothorn|Protect|p2a: Ferrothorn
+|-fail|p2a: Ferrothorn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Keldeo|283\/323|[from] sandstorm
+|-heal|p1a: Keldeo|303\/323|[from] item: Leftovers
+|turn|7
+|
+|switch|p2a: Latias|Latias, F|301\/301
+|-damage|p2a: Latias|264\/301|[from] Stealth Rock
+|move|p1a: Keldeo|Substitute|p1a: Keldeo
+|-start|p1a: Keldeo|Substitute
+|-damage|p1a: Keldeo|223\/323
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|246\/301|[from] sandstorm
+|-damage|p1a: Keldeo|203\/323|[from] sandstorm
+|-heal|p2a: Latias|264\/301|[from] item: Leftovers
+|-heal|p1a: Keldeo|223\/323|[from] item: Leftovers
+|turn|8
+|
+|move|p2a: Latias|Psyshock|p1a: Keldeo
+|-supereffective|p1a: Keldeo
+|-end|p1a: Keldeo|Substitute
+|move|p1a: Keldeo|Scald|p2a: Latias
+|-resisted|p2a: Latias
+|-damage|p2a: Latias|207\/301
+|
+|-weather|none
+|-heal|p2a: Latias|225\/301|[from] item: Leftovers
+|-heal|p1a: Keldeo|243\/323|[from] item: Leftovers
+|turn|9
+|
+|switch|p1a: Clefable|Clefable, M|394\/394
+|-damage|p1a: Clefable|345\/394|[from] Stealth Rock
+|move|p2a: Latias|Defog|p1a: Clefable
+|-unboost|p1a: Clefable|evasion|1
+|-sideend|p1: alwayssleepy|Stealth Rock|[from] move: Defog|[of] p1a: Clefable
+|-sideend|p2: Suicuninite|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|
+|-heal|p2a: Latias|243\/301|[from] item: Leftovers
+|-heal|p1a: Clefable|369\/394|[from] item: Leftovers
+|turn|10
+|
+|switch|p2a: Politoed|Politoed, F|294\/384 par
+|-weather|RainDance
+|move|p1a: Clefable|Wish|p1a: Clefable
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Clefable|393\/394|[from] item: Leftovers
+|turn|11
+|
+|switch|p1a: Jirachi|Jirachi|276\/403
+|move|p2a: Politoed|Toxic|p1a: Jirachi
+|-fail|p1a: Jirachi
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Jirachi|403\/403|[from] move: Wish|[wisher] Clefable
+|turn|12
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|352\/352
+|move|p1a: Jirachi|Stealth Rock|p2a: Ferrothorn
+|-sidestart|p2: Suicuninite|move: Stealth Rock
+|
+|-weather|RainDance|[upkeep]
+|turn|13
+|
+|move|p1a: Jirachi|Fire Punch|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|276\/352
+|-damage|p1a: Jirachi|353\/403|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|move|p2a: Ferrothorn|Leech Seed|p1a: Jirachi
+|-start|p1a: Jirachi|move: Leech Seed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Jirachi|378\/403|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|298\/352|[from] item: Leftovers
+|-damage|p1a: Jirachi|328\/403|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|348\/352|[silent]
+|turn|14
+|
+|switch|p1a: Keldeo|Keldeo|243\/323
+|move|p2a: Ferrothorn|Power Whip|p1a: Keldeo
+|-supereffective|p1a: Keldeo
+|-damage|p1a: Keldeo|0 fnt
+|faint|p1a: Keldeo
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Ferrothorn|352\/352|[from] item: Leftovers
+|
+|switch|p1a: Tyranitar|Tyranitar, M|299\/341
+|-weather|Sandstorm
+|turn|15
+|
+|switch|p1a: Jirachi|Jirachi|328\/403
+|move|p2a: Ferrothorn|Leech Seed|p1a: Jirachi
+|-start|p1a: Jirachi|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Jirachi|353\/403|[from] item: Leftovers
+|-damage|p1a: Jirachi|303\/403|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|16
+|
+|move|p2a: Ferrothorn|Protect|p2a: Ferrothorn
+|-singleturn|p2a: Ferrothorn|Protect
+|move|p1a: Jirachi|Fire Punch|p2a: Ferrothorn
+|-activate|p2a: Ferrothorn|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Jirachi|328\/403|[from] item: Leftovers
+|-damage|p1a: Jirachi|278\/403|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|17
+|
+|switch|p2a: Politoed|Politoed, F|294\/384 par
+|-damage|p2a: Politoed|246\/384 par|[from] Stealth Rock
+|-weather|RainDance
+|move|p1a: Jirachi|Fire Punch|p2a: Politoed
+|-resisted|p2a: Politoed
+|-damage|p2a: Politoed|228\/384 par
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Jirachi|303\/403|[from] item: Leftovers
+|-damage|p1a: Jirachi|253\/403|[from] Leech Seed|[of] p2a: Politoed
+|-heal|p2a: Politoed|278\/384 par|[silent]
+|turn|18
+|
+|switch|p1a: Tyranitar|Tyranitar, M|299\/341
+|-weather|Sandstorm
+|move|p2a: Politoed|Scald|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|191\/341
+|-status|p1a: Tyranitar|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Politoed|254\/384 par|[from] sandstorm
+|-damage|p1a: Tyranitar|149\/341 brn|[from] brn
+|turn|19
+|
+|switch|p1a: Clefable|Clefable, M|393\/394
+|switch|p2a: Ferrothorn|Ferrothorn, F|352\/352
+|-damage|p2a: Ferrothorn|330\/352|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Clefable|369\/394|[from] sandstorm
+|-heal|p1a: Clefable|393\/394|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|352\/352|[from] item: Leftovers
+|turn|20
+|
+|switch|p2a: Politoed|Politoed, F|254\/384 par
+|-damage|p2a: Politoed|206\/384 par|[from] Stealth Rock
+|-weather|RainDance
+|move|p1a: Clefable|Heal Bell|p1a: Clefable
+|-cureteam|p1a: Clefable|[from] move: HealBell
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Clefable|394\/394|[from] item: Leftovers
+|turn|21
+|
+|move|p1a: Clefable|Wish|p1a: Clefable
+|move|p2a: Politoed|Scald|p1a: Clefable
+|-damage|p1a: Clefable|247\/394
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Clefable|271\/394|[from] item: Leftovers
+|turn|22
+|
+|switch|p1a: Tyranitar|Tyranitar, M|149\/341
+|-weather|Sandstorm
+|move|p2a: Politoed|Scald|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|41\/341
+|-status|p1a: Tyranitar|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Politoed|182\/384 par|[from] sandstorm
+|-heal|p1a: Tyranitar|238\/341 brn|[from] move: Wish|[wisher] Clefable
+|-damage|p1a: Tyranitar|196\/341 brn|[from] brn
+|turn|23
+|
+|switch|p1a: Clefable|Clefable, M|271\/394
+|switch|p2a: Latias|Latias, F|243\/301
+|-damage|p2a: Latias|206\/301|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|188\/301|[from] sandstorm
+|-damage|p1a: Clefable|247\/394|[from] sandstorm
+|-heal|p2a: Latias|206\/301|[from] item: Leftovers
+|-heal|p1a: Clefable|271\/394|[from] item: Leftovers
+|turn|24
+|
+|move|p2a: Latias|Defog|p1a: Clefable
+|-unboost|p1a: Clefable|evasion|1
+|-sideend|p2: Suicuninite|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Clefable|Moonblast|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|30\/301
+|-unboost|p2a: Latias|spa|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|12\/301|[from] sandstorm
+|-damage|p1a: Clefable|247\/394|[from] sandstorm
+|-heal|p2a: Latias|30\/301|[from] item: Leftovers
+|-heal|p1a: Clefable|271\/394|[from] item: Leftovers
+|turn|25
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|352\/352
+|move|p1a: Clefable|Heal Bell|p1a: Clefable
+|-cureteam|p1a: Clefable|[from] move: HealBell
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Clefable|247\/394|[from] sandstorm
+|-heal|p1a: Clefable|271\/394|[from] item: Leftovers
+|turn|26
+|
+|move|p1a: Clefable|Wish|p1a: Clefable
+|move|p2a: Ferrothorn|Stealth Rock|p1a: Clefable
+|-sidestart|p1: alwayssleepy|move: Stealth Rock
+|
+|-weather|none
+|-heal|p1a: Clefable|295\/394|[from] item: Leftovers
+|turn|27
+|
+|switch|p1a: Jirachi|Jirachi|253\/403
+|-damage|p1a: Jirachi|228\/403|[from] Stealth Rock
+|move|p2a: Ferrothorn|Leech Seed|p1a: Jirachi
+|-start|p1a: Jirachi|move: Leech Seed
+|
+|-heal|p1a: Jirachi|403\/403|[from] move: Wish|[wisher] Clefable
+|-damage|p1a: Jirachi|353\/403|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|28
+|
+|switch|p2a: Latias|Latias, F|30\/301
+|move|p1a: Jirachi|Stealth Rock|p2a: Latias
+|-sidestart|p2: Suicuninite|move: Stealth Rock
+|
+|-heal|p2a: Latias|48\/301|[from] item: Leftovers
+|-heal|p1a: Jirachi|378\/403|[from] item: Leftovers
+|-damage|p1a: Jirachi|328\/403|[from] Leech Seed|[of] p2a: Latias
+|-heal|p2a: Latias|98\/301|[silent]
+|turn|29
+|
+|switch|p1a: Tyranitar|Tyranitar, M|196\/341
+|-damage|p1a: Tyranitar|154\/341|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p2a: Latias|Defog|p1a: Tyranitar
+|-unboost|p1a: Tyranitar|evasion|1
+|-sideend|p1: alwayssleepy|Stealth Rock|[from] move: Defog|[of] p1a: Tyranitar
+|-sideend|p2: Suicuninite|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|80\/301|[from] sandstorm
+|-heal|p2a: Latias|98\/301|[from] item: Leftovers
+|turn|30
+|
+|move|p1a: Tyranitar|Pursuit|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|0 fnt
+|faint|p2a: Latias
+|
+|-weather|Sandstorm|[upkeep]
+|c|âSuicuninite|ah scarf tar. nb
+|
+|switch|p2a: Politoed|Politoed, F|182\/384 par
+|-weather|RainDance
+|turn|31
+|
+|switch|p1a: Slowbro|Slowbro, M|394\/394
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M|299\/299
+|
+|-weather|RainDance|[upkeep]
+|turn|32
+|
+|move|p2a: Tornadus-Therian|Hurricane|p1a: Slowbro
+|-damage|p1a: Slowbro|167\/394
+|-damage|p2a: Tornadus-Therian|270\/299|[from] item: Life Orb
+|move|p1a: Slowbro|Slack Off|p1a: Slowbro
+|-heal|p1a: Slowbro|364\/394
+|
+|-weather|RainDance|[upkeep]
+|turn|33
+|
+|move|p2a: Tornadus-Therian|Hurricane|p1a: Slowbro
+|-damage|p1a: Slowbro|152\/394
+|-damage|p2a: Tornadus-Therian|241\/299|[from] item: Life Orb
+|move|p1a: Slowbro|Slack Off|p1a: Slowbro
+|-heal|p1a: Slowbro|349\/394
+|
+|-weather|RainDance|[upkeep]
+|turn|34
+|
+|move|p2a: Tornadus-Therian|Hurricane|p1a: Slowbro
+|-damage|p1a: Slowbro|154\/394
+|-damage|p2a: Tornadus-Therian|212\/299|[from] item: Life Orb
+|move|p1a: Slowbro|Slack Off|p1a: Slowbro
+|-heal|p1a: Slowbro|351\/394
+|
+|-weather|RainDance|[upkeep]
+|turn|35
+|
+|move|p2a: Tornadus-Therian|U-turn|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|221\/394
+|-damage|p2a: Tornadus-Therian|183\/299|[from] item: Life Orb
+|
+|switch|p2a: Politoed|Politoed, F|182\/384 par
+|move|p1a: Slowbro|Slack Off|p1a: Slowbro
+|-heal|p1a: Slowbro|394\/394
+|
+|-weather|RainDance|[upkeep]
+|turn|36
+|
+|move|p1a: Slowbro|Psyshock|p2a: Politoed
+|-damage|p2a: Politoed|64\/384 par
+|move|p2a: Politoed|Toxic|p1a: Slowbro
+|-status|p1a: Slowbro|tox
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1a: Slowbro|370\/394 tox|[from] psn
+|turn|37
+|
+|switch|p1a: Jirachi|Jirachi|328\/403
+|switch|p2a: Ferrothorn|Ferrothorn, F|352\/352
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Jirachi|353\/403|[from] item: Leftovers
+|turn|38
+|
+|move|p1a: Jirachi|Stealth Rock|p2a: Ferrothorn
+|-sidestart|p2: Suicuninite|move: Stealth Rock
+|move|p2a: Ferrothorn|Stealth Rock|p1a: Jirachi
+|-sidestart|p1: alwayssleepy|move: Stealth Rock
+|
+|-weather|none
+|-heal|p1a: Jirachi|378\/403|[from] item: Leftovers
+|turn|39
+|
+|switch|p2a: Politoed|Politoed, F|64\/384 par
+|-damage|p2a: Politoed|16\/384 par|[from] Stealth Rock
+|-weather|RainDance
+|move|p1a: Jirachi|Fire Punch|p2a: Politoed
+|-resisted|p2a: Politoed
+|-damage|p2a: Politoed|0 fnt
+|faint|p2a: Politoed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Jirachi|403\/403|[from] item: Leftovers
+|
+|switch|p2a: Kingdra|Kingdra, M|291\/291
+|-damage|p2a: Kingdra|255\/291|[from] Stealth Rock
+|turn|40
+|
+|switch|p1a: Tyranitar|Tyranitar, M|154\/341
+|-damage|p1a: Tyranitar|112\/341|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p2a: Kingdra|Hydro Pump|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|-damage|p2a: Kingdra|226\/291|[from] item: Life Orb
+|faint|p1a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Kingdra|208\/291|[from] sandstorm
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-damage|p1a: Landorus-Therian|280\/319|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Kingdra
+|-unboost|p2a: Kingdra|atk|1
+|turn|41
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|352\/352
+|-damage|p2a: Ferrothorn|330\/352|[from] Stealth Rock
+|move|p1a: Landorus-Therian|U-turn|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|271\/352
+|-damage|p1a: Landorus-Therian|241\/319|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|
+|switch|p1a: Jirachi|Jirachi|403\/403
+|-damage|p1a: Jirachi|378\/403|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Jirachi|403\/403|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|293\/352|[from] item: Leftovers
+|turn|42
+|
+|move|p2a: Ferrothorn|Protect|p2a: Ferrothorn
+|-singleturn|p2a: Ferrothorn|Protect
+|move|p1a: Jirachi|Fire Punch|p2a: Ferrothorn
+|-activate|p2a: Ferrothorn|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Ferrothorn|315\/352|[from] item: Leftovers
+|turn|43
+|
+|move|p1a: Jirachi|Fire Punch|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|163\/352
+|-damage|p1a: Jirachi|353\/403|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|-status|p2a: Ferrothorn|brn
+|move|p2a: Ferrothorn|Leech Seed|p1a: Jirachi
+|-start|p1a: Jirachi|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Jirachi|378\/403|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|185\/352 brn|[from] item: Leftovers
+|-damage|p1a: Jirachi|328\/403|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|235\/352 brn|[silent]
+|-damage|p2a: Ferrothorn|191\/352 brn|[from] brn
+|turn|44
+|
+|switch|p1a: Clefable|Clefable, M|295\/394
+|-damage|p1a: Clefable|246\/394|[from] Stealth Rock
+|move|p2a: Ferrothorn|Leech Seed|p1a: Clefable
+|-start|p1a: Clefable|move: Leech Seed
+|
+|-weather|none
+|-heal|p1a: Clefable|270\/394|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|213\/352 brn|[from] item: Leftovers
+|-damage|p1a: Clefable|221\/394|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|262\/352 brn|[silent]
+|-damage|p2a: Ferrothorn|218\/352 brn|[from] brn
+|turn|45
+|
+|switch|p2a: Swampert|Swampert, F|366\/366
+|-damage|p2a: Swampert|344\/366|[from] Stealth Rock
+|move|p1a: Clefable|Heal Bell|p1a: Clefable
+|-cureteam|p1a: Clefable|[from] move: HealBell
+|
+|-heal|p1a: Clefable|245\/394|[from] item: Leftovers
+|-damage|p1a: Clefable|196\/394|[from] Leech Seed|[of] p2a: Swampert
+|-heal|p2a: Swampert|366\/366|[silent]
+|turn|46
+|
+|switch|p1a: Slowbro|Slowbro, M|394\/394
+|-damage|p1a: Slowbro|345\/394|[from] Stealth Rock
+|detailschange|p2a: Swampert|Swampert-Mega, F
+|-mega|p2a: Swampert|Swampert|Swampertite
+|move|p2a: Swampert|Rain Dance|p2a: Swampert
+|-weather|RainDance
+|
+|-weather|RainDance|[upkeep]
+|turn|47
+|
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M|282\/299
+|-damage|p2a: Tornadus-Therian|208\/299|[from] Stealth Rock
+|detailschange|p1a: Slowbro|Slowbro-Mega, M
+|-mega|p1a: Slowbro|Slowbro|Slowbronite
+|move|p1a: Slowbro|Calm Mind|p1a: Slowbro
+|-boost|p1a: Slowbro|spa|1
+|-boost|p1a: Slowbro|spd|1
+|
+|-weather|RainDance|[upkeep]
+|turn|48
+|
+|move|p2a: Tornadus-Therian|Hurricane|p1a: Slowbro
+|-damage|p1a: Slowbro|196\/394
+|-start|p1a: Slowbro|confusion
+|-damage|p2a: Tornadus-Therian|179\/299|[from] item: Life Orb
+|-activate|p1a: Slowbro|confusion
+|move|p1a: Slowbro|Scald|p2a: Tornadus-Therian
+|-crit|p2a: Tornadus-Therian
+|-damage|p2a: Tornadus-Therian|0 fnt
+|faint|p2a: Tornadus-Therian
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p2a: Kingdra|Kingdra, M|208\/291
+|-damage|p2a: Kingdra|172\/291|[from] Stealth Rock
+|turn|49
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|241\/319
+|-damage|p1a: Landorus-Therian|202\/319|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Kingdra
+|-unboost|p2a: Kingdra|atk|1
+|move|p2a: Kingdra|Draco Meteor|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|-unboost|p2a: Kingdra|spa|2
+|-damage|p2a: Kingdra|143\/291|[from] item: Life Orb
+|faint|p1a: Landorus-Therian
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p1a: Slowbro|Slowbro-Mega, M|196\/394
+|-damage|p1a: Slowbro|147\/394|[from] Stealth Rock
+|turn|50
+|
+|switch|p1a: Jirachi|Jirachi|328\/403
+|-damage|p1a: Jirachi|303\/403|[from] Stealth Rock
+|move|p2a: Kingdra|Draco Meteor|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|252\/403
+|-unboost|p2a: Kingdra|spa|2
+|-damage|p2a: Kingdra|114\/291|[from] item: Life Orb
+|
+|-weather|none
+|-heal|p1a: Jirachi|277\/403|[from] item: Leftovers
+|turn|51
+|
+|switch|p2a: Swampert|Swampert-Mega, F|366\/366
+|-damage|p2a: Swampert|344\/366|[from] Stealth Rock
+|move|p1a: Jirachi|Toxic|p2a: Swampert
+|-status|p2a: Swampert|tox
+|
+|-heal|p1a: Jirachi|302\/403|[from] item: Leftovers
+|-damage|p2a: Swampert|322\/366 tox|[from] psn
+|turn|52
+|
+|switch|p1a: Clefable|Clefable, M|196\/394
+|-damage|p1a: Clefable|147\/394|[from] Stealth Rock
+|move|p2a: Swampert|Rain Dance|p2a: Swampert
+|-weather|RainDance
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Clefable|171\/394|[from] item: Leftovers
+|-damage|p2a: Swampert|278\/366 tox|[from] psn
+|turn|53
+|
+|move|p2a: Swampert|Waterfall|p1a: Clefable
+|-damage|p1a: Clefable|0 fnt
+|faint|p1a: Clefable
+|
+|-weather|RainDance|[upkeep]
+|-damage|p2a: Swampert|212\/366 tox|[from] psn
+|
+|switch|p1a: Slowbro|Slowbro-Mega, M|147\/394
+|-damage|p1a: Slowbro|98\/394|[from] Stealth Rock
+|turn|54
+|c|âSuicuninite|gonna need a decent roll here
+|
+|move|p2a: Swampert|Earthquake|p1a: Slowbro
+|-damage|p1a: Slowbro|0 fnt
+|faint|p1a: Slowbro
+|
+|-weather|RainDance|[upkeep]
+|-damage|p2a: Swampert|124\/366 tox|[from] psn
+|c|âSuicuninite|ahh
+|-message|alwayssleepy forfeited.
+|leave|alwayssleepy
+|
+|win|Suicuninite
+|raw|Ladder updating...
+|player|p1
+|raw|alwayssleepy's rating: 1604 &rarr; <strong>1586<\/strong><br \/>(-18 for losing)
+|raw|Suicuninite's rating: 1635 &rarr; <strong>1654<\/strong><br \/>(+19 for winning)
+|leave|Suicuninite
+|player|p2
+|join|Suicuninite

@@ -1,0 +1,140 @@
+|join|bossboss
+|join|elwind
+|player|p1|bossboss|101
+|player|p2|elwind|101
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Celebi
+|poke|p1|Heracross, M
+|poke|p1|Uxie
+|poke|p1|Azumarill, M
+|poke|p1|Crawdaunt, F
+|poke|p1|Cresselia, F
+|poke|p2|Metagross
+|poke|p2|Slowbro, M
+|poke|p2|Raikou
+|poke|p2|Togekiss, M
+|poke|p2|Garchomp, F
+|poke|p2|Victini
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Uxie|Uxie|354\/354
+|switch|p2a: Garchomp|Garchomp, F|420\/420
+|turn|1
+|
+|move|p1a: Uxie|Magic Coat|p1a: Uxie
+|-singleturn|p1a: Uxie|move: Magic Coat
+|move|p2a: Garchomp|Dragon Tail|p1a: Uxie
+|-damage|p1a: Uxie|305\/354
+|drag|p1a: Cresselia|Cresselia, F|444\/444
+|
+|turn|2
+|
+|move|p2a: Garchomp|Stealth Rock|p1a: Cresselia
+|-sidestart|p1: bossboss|move: Stealth Rock
+|move|p1a: Cresselia|Ice Beam|p2a: Garchomp
+|-crit|p2a: Garchomp
+|-supereffective|p2a: Garchomp
+|-damage|p2a: Garchomp|44\/420
+|
+|turn|3
+|
+|switch|p2a: Metagross|Metagross|301\/301
+|switch|p1a: Uxie|Uxie|305\/354
+|-damage|p1a: Uxie|261\/354|[from] Stealth Rock
+|
+|turn|4
+|
+|detailschange|p2a: Metagross|Metagross-Mega
+|-mega|p2a: Metagross|Metagross|Metagrossite
+|move|p2a: Metagross|Substitute|p2a: Metagross
+|-start|p2a: Metagross|Substitute
+|-damage|p2a: Metagross|226\/301
+|move|p1a: Uxie|Stealth Rock|p2a: Metagross
+|-sidestart|p2: elwind|move: Stealth Rock
+|
+|turn|5
+|
+|move|p2a: Metagross|Power-Up Punch|p1a: Uxie
+|-resisted|p1a: Uxie
+|-damage|p1a: Uxie|242\/354
+|-boost|p2a: Metagross|atk|1
+|-enditem|p1a: Uxie|Red Card|[of] p2a: Metagross
+|drag|p2a: Garchomp|Garchomp, F|44\/420
+|-damage|p2a: Garchomp|18\/420|[from] Stealth Rock
+|move|p1a: Uxie|Trick Room|p1a: Uxie
+|-fieldstart|move: Trick Room|[of] p1a: Uxie
+|
+|turn|6
+|
+|move|p1a: Uxie|Memento|p2a: Garchomp
+|-unboost|p2a: Garchomp|atk|2
+|-unboost|p2a: Garchomp|spa|2
+|faint|p1a: Uxie
+|move|p2a: Garchomp|Dragon Tail|p1: Uxie|[notarget]
+|-notarget
+|
+|
+|switch|p1a: Azumarill|Azumarill, M|340\/340
+|-damage|p1a: Azumarill|298\/340|[from] Stealth Rock
+|turn|7
+|
+|move|p1a: Azumarill|Belly Drum|p1a: Azumarill
+|-damage|p1a: Azumarill|128\/340
+|-setboost|p1a: Azumarill|atk|6|[from] move: Belly Drum
+|-enditem|p1a: Azumarill|Sitrus Berry|[eat]
+|-heal|p1a: Azumarill|213\/340|[from] item: Sitrus Berry
+|move|p2a: Garchomp|Earthquake|p1a: Azumarill
+|-damage|p1a: Azumarill|146\/340
+|
+|turn|8
+|
+|move|p1a: Azumarill|Aqua Jet|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|-damage|p1a: Azumarill|104\/340|[from] ability: Rough Skin|[of] p2a: Garchomp
+|-damage|p1a: Azumarill|48\/340|[from] item: Rocky Helmet|[of] p2a: Garchomp
+|faint|p2a: Garchomp
+|
+|
+|switch|p2a: Togekiss|Togekiss, M|374\/374
+|-damage|p2a: Togekiss|281\/374|[from] Stealth Rock
+|turn|9
+|
+|move|p1a: Azumarill|Play Rough|p2a: Togekiss
+|-damage|p2a: Togekiss|0 fnt
+|faint|p2a: Togekiss
+|
+|-fieldend|move: Trick Room
+|
+|switch|p2a: Slowbro|Slowbro, M|394\/394
+|-damage|p2a: Slowbro|345\/394|[from] Stealth Rock
+|turn|10
+|c|âelwind|derp
+|
+|move|p1a: Azumarill|Knock Off|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|0 fnt
+|-enditem|p2a: Slowbro|Leftovers|[from] move: Knock Off|[of] p1a: Azumarill
+|faint|p2a: Slowbro
+|
+|-message|elwind forfeited.
+|
+|win|bossboss
+|raw|Ladder updating...
+|leave|elwind
+|player|p2
+|raw|bossboss's rating: 1567 &rarr; <strong>1591<\/strong><br \/>(+24 for winning)
+|raw|elwind's rating: 1635 &rarr; <strong>1611<\/strong><br \/>(-24 for losing)

@@ -1,0 +1,467 @@
+|join|Tradekaiser
+|join|Dghhdh
+|player|p1|Tradekaiser|99
+|player|p2|Dghhdh|102
+|gametype|singles
+|tier|OU (No Stealth Rock)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Ninetales, M
+|poke|p1|Volcarona, F
+|poke|p1|Dragonite, F
+|poke|p1|Venusaur, M
+|poke|p1|Charizard, M
+|poke|p1|Archeops, F
+|poke|p2|Jirachi
+|poke|p2|Politoed, F
+|poke|p2|Garchomp, M
+|poke|p2|Volcarona, F
+|poke|p2|Rotom-Wash
+|poke|p2|Toxicroak, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Dragonite|Dragonite, F|324\/324
+|switch|p2a: Garchomp|Garchomp, M|358\/358
+|turn|1
+|callback|decision
+|
+|move|p2a: Garchomp|Dragon Claw|p1a: Dragonite
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|167\/324
+|move|p1a: Dragonite|Outrage|p2a: Garchomp
+|-supereffective|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|-damage|p1a: Dragonite|127\/324|[from] ability: Rough Skin|[of] p2a: Garchomp
+|faint|p2a: Garchomp
+|
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi|397\/397
+|turn|2
+|callback|decision
+|
+|move|p1a: Dragonite|Outrage|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|208\/397
+|move|p2a: Jirachi|Ice Punch|p1a: Dragonite
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|0 fnt
+|faint|p1a: Dragonite
+|
+|-heal|p2a: Jirachi|232\/397|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Ninetales|Ninetales, M|350\/350
+|-weather|SunnyDay|[from] ability: Drought|[of] p1a: Ninetales
+|turn|3
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, F|377\/377
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|move|p1a: Ninetales|Flamethrower|p2a: Politoed
+|-resisted|p2a: Politoed
+|-damage|p2a: Politoed|356\/377
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|377\/377|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p1a: Ninetales|Sunny Day|p1a: Ninetales
+|-weather|SunnyDay
+|move|p2a: Politoed|Toxic|p1a: Ninetales|[miss]
+|-miss|p2a: Politoed|p1a: Ninetales
+|
+|-weather|SunnyDay|[upkeep]
+|turn|5
+|callback|decision
+|
+|move|p1a: Ninetales|Hypnosis|p2a: Politoed
+|-status|p2a: Politoed|slp
+|cant|p2a: Politoed|slp
+|
+|-weather|SunnyDay|[upkeep]
+|turn|6
+|callback|decision
+|
+|switch|p1a: Venusaur|Venusaur, M|364\/364
+|switch|p2a: Rotom-Wash|Rotom-Wash|241\/241
+|
+|-weather|SunnyDay|[upkeep]
+|turn|7
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Trick|p1a: Venusaur
+|-activate|p2a: Rotom-Wash|move: Trick|[of] p1a: Venusaur
+|-item|p1a: Venusaur|Choice Scarf|[from] move: Trick
+|-item|p2a: Rotom-Wash|Black Sludge|[from] move: Trick
+|move|p1a: Venusaur|Substitute|p1a: Venusaur
+|-start|p1a: Venusaur|Substitute
+|-damage|p1a: Venusaur|273\/364
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p2a: Rotom-Wash|211\/241|[from] item: Black Sludge
+|turn|8
+|callback|decision
+|
+|switch|p1a: Ninetales|Ninetales, M|350\/350
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Ninetales
+|-damage|p1a: Ninetales|245\/350
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, F|377\/377 slp
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Ninetales|266\/350|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p1a: Volcarona|Volcarona, F|311\/311
+|switch|p2a: Volcarona|Volcarona, F|312\/312
+|
+|-weather|RainDance|[upkeep]
+|turn|10
+|callback|decision
+|
+|switch|p1a: Archeops|Archeops, F|291\/291
+|move|p2a: Volcarona|Fiery Dance|p1a: Archeops
+|-resisted|p1a: Archeops
+|-damage|p1a: Archeops|227\/291
+|-boost|p2a: Volcarona|spa|1
+|
+|-weather|RainDance|[upkeep]
+|turn|11
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi|232\/397
+|move|p1a: Archeops|Stone Edge|p2a: Jirachi
+|-crit|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|58\/397
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Jirachi|82\/397|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Archeops|Earth Power|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|faint|p2a: Jirachi
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|211\/241
+|turn|13
+|callback|decision
+|
+|move|p1a: Archeops|Acrobatics|p2a: Rotom-Wash
+|-enditem|p1a: Archeops|Flying Gem|[from] gem|[move] Acrobatics
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|73\/241
+|move|p2a: Rotom-Wash|Thunderbolt|p1a: Archeops
+|-supereffective|p1a: Archeops
+|-damage|p1a: Archeops|0 fnt
+|faint|p1a: Archeops
+|
+|-weather|RainDance|[upkeep]
+|-damage|p2a: Rotom-Wash|43\/241|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p1a: Ninetales|Ninetales, M|266\/350
+|-weather|SunnyDay|[from] ability: Drought|[of] p1a: Ninetales
+|turn|14
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Trick|p1a: Ninetales
+|-activate|p2a: Rotom-Wash|move: Trick|[of] p1a: Ninetales
+|-item|p1a: Ninetales|Black Sludge|[from] move: Trick
+|-item|p2a: Rotom-Wash|Leftovers|[from] move: Trick
+|move|p1a: Ninetales|Flamethrower|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Ninetales|223\/350|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, F|377\/377 slp
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|turn|15
+|callback|decision
+|
+|switch|p1a: Venusaur|Venusaur, M|273\/364
+|cant|p2a: Politoed|slp
+|
+|-weather|RainDance|[upkeep]
+|turn|16
+|callback|decision
+|
+|switch|p2a: Volcarona|Volcarona, F|312\/312
+|move|p1a: Venusaur|Leech Seed|p2a: Volcarona
+|-start|p2a: Volcarona|move: Leech Seed
+|
+|-weather|RainDance|[upkeep]
+|-damage|p2a: Volcarona|273\/312|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|312\/364|[silent]
+|turn|17
+|callback|decision
+|
+|switch|p1a: Ninetales|Ninetales, M|223\/350
+|-weather|SunnyDay|[from] ability: Drought|[of] p1a: Ninetales
+|move|p2a: Volcarona|Bug Buzz|p1a: Ninetales
+|-resisted|p1a: Ninetales
+|-damage|p1a: Ninetales|126\/350
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Volcarona|292\/312|[from] item: Leftovers
+|-damage|p1a: Ninetales|83\/350|[from] item: Black Sludge
+|-damage|p2a: Volcarona|253\/312|[from] Leech Seed|[of] p1a: Ninetales
+|-heal|p1a: Ninetales|122\/350|[silent]
+|turn|18
+|callback|decision
+|
+|switch|p1a: Venusaur|Venusaur, M|312\/364
+|move|p2a: Volcarona|Bug Buzz|p1a: Venusaur
+|-damage|p1a: Venusaur|189\/364
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Volcarona|272\/312|[from] item: Leftovers
+|-damage|p2a: Volcarona|233\/312|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|228\/364|[silent]
+|turn|19
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, F|377\/377 slp
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|move|p1a: Venusaur|Leech Seed|p2a: Politoed
+|-start|p2a: Politoed|move: Leech Seed
+|
+|-weather|RainDance|[upkeep]
+|-damage|p2a: Politoed|330\/377 slp|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|275\/364|[silent]
+|turn|20
+|callback|decision
+|
+|switch|p1a: Ninetales|Ninetales, M|122\/350
+|-weather|SunnyDay|[from] ability: Drought|[of] p1a: Ninetales
+|cant|p2a: Politoed|slp
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Ninetales|79\/350|[from] item: Black Sludge
+|-heal|p2a: Politoed|353\/377 slp|[from] item: Leftovers
+|-damage|p2a: Politoed|306\/377 slp|[from] Leech Seed|[of] p1a: Ninetales
+|-heal|p1a: Ninetales|126\/350|[silent]
+|turn|21
+|callback|decision
+|
+|move|p1a: Ninetales|Hidden Power|p2a: Politoed
+|-damage|p2a: Politoed|262\/377 slp
+|cant|p2a: Politoed|slp
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Ninetales|83\/350|[from] item: Black Sludge
+|-heal|p2a: Politoed|285\/377 slp|[from] item: Leftovers
+|-damage|p2a: Politoed|238\/377 slp|[from] Leech Seed|[of] p1a: Ninetales
+|-heal|p1a: Ninetales|130\/350|[silent]
+|turn|22
+|callback|decision
+|
+|switch|p1a: Charizard|Charizard, M|297\/297
+|-curestatus|p2a: Politoed|slp
+|move|p2a: Politoed|Scald|p1a: Charizard
+|-supereffective|p1a: Charizard
+|-damage|p1a: Charizard|195\/297
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Charizard|158\/297|[from] ability: Solar Power
+|-heal|p2a: Politoed|261\/377|[from] item: Leftovers
+|-damage|p2a: Politoed|214\/377|[from] Leech Seed|[of] p1a: Charizard
+|-heal|p1a: Charizard|205\/297|[silent]
+|turn|23
+|callback|decision
+|
+|switch|p2a: Volcarona|Volcarona, F|233\/312
+|move|p1a: Charizard|Air Slash|p2a: Volcarona
+|-supereffective|p2a: Volcarona
+|-damage|p2a: Volcarona|0 fnt
+|faint|p2a: Volcarona
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Charizard|168\/297|[from] ability: Solar Power
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, F|214\/377
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|turn|24
+|callback|decision
+|
+|move|p1a: Charizard|Air Slash|p2a: Politoed
+|-damage|p2a: Politoed|48\/377
+|move|p2a: Politoed|Scald|p1a: Charizard
+|-supereffective|p1a: Charizard
+|-damage|p1a: Charizard|0 fnt
+|faint|p1a: Charizard
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|71\/377|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Venusaur|Venusaur, M|275\/364
+|turn|25
+|callback|decision
+|
+|move|p2a: Politoed|Protect|p2a: Politoed
+|-singleturn|p2a: Politoed|Protect
+|move|p1a: Venusaur|Leech Seed|p2a: Politoed
+|-activate|p2a: Politoed|Protect
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|94\/377|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|move|p1a: Venusaur|Leech Seed|p2a: Politoed
+|-start|p2a: Politoed|move: Leech Seed
+|move|p2a: Politoed|Scald|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|225\/364
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|117\/377|[from] item: Leftovers
+|-damage|p2a: Politoed|70\/377|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|272\/364|[silent]
+|turn|27
+|callback|decision
+|
+|switch|p2a: Toxicroak|Toxicroak, F|370\/370
+|move|p1a: Venusaur|Leech Seed|p2a: Toxicroak
+|-start|p2a: Toxicroak|move: Leech Seed
+|
+|-weather|RainDance|[upkeep]
+|-damage|p2a: Toxicroak|324\/370|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|318\/364|[silent]
+|turn|28
+|callback|decision
+|
+|move|p1a: Venusaur|Leech Seed|p2a: Toxicroak|[miss]
+|-miss|p1a: Venusaur|p2a: Toxicroak
+|move|p2a: Toxicroak|Drain Punch|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|219\/364
+|-heal|p2a: Toxicroak|370\/370|[from] drain|[of] p1a: Venusaur
+|-damage|p2a: Toxicroak|333\/370|[from] item: Life Orb
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Toxicroak|370\/370|[from] ability: Dry Skin
+|-damage|p2a: Toxicroak|324\/370|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|265\/364|[silent]
+|turn|29
+|callback|decision
+|
+|switch|p1a: Volcarona|Volcarona, F|311\/311
+|move|p2a: Toxicroak|Swords Dance|p2a: Toxicroak
+|-boost|p2a: Toxicroak|atk|2
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Toxicroak|370\/370|[from] ability: Dry Skin
+|-damage|p2a: Toxicroak|324\/370|[from] Leech Seed|[of] p1a: Volcarona
+|turn|30
+|callback|decision
+|
+|move|p1a: Volcarona|Fiery Dance|p2a: Toxicroak
+|-damage|p2a: Toxicroak|168\/370
+|-damage|p1a: Volcarona|280\/311|[from] item: Life Orb
+|move|p2a: Toxicroak|Drain Punch|p1a: Volcarona
+|-resisted|p1a: Volcarona
+|-damage|p1a: Volcarona|32\/311
+|-heal|p2a: Toxicroak|292\/370|[from] drain|[of] p1a: Volcarona
+|-damage|p2a: Toxicroak|255\/370|[from] item: Life Orb
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Toxicroak|301\/370|[from] ability: Dry Skin
+|-damage|p2a: Toxicroak|255\/370|[from] Leech Seed|[of] p1a: Volcarona
+|-heal|p1a: Volcarona|78\/311|[silent]
+|turn|31
+|callback|decision
+|
+|move|p1a: Volcarona|Fiery Dance|p2a: Toxicroak
+|-damage|p2a: Toxicroak|86\/370
+|-boost|p1a: Volcarona|spa|1
+|-damage|p1a: Volcarona|47\/311|[from] item: Life Orb
+|move|p2a: Toxicroak|Drain Punch|p1a: Volcarona
+|-resisted|p1a: Volcarona
+|-damage|p1a: Volcarona|0 fnt
+|-heal|p2a: Toxicroak|110\/370|[from] drain|[of] p1a: Volcarona
+|-damage|p2a: Toxicroak|73\/370|[from] item: Life Orb
+|faint|p1a: Volcarona
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Toxicroak|119\/370|[from] ability: Dry Skin
+|callback|decision
+|
+|switch|p1a: Venusaur|Venusaur, M|265\/364
+|turn|32
+|callback|decision
+|
+|move|p1a: Venusaur|Hidden Power|p2a: Toxicroak
+|-damage|p2a: Toxicroak|73\/370
+|move|p2a: Toxicroak|Drain Punch|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|78\/364
+|-heal|p2a: Toxicroak|167\/370|[from] drain|[of] p1a: Venusaur
+|-damage|p2a: Toxicroak|130\/370|[from] item: Life Orb
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Toxicroak|176\/370|[from] ability: Dry Skin
+|-damage|p2a: Toxicroak|130\/370|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|124\/364|[silent]
+|turn|33
+|callback|decision
+|
+|switch|p1a: Ninetales|Ninetales, M|130\/350
+|-weather|SunnyDay|[from] ability: Drought|[of] p1a: Ninetales
+|move|p2a: Toxicroak|Drain Punch|p1a: Ninetales
+|-damage|p1a: Ninetales|0 fnt
+|-heal|p2a: Toxicroak|195\/370|[from] drain|[of] p1a: Ninetales
+|-damage|p2a: Toxicroak|158\/370|[from] item: Life Orb
+|faint|p1a: Ninetales
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p2a: Toxicroak|112\/370|[from] ability: Dry Skin
+|callback|decision
+|
+|switch|p1a: Venusaur|Venusaur, M|124\/364
+|turn|34
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, F|70\/377
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|move|p1a: Venusaur|Hidden Power|p2a: Politoed
+|-resisted|p2a: Politoed
+|-damage|p2a: Politoed|57\/377
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|80\/377|[from] item: Leftovers
+|turn|35
+|callback|decision
+|-message|Tradekaiser forfeited.
+|
+|win|Dghhdh
+|raw|Ladder updating...
+|leave|Tradekaiser
+|player|p1
+|raw|Tradekaiser's rating: 1687 &rarr; <strong>1645<\/strong><br \/>(-42 for losing)
+|raw|Dghhdh's rating: 1007 &rarr; <strong>1495<\/strong><br \/>(+488 for winning)

@@ -1,0 +1,219 @@
+|join|everydaydoug
+|join|bange
+|player|p1|everydaydoug|169
+|player|p2|bange|142
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Swampert, M
+|poke|p1|Conkeldurr, F
+|poke|p1|Gengar, M
+|poke|p1|Sceptile, F
+|poke|p1|Aggron, F
+|poke|p1|Hydreigon, F
+|poke|p2|Steelix, M
+|poke|p2|Heracross, M
+|poke|p2|Latias, F
+|poke|p2|Rotom-Mow
+|poke|p2|Mantine, F, shiny
+|poke|p2|Claydol
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Swampert|Swampert, M|404\/404
+|switch|p2a: Rotom-Mow|Rotom-Mow|242\/242
+|turn|1
+|callback|decision
+|
+|move|p2a: Rotom-Mow|Trick|p1a: Swampert
+|-activate|p2a: Rotom-Mow|move: Trick|[of] p1a: Swampert
+|-item|p1a: Swampert|Choice Scarf|[from] move: Trick
+|-item|p2a: Rotom-Mow|Leftovers|[from] move: Trick
+|move|p1a: Swampert|Stealth Rock|p2a: Rotom-Mow
+|-sidestart|p2: bange|move: Stealth Rock
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Sceptile|Sceptile, F|282\/282
+|move|p2a: Rotom-Mow|Volt Switch|p1a: Sceptile
+|-resisted|p1a: Sceptile
+|-damage|p1a: Sceptile|210\/282
+|callback|decision
+|
+|switch|p2a: Heracross|Heracross, M|306\/306
+|-damage|p2a: Heracross|268\/306|[from] Stealth Rock
+|
+|turn|3
+|callback|decision
+|
+|switch|p1a: Swampert|Swampert, M|404\/404
+|move|p2a: Heracross|Stone Edge|p1a: Swampert
+|-resisted|p1a: Swampert
+|-damage|p1a: Swampert|334\/404
+|
+|turn|4
+|callback|decision
+|
+|switch|p2a: Mantine|Mantine, F, shiny|334\/334
+|-damage|p2a: Mantine|251\/334|[from] Stealth Rock
+|move|p1a: Swampert|Hydro Pump|p2a: Mantine
+|-heal|p2a: Mantine|334\/334|[from] ability: Water Absorb|[of] p1a: Swampert
+|
+|turn|5
+|callback|decision
+|
+|switch|p1a: Aggron|Aggron, F|281\/281
+|-item|p1a: Aggron|Air Balloon
+|move|p2a: Mantine|Toxic|p1a: Aggron
+|-fail|p1a: Aggron
+|
+|turn|6
+|callback|decision
+|
+|switch|p2a: Steelix|Steelix, M|354\/354
+|-damage|p2a: Steelix|343\/354|[from] Stealth Rock
+|move|p1a: Aggron|Head Smash|p2a: Steelix
+|-resisted|p2a: Steelix
+|-damage|p2a: Steelix|318\/354
+|-damage|p1a: Aggron|268\/281|[from] recoil|[of] p2a: Steelix
+|-damage|p1a: Aggron|222\/281|[from] item: Rocky Helmet|[of] p2a: Steelix
+|
+|turn|7
+|callback|decision
+|
+|move|p1a: Aggron|Superpower|p2a: Steelix
+|-supereffective|p2a: Steelix
+|-damage|p2a: Steelix|190\/354
+|-damage|p1a: Aggron|176\/281|[from] item: Rocky Helmet|[of] p2a: Steelix
+|-unboost|p1a: Aggron|atk|1
+|-unboost|p1a: Aggron|def|1
+|move|p2a: Steelix|Stealth Rock|p1a: Aggron
+|-sidestart|p1: everydaydoug|move: Stealth Rock
+|
+|turn|8
+|callback|decision
+|
+|switch|p1a: Conkeldurr|Conkeldurr, F|414\/414
+|-damage|p1a: Conkeldurr|389\/414|[from] Stealth Rock
+|switch|p2a: Claydol|Claydol|324\/324
+|-damage|p2a: Claydol|304\/324|[from] Stealth Rock
+|
+|turn|9
+|callback|decision
+|
+|switch|p1a: Sceptile|Sceptile, F|210\/282
+|-damage|p1a: Sceptile|175\/282|[from] Stealth Rock
+|move|p2a: Claydol|Rapid Spin|p1a: Sceptile
+|-damage|p1a: Sceptile|157\/282
+|-sideend|p2: bange|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Claydol
+|
+|turn|10
+|callback|decision
+|
+|switch|p2a: Mantine|Mantine, F, shiny|334\/334
+|move|p1a: Sceptile|Hidden Power|p2a: Mantine
+|-damage|p2a: Mantine|271\/334
+|
+|turn|11
+|callback|decision
+|
+|switch|p1a: Aggron|Aggron, F|176\/281
+|-damage|p1a: Aggron|159\/281|[from] Stealth Rock
+|-item|p1a: Aggron|Air Balloon
+|move|p2a: Mantine|Scald|p1a: Aggron
+|-supereffective|p1a: Aggron
+|-damage|p1a: Aggron|0 fnt
+|-enditem|p1a: Aggron|Air Balloon
+|faint|p1a: Aggron
+|
+|callback|decision
+|
+|switch|p1a: Hydreigon|Hydreigon, F|326\/326
+|-damage|p1a: Hydreigon|286\/326|[from] Stealth Rock
+|turn|12
+|callback|decision
+|
+|move|p2a: Mantine|Protect|p2a: Mantine
+|-singleturn|p2a: Mantine|Protect
+|move|p1a: Hydreigon|Draco Meteor|p2a: Mantine
+|-activate|p2a: Mantine|Protect
+|
+|turn|13
+|callback|decision
+|
+|move|p1a: Hydreigon|Draco Meteor|p2a: Mantine
+|-damage|p2a: Mantine|63\/334
+|-unboost|p1a: Hydreigon|spa|2
+|-damage|p1a: Hydreigon|254\/326|[from] item: Life Orb
+|move|p2a: Mantine|Aqua Ring|p2a: Mantine
+|-start|p2a: Mantine|Aqua Ring
+|
+|-heal|p2a: Mantine|83\/334|[from] Aqua Ring
+|turn|14
+|callback|decision
+|
+|move|p2a: Mantine|Protect|p2a: Mantine
+|-singleturn|p2a: Mantine|Protect
+|move|p1a: Hydreigon|Draco Meteor|p2a: Mantine
+|-activate|p2a: Mantine|Protect
+|
+|-heal|p2a: Mantine|103\/334|[from] Aqua Ring
+|turn|15
+|callback|decision
+|
+|move|p1a: Hydreigon|Draco Meteor|p2a: Mantine
+|-damage|p2a: Mantine|12\/334
+|-unboost|p1a: Hydreigon|spa|2
+|-damage|p1a: Hydreigon|222\/326|[from] item: Life Orb
+|move|p2a: Mantine|Scald|p1a: Hydreigon
+|-resisted|p1a: Hydreigon
+|-damage|p1a: Hydreigon|181\/326
+|
+|-heal|p2a: Mantine|32\/334|[from] Aqua Ring
+|turn|16
+|callback|decision
+|
+|move|p2a: Mantine|Protect|p2a: Mantine
+|-singleturn|p2a: Mantine|Protect
+|move|p1a: Hydreigon|Draco Meteor|p2a: Mantine
+|-activate|p2a: Mantine|Protect
+|
+|-heal|p2a: Mantine|52\/334|[from] Aqua Ring
+|turn|17
+|callback|decision
+|
+|switch|p2a: Claydol|Claydol|304\/324
+|move|p1a: Hydreigon|Draco Meteor|p2a: Claydol
+|-damage|p2a: Claydol|213\/324
+|-unboost|p1a: Hydreigon|spa|2
+|-damage|p1a: Hydreigon|149\/326|[from] item: Life Orb
+|
+|turn|18
+|callback|decision
+|
+|switch|p1a: Sceptile|Sceptile, F|157\/282
+|-damage|p1a: Sceptile|122\/282|[from] Stealth Rock
+|move|p2a: Claydol|Ice Beam|p1a: Sceptile
+|-supereffective|p1a: Sceptile
+|-damage|p1a: Sceptile|0 fnt
+|faint|p1a: Sceptile
+|
+|callback|decision
+|-message|everydaydoug forfeited.
+|
+|win|bange
+|raw|Ladder updating...
+|raw|everydaydoug's rating: 1450 &rarr; <strong>1448<\/strong><br \/>(-2 for losing)
+|raw|bange's rating: 1764 &rarr; <strong>1771<\/strong><br \/>(+7 for winning)
+|leave|everydaydoug
+|player|p1

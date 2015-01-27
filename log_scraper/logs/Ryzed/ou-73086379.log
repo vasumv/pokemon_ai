@@ -1,0 +1,387 @@
+|join|M_Iafrate
+|join|Ryzed
+|player|p1|M_Iafrate|76
+|player|p2|Ryzed|169
+|gametype|singles
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Weavile, M
+|poke|p1|Genesect
+|poke|p1|Rotom-Wash
+|poke|p1|Victini
+|poke|p1|Gliscor, F
+|poke|p1|Swampert, M
+|poke|p2|Pinsir, F
+|poke|p2|Clefable, F
+|poke|p2|Heatran, F
+|poke|p2|Excadrill, F
+|poke|p2|Slowbro, M
+|poke|p2|Rotom-Wash
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|switch|p2a: Rotom-Wash|Rotom-Wash|251\/251
+|turn|1
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Rotom-Wash
+|-status|p1a: Rotom-Wash|brn
+|move|p1a: Rotom-Wash|Confuse Ray|p2a: Rotom-Wash
+|-start|p2a: Rotom-Wash|confusion
+|
+|-damage|p1a: Rotom-Wash|266\/304 brn|[from] brn
+|turn|2
+|callback|decision
+|
+|switch|p2a: Excadrill|Excadrill, F|369\/369
+|-ability|p2a: Excadrill|Mold Breaker
+|-item|p2a: Excadrill|Air Balloon
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Excadrill
+|-status|p2a: Excadrill|brn
+|
+|-heal|p1a: Rotom-Wash|285\/304 brn|[from] item: Leftovers
+|-damage|p2a: Excadrill|323\/369 brn|[from] brn
+|-damage|p1a: Rotom-Wash|247\/304 brn|[from] brn
+|turn|3
+|callback|decision
+|
+|switch|p1a: Swampert|Swampert, M|404\/404
+|move|p2a: Excadrill|Earthquake|p1a: Swampert
+|-damage|p1a: Swampert|311\/404
+|
+|-heal|p1a: Swampert|336\/404|[from] item: Leftovers
+|-damage|p2a: Excadrill|277\/369 brn|[from] brn
+|turn|4
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|251\/251
+|move|p1a: Swampert|Stealth Rock|p2a: Rotom-Wash
+|-sidestart|p2: Ryzed|move: Stealth Rock
+|
+|-heal|p1a: Swampert|361\/404|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|247\/304 brn
+|move|p2a: Rotom-Wash|Trick|p1a: Rotom-Wash
+|-activate|p2a: Rotom-Wash|move: Trick|[of] p1a: Rotom-Wash
+|-item|p1a: Rotom-Wash|Choice Scarf|[from] move: Trick
+|-item|p2a: Rotom-Wash|Leftovers|[from] move: Trick
+|
+|-damage|p1a: Rotom-Wash|209\/304 brn|[from] brn
+|turn|6
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Thunderbolt|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|137\/251
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|133\/304 brn
+|callback|decision
+|
+|switch|p2a: Excadrill|Excadrill, F|277\/369 brn
+|-damage|p2a: Excadrill|266\/369 brn|[from] Stealth Rock
+|-ability|p2a: Excadrill|Mold Breaker
+|-item|p2a: Excadrill|Air Balloon
+|
+|-damage|p1a: Rotom-Wash|95\/304 brn|[from] brn
+|-damage|p2a: Excadrill|220\/369 brn|[from] brn
+|turn|7
+|callback|decision
+|
+|switch|p1a: Gliscor|Gliscor, F|337\/337
+|move|p2a: Excadrill|Rapid Spin|p1a: Gliscor
+|-damage|p1a: Gliscor|327\/337
+|-sideend|p2: Ryzed|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Excadrill
+|
+|-damage|p2a: Excadrill|174\/369 brn|[from] brn
+|-activate|p1a: Gliscor|item: Toxic Orb
+|-status|p1a: Gliscor|tox
+|turn|8
+|callback|decision
+|
+|switch|p2a: Clefable|Clefable, F|394\/394
+|move|p1a: Gliscor|Aerial Ace|p2a: Clefable
+|-damage|p2a: Clefable|294\/394
+|
+|-heal|p1a: Gliscor|337\/337 tox|[from] ability: Poison Heal
+|turn|9
+|callback|decision
+|
+|move|p1a: Gliscor|Earthquake|p2a: Clefable
+|-damage|p2a: Clefable|120\/394
+|move|p2a: Clefable|Soft-Boiled|p2a: Clefable
+|-heal|p2a: Clefable|317\/394
+|
+|turn|10
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|137\/251
+|move|p1a: Gliscor|Swords Dance|p1a: Gliscor
+|-boost|p1a: Gliscor|atk|2
+|
+|-heal|p2a: Rotom-Wash|152\/251|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p1a: Swampert|Swampert, M|361\/404
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Swampert
+|-damage|p1a: Swampert|171\/404
+|
+|-heal|p2a: Rotom-Wash|167\/251|[from] item: Leftovers
+|-heal|p1a: Swampert|196\/404|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Swampert
+|-damage|p1a: Swampert|16\/404
+|move|p1a: Swampert|Stealth Rock|p2a: Rotom-Wash
+|-sidestart|p2: Ryzed|move: Stealth Rock
+|
+|-heal|p2a: Rotom-Wash|182\/251|[from] item: Leftovers
+|-heal|p1a: Swampert|41\/404|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|95\/304 brn
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|35\/304 brn
+|
+|-heal|p2a: Rotom-Wash|197\/251|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|0 fnt|[from] brn
+|faint|p1a: Rotom-Wash
+|callback|decision
+|
+|switch|p1a: Victini|Victini|341\/341
+|turn|14
+|callback|decision
+|
+|move|p1a: Victini|Zen Headbutt|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|57\/251
+|-damage|p1a: Victini|307\/341|[from] item: Life Orb
+|cant|p2a: Rotom-Wash|flinch
+|
+|-heal|p2a: Rotom-Wash|72\/251|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, F|339\/339
+|-damage|p2a: Heatran|297\/339|[from] Stealth Rock
+|move|p1a: Victini|Zen Headbutt|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|228\/339
+|-damage|p1a: Victini|273\/341|[from] item: Life Orb
+|
+|-heal|p2a: Heatran|249\/339|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p1a: Gliscor|Gliscor, F|337\/337 tox
+|move|p2a: Heatran|Stealth Rock|p1a: Gliscor
+|-sidestart|p1: M_Iafrate|move: Stealth Rock
+|
+|-heal|p2a: Heatran|270\/339|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|72\/251
+|-damage|p2a: Rotom-Wash|41\/251|[from] Stealth Rock
+|move|p1a: Gliscor|Aerial Ace|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|393\/393
+|-damage|p2a: Slowbro|344\/393|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|switch|p1a: Weavile|Weavile, M|282\/282
+|-damage|p1a: Weavile|212\/282|[from] Stealth Rock
+|move|p2a: Slowbro|Ice Beam|p1a: Weavile
+|-resisted|p1a: Weavile
+|-damage|p1a: Weavile|172\/282
+|
+|turn|19
+|callback|decision
+|
+|move|p1a: Weavile|Night Slash|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|114\/393
+|move|p2a: Slowbro|Fire Blast|p1a: Weavile
+|-supereffective|p1a: Weavile
+|-damage|p1a: Weavile|0 fnt
+|faint|p1a: Weavile
+|
+|callback|decision
+|
+|switch|p1a: Gliscor|Gliscor, F|337\/337 tox
+|-damage|p1a: Gliscor|295\/337 tox|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|switch|p2a: Excadrill|Excadrill, F|174\/369 brn
+|-damage|p2a: Excadrill|163\/369 brn|[from] Stealth Rock
+|-ability|p2a: Excadrill|Mold Breaker
+|-item|p2a: Excadrill|Air Balloon
+|move|p1a: Gliscor|Earthquake|p2a: Excadrill
+|-immune|p2a: Excadrill|[msg]
+|
+|-damage|p2a: Excadrill|117\/369 brn|[from] brn
+|-heal|p1a: Gliscor|337\/337 tox|[from] ability: Poison Heal
+|turn|21
+|callback|decision
+|
+|move|p2a: Excadrill|Rapid Spin|p1a: Gliscor
+|-damage|p1a: Gliscor|326\/337 tox
+|-sideend|p2: Ryzed|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Excadrill
+|move|p1a: Gliscor|Swords Dance|p1a: Gliscor
+|-boost|p1a: Gliscor|atk|2
+|
+|-damage|p2a: Excadrill|71\/369 brn|[from] brn
+|-heal|p1a: Gliscor|337\/337 tox|[from] ability: Poison Heal
+|turn|22
+|callback|decision
+|
+|move|p2a: Excadrill|Rock Slide|p1a: Gliscor
+|-damage|p1a: Gliscor|296\/337 tox
+|move|p1a: Gliscor|Aerial Ace|p2a: Excadrill
+|-resisted|p2a: Excadrill
+|-damage|p2a: Excadrill|0 fnt
+|-enditem|p2a: Excadrill|Air Balloon
+|faint|p2a: Excadrill
+|
+|-heal|p1a: Gliscor|337\/337 tox|[from] ability: Poison Heal
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|245\/393
+|turn|23
+|callback|decision
+|
+|switch|p2a: Clefable|Clefable, F|317\/394
+|move|p1a: Gliscor|Earthquake|p2a: Clefable
+|-damage|p2a: Clefable|0 fnt
+|faint|p2a: Clefable
+|
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|376\/393
+|turn|24
+|callback|decision
+|
+|switch|p1a: Victini|Victini|273\/341
+|-damage|p1a: Victini|188\/341|[from] Stealth Rock
+|move|p2a: Slowbro|Ice Beam|p1a: Victini
+|-resisted|p1a: Victini
+|-damage|p1a: Victini|155\/341
+|
+|turn|25
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, F|270\/339
+|move|p1a: Victini|Bolt Strike|p2a: Heatran
+|-damage|p2a: Heatran|102\/339
+|-status|p2a: Heatran|par
+|-damage|p1a: Victini|121\/341|[from] item: Life Orb
+|
+|-heal|p2a: Heatran|123\/339 par|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|move|p1a: Victini|Bolt Strike|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|-damage|p1a: Victini|87\/341|[from] item: Life Orb
+|faint|p2a: Heatran
+|
+|callback|decision
+|
+|switch|p2a: Pinsir|Pinsir, F|272\/272
+|turn|27
+|callback|decision
+|
+|-formechange|p2a: Pinsir|Pinsir-Mega
+|message|Pinsir has Mega Evolved into Mega Pinsir!
+|move|p2a: Pinsir|Quick Attack|p1a: Victini
+|-damage|p1a: Victini|0 fnt
+|faint|p1a: Victini
+|
+|callback|decision
+|
+|switch|p1a: Gliscor|Gliscor, F|337\/337 tox
+|-damage|p1a: Gliscor|295\/337 tox|[from] Stealth Rock
+|turn|28
+|callback|decision
+|
+|move|p2a: Pinsir|Swords Dance|p2a: Pinsir
+|-boost|p2a: Pinsir|atk|2
+|move|p1a: Gliscor|Aerial Ace|p2a: Pinsir
+|-supereffective|p2a: Pinsir
+|-damage|p2a: Pinsir|108\/272
+|
+|-heal|p1a: Gliscor|337\/337 tox|[from] ability: Poison Heal
+|turn|29
+|callback|decision
+|
+|move|p2a: Pinsir|Return|p1a: Gliscor
+|-damage|p1a: Gliscor|0 fnt
+|faint|p1a: Gliscor
+|
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|283\/283
+|-damage|p1a: Genesect|248\/283|[from] Stealth Rock
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|turn|30
+|callback|decision
+|
+|move|p1a: Genesect|Flamethrower|p2a: Pinsir
+|-supereffective|p2a: Pinsir
+|-damage|p2a: Pinsir|0 fnt
+|faint|p2a: Pinsir
+|
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|393\/393
+|turn|31
+|callback|decision
+|
+|switch|p1a: Swampert|Swampert, M|41\/404
+|-damage|p1a: Swampert|16\/404|[from] Stealth Rock
+|move|p2a: Slowbro|Scald|p1a: Swampert
+|-damage|p1a: Swampert|0 fnt
+|faint|p1a: Swampert
+|
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|248\/283
+|-damage|p1a: Genesect|213\/283|[from] Stealth Rock
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|turn|32
+|callback|decision
+|
+|move|p1a: Genesect|Bug Buzz|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|73\/393
+|move|p2a: Slowbro|Fire Blast|p1a: Genesect
+|-supereffective|p1a: Genesect
+|-damage|p1a: Genesect|0 fnt
+|faint|p1a: Genesect
+|
+|win|Ryzed
+|raw|Ladder updating...
+|raw|M_Iafrate's rating: 1891 &rarr; <strong>1886<\/strong><br \/>(-5 for losing)
+|raw|Ryzed's rating: 2006 &rarr; <strong>2090<\/strong><br \/>(+84 for winning)
+|leave|M_Iafrate
+|player|p1

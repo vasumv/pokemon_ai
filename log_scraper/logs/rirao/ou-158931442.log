@@ -1,0 +1,311 @@
+|join|cybuster
+|join|rirao
+|player|p1|cybuster|162
+|player|p2|rirao|162
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Heatran, M
+|poke|p1|Latias, F
+|poke|p1|Scizor, M
+|poke|p1|Rotom-Wash
+|poke|p1|Venusaur, M
+|poke|p1|Keldeo
+|poke|p2|Tyranitar, M, shiny
+|poke|p2|Excadrill, M
+|poke|p2|Vaporeon, F
+|poke|p2|Metagross, shiny
+|poke|p2|Sceptile, M
+|poke|p2|Chansey, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Keldeo|Keldeo|322\/322
+|switch|p2a: Tyranitar|Tyranitar, M, shiny|342\/342
+|-weather|Sandstorm
+|turn|1
+|
+|switch|p2a: Vaporeon|Vaporeon, F|464\/464
+|move|p1a: Keldeo|Secret Sword|p2a: Vaporeon
+|-damage|p2a: Vaporeon|317\/464
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Keldeo|302\/322|[from] sandstorm
+|-damage|p2a: Vaporeon|288\/464|[from] sandstorm
+|-heal|p2a: Vaporeon|317\/464|[from] item: Leftovers
+|turn|2
+|
+|switch|p1a: Venusaur|Venusaur, M|364\/364
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Venusaur|342\/364|[from] sandstorm
+|-damage|p2a: Vaporeon|288\/464|[from] sandstorm
+|-heal|p2a: Vaporeon|317\/464|[from] item: Leftovers
+|turn|3
+|
+|detailschange|p1a: Venusaur|Venusaur-Mega, M
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p1a: Venusaur|Hidden Power|p2a: Vaporeon
+|-resisted|p2a: Vaporeon
+|-damage|p2a: Vaporeon|281\/464
+|move|p2a: Vaporeon|Scald|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|299\/364
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Venusaur|277\/364|[from] sandstorm
+|-damage|p2a: Vaporeon|252\/464|[from] sandstorm
+|-heal|p2a: Vaporeon|464\/464|[from] move: Wish|[wisher] Vaporeon
+|turn|4
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|move|p1a: Venusaur|Giga Drain|p2a: Chansey
+|-crit|p2a: Chansey
+|-damage|p2a: Chansey|563\/704
+|-heal|p1a: Venusaur|348\/364|[from] drain|[of] p2a: Chansey
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Venusaur|326\/364|[from] sandstorm
+|-damage|p2a: Chansey|519\/704|[from] sandstorm
+|turn|5
+|
+|switch|p1a: Heatran|Heatran, M|386\/386
+|move|p2a: Chansey|Thunder Wave|p1a: Heatran
+|-status|p1a: Heatran|par
+|
+|-weather|none
+|turn|6
+|
+|move|p2a: Chansey|Seismic Toss|p1a: Heatran
+|-damage|p1a: Heatran|286\/386 par
+|move|p1a: Heatran|Stealth Rock|p2a: Chansey
+|-sidestart|p2: rirao|move: Stealth Rock
+|
+|-heal|p1a: Heatran|310\/386 par|[from] item: Leftovers
+|turn|7
+|
+|switch|p2a: Tyranitar|Tyranitar, M, shiny|342\/342
+|-damage|p2a: Tyranitar|300\/342|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-fail|p1a: Heatran
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Heatran|334\/386 par|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Keldeo|Keldeo|302\/322
+|detailschange|p2a: Tyranitar|Tyranitar-Mega, M, shiny
+|message|Tyranitar has Mega Evolved into Mega Tyranitar!
+|move|p2a: Tyranitar|Dragon Dance|p2a: Tyranitar
+|-boost|p2a: Tyranitar|atk|1
+|-boost|p2a: Tyranitar|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Keldeo|282\/322|[from] sandstorm
+|turn|9
+|
+|move|p1a: Keldeo|Secret Sword|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Keldeo|262\/322|[from] sandstorm
+|
+|switch|p2a: Sceptile|Sceptile, M|281\/281
+|-damage|p2a: Sceptile|246\/281|[from] Stealth Rock
+|turn|10
+|
+|switch|p1a: Scizor|Scizor, M|344\/344
+|move|p2a: Sceptile|Leech Seed|p1a: Scizor
+|-start|p1a: Scizor|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Sceptile|229\/281|[from] sandstorm
+|-damage|p1a: Scizor|301\/344|[from] Leech Seed|[of] p2a: Sceptile
+|-heal|p2a: Sceptile|272\/281|[silent]
+|turn|11
+|
+|move|p2a: Sceptile|Hidden Power|p1a: Scizor
+|-supereffective|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|faint|p1a: Scizor
+|
+|-weather|none
+|
+|switch|p1a: Latias|Latias, F|301\/301
+|turn|12
+|
+|switch|p2a: Metagross|Metagross, shiny|364\/364
+|-damage|p2a: Metagross|342\/364|[from] Stealth Rock
+|move|p1a: Latias|Psyshock|p2a: Metagross
+|-resisted|p2a: Metagross
+|-damage|p2a: Metagross|308\/364
+|-damage|p1a: Latias|271\/301|[from] item: Life Orb
+|
+|turn|13
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|switch|p2a: Chansey|Chansey, F|519\/704
+|-damage|p2a: Chansey|431\/704|[from] Stealth Rock
+|
+|turn|14
+|
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Chansey
+|-status|p2a: Chansey|brn
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|704\/704 brn
+|
+|-damage|p2a: Chansey|616\/704 brn|[from] brn
+|turn|15
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Chansey
+|-damage|p2a: Chansey|565\/704 brn
+|
+|switch|p1a: Latias|Latias, F|271\/301
+|move|p2a: Chansey|Thunder Wave|p1a: Latias
+|-status|p1a: Latias|par
+|
+|-damage|p2a: Chansey|477\/704 brn|[from] brn
+|turn|16
+|
+|switch|p1a: Keldeo|Keldeo|262\/322
+|move|p2a: Chansey|Aromatherapy|p2a: Chansey
+|-cureteam|p2a: Chansey|[from] move: Aromatherapy
+|
+|turn|17
+|
+|move|p1a: Keldeo|Secret Sword|p2a: Chansey
+|-supereffective|p2a: Chansey
+|-damage|p2a: Chansey|99\/704
+|move|p2a: Chansey|Thunder Wave|p1a: Keldeo
+|-status|p1a: Keldeo|par
+|
+|turn|18
+|
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|451\/704
+|move|p1a: Keldeo|Secret Sword|p2a: Chansey
+|-supereffective|p2a: Chansey
+|-damage|p2a: Chansey|67\/704
+|
+|turn|19
+|
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|419\/704
+|move|p1a: Keldeo|Secret Sword|p2a: Chansey
+|-supereffective|p2a: Chansey
+|-damage|p2a: Chansey|0 fnt
+|faint|p2a: Chansey
+|
+|
+|switch|p2a: Sceptile|Sceptile, M|272\/281
+|-damage|p2a: Sceptile|237\/281|[from] Stealth Rock
+|turn|20
+|
+|switch|p1a: Venusaur|Venusaur-Mega, M|326\/364
+|move|p2a: Sceptile|Substitute|p2a: Sceptile
+|-start|p2a: Sceptile|Substitute
+|-damage|p2a: Sceptile|167\/281
+|
+|turn|21
+|
+|move|p2a: Sceptile|Hidden Power|p1a: Venusaur
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|272\/364
+|move|p1a: Venusaur|Sludge Bomb|p2a: Sceptile
+|-supereffective|p2a: Sceptile
+|-end|p2a: Sceptile|Substitute
+|
+|turn|22
+|
+|switch|p2a: Metagross|Metagross, shiny|308\/364
+|-damage|p2a: Metagross|286\/364|[from] Stealth Rock
+|move|p1a: Venusaur|Hidden Power|p2a: Metagross
+|-supereffective|p2a: Metagross
+|-damage|p2a: Metagross|148\/364
+|
+|turn|23
+|
+|move|p1a: Venusaur|Hidden Power|p2a: Metagross
+|-supereffective|p2a: Metagross
+|-damage|p2a: Metagross|0 fnt
+|faint|p2a: Metagross
+|
+|
+|switch|p2a: Vaporeon|Vaporeon, F|464\/464
+|-damage|p2a: Vaporeon|406\/464|[from] Stealth Rock
+|turn|24
+|
+|move|p1a: Venusaur|Giga Drain|p2a: Vaporeon
+|-supereffective|p2a: Vaporeon
+|-damage|p2a: Vaporeon|98\/464
+|-heal|p1a: Venusaur|364\/364|[from] drain|[of] p2a: Vaporeon
+|move|p2a: Vaporeon|Scald|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|319\/364
+|
+|-heal|p2a: Vaporeon|127\/464|[from] item: Leftovers
+|turn|25
+|
+|move|p2a: Vaporeon|Protect|p2a: Vaporeon
+|-singleturn|p2a: Vaporeon|Protect
+|move|p1a: Venusaur|Giga Drain|p2a: Vaporeon
+|-activate|p2a: Vaporeon|Protect
+|
+|-heal|p2a: Vaporeon|156\/464|[from] item: Leftovers
+|turn|26
+|
+|switch|p2a: Sceptile|Sceptile, M|167\/281
+|-damage|p2a: Sceptile|132\/281|[from] Stealth Rock
+|-enditem|p2a: Sceptile|Sitrus Berry|[eat]
+|-heal|p2a: Sceptile|202\/281|[from] item: Sitrus Berry
+|move|p1a: Venusaur|Giga Drain|p2a: Sceptile
+|-resisted|p2a: Sceptile
+|-damage|p2a: Sceptile|119\/281
+|-heal|p1a: Venusaur|361\/364|[from] drain|[of] p2a: Sceptile
+|
+|turn|27
+|
+|switch|p2a: Excadrill|Excadrill, M|391\/391
+|-damage|p2a: Excadrill|379\/391|[from] Stealth Rock
+|move|p1a: Venusaur|Hidden Power|p2a: Excadrill
+|-supereffective|p2a: Excadrill
+|-damage|p2a: Excadrill|283\/391
+|
+|turn|28
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|move|p2a: Excadrill|Earthquake|p1a: Rotom-Wash
+|-immune|p1a: Rotom-Wash|[msg]
+|
+|turn|29
+|
+|move|p2a: Excadrill|Rock Slide|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|238\/304
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Excadrill|[miss]
+|-miss|p1a: Rotom-Wash|p2a: Excadrill
+|
+|-heal|p1a: Rotom-Wash|257\/304|[from] item: Leftovers
+|turn|30
+|-message|rirao forfeited.
+|
+|win|cybuster
+|raw|Ladder updating...
+|leave|rirao
+|player|p2
+|raw|cybuster's rating: 1515 &rarr; <strong>1528<\/strong><br \/>(+13 for winning)
+|raw|rirao's rating: 1388 &rarr; <strong>1375<\/strong><br \/>(-13 for losing)

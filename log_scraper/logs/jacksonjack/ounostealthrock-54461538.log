@@ -1,0 +1,321 @@
+|join|JDRakan
+|join|jacksonjack
+|player|p1|JDRakan|275
+|player|p2|jacksonjack|92
+|gametype|singles
+|tier|OU (No Stealth Rock)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Politoed, M, shiny
+|poke|p1|Landorus-Therian, M
+|poke|p1|Ferrothorn, M
+|poke|p1|Rotom-Wash
+|poke|p1|Volcarona, F
+|poke|p1|Scizor, F
+|poke|p2|Alakazam, M
+|poke|p2|Breloom, F
+|poke|p2|Chansey, F
+|poke|p2|Forretress, F
+|poke|p2|Haxorus, M
+|poke|p2|Rotom-Wash
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Volcarona|Volcarona, F|312\/312
+|switch|p2a: Rotom-Wash|Rotom-Wash|242\/242
+|turn|1
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Volcarona
+|-supereffective|p1a: Volcarona
+|-enditem|p1a: Volcarona|Focus Sash
+|-damage|p1a: Volcarona|1\/312
+|move|p1a: Volcarona|Quiver Dance|p1a: Volcarona
+|-boost|p1a: Volcarona|spa|1
+|-boost|p1a: Volcarona|spd|1
+|-boost|p1a: Volcarona|spe|1
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Volcarona|Bug Buzz|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|callback|decision
+|
+|switch|p2a: Breloom|Breloom, F|262\/262
+|turn|3
+|callback|decision
+|
+|move|p2a: Breloom|Mach Punch|p1a: Volcarona
+|-resisted|p1a: Volcarona
+|-damage|p1a: Volcarona|0 fnt
+|-damage|p2a: Breloom|236\/262|[from] item: Life Orb
+|faint|p1a: Volcarona
+|
+|callback|decision
+|
+|switch|p1a: Washer|Rotom-Wash|242\/242
+|turn|4
+|callback|decision
+|
+|move|p1a: Washer|Hidden Power|p2a: Breloom
+|-supereffective|p2a: Breloom
+|-damage|p2a: Breloom|18\/262
+|move|p2a: Breloom|Spore|p1a: Washer
+|-status|p1a: Washer|slp
+|
+|turn|5
+|callback|decision
+|
+|switch|p1a: Turd|Landorus-Therian, M|382\/382
+|-ability|p1a: Turd|Intimidate|[of] p2a: Breloom
+|-unboost|p2a: Breloom|atk|1
+|move|p2a: Breloom|Low Sweep|p1a: Turd
+|-resisted|p1a: Turd
+|-damage|p1a: Turd|300\/382
+|-unboost|p1a: Turd|spe|1
+|-damage|p2a: Breloom|0 fnt|[from] item: Life Orb
+|faint|p2a: Breloom
+|
+|-heal|p1a: Turd|323\/382|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Alakazam|Alakazam, M|252\/252
+|turn|6
+|callback|decision
+|
+|move|p2a: Alakazam|Psychic|p1a: Turd
+|-damage|p1a: Turd|122\/382
+|move|p1a: Turd|U-turn|p2a: Alakazam
+|-supereffective|p2a: Alakazam
+|-enditem|p2a: Alakazam|Focus Sash
+|-damage|p2a: Alakazam|1\/252
+|callback|decision
+|
+|switch|p1a: The Flea|Scizor, F|343\/343
+|
+|turn|7
+|callback|decision
+|
+|move|p2a: Alakazam|Focus Blast|p1a: The Flea
+|-crit|p1a: The Flea
+|-damage|p1a: The Flea|0 fnt
+|faint|p1a: The Flea
+|
+|callback|decision
+|
+|switch|p1a: Shit Stain|Politoed, M, shiny|384\/384
+|-weather|RainDance|[from] ability: Drizzle|[of] p1a: Shit Stain
+|turn|8
+|callback|decision
+|
+|move|p2a: Alakazam|Psychic|p1a: Shit Stain
+|-damage|p1a: Shit Stain|213\/384
+|move|p1a: Shit Stain|Hydro Pump|p2a: Alakazam
+|-damage|p2a: Alakazam|0 fnt
+|faint|p2a: Alakazam
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Forretress|Forretress, F|354\/354
+|turn|9
+|callback|decision
+|
+|move|p1a: Shit Stain|Hydro Pump|p2a: Forretress|[miss]
+|-miss|p1a: Shit Stain|p2a: Forretress
+|move|p2a: Forretress|Toxic Spikes|p1a: Shit Stain
+|-sidestart|p1: JDRakan|move: Toxic Spikes
+|
+|-weather|RainDance|[upkeep]
+|turn|10
+|callback|decision
+|
+|move|p1a: Shit Stain|Hydro Pump|p2a: Forretress|[miss]
+|-miss|p1a: Shit Stain|p2a: Forretress
+|move|p2a: Forretress|Toxic Spikes|p1a: Shit Stain
+|-sidestart|p1: JDRakan|move: Toxic Spikes
+|
+|-weather|RainDance|[upkeep]
+|turn|11
+|callback|decision
+|
+|move|p1a: Shit Stain|Hydro Pump|p2a: Forretress
+|-activate|p2a: Forretress|Sturdy
+|-damage|p2a: Forretress|1\/354
+|move|p2a: Forretress|Spikes|p1a: Shit Stain
+|-sidestart|p1: JDRakan|Spikes
+|
+|-weather|RainDance|[upkeep]
+|turn|12
+|callback|decision
+|-enditem|p2a: Forretress|Custap Berry|[eat]
+|-activate|p2a: Forretress|Custap Berry
+|
+|move|p2a: Forretress|Spikes|p1a: Shit Stain
+|-sidestart|p1: JDRakan|Spikes
+|move|p1a: Shit Stain|Hydro Pump|p2a: Forretress
+|-crit|p2a: Forretress
+|-damage|p2a: Forretress|0 fnt
+|faint|p2a: Forretress
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Haxorus|Haxorus, M|302\/302
+|-ability|p2a: Haxorus|Mold Breaker
+|turn|13
+|callback|decision
+|
+|move|p2a: Haxorus|Outrage|p1a: Shit Stain
+|-damage|p1a: Shit Stain|0 fnt
+|faint|p1a: Shit Stain
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Hangman|Ferrothorn, M|352\/352
+|-damage|p1a: Hangman|294\/352|[from] Spikes
+|turn|14
+|callback|decision
+|
+|move|p2a: Haxorus|Outrage|p1a: Hangman
+|-resisted|p1a: Hangman
+|-damage|p1a: Hangman|228\/352
+|-damage|p2a: Haxorus|265\/302|[from] ability: Iron Barbs|[of] p1a: Hangman
+|move|p1a: Hangman|Thunder Wave|p2a: Haxorus
+|-status|p2a: Haxorus|par
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Hangman|250\/352|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p2a: Haxorus|Outrage|p1a: Hangman
+|-resisted|p1a: Hangman
+|-damage|p1a: Hangman|182\/352
+|-damage|p2a: Haxorus|228\/302 par|[from] ability: Iron Barbs|[of] p1a: Hangman
+|move|p1a: Hangman|Leech Seed|p2a: Haxorus|[miss]
+|-miss|p1a: Hangman|p2a: Haxorus
+|
+|-end|p2a: Haxorus|rampage
+|-start|p2a: Haxorus|confusion
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Hangman|204\/352|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|move|p1a: Hangman|Leech Seed|p2a: Chansey
+|-start|p2a: Chansey|move: Leech Seed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Hangman|226\/352|[from] item: Leftovers
+|-damage|p2a: Chansey|616\/704|[from] Leech Seed|[of] p1a: Hangman
+|-heal|p1a: Hangman|314\/352|[silent]
+|turn|17
+|callback|decision
+|
+|switch|p2a: Haxorus|Haxorus, M|228\/302 par
+|-ability|p2a: Haxorus|Mold Breaker
+|move|p1a: Hangman|Thunder Wave|p2a: Haxorus
+|-fail|p2a: Haxorus|par
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Hangman|336\/352|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p2a: Haxorus|Superpower|p1a: Hangman
+|-supereffective|p1a: Hangman
+|-damage|p1a: Hangman|134\/352
+|-damage|p2a: Haxorus|191\/302 par|[from] ability: Iron Barbs|[of] p1a: Hangman
+|-unboost|p2a: Haxorus|atk|1
+|-unboost|p2a: Haxorus|def|1
+|move|p1a: Hangman|Leech Seed|p2a: Haxorus
+|-start|p2a: Haxorus|move: Leech Seed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Hangman|156\/352|[from] item: Leftovers
+|-damage|p2a: Haxorus|154\/302 par|[from] Leech Seed|[of] p1a: Hangman
+|-heal|p1a: Hangman|193\/352|[silent]
+|turn|19
+|callback|decision
+|
+|move|p2a: Haxorus|Superpower|p1a: Hangman
+|-supereffective|p1a: Hangman
+|-damage|p1a: Hangman|67\/352
+|-damage|p2a: Haxorus|117\/302 par|[from] ability: Iron Barbs|[of] p1a: Hangman
+|-unboost|p2a: Haxorus|atk|1
+|-unboost|p2a: Haxorus|def|1
+|move|p1a: Hangman|Leech Seed|p2a: Haxorus
+|-fail|p2a: Haxorus
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Hangman|89\/352|[from] item: Leftovers
+|-damage|p2a: Haxorus|80\/302 par|[from] Leech Seed|[of] p1a: Hangman
+|-heal|p1a: Hangman|126\/352|[silent]
+|turn|20
+|callback|decision
+|
+|cant|p2a: Haxorus|par
+|move|p1a: Hangman|Leech Seed|p2a: Haxorus
+|-fail|p2a: Haxorus
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Hangman|148\/352|[from] item: Leftovers
+|-damage|p2a: Haxorus|43\/302 par|[from] Leech Seed|[of] p1a: Hangman
+|-heal|p1a: Hangman|185\/352|[silent]
+|turn|21
+|callback|decision
+|
+|move|p2a: Haxorus|Superpower|p1a: Hangman
+|-supereffective|p1a: Hangman
+|-damage|p1a: Hangman|83\/352
+|-damage|p2a: Haxorus|6\/302 par|[from] ability: Iron Barbs|[of] p1a: Hangman
+|-unboost|p2a: Haxorus|atk|1
+|-unboost|p2a: Haxorus|def|1
+|move|p1a: Hangman|Leech Seed|p2a: Haxorus|[miss]
+|-miss|p1a: Hangman|p2a: Haxorus
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Hangman|105\/352|[from] item: Leftovers
+|-damage|p2a: Haxorus|0 fnt|[from] Leech Seed|[of] p1a: Hangman
+|-heal|p1a: Hangman|111\/352|[silent]
+|faint|p2a: Haxorus
+|callback|decision
+|
+|switch|p2a: Chansey|Chansey, F|616\/704
+|turn|22
+|callback|decision
+|
+|move|p2a: Chansey|Seismic Toss|p1a: Hangman
+|-damage|p1a: Hangman|11\/352
+|-damage|p2a: Chansey|528\/704|[from] ability: Iron Barbs|[of] p1a: Hangman
+|move|p1a: Hangman|Leech Seed|p2a: Chansey
+|-start|p2a: Chansey|move: Leech Seed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Hangman|33\/352|[from] item: Leftovers
+|-damage|p2a: Chansey|440\/704|[from] Leech Seed|[of] p1a: Hangman
+|-heal|p1a: Hangman|121\/352|[silent]
+|turn|23
+|callback|decision
+|-message|jacksonjack forfeited.
+|leave|jacksonjack
+|
+|win|JDRakan
+|raw|Ladder updating...
+|player|p2
+|raw|JDRakan's rating: 1347 &rarr; <strong>1417<\/strong><br \/>(+70 for winning)
+|raw|jacksonjack's rating: 1418 &rarr; <strong>1342<\/strong><br \/>(-76 for losing)

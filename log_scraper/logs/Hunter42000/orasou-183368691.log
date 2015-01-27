@@ -1,0 +1,179 @@
+|join|Hunter42000
+|join|Zplash
+|player|p1|Hunter42000|34
+|player|p2|Zplash|101
+|gametype|singles
+|gen|6
+|tier|ORAS OU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Salamence, M
+|poke|p1|Greninja, M
+|poke|p1|Ferrothorn, M
+|poke|p1|Latias, F
+|poke|p1|Magnezone
+|poke|p1|Mamoswine, F
+|poke|p2|Salamence, M
+|poke|p2|Tyranitar, F
+|poke|p2|Excadrill, F
+|poke|p2|Latias, F
+|poke|p2|Greninja, F
+|poke|p2|Magneton
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Ferrothorn|Ferrothorn, M|352\/352
+|switch|p2a: Salamence|Salamence, M|393\/393
+|-ability|p2a: Salamence|Intimidate|[of] p1a: Ferrothorn
+|-unboost|p1a: Ferrothorn|atk|1
+|turn|1
+|
+|switch|p1a: Magnezone|Magnezone|282\/282
+|detailschange|p2a: Salamence|Salamence-Mega, M
+|message|Salamence has Mega Evolved into Mega Salamence!
+|move|p2a: Salamence|Dragon Dance|p2a: Salamence
+|-boost|p2a: Salamence|atk|1
+|-boost|p2a: Salamence|spe|1
+|
+|turn|2
+|
+|switch|p2a: Excadrill|Excadrill, F|362\/362
+|move|p1a: Magnezone|Thunderbolt|p2a: Excadrill
+|-immune|p2a: Excadrill|[msg]
+|
+|turn|3
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|352\/352
+|move|p2a: Excadrill|Earthquake|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|160\/352
+|-damage|p2a: Excadrill|326\/362|[from] item: Life Orb
+|
+|turn|4
+|
+|move|p1a: Ferrothorn|Protect|p1a: Ferrothorn
+|-singleturn|p1a: Ferrothorn|Protect
+|move|p2a: Excadrill|Earthquake|p1a: Ferrothorn
+|-activate|p1a: Ferrothorn|Protect
+|
+|turn|5
+|
+|switch|p1a: Salamence|Salamence, M|393\/393
+|-ability|p1a: Salamence|Intimidate|[of] p2a: Excadrill
+|-unboost|p2a: Excadrill|atk|1
+|move|p2a: Excadrill|Earthquake|p1a: Salamence
+|-immune|p1a: Salamence|[msg]
+|
+|turn|6
+|
+|switch|p2a: Tyranitar|Tyranitar, F|404\/404
+|-weather|Sandstorm
+|detailschange|p1a: Salamence|Salamence-Mega, M
+|message|Salamence has Mega Evolved into Mega Salamence!
+|move|p1a: Salamence|Return|p2a: Tyranitar
+|-resisted|p2a: Tyranitar
+|-damage|p2a: Tyranitar|310\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salamence|369\/393|[from] sandstorm
+|turn|7
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|160\/352
+|switch|p2a: Magneton|Magneton|242\/242
+|
+|-weather|Sandstorm|[upkeep]
+|turn|8
+|
+|switch|p1a: Mamoswine|Mamoswine, F|361\/361
+|move|p2a: Magneton|Hidden Power|p1a: Mamoswine
+|-supereffective|p1a: Mamoswine
+|-damage|p1a: Mamoswine|265\/361
+|
+|-weather|Sandstorm|[upkeep]
+|turn|9
+|
+|move|p2a: Magneton|Hidden Power|p1a: Mamoswine
+|-supereffective|p1a: Mamoswine
+|-damage|p1a: Mamoswine|169\/361
+|move|p1a: Mamoswine|Knock Off|p2a: Magneton
+|-damage|p2a: Magneton|120\/242
+|-enditem|p2a: Magneton|Choice Scarf|[from] move: Knock Off|[of] p1a: Mamoswine
+|
+|-weather|Sandstorm|[upkeep]
+|turn|10
+|
+|move|p2a: Magneton|Hidden Power|p1a: Mamoswine
+|-supereffective|p1a: Mamoswine
+|-damage|p1a: Mamoswine|61\/361
+|move|p1a: Mamoswine|Earthquake|p2a: Magneton
+|-supereffective|p2a: Magneton
+|-damage|p2a: Magneton|0 fnt
+|faint|p2a: Magneton
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Excadrill|Excadrill, F|326\/362
+|turn|11
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|160\/352
+|move|p2a: Excadrill|Earthquake|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|0 fnt
+|-damage|p2a: Excadrill|290\/362|[from] item: Life Orb
+|faint|p1a: Ferrothorn
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Salamence|Salamence-Mega, M|369\/393
+|turn|12
+|
+|switch|p2a: Tyranitar|Tyranitar, F|310\/404
+|move|p1a: Salamence|Substitute|p1a: Salamence
+|-start|p1a: Salamence|Substitute
+|-damage|p1a: Salamence|271\/393
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salamence|247\/393|[from] sandstorm
+|turn|13
+|
+|move|p1a: Salamence|Dragon Dance|p1a: Salamence
+|-boost|p1a: Salamence|atk|1
+|-boost|p1a: Salamence|spe|1
+|move|p2a: Tyranitar|Ice Beam|p1a: Salamence
+|-supereffective|p1a: Salamence
+|-end|p1a: Salamence|Substitute
+|
+|-weather|none
+|turn|14
+|
+|move|p1a: Salamence|Roost|p1a: Salamence
+|-heal|p1a: Salamence|393\/393
+|move|p2a: Tyranitar|Ice Beam|p1a: Salamence
+|-supereffective|p1a: Salamence
+|-damage|p1a: Salamence|263\/393
+|
+|turn|15
+|
+|move|p1a: Salamence|Dragon Dance|p1a: Salamence
+|-boost|p1a: Salamence|atk|1
+|-boost|p1a: Salamence|spe|1
+|move|p2a: Tyranitar|Ice Beam|p1a: Salamence
+|-supereffective|p1a: Salamence
+|-damage|p1a: Salamence|0 fnt
+|faint|p1a: Salamence
+|
+|-message|Hunter42000 forfeited.
+|
+|win|Zplash
+|raw|Ladder updating...
+|leave|Hunter42000
+|player|p1
+|raw|Hunter42000's rating: 1438 &rarr; <strong>1412<\/strong><br \/>(-26 for losing)
+|raw|Zplash's rating: 1335 &rarr; <strong>1361<\/strong><br \/>(+26 for winning)

@@ -1,0 +1,521 @@
+|join|Xanru
+|join|bossboss
+|player|p1|Xanru|284
+|player|p2|bossboss|1
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Chesnaught, F
+|poke|p1|Rotom-Heat
+|poke|p1|Scizor, F
+|poke|p1|Infernape, M
+|poke|p1|Bisharp, M
+|poke|p1|Greninja, F
+|poke|p2|Kyurem-Black
+|poke|p2|Aegislash, M
+|poke|p2|Rotom-Wash
+|poke|p2|Landorus, M
+|poke|p2|Charizard, F
+|poke|p2|Bisharp, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|chat|bossboss|hmm
+|
+|start
+|switch|p1a: Infernape|Infernape, M|293\/293
+|switch|p2a: Kyurem-Black|Kyurem-Black|433\/433
+|-ability|p2a: Kyurem-Black|Teravolt
+|turn|1
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|move|p1a: Infernape|U-turn|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|255\/304
+|callback|decision
+|
+|switch|p1a: Chesnaught|Chesnaught, F|379\/379
+|
+|-heal|p2a: Rotom-Wash|274\/304|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Chesnaught
+|-status|p1a: Chesnaught|brn
+|move|p1a: Chesnaught|Leech Seed|p2a: Rotom-Wash
+|-start|p2a: Rotom-Wash|move: Leech Seed
+|
+|-heal|p2a: Rotom-Wash|293\/304|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|255\/304|[from] Leech Seed|[of] p1a: Chesnaught
+|-damage|p1a: Chesnaught|332\/379 brn|[from] brn
+|turn|3
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|286\/379 brn
+|callback|decision
+|
+|switch|p2a: Landorus|Landorus, M|320\/320
+|move|p1a: Chesnaught|Leech Seed|p2a: Landorus
+|-start|p2a: Landorus|move: Leech Seed
+|
+|-heal|p1a: Chesnaught|309\/379 brn|[from] item: Leftovers
+|-damage|p2a: Landorus|280\/320|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|349\/379 brn|[silent]
+|-damage|p1a: Chesnaught|302\/379 brn|[from] brn
+|turn|4
+|callback|decision
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-singleturn|p1a: Chesnaught|move: Protect
+|move|p2a: Landorus|Stealth Rock|p1a: Chesnaught
+|-sidestart|p1: Xanru|move: Stealth Rock
+|
+|-heal|p1a: Chesnaught|325\/379 brn|[from] item: Leftovers
+|-damage|p2a: Landorus|240\/320|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|365\/379 brn|[silent]
+|-damage|p1a: Chesnaught|318\/379 brn|[from] brn
+|turn|5
+|callback|decision
+|
+|switch|p2a: Aegislash|Aegislash, M|324\/324
+|switch|p1a: Greninja|Greninja, F|285\/285
+|-damage|p1a: Greninja|250\/285|[from] Stealth Rock
+|
+|turn|6
+|callback|decision
+|
+|-start|p1a: Greninja|typechange|Bug|[from] Protean
+|move|p1a: Greninja|U-turn|p2a: Aegislash
+|-resisted|p2a: Aegislash
+|-damage|p2a: Aegislash|305\/324
+|-damage|p1a: Greninja|222\/285|[from] item: Life Orb
+|callback|decision
+|
+|switch|p1a: Chesnaught|Chesnaught, F|318\/379 brn
+|-damage|p1a: Chesnaught|295\/379 brn|[from] Stealth Rock
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Shadow Ball|p1a: Chesnaught
+|-immune|p1a: Chesnaught|[msg]|[from] Bulletproof
+|
+|-heal|p1a: Chesnaught|318\/379 brn|[from] item: Leftovers
+|-damage|p1a: Chesnaught|271\/379 brn|[from] brn
+|turn|7
+|callback|decision
+|
+|move|p1a: Chesnaught|Leech Seed|p2a: Aegislash
+|-start|p2a: Aegislash|move: Leech Seed
+|move|p2a: Aegislash|Iron Head|p1a: Chesnaught
+|-damage|p1a: Chesnaught|160\/379 brn
+|
+|-heal|p1a: Chesnaught|183\/379 brn|[from] item: Leftovers
+|-damage|p2a: Aegislash|265\/324|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|223\/379 brn|[silent]
+|-damage|p1a: Chesnaught|176\/379 brn|[from] brn
+|turn|8
+|callback|decision
+|
+|switch|p2a: Kyurem-Black|Kyurem-Black|433\/433
+|-ability|p2a: Kyurem-Black|Teravolt
+|move|p1a: Chesnaught|Shadow Claw|p2a: Kyurem-Black
+|-damage|p2a: Kyurem-Black|401\/433
+|
+|-heal|p2a: Kyurem-Black|428\/433|[from] item: Leftovers
+|-heal|p1a: Chesnaught|199\/379 brn|[from] item: Leftovers
+|-damage|p1a: Chesnaught|152\/379 brn|[from] brn
+|turn|9
+|callback|decision
+|
+|move|p2a: Kyurem-Black|Substitute|p2a: Kyurem-Black
+|-start|p2a: Kyurem-Black|Substitute
+|-damage|p2a: Kyurem-Black|320\/433
+|move|p1a: Chesnaught|Leech Seed|p2a: Kyurem-Black
+|
+|-heal|p2a: Kyurem-Black|347\/433|[from] item: Leftovers
+|-heal|p1a: Chesnaught|175\/379 brn|[from] item: Leftovers
+|-damage|p1a: Chesnaught|128\/379 brn|[from] brn
+|turn|10
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|343\/343
+|-damage|p1a: Scizor|301\/343|[from] Stealth Rock
+|move|p2a: Kyurem-Black|Ice Beam|p1a: Scizor
+|-crit|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|199\/343
+|
+|-heal|p2a: Kyurem-Black|374\/433|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|-formechange|p1a: Scizor|Scizor-Mega
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p2a: Kyurem-Black|Earth Power|p1a: Scizor
+|-damage|p1a: Scizor|129\/343
+|move|p1a: Scizor|Defog|p2a: Kyurem-Black
+|-sideend|p1: Xanru|Stealth Rock|[from] move: Defog|[of] p1a: Scizor
+|
+|-heal|p2a: Kyurem-Black|401\/433|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: Kyurem-Black|Fusion Bolt|p1a: Scizor
+|-damage|p1a: Scizor|38\/343
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|210\/343
+|
+|-heal|p2a: Kyurem-Black|428\/433|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: Kyurem-Black|Earth Power|p1a: Scizor
+|-damage|p1a: Scizor|130\/343
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|302\/343
+|
+|-heal|p2a: Kyurem-Black|433\/433|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Kyurem-Black
+|-supereffective|p2a: Kyurem-Black
+|-end|p2a: Kyurem-Black|Substitute
+|move|p2a: Kyurem-Black|Earth Power|p1a: Scizor
+|-damage|p1a: Scizor|230\/343
+|
+|turn|15
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|255\/304
+|move|p1a: Scizor|U-turn|p2a: Rotom-Wash
+|-crit|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|131\/304
+|callback|decision
+|
+|switch|p1a: Bisharp|Bisharp, M|271\/271
+|
+|-heal|p2a: Rotom-Wash|150\/304|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p2a: Charizard|Charizard, F|298\/298
+|move|p1a: Bisharp|Stealth Rock|p2a: Charizard
+|-sidestart|p2: bossboss|move: Stealth Rock
+|
+|turn|17
+|callback|decision
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|304\/304
+|-formechange|p2a: Charizard|Charizard-Mega-X
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p2a: Charizard|Dragon Dance|p2a: Charizard
+|-boost|p2a: Charizard|atk|1
+|-boost|p2a: Charizard|spe|1
+|
+|turn|18
+|callback|decision
+|
+|move|p2a: Charizard|Outrage|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|0 fnt
+|faint|p1a: Rotom-Heat
+|
+|callback|decision
+|
+|switch|p1a: Infernape|Infernape, M|293\/293
+|turn|19
+|callback|decision
+|
+|move|p1a: Infernape|Close Combat|p2a: Charizard
+|-damage|p2a: Charizard|138\/298
+|-unboost|p1a: Infernape|def|1
+|-unboost|p1a: Infernape|spd|1
+|move|p2a: Charizard|Outrage|p1a: Infernape
+|-damage|p1a: Infernape|0 fnt
+|faint|p1a: Infernape
+|
+|-end|p2a: Charizard|rampage
+|-start|p2a: Charizard|confusion
+|callback|decision
+|
+|switch|p1a: Bisharp|Bisharp, M|271\/271
+|turn|20
+|callback|decision
+|
+|-activate|p2a: Charizard|confusion
+|-damage|p2a: Charizard|65\/298|[from] confusion
+|move|p1a: Bisharp|Pursuit|p2a: Charizard
+|-damage|p2a: Charizard|0 fnt
+|-damage|p1a: Bisharp|244\/271|[from] item: Life Orb
+|faint|p2a: Charizard
+|
+|callback|decision
+|
+|switch|p2a: Bisharp|Bisharp, M|272\/272
+|-damage|p2a: Bisharp|255\/272|[from] Stealth Rock
+|turn|21
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|230\/343
+|-formechange|p1a: Scizor|Scizor-Mega
+|move|p2a: Bisharp|Brick Break|p1a: Scizor
+|-damage|p1a: Scizor|159\/343
+|-damage|p2a: Bisharp|228\/272|[from] item: Life Orb
+|
+|turn|22
+|callback|decision
+|
+|switch|p2a: Aegislash|Aegislash, M|265\/324
+|-damage|p2a: Aegislash|245\/324|[from] Stealth Rock
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|331\/343
+|
+|turn|23
+|callback|decision
+|
+|move|p1a: Scizor|U-turn|p2a: Aegislash
+|-resisted|p2a: Aegislash
+|-damage|p2a: Aegislash|225\/324
+|callback|decision
+|
+|switch|p1a: Chesnaught|Chesnaught, F|128\/379 brn
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Shadow Ball|p1a: Chesnaught
+|-immune|p1a: Chesnaught|[msg]|[from] Bulletproof
+|
+|-heal|p1a: Chesnaught|151\/379 brn|[from] item: Leftovers
+|-damage|p1a: Chesnaught|104\/379 brn|[from] brn
+|turn|24
+|callback|decision
+|
+|-formechange|p2a: Aegislash|Aegislash
+|move|p2a: Aegislash|King's Shield|p2a: Aegislash
+|-singleturn|p2a: Aegislash|Protect
+|move|p1a: Chesnaught|Leech Seed|p2a: Aegislash
+|-start|p2a: Aegislash|move: Leech Seed
+|
+|-heal|p1a: Chesnaught|127\/379 brn|[from] item: Leftovers
+|-damage|p2a: Aegislash|185\/324|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|167\/379 brn|[silent]
+|-damage|p1a: Chesnaught|120\/379 brn|[from] brn
+|turn|25
+|callback|decision
+|chat|bossboss|lol
+|chat|bossboss|thats annoying
+|
+|switch|p2a: Bisharp|Bisharp, M|228\/272
+|-damage|p2a: Bisharp|211\/272|[from] Stealth Rock
+|move|p1a: Chesnaught|Leech Seed|p2a: Bisharp
+|-start|p2a: Bisharp|move: Leech Seed
+|
+|-heal|p1a: Chesnaught|143\/379 brn|[from] item: Leftovers
+|-damage|p2a: Bisharp|177\/272|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|177\/379 brn|[silent]
+|-damage|p1a: Chesnaught|130\/379 brn|[from] brn
+|turn|26
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|150\/304
+|-damage|p2a: Rotom-Wash|112\/304|[from] Stealth Rock
+|move|p1a: Chesnaught|Hammer Arm|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|70\/304
+|-unboost|p1a: Chesnaught|spe|1
+|
+|-heal|p2a: Rotom-Wash|89\/304|[from] item: Leftovers
+|-heal|p1a: Chesnaught|153\/379 brn|[from] item: Leftovers
+|-damage|p1a: Chesnaught|106\/379 brn|[from] brn
+|turn|27
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Chesnaught|[miss]
+|-miss|p2a: Rotom-Wash|p1a: Chesnaught
+|move|p1a: Chesnaught|Leech Seed|p2a: Rotom-Wash|[miss]
+|-miss|p1a: Chesnaught|p2a: Rotom-Wash
+|
+|-heal|p2a: Rotom-Wash|108\/304|[from] item: Leftovers
+|-heal|p1a: Chesnaught|129\/379 brn|[from] item: Leftovers
+|-damage|p1a: Chesnaught|82\/379 brn|[from] brn
+|turn|28
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|2\/379 brn
+|move|p1a: Chesnaught|Leech Seed|p2a: Rotom-Wash
+|-start|p2a: Rotom-Wash|move: Leech Seed
+|
+|-heal|p2a: Rotom-Wash|127\/304|[from] item: Leftovers
+|-heal|p1a: Chesnaught|25\/379 brn|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|89\/304|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|63\/379 brn|[silent]
+|-damage|p1a: Chesnaught|16\/379 brn|[from] brn
+|turn|29
+|callback|decision
+|
+|switch|p2a: Aegislash|Aegislash, M|185\/324
+|-damage|p2a: Aegislash|165\/324|[from] Stealth Rock
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-fail|p1a: Chesnaught
+|
+|-heal|p1a: Chesnaught|39\/379 brn|[from] item: Leftovers
+|-damage|p1a: Chesnaught|0 fnt|[from] brn
+|faint|p1a: Chesnaught
+|callback|decision
+|
+|switch|p1a: Bisharp|Bisharp, M|244\/271
+|turn|30
+|callback|decision
+|
+|move|p2a: Aegislash|King's Shield|p2a: Aegislash
+|-singleturn|p2a: Aegislash|Protect
+|move|p1a: Bisharp|Knock Off|p2a: Aegislash
+|-activate|p2a: Aegislash|Protect
+|-unboost|p1a: Bisharp|atk|2
+|-boost|p1a: Bisharp|atk|2|[from] ability: Defiant
+|
+|turn|31
+|callback|decision
+|
+|move|p1a: Bisharp|Knock Off|p2a: Aegislash
+|-supereffective|p2a: Aegislash
+|-damage|p2a: Aegislash|0 fnt
+|-damage|p1a: Bisharp|217\/271|[from] item: Life Orb
+|faint|p2a: Aegislash
+|
+|callback|decision
+|
+|switch|p2a: Landorus|Landorus, M|240\/320
+|-damage|p2a: Landorus|200\/320|[from] Stealth Rock
+|turn|32
+|callback|decision
+|
+|move|p1a: Bisharp|Sucker Punch|p2a: Landorus
+|-damage|p2a: Landorus|0 fnt
+|-damage|p1a: Bisharp|190\/271|[from] item: Life Orb
+|faint|p2a: Landorus
+|
+|callback|decision
+|
+|switch|p2a: Bisharp|Bisharp, M|177\/272
+|-damage|p2a: Bisharp|160\/272|[from] Stealth Rock
+|turn|33
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|331\/343
+|-formechange|p1a: Scizor|Scizor-Mega
+|move|p2a: Bisharp|Brick Break|p1a: Scizor
+|-damage|p1a: Scizor|247\/343
+|-damage|p2a: Bisharp|133\/272|[from] item: Life Orb
+|
+|turn|34
+|callback|decision
+|
+|move|p2a: Bisharp|Knock Off|p1a: Scizor
+|-damage|p1a: Scizor|153\/343
+|-damage|p2a: Bisharp|106\/272|[from] item: Life Orb
+|move|p1a: Scizor|U-turn|p2a: Bisharp
+|-damage|p2a: Bisharp|0 fnt
+|faint|p2a: Bisharp
+|callback|decision
+|
+|switch|p1a: Bisharp|Bisharp, M|190\/271
+|
+|callback|decision
+|
+|switch|p2a: Kyurem-Black|Kyurem-Black|433\/433
+|-damage|p2a: Kyurem-Black|325\/433|[from] Stealth Rock
+|-ability|p2a: Kyurem-Black|Teravolt
+|turn|35
+|callback|decision
+|
+|move|p2a: Kyurem-Black|Earth Power|p1a: Bisharp
+|-crit|p1a: Bisharp
+|-supereffective|p1a: Bisharp
+|-damage|p1a: Bisharp|0 fnt
+|faint|p1a: Bisharp
+|
+|-heal|p2a: Kyurem-Black|352\/433|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|153\/343
+|-formechange|p1a: Scizor|Scizor-Mega
+|turn|36
+|callback|decision
+|
+|move|p2a: Kyurem-Black|Earth Power|p1a: Scizor
+|-damage|p1a: Scizor|79\/343
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|251\/343
+|
+|-heal|p2a: Kyurem-Black|379\/433|[from] item: Leftovers
+|turn|37
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|89\/304
+|-damage|p2a: Rotom-Wash|51\/304|[from] Stealth Rock
+|move|p1a: Scizor|Bullet Punch|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|33\/304
+|
+|-heal|p2a: Rotom-Wash|52\/304|[from] item: Leftovers
+|turn|38
+|callback|decision
+|
+|switch|p1a: Greninja|Greninja, F|222\/285
+|move|p2a: Rotom-Wash|Pain Split|p1a: Greninja
+|-sethp|p1a: Greninja|137\/285|p2a: Rotom-Wash|137\/304|[from] move: Pain Split
+|
+|-heal|p2a: Rotom-Wash|156\/304|[from] item: Leftovers
+|turn|39
+|callback|decision
+|
+|-start|p1a: Greninja|typechange|Psychic|[from] Protean
+|move|p1a: Greninja|Extrasensory|p2a: Rotom-Wash
+|-crit|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|-damage|p1a: Greninja|109\/285|[from] item: Life Orb
+|faint|p2a: Rotom-Wash
+|
+|callback|decision
+|
+|switch|p2a: Kyurem-Black|Kyurem-Black|379\/433
+|-damage|p2a: Kyurem-Black|271\/433|[from] Stealth Rock
+|-ability|p2a: Kyurem-Black|Teravolt
+|turn|40
+|callback|decision
+|
+|move|p1a: Greninja|Extrasensory|p2a: Kyurem-Black
+|-damage|p2a: Kyurem-Black|114\/433
+|-damage|p1a: Greninja|81\/285|[from] item: Life Orb
+|move|p2a: Kyurem-Black|Earth Power|p1a: Greninja
+|-damage|p1a: Greninja|0 fnt
+|faint|p1a: Greninja
+|
+|-heal|p2a: Kyurem-Black|141\/433|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|251\/343
+|-formechange|p1a: Scizor|Scizor-Mega
+|turn|41
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Kyurem-Black
+|-supereffective|p2a: Kyurem-Black
+|-damage|p2a: Kyurem-Black|0 fnt
+|faint|p2a: Kyurem-Black
+|
+|win|Xanru
+|raw|Ladder updating...
+|leave|bossboss
+|player|p2
+|chat|Xanru|gg
+|raw|Xanru's rating: 1567 &rarr; <strong>1593<\/strong><br \/>(+26 for winning)
+|raw|bossboss's rating: 1578 &rarr; <strong>1553<\/strong><br \/>(-25 for losing)

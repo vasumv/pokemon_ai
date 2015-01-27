@@ -1,0 +1,467 @@
+|join|Fenix-
+|join|suzuki!
+|player|p1|Fenix-|266
+|player|p2|suzuki!|34
+|gametype|singles
+|tier|[Gen 5] OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Politoed, F
+|poke|p1|Dugtrio, F
+|poke|p1|Jirachi
+|poke|p1|Tentacruel, F
+|poke|p1|Latios, M
+|poke|p1|Dragonite, M
+|poke|p2|Politoed, F
+|poke|p2|Ferrothorn, F
+|poke|p2|Dugtrio, M
+|poke|p2|Tentacruel, M
+|poke|p2|Tornadus, M
+|poke|p2|Terrakion
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Latios|Latios, M|302\/302
+|switch|p2a: Ferrothorn|Ferrothorn, F|345\/345
+|turn|1
+|callback|decision
+|
+|move|p2a: Ferrothorn|Protect|p2a: Ferrothorn
+|-singleturn|p2a: Ferrothorn|Protect
+|move|p1a: Latios|Trick|p2a: Ferrothorn
+|-activate|p2a: Ferrothorn|Protect
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Tentacruel|Tentacruel, F|363\/363
+|switch|p2a: Tornadus|Tornadus, M|299\/299
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Tornadus|U-turn|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|338\/363
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|345\/345
+|move|p1a: Tentacruel|Scald|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|318\/345
+|-status|p2a: Ferrothorn|brn
+|
+|-heal|p1a: Tentacruel|360\/363|[from] item: Black Sludge
+|-heal|p2a: Ferrothorn|339\/345 brn|[from] item: Leftovers
+|-damage|p2a: Ferrothorn|296\/345 brn|[from] brn
+|turn|4
+|callback|decision
+|
+|move|p1a: Tentacruel|Scald|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|268\/345 brn
+|move|p2a: Ferrothorn|Leech Seed|p1a: Tentacruel
+|-start|p1a: Tentacruel|move: Leech Seed
+|
+|-heal|p1a: Tentacruel|363\/363|[from] item: Black Sludge
+|-heal|p2a: Ferrothorn|289\/345 brn|[from] item: Leftovers
+|-damage|p1a: Tentacruel|318\/363|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|334\/345 brn|[silent]
+|-damage|p2a: Ferrothorn|291\/345 brn|[from] brn
+|turn|5
+|callback|decision
+|
+|switch|p1a: Politoed|Politoed, F|384\/384
+|-weather|RainDance|[from] ability: Drizzle|[of] p1a: Politoed
+|move|p2a: Ferrothorn|Protect|p2a: Ferrothorn
+|-fail|p2a: Ferrothorn
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Ferrothorn|312\/345 brn|[from] item: Leftovers
+|-damage|p2a: Ferrothorn|269\/345 brn|[from] brn
+|turn|6
+|callback|decision
+|
+|switch|p1a: Tentacruel|Tentacruel, F|318\/363
+|move|p2a: Ferrothorn|Leech Seed|p1a: Tentacruel
+|-start|p1a: Tentacruel|move: Leech Seed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Tentacruel|340\/363|[from] ability: Rain Dish
+|-heal|p1a: Tentacruel|362\/363|[from] item: Black Sludge
+|-heal|p2a: Ferrothorn|290\/345 brn|[from] item: Leftovers
+|-damage|p1a: Tentacruel|317\/363|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|335\/345 brn|[silent]
+|-damage|p2a: Ferrothorn|292\/345 brn|[from] brn
+|turn|7
+|callback|decision
+|
+|switch|p1a: Jirachi|Jirachi|404\/404
+|move|p2a: Ferrothorn|Spikes|p1a: Jirachi
+|-sidestart|p1: Fenix-|Spikes
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Ferrothorn|313\/345 brn|[from] item: Leftovers
+|-damage|p2a: Ferrothorn|270\/345 brn|[from] brn
+|turn|8
+|callback|decision
+|
+|switch|p2a: Thugtrio|Dugtrio, M|212\/212
+|move|p1a: Jirachi|Substitute|p1a: Jirachi
+|-start|p1a: Jirachi|Substitute
+|-damage|p1a: Jirachi|303\/404
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Jirachi|328\/404|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p2a: Thugtrio|Earthquake|p1a: Jirachi
+|-crit|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-end|p1a: Jirachi|Substitute
+|move|p1a: Jirachi|Water Pulse|p2a: Thugtrio
+|-supereffective|p2a: Thugtrio
+|-damage|p2a: Thugtrio|32\/212
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Jirachi|353\/404|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p2a: Thugtrio|Earthquake|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|123\/404
+|move|p1a: Jirachi|Water Pulse|p2a: Thugtrio
+|-supereffective|p2a: Thugtrio
+|-damage|p2a: Thugtrio|0 fnt
+|faint|p2a: Thugtrio
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Jirachi|148\/404|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Terrakion|Terrakion|323\/323
+|turn|11
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M|302\/302
+|move|p2a: Terrakion|Close Combat|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|185\/302
+|-unboost|p2a: Terrakion|def|1
+|-unboost|p2a: Terrakion|spd|1
+|
+|-weather|RainDance|[upkeep]
+|turn|12
+|callback|decision
+|
+|switch|p2a: Tentacruel|Tentacruel, M|363\/363
+|move|p1a: Latios|Trick|p2a: Tentacruel
+|-activate|p1a: Latios|move: Trick|[of] p2a: Tentacruel
+|-item|p2a: Tentacruel|Choice Scarf|[from] move: Trick
+|-item|p1a: Latios|Black Sludge|[from] move: Trick
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1a: Latios|148\/302|[from] item: Black Sludge
+|turn|13
+|callback|decision
+|
+|switch|p1a: Tentacruel|Tentacruel, F|317\/363
+|-damage|p1a: Tentacruel|272\/363|[from] Spikes
+|move|p2a: Tentacruel|Scald|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|225\/363
+|-status|p1a: Tentacruel|brn
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Tentacruel|247\/363 brn|[from] ability: Rain Dish
+|-heal|p1a: Tentacruel|269\/363 brn|[from] item: Black Sludge
+|-damage|p1a: Tentacruel|224\/363 brn|[from] brn
+|turn|14
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|270\/345 brn
+|move|p1a: Tentacruel|Rapid Spin|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|268\/345 brn
+|-damage|p1a: Tentacruel|179\/363 brn|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|-sideend|p1: Fenix-|Spikes|[from] move: Rapid Spin|[of] p1a: Tentacruel
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Tentacruel|201\/363 brn|[from] ability: Rain Dish
+|-heal|p1a: Tentacruel|223\/363 brn|[from] item: Black Sludge
+|-heal|p2a: Ferrothorn|289\/345 brn|[from] item: Leftovers
+|-damage|p1a: Tentacruel|178\/363 brn|[from] brn
+|-damage|p2a: Ferrothorn|246\/345 brn|[from] brn
+|turn|15
+|callback|decision
+|
+|move|p1a: Tentacruel|Scald|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|207\/345 brn
+|move|p2a: Ferrothorn|Leech Seed|p1a: Tentacruel
+|-start|p1a: Tentacruel|move: Leech Seed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Tentacruel|200\/363 brn|[from] ability: Rain Dish
+|-heal|p1a: Tentacruel|222\/363 brn|[from] item: Black Sludge
+|-heal|p2a: Ferrothorn|228\/345 brn|[from] item: Leftovers
+|-damage|p1a: Tentacruel|177\/363 brn|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|273\/345 brn|[silent]
+|-damage|p1a: Tentacruel|132\/363 brn|[from] brn
+|-damage|p2a: Ferrothorn|230\/345 brn|[from] brn
+|turn|16
+|callback|decision
+|
+|switch|p1a: Jirachi|Jirachi|148\/404
+|move|p2a: Ferrothorn|Leech Seed|p1a: Jirachi
+|-start|p1a: Jirachi|move: Leech Seed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Jirachi|173\/404|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|251\/345 brn|[from] item: Leftovers
+|-damage|p1a: Jirachi|123\/404|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|301\/345 brn|[silent]
+|-damage|p2a: Ferrothorn|258\/345 brn|[from] brn
+|turn|17
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, M|386\/386
+|switch|p2a: Tornadus|Tornadus, M|299\/299
+|
+|-weather|RainDance|[upkeep]
+|turn|18
+|callback|decision
+|
+|switch|p1a: Tentacruel|Tentacruel, F|132\/363 brn
+|move|p2a: Tornadus|Hurricane|p1a: Tentacruel
+|-damage|p1a: Tentacruel|0 fnt
+|faint|p1a: Tentacruel
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Jirachi|Jirachi|123\/404
+|turn|19
+|callback|decision
+|
+|move|p2a: Tornadus|Hurricane|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|faint|p1a: Jirachi
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Politoed|Politoed, F|384\/384
+|turn|20
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, F|384\/384
+|move|p1a: Politoed|Ice Beam|p2a: Politoed
+|-resisted|p2a: Politoed
+|-damage|p2a: Politoed|351\/384
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|375\/384|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p1a: Politoed|Toxic|p2a: Politoed
+|-status|p2a: Politoed|tox
+|move|p2a: Politoed|Toxic|p1a: Politoed
+|-status|p1a: Politoed|tox
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|384\/384 tox|[from] item: Leftovers
+|-damage|p2a: Politoed|360\/384 tox|[from] psn
+|-damage|p1a: Politoed|360\/384 tox|[from] psn
+|turn|22
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M|148\/302
+|move|p2a: Politoed|Scald|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|87\/302
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1a: Latios|50\/302|[from] item: Black Sludge
+|-heal|p2a: Politoed|384\/384 tox|[from] item: Leftovers
+|-damage|p2a: Politoed|336\/384 tox|[from] psn
+|turn|23
+|callback|decision
+|
+|switch|p2a: Tentacruel|Tentacruel, M|363\/363
+|move|p1a: Latios|Thunder|p2a: Tentacruel
+|-supereffective|p2a: Tentacruel
+|-damage|p2a: Tentacruel|97\/363
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Tentacruel|119\/363|[from] ability: Rain Dish
+|-damage|p1a: Latios|13\/302|[from] item: Black Sludge
+|turn|24
+|callback|decision
+|
+|move|p2a: Tentacruel|Scald|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|0 fnt
+|faint|p1a: Latios
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Tentacruel|141\/363|[from] ability: Rain Dish
+|callback|decision
+|
+|switch|p1a: Dugtrio|Dugtrio, F|211\/211
+|turn|25
+|callback|decision
+|
+|move|p1a: Dugtrio|Stealth Rock|p2a: Tentacruel
+|-sidestart|p2: suzuki!|move: Stealth Rock
+|move|p2a: Tentacruel|Scald|p1a: Dugtrio
+|-supereffective|p1a: Dugtrio
+|-enditem|p1a: Dugtrio|Focus Sash
+|-damage|p1a: Dugtrio|1\/211
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Tentacruel|163\/363|[from] ability: Rain Dish
+|turn|26
+|callback|decision
+|
+|move|p1a: Dugtrio|Earthquake|p2a: Tentacruel
+|-supereffective|p2a: Tentacruel
+|-damage|p2a: Tentacruel|0 fnt
+|faint|p2a: Tentacruel
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Terrakion|Terrakion|323\/323
+|-damage|p2a: Terrakion|303\/323|[from] Stealth Rock
+|turn|27
+|callback|decision
+|
+|move|p2a: Terrakion|Stone Edge|p1a: Dugtrio
+|-resisted|p1a: Dugtrio
+|-damage|p1a: Dugtrio|0 fnt
+|faint|p1a: Dugtrio
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Politoed|Politoed, F|360\/384 tox
+|turn|28
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|258\/345 brn
+|-damage|p2a: Ferrothorn|237\/345 brn|[from] Stealth Rock
+|move|p1a: Politoed|Scald|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|198\/345 brn
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Politoed|384\/384 tox|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|219\/345 brn|[from] item: Leftovers
+|-damage|p1a: Politoed|360\/384 tox|[from] psn
+|-damage|p2a: Ferrothorn|176\/345 brn|[from] brn
+|turn|29
+|callback|decision
+|
+|move|p1a: Politoed|Scald|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|133\/345 brn
+|move|p2a: Ferrothorn|Leech Seed|p1a: Politoed
+|-start|p1a: Politoed|move: Leech Seed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Politoed|384\/384 tox|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|154\/345 brn|[from] item: Leftovers
+|-damage|p1a: Politoed|336\/384 tox|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|202\/345 brn|[silent]
+|-damage|p1a: Politoed|288\/384 tox|[from] psn
+|-damage|p2a: Ferrothorn|159\/345 brn|[from] brn
+|turn|30
+|callback|decision
+|
+|move|p1a: Politoed|Scald|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|115\/345 brn
+|move|p2a: Ferrothorn|Leech Seed|p1a: Politoed
+|-fail|p1a: Politoed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Politoed|312\/384 tox|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|136\/345 brn|[from] item: Leftovers
+|-damage|p1a: Politoed|264\/384 tox|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|184\/345 brn|[silent]
+|-damage|p1a: Politoed|192\/384 tox|[from] psn
+|-damage|p2a: Ferrothorn|141\/345 brn|[from] brn
+|turn|31
+|callback|decision
+|
+|move|p1a: Politoed|Scald|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|103\/345 brn
+|move|p2a: Ferrothorn|Leech Seed|p1a: Politoed
+|-fail|p1a: Politoed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Politoed|216\/384 tox|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|124\/345 brn|[from] item: Leftovers
+|-damage|p1a: Politoed|168\/384 tox|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|172\/345 brn|[silent]
+|-damage|p1a: Politoed|72\/384 tox|[from] psn
+|-damage|p2a: Ferrothorn|129\/345 brn|[from] brn
+|turn|32
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, F|336\/384 tox
+|-damage|p2a: Politoed|288\/384 tox|[from] Stealth Rock
+|move|p1a: Politoed|Scald|p2a: Politoed
+|-resisted|p2a: Politoed
+|-damage|p2a: Politoed|219\/384 tox
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Politoed|96\/384 tox|[from] item: Leftovers
+|-heal|p2a: Politoed|243\/384 tox|[from] item: Leftovers
+|-damage|p1a: Politoed|48\/384 tox|[from] Leech Seed|[of] p2a: Politoed
+|-heal|p2a: Politoed|291\/384 tox|[silent]
+|-damage|p1a: Politoed|0 fnt|[from] psn
+|-damage|p2a: Politoed|267\/384 tox|[from] psn
+|faint|p1a: Politoed
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, M|386\/386
+|turn|33
+|callback|decision
+|
+|move|p1a: Dragonite|Substitute|p1a: Dragonite
+|-start|p1a: Dragonite|Substitute
+|-damage|p1a: Dragonite|290\/386
+|move|p2a: Politoed|Perish Song|p2a: Politoed
+|-fieldactivate|move: Perish Song
+|
+|-start|p1a: Dragonite|perish3
+|-start|p2a: Politoed|perish3
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Dragonite|314\/386|[from] item: Leftovers
+|-heal|p2a: Politoed|291\/384 tox|[from] item: Leftovers
+|-damage|p2a: Politoed|243\/384 tox|[from] psn
+|turn|34
+|callback|decision
+|leave|Fenix-
+|player|p1
+|-message|fenix lost due to inactivity.
+|
+|win|suzuki!
+|raw|Ladder updating...
+|raw|Fenix-'s rating: 2055 &rarr; <strong>2048<\/strong><br \/>(-7 for losing)
+|raw|suzuki!'s rating: 1945 &rarr; <strong>1950<\/strong><br \/>(+5 for winning)

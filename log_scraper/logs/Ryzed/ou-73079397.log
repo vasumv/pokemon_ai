@@ -1,0 +1,755 @@
+|join|Ryzed
+|join|smogley02
+|player|p1|Ryzed|169
+|player|p2|smogley02|52
+|gametype|singles
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Pinsir, F
+|poke|p1|Clefable, M
+|poke|p1|Heatran, M
+|poke|p1|Excadrill, F
+|poke|p1|Slowbro, F
+|poke|p1|Rotom-Wash
+|poke|p2|Slowbro, M
+|poke|p2|Tornadus-Therian, M
+|poke|p2|Venusaur, F
+|poke|p2|Heatran, M
+|poke|p2|Skarmory, M
+|poke|p2|Chansey, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|join|cup noobles
+|
+|start
+|switch|p1a: Rotom-Wash|Rotom-Wash|251\/251
+|switch|p2a: Heatran|Heatran, M|385\/385
+|turn|1
+|callback|decision
+|
+|switch|p2a: Venusaur|Venusaur, F|364\/364
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Venusaur
+|-crit|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|290\/364
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|339\/339
+|
+|turn|2
+|callback|decision
+|
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p1a: Heatran|Lava Plume|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|174\/364
+|move|p2a: Venusaur|Earthquake|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|31\/339
+|
+|-heal|p1a: Heatran|52\/339|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p1a: Heatran|Stealth Rock|p2a: Venusaur
+|-sidestart|p2: smogley02|move: Stealth Rock
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|356\/364
+|
+|-heal|p1a: Heatran|73\/339|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: Pinsir|Pinsir, F|272\/272
+|move|p2a: Venusaur|Earthquake|p1a: Pinsir
+|-resisted|p1a: Pinsir
+|-damage|p1a: Pinsir|231\/272
+|
+|turn|5
+|callback|decision
+|
+|switch|p2a: Skarmory|Skarmory, M|334\/334
+|-damage|p2a: Skarmory|293\/334|[from] Stealth Rock
+|-formechange|p1a: Pinsir|Pinsir-Mega
+|message|Pinsir has Mega Evolved into Mega Pinsir!
+|move|p1a: Pinsir|Return|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|221\/334
+|-damage|p1a: Pinsir|186\/272|[from] item: Rocky Helmet|[of] p2a: Skarmory
+|
+|turn|6
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|251\/251
+|move|p2a: Skarmory|Defog|p1a: Rotom-Wash
+|-unboost|p1a: Rotom-Wash|evasion|1
+|-sideend|p2: smogley02|Stealth Rock|[from] move: Defog|[of] p2a: Skarmory
+|
+|turn|7
+|callback|decision
+|
+|switch|p2a: Venusaur|Venusaur, F|356\/364
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|315\/364
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|73\/339
+|
+|-heal|p1a: Heatran|94\/339|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p1a: Heatran|Stealth Rock|p2a: Venusaur
+|-sidestart|p2: smogley02|move: Stealth Rock
+|move|p2a: Venusaur|Earthquake|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|callback|decision
+|
+|switch|p1a: Pinsir|Pinsir, F|186\/272
+|-formechange|p1a: Pinsir|Pinsir-Mega
+|turn|9
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|251\/251
+|switch|p2a: Skarmory|Skarmory, M|221\/334
+|-damage|p2a: Skarmory|180\/334|[from] Stealth Rock
+|
+|turn|10
+|callback|decision
+|
+|switch|p2a: Venusaur|Venusaur, F|315\/364
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|-damage|p2a: Venusaur|270\/364|[from] Stealth Rock
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|231\/364
+|callback|decision
+|
+|switch|p1a: Pinsir|Pinsir, F|186\/272
+|-formechange|p1a: Pinsir|Pinsir-Mega
+|
+|turn|11
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|393\/393
+|-damage|p2a: Slowbro|344\/393|[from] Stealth Rock
+|move|p1a: Pinsir|Swords Dance|p1a: Pinsir
+|-boost|p1a: Pinsir|atk|2
+|
+|turn|12
+|callback|decision
+|
+|switch|p2a: Skarmory|Skarmory, M|180\/334
+|-damage|p2a: Skarmory|139\/334|[from] Stealth Rock
+|move|p1a: Pinsir|Return|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|0 fnt
+|-damage|p1a: Pinsir|141\/272|[from] item: Rocky Helmet|[of] p2a: Skarmory
+|faint|p2a: Skarmory
+|
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|393\/393
+|-damage|p2a: Slowbro|344\/393|[from] Stealth Rock
+|turn|13
+|callback|decision
+|
+|move|p1a: Pinsir|Return|p2a: Slowbro
+|-damage|p2a: Slowbro|0 fnt
+|faint|p2a: Slowbro
+|
+|callback|decision
+|
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M|299\/299
+|-damage|p2a: Tornadus-Therian|225\/299|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|move|p2a: Tornadus-Therian|Air Slash|p1a: Pinsir
+|-supereffective|p1a: Pinsir
+|-damage|p1a: Pinsir|0 fnt
+|faint|p1a: Pinsir
+|
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|251\/251
+|turn|15
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Tornadus-Therian
+|-supereffective|p2a: Tornadus-Therian
+|-damage|p2a: Tornadus-Therian|73\/299
+|callback|decision
+|
+|switch|p1a: Slowbro|Slowbro, F|393\/393
+|move|p2a: Tornadus-Therian|U-turn|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|269\/393
+|callback|decision
+|
+|switch|p2a: Venusaur|Venusaur, F|231\/364
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|-damage|p2a: Venusaur|186\/364|[from] Stealth Rock
+|
+|turn|16
+|callback|decision
+|
+|move|p2a: Venusaur|Giga Drain|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|135\/393
+|-heal|p2a: Venusaur|253\/364|[from] drain|[of] p1a: Slowbro
+|move|p1a: Slowbro|Psyshock|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|115\/364
+|
+|turn|17
+|callback|decision
+|
+|switch|p1a: Excadrill|Excadrill, F|369\/369
+|-ability|p1a: Excadrill|Mold Breaker
+|-item|p1a: Excadrill|Air Balloon
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|297\/364
+|
+|turn|18
+|callback|decision
+|
+|move|p1a: Excadrill|Swords Dance|p1a: Excadrill
+|-boost|p1a: Excadrill|atk|2
+|move|p2a: Venusaur|Giga Drain|p1a: Excadrill
+|-damage|p1a: Excadrill|215\/369
+|-heal|p2a: Venusaur|364\/364|[from] drain|[of] p1a: Excadrill
+|-enditem|p1a: Excadrill|Air Balloon
+|
+|turn|19
+|callback|decision
+|
+|move|p1a: Excadrill|Earthquake|p2a: Venusaur
+|-damage|p2a: Venusaur|111\/364
+|move|p2a: Venusaur|Earthquake|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-damage|p1a: Excadrill|0 fnt
+|faint|p1a: Excadrill
+|
+|callback|decision
+|
+|switch|p1a: Slowbro|Slowbro, F|266\/393
+|turn|20
+|callback|decision
+|
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|293\/364
+|move|p1a: Slowbro|Psyshock|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|165\/364
+|
+|turn|21
+|callback|decision
+|
+|switch|p1a: Clefable|Clefable, M|394\/394
+|move|p2a: Venusaur|Giga Drain|p1a: Clefable
+|-damage|p1a: Clefable|274\/394
+|-heal|p2a: Venusaur|225\/364|[from] drain|[of] p1a: Clefable
+|
+|turn|22
+|callback|decision
+|
+|move|p2a: Venusaur|Giga Drain|p1a: Clefable
+|-damage|p1a: Clefable|166\/394
+|-heal|p2a: Venusaur|279\/364|[from] drain|[of] p1a: Clefable
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|
+|turn|23
+|callback|decision
+|
+|move|p1a: Clefable|Soft-Boiled|p1a: Clefable
+|-heal|p1a: Clefable|363\/394
+|move|p2a: Venusaur|Roar|p1a: Clefable
+|drag|p1a: Rotom-Wash|Rotom-Wash|251\/251
+|
+|turn|24
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Venusaur
+|-status|p2a: Venusaur|brn
+|move|p2a: Venusaur|Giga Drain|p1a: Rotom-Wash
+|-crit|p1a: Rotom-Wash
+|-supereffective|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|-heal|p2a: Venusaur|364\/364 brn|[from] drain|[of] p1a: Rotom-Wash
+|faint|p1a: Rotom-Wash
+|
+|-damage|p2a: Venusaur|319\/364 brn|[from] brn
+|callback|decision
+|
+|switch|p1a: Clefable|Clefable, M|363\/394
+|turn|25
+|callback|decision
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|-damage|p2a: Chansey|616\/704|[from] Stealth Rock
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|
+|turn|26
+|callback|decision
+|
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|move|p2a: Chansey|Heal Bell|p2a: Chansey
+|-cureteam|p2a: Chansey|[from] move: HealBell
+|
+|turn|27
+|callback|decision
+|chat|Ryzed|straight up copy another team
+|chat|Ryzed|lul
+|chat|Ryzed|very original
+|
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|move|p2a: Chansey|Wish|p2a: Chansey
+|
+|turn|28
+|callback|decision
+|chat|Ryzed|trashcan
+|
+|switch|p2a: Venusaur|Venusaur, F|319\/364
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|-damage|p2a: Venusaur|274\/364|[from] Stealth Rock
+|move|p1a: Clefable|Moonblast|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|121\/364
+|
+|-heal|p2a: Venusaur|364\/364|[from] move: Wish|[wisher] Chansey
+|turn|29
+|callback|decision
+|
+|move|p1a: Clefable|Moonblast|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|196\/364
+|move|p2a: Venusaur|Roar|p1a: Clefable
+|drag|p1a: Slowbro|Slowbro, F|393\/393
+|
+|turn|30
+|callback|decision
+|
+|move|p2a: Venusaur|Giga Drain|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|279\/393
+|-heal|p2a: Venusaur|253\/364|[from] drain|[of] p1a: Slowbro
+|move|p1a: Slowbro|Psyshock|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|115\/364
+|
+|turn|31
+|callback|decision
+|
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|297\/364
+|move|p1a: Slowbro|Psyshock|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|151\/364
+|
+|turn|32
+|callback|decision
+|
+|move|p2a: Venusaur|Giga Drain|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|145\/393
+|-heal|p2a: Venusaur|218\/364|[from] drain|[of] p1a: Slowbro
+|move|p1a: Slowbro|Psyshock|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|72\/364
+|
+|turn|33
+|callback|decision
+|
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|254\/364
+|move|p1a: Slowbro|Psyshock|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|116\/364
+|
+|turn|34
+|callback|decision
+|
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|298\/364
+|move|p1a: Slowbro|Psyshock|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|154\/364
+|
+|turn|35
+|callback|decision
+|
+|switch|p1a: Clefable|Clefable, M|363\/394
+|move|p2a: Venusaur|Giga Drain|p1a: Clefable
+|-damage|p1a: Clefable|254\/394
+|-heal|p2a: Venusaur|209\/364|[from] drain|[of] p1a: Clefable
+|
+|turn|36
+|callback|decision
+|
+|move|p2a: Venusaur|Earthquake|p1a: Clefable
+|-damage|p1a: Clefable|169\/394
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|
+|turn|37
+|callback|decision
+|
+|move|p2a: Venusaur|Earthquake|p1a: Clefable
+|-crit|p1a: Clefable
+|-damage|p1a: Clefable|36\/394
+|move|p1a: Clefable|Soft-Boiled|p1a: Clefable
+|-heal|p1a: Clefable|233\/394
+|
+|turn|38
+|callback|decision
+|
+|move|p2a: Venusaur|Earthquake|p1a: Clefable
+|-damage|p1a: Clefable|147\/394
+|move|p1a: Clefable|Soft-Boiled|p1a: Clefable
+|-heal|p1a: Clefable|344\/394
+|
+|turn|39
+|callback|decision
+|
+|move|p2a: Venusaur|Earthquake|p1a: Clefable
+|-damage|p1a: Clefable|256\/394
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|
+|turn|40
+|callback|decision
+|
+|move|p2a: Venusaur|Earthquake|p1a: Clefable
+|-damage|p1a: Clefable|158\/394
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|
+|turn|41
+|callback|decision
+|
+|move|p1a: Clefable|Soft-Boiled|p1a: Clefable
+|-heal|p1a: Clefable|355\/394
+|move|p2a: Venusaur|Roar|p1a: Clefable
+|drag|p1a: Slowbro|Slowbro, F|276\/393
+|
+|turn|42
+|callback|decision
+|
+|switch|p1a: Clefable|Clefable, M|355\/394
+|move|p2a: Venusaur|Giga Drain|p1a: Clefable
+|-damage|p1a: Clefable|238\/394
+|-heal|p2a: Venusaur|268\/364|[from] drain|[of] p1a: Clefable
+|
+|turn|43
+|callback|decision
+|
+|move|p2a: Venusaur|Giga Drain|p1a: Clefable
+|-damage|p1a: Clefable|117\/394
+|-heal|p2a: Venusaur|329\/364|[from] drain|[of] p1a: Clefable
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|
+|turn|44
+|callback|decision
+|
+|move|p2a: Venusaur|Earthquake|p1a: Clefable
+|-damage|p1a: Clefable|21\/394
+|move|p1a: Clefable|Soft-Boiled|p1a: Clefable
+|-heal|p1a: Clefable|218\/394
+|
+|turn|45
+|callback|decision
+|
+|move|p2a: Venusaur|Earthquake|p1a: Clefable
+|-damage|p1a: Clefable|124\/394
+|move|p1a: Clefable|Soft-Boiled|p1a: Clefable
+|-heal|p1a: Clefable|321\/394
+|
+|turn|46
+|callback|decision
+|
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|move|p2a: Venusaur|Roar|p1a: Clefable
+|drag|p1a: Slowbro|Slowbro, F|393\/393
+|
+|turn|47
+|callback|decision
+|
+|move|p2a: Venusaur|Giga Drain|p1a: Slowbro
+|-crit|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|201\/393
+|-heal|p2a: Venusaur|364\/364|[from] drain|[of] p1a: Slowbro
+|move|p1a: Slowbro|Psyshock|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|220\/364
+|
+|turn|48
+|callback|decision
+|
+|move|p2a: Venusaur|Giga Drain|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|73\/393
+|-heal|p2a: Venusaur|284\/364|[from] drain|[of] p1a: Slowbro
+|move|p1a: Slowbro|Psyshock|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|138\/364
+|
+|turn|49
+|callback|decision
+|
+|switch|p1a: Clefable|Clefable, M|321\/394
+|move|p2a: Venusaur|Giga Drain|p1a: Clefable
+|-damage|p1a: Clefable|197\/394
+|-heal|p2a: Venusaur|200\/364|[from] drain|[of] p1a: Clefable
+|
+|turn|50
+|callback|decision
+|
+|move|p2a: Venusaur|Giga Drain|p1a: Clefable
+|-damage|p1a: Clefable|71\/394
+|-heal|p2a: Venusaur|263\/364|[from] drain|[of] p1a: Clefable
+|move|p1a: Clefable|Soft-Boiled|p1a: Clefable
+|-heal|p1a: Clefable|268\/394
+|
+|turn|51
+|callback|decision
+|
+|move|p2a: Venusaur|Giga Drain|p1a: Clefable
+|-damage|p1a: Clefable|145\/394
+|-heal|p2a: Venusaur|325\/364|[from] drain|[of] p1a: Clefable
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|
+|turn|52
+|callback|decision
+|
+|move|p1a: Clefable|Soft-Boiled|p1a: Clefable
+|-heal|p1a: Clefable|342\/394
+|move|p2a: Venusaur|Roar|p1a: Clefable
+|drag|p1a: Slowbro|Slowbro, F|204\/393
+|
+|turn|53
+|callback|decision
+|
+|move|p2a: Venusaur|Giga Drain|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|84\/393
+|-heal|p2a: Venusaur|364\/364|[from] drain|[of] p1a: Slowbro
+|move|p1a: Slowbro|Psyshock|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|218\/364
+|
+|turn|54
+|callback|decision
+|
+|switch|p1a: Clefable|Clefable, M|342\/394
+|move|p2a: Venusaur|Earthquake|p1a: Clefable
+|-damage|p1a: Clefable|245\/394
+|
+|turn|55
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, M|385\/385
+|-damage|p2a: Heatran|337\/385|[from] Stealth Rock
+|move|p1a: Clefable|Soft-Boiled|p1a: Clefable
+|-heal|p1a: Clefable|394\/394
+|
+|-heal|p2a: Heatran|361\/385|[from] item: Leftovers
+|turn|56
+|callback|decision
+|
+|move|p2a: Heatran|Stealth Rock|p1a: Clefable
+|-sidestart|p1: Ryzed|move: Stealth Rock
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|
+|-heal|p2a: Heatran|385\/385|[from] item: Leftovers
+|turn|57
+|callback|decision
+|
+|move|p2a: Heatran|Lava Plume|p1a: Clefable
+|-damage|p1a: Clefable|303\/394
+|-status|p1a: Clefable|brn
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|
+|turn|58
+|callback|decision
+|
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|move|p2a: Heatran|Roar|p1a: Clefable
+|drag|p1a: Slowbro|Slowbro, F|215\/393
+|-damage|p1a: Slowbro|166\/393|[from] Stealth Rock
+|
+|turn|59
+|callback|decision
+|
+|switch|p2a: Chansey|Chansey, F|616\/704
+|-damage|p2a: Chansey|528\/704|[from] Stealth Rock
+|switch|p1a: Clefable|Clefable, M|303\/394 brn
+|
+|turn|60
+|callback|decision
+|
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|move|p2a: Chansey|Wish|p2a: Chansey
+|
+|turn|61
+|callback|decision
+|
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M|172\/299
+|-damage|p2a: Tornadus-Therian|98\/299|[from] Stealth Rock
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|
+|-heal|p2a: Tornadus-Therian|299\/299|[from] move: Wish|[wisher] Chansey
+|turn|62
+|callback|decision
+|
+|move|p2a: Tornadus-Therian|Knock Off|p1a: Clefable
+|-resisted|p1a: Clefable
+|-damage|p1a: Clefable|251\/394 brn
+|-enditem|p1a: Clefable|Life Orb|[from] move: Knock Off|[of] p2a: Tornadus-Therian
+|move|p1a: Clefable|Moonblast|p2a: Tornadus-Therian
+|-damage|p2a: Tornadus-Therian|130\/299
+|-unboost|p2a: Tornadus-Therian|spa|1
+|
+|turn|63
+|callback|decision
+|
+|move|p2a: Tornadus-Therian|U-turn|p1a: Clefable
+|-resisted|p1a: Clefable
+|-damage|p1a: Clefable|212\/394 brn
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, M|385\/385
+|-damage|p2a: Heatran|337\/385|[from] Stealth Rock
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|
+|-heal|p2a: Heatran|361\/385|[from] item: Leftovers
+|turn|64
+|callback|decision
+|
+|move|p1a: Clefable|Hidden Power|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|faint|p2a: Heatran
+|
+|callback|decision
+|
+|switch|p2a: Chansey|Chansey, F|528\/704
+|-damage|p2a: Chansey|440\/704|[from] Stealth Rock
+|turn|65
+|callback|decision
+|
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|704\/704
+|
+|turn|66
+|callback|decision
+|
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|move|p2a: Chansey|Wish|p2a: Chansey
+|
+|turn|67
+|callback|decision
+|
+|switch|p2a: Venusaur|Venusaur, F|218\/364
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|-damage|p2a: Venusaur|173\/364|[from] Stealth Rock
+|move|p1a: Clefable|Moonblast|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|0 fnt
+|faint|p2a: Venusaur
+|
+|callback|decision
+|
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M|229\/299
+|-damage|p2a: Tornadus-Therian|155\/299|[from] Stealth Rock
+|turn|68
+|callback|decision
+|
+|move|p2a: Tornadus-Therian|U-turn|p1a: Clefable
+|-resisted|p1a: Clefable
+|-damage|p1a: Clefable|175\/394 brn
+|callback|decision
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|-damage|p2a: Chansey|616\/704|[from] Stealth Rock
+|move|p1a: Clefable|Moonblast|p2a: Chansey
+|-damage|p2a: Chansey|291\/704
+|
+|turn|69
+|callback|decision
+|
+|move|p1a: Clefable|Moonblast|p2a: Chansey
+|-damage|p2a: Chansey|0 fnt
+|faint|p2a: Chansey
+|
+|callback|decision
+|chat|Ryzed|gg noobie
+|
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M|254\/299
+|-damage|p2a: Tornadus-Therian|180\/299|[from] Stealth Rock
+|turn|70
+|callback|decision
+|chat|Ryzed|straight up copy the most viewed stall team
+|chat|Ryzed|LOL
+|
+|move|p2a: Tornadus-Therian|Air Slash|p1a: Clefable|[miss]
+|-miss|p2a: Tornadus-Therian|p1a: Clefable
+|move|p1a: Clefable|Moonblast|p2a: Tornadus-Therian
+|-damage|p2a: Tornadus-Therian|0 fnt
+|faint|p2a: Tornadus-Therian
+|
+|win|Ryzed
+|raw|Ladder updating...
+|raw|Ryzed's rating: 1877 &rarr; <strong>1952<\/strong><br \/>(+75 for winning)
+|raw|smogley02's rating: 1712 &rarr; <strong>1704<\/strong><br \/>(-8 for losing)
+|leave|smogley02
+|player|p2

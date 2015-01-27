@@ -1,0 +1,250 @@
+|join|Reverb
+|join|RSMessiii
+|player|p1|Reverb|#reverb
+|player|p2|RSMessiii|2
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Empoleon, F
+|poke|p1|Tyranitar, M
+|poke|p1|Charizard, F
+|poke|p1|Keldeo
+|poke|p1|Kyurem-Black
+|poke|p1|Landorus-Therian, M
+|poke|p2|Gliscor, M
+|poke|p2|Clefable, M
+|poke|p2|Chansey, F
+|poke|p2|Slowbro, F
+|poke|p2|Skarmory, M
+|poke|p2|Chesnaught, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Charizard|Charizard, F|297\/297
+|switch|p2a: Missandei|Chansey, F|703\/703
+|turn|1
+|
+|switch|p1a: Empoleon|Empoleon, F|372\/372
+|move|p2a: Missandei|Toxic|p1a: Empoleon
+|-fail|p1a: Empoleon
+|
+|turn|2
+|
+|move|p1a: Empoleon|Stealth Rock|p2a: Missandei
+|-sidestart|p2: RSMessiii|move: Stealth Rock
+|move|p2a: Missandei|Stealth Rock|p1a: Empoleon
+|-sidestart|p1: Reverb|move: Stealth Rock
+|
+|turn|3
+|
+|switch|p2a: Chesnaught|Chesnaught, F|379\/379
+|-damage|p2a: Chesnaught|356\/379|[from] Stealth Rock
+|move|p1a: Empoleon|Defog|p2a: Chesnaught
+|-unboost|p2a: Chesnaught|evasion|1
+|-sideend|p2: RSMessiii|Stealth Rock|[from] move: Defog|[of] p2a: Chesnaught
+|-sideend|p1: Reverb|Stealth Rock|[from] move: Defog|[of] p1a: Empoleon
+|
+|-heal|p2a: Chesnaught|379\/379|[from] item: Leftovers
+|turn|4
+|
+|move|p2a: Chesnaught|Leech Seed|p1a: Empoleon
+|-start|p1a: Empoleon|move: Leech Seed
+|move|p1a: Empoleon|Stealth Rock|p2a: Chesnaught
+|-sidestart|p2: RSMessiii|move: Stealth Rock
+|
+|-damage|p1a: Empoleon|326\/372|[from] Leech Seed|[of] p2a: Chesnaught
+|turn|5
+|join|WECAMEASROMANS
+|
+|switch|p1a: Charizard|Charizard, F|297\/297
+|move|p2a: Chesnaught|Spikes|p1a: Charizard
+|-sidestart|p1: Reverb|Spikes
+|
+|turn|6
+|
+|switch|p1a: Tyranitar|Tyranitar, M|383\/383
+|-damage|p1a: Tyranitar|336\/383|[from] Spikes
+|-weather|Sandstorm
+|move|p2a: Chesnaught|Spiky Shield|p2a: Chesnaught
+|-fail|p2a: Chesnaught
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Chesnaught|356\/379|[from] sandstorm
+|-heal|p2a: Chesnaught|379\/379|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Charizard|Charizard, F|297\/297
+|move|p2a: Chesnaught|Drain Punch|p1a: Charizard
+|-resisted|p1a: Charizard
+|-damage|p1a: Charizard|242\/297
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Charizard|224\/297|[from] sandstorm
+|-damage|p2a: Chesnaught|356\/379|[from] sandstorm
+|-heal|p2a: Chesnaught|379\/379|[from] item: Leftovers
+|turn|8
+|
+|move|p2a: Chesnaught|Spiky Shield|p2a: Chesnaught
+|-singleturn|p2a: Chesnaught|move: Protect
+|move|p1a: Charizard|Roost|p1a: Charizard
+|-heal|p1a: Charizard|297\/297
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Charizard|279\/297|[from] sandstorm
+|-damage|p2a: Chesnaught|356\/379|[from] sandstorm
+|-heal|p2a: Chesnaught|379\/379|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Missandei|Chansey, F|703\/703
+|-damage|p2a: Missandei|616\/703|[from] Stealth Rock
+|detailschange|p1a: Charizard|Charizard-Mega-Y, F
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p1a: Charizard|Fire Blast|p2a: Missandei
+|-crit|p2a: Missandei
+|-damage|p2a: Missandei|303\/703
+|
+|-weather|SunnyDay|[upkeep]
+|turn|10
+|
+|switch|p1a: Tyranitar|Tyranitar, M|336\/383
+|-damage|p1a: Tyranitar|289\/383|[from] Spikes
+|-weather|Sandstorm
+|move|p2a: Missandei|Soft-Boiled|p2a: Missandei
+|-heal|p2a: Missandei|655\/703
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Missandei|612\/703|[from] sandstorm
+|turn|11
+|join|yrs
+|join|Landorus
+|
+|move|p1a: Tyranitar|Superpower|p2a: Missandei
+|-supereffective|p2a: Missandei
+|-damage|p2a: Missandei|0 fnt
+|-unboost|p1a: Tyranitar|atk|1
+|-unboost|p1a: Tyranitar|def|1
+|faint|p2a: Missandei
+|
+|-weather|Sandstorm|[upkeep]
+|join|daftmau5
+|
+|switch|p2a: Daario Nahaaris|Gliscor, M|353\/353
+|-damage|p2a: Daario Nahaaris|309\/353|[from] Stealth Rock
+|turn|12
+|
+|switch|p1a: Empoleon|Empoleon, F|326\/372
+|-damage|p1a: Empoleon|280\/372|[from] Spikes
+|move|p2a: Daario Nahaaris|Knock Off|p1a: Empoleon
+|-damage|p1a: Empoleon|219\/372
+|-enditem|p1a: Empoleon|Leftovers|[from] move: Knock Off|[of] p2a: Daario Nahaaris
+|
+|-weather|Sandstorm|[upkeep]
+|-status|p2a: Daario Nahaaris|tox|[from] item: Toxic Orb
+|turn|13
+|
+|move|p2a: Daario Nahaaris|Earthquake|p1a: Empoleon
+|-supereffective|p1a: Empoleon
+|-damage|p1a: Empoleon|43\/372
+|move|p1a: Empoleon|Scald|p2a: Daario Nahaaris
+|-supereffective|p2a: Daario Nahaaris
+|-damage|p2a: Daario Nahaaris|19\/353 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Daario Nahaaris|63\/353 tox|[from] ability: Poison Heal
+|turn|14
+|
+|switch|p1a: Charizard|Charizard-Mega-Y, F|279\/297
+|-weather|SunnyDay
+|move|p2a: Daario Nahaaris|Earthquake|p1a: Charizard
+|-immune|p1a: Charizard|[msg]
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Daario Nahaaris|107\/353 tox|[from] ability: Poison Heal
+|turn|15
+|
+|move|p1a: Charizard|Solar Beam|p2a: Daario Nahaaris|[still]
+|-prepare|p1a: Charizard|Solar Beam|p2a: Daario Nahaaris
+|-anim|p1a: Charizard|Solar Beam|p2a: Daario Nahaaris
+|-damage|p2a: Daario Nahaaris|0 fnt
+|faint|p2a: Daario Nahaaris
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p2a: Daenerys Targayren|Clefable, M|393\/393
+|-damage|p2a: Daenerys Targayren|344\/393|[from] Stealth Rock
+|turn|16
+|
+|move|p2a: Daenerys Targayren|Protect|p2a: Daenerys Targayren
+|-singleturn|p2a: Daenerys Targayren|Protect
+|move|p1a: Charizard|Fire Blast|p2a: Daenerys Targayren
+|-activate|p2a: Daenerys Targayren|Protect
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Daenerys Targayren|368\/393|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Charizard|Fire Blast|p2a: Daenerys Targayren
+|-damage|p2a: Daenerys Targayren|0 fnt
+|faint|p2a: Daenerys Targayren
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p2a: Chesnaught|Chesnaught, F|379\/379
+|-damage|p2a: Chesnaught|356\/379|[from] Stealth Rock
+|turn|18
+|
+|move|p1a: Charizard|Focus Blast|p2a: Chesnaught
+|-immune|p2a: Chesnaught|[msg]|[from] Bulletproof
+|move|p2a: Chesnaught|Leech Seed|p1a: Charizard|[miss]
+|-miss|p2a: Chesnaught|p1a: Charizard
+|
+|-weather|none
+|-heal|p2a: Chesnaught|379\/379|[from] item: Leftovers
+|turn|19
+|
+|switch|p2a: Berristan Selmy|Slowbro, F|393\/393
+|-damage|p2a: Berristan Selmy|344\/393|[from] Stealth Rock
+|move|p1a: Charizard|Fire Blast|p2a: Berristan Selmy
+|-resisted|p2a: Berristan Selmy
+|-damage|p2a: Berristan Selmy|217\/393
+|
+|turn|20
+|
+|switch|p1a: Tyranitar|Tyranitar, M|289\/383
+|-damage|p1a: Tyranitar|242\/383|[from] Spikes
+|-weather|Sandstorm
+|detailschange|p2a: Berristan Selmy|Slowbro-Mega, F
+|message|Slowbro has Mega Evolved into Mega Slowbro!
+|move|p2a: Berristan Selmy|Calm Mind|p2a: Berristan Selmy
+|-boost|p2a: Berristan Selmy|spa|1
+|-boost|p2a: Berristan Selmy|spd|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Berristan Selmy|193\/393|[from] sandstorm
+|turn|21
+|join|Squirrelll
+|
+|move|p1a: Tyranitar|Crunch|p2a: Berristan Selmy
+|-supereffective|p2a: Berristan Selmy
+|-damage|p2a: Berristan Selmy|0 fnt
+|faint|p2a: Berristan Selmy
+|
+|-weather|Sandstorm|[upkeep]
+|-message|RSMessiii forfeited.
+|
+|win|Reverb
+|raw|Ladder updating...
+|leave|RSMessiii
+|player|p2

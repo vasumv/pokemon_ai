@@ -1,0 +1,416 @@
+|join|hifriends
+|join|SuckerforMetal
+|player|p1|hifriends|272
+|player|p2|SuckerforMetal|169
+|gametype|singles
+|tier|Pokebank OU (beta)
+|rated
+|clearpoke
+|poke|p1|Talonflame, F
+|poke|p1|Latias, F
+|poke|p1|Aegislash, M
+|poke|p1|Gyarados, M
+|poke|p1|Terrakion
+|poke|p1|Rotom-Wash
+|poke|p2|Gengar, M
+|poke|p2|Scizor, F
+|poke|p2|Hydreigon, F
+|poke|p2|Donphan, F
+|poke|p2|Rotom-Wash
+|poke|p2|Aegislash, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Terrakion|Terrakion|324\/324
+|switch|p2a: Donphan|Donphan, F|384\/384
+|turn|1
+|callback|decision
+|
+|move|p1a: Terrakion|Taunt|p2a: Donphan
+|-start|p2a: Donphan|move: Taunt
+|cant|p2a: Donphan|move: Taunt|Stealth Rock
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|299\/299
+|move|p1a: Terrakion|Stealth Rock|p2a: Rotom-Wash
+|-sidestart|p2: SuckerforMetal|move: Stealth Rock
+|
+|turn|3
+|callback|decision
+|
+|move|p1a: Terrakion|Taunt|p2a: Rotom-Wash
+|-start|p2a: Rotom-Wash|move: Taunt
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Terrakion
+|-supereffective|p1a: Terrakion
+|-damage|p1a: Terrakion|16\/324
+|
+|turn|4
+|callback|decision
+|
+|switch|p2a: Gengar|Gengar, M|262\/262
+|-damage|p2a: Gengar|230\/262|[from] Stealth Rock
+|move|p1a: Terrakion|Close Combat|p2a: Gengar
+|-immune|p2a: Gengar|[msg]
+|
+|-heal|p2a: Gengar|246\/262|[from] item: Black Sludge
+|turn|5
+|callback|decision
+|
+|move|p2a: Gengar|Substitute|p2a: Gengar
+|-start|p2a: Gengar|Substitute
+|-damage|p2a: Gengar|181\/262
+|move|p1a: Terrakion|Stone Edge|p2a: Gengar|[miss]
+|-miss|p1a: Terrakion|p2a: Gengar
+|
+|-heal|p2a: Gengar|197\/262|[from] item: Black Sludge
+|turn|6
+|callback|decision
+|
+|move|p2a: Gengar|Shadow Ball|p1a: Terrakion
+|-damage|p1a: Terrakion|0 fnt
+|faint|p1a: Terrakion
+|
+|-heal|p2a: Gengar|213\/262|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p1a: Gyarados|Gyarados, M|341\/341
+|-activate|p2a: Gengar|Substitute|ability: Intimidate|[of] p1a: Gyarados
+|turn|7
+|callback|decision
+|
+|-formechange|p1a: Gyarados|Gyarados-Mega
+|message|Gyarados has Mega Evolved into Mega Gyarados!
+|-ability|p1a: Gyarados|Mold Breaker
+|move|p2a: Gengar|Sludge Bomb|p1a: Gyarados
+|-damage|p1a: Gyarados|208\/341
+|move|p1a: Gyarados|Earthquake|p2a: Gengar
+|-supereffective|p2a: Gengar
+|-end|p2a: Gengar|Substitute
+|
+|-heal|p2a: Gengar|229\/262|[from] item: Black Sludge
+|turn|8
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, M|324\/324
+|move|p2a: Gengar|Sludge Bomb|p1a: Aegislash
+|-immune|p1a: Aegislash|[msg]
+|
+|-heal|p2a: Gengar|245\/262|[from] item: Black Sludge
+|turn|9
+|callback|decision
+|
+|switch|p2a: Donphan|Donphan, F|384\/384
+|-damage|p2a: Donphan|360\/384|[from] Stealth Rock
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Sneak|p2a: Donphan
+|-damage|p2a: Donphan|305\/384
+|
+|-heal|p2a: Donphan|329\/384|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p1a: Latias|Latias, F|302\/302
+|move|p2a: Donphan|Stealth Rock|p1a: Latias
+|-sidestart|p1: hifriends|move: Stealth Rock
+|
+|-heal|p2a: Donphan|353\/384|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p2a: Aegislash|Aegislash, M|324\/324
+|-damage|p2a: Aegislash|304\/324|[from] Stealth Rock
+|move|p1a: Latias|Surf|p2a: Aegislash
+|-damage|p2a: Aegislash|212\/324
+|-damage|p1a: Latias|272\/302|[from] item: Life Orb
+|
+|-heal|p2a: Aegislash|232\/324|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Latias|Defog|p2a: Aegislash
+|-unboost|p2a: Aegislash|evasion|1
+|-sideend|p2: SuckerforMetal|Stealth Rock|[from] move: Defog|[of] p2a: Aegislash
+|-sideend|p1: hifriends|Stealth Rock|[from] move: Defog|[of] p1a: Latias
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Iron Head|p1a: Latias
+|-damage|p1a: Latias|70\/302
+|
+|-heal|p2a: Aegislash|252\/324|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p1a: Gyarados|Gyarados, M|208\/341
+|-formechange|p1a: Gyarados|Gyarados-Mega
+|-ability|p1a: Gyarados|Mold Breaker
+|move|p2a: Aegislash|Shadow Sneak|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-damage|p1a: Gyarados|169\/341
+|
+|-heal|p2a: Aegislash|272\/324|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|299\/299
+|move|p1a: Gyarados|Earthquake|p2a: Rotom-Wash
+|-supereffective|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|15\/299
+|
+|-heal|p2a: Rotom-Wash|33\/299|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Gyarados
+|-supereffective|p1a: Gyarados
+|-damage|p1a: Gyarados|23\/341
+|callback|decision
+|
+|switch|p2a: Donphan|Donphan, F|353\/384
+|move|p1a: Gyarados|Earthquake|p2a: Donphan
+|-damage|p2a: Donphan|215\/384
+|
+|-heal|p2a: Donphan|239\/384|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p2a: Donphan|Ice Shard|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-damage|p1a: Gyarados|1\/341
+|move|p1a: Gyarados|Waterfall|p2a: Donphan
+|-supereffective|p2a: Donphan
+|-damage|p2a: Donphan|0 fnt
+|faint|p2a: Donphan
+|
+|callback|decision
+|chat|hifriends|sux
+|
+|switch|p2a: Gengar|Gengar, M|245\/262
+|turn|17
+|callback|decision
+|
+|move|p2a: Gengar|Shadow Ball|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-damage|p1a: Gyarados|0 fnt
+|faint|p1a: Gyarados
+|
+|-heal|p2a: Gengar|261\/262|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p1a: Talonflame|Talonflame, F|346\/346
+|turn|18
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|33\/299
+|move|p1a: Talonflame|Brave Bird|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|-damage|p1a: Talonflame|335\/346|[from] recoil|[of] p2a: Rotom-Wash
+|faint|p2a: Rotom-Wash
+|
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, F|344\/344
+|turn|19
+|callback|decision
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Scizor
+|-damage|p2a: Scizor|109\/344
+|-damage|p1a: Talonflame|257\/346|[from] recoil|[of] p2a: Scizor
+|move|p2a: Scizor|U-turn|p1a: Talonflame
+|-resisted|p1a: Talonflame
+|-damage|p1a: Talonflame|187\/346
+|callback|decision
+|
+|switch|p2a: Aegislash|Aegislash, M|272\/324
+|
+|-heal|p2a: Aegislash|292\/324|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|switch|p1a: Latias|Latias, F|70\/302
+|move|p2a: Aegislash|King's Shield|p2a: Aegislash
+|-fail|p2a: Aegislash
+|
+|-heal|p2a: Aegislash|312\/324|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p1a: Latias|Draco Meteor|p2a: Aegislash
+|-resisted|p2a: Aegislash
+|-damage|p2a: Aegislash|211\/324
+|-unboost|p1a: Latias|spa|2
+|-damage|p1a: Latias|40\/302|[from] item: Life Orb
+|move|p2a: Aegislash|Swords Dance|p2a: Aegislash
+|-boost|p2a: Aegislash|atk|2
+|
+|-heal|p2a: Aegislash|231\/324|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p1a: Latias|Surf|p2a: Aegislash
+|-damage|p2a: Aegislash|186\/324
+|-damage|p1a: Latias|10\/302|[from] item: Life Orb
+|move|p2a: Aegislash|Swords Dance|p2a: Aegislash
+|-boost|p2a: Aegislash|atk|2
+|
+|-heal|p2a: Aegislash|206\/324|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Shadow Sneak|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|0 fnt
+|faint|p1a: Latias
+|
+|-heal|p2a: Aegislash|226\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, M|324\/324
+|turn|24
+|callback|decision
+|
+|-formechange|p2a: Aegislash|Aegislash
+|move|p2a: Aegislash|King's Shield|p2a: Aegislash
+|-singleturn|p2a: Aegislash|Protect
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Ball|p2a: Aegislash
+|-activate|p2a: Aegislash|Protect
+|
+|-heal|p2a: Aegislash|246\/324|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|-formechange|p1a: Aegislash|Aegislash
+|move|p1a: Aegislash|King's Shield|p1a: Aegislash
+|-singleturn|p1a: Aegislash|Protect
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Shadow Sneak|p1a: Aegislash
+|-activate|p1a: Aegislash|Protect
+|-unboost|p2a: Aegislash|atk|2
+|
+|-heal|p2a: Aegislash|266\/324|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|-formechange|p2a: Aegislash|Aegislash
+|move|p2a: Aegislash|King's Shield|p2a: Aegislash
+|-singleturn|p2a: Aegislash|Protect
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Ball|p2a: Aegislash
+|-activate|p2a: Aegislash|Protect
+|
+|-heal|p2a: Aegislash|286\/324|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Shadow Sneak|p1a: Aegislash
+|-supereffective|p1a: Aegislash
+|-damage|p1a: Aegislash|0 fnt
+|faint|p1a: Aegislash
+|
+|-heal|p2a: Aegislash|306\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|turn|28
+|callback|decision
+|
+|-formechange|p2a: Aegislash|Aegislash
+|move|p2a: Aegislash|King's Shield|p2a: Aegislash
+|-singleturn|p2a: Aegislash|Protect
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Aegislash
+|-status|p2a: Aegislash|brn
+|
+|-heal|p2a: Aegislash|324\/324 brn|[from] item: Leftovers
+|-damage|p2a: Aegislash|284\/324 brn|[from] brn
+|turn|29
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Aegislash
+|-damage|p2a: Aegislash|185\/324 brn
+|move|p2a: Aegislash|Swords Dance|p2a: Aegislash
+|-boost|p2a: Aegislash|atk|2
+|
+|-heal|p2a: Aegislash|205\/324 brn|[from] item: Leftovers
+|-damage|p2a: Aegislash|165\/324 brn|[from] brn
+|turn|30
+|callback|decision
+|
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Shadow Sneak|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|181\/304
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Aegislash
+|-crit|p2a: Aegislash
+|-damage|p2a: Aegislash|0 fnt
+|faint|p2a: Aegislash
+|
+|-heal|p1a: Rotom-Wash|200\/304|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Hydreigon|Hydreigon, F|325\/325
+|turn|31
+|callback|decision
+|
+|move|p2a: Hydreigon|Draco Meteor|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|34\/304
+|-unboost|p2a: Hydreigon|spa|2
+|move|p1a: Rotom-Wash|Pain Split|p2a: Hydreigon
+|-sethp|p2a: Hydreigon|179\/325|p1a: Rotom-Wash|179\/304|[from] move: Pain Split
+|
+|-heal|p1a: Rotom-Wash|198\/304|[from] item: Leftovers
+|turn|32
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, F|109\/344
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Scizor
+|-status|p2a: Scizor|brn
+|
+|-heal|p1a: Rotom-Wash|217\/304|[from] item: Leftovers
+|-damage|p2a: Scizor|66\/344 brn|[from] brn
+|turn|33
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|faint|p2a: Scizor
+|callback|decision
+|
+|switch|p1a: Talonflame|Talonflame, F|187\/346
+|
+|callback|decision
+|
+|switch|p2a: Hydreigon|Hydreigon, F|179\/325
+|turn|34
+|callback|decision
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|-damage|p1a: Talonflame|128\/346|[from] recoil|[of] p2a: Hydreigon
+|faint|p2a: Hydreigon
+|
+|callback|decision
+|
+|switch|p2a: Gengar|Gengar, M|261\/262
+|turn|35
+|callback|decision
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Gengar
+|-damage|p2a: Gengar|0 fnt
+|-damage|p1a: Talonflame|42\/346|[from] recoil|[of] p2a: Gengar
+|faint|p2a: Gengar
+|
+|win|hifriends
+|raw|Ladder updating...
+|chat|hifriends|gg
+|raw|hifriends's rating: 1738 &rarr; <strong>1745<\/strong><br \/>(+7 for winning)
+|raw|SuckerforMetal's rating: 1720 &rarr; <strong>1714<\/strong><br \/>(-6 for losing)

@@ -1,0 +1,205 @@
+|join|hammering man
+|join|Crtl Alt Dlt
+|player|p1|hammering man|16
+|player|p2|Crtl Alt Dlt|267
+|gametype|singles
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Lanturn, F
+|poke|p1|Chesnaught, M
+|poke|p1|Mawile, F
+|poke|p1|Noivern, M
+|poke|p1|Clawitzer, F
+|poke|p1|Malamar, F
+|poke|p2|Shuckle, M
+|poke|p2|Gardevoir, F, shiny
+|poke|p2|Skarmory, M
+|poke|p2|Excadrill, M
+|poke|p2|Heatran, M
+|poke|p2|Landorus, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Clawitzer|Clawitzer, F|346\/346
+|switch|p2a: Shuckle|Shuckle, M|244\/244
+|turn|1
+|callback|decision
+|
+|move|p1a: Clawitzer|Water Pulse|p2a: Shuckle
+|-crit|p2a: Shuckle
+|-supereffective|p2a: Shuckle
+|-activate|p2a: Shuckle|Sturdy
+|-damage|p2a: Shuckle|1\/244
+|move|p2a: Shuckle|Sticky Web|p1a: Clawitzer
+|-sidestart|p1: hammering man|move: Sticky Web
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Clawitzer|Water Pulse|p2a: Shuckle
+|-supereffective|p2a: Shuckle
+|-damage|p2a: Shuckle|0 fnt
+|faint|p2a: Shuckle
+|
+|callback|decision
+|
+|switch|p2a: Gardevoir|Gardevoir, F, shiny|278\/278
+|turn|3
+|callback|decision
+|
+|-formechange|p2a: Gardevoir|Gardevoir-Mega
+|message|Gardevoir has Mega Evolved into Mega Gardevoir!
+|move|p2a: Gardevoir|Thunderbolt|p1a: Clawitzer
+|-supereffective|p1a: Clawitzer
+|-damage|p1a: Clawitzer|64\/346
+|move|p1a: Clawitzer|Sludge Bomb|p2a: Gardevoir
+|-supereffective|p2a: Gardevoir
+|-damage|p2a: Gardevoir|74\/278
+|-status|p2a: Gardevoir|psn
+|
+|-damage|p2a: Gardevoir|40\/278 psn|[from] psn
+|turn|4
+|callback|decision
+|
+|switch|p1a: Lanturn|Lanturn, F|454\/454
+|-activate|p1a: Lanturn|move: Sticky Web
+|-unboost|p1a: Lanturn|spe|1
+|move|p2a: Gardevoir|Hyper Voice|p1a: Lanturn
+|-damage|p1a: Lanturn|240\/454
+|
+|-damage|p2a: Gardevoir|6\/278 psn|[from] psn
+|turn|5
+|callback|decision
+|
+|move|p2a: Gardevoir|Hyper Voice|p1a: Lanturn
+|-crit|p1a: Lanturn
+|-damage|p1a: Lanturn|0 fnt
+|faint|p1a: Lanturn
+|
+|-damage|p2a: Gardevoir|0 fnt|[from] psn
+|faint|p2a: Gardevoir
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, M|386\/386
+|switch|p1a: Malamar|Malamar, F|376\/376
+|-activate|p1a: Malamar|move: Sticky Web
+|-boost|p1a: Malamar|spe|1
+|turn|6
+|callback|decision
+|
+|move|p1a: Malamar|Superpower|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|136\/386
+|-boost|p1a: Malamar|atk|1
+|-boost|p1a: Malamar|def|1
+|move|p2a: Heatran|Toxic|p1a: Malamar
+|-status|p1a: Malamar|tox
+|
+|-heal|p2a: Heatran|160\/386|[from] item: Leftovers
+|-damage|p1a: Malamar|353\/376 tox|[from] psn
+|turn|7
+|callback|decision
+|
+|switch|p2a: Skarmory|Skarmory, M|334\/334
+|move|p1a: Malamar|Superpower|p2a: Skarmory
+|-damage|p2a: Skarmory|229\/334
+|-damage|p1a: Malamar|291\/376 tox|[from] item: Rocky Helmet|[of] p2a: Skarmory
+|-boost|p1a: Malamar|atk|1
+|-boost|p1a: Malamar|def|1
+|
+|-damage|p1a: Malamar|245\/376 tox|[from] psn
+|turn|8
+|callback|decision
+|
+|move|p2a: Skarmory|Roost|p2a: Skarmory
+|-heal|p2a: Skarmory|334\/334
+|move|p1a: Malamar|Trick Room|p1a: Malamar
+|-fieldstart|move: Trick Room|[of] p1a: Malamar
+|
+|-damage|p1a: Malamar|176\/376 tox|[from] psn
+|-enditem|p1a: Malamar|Sitrus Berry|[eat]
+|-heal|p1a: Malamar|270\/376 tox|[from] item: Sitrus Berry
+|turn|9
+|callback|decision
+|
+|switch|p1a: Clawitzer|Clawitzer, F|64\/346
+|-activate|p1a: Clawitzer|move: Sticky Web
+|-unboost|p1a: Clawitzer|spe|1
+|move|p2a: Skarmory|Whirlwind|p1a: Clawitzer
+|drag|p1a: Noivern|Noivern, M|312\/312
+|
+|turn|10
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, M|160\/386
+|move|p1a: Noivern|Flamethrower|p2a: Heatran
+|-start|p2a: Heatran|ability: Flash Fire
+|
+|-heal|p2a: Heatran|184\/386|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p1a: Malamar|Malamar, F|270\/376 tox
+|-activate|p1a: Malamar|move: Sticky Web
+|-boost|p1a: Malamar|spe|1
+|move|p2a: Heatran|Lava Plume|p1a: Malamar
+|-damage|p1a: Malamar|11\/376 tox
+|
+|-heal|p2a: Heatran|208\/386|[from] item: Leftovers
+|-damage|p1a: Malamar|0 fnt|[from] psn
+|faint|p1a: Malamar
+|callback|decision
+|
+|switch|p1a: Clawitzer|Clawitzer, F|64\/346
+|-activate|p1a: Clawitzer|move: Sticky Web
+|-unboost|p1a: Clawitzer|spe|1
+|turn|12
+|callback|decision
+|
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-singleturn|p2a: Heatran|Protect
+|move|p1a: Clawitzer|Water Pulse|p2a: Heatran
+|-activate|p2a: Heatran|Protect
+|
+|-heal|p2a: Heatran|232\/386|[from] item: Leftovers
+|-fieldend|move: Trick Room
+|turn|13
+|callback|decision
+|
+|move|p2a: Heatran|Lava Plume|p1a: Clawitzer
+|-resisted|p1a: Clawitzer
+|-damage|p1a: Clawitzer|0 fnt
+|faint|p1a: Clawitzer
+|
+|-heal|p2a: Heatran|256\/386|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Noivern|Noivern, M|312\/312
+|turn|14
+|callback|decision
+|
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-singleturn|p2a: Heatran|Protect
+|move|p1a: Noivern|Super Fang|p2a: Heatran
+|-activate|p2a: Heatran|Protect
+|
+|-heal|p2a: Heatran|280\/386|[from] item: Leftovers
+|turn|15
+|callback|decision
+|-message|hammering man forfeited.
+|
+|win|Crtl Alt Dlt
+|raw|Ladder updating...
+|leave|hammering man
+|player|p1
+|raw|hammering man's rating: 1672 &rarr; <strong>1653<\/strong><br \/>(-19 for losing)
+|raw|Crtl Alt Dlt's rating: 1718 &rarr; <strong>1727<\/strong><br \/>(+9 for winning)

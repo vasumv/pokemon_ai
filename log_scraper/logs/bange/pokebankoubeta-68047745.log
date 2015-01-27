@@ -1,0 +1,195 @@
+|join|bange
+|join|Nintendo-Jr
+|player|p1|bange|142
+|player|p2|Nintendo-Jr|75
+|gametype|singles
+|tier|Pokebank OU (beta)
+|rated
+|clearpoke
+|poke|p1|Florges, F
+|poke|p1|Magnezone, shiny
+|poke|p1|Charizard, M
+|poke|p1|Rotom-Wash
+|poke|p1|Gliscor, M
+|poke|p1|Thundurus, M
+|poke|p2|Dusclops, M
+|poke|p2|Landorus, M
+|poke|p2|Tyranitar, F
+|poke|p2|Deoxys-Defense
+|poke|p2|Starmie
+|poke|p2|Mew
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Gliscor|Gliscor, M|354\/354
+|switch|p2a: Mew|Mew|351\/351
+|turn|1
+|callback|decision
+|
+|move|p2a: Mew|Gravity|p2a: Mew
+|-fieldstart|move: Gravity
+|move|p1a: Gliscor|Substitute|p1a: Gliscor
+|-start|p1a: Gliscor|Substitute
+|-damage|p1a: Gliscor|266\/354
+|
+|-activate|p1a: Gliscor|item: Toxic Orb
+|-status|p1a: Gliscor|tox
+|turn|2
+|callback|decision
+|
+|move|p2a: Mew|Focus Blast|p1a: Gliscor
+|-resisted|p1a: Gliscor
+|-activate|p1a: Gliscor|Substitute|[damage]
+|move|p1a: Gliscor|Stealth Rock|p2a: Mew
+|-sidestart|p2: Nintendo-Jr|move: Stealth Rock
+|
+|-heal|p1a: Gliscor|310\/354 tox|[from] ability: Poison Heal
+|turn|3
+|callback|decision
+|
+|move|p2a: Mew|Focus Blast|p1a: Gliscor
+|-resisted|p1a: Gliscor
+|-end|p1a: Gliscor|Substitute
+|move|p1a: Gliscor|Earthquake|p2a: Mew
+|-damage|p2a: Mew|231\/351
+|
+|-heal|p1a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|turn|4
+|callback|decision
+|
+|move|p2a: Mew|Focus Blast|p1a: Gliscor
+|-resisted|p1a: Gliscor
+|-damage|p1a: Gliscor|280\/354 tox
+|move|p1a: Gliscor|Substitute|p1a: Gliscor
+|-start|p1a: Gliscor|Substitute
+|-damage|p1a: Gliscor|192\/354 tox
+|
+|-heal|p1a: Gliscor|236\/354 tox|[from] ability: Poison Heal
+|turn|5
+|callback|decision
+|
+|move|p2a: Mew|Focus Blast|p1a: Gliscor
+|-crit|p1a: Gliscor
+|-resisted|p1a: Gliscor
+|-end|p1a: Gliscor|Substitute
+|move|p1a: Gliscor|Baton Pass|p1a: Gliscor
+|callback|decision
+|
+|switch|p1a: Charizard|Charizard, M|297\/297
+|
+|-fieldend|move: Gravity
+|turn|6
+|callback|decision
+|
+|-formechange|p1a: Charizard|Charizard-Mega-X
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p2a: Mew|Gravity|p2a: Mew
+|-fieldstart|move: Gravity
+|move|p1a: Charizard|Dragon Dance|p1a: Charizard
+|-boost|p1a: Charizard|atk|1
+|-boost|p1a: Charizard|spe|1
+|
+|turn|7
+|callback|decision
+|
+|move|p1a: Charizard|Flare Blitz|p2a: Mew
+|-damage|p2a: Mew|0 fnt
+|-damage|p1a: Charizard|221\/297|[from] recoil|[of] p2a: Mew
+|faint|p2a: Mew
+|
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, F|404\/404
+|-damage|p2a: Tyranitar|354\/404|[from] Stealth Rock
+|-weather|Sandstorm
+|turn|8
+|callback|decision
+|
+|move|p1a: Charizard|Brick Break|p2a: Tyranitar
+|-crit|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Charizard|203\/297|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: Deoxys-Defense|Deoxys-Defense|304\/304
+|-damage|p2a: Deoxys-Defense|266\/304|[from] Stealth Rock
+|-ability|p2a: Deoxys-Defense|Pressure
+|turn|9
+|callback|decision
+|
+|move|p1a: Charizard|Dragon Claw|p2a: Deoxys-Defense
+|-crit|p2a: Deoxys-Defense
+|-damage|p2a: Deoxys-Defense|0 fnt
+|faint|p2a: Deoxys-Defense
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Charizard|185\/297|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: Landorus|Landorus, M|319\/319
+|-damage|p2a: Landorus|280\/319|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|move|p1a: Charizard|Flare Blitz|p2a: Landorus
+|-damage|p2a: Landorus|0 fnt
+|-damage|p1a: Charizard|93\/297|[from] recoil|[of] p2a: Landorus
+|faint|p2a: Landorus
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Charizard|75\/297|[from] sandstorm
+|-fieldend|move: Gravity
+|callback|decision
+|
+|switch|p2a: Starmie|Starmie|261\/261
+|-damage|p2a: Starmie|229\/261|[from] Stealth Rock
+|turn|11
+|callback|decision
+|
+|move|p1a: Charizard|Dragon Claw|p2a: Starmie
+|-damage|p2a: Starmie|0 fnt
+|faint|p2a: Starmie
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Charizard|57\/297|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: Dusclops|Dusclops, M|284\/284
+|-damage|p2a: Dusclops|249\/284|[from] Stealth Rock
+|-ability|p2a: Dusclops|Pressure
+|turn|12
+|callback|decision
+|chat|Nintendo-Jr|gg
+|chat|bange|gg
+|
+|move|p1a: Charizard|Flare Blitz|p2a: Dusclops
+|-damage|p2a: Dusclops|29\/284
+|-damage|p1a: Charizard|0 fnt|[from] recoil|[of] p2a: Dusclops
+|faint|p1a: Charizard
+|move|p2a: Dusclops|Night Shade|p1: Charizard|[notarget]
+|-notarget
+|
+|-weather|none
+|callback|decision
+|
+|switch|p1a: Magnezone|Magnezone, shiny|320\/320
+|turn|13
+|callback|decision
+|
+|move|p1a: Magnezone|Flash Cannon|p2a: Dusclops
+|-damage|p2a: Dusclops|0 fnt
+|faint|p2a: Dusclops
+|
+|win|bange
+|raw|Ladder updating...

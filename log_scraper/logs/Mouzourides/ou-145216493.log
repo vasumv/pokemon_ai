@@ -1,0 +1,254 @@
+|join|Mouzourides
+|join|Roxie_GL
+|player|p1|Mouzourides|290
+|player|p2|Roxie_GL|279
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Pinsir, M
+|poke|p1|Aegislash, M
+|poke|p1|Landorus-Therian, M
+|poke|p1|Rotom-Wash
+|poke|p1|Heatran, F
+|poke|p1|Latios, M
+|poke|p2|Gengar, F
+|poke|p2|Amoonguss, M
+|poke|p2|Gliscor, F
+|poke|p2|Heatran, M
+|poke|p2|Scizor, M
+|poke|p2|Rotom-Wash
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Pinsir|Pinsir, M|271\/271
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|turn|1
+|
+|switch|p1a: Latios|Latios, M|301\/301
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Latios|[miss]
+|-miss|p2a: Rotom-Wash|p1a: Latios
+|
+|turn|2
+|
+|switch|p2a: Heatran|Heatran, M|386\/386
+|move|p1a: Latios|Draco Meteor|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|281\/386
+|-unboost|p1a: Latios|spa|2
+|-damage|p1a: Latios|271\/301|[from] item: Life Orb
+|
+|-heal|p2a: Heatran|305\/386|[from] item: Leftovers
+|turn|3
+|
+|move|p1a: Latios|Earthquake|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|-damage|p1a: Latios|241\/301|[from] item: Life Orb
+|faint|p2a: Heatran
+|
+|
+|switch|p2a: Gliscor|Gliscor, F|354\/354
+|turn|4
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|move|p2a: Gliscor|Substitute|p2a: Gliscor
+|-start|p2a: Gliscor|Substitute
+|-damage|p2a: Gliscor|266\/354
+|
+|-status|p2a: Gliscor|tox|[from] item: Toxic Orb
+|turn|5
+|
+|move|p2a: Gliscor|Toxic|p1a: Rotom-Wash
+|-status|p1a: Rotom-Wash|tox
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Gliscor
+|-immune|p2a: Gliscor|[msg]
+|
+|-heal|p2a: Gliscor|310\/354 tox|[from] ability: Poison Heal
+|-damage|p1a: Rotom-Wash|285\/304 tox|[from] psn
+|turn|6
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-heal|p1a: Rotom-Wash|304\/304 tox|[from] item: Leftovers
+|-heal|p2a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|-damage|p1a: Rotom-Wash|266\/304 tox|[from] psn
+|turn|7
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-activate|p2a: Gliscor|Substitute|ability: Intimidate|[of] p1a: Landorus-Therian
+|move|p2a: Gliscor|Toxic|p1a: Landorus-Therian
+|-status|p1a: Landorus-Therian|tox
+|
+|-damage|p1a: Landorus-Therian|300\/320 tox|[from] psn
+|turn|8
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Landorus-Therian|Knock Off|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-damage|p1a: Landorus-Therian|260\/320 tox|[from] psn
+|turn|9
+|
+|move|p1a: Landorus-Therian|Knock Off|p2a: Gliscor
+|-activate|p2a: Gliscor|Substitute|[damage]
+|move|p2a: Gliscor|Substitute|p2a: Gliscor
+|-fail|p2a: Gliscor|move: Substitute
+|
+|-damage|p1a: Landorus-Therian|200\/320 tox|[from] psn
+|turn|10
+|
+|switch|p1a: Aegislash|Aegislash, M|324\/324
+|move|p2a: Gliscor|Substitute|p2a: Gliscor
+|-fail|p2a: Gliscor|move: Substitute
+|
+|turn|11
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Ball|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|turn|12
+|
+|-formechange|p1a: Aegislash|Aegislash
+|move|p1a: Aegislash|King's Shield|p1a: Aegislash
+|-singleturn|p1a: Aegislash|Protect
+|move|p2a: Gliscor|Earthquake|p1a: Aegislash
+|-activate|p1a: Aegislash|Protect
+|
+|turn|13
+|
+|move|p1a: Aegislash|King's Shield|p1a: Aegislash
+|-fail|p1a: Aegislash
+|move|p2a: Gliscor|Earthquake|p1a: Aegislash
+|-supereffective|p1a: Aegislash
+|-damage|p1a: Aegislash|174\/324
+|
+|-heal|p1a: Aegislash|194\/324|[from] item: Leftovers
+|turn|14
+|
+|move|p1a: Aegislash|King's Shield|p1a: Aegislash
+|-singleturn|p1a: Aegislash|Protect
+|move|p2a: Gliscor|Earthquake|p1a: Aegislash
+|-activate|p1a: Aegislash|Protect
+|
+|-heal|p1a: Aegislash|214\/324|[from] item: Leftovers
+|turn|15
+|
+|move|p2a: Gliscor|Earthquake|p1a: Aegislash
+|-crit|p1a: Aegislash
+|-supereffective|p1a: Aegislash
+|-damage|p1a: Aegislash|0 fnt
+|faint|p1a: Aegislash
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|200\/320 tox
+|-activate|p2a: Gliscor|Substitute|ability: Intimidate|[of] p1a: Landorus-Therian
+|turn|16
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Landorus-Therian|Knock Off|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-damage|p1a: Landorus-Therian|180\/320 tox|[from] psn
+|turn|17
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|266\/304 tox
+|move|p2a: Gliscor|Substitute|p2a: Gliscor
+|-fail|p2a: Gliscor|move: Substitute
+|
+|-heal|p1a: Rotom-Wash|285\/304 tox|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|266\/304 tox|[from] psn
+|turn|18
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-heal|p1a: Rotom-Wash|285\/304 tox|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|247\/304 tox|[from] psn
+|turn|19
+|
+|move|p2a: Gliscor|Toxic|p1a: Rotom-Wash
+|-fail|p1a: Rotom-Wash|tox
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Gliscor
+|-supereffective|p2a: Gliscor
+|-end|p2a: Gliscor|Substitute
+|
+|-heal|p1a: Rotom-Wash|266\/304 tox|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|209\/304 tox|[from] psn
+|turn|20
+|
+|switch|p1a: Pinsir|Pinsir, M|271\/271
+|move|p2a: Gliscor|Substitute|p2a: Gliscor
+|-start|p2a: Gliscor|Substitute
+|-damage|p2a: Gliscor|266\/354 tox
+|
+|-heal|p2a: Gliscor|310\/354 tox|[from] ability: Poison Heal
+|turn|21
+|
+|detailschange|p1a: Pinsir|Pinsir-Mega, M
+|message|Pinsir has Mega Evolved into Mega Pinsir!
+|move|p1a: Pinsir|Return|p2a: Gliscor
+|-end|p2a: Gliscor|Substitute
+|move|p2a: Gliscor|Toxic|p1a: Pinsir
+|-status|p1a: Pinsir|tox
+|
+|-damage|p1a: Pinsir|255\/271 tox|[from] psn
+|-heal|p2a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|turn|22
+|
+|move|p1a: Pinsir|Return|p2a: Gliscor
+|-damage|p2a: Gliscor|167\/354 tox
+|move|p2a: Gliscor|Substitute|p2a: Gliscor
+|-start|p2a: Gliscor|Substitute
+|-damage|p2a: Gliscor|79\/354 tox
+|
+|-damage|p1a: Pinsir|223\/271 tox|[from] psn
+|-heal|p2a: Gliscor|123\/354 tox|[from] ability: Poison Heal
+|turn|23
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Pinsir|Swords Dance|p1a: Pinsir
+|-boost|p1a: Pinsir|atk|2
+|
+|-damage|p1a: Pinsir|175\/271 tox|[from] psn
+|-heal|p2a: Gliscor|167\/354 tox|[from] ability: Poison Heal
+|turn|24
+|
+|move|p1a: Pinsir|Return|p2a: Gliscor
+|-end|p2a: Gliscor|Substitute
+|move|p2a: Gliscor|Substitute|p2a: Gliscor
+|-start|p2a: Gliscor|Substitute
+|-damage|p2a: Gliscor|79\/354 tox
+|
+|-damage|p1a: Pinsir|111\/271 tox|[from] psn
+|-heal|p2a: Gliscor|123\/354 tox|[from] ability: Poison Heal
+|turn|25
+|-message|Mouzourides forfeited.
+|
+|win|Roxie_GL
+|raw|Ladder updating...
+|leave|Mouzourides
+|player|p1
+|raw|Mouzourides's rating: 1654 &rarr; <strong>1635<\/strong><br \/>(-19 for losing)
+|raw|Roxie_GL's rating: 1665 &rarr; <strong>1684<\/strong><br \/>(+19 for winning)

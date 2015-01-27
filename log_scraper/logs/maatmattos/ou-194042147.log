@@ -1,0 +1,465 @@
+|join|Unique Y
+|join|MaatMattos
+|player|p1|Unique Y|265
+|player|p2|MaatMattos|52
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Crobat, M
+|poke|p1|Slowbro, M
+|poke|p1|Umbreon, M
+|poke|p1|Chesnaught, F
+|poke|p1|Excadrill, M
+|poke|p1|Druddigon, F
+|poke|p2|Manaphy
+|poke|p2|Cresselia, F
+|poke|p2|Ferrothorn, F
+|poke|p2|Slowbro, M
+|poke|p2|Heatran, F
+|poke|p2|Landorus-Therian, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Druddigon|Druddigon, F|358\/358
+|switch|p2a: Manaphy|Manaphy|341\/341
+|-ability|p1a: Druddigon|Mold Breaker
+|turn|1
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|381\/381
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Druddigon
+|-unboost|p1a: Druddigon|atk|1
+|move|p1a: Druddigon|Toxic|p2a: Landorus-Therian
+|-status|p2a: Landorus-Therian|tox
+|
+|-damage|p2a: Landorus-Therian|358\/381 tox|[from] psn
+|turn|2
+|
+|move|p2a: Landorus-Therian|Stealth Rock|p1a: Druddigon
+|-sidestart|p1: Unique Y|move: Stealth Rock
+|move|p1a: Druddigon|Stealth Rock|p2a: Landorus-Therian
+|-sidestart|p2: MaatMattos|move: Stealth Rock
+|
+|-damage|p2a: Landorus-Therian|312\/381 tox|[from] psn
+|turn|3
+|
+|move|p2a: Landorus-Therian|U-turn|p1a: Druddigon
+|-damage|p1a: Druddigon|299\/358
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|351\/351
+|-damage|p2a: Ferrothorn|330\/351|[from] Stealth Rock
+|move|p1a: Druddigon|Toxic|p2a: Ferrothorn
+|-fail|p2a: Ferrothorn
+|
+|-heal|p1a: Druddigon|321\/358|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|351\/351|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Excadrill|Excadrill, M|380\/380
+|-damage|p1a: Excadrill|369\/380|[from] Stealth Rock
+|-ability|p1a: Excadrill|Mold Breaker
+|move|p2a: Ferrothorn|Knock Off|p1a: Excadrill
+|-damage|p1a: Excadrill|288\/380
+|-enditem|p1a: Excadrill|Assault Vest|[from] move: Knock Off|[of] p2a: Ferrothorn
+|
+|turn|5
+|
+|move|p1a: Excadrill|Rapid Spin|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|341\/351
+|-damage|p1a: Excadrill|241\/380|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|-sideend|p1: Unique Y|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Excadrill
+|move|p2a: Ferrothorn|Leech Seed|p1a: Excadrill
+|-start|p1a: Excadrill|move: Leech Seed
+|
+|-heal|p2a: Ferrothorn|351\/351|[from] item: Leftovers
+|-damage|p1a: Excadrill|194\/380|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|6
+|
+|switch|p1a: Chesnaught|Chesnaught, F|380\/380
+|move|p2a: Ferrothorn|Spikes|p1a: Chesnaught
+|-sidestart|p1: Unique Y|Spikes
+|
+|turn|7
+|
+|move|p1a: Chesnaught|Spikes|p2a: Ferrothorn
+|-sidestart|p2: MaatMattos|Spikes
+|move|p2a: Ferrothorn|Spikes|p1a: Chesnaught
+|-sidestart|p1: Unique Y|Spikes
+|
+|turn|8
+|
+|switch|p2a: Heatran|Heatran, F|386\/386
+|-damage|p2a: Heatran|338\/386|[from] Spikes
+|-damage|p2a: Heatran|290\/386|[from] Stealth Rock
+|move|p1a: Chesnaught|Spikes|p2a: Heatran
+|-sidestart|p2: MaatMattos|Spikes
+|
+|-heal|p2a: Heatran|314\/386|[from] item: Leftovers
+|turn|9
+|
+|move|p2a: Heatran|Stealth Rock|p1a: Chesnaught
+|-sidestart|p1: Unique Y|move: Stealth Rock
+|move|p1a: Chesnaught|Spikes|p2a: Heatran
+|-sidestart|p2: MaatMattos|Spikes
+|
+|-heal|p2a: Heatran|338\/386|[from] item: Leftovers
+|turn|10
+|
+|move|p2a: Heatran|Will-O-Wisp|p1a: Chesnaught
+|-status|p1a: Chesnaught|brn
+|move|p1a: Chesnaught|Leech Seed|p2a: Heatran
+|-start|p2a: Heatran|move: Leech Seed
+|
+|-heal|p2a: Heatran|362\/386|[from] item: Leftovers
+|-damage|p2a: Heatran|314\/386|[from] Leech Seed|[of] p1a: Chesnaught
+|-damage|p1a: Chesnaught|333\/380 brn|[from] brn
+|turn|11
+|
+|switch|p2a: Cresselia|Cresselia, F|443\/443
+|-damage|p2a: Cresselia|388\/443|[from] Stealth Rock
+|switch|p1a: Umbreon|Umbreon, M|394\/394
+|-damage|p1a: Umbreon|345\/394|[from] Stealth Rock
+|-damage|p1a: Umbreon|280\/394|[from] Spikes
+|
+|-heal|p1a: Umbreon|304\/394|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Cresselia|Reflect|p2a: Cresselia
+|-sidestart|p2: MaatMattos|Reflect
+|move|p1a: Umbreon|Heal Bell|p1a: Umbreon
+|-cureteam|p1a: Umbreon|[from] move: HealBell
+|
+|-heal|p1a: Umbreon|328\/394|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: Crobat|Crobat, M|311\/311
+|-damage|p1a: Crobat|234\/311|[from] Stealth Rock
+|move|p2a: Cresselia|Light Screen|p2a: Cresselia
+|-sidestart|p2: MaatMattos|move: Light Screen
+|
+|-heal|p1a: Crobat|253\/311|[from] item: Black Sludge
+|turn|14
+|
+|move|p1a: Crobat|Taunt|p2a: Cresselia
+|-start|p2a: Cresselia|move: Taunt
+|cant|p2a: Cresselia|move: Taunt|Thunder Wave
+|
+|-heal|p1a: Crobat|272\/311|[from] item: Black Sludge
+|turn|15
+|
+|switch|p2a: Manaphy|Manaphy|341\/341
+|-damage|p2a: Manaphy|299\/341|[from] Stealth Rock
+|-damage|p2a: Manaphy|214\/341|[from] Spikes
+|move|p1a: Crobat|Brave Bird|p2a: Manaphy
+|-damage|p2a: Manaphy|40\/341
+|-damage|p1a: Crobat|215\/311|[from] recoil|[of] p2a: Manaphy
+|
+|-heal|p1a: Crobat|234\/311|[from] item: Black Sludge
+|-heal|p2a: Manaphy|61\/341|[from] item: Leftovers
+|turn|16
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|312\/381 tox
+|-damage|p2a: Landorus-Therian|265\/381 tox|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Crobat
+|-unboost|p1a: Crobat|atk|1
+|move|p1a: Crobat|Brave Bird|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|171\/381 tox
+|-damage|p1a: Crobat|183\/311|[from] item: Rocky Helmet|[of] p2a: Landorus-Therian
+|-damage|p1a: Crobat|152\/311|[from] recoil|[of] p2a: Landorus-Therian
+|
+|-heal|p1a: Crobat|171\/311|[from] item: Black Sludge
+|-damage|p2a: Landorus-Therian|148\/381 tox|[from] psn
+|turn|17
+|
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-heal|p1a: Crobat|311\/311
+|move|p2a: Landorus-Therian|Explosion|p1a: Crobat
+|-damage|p1a: Crobat|12\/311
+|faint|p2a: Landorus-Therian
+|
+|-heal|p1a: Crobat|31\/311|[from] item: Black Sludge
+|
+|switch|p2a: Heatran|Heatran, F|314\/386
+|-damage|p2a: Heatran|218\/386|[from] Spikes
+|-damage|p2a: Heatran|170\/386|[from] Stealth Rock
+|turn|18
+|
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-heal|p1a: Crobat|187\/311
+|move|p2a: Heatran|Flamethrower|p1a: Crobat
+|-damage|p1a: Crobat|19\/311
+|
+|-heal|p1a: Crobat|38\/311|[from] item: Black Sludge
+|-heal|p2a: Heatran|194\/386|[from] item: Leftovers
+|turn|19
+|
+|move|p1a: Crobat|U-turn|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|184\/386
+|
+|switch|p1a: Umbreon|Umbreon, M|328\/394
+|-damage|p1a: Umbreon|279\/394|[from] Stealth Rock
+|-damage|p1a: Umbreon|214\/394|[from] Spikes
+|move|p2a: Heatran|Will-O-Wisp|p1a: Umbreon
+|-status|p1a: Umbreon|brn
+|
+|-heal|p2a: Heatran|208\/386|[from] item: Leftovers
+|-heal|p1a: Umbreon|238\/394 brn|[from] item: Leftovers
+|-damage|p1a: Umbreon|189\/394 brn|[from] brn
+|-sideend|p2: MaatMattos|Reflect
+|turn|20
+|
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|move|p2a: Heatran|Roar|p1a: Umbreon
+|drag|p1a: Crobat|Crobat, M|38\/311
+|-damage|p1a: Crobat|0 fnt|[from] Stealth Rock
+|faint|p1a: Crobat
+|
+|-heal|p2a: Heatran|232\/386|[from] item: Leftovers
+|-sideend|p2: MaatMattos|move: Light Screen
+|
+|switch|p1a: Excadrill|Excadrill, M|194\/380
+|-damage|p1a: Excadrill|183\/380|[from] Stealth Rock
+|-damage|p1a: Excadrill|120\/380|[from] Spikes
+|-ability|p1a: Excadrill|Mold Breaker
+|turn|21
+|
+|move|p1a: Excadrill|Rapid Spin|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|220\/386
+|-sideend|p1: Unique Y|Spikes|[from] move: Rapid Spin|[of] p1a: Excadrill
+|-sideend|p1: Unique Y|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Excadrill
+|move|p2a: Heatran|Flamethrower|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-damage|p1a: Excadrill|0 fnt
+|faint|p1a: Excadrill
+|
+|-heal|p2a: Heatran|244\/386|[from] item: Leftovers
+|
+|switch|p1a: Slowbro|Slowbro, M|394\/394
+|turn|22
+|
+|move|p2a: Heatran|Stealth Rock|p1a: Slowbro
+|-sidestart|p1: Unique Y|move: Stealth Rock
+|move|p1a: Slowbro|Scald|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|104\/386
+|
+|-heal|p2a: Heatran|128\/386|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Heatran|Will-O-Wisp|p1a: Slowbro
+|-status|p1a: Slowbro|brn
+|move|p1a: Slowbro|Scald|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|faint|p2a: Heatran
+|
+|-damage|p1a: Slowbro|345\/394 brn|[from] brn
+|
+|switch|p2a: Cresselia|Cresselia, F|388\/443
+|-damage|p2a: Cresselia|333\/443|[from] Stealth Rock
+|turn|24
+|
+|move|p2a: Cresselia|Light Screen|p2a: Cresselia
+|-sidestart|p2: MaatMattos|move: Light Screen
+|move|p1a: Slowbro|Calm Mind|p1a: Slowbro
+|-boost|p1a: Slowbro|spa|1
+|-boost|p1a: Slowbro|spd|1
+|
+|-damage|p1a: Slowbro|296\/394 brn|[from] brn
+|turn|25
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|351\/351
+|-damage|p2a: Ferrothorn|264\/351|[from] Spikes
+|-damage|p2a: Ferrothorn|243\/351|[from] Stealth Rock
+|move|p1a: Slowbro|Calm Mind|p1a: Slowbro
+|-boost|p1a: Slowbro|spa|1
+|-boost|p1a: Slowbro|spd|1
+|
+|-heal|p2a: Ferrothorn|264\/351|[from] item: Leftovers
+|-damage|p1a: Slowbro|247\/394 brn|[from] brn
+|turn|26
+|
+|switch|p1a: Umbreon|Umbreon, M|189\/394 brn
+|-damage|p1a: Umbreon|140\/394 brn|[from] Stealth Rock
+|move|p2a: Ferrothorn|Leech Seed|p1a: Umbreon
+|-start|p1a: Umbreon|move: Leech Seed
+|
+|-heal|p1a: Umbreon|164\/394 brn|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|285\/351|[from] item: Leftovers
+|-damage|p1a: Umbreon|115\/394 brn|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|334\/351|[silent]
+|-damage|p1a: Umbreon|66\/394 brn|[from] brn
+|turn|27
+|
+|move|p1a: Umbreon|Heal Bell|p1a: Umbreon
+|-cureteam|p1a: Umbreon|[from] move: HealBell
+|move|p2a: Ferrothorn|Spikes|p1a: Umbreon
+|-sidestart|p1: Unique Y|Spikes
+|
+|-heal|p1a: Umbreon|90\/394|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|351\/351|[from] item: Leftovers
+|-damage|p1a: Umbreon|41\/394|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|28
+|
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|move|p2a: Ferrothorn|Spikes|p1a: Umbreon
+|-sidestart|p1: Unique Y|Spikes
+|
+|-heal|p1a: Umbreon|65\/394|[from] item: Leftovers
+|-damage|p1a: Umbreon|16\/394|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|29
+|
+|switch|p1a: Slowbro|Slowbro, M|378\/394
+|-damage|p1a: Slowbro|329\/394|[from] Stealth Rock
+|-damage|p1a: Slowbro|264\/394|[from] Spikes
+|move|p2a: Ferrothorn|Spikes|p1a: Slowbro
+|-sidestart|p1: Unique Y|Spikes
+|
+|-heal|p1a: Slowbro|394\/394|[from] move: Wish|[wisher] Umbreon
+|turn|30
+|
+|detailschange|p1a: Slowbro|Slowbro-Mega, M
+|message|Slowbro has Mega Evolved into Mega Slowbro!
+|move|p1a: Slowbro|Calm Mind|p1a: Slowbro
+|-boost|p1a: Slowbro|spa|1
+|-boost|p1a: Slowbro|spd|1
+|move|p2a: Ferrothorn|Leech Seed|p1a: Slowbro
+|-start|p1a: Slowbro|move: Leech Seed
+|
+|-damage|p1a: Slowbro|345\/394|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|31
+|
+|switch|p2a: Cresselia|Cresselia, F|333\/443
+|-damage|p2a: Cresselia|278\/443|[from] Stealth Rock
+|move|p1a: Slowbro|Calm Mind|p1a: Slowbro
+|-boost|p1a: Slowbro|spa|1
+|-boost|p1a: Slowbro|spd|1
+|
+|-damage|p1a: Slowbro|296\/394|[from] Leech Seed|[of] p2a: Cresselia
+|-heal|p2a: Cresselia|327\/443|[silent]
+|-sideend|p2: MaatMattos|move: Light Screen
+|turn|32
+|
+|move|p2a: Cresselia|Thunder Wave|p1a: Slowbro
+|-status|p1a: Slowbro|par
+|move|p1a: Slowbro|Calm Mind|p1a: Slowbro
+|-boost|p1a: Slowbro|spa|1
+|-boost|p1a: Slowbro|spd|1
+|
+|-damage|p1a: Slowbro|247\/394 par|[from] Leech Seed|[of] p2a: Cresselia
+|-heal|p2a: Cresselia|376\/443|[silent]
+|turn|33
+|
+|move|p2a: Cresselia|Light Screen|p2a: Cresselia
+|-sidestart|p2: MaatMattos|move: Light Screen
+|move|p1a: Slowbro|Scald|p2a: Cresselia
+|-damage|p2a: Cresselia|277\/443
+|
+|-damage|p1a: Slowbro|198\/394 par|[from] Leech Seed|[of] p2a: Cresselia
+|-heal|p2a: Cresselia|326\/443|[silent]
+|turn|34
+|
+|move|p2a: Cresselia|Reflect|p2a: Cresselia
+|-sidestart|p2: MaatMattos|Reflect
+|move|p1a: Slowbro|Calm Mind|p1a: Slowbro
+|-boost|p1a: Slowbro|spa|1
+|-boost|p1a: Slowbro|spd|1
+|
+|-damage|p1a: Slowbro|149\/394 par|[from] Leech Seed|[of] p2a: Cresselia
+|-heal|p2a: Cresselia|375\/443|[silent]
+|turn|35
+|
+|switch|p2a: Slowbro|Slowbro, M|393\/393
+|-damage|p2a: Slowbro|344\/393|[from] Stealth Rock
+|-damage|p2a: Slowbro|246\/393|[from] Spikes
+|move|p1a: Slowbro|Slack Off|p1a: Slowbro
+|-heal|p1a: Slowbro|346\/394 par
+|
+|-damage|p1a: Slowbro|297\/394 par|[from] Leech Seed|[of] p2a: Slowbro
+|-heal|p2a: Slowbro|295\/393|[silent]
+|turn|36
+|
+|switch|p1a: Chesnaught|Chesnaught, F|333\/380
+|-damage|p1a: Chesnaught|310\/380|[from] Stealth Rock
+|-damage|p1a: Chesnaught|215\/380|[from] Spikes
+|detailschange|p2a: Slowbro|Slowbro-Mega, M
+|message|Slowbro has Mega Evolved into Mega Slowbro!
+|move|p2a: Slowbro|Calm Mind|p2a: Slowbro
+|-boost|p2a: Slowbro|spa|1
+|-boost|p2a: Slowbro|spd|1
+|
+|-heal|p1a: Chesnaught|238\/380|[from] item: Leftovers
+|turn|37
+|
+|move|p1a: Chesnaught|Leech Seed|p2a: Slowbro
+|-start|p2a: Slowbro|move: Leech Seed
+|move|p2a: Slowbro|Scald|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|124\/380
+|
+|-heal|p1a: Chesnaught|147\/380|[from] item: Leftovers
+|-damage|p2a: Slowbro|246\/393|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|196\/380|[silent]
+|turn|38
+|
+|move|p1a: Chesnaught|Wood Hammer|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|176\/393
+|-damage|p1a: Chesnaught|173\/380|[from] recoil|[of] p2a: Slowbro
+|move|p2a: Slowbro|Scald|p1a: Chesnaught
+|-crit|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|13\/380
+|
+|-heal|p1a: Chesnaught|36\/380|[from] item: Leftovers
+|-damage|p2a: Slowbro|127\/393|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|85\/380|[silent]
+|turn|39
+|
+|move|p1a: Chesnaught|Wood Hammer|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|61\/393
+|-damage|p1a: Chesnaught|63\/380|[from] recoil|[of] p2a: Slowbro
+|move|p2a: Slowbro|Scald|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|0 fnt
+|faint|p1a: Chesnaught
+|
+|
+|switch|p1a: Druddigon|Druddigon, F|321\/358
+|-damage|p1a: Druddigon|232\/358|[from] Spikes
+|-damage|p1a: Druddigon|188\/358|[from] Stealth Rock
+|-ability|p1a: Druddigon|Mold Breaker
+|turn|40
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|351\/351
+|-damage|p2a: Ferrothorn|330\/351|[from] Stealth Rock
+|-damage|p2a: Ferrothorn|243\/351|[from] Spikes
+|move|p1a: Druddigon|Toxic|p2a: Ferrothorn
+|-fail|p2a: Ferrothorn
+|
+|-heal|p1a: Druddigon|210\/358|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|264\/351|[from] item: Leftovers
+|-sideend|p2: MaatMattos|move: Light Screen
+|turn|41
+|-message|Unique Y forfeited.
+|
+|win|MaatMattos
+|raw|Ladder updating...
+|leave|Unique Y
+|player|p1
+|raw|Unique Y's rating: 1790 &rarr; <strong>1770<\/strong><br \/>(-20 for losing)
+|raw|MaatMattos's rating: 1791 &rarr; <strong>1811<\/strong><br \/>(+20 for winning)

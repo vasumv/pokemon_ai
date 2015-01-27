@@ -1,0 +1,253 @@
+|join|FardinFromPB
+|join|IggyRoselia
+|player|p1|FardinFromPB|102
+|player|p2|IggyRoselia|78
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Charizard, M
+|poke|p1|Ferrothorn, F
+|poke|p1|Latias, F
+|poke|p1|Azumarill, F
+|poke|p1|Gliscor, F
+|poke|p1|Rotom-Wash
+|poke|p2|Dugtrio, F, shiny
+|poke|p2|Empoleon, M, shiny
+|poke|p2|Talonflame, M, shiny
+|poke|p2|Scizor, F, shiny
+|poke|p2|Slowbro, M
+|poke|p2|Togekiss, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Gliscor|Gliscor, F|354\/354
+|switch|p2a: Scizor|Scizor, F, shiny|300\/300
+|turn|1
+|
+|move|p1a: Gliscor|Substitute|p1a: Gliscor
+|-start|p1a: Gliscor|Substitute
+|-damage|p1a: Gliscor|266\/354
+|move|p2a: Scizor|U-turn|p1a: Gliscor
+|-crit|p1a: Gliscor
+|-resisted|p1a: Gliscor
+|-end|p1a: Gliscor|Substitute
+|
+|switch|p2a: Empoleon|Empoleon, M, shiny|372\/372
+|
+|-status|p1a: Gliscor|tox|[from] item: Toxic Orb
+|turn|2
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|move|p2a: Empoleon|Stealth Rock|p1a: Rotom-Wash
+|-sidestart|p1: FardinFromPB|move: Stealth Rock
+|
+|turn|3
+|
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Empoleon
+|-status|p2a: Empoleon|brn
+|move|p2a: Empoleon|Knock Off|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|280\/304
+|-enditem|p1a: Rotom-Wash|Leftovers|[from] move: Knock Off|[of] p2a: Empoleon
+|
+|-damage|p2a: Empoleon|326\/372 brn|[from] brn
+|turn|4
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|192\/372 brn
+|
+|switch|p1a: Latias|Latias, F|302\/302
+|-damage|p1a: Latias|265\/302|[from] Stealth Rock
+|move|p2a: Empoleon|Scald|p1a: Latias
+|-resisted|p1a: Latias
+|-damage|p1a: Latias|227\/302
+|-status|p1a: Latias|brn
+|
+|-heal|p2a: Empoleon|215\/372 brn|[from] item: Leftovers
+|-damage|p1a: Latias|190\/302 brn|[from] brn
+|-damage|p2a: Empoleon|169\/372 brn|[from] brn
+|turn|5
+|
+|move|p1a: Latias|Defog|p2a: Empoleon
+|-unboost|p2a: Empoleon|evasion|1
+|-sideend|p1: FardinFromPB|Stealth Rock|[from] move: Defog|[of] p1a: Latias
+|move|p2a: Empoleon|Knock Off|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|120\/302 brn
+|-enditem|p1a: Latias|Life Orb|[from] move: Knock Off|[of] p2a: Empoleon
+|
+|-heal|p2a: Empoleon|192\/372 brn|[from] item: Leftovers
+|-damage|p1a: Latias|83\/302 brn|[from] brn
+|-damage|p2a: Empoleon|146\/372 brn|[from] brn
+|turn|6
+|
+|move|p1a: Latias|Draco Meteor|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|77\/372 brn
+|-unboost|p1a: Latias|spa|2
+|move|p2a: Empoleon|Stealth Rock|p1a: Latias
+|-sidestart|p1: FardinFromPB|move: Stealth Rock
+|
+|-heal|p2a: Empoleon|100\/372 brn|[from] item: Leftovers
+|-damage|p1a: Latias|46\/302 brn|[from] brn
+|-damage|p2a: Empoleon|54\/372 brn|[from] brn
+|turn|7
+|
+|switch|p2a: Scizor|Scizor, F, shiny|300\/300
+|move|p1a: Latias|Defog|p2a: Scizor
+|-unboost|p2a: Scizor|evasion|1
+|-sideend|p1: FardinFromPB|Stealth Rock|[from] move: Defog|[of] p1a: Latias
+|
+|-damage|p1a: Latias|9\/302 brn|[from] brn
+|turn|8
+|
+|move|p1a: Latias|Healing Wish|p1a: Latias
+|faint|p1a: Latias
+|move|p2a: Scizor|U-turn|p1: Latias|[notarget]
+|-notarget
+|
+|
+|switch|p1a: Gliscor|Gliscor, F|266\/354 tox
+|-heal|p1a: Gliscor|354\/354|[from] move: Healing Wish
+|turn|9
+|
+|switch|p2a: Slowbro|Slowbro, M|394\/394
+|move|p1a: Gliscor|Substitute|p1a: Gliscor
+|-start|p1a: Gliscor|Substitute
+|-damage|p1a: Gliscor|266\/354
+|
+|-status|p1a: Gliscor|tox|[from] item: Toxic Orb
+|turn|10
+|
+|detailschange|p2a: Slowbro|Slowbro-Mega, M
+|message|Slowbro has Mega Evolved into Mega Slowbro!
+|move|p1a: Gliscor|Toxic|p2a: Slowbro
+|-status|p2a: Slowbro|tox
+|move|p2a: Slowbro|Scald|p1a: Gliscor
+|-supereffective|p1a: Gliscor
+|-end|p1a: Gliscor|Substitute
+|
+|-heal|p1a: Gliscor|310\/354 tox|[from] ability: Poison Heal
+|-damage|p2a: Slowbro|370\/394 tox|[from] psn
+|turn|11
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|280\/304
+|move|p2a: Slowbro|Scald|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|219\/304
+|
+|-damage|p2a: Slowbro|322\/394 tox|[from] psn
+|turn|12
+|
+|switch|p2a: Empoleon|Empoleon, M, shiny|54\/372 brn
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|0 fnt
+|faint|p2a: Empoleon
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|352\/352
+|
+|
+|switch|p2a: Scizor|Scizor, F, shiny|300\/300
+|turn|13
+|
+|move|p1a: Ferrothorn|Protect|p1a: Ferrothorn
+|-singleturn|p1a: Ferrothorn|Protect
+|move|p2a: Scizor|Superpower|p1a: Ferrothorn
+|-activate|p1a: Ferrothorn|Protect
+|
+|turn|14
+|
+|switch|p2a: Slowbro|Slowbro-Mega, M|322\/394 tox
+|switch|p1a: Gliscor|Gliscor, F|310\/354 tox
+|
+|-heal|p1a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|-damage|p2a: Slowbro|298\/394 tox|[from] psn
+|turn|15
+|
+|move|p1a: Gliscor|Substitute|p1a: Gliscor
+|-start|p1a: Gliscor|Substitute
+|-damage|p1a: Gliscor|266\/354 tox
+|move|p2a: Slowbro|Scald|p1a: Gliscor
+|-supereffective|p1a: Gliscor
+|-end|p1a: Gliscor|Substitute
+|
+|-heal|p1a: Gliscor|310\/354 tox|[from] ability: Poison Heal
+|-damage|p2a: Slowbro|250\/394 tox|[from] psn
+|turn|16
+|
+|switch|p2a: Togekiss|Togekiss, M|374\/374
+|move|p1a: Gliscor|Substitute|p1a: Gliscor
+|-start|p1a: Gliscor|Substitute
+|-damage|p1a: Gliscor|222\/354 tox
+|
+|-heal|p1a: Gliscor|266\/354 tox|[from] ability: Poison Heal
+|turn|17
+|
+|move|p1a: Gliscor|Toxic|p2a: Togekiss
+|-status|p2a: Togekiss|tox
+|move|p2a: Togekiss|Air Slash|p1a: Gliscor
+|-end|p1a: Gliscor|Substitute
+|
+|-heal|p1a: Gliscor|310\/354 tox|[from] ability: Poison Heal
+|-damage|p2a: Togekiss|351\/374 tox|[from] psn
+|turn|18
+|
+|move|p1a: Gliscor|Protect|p1a: Gliscor
+|-singleturn|p1a: Gliscor|Protect
+|move|p2a: Togekiss|Nasty Plot|p2a: Togekiss
+|-boost|p2a: Togekiss|spa|2
+|
+|-heal|p2a: Togekiss|374\/374 tox|[from] item: Leftovers
+|-heal|p1a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|-damage|p2a: Togekiss|328\/374 tox|[from] psn
+|turn|19
+|
+|move|p1a: Gliscor|Substitute|p1a: Gliscor
+|-start|p1a: Gliscor|Substitute
+|-damage|p1a: Gliscor|266\/354 tox
+|move|p2a: Togekiss|Air Slash|p1a: Gliscor
+|-end|p1a: Gliscor|Substitute
+|
+|-heal|p2a: Togekiss|351\/374 tox|[from] item: Leftovers
+|-heal|p1a: Gliscor|310\/354 tox|[from] ability: Poison Heal
+|-damage|p2a: Togekiss|282\/374 tox|[from] psn
+|turn|20
+|
+|move|p1a: Gliscor|Protect|p1a: Gliscor
+|-singleturn|p1a: Gliscor|Protect
+|move|p2a: Togekiss|Air Slash|p1a: Gliscor
+|-activate|p1a: Gliscor|Protect
+|
+|-heal|p2a: Togekiss|305\/374 tox|[from] item: Leftovers
+|-heal|p1a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|-damage|p2a: Togekiss|213\/374 tox|[from] psn
+|turn|21
+|
+|move|p1a: Gliscor|Substitute|p1a: Gliscor
+|-start|p1a: Gliscor|Substitute
+|-damage|p1a: Gliscor|266\/354 tox
+|move|p2a: Togekiss|Air Slash|p1a: Gliscor
+|-end|p1a: Gliscor|Substitute
+|
+|-heal|p2a: Togekiss|236\/374 tox|[from] item: Leftovers
+|-heal|p1a: Gliscor|310\/354 tox|[from] ability: Poison Heal
+|-damage|p2a: Togekiss|121\/374 tox|[from] psn
+|turn|22
+|-message|IggyRoselia forfeited.
+|
+|win|FardinFromPB
+|raw|Ladder updating...
+|leave|IggyRoselia
+|player|p2

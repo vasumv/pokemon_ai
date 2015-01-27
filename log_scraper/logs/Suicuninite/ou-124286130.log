@@ -1,0 +1,356 @@
+|join|Suicuninite
+|join|Shizou
+|player|p1|Suicuninite|92
+|player|p2|Shizou|148
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Landorus-Therian, M
+|poke|p1|Charizard, M
+|poke|p1|Tentacruel, M
+|poke|p1|Ferrothorn, M
+|poke|p1|Azumarill, F
+|poke|p1|Bisharp, M, shiny
+|poke|p2|Greninja, M
+|poke|p2|Kyurem-Black
+|poke|p2|Venusaur, M
+|poke|p2|Garchomp, F
+|poke|p2|Zapdos
+|poke|p2|Landorus, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|320\/320
+|switch|p2a: Kyurem-Black|Kyurem-Black|391\/391
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Kyurem-Black
+|-unboost|p2a: Kyurem-Black|atk|1
+|-ability|p2a: Kyurem-Black|Teravolt
+|turn|1
+|
+|switch|p2a: Venusaur|Venusaur, M|364\/364
+|move|p1a: Landorus-Therian|Stone Edge|p2a: Venusaur
+|-damage|p2a: Venusaur|256\/364
+|
+|turn|2
+|join|Hackspeon
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|352\/352
+|detailschange|p2a: Venusaur|Venusaur-Mega, M
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p2a: Venusaur|Leech Seed|p1a: Ferrothorn
+|-immune|p1a: Ferrothorn|[msg]
+|
+|turn|3
+|
+|move|p2a: Venusaur|Hidden Power|p1a: Ferrothorn
+|-supereffective|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|184\/352
+|move|p1a: Ferrothorn|Stealth Rock|p2a: Venusaur
+|-sidestart|p2: Shizou|move: Stealth Rock
+|
+|-heal|p1a: Ferrothorn|206\/352|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Charizard|Charizard, M|297\/297
+|move|p2a: Venusaur|Hidden Power|p1a: Charizard
+|-resisted|p1a: Charizard
+|-damage|p1a: Charizard|264\/297
+|
+|turn|5
+|
+|switch|p2a: Garchomp|Garchomp, F|358\/358
+|-damage|p2a: Garchomp|336\/358|[from] Stealth Rock
+|detailschange|p1a: Charizard|Charizard-Mega-Y, M
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p1a: Charizard|Fire Blast|p2a: Garchomp
+|-resisted|p2a: Garchomp
+|-damage|p2a: Garchomp|139\/358
+|
+|-weather|SunnyDay|[upkeep]
+|turn|6
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Garchomp
+|-unboost|p2a: Garchomp|atk|1
+|move|p2a: Garchomp|Stealth Rock|p1a: Landorus-Therian
+|-sidestart|p1: Suicuninite|move: Stealth Rock
+|
+|-weather|SunnyDay|[upkeep]
+|turn|7
+|
+|switch|p2a: Zapdos|Zapdos|384\/384
+|-damage|p2a: Zapdos|288\/384|[from] Stealth Rock
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Landorus-Therian|Knock Off|p2a: Zapdos
+|-damage|p2a: Zapdos|138\/384
+|-enditem|p2a: Zapdos|Leftovers|[from] move: Knock Off|[of] p1a: Landorus-Therian
+|
+|-weather|SunnyDay|[upkeep]
+|turn|8
+|
+|switch|p1a: Tentacruel|Tentacruel, M|364\/364
+|-damage|p1a: Tentacruel|319\/364|[from] Stealth Rock
+|move|p2a: Zapdos|Roost|p2a: Zapdos
+|-heal|p2a: Zapdos|330\/384
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Tentacruel|341\/364|[from] item: Black Sludge
+|turn|9
+|
+|move|p2a: Zapdos|Heat Wave|p1a: Tentacruel
+|-crit|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|278\/364
+|move|p1a: Tentacruel|Toxic|p2a: Zapdos
+|-status|p2a: Zapdos|tox
+|
+|-weather|none
+|-heal|p1a: Tentacruel|300\/364|[from] item: Black Sludge
+|-damage|p2a: Zapdos|306\/384 tox|[from] psn
+|turn|10
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-damage|p1a: Landorus-Therian|280\/320|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Zapdos
+|-unboost|p2a: Zapdos|atk|1
+|move|p2a: Zapdos|Thunderbolt|p1a: Landorus-Therian
+|-immune|p1a: Landorus-Therian|[msg]
+|
+|-damage|p2a: Zapdos|258\/384 tox|[from] psn
+|turn|11
+|
+|move|p1a: Landorus-Therian|Stone Edge|p2a: Zapdos
+|-supereffective|p2a: Zapdos
+|-damage|p2a: Zapdos|0 fnt
+|faint|p2a: Zapdos
+|
+|
+|switch|p2a: Venusaur|Venusaur-Mega, M|256\/364
+|-damage|p2a: Venusaur|211\/364|[from] Stealth Rock
+|turn|12
+|
+|switch|p1a: Tentacruel|Tentacruel, M|300\/364
+|-damage|p1a: Tentacruel|255\/364|[from] Stealth Rock
+|switch|p2a: Garchomp|Garchomp, F|139\/358
+|-damage|p2a: Garchomp|117\/358|[from] Stealth Rock
+|
+|-heal|p1a: Tentacruel|277\/364|[from] item: Black Sludge
+|turn|13
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|206\/352
+|-damage|p1a: Ferrothorn|184\/352|[from] Stealth Rock
+|move|p2a: Garchomp|Earthquake|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|64\/352
+|
+|-heal|p1a: Ferrothorn|86\/352|[from] item: Leftovers
+|turn|14
+|
+|switch|p2a: Venusaur|Venusaur-Mega, M|211\/364
+|-damage|p2a: Venusaur|166\/364|[from] Stealth Rock
+|move|p1a: Ferrothorn|Leech Seed|p2a: Venusaur
+|-immune|p2a: Venusaur|[msg]
+|
+|-heal|p1a: Ferrothorn|108\/352|[from] item: Leftovers
+|turn|15
+|chat|Hackspeon|such mind games
+|
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|348\/364
+|move|p1a: Ferrothorn|Thunder Wave|p2a: Venusaur
+|-status|p2a: Venusaur|par
+|
+|-heal|p1a: Ferrothorn|130\/352|[from] item: Leftovers
+|turn|16
+|chat|Suicuninite|for sure
+|
+|switch|p1a: Tentacruel|Tentacruel, M|277\/364
+|-damage|p1a: Tentacruel|232\/364|[from] Stealth Rock
+|move|p2a: Venusaur|Leech Seed|p1a: Tentacruel
+|-start|p1a: Tentacruel|move: Leech Seed
+|
+|-heal|p1a: Tentacruel|254\/364|[from] item: Black Sludge
+|-damage|p1a: Tentacruel|209\/364|[from] Leech Seed|[of] p2a: Venusaur
+|-damage|p2a: Venusaur|303\/364 par|[from] ability: Liquid Ooze|[of] p1a: Tentacruel
+|turn|17
+|
+|move|p1a: Tentacruel|Rapid Spin|p2a: Venusaur
+|-damage|p2a: Venusaur|295\/364 par
+|-end|p1a: Tentacruel|Leech Seed|[from] move: Rapid Spin|[of] p1a: Tentacruel
+|-sideend|p1: Suicuninite|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Tentacruel
+|move|p2a: Venusaur|Giga Drain|p1a: Tentacruel
+|-damage|p1a: Tentacruel|142\/364
+|-damage|p2a: Venusaur|261\/364 par|[from] ability: Liquid Ooze|[of] p1a: Tentacruel
+|
+|-heal|p1a: Tentacruel|164\/364|[from] item: Black Sludge
+|turn|18
+|
+|switch|p1a: Charizard|Charizard-Mega-Y, M|264\/297
+|-weather|SunnyDay
+|cant|p2a: Venusaur|par
+|
+|-weather|SunnyDay|[upkeep]
+|turn|19
+|
+|switch|p2a: Greninja|Greninja, M|286\/286
+|-damage|p2a: Greninja|251\/286|[from] Stealth Rock
+|move|p1a: Charizard|Fire Blast|p2a: Greninja
+|-resisted|p2a: Greninja
+|-damage|p2a: Greninja|15\/286
+|
+|-weather|SunnyDay|[upkeep]
+|turn|20
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|130\/352
+|-start|p2a: Greninja|typechange|Psychic|[from] Protean
+|move|p2a: Greninja|Extrasensory|p1a: Ferrothorn
+|-crit|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|46\/352
+|-damage|p2a: Greninja|0 fnt|[from] item: Life Orb
+|faint|p2a: Greninja
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Ferrothorn|68\/352|[from] item: Leftovers
+|
+|switch|p2a: Landorus|Landorus, M|320\/320
+|-damage|p2a: Landorus|280\/320|[from] Stealth Rock
+|turn|21
+|
+|move|p2a: Landorus|Psychic|p1a: Ferrothorn
+|-crit|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|0 fnt
+|faint|p1a: Ferrothorn
+|
+|-weather|SunnyDay|[upkeep]
+|chat|Suicuninite|crit probably mattered xD
+|
+|switch|p1a: Charizard|Charizard-Mega-Y, M|264\/297
+|turn|22
+|
+|move|p2a: Landorus|Psychic|p1a: Charizard
+|-crit|p1a: Charizard
+|-damage|p1a: Charizard|35\/297
+|move|p1a: Charizard|Fire Blast|p2a: Landorus
+|-damage|p2a: Landorus|0 fnt
+|faint|p2a: Landorus
+|
+|-weather|none
+|chat|Suicuninite|another crit, yeesh
+|
+|switch|p2a: Kyurem-Black|Kyurem-Black|391\/391
+|-damage|p2a: Kyurem-Black|294\/391|[from] Stealth Rock
+|-ability|p2a: Kyurem-Black|Teravolt
+|turn|23
+|
+|switch|p1a: Azumarill|Azumarill, F|404\/404
+|move|p2a: Kyurem-Black|Ice Beam|p1a: Azumarill
+|-resisted|p1a: Azumarill
+|-damage|p1a: Azumarill|313\/404
+|
+|-heal|p2a: Kyurem-Black|318\/391|[from] item: Leftovers
+|turn|24
+|
+|move|p2a: Kyurem-Black|Substitute|p2a: Kyurem-Black
+|-start|p2a: Kyurem-Black|Substitute
+|-damage|p2a: Kyurem-Black|221\/391
+|move|p1a: Azumarill|Play Rough|p2a: Kyurem-Black
+|-supereffective|p2a: Kyurem-Black
+|-end|p2a: Kyurem-Black|Substitute
+|
+|-heal|p2a: Kyurem-Black|245\/391|[from] item: Leftovers
+|turn|25
+|
+|move|p2a: Kyurem-Black|Fusion Bolt|p1a: Azumarill
+|-supereffective|p1a: Azumarill
+|-damage|p1a: Azumarill|7\/404
+|-enditem|p1a: Azumarill|Sitrus Berry|[eat]
+|-heal|p1a: Azumarill|108\/404|[from] item: Sitrus Berry
+|move|p1a: Azumarill|Play Rough|p2a: Kyurem-Black|[miss]
+|-miss|p1a: Azumarill|p2a: Kyurem-Black
+|
+|-heal|p2a: Kyurem-Black|269\/391|[from] item: Leftovers
+|turn|26
+|chat|Suicuninite|:\/...
+|chat|Shizou|dat luck
+|
+|move|p1a: Azumarill|Aqua Jet|p2a: Kyurem-Black
+|-resisted|p2a: Kyurem-Black
+|-damage|p2a: Kyurem-Black|226\/391
+|move|p2a: Kyurem-Black|Fusion Bolt|p1a: Azumarill
+|-supereffective|p1a: Azumarill
+|-damage|p1a: Azumarill|0 fnt
+|faint|p1a: Azumarill
+|
+|-heal|p2a: Kyurem-Black|250\/391|[from] item: Leftovers
+|chat|Suicuninite|between the crits and that miss, this is just not going my way
+|chat|Suicuninite|but it happens
+|chat|Shizou|yep
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|280\/320
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Kyurem-Black
+|-unboost|p2a: Kyurem-Black|atk|1
+|turn|27
+|
+|switch|p2a: Venusaur|Venusaur-Mega, M|261\/364 par
+|-damage|p2a: Venusaur|216\/364 par|[from] Stealth Rock
+|move|p1a: Landorus-Therian|Stone Edge|p2a: Venusaur
+|-crit|p2a: Venusaur
+|-damage|p2a: Venusaur|89\/364 par
+|
+|turn|28
+|
+|move|p1a: Landorus-Therian|Stone Edge|p2a: Venusaur
+|-damage|p2a: Venusaur|0 fnt
+|faint|p2a: Venusaur
+|
+|
+|switch|p2a: Garchomp|Garchomp, F|117\/358
+|-damage|p2a: Garchomp|95\/358|[from] Stealth Rock
+|turn|29
+|
+|switch|p1a: Tentacruel|Tentacruel, M|164\/364
+|move|p2a: Garchomp|Outrage|p1a: Tentacruel
+|-damage|p1a: Tentacruel|0 fnt
+|faint|p1a: Tentacruel
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|280\/320
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Garchomp
+|-unboost|p2a: Garchomp|atk|1
+|turn|30
+|
+|move|p2a: Garchomp|Outrage|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|130\/320
+|move|p1a: Landorus-Therian|Earthquake|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|faint|p2a: Garchomp
+|
+|
+|switch|p2a: Kyurem-Black|Kyurem-Black|250\/391
+|-damage|p2a: Kyurem-Black|153\/391|[from] Stealth Rock
+|-ability|p2a: Kyurem-Black|Teravolt
+|turn|31
+|
+|move|p1a: Landorus-Therian|Earthquake|p2a: Kyurem-Black
+|-damage|p2a: Kyurem-Black|0 fnt
+|faint|p2a: Kyurem-Black
+|
+|win|Suicuninite
+|raw|Ladder updating...
+|raw|Suicuninite's rating: 1548 &rarr; <strong>1566<\/strong><br \/>(+18 for winning)
+|raw|Shizou's rating: 1510 &rarr; <strong>1493<\/strong><br \/>(-17 for losing)
+|chat|Suicuninite|those rocks paying dividends, good game
+|chat|Shizou|lol gg
+|leave|Shizou
+|player|p2

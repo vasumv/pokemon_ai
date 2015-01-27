@@ -1,0 +1,315 @@
+|join|SuckerforMetal
+|join|Mlmaudit
+|player|p1|SuckerforMetal|101
+|player|p2|Mlmaudit|117
+|gametype|singles
+|tier|Pokebank OU (beta)
+|rated
+|clearpoke
+|poke|p1|Gengar, M
+|poke|p1|Scizor, M
+|poke|p1|Rotom-Wash
+|poke|p1|Hydreigon, F
+|poke|p1|Aegislash, F
+|poke|p1|Donphan, M
+|poke|p2|Trevenant, M
+|poke|p2|Greninja, F
+|poke|p2|Tyranitar, F
+|poke|p2|Excadrill, F
+|poke|p2|Talonflame, M
+|poke|p2|Venusaur, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Hydreigon|Hydreigon, F|325\/325
+|switch|p2a: Venusaur|Venusaur, F|364\/364
+|turn|1
+|callback|decision
+|
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p1a: Hydreigon|Fire Blast|p2a: Venusaur|[miss]
+|-miss|p1a: Hydreigon|p2a: Venusaur
+|move|p2a: Venusaur|Sludge Bomb|p1a: Hydreigon
+|-damage|p1a: Hydreigon|166\/325
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Hydreigon|Fire Blast|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|213\/364
+|move|p2a: Venusaur|Sludge Bomb|p1a: Hydreigon
+|-damage|p1a: Hydreigon|1\/325
+|-status|p1a: Hydreigon|psn
+|
+|-damage|p1a: Hydreigon|0 fnt|[from] psn
+|faint|p1a: Hydreigon
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, M|344\/344
+|turn|3
+|callback|decision
+|
+|-formechange|p1a: Scizor|Scizor-Mega
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p2a: Venusaur|Hidden Power|p1a: Scizor
+|-supereffective|p1a: Scizor
+|-damage|p1a: Scizor|64\/344
+|move|p1a: Scizor|Swords Dance|p1a: Scizor
+|-boost|p1a: Scizor|atk|2
+|
+|turn|4
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Venusaur
+|-damage|p2a: Venusaur|2\/364
+|move|p2a: Venusaur|Hidden Power|p1a: Scizor
+|-supereffective|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|faint|p1a: Scizor
+|
+|callback|decision
+|
+|switch|p1a: Donphan|Donphan, M|384\/384
+|turn|5
+|callback|decision
+|
+|move|p1a: Donphan|Ice Shard|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|0 fnt
+|faint|p2a: Venusaur
+|
+|callback|decision
+|
+|switch|p2a: Greninja|Greninja, F|286\/286
+|turn|6
+|callback|decision
+|
+|-start|p2a: Greninja|typechange|Ground|[from] Protean
+|move|p2a: Greninja|Spikes|p1a: Donphan
+|-sidestart|p1: SuckerforMetal|Spikes
+|move|p1a: Donphan|Earthquake|p2a: Greninja
+|-damage|p2a: Greninja|46\/286
+|
+|turn|7
+|callback|decision
+|
+|-start|p2a: Greninja|typechange|Ice|[from] Protean
+|move|p2a: Greninja|Ice Beam|p1a: Donphan
+|-supereffective|p1a: Donphan
+|-activate|p1a: Donphan|Sturdy
+|-damage|p1a: Donphan|1\/384
+|-damage|p2a: Greninja|18\/286|[from] item: Life Orb
+|move|p1a: Donphan|Stealth Rock|p2a: Greninja
+|-sidestart|p2: Mlmaudit|move: Stealth Rock
+|
+|-heal|p1a: Donphan|25\/384|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p1a: Donphan|Ice Shard|p2a: Greninja
+|-resisted|p2a: Greninja
+|-damage|p2a: Greninja|0 fnt
+|faint|p2a: Greninja
+|
+|-heal|p1a: Donphan|49\/384|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Trevenant|Trevenant, M|374\/374
+|-damage|p2a: Trevenant|328\/374|[from] Stealth Rock
+|turn|9
+|callback|decision
+|
+|move|p1a: Donphan|Ice Shard|p2a: Trevenant
+|-supereffective|p2a: Trevenant
+|-damage|p2a: Trevenant|232\/374
+|move|p2a: Trevenant|Will-O-Wisp|p1a: Donphan
+|-status|p1a: Donphan|brn
+|
+|-heal|p1a: Donphan|73\/384 brn|[from] item: Leftovers
+|-damage|p1a: Donphan|25\/384 brn|[from] brn
+|turn|10
+|callback|decision
+|
+|move|p1a: Donphan|Ice Shard|p2a: Trevenant
+|-supereffective|p2a: Trevenant
+|-damage|p2a: Trevenant|186\/374
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|279\/374|[from] item: Sitrus Berry
+|move|p2a: Trevenant|Substitute|p2a: Trevenant
+|-start|p2a: Trevenant|Substitute
+|-damage|p2a: Trevenant|186\/374
+|
+|-heal|p1a: Donphan|49\/384 brn|[from] item: Leftovers
+|-damage|p1a: Donphan|1\/384 brn|[from] brn
+|turn|11
+|callback|decision
+|
+|move|p1a: Donphan|Ice Shard|p2a: Trevenant
+|-supereffective|p2a: Trevenant
+|-activate|p2a: Trevenant|Substitute|[damage]
+|move|p2a: Trevenant|Phantom Force|p1a: Donphan|[still]
+|-prepare|p2a: Trevenant|Phantom Force|p1a: Donphan
+|
+|-heal|p1a: Donphan|25\/384 brn|[from] item: Leftovers
+|-damage|p1a: Donphan|0 fnt|[from] brn
+|faint|p1a: Donphan
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|269\/269
+|turn|12
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Trevenant|[miss]
+|-miss|p1a: Rotom-Wash|p2a: Trevenant
+|move|p2a: Trevenant|Phantom Force|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|157\/269
+|
+|turn|13
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Trevenant
+|-resisted|p2a: Trevenant
+|-end|p2a: Trevenant|Substitute
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, M|262\/262
+|move|p2a: Trevenant|Will-O-Wisp|p1a: Gengar
+|-status|p1a: Gengar|brn
+|
+|-damage|p1a: Gengar|230\/262 brn|[from] brn
+|-item|p2a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|279\/374|[from] item: Sitrus Berry
+|turn|14
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, F|404\/404
+|-damage|p2a: Tyranitar|354\/404|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p1a: Gengar|Shadow Ball|p2a: Tyranitar
+|-crit|p2a: Tyranitar
+|-resisted|p2a: Tyranitar
+|-damage|p2a: Tyranitar|301\/404
+|-unboost|p2a: Tyranitar|spd|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gengar|214\/262 brn|[from] sandstorm
+|-heal|p1a: Gengar|230\/262 brn|[from] item: Black Sludge
+|-heal|p2a: Tyranitar|326\/404|[from] item: Leftovers
+|-damage|p1a: Gengar|198\/262 brn|[from] brn
+|turn|15
+|callback|decision
+|
+|move|p1a: Gengar|Substitute|p1a: Gengar
+|-start|p1a: Gengar|Substitute
+|-damage|p1a: Gengar|133\/262 brn
+|move|p2a: Tyranitar|Pursuit|p1a: Gengar
+|-supereffective|p1a: Gengar
+|-end|p1a: Gengar|Substitute
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gengar|117\/262 brn|[from] sandstorm
+|-heal|p1a: Gengar|133\/262 brn|[from] item: Black Sludge
+|-heal|p2a: Tyranitar|351\/404|[from] item: Leftovers
+|-damage|p1a: Gengar|101\/262 brn|[from] brn
+|turn|16
+|callback|decision
+|
+|move|p1a: Gengar|Pain Split|p2a: Tyranitar
+|-sethp|p2a: Tyranitar|226\/404|p1a: Gengar|226\/262 brn|[from] move: Pain Split
+|move|p2a: Tyranitar|Crunch|p1a: Gengar
+|-supereffective|p1a: Gengar
+|-damage|p1a: Gengar|0 fnt
+|faint|p1a: Gengar
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Tyranitar|251\/404|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|157\/269
+|turn|17
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|9\/404
+|move|p2a: Tyranitar|Pursuit|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|94\/269
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-Wash|78\/269|[from] sandstorm
+|-heal|p2a: Tyranitar|34\/404|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|-weather|none
+|callback|decision
+|
+|switch|p2a: Trevenant|Trevenant, M|279\/374
+|-damage|p2a: Trevenant|233\/374|[from] Stealth Rock
+|turn|19
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Trevenant
+|-resisted|p2a: Trevenant
+|-damage|p2a: Trevenant|140\/374
+|move|p2a: Trevenant|Will-O-Wisp|p1a: Rotom-Wash
+|-status|p1a: Rotom-Wash|brn
+|
+|-damage|p1a: Rotom-Wash|45\/269 brn|[from] brn
+|turn|20
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Trevenant
+|-resisted|p2a: Trevenant
+|-damage|p2a: Trevenant|56\/374
+|move|p2a: Trevenant|Will-O-Wisp|p1a: Rotom-Wash|[miss]
+|-miss|p2a: Trevenant|p1a: Rotom-Wash
+|
+|-damage|p1a: Rotom-Wash|12\/269 brn|[from] brn
+|turn|21
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Trevenant
+|-resisted|p2a: Trevenant
+|-damage|p2a: Trevenant|0 fnt
+|faint|p2a: Trevenant
+|
+|-damage|p1a: Rotom-Wash|0 fnt|[from] brn
+|faint|p1a: Rotom-Wash
+|callback|decision
+|
+|switch|p2a: Excadrill|Excadrill, F|362\/362
+|-damage|p2a: Excadrill|351\/362|[from] Stealth Rock
+|switch|p1a: Aegislash|Aegislash, F|324\/324
+|-damage|p1a: Aegislash|284\/324|[from] Spikes
+|turn|22
+|callback|decision
+|
+|move|p2a: Excadrill|Earthquake|p1a: Aegislash
+|-crit|p1a: Aegislash
+|-supereffective|p1a: Aegislash
+|-damage|p1a: Aegislash|0 fnt
+|-damage|p2a: Excadrill|315\/362|[from] item: Life Orb
+|faint|p1a: Aegislash
+|
+|win|Mlmaudit
+|raw|Ladder updating...
+|raw|SuckerforMetal's rating: 1776 &rarr; <strong>1764<\/strong><br \/>(-12 for losing)
+|raw|Mlmaudit's rating: 1705 &rarr; <strong>1711<\/strong><br \/>(+6 for winning)
+|leave|SuckerforMetal
+|player|p1

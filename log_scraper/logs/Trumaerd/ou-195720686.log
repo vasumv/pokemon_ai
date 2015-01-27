@@ -1,0 +1,309 @@
+|join|doodlmyr
+|join|Trumaerd
+|player|p1|doodlmyr|101
+|player|p2|Trumaerd|1
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Dragonite, M
+|poke|p1|Mew
+|poke|p1|Chesnaught, F
+|poke|p1|Charizard, F
+|poke|p1|Clefable, F
+|poke|p1|Raikou
+|poke|p2|Azelf
+|poke|p2|Thundurus, M
+|poke|p2|Landorus, M
+|poke|p2|Gyarados, F
+|poke|p2|Manaphy
+|poke|p2|Klefki, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Dragonite|Dragonite, M|362\/362
+|switch|p2a: Azelf|Azelf|291\/291
+|turn|1
+|
+|move|p1a: Dragonite|Extreme Speed|p2a: Azelf
+|-damage|p2a: Azelf|44\/291
+|move|p2a: Azelf|Taunt|p1a: Dragonite
+|-start|p1a: Dragonite|move: Taunt
+|
+|turn|2
+|
+|switch|p2a: Klefki|Klefki, M|318\/318
+|move|p1a: Dragonite|Extreme Speed|p2a: Klefki
+|-resisted|p2a: Klefki
+|-damage|p2a: Klefki|257\/318
+|
+|turn|3
+|
+|switch|p1a: Mew|Mew|404\/404
+|move|p2a: Klefki|Light Screen|p2a: Klefki
+|-sidestart|p2: Trumaerd|move: Light Screen
+|
+|turn|4
+|
+|switch|p2a: Manaphy|Manaphy|404\/404
+|move|p1a: Mew|Knock Off|p2a: Manaphy
+|-damage|p2a: Manaphy|321\/404
+|-enditem|p2a: Manaphy|Leftovers|[from] move: Knock Off|[of] p1a: Mew
+|
+|turn|5
+|
+|move|p1a: Mew|Will-O-Wisp|p2a: Manaphy
+|-status|p2a: Manaphy|brn
+|move|p2a: Manaphy|Tail Glow|p2a: Manaphy
+|-boost|p2a: Manaphy|spa|3
+|
+|-damage|p2a: Manaphy|271\/404 brn|[from] brn
+|turn|6
+|
+|move|p1a: Mew|Defog|p2a: Manaphy
+|-unboost|p2a: Manaphy|evasion|1
+|-sideend|p2: Trumaerd|move: Light Screen
+|-sideend|p2: Trumaerd|Light Screen|[from] move: Defog|[of] p2a: Manaphy
+|move|p2a: Manaphy|Rain Dance|p2a: Manaphy
+|-weather|RainDance
+|
+|-weather|RainDance|[upkeep]
+|-curestatus|p2a: Manaphy|brn
+|turn|7
+|
+|switch|p1a: Raikou|Raikou|321\/321
+|-ability|p1a: Raikou|Pressure
+|move|p2a: Manaphy|Scald|p1a: Raikou
+|-crit|p1a: Raikou
+|-damage|p1a: Raikou|0 fnt
+|faint|p1a: Raikou
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p1a: Charizard|Charizard, F|297\/297
+|turn|8
+|
+|switch|p2a: Azelf|Azelf|44\/291
+|detailschange|p1a: Charizard|Charizard-Mega-Y, F
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p1a: Charizard|Solar Beam|p2a: Azelf|[still]
+|-prepare|p1a: Charizard|Solar Beam|p2a: Azelf
+|-anim|p1a: Charizard|Solar Beam|p2a: Azelf
+|-damage|p2a: Azelf|0 fnt
+|faint|p2a: Azelf
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p2a: Thundurus|Thundurus, M|299\/299
+|turn|9
+|
+|switch|p1a: Mew|Mew|404\/404
+|move|p2a: Thundurus|Thunderbolt|p1a: Mew
+|-damage|p1a: Mew|256\/404
+|-damage|p2a: Thundurus|270\/299|[from] item: Life Orb
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Mew|281\/404|[from] item: Leftovers
+|turn|10
+|
+|move|p2a: Thundurus|Knock Off|p1a: Mew
+|-supereffective|p1a: Mew
+|-damage|p1a: Mew|57\/404
+|-enditem|p1a: Mew|Leftovers|[from] move: Knock Off|[of] p2a: Thundurus
+|-damage|p2a: Thundurus|241\/299|[from] item: Life Orb
+|move|p1a: Mew|Soft-Boiled|p1a: Mew
+|-heal|p1a: Mew|259\/404
+|
+|-weather|SunnyDay|[upkeep]
+|turn|11
+|
+|switch|p2a: Gyarados|Gyarados, F|331\/331
+|-ability|p2a: Gyarados|Intimidate|[of] p1a: Mew
+|-unboost|p1a: Mew|atk|1
+|move|p1a: Mew|Soft-Boiled|p1a: Mew
+|-heal|p1a: Mew|404\/404
+|
+|-weather|SunnyDay|[upkeep]
+|turn|12
+|
+|move|p1a: Mew|Will-O-Wisp|p2a: Gyarados
+|-status|p2a: Gyarados|brn
+|move|p2a: Gyarados|Taunt|p1a: Mew
+|-start|p1a: Mew|move: Taunt
+|
+|-weather|none
+|-damage|p2a: Gyarados|290\/331 brn|[from] brn
+|turn|13
+|c|âdoodlmyr|hmm
+|c|âdoodlmyr|that speed
+|
+|switch|p1a: Chesnaught|Chesnaught, F|380\/380
+|detailschange|p2a: Gyarados|Gyarados-Mega, F
+|message|Gyarados has Mega Evolved into Mega Gyarados!
+|-ability|p2a: Gyarados|Mold Breaker
+|move|p2a: Gyarados|Crunch|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|342\/380
+|
+|-heal|p1a: Chesnaught|365\/380|[from] item: Leftovers
+|-damage|p2a: Gyarados|249\/331 brn|[from] brn
+|turn|14
+|
+|switch|p2a: Landorus|Landorus, M|319\/319
+|move|p1a: Chesnaught|Leech Seed|p2a: Landorus
+|-start|p2a: Landorus|move: Leech Seed
+|
+|-heal|p1a: Chesnaught|380\/380|[from] item: Leftovers
+|-damage|p2a: Landorus|280\/319|[from] Leech Seed|[of] p1a: Chesnaught
+|turn|15
+|
+|switch|p1a: Mew|Mew|404\/404
+|move|p2a: Landorus|Calm Mind|p2a: Landorus
+|-boost|p2a: Landorus|spa|1
+|-boost|p2a: Landorus|spd|1
+|
+|-damage|p2a: Landorus|241\/319|[from] Leech Seed|[of] p1a: Mew
+|turn|16
+|
+|move|p2a: Landorus|Earth Power|p1a: Mew
+|-crit|p1a: Mew
+|-damage|p1a: Mew|0 fnt
+|faint|p1a: Mew
+|
+|c|âdoodlmyr|oof
+|c|âdoodlmyr|that crit
+|
+|switch|p1a: Dragonite|Dragonite, M|362\/362
+|turn|17
+|
+|switch|p2a: Gyarados|Gyarados-Mega, F|249\/331 brn
+|-ability|p2a: Gyarados|Mold Breaker
+|move|p1a: Dragonite|Extreme Speed|p2a: Gyarados
+|-damage|p2a: Gyarados|92\/331 brn
+|
+|-damage|p2a: Gyarados|51\/331 brn|[from] brn
+|turn|18
+|
+|move|p1a: Dragonite|Extreme Speed|p2a: Gyarados
+|-damage|p2a: Gyarados|0 fnt
+|faint|p2a: Gyarados
+|
+|
+|switch|p2a: Klefki|Klefki, M|257\/318
+|turn|19
+|
+|switch|p1a: Charizard|Charizard-Mega-Y, F|297\/297
+|-weather|SunnyDay
+|move|p2a: Klefki|Thunder Wave|p1a: Charizard
+|-status|p1a: Charizard|par
+|
+|-weather|SunnyDay|[upkeep]
+|turn|20
+|
+|move|p2a: Klefki|Spikes|p1a: Charizard
+|-sidestart|p1: doodlmyr|Spikes
+|move|p1a: Charizard|Solar Beam|p2a: Klefki|[still]
+|-prepare|p1a: Charizard|Solar Beam|p2a: Klefki
+|-anim|p1a: Charizard|Solar Beam|p2a: Klefki
+|-resisted|p2a: Klefki
+|-damage|p2a: Klefki|166\/318
+|
+|-weather|SunnyDay|[upkeep]
+|turn|21
+|c|âdoodlmyr|wp
+|
+|move|p2a: Klefki|Spikes|p1a: Charizard
+|-sidestart|p1: doodlmyr|Spikes
+|move|p1a: Charizard|Flamethrower|p2a: Klefki
+|-supereffective|p2a: Klefki
+|-damage|p2a: Klefki|0 fnt
+|faint|p2a: Klefki
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p2a: Thundurus|Thundurus, M|241\/299
+|turn|22
+|
+|switch|p1a: Chesnaught|Chesnaught, F|380\/380
+|-damage|p1a: Chesnaught|317\/380|[from] Spikes
+|move|p2a: Thundurus|Thunderbolt|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|196\/380
+|-damage|p2a: Thundurus|212\/299|[from] item: Life Orb
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Chesnaught|219\/380|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Thundurus|Hidden Power|p1a: Chesnaught
+|-crit|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-damage|p1a: Chesnaught|0 fnt
+|-damage|p2a: Thundurus|183\/299|[from] item: Life Orb
+|faint|p1a: Chesnaught
+|
+|-weather|none
+|
+|switch|p1a: Dragonite|Dragonite, M|362\/362
+|turn|24
+|c|âdoodlmyr|gg
+|
+|move|p1a: Dragonite|Extreme Speed|p2a: Thundurus
+|-damage|p2a: Thundurus|0 fnt
+|faint|p2a: Thundurus
+|
+|
+|switch|p2a: Manaphy|Manaphy|271\/404
+|turn|25
+|
+|move|p1a: Dragonite|Extreme Speed|p2a: Manaphy
+|-damage|p2a: Manaphy|111\/404
+|move|p2a: Manaphy|Scald|p1a: Dragonite
+|-resisted|p1a: Dragonite
+|-damage|p1a: Dragonite|332\/362
+|
+|turn|26
+|
+|move|p1a: Dragonite|Extreme Speed|p2a: Manaphy
+|-damage|p2a: Manaphy|0 fnt
+|faint|p2a: Manaphy
+|
+|
+|switch|p2a: Landorus|Landorus, M|241\/319
+|turn|27
+|
+|move|p1a: Dragonite|Extreme Speed|p2a: Landorus
+|-damage|p2a: Landorus|68\/319
+|move|p2a: Landorus|Psychic|p1a: Dragonite
+|-damage|p1a: Dragonite|176\/362
+|
+|turn|28
+|
+|move|p2a: Landorus|Psychic|p1a: Dragonite
+|-damage|p1a: Dragonite|20\/362
+|move|p1a: Dragonite|Struggle|p2a: Landorus
+|-damage|p2a: Landorus|0 fnt
+|-damage|p1a: Dragonite|0 fnt
+|faint|p2a: Landorus
+|faint|p1a: Dragonite
+|
+|win|doodlmyr
+|raw|Ladder updating...
+|raw|doodlmyr's rating: 1601 &rarr; <strong>1617<\/strong><br \/>(+16 for winning)
+|raw|Trumaerd's rating: 1539 &rarr; <strong>1523<\/strong><br \/>(-16 for losing)
+|c|âdoodlmyr|LOOOOOOOOL
+|c|âdoodlmyr|LOOOOOOOOOOOOOOOOOOOL
+|leave|Trumaerd
+|player|p2
+|c|âdoodlmyr|LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOL

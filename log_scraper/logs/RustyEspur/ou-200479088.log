@@ -1,0 +1,382 @@
+|join|RustyEspur
+|join|MetaFalken
+|player|p1|RustyEspur|172
+|player|p2|MetaFalken|163
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Lopunny, M
+|poke|p1|Gothitelle, F
+|poke|p1|Heatran, M
+|poke|p1|Gengar, F
+|poke|p1|Clefable, M
+|poke|p1|Scizor, F
+|poke|p2|Scizor, M
+|poke|p2|Rotom-Wash
+|poke|p2|Landorus-Therian, M
+|poke|p2|Lopunny, M
+|poke|p2|Latios, M
+|poke|p2|Porygon2
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Lopunny|Lopunny, M|271\/271
+|switch|p2a: Rotom-Wash|Rotom-Wash|303\/303
+|turn|1
+|
+|detailschange|p1a: Lopunny|Lopunny-Mega, M
+|-mega|p1a: Lopunny|Lopunny|Lopunnite
+|move|p1a: Lopunny|Fake Out|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|252\/303
+|cant|p2a: Rotom-Wash|flinch
+|
+|-heal|p2a: Rotom-Wash|270\/303|[from] item: Leftovers
+|turn|2
+|
+|move|p1a: Lopunny|Baton Pass|p1a: Lopunny
+|
+|switch|p1a: Gothitelle|Gothitelle, F|281\/281
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Gothitelle
+|-damage|p1a: Gothitelle|202\/281
+|
+|switch|p2a: Scizor|Scizor, M|343\/343
+|
+|turn|3
+|
+|move|p2a: Scizor|Pursuit|p1a: Gothitelle|[from]Pursuit
+|-supereffective|p1a: Gothitelle
+|-damage|p1a: Gothitelle|0 fnt
+|faint|p1a: Gothitelle
+|
+|
+|switch|p1a: Heatran|Heatran, M|386\/386
+|turn|4
+|
+|switch|p2a: Porygon2|Porygon2|374\/374
+|-ability|p2a: Porygon2|Flash Fire|[from] ability: Trace|[of] p1a: Heatran
+|move|p1a: Heatran|Stealth Rock|p2a: Porygon2
+|-sidestart|p2: MetaFalken|move: Stealth Rock
+|
+|turn|5
+|
+|move|p1a: Heatran|Toxic|p2a: Porygon2
+|-status|p2a: Porygon2|tox
+|move|p2a: Porygon2|Thunder Wave|p1a: Heatran
+|-status|p1a: Heatran|par
+|
+|-damage|p2a: Porygon2|351\/374 tox|[from] psn
+|turn|6
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|345\/345
+|-damage|p2a: Landorus-Therian|302\/345|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Heatran
+|-unboost|p1a: Heatran|atk|1
+|move|p1a: Heatran|Toxic|p2a: Landorus-Therian
+|-status|p2a: Landorus-Therian|tox
+|
+|-heal|p2a: Landorus-Therian|323\/345 tox|[from] item: Leftovers
+|-damage|p2a: Landorus-Therian|302\/345 tox|[from] psn
+|turn|7
+|
+|switch|p1a: Gengar|Gengar, F|261\/261
+|move|p2a: Landorus-Therian|Stealth Rock|p1a: Gengar
+|-sidestart|p1: RustyEspur|move: Stealth Rock
+|
+|-heal|p2a: Landorus-Therian|323\/345 tox|[from] item: Leftovers
+|-damage|p2a: Landorus-Therian|281\/345 tox|[from] psn
+|turn|8
+|
+|switch|p2a: Porygon2|Porygon2|351\/374 tox
+|-damage|p2a: Porygon2|305\/374 tox|[from] Stealth Rock
+|-ability|p2a: Porygon2|Levitate|[from] ability: Trace|[of] p1a: Gengar
+|move|p1a: Gengar|Shadow Ball|p2a: Porygon2
+|-immune|p2a: Porygon2|[msg]
+|
+|-damage|p2a: Porygon2|282\/374 tox|[from] psn
+|turn|9
+|
+|switch|p1a: Heatran|Heatran, M|386\/386 par
+|-damage|p1a: Heatran|338\/386 par|[from] Stealth Rock
+|move|p2a: Porygon2|Thunder Wave|p1a: Heatran
+|-fail|p1a: Heatran|par
+|
+|-heal|p1a: Heatran|362\/386 par|[from] item: Leftovers
+|-damage|p2a: Porygon2|236\/374 tox|[from] psn
+|turn|10
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|281\/345 tox
+|-damage|p2a: Landorus-Therian|238\/345 tox|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Heatran
+|-unboost|p1a: Heatran|atk|1
+|move|p1a: Heatran|Lava Plume|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|100\/345 tox
+|
+|-heal|p2a: Landorus-Therian|121\/345 tox|[from] item: Leftovers
+|-heal|p1a: Heatran|386\/386 par|[from] item: Leftovers
+|-damage|p2a: Landorus-Therian|100\/345 tox|[from] psn
+|turn|11
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Landorus-Therian|Knock Off|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-heal|p2a: Landorus-Therian|121\/345 tox|[from] item: Leftovers
+|-damage|p2a: Landorus-Therian|79\/345 tox|[from] psn
+|turn|12
+|
+|switch|p1a: Clefable|Clefable, M|394\/394
+|move|p2a: Landorus-Therian|Earthquake|p1a: Clefable
+|-damage|p1a: Clefable|219\/394
+|
+|-heal|p2a: Landorus-Therian|100\/345 tox|[from] item: Leftovers
+|-heal|p1a: Clefable|243\/394|[from] item: Leftovers
+|-damage|p2a: Landorus-Therian|37\/345 tox|[from] psn
+|turn|13
+|
+|move|p2a: Landorus-Therian|Knock Off|p1a: Clefable
+|-crit|p1a: Clefable
+|-resisted|p1a: Clefable
+|-damage|p1a: Clefable|158\/394
+|-enditem|p1a: Clefable|Leftovers|[from] move: Knock Off|[of] p2a: Landorus-Therian
+|move|p1a: Clefable|Soft-Boiled|p1a: Clefable
+|-heal|p1a: Clefable|355\/394
+|
+|-heal|p2a: Landorus-Therian|58\/345 tox|[from] item: Leftovers
+|-damage|p2a: Landorus-Therian|0 fnt|[from] psn
+|faint|p2a: Landorus-Therian
+|
+|switch|p2a: Scizor|Scizor, M|343\/343
+|-damage|p2a: Scizor|301\/343|[from] Stealth Rock
+|turn|14
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Clefable
+|-supereffective|p1a: Clefable
+|-damage|p1a: Clefable|0 fnt
+|faint|p1a: Clefable
+|
+|
+|switch|p1a: Scizor|Scizor, F|343\/343
+|-damage|p1a: Scizor|301\/343|[from] Stealth Rock
+|turn|15
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|270\/303
+|-damage|p2a: Rotom-Wash|233\/303|[from] Stealth Rock
+|move|p1a: Scizor|U-turn|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|88\/303
+|
+|switch|p1a: Lopunny|Lopunny-Mega, M|271\/271
+|-damage|p1a: Lopunny|255\/271|[from] Stealth Rock
+|
+|-heal|p2a: Rotom-Wash|106\/303|[from] item: Leftovers
+|turn|16
+|
+|move|p1a: Lopunny|Return|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|
+|switch|p2a: Latios|Latios, M|301\/301
+|-damage|p2a: Latios|264\/301|[from] Stealth Rock
+|turn|17
+|
+|switch|p1a: Heatran|Heatran, M|386\/386 par
+|-damage|p1a: Heatran|338\/386 par|[from] Stealth Rock
+|move|p2a: Latios|Psyshock|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|252\/386 par
+|-damage|p2a: Latios|234\/301|[from] item: Life Orb
+|
+|-heal|p1a: Heatran|276\/386 par|[from] item: Leftovers
+|turn|18
+|
+|switch|p2a: Porygon2|Porygon2|236\/374 tox
+|-damage|p2a: Porygon2|190\/374 tox|[from] Stealth Rock
+|-ability|p2a: Porygon2|Flash Fire|[from] ability: Trace|[of] p1a: Heatran
+|switch|p1a: Scizor|Scizor, F|301\/343
+|-damage|p1a: Scizor|259\/343|[from] Stealth Rock
+|
+|-damage|p2a: Porygon2|167\/374 tox|[from] psn
+|turn|19
+|
+|move|p1a: Scizor|Superpower|p2a: Porygon2
+|-supereffective|p2a: Porygon2
+|-damage|p2a: Porygon2|0 fnt
+|-unboost|p1a: Scizor|atk|1
+|-unboost|p1a: Scizor|def|1
+|faint|p2a: Porygon2
+|
+|
+|switch|p2a: Lopunny|Lopunny, M|271\/271
+|-damage|p2a: Lopunny|238\/271|[from] Stealth Rock
+|turn|20
+|
+|switch|p1a: Gengar|Gengar, F|261\/261
+|-damage|p1a: Gengar|229\/261|[from] Stealth Rock
+|detailschange|p2a: Lopunny|Lopunny-Mega, M
+|-mega|p2a: Lopunny|Lopunny|Lopunnite
+|move|p2a: Lopunny|Fake Out|p1a: Gengar
+|-damage|p1a: Gengar|114\/261
+|
+|turn|21
+|
+|move|p2a: Lopunny|Return|p1a: Gengar
+|-damage|p1a: Gengar|0 fnt
+|faint|p1a: Gengar
+|
+|
+|switch|p1a: Scizor|Scizor, F|259\/343
+|-damage|p1a: Scizor|217\/343|[from] Stealth Rock
+|turn|22
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Lopunny
+|-damage|p2a: Lopunny|58\/271
+|move|p2a: Lopunny|High Jump Kick|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|faint|p1a: Scizor
+|
+|
+|switch|p1a: Lopunny|Lopunny-Mega, M|255\/271
+|-damage|p1a: Lopunny|239\/271|[from] Stealth Rock
+|turn|23
+|
+|switch|p2a: Scizor|Scizor, M|301\/343
+|-damage|p2a: Scizor|259\/343|[from] Stealth Rock
+|move|p1a: Lopunny|Fake Out|p2a: Scizor
+|-resisted|p2a: Scizor
+|-damage|p2a: Scizor|224\/343
+|
+|turn|24
+|
+|switch|p1a: Heatran|Heatran, M|276\/386 par
+|-damage|p1a: Heatran|228\/386 par|[from] Stealth Rock
+|move|p2a: Scizor|Bullet Punch|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|188\/386 par
+|
+|-heal|p1a: Heatran|212\/386 par|[from] item: Leftovers
+|turn|25
+|
+|switch|p2a: Latios|Latios, M|234\/301
+|-damage|p2a: Latios|197\/301|[from] Stealth Rock
+|cant|p1a: Heatran|par
+|
+|-heal|p1a: Heatran|236\/386 par|[from] item: Leftovers
+|turn|26
+|
+|move|p2a: Latios|Psyshock|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|145\/386 par
+|-damage|p2a: Latios|167\/301|[from] item: Life Orb
+|move|p1a: Heatran|Toxic|p2a: Latios
+|-status|p2a: Latios|tox
+|
+|-heal|p1a: Heatran|169\/386 par|[from] item: Leftovers
+|-damage|p2a: Latios|149\/301 tox|[from] psn
+|turn|27
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Latios|Recover|p2a: Latios
+|-heal|p2a: Latios|300\/301 tox
+|
+|-heal|p1a: Heatran|193\/386 par|[from] item: Leftovers
+|-damage|p2a: Latios|264\/301 tox|[from] psn
+|turn|28
+|
+|move|p2a: Latios|Psyshock|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|105\/386 par
+|-damage|p2a: Latios|234\/301 tox|[from] item: Life Orb
+|cant|p1a: Heatran|par
+|
+|-heal|p1a: Heatran|129\/386 par|[from] item: Leftovers
+|-damage|p2a: Latios|180\/301 tox|[from] psn
+|turn|29
+|
+|move|p2a: Latios|Psyshock|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|46\/386 par
+|-damage|p2a: Latios|150\/301 tox|[from] item: Life Orb
+|move|p1a: Heatran|Lava Plume|p2a: Latios
+|-resisted|p2a: Latios
+|-damage|p2a: Latios|100\/301 tox
+|
+|-heal|p1a: Heatran|70\/386 par|[from] item: Leftovers
+|-damage|p2a: Latios|28\/301 tox|[from] psn
+|turn|30
+|
+|move|p2a: Latios|Recover|p2a: Latios
+|-heal|p2a: Latios|179\/301 tox
+|move|p1a: Heatran|Lava Plume|p2a: Latios
+|-resisted|p2a: Latios
+|-damage|p2a: Latios|123\/301 tox
+|
+|-heal|p1a: Heatran|94\/386 par|[from] item: Leftovers
+|-damage|p2a: Latios|33\/301 tox|[from] psn
+|turn|31
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Latios|Draco Meteor|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-heal|p1a: Heatran|118\/386 par|[from] item: Leftovers
+|-damage|p2a: Latios|0 fnt|[from] psn
+|faint|p2a: Latios
+|
+|switch|p2a: Lopunny|Lopunny-Mega, M|58\/271
+|-damage|p2a: Lopunny|42\/271|[from] Stealth Rock
+|turn|32
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-fail|p1a: Heatran
+|move|p2a: Lopunny|High Jump Kick|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|
+|switch|p1a: Lopunny|Lopunny-Mega, M|239\/271
+|-damage|p1a: Lopunny|223\/271|[from] Stealth Rock
+|turn|33
+|
+|switch|p2a: Scizor|Scizor, M|224\/343
+|-damage|p2a: Scizor|182\/343|[from] Stealth Rock
+|move|p1a: Lopunny|High Jump Kick|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|faint|p2a: Scizor
+|
+|
+|switch|p2a: Lopunny|Lopunny-Mega, M|42\/271
+|-damage|p2a: Lopunny|26\/271|[from] Stealth Rock
+|turn|34
+|
+|move|p2a: Lopunny|Fake Out|p1a: Lopunny
+|-damage|p1a: Lopunny|144\/271
+|cant|p1a: Lopunny|flinch
+|
+|turn|35
+|
+|move|p1a: Lopunny|Return|p2a: Lopunny
+|-damage|p2a: Lopunny|0 fnt
+|faint|p2a: Lopunny
+|
+|win|RustyEspur
+|raw|Ladder updating...
+|raw|RustyEspur's rating: 1482 &rarr; <strong>1498<\/strong><br \/>(+16 for winning)
+|raw|MetaFalken's rating: 1397 &rarr; <strong>1382<\/strong><br \/>(-15 for losing)
+|c|âRustyEspur|gg
+|leave|MetaFalken
+|player|p2

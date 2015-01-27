@@ -1,0 +1,537 @@
+|join|Pseudo
+|join|SuckerforMetal
+|player|p1|Pseudo|1
+|player|p2|SuckerforMetal|163
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Hippowdon, M, shiny
+|poke|p1|Salamence, M
+|poke|p1|Magnezone
+|poke|p1|Heatran, F
+|poke|p1|Jellicent, M
+|poke|p1|Celebi
+|poke|p2|Terrakion
+|poke|p2|Metagross
+|poke|p2|Gyarados, M
+|poke|p2|Infernape, M
+|poke|p2|Vaporeon, M
+|poke|p2|Celebi
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Hippowdon|Hippowdon, M, shiny|420\/420
+|switch|p2a: Vaporeon|Vaporeon, M|464\/464
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Hippowdon
+|turn|1
+|callback|decision
+|
+|switch|p1a: Jellicent|Jellicent, M|404\/404
+|move|p2a: Vaporeon|Ice Beam|p1a: Jellicent
+|-resisted|p1a: Jellicent
+|-damage|p1a: Jellicent|377\/404
+|-status|p1a: Jellicent|frz
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Vaporeon|435\/464|[from] sandstorm
+|-damage|p1a: Jellicent|352\/404 frz|[from] sandstorm
+|-heal|p2a: Vaporeon|464\/464|[from] item: Leftovers
+|-heal|p1a: Jellicent|377\/404 frz|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p2a: Celebi|Celebi|404\/404
+|cant|p1a: Jellicent|frz
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Celebi|379\/404|[from] sandstorm
+|-damage|p1a: Jellicent|352\/404 frz|[from] sandstorm
+|-heal|p1a: Jellicent|377\/404 frz|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p1a: Magnezone|Magnezone|343\/343
+|-item|p1a: Magnezone|Air Balloon
+|move|p2a: Celebi|Giga Drain|p1a: Magnezone
+|-crit|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-damage|p1a: Magnezone|247\/343
+|-heal|p2a: Celebi|404\/404|[from] drain|[of] p1a: Magnezone
+|-enditem|p1a: Magnezone|Air Balloon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Celebi|379\/404|[from] sandstorm
+|turn|4
+|callback|decision
+|
+|move|p2a: Celebi|Thunder Wave|p1a: Magnezone
+|-status|p1a: Magnezone|par
+|move|p1a: Magnezone|Substitute|p1a: Magnezone
+|-start|p1a: Magnezone|Substitute
+|-damage|p1a: Magnezone|162\/343 par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Celebi|354\/404|[from] sandstorm
+|turn|5
+|callback|decision
+|
+|move|p2a: Celebi|Giga Drain|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-activate|p1a: Magnezone|Substitute|[damage]
+|-heal|p2a: Celebi|376\/404|[from] drain|[of] p1a: Magnezone
+|move|p1a: Magnezone|Hidden Power|p2a: Celebi
+|-supereffective|p2a: Celebi
+|-damage|p2a: Celebi|234\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Celebi|209\/404|[from] sandstorm
+|turn|6
+|callback|decision
+|
+|move|p2a: Celebi|Recover|p2a: Celebi
+|-heal|p2a: Celebi|404\/404
+|move|p1a: Magnezone|Hidden Power|p2a: Celebi
+|-supereffective|p2a: Celebi
+|-damage|p2a: Celebi|268\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Celebi|243\/404|[from] sandstorm
+|turn|7
+|callback|decision
+|
+|move|p2a: Celebi|Giga Drain|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-end|p1a: Magnezone|Substitute
+|-heal|p2a: Celebi|264\/404|[from] drain|[of] p1a: Magnezone
+|move|p1a: Magnezone|Charge Beam|p2a: Celebi
+|-resisted|p2a: Celebi
+|-damage|p2a: Celebi|230\/404
+|-boost|p1a: Magnezone|spa|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Celebi|205\/404|[from] sandstorm
+|turn|8
+|callback|decision
+|
+|move|p2a: Celebi|Giga Drain|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-damage|p1a: Magnezone|111\/343 par
+|-heal|p2a: Celebi|231\/404|[from] drain|[of] p1a: Magnezone
+|cant|p1a: Magnezone|par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Celebi|206\/404|[from] sandstorm
+|turn|9
+|callback|decision
+|
+|move|p2a: Celebi|Giga Drain|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-damage|p1a: Magnezone|62\/343 par
+|-heal|p2a: Celebi|231\/404|[from] drain|[of] p1a: Magnezone
+|move|p1a: Magnezone|Hidden Power|p2a: Celebi
+|-supereffective|p2a: Celebi
+|-damage|p2a: Celebi|41\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Celebi|16\/404|[from] sandstorm
+|turn|10
+|callback|decision
+|
+|move|p2a: Celebi|Recover|p2a: Celebi
+|-heal|p2a: Celebi|218\/404
+|move|p1a: Magnezone|Charge Beam|p2a: Celebi
+|-resisted|p2a: Celebi
+|-damage|p2a: Celebi|166\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Celebi|141\/404|[from] sandstorm
+|turn|11
+|callback|decision
+|
+|move|p2a: Celebi|U-turn|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-damage|p1a: Magnezone|40\/343 par
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, M|464\/464
+|cant|p1a: Magnezone|par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Vaporeon|435\/464|[from] sandstorm
+|-heal|p2a: Vaporeon|464\/464|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: Vaporeon|Scald|p1a: Magnezone
+|-damage|p1a: Magnezone|0 fnt
+|faint|p1a: Magnezone
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Vaporeon|435\/464|[from] sandstorm
+|-heal|p2a: Vaporeon|464\/464|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Jellicent|Jellicent, M|377\/404 frz
+|turn|13
+|callback|decision
+|
+|move|p2a: Vaporeon|Scald|p1a: Jellicent
+|-heal|p1a: Jellicent|404\/404 frz|[from] ability: Water Absorb|[of] p2a: Vaporeon
+|-curestatus|p1a: Jellicent|frz
+|move|p1a: Jellicent|Toxic|p2a: Vaporeon
+|-status|p2a: Vaporeon|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Vaporeon|435\/464 tox|[from] sandstorm
+|-damage|p1a: Jellicent|379\/404|[from] sandstorm
+|-heal|p2a: Vaporeon|464\/464 tox|[from] item: Leftovers
+|-heal|p1a: Jellicent|404\/404|[from] item: Leftovers
+|-damage|p2a: Vaporeon|435\/464 tox|[from] psn
+|turn|14
+|callback|decision
+|
+|switch|p2a: Celebi|Celebi|141\/404
+|move|p1a: Jellicent|Taunt|p2a: Celebi
+|-start|p2a: Celebi|move: Taunt
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Celebi|116\/404|[from] sandstorm
+|-damage|p1a: Jellicent|379\/404|[from] sandstorm
+|-heal|p1a: Jellicent|404\/404|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|switch|p1a: Celebi|Celebi|404\/404
+|move|p2a: Celebi|Giga Drain|p1a: Celebi
+|-resisted|p1a: Celebi
+|-damage|p1a: Celebi|374\/404
+|-heal|p2a: Celebi|131\/404|[from] drain|[of] p1a: Celebi
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Celebi|349\/404|[from] sandstorm
+|-damage|p2a: Celebi|106\/404|[from] sandstorm
+|-heal|p1a: Celebi|374\/404|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Celebi|U-turn|p2a: Celebi
+|-supereffective|p2a: Celebi
+|-damage|p2a: Celebi|0 fnt
+|faint|p2a: Celebi
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|323\/323
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Infernape|Infernape, M|293\/293
+|turn|17
+|callback|decision
+|
+|move|p1a: Heatran|Earth Power|p2a: Infernape
+|-supereffective|p2a: Infernape
+|-damage|p2a: Infernape|1\/293
+|move|p2a: Infernape|Close Combat|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|-unboost|p2a: Infernape|def|1
+|-unboost|p2a: Infernape|spd|1
+|-damage|p2a: Infernape|0 fnt|[from] item: Life Orb
+|faint|p1a: Heatran
+|faint|p2a: Infernape
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Metagross|Metagross|364\/364
+|switch|p1a: Jellicent|Jellicent, M|404\/404
+|turn|18
+|callback|decision
+|
+|move|p2a: Metagross|Stealth Rock|p1a: Jellicent
+|-sidestart|p1: Pseudo|move: Stealth Rock
+|move|p1a: Jellicent|Scald|p2a: Metagross
+|-damage|p2a: Metagross|288\/364
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jellicent|379\/404|[from] sandstorm
+|-heal|p2a: Metagross|310\/364|[from] item: Leftovers
+|-heal|p1a: Jellicent|404\/404|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p2a: Metagross|Pursuit|p1a: Jellicent
+|-supereffective|p1a: Jellicent
+|-damage|p1a: Jellicent|286\/404
+|move|p1a: Jellicent|Taunt|p2a: Metagross
+|-start|p2a: Metagross|move: Taunt
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jellicent|261\/404|[from] sandstorm
+|-heal|p2a: Metagross|332\/364|[from] item: Leftovers
+|-heal|p1a: Jellicent|286\/404|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p2a: Metagross|Meteor Mash|p1a: Jellicent
+|-resisted|p1a: Jellicent
+|-damage|p1a: Jellicent|166\/404
+|move|p1a: Jellicent|Recover|p1a: Jellicent
+|-heal|p1a: Jellicent|368\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jellicent|343\/404|[from] sandstorm
+|-heal|p2a: Metagross|354\/364|[from] item: Leftovers
+|-heal|p1a: Jellicent|368\/404|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p2a: Metagross|Meteor Mash|p1a: Jellicent
+|-resisted|p1a: Jellicent
+|-damage|p1a: Jellicent|254\/404
+|-boost|p2a: Metagross|atk|1
+|move|p1a: Jellicent|Scald|p2a: Metagross
+|-damage|p2a: Metagross|272\/364
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jellicent|229\/404|[from] sandstorm
+|-heal|p2a: Metagross|294\/364|[from] item: Leftovers
+|-heal|p1a: Jellicent|254\/404|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p2a: Metagross|Earthquake|p1a: Jellicent
+|-damage|p1a: Jellicent|26\/404
+|move|p1a: Jellicent|Recover|p1a: Jellicent
+|-heal|p1a: Jellicent|228\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jellicent|203\/404|[from] sandstorm
+|-heal|p2a: Metagross|316\/364|[from] item: Leftovers
+|-heal|p1a: Jellicent|228\/404|[from] item: Leftovers
+|-end|p2a: Metagross|move: Taunt
+|turn|23
+|callback|decision
+|
+|switch|p1a: Hippowdon|Hippowdon, M, shiny|420\/420
+|-damage|p1a: Hippowdon|394\/420|[from] Stealth Rock
+|move|p2a: Metagross|Earthquake|p1a: Hippowdon
+|-damage|p1a: Hippowdon|280\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Metagross|338\/364|[from] item: Leftovers
+|-heal|p1a: Hippowdon|306\/420|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p2a: Metagross|Meteor Mash|p1a: Hippowdon|[miss]
+|-miss|p2a: Metagross|p1a: Hippowdon
+|move|p1a: Hippowdon|Earthquake|p2a: Metagross
+|-supereffective|p2a: Metagross
+|-damage|p2a: Metagross|110\/364
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Metagross|132\/364|[from] item: Leftovers
+|-heal|p1a: Hippowdon|332\/420|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|switch|p2a: Gyarados|Gyarados, M|353\/353
+|-ability|p2a: Gyarados|Intimidate|[of] p1a: Hippowdon
+|-unboost|p1a: Hippowdon|atk|1
+|move|p1a: Hippowdon|Stealth Rock|p2a: Gyarados
+|-sidestart|p2: SuckerforMetal|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Gyarados|331\/353|[from] sandstorm
+|-heal|p2a: Gyarados|353\/353|[from] item: Leftovers
+|-heal|p1a: Hippowdon|358\/420|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|move|p2a: Gyarados|Dragon Dance|p2a: Gyarados
+|-boost|p2a: Gyarados|atk|1
+|-boost|p2a: Gyarados|spe|1
+|move|p1a: Hippowdon|Whirlwind|p2a: Gyarados
+|drag|p2a: Metagross|Metagross|132\/364
+|-damage|p2a: Metagross|110\/364|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Metagross|132\/364|[from] item: Leftovers
+|-heal|p1a: Hippowdon|384\/420|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, M|435\/464 tox
+|-damage|p2a: Vaporeon|377\/464 tox|[from] Stealth Rock
+|move|p1a: Hippowdon|Earthquake|p2a: Vaporeon
+|-damage|p2a: Vaporeon|296\/464 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Vaporeon|267\/464 tox|[from] sandstorm
+|-heal|p2a: Vaporeon|296\/464 tox|[from] item: Leftovers
+|-heal|p1a: Hippowdon|410\/420|[from] item: Leftovers
+|-damage|p2a: Vaporeon|267\/464 tox|[from] psn
+|turn|28
+|callback|decision
+|
+|switch|p1a: Jellicent|Jellicent, M|228\/404
+|-damage|p1a: Jellicent|178\/404|[from] Stealth Rock
+|move|p2a: Vaporeon|Roar|p1a: Jellicent
+|drag|p1a: Salamence|Salamence, M|331\/331
+|-damage|p1a: Salamence|249\/331|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salamence|229\/331|[from] sandstorm
+|-damage|p2a: Vaporeon|238\/464 tox|[from] sandstorm
+|-heal|p2a: Vaporeon|267\/464 tox|[from] item: Leftovers
+|-damage|p2a: Vaporeon|209\/464 tox|[from] psn
+|turn|29
+|callback|decision
+|
+|switch|p1a: Celebi|Celebi|374\/404
+|-damage|p1a: Celebi|324\/404|[from] Stealth Rock
+|move|p2a: Vaporeon|Roar|p1a: Celebi
+|drag|p1a: Salamence|Salamence, M|229\/331
+|-damage|p1a: Salamence|147\/331|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salamence|127\/331|[from] sandstorm
+|-damage|p2a: Vaporeon|180\/464 tox|[from] sandstorm
+|-heal|p2a: Vaporeon|209\/464 tox|[from] item: Leftovers
+|-damage|p2a: Vaporeon|122\/464 tox|[from] psn
+|turn|30
+|callback|decision
+|
+|move|p1a: Salamence|Dragon Claw|p2a: Vaporeon
+|-damage|p2a: Vaporeon|0 fnt
+|faint|p2a: Vaporeon
+|-boost|p1a: Salamence|atk|1|[from] ability: Moxie
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salamence|107\/331|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: Terrakion|Terrakion|323\/323
+|-damage|p2a: Terrakion|303\/323|[from] Stealth Rock
+|turn|31
+|callback|decision
+|
+|switch|p1a: Hippowdon|Hippowdon, M, shiny|410\/420
+|-damage|p1a: Hippowdon|384\/420|[from] Stealth Rock
+|move|p2a: Terrakion|Stone Edge|p1a: Hippowdon
+|-resisted|p1a: Hippowdon
+|-damage|p1a: Hippowdon|314\/420
+|-damage|p2a: Terrakion|271\/323|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Hippowdon|340\/420|[from] item: Leftovers
+|turn|32
+|callback|decision
+|
+|switch|p2a: Metagross|Metagross|132\/364
+|-damage|p2a: Metagross|110\/364|[from] Stealth Rock
+|move|p1a: Hippowdon|Earthquake|p2a: Metagross
+|-supereffective|p2a: Metagross
+|-damage|p2a: Metagross|0 fnt
+|faint|p2a: Metagross
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Hippowdon|366\/420|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Gyarados|Gyarados, M|353\/353
+|-damage|p2a: Gyarados|265\/353|[from] Stealth Rock
+|-ability|p2a: Gyarados|Intimidate|[of] p1a: Hippowdon
+|-unboost|p1a: Hippowdon|atk|1
+|turn|33
+|callback|decision
+|
+|move|p2a: Gyarados|Waterfall|p1a: Hippowdon
+|-supereffective|p1a: Hippowdon
+|-damage|p1a: Hippowdon|198\/420
+|move|p1a: Hippowdon|Whirlwind|p2a: Gyarados
+|drag|p2a: Terrakion|Terrakion|271\/323
+|-damage|p2a: Terrakion|251\/323|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Hippowdon|224\/420|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|move|p2a: Terrakion|Close Combat|p1a: Hippowdon
+|-damage|p1a: Hippowdon|43\/420
+|-unboost|p2a: Terrakion|def|1
+|-unboost|p2a: Terrakion|spd|1
+|-damage|p2a: Terrakion|219\/323|[from] item: Life Orb
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-heal|p1a: Hippowdon|253\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Hippowdon|279\/420|[from] item: Leftovers
+|turn|35
+|callback|decision
+|
+|move|p2a: Terrakion|Close Combat|p1a: Hippowdon
+|-damage|p1a: Hippowdon|98\/420
+|-unboost|p2a: Terrakion|def|1
+|-unboost|p2a: Terrakion|spd|1
+|-damage|p2a: Terrakion|187\/323|[from] item: Life Orb
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-heal|p1a: Hippowdon|308\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Hippowdon|334\/420|[from] item: Leftovers
+|turn|36
+|callback|decision
+|
+|move|p2a: Terrakion|Swords Dance|p2a: Terrakion
+|-boost|p2a: Terrakion|atk|2
+|move|p1a: Hippowdon|Earthquake|p2a: Terrakion
+|-supereffective|p2a: Terrakion
+|-damage|p2a: Terrakion|0 fnt
+|faint|p2a: Terrakion
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Hippowdon|360\/420|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Gyarados|Gyarados, M|265\/353
+|-damage|p2a: Gyarados|177\/353|[from] Stealth Rock
+|-ability|p2a: Gyarados|Intimidate|[of] p1a: Hippowdon
+|-unboost|p1a: Hippowdon|atk|1
+|turn|37
+|callback|decision
+|
+|switch|p1a: Salamence|Salamence, M|107\/331
+|-damage|p1a: Salamence|25\/331|[from] Stealth Rock
+|move|p2a: Gyarados|Dragon Dance|p2a: Gyarados
+|-boost|p2a: Gyarados|atk|1
+|-boost|p2a: Gyarados|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salamence|5\/331|[from] sandstorm
+|-damage|p2a: Gyarados|155\/353|[from] sandstorm
+|-heal|p2a: Gyarados|177\/353|[from] item: Leftovers
+|turn|38
+|callback|decision
+|
+|move|p1a: Salamence|Outrage|p2a: Gyarados
+|-damage|p2a: Gyarados|0 fnt
+|faint|p2a: Gyarados
+|-boost|p1a: Salamence|atk|1|[from] ability: Moxie
+|
+|win|Pseudo
+|raw|Ladder updating...
+|raw|Pseudo's rating: 1610 &rarr; <strong>1618<\/strong><br \/>(+8 for winning)
+|raw|SuckerforMetal's rating: 1663 &rarr; <strong>1656<\/strong><br \/>(-7 for losing)
+|chat|Pseudo|gg

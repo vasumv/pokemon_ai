@@ -1,0 +1,545 @@
+|join|watch cats
+|join|okcoolyo
+|player|p1|watch cats|289
+|player|p2|okcoolyo|2
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Chansey, F
+|poke|p1|Keldeo
+|poke|p1|Heatran, F
+|poke|p1|Skarmory, M
+|poke|p1|Bisharp, M
+|poke|p1|Venusaur, F
+|poke|p2|Mew
+|poke|p2|Tyranitar, M
+|poke|p2|Skarmory, F
+|poke|p2|Heatran, F
+|poke|p2|Keldeo
+|poke|p2|Venusaur, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Heatran|Heatran, F|340\/340
+|switch|p2a: Keldeo|Keldeo|323\/323
+|-item|p1a: Heatran|Air Balloon
+|turn|1
+|
+|switch|p1a: Venusaur|Venusaur, F|364\/364
+|move|p2a: Keldeo|Secret Sword|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|301\/364
+|
+|turn|2
+|
+|switch|p2a: Heatran|Heatran, F|381\/381
+|detailschange|p1a: Venusaur|Venusaur-Mega, F
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p1a: Venusaur|Leech Seed|p2a: Heatran
+|-start|p2a: Heatran|move: Leech Seed
+|
+|-damage|p2a: Heatran|334\/381|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|348\/364|[silent]
+|turn|3
+|
+|switch|p1a: Heatran|Heatran, F|340\/340
+|-item|p1a: Heatran|Air Balloon
+|move|p2a: Heatran|Stealth Rock|p1a: Heatran
+|-sidestart|p1: watch cats|move: Stealth Rock
+|
+|-heal|p2a: Heatran|357\/381|[from] item: Leftovers
+|-damage|p2a: Heatran|310\/381|[from] Leech Seed|[of] p1a: Heatran
+|turn|4
+|
+|switch|p2a: Keldeo|Keldeo|323\/323
+|move|p1a: Heatran|Stealth Rock|p2a: Keldeo
+|-sidestart|p2: okcoolyo|move: Stealth Rock
+|
+|turn|5
+|
+|switch|p1a: Venusaur|Venusaur-Mega, F|348\/364
+|-damage|p1a: Venusaur|303\/364|[from] Stealth Rock
+|move|p2a: Keldeo|Secret Sword|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|256\/364
+|
+|turn|6
+|
+|switch|p2a: Skarmory|Skarmory, F|334\/334
+|-damage|p2a: Skarmory|293\/334|[from] Stealth Rock
+|move|p1a: Venusaur|Leech Seed|p2a: Skarmory
+|-start|p2a: Skarmory|move: Leech Seed
+|
+|-damage|p2a: Skarmory|252\/334|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|297\/364|[silent]
+|turn|7
+|
+|move|p1a: Venusaur|Hidden Power|p2a: Skarmory
+|-supereffective|p2a: Skarmory
+|-damage|p2a: Skarmory|104\/334
+|move|p2a: Skarmory|Defog|p1a: Venusaur
+|-unboost|p1a: Venusaur|evasion|1
+|-sideend|p1: watch cats|Stealth Rock|[from] move: Defog|[of] p1a: Venusaur
+|-sideend|p2: okcoolyo|Stealth Rock|[from] move: Defog|[of] p2a: Skarmory
+|
+|-damage|p2a: Skarmory|63\/334|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|338\/364|[silent]
+|turn|8
+|
+|switch|p2a: Mew|Mew|404\/404
+|move|p1a: Venusaur|Giga Drain|p2a: Mew
+|-damage|p2a: Mew|329\/404
+|-heal|p1a: Venusaur|364\/364|[from] drain|[of] p2a: Mew
+|
+|-heal|p2a: Mew|354\/404|[from] item: Leftovers
+|turn|9
+|
+|switch|p1a: Heatran|Heatran, F|340\/340
+|-item|p1a: Heatran|Air Balloon
+|move|p2a: Mew|Taunt|p1a: Heatran
+|-start|p1a: Heatran|move: Taunt
+|
+|-heal|p2a: Mew|379\/404|[from] item: Leftovers
+|turn|10
+|
+|move|p1a: Heatran|Fire Blast|p2a: Mew
+|-damage|p2a: Mew|265\/404
+|move|p2a: Mew|Psychic|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|287\/340
+|-enditem|p1a: Heatran|Air Balloon
+|
+|-heal|p2a: Mew|290\/404|[from] item: Leftovers
+|turn|11
+|
+|switch|p2a: Heatran|Heatran, F|310\/381
+|move|p1a: Heatran|Fire Blast|p2a: Heatran
+|-start|p2a: Heatran|ability: Flash Fire
+|
+|-heal|p2a: Heatran|333\/381|[from] item: Leftovers
+|turn|12
+|
+|switch|p1a: Keldeo|Keldeo|323\/323
+|move|p2a: Heatran|Earth Power|p1a: Keldeo
+|-damage|p1a: Keldeo|223\/323
+|
+|-heal|p1a: Keldeo|243\/323|[from] item: Leftovers
+|-heal|p2a: Heatran|356\/381|[from] item: Leftovers
+|turn|13
+|
+|switch|p2a: Venusaur|Venusaur, M|361\/361
+|move|p1a: Keldeo|Scald|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|310\/361
+|
+|-heal|p1a: Keldeo|263\/323|[from] item: Leftovers
+|turn|14
+|
+|switch|p1a: Heatran|Heatran, F|287\/340
+|detailschange|p2a: Venusaur|Venusaur-Mega, M
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p2a: Venusaur|Giga Drain|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|264\/340
+|-heal|p2a: Venusaur|322\/361|[from] drain|[of] p1a: Heatran
+|
+|turn|15
+|
+|move|p1a: Heatran|Stealth Rock|p2a: Venusaur
+|-sidestart|p2: okcoolyo|move: Stealth Rock
+|move|p2a: Venusaur|Sleep Powder|p1a: Heatran
+|-status|p1a: Heatran|slp
+|
+|turn|16
+|
+|switch|p1a: Venusaur|Venusaur-Mega, F|364\/364
+|switch|p2a: Heatran|Heatran, F|356\/381
+|-damage|p2a: Heatran|309\/381|[from] Stealth Rock
+|
+|-heal|p2a: Heatran|332\/381|[from] item: Leftovers
+|turn|17
+|
+|move|p2a: Heatran|Will-O-Wisp|p1a: Venusaur
+|-status|p1a: Venusaur|brn
+|move|p1a: Venusaur|Leech Seed|p2a: Heatran
+|-start|p2a: Heatran|move: Leech Seed
+|
+|-heal|p2a: Heatran|355\/381|[from] item: Leftovers
+|-damage|p2a: Heatran|308\/381|[from] Leech Seed|[of] p1a: Venusaur
+|-damage|p1a: Venusaur|319\/364 brn|[from] brn
+|turn|18
+|
+|switch|p1a: Keldeo|Keldeo|263\/323
+|move|p2a: Heatran|Stealth Rock|p1a: Keldeo
+|-sidestart|p1: watch cats|move: Stealth Rock
+|
+|-heal|p1a: Keldeo|283\/323|[from] item: Leftovers
+|-heal|p2a: Heatran|331\/381|[from] item: Leftovers
+|-damage|p2a: Heatran|284\/381|[from] Leech Seed|[of] p1a: Keldeo
+|-heal|p1a: Keldeo|323\/323|[silent]
+|turn|19
+|
+|switch|p2a: Venusaur|Venusaur-Mega, M|322\/361
+|-damage|p2a: Venusaur|277\/361|[from] Stealth Rock
+|move|p1a: Keldeo|Scald|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|234\/361
+|
+|turn|20
+|
+|switch|p1a: Bisharp|Bisharp, M|334\/334
+|-damage|p1a: Bisharp|314\/334|[from] Stealth Rock
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|361\/361
+|
+|-heal|p1a: Bisharp|334\/334|[from] item: Leftovers
+|turn|21
+|
+|move|p2a: Venusaur|Giga Drain|p1a: Bisharp
+|-resisted|p1a: Bisharp
+|-damage|p1a: Bisharp|260\/334
+|move|p1a: Bisharp|Knock Off|p2a: Venusaur
+|-damage|p2a: Venusaur|261\/361
+|
+|-heal|p1a: Bisharp|280\/334|[from] item: Leftovers
+|turn|22
+|
+|move|p2a: Venusaur|Giga Drain|p1a: Bisharp
+|-resisted|p1a: Bisharp
+|-damage|p1a: Bisharp|215\/334
+|-heal|p2a: Venusaur|294\/361|[from] drain|[of] p1a: Bisharp
+|move|p1a: Bisharp|Swords Dance|p1a: Bisharp
+|-boost|p1a: Bisharp|atk|2
+|
+|-heal|p1a: Bisharp|235\/334|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Venusaur|Giga Drain|p1a: Bisharp
+|-resisted|p1a: Bisharp
+|-damage|p1a: Bisharp|167\/334
+|-heal|p2a: Venusaur|328\/361|[from] drain|[of] p1a: Bisharp
+|move|p1a: Bisharp|Iron Head|p2a: Venusaur
+|-damage|p2a: Venusaur|91\/361
+|
+|-heal|p1a: Bisharp|187\/334|[from] item: Leftovers
+|turn|24
+|
+|switch|p2a: Skarmory|Skarmory, F|63\/334
+|-damage|p2a: Skarmory|22\/334|[from] Stealth Rock
+|move|p1a: Bisharp|Iron Head|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|0 fnt
+|-damage|p1a: Bisharp|132\/334|[from] item: Rocky Helmet|[of] p2a: Skarmory
+|faint|p2a: Skarmory
+|
+|-heal|p1a: Bisharp|152\/334|[from] item: Leftovers
+|
+|switch|p2a: Keldeo|Keldeo|323\/323
+|-damage|p2a: Keldeo|303\/323|[from] Stealth Rock
+|turn|25
+|
+|switch|p1a: Venusaur|Venusaur-Mega, F|319\/364 brn
+|-damage|p1a: Venusaur|274\/364 brn|[from] Stealth Rock
+|move|p2a: Keldeo|Hydro Pump|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|193\/364 brn
+|
+|-heal|p2a: Keldeo|323\/323|[from] item: Leftovers
+|-damage|p1a: Venusaur|148\/364 brn|[from] brn
+|turn|26
+|
+|switch|p2a: Mew|Mew|290\/404
+|-damage|p2a: Mew|240\/404|[from] Stealth Rock
+|move|p1a: Venusaur|Synthesis|p1a: Venusaur
+|-heal|p1a: Venusaur|330\/364 brn
+|
+|-heal|p2a: Mew|265\/404|[from] item: Leftovers
+|-damage|p1a: Venusaur|285\/364 brn|[from] brn
+|turn|27
+|
+|switch|p1a: Bisharp|Bisharp, M|152\/334
+|-damage|p1a: Bisharp|132\/334|[from] Stealth Rock
+|move|p2a: Mew|Soft-Boiled|p2a: Mew
+|-heal|p2a: Mew|404\/404
+|
+|-heal|p1a: Bisharp|152\/334|[from] item: Leftovers
+|turn|28
+|
+|move|p2a: Mew|Will-O-Wisp|p1a: Bisharp
+|-status|p1a: Bisharp|brn
+|move|p1a: Bisharp|Knock Off|p2a: Mew
+|-supereffective|p2a: Mew
+|-damage|p2a: Mew|206\/404
+|-enditem|p2a: Mew|Leftovers|[from] move: Knock Off|[of] p1a: Bisharp
+|
+|-heal|p1a: Bisharp|172\/334 brn|[from] item: Leftovers
+|-damage|p1a: Bisharp|131\/334 brn|[from] brn
+|turn|29
+|
+|switch|p1a: Chansey|Chansey, F|685\/685
+|-damage|p1a: Chansey|600\/685|[from] Stealth Rock
+|move|p2a: Mew|Soft-Boiled|p2a: Mew
+|-heal|p2a: Mew|404\/404
+|
+|turn|30
+|
+|move|p2a: Mew|Taunt|p1a: Chansey
+|-start|p1a: Chansey|move: Taunt
+|move|p1a: Chansey|Seismic Toss|p2a: Mew
+|-damage|p2a: Mew|304\/404
+|
+|turn|31
+|
+|move|p2a: Mew|Will-O-Wisp|p1a: Chansey
+|-status|p1a: Chansey|brn
+|move|p1a: Chansey|Seismic Toss|p2a: Mew
+|-damage|p2a: Mew|204\/404
+|
+|-damage|p1a: Chansey|515\/685 brn|[from] brn
+|turn|32
+|
+|switch|p1a: Keldeo|Keldeo|323\/323
+|-damage|p1a: Keldeo|303\/323|[from] Stealth Rock
+|move|p2a: Mew|Soft-Boiled|p2a: Mew
+|-heal|p2a: Mew|404\/404
+|
+|-heal|p1a: Keldeo|323\/323|[from] item: Leftovers
+|turn|33
+|
+|move|p1a: Keldeo|Calm Mind|p1a: Keldeo
+|-boost|p1a: Keldeo|spa|1
+|-boost|p1a: Keldeo|spd|1
+|move|p2a: Mew|Will-O-Wisp|p1a: Keldeo
+|-status|p1a: Keldeo|brn
+|
+|-damage|p1a: Keldeo|283\/323 brn|[from] brn
+|turn|34
+|
+|move|p1a: Keldeo|Scald|p2a: Mew
+|-damage|p2a: Mew|245\/404
+|-status|p2a: Mew|brn
+|move|p2a: Mew|Psychic|p1a: Keldeo
+|-supereffective|p1a: Keldeo
+|-damage|p1a: Keldeo|127\/323 brn
+|
+|-heal|p1a: Keldeo|147\/323 brn|[from] item: Leftovers
+|-damage|p1a: Keldeo|107\/323 brn|[from] brn
+|-damage|p2a: Mew|195\/404 brn|[from] brn
+|turn|35
+|
+|switch|p1a: Chansey|Chansey, F|515\/685
+|-damage|p1a: Chansey|430\/685|[from] Stealth Rock
+|move|p2a: Mew|Soft-Boiled|p2a: Mew
+|-heal|p2a: Mew|397\/404 brn
+|
+|-damage|p2a: Mew|347\/404 brn|[from] brn
+|turn|36
+|
+|move|p2a: Mew|Taunt|p1a: Chansey
+|-start|p1a: Chansey|move: Taunt
+|move|p1a: Chansey|Seismic Toss|p2a: Mew
+|-damage|p2a: Mew|247\/404 brn
+|
+|-damage|p2a: Mew|197\/404 brn|[from] brn
+|turn|37
+|
+|move|p2a: Mew|Soft-Boiled|p2a: Mew
+|-heal|p2a: Mew|399\/404 brn
+|move|p1a: Chansey|Seismic Toss|p2a: Mew
+|-damage|p2a: Mew|299\/404 brn
+|
+|-damage|p2a: Mew|249\/404 brn|[from] brn
+|turn|38
+|
+|move|p2a: Mew|Will-O-Wisp|p1a: Chansey|[miss]
+|-miss|p2a: Mew|p1a: Chansey
+|move|p1a: Chansey|Seismic Toss|p2a: Mew
+|-damage|p2a: Mew|149\/404 brn
+|
+|-damage|p2a: Mew|99\/404 brn|[from] brn
+|-end|p1a: Chansey|move: Taunt
+|turn|39
+|
+|move|p2a: Mew|Soft-Boiled|p2a: Mew
+|-heal|p2a: Mew|301\/404 brn
+|move|p1a: Chansey|Aromatherapy|p1a: Chansey
+|-cureteam|p1a: Chansey|[from] move: Aromatherapy
+|
+|-damage|p2a: Mew|251\/404 brn|[from] brn
+|turn|40
+|
+|move|p2a: Mew|Soft-Boiled|p2a: Mew
+|-heal|p2a: Mew|404\/404 brn
+|move|p1a: Chansey|Seismic Toss|p2a: Mew
+|-damage|p2a: Mew|304\/404 brn
+|
+|-damage|p2a: Mew|254\/404 brn|[from] brn
+|turn|41
+|
+|move|p2a: Mew|Will-O-Wisp|p1a: Chansey
+|-status|p1a: Chansey|brn
+|move|p1a: Chansey|Seismic Toss|p2a: Mew
+|-damage|p2a: Mew|154\/404 brn
+|
+|-damage|p2a: Mew|104\/404 brn|[from] brn
+|-damage|p1a: Chansey|345\/685 brn|[from] brn
+|turn|42
+|
+|switch|p1a: Bisharp|Bisharp, M|131\/334
+|-damage|p1a: Bisharp|111\/334|[from] Stealth Rock
+|move|p2a: Mew|Soft-Boiled|p2a: Mew
+|-heal|p2a: Mew|306\/404 brn
+|
+|-heal|p1a: Bisharp|131\/334|[from] item: Leftovers
+|-damage|p2a: Mew|256\/404 brn|[from] brn
+|turn|43
+|
+|switch|p2a: Keldeo|Keldeo|323\/323
+|-damage|p2a: Keldeo|303\/323|[from] Stealth Rock
+|move|p1a: Bisharp|Knock Off|p2a: Keldeo
+|-resisted|p2a: Keldeo
+|-damage|p2a: Keldeo|205\/323
+|-boost|p2a: Keldeo|atk|1|[from] ability: Justified
+|-enditem|p2a: Keldeo|Leftovers|[from] move: Knock Off|[of] p1a: Bisharp
+|
+|-heal|p1a: Bisharp|151\/334|[from] item: Leftovers
+|turn|44
+|
+|switch|p1a: Venusaur|Venusaur-Mega, F|285\/364
+|-damage|p1a: Venusaur|240\/364|[from] Stealth Rock
+|move|p2a: Keldeo|Secret Sword|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|192\/364
+|
+|turn|45
+|
+|switch|p2a: Heatran|Heatran, F|284\/381
+|-damage|p2a: Heatran|237\/381|[from] Stealth Rock
+|move|p1a: Venusaur|Synthesis|p1a: Venusaur
+|-heal|p1a: Venusaur|364\/364
+|
+|-heal|p2a: Heatran|260\/381|[from] item: Leftovers
+|turn|46
+|
+|move|p2a: Heatran|Will-O-Wisp|p1a: Venusaur|[miss]
+|-miss|p2a: Heatran|p1a: Venusaur
+|move|p1a: Venusaur|Leech Seed|p2a: Heatran
+|-start|p2a: Heatran|move: Leech Seed
+|
+|-heal|p2a: Heatran|283\/381|[from] item: Leftovers
+|-damage|p2a: Heatran|236\/381|[from] Leech Seed|[of] p1a: Venusaur
+|turn|47
+|
+|switch|p1a: Chansey|Chansey, F|345\/685
+|-damage|p1a: Chansey|260\/685|[from] Stealth Rock
+|move|p2a: Heatran|Will-O-Wisp|p1a: Chansey
+|-status|p1a: Chansey|brn
+|
+|-heal|p2a: Heatran|259\/381|[from] item: Leftovers
+|-damage|p2a: Heatran|212\/381|[from] Leech Seed|[of] p1a: Chansey
+|-heal|p1a: Chansey|307\/685 brn|[silent]
+|-damage|p1a: Chansey|222\/685 brn|[from] brn
+|turn|48
+|
+|switch|p2a: Venusaur|Venusaur-Mega, M|91\/361
+|-damage|p2a: Venusaur|46\/361|[from] Stealth Rock
+|move|p1a: Chansey|Soft-Boiled|p1a: Chansey
+|-heal|p1a: Chansey|565\/685 brn
+|
+|-damage|p1a: Chansey|480\/685 brn|[from] brn
+|turn|49
+|
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|226\/361
+|move|p1a: Chansey|Thunder Wave|p2a: Venusaur
+|-status|p2a: Venusaur|par
+|
+|-damage|p1a: Chansey|395\/685 brn|[from] brn
+|turn|50
+|
+|move|p1a: Chansey|Soft-Boiled|p1a: Chansey
+|-heal|p1a: Chansey|685\/685 brn
+|cant|p2a: Venusaur|par
+|
+|-damage|p1a: Chansey|600\/685 brn|[from] brn
+|turn|51
+|
+|move|p1a: Chansey|Seismic Toss|p2a: Venusaur
+|-damage|p2a: Venusaur|126\/361 par
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|306\/361 par
+|
+|-damage|p1a: Chansey|515\/685 brn|[from] brn
+|turn|52
+|
+|switch|p1a: Bisharp|Bisharp, M|151\/334
+|-damage|p1a: Bisharp|131\/334|[from] Stealth Rock
+|switch|p2a: Mew|Mew|256\/404 brn
+|-damage|p2a: Mew|206\/404 brn|[from] Stealth Rock
+|
+|-heal|p1a: Bisharp|151\/334|[from] item: Leftovers
+|-damage|p2a: Mew|156\/404 brn|[from] brn
+|turn|53
+|
+|move|p2a: Mew|Will-O-Wisp|p1a: Bisharp
+|-status|p1a: Bisharp|brn
+|move|p1a: Bisharp|Knock Off|p2a: Mew
+|-supereffective|p2a: Mew
+|-damage|p2a: Mew|36\/404 brn
+|
+|-heal|p1a: Bisharp|171\/334 brn|[from] item: Leftovers
+|-damage|p2a: Mew|0 fnt|[from] brn
+|-damage|p1a: Bisharp|130\/334 brn|[from] brn
+|faint|p2a: Mew
+|
+|switch|p2a: Keldeo|Keldeo|205\/323
+|-damage|p2a: Keldeo|185\/323|[from] Stealth Rock
+|turn|54
+|
+|switch|p2a: Heatran|Heatran, F|212\/381
+|-damage|p2a: Heatran|165\/381|[from] Stealth Rock
+|switch|p1a: Venusaur|Venusaur-Mega, F|364\/364
+|-damage|p1a: Venusaur|319\/364|[from] Stealth Rock
+|
+|-heal|p2a: Heatran|188\/381|[from] item: Leftovers
+|turn|55
+|
+|move|p1a: Venusaur|Leech Seed|p2a: Heatran
+|-start|p2a: Heatran|move: Leech Seed
+|move|p2a: Heatran|Will-O-Wisp|p1a: Venusaur|[miss]
+|-miss|p2a: Heatran|p1a: Venusaur
+|
+|-heal|p2a: Heatran|211\/381|[from] item: Leftovers
+|-damage|p2a: Heatran|164\/381|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|364\/364|[silent]
+|turn|56
+|chat|okcoolyo|these misses
+|chat|okcoolyo|gg
+|
+|switch|p1a: Chansey|Chansey, F|515\/685
+|-damage|p1a: Chansey|430\/685|[from] Stealth Rock
+|move|p2a: Heatran|Will-O-Wisp|p1a: Chansey
+|-status|p1a: Chansey|brn
+|
+|-heal|p2a: Heatran|187\/381|[from] item: Leftovers
+|-damage|p2a: Heatran|140\/381|[from] Leech Seed|[of] p1a: Chansey
+|-heal|p1a: Chansey|477\/685 brn|[silent]
+|-damage|p1a: Chansey|392\/685 brn|[from] brn
+|turn|57
+|-message|okcoolyo forfeited.
+|
+|win|watch cats
+|raw|Ladder updating...
+|raw|watch cats's rating: 1965 &rarr; <strong>1976<\/strong><br \/>(+11 for winning)
+|raw|okcoolyo's rating: 1783 &rarr; <strong>1773<\/strong><br \/>(-10 for losing)
+|leave|okcoolyo
+|player|p2

@@ -1,0 +1,258 @@
+|join|DracoNinja
+|join|crazybones
+|player|p1|DracoNinja|2
+|player|p2|crazybones|211
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Metagross
+|poke|p1|Hydreigon, F
+|poke|p1|Azumarill, F
+|poke|p1|Landorus-Therian, M
+|poke|p1|Rotom-Wash
+|poke|p1|Serperior, F
+|poke|p2|Victini
+|poke|p2|Staraptor, F, shiny
+|poke|p2|Scolipede, M, shiny
+|poke|p2|Latias, F, shiny
+|poke|p2|Talonflame, F, shiny
+|poke|p2|Suicune, shiny
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: ZAMROCK|Landorus-Therian, M|357\/357
+|switch|p2a: Staraptor|Staraptor, F, shiny|374\/374
+|-ability|p2a: Staraptor|Intimidate|[of] p1a: ZAMROCK
+|-unboost|p1a: ZAMROCK|atk|1
+|-ability|p1a: ZAMROCK|Intimidate|[of] p2a: Staraptor
+|-unboost|p2a: Staraptor|atk|1
+|turn|1
+|
+|switch|p1a: KLAND|Serperior, F|291\/291
+|move|p2a: Staraptor|Final Gambit|p1a: KLAND
+|-damage|p1a: KLAND|0 fnt
+|faint|p2a: Staraptor
+|faint|p1a: KLAND
+|
+|
+|switch|p2a: Victini|Victini|404\/404
+|switch|p1a: ZAMROCK|Landorus-Therian, M|357\/357
+|-ability|p1a: ZAMROCK|Intimidate|[of] p2a: Victini
+|-unboost|p2a: Victini|atk|1
+|turn|2
+|
+|switch|p1a: ZORODARK|Hydreigon, F|325\/325
+|move|p2a: Victini|Final Gambit|p1a: ZORODARK
+|-damage|p1a: ZORODARK|0 fnt
+|faint|p2a: Victini
+|faint|p1a: ZORODARK
+|
+|
+|switch|p1a: Z+V|Rotom-Wash|304\/304
+|switch|p2a: Suicune|Suicune, shiny|403\/403
+|-ability|p2a: Suicune|Pressure
+|turn|3
+|
+|move|p1a: Z+V|Will-O-Wisp|p2a: Suicune
+|-status|p2a: Suicune|brn
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-damage|p2a: Suicune|353\/403 brn|[from] brn
+|turn|4
+|
+|move|p1a: Z+V|Volt Switch|p2a: Suicune
+|-supereffective|p2a: Suicune
+|-damage|p2a: Suicune|251\/403 brn
+|
+|switch|p1a: METALGROSS|Metagross|345\/345
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p2a: Suicune|276\/403 brn|[from] item: Leftovers
+|-damage|p2a: Suicune|226\/403 brn|[from] brn
+|turn|5
+|
+|detailschange|p1a: METALGROSS|Metagross-Mega
+|-mega|p1a: METALGROSS|Metagross|Metagrossite
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|403\/403 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|move|p1a: METALGROSS|Zen Headbutt|p2a: Suicune
+|-damage|p2a: Suicune|250\/403 slp
+|
+|-heal|p2a: Suicune|275\/403 slp|[from] item: Leftovers
+|turn|6
+|
+|switch|p1a: SNOWCRISTAL|Azumarill, F|358\/358
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Scald|p1a: SNOWCRISTAL|[from]Sleep Talk
+|-resisted|p1a: SNOWCRISTAL
+|-damage|p1a: SNOWCRISTAL|253\/358
+|-status|p1a: SNOWCRISTAL|brn
+|
+|-heal|p2a: Suicune|300\/403 slp|[from] item: Leftovers
+|-damage|p1a: SNOWCRISTAL|209\/358 brn|[from] brn
+|turn|7
+|
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Scald|p1a: SNOWCRISTAL|[from]Sleep Talk
+|-resisted|p1a: SNOWCRISTAL
+|-damage|p1a: SNOWCRISTAL|97\/358 brn
+|-enditem|p1a: SNOWCRISTAL|Sitrus Berry|[eat]
+|-heal|p1a: SNOWCRISTAL|186\/358 brn|[from] item: Sitrus Berry
+|move|p1a: SNOWCRISTAL|Knock Off|p2a: Suicune
+|-damage|p2a: Suicune|251\/403 slp
+|-enditem|p2a: Suicune|Leftovers|[from] move: Knock Off|[of] p1a: SNOWCRISTAL
+|
+|-damage|p1a: SNOWCRISTAL|142\/358 brn|[from] brn
+|turn|8
+|
+|-curestatus|p2a: Suicune|slp
+|move|p2a: Suicune|Scald|p1a: SNOWCRISTAL
+|-resisted|p1a: SNOWCRISTAL
+|-damage|p1a: SNOWCRISTAL|32\/358 brn
+|move|p1a: SNOWCRISTAL|Play Rough|p2a: Suicune
+|-damage|p2a: Suicune|185\/403
+|
+|-damage|p1a: SNOWCRISTAL|0 fnt|[from] brn
+|faint|p1a: SNOWCRISTAL
+|
+|switch|p1a: METALGROSS|Metagross-Mega|345\/345
+|turn|9
+|
+|move|p1a: METALGROSS|Zen Headbutt|p2a: Suicune
+|-damage|p2a: Suicune|29\/403
+|move|p2a: Suicune|Scald|p1a: METALGROSS
+|-damage|p1a: METALGROSS|186\/345
+|
+|turn|10
+|
+|move|p1a: METALGROSS|Zen Headbutt|p2a: Suicune
+|-damage|p2a: Suicune|0 fnt
+|faint|p2a: Suicune
+|
+|
+|switch|p2a: Scolipede|Scolipede, M, shiny|323\/323
+|turn|11
+|
+|switch|p1a: ZAMROCK|Landorus-Therian, M|357\/357
+|-ability|p1a: ZAMROCK|Intimidate|[of] p2a: Scolipede
+|-unboost|p2a: Scolipede|atk|1
+|move|p2a: Scolipede|Protect|p2a: Scolipede
+|-fail|p2a: Scolipede
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|12
+|
+|move|p2a: Scolipede|Protect|p2a: Scolipede
+|-singleturn|p2a: Scolipede|Protect
+|move|p1a: ZAMROCK|Stealth Rock|p2a: Scolipede
+|-sidestart|p2: crazybones|move: Stealth Rock
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|13
+|
+|move|p2a: Scolipede|Iron Defense|p2a: Scolipede
+|-boost|p2a: Scolipede|def|2
+|move|p1a: ZAMROCK|Stone Edge|p2a: Scolipede
+|-crit|p2a: Scolipede
+|-supereffective|p2a: Scolipede
+|-damage|p2a: Scolipede|21\/323
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|14
+|
+|move|p2a: Scolipede|Baton Pass|p2a: Scolipede
+|
+|switch|p2a: Latias|Latias, F, shiny|364\/364
+|-damage|p2a: Latias|319\/364|[from] Stealth Rock
+|move|p1a: ZAMROCK|Stone Edge|p2a: Latias
+|-damage|p2a: Latias|245\/364
+|
+|turn|15
+|
+|detailschange|p2a: Latias|Latias-Mega, F, shiny
+|-mega|p2a: Latias|Latias|Latiasite
+|move|p2a: Latias|Stored Power|p1a: ZAMROCK
+|-damage|p1a: ZAMROCK|141\/357
+|move|p1a: ZAMROCK|U-turn|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|157\/364
+|
+|switch|p1a: METALGROSS|Metagross-Mega|186\/345
+|
+|turn|16
+|
+|move|p2a: Latias|Roost|p2a: Latias
+|-heal|p2a: Latias|339\/364
+|move|p1a: METALGROSS|Meteor Mash|p2a: Latias
+|-damage|p2a: Latias|221\/364
+|-boost|p1a: METALGROSS|atk|1
+|
+|turn|17
+|
+|move|p2a: Latias|Stored Power|p1a: METALGROSS
+|-resisted|p1a: METALGROSS
+|-damage|p1a: METALGROSS|144\/345
+|move|p1a: METALGROSS|Meteor Mash|p2a: Latias
+|-damage|p2a: Latias|62\/364
+|
+|turn|18
+|
+|move|p2a: Latias|Thunderbolt|p1a: METALGROSS
+|-damage|p1a: METALGROSS|52\/345
+|move|p1a: METALGROSS|Rock Polish|p1a: METALGROSS
+|-boost|p1a: METALGROSS|spe|2
+|
+|turn|19
+|
+|move|p2a: Latias|Thunderbolt|p1a: METALGROSS
+|-crit|p1a: METALGROSS
+|-damage|p1a: METALGROSS|0 fnt
+|faint|p1a: METALGROSS
+|
+|
+|switch|p1a: Z+V|Rotom-Wash|304\/304
+|turn|20
+|c|âDracoNinja|rip
+|c|âDracoNinja|forgot
+|c|âDracoNinja|the speed boosts
+|
+|move|p2a: Latias|Roost|p2a: Latias
+|-heal|p2a: Latias|244\/364
+|move|p1a: Z+V|Will-O-Wisp|p2a: Latias|[miss]
+|-miss|p1a: Z+V|p2a: Latias
+|
+|turn|21
+|
+|move|p2a: Latias|Stored Power|p1a: Z+V
+|-damage|p1a: Z+V|114\/304
+|move|p1a: Z+V|Will-O-Wisp|p2a: Latias
+|-status|p2a: Latias|brn
+|
+|-heal|p1a: Z+V|133\/304|[from] item: Leftovers
+|-damage|p2a: Latias|199\/364 brn|[from] brn
+|turn|22
+|-message|DracoNinja forfeited.
+|
+|win|crazybones
+|raw|Ladder updating...
+|raw|DracoNinja's rating: 1563 &rarr; <strong>1544<\/strong><br \/>(-19 for losing)
+|raw|crazybones's rating: 1572 &rarr; <strong>1591<\/strong><br \/>(+19 for winning)

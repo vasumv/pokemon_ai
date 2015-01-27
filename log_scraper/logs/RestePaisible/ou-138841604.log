@@ -1,0 +1,267 @@
+|join|RestePaisible
+|join|Assduff
+|player|p1|RestePaisible|248
+|player|p2|Assduff|266
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Garchomp, F
+|poke|p1|Gyarados, M
+|poke|p1|Gengar, F
+|poke|p1|Talonflame, F
+|poke|p1|Mamoswine, M
+|poke|p1|Ferrothorn, F
+|poke|p2|Swanna, M
+|poke|p2|Luxray, F
+|poke|p2|Weavile, F
+|poke|p2|Meganium, F
+|poke|p2|Aggron, M
+|poke|p2|Delphox, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit three PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Talonflame|Talonflame, F|298\/298
+|switch|p2a: Delphox|Delphox, F|354\/354
+|turn|1
+|
+|switch|p2a: Luxray|Luxray, F|301\/301
+|move|p1a: Talonflame|U-turn|p2a: Luxray
+|-damage|p2a: Luxray|181\/301
+|
+|switch|p1a: Garchomp|Garchomp, F|358\/358
+|
+|-status|p2a: Luxray|brn|[from] item: Flame Orb
+|turn|2
+|
+|switch|p2a: Swanna|Swanna, M|291\/291
+|move|p1a: Garchomp|Earthquake|p2a: Swanna
+|-immune|p2a: Swanna|[msg]
+|
+|turn|3
+|
+|move|p2a: Swanna|Rain Dance|p2a: Swanna
+|-weather|RainDance
+|move|p1a: Garchomp|Stone Edge|p2a: Swanna|[miss]
+|-miss|p1a: Garchomp|p2a: Swanna
+|
+|-weather|RainDance|[upkeep]
+|turn|4
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|327\/327
+|move|p2a: Swanna|Hurricane|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|202\/327
+|-damage|p2a: Swanna|262\/291|[from] item: Life Orb
+|
+|-weather|RainDance|[upkeep]
+|turn|5
+|
+|switch|p2a: Delphox|Delphox, F|354\/354
+|move|p1a: Ferrothorn|Ingrain|p1a: Ferrothorn
+|-start|p1a: Ferrothorn|move: Ingrain
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Ferrothorn|222\/327|[from] Ingrain
+|turn|6
+|
+|move|p2a: Delphox|Magic Coat|p2a: Delphox
+|-singleturn|p2a: Delphox|move: Magic Coat
+|move|p1a: Ferrothorn|Stealth Rock|p2a: Delphox
+|move|p2a: Delphox|Stealth Rock|p1a: Ferrothorn|[from]Magic Coat
+|-sidestart|p1: RestePaisible|move: Stealth Rock
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Ferrothorn|242\/327|[from] Ingrain
+|turn|7
+|
+|move|p2a: Delphox|Magic Coat|p2a: Delphox
+|-singleturn|p2a: Delphox|move: Magic Coat
+|move|p1a: Ferrothorn|Gyro Ball|p2a: Delphox
+|-resisted|p2a: Delphox
+|-damage|p2a: Delphox|249\/354
+|-enditem|p2a: Delphox|Red Card|[of] p1a: Ferrothorn
+|-activate|p1a: Ferrothorn|move: Ingrain
+|
+|-weather|none
+|-heal|p1a: Ferrothorn|262\/327|[from] Ingrain
+|turn|8
+|
+|move|p2a: Delphox|Magic Coat|p2a: Delphox
+|-singleturn|p2a: Delphox|move: Magic Coat
+|move|p1a: Ferrothorn|Stealth Rock|p2a: Delphox
+|move|p2a: Delphox|Stealth Rock|p1a: Ferrothorn|[from]Magic Coat
+|-fail|p1a: Ferrothorn
+|
+|-heal|p1a: Ferrothorn|282\/327|[from] Ingrain
+|turn|9
+|
+|move|p2a: Delphox|Flamethrower|p1a: Ferrothorn
+|-supereffective|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|0 fnt
+|faint|p1a: Ferrothorn
+|
+|
+|switch|p1a: Gyarados|Gyarados, M|363\/363
+|-damage|p1a: Gyarados|273\/363|[from] Stealth Rock
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Delphox
+|-unboost|p2a: Delphox|atk|1
+|turn|10
+|
+|switch|p2a: Meganium|Meganium, F|364\/364
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|
+|-heal|p1a: Gyarados|295\/363|[from] item: Leftovers
+|turn|11
+|
+|switch|p1a: Talonflame|Talonflame, F|298\/298
+|-damage|p1a: Talonflame|149\/298|[from] Stealth Rock
+|move|p2a: Meganium|Dragon Tail|p1a: Talonflame
+|-damage|p1a: Talonflame|98\/298
+|drag|p1a: Gyarados|Gyarados, M|295\/363
+|-damage|p1a: Gyarados|205\/363|[from] Stealth Rock
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Meganium
+|-unboost|p2a: Meganium|atk|1
+|
+|-heal|p1a: Gyarados|227\/363|[from] item: Leftovers
+|turn|12
+|
+|switch|p1a: Mamoswine|Mamoswine, M|393\/393
+|-damage|p1a: Mamoswine|344\/393|[from] Stealth Rock
+|move|p2a: Meganium|Toxic|p1a: Mamoswine
+|-status|p1a: Mamoswine|tox
+|
+|-heal|p1a: Mamoswine|368\/393 tox|[from] item: Leftovers
+|-damage|p1a: Mamoswine|344\/393 tox|[from] psn
+|turn|13
+|
+|switch|p2a: Aggron|Aggron, M|344\/344
+|move|p1a: Mamoswine|Earthquake|p2a: Aggron
+|-supereffective|p2a: Aggron
+|-damage|p2a: Aggron|0 fnt
+|faint|p2a: Aggron
+|
+|-heal|p1a: Mamoswine|368\/393 tox|[from] item: Leftovers
+|-damage|p1a: Mamoswine|320\/393 tox|[from] psn
+|
+|switch|p2a: Swanna|Swanna, M|262\/291
+|turn|14
+|
+|switch|p1a: Gyarados|Gyarados, M|227\/363
+|-damage|p1a: Gyarados|137\/363|[from] Stealth Rock
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Swanna
+|-unboost|p2a: Swanna|atk|1
+|move|p2a: Swanna|Rain Dance|p2a: Swanna
+|-weather|RainDance
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Gyarados|159\/363|[from] item: Leftovers
+|turn|15
+|
+|move|p2a: Swanna|Hurricane|p1a: Gyarados
+|-damage|p1a: Gyarados|0 fnt
+|-damage|p2a: Swanna|233\/291|[from] item: Life Orb
+|faint|p1a: Gyarados
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p1a: Gengar|Gengar, F|262\/262
+|-damage|p1a: Gengar|230\/262|[from] Stealth Rock
+|turn|16
+|
+|move|p2a: Swanna|Hurricane|p1a: Gengar
+|-damage|p1a: Gengar|0 fnt
+|-damage|p2a: Swanna|204\/291|[from] item: Life Orb
+|faint|p1a: Gengar
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p1a: Garchomp|Garchomp, F|358\/358
+|-damage|p1a: Garchomp|336\/358|[from] Stealth Rock
+|turn|17
+|
+|move|p2a: Swanna|Hurricane|p1a: Garchomp
+|-damage|p1a: Garchomp|129\/358
+|-damage|p2a: Swanna|175\/291|[from] item: Life Orb
+|move|p1a: Garchomp|Outrage|p2a: Swanna
+|-damage|p2a: Swanna|0 fnt
+|-damage|p1a: Garchomp|94\/358|[from] item: Life Orb
+|faint|p2a: Swanna
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p2a: Weavile|Weavile, F|282\/282
+|turn|18
+|
+|move|p2a: Weavile|Swords Dance|p2a: Weavile
+|-boost|p2a: Weavile|atk|2
+|move|p1a: Garchomp|Outrage|p2a: Weavile
+|-enditem|p2a: Weavile|Focus Sash
+|-damage|p2a: Weavile|1\/282
+|-item|p2a: Weavile|Life Orb|[from] ability: Pickpocket
+|-damage|p1a: Garchomp|59\/358|[from] item: Life Orb
+|
+|-weather|none
+|turn|19
+|
+|move|p2a: Weavile|Ice Shard|p1a: Garchomp
+|-crit|p1a: Garchomp
+|-supereffective|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|-damage|p2a: Weavile|0 fnt|[from] item: Life Orb
+|faint|p1a: Garchomp
+|faint|p2a: Weavile
+|
+|
+|switch|p2a: Delphox|Delphox, F|249\/354
+|switch|p1a: Mamoswine|Mamoswine, M|320\/393 tox
+|-damage|p1a: Mamoswine|271\/393 tox|[from] Stealth Rock
+|turn|20
+|
+|move|p2a: Delphox|Flamethrower|p1a: Mamoswine
+|-supereffective|p1a: Mamoswine
+|-damage|p1a: Mamoswine|83\/393 tox
+|move|p1a: Mamoswine|Earthquake|p2a: Delphox
+|-crit|p2a: Delphox
+|-supereffective|p2a: Delphox
+|-damage|p2a: Delphox|0 fnt
+|faint|p2a: Delphox
+|
+|-heal|p1a: Mamoswine|107\/393 tox|[from] item: Leftovers
+|-damage|p1a: Mamoswine|83\/393 tox|[from] psn
+|
+|switch|p2a: Meganium|Meganium, F|364\/364
+|turn|21
+|
+|move|p1a: Mamoswine|Icicle Crash|p2a: Meganium
+|-supereffective|p2a: Meganium
+|-damage|p2a: Meganium|20\/364
+|move|p2a: Meganium|Giga Drain|p1a: Mamoswine
+|-crit|p1a: Mamoswine
+|-supereffective|p1a: Mamoswine
+|-damage|p1a: Mamoswine|0 fnt
+|-heal|p2a: Meganium|62\/364|[from] drain|[of] p1a: Mamoswine
+|faint|p1a: Mamoswine
+|
+|-heal|p2a: Meganium|84\/364|[from] item: Leftovers
+|
+|switch|p1a: Talonflame|Talonflame, F|98\/298
+|-damage|p1a: Talonflame|0 fnt|[from] Stealth Rock
+|faint|p1a: Talonflame
+|
+|win|Assduff
+|raw|Ladder updating...
+|raw|RestePaisible's rating: 1117 &rarr; <strong>1084<\/strong><br \/>(-33 for losing)
+|raw|Assduff's rating: 1010 &rarr; <strong>1060<\/strong><br \/>(+50 for winning)
+|chat|Assduff|gg

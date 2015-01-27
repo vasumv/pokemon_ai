@@ -1,0 +1,885 @@
+|join|ALeaderWhimsicott
+|join|EricEric
+|player|p1|ALeaderWhimsicott|113
+|player|p2|EricEric|69
+|gametype|singles
+|tier|OU
+|clearpoke
+|poke|p1|Togekiss, M
+|poke|p1|Rotom-Fan
+|poke|p1|Aerodactyl, M
+|poke|p1|Skarmory, F
+|poke|p1|Hawlucha, F
+|poke|p1|Landorus-Therian, M
+|poke|p2|Gliscor, M
+|poke|p2|Jellicent, M
+|poke|p2|Rotom-Mow
+|poke|p2|Gardevoir, F
+|poke|p2|Heatran, F
+|poke|p2|Scrafty, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|join|AElite Tacos
+|
+|start
+|switch|p1a: Rotom-Fan|Rotom-Fan|304\/304
+|switch|p2a: Rotom-Mow|Rotom-Mow|303\/303
+|turn|1
+|callback|decision
+|
+|move|p1a: Rotom-Fan|Will-O-Wisp|p2a: Rotom-Mow
+|-status|p2a: Rotom-Mow|brn
+|move|p2a: Rotom-Mow|Volt Switch|p1a: Rotom-Fan
+|-damage|p1a: Rotom-Fan|219\/304
+|callback|decision
+|
+|switch|p2a: Scrafty|Scrafty, F|271\/271
+|
+|-heal|p1a: Rotom-Fan|238\/304|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|move|p1a: Rotom-Fan|Confuse Ray|p2a: Scrafty
+|-start|p2a: Scrafty|confusion
+|-activate|p2a: Scrafty|confusion
+|move|p2a: Scrafty|Dragon Dance|p2a: Scrafty
+|-boost|p2a: Scrafty|atk|1
+|-boost|p2a: Scrafty|spe|1
+|
+|-heal|p1a: Rotom-Fan|257\/304|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|-activate|p2a: Scrafty|confusion
+|move|p2a: Scrafty|Dragon Dance|p2a: Scrafty
+|-boost|p2a: Scrafty|atk|1
+|-boost|p2a: Scrafty|spe|1
+|move|p1a: Rotom-Fan|Will-O-Wisp|p2a: Scrafty
+|-status|p2a: Scrafty|brn
+|
+|-heal|p1a: Rotom-Fan|276\/304|[from] item: Leftovers
+|-damage|p2a: Scrafty|238\/271 brn|[from] brn
+|turn|4
+|callback|decision
+|
+|-activate|p2a: Scrafty|confusion
+|-damage|p2a: Scrafty|196\/271 brn|[from] confusion
+|move|p1a: Rotom-Fan|Charge Beam|p2a: Scrafty|[miss]
+|-miss|p1a: Rotom-Fan|p2a: Scrafty
+|
+|-heal|p1a: Rotom-Fan|295\/304|[from] item: Leftovers
+|-damage|p2a: Scrafty|163\/271 brn|[from] brn
+|turn|5
+|callback|decision
+|
+|-end|p2a: Scrafty|confusion
+|move|p2a: Scrafty|Crunch|p1a: Rotom-Fan
+|-damage|p1a: Rotom-Fan|169\/304
+|-unboost|p1a: Rotom-Fan|def|1
+|-damage|p2a: Scrafty|136\/271 brn|[from] item: Life Orb
+|move|p1a: Rotom-Fan|Charge Beam|p2a: Scrafty|[miss]
+|-miss|p1a: Rotom-Fan|p2a: Scrafty
+|
+|-heal|p1a: Rotom-Fan|188\/304|[from] item: Leftovers
+|-damage|p2a: Scrafty|103\/271 brn|[from] brn
+|turn|6
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, F|334\/334
+|move|p2a: Scrafty|Crunch|p1a: Skarmory
+|-damage|p1a: Skarmory|248\/334
+|-damage|p2a: Scrafty|76\/271 brn|[from] item: Life Orb
+|
+|-heal|p1a: Skarmory|268\/334|[from] item: Leftovers
+|-damage|p2a: Scrafty|43\/271 brn|[from] brn
+|turn|7
+|callback|decision
+|
+|move|p2a: Scrafty|Drain Punch|p1a: Skarmory
+|-damage|p1a: Skarmory|182\/334
+|-heal|p2a: Scrafty|86\/271 brn|[from] drain|[of] p1a: Skarmory
+|-damage|p2a: Scrafty|59\/271 brn|[from] item: Life Orb
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334
+|
+|-damage|p2a: Scrafty|26\/271 brn|[from] brn
+|turn|8
+|callback|decision
+|
+|move|p2a: Scrafty|Drain Punch|p1a: Skarmory
+|-damage|p1a: Skarmory|259\/334
+|-heal|p2a: Scrafty|64\/271 brn|[from] drain|[of] p1a: Skarmory
+|-damage|p2a: Scrafty|37\/271 brn|[from] item: Life Orb
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334
+|
+|-activate|p2a: Scrafty|ability: Shed Skin
+|-curestatus|p2a: Scrafty|brn
+|turn|9
+|callback|decision
+|
+|move|p2a: Scrafty|Drain Punch|p1a: Skarmory
+|-damage|p1a: Skarmory|178\/334
+|-heal|p2a: Scrafty|115\/271|[from] drain|[of] p1a: Skarmory
+|-damage|p2a: Scrafty|88\/271|[from] item: Life Orb
+|move|p1a: Skarmory|Brave Bird|p2a: Scrafty
+|-supereffective|p2a: Scrafty
+|-damage|p2a: Scrafty|0 fnt
+|-damage|p1a: Skarmory|149\/334|[from] recoil|[of] p2a: Scrafty
+|faint|p2a: Scrafty
+|
+|-heal|p1a: Skarmory|169\/334|[from] item: Leftovers
+|callback|decision
+|chat|EricEric|that took some time
+|chat|EricEric|shed skin
+|chat|ALeaderWhimsicott|yup
+|
+|switch|p2a: Heatran|Heatran, F|386\/386
+|turn|10
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Heatran
+|-unboost|p2a: Heatran|atk|1
+|move|p2a: Heatran|Magma Storm|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|97\/320
+|-activate|p1a: Landorus-Therian|move: Magma Storm|[of] p2a: Heatran
+|
+|-damage|p1a: Landorus-Therian|57\/320|[from] move: Magma Storm|[partiallytrapped]
+|turn|11
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354
+|move|p1a: Landorus-Therian|U-turn|p2a: Gliscor
+|-resisted|p2a: Gliscor
+|-damage|p2a: Gliscor|325\/354
+|callback|decision
+|
+|switch|p1a: Aerodactyl|Aerodactyl, M|302\/302
+|
+|-activate|p2a: Gliscor|item: Toxic Orb
+|-status|p2a: Gliscor|tox
+|turn|12
+|callback|decision
+|
+|-formechange|p1a: Aerodactyl|Aerodactyl-Mega
+|message|Aerodactyl has Mega Evolved into Mega Aerodactyl!
+|move|p1a: Aerodactyl|Hone Claws|p1a: Aerodactyl
+|-boost|p1a: Aerodactyl|atk|1
+|-boost|p1a: Aerodactyl|accuracy|1
+|move|p2a: Gliscor|Toxic|p1a: Aerodactyl
+|-status|p1a: Aerodactyl|tox
+|
+|-damage|p1a: Aerodactyl|284\/302 tox|[from] psn
+|-heal|p2a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|turn|13
+|callback|decision
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Aerodactyl|Aqua Tail|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-damage|p1a: Aerodactyl|248\/302 tox|[from] psn
+|turn|14
+|callback|decision
+|
+|switch|p2a: Jellicent|Jellicent, M|404\/404
+|move|p1a: Aerodactyl|Stone Edge|p2a: Jellicent
+|-damage|p2a: Jellicent|155\/404
+|
+|-heal|p2a: Jellicent|180\/404|[from] item: Leftovers
+|-damage|p1a: Aerodactyl|194\/302 tox|[from] psn
+|turn|15
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354 tox
+|move|p1a: Aerodactyl|Stone Edge|p2a: Gliscor
+|-damage|p2a: Gliscor|177\/354 tox
+|
+|-damage|p1a: Aerodactyl|122\/302 tox|[from] psn
+|-heal|p2a: Gliscor|221\/354 tox|[from] ability: Poison Heal
+|turn|16
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, F|169\/334
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-fail|p2a: Gliscor
+|
+|-heal|p1a: Skarmory|189\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|265\/354 tox|[from] ability: Poison Heal
+|turn|17
+|callback|decision
+|
+|move|p2a: Gliscor|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334
+|
+|-heal|p2a: Gliscor|309\/354 tox|[from] ability: Poison Heal
+|turn|18
+|callback|decision
+|chat|EricEric|argh
+|chat|EricEric|though you were faster
+|
+|switch|p1a: Togekiss|Togekiss, M|374\/374
+|move|p2a: Gliscor|U-turn|p1a: Togekiss
+|-resisted|p1a: Togekiss
+|-damage|p1a: Togekiss|360\/374
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, F|386\/386
+|
+|-heal|p1a: Togekiss|374\/374|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p1a: Togekiss|Heal Bell|p1a: Togekiss
+|-cureteam|p1a: Togekiss|[from] move: HealBell
+|move|p2a: Heatran|Flash Cannon|p1a: Togekiss
+|-supereffective|p1a: Togekiss
+|-damage|p1a: Togekiss|158\/374
+|
+|-heal|p1a: Togekiss|181\/374|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p1a: Togekiss|Thunder Wave|p2a: Heatran
+|-status|p2a: Heatran|par
+|cant|p2a: Heatran|par
+|
+|-heal|p1a: Togekiss|204\/374|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|switch|p1a: Hawlucha|Hawlucha, F|298\/298
+|move|p2a: Heatran|Flash Cannon|p1a: Hawlucha
+|-crit|p1a: Hawlucha
+|-enditem|p1a: Hawlucha|Focus Sash
+|-damage|p1a: Hawlucha|1\/298
+|
+|turn|22
+|callback|decision
+|
+|switch|p2a: Jellicent|Jellicent, M|180\/404
+|move|p1a: Hawlucha|Hone Claws|p1a: Hawlucha
+|-boost|p1a: Hawlucha|atk|1
+|-boost|p1a: Hawlucha|accuracy|1
+|
+|-heal|p2a: Jellicent|205\/404|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p1a: Hawlucha|Stone Edge|p2a: Jellicent
+|-damage|p2a: Jellicent|61\/404
+|move|p2a: Jellicent|Scald|p1a: Hawlucha
+|-damage|p1a: Hawlucha|0 fnt
+|faint|p1a: Hawlucha
+|
+|-heal|p2a: Jellicent|86\/404|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Rotom-Fan|Rotom-Fan|188\/304
+|turn|24
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, M|309\/354 tox
+|move|p1a: Rotom-Fan|Charge Beam|p2a: Gliscor
+|-immune|p2a: Gliscor|[msg]
+|
+|-heal|p1a: Rotom-Fan|207\/304|[from] item: Leftovers
+|-heal|p2a: Gliscor|353\/354 tox|[from] ability: Poison Heal
+|turn|25
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, F|334\/334
+|move|p2a: Gliscor|Toxic|p1a: Skarmory
+|-fail|p1a: Skarmory
+|
+|-heal|p2a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|turn|26
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, F|386\/386 par
+|move|p1a: Skarmory|Swords Dance|p1a: Skarmory
+|-boost|p1a: Skarmory|atk|2
+|
+|turn|27
+|callback|decision
+|
+|switch|p1a: Togekiss|Togekiss, M|204\/374
+|move|p2a: Heatran|Magma Storm|p1a: Togekiss|[miss]
+|-miss|p2a: Heatran|p1a: Togekiss
+|
+|-heal|p1a: Togekiss|227\/374|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|move|p1a: Togekiss|Roost|p1a: Togekiss
+|-heal|p1a: Togekiss|374\/374
+|move|p2a: Heatran|Flash Cannon|p1a: Togekiss
+|-supereffective|p1a: Togekiss
+|-damage|p1a: Togekiss|182\/374
+|
+|-heal|p1a: Togekiss|205\/374|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|move|p1a: Togekiss|Roost|p1a: Togekiss
+|-heal|p1a: Togekiss|374\/374
+|cant|p2a: Heatran|par
+|
+|turn|30
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|336\/386 par
+|cant|p2a: Heatran|flinch
+|
+|-heal|p2a: Heatran|360\/386 par|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|57\/320
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Heatran
+|-unboost|p2a: Heatran|atk|1
+|move|p2a: Heatran|Flash Cannon|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|faint|p1a: Landorus-Therian
+|
+|-heal|p2a: Heatran|384\/386 par|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Aerodactyl|Aerodactyl, M|122\/302
+|-formechange|p1a: Aerodactyl|Aerodactyl-Mega
+|turn|32
+|callback|decision
+|
+|move|p1a: Aerodactyl|Aqua Tail|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|116\/386 par
+|move|p2a: Heatran|Flash Cannon|p1a: Aerodactyl
+|-supereffective|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|0 fnt
+|faint|p1a: Aerodactyl
+|
+|-heal|p2a: Heatran|140\/386 par|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Rotom-Fan|Rotom-Fan|207\/304
+|turn|33
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354 tox
+|move|p1a: Rotom-Fan|Confuse Ray|p2a: Gliscor
+|-start|p2a: Gliscor|confusion
+|
+|-heal|p1a: Rotom-Fan|226\/304|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, F|334\/334
+|switch|p2a: Rotom-Mow|Rotom-Mow|303\/303 brn
+|
+|-damage|p2a: Rotom-Mow|266\/303 brn|[from] brn
+|turn|35
+|callback|decision
+|
+|move|p2a: Rotom-Mow|Will-O-Wisp|p1a: Skarmory
+|-status|p1a: Skarmory|brn
+|move|p1a: Skarmory|Brave Bird|p2a: Rotom-Mow
+|-damage|p2a: Rotom-Mow|206\/303 brn
+|-damage|p1a: Skarmory|314\/334 brn|[from] recoil|[of] p2a: Rotom-Mow
+|
+|-heal|p2a: Rotom-Mow|224\/303 brn|[from] item: Leftovers
+|-heal|p1a: Skarmory|334\/334 brn|[from] item: Leftovers
+|-damage|p2a: Rotom-Mow|187\/303 brn|[from] brn
+|-damage|p1a: Skarmory|293\/334 brn|[from] brn
+|turn|36
+|callback|decision
+|
+|switch|p1a: Togekiss|Togekiss, M|374\/374
+|move|p2a: Rotom-Mow|Volt Switch|p1a: Togekiss
+|-supereffective|p1a: Togekiss
+|-damage|p1a: Togekiss|252\/374
+|callback|decision
+|
+|switch|p2a: Jellicent|Jellicent, M|86\/404
+|
+|-heal|p1a: Togekiss|275\/374|[from] item: Leftovers
+|-heal|p2a: Jellicent|111\/404|[from] item: Leftovers
+|turn|37
+|callback|decision
+|
+|move|p1a: Togekiss|Thunder Wave|p2a: Jellicent
+|-status|p2a: Jellicent|par
+|cant|p2a: Jellicent|par
+|
+|-heal|p1a: Togekiss|298\/374|[from] item: Leftovers
+|-heal|p2a: Jellicent|136\/404 par|[from] item: Leftovers
+|turn|38
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Jellicent|[miss]
+|-miss|p1a: Togekiss|p2a: Jellicent
+|move|p2a: Jellicent|Ice Beam|p1a: Togekiss
+|-supereffective|p1a: Togekiss
+|-damage|p1a: Togekiss|218\/374
+|
+|-heal|p1a: Togekiss|241\/374|[from] item: Leftovers
+|-heal|p2a: Jellicent|161\/404 par|[from] item: Leftovers
+|turn|39
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354 tox
+|move|p1a: Togekiss|Air Slash|p2a: Gliscor
+|-damage|p2a: Gliscor|230\/354 tox
+|
+|-heal|p1a: Togekiss|264\/374|[from] item: Leftovers
+|-heal|p2a: Gliscor|274\/354 tox|[from] ability: Poison Heal
+|turn|40
+|callback|decision
+|
+|move|p2a: Gliscor|Toxic|p1a: Togekiss
+|-status|p1a: Togekiss|tox
+|move|p1a: Togekiss|Air Slash|p2a: Gliscor|[miss]
+|-miss|p1a: Togekiss|p2a: Gliscor
+|
+|-heal|p1a: Togekiss|287\/374 tox|[from] item: Leftovers
+|-heal|p2a: Gliscor|318\/354 tox|[from] ability: Poison Heal
+|-damage|p1a: Togekiss|264\/374 tox|[from] psn
+|turn|41
+|callback|decision
+|
+|move|p2a: Gliscor|U-turn|p1a: Togekiss
+|-resisted|p1a: Togekiss
+|-damage|p1a: Togekiss|250\/374 tox
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, F|140\/386 par
+|move|p1a: Togekiss|Heal Bell|p1a: Togekiss
+|-cureteam|p1a: Togekiss|[from] move: HealBell
+|
+|-heal|p1a: Togekiss|273\/374|[from] item: Leftovers
+|-heal|p2a: Heatran|164\/386 par|[from] item: Leftovers
+|turn|42
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|117\/386 par
+|move|p2a: Heatran|Flash Cannon|p1a: Togekiss
+|-supereffective|p1a: Togekiss
+|-damage|p1a: Togekiss|57\/374
+|
+|-heal|p1a: Togekiss|80\/374|[from] item: Leftovers
+|-heal|p2a: Heatran|141\/386 par|[from] item: Leftovers
+|turn|43
+|callback|decision
+|
+|move|p1a: Togekiss|Roost|p1a: Togekiss
+|-heal|p1a: Togekiss|267\/374
+|move|p2a: Heatran|Flash Cannon|p1a: Togekiss
+|-supereffective|p1a: Togekiss
+|-damage|p1a: Togekiss|51\/374
+|
+|-heal|p1a: Togekiss|74\/374|[from] item: Leftovers
+|-heal|p2a: Heatran|165\/386 par|[from] item: Leftovers
+|turn|44
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|115\/386 par
+|cant|p2a: Heatran|par
+|
+|-heal|p1a: Togekiss|97\/374|[from] item: Leftovers
+|-heal|p2a: Heatran|139\/386 par|[from] item: Leftovers
+|turn|45
+|callback|decision
+|
+|move|p1a: Togekiss|Roost|p1a: Togekiss
+|-heal|p1a: Togekiss|284\/374
+|cant|p2a: Heatran|par
+|
+|-heal|p1a: Togekiss|307\/374|[from] item: Leftovers
+|-heal|p2a: Heatran|163\/386 par|[from] item: Leftovers
+|turn|46
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Heatran
+|-crit|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|89\/386 par
+|cant|p2a: Heatran|flinch
+|
+|-heal|p1a: Togekiss|330\/374|[from] item: Leftovers
+|-heal|p2a: Heatran|113\/386 par|[from] item: Leftovers
+|turn|47
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|61\/386 par
+|move|p2a: Heatran|Flash Cannon|p1a: Togekiss
+|-supereffective|p1a: Togekiss
+|-damage|p1a: Togekiss|112\/374
+|-unboost|p1a: Togekiss|spd|1
+|
+|-heal|p1a: Togekiss|135\/374|[from] item: Leftovers
+|-heal|p2a: Heatran|85\/386 par|[from] item: Leftovers
+|turn|48
+|callback|decision
+|
+|switch|p1a: Rotom-Fan|Rotom-Fan|226\/304
+|move|p2a: Heatran|Flash Cannon|p1a: Rotom-Fan
+|-resisted|p1a: Rotom-Fan
+|-damage|p1a: Rotom-Fan|154\/304
+|
+|-heal|p1a: Rotom-Fan|173\/304|[from] item: Leftovers
+|-heal|p2a: Heatran|109\/386 par|[from] item: Leftovers
+|turn|49
+|callback|decision
+|
+|move|p1a: Rotom-Fan|Confuse Ray|p2a: Heatran
+|-start|p2a: Heatran|confusion
+|cant|p2a: Heatran|par
+|
+|-heal|p1a: Rotom-Fan|192\/304|[from] item: Leftovers
+|-heal|p2a: Heatran|133\/386 par|[from] item: Leftovers
+|turn|50
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, M|318\/354 tox
+|move|p1a: Rotom-Fan|Charge Beam|p2a: Gliscor
+|-immune|p2a: Gliscor|[msg]
+|
+|-heal|p1a: Rotom-Fan|211\/304|[from] item: Leftovers
+|-heal|p2a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|turn|51
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, F|293\/334
+|move|p2a: Gliscor|U-turn|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|285\/334
+|callback|decision
+|chat|ALeaderWhimsicott|................................................................
+|
+|switch|p2a: Heatran|Heatran, F|133\/386 par
+|
+|-heal|p1a: Skarmory|305\/334|[from] item: Leftovers
+|-heal|p2a: Heatran|157\/386 par|[from] item: Leftovers
+|turn|52
+|callback|decision
+|
+|switch|p1a: Rotom-Fan|Rotom-Fan|211\/304
+|move|p2a: Heatran|Magma Storm|p1a: Rotom-Fan|[miss]
+|-miss|p2a: Heatran|p1a: Rotom-Fan
+|
+|-heal|p1a: Rotom-Fan|230\/304|[from] item: Leftovers
+|-heal|p2a: Heatran|181\/386 par|[from] item: Leftovers
+|turn|53
+|callback|decision
+|
+|move|p1a: Rotom-Fan|Charge Beam|p2a: Heatran
+|-damage|p2a: Heatran|124\/386 par
+|cant|p2a: Heatran|par
+|
+|-heal|p1a: Rotom-Fan|249\/304|[from] item: Leftovers
+|-heal|p2a: Heatran|148\/386 par|[from] item: Leftovers
+|turn|54
+|callback|decision
+|
+|move|p1a: Rotom-Fan|Confuse Ray|p2a: Heatran
+|-start|p2a: Heatran|confusion
+|-activate|p2a: Heatran|confusion
+|move|p2a: Heatran|Magma Storm|p1a: Rotom-Fan
+|-damage|p1a: Rotom-Fan|59\/304
+|-activate|p1a: Rotom-Fan|move: Magma Storm|[of] p2a: Heatran
+|
+|-heal|p1a: Rotom-Fan|78\/304|[from] item: Leftovers
+|-heal|p2a: Heatran|172\/386 par|[from] item: Leftovers
+|-damage|p1a: Rotom-Fan|40\/304|[from] move: Magma Storm|[partiallytrapped]
+|turn|55
+|callback|decision
+|
+|move|p1a: Rotom-Fan|Pain Split|p2a: Heatran
+|-sethp|p2a: Heatran|106\/386 par|p1a: Rotom-Fan|106\/304|[from] move: Pain Split
+|-activate|p2a: Heatran|confusion
+|move|p2a: Heatran|Magma Storm|p1a: Rotom-Fan
+|-damage|p1a: Rotom-Fan|0 fnt
+|faint|p1a: Rotom-Fan
+|
+|-heal|p2a: Heatran|130\/386 par|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Togekiss|Togekiss, M|135\/374
+|turn|56
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354 tox
+|move|p1a: Togekiss|Roost|p1a: Togekiss
+|-heal|p1a: Togekiss|322\/374
+|
+|-heal|p1a: Togekiss|345\/374|[from] item: Leftovers
+|turn|57
+|callback|decision
+|
+|move|p2a: Gliscor|Toxic|p1a: Togekiss|[miss]
+|-miss|p2a: Gliscor|p1a: Togekiss
+|move|p1a: Togekiss|Air Slash|p2a: Gliscor
+|-damage|p2a: Gliscor|227\/354 tox
+|
+|-heal|p1a: Togekiss|368\/374|[from] item: Leftovers
+|-heal|p2a: Gliscor|271\/354 tox|[from] ability: Poison Heal
+|turn|58
+|callback|decision
+|
+|move|p2a: Gliscor|Toxic|p1a: Togekiss|[miss]
+|-miss|p2a: Gliscor|p1a: Togekiss
+|move|p1a: Togekiss|Air Slash|p2a: Gliscor
+|-damage|p2a: Gliscor|132\/354 tox
+|
+|-heal|p1a: Togekiss|374\/374|[from] item: Leftovers
+|-heal|p2a: Gliscor|176\/354 tox|[from] ability: Poison Heal
+|turn|59
+|callback|decision
+|
+|move|p2a: Gliscor|Toxic|p1a: Togekiss
+|-status|p1a: Togekiss|tox
+|move|p1a: Togekiss|Air Slash|p2a: Gliscor
+|-damage|p2a: Gliscor|52\/354 tox
+|
+|-heal|p2a: Gliscor|96\/354 tox|[from] ability: Poison Heal
+|-damage|p1a: Togekiss|351\/374 tox|[from] psn
+|turn|60
+|callback|decision
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Togekiss|Heal Bell|p1a: Togekiss
+|-cureteam|p1a: Togekiss|[from] move: HealBell
+|
+|-heal|p1a: Togekiss|374\/374|[from] item: Leftovers
+|-heal|p2a: Gliscor|140\/354 tox|[from] ability: Poison Heal
+|turn|61
+|callback|decision
+|
+|move|p2a: Gliscor|Toxic|p1a: Togekiss
+|-status|p1a: Togekiss|tox
+|move|p1a: Togekiss|Air Slash|p2a: Gliscor
+|-damage|p2a: Gliscor|14\/354 tox
+|
+|-heal|p2a: Gliscor|58\/354 tox|[from] ability: Poison Heal
+|-damage|p1a: Togekiss|351\/374 tox|[from] psn
+|turn|62
+|callback|decision
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Togekiss|Heal Bell|p1a: Togekiss
+|-cureteam|p1a: Togekiss|[from] move: HealBell
+|
+|-heal|p1a: Togekiss|374\/374|[from] item: Leftovers
+|-heal|p2a: Gliscor|102\/354 tox|[from] ability: Poison Heal
+|turn|63
+|callback|decision
+|
+|switch|p2a: Jellicent|Jellicent, M|161\/404 par
+|move|p1a: Togekiss|Air Slash|p2a: Jellicent
+|-crit|p2a: Jellicent
+|-damage|p2a: Jellicent|16\/404 par
+|
+|-heal|p2a: Jellicent|41\/404 par|[from] item: Leftovers
+|turn|64
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Jellicent
+|-damage|p2a: Jellicent|0 fnt
+|faint|p2a: Jellicent
+|
+|callback|decision
+|
+|switch|p2a: Gardevoir|Gardevoir, F|340\/340
+|turn|65
+|callback|decision
+|
+|move|p1a: Togekiss|Thunder Wave|p2a: Gardevoir
+|-status|p2a: Gardevoir|par
+|-status|p1a: Togekiss|par
+|move|p2a: Gardevoir|Calm Mind|p2a: Gardevoir
+|-boost|p2a: Gardevoir|spa|1
+|-boost|p2a: Gardevoir|spd|1
+|
+|turn|66
+|callback|decision
+|
+|move|p2a: Gardevoir|Psychic|p1a: Togekiss
+|-damage|p1a: Togekiss|199\/374 par
+|move|p1a: Togekiss|Heal Bell|p1a: Togekiss
+|-cureteam|p1a: Togekiss|[from] move: HealBell
+|
+|-heal|p1a: Togekiss|222\/374|[from] item: Leftovers
+|turn|67
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Gardevoir
+|-damage|p2a: Gardevoir|280\/340 par
+|cant|p2a: Gardevoir|par
+|
+|-heal|p1a: Togekiss|245\/374|[from] item: Leftovers
+|-heal|p2a: Gardevoir|301\/340 par|[from] item: Leftovers
+|turn|68
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Gardevoir
+|-damage|p2a: Gardevoir|235\/340 par
+|cant|p2a: Gardevoir|flinch
+|
+|-heal|p1a: Togekiss|268\/374|[from] item: Leftovers
+|-heal|p2a: Gardevoir|256\/340 par|[from] item: Leftovers
+|turn|69
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Gardevoir|[miss]
+|-miss|p1a: Togekiss|p2a: Gardevoir
+|move|p2a: Gardevoir|Calm Mind|p2a: Gardevoir
+|-boost|p2a: Gardevoir|spa|1
+|-boost|p2a: Gardevoir|spd|1
+|
+|-heal|p1a: Togekiss|291\/374|[from] item: Leftovers
+|-heal|p2a: Gardevoir|277\/340 par|[from] item: Leftovers
+|turn|70
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Gardevoir
+|-damage|p2a: Gardevoir|234\/340 par
+|cant|p2a: Gardevoir|flinch
+|
+|-heal|p1a: Togekiss|314\/374|[from] item: Leftovers
+|-heal|p2a: Gardevoir|255\/340 par|[from] item: Leftovers
+|turn|71
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Gardevoir
+|-damage|p2a: Gardevoir|210\/340 par
+|cant|p2a: Gardevoir|par
+|
+|-heal|p1a: Togekiss|337\/374|[from] item: Leftovers
+|-heal|p2a: Gardevoir|231\/340 par|[from] item: Leftovers
+|turn|72
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Gardevoir
+|-damage|p2a: Gardevoir|186\/340 par
+|cant|p2a: Gardevoir|par
+|
+|-heal|p1a: Togekiss|360\/374|[from] item: Leftovers
+|-heal|p2a: Gardevoir|207\/340 par|[from] item: Leftovers
+|turn|73
+|callback|decision
+|join|ALeader Walt
+|
+|move|p1a: Togekiss|Air Slash|p2a: Gardevoir
+|-damage|p2a: Gardevoir|162\/340 par
+|move|p2a: Gardevoir|Psychic|p1a: Togekiss
+|-damage|p1a: Togekiss|117\/374
+|
+|-heal|p1a: Togekiss|140\/374|[from] item: Leftovers
+|-heal|p2a: Gardevoir|183\/340 par|[from] item: Leftovers
+|turn|74
+|callback|decision
+|join|CookSins
+|chat|CookSins|lol
+|
+|move|p1a: Togekiss|Air Slash|p2a: Gardevoir
+|-damage|p2a: Gardevoir|140\/340 par
+|cant|p2a: Gardevoir|flinch
+|
+|-heal|p1a: Togekiss|163\/374|[from] item: Leftovers
+|-heal|p2a: Gardevoir|161\/340 par|[from] item: Leftovers
+|turn|75
+|callback|decision
+|
+|move|p1a: Togekiss|Roost|p1a: Togekiss
+|-heal|p1a: Togekiss|350\/374
+|move|p2a: Gardevoir|Psychic|p1a: Togekiss
+|-damage|p1a: Togekiss|137\/374
+|
+|-heal|p1a: Togekiss|160\/374|[from] item: Leftovers
+|-heal|p2a: Gardevoir|182\/340 par|[from] item: Leftovers
+|turn|76
+|callback|decision
+|join|Stillness
+|join|AElite Pain
+|
+|move|p1a: Togekiss|Air Slash|p2a: Gardevoir
+|-damage|p2a: Gardevoir|136\/340 par
+|cant|p2a: Gardevoir|flinch
+|
+|-heal|p1a: Togekiss|183\/374|[from] item: Leftovers
+|-heal|p2a: Gardevoir|157\/340 par|[from] item: Leftovers
+|turn|77
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Gardevoir
+|-damage|p2a: Gardevoir|108\/340 par
+|move|p2a: Gardevoir|Psychic|p1a: Togekiss
+|-damage|p1a: Togekiss|0 fnt
+|faint|p1a: Togekiss
+|
+|-heal|p2a: Gardevoir|129\/340 par|[from] item: Leftovers
+|callback|decision
+|leave|CookSins
+|
+|switch|p1a: Skarmory|Skarmory, F|305\/334
+|turn|78
+|callback|decision
+|chat|AElite Pain|77 turns o.o
+|chat|Stillness|Why is this endless.
+|chat|AElite Pain|dafaq
+|chat|Stillness|Lol 77 turns.
+|chat|Stillness|Child's play
+|
+|move|p1a: Skarmory|Brave Bird|p2a: Gardevoir
+|-damage|p2a: Gardevoir|0 fnt
+|-damage|p1a: Skarmory|262\/334|[from] recoil|[of] p2a: Gardevoir
+|faint|p2a: Gardevoir
+|
+|-heal|p1a: Skarmory|282\/334|[from] item: Leftovers
+|callback|decision
+|chat|ALeader Walt|>you lied to me
+|
+|switch|p2a: Heatran|Heatran, F|130\/386 par
+|turn|79
+|callback|decision
+|
+|move|p1a: Skarmory|Brave Bird|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|73\/386 par
+|-damage|p1a: Skarmory|263\/334|[from] recoil|[of] p2a: Heatran
+|move|p2a: Heatran|Magma Storm|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|faint|p1a: Skarmory
+|
+|win|EricEric
+|chat|Stillness|Try 200. that's horrible.
+|chat|ALeaderWhimsicott|lol
+|chat|EricEric|gg
+|chat|ALeaderWhimsicott|gg
+|leave|AElite Pain
+|chat|ALeaderWhimsicott|heres ur feather badge
+|chat|ALeader Walt|The original Endless Battle had over 300
+|chat|EricEric|ty!
+|leave|Stillness
+|leave|ALeader Walt

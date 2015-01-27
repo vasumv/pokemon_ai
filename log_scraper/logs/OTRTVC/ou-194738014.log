@@ -1,0 +1,196 @@
+|join|OTRTVC
+|join|pkeva
+|player|p1|OTRTVC|290
+|player|p2|pkeva|30
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Tyranitar, F, shiny
+|poke|p1|Excadrill, M, shiny
+|poke|p1|Latias, F, shiny
+|poke|p1|Greninja, F, shiny
+|poke|p1|Landorus, M, shiny
+|poke|p1|Charizard, F, shiny
+|poke|p2|Zygarde
+|poke|p2|Victini
+|poke|p2|Scolipede, F
+|poke|p2|Whimsicott, F
+|poke|p2|Blastoise, M
+|poke|p2|Bisharp, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Tyranitar|Tyranitar, F, shiny|404\/404
+|switch|p2a: Blastoise|Blastoise, M|343\/343
+|-weather|Sandstorm
+|turn|1
+|
+|switch|p1a: Charizard|Charizard, F, shiny|297\/297
+|detailschange|p2a: Blastoise|Blastoise-Mega, M
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Blastoise|Water Pulse|p1a: Charizard
+|-supereffective|p1a: Charizard
+|-damage|p1a: Charizard|0 fnt
+|faint|p1a: Charizard
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Blastoise|322\/343|[from] sandstorm
+|
+|switch|p1a: Latias|Latias, F, shiny|301\/301
+|turn|2
+|
+|switch|p2a: Whimsicott|Whimsicott, F|324\/324
+|move|p1a: Latias|Draco Meteor|p2a: Whimsicott
+|-immune|p2a: Whimsicott|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latias|283\/301|[from] sandstorm
+|-damage|p2a: Whimsicott|304\/324|[from] sandstorm
+|-heal|p2a: Whimsicott|324\/324|[from] item: Leftovers
+|turn|3
+|
+|move|p2a: Whimsicott|Stun Spore|p1a: Latias
+|-status|p1a: Latias|par
+|cant|p1a: Latias|par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Whimsicott|304\/324|[from] sandstorm
+|-damage|p1a: Latias|265\/301 par|[from] sandstorm
+|-heal|p2a: Whimsicott|324\/324|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Bisharp|Bisharp, F|271\/271
+|move|p1a: Latias|Draco Meteor|p2a: Bisharp|[miss]
+|-miss|p1a: Latias|p2a: Bisharp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latias|247\/301 par|[from] sandstorm
+|turn|5
+|
+|move|p2a: Bisharp|Knock Off|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|0 fnt
+|-enditem|p1a: Latias|Life Orb|[from] move: Knock Off|[of] p2a: Bisharp
+|faint|p1a: Latias
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Excadrill|Excadrill, M, shiny|361\/361
+|turn|6
+|
+|switch|p2a: Whimsicott|Whimsicott, F|324\/324
+|move|p1a: Excadrill|Earthquake|p2a: Whimsicott
+|-resisted|p2a: Whimsicott
+|-damage|p2a: Whimsicott|211\/324
+|-damage|p1a: Excadrill|325\/361|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Whimsicott|191\/324|[from] sandstorm
+|-heal|p2a: Whimsicott|211\/324|[from] item: Leftovers
+|turn|7
+|
+|move|p2a: Whimsicott|Encore|p1a: Excadrill
+|-start|p1a: Excadrill|Encore
+|move|p1a: Excadrill|Earthquake|p2a: Whimsicott
+|-resisted|p2a: Whimsicott
+|-damage|p2a: Whimsicott|110\/324
+|-damage|p1a: Excadrill|289\/361|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Whimsicott|90\/324|[from] sandstorm
+|-heal|p2a: Whimsicott|110\/324|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Greninja|Greninja, F, shiny|285\/285
+|move|p2a: Whimsicott|Stun Spore|p1a: Greninja|[miss]
+|-miss|p2a: Whimsicott|p1a: Greninja
+|
+|-weather|none
+|-heal|p2a: Whimsicott|130\/324|[from] item: Leftovers
+|turn|9
+|
+|move|p2a: Whimsicott|Stun Spore|p1a: Greninja
+|-status|p1a: Greninja|par
+|move|p1a: Greninja|Ice Beam|p2a: Whimsicott
+|-start|p1a: Greninja|typechange|Ice|[from] Protean
+|-supereffective|p2a: Whimsicott
+|-damage|p2a: Whimsicott|0 fnt
+|-damage|p1a: Greninja|257\/285 par|[from] item: Life Orb
+|faint|p2a: Whimsicott
+|
+|
+|switch|p2a: Scolipede|Scolipede, F|262\/262
+|turn|10
+|
+|switch|p1a: Landorus|Landorus, M, shiny|345\/345
+|move|p2a: Scolipede|Swords Dance|p2a: Scolipede
+|-boost|p2a: Scolipede|atk|2
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|11
+|
+|move|p2a: Scolipede|Poison Jab|p1a: Landorus
+|-resisted|p1a: Landorus
+|-damage|p1a: Landorus|208\/345
+|move|p1a: Landorus|Rock Polish|p1a: Landorus
+|-boost|p1a: Landorus|spe|2
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|12
+|
+|move|p2a: Scolipede|Poison Jab|p1a: Landorus
+|-resisted|p1a: Landorus
+|-damage|p1a: Landorus|65\/345
+|move|p1a: Landorus|Psychic|p2a: Scolipede
+|-supereffective|p2a: Scolipede
+|-enditem|p2a: Scolipede|Focus Sash
+|-damage|p2a: Scolipede|1\/262
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|13
+|
+|switch|p1a: Tyranitar|Tyranitar, F, shiny|404\/404
+|-weather|Sandstorm
+|move|p2a: Scolipede|Baton Pass|p2a: Scolipede
+|
+|switch|p2a: Bisharp|Bisharp, F|271\/271
+|
+|-weather|Sandstorm|[upkeep]
+|turn|14
+|
+|switch|p1a: Greninja|Greninja, F, shiny|257\/285 par
+|move|p2a: Bisharp|Brick Break|p1a: Greninja
+|-supereffective|p1a: Greninja
+|-damage|p1a: Greninja|0 fnt
+|faint|p1a: Greninja
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Excadrill|Excadrill, M, shiny|289\/361
+|turn|15
+|
+|move|p2a: Bisharp|Brick Break|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-damage|p1a: Excadrill|0 fnt
+|faint|p1a: Excadrill
+|
+|-weather|Sandstorm|[upkeep]
+|-message|OTRTVC forfeited.
+|
+|win|pkeva
+|raw|Ladder updating...
+|leave|OTRTVC
+|player|p1
+|raw|OTRTVC's rating: 1776 &rarr; <strong>1749<\/strong><br \/>(-27 for losing)
+|raw|pkeva's rating: 1650 &rarr; <strong>1677<\/strong><br \/>(+27 for winning)

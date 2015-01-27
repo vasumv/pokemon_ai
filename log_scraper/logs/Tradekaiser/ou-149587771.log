@@ -1,0 +1,362 @@
+|join|tradekaiser
+|join|Ptyra
+|player|p1|tradekaiser|2
+|player|p2|Ptyra|170
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Staraptor, F
+|poke|p1|Weavile, F
+|poke|p1|Heatran, M
+|poke|p1|Roserade, M
+|poke|p1|Togekiss, F
+|poke|p1|Garchomp, F
+|poke|p2|Rotom-Wash
+|poke|p2|Amoonguss, M
+|poke|p2|Heatran, F
+|poke|p2|Gardevoir, F
+|poke|p2|Conkeldurr, M
+|poke|p2|Excadrill, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Roserade|Roserade, M|262\/262
+|switch|p2a: Heatran|Heatran, F|385\/385
+|turn|1
+|
+|move|p1a: Roserade|Sleep Powder|p2a: Heatran|[miss]
+|-miss|p1a: Roserade|p2a: Heatran
+|move|p2a: Heatran|Stealth Rock|p1a: Roserade
+|-sidestart|p1: tradekaiser|move: Stealth Rock
+|
+|turn|2
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|move|p1a: Roserade|Sleep Powder|p2a: Amoonguss
+|-fail|p2a: Amoonguss
+|
+|turn|3
+|
+|move|p1a: Roserade|Hidden Power|p2a: Amoonguss
+|-supereffective|p2a: Amoonguss
+|-damage|p2a: Amoonguss|240\/432
+|-damage|p1a: Roserade|236\/262|[from] item: Life Orb
+|move|p2a: Amoonguss|Clear Smog|p1a: Roserade
+|-damage|p1a: Roserade|185\/262
+|-clearboost|p1a: Roserade
+|
+|-heal|p2a: Amoonguss|267\/432|[from] item: Black Sludge
+|turn|4
+|
+|switch|p2a: Gardevoir|Gardevoir, F|277\/277
+|-ability|p2a: Gardevoir|Natural Cure|[from] ability: Trace|[of] p1a: Roserade
+|move|p1a: Roserade|Sludge Bomb|p2a: Gardevoir
+|-supereffective|p2a: Gardevoir
+|-damage|p2a: Gardevoir|0 fnt
+|-damage|p1a: Roserade|159\/262|[from] item: Life Orb
+|faint|p2a: Gardevoir
+|
+|
+|switch|p2a: Heatran|Heatran, F|385\/385
+|turn|5
+|
+|move|p1a: Roserade|Sleep Powder|p2a: Heatran
+|-status|p2a: Heatran|slp
+|cant|p2a: Heatran|slp
+|
+|turn|6
+|
+|switch|p1a: Heatran|Heatran, M|323\/323
+|-damage|p1a: Heatran|283\/323|[from] Stealth Rock
+|-item|p1a: Heatran|Air Balloon
+|cant|p2a: Heatran|slp
+|
+|turn|7
+|
+|switch|p2a: Conkeldurr|Conkeldurr, M|351\/351
+|move|p1a: Heatran|Earth Power|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|261\/351
+|
+|turn|8
+|
+|switch|p1a: Togekiss|Togekiss, F|373\/373
+|-damage|p1a: Togekiss|280\/373|[from] Stealth Rock
+|move|p2a: Conkeldurr|Ice Punch|p1a: Togekiss
+|-supereffective|p1a: Togekiss
+|-damage|p1a: Togekiss|54\/373
+|
+|-heal|p1a: Togekiss|77\/373|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Excadrill|Excadrill, F|361\/361
+|-ability|p2a: Excadrill|Mold Breaker
+|move|p1a: Togekiss|Defog|p2a: Excadrill
+|-unboost|p2a: Excadrill|evasion|1
+|-sideend|p1: tradekaiser|Stealth Rock|[from] move: Defog|[of] p1a: Togekiss
+|
+|-heal|p1a: Togekiss|100\/373|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Garchomp|Garchomp, F|357\/357
+|move|p2a: Excadrill|Iron Head|p1a: Garchomp
+|-damage|p1a: Garchomp|203\/357
+|-damage|p2a: Excadrill|316\/361|[from] ability: Rough Skin|[of] p1a: Garchomp
+|
+|turn|11
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|303\/303
+|detailschange|p1a: Garchomp|Garchomp-Mega, F
+|message|Garchomp has Mega Evolved into Mega Garchomp!
+|move|p1a: Garchomp|Earthquake|p2a: Rotom-Wash
+|-immune|p2a: Rotom-Wash|[msg]
+|
+|turn|12
+|
+|move|p1a: Garchomp|Draco Meteor|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|101\/303
+|-unboost|p1a: Garchomp|spa|2
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Garchomp
+|-status|p1a: Garchomp|brn
+|
+|-heal|p2a: Rotom-Wash|119\/303|[from] item: Leftovers
+|-damage|p1a: Garchomp|159\/357 brn|[from] brn
+|turn|13
+|
+|switch|p2a: Amoonguss|Amoonguss, M|411\/432
+|move|p1a: Garchomp|Draco Meteor|p2a: Amoonguss
+|-damage|p2a: Amoonguss|294\/432
+|-unboost|p1a: Garchomp|spa|2
+|
+|-heal|p2a: Amoonguss|321\/432|[from] item: Black Sludge
+|-damage|p1a: Garchomp|115\/357 brn|[from] brn
+|turn|14
+|
+|move|p1a: Garchomp|Earthquake|p2a: Amoonguss
+|-damage|p2a: Amoonguss|222\/432
+|move|p2a: Amoonguss|Foul Play|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|faint|p1a: Garchomp
+|
+|-heal|p2a: Amoonguss|249\/432|[from] item: Black Sludge
+|
+|switch|p1a: Staraptor|Staraptor, F|311\/311
+|turn|15
+|
+|switch|p2a: Excadrill|Excadrill, F|316\/361
+|-ability|p2a: Excadrill|Mold Breaker
+|move|p1a: Staraptor|Brave Bird|p2a: Excadrill
+|-resisted|p2a: Excadrill
+|-damage|p2a: Excadrill|131\/361
+|-damage|p1a: Staraptor|250\/311|[from] recoil|[of] p2a: Excadrill
+|
+|turn|16
+|
+|move|p1a: Staraptor|Brave Bird|p2a: Excadrill
+|-resisted|p2a: Excadrill
+|-damage|p2a: Excadrill|0 fnt
+|-damage|p1a: Staraptor|207\/311|[from] recoil|[of] p2a: Excadrill
+|faint|p2a: Excadrill
+|
+|
+|switch|p2a: Heatran|Heatran, F|385\/385 slp
+|turn|17
+|
+|switch|p1a: Heatran|Heatran, M|283\/323
+|-item|p1a: Heatran|Air Balloon
+|-curestatus|p2a: Heatran|slp
+|move|p2a: Heatran|Stealth Rock|p1a: Heatran
+|-sidestart|p1: tradekaiser|move: Stealth Rock
+|
+|turn|18
+|
+|switch|p2a: Conkeldurr|Conkeldurr, M|261\/351
+|move|p1a: Heatran|Earth Power|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|171\/351
+|
+|turn|19
+|
+|move|p1a: Heatran|Fire Blast|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|26\/351
+|move|p2a: Conkeldurr|Drain Punch|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|-heal|p2a: Conkeldurr|168\/351|[from] drain|[of] p1a: Heatran
+|-enditem|p1a: Heatran|Air Balloon
+|faint|p1a: Heatran
+|
+|
+|switch|p1a: Staraptor|Staraptor, F|207\/311
+|-damage|p1a: Staraptor|130\/311|[from] Stealth Rock
+|turn|20
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|119\/303
+|move|p1a: Staraptor|Brave Bird|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|29\/303
+|-damage|p1a: Staraptor|100\/311|[from] recoil|[of] p2a: Rotom-Wash
+|
+|-heal|p2a: Rotom-Wash|47\/303|[from] item: Leftovers
+|turn|21
+|
+|switch|p2a: Heatran|Heatran, F|385\/385
+|move|p1a: Staraptor|Brave Bird|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|260\/385
+|-damage|p1a: Staraptor|59\/311|[from] recoil|[of] p2a: Heatran
+|
+|-heal|p2a: Heatran|284\/385|[from] item: Leftovers
+|turn|22
+|
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-singleturn|p2a: Heatran|Protect
+|move|p1a: Staraptor|Brave Bird|p2a: Heatran
+|-activate|p2a: Heatran|Protect
+|
+|-heal|p2a: Heatran|308\/385|[from] item: Leftovers
+|turn|23
+|
+|move|p1a: Staraptor|Brave Bird|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|183\/385
+|-damage|p1a: Staraptor|18\/311|[from] recoil|[of] p2a: Heatran
+|move|p2a: Heatran|Lava Plume|p1a: Staraptor
+|-damage|p1a: Staraptor|0 fnt
+|faint|p1a: Staraptor
+|
+|-heal|p2a: Heatran|207\/385|[from] item: Leftovers
+|
+|switch|p1a: Weavile|Weavile, F|281\/281
+|-damage|p1a: Weavile|211\/281|[from] Stealth Rock
+|-ability|p1a: Weavile|Pressure
+|turn|24
+|
+|switch|p2a: Conkeldurr|Conkeldurr, M|168\/351
+|move|p1a: Weavile|Low Kick|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|52\/351
+|-damage|p1a: Weavile|183\/281|[from] item: Life Orb
+|
+|turn|25
+|
+|move|p1a: Weavile|Ice Shard|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|0 fnt
+|-damage|p1a: Weavile|155\/281|[from] item: Life Orb
+|faint|p2a: Conkeldurr
+|
+|
+|switch|p2a: Amoonguss|Amoonguss, M|393\/432
+|turn|26
+|
+|move|p1a: Weavile|Ice Punch|p2a: Amoonguss
+|-supereffective|p2a: Amoonguss
+|-damage|p2a: Amoonguss|86\/432
+|-damage|p1a: Weavile|127\/281|[from] item: Life Orb
+|move|p2a: Amoonguss|Spore|p1a: Weavile
+|-status|p1a: Weavile|slp
+|
+|-heal|p2a: Amoonguss|113\/432|[from] item: Black Sludge
+|turn|27
+|
+|switch|p1a: Togekiss|Togekiss, F|100\/373
+|-damage|p1a: Togekiss|7\/373|[from] Stealth Rock
+|switch|p2a: Heatran|Heatran, F|207\/385
+|
+|-heal|p2a: Heatran|231\/385|[from] item: Leftovers
+|-heal|p1a: Togekiss|30\/373|[from] item: Leftovers
+|turn|28
+|
+|move|p2a: Heatran|Toxic|p1a: Togekiss
+|-status|p1a: Togekiss|tox
+|move|p1a: Togekiss|Roost|p1a: Togekiss
+|-heal|p1a: Togekiss|217\/373 tox
+|
+|-heal|p2a: Heatran|255\/385|[from] item: Leftovers
+|-heal|p1a: Togekiss|240\/373 tox|[from] item: Leftovers
+|-damage|p1a: Togekiss|217\/373 tox|[from] psn
+|turn|29
+|
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-singleturn|p2a: Heatran|Protect
+|move|p1a: Togekiss|Thunder Wave|p2a: Heatran
+|-activate|p2a: Heatran|Protect
+|
+|-heal|p2a: Heatran|279\/385|[from] item: Leftovers
+|-heal|p1a: Togekiss|240\/373 tox|[from] item: Leftovers
+|-damage|p1a: Togekiss|194\/373 tox|[from] psn
+|turn|30
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|47\/303
+|move|p1a: Togekiss|Thunder Wave|p2a: Rotom-Wash
+|-fail|p2a: Rotom-Wash
+|
+|-heal|p2a: Rotom-Wash|65\/303|[from] item: Leftovers
+|-heal|p1a: Togekiss|217\/373 tox|[from] item: Leftovers
+|-damage|p1a: Togekiss|148\/373 tox|[from] psn
+|turn|31
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Togekiss
+|-supereffective|p1a: Togekiss
+|-damage|p1a: Togekiss|40\/373 tox
+|
+|switch|p2a: Heatran|Heatran, F|279\/385
+|move|p1a: Togekiss|Air Slash|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|241\/385
+|
+|-heal|p2a: Heatran|265\/385|[from] item: Leftovers
+|-heal|p1a: Togekiss|63\/373 tox|[from] item: Leftovers
+|-damage|p1a: Togekiss|0 fnt|[from] psn
+|faint|p1a: Togekiss
+|
+|switch|p1a: Roserade|Roserade, M|159\/262
+|-damage|p1a: Roserade|127\/262|[from] Stealth Rock
+|turn|32
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|65\/303
+|move|p1a: Roserade|Sleep Powder|p2a: Rotom-Wash|[miss]
+|-miss|p1a: Roserade|p2a: Rotom-Wash
+|
+|-heal|p2a: Rotom-Wash|83\/303|[from] item: Leftovers
+|turn|33
+|
+|switch|p2a: Heatran|Heatran, F|265\/385
+|move|p1a: Roserade|Sludge Bomb|p2a: Heatran
+|-immune|p2a: Heatran|[msg]
+|
+|-heal|p2a: Heatran|289\/385|[from] item: Leftovers
+|turn|34
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|83\/303
+|move|p1a: Roserade|Sleep Powder|p2a: Rotom-Wash
+|-status|p2a: Rotom-Wash|slp
+|
+|-heal|p2a: Rotom-Wash|101\/303 slp|[from] item: Leftovers
+|turn|35
+|
+|switch|p2a: Heatran|Heatran, F|289\/385
+|move|p1a: Roserade|Leaf Storm|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|241\/385
+|-unboost|p1a: Roserade|spa|2
+|-damage|p1a: Roserade|101\/262|[from] item: Life Orb
+|
+|-heal|p2a: Heatran|265\/385|[from] item: Leftovers
+|turn|36
+|-message|tradekaiser forfeited.
+|
+|win|Ptyra
+|raw|Ladder updating...
+|leave|tradekaiser
+|player|p1
+|raw|tradekaiser's rating: 1464 &rarr; <strong>1445<\/strong><br \/>(-19 for losing)
+|raw|Ptyra's rating: 1488 &rarr; <strong>1506<\/strong><br \/>(+18 for winning)

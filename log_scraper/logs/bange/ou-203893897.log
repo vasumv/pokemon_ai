@@ -1,0 +1,356 @@
+|join|bange
+|join|testing tems
+|player|p1|bange|142
+|player|p2|testing tems|161
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Dragalge, F
+|poke|p1|Skarmory, F
+|poke|p1|Espeon, F
+|poke|p1|Seismitoad, M, shiny
+|poke|p1|Azelf
+|poke|p1|Metagross, shiny
+|poke|p2|Chansey, F
+|poke|p2|Sableye, M
+|poke|p2|Amoonguss, M
+|poke|p2|Jirachi
+|poke|p2|Quagsire, M
+|poke|p2|Mandibuzz, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Dragalge|Dragalge, F|321\/321
+|switch|p2a: Sableye|Sableye, M|304\/304
+|turn|1
+|
+|switch|p2a: Jirachi|Jirachi|401\/401
+|move|p1a: Dragalge|Sludge Bomb|p2a: Jirachi
+|-immune|p2a: Jirachi|[msg]
+|
+|turn|2
+|
+|switch|p1a: Seismitoad|Seismitoad, M, shiny|414\/414
+|move|p2a: Jirachi|Body Slam|p1a: Seismitoad
+|-damage|p1a: Seismitoad|334\/414
+|
+|-heal|p1a: Seismitoad|359\/414|[from] item: Leftovers
+|turn|3
+|
+|switch|p2a: Amoonguss|Amoonguss, M|431\/431
+|move|p1a: Seismitoad|Stealth Rock|p2a: Amoonguss
+|-sidestart|p2: testing tems|move: Stealth Rock
+|
+|-heal|p1a: Seismitoad|384\/414|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Skarmory|Skarmory, F|333\/333
+|move|p2a: Amoonguss|Giga Drain|p1a: Skarmory
+|-crit|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|294\/333
+|
+|turn|5
+|
+|move|p1a: Skarmory|Taunt|p2a: Amoonguss
+|-start|p2a: Amoonguss|move: Taunt
+|cant|p2a: Amoonguss|move: Taunt|Spore
+|
+|turn|6
+|
+|switch|p1a: Azelf|Azelf|291\/291
+|move|p2a: Amoonguss|Hidden Power|p1a: Azelf
+|-damage|p1a: Azelf|231\/291
+|
+|turn|7
+|
+|switch|p2a: Jirachi|Jirachi|401\/401
+|-damage|p2a: Jirachi|376\/401|[from] Stealth Rock
+|move|p1a: Azelf|Trick|p2a: Jirachi
+|-activate|p1a: Azelf|move: Trick|[of] p2a: Jirachi
+|-item|p2a: Jirachi|Choice Scarf|[from] move: Trick
+|-item|p1a: Azelf|Leftovers|[from] move: Trick
+|
+|-heal|p1a: Azelf|249\/291|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Skarmory|Skarmory, F|294\/333
+|move|p2a: Jirachi|Stealth Rock|p1a: Skarmory
+|-sidestart|p1: bange|move: Stealth Rock
+|
+|turn|9
+|
+|switch|p2a: Sableye|Sableye, M|304\/304
+|-damage|p2a: Sableye|266\/304|[from] Stealth Rock
+|move|p1a: Skarmory|Spikes|p2a: Sableye
+|-sidestart|p2: testing tems|Spikes
+|
+|turn|10
+|
+|switch|p1a: Espeon|Espeon, F|271\/271
+|-damage|p1a: Espeon|238\/271|[from] Stealth Rock
+|detailschange|p2a: Sableye|Sableye-Mega, M
+|-mega|p2a: Sableye|Sableye|Sablenite
+|move|p2a: Sableye|Knock Off|p1a: Espeon
+|-supereffective|p1a: Espeon
+|-damage|p1a: Espeon|0 fnt
+|-enditem|p1a: Espeon|Life Orb|[from] move: Knock Off|[of] p2a: Sableye
+|faint|p1a: Espeon
+|
+|
+|switch|p1a: Dragalge|Dragalge, F|321\/321
+|-damage|p1a: Dragalge|281\/321|[from] Stealth Rock
+|turn|11
+|
+|switch|p2a: Chansey|Chansey, F|703\/703
+|-damage|p2a: Chansey|616\/703|[from] Spikes
+|-damage|p2a: Chansey|529\/703|[from] Stealth Rock
+|move|p1a: Dragalge|Draco Meteor|p2a: Chansey
+|-damage|p2a: Chansey|349\/703
+|-unboost|p1a: Dragalge|spa|2
+|
+|turn|12
+|
+|switch|p1a: Metagross|Metagross, shiny|302\/302
+|-damage|p1a: Metagross|284\/302|[from] Stealth Rock
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|701\/703
+|
+|turn|13
+|
+|detailschange|p1a: Metagross|Metagross-Mega, shiny
+|-mega|p1a: Metagross|Metagross|Metagrossite
+|move|p1a: Metagross|Meteor Mash|p2a: Chansey
+|-damage|p2a: Chansey|416\/703
+|move|p2a: Chansey|Thunder Wave|p1a: Metagross
+|-status|p1a: Metagross|par
+|
+|turn|14
+|
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|703\/703
+|move|p1a: Metagross|Meteor Mash|p2a: Chansey
+|-damage|p2a: Chansey|381\/703
+|-boost|p1a: Metagross|atk|1
+|
+|turn|15
+|
+|switch|p2a: Quagsire|Quagsire, M|394\/394
+|-damage|p2a: Quagsire|370\/394|[from] Stealth Rock
+|-damage|p2a: Quagsire|321\/394|[from] Spikes
+|cant|p1a: Metagross|par
+|
+|-heal|p2a: Quagsire|345\/394|[from] item: Leftovers
+|turn|16
+|
+|switch|p1a: Seismitoad|Seismitoad, M, shiny|384\/414
+|-damage|p1a: Seismitoad|359\/414|[from] Stealth Rock
+|move|p2a: Quagsire|Earthquake|p1a: Seismitoad
+|-crit|p1a: Seismitoad
+|-damage|p1a: Seismitoad|181\/414
+|
+|-heal|p1a: Seismitoad|206\/414|[from] item: Leftovers
+|-heal|p2a: Quagsire|369\/394|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Seismitoad|Scald|p2a: Quagsire
+|-damage|p2a: Quagsire|246\/394
+|move|p2a: Quagsire|Toxic|p1a: Seismitoad
+|-status|p1a: Seismitoad|tox
+|
+|-heal|p1a: Seismitoad|231\/414 tox|[from] item: Leftovers
+|-heal|p2a: Quagsire|270\/394|[from] item: Leftovers
+|-damage|p1a: Seismitoad|206\/414 tox|[from] psn
+|turn|18
+|
+|switch|p2a: Amoonguss|Amoonguss, M|431\/431
+|-damage|p2a: Amoonguss|378\/431|[from] Stealth Rock
+|-damage|p2a: Amoonguss|325\/431|[from] Spikes
+|move|p1a: Seismitoad|Refresh|p1a: Seismitoad
+|-curestatus|p1a: Seismitoad|tox
+|
+|-heal|p1a: Seismitoad|231\/414|[from] item: Leftovers
+|-heal|p2a: Amoonguss|351\/431|[from] item: Black Sludge
+|turn|19
+|
+|move|p1a: Seismitoad|Scald|p2a: Amoonguss
+|-resisted|p2a: Amoonguss
+|-damage|p2a: Amoonguss|297\/431
+|move|p2a: Amoonguss|Spore|p1a: Seismitoad
+|-status|p1a: Seismitoad|slp
+|
+|-heal|p1a: Seismitoad|256\/414 slp|[from] item: Leftovers
+|-heal|p2a: Amoonguss|323\/431|[from] item: Black Sludge
+|turn|20
+|
+|switch|p1a: Skarmory|Skarmory, F|294\/333
+|-damage|p1a: Skarmory|253\/333|[from] Stealth Rock
+|move|p2a: Amoonguss|Giga Drain|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|226\/333
+|-heal|p2a: Amoonguss|337\/431|[from] drain|[of] p1a: Skarmory
+|
+|-heal|p2a: Amoonguss|363\/431|[from] item: Black Sludge
+|turn|21
+|
+|switch|p1a: Dragalge|Dragalge, F|281\/321
+|-damage|p1a: Dragalge|241\/321|[from] Stealth Rock
+|move|p2a: Amoonguss|Hidden Power|p1a: Dragalge
+|-resisted|p1a: Dragalge
+|-damage|p1a: Dragalge|229\/321
+|
+|-heal|p2a: Amoonguss|389\/431|[from] item: Black Sludge
+|turn|22
+|
+|switch|p2a: Jirachi|Jirachi|376\/401
+|-damage|p2a: Jirachi|326\/401|[from] Spikes
+|-damage|p2a: Jirachi|301\/401|[from] Stealth Rock
+|move|p1a: Dragalge|Sludge Bomb|p2a: Jirachi
+|-immune|p2a: Jirachi|[msg]
+|
+|turn|23
+|
+|move|p2a: Jirachi|Wish|p2a: Jirachi
+|move|p1a: Dragalge|Shadow Ball|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|177\/401
+|-unboost|p2a: Jirachi|spd|1
+|
+|turn|24
+|
+|switch|p2a: Chansey|Chansey, F|381\/703
+|-damage|p2a: Chansey|294\/703|[from] Spikes
+|-damage|p2a: Chansey|207\/703|[from] Stealth Rock
+|switch|p1a: Metagross|Metagross-Mega, shiny|284\/302 par
+|-damage|p1a: Metagross|266\/302 par|[from] Stealth Rock
+|
+|-heal|p2a: Chansey|407\/703|[from] move: Wish|[wisher] Jirachi
+|turn|25
+|
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|703\/703
+|cant|p1a: Metagross|par
+|
+|turn|26
+|
+|switch|p2a: Quagsire|Quagsire, M|270\/394
+|-damage|p2a: Quagsire|221\/394|[from] Spikes
+|-damage|p2a: Quagsire|197\/394|[from] Stealth Rock
+|switch|p1a: Skarmory|Skarmory, F|226\/333
+|-damage|p1a: Skarmory|185\/333|[from] Stealth Rock
+|
+|-heal|p2a: Quagsire|221\/394|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: Skarmory|Taunt|p2a: Quagsire
+|-start|p2a: Quagsire|move: Taunt
+|cant|p2a: Quagsire|move: Taunt|Recover
+|
+|-heal|p2a: Quagsire|245\/394|[from] item: Leftovers
+|turn|28
+|
+|switch|p2a: Sableye|Sableye-Mega, M|266\/304
+|-damage|p2a: Sableye|228\/304|[from] Stealth Rock
+|-damage|p2a: Sableye|190\/304|[from] Spikes
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|333\/333
+|
+|turn|29
+|
+|switch|p1a: Dragalge|Dragalge, F|229\/321
+|-damage|p1a: Dragalge|189\/321|[from] Stealth Rock
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|304\/304
+|
+|turn|30
+|
+|switch|p2a: Chansey|Chansey, F|703\/703
+|-damage|p2a: Chansey|616\/703|[from] Spikes
+|-damage|p2a: Chansey|529\/703|[from] Stealth Rock
+|move|p1a: Dragalge|Sludge Bomb|p2a: Chansey
+|-damage|p2a: Chansey|399\/703
+|-status|p2a: Chansey|psn
+|
+|-damage|p2a: Chansey|312\/703 psn|[from] psn
+|turn|31
+|
+|switch|p1a: Skarmory|Skarmory, F|333\/333
+|-damage|p1a: Skarmory|292\/333|[from] Stealth Rock
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|664\/703 psn
+|
+|-damage|p2a: Chansey|577\/703 psn|[from] psn
+|turn|32
+|
+|switch|p2a: Sableye|Sableye-Mega, M|304\/304
+|-damage|p2a: Sableye|266\/304|[from] Stealth Rock
+|-damage|p2a: Sableye|228\/304|[from] Spikes
+|move|p1a: Skarmory|Taunt|p2a: Sableye
+|move|p2a: Sableye|Taunt|p1a: Skarmory|[from]Magic Bounce
+|-start|p1a: Skarmory|move: Taunt
+|
+|turn|33
+|
+|switch|p1a: Dragalge|Dragalge, F|189\/321
+|-damage|p1a: Dragalge|149\/321|[from] Stealth Rock
+|move|p2a: Sableye|Knock Off|p1a: Dragalge
+|-damage|p1a: Dragalge|32\/321
+|-enditem|p1a: Dragalge|Assault Vest|[from] move: Knock Off|[of] p2a: Sableye
+|
+|turn|34
+|
+|switch|p2a: Chansey|Chansey, F|577\/703
+|-damage|p2a: Chansey|490\/703|[from] Spikes
+|-damage|p2a: Chansey|403\/703|[from] Stealth Rock
+|move|p1a: Dragalge|Sludge Bomb|p2a: Chansey
+|-damage|p2a: Chansey|275\/703
+|
+|turn|35
+|
+|move|p1a: Dragalge|Focus Blast|p2a: Chansey
+|-supereffective|p2a: Chansey
+|-damage|p2a: Chansey|105\/703
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|457\/703
+|
+|turn|36
+|
+|move|p1a: Dragalge|Focus Blast|p2a: Chansey
+|-supereffective|p2a: Chansey
+|-damage|p2a: Chansey|307\/703
+|move|p2a: Chansey|Thunder Wave|p1a: Dragalge
+|-status|p1a: Dragalge|par
+|
+|turn|37
+|
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|659\/703
+|move|p1a: Dragalge|Focus Blast|p2a: Chansey
+|-supereffective|p2a: Chansey
+|-damage|p2a: Chansey|481\/703
+|
+|turn|38
+|
+|move|p2a: Chansey|Seismic Toss|p1a: Dragalge
+|-damage|p1a: Dragalge|0 fnt
+|faint|p1a: Dragalge
+|
+|-message|bange forfeited.
+|
+|win|testing tems
+|raw|Ladder updating...
+|leave|bange
+|player|p1
+|raw|bange's rating: 1678 &rarr; <strong>1650<\/strong><br \/>(-28 for losing)
+|raw|testing tems's rating: 1490 &rarr; <strong>1520<\/strong><br \/>(+30 for winning)

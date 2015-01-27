@@ -1,0 +1,456 @@
+|join|Mounts
+|join|StallSuck
+|player|p1|Mounts|101
+|player|p2|StallSuck|226
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Charizard, M
+|poke|p1|Dragonite, F
+|poke|p1|Excadrill, M
+|poke|p1|Tyranitar, F
+|poke|p1|Azumarill, F
+|poke|p1|Gengar, F
+|poke|p2|Sableye, M
+|poke|p2|Chansey, F
+|poke|p2|Skarmory, M
+|poke|p2|Whimsicott, F
+|poke|p2|Heatran, M
+|poke|p2|Quagsire, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Nietzsche|Charizard, M|298\/298
+|switch|p2a: SableTroll|Sableye, M|303\/303
+|turn|1
+|
+|switch|p2a: Eruptran|Heatran, M|385\/385
+|detailschange|p1a: Nietzsche|Charizard-Mega-X, M
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p1a: Nietzsche|Flare Blitz|p2a: Eruptran
+|-start|p2a: Eruptran|ability: Flash Fire
+|
+|turn|2
+|
+|switch|p1a: Kundera|Tyranitar, F|404\/404
+|-weather|Sandstorm
+|move|p2a: Eruptran|Protect|p2a: Eruptran
+|-fail|p2a: Eruptran
+|
+|-weather|Sandstorm|[upkeep]
+|turn|3
+|
+|move|p2a: Eruptran|Toxic|p1a: Kundera|[miss]
+|-miss|p2a: Eruptran|p1a: Kundera
+|move|p1a: Kundera|Stealth Rock|p2a: Eruptran
+|-sidestart|p2: StallSuck|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|4
+|
+|switch|p1a: Spinoza|Excadrill, M|362\/362
+|move|p2a: Eruptran|Lava Plume|p1a: Spinoza
+|-supereffective|p1a: Spinoza
+|-damage|p1a: Spinoza|0 fnt
+|faint|p1a: Spinoza
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Louis Marin|Azumarill, F|384\/384
+|turn|5
+|
+|switch|p2a: Bird of Steel|Skarmory, M|333\/333
+|-damage|p2a: Bird of Steel|292\/333|[from] Stealth Rock
+|switch|p1a: Nietzsche|Charizard-Mega-X, M|298\/298
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Nietzsche|280\/298|[from] sandstorm
+|turn|6
+|
+|move|p1a: Nietzsche|Dragon Dance|p1a: Nietzsche
+|-boost|p1a: Nietzsche|atk|1
+|-boost|p1a: Nietzsche|spe|1
+|move|p2a: Bird of Steel|Defog|p1a: Nietzsche
+|-unboost|p1a: Nietzsche|evasion|1
+|-sideend|p2: StallSuck|Stealth Rock|[from] move: Defog|[of] p2a: Bird of Steel
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Nietzsche|262\/298|[from] sandstorm
+|turn|7
+|
+|switch|p2a: Eruptran|Heatran, M|385\/385
+|move|p1a: Nietzsche|Dragon Claw|p2a: Eruptran
+|-resisted|p2a: Eruptran
+|-damage|p2a: Eruptran|243\/385
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Nietzsche|244\/298|[from] sandstorm
+|-heal|p2a: Eruptran|267\/385|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: Nietzsche|Dragon Claw|p2a: Eruptran
+|-resisted|p2a: Eruptran
+|-damage|p2a: Eruptran|132\/385
+|move|p2a: Eruptran|Toxic|p1a: Nietzsche
+|-status|p1a: Nietzsche|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Nietzsche|226\/298 tox|[from] sandstorm
+|-heal|p2a: Eruptran|156\/385|[from] item: Leftovers
+|-damage|p1a: Nietzsche|208\/298 tox|[from] psn
+|turn|9
+|
+|move|p2a: Eruptran|Protect|p2a: Eruptran
+|-singleturn|p2a: Eruptran|Protect
+|move|p1a: Nietzsche|Dragon Dance|p1a: Nietzsche
+|-boost|p1a: Nietzsche|atk|1
+|-boost|p1a: Nietzsche|spe|1
+|
+|-weather|none
+|-heal|p2a: Eruptran|180\/385|[from] item: Leftovers
+|-damage|p1a: Nietzsche|172\/298 tox|[from] psn
+|turn|10
+|
+|switch|p2a: DouDouillet|Whimsicott, F|265\/265
+|move|p1a: Nietzsche|Dragon Claw|p2a: DouDouillet
+|-immune|p2a: DouDouillet|[msg]
+|
+|-damage|p1a: Nietzsche|118\/298 tox|[from] psn
+|turn|11
+|
+|move|p2a: DouDouillet|Encore|p1a: Nietzsche
+|-start|p1a: Nietzsche|Encore
+|move|p1a: Nietzsche|Dragon Claw|p2a: DouDouillet
+|-immune|p2a: DouDouillet|[msg]
+|
+|-damage|p1a: Nietzsche|46\/298 tox|[from] psn
+|turn|12
+|
+|switch|p1a: Kundera|Tyranitar, F|404\/404
+|-weather|Sandstorm
+|move|p2a: DouDouillet|Substitute|p2a: DouDouillet
+|-start|p2a: DouDouillet|Substitute
+|-damage|p2a: DouDouillet|199\/265
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: DouDouillet|183\/265|[from] sandstorm
+|-heal|p2a: DouDouillet|199\/265|[from] item: Leftovers
+|turn|13
+|
+|move|p2a: DouDouillet|Leech Seed|p1a: Kundera
+|-start|p1a: Kundera|move: Leech Seed
+|move|p1a: Kundera|Stealth Rock|p2a: DouDouillet
+|-sidestart|p2: StallSuck|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: DouDouillet|183\/265|[from] sandstorm
+|-heal|p2a: DouDouillet|199\/265|[from] item: Leftovers
+|-damage|p1a: Kundera|354\/404|[from] Leech Seed|[of] p2a: DouDouillet
+|-heal|p2a: DouDouillet|249\/265|[silent]
+|turn|14
+|
+|switch|p1a: Leibniz|Gengar, F|262\/262
+|move|p2a: DouDouillet|Leech Seed|p1a: Leibniz
+|-start|p1a: Leibniz|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Leibniz|246\/262|[from] sandstorm
+|-damage|p2a: DouDouillet|233\/265|[from] sandstorm
+|-heal|p1a: Leibniz|262\/262|[from] item: Black Sludge
+|-heal|p2a: DouDouillet|249\/265|[from] item: Leftovers
+|-damage|p1a: Leibniz|230\/262|[from] Leech Seed|[of] p2a: DouDouillet
+|-heal|p2a: DouDouillet|265\/265|[silent]
+|turn|15
+|
+|move|p2a: DouDouillet|Taunt|p1a: Leibniz
+|-start|p1a: Leibniz|move: Taunt
+|cant|p1a: Leibniz|move: Taunt|Taunt
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Leibniz|214\/262|[from] sandstorm
+|-damage|p2a: DouDouillet|249\/265|[from] sandstorm
+|-heal|p1a: Leibniz|230\/262|[from] item: Black Sludge
+|-heal|p2a: DouDouillet|265\/265|[from] item: Leftovers
+|-damage|p1a: Leibniz|198\/262|[from] Leech Seed|[of] p2a: DouDouillet
+|turn|16
+|
+|switch|p1a: Kundera|Tyranitar, F|354\/404
+|move|p2a: DouDouillet|Leech Seed|p1a: Kundera
+|-start|p1a: Kundera|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: DouDouillet|249\/265|[from] sandstorm
+|-heal|p2a: DouDouillet|265\/265|[from] item: Leftovers
+|-damage|p1a: Kundera|304\/404|[from] Leech Seed|[of] p2a: DouDouillet
+|turn|17
+|
+|move|p2a: DouDouillet|Taunt|p1a: Kundera
+|-start|p1a: Kundera|move: Taunt
+|move|p1a: Kundera|Ice Beam|p2a: DouDouillet
+|-supereffective|p2a: DouDouillet
+|-end|p2a: DouDouillet|Substitute
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: DouDouillet|249\/265|[from] sandstorm
+|-heal|p2a: DouDouillet|265\/265|[from] item: Leftovers
+|-damage|p1a: Kundera|254\/404|[from] Leech Seed|[of] p2a: DouDouillet
+|turn|18
+|
+|switch|p2a: Bird of Steel|Skarmory, M|292\/333
+|-damage|p2a: Bird of Steel|251\/333|[from] Stealth Rock
+|switch|p1a: Leibniz|Gengar, F|198\/262
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Leibniz|182\/262|[from] sandstorm
+|-heal|p1a: Leibniz|198\/262|[from] item: Black Sludge
+|turn|19
+|
+|switch|p2a: Eruptran|Heatran, M|180\/385
+|-damage|p2a: Eruptran|132\/385|[from] Stealth Rock
+|move|p1a: Leibniz|Taunt|p2a: Eruptran
+|-start|p2a: Eruptran|move: Taunt
+|
+|-weather|none
+|-heal|p1a: Leibniz|214\/262|[from] item: Black Sludge
+|-heal|p2a: Eruptran|156\/385|[from] item: Leftovers
+|turn|20
+|
+|switch|p1a: Proust|Dragonite, F|330\/330
+|move|p2a: Eruptran|Lava Plume|p1a: Proust
+|-resisted|p1a: Proust
+|-damage|p1a: Proust|303\/330
+|
+|-heal|p2a: Eruptran|180\/385|[from] item: Leftovers
+|turn|21
+|
+|switch|p2a: Bird of Steel|Skarmory, M|251\/333
+|-damage|p2a: Bird of Steel|210\/333|[from] Stealth Rock
+|move|p1a: Proust|Dragon Dance|p1a: Proust
+|-boost|p1a: Proust|atk|1
+|-boost|p1a: Proust|spe|1
+|
+|turn|22
+|
+|move|p1a: Proust|Dragon Dance|p1a: Proust
+|-boost|p1a: Proust|atk|1
+|-boost|p1a: Proust|spe|1
+|move|p2a: Bird of Steel|Defog|p1a: Proust
+|-unboost|p1a: Proust|evasion|1
+|-sideend|p2: StallSuck|Stealth Rock|[from] move: Defog|[of] p2a: Bird of Steel
+|
+|turn|23
+|
+|move|p1a: Proust|Outrage|p2a: Bird of Steel
+|-resisted|p2a: Bird of Steel
+|-damage|p2a: Bird of Steel|70\/333
+|move|p2a: Bird of Steel|Roost|p2a: Bird of Steel
+|-heal|p2a: Bird of Steel|237\/333
+|
+|turn|24
+|
+|switch|p2a: DouDouillet|Whimsicott, F|265\/265
+|move|p1a: Proust|Outrage|p2a: DouDouillet
+|-immune|p2a: DouDouillet|[msg]
+|
+|turn|25
+|
+|switch|p2a: SableTroll|Sableye, M|303\/303
+|move|p1a: Proust|Extreme Speed|p2a: SableTroll
+|-immune|p2a: SableTroll|[msg]
+|
+|turn|26
+|c|âStallSuck|pro play
+|
+|move|p2a: SableTroll|Will-O-Wisp|p1a: Proust
+|-status|p1a: Proust|brn
+|-enditem|p1a: Proust|Lum Berry|[eat]
+|-curestatus|p1a: Proust|brn
+|move|p1a: Proust|Outrage|p2a: SableTroll
+|-damage|p2a: SableTroll|0 fnt
+|faint|p2a: SableTroll
+|
+|
+|switch|p2a: DouDouillet|Whimsicott, F|265\/265
+|turn|27
+|c|âMounts|kek
+|
+|move|p2a: DouDouillet|Substitute|p2a: DouDouillet
+|-start|p2a: DouDouillet|Substitute
+|-damage|p2a: DouDouillet|199\/265
+|move|p1a: Proust|Outrage|p2a: DouDouillet
+|-immune|p2a: DouDouillet|[msg]
+|
+|-heal|p2a: DouDouillet|215\/265|[from] item: Leftovers
+|turn|28
+|
+|move|p1a: Proust|Extreme Speed|p2a: DouDouillet
+|-end|p2a: DouDouillet|Substitute
+|move|p2a: DouDouillet|Leech Seed|p1a: Proust
+|-start|p1a: Proust|move: Leech Seed
+|
+|-heal|p2a: DouDouillet|231\/265|[from] item: Leftovers
+|-damage|p1a: Proust|262\/330|[from] Leech Seed|[of] p2a: DouDouillet
+|-heal|p2a: DouDouillet|265\/265|[silent]
+|turn|29
+|
+|switch|p2a: Bird of Steel|Skarmory, M|237\/333
+|move|p1a: Proust|Outrage|p2a: Bird of Steel
+|-crit|p2a: Bird of Steel
+|-resisted|p2a: Bird of Steel
+|-damage|p2a: Bird of Steel|45\/333
+|
+|-damage|p1a: Proust|221\/330|[from] Leech Seed|[of] p2a: Bird of Steel
+|-heal|p2a: Bird of Steel|86\/333|[silent]
+|turn|30
+|c|âStallSuck|i was expecting the lum
+|c|âStallSuck|but
+|c|âStallSuck|i have forgot
+|c|âStallSuck|that you haven't get the confusion
+|c|âStallSuck|with the immunity to fairy
+|
+|switch|p2a: DouDouillet|Whimsicott, F|265\/265
+|move|p1a: Proust|Outrage|p2a: DouDouillet
+|-immune|p2a: DouDouillet|[msg]
+|
+|-damage|p1a: Proust|180\/330|[from] Leech Seed|[of] p2a: DouDouillet
+|turn|31
+|
+|move|p1a: Proust|Extreme Speed|p2a: DouDouillet
+|-damage|p2a: DouDouillet|83\/265
+|move|p2a: DouDouillet|Encore|p1a: Proust
+|-start|p1a: Proust|Encore
+|
+|-heal|p2a: DouDouillet|99\/265|[from] item: Leftovers
+|-damage|p1a: Proust|139\/330|[from] Leech Seed|[of] p2a: DouDouillet
+|-heal|p2a: DouDouillet|140\/265|[silent]
+|turn|32
+|
+|switch|p1a: Leibniz|Gengar, F|214\/262
+|switch|p2a: Bird of Steel|Skarmory, M|86\/333
+|
+|-heal|p1a: Leibniz|230\/262|[from] item: Black Sludge
+|turn|33
+|
+|switch|p2a: NoNoeuf|Chansey, F|703\/703
+|move|p1a: Leibniz|Hex|p2a: NoNoeuf
+|-immune|p2a: NoNoeuf|[msg]
+|
+|-heal|p1a: Leibniz|246\/262|[from] item: Black Sludge
+|turn|34
+|
+|switch|p2a: Eruptran|Heatran, M|180\/385
+|move|p1a: Leibniz|Taunt|p2a: Eruptran
+|-start|p2a: Eruptran|move: Taunt
+|
+|-heal|p1a: Leibniz|262\/262|[from] item: Black Sludge
+|-heal|p2a: Eruptran|204\/385|[from] item: Leftovers
+|turn|35
+|
+|move|p1a: Leibniz|Hex|p2a: Eruptran
+|-damage|p2a: Eruptran|123\/385
+|move|p2a: Eruptran|Lava Plume|p1a: Leibniz
+|-damage|p1a: Leibniz|117\/262
+|-status|p1a: Leibniz|brn
+|
+|-heal|p1a: Leibniz|133\/262 brn|[from] item: Black Sludge
+|-heal|p2a: Eruptran|147\/385|[from] item: Leftovers
+|-damage|p1a: Leibniz|101\/262 brn|[from] brn
+|turn|36
+|
+|move|p1a: Leibniz|Hex|p2a: Eruptran
+|-damage|p2a: Eruptran|65\/385
+|move|p2a: Eruptran|Lava Plume|p1a: Leibniz
+|-damage|p1a: Leibniz|0 fnt
+|faint|p1a: Leibniz
+|
+|-heal|p2a: Eruptran|89\/385|[from] item: Leftovers
+|
+|switch|p1a: Proust|Dragonite, F|139\/330
+|turn|37
+|
+|move|p1a: Proust|Dragon Dance|p1a: Proust
+|-boost|p1a: Proust|atk|1
+|-boost|p1a: Proust|spe|1
+|move|p2a: Eruptran|Lava Plume|p1a: Proust
+|-resisted|p1a: Proust
+|-damage|p1a: Proust|76\/330
+|
+|-heal|p2a: Eruptran|113\/385|[from] item: Leftovers
+|-end|p2a: Eruptran|move: Taunt
+|turn|38
+|
+|move|p2a: Eruptran|Protect|p2a: Eruptran
+|-singleturn|p2a: Eruptran|Protect
+|move|p1a: Proust|Earthquake|p2a: Eruptran
+|-activate|p2a: Eruptran|Protect
+|
+|-heal|p2a: Eruptran|137\/385|[from] item: Leftovers
+|turn|39
+|
+|move|p1a: Proust|Outrage|p2a: Eruptran
+|-resisted|p2a: Eruptran
+|-damage|p2a: Eruptran|0 fnt
+|faint|p2a: Eruptran
+|
+|
+|switch|p2a: DouDouillet|Whimsicott, F|140\/265
+|turn|40
+|
+|move|p2a: DouDouillet|Leech Seed|p1a: Proust
+|-start|p1a: Proust|move: Leech Seed
+|move|p1a: Proust|Outrage|p2a: DouDouillet
+|-immune|p2a: DouDouillet|[msg]
+|
+|-heal|p2a: DouDouillet|156\/265|[from] item: Leftovers
+|-damage|p1a: Proust|35\/330|[from] Leech Seed|[of] p2a: DouDouillet
+|-heal|p2a: DouDouillet|197\/265|[silent]
+|turn|41
+|c|âStallSuck|omg
+|c|âStallSuck|i always forgot
+|c|âStallSuck|when i see a dragonite
+|
+|switch|p1a: Kundera|Tyranitar, F|254\/404
+|-weather|Sandstorm
+|switch|p2a: SwagSire|Quagsire, M|393\/393
+|
+|-weather|Sandstorm|[upkeep]
+|turn|42
+|c|âStallSuck|i have swagsire
+|
+|move|p1a: Kundera|Stealth Rock|p2a: SwagSire
+|-sidestart|p2: StallSuck|move: Stealth Rock
+|move|p2a: SwagSire|Earthquake|p1a: Kundera
+|-supereffective|p1a: Kundera
+|-damage|p1a: Kundera|114\/404
+|
+|-weather|Sandstorm|[upkeep]
+|turn|43
+|
+|switch|p1a: Proust|Dragonite, F|35\/330
+|move|p2a: SwagSire|Toxic|p1a: Proust
+|-status|p1a: Proust|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Proust|15\/330 tox|[from] sandstorm
+|-damage|p1a: Proust|0 fnt|[from] psn
+|faint|p1a: Proust
+|c|âStallSuck|ez swagsire
+|-message|Mounts forfeited.
+|
+|win|StallSuck
+|raw|Ladder updating...
+|leave|Mounts
+|player|p1
+|raw|Mounts's rating: 1581 &rarr; <strong>1557<\/strong><br \/>(-24 for losing)
+|raw|StallSuck's rating: 1512 &rarr; <strong>1536<\/strong><br \/>(+24 for winning)

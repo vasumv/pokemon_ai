@@ -1,0 +1,289 @@
+|join|F1reantS
+|join|NuB Central
+|player|p1|F1reantS|25
+|player|p2|NuB Central|161
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Vivillon, M
+|poke|p1|Bisharp, F
+|poke|p1|Starmie
+|poke|p1|Gyarados, F, shiny
+|poke|p1|Scizor, F
+|poke|p1|Nidoking, M
+|poke|p2|Gengar, M, shiny
+|poke|p2|Keldeo-Resolute
+|poke|p2|Tyranitar, M
+|poke|p2|Manectric, M, shiny
+|poke|p2|Latias, F
+|poke|p2|Landorus-Therian, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|join|step6srl
+|
+|start
+|switch|p1a: Nidoking|Nidoking, M|303\/303
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Nidoking
+|-unboost|p1a: Nidoking|atk|1
+|turn|1
+|
+|switch|p1a: Crystal|Gyarados, F, shiny|353\/353
+|-ability|p1a: Crystal|Intimidate|[of] p2a: Landorus-Therian
+|-unboost|p2a: Landorus-Therian|atk|1
+|move|p2a: Landorus-Therian|Earthquake|p1a: Crystal
+|-immune|p1a: Crystal|[msg]
+|
+|turn|2
+|
+|move|p2a: Landorus-Therian|U-turn|p1a: Crystal
+|-resisted|p1a: Crystal
+|-damage|p1a: Crystal|312\/353
+|
+|switch|p2a: Manectric|Manectric, M, shiny|281\/281
+|move|p1a: Crystal|Dragon Dance|p1a: Crystal
+|-boost|p1a: Crystal|atk|1
+|-boost|p1a: Crystal|spe|1
+|
+|turn|3
+|
+|detailschange|p2a: Manectric|Manectric-Mega, M, shiny
+|message|Manectric has Mega Evolved into Mega Manectric!
+|-ability|p2a: Manectric|Intimidate|[of] p1a: Crystal
+|-unboost|p1a: Crystal|atk|1
+|move|p1a: Crystal|Earthquake|p2a: Manectric
+|-supereffective|p2a: Manectric
+|-damage|p2a: Manectric|5\/281
+|move|p2a: Manectric|Thunderbolt|p1a: Crystal
+|-supereffective|p1a: Crystal
+|-damage|p1a: Crystal|0 fnt
+|faint|p1a: Crystal
+|
+|
+|switch|p1a: Nidoking|Nidoking, M|303\/303
+|turn|4
+|
+|switch|p2a: Latias|Latias, F|301\/301
+|move|p1a: Nidoking|Stealth Rock|p2a: Latias
+|-sidestart|p2: NuB Central|move: Stealth Rock
+|
+|turn|5
+|
+|switch|p1a: Check|Bisharp, F|272\/272
+|move|p2a: Latias|Defog|p1a: Check
+|-unboost|p1a: Check|evasion|1
+|-boost|p1a: Check|atk|2|[from] ability: Defiant
+|-sideend|p2: NuB Central|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|
+|turn|6
+|
+|switch|p2a: Keldeo-Resolute|Keldeo-Resolute|323\/323
+|move|p1a: Check|Knock Off|p2a: Keldeo-Resolute
+|-resisted|p2a: Keldeo-Resolute
+|-damage|p2a: Keldeo-Resolute|64\/323
+|-boost|p2a: Keldeo-Resolute|atk|1|[from] ability: Justified
+|-enditem|p2a: Keldeo-Resolute|Leftovers|[from] move: Knock Off|[of] p1a: Check
+|
+|turn|7
+|c| step6srl|O_O
+|
+|switch|p2a: Tyranitar|Tyranitar, M|341\/341
+|-weather|Sandstorm
+|move|p1a: Check|Sucker Punch|p2a: Tyranitar
+|-fail|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|turn|8
+|c|âF1reantS|o:
+|
+|move|p2a: Tyranitar|Superpower|p1a: Check
+|-supereffective|p1a: Check
+|-damage|p1a: Check|0 fnt
+|-unboost|p2a: Tyranitar|atk|1
+|-unboost|p2a: Tyranitar|def|1
+|faint|p1a: Check
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Scizor|Scizor, F|343\/343
+|turn|9
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Scizor
+|-unboost|p1a: Scizor|atk|1
+|move|p1a: Scizor|U-turn|p2a: Landorus-Therian
+|-resisted|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|245\/319
+|
+|switch|p1a: Starmie|Starmie|262\/262
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Starmie|246\/262|[from] sandstorm
+|-heal|p2a: Landorus-Therian|264\/319|[from] item: Leftovers
+|turn|10
+|
+|move|p1a: Starmie|Scald|p2a: Landorus-Therian
+|-supereffective|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|-damage|p1a: Starmie|220\/262|[from] item: Life Orb
+|faint|p2a: Landorus-Therian
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Starmie|204\/262|[from] sandstorm
+|
+|switch|p2a: Tyranitar|Tyranitar, M|341\/341
+|turn|11
+|
+|move|p2a: Tyranitar|Pursuit|p1a: Starmie|[from]Pursuit
+|-crit|p1a: Starmie
+|-supereffective|p1a: Starmie
+|-damage|p1a: Starmie|0 fnt
+|faint|p1a: Starmie
+|
+|-weather|none
+|
+|switch|p1a: Nidoking|Nidoking, M|303\/303
+|turn|12
+|
+|move|p2a: Tyranitar|Pursuit|p1a: Nidoking
+|-damage|p1a: Nidoking|216\/303
+|move|p1a: Nidoking|Stealth Rock|p2a: Tyranitar
+|-sidestart|p2: NuB Central|move: Stealth Rock
+|
+|turn|13
+|
+|move|p2a: Tyranitar|Pursuit|p1a: Nidoking
+|-damage|p1a: Nidoking|126\/303
+|move|p1a: Nidoking|Sludge Wave|p2a: Tyranitar
+|-resisted|p2a: Tyranitar
+|-damage|p2a: Tyranitar|224\/341
+|
+|turn|14
+|
+|move|p2a: Tyranitar|Pursuit|p1a: Nidoking
+|-damage|p1a: Nidoking|42\/303
+|move|p1a: Nidoking|Earth Power|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|
+|switch|p2a: Latias|Latias, F|301\/301
+|-damage|p2a: Latias|264\/301|[from] Stealth Rock
+|turn|15
+|
+|switch|p1a: Scizor|Scizor, F|343\/343
+|move|p2a: Latias|Psyshock|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|256\/343
+|-damage|p2a: Latias|234\/301|[from] item: Life Orb
+|
+|turn|16
+|
+|move|p2a: Latias|Healing Wish|p2a: Latias
+|faint|p2a: Latias
+|move|p1a: Scizor|U-turn|p2: Latias|[notarget]
+|-notarget
+|
+|
+|switch|p2a: Keldeo-Resolute|Keldeo-Resolute|64\/323
+|-heal|p2a: Keldeo-Resolute|323\/323|[from] move: Healing Wish
+|-damage|p2a: Keldeo-Resolute|303\/323|[from] Stealth Rock
+|turn|17
+|
+|move|p2a: Keldeo-Resolute|Calm Mind|p2a: Keldeo-Resolute
+|-boost|p2a: Keldeo-Resolute|spa|1
+|-boost|p2a: Keldeo-Resolute|spd|1
+|move|p1a: Scizor|U-turn|p2a: Keldeo-Resolute
+|-resisted|p2a: Keldeo-Resolute
+|-damage|p2a: Keldeo-Resolute|195\/323
+|
+|switch|p1a: Vivillon|Vivillon, M|301\/301
+|
+|turn|18
+|
+|move|p2a: Keldeo-Resolute|Substitute|p2a: Keldeo-Resolute
+|-start|p2a: Keldeo-Resolute|Substitute
+|-damage|p2a: Keldeo-Resolute|115\/323
+|move|p1a: Vivillon|Sleep Powder|p2a: Keldeo-Resolute
+|
+|turn|19
+|
+|switch|p1a: Nidoking|Nidoking, M|42\/303
+|move|p2a: Keldeo-Resolute|Scald|p1a: Nidoking
+|-crit|p1a: Nidoking
+|-supereffective|p1a: Nidoking
+|-damage|p1a: Nidoking|0 fnt
+|faint|p1a: Nidoking
+|
+|
+|switch|p1a: Scizor|Scizor, F|256\/343
+|turn|20
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Keldeo-Resolute
+|-resisted|p2a: Keldeo-Resolute
+|-end|p2a: Keldeo-Resolute|Substitute
+|move|p2a: Keldeo-Resolute|Scald|p1a: Scizor
+|-damage|p1a: Scizor|10\/343
+|
+|turn|21
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Keldeo-Resolute
+|-resisted|p2a: Keldeo-Resolute
+|-damage|p2a: Keldeo-Resolute|18\/323
+|move|p2a: Keldeo-Resolute|Scald|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|faint|p1a: Scizor
+|
+|
+|switch|p1a: Vivillon|Vivillon, M|301\/301
+|turn|22
+|
+|move|p2a: Keldeo-Resolute|Scald|p1a: Vivillon
+|-enditem|p1a: Vivillon|Focus Sash
+|-damage|p1a: Vivillon|1\/301
+|move|p1a: Vivillon|Sleep Powder|p2a: Keldeo-Resolute
+|-status|p2a: Keldeo-Resolute|slp
+|
+|turn|23
+|
+|switch|p2a: Manectric|Manectric-Mega, M, shiny|5\/281
+|-damage|p2a: Manectric|0 fnt|[from] Stealth Rock
+|faint|p2a: Manectric
+|move|p1a: Vivillon|Quiver Dance|p1a: Vivillon
+|-boost|p1a: Vivillon|spa|1
+|-boost|p1a: Vivillon|spd|1
+|-boost|p1a: Vivillon|spe|1
+|
+|c|âNuB Central|gg
+|c|âF1reantS|g
+|c|âF1reantS|gg*
+|
+|switch|p2a: Gengar|Gengar, M, shiny|261\/261
+|-damage|p2a: Gengar|229\/261|[from] Stealth Rock
+|turn|24
+|
+|move|p2a: Gengar|Shadow Ball|p1a: Vivillon
+|-damage|p1a: Vivillon|0 fnt
+|faint|p1a: Vivillon
+|
+|win|NuB Central
+|raw|Ladder updating...
+|raw|F1reantS's rating: 1650 &rarr; <strong>1631<\/strong><br \/>(-19 for losing)
+|raw|NuB Central's rating: 1662 &rarr; <strong>1682<\/strong><br \/>(+20 for winning)
+|c|âNuB Central|aw man i bet u thought u had it
+|c|âF1reantS|Is that a scarfed Gengar?
+|leave|NuB Central
+|player|p2
+|leave|F1reantS
+|player|p1

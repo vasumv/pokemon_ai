@@ -1,0 +1,333 @@
+|join|Bange
+|join|A Terrorist
+|player|p1|Bange|142
+|player|p2|A Terrorist|92
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Smeargle, F
+|poke|p1|Mr. Mime, M
+|poke|p1|Gliscor, M
+|poke|p1|Roserade, F
+|poke|p1|Raikou
+|poke|p1|Dragonite, F
+|poke|p2|Starmie
+|poke|p2|Metagross
+|poke|p2|Gengar, M
+|poke|p2|Eelektross, F
+|poke|p2|Houndoom, M
+|poke|p2|Breloom, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Smeargle|Smeargle, F|314\/314
+|switch|p2a: Gengar|Gengar, M|262\/262
+|turn|1
+|callback|decision
+|
+|move|p2a: Gengar|Focus Blast|p1a: Smeargle|[miss]
+|-miss|p2a: Gengar|p1a: Smeargle
+|move|p1a: Smeargle|Spore|p2a: Gengar
+|-status|p2a: Gengar|slp
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: Metagross|Metagross|364\/364
+|move|p1a: Smeargle|Substitute|p1a: Smeargle
+|-start|p1a: Smeargle|Substitute
+|-damage|p1a: Smeargle|236\/314
+|
+|turn|3
+|callback|decision
+|
+|move|p1a: Smeargle|Ingrain|p1a: Smeargle
+|-start|p1a: Smeargle|move: Ingrain
+|move|p2a: Metagross|Brick Break|p1a: Smeargle
+|-supereffective|p1a: Smeargle
+|-end|p1a: Smeargle|Substitute
+|
+|-heal|p1a: Smeargle|255\/314|[from] Ingrain
+|turn|4
+|callback|decision
+|
+|move|p1a: Smeargle|Baton Pass|p1a: Smeargle
+|callback|decision
+|
+|switch|p1a: Mr. Mime|Mr. Mime, M|284\/284
+|move|p2a: Metagross|Brick Break|p1a: Mr. Mime
+|-resisted|p1a: Mr. Mime
+|-damage|p1a: Mr. Mime|225\/284
+|
+|-heal|p1a: Mr. Mime|242\/284|[from] item: Leftovers
+|-heal|p1a: Mr. Mime|259\/284|[from] Ingrain
+|turn|5
+|callback|decision
+|
+|move|p1a: Mr. Mime|Barrier|p1a: Mr. Mime
+|-boost|p1a: Mr. Mime|def|2
+|move|p2a: Metagross|Meteor Mash|p1a: Mr. Mime|[miss]
+|-miss|p2a: Metagross|p1a: Mr. Mime
+|
+|-heal|p1a: Mr. Mime|276\/284|[from] item: Leftovers
+|-heal|p1a: Mr. Mime|284\/284|[from] Ingrain
+|turn|6
+|callback|decision
+|join|xdvxcvcv
+|
+|move|p1a: Mr. Mime|Barrier|p1a: Mr. Mime
+|-boost|p1a: Mr. Mime|def|2
+|move|p2a: Metagross|Meteor Mash|p1a: Mr. Mime|[miss]
+|-miss|p2a: Metagross|p1a: Mr. Mime
+|
+|turn|7
+|callback|decision
+|
+|move|p1a: Mr. Mime|Substitute|p1a: Mr. Mime
+|-start|p1a: Mr. Mime|Substitute
+|-damage|p1a: Mr. Mime|213\/284
+|move|p2a: Metagross|Meteor Mash|p1a: Mr. Mime
+|-end|p1a: Mr. Mime|Substitute
+|
+|-heal|p1a: Mr. Mime|230\/284|[from] item: Leftovers
+|-heal|p1a: Mr. Mime|247\/284|[from] Ingrain
+|turn|8
+|callback|decision
+|
+|move|p1a: Mr. Mime|Barrier|p1a: Mr. Mime
+|-boost|p1a: Mr. Mime|def|2
+|move|p2a: Metagross|Meteor Mash|p1a: Mr. Mime
+|-damage|p1a: Mr. Mime|171\/284
+|
+|-heal|p1a: Mr. Mime|188\/284|[from] item: Leftovers
+|-heal|p1a: Mr. Mime|205\/284|[from] Ingrain
+|turn|9
+|callback|decision
+|
+|move|p1a: Mr. Mime|Baton Pass|p1a: Mr. Mime
+|callback|decision
+|
+|switch|p1a: Gliscor|Gliscor, M|354\/354
+|move|p2a: Metagross|Earthquake|p1a: Gliscor
+|-damage|p1a: Gliscor|333\/354
+|
+|-heal|p1a: Gliscor|354\/354|[from] Ingrain
+|-activate|p1a: Gliscor|item: Toxic Orb
+|-status|p1a: Gliscor|tox
+|turn|10
+|callback|decision
+|
+|switch|p2a: Starmie|Starmie|261\/261
+|move|p1a: Gliscor|Substitute|p1a: Gliscor
+|-start|p1a: Gliscor|Substitute
+|-damage|p1a: Gliscor|266\/354 tox
+|
+|-heal|p1a: Gliscor|288\/354 tox|[from] Ingrain
+|-heal|p1a: Gliscor|332\/354 tox|[from] ability: Poison Heal
+|turn|11
+|callback|decision
+|
+|move|p2a: Starmie|Surf|p1a: Gliscor
+|-supereffective|p1a: Gliscor
+|-end|p1a: Gliscor|Substitute
+|move|p1a: Gliscor|Agility|p1a: Gliscor
+|-boost|p1a: Gliscor|spe|2
+|
+|-heal|p1a: Gliscor|354\/354 tox|[from] Ingrain
+|turn|12
+|callback|decision
+|
+|move|p1a: Gliscor|Substitute|p1a: Gliscor
+|-start|p1a: Gliscor|Substitute
+|-damage|p1a: Gliscor|266\/354 tox
+|move|p2a: Starmie|Surf|p1a: Gliscor
+|-supereffective|p1a: Gliscor
+|-end|p1a: Gliscor|Substitute
+|
+|-heal|p1a: Gliscor|288\/354 tox|[from] Ingrain
+|-heal|p1a: Gliscor|332\/354 tox|[from] ability: Poison Heal
+|turn|13
+|callback|decision
+|
+|move|p1a: Gliscor|Substitute|p1a: Gliscor
+|-start|p1a: Gliscor|Substitute
+|-damage|p1a: Gliscor|244\/354 tox
+|move|p2a: Starmie|Surf|p1a: Gliscor
+|-supereffective|p1a: Gliscor
+|-end|p1a: Gliscor|Substitute
+|
+|-heal|p1a: Gliscor|266\/354 tox|[from] Ingrain
+|-heal|p1a: Gliscor|310\/354 tox|[from] ability: Poison Heal
+|turn|14
+|callback|decision
+|
+|move|p1a: Gliscor|Substitute|p1a: Gliscor
+|-start|p1a: Gliscor|Substitute
+|-damage|p1a: Gliscor|222\/354 tox
+|move|p2a: Starmie|Surf|p1a: Gliscor
+|-supereffective|p1a: Gliscor
+|-end|p1a: Gliscor|Substitute
+|
+|-heal|p1a: Gliscor|244\/354 tox|[from] Ingrain
+|-heal|p1a: Gliscor|288\/354 tox|[from] ability: Poison Heal
+|turn|15
+|callback|decision
+|
+|move|p1a: Gliscor|Substitute|p1a: Gliscor
+|-start|p1a: Gliscor|Substitute
+|-damage|p1a: Gliscor|200\/354 tox
+|move|p2a: Starmie|Surf|p1a: Gliscor
+|-supereffective|p1a: Gliscor
+|-end|p1a: Gliscor|Substitute
+|
+|-heal|p1a: Gliscor|222\/354 tox|[from] Ingrain
+|-heal|p1a: Gliscor|266\/354 tox|[from] ability: Poison Heal
+|turn|16
+|callback|decision
+|chat|xdvxcvcv|lol bange how are you a 1800 on ou
+|
+|move|p1a: Gliscor|Baton Pass|p1a: Gliscor
+|callback|decision
+|
+|switch|p1a: Raikou|Raikou|351\/351
+|-ability|p1a: Raikou|Pressure
+|move|p2a: Starmie|Surf|p1a: Raikou
+|-damage|p1a: Raikou|197\/351
+|
+|-heal|p1a: Raikou|218\/351|[from] Ingrain
+|turn|17
+|callback|decision
+|
+|switch|p2a: Metagross|Metagross|364\/364
+|move|p1a: Raikou|Calm Mind|p1a: Raikou
+|-boost|p1a: Raikou|spa|1
+|-boost|p1a: Raikou|spd|1
+|
+|-heal|p1a: Raikou|239\/351|[from] Ingrain
+|turn|18
+|callback|decision
+|
+|move|p1a: Raikou|Thunderbolt|p2a: Metagross
+|-damage|p2a: Metagross|148\/364
+|move|p2a: Metagross|Earthquake|p1a: Raikou
+|-supereffective|p1a: Raikou
+|-damage|p1a: Raikou|155\/351
+|-enditem|p1a: Raikou|Sitrus Berry|[eat]
+|-heal|p1a: Raikou|242\/351|[from] item: Sitrus Berry
+|
+|-heal|p1a: Raikou|263\/351|[from] Ingrain
+|turn|19
+|callback|decision
+|
+|move|p1a: Raikou|Thunderbolt|p2a: Metagross
+|-damage|p2a: Metagross|0 fnt
+|faint|p2a: Metagross
+|
+|-heal|p1a: Raikou|284\/351|[from] Ingrain
+|callback|decision
+|
+|switch|p2a: Eelektross|Eelektross, F|374\/374
+|turn|20
+|callback|decision
+|
+|move|p1a: Raikou|Signal Beam|p2a: Eelektross
+|-damage|p2a: Eelektross|252\/374
+|move|p2a: Eelektross|Acid Spray|p1a: Raikou
+|-damage|p1a: Raikou|254\/351
+|-unboost|p1a: Raikou|spd|2
+|
+|-heal|p1a: Raikou|275\/351|[from] Ingrain
+|turn|21
+|callback|decision
+|
+|move|p1a: Raikou|Calm Mind|p1a: Raikou
+|-boost|p1a: Raikou|spa|1
+|-boost|p1a: Raikou|spd|1
+|move|p2a: Eelektross|Acid Spray|p1a: Raikou
+|-damage|p1a: Raikou|230\/351
+|-unboost|p1a: Raikou|spd|2
+|
+|-heal|p1a: Raikou|251\/351|[from] Ingrain
+|turn|22
+|callback|decision
+|
+|move|p1a: Raikou|Calm Mind|p1a: Raikou
+|-boost|p1a: Raikou|spa|1
+|-boost|p1a: Raikou|spd|1
+|move|p2a: Eelektross|Acid Spray|p1a: Raikou
+|-damage|p1a: Raikou|189\/351
+|-unboost|p1a: Raikou|spd|2
+|
+|-heal|p1a: Raikou|210\/351|[from] Ingrain
+|turn|23
+|callback|decision
+|
+|move|p1a: Raikou|Signal Beam|p2a: Eelektross
+|-damage|p2a: Eelektross|38\/374
+|move|p2a: Eelektross|Acid Spray|p1a: Raikou
+|-damage|p1a: Raikou|95\/351
+|-unboost|p1a: Raikou|spd|2
+|
+|-heal|p1a: Raikou|116\/351|[from] Ingrain
+|turn|24
+|callback|decision
+|
+|move|p1a: Raikou|Thunderbolt|p2a: Eelektross
+|-resisted|p2a: Eelektross
+|-damage|p2a: Eelektross|0 fnt
+|faint|p2a: Eelektross
+|
+|-heal|p1a: Raikou|137\/351|[from] Ingrain
+|callback|decision
+|
+|switch|p2a: Houndoom|Houndoom, M|291\/291
+|turn|25
+|callback|decision
+|
+|move|p1a: Raikou|Thunderbolt|p2a: Houndoom
+|-damage|p2a: Houndoom|0 fnt
+|faint|p2a: Houndoom
+|
+|-heal|p1a: Raikou|158\/351|[from] Ingrain
+|callback|decision
+|
+|switch|p2a: Breloom|Breloom, F|324\/324
+|turn|26
+|callback|decision
+|
+|move|p1a: Raikou|Hidden Power|p2a: Breloom
+|-supereffective|p2a: Breloom
+|-damage|p2a: Breloom|0 fnt
+|faint|p2a: Breloom
+|
+|-heal|p1a: Raikou|179\/351|[from] Ingrain
+|callback|decision
+|chat|xdvxcvcv|oh i guess thats what is supposed to happen
+|
+|switch|p2a: Gengar|Gengar, M|262\/262 slp
+|turn|27
+|callback|decision
+|
+|move|p1a: Raikou|Thunderbolt|p2a: Gengar
+|-damage|p2a: Gengar|0 fnt
+|faint|p2a: Gengar
+|
+|-heal|p1a: Raikou|200\/351|[from] Ingrain
+|callback|decision
+|-message|A Terrorist forfeited.
+|
+|win|Bange
+|raw|Ladder updating...
+|leave|A Terrorist
+|player|p2
+|raw|Bange's rating: 888 &rarr; <strong>1048<\/strong><br \/>(+160 for winning)
+|raw|A Terrorist's rating: 1245 &rarr; <strong>1239<\/strong><br \/>(-6 for losing)

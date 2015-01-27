@@ -1,0 +1,275 @@
+|join|req'd by crobro
+|join|Iodic
+|player|p1|req'd by crobro|144
+|player|p2|Iodic|264
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Metagross
+|poke|p1|Magnezone
+|poke|p1|Slowbro, F
+|poke|p1|Clefable, F
+|poke|p1|Gliscor, F
+|poke|p1|Zapdos
+|poke|p2|Excadrill, M
+|poke|p2|Azumarill, F
+|poke|p2|Talonflame, F
+|poke|p2|Serperior, F
+|poke|p2|Infernape, M
+|poke|p2|Gyarados, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Metagross|Metagross|301\/301
+|switch|p2a: Serperior|Serperior, F|353\/353
+|turn|1
+|
+|detailschange|p1a: Metagross|Metagross-Mega
+|-mega|p1a: Metagross|Metagross|Metagrossite
+|move|p2a: Serperior|Glare|p1a: Metagross
+|-status|p1a: Metagross|par
+|move|p1a: Metagross|Ice Punch|p2a: Serperior
+|-crit|p2a: Serperior
+|-supereffective|p2a: Serperior
+|-damage|p2a: Serperior|0 fnt
+|faint|p2a: Serperior
+|
+|
+|switch|p2a: Gyarados|Gyarados, M|331\/331
+|-ability|p2a: Gyarados|Intimidate|[of] p1a: Metagross
+|-unboost|p1a: Metagross|atk|1
+|turn|2
+|
+|switch|p1a: Magnezone|Magnezone|281\/281
+|move|p2a: Gyarados|Dragon Dance|p2a: Gyarados
+|-boost|p2a: Gyarados|atk|1
+|-boost|p2a: Gyarados|spe|1
+|
+|turn|3
+|
+|move|p2a: Gyarados|Earthquake|p1a: Magnezone
+|-supereffective|p1a: Magnezone
+|-damage|p1a: Magnezone|0 fnt
+|faint|p1a: Magnezone
+|
+|
+|switch|p1a: Zapdos|Zapdos|383\/383
+|-ability|p1a: Zapdos|Pressure
+|turn|4
+|
+|move|p2a: Gyarados|Substitute|p2a: Gyarados
+|-start|p2a: Gyarados|Substitute
+|-damage|p2a: Gyarados|249\/331
+|move|p1a: Zapdos|Thunderbolt|p2a: Gyarados
+|-supereffective|p2a: Gyarados
+|-end|p2a: Gyarados|Substitute
+|
+|turn|5
+|
+|switch|p2a: Excadrill|Excadrill, M|412\/412
+|-ability|p2a: Excadrill|Mold Breaker
+|move|p1a: Zapdos|Thunderbolt|p2a: Excadrill
+|-immune|p2a: Excadrill|[msg]
+|
+|turn|6
+|
+|move|p1a: Zapdos|Thunderbolt|p2a: Excadrill
+|-immune|p2a: Excadrill|[msg]
+|move|p2a: Excadrill|Rock Slide|p1a: Zapdos
+|-supereffective|p1a: Zapdos
+|-damage|p1a: Zapdos|249\/383
+|
+|-heal|p1a: Zapdos|272\/383|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Slowbro|Slowbro, F|394\/394
+|move|p2a: Excadrill|Rock Slide|p1a: Slowbro
+|-damage|p1a: Slowbro|336\/394
+|
+|-heal|p1a: Slowbro|360\/394|[from] item: Leftovers
+|turn|8
+|
+|switch|p2a: Infernape|Infernape, M|293\/293
+|move|p1a: Slowbro|Scald|p2a: Infernape
+|-supereffective|p2a: Infernape
+|-damage|p2a: Infernape|15\/293
+|
+|-heal|p1a: Slowbro|384\/394|[from] item: Leftovers
+|turn|9
+|
+|move|p2a: Infernape|Endeavor|p1a: Slowbro
+|-damage|p1a: Slowbro|15\/394
+|move|p1a: Slowbro|Scald|p2a: Infernape
+|-supereffective|p2a: Infernape
+|-damage|p2a: Infernape|0 fnt
+|faint|p2a: Infernape
+|
+|-heal|p1a: Slowbro|39\/394|[from] item: Leftovers
+|
+|switch|p2a: Azumarill|Azumarill, F|362\/362
+|turn|10
+|
+|move|p2a: Azumarill|Belly Drum|p2a: Azumarill
+|-damage|p2a: Azumarill|181\/362
+|-setboost|p2a: Azumarill|atk|6|[from] move: Belly Drum
+|-enditem|p2a: Azumarill|Sitrus Berry|[eat]
+|-heal|p2a: Azumarill|271\/362|[from] item: Sitrus Berry
+|move|p1a: Slowbro|Thunder Wave|p2a: Azumarill
+|-status|p2a: Azumarill|par
+|
+|-heal|p1a: Slowbro|63\/394|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Slowbro|Slack Off|p1a: Slowbro
+|-heal|p1a: Slowbro|260\/394
+|cant|p2a: Azumarill|par
+|
+|-heal|p1a: Slowbro|284\/394|[from] item: Leftovers
+|turn|12
+|
+|move|p1a: Slowbro|Psyshock|p2a: Azumarill
+|-damage|p2a: Azumarill|168\/362 par
+|move|p2a: Azumarill|Knock Off|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|0 fnt
+|-enditem|p1a: Slowbro|Leftovers|[from] move: Knock Off|[of] p2a: Azumarill
+|faint|p1a: Slowbro
+|
+|
+|switch|p1a: Metagross|Metagross-Mega|301\/301 par
+|turn|13
+|
+|move|p1a: Metagross|Zen Headbutt|p2a: Azumarill
+|-damage|p2a: Azumarill|0 fnt
+|faint|p2a: Azumarill
+|
+|
+|switch|p2a: Gyarados|Gyarados, M|249\/331
+|-ability|p2a: Gyarados|Intimidate|[of] p1a: Metagross
+|-unboost|p1a: Metagross|atk|1
+|turn|14
+|
+|detailschange|p2a: Gyarados|Gyarados-Mega, M
+|-mega|p2a: Gyarados|Gyarados|Gyaradosite
+|-ability|p2a: Gyarados|Mold Breaker
+|move|p2a: Gyarados|Dragon Dance|p2a: Gyarados
+|-boost|p2a: Gyarados|atk|1
+|-boost|p2a: Gyarados|spe|1
+|move|p1a: Metagross|Hammer Arm|p2a: Gyarados
+|-supereffective|p2a: Gyarados
+|-damage|p2a: Gyarados|43\/331
+|-unboost|p1a: Metagross|spe|1
+|
+|turn|15
+|
+|move|p2a: Gyarados|Crunch|p1a: Metagross
+|-supereffective|p1a: Metagross
+|-damage|p1a: Metagross|0 fnt
+|faint|p1a: Metagross
+|
+|
+|switch|p1a: Clefable|Clefable, F|394\/394
+|turn|16
+|
+|move|p2a: Gyarados|Earthquake|p1a: Clefable
+|-damage|p1a: Clefable|222\/394
+|move|p1a: Clefable|Moonblast|p2a: Gyarados
+|-supereffective|p2a: Gyarados
+|-damage|p2a: Gyarados|0 fnt
+|faint|p2a: Gyarados
+|
+|-heal|p1a: Clefable|246\/394|[from] item: Leftovers
+|
+|switch|p2a: Talonflame|Talonflame, F|359\/359
+|turn|17
+|
+|switch|p1a: Zapdos|Zapdos|272\/383
+|-ability|p1a: Zapdos|Pressure
+|move|p2a: Talonflame|Swords Dance|p2a: Talonflame
+|-boost|p2a: Talonflame|atk|2
+|
+|-heal|p1a: Zapdos|295\/383|[from] item: Leftovers
+|turn|18
+|
+|move|p2a: Talonflame|Will-O-Wisp|p1a: Zapdos
+|-status|p1a: Zapdos|brn
+|move|p1a: Zapdos|Thunderbolt|p2a: Talonflame
+|-supereffective|p2a: Talonflame
+|-damage|p2a: Talonflame|123\/359
+|
+|-heal|p2a: Talonflame|145\/359|[from] item: Leftovers
+|-heal|p1a: Zapdos|318\/383 brn|[from] item: Leftovers
+|-damage|p1a: Zapdos|271\/383 brn|[from] brn
+|turn|19
+|
+|move|p2a: Talonflame|Roost|p2a: Talonflame
+|-heal|p2a: Talonflame|325\/359
+|move|p1a: Zapdos|Thunderbolt|p2a: Talonflame
+|-damage|p2a: Talonflame|207\/359
+|
+|-heal|p2a: Talonflame|229\/359|[from] item: Leftovers
+|-heal|p1a: Zapdos|294\/383 brn|[from] item: Leftovers
+|-damage|p1a: Zapdos|247\/383 brn|[from] brn
+|turn|20
+|
+|move|p2a: Talonflame|Roost|p2a: Talonflame
+|-heal|p2a: Talonflame|359\/359
+|move|p1a: Zapdos|Thunderbolt|p2a: Talonflame
+|-crit|p2a: Talonflame
+|-damage|p2a: Talonflame|164\/359
+|
+|-heal|p2a: Talonflame|186\/359|[from] item: Leftovers
+|-heal|p1a: Zapdos|270\/383 brn|[from] item: Leftovers
+|-damage|p1a: Zapdos|223\/383 brn|[from] brn
+|turn|21
+|
+|switch|p1a: Gliscor|Gliscor, F|353\/353
+|move|p2a: Talonflame|Roost|p2a: Talonflame
+|-heal|p2a: Talonflame|359\/359
+|
+|-status|p1a: Gliscor|tox|[from] item: Toxic Orb
+|turn|22
+|
+|move|p2a: Talonflame|Brave Bird|p1a: Gliscor
+|-damage|p1a: Gliscor|179\/353 tox
+|-damage|p2a: Talonflame|302\/359|[from] recoil|[of] p1a: Gliscor
+|move|p1a: Gliscor|Knock Off|p2a: Talonflame
+|-damage|p2a: Talonflame|211\/359
+|-enditem|p2a: Talonflame|Leftovers|[from] move: Knock Off|[of] p1a: Gliscor
+|
+|-heal|p1a: Gliscor|223\/353 tox|[from] ability: Poison Heal
+|turn|23
+|
+|move|p2a: Talonflame|Swords Dance|p2a: Talonflame
+|-boost|p2a: Talonflame|atk|2
+|move|p1a: Gliscor|Earthquake|p2a: Talonflame
+|-immune|p2a: Talonflame|[msg]
+|
+|-heal|p1a: Gliscor|267\/353 tox|[from] ability: Poison Heal
+|turn|24
+|
+|move|p2a: Talonflame|Brave Bird|p1a: Gliscor
+|-crit|p1a: Gliscor
+|-damage|p1a: Gliscor|0 fnt
+|-damage|p2a: Talonflame|123\/359|[from] recoil|[of] p1a: Gliscor
+|faint|p1a: Gliscor
+|
+|-message|req'd by crobro forfeited.
+|leave|req'd by crobro
+|
+|win|Iodic
+|raw|Ladder updating...
+|player|p1
+|raw|req&apos;d by crobro's rating: 1616 &rarr; <strong>1595<\/strong><br \/>(-21 for losing)
+|raw|Iodic's rating: 1598 &rarr; <strong>1619<\/strong><br \/>(+21 for winning)

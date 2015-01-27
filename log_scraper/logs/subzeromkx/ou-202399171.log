@@ -1,0 +1,252 @@
+|join|subzeromkx
+|join|Sweep
+|player|p1|subzeromkx|20
+|player|p2|Sweep|1
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Breloom, M
+|poke|p1|Metagross
+|poke|p1|Thundurus, M
+|poke|p1|Bisharp, M
+|poke|p1|Sylveon, F
+|poke|p1|Garchomp, F
+|poke|p2|Crawdaunt, M
+|poke|p2|Ferrothorn, F
+|poke|p2|Gengar, M
+|poke|p2|Hippowdon, M
+|poke|p2|Latios, M
+|poke|p2|Aerodactyl, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Sylveon|Sylveon, F|332\/332
+|switch|p2a: Gengar|Gengar, M|261\/261
+|turn|1
+|
+|switch|p1a: Bisharp|Bisharp, M|272\/272
+|move|p2a: Gengar|Sludge Wave|p1a: Bisharp
+|-immune|p1a: Bisharp|[msg]
+|
+|turn|2
+|
+|switch|p2a: Hippowdon|Hippowdon, M|419\/419
+|-weather|Sandstorm
+|move|p1a: Bisharp|Sucker Punch|p2a: Hippowdon
+|-fail|p2a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|turn|3
+|
+|switch|p1a: Kisame|Garchomp, F|420\/420
+|move|p2a: Hippowdon|Stealth Rock|p1a: Kisame
+|-sidestart|p1: subzeromkx|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|4
+|
+|move|p1a: Kisame|Stealth Rock|p2a: Hippowdon
+|-sidestart|p2: Sweep|move: Stealth Rock
+|move|p2a: Hippowdon|Earthquake|p1a: Kisame
+|-damage|p1a: Kisame|323\/420
+|
+|-weather|Sandstorm|[upkeep]
+|turn|5
+|
+|move|p1a: Kisame|Earthquake|p2a: Hippowdon
+|-damage|p2a: Hippowdon|304\/419
+|move|p2a: Hippowdon|Earthquake|p1a: Kisame
+|-damage|p1a: Kisame|221\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|330\/419|[from] item: Leftovers
+|turn|6
+|
+|move|p1a: Kisame|Earthquake|p2a: Hippowdon
+|-damage|p2a: Hippowdon|215\/419
+|move|p2a: Hippowdon|Slack Off|p2a: Hippowdon
+|-heal|p2a: Hippowdon|419\/419
+|
+|-weather|none
+|turn|7
+|
+|move|p1a: Kisame|Earthquake|p2a: Hippowdon
+|-damage|p2a: Hippowdon|305\/419
+|move|p2a: Hippowdon|Earthquake|p1a: Kisame
+|-damage|p1a: Kisame|119\/420
+|
+|-heal|p2a: Hippowdon|331\/419|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Sylveon|Sylveon, F|332\/332
+|-damage|p1a: Sylveon|291\/332|[from] Stealth Rock
+|move|p2a: Hippowdon|Slack Off|p2a: Hippowdon
+|-heal|p2a: Hippowdon|419\/419
+|
+|turn|9
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|352\/352
+|-damage|p2a: Ferrothorn|330\/352|[from] Stealth Rock
+|move|p1a: Sylveon|Hyper Voice|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|209\/352
+|
+|-heal|p2a: Ferrothorn|231\/352|[from] item: Leftovers
+|turn|10
+|
+|move|p1a: Sylveon|Hyper Voice|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|99\/352
+|move|p2a: Ferrothorn|Gyro Ball|p1a: Sylveon
+|-supereffective|p1a: Sylveon
+|-damage|p1a: Sylveon|0 fnt
+|faint|p1a: Sylveon
+|
+|-heal|p2a: Ferrothorn|121\/352|[from] item: Leftovers
+|
+|switch|p1a: Bisharp|Bisharp, M|272\/272
+|-damage|p1a: Bisharp|255\/272|[from] Stealth Rock
+|turn|11
+|
+|move|p1a: Bisharp|Swords Dance|p1a: Bisharp
+|-boost|p1a: Bisharp|atk|2
+|move|p2a: Ferrothorn|Leech Seed|p1a: Bisharp
+|-start|p1a: Bisharp|move: Leech Seed
+|
+|-heal|p2a: Ferrothorn|143\/352|[from] item: Leftovers
+|-damage|p1a: Bisharp|221\/272|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|177\/352|[silent]
+|turn|12
+|
+|move|p1a: Bisharp|Knock Off|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|-damage|p1a: Bisharp|187\/272|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|-enditem|p2a: Ferrothorn|Leftovers|[from] move: Knock Off|[of] p1a: Bisharp
+|-damage|p1a: Bisharp|160\/272|[from] item: Life Orb
+|faint|p2a: Ferrothorn
+|
+|
+|switch|p2a: Hippowdon|Hippowdon, M|419\/419
+|-damage|p2a: Hippowdon|393\/419|[from] Stealth Rock
+|-weather|Sandstorm
+|turn|13
+|
+|move|p1a: Bisharp|Knock Off|p2a: Hippowdon
+|-damage|p2a: Hippowdon|65\/419
+|-enditem|p2a: Hippowdon|Leftovers|[from] move: Knock Off|[of] p1a: Bisharp
+|-damage|p1a: Bisharp|133\/272|[from] item: Life Orb
+|move|p2a: Hippowdon|Earthquake|p1a: Bisharp
+|-supereffective|p1a: Bisharp
+|-damage|p1a: Bisharp|0 fnt
+|faint|p1a: Bisharp
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Metagross|Metagross|302\/302
+|-damage|p1a: Metagross|284\/302|[from] Stealth Rock
+|turn|14
+|c|âsubzeromkx|hello?
+|
+|detailschange|p1a: Metagross|Metagross-Mega
+|-mega|p1a: Metagross|Metagross|Metagrossite
+|move|p1a: Metagross|Meteor Mash|p2a: Hippowdon
+|-damage|p2a: Hippowdon|0 fnt
+|faint|p2a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Aerodactyl|Aerodactyl, F|309\/309
+|-damage|p2a: Aerodactyl|232\/309|[from] Stealth Rock
+|-ability|p2a: Aerodactyl|Pressure
+|turn|15
+|
+|detailschange|p2a: Aerodactyl|Aerodactyl-Mega, F
+|-mega|p2a: Aerodactyl|Aerodactyl|Aerodactylite
+|move|p1a: Metagross|Bullet Punch|p2a: Aerodactyl
+|-crit|p2a: Aerodactyl
+|-supereffective|p2a: Aerodactyl
+|-damage|p2a: Aerodactyl|0 fnt
+|faint|p2a: Aerodactyl
+|
+|-weather|Sandstorm|[upkeep]
+|c|âSweep|good play
+|c|âSweep|outstanding work
+|
+|switch|p2a: Gengar|Gengar, M|261\/261
+|-damage|p2a: Gengar|229\/261|[from] Stealth Rock
+|turn|16
+|c|âSweep|(l0l)
+|
+|move|p2a: Gengar|Shadow Ball|p1a: Metagross
+|-supereffective|p1a: Metagross
+|-damage|p1a: Metagross|0 fnt
+|-damage|p2a: Gengar|203\/261|[from] item: Life Orb
+|faint|p1a: Metagross
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Gengar|187\/261|[from] Sandstorm
+|
+|switch|p1a: Thundurus|Thundurus, M|299\/299
+|-damage|p1a: Thundurus|225\/299|[from] Stealth Rock
+|turn|17
+|
+|switch|p2a: Latios|Latios, M|309\/309
+|-damage|p2a: Latios|271\/309|[from] Stealth Rock
+|move|p1a: Thundurus|Thunderbolt|p2a: Latios
+|-resisted|p2a: Latios
+|-damage|p2a: Latios|181\/309
+|-damage|p1a: Thundurus|196\/299|[from] item: Life Orb
+|
+|-weather|none
+|turn|18
+|
+|switch|p1a: Breloom|Breloom, M|262\/262
+|-damage|p1a: Breloom|246\/262|[from] Stealth Rock
+|move|p2a: Latios|Dragon Pulse|p1a: Breloom
+|-damage|p1a: Breloom|0 fnt
+|-damage|p2a: Latios|151\/309|[from] item: Life Orb
+|faint|p1a: Breloom
+|
+|
+|switch|p1a: Thundurus|Thundurus, M|196\/299
+|-damage|p1a: Thundurus|122\/299|[from] Stealth Rock
+|turn|19
+|
+|move|p1a: Thundurus|Hidden Power|p2a: Latios
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|-damage|p1a: Thundurus|93\/299|[from] item: Life Orb
+|faint|p2a: Latios
+|
+|
+|switch|p2a: Crawdaunt|Crawdaunt, M|269\/269
+|-damage|p2a: Crawdaunt|236\/269|[from] Stealth Rock
+|turn|20
+|
+|move|p1a: Thundurus|Thunder Wave|p2a: Crawdaunt
+|-status|p2a: Crawdaunt|par
+|move|p2a: Crawdaunt|Aqua Jet|p1a: Thundurus
+|-crit|p1a: Thundurus
+|-damage|p1a: Thundurus|0 fnt
+|-damage|p2a: Crawdaunt|210\/269 par|[from] item: Life Orb
+|faint|p1a: Thundurus
+|
+|-message|subzeromkx forfeited.
+|
+|win|Sweep
+|raw|Ladder updating...
+|leave|subzeromkx
+|player|p1
+|raw|subzeromkx's rating: 1762 &rarr; <strong>1732<\/strong><br \/>(-30 for losing)
+|raw|Sweep's rating: 1567 &rarr; <strong>1597<\/strong><br \/>(+30 for winning)

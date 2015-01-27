@@ -1,0 +1,366 @@
+|join|Elite Five
+|join|terra1396
+|player|p1|Elite Five|petra.png
+|player|p2|terra1396|137
+|gametype|singles
+|tier|OU
+|clearpoke
+|poke|p1|Medicham, M
+|poke|p1|Malamar, F
+|poke|p1|Sigilyph, M
+|poke|p1|Alakazam, M
+|poke|p1|Victini
+|poke|p1|Deoxys-Speed
+|poke|p2|Zoroark, F
+|poke|p2|Cresselia, F
+|poke|p2|Scolipede, M
+|poke|p2|Garchomp, M
+|poke|p2|Genesect, shiny
+|poke|p2|Talonflame, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|chat|Elite Five|woo
+|join|Tacos&Flowers
+|chat|terra1396|alright
+|chat|Elite Five|good luck
+|chat|terra1396|u too
+|
+|start
+|switch|p1a: Priority moves suk|Deoxys-Speed|242\/242
+|switch|p2a: Cresselia|Cresselia, F|444\/444
+|-ability|p1a: Priority moves suk|Pressure
+|turn|1
+|callback|decision
+|
+|move|p1a: Priority moves suk|Stealth Rock|p2a: Cresselia
+|-sidestart|p2: terra1396|move: Stealth Rock
+|move|p2a: Cresselia|Thunder Wave|p1a: Priority moves suk
+|-status|p1a: Priority moves suk|par
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Cresselia|Light Screen|p2a: Cresselia
+|-sidestart|p2: terra1396|move: Light Screen
+|move|p1a: Priority moves suk|Taunt|p2a: Cresselia
+|-start|p2a: Cresselia|move: Taunt
+|
+|turn|3
+|callback|decision
+|
+|switch|p2a: Genesect|Genesect, shiny|284\/284
+|-damage|p2a: Genesect|249\/284|[from] Stealth Rock
+|-boost|p2a: Genesect|atk|1|[from] ability: Download
+|switch|p1a: Flying Totem Pole|Sigilyph, M|348\/348
+|
+|-activate|p1a: Flying Totem Pole|item: Flame Orb
+|-status|p1a: Flying Totem Pole|brn
+|turn|4
+|callback|decision
+|
+|move|p2a: Genesect|U-turn|p1a: Flying Totem Pole
+|-damage|p1a: Flying Totem Pole|188\/348 brn
+|callback|decision
+|
+|switch|p2a: Scolipede|Scolipede, M|262\/262
+|-damage|p2a: Scolipede|230\/262|[from] Stealth Rock
+|move|p1a: Flying Totem Pole|Psycho Shift|p2a: Scolipede
+|-status|p2a: Scolipede|brn
+|-curestatus|p1a: Flying Totem Pole|brn
+|
+|-damage|p2a: Scolipede|198\/262 brn|[from] brn
+|-activate|p1a: Flying Totem Pole|item: Flame Orb
+|-status|p1a: Flying Totem Pole|brn
+|turn|5
+|callback|decision
+|
+|switch|p1a: Marie|Malamar, F|376\/376
+|move|p2a: Scolipede|Nasty Plot|p2a: Scolipede
+|-boost|p2a: Scolipede|spa|2
+|
+|-damage|p2a: Scolipede|166\/262 brn|[from] brn
+|turn|6
+|callback|decision
+|
+|move|p2a: Scolipede|Night Daze|p1a: Marie
+|-damage|p1a: Marie|124\/376
+|move|p1a: Marie|Topsy-Turvy|p2a: Scolipede
+|-invertboost|p2a: Scolipede|[from] move: Topsy-turvy
+|
+|-heal|p1a: Marie|147\/376|[from] item: Leftovers
+|-damage|p2a: Scolipede|134\/262 brn|[from] brn
+|turn|7
+|callback|decision
+|
+|switch|p2a: Cresselia|Cresselia, F|444\/444
+|-damage|p2a: Cresselia|389\/444|[from] Stealth Rock
+|move|p1a: Marie|Superpower|p2a: Cresselia
+|-resisted|p2a: Cresselia
+|-damage|p2a: Cresselia|365\/444
+|-boost|p1a: Marie|atk|1
+|-boost|p1a: Marie|def|1
+|
+|-heal|p1a: Marie|170\/376|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p2a: Cresselia|Thunder Wave|p1a: Marie
+|-status|p1a: Marie|par
+|move|p1a: Marie|Night Slash|p2a: Cresselia
+|-supereffective|p2a: Cresselia
+|-damage|p2a: Cresselia|233\/444
+|
+|-heal|p1a: Marie|193\/376 par|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p2a: Cresselia|Reflect|p2a: Cresselia
+|-sidestart|p2: terra1396|Reflect
+|move|p1a: Marie|Superpower|p2a: Cresselia
+|-resisted|p2a: Cresselia
+|-damage|p2a: Cresselia|216\/444
+|-boost|p1a: Marie|atk|1
+|-boost|p1a: Marie|def|1
+|
+|-heal|p1a: Marie|216\/376 par|[from] item: Leftovers
+|-sideend|p2: terra1396|move: Light Screen
+|turn|10
+|callback|decision
+|
+|move|p2a: Cresselia|Light Screen|p2a: Cresselia
+|-sidestart|p2: terra1396|move: Light Screen
+|cant|p1a: Marie|par
+|
+|-heal|p1a: Marie|239\/376 par|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p2a: Scolipede|Scolipede, M|324\/324
+|-damage|p2a: Scolipede|243\/324|[from] Stealth Rock
+|move|p1a: Marie|Superpower|p2a: Scolipede
+|-resisted|p2a: Scolipede
+|-damage|p2a: Scolipede|230\/324
+|-boost|p1a: Marie|atk|1
+|-boost|p1a: Marie|def|1
+|
+|-heal|p1a: Marie|262\/376 par|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: Scolipede|Megahorn|p1a: Marie
+|-supereffective|p1a: Marie
+|-damage|p1a: Marie|0 fnt
+|faint|p1a: Marie
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|callback|decision
+|
+|switch|p1a: V for Vendetta|Victini|342\/342
+|turn|13
+|callback|decision
+|
+|switch|p2a: Cresselia|Cresselia, F|216\/444
+|-damage|p2a: Cresselia|161\/444|[from] Stealth Rock
+|move|p1a: V for Vendetta|V-create|p2a: Cresselia
+|-damage|p2a: Cresselia|53\/444
+|-unboost|p1a: V for Vendetta|def|1
+|-unboost|p1a: V for Vendetta|spd|1
+|-unboost|p1a: V for Vendetta|spe|1
+|
+|turn|14
+|callback|decision
+|chat|Tacos&Flowers|._.
+|
+|move|p1a: V for Vendetta|V-create|p2a: Cresselia
+|-damage|p2a: Cresselia|0 fnt
+|-unboost|p1a: V for Vendetta|def|1
+|-unboost|p1a: V for Vendetta|spd|1
+|-unboost|p1a: V for Vendetta|spe|1
+|faint|p2a: Cresselia
+|
+|callback|decision
+|chat|Tacos&Flowers|bulky af
+|c|~Elite Five|!data cresselia
+|c|~|\/data-pokemon Cresselia
+
+|chat|Elite Five|ugh so good
+|
+|switch|p2a: Scolipede|Scolipede, M|134\/262 brn
+|-damage|p2a: Scolipede|102\/262 brn|[from] Stealth Rock
+|turn|15
+|callback|decision
+|
+|switch|p1a: nig|Medicham, M|262\/262
+|move|p2a: Scolipede|Night Daze|p1a: nig
+|-damage|p1a: nig|88\/262
+|
+|-damage|p2a: Scolipede|70\/262 brn|[from] brn
+|turn|16
+|callback|decision
+|
+|switch|p2a: Scolipede|Scolipede, M|230\/324
+|-damage|p2a: Scolipede|149\/324|[from] Stealth Rock
+|-enditem|p2a: Scolipede|Sitrus Berry|[eat]
+|-heal|p2a: Scolipede|230\/324|[from] item: Sitrus Berry
+|-formechange|p1a: nig|Medicham-Mega
+|message|Medicham has Mega Evolved into Mega Medicham!
+|move|p1a: nig|Fake Out|p2a: Scolipede
+|-damage|p2a: Scolipede|199\/324
+|
+|-sideend|p2: terra1396|Reflect
+|turn|17
+|callback|decision
+|chat|Elite Five|which one is which egnsiergn
+|
+|switch|p1a: Flying Totem Pole|Sigilyph, M|188\/348 brn
+|move|p2a: Scolipede|Swords Dance|p2a: Scolipede
+|-boost|p2a: Scolipede|atk|2
+|
+|-sideend|p2: terra1396|move: Light Screen
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|18
+|callback|decision
+|
+|move|p2a: Scolipede|Swords Dance|p2a: Scolipede
+|-boost|p2a: Scolipede|atk|2
+|move|p1a: Flying Totem Pole|Psycho Shift|p2a: Scolipede
+|-status|p2a: Scolipede|brn
+|-curestatus|p1a: Flying Totem Pole|brn
+|
+|-damage|p2a: Scolipede|159\/324 brn|[from] brn
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|-activate|p1a: Flying Totem Pole|item: Flame Orb
+|-status|p1a: Flying Totem Pole|brn
+|turn|19
+|callback|decision
+|
+|move|p2a: Scolipede|Baton Pass|p2a: Scolipede
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, M|420\/420
+|-damage|p2a: Garchomp|394\/420|[from] Stealth Rock
+|move|p1a: Flying Totem Pole|Cosmic Power|p1a: Flying Totem Pole
+|-boost|p1a: Flying Totem Pole|def|1
+|-boost|p1a: Flying Totem Pole|spd|1
+|
+|turn|20
+|callback|decision
+|chat|Elite Five|oh god
+|
+|-formechange|p2a: Garchomp|Garchomp-Mega
+|message|Garchomp has Mega Evolved into Mega Garchomp!
+|move|p2a: Garchomp|Dragon Claw|p1a: Flying Totem Pole
+|-damage|p1a: Flying Totem Pole|0 fnt
+|faint|p1a: Flying Totem Pole
+|
+|callback|decision
+|chat|Tacos&Flowers|this is when he sweeps ;~;
+|chat|Tacos&Flowers|how he beat me ;~;
+|
+|switch|p1a: Priority moves suk|Deoxys-Speed|242\/242 par
+|-ability|p1a: Priority moves suk|Pressure
+|turn|21
+|callback|decision
+|
+|move|p2a: Garchomp|Earthquake|p1a: Priority moves suk
+|-enditem|p1a: Priority moves suk|Focus Sash
+|-damage|p1a: Priority moves suk|1\/242 par
+|move|p1a: Priority moves suk|Reflect|p1a: Priority moves suk
+|-sidestart|p1: Elite Five|Reflect
+|
+|turn|22
+|callback|decision
+|
+|move|p2a: Garchomp|Brick Break|p1a: Priority moves suk
+|-sideend|p1: Elite Five|Reflect
+|-resisted|p1a: Priority moves suk
+|-damage|p1a: Priority moves suk|0 fnt
+|faint|p1a: Priority moves suk
+|
+|callback|decision
+|chat|Elite Five|OH GOD
+|
+|switch|p1a: V for Vendetta|Victini|342\/342
+|turn|23
+|callback|decision
+|
+|move|p1a: V for Vendetta|V-create|p2a: Garchomp
+|-resisted|p2a: Garchomp
+|-damage|p2a: Garchomp|284\/420
+|-unboost|p1a: V for Vendetta|def|1
+|-unboost|p1a: V for Vendetta|spd|1
+|-unboost|p1a: V for Vendetta|spe|1
+|move|p2a: Garchomp|Earthquake|p1a: V for Vendetta
+|-supereffective|p1a: V for Vendetta
+|-damage|p1a: V for Vendetta|0 fnt
+|faint|p1a: V for Vendetta
+|
+|callback|decision
+|
+|switch|p1a: Wax on wax off.|Alakazam, M|251\/251
+|turn|24
+|callback|decision
+|chat|Tacos&Flowers|RUN FIVE RUNNNNNN!!!!!!
+|
+|move|p2a: Garchomp|Earthquake|p1a: Wax on wax off.
+|-enditem|p1a: Wax on wax off.|Focus Sash
+|-damage|p1a: Wax on wax off.|1\/251
+|move|p1a: Wax on wax off.|Dazzling Gleam|p2a: Garchomp
+|-supereffective|p2a: Garchomp
+|-damage|p2a: Garchomp|106\/420
+|
+|turn|25
+|callback|decision
+|
+|move|p2a: Garchomp|Earthquake|p1a: Wax on wax off.
+|-damage|p1a: Wax on wax off.|0 fnt
+|faint|p1a: Wax on wax off.
+|
+|callback|decision
+|chat|Tacos&Flowers|._.
+|
+|switch|p1a: nig|Medicham, M|88\/262
+|-formechange|p1a: nig|Medicham-Mega
+|turn|26
+|callback|decision
+|chat|terra1396|gg
+|
+|move|p1a: nig|Fake Out|p2a: Garchomp
+|-damage|p2a: Garchomp|46\/420
+|cant|p2a: Garchomp|flinch
+|
+|turn|27
+|callback|decision
+|
+|move|p1a: nig|Bullet Punch|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|faint|p2a: Garchomp
+|
+|callback|decision
+|
+|switch|p2a: Genesect|Genesect, shiny|249\/284
+|-damage|p2a: Genesect|214\/284|[from] Stealth Rock
+|-boost|p2a: Genesect|spa|1|[from] ability: Download
+|turn|28
+|callback|decision
+|chat|Elite Five|GG
+|chat|Elite Five|sigh
+|
+|move|p2a: Genesect|Bug Buzz|p1a: nig
+|-damage|p1a: nig|0 fnt
+|faint|p1a: nig
+|
+|win|terra1396
+|leave|Elite Five
+|player|p1
+|leave|terra1396
+|player|p2
+|leave|Tacos&Flowers
+|join|terra1396

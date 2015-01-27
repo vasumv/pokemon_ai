@@ -1,0 +1,206 @@
+|join|Drina Auguste
+|join|namurt
+|player|p1|Drina Auguste|98
+|player|p2|namurt|2
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Charizard, M
+|poke|p1|Aegislash, F
+|poke|p1|Hippowdon, F
+|poke|p1|Zapdos
+|poke|p1|Keldeo
+|poke|p1|Clefable, F
+|poke|p2|Chansey, F
+|poke|p2|Keldeo
+|poke|p2|Heatran, F
+|poke|p2|Skarmory, M
+|poke|p2|Bisharp, F
+|poke|p2|Venusaur, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit three PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Hippowdon|Hippowdon, F|420\/420
+|switch|p2a: Heatran|Heatran, F|385\/385
+|-item|p2a: Heatran|Air Balloon
+|-weather|Sandstorm
+|turn|1
+|
+|move|p2a: Heatran|Stealth Rock|p1a: Hippowdon
+|-sidestart|p1: Drina Auguste|move: Stealth Rock
+|move|p1a: Hippowdon|Stealth Rock|p2a: Heatran
+|-sidestart|p2: namurt|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|2
+|
+|move|p2a: Heatran|Toxic|p1a: Hippowdon
+|-status|p1a: Hippowdon|tox
+|move|p1a: Hippowdon|Earthquake|p2a: Heatran
+|-immune|p2a: Heatran|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Hippowdon|394\/420 tox|[from] psn
+|turn|3
+|
+|switch|p1a: Keldeo|Keldeo|322\/322
+|-damage|p1a: Keldeo|302\/322|[from] Stealth Rock
+|move|p2a: Heatran|Taunt|p1a: Keldeo
+|-start|p1a: Keldeo|move: Taunt
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Keldeo|282\/322|[from] sandstorm
+|turn|4
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|-damage|p2a: Chansey|616\/704|[from] Stealth Rock
+|move|p1a: Keldeo|Hidden Power|p2a: Chansey
+|-damage|p2a: Chansey|542\/704
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Keldeo|262\/322|[from] sandstorm
+|-damage|p2a: Chansey|498\/704|[from] sandstorm
+|turn|5
+|
+|switch|p1a: Zapdos|Zapdos|383\/383
+|-damage|p1a: Zapdos|288\/383|[from] Stealth Rock
+|-ability|p1a: Zapdos|Pressure
+|move|p2a: Chansey|Thunder Wave|p1a: Zapdos
+|-fail|p1a: Zapdos
+|
+|-weather|none
+|-heal|p1a: Zapdos|311\/383|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: Venusaur|Venusaur, F|364\/364
+|-damage|p2a: Venusaur|319\/364|[from] Stealth Rock
+|move|p1a: Zapdos|Defog|p2a: Venusaur
+|-unboost|p2a: Venusaur|evasion|1
+|-sideend|p2: namurt|Stealth Rock|[from] move: Defog|[of] p2a: Venusaur
+|-sideend|p1: Drina Auguste|Stealth Rock|[from] move: Defog|[of] p1a: Zapdos
+|
+|-heal|p1a: Zapdos|334\/383|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Aegislash|Aegislash, F|323\/323
+|-item|p1a: Aegislash|Air Balloon
+|detailschange|p2a: Venusaur|Venusaur-Mega, F
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p2a: Venusaur|Leech Seed|p1a: Aegislash
+|-start|p1a: Aegislash|move: Leech Seed
+|
+|-damage|p1a: Aegislash|283\/323|[from] Leech Seed|[of] p2a: Venusaur
+|-heal|p2a: Venusaur|359\/364|[silent]
+|turn|8
+|
+|switch|p1a: Charizard|Charizard, M|297\/297
+|move|p2a: Venusaur|Hidden Power|p1a: Charizard
+|-resisted|p1a: Charizard
+|-damage|p1a: Charizard|253\/297
+|
+|turn|9
+|
+|switch|p2a: Chansey|Chansey, F|498\/704
+|detailschange|p1a: Charizard|Charizard-Mega-Y, M
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p1a: Charizard|Flare Blitz|p2a: Chansey
+|-damage|p2a: Chansey|185\/704
+|-damage|p1a: Charizard|150\/297|[from] recoil|[of] p2a: Chansey
+|
+|-weather|SunnyDay|[upkeep]
+|turn|10
+|
+|switch|p2a: Heatran|Heatran, F|385\/385
+|-item|p2a: Heatran|Air Balloon
+|move|p1a: Charizard|Solar Beam|p2a: Heatran|[still]
+|-prepare|p1a: Charizard|Solar Beam|p2a: Heatran
+|-anim|p1a: Charizard|Solar Beam|p2a: Heatran
+|-crit|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|346\/385
+|-enditem|p2a: Heatran|Air Balloon
+|
+|-weather|SunnyDay|[upkeep]
+|turn|11
+|
+|move|p1a: Charizard|Earthquake|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|faint|p2a: Heatran
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p2a: Chansey|Chansey, F|185\/704
+|turn|12
+|
+|move|p1a: Charizard|Flare Blitz|p2a: Chansey
+|-damage|p2a: Chansey|0 fnt
+|-damage|p1a: Charizard|89\/297|[from] recoil|[of] p2a: Chansey
+|faint|p2a: Chansey
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p2a: Bisharp|Bisharp, F|302\/302
+|turn|13
+|
+|switch|p1a: Keldeo|Keldeo|262\/322
+|move|p2a: Bisharp|Sucker Punch|p1a: Keldeo
+|-fail|p1a: Keldeo
+|
+|-weather|none
+|turn|14
+|
+|switch|p2a: Venusaur|Venusaur-Mega, F|359\/364
+|move|p1a: Keldeo|Hidden Power|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|183\/364
+|
+|turn|15
+|
+|move|p1a: Keldeo|Hidden Power|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|0 fnt
+|faint|p2a: Venusaur
+|
+|
+|switch|p2a: Skarmory|Skarmory, M|327\/327
+|turn|16
+|
+|switch|p1a: Zapdos|Zapdos|334\/383
+|-ability|p1a: Zapdos|Pressure
+|move|p2a: Skarmory|Brave Bird|p1a: Zapdos
+|-resisted|p1a: Zapdos
+|-damage|p1a: Zapdos|281\/383
+|-damage|p2a: Skarmory|310\/327|[from] recoil|[of] p1a: Zapdos
+|
+|-heal|p1a: Zapdos|304\/383|[from] item: Leftovers
+|turn|17
+|
+|switch|p2a: Keldeo|Keldeo|386\/386
+|move|p1a: Zapdos|Thunderbolt|p2a: Keldeo
+|-crit|p2a: Keldeo
+|-supereffective|p2a: Keldeo
+|-damage|p2a: Keldeo|0 fnt
+|faint|p2a: Keldeo
+|
+|-heal|p1a: Zapdos|327\/383|[from] item: Leftovers
+|-message|namurt forfeited.
+|
+|win|Drina Auguste
+|raw|Ladder updating...
+|leave|namurt
+|player|p2
+|raw|Drina Auguste's rating: 1629 &rarr; <strong>1647<\/strong><br \/>(+18 for winning)
+|raw|namurt's rating: 1590 &rarr; <strong>1573<\/strong><br \/>(-17 for losing)

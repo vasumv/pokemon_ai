@@ -1,0 +1,458 @@
+|join|I'm a tester
+|join|ThisFireBurns
+|player|p1|I'm a tester|168
+|player|p2|ThisFireBurns|101
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Honchkrow, F
+|poke|p1|Magneton, shiny
+|poke|p1|Latias, F
+|poke|p1|Whimsicott, F
+|poke|p1|Heatran, M
+|poke|p1|Rotom-Wash
+|poke|p2|Venusaur, F
+|poke|p2|Tyranitar, M
+|poke|p2|Keldeo
+|poke|p2|Garchomp, F
+|poke|p2|Bisharp, M
+|poke|p2|Thundurus, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Whimsicott|Whimsicott, F|324\/324
+|switch|p2a: Keldeo|Keldeo|323\/323
+|turn|1
+|
+|switch|p2a: Bisharp|Bisharp, M|272\/272
+|move|p1a: Whimsicott|U-turn|p2a: Bisharp
+|-damage|p2a: Bisharp|229\/272
+|
+|switch|p1a: Magneton|Magneton, shiny|242\/242
+|
+|turn|2
+|
+|move|p1a: Magneton|Volt Switch|p2a: Bisharp
+|-damage|p2a: Bisharp|46\/272
+|
+|switch|p1a: Honchkrow|Honchkrow, F|341\/341
+|move|p2a: Bisharp|Knock Off|p1a: Honchkrow
+|-resisted|p1a: Honchkrow
+|-damage|p1a: Honchkrow|138\/341
+|-enditem|p1a: Honchkrow|Life Orb|[from] move: Knock Off|[of] p2a: Bisharp
+|-damage|p2a: Bisharp|19\/272|[from] item: Life Orb
+|
+|turn|3
+|
+|move|p1a: Honchkrow|Pursuit|p2a: Bisharp
+|-resisted|p2a: Bisharp
+|-damage|p2a: Bisharp|0 fnt
+|faint|p2a: Bisharp
+|-boost|p1a: Honchkrow|atk|1|[from] ability: Moxie
+|
+|
+|switch|p2a: Keldeo|Keldeo|323\/323
+|turn|4
+|
+|switch|p1a: Latias|Latias, F|319\/319
+|move|p2a: Keldeo|Scald|p1a: Latias
+|-resisted|p1a: Latias
+|-damage|p1a: Latias|233\/319
+|
+|turn|5
+|
+|switch|p1a: Whimsicott|Whimsicott, F|324\/324
+|switch|p2a: Tyranitar|Tyranitar, M|404\/404
+|-weather|Sandstorm
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Whimsicott|304\/324|[from] sandstorm
+|-heal|p1a: Whimsicott|324\/324|[from] item: Leftovers
+|turn|6
+|
+|move|p1a: Whimsicott|Taunt|p2a: Tyranitar
+|-start|p2a: Tyranitar|move: Taunt
+|cant|p2a: Tyranitar|move: Taunt|Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Whimsicott|304\/324|[from] sandstorm
+|-heal|p1a: Whimsicott|324\/324|[from] item: Leftovers
+|turn|7
+|
+|move|p1a: Whimsicott|U-turn|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|334\/404
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|move|p2a: Tyranitar|Ice Beam|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|274\/304
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-Wash|255\/304|[from] sandstorm
+|-heal|p1a: Rotom-Wash|274\/304|[from] item: Leftovers
+|-heal|p2a: Tyranitar|359\/404|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Tyranitar
+|-status|p2a: Tyranitar|brn
+|move|p2a: Tyranitar|Superpower|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|228\/304
+|-unboost|p2a: Tyranitar|atk|1
+|-unboost|p2a: Tyranitar|def|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-Wash|209\/304|[from] sandstorm
+|-heal|p1a: Rotom-Wash|228\/304|[from] item: Leftovers
+|-heal|p2a: Tyranitar|384\/404 brn|[from] item: Leftovers
+|-damage|p2a: Tyranitar|334\/404 brn|[from] brn
+|-end|p2a: Tyranitar|move: Taunt
+|turn|9
+|
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Tyranitar
+|-crit|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|116\/404 brn
+|move|p2a: Tyranitar|Stealth Rock|p1a: Rotom-Wash
+|-sidestart|p1: I'm a tester|move: Stealth Rock
+|
+|-weather|none
+|-heal|p1a: Rotom-Wash|247\/304|[from] item: Leftovers
+|-heal|p2a: Tyranitar|141\/404 brn|[from] item: Leftovers
+|-damage|p2a: Tyranitar|91\/404 brn|[from] brn
+|turn|10
+|
+|switch|p2a: Venusaur|Venusaur, F|364\/364
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|322\/364
+|
+|switch|p1a: Latias|Latias, F|233\/319
+|-damage|p1a: Latias|194\/319|[from] Stealth Rock
+|
+|turn|11
+|
+|switch|p2a: Tyranitar|Tyranitar, M|91\/404 brn
+|-weather|Sandstorm
+|move|p1a: Latias|Defog|p2a: Tyranitar
+|-unboost|p2a: Tyranitar|evasion|1
+|-sideend|p1: I'm a tester|Stealth Rock|[from] move: Defog|[of] p1a: Latias
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latias|175\/319|[from] sandstorm
+|-heal|p2a: Tyranitar|116\/404 brn|[from] item: Leftovers
+|-damage|p2a: Tyranitar|66\/404 brn|[from] brn
+|turn|12
+|
+|move|p1a: Latias|Draco Meteor|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|-unboost|p1a: Latias|spa|2
+|-damage|p1a: Latias|144\/319|[from] item: Life Orb
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latias|125\/319|[from] sandstorm
+|
+|switch|p2a: Garchomp|Garchomp, F|357\/357
+|turn|13
+|
+|switch|p1a: Whimsicott|Whimsicott, F|324\/324
+|move|p2a: Garchomp|Dual Chop|p1a: Whimsicott
+|-immune|p1a: Whimsicott|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Whimsicott|304\/324|[from] sandstorm
+|-heal|p1a: Whimsicott|324\/324|[from] item: Leftovers
+|turn|14
+|
+|switch|p2a: Venusaur|Venusaur, F|322\/364
+|move|p1a: Whimsicott|U-turn|p2a: Venusaur
+|-damage|p2a: Venusaur|286\/364
+|
+|switch|p1a: Latias|Latias, F|125\/319
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latias|106\/319|[from] sandstorm
+|-damage|p2a: Venusaur|264\/364|[from] sandstorm
+|turn|15
+|
+|detailschange|p2a: Venusaur|Venusaur-Mega, F
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p1a: Latias|Psyshock|p2a: Venusaur
+|-crit|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|0 fnt
+|-damage|p1a: Latias|75\/319|[from] item: Life Orb
+|faint|p2a: Venusaur
+|
+|-weather|none
+|
+|switch|p2a: Thundurus|Thundurus, M|299\/299
+|turn|16
+|
+|switch|p1a: Magneton|Magneton, shiny|242\/242
+|move|p2a: Thundurus|Thunderbolt|p1a: Magneton
+|-resisted|p1a: Magneton
+|-damage|p1a: Magneton|102\/242
+|-damage|p2a: Thundurus|270\/299|[from] item: Life Orb
+|
+|turn|17
+|
+|switch|p2a: Garchomp|Garchomp, F|357\/357
+|move|p1a: Magneton|Volt Switch|p2a: Garchomp
+|-immune|p2a: Garchomp|[msg]
+|
+|turn|18
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|247\/304
+|move|p2a: Garchomp|Fire Blast|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|212\/304
+|-status|p1a: Rotom-Wash|brn
+|
+|-heal|p1a: Rotom-Wash|231\/304 brn|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|193\/304 brn|[from] brn
+|turn|19
+|
+|switch|p2a: Keldeo|Keldeo|323\/323
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Keldeo
+|-supereffective|p2a: Keldeo
+|-damage|p2a: Keldeo|141\/323
+|
+|switch|p1a: Whimsicott|Whimsicott, F|324\/324
+|
+|turn|20
+|
+|move|p1a: Whimsicott|Leech Seed|p2a: Keldeo
+|-start|p2a: Keldeo|move: Leech Seed
+|move|p2a: Keldeo|Scald|p1a: Whimsicott
+|-resisted|p1a: Whimsicott
+|-damage|p1a: Whimsicott|189\/324
+|
+|-heal|p1a: Whimsicott|209\/324|[from] item: Leftovers
+|-damage|p2a: Keldeo|101\/323|[from] Leech Seed|[of] p1a: Whimsicott
+|-heal|p1a: Whimsicott|249\/324|[silent]
+|turn|21
+|
+|switch|p2a: Thundurus|Thundurus, M|270\/299
+|move|p1a: Whimsicott|Leech Seed|p2a: Thundurus|[miss]
+|-miss|p1a: Whimsicott|p2a: Thundurus
+|
+|-heal|p1a: Whimsicott|269\/324|[from] item: Leftovers
+|turn|22
+|
+|move|p2a: Thundurus|Thunder Wave|p1a: Whimsicott
+|-status|p1a: Whimsicott|par
+|move|p1a: Whimsicott|Leech Seed|p2a: Thundurus
+|-start|p2a: Thundurus|move: Leech Seed
+|
+|-heal|p1a: Whimsicott|289\/324 par|[from] item: Leftovers
+|-damage|p2a: Thundurus|233\/299|[from] Leech Seed|[of] p1a: Whimsicott
+|-heal|p1a: Whimsicott|324\/324 par|[silent]
+|turn|23
+|
+|switch|p2a: Keldeo|Keldeo|101\/323
+|move|p1a: Whimsicott|U-turn|p2a: Keldeo
+|-resisted|p2a: Keldeo
+|-damage|p2a: Keldeo|81\/323
+|
+|switch|p1a: Latias|Latias, F|75\/319
+|
+|turn|24
+|
+|switch|p1a: Whimsicott|Whimsicott, F|324\/324 par
+|move|p2a: Keldeo|Scald|p1a: Whimsicott
+|-resisted|p1a: Whimsicott
+|-damage|p1a: Whimsicott|181\/324 par
+|
+|-heal|p1a: Whimsicott|201\/324 par|[from] item: Leftovers
+|turn|25
+|
+|cant|p1a: Whimsicott|par
+|move|p2a: Keldeo|Scald|p1a: Whimsicott
+|-resisted|p1a: Whimsicott
+|-damage|p1a: Whimsicott|75\/324 par
+|
+|-heal|p1a: Whimsicott|95\/324 par|[from] item: Leftovers
+|turn|26
+|
+|switch|p1a: Heatran|Heatran, M|377\/377
+|move|p2a: Keldeo|Scald|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|99\/377
+|
+|-heal|p1a: Heatran|122\/377|[from] item: Leftovers
+|turn|27
+|
+|move|p2a: Keldeo|Scald|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|
+|switch|p1a: Latias|Latias, F|75\/319
+|turn|28
+|
+|move|p1a: Latias|Healing Wish|p1a: Latias
+|faint|p1a: Latias
+|move|p2a: Keldeo|Scald|p1: Latias|[notarget]
+|-notarget
+|
+|
+|switch|p1a: Whimsicott|Whimsicott, F|95\/324 par
+|-heal|p1a: Whimsicott|324\/324|[from] move: Healing Wish
+|turn|29
+|
+|switch|p2a: Thundurus|Thundurus, M|233\/299
+|move|p1a: Whimsicott|Leech Seed|p2a: Thundurus|[miss]
+|-miss|p1a: Whimsicott|p2a: Thundurus
+|
+|turn|30
+|
+|move|p2a: Thundurus|Thunder Wave|p1a: Whimsicott
+|-status|p1a: Whimsicott|par
+|move|p1a: Whimsicott|Leech Seed|p2a: Thundurus
+|-start|p2a: Thundurus|move: Leech Seed
+|
+|-damage|p2a: Thundurus|196\/299|[from] Leech Seed|[of] p1a: Whimsicott
+|turn|31
+|
+|switch|p2a: Garchomp|Garchomp, F|357\/357
+|move|p1a: Whimsicott|U-turn|p2a: Garchomp
+|-damage|p2a: Garchomp|317\/357
+|-damage|p1a: Whimsicott|284\/324 par|[from] ability: Rough Skin|[of] p2a: Garchomp
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|193\/304 brn
+|
+|-heal|p1a: Rotom-Wash|212\/304 brn|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|174\/304 brn|[from] brn
+|turn|32
+|
+|switch|p1a: Whimsicott|Whimsicott, F|284\/324 par
+|move|p2a: Garchomp|Dual Chop|p1a: Whimsicott
+|-immune|p1a: Whimsicott|[msg]
+|
+|-heal|p1a: Whimsicott|304\/324 par|[from] item: Leftovers
+|turn|33
+|
+|switch|p2a: Thundurus|Thundurus, M|196\/299
+|move|p1a: Whimsicott|Leech Seed|p2a: Thundurus
+|-start|p2a: Thundurus|move: Leech Seed
+|
+|-heal|p1a: Whimsicott|324\/324 par|[from] item: Leftovers
+|-damage|p2a: Thundurus|159\/299|[from] Leech Seed|[of] p1a: Whimsicott
+|turn|34
+|
+|switch|p2a: Garchomp|Garchomp, F|317\/357
+|switch|p1a: Magneton|Magneton, shiny|102\/242
+|
+|turn|35
+|
+|move|p2a: Garchomp|Fire Blast|p1a: Magneton
+|-supereffective|p1a: Magneton
+|-damage|p1a: Magneton|0 fnt
+|faint|p1a: Magneton
+|
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|174\/304 brn
+|turn|36
+|
+|move|p2a: Garchomp|Fire Blast|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|138\/304 brn
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Garchomp
+|-status|p2a: Garchomp|brn
+|
+|-heal|p1a: Rotom-Wash|157\/304 brn|[from] item: Leftovers
+|-damage|p2a: Garchomp|273\/357 brn|[from] brn
+|-damage|p1a: Rotom-Wash|119\/304 brn|[from] brn
+|turn|37
+|
+|move|p2a: Garchomp|Fire Blast|p1a: Rotom-Wash|[miss]
+|-miss|p2a: Garchomp|p1a: Rotom-Wash
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Garchomp
+|-immune|p2a: Garchomp|[msg]
+|
+|-heal|p1a: Rotom-Wash|138\/304 brn|[from] item: Leftovers
+|-damage|p2a: Garchomp|229\/357 brn|[from] brn
+|-damage|p1a: Rotom-Wash|100\/304 brn|[from] brn
+|turn|38
+|
+|move|p2a: Garchomp|Fire Blast|p1a: Rotom-Wash|[miss]
+|-miss|p2a: Garchomp|p1a: Rotom-Wash
+|move|p1a: Rotom-Wash|Pain Split|p2a: Garchomp
+|-sethp|p2a: Garchomp|164\/357 brn|p1a: Rotom-Wash|164\/304 brn|[from] move: Pain Split
+|
+|-heal|p1a: Rotom-Wash|183\/304 brn|[from] item: Leftovers
+|-damage|p2a: Garchomp|120\/357 brn|[from] brn
+|-damage|p1a: Rotom-Wash|145\/304 brn|[from] brn
+|turn|39
+|
+|move|p2a: Garchomp|Fire Blast|p1a: Rotom-Wash|[miss]
+|-miss|p2a: Garchomp|p1a: Rotom-Wash
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Garchomp|[miss]
+|-miss|p1a: Rotom-Wash|p2a: Garchomp
+|
+|-heal|p1a: Rotom-Wash|164\/304 brn|[from] item: Leftovers
+|-damage|p2a: Garchomp|76\/357 brn|[from] brn
+|-damage|p1a: Rotom-Wash|126\/304 brn|[from] brn
+|turn|40
+|
+|move|p2a: Garchomp|Fire Blast|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|94\/304 brn
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|faint|p2a: Garchomp
+|
+|-heal|p1a: Rotom-Wash|113\/304 brn|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|75\/304 brn|[from] brn
+|
+|switch|p2a: Thundurus|Thundurus, M|159\/299
+|turn|41
+|
+|move|p2a: Thundurus|Thunderbolt|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|-damage|p2a: Thundurus|130\/299|[from] item: Life Orb
+|faint|p1a: Rotom-Wash
+|
+|
+|switch|p1a: Honchkrow|Honchkrow, F|138\/341
+|turn|42
+|
+|move|p2a: Thundurus|Thunder Wave|p1a: Honchkrow
+|-status|p1a: Honchkrow|par
+|move|p1a: Honchkrow|Brave Bird|p2a: Thundurus
+|-resisted|p2a: Thundurus
+|-damage|p2a: Thundurus|0 fnt
+|-damage|p1a: Honchkrow|95\/341 par|[from] recoil|[of] p2a: Thundurus
+|faint|p2a: Thundurus
+|-boost|p1a: Honchkrow|atk|1|[from] ability: Moxie
+|
+|
+|switch|p2a: Keldeo|Keldeo|81\/323
+|turn|43
+|
+|move|p1a: Honchkrow|Sucker Punch|p2a: Keldeo
+|-resisted|p2a: Keldeo
+|-damage|p2a: Keldeo|0 fnt
+|faint|p2a: Keldeo
+|-boost|p1a: Honchkrow|atk|1|[from] ability: Moxie
+|
+|win|I'm a tester
+|raw|Ladder updating...
+|raw|I&apos;m a tester's rating: 1644 &rarr; <strong>1668<\/strong><br \/>(+24 for winning)
+|raw|ThisFireBurns's rating: 1704 &rarr; <strong>1680<\/strong><br \/>(-24 for losing)
+|leave|ThisFireBurns
+|player|p2

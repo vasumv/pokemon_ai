@@ -1,0 +1,155 @@
+|join|peere
+|join|testnaaja
+|player|p1|peere|97
+|player|p2|testnaaja|13
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Chansey, F
+|poke|p1|Thundurus, M
+|poke|p1|Celebi
+|poke|p1|Excadrill, F
+|poke|p1|Charizard, M
+|poke|p1|Rotom-Wash
+|poke|p2|Landorus, M
+|poke|p2|Heatran, M, shiny
+|poke|p2|Venusaur, M
+|poke|p2|Aegislash, M, shiny
+|poke|p2|Keldeo
+|poke|p2|Excadrill, M, shiny
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Charizard|Charizard, M|359\/359
+|switch|p2a: Lava Golem|Heatran, M, shiny|324\/324
+|-item|p2a: Lava Golem|Air Balloon
+|turn|1
+|
+|detailschange|p1a: Charizard|Charizard-Mega-X, M
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p2a: Lava Golem|Toxic|p1a: Charizard|[miss]
+|-miss|p2a: Lava Golem|p1a: Charizard
+|move|p1a: Charizard|Dragon Claw|p2a: Lava Golem
+|-resisted|p2a: Lava Golem
+|-damage|p2a: Lava Golem|246\/324
+|-enditem|p2a: Lava Golem|Air Balloon
+|
+|turn|2
+|
+|switch|p1a: Excadrill|Excadrill, F|361\/361
+|-ability|p1a: Excadrill|Mold Breaker
+|-item|p1a: Excadrill|Air Balloon
+|move|p2a: Lava Golem|Stealth Rock|p1a: Excadrill
+|-sidestart|p1: peere|move: Stealth Rock
+|
+|turn|3
+|
+|move|p1a: Excadrill|Iron Head|p2a: Lava Golem
+|-resisted|p2a: Lava Golem
+|-damage|p2a: Lava Golem|205\/324
+|cant|p2a: Lava Golem|flinch
+|
+|turn|4
+|
+|switch|p2a: Land Lord|Landorus, M|320\/320
+|move|p1a: Excadrill|Iron Head|p2a: Land Lord
+|-damage|p2a: Land Lord|137\/320
+|
+|turn|5
+|
+|move|p2a: Land Lord|Focus Blast|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-damage|p1a: Excadrill|0 fnt
+|-enditem|p1a: Excadrill|Air Balloon
+|faint|p1a: Excadrill
+|
+|
+|switch|p1a: Celebi|Celebi|341\/341
+|-damage|p1a: Celebi|299\/341|[from] Stealth Rock
+|turn|6
+|
+|switch|p2a: Sky Piercer|Excadrill, M, shiny|362\/362
+|-ability|p2a: Sky Piercer|Mold Breaker
+|move|p1a: Celebi|U-turn|p2a: Sky Piercer
+|-resisted|p2a: Sky Piercer
+|-damage|p2a: Sky Piercer|322\/362
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|303\/303
+|-damage|p1a: Rotom-Wash|266\/303|[from] Stealth Rock
+|
+|-heal|p1a: Rotom-Wash|284\/303|[from] item: Leftovers
+|turn|7
+|
+|move|p2a: Sky Piercer|Earthquake|p1a: Rotom-Wash
+|-supereffective|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|
+|
+|switch|p1a: Celebi|Celebi|299\/341
+|-damage|p1a: Celebi|257\/341|[from] Stealth Rock
+|turn|8
+|
+|switch|p2a: Land Lord|Landorus, M|137\/320
+|move|p1a: Celebi|Leaf Storm|p2a: Land Lord
+|-damage|p2a: Land Lord|0 fnt
+|-unboost|p1a: Celebi|spa|2
+|faint|p2a: Land Lord
+|
+|
+|switch|p2a: Lava Golem|Heatran, M, shiny|205\/324
+|turn|9
+|
+|switch|p1a: Chansey|Chansey, F|701\/701
+|-damage|p1a: Chansey|614\/701|[from] Stealth Rock
+|move|p2a: Lava Golem|Fire Blast|p1a: Chansey
+|-damage|p1a: Chansey|496\/701
+|
+|turn|10
+|
+|move|p2a: Lava Golem|Taunt|p1a: Chansey
+|-start|p1a: Chansey|move: Taunt
+|cant|p1a: Chansey|move: Taunt|Wish
+|
+|turn|11
+|
+|switch|p1a: Charizard|Charizard-Mega-X, M|359\/359
+|-damage|p1a: Charizard|270\/359|[from] Stealth Rock
+|move|p2a: Lava Golem|Toxic|p1a: Charizard
+|-status|p1a: Charizard|tox
+|
+|-damage|p1a: Charizard|248\/359 tox|[from] psn
+|turn|12
+|
+|move|p2a: Lava Golem|Fire Blast|p1a: Charizard
+|-resisted|p1a: Charizard
+|-damage|p1a: Charizard|191\/359 tox
+|move|p1a: Charizard|Will-O-Wisp|p2a: Lava Golem
+|-start|p2a: Lava Golem|ability: Flash Fire
+|
+|-damage|p1a: Charizard|147\/359 tox|[from] psn
+|turn|13
+|
+|move|p2a: Lava Golem|Taunt|p1a: Charizard
+|-start|p1a: Charizard|move: Taunt
+|cant|p1a: Charizard|move: Taunt|Roost
+|
+|-damage|p1a: Charizard|81\/359 tox|[from] psn
+|turn|14
+|-message|peere forfeited.
+|
+|win|testnaaja
+|raw|Ladder updating...
+|leave|peere
+|player|p1
+|raw|Ladder (probably) updated, but score could not be retrieved (timeout).
+|raw|Ladder (probably) updated, but score could not be retrieved (Error: socket hang up).

@@ -1,0 +1,419 @@
+|join|sami123
+|join|Aim for the top
+|player|p1|sami123|102
+|player|p2|Aim for the top|2
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Bisharp, M
+|poke|p1|Breloom, M
+|poke|p1|Charizard, F
+|poke|p1|Garchomp, M
+|poke|p1|Azumarill, M
+|poke|p1|Latias, F
+|poke|p2|Mew
+|poke|p2|Charizard, M
+|poke|p2|Ferrothorn, F
+|poke|p2|Latios, M
+|poke|p2|Gliscor, M
+|poke|p2|Clefable, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Garchomp|Garchomp, M|357\/357
+|switch|p2a: Mew|Mew|404\/404
+|turn|1
+|
+|switch|p1a: Charizard|Charizard, F|307\/307
+|move|p2a: Mew|Will-O-Wisp|p1a: Charizard
+|-fail|p1a: Charizard
+|
+|turn|2
+|
+|detailschange|p1a: Charizard|Charizard-Mega-X, F
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p1a: Charizard|Dragon Dance|p1a: Charizard
+|-boost|p1a: Charizard|atk|1
+|-boost|p1a: Charizard|spe|1
+|move|p2a: Mew|Soft-Boiled|p2a: Mew
+|-fail|p2a: Mew
+|
+|turn|3
+|
+|switch|p2a: Clefable|Clefable, M|392\/392
+|move|p1a: Charizard|Dragon Dance|p1a: Charizard
+|-boost|p1a: Charizard|atk|1
+|-boost|p1a: Charizard|spe|1
+|
+|turn|4
+|
+|move|p1a: Charizard|Flare Blitz|p2a: Clefable
+|-damage|p2a: Clefable|17\/392
+|-damage|p1a: Charizard|183\/307|[from] recoil|[of] p2a: Clefable
+|move|p2a: Clefable|Thunder Wave|p1a: Charizard
+|-status|p1a: Charizard|par
+|
+|-heal|p2a: Clefable|41\/392|[from] item: Leftovers
+|turn|5
+|
+|move|p2a: Clefable|Moonblast|p1a: Charizard
+|-damage|p1a: Charizard|60\/307 par
+|move|p1a: Charizard|Flare Blitz|p2a: Clefable
+|-damage|p2a: Clefable|0 fnt
+|-damage|p1a: Charizard|46\/307 par|[from] recoil|[of] p2a: Clefable
+|faint|p2a: Clefable
+|
+|
+|switch|p2a: Charizard|Charizard, M|359\/359
+|turn|6
+|
+|detailschange|p2a: Charizard|Charizard-Mega-X, M
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p2a: Charizard|Dragon Claw|p1a: Charizard
+|-supereffective|p1a: Charizard
+|-damage|p1a: Charizard|0 fnt
+|faint|p1a: Charizard
+|
+|
+|switch|p1a: Garchomp|Garchomp, M|357\/357
+|turn|7
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|352\/352
+|move|p1a: Garchomp|Swords Dance|p1a: Garchomp
+|-boost|p1a: Garchomp|atk|2
+|
+|turn|8
+|
+|move|p1a: Garchomp|Earthquake|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|99\/352
+|move|p2a: Ferrothorn|Leech Seed|p1a: Garchomp
+|-start|p1a: Garchomp|move: Leech Seed
+|
+|-heal|p2a: Ferrothorn|121\/352|[from] item: Leftovers
+|-damage|p1a: Garchomp|313\/357|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|165\/352|[silent]
+|turn|9
+|
+|move|p2a: Ferrothorn|Protect|p2a: Ferrothorn
+|-singleturn|p2a: Ferrothorn|Protect
+|move|p1a: Garchomp|Swords Dance|p1a: Garchomp
+|-boost|p1a: Garchomp|atk|2
+|
+|-heal|p2a: Ferrothorn|187\/352|[from] item: Leftovers
+|-damage|p1a: Garchomp|269\/357|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|231\/352|[silent]
+|turn|10
+|
+|switch|p2a: Latios|Latios, M|301\/301
+|move|p1a: Garchomp|Outrage|p2a: Latios
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|faint|p2a: Latios
+|
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|231\/352
+|turn|11
+|
+|move|p2a: Ferrothorn|Protect|p2a: Ferrothorn
+|-singleturn|p2a: Ferrothorn|Protect
+|move|p1a: Garchomp|Outrage|p2a: Ferrothorn
+|-activate|p2a: Ferrothorn|Protect
+|
+|-heal|p2a: Ferrothorn|253\/352|[from] item: Leftovers
+|-damage|p1a: Garchomp|225\/357|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|297\/352|[silent]
+|turn|12
+|
+|move|p1a: Garchomp|Outrage|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|78\/352
+|-damage|p1a: Garchomp|181\/357|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|move|p2a: Ferrothorn|Stealth Rock|p1a: Garchomp
+|-sidestart|p1: sami123|move: Stealth Rock
+|
+|-heal|p2a: Ferrothorn|100\/352|[from] item: Leftovers
+|-damage|p1a: Garchomp|137\/357|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|144\/352|[silent]
+|turn|13
+|
+|move|p2a: Ferrothorn|Protect|p2a: Ferrothorn
+|-singleturn|p2a: Ferrothorn|Protect
+|move|p1a: Garchomp|Outrage|p2a: Ferrothorn
+|-activate|p2a: Ferrothorn|Protect
+|
+|-end|p1a: Garchomp|rampage
+|-start|p1a: Garchomp|confusion
+|-heal|p2a: Ferrothorn|166\/352|[from] item: Leftovers
+|-damage|p1a: Garchomp|93\/357|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|210\/352|[silent]
+|turn|14
+|
+|-activate|p1a: Garchomp|confusion
+|-damage|p1a: Garchomp|0 fnt|[from] confusion
+|faint|p1a: Garchomp
+|move|p2a: Ferrothorn|Gyro Ball|p1: Garchomp|[notarget]
+|-notarget
+|
+|-heal|p2a: Ferrothorn|232\/352|[from] item: Leftovers
+|
+|switch|p1a: Breloom|Breloom, M|261\/261
+|-damage|p1a: Breloom|245\/261|[from] Stealth Rock
+|turn|15
+|
+|switch|p2a: Gliscor|Gliscor, M|352\/352
+|move|p1a: Breloom|Swords Dance|p1a: Breloom
+|-boost|p1a: Breloom|atk|2
+|
+|-status|p2a: Gliscor|tox|[from] item: Toxic Orb
+|turn|16
+|
+|move|p1a: Breloom|Bullet Seed|p2a: Gliscor
+|-damage|p2a: Gliscor|244\/352 tox
+|-damage|p2a: Gliscor|132\/352 tox
+|-hitcount|p2a: Gliscor|2
+|move|p2a: Gliscor|Toxic|p1a: Breloom
+|-status|p1a: Breloom|tox
+|
+|-damage|p1a: Breloom|229\/261 tox|[from] psn
+|-heal|p2a: Gliscor|176\/352 tox|[from] ability: Poison Heal
+|turn|17
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Breloom|Swords Dance|p1a: Breloom
+|-boost|p1a: Breloom|atk|2
+|
+|-damage|p1a: Breloom|197\/261 tox|[from] psn
+|-heal|p2a: Gliscor|220\/352 tox|[from] ability: Poison Heal
+|turn|18
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|232\/352
+|move|p1a: Breloom|Mach Punch|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|-damage|p1a: Breloom|165\/261 tox|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|faint|p2a: Ferrothorn
+|
+|-damage|p1a: Breloom|117\/261 tox|[from] psn
+|
+|switch|p2a: Gliscor|Gliscor, M|220\/352 tox
+|turn|19
+|
+|move|p1a: Breloom|Bullet Seed|p2a: Gliscor
+|-damage|p2a: Gliscor|45\/352 tox
+|-damage|p2a: Gliscor|0 fnt
+|-hitcount|p2a: Gliscor|2
+|faint|p2a: Gliscor
+|
+|-damage|p1a: Breloom|53\/261 tox|[from] psn
+|
+|switch|p2a: Charizard|Charizard-Mega-X, M|359\/359
+|turn|20
+|
+|move|p1a: Breloom|Mach Punch|p2a: Charizard
+|-damage|p2a: Charizard|41\/359
+|move|p2a: Charizard|Roost|p2a: Charizard
+|-heal|p2a: Charizard|221\/359
+|
+|-damage|p1a: Breloom|0 fnt|[from] psn
+|faint|p1a: Breloom
+|
+|switch|p1a: Latias|Latias, F|301\/301
+|-damage|p1a: Latias|264\/301|[from] Stealth Rock
+|turn|21
+|
+|switch|p2a: Mew|Mew|404\/404
+|move|p1a: Latias|Draco Meteor|p2a: Mew
+|-damage|p2a: Mew|204\/404
+|-unboost|p1a: Latias|spa|2
+|-damage|p1a: Latias|234\/301|[from] item: Life Orb
+|
+|-heal|p2a: Mew|229\/404|[from] item: Leftovers
+|turn|22
+|
+|move|p1a: Latias|Defog|p2a: Mew
+|-unboost|p2a: Mew|evasion|1
+|-sideend|p1: sami123|Stealth Rock|[from] move: Defog|[of] p1a: Latias
+|move|p2a: Mew|Will-O-Wisp|p1a: Latias|[miss]
+|-miss|p2a: Mew|p1a: Latias
+|
+|-heal|p2a: Mew|254\/404|[from] item: Leftovers
+|turn|23
+|
+|move|p1a: Latias|Draco Meteor|p2a: Mew
+|-crit|p2a: Mew
+|-damage|p2a: Mew|0 fnt
+|-unboost|p1a: Latias|spa|2
+|-damage|p1a: Latias|204\/301|[from] item: Life Orb
+|faint|p2a: Mew
+|
+|c|âAim for the top|k
+|
+|switch|p2a: Charizard|Charizard-Mega-X, M|221\/359
+|turn|24
+|
+|move|p1a: Latias|Draco Meteor|p2a: Charizard
+|-supereffective|p2a: Charizard
+|-damage|p2a: Charizard|3\/359
+|-unboost|p1a: Latias|spa|2
+|-damage|p1a: Latias|174\/301|[from] item: Life Orb
+|move|p2a: Charizard|Dragon Dance|p2a: Charizard
+|-boost|p2a: Charizard|atk|1
+|-boost|p2a: Charizard|spe|1
+|
+|turn|25
+|
+|move|p2a: Charizard|Roost|p2a: Charizard
+|-heal|p2a: Charizard|183\/359
+|move|p1a: Latias|Draco Meteor|p2a: Charizard|[miss]
+|-miss|p1a: Latias|p2a: Charizard
+|
+|turn|26
+|
+|move|p2a: Charizard|Dragon Dance|p2a: Charizard
+|-boost|p2a: Charizard|atk|1
+|-boost|p2a: Charizard|spe|1
+|move|p1a: Latias|Draco Meteor|p2a: Charizard
+|-supereffective|p2a: Charizard
+|-damage|p2a: Charizard|32\/359
+|-damage|p1a: Latias|144\/301|[from] item: Life Orb
+|
+|turn|27
+|
+|move|p2a: Charizard|Roost|p2a: Charizard
+|-heal|p2a: Charizard|212\/359
+|move|p1a: Latias|Draco Meteor|p2a: Charizard
+|-supereffective|p2a: Charizard
+|-damage|p2a: Charizard|64\/359
+|-damage|p1a: Latias|114\/301|[from] item: Life Orb
+|
+|turn|28
+|
+|move|p2a: Charizard|Roost|p2a: Charizard
+|-heal|p2a: Charizard|244\/359
+|move|p1a: Latias|Draco Meteor|p2a: Charizard
+|-supereffective|p2a: Charizard
+|-damage|p2a: Charizard|101\/359
+|-damage|p1a: Latias|84\/301|[from] item: Life Orb
+|
+|turn|29
+|
+|move|p2a: Charizard|Roost|p2a: Charizard
+|-heal|p2a: Charizard|281\/359
+|move|p1a: Latias|Draco Meteor|p2a: Charizard
+|-supereffective|p2a: Charizard
+|-damage|p2a: Charizard|117\/359
+|-damage|p1a: Latias|54\/301|[from] item: Life Orb
+|
+|turn|30
+|
+|move|p2a: Charizard|Roost|p2a: Charizard
+|-heal|p2a: Charizard|297\/359
+|move|p1a: Latias|Hidden Power|p2a: Charizard
+|-supereffective|p2a: Charizard
+|-damage|p2a: Charizard|250\/359
+|-damage|p1a: Latias|24\/301|[from] item: Life Orb
+|
+|turn|31
+|
+|move|p2a: Charizard|Dragon Dance|p2a: Charizard
+|-boost|p2a: Charizard|atk|1
+|-boost|p2a: Charizard|spe|1
+|move|p1a: Latias|Psyshock|p2a: Charizard
+|-damage|p2a: Charizard|211\/359
+|-damage|p1a: Latias|0 fnt|[from] item: Life Orb
+|faint|p1a: Latias
+|
+|c|âAim for the top|it doesnt matter
+|c|âAim for the top|bisharp is sashed
+|
+|switch|p1a: Bisharp|Bisharp, M|271\/271
+|turn|32
+|
+|move|p2a: Charizard|Dragon Claw|p1a: Bisharp
+|-resisted|p1a: Bisharp
+|-damage|p1a: Bisharp|12\/271
+|move|p1a: Bisharp|Knock Off|p2a: Charizard
+|-damage|p2a: Charizard|96\/359
+|
+|turn|33
+|
+|move|p2a: Charizard|Roost|p2a: Charizard
+|-heal|p2a: Charizard|276\/359
+|move|p1a: Bisharp|Swords Dance|p1a: Bisharp
+|-boost|p1a: Bisharp|atk|2
+|
+|turn|34
+|
+|move|p1a: Bisharp|Sucker Punch|p2a: Charizard
+|-fail|p2a: Charizard
+|move|p2a: Charizard|Roost|p2a: Charizard
+|-heal|p2a: Charizard|359\/359
+|
+|turn|35
+|
+|move|p1a: Bisharp|Sucker Punch|p2a: Charizard
+|-fail|p2a: Charizard
+|move|p2a: Charizard|Dragon Dance|p2a: Charizard
+|-boost|p2a: Charizard|atk|1
+|-boost|p2a: Charizard|spe|1
+|
+|turn|36
+|
+|move|p1a: Bisharp|Sucker Punch|p2a: Charizard
+|-damage|p2a: Charizard|101\/359
+|move|p2a: Charizard|Dragon Claw|p1a: Bisharp
+|-resisted|p1a: Bisharp
+|-damage|p1a: Bisharp|0 fnt
+|faint|p1a: Bisharp
+|
+|
+|switch|p1a: Azumarill|Azumarill, M|342\/342
+|turn|37
+|
+|move|p1a: Azumarill|Aqua Jet|p2a: Charizard
+|-damage|p2a: Charizard|26\/359
+|move|p2a: Charizard|Roost|p2a: Charizard
+|-heal|p2a: Charizard|206\/359
+|
+|turn|38
+|
+|move|p2a: Charizard|Roost|p2a: Charizard
+|-heal|p2a: Charizard|359\/359
+|move|p1a: Azumarill|Belly Drum|p1a: Azumarill
+|-damage|p1a: Azumarill|171\/342
+|-setboost|p1a: Azumarill|atk|6|[from] move: Belly Drum
+|-enditem|p1a: Azumarill|Sitrus Berry|[eat]
+|-heal|p1a: Azumarill|256\/342|[from] item: Sitrus Berry
+|
+|turn|39
+|
+|move|p1a: Azumarill|Aqua Jet|p2a: Charizard
+|-damage|p2a: Charizard|50\/359
+|move|p2a: Charizard|Flare Blitz|p1a: Azumarill
+|-resisted|p1a: Azumarill
+|-damage|p1a: Azumarill|0 fnt
+|-damage|p2a: Charizard|0 fnt|[from] recoil|[of] p1a: Azumarill
+|faint|p1a: Azumarill
+|faint|p2a: Charizard
+|
+|win|Aim for the top
+|raw|Ladder updating...
+|raw|sami123's rating: 1719 &rarr; <strong>1702<\/strong><br \/>(-17 for losing)
+|raw|Aim for the top's rating: 1774 &rarr; <strong>1791<\/strong><br \/>(+17 for winning)
+|c|âAim for the top|HAHA
+|c|âAim for the top|fuck you
+|c|âsami123|gg 
+|leave|sami123
+|player|p1

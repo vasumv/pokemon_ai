@@ -1,0 +1,179 @@
+|join|ninimia
+|join|dtw
+|player|p1|ninimia|102
+|player|p2|dtw|1
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Zoroark, F
+|poke|p1|Hawlucha, M
+|poke|p1|Talonflame, F
+|poke|p1|Pinsir, F
+|poke|p1|Staraptor, F
+|poke|p1|Deoxys-Defense
+|poke|p2|Tyranitar, F
+|poke|p2|Breloom, F
+|poke|p2|Crobat, F
+|poke|p2|Ferrothorn, F
+|poke|p2|Rotom-Wash
+|poke|p2|Clefable, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Deoxys-Defense|Deoxys-Defense|261\/261
+|switch|p2a: Clefable|Clefable, M|394\/394
+|turn|1
+|
+|switch|p1a: Talonflame|Talonflame, F|297\/297
+|move|p2a: Clefable|Moonblast|p1a: Talonflame
+|-resisted|p1a: Talonflame
+|-damage|p1a: Talonflame|170\/297
+|-unboost|p1a: Talonflame|spa|1
+|
+|turn|2
+|
+|move|p1a: Talonflame|U-turn|p2a: Clefable
+|-resisted|p2a: Clefable
+|-damage|p2a: Clefable|329\/394
+|
+|switch|p1a: Staraptor|Staraptor, F|311\/311
+|move|p2a: Clefable|Moonblast|p1a: Staraptor
+|-damage|p1a: Staraptor|22\/311
+|
+|turn|3
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|move|p1a: Staraptor|Brave Bird|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|164\/304
+|-damage|p1a: Staraptor|0 fnt|[from] recoil|[of] p2a: Rotom-Wash
+|faint|p1a: Staraptor
+|
+|
+|switch|p1a: Deoxys-Defense|Deoxys-Defense|304\/304
+|-ability|p1a: Deoxys-Defense|Pressure
+|turn|4
+|
+|move|p2a: Rotom-Wash|Trick|p1a: Deoxys-Defense
+|-activate|p2a: Rotom-Wash|move: Trick|[of] p1a: Deoxys-Defense
+|-item|p1a: Deoxys-Defense|Choice Scarf|[from] move: Trick
+|-item|p2a: Rotom-Wash|Red Card|[from] move: Trick
+|move|p1a: Deoxys-Defense|Stealth Rock|p2a: Rotom-Wash
+|-sidestart|p2: dtw|move: Stealth Rock
+|
+|turn|5
+|
+|switch|p1a: Talonflame|Talonflame, F|261\/261
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Talonflame
+|replace|p1a: Zoroark|Zoroark, F|261\/261
+|-damage|p1a: Zoroark|107\/261
+|
+|switch|p2a: Breloom|Breloom, F|262\/262
+|-damage|p2a: Breloom|246\/262|[from] Stealth Rock
+|
+|turn|6
+|
+|move|p2a: Breloom|Mach Punch|p1a: Zoroark
+|-supereffective|p1a: Zoroark
+|-damage|p1a: Zoroark|0 fnt
+|-damage|p2a: Breloom|220\/262|[from] item: Life Orb
+|faint|p1a: Zoroark
+|
+|
+|switch|p1a: Talonflame|Talonflame, F|170\/297
+|turn|7
+|
+|switch|p2a: Crobat|Crobat, F|374\/374
+|-damage|p2a: Crobat|281\/374|[from] Stealth Rock
+|move|p1a: Talonflame|Brave Bird|p2a: Crobat
+|-damage|p2a: Crobat|52\/374
+|-damage|p1a: Talonflame|94\/297|[from] recoil|[of] p2a: Crobat
+|
+|-heal|p2a: Crobat|75\/374|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Crobat
+|-damage|p2a: Crobat|0 fnt
+|-damage|p1a: Talonflame|69\/297|[from] recoil|[of] p2a: Crobat
+|faint|p2a: Crobat
+|
+|
+|switch|p2a: Tyranitar|Tyranitar, F|342\/342
+|-damage|p2a: Tyranitar|300\/342|[from] Stealth Rock
+|-weather|Sandstorm
+|turn|9
+|
+|-formechange|p2a: Tyranitar|Tyranitar-Mega
+|message|Tyranitar has Mega Evolved into Mega Tyranitar!
+|move|p1a: Talonflame|Brave Bird|p2a: Tyranitar
+|-resisted|p2a: Tyranitar
+|-damage|p2a: Tyranitar|210\/342
+|-damage|p1a: Talonflame|39\/297|[from] recoil|[of] p2a: Tyranitar
+|move|p2a: Tyranitar|Dragon Dance|p2a: Tyranitar
+|-boost|p2a: Tyranitar|atk|1
+|-boost|p2a: Tyranitar|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Talonflame|21\/297|[from] sandstorm
+|turn|10
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Tyranitar
+|-resisted|p2a: Tyranitar
+|-damage|p2a: Tyranitar|114\/342
+|-damage|p1a: Talonflame|0 fnt|[from] recoil|[of] p2a: Tyranitar
+|faint|p1a: Talonflame
+|move|p2a: Tyranitar|Dragon Dance|p2a: Tyranitar
+|-boost|p2a: Tyranitar|atk|1
+|-boost|p2a: Tyranitar|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Deoxys-Defense|Deoxys-Defense|304\/304
+|-ability|p1a: Deoxys-Defense|Pressure
+|turn|11
+|
+|move|p2a: Tyranitar|Crunch|p1a: Deoxys-Defense
+|-supereffective|p1a: Deoxys-Defense
+|-damage|p1a: Deoxys-Defense|0 fnt
+|faint|p1a: Deoxys-Defense
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Pinsir|Pinsir, F|271\/271
+|turn|12
+|
+|-formechange|p1a: Pinsir|Pinsir-Mega
+|message|Pinsir has Mega Evolved into Mega Pinsir!
+|move|p1a: Pinsir|Quick Attack|p2a: Tyranitar
+|-resisted|p2a: Tyranitar
+|-damage|p2a: Tyranitar|75\/342
+|move|p2a: Tyranitar|Stone Edge|p1a: Pinsir
+|-supereffective|p1a: Pinsir
+|-damage|p1a: Pinsir|0 fnt
+|faint|p1a: Pinsir
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Hawlucha|Hawlucha, M|297\/297
+|turn|13
+|
+|move|p2a: Tyranitar|Stone Edge|p1a: Hawlucha
+|-damage|p1a: Hawlucha|0 fnt
+|faint|p1a: Hawlucha
+|
+|win|dtw
+|raw|Ladder updating...
+|raw|ninimia's rating: 1720 &rarr; <strong>1693<\/strong><br \/>(-27 for losing)
+|raw|dtw's rating: 1604 &rarr; <strong>1630<\/strong><br \/>(+26 for winning)
+|chat|dtw|gg
+|leave|ninimia
+|player|p1

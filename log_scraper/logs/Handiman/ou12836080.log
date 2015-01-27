@@ -1,0 +1,250 @@
+|join|Handiman
+|join|reddogs52
+|player|p1|Handiman|1
+|player|p2|reddogs52|1
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Reuniclus, M
+|poke|p1|Heatran, M
+|poke|p1|Breloom, M
+|poke|p1|Skarmory, M
+|poke|p1|Latias, F
+|poke|p1|Landorus-Therian, M
+|poke|p2|Ditto
+|poke|p2|Marowak, F
+|poke|p2|Ninjask, F
+|poke|p2|Smeargle, M
+|poke|p2|Gorebyss, M
+|poke|p2|Electivire, F
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Sky Ripper|Skarmory, M| (48\/48)
+|switch|p2a: Smeargle|Smeargle, M| (48\/48)
+|turn|1
+|callback|decision
+|
+|switch|p1a: Furnace|Heatran, M| (48\/48)
+|-item|p1a: Furnace|Air Balloon
+|move|p2a: Smeargle|Shell Smash|p2a: Smeargle
+|-boost|p2a: Smeargle|atk|2
+|-boost|p2a: Smeargle|spa|2
+|-boost|p2a: Smeargle|spe|2
+|-unboost|p2a: Smeargle|def|1
+|-unboost|p2a: Smeargle|spd|1
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Smeargle|Rain Dance|p2a: Smeargle
+|-weather|RainDance
+|move|p1a: Furnace|Earth Power|p2a: Smeargle
+|-damage|p2a: Smeargle|89 (5\/48)
+|
+|-weather|RainDance|[upkeep]
+|turn|3
+|callback|decision
+|
+|move|p2a: Smeargle|Baton Pass|p2a: Smeargle
+|callback|decision
+|
+|switch|p2a: Baller|Gorebyss, M| (48\/48)
+|move|p1a: Furnace|Earth Power|p2a: Baller
+|-damage|p2a: Baller|81 (9\/48)
+|
+|-weather|RainDance|[upkeep]
+|turn|4
+|callback|decision
+|chat|reddogs52|I have become error
+|
+|move|p2a: Baller|Surf|p1a: Furnace
+|-supereffective|p1a: Furnace
+|-damage|p1a: Furnace|100 (0\/48 fnt)
+|-enditem|p1a: Furnace|Air Balloon
+|-damage|p2a: Baller|10 (4\/48)|[from] item: Life Orb
+|faint|p1a: Furnace
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Marijuana|Breloom, M| (48\/48)
+|turn|5
+|callback|decision
+|
+|move|p1a: Marijuana|Mach Punch|p2a: Baller
+|-damage|p2a: Baller|8 (0\/48 fnt)
+|-damage|p1a: Marijuana|10 (43\/48)|[from] item: Life Orb
+|faint|p2a: Baller
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Electivire|Electivire, F| (48\/48)
+|turn|6
+|callback|decision
+|
+|switch|p1a: Sky Ripper|Skarmory, M| (48\/48)
+|move|p2a: Electivire|Flamethrower|p1a: Sky Ripper
+|-crit|p1a: Sky Ripper
+|-supereffective|p1a: Sky Ripper
+|-damage|p1a: Sky Ripper|91 (4\/48)
+|
+|-weather|none
+|-heal|p1a: Sky Ripper|6 (7\/48)|[from] item: Leftovers
+|turn|7
+|callback|decision
+|chat|reddogs52|....
+|
+|switch|p1a: F-16|Latias, F| (48\/48)
+|move|p2a: Electivire|Ice Punch|p1a: F-16
+|-supereffective|p1a: F-16
+|-damage|p1a: F-16|70 (14\/48)
+|-status|p1a: F-16|frz
+|
+|turn|8
+|callback|decision
+|chat|reddogs52|nice 
+|
+|cant|p1a: F-16|frz
+|move|p2a: Electivire|Ice Punch|p1a: F-16
+|-supereffective|p1a: F-16
+|-damage|p1a: F-16|29 (0\/48 fnt)
+|faint|p1a: F-16
+|
+|callback|decision
+|
+|switch|p1a: Fever|Landorus-Therian, M| (48\/48)
+|-ability|p1a: Fever|Intimidate|[of] p2a: Electivire
+|-unboost|p2a: Electivire|atk|1
+|turn|9
+|callback|decision
+|chat|reddogs52|falcon pawnch!
+|
+|switch|p2a: Ditto|Ditto| (48\/48)
+|-transform|p2a: Ditto|p1a: Fever
+|move|p1a: Fever|Earthquake|p2a: Ditto
+|-immune|p2a: Ditto|[msg]
+|
+|turn|10
+|callback|decision
+|
+|switch|p1a: Sky Ripper|Skarmory, M| (7\/48)
+|move|p2a: Ditto|Stone Edge|p1a: Sky Ripper
+|-damage|p1a: Sky Ripper|14 (0\/48 fnt)
+|faint|p1a: Sky Ripper
+|
+|callback|decision
+|
+|switch|p1a: Marijuana|Breloom, M| (43\/48)
+|turn|11
+|callback|decision
+|
+|move|p2a: Ditto|Stone Edge|p1a: Marijuana
+|-resisted|p1a: Marijuana
+|-damage|p1a: Marijuana|27 (30\/48)
+|move|p1a: Marijuana|Spore|p2a: Ditto
+|-status|p2a: Ditto|slp
+|
+|turn|12
+|callback|decision
+|
+|cant|p2a: Ditto|slp
+|move|p1a: Marijuana|Bullet Seed|p2a: Ditto
+|-damage|p2a: Ditto|37 (30\/48 slp)
+|-damage|p2a: Ditto|31 (15\/48 slp)
+|-damage|p2a: Ditto|31 (0\/48 fnt)
+|-hitcount|p2a: Ditto|3
+|-damage|p1a: Marijuana|10 (25\/48)|[from] item: Life Orb
+|faint|p2a: Ditto
+|
+|callback|decision
+|
+|switch|p2a: Electivire|Electivire, F| (48\/48)
+|turn|13
+|callback|decision
+|
+|switch|p1a: Zaire|Reuniclus, M| (48\/48)
+|move|p2a: Electivire|Ice Punch|p1a: Zaire
+|-damage|p1a: Zaire|25 (36\/48)
+|
+|turn|14
+|callback|decision
+|
+|switch|p2a: Smeargle|Smeargle, M| (5\/48)
+|move|p1a: Zaire|Psychic|p2a: Smeargle
+|-damage|p2a: Smeargle|10 (0\/48 fnt)
+|faint|p2a: Smeargle
+|
+|callback|decision
+|
+|switch|p2a: Ninjask|Ninjask, F| (48\/48)
+|turn|15
+|callback|decision
+|
+|move|p2a: Ninjask|Swords Dance|p2a: Ninjask
+|-boost|p2a: Ninjask|atk|2
+|move|p1a: Zaire|Psychic|p2a: Ninjask
+|-damage|p2a: Ninjask|100 (0\/48 fnt)
+|faint|p2a: Ninjask
+|
+|callback|decision
+|
+|switch|p2a: Electivire|Electivire, F| (48\/48)
+|turn|16
+|callback|decision
+|chat|reddogs52|nice calc
+|
+|move|p2a: Electivire|Wild Charge|p1a: Zaire
+|-damage|p1a: Zaire|47 (13\/48)
+|-damage|p2a: Electivire|16 (40\/48)|[from] recoil|[of] p1a: Zaire
+|move|p1a: Zaire|Psychic|p2a: Electivire
+|-damage|p2a: Electivire|83 (0\/48 fnt)
+|faint|p2a: Electivire
+|
+|callback|decision
+|
+|switch|p2a: Marowak|Marowak, F| (48\/48)
+|turn|17
+|callback|decision
+|
+|move|p2a: Marowak|Double-Edge|p1a: Zaire
+|-damage|p1a: Zaire|27 (0\/48 fnt)
+|faint|p1a: Zaire
+|
+|callback|decision
+|chat|Handiman|gg
+|
+|switch|p1a: Marijuana|Breloom, M| (25\/48)
+|turn|18
+|callback|decision
+|
+|move|p1a: Marijuana|Spore|p2a: Marowak
+|-status|p2a: Marowak|slp
+|cant|p2a: Marowak|slp
+|
+|turn|19
+|callback|decision
+|chat|reddogs52|snap
+|chat|reddogs52|good game
+|
+|move|p1a: Marijuana|Bullet Seed|p2a: Marowak
+|-supereffective|p2a: Marowak
+|-damage|p2a: Marowak|68 (15\/48 slp)
+|-supereffective|p2a: Marowak
+|-damage|p2a: Marowak|31 (0\/48 fnt)
+|-hitcount|p2a: Marowak|2
+|-damage|p1a: Marijuana|10 (20\/48)|[from] item: Life Orb
+|faint|p2a: Marowak
+|
+|win|Handiman
+|raw|Ladder updating...
+|raw|Ladder (probably) updated, but score could not be retrieved (corruption).

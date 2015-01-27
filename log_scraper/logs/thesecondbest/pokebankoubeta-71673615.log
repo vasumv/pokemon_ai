@@ -1,0 +1,537 @@
+|join|thesecondbest
+|join|SleepyJirachi
+|player|p1|thesecondbest|25
+|player|p2|SleepyJirachi|217
+|gametype|singles
+|tier|Pokebank OU (beta)
+|rated
+|clearpoke
+|poke|p1|Mandibuzz, F
+|poke|p1|Florges, F
+|poke|p1|Tentacruel, M
+|poke|p1|Genesect
+|poke|p1|Lucario, M
+|poke|p1|Landorus-Therian, M
+|poke|p2|Smeargle, F
+|poke|p2|Mew
+|poke|p2|Delibird, M
+|poke|p2|Swadloon, M
+|poke|p2|Abomasnow, F, shiny
+|poke|p2|Scolipede, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Genesect|Genesect|283\/283
+|switch|p2a: Smear|Smeargle, F|314\/314
+|-boost|p1a: Genesect|atk|1|[from] ability: Download
+|turn|1
+|callback|decision
+|
+|move|p1a: Genesect|U-turn|p2a: Smear
+|-enditem|p2a: Smear|Focus Sash
+|-damage|p2a: Smear|1\/314
+|callback|decision
+|
+|switch|p1a: Tentacruel|Tentacruel, M|364\/364
+|move|p2a: Smear|Spore|p1a: Tentacruel
+|-status|p1a: Tentacruel|slp
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|283\/283
+|-boost|p1a: Genesect|atk|1|[from] ability: Download
+|move|p2a: Smear|Coil|p2a: Smear
+|-boost|p2a: Smear|atk|1
+|-boost|p2a: Smear|def|1
+|-boost|p2a: Smear|accuracy|1
+|
+|turn|3
+|callback|decision
+|
+|move|p1a: Genesect|U-turn|p2a: Smear
+|-damage|p2a: Smear|0 fnt
+|faint|p2a: Smear
+|callback|decision
+|
+|switch|p1a: Lucario|Lucario, M|281\/281
+|
+|callback|decision
+|
+|switch|p2a: Wurm|Mew|342\/342
+|turn|4
+|callback|decision
+|
+|-formechange|p1a: Lucario|Lucario-Mega
+|message|Lucario has Mega Evolved into Mega Lucario!
+|move|p1a: Lucario|Dark Pulse|p2a: Wurm
+|-supereffective|p2a: Wurm
+|-damage|p2a: Wurm|210\/342
+|move|p2a: Wurm|Stealth Rock|p1a: Lucario
+|-sidestart|p1: thesecondbest|move: Stealth Rock
+|
+|-heal|p2a: Wurm|231\/342|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p1a: Lucario|Dark Pulse|p2a: Wurm
+|-supereffective|p2a: Wurm
+|-damage|p2a: Wurm|79\/342
+|move|p2a: Wurm|Amnesia|p2a: Wurm
+|-boost|p2a: Wurm|spd|2
+|
+|-heal|p2a: Wurm|100\/342|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p1a: Lucario|Extreme Speed|p2a: Wurm
+|-damage|p2a: Wurm|23\/342
+|move|p2a: Wurm|Roost|p2a: Wurm
+|-heal|p2a: Wurm|194\/342
+|
+|-heal|p2a: Wurm|215\/342|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|424\/424
+|-damage|p1a: Mandibuzz|318\/424|[from] Stealth Rock
+|move|p2a: Wurm|Amnesia|p2a: Wurm
+|-boost|p2a: Wurm|spd|2
+|
+|-heal|p2a: Wurm|236\/342|[from] item: Leftovers
+|-heal|p1a: Mandibuzz|344\/424|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p2a: Wurm|Roost|p2a: Wurm
+|-heal|p2a: Wurm|342\/342
+|move|p1a: Mandibuzz|Taunt|p2a: Wurm
+|-start|p2a: Wurm|move: Taunt
+|
+|-heal|p1a: Mandibuzz|370\/424|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|-activate|p2a: Wurm|move: Struggle
+|move|p2a: Wurm|Struggle|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|343\/424
+|-damage|p2a: Wurm|257\/342
+|move|p1a: Mandibuzz|Knock Off|p2a: Wurm
+|-supereffective|p2a: Wurm
+|-damage|p2a: Wurm|149\/342
+|-enditem|p2a: Wurm|Leftovers|[from] move: Knock Off|[of] p1a: Mandibuzz
+|
+|-heal|p1a: Mandibuzz|369\/424|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|-activate|p2a: Wurm|move: Struggle
+|move|p2a: Wurm|Struggle|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|345\/424
+|-damage|p2a: Wurm|64\/342
+|move|p1a: Mandibuzz|Knock Off|p2a: Wurm
+|-supereffective|p2a: Wurm
+|-damage|p2a: Wurm|0 fnt
+|faint|p2a: Wurm
+|
+|-heal|p1a: Mandibuzz|371\/424|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: WhyamIinOU?|Swadloon, M|314\/314
+|turn|11
+|callback|decision
+|
+|move|p1a: Mandibuzz|Taunt|p2a: WhyamIinOU?
+|-start|p2a: WhyamIinOU?|move: Taunt
+|cant|p2a: WhyamIinOU?|move: Taunt|Sticky Web
+|
+|-heal|p1a: Mandibuzz|397\/424|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p2a: Obamasnow|Abomasnow, F, shiny|384\/384
+|-weather|Hail
+|move|p1a: Mandibuzz|Knock Off|p2a: Obamasnow
+|-damage|p2a: Obamasnow|324\/384
+|
+|-weather|Hail|[upkeep]
+|-heal|p1a: Mandibuzz|423\/424|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|-damage|p1a: Florges|315\/360|[from] Stealth Rock
+|-formechange|p2a: Obamasnow|Abomasnow-Mega
+|message|Abomasnow has Mega Evolved into Mega Abomasnow!
+|move|p2a: Obamasnow|Blizzard|p1a: Florges
+|-damage|p1a: Florges|207\/360
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Florges|185\/360|[from] hail
+|-heal|p1a: Florges|207\/360|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: Florges|Wish|p1a: Florges
+|move|p2a: Obamasnow|Blizzard|p1a: Florges
+|-damage|p1a: Florges|89\/360
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Florges|67\/360|[from] hail
+|-heal|p1a: Florges|89\/360|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Obamasnow|Blizzard|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Florges|67\/360|[from] hail
+|-heal|p1a: Florges|247\/360|[from] move: Wish|[wisher] Florges
+|-heal|p1a: Florges|269\/360|[from] item: Leftovers
+|turn|16
+|callback|decision
+|chat|thesecondbest|such an original nickname
+|
+|move|p1a: Florges|Wish|p1a: Florges
+|move|p2a: Obamasnow|Blizzard|p1a: Florges
+|-damage|p1a: Florges|161\/360
+|
+|-weather|none
+|-heal|p1a: Florges|183\/360|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|switch|p2a: GOTTAGOFAST|Scolipede, M|261\/261
+|move|p1a: Florges|Moonblast|p2a: GOTTAGOFAST
+|-resisted|p2a: GOTTAGOFAST
+|-damage|p2a: GOTTAGOFAST|200\/261
+|
+|-heal|p1a: Florges|360\/360|[from] move: Wish|[wisher] Florges
+|-heal|p2a: GOTTAGOFAST|216\/261|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|423\/424
+|-damage|p1a: Mandibuzz|317\/424|[from] Stealth Rock
+|move|p2a: GOTTAGOFAST|Iron Defense|p2a: GOTTAGOFAST
+|-boost|p2a: GOTTAGOFAST|def|2
+|
+|-heal|p2a: GOTTAGOFAST|232\/261|[from] item: Leftovers
+|-heal|p1a: Mandibuzz|343\/424|[from] item: Leftovers
+|-boost|p2a: GOTTAGOFAST|spe|1|[from] ability: Speed Boost
+|turn|19
+|callback|decision
+|
+|move|p2a: GOTTAGOFAST|Protect|p2a: GOTTAGOFAST
+|-singleturn|p2a: GOTTAGOFAST|Protect
+|move|p1a: Mandibuzz|Taunt|p2a: GOTTAGOFAST
+|-activate|p2a: GOTTAGOFAST|Protect
+|
+|-heal|p2a: GOTTAGOFAST|248\/261|[from] item: Leftovers
+|-heal|p1a: Mandibuzz|369\/424|[from] item: Leftovers
+|-boost|p2a: GOTTAGOFAST|spe|1|[from] ability: Speed Boost
+|turn|20
+|callback|decision
+|
+|move|p2a: GOTTAGOFAST|Baton Pass|p2a: GOTTAGOFAST
+|callback|decision
+|
+|switch|p2a: Obamasnow|Abomasnow, F, shiny|324\/384
+|-formechange|p2a: Obamasnow|Abomasnow-Mega
+|-weather|Hail
+|move|p1a: Mandibuzz|Taunt|p2a: Obamasnow
+|-start|p2a: Obamasnow|move: Taunt
+|
+|-weather|Hail|[upkeep]
+|-heal|p1a: Mandibuzz|395\/424|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|-damage|p1a: Florges|315\/360|[from] Stealth Rock
+|move|p2a: Obamasnow|Blizzard|p1a: Florges
+|-damage|p1a: Florges|206\/360
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Florges|184\/360|[from] hail
+|-heal|p1a: Florges|206\/360|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p1a: Florges|Wish|p1a: Florges
+|move|p2a: Obamasnow|Blizzard|p1a: Florges
+|-damage|p1a: Florges|100\/360
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Florges|78\/360|[from] hail
+|-heal|p1a: Florges|100\/360|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|switch|p2a: WhyamIinOU?|Swadloon, M|314\/314
+|move|p1a: Florges|Protect|p1a: Florges
+|-fail|p1a: Florges
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Florges|78\/360|[from] hail
+|-heal|p1a: Florges|258\/360|[from] move: Wish|[wisher] Florges
+|-heal|p1a: Florges|280\/360|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p1a: Florges|Moonblast|p2a: WhyamIinOU?
+|-damage|p2a: WhyamIinOU?|209\/314
+|move|p2a: WhyamIinOU?|Sticky Web|p1a: Florges
+|-sidestart|p1: thesecondbest|move: Sticky Web
+|
+|-weather|none
+|-heal|p1a: Florges|302\/360|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p1a: Florges|Moonblast|p2a: WhyamIinOU?
+|-damage|p2a: WhyamIinOU?|106\/314
+|move|p2a: WhyamIinOU?|Calm Mind|p2a: WhyamIinOU?
+|-boost|p2a: WhyamIinOU?|spa|1
+|-boost|p2a: WhyamIinOU?|spd|1
+|
+|-heal|p1a: Florges|324\/360|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|move|p2a: WhyamIinOU?|Protect|p2a: WhyamIinOU?
+|-singleturn|p2a: WhyamIinOU?|Protect
+|move|p1a: Florges|Moonblast|p2a: WhyamIinOU?
+|-activate|p2a: WhyamIinOU?|Protect
+|
+|-heal|p1a: Florges|346\/360|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|move|p1a: Florges|Moonblast|p2a: WhyamIinOU?
+|-damage|p2a: WhyamIinOU?|36\/314
+|-unboost|p2a: WhyamIinOU?|spa|1
+|move|p2a: WhyamIinOU?|Baton Pass|p2a: WhyamIinOU?
+|callback|decision
+|
+|switch|p2a: GOTTAGOFAST|Scolipede, M|248\/261
+|
+|-heal|p2a: GOTTAGOFAST|261\/261|[from] item: Leftovers
+|-heal|p1a: Florges|360\/360|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|283\/283
+|-activate|p1a: Genesect|move: Sticky Web
+|-unboost|p1a: Genesect|spe|1
+|-damage|p1a: Genesect|248\/283|[from] Stealth Rock
+|-boost|p1a: Genesect|atk|1|[from] ability: Download
+|move|p2a: GOTTAGOFAST|Swords Dance|p2a: GOTTAGOFAST
+|-boost|p2a: GOTTAGOFAST|atk|2
+|
+|-boost|p2a: GOTTAGOFAST|spe|1|[from] ability: Speed Boost
+|turn|29
+|callback|decision
+|
+|move|p2a: GOTTAGOFAST|Protect|p2a: GOTTAGOFAST
+|-singleturn|p2a: GOTTAGOFAST|Protect
+|move|p1a: Genesect|Flamethrower|p2a: GOTTAGOFAST
+|-activate|p2a: GOTTAGOFAST|Protect
+|
+|-boost|p2a: GOTTAGOFAST|spe|1|[from] ability: Speed Boost
+|turn|30
+|callback|decision
+|
+|move|p2a: GOTTAGOFAST|Iron Defense|p2a: GOTTAGOFAST
+|-boost|p2a: GOTTAGOFAST|def|2
+|move|p1a: Genesect|Flamethrower|p2a: GOTTAGOFAST
+|-supereffective|p2a: GOTTAGOFAST
+|-damage|p2a: GOTTAGOFAST|123\/261
+|
+|-heal|p2a: GOTTAGOFAST|139\/261|[from] item: Leftovers
+|-boost|p2a: GOTTAGOFAST|spe|1|[from] ability: Speed Boost
+|turn|31
+|callback|decision
+|
+|move|p2a: GOTTAGOFAST|Protect|p2a: GOTTAGOFAST
+|-singleturn|p2a: GOTTAGOFAST|Protect
+|move|p1a: Genesect|Flamethrower|p2a: GOTTAGOFAST
+|-activate|p2a: GOTTAGOFAST|Protect
+|
+|-heal|p2a: GOTTAGOFAST|155\/261|[from] item: Leftovers
+|-boost|p2a: GOTTAGOFAST|spe|1|[from] ability: Speed Boost
+|turn|32
+|callback|decision
+|
+|move|p2a: GOTTAGOFAST|Swords Dance|p2a: GOTTAGOFAST
+|-boost|p2a: GOTTAGOFAST|atk|2
+|move|p1a: Genesect|Flamethrower|p2a: GOTTAGOFAST
+|-supereffective|p2a: GOTTAGOFAST
+|-damage|p2a: GOTTAGOFAST|31\/261
+|
+|-heal|p2a: GOTTAGOFAST|47\/261|[from] item: Leftovers
+|-boost|p2a: GOTTAGOFAST|spe|1|[from] ability: Speed Boost
+|turn|33
+|callback|decision
+|
+|move|p2a: GOTTAGOFAST|Protect|p2a: GOTTAGOFAST
+|-singleturn|p2a: GOTTAGOFAST|Protect
+|move|p1a: Genesect|Flamethrower|p2a: GOTTAGOFAST
+|-activate|p2a: GOTTAGOFAST|Protect
+|
+|-heal|p2a: GOTTAGOFAST|63\/261|[from] item: Leftovers
+|-boost|p2a: GOTTAGOFAST|spe|1|[from] ability: Speed Boost
+|turn|34
+|callback|decision
+|
+|move|p2a: GOTTAGOFAST|Baton Pass|p2a: GOTTAGOFAST
+|callback|decision
+|
+|switch|p2a: Santa|Delibird, M|232\/232
+|move|p1a: Genesect|Flamethrower|p2a: Santa
+|-supereffective|p2a: Santa
+|-enditem|p2a: Santa|Focus Sash
+|-damage|p2a: Santa|1\/232
+|
+|turn|35
+|callback|decision
+|chat|thesecondbest|OH NO
+|chat|thesecondbest|I LOSE
+|chat|thesecondbest|GG
+|chat|thesecondbest|IM SO SCARED
+|chat|thesecondbest|Shit man
+|chat|thesecondbest|hustle +3
+|
+|move|p2a: Santa|Aerial Ace|p1a: Genesect
+|-damage|p1a: Genesect|0 fnt
+|faint|p1a: Genesect
+|
+|callback|decision
+|chat|thesecondbest|AAAAHHHHHHHHHHHHHHHHHHHHh
+|
+|switch|p1a: Lucario|Lucario, M|281\/281
+|-formechange|p1a: Lucario|Lucario-Mega
+|-activate|p1a: Lucario|move: Sticky Web
+|-unboost|p1a: Lucario|spe|1
+|-damage|p1a: Lucario|273\/281|[from] Stealth Rock
+|turn|36
+|callback|decision
+|chat|thesecondbest|bulky please
+|
+|move|p1a: Lucario|Vacuum Wave|p2a: Santa
+|-damage|p2a: Santa|0 fnt
+|faint|p2a: Santa
+|
+|callback|decision
+|chat|SleepyJirachi|Forgot about vacuum wave
+|chat|SleepyJirachi|LOL
+|
+|switch|p2a: GOTTAGOFAST|Scolipede, M|63\/261
+|turn|37
+|callback|decision
+|
+|move|p2a: GOTTAGOFAST|Protect|p2a: GOTTAGOFAST
+|-singleturn|p2a: GOTTAGOFAST|Protect
+|move|p1a: Lucario|Extreme Speed|p2a: GOTTAGOFAST
+|-activate|p2a: GOTTAGOFAST|Protect
+|
+|-heal|p2a: GOTTAGOFAST|79\/261|[from] item: Leftovers
+|-boost|p2a: GOTTAGOFAST|spe|1|[from] ability: Speed Boost
+|turn|38
+|callback|decision
+|
+|move|p1a: Lucario|Extreme Speed|p2a: GOTTAGOFAST
+|-damage|p2a: GOTTAGOFAST|2\/261
+|move|p2a: GOTTAGOFAST|Baton Pass|p2a: GOTTAGOFAST
+|callback|decision
+|
+|switch|p2a: Obamasnow|Abomasnow, F, shiny|324\/384
+|-formechange|p2a: Obamasnow|Abomasnow-Mega
+|-weather|Hail
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Lucario|256\/281|[from] hail
+|turn|39
+|callback|decision
+|
+|move|p1a: Lucario|Close Combat|p2a: Obamasnow
+|-supereffective|p2a: Obamasnow
+|-damage|p2a: Obamasnow|0 fnt
+|-unboost|p1a: Lucario|def|1
+|-unboost|p1a: Lucario|spd|1
+|faint|p2a: Obamasnow
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Lucario|239\/281|[from] hail
+|callback|decision
+|
+|switch|p2a: WhyamIinOU?|Swadloon, M|36\/314
+|turn|40
+|callback|decision
+|
+|move|p2a: WhyamIinOU?|Protect|p2a: WhyamIinOU?
+|-singleturn|p2a: WhyamIinOU?|Protect
+|move|p1a: Lucario|Extreme Speed|p2a: WhyamIinOU?
+|-activate|p2a: WhyamIinOU?|Protect
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Lucario|222\/281|[from] hail
+|turn|41
+|callback|decision
+|
+|move|p2a: WhyamIinOU?|Protect|p2a: WhyamIinOU?
+|-singleturn|p2a: WhyamIinOU?|Protect
+|move|p1a: Lucario|Extreme Speed|p2a: WhyamIinOU?
+|-activate|p2a: WhyamIinOU?|Protect
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Lucario|205\/281|[from] hail
+|turn|42
+|callback|decision
+|
+|move|p2a: WhyamIinOU?|Protect|p2a: WhyamIinOU?
+|-fail|p2a: WhyamIinOU?
+|move|p1a: Lucario|Extreme Speed|p2a: WhyamIinOU?
+|-damage|p2a: WhyamIinOU?|0 fnt
+|faint|p2a: WhyamIinOU?
+|
+|-weather|none
+|callback|decision
+|
+|switch|p2a: GOTTAGOFAST|Scolipede, M|2\/261
+|turn|43
+|callback|decision
+|
+|move|p2a: GOTTAGOFAST|Protect|p2a: GOTTAGOFAST
+|-singleturn|p2a: GOTTAGOFAST|Protect
+|move|p1a: Lucario|Vacuum Wave|p2a: GOTTAGOFAST
+|-activate|p2a: GOTTAGOFAST|Protect
+|
+|-heal|p2a: GOTTAGOFAST|18\/261|[from] item: Leftovers
+|-boost|p2a: GOTTAGOFAST|spe|1|[from] ability: Speed Boost
+|turn|44
+|callback|decision
+|
+|move|p2a: GOTTAGOFAST|Protect|p2a: GOTTAGOFAST
+|-fail|p2a: GOTTAGOFAST
+|move|p1a: Lucario|Extreme Speed|p2a: GOTTAGOFAST
+|-damage|p2a: GOTTAGOFAST|0 fnt
+|faint|p2a: GOTTAGOFAST
+|
+|win|thesecondbest
+|raw|Ladder updating...
+|raw|thesecondbest's rating: 1434 &rarr; <strong>1456<\/strong><br \/>(+22 for winning)
+|raw|SleepyJirachi's rating: 1395 &rarr; <strong>1388<\/strong><br \/>(-7 for losing)
+|chat|SleepyJirachi|lol gg
+|leave|SleepyJirachi
+|player|p2

@@ -1,0 +1,188 @@
+|join|Nnoitra
+|join|Professional 01
+|player|p1|Nnoitra|257
+|player|p2|Professional 01|293
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Conkeldurr, F
+|poke|p1|Rotom-Wash
+|poke|p1|Venusaur, F
+|poke|p1|Scizor, M
+|poke|p1|Heatran, F
+|poke|p1|Landorus-Therian, M
+|poke|p2|Tyranitar, F
+|poke|p2|Gliscor, M
+|poke|p2|Scizor, M
+|poke|p2|Rotom-Wash
+|poke|p2|Landorus-Therian, M
+|poke|p2|Blissey, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|381\/381
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Rotom-Wash
+|-unboost|p1a: Rotom-Wash|atk|1
+|turn|1
+|
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Landorus-Therian
+|-supereffective|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|9\/381
+|move|p2a: Landorus-Therian|Stealth Rock|p1a: Rotom-Wash
+|-sidestart|p1: Nnoitra|move: Stealth Rock
+|
+|-heal|p2a: Landorus-Therian|32\/381|[from] item: Leftovers
+|turn|2
+|
+|switch|p1a: Conkeldurr|Conkeldurr, F|351\/351
+|-damage|p1a: Conkeldurr|330\/351|[from] Stealth Rock
+|switch|p2a: Blissey|Blissey, F|714\/714
+|
+|turn|3
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|32\/381
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Conkeldurr
+|-unboost|p1a: Conkeldurr|atk|1
+|move|p1a: Conkeldurr|Knock Off|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|faint|p2a: Landorus-Therian
+|
+|
+|switch|p2a: Scizor|Scizor, M|344\/344
+|turn|4
+|
+|switch|p1a: Heatran|Heatran, F|386\/386
+|-damage|p1a: Heatran|338\/386|[from] Stealth Rock
+|-formechange|p2a: Scizor|Scizor-Mega
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p2a: Scizor|Knock Off|p1a: Heatran
+|-damage|p1a: Heatran|243\/386
+|-enditem|p1a: Heatran|Leftovers|[from] move: Knock Off|[of] p2a: Scizor
+|
+|turn|5
+|
+|switch|p2a: Tyranitar|Tyranitar, F|404\/404
+|-weather|Sandstorm
+|move|p1a: Heatran|Stealth Rock|p2a: Tyranitar
+|-sidestart|p2: Professional 01|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|6
+|
+|move|p2a: Tyranitar|Pursuit|p1a: Heatran|[from]Pursuit
+|-damage|p1a: Heatran|102\/386
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|-damage|p1a: Rotom-Wash|266\/304|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-Wash|247\/304|[from] sandstorm
+|turn|7
+|
+|move|p1a: Rotom-Wash|Trick|p2a: Tyranitar
+|-activate|p1a: Rotom-Wash|move: Trick|[of] p2a: Tyranitar
+|-item|p2a: Tyranitar|Choice Scarf|[from] move: Trick
+|-item|p1a: Rotom-Wash|Assault Vest|[from] move: Trick
+|move|p2a: Tyranitar|Stone Edge|p1a: Rotom-Wash
+|-crit|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|27\/304
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-Wash|8\/304|[from] sandstorm
+|turn|8
+|
+|switch|p1a: Conkeldurr|Conkeldurr, F|330\/351
+|-damage|p1a: Conkeldurr|309\/351|[from] Stealth Rock
+|move|p2a: Tyranitar|Stone Edge|p1a: Conkeldurr
+|-resisted|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|213\/351
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Conkeldurr|192\/351|[from] sandstorm
+|turn|9
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354
+|-damage|p2a: Gliscor|310\/354|[from] Stealth Rock
+|move|p1a: Conkeldurr|Drain Punch|p2a: Gliscor
+|-resisted|p2a: Gliscor
+|-damage|p2a: Gliscor|260\/354
+|-heal|p1a: Conkeldurr|217\/351|[from] drain|[of] p2a: Gliscor
+|
+|-weather|none
+|-activate|p2a: Gliscor|item: Toxic Orb
+|-status|p2a: Gliscor|tox
+|turn|10
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Conkeldurr|Ice Punch|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-heal|p2a: Gliscor|304\/354 tox|[from] ability: Poison Heal
+|turn|11
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|-damage|p2a: Rotom-Wash|266\/304|[from] Stealth Rock
+|move|p1a: Conkeldurr|Drain Punch|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|121\/304
+|-heal|p1a: Conkeldurr|290\/351|[from] drain|[of] p2a: Rotom-Wash
+|
+|-heal|p2a: Rotom-Wash|140\/304|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|224\/351
+|
+|switch|p2a: Gliscor|Gliscor, M|304\/354 tox
+|-damage|p2a: Gliscor|260\/354 tox|[from] Stealth Rock
+|move|p1a: Conkeldurr|Drain Punch|p2a: Gliscor
+|-resisted|p2a: Gliscor
+|-damage|p2a: Gliscor|208\/354 tox
+|-heal|p1a: Conkeldurr|250\/351|[from] drain|[of] p2a: Gliscor
+|
+|-heal|p2a: Gliscor|252\/354 tox|[from] ability: Poison Heal
+|turn|13
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Conkeldurr|Ice Punch|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-heal|p2a: Gliscor|296\/354 tox|[from] ability: Poison Heal
+|turn|14
+|
+|move|p2a: Gliscor|Toxic|p1a: Conkeldurr
+|-status|p1a: Conkeldurr|tox
+|move|p1a: Conkeldurr|Ice Punch|p2a: Gliscor
+|-supereffective|p2a: Gliscor
+|-damage|p2a: Gliscor|0 fnt
+|faint|p2a: Gliscor
+|
+|-damage|p1a: Conkeldurr|229\/351 tox|[from] psn
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|140\/304
+|-damage|p2a: Rotom-Wash|102\/304|[from] Stealth Rock
+|turn|15
+|
+|move|p1a: Conkeldurr|Mach Punch|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|-damage|p1a: Conkeldurr|187\/351 tox|[from] psn
+|-message|Professional 01 forfeited.
+|
+|win|Nnoitra
+|raw|Ladder updating...
+|leave|Professional 01
+|player|p2
+|raw|Nnoitra's rating: 1583 &rarr; <strong>1603<\/strong><br \/>(+20 for winning)
+|raw|Professional 01's rating: 1580 &rarr; <strong>1560<\/strong><br \/>(-20 for losing)

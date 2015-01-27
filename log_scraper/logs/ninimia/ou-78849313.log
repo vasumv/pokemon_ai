@@ -1,0 +1,306 @@
+|join|IAmKira
+|join|ninimia
+|player|p1|IAmKira|222
+|player|p2|ninimia|1
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Aegislash, F
+|poke|p1|Chesnaught, M
+|poke|p1|Chansey, F
+|poke|p1|Skarmory, F
+|poke|p1|Pinsir, F
+|poke|p1|Heatran, F
+|poke|p2|Talonflame, M
+|poke|p2|Bisharp, M
+|poke|p2|Weavile, F
+|poke|p2|Garchomp, M
+|poke|p2|Aegislash, F
+|poke|p2|Deoxys-Defense
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Aegislash|Aegislash, F|321\/321
+|switch|p2a: Deoxys-Defense|Deoxys-Defense|303\/303
+|-ability|p2a: Deoxys-Defense|Pressure
+|turn|1
+|callback|decision
+|
+|move|p2a: Deoxys-Defense|Stealth Rock|p1a: Aegislash
+|-sidestart|p1: IAmKira|move: Stealth Rock
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Ball|p2a: Deoxys-Defense
+|-supereffective|p2a: Deoxys-Defense
+|-damage|p2a: Deoxys-Defense|85\/303
+|-unboost|p2a: Deoxys-Defense|spd|1
+|-enditem|p2a: Deoxys-Defense|Red Card|[of] p1a: Aegislash
+|drag|p1a: Pinsir|Pinsir, F|272\/272
+|-damage|p1a: Pinsir|204\/272|[from] Stealth Rock
+|
+|turn|2
+|callback|decision
+|
+|-formechange|p1a: Pinsir|Pinsir-Mega
+|message|Pinsir has Mega Evolved into Mega Pinsir!
+|move|p2a: Deoxys-Defense|Spikes|p1a: Pinsir
+|-sidestart|p1: IAmKira|Spikes
+|move|p1a: Pinsir|Return|p2a: Deoxys-Defense
+|-damage|p2a: Deoxys-Defense|0 fnt
+|faint|p2a: Deoxys-Defense
+|
+|callback|decision
+|
+|switch|p2a: I <3 my smogonbird|Talonflame, M|297\/297
+|turn|3
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|385\/385
+|-damage|p1a: Heatran|337\/385|[from] Spikes
+|-damage|p1a: Heatran|289\/385|[from] Stealth Rock
+|move|p2a: I <3 my smogonbird|U-turn|p1a: Heatran
+|-crit|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|256\/385
+|-damage|p2a: I <3 my smogonbird|248\/297|[from] item: Rocky Helmet|[of] p1a: Heatran
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, M|358\/358
+|
+|turn|4
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, F|334\/334
+|-damage|p1a: Skarmory|293\/334|[from] Stealth Rock
+|move|p2a: Garchomp|Swords Dance|p2a: Garchomp
+|-boost|p2a: Garchomp|atk|2
+|
+|turn|5
+|callback|decision
+|
+|move|p2a: Garchomp|Fire Fang|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|103\/334
+|-damage|p2a: Garchomp|299\/358|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|move|p1a: Skarmory|Defog|p2a: Garchomp
+|-unboost|p2a: Garchomp|evasion|1
+|-sideend|p1: IAmKira|Spikes|[from] move: Defog|[of] p1a: Skarmory
+|-sideend|p1: IAmKira|Stealth Rock|[from] move: Defog|[of] p1a: Skarmory
+|
+|turn|6
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|256\/385
+|move|p2a: Garchomp|Fire Fang|p1a: Heatran
+|-start|p1a: Heatran|ability: Flash Fire
+|
+|turn|7
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, F|103\/334
+|move|p2a: Garchomp|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|
+|turn|8
+|callback|decision
+|
+|move|p2a: Garchomp|Fire Fang|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|-damage|p2a: Garchomp|240\/358|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|faint|p1a: Skarmory
+|
+|callback|decision
+|
+|switch|p1a: Chesnaught|Chesnaught, M|380\/380
+|turn|9
+|callback|decision
+|
+|move|p2a: Garchomp|Outrage|p1a: Chesnaught
+|-damage|p1a: Chesnaught|80\/380
+|move|p1a: Chesnaught|Leech Seed|p2a: Garchomp
+|-start|p2a: Garchomp|move: Leech Seed
+|
+|-heal|p1a: Chesnaught|103\/380|[from] item: Leftovers
+|-damage|p2a: Garchomp|196\/358|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|147\/380|[silent]
+|turn|10
+|callback|decision
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-singleturn|p1a: Chesnaught|Spiky Shield
+|move|p2a: Garchomp|Outrage|p1a: Chesnaught
+|-activate|p1a: Chesnaught|Spiky Shield
+|-damage|p2a: Garchomp|152\/358|[from] Spiky Shield|[of] p1a: Chesnaught
+|
+|-end|p2a: Garchomp|rampage
+|-start|p2a: Garchomp|confusion
+|-heal|p1a: Chesnaught|170\/380|[from] item: Leftovers
+|-damage|p2a: Garchomp|108\/358|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|214\/380|[silent]
+|-enditem|p2a: Garchomp|Lum Berry|[eat]
+|-end|p2a: Garchomp|confusion
+|turn|11
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|256\/385
+|move|p2a: Garchomp|Fire Fang|p1a: Heatran
+|-start|p1a: Heatran|ability: Flash Fire
+|
+|-damage|p2a: Garchomp|64\/358|[from] Leech Seed|[of] p1a: Heatran
+|-heal|p1a: Heatran|300\/385|[silent]
+|turn|12
+|callback|decision
+|
+|switch|p1a: Chansey|Chansey, F|704\/704
+|move|p2a: Garchomp|Outrage|p1a: Chansey
+|-crit|p1a: Chansey
+|-damage|p1a: Chansey|0 fnt
+|faint|p1a: Chansey
+|
+|callback|decision
+|
+|switch|p1a: Chesnaught|Chesnaught, M|214\/380
+|turn|13
+|callback|decision
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-singleturn|p1a: Chesnaught|Spiky Shield
+|move|p2a: Garchomp|Outrage|p1a: Chesnaught
+|-activate|p1a: Chesnaught|Spiky Shield
+|-damage|p2a: Garchomp|20\/358|[from] Spiky Shield|[of] p1a: Chesnaught
+|
+|-heal|p1a: Chesnaught|237\/380|[from] item: Leftovers
+|-damage|p2a: Garchomp|0 fnt|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|257\/380|[silent]
+|faint|p2a: Garchomp
+|callback|decision
+|
+|switch|p2a: I <3 my smogonbird|Talonflame, M|248\/297
+|turn|14
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|300\/385
+|move|p2a: I <3 my smogonbird|U-turn|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|278\/385
+|-damage|p2a: I <3 my smogonbird|199\/297|[from] item: Rocky Helmet|[of] p1a: Heatran
+|callback|decision
+|
+|switch|p2a: Weavile|Weavile, F|282\/282
+|-ability|p2a: Weavile|Pressure
+|
+|turn|15
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, F|321\/321
+|move|p2a: Weavile|Low Kick|p1a: Aegislash
+|-immune|p1a: Aegislash|[msg]
+|
+|turn|16
+|callback|decision
+|
+|switch|p2a: Aegislash|Aegislash, F|261\/261
+|-item|p2a: Aegislash|Air Balloon
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Sacred Sword|p2a: Aegislash
+|-immune|p2a: Aegislash|[msg]
+|
+|turn|17
+|callback|decision
+|
+|switch|p1a: Chesnaught|Chesnaught, M|257\/380
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Shadow Ball|p1a: Chesnaught
+|-immune|p1a: Chesnaught|[msg]|[from] Bulletproof
+|
+|-heal|p1a: Chesnaught|280\/380|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|switch|p2a: I <3 my smogonbird|Talonflame, M|199\/297
+|move|p1a: Chesnaught|Leech Seed|p2a: I <3 my smogonbird
+|-start|p2a: I <3 my smogonbird|move: Leech Seed
+|
+|-heal|p1a: Chesnaught|303\/380|[from] item: Leftovers
+|-damage|p2a: I <3 my smogonbird|162\/297|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|340\/380|[silent]
+|turn|19
+|callback|decision
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-singleturn|p1a: Chesnaught|Spiky Shield
+|move|p2a: I <3 my smogonbird|U-turn|p1a: Chesnaught
+|-activate|p1a: Chesnaught|Spiky Shield
+|-damage|p2a: I <3 my smogonbird|125\/297|[from] Spiky Shield|[of] p1a: Chesnaught
+|
+|-heal|p1a: Chesnaught|363\/380|[from] item: Leftovers
+|-damage|p2a: I <3 my smogonbird|88\/297|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|380\/380|[silent]
+|turn|20
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|278\/385
+|move|p2a: I <3 my smogonbird|U-turn|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|255\/385
+|-damage|p2a: I <3 my smogonbird|39\/297|[from] item: Rocky Helmet|[of] p1a: Heatran
+|callback|decision
+|
+|switch|p2a: Weavile|Weavile, F|282\/282
+|-ability|p2a: Weavile|Pressure
+|
+|turn|21
+|callback|decision
+|
+|move|p2a: Weavile|Knock Off|p1a: Heatran
+|-damage|p1a: Heatran|44\/385
+|-damage|p2a: Weavile|235\/282|[from] item: Rocky Helmet|[of] p1a: Heatran
+|-enditem|p1a: Heatran|Rocky Helmet|[from] move: Knock Off|[of] p2a: Weavile
+|-damage|p2a: Weavile|207\/282|[from] item: Life Orb
+|move|p1a: Heatran|Lava Plume|p2a: Weavile
+|-supereffective|p2a: Weavile
+|-damage|p2a: Weavile|0 fnt
+|faint|p2a: Weavile
+|
+|callback|decision
+|
+|switch|p2a: Bisharp|Bisharp, M|271\/271
+|turn|22
+|callback|decision
+|
+|move|p2a: Bisharp|Knock Off|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|-damage|p2a: Bisharp|244\/271|[from] item: Life Orb
+|faint|p1a: Heatran
+|
+|callback|decision
+|
+|switch|p1a: Chesnaught|Chesnaught, M|380\/380
+|turn|23
+|callback|decision
+|
+|move|p2a: Bisharp|Swords Dance|p2a: Bisharp
+|-boost|p2a: Bisharp|atk|2
+|move|p1a: Chesnaught|Hammer Arm|p2a: Bisharp
+|-supereffective|p2a: Bisharp
+|-damage|p2a: Bisharp|0 fnt
+|-unboost|p1a: Chesnaught|spe|1
+|faint|p2a: Bisharp
+|
+|callback|decision
+|-message|ninimia forfeited.
+|
+|win|IAmKira
+|raw|Ladder updating...
+|leave|ninimia
+|player|p2

@@ -1,0 +1,551 @@
+|join|qpzm257
+|join|airbus?
+|player|p1|qpzm257|101
+|player|p2|airbus?|101
+|gametype|singles
+|tier|Pokebank OU (beta)
+|rated
+|clearpoke
+|poke|p1|Alakazam, F
+|poke|p1|Dragonite, M
+|poke|p1|Heatran, M
+|poke|p1|Scizor, F
+|poke|p1|Trevenant, M
+|poke|p1|Vaporeon, F
+|poke|p2|Donphan, F
+|poke|p2|Suicune
+|poke|p2|Gourgeist-Super, F
+|poke|p2|Jirachi
+|poke|p2|Keldeo
+|poke|p2|Gengar, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Heatran|Heatran, M|386\/386
+|switch|p2a: Donphan|Donphan, F|384\/384
+|turn|1
+|callback|decision
+|
+|switch|p2a: Suicune|Suicune|404\/404
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Heatran|Stealth Rock|p2a: Suicune
+|-sidestart|p2: airbus?|move: Stealth Rock
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Vaporeon|Vaporeon, F|464\/464
+|move|p2a: Suicune|Scald|p1a: Vaporeon
+|-immune|p1a: Vaporeon|[msg]
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Suicune|Toxic|p1a: Vaporeon
+|-status|p1a: Vaporeon|tox
+|move|p1a: Vaporeon|Roar|p2a: Suicune
+|drag|p2a: Gourgeist-Super|Gourgeist-Super, F|374\/374
+|-damage|p2a: Gourgeist-Super|328\/374|[from] Stealth Rock
+|
+|-heal|p2a: Gourgeist-Super|351\/374|[from] item: Leftovers
+|-damage|p1a: Vaporeon|435\/464 tox|[from] psn
+|turn|4
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|386\/386
+|move|p2a: Gourgeist-Super|Leech Seed|p1a: Heatran
+|-start|p1a: Heatran|move: Leech Seed
+|
+|-heal|p2a: Gourgeist-Super|374\/374|[from] item: Leftovers
+|-damage|p1a: Heatran|338\/386|[from] Leech Seed|[of] p2a: Gourgeist-Super
+|turn|5
+|callback|decision
+|
+|move|p2a: Gourgeist-Super|Protect|p2a: Gourgeist-Super
+|-singleturn|p2a: Gourgeist-Super|Protect
+|move|p1a: Heatran|Magma Storm|p2a: Gourgeist-Super
+|-activate|p2a: Gourgeist-Super|Protect
+|
+|-damage|p1a: Heatran|290\/386|[from] Leech Seed|[of] p2a: Gourgeist-Super
+|turn|6
+|callback|decision
+|
+|switch|p2a: Suicune|Suicune|404\/404
+|-damage|p2a: Suicune|354\/404|[from] Stealth Rock
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Heatran|Magma Storm|p2a: Suicune
+|-resisted|p2a: Suicune
+|-damage|p2a: Suicune|274\/404
+|-activate|p2a: Suicune|move: Magma Storm|[of] p1a: Heatran
+|
+|-heal|p2a: Suicune|299\/404|[from] item: Leftovers
+|-damage|p1a: Heatran|242\/386|[from] Leech Seed|[of] p2a: Suicune
+|-heal|p2a: Suicune|347\/404|[silent]
+|-damage|p2a: Suicune|297\/404|[from] move: Magma Storm|[partiallytrapped]
+|turn|7
+|callback|decision
+|
+|switch|p1a: Vaporeon|Vaporeon, F|435\/464 tox
+|move|p2a: Suicune|Roar|p1a: Vaporeon
+|drag|p1a: Dragonite|Dragonite, M|324\/324
+|
+|-heal|p2a: Suicune|322\/404|[from] item: Leftovers
+|-end|p2a: Suicune|Magma Storm|[partiallytrapped]
+|turn|8
+|callback|decision
+|
+|move|p1a: Dragonite|Dragon Dance|p1a: Dragonite
+|-boost|p1a: Dragonite|atk|1
+|-boost|p1a: Dragonite|spe|1
+|move|p2a: Suicune|Toxic|p1a: Dragonite
+|-status|p1a: Dragonite|tox
+|-enditem|p1a: Dragonite|Lum Berry|[eat]
+|-curestatus|p1a: Dragonite|tox
+|
+|-heal|p2a: Suicune|347\/404|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p1a: Dragonite|Dragon Dance|p1a: Dragonite
+|-boost|p1a: Dragonite|atk|1
+|-boost|p1a: Dragonite|spe|1
+|move|p2a: Suicune|Ice Beam|p1a: Dragonite
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|182\/324
+|
+|-heal|p2a: Suicune|372\/404|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p1a: Dragonite|Outrage|p2a: Suicune
+|-damage|p2a: Suicune|0 fnt
+|faint|p2a: Suicune
+|
+|callback|decision
+|
+|switch|p2a: Gourgeist-Super|Gourgeist-Super, F|374\/374
+|-damage|p2a: Gourgeist-Super|328\/374|[from] Stealth Rock
+|turn|11
+|callback|decision
+|
+|move|p2a: Gourgeist-Super|Protect|p2a: Gourgeist-Super
+|-singleturn|p2a: Gourgeist-Super|Protect
+|move|p1a: Dragonite|Outrage|p2a: Gourgeist-Super
+|-activate|p2a: Gourgeist-Super|Protect
+|
+|-heal|p2a: Gourgeist-Super|351\/374|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Dragonite|Fire Punch|p2a: Gourgeist-Super
+|-supereffective|p2a: Gourgeist-Super
+|-damage|p2a: Gourgeist-Super|99\/374
+|move|p2a: Gourgeist-Super|Will-O-Wisp|p1a: Dragonite
+|-status|p1a: Dragonite|brn
+|
+|-heal|p2a: Gourgeist-Super|122\/374|[from] item: Leftovers
+|-damage|p1a: Dragonite|142\/324 brn|[from] brn
+|turn|13
+|callback|decision
+|
+|move|p1a: Dragonite|Fire Punch|p2a: Gourgeist-Super
+|-supereffective|p2a: Gourgeist-Super
+|-damage|p2a: Gourgeist-Super|4\/374
+|-status|p2a: Gourgeist-Super|brn
+|move|p2a: Gourgeist-Super|Leech Seed|p1a: Dragonite
+|-start|p1a: Dragonite|move: Leech Seed
+|
+|-heal|p2a: Gourgeist-Super|27\/374 brn|[from] item: Leftovers
+|-damage|p1a: Dragonite|102\/324 brn|[from] Leech Seed|[of] p2a: Gourgeist-Super
+|-heal|p2a: Gourgeist-Super|67\/374 brn|[silent]
+|-damage|p1a: Dragonite|62\/324 brn|[from] brn
+|-damage|p2a: Gourgeist-Super|21\/374 brn|[from] brn
+|turn|14
+|callback|decision
+|
+|move|p2a: Gourgeist-Super|Protect|p2a: Gourgeist-Super
+|-singleturn|p2a: Gourgeist-Super|Protect
+|move|p1a: Dragonite|Fire Punch|p2a: Gourgeist-Super
+|-activate|p2a: Gourgeist-Super|Protect
+|
+|-heal|p2a: Gourgeist-Super|44\/374 brn|[from] item: Leftovers
+|-damage|p1a: Dragonite|22\/324 brn|[from] Leech Seed|[of] p2a: Gourgeist-Super
+|-heal|p2a: Gourgeist-Super|84\/374 brn|[silent]
+|-damage|p1a: Dragonite|0 fnt|[from] brn
+|-damage|p2a: Gourgeist-Super|38\/374 brn|[from] brn
+|faint|p1a: Dragonite
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|242\/386
+|turn|15
+|callback|decision
+|
+|switch|p1a: Trevenant|Trevenant, M|374\/374
+|move|p2a: Gourgeist-Super|Leech Seed|p1a: Trevenant
+|-immune|p1a: Trevenant|[msg]
+|
+|-heal|p2a: Gourgeist-Super|61\/374 brn|[from] item: Leftovers
+|-damage|p2a: Gourgeist-Super|15\/374 brn|[from] brn
+|turn|16
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|242\/386
+|move|p2a: Gourgeist-Super|Will-O-Wisp|p1a: Heatran
+|-start|p1a: Heatran|ability: Flash Fire
+|
+|-heal|p2a: Gourgeist-Super|38\/374 brn|[from] item: Leftovers
+|-damage|p2a: Gourgeist-Super|0 fnt|[from] brn
+|faint|p2a: Gourgeist-Super
+|callback|decision
+|
+|switch|p2a: Keldeo|Keldeo|323\/323
+|-damage|p2a: Keldeo|303\/323|[from] Stealth Rock
+|turn|17
+|callback|decision
+|
+|switch|p1a: Trevenant|Trevenant, M|374\/374
+|move|p2a: Keldeo|Calm Mind|p2a: Keldeo
+|-boost|p2a: Keldeo|spa|1
+|-boost|p2a: Keldeo|spd|1
+|
+|-heal|p2a: Keldeo|323\/323|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p2a: Keldeo|Hidden Power|p1a: Trevenant
+|-supereffective|p1a: Trevenant
+|-damage|p1a: Trevenant|130\/374
+|-enditem|p1a: Trevenant|Sitrus Berry|[eat]
+|-heal|p1a: Trevenant|223\/374|[from] item: Sitrus Berry
+|move|p1a: Trevenant|Horn Leech|p2a: Keldeo
+|-supereffective|p2a: Keldeo
+|-damage|p2a: Keldeo|125\/323
+|-heal|p1a: Trevenant|322\/374|[from] drain|[of] p2a: Keldeo
+|
+|-heal|p2a: Keldeo|145\/323|[from] item: Leftovers
+|-item|p1a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|turn|19
+|callback|decision
+|
+|move|p2a: Keldeo|Hidden Power|p1a: Trevenant
+|-supereffective|p1a: Trevenant
+|-damage|p1a: Trevenant|68\/374
+|-enditem|p1a: Trevenant|Sitrus Berry|[eat]
+|-heal|p1a: Trevenant|161\/374|[from] item: Sitrus Berry
+|move|p1a: Trevenant|Horn Leech|p2a: Keldeo
+|-supereffective|p2a: Keldeo
+|-damage|p2a: Keldeo|0 fnt
+|-heal|p1a: Trevenant|234\/374|[from] drain|[of] p2a: Keldeo
+|faint|p2a: Keldeo
+|
+|-item|p1a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|callback|decision
+|
+|switch|p2a: Donphan|Donphan, F|384\/384
+|-damage|p2a: Donphan|360\/384|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|move|p1a: Trevenant|Horn Leech|p2a: Donphan
+|-supereffective|p2a: Donphan
+|-damage|p2a: Donphan|238\/384
+|-heal|p1a: Trevenant|295\/374|[from] drain|[of] p2a: Donphan
+|move|p2a: Donphan|Knock Off|p1a: Trevenant
+|-supereffective|p1a: Trevenant
+|-damage|p1a: Trevenant|113\/374
+|-enditem|p1a: Trevenant|Sitrus Berry|[from] move: Knock Off|[of] p2a: Donphan
+|
+|-heal|p2a: Donphan|262\/384|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p1a: Trevenant|Leech Seed|p2a: Donphan
+|-start|p2a: Donphan|move: Leech Seed
+|move|p2a: Donphan|Stealth Rock|p1a: Trevenant
+|-sidestart|p1: qpzm257|move: Stealth Rock
+|
+|-heal|p2a: Donphan|286\/384|[from] item: Leftovers
+|-damage|p2a: Donphan|238\/384|[from] Leech Seed|[of] p1a: Trevenant
+|-heal|p1a: Trevenant|161\/374|[silent]
+|turn|22
+|callback|decision
+|
+|move|p1a: Trevenant|Toxic|p2a: Donphan
+|-status|p2a: Donphan|tox
+|move|p2a: Donphan|Knock Off|p1a: Trevenant
+|-supereffective|p1a: Trevenant
+|-damage|p1a: Trevenant|35\/374
+|
+|-heal|p2a: Donphan|262\/384 tox|[from] item: Leftovers
+|-damage|p2a: Donphan|214\/384 tox|[from] Leech Seed|[of] p1a: Trevenant
+|-heal|p1a: Trevenant|83\/374|[silent]
+|-damage|p2a: Donphan|190\/384 tox|[from] psn
+|turn|23
+|callback|decision
+|
+|move|p2a: Donphan|Ice Shard|p1a: Trevenant
+|-supereffective|p1a: Trevenant
+|-damage|p1a: Trevenant|7\/374
+|move|p1a: Trevenant|Horn Leech|p2a: Donphan
+|-supereffective|p2a: Donphan
+|-damage|p2a: Donphan|76\/384 tox
+|-heal|p1a: Trevenant|64\/374|[from] drain|[of] p2a: Donphan
+|
+|-heal|p2a: Donphan|100\/384 tox|[from] item: Leftovers
+|-damage|p2a: Donphan|52\/384 tox|[from] Leech Seed|[of] p1a: Trevenant
+|-heal|p1a: Trevenant|112\/374|[silent]
+|-damage|p2a: Donphan|4\/384 tox|[from] psn
+|turn|24
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|242\/386
+|-damage|p1a: Heatran|194\/386|[from] Stealth Rock
+|move|p2a: Donphan|Rapid Spin|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|186\/386
+|-end|p2a: Donphan|Leech Seed|[from] move: Rapid Spin|[of] p2a: Donphan
+|-sideend|p2: airbus?|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Donphan
+|
+|-heal|p2a: Donphan|28\/384 tox|[from] item: Leftovers
+|-damage|p2a: Donphan|0 fnt|[from] psn
+|faint|p2a: Donphan
+|callback|decision
+|chat|qpzm257|nice prediction
+|
+|switch|p2a: Gengar|Gengar, M|262\/262
+|turn|25
+|callback|decision
+|chat|airbus?|ty
+|
+|switch|p1a: Trevenant|Trevenant, M|112\/374
+|-damage|p1a: Trevenant|66\/374|[from] Stealth Rock
+|move|p2a: Gengar|Focus Blast|p1a: Trevenant
+|-immune|p1a: Trevenant|[msg]
+|
+|turn|26
+|callback|decision
+|
+|move|p2a: Gengar|Shadow Ball|p1a: Trevenant
+|-supereffective|p1a: Trevenant
+|-damage|p1a: Trevenant|0 fnt
+|faint|p1a: Trevenant
+|
+|callback|decision
+|
+|switch|p1a: Alakazam|Alakazam, F|251\/251
+|turn|27
+|callback|decision
+|
+|move|p1a: Alakazam|Psyshock|p2a: Gengar
+|-supereffective|p2a: Gengar
+|-enditem|p2a: Gengar|Focus Sash
+|-damage|p2a: Gengar|1\/262
+|move|p2a: Gengar|Shadow Ball|p1a: Alakazam
+|-supereffective|p1a: Alakazam
+|-enditem|p1a: Alakazam|Focus Sash
+|-damage|p1a: Alakazam|1\/251
+|-unboost|p1a: Alakazam|spd|1
+|
+|turn|28
+|callback|decision
+|
+|move|p1a: Alakazam|Shadow Ball|p2a: Gengar
+|-supereffective|p2a: Gengar
+|-damage|p2a: Gengar|0 fnt
+|faint|p2a: Gengar
+|
+|callback|decision
+|chat|airbus?|gg
+|
+|switch|p2a: Jirachi|Jirachi|341\/341
+|turn|29
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Alakazam
+|-damage|p1a: Alakazam|0 fnt
+|faint|p1a: Alakazam
+|
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|186\/386
+|-damage|p1a: Heatran|138\/386|[from] Stealth Rock
+|turn|30
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|111\/386
+|move|p1a: Heatran|Magma Storm|p2a: Jirachi|[miss]
+|-miss|p1a: Heatran|p2a: Jirachi
+|
+|turn|31
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|80\/386
+|cant|p1a: Heatran|flinch
+|
+|turn|32
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|53\/386
+|cant|p1a: Heatran|flinch
+|
+|turn|33
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|26\/386
+|cant|p1a: Heatran|flinch
+|
+|turn|34
+|callback|decision
+|chat|qpzm257|wow
+|
+|move|p2a: Jirachi|Iron Head|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|callback|decision
+|
+|switch|p1a: Vaporeon|Vaporeon, F|435\/464 tox
+|-damage|p1a: Vaporeon|377\/464 tox|[from] Stealth Rock
+|turn|35
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Vaporeon
+|-resisted|p1a: Vaporeon
+|-damage|p1a: Vaporeon|321\/464 tox
+|cant|p1a: Vaporeon|flinch
+|
+|-heal|p1a: Vaporeon|350\/464 tox|[from] item: Leftovers
+|-damage|p1a: Vaporeon|321\/464 tox|[from] psn
+|turn|36
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Vaporeon
+|-resisted|p1a: Vaporeon
+|-damage|p1a: Vaporeon|258\/464 tox
+|cant|p1a: Vaporeon|flinch
+|
+|-heal|p1a: Vaporeon|287\/464 tox|[from] item: Leftovers
+|-damage|p1a: Vaporeon|229\/464 tox|[from] psn
+|turn|37
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Vaporeon
+|-resisted|p1a: Vaporeon
+|-damage|p1a: Vaporeon|166\/464 tox
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|195\/464 tox|[from] item: Leftovers
+|-damage|p1a: Vaporeon|108\/464 tox|[from] psn
+|turn|38
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Vaporeon
+|-resisted|p1a: Vaporeon
+|-damage|p1a: Vaporeon|45\/464 tox
+|cant|p1a: Vaporeon|flinch
+|
+|-heal|p1a: Vaporeon|277\/464 tox|[from] move: Wish|[wisher] Vaporeon
+|-heal|p1a: Vaporeon|306\/464 tox|[from] item: Leftovers
+|-damage|p1a: Vaporeon|190\/464 tox|[from] psn
+|turn|39
+|callback|decision
+|chat|airbus?|jirachi is such a joke
+|
+|switch|p1a: Scizor|Scizor, F|344\/344
+|-damage|p1a: Scizor|301\/344|[from] Stealth Rock
+|move|p2a: Jirachi|Iron Head|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|241\/344
+|
+|turn|40
+|callback|decision
+|
+|-formechange|p1a: Scizor|Scizor-Mega
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p2a: Jirachi|Iron Head|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|193\/344
+|cant|p1a: Scizor|flinch
+|
+|turn|41
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Scizor
+|-crit|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|130\/344
+|move|p1a: Scizor|Superpower|p2a: Jirachi
+|-damage|p2a: Jirachi|158\/341
+|-unboost|p1a: Scizor|atk|1
+|-unboost|p1a: Scizor|def|1
+|
+|turn|42
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Scizor
+|-crit|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|24\/344
+|move|p1a: Scizor|Superpower|p2a: Jirachi
+|-damage|p2a: Jirachi|39\/341
+|-unboost|p1a: Scizor|atk|1
+|-unboost|p1a: Scizor|def|1
+|
+|turn|43
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|7\/341
+|move|p2a: Jirachi|Iron Head|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|faint|p1a: Scizor
+|
+|callback|decision
+|
+|switch|p1a: Vaporeon|Vaporeon, F|190\/464 tox
+|-damage|p1a: Vaporeon|132\/464 tox|[from] Stealth Rock
+|turn|44
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Vaporeon
+|-resisted|p1a: Vaporeon
+|-damage|p1a: Vaporeon|75\/464 tox
+|cant|p1a: Vaporeon|flinch
+|
+|-heal|p1a: Vaporeon|104\/464 tox|[from] item: Leftovers
+|-damage|p1a: Vaporeon|75\/464 tox|[from] psn
+|turn|45
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Vaporeon
+|-resisted|p1a: Vaporeon
+|-damage|p1a: Vaporeon|21\/464 tox
+|cant|p1a: Vaporeon|flinch
+|
+|-heal|p1a: Vaporeon|50\/464 tox|[from] item: Leftovers
+|-damage|p1a: Vaporeon|0 fnt|[from] psn
+|faint|p1a: Vaporeon
+|
+|win|airbus?
+|raw|Ladder updating...
+|raw|qpzm257's rating: 1745 &rarr; <strong>1742<\/strong><br \/>(-3 for losing)
+|raw|airbus?'s rating: 1756 &rarr; <strong>1764<\/strong><br \/>(+8 for winning)
+|chat|airbus?|gg

@@ -1,0 +1,359 @@
+|join|hegemoth
+|join|Giggling Grannie
+|player|p1|hegemoth|2
+|player|p2|Giggling Grannie|121
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Azumarill, M
+|poke|p1|Aegislash, F
+|poke|p1|Steelix, M
+|poke|p1|Gyarados, F
+|poke|p1|Mamoswine, F
+|poke|p1|Hydreigon, M
+|poke|p2|Amoonguss, F
+|poke|p2|Tyranitar, M
+|poke|p2|Pinsir, F
+|poke|p2|Zoroark, M
+|poke|p2|Suicune
+|poke|p2|Skarmory, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Mamoswine|Mamoswine, F|362\/362
+|switch|p2a: SLICE|Pinsir, F|275\/275
+|turn|1
+|
+|move|p2a: SLICE|Close Combat|p1a: Mamoswine
+|-supereffective|p1a: Mamoswine
+|-enditem|p1a: Mamoswine|Focus Sash
+|-damage|p1a: Mamoswine|1\/362
+|-unboost|p2a: SLICE|def|1
+|-unboost|p2a: SLICE|spd|1
+|move|p1a: Mamoswine|Stealth Rock|p2a: SLICE
+|-sidestart|p2: Giggling Grannie|move: Stealth Rock
+|
+|turn|2
+|
+|switch|p1a: Aegislash|Aegislash, F|324\/324
+|move|p2a: SLICE|Quick Attack|p1a: Aegislash
+|-immune|p1a: Aegislash|[msg]
+|
+|turn|3
+|
+|switch|p2a: Shrooms|Amoonguss, F|424\/424
+|-damage|p2a: Shrooms|371\/424|[from] Stealth Rock
+|move|p1a: Aegislash|Swords Dance|p1a: Aegislash
+|-boost|p1a: Aegislash|atk|2
+|
+|-heal|p2a: Shrooms|397\/424|[from] item: Black Sludge
+|turn|4
+|
+|switch|p1a: Mamoswine|Mamoswine, F|1\/362
+|move|p2a: Shrooms|Foul Play|p1a: Mamoswine
+|-damage|p1a: Mamoswine|0 fnt
+|faint|p1a: Mamoswine
+|
+|-heal|p2a: Shrooms|423\/424|[from] item: Black Sludge
+|
+|switch|p1a: Hydreigon|Hydreigon, M|326\/326
+|turn|5
+|
+|move|p1a: Hydreigon|Dark Pulse|p2a: Shrooms
+|-damage|p2a: Shrooms|258\/424
+|-damage|p1a: Hydreigon|294\/326|[from] item: Life Orb
+|move|p2a: Shrooms|Spore|p1a: Hydreigon
+|-status|p1a: Hydreigon|slp
+|
+|-heal|p2a: Shrooms|284\/424|[from] item: Black Sludge
+|turn|6
+|
+|switch|p1a: Aegislash|Aegislash, F|324\/324
+|switch|p2a: Cold War|Suicune|266\/266
+|-damage|p2a: Cold War|233\/266|[from] Stealth Rock
+|
+|turn|7
+|
+|move|p2a: Cold War|Trick|p1a: Aegislash
+|-activate|p2a: Cold War|move: Trick|[of] p1a: Aegislash
+|-item|p1a: Aegislash|Choice Scarf|[from] move: Trick
+|-item|p2a: Cold War|Leftovers|[from] move: Trick
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Sacred Sword|p2a: Cold War
+|-supereffective|p2a: Cold War
+|replace|p2a: Silly Rabbit|Zoroark, M|233\/266
+|-damage|p2a: Silly Rabbit|0 fnt
+|faint|p2a: Silly Rabbit
+|
+|
+|switch|p2a: Panzaeron|Skarmory, M|334\/334
+|-damage|p2a: Panzaeron|293\/334|[from] Stealth Rock
+|turn|8
+|
+|switch|p1a: Hydreigon|Hydreigon, M|294\/326 slp
+|move|p2a: Panzaeron|Defog|p1a: Hydreigon
+|-unboost|p1a: Hydreigon|evasion|1
+|-sideend|p2: Giggling Grannie|Stealth Rock|[from] move: Defog|[of] p2a: Panzaeron
+|
+|-heal|p2a: Panzaeron|313\/334|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Reptar|Tyranitar, M|404\/404
+|-weather|Sandstorm
+|cant|p1a: Hydreigon|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Hydreigon|274\/326 slp|[from] sandstorm
+|turn|10
+|
+|switch|p1a: Steelix|Steelix, M|354\/354
+|move|p2a: Reptar|Stealth Rock|p1a: Steelix
+|-sidestart|p1: hegemoth|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|11
+|
+|switch|p2a: Panzaeron|Skarmory, M|313\/334
+|switch|p1a: Hydreigon|Hydreigon, M|274\/326 slp
+|-damage|p1a: Hydreigon|234\/326 slp|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Hydreigon|214\/326 slp|[from] sandstorm
+|-heal|p2a: Panzaeron|333\/334|[from] item: Leftovers
+|turn|12
+|
+|cant|p1a: Hydreigon|slp
+|move|p2a: Panzaeron|Whirlwind|p1a: Hydreigon
+|drag|p1a: Steelix|Steelix, M|354\/354
+|-damage|p1a: Steelix|343\/354|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Panzaeron|334\/334|[from] item: Leftovers
+|turn|13
+|
+|move|p2a: Panzaeron|Spikes|p1a: Steelix
+|-sidestart|p1: hegemoth|Spikes
+|move|p1a: Steelix|Gyro Ball|p2a: Panzaeron
+|-resisted|p2a: Panzaeron
+|-damage|p2a: Panzaeron|311\/334
+|
+|-weather|none
+|-heal|p2a: Panzaeron|331\/334|[from] item: Leftovers
+|turn|14
+|
+|switch|p1a: Hydreigon|Hydreigon, M|214\/326 slp
+|-damage|p1a: Hydreigon|174\/326 slp|[from] Stealth Rock
+|move|p2a: Panzaeron|Whirlwind|p1a: Hydreigon
+|drag|p1a: Azumarill|Azumarill, M|372\/372
+|-damage|p1a: Azumarill|326\/372|[from] Spikes
+|-damage|p1a: Azumarill|280\/372|[from] Stealth Rock
+|
+|-heal|p2a: Panzaeron|334\/334|[from] item: Leftovers
+|turn|15
+|
+|move|p2a: Panzaeron|Spikes|p1a: Azumarill
+|-sidestart|p1: hegemoth|Spikes
+|move|p1a: Azumarill|Belly Drum|p1a: Azumarill
+|-damage|p1a: Azumarill|94\/372
+|-setboost|p1a: Azumarill|atk|6|[from] move: Belly Drum
+|-enditem|p1a: Azumarill|Sitrus Berry|[eat]
+|-heal|p1a: Azumarill|187\/372|[from] item: Sitrus Berry
+|
+|turn|16
+|chat|hegemoth|fucking trollmory
+|chat|hegemoth|die
+|
+|switch|p2a: Cold War|Suicune|404\/404
+|-ability|p2a: Cold War|Pressure
+|move|p1a: Azumarill|Superpower|p2a: Cold War
+|-damage|p2a: Cold War|0 fnt
+|-unboost|p1a: Azumarill|atk|1
+|-unboost|p1a: Azumarill|def|1
+|faint|p2a: Cold War
+|
+|join|Tehi
+|
+|switch|p2a: Shrooms|Amoonguss, F|424\/424
+|turn|17
+|
+|move|p1a: Azumarill|Play Rough|p2a: Shrooms
+|-resisted|p2a: Shrooms
+|-damage|p2a: Shrooms|0 fnt
+|faint|p2a: Shrooms
+|
+|
+|switch|p2a: SLICE|Pinsir, F|275\/275
+|turn|18
+|
+|-formechange|p2a: SLICE|Pinsir-Mega
+|message|Pinsir has Mega Evolved into Mega Pinsir!
+|move|p2a: SLICE|Quick Attack|p1a: Azumarill
+|-damage|p1a: Azumarill|0 fnt
+|faint|p1a: Azumarill
+|
+|
+|switch|p1a: Gyarados|Gyarados, F|348\/348
+|-damage|p1a: Gyarados|261\/348|[from] Stealth Rock
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: SLICE
+|-unboost|p2a: SLICE|atk|1
+|turn|19
+|chat|Giggling Grannie|FUCKKKKKKKKKKKKKKKKKKK
+|chat|Giggling Grannie|WASTED
+|chat|Giggling Grannie|my amoonguss
+|chat|hegemoth|yes you did
+|
+|-formechange|p1a: Gyarados|Gyarados-Mega
+|message|Gyarados has Mega Evolved into Mega Gyarados!
+|-ability|p1a: Gyarados|Mold Breaker
+|move|p2a: SLICE|Return|p1a: Gyarados
+|-crit|p1a: Gyarados
+|-damage|p1a: Gyarados|0 fnt
+|faint|p1a: Gyarados
+|
+|
+|switch|p1a: Hydreigon|Hydreigon, M|174\/326 slp
+|-damage|p1a: Hydreigon|134\/326 slp|[from] Stealth Rock
+|turn|20
+|
+|move|p2a: SLICE|Return|p1a: Hydreigon
+|-damage|p1a: Hydreigon|0 fnt
+|faint|p1a: Hydreigon
+|
+|
+|switch|p1a: Aegislash|Aegislash, F|324\/324
+|-damage|p1a: Aegislash|304\/324|[from] Stealth Rock
+|-damage|p1a: Aegislash|250\/324|[from] Spikes
+|turn|21
+|
+|switch|p2a: Reptar|Tyranitar, M|404\/404
+|-weather|Sandstorm
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Sneak|p2a: Reptar
+|-resisted|p2a: Reptar
+|-damage|p2a: Reptar|362\/404
+|
+|-weather|Sandstorm|[upkeep]
+|turn|22
+|
+|switch|p2a: Panzaeron|Skarmory, M|334\/334
+|move|p1a: Aegislash|Shadow Sneak|p2a: Panzaeron
+|-damage|p2a: Panzaeron|282\/334
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Panzaeron|302\/334|[from] item: Leftovers
+|turn|23
+|
+|move|p1a: Aegislash|Shadow Sneak|p2a: Panzaeron
+|-damage|p2a: Panzaeron|254\/334
+|move|p2a: Panzaeron|Spikes|p1a: Aegislash
+|-sidestart|p1: hegemoth|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Panzaeron|274\/334|[from] item: Leftovers
+|turn|24
+|
+|move|p1a: Aegislash|Shadow Sneak|p2a: Panzaeron
+|-damage|p2a: Panzaeron|225\/334
+|move|p2a: Panzaeron|Roost|p2a: Panzaeron
+|-heal|p2a: Panzaeron|334\/334
+|
+|-weather|Sandstorm|[upkeep]
+|turn|25
+|
+|move|p1a: Aegislash|Shadow Sneak|p2a: Panzaeron
+|-damage|p2a: Panzaeron|279\/334
+|move|p2a: Panzaeron|Whirlwind|p1a: Aegislash
+|drag|p1a: Steelix|Steelix, M|343\/354
+|-damage|p1a: Steelix|332\/354|[from] Stealth Rock
+|-damage|p1a: Steelix|244\/354|[from] Spikes
+|
+|-weather|none
+|-heal|p2a: Panzaeron|299\/334|[from] item: Leftovers
+|turn|26
+|
+|switch|p1a: Aegislash|Aegislash, F|250\/324
+|-damage|p1a: Aegislash|169\/324|[from] Spikes
+|-damage|p1a: Aegislash|149\/324|[from] Stealth Rock
+|move|p2a: Panzaeron|Whirlwind|p1a: Aegislash
+|drag|p1a: Steelix|Steelix, M|244\/354
+|-damage|p1a: Steelix|233\/354|[from] Stealth Rock
+|-damage|p1a: Steelix|145\/354|[from] Spikes
+|
+|-heal|p2a: Panzaeron|319\/334|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: Steelix|Rest|p1a: Steelix
+|-status|p1a: Steelix|slp
+|-heal|p1a: Steelix|354\/354 slp|[silent]
+|-status|p1a: Steelix|slp|[from] move: Rest
+|-enditem|p1a: Steelix|Chesto Berry|[eat]
+|-curestatus|p1a: Steelix|slp
+|move|p2a: Panzaeron|Whirlwind|p1a: Steelix
+|drag|p1a: Aegislash|Aegislash, F|149\/324
+|-damage|p1a: Aegislash|129\/324|[from] Stealth Rock
+|-damage|p1a: Aegislash|48\/324|[from] Spikes
+|
+|-heal|p2a: Panzaeron|334\/334|[from] item: Leftovers
+|turn|28
+|
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Sneak|p2a: Panzaeron
+|-damage|p2a: Panzaeron|280\/334
+|move|p2a: Panzaeron|Whirlwind|p1a: Aegislash
+|drag|p1a: Steelix|Steelix, M|354\/354
+|-damage|p1a: Steelix|343\/354|[from] Stealth Rock
+|-damage|p1a: Steelix|255\/354|[from] Spikes
+|
+|-heal|p2a: Panzaeron|300\/334|[from] item: Leftovers
+|turn|29
+|
+|switch|p1a: Aegislash|Aegislash, F|48\/324
+|-damage|p1a: Aegislash|28\/324|[from] Stealth Rock
+|-damage|p1a: Aegislash|0 fnt|[from] Spikes
+|faint|p1a: Aegislash
+|move|p2a: Panzaeron|Whirlwind|p1: Aegislash|[notarget]
+|-notarget
+|
+|-heal|p2a: Panzaeron|320\/334|[from] item: Leftovers
+|
+|switch|p1a: Steelix|Steelix, M|255\/354
+|-damage|p1a: Steelix|167\/354|[from] Spikes
+|-damage|p1a: Steelix|156\/354|[from] Stealth Rock
+|turn|30
+|
+|switch|p2a: SLICE|Pinsir, F|275\/275
+|-formechange|p2a: SLICE|Pinsir-Mega
+|move|p1a: Steelix|Curse|p1a: Steelix
+|-boost|p1a: Steelix|atk|1
+|-boost|p1a: Steelix|def|1
+|-unboost|p1a: Steelix|spe|1
+|
+|turn|31
+|
+|move|p2a: SLICE|Swords Dance|p2a: SLICE
+|-boost|p2a: SLICE|atk|2
+|move|p1a: Steelix|Rest|p1a: Steelix
+|-status|p1a: Steelix|slp
+|-heal|p1a: Steelix|354\/354 slp|[silent]
+|-status|p1a: Steelix|slp|[from] move: Rest
+|
+|turn|32
+|-message|hegemoth forfeited.
+|
+|win|Giggling Grannie
+|raw|Ladder updating...
+|raw|hegemoth's rating: 1760 &rarr; <strong>1743<\/strong><br \/>(-17 for losing)
+|raw|Giggling Grannie's rating: 1807 &rarr; <strong>1824<\/strong><br \/>(+17 for winning)
+|leave|hegemoth
+|player|p1
+|leave|Giggling Grannie
+|player|p2

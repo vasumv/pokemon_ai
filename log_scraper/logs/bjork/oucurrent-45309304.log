@@ -1,0 +1,373 @@
+|join|Bjork
+|join|IllumixKillua
+|player|p1|Bjork|1
+|player|p2|IllumixKillua|163
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Garchomp, M
+|poke|p1|Alakazam, M
+|poke|p1|Skarmory, F
+|poke|p1|Salamence, F
+|poke|p1|Scizor, F
+|poke|p1|Kingdra, M
+|poke|p2|Breloom, M
+|poke|p2|Ninetales, M
+|poke|p2|Venusaur, M
+|poke|p2|Latias, F
+|poke|p2|Sigilyph, M
+|poke|p2|Ferrothorn, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Skarmory|Skarmory, F|271\/271
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|turn|1
+|callback|decision
+|
+|move|p1a: Skarmory|Taunt|p2a: Ferrothorn
+|-start|p2a: Ferrothorn|move: Taunt
+|cant|p2a: Ferrothorn|move: Taunt|Thunder Wave
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: Ninetales|Ninetales, M|288\/288
+|-weather|SunnyDay|[from] ability: Drought|[of] p2a: Ninetales
+|-item|p2a: Ninetales|Air Balloon
+|move|p1a: Skarmory|Stealth Rock|p2a: Ninetales
+|-sidestart|p2: IllumixKillua|move: Stealth Rock
+|
+|-weather|SunnyDay|[upkeep]
+|turn|3
+|callback|decision
+|
+|move|p2a: Ninetales|Flamethrower|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-activate|p1a: Skarmory|Sturdy
+|-damage|p1a: Skarmory|1\/271
+|move|p1a: Skarmory|Spikes|p2a: Ninetales
+|-sidestart|p2: IllumixKillua|Spikes
+|
+|-weather|SunnyDay|[upkeep]
+|turn|4
+|callback|decision
+|-enditem|p1a: Skarmory|Custap Berry|[eat]
+|-activate|p1a: Skarmory|Custap Berry
+|
+|move|p1a: Skarmory|Spikes|p2a: Ninetales
+|-sidestart|p2: IllumixKillua|Spikes
+|move|p2a: Ninetales|SolarBeam|p1a: Skarmory|[still]
+|-prepare|p2a: Ninetales|SolarBeam|p1a: Skarmory
+|-anim|p2a: Ninetales|SolarBeam|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|faint|p1a: Skarmory
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: Kingdra|Kingdra, M|291\/291
+|turn|5
+|callback|decision
+|
+|move|p2a: Ninetales|SolarBeam|p1a: Kingdra|[still]
+|-prepare|p2a: Ninetales|SolarBeam|p1a: Kingdra
+|-anim|p2a: Ninetales|SolarBeam|p1a: Kingdra
+|-damage|p1a: Kingdra|192\/291
+|move|p1a: Kingdra|Rain Dance|p1a: Kingdra
+|-weather|RainDance
+|
+|-weather|RainDance|[upkeep]
+|turn|6
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|-damage|p2a: Ferrothorn|294\/352|[from] Spikes
+|-damage|p2a: Ferrothorn|272\/352|[from] Stealth Rock
+|move|p1a: Kingdra|Hydro Pump|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|116\/352
+|-damage|p1a: Kingdra|163\/291|[from] item: Life Orb
+|
+|-weather|RainDance|[upkeep]
+|turn|7
+|callback|decision
+|
+|move|p1a: Kingdra|Hydro Pump|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|-damage|p1a: Kingdra|134\/291|[from] item: Life Orb
+|faint|p2a: Ferrothorn
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Breloom|Breloom, M|324\/324
+|-damage|p2a: Breloom|270\/324|[from] Spikes
+|-damage|p2a: Breloom|250\/324|[from] Stealth Rock
+|turn|8
+|callback|decision
+|
+|switch|p1a: Salamence|Salamence, F|331\/331
+|move|p2a: Breloom|Spore|p1a: Salamence
+|-status|p1a: Salamence|slp
+|
+|-weather|RainDance|[upkeep]
+|-activate|p2a: Breloom|item: Toxic Orb
+|-status|p2a: Breloom|tox
+|turn|9
+|callback|decision
+|
+|switch|p1a: Alakazam|Alakazam, M|252\/252
+|move|p2a: Breloom|Leech Seed|p1a: Alakazam
+|-start|p1a: Alakazam|move: Leech Seed
+|
+|-weather|none
+|-heal|p2a: Breloom|290\/324 tox|[from] ability: Poison Heal
+|turn|10
+|callback|decision
+|
+|switch|p2a: Latias|Latias, F|364\/364
+|-damage|p2a: Latias|319\/364|[from] Stealth Rock
+|move|p1a: Alakazam|Psychic|p2a: Latias
+|-resisted|p2a: Latias
+|-damage|p2a: Latias|253\/364
+|
+|-heal|p2a: Latias|275\/364|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p1a: Alakazam|Shadow Ball|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|123\/364
+|move|p2a: Latias|Calm Mind|p2a: Latias
+|-boost|p2a: Latias|spa|1
+|-boost|p2a: Latias|spd|1
+|
+|-heal|p2a: Latias|145\/364|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|343\/343
+|move|p2a: Latias|Roost|p2a: Latias
+|-heal|p2a: Latias|327\/364
+|
+|-heal|p2a: Latias|349\/364|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, M|358\/358
+|move|p2a: Latias|Calm Mind|p2a: Latias
+|-boost|p2a: Latias|spa|1
+|-boost|p2a: Latias|spd|1
+|
+|-heal|p2a: Latias|364\/364|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: Garchomp|Outrage|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|22\/364
+|move|p2a: Latias|Dragon Pulse|p1a: Garchomp
+|-supereffective|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|faint|p1a: Garchomp
+|
+|-heal|p2a: Latias|44\/364|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Alakazam|Alakazam, M|252\/252
+|turn|15
+|callback|decision
+|
+|move|p1a: Alakazam|Shadow Ball|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|0 fnt
+|faint|p2a: Latias
+|
+|callback|decision
+|
+|switch|p2a: Ninetales|Ninetales, M|288\/288
+|-damage|p2a: Ninetales|216\/288|[from] Stealth Rock
+|-weather|SunnyDay|[from] ability: Drought|[of] p2a: Ninetales
+|-item|p2a: Ninetales|Air Balloon
+|turn|16
+|callback|decision
+|
+|switch|p1a: Salamence|Salamence, F|331\/331 slp
+|move|p2a: Ninetales|Flamethrower|p1a: Salamence
+|-resisted|p1a: Salamence
+|-damage|p1a: Salamence|202\/331 slp
+|
+|-weather|SunnyDay|[upkeep]
+|turn|17
+|callback|decision
+|
+|cant|p1a: Salamence|slp
+|move|p2a: Ninetales|Flamethrower|p1a: Salamence
+|-resisted|p1a: Salamence
+|-damage|p1a: Salamence|75\/331 slp
+|
+|-weather|SunnyDay|[upkeep]
+|turn|18
+|callback|decision
+|
+|cant|p1a: Salamence|slp
+|move|p2a: Ninetales|Flamethrower|p1a: Salamence
+|-resisted|p1a: Salamence
+|-damage|p1a: Salamence|0 fnt
+|faint|p1a: Salamence
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: Kingdra|Kingdra, M|134\/291
+|turn|19
+|callback|decision
+|
+|move|p2a: Ninetales|SolarBeam|p1a: Kingdra|[still]
+|-prepare|p2a: Ninetales|SolarBeam|p1a: Kingdra
+|-anim|p2a: Ninetales|SolarBeam|p1a: Kingdra
+|-damage|p1a: Kingdra|21\/291
+|move|p1a: Kingdra|Rain Dance|p1a: Kingdra
+|-weather|RainDance
+|
+|-weather|RainDance|[upkeep]
+|turn|20
+|callback|decision
+|
+|switch|p2a: Breloom|Breloom, M|290\/324 tox
+|-damage|p2a: Breloom|236\/324 tox|[from] Spikes
+|-damage|p2a: Breloom|216\/324 tox|[from] Stealth Rock
+|move|p1a: Kingdra|Draco Meteor|p2a: Breloom
+|-damage|p2a: Breloom|0 fnt
+|-unboost|p1a: Kingdra|spa|2
+|-damage|p1a: Kingdra|0 fnt|[from] item: Life Orb
+|faint|p2a: Breloom
+|faint|p1a: Kingdra
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Alakazam|Alakazam, M|252\/252
+|switch|p2a: Ninetales|Ninetales, M|216\/288
+|-damage|p2a: Ninetales|144\/288|[from] Stealth Rock
+|-weather|SunnyDay|[from] ability: Drought|[of] p2a: Ninetales
+|-item|p2a: Ninetales|Air Balloon
+|turn|21
+|callback|decision
+|
+|move|p1a: Alakazam|Psychic|p2a: Ninetales
+|-damage|p2a: Ninetales|0 fnt
+|-enditem|p2a: Ninetales|Air Balloon
+|faint|p2a: Ninetales
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p2a: Time2FuckShitUp|Sigilyph, M|348\/348
+|turn|22
+|callback|decision
+|
+|move|p1a: Alakazam|Shadow Ball|p2a: Time2FuckShitUp
+|-supereffective|p2a: Time2FuckShitUp
+|-damage|p2a: Time2FuckShitUp|196\/348
+|-unboost|p2a: Time2FuckShitUp|spd|1
+|move|p2a: Time2FuckShitUp|Cosmic Power|p2a: Time2FuckShitUp
+|-boost|p2a: Time2FuckShitUp|def|1
+|-boost|p2a: Time2FuckShitUp|spd|1
+|
+|-weather|SunnyDay|[upkeep]
+|-activate|p2a: Time2FuckShitUp|item: Flame Orb
+|-status|p2a: Time2FuckShitUp|brn
+|turn|23
+|callback|decision
+|
+|move|p1a: Alakazam|Shadow Ball|p2a: Time2FuckShitUp
+|-supereffective|p2a: Time2FuckShitUp
+|-damage|p2a: Time2FuckShitUp|42\/348 brn
+|move|p2a: Time2FuckShitUp|Roost|p2a: Time2FuckShitUp
+|-heal|p2a: Time2FuckShitUp|216\/348 brn
+|
+|-weather|SunnyDay|[upkeep]
+|turn|24
+|callback|decision
+|
+|move|p1a: Alakazam|Shadow Ball|p2a: Time2FuckShitUp
+|-crit|p2a: Time2FuckShitUp
+|-supereffective|p2a: Time2FuckShitUp
+|-damage|p2a: Time2FuckShitUp|0 fnt
+|faint|p2a: Time2FuckShitUp
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p2a: Venusaur|Venusaur, M|302\/302
+|-damage|p2a: Venusaur|252\/302|[from] Spikes
+|-damage|p2a: Venusaur|215\/302|[from] Stealth Rock
+|turn|25
+|callback|decision
+|
+|move|p2a: Venusaur|Sleep Powder|p1a: Alakazam
+|-status|p1a: Alakazam|slp
+|cant|p1a: Alakazam|slp
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Venusaur|233\/302|[from] item: Black Sludge
+|turn|26
+|callback|decision
+|
+|move|p2a: Venusaur|Hidden Power|p1a: Alakazam
+|-damage|p1a: Alakazam|118\/252 slp
+|cant|p1a: Alakazam|slp
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Venusaur|251\/302|[from] item: Black Sludge
+|turn|27
+|callback|decision
+|
+|move|p2a: Venusaur|Hidden Power|p1a: Alakazam
+|-damage|p1a: Alakazam|0 fnt
+|faint|p1a: Alakazam
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Venusaur|269\/302|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|343\/343
+|turn|28
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Venusaur
+|-damage|p2a: Venusaur|77\/302
+|move|p2a: Venusaur|Sleep Powder|p1a: Scizor
+|-status|p1a: Scizor|slp
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Venusaur|95\/302|[from] item: Black Sludge
+|turn|29
+|callback|decision
+|
+|cant|p1a: Scizor|slp
+|move|p2a: Venusaur|Hidden Power|p1a: Scizor
+|-supereffective|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|faint|p1a: Scizor
+|
+|win|IllumixKillua
+|raw|Ladder updating...
+|raw|Bjork's rating: 2785 &rarr; <strong>2767<\/strong><br \/>(-18 for losing)
+|raw|IllumixKillua's rating: 2302 &rarr; <strong>2434<\/strong><br \/>(+132 for winning)
+|leave|Bjork
+|player|p1
+|chat|IllumixKillua|GG

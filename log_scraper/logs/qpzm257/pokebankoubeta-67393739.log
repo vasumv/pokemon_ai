@@ -1,0 +1,502 @@
+|join|Jim Stevens
+|join|qpzm257
+|player|p1|Jim Stevens|101
+|player|p2|qpzm257|101
+|gametype|singles
+|tier|Pokebank OU (beta)
+|rated
+|clearpoke
+|poke|p1|Magnezone
+|poke|p1|Clefable, M
+|poke|p1|Mamoswine, M
+|poke|p1|Hawlucha, M
+|poke|p1|Milotic, M
+|poke|p1|Manectric, M
+|poke|p2|Alakazam, M
+|poke|p2|Dragonite, F
+|poke|p2|Heatran, M
+|poke|p2|Scizor, F
+|poke|p2|Trevenant, F
+|poke|p2|Vaporeon, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Hawlucha|Hawlucha, M|360\/360
+|switch|p2a: Heatran|Heatran, M|386\/386
+|turn|1
+|callback|decision
+|
+|move|p1a: Hawlucha|U-turn|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|375\/386
+|callback|decision
+|
+|switch|p1a: Milotic|Milotic, M|394\/394
+|move|p2a: Heatran|Magma Storm|p1a: Milotic
+|-resisted|p1a: Milotic
+|-damage|p1a: Milotic|322\/394
+|-activate|p1a: Milotic|move: Magma Storm|[of] p2a: Heatran
+|
+|-heal|p1a: Milotic|346\/394|[from] item: Leftovers
+|-damage|p1a: Milotic|297\/394|[from] move: Magma Storm|[partiallytrapped]
+|turn|2
+|callback|decision
+|
+|move|p1a: Milotic|Scald|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|211\/386
+|move|p2a: Heatran|Stealth Rock|p1a: Milotic
+|-sidestart|p1: Jim Stevens|move: Stealth Rock
+|
+|-heal|p1a: Milotic|321\/394|[from] item: Leftovers
+|-damage|p1a: Milotic|272\/394|[from] move: Magma Storm|[partiallytrapped]
+|turn|3
+|callback|decision
+|
+|switch|p2a: Trevenant|Trevenant, F|374\/374
+|move|p1a: Milotic|Scald|p2a: Trevenant
+|-resisted|p2a: Trevenant
+|-damage|p2a: Trevenant|314\/374
+|-status|p2a: Trevenant|brn
+|
+|-heal|p1a: Milotic|296\/394|[from] item: Leftovers
+|-damage|p2a: Trevenant|268\/374 brn|[from] brn
+|-end|p1a: Milotic|Magma Storm|[partiallytrapped]
+|turn|4
+|callback|decision
+|
+|move|p1a: Milotic|Ice Beam|p2a: Trevenant
+|-supereffective|p2a: Trevenant
+|-damage|p2a: Trevenant|88\/374 brn
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|181\/374 brn|[from] item: Sitrus Berry
+|move|p2a: Trevenant|Leech Seed|p1a: Milotic
+|-start|p1a: Milotic|move: Leech Seed
+|
+|-heal|p1a: Milotic|320\/394|[from] item: Leftovers
+|-damage|p1a: Milotic|271\/394|[from] Leech Seed|[of] p2a: Trevenant
+|-heal|p2a: Trevenant|230\/374 brn|[silent]
+|-damage|p2a: Trevenant|184\/374 brn|[from] brn
+|-item|p2a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|277\/374 brn|[from] item: Sitrus Berry
+|turn|5
+|callback|decision
+|
+|switch|p1a: Hawlucha|Hawlucha, M|360\/360
+|-damage|p1a: Hawlucha|315\/360|[from] Stealth Rock
+|move|p2a: Trevenant|Toxic|p1a: Hawlucha
+|-status|p1a: Hawlucha|tox
+|-enditem|p1a: Hawlucha|Lum Berry|[eat]
+|-curestatus|p1a: Hawlucha|tox
+|
+|-damage|p2a: Trevenant|231\/374 brn|[from] brn
+|-item|p2a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|turn|6
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, M|464\/464
+|move|p1a: Hawlucha|Taunt|p2a: Vaporeon
+|-start|p2a: Vaporeon|move: Taunt
+|
+|turn|7
+|callback|decision
+|
+|move|p1a: Hawlucha|High Jump Kick|p2a: Vaporeon
+|-damage|p2a: Vaporeon|334\/464
+|move|p2a: Vaporeon|Scald|p1a: Hawlucha
+|-damage|p1a: Hawlucha|173\/360
+|
+|-heal|p2a: Vaporeon|363\/464|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p1a: Hawlucha|U-turn|p2a: Vaporeon
+|-damage|p2a: Vaporeon|311\/464
+|callback|decision
+|
+|switch|p1a: Manectric|Manectric, M|281\/281
+|-damage|p1a: Manectric|246\/281|[from] Stealth Rock
+|move|p2a: Vaporeon|Scald|p1a: Manectric
+|-damage|p1a: Manectric|86\/281
+|
+|-heal|p2a: Vaporeon|340\/464|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p2a: Trevenant|Trevenant, F|231\/374 brn
+|move|p1a: Manectric|Volt Switch|p2a: Trevenant
+|-resisted|p2a: Trevenant
+|-damage|p2a: Trevenant|165\/374 brn
+|callback|decision
+|
+|switch|p1a: Mamoswine|Mamoswine, M|361\/361
+|-damage|p1a: Mamoswine|316\/361|[from] Stealth Rock
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|258\/374 brn|[from] item: Sitrus Berry
+|
+|-damage|p2a: Trevenant|212\/374 brn|[from] brn
+|-item|p2a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|turn|10
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, M|340\/464
+|move|p1a: Mamoswine|Ice Shard|p2a: Vaporeon
+|-resisted|p2a: Vaporeon
+|-damage|p2a: Vaporeon|293\/464
+|-damage|p1a: Mamoswine|280\/361|[from] item: Life Orb
+|
+|-heal|p2a: Vaporeon|322\/464|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p1a: Mamoswine|Earthquake|p2a: Vaporeon
+|-damage|p2a: Vaporeon|100\/464
+|-damage|p1a: Mamoswine|244\/361|[from] item: Life Orb
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-heal|p2a: Vaporeon|129\/464|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: Vaporeon|Protect|p2a: Vaporeon
+|-singleturn|p2a: Vaporeon|Protect
+|move|p1a: Mamoswine|Stealth Rock|p2a: Vaporeon
+|-sidestart|p2: qpzm257|move: Stealth Rock
+|
+|-heal|p2a: Vaporeon|361\/464|[from] move: Wish|[wisher] Vaporeon
+|-heal|p2a: Vaporeon|390\/464|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p1a: Milotic|Milotic, M|271\/394
+|-damage|p1a: Milotic|222\/394|[from] Stealth Rock
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-heal|p1a: Milotic|246\/394|[from] item: Leftovers
+|-heal|p2a: Vaporeon|419\/464|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p2a: Trevenant|Trevenant, F|212\/374 brn
+|-damage|p2a: Trevenant|166\/374 brn|[from] Stealth Rock
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|259\/374 brn|[from] item: Sitrus Berry
+|move|p1a: Milotic|Ice Beam|p2a: Trevenant
+|-supereffective|p2a: Trevenant
+|-damage|p2a: Trevenant|103\/374 brn
+|
+|-heal|p2a: Trevenant|335\/374 brn|[from] move: Wish|[wisher] Vaporeon
+|-heal|p1a: Milotic|270\/394|[from] item: Leftovers
+|-damage|p2a: Trevenant|289\/374 brn|[from] brn
+|-item|p2a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|turn|15
+|callback|decision
+|
+|switch|p1a: Hawlucha|Hawlucha, M|173\/360
+|-damage|p1a: Hawlucha|128\/360|[from] Stealth Rock
+|move|p2a: Trevenant|Leech Seed|p1a: Hawlucha
+|-start|p1a: Hawlucha|move: Leech Seed
+|
+|-damage|p1a: Hawlucha|83\/360|[from] Leech Seed|[of] p2a: Trevenant
+|-heal|p2a: Trevenant|334\/374 brn|[silent]
+|-damage|p2a: Trevenant|288\/374 brn|[from] brn
+|turn|16
+|callback|decision
+|
+|move|p1a: Hawlucha|Roost|p1a: Hawlucha
+|-heal|p1a: Hawlucha|263\/360
+|move|p2a: Trevenant|Shadow Claw|p1a: Hawlucha
+|-damage|p1a: Hawlucha|205\/360
+|
+|-damage|p1a: Hawlucha|160\/360|[from] Leech Seed|[of] p2a: Trevenant
+|-heal|p2a: Trevenant|333\/374 brn|[silent]
+|-damage|p2a: Trevenant|287\/374 brn|[from] brn
+|turn|17
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, M|419\/464
+|-damage|p2a: Vaporeon|361\/464|[from] Stealth Rock
+|move|p1a: Hawlucha|Roost|p1a: Hawlucha
+|-heal|p1a: Hawlucha|340\/360
+|
+|-heal|p2a: Vaporeon|390\/464|[from] item: Leftovers
+|-damage|p1a: Hawlucha|295\/360|[from] Leech Seed|[of] p2a: Vaporeon
+|-heal|p2a: Vaporeon|435\/464|[silent]
+|turn|18
+|callback|decision
+|
+|move|p1a: Hawlucha|U-turn|p2a: Vaporeon
+|-damage|p2a: Vaporeon|387\/464
+|callback|decision
+|
+|switch|p1a: Milotic|Milotic, M|270\/394
+|-damage|p1a: Milotic|221\/394|[from] Stealth Rock
+|move|p2a: Vaporeon|Scald|p1a: Milotic
+|-resisted|p1a: Milotic
+|-damage|p1a: Milotic|188\/394
+|
+|-heal|p1a: Milotic|212\/394|[from] item: Leftovers
+|-heal|p2a: Vaporeon|416\/464|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p1a: Milotic|Scald|p2a: Vaporeon
+|-heal|p2a: Vaporeon|464\/464|[from] ability: Water Absorb|[of] p1a: Milotic
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-heal|p1a: Milotic|236\/394|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p1a: Milotic|Scald|p2a: Vaporeon
+|-immune|p2a: Vaporeon|[msg]
+|move|p2a: Vaporeon|Roar|p1a: Milotic
+|drag|p1a: Hawlucha|Hawlucha, M|295\/360
+|-damage|p1a: Hawlucha|250\/360|[from] Stealth Rock
+|
+|turn|21
+|callback|decision
+|
+|move|p1a: Hawlucha|Taunt|p2a: Vaporeon
+|-start|p2a: Vaporeon|move: Taunt
+|move|p2a: Vaporeon|Scald|p1a: Hawlucha
+|-damage|p1a: Hawlucha|105\/360
+|
+|turn|22
+|callback|decision
+|
+|move|p1a: Hawlucha|U-turn|p2a: Vaporeon
+|-damage|p2a: Vaporeon|414\/464
+|callback|decision
+|
+|switch|p1a: Clefable|Clefable, M|394\/394
+|move|p2a: Vaporeon|Scald|p1a: Clefable
+|-damage|p1a: Clefable|292\/394
+|
+|-heal|p2a: Vaporeon|443\/464|[from] item: Leftovers
+|-heal|p1a: Clefable|316\/394|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, F|344\/344
+|-damage|p2a: Scizor|301\/344|[from] Stealth Rock
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|
+|-heal|p1a: Clefable|340\/394|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|-formechange|p2a: Scizor|Scizor-Mega
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p2a: Scizor|Swords Dance|p2a: Scizor
+|-boost|p2a: Scizor|atk|2
+|move|p1a: Clefable|Fire Blast|p2a: Scizor
+|-crit|p2a: Scizor
+|-supereffective|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|faint|p2a: Scizor
+|
+|-heal|p1a: Clefable|364\/394|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, M|443\/464
+|-damage|p2a: Vaporeon|385\/464|[from] Stealth Rock
+|turn|25
+|callback|decision
+|
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|move|p2a: Vaporeon|Roar|p1a: Clefable
+|drag|p1a: Manectric|Manectric, M|86\/281
+|-damage|p1a: Manectric|51\/281|[from] Stealth Rock
+|
+|-heal|p2a: Vaporeon|414\/464|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|move|p1a: Manectric|Switcheroo|p2a: Vaporeon
+|-activate|p1a: Manectric|move: Trick|[of] p2a: Vaporeon
+|-item|p2a: Vaporeon|Choice Scarf|[from] Trick
+|-item|p1a: Manectric|Leftovers|[from] Trick
+|move|p2a: Vaporeon|Scald|p1a: Manectric
+|-damage|p1a: Manectric|0 fnt
+|faint|p1a: Manectric
+|
+|callback|decision
+|
+|switch|p1a: Clefable|Clefable, M|364\/394
+|turn|27
+|callback|decision
+|
+|switch|p2a: Trevenant|Trevenant, F|287\/374 brn
+|-damage|p2a: Trevenant|241\/374 brn|[from] Stealth Rock
+|move|p1a: Clefable|Moonblast|p2a: Trevenant
+|-damage|p2a: Trevenant|117\/374 brn
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|210\/374 brn|[from] item: Sitrus Berry
+|
+|-heal|p1a: Clefable|388\/394|[from] item: Leftovers
+|-damage|p2a: Trevenant|164\/374 brn|[from] brn
+|turn|28
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, M|211\/386
+|-damage|p2a: Heatran|163\/386|[from] Stealth Rock
+|move|p1a: Clefable|Fire Blast|p2a: Heatran
+|-start|p2a: Heatran|ability: Flash Fire
+|
+|-heal|p1a: Clefable|394\/394|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|move|p2a: Heatran|Magma Storm|p1a: Clefable
+|-crit|p1a: Clefable
+|-damage|p1a: Clefable|0 fnt
+|faint|p1a: Clefable
+|
+|callback|decision
+|
+|switch|p1a: Mamoswine|Mamoswine, M|244\/361
+|-damage|p1a: Mamoswine|199\/361|[from] Stealth Rock
+|turn|30
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, M|414\/464
+|-damage|p2a: Vaporeon|356\/464|[from] Stealth Rock
+|move|p1a: Mamoswine|Earthquake|p2a: Vaporeon
+|-damage|p2a: Vaporeon|134\/464
+|-damage|p1a: Mamoswine|163\/361|[from] item: Life Orb
+|
+|turn|31
+|callback|decision
+|
+|move|p1a: Mamoswine|Earthquake|p2a: Vaporeon
+|-damage|p2a: Vaporeon|0 fnt
+|-damage|p1a: Mamoswine|127\/361|[from] item: Life Orb
+|faint|p2a: Vaporeon
+|
+|callback|decision
+|
+|switch|p2a: Alakazam|Alakazam, M|251\/251
+|turn|32
+|callback|decision
+|
+|move|p1a: Mamoswine|Ice Shard|p2a: Alakazam
+|-damage|p2a: Alakazam|79\/251
+|-damage|p1a: Mamoswine|91\/361|[from] item: Life Orb
+|move|p2a: Alakazam|Psyshock|p1a: Mamoswine
+|-damage|p1a: Mamoswine|0 fnt
+|faint|p1a: Mamoswine
+|
+|callback|decision
+|
+|switch|p1a: Hawlucha|Hawlucha, M|105\/360
+|-damage|p1a: Hawlucha|60\/360|[from] Stealth Rock
+|turn|33
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, M|163\/386
+|-damage|p2a: Heatran|115\/386|[from] Stealth Rock
+|move|p1a: Hawlucha|U-turn|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|102\/386
+|callback|decision
+|
+|switch|p1a: Milotic|Milotic, M|236\/394
+|-damage|p1a: Milotic|187\/394|[from] Stealth Rock
+|
+|-heal|p1a: Milotic|211\/394|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|move|p1a: Milotic|Ice Beam|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|85\/386
+|move|p2a: Heatran|Magma Storm|p1a: Milotic|[miss]
+|-miss|p2a: Heatran|p1a: Milotic
+|
+|-heal|p1a: Milotic|235\/394|[from] item: Leftovers
+|turn|35
+|callback|decision
+|
+|move|p1a: Milotic|Scald|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|faint|p2a: Heatran
+|
+|-heal|p1a: Milotic|259\/394|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Alakazam|Alakazam, M|79\/251
+|turn|36
+|callback|decision
+|
+|move|p2a: Alakazam|Psyshock|p1a: Milotic
+|-damage|p1a: Milotic|78\/394
+|move|p1a: Milotic|Scald|p2a: Alakazam
+|-damage|p2a: Alakazam|0 fnt
+|faint|p2a: Alakazam
+|
+|-heal|p1a: Milotic|102\/394|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Dragonite|Dragonite, F|324\/324
+|-damage|p2a: Dragonite|243\/324|[from] Stealth Rock
+|turn|37
+|callback|decision
+|
+|move|p2a: Dragonite|Extreme Speed|p1a: Milotic
+|-damage|p1a: Milotic|0 fnt
+|faint|p1a: Milotic
+|
+|callback|decision
+|
+|switch|p1a: Magnezone|Magnezone|344\/344
+|-damage|p1a: Magnezone|323\/344|[from] Stealth Rock
+|turn|38
+|callback|decision
+|
+|move|p2a: Dragonite|Fire Punch|p1a: Magnezone
+|-supereffective|p1a: Magnezone
+|-damage|p1a: Magnezone|137\/344
+|move|p1a: Magnezone|Thunder Wave|p2a: Dragonite
+|-status|p2a: Dragonite|par
+|-enditem|p2a: Dragonite|Lum Berry|[eat]
+|-curestatus|p2a: Dragonite|par
+|
+|turn|39
+|callback|decision
+|
+|move|p2a: Dragonite|Fire Punch|p1a: Magnezone
+|-supereffective|p1a: Magnezone
+|-damage|p1a: Magnezone|0 fnt
+|faint|p1a: Magnezone
+|
+|callback|decision
+|
+|switch|p1a: Hawlucha|Hawlucha, M|60\/360
+|-damage|p1a: Hawlucha|15\/360|[from] Stealth Rock
+|turn|40
+|callback|decision
+|chat|Jim Stevens|gg
+|chat|qpzm257|gg
+|
+|move|p2a: Dragonite|Extreme Speed|p1a: Hawlucha
+|-damage|p1a: Hawlucha|0 fnt
+|faint|p1a: Hawlucha
+|
+|win|qpzm257
+|raw|Ladder updating...
+|raw|Jim Stevens's rating: 1687 &rarr; <strong>1678<\/strong><br \/>(-9 for losing)
+|raw|qpzm257's rating: 1742 &rarr; <strong>1746<\/strong><br \/>(+4 for winning)

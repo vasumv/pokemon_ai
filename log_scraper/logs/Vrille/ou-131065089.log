@@ -1,0 +1,140 @@
+|join|Gloating
+|join|Vrille
+|player|p1|Gloating|101
+|player|p2|Vrille|283
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Gyarados, F
+|poke|p1|Tyranitar, F
+|poke|p1|Excadrill, F
+|poke|p1|Breloom, M, shiny
+|poke|p1|Dragonite, M
+|poke|p1|Kyurem-Black
+|poke|p2|Excadrill, F
+|poke|p2|Tornadus-Therian, M
+|poke|p2|Suicune
+|poke|p2|Landorus-Therian, M
+|poke|p2|Charizard, M
+|poke|p2|Ferrothorn, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Kyurem-Black|Kyurem-Black|392\/392
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M|341\/341
+|-ability|p1a: Kyurem-Black|Teravolt
+|turn|1
+|
+|move|p2a: Tornadus-Therian|U-turn|p1a: Kyurem-Black
+|-damage|p1a: Kyurem-Black|340\/392
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|move|p1a: Kyurem-Black|Ice Beam|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|232\/352
+|
+|-heal|p1a: Kyurem-Black|364\/392|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|254\/352|[from] item: Leftovers
+|turn|2
+|
+|move|p1a: Kyurem-Black|Ice Beam|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|130\/352
+|move|p2a: Ferrothorn|Knock Off|p1a: Kyurem-Black
+|-damage|p1a: Kyurem-Black|297\/392
+|-enditem|p1a: Kyurem-Black|Leftovers|[from] move: Knock Off|[of] p2a: Ferrothorn
+|
+|-heal|p2a: Ferrothorn|152\/352|[from] item: Leftovers
+|turn|3
+|
+|move|p1a: Kyurem-Black|Ice Beam|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|20\/352
+|-status|p2a: Ferrothorn|frz
+|cant|p2a: Ferrothorn|frz
+|
+|-heal|p2a: Ferrothorn|42\/352 frz|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Suicune|Suicune|403\/403
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Kyurem-Black|Ice Beam|p2a: Suicune
+|-resisted|p2a: Suicune
+|-damage|p2a: Suicune|325\/403
+|
+|-heal|p2a: Suicune|350\/403|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Excadrill|Excadrill, F|362\/362
+|-ability|p2a: Excadrill|Mold Breaker
+|move|p1a: Kyurem-Black|Substitute|p1a: Kyurem-Black
+|-start|p1a: Kyurem-Black|Substitute
+|-damage|p1a: Kyurem-Black|199\/392
+|
+|turn|6
+|
+|switch|p2a: Suicune|Suicune|350\/403
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Kyurem-Black|Earth Power|p2a: Suicune
+|-damage|p2a: Suicune|243\/403
+|-unboost|p2a: Suicune|spd|1
+|
+|-heal|p2a: Suicune|268\/403|[from] item: Leftovers
+|turn|7
+|
+|move|p1a: Kyurem-Black|Earth Power|p2a: Suicune
+|-damage|p2a: Suicune|110\/403
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p2a: Suicune|135\/403|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: Kyurem-Black|Earth Power|p2a: Suicune
+|-damage|p2a: Suicune|34\/403
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|403\/403 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|
+|turn|9
+|
+|move|p1a: Kyurem-Black|Roost|p1a: Kyurem-Black
+|-heal|p1a: Kyurem-Black|392\/392
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Scald|p1a: Kyurem-Black|[from]Sleep Talk
+|-resisted|p1a: Kyurem-Black
+|-activate|p1a: Kyurem-Black|Substitute|[damage]
+|
+|turn|10
+|
+|switch|p1a: Breloom|Breloom, M, shiny|262\/262
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Calm Mind|p2a: Suicune|[from]Sleep Talk
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|turn|11
+|
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M|341\/341
+|move|p1a: Breloom|Rock Tomb|p2a: Tornadus-Therian
+|-supereffective|p2a: Tornadus-Therian
+|-damage|p2a: Tornadus-Therian|71\/341
+|-unboost|p2a: Tornadus-Therian|spe|1
+|
+|turn|12
+|-message|Vrille forfeited.
+|leave|Vrille
+|
+|win|Gloating
+|raw|Ladder updating...
+|player|p2

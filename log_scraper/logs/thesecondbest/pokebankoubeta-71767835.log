@@ -1,0 +1,415 @@
+|join|thesecondbest
+|join|United States
+|player|p1|thesecondbest|25
+|player|p2|United States|160
+|gametype|singles
+|tier|Pokebank OU (beta)
+|rated
+|clearpoke
+|poke|p1|Mandibuzz, F
+|poke|p1|Florges, F
+|poke|p1|Tentacruel, F
+|poke|p1|Genesect
+|poke|p1|Lucario, F
+|poke|p1|Landorus-Therian, M
+|poke|p2|Kingdra, F
+|poke|p2|Politoed, M
+|poke|p2|Goodra, F
+|poke|p2|Ludicolo, M
+|poke|p2|Espeon, M
+|poke|p2|Azumarill, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Genesect|Genesect|283\/283
+|switch|p2a: LeapFrogTM|Politoed, M|321\/321
+|-boost|p1a: Genesect|atk|1|[from] ability: Download
+|-weather|RainDance
+|turn|1
+|callback|decision
+|
+|switch|p2a: Barney|Goodra, F|384\/384
+|move|p1a: Genesect|U-turn|p2a: Barney
+|-damage|p2a: Barney|179\/384
+|callback|decision
+|
+|switch|p1a: Tentacruel|Tentacruel, F|364\/364
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Barney|203\/384|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|move|p1a: Tentacruel|Scald|p2a: Barney
+|-resisted|p2a: Barney
+|-damage|p2a: Barney|164\/384
+|move|p2a: Barney|Curse|p1a: Tentacruel
+|-boost|p2a: Barney|atk|1
+|-boost|p2a: Barney|def|1
+|-unboost|p2a: Barney|spe|1
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Barney|188\/384|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p1a: Tentacruel|Sludge Wave|p2a: Barney
+|-damage|p2a: Barney|118\/384
+|move|p2a: Barney|Curse|p1a: Tentacruel
+|-boost|p2a: Barney|atk|1
+|-boost|p2a: Barney|def|1
+|-unboost|p2a: Barney|spe|1
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Barney|142\/384|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Barney|Rest|p2a: Barney
+|-status|p2a: Barney|slp
+|-heal|p2a: Barney|384\/384 slp|[silent]
+|-status|p2a: Barney|slp|[from] move: Rest
+|
+|-weather|RainDance|[upkeep]
+|-curestatus|p2a: Barney|slp
+|turn|5
+|callback|decision
+|
+|move|p1a: Florges|Moonblast|p2a: Barney
+|-supereffective|p2a: Barney
+|-damage|p2a: Barney|214\/384
+|move|p2a: Barney|Earthquake|p1a: Florges
+|-damage|p1a: Florges|55\/360
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Florges|77\/360|[from] item: Leftovers
+|-heal|p2a: Barney|238\/384|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p1a: Florges|Moonblast|p2a: Barney
+|-supereffective|p2a: Barney
+|-damage|p2a: Barney|68\/384
+|-unboost|p2a: Barney|spa|1
+|move|p2a: Barney|Rest|p2a: Barney
+|-status|p2a: Barney|slp
+|-heal|p2a: Barney|384\/384 slp|[silent]
+|-status|p2a: Barney|slp|[from] move: Rest
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Florges|99\/360|[from] item: Leftovers
+|-curestatus|p2a: Barney|slp
+|turn|7
+|callback|decision
+|
+|move|p1a: Florges|Moonblast|p2a: Barney
+|-supereffective|p2a: Barney
+|-damage|p2a: Barney|204\/384
+|move|p2a: Barney|Earthquake|p1a: Florges
+|-damage|p1a: Florges|0 fnt
+|faint|p1a: Florges
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Barney|228\/384|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|283\/283
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|turn|8
+|callback|decision
+|
+|move|p1a: Genesect|Ice Beam|p2a: Barney
+|-supereffective|p2a: Barney
+|-damage|p2a: Barney|8\/384
+|move|p2a: Barney|Curse|p1a: Genesect
+|-boost|p2a: Barney|atk|1
+|-boost|p2a: Barney|def|1
+|-unboost|p2a: Barney|spe|1
+|
+|-weather|none
+|-heal|p2a: Barney|32\/384|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p2a: LeapFrogTM|Politoed, M|321\/321
+|-weather|RainDance
+|move|p1a: Genesect|Ice Beam|p2a: LeapFrogTM
+|-resisted|p2a: LeapFrogTM
+|-damage|p2a: LeapFrogTM|244\/321
+|
+|-weather|RainDance|[upkeep]
+|turn|10
+|callback|decision
+|
+|switch|p1a: Tentacruel|Tentacruel, F|364\/364
+|switch|p2a: Barney|Goodra, F|32\/384
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Barney|56\/384|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p1a: Tentacruel|Sludge Wave|p2a: Barney
+|-damage|p2a: Barney|0 fnt
+|faint|p2a: Barney
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|chat|thesecondbest|xD
+|
+|switch|p2a: Typhoon|Kingdra, F|354\/354
+|turn|12
+|callback|decision
+|
+|move|p2a: Typhoon|Draco Meteor|p1a: Tentacruel
+|-damage|p1a: Tentacruel|247\/364
+|-unboost|p2a: Typhoon|spa|2
+|-damage|p2a: Typhoon|319\/354|[from] item: Life Orb
+|move|p1a: Tentacruel|Sludge Wave|p2a: Typhoon
+|-crit|p2a: Typhoon
+|-damage|p2a: Typhoon|166\/354
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Tentacruel|269\/364|[from] item: Black Sludge
+|turn|13
+|callback|decision
+|chat|United States|ok you killed the purple dino
+|
+|move|p2a: Typhoon|Outrage|p1a: Tentacruel
+|-damage|p1a: Tentacruel|0 fnt
+|-damage|p2a: Typhoon|131\/354|[from] item: Life Orb
+|faint|p1a: Tentacruel
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|chat|thesecondbest|but...
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|424\/424
+|turn|14
+|callback|decision
+|
+|move|p2a: Typhoon|Outrage|p1a: Mandibuzz
+|-crit|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|154\/424
+|-damage|p2a: Typhoon|96\/354|[from] item: Life Orb
+|move|p1a: Mandibuzz|Roost|p1a: Mandibuzz
+|-heal|p1a: Mandibuzz|366\/424
+|
+|-end|p2a: Typhoon|rampage
+|-start|p2a: Typhoon|confusion
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Mandibuzz|392\/424|[from] item: Leftovers
+|turn|15
+|callback|decision
+|chat|thesecondbest|you call that a crit?
+|
+|switch|p2a: El Pato|Ludicolo, M|302\/302
+|move|p1a: Mandibuzz|Knock Off|p2a: El Pato
+|-damage|p2a: El Pato|214\/302
+|-enditem|p2a: El Pato|Life Orb|[from] move: Knock Off|[of] p1a: Mandibuzz
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Mandibuzz|418\/424|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p2a: El Pato|Hydro Pump|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|180\/424
+|move|p1a: Mandibuzz|Whirlwind|p2a: El Pato
+|drag|p2a: Tuff Bunny|Azumarill, M|404\/404
+|
+|-weather|none
+|-heal|p1a: Mandibuzz|206\/424|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Mandibuzz|Roost|p1a: Mandibuzz
+|-heal|p1a: Mandibuzz|418\/424
+|move|p2a: Tuff Bunny|Play Rough|p1a: Mandibuzz
+|-supereffective|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|2\/424
+|
+|-heal|p1a: Mandibuzz|28\/424|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|283\/283
+|-boost|p1a: Genesect|atk|1|[from] ability: Download
+|move|p2a: Tuff Bunny|Play Rough|p1a: Genesect
+|-resisted|p1a: Genesect
+|-damage|p1a: Genesect|107\/283
+|
+|turn|19
+|callback|decision
+|
+|switch|p2a: LeapFrogTM|Politoed, M|244\/321
+|-weather|RainDance
+|move|p1a: Genesect|U-turn|p2a: LeapFrogTM
+|-damage|p2a: LeapFrogTM|51\/321
+|callback|decision
+|
+|switch|p1a: Lucario|Lucario, F|281\/281
+|
+|-weather|RainDance|[upkeep]
+|turn|20
+|callback|decision
+|
+|-formechange|p1a: Lucario|Lucario-Mega
+|message|Lucario has Mega Evolved into Mega Lucario!
+|move|p1a: Lucario|Extreme Speed|p2a: LeapFrogTM
+|-damage|p2a: LeapFrogTM|0 fnt
+|faint|p2a: LeapFrogTM
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: El Pato|Ludicolo, M|214\/302
+|turn|21
+|callback|decision
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|28\/424
+|move|p2a: El Pato|Hydro Pump|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|0 fnt
+|faint|p1a: Mandibuzz
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|107\/283
+|-boost|p1a: Genesect|atk|1|[from] ability: Download
+|turn|22
+|callback|decision
+|
+|move|p1a: Genesect|U-turn|p2a: El Pato
+|-supereffective|p2a: El Pato
+|-damage|p2a: El Pato|0 fnt
+|faint|p2a: El Pato
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|382\/382
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|chat|United States|fuu scarf
+|chat|thesecondbest|lol too slow
+|
+|switch|p2a: Typhoon|Kingdra, F|96\/354
+|turn|23
+|callback|decision
+|
+|move|p2a: Typhoon|Waterfall|p1a: Landorus-Therian
+|-crit|p1a: Landorus-Therian
+|-supereffective|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|-damage|p2a: Typhoon|61\/354|[from] item: Life Orb
+|faint|p1a: Landorus-Therian
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|107\/283
+|-boost|p1a: Genesect|atk|1|[from] ability: Download
+|turn|24
+|callback|decision
+|chat|thesecondbest|come on...
+|
+|switch|p2a: Medium|Espeon, M|334\/334
+|move|p1a: Genesect|U-turn|p2a: Medium
+|-supereffective|p2a: Medium
+|-damage|p2a: Medium|44\/334
+|callback|decision
+|
+|switch|p1a: Lucario|Lucario, F|281\/281
+|-formechange|p1a: Lucario|Lucario-Mega
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Medium|64\/334|[from] item: Leftovers
+|turn|25
+|callback|decision
+|chat|United States|come on
+|chat|United States|you should've killed it
+|
+|move|p1a: Lucario|Extreme Speed|p2a: Medium
+|-damage|p2a: Medium|0 fnt
+|faint|p2a: Medium
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|chat|thesecondbest|Don't call it a comeback.
+|
+|switch|p2a: Typhoon|Kingdra, F|61\/354
+|turn|26
+|callback|decision
+|
+|move|p1a: Lucario|Extreme Speed|p2a: Typhoon
+|-damage|p2a: Typhoon|0 fnt
+|faint|p2a: Typhoon
+|
+|-weather|none
+|callback|decision
+|
+|switch|p2a: Tuff Bunny|Azumarill, M|404\/404
+|turn|27
+|callback|decision
+|chat|United States|bad move
+|chat|United States|but oh well
+|chat|thesecondbest|gg
+|chat|United States|slight chance i'll make a comeback
+|chat|thesecondbest|unless crit
+|
+|move|p1a: Lucario|Close Combat|p2a: Tuff Bunny
+|-resisted|p2a: Tuff Bunny
+|-damage|p2a: Tuff Bunny|256\/404
+|-unboost|p1a: Lucario|def|1
+|-unboost|p1a: Lucario|spd|1
+|move|p2a: Tuff Bunny|Brick Break|p1a: Lucario
+|-supereffective|p1a: Lucario
+|-damage|p1a: Lucario|0 fnt
+|faint|p1a: Lucario
+|
+|callback|decision
+|chat|thesecondbest|wait, nfe?
+|chat|thesecondbest|nve?
+|
+|switch|p1a: Genesect|Genesect|107\/283
+|-boost|p1a: Genesect|atk|1|[from] ability: Download
+|turn|28
+|callback|decision
+|chat|United States|no
+|chat|United States|it's water\/fairy
+|chat|thesecondbest|fairy resists?
+|chat|United States|fighting, dark
+|
+|move|p1a: Genesect|Iron Head|p2a: Tuff Bunny
+|-damage|p2a: Tuff Bunny|63\/404
+|cant|p2a: Tuff Bunny|flinch
+|
+|turn|29
+|callback|decision
+|chat|thesecondbest|YESS!
+|chat|thesecondbest|GG
+|chat|United States|that flinch
+|chat|United States|fuuuuuuu
+|
+|move|p1a: Genesect|Iron Head|p2a: Tuff Bunny
+|-damage|p2a: Tuff Bunny|0 fnt
+|faint|p2a: Tuff Bunny
+|
+|win|thesecondbest
+|raw|Ladder updating...
+|raw|thesecondbest's rating: 1472 &rarr; <strong>1491<\/strong><br \/>(+19 for winning)
+|raw|United States's rating: 1473 &rarr; <strong>1470<\/strong><br \/>(-3 for losing)
+|chat|United States|gg
+|chat|thesecondbest|rematch?
+|chat|United States|it resists bug too
+|chat|United States|ok
+|leave|United States
+|player|p2

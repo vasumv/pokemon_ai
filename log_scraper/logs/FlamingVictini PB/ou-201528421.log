@@ -1,0 +1,197 @@
+|join|Lasagne
+|join|FlamingVictini PB
+|player|p1|Lasagne|185
+|player|p2|FlamingVictini PB|170
+|gametype|singles
+|gen|6
+|tier|OU
+|clearpoke
+|poke|p1|Gyarados, F
+|poke|p1|Garchomp, F
+|poke|p1|Clefable, F
+|poke|p1|Celebi
+|poke|p1|Tyranitar, M
+|poke|p1|Excadrill, F
+|poke|p2|Infernape, M
+|poke|p2|Azumarill, F
+|poke|p2|Lucario, M
+|poke|p2|Landorus, M
+|poke|p2|Thundurus, M
+|poke|p2|Metagross
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Garchomp|Garchomp, F|357\/357
+|switch|p2a: Infernape|Infernape, M|262\/262
+|turn|1
+|
+|move|p2a: Infernape|Stealth Rock|p1a: Garchomp
+|-sidestart|p1: Lasagne|move: Stealth Rock
+|move|p1a: Garchomp|Fire Blast|p2a: Infernape|[miss]
+|-miss|p1a: Garchomp|p2a: Infernape
+|
+|turn|2
+|
+|switch|p2a: Thundurus|Thundurus, M|299\/299
+|move|p1a: Garchomp|Dragon Claw|p2a: Thundurus
+|-damage|p2a: Thundurus|100\/299
+|
+|turn|3
+|
+|switch|p1a: Clefable|Clefable, F|394\/394
+|move|p2a: Thundurus|Hidden Power|p1a: Clefable
+|-damage|p1a: Clefable|306\/394
+|-damage|p2a: Thundurus|71\/299|[from] item: Life Orb
+|
+|-heal|p1a: Clefable|330\/394|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Azumarill|Azumarill, F|352\/352
+|move|p1a: Clefable|Flamethrower|p2a: Azumarill
+|-resisted|p2a: Azumarill
+|-damage|p2a: Azumarill|308\/352
+|
+|-heal|p1a: Clefable|354\/394|[from] item: Leftovers
+|turn|5
+|
+|move|p2a: Azumarill|Play Rough|p1a: Clefable
+|-damage|p1a: Clefable|134\/394
+|move|p1a: Clefable|Soft-Boiled|p1a: Clefable
+|-heal|p1a: Clefable|331\/394
+|
+|-heal|p1a: Clefable|355\/394|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: Metagross|Metagross|301\/301
+|switch|p1a: Celebi|Celebi|403\/403
+|-damage|p1a: Celebi|353\/403|[from] Stealth Rock
+|
+|-heal|p1a: Celebi|378\/403|[from] item: Leftovers
+|turn|7
+|
+|detailschange|p2a: Metagross|Metagross-Mega
+|-mega|p2a: Metagross|Metagross|Metagrossite
+|move|p2a: Metagross|Meteor Mash|p1a: Celebi
+|-damage|p1a: Celebi|152\/403
+|move|p1a: Celebi|Baton Pass|p1a: Celebi
+|
+|switch|p1a: Gyarados|Gyarados, F|331\/331
+|-damage|p1a: Gyarados|249\/331|[from] Stealth Rock
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Metagross
+|-unboost|p2a: Metagross|atk|1
+|
+|turn|8
+|
+|move|p2a: Metagross|Thunder Punch|p1a: Gyarados
+|-supereffective|p1a: Gyarados
+|-damage|p1a: Gyarados|0 fnt
+|faint|p1a: Gyarados
+|
+|
+|switch|p1a: Garchomp|Garchomp, F|357\/357
+|-damage|p1a: Garchomp|335\/357|[from] Stealth Rock
+|turn|9
+|
+|switch|p2a: Thundurus|Thundurus, M|71\/299
+|move|p1a: Garchomp|Dragon Claw|p2a: Thundurus
+|-damage|p2a: Thundurus|0 fnt
+|faint|p2a: Thundurus
+|
+|
+|switch|p2a: Landorus|Landorus, M|319\/319
+|turn|10
+|
+|move|p1a: Garchomp|Swords Dance|p1a: Garchomp
+|-boost|p1a: Garchomp|atk|2
+|move|p2a: Landorus|Earth Power|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|faint|p1a: Garchomp
+|
+|
+|switch|p1a: Excadrill|Excadrill, F|361\/361
+|-damage|p1a: Excadrill|350\/361|[from] Stealth Rock
+|-item|p1a: Excadrill|Air Balloon
+|turn|11
+|
+|move|p2a: Landorus|Psychic|p1a: Excadrill
+|-resisted|p1a: Excadrill
+|-damage|p1a: Excadrill|217\/361
+|-enditem|p1a: Excadrill|Air Balloon
+|move|p1a: Excadrill|Iron Head|p2a: Landorus
+|-damage|p2a: Landorus|127\/319
+|
+|turn|12
+|
+|switch|p1a: Clefable|Clefable, F|355\/394
+|move|p2a: Landorus|Rock Polish|p2a: Landorus
+|-boost|p2a: Landorus|spe|2
+|
+|-heal|p1a: Clefable|379\/394|[from] item: Leftovers
+|turn|13
+|
+|move|p2a: Landorus|Earth Power|p1a: Clefable
+|-damage|p1a: Clefable|136\/394
+|move|p1a: Clefable|Moonblast|p2a: Landorus
+|-damage|p2a: Landorus|0 fnt
+|faint|p2a: Landorus
+|
+|-heal|p1a: Clefable|160\/394|[from] item: Leftovers
+|
+|switch|p2a: Metagross|Metagross-Mega|301\/301
+|turn|14
+|
+|move|p2a: Metagross|Meteor Mash|p1a: Clefable
+|-supereffective|p1a: Clefable
+|-damage|p1a: Clefable|0 fnt
+|-boost|p2a: Metagross|atk|1
+|faint|p1a: Clefable
+|
+|
+|switch|p1a: Tyranitar|Tyranitar, M|403\/403
+|-damage|p1a: Tyranitar|353\/403|[from] Stealth Rock
+|-weather|Sandstorm
+|turn|15
+|
+|move|p2a: Metagross|Meteor Mash|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|faint|p1a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Excadrill|Excadrill, F|217\/361
+|-damage|p1a: Excadrill|206\/361|[from] Stealth Rock
+|turn|16
+|
+|move|p2a: Metagross|Bullet Punch|p1a: Excadrill
+|-resisted|p1a: Excadrill
+|-damage|p1a: Excadrill|85\/361
+|move|p1a: Excadrill|Earthquake|p2a: Metagross
+|-supereffective|p2a: Metagross
+|-damage|p2a: Metagross|11\/301
+|
+|-weather|Sandstorm|[upkeep]
+|turn|17
+|
+|move|p2a: Metagross|Bullet Punch|p1a: Excadrill
+|-resisted|p1a: Excadrill
+|-damage|p1a: Excadrill|0 fnt
+|faint|p1a: Excadrill
+|
+|-weather|Sandstorm|[upkeep]
+|-message|Lasagne forfeited.
+|c|âLasagne|gg
+|
+|win|FlamingVictini PB
+|c|âFlamingVictini PB|gg
+|leave|Lasagne
+|player|p1

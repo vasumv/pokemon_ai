@@ -1,0 +1,286 @@
+|inactive|Battle timer is ON: inactive players will automatically lose when time's up.
+|join|peere
+|join|Bulldog Fakes
+|player|p1|peere|97
+|player|p2|Bulldog Fakes|170
+|gametype|singles
+|gen|6
+|tier|OU
+|clearpoke
+|poke|p1|Heatran, M
+|poke|p1|Chansey, F
+|poke|p1|Azumarill, F
+|poke|p1|Garchomp, F
+|poke|p1|Cofagrigus, F
+|poke|p1|Latios, M
+|poke|p2|Charizard, M
+|poke|p2|Bisharp, F
+|poke|p2|Latios, M
+|poke|p2|Landorus, M
+|poke|p2|Keldeo
+|poke|p2|Tyranitar, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|chat|Bulldog Fakes|er
+|chat|peere|gl
+|chat|Bulldog Fakes|gl hf
+|
+|start
+|switch|p1a: Chansey|Chansey, F|701\/701
+|switch|p2a: Keldeo|Keldeo|322\/322
+|turn|1
+|
+|switch|p1a: Azumarill|Azumarill, F|402\/402
+|move|p2a: Keldeo|Hydro Pump|p1a: Azumarill
+|-resisted|p1a: Azumarill
+|-damage|p1a: Azumarill|234\/402
+|
+|turn|2
+|
+|move|p2a: Keldeo|Hydro Pump|p1a: Azumarill
+|-resisted|p1a: Azumarill
+|-damage|p1a: Azumarill|53\/402
+|move|p1a: Azumarill|Waterfall|p2a: Keldeo
+|-resisted|p2a: Keldeo
+|-damage|p2a: Keldeo|178\/322
+|
+|turn|3
+|
+|switch|p1a: Chansey|Chansey, F|701\/701
+|move|p2a: Keldeo|Hydro Pump|p1a: Chansey
+|-damage|p1a: Chansey|548\/701
+|
+|turn|4
+|
+|switch|p2a: Tyranitar|Tyranitar, F|341\/341
+|-weather|Sandstorm
+|move|p1a: Chansey|Thunder Wave|p2a: Tyranitar
+|-status|p2a: Tyranitar|par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Chansey|505\/701|[from] sandstorm
+|turn|5
+|
+|switch|p1a: Azumarill|Azumarill, F|53\/402
+|move|p2a: Tyranitar|Crunch|p1a: Azumarill
+|-resisted|p1a: Azumarill
+|-damage|p1a: Azumarill|0 fnt
+|faint|p1a: Azumarill
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Garchomp|Garchomp, F|404\/404
+|turn|6
+|
+|-formechange|p1a: Garchomp|Garchomp-Mega
+|message|Garchomp has Mega Evolved into Mega Garchomp!
+|move|p1a: Garchomp|Substitute|p1a: Garchomp
+|-start|p1a: Garchomp|Substitute
+|-damage|p1a: Garchomp|303\/404
+|move|p2a: Tyranitar|Crunch|p1a: Garchomp
+|-end|p1a: Garchomp|Substitute
+|
+|-weather|Sandstorm|[upkeep]
+|turn|7
+|
+|move|p1a: Garchomp|Earthquake|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Keldeo|Keldeo|178\/322
+|turn|8
+|
+|switch|p1a: Latios|Latios, M|302\/302
+|move|p2a: Keldeo|Surf|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|193\/302
+|
+|-weather|none
+|turn|9
+|
+|switch|p2a: Bisharp|Bisharp, F|290\/290
+|move|p1a: Latios|Draco Meteor|p2a: Bisharp|[miss]
+|-miss|p1a: Latios|p2a: Bisharp
+|
+|turn|10
+|
+|move|p1a: Latios|Draco Meteor|p2a: Bisharp
+|-resisted|p2a: Bisharp
+|-damage|p2a: Bisharp|39\/290
+|-unboost|p1a: Latios|spa|2
+|move|p2a: Bisharp|Pursuit|p1a: Latios
+|-supereffective|p1a: Latios
+|-damage|p1a: Latios|0 fnt
+|faint|p1a: Latios
+|
+|
+|switch|p1a: Heatran|Heatran, M|378\/378
+|turn|11
+|
+|switch|p2a: Charizard|Charizard, M|297\/297
+|move|p1a: Heatran|Substitute|p1a: Heatran
+|-start|p1a: Heatran|Substitute
+|-damage|p1a: Heatran|284\/378
+|
+|-heal|p1a: Heatran|307\/378|[from] item: Leftovers
+|turn|12
+|
+|-formechange|p2a: Charizard|Charizard-Mega-Y
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p2a: Charizard|Focus Blast|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-end|p1a: Heatran|Substitute
+|move|p1a: Heatran|Dragon Pulse|p2a: Charizard
+|-damage|p2a: Charizard|202\/297
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Heatran|330\/378|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: Chansey|Chansey, F|505\/701
+|move|p2a: Charizard|Focus Blast|p1a: Chansey|[miss]
+|-miss|p2a: Charizard|p1a: Chansey
+|
+|-weather|SunnyDay|[upkeep]
+|turn|14
+|
+|move|p2a: Charizard|Fire Blast|p1a: Chansey
+|-damage|p1a: Chansey|319\/701
+|move|p1a: Chansey|Thunder Wave|p2a: Charizard
+|-status|p2a: Charizard|par
+|
+|-weather|SunnyDay|[upkeep]
+|turn|15
+|
+|switch|p2a: Landorus|Landorus, M|319\/319
+|move|p1a: Chansey|Soft-Boiled|p1a: Chansey
+|-heal|p1a: Chansey|670\/701
+|
+|-weather|SunnyDay|[upkeep]
+|turn|16
+|join|Inflikted
+|leave|Inflikted
+|
+|switch|p1a: Cofagrigus|Cofagrigus, F|320\/320
+|move|p2a: Landorus|Stealth Rock|p1a: Cofagrigus
+|-sidestart|p1: peere|move: Stealth Rock
+|
+|-weather|none
+|turn|17
+|
+|move|p2a: Landorus|Earth Power|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|65\/320
+|move|p1a: Cofagrigus|Calm Mind|p1a: Cofagrigus
+|-boost|p1a: Cofagrigus|spa|1
+|-boost|p1a: Cofagrigus|spd|1
+|
+|turn|18
+|
+|move|p2a: Landorus|Earth Power|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|0 fnt
+|faint|p1a: Cofagrigus
+|
+|
+|switch|p1a: Chansey|Chansey, F|670\/701
+|-damage|p1a: Chansey|583\/701|[from] Stealth Rock
+|turn|19
+|
+|move|p2a: Landorus|Earth Power|p1a: Chansey
+|-crit|p1a: Chansey
+|-damage|p1a: Chansey|383\/701
+|move|p1a: Chansey|Wish|p1a: Chansey
+|
+|turn|20
+|
+|switch|p2a: Keldeo|Keldeo|178\/322
+|move|p1a: Chansey|Seismic Toss|p2a: Keldeo
+|-damage|p2a: Keldeo|78\/322
+|
+|-heal|p1a: Chansey|701\/701|[from] move: Wish|[wisher] Chansey
+|turn|21
+|
+|move|p2a: Keldeo|Secret Sword|p1a: Chansey
+|-supereffective|p1a: Chansey
+|-damage|p1a: Chansey|15\/701
+|move|p1a: Chansey|Thunder Wave|p2a: Keldeo
+|-status|p2a: Keldeo|par
+|
+|turn|22
+|
+|move|p1a: Chansey|Soft-Boiled|p1a: Chansey
+|-heal|p1a: Chansey|366\/701
+|move|p2a: Keldeo|Secret Sword|p1a: Chansey
+|-supereffective|p1a: Chansey
+|-damage|p1a: Chansey|0 fnt
+|faint|p1a: Chansey
+|
+|
+|switch|p1a: Garchomp|Garchomp, F|303\/404
+|-formechange|p1a: Garchomp|Garchomp-Mega
+|-damage|p1a: Garchomp|278\/404|[from] Stealth Rock
+|turn|23
+|
+|switch|p2a: Latios|Latios, M|301\/301
+|move|p1a: Garchomp|Substitute|p1a: Garchomp
+|-start|p1a: Garchomp|Substitute
+|-damage|p1a: Garchomp|177\/404
+|
+|turn|24
+|
+|move|p2a: Latios|Psyshock|p1a: Garchomp
+|-crit|p1a: Garchomp
+|-end|p1a: Garchomp|Substitute
+|-damage|p2a: Latios|271\/301|[from] item: Life Orb
+|move|p1a: Garchomp|Outrage|p2a: Latios
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|faint|p2a: Latios
+|
+|
+|switch|p2a: Bisharp|Bisharp, F|39\/290
+|turn|25
+|
+|move|p2a: Bisharp|Sucker Punch|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|faint|p1a: Garchomp
+|
+|
+|switch|p1a: Heatran|Heatran, M|330\/378
+|-damage|p1a: Heatran|283\/378|[from] Stealth Rock
+|turn|26
+|
+|move|p1a: Heatran|Fire Blast|p2a: Bisharp
+|-supereffective|p2a: Bisharp
+|-damage|p2a: Bisharp|0 fnt
+|faint|p2a: Bisharp
+|
+|-heal|p1a: Heatran|306\/378|[from] item: Leftovers
+|
+|switch|p2a: Landorus|Landorus, M|319\/319
+|turn|27
+|chat|Bulldog Fakes|ggg
+|chat|peere|gg
+|
+|move|p2a: Landorus|Earth Power|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|win|Bulldog Fakes
+|join|daflo
+|leave|peere
+|player|p1
+|leave|Bulldog Fakes
+|player|p2
+|join|Robert
+|leave|Robert

@@ -1,0 +1,267 @@
+|join|Nichalho
+|join|bange
+|player|p1|Nichalho|170
+|player|p2|bange|142
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Smeargle, L1, M, shiny
+|poke|p1|Ferrothorn, F
+|poke|p1|Beartic, M, shiny
+|poke|p1|Quagsire, F, shiny
+|poke|p1|Rotom-Heat, shiny
+|poke|p1|Blissey, F, shiny
+|poke|p2|Steelix, M
+|poke|p2|Heracross, M
+|poke|p2|Latias, F
+|poke|p2|Rotom-Mow
+|poke|p2|Mantine, F, shiny
+|poke|p2|Claydol
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|chat|Nichalho|glhf
+|
+|start
+|switch|p1a: Kinkade|Smeargle, L1, M, shiny|12\/12
+|switch|p2a: Claydol|Claydol|324\/324
+|turn|1
+|callback|decision
+|
+|move|p2a: Claydol|Magic Coat|p2a: Claydol
+|-singleturn|p2a: Claydol|move: Magic Coat
+|move|p1a: Kinkade|Trick Room|p1a: Kinkade
+|-fieldstart|move: Trick Room|[of] p1a: Kinkade
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Kinkade|Spore|p2a: Claydol
+|-status|p2a: Claydol|slp
+|cant|p2a: Claydol|slp
+|
+|turn|3
+|callback|decision
+|
+|move|p1a: Kinkade|Endeavor|p2a: Claydol
+|-damage|p2a: Claydol|12\/324 slp
+|-enditem|p2a: Claydol|Sitrus Berry|[eat]
+|-heal|p2a: Claydol|93\/324 slp|[from] item: Sitrus Berry
+|cant|p2a: Claydol|slp
+|
+|turn|4
+|callback|decision
+|
+|move|p1a: Kinkade|Dragon Rage|p2a: Claydol
+|-damage|p2a: Claydol|53\/324 slp
+|-curestatus|p2a: Claydol|slp
+|move|p2a: Claydol|Earthquake|p1a: Kinkade
+|-enditem|p1a: Kinkade|Focus Sash
+|-damage|p1a: Kinkade|1\/12
+|
+|turn|5
+|callback|decision
+|
+|move|p2a: Claydol|Magic Coat|p2a: Claydol
+|-singleturn|p2a: Claydol|move: Magic Coat
+|move|p1a: Kinkade|Spore|p2a: Claydol
+|move|p2a: Claydol|Spore|p1a: Kinkade|[from]Magic Coat
+|-status|p1a: Kinkade|slp
+|
+|-fieldend|move: Trick Room
+|turn|6
+|callback|decision
+|
+|switch|p2a: Latias|Latias, F|321\/321
+|switch|p1a: Thorn II|Ferrothorn, F|352\/352
+|
+|turn|7
+|callback|decision
+|
+|move|p2a: Latias|Substitute|p2a: Latias
+|-start|p2a: Latias|Substitute
+|-damage|p2a: Latias|241\/321
+|move|p1a: Thorn II|Spikes|p2a: Latias
+|-sidestart|p2: bange|Spikes
+|
+|-heal|p2a: Latias|261\/321|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p2a: Latias|Calm Mind|p2a: Latias
+|-boost|p2a: Latias|spa|1
+|-boost|p2a: Latias|spd|1
+|move|p1a: Thorn II|Stealth Rock|p2a: Latias
+|-sidestart|p2: bange|move: Stealth Rock
+|
+|-heal|p2a: Latias|281\/321|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p2a: Latias|Calm Mind|p2a: Latias
+|-boost|p2a: Latias|spa|1
+|-boost|p2a: Latias|spd|1
+|move|p1a: Thorn II|Power Whip|p2a: Latias
+|-resisted|p2a: Latias
+|-activate|p2a: Latias|Substitute|[damage]
+|
+|-heal|p2a: Latias|301\/321|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p2a: Latias|Calm Mind|p2a: Latias
+|-boost|p2a: Latias|spa|1
+|-boost|p2a: Latias|spd|1
+|move|p1a: Thorn II|Power Whip|p2a: Latias
+|-resisted|p2a: Latias
+|-end|p2a: Latias|Substitute
+|
+|-heal|p2a: Latias|321\/321|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p2a: Latias|Substitute|p2a: Latias
+|-start|p2a: Latias|Substitute
+|-damage|p2a: Latias|241\/321
+|move|p1a: Thorn II|Power Whip|p2a: Latias
+|-resisted|p2a: Latias
+|-activate|p2a: Latias|Substitute|[damage]
+|
+|-heal|p2a: Latias|261\/321|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: Latias|Dragon Pulse|p1a: Thorn II
+|-crit|p1a: Thorn II
+|-resisted|p1a: Thorn II
+|-damage|p1a: Thorn II|67\/352
+|move|p1a: Thorn II|Power Whip|p2a: Latias|[miss]
+|-miss|p1a: Thorn II|p2a: Latias
+|
+|-heal|p2a: Latias|281\/321|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: Latias|Dragon Pulse|p1a: Thorn II
+|-resisted|p1a: Thorn II
+|-damage|p1a: Thorn II|0 fnt
+|faint|p1a: Thorn II
+|
+|-heal|p2a: Latias|301\/321|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Lady Quag|Quagsire, F, shiny|394\/394
+|turn|14
+|callback|decision
+|
+|move|p2a: Latias|Dragon Pulse|p1a: Lady Quag
+|-damage|p1a: Lady Quag|204\/394
+|move|p1a: Lady Quag|Rain Dance|p1a: Lady Quag
+|-weather|RainDance
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Latias|321\/321|[from] item: Leftovers
+|-heal|p1a: Lady Quag|228\/394|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p2a: Latias|Dragon Pulse|p1a: Lady Quag
+|-damage|p1a: Lady Quag|50\/394
+|move|p1a: Lady Quag|Scald|p2a: Latias
+|-resisted|p2a: Latias
+|-end|p2a: Latias|Substitute
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Lady Quag|74\/394|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p2a: Latias|Dragon Pulse|p1a: Lady Quag
+|-damage|p1a: Lady Quag|0 fnt
+|faint|p1a: Lady Quag
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Bernard|Beartic, M, shiny|332\/332
+|turn|17
+|callback|decision
+|
+|move|p1a: Bernard|Superpower|p2a: Latias
+|-resisted|p2a: Latias
+|-damage|p2a: Latias|229\/321
+|-unboost|p1a: Bernard|atk|1
+|-unboost|p1a: Bernard|def|1
+|-damage|p1a: Bernard|299\/332|[from] item: Life Orb
+|move|p2a: Latias|Dragon Pulse|p1a: Bernard
+|-damage|p1a: Bernard|0 fnt
+|faint|p1a: Bernard
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Latias|249\/321|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Nurse Joy|Blissey, F, shiny|671\/671
+|turn|18
+|callback|decision
+|
+|move|p2a: Latias|Substitute|p2a: Latias
+|-start|p2a: Latias|Substitute
+|-damage|p2a: Latias|169\/321
+|move|p1a: Nurse Joy|Toxic|p2a: Latias|[miss]
+|-miss|p1a: Nurse Joy|p2a: Latias
+|
+|-weather|none
+|-heal|p2a: Latias|189\/321|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p2a: Latias|Psyshock|p1a: Nurse Joy
+|-damage|p1a: Nurse Joy|178\/671
+|move|p1a: Nurse Joy|Ice Beam|p2a: Latias
+|-crit|p2a: Latias
+|-supereffective|p2a: Latias
+|-end|p2a: Latias|Substitute
+|
+|-heal|p2a: Latias|209\/321|[from] item: Leftovers
+|-heal|p1a: Nurse Joy|219\/671|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p2a: Latias|Psyshock|p1a: Nurse Joy
+|-damage|p1a: Nurse Joy|0 fnt
+|faint|p1a: Nurse Joy
+|
+|-heal|p2a: Latias|229\/321|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Burn|Rotom-Heat, shiny|241\/241
+|turn|21
+|callback|decision
+|
+|move|p2a: Latias|Dragon Pulse|p1a: Burn
+|-damage|p1a: Burn|0 fnt
+|faint|p1a: Burn
+|
+|-heal|p2a: Latias|249\/321|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Kinkade|Smeargle, L1, M, shiny|1\/12 slp
+|turn|22
+|callback|decision
+|
+|move|p2a: Latias|Psyshock|p1a: Kinkade
+|-damage|p1a: Kinkade|0 fnt
+|faint|p1a: Kinkade
+|
+|win|bange
+|raw|Ladder updating...
+|raw|Nichalho's rating: 1685 &rarr; <strong>1562<\/strong><br \/>(-123 for losing)
+|raw|bange's rating: 1717 &rarr; <strong>1737<\/strong><br \/>(+20 for winning)

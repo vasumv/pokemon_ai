@@ -1,0 +1,173 @@
+|inactive|Battle timer is ON: inactive players will automatically lose when time's up.
+|join|DennisEG
+|join|d0nutt
+|player|p1|DennisEG|76
+|player|p2|d0nutt|2
+|gametype|singles
+|gen|4
+|tier|[Gen 4] OU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|
+|start
+|switch|p1a: Heatran|Heatran, M|323\/323
+|switch|p2a: Tyranitar|Tyranitar, M|404\/404
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Tyranitar
+|turn|1
+|
+|move|p1a: Heatran|Stealth Rock|p2a: Tyranitar
+|-sidestart|p2: d0nutt|move: Stealth Rock
+|move|p2a: Tyranitar|Earthquake|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-enditem|p1a: Heatran|Shuca Berry|[eat]
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Breloom|Breloom, F|319\/319
+|turn|2
+|
+|move|p1a: Breloom|Substitute|p1a: Breloom
+|-start|p1a: Breloom|Substitute
+|-damage|p1a: Breloom|240\/319
+|move|p2a: Tyranitar|Earthquake|p1a: Breloom
+|-resisted|p1a: Breloom
+|-end|p1a: Breloom|Substitute
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Breloom|221\/319|[from] sandstorm
+|-status|p1a: Breloom|tox|[from] item: Toxic Orb
+|turn|3
+|
+|move|p1a: Breloom|Seed Bomb|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|90\/404
+|move|p2a: Tyranitar|Earthquake|p1a: Breloom
+|-resisted|p1a: Breloom
+|-damage|p1a: Breloom|107\/319 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Breloom|88\/319 tox|[from] sandstorm
+|-heal|p1a: Breloom|127\/319 tox|[from] ability: Poison Heal
+|turn|4
+|
+|move|p1a: Breloom|Seed Bomb|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Breloom|108\/319 tox|[from] sandstorm
+|-heal|p1a: Breloom|147\/319 tox|[from] ability: Poison Heal
+|
+|switch|p2a: Gengar|Gengar, F|262\/262
+|-damage|p2a: Gengar|230\/262|[from] Stealth Rock
+|turn|5
+|
+|switch|p1a: Flygon|Flygon, M|301\/301
+|move|p2a: Gengar|Focus Blast|p1a: Flygon
+|-damage|p1a: Flygon|130\/301
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Gengar|214\/262|[from] sandstorm
+|turn|6
+|
+|move|p2a: Gengar|Focus Blast|p1a: Flygon
+|-damage|p1a: Flygon|0 fnt
+|faint|p1a: Flygon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Gengar|198\/262|[from] sandstorm
+|
+|switch|p1a: Jirachi|Jirachi|341\/341
+|turn|7
+|
+|switch|p2a: Forretress|Forretress, M|354\/354
+|-damage|p2a: Forretress|310\/354|[from] Stealth Rock
+|move|p1a: Jirachi|Calm Mind|p1a: Jirachi
+|-boost|p1a: Jirachi|spa|1
+|-boost|p1a: Jirachi|spd|1
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Forretress|332\/354|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: Jirachi|Thunderbolt|p2a: Forretress
+|-damage|p2a: Forretress|174\/354
+|move|p2a: Forretress|Stealth Rock|p1a: Jirachi
+|-sidestart|p1: DennisEG|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Forretress|196\/354|[from] item: Leftovers
+|turn|9
+|
+|move|p1a: Jirachi|Calm Mind|p1a: Jirachi
+|-boost|p1a: Jirachi|spa|1
+|-boost|p1a: Jirachi|spd|1
+|move|p2a: Forretress|Explosion|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|163\/341
+|faint|p2a: Forretress
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Jirachi|184\/341|[from] item: Leftovers
+|
+|switch|p2a: Lucario|Lucario, M|282\/282
+|-damage|p2a: Lucario|274\/282|[from] Stealth Rock
+|turn|10
+|
+|move|p1a: Jirachi|Psychic|p2a: Lucario
+|-damage|p2a: Lucario|0 fnt
+|faint|p2a: Lucario
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Jirachi|205\/341|[from] item: Leftovers
+|
+|switch|p2a: Gengar|Gengar, F|198\/262
+|-damage|p2a: Gengar|166\/262|[from] Stealth Rock
+|turn|11
+|
+|move|p2a: Gengar|Shadow Ball|p1a: Jirachi
+|-damage|p1a: Jirachi|133\/341
+|move|p1a: Jirachi|Psychic|p2a: Gengar
+|-supereffective|p2a: Gengar
+|-damage|p2a: Gengar|0 fnt
+|faint|p2a: Gengar
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Jirachi|154\/341|[from] item: Leftovers
+|
+|switch|p2a: Venusaur|Venusaur, F|364\/364
+|-damage|p2a: Venusaur|319\/364|[from] Stealth Rock
+|turn|12
+|
+|move|p1a: Jirachi|Psychic|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|0 fnt
+|faint|p2a: Venusaur
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Jirachi|175\/341|[from] item: Leftovers
+|
+|switch|p2a: Gyarados|Gyarados, F|355\/355
+|-damage|p2a: Gyarados|267\/355|[from] Stealth Rock
+|-ability|p2a: Gyarados|Intimidate|[of] p1a: Jirachi
+|-unboost|p1a: Jirachi|atk|1
+|turn|13
+|
+|move|p1a: Jirachi|Thunderbolt|p2a: Gyarados
+|-supereffective|p2a: Gyarados
+|-damage|p2a: Gyarados|0 fnt
+|faint|p2a: Gyarados
+|
+|win|DennisEG
+|leave|d0nutt
+|player|p2
+|leave|DennisEG
+|player|p1

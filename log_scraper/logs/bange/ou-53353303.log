@@ -1,0 +1,316 @@
+|join|bange
+|join|LunarEclipse
+|player|p1|bange|142
+|player|p2|LunarEclipse|164
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Hitmonchan, M
+|poke|p1|Kingdra, M
+|poke|p1|Porygon2
+|poke|p1|Uxie
+|poke|p1|Forretress, F, shiny
+|poke|p1|Rotom-Heat
+|poke|p2|Breloom, M
+|poke|p2|Latios, M
+|poke|p2|Manectric, M
+|poke|p2|Lucario, M
+|poke|p2|Hydreigon, F
+|poke|p2|Gengar, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Porygon2|Porygon2|374\/374
+|switch|p2a: Hydreigon|Hydreigon, F|326\/326
+|-ability|p1a: Porygon2|Levitate|[from] ability: Trace|[of] p2a: Hydreigon
+|turn|1
+|callback|decision
+|
+|move|p2a: Hydreigon|Superpower|p1a: Porygon2
+|-supereffective|p1a: Porygon2
+|-damage|p1a: Porygon2|215\/374
+|-unboost|p2a: Hydreigon|atk|1
+|-unboost|p2a: Hydreigon|def|1
+|-damage|p2a: Hydreigon|294\/326|[from] item: Life Orb
+|move|p1a: Porygon2|Ice Beam|p2a: Hydreigon
+|-crit|p2a: Hydreigon
+|-supereffective|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|faint|p2a: Hydreigon
+|
+|callback|decision
+|
+|switch|p2a: Lucario|Lucario, M|282\/282
+|turn|2
+|callback|decision
+|
+|switch|p1a: Uxie|Uxie|354\/354
+|move|p2a: Lucario|Swords Dance|p2a: Lucario
+|-boost|p2a: Lucario|atk|2
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Lucario|Swords Dance|p2a: Lucario
+|-boost|p2a: Lucario|atk|2
+|move|p1a: Uxie|Memento|p2a: Lucario
+|-unboost|p2a: Lucario|atk|2
+|-unboost|p2a: Lucario|spa|2
+|faint|p1a: Uxie
+|
+|callback|decision
+|
+|switch|p1a: Hitmonchan|Hitmonchan, M|295\/295
+|turn|4
+|callback|decision
+|
+|switch|p2a: Gengar|Gengar, M|262\/262
+|move|p1a: Hitmonchan|Mach Punch|p2a: Gengar
+|-immune|p2a: Gengar|[msg]
+|
+|turn|5
+|callback|decision
+|
+|switch|p1a: Porygon2|Porygon2|215\/374
+|-ability|p1a: Porygon2|Levitate|[from] ability: Trace|[of] p2a: Gengar
+|move|p2a: Gengar|Substitute|p2a: Gengar
+|-start|p2a: Gengar|Substitute
+|-damage|p2a: Gengar|197\/262
+|
+|turn|6
+|callback|decision
+|
+|move|p2a: Gengar|Focus Blast|p1a: Porygon2
+|-supereffective|p1a: Porygon2
+|-damage|p1a: Porygon2|30\/374
+|-damage|p2a: Gengar|171\/262|[from] item: Life Orb
+|move|p1a: Porygon2|Recover|p1a: Porygon2
+|-heal|p1a: Porygon2|217\/374
+|
+|turn|7
+|callback|decision
+|
+|move|p2a: Gengar|Focus Blast|p1a: Porygon2
+|-supereffective|p1a: Porygon2
+|-damage|p1a: Porygon2|35\/374
+|-damage|p2a: Gengar|145\/262|[from] item: Life Orb
+|move|p1a: Porygon2|Recover|p1a: Porygon2
+|-heal|p1a: Porygon2|222\/374
+|
+|turn|8
+|callback|decision
+|
+|move|p2a: Gengar|Pain Split|p1a: Porygon2
+|-sethp|p1a: Porygon2|183\/374|p2a: Gengar|183\/262|[from] move: Pain Split
+|move|p1a: Porygon2|Recover|p1a: Porygon2
+|-heal|p1a: Porygon2|370\/374
+|
+|turn|9
+|callback|decision
+|
+|move|p2a: Gengar|Pain Split|p1a: Porygon2
+|-sethp|p1a: Porygon2|276\/374|p2a: Gengar|262\/262|[from] move: Pain Split
+|move|p1a: Porygon2|Discharge|p2a: Gengar
+|-end|p2a: Gengar|Substitute
+|
+|turn|10
+|callback|decision
+|
+|switch|p2a: Manectric|Manectric, M|281\/281
+|move|p1a: Porygon2|Discharge|p2a: Manectric
+|-boost|p2a: Manectric|spa|1|[from] ability: Lightningrod
+|
+|turn|11
+|callback|decision
+|
+|move|p2a: Manectric|Switcheroo|p1a: Porygon2
+|-activate|p2a: Manectric|move: Trick|[of] p1a: Porygon2
+|-item|p1a: Porygon2|Choice Scarf|[from] Trick
+|-item|p2a: Manectric|Eviolite|[from] Trick
+|move|p1a: Porygon2|Recover|p1a: Porygon2
+|-heal|p1a: Porygon2|374\/374
+|
+|turn|12
+|callback|decision
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|241\/241
+|move|p2a: Manectric|Flamethrower|p1a: Rotom-Heat
+|-resisted|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|174\/241
+|
+|turn|13
+|callback|decision
+|
+|move|p1a: Rotom-Heat|Overheat|p2a: Manectric
+|-damage|p2a: Manectric|0 fnt
+|-unboost|p1a: Rotom-Heat|spa|2
+|faint|p2a: Manectric
+|
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|301\/301
+|turn|14
+|callback|decision
+|
+|switch|p1a: Porygon2|Porygon2|374\/374
+|-ability|p1a: Porygon2|Levitate|[from] ability: Trace|[of] p2a: Latios
+|move|p2a: Latios|Surf|p1a: Porygon2
+|-damage|p1a: Porygon2|236\/374
+|
+|turn|15
+|callback|decision
+|
+|switch|p2a: Lucario|Lucario, M|282\/282
+|move|p1a: Porygon2|Discharge|p2a: Lucario
+|-damage|p2a: Lucario|187\/282
+|
+|turn|16
+|callback|decision
+|
+|move|p2a: Lucario|Swords Dance|p2a: Lucario
+|-boost|p2a: Lucario|atk|2
+|move|p1a: Porygon2|Discharge|p2a: Lucario
+|-damage|p2a: Lucario|92\/282
+|
+|turn|17
+|callback|decision
+|
+|move|p2a: Lucario|Close Combat|p1a: Porygon2
+|-crit|p1a: Porygon2
+|-supereffective|p1a: Porygon2
+|-damage|p1a: Porygon2|0 fnt
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|-damage|p2a: Lucario|64\/282|[from] item: Life Orb
+|faint|p1a: Porygon2
+|
+|callback|decision
+|
+|switch|p1a: Forretress|Forretress, F, shiny|354\/354
+|turn|18
+|callback|decision
+|
+|move|p2a: Lucario|Close Combat|p1a: Forretress
+|-damage|p1a: Forretress|52\/354
+|-damage|p2a: Lucario|17\/282|[from] item: Rocky Helmet|[of] p1a: Forretress
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|-damage|p2a: Lucario|0 fnt|[from] item: Life Orb
+|faint|p2a: Lucario
+|move|p1a: Forretress|Volt Switch|p2: Lucario|[notarget]
+|-notarget
+|
+|callback|decision
+|
+|switch|p2a: Gengar|Gengar, M|262\/262
+|turn|19
+|callback|decision
+|
+|move|p2a: Gengar|Substitute|p2a: Gengar
+|-start|p2a: Gengar|Substitute
+|-damage|p2a: Gengar|197\/262
+|move|p1a: Forretress|Volt Switch|p2a: Gengar
+|-activate|p2a: Gengar|Substitute|[damage]
+|callback|decision
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|174\/241
+|
+|turn|20
+|callback|decision
+|
+|move|p1a: Rotom-Heat|Volt Switch|p2a: Gengar
+|-crit|p2a: Gengar
+|-end|p2a: Gengar|Substitute
+|callback|decision
+|
+|switch|p1a: Forretress|Forretress, F, shiny|52\/354
+|move|p2a: Gengar|Shadow Ball|p1a: Forretress
+|-crit|p1a: Forretress
+|-resisted|p1a: Forretress
+|-damage|p1a: Forretress|0 fnt
+|-damage|p2a: Gengar|171\/262|[from] item: Life Orb
+|faint|p1a: Forretress
+|
+|callback|decision
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|174\/241
+|turn|21
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|301\/301
+|move|p1a: Rotom-Heat|Hidden Power|p2a: Latios
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|155\/301
+|
+|turn|22
+|callback|decision
+|
+|move|p1a: Rotom-Heat|Hidden Power|p2a: Latios
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|11\/301
+|move|p2a: Latios|Draco Meteor|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|0 fnt
+|-unboost|p2a: Latios|spa|2
+|faint|p1a: Rotom-Heat
+|
+|callback|decision
+|
+|switch|p1a: Hitmonchan|Hitmonchan, M|295\/295
+|turn|23
+|callback|decision
+|
+|switch|p2a: Gengar|Gengar, M|171\/262
+|move|p1a: Hitmonchan|Agility|p1a: Hitmonchan
+|-boost|p1a: Hitmonchan|spe|2
+|
+|turn|24
+|callback|decision
+|
+|move|p1a: Hitmonchan|Ice Punch|p2a: Gengar
+|-crit|p2a: Gengar
+|-damage|p2a: Gengar|0 fnt
+|-damage|p1a: Hitmonchan|266\/295|[from] item: Life Orb
+|faint|p2a: Gengar
+|
+|callback|decision
+|
+|switch|p2a: Breloom|Breloom, M|262\/262
+|turn|25
+|callback|decision
+|
+|move|p2a: Breloom|Mach Punch|p1a: Hitmonchan
+|-damage|p1a: Hitmonchan|63\/295
+|-damage|p2a: Breloom|236\/262|[from] item: Life Orb
+|move|p1a: Hitmonchan|Drain Punch|p2a: Breloom
+|-damage|p2a: Breloom|0 fnt
+|-heal|p1a: Hitmonchan|181\/295|[from] drain|[of] p2a: Breloom
+|-damage|p1a: Hitmonchan|152\/295|[from] item: Life Orb
+|faint|p2a: Breloom
+|
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|11\/301
+|turn|26
+|callback|decision
+|
+|move|p1a: Hitmonchan|Mach Punch|p2a: Latios
+|-resisted|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|-damage|p1a: Hitmonchan|123\/295|[from] item: Life Orb
+|faint|p2a: Latios
+|
+|win|bange
+|raw|Ladder updating...
+|raw|bange's rating: 1846 &rarr; <strong>1859<\/strong><br \/>(+13 for winning)
+|raw|LunarEclipse's rating: 1831 &rarr; <strong>1829<\/strong><br \/>(-2 for losing)
+|chat|LunarEclipse|gg
+|chat|bange|gg

@@ -1,0 +1,284 @@
+|join|Senki
+|join|BenTheDemon
+|player|p1|Senki|100
+|player|p2|BenTheDemon|240
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Landorus-Therian, M
+|poke|p1|Ferrothorn, M
+|poke|p1|Lucario, M
+|poke|p1|Goodra, M
+|poke|p1|Mawile, F
+|poke|p1|Gardevoir, F
+|poke|p2|Dragonite, M
+|poke|p2|Rotom-Wash
+|poke|p2|Aegislash, M
+|poke|p2|Charizard, M
+|poke|p2|Excadrill, M
+|poke|p2|Gengar, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Ripper|Landorus-Therian, M|382\/382
+|switch|p2a: Flame Man|Charizard, M|297\/297
+|-ability|p1a: Ripper|Intimidate|[of] p2a: Flame Man
+|-unboost|p2a: Flame Man|atk|1
+|turn|1
+|
+|-formechange|p2a: Flame Man|Charizard-Mega-Y
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p2a: Flame Man|Flamethrower|p1a: Ripper
+|-damage|p1a: Ripper|75\/382
+|move|p1a: Ripper|Stone Edge|p2a: Flame Man
+|-supereffective|p2a: Flame Man
+|-damage|p2a: Flame Man|0 fnt
+|faint|p2a: Flame Man
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Ripper|98\/382|[from] item: Leftovers
+|
+|switch|p2a: Sword Man|Aegislash, M|324\/324
+|turn|2
+|
+|move|p1a: Ripper|Stealth Rock|p2a: Sword Man
+|-sidestart|p2: BenTheDemon|move: Stealth Rock
+|-formechange|p2a: Sword Man|Aegislash-Blade
+|move|p2a: Sword Man|Iron Head|p1a: Ripper
+|-damage|p1a: Ripper|0 fnt
+|faint|p1a: Ripper
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p1a: Turtle|Ferrothorn, M|352\/352
+|turn|3
+|
+|move|p2a: Sword Man|Sacred Sword|p1a: Turtle
+|-supereffective|p1a: Turtle
+|-damage|p1a: Turtle|198\/352
+|-damage|p2a: Sword Man|284\/324|[from] ability: Iron Barbs|[of] p1a: Turtle
+|move|p1a: Turtle|Leech Seed|p2a: Sword Man
+|-start|p2a: Sword Man|move: Leech Seed
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Turtle|220\/352|[from] item: Leftovers
+|-damage|p2a: Sword Man|244\/324|[from] Leech Seed|[of] p1a: Turtle
+|-heal|p1a: Turtle|260\/352|[silent]
+|turn|4
+|
+|switch|p2a: Drill Man|Excadrill, M|405\/405
+|-damage|p2a: Drill Man|393\/405|[from] Stealth Rock
+|-ability|p2a: Drill Man|Mold Breaker
+|move|p1a: Turtle|Thunder Wave|p2a: Drill Man
+|-immune|p2a: Drill Man|[msg]
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Drill Man|405\/405|[from] item: Leftovers
+|-heal|p1a: Turtle|282\/352|[from] item: Leftovers
+|turn|5
+|
+|move|p2a: Drill Man|Rapid Spin|p1a: Turtle
+|-resisted|p1a: Turtle
+|-damage|p1a: Turtle|275\/352
+|-damage|p2a: Drill Man|355\/405|[from] ability: Iron Barbs|[of] p1a: Turtle
+|-sideend|p2: BenTheDemon|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Drill Man
+|move|p1a: Turtle|Leech Seed|p2a: Drill Man
+|-start|p2a: Drill Man|move: Leech Seed
+|
+|-weather|none
+|-heal|p2a: Drill Man|380\/405|[from] item: Leftovers
+|-heal|p1a: Turtle|297\/352|[from] item: Leftovers
+|-damage|p2a: Drill Man|330\/405|[from] Leech Seed|[of] p1a: Turtle
+|-heal|p1a: Turtle|347\/352|[silent]
+|turn|6
+|
+|switch|p2a: Yellow Devil|Dragonite, M|386\/386
+|move|p1a: Turtle|Gyro Ball|p2a: Yellow Devil
+|-damage|p2a: Yellow Devil|303\/386
+|
+|-heal|p1a: Turtle|352\/352|[from] item: Leftovers
+|turn|7
+|
+|move|p2a: Yellow Devil|Dragon Dance|p2a: Yellow Devil
+|-boost|p2a: Yellow Devil|atk|1
+|-boost|p2a: Yellow Devil|spe|1
+|move|p1a: Turtle|Thunder Wave|p2a: Yellow Devil
+|-status|p2a: Yellow Devil|par
+|
+|turn|8
+|
+|move|p2a: Yellow Devil|Dragon Dance|p2a: Yellow Devil
+|-boost|p2a: Yellow Devil|atk|1
+|-boost|p2a: Yellow Devil|spe|1
+|move|p1a: Turtle|Leech Seed|p2a: Yellow Devil|[miss]
+|-miss|p1a: Turtle|p2a: Yellow Devil
+|
+|turn|9
+|
+|move|p2a: Yellow Devil|Dragon Dance|p2a: Yellow Devil
+|-boost|p2a: Yellow Devil|atk|1
+|-boost|p2a: Yellow Devil|spe|1
+|move|p1a: Turtle|Leech Seed|p2a: Yellow Devil|[miss]
+|-miss|p1a: Turtle|p2a: Yellow Devil
+|
+|turn|10
+|
+|move|p2a: Yellow Devil|Dragon Dance|p2a: Yellow Devil
+|-boost|p2a: Yellow Devil|atk|1
+|-boost|p2a: Yellow Devil|spe|1
+|move|p1a: Turtle|Leech Seed|p2a: Yellow Devil
+|-start|p2a: Yellow Devil|move: Leech Seed
+|
+|-damage|p2a: Yellow Devil|255\/386 par|[from] Leech Seed|[of] p1a: Turtle
+|turn|11
+|
+|move|p1a: Turtle|Protect|p1a: Turtle
+|-singleturn|p1a: Turtle|Protect
+|move|p2a: Yellow Devil|Roost|p2a: Yellow Devil
+|-heal|p2a: Yellow Devil|386\/386 par
+|
+|-damage|p2a: Yellow Devil|338\/386 par|[from] Leech Seed|[of] p1a: Turtle
+|turn|12
+|
+|move|p2a: Yellow Devil|Dragon Dance|p2a: Yellow Devil
+|-boost|p2a: Yellow Devil|atk|1
+|-boost|p2a: Yellow Devil|spe|1
+|move|p1a: Turtle|Gyro Ball|p2a: Yellow Devil
+|-damage|p2a: Yellow Devil|157\/386 par
+|
+|-damage|p2a: Yellow Devil|109\/386 par|[from] Leech Seed|[of] p1a: Turtle
+|turn|13
+|
+|move|p2a: Yellow Devil|Roost|p2a: Yellow Devil
+|-heal|p2a: Yellow Devil|302\/386 par
+|move|p1a: Turtle|Gyro Ball|p2a: Yellow Devil
+|-damage|p2a: Yellow Devil|130\/386 par
+|
+|-damage|p2a: Yellow Devil|82\/386 par|[from] Leech Seed|[of] p1a: Turtle
+|turn|14
+|
+|move|p2a: Yellow Devil|Earthquake|p1a: Turtle
+|-damage|p1a: Turtle|129\/352
+|move|p1a: Turtle|Gyro Ball|p2a: Yellow Devil
+|-crit|p2a: Yellow Devil
+|-damage|p2a: Yellow Devil|0 fnt
+|faint|p2a: Yellow Devil
+|
+|-heal|p1a: Turtle|151\/352|[from] item: Leftovers
+|
+|switch|p2a: Sword Man|Aegislash, M|244\/324
+|turn|15
+|
+|move|p1a: Turtle|Protect|p1a: Turtle
+|-singleturn|p1a: Turtle|Protect
+|-formechange|p2a: Sword Man|Aegislash-Blade
+|move|p2a: Sword Man|Sacred Sword|p1a: Turtle
+|-activate|p1a: Turtle|Protect
+|
+|-heal|p1a: Turtle|173\/352|[from] item: Leftovers
+|turn|16
+|
+|move|p2a: Sword Man|Sacred Sword|p1a: Turtle
+|-supereffective|p1a: Turtle
+|-damage|p1a: Turtle|13\/352
+|-damage|p2a: Sword Man|204\/324|[from] ability: Iron Barbs|[of] p1a: Turtle
+|move|p1a: Turtle|Leech Seed|p2a: Sword Man
+|-start|p2a: Sword Man|move: Leech Seed
+|
+|-heal|p1a: Turtle|35\/352|[from] item: Leftovers
+|-damage|p2a: Sword Man|164\/324|[from] Leech Seed|[of] p1a: Turtle
+|-heal|p1a: Turtle|75\/352|[silent]
+|turn|17
+|
+|switch|p2a: Drill Man|Excadrill, M|330\/405
+|-ability|p2a: Drill Man|Mold Breaker
+|move|p1a: Turtle|Protect|p1a: Turtle
+|-fail|p1a: Turtle
+|
+|-heal|p2a: Drill Man|355\/405|[from] item: Leftovers
+|-heal|p1a: Turtle|97\/352|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Turtle|Protect|p1a: Turtle
+|-singleturn|p1a: Turtle|Protect
+|move|p2a: Drill Man|Earthquake|p1a: Turtle
+|-activate|p1a: Turtle|Protect
+|
+|-heal|p2a: Drill Man|380\/405|[from] item: Leftovers
+|-heal|p1a: Turtle|119\/352|[from] item: Leftovers
+|turn|19
+|
+|move|p2a: Drill Man|Earthquake|p1a: Turtle
+|-damage|p1a: Turtle|22\/352
+|move|p1a: Turtle|Leech Seed|p2a: Drill Man
+|-start|p2a: Drill Man|move: Leech Seed
+|
+|-heal|p2a: Drill Man|405\/405|[from] item: Leftovers
+|-heal|p1a: Turtle|44\/352|[from] item: Leftovers
+|-damage|p2a: Drill Man|355\/405|[from] Leech Seed|[of] p1a: Turtle
+|-heal|p1a: Turtle|94\/352|[silent]
+|turn|20
+|
+|move|p1a: Turtle|Protect|p1a: Turtle
+|-singleturn|p1a: Turtle|Protect
+|move|p2a: Drill Man|Earthquake|p1a: Turtle
+|-activate|p1a: Turtle|Protect
+|
+|-heal|p2a: Drill Man|380\/405|[from] item: Leftovers
+|-heal|p1a: Turtle|116\/352|[from] item: Leftovers
+|-damage|p2a: Drill Man|330\/405|[from] Leech Seed|[of] p1a: Turtle
+|-heal|p1a: Turtle|166\/352|[silent]
+|turn|21
+|
+|switch|p2a: Shadow Man|Gengar, M|262\/262
+|move|p1a: Turtle|Gyro Ball|p2a: Shadow Man
+|-damage|p2a: Shadow Man|27\/262
+|
+|-heal|p1a: Turtle|188\/352|[from] item: Leftovers
+|turn|22
+|
+|move|p2a: Shadow Man|Shadow Ball|p1a: Turtle
+|-damage|p1a: Turtle|68\/352
+|-unboost|p1a: Turtle|spd|1
+|move|p1a: Turtle|Gyro Ball|p2a: Shadow Man
+|-damage|p2a: Shadow Man|0 fnt
+|faint|p2a: Shadow Man
+|
+|-heal|p1a: Turtle|90\/352|[from] item: Leftovers
+|
+|switch|p2a: Elec Man|Rotom-Wash|304\/304
+|turn|23
+|
+|move|p1a: Turtle|Protect|p1a: Turtle
+|-singleturn|p1a: Turtle|Protect
+|move|p2a: Elec Man|Will-O-Wisp|p1a: Turtle
+|-activate|p1a: Turtle|Protect
+|
+|-heal|p1a: Turtle|112\/352|[from] item: Leftovers
+|turn|24
+|
+|move|p2a: Elec Man|Will-O-Wisp|p1a: Turtle|[miss]
+|-miss|p2a: Elec Man|p1a: Turtle
+|move|p1a: Turtle|Leech Seed|p2a: Elec Man
+|-start|p2a: Elec Man|move: Leech Seed
+|
+|-heal|p1a: Turtle|134\/352|[from] item: Leftovers
+|-damage|p2a: Elec Man|266\/304|[from] Leech Seed|[of] p1a: Turtle
+|-heal|p1a: Turtle|172\/352|[silent]
+|turn|25
+|-message|BenTheDemon forfeited.
+|
+|win|Senki
+|raw|Ladder updating...
+|leave|BenTheDemon
+|player|p2

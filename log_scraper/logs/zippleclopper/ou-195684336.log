@@ -1,0 +1,187 @@
+|join|much professional
+|join|zippleclopper
+|player|p1|much professional|1
+|player|p2|zippleclopper|1
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Talonflame, M
+|poke|p1|Crawdaunt, M
+|poke|p1|Breloom, M
+|poke|p1|Scizor, M
+|poke|p1|Greninja, M
+|poke|p1|Clefable, F
+|poke|p2|Heracross, F
+|poke|p2|Jirachi
+|poke|p2|Mandibuzz, F
+|poke|p2|Clefable, F
+|poke|p2|Latios, M
+|poke|p2|Manaphy
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Clefable|Clefable, F|393\/393
+|switch|p2a: Heracross|Heracross, F|301\/301
+|turn|1
+|
+|switch|p2a: Jirachi|Jirachi|404\/404
+|move|p1a: Clefable|Trick|p2a: Jirachi
+|-activate|p1a: Clefable|move: Trick|[of] p2a: Jirachi
+|-item|p2a: Jirachi|Flame Orb|[from] move: Trick
+|-item|p1a: Clefable|Leftovers|[from] move: Trick
+|
+|-status|p2a: Jirachi|brn|[from] item: Flame Orb
+|turn|2
+|
+|move|p2a: Jirachi|Thunder Wave|p1a: Clefable
+|-status|p1a: Clefable|par
+|move|p1a: Clefable|Wish|p1a: Clefable
+|
+|-damage|p2a: Jirachi|354\/404 brn|[from] brn
+|turn|3
+|
+|move|p2a: Jirachi|Thunder Wave|p1a: Clefable
+|-fail|p1a: Clefable|par
+|cant|p1a: Clefable|par
+|
+|-damage|p2a: Jirachi|304\/404 brn|[from] brn
+|turn|4
+|
+|move|p2a: Jirachi|Stealth Rock|p1a: Clefable
+|-sidestart|p1: much professional|move: Stealth Rock
+|move|p1a: Clefable|Heal Bell|p1a: Clefable
+|-cureteam|p1a: Clefable|[from] move: HealBell
+|
+|-damage|p2a: Jirachi|254\/404 brn|[from] brn
+|turn|5
+|
+|move|p2a: Jirachi|Thunder Wave|p1a: Clefable
+|-status|p1a: Clefable|par
+|cant|p1a: Clefable|par
+|
+|-damage|p2a: Jirachi|204\/404 brn|[from] brn
+|turn|6
+|
+|switch|p2a: Clefable|Clefable, F|393\/393
+|move|p1a: Clefable|Wish|p1a: Clefable
+|
+|turn|7
+|
+|switch|p1a: Greninja|Greninja, M|285\/285
+|-damage|p1a: Greninja|250\/285|[from] Stealth Rock
+|move|p2a: Clefable|Calm Mind|p2a: Clefable
+|-boost|p2a: Clefable|spa|1
+|-boost|p2a: Clefable|spd|1
+|
+|-heal|p1a: Greninja|285\/285|[from] move: Wish|[wisher] Clefable
+|turn|8
+|
+|move|p1a: Greninja|Gunk Shot|p2a: Clefable
+|-start|p1a: Greninja|typechange|Poison|[from] Protean
+|-supereffective|p2a: Clefable
+|-damage|p2a: Clefable|91\/393
+|-status|p2a: Clefable|psn
+|move|p2a: Clefable|Flamethrower|p1a: Greninja
+|-damage|p1a: Greninja|104\/285
+|
+|turn|9
+|
+|switch|p2a: Jirachi|Jirachi|204\/404 brn
+|move|p1a: Greninja|Ice Beam|p2a: Jirachi
+|-start|p1a: Greninja|typechange|Ice|[from] Protean
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|150\/404 brn
+|
+|-damage|p2a: Jirachi|100\/404 brn|[from] brn
+|turn|10
+|
+|move|p1a: Greninja|Hydro Pump|p2a: Jirachi
+|-start|p1a: Greninja|typechange|Water|[from] Protean
+|-damage|p2a: Jirachi|0 fnt
+|faint|p2a: Jirachi
+|
+|
+|switch|p2a: Manaphy|Manaphy|379\/379
+|turn|11
+|
+|move|p1a: Greninja|Gunk Shot|p2a: Manaphy
+|-start|p1a: Greninja|typechange|Poison|[from] Protean
+|-damage|p2a: Manaphy|234\/379
+|move|p2a: Manaphy|Surf|p1a: Greninja
+|-damage|p1a: Greninja|0 fnt
+|faint|p1a: Greninja
+|
+|-heal|p2a: Manaphy|257\/379|[from] item: Leftovers
+|
+|switch|p1a: Breloom|Breloom, M|261\/261
+|-damage|p1a: Breloom|245\/261|[from] Stealth Rock
+|turn|12
+|
+|move|p2a: Manaphy|Ice Beam|p1a: Breloom
+|-supereffective|p1a: Breloom
+|-damage|p1a: Breloom|0 fnt
+|faint|p1a: Breloom
+|
+|-heal|p2a: Manaphy|280\/379|[from] item: Leftovers
+|
+|switch|p1a: Scizor|Scizor, M|326\/326
+|-damage|p1a: Scizor|286\/326|[from] Stealth Rock
+|turn|13
+|
+|detailschange|p1a: Scizor|Scizor-Mega, M
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p2a: Manaphy|Tail Glow|p2a: Manaphy
+|-boost|p2a: Manaphy|spa|3
+|move|p1a: Scizor|Swords Dance|p1a: Scizor
+|-boost|p1a: Scizor|atk|2
+|
+|-heal|p2a: Manaphy|303\/379|[from] item: Leftovers
+|turn|14
+|
+|switch|p1a: Clefable|Clefable, F|393\/393 par
+|move|p2a: Manaphy|Surf|p1a: Clefable
+|-damage|p1a: Clefable|126\/393 par
+|
+|-heal|p2a: Manaphy|326\/379|[from] item: Leftovers
+|-heal|p1a: Clefable|150\/393 par|[from] item: Leftovers
+|turn|15
+|
+|move|p2a: Manaphy|Surf|p1a: Clefable
+|-damage|p1a: Clefable|0 fnt
+|faint|p1a: Clefable
+|
+|-heal|p2a: Manaphy|349\/379|[from] item: Leftovers
+|
+|switch|p1a: Crawdaunt|Crawdaunt, M|285\/285
+|-damage|p1a: Crawdaunt|250\/285|[from] Stealth Rock
+|turn|16
+|
+|move|p2a: Manaphy|Energy Ball|p1a: Crawdaunt
+|-supereffective|p1a: Crawdaunt
+|-damage|p1a: Crawdaunt|0 fnt
+|faint|p1a: Crawdaunt
+|
+|-heal|p2a: Manaphy|372\/379|[from] item: Leftovers
+|
+|switch|p1a: Talonflame|Talonflame, M|297\/297
+|-damage|p1a: Talonflame|149\/297|[from] Stealth Rock
+|turn|17
+|-message|much professional forfeited.
+|
+|win|zippleclopper
+|raw|Ladder updating...
+|leave|much professional
+|player|p1
+|raw|much professional's rating: 1623 &rarr; <strong>1600<\/strong><br \/>(-23 for losing)
+|raw|zippleclopper's rating: 1568 &rarr; <strong>1592<\/strong><br \/>(+24 for winning)

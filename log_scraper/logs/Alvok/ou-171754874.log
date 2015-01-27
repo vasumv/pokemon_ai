@@ -1,0 +1,265 @@
+|join|Alvok
+|join|chimpact
+|player|p1|Alvok|256
+|player|p2|chimpact|238
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Crawdaunt, M
+|poke|p1|Manectric, M, shiny
+|poke|p1|Gengar, F
+|poke|p1|Azumarill, F
+|poke|p1|Landorus-Therian, M
+|poke|p1|Garchomp, M
+|poke|p2|Suicune
+|poke|p2|Hippowdon, F
+|poke|p2|Gliscor, F
+|poke|p2|Gardevoir, F
+|poke|p2|Sableye, M
+|poke|p2|Ferrothorn, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Garchomp|Garchomp, M|358\/358
+|switch|p2a: azuleye|Sableye, M|303\/303
+|turn|1
+|
+|move|p2a: azuleye|Taunt|p1a: Garchomp
+|-start|p1a: Garchomp|move: Taunt
+|cant|p1a: Garchomp|move: Taunt|Stealth Rock
+|
+|turn|2
+|
+|switch|p1a: Manectric|Manectric, M, shiny|281\/281
+|move|p2a: azuleye|Will-O-Wisp|p1a: Manectric
+|-status|p1a: Manectric|brn
+|
+|-damage|p1a: Manectric|246\/281 brn|[from] brn
+|turn|3
+|
+|switch|p2a: hippowdonflamingo|Hippowdon, F|420\/420
+|-weather|Sandstorm
+|detailschange|p1a: Manectric|Manectric-Mega, M, shiny
+|message|Manectric has Mega Evolved into Mega Manectric!
+|-ability|p1a: Manectric|Intimidate|[of] p2a: hippowdonflamingo
+|-unboost|p2a: hippowdonflamingo|atk|1
+|move|p1a: Manectric|Volt Switch|p2a: hippowdonflamingo
+|-immune|p2a: hippowdonflamingo|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Manectric|229\/281 brn|[from] sandstorm
+|-damage|p1a: Manectric|194\/281 brn|[from] brn
+|turn|4
+|
+|switch|p1a: Garchomp|Garchomp, M|358\/358
+|move|p2a: hippowdonflamingo|Stealth Rock|p1a: Garchomp
+|-sidestart|p1: Alvok|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|5
+|join|Sweqfeq
+|
+|move|p1a: Garchomp|Stealth Rock|p2a: hippowdonflamingo
+|-sidestart|p2: chimpact|move: Stealth Rock
+|move|p2a: hippowdonflamingo|Earthquake|p1a: Garchomp
+|-damage|p1a: Garchomp|270\/358
+|
+|-weather|Sandstorm|[upkeep]
+|turn|6
+|
+|move|p1a: Garchomp|Swords Dance|p1a: Garchomp
+|-boost|p1a: Garchomp|atk|2
+|move|p2a: hippowdonflamingo|Ice Fang|p1a: Garchomp
+|-supereffective|p1a: Garchomp
+|-damage|p1a: Garchomp|110\/358
+|-damage|p2a: hippowdonflamingo|368\/420|[from] ability: Rough Skin|[of] p1a: Garchomp
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: hippowdonflamingo|394\/420|[from] item: Leftovers
+|turn|7
+|
+|move|p1a: Garchomp|Earthquake|p2a: hippowdonflamingo
+|-damage|p2a: hippowdonflamingo|78\/420
+|move|p2a: hippowdonflamingo|Ice Fang|p1a: Garchomp
+|-supereffective|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|-damage|p2a: hippowdonflamingo|26\/420|[from] ability: Rough Skin|[of] p1a: Garchomp
+|faint|p1a: Garchomp
+|
+|-weather|none
+|-heal|p2a: hippowdonflamingo|52\/420|[from] item: Leftovers
+|
+|switch|p1a: Gengar|Gengar, F|261\/261
+|-damage|p1a: Gengar|229\/261|[from] Stealth Rock
+|turn|8
+|
+|move|p1a: Gengar|Shadow Ball|p2a: hippowdonflamingo
+|-damage|p2a: hippowdonflamingo|0 fnt
+|-damage|p1a: Gengar|203\/261|[from] item: Life Orb
+|faint|p2a: hippowdonflamingo
+|
+|
+|switch|p2a: suicunulaq|Suicune|403\/403
+|-damage|p2a: suicunulaq|353\/403|[from] Stealth Rock
+|-ability|p2a: suicunulaq|Pressure
+|turn|9
+|
+|move|p1a: Gengar|Sludge Wave|p2a: suicunulaq
+|-damage|p2a: suicunulaq|166\/403
+|-damage|p1a: Gengar|177\/261|[from] item: Life Orb
+|move|p2a: suicunulaq|Scald|p1a: Gengar
+|-damage|p1a: Gengar|60\/261
+|
+|-heal|p2a: suicunulaq|191\/403|[from] item: Leftovers
+|turn|10
+|
+|move|p1a: Gengar|Taunt|p2a: suicunulaq
+|-start|p2a: suicunulaq|move: Taunt
+|move|p2a: suicunulaq|Scald|p1a: Gengar
+|-damage|p1a: Gengar|0 fnt
+|faint|p1a: Gengar
+|
+|-heal|p2a: suicunulaq|216\/403|[from] item: Leftovers
+|
+|switch|p1a: Manectric|Manectric-Mega, M, shiny|194\/281 brn
+|-damage|p1a: Manectric|159\/281 brn|[from] Stealth Rock
+|-ability|p1a: Manectric|Intimidate|[of] p2a: suicunulaq
+|-unboost|p2a: suicunulaq|atk|1
+|turn|11
+|
+|switch|p2a: Gardevoir|Gardevoir, F|278\/278
+|-damage|p2a: Gardevoir|244\/278|[from] Stealth Rock
+|move|p1a: Manectric|Thunderbolt|p2a: Gardevoir
+|-damage|p2a: Gardevoir|84\/278
+|
+|-damage|p1a: Manectric|124\/281 brn|[from] brn
+|turn|12
+|
+|detailschange|p2a: Gardevoir|Gardevoir-Mega, F
+|message|Gardevoir has Mega Evolved into Mega Gardevoir!
+|move|p1a: Manectric|Thunderbolt|p2a: Gardevoir
+|-damage|p2a: Gardevoir|0 fnt
+|faint|p2a: Gardevoir
+|
+|-damage|p1a: Manectric|89\/281 brn|[from] brn
+|
+|switch|p2a: ferrolin|Ferrothorn, F|352\/352
+|-damage|p2a: ferrolin|330\/352|[from] Stealth Rock
+|turn|13
+|
+|move|p2a: ferrolin|Protect|p2a: ferrolin
+|-singleturn|p2a: ferrolin|Protect
+|move|p1a: Manectric|Volt Switch|p2a: ferrolin
+|-activate|p2a: ferrolin|Protect
+|
+|-damage|p1a: Manectric|54\/281 brn|[from] brn
+|turn|14
+|
+|switch|p2a: azuleye|Sableye, M|303\/303
+|-damage|p2a: azuleye|266\/303|[from] Stealth Rock
+|move|p1a: Manectric|Thunderbolt|p2a: azuleye
+|-damage|p2a: azuleye|40\/303
+|
+|-heal|p2a: azuleye|58\/303|[from] item: Leftovers
+|-damage|p1a: Manectric|19\/281 brn|[from] brn
+|turn|15
+|join|IamChow
+|
+|switch|p2a: Gliscor|Gliscor, F|352\/352
+|-damage|p2a: Gliscor|308\/352|[from] Stealth Rock
+|move|p1a: Manectric|Volt Switch|p2a: Gliscor
+|-immune|p2a: Gliscor|[msg]
+|
+|-damage|p1a: Manectric|0 fnt|[from] brn
+|-status|p2a: Gliscor|tox|[from] item: Toxic Orb
+|faint|p1a: Manectric
+|
+|switch|p1a: Crawdaunt|Crawdaunt, M|267\/267
+|-damage|p1a: Crawdaunt|234\/267|[from] Stealth Rock
+|turn|16
+|
+|move|p2a: Gliscor|Facade|p1a: Crawdaunt
+|-damage|p1a: Crawdaunt|101\/267
+|move|p1a: Crawdaunt|Swords Dance|p1a: Crawdaunt
+|-boost|p1a: Crawdaunt|atk|2
+|
+|-heal|p2a: Gliscor|352\/352 tox|[from] ability: Poison Heal
+|turn|17
+|
+|move|p1a: Crawdaunt|Aqua Jet|p2a: Gliscor
+|-supereffective|p2a: Gliscor
+|-damage|p2a: Gliscor|0 fnt
+|-damage|p1a: Crawdaunt|75\/267|[from] item: Life Orb
+|faint|p2a: Gliscor
+|
+|
+|switch|p2a: azuleye|Sableye, M|58\/303
+|-damage|p2a: azuleye|21\/303|[from] Stealth Rock
+|turn|18
+|
+|switch|p2a: ferrolin|Ferrothorn, F|330\/352
+|-damage|p2a: ferrolin|308\/352|[from] Stealth Rock
+|move|p1a: Crawdaunt|Aqua Jet|p2a: ferrolin
+|-resisted|p2a: ferrolin
+|-damage|p2a: ferrolin|212\/352
+|-damage|p1a: Crawdaunt|42\/267|[from] ability: Iron Barbs|[of] p2a: ferrolin
+|-damage|p1a: Crawdaunt|16\/267|[from] item: Life Orb
+|
+|turn|19
+|
+|switch|p2a: suicunulaq|Suicune|216\/403
+|-damage|p2a: suicunulaq|166\/403|[from] Stealth Rock
+|-ability|p2a: suicunulaq|Pressure
+|move|p1a: Crawdaunt|Knock Off|p2a: suicunulaq
+|-damage|p2a: suicunulaq|0 fnt
+|-enditem|p2a: suicunulaq|Leftovers|[from] move: Knock Off|[of] p1a: Crawdaunt
+|-damage|p1a: Crawdaunt|0 fnt|[from] item: Life Orb
+|faint|p2a: suicunulaq
+|faint|p1a: Crawdaunt
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-damage|p1a: Landorus-Therian|280\/319|[from] Stealth Rock
+|switch|p2a: ferrolin|Ferrothorn, F|212\/352
+|-damage|p2a: ferrolin|190\/352|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: ferrolin
+|-unboost|p2a: ferrolin|atk|1
+|turn|20
+|
+|move|p1a: Landorus-Therian|Earthquake|p2a: ferrolin
+|-damage|p2a: ferrolin|54\/352
+|move|p2a: ferrolin|Leech Seed|p1a: Landorus-Therian
+|-start|p1a: Landorus-Therian|move: Leech Seed
+|
+|-damage|p1a: Landorus-Therian|241\/319|[from] Leech Seed|[of] p2a: ferrolin
+|-heal|p2a: ferrolin|93\/352|[silent]
+|turn|21
+|
+|switch|p1a: Azumarill|Azumarill, F|401\/401
+|-damage|p1a: Azumarill|351\/401|[from] Stealth Rock
+|move|p2a: ferrolin|Protect|p2a: ferrolin
+|-fail|p2a: ferrolin
+|
+|turn|22
+|-message|chimpact forfeited.
+|
+|win|Alvok
+|raw|Ladder updating...
+|raw|Alvok's rating: 1759 &rarr; <strong>1777<\/strong><br \/>(+18 for winning)
+|raw|chimpact's rating: 1727 &rarr; <strong>1709<\/strong><br \/>(-18 for losing)
+|leave|chimpact
+|player|p2
+|leave|Alvok
+|player|p1
+|join|Alvok

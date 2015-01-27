@@ -1,0 +1,285 @@
+|join|Kioskate
+|join|Haytunes
+|player|p1|Kioskate|266
+|player|p2|Haytunes|213
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Gothitelle, F
+|poke|p1|Sableye, M
+|poke|p1|Bronzong
+|poke|p1|Gyarados, F
+|poke|p1|Skarmory, M
+|poke|p1|Chansey, F
+|poke|p2|Azumarill, M
+|poke|p2|Scizor, M
+|poke|p2|Gengar, F
+|poke|p2|Landorus-Therian, M
+|poke|p2|Celebi
+|poke|p2|Heatran, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Sableye|Sableye, M|303\/303
+|switch|p2a: Heatran|Heatran, M|385\/385
+|turn|1
+|
+|switch|p2a: Azumarill|Azumarill, M|401\/401
+|detailschange|p1a: Sableye|Sableye-Mega, M
+|-mega|p1a: Sableye|Sableye|Sablenite
+|move|p1a: Sableye|Knock Off|p2a: Azumarill
+|-resisted|p2a: Azumarill
+|-damage|p2a: Azumarill|340\/401
+|-enditem|p2a: Azumarill|Assault Vest|[from] move: Knock Off|[of] p1a: Sableye
+|
+|turn|2
+|
+|switch|p1a: Skarmory|Skarmory, M|333\/333
+|move|p2a: Azumarill|Play Rough|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|281\/333
+|
+|turn|3
+|
+|switch|p2a: Heatran|Heatran, M|385\/385
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|333\/333
+|
+|turn|4
+|
+|switch|p1a: Gothitelle|Gothitelle, F|344\/344
+|move|p2a: Heatran|Lava Plume|p1a: Gothitelle
+|-damage|p1a: Gothitelle|256\/344
+|
+|turn|5
+|
+|move|p1a: Gothitelle|Trick|p2a: Heatran
+|-activate|p1a: Gothitelle|move: Trick|[of] p2a: Heatran
+|-item|p2a: Heatran|Choice Scarf|[from] move: Trick
+|-item|p1a: Gothitelle|Leftovers|[from] move: Trick
+|move|p2a: Heatran|Toxic|p1a: Gothitelle
+|-status|p1a: Gothitelle|tox
+|
+|-heal|p1a: Gothitelle|277\/344 tox|[from] item: Leftovers
+|-damage|p1a: Gothitelle|256\/344 tox|[from] psn
+|turn|6
+|
+|move|p2a: Heatran|Toxic|p1a: Gothitelle
+|-fail|p1a: Gothitelle|tox
+|move|p1a: Gothitelle|Calm Mind|p1a: Gothitelle
+|-boost|p1a: Gothitelle|spa|1
+|-boost|p1a: Gothitelle|spd|1
+|
+|-heal|p1a: Gothitelle|277\/344 tox|[from] item: Leftovers
+|-damage|p1a: Gothitelle|235\/344 tox|[from] psn
+|turn|7
+|
+|move|p2a: Heatran|Toxic|p1a: Gothitelle
+|-fail|p1a: Gothitelle|tox
+|move|p1a: Gothitelle|Calm Mind|p1a: Gothitelle
+|-boost|p1a: Gothitelle|spa|1
+|-boost|p1a: Gothitelle|spd|1
+|
+|-heal|p1a: Gothitelle|256\/344 tox|[from] item: Leftovers
+|-damage|p1a: Gothitelle|193\/344 tox|[from] psn
+|turn|8
+|
+|move|p2a: Heatran|Toxic|p1a: Gothitelle
+|-fail|p1a: Gothitelle|tox
+|move|p1a: Gothitelle|Calm Mind|p1a: Gothitelle
+|-boost|p1a: Gothitelle|spa|1
+|-boost|p1a: Gothitelle|spd|1
+|
+|-heal|p1a: Gothitelle|214\/344 tox|[from] item: Leftovers
+|-damage|p1a: Gothitelle|130\/344 tox|[from] psn
+|turn|9
+|
+|move|p2a: Heatran|Toxic|p1a: Gothitelle
+|-fail|p1a: Gothitelle|tox
+|move|p1a: Gothitelle|Rest|p1a: Gothitelle
+|-status|p1a: Gothitelle|slp
+|-heal|p1a: Gothitelle|344\/344 slp|[silent]
+|-status|p1a: Gothitelle|slp|[from] move: Rest
+|
+|turn|10
+|
+|move|p2a: Heatran|Toxic|p1a: Gothitelle
+|-fail|p1a: Gothitelle
+|cant|p1a: Gothitelle|slp
+|
+|turn|11
+|
+|move|p2a: Heatran|Toxic|p1a: Gothitelle
+|-fail|p1a: Gothitelle
+|cant|p1a: Gothitelle|slp
+|
+|turn|12
+|
+|move|p2a: Heatran|Toxic|p1a: Gothitelle
+|-fail|p1a: Gothitelle
+|-curestatus|p1a: Gothitelle|slp
+|move|p1a: Gothitelle|Calm Mind|p1a: Gothitelle
+|-boost|p1a: Gothitelle|spa|1
+|-boost|p1a: Gothitelle|spd|1
+|
+|turn|13
+|
+|move|p2a: Heatran|Toxic|p1a: Gothitelle
+|-status|p1a: Gothitelle|tox
+|move|p1a: Gothitelle|Calm Mind|p1a: Gothitelle
+|-boost|p1a: Gothitelle|spa|1
+|-boost|p1a: Gothitelle|spd|1
+|
+|-damage|p1a: Gothitelle|323\/344 tox|[from] psn
+|turn|14
+|
+|move|p2a: Heatran|Toxic|p1a: Gothitelle
+|-fail|p1a: Gothitelle|tox
+|move|p1a: Gothitelle|Calm Mind|p1a: Gothitelle
+|-boost|p1a: Gothitelle|spa|1
+|-boost|p1a: Gothitelle|spd|1
+|
+|-heal|p1a: Gothitelle|344\/344 tox|[from] item: Leftovers
+|-damage|p1a: Gothitelle|302\/344 tox|[from] psn
+|turn|15
+|
+|move|p2a: Heatran|Toxic|p1a: Gothitelle
+|-fail|p1a: Gothitelle|tox
+|move|p1a: Gothitelle|Psyshock|p2a: Heatran
+|-crit|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|134\/385
+|
+|-heal|p1a: Gothitelle|323\/344 tox|[from] item: Leftovers
+|-damage|p1a: Gothitelle|260\/344 tox|[from] psn
+|turn|16
+|
+|move|p2a: Heatran|Toxic|p1a: Gothitelle
+|-fail|p1a: Gothitelle|tox
+|move|p1a: Gothitelle|Rest|p1a: Gothitelle
+|-status|p1a: Gothitelle|slp
+|-heal|p1a: Gothitelle|344\/344 slp|[silent]
+|-status|p1a: Gothitelle|slp|[from] move: Rest
+|
+|turn|17
+|
+|move|p2a: Heatran|Toxic|p1a: Gothitelle
+|-fail|p1a: Gothitelle
+|cant|p1a: Gothitelle|slp
+|
+|turn|18
+|
+|move|p2a: Heatran|Toxic|p1a: Gothitelle
+|-fail|p1a: Gothitelle
+|cant|p1a: Gothitelle|slp
+|
+|turn|19
+|
+|move|p2a: Heatran|Toxic|p1a: Gothitelle
+|-fail|p1a: Gothitelle
+|-curestatus|p1a: Gothitelle|slp
+|move|p1a: Gothitelle|Trick|p2a: Heatran
+|-activate|p1a: Gothitelle|move: Trick|[of] p2a: Heatran
+|-item|p2a: Heatran|Leftovers|[from] move: Trick
+|-item|p1a: Gothitelle|Choice Scarf|[from] move: Trick
+|
+|-heal|p2a: Heatran|158\/385|[from] item: Leftovers
+|turn|20
+|
+|move|p1a: Gothitelle|Psyshock|p2a: Heatran
+|-crit|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|faint|p2a: Heatran
+|
+|
+|switch|p2a: Celebi|Celebi|404\/404
+|turn|21
+|
+|move|p1a: Gothitelle|Psyshock|p2a: Celebi
+|-resisted|p2a: Celebi
+|-damage|p2a: Celebi|219\/404
+|move|p2a: Celebi|Thunder Wave|p1a: Gothitelle
+|-status|p1a: Gothitelle|par
+|
+|-heal|p2a: Celebi|244\/404|[from] item: Leftovers
+|turn|22
+|
+|move|p2a: Celebi|Giga Drain|p1a: Gothitelle
+|-damage|p1a: Gothitelle|328\/344 par
+|-heal|p2a: Celebi|252\/404|[from] drain|[of] p1a: Gothitelle
+|move|p1a: Gothitelle|Psyshock|p2a: Celebi
+|-resisted|p2a: Celebi
+|-damage|p2a: Celebi|75\/404
+|
+|-heal|p2a: Celebi|100\/404|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Celebi|Recover|p2a: Celebi
+|-heal|p2a: Celebi|302\/404
+|move|p1a: Gothitelle|Psyshock|p2a: Celebi
+|-resisted|p2a: Celebi
+|-damage|p2a: Celebi|113\/404
+|
+|-heal|p2a: Celebi|138\/404|[from] item: Leftovers
+|turn|24
+|
+|switch|p1a: Chansey|Chansey, F|703\/703
+|move|p2a: Celebi|Recover|p2a: Celebi
+|-heal|p2a: Celebi|340\/404
+|
+|-heal|p2a: Celebi|365\/404|[from] item: Leftovers
+|turn|25
+|
+|move|p2a: Celebi|Thunder Wave|p1a: Chansey
+|-status|p1a: Chansey|par
+|move|p1a: Chansey|Heal Bell|p1a: Chansey
+|-cureteam|p1a: Chansey|[from] move: HealBell
+|
+|-heal|p2a: Celebi|390\/404|[from] item: Leftovers
+|turn|26
+|
+|switch|p1a: Gothitelle|Gothitelle, F|328\/344
+|move|p2a: Celebi|Thunder Wave|p1a: Gothitelle
+|-status|p1a: Gothitelle|par
+|
+|-heal|p2a: Celebi|404\/404|[from] item: Leftovers
+|turn|27
+|
+|move|p2a: Celebi|Giga Drain|p1a: Gothitelle
+|-damage|p1a: Gothitelle|267\/344 par
+|move|p1a: Gothitelle|Trick|p2a: Celebi
+|-activate|p1a: Gothitelle|move: Trick|[of] p2a: Celebi
+|-item|p2a: Celebi|Choice Scarf|[from] move: Trick
+|-item|p1a: Gothitelle|Leftovers|[from] move: Trick
+|
+|-heal|p1a: Gothitelle|288\/344 par|[from] item: Leftovers
+|turn|28
+|
+|move|p2a: Celebi|Giga Drain|p1a: Gothitelle
+|-damage|p1a: Gothitelle|224\/344 par
+|move|p1a: Gothitelle|Calm Mind|p1a: Gothitelle
+|-boost|p1a: Gothitelle|spa|1
+|-boost|p1a: Gothitelle|spd|1
+|
+|-heal|p1a: Gothitelle|245\/344 par|[from] item: Leftovers
+|turn|29
+|-message|Haytunes forfeited.
+|leave|Haytunes
+|
+|win|Kioskate
+|raw|Ladder updating...
+|player|p2
+|raw|Kioskate's rating: 1504 &rarr; <strong>1527<\/strong><br \/>(+23 for winning)
+|raw|Haytunes's rating: 1555 &rarr; <strong>1532<\/strong><br \/>(-23 for losing)

@@ -1,0 +1,548 @@
+|join|bange
+|join|TestTeam122
+|player|p1|bange|142
+|player|p2|TestTeam122|212
+|gametype|singles
+|tier|Pokebank OU (beta)
+|rated
+|clearpoke
+|poke|p1|Malamar, M
+|poke|p1|Noivern, F
+|poke|p1|Venusaur, M
+|poke|p1|Chansey, F
+|poke|p1|Bastiodon, M
+|poke|p1|Azumarill, F
+|poke|p2|Skarmory, M
+|poke|p2|Vaporeon, F
+|poke|p2|Venusaur, M
+|poke|p2|Electivire, M
+|poke|p2|Goodra, F
+|poke|p2|Houndoom, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Bastiodon|Bastiodon, M|324\/324
+|switch|p2a: Electivire|Electivire, M|292\/292
+|turn|1
+|callback|decision
+|
+|move|p2a: Electivire|Volt Switch|p1a: Bastiodon
+|-damage|p1a: Bastiodon|276\/324
+|callback|decision
+|
+|switch|p2a: Skarmory|Skarmory, M|334\/334
+|move|p1a: Bastiodon|Metal Burst|p2a: Skarmory
+|-damage|p2a: Skarmory|262\/334
+|
+|-heal|p2a: Skarmory|282\/334|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|move|p1a: Bastiodon|Magic Coat|p1a: Bastiodon
+|-singleturn|p1a: Bastiodon|move: Magic Coat
+|move|p2a: Skarmory|Stealth Rock|p1a: Bastiodon
+|move|p1a: Bastiodon|Stealth Rock|p2a: Skarmory|[from]Magic Coat
+|-sidestart|p2: TestTeam122|move: Stealth Rock
+|
+|-heal|p2a: Skarmory|302\/334|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p1a: Bastiodon|Magic Coat|p1a: Bastiodon
+|-singleturn|p1a: Bastiodon|move: Magic Coat
+|move|p2a: Skarmory|Defog|p1a: Bastiodon
+|move|p1a: Bastiodon|Defog|p2a: Skarmory|[from]Magic Coat
+|-unboost|p2a: Skarmory|evasion|1
+|-sideend|p2: TestTeam122|Stealth Rock|[from] move: Defog|[of] p2a: Skarmory
+|
+|-heal|p2a: Skarmory|322\/334|[from] item: Leftovers
+|turn|4
+|callback|decision
+|chat|TestTeam122|lol
+|
+|switch|p2a: Houndoom|Houndoom, M|291\/291
+|move|p1a: Bastiodon|Magic Coat|p1a: Bastiodon
+|-singleturn|p1a: Bastiodon|move: Magic Coat
+|
+|turn|5
+|callback|decision
+|
+|move|p2a: Houndoom|Fire Blast|p1a: Bastiodon
+|-damage|p1a: Bastiodon|146\/324
+|move|p1a: Bastiodon|Metal Burst|p2a: Houndoom
+|-damage|p2a: Houndoom|96\/291
+|
+|turn|6
+|callback|decision
+|
+|move|p2a: Houndoom|Destiny Bond|p2a: Houndoom
+|-singlemove|p2a: Houndoom|Destiny Bond
+|move|p1a: Bastiodon|Stealth Rock|p2a: Houndoom
+|-sidestart|p2: TestTeam122|move: Stealth Rock
+|
+|turn|7
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, F|464\/464
+|-damage|p2a: Vaporeon|406\/464|[from] Stealth Rock
+|move|p1a: Bastiodon|Roar|p2a: Vaporeon
+|drag|p2a: Goodra|Goodra, F|384\/384
+|-damage|p2a: Goodra|336\/384|[from] Stealth Rock
+|
+|turn|8
+|callback|decision
+|
+|switch|p1a: Chansey|Chansey, F|704\/704
+|move|p2a: Goodra|Dragon Pulse|p1a: Chansey
+|-damage|p1a: Chansey|611\/704
+|
+|turn|9
+|callback|decision
+|
+|switch|p2a: Skarmory|Skarmory, M|322\/334
+|-damage|p2a: Skarmory|281\/334|[from] Stealth Rock
+|move|p1a: Chansey|Wish|p1a: Chansey
+|
+|-heal|p2a: Skarmory|301\/334|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p1a: Bastiodon|Bastiodon, M|146\/324
+|move|p2a: Skarmory|Defog|p1a: Bastiodon
+|-unboost|p1a: Bastiodon|evasion|1
+|-sideend|p2: TestTeam122|Stealth Rock|[from] move: Defog|[of] p2a: Skarmory
+|
+|-heal|p1a: Bastiodon|324\/324|[from] move: Wish|[wisher] Chansey
+|-heal|p2a: Skarmory|321\/334|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, F|406\/464
+|move|p1a: Bastiodon|Magic Coat|p1a: Bastiodon
+|-singleturn|p1a: Bastiodon|move: Magic Coat
+|
+|-heal|p2a: Vaporeon|435\/464|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p1a: Chansey|Chansey, F|611\/704
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-heal|p2a: Vaporeon|464\/464|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p2a: Houndoom|Houndoom, M|96\/291
+|move|p1a: Chansey|Seismic Toss|p2a: Houndoom
+|-damage|p2a: Houndoom|0 fnt
+|faint|p2a: Houndoom
+|
+|callback|decision
+|
+|switch|p2a: Skarmory|Skarmory, M|321\/334
+|turn|14
+|callback|decision
+|
+|switch|p1a: Noivern|Noivern, F|311\/311
+|-item|p2a: Skarmory|Leftovers|[from] ability: Frisk|[of] p1a: Noivern|[identify]
+|move|p2a: Skarmory|Stealth Rock|p1a: Noivern
+|-sidestart|p1: bange|move: Stealth Rock
+|
+|-heal|p2a: Skarmory|334\/334|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, F|464\/464
+|move|p1a: Noivern|Switcheroo|p2a: Vaporeon
+|-activate|p1a: Noivern|move: Trick|[of] p2a: Vaporeon
+|-item|p2a: Vaporeon|Choice Scarf|[from] Trick
+|-item|p1a: Noivern|Leftovers|[from] Trick
+|
+|turn|16
+|callback|decision
+|
+|move|p1a: Noivern|U-turn|p2a: Vaporeon
+|-damage|p2a: Vaporeon|407\/464
+|callback|decision
+|
+|switch|p1a: Chansey|Chansey, F|611\/704
+|-damage|p1a: Chansey|523\/704|[from] Stealth Rock
+|move|p2a: Vaporeon|Scald|p1a: Chansey
+|-damage|p1a: Chansey|456\/704
+|
+|turn|17
+|callback|decision
+|
+|switch|p2a: Venusaur|Venusaur, M|364\/364
+|move|p1a: Chansey|Wish|p1a: Chansey
+|
+|turn|18
+|callback|decision
+|
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p1a: Chansey|Protect|p1a: Chansey
+|-singleturn|p1a: Chansey|Protect
+|move|p2a: Venusaur|Roar|p1a: Chansey
+|drag|p1a: Malamar|Malamar, M|337\/337
+|-damage|p1a: Malamar|295\/337|[from] Stealth Rock
+|
+|-heal|p1a: Malamar|337\/337|[from] move: Wish|[wisher] Chansey
+|turn|19
+|callback|decision
+|
+|switch|p1a: Bastiodon|Bastiodon, M|324\/324
+|-damage|p1a: Bastiodon|304\/324|[from] Stealth Rock
+|move|p2a: Venusaur|Sludge Bomb|p1a: Bastiodon
+|-immune|p1a: Bastiodon|[msg]
+|
+|turn|20
+|callback|decision
+|
+|move|p2a: Venusaur|Giga Drain|p1a: Bastiodon
+|-damage|p1a: Bastiodon|225\/324
+|move|p1a: Bastiodon|Stealth Rock|p2a: Venusaur
+|-sidestart|p2: TestTeam122|move: Stealth Rock
+|
+|turn|21
+|callback|decision
+|
+|move|p2a: Venusaur|Roar|p1a: Bastiodon
+|drag|p1a: Chansey|Chansey, F|456\/704
+|-damage|p1a: Chansey|368\/704|[from] Stealth Rock
+|
+|turn|22
+|callback|decision
+|
+|move|p1a: Chansey|Wish|p1a: Chansey
+|move|p2a: Venusaur|Roar|p1a: Chansey
+|drag|p1a: Noivern|Noivern, F|311\/311
+|-damage|p1a: Noivern|234\/311|[from] Stealth Rock
+|-item|p2a: Venusaur|Venusaurite|[from] ability: Frisk|[of] p1a: Noivern|[identify]
+|
+|-heal|p1a: Noivern|253\/311|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p1a: Noivern|U-turn|p2a: Venusaur
+|-damage|p2a: Venusaur|342\/364
+|callback|decision
+|
+|switch|p1a: Bastiodon|Bastiodon, M|225\/324
+|-damage|p1a: Bastiodon|205\/324|[from] Stealth Rock
+|move|p2a: Venusaur|Roar|p1a: Bastiodon
+|drag|p1a: Chansey|Chansey, F|368\/704
+|-damage|p1a: Chansey|280\/704|[from] Stealth Rock
+|
+|-heal|p1a: Chansey|632\/704|[from] move: Wish|[wisher] Chansey
+|turn|24
+|callback|decision
+|
+|move|p1a: Chansey|Wish|p1a: Chansey
+|move|p2a: Venusaur|Roar|p1a: Chansey
+|drag|p1a: Bastiodon|Bastiodon, M|205\/324
+|-damage|p1a: Bastiodon|185\/324|[from] Stealth Rock
+|
+|turn|25
+|callback|decision
+|
+|move|p1a: Bastiodon|Magic Coat|p1a: Bastiodon
+|-singleturn|p1a: Bastiodon|move: Magic Coat
+|move|p2a: Venusaur|Roar|p1a: Bastiodon
+|move|p1a: Bastiodon|Roar|p2a: Venusaur|[from]Magic Coat
+|drag|p2a: Goodra|Goodra, F|336\/384
+|-damage|p2a: Goodra|288\/384|[from] Stealth Rock
+|
+|-heal|p1a: Bastiodon|324\/324|[from] move: Wish|[wisher] Chansey
+|turn|26
+|callback|decision
+|
+|switch|p2a: Electivire|Electivire, M|292\/292
+|-damage|p2a: Electivire|256\/292|[from] Stealth Rock
+|move|p1a: Bastiodon|Roar|p2a: Electivire
+|drag|p2a: Goodra|Goodra, F|288\/384
+|-damage|p2a: Goodra|240\/384|[from] Stealth Rock
+|
+|turn|27
+|callback|decision
+|
+|switch|p2a: Skarmory|Skarmory, M|334\/334
+|-damage|p2a: Skarmory|293\/334|[from] Stealth Rock
+|move|p1a: Bastiodon|Roar|p2a: Skarmory
+|drag|p2a: Goodra|Goodra, F|240\/384
+|-damage|p2a: Goodra|192\/384|[from] Stealth Rock
+|
+|turn|28
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, F|407\/464
+|-damage|p2a: Vaporeon|349\/464|[from] Stealth Rock
+|move|p1a: Bastiodon|Metal Burst|p2a: Vaporeon
+|-fail|p2a: Vaporeon
+|
+|turn|29
+|callback|decision
+|
+|switch|p1a: Chansey|Chansey, F|632\/704
+|-damage|p1a: Chansey|544\/704|[from] Stealth Rock
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|turn|30
+|callback|decision
+|
+|switch|p2a: Goodra|Goodra, F|192\/384
+|-damage|p2a: Goodra|144\/384|[from] Stealth Rock
+|move|p1a: Chansey|Toxic|p2a: Goodra
+|-status|p2a: Goodra|tox
+|
+|-heal|p2a: Goodra|376\/384 tox|[from] move: Wish|[wisher] Vaporeon
+|-damage|p2a: Goodra|352\/384 tox|[from] psn
+|turn|31
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, F|349\/464
+|-damage|p2a: Vaporeon|291\/464|[from] Stealth Rock
+|move|p1a: Chansey|Wish|p1a: Chansey
+|
+|turn|32
+|callback|decision
+|
+|move|p2a: Vaporeon|Heal Bell|p2a: Vaporeon
+|-cureteam|p2a: Vaporeon|[from] move: HealBell
+|move|p1a: Chansey|Toxic|p2a: Vaporeon|[miss]
+|-miss|p1a: Chansey|p2a: Vaporeon
+|
+|-heal|p1a: Chansey|704\/704|[from] move: Wish|[wisher] Chansey
+|turn|33
+|callback|decision
+|
+|switch|p2a: Skarmory|Skarmory, M|293\/334
+|-damage|p2a: Skarmory|252\/334|[from] Stealth Rock
+|switch|p1a: Venusaur|Venusaur, M|324\/324
+|-damage|p1a: Venusaur|284\/324|[from] Stealth Rock
+|
+|-heal|p2a: Skarmory|272\/334|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|-formechange|p1a: Venusaur|Venusaur-Mega
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p1a: Venusaur|Hidden Power|p2a: Skarmory
+|-supereffective|p2a: Skarmory
+|-damage|p2a: Skarmory|66\/334
+|move|p2a: Skarmory|Brave Bird|p1a: Venusaur
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|98\/324
+|-damage|p2a: Skarmory|5\/334|[from] recoil|[of] p1a: Venusaur
+|
+|-heal|p2a: Skarmory|25\/334|[from] item: Leftovers
+|turn|35
+|callback|decision
+|
+|move|p1a: Venusaur|Hidden Power|p2a: Skarmory
+|-supereffective|p2a: Skarmory
+|-damage|p2a: Skarmory|0 fnt
+|faint|p2a: Skarmory
+|
+|callback|decision
+|
+|switch|p2a: Electivire|Electivire, M|256\/292
+|-damage|p2a: Electivire|220\/292|[from] Stealth Rock
+|turn|36
+|callback|decision
+|
+|switch|p1a: Bastiodon|Bastiodon, M|324\/324
+|-damage|p1a: Bastiodon|304\/324|[from] Stealth Rock
+|move|p2a: Electivire|Fire Punch|p1a: Bastiodon
+|-damage|p1a: Bastiodon|255\/324
+|-damage|p2a: Electivire|172\/292|[from] item: Rocky Helmet|[of] p1a: Bastiodon
+|-status|p1a: Bastiodon|brn
+|
+|-damage|p1a: Bastiodon|215\/324 brn|[from] brn
+|turn|37
+|callback|decision
+|
+|switch|p2a: Venusaur|Venusaur, M|342\/364
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|-damage|p2a: Venusaur|297\/364|[from] Stealth Rock
+|move|p1a: Bastiodon|Metal Burst|p2a: Venusaur
+|-fail|p2a: Venusaur
+|
+|-damage|p1a: Bastiodon|175\/324 brn|[from] brn
+|turn|38
+|callback|decision
+|
+|move|p1a: Bastiodon|Metal Burst|p2a: Venusaur
+|-fail|p2a: Venusaur
+|move|p2a: Venusaur|Roar|p1a: Bastiodon
+|drag|p1a: Venusaur|Venusaur, M|98\/324
+|-formechange|p1a: Venusaur|Venusaur-Mega
+|-damage|p1a: Venusaur|58\/324|[from] Stealth Rock
+|
+|turn|39
+|callback|decision
+|
+|switch|p2a: Goodra|Goodra, F|352\/384
+|-damage|p2a: Goodra|304\/384|[from] Stealth Rock
+|move|p1a: Venusaur|Synthesis|p1a: Venusaur
+|-heal|p1a: Venusaur|220\/324
+|
+|turn|40
+|callback|decision
+|chat|TestTeam122|nooo xD
+|
+|move|p2a: Goodra|Ice Beam|p1a: Venusaur
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|140\/324
+|move|p1a: Venusaur|Synthesis|p1a: Venusaur
+|-heal|p1a: Venusaur|302\/324
+|
+|turn|41
+|callback|decision
+|
+|move|p2a: Goodra|Ice Beam|p1a: Venusaur
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|214\/324
+|move|p1a: Venusaur|Sludge Bomb|p2a: Goodra
+|-damage|p2a: Goodra|220\/384
+|
+|turn|42
+|callback|decision
+|
+|switch|p1a: Azumarill|Azumarill, F|373\/373
+|-damage|p1a: Azumarill|327\/373|[from] Stealth Rock
+|switch|p2a: Venusaur|Venusaur, M|297\/364
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|-damage|p2a: Venusaur|252\/364|[from] Stealth Rock
+|
+|turn|43
+|callback|decision
+|
+|switch|p1a: Bastiodon|Bastiodon, M|175\/324 brn
+|-damage|p1a: Bastiodon|155\/324 brn|[from] Stealth Rock
+|move|p2a: Venusaur|Giga Drain|p1a: Bastiodon
+|-damage|p1a: Bastiodon|86\/324 brn
+|-heal|p2a: Venusaur|287\/364|[from] drain|[of] p1a: Bastiodon
+|
+|-damage|p1a: Bastiodon|46\/324 brn|[from] brn
+|turn|44
+|callback|decision
+|
+|switch|p1a: Chansey|Chansey, F|704\/704
+|-damage|p1a: Chansey|616\/704|[from] Stealth Rock
+|move|p2a: Venusaur|Giga Drain|p1a: Chansey
+|-damage|p1a: Chansey|550\/704
+|-heal|p2a: Venusaur|320\/364|[from] drain|[of] p1a: Chansey
+|
+|turn|45
+|callback|decision
+|
+|move|p1a: Chansey|Wish|p1a: Chansey
+|move|p2a: Venusaur|Roar|p1a: Chansey
+|drag|p1a: Venusaur|Venusaur, M|214\/324
+|-formechange|p1a: Venusaur|Venusaur-Mega
+|-damage|p1a: Venusaur|174\/324|[from] Stealth Rock
+|
+|turn|46
+|callback|decision
+|
+|move|p1a: Venusaur|Sludge Bomb|p2a: Venusaur
+|-damage|p2a: Venusaur|173\/364
+|move|p2a: Venusaur|Roar|p1a: Venusaur
+|drag|p1a: Noivern|Noivern, F|253\/311
+|-damage|p1a: Noivern|176\/311|[from] Stealth Rock
+|-item|p2a: Venusaur|Venusaurite|[from] ability: Frisk|[of] p1a: Noivern|[identify]
+|
+|-heal|p1a: Noivern|311\/311|[from] move: Wish|[wisher] Chansey
+|turn|47
+|callback|decision
+|
+|move|p1a: Noivern|Draco Meteor|p2a: Venusaur
+|-damage|p2a: Venusaur|0 fnt
+|-unboost|p1a: Noivern|spa|2
+|faint|p2a: Venusaur
+|
+|callback|decision
+|
+|switch|p2a: Electivire|Electivire, M|172\/292
+|-damage|p2a: Electivire|136\/292|[from] Stealth Rock
+|turn|48
+|callback|decision
+|
+|switch|p1a: Bastiodon|Bastiodon, M|46\/324 brn
+|-damage|p1a: Bastiodon|26\/324 brn|[from] Stealth Rock
+|move|p2a: Electivire|Ice Punch|p1a: Bastiodon
+|-resisted|p1a: Bastiodon
+|-damage|p1a: Bastiodon|1\/324 brn
+|-damage|p2a: Electivire|88\/292|[from] item: Rocky Helmet|[of] p1a: Bastiodon
+|
+|-damage|p1a: Bastiodon|0 fnt|[from] brn
+|faint|p1a: Bastiodon
+|callback|decision
+|
+|switch|p1a: Malamar|Malamar, M|337\/337
+|-damage|p1a: Malamar|295\/337|[from] Stealth Rock
+|turn|49
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, F|291\/464
+|-damage|p2a: Vaporeon|233\/464|[from] Stealth Rock
+|move|p1a: Malamar|Superpower|p2a: Vaporeon
+|-damage|p2a: Vaporeon|72\/464
+|-boost|p1a: Malamar|atk|1
+|-boost|p1a: Malamar|def|1
+|
+|-heal|p1a: Malamar|316\/337|[from] item: Leftovers
+|turn|50
+|callback|decision
+|
+|move|p1a: Malamar|Superpower|p2a: Vaporeon
+|-damage|p2a: Vaporeon|0 fnt
+|-boost|p1a: Malamar|atk|1
+|-boost|p1a: Malamar|def|1
+|faint|p2a: Vaporeon
+|
+|-heal|p1a: Malamar|337\/337|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Goodra|Goodra, F|220\/384
+|-damage|p2a: Goodra|172\/384|[from] Stealth Rock
+|turn|51
+|callback|decision
+|
+|move|p1a: Malamar|Superpower|p2a: Goodra
+|-damage|p2a: Goodra|0 fnt
+|-boost|p1a: Malamar|atk|1
+|-boost|p1a: Malamar|def|1
+|faint|p2a: Goodra
+|
+|callback|decision
+|chat|TestTeam122|gg, very nice team
+|
+|switch|p2a: Electivire|Electivire, M|88\/292
+|-damage|p2a: Electivire|52\/292|[from] Stealth Rock
+|turn|52
+|callback|decision
+|chat|bange|gg
+|
+|move|p2a: Electivire|Earthquake|p1a: Malamar
+|-damage|p1a: Malamar|280\/337
+|move|p1a: Malamar|Superpower|p2a: Electivire
+|-damage|p2a: Electivire|0 fnt
+|-boost|p1a: Malamar|atk|1
+|-boost|p1a: Malamar|def|1
+|faint|p2a: Electivire
+|
+|win|bange
+|raw|Ladder updating...
+|raw|bange's rating: 1643 &rarr; <strong>1664<\/strong><br \/>(+21 for winning)
+|raw|TestTeam122's rating: 1530 &rarr; <strong>1514<\/strong><br \/>(-16 for losing)
+|leave|TestTeam122
+|player|p2

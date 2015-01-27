@@ -1,0 +1,362 @@
+|join|Golden Gyarados
+|join|level 56
+|player|p1|Golden Gyarados|37
+|player|p2|level 56|180
+|gametype|singles
+|gen|1
+|tier|[Gen 1] OU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Freeze Clause Mod: Limit one foe frozen
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|
+|start
+|switch|p1a: Gengar|Gengar|323\/323
+|switch|p2a: Jynx|Jynx|333\/333
+|turn|1
+|
+|move|p1a: Gengar|Hypnosis|p2a: Jynx|[miss]
+|-miss|p1a: Gengar
+|move|p2a: Jynx|Lovely Kiss|p1a: Gengar
+|-status|p1a: Gengar|slp
+|
+|turn|2
+|
+|switch|p1a: Alakazam|Alakazam|313\/313
+|move|p2a: Jynx|Blizzard|p1a: Alakazam
+|-damage|p1a: Alakazam|197\/313
+|-status|p1a: Alakazam|frz
+|
+|turn|3
+|c|âGolden Gyarados|man my gengar is just not pulling its weight
+|
+|switch|p1a: Slowbro|Slowbro|393\/393
+|switch|p2a: Rhydon|Rhydon|413\/413
+|
+|turn|4
+|
+|switch|p2a: Exeggutor|Exeggutor|393\/393
+|switch|p1a: Exeggutor|Exeggutor|393\/393
+|
+|turn|5
+|
+|switch|p2a: Jynx|Jynx|333\/333
+|move|p1a: Exeggutor|Sleep Powder|p2a: Jynx
+|-status|p2a: Jynx|slp
+|
+|turn|6
+|
+|switch|p2a: Exeggutor|Exeggutor|393\/393
+|switch|p1a: Slowbro|Slowbro|393\/393
+|
+|turn|7
+|
+|move|p2a: Exeggutor|Stun Spore|p1a: Slowbro
+|-status|p1a: Slowbro|par
+|move|p1a: Slowbro|Thunder Wave|p2a: Exeggutor
+|-status|p2a: Exeggutor|par
+|
+|turn|8
+|
+|switch|p1a: Exeggutor|Exeggutor|393\/393
+|move|p2a: Exeggutor|Mega Drain|p1a: Exeggutor
+|-resisted|p1a: Exeggutor
+|-damage|p1a: Exeggutor|370\/393
+|
+|turn|9
+|
+|switch|p2a: Chansey|Chansey|703\/703
+|move|p1a: Exeggutor|Psychic|p2a: Chansey
+|-damage|p2a: Chansey|577\/703
+|
+|turn|10
+|
+|switch|p1a: Slowbro|Slowbro|393\/393 par
+|switch|p2a: Jynx|Jynx|333\/333 slp
+|
+|turn|11
+|
+|switch|p2a: Exeggutor|Exeggutor|393\/393 par
+|move|p1a: Slowbro|Surf|p2a: Exeggutor
+|-crit|p2a: Exeggutor
+|-resisted|p2a: Exeggutor
+|-damage|p2a: Exeggutor|316\/393 par
+|
+|turn|12
+|
+|switch|p1a: Exeggutor|Exeggutor|370\/393
+|move|p2a: Exeggutor|Stun Spore|p1a: Exeggutor
+|-status|p1a: Exeggutor|par
+|
+|turn|13
+|
+|switch|p2a: Chansey|Chansey|577\/703
+|cant|p1a: Exeggutor|par
+|
+|turn|14
+|
+|move|p2a: Chansey|Ice Beam|p1a: Exeggutor
+|-crit|p1a: Exeggutor
+|-supereffective|p1a: Exeggutor
+|-damage|p1a: Exeggutor|125\/393 par
+|move|p1a: Exeggutor|Psychic|p2a: Chansey
+|-damage|p2a: Chansey|463\/703
+|
+|turn|15
+|
+|switch|p1a: Slowbro|Slowbro|393\/393 par
+|move|p2a: Chansey|Ice Beam|p1a: Slowbro
+|-resisted|p1a: Slowbro
+|-damage|p1a: Slowbro|351\/393 par
+|
+|turn|16
+|
+|switch|p2a: Exeggutor|Exeggutor|316\/393 par
+|move|p1a: Slowbro|Thunder Wave|p2a: Exeggutor
+|-fail|p2a: Exeggutor|par
+|
+|turn|17
+|
+|switch|p1a: Exeggutor|Exeggutor|125\/393 par
+|cant|p2a: Exeggutor|par
+|
+|turn|18
+|
+|switch|p2a: Jynx|Jynx|333\/333 slp
+|cant|p1a: Exeggutor|par
+|
+|turn|19
+|
+|switch|p2a: Chansey|Chansey|463\/703
+|move|p1a: Exeggutor|Mega Drain|p2a: Chansey
+|-damage|p2a: Chansey|408\/703
+|-heal|p1a: Exeggutor|152\/393 par|[from] drain|[of] p2a: Chansey
+|
+|turn|20
+|
+|switch|p1a: Alakazam|Alakazam|197\/313 frz
+|move|p2a: Chansey|Thunderbolt|p1a: Alakazam
+|-crit|p1a: Alakazam
+|-damage|p1a: Alakazam|85\/313 frz
+|
+|turn|21
+|
+|switch|p2a: Rhydon|Rhydon|413\/413
+|cant|p1a: Alakazam|frz
+|
+|turn|22
+|
+|switch|p1a: Exeggutor|Exeggutor|152\/393 par
+|move|p2a: Rhydon|Rock Slide|p1a: Exeggutor
+|-damage|p1a: Exeggutor|36\/393 par
+|
+|turn|23
+|
+|move|p2a: Rhydon|Body Slam|p1a: Exeggutor
+|-damage|p1a: Exeggutor|0 fnt
+|faint|p1a: Exeggutor
+|
+|switch|p1a: Tauros|Tauros|353\/353
+|turn|24
+|
+|move|p1a: Tauros|Blizzard|p2a: Rhydon
+|-supereffective|p2a: Rhydon
+|-damage|p2a: Rhydon|163\/413
+|move|p2a: Rhydon|Earthquake|p1a: Tauros
+|-damage|p1a: Tauros|210\/353
+|
+|turn|25
+|
+|switch|p2a: Jynx|Jynx|333\/333 slp
+|move|p1a: Tauros|Blizzard|p2a: Jynx|[miss]
+|-miss|p1a: Tauros
+|
+|turn|26
+|
+|move|p1a: Tauros|Body Slam|p2a: Jynx
+|-crit|p2a: Jynx
+|-damage|p2a: Jynx|0 fnt
+|faint|p2a: Jynx
+|
+|switch|p2a: Alakazam|Alakazam|313\/313
+|turn|27
+|
+|switch|p1a: Slowbro|Slowbro|351\/393 par
+|move|p2a: Alakazam|Thunder Wave|p1a: Slowbro
+|-fail|p1a: Slowbro|par
+|
+|turn|28
+|
+|switch|p2a: Exeggutor|Exeggutor|316\/393 par
+|switch|p1a: Tauros|Tauros|210\/353
+|
+|turn|29
+|
+|move|p1a: Tauros|Blizzard|p2a: Exeggutor
+|-supereffective|p2a: Exeggutor
+|-damage|p2a: Exeggutor|194\/393 par
+|move|p2a: Exeggutor|Stun Spore|p1a: Tauros
+|-status|p1a: Tauros|par
+|
+|turn|30
+|
+|move|p1a: Tauros|Body Slam|p2a: Exeggutor
+|-damage|p2a: Exeggutor|83\/393 par
+|move|p2a: Exeggutor|Psychic|p1a: Tauros
+|-damage|p1a: Tauros|59\/353 par
+|
+|turn|31
+|
+|switch|p2a: Rhydon|Rhydon|163\/413
+|move|p1a: Tauros|Blizzard|p2a: Rhydon
+|-supereffective|p2a: Rhydon
+|-damage|p2a: Rhydon|0 fnt
+|faint|p2a: Rhydon
+|
+|switch|p2a: Tauros|Tauros|353\/353
+|turn|32
+|
+|switch|p1a: Alakazam|Alakazam|85\/313 frz
+|move|p2a: Tauros|Body Slam|p1a: Alakazam
+|-crit|p1a: Alakazam
+|-damage|p1a: Alakazam|0 fnt
+|faint|p1a: Alakazam
+|
+|switch|p1a: Slowbro|Slowbro|351\/393 par
+|turn|33
+|
+|switch|p2a: Exeggutor|Exeggutor|83\/393 par
+|move|p1a: Slowbro|Thunder Wave|p2a: Exeggutor
+|-fail|p2a: Exeggutor|par
+|
+|turn|34
+|
+|switch|p1a: Gengar|Gengar|323\/323 slp
+|move|p2a: Exeggutor|Mega Drain|p1a: Gengar
+|-resisted|p1a: Gengar
+|-damage|p1a: Gengar|300\/323 slp
+|-heal|p2a: Exeggutor|94\/393 par|[from] drain|[of] p1a: Gengar
+|
+|turn|35
+|
+|cant|p1a: Gengar|slp
+|move|p2a: Exeggutor|Psychic|p1a: Gengar
+|-supereffective|p1a: Gengar
+|-damage|p1a: Gengar|105\/323 slp
+|-unboost|p1a: Gengar|spd|1
+|-unboost|p1a: Gengar|spa|1
+|
+|turn|36
+|
+|cant|p1a: Gengar|slp
+|move|p2a: Exeggutor|Psychic|p1a: Gengar
+|-supereffective|p1a: Gengar
+|-damage|p1a: Gengar|0 fnt
+|faint|p1a: Gengar
+|
+|switch|p1a: Tauros|Tauros|59\/353 par
+|turn|37
+|
+|switch|p2a: Alakazam|Alakazam|313\/313
+|cant|p1a: Tauros|par
+|
+|turn|38
+|
+|switch|p2a: Exeggutor|Exeggutor|94\/393 par
+|switch|p1a: Slowbro|Slowbro|351\/393 par
+|
+|turn|39
+|
+|switch|p1a: Tauros|Tauros|59\/353 par
+|cant|p2a: Exeggutor|par
+|
+|turn|40
+|
+|switch|p2a: Alakazam|Alakazam|313\/313
+|cant|p1a: Tauros|par
+|
+|turn|41
+|
+|move|p2a: Alakazam|Psychic|p1a: Tauros
+|-damage|p1a: Tauros|0 fnt
+|faint|p1a: Tauros
+|
+|switch|p1a: Slowbro|Slowbro|351\/393 par
+|turn|42
+|
+|switch|p2a: Exeggutor|Exeggutor|94\/393 par
+|switch|p1a: Golem|Golem|363\/363
+|
+|turn|43
+|
+|switch|p2a: Alakazam|Alakazam|313\/313
+|move|p1a: Golem|Rock Slide|p2a: Alakazam
+|-crit|p2a: Alakazam
+|-damage|p2a: Alakazam|22\/313
+|
+|turn|44
+|
+|move|p2a: Alakazam|Recover|p2a: Alakazam
+|-heal|p2a: Alakazam|178\/313
+|move|p1a: Golem|Earthquake|p2a: Alakazam
+|-damage|p2a: Alakazam|0 fnt
+|faint|p2a: Alakazam
+|
+|switch|p2a: Tauros|Tauros|353\/353
+|turn|45
+|
+|switch|p1a: Slowbro|Slowbro|351\/393 par
+|move|p2a: Tauros|Earthquake|p1a: Slowbro
+|-crit|p1a: Slowbro
+|-damage|p1a: Slowbro|198\/393 par
+|
+|turn|46
+|
+|move|p2a: Tauros|Hyper Beam|p1a: Slowbro
+|-damage|p1a: Slowbro|25\/393 par
+|move|p1a: Slowbro|Amnesia|p1a: Slowbro
+|-boost|p1a: Slowbro|spd|2
+|-boost|p1a: Slowbro|spa|2
+|
+|turn|47
+|
+|cant|p2a: Tauros|recharge
+|cant|p1a: Slowbro|par
+|
+|turn|48
+|c|âGolden Gyarados|ugh
+|
+|move|p2a: Tauros|Earthquake|p1a: Slowbro
+|-damage|p1a: Slowbro|0 fnt
+|faint|p1a: Slowbro
+|
+|switch|p1a: Golem|Golem|363\/363
+|turn|49
+|c|âGolden Gyarados|ggs
+|
+|move|p2a: Tauros|Earthquake|p1a: Golem
+|-supereffective|p1a: Golem
+|-damage|p1a: Golem|240\/363
+|move|p1a: Golem|Earthquake|p2a: Tauros
+|-damage|p2a: Tauros|215\/353
+|
+|turn|50
+|
+|move|p2a: Tauros|Blizzard|p1a: Golem
+|-supereffective|p1a: Golem
+|-damage|p1a: Golem|29\/363
+|move|p1a: Golem|Earthquake|p2a: Tauros
+|-damage|p2a: Tauros|89\/353
+|
+|turn|51
+|
+|move|p2a: Tauros|Earthquake|p1a: Golem
+|-crit|p1a: Golem
+|-supereffective|p1a: Golem
+|-damage|p1a: Golem|0 fnt
+|faint|p1a: Golem
+|
+|win|level 56
+|leave|Golden Gyarados

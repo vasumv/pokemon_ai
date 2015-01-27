@@ -1,0 +1,372 @@
+|join|Bjork
+|join|Automotize
+|player|p1|Bjork|102
+|player|p2|Automotize|82
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Kyurem-Black
+|poke|p1|Scizor, M
+|poke|p1|Salamence, F
+|poke|p1|Magnezone
+|poke|p1|Dragonite, M
+|poke|p1|Latios, M
+|poke|p2|Tyranitar, M
+|poke|p2|Heatran, M
+|poke|p2|Amoonguss, M
+|poke|p2|Slowbro, M
+|poke|p2|Forretress, M
+|poke|p2|Landorus-Therian, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|chat|Automotize|fuuuuck
+|chat|Automotize|i was just thinking 
+|chat|Automotize|"as long as i don't get matched against Bjork i will be fine"
+|
+|start
+|switch|p1a: Kyurem-Black|Kyurem-Black|392\/392
+|switch|p2a: Heatran|Heatran, M|386\/386
+|-ability|p1a: Kyurem-Black|Teravolt
+|turn|1
+|callback|decision
+|chat|Bjork|youll be fine bb
+|
+|move|p1a: Kyurem-Black|Outrage|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|199\/386
+|move|p2a: Heatran|Lava Plume|p1a: Kyurem-Black
+|-damage|p1a: Kyurem-Black|269\/392
+|
+|-heal|p2a: Heatran|223\/386|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-singleturn|p2a: Heatran|Protect
+|move|p1a: Kyurem-Black|Outrage|p2a: Heatran
+|-activate|p2a: Heatran|Protect
+|
+|-end|p1a: Kyurem-Black|rampage
+|-start|p1a: Kyurem-Black|confusion
+|-heal|p2a: Heatran|247\/386|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|-activate|p1a: Kyurem-Black|confusion
+|move|p1a: Kyurem-Black|Outrage|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|72\/386
+|move|p2a: Heatran|Lava Plume|p1a: Kyurem-Black
+|-damage|p1a: Kyurem-Black|137\/392
+|
+|-heal|p2a: Heatran|96\/386|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-singleturn|p2a: Heatran|Protect
+|-activate|p1a: Kyurem-Black|confusion
+|move|p1a: Kyurem-Black|Outrage|p2a: Heatran
+|-activate|p2a: Heatran|Protect
+|
+|-heal|p2a: Heatran|120\/386|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-singleturn|p2a: Heatran|Protect
+|-activate|p1a: Kyurem-Black|confusion
+|-damage|p1a: Kyurem-Black|55\/392|[from] confusion
+|
+|-heal|p2a: Heatran|144\/386|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-singleturn|p2a: Heatran|Protect
+|-activate|p1a: Kyurem-Black|confusion
+|move|p1a: Kyurem-Black|Outrage|p2a: Heatran
+|-activate|p2a: Heatran|Protect
+|
+|-heal|p2a: Heatran|168\/386|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|-end|p1a: Kyurem-Black|confusion
+|move|p1a: Kyurem-Black|Outrage|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|faint|p2a: Heatran
+|
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, M|404\/404
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Tyranitar
+|turn|8
+|callback|decision
+|
+|switch|p2a: Forretress|Forretress, M|354\/354
+|move|p1a: Kyurem-Black|Outrage|p2a: Forretress
+|-resisted|p2a: Forretress
+|-damage|p2a: Forretress|248\/354
+|
+|-end|p1a: Kyurem-Black|rampage
+|-start|p1a: Kyurem-Black|confusion
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Kyurem-Black|31\/392|[from] sandstorm
+|-heal|p2a: Forretress|270\/354|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|-activate|p1a: Kyurem-Black|confusion
+|move|p1a: Kyurem-Black|Outrage|p2a: Forretress
+|-resisted|p2a: Forretress
+|-damage|p2a: Forretress|149\/354
+|move|p2a: Forretress|Spikes|p1a: Kyurem-Black
+|-sidestart|p1: Bjork|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Kyurem-Black|7\/392|[from] sandstorm
+|-heal|p2a: Forretress|171\/354|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|-activate|p1a: Kyurem-Black|confusion
+|move|p1a: Kyurem-Black|Outrage|p2a: Forretress
+|-resisted|p2a: Forretress
+|-damage|p2a: Forretress|61\/354
+|move|p2a: Forretress|Spikes|p1a: Kyurem-Black
+|-sidestart|p1: Bjork|Spikes
+|
+|-end|p1a: Kyurem-Black|rampage
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Kyurem-Black|0 fnt|[from] sandstorm
+|-heal|p2a: Forretress|83\/354|[from] item: Leftovers
+|faint|p1a: Kyurem-Black
+|callback|decision
+|
+|switch|p1a: Magnezone|Magnezone|282\/282
+|-damage|p1a: Magnezone|235\/282|[from] Spikes
+|turn|11
+|callback|decision
+|
+|move|p1a: Magnezone|Substitute|p1a: Magnezone
+|-start|p1a: Magnezone|Substitute
+|-damage|p1a: Magnezone|165\/282
+|move|p2a: Forretress|Spikes|p1a: Magnezone
+|-sidestart|p1: Bjork|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Magnezone|182\/282|[from] item: Leftovers
+|-heal|p2a: Forretress|105\/354|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Magnezone|Hidden Power|p2a: Forretress
+|-supereffective|p2a: Forretress
+|-damage|p2a: Forretress|0 fnt
+|faint|p2a: Forretress
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Magnezone|199\/282|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|328\/328
+|-activate|p1a: Magnezone|Substitute|ability: Intimidate|[of] p2a: Landorus-Therian
+|turn|13
+|callback|decision
+|
+|move|p2a: Landorus-Therian|Earthquake|p1a: Magnezone
+|-supereffective|p1a: Magnezone
+|-end|p1a: Magnezone|Substitute
+|move|p1a: Magnezone|Flash Cannon|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|132\/328
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Magnezone|216\/282|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p2a: Landorus-Therian|Earthquake|p1a: Magnezone
+|-supereffective|p1a: Magnezone
+|-damage|p1a: Magnezone|0 fnt
+|faint|p1a: Magnezone
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, M|324\/324
+|turn|15
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|394\/394
+|move|p1a: Dragonite|Dragon Dance|p1a: Dragonite
+|-boost|p1a: Dragonite|atk|1
+|-boost|p1a: Dragonite|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Dragonite|304\/324|[from] sandstorm
+|-damage|p2a: Slowbro|370\/394|[from] sandstorm
+|-heal|p2a: Slowbro|394\/394|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Dragonite|Outrage|p2a: Slowbro
+|-damage|p2a: Slowbro|166\/394
+|move|p2a: Slowbro|Ice Beam|p1a: Dragonite
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|24\/324
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Dragonite|4\/324|[from] sandstorm
+|-damage|p2a: Slowbro|142\/394|[from] sandstorm
+|-heal|p2a: Slowbro|166\/394|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|376\/376
+|move|p1a: Dragonite|Outrage|p2a: Amoonguss
+|-damage|p2a: Amoonguss|0 fnt
+|faint|p2a: Amoonguss
+|
+|-end|p1a: Dragonite|rampage
+|-start|p1a: Dragonite|confusion
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Dragonite|0 fnt|[from] sandstorm
+|faint|p1a: Dragonite
+|callback|decision
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|132\/328
+|switch|p1a: Scizor|Scizor, M|344\/344
+|-damage|p1a: Scizor|258\/344|[from] Spikes
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Scizor
+|-unboost|p1a: Scizor|atk|1
+|turn|18
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, M|404\/404
+|switch|p1a: Latios|Latios, M|302\/302
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latios|284\/302|[from] sandstorm
+|turn|19
+|callback|decision
+|
+|move|p1a: Latios|Surf|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|270\/404
+|move|p2a: Tyranitar|Stealth Rock|p1a: Latios
+|-sidestart|p1: Bjork|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latios|266\/302|[from] sandstorm
+|turn|20
+|callback|decision
+|
+|move|p1a: Latios|Surf|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|133\/404
+|move|p2a: Tyranitar|Pursuit|p1a: Latios
+|-supereffective|p1a: Latios
+|-damage|p1a: Latios|104\/302
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latios|86\/302|[from] sandstorm
+|turn|21
+|callback|decision
+|
+|move|p1a: Latios|Surf|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|6\/404
+|move|p2a: Tyranitar|Pursuit|p1a: Latios
+|-supereffective|p1a: Latios
+|-damage|p1a: Latios|0 fnt
+|faint|p1a: Latios
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Salamence|Salamence, F|331\/331
+|-damage|p1a: Salamence|249\/331|[from] Stealth Rock
+|turn|22
+|callback|decision
+|
+|move|p1a: Salamence|Outrage|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|-boost|p1a: Salamence|atk|1|[from] ability: Moxie
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salamence|229\/331|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|297\/394
+|turn|23
+|callback|decision
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|132\/328
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Salamence
+|-unboost|p1a: Salamence|atk|1
+|move|p1a: Salamence|Outrage|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|faint|p2a: Landorus-Therian
+|-boost|p1a: Salamence|atk|1|[from] ability: Moxie
+|
+|-end|p1a: Salamence|rampage
+|-start|p1a: Salamence|confusion
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salamence|209\/331|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|394\/394
+|turn|24
+|callback|decision
+|chat|Automotize|this is such a clutch turn
+|
+|-activate|p1a: Salamence|confusion
+|-damage|p1a: Salamence|127\/331|[from] confusion
+|move|p2a: Slowbro|Ice Beam|p1a: Salamence
+|-supereffective|p1a: Salamence
+|-damage|p1a: Salamence|0 fnt
+|faint|p1a: Salamence
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Slowbro|370\/394|[from] sandstorm
+|-heal|p2a: Slowbro|394\/394|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, M|258\/344
+|-damage|p1a: Scizor|172\/344|[from] Spikes
+|-damage|p1a: Scizor|129\/344|[from] Stealth Rock
+|turn|25
+|callback|decision
+|
+|move|p1a: Scizor|U-turn|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|110\/394
+|move|p2a: Slowbro|Scald|p1a: Scizor
+|-damage|p1a: Scizor|11\/344
+|-status|p1a: Scizor|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Slowbro|86\/394|[from] sandstorm
+|-heal|p2a: Slowbro|110\/394|[from] item: Leftovers
+|-damage|p1a: Scizor|0 fnt|[from] brn
+|faint|p1a: Scizor
+|
+|win|Automotize
+|raw|Ladder updating...
+|raw|Bjork's rating: 2725 &rarr; <strong>2690<\/strong><br \/>(-35 for losing)
+|raw|Automotize's rating: 2310 &rarr; <strong>2361<\/strong><br \/>(+51 for winning)
+|chat|Bjork|gg
+|leave|Bjork
+|player|p1
+|chat|Automotize|gg

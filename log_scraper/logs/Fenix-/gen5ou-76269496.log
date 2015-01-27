@@ -1,0 +1,720 @@
+|join|Fenix-
+|join|rbm276
+|player|p1|Fenix-|266
+|player|p2|rbm276|164
+|gametype|singles
+|gen|5
+|tier|[Gen 5] OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Tyranitar, M
+|poke|p1|Breloom, M
+|poke|p1|Skarmory, M
+|poke|p1|Latias, F
+|poke|p1|Heatran, F
+|poke|p1|Alakazam, F
+|poke|p2|Garchomp, M
+|poke|p2|Volcarona, M
+|poke|p2|Lucario, M
+|poke|p2|Starmie
+|poke|p2|Gengar, M
+|poke|p2|Ferrothorn, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Alakazam|Alakazam, F|251\/251
+|switch|p2a: Amaterasu|Volcarona, M|374\/374
+|turn|1
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|386\/386
+|move|p2a: Amaterasu|Quiver Dance|p2a: Amaterasu
+|-boost|p2a: Amaterasu|spa|1
+|-boost|p2a: Amaterasu|spd|1
+|-boost|p2a: Amaterasu|spe|1
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Amaterasu|Quiver Dance|p2a: Amaterasu
+|-boost|p2a: Amaterasu|spa|1
+|-boost|p2a: Amaterasu|spd|1
+|-boost|p2a: Amaterasu|spe|1
+|move|p1a: Heatran|Stealth Rock|p2a: Amaterasu
+|-sidestart|p2: rbm276|move: Stealth Rock
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Amaterasu|Quiver Dance|p2a: Amaterasu
+|-boost|p2a: Amaterasu|spa|1
+|-boost|p2a: Amaterasu|spd|1
+|-boost|p2a: Amaterasu|spe|1
+|move|p1a: Heatran|Roar|p2a: Amaterasu
+|drag|p2a: Hollywood|Starmie|261\/261
+|-damage|p2a: Hollywood|229\/261|[from] Stealth Rock
+|
+|-heal|p2a: Hollywood|245\/261|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, M|342\/342
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar
+|move|p2a: Hollywood|Surf|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|136\/342
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Hollywood|229\/261|[from] sandstorm
+|-heal|p2a: Hollywood|245\/261|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p1a: Tyranitar|Crunch|p2a: Hollywood
+|-supereffective|p2a: Hollywood
+|-damage|p2a: Hollywood|0 fnt
+|faint|p2a: Hollywood
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Rose|Ferrothorn, F|352\/352
+|-damage|p2a: Rose|330\/352|[from] Stealth Rock
+|turn|6
+|callback|decision
+|
+|switch|p1a: Breloom|Breloom, M|320\/320
+|move|p2a: Rose|Stealth Rock|p1a: Breloom
+|-sidestart|p1: Fenix-|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Breloom|300\/320|[from] sandstorm
+|-activate|p1a: Breloom|item: Toxic Orb
+|-status|p1a: Breloom|tox
+|turn|7
+|callback|decision
+|
+|move|p1a: Breloom|Spore|p2a: Rose
+|-status|p2a: Rose|slp
+|cant|p2a: Rose|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Breloom|280\/320 tox|[from] sandstorm
+|-heal|p1a: Breloom|320\/320 tox|[from] ability: Poison Heal
+|turn|8
+|callback|decision
+|
+|move|p1a: Breloom|Substitute|p1a: Breloom
+|-start|p1a: Breloom|Substitute
+|-damage|p1a: Breloom|240\/320 tox
+|cant|p2a: Rose|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Breloom|220\/320 tox|[from] sandstorm
+|-heal|p1a: Breloom|260\/320 tox|[from] ability: Poison Heal
+|turn|9
+|callback|decision
+|
+|-singleturn|p1a: Breloom|move: Focus Punch
+|switch|p2a: Nomnomnom|Garchomp, M|358\/358
+|-damage|p2a: Nomnomnom|336\/358|[from] Stealth Rock
+|move|p1a: Breloom|Focus Punch|p2a: Nomnomnom
+|-damage|p2a: Nomnomnom|111\/358
+|-damage|p1a: Breloom|220\/320 tox|[from] ability: Rough Skin|[of] p2a: Nomnomnom
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Breloom|200\/320 tox|[from] sandstorm
+|-heal|p1a: Breloom|240\/320 tox|[from] ability: Poison Heal
+|turn|10
+|callback|decision
+|
+|switch|p2a: Shadow|Gengar, M|262\/262
+|-damage|p2a: Shadow|230\/262|[from] Stealth Rock
+|move|p1a: Breloom|Leech Seed|p2a: Shadow
+|-start|p2a: Shadow|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Shadow|214\/262|[from] sandstorm
+|-damage|p1a: Breloom|220\/320 tox|[from] sandstorm
+|-heal|p2a: Shadow|230\/262|[from] item: Black Sludge
+|-damage|p2a: Shadow|198\/262|[from] Leech Seed|[of] p1a: Breloom
+|-heal|p1a: Breloom|252\/320 tox|[silent]
+|-heal|p1a: Breloom|292\/320 tox|[from] ability: Poison Heal
+|turn|11
+|callback|decision
+|
+|move|p2a: Shadow|Sludge Bomb|p1a: Breloom
+|-supereffective|p1a: Breloom
+|-end|p1a: Breloom|Substitute
+|move|p1a: Breloom|Substitute|p1a: Breloom
+|-start|p1a: Breloom|Substitute
+|-damage|p1a: Breloom|212\/320 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Shadow|182\/262|[from] sandstorm
+|-damage|p1a: Breloom|192\/320 tox|[from] sandstorm
+|-heal|p2a: Shadow|198\/262|[from] item: Black Sludge
+|-damage|p2a: Shadow|166\/262|[from] Leech Seed|[of] p1a: Breloom
+|-heal|p1a: Breloom|224\/320 tox|[silent]
+|-heal|p1a: Breloom|264\/320 tox|[from] ability: Poison Heal
+|turn|12
+|callback|decision
+|
+|move|p2a: Shadow|Sludge Bomb|p1a: Breloom
+|-supereffective|p1a: Breloom
+|-end|p1a: Breloom|Substitute
+|move|p1a: Breloom|Substitute|p1a: Breloom
+|-start|p1a: Breloom|Substitute
+|-damage|p1a: Breloom|184\/320 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Shadow|150\/262|[from] sandstorm
+|-damage|p1a: Breloom|164\/320 tox|[from] sandstorm
+|-heal|p2a: Shadow|166\/262|[from] item: Black Sludge
+|-damage|p2a: Shadow|134\/262|[from] Leech Seed|[of] p1a: Breloom
+|-heal|p1a: Breloom|196\/320 tox|[silent]
+|-heal|p1a: Breloom|236\/320 tox|[from] ability: Poison Heal
+|turn|13
+|callback|decision
+|
+|switch|p2a: Nomnomnom|Garchomp, M|111\/358
+|-damage|p2a: Nomnomnom|89\/358|[from] Stealth Rock
+|move|p1a: Breloom|Substitute|p1a: Breloom
+|-fail|p1a: Breloom|move: Substitute
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Breloom|216\/320 tox|[from] sandstorm
+|-heal|p1a: Breloom|256\/320 tox|[from] ability: Poison Heal
+|turn|14
+|callback|decision
+|
+|move|p2a: Nomnomnom|Dragon Claw|p1a: Breloom
+|-end|p1a: Breloom|Substitute
+|move|p1a: Breloom|Leech Seed|p2a: Nomnomnom
+|-start|p2a: Nomnomnom|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Breloom|236\/320 tox|[from] sandstorm
+|-damage|p2a: Nomnomnom|45\/358|[from] Leech Seed|[of] p1a: Breloom
+|-heal|p1a: Breloom|280\/320 tox|[silent]
+|-heal|p1a: Breloom|320\/320 tox|[from] ability: Poison Heal
+|turn|15
+|callback|decision
+|
+|move|p2a: Nomnomnom|Dragon Claw|p1a: Breloom
+|-damage|p1a: Breloom|197\/320 tox
+|move|p1a: Breloom|Substitute|p1a: Breloom
+|-start|p1a: Breloom|Substitute
+|-damage|p1a: Breloom|117\/320 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Breloom|97\/320 tox|[from] sandstorm
+|-damage|p2a: Nomnomnom|1\/358|[from] Leech Seed|[of] p1a: Breloom
+|-heal|p1a: Breloom|141\/320 tox|[silent]
+|-heal|p1a: Breloom|181\/320 tox|[from] ability: Poison Heal
+|turn|16
+|callback|decision
+|
+|move|p2a: Nomnomnom|Dragon Claw|p1a: Breloom
+|-end|p1a: Breloom|Substitute
+|move|p1a: Breloom|Substitute|p1a: Breloom
+|-start|p1a: Breloom|Substitute
+|-damage|p1a: Breloom|101\/320 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Breloom|81\/320 tox|[from] sandstorm
+|-damage|p2a: Nomnomnom|0 fnt|[from] Leech Seed|[of] p1a: Breloom
+|-heal|p1a: Breloom|82\/320 tox|[silent]
+|-heal|p1a: Breloom|122\/320 tox|[from] ability: Poison Heal
+|faint|p2a: Nomnomnom
+|callback|decision
+|
+|switch|p2a: Rose|Ferrothorn, F|330\/352 slp
+|-damage|p2a: Rose|308\/352 slp|[from] Stealth Rock
+|turn|17
+|callback|decision
+|
+|-singleturn|p1a: Breloom|move: Focus Punch
+|cant|p2a: Rose|slp
+|move|p1a: Breloom|Focus Punch|p2a: Rose
+|-supereffective|p2a: Rose
+|-damage|p2a: Rose|50\/352 slp
+|-damage|p1a: Breloom|82\/320 tox|[from] ability: Iron Barbs|[of] p2a: Rose
+|-damage|p1a: Breloom|29\/320 tox|[from] item: Rocky Helmet|[of] p2a: Rose
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Breloom|9\/320 tox|[from] sandstorm
+|-heal|p1a: Breloom|49\/320 tox|[from] ability: Poison Heal
+|turn|18
+|callback|decision
+|
+|move|p1a: Breloom|Leech Seed|p2a: Rose
+|-immune|p2a: Rose|[msg]
+|cant|p2a: Rose|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Breloom|29\/320 tox|[from] sandstorm
+|-heal|p1a: Breloom|69\/320 tox|[from] ability: Poison Heal
+|turn|19
+|callback|decision
+|
+|-singleturn|p1a: Breloom|move: Focus Punch
+|-curestatus|p2a: Rose|slp
+|move|p2a: Rose|Spikes|p1a: Breloom
+|-sidestart|p1: Fenix-|Spikes
+|move|p1a: Breloom|Focus Punch|p2a: Rose
+|-supereffective|p2a: Rose
+|-damage|p2a: Rose|0 fnt
+|-damage|p1a: Breloom|29\/320 tox|[from] ability: Iron Barbs|[of] p2a: Rose
+|-damage|p1a: Breloom|0 fnt|[from] item: Rocky Helmet|[of] p2a: Rose
+|faint|p2a: Rose
+|faint|p1a: Breloom
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Alakazam|Alakazam, F|251\/251
+|switch|p2a: Shadow|Gengar, M|134\/262
+|-damage|p2a: Shadow|102\/262|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|move|p1a: Alakazam|Psyshock|p2a: Shadow
+|-supereffective|p2a: Shadow
+|-damage|p2a: Shadow|0 fnt
+|faint|p2a: Shadow
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Aura|Lucario, M|344\/344
+|-damage|p2a: Aura|334\/344|[from] Stealth Rock
+|turn|21
+|callback|decision
+|
+|move|p2a: Aura|Extreme Speed|p1a: Alakazam
+|-damage|p1a: Alakazam|12\/251
+|-damage|p2a: Aura|300\/344|[from] item: Life Orb
+|move|p1a: Alakazam|Focus Blast|p2a: Aura
+|-supereffective|p2a: Aura
+|-damage|p2a: Aura|0 fnt
+|faint|p2a: Aura
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Amaterasu|Volcarona, M|374\/374
+|-damage|p2a: Amaterasu|187\/374|[from] Stealth Rock
+|turn|22
+|callback|decision
+|
+|move|p1a: Alakazam|Psyshock|p2a: Amaterasu
+|-damage|p2a: Amaterasu|16\/374
+|move|p2a: Amaterasu|Roost|p2a: Amaterasu
+|-heal|p2a: Amaterasu|203\/374
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|180\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|203\/374|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p1a: Alakazam|Psyshock|p2a: Amaterasu
+|-damage|p2a: Amaterasu|29\/374
+|move|p2a: Amaterasu|Roost|p2a: Amaterasu
+|-heal|p2a: Amaterasu|216\/374
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|193\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|216\/374|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p1a: Alakazam|Psyshock|p2a: Amaterasu
+|-damage|p2a: Amaterasu|45\/374
+|move|p2a: Amaterasu|Quiver Dance|p2a: Amaterasu
+|-boost|p2a: Amaterasu|spa|1
+|-boost|p2a: Amaterasu|spd|1
+|-boost|p2a: Amaterasu|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|22\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|45\/374|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p2a: Amaterasu|Roost|p2a: Amaterasu
+|-heal|p2a: Amaterasu|232\/374
+|move|p1a: Alakazam|Psyshock|p2a: Amaterasu
+|-damage|p2a: Amaterasu|75\/374
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|52\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|75\/374|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|move|p2a: Amaterasu|Roost|p2a: Amaterasu
+|-heal|p2a: Amaterasu|262\/374
+|move|p1a: Alakazam|Psyshock|p2a: Amaterasu
+|-damage|p2a: Amaterasu|97\/374
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|74\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|97\/374|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|move|p2a: Amaterasu|Fiery Dance|p1a: Alakazam
+|-damage|p1a: Alakazam|0 fnt
+|-boost|p2a: Amaterasu|spa|1
+|faint|p1a: Alakazam
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|74\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|97\/374|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|-damage|p1a: Skarmory|293\/334|[from] Stealth Rock
+|turn|28
+|callback|decision
+|
+|move|p2a: Amaterasu|Fiery Dance|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|-boost|p2a: Amaterasu|spa|1
+|faint|p1a: Skarmory
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|74\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|97\/374|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|386\/386
+|-damage|p1a: Heatran|338\/386|[from] Spikes
+|-damage|p1a: Heatran|290\/386|[from] Stealth Rock
+|turn|29
+|callback|decision
+|
+|move|p2a: Amaterasu|Roost|p2a: Amaterasu
+|-heal|p2a: Amaterasu|284\/374
+|move|p1a: Heatran|Lava Plume|p2a: Amaterasu
+|-damage|p2a: Amaterasu|212\/374
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|189\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|212\/374|[from] item: Leftovers
+|-heal|p1a: Heatran|314\/386|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|move|p2a: Amaterasu|Quiver Dance|p2a: Amaterasu
+|-boost|p2a: Amaterasu|spa|1
+|-boost|p2a: Amaterasu|spd|1
+|-boost|p2a: Amaterasu|spe|1
+|move|p1a: Heatran|Lava Plume|p2a: Amaterasu
+|-damage|p2a: Amaterasu|149\/374
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|126\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|149\/374|[from] item: Leftovers
+|-heal|p1a: Heatran|338\/386|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|move|p2a: Amaterasu|Roost|p2a: Amaterasu
+|-heal|p2a: Amaterasu|336\/374
+|move|p1a: Heatran|Lava Plume|p2a: Amaterasu
+|-damage|p2a: Amaterasu|279\/374
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|256\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|279\/374|[from] item: Leftovers
+|-heal|p1a: Heatran|362\/386|[from] item: Leftovers
+|turn|32
+|callback|decision
+|
+|move|p2a: Amaterasu|Quiver Dance|p2a: Amaterasu
+|-boost|p2a: Amaterasu|spa|1
+|-boost|p2a: Amaterasu|spd|1
+|-boost|p2a: Amaterasu|spe|1
+|move|p1a: Heatran|Lava Plume|p2a: Amaterasu
+|-damage|p2a: Amaterasu|233\/374
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|210\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|233\/374|[from] item: Leftovers
+|-heal|p1a: Heatran|386\/386|[from] item: Leftovers
+|turn|33
+|callback|decision
+|
+|move|p2a: Amaterasu|Quiver Dance|p2a: Amaterasu
+|-boost|p2a: Amaterasu|spa|1
+|-boost|p2a: Amaterasu|spd|1
+|-boost|p2a: Amaterasu|spe|1
+|move|p1a: Heatran|Lava Plume|p2a: Amaterasu
+|-damage|p2a: Amaterasu|193\/374
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|170\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|193\/374|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|move|p2a: Amaterasu|Bug Buzz|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|281\/386
+|-unboost|p1a: Heatran|spd|1
+|move|p1a: Heatran|Stealth Rock|p2a: Amaterasu
+|-fail|p2a: Amaterasu
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|170\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|193\/374|[from] item: Leftovers
+|-heal|p1a: Heatran|305\/386|[from] item: Leftovers
+|turn|35
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Amaterasu|Roost|p2a: Amaterasu
+|-heal|p2a: Amaterasu|374\/374
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|351\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|374\/374|[from] item: Leftovers
+|-heal|p1a: Heatran|329\/386|[from] item: Leftovers
+|turn|36
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Amaterasu|Bug Buzz|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|351\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|374\/374|[from] item: Leftovers
+|-heal|p1a: Heatran|353\/386|[from] item: Leftovers
+|turn|37
+|callback|decision
+|
+|move|p2a: Amaterasu|Bug Buzz|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|188\/386
+|move|p1a: Heatran|Lava Plume|p2a: Amaterasu
+|-damage|p2a: Amaterasu|335\/374
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|312\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|335\/374|[from] item: Leftovers
+|-heal|p1a: Heatran|212\/386|[from] item: Leftovers
+|turn|38
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Amaterasu|Bug Buzz|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|312\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|335\/374|[from] item: Leftovers
+|-heal|p1a: Heatran|236\/386|[from] item: Leftovers
+|turn|39
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, M|136\/342
+|-damage|p1a: Tyranitar|94\/342|[from] Stealth Rock
+|-damage|p1a: Tyranitar|52\/342|[from] Spikes
+|move|p2a: Amaterasu|Quiver Dance|p2a: Amaterasu
+|-boost|p2a: Amaterasu|spd|1
+|-boost|p2a: Amaterasu|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|312\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|335\/374|[from] item: Leftovers
+|turn|40
+|callback|decision
+|
+|move|p2a: Amaterasu|Bug Buzz|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|faint|p1a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|312\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|335\/374|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|236\/386
+|-damage|p1a: Heatran|188\/386|[from] Stealth Rock
+|-damage|p1a: Heatran|140\/386|[from] Spikes
+|turn|41
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Amaterasu|Bug Buzz|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|312\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|335\/374|[from] item: Leftovers
+|-heal|p1a: Heatran|164\/386|[from] item: Leftovers
+|turn|42
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-fail|p1a: Heatran
+|move|p2a: Amaterasu|Quiver Dance|p2a: Amaterasu
+|-boost|p2a: Amaterasu|spd|1
+|-boost|p2a: Amaterasu|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|312\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|335\/374|[from] item: Leftovers
+|-heal|p1a: Heatran|188\/386|[from] item: Leftovers
+|turn|43
+|callback|decision
+|
+|move|p2a: Amaterasu|Roost|p2a: Amaterasu
+|-heal|p2a: Amaterasu|374\/374
+|move|p1a: Heatran|Lava Plume|p2a: Amaterasu
+|-crit|p2a: Amaterasu
+|-damage|p2a: Amaterasu|157\/374
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|134\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|157\/374|[from] item: Leftovers
+|-heal|p1a: Heatran|212\/386|[from] item: Leftovers
+|turn|44
+|callback|decision
+|
+|move|p2a: Amaterasu|Roost|p2a: Amaterasu
+|-heal|p2a: Amaterasu|344\/374
+|move|p1a: Heatran|Lava Plume|p2a: Amaterasu
+|-damage|p2a: Amaterasu|316\/374
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|293\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|316\/374|[from] item: Leftovers
+|-heal|p1a: Heatran|236\/386|[from] item: Leftovers
+|turn|45
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Amaterasu|Bug Buzz|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|293\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|316\/374|[from] item: Leftovers
+|-heal|p1a: Heatran|260\/386|[from] item: Leftovers
+|turn|46
+|callback|decision
+|
+|move|p2a: Amaterasu|Bug Buzz|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|155\/386
+|move|p1a: Heatran|Lava Plume|p2a: Amaterasu
+|-damage|p2a: Amaterasu|288\/374
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|265\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|288\/374|[from] item: Leftovers
+|-heal|p1a: Heatran|179\/386|[from] item: Leftovers
+|turn|47
+|callback|decision
+|
+|move|p2a: Amaterasu|Bug Buzz|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|79\/386
+|move|p1a: Heatran|Stealth Rock|p2a: Amaterasu
+|-fail|p2a: Amaterasu
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|265\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|288\/374|[from] item: Leftovers
+|-heal|p1a: Heatran|103\/386|[from] item: Leftovers
+|turn|48
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Amaterasu|Bug Buzz|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|265\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|288\/374|[from] item: Leftovers
+|-heal|p1a: Heatran|127\/386|[from] item: Leftovers
+|turn|49
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Amaterasu|Bug Buzz|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|265\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|288\/374|[from] item: Leftovers
+|-heal|p1a: Heatran|151\/386|[from] item: Leftovers
+|turn|50
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-fail|p1a: Heatran
+|move|p2a: Amaterasu|Bug Buzz|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|53\/386
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|265\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|288\/374|[from] item: Leftovers
+|-heal|p1a: Heatran|77\/386|[from] item: Leftovers
+|turn|51
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Amaterasu|Bug Buzz|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|265\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|288\/374|[from] item: Leftovers
+|-heal|p1a: Heatran|101\/386|[from] item: Leftovers
+|turn|52
+|callback|decision
+|
+|move|p2a: Amaterasu|Bug Buzz|p1a: Heatran
+|-crit|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Amaterasu|265\/374|[from] sandstorm
+|-heal|p2a: Amaterasu|288\/374|[from] item: Leftovers
+|callback|decision
+|leave|Fenix-
+|player|p1
+|-message|fenix lost due to inactivity.
+|
+|win|rbm276
+|raw|Ladder updating...
+|raw|Fenix-'s rating: 2024 &rarr; <strong>2015<\/strong><br \/>(-9 for losing)
+|raw|rbm276's rating: 1776 &rarr; <strong>1782<\/strong><br \/>(+6 for winning)

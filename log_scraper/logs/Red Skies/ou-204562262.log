@@ -1,0 +1,325 @@
+|join|Red Skies
+|join|step6srl
+|player|p1|Red Skies|209
+|player|p2|step6srl|40
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Scizor, M
+|poke|p1|Keldeo-Resolute
+|poke|p1|Infernape, M
+|poke|p1|Breloom, M
+|poke|p1|Garchomp, F
+|poke|p1|Azumarill, F
+|poke|p2|Venusaur, F
+|poke|p2|Rotom-Wash
+|poke|p2|Mandibuzz, F
+|poke|p2|Latios, M
+|poke|p2|Mamoswine, F
+|poke|p2|Victini
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Infernape|Infernape, M|293\/293
+|switch|p2a: Venusaur|Venusaur, F|363\/363
+|turn|1
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|423\/423
+|move|p1a: Infernape|Stealth Rock|p2a: Mandibuzz
+|-sidestart|p2: step6srl|move: Stealth Rock
+|
+|turn|2
+|
+|move|p1a: Infernape|Fire Blast|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|257\/423
+|move|p2a: Mandibuzz|Defog|p1a: Infernape
+|-unboost|p1a: Infernape|evasion|1
+|-sideend|p2: step6srl|Stealth Rock|[from] move: Defog|[of] p2a: Mandibuzz
+|
+|turn|3
+|
+|move|p1a: Infernape|Stealth Rock|p2a: Mandibuzz
+|-sidestart|p2: step6srl|move: Stealth Rock
+|move|p2a: Mandibuzz|Roost|p2a: Mandibuzz
+|-heal|p2a: Mandibuzz|423\/423
+|
+|turn|4
+|
+|switch|p1a: Keldeo-Resolute|Keldeo-Resolute|323\/323
+|move|p2a: Mandibuzz|Defog|p1a: Keldeo-Resolute
+|-unboost|p1a: Keldeo-Resolute|evasion|1
+|-sideend|p2: step6srl|Stealth Rock|[from] move: Defog|[of] p2a: Mandibuzz
+|
+|turn|5
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|303\/303
+|move|p1a: Keldeo-Resolute|Scald|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|235\/303
+|-status|p2a: Rotom-Wash|brn
+|
+|-heal|p2a: Rotom-Wash|253\/303 brn|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|216\/303 brn|[from] brn
+|turn|6
+|
+|switch|p1a: Breloom|Breloom, M|323\/323
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Breloom|[miss]
+|-miss|p2a: Rotom-Wash|p1a: Breloom
+|
+|-heal|p2a: Rotom-Wash|234\/303 brn|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|197\/303 brn|[from] brn
+|-status|p1a: Breloom|tox|[from] item: Toxic Orb
+|turn|7
+|c|âRed Skies|datmiss
+|
+|switch|p2a: Venusaur|Venusaur, F|363\/363
+|move|p1a: Breloom|Substitute|p1a: Breloom
+|-start|p1a: Breloom|Substitute
+|-damage|p1a: Breloom|243\/323 tox
+|
+|-heal|p1a: Breloom|283\/323 tox|[from] ability: Poison Heal
+|turn|8
+|
+|-singleturn|p1a: Breloom|move: Focus Punch
+|detailschange|p2a: Venusaur|Venusaur-Mega, F
+|-mega|p2a: Venusaur|Venusaur|Venusaurite
+|move|p2a: Venusaur|Sludge Bomb|p1a: Breloom
+|-supereffective|p1a: Breloom
+|-end|p1a: Breloom|Substitute
+|move|p1a: Breloom|Focus Punch|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|271\/363
+|
+|-heal|p1a: Breloom|323\/323 tox|[from] ability: Poison Heal
+|turn|9
+|
+|switch|p1a: Scizor|Scizor, M|296\/296
+|move|p2a: Venusaur|Hidden Power|p1a: Scizor
+|-supereffective|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|faint|p1a: Scizor
+|
+|
+|switch|p1a: Infernape|Infernape, M|293\/293
+|turn|10
+|
+|move|p1a: Infernape|Stealth Rock|p2a: Venusaur
+|-sidestart|p2: step6srl|move: Stealth Rock
+|move|p2a: Venusaur|Sleep Powder|p1a: Infernape|[miss]
+|-miss|p2a: Venusaur|p1a: Infernape
+|
+|turn|11
+|
+|move|p1a: Infernape|Fire Blast|p2a: Venusaur|[miss]
+|-miss|p1a: Infernape|p2a: Venusaur
+|move|p2a: Venusaur|Sleep Powder|p1a: Infernape
+|-status|p1a: Infernape|slp
+|
+|turn|12
+|
+|cant|p1a: Infernape|slp
+|move|p2a: Venusaur|Sludge Bomb|p1a: Infernape
+|-damage|p1a: Infernape|79\/293 slp
+|
+|turn|13
+|
+|cant|p1a: Infernape|slp
+|move|p2a: Venusaur|Giga Drain|p1a: Infernape
+|-resisted|p1a: Infernape
+|-damage|p1a: Infernape|0 fnt
+|-heal|p2a: Venusaur|311\/363|[from] drain|[of] p1a: Infernape
+|faint|p1a: Infernape
+|
+|
+|switch|p1a: Garchomp|Garchomp, F|357\/357
+|turn|14
+|
+|move|p1a: Garchomp|Outrage|p2a: Venusaur
+|-damage|p2a: Venusaur|122\/363
+|move|p2a: Venusaur|Sleep Powder|p1a: Garchomp|[miss]
+|-miss|p2a: Venusaur|p1a: Garchomp
+|
+|turn|15
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|423\/423
+|-damage|p2a: Mandibuzz|318\/423|[from] Stealth Rock
+|move|p1a: Garchomp|Outrage|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|171\/423
+|-damage|p1a: Garchomp|298\/357|[from] item: Rocky Helmet|[of] p2a: Mandibuzz
+|
+|turn|16
+|
+|move|p1a: Garchomp|Outrage|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|9\/423
+|-damage|p1a: Garchomp|239\/357|[from] item: Rocky Helmet|[of] p2a: Mandibuzz
+|move|p2a: Mandibuzz|Defog|p1a: Garchomp
+|-unboost|p1a: Garchomp|evasion|1
+|-sideend|p2: step6srl|Stealth Rock|[from] move: Defog|[of] p2a: Mandibuzz
+|
+|-end|p1a: Garchomp|rampage
+|-start|p1a: Garchomp|confusion
+|turn|17
+|
+|switch|p1a: Keldeo-Resolute|Keldeo-Resolute|323\/323
+|move|p2a: Mandibuzz|Roost|p2a: Mandibuzz
+|-heal|p2a: Mandibuzz|221\/423
+|
+|turn|18
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|197\/303 brn
+|move|p1a: Keldeo-Resolute|Scald|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|118\/303 brn
+|
+|-heal|p2a: Rotom-Wash|136\/303 brn|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|99\/303 brn|[from] brn
+|turn|19
+|
+|switch|p1a: Garchomp|Garchomp, F|239\/357
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Garchomp
+|-immune|p1a: Garchomp|[msg]
+|
+|-heal|p2a: Rotom-Wash|117\/303 brn|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|80\/303 brn|[from] brn
+|turn|20
+|
+|move|p1a: Garchomp|Dragon Claw|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|
+|switch|p2a: Mamoswine|Mamoswine, F|361\/361
+|turn|21
+|
+|switch|p1a: Breloom|Breloom, M|323\/323 tox
+|move|p2a: Mamoswine|Stealth Rock|p1a: Breloom
+|-sidestart|p1: Red Skies|move: Stealth Rock
+|
+|turn|22
+|
+|move|p2a: Mamoswine|Ice Shard|p1a: Breloom
+|-supereffective|p1a: Breloom
+|-damage|p1a: Breloom|173\/323 tox
+|move|p1a: Breloom|Bullet Seed|p2a: Mamoswine
+|-supereffective|p2a: Mamoswine
+|-damage|p2a: Mamoswine|263\/361
+|-supereffective|p2a: Mamoswine
+|-damage|p2a: Mamoswine|167\/361
+|-hitcount|p2a: Mamoswine|2
+|
+|-heal|p1a: Breloom|213\/323 tox|[from] ability: Poison Heal
+|turn|23
+|
+|move|p2a: Mamoswine|Ice Shard|p1a: Breloom
+|-supereffective|p1a: Breloom
+|-damage|p1a: Breloom|61\/323 tox
+|move|p1a: Breloom|Bullet Seed|p2a: Mamoswine
+|-supereffective|p2a: Mamoswine
+|-damage|p2a: Mamoswine|77\/361
+|-supereffective|p2a: Mamoswine
+|-damage|p2a: Mamoswine|0 fnt
+|-hitcount|p2a: Mamoswine|2
+|faint|p2a: Mamoswine
+|
+|-heal|p1a: Breloom|101\/323 tox|[from] ability: Poison Heal
+|
+|switch|p2a: Victini|Victini|341\/341
+|turn|24
+|
+|move|p2a: Victini|U-turn|p1a: Breloom
+|-damage|p1a: Breloom|32\/323 tox
+|
+|switch|p2a: Venusaur|Venusaur-Mega, F|122\/363
+|move|p1a: Breloom|Bullet Seed|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|113\/363
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|104\/363
+|-hitcount|p2a: Venusaur|2
+|
+|-heal|p1a: Breloom|72\/323 tox|[from] ability: Poison Heal
+|turn|25
+|
+|switch|p1a: Garchomp|Garchomp, F|239\/357
+|-damage|p1a: Garchomp|217\/357|[from] Stealth Rock
+|move|p2a: Venusaur|Giga Drain|p1a: Garchomp
+|-damage|p1a: Garchomp|54\/357
+|-heal|p2a: Venusaur|186\/363|[from] drain|[of] p1a: Garchomp
+|
+|turn|26
+|
+|move|p1a: Garchomp|Outrage|p2a: Venusaur
+|-crit|p2a: Venusaur
+|-damage|p2a: Venusaur|0 fnt
+|faint|p2a: Venusaur
+|
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|221\/423
+|turn|27
+|
+|move|p1a: Garchomp|Outrage|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|67\/423
+|-damage|p1a: Garchomp|0 fnt|[from] item: Rocky Helmet|[of] p2a: Mandibuzz
+|faint|p1a: Garchomp
+|move|p2a: Mandibuzz|Foul Play|p1: Garchomp|[notarget]
+|-notarget
+|
+|
+|switch|p1a: Keldeo-Resolute|Keldeo-Resolute|323\/323
+|-damage|p1a: Keldeo-Resolute|303\/323|[from] Stealth Rock
+|turn|28
+|
+|move|p1a: Keldeo-Resolute|Scald|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|0 fnt
+|faint|p2a: Mandibuzz
+|
+|
+|switch|p2a: Latios|Latios, M|301\/301
+|turn|29
+|
+|switch|p1a: Breloom|Breloom, M|72\/323 tox
+|-damage|p1a: Breloom|52\/323 tox|[from] Stealth Rock
+|move|p2a: Latios|Psyshock|p1a: Breloom
+|-supereffective|p1a: Breloom
+|-damage|p1a: Breloom|0 fnt
+|-damage|p2a: Latios|271\/301|[from] item: Life Orb
+|faint|p1a: Breloom
+|
+|
+|switch|p1a: Azumarill|Azumarill, F|404\/404
+|-damage|p1a: Azumarill|354\/404|[from] Stealth Rock
+|turn|30
+|
+|move|p2a: Latios|Thunderbolt|p1a: Azumarill
+|-supereffective|p1a: Azumarill
+|-damage|p1a: Azumarill|0 fnt
+|-damage|p2a: Latios|241\/301|[from] item: Life Orb
+|faint|p1a: Azumarill
+|
+|
+|switch|p1a: Keldeo-Resolute|Keldeo-Resolute|303\/323
+|-damage|p1a: Keldeo-Resolute|283\/323|[from] Stealth Rock
+|turn|31
+|
+|move|p2a: Latios|Psyshock|p1a: Keldeo-Resolute
+|-crit|p1a: Keldeo-Resolute
+|-supereffective|p1a: Keldeo-Resolute
+|-damage|p1a: Keldeo-Resolute|0 fnt
+|-damage|p2a: Latios|211\/301|[from] item: Life Orb
+|faint|p1a: Keldeo-Resolute
+|
+|win|step6srl
+|raw|Ladder updating...
+|raw|Red Skies's rating: 1589 &rarr; <strong>1564<\/strong><br \/>(-25 for losing)
+|raw|step6srl's rating: 1487 &rarr; <strong>1513<\/strong><br \/>(+26 for winning)

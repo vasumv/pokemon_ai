@@ -1,0 +1,390 @@
+|join|ZappyBoy
+|join|mr.scout
+|player|p1|ZappyBoy|156
+|player|p2|mr.scout|169
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Metagross
+|poke|p1|Keldeo
+|poke|p1|Landorus-Therian, M
+|poke|p1|Thundurus, M
+|poke|p1|Victini
+|poke|p1|Latias, F
+|poke|p2|Sableye, M
+|poke|p2|Latios, M
+|poke|p2|Landorus-Therian, M
+|poke|p2|Clefable, F
+|poke|p2|Ferrothorn, M
+|poke|p2|Azumarill, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Victini|Victini|341\/341
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Victini
+|-unboost|p1a: Victini|atk|1
+|turn|1
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|382\/382
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Landorus-Therian
+|-unboost|p2a: Landorus-Therian|atk|1
+|move|p2a: Landorus-Therian|Knock Off|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|298\/382
+|-enditem|p1a: Landorus-Therian|Leftovers|[from] move: Knock Off|[of] p2a: Landorus-Therian
+|
+|turn|2
+|
+|switch|p2a: Sableye|Sableye, M|303\/303
+|move|p1a: Landorus-Therian|Knock Off|p2a: Sableye
+|-damage|p2a: Sableye|218\/303
+|
+|turn|3
+|
+|switch|p1a: Victini|Victini|341\/341
+|move|p2a: Sableye|Will-O-Wisp|p1a: Victini
+|-fail|p1a: Victini
+|
+|turn|4
+|
+|detailschange|p2a: Sableye|Sableye-Mega, M
+|-mega|p2a: Sableye|Sableye|Sablenite
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|303\/303
+|move|p1a: Victini|V-create|p2a: Sableye
+|-damage|p2a: Sableye|53\/303
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|
+|turn|5
+|
+|move|p1a: Victini|V-create|p2a: Sableye
+|-damage|p2a: Sableye|0 fnt
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|faint|p2a: Sableye
+|
+|
+|switch|p2a: Azumarill|Azumarill, F|401\/401
+|turn|6
+|
+|switch|p1a: Keldeo|Keldeo|353\/353
+|move|p2a: Azumarill|Waterfall|p1a: Keldeo
+|-resisted|p1a: Keldeo
+|-damage|p1a: Keldeo|251\/353
+|
+|-heal|p1a: Keldeo|273\/353|[from] item: Leftovers
+|turn|7
+|
+|move|p1a: Keldeo|Scald|p2a: Azumarill
+|-resisted|p2a: Azumarill
+|-damage|p2a: Azumarill|341\/401
+|move|p2a: Azumarill|Play Rough|p1a: Keldeo
+|-supereffective|p1a: Keldeo
+|-damage|p1a: Keldeo|0 fnt
+|faint|p1a: Keldeo
+|
+|
+|switch|p1a: Metagross|Metagross|339\/339
+|turn|8
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|351\/351
+|detailschange|p1a: Metagross|Metagross-Mega
+|-mega|p1a: Metagross|Metagross|Metagrossite
+|move|p1a: Metagross|Iron Head|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|269\/351
+|-damage|p1a: Metagross|297\/339|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|
+|-heal|p2a: Ferrothorn|290\/351|[from] item: Leftovers
+|turn|9
+|
+|switch|p1a: Victini|Victini|341\/341
+|move|p2a: Ferrothorn|Leech Seed|p1a: Victini
+|-start|p1a: Victini|move: Leech Seed
+|
+|-heal|p2a: Ferrothorn|311\/351|[from] item: Leftovers
+|-damage|p1a: Victini|299\/341|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|351\/351|[silent]
+|turn|10
+|
+|move|p2a: Ferrothorn|Protect|p2a: Ferrothorn
+|-singleturn|p2a: Ferrothorn|Protect
+|move|p1a: Victini|U-turn|p2a: Ferrothorn
+|-activate|p2a: Ferrothorn|Protect
+|
+|-damage|p1a: Victini|257\/341|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|11
+|
+|move|p1a: Victini|U-turn|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|275\/351
+|-damage|p1a: Victini|215\/341|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|
+|switch|p1a: Latias|Latias, F|301\/301
+|move|p2a: Ferrothorn|Spikes|p1a: Latias
+|-sidestart|p1: ZappyBoy|Spikes
+|
+|-heal|p2a: Ferrothorn|296\/351|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Ferrothorn|Protect|p2a: Ferrothorn
+|-singleturn|p2a: Ferrothorn|Protect
+|move|p1a: Latias|Trick|p2a: Ferrothorn
+|-activate|p2a: Ferrothorn|Protect
+|
+|-heal|p2a: Ferrothorn|317\/351|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|298\/382
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Ferrothorn
+|-unboost|p2a: Ferrothorn|atk|1
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Landorus-Therian
+|-unboost|p1a: Landorus-Therian|atk|1
+|
+|turn|14
+|
+|move|p2a: Landorus-Therian|U-turn|p1a: Landorus-Therian
+|-resisted|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|250\/382
+|
+|switch|p2a: Clefable|Clefable, F|394\/394
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Clefable
+|-sidestart|p2: mr.scout|move: Stealth Rock
+|
+|turn|15
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Clefable
+|-resisted|p2a: Clefable
+|-damage|p2a: Clefable|357\/394
+|
+|switch|p1a: Victini|Victini|215\/341
+|-damage|p1a: Victini|173\/341|[from] Spikes
+|move|p2a: Clefable|Stealth Rock|p1a: Victini
+|-sidestart|p1: ZappyBoy|move: Stealth Rock
+|
+|-heal|p2a: Clefable|381\/394|[from] item: Leftovers
+|turn|16
+|
+|switch|p2a: Azumarill|Azumarill, F|341\/401
+|-damage|p2a: Azumarill|291\/401|[from] Stealth Rock
+|move|p1a: Victini|V-create|p2a: Azumarill
+|-resisted|p2a: Azumarill
+|-damage|p2a: Azumarill|52\/401
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|
+|turn|17
+|
+|switch|p1a: Latias|Latias, F|301\/301
+|-damage|p1a: Latias|264\/301|[from] Stealth Rock
+|move|p2a: Azumarill|Aqua Jet|p1a: Latias
+|-resisted|p1a: Latias
+|-damage|p1a: Latias|213\/301
+|
+|turn|18
+|
+|move|p1a: Latias|Defog|p2a: Azumarill
+|-unboost|p2a: Azumarill|evasion|1
+|-sideend|p2: mr.scout|Stealth Rock|[from] move: Defog|[of] p2a: Azumarill
+|-sideend|p1: ZappyBoy|Spikes|[from] move: Defog|[of] p1a: Latias
+|-sideend|p1: ZappyBoy|Stealth Rock|[from] move: Defog|[of] p1a: Latias
+|move|p2a: Azumarill|Play Rough|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|0 fnt
+|faint|p1a: Latias
+|
+|
+|switch|p1a: Metagross|Metagross-Mega|297\/339
+|turn|19
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|250\/382
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Azumarill
+|-unboost|p2a: Azumarill|atk|1
+|switch|p2a: Ferrothorn|Ferrothorn, M|317\/351
+|
+|-heal|p2a: Ferrothorn|338\/351|[from] item: Leftovers
+|turn|20
+|
+|switch|p2a: Azumarill|Azumarill, F|52\/401
+|move|p1a: Landorus-Therian|Knock Off|p2a: Azumarill
+|-resisted|p2a: Azumarill
+|-damage|p2a: Azumarill|0 fnt
+|-enditem|p2a: Azumarill|Assault Vest|[from] move: Knock Off|[of] p1a: Landorus-Therian
+|faint|p2a: Azumarill
+|
+|
+|switch|p2a: Latios|Latios, M|301\/301
+|turn|21
+|
+|switch|p1a: Metagross|Metagross-Mega|297\/339
+|move|p2a: Latios|Ice Beam|p1a: Metagross
+|-resisted|p1a: Metagross
+|-damage|p1a: Metagross|235\/339
+|-damage|p2a: Latios|271\/301|[from] item: Life Orb
+|
+|turn|22
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|338\/351
+|move|p1a: Metagross|Ice Punch|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|237\/351
+|-damage|p1a: Metagross|193\/339|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|
+|-heal|p2a: Ferrothorn|258\/351|[from] item: Leftovers
+|turn|23
+|
+|switch|p1a: Victini|Victini|173\/341
+|move|p2a: Ferrothorn|Leech Seed|p1a: Victini
+|-start|p1a: Victini|move: Leech Seed
+|
+|-heal|p2a: Ferrothorn|279\/351|[from] item: Leftovers
+|-damage|p1a: Victini|131\/341|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|321\/351|[silent]
+|turn|24
+|
+|move|p2a: Ferrothorn|Protect|p2a: Ferrothorn
+|-singleturn|p2a: Ferrothorn|Protect
+|move|p1a: Victini|V-create|p2a: Ferrothorn
+|-activate|p2a: Ferrothorn|Protect
+|
+|-heal|p2a: Ferrothorn|342\/351|[from] item: Leftovers
+|-damage|p1a: Victini|89\/341|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|351\/351|[silent]
+|turn|25
+|
+|switch|p2a: Clefable|Clefable, F|381\/394
+|move|p1a: Victini|V-create|p2a: Clefable
+|-damage|p2a: Clefable|0 fnt
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|faint|p2a: Clefable
+|
+|c|âZappyBoy|victini did some serous damage to ur team lol
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|351\/351
+|turn|26
+|
+|move|p2a: Ferrothorn|Protect|p2a: Ferrothorn
+|-singleturn|p2a: Ferrothorn|Protect
+|move|p1a: Victini|V-create|p2a: Ferrothorn
+|-activate|p2a: Ferrothorn|Protect
+|
+|-damage|p1a: Victini|47\/341|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|27
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Victini
+|-unboost|p1a: Victini|atk|1
+|move|p1a: Victini|V-create|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|27\/319
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|
+|-damage|p1a: Victini|5\/341|[from] Leech Seed|[of] p2a: Landorus-Therian
+|-heal|p2a: Landorus-Therian|69\/319|[silent]
+|turn|28
+|
+|switch|p1a: Thundurus|Thundurus, M|299\/299
+|move|p2a: Landorus-Therian|U-turn|p1a: Thundurus
+|-resisted|p1a: Thundurus
+|-damage|p1a: Thundurus|240\/299
+|
+|switch|p2a: Latios|Latios, M|271\/301
+|
+|turn|29
+|
+|move|p1a: Thundurus|Thunder Wave|p2a: Latios
+|-status|p2a: Latios|par
+|move|p2a: Latios|Draco Meteor|p1a: Thundurus
+|-damage|p1a: Thundurus|0 fnt
+|-unboost|p2a: Latios|spa|2
+|-damage|p2a: Latios|241\/301 par|[from] item: Life Orb
+|faint|p1a: Thundurus
+|
+|
+|switch|p1a: Victini|Victini|5\/341
+|turn|30
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|351\/351
+|move|p1a: Victini|U-turn|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|279\/351
+|-damage|p1a: Victini|0 fnt|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|faint|p1a: Victini
+|
+|-heal|p2a: Ferrothorn|300\/351|[from] item: Leftovers
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|250\/382
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Ferrothorn
+|-unboost|p2a: Ferrothorn|atk|1
+|turn|31
+|
+|move|p1a: Landorus-Therian|Knock Off|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|210\/351
+|-damage|p1a: Landorus-Therian|203\/382|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|-enditem|p2a: Ferrothorn|Leftovers|[from] move: Knock Off|[of] p1a: Landorus-Therian
+|move|p2a: Ferrothorn|Leech Seed|p1a: Landorus-Therian
+|-start|p1a: Landorus-Therian|move: Leech Seed
+|
+|-damage|p1a: Landorus-Therian|156\/382|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|257\/351|[silent]
+|turn|32
+|
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Ferrothorn
+|-sidestart|p2: mr.scout|move: Stealth Rock
+|move|p2a: Ferrothorn|Spikes|p1a: Landorus-Therian
+|-sidestart|p1: ZappyBoy|Spikes
+|
+|-damage|p1a: Landorus-Therian|109\/382|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|304\/351|[silent]
+|turn|33
+|
+|move|p1a: Landorus-Therian|Earthquake|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|156\/351
+|move|p2a: Ferrothorn|Leech Seed|p1a: Landorus-Therian
+|-fail|p1a: Landorus-Therian
+|
+|-damage|p1a: Landorus-Therian|62\/382|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|203\/351|[silent]
+|turn|34
+|
+|move|p2a: Ferrothorn|Protect|p2a: Ferrothorn
+|-singleturn|p2a: Ferrothorn|Protect
+|move|p1a: Landorus-Therian|Knock Off|p2a: Ferrothorn
+|-activate|p2a: Ferrothorn|Protect
+|
+|-damage|p1a: Landorus-Therian|15\/382|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|250\/351|[silent]
+|turn|35
+|
+|move|p2a: Ferrothorn|Protect|p2a: Ferrothorn
+|-singleturn|p2a: Ferrothorn|Protect
+|move|p1a: Landorus-Therian|Earthquake|p2a: Ferrothorn
+|-activate|p2a: Ferrothorn|Protect
+|
+|-damage|p1a: Landorus-Therian|0 fnt|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|265\/351|[silent]
+|faint|p1a: Landorus-Therian
+|-message|ZappyBoy forfeited.
+|leave|ZappyBoy
+|
+|win|mr.scout
+|raw|Ladder updating...
+|player|p1
+|raw|ZappyBoy's rating: 1717 &rarr; <strong>1691<\/strong><br \/>(-26 for losing)
+|raw|mr.scout's rating: 1613 &rarr; <strong>1638<\/strong><br \/>(+25 for winning)

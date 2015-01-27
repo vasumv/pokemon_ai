@@ -1,0 +1,594 @@
+|join|Vanilla Vanish
+|join|animski
+|player|p1|Vanilla Vanish|266
+|player|p2|animski|2
+|gametype|singles
+|gen|4
+|tier|[Gen 4] OU (beta)
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|
+|start
+|switch|p1a: Gliscor|Gliscor, F|354\/354
+|switch|p2a: Swampert|Swampert, F|403\/403
+|turn|1
+|callback|decision
+|
+|move|p1a: Gliscor|Taunt|p2a: Swampert
+|-start|p2a: Swampert|move: Taunt
+|move|p2a: Swampert|Ice Beam|p1a: Gliscor
+|-supereffective|p1a: Gliscor
+|-enditem|p1a: Gliscor|Yache Berry|[eat]
+|-damage|p1a: Gliscor|232\/354
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: Gengar|Gengar, M|261\/261
+|move|p1a: Gliscor|Stealth Rock|p2a: Gengar
+|-sidestart|p2: animski|move: Stealth Rock
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Gengar|Substitute|p2a: Gengar
+|-start|p2a: Gengar|Substitute
+|-damage|p2a: Gengar|196\/261
+|move|p1a: Gliscor|U-turn|p2a: Gengar
+|-resisted|p2a: Gengar
+|-activate|p2a: Gengar|Substitute|[damage]
+|callback|decision
+|
+|switch|p1a: Blissey|Blissey, F|651\/651
+|
+|turn|4
+|callback|decision
+|
+|move|p2a: Gengar|Pain Split|p1a: Blissey
+|-sethp|p1a: Blissey|423\/651|p2a: Gengar|261\/261|[from] move: Pain Split
+|move|p1a: Blissey|Charge Beam|p2a: Gengar
+|-end|p2a: Gengar|Substitute
+|-boost|p1a: Blissey|spa|1
+|
+|-heal|p1a: Blissey|463\/651|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p2a: Swampert|Swampert, F|403\/403
+|-damage|p2a: Swampert|378\/403|[from] Stealth Rock
+|move|p1a: Blissey|Charge Beam|p2a: Swampert
+|-immune|p2a: Swampert|[msg]
+|
+|-heal|p2a: Swampert|403\/403|[from] item: Leftovers
+|-heal|p1a: Blissey|503\/651|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Swampert|Stealth Rock|p1a: Blissey
+|-sidestart|p1: Vanilla Vanish|move: Stealth Rock
+|move|p1a: Blissey|Flamethrower|p2a: Swampert
+|-resisted|p2a: Swampert
+|-damage|p2a: Swampert|337\/403
+|-status|p2a: Swampert|brn
+|
+|-heal|p2a: Swampert|362\/403 brn|[from] item: Leftovers
+|-heal|p1a: Blissey|543\/651|[from] item: Leftovers
+|-damage|p2a: Swampert|312\/403 brn|[from] brn
+|turn|7
+|callback|decision
+|
+|move|p1a: Blissey|Flamethrower|p2a: Swampert
+|-resisted|p2a: Swampert
+|-damage|p2a: Swampert|250\/403 brn
+|move|p2a: Swampert|Roar|p1a: Blissey
+|drag|p1a: Gliscor|Gliscor, F|232\/354
+|-damage|p1a: Gliscor|188\/354|[from] Stealth Rock
+|
+|-heal|p2a: Swampert|275\/403 brn|[from] item: Leftovers
+|-damage|p2a: Swampert|225\/403 brn|[from] brn
+|turn|8
+|callback|decision
+|
+|move|p1a: Gliscor|U-turn|p2a: Swampert
+|-damage|p2a: Swampert|185\/403 brn
+|callback|decision
+|
+|switch|p1a: Blissey|Blissey, F|543\/651
+|-damage|p1a: Blissey|462\/651|[from] Stealth Rock
+|move|p2a: Swampert|Ice Beam|p1a: Blissey
+|-damage|p1a: Blissey|415\/651
+|
+|-heal|p2a: Swampert|210\/403 brn|[from] item: Leftovers
+|-heal|p1a: Blissey|455\/651|[from] item: Leftovers
+|-damage|p2a: Swampert|160\/403 brn|[from] brn
+|turn|9
+|callback|decision
+|
+|switch|p2a: Suicune|Suicune|342\/342
+|-damage|p2a: Suicune|300\/342|[from] Stealth Rock
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Blissey|Soft-Boiled|p1a: Blissey
+|-heal|p1a: Blissey|651\/651
+|
+|-heal|p2a: Suicune|321\/342|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: Blissey|Charge Beam|p2a: Suicune
+|-supereffective|p2a: Suicune
+|-damage|p2a: Suicune|271\/342
+|-boost|p1a: Blissey|spa|1
+|
+|-heal|p2a: Suicune|292\/342|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: Blissey|Charge Beam|p2a: Suicune
+|-crit|p2a: Suicune
+|-supereffective|p2a: Suicune
+|-damage|p2a: Suicune|86\/342
+|-boost|p1a: Blissey|spa|1
+|
+|-heal|p2a: Suicune|107\/342|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: Blissey|Charge Beam|p2a: Suicune
+|-supereffective|p2a: Suicune
+|-damage|p2a: Suicune|45\/342
+|-boost|p1a: Blissey|spa|1
+|
+|-heal|p2a: Suicune|66\/342|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: Suicune|Surf|p1a: Blissey
+|-damage|p1a: Blissey|405\/651
+|move|p1a: Blissey|Charge Beam|p2a: Suicune
+|-supereffective|p2a: Suicune
+|-damage|p2a: Suicune|0 fnt
+|-boost|p1a: Blissey|spa|1
+|faint|p2a: Suicune
+|
+|-heal|p1a: Blissey|445\/651|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Dragonite|Dragonite, M|323\/323
+|-damage|p2a: Dragonite|243\/323|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|move|p2a: Dragonite|Draco Meteor|p1a: Blissey
+|-damage|p1a: Blissey|258\/651
+|-unboost|p2a: Dragonite|spa|2
+|-damage|p2a: Dragonite|211\/323|[from] item: Life Orb
+|move|p1a: Blissey|Counter|p2a: Dragonite
+|-fail|p2a: Dragonite
+|
+|-heal|p1a: Blissey|298\/651|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p2a: Dragonite|Superpower|p1a: Blissey
+|-crit|p1a: Blissey
+|-supereffective|p1a: Blissey
+|-damage|p1a: Blissey|0 fnt
+|-unboost|p2a: Dragonite|atk|1
+|-unboost|p2a: Dragonite|def|1
+|-damage|p2a: Dragonite|179\/323|[from] item: Life Orb
+|faint|p1a: Blissey
+|
+|callback|decision
+|
+|switch|p1a: Mamoswine|Mamoswine, M|361\/361
+|-damage|p1a: Mamoswine|316\/361|[from] Stealth Rock
+|turn|16
+|callback|decision
+|
+|switch|p2a: Magnezone|Magnezone|281\/281
+|-damage|p2a: Magnezone|264\/281|[from] Stealth Rock
+|move|p1a: Mamoswine|Curse|p1a: Mamoswine
+|-boost|p1a: Mamoswine|atk|1
+|-boost|p1a: Mamoswine|def|1
+|-unboost|p1a: Mamoswine|spe|1
+|
+|-heal|p2a: Magnezone|281\/281|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p2a: Magnezone|Hidden Power|p1a: Mamoswine
+|-supereffective|p1a: Mamoswine
+|-damage|p1a: Mamoswine|142\/361
+|move|p1a: Mamoswine|Earthquake|p2a: Magnezone
+|-supereffective|p2a: Magnezone
+|-damage|p2a: Magnezone|0 fnt
+|faint|p2a: Magnezone
+|
+|callback|decision
+|chat|animski|i thought you would switch :(
+|
+|switch|p2a: Gengar|Gengar, M|261\/261
+|-damage|p2a: Gengar|229\/261|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|move|p2a: Gengar|Substitute|p2a: Gengar
+|-start|p2a: Gengar|Substitute
+|-damage|p2a: Gengar|164\/261
+|move|p1a: Mamoswine|Rest|p1a: Mamoswine
+|-status|p1a: Mamoswine|slp
+|-heal|p1a: Mamoswine|361\/361 slp|[silent]
+|-status|p1a: Mamoswine|slp|[from] move: Rest
+|-enditem|p1a: Mamoswine|Chesto Berry|[eat]
+|-curestatus|p1a: Mamoswine|slp
+|
+|turn|19
+|callback|decision
+|
+|move|p1a: Mamoswine|Ice Shard|p2a: Gengar
+|-end|p2a: Gengar|Substitute
+|move|p2a: Gengar|Focus Blast|p1a: Mamoswine|[miss]
+|-miss|p2a: Gengar|p1a: Mamoswine
+|
+|turn|20
+|callback|decision
+|
+|move|p2a: Gengar|Focus Blast|p1a: Mamoswine
+|-supereffective|p1a: Mamoswine
+|-damage|p1a: Mamoswine|0 fnt
+|-damage|p2a: Gengar|138\/261|[from] item: Life Orb
+|faint|p1a: Mamoswine
+|
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie|271\/271
+|-damage|p1a: Starmie|238\/271|[from] Stealth Rock
+|turn|21
+|callback|decision
+|
+|move|p1a: Starmie|Psychic|p2a: Gengar
+|-supereffective|p2a: Gengar
+|-damage|p2a: Gengar|0 fnt
+|faint|p2a: Gengar
+|
+|-heal|p1a: Starmie|254\/271|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Dragonite|Dragonite, M|179\/323
+|-damage|p2a: Dragonite|99\/323|[from] Stealth Rock
+|turn|22
+|callback|decision
+|
+|move|p1a: Starmie|Rapid Spin|p2a: Dragonite
+|-damage|p2a: Dragonite|86\/323
+|-sideend|p1: Vanilla Vanish|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Starmie
+|move|p2a: Dragonite|Roost|p2a: Dragonite
+|-heal|p2a: Dragonite|248\/323
+|
+|-heal|p1a: Starmie|270\/271|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p1a: Starmie|Psychic|p2a: Dragonite
+|-damage|p2a: Dragonite|122\/323
+|-unboost|p2a: Dragonite|spd|1
+|move|p2a: Dragonite|Draco Meteor|p1a: Starmie
+|-damage|p1a: Starmie|0 fnt
+|-unboost|p2a: Dragonite|spa|2
+|-damage|p2a: Dragonite|90\/323|[from] item: Life Orb
+|faint|p1a: Starmie
+|
+|callback|decision
+|
+|switch|p1a: Gyarados|Gyarados, M|331\/331
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Dragonite
+|-unboost|p2a: Dragonite|atk|1
+|turn|24
+|callback|decision
+|
+|switch|p2a: Swampert|Swampert, F|160\/403 brn
+|-damage|p2a: Swampert|135\/403 brn|[from] Stealth Rock
+|move|p1a: Gyarados|Substitute|p1a: Gyarados
+|-start|p1a: Gyarados|Substitute
+|-damage|p1a: Gyarados|249\/331
+|
+|-heal|p1a: Gyarados|269\/331|[from] item: Leftovers
+|-heal|p2a: Swampert|160\/403 brn|[from] item: Leftovers
+|-damage|p2a: Swampert|110\/403 brn|[from] brn
+|turn|25
+|callback|decision
+|
+|move|p1a: Gyarados|Waterfall|p2a: Swampert
+|-damage|p2a: Swampert|0 fnt
+|faint|p2a: Swampert
+|
+|-heal|p1a: Gyarados|289\/331|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi|341\/341
+|-damage|p2a: Jirachi|320\/341|[from] Stealth Rock
+|turn|26
+|callback|decision
+|chat|animski|gg then
+|
+|move|p2a: Jirachi|U-turn|p1a: Gyarados
+|-crit|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-end|p1a: Gyarados|Substitute
+|callback|decision
+|
+|switch|p2a: Dragonite|Dragonite, M|90\/323
+|-damage|p2a: Dragonite|10\/323|[from] Stealth Rock
+|move|p1a: Gyarados|Waterfall|p2a: Dragonite
+|-resisted|p2a: Dragonite
+|-damage|p2a: Dragonite|0 fnt
+|faint|p2a: Dragonite
+|
+|-heal|p1a: Gyarados|309\/331|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi|320\/341
+|-damage|p2a: Jirachi|299\/341|[from] Stealth Rock
+|turn|27
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-damage|p1a: Gyarados|238\/331
+|cant|p1a: Gyarados|flinch
+|
+|-heal|p1a: Gyarados|258\/331|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-damage|p1a: Gyarados|189\/331
+|cant|p1a: Gyarados|flinch
+|
+|-heal|p1a: Gyarados|209\/331|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-damage|p1a: Gyarados|149\/331
+|cant|p1a: Gyarados|flinch
+|
+|-heal|p1a: Gyarados|169\/331|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-damage|p1a: Gyarados|100\/331
+|cant|p1a: Gyarados|flinch
+|
+|-heal|p1a: Gyarados|120\/331|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|switch|p1a: Umbreon|Umbreon, M|394\/394
+|move|p2a: Jirachi|Iron Head|p1a: Umbreon
+|-crit|p1a: Umbreon
+|-damage|p1a: Umbreon|220\/394
+|
+|-heal|p1a: Umbreon|244\/394|[from] item: Leftovers
+|turn|32
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Umbreon
+|-damage|p1a: Umbreon|150\/394
+|cant|p1a: Umbreon|flinch
+|
+|-heal|p1a: Umbreon|174\/394|[from] item: Leftovers
+|turn|33
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Umbreon
+|-damage|p1a: Umbreon|81\/394
+|cant|p1a: Umbreon|flinch
+|
+|-heal|p1a: Umbreon|105\/394|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Jirachi|Iron Head|p1a: Umbreon
+|-activate|p1a: Umbreon|Protect
+|
+|-heal|p1a: Umbreon|129\/394|[from] item: Leftovers
+|turn|35
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Umbreon
+|-damage|p1a: Umbreon|47\/394
+|cant|p1a: Umbreon|flinch
+|
+|-heal|p1a: Umbreon|71\/394|[from] item: Leftovers
+|turn|36
+|callback|decision
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Jirachi|Iron Head|p1a: Umbreon
+|-activate|p1a: Umbreon|Protect
+|
+|-heal|p1a: Umbreon|95\/394|[from] item: Leftovers
+|turn|37
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Umbreon
+|-damage|p1a: Umbreon|5\/394
+|cant|p1a: Umbreon|flinch
+|
+|-heal|p1a: Umbreon|29\/394|[from] item: Leftovers
+|turn|38
+|callback|decision
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Jirachi|Iron Head|p1a: Umbreon
+|-activate|p1a: Umbreon|Protect
+|
+|-heal|p1a: Umbreon|53\/394|[from] item: Leftovers
+|turn|39
+|callback|decision
+|
+|switch|p1a: Gliscor|Gliscor, F|188\/354
+|move|p2a: Jirachi|Iron Head|p1a: Gliscor
+|-damage|p1a: Gliscor|104\/354
+|
+|turn|40
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Gliscor
+|-damage|p1a: Gliscor|14\/354
+|cant|p1a: Gliscor|flinch
+|
+|turn|41
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Gliscor
+|-damage|p1a: Gliscor|0 fnt
+|faint|p1a: Gliscor
+|
+|callback|decision
+|
+|switch|p1a: Gyarados|Gyarados, M|120\/331
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Jirachi
+|-unboost|p2a: Jirachi|atk|1
+|turn|42
+|callback|decision
+|chat|animski|LOLOLOLOL
+|
+|move|p2a: Jirachi|Iron Head|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-damage|p1a: Gyarados|72\/331
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|
+|-heal|p1a: Gyarados|92\/331|[from] item: Leftovers
+|turn|43
+|callback|decision
+|chat|Vanilla Vanish|goddamn
+|chat|Vanilla Vanish|I need to go back and count those
+|
+|move|p2a: Jirachi|Iron Head|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-damage|p1a: Gyarados|49\/331
+|cant|p1a: Gyarados|flinch
+|
+|-heal|p1a: Gyarados|69\/331|[from] item: Leftovers
+|turn|44
+|callback|decision
+|chat|animski|that was like 20 straight flinches
+|chat|animski|srsly
+|
+|move|p2a: Jirachi|Iron Head|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-damage|p1a: Gyarados|26\/331
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|
+|-heal|p1a: Gyarados|46\/331|[from] item: Leftovers
+|turn|45
+|callback|decision
+|chat|animski|how lucky is that?
+|
+|move|p2a: Jirachi|Iron Head|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-damage|p1a: Gyarados|2\/331
+|move|p1a: Gyarados|Bounce|p2a: Jirachi|[still]
+|-prepare|p1a: Gyarados|Bounce|p2a: Jirachi
+|
+|-heal|p1a: Gyarados|22\/331|[from] item: Leftovers
+|turn|46
+|callback|decision
+|chat|Vanilla Vanish|how the hell are you still faster
+|
+|move|p2a: Jirachi|Iron Head|p1a: Gyarados|[miss]
+|-miss|p2a: Jirachi|p1a: Gyarados
+|move|p1a: Gyarados|Bounce|p2a: Jirachi|[miss]
+|-miss|p1a: Gyarados|p2a: Jirachi
+|
+|-heal|p1a: Gyarados|42\/331|[from] item: Leftovers
+|turn|47
+|callback|decision
+|
+|switch|p1a: Umbreon|Umbreon, M|53\/394
+|move|p2a: Jirachi|Iron Head|p1a: Umbreon
+|-damage|p1a: Umbreon|0 fnt
+|faint|p1a: Umbreon
+|
+|callback|decision
+|chat|animski|srsly
+|
+|switch|p1a: Gyarados|Gyarados, M|42\/331
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Jirachi
+|-unboost|p2a: Jirachi|atk|1
+|turn|48
+|callback|decision
+|chat|Vanilla Vanish|fuck this game
+|
+|move|p2a: Jirachi|Iron Head|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-damage|p1a: Gyarados|7\/331
+|cant|p1a: Gyarados|flinch
+|
+|-heal|p1a: Gyarados|27\/331|[from] item: Leftovers
+|turn|49
+|callback|decision
+|chat|animski|I WIN?!
+|chat|Vanilla Vanish|SO MANY HAX
+|
+|move|p2a: Jirachi|Iron Head|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-damage|p1a: Gyarados|0 fnt
+|faint|p1a: Gyarados
+|
+|win|animski
+|raw|Ladder updating...
+|raw|Vanilla Vanish's rating: 1027 &rarr; <strong>1000<\/strong><br \/>(-27 for losing)
+|raw|animski's rating: 1000 &rarr; <strong>1027<\/strong><br \/>(+27 for winning)
+|chat|animski|i lol'ed
+|chat|Vanilla Vanish|I don't even understand
+|chat|animski|Yeah that didn't just happen...
+|chat|Vanilla Vanish|what
+|chat|Vanilla Vanish|the
+|chat|Vanilla Vanish|actual fuck
+|chat|animski|that was..
+|chat|animski|almost
+|chat|animski|all
+|chat|animski|my iron heads..
+|chat|Vanilla Vanish|IT WAS ENTIRELY THE FLINCHES
+|chat|Vanilla Vanish|I'M SUPPOSED TO BE ABLE TO MOVE HALF THE TIME
+|chat|Vanilla Vanish|I'M SO MAD RIGHT NOW
+|chat|animski|dude, i was gonna forfeit after the blissey crit
+|chat|animski|then I said, i can still probably win
+|chat|animski|but it didnt think
+|chat|animski|25 straight flinches..
+|chat|animski|or 23
+|chat|Vanilla Vanish|...
+|chat|animski|Should I get a lottery ticket or something?
+|chat|animski|because that was just pure luck.
+|chat|Vanilla Vanish|I have no idea
+|chat|Vanilla Vanish|how the hell that happened

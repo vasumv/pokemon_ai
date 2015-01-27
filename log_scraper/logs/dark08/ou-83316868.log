@@ -1,0 +1,341 @@
+|join|dark08
+|join|Scrub1
+|player|p1|dark08|153
+|player|p2|Scrub1|266
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Lucario, F
+|poke|p1|Ditto
+|poke|p1|Latios, M
+|poke|p1|Scizor, F
+|poke|p1|Espeon, M
+|poke|p1|Umbreon, F
+|poke|p2|Lucario, M
+|poke|p2|Ditto
+|poke|p2|Latias, F
+|poke|p2|Rotom-Wash
+|poke|p2|Talonflame, M
+|poke|p2|Gyarados, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Scizor|Scizor, F|344\/344
+|switch|p2a: Talonflame|Talonflame, M|297\/297
+|turn|1
+|callback|decision
+|
+|switch|p1a: Umbreon|Umbreon, F|394\/394
+|move|p2a: Talonflame|Brave Bird|p1a: Umbreon
+|-damage|p1a: Umbreon|232\/394
+|-damage|p2a: Talonflame|244\/297|[from] recoil|[of] p1a: Umbreon
+|
+|-heal|p1a: Umbreon|256\/394|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|242\/242
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p1a: Umbreon|280\/394|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Thunderbolt|p1a: Umbreon
+|-damage|p1a: Umbreon|157\/394
+|move|p1a: Umbreon|Foul Play|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|179\/242
+|
+|-heal|p1a: Umbreon|354\/394|[from] move: Wish|[wisher] Umbreon
+|-heal|p2a: Rotom-Wash|194\/242|[from] item: Leftovers
+|-heal|p1a: Umbreon|378\/394|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Umbreon
+|-damage|p1a: Umbreon|221\/394
+|move|p1a: Umbreon|Foul Play|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|130\/242
+|
+|-heal|p2a: Rotom-Wash|145\/242|[from] item: Leftovers
+|-heal|p1a: Umbreon|245\/394|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M|302\/302
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Latios|[miss]
+|-miss|p2a: Rotom-Wash|p1a: Latios
+|
+|-heal|p2a: Rotom-Wash|160\/242|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p1a: Latios|Psyshock|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|callback|decision
+|
+|switch|p2a: Ditto|Ditto|299\/299
+|-transform|p2a: Ditto|p1a: Latios
+|turn|7
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|344\/344
+|move|p2a: Ditto|Draco Meteor|p1a: Scizor
+|-crit|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|117\/344
+|-unboost|p2a: Ditto|spa|2
+|
+|turn|8
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Ditto
+|-damage|p2a: Ditto|94\/299
+|move|p2a: Ditto|Draco Meteor|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|44\/344
+|-unboost|p2a: Ditto|spa|2
+|
+|turn|9
+|callback|decision
+|
+|switch|p2a: Talonflame|Talonflame, M|244\/297
+|move|p1a: Scizor|Bullet Punch|p2a: Talonflame
+|-resisted|p2a: Talonflame
+|-damage|p2a: Talonflame|133\/297
+|
+|turn|10
+|callback|decision
+|
+|switch|p1a: Umbreon|Umbreon, F|245\/394
+|move|p2a: Talonflame|Brave Bird|p1a: Umbreon
+|-damage|p1a: Umbreon|83\/394
+|-damage|p2a: Talonflame|80\/297|[from] recoil|[of] p1a: Umbreon
+|
+|-heal|p1a: Umbreon|107\/394|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Talonflame|Brave Bird|p1a: Umbreon
+|-activate|p1a: Umbreon|Protect
+|
+|-heal|p1a: Umbreon|131\/394|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p2a: Lucario|Lucario, M|281\/281
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p1a: Umbreon|155\/394|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|-formechange|p2a: Lucario|Lucario-Mega
+|message|Lucario has Mega Evolved into Mega Lucario!
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Lucario|Nasty Plot|p2a: Lucario
+|-boost|p2a: Lucario|spa|2
+|
+|-heal|p1a: Umbreon|352\/394|[from] move: Wish|[wisher] Umbreon
+|-heal|p1a: Umbreon|376\/394|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p1a: Espeon|Espeon, M|334\/334
+|move|p2a: Lucario|Aura Sphere|p1a: Espeon
+|-resisted|p1a: Espeon
+|-damage|p1a: Espeon|130\/334
+|
+|turn|15
+|callback|decision
+|
+|move|p2a: Lucario|Flash Cannon|p1a: Espeon
+|-damage|p1a: Espeon|0 fnt
+|faint|p1a: Espeon
+|
+|callback|decision
+|
+|switch|p1a: Ditto|Ditto|299\/299
+|-transform|p1a: Ditto|p2a: Lucario
+|turn|16
+|callback|decision
+|
+|switch|p2a: Latias|Latias, F|364\/364
+|move|p1a: Ditto|Vacuum Wave|p2a: Latias
+|-resisted|p2a: Latias
+|-damage|p2a: Latias|284\/364
+|
+|turn|17
+|callback|decision
+|
+|switch|p1a: Umbreon|Umbreon, F|376\/394
+|move|p2a: Latias|Healing Wish|p2a: Latias
+|faint|p2a: Latias
+|
+|-heal|p1a: Umbreon|394\/394|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Talonflame|Talonflame, M|80\/297
+|-heal|p2a: Talonflame|297\/297|[from] move: Healing Wish
+|turn|18
+|callback|decision
+|
+|move|p2a: Talonflame|U-turn|p1a: Umbreon
+|-supereffective|p1a: Umbreon
+|-damage|p1a: Umbreon|280\/394
+|callback|decision
+|
+|switch|p2a: Lucario|Lucario, M|281\/281
+|-formechange|p2a: Lucario|Lucario-Mega
+|move|p1a: Umbreon|Foul Play|p2a: Lucario
+|-resisted|p2a: Lucario
+|-damage|p2a: Lucario|201\/281
+|
+|-heal|p1a: Umbreon|304\/394|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|44\/344
+|move|p2a: Lucario|Nasty Plot|p2a: Lucario
+|-boost|p2a: Lucario|spa|2
+|
+|turn|20
+|callback|decision
+|
+|move|p2a: Lucario|Vacuum Wave|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|faint|p1a: Scizor
+|
+|callback|decision
+|
+|switch|p1a: Ditto|Ditto|299\/299
+|-transform|p1a: Ditto|p2a: Lucario
+|turn|21
+|callback|decision
+|
+|switch|p2a: Gyarados|Gyarados, M|331\/331
+|-ability|p2a: Gyarados|Intimidate|[of] p1a: Ditto
+|-unboost|p1a: Ditto|atk|1
+|move|p1a: Ditto|Aura Sphere|p2a: Gyarados
+|-resisted|p2a: Gyarados
+|-damage|p2a: Gyarados|143\/331
+|
+|turn|22
+|callback|decision
+|
+|move|p1a: Ditto|Aura Sphere|p2a: Gyarados
+|-resisted|p2a: Gyarados
+|-damage|p2a: Gyarados|0 fnt
+|faint|p2a: Gyarados
+|
+|callback|decision
+|
+|switch|p2a: Talonflame|Talonflame, M|297\/297
+|turn|23
+|callback|decision
+|
+|switch|p1a: Umbreon|Umbreon, F|304\/394
+|move|p2a: Talonflame|Brave Bird|p1a: Umbreon
+|-damage|p1a: Umbreon|141\/394
+|-damage|p2a: Talonflame|243\/297|[from] recoil|[of] p1a: Umbreon
+|
+|-heal|p1a: Umbreon|165\/394|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|switch|p2a: Lucario|Lucario, M|201\/281
+|-formechange|p2a: Lucario|Lucario-Mega
+|move|p1a: Umbreon|Foul Play|p2a: Lucario
+|-resisted|p2a: Lucario
+|-damage|p2a: Lucario|122\/281
+|
+|-heal|p1a: Umbreon|189\/394|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p2a: Lucario|Aura Sphere|p1a: Umbreon
+|-supereffective|p1a: Umbreon
+|-damage|p1a: Umbreon|0 fnt
+|faint|p1a: Umbreon
+|
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M|302\/302
+|turn|26
+|callback|decision
+|
+|move|p2a: Lucario|Flash Cannon|p1a: Latios
+|-damage|p1a: Latios|122\/302
+|move|p1a: Latios|Psyshock|p2a: Lucario
+|-damage|p2a: Lucario|0 fnt
+|faint|p2a: Lucario
+|
+|callback|decision
+|
+|switch|p2a: Talonflame|Talonflame, M|243\/297
+|turn|27
+|callback|decision
+|
+|move|p2a: Talonflame|Brave Bird|p1a: Latios
+|-crit|p1a: Latios
+|-damage|p1a: Latios|0 fnt
+|-damage|p2a: Talonflame|203\/297|[from] recoil|[of] p1a: Latios
+|faint|p1a: Latios
+|
+|callback|decision
+|
+|switch|p1a: Ditto|Ditto|299\/299
+|-transform|p1a: Ditto|p2a: Talonflame
+|turn|28
+|callback|decision
+|
+|move|p1a: Ditto|Brave Bird|p2a: Talonflame
+|-damage|p2a: Talonflame|11\/297
+|-damage|p1a: Ditto|236\/299|[from] recoil|[of] p2a: Talonflame
+|move|p2a: Talonflame|Brave Bird|p1a: Ditto
+|-damage|p1a: Ditto|0 fnt
+|-damage|p2a: Talonflame|0 fnt|[from] recoil|[of] p1a: Ditto
+|faint|p1a: Ditto
+|faint|p2a: Talonflame
+|
+|callback|decision
+|
+|switch|p1a: Lucario|Lucario, F|282\/282
+|switch|p2a: Ditto|Ditto|94\/299
+|-transform|p2a: Ditto|p1a: Lucario
+|turn|29
+|callback|decision
+|
+|-formechange|p1a: Lucario|Lucario-Mega
+|message|Lucario has Mega Evolved into Mega Lucario!
+|move|p1a: Lucario|Extreme Speed|p2a: Ditto
+|-resisted|p2a: Ditto
+|-damage|p2a: Ditto|25\/299
+|move|p2a: Ditto|Close Combat|p1a: Lucario
+|-supereffective|p1a: Lucario
+|-damage|p1a: Lucario|0 fnt
+|-unboost|p2a: Ditto|def|1
+|-unboost|p2a: Ditto|spd|1
+|faint|p1a: Lucario
+|
+|win|Scrub1
+|raw|Ladder updating...
+|raw|dark08's rating: 1477 &rarr; <strong>1450<\/strong><br \/>(-27 for losing)
+|raw|Scrub1's rating: 1452 &rarr; <strong>1478<\/strong><br \/>(+26 for winning)
+|leave|dark08
+|player|p1

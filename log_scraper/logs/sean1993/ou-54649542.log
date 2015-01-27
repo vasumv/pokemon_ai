@@ -1,0 +1,292 @@
+|join|Jezzail
+|join|sean1993
+|player|p1|Jezzail|196
+|player|p2|sean1993|1
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Forretress, M
+|poke|p1|Dusclops, F
+|poke|p1|Starmie
+|poke|p1|Infernape, M
+|poke|p1|Mamoswine, F
+|poke|p1|Dragonite, M
+|poke|p2|Ninetales, F
+|poke|p2|Venusaur, M
+|poke|p2|Dragonite, M
+|poke|p2|Volcarona, F
+|poke|p2|Jirachi
+|poke|p2|Donphan, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Forretress|Forretress, M|354\/354
+|switch|p2a: Ninetales|Ninetales, F|337\/337
+|-weather|SunnyDay|[from] ability: Drought|[of] p2a: Ninetales
+|turn|1
+|callback|decision
+|
+|move|p2a: Ninetales|Flamethrower|p1a: Forretress
+|-supereffective|p1a: Forretress
+|-activate|p1a: Forretress|Sturdy
+|-damage|p1a: Forretress|1\/354
+|move|p1a: Forretress|Stealth Rock|p2a: Ninetales
+|-sidestart|p2: sean1993|move: Stealth Rock
+|
+|-weather|SunnyDay|[upkeep]
+|turn|2
+|callback|decision
+|-enditem|p1a: Forretress|Custap Berry|[eat]
+|-activate|p1a: Forretress|Custap Berry
+|
+|move|p1a: Forretress|Zap Cannon|p2a: Ninetales
+|-damage|p2a: Ninetales|286\/337
+|-status|p2a: Ninetales|par
+|move|p2a: Ninetales|Flamethrower|p1a: Forretress
+|-supereffective|p1a: Forretress
+|-damage|p1a: Forretress|0 fnt
+|faint|p1a: Forretress
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Ninetales|307\/337 par|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Mamoswine|Mamoswine, F|361\/361
+|turn|3
+|callback|decision
+|
+|move|p1a: Mamoswine|Earthquake|p2a: Ninetales
+|-supereffective|p2a: Ninetales
+|-damage|p2a: Ninetales|0 fnt
+|-damage|p1a: Mamoswine|325\/361|[from] item: Life Orb
+|faint|p2a: Ninetales
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p2a: Venusaur|Venusaur, M|319\/319
+|-damage|p2a: Venusaur|280\/319|[from] Stealth Rock
+|turn|4
+|callback|decision
+|
+|move|p1a: Mamoswine|Ice Shard|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|4\/319
+|-damage|p1a: Mamoswine|289\/361|[from] item: Life Orb
+|move|p2a: Venusaur|SolarBeam|p1a: Mamoswine|[still]
+|-prepare|p2a: Venusaur|SolarBeam|p1a: Mamoswine
+|-anim|p2a: Venusaur|SolarBeam|p1a: Mamoswine
+|-supereffective|p1a: Mamoswine
+|-damage|p1a: Mamoswine|0 fnt
+|-damage|p2a: Venusaur|0 fnt|[from] item: Life Orb
+|faint|p1a: Mamoswine
+|faint|p2a: Venusaur
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, M|324\/324
+|switch|p2a: Donphan|Donphan, M|369\/369
+|-damage|p2a: Donphan|346\/369|[from] Stealth Rock
+|turn|5
+|callback|decision
+|
+|switch|p1a: Dusclops|Dusclops, F|222\/222
+|-ability|p1a: Dusclops|Pressure
+|move|p2a: Donphan|Ice Shard|p1a: Dusclops
+|-damage|p1a: Dusclops|206\/222
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Donphan|369\/369|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Donphan|Stealth Rock|p1a: Dusclops
+|-sidestart|p1: Jezzail|move: Stealth Rock
+|move|p1a: Dusclops|Seismic Toss|p2a: Donphan
+|-damage|p2a: Donphan|269\/369
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Donphan|292\/369|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p2a: Donphan|Earthquake|p1a: Dusclops
+|-damage|p1a: Dusclops|146\/222
+|move|p1a: Dusclops|Will-O-Wisp|p2a: Donphan
+|-status|p2a: Donphan|brn
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Donphan|315\/369 brn|[from] item: Leftovers
+|-damage|p2a: Donphan|269\/369 brn|[from] brn
+|turn|8
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi|341\/341
+|-damage|p2a: Jirachi|320\/341|[from] Stealth Rock
+|move|p1a: Dusclops|Pain Split|p2a: Jirachi
+|-sethp|p2a: Jirachi|233\/341|p1a: Dusclops|222\/222|[from] move: Pain Split
+|
+|-weather|SunnyDay|[upkeep]
+|turn|9
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Dusclops
+|-damage|p1a: Dusclops|179\/222
+|move|p1a: Dusclops|Will-O-Wisp|p2a: Jirachi|[miss]
+|-miss|p1a: Dusclops|p2a: Jirachi
+|
+|-weather|SunnyDay|[upkeep]
+|turn|10
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Dusclops
+|-damage|p1a: Dusclops|133\/222
+|move|p1a: Dusclops|Will-O-Wisp|p2a: Jirachi
+|-status|p2a: Jirachi|brn
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p2a: Jirachi|191\/341 brn|[from] brn
+|turn|11
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Dusclops
+|-damage|p1a: Dusclops|109\/222
+|cant|p1a: Dusclops|flinch
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p2a: Jirachi|149\/341 brn|[from] brn
+|turn|12
+|callback|decision
+|
+|move|p2a: Jirachi|Thunderbolt|p1a: Dusclops
+|-damage|p1a: Dusclops|66\/222
+|move|p1a: Dusclops|Pain Split|p2a: Jirachi
+|-sethp|p2a: Jirachi|107\/341 brn|p1a: Dusclops|107\/222|[from] move: Pain Split
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p2a: Jirachi|65\/341 brn|[from] brn
+|turn|13
+|callback|decision
+|
+|move|p2a: Jirachi|Thunderbolt|p1a: Dusclops
+|-damage|p1a: Dusclops|68\/222
+|-status|p1a: Dusclops|par
+|cant|p1a: Dusclops|par
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p2a: Jirachi|23\/341 brn|[from] brn
+|turn|14
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Dusclops
+|-damage|p1a: Dusclops|43\/222 par
+|cant|p1a: Dusclops|flinch
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p2a: Jirachi|0 fnt|[from] brn
+|faint|p2a: Jirachi
+|callback|decision
+|
+|switch|p2a: Volcarona|Volcarona, F|369\/369
+|-damage|p2a: Volcarona|185\/369|[from] Stealth Rock
+|turn|15
+|callback|decision
+|
+|move|p2a: Volcarona|Roost|p2a: Volcarona
+|-heal|p2a: Volcarona|369\/369
+|move|p1a: Dusclops|Curse|p2a: Volcarona
+|-start|p2a: Volcarona|Curse|[of] p1a: Dusclops
+|-damage|p1a: Dusclops|0 fnt
+|faint|p1a: Dusclops
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p2a: Volcarona|277\/369|[from] Curse
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie|262\/262
+|-damage|p1a: Starmie|230\/262|[from] Stealth Rock
+|turn|16
+|callback|decision
+|
+|move|p1a: Starmie|Rapid Spin|p2a: Volcarona
+|-damage|p2a: Volcarona|259\/369
+|-sideend|p1: Jezzail|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Starmie
+|-damage|p1a: Starmie|204\/262|[from] item: Life Orb
+|move|p2a: Volcarona|Bug Buzz|p1a: Starmie
+|-supereffective|p1a: Starmie
+|-damage|p1a: Starmie|0 fnt
+|faint|p1a: Starmie
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Volcarona|282\/369|[from] item: Leftovers
+|-damage|p2a: Volcarona|190\/369|[from] Curse
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, M|324\/324
+|turn|17
+|callback|decision
+|
+|switch|p2a: Dragonite|Dragonite, M|323\/323
+|-damage|p2a: Dragonite|243\/323|[from] Stealth Rock
+|move|p1a: Dragonite|Dragon Dance|p1a: Dragonite
+|-boost|p1a: Dragonite|atk|1
+|-boost|p1a: Dragonite|spe|1
+|
+|-weather|SunnyDay|[upkeep]
+|turn|18
+|callback|decision
+|
+|move|p1a: Dragonite|Outrage|p2a: Dragonite
+|-crit|p2a: Dragonite
+|-supereffective|p2a: Dragonite
+|-damage|p2a: Dragonite|0 fnt
+|faint|p2a: Dragonite
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p2a: Donphan|Donphan, M|269\/369 brn
+|-damage|p2a: Donphan|246\/369 brn|[from] Stealth Rock
+|turn|19
+|callback|decision
+|
+|move|p2a: Donphan|Ice Shard|p1a: Dragonite
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|284\/324
+|move|p1a: Dragonite|Outrage|p2a: Donphan
+|-damage|p2a: Donphan|20\/369 brn
+|
+|-end|p1a: Dragonite|rampage
+|-start|p1a: Dragonite|confusion
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Donphan|43\/369 brn|[from] item: Leftovers
+|-damage|p2a: Donphan|0 fnt|[from] brn
+|faint|p2a: Donphan
+|callback|decision
+|
+|switch|p2a: Volcarona|Volcarona, F|190\/369
+|-damage|p2a: Volcarona|6\/369|[from] Stealth Rock
+|-enditem|p1a: Dragonite|Lum Berry|[eat]
+|-end|p1a: Dragonite|confusion
+|turn|20
+|callback|decision
+|chat|Jezzail|eat shit for using legendaries
+|
+|move|p1a: Dragonite|ExtremeSpeed|p2a: Volcarona
+|-damage|p2a: Volcarona|0 fnt
+|faint|p2a: Volcarona
+|
+|win|Jezzail
+|raw|Ladder updating...
+|raw|Jezzail's rating: 1667 &rarr; <strong>1672<\/strong><br \/>(+5 for winning)
+|raw|sean1993's rating: 1721 &rarr; <strong>1717<\/strong><br \/>(-4 for losing)

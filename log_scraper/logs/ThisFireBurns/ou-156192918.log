@@ -1,0 +1,683 @@
+|join|Savage King
+|join|ThisFireBurns
+|player|p1|Savage King|170
+|player|p2|ThisFireBurns|102
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Garchomp, M
+|poke|p1|Scizor, M
+|poke|p1|Landorus, M
+|poke|p1|Latias, F
+|poke|p1|Heatran, F
+|poke|p1|Azumarill, F
+|poke|p2|Tyranitar, F
+|poke|p2|Rotom-Wash
+|poke|p2|Latios, M
+|poke|p2|Talonflame, M
+|poke|p2|Venusaur, F
+|poke|p2|Excadrill, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Heatran|Heatran, F|386\/386
+|switch|p2a: Rotom-Wash|Rotom-Wash|299\/299
+|turn|1
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|turn|2
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|140\/386
+|move|p1a: Heatran|Toxic|p2a: Rotom-Wash
+|-status|p2a: Rotom-Wash|tox
+|
+|-heal|p1a: Heatran|164\/386|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|281\/299 tox|[from] psn
+|turn|3
+|
+|switch|p2a: Latios|Latios, M|302\/302
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-fail|p1a: Heatran
+|
+|-heal|p1a: Heatran|188\/386|[from] item: Leftovers
+|turn|4
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Latios|Surf|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-heal|p1a: Heatran|212\/386|[from] item: Leftovers
+|turn|5
+|
+|switch|p1a: Azumarill|Azumarill, F|401\/401
+|move|p2a: Latios|Surf|p1a: Azumarill
+|-resisted|p1a: Azumarill
+|-damage|p1a: Azumarill|345\/401
+|-damage|p2a: Latios|272\/302|[from] item: Life Orb
+|
+|turn|6
+|
+|switch|p2a: Venusaur|Venusaur, F|364\/364
+|switch|p1a: Latias|Latias, F|301\/301
+|
+|turn|7
+|
+|switch|p1a: Landorus|Landorus, M|319\/319
+|switch|p2a: Tyranitar|Tyranitar, F|404\/404
+|-weather|Sandstorm
+|
+|-weather|Sandstorm|[upkeep]
+|turn|8
+|
+|move|p1a: Landorus|Psychic|p2a: Tyranitar
+|-immune|p2a: Tyranitar|[msg]
+|move|p2a: Tyranitar|Ice Beam|p1a: Landorus
+|-crit|p1a: Landorus
+|-supereffective|p1a: Landorus
+|-damage|p1a: Landorus|0 fnt
+|faint|p1a: Landorus
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Garchomp|Garchomp, M|357\/357
+|turn|9
+|
+|move|p1a: Garchomp|Outrage|p2a: Tyranitar
+|-damage|p2a: Tyranitar|143\/404
+|-damage|p1a: Garchomp|322\/357|[from] item: Life Orb
+|move|p2a: Tyranitar|Ice Beam|p1a: Garchomp
+|-supereffective|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|faint|p1a: Garchomp
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Tyranitar|168\/404|[from] item: Leftovers
+|
+|switch|p1a: Scizor|Scizor, M|343\/343
+|turn|10
+|
+|switch|p2a: Venusaur|Venusaur, F|364\/364
+|detailschange|p1a: Scizor|Scizor-Mega, M
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p1a: Scizor|Bullet Punch|p2a: Venusaur
+|-damage|p2a: Venusaur|273\/364
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Venusaur|251\/364|[from] sandstorm
+|turn|11
+|
+|switch|p1a: Heatran|Heatran, F|212\/386
+|detailschange|p2a: Venusaur|Venusaur-Mega, F
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p2a: Venusaur|Hidden Power|p1a: Heatran
+|-start|p1a: Heatran|ability: Flash Fire
+|
+|-weather|none
+|-heal|p1a: Heatran|236\/386|[from] item: Leftovers
+|turn|12
+|
+|move|p1a: Heatran|Stealth Rock|p2a: Venusaur
+|-sidestart|p2: ThisFireBurns|move: Stealth Rock
+|move|p2a: Venusaur|Sleep Powder|p1a: Heatran
+|-status|p1a: Heatran|slp
+|
+|-heal|p1a: Heatran|260\/386 slp|[from] item: Leftovers
+|turn|13
+|
+|switch|p2a: Excadrill|Excadrill, M|361\/361
+|-damage|p2a: Excadrill|350\/361|[from] Stealth Rock
+|-ability|p2a: Excadrill|Mold Breaker
+|cant|p1a: Heatran|slp
+|
+|-heal|p1a: Heatran|284\/386 slp|[from] item: Leftovers
+|turn|14
+|
+|switch|p1a: Scizor|Scizor-Mega, M|343\/343
+|move|p2a: Excadrill|Rapid Spin|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|333\/343
+|-sideend|p2: ThisFireBurns|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Excadrill
+|
+|turn|15
+|
+|switch|p2a: Talonflame|Talonflame, M|297\/297
+|switch|p1a: Latias|Latias, F|301\/301
+|
+|turn|16
+|
+|move|p1a: Latias|Draco Meteor|p2a: Talonflame
+|-damage|p2a: Talonflame|42\/297
+|-unboost|p1a: Latias|spa|2
+|move|p2a: Talonflame|U-turn|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|99\/301
+|
+|switch|p2a: Excadrill|Excadrill, M|350\/361
+|-ability|p2a: Excadrill|Mold Breaker
+|
+|turn|17
+|
+|switch|p1a: Scizor|Scizor-Mega, M|333\/343
+|switch|p2a: Talonflame|Talonflame, M|42\/297
+|
+|turn|18
+|
+|move|p2a: Talonflame|Roost|p2a: Talonflame
+|-heal|p2a: Talonflame|191\/297
+|move|p1a: Scizor|Bullet Punch|p2a: Talonflame
+|-resisted|p2a: Talonflame
+|-damage|p2a: Talonflame|127\/297
+|
+|turn|19
+|
+|move|p2a: Talonflame|Roost|p2a: Talonflame
+|-heal|p2a: Talonflame|276\/297
+|move|p1a: Scizor|Swords Dance|p1a: Scizor
+|-boost|p1a: Scizor|atk|2
+|
+|turn|20
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|281\/299 tox
+|move|p1a: Scizor|Knock Off|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|89\/299 tox
+|-enditem|p2a: Rotom-Wash|Chesto Berry|[from] move: Knock Off|[of] p1a: Scizor
+|
+|-damage|p2a: Rotom-Wash|71\/299 tox|[from] psn
+|turn|21
+|
+|switch|p1a: Latias|Latias, F|99\/301
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Latias
+|-status|p1a: Latias|brn
+|
+|-damage|p1a: Latias|62\/301 brn|[from] brn
+|-damage|p2a: Rotom-Wash|35\/299 tox|[from] psn
+|turn|22
+|
+|switch|p2a: Tyranitar|Tyranitar, F|168\/404
+|-weather|Sandstorm
+|move|p1a: Latias|Draco Meteor|p2a: Tyranitar
+|-damage|p2a: Tyranitar|59\/404
+|-unboost|p1a: Latias|spa|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latias|44\/301 brn|[from] sandstorm
+|-heal|p2a: Tyranitar|84\/404|[from] item: Leftovers
+|-damage|p1a: Latias|7\/301 brn|[from] brn
+|turn|23
+|
+|switch|p1a: Azumarill|Azumarill, F|345\/401
+|move|p2a: Tyranitar|Stealth Rock|p1a: Azumarill
+|-sidestart|p1: Savage King|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Azumarill|320\/401|[from] sandstorm
+|-heal|p2a: Tyranitar|109\/404|[from] item: Leftovers
+|turn|24
+|
+|switch|p2a: Venusaur|Venusaur-Mega, F|251\/364
+|move|p1a: Azumarill|Play Rough|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|186\/364
+|-unboost|p2a: Venusaur|atk|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Venusaur|164\/364|[from] sandstorm
+|-damage|p1a: Azumarill|295\/401|[from] sandstorm
+|turn|25
+|
+|switch|p2a: Tyranitar|Tyranitar, F|109\/404
+|switch|p1a: Heatran|Heatran, F|284\/386 slp
+|-damage|p1a: Heatran|236\/386 slp|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Heatran|260\/386 slp|[from] item: Leftovers
+|-heal|p2a: Tyranitar|134\/404|[from] item: Leftovers
+|turn|26
+|
+|switch|p1a: Azumarill|Azumarill, F|295\/401
+|-damage|p1a: Azumarill|245\/401|[from] Stealth Rock
+|move|p2a: Tyranitar|Superpower|p1a: Azumarill
+|-resisted|p1a: Azumarill
+|-damage|p1a: Azumarill|176\/401
+|-unboost|p2a: Tyranitar|atk|1
+|-unboost|p2a: Tyranitar|def|1
+|
+|-weather|none
+|-heal|p2a: Tyranitar|159\/404|[from] item: Leftovers
+|turn|27
+|
+|switch|p2a: Venusaur|Venusaur-Mega, F|164\/364
+|switch|p1a: Heatran|Heatran, F|260\/386 slp
+|-damage|p1a: Heatran|212\/386 slp|[from] Stealth Rock
+|
+|-heal|p1a: Heatran|236\/386 slp|[from] item: Leftovers
+|turn|28
+|
+|switch|p2a: Tyranitar|Tyranitar, F|159\/404
+|-weather|Sandstorm
+|cant|p1a: Heatran|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Heatran|260\/386 slp|[from] item: Leftovers
+|-heal|p2a: Tyranitar|184\/404|[from] item: Leftovers
+|turn|29
+|
+|switch|p1a: Latias|Latias, F|7\/301 brn
+|-damage|p1a: Latias|0 fnt|[from] Stealth Rock
+|faint|p1a: Latias
+|move|p2a: Tyranitar|Superpower|p1: Latias|[notarget]
+|-notarget
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Tyranitar|209\/404|[from] item: Leftovers
+|
+|switch|p1a: Azumarill|Azumarill, F|176\/401
+|-damage|p1a: Azumarill|126\/401|[from] Stealth Rock
+|turn|30
+|
+|move|p2a: Tyranitar|Superpower|p1a: Azumarill
+|-resisted|p1a: Azumarill
+|-damage|p1a: Azumarill|55\/401
+|-unboost|p2a: Tyranitar|atk|1
+|-unboost|p2a: Tyranitar|def|1
+|move|p1a: Azumarill|Play Rough|p2a: Tyranitar|[miss]
+|-miss|p1a: Azumarill|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Azumarill|30\/401|[from] sandstorm
+|-heal|p2a: Tyranitar|234\/404|[from] item: Leftovers
+|turn|31
+|
+|switch|p2a: Venusaur|Venusaur-Mega, F|164\/364
+|move|p1a: Azumarill|Play Rough|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|99\/364
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Venusaur|77\/364|[from] sandstorm
+|-damage|p1a: Azumarill|5\/401|[from] sandstorm
+|turn|32
+|
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|168\/364
+|move|p1a: Azumarill|Play Rough|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|108\/364
+|
+|-weather|none
+|turn|33
+|
+|switch|p1a: Heatran|Heatran, F|260\/386 slp
+|-damage|p1a: Heatran|212\/386 slp|[from] Stealth Rock
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|290\/364
+|
+|-heal|p1a: Heatran|236\/386 slp|[from] item: Leftovers
+|turn|34
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|35\/299 tox
+|-curestatus|p1a: Heatran|slp
+|move|p1a: Heatran|Stealth Rock|p2a: Rotom-Wash
+|-sidestart|p2: ThisFireBurns|move: Stealth Rock
+|
+|-heal|p1a: Heatran|260\/386|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|17\/299 tox|[from] psn
+|turn|35
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Rotom-Wash|Rest|p2a: Rotom-Wash
+|-status|p2a: Rotom-Wash|slp
+|-heal|p2a: Rotom-Wash|299\/299 slp|[silent]
+|-status|p2a: Rotom-Wash|slp|[from] move: Rest
+|
+|-heal|p1a: Heatran|284\/386|[from] item: Leftovers
+|turn|36
+|
+|cant|p2a: Rotom-Wash|slp
+|move|p1a: Heatran|Lava Plume|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|242\/299 slp
+|
+|-heal|p1a: Heatran|308\/386|[from] item: Leftovers
+|turn|37
+|
+|cant|p2a: Rotom-Wash|slp
+|move|p1a: Heatran|Lava Plume|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|186\/299 slp
+|
+|-heal|p1a: Heatran|332\/386|[from] item: Leftovers
+|turn|38
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|-curestatus|p2a: Rotom-Wash|slp
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-heal|p1a: Heatran|356\/386|[from] item: Leftovers
+|turn|39
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Heatran|[miss]
+|-miss|p2a: Rotom-Wash|p1a: Heatran
+|move|p1a: Heatran|Toxic|p2a: Rotom-Wash
+|-status|p2a: Rotom-Wash|tox
+|
+|-heal|p1a: Heatran|380\/386|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|168\/299 tox|[from] psn
+|turn|40
+|
+|switch|p2a: Excadrill|Excadrill, M|350\/361
+|-damage|p2a: Excadrill|339\/361|[from] Stealth Rock
+|-ability|p2a: Excadrill|Mold Breaker
+|move|p1a: Heatran|Lava Plume|p2a: Excadrill
+|-supereffective|p2a: Excadrill
+|-damage|p2a: Excadrill|27\/361
+|
+|-heal|p1a: Heatran|386\/386|[from] item: Leftovers
+|turn|41
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Excadrill|Earthquake|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|turn|42
+|
+|switch|p1a: Azumarill|Azumarill, F|5\/401
+|-damage|p1a: Azumarill|0 fnt|[from] Stealth Rock
+|faint|p1a: Azumarill
+|move|p2a: Excadrill|Earthquake|p1: Azumarill|[notarget]
+|-notarget
+|
+|
+|switch|p1a: Scizor|Scizor-Mega, M|333\/343
+|-damage|p1a: Scizor|291\/343|[from] Stealth Rock
+|turn|43
+|
+|switch|p2a: Venusaur|Venusaur-Mega, F|290\/364
+|-damage|p2a: Venusaur|245\/364|[from] Stealth Rock
+|move|p1a: Scizor|Bullet Punch|p2a: Venusaur
+|-damage|p2a: Venusaur|178\/364
+|
+|turn|44
+|
+|switch|p1a: Heatran|Heatran, F|386\/386
+|-damage|p1a: Heatran|338\/386|[from] Stealth Rock
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|360\/364
+|
+|-heal|p1a: Heatran|362\/386|[from] item: Leftovers
+|turn|45
+|
+|move|p1a: Heatran|Lava Plume|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|270\/364
+|move|p2a: Venusaur|Sleep Powder|p1a: Heatran
+|-status|p1a: Heatran|slp
+|
+|-heal|p1a: Heatran|386\/386 slp|[from] item: Leftovers
+|turn|46
+|
+|switch|p2a: Latios|Latios, M|272\/302
+|-damage|p2a: Latios|235\/302|[from] Stealth Rock
+|cant|p1a: Heatran|slp
+|
+|turn|47
+|
+|switch|p1a: Scizor|Scizor-Mega, M|291\/343
+|-damage|p1a: Scizor|249\/343|[from] Stealth Rock
+|move|p2a: Latios|Surf|p1a: Scizor
+|-damage|p1a: Scizor|154\/343
+|-damage|p2a: Latios|205\/302|[from] item: Life Orb
+|
+|turn|48
+|
+|switch|p2a: Talonflame|Talonflame, M|276\/297
+|-damage|p2a: Talonflame|128\/297|[from] Stealth Rock
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|326\/343
+|
+|turn|49
+|
+|switch|p1a: Heatran|Heatran, F|386\/386 slp
+|-damage|p1a: Heatran|338\/386 slp|[from] Stealth Rock
+|move|p2a: Talonflame|U-turn|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|313\/386 slp
+|
+|switch|p2a: Excadrill|Excadrill, M|27\/361
+|-damage|p2a: Excadrill|16\/361|[from] Stealth Rock
+|-ability|p2a: Excadrill|Mold Breaker
+|
+|-heal|p1a: Heatran|337\/386 slp|[from] item: Leftovers
+|turn|50
+|
+|switch|p1a: Scizor|Scizor-Mega, M|326\/343
+|-damage|p1a: Scizor|284\/343|[from] Stealth Rock
+|move|p2a: Excadrill|Rapid Spin|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|273\/343
+|-sideend|p2: ThisFireBurns|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Excadrill
+|
+|turn|51
+|
+|switch|p2a: Talonflame|Talonflame, M|128\/297
+|move|p1a: Scizor|Knock Off|p2a: Talonflame
+|-damage|p2a: Talonflame|0 fnt
+|-enditem|p2a: Talonflame|Choice Band|[from] move: Knock Off|[of] p1a: Scizor
+|faint|p2a: Talonflame
+|
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|168\/299 tox
+|turn|52
+|
+|switch|p1a: Heatran|Heatran, F|337\/386 slp
+|-damage|p1a: Heatran|289\/386 slp|[from] Stealth Rock
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Heatran|[miss]
+|-miss|p2a: Rotom-Wash|p1a: Heatran
+|
+|-heal|p1a: Heatran|313\/386 slp|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|150\/299 tox|[from] psn
+|turn|53
+|
+|switch|p1a: Scizor|Scizor-Mega, M|273\/343
+|-damage|p1a: Scizor|231\/343|[from] Stealth Rock
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Scizor|[miss]
+|-miss|p2a: Rotom-Wash|p1a: Scizor
+|
+|-damage|p2a: Rotom-Wash|114\/299 tox|[from] psn
+|turn|54
+|
+|switch|p1a: Heatran|Heatran, F|313\/386 slp
+|-damage|p1a: Heatran|265\/386 slp|[from] Stealth Rock
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Heatran
+|-start|p1a: Heatran|ability: Flash Fire
+|
+|-heal|p1a: Heatran|289\/386 slp|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|60\/299 tox|[from] psn
+|turn|55
+|
+|move|p2a: Rotom-Wash|Rest|p2a: Rotom-Wash
+|-status|p2a: Rotom-Wash|slp
+|-heal|p2a: Rotom-Wash|299\/299 slp|[silent]
+|-status|p2a: Rotom-Wash|slp|[from] move: Rest
+|cant|p1a: Heatran|slp
+|
+|-heal|p1a: Heatran|313\/386 slp|[from] item: Leftovers
+|turn|56
+|
+|switch|p2a: Excadrill|Excadrill, M|16\/361
+|-ability|p2a: Excadrill|Mold Breaker
+|cant|p1a: Heatran|slp
+|
+|-heal|p1a: Heatran|337\/386 slp|[from] item: Leftovers
+|turn|57
+|
+|switch|p1a: Scizor|Scizor-Mega, M|231\/343
+|-damage|p1a: Scizor|189\/343|[from] Stealth Rock
+|move|p2a: Excadrill|Earthquake|p1a: Scizor
+|-damage|p1a: Scizor|36\/343
+|
+|turn|58
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Excadrill
+|-resisted|p2a: Excadrill
+|-damage|p2a: Excadrill|0 fnt
+|faint|p2a: Excadrill
+|
+|
+|switch|p2a: Latios|Latios, M|205\/302
+|turn|59
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Latios
+|-damage|p2a: Latios|84\/302
+|move|p2a: Latios|Surf|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|-damage|p2a: Latios|54\/302|[from] item: Life Orb
+|faint|p1a: Scizor
+|
+|
+|switch|p1a: Heatran|Heatran, F|337\/386 slp
+|-damage|p1a: Heatran|289\/386 slp|[from] Stealth Rock
+|turn|60
+|
+|-curestatus|p1a: Heatran|slp
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Latios|Recover|p2a: Latios
+|-heal|p2a: Latios|205\/302
+|
+|-heal|p1a: Heatran|313\/386|[from] item: Leftovers
+|turn|61
+|chat|ThisFireBurns|gg
+|chat|Savage King|s3
+|
+|move|p2a: Latios|Surf|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|121\/386
+|-damage|p2a: Latios|175\/302|[from] item: Life Orb
+|move|p1a: Heatran|Toxic|p2a: Latios
+|-status|p2a: Latios|tox
+|
+|-heal|p1a: Heatran|145\/386|[from] item: Leftovers
+|-damage|p2a: Latios|157\/302 tox|[from] psn
+|turn|62
+|chat|ThisFireBurns|wait
+|chat|ThisFireBurns|savage king
+|chat|ThisFireBurns|?
+|chat|Savage King|viadinho
+|chat|ThisFireBurns|poja
+|chat|ThisFireBurns|UHASHUASHUASHUAS
+|chat|ThisFireBurns|nem vi quem era
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Latios|Surf|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-heal|p1a: Heatran|169\/386|[from] item: Leftovers
+|-damage|p2a: Latios|121\/302 tox|[from] psn
+|turn|63
+|chat|ThisFireBurns|savage king...
+|chat|Savage King|joguei igual um macaco
+|chat|Savage King|no comeco
+|chat|Savage King|af
+|chat|ThisFireBurns|quem Ã©?
+|chat|ThisFireBurns|gama?
+|chat|Savage King|o amor
+|chat|Savage King|da sua life
+|chat|ThisFireBurns|quem Ã© krleo
+|chat|ThisFireBurns|UHASHUSAUHAS
+|chat|ThisFireBurns|os cara fica trocando de nick
+|chat|ThisFireBurns|da nisso
+|chat|Savage King|bjin
+|chat|Savage King|no ombro
+|chat|ThisFireBurns|leozin?
+|chat|ThisFireBurns|nÃ£o Ã© o leozin
+|chat|Savage King|eh o gama
+|chat|Savage King|idiota
+|chat|Savage King|.slow
+|chat|ThisFireBurns|ata
+|chat|ThisFireBurns|fica com esses nick
+|chat|ThisFireBurns|de macaco ai
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-fail|p1a: Heatran
+|move|p2a: Latios|Surf|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|-damage|p2a: Latios|91\/302 tox|[from] item: Life Orb
+|faint|p1a: Heatran
+|
+|win|ThisFireBurns
+|raw|Ladder updating...
+|raw|Savage King's rating: 1774 &rarr; <strong>1751<\/strong><br \/>(-23 for losing)
+|raw|ThisFireBurns's rating: 1719 &rarr; <strong>1742<\/strong><br \/>(+23 for winning)
+|chat|Savage King|eh meu fake
+|chat|ThisFireBurns|gama
+|chat|ThisFireBurns|curtiu
+|chat|ThisFireBurns|o time?
+|chat|Savage King|eh a mesma merda
+|chat|Savage King|de semThe opposing Rotom-Wash used Hydro Pump!re
+|chat|Savage King|q q vc mudou ai\/
+|chat|Savage King|kkkkkkk
+|chat|Savage King|mesma merda de sempre*
+|chat|ThisFireBurns|sim
+|chat|ThisFireBurns|sÃ³
+|chat|ThisFireBurns|que eu to
+|chat|ThisFireBurns|usando mold breaker
+|chat|ThisFireBurns|no exca
+|chat|ThisFireBurns|=)
+|chat|ThisFireBurns|e agora to com latios
+|chat|Savage King|ta legal
+|chat|ThisFireBurns|mas sei lÃ¡ se esse Ã© o melhor set pra latios
+|chat|Savage King|no comeco vc me viu predicando
+|chat|Savage King|e comecou a fazer suas macacada
+|chat|Savage King|af
+|chat|ThisFireBurns|UHSUHASHUAS
+|chat|ThisFireBurns|overpredict fio
+|chat|ThisFireBurns|esse Ã© o nome bonito
+|chat|ThisFireBurns|para dizer:
+|chat|ThisFireBurns|sou do bos
+|chat|Savage King|hehe
+|chat|ThisFireBurns|gama
+|chat|ThisFireBurns|ajuda eu
+|chat|ThisFireBurns|com esse time
+|chat|ThisFireBurns|D
+|chat|ThisFireBurns|D'=
+|chat|Savage King|me parece bom
+|chat|Savage King|vc so nao entra em
+|chat|Savage King|flying spam
+|chat|Savage King|e nem em chomp
+|chat|ThisFireBurns|tem rotÃ£o
+|chat|Savage King|so matou ele pq eu fui loco
+|chat|ThisFireBurns|pow
+|chat|Savage King|e vc mais ainda
+|chat|Savage King|.bos
+|chat|ThisFireBurns|e ttar
+|chat|ThisFireBurns|foi mesmo
+|chat|Savage King|pinsir nao usa mais quake
+|chat|Savage King|eh so cc agr
+|chat|ThisFireBurns|entregou os dois virj
+|chat|ThisFireBurns|vai pro face
+|chat|ThisFireBurns|a gente conversa la

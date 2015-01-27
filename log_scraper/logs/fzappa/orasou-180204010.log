@@ -1,0 +1,183 @@
+|join|OPGGNORE
+|join|fzappa
+|player|p1|OPGGNORE|102
+|player|p2|fzappa|169
+|gametype|singles
+|gen|6
+|tier|ORAS OU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Diancie
+|poke|p1|Keldeo
+|poke|p1|Skarmory, F
+|poke|p1|Landorus-Therian, M
+|poke|p1|Mew, shiny
+|poke|p1|Crawdaunt, F
+|poke|p2|Sableye, F
+|poke|p2|Conkeldurr, F
+|poke|p2|Azumarill, M
+|poke|p2|Jirachi
+|poke|p2|Rhyperior, F
+|poke|p2|Manaphy
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|320\/320
+|switch|p2a: Azumarill|Azumarill, M|342\/342
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Azumarill
+|-unboost|p2a: Azumarill|atk|1
+|turn|1
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Azumarill
+|-resisted|p2a: Azumarill
+|-damage|p2a: Azumarill|298\/342
+|
+|switch|p1a: Skarmory|Skarmory, F|334\/334
+|move|p2a: Azumarill|Waterfall|p1a: Skarmory
+|-damage|p1a: Skarmory|243\/334
+|-damage|p2a: Azumarill|241\/342|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|
+|turn|2
+|
+|switch|p2a: Rhyperior|Rhyperior, F|434\/434
+|move|p1a: Skarmory|Stealth Rock|p2a: Rhyperior
+|-sidestart|p2: fzappa|move: Stealth Rock
+|
+|turn|3
+|
+|switch|p1a: Keldeo|Keldeo|324\/324
+|move|p2a: Rhyperior|Stealth Rock|p1a: Keldeo
+|-sidestart|p1: OPGGNORE|move: Stealth Rock
+|
+|turn|4
+|
+|switch|p2a: Manaphy|Manaphy|404\/404
+|-damage|p2a: Manaphy|354\/404|[from] Stealth Rock
+|move|p1a: Keldeo|Scald|p2a: Manaphy
+|-resisted|p2a: Manaphy
+|-damage|p2a: Manaphy|271\/404
+|-status|p2a: Manaphy|brn
+|
+|-heal|p2a: Manaphy|296\/404 brn|[from] item: Leftovers
+|-damage|p2a: Manaphy|246\/404 brn|[from] brn
+|turn|5
+|
+|move|p1a: Keldeo|Secret Sword|p2a: Manaphy
+|-damage|p2a: Manaphy|123\/404 brn
+|move|p2a: Manaphy|Rain Dance|p2a: Manaphy
+|-weather|RainDance
+|
+|-weather|RainDance|[upkeep]
+|-curestatus|p2a: Manaphy|brn
+|-heal|p2a: Manaphy|148\/404|[from] item: Leftovers
+|turn|6
+|
+|move|p1a: Keldeo|Calm Mind|p1a: Keldeo
+|-boost|p1a: Keldeo|spa|1
+|-boost|p1a: Keldeo|spd|1
+|move|p2a: Manaphy|Rest|p2a: Manaphy
+|-status|p2a: Manaphy|slp
+|-heal|p2a: Manaphy|404\/404 slp|[silent]
+|-status|p2a: Manaphy|slp|[from] move: Rest
+|
+|-weather|RainDance|[upkeep]
+|-curestatus|p2a: Manaphy|slp
+|turn|7
+|
+|move|p1a: Keldeo|Substitute|p1a: Keldeo
+|-start|p1a: Keldeo|Substitute
+|-damage|p1a: Keldeo|243\/324
+|move|p2a: Manaphy|Scald|p1a: Keldeo
+|-resisted|p1a: Keldeo
+|-activate|p1a: Keldeo|Substitute|[damage]
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Keldeo|263\/324|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: Keldeo|Secret Sword|p2a: Manaphy
+|-crit|p2a: Manaphy
+|-damage|p2a: Manaphy|149\/404
+|move|p2a: Manaphy|Scald|p1a: Keldeo
+|-resisted|p1a: Keldeo
+|-end|p1a: Keldeo|Substitute
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Keldeo|283\/324|[from] item: Leftovers
+|-heal|p2a: Manaphy|174\/404|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Azumarill|Azumarill, M|241\/342
+|-damage|p2a: Azumarill|199\/342|[from] Stealth Rock
+|move|p1a: Keldeo|Substitute|p1a: Keldeo
+|-start|p1a: Keldeo|Substitute
+|-damage|p1a: Keldeo|202\/324
+|
+|-weather|none
+|-heal|p1a: Keldeo|222\/324|[from] item: Leftovers
+|turn|10
+|
+|move|p2a: Azumarill|Aqua Jet|p1a: Keldeo
+|-resisted|p1a: Keldeo
+|-activate|p1a: Keldeo|Substitute|[damage]
+|move|p1a: Keldeo|Scald|p2a: Azumarill
+|-resisted|p2a: Azumarill
+|-damage|p2a: Azumarill|58\/342
+|
+|-heal|p1a: Keldeo|242\/324|[from] item: Leftovers
+|turn|11
+|
+|move|p2a: Azumarill|Aqua Jet|p1a: Keldeo
+|-resisted|p1a: Keldeo
+|-end|p1a: Keldeo|Substitute
+|move|p1a: Keldeo|Substitute|p1a: Keldeo
+|-start|p1a: Keldeo|Substitute
+|-damage|p1a: Keldeo|161\/324
+|
+|-heal|p1a: Keldeo|181\/324|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Azumarill|Aqua Jet|p1a: Keldeo
+|-resisted|p1a: Keldeo
+|-activate|p1a: Keldeo|Substitute|[damage]
+|move|p1a: Keldeo|Scald|p2a: Azumarill
+|-resisted|p2a: Azumarill
+|-damage|p2a: Azumarill|0 fnt
+|faint|p2a: Azumarill
+|
+|-heal|p1a: Keldeo|201\/324|[from] item: Leftovers
+|
+|switch|p2a: Conkeldurr|Conkeldurr, F|414\/414
+|-damage|p2a: Conkeldurr|389\/414|[from] Stealth Rock
+|turn|13
+|
+|move|p2a: Conkeldurr|Mach Punch|p1a: Keldeo
+|-end|p1a: Keldeo|Substitute
+|move|p1a: Keldeo|Secret Sword|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|137\/414
+|
+|-heal|p1a: Keldeo|221\/324|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Conkeldurr|Mach Punch|p1a: Keldeo
+|-damage|p1a: Keldeo|131\/324
+|move|p1a: Keldeo|Scald|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|0 fnt
+|faint|p2a: Conkeldurr
+|
+|-heal|p1a: Keldeo|151\/324|[from] item: Leftovers
+|-message|fzappa forfeited.
+|
+|win|OPGGNORE
+|raw|Ladder updating...
+|raw|OPGGNORE's rating: 1321 &rarr; <strong>1338<\/strong><br \/>(+17 for winning)
+|raw|fzappa's rating: 1271 &rarr; <strong>1250<\/strong><br \/>(-21 for losing)

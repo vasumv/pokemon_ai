@@ -1,0 +1,400 @@
+|join|hj regicide
+|join|dukevesper
+|player|p1|hj regicide|46
+|player|p2|dukevesper|266
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Ferrothorn, F
+|poke|p1|Gyarados, M
+|poke|p1|Magnezone
+|poke|p1|Gliscor, F
+|poke|p1|Latias, F
+|poke|p1|Tyranitar, M
+|poke|p2|Gardevoir, M, shiny
+|poke|p2|Gyarados, M
+|poke|p2|Landorus-Therian, M
+|poke|p2|Talonflame, F
+|poke|p2|Latios, M
+|poke|p2|Garchomp, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Ferrothorn|Ferrothorn, F|352\/352
+|switch|p2a: Garchomp|Garchomp, F|358\/358
+|turn|1
+|
+|switch|p2a: Latios|Latios, M|302\/302
+|move|p1a: Ferrothorn|Leech Seed|p2a: Latios
+|-start|p2a: Latios|move: Leech Seed
+|
+|-damage|p2a: Latios|265\/302|[from] Leech Seed|[of] p1a: Ferrothorn
+|turn|2
+|
+|move|p1a: Ferrothorn|Protect|p1a: Ferrothorn
+|-singleturn|p1a: Ferrothorn|Protect
+|move|p2a: Latios|Hidden Power|p1a: Ferrothorn
+|-activate|p1a: Ferrothorn|Protect
+|
+|-damage|p2a: Latios|228\/302|[from] Leech Seed|[of] p1a: Ferrothorn
+|turn|3
+|
+|switch|p1a: Tyranitar|Tyranitar, M|341\/341
+|-weather|Sandstorm
+|move|p2a: Latios|Draco Meteor|p1a: Tyranitar
+|-damage|p1a: Tyranitar|127\/341
+|-unboost|p2a: Latios|spa|2
+|-damage|p2a: Latios|198\/302|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|180\/302|[from] sandstorm
+|-damage|p2a: Latios|143\/302|[from] Leech Seed|[of] p1a: Tyranitar
+|-heal|p1a: Tyranitar|164\/341|[silent]
+|turn|4
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|382\/382
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Tyranitar
+|-unboost|p1a: Tyranitar|atk|1
+|switch|p1a: Ferrothorn|Ferrothorn, F|352\/352
+|
+|-weather|Sandstorm|[upkeep]
+|turn|5
+|
+|move|p2a: Landorus-Therian|Knock Off|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|268\/352
+|-damage|p2a: Landorus-Therian|335\/382|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|-enditem|p1a: Ferrothorn|Leftovers|[from] move: Knock Off|[of] p2a: Landorus-Therian
+|move|p1a: Ferrothorn|Stealth Rock|p2a: Landorus-Therian
+|-sidestart|p2: dukevesper|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Landorus-Therian|358\/382|[from] item: Leftovers
+|turn|6
+|
+|move|p2a: Landorus-Therian|Earthquake|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|147\/352
+|move|p1a: Ferrothorn|Leech Seed|p2a: Landorus-Therian
+|-start|p2a: Landorus-Therian|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Landorus-Therian|381\/382|[from] item: Leftovers
+|-damage|p2a: Landorus-Therian|334\/382|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|194\/352|[silent]
+|turn|7
+|
+|switch|p2a: Latios|Latios, M|143\/302
+|-damage|p2a: Latios|106\/302|[from] Stealth Rock
+|move|p1a: Ferrothorn|Power Whip|p2a: Latios
+|-resisted|p2a: Latios
+|-damage|p2a: Latios|26\/302
+|
+|-weather|none
+|turn|8
+|
+|switch|p1a: Magnezone|Magnezone|281\/281
+|move|p2a: Latios|Defog|p1a: Magnezone
+|-unboost|p1a: Magnezone|evasion|1
+|-sideend|p2: dukevesper|Stealth Rock|[from] move: Defog|[of] p2a: Latios
+|
+|turn|9
+|
+|move|p1a: Magnezone|Volt Switch|p2a: Latios
+|-resisted|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|faint|p2a: Latios
+|
+|switch|p1a: Gyarados|Gyarados, M|333\/333
+|
+|
+|switch|p2a: Talonflame|Talonflame, F|298\/298
+|turn|10
+|
+|move|p2a: Talonflame|Will-O-Wisp|p1a: Gyarados
+|-status|p1a: Gyarados|brn
+|-enditem|p1a: Gyarados|Lum Berry|[eat]
+|-curestatus|p1a: Gyarados|brn
+|move|p1a: Gyarados|Waterfall|p2a: Talonflame
+|-supereffective|p2a: Talonflame
+|-damage|p2a: Talonflame|0 fnt
+|faint|p2a: Talonflame
+|
+|c|âdukevesper|lum berry?
+|
+|switch|p2a: Aire|Gardevoir, M, shiny|278\/278
+|-ability|p2a: Aire|Intimidate|[from] ability: Trace|[of] p1a: Gyarados
+|-ability|p2a: Aire|Intimidate|[of] p1a: Gyarados
+|-unboost|p1a: Gyarados|atk|1
+|turn|11
+|
+|detailschange|p2a: Aire|Gardevoir-Mega, M, shiny
+|message|Gardevoir has Mega Evolved into Mega Gardevoir!
+|move|p2a: Aire|Focus Blast|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-damage|p1a: Gyarados|247\/333
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|
+|turn|12
+|
+|switch|p2a: Gyarados|Gyarados, M|332\/332
+|-ability|p2a: Gyarados|Intimidate|[of] p1a: Gyarados
+|-unboost|p1a: Gyarados|atk|1
+|move|p1a: Gyarados|Waterfall|p2a: Gyarados
+|-resisted|p2a: Gyarados
+|-damage|p2a: Gyarados|272\/332
+|
+|-heal|p2a: Gyarados|292\/332|[from] item: Leftovers
+|turn|13
+|
+|move|p1a: Gyarados|Stone Edge|p2a: Gyarados
+|-supereffective|p2a: Gyarados
+|-damage|p2a: Gyarados|86\/332
+|move|p2a: Gyarados|Dragon Dance|p2a: Gyarados
+|-boost|p2a: Gyarados|atk|1
+|-boost|p2a: Gyarados|spe|1
+|
+|-heal|p2a: Gyarados|106\/332|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Gyarados|Bounce|p1a: Gyarados|[still]
+|-prepare|p2a: Gyarados|Bounce|p1a: Gyarados
+|move|p1a: Gyarados|Stone Edge|p2a: Gyarados|[miss]
+|-miss|p1a: Gyarados|p2a: Gyarados
+|
+|-heal|p2a: Gyarados|126\/332|[from] item: Leftovers
+|turn|15
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|194\/352
+|move|p2a: Gyarados|Bounce|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|17\/352
+|-damage|p2a: Gyarados|85\/332|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|
+|-heal|p2a: Gyarados|105\/332|[from] item: Leftovers
+|turn|16
+|
+|move|p2a: Gyarados|Earthquake|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|0 fnt
+|faint|p1a: Ferrothorn
+|
+|-heal|p2a: Gyarados|125\/332|[from] item: Leftovers
+|
+|switch|p1a: Gyarados|Gyarados, M|247\/333
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Gyarados
+|-unboost|p2a: Gyarados|atk|1
+|turn|17
+|
+|move|p2a: Gyarados|Bounce|p1a: Gyarados|[still]
+|-prepare|p2a: Gyarados|Bounce|p1a: Gyarados
+|move|p1a: Gyarados|Stone Edge|p2a: Gyarados|[miss]
+|-miss|p1a: Gyarados|p2a: Gyarados
+|
+|-heal|p2a: Gyarados|145\/332|[from] item: Leftovers
+|turn|18
+|
+|move|p2a: Gyarados|Bounce|p1a: Gyarados
+|-damage|p1a: Gyarados|46\/333
+|-status|p1a: Gyarados|par
+|cant|p1a: Gyarados|par
+|
+|-heal|p2a: Gyarados|165\/332|[from] item: Leftovers
+|turn|19
+|
+|move|p2a: Gyarados|Dragon Dance|p2a: Gyarados
+|-boost|p2a: Gyarados|atk|1
+|-boost|p2a: Gyarados|spe|1
+|move|p1a: Gyarados|Stone Edge|p2a: Gyarados
+|-crit|p2a: Gyarados
+|-supereffective|p2a: Gyarados
+|-damage|p2a: Gyarados|0 fnt
+|faint|p2a: Gyarados
+|
+|
+|switch|p2a: Aire|Gardevoir-Mega, M, shiny|278\/278
+|turn|20
+|
+|move|p2a: Aire|Focus Blast|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-damage|p1a: Gyarados|0 fnt
+|faint|p1a: Gyarados
+|
+|
+|switch|p1a: Magnezone|Magnezone|281\/281
+|turn|21
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|334\/382
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Magnezone
+|-unboost|p1a: Magnezone|atk|1
+|move|p1a: Magnezone|Flash Cannon|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|169\/382
+|
+|-heal|p2a: Landorus-Therian|192\/382|[from] item: Leftovers
+|turn|22
+|
+|switch|p1a: Tyranitar|Tyranitar, M|164\/341
+|-weather|Sandstorm
+|move|p2a: Landorus-Therian|Knock Off|p1a: Tyranitar
+|-crit|p1a: Tyranitar
+|-resisted|p1a: Tyranitar
+|-damage|p1a: Tyranitar|105\/341
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Landorus-Therian|215\/382|[from] item: Leftovers
+|turn|23
+|
+|detailschange|p1a: Tyranitar|Tyranitar-Mega, M
+|message|Tyranitar has Mega Evolved into Mega Tyranitar!
+|move|p1a: Tyranitar|Crunch|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|44\/382
+|-unboost|p2a: Landorus-Therian|def|1
+|move|p2a: Landorus-Therian|U-turn|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|faint|p1a: Tyranitar
+|
+|switch|p2a: Aire|Gardevoir-Mega, M, shiny|278\/278
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Aire|261\/278|[from] sandstorm
+|
+|switch|p1a: Magnezone|Magnezone|281\/281
+|turn|24
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|44\/382
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Magnezone
+|-unboost|p1a: Magnezone|atk|1
+|move|p1a: Magnezone|Flash Cannon|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|faint|p2a: Landorus-Therian
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Garchomp|Garchomp, F|358\/358
+|turn|25
+|
+|switch|p2a: Aire|Gardevoir-Mega, M, shiny|261\/278
+|switch|p1a: Latias|Latias, F|299\/299
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latias|281\/299|[from] sandstorm
+|-damage|p2a: Aire|244\/278|[from] sandstorm
+|turn|26
+|
+|move|p1a: Latias|Psyshock|p2a: Aire
+|-resisted|p2a: Aire
+|-damage|p2a: Aire|135\/278
+|-damage|p1a: Latias|252\/299|[from] item: Life Orb
+|move|p2a: Aire|Hyper Voice|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|0 fnt
+|faint|p1a: Latias
+|
+|-weather|none
+|
+|switch|p1a: Magnezone|Magnezone|281\/281
+|turn|27
+|
+|switch|p2a: Garchomp|Garchomp, F|358\/358
+|move|p1a: Magnezone|Flash Cannon|p2a: Garchomp
+|-damage|p2a: Garchomp|201\/358
+|
+|turn|28
+|
+|switch|p2a: Aire|Gardevoir-Mega, M, shiny|135\/278
+|move|p1a: Magnezone|Flash Cannon|p2a: Aire
+|-supereffective|p2a: Aire
+|-damage|p2a: Aire|0 fnt
+|faint|p2a: Aire
+|
+|c|âdukevesper|gg
+|
+|switch|p2a: Garchomp|Garchomp, F|201\/358
+|turn|29
+|
+|move|p2a: Garchomp|Outrage|p1a: Magnezone
+|-crit|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-damage|p1a: Magnezone|131\/281
+|move|p1a: Magnezone|Flash Cannon|p2a: Garchomp
+|-damage|p2a: Garchomp|44\/358
+|
+|turn|30
+|
+|move|p2a: Garchomp|Outrage|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-damage|p1a: Magnezone|44\/281
+|move|p1a: Magnezone|Flash Cannon|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|faint|p2a: Garchomp
+|
+|win|hj regicide
+|raw|Ladder updating...
+|raw|hj regicide's rating: 1641 &rarr; <strong>1660<\/strong><br \/>(+19 for winning)
+|raw|dukevesper's rating: 1625 &rarr; <strong>1606<\/strong><br \/>(-19 for losing)
+|leave|dukevesper
+|player|p2
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|leave|hj regicide
+|player|p1
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper
+|join|dukevesper
+|leave|dukevesper

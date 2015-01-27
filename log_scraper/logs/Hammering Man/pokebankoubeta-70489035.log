@@ -1,0 +1,443 @@
+|join|hammering man
+|join|SoundofMadness
+|player|p1|hammering man|279
+|player|p2|SoundofMadness|80
+|gametype|singles
+|tier|Pokebank OU (beta)
+|rated
+|clearpoke
+|poke|p1|Hitmontop, M
+|poke|p1|Lanturn, F
+|poke|p1|Chesnaught, M
+|poke|p1|Rotom-Heat
+|poke|p1|Banette, F
+|poke|p1|Espeon, M
+|poke|p2|Charizard, M
+|poke|p2|Genesect
+|poke|p2|Bisharp, F
+|poke|p2|Heatran, M
+|poke|p2|Landorus-Therian, M
+|poke|p2|Tentacruel, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Hitmontop|Hitmontop, M|304\/304
+|switch|p2a: Heatran|Heatran, M|386\/386
+|-ability|p1a: Hitmontop|Intimidate|[of] p2a: Heatran
+|-unboost|p2a: Heatran|atk|1
+|turn|1
+|callback|decision
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|381\/381
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Hitmontop
+|-unboost|p1a: Hitmontop|atk|1
+|move|p1a: Hitmontop|Close Combat|p2a: Landorus-Therian
+|-resisted|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|319\/381
+|-unboost|p1a: Hitmontop|def|1
+|-unboost|p1a: Hitmontop|spd|1
+|-damage|p1a: Hitmontop|274\/304|[from] item: Life Orb
+|
+|-heal|p2a: Landorus-Therian|342\/381|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p1a: Chesnaught|Chesnaught, M|380\/380
+|move|p2a: Landorus-Therian|U-turn|p1a: Chesnaught
+|-damage|p1a: Chesnaught|329\/380
+|-damage|p2a: Landorus-Therian|279\/381|[from] item: Rocky Helmet|[of] p1a: Chesnaught
+|callback|decision
+|
+|switch|p2a: Charizard|Charizard, M|297\/297
+|
+|turn|3
+|callback|decision
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|241\/241
+|-formechange|p2a: Charizard|Charizard-Mega-Y
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p2a: Charizard|Flamethrower|p1a: Rotom-Heat
+|-resisted|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|99\/241
+|
+|-weather|SunnyDay|[upkeep]
+|turn|4
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, M|386\/386
+|move|p1a: Rotom-Heat|Volt Switch|p2a: Heatran
+|-damage|p2a: Heatran|308\/386
+|callback|decision
+|
+|switch|p1a: Hitmontop|Hitmontop, M|274\/304
+|-ability|p1a: Hitmontop|Intimidate|[of] p2a: Heatran
+|-unboost|p2a: Heatran|atk|1
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Heatran|332\/386|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|279\/381
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Hitmontop
+|-unboost|p1a: Hitmontop|atk|1
+|move|p1a: Hitmontop|Close Combat|p2a: Landorus-Therian
+|-resisted|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|217\/381
+|-unboost|p1a: Hitmontop|def|1
+|-unboost|p1a: Hitmontop|spd|1
+|-damage|p1a: Hitmontop|244\/304|[from] item: Life Orb
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Landorus-Therian|240\/381|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p1a: Chesnaught|Chesnaught, M|329\/380
+|move|p2a: Landorus-Therian|Stealth Rock|p1a: Chesnaught
+|-sidestart|p1: hammering man|move: Stealth Rock
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Landorus-Therian|263\/381|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p2a: Tentacruel|Tentacruel, F|364\/364
+|move|p1a: Chesnaught|Leech Seed|p2a: Tentacruel
+|-start|p2a: Tentacruel|move: Leech Seed
+|
+|-weather|none
+|-damage|p2a: Tentacruel|319\/364|[from] Leech Seed|[of] p1a: Chesnaught
+|-damage|p1a: Chesnaught|284\/380|[from] ability: Liquid Ooze|[of] p2a: Tentacruel
+|turn|8
+|callback|decision
+|
+|switch|p2a: Charizard|Charizard, M|297\/297
+|-formechange|p2a: Charizard|Charizard-Mega-Y
+|-weather|SunnyDay
+|switch|p1a: Espeon|Espeon, M|272\/272
+|-damage|p1a: Espeon|238\/272|[from] Stealth Rock
+|
+|-weather|SunnyDay|[upkeep]
+|turn|9
+|callback|decision
+|
+|move|p1a: Espeon|Psychic|p2a: Charizard
+|-damage|p2a: Charizard|114\/297
+|-damage|p1a: Espeon|211\/272|[from] item: Life Orb
+|move|p2a: Charizard|Flamethrower|p1a: Espeon
+|-damage|p1a: Espeon|0 fnt
+|faint|p1a: Espeon
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: Banette|Banette, F|331\/331
+|-damage|p1a: Banette|290\/331|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|switch|p2a: Tentacruel|Tentacruel, F|319\/364
+|-formechange|p1a: Banette|Banette-Mega
+|message|Banette has Mega Evolved into Mega Banette!
+|move|p1a: Banette|Substitute|p1a: Banette
+|-start|p1a: Banette|Substitute
+|-damage|p1a: Banette|208\/331
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Tentacruel|341\/364|[from] item: Black Sludge
+|turn|11
+|callback|decision
+|
+|move|p1a: Banette|Shadow Sneak|p2a: Tentacruel
+|-crit|p2a: Tentacruel
+|-damage|p2a: Tentacruel|209\/364
+|move|p2a: Tentacruel|Knock Off|p1a: Banette
+|-supereffective|p1a: Banette
+|-end|p1a: Banette|Substitute
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Tentacruel|231\/364|[from] item: Black Sludge
+|turn|12
+|callback|decision
+|
+|switch|p1a: Hitmontop|Hitmontop, M|244\/304
+|-damage|p1a: Hitmontop|225\/304|[from] Stealth Rock
+|-ability|p1a: Hitmontop|Intimidate|[of] p2a: Tentacruel
+|-unboost|p2a: Tentacruel|atk|1
+|move|p2a: Tentacruel|Scald|p1a: Hitmontop
+|-damage|p1a: Hitmontop|186\/304
+|
+|-weather|none
+|-heal|p2a: Tentacruel|253\/364|[from] item: Black Sludge
+|turn|13
+|callback|decision
+|
+|move|p2a: Tentacruel|Toxic|p1a: Hitmontop
+|-status|p1a: Hitmontop|tox
+|move|p1a: Hitmontop|Rapid Spin|p2a: Tentacruel
+|-damage|p2a: Tentacruel|226\/364
+|-sideend|p1: hammering man|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Hitmontop
+|-damage|p1a: Hitmontop|156\/304 tox|[from] item: Life Orb
+|
+|-heal|p2a: Tentacruel|248\/364|[from] item: Black Sludge
+|-damage|p1a: Hitmontop|137\/304 tox|[from] psn
+|turn|14
+|callback|decision
+|
+|switch|p1a: Lanturn|Lanturn, F|454\/454
+|move|p2a: Tentacruel|Knock Off|p1a: Lanturn
+|-damage|p1a: Lanturn|399\/454
+|-enditem|p1a: Lanturn|Leftovers|[from] move: Knock Off|[of] p2a: Tentacruel
+|
+|-heal|p2a: Tentacruel|270\/364|[from] item: Black Sludge
+|turn|15
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, M|332\/386
+|move|p1a: Lanturn|Scald|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|234\/386
+|
+|-heal|p2a: Heatran|258\/386|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|99\/241
+|move|p2a: Heatran|Will-O-Wisp|p1a: Rotom-Heat
+|-fail|p1a: Rotom-Heat
+|
+|-heal|p2a: Heatran|282\/386|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Rotom-Heat|Volt Switch|p2a: Heatran
+|-damage|p2a: Heatran|206\/386
+|callback|decision
+|
+|switch|p1a: Hitmontop|Hitmontop, M|137\/304 tox
+|-ability|p1a: Hitmontop|Intimidate|[of] p2a: Heatran
+|-unboost|p2a: Heatran|atk|1
+|move|p2a: Heatran|Lava Plume|p1a: Hitmontop
+|-crit|p1a: Hitmontop
+|-damage|p1a: Hitmontop|0 fnt
+|faint|p1a: Hitmontop
+|
+|-heal|p2a: Heatran|230\/386|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Lanturn|Lanturn, F|399\/454
+|turn|18
+|callback|decision
+|
+|move|p1a: Lanturn|Scald|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|116\/386
+|move|p2a: Heatran|Roar|p1a: Lanturn
+|drag|p1a: Rotom-Heat|Rotom-Heat|99\/241
+|
+|-heal|p2a: Heatran|140\/386|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p1a: Rotom-Heat|Overheat|p2a: Heatran
+|-start|p2a: Heatran|ability: Flash Fire
+|move|p2a: Heatran|Will-O-Wisp|p1a: Rotom-Heat
+|-fail|p1a: Rotom-Heat
+|
+|-heal|p2a: Heatran|164\/386|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|switch|p1a: Lanturn|Lanturn, F|399\/454
+|move|p2a: Heatran|Lava Plume|p1a: Lanturn
+|-resisted|p1a: Lanturn
+|-damage|p1a: Lanturn|327\/454
+|-status|p1a: Lanturn|brn
+|
+|-heal|p2a: Heatran|188\/386|[from] item: Leftovers
+|-damage|p1a: Lanturn|271\/454 brn|[from] brn
+|turn|21
+|callback|decision
+|
+|move|p1a: Lanturn|Scald|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|86\/386
+|move|p2a: Heatran|Roar|p1a: Lanturn
+|drag|p1a: Banette|Banette, F|208\/331
+|-formechange|p1a: Banette|Banette-Mega
+|
+|-heal|p2a: Heatran|110\/386|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p1a: Banette|Shadow Sneak|p2a: Heatran
+|-damage|p2a: Heatran|17\/386
+|move|p2a: Heatran|Will-O-Wisp|p1a: Banette|[miss]
+|-miss|p2a: Heatran|p1a: Banette
+|
+|-heal|p2a: Heatran|41\/386|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|switch|p2a: Tentacruel|Tentacruel, F|270\/364
+|move|p1a: Banette|Shadow Sneak|p2a: Tentacruel
+|-damage|p2a: Tentacruel|183\/364
+|
+|-heal|p2a: Tentacruel|205\/364|[from] item: Black Sludge
+|turn|24
+|callback|decision
+|
+|switch|p1a: Lanturn|Lanturn, F|271\/454 brn
+|move|p2a: Tentacruel|Toxic|p1a: Lanturn
+|-fail|p1a: Lanturn
+|
+|-heal|p2a: Tentacruel|227\/364|[from] item: Black Sludge
+|-damage|p1a: Lanturn|215\/454 brn|[from] brn
+|turn|25
+|callback|decision
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|263\/381
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Lanturn
+|-unboost|p1a: Lanturn|atk|1
+|move|p1a: Lanturn|Discharge|p2a: Landorus-Therian
+|-immune|p2a: Landorus-Therian|[msg]
+|
+|-heal|p2a: Landorus-Therian|286\/381|[from] item: Leftovers
+|-damage|p1a: Lanturn|159\/454 brn|[from] brn
+|turn|26
+|callback|decision
+|
+|switch|p1a: Chesnaught|Chesnaught, M|284\/380
+|move|p2a: Landorus-Therian|Earthquake|p1a: Chesnaught
+|-crit|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|201\/380
+|
+|-heal|p2a: Landorus-Therian|309\/381|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|move|p2a: Landorus-Therian|Stealth Rock|p1a: Chesnaught
+|-sidestart|p1: hammering man|move: Stealth Rock
+|move|p1a: Chesnaught|Leech Seed|p2a: Landorus-Therian
+|-start|p2a: Landorus-Therian|move: Leech Seed
+|
+|-heal|p2a: Landorus-Therian|332\/381|[from] item: Leftovers
+|-damage|p2a: Landorus-Therian|285\/381|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|248\/380|[silent]
+|turn|28
+|callback|decision
+|
+|switch|p2a: Charizard|Charizard, M|114\/297
+|-formechange|p2a: Charizard|Charizard-Mega-Y
+|-weather|SunnyDay
+|move|p1a: Chesnaught|Hammer Arm|p2a: Charizard
+|-resisted|p2a: Charizard
+|-damage|p2a: Charizard|28\/297
+|-unboost|p1a: Chesnaught|spe|1
+|
+|-weather|SunnyDay|[upkeep]
+|turn|29
+|callback|decision
+|
+|switch|p1a: Lanturn|Lanturn, F|159\/454 brn
+|-damage|p1a: Lanturn|103\/454 brn|[from] Stealth Rock
+|move|p2a: Charizard|Flamethrower|p1a: Lanturn
+|-resisted|p1a: Lanturn
+|-damage|p1a: Lanturn|0 fnt
+|faint|p1a: Lanturn
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: Banette|Banette, F|208\/331
+|-formechange|p1a: Banette|Banette-Mega
+|-damage|p1a: Banette|167\/331|[from] Stealth Rock
+|turn|30
+|callback|decision
+|
+|switch|p2a: Tentacruel|Tentacruel, F|227\/364
+|move|p1a: Banette|Shadow Sneak|p2a: Tentacruel
+|-damage|p2a: Tentacruel|136\/364
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Tentacruel|158\/364|[from] item: Black Sludge
+|turn|31
+|callback|decision
+|
+|move|p1a: Banette|Shadow Sneak|p2a: Tentacruel
+|-damage|p2a: Tentacruel|73\/364
+|move|p2a: Tentacruel|Toxic|p1a: Banette
+|-status|p1a: Banette|tox
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Tentacruel|95\/364|[from] item: Black Sludge
+|-damage|p1a: Banette|147\/331 tox|[from] psn
+|turn|32
+|callback|decision
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|285\/381
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Banette
+|-unboost|p1a: Banette|atk|1
+|move|p1a: Banette|Shadow Sneak|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|240\/381
+|
+|-weather|none
+|-heal|p2a: Landorus-Therian|263\/381|[from] item: Leftovers
+|-damage|p1a: Banette|107\/331 tox|[from] psn
+|turn|33
+|callback|decision
+|
+|switch|p2a: Bisharp|Bisharp, F|289\/289
+|move|p1a: Banette|Destiny Bond|p1a: Banette
+|-singlemove|p1a: Banette|Destiny Bond
+|
+|-damage|p1a: Banette|47\/331 tox|[from] psn
+|turn|34
+|callback|decision
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|263\/381
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Banette
+|-unboost|p1a: Banette|atk|1
+|move|p1a: Banette|Pain Split|p2a: Landorus-Therian
+|-sethp|p2a: Landorus-Therian|155\/381|p1a: Banette|155\/331 tox|[from] move: Pain Split
+|
+|-heal|p2a: Landorus-Therian|178\/381|[from] item: Leftovers
+|-damage|p1a: Banette|75\/331 tox|[from] psn
+|turn|35
+|callback|decision
+|
+|switch|p2a: Charizard|Charizard, M|28\/297
+|-formechange|p2a: Charizard|Charizard-Mega-Y
+|-weather|SunnyDay
+|switch|p1a: Chesnaught|Chesnaught, M|248\/380
+|-damage|p1a: Chesnaught|225\/380|[from] Stealth Rock
+|
+|-weather|SunnyDay|[upkeep]
+|turn|36
+|callback|decision
+|
+|move|p2a: Charizard|Flamethrower|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-damage|p1a: Chesnaught|0 fnt
+|faint|p1a: Chesnaught
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|-message|hammering man forfeited.
+|
+|win|SoundofMadness
+|raw|Ladder updating...
+|leave|hammering man
+|player|p1
+|raw|hammering man's rating: 1665 &rarr; <strong>1664<\/strong><br \/>(-1 for losing)
+|raw|SoundofMadness's rating: 1839 &rarr; <strong>1841<\/strong><br \/>(+2 for winning)

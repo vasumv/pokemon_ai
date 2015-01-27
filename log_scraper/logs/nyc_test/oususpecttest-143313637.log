@@ -1,0 +1,240 @@
+|join|nyc_test
+|join|Synchronation
+|player|p1|nyc_test|92
+|player|p2|Synchronation|163
+|gametype|singles
+|gen|6
+|tier|OU (suspect test)
+|rated
+|clearpoke
+|poke|p1|Talonflame, M
+|poke|p1|Azumarill, M
+|poke|p1|Dugtrio, M
+|poke|p1|Latias, F, shiny
+|poke|p1|Magnezone
+|poke|p1|Charizard, M, shiny
+|poke|p2|Mawile, F
+|poke|p2|Thundurus, M
+|poke|p2|Landorus, M
+|poke|p2|Kyurem-Black
+|poke|p2|Bisharp, M
+|poke|p2|Uxie
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Talonflame|Talonflame, M|359\/359
+|switch|p2a: Uxie|Uxie|354\/354
+|turn|1
+|
+|move|p1a: Talonflame|Taunt|p2a: Uxie
+|-start|p2a: Uxie|move: Taunt
+|cant|p2a: Uxie|move: Taunt|Stealth Rock
+|
+|turn|2
+|
+|move|p1a: Talonflame|Will-O-Wisp|p2a: Uxie
+|-status|p2a: Uxie|brn
+|move|p2a: Uxie|Knock Off|p1a: Talonflame
+|-damage|p1a: Talonflame|316\/359
+|-enditem|p1a: Talonflame|Leftovers|[from] move: Knock Off|[of] p2a: Uxie
+|
+|-damage|p2a: Uxie|310\/354 brn|[from] brn
+|turn|3
+|
+|switch|p2a: Thundurus|Thundurus, M|299\/299
+|move|p1a: Talonflame|Will-O-Wisp|p2a: Thundurus
+|-status|p2a: Thundurus|brn
+|
+|-damage|p2a: Thundurus|262\/299 brn|[from] brn
+|turn|4
+|
+|switch|p1a: Magnezone|Magnezone|281\/281
+|move|p2a: Thundurus|Thunderbolt|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-damage|p1a: Magnezone|163\/281
+|-damage|p2a: Thundurus|233\/299 brn|[from] item: Life Orb
+|
+|-damage|p2a: Thundurus|196\/299 brn|[from] brn
+|turn|5
+|
+|switch|p2a: Uxie|Uxie|310\/354 brn
+|move|p1a: Magnezone|Hidden Power|p2a: Uxie
+|-damage|p2a: Uxie|258\/354 brn
+|-enditem|p2a: Uxie|Red Card|[of] p1a: Magnezone
+|drag|p1a: Charizard|Charizard, M, shiny|359\/359
+|
+|-damage|p2a: Uxie|214\/354 brn|[from] brn
+|turn|6
+|
+|detailschange|p1a: Charizard|Charizard-Mega-X, M, shiny
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p1a: Charizard|Flare Blitz|p2a: Uxie
+|-damage|p2a: Uxie|0 fnt
+|-damage|p1a: Charizard|288\/359|[from] recoil|[of] p2a: Uxie
+|faint|p2a: Uxie
+|
+|
+|switch|p2a: Landorus|Landorus, M|319\/319
+|turn|7
+|
+|switch|p1a: Latias|Latias, F, shiny|299\/299
+|move|p2a: Landorus|Knock Off|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|42\/299
+|-enditem|p1a: Latias|Life Orb|[from] move: Knock Off|[of] p2a: Landorus
+|-damage|p2a: Landorus|288\/319|[from] item: Life Orb
+|
+|turn|8
+|
+|switch|p2a: Mawile|Mawile, F|304\/304
+|-ability|p2a: Mawile|Intimidate|[of] p1a: Latias
+|-unboost|p1a: Latias|atk|1
+|move|p1a: Latias|Draco Meteor|p2a: Mawile
+|-immune|p2a: Mawile|[msg]
+|
+|turn|9
+|
+|switch|p1a: Talonflame|Talonflame, M|316\/359
+|switch|p2a: Thundurus|Thundurus, M|196\/299 brn
+|
+|-damage|p2a: Thundurus|159\/299 brn|[from] brn
+|turn|10
+|
+|switch|p1a: Dugtrio|Dugtrio, M|208\/208
+|move|p2a: Thundurus|Thunderbolt|p1a: Dugtrio
+|-immune|p1a: Dugtrio|[msg]
+|
+|-damage|p2a: Thundurus|122\/299 brn|[from] brn
+|turn|11
+|
+|move|p1a: Dugtrio|Stealth Rock|p2a: Thundurus
+|-sidestart|p2: Synchronation|move: Stealth Rock
+|move|p2a: Thundurus|Hidden Power|p1a: Dugtrio
+|-supereffective|p1a: Dugtrio
+|-enditem|p1a: Dugtrio|Focus Sash
+|-damage|p1a: Dugtrio|1\/208
+|-damage|p2a: Thundurus|93\/299 brn|[from] item: Life Orb
+|
+|-damage|p2a: Thundurus|56\/299 brn|[from] brn
+|turn|12
+|
+|move|p1a: Dugtrio|Reversal|p2a: Thundurus
+|-resisted|p2a: Thundurus
+|-damage|p2a: Thundurus|0 fnt
+|faint|p2a: Thundurus
+|
+|
+|switch|p2a: Landorus|Landorus, M|288\/319
+|-damage|p2a: Landorus|249\/319|[from] Stealth Rock
+|turn|13
+|
+|switch|p1a: Latias|Latias, F, shiny|42\/299
+|move|p2a: Landorus|Earth Power|p1a: Latias
+|-immune|p1a: Latias|[msg]
+|
+|turn|14
+|
+|switch|p2a: Mawile|Mawile, F|304\/304
+|-damage|p2a: Mawile|285\/304|[from] Stealth Rock
+|-ability|p2a: Mawile|Intimidate|[of] p1a: Latias
+|-unboost|p1a: Latias|atk|1
+|move|p1a: Latias|Psyshock|p2a: Mawile
+|-resisted|p2a: Mawile
+|-damage|p2a: Mawile|208\/304
+|
+|turn|15
+|
+|detailschange|p2a: Mawile|Mawile-Mega, F
+|message|Mawile has Mega Evolved into Mega Mawile!
+|move|p1a: Latias|Healing Wish|p1a: Latias
+|faint|p1a: Latias
+|move|p2a: Mawile|Play Rough|p1: Latias|[notarget]
+|-notarget
+|
+|
+|switch|p1a: Talonflame|Talonflame, M|316\/359
+|-heal|p1a: Talonflame|359\/359|[from] move: Healing Wish
+|turn|16
+|
+|switch|p2a: Landorus|Landorus, M|249\/319
+|-damage|p2a: Landorus|210\/319|[from] Stealth Rock
+|move|p1a: Talonflame|Will-O-Wisp|p2a: Landorus
+|-status|p2a: Landorus|brn
+|
+|-damage|p2a: Landorus|171\/319 brn|[from] brn
+|turn|17
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Landorus
+|-damage|p2a: Landorus|30\/319 brn
+|-damage|p1a: Talonflame|312\/359|[from] recoil|[of] p2a: Landorus
+|move|p2a: Landorus|Psychic|p1a: Talonflame
+|-damage|p1a: Talonflame|160\/359
+|
+|-damage|p2a: Landorus|0 fnt|[from] brn
+|faint|p2a: Landorus
+|
+|switch|p2a: Kyurem-Black|Kyurem-Black|391\/391
+|-damage|p2a: Kyurem-Black|294\/391|[from] Stealth Rock
+|-ability|p2a: Kyurem-Black|Teravolt
+|turn|18
+|
+|switch|p1a: Magnezone|Magnezone|163\/281
+|move|p2a: Kyurem-Black|Dragon Claw|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-damage|p1a: Magnezone|62\/281
+|-damage|p2a: Kyurem-Black|255\/391|[from] item: Life Orb
+|
+|turn|19
+|
+|move|p1a: Magnezone|Flash Cannon|p2a: Kyurem-Black
+|-supereffective|p2a: Kyurem-Black
+|-damage|p2a: Kyurem-Black|0 fnt
+|faint|p2a: Kyurem-Black
+|
+|
+|switch|p2a: Bisharp|Bisharp, M|272\/272
+|-damage|p2a: Bisharp|255\/272|[from] Stealth Rock
+|turn|20
+|
+|switch|p1a: Dugtrio|Dugtrio, M|1\/208
+|move|p2a: Bisharp|Knock Off|p1a: Dugtrio
+|-damage|p1a: Dugtrio|0 fnt
+|-damage|p2a: Bisharp|228\/272|[from] item: Life Orb
+|faint|p1a: Dugtrio
+|
+|
+|switch|p1a: Charizard|Charizard-Mega-X, M, shiny|288\/359
+|turn|21
+|
+|move|p1a: Charizard|Flare Blitz|p2a: Bisharp
+|-supereffective|p2a: Bisharp
+|-damage|p2a: Bisharp|0 fnt
+|-damage|p1a: Charizard|213\/359|[from] recoil|[of] p2a: Bisharp
+|faint|p2a: Bisharp
+|
+|
+|switch|p2a: Mawile|Mawile-Mega, F|208\/304
+|-damage|p2a: Mawile|189\/304|[from] Stealth Rock
+|turn|22
+|
+|move|p1a: Charizard|Flare Blitz|p2a: Mawile
+|-supereffective|p2a: Mawile
+|-damage|p2a: Mawile|0 fnt
+|-damage|p1a: Charizard|151\/359|[from] recoil|[of] p2a: Mawile
+|faint|p2a: Mawile
+|
+|win|nyc_test
+|raw|Ladder updating...
+|raw|nyc_test's rating: 1352 &rarr; <strong>1367<\/strong><br \/>(+15 for winning)
+|raw|Synchronation's rating: 1263 &rarr; <strong>1244<\/strong><br \/>(-19 for losing)
+|leave|Synchronation
+|player|p2

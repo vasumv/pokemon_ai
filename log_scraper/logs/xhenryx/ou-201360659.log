@@ -1,0 +1,301 @@
+|join|ZeroHKO
+|join|xhenryx
+|player|p1|ZeroHKO|2
+|player|p2|xhenryx|102
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Klefki, M, shiny
+|poke|p1|Tangrowth, M, shiny
+|poke|p1|Charizard, M, shiny
+|poke|p1|Thundurus, M, shiny
+|poke|p1|Landorus-Therian, M, shiny
+|poke|p1|Starmie, shiny
+|poke|p2|Venusaur, M
+|poke|p2|Heatran, F
+|poke|p2|Whimsicott, F
+|poke|p2|Thundurus, M
+|poke|p2|Garchomp, M
+|poke|p2|Dugtrio, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Tangrowth|Tangrowth, M, shiny|404\/404
+|switch|p2a: Whimsicott|Whimsicott, F|324\/324
+|turn|1
+|
+|move|p2a: Whimsicott|U-turn|p1a: Tangrowth
+|-crit|p1a: Tangrowth
+|-supereffective|p1a: Tangrowth
+|-damage|p1a: Tangrowth|310\/404
+|
+|switch|p2a: Venusaur|Venusaur, M|364\/364
+|move|p1a: Tangrowth|Infestation|p2a: Venusaur
+|-damage|p2a: Venusaur|346\/364
+|-activate|p2a: Venusaur|move: Infestation|[of] p1a: Tangrowth
+|
+|-damage|p2a: Venusaur|301\/364|[from] move: Infestation|[partiallytrapped]
+|turn|2
+|
+|switch|p1a: Klefki|Klefki, M, shiny|315\/315
+|detailschange|p2a: Venusaur|Venusaur-Mega, M
+|-mega|p2a: Venusaur|Venusaur|Venusaurite
+|move|p2a: Venusaur|Hidden Power|p1a: Klefki
+|-supereffective|p1a: Klefki
+|-damage|p1a: Klefki|183\/315
+|
+|-end|p2a: Venusaur|Infestation|[partiallytrapped]
+|turn|3
+|
+|switch|p2a: Dugtrio|Dugtrio, M|211\/211
+|move|p1a: Klefki|Spikes|p2a: Dugtrio
+|-sidestart|p2: xhenryx|Spikes
+|
+|turn|4
+|
+|move|p1a: Klefki|Magnet Rise|p1a: Klefki
+|-start|p1a: Klefki|Magnet Rise
+|move|p2a: Dugtrio|Earthquake|p1a: Klefki
+|-immune|p1a: Klefki|[msg]
+|
+|turn|5
+|
+|switch|p2a: Garchomp|Garchomp, M|357\/357
+|-damage|p2a: Garchomp|313\/357|[from] Spikes
+|move|p1a: Klefki|Spikes|p2a: Garchomp
+|-sidestart|p2: xhenryx|Spikes
+|
+|turn|6
+|
+|move|p1a: Klefki|Spikes|p2a: Garchomp
+|-sidestart|p2: xhenryx|Spikes
+|move|p2a: Garchomp|Stealth Rock|p1a: Klefki
+|-sidestart|p1: ZeroHKO|move: Stealth Rock
+|
+|turn|7
+|
+|switch|p1a: Starmie|Starmie, shiny|262\/262
+|-damage|p1a: Starmie|230\/262|[from] Stealth Rock
+|move|p2a: Garchomp|Stealth Rock|p1a: Starmie
+|-fail|p1a: Starmie
+|
+|turn|8
+|c|âxhenryx|miss click T.T
+|c|âxhenryx|hahaha
+|
+|move|p1a: Starmie|Ice Beam|p2a: Garchomp
+|-supereffective|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|-damage|p1a: Starmie|204\/262|[from] item: Life Orb
+|faint|p2a: Garchomp
+|
+|
+|switch|p2a: Dugtrio|Dugtrio, M|211\/211
+|-damage|p2a: Dugtrio|159\/211|[from] Spikes
+|turn|9
+|c|âZeroHKO|You would've fire blast anyway :p
+|
+|move|p2a: Dugtrio|Earthquake|p1a: Starmie
+|-damage|p1a: Starmie|63\/262
+|move|p1a: Starmie|Rapid Spin|p2a: Dugtrio
+|-damage|p2a: Dugtrio|133\/211
+|-sideend|p1: ZeroHKO|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Starmie
+|-damage|p1a: Starmie|37\/262|[from] item: Life Orb
+|
+|turn|10
+|
+|move|p2a: Dugtrio|Earthquake|p1a: Starmie
+|-damage|p1a: Starmie|0 fnt
+|faint|p1a: Starmie
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M, shiny|381\/381
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Dugtrio
+|-unboost|p2a: Dugtrio|atk|1
+|turn|11
+|
+|move|p2a: Dugtrio|Memento|p1a: Landorus-Therian
+|-unboost|p1a: Landorus-Therian|atk|2
+|-unboost|p1a: Landorus-Therian|spa|2
+|faint|p2a: Dugtrio
+|move|p1a: Landorus-Therian|Stealth Rock|p2: Dugtrio
+|-sidestart|p2: xhenryx|move: Stealth Rock
+|
+|
+|switch|p2a: Venusaur|Venusaur-Mega, M|301\/364
+|-damage|p2a: Venusaur|210\/364|[from] Spikes
+|-damage|p2a: Venusaur|165\/364|[from] Stealth Rock
+|turn|12
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Venusaur
+|-damage|p2a: Venusaur|132\/364
+|
+|switch|p1a: Klefki|Klefki, M, shiny|183\/315
+|move|p2a: Venusaur|Sludge Bomb|p1a: Klefki
+|-immune|p1a: Klefki|[msg]
+|
+|turn|13
+|
+|move|p1a: Klefki|Thunder Wave|p2a: Venusaur
+|-status|p2a: Venusaur|par
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|314\/364 par
+|
+|turn|14
+|
+|move|p1a: Klefki|Magnet Rise|p1a: Klefki
+|-start|p1a: Klefki|Magnet Rise
+|move|p2a: Venusaur|Hidden Power|p1a: Klefki
+|-supereffective|p1a: Klefki
+|-damage|p1a: Klefki|41\/315
+|
+|turn|15
+|
+|move|p1a: Klefki|Fairy Lock|p1a: Klefki
+|-activate|Battle: ou|move: Fairy Lock
+|move|p2a: Venusaur|Sludge Bomb|p1a: Klefki
+|-immune|p1a: Klefki|[msg]
+|
+|turn|16
+|
+|move|p1a: Klefki|Magnet Rise|p1a: Klefki
+|-fail|p1a: Klefki
+|move|p2a: Venusaur|Giga Drain|p1a: Klefki
+|-resisted|p1a: Klefki
+|-damage|p1a: Klefki|0 fnt
+|-heal|p2a: Venusaur|335\/364 par|[from] drain|[of] p1a: Klefki
+|faint|p1a: Klefki
+|
+|
+|switch|p1a: Charizard|Charizard, M, shiny|309\/309
+|turn|17
+|
+|detailschange|p1a: Charizard|Charizard-Mega-X, M, shiny
+|-mega|p1a: Charizard|Charizard|Charizardite X
+|move|p1a: Charizard|Dragon Claw|p2a: Venusaur
+|-damage|p2a: Venusaur|166\/364 par
+|move|p2a: Venusaur|Sludge Bomb|p1a: Charizard
+|-damage|p1a: Charizard|110\/309
+|
+|turn|18
+|
+|move|p1a: Charizard|Roost|p1a: Charizard
+|-heal|p1a: Charizard|265\/309
+|move|p2a: Venusaur|Sludge Bomb|p1a: Charizard
+|-damage|p1a: Charizard|75\/309
+|-status|p1a: Charizard|psn
+|
+|-damage|p1a: Charizard|37\/309 psn|[from] psn
+|turn|19
+|
+|move|p1a: Charizard|Flare Blitz|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|0 fnt
+|-damage|p1a: Charizard|0 fnt|[from] recoil|[of] p2a: Venusaur
+|faint|p2a: Venusaur
+|faint|p1a: Charizard
+|
+|
+|switch|p2a: Whimsicott|Whimsicott, F|324\/324
+|switch|p1a: Tangrowth|Tangrowth, M, shiny|404\/404
+|-damage|p2a: Whimsicott|284\/324|[from] Stealth Rock
+|-damage|p2a: Whimsicott|203\/324|[from] Spikes
+|turn|20
+|
+|move|p2a: Whimsicott|U-turn|p1a: Tangrowth
+|-supereffective|p1a: Tangrowth
+|-damage|p1a: Tangrowth|340\/404
+|
+|switch|p2a: Heatran|Heatran, F|386\/386
+|-damage|p2a: Heatran|338\/386|[from] Stealth Rock
+|-damage|p2a: Heatran|242\/386|[from] Spikes
+|move|p1a: Tangrowth|Infestation|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|239\/386
+|-activate|p2a: Heatran|move: Infestation|[of] p1a: Tangrowth
+|
+|-heal|p2a: Heatran|263\/386|[from] item: Leftovers
+|-damage|p2a: Heatran|215\/386|[from] move: Infestation|[partiallytrapped]
+|turn|21
+|
+|move|p2a: Heatran|Lava Plume|p1a: Tangrowth
+|-supereffective|p1a: Tangrowth
+|-damage|p1a: Tangrowth|152\/404
+|move|p1a: Tangrowth|Earthquake|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|faint|p2a: Heatran
+|
+|
+|switch|p2a: Thundurus|Thundurus, M|299\/299
+|-damage|p2a: Thundurus|225\/299|[from] Stealth Rock
+|turn|22
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M, shiny|381\/381
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Thundurus
+|-unboost|p2a: Thundurus|atk|1
+|move|p2a: Thundurus|Nasty Plot|p2a: Thundurus
+|-boost|p2a: Thundurus|spa|2
+|
+|-heal|p2a: Thundurus|243\/299|[from] item: Leftovers
+|turn|23
+|c|âxhenryx|what is the set of this tangro?
+|
+|move|p2a: Thundurus|Grass Knot|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|160\/381
+|move|p1a: Landorus-Therian|Stone Edge|p2a: Thundurus
+|-supereffective|p2a: Thundurus
+|-damage|p2a: Thundurus|0 fnt
+|faint|p2a: Thundurus
+|
+|-heal|p1a: Landorus-Therian|183\/381|[from] item: Leftovers
+|
+|switch|p2a: Whimsicott|Whimsicott, F|203\/324
+|-damage|p2a: Whimsicott|122\/324|[from] Spikes
+|-damage|p2a: Whimsicott|82\/324|[from] Stealth Rock
+|turn|24
+|c|âZeroHKO|With the spread ?
+|c|âZeroHKO|Giga drain \/ earthquake \/ infestation \/ knock off
+|c|âxhenryx|why infestation?
+|c|âZeroHKO|Yes
+|c|âxhenryx|and the EVs?
+|c|âZeroHKO|I know it can seem weird but it really works against ferrothorn and heatran
+|c|âZeroHKO|252 PV \/ 72 Def \/ 184 def sp
+|c|âZeroHKO|assault vest of course
+|
+|move|p2a: Whimsicott|Leech Seed|p1a: Landorus-Therian
+|-start|p1a: Landorus-Therian|move: Leech Seed
+|move|p1a: Landorus-Therian|Earthquake|p2a: Whimsicott
+|-resisted|p2a: Whimsicott
+|-damage|p2a: Whimsicott|21\/324
+|
+|-heal|p2a: Whimsicott|41\/324|[from] item: Leftovers
+|-heal|p1a: Landorus-Therian|206\/381|[from] item: Leftovers
+|-damage|p1a: Landorus-Therian|159\/381|[from] Leech Seed|[of] p2a: Whimsicott
+|-heal|p2a: Whimsicott|88\/324|[silent]
+|turn|25
+|
+|move|p2a: Whimsicott|U-turn|p1a: Landorus-Therian
+|-resisted|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|145\/381
+|move|p1a: Landorus-Therian|Stone Edge|p2a: Whimsicott
+|-damage|p2a: Whimsicott|0 fnt
+|faint|p2a: Whimsicott
+|
+|win|ZeroHKO
+|raw|Ladder updating...
+|raw|ZeroHKO's rating: 1572 &rarr; <strong>1595<\/strong><br \/>(+23 for winning)
+|raw|xhenryx's rating: 1617 &rarr; <strong>1595<\/strong><br \/>(-22 for losing)
+|c|âZeroHKO|gg
+|c|âxhenryx|gg

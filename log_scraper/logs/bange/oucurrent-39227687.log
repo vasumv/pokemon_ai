@@ -1,0 +1,321 @@
+|join|bange
+|join|LunarSlushie111
+|player|p1|bange|142
+|player|p2|LunarSlushie111|274
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Steelix, M
+|poke|p1|Heracross, M
+|poke|p1|Latias, F
+|poke|p1|Rotom-Mow
+|poke|p1|Mantine, F, shiny
+|poke|p1|Claydol
+|poke|p2|Politoed, M
+|poke|p2|Volcarona, F
+|poke|p2|Starmie
+|poke|p2|Shaymin
+|poke|p2|Metagross
+|poke|p2|Gothitelle, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|join|POOCHOO
+|leave|POOCHOO
+|
+|start
+|switch|p1a: Rotom-Mow|Rotom-Mow|242\/242
+|switch|p2a: Politoed|Politoed, M|322\/322
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|turn|1
+|callback|decision
+|
+|switch|p2a: Shaymin|Shaymin|403\/403
+|move|p1a: Rotom-Mow|Volt Switch|p2a: Shaymin
+|-crit|p2a: Shaymin
+|-resisted|p2a: Shaymin
+|-damage|p2a: Shaymin|312\/403
+|callback|decision
+|
+|switch|p1a: Heracross|Heracross, M|306\/306
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Shaymin|337\/403|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p2a: Metagross|Metagross|363\/363
+|move|p1a: Heracross|Stone Edge|p2a: Metagross
+|-resisted|p2a: Metagross
+|-damage|p2a: Metagross|315\/363
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Metagross|337\/363|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p1a: Steelix|Steelix, M|354\/354
+|move|p2a: Metagross|Substitute|p2a: Metagross
+|-start|p2a: Metagross|Substitute
+|-damage|p2a: Metagross|247\/363
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Metagross|269\/363|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Metagross|Hone Claws|p2a: Metagross
+|-boost|p2a: Metagross|atk|1
+|-boost|p2a: Metagross|accuracy|1
+|move|p1a: Steelix|Stealth Rock|p2a: Metagross
+|-sidestart|p2: LunarSlushie111|move: Stealth Rock
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Metagross|291\/363|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p2a: Metagross|Hone Claws|p2a: Metagross
+|-boost|p2a: Metagross|atk|1
+|-boost|p2a: Metagross|accuracy|1
+|move|p1a: Steelix|Earthquake|p2a: Metagross
+|-supereffective|p2a: Metagross
+|-end|p2a: Metagross|Substitute
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Metagross|313\/363|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Metagross|Earthquake|p1a: Steelix
+|-supereffective|p1a: Steelix
+|-damage|p1a: Steelix|182\/354
+|move|p1a: Steelix|Earthquake|p2a: Metagross
+|-supereffective|p2a: Metagross
+|-damage|p2a: Metagross|179\/363
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Metagross|201\/363|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p2a: Metagross|Earthquake|p1a: Steelix
+|-crit|p1a: Steelix
+|-supereffective|p1a: Steelix
+|-damage|p1a: Steelix|0 fnt
+|faint|p1a: Steelix
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Metagross|223\/363|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Heracross|Heracross, M|306\/306
+|turn|8
+|callback|decision
+|
+|move|p1a: Heracross|Close Combat|p2a: Metagross
+|-damage|p2a: Metagross|36\/363
+|-unboost|p1a: Heracross|def|1
+|-unboost|p1a: Heracross|spd|1
+|move|p2a: Metagross|Meteor Mash|p1a: Heracross
+|-damage|p1a: Heracross|0 fnt
+|faint|p1a: Heracross
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Metagross|58\/363|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Rotom-Mow|Rotom-Mow|242\/242
+|turn|9
+|callback|decision
+|
+|move|p1a: Rotom-Mow|Volt Switch|p2a: Metagross
+|-damage|p2a: Metagross|0 fnt
+|faint|p2a: Metagross
+|callback|decision
+|
+|switch|p1a: Latias|Latias, F|321\/321
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Shaymin|Shaymin|337\/403
+|-damage|p2a: Shaymin|287\/403|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|move|p1a: Latias|Substitute|p1a: Latias
+|-start|p1a: Latias|Substitute
+|-damage|p1a: Latias|241\/321
+|move|p2a: Shaymin|Leech Seed|p1a: Latias
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Latias|261\/321|[from] item: Leftovers
+|-heal|p2a: Shaymin|312\/403|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p1a: Latias|Calm Mind|p1a: Latias
+|-boost|p1a: Latias|spa|1
+|-boost|p1a: Latias|spd|1
+|move|p2a: Shaymin|Air Slash|p1a: Latias
+|-activate|p1a: Latias|Substitute|[damage]
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Latias|281\/321|[from] item: Leftovers
+|-heal|p2a: Shaymin|337\/403|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Latias|Calm Mind|p1a: Latias
+|-boost|p1a: Latias|spa|1
+|-boost|p1a: Latias|spd|1
+|move|p2a: Shaymin|Air Slash|p1a: Latias
+|-activate|p1a: Latias|Substitute|[damage]
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Latias|301\/321|[from] item: Leftovers
+|-heal|p2a: Shaymin|362\/403|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: Latias|Dragon Pulse|p2a: Shaymin
+|-damage|p2a: Shaymin|191\/403
+|move|p2a: Shaymin|Air Slash|p1a: Latias
+|-end|p1a: Latias|Substitute
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Latias|321\/321|[from] item: Leftovers
+|-heal|p2a: Shaymin|216\/403|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, M|322\/322
+|-damage|p2a: Politoed|282\/322|[from] Stealth Rock
+|move|p1a: Latias|Substitute|p1a: Latias
+|-start|p1a: Latias|Substitute
+|-damage|p1a: Latias|241\/321
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Latias|261\/321|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1a: Latias|Psyshock|p2a: Politoed
+|-damage|p2a: Politoed|3\/322
+|-enditem|p2a: Politoed|Salac Berry|[eat]
+|-boost|p2a: Politoed|spe|1|[from] item: Salac Berry
+|move|p2a: Politoed|Ice Punch|p1a: Latias
+|-supereffective|p1a: Latias
+|-end|p1a: Latias|Substitute
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Latias|281\/321|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p2a: Politoed|Ice Punch|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|149\/321
+|move|p1a: Latias|Psyshock|p2a: Politoed
+|-damage|p2a: Politoed|0 fnt
+|faint|p2a: Politoed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Latias|169\/321|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Starmie|Starmie|261\/261
+|-damage|p2a: Starmie|229\/261|[from] Stealth Rock
+|turn|17
+|callback|decision
+|
+|move|p2a: Starmie|Ice Beam|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|93\/321
+|move|p1a: Latias|Dragon Pulse|p2a: Starmie
+|-damage|p2a: Starmie|0 fnt
+|faint|p2a: Starmie
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Latias|113\/321|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Volcarona|Volcarona, F|312\/312
+|-damage|p2a: Volcarona|156\/312|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|move|p1a: Latias|Psyshock|p2a: Volcarona
+|-damage|p2a: Volcarona|0 fnt
+|faint|p2a: Volcarona
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Latias|133\/321|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Gothitelle|Gothitelle, M|344\/344
+|-damage|p2a: Gothitelle|301\/344|[from] Stealth Rock
+|turn|19
+|callback|decision
+|
+|move|p1a: Latias|Dragon Pulse|p2a: Gothitelle
+|-damage|p2a: Gothitelle|142\/344
+|move|p2a: Gothitelle|Fake Tears|p1a: Latias
+|-unboost|p1a: Latias|spd|2
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Latias|153\/321|[from] item: Leftovers
+|-heal|p2a: Gothitelle|163\/344|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p2a: Gothitelle|Protect|p2a: Gothitelle
+|-singleturn|p2a: Gothitelle|Protect
+|move|p1a: Latias|Dragon Pulse|p2a: Gothitelle
+|-activate|p2a: Gothitelle|Protect
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Latias|173\/321|[from] item: Leftovers
+|-heal|p2a: Gothitelle|184\/344|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p1a: Latias|Substitute|p1a: Latias
+|-start|p1a: Latias|Substitute
+|-damage|p1a: Latias|93\/321
+|move|p2a: Gothitelle|Fake Tears|p1a: Latias
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Latias|113\/321|[from] item: Leftovers
+|-heal|p2a: Gothitelle|205\/344|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p1a: Latias|Calm Mind|p1a: Latias
+|-boost|p1a: Latias|spa|1
+|-boost|p1a: Latias|spd|1
+|move|p2a: Gothitelle|Psychic|p1a: Latias
+|-resisted|p1a: Latias
+|-activate|p1a: Latias|Substitute|[damage]
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Latias|133\/321|[from] item: Leftovers
+|-heal|p2a: Gothitelle|226\/344|[from] item: Leftovers
+|turn|23
+|callback|decision
+|-message|LunarSlushie111 forfeited.
+|
+|win|bange
+|raw|Ladder updating...
+|leave|LunarSlushie111
+|player|p2
+|raw|bange's rating: 1685 &rarr; <strong>1693<\/strong><br \/>(+8 for winning)
+|raw|LunarSlushie111's rating: 1540 &rarr; <strong>1536<\/strong><br \/>(-4 for losing)

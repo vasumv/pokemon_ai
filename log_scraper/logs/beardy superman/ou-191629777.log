@@ -1,0 +1,333 @@
+|join|beardy superman
+|join|Test06111825
+|player|p1|beardy superman|102
+|player|p2|Test06111825|102
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Metagross
+|poke|p1|Keldeo
+|poke|p1|Talonflame, M
+|poke|p1|Rotom-Wash
+|poke|p1|Landorus-Therian, M
+|poke|p1|Latias, F
+|poke|p2|Tornadus-Therian, M
+|poke|p2|Amoonguss, M
+|poke|p2|Slowbro, M
+|poke|p2|Gliscor, M
+|poke|p2|Lanturn, M
+|poke|p2|Tentacruel, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|381\/381
+|switch|p2a: Gliscor|Gliscor, M|353\/353
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Gliscor
+|-unboost|p2a: Gliscor|atk|1
+|turn|1
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Gliscor
+|-sidestart|p2: Test06111825|move: Stealth Rock
+|
+|-status|p2a: Gliscor|tox|[from] item: Toxic Orb
+|turn|2
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|move|p2a: Gliscor|Stealth Rock|p1a: Rotom-Wash
+|-sidestart|p1: beardy superman|move: Stealth Rock
+|
+|turn|3
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|turn|4
+|
+|move|p2a: Gliscor|U-turn|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|279\/304
+|
+|switch|p2a: Lanturn|Lanturn, M|417\/417
+|-damage|p2a: Lanturn|365\/417|[from] Stealth Rock
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Lanturn
+|-status|p2a: Lanturn|brn
+|
+|-heal|p1a: Rotom-Wash|298\/304|[from] item: Leftovers
+|-heal|p2a: Lanturn|391\/417 brn|[from] item: Leftovers
+|-damage|p2a: Lanturn|339\/417 brn|[from] brn
+|turn|5
+|
+|switch|p1a: Latias|Latias, F|302\/302
+|-damage|p1a: Latias|265\/302|[from] Stealth Rock
+|move|p2a: Lanturn|Rest|p2a: Lanturn
+|-status|p2a: Lanturn|slp
+|-heal|p2a: Lanturn|417\/417 slp|[silent]
+|-status|p2a: Lanturn|slp|[from] move: Rest
+|
+|turn|6
+|
+|move|p1a: Latias|Defog|p2a: Lanturn
+|-unboost|p2a: Lanturn|evasion|1
+|-sideend|p2: Test06111825|Stealth Rock|[from] move: Defog|[of] p2a: Lanturn
+|-sideend|p1: beardy superman|Stealth Rock|[from] move: Defog|[of] p1a: Latias
+|cant|p2a: Lanturn|slp
+|move|p2a: Lanturn|Sleep Talk|p2a: Lanturn
+|move|p2a: Lanturn|Volt Switch|p1a: Latias|[from]Sleep Talk
+|-crit|p1a: Latias
+|-resisted|p1a: Latias
+|-damage|p1a: Latias|227\/302
+|
+|switch|p2a: Gliscor|Gliscor, M|353\/353 tox
+|
+|turn|7
+|
+|move|p1a: Latias|Draco Meteor|p2a: Gliscor
+|-damage|p2a: Gliscor|103\/353 tox
+|-unboost|p1a: Latias|spa|2
+|-damage|p1a: Latias|197\/302|[from] item: Life Orb
+|move|p2a: Gliscor|Stealth Rock|p1a: Latias
+|-sidestart|p1: beardy superman|move: Stealth Rock
+|
+|-heal|p2a: Gliscor|147\/353 tox|[from] ability: Poison Heal
+|turn|8
+|
+|switch|p1a: Keldeo|Keldeo|323\/323
+|-damage|p1a: Keldeo|303\/323|[from] Stealth Rock
+|move|p2a: Gliscor|Stealth Rock|p1a: Keldeo
+|-fail|p1a: Keldeo
+|
+|-heal|p1a: Keldeo|323\/323|[from] item: Leftovers
+|-heal|p2a: Gliscor|191\/353 tox|[from] ability: Poison Heal
+|turn|9
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Keldeo|Substitute|p1a: Keldeo
+|-start|p1a: Keldeo|Substitute
+|-damage|p1a: Keldeo|243\/323
+|
+|-heal|p1a: Keldeo|263\/323|[from] item: Leftovers
+|-heal|p2a: Gliscor|235\/353 tox|[from] ability: Poison Heal
+|turn|10
+|
+|switch|p2a: Tentacruel|Tentacruel, M|364\/364
+|move|p1a: Keldeo|Calm Mind|p1a: Keldeo
+|-boost|p1a: Keldeo|spa|1
+|-boost|p1a: Keldeo|spd|1
+|
+|-heal|p1a: Keldeo|283\/323|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Keldeo|Calm Mind|p1a: Keldeo
+|-boost|p1a: Keldeo|spa|1
+|-boost|p1a: Keldeo|spd|1
+|move|p2a: Tentacruel|Toxic Spikes|p1a: Keldeo
+|-sidestart|p1: beardy superman|move: Toxic Spikes
+|
+|-heal|p1a: Keldeo|303\/323|[from] item: Leftovers
+|turn|12
+|
+|move|p1a: Keldeo|Calm Mind|p1a: Keldeo
+|-boost|p1a: Keldeo|spa|1
+|-boost|p1a: Keldeo|spd|1
+|move|p2a: Tentacruel|Haze|p2a: Tentacruel
+|-clearallboost
+|
+|-heal|p1a: Keldeo|323\/323|[from] item: Leftovers
+|turn|13
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|move|p1a: Keldeo|Secret Sword|p2a: Amoonguss
+|-resisted|p2a: Amoonguss
+|-damage|p2a: Amoonguss|357\/432
+|
+|-heal|p2a: Amoonguss|384\/432|[from] item: Black Sludge
+|turn|14
+|
+|move|p1a: Keldeo|Scald|p2a: Amoonguss
+|-resisted|p2a: Amoonguss
+|-damage|p2a: Amoonguss|305\/432
+|-status|p2a: Amoonguss|brn
+|move|p2a: Amoonguss|Giga Drain|p1a: Keldeo
+|-supereffective|p1a: Keldeo
+|-end|p1a: Keldeo|Substitute
+|-heal|p2a: Amoonguss|345\/432 brn|[from] drain|[of] p1a: Keldeo
+|
+|-heal|p2a: Amoonguss|372\/432 brn|[from] item: Black Sludge
+|-damage|p2a: Amoonguss|318\/432 brn|[from] brn
+|turn|15
+|
+|move|p1a: Keldeo|Substitute|p1a: Keldeo
+|-start|p1a: Keldeo|Substitute
+|-damage|p1a: Keldeo|243\/323
+|move|p2a: Amoonguss|Spore|p1a: Keldeo
+|
+|-heal|p1a: Keldeo|263\/323|[from] item: Leftovers
+|-heal|p2a: Amoonguss|345\/432 brn|[from] item: Black Sludge
+|-damage|p2a: Amoonguss|291\/432 brn|[from] brn
+|turn|16
+|
+|move|p1a: Keldeo|Scald|p2a: Amoonguss
+|-resisted|p2a: Amoonguss
+|-damage|p2a: Amoonguss|217\/432 brn
+|move|p2a: Amoonguss|Giga Drain|p1a: Keldeo
+|-supereffective|p1a: Keldeo
+|-end|p1a: Keldeo|Substitute
+|-heal|p2a: Amoonguss|257\/432 brn|[from] drain|[of] p1a: Keldeo
+|
+|-heal|p1a: Keldeo|283\/323|[from] item: Leftovers
+|-heal|p2a: Amoonguss|284\/432 brn|[from] item: Black Sludge
+|-damage|p2a: Amoonguss|230\/432 brn|[from] brn
+|turn|17
+|
+|switch|p1a: Latias|Latias, F|197\/302
+|-damage|p1a: Latias|160\/302|[from] Stealth Rock
+|move|p2a: Amoonguss|Giga Drain|p1a: Latias
+|-resisted|p1a: Latias
+|-damage|p1a: Latias|127\/302
+|-heal|p2a: Amoonguss|247\/432 brn|[from] drain|[of] p1a: Latias
+|
+|-heal|p2a: Amoonguss|274\/432 brn|[from] item: Black Sludge
+|-damage|p2a: Amoonguss|220\/432 brn|[from] brn
+|turn|18
+|
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M|361\/361
+|move|p1a: Latias|Defog|p2a: Tornadus-Therian
+|-unboost|p2a: Tornadus-Therian|evasion|1
+|-sideend|p1: beardy superman|Toxic Spikes|[from] move: Defog|[of] p1a: Latias
+|-sideend|p1: beardy superman|Stealth Rock|[from] move: Defog|[of] p1a: Latias
+|
+|turn|19
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|298\/304
+|move|p2a: Tornadus-Therian|U-turn|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|259\/304
+|
+|switch|p2a: Amoonguss|Amoonguss, M|364\/432 brn
+|
+|-heal|p1a: Rotom-Wash|278\/304|[from] item: Leftovers
+|-heal|p2a: Amoonguss|391\/432 brn|[from] item: Black Sludge
+|-damage|p2a: Amoonguss|337\/432 brn|[from] brn
+|turn|20
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Amoonguss
+|-resisted|p2a: Amoonguss
+|-damage|p2a: Amoonguss|291\/432 brn
+|
+|switch|p1a: Latias|Latias, F|127\/302
+|move|p2a: Amoonguss|Spore|p1a: Latias
+|-status|p1a: Latias|slp
+|
+|-heal|p2a: Amoonguss|318\/432 brn|[from] item: Black Sludge
+|-damage|p2a: Amoonguss|264\/432 brn|[from] brn
+|turn|21
+|
+|switch|p1a: Metagross|Metagross|301\/301
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M|361\/361
+|
+|turn|22
+|
+|switch|p2a: Slowbro|Slowbro, M|394\/394
+|detailschange|p1a: Metagross|Metagross-Mega
+|message|Metagross has Mega Evolved into Mega Metagross!
+|move|p1a: Metagross|Meteor Mash|p2a: Slowbro
+|-resisted|p2a: Slowbro
+|-damage|p2a: Slowbro|317\/394
+|
+|turn|23
+|
+|switch|p1a: Keldeo|Keldeo|283\/323
+|move|p2a: Slowbro|Scald|p1a: Keldeo
+|-resisted|p1a: Keldeo
+|-damage|p1a: Keldeo|233\/323
+|
+|-heal|p1a: Keldeo|253\/323|[from] item: Leftovers
+|turn|24
+|
+|switch|p2a: Amoonguss|Amoonguss, M|408\/432 brn
+|move|p1a: Keldeo|Substitute|p1a: Keldeo
+|-start|p1a: Keldeo|Substitute
+|-damage|p1a: Keldeo|173\/323
+|
+|-heal|p1a: Keldeo|193\/323|[from] item: Leftovers
+|-heal|p2a: Amoonguss|432\/432 brn|[from] item: Black Sludge
+|-damage|p2a: Amoonguss|378\/432 brn|[from] brn
+|turn|25
+|
+|move|p1a: Keldeo|Scald|p2a: Amoonguss
+|-resisted|p2a: Amoonguss
+|-damage|p2a: Amoonguss|306\/432 brn
+|move|p2a: Amoonguss|Giga Drain|p1a: Keldeo
+|-supereffective|p1a: Keldeo
+|-end|p1a: Keldeo|Substitute
+|-heal|p2a: Amoonguss|346\/432 brn|[from] drain|[of] p1a: Keldeo
+|
+|-heal|p1a: Keldeo|213\/323|[from] item: Leftovers
+|-heal|p2a: Amoonguss|373\/432 brn|[from] item: Black Sludge
+|-damage|p2a: Amoonguss|319\/432 brn|[from] brn
+|turn|26
+|
+|switch|p1a: Metagross|Metagross-Mega|301\/301
+|move|p2a: Amoonguss|Sludge Bomb|p1a: Metagross
+|-immune|p1a: Metagross|[msg]
+|
+|-heal|p2a: Amoonguss|346\/432 brn|[from] item: Black Sludge
+|-damage|p2a: Amoonguss|292\/432 brn|[from] brn
+|turn|27
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|278\/304
+|switch|p2a: Slowbro|Slowbro, M|394\/394
+|
+|-heal|p1a: Rotom-Wash|297\/304|[from] item: Leftovers
+|turn|28
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|381\/381
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Slowbro
+|-unboost|p2a: Slowbro|atk|1
+|switch|p2a: Lanturn|Lanturn, M|417\/417 slp
+|
+|turn|29
+|
+|switch|p2a: Gliscor|Gliscor, M|235\/353 tox
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Gliscor
+|-sidestart|p2: Test06111825|move: Stealth Rock
+|
+|-heal|p2a: Gliscor|279\/353 tox|[from] ability: Poison Heal
+|turn|30
+|
+|switch|p1a: Metagross|Metagross-Mega|301\/301
+|move|p2a: Gliscor|Stealth Rock|p1a: Metagross
+|-sidestart|p1: beardy superman|move: Stealth Rock
+|
+|-heal|p2a: Gliscor|323\/353 tox|[from] ability: Poison Heal
+|turn|31
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Metagross|Ice Punch|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-heal|p2a: Gliscor|353\/353 tox|[from] ability: Poison Heal
+|turn|32
+|-message|beardy superman forfeited.
+|
+|win|Test06111825
+|raw|Ladder updating...
+|leave|beardy superman
+|player|p1
+|raw|beardy superman's rating: 1517 &rarr; <strong>1494<\/strong><br \/>(-23 for losing)
+|raw|Test06111825's rating: 1468 &rarr; <strong>1491<\/strong><br \/>(+23 for winning)

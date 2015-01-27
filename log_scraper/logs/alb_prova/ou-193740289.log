@@ -1,0 +1,452 @@
+|join|sid_100
+|join|alb_prova
+|player|p1|sid_100|1
+|player|p2|alb_prova|210
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Chansey, F
+|poke|p1|Skarmory, M
+|poke|p1|Quagsire, M
+|poke|p1|Charizard, F
+|poke|p1|Gothitelle, M
+|poke|p1|Amoonguss, F
+|poke|p2|Camerupt, M
+|poke|p2|Clefable, M
+|poke|p2|Tyranitar, M
+|poke|p2|Breloom, M
+|poke|p2|Mandibuzz, F
+|poke|p2|Keldeo
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|c|âalb_prova|gl hf
+|
+|start
+|switch|p1a: Charizard|Charizard, F|359\/359
+|switch|p2a: Camerupt|Camerupt, M|331\/331
+|turn|1
+|
+|switch|p1a: Chansey|Chansey, F|642\/642
+|detailschange|p2a: Camerupt|Camerupt-Mega, M
+|message|Camerupt has Mega Evolved into Mega Camerupt!
+|move|p2a: Camerupt|Ancient Power|p1a: Chansey
+|-damage|p1a: Chansey|589\/642
+|
+|turn|2
+|
+|switch|p2a: Breloom|Breloom, M|323\/323
+|move|p1a: Chansey|Toxic|p2a: Breloom
+|-status|p2a: Breloom|tox
+|
+|turn|3
+|
+|switch|p1a: Amoonguss|Amoonguss, F|429\/429
+|move|p2a: Breloom|Spore|p1a: Amoonguss
+|-fail|p1a: Amoonguss
+|
+|turn|4
+|
+|switch|p2a: Camerupt|Camerupt-Mega, M|331\/331
+|move|p1a: Amoonguss|Spore|p2a: Camerupt
+|-status|p2a: Camerupt|slp
+|
+|turn|5
+|
+|switch|p2a: Tyranitar|Tyranitar, M|404\/404
+|-weather|Sandstorm
+|switch|p1a: Gothitelle|Gothitelle, M|301\/301
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gothitelle|283\/301|[from] sandstorm
+|turn|6
+|
+|move|p2a: Tyranitar|Pursuit|p1a: Gothitelle|[from]Pursuit
+|-supereffective|p1a: Gothitelle
+|-damage|p1a: Gothitelle|0 fnt
+|faint|p1a: Gothitelle
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Quagsire|Quagsire, M|394\/394
+|turn|7
+|
+|switch|p2a: Breloom|Breloom, M|323\/323 tox
+|switch|p1a: Charizard|Charizard, F|359\/359
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Charizard|337\/359|[from] sandstorm
+|-damage|p2a: Breloom|303\/323 tox|[from] sandstorm
+|-heal|p2a: Breloom|323\/323 tox|[from] ability: Poison Heal
+|turn|8
+|
+|switch|p2a: Camerupt|Camerupt-Mega, M|331\/331 slp
+|detailschange|p1a: Charizard|Charizard-Mega-Y, F
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p1a: Charizard|Flamethrower|p2a: Camerupt
+|-resisted|p2a: Camerupt
+|-damage|p2a: Camerupt|216\/331 slp
+|
+|-weather|SunnyDay|[upkeep]
+|turn|9
+|
+|switch|p2a: Tyranitar|Tyranitar, M|404\/404
+|-weather|Sandstorm
+|move|p1a: Charizard|Focus Blast|p2a: Tyranitar
+|-crit|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|8\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Charizard|315\/359|[from] sandstorm
+|turn|10
+|
+|move|p1a: Charizard|Flamethrower|p2a: Tyranitar
+|-resisted|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Charizard|293\/359|[from] sandstorm
+|
+|switch|p2a: Keldeo|Keldeo|323\/323
+|turn|11
+|
+|switch|p1a: Amoonguss|Amoonguss, F|429\/429
+|move|p2a: Keldeo|Secret Sword|p1a: Amoonguss
+|-resisted|p1a: Amoonguss
+|-damage|p1a: Amoonguss|330\/429
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Keldeo|303\/323|[from] sandstorm
+|-damage|p1a: Amoonguss|304\/429|[from] sandstorm
+|-heal|p1a: Amoonguss|330\/429|[from] item: Black Sludge
+|turn|12
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|424\/424
+|move|p1a: Amoonguss|Clear Smog|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|378\/424
+|-clearboost|p2a: Mandibuzz
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Amoonguss|304\/429|[from] sandstorm
+|-heal|p2a: Mandibuzz|404\/424|[from] item: Leftovers
+|-heal|p1a: Amoonguss|330\/429|[from] item: Black Sludge
+|turn|13
+|
+|switch|p1a: Charizard|Charizard-Mega-Y, F|293\/359
+|-weather|SunnyDay
+|move|p2a: Mandibuzz|Foul Play|p1a: Charizard
+|-damage|p1a: Charizard|163\/359
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Mandibuzz|424\/424|[from] item: Leftovers
+|turn|14
+|
+|move|p1a: Charizard|Roost|p1a: Charizard
+|-heal|p1a: Charizard|343\/359
+|move|p2a: Mandibuzz|Brave Bird|p1a: Charizard
+|-damage|p1a: Charizard|219\/359
+|-damage|p2a: Mandibuzz|383\/424|[from] recoil|[of] p1a: Charizard
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Mandibuzz|409\/424|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Charizard|Flamethrower|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|163\/424
+|move|p2a: Mandibuzz|Brave Bird|p1a: Charizard
+|-damage|p1a: Charizard|93\/359
+|-damage|p2a: Mandibuzz|121\/424|[from] recoil|[of] p1a: Charizard
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Mandibuzz|147\/424|[from] item: Leftovers
+|turn|16
+|
+|move|p1a: Charizard|Roost|p1a: Charizard
+|-heal|p1a: Charizard|273\/359
+|move|p2a: Mandibuzz|Roost|p2a: Mandibuzz
+|-heal|p2a: Mandibuzz|359\/424
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Mandibuzz|385\/424|[from] item: Leftovers
+|turn|17
+|
+|switch|p2a: Keldeo|Keldeo|303\/323
+|move|p1a: Charizard|Flamethrower|p2a: Keldeo
+|-resisted|p2a: Keldeo
+|-damage|p2a: Keldeo|168\/323
+|
+|-weather|none
+|turn|18
+|
+|switch|p2a: Camerupt|Camerupt-Mega, M|216\/331 slp
+|switch|p1a: Amoonguss|Amoonguss, F|429\/429
+|
+|turn|19
+|
+|switch|p1a: Chansey|Chansey, F|589\/642
+|cant|p2a: Camerupt|slp
+|
+|turn|20
+|
+|move|p1a: Chansey|Seismic Toss|p2a: Camerupt
+|-damage|p2a: Camerupt|116\/331 slp
+|-curestatus|p2a: Camerupt|slp
+|move|p2a: Camerupt|Stealth Rock|p1a: Chansey
+|-sidestart|p1: sid_100|move: Stealth Rock
+|
+|turn|21
+|
+|switch|p2a: Breloom|Breloom, M|323\/323 tox
+|move|p1a: Chansey|Seismic Toss|p2a: Breloom
+|-damage|p2a: Breloom|223\/323 tox
+|
+|-heal|p2a: Breloom|263\/323 tox|[from] ability: Poison Heal
+|turn|22
+|
+|switch|p1a: Amoonguss|Amoonguss, F|429\/429
+|-damage|p1a: Amoonguss|376\/429|[from] Stealth Rock
+|move|p2a: Breloom|Drain Punch|p1a: Amoonguss
+|-resisted|p1a: Amoonguss
+|-damage|p1a: Amoonguss|302\/429
+|-heal|p2a: Breloom|300\/323 tox|[from] drain|[of] p1a: Amoonguss
+|
+|-heal|p1a: Amoonguss|328\/429|[from] item: Black Sludge
+|-heal|p2a: Breloom|323\/323 tox|[from] ability: Poison Heal
+|turn|23
+|
+|move|p2a: Breloom|Force Palm|p1a: Amoonguss
+|-resisted|p1a: Amoonguss
+|-damage|p1a: Amoonguss|274\/429
+|move|p1a: Amoonguss|Clear Smog|p2a: Breloom
+|-supereffective|p2a: Breloom
+|-damage|p2a: Breloom|191\/323 tox
+|-clearboost|p2a: Breloom
+|
+|-heal|p1a: Amoonguss|300\/429|[from] item: Black Sludge
+|-heal|p2a: Breloom|231\/323 tox|[from] ability: Poison Heal
+|turn|24
+|
+|move|p2a: Breloom|Force Palm|p1a: Amoonguss
+|-resisted|p1a: Amoonguss
+|-damage|p1a: Amoonguss|242\/429
+|-status|p1a: Amoonguss|par
+|move|p1a: Amoonguss|Clear Smog|p2a: Breloom
+|-supereffective|p2a: Breloom
+|-damage|p2a: Breloom|105\/323 tox
+|-clearboost|p2a: Breloom
+|
+|-heal|p1a: Amoonguss|268\/429 par|[from] item: Black Sludge
+|-heal|p2a: Breloom|145\/323 tox|[from] ability: Poison Heal
+|turn|25
+|
+|switch|p2a: Camerupt|Camerupt-Mega, M|116\/331
+|cant|p1a: Amoonguss|par
+|
+|-heal|p1a: Amoonguss|294\/429 par|[from] item: Black Sludge
+|turn|26
+|
+|switch|p1a: Chansey|Chansey, F|589\/642
+|-damage|p1a: Chansey|509\/642|[from] Stealth Rock
+|move|p2a: Camerupt|Earth Power|p1a: Chansey
+|-crit|p1a: Chansey
+|-damage|p1a: Chansey|316\/642
+|
+|turn|27
+|
+|switch|p2a: Breloom|Breloom, M|145\/323 tox
+|move|p1a: Chansey|Soft-Boiled|p1a: Chansey
+|-heal|p1a: Chansey|637\/642
+|
+|-heal|p2a: Breloom|185\/323 tox|[from] ability: Poison Heal
+|turn|28
+|
+|switch|p1a: Amoonguss|Amoonguss, F|429\/429 par
+|-damage|p1a: Amoonguss|376\/429 par|[from] Stealth Rock
+|move|p2a: Breloom|Drain Punch|p1a: Amoonguss
+|-resisted|p1a: Amoonguss
+|-damage|p1a: Amoonguss|301\/429 par
+|-heal|p2a: Breloom|223\/323 tox|[from] drain|[of] p1a: Amoonguss
+|
+|-heal|p1a: Amoonguss|327\/429 par|[from] item: Black Sludge
+|-heal|p2a: Breloom|263\/323 tox|[from] ability: Poison Heal
+|turn|29
+|
+|move|p2a: Breloom|Drain Punch|p1a: Amoonguss
+|-crit|p1a: Amoonguss
+|-resisted|p1a: Amoonguss
+|-damage|p1a: Amoonguss|225\/429 par
+|-heal|p2a: Breloom|314\/323 tox|[from] drain|[of] p1a: Amoonguss
+|move|p1a: Amoonguss|Spore|p2a: Breloom
+|-fail|p2a: Breloom
+|
+|-heal|p1a: Amoonguss|251\/429 par|[from] item: Black Sludge
+|-heal|p2a: Breloom|323\/323 tox|[from] ability: Poison Heal
+|turn|30
+|
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|-damage|p1a: Skarmory|293\/334|[from] Stealth Rock
+|move|p2a: Breloom|Drain Punch|p1a: Skarmory
+|-damage|p1a: Skarmory|227\/334
+|-damage|p2a: Breloom|270\/323 tox|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|
+|-heal|p2a: Breloom|310\/323 tox|[from] ability: Poison Heal
+|turn|31
+|
+|switch|p1a: Amoonguss|Amoonguss, F|394\/429 par
+|-damage|p1a: Amoonguss|341\/429 par|[from] Stealth Rock
+|move|p2a: Breloom|Spore|p1a: Amoonguss
+|-fail|p1a: Amoonguss
+|
+|-heal|p1a: Amoonguss|367\/429 par|[from] item: Black Sludge
+|-heal|p2a: Breloom|323\/323 tox|[from] ability: Poison Heal
+|turn|32
+|
+|move|p2a: Breloom|Seed Bomb|p1a: Amoonguss
+|-resisted|p1a: Amoonguss
+|-damage|p1a: Amoonguss|332\/429 par
+|cant|p1a: Amoonguss|par
+|
+|-heal|p1a: Amoonguss|358\/429 par|[from] item: Black Sludge
+|turn|33
+|
+|switch|p2a: Camerupt|Camerupt-Mega, M|116\/331
+|move|p1a: Amoonguss|Foul Play|p2a: Camerupt
+|-damage|p2a: Camerupt|42\/331
+|
+|-heal|p1a: Amoonguss|384\/429 par|[from] item: Black Sludge
+|turn|34
+|
+|switch|p1a: Chansey|Chansey, F|637\/642
+|-damage|p1a: Chansey|557\/642|[from] Stealth Rock
+|move|p2a: Camerupt|Fire Blast|p1a: Chansey|[miss]
+|-miss|p2a: Camerupt|p1a: Chansey
+|
+|turn|35
+|
+|switch|p2a: Breloom|Breloom, M|323\/323 tox
+|move|p1a: Chansey|Seismic Toss|p2a: Breloom
+|-damage|p2a: Breloom|223\/323 tox
+|
+|-heal|p2a: Breloom|263\/323 tox|[from] ability: Poison Heal
+|turn|36
+|
+|switch|p1a: Amoonguss|Amoonguss, F|429\/429 par
+|-damage|p1a: Amoonguss|376\/429 par|[from] Stealth Rock
+|move|p2a: Breloom|Force Palm|p1a: Amoonguss
+|-resisted|p1a: Amoonguss
+|-damage|p1a: Amoonguss|316\/429 par
+|
+|-heal|p1a: Amoonguss|342\/429 par|[from] item: Black Sludge
+|-heal|p2a: Breloom|303\/323 tox|[from] ability: Poison Heal
+|turn|37
+|
+|move|p2a: Breloom|Drain Punch|p1a: Amoonguss
+|-resisted|p1a: Amoonguss
+|-damage|p1a: Amoonguss|276\/429 par
+|-heal|p2a: Breloom|323\/323 tox|[from] drain|[of] p1a: Amoonguss
+|cant|p1a: Amoonguss|par
+|
+|-heal|p1a: Amoonguss|302\/429 par|[from] item: Black Sludge
+|turn|38
+|
+|move|p2a: Breloom|Force Palm|p1a: Amoonguss
+|-resisted|p1a: Amoonguss
+|-damage|p1a: Amoonguss|244\/429 par
+|move|p1a: Amoonguss|Foul Play|p2a: Breloom
+|-resisted|p2a: Breloom
+|-damage|p2a: Breloom|267\/323 tox
+|
+|-heal|p1a: Amoonguss|270\/429 par|[from] item: Black Sludge
+|-heal|p2a: Breloom|307\/323 tox|[from] ability: Poison Heal
+|turn|39
+|
+|move|p2a: Breloom|Force Palm|p1a: Amoonguss
+|-crit|p1a: Amoonguss
+|-resisted|p1a: Amoonguss
+|-damage|p1a: Amoonguss|179\/429 par
+|move|p1a: Amoonguss|Clear Smog|p2a: Breloom
+|-supereffective|p2a: Breloom
+|-damage|p2a: Breloom|193\/323 tox
+|-clearboost|p2a: Breloom
+|
+|-heal|p1a: Amoonguss|205\/429 par|[from] item: Black Sludge
+|-heal|p2a: Breloom|233\/323 tox|[from] ability: Poison Heal
+|turn|40
+|
+|switch|p1a: Skarmory|Skarmory, M|227\/334
+|-damage|p1a: Skarmory|186\/334|[from] Stealth Rock
+|move|p2a: Breloom|Force Palm|p1a: Skarmory
+|-damage|p1a: Skarmory|138\/334
+|-damage|p2a: Breloom|180\/323 tox|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|-status|p1a: Skarmory|par
+|
+|-heal|p2a: Breloom|220\/323 tox|[from] ability: Poison Heal
+|turn|41
+|
+|move|p2a: Breloom|Drain Punch|p1a: Skarmory
+|-damage|p1a: Skarmory|77\/334 par
+|-heal|p2a: Breloom|251\/323 tox|[from] drain|[of] p1a: Skarmory
+|-damage|p2a: Breloom|198\/323 tox|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|244\/334 par
+|
+|-heal|p2a: Breloom|238\/323 tox|[from] ability: Poison Heal
+|turn|42
+|
+|move|p2a: Breloom|Drain Punch|p1a: Skarmory
+|-damage|p1a: Skarmory|183\/334 par
+|-heal|p2a: Breloom|269\/323 tox|[from] drain|[of] p1a: Skarmory
+|-damage|p2a: Breloom|216\/323 tox|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|move|p1a: Skarmory|Defog|p2a: Breloom
+|-unboost|p2a: Breloom|evasion|1
+|-sideend|p1: sid_100|Stealth Rock|[from] move: Defog|[of] p1a: Skarmory
+|
+|-heal|p2a: Breloom|256\/323 tox|[from] ability: Poison Heal
+|turn|43
+|
+|move|p2a: Breloom|Spore|p1a: Skarmory
+|-fail|p1a: Skarmory
+|cant|p1a: Skarmory|par
+|
+|-heal|p2a: Breloom|296\/323 tox|[from] ability: Poison Heal
+|turn|44
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|385\/424
+|cant|p1a: Skarmory|par
+|
+|-heal|p2a: Mandibuzz|411\/424|[from] item: Leftovers
+|turn|45
+|
+|move|p2a: Mandibuzz|Foul Play|p1a: Skarmory
+|-damage|p1a: Skarmory|135\/334 par
+|-damage|p2a: Mandibuzz|341\/424|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|302\/334 par
+|
+|-heal|p2a: Mandibuzz|367\/424|[from] item: Leftovers
+|turn|46
+|c|âalb_prova|what a waste of time for 20 points
+|c|âalb_prova|gg
+|-message|alb_prova forfeited.
+|
+|win|sid_100
+|raw|Ladder updating...
+|raw|sid_100's rating: 1520 &rarr; <strong>1540<\/strong><br \/>(+20 for winning)
+|raw|alb_prova's rating: 1513 &rarr; <strong>1493<\/strong><br \/>(-20 for losing)
+|c|âsid_100|gg
+|c|âsid_100|Lol
+|c|âsid_100|How?
+|c|âsid_100|How it is waste of time?
+|c|âsid_100|Lol

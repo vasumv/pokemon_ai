@@ -1,0 +1,58 @@
+|join|hammering man
+|join|MarioOnage64
+|player|p1|hammering man|279
+|player|p2|MarioOnage64|262
+|gametype|singles
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Lanturn, M
+|poke|p1|Chesnaught, F
+|poke|p1|Mawile, F
+|poke|p1|Staraptor, M
+|poke|p1|Clawitzer, F
+|poke|p1|Malamar, M
+|poke|p2|Skarmory, F, shiny
+|poke|p2|Breloom, F, shiny
+|poke|p2|Heliolisk, F, shiny
+|poke|p2|Vaporeon, F, shiny
+|poke|p2|Trevenant, F, shiny
+|poke|p2|Charizard, M, shiny
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Staraptor|Staraptor, M|312\/312
+|switch|p2a: Vaporeon|Vaporeon, F, shiny|464\/464
+|-ability|p1a: Staraptor|Intimidate|[of] p2a: Vaporeon
+|-unboost|p2a: Vaporeon|atk|1
+|turn|1
+|callback|decision
+|
+|move|p1a: Staraptor|U-turn|p2a: Vaporeon
+|-damage|p2a: Vaporeon|373\/464
+|callback|decision
+|
+|switch|p1a: Lanturn|Lanturn, M|454\/454
+|move|p2a: Vaporeon|Scald|p1a: Lanturn
+|-resisted|p1a: Lanturn
+|-damage|p1a: Lanturn|412\/454
+|
+|-heal|p2a: Vaporeon|402\/464|[from] item: Leftovers
+|turn|2
+|callback|decision
+|-message|MarioOnage64 forfeited.
+|
+|win|hammering man
+|raw|Ladder updating...
+|leave|MarioOnage64
+|player|p2
+|raw|hammering man's rating: 1254 &rarr; <strong>1391<\/strong><br \/>(+137 for winning)
+|raw|MarioOnage64's rating: 1007 &rarr; <strong>979<\/strong><br \/>(-28 for losing)

@@ -1,0 +1,351 @@
+|join|Zabrael
+|join|JesusORAS
+|player|p1|Zabrael|146
+|player|p2|JesusORAS|101
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Thundurus, M
+|poke|p1|Kyurem-Black
+|poke|p1|Wobbuffet, M
+|poke|p1|Landorus-Therian, M
+|poke|p1|Manectric, M
+|poke|p1|Rotom-Wash
+|poke|p2|Conkeldurr, M, shiny
+|poke|p2|Rotom-Heat, shiny
+|poke|p2|Venusaur, F
+|poke|p2|Suicune, shiny
+|poke|p2|Kyurem-Black, shiny
+|poke|p2|Chansey, F, shiny
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Manectric|Manectric, M|282\/282
+|switch|p2a: Venusaur|Venusaur, F|331\/331
+|turn|1
+|
+|detailschange|p1a: Manectric|Manectric-Mega, M
+|-mega|p1a: Manectric|Manectric|Manectite
+|-ability|p1a: Manectric|Intimidate|[of] p2a: Venusaur
+|-unboost|p2a: Venusaur|atk|1
+|detailschange|p2a: Venusaur|Venusaur-Mega, F
+|-mega|p2a: Venusaur|Venusaur|Venusaurite
+|move|p1a: Manectric|Volt Switch|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|276\/331
+|
+|switch|p1a: Thundurus|Thundurus, M|300\/300
+|move|p2a: Venusaur|Sleep Powder|p1a: Thundurus|[miss]
+|-miss|p2a: Venusaur|p1a: Thundurus
+|
+|turn|2
+|
+|move|p1a: Thundurus|Taunt|p2a: Venusaur
+|-start|p2a: Venusaur|move: Taunt
+|cant|p2a: Venusaur|move: Taunt|Sleep Powder
+|
+|turn|3
+|
+|move|p1a: Thundurus|Thunder Wave|p2a: Venusaur
+|-status|p2a: Venusaur|par
+|move|p2a: Venusaur|Sludge Bomb|p1a: Thundurus
+|-damage|p1a: Thundurus|140\/300
+|
+|-heal|p1a: Thundurus|158\/300|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Chansey|Chansey, F, shiny|704\/704
+|move|p1a: Thundurus|Volt Switch|p2a: Chansey
+|-damage|p2a: Chansey|626\/704
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|329\/329
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Chansey
+|-unboost|p2a: Chansey|atk|1
+|
+|turn|5
+|
+|switch|p2a: Suicune|Suicune, shiny|404\/404
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Landorus-Therian|Knock Off|p2a: Suicune
+|-damage|p2a: Suicune|323\/404
+|-enditem|p2a: Suicune|Leftovers|[from] move: Knock Off|[of] p1a: Landorus-Therian
+|
+|turn|6
+|
+|switch|p1a: Wobbuffet|Wobbuffet, M|584\/584
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|turn|7
+|
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: Wobbuffet|Encore|p2a: Suicune
+|-start|p2a: Suicune|Encore
+|
+|turn|8
+|
+|switch|p1a: Kyurem-Black|Kyurem-Black|392\/392
+|-ability|p1a: Kyurem-Black|Teravolt
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|turn|9
+|
+|move|p1a: Kyurem-Black|Outrage|p2a: Suicune
+|-damage|p2a: Suicune|32\/404
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|turn|10
+|
+|switch|p2a: Conkeldurr|Conkeldurr, M, shiny|351\/351
+|move|p1a: Kyurem-Black|Outrage|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|23\/351
+|
+|turn|11
+|
+|move|p2a: Conkeldurr|Mach Punch|p1a: Kyurem-Black
+|-supereffective|p1a: Kyurem-Black
+|-damage|p1a: Kyurem-Black|174\/392
+|move|p1a: Kyurem-Black|Outrage|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|0 fnt
+|faint|p2a: Conkeldurr
+|
+|-end|p1a: Kyurem-Black|rampage
+|-start|p1a: Kyurem-Black|confusion
+|
+|switch|p2a: Suicune|Suicune, shiny|32\/404
+|-ability|p2a: Suicune|Pressure
+|turn|12
+|
+|switch|p1a: Wobbuffet|Wobbuffet, M|584\/584
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|
+|turn|13
+|
+|cant|p2a: Suicune|slp
+|move|p1a: Wobbuffet|Encore|p2a: Suicune
+|-start|p2a: Suicune|Encore
+|
+|turn|14
+|
+|switch|p1a: Kyurem-Black|Kyurem-Black|174\/392
+|-ability|p1a: Kyurem-Black|Teravolt
+|cant|p2a: Suicune|slp
+|
+|turn|15
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat, shiny|273\/273
+|move|p1a: Kyurem-Black|Outrage|p2a: Rotom-Heat
+|-crit|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|0 fnt
+|faint|p2a: Rotom-Heat
+|
+|
+|switch|p2a: Kyurem-Black|Kyurem-Black, shiny|391\/391
+|-ability|p2a: Kyurem-Black|Teravolt
+|turn|16
+|
+|move|p2a: Kyurem-Black|Outrage|p1a: Kyurem-Black
+|-supereffective|p1a: Kyurem-Black
+|-damage|p1a: Kyurem-Black|0 fnt
+|-damage|p2a: Kyurem-Black|352\/391|[from] item: Life Orb
+|faint|p1a: Kyurem-Black
+|
+|
+|switch|p1a: Wobbuffet|Wobbuffet, M|584\/584
+|turn|17
+|
+|move|p2a: Kyurem-Black|Outrage|p1a: Wobbuffet
+|-damage|p1a: Wobbuffet|194\/584
+|-damage|p2a: Kyurem-Black|313\/391|[from] item: Life Orb
+|move|p1a: Wobbuffet|Counter|p2a: Kyurem-Black
+|-damage|p2a: Kyurem-Black|0 fnt
+|faint|p2a: Kyurem-Black
+|
+|-heal|p1a: Wobbuffet|230\/584|[from] item: Leftovers
+|
+|switch|p2a: Chansey|Chansey, F, shiny|626\/704
+|turn|18
+|
+|move|p2a: Chansey|Aromatherapy|p2a: Chansey
+|-cureteam|p2a: Chansey|[from] move: Aromatherapy
+|move|p1a: Wobbuffet|Encore|p2a: Chansey
+|-start|p2a: Chansey|Encore
+|
+|-heal|p1a: Wobbuffet|266\/584|[from] item: Leftovers
+|turn|19
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|move|p2a: Chansey|Aromatherapy|p2a: Chansey
+|-cureteam|p2a: Chansey|[from] move: Aromatherapy
+|
+|turn|20
+|
+|switch|p2a: Venusaur|Venusaur-Mega, F|276\/331
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Venusaur
+|-status|p2a: Venusaur|brn
+|
+|-damage|p2a: Venusaur|235\/331 brn|[from] brn
+|turn|21
+|
+|switch|p1a: Wobbuffet|Wobbuffet, M|266\/584
+|move|p2a: Venusaur|Sleep Powder|p1a: Wobbuffet|[miss]
+|-miss|p2a: Venusaur|p1a: Wobbuffet
+|
+|-heal|p1a: Wobbuffet|302\/584|[from] item: Leftovers
+|-damage|p2a: Venusaur|194\/331 brn|[from] brn
+|turn|22
+|
+|move|p2a: Venusaur|Sleep Powder|p1a: Wobbuffet
+|-status|p1a: Wobbuffet|slp
+|cant|p1a: Wobbuffet|slp
+|
+|-heal|p1a: Wobbuffet|338\/584 slp|[from] item: Leftovers
+|-damage|p2a: Venusaur|153\/331 brn|[from] brn
+|turn|23
+|
+|switch|p1a: Thundurus|Thundurus, M|158\/300
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|318\/331 brn
+|
+|-heal|p1a: Thundurus|176\/300|[from] item: Leftovers
+|-damage|p2a: Venusaur|277\/331 brn|[from] brn
+|turn|24
+|
+|move|p1a: Thundurus|Taunt|p2a: Venusaur
+|-start|p2a: Venusaur|move: Taunt
+|move|p2a: Venusaur|Sludge Bomb|p1a: Thundurus
+|-damage|p1a: Thundurus|22\/300
+|
+|-heal|p1a: Thundurus|40\/300|[from] item: Leftovers
+|-damage|p2a: Venusaur|236\/331 brn|[from] brn
+|turn|25
+|
+|move|p1a: Thundurus|Volt Switch|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|190\/331 brn
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|329\/329
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Venusaur
+|-unboost|p2a: Venusaur|atk|1
+|move|p2a: Venusaur|Sludge Bomb|p1a: Landorus-Therian
+|-resisted|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|255\/329
+|-status|p1a: Landorus-Therian|psn
+|
+|-heal|p1a: Landorus-Therian|275\/329 psn|[from] item: Leftovers
+|-damage|p1a: Landorus-Therian|234\/329 psn|[from] psn
+|-damage|p2a: Venusaur|149\/331 brn|[from] brn
+|turn|26
+|
+|switch|p2a: Suicune|Suicune, shiny|404\/404
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Landorus-Therian|Bulk Up|p1a: Landorus-Therian
+|-boost|p1a: Landorus-Therian|atk|1
+|-boost|p1a: Landorus-Therian|def|1
+|
+|-heal|p1a: Landorus-Therian|254\/329 psn|[from] item: Leftovers
+|-damage|p1a: Landorus-Therian|213\/329 psn|[from] psn
+|turn|27
+|
+|move|p1a: Landorus-Therian|Earthquake|p2a: Suicune
+|-damage|p2a: Suicune|232\/404
+|move|p2a: Suicune|Scald|p1a: Landorus-Therian
+|-supereffective|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|19\/329 psn
+|
+|-heal|p1a: Landorus-Therian|39\/329 psn|[from] item: Leftovers
+|-damage|p1a: Landorus-Therian|0 fnt|[from] psn
+|faint|p1a: Landorus-Therian
+|
+|switch|p1a: Manectric|Manectric-Mega, M|282\/282
+|-ability|p1a: Manectric|Intimidate|[of] p2a: Suicune
+|-unboost|p2a: Suicune|atk|1
+|turn|28
+|
+|switch|p2a: Chansey|Chansey, F, shiny|626\/704
+|move|p1a: Manectric|Volt Switch|p2a: Chansey
+|-damage|p2a: Chansey|530\/704
+|
+|switch|p1a: Thundurus|Thundurus, M|40\/300
+|
+|-heal|p1a: Thundurus|58\/300|[from] item: Leftovers
+|turn|29
+|
+|move|p1a: Thundurus|Taunt|p2a: Chansey
+|-start|p2a: Chansey|move: Taunt
+|move|p2a: Chansey|Seismic Toss|p1a: Thundurus
+|-damage|p1a: Thundurus|0 fnt
+|faint|p1a: Thundurus
+|
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|turn|30
+|
+|switch|p2a: Venusaur|Venusaur-Mega, F|149\/331 brn
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|97\/331 brn
+|
+|-damage|p2a: Venusaur|56\/331 brn|[from] brn
+|turn|31
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|22\/331 brn
+|
+|switch|p1a: Manectric|Manectric-Mega, M|282\/282
+|-ability|p1a: Manectric|Intimidate|[of] p2a: Venusaur
+|-unboost|p2a: Venusaur|atk|1
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|187\/331 brn
+|
+|-damage|p2a: Venusaur|146\/331 brn|[from] brn
+|turn|32
+|
+|move|p1a: Manectric|Flamethrower|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|50\/331 brn
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|215\/331 brn
+|
+|-damage|p2a: Venusaur|174\/331 brn|[from] brn
+|turn|33
+|
+|switch|p2a: Chansey|Chansey, F, shiny|530\/704
+|move|p1a: Manectric|Flamethrower|p2a: Chansey
+|-damage|p2a: Chansey|452\/704
+|
+|turn|34
+|
+|move|p1a: Manectric|Volt Switch|p2a: Chansey
+|-damage|p2a: Chansey|356\/704
+|-message|Zabrael forfeited.
+|leave|Zabrael
+|
+|win|JesusORAS
+|raw|Ladder updating...
+|player|p1
+|raw|Zabrael's rating: 1473 &rarr; <strong>1450<\/strong><br \/>(-23 for losing)
+|raw|JesusORAS's rating: 1422 &rarr; <strong>1445<\/strong><br \/>(+23 for winning)
+|c|âJesusORAS|gggggggg

@@ -1,0 +1,1460 @@
+|join|DarkAfter
+|join|qpzm257
+|player|p1|DarkAfter|101
+|player|p2|qpzm257|218
+|gametype|singles
+|tier|Pokebank OU (beta)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Gengar, F
+|poke|p1|Milotic, M
+|poke|p1|Skarmory, M
+|poke|p1|Ferrothorn, F
+|poke|p1|Zapdos
+|poke|p1|Salamence, F
+|poke|p2|Vaporeon, M
+|poke|p2|Heatran, F
+|poke|p2|Scizor, M
+|poke|p2|Breloom, F
+|poke|p2|Alakazam, M
+|poke|p2|Gliscor, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Gengar|Gengar, F|324\/324
+|switch|p2a: Heatran|Heatran, F|386\/386
+|-item|p2a: Heatran|Air Balloon
+|turn|1
+|callback|decision
+|
+|-formechange|p1a: Gengar|Gengar-Mega
+|message|Gengar has Mega Evolved into Mega Gengar!
+|move|p1a: Gengar|Hypnosis|p2a: Heatran
+|-status|p2a: Heatran|slp
+|cant|p2a: Heatran|slp
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Gengar|Perish Song|p1a: Gengar
+|-fieldactivate|move: Perish Song
+|cant|p2a: Heatran|slp
+|
+|-start|p1a: Gengar|perish3
+|-start|p2a: Heatran|perish3
+|turn|3
+|callback|decision
+|
+|move|p1a: Gengar|Substitute|p1a: Gengar
+|-start|p1a: Gengar|Substitute
+|-damage|p1a: Gengar|243\/324
+|cant|p2a: Heatran|slp
+|
+|-start|p1a: Gengar|perish2
+|-start|p2a: Heatran|perish2
+|turn|4
+|callback|decision
+|
+|move|p1a: Gengar|Dream Eater|p2a: Heatran
+|-crit|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|304\/386 slp
+|-heal|p1a: Gengar|284\/324|[from] drain|[of] p2a: Heatran
+|-enditem|p2a: Heatran|Air Balloon
+|-curestatus|p2a: Heatran|slp
+|move|p2a: Heatran|Magma Storm|p1a: Gengar
+|-end|p1a: Gengar|Substitute
+|
+|-start|p1a: Gengar|perish1
+|-start|p2a: Heatran|perish1
+|turn|5
+|callback|decision
+|
+|switch|p1a: Milotic|Milotic, M|393\/393
+|move|p2a: Heatran|Earth Power|p1a: Milotic
+|-damage|p1a: Milotic|304\/393
+|
+|-start|p2a: Heatran|perish0
+|-heal|p1a: Milotic|328\/393|[from] item: Leftovers
+|faint|p2a: Heatran
+|callback|decision
+|
+|switch|p2a: Breloom|Breloom, F|262\/262
+|turn|6
+|callback|decision
+|
+|move|p2a: Breloom|Swords Dance|p2a: Breloom
+|-boost|p2a: Breloom|atk|2
+|move|p1a: Milotic|Sleep Talk|p1a: Milotic
+|-fail|p1a: Milotic
+|
+|-heal|p1a: Milotic|352\/393|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|move|p2a: Breloom|Bullet Seed|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|316\/334
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|298\/334
+|-hitcount|p1a: Skarmory|2
+|
+|-heal|p1a: Skarmory|318\/334|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p2a: Breloom|Spore|p1a: Skarmory
+|-status|p1a: Skarmory|slp
+|cant|p1a: Skarmory|slp
+|
+|-heal|p1a: Skarmory|334\/334 slp|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|352\/352
+|move|p2a: Breloom|Mach Punch|p1a: Ferrothorn
+|-crit|p1a: Ferrothorn
+|-supereffective|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|0 fnt
+|-damage|p2a: Breloom|230\/262|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|faint|p1a: Ferrothorn
+|
+|callback|decision
+|
+|switch|p1a: Salamence|Salamence, F|331\/331
+|-ability|p1a: Salamence|Intimidate|[of] p2a: Breloom
+|-unboost|p2a: Breloom|atk|1
+|turn|10
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, M|463\/463
+|move|p1a: Salamence|Fire Blast|p2a: Vaporeon
+|-resisted|p2a: Vaporeon
+|-damage|p2a: Vaporeon|400\/463
+|
+|-heal|p2a: Vaporeon|428\/463|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, F|284\/324
+|-formechange|p1a: Gengar|Gengar-Mega
+|move|p2a: Vaporeon|Scald|p1a: Gengar
+|-damage|p1a: Gengar|173\/324
+|
+|-heal|p2a: Vaporeon|456\/463|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Gengar|Hypnosis|p2a: Vaporeon|[miss]
+|-miss|p1a: Gengar|p2a: Vaporeon
+|move|p2a: Vaporeon|Roar|p1a: Gengar
+|drag|p1a: Milotic|Milotic, M|352\/393
+|
+|-heal|p1a: Milotic|376\/393|[from] item: Leftovers
+|-heal|p2a: Vaporeon|463\/463|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|334\/334 slp
+|switch|p2a: Breloom|Breloom, F|230\/262
+|
+|turn|14
+|callback|decision
+|
+|move|p2a: Breloom|Mach Punch|p1a: Skarmory
+|-damage|p1a: Skarmory|268\/334 slp
+|-curestatus|p1a: Skarmory|slp
+|move|p1a: Skarmory|Brave Bird|p2a: Breloom
+|-supereffective|p2a: Breloom
+|-damage|p2a: Breloom|0 fnt
+|-damage|p1a: Skarmory|192\/334|[from] recoil|[of] p2a: Breloom
+|faint|p2a: Breloom
+|
+|-heal|p1a: Skarmory|212\/334|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, M|463\/463
+|turn|15
+|callback|decision
+|
+|switch|p1a: Milotic|Milotic, M|376\/393
+|move|p2a: Vaporeon|Scald|p1a: Milotic
+|-resisted|p1a: Milotic
+|-damage|p1a: Milotic|334\/393
+|
+|-heal|p1a: Milotic|358\/393|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p2a: Vaporeon|Scald|p1a: Milotic
+|-resisted|p1a: Milotic
+|-damage|p1a: Milotic|318\/393
+|move|p1a: Milotic|Dragon Tail|p2a: Vaporeon
+|-damage|p2a: Vaporeon|432\/463
+|drag|p2a: Scizor|Scizor, M|344\/344
+|
+|-heal|p1a: Milotic|342\/393|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|-formechange|p2a: Scizor|Scizor-Mega
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p1a: Milotic|Scald|p2a: Scizor
+|-damage|p2a: Scizor|259\/344
+|move|p2a: Scizor|Swords Dance|p2a: Scizor
+|-boost|p2a: Scizor|atk|2
+|
+|-heal|p1a: Milotic|366\/393|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p2a: Scizor|U-turn|p1a: Milotic
+|-damage|p1a: Milotic|92\/393
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, M|432\/463
+|move|p1a: Milotic|Dragon Tail|p2a: Vaporeon
+|-damage|p2a: Vaporeon|401\/463
+|drag|p2a: Gliscor|Gliscor, M|352\/352
+|
+|-heal|p1a: Milotic|116\/393|[from] item: Leftovers
+|-activate|p2a: Gliscor|item: Toxic Orb
+|-status|p2a: Gliscor|tox
+|turn|19
+|callback|decision
+|
+|move|p2a: Gliscor|Toxic|p1a: Milotic
+|-status|p1a: Milotic|tox
+|move|p1a: Milotic|Rest|p1a: Milotic
+|-status|p1a: Milotic|slp
+|-heal|p1a: Milotic|393\/393 slp|[silent]
+|-status|p1a: Milotic|slp|[from] move: Rest
+|
+|turn|20
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|259\/344
+|-formechange|p2a: Scizor|Scizor-Mega
+|cant|p1a: Milotic|slp
+|move|p1a: Milotic|Sleep Talk|p1a: Milotic
+|move|p1a: Milotic|Dragon Tail|p2a: Scizor|[from]Sleep Talk|[miss]
+|-miss|p1a: Milotic|p2a: Scizor
+|
+|turn|21
+|callback|decision
+|
+|switch|p1a: Zapdos|Zapdos|384\/384
+|move|p2a: Scizor|Swords Dance|p2a: Scizor
+|-boost|p2a: Scizor|atk|2
+|
+|turn|22
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, M|352\/352 tox
+|move|p1a: Zapdos|Heat Wave|p2a: Gliscor
+|-miss|p1a: Zapdos|p2a: Gliscor
+|
+|turn|23
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|212\/334
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|185\/334
+|
+|-heal|p1a: Skarmory|205\/334|[from] item: Leftovers
+|turn|24
+|callback|decision
+|chat|qpzm257|As annoying as it is, your gengar strategy is really good
+|chat|qpzm257|surprised I haven't seen more of that
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|175\/334
+|move|p1a: Skarmory|Spikes|p2a: Gliscor
+|-sidestart|p2: qpzm257|Spikes
+|
+|-heal|p1a: Skarmory|195\/334|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|167\/334
+|cant|p1a: Skarmory|flinch
+|
+|-heal|p1a: Skarmory|187\/334|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, M|401\/463
+|-damage|p2a: Vaporeon|344\/463|[from] Spikes
+|move|p1a: Skarmory|Spikes|p2a: Vaporeon
+|-sidestart|p2: qpzm257|Spikes
+|
+|-heal|p1a: Skarmory|207\/334|[from] item: Leftovers
+|-heal|p2a: Vaporeon|372\/463|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|switch|p1a: Milotic|Milotic, M|393\/393 slp
+|move|p2a: Vaporeon|Scald|p1a: Milotic
+|-resisted|p1a: Milotic
+|-damage|p1a: Milotic|351\/393 slp
+|
+|-heal|p1a: Milotic|375\/393 slp|[from] item: Leftovers
+|-heal|p2a: Vaporeon|400\/463|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|cant|p1a: Milotic|slp
+|move|p1a: Milotic|Sleep Talk|p1a: Milotic
+|move|p1a: Milotic|Rest|p1a: Milotic|[from]Sleep Talk
+|-fail|p1a: Milotic
+|move|p2a: Vaporeon|Roar|p1a: Milotic
+|drag|p1a: Zapdos|Zapdos|384\/384
+|
+|-heal|p2a: Vaporeon|428\/463|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|switch|p1a: Salamence|Salamence, F|331\/331
+|-ability|p1a: Salamence|Intimidate|[of] p2a: Vaporeon
+|-unboost|p2a: Vaporeon|atk|1
+|move|p2a: Vaporeon|Scald|p1a: Salamence
+|-resisted|p1a: Salamence
+|-damage|p1a: Salamence|262\/331
+|
+|-heal|p2a: Vaporeon|456\/463|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|move|p1a: Salamence|Earthquake|p2a: Vaporeon
+|-damage|p2a: Vaporeon|339\/463
+|move|p2a: Vaporeon|Scald|p1a: Salamence
+|-resisted|p1a: Salamence
+|-damage|p1a: Salamence|192\/331
+|
+|-heal|p2a: Vaporeon|367\/463|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, F|173\/324
+|-formechange|p1a: Gengar|Gengar-Mega
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-heal|p2a: Vaporeon|395\/463|[from] item: Leftovers
+|turn|32
+|callback|decision
+|
+|move|p2a: Vaporeon|Protect|p2a: Vaporeon
+|-singleturn|p2a: Vaporeon|Protect
+|move|p1a: Gengar|Hypnosis|p2a: Vaporeon
+|-activate|p2a: Vaporeon|Protect
+|
+|-heal|p2a: Vaporeon|463\/463|[from] move: Wish|[wisher] Vaporeon
+|turn|33
+|callback|decision
+|
+|move|p1a: Gengar|Hypnosis|p2a: Vaporeon
+|-status|p2a: Vaporeon|slp
+|cant|p2a: Vaporeon|slp
+|
+|turn|34
+|callback|decision
+|
+|move|p1a: Gengar|Perish Song|p1a: Gengar
+|-fieldactivate|move: Perish Song
+|cant|p2a: Vaporeon|slp
+|
+|-start|p1a: Gengar|perish3
+|-start|p2a: Vaporeon|perish3
+|turn|35
+|callback|decision
+|
+|move|p1a: Gengar|Dream Eater|p2a: Vaporeon
+|-damage|p2a: Vaporeon|323\/463 slp
+|-heal|p1a: Gengar|243\/324|[from] drain|[of] p2a: Vaporeon
+|-curestatus|p2a: Vaporeon|slp
+|move|p2a: Vaporeon|Roar|p1a: Gengar
+|drag|p1a: Salamence|Salamence, F|192\/331
+|-ability|p1a: Salamence|Intimidate|[of] p2a: Vaporeon
+|-unboost|p2a: Vaporeon|atk|1
+|
+|-start|p2a: Vaporeon|perish2
+|-heal|p2a: Vaporeon|351\/463|[from] item: Leftovers
+|turn|36
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, F|243\/324
+|-formechange|p1a: Gengar|Gengar-Mega
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-start|p2a: Vaporeon|perish1
+|-heal|p2a: Vaporeon|379\/463|[from] item: Leftovers
+|turn|37
+|callback|decision
+|
+|move|p1a: Gengar|Substitute|p1a: Gengar
+|-start|p1a: Gengar|Substitute
+|-damage|p1a: Gengar|162\/324
+|move|p2a: Vaporeon|Roar|p1a: Gengar
+|drag|p1a: Milotic|Milotic, M|375\/393 slp
+|
+|-start|p2a: Vaporeon|perish0
+|-heal|p1a: Milotic|393\/393 slp|[from] item: Leftovers
+|faint|p2a: Vaporeon
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|259\/344
+|-formechange|p2a: Scizor|Scizor-Mega
+|-damage|p2a: Scizor|202\/344|[from] Spikes
+|turn|38
+|callback|decision
+|
+|switch|p1a: Salamence|Salamence, F|192\/331
+|-ability|p1a: Salamence|Intimidate|[of] p2a: Scizor
+|-unboost|p2a: Scizor|atk|1
+|move|p2a: Scizor|Swords Dance|p2a: Scizor
+|-boost|p2a: Scizor|atk|2
+|
+|turn|39
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Salamence
+|-damage|p1a: Salamence|0 fnt
+|faint|p1a: Salamence
+|
+|callback|decision
+|
+|switch|p1a: Zapdos|Zapdos|384\/384
+|turn|40
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Zapdos
+|-resisted|p1a: Zapdos
+|-damage|p1a: Zapdos|312\/384
+|move|p1a: Zapdos|Heat Wave|p2a: Scizor
+|-miss|p1a: Zapdos|p2a: Scizor
+|
+|-heal|p1a: Zapdos|336\/384|[from] item: Leftovers
+|turn|41
+|callback|decision
+|
+|move|p1a: Zapdos|Heat Wave|p2a: Scizor
+|-supereffective|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|faint|p2a: Scizor
+|
+|-heal|p1a: Zapdos|360\/384|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Alakazam|Alakazam, M|252\/252
+|turn|42
+|callback|decision
+|
+|switch|p1a: Milotic|Milotic, M|393\/393 slp
+|move|p2a: Alakazam|Psychic|p1a: Milotic
+|-damage|p1a: Milotic|258\/393 slp
+|
+|-heal|p1a: Milotic|282\/393 slp|[from] item: Leftovers
+|turn|43
+|callback|decision
+|
+|move|p2a: Alakazam|Psychic|p1a: Milotic
+|-damage|p1a: Milotic|152\/393 slp
+|-curestatus|p1a: Milotic|slp
+|move|p1a: Milotic|Sleep Talk|p1a: Milotic
+|-fail|p1a: Milotic
+|
+|-heal|p1a: Milotic|176\/393|[from] item: Leftovers
+|turn|44
+|callback|decision
+|
+|move|p2a: Alakazam|Psychic|p1a: Milotic
+|-crit|p1a: Milotic
+|-damage|p1a: Milotic|0 fnt
+|faint|p1a: Milotic
+|
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, F|162\/324
+|-formechange|p1a: Gengar|Gengar-Mega
+|turn|45
+|callback|decision
+|
+|move|p1a: Gengar|Hypnosis|p2a: Alakazam|[miss]
+|-miss|p1a: Gengar|p2a: Alakazam
+|move|p2a: Alakazam|Psychic|p1a: Gengar
+|-supereffective|p1a: Gengar
+|-damage|p1a: Gengar|0 fnt
+|faint|p1a: Gengar
+|
+|callback|decision
+|
+|switch|p1a: Zapdos|Zapdos|360\/384
+|turn|46
+|callback|decision
+|
+|move|p2a: Alakazam|Psychic|p1a: Zapdos
+|-crit|p1a: Zapdos
+|-damage|p1a: Zapdos|81\/384
+|move|p1a: Zapdos|Thunderbolt|p2a: Alakazam
+|-damage|p2a: Alakazam|135\/252
+|
+|-heal|p1a: Zapdos|105\/384|[from] item: Leftovers
+|turn|47
+|callback|decision
+|
+|move|p2a: Alakazam|Psychic|p1a: Zapdos
+|-damage|p1a: Zapdos|0 fnt
+|faint|p1a: Zapdos
+|
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|207\/334
+|turn|48
+|callback|decision
+|
+|move|p2a: Alakazam|Shadow Ball|p1a: Skarmory
+|-damage|p1a: Skarmory|74\/334
+|move|p1a: Skarmory|Brave Bird|p2a: Alakazam
+|-damage|p2a: Alakazam|0 fnt
+|-damage|p1a: Skarmory|29\/334|[from] recoil|[of] p2a: Alakazam
+|faint|p2a: Alakazam
+|
+|-heal|p1a: Skarmory|49\/334|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, M|352\/352 tox
+|turn|49
+|callback|decision
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|23\/334
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|190\/334
+|
+|-heal|p1a: Skarmory|210\/334|[from] item: Leftovers
+|turn|50
+|callback|decision
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|179\/334
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334
+|
+|turn|51
+|callback|decision
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|304\/334
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-damage|p2a: Gliscor|271\/352 tox
+|-damage|p1a: Skarmory|277\/334|[from] recoil|[of] p2a: Gliscor
+|
+|-heal|p1a: Skarmory|297\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|315\/352 tox|[from] ability: Poison Heal
+|turn|52
+|callback|decision
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|271\/334
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-crit|p2a: Gliscor
+|-damage|p2a: Gliscor|197\/352 tox
+|-damage|p1a: Skarmory|232\/334|[from] recoil|[of] p2a: Gliscor
+|
+|-heal|p1a: Skarmory|252\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|241\/352 tox|[from] ability: Poison Heal
+|turn|53
+|callback|decision
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|222\/334
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-damage|p2a: Gliscor|150\/352 tox
+|-damage|p1a: Skarmory|192\/334|[from] recoil|[of] p2a: Gliscor
+|
+|-heal|p1a: Skarmory|212\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|194\/352 tox|[from] ability: Poison Heal
+|turn|54
+|callback|decision
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|184\/334
+|cant|p1a: Skarmory|flinch
+|
+|-heal|p1a: Skarmory|204\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|238\/352 tox|[from] ability: Poison Heal
+|turn|55
+|callback|decision
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|177\/334
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-damage|p2a: Gliscor|151\/352 tox
+|-damage|p1a: Skarmory|148\/334|[from] recoil|[of] p2a: Gliscor
+|
+|-heal|p1a: Skarmory|168\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|195\/352 tox|[from] ability: Poison Heal
+|turn|56
+|callback|decision
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|141\/334
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-damage|p2a: Gliscor|105\/352 tox
+|-damage|p1a: Skarmory|111\/334|[from] recoil|[of] p2a: Gliscor
+|
+|-heal|p1a: Skarmory|131\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|149\/352 tox|[from] ability: Poison Heal
+|turn|57
+|callback|decision
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|100\/334
+|cant|p1a: Skarmory|flinch
+|
+|-heal|p1a: Skarmory|120\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|193\/352 tox|[from] ability: Poison Heal
+|turn|58
+|callback|decision
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|89\/334
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-damage|p2a: Gliscor|112\/352 tox
+|-damage|p1a: Skarmory|62\/334|[from] recoil|[of] p2a: Gliscor
+|
+|-heal|p1a: Skarmory|82\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|156\/352 tox|[from] ability: Poison Heal
+|turn|59
+|callback|decision
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|52\/334
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|219\/334
+|
+|-heal|p1a: Skarmory|239\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|200\/352 tox|[from] ability: Poison Heal
+|turn|60
+|callback|decision
+|
+|move|p2a: Gliscor|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-damage|p2a: Gliscor|118\/352 tox
+|-damage|p1a: Skarmory|212\/334|[from] recoil|[of] p2a: Gliscor
+|
+|-heal|p1a: Skarmory|232\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|162\/352 tox|[from] ability: Poison Heal
+|turn|61
+|callback|decision
+|chat|qpzm257|wtf you used roost
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|202\/334
+|cant|p1a: Skarmory|flinch
+|
+|-heal|p1a: Skarmory|222\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|206\/352 tox|[from] ability: Poison Heal
+|turn|62
+|callback|decision
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|194\/334
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-damage|p2a: Gliscor|121\/352 tox
+|-damage|p1a: Skarmory|166\/334|[from] recoil|[of] p2a: Gliscor
+|
+|-heal|p1a: Skarmory|186\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|165\/352 tox|[from] ability: Poison Heal
+|turn|63
+|callback|decision
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|160\/334
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-damage|p2a: Gliscor|80\/352 tox
+|-damage|p1a: Skarmory|132\/334|[from] recoil|[of] p2a: Gliscor
+|
+|-heal|p1a: Skarmory|152\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|124\/352 tox|[from] ability: Poison Heal
+|turn|64
+|callback|decision
+|
+|move|p2a: Gliscor|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-damage|p2a: Gliscor|45\/352 tox
+|-damage|p1a: Skarmory|126\/334|[from] recoil|[of] p2a: Gliscor
+|
+|-heal|p1a: Skarmory|146\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|89\/352 tox|[from] ability: Poison Heal
+|turn|65
+|callback|decision
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-heal|p1a: Skarmory|166\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|133\/352 tox|[from] ability: Poison Heal
+|turn|66
+|callback|decision
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|137\/334
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-crit|p2a: Gliscor
+|-damage|p2a: Gliscor|6\/352 tox
+|-damage|p1a: Skarmory|95\/334|[from] recoil|[of] p2a: Gliscor
+|
+|-heal|p1a: Skarmory|115\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|50\/352 tox|[from] ability: Poison Heal
+|turn|67
+|callback|decision
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-heal|p1a: Skarmory|135\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|94\/352 tox|[from] ability: Poison Heal
+|turn|68
+|callback|decision
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|105\/334
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-damage|p2a: Gliscor|12\/352 tox
+|-damage|p1a: Skarmory|78\/334|[from] recoil|[of] p2a: Gliscor
+|
+|-heal|p1a: Skarmory|98\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|56\/352 tox|[from] ability: Poison Heal
+|turn|69
+|callback|decision
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-heal|p1a: Skarmory|118\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|100\/352 tox|[from] ability: Poison Heal
+|turn|70
+|callback|decision
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|91\/334
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-damage|p2a: Gliscor|6\/352 tox
+|-damage|p1a: Skarmory|60\/334|[from] recoil|[of] p2a: Gliscor
+|
+|-heal|p1a: Skarmory|80\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|50\/352 tox|[from] ability: Poison Heal
+|turn|71
+|callback|decision
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|247\/334
+|
+|-heal|p1a: Skarmory|267\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|94\/352 tox|[from] ability: Poison Heal
+|turn|72
+|callback|decision
+|
+|move|p2a: Gliscor|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-damage|p2a: Gliscor|3\/352 tox
+|-damage|p1a: Skarmory|237\/334|[from] recoil|[of] p2a: Gliscor
+|
+|-heal|p1a: Skarmory|257\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|47\/352 tox|[from] ability: Poison Heal
+|turn|73
+|callback|decision
+|chat|qpzm257|why did't EQ hit you when you used roost?
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-heal|p1a: Skarmory|277\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|91\/352 tox|[from] ability: Poison Heal
+|turn|74
+|callback|decision
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-heal|p1a: Skarmory|297\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|135\/352 tox|[from] ability: Poison Heal
+|turn|75
+|callback|decision
+|
+|move|p2a: Gliscor|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-damage|p2a: Gliscor|47\/352 tox
+|-damage|p1a: Skarmory|268\/334|[from] recoil|[of] p2a: Gliscor
+|
+|-heal|p1a: Skarmory|288\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|91\/352 tox|[from] ability: Poison Heal
+|turn|76
+|callback|decision
+|chat|DarkAfter|u use eq bevor i used roost
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-heal|p1a: Skarmory|308\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|135\/352 tox|[from] ability: Poison Heal
+|turn|77
+|callback|decision
+|chat|qpzm257|If I use it before, wouldn't you be immune then?
+|
+|move|p2a: Gliscor|Toxic|p1a: Skarmory
+|-fail|p1a: Skarmory
+|move|p1a: Skarmory|Brave Bird|p2a: Gliscor
+|-damage|p2a: Gliscor|50\/352 tox
+|-damage|p1a: Skarmory|280\/334|[from] recoil|[of] p2a: Gliscor
+|
+|-heal|p1a: Skarmory|300\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|94\/352 tox|[from] ability: Poison Heal
+|turn|78
+|callback|decision
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Skarmory|Spikes|p2a: Gliscor
+|-sidestart|p2: qpzm257|Spikes
+|
+|-heal|p1a: Skarmory|320\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|138\/352 tox|[from] ability: Poison Heal
+|turn|79
+|callback|decision
+|
+|move|p2a: Gliscor|Toxic|p1a: Skarmory
+|-fail|p1a: Skarmory
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|-heal|p1a: Skarmory|334\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|182\/352 tox|[from] ability: Poison Heal
+|turn|80
+|callback|decision
+|
+|move|p2a: Gliscor|Toxic|p1a: Skarmory
+|-fail|p1a: Skarmory
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|-heal|p2a: Gliscor|226\/352 tox|[from] ability: Poison Heal
+|turn|81
+|callback|decision
+|
+|move|p2a: Gliscor|Toxic|p1a: Skarmory
+|-fail|p1a: Skarmory
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|-heal|p2a: Gliscor|270\/352 tox|[from] ability: Poison Heal
+|turn|82
+|callback|decision
+|
+|move|p2a: Gliscor|Toxic|p1a: Skarmory
+|-fail|p1a: Skarmory
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|-heal|p2a: Gliscor|314\/352 tox|[from] ability: Poison Heal
+|turn|83
+|callback|decision
+|join|JoyIsBoy9
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|
+|move|p2a: Gliscor|Toxic|p1a: Skarmory
+|-fail|p1a: Skarmory
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|-heal|p2a: Gliscor|352\/352 tox|[from] ability: Poison Heal
+|turn|84
+|callback|decision
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|JoyIsBoy9|wow
+|chat|DarkAfter|low
+|chat|JoyIsBoy9|wtf is going on
+|chat|DarkAfter|wow
+|
+|move|p2a: Gliscor|Toxic|p1a: Skarmory
+|-fail|p1a: Skarmory
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|85
+|callback|decision
+|chat|DarkAfter|draw
+|join|bnasty112
+|
+|move|p2a: Gliscor|Toxic|p1a: Skarmory
+|-fail|p1a: Skarmory
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|86
+|callback|decision
+|chat|bnasty112|wow
+|chat|qpzm257|wow
+|chat|bnasty112|wow
+|
+|move|p2a: Gliscor|Toxic|p1a: Skarmory
+|-fail|p1a: Skarmory
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|87
+|callback|decision
+|chat|DarkAfter|wow
+|chat|qpzm257|wow
+|chat|qpzm257|wow
+|chat|qpzm257|wow
+|
+|move|p2a: Gliscor|Toxic|p1a: Skarmory
+|-fail|p1a: Skarmory
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|88
+|callback|decision
+|
+|move|p2a: Gliscor|Toxic|p1a: Skarmory
+|-fail|p1a: Skarmory
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|89
+|callback|decision
+|chat|qpzm257|taking it to struggle
+|chat|qpzm257|wow
+|chat|qpzm257|wow
+|
+|move|p2a: Gliscor|Toxic|p1a: Skarmory
+|-fail|p1a: Skarmory
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|90
+|callback|decision
+|chat|qpzm257|wow
+|chat|DarkAfter|struggel dont do enouht dmg
+|
+|move|p2a: Gliscor|Toxic|p1a: Skarmory
+|-fail|p1a: Skarmory
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|91
+|callback|decision
+|
+|move|p2a: Gliscor|Toxic|p1a: Skarmory|[miss]
+|-miss|p2a: Gliscor|p1a: Skarmory
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|92
+|callback|decision
+|
+|move|p2a: Gliscor|Toxic|p1a: Skarmory
+|-fail|p1a: Skarmory
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|93
+|callback|decision
+|
+|move|p2a: Gliscor|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|94
+|callback|decision
+|
+|move|p2a: Gliscor|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|95
+|callback|decision
+|
+|move|p2a: Gliscor|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|96
+|callback|decision
+|chat|JoyIsBoy9|#pp
+|chat|JoyIsBoy9|thats power points fyi
+|
+|move|p2a: Gliscor|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|move|p1a: Skarmory|Spikes|p2a: Gliscor
+|-fail|p2a: Gliscor
+|
+|turn|97
+|callback|decision
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|307\/334
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|-heal|p1a: Skarmory|327\/334|[from] item: Leftovers
+|turn|98
+|callback|decision
+|chat|JoyIsBoy9|wtf
+|chat|JoyIsBoy9|moron you had ice fang why didnt you keep using it
+|chat|JoyIsBoy9|it can freeze
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|297\/334
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|-heal|p1a: Skarmory|317\/334|[from] item: Leftovers
+|turn|99
+|callback|decision
+|chat|JoyIsBoy9|oh wait
+|chat|JoyIsBoy9|i thought you were the skarmory
+|chat|JoyIsBoy9|#SEX BOMB
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|288\/334
+|cant|p1a: Skarmory|flinch
+|
+|-heal|p1a: Skarmory|308\/334|[from] item: Leftovers
+|turn|100
+|callback|decision
+|chat|DarkAfter|xD
+|chat|JoyIsBoy9|bombs away
+|chat|JoyIsBoy9|sex is aiiiight
+|chat|JoyIsBoy9|yall know how it is
+|chat|qpzm257|My money is on DarkAfter
+|
+|move|p2a: Gliscor|Ice Fang|p1a: Skarmory
+|-damage|p1a: Skarmory|279\/334
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|-heal|p1a: Skarmory|299\/334|[from] item: Leftovers
+|turn|101
+|callback|decision
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|-heal|p1a: Skarmory|319\/334|[from] item: Leftovers
+|turn|102
+|callback|decision
+|chat|JoyIsBoy9|what money faggot
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-fail|p2a: Gliscor
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|-heal|p1a: Skarmory|334\/334|[from] item: Leftovers
+|turn|103
+|callback|decision
+|chat|qpzm257|the imaginary money i just bet
+|
+|move|p2a: Gliscor|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|104
+|callback|decision
+|chat|JoyIsBoy9|qpzm more like qpz-fagasaurus
+|
+|move|p2a: Gliscor|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|105
+|callback|decision
+|chat|qpzm257|you're a piece of shit
+|
+|move|p2a: Gliscor|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|106
+|callback|decision
+|chat|qpzm257|joyisboy
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|107
+|callback|decision
+|chat|DarkAfter|how much pp left?
+|
+|move|p2a: Gliscor|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|108
+|callback|decision
+|
+|move|p2a: Gliscor|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|109
+|callback|decision
+|chat|qpzm257|about 10
+|chat|qpzm257|how about you?
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|110
+|callback|decision
+|chat|DarkAfter|40
+|
+|move|p2a: Gliscor|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|111
+|callback|decision
+|join|DFlynn24
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|112
+|callback|decision
+|chat|DFlynn24|SUP FAGGOTS
+|chat|qpzm257|hi faggot
+|
+|move|p2a: Gliscor|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|move|p1a: Skarmory|Whirlwind|p2a: Gliscor
+|
+|turn|113
+|callback|decision
+|chat|DFlynn24|JOYISBOY9 IS A CHILD MOLESTER WATCH OUT
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Skarmory|Spikes|p2a: Gliscor
+|-fail|p2a: Gliscor
+|
+|turn|114
+|callback|decision
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Skarmory|Spikes|p2a: Gliscor
+|-fail|p2a: Gliscor
+|
+|turn|115
+|callback|decision
+|
+|move|p2a: Gliscor|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|move|p1a: Skarmory|Spikes|p2a: Gliscor
+|-fail|p2a: Gliscor
+|
+|turn|116
+|callback|decision
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Skarmory|Spikes|p2a: Gliscor
+|-fail|p2a: Gliscor
+|
+|turn|117
+|callback|decision
+|chat|DFlynn24|i think qpzm is retarded
+|chat|qpzm257|STRUGGLE!!!!!!!
+|
+|-activate|p2a: Gliscor|move: Struggle
+|move|p2a: Gliscor|Struggle|p1a: Skarmory
+|-damage|p1a: Skarmory|312\/334
+|-damage|p2a: Gliscor|264\/352 tox
+|move|p1a: Skarmory|Spikes|p2a: Gliscor
+|-fail|p2a: Gliscor
+|
+|-heal|p1a: Skarmory|332\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|308\/352 tox|[from] ability: Poison Heal
+|turn|118
+|callback|decision
+|
+|-activate|p2a: Gliscor|move: Struggle
+|move|p2a: Gliscor|Struggle|p1a: Skarmory
+|-damage|p1a: Skarmory|310\/334
+|-damage|p2a: Gliscor|220\/352 tox
+|move|p1a: Skarmory|Spikes|p2a: Gliscor
+|-fail|p2a: Gliscor
+|
+|-heal|p1a: Skarmory|330\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|264\/352 tox|[from] ability: Poison Heal
+|turn|119
+|callback|decision
+|chat|qpzm257|struggle better gliscor you piece of shit
+|
+|-activate|p2a: Gliscor|move: Struggle
+|move|p2a: Gliscor|Struggle|p1a: Skarmory
+|-damage|p1a: Skarmory|309\/334
+|-damage|p2a: Gliscor|176\/352 tox
+|move|p1a: Skarmory|Spikes|p2a: Gliscor
+|-fail|p2a: Gliscor
+|
+|-heal|p1a: Skarmory|329\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|220\/352 tox|[from] ability: Poison Heal
+|turn|120
+|callback|decision
+|
+|-activate|p2a: Gliscor|move: Struggle
+|move|p2a: Gliscor|Struggle|p1a: Skarmory
+|-damage|p1a: Skarmory|305\/334
+|-damage|p2a: Gliscor|132\/352 tox
+|move|p1a: Skarmory|Spikes|p2a: Gliscor
+|-fail|p2a: Gliscor
+|
+|-heal|p1a: Skarmory|325\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|176\/352 tox|[from] ability: Poison Heal
+|turn|121
+|callback|decision
+|chat|qpzm257|well this was easily my longest battle ever
+|chat|JoyIsBoy9|fags never win
+|
+|-activate|p2a: Gliscor|move: Struggle
+|move|p2a: Gliscor|Struggle|p1a: Skarmory
+|-damage|p1a: Skarmory|304\/334
+|-damage|p2a: Gliscor|88\/352 tox
+|move|p1a: Skarmory|Spikes|p2a: Gliscor
+|-fail|p2a: Gliscor
+|
+|-heal|p1a: Skarmory|324\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|132\/352 tox|[from] ability: Poison Heal
+|turn|122
+|callback|decision
+|
+|-activate|p2a: Gliscor|move: Struggle
+|move|p2a: Gliscor|Struggle|p1a: Skarmory
+|-crit|p1a: Skarmory
+|-damage|p1a: Skarmory|293\/334
+|-damage|p2a: Gliscor|44\/352 tox
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334
+|
+|-heal|p2a: Gliscor|88\/352 tox|[from] ability: Poison Heal
+|turn|123
+|callback|decision
+|
+|-activate|p2a: Gliscor|move: Struggle
+|move|p2a: Gliscor|Struggle|p1a: Skarmory
+|-damage|p1a: Skarmory|313\/334
+|-damage|p2a: Gliscor|0 fnt
+|faint|p2a: Gliscor
+|
+|win|DarkAfter
+|raw|Ladder updating...
+|raw|DarkAfter's rating: 1616 &rarr; <strong>1621<\/strong><br \/>(+5 for winning)
+|raw|qpzm257's rating: 1736 &rarr; <strong>1728<\/strong><br \/>(-8 for losing)
+|chat|bnasty112|gg
+|chat|DarkAfter|gg xD
+|chat|qpzm257|gg
+|chat|DFlynn24|gg
+|chat|qpzm257|gg
+|chat|bnasty112|gg
+|chat|bnasty112|gg
+|chat|qpzm257|gg
+|chat|bnasty112|gg
+|chat|DFlynn24|gg
+|chat|qpzm257|gg
+|chat|bnasty112|gg
+|chat|qpzm257|gg
+|chat|bnasty112|g
+|chat|DFlynn24|gg
+|chat|DarkAfter|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|gg
+|chat|qpzm257|gg
+|chat|DarkAfter|ggg
+|chat|bnasty112|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|gg
+|chat|JoyIsBoy9|gg
+|chat|DarkAfter|gg
+|chat|qpzm257|gg
+|chat|bnasty112|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|gggg
+|chat|JoyIsBoy9|gg
+|chat|DarkAfter|g
+|chat|bnasty112|gg
+|chat|qpzm257|gg
+|chat|DarkAfter|g
+|chat|JoyIsBoy9|gg
+|chat|DFlynn24|ggg
+|chat|qpzm257|gg
+|chat|JoyIsBoy9|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|gg
+|chat|DarkAfter|gg
+|chat|JoyIsBoy9|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|g
+|chat|DarkAfter|gg
+|chat|bnasty112|gg
+|chat|JoyIsBoy9|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|g
+|chat|JoyIsBoy9|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|gg
+|chat|DarkAfter|g
+|chat|bnasty112|gg
+|chat|DarkAfter|g
+|chat|JoyIsBoy9|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|g
+|chat|JoyIsBoy9|gg
+|chat|bnasty112|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|g
+|chat|JoyIsBoy9|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|ggg
+|chat|bnasty112|gg
+|chat|JoyIsBoy9|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|gggg
+|chat|JoyIsBoy9|gg
+|chat|bnasty112|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|gggg
+|chat|JoyIsBoy9|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|gggg
+|chat|bnasty112|gg
+|chat|JoyIsBoy9|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|gggg
+|chat|bnasty112|gg
+|chat|JoyIsBoy9|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|gggg
+|chat|JoyIsBoy9|gg
+|chat|bnasty112|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|g
+|chat|JoyIsBoy9|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|g
+|chat|JoyIsBoy9|gg
+|chat|bnasty112|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|gg
+|chat|JoyIsBoy9|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|g
+|chat|bnasty112|gg
+|chat|JoyIsBoy9|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|g
+|chat|JoyIsBoy9|gg
+|chat|bnasty112|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|g
+|chat|JoyIsBoy9|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|g
+|chat|JoyIsBoy9|gg
+|chat|bnasty112|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|g
+|chat|JoyIsBoy9|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|g
+|chat|bnasty112|gg
+|chat|JoyIsBoy9|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|gg
+|chat|JoyIsBoy9|gg
+|chat|bnasty112|gg
+|chat|DFlynn24|g
+|chat|JoyIsBoy9|gg
+|chat|DFlynn24|gg
+|chat|JoyIsBoy9|gg
+|chat|bnasty112|gg
+|chat|qpzm257|ggg
+|chat|DFlynn24|g
+|chat|JoyIsBoy9|fag
+|chat|bnasty112|gg
+|chat|qpzm257|g
+|chat|DFlynn24|g
+|chat|JoyIsBoy9|fag
+|chat|bnasty112|gg
+|chat|qpzm257|gg
+|chat|DFlynn24|g
+|chat|JoyIsBoy9|fa
+|chat|bnasty112|gg
+|chat|DFlynn24|g
+|chat|JoyIsBoy9|fag
+|chat|bnasty112|gg
+|chat|DFlynn24|g
+|chat|JoyIsBoy9|fag
+|chat|DFlynn24|g
+|chat|JoyIsBoy9|fag
+|chat|DFlynn24|niger
+|chat|JoyIsBoy9|fag
+|chat|DFlynn24|niger
+|chat|JoyIsBoy9|v
+|chat|DFlynn24|niger
+|chat|JoyIsBoy9|fag
+|chat|DFlynn24|niger
+|chat|DFlynn24|niger
+|chat|bnasty112|8==D~~~
+|chat|qpzm257|gg
+|chat|qpzm257|fags
+|chat|DFlynn24|(   .   )(   .   )
+|chat|DarkAfter|(_._)
+|leave|DFlynn24
+|chat|qpzm257|tits
+|chat|qpzm257|tit*
+|leave|JoyIsBoy9
+|leave|DarkAfter
+|player|p1
+|leave|bnasty112

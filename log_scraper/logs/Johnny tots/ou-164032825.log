@@ -1,0 +1,380 @@
+|join|Lumas
+|join|Johnny tots
+|player|p1|Lumas|93
+|player|p2|Johnny tots|102
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Alomomola, F
+|poke|p1|Amoonguss, M
+|poke|p1|Hippowdon, M
+|poke|p1|Skarmory, M
+|poke|p1|Chansey, F
+|poke|p1|Stoutland, M
+|poke|p2|Dragonite, F
+|poke|p2|Gyarados, F
+|poke|p2|Landorus-Therian, M
+|poke|p2|Charizard, M
+|poke|p2|Thundurus-Therian, M
+|poke|p2|Scizor, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Big Daddy|Hippowdon, M|419\/419
+|switch|p2a: Gyarados|Gyarados, F|331\/331
+|-weather|Sandstorm
+|turn|1
+|
+|switch|p1a: Robust Son|Skarmory, M|333\/333
+|move|p2a: Gyarados|Taunt|p1a: Robust Son
+|-start|p1a: Robust Son|move: Taunt
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Gyarados|311\/331|[from] sandstorm
+|turn|2
+|
+|switch|p1a: Family's Dog|Stoutland, M|311\/311
+|move|p2a: Gyarados|Dragon Dance|p2a: Gyarados
+|-boost|p2a: Gyarados|atk|1
+|-boost|p2a: Gyarados|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Gyarados|291\/331|[from] sandstorm
+|turn|3
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Family's Dog
+|-unboost|p1a: Family's Dog|atk|1
+|move|p1a: Family's Dog|Wild Charge|p2a: Landorus-Therian
+|-immune|p2a: Landorus-Therian|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|turn|4
+|
+|switch|p1a: Robust Son|Skarmory, M|333\/333
+|move|p2a: Landorus-Therian|Swords Dance|p2a: Landorus-Therian
+|-boost|p2a: Landorus-Therian|atk|2
+|
+|-weather|Sandstorm|[upkeep]
+|turn|5
+|
+|move|p2a: Landorus-Therian|Swords Dance|p2a: Landorus-Therian
+|-boost|p2a: Landorus-Therian|atk|2
+|move|p1a: Robust Son|Counter|p2a: Landorus-Therian
+|-fail|p2a: Landorus-Therian
+|
+|-weather|Sandstorm|[upkeep]
+|turn|6
+|c|âLumas|Oo?
+|
+|move|p2a: Landorus-Therian|Stone Edge|p1a: Robust Son
+|-damage|p1a: Robust Son|127\/333
+|move|p1a: Robust Son|Counter|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|faint|p2a: Landorus-Therian
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M|299\/299
+|turn|7
+|
+|switch|p2a: Gyarados|Gyarados, F|291\/331
+|switch|p1a: Ugly Cousin|Amoonguss, M|431\/431
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Gyarados|271\/331|[from] sandstorm
+|-damage|p1a: Ugly Cousin|405\/431|[from] sandstorm
+|turn|8
+|
+|move|p2a: Gyarados|Taunt|p1a: Ugly Cousin
+|-start|p1a: Ugly Cousin|move: Taunt
+|move|p1a: Ugly Cousin|Foul Play|p2a: Gyarados
+|-damage|p2a: Gyarados|145\/331
+|
+|-weather|none
+|turn|9
+|
+|move|p2a: Gyarados|Ice Fang|p1a: Ugly Cousin
+|-supereffective|p1a: Ugly Cousin
+|-damage|p1a: Ugly Cousin|201\/431
+|move|p1a: Ugly Cousin|Foul Play|p2a: Gyarados
+|-damage|p2a: Gyarados|14\/331
+|
+|turn|10
+|
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M|299\/299
+|switch|p1a: Little Sister|Alomomola, F|533\/533
+|
+|turn|11
+|
+|switch|p2a: Scizor|Scizor, M|281\/281
+|switch|p1a: Big Daddy|Hippowdon, M|419\/419
+|-weather|Sandstorm
+|
+|-weather|Sandstorm|[upkeep]
+|turn|12
+|
+|switch|p1a: Little Sister|Alomomola, F|533\/533
+|move|p2a: Scizor|Toxic|p1a: Little Sister
+|-status|p1a: Little Sister|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Little Sister|500\/533 tox|[from] sandstorm
+|-heal|p1a: Little Sister|533\/533 tox|[from] item: Leftovers
+|-damage|p1a: Little Sister|500\/533 tox|[from] psn
+|turn|13
+|
+|move|p1a: Little Sister|Scald|p2a: Scizor
+|-damage|p2a: Scizor|245\/281
+|move|p2a: Scizor|Swords Dance|p2a: Scizor
+|-boost|p2a: Scizor|atk|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Little Sister|467\/533 tox|[from] sandstorm
+|-heal|p2a: Scizor|262\/281|[from] item: Leftovers
+|-heal|p1a: Little Sister|500\/533 tox|[from] item: Leftovers
+|-damage|p1a: Little Sister|434\/533 tox|[from] psn
+|turn|14
+|
+|move|p1a: Little Sister|Scald|p2a: Scizor
+|-damage|p2a: Scizor|226\/281
+|move|p2a: Scizor|Swords Dance|p2a: Scizor
+|-boost|p2a: Scizor|atk|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Little Sister|401\/533 tox|[from] sandstorm
+|-heal|p2a: Scizor|243\/281|[from] item: Leftovers
+|-heal|p1a: Little Sister|434\/533 tox|[from] item: Leftovers
+|-damage|p1a: Little Sister|335\/533 tox|[from] psn
+|turn|15
+|c|âLumas|New meta ^^ ?
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Little Sister
+|-resisted|p1a: Little Sister
+|-damage|p1a: Little Sister|227\/533 tox
+|move|p1a: Little Sister|Scald|p2a: Scizor
+|-damage|p2a: Scizor|203\/281
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Little Sister|194\/533 tox|[from] sandstorm
+|-heal|p2a: Scizor|220\/281|[from] item: Leftovers
+|-heal|p1a: Little Sister|227\/533 tox|[from] item: Leftovers
+|-damage|p1a: Little Sister|95\/533 tox|[from] psn
+|turn|16
+|
+|switch|p1a: Robust Son|Skarmory, M|127\/333
+|move|p2a: Scizor|Bullet Punch|p1a: Robust Son
+|-resisted|p1a: Robust Son
+|-damage|p1a: Robust Son|50\/333
+|-damage|p2a: Scizor|174\/281|[from] item: Rocky Helmet|[of] p1a: Robust Son
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Scizor|191\/281|[from] item: Leftovers
+|turn|17
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Robust Son
+|-resisted|p1a: Robust Son
+|-damage|p1a: Robust Son|0 fnt
+|-damage|p2a: Scizor|145\/281|[from] item: Rocky Helmet|[of] p1a: Robust Son
+|faint|p1a: Robust Son
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Scizor|162\/281|[from] item: Leftovers
+|
+|switch|p1a: Little Sister|Alomomola, F|272\/533 tox
+|turn|18
+|
+|move|p1a: Little Sister|Scald|p2a: Scizor
+|-damage|p2a: Scizor|123\/281
+|-status|p2a: Scizor|brn
+|move|p2a: Scizor|Swords Dance|p2a: Scizor
+|-boost|p2a: Scizor|atk|2
+|
+|-weather|none
+|-heal|p2a: Scizor|140\/281 brn|[from] item: Leftovers
+|-heal|p1a: Little Sister|305\/533 tox|[from] item: Leftovers
+|-damage|p2a: Scizor|105\/281 brn|[from] brn
+|-damage|p1a: Little Sister|272\/533 tox|[from] psn
+|turn|19
+|
+|switch|p2a: Dragonite|Dragonite, F|323\/323
+|switch|p1a: Big Daddy|Hippowdon, M|419\/419
+|-weather|Sandstorm
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Dragonite|303\/323|[from] sandstorm
+|turn|20
+|
+|move|p2a: Dragonite|Dragon Dance|p2a: Dragonite
+|-boost|p2a: Dragonite|atk|1
+|-boost|p2a: Dragonite|spe|1
+|move|p1a: Big Daddy|Stealth Rock|p2a: Dragonite
+|-sidestart|p2: Johnny tots|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Dragonite|283\/323|[from] sandstorm
+|turn|21
+|
+|move|p2a: Dragonite|Dragon Dance|p2a: Dragonite
+|-boost|p2a: Dragonite|atk|1
+|-boost|p2a: Dragonite|spe|1
+|move|p1a: Big Daddy|Rock Slide|p2a: Dragonite
+|-supereffective|p2a: Dragonite
+|-damage|p2a: Dragonite|153\/323
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Dragonite|133\/323|[from] sandstorm
+|turn|22
+|
+|move|p2a: Dragonite|Ice Punch|p1a: Big Daddy
+|-supereffective|p1a: Big Daddy
+|-damage|p1a: Big Daddy|141\/419
+|move|p1a: Big Daddy|Rock Slide|p2a: Dragonite
+|-supereffective|p2a: Dragonite
+|-damage|p2a: Dragonite|0 fnt
+|faint|p2a: Dragonite
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Scizor|Scizor, M|105\/281 brn
+|-damage|p2a: Scizor|70\/281 brn|[from] Stealth Rock
+|turn|23
+|
+|move|p2a: Scizor|Defog|p1a: Big Daddy
+|-unboost|p1a: Big Daddy|evasion|1
+|-sideend|p2: Johnny tots|Stealth Rock|[from] move: Defog|[of] p2a: Scizor
+|move|p1a: Big Daddy|Slack Off|p1a: Big Daddy
+|-heal|p1a: Big Daddy|351\/419
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Scizor|87\/281 brn|[from] item: Leftovers
+|-damage|p2a: Scizor|52\/281 brn|[from] brn
+|turn|24
+|
+|move|p2a: Scizor|Toxic|p1a: Big Daddy
+|-status|p1a: Big Daddy|tox
+|move|p1a: Big Daddy|Stealth Rock|p2a: Scizor
+|-sidestart|p2: Johnny tots|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Scizor|69\/281 brn|[from] item: Leftovers
+|-damage|p2a: Scizor|34\/281 brn|[from] brn
+|-damage|p1a: Big Daddy|325\/419 tox|[from] psn
+|turn|25
+|c|âLumas|SD,toxic,Defog,Bullet punch O,o
+|c|âJohnny tots|haha
+|c|âJohnny tots|2 hustle people
+|c|âLumas|U- turn\/bullet punch roost\/defog
+|c|âLumas|Is better
+|c|âLumas|but np..
+|c|âJohnny tots|na
+|
+|move|p2a: Scizor|Defog|p1a: Big Daddy
+|-unboost|p1a: Big Daddy|evasion|1
+|-sideend|p2: Johnny tots|Stealth Rock|[from] move: Defog|[of] p2a: Scizor
+|move|p1a: Big Daddy|Earthquake|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|faint|p2a: Scizor
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Big Daddy|273\/419 tox|[from] psn
+|c|âJohnny tots|need max def and max spd
+|c|âLumas|OO
+|c|âLumas|OK
+|
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M|299\/299
+|turn|26
+|
+|switch|p1a: Ugly Cousin|Amoonguss, M|344\/431
+|move|p2a: Thundurus-Therian|Nasty Plot|p2a: Thundurus-Therian
+|-boost|p2a: Thundurus-Therian|spa|2
+|
+|-weather|none
+|turn|27
+|
+|move|p2a: Thundurus-Therian|Hidden Power|p1a: Ugly Cousin
+|-supereffective|p1a: Ugly Cousin
+|-damage|p1a: Ugly Cousin|102\/431
+|move|p1a: Ugly Cousin|Spore|p2a: Thundurus-Therian
+|-status|p2a: Thundurus-Therian|slp
+|
+|turn|28
+|
+|switch|p2a: Gyarados|Gyarados, F|14\/331
+|move|p1a: Ugly Cousin|Foul Play|p2a: Gyarados
+|-damage|p2a: Gyarados|0 fnt
+|faint|p2a: Gyarados
+|
+|c|âLumas|go zard X
+|
+|switch|p2a: Charizard|Charizard, M|297\/297
+|turn|29
+|
+|detailschange|p2a: Charizard|Charizard-Mega-X, M
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p2a: Charizard|Dragon Claw|p1a: Ugly Cousin
+|-damage|p1a: Ugly Cousin|0 fnt
+|faint|p1a: Ugly Cousin
+|
+|c|âLumas|DD
+|c|âLumas|Foul play <--
+|c|âLumas|:v
+|
+|switch|p1a: Big Daddy|Hippowdon, M|273\/419 tox
+|-weather|Sandstorm
+|turn|30
+|
+|move|p2a: Charizard|Dragon Dance|p2a: Charizard
+|-boost|p2a: Charizard|atk|1
+|-boost|p2a: Charizard|spe|1
+|move|p1a: Big Daddy|Earthquake|p2a: Charizard
+|-supereffective|p2a: Charizard
+|-damage|p2a: Charizard|61\/297
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Charizard|43\/297|[from] sandstorm
+|-damage|p1a: Big Daddy|247\/419 tox|[from] psn
+|turn|31
+|
+|move|p2a: Charizard|Dragon Claw|p1a: Big Daddy
+|-crit|p1a: Big Daddy
+|-damage|p1a: Big Daddy|0 fnt
+|faint|p1a: Big Daddy
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Charizard|25\/297|[from] sandstorm
+|
+|switch|p1a: Family's Dog|Stoutland, M|311\/311
+|turn|32
+|c|âLumas|gg ^^
+|
+|move|p1a: Family's Dog|Return|p2a: Charizard
+|-damage|p2a: Charizard|0 fnt
+|faint|p2a: Charizard
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M|299\/299 slp
+|turn|33
+|
+|move|p1a: Family's Dog|Return|p2a: Thundurus-Therian
+|-damage|p2a: Thundurus-Therian|0 fnt
+|faint|p2a: Thundurus-Therian
+|
+|win|Lumas
+|raw|Ladder updating...
+|raw|Lumas's rating: 1666 &rarr; <strong>1685<\/strong><br \/>(+19 for winning)
+|raw|Johnny tots's rating: 1644 &rarr; <strong>1626<\/strong><br \/>(-18 for losing)
+|leave|Johnny tots
+|player|p2

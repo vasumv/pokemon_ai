@@ -1,0 +1,217 @@
+|join|apokemonkid
+|join|DatIG
+|player|p1|apokemonkid|1
+|player|p2|DatIG|234
+|gametype|singles
+|gen|6
+|tier|ORAS OU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Haxorus, F
+|poke|p1|Jirachi
+|poke|p1|Metagross
+|poke|p1|Dragonite, F
+|poke|p1|Latios, M
+|poke|p1|Mamoswine, F
+|poke|p2|Salamence, M
+|poke|p2|Tyranitar, F
+|poke|p2|Excadrill, F
+|poke|p2|Thundurus, M
+|poke|p2|Keldeo-Resolute
+|poke|p2|Mamoswine, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Mamoswine|Mamoswine, F|362\/362
+|switch|p2a: BigMamo'sHouse|Mamoswine, M|361\/361
+|turn|1
+|
+|move|p1a: Mamoswine|Stealth Rock|p2a: BigMamo'sHouse
+|-sidestart|p2: DatIG|move: Stealth Rock
+|move|p2a: BigMamo'sHouse|Stealth Rock|p1a: Mamoswine
+|-sidestart|p1: apokemonkid|move: Stealth Rock
+|
+|turn|2
+|join|Mr. Monopoly
+|
+|move|p1a: Mamoswine|Earthquake|p2a: BigMamo'sHouse
+|-damage|p2a: BigMamo'sHouse|145\/361
+|move|p2a: BigMamo'sHouse|Earthquake|p1a: Mamoswine
+|-damage|p1a: Mamoswine|121\/362
+|
+|turn|3
+|
+|move|p1a: Mamoswine|Earthquake|p2a: BigMamo'sHouse
+|-damage|p2a: BigMamo'sHouse|0 fnt
+|faint|p2a: BigMamo'sHouse
+|
+|
+|switch|p2a: Excadrill|Excadrill, F|362\/362
+|-damage|p2a: Excadrill|351\/362|[from] Stealth Rock
+|turn|4
+|
+|move|p2a: Excadrill|Iron Head|p1a: Mamoswine
+|-supereffective|p1a: Mamoswine
+|-damage|p1a: Mamoswine|0 fnt
+|-damage|p2a: Excadrill|315\/362|[from] item: Life Orb
+|faint|p1a: Mamoswine
+|
+|
+|switch|p1a: Latios|Latios, M|302\/302
+|-damage|p1a: Latios|265\/302|[from] Stealth Rock
+|turn|5
+|
+|switch|p2a: Tea-Tar|Tyranitar, F|342\/342
+|-damage|p2a: Tea-Tar|300\/342|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p1a: Latios|Surf|p2a: Tea-Tar
+|-supereffective|p2a: Tea-Tar
+|-damage|p2a: Tea-Tar|96\/342
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latios|247\/302|[from] sandstorm
+|turn|6
+|
+|move|p2a: Tea-Tar|Pursuit|p1a: Latios
+|-supereffective|p1a: Latios
+|-damage|p1a: Latios|73\/302
+|move|p1a: Latios|Surf|p2a: Tea-Tar
+|-supereffective|p2a: Tea-Tar
+|-damage|p2a: Tea-Tar|0 fnt
+|faint|p2a: Tea-Tar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latios|55\/302|[from] sandstorm
+|
+|switch|p2a: Excadrill|Excadrill, F|315\/362
+|-damage|p2a: Excadrill|304\/362|[from] Stealth Rock
+|turn|7
+|
+|move|p2a: Excadrill|Iron Head|p1a: Latios
+|-damage|p1a: Latios|0 fnt
+|-damage|p2a: Excadrill|268\/362|[from] item: Life Orb
+|faint|p1a: Latios
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Haxorus|Haxorus, F|294\/294
+|-damage|p1a: Haxorus|258\/294|[from] Stealth Rock
+|-ability|p1a: Haxorus|Mold Breaker
+|turn|8
+|
+|move|p2a: Excadrill|Rapid Spin|p1a: Haxorus
+|-crit|p1a: Haxorus
+|-damage|p1a: Haxorus|206\/294
+|-sideend|p2: DatIG|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Excadrill
+|-damage|p2a: Excadrill|232\/362|[from] item: Life Orb
+|move|p1a: Haxorus|Earthquake|p2a: Excadrill
+|-supereffective|p2a: Excadrill
+|-damage|p2a: Excadrill|0 fnt
+|faint|p2a: Excadrill
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Haxorus|188\/294|[from] sandstorm
+|
+|switch|p2a: SalamiBagel|Salamence, M|331\/331
+|-ability|p2a: SalamiBagel|Intimidate|[of] p1a: Haxorus
+|-unboost|p1a: Haxorus|atk|1
+|turn|9
+|
+|detailschange|p2a: SalamiBagel|Salamence-Mega, M
+|message|Salamence has Mega Evolved into Mega Salamence!
+|move|p2a: SalamiBagel|Return|p1a: Haxorus
+|-damage|p1a: Haxorus|0 fnt
+|faint|p1a: Haxorus
+|
+|-weather|none
+|
+|switch|p1a: Jirachi|Jirachi|341\/341
+|-damage|p1a: Jirachi|320\/341|[from] Stealth Rock
+|turn|10
+|
+|switch|p2a: Dnerus|Thundurus, M|300\/300
+|move|p1a: Jirachi|Ice Punch|p2a: Dnerus
+|-supereffective|p2a: Dnerus
+|-damage|p2a: Dnerus|96\/300
+|
+|turn|11
+|
+|move|p2a: Dnerus|Thunder Wave|p1a: Jirachi
+|-status|p1a: Jirachi|par
+|move|p1a: Jirachi|Ice Punch|p2a: Dnerus
+|-supereffective|p2a: Dnerus
+|-damage|p2a: Dnerus|0 fnt
+|faint|p2a: Dnerus
+|
+|
+|switch|p2a: RainbowSparkle|Keldeo-Resolute|323\/323
+|turn|12
+|
+|switch|p1a: Metagross|Metagross|302\/302
+|-damage|p1a: Metagross|284\/302|[from] Stealth Rock
+|move|p2a: RainbowSparkle|Scald|p1a: Metagross
+|-damage|p1a: Metagross|41\/302
+|
+|turn|13
+|
+|detailschange|p1a: Metagross|Metagross-Mega
+|message|Metagross has Mega Evolved into Mega Metagross!
+|move|p2a: RainbowSparkle|Scald|p1a: Metagross
+|-damage|p1a: Metagross|0 fnt
+|faint|p1a: Metagross
+|
+|
+|switch|p1a: Dragonite|Dragonite, F|323\/323
+|-damage|p1a: Dragonite|243\/323|[from] Stealth Rock
+|turn|14
+|
+|move|p2a: RainbowSparkle|Scald|p1a: Dragonite
+|-resisted|p1a: Dragonite
+|-damage|p1a: Dragonite|135\/323
+|move|p1a: Dragonite|Outrage|p2a: RainbowSparkle
+|-crit|p2a: RainbowSparkle
+|-damage|p2a: RainbowSparkle|0 fnt
+|faint|p2a: RainbowSparkle
+|
+|
+|switch|p2a: SalamiBagel|Salamence-Mega, M|331\/331
+|turn|15
+|
+|move|p2a: SalamiBagel|Return|p1a: Dragonite
+|-damage|p1a: Dragonite|0 fnt
+|faint|p1a: Dragonite
+|
+|
+|switch|p1a: Jirachi|Jirachi|320\/341 par
+|-damage|p1a: Jirachi|299\/341 par|[from] Stealth Rock
+|turn|16
+|
+|move|p2a: SalamiBagel|Earthquake|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|19\/341 par
+|move|p1a: Jirachi|Ice Punch|p2a: SalamiBagel
+|-supereffective|p2a: SalamiBagel
+|-damage|p2a: SalamiBagel|47\/331
+|
+|turn|17
+|
+|move|p2a: SalamiBagel|Earthquake|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|faint|p1a: Jirachi
+|
+|win|DatIG
+|raw|Ladder updating...
+|leave|apokemonkid
+|player|p1
+|raw|apokemonkid's rating: 1180 &rarr; <strong>1156<\/strong><br \/>(-24 for losing)
+|raw|DatIG's rating: 1202 &rarr; <strong>1226<\/strong><br \/>(+24 for winning)

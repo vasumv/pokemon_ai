@@ -1,0 +1,281 @@
+|join|Alb_prova
+|join|orai
+|player|p1|Alb_prova|210
+|player|p2|orai|141
+|gametype|singles
+|gen|6
+|tier|ORAS OU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Jellicent, F
+|poke|p1|Chesnaught, M
+|poke|p1|Bisharp, M
+|poke|p1|Gallade, M
+|poke|p1|Heatran, M
+|poke|p1|Rhyperior, F
+|poke|p2|Amoonguss, M
+|poke|p2|Keldeo
+|poke|p2|Gothitelle, M
+|poke|p2|Skarmory, M
+|poke|p2|Chansey, F
+|poke|p2|Sableye, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Heatran|Heatran, M|323\/323
+|switch|p2a: Keldeo|Keldeo|323\/323
+|turn|1
+|
+|switch|p1a: Jellicent|Jellicent, F|404\/404
+|switch|p2a: Sableye|Sableye, M|304\/304
+|
+|turn|2
+|
+|switch|p1a: Heatran|Heatran, M|323\/323
+|detailschange|p2a: Sableye|Sableye-Mega, M
+|message|Sableye has Mega Evolved into Mega Sableye!
+|move|p2a: Sableye|Calm Mind|p2a: Sableye
+|-boost|p2a: Sableye|spa|1
+|-boost|p2a: Sableye|spd|1
+|
+|turn|3
+|
+|switch|p2a: Gothitelle|Gothitelle, M|344\/344
+|move|p1a: Heatran|Fire Blast|p2a: Gothitelle
+|-damage|p2a: Gothitelle|157\/344
+|
+|turn|4
+|
+|move|p1a: Heatran|Fire Blast|p2a: Gothitelle
+|-damage|p2a: Gothitelle|0 fnt
+|faint|p2a: Gothitelle
+|
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|turn|5
+|
+|switch|p1a: Chesnaught|Chesnaught, M|380\/380
+|move|p2a: Chansey|Stealth Rock|p1a: Chesnaught
+|-sidestart|p1: Alb_prova|move: Stealth Rock
+|
+|turn|6
+|
+|switch|p2a: Sableye|Sableye-Mega, M|304\/304
+|move|p1a: Chesnaught|Spikes|p2a: Sableye
+|move|p2a: Sableye|Spikes|p1a: Chesnaught|[from]Magic Bounce
+|-sidestart|p1: Alb_prova|Spikes
+|
+|turn|7
+|
+|switch|p1a: Heatran|Heatran, M|323\/323
+|-damage|p1a: Heatran|283\/323|[from] Spikes
+|-damage|p1a: Heatran|243\/323|[from] Stealth Rock
+|move|p2a: Sableye|Calm Mind|p2a: Sableye
+|-boost|p2a: Sableye|spa|1
+|-boost|p2a: Sableye|spd|1
+|
+|turn|8
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|move|p1a: Heatran|Stone Edge|p2a: Chansey
+|-damage|p2a: Chansey|613\/704
+|
+|turn|9
+|
+|switch|p1a: Jellicent|Jellicent, F|404\/404
+|-damage|p1a: Jellicent|354\/404|[from] Stealth Rock
+|-damage|p1a: Jellicent|304\/404|[from] Spikes
+|move|p2a: Chansey|Seismic Toss|p1a: Jellicent
+|-immune|p1a: Jellicent|[msg]
+|
+|-heal|p1a: Jellicent|329\/404|[from] item: Leftovers
+|turn|10
+|
+|switch|p2a: Sableye|Sableye-Mega, M|304\/304
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Sableye
+|move|p2a: Sableye|Will-O-Wisp|p1a: Jellicent|[from]Magic Bounce|[miss]
+|-miss|p2a: Sableye|p1a: Jellicent
+|
+|-heal|p1a: Jellicent|354\/404|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Jellicent|Scald|p2a: Sableye
+|-damage|p2a: Sableye|223\/304
+|-status|p2a: Sableye|brn
+|move|p2a: Sableye|Calm Mind|p2a: Sableye
+|-boost|p2a: Sableye|spa|1
+|-boost|p2a: Sableye|spd|1
+|
+|-heal|p1a: Jellicent|379\/404|[from] item: Leftovers
+|-damage|p2a: Sableye|185\/304 brn|[from] brn
+|turn|12
+|
+|switch|p1a: Bisharp|Bisharp, M|272\/272
+|-damage|p1a: Bisharp|238\/272|[from] Spikes
+|-damage|p1a: Bisharp|221\/272|[from] Stealth Rock
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|304\/304 brn
+|
+|-damage|p2a: Sableye|266\/304 brn|[from] brn
+|turn|13
+|
+|move|p1a: Bisharp|Iron Head|p2a: Sableye
+|-damage|p2a: Sableye|156\/304 brn
+|-damage|p1a: Bisharp|194\/272|[from] item: Life Orb
+|move|p2a: Sableye|Dazzling Gleam|p1a: Bisharp
+|-damage|p1a: Bisharp|92\/272
+|
+|-damage|p2a: Sableye|118\/304 brn|[from] brn
+|turn|14
+|
+|move|p1a: Bisharp|Pursuit|p2a: Sableye|[from]Pursuit
+|-damage|p2a: Sableye|0 fnt
+|-damage|p1a: Bisharp|65\/272|[from] item: Life Orb
+|faint|p2a: Sableye
+|
+|
+|switch|p2a: Keldeo|Keldeo|323\/323
+|turn|15
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|move|p1a: Bisharp|Stealth Rock|p2a: Amoonguss
+|-sidestart|p2: orai|move: Stealth Rock
+|
+|turn|16
+|
+|move|p1a: Bisharp|Iron Head|p2a: Amoonguss
+|-damage|p2a: Amoonguss|257\/432
+|-damage|p1a: Bisharp|38\/272|[from] item: Life Orb
+|move|p2a: Amoonguss|Giga Drain|p1a: Bisharp
+|-resisted|p1a: Bisharp
+|-damage|p1a: Bisharp|0 fnt
+|-heal|p2a: Amoonguss|276\/432|[from] drain|[of] p1a: Bisharp
+|faint|p1a: Bisharp
+|
+|-heal|p2a: Amoonguss|303\/432|[from] item: Black Sludge
+|
+|switch|p1a: Heatran|Heatran, M|243\/323
+|-damage|p1a: Heatran|203\/323|[from] Stealth Rock
+|-damage|p1a: Heatran|163\/323|[from] Spikes
+|turn|17
+|
+|switch|p1a: Gallade|Gallade, M|277\/277
+|-damage|p1a: Gallade|243\/277|[from] Spikes
+|-damage|p1a: Gallade|226\/277|[from] Stealth Rock
+|switch|p2a: Chansey|Chansey, F|613\/704
+|-damage|p2a: Chansey|525\/704|[from] Stealth Rock
+|
+|turn|18
+|
+|switch|p2a: Skarmory|Skarmory, M|334\/334
+|-damage|p2a: Skarmory|293\/334|[from] Stealth Rock
+|detailschange|p1a: Gallade|Gallade-Mega, M
+|message|Gallade has Mega Evolved into Mega Gallade!
+|move|p1a: Gallade|Close Combat|p2a: Skarmory
+|-damage|p2a: Skarmory|155\/334
+|-unboost|p1a: Gallade|def|1
+|-unboost|p1a: Gallade|spd|1
+|
+|turn|19
+|
+|switch|p1a: Rhyperior|Rhyperior, F|424\/424
+|-damage|p1a: Rhyperior|398\/424|[from] Stealth Rock
+|-damage|p1a: Rhyperior|345\/424|[from] Spikes
+|move|p2a: Skarmory|Roost|p2a: Skarmory
+|-heal|p2a: Skarmory|322\/334
+|
+|-heal|p1a: Rhyperior|371\/424|[from] item: Leftovers
+|turn|20
+|
+|move|p1a: Rhyperior|Fire Punch|p2a: Skarmory
+|-supereffective|p2a: Skarmory
+|-damage|p2a: Skarmory|216\/334
+|move|p2a: Skarmory|Whirlwind|p1a: Rhyperior
+|drag|p1a: Gallade|Gallade-Mega, M|226\/277
+|-damage|p1a: Gallade|209\/277|[from] Stealth Rock
+|-damage|p1a: Gallade|175\/277|[from] Spikes
+|
+|turn|21
+|
+|move|p1a: Gallade|Close Combat|p2a: Skarmory
+|-damage|p2a: Skarmory|71\/334
+|-unboost|p1a: Gallade|def|1
+|-unboost|p1a: Gallade|spd|1
+|move|p2a: Skarmory|Roost|p2a: Skarmory
+|-heal|p2a: Skarmory|238\/334
+|
+|turn|22
+|
+|move|p1a: Gallade|Swords Dance|p1a: Gallade
+|-boost|p1a: Gallade|atk|2
+|move|p2a: Skarmory|Roost|p2a: Skarmory
+|-heal|p2a: Skarmory|334\/334
+|
+|turn|23
+|
+|move|p1a: Gallade|Close Combat|p2a: Skarmory
+|-damage|p2a: Skarmory|43\/334
+|-unboost|p1a: Gallade|def|1
+|-unboost|p1a: Gallade|spd|1
+|move|p2a: Skarmory|Brave Bird|p1a: Gallade
+|-supereffective|p1a: Gallade
+|-damage|p1a: Gallade|0 fnt
+|-damage|p2a: Skarmory|0 fnt|[from] recoil|[of] p1a: Gallade
+|faint|p1a: Gallade
+|faint|p2a: Skarmory
+|
+|
+|switch|p1a: Jellicent|Jellicent, F|379\/404
+|-damage|p1a: Jellicent|329\/404|[from] Spikes
+|-damage|p1a: Jellicent|279\/404|[from] Stealth Rock
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-damage|p2a: Amoonguss|378\/432|[from] Stealth Rock
+|turn|24
+|
+|move|p1a: Jellicent|Taunt|p2a: Amoonguss
+|-start|p2a: Amoonguss|move: Taunt
+|cant|p2a: Amoonguss|move: Taunt|Spore
+|
+|-heal|p1a: Jellicent|304\/404|[from] item: Leftovers
+|-heal|p2a: Amoonguss|405\/432|[from] item: Black Sludge
+|turn|25
+|
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Amoonguss
+|-status|p2a: Amoonguss|brn
+|move|p2a: Amoonguss|Giga Drain|p1a: Jellicent
+|-supereffective|p1a: Jellicent
+|-damage|p1a: Jellicent|166\/404
+|-heal|p2a: Amoonguss|432\/432 brn|[from] drain|[of] p1a: Jellicent
+|
+|-heal|p1a: Jellicent|191\/404|[from] item: Leftovers
+|-damage|p2a: Amoonguss|378\/432 brn|[from] brn
+|turn|26
+|
+|move|p1a: Jellicent|Recover|p1a: Jellicent
+|-heal|p1a: Jellicent|393\/404
+|move|p2a: Amoonguss|Giga Drain|p1a: Jellicent
+|-supereffective|p1a: Jellicent
+|-damage|p1a: Jellicent|247\/404
+|-heal|p2a: Amoonguss|432\/432 brn|[from] drain|[of] p1a: Jellicent
+|
+|-heal|p1a: Jellicent|272\/404|[from] item: Leftovers
+|-damage|p2a: Amoonguss|378\/432 brn|[from] brn
+|-end|p2a: Amoonguss|move: Taunt
+|turn|27
+|-message|orai forfeited.
+|
+|win|Alb_prova
+|raw|Ladder updating...
+|raw|Alb_prova's rating: 1288 &rarr; <strong>1320<\/strong><br \/>(+32 for winning)
+|raw|orai's rating: 1394 &rarr; <strong>1368<\/strong><br \/>(-26 for losing)
+|leave|orai
+|player|p2

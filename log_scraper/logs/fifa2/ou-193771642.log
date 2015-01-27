@@ -1,0 +1,323 @@
+|join|fifa2
+|join|lukewarmaok
+|player|p1|fifa2|169
+|player|p2|lukewarmaok|184
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Ninetales, F
+|poke|p1|Donphan, F
+|poke|p1|Heatran, M
+|poke|p1|Gyarados, F
+|poke|p1|Venusaur, M
+|poke|p1|Dragonite, M
+|poke|p2|Scolipede, M
+|poke|p2|Kingdra, F
+|poke|p2|Cloyster, M
+|poke|p2|Nidoking, M
+|poke|p2|Sigilyph, F
+|poke|p2|Klefki, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|c|âlukewarmaok|glhf
+|
+|start
+|switch|p1a: Ninetales|Ninetales, F|287\/287
+|switch|p2a: Testudo|Klefki, F|318\/318
+|-weather|SunnyDay
+|turn|1
+|
+|switch|p1a: Donphan|Donphan, F|361\/361
+|move|p2a: Testudo|Light Screen|p2a: Testudo
+|-sidestart|p2: lukewarmaok|move: Light Screen
+|
+|-weather|SunnyDay|[upkeep]
+|turn|2
+|
+|move|p2a: Testudo|Reflect|p2a: Testudo
+|-sidestart|p2: lukewarmaok|Reflect
+|move|p1a: Donphan|Earthquake|p2a: Testudo
+|-supereffective|p2a: Testudo
+|-damage|p2a: Testudo|168\/318
+|
+|-weather|SunnyDay|[upkeep]
+|turn|3
+|
+|switch|p1a: Heatran|Heatran, M|385\/385
+|move|p2a: Testudo|Toxic|p1a: Heatran
+|-fail|p1a: Heatran
+|
+|-weather|SunnyDay|[upkeep]
+|turn|4
+|
+|switch|p2a: Maelstrom|Kingdra, F|354\/354
+|move|p1a: Heatran|Taunt|p2a: Maelstrom
+|-start|p2a: Maelstrom|move: Taunt
+|
+|-weather|SunnyDay|[upkeep]
+|turn|5
+|
+|switch|p2a: Agamemnon|Nidoking, M|304\/304
+|move|p1a: Heatran|Stealth Rock|p2a: Agamemnon
+|-sidestart|p2: lukewarmaok|move: Stealth Rock
+|
+|-weather|SunnyDay|[upkeep]
+|turn|6
+|
+|switch|p1a: Gyarados|Gyarados, F|394\/394
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Agamemnon
+|-unboost|p2a: Agamemnon|atk|1
+|move|p2a: Agamemnon|Thunderbolt|p1a: Gyarados
+|-crit|p1a: Gyarados
+|-supereffective|p1a: Gyarados
+|-damage|p1a: Gyarados|0 fnt
+|faint|p1a: Gyarados
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p1a: Donphan|Donphan, F|361\/361
+|turn|7
+|
+|move|p2a: Agamemnon|Ice Beam|p1a: Donphan
+|-supereffective|p1a: Donphan
+|-activate|p1a: Donphan|Sturdy
+|-damage|p1a: Donphan|1\/361
+|move|p1a: Donphan|Earthquake|p2a: Agamemnon
+|-supereffective|p2a: Agamemnon
+|-damage|p2a: Agamemnon|91\/304
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Donphan|23\/361|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: Donphan|Ice Shard|p2a: Agamemnon
+|-supereffective|p2a: Agamemnon
+|-damage|p2a: Agamemnon|27\/304
+|move|p2a: Agamemnon|Flamethrower|p1a: Donphan
+|-damage|p1a: Donphan|0 fnt
+|faint|p1a: Donphan
+|
+|-weather|none
+|-sideend|p2: lukewarmaok|move: Light Screen
+|
+|switch|p1a: Ninetales|Ninetales, F|287\/287
+|-weather|SunnyDay
+|turn|9
+|
+|move|p1a: Ninetales|Energy Ball|p2a: Agamemnon
+|-damage|p2a: Agamemnon|0 fnt
+|faint|p2a: Agamemnon
+|
+|-weather|SunnyDay|[upkeep]
+|-sideend|p2: lukewarmaok|Reflect
+|
+|switch|p2a: Testudo|Klefki, F|168\/318
+|-damage|p2a: Testudo|149\/318|[from] Stealth Rock
+|turn|10
+|
+|switch|p1a: Heatran|Heatran, M|385\/385
+|move|p2a: Testudo|Light Screen|p2a: Testudo
+|-sidestart|p2: lukewarmaok|move: Light Screen
+|
+|-weather|SunnyDay|[upkeep]
+|turn|11
+|
+|move|p2a: Testudo|Thunder Wave|p1a: Heatran
+|-status|p1a: Heatran|par
+|cant|p1a: Heatran|par
+|
+|-weather|SunnyDay|[upkeep]
+|turn|12
+|
+|move|p2a: Testudo|Reflect|p2a: Testudo
+|-sidestart|p2: lukewarmaok|Reflect
+|move|p1a: Heatran|Lava Plume|p2a: Testudo
+|-supereffective|p2a: Testudo
+|-damage|p2a: Testudo|0 fnt
+|faint|p2a: Testudo
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p2a: Maelstrom|Kingdra, F|354\/354
+|-damage|p2a: Maelstrom|310\/354|[from] Stealth Rock
+|turn|13
+|
+|move|p2a: Maelstrom|Focus Energy|p2a: Maelstrom
+|-start|p2a: Maelstrom|move: Focus Energy
+|cant|p1a: Heatran|par
+|
+|-weather|SunnyDay|[upkeep]
+|turn|14
+|
+|move|p2a: Maelstrom|Surf|p1a: Heatran
+|-crit|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|157\/385 par
+|cant|p1a: Heatran|par
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Heatran|181\/385 par|[from] item: Leftovers
+|turn|15
+|
+|move|p2a: Maelstrom|Draco Meteor|p1a: Heatran
+|-crit|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|25\/385 par
+|-unboost|p2a: Maelstrom|spa|2
+|cant|p1a: Heatran|par
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Heatran|49\/385 par|[from] item: Leftovers
+|turn|16
+|
+|move|p2a: Maelstrom|Surf|p1a: Heatran
+|-crit|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|-weather|none
+|
+|switch|p1a: Ninetales|Ninetales, F|287\/287
+|-weather|SunnyDay
+|turn|17
+|
+|move|p1a: Ninetales|Will-O-Wisp|p2a: Maelstrom
+|-status|p2a: Maelstrom|brn
+|move|p2a: Maelstrom|Draco Meteor|p1a: Ninetales|[miss]
+|-miss|p2a: Maelstrom|p1a: Ninetales
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p2a: Maelstrom|266\/354 brn|[from] brn
+|-sideend|p2: lukewarmaok|move: Light Screen
+|turn|18
+|
+|move|p1a: Ninetales|Energy Ball|p2a: Maelstrom
+|-damage|p2a: Maelstrom|186\/354 brn
+|move|p2a: Maelstrom|Draco Meteor|p1a: Ninetales
+|-crit|p1a: Ninetales
+|-damage|p1a: Ninetales|0 fnt
+|-unboost|p2a: Maelstrom|spa|2
+|faint|p1a: Ninetales
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p2a: Maelstrom|142\/354 brn|[from] brn
+|
+|switch|p1a: Venusaur|Venusaur, M|338\/338
+|turn|19
+|
+|move|p1a: Venusaur|Sludge Bomb|p2a: Maelstrom
+|-damage|p2a: Maelstrom|0 fnt
+|faint|p2a: Maelstrom
+|
+|-weather|SunnyDay|[upkeep]
+|-sideend|p2: lukewarmaok|Reflect
+|
+|switch|p2a: Kamikaze|Sigilyph, F|348\/348
+|turn|20
+|
+|move|p1a: Venusaur|Growth|p1a: Venusaur
+|-boost|p1a: Venusaur|atk|2
+|-boost|p1a: Venusaur|spa|2
+|move|p2a: Kamikaze|Cosmic Power|p2a: Kamikaze
+|-boost|p2a: Kamikaze|def|1
+|-boost|p2a: Kamikaze|spd|1
+|
+|-weather|SunnyDay|[upkeep]
+|-status|p2a: Kamikaze|brn|[from] item: Flame Orb
+|turn|21
+|
+|move|p1a: Venusaur|Sludge Bomb|p2a: Kamikaze
+|-damage|p2a: Kamikaze|179\/348 brn
+|move|p2a: Kamikaze|Psycho Shift|p1a: Venusaur
+|-status|p1a: Venusaur|brn
+|-curestatus|p2a: Kamikaze|brn
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Venusaur|296\/338 brn|[from] brn
+|-status|p2a: Kamikaze|brn|[from] item: Flame Orb
+|turn|22
+|
+|move|p1a: Venusaur|Sludge Bomb|p2a: Kamikaze
+|-damage|p2a: Kamikaze|19\/348 brn
+|move|p2a: Kamikaze|Cosmic Power|p2a: Kamikaze
+|-boost|p2a: Kamikaze|def|1
+|-boost|p2a: Kamikaze|spd|1
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Venusaur|254\/338 brn|[from] brn
+|turn|23
+|
+|move|p1a: Venusaur|Giga Drain|p2a: Kamikaze
+|-resisted|p2a: Kamikaze
+|-damage|p2a: Kamikaze|0 fnt
+|-heal|p1a: Venusaur|264\/338 brn|[from] drain|[of] p2a: Kamikaze
+|faint|p2a: Kamikaze
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Venusaur|222\/338 brn|[from] brn
+|
+|switch|p2a: Blitzkrieg|Scolipede, M|300\/300
+|-damage|p2a: Blitzkrieg|225\/300|[from] Stealth Rock
+|turn|24
+|
+|detailschange|p1a: Venusaur|Venusaur-Mega, M
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p1a: Venusaur|Hidden Power|p2a: Blitzkrieg
+|-supereffective|p2a: Blitzkrieg
+|-damage|p2a: Blitzkrieg|0 fnt
+|faint|p2a: Blitzkrieg
+|
+|-weather|none
+|-damage|p1a: Venusaur|180\/338 brn|[from] brn
+|
+|switch|p2a: Yamato|Cloyster, M|242\/242
+|-damage|p2a: Yamato|182\/242|[from] Stealth Rock
+|turn|25
+|
+|move|p2a: Yamato|Icicle Spear|p1a: Venusaur
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|148\/338 brn
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|116\/338 brn
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|80\/338 brn
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|48\/338 brn
+|-crit|p1a: Venusaur
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|0 fnt
+|-hitcount|p1a: Venusaur|5
+|faint|p1a: Venusaur
+|
+|
+|switch|p1a: Dragonite|Dragonite, M|323\/323
+|turn|26
+|
+|move|p1a: Dragonite|Outrage|p2a: Yamato
+|-damage|p2a: Yamato|31\/242
+|move|p2a: Yamato|Icicle Spear|p1a: Dragonite
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|237\/323
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|53\/323
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|0 fnt
+|-hitcount|p1a: Dragonite|3
+|faint|p1a: Dragonite
+|
+|win|lukewarmaok
+|raw|Ladder updating...
+|c|âlukewarmaok|gg
+|raw|fifa2's rating: 1564 &rarr; <strong>1543<\/strong><br \/>(-21 for losing)
+|raw|lukewarmaok's rating: 1539 &rarr; <strong>1560<\/strong><br \/>(+21 for winning)

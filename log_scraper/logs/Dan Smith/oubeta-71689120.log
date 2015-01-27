@@ -1,0 +1,220 @@
+|join|Nimcakes
+|join|Dan Smith
+|player|p1|Nimcakes|1
+|player|p2|Dan Smith|169
+|gametype|singles
+|tier|OU (beta)
+|rated
+|clearpoke
+|poke|p1|Zoroark, M
+|poke|p1|Lucario, M
+|poke|p1|Dragonite, F
+|poke|p1|Gengar, M
+|poke|p1|Mamoswine, F, shiny
+|poke|p1|Heliolisk, M
+|poke|p2|Tyranitar, F
+|poke|p2|Lucario, M
+|poke|p2|Rotom-Wash
+|poke|p2|Clefable, F
+|poke|p2|Gliscor, F
+|poke|p2|Mienshao, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|join|Leroy Jetson
+|
+|start
+|switch|p1a: Mamoswine|Mamoswine, F, shiny|424\/424
+|switch|p2a: Tyranitar|Tyranitar, F|341\/341
+|-weather|Sandstorm
+|turn|1
+|callback|decision
+|
+|move|p2a: Tyranitar|Stealth Rock|p1a: Mamoswine
+|-sidestart|p1: Nimcakes|move: Stealth Rock
+|move|p1a: Mamoswine|Earthquake|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-enditem|p2a: Tyranitar|Focus Sash
+|-damage|p2a: Tyranitar|1\/341
+|
+|-weather|Sandstorm|[upkeep]
+|turn|2
+|callback|decision
+|
+|move|p2a: Tyranitar|Crunch|p1a: Mamoswine
+|-damage|p1a: Mamoswine|274\/424
+|move|p1a: Mamoswine|Stealth Rock|p2a: Tyranitar
+|-sidestart|p2: Dan Smith|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|3
+|callback|decision
+|
+|move|p1a: Mamoswine|Ice Shard|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Mienshao|Mienshao, F|272\/272
+|-damage|p2a: Mienshao|255\/272|[from] Stealth Rock
+|turn|4
+|callback|decision
+|
+|move|p2a: Mienshao|U-turn|p1a: Mamoswine
+|-damage|p1a: Mamoswine|140\/424
+|-damage|p2a: Mienshao|228\/272|[from] item: Life Orb
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|299\/299
+|-damage|p2a: Rotom-Wash|262\/299|[from] Stealth Rock
+|move|p1a: Mamoswine|Earthquake|p2a: Rotom-Wash
+|-immune|p2a: Rotom-Wash|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Rotom-Wash|244\/299|[from] sandstorm
+|turn|5
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Mamoswine
+|-supereffective|p1a: Mamoswine
+|-damage|p1a: Mamoswine|0 fnt
+|faint|p1a: Mamoswine
+|
+|-weather|none
+|callback|decision
+|
+|switch|p1a: Heliolisk|Heliolisk, M|266\/266
+|-damage|p1a: Heliolisk|233\/266|[from] Stealth Rock
+|turn|6
+|callback|decision
+|
+|switch|p2a: Clefable|Clefable, F|394\/394
+|move|p1a: Heliolisk|Volt Switch|p2a: Clefable
+|-damage|p2a: Clefable|210\/394
+|callback|decision
+|
+|switch|p1a: Lucario|Lucario, M|261\/261
+|-damage|p1a: Lucario|229\/261|[from] Stealth Rock
+|
+|-heal|p2a: Clefable|234\/394|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p1a: Lucario|Substitute|p1a: Lucario
+|-start|p1a: Lucario|Substitute
+|-damage|p1a: Lucario|164\/261
+|move|p2a: Clefable|Fire Blast|p1a: Lucario
+|-end|p1a: Lucario|Substitute
+|
+|-heal|p2a: Clefable|258\/394|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, F|354\/354
+|-damage|p2a: Gliscor|310\/354|[from] Stealth Rock
+|move|p1a: Lucario|Nasty Plot|p1a: Lucario
+|-boost|p1a: Lucario|spa|2
+|
+|-activate|p2a: Gliscor|item: Toxic Orb
+|-status|p2a: Gliscor|tox
+|turn|9
+|callback|decision
+|
+|move|p1a: Lucario|Dark Pulse|p2a: Gliscor
+|-damage|p2a: Gliscor|0 fnt
+|faint|p2a: Gliscor
+|
+|callback|decision
+|
+|switch|p2a: Mienshao|Mienshao, F|272\/272
+|-damage|p2a: Mienshao|255\/272|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|move|p1a: Lucario|Dark Pulse|p2a: Mienshao
+|-resisted|p2a: Mienshao
+|-damage|p2a: Mienshao|51\/272
+|move|p2a: Mienshao|Drain Punch|p1a: Lucario
+|-crit|p1a: Lucario
+|-supereffective|p1a: Lucario
+|replace|p1a: Zoroark|Zoroark, M|164\/261
+|-damage|p1a: Zoroark|0 fnt
+|-heal|p2a: Mienshao|133\/272|[from] drain|[of] p1a: Zoroark
+|-damage|p2a: Mienshao|106\/272|[from] item: Life Orb
+|faint|p1a: Zoroark
+|
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, F|386\/386
+|-damage|p1a: Dragonite|290\/386|[from] Stealth Rock
+|turn|11
+|callback|decision
+|
+|move|p2a: Mienshao|Stone Edge|p1a: Dragonite
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|0 fnt
+|-damage|p2a: Mienshao|79\/272|[from] item: Life Orb
+|faint|p1a: Dragonite
+|
+|callback|decision
+|
+|switch|p1a: Lucario|Lucario, M|281\/281
+|-damage|p1a: Lucario|273\/281|[from] Stealth Rock
+|turn|12
+|callback|decision
+|
+|-formechange|p1a: Lucario|Lucario-Mega
+|message|Lucario has Mega Evolved into Mega Lucario!
+|move|p1a: Lucario|Bullet Punch|p2a: Mienshao
+|-damage|p2a: Mienshao|0 fnt
+|faint|p2a: Mienshao
+|
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|244\/299
+|-damage|p2a: Rotom-Wash|207\/299|[from] Stealth Rock
+|turn|13
+|callback|decision
+|
+|switch|p1a: Heliolisk|Heliolisk, M|233\/266
+|-damage|p1a: Heliolisk|200\/266|[from] Stealth Rock
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Heliolisk
+|-heal|p1a: Heliolisk|266\/266|[from] ability: Dry Skin|[of] p2a: Rotom-Wash
+|
+|turn|14
+|callback|decision
+|
+|move|p1a: Heliolisk|Thunderbolt|p2a: Rotom-Wash
+|-crit|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|callback|decision
+|
+|switch|p2a: Lucario|Lucario, M|282\/282
+|-damage|p2a: Lucario|274\/282|[from] Stealth Rock
+|turn|15
+|callback|decision
+|
+|-formechange|p2a: Lucario|Lucario-Mega
+|message|Lucario has Mega Evolved into Mega Lucario!
+|move|p1a: Heliolisk|Thunderbolt|p2a: Lucario
+|-damage|p2a: Lucario|0 fnt
+|faint|p2a: Lucario
+|
+|callback|decision
+|-message|Dan Smith forfeited.
+|
+|win|Nimcakes
+|raw|Ladder updating...
+|leave|Dan Smith
+|player|p2
+|raw|Nimcakes's rating: 1718 &rarr; <strong>1726<\/strong><br \/>(+8 for winning)
+|raw|Dan Smith's rating: 1801 &rarr; <strong>1741<\/strong><br \/>(-60 for losing)

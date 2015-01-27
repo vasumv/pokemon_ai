@@ -1,0 +1,353 @@
+|join|AC4Heavy
+|join|BenTheDemon
+|player|p1|AC4Heavy|265
+|player|p2|BenTheDemon|240
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Tyranitar, M
+|poke|p1|Talonflame, M
+|poke|p1|Landorus-Therian, M
+|poke|p1|Rotom-Wash
+|poke|p1|Latias, F
+|poke|p1|Heatran, M
+|poke|p2|Dragonite, M
+|poke|p2|Rotom-Wash
+|poke|p2|Aegislash, M
+|poke|p2|Charizard, M
+|poke|p2|Excadrill, M
+|poke|p2|Gengar, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Tyranitar|Tyranitar, M|341\/341
+|switch|p2a: Flame Man|Charizard, M|298\/298
+|-weather|Sandstorm
+|turn|1
+|
+|-formechange|p2a: Flame Man|Charizard-Mega-Y
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|-formechange|p1a: Tyranitar|Tyranitar-Mega
+|message|Tyranitar has Mega Evolved into Mega Tyranitar!
+|-weather|Sandstorm
+|move|p2a: Flame Man|Focus Blast|p1a: Tyranitar|[miss]
+|-miss|p2a: Flame Man|p1a: Tyranitar
+|move|p1a: Tyranitar|Stone Edge|p2a: Flame Man
+|-supereffective|p2a: Flame Man
+|-damage|p2a: Flame Man|0 fnt
+|faint|p2a: Flame Man
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Shadow Man|Gengar, M|262\/262
+|turn|2
+|
+|switch|p1a: Heatran|Heatran, M|385\/385
+|move|p2a: Shadow Man|Counter|p1a: Heatran
+|-fail|p1a: Heatran
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Shadow Man|246\/262|[from] sandstorm
+|turn|3
+|
+|move|p2a: Shadow Man|Shadow Ball|p1a: Heatran
+|-damage|p1a: Heatran|294\/385
+|move|p1a: Heatran|Lava Plume|p2a: Shadow Man
+|-damage|p2a: Shadow Man|107\/262
+|-status|p2a: Shadow Man|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Shadow Man|91\/262 brn|[from] sandstorm
+|-heal|p1a: Heatran|318\/385|[from] item: Leftovers
+|-damage|p2a: Shadow Man|59\/262 brn|[from] brn
+|turn|4
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Shadow Man|Destiny Bond|p2a: Shadow Man
+|-singlemove|p2a: Shadow Man|Destiny Bond
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Shadow Man|43\/262 brn|[from] sandstorm
+|-heal|p1a: Heatran|342\/385|[from] item: Leftovers
+|-damage|p2a: Shadow Man|11\/262 brn|[from] brn
+|turn|5
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-fail|p1a: Heatran
+|move|p2a: Shadow Man|Shadow Ball|p1a: Heatran
+|-damage|p1a: Heatran|239\/385
+|
+|-weather|none
+|-heal|p1a: Heatran|263\/385|[from] item: Leftovers
+|-damage|p2a: Shadow Man|0 fnt|[from] brn
+|faint|p2a: Shadow Man
+|
+|switch|p2a: Sword Man|Aegislash, M|324\/324
+|turn|6
+|
+|move|p1a: Heatran|Lava Plume|p2a: Sword Man
+|-supereffective|p2a: Sword Man
+|-damage|p2a: Sword Man|144\/324
+|-enditem|p2a: Sword Man|Weakness Policy
+|-boost|p2a: Sword Man|atk|2|[from] item: Weakness Policy
+|-boost|p2a: Sword Man|spa|2|[from] item: Weakness Policy
+|-status|p2a: Sword Man|brn
+|-formechange|p2a: Sword Man|Aegislash-Blade
+|move|p2a: Sword Man|Sacred Sword|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|23\/385
+|
+|-heal|p1a: Heatran|47\/385|[from] item: Leftovers
+|-damage|p2a: Sword Man|104\/324 brn|[from] brn
+|turn|7
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Sword Man|Shadow Sneak|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-heal|p1a: Heatran|71\/385|[from] item: Leftovers
+|-damage|p2a: Sword Man|64\/324 brn|[from] brn
+|turn|8
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|381\/381
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Sword Man
+|-unboost|p2a: Sword Man|atk|1
+|move|p2a: Sword Man|Shadow Sneak|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|323\/381
+|
+|-heal|p1a: Landorus-Therian|346\/381|[from] item: Leftovers
+|-damage|p2a: Sword Man|24\/324 brn|[from] brn
+|turn|9
+|
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Sword Man
+|-sidestart|p2: BenTheDemon|move: Stealth Rock
+|move|p2a: Sword Man|Shadow Ball|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|33\/381
+|
+|-heal|p1a: Landorus-Therian|56\/381|[from] item: Leftovers
+|-damage|p2a: Sword Man|0 fnt|[from] brn
+|faint|p2a: Sword Man
+|
+|switch|p2a: Elec Man|Rotom-Wash|304\/304
+|-damage|p2a: Elec Man|266\/304|[from] Stealth Rock
+|turn|10
+|
+|move|p2a: Elec Man|Hydro Pump|p1a: Landorus-Therian
+|-supereffective|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|faint|p1a: Landorus-Therian
+|
+|-heal|p2a: Elec Man|285\/304|[from] item: Leftovers
+|
+|switch|p1a: Talonflame|Talonflame, M|297\/297
+|turn|11
+|
+|move|p1a: Talonflame|U-turn|p2a: Elec Man
+|-damage|p2a: Elec Man|219\/304
+|
+|switch|p1a: Latias|Latias, F|301\/301
+|move|p2a: Elec Man|Thunderbolt|p1a: Latias
+|-resisted|p1a: Latias
+|-damage|p1a: Latias|247\/301
+|
+|-heal|p1a: Latias|265\/301|[from] item: Leftovers
+|-heal|p2a: Elec Man|238\/304|[from] item: Leftovers
+|turn|12
+|
+|move|p1a: Latias|Psyshock|p2a: Elec Man
+|-damage|p2a: Elec Man|123\/304
+|move|p2a: Elec Man|Will-O-Wisp|p1a: Latias
+|-status|p1a: Latias|brn
+|
+|-heal|p1a: Latias|283\/301 brn|[from] item: Leftovers
+|-heal|p2a: Elec Man|142\/304|[from] item: Leftovers
+|-damage|p1a: Latias|246\/301 brn|[from] brn
+|turn|13
+|
+|switch|p2a: Drill Man|Excadrill, M|405\/405
+|-damage|p2a: Drill Man|393\/405|[from] Stealth Rock
+|-ability|p2a: Drill Man|Mold Breaker
+|move|p1a: Latias|Draco Meteor|p2a: Drill Man
+|-resisted|p2a: Drill Man
+|-damage|p2a: Drill Man|294\/405
+|-unboost|p1a: Latias|spa|2
+|
+|-heal|p1a: Latias|264\/301 brn|[from] item: Leftovers
+|-heal|p2a: Drill Man|319\/405|[from] item: Leftovers
+|-damage|p1a: Latias|227\/301 brn|[from] brn
+|turn|14
+|
+|switch|p1a: Heatran|Heatran, M|71\/385
+|move|p2a: Drill Man|Rapid Spin|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|60\/385
+|-sideend|p2: BenTheDemon|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Drill Man
+|
+|-heal|p2a: Drill Man|344\/405|[from] item: Leftovers
+|-heal|p1a: Heatran|84\/385|[from] item: Leftovers
+|turn|15
+|
+|move|p2a: Drill Man|Earthquake|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|-heal|p2a: Drill Man|369\/405|[from] item: Leftovers
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|303\/303
+|turn|16
+|
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Drill Man
+|-status|p2a: Drill Man|brn
+|move|p2a: Drill Man|Earthquake|p1a: Rotom-Wash
+|-supereffective|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|181\/303
+|
+|-heal|p1a: Rotom-Wash|199\/303|[from] item: Leftovers
+|-heal|p2a: Drill Man|394\/405 brn|[from] item: Leftovers
+|-damage|p2a: Drill Man|344\/405 brn|[from] brn
+|turn|17
+|
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Drill Man
+|-supereffective|p2a: Drill Man
+|-damage|p2a: Drill Man|54\/405 brn
+|move|p2a: Drill Man|Stealth Rock|p1a: Rotom-Wash
+|-sidestart|p1: AC4Heavy|move: Stealth Rock
+|
+|-heal|p1a: Rotom-Wash|217\/303|[from] item: Leftovers
+|-heal|p2a: Drill Man|79\/405 brn|[from] item: Leftovers
+|-damage|p2a: Drill Man|29\/405 brn|[from] brn
+|turn|18
+|
+|switch|p1a: Latias|Latias, F|227\/301 brn
+|-damage|p1a: Latias|190\/301 brn|[from] Stealth Rock
+|move|p2a: Drill Man|Earthquake|p1a: Latias
+|-damage|p1a: Latias|93\/301 brn
+|
+|-heal|p1a: Latias|111\/301 brn|[from] item: Leftovers
+|-heal|p2a: Drill Man|54\/405 brn|[from] item: Leftovers
+|-damage|p1a: Latias|74\/301 brn|[from] brn
+|-damage|p2a: Drill Man|4\/405 brn|[from] brn
+|turn|19
+|
+|move|p1a: Latias|Defog|p2a: Drill Man
+|-unboost|p2a: Drill Man|evasion|1
+|-sideend|p1: AC4Heavy|Stealth Rock|[from] move: Defog|[of] p1a: Latias
+|move|p2a: Drill Man|Iron Head|p1a: Latias
+|-damage|p1a: Latias|0 fnt
+|faint|p1a: Latias
+|
+|-heal|p2a: Drill Man|29\/405 brn|[from] item: Leftovers
+|-damage|p2a: Drill Man|0 fnt|[from] brn
+|faint|p2a: Drill Man
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|217\/303
+|switch|p2a: Elec Man|Rotom-Wash|142\/304
+|turn|20
+|
+|move|p2a: Elec Man|Pain Split|p1a: Rotom-Wash
+|-sethp|p1a: Rotom-Wash|179\/303|p2a: Elec Man|179\/304|[from] move: Pain Split
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Elec Man|[miss]
+|-miss|p1a: Rotom-Wash|p2a: Elec Man
+|
+|-heal|p1a: Rotom-Wash|197\/303|[from] item: Leftovers
+|-heal|p2a: Elec Man|198\/304|[from] item: Leftovers
+|turn|21
+|
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Elec Man
+|-status|p2a: Elec Man|brn
+|move|p2a: Elec Man|Thunderbolt|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|65\/303
+|
+|-heal|p2a: Elec Man|217\/304 brn|[from] item: Leftovers
+|-heal|p1a: Rotom-Wash|83\/303|[from] item: Leftovers
+|-damage|p2a: Elec Man|179\/304 brn|[from] brn
+|turn|22
+|
+|switch|p1a: Tyranitar|Tyranitar, M|341\/341
+|-formechange|p1a: Tyranitar|Tyranitar-Mega
+|-weather|Sandstorm
+|move|p2a: Elec Man|Thunderbolt|p1a: Tyranitar
+|-damage|p1a: Tyranitar|250\/341
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Elec Man|160\/304 brn|[from] sandstorm
+|-heal|p2a: Elec Man|179\/304 brn|[from] item: Leftovers
+|-damage|p2a: Elec Man|141\/304 brn|[from] brn
+|turn|23
+|
+|move|p1a: Tyranitar|Stone Edge|p2a: Elec Man
+|-damage|p2a: Elec Man|0 fnt
+|faint|p2a: Elec Man
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Yellow Devil|Dragonite, M|386\/386
+|turn|24
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|83\/303
+|move|p2a: Yellow Devil|Dragon Dance|p2a: Yellow Devil
+|-boost|p2a: Yellow Devil|atk|1
+|-boost|p2a: Yellow Devil|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Yellow Devil|362\/386|[from] sandstorm
+|-damage|p1a: Rotom-Wash|65\/303|[from] sandstorm
+|-heal|p1a: Rotom-Wash|83\/303|[from] item: Leftovers
+|turn|25
+|
+|move|p2a: Yellow Devil|Dragon Claw|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Yellow Devil|338\/386|[from] sandstorm
+|
+|switch|p1a: Tyranitar|Tyranitar, M|250\/341
+|-formechange|p1a: Tyranitar|Tyranitar-Mega
+|turn|26
+|
+|move|p2a: Yellow Devil|Roost|p2a: Yellow Devil
+|-heal|p2a: Yellow Devil|386\/386
+|move|p1a: Tyranitar|Ice Punch|p2a: Yellow Devil
+|-supereffective|p2a: Yellow Devil
+|-damage|p2a: Yellow Devil|267\/386
+|-enditem|p2a: Yellow Devil|Weakness Policy
+|-boost|p2a: Yellow Devil|atk|2|[from] item: Weakness Policy
+|-boost|p2a: Yellow Devil|spa|2|[from] item: Weakness Policy
+|
+|-weather|none
+|turn|27
+|
+|move|p2a: Yellow Devil|Earthquake|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|faint|p1a: Tyranitar
+|
+|
+|switch|p1a: Talonflame|Talonflame, M|297\/297
+|turn|28
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Yellow Devil
+|-damage|p2a: Yellow Devil|35\/386
+|-damage|p1a: Talonflame|220\/297|[from] recoil|[of] p2a: Yellow Devil
+|move|p2a: Yellow Devil|Dragon Claw|p1a: Talonflame
+|-damage|p1a: Talonflame|0 fnt
+|faint|p1a: Talonflame
+|
+|win|BenTheDemon
+|raw|Ladder updating...
+|raw|AC4Heavy's rating: 1550 &rarr; <strong>1531<\/strong><br \/>(-19 for losing)
+|raw|BenTheDemon's rating: 1568 &rarr; <strong>1587<\/strong><br \/>(+19 for winning)

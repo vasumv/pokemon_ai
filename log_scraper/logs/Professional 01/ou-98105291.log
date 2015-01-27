@@ -1,0 +1,398 @@
+|join|Professional 01
+|join|Endou
+|player|p1|Professional 01|293
+|player|p2|Endou|169
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Staraptor, M
+|poke|p1|Charizard, M
+|poke|p1|Tyranitar, F
+|poke|p1|Latios, M
+|poke|p1|Keldeo
+|poke|p1|Hippowdon, F
+|poke|p2|Cresselia, F
+|poke|p2|Heatran, F
+|poke|p2|Jellicent, M
+|poke|p2|Latios, M
+|poke|p2|Terrakion
+|poke|p2|Mandibuzz, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Charizard|Charizard, M|297\/297
+|switch|p2a: Jellicent|Jellicent, M|404\/404
+|turn|1
+|
+|switch|p2a: Cresselia|Cresselia, F|444\/444
+|-formechange|p1a: Charizard|Charizard-Mega-Y
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p1a: Charizard|Solar Beam|p2a: Cresselia|[still]
+|-prepare|p1a: Charizard|Solar Beam|p2a: Cresselia
+|-anim|p1a: Charizard|Solar Beam|p2a: Cresselia
+|-damage|p2a: Cresselia|329\/444
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Cresselia|356\/444|[from] item: Leftovers
+|turn|2
+|
+|switch|p2a: Heatran|Heatran, F|386\/386
+|move|p1a: Charizard|Flare Blitz|p2a: Heatran
+|-start|p2a: Heatran|ability: Flash Fire
+|
+|-weather|SunnyDay|[upkeep]
+|turn|3
+|
+|move|p1a: Charizard|Earthquake|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|22\/386
+|move|p2a: Heatran|Lava Plume|p1a: Charizard
+|-resisted|p1a: Charizard
+|-damage|p1a: Charizard|174\/297
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Heatran|46\/386|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Latios|Latios, M|302\/302
+|move|p1a: Charizard|Flare Blitz|p2a: Latios
+|-resisted|p2a: Latios
+|-damage|p2a: Latios|124\/302
+|-damage|p1a: Charizard|115\/297|[from] recoil|[of] p2a: Latios
+|
+|-weather|SunnyDay|[upkeep]
+|turn|5
+|
+|switch|p2a: Terrakion|Terrakion|324\/324
+|switch|p1a: Tyranitar|Tyranitar, F|404\/404
+|-weather|Sandstorm
+|
+|-weather|Sandstorm|[upkeep]
+|turn|6
+|
+|switch|p1a: Latios|Latios, M|301\/301
+|move|p2a: Terrakion|Close Combat|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|106\/301
+|-unboost|p2a: Terrakion|def|1
+|-unboost|p2a: Terrakion|spd|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latios|88\/301|[from] sandstorm
+|turn|7
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|424\/424
+|move|p1a: Latios|Psyshock|p2a: Mandibuzz
+|-immune|p2a: Mandibuzz|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latios|70\/301|[from] sandstorm
+|turn|8
+|
+|switch|p1a: Charizard|Charizard, M|115\/297
+|-formechange|p1a: Charizard|Charizard-Mega-Y
+|-weather|SunnyDay
+|move|p2a: Mandibuzz|Whirlwind|p1a: Charizard
+|drag|p1a: Hippowdon|Hippowdon, F|417\/417
+|-weather|Sandstorm
+|
+|-weather|Sandstorm|[upkeep]
+|turn|9
+|
+|move|p2a: Mandibuzz|Knock Off|p1a: Hippowdon
+|-damage|p1a: Hippowdon|365\/417
+|-enditem|p1a: Hippowdon|Leftovers|[from] move: Knock Off|[of] p2a: Mandibuzz
+|move|p1a: Hippowdon|Stealth Rock|p2a: Mandibuzz
+|-sidestart|p2: Endou|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|10
+|
+|move|p1a: Hippowdon|Toxic|p2a: Mandibuzz
+|-status|p2a: Mandibuzz|tox
+|move|p2a: Mandibuzz|Whirlwind|p1a: Hippowdon
+|drag|p1a: Tyranitar|Tyranitar, F|404\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Mandibuzz|398\/424 tox|[from] psn
+|turn|11
+|
+|switch|p2a: Terrakion|Terrakion|324\/324
+|-damage|p2a: Terrakion|304\/324|[from] Stealth Rock
+|move|p1a: Tyranitar|Stone Edge|p2a: Terrakion
+|-resisted|p2a: Terrakion
+|-damage|p2a: Terrakion|200\/324
+|
+|-weather|Sandstorm|[upkeep]
+|turn|12
+|
+|switch|p1a: Hippowdon|Hippowdon, F|365\/417
+|move|p2a: Terrakion|Close Combat|p1a: Hippowdon
+|-damage|p1a: Hippowdon|140\/417
+|-unboost|p2a: Terrakion|def|1
+|-unboost|p2a: Terrakion|spd|1
+|
+|-weather|none
+|turn|13
+|
+|move|p2a: Terrakion|Close Combat|p1a: Hippowdon
+|-damage|p1a: Hippowdon|0 fnt
+|-unboost|p2a: Terrakion|def|1
+|-unboost|p2a: Terrakion|spd|1
+|faint|p1a: Hippowdon
+|
+|
+|switch|p1a: Latios|Latios, M|70\/301
+|turn|14
+|
+|switch|p2a: Heatran|Heatran, F|46\/386
+|-damage|p2a: Heatran|0 fnt|[from] Stealth Rock
+|faint|p2a: Heatran
+|move|p1a: Latios|Draco Meteor|p2: Heatran|[notarget]
+|-notarget
+|
+|
+|switch|p2a: Jellicent|Jellicent, M|404\/404
+|-damage|p2a: Jellicent|354\/404|[from] Stealth Rock
+|turn|15
+|
+|move|p1a: Latios|Draco Meteor|p2a: Jellicent
+|-damage|p2a: Jellicent|73\/404
+|-unboost|p1a: Latios|spa|2
+|-damage|p1a: Latios|40\/301|[from] item: Life Orb
+|move|p2a: Jellicent|Recover|p2a: Jellicent
+|-heal|p2a: Jellicent|275\/404
+|
+|-heal|p2a: Jellicent|300\/404|[from] item: Leftovers
+|turn|16
+|
+|switch|p1a: Tyranitar|Tyranitar, F|404\/404
+|-weather|Sandstorm
+|move|p2a: Jellicent|Scald|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|320\/404
+|-status|p1a: Tyranitar|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Jellicent|275\/404|[from] sandstorm
+|-heal|p2a: Jellicent|300\/404|[from] item: Leftovers
+|-damage|p1a: Tyranitar|270\/404 brn|[from] brn
+|turn|17
+|
+|move|p1a: Tyranitar|Pursuit|p2a: Jellicent
+|-supereffective|p2a: Jellicent
+|-damage|p2a: Jellicent|228\/404
+|move|p2a: Jellicent|Scald|p1a: Tyranitar
+|-crit|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|150\/404 brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Jellicent|203\/404|[from] sandstorm
+|-heal|p2a: Jellicent|228\/404|[from] item: Leftovers
+|-damage|p1a: Tyranitar|100\/404 brn|[from] brn
+|turn|18
+|
+|move|p1a: Tyranitar|Crunch|p2a: Jellicent
+|-supereffective|p2a: Jellicent
+|-damage|p2a: Jellicent|82\/404
+|move|p2a: Jellicent|Scald|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|22\/404 brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Jellicent|57\/404|[from] sandstorm
+|-heal|p2a: Jellicent|82\/404|[from] item: Leftovers
+|-damage|p1a: Tyranitar|0 fnt|[from] brn
+|faint|p1a: Tyranitar
+|
+|switch|p1a: Charizard|Charizard, M|115\/297
+|-formechange|p1a: Charizard|Charizard-Mega-Y
+|-weather|SunnyDay
+|turn|19
+|
+|move|p1a: Charizard|Roost|p1a: Charizard
+|-heal|p1a: Charizard|264\/297
+|move|p2a: Jellicent|Scald|p1a: Charizard
+|-supereffective|p1a: Charizard
+|-damage|p1a: Charizard|184\/297
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Jellicent|107\/404|[from] item: Leftovers
+|turn|20
+|
+|move|p1a: Charizard|Roost|p1a: Charizard
+|-heal|p1a: Charizard|297\/297
+|move|p2a: Jellicent|Recover|p2a: Jellicent
+|-heal|p2a: Jellicent|309\/404
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Jellicent|334\/404|[from] item: Leftovers
+|turn|21
+|
+|move|p1a: Charizard|Solar Beam|p2a: Jellicent|[still]
+|-prepare|p1a: Charizard|Solar Beam|p2a: Jellicent
+|-anim|p1a: Charizard|Solar Beam|p2a: Jellicent
+|-supereffective|p2a: Jellicent
+|-damage|p2a: Jellicent|76\/404
+|move|p2a: Jellicent|Scald|p1a: Charizard
+|-supereffective|p1a: Charizard
+|-damage|p1a: Charizard|217\/297
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Jellicent|101\/404|[from] item: Leftovers
+|turn|22
+|
+|move|p1a: Charizard|Flare Blitz|p2a: Jellicent
+|-resisted|p2a: Jellicent
+|-damage|p2a: Jellicent|0 fnt
+|-damage|p1a: Charizard|184\/297|[from] recoil|[of] p2a: Jellicent
+|faint|p2a: Jellicent
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p2a: Terrakion|Terrakion|200\/324
+|-damage|p2a: Terrakion|180\/324|[from] Stealth Rock
+|turn|23
+|
+|switch|p1a: Keldeo|Keldeo|322\/322
+|move|p2a: Terrakion|Stone Edge|p1a: Keldeo
+|-resisted|p1a: Keldeo
+|-damage|p1a: Keldeo|175\/322
+|
+|-weather|none
+|turn|24
+|
+|switch|p2a: Cresselia|Cresselia, F|356\/444
+|-damage|p2a: Cresselia|301\/444|[from] Stealth Rock
+|move|p1a: Keldeo|Hydro Pump|p2a: Cresselia
+|-damage|p2a: Cresselia|73\/444
+|
+|-heal|p2a: Cresselia|100\/444|[from] item: Leftovers
+|turn|25
+|
+|move|p1a: Keldeo|Hydro Pump|p2a: Cresselia
+|-damage|p2a: Cresselia|0 fnt
+|faint|p2a: Cresselia
+|
+|
+|switch|p2a: Latios|Latios, M|124\/302
+|-damage|p2a: Latios|87\/302|[from] Stealth Rock
+|turn|26
+|
+|move|p2a: Latios|Psyshock|p1a: Keldeo
+|-supereffective|p1a: Keldeo
+|-damage|p1a: Keldeo|0 fnt
+|faint|p1a: Keldeo
+|
+|
+|switch|p1a: Staraptor|Staraptor, M|312\/312
+|turn|27
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|398\/424 tox
+|-damage|p2a: Mandibuzz|292\/424 tox|[from] Stealth Rock
+|move|p1a: Staraptor|Quick Attack|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|189\/424 tox
+|
+|-heal|p2a: Mandibuzz|215\/424 tox|[from] item: Leftovers
+|-damage|p2a: Mandibuzz|189\/424 tox|[from] psn
+|turn|28
+|
+|switch|p1a: Charizard|Charizard, M|184\/297
+|-formechange|p1a: Charizard|Charizard-Mega-Y
+|-weather|SunnyDay
+|move|p2a: Mandibuzz|Defog|p1a: Charizard
+|-unboost|p1a: Charizard|evasion|1
+|-sideend|p2: Endou|Stealth Rock|[from] move: Defog|[of] p2a: Mandibuzz
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Mandibuzz|215\/424 tox|[from] item: Leftovers
+|-damage|p2a: Mandibuzz|163\/424 tox|[from] psn
+|turn|29
+|
+|move|p1a: Charizard|Solar Beam|p2a: Mandibuzz|[still]
+|-prepare|p1a: Charizard|Solar Beam|p2a: Mandibuzz
+|-anim|p1a: Charizard|Solar Beam|p2a: Mandibuzz
+|-resisted|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|114\/424 tox
+|move|p2a: Mandibuzz|Knock Off|p1a: Charizard
+|-damage|p1a: Charizard|117\/297
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Mandibuzz|140\/424 tox|[from] item: Leftovers
+|-damage|p2a: Mandibuzz|62\/424 tox|[from] psn
+|turn|30
+|
+|move|p1a: Charizard|Solar Beam|p2a: Mandibuzz|[still]
+|-prepare|p1a: Charizard|Solar Beam|p2a: Mandibuzz
+|-anim|p1a: Charizard|Solar Beam|p2a: Mandibuzz
+|-resisted|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|11\/424 tox
+|move|p2a: Mandibuzz|Knock Off|p1a: Charizard
+|-damage|p1a: Charizard|51\/297
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Mandibuzz|37\/424 tox|[from] item: Leftovers
+|-damage|p2a: Mandibuzz|0 fnt|[from] psn
+|faint|p2a: Mandibuzz
+|
+|switch|p2a: Latios|Latios, M|87\/302
+|turn|31
+|
+|move|p2a: Latios|Psyshock|p1a: Charizard
+|-damage|p1a: Charizard|0 fnt
+|faint|p1a: Charizard
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p1a: Staraptor|Staraptor, M|312\/312
+|turn|32
+|
+|switch|p2a: Terrakion|Terrakion|180\/324
+|move|p1a: Staraptor|Quick Attack|p2a: Terrakion
+|-crit|p2a: Terrakion
+|-resisted|p2a: Terrakion
+|-damage|p2a: Terrakion|99\/324
+|
+|-weather|none
+|turn|33
+|
+|move|p1a: Staraptor|Quick Attack|p2a: Terrakion
+|-resisted|p2a: Terrakion
+|-damage|p2a: Terrakion|48\/324
+|move|p2a: Terrakion|Stone Edge|p1a: Staraptor
+|-supereffective|p1a: Staraptor
+|-damage|p1a: Staraptor|0 fnt
+|faint|p1a: Staraptor
+|
+|
+|switch|p1a: Latios|Latios, M|40\/301
+|turn|34
+|
+|switch|p2a: Latios|Latios, M|87\/302
+|move|p1a: Latios|Earthquake|p2a: Latios
+|-immune|p2a: Latios|[msg]
+|
+|turn|35
+|
+|move|p2a: Latios|Psyshock|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|0 fnt
+|faint|p1a: Latios
+|
+|win|Endou
+|raw|Ladder updating...
+|raw|Professional 01's rating: 1565 &rarr; <strong>1543<\/strong><br \/>(-22 for losing)
+|raw|Endou's rating: 1530 &rarr; <strong>1552<\/strong><br \/>(+22 for winning)
+|leave|Professional 01
+|player|p1
