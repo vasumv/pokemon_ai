@@ -1,0 +1,277 @@
+|join|DeeTrain
+|join|fishermanz
+|player|p1|DeeTrain|2
+|player|p2|fishermanz|56
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Slowbro, F
+|poke|p1|Sableye, F
+|poke|p1|Heatran, F
+|poke|p1|Ferrothorn, F
+|poke|p1|Landorus-Therian, M
+|poke|p1|Gengar, F
+|poke|p2|Hawlucha, M
+|poke|p2|Magnezone
+|poke|p2|Donphan, F
+|poke|p2|Gyarados, F
+|poke|p2|Terrakion
+|poke|p2|Greninja, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Ferrothorn|Ferrothorn, F|351\/351
+|switch|p2a: Magnezone|Magnezone|308\/308
+|turn|1
+|
+|move|p1a: Ferrothorn|Protect|p1a: Ferrothorn
+|-singleturn|p1a: Ferrothorn|Protect
+|move|p2a: Magnezone|Hidden Power|p1a: Ferrothorn
+|-activate|p1a: Ferrothorn|Protect
+|
+|turn|2
+|
+|switch|p1a: Heatran|Heatran, F|323\/323
+|-item|p1a: Heatran|Air Balloon
+|move|p2a: Magnezone|Hidden Power|p1a: Heatran
+|-start|p1a: Heatran|ability: Flash Fire
+|
+|turn|3
+|
+|switch|p2a: Terrakion|Terrakion|323\/323
+|move|p1a: Heatran|Stealth Rock|p2a: Terrakion
+|-sidestart|p2: fishermanz|move: Stealth Rock
+|
+|turn|4
+|
+|switch|p1a: Slowbro|Slowbro, F|385\/385
+|move|p2a: Terrakion|Stone Edge|p1a: Slowbro
+|-damage|p1a: Slowbro|112\/385
+|
+|turn|5
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|351\/351
+|move|p2a: Terrakion|Stone Edge|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|246\/351
+|
+|turn|6
+|
+|switch|p2a: Magnezone|Magnezone|308\/308
+|-damage|p2a: Magnezone|289\/308|[from] Stealth Rock
+|switch|p1a: Slowbro|Slowbro, F|240\/385
+|
+|turn|7
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|246\/351
+|move|p2a: Magnezone|Flash Cannon|p1a: Ferrothorn
+|-crit|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|128\/351
+|
+|turn|8
+|
+|move|p2a: Magnezone|Flash Cannon|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|52\/351
+|move|p1a: Ferrothorn|Leech Seed|p2a: Magnezone
+|-start|p2a: Magnezone|move: Leech Seed
+|
+|-damage|p2a: Magnezone|251\/308|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|90\/351|[silent]
+|turn|9
+|
+|switch|p2a: Terrakion|Terrakion|323\/323
+|-damage|p2a: Terrakion|303\/323|[from] Stealth Rock
+|switch|p1a: Slowbro|Slowbro, F|368\/385
+|
+|turn|10
+|
+|move|p2a: Terrakion|X-Scissor|p1a: Slowbro
+|-crit|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|0 fnt
+|faint|p1a: Slowbro
+|
+|
+|switch|p1a: Sableye|Sableye, F|303\/303
+|turn|11
+|
+|switch|p2a: Magnezone|Magnezone|251\/308
+|-damage|p2a: Magnezone|232\/308|[from] Stealth Rock
+|move|p1a: Sableye|Will-O-Wisp|p2a: Magnezone
+|-status|p2a: Magnezone|brn
+|
+|-damage|p2a: Magnezone|194\/308 brn|[from] brn
+|turn|12
+|
+|move|p2a: Magnezone|Flash Cannon|p1a: Sableye
+|-damage|p1a: Sableye|65\/303
+|move|p1a: Sableye|Knock Off|p2a: Magnezone
+|-damage|p2a: Magnezone|113\/308 brn
+|-enditem|p2a: Magnezone|Choice Specs|[from] move: Knock Off|[of] p1a: Sableye
+|
+|-heal|p1a: Sableye|83\/303|[from] item: Leftovers
+|-damage|p2a: Magnezone|75\/308 brn|[from] brn
+|turn|13
+|
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|235\/303
+|move|p2a: Magnezone|Volt Switch|p1a: Sableye
+|-damage|p1a: Sableye|100\/303
+|
+|switch|p2a: Greninja|Greninja, M|285\/285
+|-damage|p2a: Greninja|250\/285|[from] Stealth Rock
+|
+|-heal|p1a: Sableye|118\/303|[from] item: Leftovers
+|turn|14
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|90\/351
+|move|p2a: Greninja|Ice Beam|p1a: Ferrothorn
+|-start|p2a: Greninja|typechange|Ice|[from] Protean
+|-damage|p1a: Ferrothorn|0 fnt
+|-damage|p2a: Greninja|222\/285|[from] item: Life Orb
+|faint|p1a: Ferrothorn
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Greninja
+|-unboost|p2a: Greninja|atk|1
+|turn|15
+|
+|switch|p2a: Magnezone|Magnezone|75\/308 brn
+|-damage|p2a: Magnezone|56\/308 brn|[from] Stealth Rock
+|move|p1a: Landorus-Therian|U-turn|p2a: Magnezone
+|-resisted|p2a: Magnezone
+|-damage|p2a: Magnezone|17\/308 brn
+|
+|switch|p1a: Heatran|Heatran, F|323\/323
+|-item|p1a: Heatran|Air Balloon
+|
+|-damage|p2a: Magnezone|0 fnt|[from] brn
+|faint|p2a: Magnezone
+|
+|switch|p2a: Terrakion|Terrakion|303\/323
+|-damage|p2a: Terrakion|283\/323|[from] Stealth Rock
+|turn|16
+|
+|move|p2a: Terrakion|Close Combat|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|-enditem|p1a: Heatran|Air Balloon
+|-unboost|p2a: Terrakion|def|1
+|-unboost|p2a: Terrakion|spd|1
+|faint|p1a: Heatran
+|
+|
+|switch|p1a: Gengar|Gengar, F|261\/261
+|turn|17
+|
+|switch|p2a: Gyarados|Gyarados, F|332\/332
+|-damage|p2a: Gyarados|249\/332|[from] Stealth Rock
+|-ability|p2a: Gyarados|Intimidate|[of] p1a: Gengar
+|-unboost|p1a: Gengar|atk|1
+|move|p1a: Gengar|Shadow Ball|p2a: Gyarados
+|-damage|p2a: Gyarados|70\/332
+|-damage|p1a: Gengar|235\/261|[from] item: Life Orb
+|
+|turn|18
+|
+|detailschange|p2a: Gyarados|Gyarados-Mega, F
+|message|Gyarados has Mega Evolved into Mega Gyarados!
+|-ability|p2a: Gyarados|Mold Breaker
+|move|p1a: Gengar|Sludge Wave|p2a: Gyarados
+|-damage|p2a: Gyarados|0 fnt
+|-damage|p1a: Gengar|209\/261|[from] item: Life Orb
+|faint|p2a: Gyarados
+|
+|
+|switch|p2a: Greninja|Greninja, M|222\/285
+|-damage|p2a: Greninja|187\/285|[from] Stealth Rock
+|turn|19
+|
+|switch|p1a: Sableye|Sableye, F|118\/303
+|move|p2a: Greninja|Dark Pulse|p1a: Sableye
+|-start|p2a: Greninja|typechange|Dark|[from] Protean
+|-damage|p1a: Sableye|0 fnt
+|-damage|p2a: Greninja|159\/285|[from] item: Life Orb
+|faint|p1a: Sableye
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Greninja
+|-unboost|p2a: Greninja|atk|1
+|turn|20
+|
+|switch|p2a: Hawlucha|Hawlucha, M|300\/300
+|-damage|p2a: Hawlucha|263\/300|[from] Stealth Rock
+|move|p1a: Landorus-Therian|U-turn|p2a: Hawlucha
+|-resisted|p2a: Hawlucha
+|-damage|p2a: Hawlucha|233\/300
+|
+|switch|p1a: Gengar|Gengar, F|209\/261
+|
+|turn|21
+|
+|move|p1a: Gengar|Shadow Ball|p2a: Hawlucha
+|-damage|p2a: Hawlucha|0 fnt
+|-damage|p1a: Gengar|183\/261|[from] item: Life Orb
+|faint|p2a: Hawlucha
+|
+|
+|switch|p2a: Greninja|Greninja, M|159\/285
+|-damage|p2a: Greninja|124\/285|[from] Stealth Rock
+|turn|22
+|
+|move|p2a: Greninja|Ice Beam|p1a: Gengar
+|-start|p2a: Greninja|typechange|Ice|[from] Protean
+|-damage|p1a: Gengar|0 fnt
+|-damage|p2a: Greninja|96\/285|[from] item: Life Orb
+|faint|p1a: Gengar
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Greninja
+|-unboost|p2a: Greninja|atk|1
+|turn|23
+|c|âfishermanz|gg
+|
+|move|p1a: Landorus-Therian|Earthquake|p2a: Greninja
+|-damage|p2a: Greninja|0 fnt
+|faint|p2a: Greninja
+|
+|
+|switch|p2a: Donphan|Donphan, F|384\/384
+|-damage|p2a: Donphan|360\/384|[from] Stealth Rock
+|turn|24
+|
+|move|p2a: Donphan|Ice Shard|p1a: Landorus-Therian
+|-supereffective|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|95\/319
+|move|p1a: Landorus-Therian|Earthquake|p2a: Donphan
+|-damage|p2a: Donphan|185\/384
+|
+|-heal|p2a: Donphan|209\/384|[from] item: Leftovers
+|turn|25
+|c|âDeeTrain|gg
+|
+|move|p2a: Donphan|Ice Shard|p1a: Landorus-Therian
+|-supereffective|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|faint|p1a: Landorus-Therian
+|
+|win|fishermanz
+|raw|Ladder updating...
+|raw|DeeTrain's rating: 1629 &rarr; <strong>1598<\/strong><br \/>(-31 for losing)
+|raw|fishermanz's rating: 1426 &rarr; <strong>1457<\/strong><br \/>(+31 for winning)

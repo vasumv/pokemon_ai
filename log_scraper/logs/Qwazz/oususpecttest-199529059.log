@@ -1,0 +1,432 @@
+|join|Qwazz
+|join|Hiye
+|player|p1|Qwazz|101
+|player|p2|Hiye|101
+|gametype|singles
+|gen|6
+|tier|OU (suspect test)
+|clearpoke
+|poke|p1|Aerodactyl, F
+|poke|p1|Keldeo
+|poke|p1|Clefable, F
+|poke|p1|Ferrothorn, F
+|poke|p1|Latios, M
+|poke|p1|Talonflame, M
+|poke|p2|Charizard, M
+|poke|p2|Excadrill, M
+|poke|p2|Sylveon, M
+|poke|p2|Ferrothorn, M
+|poke|p2|Rotom-Wash
+|poke|p2|Mew
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Talonflame|Talonflame, M|359\/359
+|switch|p2a: Excadrill|Excadrill, M|417\/417
+|-ability|p2a: Excadrill|Mold Breaker
+|turn|1
+|
+|switch|p2a: Charizard|Charizard, M|359\/359
+|move|p1a: Talonflame|Taunt|p2a: Charizard
+|-start|p2a: Charizard|move: Taunt
+|
+|turn|2
+|
+|switch|p1a: Clefable|Clefable, F|394\/394
+|switch|p2a: Mew|Mew|404\/404
+|
+|turn|3
+|
+|switch|p1a: Keldeo|Keldeo|323\/323
+|move|p2a: Mew|Taunt|p1a: Keldeo
+|-start|p1a: Keldeo|move: Taunt
+|
+|turn|4
+|
+|switch|p1a: Aerodactyl|Aerodactyl, F|301\/301
+|move|p2a: Mew|Will-O-Wisp|p1a: Aerodactyl|[miss]
+|-miss|p2a: Mew|p1a: Aerodactyl
+|
+|turn|5
+|
+|detailschange|p1a: Aerodactyl|Aerodactyl-Mega, F
+|-mega|p1a: Aerodactyl|Aerodactyl|Aerodactylite
+|move|p1a: Aerodactyl|Taunt|p2a: Mew
+|-start|p2a: Mew|move: Taunt
+|cant|p2a: Mew|move: Taunt|Will-O-Wisp
+|
+|turn|6
+|
+|switch|p1a: Talonflame|Talonflame, M|359\/359
+|switch|p2a: Rotom-Wash|Rotom-Wash|303\/303
+|
+|turn|7
+|
+|move|p1a: Talonflame|Will-O-Wisp|p2a: Rotom-Wash
+|-status|p2a: Rotom-Wash|brn
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Talonflame
+|-supereffective|p1a: Talonflame
+|-damage|p1a: Talonflame|101\/359
+|
+|-heal|p1a: Talonflame|123\/359|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|266\/303 brn|[from] brn
+|turn|8
+|
+|switch|p1a: Latios|Latios, M|301\/301
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|235\/301
+|
+|-heal|p2a: Rotom-Wash|284\/303 brn|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|247\/303 brn|[from] brn
+|turn|9
+|
+|switch|p1a: Talonflame|Talonflame, M|123\/359
+|switch|p2a: Excadrill|Excadrill, M|417\/417
+|-ability|p2a: Excadrill|Mold Breaker
+|
+|-heal|p1a: Talonflame|145\/359|[from] item: Leftovers
+|turn|10
+|
+|move|p1a: Talonflame|Will-O-Wisp|p2a: Excadrill
+|-status|p2a: Excadrill|brn
+|move|p2a: Excadrill|Stealth Rock|p1a: Talonflame
+|-sidestart|p1: Qwazz|move: Stealth Rock
+|
+|-heal|p1a: Talonflame|167\/359|[from] item: Leftovers
+|-damage|p2a: Excadrill|365\/417 brn|[from] brn
+|turn|11
+|
+|switch|p1a: Latios|Latios, M|235\/301
+|-damage|p1a: Latios|198\/301|[from] Stealth Rock
+|move|p2a: Excadrill|Iron Head|p1a: Latios
+|-damage|p1a: Latios|126\/301
+|
+|-heal|p2a: Excadrill|391\/417 brn|[from] item: Leftovers
+|-damage|p2a: Excadrill|339\/417 brn|[from] brn
+|turn|12
+|
+|switch|p2a: Sylveon|Sylveon, M|393\/393
+|move|p1a: Latios|Defog|p2a: Sylveon
+|-unboost|p2a: Sylveon|evasion|1
+|-sideend|p1: Qwazz|Stealth Rock|[from] move: Defog|[of] p1a: Latios
+|
+|turn|13
+|
+|move|p1a: Latios|Roost|p1a: Latios
+|-heal|p1a: Latios|277\/301
+|move|p2a: Sylveon|Hyper Voice|p1a: Latios
+|-supereffective|p1a: Latios
+|-damage|p1a: Latios|0 fnt
+|faint|p1a: Latios
+|
+|
+|switch|p1a: Talonflame|Talonflame, M|167\/359
+|turn|14
+|
+|switch|p2a: Charizard|Charizard, M|359\/359
+|move|p1a: Talonflame|Taunt|p2a: Charizard
+|-start|p2a: Charizard|move: Taunt
+|
+|-heal|p1a: Talonflame|189\/359|[from] item: Leftovers
+|turn|15
+|
+|switch|p1a: Aerodactyl|Aerodactyl-Mega, F|301\/301
+|switch|p2a: Excadrill|Excadrill, M|339\/417 brn
+|-ability|p2a: Excadrill|Mold Breaker
+|
+|-heal|p2a: Excadrill|365\/417 brn|[from] item: Leftovers
+|-damage|p2a: Excadrill|313\/417 brn|[from] brn
+|turn|16
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|247\/303 brn
+|move|p1a: Aerodactyl|Taunt|p2a: Rotom-Wash
+|-start|p2a: Rotom-Wash|move: Taunt
+|
+|-heal|p2a: Rotom-Wash|265\/303 brn|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|228\/303 brn|[from] brn
+|turn|17
+|
+|move|p1a: Aerodactyl|Stone Edge|p2a: Rotom-Wash|[miss]
+|-miss|p1a: Aerodactyl|p2a: Rotom-Wash
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Aerodactyl
+|-supereffective|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|113\/301
+|
+|switch|p2a: Sylveon|Sylveon, M|393\/393
+|
+|turn|18
+|
+|move|p1a: Aerodactyl|Taunt|p2a: Sylveon
+|-start|p2a: Sylveon|move: Taunt
+|move|p2a: Sylveon|Hyper Voice|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|0 fnt
+|faint|p1a: Aerodactyl
+|
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|352\/352
+|turn|19
+|
+|switch|p2a: Excadrill|Excadrill, M|313\/417 brn
+|-ability|p2a: Excadrill|Mold Breaker
+|move|p1a: Ferrothorn|Stealth Rock|p2a: Excadrill
+|-sidestart|p2: Hiye|move: Stealth Rock
+|
+|-heal|p2a: Excadrill|339\/417 brn|[from] item: Leftovers
+|-damage|p2a: Excadrill|287\/417 brn|[from] brn
+|turn|20
+|
+|move|p2a: Excadrill|Rapid Spin|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|349\/352
+|-damage|p2a: Excadrill|235\/417 brn|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|-sideend|p2: Hiye|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Excadrill
+|move|p1a: Ferrothorn|Leech Seed|p2a: Excadrill
+|-start|p2a: Excadrill|move: Leech Seed
+|
+|-heal|p2a: Excadrill|261\/417 brn|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|352\/352|[from] item: Leftovers
+|-damage|p2a: Excadrill|209\/417 brn|[from] Leech Seed|[of] p1a: Ferrothorn
+|-damage|p2a: Excadrill|157\/417 brn|[from] brn
+|turn|21
+|
+|switch|p1a: Talonflame|Talonflame, M|189\/359
+|move|p2a: Excadrill|Stealth Rock|p1a: Talonflame
+|-sidestart|p1: Qwazz|move: Stealth Rock
+|
+|-heal|p1a: Talonflame|211\/359|[from] item: Leftovers
+|-heal|p2a: Excadrill|183\/417 brn|[from] item: Leftovers
+|-damage|p2a: Excadrill|131\/417 brn|[from] Leech Seed|[of] p1a: Talonflame
+|-heal|p1a: Talonflame|263\/359|[silent]
+|-damage|p2a: Excadrill|79\/417 brn|[from] brn
+|turn|22
+|
+|switch|p2a: Charizard|Charizard, M|359\/359
+|move|p1a: Talonflame|Brave Bird|p2a: Charizard
+|-crit|p2a: Charizard
+|-damage|p2a: Charizard|184\/359
+|-damage|p1a: Talonflame|205\/359|[from] recoil|[of] p2a: Charizard
+|
+|-heal|p1a: Talonflame|227\/359|[from] item: Leftovers
+|turn|23
+|
+|detailschange|p2a: Charizard|Charizard-Mega-X, M
+|-mega|p2a: Charizard|Charizard|Charizardite X
+|move|p1a: Talonflame|Taunt|p2a: Charizard
+|-start|p2a: Charizard|move: Taunt
+|move|p2a: Charizard|Dragon Claw|p1a: Talonflame
+|-crit|p1a: Talonflame
+|-damage|p1a: Talonflame|0 fnt
+|faint|p1a: Talonflame
+|
+|
+|switch|p1a: Clefable|Clefable, F|394\/394
+|-damage|p1a: Clefable|345\/394|[from] Stealth Rock
+|turn|24
+|
+|switch|p2a: Mew|Mew|404\/404
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|
+|-heal|p1a: Clefable|369\/394|[from] item: Leftovers
+|turn|25
+|
+|move|p2a: Mew|Taunt|p1a: Clefable
+|-start|p1a: Clefable|move: Taunt
+|move|p1a: Clefable|Moonblast|p2a: Mew
+|-damage|p2a: Mew|274\/404
+|
+|-heal|p2a: Mew|299\/404|[from] item: Leftovers
+|-heal|p1a: Clefable|393\/394|[from] item: Leftovers
+|turn|26
+|
+|move|p2a: Mew|Will-O-Wisp|p1a: Clefable
+|-status|p1a: Clefable|brn
+|move|p1a: Clefable|Moonblast|p2a: Mew
+|-damage|p2a: Mew|175\/404
+|-unboost|p2a: Mew|spa|1
+|
+|-heal|p2a: Mew|200\/404|[from] item: Leftovers
+|-heal|p1a: Clefable|394\/394 brn|[from] item: Leftovers
+|-damage|p1a: Clefable|345\/394 brn|[from] brn
+|turn|27
+|
+|move|p2a: Mew|Whirlpool|p1a: Clefable
+|-damage|p1a: Clefable|327\/394 brn
+|-activate|p1a: Clefable|move: Whirlpool|[of] p2a: Mew
+|move|p1a: Clefable|Moonblast|p2a: Mew
+|-damage|p2a: Mew|62\/404
+|-unboost|p2a: Mew|spa|1
+|
+|-heal|p2a: Mew|87\/404|[from] item: Leftovers
+|-heal|p1a: Clefable|351\/394 brn|[from] item: Leftovers
+|-damage|p1a: Clefable|302\/394 brn|[from] brn
+|-damage|p1a: Clefable|253\/394 brn|[from] move: Whirlpool|[partiallytrapped]
+|-end|p1a: Clefable|move: Taunt
+|turn|28
+|
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|289\/404
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|
+|-heal|p2a: Mew|314\/404|[from] item: Leftovers
+|-heal|p1a: Clefable|277\/394 brn|[from] item: Leftovers
+|-damage|p1a: Clefable|228\/394 brn|[from] brn
+|-damage|p1a: Clefable|179\/394 brn|[from] move: Whirlpool|[partiallytrapped]
+|turn|29
+|
+|move|p2a: Mew|Taunt|p1a: Clefable
+|-start|p1a: Clefable|move: Taunt
+|move|p1a: Clefable|Moonblast|p2a: Mew
+|-damage|p2a: Mew|127\/404
+|
+|-heal|p2a: Mew|152\/404|[from] item: Leftovers
+|-heal|p1a: Clefable|203\/394 brn|[from] item: Leftovers
+|-damage|p1a: Clefable|154\/394 brn|[from] brn
+|-damage|p1a: Clefable|105\/394 brn|[from] move: Whirlpool|[partiallytrapped]
+|turn|30
+|
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|354\/404
+|move|p1a: Clefable|Moonblast|p2a: Mew
+|-damage|p2a: Mew|189\/404
+|
+|-heal|p2a: Mew|214\/404|[from] item: Leftovers
+|-heal|p1a: Clefable|129\/394 brn|[from] item: Leftovers
+|-damage|p1a: Clefable|80\/394 brn|[from] brn
+|-damage|p1a: Clefable|31\/394 brn|[from] move: Whirlpool|[partiallytrapped]
+|turn|31
+|
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|404\/404
+|move|p1a: Clefable|Moonblast|p2a: Mew
+|-damage|p2a: Mew|241\/404
+|
+|-heal|p2a: Mew|266\/404|[from] item: Leftovers
+|-heal|p1a: Clefable|55\/394 brn|[from] item: Leftovers
+|-damage|p1a: Clefable|6\/394 brn|[from] brn
+|-damage|p1a: Clefable|0 fnt|[from] move: Whirlpool|[partiallytrapped]
+|faint|p1a: Clefable
+|
+|switch|p1a: Keldeo|Keldeo|323\/323
+|-damage|p1a: Keldeo|303\/323|[from] Stealth Rock
+|turn|32
+|
+|switch|p2a: Excadrill|Excadrill, M|79\/417 brn
+|-ability|p2a: Excadrill|Mold Breaker
+|move|p1a: Keldeo|Substitute|p1a: Keldeo
+|-start|p1a: Keldeo|Substitute
+|-damage|p1a: Keldeo|223\/323
+|
+|-heal|p1a: Keldeo|243\/323|[from] item: Leftovers
+|-heal|p2a: Excadrill|105\/417 brn|[from] item: Leftovers
+|-damage|p2a: Excadrill|53\/417 brn|[from] brn
+|turn|33
+|
+|move|p1a: Keldeo|Calm Mind|p1a: Keldeo
+|-boost|p1a: Keldeo|spa|1
+|-boost|p1a: Keldeo|spd|1
+|move|p2a: Excadrill|Earthquake|p1a: Keldeo
+|-end|p1a: Keldeo|Substitute
+|
+|-heal|p1a: Keldeo|263\/323|[from] item: Leftovers
+|-heal|p2a: Excadrill|79\/417 brn|[from] item: Leftovers
+|-damage|p2a: Excadrill|27\/417 brn|[from] brn
+|turn|34
+|
+|move|p1a: Keldeo|Calm Mind|p1a: Keldeo
+|-boost|p1a: Keldeo|spa|1
+|-boost|p1a: Keldeo|spd|1
+|move|p2a: Excadrill|Earthquake|p1a: Keldeo
+|-damage|p1a: Keldeo|175\/323
+|
+|-heal|p1a: Keldeo|195\/323|[from] item: Leftovers
+|-heal|p2a: Excadrill|53\/417 brn|[from] item: Leftovers
+|-damage|p2a: Excadrill|1\/417 brn|[from] brn
+|turn|35
+|
+|move|p1a: Keldeo|Calm Mind|p1a: Keldeo
+|-boost|p1a: Keldeo|spa|1
+|-boost|p1a: Keldeo|spd|1
+|move|p2a: Excadrill|Earthquake|p1a: Keldeo
+|-damage|p1a: Keldeo|119\/323
+|
+|-heal|p1a: Keldeo|139\/323|[from] item: Leftovers
+|-heal|p2a: Excadrill|27\/417 brn|[from] item: Leftovers
+|-damage|p2a: Excadrill|0 fnt|[from] brn
+|faint|p2a: Excadrill
+|
+|switch|p2a: Sylveon|Sylveon, M|393\/393
+|turn|36
+|
+|move|p1a: Keldeo|Scald|p2a: Sylveon
+|-damage|p2a: Sylveon|93\/393
+|move|p2a: Sylveon|Hyper Voice|p1a: Keldeo
+|-supereffective|p1a: Keldeo
+|-damage|p1a: Keldeo|17\/323
+|
+|-heal|p1a: Keldeo|37\/323|[from] item: Leftovers
+|-heal|p2a: Sylveon|117\/393|[from] item: Leftovers
+|turn|37
+|
+|move|p1a: Keldeo|Scald|p2a: Sylveon
+|-damage|p2a: Sylveon|0 fnt
+|faint|p2a: Sylveon
+|
+|-heal|p1a: Keldeo|57\/323|[from] item: Leftovers
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|228\/303 brn
+|turn|38
+|
+|move|p1a: Keldeo|Secret Sword|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|-heal|p1a: Keldeo|77\/323|[from] item: Leftovers
+|leave|Hiye
+|player|p2
+|join|Hiye
+|player|p2|Hiye|101
+|
+|switch|p2a: Mew|Mew|266\/404
+|turn|39
+|c|âHiye|replay : i choked ok fuck u
+|
+|move|p1a: Keldeo|Scald|p2a: Mew
+|-damage|p2a: Mew|0 fnt
+|faint|p2a: Mew
+|
+|-heal|p1a: Keldeo|97\/323|[from] item: Leftovers
+|
+|switch|p2a: Charizard|Charizard-Mega-X, M|184\/359
+|turn|40
+|
+|move|p1a: Keldeo|Scald|p2a: Charizard
+|-damage|p2a: Charizard|0 fnt
+|faint|p2a: Charizard
+|
+|-heal|p1a: Keldeo|117\/323|[from] item: Leftovers
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|turn|41
+|
+|move|p1a: Keldeo|Secret Sword|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|faint|p2a: Ferrothorn
+|
+|win|Qwazz
+|leave|Hiye
+|player|p2

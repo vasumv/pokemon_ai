@@ -1,0 +1,333 @@
+|join|Obsessions
+|join|femt6
+|player|p1|Obsessions|146
+|player|p2|femt6|1
+|gametype|singles
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Gardevoir, F, shiny
+|poke|p1|Aegislash, M
+|poke|p1|Greninja, M, shiny
+|poke|p1|Excadrill, M
+|poke|p1|Volcarona, F, shiny
+|poke|p1|Dragonite, M
+|poke|p2|Landorus-Therian, M
+|poke|p2|Tyranitar, M
+|poke|p2|Aegislash, M, shiny
+|poke|p2|Rotom-Wash
+|poke|p2|Conkeldurr, M
+|poke|p2|Genesect, shiny
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Excadrill|Excadrill, M|361\/361
+|switch|p2a: Red Ranger|Genesect, shiny|283\/283
+|-boost|p2a: Red Ranger|atk|1|[from] ability: Download
+|-ability|p1a: Excadrill|Mold Breaker
+|turn|1
+|callback|decision
+|
+|switch|p1a: Volcarona|Volcarona, F, shiny|371\/371
+|move|p2a: Red Ranger|U-turn|p1a: Volcarona
+|-resisted|p1a: Volcarona
+|-damage|p1a: Volcarona|274\/371
+|callback|decision
+|
+|switch|p2a: I'm Rock Hard|Tyranitar, M|342\/342
+|-weather|Sandstorm
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Volcarona|251\/371|[from] sandstorm
+|-heal|p1a: Volcarona|274\/371|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, M|324\/324
+|-formechange|p2a: I'm Rock Hard|Tyranitar-Mega
+|message|Tyranitar has Mega Evolved into Mega Tyranitar!
+|move|p2a: I'm Rock Hard|Dragon Dance|p2a: I'm Rock Hard
+|-boost|p2a: I'm Rock Hard|atk|1
+|-boost|p2a: I'm Rock Hard|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|turn|3
+|callback|decision
+|
+|move|p2a: I'm Rock Hard|Dragon Dance|p2a: I'm Rock Hard
+|-boost|p2a: I'm Rock Hard|atk|1
+|-boost|p2a: I'm Rock Hard|spe|1
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Sacred Sword|p2a: I'm Rock Hard
+|-supereffective|p2a: I'm Rock Hard
+|-damage|p2a: I'm Rock Hard|0 fnt
+|faint|p2a: I'm Rock Hard
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Catdorus|Landorus-Therian, M|370\/370
+|-ability|p2a: Catdorus|Intimidate|[of] p1a: Aegislash
+|-unboost|p1a: Aegislash|atk|1
+|turn|4
+|callback|decision
+|
+|switch|p1a: Gardevoir|Gardevoir, F, shiny|278\/278
+|-ability|p1a: Gardevoir|Intimidate|[from] ability: Trace|[of] p2a: Catdorus
+|-ability|p1a: Gardevoir|Intimidate|[of] p2a: Catdorus
+|-unboost|p2a: Catdorus|atk|1
+|move|p2a: Catdorus|Stealth Rock|p1a: Gardevoir
+|-sidestart|p1: Obsessions|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gardevoir|261\/278|[from] sandstorm
+|turn|5
+|callback|decision
+|
+|switch|p2a: Red Ranger|Genesect, shiny|283\/283
+|-boost|p2a: Red Ranger|atk|1|[from] ability: Download
+|-formechange|p1a: Gardevoir|Gardevoir-Mega
+|message|Gardevoir has Mega Evolved into Mega Gardevoir!
+|move|p1a: Gardevoir|Moonblast|p2a: Red Ranger
+|-resisted|p2a: Red Ranger
+|-damage|p2a: Red Ranger|170\/283
+|-unboost|p2a: Red Ranger|spa|1
+|
+|-weather|none
+|turn|6
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, M|324\/324
+|-damage|p1a: Aegislash|304\/324|[from] Stealth Rock
+|move|p2a: Red Ranger|U-turn|p1a: Aegislash
+|-resisted|p1a: Aegislash
+|-damage|p1a: Aegislash|271\/324
+|callback|decision
+|
+|switch|p2a: Catdorus|Landorus-Therian, M|370\/370
+|-ability|p2a: Catdorus|Intimidate|[of] p1a: Aegislash
+|-unboost|p1a: Aegislash|atk|1
+|
+|turn|7
+|callback|decision
+|
+|move|p1a: Aegislash|King's Shield|p1a: Aegislash
+|-singleturn|p1a: Aegislash|Protect
+|move|p2a: Catdorus|Stone Edge|p1a: Aegislash
+|-activate|p1a: Aegislash|Protect
+|
+|turn|8
+|callback|decision
+|
+|move|p2a: Catdorus|Stone Edge|p1a: Aegislash|[miss]
+|-miss|p2a: Catdorus|p1a: Aegislash
+|move|p1a: Aegislash|Swords Dance|p1a: Aegislash
+|-boost|p1a: Aegislash|atk|2
+|
+|turn|9
+|callback|decision
+|
+|move|p2a: Catdorus|Earthquake|p1a: Aegislash
+|-crit|p1a: Aegislash
+|-supereffective|p1a: Aegislash
+|-damage|p1a: Aegislash|0 fnt
+|faint|p1a: Aegislash
+|
+|callback|decision
+|
+|switch|p1a: Greninja|Greninja, M, shiny|286\/286
+|-damage|p1a: Greninja|251\/286|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|-start|p1a: Greninja|typechange|Water|[from] Protean
+|move|p1a: Greninja|Hydro Pump|p2a: Catdorus
+|-supereffective|p2a: Catdorus
+|-damage|p2a: Catdorus|0 fnt
+|-damage|p1a: Greninja|223\/286|[from] item: Life Orb
+|faint|p2a: Catdorus
+|
+|callback|decision
+|
+|switch|p2a: Red Ranger|Genesect, shiny|170\/283
+|-boost|p2a: Red Ranger|atk|1|[from] ability: Download
+|turn|11
+|callback|decision
+|
+|switch|p1a: Excadrill|Excadrill, M|361\/361
+|-damage|p1a: Excadrill|350\/361|[from] Stealth Rock
+|-ability|p1a: Excadrill|Mold Breaker
+|move|p2a: Red Ranger|U-turn|p1a: Excadrill
+|-resisted|p1a: Excadrill
+|-damage|p1a: Excadrill|224\/361
+|callback|decision
+|
+|switch|p2a: Joker|Conkeldurr, M|351\/351
+|
+|turn|12
+|callback|decision
+|
+|switch|p1a: Gardevoir|Gardevoir, F, shiny|261\/278
+|-formechange|p1a: Gardevoir|Gardevoir-Mega
+|-damage|p1a: Gardevoir|227\/278|[from] Stealth Rock
+|move|p2a: Joker|Mach Punch|p1a: Gardevoir
+|-resisted|p1a: Gardevoir
+|-damage|p1a: Gardevoir|198\/278
+|
+|turn|13
+|callback|decision
+|
+|switch|p2a: Excalibur|Aegislash, M, shiny|269\/269
+|move|p1a: Gardevoir|Moonblast|p2a: Excalibur
+|-resisted|p2a: Excalibur
+|-damage|p2a: Excalibur|202\/269
+|
+|turn|14
+|callback|decision
+|
+|move|p1a: Gardevoir|Shadow Ball|p2a: Excalibur
+|-supereffective|p2a: Excalibur
+|-damage|p2a: Excalibur|46\/269
+|-formechange|p2a: Excalibur|Aegislash-Blade
+|move|p2a: Excalibur|Shadow Ball|p1a: Gardevoir
+|-supereffective|p1a: Gardevoir
+|-damage|p1a: Gardevoir|0 fnt
+|-damage|p2a: Excalibur|20\/269|[from] item: Life Orb
+|faint|p1a: Gardevoir
+|
+|callback|decision
+|
+|switch|p1a: Greninja|Greninja, M, shiny|223\/286
+|-damage|p1a: Greninja|188\/286|[from] Stealth Rock
+|turn|15
+|callback|decision
+|
+|-formechange|p2a: Excalibur|Aegislash
+|move|p2a: Excalibur|King's Shield|p2a: Excalibur
+|-singleturn|p2a: Excalibur|Protect
+|-start|p1a: Greninja|typechange|Dark|[from] Protean
+|move|p1a: Greninja|Dark Pulse|p2a: Excalibur
+|-activate|p2a: Excalibur|Protect
+|
+|turn|16
+|callback|decision
+|
+|switch|p2a: Wishy Washy|Rotom-Wash|304\/304
+|move|p1a: Greninja|Dark Pulse|p2a: Wishy Washy
+|-damage|p2a: Wishy Washy|166\/304
+|-damage|p1a: Greninja|160\/286|[from] item: Life Orb
+|
+|turn|17
+|callback|decision
+|
+|-start|p1a: Greninja|typechange|Grass|[from] Protean
+|move|p1a: Greninja|Grass Knot|p2a: Wishy Washy
+|-supereffective|p2a: Wishy Washy
+|-damage|p2a: Wishy Washy|96\/304
+|-damage|p1a: Greninja|132\/286|[from] item: Life Orb
+|move|p2a: Wishy Washy|Rest|p2a: Wishy Washy
+|-status|p2a: Wishy Washy|slp
+|-heal|p2a: Wishy Washy|304\/304 slp|[silent]
+|-status|p2a: Wishy Washy|slp|[from] move: Rest
+|-enditem|p2a: Wishy Washy|Chesto Berry|[eat]
+|-curestatus|p2a: Wishy Washy|slp
+|
+|turn|18
+|callback|decision
+|
+|switch|p1a: Excadrill|Excadrill, M|224\/361
+|-damage|p1a: Excadrill|213\/361|[from] Stealth Rock
+|-ability|p1a: Excadrill|Mold Breaker
+|move|p2a: Wishy Washy|Volt Switch|p1a: Excadrill
+|-immune|p1a: Excadrill|[msg]
+|
+|turn|19
+|callback|decision
+|
+|move|p1a: Excadrill|Earthquake|p2a: Wishy Washy
+|-supereffective|p2a: Wishy Washy
+|-damage|p2a: Wishy Washy|28\/304
+|move|p2a: Wishy Washy|Hydro Pump|p1a: Excadrill|[miss]
+|-miss|p2a: Wishy Washy|p1a: Excadrill
+|
+|turn|20
+|callback|decision
+|
+|move|p1a: Excadrill|Earthquake|p2a: Wishy Washy
+|-supereffective|p2a: Wishy Washy
+|-damage|p2a: Wishy Washy|0 fnt
+|faint|p2a: Wishy Washy
+|
+|callback|decision
+|
+|switch|p2a: Joker|Conkeldurr, M|351\/351
+|turn|21
+|callback|decision
+|
+|switch|p1a: Volcarona|Volcarona, F, shiny|274\/371
+|-damage|p1a: Volcarona|89\/371|[from] Stealth Rock
+|move|p2a: Joker|Drain Punch|p1a: Volcarona
+|-resisted|p1a: Volcarona
+|-damage|p1a: Volcarona|7\/371
+|
+|-heal|p1a: Volcarona|30\/371|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p2a: Joker|Mach Punch|p1a: Volcarona
+|-resisted|p1a: Volcarona
+|-damage|p1a: Volcarona|0 fnt
+|faint|p1a: Volcarona
+|
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, M|324\/324
+|-damage|p1a: Dragonite|243\/324|[from] Stealth Rock
+|turn|23
+|callback|decision
+|
+|move|p1a: Dragonite|Outrage|p2a: Joker
+|-damage|p2a: Joker|134\/351
+|move|p2a: Joker|Ice Punch|p1a: Dragonite
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|0 fnt
+|faint|p1a: Dragonite
+|
+|callback|decision
+|
+|switch|p1a: Excadrill|Excadrill, M|213\/361
+|-damage|p1a: Excadrill|202\/361|[from] Stealth Rock
+|-ability|p1a: Excadrill|Mold Breaker
+|turn|24
+|callback|decision
+|
+|move|p2a: Joker|Mach Punch|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-damage|p1a: Excadrill|0 fnt
+|faint|p1a: Excadrill
+|
+|callback|decision
+|chat|Obsessions|gg
+|
+|switch|p1a: Greninja|Greninja, M, shiny|132\/286
+|-damage|p1a: Greninja|97\/286|[from] Stealth Rock
+|turn|25
+|callback|decision
+|
+|move|p2a: Joker|Mach Punch|p1a: Greninja
+|-supereffective|p1a: Greninja
+|-damage|p1a: Greninja|0 fnt
+|faint|p1a: Greninja
+|
+|win|femt6
+|raw|Ladder updating...
+|raw|Obsessions's rating: 1007 &rarr; <strong>929<\/strong><br \/>(-78 for losing)
+|raw|femt6's rating: 1007 &rarr; <strong>1254<\/strong><br \/>(+247 for winning)

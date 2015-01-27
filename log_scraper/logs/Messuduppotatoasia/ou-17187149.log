@@ -1,0 +1,364 @@
+|join|Messuduppotatoasia
+|join|TomBattle32
+|player|p1|Messuduppotatoasia|170
+|player|p2|TomBattle32|80
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Aerodactyl, M
+|poke|p1|Magnezone
+|poke|p1|Hydreigon, F
+|poke|p1|Terrakion
+|poke|p1|Scizor, M
+|poke|p1|Latias, F
+|poke|p2|Landorus-Therian, M
+|poke|p2|Blissey, F
+|poke|p2|Thundurus-Therian, M
+|poke|p2|Starmie
+|poke|p2|Terrakion
+|poke|p2|Metagross
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Aerodactyl|Aerodactyl, M|301\/301
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|369\/369
+|-ability|p1a: Aerodactyl|Unnerve|p2: TomBattle32
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Aerodactyl
+|-unboost|p1a: Aerodactyl|atk|1
+|turn|1
+|callback|decision
+|
+|move|p1a: Aerodactyl|Taunt|p2a: Landorus-Therian
+|-start|p2a: Landorus-Therian|move: Taunt
+|move|p2a: Landorus-Therian|Stone Edge|p1a: Aerodactyl
+|-supereffective|p1a: Aerodactyl
+|-enditem|p1a: Aerodactyl|Focus Sash
+|-damage|p1a: Aerodactyl|1\/301
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Aerodactyl|Stealth Rock|p2a: Landorus-Therian
+|-sidestart|p2: TomBattle32|move: Stealth Rock
+|move|p2a: Landorus-Therian|U-turn|p1a: Aerodactyl
+|-resisted|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|0 fnt
+|faint|p1a: Aerodactyl
+|callback|decision
+|
+|switch|p2a: Starmie|Starmie|261\/261
+|-damage|p2a: Starmie|229\/261|[from] Stealth Rock
+|
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, M|343\/343
+|turn|3
+|callback|decision
+|
+|move|p2a: Starmie|Rapid Spin|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|336\/343
+|-sideend|p2: TomBattle32|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Starmie
+|-damage|p2a: Starmie|203\/261|[from] item: Life Orb
+|move|p1a: Scizor|U-turn|p2a: Starmie
+|-supereffective|p2a: Starmie
+|-damage|p2a: Starmie|0 fnt
+|faint|p2a: Starmie
+|callback|decision
+|
+|switch|p1a: Hydreigon|Hydreigon, F|325\/325
+|
+|callback|decision
+|
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M|299\/299
+|turn|4
+|callback|decision
+|
+|move|p2a: Thundurus-Therian|Hidden Power|p1a: Hydreigon
+|-supereffective|p1a: Hydreigon
+|-damage|p1a: Hydreigon|127\/325
+|move|p1a: Hydreigon|Draco Meteor|p2a: Thundurus-Therian
+|-damage|p2a: Thundurus-Therian|0 fnt
+|-unboost|p1a: Hydreigon|spa|2
+|-damage|p1a: Hydreigon|95\/325|[from] item: Life Orb
+|faint|p2a: Thundurus-Therian
+|
+|callback|decision
+|
+|switch|p2a: Metagross|Metagross|302\/302
+|turn|5
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, M|336\/343
+|move|p2a: Metagross|Agility|p2a: Metagross
+|-boost|p2a: Metagross|spe|2
+|
+|turn|6
+|callback|decision
+|
+|move|p2a: Metagross|Earthquake|p1a: Scizor
+|-damage|p1a: Scizor|175\/343
+|-damage|p2a: Metagross|272\/302|[from] item: Life Orb
+|move|p1a: Scizor|U-turn|p2a: Metagross
+|-damage|p2a: Metagross|115\/302
+|callback|decision
+|
+|switch|p1a: Terrakion|Terrakion|323\/323
+|
+|turn|7
+|callback|decision
+|
+|move|p2a: Metagross|Meteor Mash|p1a: Terrakion
+|-supereffective|p1a: Terrakion
+|-damage|p1a: Terrakion|0 fnt
+|-boost|p2a: Metagross|atk|1
+|-damage|p2a: Metagross|85\/302|[from] item: Life Orb
+|faint|p1a: Terrakion
+|
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, M|175\/343
+|turn|8
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Metagross
+|-resisted|p2a: Metagross
+|-damage|p2a: Metagross|13\/302
+|move|p2a: Metagross|Earthquake|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|-damage|p2a: Metagross|0 fnt|[from] item: Life Orb
+|faint|p1a: Scizor
+|faint|p2a: Metagross
+|
+|callback|decision
+|
+|switch|p1a: Latias|Latias, F|364\/364
+|switch|p2a: Terrakion|Terrakion|324\/324
+|turn|9
+|callback|decision
+|
+|switch|p2a: Blissey|Blissey, F|652\/652
+|move|p1a: Latias|Substitute|p1a: Latias
+|-start|p1a: Latias|Substitute
+|-damage|p1a: Latias|273\/364
+|
+|-heal|p1a: Latias|295\/364|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p1a: Latias|Calm Mind|p1a: Latias
+|-boost|p1a: Latias|spa|1
+|-boost|p1a: Latias|spd|1
+|move|p2a: Blissey|Seismic Toss|p1a: Latias
+|-end|p1a: Latias|Substitute
+|
+|-heal|p1a: Latias|317\/364|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p1a: Latias|Calm Mind|p1a: Latias
+|-boost|p1a: Latias|spa|1
+|-boost|p1a: Latias|spd|1
+|move|p2a: Blissey|Seismic Toss|p1a: Latias
+|-damage|p1a: Latias|217\/364
+|
+|-heal|p1a: Latias|239\/364|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Latias|Substitute|p1a: Latias
+|-start|p1a: Latias|Substitute
+|-damage|p1a: Latias|148\/364
+|move|p2a: Blissey|Toxic|p1a: Latias
+|
+|-heal|p1a: Latias|170\/364|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: Latias|Roost|p1a: Latias
+|-heal|p1a: Latias|352\/364
+|move|p2a: Blissey|Seismic Toss|p1a: Latias
+|-end|p1a: Latias|Substitute
+|
+|-heal|p1a: Latias|364\/364|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: Latias|Substitute|p1a: Latias
+|-start|p1a: Latias|Substitute
+|-damage|p1a: Latias|273\/364
+|move|p2a: Blissey|Toxic|p1a: Latias
+|
+|-heal|p1a: Latias|295\/364|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1a: Latias|Calm Mind|p1a: Latias
+|-boost|p1a: Latias|spa|1
+|-boost|p1a: Latias|spd|1
+|move|p2a: Blissey|Seismic Toss|p1a: Latias
+|-end|p1a: Latias|Substitute
+|
+|-heal|p1a: Latias|317\/364|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Latias|Calm Mind|p1a: Latias
+|-boost|p1a: Latias|spa|1
+|-boost|p1a: Latias|spd|1
+|move|p2a: Blissey|Seismic Toss|p1a: Latias
+|-damage|p1a: Latias|217\/364
+|
+|-heal|p1a: Latias|239\/364|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Latias|Calm Mind|p1a: Latias
+|-boost|p1a: Latias|spa|1
+|-boost|p1a: Latias|spd|1
+|move|p2a: Blissey|Seismic Toss|p1a: Latias
+|-damage|p1a: Latias|139\/364
+|
+|-heal|p1a: Latias|161\/364|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p1a: Latias|Substitute|p1a: Latias
+|-start|p1a: Latias|Substitute
+|-damage|p1a: Latias|70\/364
+|move|p2a: Blissey|Toxic|p1a: Latias
+|
+|-heal|p1a: Latias|92\/364|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p1a: Latias|Roost|p1a: Latias
+|-heal|p1a: Latias|274\/364
+|move|p2a: Blissey|Seismic Toss|p1a: Latias
+|-end|p1a: Latias|Substitute
+|
+|-heal|p1a: Latias|296\/364|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p1a: Latias|Substitute|p1a: Latias
+|-start|p1a: Latias|Substitute
+|-damage|p1a: Latias|205\/364
+|move|p2a: Blissey|Toxic|p1a: Latias
+|
+|-heal|p1a: Latias|227\/364|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p1a: Latias|Calm Mind|p1a: Latias
+|-boost|p1a: Latias|spa|1
+|-boost|p1a: Latias|spd|1
+|move|p2a: Blissey|Seismic Toss|p1a: Latias
+|-end|p1a: Latias|Substitute
+|
+|-heal|p1a: Latias|249\/364|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p1a: Latias|Dragon Pulse|p2a: Blissey
+|-damage|p2a: Blissey|363\/652
+|move|p2a: Blissey|Seismic Toss|p1a: Latias
+|-damage|p1a: Latias|149\/364
+|
+|-heal|p1a: Latias|171\/364|[from] item: Leftovers
+|-heal|p2a: Blissey|403\/652|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p1a: Latias|Substitute|p1a: Latias
+|-start|p1a: Latias|Substitute
+|-damage|p1a: Latias|80\/364
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p1a: Latias|102\/364|[from] item: Leftovers
+|-heal|p2a: Blissey|443\/652|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p1a: Latias|Roost|p1a: Latias
+|-heal|p1a: Latias|284\/364
+|move|p2a: Blissey|Seismic Toss|p1a: Latias
+|-end|p1a: Latias|Substitute
+|
+|-heal|p2a: Blissey|652\/652|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Latias|306\/364|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p1a: Latias|Substitute|p1a: Latias
+|-start|p1a: Latias|Substitute
+|-damage|p1a: Latias|215\/364
+|move|p2a: Blissey|Seismic Toss|p1a: Latias
+|-end|p1a: Latias|Substitute
+|
+|-heal|p1a: Latias|237\/364|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|move|p1a: Latias|Dragon Pulse|p2a: Blissey
+|-damage|p2a: Blissey|363\/652
+|move|p2a: Blissey|Seismic Toss|p1a: Latias
+|-damage|p1a: Latias|137\/364
+|
+|-heal|p1a: Latias|159\/364|[from] item: Leftovers
+|-heal|p2a: Blissey|403\/652|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|move|p1a: Latias|Dragon Pulse|p2a: Blissey
+|-damage|p2a: Blissey|156\/652
+|move|p2a: Blissey|Seismic Toss|p1a: Latias
+|-damage|p1a: Latias|59\/364
+|
+|-heal|p1a: Latias|81\/364|[from] item: Leftovers
+|-heal|p2a: Blissey|196\/652|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|move|p1a: Latias|Dragon Pulse|p2a: Blissey
+|-damage|p2a: Blissey|0 fnt
+|faint|p2a: Blissey
+|
+|-heal|p1a: Latias|103\/364|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Terrakion|Terrakion|324\/324
+|turn|29
+|callback|decision
+|
+|move|p1a: Latias|Dragon Pulse|p2a: Terrakion
+|-damage|p2a: Terrakion|0 fnt
+|faint|p2a: Terrakion
+|
+|-heal|p1a: Latias|125\/364|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|369\/369
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Latias
+|-unboost|p1a: Latias|atk|1
+|turn|30
+|callback|decision
+|
+|move|p1a: Latias|Dragon Pulse|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|faint|p2a: Landorus-Therian
+|
+|win|Messuduppotatoasia
+|raw|Ladder updating...
+|raw|Messuduppotatoasia's rating: 1897 &rarr; <strong>1900<\/strong><br \/>(+3 for winning)
+|raw|TomBattle32's rating: 1615 &rarr; <strong>1608<\/strong><br \/>(-7 for losing)
+|leave|TomBattle32
+|player|p2

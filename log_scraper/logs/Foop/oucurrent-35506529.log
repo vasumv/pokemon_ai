@@ -1,0 +1,272 @@
+|join|Foop
+|join|CheesusChrist
+|player|p1|Foop|102
+|player|p2|CheesusChrist|265
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Tyranitar, M
+|poke|p1|Landorus-Therian, M
+|poke|p1|Garchomp, F
+|poke|p1|Jirachi
+|poke|p1|Keldeo
+|poke|p1|Latios, M
+|poke|p2|Politoed, F
+|poke|p2|Volcarona, F
+|poke|p2|Forretress, F
+|poke|p2|Keldeo
+|poke|p2|Alomomola, M
+|poke|p2|Jolteon, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Garchomp|Garchomp, F|358\/358
+|switch|p2a: Keldeo|Keldeo|323\/323
+|turn|1
+|callback|decision
+|
+|move|p2a: Keldeo|Calm Mind|p2a: Keldeo
+|-boost|p2a: Keldeo|spa|1
+|-boost|p2a: Keldeo|spd|1
+|move|p1a: Garchomp|Earthquake|p2a: Keldeo
+|-damage|p2a: Keldeo|119\/323
+|
+|-heal|p2a: Keldeo|139\/323|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|move|p2a: Keldeo|Hidden Power|p1a: Garchomp
+|-supereffective|p1a: Garchomp
+|-enditem|p1a: Garchomp|Focus Sash
+|-damage|p1a: Garchomp|1\/358
+|move|p1a: Garchomp|Earthquake|p2a: Keldeo
+|-damage|p2a: Keldeo|0 fnt
+|faint|p2a: Keldeo
+|
+|callback|decision
+|
+|switch|p2a: Forretress|Forretress, F|354\/354
+|turn|3
+|callback|decision
+|
+|move|p1a: Garchomp|Stealth Rock|p2a: Forretress
+|-sidestart|p2: CheesusChrist|move: Stealth Rock
+|move|p2a: Forretress|Stealth Rock|p1a: Garchomp
+|-sidestart|p1: Foop|move: Stealth Rock
+|
+|turn|4
+|callback|decision
+|
+|move|p1a: Garchomp|Fire Blast|p2a: Forretress
+|-supereffective|p2a: Forretress
+|-activate|p2a: Forretress|Sturdy
+|-damage|p2a: Forretress|1\/354
+|move|p2a: Forretress|Rapid Spin|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|-damage|p2a: Forretress|0 fnt|[from] ability: Rough Skin|[of] p1a: Garchomp
+|faint|p1a: Garchomp
+|faint|p2a: Forretress
+|
+|callback|decision
+|chat|CheesusChrist|Uhmm...
+|
+|switch|p1a: Latios|Latios, M|301\/301
+|-damage|p1a: Latios|264\/301|[from] Stealth Rock
+|switch|p2a: Alomomola|Alomomola, M|534\/534
+|-damage|p2a: Alomomola|468\/534|[from] Stealth Rock
+|turn|5
+|callback|decision
+|
+|move|p1a: Latios|Trick|p2a: Alomomola
+|-activate|p1a: Latios|move: Trick|[of] p2a: Alomomola
+|-item|p2a: Alomomola|Choice Specs|[from] move: Trick
+|-item|p1a: Latios|Leftovers|[from] move: Trick
+|move|p2a: Alomomola|Toxic|p1a: Latios
+|-status|p1a: Latios|tox
+|
+|-heal|p1a: Latios|282\/301 tox|[from] item: Leftovers
+|-damage|p1a: Latios|264\/301 tox|[from] psn
+|turn|6
+|callback|decision
+|
+|move|p1a: Latios|Psyshock|p2a: Alomomola
+|-damage|p2a: Alomomola|354\/534
+|move|p2a: Alomomola|Toxic|p1a: Latios
+|-fail|p1a: Latios|tox
+|
+|-heal|p1a: Latios|282\/301 tox|[from] item: Leftovers
+|-damage|p1a: Latios|246\/301 tox|[from] psn
+|turn|7
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, F|384\/384
+|-damage|p2a: Politoed|336\/384|[from] Stealth Rock
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|move|p1a: Latios|Draco Meteor|p2a: Politoed
+|-damage|p2a: Politoed|92\/384
+|-unboost|p1a: Latios|spa|2
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Latios|264\/301 tox|[from] item: Leftovers
+|-damage|p1a: Latios|210\/301 tox|[from] psn
+|turn|8
+|callback|decision
+|
+|move|p1a: Latios|Trick|p2a: Politoed
+|-activate|p1a: Latios|move: Trick|[of] p2a: Politoed
+|-item|p2a: Politoed|Leftovers|[from] move: Trick
+|-item|p1a: Latios|Choice Specs|[from] move: Trick
+|move|p2a: Politoed|Focus Blast|p1a: Latios
+|-crit|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|102\/301 tox
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|116\/384|[from] item: Leftovers
+|-damage|p1a: Latios|30\/301 tox|[from] psn
+|turn|9
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, M|386\/386
+|-damage|p1a: Tyranitar|338\/386|[from] Stealth Rock
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar
+|switch|p2a: Alomomola|Alomomola, M|354\/534
+|-damage|p2a: Alomomola|288\/534|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Alomomola|255\/534|[from] sandstorm
+|turn|10
+|callback|decision
+|
+|move|p1a: Tyranitar|Crunch|p2a: Alomomola
+|-damage|p2a: Alomomola|57\/534
+|move|p2a: Alomomola|Wish|p2a: Alomomola
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Alomomola|24\/534|[from] sandstorm
+|turn|11
+|callback|decision
+|
+|move|p1a: Tyranitar|Crunch|p2a: Alomomola
+|-damage|p2a: Alomomola|0 fnt
+|faint|p2a: Alomomola
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, F|116\/384
+|-damage|p2a: Politoed|68\/384|[from] Stealth Rock
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|turn|12
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M|30\/301 tox
+|-damage|p1a: Latios|0 fnt|[from] Stealth Rock
+|faint|p1a: Latios
+|move|p2a: Politoed|Hydro Pump|p1: Latios|[notarget]
+|-notarget
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|92\/384|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Keldeo|Keldeo|324\/324
+|-damage|p1a: Keldeo|304\/324|[from] Stealth Rock
+|turn|13
+|callback|decision
+|
+|move|p1a: Keldeo|Secret Sword|p2a: Politoed
+|-damage|p2a: Politoed|0 fnt
+|faint|p2a: Politoed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Keldeo|324\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Volcarona|Volcarona, F|312\/312
+|-damage|p2a: Volcarona|156\/312|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|move|p1a: Keldeo|Hydro Pump|p2a: Volcarona|[miss]
+|-miss|p1a: Keldeo|p2a: Volcarona
+|move|p2a: Volcarona|Hurricane|p1a: Keldeo
+|-crit|p1a: Keldeo
+|-supereffective|p1a: Keldeo
+|-damage|p1a: Keldeo|0 fnt
+|faint|p1a: Keldeo
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Volcarona|175\/312|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, M|338\/386
+|-damage|p1a: Tyranitar|290\/386|[from] Stealth Rock
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar
+|turn|15
+|callback|decision
+|
+|move|p2a: Volcarona|Bug Buzz|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|38\/386
+|-unboost|p1a: Tyranitar|spd|1
+|move|p1a: Tyranitar|Crunch|p2a: Volcarona
+|-damage|p2a: Volcarona|0 fnt
+|faint|p2a: Volcarona
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Jolteon|Jolteon, F|272\/272
+|-damage|p2a: Jolteon|238\/272|[from] Stealth Rock
+|turn|16
+|callback|decision
+|
+|move|p2a: Jolteon|Signal Beam|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|-damage|p2a: Jolteon|211\/272|[from] item: Life Orb
+|faint|p1a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Jolteon|194\/272|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: Jirachi|Jirachi|373\/373
+|-damage|p1a: Jirachi|350\/373|[from] Stealth Rock
+|turn|17
+|callback|decision
+|
+|move|p1a: Jirachi|U-turn|p2a: Jolteon
+|-damage|p2a: Jolteon|85\/272
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|331\/331
+|-damage|p1a: Landorus-Therian|290\/331|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Jolteon
+|-unboost|p2a: Jolteon|atk|1
+|move|p2a: Jolteon|Thunder|p1a: Landorus-Therian
+|-immune|p1a: Landorus-Therian|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Jolteon|68\/272|[from] sandstorm
+|-heal|p1a: Landorus-Therian|310\/331|[from] item: Leftovers
+|turn|18
+|callback|decision
+|-message|CheesusChrist forfeited.
+|
+|win|Foop
+|raw|Ladder updating...
+|leave|CheesusChrist
+|player|p2
+|raw|Foop's rating: 1912 &rarr; <strong>1914<\/strong><br \/>(+2 for winning)
+|raw|CheesusChrist's rating: 1563 &rarr; <strong>1562<\/strong><br \/>(-1 for losing)

@@ -1,0 +1,491 @@
+|join|femt6
+|join|1Bruno
+|player|p1|femt6|2
+|player|p2|1Bruno|170
+|gametype|singles
+|tier|OU
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Heatran, M
+|poke|p1|Forretress, F
+|poke|p1|Celebi
+|poke|p1|Landorus-Therian, M
+|poke|p1|Tyranitar, M
+|poke|p1|Keldeo
+|poke|p2|Hippowdon, F
+|poke|p2|Celebi
+|poke|p2|Landorus, M
+|poke|p2|Scizor, F
+|poke|p2|Jirachi
+|poke|p2|Rotom-Wash
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Pacato|Landorus-Therian, M|327\/327
+|switch|p2a: Jirachi|Jirachi|341\/341
+|-ability|p1a: Pacato|Intimidate|[of] p2a: Jirachi
+|-unboost|p2a: Jirachi|atk|1
+|turn|1
+|callback|decision
+|
+|move|p1a: Pacato|U-turn|p2a: Jirachi
+|-damage|p2a: Jirachi|255\/341
+|callback|decision
+|
+|switch|p1a: Bola de Gude|Forretress, F|351\/351
+|move|p2a: Jirachi|U-turn|p1a: Bola de Gude
+|-resisted|p1a: Bola de Gude
+|-damage|p1a: Bola de Gude|336\/351
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|299\/299
+|
+|-heal|p1a: Bola de Gude|351\/351|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Bola de Gude
+|-status|p1a: Bola de Gude|brn
+|move|p1a: Bola de Gude|Toxic Spikes|p2a: Rotom-Wash
+|-sidestart|p2: 1Bruno|move: Toxic Spikes
+|
+|-damage|p1a: Bola de Gude|308\/351 brn|[from] brn
+|turn|3
+|callback|decision
+|
+|switch|p1a: Tufinho|Celebi|404\/404
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Tufinho
+|-resisted|p1a: Tufinho
+|-damage|p1a: Tufinho|345\/404
+|
+|-heal|p1a: Tufinho|370\/404|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi|255\/341
+|move|p1a: Tufinho|Baton Pass|p1a: Tufinho
+|callback|decision
+|
+|switch|p1a: Bola de Gude|Forretress, F|308\/351 brn
+|
+|-heal|p1a: Bola de Gude|329\/351 brn|[from] item: Leftovers
+|-damage|p1a: Bola de Gude|286\/351 brn|[from] brn
+|turn|5
+|callback|decision
+|
+|move|p2a: Jirachi|U-turn|p1a: Bola de Gude
+|-crit|p1a: Bola de Gude
+|-resisted|p1a: Bola de Gude
+|-damage|p1a: Bola de Gude|243\/351 brn
+|callback|decision
+|
+|switch|p2a: Celebi|Celebi|404\/404
+|-status|p2a: Celebi|psn
+|move|p1a: Bola de Gude|Toxic Spikes|p2a: Celebi
+|-sidestart|p2: 1Bruno|move: Toxic Spikes
+|
+|-heal|p1a: Bola de Gude|264\/351 brn|[from] item: Leftovers
+|-damage|p2a: Celebi|354\/404 psn|[from] psn
+|-damage|p1a: Bola de Gude|221\/351 brn|[from] brn
+|turn|6
+|callback|decision
+|
+|switch|p1a: Bola de Fogo|Heatran, M|385\/385
+|move|p2a: Celebi|U-turn|p1a: Bola de Fogo
+|-resisted|p1a: Bola de Fogo
+|-damage|p1a: Bola de Fogo|373\/385
+|callback|decision
+|
+|switch|p2a: Landorus|Landorus, M|319\/319
+|
+|-heal|p1a: Bola de Fogo|385\/385|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p1a: Tufinho|Celebi|370\/404
+|move|p2a: Landorus|Hidden Power|p1a: Tufinho
+|-supereffective|p1a: Tufinho
+|-damage|p1a: Tufinho|232\/404
+|-damage|p2a: Landorus|288\/319|[from] item: Life Orb
+|
+|-heal|p1a: Tufinho|257\/404|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p1a: Ponei filho da put|Keldeo|324\/324
+|move|p2a: Landorus|U-turn|p1a: Ponei filho da put
+|-crit|p1a: Ponei filho da put
+|-resisted|p1a: Ponei filho da put
+|-damage|p1a: Ponei filho da put|227\/324
+|-damage|p2a: Landorus|257\/319|[from] item: Life Orb
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|299\/299
+|
+|turn|9
+|callback|decision
+|
+|switch|p1a: Tufinho|Celebi|257\/404
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Tufinho
+|-resisted|p1a: Tufinho
+|-damage|p1a: Tufinho|219\/404
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi|255\/341
+|
+|-heal|p1a: Tufinho|244\/404|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p1a: Bola de Fogo|Heatran, M|385\/385
+|move|p2a: Jirachi|U-turn|p1a: Bola de Fogo
+|-resisted|p1a: Bola de Fogo
+|-damage|p1a: Bola de Fogo|367\/385
+|callback|decision
+|
+|switch|p2a: Landorus|Landorus, M|257\/319
+|
+|-heal|p1a: Bola de Fogo|385\/385|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p2a: Landorus|U-turn|p1a: Bola de Fogo
+|-resisted|p1a: Bola de Fogo
+|-damage|p1a: Bola de Fogo|366\/385
+|-damage|p2a: Landorus|226\/319|[from] item: Life Orb
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|299\/299
+|move|p1a: Bola de Fogo|Stealth Rock|p2a: Rotom-Wash
+|-sidestart|p2: 1Bruno|move: Stealth Rock
+|
+|-heal|p1a: Bola de Fogo|385\/385|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Bola de Fogo
+|-damage|p1a: Bola de Fogo|310\/385
+|callback|decision
+|
+|switch|p2a: Hippowdon|Hippowdon, F|420\/420
+|-damage|p2a: Hippowdon|394\/420|[from] Stealth Rock
+|-status|p2a: Hippowdon|tox
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Hippowdon
+|move|p1a: Bola de Fogo|Roar|p2a: Hippowdon
+|drag|p2a: Scizor|Scizor, F|343\/343
+|-damage|p2a: Scizor|301\/343|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Bola de Fogo|334\/385|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p2a: Hippowdon|Hippowdon, F|394\/420 tox
+|-damage|p2a: Hippowdon|368\/420 tox|[from] Stealth Rock
+|move|p1a: Bola de Fogo|Lava Plume|p2a: Hippowdon
+|-damage|p2a: Hippowdon|209\/420 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Bola de Fogo|358\/385|[from] item: Leftovers
+|-heal|p2a: Hippowdon|235\/420 tox|[from] item: Leftovers
+|-damage|p2a: Hippowdon|209\/420 tox|[from] psn
+|turn|14
+|callback|decision
+|
+|switch|p1a: Bola de Gude|Forretress, F|221\/351 brn
+|move|p2a: Hippowdon|Stealth Rock|p1a: Bola de Gude
+|-sidestart|p1: femt6|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|235\/420 tox|[from] item: Leftovers
+|-heal|p1a: Bola de Gude|242\/351 brn|[from] item: Leftovers
+|-damage|p2a: Hippowdon|183\/420 tox|[from] psn
+|-damage|p1a: Bola de Gude|199\/351 brn|[from] brn
+|turn|15
+|callback|decision
+|
+|switch|p2a: Landorus|Landorus, M|226\/319
+|-damage|p2a: Landorus|187\/319|[from] Stealth Rock
+|move|p1a: Bola de Gude|Rapid Spin|p2a: Landorus
+|-damage|p2a: Landorus|179\/319
+|-sideend|p1: femt6|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Bola de Gude
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Bola de Gude|220\/351 brn|[from] item: Leftovers
+|-damage|p1a: Bola de Gude|177\/351 brn|[from] brn
+|turn|16
+|callback|decision
+|
+|switch|p1a: Pacato|Landorus-Therian, M|327\/327
+|-ability|p1a: Pacato|Intimidate|[of] p2a: Landorus
+|-unboost|p2a: Landorus|atk|1
+|move|p2a: Landorus|Earth Power|p1a: Pacato
+|-immune|p1a: Pacato|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|turn|17
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi|255\/341
+|-damage|p2a: Jirachi|234\/341|[from] Stealth Rock
+|move|p1a: Pacato|U-turn|p2a: Jirachi
+|-damage|p2a: Jirachi|136\/341
+|callback|decision
+|
+|switch|p1a: Ponei filho da put|Keldeo|227\/324
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Ponei filho da put|207\/324|[from] sandstorm
+|turn|18
+|callback|decision
+|
+|move|p2a: Jirachi|U-turn|p1a: Ponei filho da put
+|-resisted|p1a: Ponei filho da put
+|-damage|p1a: Ponei filho da put|168\/324
+|callback|decision
+|
+|switch|p2a: Hippowdon|Hippowdon, F|183\/420 tox
+|-damage|p2a: Hippowdon|157\/420 tox|[from] Stealth Rock
+|move|p1a: Ponei filho da put|Secret Sword|p2a: Hippowdon
+|-damage|p2a: Hippowdon|16\/420 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Ponei filho da put|148\/324|[from] sandstorm
+|-heal|p2a: Hippowdon|42\/420 tox|[from] item: Leftovers
+|-damage|p2a: Hippowdon|16\/420 tox|[from] psn
+|turn|19
+|callback|decision
+|
+|move|p1a: Ponei filho da put|Secret Sword|p2a: Hippowdon
+|-crit|p2a: Hippowdon
+|-damage|p2a: Hippowdon|0 fnt
+|faint|p2a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Ponei filho da put|128\/324|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: Celebi|Celebi|354\/404
+|-damage|p2a: Celebi|304\/404|[from] Stealth Rock
+|-status|p2a: Celebi|tox
+|turn|20
+|callback|decision
+|
+|switch|p1a: Pacato|Landorus-Therian, M|327\/327
+|-ability|p1a: Pacato|Intimidate|[of] p2a: Celebi
+|-unboost|p2a: Celebi|atk|1
+|move|p2a: Celebi|U-turn|p1a: Pacato
+|-resisted|p1a: Pacato
+|-damage|p1a: Pacato|309\/327
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|299\/299
+|-damage|p2a: Rotom-Wash|262\/299|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Rotom-Wash|244\/299|[from] sandstorm
+|turn|21
+|callback|decision
+|
+|move|p1a: Pacato|U-turn|p2a: Rotom-Wash
+|-crit|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|58\/299
+|callback|decision
+|chat|femt6|malz
+|
+|switch|p1a: Tufinho|Celebi|244\/404
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Tufinho
+|-resisted|p1a: Tufinho
+|-damage|p1a: Tufinho|211\/404
+|callback|decision
+|chat|1Bruno|XDF
+|
+|switch|p2a: Scizor|Scizor, F|301\/343
+|-damage|p2a: Scizor|259\/343|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Tufinho|186\/404|[from] sandstorm
+|-heal|p1a: Tufinho|211\/404|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p1a: Tufinho|Baton Pass|p1a: Tufinho
+|callback|decision
+|
+|switch|p1a: Pacato|Landorus-Therian, M|309\/327
+|-ability|p1a: Pacato|Intimidate|[of] p2a: Scizor
+|-unboost|p2a: Scizor|atk|1
+|move|p2a: Scizor|Superpower|p1a: Pacato
+|-resisted|p1a: Pacato
+|-damage|p1a: Pacato|216\/327
+|-unboost|p2a: Scizor|atk|1
+|-unboost|p2a: Scizor|def|1
+|
+|-weather|Sandstorm|[upkeep]
+|turn|23
+|callback|decision
+|
+|switch|p2a: Landorus|Landorus, M|179\/319
+|-damage|p2a: Landorus|140\/319|[from] Stealth Rock
+|move|p1a: Pacato|U-turn|p2a: Landorus
+|-resisted|p2a: Landorus
+|-damage|p2a: Landorus|88\/319
+|callback|decision
+|
+|switch|p1a: Ponei filho da put|Keldeo|128\/324
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Ponei filho da put|108\/324|[from] sandstorm
+|turn|24
+|callback|decision
+|
+|switch|p2a: Celebi|Celebi|304\/404
+|-status|p2a: Celebi|tox
+|-damage|p2a: Celebi|254\/404 tox|[from] Stealth Rock
+|move|p1a: Ponei filho da put|Surf|p2a: Celebi
+|-resisted|p2a: Celebi
+|-damage|p2a: Celebi|158\/404 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Ponei filho da put|88\/324|[from] sandstorm
+|-damage|p2a: Celebi|133\/404 tox|[from] sandstorm
+|-heal|p2a: Celebi|158\/404 tox|[from] item: Leftovers
+|-damage|p2a: Celebi|133\/404 tox|[from] psn
+|turn|25
+|callback|decision
+|
+|switch|p1a: Bola de Fogo|Heatran, M|358\/385
+|move|p2a: Celebi|Recover|p2a: Celebi
+|-heal|p2a: Celebi|335\/404 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Celebi|310\/404 tox|[from] sandstorm
+|-heal|p2a: Celebi|335\/404 tox|[from] item: Leftovers
+|-heal|p1a: Bola de Fogo|382\/385|[from] item: Leftovers
+|-damage|p2a: Celebi|285\/404 tox|[from] psn
+|turn|26
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|58\/299
+|-damage|p2a: Rotom-Wash|21\/299|[from] Stealth Rock
+|move|p1a: Bola de Fogo|Lava Plume|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Bola de Fogo|385\/385|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Landorus|Landorus, M|88\/319
+|-damage|p2a: Landorus|49\/319|[from] Stealth Rock
+|turn|27
+|callback|decision
+|
+|switch|p1a: Bola de Gude|Forretress, F|177\/351 brn
+|move|p2a: Landorus|Hidden Power|p1a: Bola de Gude
+|-resisted|p1a: Bola de Gude
+|-damage|p1a: Bola de Gude|108\/351 brn
+|-damage|p2a: Landorus|18\/319|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Bola de Gude|129\/351 brn|[from] item: Leftovers
+|-damage|p1a: Bola de Gude|86\/351 brn|[from] brn
+|turn|28
+|callback|decision
+|
+|move|p2a: Landorus|Hidden Power|p1a: Bola de Gude
+|-resisted|p1a: Bola de Gude
+|-damage|p1a: Bola de Gude|17\/351 brn
+|-damage|p2a: Landorus|0 fnt|[from] item: Life Orb
+|faint|p2a: Landorus
+|move|p1a: Bola de Gude|Gyro Ball|p2: Landorus|[notarget]
+|-notarget
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Bola de Gude|38\/351 brn|[from] item: Leftovers
+|-damage|p1a: Bola de Gude|0 fnt|[from] brn
+|faint|p1a: Bola de Gude
+|callback|decision
+|
+|switch|p1a: Bola de Fogo|Heatran, M|385\/385
+|switch|p2a: Scizor|Scizor, F|259\/343
+|-damage|p2a: Scizor|217\/343|[from] Stealth Rock
+|turn|29
+|callback|decision
+|
+|switch|p1a: Pacato|Landorus-Therian, M|216\/327
+|-ability|p1a: Pacato|Intimidate|[of] p2a: Scizor
+|-unboost|p2a: Scizor|atk|1
+|move|p2a: Scizor|Superpower|p1a: Pacato
+|-resisted|p1a: Pacato
+|-damage|p1a: Pacato|131\/327
+|-unboost|p2a: Scizor|atk|1
+|-unboost|p2a: Scizor|def|1
+|
+|-weather|Sandstorm|[upkeep]
+|turn|30
+|callback|decision
+|
+|switch|p2a: Celebi|Celebi|285\/404
+|-status|p2a: Celebi|tox
+|-damage|p2a: Celebi|235\/404 tox|[from] Stealth Rock
+|move|p1a: Pacato|U-turn|p2a: Celebi
+|-supereffective|p2a: Celebi
+|-damage|p2a: Celebi|0 fnt
+|faint|p2a: Celebi
+|callback|decision
+|
+|switch|p1a: Tufinho|Celebi|211\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Tufinho|186\/404|[from] sandstorm
+|-heal|p1a: Tufinho|211\/404|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi|136\/341
+|-damage|p2a: Jirachi|115\/341|[from] Stealth Rock
+|turn|31
+|callback|decision
+|
+|switch|p1a: Bola de Fogo|Heatran, M|385\/385
+|move|p2a: Jirachi|Ice Punch|p1a: Bola de Fogo
+|-resisted|p1a: Bola de Fogo
+|-damage|p1a: Bola de Fogo|367\/385
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Bola de Fogo|385\/385|[from] item: Leftovers
+|turn|32
+|callback|decision
+|
+|move|p2a: Jirachi|Ice Punch|p1a: Bola de Fogo
+|-resisted|p1a: Bola de Fogo
+|-damage|p1a: Bola de Fogo|365\/385
+|move|p1a: Bola de Fogo|Lava Plume|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|faint|p2a: Jirachi
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Bola de Fogo|385\/385|[from] item: Leftovers
+|callback|decision
+|chat|femt6|gg
+|
+|switch|p2a: Scizor|Scizor, F|217\/343
+|-damage|p2a: Scizor|175\/343|[from] Stealth Rock
+|turn|33
+|callback|decision
+|chat|1Bruno|s
+|
+|move|p1a: Bola de Fogo|Lava Plume|p2a: Scizor
+|-supereffective|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|faint|p2a: Scizor
+|
+|win|femt6

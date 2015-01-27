@@ -1,0 +1,423 @@
+|join|flightless testing
+|join|bizarman
+|player|p1|flightless testing|113
+|player|p2|bizarman|42
+|gametype|singles
+|gen|6
+|tier|ORAS OU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Sableye, M
+|poke|p1|Dragonite, F
+|poke|p1|Talonflame, M
+|poke|p1|Landorus, M
+|poke|p1|Thundurus-Therian, M
+|poke|p1|Scizor, F
+|poke|p2|Heatran, M
+|poke|p2|Metagross
+|poke|p2|Landorus-Therian, M
+|poke|p2|Slowbro, F
+|poke|p2|Thundurus, M
+|poke|p2|Gengar, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Sableye|Sableye, M|303\/303
+|switch|p2a: Heatran|Heatran, M|386\/386
+|turn|1
+|
+|detailschange|p1a: Sableye|Sableye-Mega, M
+|message|Sableye has Mega Evolved into Mega Sableye!
+|move|p1a: Sableye|Calm Mind|p1a: Sableye
+|-boost|p1a: Sableye|spa|1
+|-boost|p1a: Sableye|spd|1
+|move|p2a: Heatran|Stealth Rock|p1a: Sableye
+|move|p1a: Sableye|Stealth Rock|p2a: Heatran|[from]Magic Bounce
+|-sidestart|p2: bizarman|move: Stealth Rock
+|
+|turn|2
+|
+|move|p2a: Heatran|Lava Plume|p1a: Sableye
+|-damage|p1a: Sableye|233\/303
+|-status|p1a: Sableye|brn
+|move|p1a: Sableye|Calm Mind|p1a: Sableye
+|-boost|p1a: Sableye|spa|1
+|-boost|p1a: Sableye|spd|1
+|
+|-damage|p1a: Sableye|196\/303 brn|[from] brn
+|turn|3
+|
+|switch|p2a: Metagross|Metagross|301\/301
+|-damage|p2a: Metagross|283\/301|[from] Stealth Rock
+|move|p1a: Sableye|Dark Pulse|p2a: Metagross
+|-supereffective|p2a: Metagross
+|-damage|p2a: Metagross|0 fnt
+|faint|p2a: Metagross
+|
+|-damage|p1a: Sableye|159\/303 brn|[from] brn
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-damage|p2a: Landorus-Therian|280\/320|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Sableye
+|-unboost|p1a: Sableye|atk|1
+|turn|4
+|
+|switch|p1a: Dragonite|Dragonite, F|323\/323
+|move|p2a: Landorus-Therian|Earthquake|p1a: Dragonite
+|-immune|p1a: Dragonite|[msg]
+|
+|turn|5
+|
+|switch|p2a: Slowbro|Slowbro, F|394\/394
+|-damage|p2a: Slowbro|345\/394|[from] Stealth Rock
+|move|p1a: Dragonite|Extreme Speed|p2a: Slowbro
+|-damage|p2a: Slowbro|277\/394
+|
+|-heal|p2a: Slowbro|301\/394|[from] item: Leftovers
+|turn|6
+|
+|switch|p1a: Thundurus-Therian|Thundurus-Therian, M|299\/299
+|move|p2a: Slowbro|Thunder Wave|p1a: Thundurus-Therian
+|-immune|p1a: Thundurus-Therian|[msg]
+|
+|-heal|p2a: Slowbro|325\/394|[from] item: Leftovers
+|turn|7
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|280\/320
+|-damage|p2a: Landorus-Therian|240\/320|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Thundurus-Therian
+|-unboost|p1a: Thundurus-Therian|atk|1
+|move|p1a: Thundurus-Therian|U-turn|p2a: Landorus-Therian
+|-resisted|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|222\/320
+|
+|switch|p1a: Dragonite|Dragonite, F|323\/323
+|
+|turn|8
+|
+|move|p1a: Dragonite|Extreme Speed|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|115\/320
+|move|p2a: Landorus-Therian|Knock Off|p1a: Dragonite
+|-damage|p1a: Dragonite|261\/323
+|-enditem|p1a: Dragonite|Lum Berry|[from] move: Knock Off|[of] p2a: Landorus-Therian
+|
+|turn|9
+|
+|switch|p2a: Heatran|Heatran, M|386\/386
+|-damage|p2a: Heatran|338\/386|[from] Stealth Rock
+|move|p1a: Dragonite|Dragon Dance|p1a: Dragonite
+|-boost|p1a: Dragonite|atk|1
+|-boost|p1a: Dragonite|spe|1
+|
+|-heal|p2a: Heatran|362\/386|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Sableye|Sableye-Mega, M|159\/303 brn
+|move|p2a: Heatran|Roar|p1a: Sableye
+|move|p1a: Sableye|Roar|p2a: Heatran|[from]Magic Bounce
+|drag|p2a: Gengar|Gengar, M|262\/262
+|-damage|p2a: Gengar|230\/262|[from] Stealth Rock
+|
+|-heal|p2a: Gengar|246\/262|[from] item: Black Sludge
+|-damage|p1a: Sableye|122\/303 brn|[from] brn
+|turn|11
+|
+|move|p2a: Gengar|Taunt|p1a: Sableye
+|move|p1a: Sableye|Taunt|p2a: Gengar|[from]Magic Bounce
+|-start|p2a: Gengar|move: Taunt
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|274\/303 brn
+|
+|-heal|p2a: Gengar|262\/262|[from] item: Black Sludge
+|-damage|p1a: Sableye|237\/303 brn|[from] brn
+|turn|12
+|
+|move|p2a: Gengar|Shadow Ball|p1a: Sableye
+|-damage|p1a: Sableye|117\/303 brn
+|move|p1a: Sableye|Dark Pulse|p2a: Gengar
+|-supereffective|p2a: Gengar
+|-damage|p2a: Gengar|32\/262
+|
+|-heal|p2a: Gengar|48\/262|[from] item: Black Sludge
+|-damage|p1a: Sableye|80\/303 brn|[from] brn
+|turn|13
+|
+|switch|p1a: Scizor|Scizor, F|344\/344
+|move|p2a: Gengar|Shadow Ball|p1a: Scizor
+|-damage|p1a: Scizor|178\/344
+|
+|-heal|p2a: Gengar|64\/262|[from] item: Black Sludge
+|turn|14
+|
+|switch|p2a: Heatran|Heatran, M|362\/386
+|-damage|p2a: Heatran|314\/386|[from] Stealth Rock
+|move|p1a: Scizor|Bullet Punch|p2a: Heatran
+|-crit|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|248\/386
+|
+|-heal|p2a: Heatran|272\/386|[from] item: Leftovers
+|turn|15
+|
+|switch|p1a: Sableye|Sableye-Mega, M|80\/303 brn
+|move|p2a: Heatran|Stealth Rock|p1a: Sableye
+|move|p1a: Sableye|Stealth Rock|p2a: Heatran|[from]Magic Bounce
+|-fail|p2a: Heatran
+|
+|-heal|p2a: Heatran|296\/386|[from] item: Leftovers
+|-damage|p1a: Sableye|43\/303 brn|[from] brn
+|turn|16
+|
+|move|p2a: Heatran|Lava Plume|p1a: Sableye
+|-damage|p1a: Sableye|0 fnt
+|faint|p1a: Sableye
+|
+|-heal|p2a: Heatran|320\/386|[from] item: Leftovers
+|
+|switch|p1a: Landorus|Landorus, M|319\/319
+|turn|17
+|
+|switch|p2a: Thundurus|Thundurus, M|299\/299
+|-damage|p2a: Thundurus|225\/299|[from] Stealth Rock
+|move|p1a: Landorus|Substitute|p1a: Landorus
+|-start|p1a: Landorus|Substitute
+|-damage|p1a: Landorus|240\/319
+|
+|turn|18
+|
+|move|p2a: Thundurus|Hidden Power|p1a: Landorus
+|-supereffective|p1a: Landorus
+|-end|p1a: Landorus|Substitute
+|-damage|p2a: Thundurus|196\/299|[from] item: Life Orb
+|move|p1a: Landorus|Psychic|p2a: Thundurus
+|-damage|p2a: Thundurus|0 fnt
+|faint|p2a: Thundurus
+|
+|
+|switch|p2a: Gengar|Gengar, M|64\/262
+|-damage|p2a: Gengar|32\/262|[from] Stealth Rock
+|turn|19
+|
+|switch|p1a: Scizor|Scizor, F|178\/344
+|move|p2a: Gengar|Shadow Ball|p1a: Scizor
+|-damage|p1a: Scizor|10\/344
+|
+|-heal|p2a: Gengar|48\/262|[from] item: Black Sludge
+|turn|20
+|
+|switch|p2a: Slowbro|Slowbro, F|394\/394
+|-damage|p2a: Slowbro|345\/394|[from] Stealth Rock
+|move|p1a: Scizor|Superpower|p2a: Slowbro
+|-resisted|p2a: Slowbro
+|-damage|p2a: Slowbro|268\/394
+|-unboost|p1a: Scizor|atk|1
+|-unboost|p1a: Scizor|def|1
+|
+|-heal|p2a: Slowbro|292\/394|[from] item: Leftovers
+|turn|21
+|
+|switch|p1a: Thundurus-Therian|Thundurus-Therian, M|299\/299
+|move|p2a: Slowbro|Scald|p1a: Thundurus-Therian
+|-damage|p1a: Thundurus-Therian|181\/299
+|
+|-heal|p2a: Slowbro|316\/394|[from] item: Leftovers
+|turn|22
+|
+|switch|p2a: Heatran|Heatran, M|320\/386
+|-damage|p2a: Heatran|272\/386|[from] Stealth Rock
+|move|p1a: Thundurus-Therian|Thunderbolt|p2a: Heatran
+|-damage|p2a: Heatran|88\/386
+|
+|-heal|p2a: Heatran|112\/386|[from] item: Leftovers
+|turn|23
+|
+|switch|p1a: Scizor|Scizor, F|10\/344
+|move|p2a: Heatran|Stealth Rock|p1a: Scizor
+|-sidestart|p1: flightless testing|move: Stealth Rock
+|
+|-heal|p2a: Heatran|136\/386|[from] item: Leftovers
+|turn|24
+|
+|move|p2a: Heatran|Lava Plume|p1a: Scizor
+|-supereffective|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|faint|p1a: Scizor
+|
+|-heal|p2a: Heatran|160\/386|[from] item: Leftovers
+|
+|switch|p1a: Landorus|Landorus, M|240\/319
+|-damage|p1a: Landorus|201\/319|[from] Stealth Rock
+|turn|25
+|
+|switch|p2a: Gengar|Gengar, M|48\/262
+|-damage|p2a: Gengar|16\/262|[from] Stealth Rock
+|move|p1a: Landorus|Earth Power|p2a: Gengar
+|-immune|p2a: Gengar|[msg]
+|
+|-heal|p2a: Gengar|32\/262|[from] item: Black Sludge
+|turn|26
+|
+|move|p2a: Gengar|Shadow Ball|p1a: Landorus
+|-damage|p1a: Landorus|24\/319
+|move|p1a: Landorus|Psychic|p2a: Gengar
+|-supereffective|p2a: Gengar
+|-damage|p2a: Gengar|0 fnt
+|faint|p2a: Gengar
+|
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|115\/320
+|-damage|p2a: Landorus-Therian|75\/320|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Landorus
+|-unboost|p1a: Landorus|atk|1
+|turn|27
+|
+|move|p2a: Landorus-Therian|Stone Edge|p1a: Landorus
+|-damage|p1a: Landorus|0 fnt
+|faint|p1a: Landorus
+|
+|
+|switch|p1a: Talonflame|Talonflame, M|297\/297
+|-damage|p1a: Talonflame|149\/297|[from] Stealth Rock
+|turn|28
+|
+|switch|p2a: Slowbro|Slowbro, F|394\/394
+|-damage|p2a: Slowbro|345\/394|[from] Stealth Rock
+|move|p1a: Talonflame|Brave Bird|p2a: Slowbro
+|-damage|p2a: Slowbro|180\/394
+|-damage|p1a: Talonflame|95\/297|[from] recoil|[of] p2a: Slowbro
+|
+|-heal|p2a: Slowbro|204\/394|[from] item: Leftovers
+|turn|29
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Slowbro
+|-damage|p2a: Slowbro|53\/394
+|-damage|p1a: Talonflame|45\/297|[from] recoil|[of] p2a: Slowbro
+|move|p2a: Slowbro|Slack Off|p2a: Slowbro
+|-heal|p2a: Slowbro|250\/394
+|
+|-heal|p2a: Slowbro|274\/394|[from] item: Leftovers
+|turn|30
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Slowbro
+|-damage|p2a: Slowbro|123\/394
+|-damage|p1a: Talonflame|0 fnt|[from] recoil|[of] p2a: Slowbro
+|faint|p1a: Talonflame
+|move|p2a: Slowbro|Scald|p1: Talonflame|[notarget]
+|-notarget
+|
+|-heal|p2a: Slowbro|147\/394|[from] item: Leftovers
+|
+|switch|p1a: Thundurus-Therian|Thundurus-Therian, M|181\/299
+|-damage|p1a: Thundurus-Therian|107\/299|[from] Stealth Rock
+|turn|31
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|75\/320
+|-damage|p2a: Landorus-Therian|35\/320|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Thundurus-Therian
+|-unboost|p1a: Thundurus-Therian|atk|1
+|move|p1a: Thundurus-Therian|U-turn|p2a: Landorus-Therian
+|-resisted|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|17\/320
+|
+|switch|p1a: Dragonite|Dragonite, F|261\/323
+|-damage|p1a: Dragonite|181\/323|[from] Stealth Rock
+|
+|turn|32
+|
+|move|p1a: Dragonite|Extreme Speed|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|faint|p2a: Landorus-Therian
+|
+|
+|switch|p2a: Slowbro|Slowbro, F|278\/394
+|-damage|p2a: Slowbro|229\/394|[from] Stealth Rock
+|turn|33
+|
+|move|p1a: Dragonite|Dragon Dance|p1a: Dragonite
+|-boost|p1a: Dragonite|atk|1
+|-boost|p1a: Dragonite|spe|1
+|move|p2a: Slowbro|Scald|p1a: Dragonite
+|-resisted|p1a: Dragonite
+|-damage|p1a: Dragonite|135\/323
+|
+|-heal|p2a: Slowbro|253\/394|[from] item: Leftovers
+|turn|34
+|
+|move|p1a: Dragonite|Outrage|p2a: Slowbro
+|-damage|p2a: Slowbro|18\/394
+|move|p2a: Slowbro|Thunder Wave|p1a: Dragonite
+|-status|p1a: Dragonite|par
+|
+|-heal|p2a: Slowbro|42\/394|[from] item: Leftovers
+|turn|35
+|
+|cant|p1a: Dragonite|par
+|move|p2a: Slowbro|Slack Off|p2a: Slowbro
+|-heal|p2a: Slowbro|239\/394
+|
+|-heal|p2a: Slowbro|263\/394|[from] item: Leftovers
+|turn|36
+|
+|move|p1a: Dragonite|Dragon Dance|p1a: Dragonite
+|-boost|p1a: Dragonite|atk|1
+|-boost|p1a: Dragonite|spe|1
+|move|p2a: Slowbro|Slack Off|p2a: Slowbro
+|-heal|p2a: Slowbro|394\/394
+|
+|turn|37
+|
+|move|p1a: Dragonite|Outrage|p2a: Slowbro
+|-damage|p2a: Slowbro|48\/394
+|move|p2a: Slowbro|Psyshock|p1a: Dragonite
+|-damage|p1a: Dragonite|36\/323 par
+|
+|-heal|p2a: Slowbro|72\/394|[from] item: Leftovers
+|turn|38
+|
+|cant|p1a: Dragonite|par
+|move|p2a: Slowbro|Psyshock|p1a: Dragonite
+|-damage|p1a: Dragonite|0 fnt
+|faint|p1a: Dragonite
+|
+|-heal|p2a: Slowbro|96\/394|[from] item: Leftovers
+|
+|switch|p1a: Thundurus-Therian|Thundurus-Therian, M|107\/299
+|-damage|p1a: Thundurus-Therian|33\/299|[from] Stealth Rock
+|turn|39
+|
+|move|p1a: Thundurus-Therian|Thunderbolt|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|0 fnt
+|faint|p2a: Slowbro
+|
+|
+|switch|p2a: Heatran|Heatran, M|160\/386
+|-damage|p2a: Heatran|112\/386|[from] Stealth Rock
+|turn|40
+|c|âbizarman|gg
+|
+|move|p1a: Thundurus-Therian|Thunderbolt|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|faint|p2a: Heatran
+|
+|win|flightless testing
+|raw|Ladder updating...
+|raw|flightless testing's rating: 1262 &rarr; <strong>1290<\/strong><br \/>(+28 for winning)
+|raw|bizarman's rating: 1298 &rarr; <strong>1271<\/strong><br \/>(-27 for losing)
+|c|âflightless testing|gg
+|leave|bizarman
+|player|p2
+|c|âflightless testing|almost came back
+|c|âflightless testing|gj
+|player|p1|Guest 794887|113
+|join|randomlypie22
+|player|p1|randomlypie22|113

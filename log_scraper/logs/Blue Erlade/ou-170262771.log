@@ -1,0 +1,260 @@
+|join|Blue Erlade
+|join|dtw
+|player|p1|Blue Erlade|260
+|player|p2|dtw|1
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Gardevoir, F
+|poke|p1|Landorus-Therian, M
+|poke|p1|Ferrothorn, F
+|poke|p1|Sylveon, F
+|poke|p1|Smeargle, F
+|poke|p1|Dragonite, F
+|poke|p2|Gardevoir, M
+|poke|p2|Shuckle, M
+|poke|p2|Keldeo
+|poke|p2|Tyranitar, F
+|poke|p2|Landorus, M
+|poke|p2|Staraptor, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Smeargle|Smeargle, F|314\/314
+|switch|p2a: Staraptor|Staraptor, M|311\/311
+|turn|1
+|
+|move|p2a: Staraptor|U-turn|p1a: Smeargle
+|-crit|p1a: Smeargle
+|-enditem|p1a: Smeargle|Focus Sash
+|-damage|p1a: Smeargle|1\/314
+|
+|switch|p2a: Tyranitar|Tyranitar, F|341\/341
+|-weather|Sandstorm
+|move|p1a: Smeargle|Dark Void|p2a: Tyranitar
+|-miss|p1a: Smeargle|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Smeargle|0 fnt|[from] sandstorm
+|faint|p1a: Smeargle
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|330\/330
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Tyranitar
+|-unboost|p2a: Tyranitar|atk|1
+|turn|2
+|
+|move|p1a: Landorus-Therian|Superpower|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|-unboost|p1a: Landorus-Therian|atk|1
+|-unboost|p1a: Landorus-Therian|def|1
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Shuckle|Shuckle, M|244\/244
+|turn|3
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|352\/352
+|move|p2a: Shuckle|Stealth Rock|p1a: Ferrothorn
+|-sidestart|p1: Blue Erlade|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|4
+|
+|move|p1a: Ferrothorn|Leech Seed|p2a: Shuckle
+|-start|p2a: Shuckle|move: Leech Seed
+|move|p2a: Shuckle|Encore|p1a: Ferrothorn
+|-start|p1a: Ferrothorn|Encore
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Shuckle|214\/244|[from] Leech Seed|[of] p1a: Ferrothorn
+|turn|5
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|330\/330
+|-damage|p1a: Landorus-Therian|289\/330|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Shuckle
+|-unboost|p2a: Shuckle|atk|1
+|move|p2a: Shuckle|Sticky Web|p1a: Landorus-Therian
+|-sidestart|p1: Blue Erlade|move: Sticky Web
+|
+|-weather|none
+|-damage|p2a: Shuckle|184\/244|[from] Leech Seed|[of] p1a: Landorus-Therian
+|-heal|p1a: Landorus-Therian|319\/330|[silent]
+|turn|6
+|
+|move|p1a: Landorus-Therian|Knock Off|p2a: Shuckle
+|-damage|p2a: Shuckle|113\/244
+|-enditem|p2a: Shuckle|Mental Herb|[from] move: Knock Off|[of] p1a: Landorus-Therian
+|move|p2a: Shuckle|Knock Off|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|305\/330
+|-enditem|p1a: Landorus-Therian|Choice Scarf|[from] move: Knock Off|[of] p2a: Shuckle
+|
+|-damage|p2a: Shuckle|83\/244|[from] Leech Seed|[of] p1a: Landorus-Therian
+|-heal|p1a: Landorus-Therian|330\/330|[silent]
+|turn|7
+|
+|move|p1a: Landorus-Therian|Earthquake|p2a: Shuckle
+|-damage|p2a: Shuckle|0 fnt
+|faint|p2a: Shuckle
+|
+|
+|switch|p2a: Keldeo|Keldeo|322\/322
+|turn|8
+|
+|move|p2a: Keldeo|Scald|p1a: Landorus-Therian
+|-supereffective|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|faint|p1a: Landorus-Therian
+|
+|
+|switch|p1a: Sylveon|Sylveon, F|387\/387
+|-activate|p1a: Sylveon|move: Sticky Web
+|-unboost|p1a: Sylveon|spe|1
+|-damage|p1a: Sylveon|339\/387|[from] Stealth Rock
+|turn|9
+|
+|move|p2a: Keldeo|Scald|p1a: Sylveon
+|-damage|p1a: Sylveon|177\/387
+|-status|p1a: Sylveon|brn
+|move|p1a: Sylveon|Hyper Voice|p2a: Keldeo
+|-supereffective|p2a: Keldeo
+|-damage|p2a: Keldeo|0 fnt
+|faint|p2a: Keldeo
+|
+|-heal|p1a: Sylveon|201\/387 brn|[from] item: Leftovers
+|-damage|p1a: Sylveon|153\/387 brn|[from] brn
+|
+|switch|p2a: Gardevoir|Gardevoir, M|277\/277
+|-ability|p2a: Gardevoir|Pixilate|[from] ability: Trace|[of] p1a: Sylveon
+|turn|10
+|
+|detailschange|p2a: Gardevoir|Gardevoir-Mega, M
+|message|Gardevoir has Mega Evolved into Mega Gardevoir!
+|move|p2a: Gardevoir|Psyshock|p1a: Sylveon
+|-damage|p1a: Sylveon|0 fnt
+|faint|p1a: Sylveon
+|
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|352\/352
+|-activate|p1a: Ferrothorn|move: Sticky Web
+|-unboost|p1a: Ferrothorn|spe|1
+|-damage|p1a: Ferrothorn|330\/352|[from] Stealth Rock
+|turn|11
+|
+|switch|p2a: Staraptor|Staraptor, M|311\/311
+|move|p1a: Ferrothorn|Thunder Wave|p2a: Staraptor
+|-status|p2a: Staraptor|par
+|
+|-heal|p1a: Ferrothorn|352\/352|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Staraptor|Brave Bird|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|138\/352
+|-damage|p2a: Staraptor|273\/311 par|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|-damage|p2a: Staraptor|202\/311 par|[from] recoil|[of] p1a: Ferrothorn
+|move|p1a: Ferrothorn|Leech Seed|p2a: Staraptor
+|-start|p2a: Staraptor|move: Leech Seed
+|
+|-heal|p1a: Ferrothorn|160\/352|[from] item: Leftovers
+|-damage|p2a: Staraptor|164\/311 par|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|198\/352|[silent]
+|turn|13
+|
+|move|p1a: Ferrothorn|Protect|p1a: Ferrothorn
+|-singleturn|p1a: Ferrothorn|Protect
+|move|p2a: Staraptor|Brave Bird|p1a: Ferrothorn
+|-activate|p1a: Ferrothorn|Protect
+|
+|-heal|p1a: Ferrothorn|220\/352|[from] item: Leftovers
+|-damage|p2a: Staraptor|126\/311 par|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|258\/352|[silent]
+|turn|14
+|
+|cant|p2a: Staraptor|par
+|move|p1a: Ferrothorn|Stealth Rock|p2a: Staraptor
+|-sidestart|p2: dtw|move: Stealth Rock
+|
+|-heal|p1a: Ferrothorn|280\/352|[from] item: Leftovers
+|-damage|p2a: Staraptor|88\/311 par|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|318\/352|[silent]
+|turn|15
+|
+|move|p2a: Staraptor|Brave Bird|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|104\/352
+|-damage|p2a: Staraptor|50\/311 par|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|-damage|p2a: Staraptor|0 fnt|[from] recoil|[of] p1a: Ferrothorn
+|faint|p2a: Staraptor
+|move|p1a: Ferrothorn|Thunder Wave|p2: Staraptor|[notarget]
+|-notarget
+|
+|-heal|p1a: Ferrothorn|126\/352|[from] item: Leftovers
+|
+|switch|p2a: Landorus|Landorus, M|319\/319
+|-damage|p2a: Landorus|280\/319|[from] Stealth Rock
+|turn|16
+|
+|move|p2a: Landorus|Earth Power|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|0 fnt
+|faint|p1a: Ferrothorn
+|
+|
+|switch|p1a: Tom|Dragonite, F|324\/324
+|-damage|p1a: Tom|243\/324|[from] Stealth Rock
+|turn|17
+|
+|move|p2a: Landorus|Psychic|p1a: Tom
+|-damage|p1a: Tom|69\/324
+|move|p1a: Tom|Dragon Claw|p2a: Landorus
+|-damage|p2a: Landorus|130\/319
+|
+|turn|18
+|
+|move|p1a: Tom|Extreme Speed|p2a: Landorus
+|-damage|p2a: Landorus|30\/319
+|move|p2a: Landorus|Psychic|p1a: Tom
+|-damage|p1a: Tom|0 fnt
+|faint|p1a: Tom
+|
+|
+|switch|p1a: Aerow|Gardevoir, F|278\/278
+|-activate|p1a: Aerow|move: Sticky Web
+|-unboost|p1a: Aerow|spe|1
+|-damage|p1a: Aerow|244\/278|[from] Stealth Rock
+|-ability|p1a: Aerow|Sheer Force|[from] ability: Trace|[of] p2a: Landorus
+|turn|19
+|
+|detailschange|p1a: Aerow|Gardevoir-Mega, F
+|message|Gardevoir has Mega Evolved into Mega Gardevoir!
+|move|p2a: Landorus|Earth Power|p1a: Aerow
+|-damage|p1a: Aerow|41\/278
+|move|p1a: Aerow|Hyper Voice|p2a: Landorus
+|-damage|p2a: Landorus|0 fnt
+|faint|p2a: Landorus
+|
+|
+|switch|p2a: Gardevoir|Gardevoir-Mega, M|277\/277
+|-damage|p2a: Gardevoir|243\/277|[from] Stealth Rock
+|turn|20
+|c|âBlue Erlade|GG
+|c|âdtw|gg
+|
+|move|p2a: Gardevoir|Moonblast|p1a: Aerow
+|-damage|p1a: Aerow|0 fnt
+|faint|p1a: Aerow
+|
+|win|dtw
+|raw|Ladder updating...
+|raw|Blue Erlade's rating: 1413 &rarr; <strong>1392<\/strong><br \/>(-21 for losing)
+|raw|dtw's rating: 1407 &rarr; <strong>1428<\/strong><br \/>(+21 for winning)

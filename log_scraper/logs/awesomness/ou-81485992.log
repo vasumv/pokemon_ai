@@ -1,0 +1,273 @@
+|join|KDSlow
+|join|awesomness
+|player|p1|KDSlow|293
+|player|p2|awesomness|257
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Aegislash, F
+|poke|p1|Pinsir, M
+|poke|p1|Excadrill, M
+|poke|p1|Talonflame, M
+|poke|p1|Manaphy
+|poke|p1|Goodra, M
+|poke|p2|Jirachi, shiny
+|poke|p2|Aegislash, M, shiny
+|poke|p2|Charizard, M
+|poke|p2|Infernape, M
+|poke|p2|Starmie
+|poke|p2|Togekiss, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Talonflame|Talonflame, M|348\/348
+|switch|p2a: Infernape|Infernape, M|293\/293
+|turn|1
+|callback|decision
+|
+|move|p2a: Infernape|Stone Edge|p1a: Talonflame
+|-supereffective|p1a: Talonflame
+|-damage|p1a: Talonflame|0 fnt
+|faint|p1a: Talonflame
+|
+|callback|decision
+|
+|switch|p1a: Excadrill|Excadrill, M|362\/362
+|-ability|p1a: Excadrill|Mold Breaker
+|turn|2
+|callback|decision
+|
+|move|p1a: Excadrill|Rock Slide|p2a: Infernape
+|-damage|p2a: Infernape|163\/293
+|cant|p2a: Infernape|flinch
+|
+|turn|3
+|callback|decision
+|
+|move|p1a: Excadrill|Rock Slide|p2a: Infernape
+|-miss|p1a: Excadrill|p2a: Infernape
+|move|p2a: Infernape|Fire Punch|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-damage|p1a: Excadrill|0 fnt
+|faint|p1a: Excadrill
+|
+|callback|decision
+|
+|switch|p1a: Manaphy|Manaphy|341\/341
+|turn|4
+|callback|decision
+|
+|move|p2a: Infernape|Thunder Punch|p1a: Manaphy
+|-supereffective|p1a: Manaphy
+|-damage|p1a: Manaphy|171\/341
+|move|p1a: Manaphy|Scald|p2a: Infernape
+|-supereffective|p2a: Infernape
+|-damage|p2a: Infernape|0 fnt
+|faint|p2a: Infernape
+|
+|-heal|p1a: Manaphy|192\/341|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi, shiny|397\/397
+|turn|5
+|callback|decision
+|
+|move|p1a: Manaphy|Scald|p2a: Jirachi
+|-damage|p2a: Jirachi|285\/397
+|move|p2a: Jirachi|Body Slam|p1a: Manaphy
+|-damage|p1a: Manaphy|104\/341
+|-status|p1a: Manaphy|par
+|
+|-heal|p2a: Jirachi|309\/397|[from] item: Leftovers
+|-heal|p1a: Manaphy|125\/341 par|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Jirachi|Zen Headbutt|p1a: Manaphy
+|-damage|p1a: Manaphy|0 fnt
+|faint|p1a: Manaphy
+|
+|-heal|p2a: Jirachi|333\/397|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Pinsir|Pinsir, M|272\/272
+|turn|7
+|callback|decision
+|
+|-formechange|p1a: Pinsir|Pinsir-Mega
+|message|Pinsir has Mega Evolved into Mega Pinsir!
+|move|p1a: Pinsir|Earthquake|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|55\/397
+|move|p2a: Jirachi|Body Slam|p1a: Pinsir
+|-damage|p1a: Pinsir|189\/272
+|-status|p1a: Pinsir|par
+|
+|-heal|p2a: Jirachi|79\/397|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p2a: Jirachi|Ice Punch|p1a: Pinsir
+|-supereffective|p1a: Pinsir
+|-damage|p1a: Pinsir|47\/272 par
+|move|p1a: Pinsir|Return|p2a: Jirachi
+|-crit|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|faint|p2a: Jirachi
+|
+|callback|decision
+|
+|switch|p2a: Aegislash|Aegislash, M, shiny|324\/324
+|turn|9
+|callback|decision
+|
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Shadow Sneak|p1a: Pinsir
+|-damage|p1a: Pinsir|0 fnt
+|faint|p1a: Pinsir
+|
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, F|324\/324
+|turn|10
+|callback|decision
+|
+|move|p2a: Aegislash|Shadow Ball|p1a: Aegislash
+|-supereffective|p1a: Aegislash
+|-damage|p1a: Aegislash|144\/324
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Ball|p2a: Aegislash
+|-supereffective|p2a: Aegislash
+|-damage|p2a: Aegislash|0 fnt
+|faint|p2a: Aegislash
+|
+|-heal|p1a: Aegislash|164\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Starmie|Starmie|261\/261
+|turn|11
+|callback|decision
+|
+|-formechange|p1a: Aegislash|Aegislash
+|move|p1a: Aegislash|King's Shield|p1a: Aegislash
+|-singleturn|p1a: Aegislash|Protect
+|move|p2a: Starmie|Scald|p1a: Aegislash
+|-activate|p1a: Aegislash|Protect
+|
+|-heal|p1a: Aegislash|184\/324|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: Starmie|Scald|p1a: Aegislash
+|-damage|p1a: Aegislash|74\/324
+|-status|p1a: Aegislash|brn
+|-damage|p2a: Starmie|235\/261|[from] item: Life Orb
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Ball|p2a: Starmie
+|-supereffective|p2a: Starmie
+|-damage|p2a: Starmie|0 fnt
+|faint|p2a: Starmie
+|
+|-heal|p1a: Aegislash|94\/324 brn|[from] item: Leftovers
+|-damage|p1a: Aegislash|54\/324 brn|[from] brn
+|callback|decision
+|
+|switch|p2a: Charizard|Charizard, M|298\/298
+|turn|13
+|callback|decision
+|
+|-formechange|p2a: Charizard|Charizard-Mega-X
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p1a: Aegislash|Shadow Sneak|p2a: Charizard
+|-damage|p2a: Charizard|265\/298
+|move|p2a: Charizard|Dragon Dance|p2a: Charizard
+|-boost|p2a: Charizard|atk|1
+|-boost|p2a: Charizard|spe|1
+|
+|-heal|p1a: Aegislash|74\/324 brn|[from] item: Leftovers
+|-damage|p1a: Aegislash|34\/324 brn|[from] brn
+|turn|14
+|callback|decision
+|
+|move|p2a: Charizard|Dragon Dance|p2a: Charizard
+|-boost|p2a: Charizard|atk|1
+|-boost|p2a: Charizard|spe|1
+|move|p1a: Aegislash|Shadow Ball|p2a: Charizard
+|-crit|p2a: Charizard
+|-damage|p2a: Charizard|0 fnt
+|faint|p2a: Charizard
+|
+|-heal|p1a: Aegislash|54\/324 brn|[from] item: Leftovers
+|-damage|p1a: Aegislash|14\/324 brn|[from] brn
+|callback|decision
+|
+|switch|p2a: Togekiss|Togekiss, M|374\/374
+|turn|15
+|callback|decision
+|chat|awesomness|come on
+|
+|move|p1a: Aegislash|Shadow Sneak|p2a: Togekiss
+|-damage|p2a: Togekiss|338\/374
+|move|p2a: Togekiss|Air Slash|p1a: Aegislash
+|-resisted|p1a: Aegislash
+|-damage|p1a: Aegislash|0 fnt
+|faint|p1a: Aegislash
+|
+|-heal|p2a: Togekiss|361\/374|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Goodra|Goodra, M|384\/384
+|turn|16
+|callback|decision
+|
+|move|p1a: Goodra|Sludge Bomb|p2a: Togekiss
+|-crit|p2a: Togekiss
+|-supereffective|p2a: Togekiss
+|-damage|p2a: Togekiss|67\/374
+|move|p2a: Togekiss|Thunder Wave|p1a: Goodra
+|-status|p1a: Goodra|par
+|
+|-heal|p2a: Togekiss|90\/374|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p2a: Togekiss|Air Slash|p1a: Goodra
+|-damage|p1a: Goodra|318\/384 par
+|cant|p1a: Goodra|flinch
+|
+|-heal|p2a: Togekiss|113\/374|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p2a: Togekiss|Air Slash|p1a: Goodra
+|-damage|p1a: Goodra|254\/384 par
+|cant|p1a: Goodra|flinch
+|
+|-heal|p2a: Togekiss|136\/374|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p2a: Togekiss|Air Slash|p1a: Goodra
+|-damage|p1a: Goodra|185\/384 par
+|move|p1a: Goodra|Sludge Bomb|p2a: Togekiss
+|-supereffective|p2a: Togekiss
+|-damage|p2a: Togekiss|0 fnt
+|faint|p2a: Togekiss
+|
+|win|KDSlow
+|raw|Ladder updating...
+|raw|KDSlow's rating: 1428 &rarr; <strong>1447<\/strong><br \/>(+19 for winning)
+|raw|awesomness's rating: 1343 &rarr; <strong>1324<\/strong><br \/>(-19 for losing)
+|leave|awesomness
+|player|p2

@@ -1,0 +1,410 @@
+|join|Mikasa1337
+|join|blonde23
+|player|p1|Mikasa1337|265
+|player|p2|blonde23|92
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Charizard, F
+|poke|p1|Jolteon, M
+|poke|p1|Tyranitar, M
+|poke|p1|Greninja, F
+|poke|p1|Aegislash, M
+|poke|p1|Garchomp, M
+|poke|p2|Mandibuzz, F
+|poke|p2|Azumarill, M
+|poke|p2|Manectric, M
+|poke|p2|Roserade, F
+|poke|p2|Cofagrigus, M
+|poke|p2|Metagross
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Jolteon|Jolteon, M|272\/272
+|switch|p2a: Mandibuzz|Mandibuzz, F|397\/397
+|-item|p1a: Jolteon|Air Balloon
+|turn|1
+|callback|decision
+|
+|switch|p2a: Manectric|Manectric, M|282\/282
+|move|p1a: Jolteon|Volt Switch|p2a: Manectric
+|-boost|p2a: Manectric|spa|1|[from] ability: Lightningrod
+|
+|turn|2
+|callback|decision
+|
+|-formechange|p2a: Manectric|Manectric-Mega
+|message|Manectric has Mega Evolved into Mega Manectric!
+|-ability|p2a: Manectric|Intimidate|[of] p1a: Jolteon
+|-unboost|p1a: Jolteon|atk|1
+|move|p1a: Jolteon|Toxic|p2a: Manectric
+|-status|p2a: Manectric|tox
+|move|p2a: Manectric|Flamethrower|p1a: Jolteon
+|-damage|p1a: Jolteon|82\/272
+|-enditem|p1a: Jolteon|Air Balloon
+|
+|-damage|p2a: Manectric|265\/282 tox|[from] psn
+|turn|3
+|callback|decision
+|
+|move|p1a: Jolteon|Volt Switch|p2a: Manectric
+|-crit|p2a: Manectric
+|-resisted|p2a: Manectric
+|-damage|p2a: Manectric|160\/282 tox
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, M|341\/341
+|-weather|Sandstorm
+|move|p2a: Manectric|Flamethrower|p1a: Tyranitar
+|-resisted|p1a: Tyranitar
+|-damage|p1a: Tyranitar|299\/341
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Manectric|143\/282 tox|[from] sandstorm
+|-damage|p2a: Manectric|109\/282 tox|[from] psn
+|turn|4
+|callback|decision
+|
+|move|p2a: Manectric|Volt Switch|p1a: Tyranitar
+|-damage|p1a: Tyranitar|194\/341
+|callback|decision
+|chat|blonde23|What the...
+|chat|Mikasa1337|?
+|chat|blonde23|I cant predict anything
+|chat|Mikasa1337|what did you think I was going to do
+|chat|blonde23|Toxic on Jolt?
+|chat|Mikasa1337|lolololol
+|chat|blonde23|and Jolt outspeeds Megatric?
+|chat|Mikasa1337|no
+|chat|blonde23|It just did -_-
+|chat|Mikasa1337|it was because the game decides who goes first before mega evolve
+|chat|Mikasa1337|so from here on out, your manectric will be faster
+|chat|blonde23|The turn you Volt switched
+|chat|Mikasa1337|oh
+|chat|blonde23|I had been Mega'ed
+|chat|blonde23|one sec
+|chat|Mikasa1337|yeah that's weird. What's your nature and EVs?
+|chat|Mikasa1337|timid 252 on speed?
+|chat|blonde23|I have Modest, that might be it
+|chat|blonde23|but 252 on speed
+|c|âblonde23|!data mega manectric
+|c|~|\/data-pokemon Manectric-Mega
+
+|chat|Mikasa1337|well i'm timid and 252 on speed
+|c|âblonde23|!data jolteon
+|c|~|\/data-pokemon Jolteon
+
+|chat|Mikasa1337|so my speed is 243
+|chat|Mikasa1337|143*
+|chat|blonde23|Well,
+|
+|move|p1a: Tyranitar|Pursuit|p2a: Manectric|[from]Pursuit
+|-damage|p2a: Manectric|0 fnt
+|faint|p2a: Manectric
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Azumarill|Azumarill, M|404\/404
+|turn|5
+|callback|decision
+|chat|blonde23|Back to back
+|chat|blonde23|I just did the same thing one game ago
+|chat|blonde23|Screwed me over and lost me the game
+|chat|Mikasa1337|against a jolteon?
+|chat|Mikasa1337|you should change your nature to timid then
+|chat|blonde23|Timid Zam outspeeds Modest Mega Tric
+|chat|blonde23|Well,
+|chat|blonde23|Timid Megatric has a very low chance to OHKO Garchomp with HP Ice
+|chat|blonde23|So I want to get rid of him.
+|chat|Mikasa1337|oh ok
+|chat|blonde23|I'll just make a note to myself to switch out from Zam and Jolt
+|
+|move|p1a: Tyranitar|Stone Edge|p2a: Azumarill
+|-damage|p2a: Azumarill|227\/404
+|move|p2a: Azumarill|Waterfall|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|faint|p1a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Azumarill|202\/404|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: Jolteon|Jolteon, M|82\/272
+|turn|6
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, M|358\/358
+|switch|p2a: Roserade|Roserade, F|262\/262
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Roserade|246\/262|[from] sandstorm
+|turn|7
+|callback|decision
+|
+|move|p1a: Garchomp|Earthquake|p2a: Roserade
+|-damage|p2a: Roserade|3\/262
+|move|p2a: Roserade|Dazzling Gleam|p1a: Garchomp
+|-supereffective|p1a: Garchomp
+|-damage|p1a: Garchomp|120\/358
+|
+|-weather|none
+|turn|8
+|callback|decision
+|chat|blonde23|Agh
+|
+|switch|p1a: Charizard|Charizard, F|297\/297
+|move|p2a: Roserade|Dazzling Gleam|p1a: Charizard
+|-resisted|p1a: Charizard
+|-damage|p1a: Charizard|241\/297
+|
+|turn|9
+|callback|decision
+|
+|move|p2a: Roserade|Dazzling Gleam|p1a: Charizard
+|-resisted|p1a: Charizard
+|-damage|p1a: Charizard|188\/297
+|move|p1a: Charizard|Dragon Dance|p1a: Charizard
+|-boost|p1a: Charizard|atk|1
+|-boost|p1a: Charizard|spe|1
+|
+|turn|10
+|callback|decision
+|
+|-formechange|p1a: Charizard|Charizard-Mega-X
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p1a: Charizard|Flare Blitz|p2a: Roserade
+|-supereffective|p2a: Roserade
+|-damage|p2a: Roserade|0 fnt
+|-damage|p1a: Charizard|187\/297|[from] recoil|[of] p2a: Roserade
+|faint|p2a: Roserade
+|
+|callback|decision
+|chat|blonde23|Im done for
+|chat|blonde23|Im done
+|chat|blonde23|im screwed
+|chat|Mikasa1337|you never know
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|397\/397
+|turn|11
+|callback|decision
+|chat|blonde23|I kid
+|chat|blonde23|:D
+|c|âMikasa1337|!data mandibuzz
+|c|~|\/data-pokemon Mandibuzz
+
+|
+|move|p1a: Charizard|Flare Blitz|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|84\/397
+|-damage|p1a: Charizard|84\/297|[from] recoil|[of] p2a: Mandibuzz
+|move|p2a: Mandibuzz|Foul Play|p1a: Charizard
+|-damage|p1a: Charizard|0 fnt
+|faint|p1a: Charizard
+|
+|-heal|p2a: Mandibuzz|108\/397|[from] item: Leftovers
+|callback|decision
+|chat|blonde23|Still, 
+|
+|switch|p1a: Jolteon|Jolteon, M|82\/272
+|turn|12
+|callback|decision
+|chat|blonde23|that took a HUGE chunk
+|
+|switch|p2a: Metagross|Metagross|302\/302
+|move|p1a: Jolteon|Thunderbolt|p2a: Metagross
+|-damage|p2a: Metagross|227\/302
+|
+|turn|13
+|callback|decision
+|chat|Mikasa1337|yeah it did
+|
+|move|p1a: Jolteon|Volt Switch|p2a: Metagross
+|-damage|p2a: Metagross|167\/302
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, M|261\/261
+|move|p2a: Metagross|Earthquake|p1a: Aegislash
+|-supereffective|p1a: Aegislash
+|-damage|p1a: Aegislash|109\/261
+|-enditem|p1a: Aegislash|Weakness Policy
+|-boost|p1a: Aegislash|atk|2|[from] item: Weakness Policy
+|-boost|p1a: Aegislash|spa|2|[from] item: Weakness Policy
+|
+|turn|14
+|callback|decision
+|chat|blonde23|+2 Mega Zard X is about equal to +3 Manaphy
+|
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Sneak|p2a: Metagross
+|-supereffective|p2a: Metagross
+|-damage|p2a: Metagross|0 fnt
+|faint|p2a: Metagross
+|
+|callback|decision
+|chat|Mikasa1337|hmm I don't play manaphy so I wouldn't know
+|chat|blonde23|To put it short:
+|chat|blonde23|It demolishes anything it outspeeds
+|
+|switch|p2a: Cofagrigus|Cofagrigus, M|320\/320
+|turn|15
+|callback|decision
+|chat|Mikasa1337|ah I see
+|
+|move|p1a: Aegislash|Shadow Sneak|p2a: Cofagrigus
+|-supereffective|p2a: Cofagrigus
+|-damage|p2a: Cofagrigus|54\/320
+|-ability|p1a: Aegislash|Mummy|[from] Mummy
+|move|p2a: Cofagrigus|Will-O-Wisp|p1a: Aegislash
+|-status|p1a: Aegislash|brn
+|
+|-heal|p2a: Cofagrigus|74\/320|[from] item: Leftovers
+|-damage|p1a: Aegislash|77\/261 brn|[from] brn
+|turn|16
+|callback|decision
+|chat|blonde23|I love Cofagrigrus
+|
+|move|p1a: Aegislash|Shadow Sneak|p2a: Cofagrigus
+|-crit|p2a: Cofagrigus
+|-supereffective|p2a: Cofagrigus
+|-damage|p2a: Cofagrigus|0 fnt
+|-ability|p1a: Aegislash|Mummy|[from] Mummy
+|faint|p2a: Cofagrigus
+|
+|-damage|p1a: Aegislash|45\/261 brn|[from] brn
+|callback|decision
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|108\/397
+|turn|17
+|callback|decision
+|chat|Mikasa1337|yeah I want to make a cofagrigus team
+|chat|blonde23|I couldve hazed there
+|
+|move|p1a: Aegislash|Shadow Sneak|p2a: Mandibuzz
+|-resisted|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|75\/397
+|move|p2a: Mandibuzz|Knock Off|p1a: Aegislash
+|-supereffective|p1a: Aegislash
+|-damage|p1a: Aegislash|0 fnt
+|-ability|p2a: Mandibuzz|Mummy|[from] Mummy
+|faint|p1a: Aegislash
+|
+|-heal|p2a: Mandibuzz|99\/397|[from] item: Leftovers
+|callback|decision
+|chat|blonde23|gg
+|
+|switch|p1a: Jolteon|Jolteon, M|82\/272
+|turn|18
+|callback|decision
+|chat|blonde23|its done
+|
+|move|p1a: Jolteon|Thunderbolt|p2a: Mandibuzz
+|-crit|p2a: Mandibuzz
+|-supereffective|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|0 fnt
+|faint|p2a: Mandibuzz
+|
+|callback|decision
+|chat|blonde23|OH
+|chat|Mikasa1337|you can probs kill me
+|chat|blonde23|STUPID CRIT
+|chat|blonde23|SO TOTALLY MATTERED
+|chat|Mikasa1337|so you were playing dumb?
+|chat|blonde23|no not really
+|
+|switch|p2a: Azumarill|Azumarill, M|202\/404
+|turn|19
+|callback|decision
+|
+|move|p2a: Azumarill|Aqua Jet|p1a: Jolteon
+|-damage|p1a: Jolteon|0 fnt
+|faint|p1a: Jolteon
+|
+|callback|decision
+|
+|switch|p1a: Greninja|Greninja, F|286\/286
+|turn|20
+|callback|decision
+|
+|move|p2a: Azumarill|Aqua Jet|p1a: Greninja
+|-resisted|p1a: Greninja
+|-damage|p1a: Greninja|203\/286
+|-start|p1a: Greninja|typechange|Water|[from] Protean
+|move|p1a: Greninja|Scald|p2a: Azumarill
+|-resisted|p2a: Azumarill
+|-damage|p2a: Azumarill|103\/404
+|-damage|p1a: Greninja|175\/286|[from] item: Life Orb
+|
+|turn|21
+|callback|decision
+|
+|move|p2a: Azumarill|Aqua Jet|p1a: Greninja
+|-resisted|p1a: Greninja
+|-damage|p1a: Greninja|77\/286
+|move|p1a: Greninja|Scald|p2a: Azumarill
+|-resisted|p2a: Azumarill
+|-damage|p2a: Azumarill|15\/404
+|-damage|p1a: Greninja|49\/286|[from] item: Life Orb
+|
+|turn|22
+|callback|decision
+|
+|move|p2a: Azumarill|Aqua Jet|p1a: Greninja
+|-resisted|p1a: Greninja
+|-damage|p1a: Greninja|0 fnt
+|faint|p1a: Greninja
+|
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, M|120\/358
+|turn|23
+|callback|decision
+|chat|blonde23|Hmmm
+|
+|move|p2a: Azumarill|Aqua Jet|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|-damage|p2a: Azumarill|0 fnt|[from] ability: Rough Skin|[of] p1a: Garchomp
+|faint|p1a: Garchomp
+|faint|p2a: Azumarill
+|
+|tie
+|raw|Ladder updating...
+|chat|blonde23|CLUTCH
+|chat|blonde23|gg
+|chat|Mikasa1337|wow
+|raw|Mikasa1337's rating: 1242 &rarr; <strong>1239<\/strong><br \/>(-3 for tying)
+|raw|blonde23's rating: 1210 &rarr; <strong>1212<\/strong><br \/>(+2 for tying)
+|chat|Mikasa1337|gg
+|chat|Mikasa1337|I was hoping for the burn
+|chat|blonde23|WAIT
+|chat|blonde23|tie!
+|chat|Mikasa1337|?
+|chat|blonde23|Rough Skin!!!!!
+|chat|Mikasa1337|it was a tie?
+|chat|Mikasa1337|LOL
+|chat|blonde23|Bahahha
+|chat|blonde23|Dude
+|chat|blonde23|My rating still went up
+|chat|Mikasa1337|you were more of the winner than me tho
+|chat|blonde23|and yours went down
+|chat|Mikasa1337|yeah
+|chat|blonde23|tru
+|chat|Mikasa1337|gg
+|chat|Mikasa1337|see you around
+|chat|blonde23|gg
+|chat|blonde23|yep
+|leave|Mikasa1337
+|player|p1
+|leave|blonde23
+|player|p2
+|join|blonde23

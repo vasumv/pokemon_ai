@@ -1,0 +1,293 @@
+|join|fjac
+|join|thatisnotedible
+|player|p1|fjac|102
+|player|p2|thatisnotedible|266
+|gametype|singles
+|gen|4
+|tier|[Gen 4] OU (beta)
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|
+|start
+|switch|p1a: Skarmory|Skarmory, M|297\/297
+|switch|p2a: Metagross|Metagross|364\/364
+|turn|1
+|callback|decision
+|
+|move|p1a: Skarmory|Stealth Rock|p2a: Metagross
+|-sidestart|p2: thatisnotedible|move: Stealth Rock
+|move|p2a: Metagross|Stealth Rock|p1a: Skarmory
+|-sidestart|p1: fjac|move: Stealth Rock
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: Gyarados|Gyarados, M|331\/331
+|-damage|p2a: Gyarados|249\/331|[from] Stealth Rock
+|-ability|p2a: Gyarados|Intimidate|[of] p1a: Skarmory
+|-unboost|p1a: Skarmory|atk|1
+|move|p1a: Skarmory|Spikes|p2a: Gyarados
+|-sidestart|p2: thatisnotedible|Spikes
+|
+|turn|3
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|-damage|p1a: Rotom-Wash|266\/304|[from] Stealth Rock
+|move|p2a: Gyarados|Dragon Dance|p2a: Gyarados
+|-boost|p2a: Gyarados|atk|1
+|-boost|p2a: Gyarados|spe|1
+|
+|-heal|p1a: Rotom-Wash|285\/304|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Gyarados|Waterfall|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|29\/304
+|-damage|p2a: Gyarados|216\/331|[from] item: Life Orb
+|move|p1a: Rotom-Wash|Thunderbolt|p2a: Gyarados
+|-supereffective|p2a: Gyarados
+|-damage|p2a: Gyarados|0 fnt
+|faint|p2a: Gyarados
+|
+|-heal|p1a: Rotom-Wash|48\/304|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi|341\/341
+|-damage|p2a: Jirachi|299\/341|[from] Spikes
+|-damage|p2a: Jirachi|278\/341|[from] Stealth Rock
+|turn|5
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, M|341\/341
+|-damage|p1a: Tyranitar|299\/341|[from] Stealth Rock
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar
+|turn|6
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|89\/341
+|cant|p1a: Tyranitar|flinch
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Tyranitar|110\/341|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|297\/297
+|-damage|p1a: Skarmory|260\/297|[from] Stealth Rock
+|move|p2a: Jirachi|Iron Head|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|218\/297
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Skarmory|236\/297|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|194\/297
+|move|p1a: Skarmory|Spikes|p2a: Jirachi
+|-sidestart|p2: thatisnotedible|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Skarmory|212\/297|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, M|323\/323
+|-damage|p2a: Heatran|270\/323|[from] Spikes
+|-damage|p2a: Heatran|230\/323|[from] Stealth Rock
+|move|p1a: Skarmory|Spikes|p2a: Heatran
+|-sidestart|p2: thatisnotedible|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Skarmory|230\/297|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, F|348\/348
+|-damage|p1a: Dragonite|261\/348|[from] Stealth Rock
+|move|p2a: Heatran|Fire Blast|p1a: Dragonite
+|-resisted|p1a: Dragonite
+|-damage|p1a: Dragonite|157\/348
+|-damage|p2a: Heatran|198\/323|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Dragonite|136\/348|[from] sandstorm
+|-heal|p1a: Dragonite|157\/348|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p2a: Heatran|Fire Blast|p1a: Dragonite
+|-resisted|p1a: Dragonite
+|-damage|p1a: Dragonite|53\/348
+|-damage|p2a: Heatran|166\/323|[from] item: Life Orb
+|move|p1a: Dragonite|Earthquake|p2a: Heatran
+|-crit|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|faint|p2a: Heatran
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Dragonite|32\/348|[from] sandstorm
+|-heal|p1a: Dragonite|53\/348|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Metagross|Metagross|364\/364
+|-damage|p2a: Metagross|342\/364|[from] Stealth Rock
+|-damage|p2a: Metagross|251\/364|[from] Spikes
+|turn|12
+|callback|decision
+|
+|move|p1a: Dragonite|Earthquake|p2a: Metagross
+|-supereffective|p2a: Metagross
+|-damage|p2a: Metagross|95\/364
+|move|p2a: Metagross|Meteor Mash|p1a: Dragonite
+|-damage|p1a: Dragonite|0 fnt
+|faint|p1a: Dragonite
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|join|trapn
+|
+|switch|p1a: Skarmory|Skarmory, M|230\/297
+|-damage|p1a: Skarmory|193\/297|[from] Stealth Rock
+|turn|13
+|callback|decision
+|
+|move|p2a: Metagross|Explosion|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|faint|p1a: Skarmory
+|faint|p2a: Metagross
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi|278\/341
+|-damage|p2a: Jirachi|257\/341|[from] Stealth Rock
+|-damage|p2a: Jirachi|172\/341|[from] Spikes
+|switch|p1a: Scizor|Scizor, F|343\/343
+|-damage|p1a: Scizor|301\/343|[from] Stealth Rock
+|turn|14
+|callback|decision
+|leave|trapn
+|
+|move|p2a: Jirachi|Fire Punch|p1a: Scizor
+|-supereffective|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|faint|p1a: Scizor
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Togekiss|Togekiss, F|337\/337
+|-damage|p1a: Togekiss|253\/337|[from] Stealth Rock
+|turn|15
+|callback|decision
+|
+|move|p2a: Jirachi|Fire Punch|p1a: Togekiss
+|-damage|p1a: Togekiss|175\/337
+|move|p1a: Togekiss|Air Slash|p2a: Jirachi
+|-crit|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|41\/341
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Togekiss|154\/337|[from] sandstorm
+|-heal|p1a: Togekiss|175\/337|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, M|463\/463
+|-damage|p2a: Vaporeon|406\/463|[from] Stealth Rock
+|-damage|p2a: Vaporeon|291\/463|[from] Spikes
+|move|p1a: Togekiss|Air Slash|p2a: Vaporeon
+|-damage|p2a: Vaporeon|159\/463
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Togekiss|154\/337|[from] sandstorm
+|-damage|p2a: Vaporeon|131\/463|[from] sandstorm
+|-heal|p1a: Togekiss|175\/337|[from] item: Leftovers
+|-heal|p2a: Vaporeon|159\/463|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Vaporeon
+|-damage|p2a: Vaporeon|17\/463
+|cant|p2a: Vaporeon|flinch
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Togekiss|154\/337|[from] sandstorm
+|-damage|p2a: Vaporeon|0 fnt|[from] sandstorm
+|-heal|p1a: Togekiss|175\/337|[from] item: Leftovers
+|faint|p2a: Vaporeon
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi|41\/341
+|-damage|p2a: Jirachi|0 fnt|[from] Spikes
+|faint|p2a: Jirachi
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, F|508\/508
+|-damage|p2a: Snorlax|381\/508|[from] Spikes
+|-damage|p2a: Snorlax|318\/508|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Snorlax
+|-damage|p2a: Snorlax|218\/508
+|cant|p2a: Snorlax|flinch
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Togekiss|154\/337|[from] sandstorm
+|-damage|p2a: Snorlax|187\/508|[from] sandstorm
+|-heal|p1a: Togekiss|175\/337|[from] item: Leftovers
+|-heal|p2a: Snorlax|218\/508|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Snorlax
+|-damage|p2a: Snorlax|118\/508
+|cant|p2a: Snorlax|flinch
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Togekiss|154\/337|[from] sandstorm
+|-damage|p2a: Snorlax|87\/508|[from] sandstorm
+|-heal|p1a: Togekiss|175\/337|[from] item: Leftovers
+|-heal|p2a: Snorlax|118\/508|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Snorlax
+|-damage|p2a: Snorlax|25\/508
+|move|p2a: Snorlax|Return|p1a: Togekiss
+|-damage|p1a: Togekiss|49\/337
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Togekiss|28\/337|[from] sandstorm
+|-damage|p2a: Snorlax|0 fnt|[from] sandstorm
+|-heal|p1a: Togekiss|49\/337|[from] item: Leftovers
+|faint|p2a: Snorlax
+|
+|win|fjac
+|raw|Ladder updating...
+|raw|fjac's rating: 1436 &rarr; <strong>1457<\/strong><br \/>(+21 for winning)
+|raw|thatisnotedible's rating: 1654 &rarr; <strong>1648<\/strong><br \/>(-6 for losing)
+|chat|thatisnotedible|gg

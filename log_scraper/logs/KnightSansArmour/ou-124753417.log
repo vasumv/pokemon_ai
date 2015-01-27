@@ -1,0 +1,236 @@
+|join|KnightSansArmour
+|join|YoungTPS
+|player|p1|KnightSansArmour|2
+|player|p2|YoungTPS|260
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Gliscor, M
+|poke|p1|Chansey, F
+|poke|p1|Noivern, F
+|poke|p1|Blastoise, F
+|poke|p1|Zapdos
+|poke|p1|Metagross
+|poke|p2|Greninja, F
+|poke|p2|Rotom-Wash
+|poke|p2|Scizor, M
+|poke|p2|Volcarona, F
+|poke|p2|Tyranitar, F
+|poke|p2|Ditto
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Gliscor|Gliscor, M|354\/354
+|switch|p2a: Kai|Greninja, F|285\/285
+|turn|1
+|
+|move|p1a: Gliscor|Protect|p1a: Gliscor
+|-singleturn|p1a: Gliscor|Protect
+|-start|p2a: Kai|typechange|Ice|[from] Protean
+|move|p2a: Kai|Ice Beam|p1a: Gliscor
+|-activate|p1a: Gliscor|Protect
+|
+|-status|p1a: Gliscor|tox|[from] item: Toxic Orb
+|turn|2
+|
+|switch|p1a: Chansey|Chansey, F|704\/704
+|-start|p2a: Kai|typechange|Bug|[from] Protean
+|move|p2a: Kai|U-turn|p1a: Chansey
+|-damage|p1a: Chansey|556\/704
+|-damage|p2a: Kai|257\/285|[from] item: Life Orb
+|
+|switch|p2a: Keely|Scizor, M|344\/344
+|
+|turn|3
+|
+|switch|p1a: Zapdos|Zapdos|384\/384
+|-ability|p1a: Zapdos|Pressure
+|detailschange|p2a: Keely|Scizor-Mega, M
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p2a: Keely|Bug Bite|p1a: Zapdos
+|-resisted|p1a: Zapdos
+|-damage|p1a: Zapdos|273\/384
+|
+|-heal|p1a: Zapdos|297\/384|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Mex|Tyranitar, F|404\/404
+|-weather|Sandstorm
+|move|p1a: Zapdos|Thunderbolt|p2a: Mex
+|-damage|p2a: Mex|286\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Zapdos|273\/384|[from] sandstorm
+|-heal|p1a: Zapdos|297\/384|[from] item: Leftovers
+|-heal|p2a: Mex|311\/404|[from] item: Leftovers
+|turn|5
+|
+|switch|p1a: Blastoise|Blastoise, F|362\/362
+|move|p2a: Mex|Stone Edge|p1a: Blastoise
+|-damage|p1a: Blastoise|178\/362
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blastoise|156\/362|[from] sandstorm
+|-heal|p2a: Mex|336\/404|[from] item: Leftovers
+|turn|6
+|
+|detailschange|p1a: Blastoise|Blastoise-Mega, F
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p1a: Blastoise|Aura Sphere|p2a: Mex
+|-supereffective|p2a: Mex
+|-damage|p2a: Mex|0 fnt
+|faint|p2a: Mex
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blastoise|134\/362|[from] sandstorm
+|
+|switch|p2a: Bobbo|Rotom-Wash|304\/304
+|turn|7
+|
+|switch|p1a: Gliscor|Gliscor, M|354\/354 tox
+|move|p2a: Bobbo|Volt Switch|p1a: Gliscor
+|-immune|p1a: Gliscor|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Bobbo|285\/304|[from] sandstorm
+|-heal|p2a: Bobbo|304\/304|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Chansey|Chansey, F|556\/704
+|move|p2a: Bobbo|Hydro Pump|p1a: Chansey
+|-damage|p1a: Chansey|462\/704
+|
+|-weather|none
+|turn|9
+|
+|switch|p2a: Keely|Scizor-Mega, M|344\/344
+|move|p1a: Chansey|Seismic Toss|p2a: Keely
+|-damage|p2a: Keely|244\/344
+|
+|turn|10
+|
+|switch|p1a: Zapdos|Zapdos|297\/384
+|-ability|p1a: Zapdos|Pressure
+|move|p2a: Keely|Bug Bite|p1a: Zapdos
+|-resisted|p1a: Zapdos
+|-damage|p1a: Zapdos|188\/384
+|
+|-heal|p1a: Zapdos|212\/384|[from] item: Leftovers
+|turn|11
+|
+|switch|p2a: Tay|Volcarona, F|311\/311
+|move|p1a: Zapdos|Heat Wave|p2a: Tay
+|-crit|p2a: Tay
+|-damage|p2a: Tay|153\/311
+|
+|-heal|p1a: Zapdos|236\/384|[from] item: Leftovers
+|turn|12
+|
+|switch|p1a: Chansey|Chansey, F|462\/704
+|move|p2a: Tay|Quiver Dance|p2a: Tay
+|-boost|p2a: Tay|spa|1
+|-boost|p2a: Tay|spd|1
+|-boost|p2a: Tay|spe|1
+|
+|turn|13
+|
+|move|p2a: Tay|Giga Drain|p1a: Chansey
+|-damage|p1a: Chansey|379\/704
+|-heal|p2a: Tay|195\/311|[from] drain|[of] p1a: Chansey
+|move|p1a: Chansey|Toxic|p2a: Tay
+|-status|p2a: Tay|tox
+|
+|-damage|p2a: Tay|176\/311 tox|[from] psn
+|turn|14
+|
+|move|p2a: Tay|Bug Buzz|p1a: Chansey
+|-damage|p1a: Chansey|217\/704
+|move|p1a: Chansey|Soft-Boiled|p1a: Chansey
+|-heal|p1a: Chansey|569\/704
+|
+|-damage|p2a: Tay|138\/311 tox|[from] psn
+|turn|15
+|
+|switch|p2a: Keely|Scizor-Mega, M|244\/344
+|move|p1a: Chansey|Seismic Toss|p2a: Keely
+|-damage|p2a: Keely|144\/344
+|
+|turn|16
+|
+|switch|p1a: Zapdos|Zapdos|236\/384
+|-ability|p1a: Zapdos|Pressure
+|move|p2a: Keely|Roost|p2a: Keely
+|-heal|p2a: Keely|316\/344
+|
+|-heal|p1a: Zapdos|260\/384|[from] item: Leftovers
+|turn|17
+|
+|switch|p2a: Tay|Volcarona, F|138\/311 tox
+|move|p1a: Zapdos|Thunderbolt|p2a: Tay
+|-damage|p2a: Tay|0 fnt
+|faint|p2a: Tay
+|
+|-heal|p1a: Zapdos|284\/384|[from] item: Leftovers
+|
+|switch|p2a: Kai|Greninja, F|257\/285
+|turn|18
+|
+|switch|p1a: Chansey|Chansey, F|569\/704
+|-start|p2a: Kai|typechange|Ice|[from] Protean
+|move|p2a: Kai|Ice Beam|p1a: Chansey
+|-damage|p1a: Chansey|448\/704
+|-damage|p2a: Kai|229\/285|[from] item: Life Orb
+|
+|turn|19
+|
+|switch|p2a: Keely|Scizor-Mega, M|316\/344
+|move|p1a: Chansey|Seismic Toss|p2a: Keely
+|-damage|p2a: Keely|216\/344
+|
+|turn|20
+|
+|switch|p1a: Zapdos|Zapdos|284\/384
+|-ability|p1a: Zapdos|Pressure
+|move|p2a: Keely|Swords Dance|p2a: Keely
+|-boost|p2a: Keely|atk|2
+|
+|-heal|p1a: Zapdos|308\/384|[from] item: Leftovers
+|turn|21
+|
+|move|p2a: Keely|Bullet Punch|p1a: Zapdos
+|-resisted|p1a: Zapdos
+|-damage|p1a: Zapdos|156\/384
+|move|p1a: Zapdos|Heat Wave|p2a: Keely
+|-supereffective|p2a: Keely
+|-damage|p2a: Keely|0 fnt
+|faint|p2a: Keely
+|
+|-heal|p1a: Zapdos|180\/384|[from] item: Leftovers
+|
+|switch|p2a: Jam|Ditto|300\/300
+|-transform|p2a: Jam|p1a: Zapdos
+|-ability|p2a: Jam|Pressure
+|turn|22
+|
+|switch|p1a: Chansey|Chansey, F|448\/704
+|move|p2a: Jam|Heat Wave|p1a: Chansey
+|-miss|p2a: Jam|p1a: Chansey
+|
+|turn|23
+|-message|YoungTPS forfeited.
+|
+|win|KnightSansArmour
+|raw|Ladder updating...
+|leave|YoungTPS
+|player|p2
+|raw|KnightSansArmour's rating: 1449 &rarr; <strong>1470<\/strong><br \/>(+21 for winning)
+|raw|YoungTPS's rating: 1465 &rarr; <strong>1444<\/strong><br \/>(-21 for losing)

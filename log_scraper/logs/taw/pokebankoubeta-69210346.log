@@ -1,0 +1,256 @@
+|join|taw
+|join|JoCalibur
+|player|p1|taw|265
+|player|p2|JoCalibur|52
+|gametype|singles
+|tier|Pokebank OU (beta)
+|rated
+|clearpoke
+|poke|p1|Kangaskhan, F
+|poke|p1|Tyranitar, F
+|poke|p1|Rotom-Wash
+|poke|p1|Volcarona, F
+|poke|p1|Mandibuzz, F
+|poke|p1|Genesect
+|poke|p2|Conkeldurr, M, shiny
+|poke|p2|Venusaur, F
+|poke|p2|Blastoise, F
+|poke|p2|Excadrill, F
+|poke|p2|Rotom-Heat
+|poke|p2|Aegislash, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Kangaskhan|Kangaskhan, F|414\/414
+|switch|p2a: Rotom-Heat|Rotom-Heat|304\/304
+|turn|1
+|callback|decision
+|
+|-formechange|p1a: Kangaskhan|Kangaskhan-Mega
+|message|Kangaskhan has Mega Evolved into Mega Kangaskhan!
+|move|p1a: Kangaskhan|Power-Up Punch|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|268\/304
+|-boost|p1a: Kangaskhan|atk|1
+|-damage|p2a: Rotom-Heat|243\/304
+|-boost|p1a: Kangaskhan|atk|1
+|-hitcount|p2a: Rotom-Heat|2
+|move|p2a: Rotom-Heat|Will-O-Wisp|p1a: Kangaskhan
+|-status|p1a: Kangaskhan|brn
+|
+|-heal|p2a: Rotom-Heat|262\/304|[from] item: Leftovers
+|-damage|p1a: Kangaskhan|363\/414 brn|[from] brn
+|turn|2
+|callback|decision
+|
+|move|p1a: Kangaskhan|Return|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|127\/304
+|-damage|p2a: Rotom-Heat|58\/304
+|-hitcount|p2a: Rotom-Heat|2
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Kangaskhan
+|-damage|p1a: Kangaskhan|278\/414 brn
+|callback|decision
+|
+|switch|p2a: Aegislash|Aegislash, F|280\/280
+|
+|-damage|p1a: Kangaskhan|227\/414 brn|[from] brn
+|turn|3
+|callback|decision
+|
+|move|p1a: Kangaskhan|Sucker Punch|p2a: Aegislash
+|-fail|p2a: Aegislash
+|move|p2a: Aegislash|Autotomize|p2a: Aegislash
+|-boost|p2a: Aegislash|spe|2
+|-start|p2a: Aegislash|Autotomize
+|
+|-damage|p1a: Kangaskhan|176\/414 brn|[from] brn
+|turn|4
+|callback|decision
+|
+|move|p2a: Aegislash|King's Shield|p2a: Aegislash
+|-singleturn|p2a: Aegislash|Protect
+|move|p1a: Kangaskhan|Sucker Punch|p2a: Aegislash
+|-fail|p2a: Aegislash
+|
+|-damage|p1a: Kangaskhan|125\/414 brn|[from] brn
+|turn|5
+|callback|decision
+|
+|move|p1a: Kangaskhan|Sucker Punch|p2a: Aegislash
+|-fail|p2a: Aegislash
+|move|p2a: Aegislash|Autotomize|p2a: Aegislash
+|-boost|p2a: Aegislash|spe|2
+|
+|-damage|p1a: Kangaskhan|74\/414 brn|[from] brn
+|turn|6
+|callback|decision
+|
+|move|p2a: Aegislash|Autotomize|p2a: Aegislash
+|-boost|p2a: Aegislash|spe|2
+|move|p1a: Kangaskhan|Crunch|p2a: Aegislash
+|-supereffective|p2a: Aegislash
+|-damage|p2a: Aegislash|124\/280
+|-enditem|p2a: Aegislash|Weakness Policy
+|-boost|p2a: Aegislash|atk|2|[from] item: Weakness Policy
+|-boost|p2a: Aegislash|spa|2|[from] item: Weakness Policy
+|-supereffective|p2a: Aegislash
+|-damage|p2a: Aegislash|46\/280
+|-hitcount|p2a: Aegislash|2
+|
+|-damage|p1a: Kangaskhan|23\/414 brn|[from] brn
+|turn|7
+|callback|decision
+|
+|move|p2a: Aegislash|King's Shield|p2a: Aegislash
+|-singleturn|p2a: Aegislash|Protect
+|move|p1a: Kangaskhan|Sucker Punch|p2a: Aegislash
+|-fail|p2a: Aegislash
+|
+|-damage|p1a: Kangaskhan|0 fnt|[from] brn
+|faint|p1a: Kangaskhan
+|callback|decision
+|
+|switch|p1a: Volcarona|Volcarona, F|374\/374
+|turn|8
+|callback|decision
+|
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Shadow Ball|p1a: Volcarona
+|-damage|p1a: Volcarona|56\/374
+|move|p1a: Volcarona|Fiery Dance|p2a: Aegislash
+|-supereffective|p2a: Aegislash
+|-damage|p2a: Aegislash|0 fnt
+|-boost|p1a: Volcarona|spa|1
+|faint|p2a: Aegislash
+|
+|-heal|p1a: Volcarona|79\/374|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Blastoise|Blastoise, F|362\/362
+|turn|9
+|callback|decision
+|
+|move|p1a: Volcarona|Giga Drain|p2a: Blastoise
+|-supereffective|p2a: Blastoise
+|-damage|p2a: Blastoise|154\/362
+|-heal|p1a: Volcarona|183\/374|[from] drain|[of] p2a: Blastoise
+|move|p2a: Blastoise|Scald|p1a: Volcarona
+|-supereffective|p1a: Volcarona
+|-damage|p1a: Volcarona|25\/374
+|
+|-heal|p1a: Volcarona|48\/374|[from] item: Leftovers
+|-heal|p2a: Blastoise|176\/362|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p2a: Venusaur|Venusaur, F|364\/364
+|move|p1a: Volcarona|Roost|p1a: Volcarona
+|-heal|p1a: Volcarona|235\/374
+|
+|-heal|p1a: Volcarona|258\/374|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p1a: Volcarona|Fiery Dance|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|212\/364
+|-boost|p1a: Volcarona|spa|1
+|move|p2a: Venusaur|Sleep Powder|p1a: Volcarona
+|-status|p1a: Volcarona|slp
+|
+|-heal|p1a: Volcarona|281\/374 slp|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|cant|p1a: Volcarona|slp
+|move|p2a: Venusaur|Leech Seed|p1a: Volcarona
+|-start|p1a: Volcarona|move: Leech Seed
+|
+|-heal|p1a: Volcarona|304\/374 slp|[from] item: Leftovers
+|-damage|p1a: Volcarona|258\/374 slp|[from] Leech Seed|[of] p2a: Venusaur
+|-heal|p2a: Venusaur|258\/364|[silent]
+|turn|13
+|callback|decision
+|
+|cant|p1a: Volcarona|slp
+|move|p2a: Venusaur|Sludge Bomb|p1a: Volcarona
+|-damage|p1a: Volcarona|87\/374 slp
+|
+|-heal|p1a: Volcarona|110\/374 slp|[from] item: Leftovers
+|-damage|p1a: Volcarona|64\/374 slp|[from] Leech Seed|[of] p2a: Venusaur
+|-heal|p2a: Venusaur|304\/364|[silent]
+|turn|14
+|callback|decision
+|
+|cant|p1a: Volcarona|slp
+|move|p2a: Venusaur|Sludge Bomb|p1a: Volcarona
+|-damage|p1a: Volcarona|0 fnt
+|faint|p1a: Volcarona
+|
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|283\/283
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|turn|15
+|callback|decision
+|
+|move|p1a: Genesect|Ice Beam|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|166\/364
+|move|p2a: Venusaur|Hidden Power|p1a: Genesect
+|-supereffective|p1a: Genesect
+|-damage|p1a: Genesect|0 fnt
+|faint|p1a: Genesect
+|
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|turn|16
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Trick|p2a: Venusaur
+|-fail|p2a: Venusaur
+|move|p2a: Venusaur|Leech Seed|p1a: Rotom-Wash
+|-start|p1a: Rotom-Wash|move: Leech Seed
+|
+|-damage|p1a: Rotom-Wash|266\/304|[from] Leech Seed|[of] p2a: Venusaur
+|-heal|p2a: Venusaur|204\/364|[silent]
+|turn|17
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, F|404\/404
+|-weather|Sandstorm
+|move|p2a: Venusaur|Sleep Powder|p1a: Tyranitar
+|-status|p1a: Tyranitar|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Venusaur|182\/364|[from] sandstorm
+|turn|18
+|callback|decision
+|
+|move|p2a: Venusaur|Leech Seed|p1a: Tyranitar
+|-start|p1a: Tyranitar|move: Leech Seed
+|cant|p1a: Tyranitar|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Venusaur|160\/364|[from] sandstorm
+|-damage|p1a: Tyranitar|354\/404 slp|[from] Leech Seed|[of] p2a: Venusaur
+|-heal|p2a: Venusaur|210\/364|[silent]
+|turn|19
+|callback|decision
+|-message|taw forfeited.
+|
+|win|JoCalibur
+|raw|Ladder updating...
+|leave|taw
+|player|p1
+|raw|taw's rating: 1902 &rarr; <strong>1896<\/strong><br \/>(-6 for losing)
+|raw|JoCalibur's rating: 1691 &rarr; <strong>1703<\/strong><br \/>(+12 for winning)

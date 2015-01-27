@@ -1,0 +1,454 @@
+|join|Itsuki
+|join|Dr. Hiker Dan
+|player|p1|Itsuki|169
+|player|p2|Dr. Hiker Dan|10
+|gametype|singles
+|tier|Pokebank OU (beta)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Tornadus-Therian, M
+|poke|p1|Genesect
+|poke|p1|Gengar, F
+|poke|p1|Latios, M
+|poke|p1|Scizor, M
+|poke|p1|Landorus-Therian, M
+|poke|p2|Rotom-Heat
+|poke|p2|Togekiss, M
+|poke|p2|Azumarill, M
+|poke|p2|Ampharos, M
+|poke|p2|Noivern, M
+|poke|p2|Gliscor, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Genesect|Genesect|283\/283
+|switch|p2a: Azumarill|Azumarill, M|380\/380
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|turn|1
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|304\/304
+|move|p1a: Genesect|Thunderbolt|p2a: Rotom-Heat
+|-resisted|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|253\/304
+|
+|-heal|p2a: Rotom-Heat|272\/304|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M|301\/301
+|move|p2a: Rotom-Heat|Will-O-Wisp|p1a: Latios
+|-status|p1a: Latios|brn
+|
+|-heal|p2a: Rotom-Heat|291\/304|[from] item: Leftovers
+|-damage|p1a: Latios|264\/301 brn|[from] brn
+|turn|3
+|callback|decision
+|
+|switch|p2a: Togekiss|Togekiss, M|373\/373
+|move|p1a: Latios|Psyshock|p2a: Togekiss
+|-damage|p2a: Togekiss|170\/373
+|-damage|p1a: Latios|234\/301 brn|[from] item: Life Orb
+|
+|-heal|p2a: Togekiss|193\/373|[from] item: Leftovers
+|-damage|p1a: Latios|197\/301 brn|[from] brn
+|turn|4
+|callback|decision
+|
+|move|p1a: Latios|Psyshock|p2a: Togekiss
+|-damage|p2a: Togekiss|8\/373
+|-damage|p1a: Latios|167\/301 brn|[from] item: Life Orb
+|move|p2a: Togekiss|Air Slash|p1a: Latios
+|-damage|p1a: Latios|73\/301 brn
+|
+|-heal|p2a: Togekiss|31\/373|[from] item: Leftovers
+|-damage|p1a: Latios|36\/301 brn|[from] brn
+|turn|5
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354
+|move|p1a: Latios|Roost|p1a: Latios
+|-heal|p1a: Latios|187\/301 brn
+|
+|-damage|p1a: Latios|150\/301 brn|[from] brn
+|-activate|p2a: Gliscor|item: Toxic Orb
+|-status|p2a: Gliscor|tox
+|turn|6
+|callback|decision
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Latios|Surf|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-damage|p1a: Latios|113\/301 brn|[from] brn
+|turn|7
+|callback|decision
+|
+|switch|p2a: Azumarill|Azumarill, M|380\/380
+|move|p1a: Latios|Roost|p1a: Latios
+|-heal|p1a: Latios|264\/301 brn
+|
+|-damage|p1a: Latios|227\/301 brn|[from] brn
+|turn|8
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|283\/283
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|move|p2a: Azumarill|Play Rough|p1a: Genesect
+|-resisted|p1a: Genesect
+|-damage|p1a: Genesect|200\/283
+|
+|turn|9
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|291\/304
+|move|p1a: Genesect|U-turn|p2a: Rotom-Heat
+|-crit|p2a: Rotom-Heat
+|-resisted|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|228\/304
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, F|261\/261
+|
+|-heal|p2a: Rotom-Heat|247\/304|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p2a: Ampharos|Ampharos, M|364\/364
+|move|p1a: Gengar|Substitute|p1a: Gengar
+|-start|p1a: Gengar|Substitute
+|-damage|p1a: Gengar|196\/261
+|
+|turn|11
+|callback|decision
+|
+|move|p1a: Gengar|Shadow Ball|p2a: Ampharos
+|-damage|p2a: Ampharos|177\/364
+|-damage|p1a: Gengar|170\/261|[from] item: Life Orb
+|move|p2a: Ampharos|Dragon Pulse|p1a: Gengar
+|-end|p1a: Gengar|Substitute
+|
+|turn|12
+|callback|decision
+|
+|-formechange|p2a: Ampharos|Ampharos-Mega
+|message|Ampharos mega-evolved into Ampharos-Mega!
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Gengar|Shadow Ball|p2a: Ampharos
+|-damage|p2a: Ampharos|16\/364
+|-damage|p1a: Gengar|144\/261|[from] item: Life Orb
+|move|p2a: Ampharos|Thunderbolt|p1a: Gengar
+|-damage|p1a: Gengar|0 fnt
+|faint|p1a: Gengar
+|
+|callback|decision
+|
+|switch|p1a: Tornadus-Therian|Tornadus-Therian, M|299\/299
+|turn|13
+|callback|decision
+|
+|move|p1a: Tornadus-Therian|U-turn|p2a: Ampharos
+|-damage|p2a: Ampharos|0 fnt
+|-damage|p1a: Tornadus-Therian|270\/299|[from] item: Life Orb
+|faint|p2a: Ampharos
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|200\/283
+|
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|247\/304
+|turn|14
+|callback|decision
+|
+|move|p1a: Genesect|U-turn|p2a: Rotom-Heat
+|-resisted|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|208\/304
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M|227\/301 brn
+|move|p2a: Rotom-Heat|Will-O-Wisp|p1a: Latios
+|-fail|p1a: Latios|brn
+|
+|-heal|p2a: Rotom-Heat|227\/304|[from] item: Leftovers
+|-damage|p1a: Latios|190\/301 brn|[from] brn
+|turn|15
+|callback|decision
+|
+|switch|p2a: Azumarill|Azumarill, M|380\/380
+|move|p1a: Latios|Surf|p2a: Azumarill
+|-crit|p2a: Azumarill
+|-resisted|p2a: Azumarill
+|-damage|p2a: Azumarill|253\/380
+|-damage|p1a: Latios|160\/301 brn|[from] item: Life Orb
+|
+|-damage|p1a: Latios|123\/301 brn|[from] brn
+|turn|16
+|callback|decision
+|
+|move|p1a: Latios|Draco Meteor|p2a: Azumarill
+|-immune|p2a: Azumarill|[msg]
+|move|p2a: Azumarill|Play Rough|p1a: Latios|[miss]
+|-miss|p2a: Azumarill|p1a: Latios
+|
+|-damage|p1a: Latios|86\/301 brn|[from] brn
+|turn|17
+|callback|decision
+|
+|move|p1a: Latios|Psyshock|p2a: Azumarill
+|-damage|p2a: Azumarill|41\/380
+|-damage|p1a: Latios|56\/301 brn|[from] item: Life Orb
+|move|p2a: Azumarill|Play Rough|p1a: Latios
+|-supereffective|p1a: Latios
+|-damage|p1a: Latios|0 fnt
+|faint|p1a: Latios
+|
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, M|343\/343
+|turn|18
+|callback|decision
+|
+|switch|p2a: Togekiss|Togekiss, M|31\/373
+|move|p1a: Scizor|Bullet Punch|p2a: Togekiss
+|-supereffective|p2a: Togekiss
+|-damage|p2a: Togekiss|0 fnt
+|faint|p2a: Togekiss
+|
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|227\/304
+|turn|19
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|382\/382
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Rotom-Heat
+|-unboost|p2a: Rotom-Heat|atk|1
+|move|p2a: Rotom-Heat|Will-O-Wisp|p1a: Landorus-Therian
+|-status|p1a: Landorus-Therian|brn
+|
+|-heal|p2a: Rotom-Heat|246\/304|[from] item: Leftovers
+|-damage|p1a: Landorus-Therian|335\/382 brn|[from] brn
+|turn|20
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354 tox
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Gliscor
+|-sidestart|p2: Dr. Hiker Dan|move: Stealth Rock
+|
+|-heal|p1a: Landorus-Therian|358\/382 brn|[from] item: Leftovers
+|-damage|p1a: Landorus-Therian|311\/382 brn|[from] brn
+|turn|21
+|callback|decision
+|
+|move|p2a: Gliscor|Defog|p1a: Landorus-Therian
+|-unboost|p1a: Landorus-Therian|evasion|1
+|-sideend|p2: Dr. Hiker Dan|Stealth Rock|[from] move: Defog|[of] p2a: Gliscor
+|move|p1a: Landorus-Therian|U-turn|p2a: Gliscor
+|-resisted|p2a: Gliscor
+|-damage|p2a: Gliscor|334\/354 tox
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|200\/283
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|
+|-heal|p2a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|turn|22
+|callback|decision
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Genesect|Ice Beam|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|turn|23
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|246\/304
+|move|p1a: Genesect|Ice Beam|p2a: Rotom-Heat
+|-resisted|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|192\/304
+|
+|-heal|p2a: Rotom-Heat|211\/304|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|311\/382 brn
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Rotom-Heat
+|-unboost|p2a: Rotom-Heat|atk|1
+|move|p2a: Rotom-Heat|Overheat|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|152\/382 brn
+|-unboost|p2a: Rotom-Heat|spa|2
+|
+|-heal|p1a: Landorus-Therian|175\/382 brn|[from] item: Leftovers
+|-heal|p2a: Rotom-Heat|230\/304|[from] item: Leftovers
+|-damage|p1a: Landorus-Therian|128\/382 brn|[from] brn
+|turn|25
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354 tox
+|move|p1a: Landorus-Therian|U-turn|p2a: Gliscor
+|-resisted|p2a: Gliscor
+|-damage|p2a: Gliscor|334\/354 tox
+|callback|decision
+|
+|switch|p1a: Tornadus-Therian|Tornadus-Therian, M|299\/299
+|
+|-heal|p2a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|turn|26
+|callback|decision
+|
+|move|p1a: Tornadus-Therian|Hurricane|p2a: Gliscor
+|-damage|p2a: Gliscor|84\/354 tox
+|-damage|p1a: Tornadus-Therian|270\/299|[from] item: Life Orb
+|move|p2a: Gliscor|Ice Fang|p1a: Tornadus-Therian
+|-supereffective|p1a: Tornadus-Therian
+|-damage|p1a: Tornadus-Therian|132\/299
+|
+|-heal|p2a: Gliscor|128\/354 tox|[from] ability: Poison Heal
+|turn|27
+|callback|decision
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Tornadus-Therian|Hurricane|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-heal|p2a: Gliscor|172\/354 tox|[from] ability: Poison Heal
+|turn|28
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|230\/304
+|move|p1a: Tornadus-Therian|Hurricane|p2a: Rotom-Heat
+|-resisted|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|146\/304
+|-start|p2a: Rotom-Heat|confusion
+|-damage|p1a: Tornadus-Therian|103\/299|[from] item: Life Orb
+|
+|-heal|p2a: Rotom-Heat|165\/304|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|move|p1a: Tornadus-Therian|U-turn|p2a: Rotom-Heat
+|-resisted|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|133\/304
+|-damage|p1a: Tornadus-Therian|74\/299|[from] item: Life Orb
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|128\/382 brn
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Rotom-Heat
+|-unboost|p2a: Rotom-Heat|atk|1
+|-activate|p2a: Rotom-Heat|confusion
+|-damage|p2a: Rotom-Heat|119\/304|[from] confusion
+|
+|-heal|p1a: Landorus-Therian|151\/382 brn|[from] item: Leftovers
+|-heal|p2a: Rotom-Heat|138\/304|[from] item: Leftovers
+|-damage|p1a: Landorus-Therian|104\/382 brn|[from] brn
+|turn|30
+|callback|decision
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Rotom-Heat
+|-resisted|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|115\/304
+|callback|decision
+|
+|switch|p1a: Tornadus-Therian|Tornadus-Therian, M|173\/299
+|-end|p2a: Rotom-Heat|confusion
+|move|p2a: Rotom-Heat|Will-O-Wisp|p1a: Tornadus-Therian
+|-status|p1a: Tornadus-Therian|brn
+|
+|-heal|p2a: Rotom-Heat|134\/304|[from] item: Leftovers
+|-damage|p1a: Tornadus-Therian|136\/299 brn|[from] brn
+|turn|31
+|callback|decision
+|
+|move|p1a: Tornadus-Therian|Focus Blast|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|18\/304
+|-unboost|p2a: Rotom-Heat|spd|1
+|-damage|p1a: Tornadus-Therian|107\/299 brn|[from] item: Life Orb
+|move|p2a: Rotom-Heat|Overheat|p1a: Tornadus-Therian
+|-damage|p1a: Tornadus-Therian|0 fnt
+|-unboost|p2a: Rotom-Heat|spa|2
+|faint|p1a: Tornadus-Therian
+|
+|-heal|p2a: Rotom-Heat|37\/304|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, M|343\/343
+|turn|32
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, M|172\/354 tox
+|move|p1a: Scizor|Bullet Punch|p2a: Gliscor
+|-damage|p2a: Gliscor|39\/354 tox
+|
+|-heal|p2a: Gliscor|83\/354 tox|[from] ability: Poison Heal
+|turn|33
+|callback|decision
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Scizor|Bullet Punch|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-heal|p2a: Gliscor|127\/354 tox|[from] ability: Poison Heal
+|turn|34
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Gliscor
+|-damage|p2a: Gliscor|0 fnt
+|faint|p2a: Gliscor
+|
+|callback|decision
+|
+|switch|p2a: Noivern|Noivern, M|312\/312
+|-item|p1a: Scizor|Choice Band|[from] ability: Frisk|[of] p2a: Noivern|[identify]
+|turn|35
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Noivern
+|-damage|p2a: Noivern|90\/312
+|move|p2a: Noivern|Flamethrower|p1a: Scizor
+|-supereffective|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|faint|p1a: Scizor
+|
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|200\/283
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|turn|36
+|callback|decision
+|
+|move|p2a: Noivern|Flamethrower|p1a: Genesect
+|-crit|p1a: Genesect
+|-supereffective|p1a: Genesect
+|-damage|p1a: Genesect|0 fnt
+|faint|p1a: Genesect
+|
+|callback|decision
+|chat|Dr. Hiker Dan|gg
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|104\/382 brn
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Noivern
+|-unboost|p2a: Noivern|atk|1
+|turn|37
+|callback|decision
+|
+|move|p2a: Noivern|Flamethrower|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|faint|p1a: Landorus-Therian
+|
+|win|Dr. Hiker Dan
+|raw|Ladder updating...
+|raw|Itsuki's rating: 1904 &rarr; <strong>1886<\/strong><br \/>(-18 for losing)
+|raw|Dr. Hiker Dan's rating: 1660 &rarr; <strong>1677<\/strong><br \/>(+17 for winning)

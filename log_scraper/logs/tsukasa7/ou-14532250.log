@@ -1,0 +1,330 @@
+|join|kingboy9817
+|join|tsukasa7
+|player|p1|kingboy9817|265
+|player|p2|tsukasa7|265
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Politoed, F
+|poke|p1|Thundurus-Therian, M
+|poke|p1|Garchomp, M
+|poke|p1|Terrakion
+|poke|p1|Tentacruel, F
+|poke|p1|Jirachi, shiny
+|poke|p2|Tornadus, M
+|poke|p2|Dragonite, M
+|poke|p2|Magnezone
+|poke|p2|Garchomp, M
+|poke|p2|Starmie
+|poke|p2|Jirachi, shiny
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Beef|Terrakion|323\/323
+|switch|p2a: Tornadus|Tornadus, M|300\/300
+|turn|1
+|callback|decision
+|
+|move|p2a: Tornadus|U-turn|p1a: Beef
+|-resisted|p1a: Beef
+|-damage|p1a: Beef|282\/323
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi, shiny|401\/401
+|move|p1a: Beef|Stone Edge|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|314\/401
+|
+|-heal|p2a: Jirachi|339\/401|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|move|p1a: Beef|Close Combat|p2a: Jirachi
+|-damage|p2a: Jirachi|135\/401
+|-unboost|p1a: Beef|def|1
+|-unboost|p1a: Beef|spd|1
+|move|p2a: Jirachi|Iron Head|p1a: Beef
+|-supereffective|p1a: Beef
+|-damage|p1a: Beef|0 fnt
+|faint|p1a: Beef
+|
+|-heal|p2a: Jirachi|160\/401|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: The Flood|Politoed, F|384\/384
+|-weather|RainDance|[from] ability: Drizzle|[of] p1a: The Flood
+|turn|3
+|callback|decision
+|
+|move|p2a: Jirachi|Stealth Rock|p1a: The Flood
+|-sidestart|p1: kingboy9817|move: Stealth Rock
+|move|p1a: The Flood|Hydro Pump|p2a: Jirachi|[miss]
+|-miss|p1a: The Flood|p2a: Jirachi
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Jirachi|185\/401|[from] item: Leftovers
+|turn|4
+|callback|decision
+|chat|kingboy9817|Oy vey
+|
+|move|p2a: Jirachi|U-turn|p1a: The Flood
+|-damage|p1a: The Flood|310\/384
+|callback|decision
+|
+|switch|p2a: Starmie|Starmie|261\/261
+|move|p1a: The Flood|Hydro Pump|p2a: Starmie
+|-resisted|p2a: Starmie
+|-damage|p2a: Starmie|19\/261
+|
+|-weather|RainDance|[upkeep]
+|turn|5
+|callback|decision
+|
+|switch|p1a: JAWS|Garchomp, M|358\/358
+|-damage|p1a: JAWS|336\/358|[from] Stealth Rock
+|move|p2a: Starmie|Surf|p1a: JAWS
+|-damage|p1a: JAWS|74\/358
+|
+|-weather|RainDance|[upkeep]
+|turn|6
+|callback|decision
+|
+|move|p1a: JAWS|Outrage|p2a: Starmie
+|-damage|p2a: Starmie|0 fnt
+|faint|p2a: Starmie
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi, shiny|185\/401
+|turn|7
+|callback|decision
+|
+|move|p1a: JAWS|Outrage|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|87\/401
+|move|p2a: Jirachi|Iron Head|p1a: JAWS
+|-damage|p1a: JAWS|0 fnt
+|-damage|p2a: Jirachi|37\/401|[from] ability: Rough Skin|[of] p1a: JAWS
+|faint|p1a: JAWS
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Jirachi|62\/401|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Thunderstruck|Jirachi, shiny|404\/404
+|-damage|p1a: Thunderstruck|379\/404|[from] Stealth Rock
+|turn|8
+|callback|decision
+|
+|move|p1a: Thunderstruck|Substitute|p1a: Thunderstruck
+|-start|p1a: Thunderstruck|Substitute
+|-damage|p1a: Thunderstruck|278\/404
+|move|p2a: Jirachi|Thunder Wave|p1a: Thunderstruck
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Thunderstruck|303\/404|[from] item: Leftovers
+|-heal|p2a: Jirachi|87\/401|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p1a: Thunderstruck|Calm Mind|p1a: Thunderstruck
+|-boost|p1a: Thunderstruck|spa|1
+|-boost|p1a: Thunderstruck|spd|1
+|move|p2a: Jirachi|Iron Head|p1a: Thunderstruck
+|-resisted|p1a: Thunderstruck
+|-activate|p1a: Thunderstruck|Substitute|[damage]
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Thunderstruck|328\/404|[from] item: Leftovers
+|-heal|p2a: Jirachi|112\/401|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p1a: Thunderstruck|Calm Mind|p1a: Thunderstruck
+|-boost|p1a: Thunderstruck|spa|1
+|-boost|p1a: Thunderstruck|spd|1
+|move|p2a: Jirachi|U-turn|p1a: Thunderstruck
+|-end|p1a: Thunderstruck|Substitute
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, M|358\/358
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Thunderstruck|353\/404|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p1a: Cookie Monster|Thundurus-Therian, M|300\/300
+|-damage|p1a: Cookie Monster|225\/300|[from] Stealth Rock
+|move|p2a: Garchomp|Earthquake|p1a: Cookie Monster
+|-immune|p1a: Cookie Monster|[msg]
+|
+|-weather|RainDance|[upkeep]
+|turn|12
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi, shiny|112\/401
+|move|p1a: Cookie Monster|Hidden Power|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|76\/401
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Jirachi|101\/401|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: Cookie Monster|Hidden Power|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|62\/401
+|move|p2a: Jirachi|Thunder Wave|p1a: Cookie Monster
+|-heal|p1a: Cookie Monster|300\/300|[from] ability: Volt Absorb
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Jirachi|87\/401|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: Cookie Monster|Hidden Power|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|48\/401
+|move|p2a: Jirachi|Iron Head|p1a: Cookie Monster
+|-resisted|p1a: Cookie Monster
+|-damage|p1a: Cookie Monster|234\/300
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Jirachi|73\/401|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1a: Cookie Monster|Hidden Power|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|34\/401
+|move|p2a: Jirachi|Iron Head|p1a: Cookie Monster
+|-resisted|p1a: Cookie Monster
+|-damage|p1a: Cookie Monster|168\/300
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Jirachi|59\/401|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Cookie Monster|Hidden Power|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|18\/401
+|move|p2a: Jirachi|U-turn|p1a: Cookie Monster
+|-resisted|p1a: Cookie Monster
+|-damage|p1a: Cookie Monster|132\/300
+|callback|decision
+|
+|switch|p2a: Magnezone|Magnezone|282\/282
+|
+|-weather|RainDance|[upkeep]
+|turn|17
+|callback|decision
+|
+|switch|p1a: The Flood|Politoed, F|310\/384
+|-damage|p1a: The Flood|262\/384|[from] Stealth Rock
+|move|p2a: Magnezone|Flash Cannon|p1a: The Flood
+|-resisted|p1a: The Flood
+|-damage|p1a: The Flood|195\/384
+|
+|-weather|RainDance|[upkeep]
+|turn|18
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi, shiny|18\/401
+|move|p1a: The Flood|Hydro Pump|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|faint|p2a: Jirachi
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Tornadus|Tornadus, M|300\/300
+|turn|19
+|callback|decision
+|
+|move|p2a: Tornadus|Acrobatics|p1a: The Flood
+|-enditem|p2a: Tornadus|Flying Gem|[from] gem|[move] Acrobatics
+|-damage|p1a: The Flood|0 fnt
+|faint|p1a: The Flood
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Cookie Monster|Thundurus-Therian, M|132\/300
+|-damage|p1a: Cookie Monster|57\/300|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|move|p1a: Cookie Monster|Hidden Power|p2a: Tornadus
+|-supereffective|p2a: Tornadus
+|-damage|p2a: Tornadus|80\/300
+|move|p2a: Tornadus|Acrobatics|p1a: Cookie Monster
+|-resisted|p1a: Cookie Monster
+|-damage|p1a: Cookie Monster|0 fnt
+|faint|p1a: Cookie Monster
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: u jelly|Tentacruel, F|364\/364
+|-damage|p1a: u jelly|319\/364|[from] Stealth Rock
+|turn|21
+|callback|decision
+|
+|move|p2a: Tornadus|Acrobatics|p1a: u jelly
+|-damage|p1a: u jelly|154\/364
+|move|p1a: u jelly|Scald|p2a: Tornadus
+|-damage|p2a: Tornadus|0 fnt
+|faint|p2a: Tornadus
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: u jelly|176\/364|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, M|358\/358
+|turn|22
+|callback|decision
+|
+|move|p1a: u jelly|Protect|p1a: u jelly
+|-singleturn|p1a: u jelly|Protect
+|move|p2a: Garchomp|Earthquake|p1a: u jelly
+|-activate|p1a: u jelly|Protect
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: u jelly|198\/364|[from] item: Black Sludge
+|turn|23
+|callback|decision
+|
+|move|p2a: Garchomp|Earthquake|p1a: u jelly
+|-supereffective|p1a: u jelly
+|-damage|p1a: u jelly|0 fnt
+|faint|p1a: u jelly
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Thunderstruck|Jirachi, shiny|353\/404
+|-damage|p1a: Thunderstruck|328\/404|[from] Stealth Rock
+|turn|24
+|callback|decision
+|
+|move|p2a: Garchomp|Earthquake|p1a: Thunderstruck
+|-supereffective|p1a: Thunderstruck
+|-damage|p1a: Thunderstruck|0 fnt
+|faint|p1a: Thunderstruck
+|
+|win|tsukasa7
+|raw|Ladder updating...
+|raw|kingboy9817's rating: 1591 &rarr; <strong>1588<\/strong><br \/>(-3 for losing)
+|raw|tsukasa7's rating: 1722 &rarr; <strong>1726<\/strong><br \/>(+4 for winning)

@@ -1,0 +1,186 @@
+|join|pikapooper
+|join|Zefris
+|player|p1|pikapooper|29
+|player|p2|Zefris|169
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Salamence, F
+|poke|p1|Heatran, F
+|poke|p1|Jirachi
+|poke|p1|Hariyama, F
+|poke|p1|Starmie
+|poke|p1|Electivire, F
+|poke|p2|Jolteon, M
+|poke|p2|Arcanine, M
+|poke|p2|Aerodactyl, F, shiny
+|poke|p2|Garchomp, M, shiny
+|poke|p2|Starmie, shiny
+|poke|p2|Keldeo-Resolute, shiny
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Hariyama|Hariyama, F|492\/492
+|switch|p2a: GRAAAAAHHHHH|Aerodactyl, F, shiny|302\/302
+|turn|1
+|callback|decision
+|
+|move|p2a: GRAAAAAHHHHH|Earthquake|p1a: Hariyama
+|-damage|p1a: Hariyama|249\/492
+|move|p1a: Hariyama|Close Combat|p2a: GRAAAAAHHHHH
+|-damage|p2a: GRAAAAAHHHHH|0 fnt
+|-unboost|p1a: Hariyama|def|1
+|-unboost|p1a: Hariyama|spd|1
+|faint|p2a: GRAAAAAHHHHH
+|
+|-heal|p1a: Hariyama|279\/492|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Neptune|Starmie, shiny|261\/261
+|turn|2
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie|262\/262
+|move|p2a: Neptune|Psychic|p1a: Starmie
+|-resisted|p1a: Starmie
+|-damage|p1a: Starmie|156\/262
+|-damage|p2a: Neptune|235\/261|[from] item: Life Orb
+|
+|turn|3
+|callback|decision
+|
+|switch|p1a: Electivire|Electivire, F|354\/354
+|move|p2a: Neptune|Thunderbolt|p1a: Electivire
+|-boost|p1a: Electivire|spe|1|[from] ability: Motor Drive
+|
+|turn|4
+|callback|decision
+|
+|switch|p2a: Trogdor|Garchomp, M, shiny|357\/357
+|move|p1a: Electivire|Ice Punch|p2a: Trogdor
+|-crit|p2a: Trogdor
+|-supereffective|p2a: Trogdor
+|-damage|p2a: Trogdor|0 fnt
+|-damage|p1a: Electivire|310\/354|[from] ability: Rough Skin|[of] p2a: Trogdor
+|faint|p2a: Trogdor
+|
+|callback|decision
+|
+|switch|p2a: Caelum|Arcanine, M|384\/384
+|-ability|p2a: Caelum|Intimidate|[of] p1a: Electivire
+|-unboost|p1a: Electivire|atk|1
+|turn|5
+|callback|decision
+|
+|move|p1a: Electivire|ThunderPunch|p2a: Caelum
+|-damage|p2a: Caelum|291\/384
+|move|p2a: Caelum|Flare Blitz|p1a: Electivire
+|-crit|p1a: Electivire
+|-damage|p1a: Electivire|0 fnt
+|-damage|p2a: Caelum|189\/384|[from] recoil|[of] p1a: Electivire
+|-damage|p2a: Caelum|151\/384|[from] item: Life Orb
+|faint|p1a: Electivire
+|
+|callback|decision
+|
+|switch|p1a: Hariyama|Hariyama, F|279\/492
+|turn|6
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|323\/323
+|move|p2a: Caelum|Outrage|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|232\/323
+|-damage|p2a: Caelum|113\/384|[from] item: Life Orb
+|
+|turn|7
+|callback|decision
+|
+|move|p1a: Heatran|Eruption|p2a: Caelum
+|-resisted|p2a: Caelum
+|-damage|p2a: Caelum|0 fnt
+|faint|p2a: Caelum
+|
+|callback|decision
+|
+|switch|p2a: Neptune|Starmie, shiny|235\/261
+|turn|8
+|callback|decision
+|
+|switch|p1a: Jirachi|Jirachi|342\/342
+|move|p2a: Neptune|Surf|p1a: Jirachi
+|-damage|p1a: Jirachi|165\/342
+|-damage|p2a: Neptune|209\/261|[from] item: Life Orb
+|
+|turn|9
+|callback|decision
+|
+|move|p2a: Neptune|Surf|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|-damage|p2a: Neptune|183\/261|[from] item: Life Orb
+|faint|p1a: Jirachi
+|
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie|156\/262
+|turn|10
+|callback|decision
+|
+|move|p2a: Neptune|Thunderbolt|p1a: Starmie
+|-supereffective|p1a: Starmie
+|-damage|p1a: Starmie|0 fnt
+|-damage|p2a: Neptune|157\/261|[from] item: Life Orb
+|faint|p1a: Starmie
+|
+|callback|decision
+|
+|switch|p1a: Salamence|Salamence, F|332\/332
+|turn|11
+|callback|decision
+|
+|move|p2a: Neptune|Ice Beam|p1a: Salamence
+|-supereffective|p1a: Salamence
+|-damage|p1a: Salamence|0 fnt
+|-damage|p2a: Neptune|131\/261|[from] item: Life Orb
+|faint|p1a: Salamence
+|
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|232\/323
+|turn|12
+|callback|decision
+|
+|move|p2a: Neptune|Surf|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|-damage|p2a: Neptune|105\/261|[from] item: Life Orb
+|faint|p1a: Heatran
+|
+|callback|decision
+|
+|switch|p1a: Hariyama|Hariyama, F|279\/492
+|turn|13
+|callback|decision
+|
+|move|p2a: Neptune|Psychic|p1a: Hariyama
+|-supereffective|p1a: Hariyama
+|-damage|p1a: Hariyama|0 fnt
+|-damage|p2a: Neptune|79\/261|[from] item: Life Orb
+|faint|p1a: Hariyama
+|
+|win|Zefris
+|raw|Ladder updating...
+|raw|pikapooper's rating: 1289 &rarr; <strong>1271<\/strong><br \/>(-18 for losing)
+|raw|Zefris's rating: 1170 &rarr; <strong>1263<\/strong><br \/>(+93 for winning)
+|chat|Zefris|starmie is a beast
+|leave|pikapooper
+|player|p1

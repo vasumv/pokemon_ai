@@ -1,0 +1,553 @@
+|join|Omega Dark Mage
+|join|Boris127
+|player|p1|Omega Dark Mage|290
+|player|p2|Boris127|163
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Hippowdon, M
+|poke|p1|Nidoking, M
+|poke|p1|Mamoswine, M
+|poke|p1|Gastrodon, M
+|poke|p1|Gliscor, M
+|poke|p1|Excadrill, M
+|poke|p2|Azumarill, M
+|poke|p2|Ferrothorn, M
+|poke|p2|Aegislash, F
+|poke|p2|Smeargle, M
+|poke|p2|Gengar, F
+|poke|p2|Rotom-Wash
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Gliscor|Gliscor, M|354\/354
+|switch|p2a: Smeargle|Smeargle, M|314\/314
+|turn|1
+|callback|decision
+|
+|move|p1a: Gliscor|Protect|p1a: Gliscor
+|-singleturn|p1a: Gliscor|Protect
+|move|p2a: Smeargle|Sticky Web|p1a: Gliscor
+|-sidestart|p1: Omega Dark Mage|move: Sticky Web
+|
+|-activate|p1a: Gliscor|item: Toxic Orb
+|-status|p1a: Gliscor|tox
+|turn|2
+|callback|decision
+|
+|move|p2a: Smeargle|Stealth Rock|p1a: Gliscor
+|-sidestart|p1: Omega Dark Mage|move: Stealth Rock
+|move|p1a: Gliscor|Substitute|p1a: Gliscor
+|-start|p1a: Gliscor|Substitute
+|-damage|p1a: Gliscor|266\/354 tox
+|
+|-heal|p1a: Gliscor|310\/354 tox|[from] ability: Poison Heal
+|turn|3
+|callback|decision
+|
+|move|p2a: Smeargle|Magic Coat|p2a: Smeargle
+|-singleturn|p2a: Smeargle|move: Magic Coat
+|move|p1a: Gliscor|Toxic|p2a: Smeargle
+|move|p2a: Smeargle|Toxic|p1a: Gliscor|[from]Magic Coat
+|
+|-heal|p1a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|turn|4
+|callback|decision
+|
+|move|p2a: Smeargle|Magic Coat|p2a: Smeargle
+|-singleturn|p2a: Smeargle|move: Magic Coat
+|move|p1a: Gliscor|Toxic|p2a: Smeargle
+|move|p2a: Smeargle|Toxic|p1a: Gliscor|[from]Magic Coat
+|
+|turn|5
+|callback|decision
+|
+|move|p2a: Smeargle|Magic Coat|p2a: Smeargle
+|-singleturn|p2a: Smeargle|move: Magic Coat
+|move|p1a: Gliscor|Fire Fang|p2a: Smeargle
+|-crit|p2a: Smeargle
+|-damage|p2a: Smeargle|147\/314
+|-status|p2a: Smeargle|brn
+|
+|-damage|p2a: Smeargle|108\/314 brn|[from] brn
+|turn|6
+|callback|decision
+|
+|move|p2a: Smeargle|Magic Coat|p2a: Smeargle
+|-singleturn|p2a: Smeargle|move: Magic Coat
+|move|p1a: Gliscor|Fire Fang|p2a: Smeargle
+|-damage|p2a: Smeargle|0 fnt
+|faint|p2a: Smeargle
+|
+|callback|decision
+|
+|switch|p2a: Azumarill|Azumarill, M|404\/404
+|turn|7
+|callback|decision
+|
+|switch|p2a: Gengar|Gengar, F|262\/262
+|move|p1a: Gliscor|Toxic|p2a: Gengar|[miss]
+|-miss|p1a: Gliscor|p2a: Gengar
+|
+|turn|8
+|callback|decision
+|
+|move|p2a: Gengar|Shadow Ball|p1a: Gliscor
+|-end|p1a: Gliscor|Substitute
+|move|p1a: Gliscor|Fire Fang|p2a: Gengar
+|-damage|p2a: Gengar|185\/262
+|
+|turn|9
+|callback|decision
+|
+|move|p2a: Gengar|Shadow Ball|p1a: Gliscor
+|-damage|p1a: Gliscor|170\/354 tox
+|-unboost|p1a: Gliscor|spd|1
+|move|p1a: Gliscor|Fire Fang|p2a: Gengar
+|-damage|p2a: Gengar|116\/262
+|
+|-heal|p1a: Gliscor|214\/354 tox|[from] ability: Poison Heal
+|turn|10
+|callback|decision
+|
+|move|p1a: Gliscor|Protect|p1a: Gliscor
+|-singleturn|p1a: Gliscor|Protect
+|move|p2a: Gengar|Shadow Ball|p1a: Gliscor
+|-activate|p1a: Gliscor|Protect
+|
+|-heal|p1a: Gliscor|258\/354 tox|[from] ability: Poison Heal
+|turn|11
+|callback|decision
+|
+|switch|p2a: Azumarill|Azumarill, M|404\/404
+|switch|p1a: Mamoswine|Mamoswine, M|362\/362
+|-damage|p1a: Mamoswine|317\/362|[from] Stealth Rock
+|-activate|p1a: Mamoswine|move: Sticky Web
+|-unboost|p1a: Mamoswine|spe|1
+|
+|turn|12
+|callback|decision
+|
+|switch|p1a: Gastrodon|Gastrodon, M|368\/368
+|-activate|p1a: Gastrodon|move: Sticky Web
+|-unboost|p1a: Gastrodon|spe|1
+|-damage|p1a: Gastrodon|345\/368|[from] Stealth Rock
+|move|p2a: Azumarill|Play Rough|p1a: Gastrodon
+|-damage|p1a: Gastrodon|102\/368
+|-damage|p2a: Azumarill|364\/404|[from] item: Life Orb
+|
+|-heal|p1a: Gastrodon|125\/368|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p1a: Hippowdon|Hippowdon, M|420\/420
+|-damage|p1a: Hippowdon|394\/420|[from] Stealth Rock
+|-activate|p1a: Hippowdon|move: Sticky Web
+|-unboost|p1a: Hippowdon|spe|1
+|-weather|Sandstorm
+|move|p2a: Azumarill|Play Rough|p1a: Hippowdon
+|-damage|p1a: Hippowdon|164\/420
+|-damage|p2a: Azumarill|324\/404|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Azumarill|299\/404|[from] sandstorm
+|-heal|p1a: Hippowdon|190\/420|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p1a: Nidoking|Nidoking, M|304\/304
+|-damage|p1a: Nidoking|285\/304|[from] Stealth Rock
+|-activate|p1a: Nidoking|move: Sticky Web
+|-unboost|p1a: Nidoking|spe|1
+|move|p2a: Azumarill|Play Rough|p1a: Nidoking
+|-resisted|p1a: Nidoking
+|-damage|p1a: Nidoking|136\/304
+|-unboost|p1a: Nidoking|atk|1
+|-damage|p2a: Azumarill|259\/404|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Azumarill|234\/404|[from] sandstorm
+|turn|15
+|callback|decision
+|
+|move|p1a: Nidoking|Sludge Wave|p2a: Azumarill
+|-supereffective|p2a: Azumarill
+|-damage|p2a: Azumarill|0 fnt
+|faint|p2a: Azumarill
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Gengar|Gengar, F|116\/262
+|turn|16
+|callback|decision
+|
+|switch|p1a: Mamoswine|Mamoswine, M|317\/362
+|-damage|p1a: Mamoswine|272\/362|[from] Stealth Rock
+|-activate|p1a: Mamoswine|move: Sticky Web
+|-unboost|p1a: Mamoswine|spe|1
+|move|p2a: Gengar|Shadow Ball|p1a: Mamoswine
+|-damage|p1a: Mamoswine|58\/362
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Gengar|100\/262|[from] sandstorm
+|turn|17
+|callback|decision
+|
+|move|p1a: Mamoswine|Ice Shard|p2a: Gengar
+|-damage|p2a: Gengar|0 fnt
+|faint|p2a: Gengar
+|
+|-weather|none
+|callback|decision
+|
+|switch|p2a: Aegislash|Aegislash, F|324\/324
+|turn|18
+|callback|decision
+|
+|switch|p1a: Hippowdon|Hippowdon, M|190\/420
+|-damage|p1a: Hippowdon|164\/420|[from] Stealth Rock
+|-activate|p1a: Hippowdon|move: Sticky Web
+|-unboost|p1a: Hippowdon|spe|1
+|-weather|Sandstorm
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Shadow Sneak|p1a: Hippowdon
+|-damage|p1a: Hippowdon|85\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Hippowdon|111\/420|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|-formechange|p2a: Aegislash|Aegislash
+|move|p2a: Aegislash|King's Shield|p2a: Aegislash
+|-singleturn|p2a: Aegislash|Protect
+|move|p1a: Hippowdon|Stealth Rock|p2a: Aegislash
+|-sidestart|p2: Boris127|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Hippowdon|137\/420|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p2a: Aegislash|Swords Dance|p2a: Aegislash
+|-boost|p2a: Aegislash|atk|2
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-heal|p1a: Hippowdon|347\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Hippowdon|373\/420|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p2a: Aegislash|Swords Dance|p2a: Aegislash
+|-boost|p2a: Aegislash|atk|2
+|move|p1a: Hippowdon|Earthquake|p2a: Aegislash
+|-supereffective|p2a: Aegislash
+|-damage|p2a: Aegislash|130\/324
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Aegislash|150\/324|[from] item: Leftovers
+|-heal|p1a: Hippowdon|399\/420|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p2a: Aegislash|King's Shield|p2a: Aegislash
+|-singleturn|p2a: Aegislash|Protect
+|move|p1a: Hippowdon|Earthquake|p2a: Aegislash
+|-activate|p2a: Aegislash|Protect
+|
+|-weather|none
+|-heal|p2a: Aegislash|170\/324|[from] item: Leftovers
+|-heal|p1a: Hippowdon|420\/420|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Sacred Sword|p1a: Hippowdon
+|-damage|p1a: Hippowdon|79\/420
+|move|p1a: Hippowdon|Earthquake|p2a: Aegislash
+|-supereffective|p2a: Aegislash
+|-damage|p2a: Aegislash|0 fnt
+|faint|p2a: Aegislash
+|
+|-heal|p1a: Hippowdon|105\/420|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|-damage|p2a: Rotom-Wash|266\/304|[from] Stealth Rock
+|turn|24
+|callback|decision
+|chat|Omega Dark Mage|my ground types ain't pushovers
+|
+|switch|p1a: Gastrodon|Gastrodon, M|125\/368
+|-damage|p1a: Gastrodon|102\/368|[from] Stealth Rock
+|-activate|p1a: Gastrodon|move: Sticky Web
+|-unboost|p1a: Gastrodon|spe|1
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Gastrodon
+|-status|p1a: Gastrodon|brn
+|
+|-heal|p2a: Rotom-Wash|285\/304|[from] item: Leftovers
+|-heal|p1a: Gastrodon|125\/368 brn|[from] item: Leftovers
+|-damage|p1a: Gastrodon|79\/368 brn|[from] brn
+|turn|25
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|-damage|p2a: Ferrothorn|330\/352|[from] Stealth Rock
+|move|p1a: Gastrodon|Rest|p1a: Gastrodon
+|-status|p1a: Gastrodon|slp
+|-heal|p1a: Gastrodon|368\/368 slp|[silent]
+|-status|p1a: Gastrodon|slp|[from] move: Rest
+|
+|-heal|p2a: Ferrothorn|352\/352|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|switch|p1a: Gliscor|Gliscor, M|258\/354 tox
+|-damage|p1a: Gliscor|214\/354 tox|[from] Stealth Rock
+|move|p2a: Ferrothorn|Leech Seed|p1a: Gliscor
+|-start|p1a: Gliscor|move: Leech Seed
+|
+|-damage|p1a: Gliscor|170\/354 tox|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p1a: Gliscor|214\/354 tox|[from] ability: Poison Heal
+|turn|27
+|callback|decision
+|
+|switch|p1a: Nidoking|Nidoking, M|136\/304
+|-damage|p1a: Nidoking|117\/304|[from] Stealth Rock
+|-activate|p1a: Nidoking|move: Sticky Web
+|-unboost|p1a: Nidoking|spe|1
+|switch|p2a: Rotom-Wash|Rotom-Wash|285\/304
+|-damage|p2a: Rotom-Wash|247\/304|[from] Stealth Rock
+|
+|-heal|p2a: Rotom-Wash|266\/304|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|switch|p1a: Gastrodon|Gastrodon, M|368\/368 slp
+|-damage|p1a: Gastrodon|345\/368 slp|[from] Stealth Rock
+|-activate|p1a: Gastrodon|move: Sticky Web
+|-unboost|p1a: Gastrodon|spe|1
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|-damage|p2a: Ferrothorn|330\/352|[from] Stealth Rock
+|
+|-heal|p1a: Gastrodon|368\/368 slp|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|352\/352|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|switch|p1a: Excadrill|Excadrill, M|362\/362
+|-damage|p1a: Excadrill|351\/362|[from] Stealth Rock
+|-item|p1a: Excadrill|Air Balloon
+|move|p2a: Ferrothorn|Leech Seed|p1a: Excadrill
+|-start|p1a: Excadrill|move: Leech Seed
+|
+|-damage|p1a: Excadrill|306\/362|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|30
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|266\/304
+|-damage|p2a: Rotom-Wash|228\/304|[from] Stealth Rock
+|move|p1a: Excadrill|Rapid Spin|p2a: Rotom-Wash
+|-crit|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|189\/304
+|-end|p1a: Excadrill|Leech Seed|[from] move: Rapid Spin|[of] p1a: Excadrill
+|-sideend|p1: Omega Dark Mage|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Excadrill
+|-sideend|p1: Omega Dark Mage|Sticky Web|[from] move: Rapid Spin|[of] p1a: Excadrill
+|
+|-heal|p2a: Rotom-Wash|208\/304|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|move|p1a: Excadrill|Swords Dance|p1a: Excadrill
+|-boost|p1a: Excadrill|atk|2
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-damage|p1a: Excadrill|0 fnt
+|-enditem|p1a: Excadrill|Air Balloon
+|faint|p1a: Excadrill
+|
+|-heal|p2a: Rotom-Wash|227\/304|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Mamoswine|Mamoswine, M|58\/362
+|turn|32
+|callback|decision
+|
+|move|p1a: Mamoswine|Superpower|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|89\/304
+|-unboost|p1a: Mamoswine|atk|1
+|-unboost|p1a: Mamoswine|def|1
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Mamoswine
+|-status|p1a: Mamoswine|brn
+|
+|-heal|p2a: Rotom-Wash|108\/304|[from] item: Leftovers
+|-damage|p1a: Mamoswine|13\/362 brn|[from] brn
+|turn|33
+|callback|decision
+|
+|move|p1a: Mamoswine|Superpower|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|63\/304
+|-unboost|p1a: Mamoswine|atk|1
+|-unboost|p1a: Mamoswine|def|1
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Mamoswine|[miss]
+|-miss|p2a: Rotom-Wash|p1a: Mamoswine
+|
+|-heal|p2a: Rotom-Wash|82\/304|[from] item: Leftovers
+|-damage|p1a: Mamoswine|0 fnt|[from] brn
+|faint|p1a: Mamoswine
+|callback|decision
+|
+|switch|p1a: Nidoking|Nidoking, M|117\/304
+|turn|34
+|callback|decision
+|
+|move|p1a: Nidoking|Sludge Wave|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|-damage|p2a: Ferrothorn|330\/352|[from] Stealth Rock
+|turn|35
+|callback|decision
+|
+|switch|p1a: Gastrodon|Gastrodon, M|368\/368 slp
+|move|p2a: Ferrothorn|Leech Seed|p1a: Gastrodon
+|-start|p1a: Gastrodon|move: Leech Seed
+|
+|-heal|p2a: Ferrothorn|352\/352|[from] item: Leftovers
+|-damage|p1a: Gastrodon|322\/368 slp|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|36
+|callback|decision
+|
+|cant|p1a: Gastrodon|slp
+|move|p2a: Ferrothorn|Toxic|p1a: Gastrodon
+|-fail|p1a: Gastrodon
+|
+|-heal|p1a: Gastrodon|345\/368 slp|[from] item: Leftovers
+|-damage|p1a: Gastrodon|299\/368 slp|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|37
+|callback|decision
+|
+|cant|p1a: Gastrodon|slp
+|move|p2a: Ferrothorn|Gyro Ball|p1a: Gastrodon
+|-resisted|p1a: Gastrodon
+|-damage|p1a: Gastrodon|266\/368 slp
+|
+|-heal|p1a: Gastrodon|289\/368 slp|[from] item: Leftovers
+|-damage|p1a: Gastrodon|243\/368 slp|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|38
+|callback|decision
+|
+|-curestatus|p1a: Gastrodon|slp
+|move|p1a: Gastrodon|Scald|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|314\/352
+|-status|p2a: Ferrothorn|brn
+|move|p2a: Ferrothorn|Toxic|p1a: Gastrodon
+|-status|p1a: Gastrodon|tox
+|
+|-heal|p1a: Gastrodon|266\/368 tox|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|336\/352 brn|[from] item: Leftovers
+|-damage|p1a: Gastrodon|220\/368 tox|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|352\/352 brn|[silent]
+|-damage|p1a: Gastrodon|197\/368 tox|[from] psn
+|-damage|p2a: Ferrothorn|308\/352 brn|[from] brn
+|turn|39
+|callback|decision
+|
+|switch|p1a: Gliscor|Gliscor, M|214\/354 tox
+|move|p2a: Ferrothorn|Gyro Ball|p1a: Gliscor
+|-crit|p1a: Gliscor
+|-damage|p1a: Gliscor|118\/354 tox
+|
+|-heal|p2a: Ferrothorn|330\/352 brn|[from] item: Leftovers
+|-heal|p1a: Gliscor|162\/354 tox|[from] ability: Poison Heal
+|-damage|p2a: Ferrothorn|286\/352 brn|[from] brn
+|turn|40
+|callback|decision
+|
+|move|p1a: Gliscor|Protect|p1a: Gliscor
+|-singleturn|p1a: Gliscor|Protect
+|move|p2a: Ferrothorn|Leech Seed|p1a: Gliscor
+|-activate|p1a: Gliscor|Protect
+|
+|-heal|p2a: Ferrothorn|308\/352 brn|[from] item: Leftovers
+|-heal|p1a: Gliscor|206\/354 tox|[from] ability: Poison Heal
+|-damage|p2a: Ferrothorn|264\/352 brn|[from] brn
+|turn|41
+|callback|decision
+|chat|Omega Dark Mage|gg
+|
+|move|p1a: Gliscor|Substitute|p1a: Gliscor
+|-start|p1a: Gliscor|Substitute
+|-damage|p1a: Gliscor|118\/354 tox
+|move|p2a: Ferrothorn|Leech Seed|p1a: Gliscor
+|
+|-heal|p2a: Ferrothorn|286\/352 brn|[from] item: Leftovers
+|-heal|p1a: Gliscor|162\/354 tox|[from] ability: Poison Heal
+|-damage|p2a: Ferrothorn|242\/352 brn|[from] brn
+|turn|42
+|callback|decision
+|chat|Omega Dark Mage|no gym badge for you
+|
+|move|p1a: Gliscor|Protect|p1a: Gliscor
+|-singleturn|p1a: Gliscor|Protect
+|move|p2a: Ferrothorn|Gyro Ball|p1a: Gliscor
+|-activate|p1a: Gliscor|Protect
+|
+|-heal|p2a: Ferrothorn|264\/352 brn|[from] item: Leftovers
+|-heal|p1a: Gliscor|206\/354 tox|[from] ability: Poison Heal
+|-damage|p2a: Ferrothorn|220\/352 brn|[from] brn
+|turn|43
+|callback|decision
+|
+|move|p1a: Gliscor|Fire Fang|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|88\/352 brn
+|-damage|p1a: Gliscor|162\/354 tox|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|move|p2a: Ferrothorn|Gyro Ball|p1a: Gliscor
+|-activate|p1a: Gliscor|Substitute|[damage]
+|
+|-heal|p2a: Ferrothorn|110\/352 brn|[from] item: Leftovers
+|-heal|p1a: Gliscor|206\/354 tox|[from] ability: Poison Heal
+|-damage|p2a: Ferrothorn|66\/352 brn|[from] brn
+|turn|44
+|callback|decision
+|
+|move|p1a: Gliscor|Protect|p1a: Gliscor
+|-singleturn|p1a: Gliscor|Protect
+|move|p2a: Ferrothorn|Gyro Ball|p1a: Gliscor
+|-activate|p1a: Gliscor|Protect
+|
+|-heal|p2a: Ferrothorn|88\/352 brn|[from] item: Leftovers
+|-heal|p1a: Gliscor|250\/354 tox|[from] ability: Poison Heal
+|-damage|p2a: Ferrothorn|44\/352 brn|[from] brn
+|turn|45
+|callback|decision
+|
+|move|p1a: Gliscor|Fire Fang|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|-damage|p1a: Gliscor|206\/354 tox|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|faint|p2a: Ferrothorn
+|
+|win|Omega Dark Mage
+|raw|Ladder updating...
+|raw|Omega Dark Mage's rating: 1385 &rarr; <strong>1404<\/strong><br \/>(+19 for winning)
+|raw|Boris127's rating: 1306 &rarr; <strong>1286<\/strong><br \/>(-20 for losing)
+|leave|Boris127
+|player|p2

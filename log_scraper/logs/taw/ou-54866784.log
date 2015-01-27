@@ -1,0 +1,235 @@
+|join|taw
+|join|dat asssss
+|player|p1|taw|257
+|player|p2|dat asssss|145
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Celebi
+|poke|p1|Alakazam, M
+|poke|p1|Chandelure, M
+|poke|p1|Forretress, F
+|poke|p1|Weavile, F
+|poke|p1|Garchomp, M
+|poke|p2|Tornadus, M
+|poke|p2|Politoed, M
+|poke|p2|Landorus-Therian, M
+|poke|p2|Scizor, F
+|poke|p2|Latios, M
+|poke|p2|Kyurem-Black
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Garchomp|Garchomp, M|358\/358
+|switch|p2a: Scizor|Scizor, F|342\/342
+|turn|1
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Garchomp
+|-damage|p1a: Garchomp|168\/358
+|-damage|p2a: Scizor|300\/342|[from] ability: Rough Skin|[of] p1a: Garchomp
+|move|p1a: Garchomp|Stealth Rock|p2a: Scizor
+|-sidestart|p2: dat asssss|move: Stealth Rock
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|-damage|p2a: Scizor|258\/342|[from] ability: Rough Skin|[of] p1a: Garchomp
+|faint|p1a: Garchomp
+|
+|callback|decision
+|
+|switch|p1a: Celebi|Celebi|404\/404
+|turn|3
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Celebi
+|-damage|p1a: Celebi|239\/404
+|move|p1a: Celebi|Nasty Plot|p1a: Celebi
+|-boost|p1a: Celebi|spa|2
+|
+|-heal|p1a: Celebi|264\/404|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Celebi
+|-damage|p1a: Celebi|89\/404
+|move|p1a: Celebi|Baton Pass|p1a: Celebi
+|callback|decision
+|
+|switch|p1a: Chandelure|Chandelure, M|261\/261
+|
+|turn|5
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, M|322\/322
+|-damage|p2a: Politoed|282\/322|[from] Stealth Rock
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|move|p1a: Chandelure|Shadow Ball|p2a: Politoed
+|-damage|p2a: Politoed|0 fnt
+|faint|p2a: Politoed
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-damage|p2a: Landorus-Therian|280\/319|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Chandelure
+|-unboost|p1a: Chandelure|atk|1
+|turn|6
+|callback|decision
+|
+|move|p1a: Chandelure|Shadow Ball|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|faint|p2a: Landorus-Therian
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, F|258\/342
+|-damage|p2a: Scizor|216\/342|[from] Stealth Rock
+|turn|7
+|callback|decision
+|
+|move|p1a: Chandelure|Shadow Ball|p2a: Scizor
+|-resisted|p2a: Scizor
+|-damage|p2a: Scizor|28\/342
+|move|p2a: Scizor|Aerial Ace|p1a: Chandelure
+|-damage|p1a: Chandelure|82\/261
+|
+|-weather|RainDance|[upkeep]
+|turn|8
+|callback|decision
+|
+|move|p1a: Chandelure|Shadow Ball|p2a: Scizor
+|-resisted|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|faint|p2a: Scizor
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|chat|dat asssss|damn this scarfed shadow ball
+|chat|taw|it's strong
+|
+|switch|p2a: Tornadus|Tornadus, M|300\/300
+|-damage|p2a: Tornadus|225\/300|[from] Stealth Rock
+|turn|9
+|callback|decision
+|chat|taw|I probably could have gotten it
+|chat|taw|at 3x strength too
+|chat|taw|but I didn't want to chance a crit on bullet punch
+|
+|move|p2a: Tornadus|Tailwind|p2a: Tornadus
+|-sidestart|p2: dat asssss|move: Tailwind
+|move|p1a: Chandelure|Shadow Ball|p2a: Tornadus
+|-damage|p2a: Tornadus|0 fnt
+|faint|p2a: Tornadus
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|chat|dat asssss|thats alright
+|chat|dat asssss|my turn
+|
+|switch|p2a: Latios|Latios, M|301\/301
+|-damage|p2a: Latios|264\/301|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|move|p2a: Latios|Dragon Pulse|p1a: Chandelure
+|-damage|p1a: Chandelure|0 fnt
+|-damage|p2a: Latios|234\/301|[from] item: Life Orb
+|faint|p1a: Chandelure
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Forretress|Forretress, F|354\/354
+|turn|11
+|callback|decision
+|
+|move|p2a: Latios|Surf|p1a: Forretress
+|-damage|p1a: Forretress|142\/354
+|-damage|p2a: Latios|204\/301|[from] item: Life Orb
+|move|p1a: Forretress|Gyro Ball|p2a: Latios
+|-damage|p2a: Latios|23\/301
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Forretress|164\/354|[from] item: Leftovers
+|turn|12
+|callback|decision
+|chat|dat asssss|i shouldve just gone tornadus
+|chat|taw|yeah
+|chat|dat asssss|i didnt release chandelurew was 80 base speed
+|chat|taw|thoug I think I still would have gotten 2 pokemon
+|chat|dat asssss|just enough to outspeed scarfed landorus
+|
+|move|p2a: Latios|Surf|p1a: Forretress
+|-damage|p1a: Forretress|0 fnt
+|-damage|p2a: Latios|0 fnt|[from] item: Life Orb
+|faint|p1a: Forretress
+|faint|p2a: Latios
+|
+|-weather|RainDance|[upkeep]
+|-sideend|p2: dat asssss|move: Tailwind
+|callback|decision
+|
+|switch|p1a: Weavile|Weavile, F|282\/282
+|switch|p2a: Kyurem-Black|Kyurem-Black|392\/392
+|-damage|p2a: Kyurem-Black|294\/392|[from] Stealth Rock
+|-ability|p1a: Weavile|Pressure
+|-ability|p2a: Kyurem-Black|Teravolt
+|turn|13
+|callback|decision
+|chat|taw|yeah, people make that mistake a lot
+|
+|move|p1a: Weavile|Ice Punch|p2a: Kyurem-Black
+|-damage|p2a: Kyurem-Black|130\/392
+|-damage|p1a: Weavile|254\/282|[from] item: Life Orb
+|move|p2a: Kyurem-Black|Outrage|p1a: Weavile
+|-damage|p1a: Weavile|0 fnt
+|faint|p1a: Weavile
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|chat|taw|also thinking bullet punch will kill it
+|
+|switch|p1a: Alakazam|Alakazam, M|252\/252
+|turn|14
+|callback|decision
+|chat|dat asssss|chandelure?
+|chat|taw|yeah
+|chat|dat asssss|nahhh 
+|chat|dat asssss|would take 3 banded punches
+|
+|move|p1a: Alakazam|Psyshock|p2a: Kyurem-Black
+|-damage|p2a: Kyurem-Black|0 fnt
+|faint|p2a: Kyurem-Black
+|
+|win|taw
+|raw|Ladder updating...
+|raw|taw's rating: 2006 &rarr; <strong>2009<\/strong><br \/>(+3 for winning)
+|raw|dat asssss's rating: 1981 &rarr; <strong>1979<\/strong><br \/>(-2 for losing)
+|chat|taw|also heatran 
+|chat|taw|doesn't kill it
+|chat|taw|with earth power
+|chat|taw|unless it's buffed in some way
+|chat|dat asssss|hah well landorus wouldve 1hkod
+|chat|taw|another common mistake
+|chat|dat asssss|if i had him as jolly
+|chat|taw|I don't think he's fast enogh
+|chat|taw|even as jolly I think he's 1 speed lower
+|chat|dat asssss|he is
+|chat|dat asssss|but it makes a difference of 12 speed or so
+|chat|dat asssss|or 13
+|chat|dat asssss|difference between adamant and jolly

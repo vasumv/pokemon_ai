@@ -1,0 +1,642 @@
+|join|Quinlanding
+|join|livEnwolC
+|player|p1|Quinlanding|169
+|player|p2|livEnwolC|59
+|gametype|singles
+|tier|OU (beta)
+|rated
+|clearpoke
+|poke|p1|Slurpuff, F
+|poke|p1|Heracross, M
+|poke|p1|Meowstic, M
+|poke|p1|Delphox, M
+|poke|p1|Blissey, F
+|poke|p1|Skarmory, F
+|poke|p2|Rotom-Wash, shiny
+|poke|p2|Excadrill, F, shiny
+|poke|p2|Lucario, M
+|poke|p2|Togekiss, M
+|poke|p2|Ferrothorn, M
+|poke|p2|Jumpluff, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Mr. Meowgi|Meowstic, M|352\/352
+|switch|p2a: Diggersby Tho|Excadrill, F, shiny|362\/362
+|-ability|p2a: Diggersby Tho|Mold Breaker
+|turn|1
+|callback|decision
+|
+|switch|p2a: Togekiss|Togekiss, M|367\/367
+|move|p1a: Mr. Meowgi|Reflect|p1a: Mr. Meowgi
+|-sidestart|p1: Quinlanding|Reflect
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Mr. Meowgi|Misty Terrain|p1a: Mr. Meowgi
+|-fieldstart|Misty Terrain
+|move|p2a: Togekiss|Air Slash|p1a: Mr. Meowgi
+|-damage|p1a: Mr. Meowgi|180\/352
+|
+|turn|3
+|callback|decision
+|
+|move|p1a: Mr. Meowgi|Light Screen|p1a: Mr. Meowgi
+|-sidestart|p1: Quinlanding|move: Light Screen
+|move|p2a: Togekiss|Air Slash|p1a: Mr. Meowgi
+|-damage|p1a: Mr. Meowgi|99\/352
+|
+|turn|4
+|callback|decision
+|
+|switch|p1a: Ignorance|Blissey, F|714\/714
+|move|p2a: Togekiss|Air Slash|p1a: Ignorance|[miss]
+|-miss|p2a: Togekiss|p1a: Ignorance
+|
+|turn|5
+|callback|decision
+|
+|switch|p2a: Tripod|Jumpluff, F|354\/354
+|move|p1a: Ignorance|Thunder Wave|p2a: Tripod
+|-status|p2a: Tripod|par
+|
+|turn|6
+|callback|decision
+|
+|switch|p1a: Phoxxy|Delphox, M|291\/291
+|move|p2a: Tripod|Aromatherapy|p2a: Tripod
+|-cureteam|p2a: Tripod|[from] move: Aromatherapy
+|
+|-fieldend|Misty Terrain
+|turn|7
+|callback|decision
+|
+|move|p2a: Tripod|U-turn|p1a: Phoxxy
+|-damage|p1a: Phoxxy|239\/291
+|callback|decision
+|
+|switch|p2a: Togekiss|Togekiss, M|367\/367
+|move|p1a: Phoxxy|Flame Charge|p2a: Togekiss
+|-crit|p2a: Togekiss
+|-damage|p2a: Togekiss|297\/367
+|-item|p1a: Phoxxy|Leftovers|[from] ability: Magician|[of] p2a: Togekiss
+|-boost|p1a: Phoxxy|spe|1
+|
+|-heal|p1a: Phoxxy|257\/291|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p1a: Phoxxy|Fire Blast|p2a: Togekiss
+|-damage|p2a: Togekiss|147\/367
+|-status|p2a: Togekiss|brn
+|move|p2a: Togekiss|Air Slash|p1a: Phoxxy
+|-damage|p1a: Phoxxy|185\/291
+|
+|-heal|p1a: Phoxxy|203\/291|[from] item: Leftovers
+|-damage|p2a: Togekiss|102\/367 brn|[from] brn
+|-sideend|p1: Quinlanding|Reflect
+|turn|9
+|callback|decision
+|
+|switch|p2a: Scrotom-Wash|Rotom-Wash, shiny|295\/295
+|move|p1a: Phoxxy|Flame Charge|p2a: Scrotom-Wash
+|-resisted|p2a: Scrotom-Wash
+|-damage|p2a: Scrotom-Wash|280\/295
+|-boost|p1a: Phoxxy|spe|1
+|
+|-heal|p1a: Phoxxy|221\/291|[from] item: Leftovers
+|-heal|p2a: Scrotom-Wash|295\/295|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p1a: Ignorance|Blissey, F|714\/714
+|move|p2a: Scrotom-Wash|Hydro Pump|p1a: Ignorance
+|-damage|p1a: Ignorance|661\/714
+|
+|-heal|p1a: Ignorance|705\/714|[from] item: Leftovers
+|-sideend|p1: Quinlanding|move: Light Screen
+|turn|11
+|callback|decision
+|
+|move|p2a: Scrotom-Wash|Will-O-Wisp|p1a: Ignorance
+|-status|p1a: Ignorance|brn
+|move|p1a: Ignorance|Seismic Toss|p2a: Scrotom-Wash
+|-damage|p2a: Scrotom-Wash|195\/295
+|
+|-heal|p2a: Scrotom-Wash|213\/295|[from] item: Leftovers
+|-heal|p1a: Ignorance|714\/714 brn|[from] item: Leftovers
+|-damage|p1a: Ignorance|625\/714 brn|[from] brn
+|turn|12
+|callback|decision
+|
+|move|p2a: Scrotom-Wash|Volt Switch|p1a: Ignorance
+|-crit|p1a: Ignorance
+|-damage|p1a: Ignorance|529\/714 brn
+|callback|decision
+|
+|switch|p2a: Bin Laden|Ferrothorn, M|352\/352
+|move|p1a: Ignorance|Seismic Toss|p2a: Bin Laden
+|-damage|p2a: Bin Laden|252\/352
+|-damage|p1a: Ignorance|440\/714 brn|[from] ability: Iron Barbs|[of] p2a: Bin Laden
+|-damage|p1a: Ignorance|321\/714 brn|[from] item: Rocky Helmet|[of] p2a: Bin Laden
+|
+|-heal|p1a: Ignorance|365\/714 brn|[from] item: Leftovers
+|-damage|p1a: Ignorance|276\/714 brn|[from] brn
+|turn|13
+|callback|decision
+|
+|move|p1a: Ignorance|Soft-Boiled|p1a: Ignorance
+|-heal|p1a: Ignorance|633\/714 brn
+|move|p2a: Bin Laden|Leech Seed|p1a: Ignorance|[miss]
+|-miss|p2a: Bin Laden|p1a: Ignorance
+|
+|-heal|p1a: Ignorance|677\/714 brn|[from] item: Leftovers
+|-damage|p1a: Ignorance|588\/714 brn|[from] brn
+|turn|14
+|callback|decision
+|
+|switch|p1a: Phoxxy|Delphox, M|221\/291
+|move|p2a: Bin Laden|Leech Seed|p1a: Phoxxy
+|-start|p1a: Phoxxy|move: Leech Seed
+|
+|-heal|p1a: Phoxxy|239\/291|[from] item: Leftovers
+|-damage|p1a: Phoxxy|203\/291|[from] Leech Seed|[of] p2a: Bin Laden
+|-heal|p2a: Bin Laden|288\/352|[silent]
+|turn|15
+|callback|decision
+|
+|move|p2a: Bin Laden|Protect|p2a: Bin Laden
+|-singleturn|p2a: Bin Laden|Protect
+|move|p1a: Phoxxy|Fire Blast|p2a: Bin Laden
+|-activate|p2a: Bin Laden|Protect
+|
+|-heal|p1a: Phoxxy|221\/291|[from] item: Leftovers
+|-damage|p1a: Phoxxy|185\/291|[from] Leech Seed|[of] p2a: Bin Laden
+|-heal|p2a: Bin Laden|324\/352|[silent]
+|turn|16
+|callback|decision
+|
+|switch|p2a: Scrotom-Wash|Rotom-Wash, shiny|213\/295
+|move|p1a: Phoxxy|Psychic|p2a: Scrotom-Wash
+|-damage|p2a: Scrotom-Wash|84\/295
+|
+|-heal|p1a: Phoxxy|203\/291|[from] item: Leftovers
+|-heal|p2a: Scrotom-Wash|102\/295|[from] item: Leftovers
+|-damage|p1a: Phoxxy|167\/291|[from] Leech Seed|[of] p2a: Scrotom-Wash
+|-heal|p2a: Scrotom-Wash|138\/295|[silent]
+|turn|17
+|callback|decision
+|
+|switch|p1a: Ignorance|Blissey, F|588\/714
+|move|p2a: Scrotom-Wash|Hydro Pump|p1a: Ignorance
+|-damage|p1a: Ignorance|470\/714
+|
+|-heal|p2a: Scrotom-Wash|156\/295|[from] item: Leftovers
+|-heal|p1a: Ignorance|514\/714|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p2a: Scrotom-Wash|Volt Switch|p1a: Ignorance
+|-crit|p1a: Ignorance
+|-damage|p1a: Ignorance|414\/714
+|callback|decision
+|
+|switch|p2a: Bin Laden|Ferrothorn, M|324\/352
+|move|p1a: Ignorance|Thunder Wave|p2a: Bin Laden
+|-status|p2a: Bin Laden|par
+|
+|-heal|p1a: Ignorance|458\/714|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|switch|p1a: Mr. Meowgi|Meowstic, M|99\/352
+|move|p2a: Bin Laden|Leech Seed|p1a: Mr. Meowgi
+|-start|p1a: Mr. Meowgi|move: Leech Seed
+|
+|-damage|p1a: Mr. Meowgi|55\/352|[from] Leech Seed|[of] p2a: Bin Laden
+|-heal|p2a: Bin Laden|352\/352 par|[silent]
+|turn|20
+|callback|decision
+|
+|move|p2a: Bin Laden|Protect|p2a: Bin Laden
+|-singleturn|p2a: Bin Laden|Protect
+|move|p1a: Mr. Meowgi|Light Screen|p1a: Mr. Meowgi
+|-sidestart|p1: Quinlanding|move: Light Screen
+|
+|-damage|p1a: Mr. Meowgi|11\/352|[from] Leech Seed|[of] p2a: Bin Laden
+|turn|21
+|callback|decision
+|
+|move|p1a: Mr. Meowgi|Reflect|p1a: Mr. Meowgi
+|-sidestart|p1: Quinlanding|Reflect
+|cant|p2a: Bin Laden|par
+|
+|-damage|p1a: Mr. Meowgi|0 fnt|[from] Leech Seed|[of] p2a: Bin Laden
+|faint|p1a: Mr. Meowgi
+|callback|decision
+|
+|switch|p1a: Phoxxy|Delphox, M|167\/291
+|turn|22
+|callback|decision
+|
+|cant|p2a: Bin Laden|par
+|move|p1a: Phoxxy|Flame Charge|p2a: Bin Laden
+|-supereffective|p2a: Bin Laden
+|-damage|p2a: Bin Laden|252\/352 par
+|-damage|p1a: Phoxxy|131\/291|[from] ability: Iron Barbs|[of] p2a: Bin Laden
+|-damage|p1a: Phoxxy|83\/291|[from] item: Rocky Helmet|[of] p2a: Bin Laden
+|-boost|p1a: Phoxxy|spe|1
+|
+|-heal|p1a: Phoxxy|101\/291|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p2a: Bin Laden|Protect|p2a: Bin Laden
+|-singleturn|p2a: Bin Laden|Protect
+|move|p1a: Phoxxy|Fire Blast|p2a: Bin Laden
+|-activate|p2a: Bin Laden|Protect
+|
+|-heal|p1a: Phoxxy|119\/291|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|switch|p2a: Scrotom-Wash|Rotom-Wash, shiny|156\/295
+|move|p1a: Phoxxy|Fire Blast|p2a: Scrotom-Wash
+|-resisted|p2a: Scrotom-Wash
+|-damage|p2a: Scrotom-Wash|75\/295
+|
+|-heal|p1a: Phoxxy|137\/291|[from] item: Leftovers
+|-heal|p2a: Scrotom-Wash|93\/295|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p1a: Phoxxy|Psychic|p2a: Scrotom-Wash
+|-damage|p2a: Scrotom-Wash|0 fnt
+|faint|p2a: Scrotom-Wash
+|
+|-heal|p1a: Phoxxy|155\/291|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Diggersby Tho|Excadrill, F, shiny|362\/362
+|-ability|p2a: Diggersby Tho|Mold Breaker
+|turn|26
+|callback|decision
+|
+|move|p1a: Phoxxy|Fire Blast|p2a: Diggersby Tho
+|-supereffective|p2a: Diggersby Tho
+|-damage|p2a: Diggersby Tho|0 fnt
+|faint|p2a: Diggersby Tho
+|
+|-heal|p1a: Phoxxy|173\/291|[from] item: Leftovers
+|callback|decision
+|chat|Quinlanding|DIGGERSBYTHO
+|
+|switch|p2a: Togekiss|Togekiss, M|102\/367 brn
+|turn|27
+|callback|decision
+|
+|move|p1a: Phoxxy|Psychic|p2a: Togekiss
+|-damage|p2a: Togekiss|0 fnt
+|faint|p2a: Togekiss
+|
+|-heal|p1a: Phoxxy|191\/291|[from] item: Leftovers
+|-sideend|p1: Quinlanding|move: Light Screen
+|callback|decision
+|
+|switch|p2a: Bin Laden|Ferrothorn, M|252\/352 par
+|turn|28
+|callback|decision
+|
+|move|p1a: Phoxxy|Flame Charge|p2a: Bin Laden
+|-supereffective|p2a: Bin Laden
+|-damage|p2a: Bin Laden|144\/352 par
+|-damage|p1a: Phoxxy|155\/291|[from] ability: Iron Barbs|[of] p2a: Bin Laden
+|-damage|p1a: Phoxxy|107\/291|[from] item: Rocky Helmet|[of] p2a: Bin Laden
+|-boost|p1a: Phoxxy|spe|1
+|move|p2a: Bin Laden|Leech Seed|p1a: Phoxxy
+|-start|p1a: Phoxxy|move: Leech Seed
+|
+|-heal|p1a: Phoxxy|125\/291|[from] item: Leftovers
+|-damage|p1a: Phoxxy|89\/291|[from] Leech Seed|[of] p2a: Bin Laden
+|-heal|p2a: Bin Laden|180\/352 par|[silent]
+|-sideend|p1: Quinlanding|Reflect
+|turn|29
+|callback|decision
+|
+|move|p2a: Bin Laden|Protect|p2a: Bin Laden
+|-singleturn|p2a: Bin Laden|Protect
+|move|p1a: Phoxxy|Shadow Ball|p2a: Bin Laden
+|-activate|p2a: Bin Laden|Protect
+|
+|-heal|p1a: Phoxxy|107\/291|[from] item: Leftovers
+|-damage|p1a: Phoxxy|71\/291|[from] Leech Seed|[of] p2a: Bin Laden
+|-heal|p2a: Bin Laden|216\/352 par|[silent]
+|turn|30
+|callback|decision
+|chat|Quinlanding|well that wasn't too bright
+|
+|move|p1a: Phoxxy|Fire Blast|p2a: Bin Laden|[miss]
+|-miss|p1a: Phoxxy|p2a: Bin Laden
+|move|p2a: Bin Laden|Gyro Ball|p1a: Phoxxy
+|-resisted|p1a: Phoxxy
+|-damage|p1a: Phoxxy|0 fnt
+|faint|p1a: Phoxxy
+|
+|callback|decision
+|
+|switch|p1a: Skarmbliss|Skarmory, F|334\/334
+|turn|31
+|callback|decision
+|
+|cant|p2a: Bin Laden|par
+|move|p1a: Skarmbliss|Whirlwind|p2a: Bin Laden
+|drag|p2a: Tripod|Jumpluff, F|354\/354
+|
+|turn|32
+|callback|decision
+|
+|move|p2a: Tripod|Encore|p1a: Skarmbliss
+|-start|p1a: Skarmbliss|Encore
+|move|p1a: Skarmbliss|Whirlwind|p2a: Tripod
+|drag|p2a: Bin Laden|Ferrothorn, M|216\/352 par
+|
+|turn|33
+|callback|decision
+|
+|switch|p1a: Ignorance|Blissey, F|458\/714
+|move|p2a: Bin Laden|Leech Seed|p1a: Ignorance
+|-start|p1a: Ignorance|move: Leech Seed
+|
+|-heal|p1a: Ignorance|502\/714|[from] item: Leftovers
+|-damage|p1a: Ignorance|413\/714|[from] Leech Seed|[of] p2a: Bin Laden
+|-heal|p2a: Bin Laden|305\/352 par|[silent]
+|turn|34
+|callback|decision
+|
+|move|p1a: Ignorance|Soft-Boiled|p1a: Ignorance
+|-heal|p1a: Ignorance|714\/714
+|move|p2a: Bin Laden|Stealth Rock|p1a: Ignorance
+|-sidestart|p1: Quinlanding|move: Stealth Rock
+|
+|-damage|p1a: Ignorance|625\/714|[from] Leech Seed|[of] p2a: Bin Laden
+|-heal|p2a: Bin Laden|352\/352 par|[silent]
+|turn|35
+|callback|decision
+|
+|switch|p1a: Hera|Heracross, M|364\/364
+|-damage|p1a: Hera|319\/364|[from] Stealth Rock
+|move|p2a: Bin Laden|Gyro Ball|p1a: Hera
+|-damage|p1a: Hera|96\/364
+|
+|turn|36
+|callback|decision
+|
+|switch|p2a: Tripod|Jumpluff, F|354\/354
+|-formechange|p1a: Hera|Heracross-Mega
+|message|Heracross has Mega Evolved into Mega Heracross!
+|move|p1a: Hera|Rest|p1a: Hera
+|-status|p1a: Hera|slp
+|-heal|p1a: Hera|364\/364 slp|[silent]
+|-status|p1a: Hera|slp|[from] move: Rest
+|
+|turn|37
+|callback|decision
+|
+|switch|p1a: Skarmbliss|Skarmory, F|334\/334
+|-damage|p1a: Skarmbliss|293\/334|[from] Stealth Rock
+|move|p2a: Tripod|Encore|p1a: Skarmbliss
+|-fail|p1a: Skarmbliss
+|
+|turn|38
+|callback|decision
+|
+|move|p2a: Tripod|Aromatherapy|p2a: Tripod
+|-cureteam|p2a: Tripod|[from] move: Aromatherapy
+|move|p1a: Skarmbliss|Drill Peck|p2a: Tripod
+|-supereffective|p2a: Tripod
+|-damage|p2a: Tripod|136\/354
+|
+|-heal|p2a: Tripod|158\/354|[from] item: Leftovers
+|turn|39
+|callback|decision
+|
+|switch|p2a: Bin Laden|Ferrothorn, M|352\/352
+|move|p1a: Skarmbliss|Spikes|p2a: Bin Laden
+|-sidestart|p2: livEnwolC|Spikes
+|
+|turn|40
+|callback|decision
+|
+|move|p1a: Skarmbliss|Spikes|p2a: Bin Laden
+|-sidestart|p2: livEnwolC|Spikes
+|move|p2a: Bin Laden|Leech Seed|p1a: Skarmbliss
+|-start|p1a: Skarmbliss|move: Leech Seed
+|
+|-damage|p1a: Skarmbliss|252\/334|[from] Leech Seed|[of] p2a: Bin Laden
+|turn|41
+|callback|decision
+|
+|switch|p2a: Tripod|Jumpluff, F|158\/354
+|move|p1a: Skarmbliss|Spikes|p2a: Tripod
+|-sidestart|p2: livEnwolC|Spikes
+|
+|-heal|p2a: Tripod|180\/354|[from] item: Leftovers
+|-damage|p1a: Skarmbliss|211\/334|[from] Leech Seed|[of] p2a: Tripod
+|-heal|p2a: Tripod|221\/354|[silent]
+|turn|42
+|callback|decision
+|
+|switch|p1a: Ignorance|Blissey, F|625\/714
+|-damage|p1a: Ignorance|536\/714|[from] Stealth Rock
+|move|p2a: Tripod|U-turn|p1a: Ignorance
+|-damage|p1a: Ignorance|468\/714
+|callback|decision
+|
+|switch|p2a: Luke Car E O|Lucario, M|281\/281
+|-damage|p2a: Luke Car E O|211\/281|[from] Spikes
+|
+|-heal|p1a: Ignorance|512\/714|[from] item: Leftovers
+|turn|43
+|callback|decision
+|
+|-formechange|p2a: Luke Car E O|Lucario-Mega
+|message|Lucario has Mega Evolved into Mega Lucario!
+|move|p2a: Luke Car E O|Close Combat|p1a: Ignorance
+|-supereffective|p1a: Ignorance
+|-damage|p1a: Ignorance|0 fnt
+|-unboost|p2a: Luke Car E O|def|1
+|-unboost|p2a: Luke Car E O|spd|1
+|faint|p1a: Ignorance
+|
+|callback|decision
+|
+|switch|p1a: Skarmbliss|Skarmory, F|211\/334
+|-damage|p1a: Skarmbliss|170\/334|[from] Stealth Rock
+|turn|44
+|callback|decision
+|
+|move|p2a: Luke Car E O|Close Combat|p1a: Skarmbliss
+|-damage|p1a: Skarmbliss|0 fnt
+|-unboost|p2a: Luke Car E O|def|1
+|-unboost|p2a: Luke Car E O|spd|1
+|faint|p1a: Skarmbliss
+|
+|callback|decision
+|
+|switch|p1a: Slurpee|Slurpuff, F|306\/306
+|-damage|p1a: Slurpee|268\/306|[from] Stealth Rock
+|turn|45
+|callback|decision
+|
+|move|p2a: Luke Car E O|Bullet Punch|p1a: Slurpee
+|-supereffective|p1a: Slurpee
+|-damage|p1a: Slurpee|48\/306
+|-enditem|p1a: Slurpee|Sitrus Berry|[eat]
+|-heal|p1a: Slurpee|124\/306|[from] item: Sitrus Berry
+|move|p1a: Slurpee|Play Rough|p2a: Luke Car E O
+|-damage|p2a: Luke Car E O|0 fnt
+|faint|p2a: Luke Car E O
+|
+|callback|decision
+|
+|switch|p2a: Tripod|Jumpluff, F|221\/354
+|turn|46
+|callback|decision
+|
+|switch|p2a: Bin Laden|Ferrothorn, M|352\/352
+|-damage|p2a: Bin Laden|264\/352|[from] Spikes
+|move|p1a: Slurpee|Play Rough|p2a: Bin Laden
+|-resisted|p2a: Bin Laden
+|-damage|p2a: Bin Laden|227\/352
+|-damage|p1a: Slurpee|86\/306|[from] ability: Iron Barbs|[of] p2a: Bin Laden
+|-damage|p1a: Slurpee|35\/306|[from] item: Rocky Helmet|[of] p2a: Bin Laden
+|
+|turn|47
+|callback|decision
+|
+|move|p2a: Bin Laden|Protect|p2a: Bin Laden
+|-singleturn|p2a: Bin Laden|Protect
+|move|p1a: Slurpee|Endeavor|p2a: Bin Laden
+|-activate|p2a: Bin Laden|Protect
+|
+|turn|48
+|callback|decision
+|
+|switch|p2a: Tripod|Jumpluff, F|221\/354
+|move|p1a: Slurpee|Endeavor|p2a: Tripod
+|-damage|p2a: Tripod|35\/354
+|
+|-heal|p2a: Tripod|57\/354|[from] item: Leftovers
+|turn|49
+|callback|decision
+|
+|move|p1a: Slurpee|Play Rough|p2a: Tripod|[miss]
+|-miss|p1a: Slurpee|p2a: Tripod
+|move|p2a: Tripod|U-turn|p1a: Slurpee
+|-resisted|p1a: Slurpee
+|-damage|p1a: Slurpee|17\/306
+|callback|decision
+|chat|Quinlanding|unburden dude
+|chat|Quinlanding|so fast
+|
+|switch|p2a: Bin Laden|Ferrothorn, M|227\/352
+|-damage|p2a: Bin Laden|139\/352|[from] Spikes
+|
+|turn|50
+|callback|decision
+|
+|switch|p2a: Tripod|Jumpluff, F|57\/354
+|move|p1a: Slurpee|Endeavor|p2a: Tripod
+|-damage|p2a: Tripod|17\/354
+|
+|-heal|p2a: Tripod|39\/354|[from] item: Leftovers
+|turn|51
+|callback|decision
+|
+|move|p1a: Slurpee|Play Rough|p2a: Tripod
+|-damage|p2a: Tripod|0 fnt
+|faint|p2a: Tripod
+|
+|callback|decision
+|
+|switch|p2a: Bin Laden|Ferrothorn, M|139\/352
+|-damage|p2a: Bin Laden|51\/352|[from] Spikes
+|turn|52
+|callback|decision
+|
+|move|p1a: Slurpee|Play Rough|p2a: Bin Laden
+|-resisted|p2a: Bin Laden
+|-damage|p2a: Bin Laden|16\/352
+|-damage|p1a: Slurpee|0 fnt|[from] ability: Iron Barbs|[of] p2a: Bin Laden
+|-unboost|p2a: Bin Laden|atk|1
+|faint|p1a: Slurpee
+|move|p2a: Bin Laden|Leech Seed|p1: Slurpee|[notarget]
+|-notarget
+|
+|callback|decision
+|chat|Quinlanding|this team is called slurpuff 4 ever
+|
+|switch|p1a: Hera|Heracross, M|364\/364 slp
+|-formechange|p1a: Hera|Heracross-Mega
+|-damage|p1a: Hera|319\/364 slp|[from] Stealth Rock
+|turn|53
+|callback|decision
+|
+|cant|p1a: Hera|slp
+|move|p2a: Bin Laden|Leech Seed|p1a: Hera
+|-start|p1a: Hera|move: Leech Seed
+|
+|-damage|p1a: Hera|274\/364 slp|[from] Leech Seed|[of] p2a: Bin Laden
+|-heal|p2a: Bin Laden|61\/352|[silent]
+|turn|54
+|callback|decision
+|
+|cant|p1a: Hera|slp
+|move|p2a: Bin Laden|Gyro Ball|p1a: Hera
+|-damage|p1a: Hera|208\/364 slp
+|
+|-damage|p1a: Hera|163\/364 slp|[from] Leech Seed|[of] p2a: Bin Laden
+|-heal|p2a: Bin Laden|106\/352|[silent]
+|turn|55
+|callback|decision
+|
+|move|p2a: Bin Laden|Protect|p2a: Bin Laden
+|-singleturn|p2a: Bin Laden|Protect
+|-curestatus|p1a: Hera|slp
+|move|p1a: Hera|Pin Missile|p2a: Bin Laden
+|-activate|p2a: Bin Laden|Protect
+|
+|-damage|p1a: Hera|118\/364|[from] Leech Seed|[of] p2a: Bin Laden
+|-heal|p2a: Bin Laden|151\/352|[silent]
+|turn|56
+|callback|decision
+|
+|move|p2a: Bin Laden|Protect|p2a: Bin Laden
+|-fail|p2a: Bin Laden
+|move|p1a: Hera|Pin Missile|p2a: Bin Laden
+|-damage|p2a: Bin Laden|109\/352
+|-damage|p2a: Bin Laden|69\/352
+|-damage|p2a: Bin Laden|30\/352
+|-damage|p2a: Bin Laden|0 fnt
+|-hitcount|p2a: Bin Laden|4
+|faint|p2a: Bin Laden
+|
+|win|Quinlanding
+|raw|Ladder updating...
+|raw|Quinlanding's rating: 1607 &rarr; <strong>1614<\/strong><br \/>(+7 for winning)
+|raw|livEnwolC's rating: 1765 &rarr; <strong>1761<\/strong><br \/>(-4 for losing)
+|chat|Quinlanding|here it goe
+|chat|Quinlanding|word
+|chat|Quinlanding|gg
+|chat|livEnwolC|gg
+|chat|Quinlanding|!
+|leave|livEnwolC
+|player|p2

@@ -1,0 +1,176 @@
+|join|DJSugar
+|join|Super Mario Bros
+|player|p1|DJSugar|102
+|player|p2|Super Mario Bros|155
+|gametype|singles
+|gen|6
+|tier|OU (suspect test)
+|rated
+|clearpoke
+|poke|p1|Charizard, F
+|poke|p1|Conkeldurr, F
+|poke|p1|Excadrill, M
+|poke|p1|Mandibuzz, F
+|poke|p1|Gengar, F
+|poke|p1|Rotom-Wash
+|poke|p2|Medicham, F, shiny
+|poke|p2|Suicune, shiny
+|poke|p2|Ditto, shiny
+|poke|p2|Jirachi, shiny
+|poke|p2|Machamp, M
+|poke|p2|Diggersby, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Excadrill|Excadrill, M|424\/424
+|switch|p2a: Machamp|Machamp, M|384\/384
+|-ability|p1a: Excadrill|Mold Breaker
+|-item|p1a: Excadrill|Air Balloon
+|turn|1
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, F|262\/262
+|move|p2a: Machamp|Dynamic Punch|p1a: Gengar
+|-immune|p1a: Gengar|[msg]
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Gengar|Substitute|p1a: Gengar
+|-start|p1a: Gengar|Substitute
+|-damage|p1a: Gengar|197\/262
+|move|p2a: Machamp|Knock Off|p1a: Gengar
+|-supereffective|p1a: Gengar
+|-end|p1a: Gengar|Substitute
+|
+|turn|3
+|callback|decision
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|424\/424
+|move|p2a: Machamp|Knock Off|p1a: Mandibuzz
+|-resisted|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|382\/424
+|-enditem|p1a: Mandibuzz|Leftovers|[from] move: Knock Off|[of] p2a: Machamp
+|
+|turn|4
+|callback|decision
+|
+|move|p1a: Mandibuzz|Foul Play|p2a: Machamp
+|-resisted|p2a: Machamp
+|-damage|p2a: Machamp|271\/384
+|move|p2a: Machamp|Dynamic Punch|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|247\/424
+|-start|p1a: Mandibuzz|confusion
+|
+|turn|5
+|callback|decision
+|
+|-activate|p1a: Mandibuzz|confusion
+|move|p1a: Mandibuzz|Roost|p1a: Mandibuzz
+|-heal|p1a: Mandibuzz|424\/424
+|move|p2a: Machamp|Dynamic Punch|p1a: Mandibuzz
+|-crit|p1a: Mandibuzz
+|-supereffective|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|22\/424
+|
+|turn|6
+|callback|decision
+|
+|move|p2a: Machamp|Bullet Punch|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|0 fnt
+|faint|p1a: Mandibuzz
+|
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, F|197\/262
+|turn|7
+|callback|decision
+|
+|move|p1a: Gengar|Sludge Wave|p2a: Machamp
+|-damage|p2a: Machamp|92\/384
+|-damage|p1a: Gengar|171\/262|[from] item: Life Orb
+|move|p2a: Machamp|Knock Off|p1a: Gengar
+|-supereffective|p1a: Gengar
+|-damage|p1a: Gengar|0 fnt
+|faint|p1a: Gengar
+|
+|callback|decision
+|
+|switch|p1a: Conkeldurr|Conkeldurr, F|351\/351
+|turn|8
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi, shiny|404\/404
+|move|p1a: Conkeldurr|Drain Punch|p2a: Jirachi
+|-damage|p2a: Jirachi|289\/404
+|
+|-heal|p2a: Jirachi|314\/404|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p2a: Jirachi|Stealth Rock|p1a: Conkeldurr
+|-sidestart|p1: DJSugar|move: Stealth Rock
+|move|p1a: Conkeldurr|Knock Off|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|110\/404
+|-enditem|p2a: Jirachi|Leftovers|[from] move: Knock Off|[of] p1a: Conkeldurr
+|
+|turn|10
+|callback|decision
+|
+|move|p2a: Jirachi|Healing Wish|p2a: Jirachi
+|faint|p2a: Jirachi
+|move|p1a: Conkeldurr|Knock Off|p2: Jirachi|[notarget]
+|-notarget
+|
+|callback|decision
+|
+|switch|p2a: Machamp|Machamp, M|92\/384
+|-heal|p2a: Machamp|384\/384|[from] move: Healing Wish
+|turn|11
+|callback|decision
+|
+|move|p2a: Machamp|Dynamic Punch|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|173\/351
+|-start|p1a: Conkeldurr|confusion
+|-activate|p1a: Conkeldurr|confusion
+|move|p1a: Conkeldurr|Drain Punch|p2a: Machamp
+|-damage|p2a: Machamp|197\/384
+|-heal|p1a: Conkeldurr|267\/351|[from] drain|[of] p2a: Machamp
+|
+|turn|12
+|callback|decision
+|
+|move|p2a: Machamp|Dynamic Punch|p1a: Conkeldurr
+|-crit|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|11\/351
+|-activate|p1a: Conkeldurr|confusion
+|-damage|p1a: Conkeldurr|0 fnt|[from] confusion
+|faint|p1a: Conkeldurr
+|
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|241\/241
+|-damage|p1a: Rotom-Wash|211\/241|[from] Stealth Rock
+|turn|13
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Machamp
+|-damage|p2a: Machamp|121\/384
+|callback|decision
+|-message|DJSugar forfeited.
+|
+|win|Super Mario Bros
+|raw|Ladder updating...
+|leave|DJSugar
+|player|p1
+|raw|DJSugar's rating: 1146 &rarr; <strong>1120<\/strong><br \/>(-26 for losing)
+|raw|Super Mario Bros's rating: 1127 &rarr; <strong>1153<\/strong><br \/>(+26 for winning)

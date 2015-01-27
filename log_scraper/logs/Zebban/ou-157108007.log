@@ -1,0 +1,431 @@
+|join|Zebban
+|join|Er Suino
+|player|p1|Zebban|101
+|player|p2|Er Suino|273
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Charizard, M
+|poke|p1|Greninja, M
+|poke|p1|Chesnaught, M
+|poke|p1|Aggron, M
+|poke|p1|Donphan, M
+|poke|p1|Rotom-Wash
+|poke|p2|Bisharp, M
+|poke|p2|Vaporeon, M
+|poke|p2|Chandelure, M
+|poke|p2|Medicham, M
+|poke|p2|Heatran, F
+|poke|p2|Latios, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Donphan|Donphan, M|384\/384
+|switch|p2a: Heatran|Heatran, F|324\/324
+|turn|1
+|
+|move|p2a: Heatran|Earth Power|p1a: Donphan
+|-damage|p1a: Donphan|210\/384
+|move|p1a: Donphan|Stealth Rock|p2a: Heatran
+|-sidestart|p2: Er Suino|move: Stealth Rock
+|
+|-heal|p1a: Donphan|234\/384|[from] item: Leftovers
+|turn|2
+|
+|switch|p2a: Bisharp|Bisharp, M|271\/271
+|-damage|p2a: Bisharp|255\/271|[from] Stealth Rock
+|-item|p2a: Bisharp|Air Balloon
+|move|p1a: Donphan|Earthquake|p2a: Bisharp
+|-immune|p2a: Bisharp|[msg]
+|
+|-heal|p1a: Donphan|258\/384|[from] item: Leftovers
+|turn|3
+|
+|switch|p1a: Chesnaught|Chesnaught, M|379\/379
+|move|p2a: Bisharp|Knock Off|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|324\/379
+|-enditem|p1a: Chesnaught|Leftovers|[from] move: Knock Off|[of] p2a: Bisharp
+|
+|turn|4
+|
+|move|p2a: Bisharp|Swords Dance|p2a: Bisharp
+|-boost|p2a: Bisharp|atk|2
+|move|p1a: Chesnaught|Leech Seed|p2a: Bisharp
+|-start|p2a: Bisharp|move: Leech Seed
+|
+|-damage|p2a: Bisharp|222\/271|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|357\/379|[silent]
+|turn|5
+|
+|move|p2a: Bisharp|Iron Head|p1a: Chesnaught
+|-damage|p1a: Chesnaught|171\/379
+|move|p1a: Chesnaught|Substitute|p1a: Chesnaught
+|-start|p1a: Chesnaught|Substitute
+|-damage|p1a: Chesnaught|77\/379
+|
+|-damage|p2a: Bisharp|189\/271|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|110\/379|[silent]
+|turn|6
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-singleturn|p1a: Chesnaught|move: Protect
+|move|p2a: Bisharp|Iron Head|p1a: Chesnaught
+|-activate|p1a: Chesnaught|move: Protect
+|-damage|p2a: Bisharp|156\/271|[from] Spiky Shield|[of] p1a: Chesnaught
+|
+|-damage|p2a: Bisharp|123\/271|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|143\/379|[silent]
+|turn|7
+|
+|switch|p2a: Vaporeon|Vaporeon, M|464\/464
+|-damage|p2a: Vaporeon|406\/464|[from] Stealth Rock
+|move|p1a: Chesnaught|Substitute|p1a: Chesnaught
+|-fail|p1a: Chesnaught|move: Substitute
+|
+|-heal|p2a: Vaporeon|435\/464|[from] item: Leftovers
+|turn|8
+|
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|move|p1a: Chesnaught|Leech Seed|p2a: Vaporeon
+|-start|p2a: Vaporeon|move: Leech Seed
+|
+|-heal|p2a: Vaporeon|464\/464|[from] item: Leftovers
+|-damage|p2a: Vaporeon|406\/464|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|201\/379|[silent]
+|turn|9
+|
+|switch|p2a: Bisharp|Bisharp, M|123\/271
+|-damage|p2a: Bisharp|107\/271|[from] Stealth Rock
+|-item|p2a: Bisharp|Air Balloon
+|move|p1a: Chesnaught|Leech Seed|p2a: Bisharp
+|-start|p2a: Bisharp|move: Leech Seed
+|
+|-heal|p2a: Bisharp|271\/271|[from] move: Wish|[wisher] Vaporeon
+|-damage|p2a: Bisharp|238\/271|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|234\/379|[silent]
+|turn|10
+|
+|switch|p2a: Heatran|Heatran, F|324\/324
+|-damage|p2a: Heatran|284\/324|[from] Stealth Rock
+|move|p1a: Chesnaught|Seed Bomb|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|260\/324
+|
+|turn|11
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|241\/241
+|move|p2a: Heatran|Flamethrower|p1a: Rotom-Wash
+|-crit|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|138\/241
+|
+|turn|12
+|
+|switch|p2a: Latios|Latios, M|301\/301
+|-damage|p2a: Latios|264\/301|[from] Stealth Rock
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Latios
+|-resisted|p2a: Latios
+|-damage|p2a: Latios|216\/301
+|
+|switch|p1a: Greninja|Greninja, M|286\/286
+|
+|turn|13
+|
+|switch|p2a: Vaporeon|Vaporeon, M|406\/464
+|-damage|p2a: Vaporeon|348\/464|[from] Stealth Rock
+|move|p1a: Greninja|Ice Beam|p2a: Vaporeon
+|-start|p1a: Greninja|typechange|Ice|[from] Protean
+|-resisted|p2a: Vaporeon
+|-damage|p2a: Vaporeon|293\/464
+|
+|-heal|p2a: Vaporeon|322\/464|[from] item: Leftovers
+|turn|14
+|
+|move|p1a: Greninja|Dark Pulse|p2a: Vaporeon
+|-start|p1a: Greninja|typechange|Dark|[from] Protean
+|-damage|p2a: Vaporeon|211\/464
+|cant|p2a: Vaporeon|flinch
+|
+|-heal|p2a: Vaporeon|240\/464|[from] item: Leftovers
+|turn|15
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|138\/241
+|move|p2a: Vaporeon|Toxic|p1a: Rotom-Wash
+|-status|p1a: Rotom-Wash|tox
+|
+|-heal|p2a: Vaporeon|269\/464|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|123\/241 tox|[from] psn
+|turn|16
+|
+|move|p2a: Vaporeon|Protect|p2a: Vaporeon
+|-singleturn|p2a: Vaporeon|Protect
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Vaporeon
+|-activate|p2a: Vaporeon|Protect
+|
+|-heal|p2a: Vaporeon|298\/464|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|93\/241 tox|[from] psn
+|turn|17
+|
+|switch|p2a: Chandelure|Chandelure, M|280\/280
+|-damage|p2a: Chandelure|210\/280|[from] Stealth Rock
+|move|p1a: Rotom-Wash|Rest|p1a: Rotom-Wash
+|-status|p1a: Rotom-Wash|slp
+|-heal|p1a: Rotom-Wash|241\/241 slp|[silent]
+|-status|p1a: Rotom-Wash|slp|[from] move: Rest
+|-enditem|p1a: Rotom-Wash|Chesto Berry|[eat]
+|-curestatus|p1a: Rotom-Wash|slp
+|
+|turn|18
+|
+|move|p2a: Chandelure|Energy Ball|p1a: Rotom-Wash
+|-supereffective|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|57\/241
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Chandelure
+|-damage|p2a: Chandelure|135\/280
+|
+|switch|p1a: Donphan|Donphan, M|258\/384
+|
+|-heal|p1a: Donphan|282\/384|[from] item: Leftovers
+|turn|19
+|
+|switch|p1a: Charizard|Charizard, M|298\/298
+|move|p2a: Chandelure|Energy Ball|p1a: Charizard
+|-resisted|p1a: Charizard
+|-damage|p1a: Charizard|263\/298
+|
+|turn|20
+|
+|detailschange|p1a: Charizard|Charizard-Mega-X, M
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p1a: Charizard|Dragon Dance|p1a: Charizard
+|-boost|p1a: Charizard|atk|1
+|-boost|p1a: Charizard|spe|1
+|move|p2a: Chandelure|Shadow Ball|p1a: Charizard
+|-crit|p1a: Charizard
+|-damage|p1a: Charizard|0 fnt
+|faint|p1a: Charizard
+|
+|
+|switch|p1a: Greninja|Greninja, M|286\/286
+|turn|21
+|
+|move|p1a: Greninja|Surf|p2a: Chandelure
+|-start|p1a: Greninja|typechange|Water|[from] Protean
+|-crit|p2a: Chandelure
+|-supereffective|p2a: Chandelure
+|-damage|p2a: Chandelure|0 fnt
+|faint|p2a: Chandelure
+|
+|
+|switch|p2a: Latios|Latios, M|216\/301
+|-damage|p2a: Latios|179\/301|[from] Stealth Rock
+|turn|22
+|
+|move|p1a: Greninja|Ice Beam|p2a: Latios
+|-start|p1a: Greninja|typechange|Ice|[from] Protean
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|faint|p2a: Latios
+|
+|
+|switch|p2a: Vaporeon|Vaporeon, M|298\/464
+|-damage|p2a: Vaporeon|240\/464|[from] Stealth Rock
+|turn|23
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|57\/241
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-heal|p2a: Vaporeon|269\/464|[from] item: Leftovers
+|turn|24
+|
+|move|p2a: Vaporeon|Protect|p2a: Vaporeon
+|-singleturn|p2a: Vaporeon|Protect
+|move|p1a: Rotom-Wash|Rest|p1a: Rotom-Wash
+|-status|p1a: Rotom-Wash|slp
+|-heal|p1a: Rotom-Wash|241\/241 slp|[silent]
+|-status|p1a: Rotom-Wash|slp|[from] move: Rest
+|
+|-heal|p2a: Vaporeon|464\/464|[from] move: Wish|[wisher] Vaporeon
+|turn|25
+|
+|switch|p2a: Bisharp|Bisharp, M|238\/271
+|-damage|p2a: Bisharp|222\/271|[from] Stealth Rock
+|-item|p2a: Bisharp|Air Balloon
+|cant|p1a: Rotom-Wash|slp
+|
+|turn|26
+|
+|switch|p1a: Chesnaught|Chesnaught, M|234\/379
+|move|p2a: Bisharp|Swords Dance|p2a: Bisharp
+|-boost|p2a: Bisharp|atk|2
+|
+|turn|27
+|
+|move|p2a: Bisharp|Iron Head|p1a: Chesnaught
+|-damage|p1a: Chesnaught|51\/379
+|move|p1a: Chesnaught|Leech Seed|p2a: Bisharp
+|-start|p2a: Bisharp|move: Leech Seed
+|
+|-damage|p2a: Bisharp|189\/271|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|84\/379|[silent]
+|turn|28
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-singleturn|p1a: Chesnaught|move: Protect
+|move|p2a: Bisharp|Iron Head|p1a: Chesnaught
+|-activate|p1a: Chesnaught|move: Protect
+|-damage|p2a: Bisharp|156\/271|[from] Spiky Shield|[of] p1a: Chesnaught
+|
+|-damage|p2a: Bisharp|123\/271|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|117\/379|[silent]
+|turn|29
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-fail|p1a: Chesnaught
+|move|p2a: Bisharp|Iron Head|p1a: Chesnaught
+|-damage|p1a: Chesnaught|0 fnt
+|faint|p1a: Chesnaught
+|
+|
+|switch|p1a: Donphan|Donphan, M|282\/384
+|turn|30
+|
+|switch|p2a: Vaporeon|Vaporeon, M|464\/464
+|-damage|p2a: Vaporeon|406\/464|[from] Stealth Rock
+|switch|p1a: Aggron|Aggron, M|282\/282
+|-item|p1a: Aggron|Air Balloon
+|
+|-heal|p2a: Vaporeon|435\/464|[from] item: Leftovers
+|turn|31
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|241\/241 slp
+|move|p2a: Vaporeon|Scald|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|199\/241 slp
+|
+|-heal|p2a: Vaporeon|464\/464|[from] item: Leftovers
+|turn|32
+|
+|cant|p1a: Rotom-Wash|slp
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|turn|33
+|
+|switch|p2a: Bisharp|Bisharp, M|123\/271
+|-damage|p2a: Bisharp|107\/271|[from] Stealth Rock
+|-item|p2a: Bisharp|Air Balloon
+|-curestatus|p1a: Rotom-Wash|slp
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Bisharp
+|-damage|p2a: Bisharp|0 fnt
+|-enditem|p2a: Bisharp|Air Balloon
+|faint|p2a: Bisharp
+|
+|switch|p1a: Donphan|Donphan, M|282\/384
+|
+|-heal|p1a: Donphan|306\/384|[from] item: Leftovers
+|
+|switch|p2a: Medicham|Medicham, M|261\/261
+|-damage|p2a: Medicham|245\/261|[from] Stealth Rock
+|turn|34
+|
+|detailschange|p2a: Medicham|Medicham-Mega, M
+|message|Medicham has Mega Evolved into Mega Medicham!
+|move|p2a: Medicham|Fake Out|p1a: Donphan
+|-damage|p1a: Donphan|241\/384
+|cant|p1a: Donphan|flinch
+|
+|-heal|p1a: Donphan|265\/384|[from] item: Leftovers
+|turn|35
+|
+|move|p2a: Medicham|High Jump Kick|p1a: Donphan
+|-damage|p1a: Donphan|0 fnt
+|faint|p1a: Donphan
+|
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|199\/241
+|turn|36
+|
+|move|p2a: Medicham|High Jump Kick|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|
+|
+|switch|p1a: Greninja|Greninja, M|286\/286
+|turn|37
+|
+|switch|p2a: Vaporeon|Vaporeon, M|464\/464
+|-damage|p2a: Vaporeon|406\/464|[from] Stealth Rock
+|move|p1a: Greninja|Extrasensory|p2a: Vaporeon
+|-start|p1a: Greninja|typechange|Psychic|[from] Protean
+|-damage|p2a: Vaporeon|306\/464
+|
+|-heal|p2a: Vaporeon|335\/464|[from] item: Leftovers
+|turn|38
+|
+|move|p1a: Greninja|Dark Pulse|p2a: Vaporeon
+|-start|p1a: Greninja|typechange|Dark|[from] Protean
+|-damage|p2a: Vaporeon|230\/464
+|cant|p2a: Vaporeon|flinch
+|
+|-heal|p2a: Vaporeon|259\/464|[from] item: Leftovers
+|turn|39
+|
+|move|p1a: Greninja|Dark Pulse|p2a: Vaporeon
+|-damage|p2a: Vaporeon|145\/464
+|move|p2a: Vaporeon|Toxic|p1a: Greninja|[miss]
+|-miss|p2a: Vaporeon|p1a: Greninja
+|
+|-heal|p2a: Vaporeon|174\/464|[from] item: Leftovers
+|turn|40
+|
+|move|p2a: Vaporeon|Protect|p2a: Vaporeon
+|-singleturn|p2a: Vaporeon|Protect
+|move|p1a: Greninja|Dark Pulse|p2a: Vaporeon
+|-activate|p2a: Vaporeon|Protect
+|
+|-heal|p2a: Vaporeon|203\/464|[from] item: Leftovers
+|turn|41
+|
+|move|p1a: Greninja|Dark Pulse|p2a: Vaporeon
+|-damage|p2a: Vaporeon|104\/464
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-heal|p2a: Vaporeon|133\/464|[from] item: Leftovers
+|turn|42
+|
+|switch|p1a: Aggron|Aggron, M|282\/282
+|-item|p1a: Aggron|Air Balloon
+|move|p2a: Vaporeon|Protect|p2a: Vaporeon
+|-fail|p2a: Vaporeon
+|
+|-heal|p2a: Vaporeon|365\/464|[from] move: Wish|[wisher] Vaporeon
+|-heal|p2a: Vaporeon|394\/464|[from] item: Leftovers
+|turn|43
+|
+|move|p2a: Vaporeon|Scald|p1a: Aggron
+|-supereffective|p1a: Aggron
+|-damage|p1a: Aggron|0 fnt
+|-enditem|p1a: Aggron|Air Balloon
+|faint|p1a: Aggron
+|
+|-heal|p2a: Vaporeon|423\/464|[from] item: Leftovers
+|-message|Zebban forfeited.
+|
+|win|Er Suino
+|raw|Ladder updating...
+|leave|Zebban
+|player|p1
+|raw|Zebban's rating: 1391 &rarr; <strong>1370<\/strong><br \/>(-21 for losing)
+|raw|Er Suino's rating: 1364 &rarr; <strong>1386<\/strong><br \/>(+22 for winning)

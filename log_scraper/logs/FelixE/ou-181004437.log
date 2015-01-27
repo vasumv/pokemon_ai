@@ -1,0 +1,309 @@
+|join|FelixE
+|join|obliviatee
+|player|p1|FelixE|28
+|player|p2|obliviatee|102
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Tyranitar, M
+|poke|p1|Heatran, F
+|poke|p1|Amoonguss, F
+|poke|p1|Togekiss, F
+|poke|p1|Slowbro, M
+|poke|p1|Landorus, M
+|poke|p2|Charizard, F
+|poke|p2|Tyranitar, M
+|poke|p2|Landorus, M
+|poke|p2|Slowbro, F
+|poke|p2|Latios, M
+|poke|p2|Ferrothorn, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Steady|Heatran, F|386\/386
+|switch|p2a: Charizard|Charizard, F|351\/351
+|turn|1
+|
+|switch|p1a: Sanjugendo|Landorus, M|334\/334
+|detailschange|p2a: Charizard|Charizard-Mega-X, F
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p2a: Charizard|Flare Blitz|p1a: Sanjugendo
+|-damage|p1a: Sanjugendo|75\/334
+|-status|p1a: Sanjugendo|brn
+|-damage|p2a: Charizard|266\/351|[from] recoil|[of] p1a: Sanjugendo
+|
+|-damage|p1a: Sanjugendo|34\/334 brn|[from] brn
+|turn|2
+|
+|switch|p2a: Landorus|Landorus, M|319\/319
+|move|p1a: Sanjugendo|Earthquake|p2a: Landorus
+|-immune|p2a: Landorus|[msg]
+|
+|-damage|p1a: Sanjugendo|0 fnt|[from] brn
+|faint|p1a: Sanjugendo
+|
+|switch|p1a: Watter|Slowbro, M|394\/394
+|turn|3
+|
+|switch|p2a: Slowbro|Slowbro, F|393\/393
+|move|p1a: Watter|Scald|p2a: Slowbro
+|-resisted|p2a: Slowbro
+|-damage|p2a: Slowbro|337\/393
+|
+|-heal|p2a: Slowbro|361\/393|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Mogus|Amoonguss, F|432\/432
+|move|p2a: Slowbro|Grass Knot|p1a: Mogus
+|-resisted|p1a: Mogus
+|-damage|p1a: Mogus|423\/432
+|
+|-heal|p2a: Slowbro|385\/393|[from] item: Leftovers
+|-heal|p1a: Mogus|432\/432|[from] item: Black Sludge
+|turn|5
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|move|p1a: Mogus|Spore|p2a: Ferrothorn
+|-fail|p2a: Ferrothorn
+|
+|turn|6
+|
+|move|p1a: Mogus|Hidden Power|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|220\/352
+|move|p2a: Ferrothorn|Stealth Rock|p1a: Mogus
+|-sidestart|p1: FelixE|move: Stealth Rock
+|
+|-heal|p2a: Ferrothorn|242\/352|[from] item: Leftovers
+|turn|7
+|
+|move|p2a: Ferrothorn|Protect|p2a: Ferrothorn
+|-singleturn|p2a: Ferrothorn|Protect
+|move|p1a: Mogus|Hidden Power|p2a: Ferrothorn
+|-activate|p2a: Ferrothorn|Protect
+|
+|-heal|p2a: Ferrothorn|264\/352|[from] item: Leftovers
+|turn|8
+|
+|switch|p2a: Latios|Latios, M|302\/302
+|move|p1a: Mogus|Spore|p2a: Latios
+|-status|p2a: Latios|slp
+|
+|turn|9
+|
+|switch|p2a: Tyranitar|Tyranitar, M|342\/342
+|-weather|Sandstorm
+|switch|p1a: Tyran|Tyranitar, M|346\/346
+|-damage|p1a: Tyran|303\/346|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|10
+|
+|detailschange|p1a: Tyran|Tyranitar-Mega, M
+|message|Tyranitar has Mega Evolved into Mega Tyranitar!
+|move|p2a: Tyranitar|Superpower|p1a: Tyran
+|-supereffective|p1a: Tyran
+|-damage|p1a: Tyran|0 fnt
+|-unboost|p2a: Tyranitar|atk|1
+|-unboost|p2a: Tyranitar|def|1
+|faint|p1a: Tyran
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: F is for Fairy|Togekiss, F|370\/370
+|-damage|p1a: F is for Fairy|278\/370|[from] Stealth Rock
+|turn|11
+|
+|switch|p2a: Latios|Latios, M|302\/302 slp
+|move|p1a: F is for Fairy|Thunder Wave|p2a: Latios
+|-fail|p2a: Latios
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|284\/302 slp|[from] sandstorm
+|-damage|p1a: F is for Fairy|255\/370|[from] sandstorm
+|-heal|p1a: F is for Fairy|278\/370|[from] item: Leftovers
+|turn|12
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|264\/352
+|move|p1a: F is for Fairy|Defog|p2a: Ferrothorn
+|-unboost|p2a: Ferrothorn|evasion|1
+|-sideend|p1: FelixE|Stealth Rock|[from] move: Defog|[of] p1a: F is for Fairy
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: F is for Fairy|255\/370|[from] sandstorm
+|-heal|p1a: F is for Fairy|278\/370|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|286\/352|[from] item: Leftovers
+|turn|13
+|
+|move|p1a: F is for Fairy|Flamethrower|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|42\/352
+|move|p2a: Ferrothorn|Stealth Rock|p1a: F is for Fairy
+|-sidestart|p1: FelixE|move: Stealth Rock
+|
+|-weather|none
+|-heal|p1a: F is for Fairy|301\/370|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|64\/352|[from] item: Leftovers
+|turn|14
+|
+|move|p1a: F is for Fairy|Flamethrower|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|faint|p2a: Ferrothorn
+|
+|-heal|p1a: F is for Fairy|324\/370|[from] item: Leftovers
+|
+|switch|p2a: Tyranitar|Tyranitar, M|342\/342
+|-weather|Sandstorm
+|turn|15
+|
+|switch|p1a: Watter|Slowbro, M|394\/394
+|-damage|p1a: Watter|345\/394|[from] Stealth Rock
+|move|p2a: Tyranitar|Stone Edge|p1a: Watter
+|-damage|p1a: Watter|210\/394
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Watter|186\/394|[from] sandstorm
+|-heal|p1a: Watter|210\/394|[from] item: Leftovers
+|turn|16
+|
+|switch|p2a: Slowbro|Slowbro, F|393\/393
+|move|p1a: Watter|Toxic|p2a: Slowbro
+|-status|p2a: Slowbro|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Watter|186\/394|[from] sandstorm
+|-damage|p2a: Slowbro|369\/393 tox|[from] sandstorm
+|-heal|p2a: Slowbro|393\/393 tox|[from] item: Leftovers
+|-heal|p1a: Watter|210\/394|[from] item: Leftovers
+|-damage|p2a: Slowbro|369\/393 tox|[from] psn
+|turn|17
+|
+|switch|p2a: Latios|Latios, M|284\/302 slp
+|move|p1a: Watter|Protect|p1a: Watter
+|-fail|p1a: Watter
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|266\/302 slp|[from] sandstorm
+|-damage|p1a: Watter|186\/394|[from] sandstorm
+|-heal|p1a: Watter|210\/394|[from] item: Leftovers
+|turn|18
+|
+|switch|p1a: Steady|Heatran, F|386\/386
+|-damage|p1a: Steady|338\/386|[from] Stealth Rock
+|cant|p2a: Latios|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|248\/302 slp|[from] sandstorm
+|-heal|p1a: Steady|362\/386|[from] item: Leftovers
+|turn|19
+|
+|switch|p2a: Charizard|Charizard-Mega-X, F|266\/351
+|move|p1a: Steady|Stealth Rock|p2a: Charizard
+|-sidestart|p2: obliviatee|move: Stealth Rock
+|
+|-weather|none
+|-heal|p1a: Steady|386\/386|[from] item: Leftovers
+|turn|20
+|
+|move|p2a: Charizard|Roost|p2a: Charizard
+|-heal|p2a: Charizard|351\/351
+|move|p1a: Steady|Roar|p2a: Charizard
+|drag|p2a: Slowbro|Slowbro, F|393\/393 tox
+|-damage|p2a: Slowbro|344\/393 tox|[from] Stealth Rock
+|
+|-heal|p2a: Slowbro|368\/393 tox|[from] item: Leftovers
+|-damage|p2a: Slowbro|344\/393 tox|[from] psn
+|turn|21
+|
+|switch|p1a: Mogus|Amoonguss, F|432\/432
+|-damage|p1a: Mogus|378\/432|[from] Stealth Rock
+|move|p2a: Slowbro|Thunder Wave|p1a: Mogus
+|-status|p1a: Mogus|par
+|
+|-heal|p2a: Slowbro|368\/393 tox|[from] item: Leftovers
+|-heal|p1a: Mogus|405\/432 par|[from] item: Black Sludge
+|-damage|p2a: Slowbro|320\/393 tox|[from] psn
+|turn|22
+|
+|switch|p2a: Latios|Latios, M|248\/302 slp
+|-damage|p2a: Latios|211\/302 slp|[from] Stealth Rock
+|move|p1a: Mogus|Giga Drain|p2a: Latios
+|-resisted|p2a: Latios
+|-damage|p2a: Latios|175\/302 slp
+|-heal|p1a: Mogus|423\/432 par|[from] drain|[of] p2a: Latios
+|
+|-heal|p1a: Mogus|432\/432 par|[from] item: Black Sludge
+|turn|23
+|
+|switch|p1a: Steady|Heatran, F|386\/386
+|-damage|p1a: Steady|338\/386|[from] Stealth Rock
+|cant|p2a: Latios|slp
+|
+|-heal|p1a: Steady|362\/386|[from] item: Leftovers
+|turn|24
+|
+|-curestatus|p2a: Latios|slp
+|move|p2a: Latios|Roost|p2a: Latios
+|-heal|p2a: Latios|302\/302
+|move|p1a: Steady|Roar|p2a: Latios
+|drag|p2a: Slowbro|Slowbro, F|393\/393 tox
+|-damage|p2a: Slowbro|344\/393 tox|[from] Stealth Rock
+|
+|-heal|p1a: Steady|386\/386|[from] item: Leftovers
+|-heal|p2a: Slowbro|368\/393 tox|[from] item: Leftovers
+|-damage|p2a: Slowbro|344\/393 tox|[from] psn
+|turn|25
+|
+|switch|p1a: Mogus|Amoonguss, F|432\/432 par
+|-damage|p1a: Mogus|378\/432 par|[from] Stealth Rock
+|switch|p2a: Landorus|Landorus, M|319\/319
+|-damage|p2a: Landorus|280\/319|[from] Stealth Rock
+|
+|-heal|p1a: Mogus|405\/432 par|[from] item: Black Sludge
+|turn|26
+|
+|move|p2a: Landorus|Psychic|p1a: Mogus
+|-supereffective|p1a: Mogus
+|-damage|p1a: Mogus|36\/432 par
+|cant|p1a: Mogus|par
+|
+|-heal|p1a: Mogus|63\/432 par|[from] item: Black Sludge
+|turn|27
+|
+|switch|p1a: Watter|Slowbro, M|341\/394
+|-damage|p1a: Watter|292\/394|[from] Stealth Rock
+|move|p2a: Landorus|Earth Power|p1a: Watter
+|-crit|p1a: Watter
+|-damage|p1a: Watter|0 fnt
+|faint|p1a: Watter
+|
+|
+|switch|p1a: F is for Fairy|Togekiss, F|324\/370
+|-damage|p1a: F is for Fairy|232\/370|[from] Stealth Rock
+|turn|28
+|
+|move|p2a: Landorus|Sludge Wave|p1a: F is for Fairy
+|-supereffective|p1a: F is for Fairy
+|-damage|p1a: F is for Fairy|0 fnt
+|faint|p1a: F is for Fairy
+|
+|-message|FelixE forfeited.
+|
+|win|obliviatee
+|raw|Ladder updating...
+|leave|FelixE
+|player|p1
+|raw|FelixE's rating: 1514 &rarr; <strong>1494<\/strong><br \/>(-20 for losing)
+|raw|obliviatee's rating: 1522 &rarr; <strong>1542<\/strong><br \/>(+20 for winning)

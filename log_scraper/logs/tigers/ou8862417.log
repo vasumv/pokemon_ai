@@ -1,0 +1,658 @@
+|join|tigers
+|join|Rayze
+|player|p1|tigers|93
+|player|p2|Rayze|164
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Heatran, M
+|poke|p1|Latios, M
+|poke|p1|Landorus, M, shiny
+|poke|p1|Garchomp, F
+|poke|p1|Rotom-Wash
+|poke|p1|Magnezone
+|poke|p2|Politoed, F, shiny
+|poke|p2|Forretress, M
+|poke|p2|Celebi
+|poke|p2|Keldeo
+|poke|p2|Thundurus-Therian, M, shiny
+|poke|p2|Garchomp, M, shiny
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|chat|Rayze|Hey
+|chat|Rayze|Gl
+|
+|start
+|switch|p1a: BOSCH|Rotom-Wash| (100\/100)
+|switch|p2a: Politoed|Politoed, F, shiny| (100\/100)
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|turn|1
+|callback|decision
+|
+|move|p2a: Politoed|Protect|p2a: Politoed
+|-singleturn|p2a: Politoed|Protect
+|move|p1a: BOSCH|Hydro Pump|p2a: Politoed
+|-activate|p2a: Politoed|Protect
+|
+|-weather|RainDance|[upkeep]
+|turn|2
+|callback|decision
+|
+|move|p1a: BOSCH|Volt Switch|p2a: Politoed
+|-supereffective|p2a: Politoed
+|-damage|p2a: Politoed|44 (56\/100)
+|callback|decision
+|
+|switch|p1a: BlueMainstream|Latios, M| (100\/100)
+|move|p2a: Politoed|Toxic|p1a: BlueMainstream|[miss]
+|-miss|p2a: Politoed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|6 (63\/100)|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p2a: Celebi|Celebi| (100\/100)
+|move|p1a: BlueMainstream|Energy Ball|p2a: Celebi
+|-resisted|p2a: Celebi
+|-damage|p2a: Celebi|11 (89\/100)
+|-damage|p1a: BlueMainstream|10 (90\/100)|[from] item: Life Orb
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Celebi|6 (95\/100)|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: Fire-Wall|Heatran, M| (100\/100)
+|move|p2a: Celebi|Stealth Rock|p1a: Fire-Wall
+|-sidestart|p1: tigers|move: Stealth Rock
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Celebi|5 (100\/100)|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, F, shiny| (63\/100)
+|move|p1a: Fire-Wall|Substitute|p1a: Fire-Wall
+|-start|p1a: Fire-Wall|Substitute
+|-damage|p1a: Fire-Wall|25 (75\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Fire-Wall|6 (81\/100)|[from] item: Leftovers
+|-heal|p2a: Politoed|6 (69\/100)|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p1a: Fire-Wall|Earth Power|p2a: Politoed
+|-damage|p2a: Politoed|26 (43\/100)
+|move|p2a: Politoed|Perish Song|p2a: Politoed
+|-fieldactivate|move: Perish Song
+|
+|-start|p1a: Fire-Wall|perish3
+|-start|p2a: Politoed|perish3
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Fire-Wall|6 (87\/100)|[from] item: Leftovers
+|-heal|p2a: Politoed|6 (49\/100)|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p1a: BlueMainstream|Latios, M| (90\/100)
+|-damage|p1a: BlueMainstream|12 (78\/100)|[from] Stealth Rock
+|move|p2a: Politoed|Scald|p1a: BlueMainstream
+|-resisted|p1a: BlueMainstream
+|-damage|p1a: BlueMainstream|19 (58\/100)
+|-status|p1a: BlueMainstream|brn
+|
+|-start|p2a: Politoed|perish2
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|6 (56\/100)|[from] item: Leftovers
+|-damage|p1a: BlueMainstream|12 (46\/100 brn)|[from] brn
+|turn|8
+|callback|decision
+|
+|switch|p2a: Celebi|Celebi| (100\/100)
+|move|p1a: BlueMainstream|Draco Meteor|p2a: Celebi
+|-damage|p2a: Celebi|55 (45\/100)
+|-unboost|p1a: BlueMainstream|spa|2
+|-damage|p1a: BlueMainstream|10 (36\/100 brn)|[from] item: Life Orb
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Celebi|6 (51\/100)|[from] item: Leftovers
+|-damage|p1a: BlueMainstream|12 (24\/100 brn)|[from] brn
+|turn|9
+|callback|decision
+|
+|switch|p1a: Fire-Wall|Heatran, M| (87\/100)
+|-damage|p1a: Fire-Wall|12 (75\/100)|[from] Stealth Rock
+|move|p2a: Celebi|Recover|p2a: Celebi
+|-heal|p2a: Celebi|49 (100\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Fire-Wall|6 (81\/100)|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, F, shiny| (56\/100)
+|move|p1a: Fire-Wall|Substitute|p1a: Fire-Wall
+|-start|p1a: Fire-Wall|Substitute
+|-damage|p1a: Fire-Wall|25 (56\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Fire-Wall|6 (62\/100)|[from] item: Leftovers
+|-heal|p2a: Politoed|6 (62\/100)|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p1a: Fire-Wall|Earth Power|p2a: Politoed
+|-damage|p2a: Politoed|25 (37\/100)
+|move|p2a: Politoed|Scald|p1a: Fire-Wall
+|-supereffective|p1a: Fire-Wall
+|-end|p1a: Fire-Wall|Substitute
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Fire-Wall|6 (68\/100)|[from] item: Leftovers
+|-heal|p2a: Politoed|6 (43\/100)|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p1a: BlueMainstream|Latios, M| (24\/100 brn)
+|-damage|p1a: BlueMainstream|12 (12\/100 brn)|[from] Stealth Rock
+|move|p2a: Politoed|Scald|p1a: BlueMainstream
+|-resisted|p1a: BlueMainstream
+|-damage|p1a: BlueMainstream|12 (0\/100 fnt)
+|faint|p1a: BlueMainstream
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|6 (49\/100)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: BOSCH|Rotom-Wash| (100\/100)
+|-damage|p1a: BOSCH|13 (88\/100)|[from] Stealth Rock
+|turn|13
+|callback|decision
+|
+|move|p2a: Politoed|Protect|p2a: Politoed
+|-singleturn|p2a: Politoed|Protect
+|move|p1a: BOSCH|Volt Switch|p2a: Politoed
+|-activate|p2a: Politoed|Protect
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: BOSCH|6 (94\/100)|[from] item: Leftovers
+|-heal|p2a: Politoed|6 (55\/100)|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, M, shiny| (100\/100)
+|move|p1a: BOSCH|Hydro Pump|p2a: Garchomp
+|-damage|p2a: Garchomp|69 (31\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: BOSCH|6 (100\/100)|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p2a: Garchomp|Outrage|p1a: BOSCH
+|-damage|p1a: BOSCH|57 (43\/100)
+|move|p1a: BOSCH|Hydro Pump|p2a: Garchomp
+|-damage|p2a: Garchomp|31 (0\/100 fnt)
+|faint|p2a: Garchomp
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: BOSCH|6 (50\/100)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Celebi|Celebi| (100\/100)
+|turn|16
+|callback|decision
+|
+|switch|p1a: Fire-Wall|Heatran, M| (68\/100)
+|-damage|p1a: Fire-Wall|12 (55\/100)|[from] Stealth Rock
+|move|p2a: Celebi|Thunder Wave|p1a: Fire-Wall
+|-status|p1a: Fire-Wall|par
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Fire-Wall|6 (61\/100 par)|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|switch|p2a: Keldeo|Keldeo| (100\/100)
+|move|p1a: Fire-Wall|Earth Power|p2a: Keldeo
+|-damage|p2a: Keldeo|34 (66\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Fire-Wall|6 (68\/100 par)|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p2a: Keldeo|Surf|p1a: Fire-Wall
+|-supereffective|p1a: Fire-Wall
+|-damage|p1a: Fire-Wall|68 (0\/100 fnt)
+|faint|p1a: Fire-Wall
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: BOSCH|Rotom-Wash| (50\/100)
+|-damage|p1a: BOSCH|13 (37\/100)|[from] Stealth Rock
+|turn|19
+|callback|decision
+|
+|move|p2a: Keldeo|Surf|p1a: BOSCH
+|-resisted|p1a: BOSCH
+|-damage|p1a: BOSCH|37 (0\/100 fnt)
+|faint|p1a: BOSCH
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: enter sandman|Garchomp, F| (100\/100)
+|-damage|p1a: enter sandman|6 (94\/100)|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|switch|p2a: Forretress|Forretress, M| (100\/100)
+|move|p1a: enter sandman|Outrage|p2a: Forretress
+|-resisted|p2a: Forretress
+|-damage|p2a: Forretress|19 (81\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Forretress|6 (88\/100)|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p1a: enter sandman|Outrage|p2a: Forretress
+|-resisted|p2a: Forretress
+|-damage|p2a: Forretress|19 (68\/100)
+|move|p2a: Forretress|Volt Switch|p1a: enter sandman
+|-immune|p1a: enter sandman|[msg]
+|
+|-end|p1a: enter sandman|rampage
+|-start|p1a: enter sandman|confusion
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Forretress|6 (74\/100)|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|switch|p1a: SCHUBKARRE|Magnezone| (100\/100)
+|-damage|p1a: SCHUBKARRE|6 (94\/100)|[from] Stealth Rock
+|move|p2a: Forretress|Volt Switch|p1a: SCHUBKARRE
+|-resisted|p1a: SCHUBKARRE
+|-damage|p1a: SCHUBKARRE|5 (89\/100)
+|callback|decision
+|
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M, shiny| (100\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: SCHUBKARRE|6 (95\/100)|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|switch|p1a: Bulldozer|Landorus, M, shiny| (100\/100)
+|-damage|p1a: Bulldozer|12 (88\/100)|[from] Stealth Rock
+|move|p2a: Thundurus-Therian|Focus Blast|p1a: Bulldozer
+|-resisted|p1a: Bulldozer
+|-damage|p1a: Bulldozer|32 (55\/100)
+|-damage|p2a: Thundurus-Therian|10 (90\/100)|[from] item: Life Orb
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Bulldozer|6 (61\/100)|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p2a: Thundurus-Therian|Hidden Power|p1a: Bulldozer
+|-supereffective|p1a: Bulldozer
+|-damage|p1a: Bulldozer|61 (0\/100 fnt)
+|-damage|p2a: Thundurus-Therian|10 (80\/100)|[from] item: Life Orb
+|faint|p1a: Bulldozer
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: enter sandman|Garchomp, F| (94\/100)
+|-damage|p1a: enter sandman|6 (88\/100)|[from] Stealth Rock
+|turn|25
+|callback|decision
+|
+|move|p1a: enter sandman|Outrage|p2a: Thundurus-Therian
+|-damage|p2a: Thundurus-Therian|80 (0\/100 fnt)
+|faint|p2a: Thundurus-Therian
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Forretress|Forretress, M| (74\/100)
+|turn|26
+|callback|decision
+|
+|move|p1a: enter sandman|Outrage|p2a: Forretress
+|-resisted|p2a: Forretress
+|-damage|p2a: Forretress|22 (52\/100)
+|move|p2a: Forretress|Spikes|p1a: enter sandman
+|-sidestart|p1: tigers|Spikes
+|
+|-end|p1a: enter sandman|rampage
+|-start|p1a: enter sandman|confusion
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Forretress|6 (58\/100)|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|switch|p1a: SCHUBKARRE|Magnezone| (95\/100)
+|-damage|p1a: SCHUBKARRE|6 (89\/100)|[from] Stealth Rock
+|-damage|p1a: SCHUBKARRE|13 (77\/100)|[from] Spikes
+|move|p2a: Forretress|Volt Switch|p1a: SCHUBKARRE
+|-resisted|p1a: SCHUBKARRE
+|-damage|p1a: SCHUBKARRE|5 (72\/100)
+|callback|decision
+|
+|switch|p2a: Celebi|Celebi| (100\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: SCHUBKARRE|6 (78\/100)|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|move|p2a: Celebi|Thunder Wave|p1a: SCHUBKARRE
+|-status|p1a: SCHUBKARRE|par
+|cant|p1a: SCHUBKARRE|par
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: SCHUBKARRE|6 (84\/100 par)|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|move|p2a: Celebi|Giga Drain|p1a: SCHUBKARRE
+|-resisted|p1a: SCHUBKARRE
+|-damage|p1a: SCHUBKARRE|12 (72\/100 par)
+|move|p1a: SCHUBKARRE|Hidden Power|p2a: Celebi
+|-supereffective|p2a: Celebi
+|-damage|p2a: Celebi|12 (88\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Celebi|6 (94\/100)|[from] item: Leftovers
+|-heal|p1a: SCHUBKARRE|6 (78\/100 par)|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|move|p2a: Celebi|Giga Drain|p1a: SCHUBKARRE
+|-resisted|p1a: SCHUBKARRE
+|-damage|p1a: SCHUBKARRE|11 (67\/100 par)
+|-heal|p2a: Celebi|5 (99\/100)|[from] drain|[of] p1a: SCHUBKARRE
+|cant|p1a: SCHUBKARRE|par
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Celebi|1 (100\/100)|[from] item: Leftovers
+|-heal|p1a: SCHUBKARRE|6 (73\/100 par)|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|move|p2a: Celebi|Giga Drain|p1a: SCHUBKARRE
+|-resisted|p1a: SCHUBKARRE
+|-damage|p1a: SCHUBKARRE|11 (62\/100 par)
+|cant|p1a: SCHUBKARRE|par
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: SCHUBKARRE|6 (68\/100 par)|[from] item: Leftovers
+|turn|32
+|callback|decision
+|
+|move|p2a: Celebi|Giga Drain|p1a: SCHUBKARRE
+|-resisted|p1a: SCHUBKARRE
+|-damage|p1a: SCHUBKARRE|12 (56\/100 par)
+|cant|p1a: SCHUBKARRE|par
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: SCHUBKARRE|6 (62\/100 par)|[from] item: Leftovers
+|turn|33
+|callback|decision
+|
+|move|p2a: Celebi|Giga Drain|p1a: SCHUBKARRE
+|-resisted|p1a: SCHUBKARRE
+|-damage|p1a: SCHUBKARRE|11 (50\/100 par)
+|move|p1a: SCHUBKARRE|Thunderbolt|p2a: Celebi
+|-resisted|p2a: Celebi
+|-damage|p2a: Celebi|13 (87\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Celebi|6 (94\/100)|[from] item: Leftovers
+|-heal|p1a: SCHUBKARRE|6 (56\/100 par)|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|move|p2a: Celebi|Giga Drain|p1a: SCHUBKARRE
+|-resisted|p1a: SCHUBKARRE
+|-damage|p1a: SCHUBKARRE|12 (44\/100 par)
+|-heal|p2a: Celebi|5 (99\/100)|[from] drain|[of] p1a: SCHUBKARRE
+|cant|p1a: SCHUBKARRE|par
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Celebi|1 (100\/100)|[from] item: Leftovers
+|-heal|p1a: SCHUBKARRE|6 (50\/100 par)|[from] item: Leftovers
+|turn|35
+|callback|decision
+|
+|move|p2a: Celebi|Giga Drain|p1a: SCHUBKARRE
+|-resisted|p1a: SCHUBKARRE
+|-damage|p1a: SCHUBKARRE|12 (39\/100 par)
+|move|p1a: SCHUBKARRE|Thunderbolt|p2a: Celebi
+|-resisted|p2a: Celebi
+|-damage|p2a: Celebi|13 (87\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Celebi|6 (93\/100)|[from] item: Leftovers
+|-heal|p1a: SCHUBKARRE|6 (45\/100 par)|[from] item: Leftovers
+|turn|36
+|callback|decision
+|
+|move|p2a: Celebi|Giga Drain|p1a: SCHUBKARRE
+|-resisted|p1a: SCHUBKARRE
+|-damage|p1a: SCHUBKARRE|11 (34\/100 par)
+|-heal|p2a: Celebi|5 (98\/100)|[from] drain|[of] p1a: SCHUBKARRE
+|move|p1a: SCHUBKARRE|Thunderbolt|p2a: Celebi
+|-resisted|p2a: Celebi
+|-damage|p2a: Celebi|13 (85\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Celebi|6 (91\/100)|[from] item: Leftovers
+|-heal|p1a: SCHUBKARRE|6 (40\/100 par)|[from] item: Leftovers
+|turn|37
+|callback|decision
+|
+|move|p2a: Celebi|Giga Drain|p1a: SCHUBKARRE
+|-resisted|p1a: SCHUBKARRE
+|-damage|p1a: SCHUBKARRE|12 (28\/100 par)
+|-heal|p2a: Celebi|5 (96\/100)|[from] drain|[of] p1a: SCHUBKARRE
+|move|p1a: SCHUBKARRE|Thunderbolt|p2a: Celebi
+|-resisted|p2a: Celebi
+|-damage|p2a: Celebi|14 (82\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Celebi|6 (89\/100)|[from] item: Leftovers
+|-heal|p1a: SCHUBKARRE|6 (34\/100 par)|[from] item: Leftovers
+|turn|38
+|callback|decision
+|
+|move|p2a: Celebi|Giga Drain|p1a: SCHUBKARRE
+|-resisted|p1a: SCHUBKARRE
+|-damage|p1a: SCHUBKARRE|12 (22\/100 par)
+|-heal|p2a: Celebi|5 (94\/100)|[from] drain|[of] p1a: SCHUBKARRE
+|move|p1a: SCHUBKARRE|Thunderbolt|p2a: Celebi
+|-resisted|p2a: Celebi
+|-damage|p2a: Celebi|13 (81\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Celebi|6 (87\/100)|[from] item: Leftovers
+|-heal|p1a: SCHUBKARRE|6 (28\/100 par)|[from] item: Leftovers
+|turn|39
+|callback|decision
+|
+|move|p2a: Celebi|Giga Drain|p1a: SCHUBKARRE
+|-resisted|p1a: SCHUBKARRE
+|-damage|p1a: SCHUBKARRE|12 (15\/100 par)
+|-heal|p2a: Celebi|5 (93\/100)|[from] drain|[of] p1a: SCHUBKARRE
+|move|p1a: SCHUBKARRE|Thunderbolt|p2a: Celebi
+|-resisted|p2a: Celebi
+|-damage|p2a: Celebi|12 (81\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Celebi|6 (87\/100)|[from] item: Leftovers
+|-heal|p1a: SCHUBKARRE|6 (22\/100 par)|[from] item: Leftovers
+|turn|40
+|callback|decision
+|
+|move|p2a: Celebi|Giga Drain|p1a: SCHUBKARRE
+|-crit|p1a: SCHUBKARRE
+|-resisted|p1a: SCHUBKARRE
+|-damage|p1a: SCHUBKARRE|22 (0\/100 fnt)
+|-heal|p2a: Celebi|9 (96\/100)|[from] drain|[of] p1a: SCHUBKARRE
+|faint|p1a: SCHUBKARRE
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Celebi|4 (100\/100)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: enter sandman|Garchomp, F| (88\/100)
+|-damage|p1a: enter sandman|6 (82\/100)|[from] Stealth Rock
+|-damage|p1a: enter sandman|12 (69\/100)|[from] Spikes
+|turn|41
+|callback|decision
+|
+|move|p1a: enter sandman|Outrage|p2a: Celebi
+|-damage|p2a: Celebi|54 (46\/100)
+|move|p2a: Celebi|Giga Drain|p1a: enter sandman
+|-damage|p1a: enter sandman|30 (40\/100)
+|-heal|p2a: Celebi|13 (59\/100)|[from] drain|[of] p1a: enter sandman
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Celebi|6 (66\/100)|[from] item: Leftovers
+|turn|42
+|callback|decision
+|
+|move|p1a: enter sandman|Outrage|p2a: Celebi
+|-damage|p2a: Celebi|53 (13\/100)
+|move|p2a: Celebi|Recover|p2a: Celebi
+|-heal|p2a: Celebi|50 (63\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Celebi|6 (69\/100)|[from] item: Leftovers
+|turn|43
+|callback|decision
+|
+|move|p1a: enter sandman|Outrage|p2a: Celebi
+|-damage|p2a: Celebi|57 (12\/100)
+|move|p2a: Celebi|Recover|p2a: Celebi
+|-heal|p2a: Celebi|50 (62\/100)
+|
+|-end|p1a: enter sandman|rampage
+|-start|p1a: enter sandman|confusion
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Celebi|6 (68\/100)|[from] item: Leftovers
+|turn|44
+|callback|decision
+|
+|-activate|p1a: enter sandman|confusion
+|move|p1a: enter sandman|Outrage|p2a: Celebi
+|-damage|p2a: Celebi|56 (12\/100)
+|move|p2a: Celebi|Giga Drain|p1a: enter sandman
+|-damage|p1a: enter sandman|30 (10\/100)
+|-heal|p2a: Celebi|13 (25\/100)|[from] drain|[of] p1a: enter sandman
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Celebi|6 (31\/100)|[from] item: Leftovers
+|turn|45
+|callback|decision
+|
+|switch|p2a: Forretress|Forretress, M| (58\/100)
+|-activate|p1a: enter sandman|confusion
+|move|p1a: enter sandman|Outrage|p2a: Forretress
+|-resisted|p2a: Forretress
+|-damage|p2a: Forretress|21 (37\/100)
+|
+|-end|p1a: enter sandman|rampage
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Forretress|6 (43\/100)|[from] item: Leftovers
+|turn|46
+|callback|decision
+|
+|-activate|p1a: enter sandman|confusion
+|move|p1a: enter sandman|Outrage|p2a: Forretress
+|-resisted|p2a: Forretress
+|-damage|p2a: Forretress|20 (23\/100)
+|move|p2a: Forretress|Rapid Spin|p1a: enter sandman
+|-damage|p1a: enter sandman|5 (5\/100)
+|-damage|p2a: Forretress|12 (11\/100)|[from] ability: Rough Skin|[of] p1a: enter sandman
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Forretress|6 (17\/100)|[from] item: Leftovers
+|turn|47
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, F, shiny| (55\/100)
+|-activate|p1a: enter sandman|confusion
+|move|p1a: enter sandman|Outrage|p2a: Politoed
+|-damage|p2a: Politoed|46 (9\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|6 (15\/100)|[from] item: Leftovers
+|turn|48
+|callback|decision
+|
+|move|p2a: Politoed|Protect|p2a: Politoed
+|-singleturn|p2a: Politoed|Protect
+|-end|p1a: enter sandman|confusion
+|move|p1a: enter sandman|Outrage|p2a: Politoed
+|-activate|p2a: Politoed|Protect
+|
+|-end|p1a: enter sandman|rampage
+|-start|p1a: enter sandman|confusion
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|6 (22\/100)|[from] item: Leftovers
+|turn|49
+|callback|decision
+|
+|switch|p2a: Forretress|Forretress, M| (17\/100)
+|-activate|p1a: enter sandman|confusion
+|move|p1a: enter sandman|Outrage|p2a: Forretress
+|-resisted|p2a: Forretress
+|-damage|p2a: Forretress|17 (0\/100 fnt)
+|faint|p2a: Forretress
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, F, shiny| (22\/100)
+|turn|50
+|callback|decision
+|
+|move|p2a: Politoed|Protect|p2a: Politoed
+|-singleturn|p2a: Politoed|Protect
+|-end|p1a: enter sandman|confusion
+|move|p1a: enter sandman|Outrage|p2a: Politoed
+|-activate|p2a: Politoed|Protect
+|
+|-end|p1a: enter sandman|rampage
+|-start|p1a: enter sandman|confusion
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|6 (28\/100)|[from] item: Leftovers
+|turn|51
+|callback|decision
+|
+|move|p2a: Politoed|Protect|p2a: Politoed
+|-singleturn|p2a: Politoed|Protect
+|-activate|p1a: enter sandman|confusion
+|-damage|p1a: enter sandman|5 (0\/100 fnt)
+|faint|p1a: enter sandman
+|
+|win|Rayze
+|chatmsg-raw|Ladder updating...
+|raw|tigers's rating: 1713 &rarr; <strong>1707<\/strong><br \/>(-6 for losing)
+|raw|Rayze's rating: 1409 &rarr; <strong>1446<\/strong><br \/>(+37 for winning)
+|chat|Rayze|Gg
+|player|p1

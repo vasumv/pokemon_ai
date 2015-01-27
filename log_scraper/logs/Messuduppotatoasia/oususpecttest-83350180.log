@@ -1,0 +1,234 @@
+|join|Messuduppotatoasia
+|join|FooPossum
+|player|p1|Messuduppotatoasia|101
+|player|p2|FooPossum|224
+|gametype|singles
+|gen|6
+|tier|OU (suspect test)
+|rated
+|clearpoke
+|poke|p1|Landorus-Therian, M
+|poke|p1|Pinsir, F
+|poke|p1|Manaphy
+|poke|p1|Rotom-Wash
+|poke|p1|Garchomp, M
+|poke|p1|Alakazam, F
+|poke|p2|Pinsir, F
+|poke|p2|Excadrill, F
+|poke|p2|Talonflame, F
+|poke|p2|Kyurem-Black
+|poke|p2|Azumarill, F
+|poke|p2|Raikou, shiny
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Pinsir|Pinsir, F|271\/271
+|switch|p2a: Excadrill|Excadrill, F|362\/362
+|-ability|p2a: Excadrill|Mold Breaker
+|-item|p2a: Excadrill|Air Balloon
+|-ability|p1a: Pinsir|Mold Breaker
+|turn|1
+|callback|decision
+|
+|-formechange|p1a: Pinsir|Pinsir-Mega
+|message|Pinsir has Mega Evolved into Mega Pinsir!
+|move|p2a: Excadrill|Stealth Rock|p1a: Pinsir
+|-sidestart|p1: Messuduppotatoasia|move: Stealth Rock
+|move|p1a: Pinsir|Return|p2a: Excadrill
+|-resisted|p2a: Excadrill
+|-damage|p2a: Excadrill|176\/362
+|-enditem|p2a: Excadrill|Air Balloon
+|
+|turn|2
+|callback|decision
+|join|strange genesect
+|
+|move|p1a: Pinsir|Return|p2a: Excadrill
+|-resisted|p2a: Excadrill
+|-damage|p2a: Excadrill|0 fnt
+|faint|p2a: Excadrill
+|
+|callback|decision
+|join|Snoop Doggg
+|
+|switch|p2a: Vulcan|Talonflame, F|297\/297
+|turn|3
+|callback|decision
+|
+|move|p2a: Vulcan|Brave Bird|p1a: Pinsir
+|-supereffective|p1a: Pinsir
+|-damage|p1a: Pinsir|0 fnt
+|-damage|p2a: Vulcan|208\/297|[from] recoil|[of] p1a: Pinsir
+|faint|p1a: Pinsir
+|
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|381\/381
+|-damage|p1a: Landorus-Therian|334\/381|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Vulcan
+|-unboost|p2a: Vulcan|atk|1
+|turn|4
+|callback|decision
+|
+|switch|p2a: Big Black|Kyurem-Black|405\/405
+|-ability|p2a: Big Black|Teravolt
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Big Black
+|-sidestart|p2: FooPossum|move: Stealth Rock
+|
+|-heal|p1a: Landorus-Therian|357\/381|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|299\/299
+|-damage|p1a: Rotom-Wash|262\/299|[from] Stealth Rock
+|move|p2a: Big Black|Substitute|p2a: Big Black
+|-start|p2a: Big Black|Substitute
+|-damage|p2a: Big Black|304\/405
+|
+|-heal|p2a: Big Black|329\/405|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Big Black|Earth Power|p1a: Rotom-Wash
+|-supereffective|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|58\/299
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Big Black
+|-resisted|p2a: Big Black
+|-activate|p2a: Big Black|Substitute|[damage]
+|callback|decision
+|
+|switch|p1a: Manaphy|Manaphy|341\/341
+|-damage|p1a: Manaphy|299\/341|[from] Stealth Rock
+|
+|-heal|p1a: Manaphy|320\/341|[from] item: Leftovers
+|-heal|p2a: Big Black|354\/405|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p1a: Manaphy|Ice Beam|p2a: Big Black
+|-end|p2a: Big Black|Substitute
+|move|p2a: Big Black|Fusion Bolt|p1a: Manaphy
+|-crit|p1a: Manaphy
+|-supereffective|p1a: Manaphy
+|-damage|p1a: Manaphy|0 fnt
+|faint|p1a: Manaphy
+|
+|-heal|p2a: Big Black|379\/405|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, M|357\/357
+|-damage|p1a: Garchomp|335\/357|[from] Stealth Rock
+|turn|8
+|callback|decision
+|
+|move|p1a: Garchomp|Earthquake|p2a: Big Black
+|-damage|p2a: Big Black|187\/405
+|move|p2a: Big Black|Ice Beam|p1a: Garchomp
+|-supereffective|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|faint|p1a: Garchomp
+|
+|-heal|p2a: Big Black|212\/405|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Alakazam|Alakazam, F|251\/251
+|turn|9
+|callback|decision
+|
+|move|p1a: Alakazam|Focus Blast|p2a: Big Black
+|-supereffective|p2a: Big Black
+|-damage|p2a: Big Black|0 fnt
+|faint|p2a: Big Black
+|
+|callback|decision
+|
+|switch|p2a: Azumarill|Azumarill, F|357\/357
+|-damage|p2a: Azumarill|313\/357|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|move|p1a: Alakazam|Psychic|p2a: Azumarill
+|-damage|p2a: Azumarill|109\/357
+|-unboost|p2a: Azumarill|spd|1
+|-enditem|p2a: Azumarill|Sitrus Berry|[eat]
+|-heal|p2a: Azumarill|198\/357|[from] item: Sitrus Berry
+|move|p2a: Azumarill|Waterfall|p1a: Alakazam
+|-enditem|p1a: Alakazam|Focus Sash
+|-damage|p1a: Alakazam|1\/251
+|
+|turn|11
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|58\/299
+|-damage|p1a: Rotom-Wash|21\/299|[from] Stealth Rock
+|move|p2a: Azumarill|Aqua Jet|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|357\/381
+|-damage|p1a: Landorus-Therian|310\/381|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Azumarill
+|-unboost|p2a: Azumarill|atk|1
+|turn|12
+|callback|decision
+|
+|move|p1a: Landorus-Therian|Earthquake|p2a: Azumarill
+|-crit|p2a: Azumarill
+|-damage|p2a: Azumarill|0 fnt
+|faint|p2a: Azumarill
+|
+|-heal|p1a: Landorus-Therian|333\/381|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Raijin|Raikou, shiny|321\/321
+|-damage|p2a: Raijin|281\/321|[from] Stealth Rock
+|-ability|p2a: Raijin|Pressure
+|turn|13
+|callback|decision
+|
+|move|p2a: Raijin|Hidden Power|p1a: Landorus-Therian
+|-supereffective|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|1\/381
+|move|p1a: Landorus-Therian|Earthquake|p2a: Raijin
+|-supereffective|p2a: Raijin
+|-damage|p2a: Raijin|0 fnt
+|faint|p2a: Raijin
+|
+|-heal|p1a: Landorus-Therian|24\/381|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Vulcan|Talonflame, F|208\/297
+|-damage|p2a: Vulcan|60\/297|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|move|p2a: Vulcan|Brave Bird|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|-damage|p2a: Vulcan|52\/297|[from] recoil|[of] p1a: Landorus-Therian
+|faint|p1a: Landorus-Therian
+|
+|callback|decision
+|
+|switch|p1a: Alakazam|Alakazam, F|1\/251
+|turn|15
+|callback|decision
+|-message|Messuduppotatoasia forfeited.
+|
+|win|FooPossum
+|raw|Ladder updating...
+|leave|Messuduppotatoasia
+|player|p1
+|raw|Messuduppotatoasia's rating: 1269 &rarr; <strong>1245<\/strong><br \/>(-24 for losing)
+|raw|FooPossum's rating: 1289 &rarr; <strong>1313<\/strong><br \/>(+24 for winning)
+|leave|strange genesect

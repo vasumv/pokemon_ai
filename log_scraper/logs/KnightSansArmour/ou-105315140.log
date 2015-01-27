@@ -1,0 +1,416 @@
+|join|Billy Bob Johns
+|join|KnightSansArmour
+|player|p1|Billy Bob Johns|282
+|player|p2|KnightSansArmour|265
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Manaphy, shiny
+|poke|p1|Breloom, M, shiny
+|poke|p1|Latios, M, shiny
+|poke|p1|Pinsir, M
+|poke|p1|Deoxys-Speed
+|poke|p1|Heatran, M
+|poke|p2|Gliscor, F
+|poke|p2|Chansey, F
+|poke|p2|Noivern, F
+|poke|p2|Blastoise, M
+|poke|p2|Heatran, M
+|poke|p2|Zapdos
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Anub'arak|Pinsir, M|291\/291
+|switch|p2a: Blastoise|Blastoise, M|362\/362
+|turn|1
+|
+|-formechange|p1a: Anub'arak|Pinsir-Mega
+|message|Pinsir has Mega Evolved into Mega Pinsir!
+|-formechange|p2a: Blastoise|Blastoise-Mega
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p1a: Anub'arak|Swords Dance|p1a: Anub'arak
+|-boost|p1a: Anub'arak|atk|2
+|move|p2a: Blastoise|Water Pulse|p1a: Anub'arak
+|-damage|p1a: Anub'arak|84\/291
+|-start|p1a: Anub'arak|confusion
+|
+|turn|2
+|
+|-activate|p1a: Anub'arak|confusion
+|-damage|p1a: Anub'arak|0 fnt|[from] confusion
+|faint|p1a: Anub'arak
+|move|p2a: Blastoise|Water Pulse|p1: Anub'arak|[notarget]
+|-notarget
+|
+|chat|Billy Bob Johns|noooo
+|
+|switch|p1a: Puck|Manaphy, shiny|341\/341
+|turn|3
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|move|p1a: Puck|Tail Glow|p1a: Puck
+|-boost|p1a: Puck|spa|3
+|
+|turn|4
+|
+|move|p1a: Puck|Tail Glow|p1a: Puck
+|-boost|p1a: Puck|spa|3
+|move|p2a: Chansey|Toxic|p1a: Puck
+|-status|p1a: Puck|tox
+|
+|-damage|p1a: Puck|320\/341 tox|[from] psn
+|turn|5
+|
+|move|p1a: Puck|Surf|p2a: Chansey
+|-damage|p2a: Chansey|388\/704
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|704\/704
+|
+|-heal|p1a: Puck|341\/341 tox|[from] item: Leftovers
+|-damage|p1a: Puck|299\/341 tox|[from] psn
+|turn|6
+|
+|switch|p1a: Xin|Heatran, M|381\/381
+|move|p2a: Chansey|Seismic Toss|p1a: Xin
+|-damage|p1a: Xin|281\/381
+|
+|-heal|p1a: Xin|304\/381|[from] item: Leftovers
+|turn|7
+|
+|switch|p2a: Blastoise|Blastoise, M|362\/362
+|-formechange|p2a: Blastoise|Blastoise-Mega
+|move|p1a: Xin|Stealth Rock|p2a: Blastoise
+|-sidestart|p2: KnightSansArmour|move: Stealth Rock
+|
+|-heal|p1a: Xin|327\/381|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: Xin|Protect|p1a: Xin
+|-singleturn|p1a: Xin|Protect
+|move|p2a: Blastoise|Rapid Spin|p1a: Xin
+|-activate|p1a: Xin|Protect
+|
+|-heal|p1a: Xin|350\/381|[from] item: Leftovers
+|turn|9
+|
+|switch|p1a: Visage|Latios, M, shiny|301\/301
+|move|p2a: Blastoise|Rapid Spin|p1a: Visage
+|-damage|p1a: Visage|282\/301
+|-sideend|p2: KnightSansArmour|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Blastoise
+|
+|turn|10
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|move|p1a: Visage|Psyshock|p2a: Chansey
+|-damage|p2a: Chansey|473\/704
+|-damage|p1a: Visage|252\/301|[from] item: Life Orb
+|
+|turn|11
+|
+|switch|p1a: Jah'rakal|Breloom, M, shiny|261\/261
+|move|p2a: Chansey|Toxic|p1a: Jah'rakal
+|-status|p1a: Jah'rakal|tox
+|
+|-damage|p1a: Jah'rakal|245\/261 tox|[from] psn
+|turn|12
+|
+|switch|p2a: Zapdos|Zapdos|384\/384
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Jah'rakal|Rock Tomb|p2a: Zapdos
+|-supereffective|p2a: Zapdos
+|-damage|p2a: Zapdos|154\/384
+|-unboost|p2a: Zapdos|spe|1
+|
+|-heal|p2a: Zapdos|178\/384|[from] item: Leftovers
+|-damage|p1a: Jah'rakal|213\/261 tox|[from] psn
+|turn|13
+|
+|switch|p2a: Gliscor|Gliscor, F|354\/354
+|move|p1a: Jah'rakal|Spore|p2a: Gliscor
+|-status|p2a: Gliscor|slp
+|
+|-damage|p1a: Jah'rakal|165\/261 tox|[from] psn
+|turn|14
+|
+|switch|p1a: Dazzle|Deoxys-Speed|241\/241
+|-ability|p1a: Dazzle|Pressure
+|cant|p2a: Gliscor|slp
+|
+|turn|15
+|
+|switch|p2a: Zapdos|Zapdos|178\/384
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Dazzle|Knock Off|p2a: Zapdos
+|-damage|p2a: Zapdos|65\/384
+|-enditem|p2a: Zapdos|Leftovers|[from] move: Knock Off|[of] p1a: Dazzle
+|-damage|p1a: Dazzle|217\/241|[from] item: Life Orb
+|
+|turn|16
+|
+|move|p1a: Dazzle|Ice Beam|p2a: Zapdos
+|-supereffective|p2a: Zapdos
+|-damage|p2a: Zapdos|0 fnt
+|-damage|p1a: Dazzle|193\/241|[from] item: Life Orb
+|faint|p2a: Zapdos
+|
+|
+|switch|p2a: Blastoise|Blastoise, M|362\/362
+|-formechange|p2a: Blastoise|Blastoise-Mega
+|turn|17
+|
+|switch|p1a: Xin|Heatran, M|350\/381
+|move|p2a: Blastoise|Dark Pulse|p1a: Xin
+|-damage|p1a: Xin|205\/381
+|
+|-heal|p1a: Xin|228\/381|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Xin|Protect|p1a: Xin
+|-singleturn|p1a: Xin|Protect
+|move|p2a: Blastoise|Water Pulse|p1a: Xin
+|-activate|p1a: Xin|Protect
+|
+|-heal|p1a: Xin|251\/381|[from] item: Leftovers
+|turn|19
+|
+|switch|p1a: Visage|Latios, M, shiny|252\/301
+|move|p2a: Blastoise|Dark Pulse|p1a: Visage
+|-supereffective|p1a: Visage
+|-damage|p1a: Visage|0 fnt
+|faint|p1a: Visage
+|
+|
+|switch|p1a: Jah'rakal|Breloom, M, shiny|165\/261 tox
+|turn|20
+|
+|switch|p2a: Gliscor|Gliscor, F|354\/354 slp
+|move|p1a: Jah'rakal|Bullet Seed|p2a: Gliscor
+|-damage|p2a: Gliscor|314\/354 slp
+|-damage|p2a: Gliscor|269\/354 slp
+|-damage|p2a: Gliscor|229\/354 slp
+|-damage|p2a: Gliscor|187\/354 slp
+|-hitcount|p2a: Gliscor|4
+|
+|-damage|p1a: Jah'rakal|149\/261 tox|[from] psn
+|turn|21
+|
+|switch|p1a: Dazzle|Deoxys-Speed|193\/241
+|-ability|p1a: Dazzle|Pressure
+|switch|p2a: Noivern|Noivern, F|311\/311
+|
+|turn|22
+|
+|move|p1a: Dazzle|Ice Beam|p2a: Noivern
+|-supereffective|p2a: Noivern
+|-damage|p2a: Noivern|0 fnt
+|-damage|p1a: Dazzle|169\/241|[from] item: Life Orb
+|faint|p2a: Noivern
+|
+|
+|switch|p2a: Blastoise|Blastoise, M|362\/362
+|-formechange|p2a: Blastoise|Blastoise-Mega
+|turn|23
+|
+|move|p1a: Dazzle|Psycho Boost|p2a: Blastoise
+|-crit|p2a: Blastoise
+|-damage|p2a: Blastoise|7\/362
+|-unboost|p1a: Dazzle|spa|2
+|-damage|p1a: Dazzle|145\/241|[from] item: Life Orb
+|move|p2a: Blastoise|Dark Pulse|p1a: Dazzle
+|-supereffective|p1a: Dazzle
+|-damage|p1a: Dazzle|0 fnt
+|faint|p1a: Dazzle
+|
+|
+|switch|p1a: Puck|Manaphy, shiny|299\/341 tox
+|turn|24
+|
+|move|p1a: Puck|Surf|p2a: Blastoise
+|-resisted|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|-heal|p1a: Puck|320\/341 tox|[from] item: Leftovers
+|-damage|p1a: Puck|299\/341 tox|[from] psn
+|
+|switch|p2a: Chansey|Chansey, F|473\/704
+|turn|25
+|
+|switch|p1a: Xin|Heatran, M|251\/381
+|move|p2a: Chansey|Aromatherapy|p2a: Chansey
+|-cureteam|p2a: Chansey|[from] move: Aromatherapy
+|
+|-heal|p1a: Xin|274\/381|[from] item: Leftovers
+|turn|26
+|
+|move|p1a: Xin|Stealth Rock|p2a: Chansey
+|-sidestart|p2: KnightSansArmour|move: Stealth Rock
+|move|p2a: Chansey|Seismic Toss|p1a: Xin
+|-damage|p1a: Xin|174\/381
+|
+|-heal|p1a: Xin|197\/381|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: Xin|Lava Plume|p2a: Chansey
+|-damage|p2a: Chansey|392\/704
+|-status|p2a: Chansey|brn
+|move|p2a: Chansey|Seismic Toss|p1a: Xin
+|-damage|p1a: Xin|97\/381
+|
+|-heal|p1a: Xin|120\/381|[from] item: Leftovers
+|-damage|p2a: Chansey|304\/704 brn|[from] brn
+|turn|28
+|
+|switch|p1a: Jah'rakal|Breloom, M, shiny|149\/261 tox
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|656\/704 brn
+|
+|-damage|p1a: Jah'rakal|133\/261 tox|[from] psn
+|-damage|p2a: Chansey|568\/704 brn|[from] brn
+|turn|29
+|
+|switch|p2a: Heatran|Heatran, M|386\/386
+|-damage|p2a: Heatran|338\/386|[from] Stealth Rock
+|move|p1a: Jah'rakal|Mach Punch|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|146\/386
+|
+|-heal|p2a: Heatran|170\/386|[from] item: Leftovers
+|-damage|p1a: Jah'rakal|101\/261 tox|[from] psn
+|turn|30
+|
+|move|p1a: Jah'rakal|Spore|p2a: Heatran
+|-status|p2a: Heatran|slp
+|cant|p2a: Heatran|slp
+|
+|-heal|p2a: Heatran|194\/386 slp|[from] item: Leftovers
+|-damage|p1a: Jah'rakal|53\/261 tox|[from] psn
+|turn|31
+|
+|switch|p1a: Puck|Manaphy, shiny|299\/341 tox
+|cant|p2a: Heatran|slp
+|
+|-heal|p1a: Puck|320\/341 tox|[from] item: Leftovers
+|-heal|p2a: Heatran|218\/386 slp|[from] item: Leftovers
+|-damage|p1a: Puck|299\/341 tox|[from] psn
+|turn|32
+|
+|move|p1a: Puck|Tail Glow|p1a: Puck
+|-boost|p1a: Puck|spa|3
+|-curestatus|p2a: Heatran|slp
+|move|p2a: Heatran|Stealth Rock|p1a: Puck
+|-sidestart|p1: Billy Bob Johns|move: Stealth Rock
+|
+|-heal|p1a: Puck|320\/341 tox|[from] item: Leftovers
+|-heal|p2a: Heatran|242\/386|[from] item: Leftovers
+|-damage|p1a: Puck|278\/341 tox|[from] psn
+|turn|33
+|
+|move|p1a: Puck|Surf|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|faint|p2a: Heatran
+|
+|-heal|p1a: Puck|299\/341 tox|[from] item: Leftovers
+|-damage|p1a: Puck|236\/341 tox|[from] psn
+|
+|switch|p2a: Chansey|Chansey, F|568\/704
+|-damage|p2a: Chansey|480\/704|[from] Stealth Rock
+|turn|34
+|
+|switch|p1a: Xin|Heatran, M|120\/381
+|-damage|p1a: Xin|73\/381|[from] Stealth Rock
+|move|p2a: Chansey|Seismic Toss|p1a: Xin
+|-damage|p1a: Xin|0 fnt
+|faint|p1a: Xin
+|
+|
+|switch|p1a: Jah'rakal|Breloom, M, shiny|53\/261 tox
+|-damage|p1a: Jah'rakal|37\/261 tox|[from] Stealth Rock
+|turn|35
+|
+|switch|p2a: Gliscor|Gliscor, F|187\/354
+|-damage|p2a: Gliscor|143\/354|[from] Stealth Rock
+|move|p1a: Jah'rakal|Spore|p2a: Gliscor
+|-status|p2a: Gliscor|slp
+|
+|-damage|p1a: Jah'rakal|21\/261 tox|[from] psn
+|turn|36
+|
+|move|p1a: Jah'rakal|Mach Punch|p2a: Gliscor
+|-resisted|p2a: Gliscor
+|-damage|p2a: Gliscor|110\/354 slp
+|cant|p2a: Gliscor|slp
+|
+|-damage|p1a: Jah'rakal|0 fnt|[from] psn
+|faint|p1a: Jah'rakal
+|
+|switch|p1a: Puck|Manaphy, shiny|236\/341 tox
+|-damage|p1a: Puck|194\/341 tox|[from] Stealth Rock
+|turn|37
+|
+|-curestatus|p2a: Gliscor|slp
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Puck|Tail Glow|p1a: Puck
+|-boost|p1a: Puck|spa|3
+|
+|-heal|p1a: Puck|215\/341 tox|[from] item: Leftovers
+|-damage|p1a: Puck|194\/341 tox|[from] psn
+|-status|p2a: Gliscor|tox|[from] item: Toxic Orb
+|turn|38
+|
+|move|p1a: Puck|Surf|p2a: Gliscor
+|-supereffective|p2a: Gliscor
+|-damage|p2a: Gliscor|0 fnt
+|faint|p2a: Gliscor
+|
+|-heal|p1a: Puck|215\/341 tox|[from] item: Leftovers
+|-damage|p1a: Puck|173\/341 tox|[from] psn
+|
+|switch|p2a: Chansey|Chansey, F|480\/704
+|-damage|p2a: Chansey|392\/704|[from] Stealth Rock
+|turn|39
+|
+|move|p1a: Puck|Ice Beam|p2a: Chansey
+|-damage|p2a: Chansey|252\/704
+|-status|p2a: Chansey|frz
+|cant|p2a: Chansey|frz
+|
+|-heal|p1a: Puck|194\/341 tox|[from] item: Leftovers
+|-damage|p1a: Puck|131\/341 tox|[from] psn
+|turn|40
+|
+|move|p1a: Puck|Surf|p2a: Chansey
+|-damage|p2a: Chansey|38\/704 frz
+|cant|p2a: Chansey|frz
+|
+|-heal|p1a: Puck|152\/341 tox|[from] item: Leftovers
+|-damage|p1a: Puck|68\/341 tox|[from] psn
+|turn|41
+|chat|KnightSansArmour|WOW
+|chat|Billy Bob Johns|woa
+|join|Sharu
+|
+|move|p1a: Puck|Surf|p2a: Chansey
+|-damage|p2a: Chansey|0 fnt
+|faint|p2a: Chansey
+|
+|win|Billy Bob Johns
+|raw|Ladder updating...
+|raw|Billy Bob Johns's rating: 1670 &rarr; <strong>1688<\/strong><br \/>(+18 for winning)
+|raw|KnightSansArmour's rating: 1631 &rarr; <strong>1613<\/strong><br \/>(-18 for losing)
+|leave|KnightSansArmour
+|player|p2
+|chat|Billy Bob Johns|mm
+|chat|Billy Bob Johns|hello
+|chat|Billy Bob Johns|quick LC match?

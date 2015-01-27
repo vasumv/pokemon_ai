@@ -1,0 +1,252 @@
+|join|Itsuki
+|join|sandaman
+|player|p1|Itsuki|1
+|player|p2|sandaman|264
+|gametype|singles
+|tier|Pokebank OU (beta)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Smeargle, M
+|poke|p1|Latios, M
+|poke|p1|Gengar, M
+|poke|p1|Landorus, M
+|poke|p1|Aegislash, F
+|poke|p1|Genesect
+|poke|p2|Scizor, M
+|poke|p2|Gliscor, M
+|poke|p2|Garchomp, M
+|poke|p2|Hawlucha, M
+|poke|p2|Chandelure, M
+|poke|p2|Greninja, M, shiny
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Genesect|Genesect|283\/283
+|switch|p2a: Gliscor|Gliscor, M|354\/354
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|turn|1
+|callback|decision
+|
+|move|p1a: Genesect|U-turn|p2a: Gliscor
+|-resisted|p2a: Gliscor
+|-damage|p2a: Gliscor|320\/354
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, M|262\/262
+|move|p2a: Gliscor|Earthquake|p1a: Gengar
+|-immune|p1a: Gengar|[msg]
+|
+|-activate|p2a: Gliscor|item: Toxic Orb
+|-status|p2a: Gliscor|tox
+|turn|2
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|344\/344
+|move|p1a: Gengar|Substitute|p1a: Gengar
+|-start|p1a: Gengar|Substitute
+|-damage|p1a: Gengar|197\/262
+|
+|turn|3
+|callback|decision
+|
+|-formechange|p1a: Gengar|Gengar-Mega
+|message|Gengar mega-evolved into Gengar-Mega!
+|move|p2a: Scizor|Bullet Punch|p1a: Gengar
+|-end|p1a: Gengar|Substitute
+|move|p1a: Gengar|Focus Blast|p2a: Scizor
+|-damage|p2a: Scizor|148\/344
+|
+|turn|4
+|callback|decision
+|
+|move|p2a: Scizor|Pursuit|p1a: Gengar|[from]Pursuit
+|-supereffective|p1a: Gengar
+|-damage|p1a: Gengar|0 fnt
+|faint|p1a: Gengar
+|
+|callback|decision
+|
+|switch|p1a: Smeargle|Smeargle, M|314\/314
+|turn|5
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Smeargle
+|-enditem|p1a: Smeargle|Focus Sash
+|-damage|p1a: Smeargle|1\/314
+|move|p1a: Smeargle|Spore|p2a: Scizor
+|-status|p2a: Scizor|slp
+|
+|turn|6
+|callback|decision
+|
+|move|p1a: Smeargle|Stealth Rock|p2a: Scizor
+|-sidestart|p2: sandaman|move: Stealth Rock
+|cant|p2a: Scizor|slp
+|
+|turn|7
+|callback|decision
+|
+|-curestatus|p2a: Scizor|slp
+|move|p2a: Scizor|Bullet Punch|p1a: Smeargle
+|-damage|p1a: Smeargle|0 fnt
+|faint|p1a: Smeargle
+|
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|283\/283
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|turn|8
+|callback|decision
+|
+|switch|p2a: Chandelure|Chandelure, M|262\/262
+|-damage|p2a: Chandelure|197\/262|[from] Stealth Rock
+|move|p1a: Genesect|Thunderbolt|p2a: Chandelure
+|-damage|p2a: Chandelure|33\/262
+|-status|p2a: Chandelure|par
+|
+|turn|9
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, M|358\/358
+|-damage|p2a: Garchomp|336\/358|[from] Stealth Rock
+|move|p1a: Genesect|Thunderbolt|p2a: Garchomp
+|-immune|p2a: Garchomp|[msg]
+|
+|turn|10
+|callback|decision
+|
+|switch|p1a: Landorus|Landorus, M|320\/320
+|-formechange|p2a: Garchomp|Garchomp-Mega
+|message|Garchomp mega-evolved into Garchomp-Mega!
+|move|p2a: Garchomp|Stealth Rock|p1a: Landorus
+|-sidestart|p1: Itsuki|move: Stealth Rock
+|
+|turn|11
+|callback|decision
+|
+|switch|p2a: Greninja|Greninja, M, shiny|286\/286
+|-damage|p2a: Greninja|251\/286|[from] Stealth Rock
+|move|p1a: Landorus|Hidden Power|p2a: Greninja
+|-resisted|p2a: Greninja
+|-damage|p2a: Greninja|190\/286
+|-damage|p1a: Landorus|288\/320|[from] item: Life Orb
+|
+|turn|12
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|283\/283
+|-damage|p1a: Genesect|248\/283|[from] Stealth Rock
+|-boost|p1a: Genesect|atk|1|[from] ability: Download
+|-start|p2a: Greninja|typechange|Ice|[from] Protean
+|move|p2a: Greninja|Ice Beam|p1a: Genesect
+|-resisted|p1a: Genesect
+|-damage|p1a: Genesect|160\/283
+|-damage|p2a: Greninja|162\/286|[from] item: Life Orb
+|
+|turn|13
+|callback|decision
+|
+|move|p1a: Genesect|U-turn|p2a: Greninja
+|-damage|p2a: Greninja|0 fnt
+|faint|p2a: Greninja
+|callback|decision
+|
+|switch|p1a: Landorus|Landorus, M|288\/320
+|-damage|p1a: Landorus|248\/320|[from] Stealth Rock
+|
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, M|320\/354 tox
+|-damage|p2a: Gliscor|276\/354 tox|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|148\/344
+|-damage|p2a: Scizor|105\/344|[from] Stealth Rock
+|move|p1a: Landorus|Psychic|p2a: Scizor
+|-resisted|p2a: Scizor
+|-damage|p2a: Scizor|8\/344
+|
+|turn|15
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Landorus
+|-damage|p1a: Landorus|86\/320
+|move|p1a: Landorus|Psychic|p2a: Scizor
+|-resisted|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|faint|p2a: Scizor
+|
+|callback|decision
+|
+|switch|p2a: Hawlucha|Hawlucha, M|298\/298
+|-damage|p2a: Hawlucha|261\/298|[from] Stealth Rock
+|turn|16
+|callback|decision
+|
+|move|p2a: Hawlucha|Acrobatics|p1a: Landorus
+|-enditem|p2a: Hawlucha|Flying Gem|[from] gem|[move] Acrobatics
+|-damage|p1a: Landorus|0 fnt
+|faint|p1a: Landorus
+|
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, F|324\/324
+|-damage|p1a: Aegislash|304\/324|[from] Stealth Rock
+|turn|17
+|callback|decision
+|
+|move|p2a: Hawlucha|Swords Dance|p2a: Hawlucha
+|-boost|p2a: Hawlucha|atk|2
+|move|p1a: Aegislash|Swords Dance|p1a: Aegislash
+|-boost|p1a: Aegislash|atk|2
+|
+|-heal|p1a: Aegislash|324\/324|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p1a: Aegislash|King's Shield|p1a: Aegislash
+|-singleturn|p1a: Aegislash|King's Shield
+|move|p2a: Hawlucha|Swords Dance|p2a: Hawlucha
+|-boost|p2a: Hawlucha|atk|2
+|
+|turn|19
+|callback|decision
+|
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Sneak|p2a: Hawlucha
+|-damage|p2a: Hawlucha|60\/298
+|move|p2a: Hawlucha|Acrobatics|p1a: Aegislash
+|-resisted|p1a: Aegislash
+|-damage|p1a: Aegislash|0 fnt
+|faint|p1a: Aegislash
+|
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|160\/283
+|-damage|p1a: Genesect|125\/283|[from] Stealth Rock
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|turn|20
+|callback|decision
+|
+|move|p2a: Hawlucha|Acrobatics|p1a: Genesect
+|-damage|p1a: Genesect|0 fnt
+|faint|p1a: Genesect
+|
+|callback|decision
+|-message|Itsuki forfeited.
+|
+|win|sandaman
+|raw|Ladder updating...
+|leave|Itsuki
+|player|p1
+|raw|Itsuki's rating: 1820 &rarr; <strong>1789<\/strong><br \/>(-31 for losing)
+|raw|sandaman's rating: 1607 &rarr; <strong>1621<\/strong><br \/>(+14 for winning)

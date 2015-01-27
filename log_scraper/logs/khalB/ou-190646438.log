@@ -1,0 +1,158 @@
+|join|Hogback_fosh_men
+|join|khalB
+|player|p1|Hogback_fosh_men|1
+|player|p2|khalB|1
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Altaria, M
+|poke|p1|Heatran, F
+|poke|p1|Zapdos
+|poke|p1|Ferrothorn, M
+|poke|p1|Terrakion
+|poke|p1|Greninja, M
+|poke|p2|Tentacruel, F
+|poke|p2|Weavile, F
+|poke|p2|Slowbro, M
+|poke|p2|Landorus-Therian, M
+|poke|p2|Ferrothorn, F
+|poke|p2|Greninja, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Zapdos|Zapdos|384\/384
+|switch|p2a: Slowbro|Slowbro, M|394\/394
+|-ability|p1a: Zapdos|Pressure
+|turn|1
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Zapdos
+|-unboost|p1a: Zapdos|atk|1
+|move|p1a: Zapdos|Discharge|p2a: Landorus-Therian
+|-immune|p2a: Landorus-Therian|[msg]
+|
+|turn|2
+|
+|move|p2a: Landorus-Therian|U-turn|p1a: Zapdos
+|-resisted|p1a: Zapdos
+|-damage|p1a: Zapdos|347\/384
+|
+|switch|p2a: Greninja|Greninja, F|285\/285
+|move|p1a: Zapdos|Hidden Power|p2a: Greninja
+|-resisted|p2a: Greninja
+|-damage|p2a: Greninja|242\/285
+|
+|-heal|p1a: Zapdos|371\/384|[from] item: Leftovers
+|turn|3
+|
+|move|p2a: Greninja|Spikes|p1a: Zapdos
+|-start|p2a: Greninja|typechange|Ground|[from] Protean
+|-sidestart|p1: Hogback_fosh_men|Spikes
+|move|p1a: Zapdos|Discharge|p2a: Greninja
+|-immune|p2a: Greninja|[msg]
+|
+|-heal|p1a: Zapdos|384\/384|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|352\/352
+|move|p1a: Zapdos|Heat Wave|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|4\/352
+|
+|turn|5
+|
+|move|p2a: Ferrothorn|Protect|p2a: Ferrothorn
+|-singleturn|p2a: Ferrothorn|Protect
+|move|p1a: Zapdos|Discharge|p2a: Ferrothorn
+|-activate|p2a: Ferrothorn|Protect
+|
+|turn|6
+|
+|switch|p2a: Weavile|Weavile, F|282\/282
+|-ability|p2a: Weavile|Pressure
+|move|p1a: Zapdos|Heat Wave|p2a: Weavile
+|-miss|p1a: Zapdos|p2a: Weavile
+|
+|turn|7
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|352\/352
+|-damage|p1a: Ferrothorn|308\/352|[from] Spikes
+|move|p2a: Weavile|Ice Punch|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|199\/352
+|-damage|p2a: Weavile|247\/282|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|-damage|p2a: Weavile|200\/282|[from] item: Rocky Helmet|[of] p1a: Ferrothorn
+|-damage|p2a: Weavile|172\/282|[from] item: Life Orb
+|
+|turn|8
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|4\/352
+|move|p1a: Ferrothorn|Stealth Rock|p2a: Ferrothorn
+|-sidestart|p2: khalB|move: Stealth Rock
+|
+|turn|9
+|
+|switch|p1a: Zapdos|Zapdos|384\/384
+|-ability|p1a: Zapdos|Pressure
+|move|p2a: Ferrothorn|Stealth Rock|p1a: Zapdos
+|-sidestart|p1: Hogback_fosh_men|move: Stealth Rock
+|
+|turn|10
+|
+|move|p1a: Zapdos|Discharge|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|faint|p2a: Ferrothorn
+|
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-damage|p2a: Landorus-Therian|280\/320|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Zapdos
+|-unboost|p1a: Zapdos|atk|1
+|turn|11
+|
+|move|p2a: Landorus-Therian|Stone Edge|p1a: Zapdos
+|-supereffective|p1a: Zapdos
+|-damage|p1a: Zapdos|158\/384
+|move|p1a: Zapdos|Hidden Power|p2a: Landorus-Therian
+|-supereffective|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|faint|p2a: Landorus-Therian
+|
+|-heal|p1a: Zapdos|182\/384|[from] item: Leftovers
+|
+|switch|p2a: Greninja|Greninja, F|242\/285
+|-damage|p2a: Greninja|207\/285|[from] Stealth Rock
+|turn|12
+|
+|move|p2a: Greninja|Hydro Pump|p1a: Zapdos|[miss]
+|-start|p2a: Greninja|typechange|Water|[from] Protean
+|-miss|p2a: Greninja|p1a: Zapdos
+|move|p1a: Zapdos|Discharge|p2a: Greninja
+|-supereffective|p2a: Greninja
+|-damage|p2a: Greninja|0 fnt
+|faint|p2a: Greninja
+|
+|-heal|p1a: Zapdos|206\/384|[from] item: Leftovers
+|c|âkhalB|gg
+|c|âHogback_fosh_men|gg
+|c|âkhalB|lol
+|c|âHogback_fosh_men|lool
+|-message|khalB forfeited.
+|
+|win|Hogback_fosh_men
+|raw|Ladder updating...
+|leave|khalB
+|player|p2
+|raw|Hogback_fosh_men's rating: 1374 &rarr; <strong>1390<\/strong><br \/>(+16 for winning)
+|raw|khalB's rating: 1308 &rarr; <strong>1292<\/strong><br \/>(-16 for losing)

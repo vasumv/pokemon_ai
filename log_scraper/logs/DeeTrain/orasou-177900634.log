@@ -1,0 +1,222 @@
+|join|DeeTrain
+|join|sp00ky r00kie
+|player|p1|DeeTrain|2
+|player|p2|sp00ky r00kie|184
+|gametype|singles
+|gen|6
+|tier|ORAS OU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Thundurus, M
+|poke|p1|Greninja, M, shiny
+|poke|p1|Salamence, M
+|poke|p1|Skarmory, M
+|poke|p1|Infernape, M
+|poke|p1|Mamoswine, F
+|poke|p2|Sableye, M
+|poke|p2|Zapdos
+|poke|p2|Amoonguss, M
+|poke|p2|Slowbro, F
+|poke|p2|Chansey, F
+|poke|p2|Hippowdon, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Greninja|Greninja, M, shiny|285\/285
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|turn|1
+|
+|move|p1a: Greninja|Ice Beam|p2a: Amoonguss
+|-start|p1a: Greninja|typechange|Ice|[from] Protean
+|-supereffective|p2a: Amoonguss
+|-damage|p2a: Amoonguss|143\/432
+|-damage|p1a: Greninja|257\/285|[from] item: Life Orb
+|move|p2a: Amoonguss|Spore|p1a: Greninja
+|-status|p1a: Greninja|slp
+|
+|-heal|p2a: Amoonguss|170\/432|[from] item: Black Sludge
+|turn|2
+|
+|switch|p1a: Salamence|Salamence, M|337\/337
+|-ability|p1a: Salamence|Intimidate|[of] p2a: Amoonguss
+|-unboost|p2a: Amoonguss|atk|1
+|move|p2a: Amoonguss|Foul Play|p1a: Salamence
+|-crit|p1a: Salamence
+|-damage|p1a: Salamence|135\/337
+|
+|-heal|p2a: Amoonguss|197\/432|[from] item: Black Sludge
+|turn|3
+|
+|switch|p2a: Zapdos|Zapdos|384\/384
+|-ability|p2a: Zapdos|Pressure
+|detailschange|p1a: Salamence|Salamence-Mega, M
+|message|Salamence has Mega Evolved into Mega Salamence!
+|move|p1a: Salamence|Return|p2a: Zapdos
+|-resisted|p2a: Zapdos
+|-damage|p2a: Zapdos|255\/384
+|
+|-heal|p2a: Zapdos|279\/384|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Mamoswine|Mamoswine, F|361\/361
+|switch|p2a: Slowbro|Slowbro, F|393\/393
+|
+|turn|5
+|
+|move|p1a: Mamoswine|Freeze-Dry|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|211\/393
+|-status|p2a: Slowbro|frz
+|-damage|p1a: Mamoswine|325\/361|[from] item: Life Orb
+|-curestatus|p2a: Slowbro|frz
+|move|p2a: Slowbro|Scald|p1a: Mamoswine
+|-supereffective|p1a: Mamoswine
+|-damage|p1a: Mamoswine|7\/361
+|
+|-heal|p2a: Slowbro|235\/393|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: Chansey|Chansey, F|660\/660
+|move|p1a: Mamoswine|Freeze-Dry|p2a: Chansey
+|-damage|p2a: Chansey|616\/660
+|-damage|p1a: Mamoswine|0 fnt|[from] item: Life Orb
+|faint|p1a: Mamoswine
+|
+|
+|switch|p1a: Thundurus|Thundurus, M|299\/299
+|turn|7
+|join|lyh031995
+|
+|switch|p2a: Hippowdon|Hippowdon, M|420\/420
+|-weather|Sandstorm
+|move|p1a: Thundurus|Knock Off|p2a: Hippowdon
+|-damage|p2a: Hippowdon|323\/420
+|-enditem|p2a: Hippowdon|Leftovers|[from] move: Knock Off|[of] p1a: Thundurus
+|-damage|p1a: Thundurus|270\/299|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Thundurus|252\/299|[from] sandstorm
+|turn|8
+|
+|switch|p1a: Skarmory|Skarmory, M|332\/332
+|move|p2a: Hippowdon|Stealth Rock|p1a: Skarmory
+|-sidestart|p1: DeeTrain|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|9
+|
+|switch|p2a: Zapdos|Zapdos|279\/384
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Skarmory|Defog|p2a: Zapdos
+|-unboost|p2a: Zapdos|evasion|1
+|-sideend|p1: DeeTrain|Stealth Rock|[from] move: Defog|[of] p1a: Skarmory
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Zapdos|255\/384|[from] sandstorm
+|-heal|p2a: Zapdos|279\/384|[from] item: Leftovers
+|turn|10
+|
+|move|p2a: Zapdos|Thunderbolt|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|14\/332
+|move|p1a: Skarmory|Stealth Rock|p2a: Zapdos
+|-sidestart|p2: sp00ky r00kie|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Zapdos|255\/384|[from] sandstorm
+|-heal|p2a: Zapdos|279\/384|[from] item: Leftovers
+|turn|11
+|
+|move|p2a: Zapdos|Defog|p1a: Skarmory
+|-unboost|p1a: Skarmory|evasion|1
+|-sideend|p2: sp00ky r00kie|Stealth Rock|[from] move: Defog|[of] p2a: Zapdos
+|move|p1a: Skarmory|Stealth Rock|p2a: Zapdos
+|-sidestart|p2: sp00ky r00kie|move: Stealth Rock
+|
+|-weather|none
+|-heal|p2a: Zapdos|303\/384|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Zapdos|Roost|p2a: Zapdos
+|-heal|p2a: Zapdos|384\/384
+|move|p1a: Skarmory|Stealth Rock|p2a: Zapdos
+|-fail|p2a: Zapdos
+|
+|turn|13
+|
+|move|p2a: Zapdos|Defog|p1a: Skarmory
+|-unboost|p1a: Skarmory|evasion|1
+|-sideend|p2: sp00ky r00kie|Stealth Rock|[from] move: Defog|[of] p2a: Zapdos
+|move|p1a: Skarmory|Stealth Rock|p2a: Zapdos
+|-sidestart|p2: sp00ky r00kie|move: Stealth Rock
+|
+|turn|14
+|
+|switch|p1a: Thundurus|Thundurus, M|252\/299
+|move|p2a: Zapdos|Thunderbolt|p1a: Thundurus
+|-damage|p1a: Thundurus|104\/299
+|
+|turn|15
+|
+|move|p1a: Thundurus|Knock Off|p2a: Zapdos
+|-damage|p2a: Zapdos|257\/384
+|-enditem|p2a: Zapdos|Leftovers|[from] move: Knock Off|[of] p1a: Thundurus
+|-damage|p1a: Thundurus|75\/299|[from] item: Life Orb
+|move|p2a: Zapdos|Thunderbolt|p1a: Thundurus
+|-damage|p1a: Thundurus|0 fnt
+|faint|p1a: Thundurus
+|
+|
+|switch|p1a: Infernape|Infernape, M|293\/293
+|turn|16
+|leave|lyh031995
+|
+|move|p1a: Infernape|Overheat|p2a: Zapdos
+|-damage|p2a: Zapdos|19\/384
+|-unboost|p1a: Infernape|spa|2
+|-damage|p1a: Infernape|264\/293|[from] item: Life Orb
+|move|p2a: Zapdos|Roost|p2a: Zapdos
+|-heal|p2a: Zapdos|211\/384
+|
+|turn|17
+|
+|switch|p1a: Salamence|Salamence-Mega, M|135\/337
+|move|p2a: Zapdos|Roost|p2a: Zapdos
+|-heal|p2a: Zapdos|384\/384
+|
+|turn|18
+|
+|move|p1a: Salamence|Dragon Dance|p1a: Salamence
+|-boost|p1a: Salamence|atk|1
+|-boost|p1a: Salamence|spe|1
+|move|p2a: Zapdos|Thunderbolt|p1a: Salamence
+|-damage|p1a: Salamence|0 fnt
+|faint|p1a: Salamence
+|
+|
+|switch|p1a: Greninja|Greninja, M, shiny|257\/285 slp
+|turn|19
+|
+|cant|p1a: Greninja|slp
+|move|p2a: Zapdos|Thunderbolt|p1a: Greninja
+|-supereffective|p1a: Greninja
+|-damage|p1a: Greninja|0 fnt
+|faint|p1a: Greninja
+|
+|-message|DeeTrain forfeited.
+|
+|win|sp00ky r00kie
+|raw|Ladder updating...
+|leave|DeeTrain
+|player|p1
+|raw|DeeTrain's rating: 1427 &rarr; <strong>1397<\/strong><br \/>(-30 for losing)
+|raw|sp00ky r00kie's rating: 1221 &rarr; <strong>1259<\/strong><br \/>(+38 for winning)

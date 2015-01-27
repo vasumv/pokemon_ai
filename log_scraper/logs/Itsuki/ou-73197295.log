@@ -1,0 +1,284 @@
+|join|Itsuki
+|join|Chase_why
+|player|p1|Itsuki|1
+|player|p2|Chase_why|237
+|gametype|singles
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Aegislash, F
+|poke|p1|Rotom-Wash
+|poke|p1|Genesect
+|poke|p1|Latios, M
+|poke|p1|Heatran, F
+|poke|p1|Dragonite, F
+|poke|p2|Drifblim, M
+|poke|p2|Plusle, M
+|poke|p2|Octillery, M
+|poke|p2|Dragonair, M
+|poke|p2|Golurk
+|poke|p2|Slowbro, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Aegislash|Aegislash, F|261\/261
+|switch|p2a: Octillery|Octillery, M|329\/329
+|turn|1
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M|301\/301
+|move|p2a: Octillery|Fire Blast|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|246\/301
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Latios|Psyshock|p2a: Octillery
+|-damage|p2a: Octillery|122\/329
+|-damage|p1a: Latios|216\/301|[from] item: Life Orb
+|move|p2a: Octillery|Ice Beam|p1a: Latios
+|-supereffective|p1a: Latios
+|-damage|p1a: Latios|20\/301
+|
+|turn|3
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, F|389\/389
+|move|p1a: Latios|Draco Meteor|p2a: Slowbro
+|-damage|p2a: Slowbro|25\/389
+|-unboost|p1a: Latios|spa|2
+|-damage|p1a: Latios|0 fnt|[from] item: Life Orb
+|faint|p1a: Latios
+|
+|-heal|p2a: Slowbro|49\/389|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|303\/303
+|turn|4
+|callback|decision
+|
+|switch|p2a: Plusle|Plusle, M|324\/324
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Plusle
+|-boost|p2a: Plusle|spa|1|[from] ability: Lightningrod
+|
+|turn|5
+|callback|decision
+|
+|move|p2a: Plusle|Nasty Plot|p2a: Plusle
+|-boost|p2a: Plusle|spa|2
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Plusle
+|-damage|p2a: Plusle|141\/324
+|
+|-heal|p2a: Plusle|161\/324|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Plusle|Thunderbolt|p1a: Rotom-Wash
+|-crit|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|
+|-heal|p2a: Plusle|181\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|283\/283
+|-boost|p1a: Genesect|atk|1|[from] ability: Download
+|turn|7
+|callback|decision
+|
+|move|p1a: Genesect|U-turn|p2a: Plusle
+|-damage|p2a: Plusle|0 fnt
+|faint|p2a: Plusle
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|386\/386
+|
+|callback|decision
+|
+|switch|p2a: Golurk|Golurk|377\/377
+|turn|8
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, F|323\/323
+|move|p2a: Golurk|Dynamic Punch|p1a: Dragonite
+|-resisted|p1a: Dragonite
+|-damage|p1a: Dragonite|284\/323
+|-start|p1a: Dragonite|confusion
+|-damage|p2a: Golurk|340\/377|[from] item: Life Orb
+|
+|-heal|p1a: Dragonite|304\/323|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|-activate|p1a: Dragonite|confusion
+|-damage|p1a: Dragonite|250\/323|[from] confusion
+|move|p2a: Golurk|Stone Edge|p1a: Dragonite
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|0 fnt
+|-damage|p2a: Golurk|303\/377|[from] item: Life Orb
+|faint|p1a: Dragonite
+|
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|283\/283
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|turn|10
+|callback|decision
+|
+|switch|p2a: Octillery|Octillery, M|122\/329
+|move|p1a: Genesect|Ice Beam|p2a: Octillery
+|-resisted|p2a: Octillery
+|-damage|p2a: Octillery|63\/329
+|
+|turn|11
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|386\/386
+|move|p2a: Octillery|Hydro Pump|p1a: Heatran|[miss]
+|-miss|p2a: Octillery|p1a: Heatran
+|
+|turn|12
+|callback|decision
+|
+|move|p1a: Heatran|Lava Plume|p2a: Octillery
+|-crit|p2a: Octillery
+|-resisted|p2a: Octillery
+|-damage|p2a: Octillery|0 fnt
+|faint|p2a: Octillery
+|
+|callback|decision
+|
+|switch|p2a: Golurk|Golurk|303\/377
+|turn|13
+|callback|decision
+|
+|move|p1a: Heatran|Lava Plume|p2a: Golurk
+|-damage|p2a: Golurk|153\/377
+|-status|p2a: Golurk|brn
+|move|p2a: Golurk|Earthquake|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|-damage|p2a: Golurk|116\/377 brn|[from] item: Life Orb
+|faint|p1a: Heatran
+|
+|-damage|p2a: Golurk|69\/377 brn|[from] brn
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|283\/283
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|turn|14
+|callback|decision
+|
+|move|p1a: Genesect|Ice Beam|p2a: Golurk
+|-supereffective|p2a: Golurk
+|-damage|p2a: Golurk|0 fnt
+|faint|p2a: Golurk
+|
+|callback|decision
+|
+|switch|p2a: Dragonair|Dragonair, M|326\/326
+|turn|15
+|callback|decision
+|
+|move|p1a: Genesect|Ice Beam|p2a: Dragonair
+|-supereffective|p2a: Dragonair
+|-damage|p2a: Dragonair|114\/326
+|move|p2a: Dragonair|Thunder Wave|p1a: Genesect
+|-status|p1a: Genesect|par
+|
+|turn|16
+|callback|decision
+|
+|move|p2a: Dragonair|Fire Blast|p1a: Genesect
+|-supereffective|p1a: Genesect
+|-damage|p1a: Genesect|0 fnt
+|faint|p1a: Genesect
+|
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, F|261\/261
+|turn|17
+|callback|decision
+|
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Sneak|p2a: Dragonair
+|-damage|p2a: Dragonair|24\/326
+|-damage|p1a: Aegislash|235\/261|[from] item: Life Orb
+|move|p2a: Dragonair|Thunder Wave|p1a: Aegislash
+|-status|p1a: Aegislash|par
+|
+|turn|18
+|callback|decision
+|
+|move|p1a: Aegislash|Shadow Sneak|p2a: Dragonair
+|-damage|p2a: Dragonair|0 fnt
+|-damage|p1a: Aegislash|209\/261 par|[from] item: Life Orb
+|faint|p2a: Dragonair
+|
+|callback|decision
+|
+|switch|p2a: Drifblim|Drifblim, M|442\/442
+|turn|19
+|callback|decision
+|
+|-formechange|p1a: Aegislash|Aegislash
+|move|p1a: Aegislash|King's Shield|p1a: Aegislash
+|-singleturn|p1a: Aegislash|Protect
+|move|p2a: Drifblim|Shadow Ball|p1a: Aegislash
+|-activate|p1a: Aegislash|Protect
+|
+|turn|20
+|callback|decision
+|
+|move|p2a: Drifblim|Knock Off|p1a: Aegislash
+|-supereffective|p1a: Aegislash
+|-damage|p1a: Aegislash|129\/261 par
+|-enditem|p1a: Aegislash|Life Orb|[from] move: Knock Off|[of] p2a: Drifblim
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Ball|p2a: Drifblim
+|-supereffective|p2a: Drifblim
+|-damage|p2a: Drifblim|50\/442
+|
+|-heal|p2a: Drifblim|77\/442|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p1a: Aegislash|Shadow Sneak|p2a: Drifblim
+|-supereffective|p2a: Drifblim
+|-damage|p2a: Drifblim|0 fnt
+|faint|p2a: Drifblim
+|-damage|p1a: Aegislash|64\/261 par|[from] ability: Aftermath|[of] p2a: Drifblim
+|
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, F|178\/389
+|turn|22
+|callback|decision
+|
+|-formechange|p1a: Aegislash|Aegislash
+|cant|p1a: Aegislash|par
+|move|p2a: Slowbro|Slack Off|p2a: Slowbro
+|-heal|p2a: Slowbro|373\/389
+|
+|-heal|p2a: Slowbro|389\/389|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p2a: Slowbro|Scald|p1a: Aegislash
+|-damage|p1a: Aegislash|0 fnt
+|faint|p1a: Aegislash
+|
+|win|Chase_why
+|raw|Ladder updating...
+|raw|Itsuki's rating: 1574 &rarr; <strong>1534<\/strong><br \/>(-40 for losing)
+|raw|Chase_why's rating: 1608 &rarr; <strong>1626<\/strong><br \/>(+18 for winning)
+|chat|Chase_why|gg

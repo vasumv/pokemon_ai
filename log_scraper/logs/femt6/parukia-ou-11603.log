@@ -1,0 +1,500 @@
+|join|alafa
+|join|femt6
+|player|p1|alafa|170
+|player|p2|femt6|169
+|gametype|singles
+|gen|6
+|tier|OU
+|clearpoke
+|poke|p1|Jirachi
+|poke|p1|Celebi
+|poke|p1|Gliscor, F
+|poke|p1|Heatran, M
+|poke|p1|Gastrodon, M
+|poke|p1|Conkeldurr, M
+|poke|p2|Landorus-Therian, M
+|poke|p2|Tyranitar, M
+|poke|p2|Aegislash, M
+|poke|p2|Rotom-Wash
+|poke|p2|Conkeldurr, M
+|poke|p2|Genesect
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Celebi|Celebi|342\/342
+|switch|p2a: Red Ranger|Genesect|284\/284
+|-boost|p2a: Red Ranger|atk|1|[from] ability: Download
+|turn|1
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|385\/385
+|move|p2a: Red Ranger|U-turn|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|352\/385
+|callback|decision
+|join|Agizzz
+|
+|switch|p2a: Joker|Conkeldurr, M|351\/351
+|
+|-heal|p1a: Heatran|376\/385|[from] item: Leftovers
+|turn|2
+|callback|decision
+|join|Falckner12
+|
+|switch|p1a: Jirachi|Jirachi|342\/342
+|move|p2a: Joker|Knock Off|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|52\/342
+|-enditem|p1a: Jirachi|Choice Scarf|[from] move: Knock Off|[of] p2a: Joker
+|
+|turn|3
+|callback|decision
+|
+|switch|p1a: Gliscor|Gliscor, F|354\/354
+|move|p2a: Joker|Mach Punch|p1a: Gliscor
+|-resisted|p1a: Gliscor
+|-damage|p1a: Gliscor|326\/354
+|
+|-activate|p1a: Gliscor|item: Toxic Orb
+|-status|p1a: Gliscor|tox
+|turn|4
+|callback|decision
+|chat|femt6|ta serto
+|
+|move|p1a: Gliscor|Toxic|p2a: Joker
+|-status|p2a: Joker|tox
+|move|p2a: Joker|Ice Punch|p1a: Gliscor
+|-supereffective|p1a: Gliscor
+|-damage|p1a: Gliscor|0 fnt
+|faint|p1a: Gliscor
+|
+|-damage|p2a: Joker|330\/351 tox|[from] psn
+|callback|decision
+|chat|Agizzz|^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|chat|Falckner12|ai .-.
+|chat|femt6|hauhauhauah
+|chat|Agizzz|^^^^^^^^^^^^^^^^^^^^
+|chat|femt6|vc perdeu pra uma porra dessa agiz?
+|chat|femt6|vai se fuder
+|chat|femt6|vc Ã© mto ruim
+|chat|Agizzz|D= eu fiz o time em 10 min
+|chat|Falckner12|Vem cÃ¡, quem tÃ¡ jogando? xD
+|chat|Agizzz|e o arrombado ficou zoando
+|
+|switch|p1a: Celebi|Celebi|342\/342
+|turn|5
+|callback|decision
+|chat|Agizzz|-.-
+|chat|Falckner12|Agizz = Douglas e quem Ã© que tÃ¡ lutando? :p
+|
+|switch|p2a: I'm Rock Hard|Tyranitar, M|342\/342
+|-weather|Sandstorm
+|move|p1a: Celebi|Leaf Storm|p2a: I'm Rock Hard
+|-supereffective|p2a: I'm Rock Hard
+|-damage|p2a: I'm Rock Hard|100\/342
+|-unboost|p1a: Celebi|spa|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Celebi|321\/342|[from] sandstorm
+|turn|6
+|callback|decision
+|chat|Agizzz|Ã© o gutavo pacheco
+|chat|Falckner12|Ah
+|
+|switch|p2a: Catdorus|Landorus-Therian, M|370\/370
+|-ability|p2a: Catdorus|Intimidate|[of] p1a: Celebi
+|-unboost|p1a: Celebi|atk|1
+|move|p1a: Celebi|Leaf Storm|p2a: Catdorus|[miss]
+|-miss|p1a: Celebi|p2a: Catdorus
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Celebi|300\/342|[from] sandstorm
+|turn|7
+|callback|decision
+|chat|alafa|hue
+|
+|switch|p1a: Gastrodon|Gastrodon, M|426\/426
+|move|p2a: Catdorus|Stealth Rock|p1a: Gastrodon
+|-sidestart|p1: alafa|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|8
+|callback|decision
+|chat|Falckner12|Eu perdi, nao vo falar nada... :s
+|
+|move|p2a: Catdorus|U-turn|p1a: Gastrodon
+|-damage|p1a: Gastrodon|298\/426
+|callback|decision
+|
+|switch|p2a: Joker|Conkeldurr, M|330\/351 tox
+|move|p1a: Gastrodon|Scald|p2a: Joker
+|-damage|p2a: Joker|272\/351 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Joker|251\/351 tox|[from] sandstorm
+|-heal|p1a: Gastrodon|324\/426|[from] item: Leftovers
+|-damage|p2a: Joker|230\/351 tox|[from] psn
+|turn|9
+|callback|decision
+|join|DeaD I HylliaN'
+|chat|DeaD I HylliaN'|inhae
+|chat|Falckner12|Quem Ã©? :v
+|
+|move|p2a: Joker|Drain Punch|p1a: Gastrodon
+|-damage|p1a: Gastrodon|39\/426
+|-heal|p2a: Joker|351\/351 tox|[from] drain|[of] p1a: Gastrodon
+|move|p1a: Gastrodon|Recover|p1a: Gastrodon
+|-heal|p1a: Gastrodon|252\/426
+|
+|-weather|none
+|-heal|p1a: Gastrodon|278\/426|[from] item: Leftovers
+|-damage|p2a: Joker|309\/351 tox|[from] psn
+|turn|10
+|callback|decision
+|
+|switch|p1a: Jirachi|Jirachi|52\/342
+|-damage|p1a: Jirachi|31\/342|[from] Stealth Rock
+|move|p2a: Joker|Drain Punch|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|-heal|p2a: Joker|325\/351 tox|[from] drain|[of] p1a: Jirachi
+|faint|p1a: Jirachi
+|
+|-damage|p2a: Joker|262\/351 tox|[from] psn
+|callback|decision
+|chat|Agizzz|esse dai Ã© o mazzoti
+|chat|DeaD I HylliaN'|:3
+|chat|Falckner12|Oi o\/
+|
+|switch|p1a: Conkeldurr|Conkeldurr, M|381\/381
+|-damage|p1a: Conkeldurr|358\/381|[from] Stealth Rock
+|turn|11
+|callback|decision
+|chat|DeaD I HylliaN'|olÃ¡ :)
+|chat|femt6|hyll gostozo
+|chat|Falckner12|heaiuehaiuehauieha
+|chat|DeaD I HylliaN'|MILHOUSE GATÃO
+|chat|DeaD I HylliaN'|vem nimin
+|
+|move|p2a: Joker|Drain Punch|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|112\/381
+|-heal|p2a: Joker|351\/351 tox|[from] drain|[of] p1a: Conkeldurr
+|move|p1a: Conkeldurr|Drain Punch|p2a: Joker
+|-damage|p2a: Joker|162\/351 tox
+|-heal|p1a: Conkeldurr|207\/381|[from] drain|[of] p2a: Joker
+|
+|-heal|p1a: Conkeldurr|230\/381|[from] item: Leftovers
+|-damage|p2a: Joker|78\/351 tox|[from] psn
+|turn|12
+|callback|decision
+|join|cbt Douglas
+|chat|cbt Douglas|KKKKKKKKK
+|chat|DeaD I HylliaN'|dorgas? :o
+|chat|cbt Douglas|lol -.- douglas, o dorgas Ã© outro
+|chat|DeaD I HylliaN'|ah D:
+|chat|Falckner12|.-.
+|chat|DeaD I HylliaN'|tudo igual q
+|
+|move|p1a: Conkeldurr|Mach Punch|p2a: Joker
+|-damage|p2a: Joker|0 fnt
+|faint|p2a: Joker
+|
+|-heal|p1a: Conkeldurr|253\/381|[from] item: Leftovers
+|callback|decision
+|chat|cbt Douglas|-.- viado
+|chat|DeaD I HylliaN'|AIOHAIHAIAHIAH
+|
+|switch|p2a: Catdorus|Landorus-Therian, M|370\/370
+|-ability|p2a: Catdorus|Intimidate|[of] p1a: Conkeldurr
+|-unboost|p1a: Conkeldurr|atk|1
+|turn|13
+|callback|decision
+|
+|move|p2a: Catdorus|U-turn|p1a: Conkeldurr
+|-resisted|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|202\/381
+|callback|decision
+|
+|switch|p2a: Excalibur|Aegislash, M|269\/269
+|move|p1a: Conkeldurr|Ice Punch|p2a: Excalibur
+|-resisted|p2a: Excalibur
+|-damage|p2a: Excalibur|238\/269
+|
+|-heal|p1a: Conkeldurr|225\/381|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|376\/385
+|-damage|p1a: Heatran|328\/385|[from] Stealth Rock
+|-formechange|p2a: Excalibur|Aegislash-Blade
+|move|p2a: Excalibur|Shadow Ball|p1a: Heatran
+|-crit|p1a: Heatran
+|-damage|p1a: Heatran|94\/385
+|-unboost|p1a: Heatran|spd|1
+|-damage|p2a: Excalibur|212\/269|[from] item: Life Orb
+|
+|-heal|p1a: Heatran|118\/385|[from] item: Leftovers
+|turn|15
+|callback|decision
+|chat|alafa|heuheuehuehuehe
+|chat|cbt Douglas|abraÃ§
+|chat|alafa|heuheuehuehueheuheuheue
+|chat|DeaD I HylliaN'|VAI XORÃ\/
+|chat|alafa|s s
+|chat|Falckner12|...
+|
+|switch|p2a: Wishy Washy|Rotom-Wash|304\/304
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-fail|p1a: Heatran
+|
+|-heal|p1a: Heatran|142\/385|[from] item: Leftovers
+|turn|16
+|callback|decision
+|chat|cbt Douglas|olÃ©
+|chat|Falckner12|lol
+|chat|DeaD I HylliaN'|kkKKKKKK
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Wishy Washy|Volt Switch|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-heal|p1a: Heatran|166\/385|[from] item: Leftovers
+|turn|17
+|callback|decision
+|chat|Falckner12|Pq todo rotom se chama Washy?! PQP viu .-.
+|chat|DeaD I HylliaN'|o eu chama Carwash :\
+|chat|alafa|hu3
+|chat|DeaD I HylliaN'|meu***
+|chat|Falckner12|O meu Ã© Ghosty :3
+|chat|cbt Douglas|o meu se chama geladeira
+|chat|cbt Douglas|lol fridge
+|chat|Falckner12|Meu amigo colocou Brastemp, HUE xD
+|chat|alafa|rs
+|
+|switch|p1a: Gastrodon|Gastrodon, M|278\/426
+|-damage|p1a: Gastrodon|252\/426|[from] Stealth Rock
+|move|p2a: Wishy Washy|Will-O-Wisp|p1a: Gastrodon
+|-status|p1a: Gastrodon|brn
+|
+|-heal|p1a: Gastrodon|278\/426 brn|[from] item: Leftovers
+|-damage|p1a: Gastrodon|225\/426 brn|[from] brn
+|turn|18
+|callback|decision
+|chat|DeaD I HylliaN'|KKKKKKKKKKKKK
+|chat|DeaD I HylliaN'|pega essa
+|chat|DeaD I HylliaN'|o,o
+|chat|alafa|^^
+|
+|switch|p2a: Excalibur|Aegislash, M|212\/269
+|move|p1a: Gastrodon|Recover|p1a: Gastrodon
+|-heal|p1a: Gastrodon|426\/426 brn
+|
+|-damage|p1a: Gastrodon|373\/426 brn|[from] brn
+|turn|19
+|callback|decision
+|
+|-formechange|p2a: Excalibur|Aegislash-Blade
+|move|p2a: Excalibur|Shadow Ball|p1a: Gastrodon
+|-damage|p1a: Gastrodon|185\/426 brn
+|-damage|p2a: Excalibur|186\/269|[from] item: Life Orb
+|move|p1a: Gastrodon|Scald|p2a: Excalibur
+|-damage|p2a: Excalibur|23\/269
+|
+|-heal|p1a: Gastrodon|211\/426 brn|[from] item: Leftovers
+|-damage|p1a: Gastrodon|158\/426 brn|[from] brn
+|turn|20
+|callback|decision
+|
+|move|p2a: Excalibur|Shadow Ball|p1a: Gastrodon
+|-damage|p1a: Gastrodon|0 fnt
+|-damage|p2a: Excalibur|0 fnt|[from] item: Life Orb
+|faint|p1a: Gastrodon
+|faint|p2a: Excalibur
+|
+|callback|decision
+|
+|switch|p2a: Red Ranger|Genesect|284\/284
+|switch|p1a: Heatran|Heatran, M|166\/385
+|-damage|p1a: Heatran|118\/385|[from] Stealth Rock
+|-boost|p2a: Red Ranger|atk|1|[from] ability: Download
+|turn|21
+|callback|decision
+|
+|switch|p2a: Wishy Washy|Rotom-Wash|304\/304
+|move|p1a: Heatran|Lava Plume|p2a: Wishy Washy
+|-resisted|p2a: Wishy Washy
+|-damage|p2a: Wishy Washy|246\/304
+|
+|-heal|p1a: Heatran|142\/385|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Wishy Washy|Volt Switch|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-heal|p1a: Heatran|166\/385|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p2a: Wishy Washy|Volt Switch|p1a: Heatran
+|-damage|p1a: Heatran|103\/385
+|callback|decision
+|
+|switch|p2a: I'm Rock Hard|Tyranitar, M|100\/342
+|-weather|Sandstorm
+|move|p1a: Heatran|Lava Plume|p2a: I'm Rock Hard
+|-resisted|p2a: I'm Rock Hard
+|-damage|p2a: I'm Rock Hard|58\/342
+|-status|p2a: I'm Rock Hard|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Heatran|127\/385|[from] item: Leftovers
+|-damage|p2a: I'm Rock Hard|16\/342 brn|[from] brn
+|turn|24
+|callback|decision
+|
+|switch|p2a: Catdorus|Landorus-Therian, M|370\/370
+|-ability|p2a: Catdorus|Intimidate|[of] p1a: Heatran
+|-unboost|p1a: Heatran|atk|1
+|move|p1a: Heatran|Lava Plume|p2a: Catdorus
+|-damage|p2a: Catdorus|231\/370
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Heatran|151\/385|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Catdorus|Earthquake|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Heatran|175\/385|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|move|p2a: Catdorus|U-turn|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|151\/385
+|callback|decision
+|
+|switch|p2a: Wishy Washy|Rotom-Wash|246\/304
+|move|p1a: Heatran|Lava Plume|p2a: Wishy Washy
+|-resisted|p2a: Wishy Washy
+|-damage|p2a: Wishy Washy|191\/304
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Wishy Washy|172\/304|[from] sandstorm
+|-heal|p1a: Heatran|175\/385|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Wishy Washy|Volt Switch|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-weather|none
+|-heal|p1a: Heatran|199\/385|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|move|p2a: Wishy Washy|Volt Switch|p1a: Heatran
+|-damage|p1a: Heatran|144\/385
+|callback|decision
+|
+|switch|p2a: I'm Rock Hard|Tyranitar, M|16\/342 brn
+|-weather|Sandstorm
+|move|p1a: Heatran|Lava Plume|p2a: I'm Rock Hard
+|-resisted|p2a: I'm Rock Hard
+|-damage|p2a: I'm Rock Hard|0 fnt
+|faint|p2a: I'm Rock Hard
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Heatran|168\/385|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Catdorus|Landorus-Therian, M|231\/370
+|-ability|p2a: Catdorus|Intimidate|[of] p1a: Heatran
+|-unboost|p1a: Heatran|atk|1
+|turn|29
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Catdorus|Earthquake|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Heatran|192\/385|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|move|p2a: Catdorus|Earthquake|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Conkeldurr|Conkeldurr, M|225\/381
+|-damage|p1a: Conkeldurr|202\/381|[from] Stealth Rock
+|turn|31
+|callback|decision
+|
+|move|p2a: Catdorus|Earthquake|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|0 fnt
+|faint|p1a: Conkeldurr
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|chat|cbt Douglas|morre
+|
+|switch|p1a: Celebi|Celebi|300\/342
+|-damage|p1a: Celebi|258\/342|[from] Stealth Rock
+|turn|32
+|callback|decision
+|chat|cbt Douglas|desgraÃ§a
+|chat|cbt Douglas|^^^^^^^^^^^^^^^^^^
+|chat|femt6|gg
+|chat|femt6|durou bastante
+|
+|move|p1a: Celebi|Leaf Storm|p2a: Catdorus
+|-damage|p2a: Catdorus|0 fnt
+|-unboost|p1a: Celebi|spa|2
+|faint|p2a: Catdorus
+|
+|-weather|none
+|callback|decision
+|chat|Falckner12|lol
+|
+|switch|p2a: Red Ranger|Genesect|284\/284
+|-boost|p2a: Red Ranger|atk|1|[from] ability: Download
+|turn|33
+|callback|decision
+|chat|alafa|s
+|
+|move|p1a: Celebi|Leaf Storm|p2a: Red Ranger
+|-resisted|p2a: Red Ranger
+|-damage|p2a: Red Ranger|254\/284
+|-unboost|p1a: Celebi|spa|2
+|move|p2a: Red Ranger|U-turn|p1a: Celebi
+|-crit|p1a: Celebi
+|-supereffective|p1a: Celebi
+|-damage|p1a: Celebi|0 fnt
+|faint|p1a: Celebi
+|
+|win|femt6
+|join|SirKvothe

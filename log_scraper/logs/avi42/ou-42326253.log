@@ -1,0 +1,413 @@
+|join|RS SweptU
+|join|Avi42
+|player|p1|RS SweptU|29
+|player|p2|Avi42|163
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Tyranitar, F
+|poke|p1|Jirachi
+|poke|p1|Rotom-Wash
+|poke|p1|Terrakion
+|poke|p1|Latias, F
+|poke|p1|Landorus-Therian, M
+|poke|p2|Dragonite, F
+|poke|p2|Weavile, M
+|poke|p2|Metagross
+|poke|p2|Hydreigon, M
+|poke|p2|Forretress, M
+|poke|p2|Tentacruel, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|join|Skraper123
+|
+|start
+|switch|p1a: Tyranitar|Tyranitar, F|341\/341
+|switch|p2a: Forretress|Forretress, M|354\/354
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar
+|turn|1
+|callback|decision
+|
+|move|p1a: Tyranitar|Stealth Rock|p2a: Forretress
+|-sidestart|p2: Avi42|move: Stealth Rock
+|move|p2a: Forretress|Stealth Rock|p1a: Tyranitar
+|-sidestart|p1: RS SweptU|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|2
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|272\/272
+|-damage|p1a: Rotom-Wash|238\/272|[from] Stealth Rock
+|move|p2a: Forretress|Rapid Spin|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|223\/272
+|-sideend|p2: Avi42|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Forretress
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-Wash|206\/272|[from] sandstorm
+|-heal|p1a: Rotom-Wash|223\/272|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p2a: Hydreigon|Hydreigon, M|326\/326
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Hydreigon
+|-resisted|p2a: Hydreigon
+|-damage|p2a: Hydreigon|269\/326
+|callback|decision
+|join|Hacks.exe Failed?!
+|
+|switch|p1a: Terrakion|Terrakion|323\/323
+|-damage|p1a: Terrakion|303\/323|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Hydreigon|249\/326|[from] sandstorm
+|-heal|p2a: Hydreigon|269\/326|[from] item: Leftovers
+|turn|4
+|callback|decision
+|join|Skypyrean
+|join|â« Zweep â« 2.0
+|leave|Hacks.exe Failed?!
+|
+|switch|p2a: Tentacruel|Tentacruel, F|359\/359
+|move|p1a: Terrakion|Close Combat|p2a: Tentacruel
+|-resisted|p2a: Tentacruel
+|-damage|p2a: Tentacruel|164\/359
+|-unboost|p1a: Terrakion|def|1
+|-unboost|p1a: Terrakion|spd|1
+|-damage|p1a: Terrakion|271\/323|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Tentacruel|142\/359|[from] sandstorm
+|-heal|p2a: Tentacruel|164\/359|[from] item: Leftovers
+|turn|5
+|callback|decision
+|leave|â« Zweep â« 2.0
+|
+|switch|p2a: Dragonite|Dragonite, F|324\/324
+|move|p1a: Terrakion|Close Combat|p2a: Dragonite
+|-resisted|p2a: Dragonite
+|-damage|p2a: Dragonite|258\/324
+|-unboost|p1a: Terrakion|def|1
+|-unboost|p1a: Terrakion|spd|1
+|-damage|p1a: Terrakion|239\/323|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Dragonite|238\/324|[from] sandstorm
+|-heal|p2a: Dragonite|258\/324|[from] item: Leftovers
+|turn|6
+|callback|decision
+|join|Corvalent
+|
+|move|p1a: Terrakion|Stone Edge|p2a: Dragonite
+|-supereffective|p2a: Dragonite
+|-damage|p2a: Dragonite|0 fnt
+|-damage|p1a: Terrakion|207\/323|[from] item: Life Orb
+|faint|p2a: Dragonite
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Metagross|Metagross|364\/364
+|turn|7
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|223\/272
+|-damage|p1a: Rotom-Wash|189\/272|[from] Stealth Rock
+|move|p2a: Metagross|Earthquake|p1a: Rotom-Wash
+|-immune|p1a: Rotom-Wash|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-Wash|172\/272|[from] sandstorm
+|-heal|p1a: Rotom-Wash|189\/272|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Metagross
+|-damage|p2a: Metagross|238\/364
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|331\/331
+|-damage|p1a: Landorus-Therian|290\/331|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Metagross
+|-fail|p2a: Metagross|unboost|[from] ability: Clear Body|[of] p2a: Metagross
+|move|p2a: Metagross|Zen Headbutt|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|107\/331
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Landorus-Therian|127\/331|[from] item: Leftovers
+|-heal|p2a: Metagross|260\/364|[from] item: Leftovers
+|turn|9
+|callback|decision
+|join|Ms. Swept
+|
+|switch|p2a: Forretress|Forretress, M|354\/354
+|move|p1a: Landorus-Therian|Earthquake|p2a: Forretress
+|-damage|p2a: Forretress|230\/354
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Landorus-Therian|147\/331|[from] item: Leftovers
+|-heal|p2a: Forretress|252\/354|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p1a: Landorus-Therian|Swords Dance|p1a: Landorus-Therian
+|-boost|p1a: Landorus-Therian|atk|2
+|move|p2a: Forretress|Toxic|p1a: Landorus-Therian
+|-status|p1a: Landorus-Therian|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Landorus-Therian|167\/331 tox|[from] item: Leftovers
+|-heal|p2a: Forretress|274\/354|[from] item: Leftovers
+|-damage|p1a: Landorus-Therian|147\/331 tox|[from] psn
+|turn|11
+|callback|decision
+|
+|move|p1a: Landorus-Therian|Earthquake|p2a: Forretress
+|-damage|p2a: Forretress|37\/354
+|move|p2a: Forretress|Gyro Ball|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|36\/331 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Landorus-Therian|56\/331 tox|[from] item: Leftovers
+|-heal|p2a: Forretress|59\/354|[from] item: Leftovers
+|-damage|p1a: Landorus-Therian|16\/331 tox|[from] psn
+|turn|12
+|callback|decision
+|
+|switch|p2a: Hydreigon|Hydreigon, M|269\/326
+|move|p1a: Landorus-Therian|Stone Edge|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|faint|p2a: Hydreigon
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Landorus-Therian|36\/331 tox|[from] item: Leftovers
+|-damage|p1a: Landorus-Therian|0 fnt|[from] psn
+|faint|p1a: Landorus-Therian
+|callback|decision
+|
+|switch|p2a: Weavile|Weavile, M|281\/281
+|switch|p1a: Tyranitar|Tyranitar, F|341\/341
+|-damage|p1a: Tyranitar|299\/341|[from] Stealth Rock
+|turn|13
+|callback|decision
+|
+|move|p2a: Weavile|Low Kick|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|faint|p1a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Weavile|264\/281|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: Jirachi|Jirachi|341\/341
+|-damage|p1a: Jirachi|320\/341|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|switch|p2a: Metagross|Metagross|260\/364
+|move|p1a: Jirachi|U-turn|p2a: Metagross
+|-damage|p2a: Metagross|207\/364
+|callback|decision
+|
+|switch|p1a: Latias|Latias, F|301\/301
+|-damage|p1a: Latias|264\/301|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latias|246\/301|[from] sandstorm
+|-heal|p2a: Metagross|229\/364|[from] item: Leftovers
+|-activate|p1a: Latias|item: Flame Orb
+|-status|p1a: Latias|brn
+|turn|15
+|callback|decision
+|
+|switch|p2a: Tentacruel|Tentacruel, F|164\/359
+|move|p1a: Latias|Trick|p2a: Tentacruel
+|-activate|p1a: Latias|move: Trick|[of] p2a: Tentacruel
+|-item|p2a: Tentacruel|Flame Orb|[from] move: Trick
+|-item|p1a: Latias|Leftovers|[from] move: Trick
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latias|228\/301 brn|[from] sandstorm
+|-damage|p2a: Tentacruel|142\/359|[from] sandstorm
+|-heal|p1a: Latias|246\/301 brn|[from] item: Leftovers
+|-damage|p1a: Latias|209\/301 brn|[from] brn
+|-activate|p2a: Tentacruel|item: Flame Orb
+|-status|p2a: Tentacruel|brn
+|turn|16
+|callback|decision
+|
+|switch|p2a: Weavile|Weavile, M|264\/281
+|move|p1a: Latias|Psyshock|p2a: Weavile
+|-immune|p2a: Weavile|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Weavile|247\/281|[from] sandstorm
+|-damage|p1a: Latias|191\/301 brn|[from] sandstorm
+|-heal|p1a: Latias|209\/301 brn|[from] item: Leftovers
+|-damage|p1a: Latias|172\/301 brn|[from] brn
+|turn|17
+|callback|decision
+|
+|move|p2a: Weavile|Pursuit|p1a: Latias|[from]Pursuit
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|0 fnt
+|faint|p1a: Latias
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Weavile|230\/281|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: Jirachi|Jirachi|320\/341
+|-damage|p1a: Jirachi|299\/341|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|switch|p2a: Tentacruel|Tentacruel, F|142\/359 brn
+|move|p1a: Jirachi|U-turn|p2a: Tentacruel
+|-resisted|p2a: Tentacruel
+|-damage|p2a: Tentacruel|90\/359 brn
+|callback|decision
+|chat|Ms. Swept|Now that was a Latias set :O
+|chat|RS SweptU|A+ name, but the role is taken haha
+|
+|switch|p1a: Terrakion|Terrakion|207\/323
+|-damage|p1a: Terrakion|187\/323|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Tentacruel|68\/359 brn|[from] sandstorm
+|-damage|p2a: Tentacruel|24\/359 brn|[from] brn
+|turn|19
+|callback|decision
+|
+|move|p1a: Terrakion|Close Combat|p2a: Tentacruel
+|-crit|p2a: Tentacruel
+|-resisted|p2a: Tentacruel
+|-damage|p2a: Tentacruel|0 fnt
+|-unboost|p1a: Terrakion|def|1
+|-unboost|p1a: Terrakion|spd|1
+|-damage|p1a: Terrakion|155\/323|[from] item: Life Orb
+|faint|p2a: Tentacruel
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Weavile|Weavile, M|230\/281
+|turn|20
+|callback|decision
+|
+|switch|p2a: Metagross|Metagross|229\/364
+|switch|p1a: Jirachi|Jirachi|299\/341
+|-damage|p1a: Jirachi|278\/341|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Metagross|251\/364|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p1a: Jirachi|U-turn|p2a: Metagross
+|-damage|p2a: Metagross|192\/364
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|189\/272
+|-damage|p1a: Rotom-Wash|155\/272|[from] Stealth Rock
+|move|p2a: Metagross|Zen Headbutt|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|1\/272
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-Wash|0 fnt|[from] sandstorm
+|-heal|p2a: Metagross|214\/364|[from] item: Leftovers
+|faint|p1a: Rotom-Wash
+|callback|decision
+|
+|switch|p1a: Terrakion|Terrakion|155\/323
+|-damage|p1a: Terrakion|135\/323|[from] Stealth Rock
+|turn|22
+|callback|decision
+|
+|switch|p2a: Forretress|Forretress, M|59\/354
+|move|p1a: Terrakion|Close Combat|p2a: Forretress
+|-damage|p2a: Forretress|0 fnt
+|-unboost|p1a: Terrakion|def|1
+|-unboost|p1a: Terrakion|spd|1
+|-damage|p1a: Terrakion|103\/323|[from] item: Life Orb
+|faint|p2a: Forretress
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Weavile|Weavile, M|230\/281
+|turn|23
+|callback|decision
+|
+|switch|p1a: Jirachi|Jirachi|278\/341
+|-damage|p1a: Jirachi|257\/341|[from] Stealth Rock
+|move|p2a: Weavile|Low Kick|p1a: Jirachi
+|-damage|p1a: Jirachi|234\/341
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Weavile|213\/281|[from] sandstorm
+|turn|24
+|callback|decision
+|
+|switch|p2a: Metagross|Metagross|214\/364
+|move|p1a: Jirachi|Iron Head|p2a: Metagross
+|-resisted|p2a: Metagross
+|-damage|p2a: Metagross|168\/364
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Metagross|190\/364|[from] item: Leftovers
+|turn|25
+|callback|decision
+|chat|Avi42|thats what i get for over predicting
+|
+|move|p1a: Jirachi|Iron Head|p2a: Metagross
+|-resisted|p2a: Metagross
+|-damage|p2a: Metagross|143\/364
+|move|p2a: Metagross|Earthquake|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|faint|p1a: Jirachi
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Metagross|165\/364|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Terrakion|Terrakion|103\/323
+|-damage|p1a: Terrakion|83\/323|[from] Stealth Rock
+|turn|26
+|callback|decision
+|
+|move|p2a: Metagross|Bullet Punch|p1a: Terrakion
+|-supereffective|p1a: Terrakion
+|-damage|p1a: Terrakion|0 fnt
+|faint|p1a: Terrakion
+|
+|win|Avi42
+|raw|Ladder updating...
+|raw|RS SweptU's rating: 2198 &rarr; <strong>2187<\/strong><br \/>(-11 for losing)
+|raw|Avi42's rating: 1904 &rarr; <strong>1918<\/strong><br \/>(+14 for winning)
+|chat|Avi42|gg
+|chat|RS SweptU|gg
+|chat|Avi42|wow
+|chat|RS SweptU|k i need sleep
+|chat|Avi42|nice rating
+|chat|RS SweptU|thanks for watching everyone
+|join|master_spectator
+|leave|RS SweptU
+|player|p1
+|chat|Ms. Swept|See you in bed
+|chat|Ms. Swept|Oh :(
+|leave|Avi42
+|player|p2
+|leave|Skraper123
+|leave|master_spectator
+|leave|Skypyrean

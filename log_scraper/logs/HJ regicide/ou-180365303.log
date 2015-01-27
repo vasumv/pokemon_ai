@@ -1,0 +1,313 @@
+|join|hj regicide
+|join|Randorix
+|player|p1|hj regicide|46
+|player|p2|Randorix|99
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Latios, M
+|poke|p1|Chesnaught, F
+|poke|p1|Hippowdon, F
+|poke|p1|Rotom-Wash
+|poke|p1|Clefable, F
+|poke|p1|Scizor, M
+|poke|p2|Azumarill, M
+|poke|p2|Landorus, M
+|poke|p2|Heatran, F
+|poke|p2|Keldeo-Resolute
+|poke|p2|Venusaur, F
+|poke|p2|Mandibuzz, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Chesnaught|Chesnaught, F|380\/380
+|switch|p2a: Landorus|Landorus, M|319\/319
+|turn|1
+|
+|move|p2a: Landorus|Stealth Rock|p1a: Chesnaught
+|-sidestart|p1: hj regicide|move: Stealth Rock
+|move|p1a: Chesnaught|Leech Seed|p2a: Landorus
+|-start|p2a: Landorus|move: Leech Seed
+|
+|-damage|p2a: Landorus|280\/319|[from] Leech Seed|[of] p1a: Chesnaught
+|turn|2
+|
+|switch|p2a: Venusaur|Venusaur, F|349\/349
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-fail|p1a: Chesnaught
+|
+|turn|3
+|
+|detailschange|p2a: Venusaur|Venusaur-Mega, F
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p2a: Venusaur|Sludge Bomb|p1a: Chesnaught
+|-immune|p1a: Chesnaught|[msg]|[from] Bulletproof
+|move|p1a: Chesnaught|Spikes|p2a: Venusaur
+|-sidestart|p2: Randorix|Spikes
+|
+|turn|4
+|
+|move|p2a: Venusaur|Hidden Power|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-damage|p1a: Chesnaught|194\/380
+|move|p1a: Chesnaught|Spikes|p2a: Venusaur
+|-sidestart|p2: Randorix|Spikes
+|
+|-heal|p1a: Chesnaught|217\/380|[from] item: Leftovers
+|turn|5
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-singleturn|p1a: Chesnaught|move: Protect
+|move|p2a: Venusaur|Hidden Power|p1a: Chesnaught
+|-activate|p1a: Chesnaught|move: Protect
+|
+|-heal|p1a: Chesnaught|240\/380|[from] item: Leftovers
+|turn|6
+|
+|switch|p1a: Latios|Latios, M|302\/302
+|-damage|p1a: Latios|265\/302|[from] Stealth Rock
+|move|p2a: Venusaur|Hidden Power|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|233\/302
+|
+|turn|7
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|-damage|p1a: Rotom-Wash|266\/304|[from] Stealth Rock
+|move|p2a: Venusaur|Sludge Bomb|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|100\/304
+|-status|p1a: Rotom-Wash|psn
+|
+|-heal|p1a: Rotom-Wash|119\/304 psn|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|81\/304 psn|[from] psn
+|turn|8
+|
+|move|p1a: Rotom-Wash|Pain Split|p2a: Venusaur
+|-sethp|p2a: Venusaur|215\/349|p1a: Rotom-Wash|215\/304 psn|[from] move: Pain Split
+|move|p2a: Venusaur|Giga Drain|p1a: Rotom-Wash
+|-supereffective|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|-heal|p2a: Venusaur|323\/349|[from] drain|[of] p1a: Rotom-Wash
+|faint|p1a: Rotom-Wash
+|
+|
+|switch|p1a: Latios|Latios, M|233\/302
+|-damage|p1a: Latios|196\/302|[from] Stealth Rock
+|turn|9
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|423\/423
+|move|p1a: Latios|Psyshock|p2a: Mandibuzz
+|-immune|p2a: Mandibuzz|[msg]
+|
+|turn|10
+|
+|move|p1a: Latios|Draco Meteor|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|145\/423
+|-unboost|p1a: Latios|spa|2
+|-damage|p1a: Latios|166\/302|[from] item: Life Orb
+|move|p2a: Mandibuzz|Taunt|p1a: Latios
+|-start|p1a: Latios|move: Taunt
+|
+|-heal|p2a: Mandibuzz|171\/423|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Latios|Draco Meteor|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|25\/423
+|-unboost|p1a: Latios|spa|2
+|-damage|p1a: Latios|136\/302|[from] item: Life Orb
+|move|p2a: Mandibuzz|Roost|p2a: Mandibuzz
+|-heal|p2a: Mandibuzz|237\/423
+|
+|-heal|p2a: Mandibuzz|263\/423|[from] item: Leftovers
+|turn|12
+|
+|switch|p1a: Clefable|Clefable, F|394\/394
+|switch|p2a: Venusaur|Venusaur-Mega, F|323\/349
+|-damage|p2a: Venusaur|265\/349|[from] Spikes
+|
+|turn|13
+|
+|move|p2a: Venusaur|Sludge Bomb|p1a: Clefable
+|-supereffective|p1a: Clefable
+|-damage|p1a: Clefable|68\/394
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|
+|-heal|p1a: Clefable|92\/394|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Venusaur|Sludge Bomb|p1a: Clefable
+|-supereffective|p1a: Clefable
+|-damage|p1a: Clefable|0 fnt
+|faint|p1a: Clefable
+|
+|
+|switch|p1a: Latios|Latios, M|136\/302
+|-damage|p1a: Latios|99\/302|[from] Stealth Rock
+|turn|15
+|
+|switch|p2a: Heatran|Heatran, F|323\/323
+|-damage|p2a: Heatran|270\/323|[from] Spikes
+|move|p1a: Latios|Psyshock|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|176\/323
+|-damage|p1a: Latios|69\/302|[from] item: Life Orb
+|
+|turn|16
+|
+|switch|p1a: Hippowdon|Hippowdon, F|420\/420
+|-damage|p1a: Hippowdon|394\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p2a: Heatran|Flash Cannon|p1a: Hippowdon
+|-damage|p1a: Hippowdon|219\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Hippowdon|245\/420|[from] item: Leftovers
+|turn|17
+|
+|switch|p2a: Keldeo-Resolute|Keldeo-Resolute|323\/323
+|-damage|p2a: Keldeo-Resolute|270\/323|[from] Spikes
+|move|p1a: Hippowdon|Stealth Rock|p2a: Keldeo-Resolute
+|-sidestart|p2: Randorix|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Keldeo-Resolute|250\/323|[from] sandstorm
+|-heal|p1a: Hippowdon|271\/420|[from] item: Leftovers
+|turn|18
+|
+|move|p2a: Keldeo-Resolute|Scald|p1a: Hippowdon
+|-supereffective|p1a: Hippowdon
+|-damage|p1a: Hippowdon|0 fnt
+|faint|p1a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Keldeo-Resolute|230\/323|[from] sandstorm
+|
+|switch|p1a: Latios|Latios, M|69\/302
+|-damage|p1a: Latios|32\/302|[from] Stealth Rock
+|turn|19
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|263\/423
+|-damage|p2a: Mandibuzz|158\/423|[from] Stealth Rock
+|move|p1a: Latios|Roost|p1a: Latios
+|-heal|p1a: Latios|183\/302
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latios|165\/302|[from] sandstorm
+|-heal|p2a: Mandibuzz|184\/423|[from] item: Leftovers
+|turn|20
+|
+|move|p1a: Latios|Draco Meteor|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|0 fnt
+|-unboost|p1a: Latios|spa|2
+|-damage|p1a: Latios|135\/302|[from] item: Life Orb
+|faint|p2a: Mandibuzz
+|
+|-weather|none
+|
+|switch|p2a: Azumarill|Azumarill, M|361\/361
+|-damage|p2a: Azumarill|316\/361|[from] Stealth Rock
+|-damage|p2a: Azumarill|256\/361|[from] Spikes
+|turn|21
+|
+|switch|p1a: Scizor|Scizor, M|291\/291
+|-damage|p1a: Scizor|255\/291|[from] Stealth Rock
+|move|p2a: Azumarill|Play Rough|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|121\/291
+|
+|turn|22
+|
+|detailschange|p1a: Scizor|Scizor-Mega, M
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|267\/291
+|move|p2a: Azumarill|Play Rough|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|152\/291
+|-unboost|p1a: Scizor|atk|1
+|
+|turn|23
+|
+|switch|p2a: Venusaur|Venusaur-Mega, F|265\/349
+|-damage|p2a: Venusaur|222\/349|[from] Stealth Rock
+|-damage|p2a: Venusaur|164\/349|[from] Spikes
+|move|p1a: Scizor|Swords Dance|p1a: Scizor
+|-boost|p1a: Scizor|atk|2
+|
+|turn|24
+|
+|move|p1a: Scizor|Bug Bite|p2a: Venusaur
+|-damage|p2a: Venusaur|0 fnt
+|faint|p2a: Venusaur
+|
+|
+|switch|p2a: Heatran|Heatran, F|176\/323
+|-damage|p2a: Heatran|136\/323|[from] Stealth Rock
+|-damage|p2a: Heatran|83\/323|[from] Spikes
+|turn|25
+|
+|switch|p1a: Chesnaught|Chesnaught, F|240\/380
+|-damage|p1a: Chesnaught|217\/380|[from] Stealth Rock
+|move|p2a: Heatran|Overheat|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-damage|p1a: Chesnaught|0 fnt
+|-unboost|p2a: Heatran|spa|2
+|faint|p1a: Chesnaught
+|
+|
+|switch|p1a: Latios|Latios, M|135\/302
+|-damage|p1a: Latios|98\/302|[from] Stealth Rock
+|turn|26
+|
+|switch|p2a: Landorus|Landorus, M|280\/319
+|-damage|p2a: Landorus|241\/319|[from] Stealth Rock
+|move|p1a: Latios|Roost|p1a: Latios
+|-heal|p1a: Latios|249\/302
+|
+|turn|27
+|
+|move|p1a: Latios|Draco Meteor|p2a: Landorus
+|-damage|p2a: Landorus|0 fnt
+|-unboost|p1a: Latios|spa|2
+|-damage|p1a: Latios|219\/302|[from] item: Life Orb
+|faint|p2a: Landorus
+|
+|
+|switch|p2a: Heatran|Heatran, F|83\/323
+|-damage|p2a: Heatran|43\/323|[from] Stealth Rock
+|-damage|p2a: Heatran|0 fnt|[from] Spikes
+|faint|p2a: Heatran
+|
+|switch|p2a: Azumarill|Azumarill, M|256\/361
+|-damage|p2a: Azumarill|196\/361|[from] Spikes
+|-damage|p2a: Azumarill|151\/361|[from] Stealth Rock
+|turn|28
+|
+|switch|p1a: Scizor|Scizor-Mega, M|152\/291
+|-damage|p1a: Scizor|116\/291|[from] Stealth Rock
+|move|p2a: Azumarill|Play Rough|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|1\/291
+|
+|turn|29
+|-message|Randorix forfeited.
+|
+|win|hj regicide
+|raw|Ladder updating...
+|leave|Randorix
+|player|p2
+|raw|hj regicide's rating: 1643 &rarr; <strong>1663<\/strong><br \/>(+20 for winning)
+|raw|Randorix's rating: 1637 &rarr; <strong>1618<\/strong><br \/>(-19 for losing)

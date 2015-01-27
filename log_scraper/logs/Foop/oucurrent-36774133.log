@@ -1,0 +1,339 @@
+|join|qSeasons
+|join|Foop
+|player|p1|qSeasons|277
+|player|p2|Foop|169
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Scizor, M
+|poke|p1|Skarmory, M
+|poke|p1|Keldeo
+|poke|p1|Alakazam, M
+|poke|p1|Landorus, M
+|poke|p1|Kyurem-Black
+|poke|p2|Tyranitar, M
+|poke|p2|Landorus, M
+|poke|p2|Garchomp, F
+|poke|p2|Jirachi
+|poke|p2|Keldeo
+|poke|p2|Celebi
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Bonjour!|Skarmory, M|271\/271
+|switch|p2a: Dakuwaqa|Garchomp, F|358\/358
+|turn|1
+|callback|decision
+|
+|move|p2a: Dakuwaqa|Fire Blast|p1a: Bonjour!|[miss]
+|-miss|p2a: Dakuwaqa|p1a: Bonjour!
+|move|p1a: Bonjour!|Stealth Rock|p2a: Dakuwaqa
+|-sidestart|p2: Foop|move: Stealth Rock
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Dakuwaqa|Fire Blast|p1a: Bonjour!
+|-supereffective|p1a: Bonjour!
+|-damage|p1a: Bonjour!|71\/271
+|move|p1a: Bonjour!|Spikes|p2a: Dakuwaqa
+|-sidestart|p2: Foop|Spikes
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Dakuwaqa|Stealth Rock|p1a: Bonjour!
+|-sidestart|p1: qSeasons|move: Stealth Rock
+|move|p1a: Bonjour!|Spikes|p2a: Dakuwaqa
+|-sidestart|p2: Foop|Spikes
+|
+|turn|4
+|callback|decision
+|
+|switch|p1a: PrinceCharming|Keldeo|324\/324
+|-damage|p1a: PrinceCharming|304\/324|[from] Stealth Rock
+|move|p2a: Dakuwaqa|Fire Blast|p1a: PrinceCharming
+|-resisted|p1a: PrinceCharming
+|-damage|p1a: PrinceCharming|261\/324
+|
+|turn|5
+|callback|decision
+|join|miner0
+|chat|qSeasons|inb4 ebelt ;0
+|chat|qSeasons|hi miner
+|chat|miner0|hi seasons
+|
+|move|p1a: PrinceCharming|Hidden Power|p2a: Dakuwaqa
+|-supereffective|p2a: Dakuwaqa
+|-enditem|p2a: Dakuwaqa|Focus Sash
+|-damage|p2a: Dakuwaqa|1\/358
+|move|p2a: Dakuwaqa|Earthquake|p1a: PrinceCharming
+|-damage|p1a: PrinceCharming|62\/324
+|
+|turn|6
+|callback|decision
+|join|I'm so caught up
+|
+|move|p1a: PrinceCharming|Hidden Power|p2a: Dakuwaqa
+|-crit|p2a: Dakuwaqa
+|-supereffective|p2a: Dakuwaqa
+|-damage|p2a: Dakuwaqa|0 fnt
+|faint|p2a: Dakuwaqa
+|
+|callback|decision
+|join|tell me a nick:(
+|chat|qSeasons|it's my boy miner!
+|
+|switch|p2a: d'Artagnan|Keldeo|324\/324
+|-damage|p2a: d'Artagnan|270\/324|[from] Spikes
+|-damage|p2a: d'Artagnan|250\/324|[from] Stealth Rock
+|turn|7
+|callback|decision
+|chat|miner0|where
+|
+|move|p1a: PrinceCharming|Hidden Power|p2a: d'Artagnan
+|-resisted|p2a: d'Artagnan
+|-damage|p2a: d'Artagnan|203\/324
+|move|p2a: d'Artagnan|Substitute|p2a: d'Artagnan
+|-start|p2a: d'Artagnan|Substitute
+|-damage|p2a: d'Artagnan|122\/324
+|
+|-heal|p2a: d'Artagnan|142\/324|[from] item: Leftovers
+|turn|8
+|callback|decision
+|chat|qSeasons|fk me
+|chat|miner0|lol
+|
+|move|p1a: PrinceCharming|Hidden Power|p2a: d'Artagnan
+|-crit|p2a: d'Artagnan
+|-resisted|p2a: d'Artagnan
+|-end|p2a: d'Artagnan|Substitute
+|move|p2a: d'Artagnan|Calm Mind|p2a: d'Artagnan
+|-boost|p2a: d'Artagnan|spa|1
+|-boost|p2a: d'Artagnan|spd|1
+|
+|-heal|p2a: d'Artagnan|162\/324|[from] item: Leftovers
+|turn|9
+|callback|decision
+|chat|qSeasons|LL
+|chat|miner0|dat crit
+|
+|switch|p1a: Bonjour!|Skarmory, M|71\/271
+|-damage|p1a: Bonjour!|38\/271|[from] Stealth Rock
+|move|p2a: d'Artagnan|Substitute|p2a: d'Artagnan
+|-start|p2a: d'Artagnan|Substitute
+|-damage|p2a: d'Artagnan|81\/324
+|
+|-heal|p2a: d'Artagnan|101\/324|[from] item: Leftovers
+|turn|10
+|callback|decision
+|-enditem|p1a: Bonjour!|Custap Berry|[eat]
+|-activate|p1a: Bonjour!|Custap Berry
+|
+|move|p1a: Bonjour!|Brave Bird|p2a: d'Artagnan
+|-supereffective|p2a: d'Artagnan
+|-end|p2a: d'Artagnan|Substitute
+|-damage|p1a: Bonjour!|11\/271|[from] recoil|[of] p2a: d'Artagnan
+|move|p2a: d'Artagnan|Substitute|p2a: d'Artagnan
+|-start|p2a: d'Artagnan|Substitute
+|-damage|p2a: d'Artagnan|20\/324
+|
+|-heal|p2a: d'Artagnan|40\/324|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p2a: d'Artagnan|Secret Sword|p1a: Bonjour!
+|-crit|p1a: Bonjour!
+|-damage|p1a: Bonjour!|0 fnt
+|faint|p1a: Bonjour!
+|
+|-heal|p2a: d'Artagnan|60\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: PrinceCharming|Keldeo|62\/324
+|-damage|p1a: PrinceCharming|42\/324|[from] Stealth Rock
+|turn|12
+|callback|decision
+|chat|qSeasons|miner, i let u down
+|chat|qSeasons|T_T
+|
+|move|p1a: PrinceCharming|Secret Sword|p2a: d'Artagnan
+|-end|p2a: d'Artagnan|Substitute
+|move|p2a: d'Artagnan|Secret Sword|p1a: PrinceCharming
+|-damage|p1a: PrinceCharming|0 fnt
+|faint|p1a: PrinceCharming
+|
+|-heal|p2a: d'Artagnan|80\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: SpoonFeed|Alakazam, M|252\/252
+|turn|13
+|callback|decision
+|
+|switch|p2a: Chani|Jirachi|373\/373
+|-damage|p2a: Chani|311\/373|[from] Spikes
+|-damage|p2a: Chani|288\/373|[from] Stealth Rock
+|move|p1a: SpoonFeed|Psyshock|p2a: Chani
+|-resisted|p2a: Chani
+|-damage|p2a: Chani|254\/373
+|
+|turn|14
+|callback|decision
+|chat|qSeasons|nminer i let u dpwn T_T
+|
+|switch|p1a: Scizor|Scizor, M|343\/343
+|-damage|p1a: Scizor|301\/343|[from] Stealth Rock
+|move|p2a: Chani|U-turn|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|262\/343
+|callback|decision
+|leave|I'm so caught up
+|
+|switch|p2a: Landorus|Landorus, M|333\/333
+|-damage|p2a: Landorus|292\/333|[from] Stealth Rock
+|
+|turn|15
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Landorus
+|-damage|p2a: Landorus|112\/333
+|move|p2a: Landorus|Earth Power|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|faint|p1a: Scizor
+|
+|callback|decision
+|chat|qSeasons|sorry miner
+|
+|switch|p1a: SpoonFeed|Alakazam, M|252\/252
+|turn|16
+|callback|decision
+|
+|move|p1a: SpoonFeed|Focus Blast|p2a: Landorus|[miss]
+|-miss|p1a: SpoonFeed|p2a: Landorus
+|move|p2a: Landorus|Earth Power|p1a: SpoonFeed
+|-crit|p1a: SpoonFeed
+|-enditem|p1a: SpoonFeed|Focus Sash
+|-damage|p1a: SpoonFeed|1\/252
+|
+|turn|17
+|callback|decision
+|
+|move|p1a: SpoonFeed|Hidden Power|p2a: Landorus
+|-crit|p2a: Landorus
+|-supereffective|p2a: Landorus
+|-damage|p2a: Landorus|0 fnt
+|faint|p2a: Landorus
+|
+|callback|decision
+|chat|qSeasons|miner T_T
+|chat|qSeasons|sorry
+|
+|switch|p2a: Chani|Jirachi|254\/373
+|-damage|p2a: Chani|192\/373|[from] Spikes
+|-damage|p2a: Chani|169\/373|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|move|p2a: Chani|Iron Head|p1a: SpoonFeed
+|-damage|p1a: SpoonFeed|0 fnt
+|faint|p1a: SpoonFeed
+|
+|callback|decision
+|
+|switch|p1a: Kami|Landorus, M|319\/319
+|-damage|p1a: Kami|280\/319|[from] Stealth Rock
+|turn|19
+|callback|decision
+|chat|qSeasons|well
+|chat|qSeasons|if jirachi doesnt flinch me to death
+|chat|qSeasons|i can win
+|
+|move|p2a: Chani|Iron Head|p1a: Kami
+|-damage|p1a: Kami|135\/319
+|move|p1a: Kami|Earth Power|p2a: Chani
+|-supereffective|p2a: Chani
+|-damage|p2a: Chani|0 fnt
+|faint|p2a: Chani
+|
+|callback|decision
+|
+|switch|p2a: Celebi|Celebi|404\/404
+|-damage|p2a: Celebi|337\/404|[from] Spikes
+|-damage|p2a: Celebi|287\/404|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|move|p1a: Kami|U-turn|p2a: Celebi
+|-supereffective|p2a: Celebi
+|-damage|p2a: Celebi|0 fnt
+|-damage|p1a: Kami|104\/319|[from] item: Life Orb
+|faint|p2a: Celebi
+|callback|decision
+|
+|switch|p1a: Boss|Kyurem-Black|405\/405
+|-damage|p1a: Boss|304\/405|[from] Stealth Rock
+|-ability|p1a: Boss|Teravolt
+|
+|-heal|p1a: Boss|329\/405|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: d'Artagnan|Keldeo|80\/324
+|-damage|p2a: d'Artagnan|60\/324|[from] Stealth Rock
+|-damage|p2a: d'Artagnan|6\/324|[from] Spikes
+|turn|21
+|callback|decision
+|chat|qSeasons|WTF
+|chat|qSeasons|i didnt know
+|
+|move|p2a: d'Artagnan|Secret Sword|p1a: Boss
+|-supereffective|p1a: Boss
+|-damage|p1a: Boss|3\/405
+|move|p1a: Boss|Dragon Claw|p2a: d'Artagnan
+|-damage|p2a: d'Artagnan|0 fnt
+|faint|p2a: d'Artagnan
+|
+|-heal|p1a: Boss|28\/405|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Meshugah|Tyranitar, M|386\/386
+|-damage|p2a: Meshugah|322\/386|[from] Spikes
+|-damage|p2a: Meshugah|274\/386|[from] Stealth Rock
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Meshugah
+|turn|22
+|callback|decision
+|
+|move|p1a: Boss|Dragon Claw|p2a: Meshugah
+|-damage|p2a: Meshugah|106\/386
+|move|p2a: Meshugah|Crunch|p1a: Boss
+|-damage|p1a: Boss|0 fnt
+|faint|p1a: Boss
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Kami|Landorus, M|104\/319
+|-damage|p1a: Kami|65\/319|[from] Stealth Rock
+|turn|23
+|callback|decision
+|
+|move|p1a: Kami|Earth Power|p2a: Meshugah
+|-supereffective|p2a: Meshugah
+|-damage|p2a: Meshugah|0 fnt
+|faint|p2a: Meshugah
+|
+|win|qSeasons
+|raw|Ladder updating...
+|raw|qSeasons's rating: 2015 &rarr; <strong>2021<\/strong><br \/>(+6 for winning)
+|raw|Foop's rating: 2010 &rarr; <strong>2006<\/strong><br \/>(-4 for losing)
+|chat|qSeasons|gg!
+|chat|miner0|seasons won :o
+|leave|tell me a nick:(

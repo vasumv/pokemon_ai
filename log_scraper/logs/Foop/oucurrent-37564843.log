@@ -1,0 +1,383 @@
+|join|Foop
+|join|Greenrocket
+|player|p1|Foop|265
+|player|p2|Greenrocket|192
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Tyranitar, M
+|poke|p1|Landorus, M
+|poke|p1|Garchomp, F
+|poke|p1|Jirachi
+|poke|p1|Keldeo
+|poke|p1|Latias, F
+|poke|p2|Ninetales, M, shiny
+|poke|p2|Heatran, F
+|poke|p2|Donphan, M
+|poke|p2|Latios, M, shiny
+|poke|p2|Darmanitan, M, shiny
+|poke|p2|Venusaur, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Landorus|Landorus, M|333\/333
+|switch|p2a: Shofu|Darmanitan, M, shiny|351\/351
+|turn|1
+|callback|decision
+|
+|switch|p1a: Meshugah|Tyranitar, M|386\/386
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Meshugah
+|move|p2a: Shofu|U-turn|p1a: Meshugah
+|-supereffective|p1a: Meshugah
+|-damage|p1a: Meshugah|208\/386
+|callback|decision
+|
+|switch|p2a: 69-Tales|Ninetales, M, shiny|288\/288
+|-weather|SunnyDay|[from] ability: Drought|[of] p2a: 69-Tales
+|
+|-weather|SunnyDay|[upkeep]
+|turn|2
+|callback|decision
+|
+|move|p2a: 69-Tales|SolarBeam|p1a: Meshugah|[still]
+|-prepare|p2a: 69-Tales|SolarBeam|p1a: Meshugah
+|-anim|p2a: 69-Tales|SolarBeam|p1a: Meshugah
+|-supereffective|p1a: Meshugah
+|-damage|p1a: Meshugah|0 fnt
+|faint|p1a: Meshugah
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: Dakuwaqa|Garchomp, F|358\/358
+|turn|3
+|callback|decision
+|
+|move|p1a: Dakuwaqa|Stealth Rock|p2a: 69-Tales
+|-sidestart|p2: Greenrocket|move: Stealth Rock
+|move|p2a: 69-Tales|SolarBeam|p1a: Dakuwaqa|[still]
+|-prepare|p2a: 69-Tales|SolarBeam|p1a: Dakuwaqa
+|-anim|p2a: 69-Tales|SolarBeam|p1a: Dakuwaqa
+|-damage|p1a: Dakuwaqa|217\/358
+|
+|-weather|SunnyDay|[upkeep]
+|turn|4
+|callback|decision
+|
+|switch|p1a: Landorus|Landorus, M|333\/333
+|move|p2a: 69-Tales|SolarBeam|p1a: Landorus|[still]
+|-prepare|p2a: 69-Tales|SolarBeam|p1a: Landorus
+|-anim|p2a: 69-Tales|SolarBeam|p1a: Landorus
+|-damage|p1a: Landorus|204\/333
+|
+|-weather|SunnyDay|[upkeep]
+|turn|5
+|callback|decision
+|
+|switch|p2a: La De Da|Latios, M, shiny|302\/302
+|-damage|p2a: La De Da|265\/302|[from] Stealth Rock
+|move|p1a: Landorus|Earth Power|p2a: La De Da
+|-immune|p2a: La De Da|[msg]
+|
+|-weather|SunnyDay|[upkeep]
+|turn|6
+|callback|decision
+|
+|switch|p1a: Chani|Jirachi|373\/373
+|move|p2a: La De Da|Draco Meteor|p1a: Chani
+|-resisted|p1a: Chani
+|-damage|p1a: Chani|198\/373
+|-unboost|p2a: La De Da|spa|2
+|
+|-weather|SunnyDay|[upkeep]
+|turn|7
+|callback|decision
+|
+|switch|p2a: RedEye|Heatran, F|386\/386
+|-damage|p2a: RedEye|338\/386|[from] Stealth Rock
+|move|p1a: Chani|U-turn|p2a: RedEye
+|-resisted|p2a: RedEye
+|-damage|p2a: RedEye|319\/386
+|callback|decision
+|
+|switch|p1a: Dakuwaqa|Garchomp, F|217\/358
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: RedEye|343\/386|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p1a: Dakuwaqa|Earthquake|p2a: RedEye
+|-supereffective|p2a: RedEye
+|-damage|p2a: RedEye|0 fnt
+|faint|p2a: RedEye
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p2a: La De Da|Latios, M, shiny|265\/302
+|-damage|p2a: La De Da|228\/302|[from] Stealth Rock
+|turn|9
+|callback|decision
+|
+|move|p2a: La De Da|Surf|p1a: Dakuwaqa
+|-crit|p1a: Dakuwaqa
+|-damage|p1a: Dakuwaqa|6\/358
+|move|p1a: Dakuwaqa|Outrage|p2a: La De Da
+|-supereffective|p2a: La De Da
+|-damage|p2a: La De Da|0 fnt
+|faint|p2a: La De Da
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p2a: High Rolla|Donphan, M|353\/353
+|-damage|p2a: High Rolla|331\/353|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|move|p2a: High Rolla|Ice Shard|p1a: Dakuwaqa
+|-supereffective|p1a: Dakuwaqa
+|-damage|p1a: Dakuwaqa|0 fnt
+|faint|p1a: Dakuwaqa
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: High Rolla|353\/353|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Dionysus|Latias, F|364\/364
+|turn|11
+|callback|decision
+|
+|move|p1a: Dionysus|Calm Mind|p1a: Dionysus
+|-boost|p1a: Dionysus|spa|1
+|-boost|p1a: Dionysus|spd|1
+|move|p2a: High Rolla|Rapid Spin|p1a: Dionysus
+|-damage|p1a: Dionysus|341\/364
+|-sideend|p2: Greenrocket|Stealth Rock|[from] move: Rapid Spin|[of] p2a: High Rolla
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Dionysus|363\/364|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: High Rolla|Ice Shard|p1a: Dionysus
+|-supereffective|p1a: Dionysus
+|-damage|p1a: Dionysus|279\/364
+|move|p1a: Dionysus|Dragon Pulse|p2a: High Rolla
+|-damage|p2a: High Rolla|100\/353
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Dionysus|301\/364|[from] item: Leftovers
+|-heal|p2a: High Rolla|122\/353|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: High Rolla|Ice Shard|p1a: Dionysus
+|-supereffective|p1a: Dionysus
+|-damage|p1a: Dionysus|209\/364
+|move|p1a: Dionysus|Calm Mind|p1a: Dionysus
+|-boost|p1a: Dionysus|spa|1
+|-boost|p1a: Dionysus|spd|1
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Dionysus|231\/364|[from] item: Leftovers
+|-heal|p2a: High Rolla|144\/353|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p2a: High Rolla|Ice Shard|p1a: Dionysus
+|-supereffective|p1a: Dionysus
+|-damage|p1a: Dionysus|143\/364
+|move|p1a: Dionysus|Recover|p1a: Dionysus
+|-heal|p1a: Dionysus|325\/364
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Dionysus|347\/364|[from] item: Leftovers
+|-heal|p2a: High Rolla|166\/353|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p2a: High Rolla|Ice Shard|p1a: Dionysus
+|-supereffective|p1a: Dionysus
+|-damage|p1a: Dionysus|261\/364
+|move|p1a: Dionysus|Substitute|p1a: Dionysus
+|-start|p1a: Dionysus|Substitute
+|-damage|p1a: Dionysus|170\/364
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Dionysus|192\/364|[from] item: Leftovers
+|-heal|p2a: High Rolla|188\/353|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p2a: High Rolla|Ice Shard|p1a: Dionysus
+|-supereffective|p1a: Dionysus
+|-activate|p1a: Dionysus|Substitute|[damage]
+|move|p1a: Dionysus|Dragon Pulse|p2a: High Rolla
+|-damage|p2a: High Rolla|0 fnt
+|faint|p2a: High Rolla
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Dionysus|214\/364|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: 69-Tales|Ninetales, M, shiny|288\/288
+|turn|17
+|callback|decision
+|
+|move|p1a: Dionysus|Dragon Pulse|p2a: 69-Tales
+|-damage|p2a: 69-Tales|45\/288
+|move|p2a: 69-Tales|Fire Blast|p1a: Dionysus
+|-resisted|p1a: Dionysus
+|-end|p1a: Dionysus|Substitute
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Dionysus|236\/364|[from] item: Leftovers
+|-heal|p2a: 69-Tales|63\/288|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p1a: Dionysus|Substitute|p1a: Dionysus
+|-start|p1a: Dionysus|Substitute
+|-damage|p1a: Dionysus|145\/364
+|move|p2a: 69-Tales|Fire Blast|p1a: Dionysus
+|-crit|p1a: Dionysus
+|-resisted|p1a: Dionysus
+|-end|p1a: Dionysus|Substitute
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Dionysus|167\/364|[from] item: Leftovers
+|-heal|p2a: 69-Tales|81\/288|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p1a: Dionysus|Recover|p1a: Dionysus
+|-heal|p1a: Dionysus|349\/364
+|move|p2a: 69-Tales|Fire Blast|p1a: Dionysus
+|-resisted|p1a: Dionysus
+|-damage|p1a: Dionysus|306\/364
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Dionysus|328\/364|[from] item: Leftovers
+|-heal|p2a: 69-Tales|99\/288|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|switch|p2a: Shofu|Darmanitan, M, shiny|351\/351
+|move|p1a: Dionysus|Substitute|p1a: Dionysus
+|-start|p1a: Dionysus|Substitute
+|-damage|p1a: Dionysus|237\/364
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Dionysus|259\/364|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p2a: Shofu|U-turn|p1a: Dionysus
+|-supereffective|p1a: Dionysus
+|-end|p1a: Dionysus|Substitute
+|callback|decision
+|
+|switch|p2a: Dank-a-saur|Venusaur, M|302\/302
+|move|p1a: Dionysus|Substitute|p1a: Dionysus
+|-start|p1a: Dionysus|Substitute
+|-damage|p1a: Dionysus|168\/364
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Dionysus|190\/364|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p2a: Dank-a-saur|Giga Drain|p1a: Dionysus
+|-resisted|p1a: Dionysus
+|-activate|p1a: Dionysus|Substitute|[damage]
+|move|p1a: Dionysus|Dragon Pulse|p2a: Dank-a-saur
+|-damage|p2a: Dank-a-saur|71\/302
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Dank-a-saur|89\/302|[from] item: Black Sludge
+|-heal|p1a: Dionysus|212\/364|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p2a: Dank-a-saur|Giga Drain|p1a: Dionysus
+|-resisted|p1a: Dionysus
+|-activate|p1a: Dionysus|Substitute|[damage]
+|-heal|p2a: Dank-a-saur|101\/302|[from] drain|[of] p1a: Dionysus
+|move|p1a: Dionysus|Substitute|p1a: Dionysus
+|-fail|p1a: Dionysus|move: Substitute
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Dank-a-saur|119\/302|[from] item: Black Sludge
+|-heal|p1a: Dionysus|234\/364|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p2a: Dank-a-saur|Giga Drain|p1a: Dionysus
+|-resisted|p1a: Dionysus
+|-activate|p1a: Dionysus|Substitute|[damage]
+|-heal|p2a: Dank-a-saur|132\/302|[from] drain|[of] p1a: Dionysus
+|move|p1a: Dionysus|Substitute|p1a: Dionysus
+|-fail|p1a: Dionysus|move: Substitute
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Dank-a-saur|150\/302|[from] item: Black Sludge
+|-heal|p1a: Dionysus|256\/364|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p2a: Dank-a-saur|Growth|p2a: Dank-a-saur
+|-boost|p2a: Dank-a-saur|atk|2
+|-boost|p2a: Dank-a-saur|spa|2
+|move|p1a: Dionysus|Substitute|p1a: Dionysus
+|-fail|p1a: Dionysus|move: Substitute
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Dank-a-saur|168\/302|[from] item: Black Sludge
+|-heal|p1a: Dionysus|278\/364|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|move|p2a: Dank-a-saur|Giga Drain|p1a: Dionysus
+|-resisted|p1a: Dionysus
+|-end|p1a: Dionysus|Substitute
+|-heal|p2a: Dank-a-saur|176\/302|[from] drain|[of] p1a: Dionysus
+|move|p1a: Dionysus|Substitute|p1a: Dionysus
+|-start|p1a: Dionysus|Substitute
+|-damage|p1a: Dionysus|187\/364
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Dank-a-saur|194\/302|[from] item: Black Sludge
+|-heal|p1a: Dionysus|209\/364|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|move|p2a: Dank-a-saur|Giga Drain|p1a: Dionysus
+|-resisted|p1a: Dionysus
+|-activate|p1a: Dionysus|Substitute|[damage]
+|-heal|p2a: Dank-a-saur|218\/302|[from] drain|[of] p1a: Dionysus
+|move|p1a: Dionysus|Dragon Pulse|p2a: Dank-a-saur
+|-damage|p2a: Dank-a-saur|0 fnt
+|faint|p2a: Dank-a-saur
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Dionysus|231\/364|[from] item: Leftovers
+|callback|decision
+|-message|Greenrocket forfeited.
+|
+|win|Foop
+|raw|Ladder updating...
+|leave|Greenrocket
+|player|p2
+|raw|Foop's rating: 2044 &rarr; <strong>2045<\/strong><br \/>(+1 for winning)
+|raw|Greenrocket's rating: 1711 &rarr; <strong>1706<\/strong><br \/>(-5 for losing)

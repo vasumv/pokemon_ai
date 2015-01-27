@@ -1,0 +1,526 @@
+|join|bizarman
+|join|Ful
+|player|p1|bizarman|42
+|player|p2|Ful|114
+|gametype|singles
+|gen|6
+|tier|ORAS OU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Metagross
+|poke|p1|Latias, F
+|poke|p1|Greninja, M
+|poke|p1|Clefable, M
+|poke|p1|Heatran, M
+|poke|p1|Dragonite, M
+|poke|p2|Greninja, M
+|poke|p2|Landorus-Therian, M
+|poke|p2|Breloom, F, shiny
+|poke|p2|Gardevoir, F
+|poke|p2|Gyarados, F, shiny
+|poke|p2|Heatran, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Dragonite|Dragonite, M|324\/324
+|switch|p2a: Tap Dat|Gardevoir, F|277\/277
+|-ability|p2a: Tap Dat|Multiscale|[from] ability: Trace|[of] p1a: Dragonite
+|turn|1
+|
+|switch|p1a: Heatran|Heatran, M|323\/323
+|move|p2a: Tap Dat|Trick|p1a: Heatran
+|-activate|p2a: Tap Dat|move: Trick|[of] p1a: Heatran
+|-item|p1a: Heatran|Choice Scarf|[from] move: Trick
+|-item|p2a: Tap Dat|Choice Scarf|[from] move: Trick
+|
+|turn|2
+|c|âFul|wow
+|
+|switch|p2a: Hot Tranny|Heatran, F|385\/385
+|switch|p1a: Clefable|Clefable, M|394\/394
+|
+|turn|3
+|
+|switch|p1a: Heatran|Heatran, M|323\/323
+|move|p2a: Hot Tranny|Taunt|p1a: Heatran
+|-start|p1a: Heatran|move: Taunt
+|
+|turn|4
+|
+|switch|p2a: Frosted Flakes|Landorus-Therian, M|382\/382
+|-ability|p2a: Frosted Flakes|Intimidate|[of] p1a: Heatran
+|-unboost|p1a: Heatran|atk|1
+|move|p1a: Heatran|Earth Power|p2a: Frosted Flakes
+|-immune|p2a: Frosted Flakes|[msg]
+|
+|turn|5
+|
+|switch|p1a: Clefable|Clefable, M|394\/394
+|move|p2a: Frosted Flakes|U-turn|p1a: Clefable
+|-resisted|p1a: Clefable
+|-damage|p1a: Clefable|358\/394
+|
+|switch|p2a: Hot Tranny|Heatran, F|385\/385
+|
+|-heal|p1a: Clefable|382\/394|[from] item: Leftovers
+|turn|6
+|
+|switch|p1a: Greninja|Greninja, M|285\/285
+|move|p2a: Hot Tranny|Earth Power|p1a: Greninja
+|-damage|p1a: Greninja|175\/285
+|
+|turn|7
+|
+|switch|p2a: Serpentine|Gyarados, F, shiny|393\/393
+|-ability|p2a: Serpentine|Intimidate|[of] p1a: Greninja
+|-unboost|p1a: Greninja|atk|1
+|move|p1a: Greninja|Dark Pulse|p2a: Serpentine
+|-start|p1a: Greninja|typechange|Dark|[from] Protean
+|-damage|p2a: Serpentine|255\/393
+|-damage|p1a: Greninja|147\/285|[from] item: Life Orb
+|
+|turn|8
+|
+|switch|p1a: Metagross|Metagross|321\/321
+|move|p2a: Serpentine|Rest|p2a: Serpentine
+|-status|p2a: Serpentine|slp
+|-heal|p2a: Serpentine|393\/393 slp|[silent]
+|-status|p2a: Serpentine|slp|[from] move: Rest
+|
+|turn|9
+|
+|detailschange|p1a: Metagross|Metagross-Mega
+|message|Metagross has Mega Evolved into Mega Metagross!
+|detailschange|p2a: Serpentine|Gyarados-Mega, F, shiny
+|message|Gyarados has Mega Evolved into Mega Gyarados!
+|-ability|p2a: Serpentine|Mold Breaker
+|move|p1a: Metagross|Zen Headbutt|p2a: Serpentine
+|-immune|p2a: Serpentine|[msg]
+|cant|p2a: Serpentine|slp
+|move|p2a: Serpentine|Sleep Talk|p2a: Serpentine
+|move|p2a: Serpentine|Rest|p2a: Serpentine|[from]Sleep Talk
+|-fail|p2a: Serpentine
+|
+|turn|10
+|
+|switch|p1a: Clefable|Clefable, M|382\/394
+|cant|p2a: Serpentine|slp
+|move|p2a: Serpentine|Sleep Talk|p2a: Serpentine
+|move|p2a: Serpentine|Dragon Tail|p1a: Clefable|[from]Sleep Talk
+|-immune|p1a: Clefable|[msg]
+|
+|-heal|p1a: Clefable|394\/394|[from] item: Leftovers
+|turn|11
+|
+|switch|p1a: Dragonite|Dragonite, M|324\/324
+|-curestatus|p2a: Serpentine|slp
+|move|p2a: Serpentine|Waterfall|p1a: Dragonite
+|-resisted|p1a: Dragonite
+|-damage|p1a: Dragonite|250\/324
+|
+|turn|12
+|
+|switch|p1a: Latias|Latias, F|302\/302
+|move|p2a: Serpentine|Dragon Tail|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|160\/302
+|drag|p1a: Dragonite|Dragonite, M|250\/324
+|
+|turn|13
+|
+|switch|p1a: Clefable|Clefable, M|394\/394
+|move|p2a: Serpentine|Dragon Tail|p1a: Clefable
+|-immune|p1a: Clefable|[msg]
+|
+|turn|14
+|
+|move|p2a: Serpentine|Waterfall|p1a: Clefable
+|-damage|p1a: Clefable|277\/394
+|move|p1a: Clefable|Moonblast|p2a: Serpentine
+|-supereffective|p2a: Serpentine
+|-damage|p2a: Serpentine|231\/393
+|
+|-heal|p1a: Clefable|301\/394|[from] item: Leftovers
+|turn|15
+|
+|switch|p2a: Hot Tranny|Heatran, F|385\/385
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|
+|-heal|p1a: Clefable|325\/394|[from] item: Leftovers
+|turn|16
+|
+|switch|p1a: Dragonite|Dragonite, M|250\/324
+|move|p2a: Hot Tranny|Earth Power|p1a: Dragonite
+|-immune|p1a: Dragonite|[msg]
+|
+|turn|17
+|
+|switch|p2a: Frosted Flakes|Landorus-Therian, M|382\/382
+|-ability|p2a: Frosted Flakes|Intimidate|[of] p1a: Dragonite
+|-unboost|p1a: Dragonite|atk|1
+|move|p1a: Dragonite|Earthquake|p2a: Frosted Flakes
+|-immune|p2a: Frosted Flakes|[msg]
+|
+|turn|18
+|
+|move|p1a: Dragonite|Dragon Dance|p1a: Dragonite
+|-boost|p1a: Dragonite|atk|1
+|-boost|p1a: Dragonite|spe|1
+|move|p2a: Frosted Flakes|U-turn|p1a: Dragonite
+|-resisted|p1a: Dragonite
+|-damage|p1a: Dragonite|210\/324
+|
+|switch|p2a: Tap Dat|Gardevoir, F|277\/277
+|-ability|p2a: Tap Dat|Multiscale|[from] ability: Trace|[of] p1a: Dragonite
+|
+|turn|19
+|
+|switch|p1a: Heatran|Heatran, M|323\/323
+|move|p2a: Tap Dat|Moonblast|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|282\/323
+|
+|turn|20
+|
+|switch|p2a: Serpentine|Gyarados-Mega, F, shiny|231\/393
+|-ability|p2a: Serpentine|Mold Breaker
+|move|p1a: Heatran|Overheat|p2a: Serpentine
+|-resisted|p2a: Serpentine
+|-damage|p2a: Serpentine|154\/393
+|-unboost|p1a: Heatran|spa|2
+|
+|turn|21
+|
+|switch|p1a: Clefable|Clefable, M|325\/394
+|move|p2a: Serpentine|Rest|p2a: Serpentine
+|-status|p2a: Serpentine|slp
+|-heal|p2a: Serpentine|393\/393 slp|[silent]
+|-status|p2a: Serpentine|slp|[from] move: Rest
+|
+|-heal|p1a: Clefable|349\/394|[from] item: Leftovers
+|turn|22
+|
+|switch|p2a: Hot Tranny|Heatran, F|385\/385
+|switch|p1a: Metagross|Metagross-Mega|321\/321
+|
+|turn|23
+|c|âFul|why does clefable eat everything
+|
+|switch|p2a: Serpentine|Gyarados-Mega, F, shiny|393\/393 slp
+|-ability|p2a: Serpentine|Mold Breaker
+|move|p1a: Metagross|Ice Punch|p2a: Serpentine
+|-resisted|p2a: Serpentine
+|-damage|p2a: Serpentine|337\/393 slp
+|
+|turn|24
+|
+|switch|p1a: Greninja|Greninja, M|147\/285
+|cant|p2a: Serpentine|slp
+|move|p2a: Serpentine|Sleep Talk|p2a: Serpentine
+|move|p2a: Serpentine|Dragon Tail|p1a: Greninja|[from]Sleep Talk
+|-damage|p1a: Greninja|42\/285
+|drag|p1a: Heatran|Heatran, M|282\/323
+|
+|turn|25
+|
+|switch|p1a: Clefable|Clefable, M|349\/394
+|cant|p2a: Serpentine|slp
+|move|p2a: Serpentine|Sleep Talk|p2a: Serpentine
+|move|p2a: Serpentine|Waterfall|p1a: Clefable|[from]Sleep Talk
+|-damage|p1a: Clefable|232\/394
+|
+|-heal|p1a: Clefable|256\/394|[from] item: Leftovers
+|turn|26
+|
+|switch|p2a: Hot Tranny|Heatran, F|385\/385
+|move|p1a: Clefable|Soft-Boiled|p1a: Clefable
+|-heal|p1a: Clefable|394\/394
+|
+|turn|27
+|
+|switch|p1a: Heatran|Heatran, M|282\/323
+|move|p2a: Hot Tranny|Lava Plume|p1a: Heatran
+|-start|p1a: Heatran|ability: Flash Fire
+|
+|turn|28
+|
+|switch|p2a: Serpentine|Gyarados-Mega, F, shiny|337\/393 slp
+|-ability|p2a: Serpentine|Mold Breaker
+|move|p1a: Heatran|Earth Power|p2a: Serpentine
+|-damage|p2a: Serpentine|261\/393 slp
+|
+|turn|29
+|
+|switch|p1a: Clefable|Clefable, M|394\/394
+|-curestatus|p2a: Serpentine|slp
+|move|p2a: Serpentine|Waterfall|p1a: Clefable
+|-damage|p1a: Clefable|271\/394
+|
+|-heal|p1a: Clefable|295\/394|[from] item: Leftovers
+|turn|30
+|
+|switch|p2a: Hot Tranny|Heatran, F|385\/385
+|switch|p1a: Metagross|Metagross-Mega|321\/321
+|
+|turn|31
+|
+|switch|p2a: Serpentine|Gyarados-Mega, F, shiny|261\/393
+|-ability|p2a: Serpentine|Mold Breaker
+|move|p1a: Metagross|Earthquake|p2a: Serpentine
+|-damage|p2a: Serpentine|157\/393
+|
+|turn|32
+|
+|switch|p1a: Clefable|Clefable, M|295\/394
+|move|p2a: Serpentine|Rest|p2a: Serpentine
+|-status|p2a: Serpentine|slp
+|-heal|p2a: Serpentine|393\/393 slp|[silent]
+|-status|p2a: Serpentine|slp|[from] move: Rest
+|
+|-heal|p1a: Clefable|319\/394|[from] item: Leftovers
+|turn|33
+|
+|switch|p2a: Hot Tranny|Heatran, F|385\/385
+|move|p1a: Clefable|Moonblast|p2a: Hot Tranny
+|-resisted|p2a: Hot Tranny
+|-damage|p2a: Hot Tranny|366\/385
+|-unboost|p2a: Hot Tranny|spa|1
+|
+|-heal|p2a: Hot Tranny|385\/385|[from] item: Leftovers
+|-heal|p1a: Clefable|343\/394|[from] item: Leftovers
+|turn|34
+|
+|move|p2a: Hot Tranny|Earth Power|p1a: Clefable
+|-damage|p1a: Clefable|276\/394
+|move|p1a: Clefable|Soft-Boiled|p1a: Clefable
+|-heal|p1a: Clefable|394\/394
+|
+|turn|35
+|
+|switch|p1a: Latias|Latias, F|160\/302
+|move|p2a: Hot Tranny|Toxic|p1a: Latias
+|-status|p1a: Latias|tox
+|
+|-damage|p1a: Latias|142\/302 tox|[from] psn
+|turn|36
+|
+|switch|p1a: Dragonite|Dragonite, M|210\/324
+|move|p2a: Hot Tranny|Taunt|p1a: Dragonite
+|-start|p1a: Dragonite|move: Taunt
+|
+|turn|37
+|c|âFul|the stall is real
+|
+|switch|p1a: Latias|Latias, F|142\/302 tox
+|switch|p2a: Serpentine|Gyarados-Mega, F, shiny|393\/393 slp
+|-ability|p2a: Serpentine|Mold Breaker
+|
+|-damage|p1a: Latias|124\/302 tox|[from] psn
+|turn|38
+|
+|move|p1a: Latias|Draco Meteor|p2a: Serpentine
+|-crit|p2a: Serpentine
+|-damage|p2a: Serpentine|107\/393 slp
+|-unboost|p1a: Latias|spa|2
+|-damage|p1a: Latias|94\/302 tox|[from] item: Life Orb
+|cant|p2a: Serpentine|slp
+|move|p2a: Serpentine|Sleep Talk|p2a: Serpentine
+|move|p2a: Serpentine|Dragon Tail|p1a: Latias|[from]Sleep Talk
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|0 fnt
+|faint|p1a: Latias
+|
+|c|âFul|1st blood tho
+|
+|switch|p1a: Greninja|Greninja, M|42\/285
+|turn|39
+|
+|switch|p2a: Tap Dat|Gardevoir, F|277\/277
+|-ability|p2a: Tap Dat|Protean|[from] ability: Trace|[of] p1a: Greninja
+|move|p1a: Greninja|Gunk Shot|p2a: Tap Dat
+|-start|p1a: Greninja|typechange|Poison|[from] Protean
+|-supereffective|p2a: Tap Dat
+|-damage|p2a: Tap Dat|0 fnt
+|-damage|p1a: Greninja|14\/285|[from] item: Life Orb
+|faint|p2a: Tap Dat
+|
+|
+|switch|p2a: Trippin'|Breloom, F, shiny|323\/323
+|turn|40
+|
+|move|p2a: Trippin'|Mach Punch|p1a: Greninja
+|-resisted|p1a: Greninja
+|-damage|p1a: Greninja|0 fnt
+|faint|p1a: Greninja
+|
+|-status|p2a: Trippin'|tox|[from] item: Toxic Orb
+|
+|switch|p1a: Metagross|Metagross-Mega|321\/321
+|turn|41
+|c|âFul|main threat is gone :D
+|c|âbizarman|yah your defensive core is frightening
+|
+|switch|p2a: Frosted Flakes|Landorus-Therian, M|382\/382
+|-ability|p2a: Frosted Flakes|Intimidate|[of] p1a: Metagross
+|-unboost|p1a: Metagross|atk|1
+|move|p1a: Metagross|Meteor Mash|p2a: Frosted Flakes
+|-damage|p2a: Frosted Flakes|247\/382
+|
+|-heal|p2a: Frosted Flakes|270\/382|[from] item: Leftovers
+|turn|42
+|
+|switch|p1a: Dragonite|Dragonite, M|210\/324
+|switch|p2a: Serpentine|Gyarados-Mega, F, shiny|107\/393 slp
+|-ability|p2a: Serpentine|Mold Breaker
+|
+|turn|43
+|c|âbizarman|Mega-medi is never here when i need it
+|c|âFul|lol
+|
+|move|p1a: Dragonite|Earthquake|p2a: Serpentine
+|-damage|p2a: Serpentine|7\/393 slp
+|cant|p2a: Serpentine|slp
+|move|p2a: Serpentine|Sleep Talk|p2a: Serpentine
+|move|p2a: Serpentine|Dragon Tail|p1a: Dragonite|[from]Sleep Talk
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|58\/324
+|drag|p1a: Heatran|Heatran, M|282\/323
+|
+|turn|44
+|
+|move|p1a: Heatran|Earth Power|p2a: Serpentine
+|-crit|p2a: Serpentine
+|-damage|p2a: Serpentine|0 fnt
+|faint|p2a: Serpentine
+|
+|
+|switch|p2a: Frosted Flakes|Landorus-Therian, M|270\/382
+|-ability|p2a: Frosted Flakes|Intimidate|[of] p1a: Heatran
+|-unboost|p1a: Heatran|atk|1
+|turn|45
+|
+|switch|p1a: Clefable|Clefable, M|394\/394
+|move|p2a: Frosted Flakes|Earthquake|p1a: Clefable
+|-damage|p1a: Clefable|261\/394
+|
+|-heal|p2a: Frosted Flakes|293\/382|[from] item: Leftovers
+|-heal|p1a: Clefable|285\/394|[from] item: Leftovers
+|turn|46
+|
+|switch|p1a: Metagross|Metagross-Mega|321\/321
+|move|p2a: Frosted Flakes|U-turn|p1a: Metagross
+|-damage|p1a: Metagross|268\/321
+|
+|switch|p2a: Banned|Greninja, M|285\/285
+|
+|turn|47
+|
+|switch|p1a: Heatran|Heatran, M|282\/323
+|move|p2a: Banned|Hydro Pump|p1a: Heatran
+|-start|p2a: Banned|typechange|Water|[from] Protean
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|-damage|p2a: Banned|257\/285|[from] item: Life Orb
+|faint|p1a: Heatran
+|
+|c|âFul|I like how all of a sudden everything starts dying
+|
+|switch|p1a: Clefable|Clefable, M|285\/394
+|turn|48
+|
+|move|p2a: Banned|Gunk Shot|p1a: Clefable
+|-start|p2a: Banned|typechange|Poison|[from] Protean
+|-supereffective|p1a: Clefable
+|-damage|p1a: Clefable|0 fnt
+|-damage|p2a: Banned|229\/285|[from] item: Life Orb
+|faint|p1a: Clefable
+|
+|
+|switch|p1a: Metagross|Metagross-Mega|268\/321
+|turn|49
+|
+|move|p2a: Banned|Hydro Pump|p1a: Metagross
+|-start|p2a: Banned|typechange|Water|[from] Protean
+|-damage|p1a: Metagross|85\/321
+|-damage|p2a: Banned|201\/285|[from] item: Life Orb
+|move|p1a: Metagross|Earthquake|p2a: Banned
+|-crit|p2a: Banned
+|-damage|p2a: Banned|0 fnt
+|faint|p2a: Banned
+|
+|
+|switch|p2a: Frosted Flakes|Landorus-Therian, M|293\/382
+|-ability|p2a: Frosted Flakes|Intimidate|[of] p1a: Metagross
+|-unboost|p1a: Metagross|atk|1
+|turn|50
+|
+|switch|p1a: Dragonite|Dragonite, M|58\/324
+|move|p2a: Frosted Flakes|U-turn|p1a: Dragonite
+|-resisted|p1a: Dragonite
+|-damage|p1a: Dragonite|20\/324
+|
+|switch|p2a: Trippin'|Breloom, F, shiny|323\/323 tox
+|
+|turn|51
+|
+|move|p2a: Trippin'|Mach Punch|p1a: Dragonite
+|-resisted|p1a: Dragonite
+|-damage|p1a: Dragonite|0 fnt
+|faint|p1a: Dragonite
+|
+|
+|switch|p1a: Metagross|Metagross-Mega|85\/321
+|turn|52
+|
+|move|p2a: Trippin'|Mach Punch|p1a: Metagross
+|-crit|p1a: Metagross
+|-damage|p1a: Metagross|6\/321
+|move|p1a: Metagross|Zen Headbutt|p2a: Trippin'
+|-supereffective|p2a: Trippin'
+|-damage|p2a: Trippin'|0 fnt
+|faint|p2a: Trippin'
+|
+|c|âFul|dang
+|
+|switch|p2a: Frosted Flakes|Landorus-Therian, M|293\/382
+|-ability|p2a: Frosted Flakes|Intimidate|[of] p1a: Metagross
+|-unboost|p1a: Metagross|atk|1
+|turn|53
+|c|âbizarman|go ice punch
+|
+|switch|p2a: Hot Tranny|Heatran, F|385\/385
+|move|p1a: Metagross|Ice Punch|p2a: Hot Tranny
+|-resisted|p2a: Hot Tranny
+|-damage|p2a: Hot Tranny|361\/385
+|
+|-heal|p2a: Hot Tranny|385\/385|[from] item: Leftovers
+|turn|54
+|c|âFul|go yum
+|
+|move|p1a: Metagross|Earthquake|p2a: Hot Tranny
+|-supereffective|p2a: Hot Tranny
+|-damage|p2a: Hot Tranny|25\/385
+|move|p2a: Hot Tranny|Earth Power|p1a: Metagross
+|-supereffective|p1a: Metagross
+|-damage|p1a: Metagross|0 fnt
+|faint|p1a: Metagross
+|
+|win|Ful
+|raw|Ladder updating...
+|raw|bizarman's rating: 1200 &rarr; <strong>1168<\/strong><br \/>(-32 for losing)
+|raw|Ful's rating: 1098 &rarr; <strong>1131<\/strong><br \/>(+33 for winning)
+|c|âFul|wow
+|c|âbizarman|lol
+|c|âbizarman|gg
+|c|âFul|gg

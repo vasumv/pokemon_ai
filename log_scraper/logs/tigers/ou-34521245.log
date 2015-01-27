@@ -1,0 +1,351 @@
+|join|tigers
+|join|Wordness
+|player|p1|tigers|93
+|player|p2|Wordness|124
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Politoed, M
+|poke|p1|Toxicroak, M
+|poke|p1|Ferrothorn, M
+|poke|p1|Tornadus, M
+|poke|p1|Rotom-Wash
+|poke|p1|Latios, M
+|poke|p2|Heatran, M
+|poke|p2|Hippowdon, F
+|poke|p2|Reuniclus, M
+|poke|p2|Scizor, F
+|poke|p2|Gastrodon, F
+|poke|p2|Garchomp, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Rotom-Wash|Rotom-Wash|242\/242
+|switch|p2a: Heatran|Heatran, M|323\/323
+|-item|p2a: Heatran|Air Balloon
+|turn|1
+|callback|decision
+|
+|switch|p2a: Gastrodon|Gastrodon, F|394\/394
+|move|p1a: Rotom-Wash|Trick|p2a: Gastrodon
+|-activate|p1a: Rotom-Wash|move: Trick|[of] p2a: Gastrodon
+|-item|p2a: Gastrodon|Choice Scarf|[from] move: Trick
+|-item|p1a: Rotom-Wash|Choice Specs|[from] move: Trick
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Toxicrap|Toxicroak, M|308\/308
+|move|p2a: Gastrodon|Hidden Power|p1a: Toxicrap
+|-resisted|p1a: Toxicrap
+|-damage|p1a: Toxicrap|253\/308
+|
+|turn|3
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|352\/352
+|switch|p2a: Hippowdon|Hippowdon, F|420\/420
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|turn|4
+|callback|decision
+|
+|switch|p2a: Reuniclus|Reuniclus, M|424\/424
+|move|p1a: Ferrothorn|Stealth Rock|p2a: Reuniclus
+|-sidestart|p2: Wordness|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|5
+|callback|decision
+|
+|switch|p1a: Politoed|Politoed, M|322\/322
+|-weather|RainDance|[from] ability: Drizzle|[of] p1a: Politoed
+|move|p2a: Reuniclus|Psychic|p1a: Politoed
+|-damage|p1a: Politoed|162\/322
+|
+|-weather|RainDance|[upkeep]
+|turn|6
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M|302\/302
+|move|p2a: Reuniclus|Calm Mind|p2a: Reuniclus
+|-boost|p2a: Reuniclus|spa|1
+|-boost|p2a: Reuniclus|spd|1
+|
+|-weather|RainDance|[upkeep]
+|turn|7
+|callback|decision
+|
+|move|p1a: Latios|Trick|p2a: Reuniclus
+|-activate|p1a: Latios|move: Trick|[of] p2a: Reuniclus
+|-item|p2a: Reuniclus|Choice Scarf|[from] move: Trick
+|-item|p1a: Latios|Life Orb|[from] move: Trick
+|move|p2a: Reuniclus|Calm Mind|p2a: Reuniclus
+|-boost|p2a: Reuniclus|spa|1
+|-boost|p2a: Reuniclus|spd|1
+|
+|-weather|RainDance|[upkeep]
+|turn|8
+|callback|decision
+|chat|Wordness|>.>
+|
+|switch|p2a: Scizor|Scizor, F|344\/344
+|-damage|p2a: Scizor|301\/344|[from] Stealth Rock
+|move|p1a: Latios|Draco Meteor|p2a: Scizor
+|-resisted|p2a: Scizor
+|-damage|p2a: Scizor|119\/344
+|-unboost|p1a: Latios|spa|2
+|-damage|p1a: Latios|272\/302|[from] item: Life Orb
+|
+|-weather|RainDance|[upkeep]
+|turn|9
+|callback|decision
+|
+|move|p1a: Latios|Surf|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|-damage|p1a: Latios|242\/302|[from] item: Life Orb
+|faint|p2a: Scizor
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, M|358\/358
+|-damage|p2a: Garchomp|336\/358|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|242\/242
+|move|p2a: Garchomp|Dragon Claw|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|109\/242
+|
+|-weather|RainDance|[upkeep]
+|turn|11
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|352\/352
+|move|p2a: Garchomp|Dragon Claw|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|301\/352
+|-damage|p2a: Garchomp|292\/358|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Ferrothorn|323\/352|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p2a: Reuniclus|Reuniclus, M|424\/424
+|move|p1a: Ferrothorn|Leech Seed|p2a: Reuniclus
+|-start|p2a: Reuniclus|move: Leech Seed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Ferrothorn|345\/352|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p1a: Tornadus|Tornadus, M|300\/300
+|move|p2a: Reuniclus|Focus Blast|p1a: Tornadus
+|-resisted|p1a: Tornadus
+|-damage|p1a: Tornadus|232\/300
+|
+|-weather|RainDance|[upkeep]
+|turn|14
+|callback|decision
+|
+|switch|p2a: Hippowdon|Hippowdon, F|420\/420
+|-damage|p2a: Hippowdon|394\/420|[from] Stealth Rock
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Hippowdon
+|move|p1a: Tornadus|Hurricane|p2a: Hippowdon
+|-damage|p2a: Hippowdon|12\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Tornadus|214\/300|[from] sandstorm
+|-heal|p2a: Hippowdon|38\/420|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|109\/242
+|move|p2a: Hippowdon|Ice Fang|p1a: Rotom-Wash
+|-crit|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|50\/242
+|-status|p1a: Rotom-Wash|frz
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-Wash|35\/242 frz|[from] sandstorm
+|-heal|p2a: Hippowdon|64\/420|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p1a: Politoed|Politoed, M|162\/322
+|-weather|RainDance|[from] ability: Drizzle|[of] p1a: Politoed
+|move|p2a: Hippowdon|Slack Off|p2a: Hippowdon
+|-heal|p2a: Hippowdon|274\/420
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Hippowdon|300\/420|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|switch|p2a: Gastrodon|Gastrodon, F|394\/394
+|-damage|p2a: Gastrodon|370\/394|[from] Stealth Rock
+|move|p1a: Politoed|Ice Beam|p2a: Gastrodon
+|-damage|p2a: Gastrodon|283\/394
+|
+|-weather|RainDance|[upkeep]
+|turn|18
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|35\/242 frz
+|move|p2a: Gastrodon|Ice Beam|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|345\/352
+|turn|19
+|callback|decision
+|
+|switch|p2a: Hippowdon|Hippowdon, F|300\/420
+|-damage|p2a: Hippowdon|274\/420|[from] Stealth Rock
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Hippowdon
+|move|p1a: Ferrothorn|Spikes|p2a: Hippowdon
+|-sidestart|p2: Wordness|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|300\/420|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|352\/352|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|switch|p1a: Politoed|Politoed, M|162\/322
+|-weather|RainDance|[from] ability: Drizzle|[of] p1a: Politoed
+|move|p2a: Hippowdon|Slack Off|p2a: Hippowdon
+|-heal|p2a: Hippowdon|420\/420
+|
+|-weather|RainDance|[upkeep]
+|turn|21
+|callback|decision
+|
+|switch|p2a: Gastrodon|Gastrodon, F|283\/394
+|-damage|p2a: Gastrodon|234\/394|[from] Spikes
+|-damage|p2a: Gastrodon|210\/394|[from] Stealth Rock
+|move|p1a: Politoed|Ice Beam|p2a: Gastrodon
+|-damage|p2a: Gastrodon|119\/394
+|
+|-weather|RainDance|[upkeep]
+|turn|22
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|352\/352
+|move|p2a: Gastrodon|Earth Power|p1a: Ferrothorn
+|-crit|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|144\/352
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Ferrothorn|166\/352|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p2a: Gastrodon|Earth Power|p1a: Ferrothorn
+|-crit|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|0 fnt
+|faint|p1a: Ferrothorn
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|chat|Wordness|woo hax
+|chat|Wordness|lol
+|
+|switch|p1a: Latios|Latios, M|242\/302
+|turn|24
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, M|323\/323
+|-damage|p2a: Heatran|283\/323|[from] Stealth Rock
+|-item|p2a: Heatran|Air Balloon
+|move|p1a: Latios|Surf|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|-enditem|p2a: Heatran|Air Balloon
+|-damage|p1a: Latios|212\/302|[from] item: Life Orb
+|faint|p2a: Heatran
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, M|292\/358
+|-damage|p2a: Garchomp|270\/358|[from] Stealth Rock
+|-damage|p2a: Garchomp|226\/358|[from] Spikes
+|turn|25
+|callback|decision
+|
+|switch|p1a: Toxicrap|Toxicroak, M|253\/308
+|move|p2a: Garchomp|Outrage|p1a: Toxicrap
+|-damage|p1a: Toxicrap|0 fnt
+|faint|p1a: Toxicrap
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Politoed|Politoed, M|162\/322
+|turn|26
+|callback|decision
+|
+|move|p2a: Garchomp|Outrage|p1a: Politoed
+|-damage|p1a: Politoed|0 fnt
+|faint|p1a: Politoed
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Tornadus|Tornadus, M|214\/300
+|turn|27
+|callback|decision
+|
+|move|p2a: Garchomp|Outrage|p1a: Tornadus
+|-damage|p1a: Tornadus|0 fnt
+|faint|p1a: Tornadus
+|
+|-end|p2a: Garchomp|rampage
+|-start|p2a: Garchomp|confusion
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M|212\/302
+|turn|28
+|callback|decision
+|
+|switch|p2a: Hippowdon|Hippowdon, F|420\/420
+|-damage|p2a: Hippowdon|368\/420|[from] Spikes
+|-damage|p2a: Hippowdon|342\/420|[from] Stealth Rock
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Hippowdon
+|move|p1a: Latios|Psyshock|p2a: Hippowdon
+|-damage|p2a: Hippowdon|222\/420
+|-damage|p1a: Latios|182\/302|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latios|164\/302|[from] sandstorm
+|-heal|p2a: Hippowdon|248\/420|[from] item: Leftovers
+|turn|29
+|callback|decision
+|-message|tigers forfeited.
+|
+|win|Wordness
+|raw|Ladder updating...
+|leave|tigers
+|player|p1
+|raw|tigers's rating: 1946 &rarr; <strong>1935<\/strong><br \/>(-11 for losing)
+|raw|Wordness's rating: 1796 &rarr; <strong>1802<\/strong><br \/>(+6 for winning)

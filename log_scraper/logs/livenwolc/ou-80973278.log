@@ -1,0 +1,429 @@
+|join|cytoid
+|join|livEnwolC
+|player|p1|cytoid|265
+|player|p2|livEnwolC|59
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Talonflame, F
+|poke|p1|Excadrill, M
+|poke|p1|Genesect
+|poke|p1|Heatran, F
+|poke|p1|Rotom-Wash
+|poke|p1|Celebi
+|poke|p2|Jumpluff, F
+|poke|p2|Greninja, M, shiny
+|poke|p2|Excadrill, M
+|poke|p2|Heatran, F
+|poke|p2|Lucario, F
+|poke|p2|Gengar, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Kaepora Gaebora|Talonflame, F|345\/345
+|switch|p2a: Lebron Flames|Heatran, F|386\/386
+|turn|1
+|callback|decision
+|
+|move|p1a: Kaepora Gaebora|U-turn|p2a: Lebron Flames
+|-resisted|p2a: Lebron Flames
+|-damage|p2a: Lebron Flames|361\/386
+|callback|decision
+|
+|switch|p1a: Din|Heatran, F|386\/386
+|-item|p1a: Din|Air Balloon
+|move|p2a: Lebron Flames|Ancient Power|p1a: Din
+|-damage|p1a: Din|330\/386
+|-enditem|p1a: Din|Air Balloon
+|
+|-heal|p2a: Lebron Flames|385\/386|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p2a: Tripod|Jumpluff, F|354\/354
+|move|p1a: Din|Stealth Rock|p2a: Tripod
+|-sidestart|p2: livEnwolC|move: Stealth Rock
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Tripod|U-turn|p1a: Din
+|-resisted|p1a: Din
+|-damage|p1a: Din|322\/386
+|callback|decision
+|
+|switch|p2a: Jiraiya|Greninja, M, shiny|285\/285
+|-damage|p2a: Jiraiya|250\/285|[from] Stealth Rock
+|move|p1a: Din|Lava Plume|p2a: Jiraiya
+|-crit|p2a: Jiraiya
+|-resisted|p2a: Jiraiya
+|-damage|p2a: Jiraiya|125\/285
+|
+|turn|4
+|callback|decision
+|
+|switch|p1a: Farore|Celebi|403\/403
+|-start|p2a: Jiraiya|typechange|Water|[from] Protean
+|move|p2a: Jiraiya|Surf|p1a: Farore
+|-resisted|p1a: Farore
+|-damage|p1a: Farore|335\/403
+|
+|-heal|p1a: Farore|360\/403|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|-start|p2a: Jiraiya|typechange|Dark|[from] Protean
+|move|p2a: Jiraiya|Dark Pulse|p1a: Farore
+|-supereffective|p1a: Farore
+|-damage|p1a: Farore|48\/403
+|move|p1a: Farore|U-turn|p2a: Jiraiya
+|-supereffective|p2a: Jiraiya
+|-damage|p2a: Jiraiya|0 fnt
+|faint|p2a: Jiraiya
+|callback|decision
+|
+|switch|p1a: Phantom Ganon|Genesect|283\/283
+|
+|callback|decision
+|
+|switch|p2a: Lebron Flames|Heatran, F|385\/386
+|-damage|p2a: Lebron Flames|337\/386|[from] Stealth Rock
+|turn|6
+|callback|decision
+|
+|move|p1a: Phantom Ganon|U-turn|p2a: Lebron Flames
+|-resisted|p2a: Lebron Flames
+|-damage|p2a: Lebron Flames|316\/386
+|callback|decision
+|
+|switch|p1a: Farore|Celebi|48\/403
+|move|p2a: Lebron Flames|Stealth Rock|p1a: Farore
+|-sidestart|p1: cytoid|move: Stealth Rock
+|
+|-heal|p1a: Farore|73\/403|[from] item: Leftovers
+|-heal|p2a: Lebron Flames|340\/386|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p2a: Gengar|Gengar, F|262\/262
+|-damage|p2a: Gengar|230\/262|[from] Stealth Rock
+|move|p1a: Farore|Earth Power|p2a: Gengar
+|-immune|p2a: Gengar|[msg]
+|
+|-heal|p2a: Gengar|246\/262|[from] item: Black Sludge
+|-heal|p1a: Farore|98\/403|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p2a: Gengar|Sludge Wave|p1a: Farore
+|-supereffective|p1a: Farore
+|-damage|p1a: Farore|0 fnt
+|faint|p1a: Farore
+|
+|-heal|p2a: Gengar|262\/262|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p1a: Peahat|Excadrill, M|424\/424
+|-damage|p1a: Peahat|411\/424|[from] Stealth Rock
+|-ability|p1a: Peahat|Mold Breaker
+|turn|9
+|callback|decision
+|
+|switch|p2a: Tripod|Jumpluff, F|354\/354
+|-damage|p2a: Tripod|266\/354|[from] Stealth Rock
+|move|p1a: Peahat|Earthquake|p2a: Tripod
+|-immune|p2a: Tripod|[msg]
+|
+|-heal|p2a: Tripod|288\/354|[from] item: Leftovers
+|-heal|p1a: Peahat|424\/424|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p2a: Tripod|U-turn|p1a: Peahat
+|-resisted|p1a: Peahat
+|-damage|p1a: Peahat|397\/424
+|callback|decision
+|
+|switch|p2a: Diggersby Though|Excadrill, M|362\/362
+|-damage|p2a: Diggersby Though|351\/362|[from] Stealth Rock
+|-ability|p2a: Diggersby Though|Mold Breaker
+|move|p1a: Peahat|Rapid Spin|p2a: Diggersby Though
+|-resisted|p2a: Diggersby Though
+|-damage|p2a: Diggersby Though|332\/362
+|-sideend|p1: cytoid|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Peahat
+|
+|-heal|p1a: Peahat|423\/424|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p1a: Kaepora Gaebora|Talonflame, F|345\/345
+|move|p2a: Diggersby Though|Earthquake|p1a: Kaepora Gaebora
+|-immune|p1a: Kaepora Gaebora|[msg]
+|
+|turn|12
+|callback|decision
+|
+|switch|p2a: Lebron Flames|Heatran, F|340\/386
+|-damage|p2a: Lebron Flames|292\/386|[from] Stealth Rock
+|move|p1a: Kaepora Gaebora|U-turn|p2a: Lebron Flames
+|-resisted|p2a: Lebron Flames
+|-damage|p2a: Lebron Flames|270\/386
+|callback|decision
+|
+|switch|p1a: Nayru|Rotom-Wash|303\/303
+|
+|-heal|p2a: Lebron Flames|294\/386|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p2a: Tripod|Jumpluff, F|288\/354
+|-damage|p2a: Tripod|200\/354|[from] Stealth Rock
+|move|p1a: Nayru|Hydro Pump|p2a: Tripod
+|-resisted|p2a: Tripod
+|-damage|p2a: Tripod|125\/354
+|
+|-heal|p2a: Tripod|147\/354|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p1a: Din|Heatran, F|322\/386
+|move|p2a: Tripod|Leech Seed|p1a: Din
+|-start|p1a: Din|move: Leech Seed
+|
+|-heal|p2a: Tripod|169\/354|[from] item: Leftovers
+|-damage|p1a: Din|274\/386|[from] Leech Seed|[of] p2a: Tripod
+|-heal|p2a: Tripod|217\/354|[silent]
+|turn|15
+|callback|decision
+|
+|move|p2a: Tripod|U-turn|p1a: Din
+|-resisted|p1a: Din
+|-damage|p1a: Din|267\/386
+|callback|decision
+|
+|switch|p2a: Gengar|Gengar, F|262\/262
+|-damage|p2a: Gengar|230\/262|[from] Stealth Rock
+|move|p1a: Din|Roar|p2a: Gengar
+|drag|p2a: Diggersby Though|Excadrill, M|332\/362
+|-damage|p2a: Diggersby Though|321\/362|[from] Stealth Rock
+|-ability|p2a: Diggersby Though|Mold Breaker
+|
+|-damage|p1a: Din|219\/386|[from] Leech Seed|[of] p2a: Diggersby Though
+|-heal|p2a: Diggersby Though|362\/362|[silent]
+|turn|16
+|callback|decision
+|
+|switch|p1a: Phantom Ganon|Genesect|283\/283
+|-boost|p1a: Phantom Ganon|atk|1|[from] ability: Download
+|move|p2a: Diggersby Though|Rock Slide|p1a: Phantom Ganon
+|-damage|p1a: Phantom Ganon|174\/283
+|
+|turn|17
+|callback|decision
+|
+|move|p1a: Phantom Ganon|U-turn|p2a: Diggersby Though
+|-resisted|p2a: Diggersby Though
+|-damage|p2a: Diggersby Though|260\/362
+|callback|decision
+|
+|switch|p1a: Kaepora Gaebora|Talonflame, F|345\/345
+|move|p2a: Diggersby Though|Rock Slide|p1a: Kaepora Gaebora
+|-supereffective|p1a: Kaepora Gaebora
+|-damage|p1a: Kaepora Gaebora|0 fnt
+|faint|p1a: Kaepora Gaebora
+|
+|callback|decision
+|chat|livEnwolC|saw it coming
+|chat|cytoid|nice play
+|
+|switch|p1a: Nayru|Rotom-Wash|303\/303
+|turn|18
+|callback|decision
+|
+|switch|p2a: Tripod|Jumpluff, F|217\/354
+|-damage|p2a: Tripod|129\/354|[from] Stealth Rock
+|move|p1a: Nayru|Hydro Pump|p2a: Tripod
+|-crit|p2a: Tripod
+|-resisted|p2a: Tripod
+|-damage|p2a: Tripod|15\/354
+|
+|-heal|p2a: Tripod|37\/354|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p2a: Tripod|Leech Seed|p1a: Nayru
+|-start|p1a: Nayru|move: Leech Seed
+|move|p1a: Nayru|Volt Switch|p2a: Tripod
+|-damage|p2a: Tripod|0 fnt
+|faint|p2a: Tripod
+|callback|decision
+|
+|switch|p1a: Phantom Ganon|Genesect|174\/283
+|
+|callback|decision
+|
+|switch|p2a: Diggersby Though|Excadrill, M|260\/362
+|-damage|p2a: Diggersby Though|249\/362|[from] Stealth Rock
+|-ability|p2a: Diggersby Though|Mold Breaker
+|turn|20
+|callback|decision
+|
+|switch|p2a: Lebron Flames|Heatran, F|294\/386
+|-damage|p2a: Lebron Flames|246\/386|[from] Stealth Rock
+|move|p1a: Phantom Ganon|Flamethrower|p2a: Lebron Flames
+|-start|p2a: Lebron Flames|ability: Flash Fire
+|
+|-heal|p2a: Lebron Flames|270\/386|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|switch|p1a: Nayru|Rotom-Wash|303\/303
+|move|p2a: Lebron Flames|Stealth Rock|p1a: Nayru
+|-sidestart|p1: cytoid|move: Stealth Rock
+|
+|-heal|p2a: Lebron Flames|294\/386|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p1a: Nayru|Hydro Pump|p2a: Lebron Flames
+|-supereffective|p2a: Lebron Flames
+|-damage|p2a: Lebron Flames|28\/386
+|move|p2a: Lebron Flames|Lava Plume|p1a: Nayru
+|-crit|p1a: Nayru
+|-resisted|p1a: Nayru
+|-damage|p1a: Nayru|131\/303
+|
+|-heal|p2a: Lebron Flames|52\/386|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|switch|p2a: Gengar|Gengar, F|230\/262
+|-damage|p2a: Gengar|198\/262|[from] Stealth Rock
+|move|p1a: Nayru|Hydro Pump|p2a: Gengar
+|-damage|p2a: Gengar|21\/262
+|
+|-heal|p2a: Gengar|37\/262|[from] item: Black Sludge
+|turn|24
+|callback|decision
+|
+|move|p2a: Gengar|Energy Ball|p1a: Nayru
+|-supereffective|p1a: Nayru
+|-damage|p1a: Nayru|0 fnt
+|faint|p1a: Nayru
+|
+|-heal|p2a: Gengar|53\/262|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p1a: Phantom Ganon|Genesect|174\/283
+|-damage|p1a: Phantom Ganon|139\/283|[from] Stealth Rock
+|-boost|p1a: Phantom Ganon|atk|1|[from] ability: Download
+|turn|25
+|callback|decision
+|
+|move|p1a: Phantom Ganon|U-turn|p2a: Gengar
+|-resisted|p2a: Gengar
+|-damage|p2a: Gengar|0 fnt
+|faint|p2a: Gengar
+|callback|decision
+|
+|switch|p1a: Din|Heatran, F|219\/386
+|-damage|p1a: Din|171\/386|[from] Stealth Rock
+|
+|callback|decision
+|
+|switch|p2a: Diggersby Though|Excadrill, M|249\/362
+|-damage|p2a: Diggersby Though|238\/362|[from] Stealth Rock
+|-ability|p2a: Diggersby Though|Mold Breaker
+|turn|26
+|callback|decision
+|
+|move|p2a: Diggersby Though|Earthquake|p1a: Din
+|-supereffective|p1a: Din
+|-damage|p1a: Din|0 fnt
+|faint|p1a: Din
+|
+|callback|decision
+|
+|switch|p1a: Phantom Ganon|Genesect|139\/283
+|-damage|p1a: Phantom Ganon|104\/283|[from] Stealth Rock
+|-boost|p1a: Phantom Ganon|atk|1|[from] ability: Download
+|turn|27
+|callback|decision
+|
+|switch|p2a: Luke Nuke|Lucario, F|281\/281
+|-damage|p2a: Luke Nuke|273\/281|[from] Stealth Rock
+|move|p1a: Phantom Ganon|U-turn|p2a: Luke Nuke
+|-resisted|p2a: Luke Nuke
+|-damage|p2a: Luke Nuke|224\/281
+|callback|decision
+|
+|switch|p1a: Peahat|Excadrill, M|423\/424
+|-damage|p1a: Peahat|410\/424|[from] Stealth Rock
+|-ability|p1a: Peahat|Mold Breaker
+|
+|-heal|p1a: Peahat|424\/424|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|-formechange|p2a: Luke Nuke|Lucario-Mega
+|message|Lucario has Mega Evolved into Mega Lucario!
+|move|p2a: Luke Nuke|Magnet Rise|p2a: Luke Nuke
+|-start|p2a: Luke Nuke|Magnet Rise
+|move|p1a: Peahat|Earthquake|p2a: Luke Nuke
+|-immune|p2a: Luke Nuke|[msg]
+|
+|turn|29
+|callback|decision
+|
+|move|p2a: Luke Nuke|Swords Dance|p2a: Luke Nuke
+|-boost|p2a: Luke Nuke|atk|2
+|move|p1a: Peahat|Iron Head|p2a: Luke Nuke
+|-resisted|p2a: Luke Nuke
+|-damage|p2a: Luke Nuke|142\/281
+|
+|turn|30
+|callback|decision
+|
+|move|p2a: Luke Nuke|Close Combat|p1a: Peahat
+|-supereffective|p1a: Peahat
+|-damage|p1a: Peahat|0 fnt
+|-unboost|p2a: Luke Nuke|def|1
+|-unboost|p2a: Luke Nuke|spd|1
+|faint|p1a: Peahat
+|
+|callback|decision
+|
+|switch|p1a: Phantom Ganon|Genesect|104\/283
+|-damage|p1a: Phantom Ganon|69\/283|[from] Stealth Rock
+|-boost|p1a: Phantom Ganon|spa|1|[from] ability: Download
+|turn|31
+|callback|decision
+|
+|move|p2a: Luke Nuke|Bullet Punch|p1a: Phantom Ganon
+|-resisted|p1a: Phantom Ganon
+|-damage|p1a: Phantom Ganon|0 fnt
+|faint|p1a: Phantom Ganon
+|
+|win|livEnwolC
+|raw|Ladder updating...
+|raw|cytoid's rating: 1293 &rarr; <strong>1269<\/strong><br \/>(-24 for losing)
+|raw|livEnwolC's rating: 1311 &rarr; <strong>1335<\/strong><br \/>(+24 for winning)
+|chat|cytoid|gg
+|chat|livEnwolC|gg
+|leave|cytoid
+|player|p1
+|join|RoyalAlex
+|leave|livEnwolC
+|player|p2
+|leave|RoyalAlex
+|join|lolsfhhsht

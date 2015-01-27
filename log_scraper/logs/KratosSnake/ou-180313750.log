@@ -1,0 +1,353 @@
+|join|KratosSnake
+|join|Dukekk
+|player|p1|KratosSnake|159
+|player|p2|Dukekk|209
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Charizard, M
+|poke|p1|Tyranitar, M
+|poke|p1|Excadrill, M
+|poke|p1|Gothitelle, M
+|poke|p1|Venusaur, F
+|poke|p1|Keldeo
+|poke|p2|Venusaur, M
+|poke|p2|Rotom-Wash
+|poke|p2|Gothitelle, M
+|poke|p2|Tyranitar, M
+|poke|p2|Excadrill, M
+|poke|p2|Sylveon, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Charizard|Charizard, M|297\/297
+|switch|p2a: Sylveon|Sylveon, F|394\/394
+|turn|1
+|
+|switch|p2a: Tyranitar|Tyranitar, M|404\/404
+|-weather|Sandstorm
+|detailschange|p1a: Charizard|Charizard-Mega-Y, M
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p1a: Charizard|Solar Beam|p2a: Tyranitar|[still]
+|-prepare|p1a: Charizard|Solar Beam|p2a: Tyranitar
+|-anim|p1a: Charizard|Solar Beam|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|88\/404
+|
+|-weather|SunnyDay|[upkeep]
+|turn|2
+|
+|switch|p1a: Gothitelle|Gothitelle, M|301\/301
+|switch|p2a: Sylveon|Sylveon, F|394\/394
+|
+|-weather|SunnyDay|[upkeep]
+|turn|3
+|
+|move|p1a: Gothitelle|Trick|p2a: Sylveon
+|-activate|p1a: Gothitelle|move: Trick|[of] p2a: Sylveon
+|-item|p2a: Sylveon|Choice Scarf|[from] move: Trick
+|-item|p1a: Gothitelle|Leftovers|[from] move: Trick
+|move|p2a: Sylveon|Hyper Voice|p1a: Gothitelle
+|-damage|p1a: Gothitelle|153\/301
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Gothitelle|171\/301|[from] item: Leftovers
+|turn|4
+|
+|move|p1a: Gothitelle|Calm Mind|p1a: Gothitelle
+|-boost|p1a: Gothitelle|spa|1
+|-boost|p1a: Gothitelle|spd|1
+|move|p2a: Sylveon|Hyper Voice|p1a: Gothitelle
+|-crit|p1a: Gothitelle
+|-damage|p1a: Gothitelle|0 fnt
+|faint|p1a: Gothitelle
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p1a: Venusaur|Venusaur, F|302\/302
+|turn|5
+|
+|switch|p2a: Tyranitar|Tyranitar, M|88\/404
+|-weather|Sandstorm
+|move|p1a: Venusaur|Sludge Bomb|p2a: Tyranitar
+|-resisted|p2a: Tyranitar
+|-damage|p2a: Tyranitar|22\/404
+|-damage|p1a: Venusaur|272\/302|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Venusaur|254\/302|[from] sandstorm
+|turn|6
+|
+|switch|p1a: Excadrill|Excadrill, M|361\/361
+|switch|p2a: Gothitelle|Gothitelle, M|301\/301
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Gothitelle|283\/301|[from] sandstorm
+|turn|7
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|move|p1a: Excadrill|Rock Slide|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|217\/304
+|-damage|p1a: Excadrill|325\/361|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Rotom-Wash|198\/304|[from] sandstorm
+|-heal|p2a: Rotom-Wash|217\/304|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: Excadrill|Rock Slide|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|130\/304
+|-damage|p1a: Excadrill|289\/361|[from] item: Life Orb
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Excadrill
+|-immune|p1a: Excadrill|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Rotom-Wash|111\/304|[from] sandstorm
+|-heal|p2a: Rotom-Wash|130\/304|[from] item: Leftovers
+|turn|9
+|
+|move|p1a: Excadrill|Rock Slide|p2a: Rotom-Wash
+|-crit|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|-damage|p1a: Excadrill|253\/361|[from] item: Life Orb
+|faint|p2a: Rotom-Wash
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Excadrill|Excadrill, M|424\/424
+|-item|p2a: Excadrill|Air Balloon
+|turn|10
+|
+|move|p1a: Excadrill|Iron Head|p2a: Excadrill
+|-resisted|p2a: Excadrill
+|-damage|p2a: Excadrill|252\/424
+|-enditem|p2a: Excadrill|Air Balloon
+|-damage|p1a: Excadrill|217\/361|[from] item: Life Orb
+|move|p2a: Excadrill|Earthquake|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-damage|p1a: Excadrill|0 fnt
+|faint|p1a: Excadrill
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Charizard|Charizard-Mega-Y, M|297\/297
+|-weather|SunnyDay
+|turn|11
+|
+|switch|p2a: Tyranitar|Tyranitar, M|22\/404
+|-weather|Sandstorm
+|move|p1a: Charizard|Flamethrower|p2a: Tyranitar
+|-resisted|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Charizard|279\/297|[from] sandstorm
+|
+|switch|p2a: Excadrill|Excadrill, M|252\/424
+|turn|12
+|
+|switch|p1a: Keldeo|Keldeo|323\/323
+|move|p2a: Excadrill|Swords Dance|p2a: Excadrill
+|-boost|p2a: Excadrill|atk|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Keldeo|303\/323|[from] sandstorm
+|turn|13
+|
+|move|p1a: Keldeo|Scald|p2a: Excadrill
+|-supereffective|p2a: Excadrill
+|-damage|p2a: Excadrill|0 fnt
+|faint|p2a: Excadrill
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Keldeo|283\/323|[from] sandstorm
+|
+|switch|p2a: Gothitelle|Gothitelle, M|283\/301
+|turn|14
+|
+|move|p1a: Keldeo|Scald|p2a: Gothitelle
+|-damage|p2a: Gothitelle|142\/301
+|move|p2a: Gothitelle|Psychic|p1a: Keldeo
+|-supereffective|p1a: Keldeo
+|-damage|p1a: Keldeo|17\/323
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Keldeo|0 fnt|[from] sandstorm
+|-damage|p2a: Gothitelle|124\/301|[from] sandstorm
+|faint|p1a: Keldeo
+|
+|switch|p1a: Tyranitar|Tyranitar, M|403\/403
+|turn|15
+|
+|move|p1a: Tyranitar|Pursuit|p2a: Gothitelle|[from]Pursuit
+|-supereffective|p2a: Gothitelle
+|-damage|p2a: Gothitelle|0 fnt
+|faint|p2a: Gothitelle
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Sylveon|Sylveon, F|394\/394
+|turn|16
+|
+|move|p2a: Sylveon|Hyper Voice|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|241\/403
+|move|p1a: Tyranitar|Stealth Rock|p2a: Sylveon
+|-sidestart|p2: Dukekk|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Sylveon|370\/394|[from] sandstorm
+|turn|17
+|
+|move|p2a: Sylveon|Hyper Voice|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|85\/403
+|move|p1a: Tyranitar|Rock Slide|p2a: Sylveon
+|-damage|p2a: Sylveon|213\/394
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Sylveon|189\/394|[from] sandstorm
+|turn|18
+|
+|move|p2a: Sylveon|Hyper Voice|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|faint|p1a: Tyranitar
+|
+|-weather|none
+|
+|switch|p1a: Charizard|Charizard-Mega-Y, M|279\/297
+|-weather|SunnyDay
+|turn|19
+|
+|move|p1a: Charizard|Flamethrower|p2a: Sylveon
+|-damage|p2a: Sylveon|33\/394
+|move|p2a: Sylveon|Hyper Voice|p1a: Charizard
+|-resisted|p1a: Charizard
+|-damage|p1a: Charizard|216\/297
+|
+|-weather|SunnyDay|[upkeep]
+|turn|20
+|
+|move|p1a: Charizard|Flamethrower|p2a: Sylveon
+|-damage|p2a: Sylveon|0 fnt
+|faint|p2a: Sylveon
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p2a: Venusaur|Venusaur, M|364\/364
+|-damage|p2a: Venusaur|319\/364|[from] Stealth Rock
+|turn|21
+|
+|detailschange|p2a: Venusaur|Venusaur-Mega, M
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p1a: Charizard|Flamethrower|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|101\/364
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|344\/364
+|
+|-weather|SunnyDay|[upkeep]
+|turn|22
+|
+|move|p1a: Charizard|Flamethrower|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|134\/364
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|364\/364
+|
+|-weather|SunnyDay|[upkeep]
+|turn|23
+|
+|move|p1a: Charizard|Flamethrower|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|130\/364
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|364\/364
+|
+|-weather|none
+|turn|24
+|
+|switch|p1a: Venusaur|Venusaur, F|254\/302
+|move|p2a: Venusaur|Leech Seed|p1a: Venusaur
+|-immune|p1a: Venusaur|[msg]
+|
+|turn|25
+|
+|move|p1a: Venusaur|Sludge Bomb|p2a: Venusaur
+|-damage|p2a: Venusaur|207\/364
+|-damage|p1a: Venusaur|224\/302|[from] item: Life Orb
+|move|p2a: Venusaur|Sludge Bomb|p1a: Venusaur
+|-damage|p1a: Venusaur|104\/302
+|
+|turn|26
+|
+|move|p1a: Venusaur|Sludge Bomb|p2a: Venusaur
+|-damage|p2a: Venusaur|59\/364
+|-damage|p1a: Venusaur|74\/302|[from] item: Life Orb
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|241\/364
+|
+|turn|27
+|
+|move|p1a: Venusaur|Sludge Bomb|p2a: Venusaur
+|-damage|p2a: Venusaur|84\/364
+|-damage|p1a: Venusaur|44\/302|[from] item: Life Orb
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|266\/364
+|
+|turn|28
+|
+|move|p1a: Venusaur|Sludge Bomb|p2a: Venusaur
+|-damage|p2a: Venusaur|122\/364
+|-damage|p1a: Venusaur|14\/302|[from] item: Life Orb
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|304\/364
+|
+|turn|29
+|
+|move|p1a: Venusaur|Sludge Bomb|p2a: Venusaur
+|-damage|p2a: Venusaur|158\/364
+|-damage|p1a: Venusaur|0 fnt|[from] item: Life Orb
+|faint|p1a: Venusaur
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|340\/364
+|
+|
+|switch|p1a: Charizard|Charizard-Mega-Y, M|216\/297
+|-weather|SunnyDay
+|turn|30
+|
+|move|p1a: Charizard|Flamethrower|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|136\/364
+|move|p2a: Venusaur|Leech Seed|p1a: Charizard
+|-start|p1a: Charizard|move: Leech Seed
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Charizard|179\/297|[from] Leech Seed|[of] p2a: Venusaur
+|-heal|p2a: Venusaur|173\/364|[silent]
+|turn|31
+|
+|move|p1a: Charizard|Flamethrower|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|0 fnt
+|faint|p2a: Venusaur
+|
+|win|KratosSnake
+|raw|Ladder updating...
+|raw|KratosSnake's rating: 1904 &rarr; <strong>1917<\/strong><br \/>(+13 for winning)
+|raw|Dukekk's rating: 1783 &rarr; <strong>1770<\/strong><br \/>(-13 for losing)

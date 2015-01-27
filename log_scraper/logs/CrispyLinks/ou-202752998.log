@@ -1,0 +1,196 @@
+|join|CrispyLinks
+|join|ferwara
+|player|p1|CrispyLinks|165
+|player|p2|ferwara|265
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Volcarona, F
+|poke|p1|Azumarill, M
+|poke|p1|Diancie
+|poke|p1|Landorus-Therian, M
+|poke|p1|Latios, M
+|poke|p1|Jirachi
+|poke|p2|Breloom, F
+|poke|p2|Whimsicott, M
+|poke|p2|Tyranitar, F
+|poke|p2|Smeargle, F
+|poke|p2|Espeon, F
+|poke|p2|Excadrill, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Diancie|Diancie|241\/241
+|switch|p2a: Whimsicott|Whimsicott, M|324\/324
+|turn|1
+|
+|detailschange|p1a: Diancie|Diancie-Mega
+|-mega|p1a: Diancie|Diancie|Diancite
+|move|p2a: Whimsicott|Tailwind|p2a: Whimsicott
+|-sidestart|p2: ferwara|move: Tailwind
+|move|p1a: Diancie|Hidden Power|p2a: Whimsicott
+|-supereffective|p2a: Whimsicott
+|-damage|p2a: Whimsicott|112\/324
+|
+|turn|2
+|
+|move|p2a: Whimsicott|Memento|p1a: Diancie
+|-unboost|p1a: Diancie|atk|2
+|-unboost|p1a: Diancie|spa|2
+|faint|p2a: Whimsicott
+|move|p1a: Diancie|Moonblast|p2: Whimsicott|[notarget]
+|-notarget
+|
+|
+|switch|p2a: Smeargle|Smeargle, F|314\/314
+|turn|3
+|
+|switch|p1a: Latios|Latios, M|301\/301
+|move|p2a: Smeargle|Geomancy|p2a: Smeargle|[still]
+|-prepare|p2a: Smeargle|Geomancy|p2a: Smeargle
+|-enditem|p2a: Smeargle|Power Herb
+|-anim|p2a: Smeargle|Geomancy|p2a: Smeargle
+|-boost|p2a: Smeargle|spa|2
+|-boost|p2a: Smeargle|spd|2
+|-boost|p2a: Smeargle|spe|2
+|
+|turn|4
+|
+|switch|p1a: Diancie|Diancie-Mega|241\/241
+|move|p2a: Smeargle|Spore|p1a: Diancie
+|move|p1a: Diancie|Spore|p2a: Smeargle|[from]Magic Bounce
+|-status|p2a: Smeargle|slp
+|
+|-sideend|p2: ferwara|move: Tailwind
+|turn|5
+|
+|cant|p2a: Smeargle|slp
+|move|p1a: Diancie|Moonblast|p2a: Smeargle
+|-damage|p2a: Smeargle|109\/314 slp
+|
+|turn|6
+|
+|-curestatus|p2a: Smeargle|slp
+|move|p2a: Smeargle|Baton Pass|p2a: Smeargle
+|
+|switch|p2a: Espeon|Espeon, F|334\/334
+|move|p1a: Diancie|Moonblast|p2a: Espeon
+|-damage|p2a: Espeon|225\/334
+|
+|-heal|p2a: Espeon|245\/334|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Latios|Latios, M|301\/301
+|move|p2a: Espeon|Wish|p2a: Espeon
+|
+|-heal|p2a: Espeon|265\/334|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: Latios|Trick|p2a: Espeon
+|-activate|p1a: Latios|move: Trick|[of] p2a: Espeon
+|-item|p2a: Espeon|Choice Scarf|[from] move: Trick
+|-item|p1a: Latios|Leftovers|[from] move: Trick
+|move|p2a: Espeon|Stored Power|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|118\/301
+|
+|-heal|p2a: Espeon|334\/334|[from] move: Wish|[wisher] Espeon
+|-heal|p1a: Latios|136\/301|[from] item: Leftovers
+|turn|9
+|
+|move|p2a: Espeon|Stored Power|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|0 fnt
+|faint|p1a: Latios
+|
+|
+|switch|p1a: Jirachi|Jirachi|404\/404
+|turn|10
+|
+|move|p2a: Espeon|Stored Power|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|328\/404
+|move|p1a: Jirachi|Iron Head|p2a: Espeon
+|-damage|p2a: Espeon|246\/334
+|
+|-heal|p1a: Jirachi|353\/404|[from] item: Leftovers
+|turn|11
+|
+|move|p2a: Espeon|Stored Power|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|274\/404
+|move|p1a: Jirachi|Iron Head|p2a: Espeon
+|-crit|p2a: Espeon
+|-damage|p2a: Espeon|114\/334
+|
+|-heal|p1a: Jirachi|299\/404|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Espeon|Stored Power|p1a: Jirachi
+|-crit|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|194\/404
+|move|p1a: Jirachi|Wish|p1a: Jirachi
+|
+|-heal|p1a: Jirachi|219\/404|[from] item: Leftovers
+|turn|13
+|
+|move|p2a: Espeon|Stored Power|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|141\/404
+|move|p1a: Jirachi|Iron Head|p2a: Espeon
+|-damage|p2a: Espeon|15\/334
+|
+|-heal|p1a: Jirachi|343\/404|[from] move: Wish|[wisher] Jirachi
+|-heal|p1a: Jirachi|368\/404|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Espeon|Stored Power|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|292\/404
+|move|p1a: Jirachi|Wish|p1a: Jirachi
+|
+|-heal|p1a: Jirachi|317\/404|[from] item: Leftovers
+|turn|15
+|
+|move|p2a: Espeon|Stored Power|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|241\/404
+|move|p1a: Jirachi|Iron Head|p2a: Espeon
+|-damage|p2a: Espeon|0 fnt
+|faint|p2a: Espeon
+|
+|-heal|p1a: Jirachi|404\/404|[from] move: Wish|[wisher] Jirachi
+|
+|switch|p2a: Smeargle|Smeargle, F|109\/314
+|turn|16
+|
+|switch|p1a: Diancie|Diancie-Mega|241\/241
+|move|p2a: Smeargle|Cotton Guard|p2a: Smeargle
+|-boost|p2a: Smeargle|def|3
+|
+|turn|17
+|
+|move|p1a: Diancie|Moonblast|p2a: Smeargle
+|-damage|p2a: Smeargle|0 fnt
+|faint|p2a: Smeargle
+|
+|-message|ferwara forfeited.
+|leave|ferwara
+|
+|win|CrispyLinks
+|raw|Ladder updating...
+|player|p2
+|raw|CrispyLinks's rating: 1649 &rarr; <strong>1663<\/strong><br \/>(+14 for winning)
+|raw|ferwara's rating: 1536 &rarr; <strong>1522<\/strong><br \/>(-14 for losing)

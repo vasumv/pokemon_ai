@@ -1,0 +1,387 @@
+|join|Osc
+|join|Avatar Karin
+|player|p1|Osc|80
+|player|p2|Avatar Karin|190
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Keldeo
+|poke|p1|Dragonite, F
+|poke|p1|Sylveon, M
+|poke|p1|Landorus-Therian, M
+|poke|p1|Heatran, F
+|poke|p1|Scizor, F
+|poke|p2|Pinsir, F
+|poke|p2|Latias, F
+|poke|p2|Lucario, F
+|poke|p2|Keldeo
+|poke|p2|Talonflame, F
+|poke|p2|Thundurus, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Dragonite|Dragonite, F|324\/324
+|switch|p2a: Pinsir|Pinsir, F|315\/315
+|turn|1
+|
+|detailschange|p2a: Pinsir|Pinsir-Mega, F
+|message|Pinsir has Mega Evolved into Mega Pinsir!
+|move|p1a: Dragonite|Outrage|p2a: Pinsir
+|-damage|p2a: Pinsir|25\/315
+|-damage|p1a: Dragonite|292\/324|[from] item: Life Orb
+|move|p2a: Pinsir|Frustration|p1a: Dragonite
+|-damage|p1a: Dragonite|0 fnt
+|faint|p1a: Dragonite
+|
+|
+|switch|p1a: Scizor|Scizor, F|306\/306
+|turn|2
+|
+|switch|p2a: Keldeo|Keldeo|322\/322
+|detailschange|p1a: Scizor|Scizor-Mega, F
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p1a: Scizor|Bullet Punch|p2a: Keldeo
+|-crit|p2a: Keldeo
+|-resisted|p2a: Keldeo
+|-damage|p2a: Keldeo|227\/322
+|
+|turn|3
+|
+|switch|p1a: Sylveon|Sylveon, M|369\/369
+|move|p2a: Keldeo|Scald|p1a: Sylveon
+|-damage|p1a: Sylveon|222\/369
+|
+|-heal|p1a: Sylveon|245\/369|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Talonflame|Talonflame, F|297\/297
+|move|p1a: Sylveon|Wish|p1a: Sylveon
+|
+|-heal|p1a: Sylveon|268\/369|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Pinsir|Pinsir-Mega, F|25\/315
+|move|p1a: Sylveon|Protect|p1a: Sylveon
+|-fail|p1a: Sylveon
+|
+|-heal|p1a: Sylveon|369\/369|[from] move: Wish|[wisher] Sylveon
+|turn|6
+|
+|switch|p1a: Heatran|Heatran, F|361\/361
+|move|p2a: Pinsir|Stealth Rock|p1a: Heatran
+|-sidestart|p1: Osc|move: Stealth Rock
+|
+|turn|7
+|
+|move|p2a: Pinsir|Earthquake|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|357\/357
+|-damage|p1a: Landorus-Therian|313\/357|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Pinsir
+|-unboost|p2a: Pinsir|atk|1
+|turn|8
+|
+|move|p2a: Pinsir|Frustration|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|172\/357
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Pinsir
+|-sidestart|p2: Avatar Karin|move: Stealth Rock
+|
+|-heal|p1a: Landorus-Therian|194\/357|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Latias|Latias, F|302\/302
+|-damage|p2a: Latias|265\/302|[from] Stealth Rock
+|move|p1a: Landorus-Therian|Knock Off|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|25\/302
+|-enditem|p2a: Latias|Life Orb|[from] move: Knock Off|[of] p1a: Landorus-Therian
+|
+|-heal|p1a: Landorus-Therian|216\/357|[from] item: Leftovers
+|turn|10
+|
+|move|p2a: Latias|Defog|p1a: Landorus-Therian
+|-unboost|p1a: Landorus-Therian|evasion|1
+|-sideend|p1: Osc|Stealth Rock|[from] move: Defog|[of] p1a: Landorus-Therian
+|-sideend|p2: Avatar Karin|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Latias
+|-sidestart|p2: Avatar Karin|move: Stealth Rock
+|
+|-heal|p1a: Landorus-Therian|238\/357|[from] item: Leftovers
+|turn|11
+|
+|move|p2a: Latias|Defog|p1a: Landorus-Therian
+|-unboost|p1a: Landorus-Therian|evasion|1
+|-sideend|p2: Avatar Karin|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Latias
+|-sidestart|p2: Avatar Karin|move: Stealth Rock
+|
+|-heal|p1a: Landorus-Therian|260\/357|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Latias|Defog|p1a: Landorus-Therian
+|-unboost|p1a: Landorus-Therian|evasion|1
+|-sideend|p2: Avatar Karin|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Latias
+|-sidestart|p2: Avatar Karin|move: Stealth Rock
+|
+|-heal|p1a: Landorus-Therian|282\/357|[from] item: Leftovers
+|turn|13
+|
+|move|p2a: Latias|Defog|p1a: Landorus-Therian
+|-unboost|p1a: Landorus-Therian|evasion|1
+|-sideend|p2: Avatar Karin|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Latias
+|-sidestart|p2: Avatar Karin|move: Stealth Rock
+|
+|-heal|p1a: Landorus-Therian|304\/357|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Latias|Defog|p1a: Landorus-Therian
+|-unboost|p1a: Landorus-Therian|evasion|1
+|-sideend|p2: Avatar Karin|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Latias
+|-sidestart|p2: Avatar Karin|move: Stealth Rock
+|
+|-heal|p1a: Landorus-Therian|326\/357|[from] item: Leftovers
+|turn|15
+|
+|move|p2a: Latias|Defog|p1a: Landorus-Therian
+|-unboost|p1a: Landorus-Therian|evasion|1
+|-sideend|p2: Avatar Karin|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Latias
+|-sidestart|p2: Avatar Karin|move: Stealth Rock
+|
+|-heal|p1a: Landorus-Therian|348\/357|[from] item: Leftovers
+|turn|16
+|
+|move|p2a: Latias|Defog|p1a: Landorus-Therian
+|-sideend|p2: Avatar Karin|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Latias
+|-sidestart|p2: Avatar Karin|move: Stealth Rock
+|
+|-heal|p1a: Landorus-Therian|357\/357|[from] item: Leftovers
+|turn|17
+|
+|move|p2a: Latias|Defog|p1a: Landorus-Therian
+|-sideend|p2: Avatar Karin|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Latias
+|-sidestart|p2: Avatar Karin|move: Stealth Rock
+|
+|turn|18
+|
+|move|p2a: Latias|Defog|p1a: Landorus-Therian
+|-sideend|p2: Avatar Karin|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Latias
+|-sidestart|p2: Avatar Karin|move: Stealth Rock
+|
+|turn|19
+|
+|move|p2a: Latias|Defog|p1a: Landorus-Therian
+|-sideend|p2: Avatar Karin|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Latias
+|-sidestart|p2: Avatar Karin|move: Stealth Rock
+|
+|turn|20
+|
+|move|p2a: Latias|Defog|p1a: Landorus-Therian
+|-sideend|p2: Avatar Karin|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Latias
+|-sidestart|p2: Avatar Karin|move: Stealth Rock
+|
+|turn|21
+|
+|move|p2a: Latias|Psyshock|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|255\/357
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Latias
+|-fail|p2a: Latias
+|
+|-heal|p1a: Landorus-Therian|277\/357|[from] item: Leftovers
+|turn|22
+|
+|move|p2a: Latias|Defog|p1a: Landorus-Therian
+|-sideend|p2: Avatar Karin|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Latias
+|-sidestart|p2: Avatar Karin|move: Stealth Rock
+|
+|-heal|p1a: Landorus-Therian|299\/357|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Latias|Defog|p1a: Landorus-Therian
+|-sideend|p2: Avatar Karin|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Latias
+|-sidestart|p2: Avatar Karin|move: Stealth Rock
+|
+|-heal|p1a: Landorus-Therian|321\/357|[from] item: Leftovers
+|turn|24
+|
+|move|p2a: Latias|Defog|p1a: Landorus-Therian
+|-sideend|p2: Avatar Karin|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Latias
+|-sidestart|p2: Avatar Karin|move: Stealth Rock
+|
+|-heal|p1a: Landorus-Therian|343\/357|[from] item: Leftovers
+|turn|25
+|
+|move|p2a: Latias|Psyshock|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|247\/357
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Latias
+|-fail|p2a: Latias
+|
+|-heal|p1a: Landorus-Therian|269\/357|[from] item: Leftovers
+|turn|26
+|
+|move|p2a: Latias|Defog|p1a: Landorus-Therian
+|-sideend|p2: Avatar Karin|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Latias
+|-sidestart|p2: Avatar Karin|move: Stealth Rock
+|
+|-heal|p1a: Landorus-Therian|291\/357|[from] item: Leftovers
+|turn|27
+|
+|move|p2a: Latias|Psyshock|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|189\/357
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Latias
+|-fail|p2a: Latias
+|
+|-heal|p1a: Landorus-Therian|211\/357|[from] item: Leftovers
+|turn|28
+|
+|move|p2a: Latias|Defog|p1a: Landorus-Therian
+|-sideend|p2: Avatar Karin|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Latias
+|-sidestart|p2: Avatar Karin|move: Stealth Rock
+|
+|-heal|p1a: Landorus-Therian|233\/357|[from] item: Leftovers
+|turn|29
+|
+|move|p2a: Latias|Psyshock|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|125\/357
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Latias
+|-fail|p2a: Latias
+|
+|-heal|p1a: Landorus-Therian|147\/357|[from] item: Leftovers
+|turn|30
+|
+|move|p2a: Latias|Defog|p1a: Landorus-Therian
+|-sideend|p2: Avatar Karin|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Latias
+|-sidestart|p2: Avatar Karin|move: Stealth Rock
+|
+|-heal|p1a: Landorus-Therian|169\/357|[from] item: Leftovers
+|turn|31
+|
+|move|p2a: Latias|Defog|p1a: Landorus-Therian
+|-sideend|p2: Avatar Karin|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Landorus-Therian|Knock Off|p2a: Latias
+|-crit|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|0 fnt
+|faint|p2a: Latias
+|
+|-heal|p1a: Landorus-Therian|191\/357|[from] item: Leftovers
+|
+|switch|p2a: Pinsir|Pinsir-Mega, F|25\/315
+|turn|32
+|
+|move|p2a: Pinsir|Frustration|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|faint|p1a: Landorus-Therian
+|
+|
+|switch|p1a: Scizor|Scizor-Mega, F|306\/306
+|turn|33
+|
+|switch|p2a: Talonflame|Talonflame, F|297\/297
+|move|p1a: Scizor|Bullet Punch|p2a: Talonflame
+|-resisted|p2a: Talonflame
+|-damage|p2a: Talonflame|217\/297
+|
+|turn|34
+|
+|switch|p1a: Sylveon|Sylveon, M|369\/369
+|move|p2a: Talonflame|Flare Blitz|p1a: Sylveon
+|-damage|p1a: Sylveon|135\/369
+|-damage|p2a: Talonflame|140\/297|[from] recoil|[of] p1a: Sylveon
+|
+|-heal|p1a: Sylveon|158\/369|[from] item: Leftovers
+|turn|35
+|
+|move|p1a: Sylveon|Protect|p1a: Sylveon
+|-singleturn|p1a: Sylveon|Protect
+|move|p2a: Talonflame|Flare Blitz|p1a: Sylveon
+|-activate|p1a: Sylveon|Protect
+|
+|-heal|p1a: Sylveon|181\/369|[from] item: Leftovers
+|turn|36
+|
+|switch|p1a: Keldeo|Keldeo|324\/324
+|move|p2a: Talonflame|U-turn|p1a: Keldeo
+|-resisted|p1a: Keldeo
+|-damage|p1a: Keldeo|288\/324
+|
+|switch|p2a: Thundurus|Thundurus, M|298\/298
+|
+|-heal|p1a: Keldeo|308\/324|[from] item: Leftovers
+|turn|37
+|
+|switch|p1a: Sylveon|Sylveon, M|181\/369
+|move|p2a: Thundurus|Thunderbolt|p1a: Sylveon
+|-damage|p1a: Sylveon|60\/369
+|-damage|p2a: Thundurus|269\/298|[from] item: Life Orb
+|
+|-heal|p1a: Sylveon|83\/369|[from] item: Leftovers
+|turn|38
+|
+|move|p1a: Sylveon|Protect|p1a: Sylveon
+|-singleturn|p1a: Sylveon|Protect
+|move|p2a: Thundurus|Thunderbolt|p1a: Sylveon
+|-activate|p1a: Sylveon|Protect
+|
+|-heal|p1a: Sylveon|106\/369|[from] item: Leftovers
+|turn|39
+|
+|move|p2a: Thundurus|Thunderbolt|p1a: Sylveon
+|-damage|p1a: Sylveon|0 fnt
+|-damage|p2a: Thundurus|240\/298|[from] item: Life Orb
+|faint|p1a: Sylveon
+|
+|
+|switch|p1a: Scizor|Scizor-Mega, F|306\/306
+|turn|40
+|
+|move|p2a: Thundurus|Nasty Plot|p2a: Thundurus
+|-boost|p2a: Thundurus|spa|2
+|move|p1a: Scizor|Bug Bite|p2a: Thundurus
+|-resisted|p2a: Thundurus
+|-damage|p2a: Thundurus|126\/298
+|
+|turn|41
+|
+|move|p2a: Thundurus|Thunderbolt|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|-damage|p2a: Thundurus|97\/298|[from] item: Life Orb
+|faint|p1a: Scizor
+|
+|-message|Osc forfeited.
+|
+|win|Avatar Karin
+|raw|Ladder updating...
+|leave|Osc
+|player|p1
+|raw|Osc's rating: 1746 &rarr; <strong>1724<\/strong><br \/>(-22 for losing)
+|raw|Avatar Karin's rating: 1699 &rarr; <strong>1722<\/strong><br \/>(+23 for winning)

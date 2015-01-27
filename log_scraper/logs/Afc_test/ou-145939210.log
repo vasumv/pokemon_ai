@@ -1,0 +1,368 @@
+|join|ThatTheDamned
+|join|afc_test
+|player|p1|ThatTheDamned|208
+|player|p2|afc_test|264
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Gardevoir, F, shiny
+|poke|p1|Terrakion
+|poke|p1|Garchomp, M
+|poke|p1|Ferrothorn, F
+|poke|p1|Rotom-Wash
+|poke|p1|Gengar, M
+|poke|p2|Mew
+|poke|p2|Bisharp, F
+|poke|p2|Manaphy
+|poke|p2|Pinsir, F
+|poke|p2|Heatran, M
+|poke|p2|Zapdos
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Where|Ferrothorn, F|351\/351
+|switch|p2a: Zapdos|Zapdos|322\/322
+|-ability|p2a: Zapdos|Pressure
+|turn|1
+|
+|switch|p1a: Why|Rotom-Wash|303\/303
+|move|p2a: Zapdos|Heat Wave|p1a: Why
+|-resisted|p1a: Why
+|-damage|p1a: Why|232\/303
+|-damage|p2a: Zapdos|290\/322|[from] item: Life Orb
+|
+|-heal|p1a: Why|250\/303|[from] item: Leftovers
+|turn|2
+|
+|move|p2a: Zapdos|Thunderbolt|p1a: Why
+|-damage|p1a: Why|71\/303
+|-damage|p2a: Zapdos|258\/322|[from] item: Life Orb
+|move|p1a: Why|Volt Switch|p2a: Zapdos
+|-damage|p2a: Zapdos|170\/322
+|
+|switch|p1a: When|Garchomp, M|358\/358
+|
+|turn|3
+|
+|switch|p2a: Manaphy|Manaphy|404\/404
+|move|p1a: When|Dragon Claw|p2a: Manaphy
+|-damage|p2a: Manaphy|279\/404
+|-damage|p1a: When|323\/358|[from] item: Life Orb
+|
+|-heal|p2a: Manaphy|304\/404|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Where|Ferrothorn, F|351\/351
+|move|p2a: Manaphy|Scald|p1a: Where
+|-resisted|p1a: Where
+|-damage|p1a: Where|309\/351
+|
+|-heal|p2a: Manaphy|329\/404|[from] item: Leftovers
+|-heal|p1a: Where|330\/351|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Mew|Mew|404\/404
+|move|p1a: Where|Stealth Rock|p2a: Mew
+|-sidestart|p2: afc_test|move: Stealth Rock
+|
+|-heal|p1a: Where|351\/351|[from] item: Leftovers
+|turn|6
+|
+|switch|p1a: Who|Gardevoir, F, shiny|283\/283
+|-ability|p1a: Who|Synchronize|[from] ability: Trace|[of] p2a: Mew
+|move|p2a: Mew|Taunt|p1a: Who
+|-start|p1a: Who|move: Taunt
+|
+|turn|7
+|
+|detailschange|p1a: Who|Gardevoir-Mega, F, shiny
+|message|Gardevoir has Mega Evolved into Mega Gardevoir!
+|move|p1a: Who|Hyper Voice|p2a: Mew
+|-damage|p2a: Mew|235\/404
+|move|p2a: Mew|Defog|p1a: Who
+|-unboost|p1a: Who|evasion|1
+|-sideend|p2: afc_test|Stealth Rock|[from] move: Defog|[of] p2a: Mew
+|
+|-heal|p2a: Mew|260\/404|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Why|Rotom-Wash|71\/303
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|404\/404
+|
+|-heal|p1a: Why|89\/303|[from] item: Leftovers
+|turn|9
+|
+|move|p2a: Mew|Taunt|p1a: Why
+|-start|p1a: Why|move: Taunt
+|move|p1a: Why|Volt Switch|p2a: Mew
+|-damage|p2a: Mew|343\/404
+|
+|switch|p1a: How|Gengar, M|268\/268
+|
+|-heal|p2a: Mew|368\/404|[from] item: Leftovers
+|turn|10
+|
+|move|p1a: How|Substitute|p1a: How
+|-start|p1a: How|Substitute
+|-damage|p1a: How|201\/268
+|move|p2a: Mew|Will-O-Wisp|p1a: How|[miss]
+|-miss|p2a: Mew|p1a: How
+|
+|-heal|p1a: How|217\/268|[from] item: Black Sludge
+|-heal|p2a: Mew|393\/404|[from] item: Leftovers
+|turn|11
+|
+|switch|p2a: Bisharp|Bisharp, F|272\/272
+|move|p1a: How|Taunt|p2a: Bisharp
+|-start|p2a: Bisharp|move: Taunt
+|
+|-heal|p1a: How|233\/268|[from] item: Black Sludge
+|turn|12
+|
+|move|p1a: How|Shadow Ball|p2a: Bisharp
+|-resisted|p2a: Bisharp
+|-damage|p2a: Bisharp|182\/272
+|move|p2a: Bisharp|Knock Off|p1a: How
+|-supereffective|p1a: How
+|-end|p1a: How|Substitute
+|
+|-heal|p1a: How|249\/268|[from] item: Black Sludge
+|turn|13
+|
+|move|p1a: How|Substitute|p1a: How
+|-start|p1a: How|Substitute
+|-damage|p1a: How|182\/268
+|move|p2a: Bisharp|Knock Off|p1a: How
+|-supereffective|p1a: How
+|-end|p1a: How|Substitute
+|
+|-heal|p1a: How|198\/268|[from] item: Black Sludge
+|turn|14
+|
+|switch|p1a: Where|Ferrothorn, F|351\/351
+|move|p2a: Bisharp|Knock Off|p1a: Where
+|-damage|p1a: Where|201\/351
+|-damage|p2a: Bisharp|148\/272|[from] ability: Iron Barbs|[of] p1a: Where
+|-enditem|p1a: Where|Leftovers|[from] move: Knock Off|[of] p2a: Bisharp
+|
+|-end|p2a: Bisharp|move: Taunt
+|turn|15
+|
+|switch|p2a: Zapdos|Zapdos|170\/322
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Where|Leech Seed|p2a: Zapdos
+|-start|p2a: Zapdos|move: Leech Seed
+|
+|-damage|p2a: Zapdos|130\/322|[from] Leech Seed|[of] p1a: Where
+|-heal|p1a: Where|241\/351|[silent]
+|turn|16
+|
+|switch|p2a: Mew|Mew|393\/404
+|switch|p1a: What|Terrakion|323\/323
+|
+|-heal|p2a: Mew|404\/404|[from] item: Leftovers
+|turn|17
+|
+|switch|p1a: Why|Rotom-Wash|89\/303
+|move|p2a: Mew|Will-O-Wisp|p1a: Why
+|-status|p1a: Why|brn
+|
+|-heal|p1a: Why|107\/303 brn|[from] item: Leftovers
+|-damage|p1a: Why|70\/303 brn|[from] brn
+|turn|18
+|
+|move|p2a: Mew|Taunt|p1a: Why
+|-start|p1a: Why|move: Taunt
+|cant|p1a: Why|move: Taunt|Pain Split
+|
+|-heal|p1a: Why|88\/303 brn|[from] item: Leftovers
+|-damage|p1a: Why|51\/303 brn|[from] brn
+|turn|19
+|
+|move|p2a: Mew|Will-O-Wisp|p1a: Why
+|-fail|p1a: Why|brn
+|move|p1a: Why|Volt Switch|p2a: Mew
+|-damage|p2a: Mew|338\/404
+|
+|switch|p1a: How|Gengar, M|198\/268
+|
+|-heal|p1a: How|214\/268|[from] item: Black Sludge
+|-heal|p2a: Mew|363\/404|[from] item: Leftovers
+|turn|20
+|
+|switch|p2a: Bisharp|Bisharp, F|148\/272
+|move|p1a: How|Substitute|p1a: How
+|-start|p1a: How|Substitute
+|-damage|p1a: How|147\/268
+|
+|-heal|p1a: How|163\/268|[from] item: Black Sludge
+|turn|21
+|
+|move|p1a: How|Shadow Ball|p2a: Bisharp
+|-resisted|p2a: Bisharp
+|-damage|p2a: Bisharp|59\/272
+|move|p2a: Bisharp|Knock Off|p1a: How
+|-crit|p1a: How
+|-supereffective|p1a: How
+|-end|p1a: How|Substitute
+|
+|-heal|p1a: How|179\/268|[from] item: Black Sludge
+|turn|22
+|
+|move|p1a: How|Shadow Ball|p2a: Bisharp
+|-resisted|p2a: Bisharp
+|-damage|p2a: Bisharp|0 fnt
+|faint|p2a: Bisharp
+|
+|-heal|p1a: How|195\/268|[from] item: Black Sludge
+|
+|switch|p2a: Heatran|Heatran, M|386\/386
+|-item|p2a: Heatran|Air Balloon
+|turn|23
+|
+|switch|p1a: Why|Rotom-Wash|51\/303 brn
+|move|p2a: Heatran|Fire Spin|p1a: Why
+|-resisted|p1a: Why
+|-damage|p1a: Why|20\/303 brn
+|-activate|p1a: Why|move: Fire Spin|[of] p2a: Heatran
+|
+|-heal|p1a: Why|38\/303 brn|[from] item: Leftovers
+|-damage|p1a: Why|1\/303 brn|[from] brn
+|-damage|p1a: Why|0 fnt|[from] move: Fire Spin|[partiallytrapped]
+|faint|p1a: Why
+|
+|switch|p1a: What|Terrakion|323\/323
+|turn|24
+|
+|switch|p2a: Manaphy|Manaphy|329\/404
+|move|p1a: What|Close Combat|p2a: Manaphy
+|-damage|p2a: Manaphy|188\/404
+|-unboost|p1a: What|def|1
+|-unboost|p1a: What|spd|1
+|
+|-heal|p2a: Manaphy|213\/404|[from] item: Leftovers
+|turn|25
+|
+|switch|p1a: Where|Ferrothorn, F|241\/351
+|move|p2a: Manaphy|Scald|p1a: Where
+|-resisted|p1a: Where
+|-damage|p1a: Where|198\/351
+|-status|p1a: Where|brn
+|
+|-heal|p2a: Manaphy|238\/404|[from] item: Leftovers
+|-damage|p1a: Where|155\/351 brn|[from] brn
+|turn|26
+|
+|switch|p2a: Mew|Mew|363\/404
+|move|p1a: Where|Leech Seed|p2a: Mew
+|-start|p2a: Mew|move: Leech Seed
+|
+|-heal|p2a: Mew|388\/404|[from] item: Leftovers
+|-damage|p2a: Mew|338\/404|[from] Leech Seed|[of] p1a: Where
+|-heal|p1a: Where|205\/351 brn|[silent]
+|-damage|p1a: Where|162\/351 brn|[from] brn
+|turn|27
+|
+|switch|p2a: Pinsir|Pinsir, F|272\/272
+|move|p1a: Where|Protect|p1a: Where
+|-fail|p1a: Where
+|
+|-damage|p1a: Where|119\/351 brn|[from] brn
+|turn|28
+|
+|switch|p2a: Heatran|Heatran, M|386\/386
+|-item|p2a: Heatran|Air Balloon
+|move|p1a: Where|Stealth Rock|p2a: Heatran
+|-sidestart|p2: afc_test|move: Stealth Rock
+|
+|-damage|p1a: Where|76\/351 brn|[from] brn
+|turn|29
+|
+|switch|p2a: Mew|Mew|338\/404
+|-damage|p2a: Mew|288\/404|[from] Stealth Rock
+|move|p1a: Where|Gyro Ball|p2a: Mew
+|-damage|p2a: Mew|210\/404
+|
+|-heal|p2a: Mew|235\/404|[from] item: Leftovers
+|-damage|p1a: Where|33\/351 brn|[from] brn
+|turn|30
+|
+|switch|p1a: Who|Gardevoir-Mega, F, shiny|283\/283
+|move|p2a: Mew|Defog|p1a: Who
+|-unboost|p1a: Who|evasion|1
+|-sideend|p2: afc_test|Stealth Rock|[from] move: Defog|[of] p2a: Mew
+|
+|-heal|p2a: Mew|260\/404|[from] item: Leftovers
+|turn|31
+|
+|move|p1a: Who|Taunt|p2a: Mew
+|-start|p2a: Mew|move: Taunt
+|cant|p2a: Mew|move: Taunt|Will-O-Wisp
+|
+|-heal|p2a: Mew|285\/404|[from] item: Leftovers
+|turn|32
+|
+|switch|p2a: Heatran|Heatran, M|386\/386
+|-item|p2a: Heatran|Air Balloon
+|move|p1a: Who|Hyper Voice|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|331\/386
+|-enditem|p2a: Heatran|Air Balloon
+|
+|turn|33
+|
+|move|p1a: Who|Focus Blast|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|faint|p2a: Heatran
+|
+|
+|switch|p2a: Manaphy|Manaphy|238\/404
+|turn|34
+|
+|move|p1a: Who|Hyper Voice|p2a: Manaphy
+|-damage|p2a: Manaphy|0 fnt
+|faint|p2a: Manaphy
+|
+|
+|switch|p2a: Pinsir|Pinsir, F|272\/272
+|turn|35
+|
+|switch|p1a: Where|Ferrothorn, F|33\/351 brn
+|detailschange|p2a: Pinsir|Pinsir-Mega, F
+|message|Pinsir has Mega Evolved into Mega Pinsir!
+|move|p2a: Pinsir|Swords Dance|p2a: Pinsir
+|-boost|p2a: Pinsir|atk|2
+|
+|-damage|p1a: Where|0 fnt|[from] brn
+|faint|p1a: Where
+|chat|ThatTheDamned|Nice.
+|
+|switch|p1a: What|Terrakion|323\/323
+|turn|36
+|
+|move|p1a: What|Rock Slide|p2a: Pinsir
+|-supereffective|p2a: Pinsir
+|-damage|p2a: Pinsir|0 fnt
+|faint|p2a: Pinsir
+|
+|-message|afc_test forfeited.
+|
+|win|ThatTheDamned
+|raw|Ladder updating...
+|raw|ThatTheDamned's rating: 1559 &rarr; <strong>1578<\/strong><br \/>(+19 for winning)
+|raw|afc_test's rating: 1549 &rarr; <strong>1529<\/strong><br \/>(-20 for losing)
+|leave|afc_test
+|player|p2

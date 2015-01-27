@@ -1,0 +1,882 @@
+|join|tigers
+|join|meow meow :3
+|player|p1|tigers|93
+|player|p2|meow meow :3|1
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Gliscor, M
+|poke|p1|Heatran, M, shiny
+|poke|p1|Roserade, F
+|poke|p1|Starmie
+|poke|p1|Jellicent, M
+|poke|p1|Umbreon, M
+|poke|p2|Conkeldurr, M
+|poke|p2|Cloyster, F
+|poke|p2|Breloom, F
+|poke|p2|Espeon, M
+|poke|p2|Latios, M
+|poke|p2|Wobbuffet, F
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|join|zeus974
+|
+|start
+|switch|p1a: MeanMachine|Umbreon, M| (48\/48)
+|switch|p2a: Wobbuffet|Wobbuffet, F| (48\/48)
+|turn|1
+|callback|decision
+|
+|move|p1a: MeanMachine|Baton Pass|p1a: MeanMachine
+|callback|decision
+|
+|switch|p1a: Scrooge|Gliscor, M| (48\/48)
+|move|p2a: Wobbuffet|Encore|p1a: Scrooge
+|-fail|p1a: Scrooge
+|
+|-activate|p1a: Scrooge|item: Toxic Orb
+|-status|p1a: Scrooge|tox
+|turn|2
+|callback|decision
+|
+|move|p1a: Scrooge|Taunt|p2a: Wobbuffet
+|-start|p2a: Wobbuffet|move: Taunt
+|cant|p2a: Wobbuffet|move: Taunt|Encore
+|
+|turn|3
+|callback|decision
+|
+|switch|p2a: Cloyster|Cloyster, F| (48\/48)
+|move|p1a: Scrooge|Earthquake|p2a: Cloyster
+|-damage|p2a: Cloyster|29 (34\/48)
+|
+|turn|4
+|callback|decision
+|
+|switch|p1a: PePPeRonI|Heatran, M, shiny| (48\/48)
+|move|p2a: Cloyster|Icicle Spear|p1a: PePPeRonI
+|-resisted|p1a: PePPeRonI
+|-damage|p1a: PePPeRonI|2 (47\/48)
+|-resisted|p1a: PePPeRonI
+|-damage|p1a: PePPeRonI|2 (46\/48)
+|-resisted|p1a: PePPeRonI
+|-damage|p1a: PePPeRonI|2 (45\/48)
+|-resisted|p1a: PePPeRonI
+|-damage|p1a: PePPeRonI|2 (44\/48)
+|-resisted|p1a: PePPeRonI
+|-damage|p1a: PePPeRonI|2 (43\/48)
+|-hitcount|p1a: PePPeRonI|5
+|
+|-heal|p1a: PePPeRonI|6 (46\/48)|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p2a: Espeon|Espeon, M| (48\/48)
+|move|p1a: PePPeRonI|Flamethrower|p2a: Espeon
+|-damage|p2a: Espeon|45 (26\/48)
+|
+|-heal|p2a: Espeon|6 (29\/48)|[from] item: Leftovers
+|-heal|p1a: PePPeRonI|4 (48\/48)|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Espeon|Morning Sun|p2a: Espeon
+|-heal|p2a: Espeon|39 (48\/48)
+|move|p1a: PePPeRonI|Flamethrower|p2a: Espeon
+|-damage|p2a: Espeon|45 (26\/48)
+|
+|-heal|p2a: Espeon|6 (28\/48)|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p2a: Espeon|Calm Mind|p2a: Espeon
+|-boost|p2a: Espeon|spa|1
+|-boost|p2a: Espeon|spd|1
+|move|p1a: PePPeRonI|Flamethrower|p2a: Espeon
+|-damage|p2a: Espeon|31 (14\/48)
+|
+|-heal|p2a: Espeon|6 (17\/48)|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p1a: Scrooge|Gliscor, M| (48\/48 tox)
+|move|p2a: Espeon|Morning Sun|p2a: Espeon
+|-heal|p2a: Espeon|50 (41\/48)
+|
+|-heal|p2a: Espeon|6 (43\/48)|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p2a: Espeon|Hidden Power|p1a: Scrooge
+|-damage|p1a: Scrooge|31 (33\/48 tox)
+|move|p1a: Scrooge|Earthquake|p2a: Espeon
+|-damage|p2a: Espeon|33 (27\/48)
+|
+|-heal|p2a: Espeon|6 (30\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|12 (39\/48 tox)|[from] ability: Poison Heal
+|turn|10
+|callback|decision
+|
+|move|p2a: Espeon|Calm Mind|p2a: Espeon
+|-boost|p2a: Espeon|spa|1
+|-boost|p2a: Espeon|spd|1
+|move|p1a: Scrooge|Earthquake|p2a: Espeon
+|-damage|p2a: Espeon|31 (15\/48)
+|
+|-heal|p2a: Espeon|6 (18\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|12 (45\/48 tox)|[from] ability: Poison Heal
+|turn|11
+|callback|decision
+|
+|move|p2a: Espeon|Morning Sun|p2a: Espeon
+|-heal|p2a: Espeon|50 (42\/48)
+|move|p1a: Scrooge|Earthquake|p2a: Espeon
+|-damage|p2a: Espeon|31 (27\/48)
+|
+|-heal|p2a: Espeon|6 (29\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|6 (48\/48 tox)|[from] ability: Poison Heal
+|turn|12
+|callback|decision
+|
+|move|p2a: Espeon|Calm Mind|p2a: Espeon
+|-boost|p2a: Espeon|spa|1
+|-boost|p2a: Espeon|spd|1
+|move|p1a: Scrooge|Earthquake|p2a: Espeon
+|-damage|p2a: Espeon|33 (14\/48)
+|
+|-heal|p2a: Espeon|6 (17\/48)|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: Espeon|Morning Sun|p2a: Espeon
+|-heal|p2a: Espeon|50 (41\/48)
+|move|p1a: Scrooge|Earthquake|p2a: Espeon
+|-damage|p2a: Espeon|33 (24\/48)
+|
+|-heal|p2a: Espeon|6 (27\/48)|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p2a: Espeon|Calm Mind|p2a: Espeon
+|-boost|p2a: Espeon|spa|1
+|-boost|p2a: Espeon|spd|1
+|move|p1a: Scrooge|Earthquake|p2a: Espeon
+|-crit|p2a: Espeon
+|-damage|p2a: Espeon|56 (0\/48 fnt)
+|faint|p2a: Espeon
+|
+|callback|decision
+|
+|switch|p2a: Wobbuffet|Wobbuffet, F| (48\/48)
+|turn|15
+|callback|decision
+|chat|tigers|sorry dude
+|
+|move|p1a: Scrooge|Taunt|p2a: Wobbuffet
+|-start|p2a: Wobbuffet|move: Taunt
+|move|p2a: Wobbuffet|Counter|p1a: Scrooge
+|-fail|p2: Wobbuffet
+|
+|turn|16
+|callback|decision
+|chat|tigers|but the crit had to come sometime
+|
+|move|p1a: Scrooge|Protect|p1a: Scrooge
+|-singleturn|p1a: Scrooge|Protect
+|move|p2a: Wobbuffet|Counter|p1a: Scrooge
+|-activate|p1a: Scrooge|Protect
+|
+|turn|17
+|callback|decision
+|chat|meow meow :3|i knew it too...
+|
+|move|p1a: Scrooge|Taunt|p2a: Wobbuffet
+|move|p2a: Wobbuffet|Counter|p1a: Scrooge
+|-fail|p2: Wobbuffet
+|
+|-end|p2a: Wobbuffet|move: Taunt
+|turn|18
+|callback|decision
+|
+|move|p1a: Scrooge|Taunt|p2a: Wobbuffet
+|-start|p2a: Wobbuffet|move: Taunt
+|move|p2a: Wobbuffet|Counter|p1a: Scrooge
+|-fail|p2: Wobbuffet
+|
+|turn|19
+|callback|decision
+|
+|move|p1a: Scrooge|Taunt|p2a: Wobbuffet
+|move|p2a: Wobbuffet|Counter|p1a: Scrooge
+|-fail|p2: Wobbuffet
+|
+|turn|20
+|callback|decision
+|
+|move|p1a: Scrooge|Ice Fang|p2a: Wobbuffet
+|-damage|p2a: Wobbuffet|10 (43\/48)
+|move|p2a: Wobbuffet|Counter|p1a: Scrooge
+|-damage|p1a: Scrooge|29 (34\/48 tox)
+|
+|-heal|p2a: Wobbuffet|6 (46\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|12 (40\/48 tox)|[from] ability: Poison Heal
+|-end|p2a: Wobbuffet|move: Taunt
+|turn|21
+|callback|decision
+|
+|move|p1a: Scrooge|Taunt|p2a: Wobbuffet
+|-start|p2a: Wobbuffet|move: Taunt
+|cant|p2a: Wobbuffet|move: Taunt|Encore
+|
+|-heal|p2a: Wobbuffet|4 (48\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|12 (46\/48 tox)|[from] ability: Poison Heal
+|turn|22
+|callback|decision
+|
+|move|p1a: Scrooge|Protect|p1a: Scrooge
+|-singleturn|p1a: Scrooge|Protect
+|move|p2a: Wobbuffet|Counter|p1a: Scrooge
+|-activate|p1a: Scrooge|Protect
+|
+|-heal|p1a: Scrooge|4 (48\/48 tox)|[from] ability: Poison Heal
+|turn|23
+|callback|decision
+|chat|tigers|how many PP does counter has
+|chat|tigers|?
+|
+|move|p1a: Scrooge|Taunt|p2a: Wobbuffet
+|move|p2a: Wobbuffet|Counter|p1a: Scrooge
+|-fail|p2: Wobbuffet
+|
+|-end|p2a: Wobbuffet|move: Taunt
+|turn|24
+|callback|decision
+|chat|meow meow :3|lots lol
+|chat|meow meow :3|32
+|
+|move|p1a: Scrooge|Taunt|p2a: Wobbuffet
+|-start|p2a: Wobbuffet|move: Taunt
+|cant|p2a: Wobbuffet|move: Taunt|Encore
+|
+|turn|25
+|callback|decision
+|
+|move|p1a: Scrooge|Protect|p1a: Scrooge
+|-singleturn|p1a: Scrooge|Protect
+|move|p2a: Wobbuffet|Mirror Coat|p1a: Scrooge
+|-activate|p1a: Scrooge|Protect
+|
+|turn|26
+|callback|decision
+|
+|move|p1a: Scrooge|Earthquake|p2a: Wobbuffet
+|-damage|p2a: Wobbuffet|22 (37\/48)
+|move|p2a: Wobbuffet|Counter|p1a: Scrooge
+|-damage|p1a: Scrooge|70 (14\/48 tox)
+|
+|-heal|p2a: Wobbuffet|6 (40\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|12 (20\/48 tox)|[from] ability: Poison Heal
+|-end|p2a: Wobbuffet|move: Taunt
+|turn|27
+|callback|decision
+|
+|move|p1a: Scrooge|Taunt|p2a: Wobbuffet
+|-start|p2a: Wobbuffet|move: Taunt
+|cant|p2a: Wobbuffet|move: Taunt|Encore
+|
+|-heal|p2a: Wobbuffet|6 (43\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|12 (26\/48 tox)|[from] ability: Poison Heal
+|turn|28
+|callback|decision
+|
+|move|p1a: Scrooge|Protect|p1a: Scrooge
+|-singleturn|p1a: Scrooge|Protect
+|move|p2a: Wobbuffet|Mirror Coat|p1a: Scrooge
+|-activate|p1a: Scrooge|Protect
+|
+|-heal|p2a: Wobbuffet|6 (46\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|12 (32\/48 tox)|[from] ability: Poison Heal
+|turn|29
+|callback|decision
+|
+|move|p1a: Scrooge|Taunt|p2a: Wobbuffet
+|move|p2a: Wobbuffet|Counter|p1a: Scrooge
+|-fail|p2: Wobbuffet
+|
+|-heal|p2a: Wobbuffet|4 (48\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|12 (38\/48 tox)|[from] ability: Poison Heal
+|-end|p2a: Wobbuffet|move: Taunt
+|turn|30
+|callback|decision
+|
+|move|p1a: Scrooge|Taunt|p2a: Wobbuffet
+|-start|p2a: Wobbuffet|move: Taunt
+|cant|p2a: Wobbuffet|move: Taunt|Encore
+|
+|-heal|p1a: Scrooge|12 (44\/48 tox)|[from] ability: Poison Heal
+|turn|31
+|callback|decision
+|
+|move|p1a: Scrooge|Protect|p1a: Scrooge
+|-singleturn|p1a: Scrooge|Protect
+|move|p2a: Wobbuffet|Counter|p1a: Scrooge
+|-activate|p1a: Scrooge|Protect
+|
+|-heal|p1a: Scrooge|8 (48\/48 tox)|[from] ability: Poison Heal
+|turn|32
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M| (48\/48)
+|move|p1a: Scrooge|Ice Fang|p2a: Latios
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|41 (28\/48)
+|
+|turn|33
+|callback|decision
+|
+|switch|p1a: MeanMachine|Umbreon, M| (48\/48)
+|move|p2a: Latios|Surf|p1a: MeanMachine
+|-damage|p1a: MeanMachine|18 (39\/48)
+|
+|-heal|p1a: MeanMachine|6 (42\/48)|[from] item: Leftovers
+|turn|34
+|callback|decision
+|chat|zeus974|that strange
+|chat|zeus974|how to u know he change?
+|
+|switch|p2a: Wobbuffet|Wobbuffet, F| (48\/48)
+|move|p1a: MeanMachine|Yawn|p2a: Wobbuffet
+|-start|p2a: Wobbuffet|move: Yawn|[of] p1a: MeanMachine
+|
+|-heal|p1a: MeanMachine|6 (45\/48)|[from] item: Leftovers
+|turn|35
+|callback|decision
+|
+|switch|p2a: Breloom|Breloom, F| (48\/48)
+|move|p1a: MeanMachine|Baton Pass|p1a: MeanMachine
+|callback|decision
+|chat|tigers|im a good player ;)
+|
+|switch|p1a: DeathStar|Starmie| (48\/48)
+|
+|turn|36
+|callback|decision
+|
+|switch|p2a: Wobbuffet|Wobbuffet, F| (48\/48)
+|move|p1a: DeathStar|Psychic|p2a: Wobbuffet
+|-resisted|p2a: Wobbuffet
+|-damage|p2a: Wobbuffet|16 (40\/48)
+|-damage|p1a: DeathStar|10 (43\/48)|[from] item: Life Orb
+|
+|-heal|p2a: Wobbuffet|6 (43\/48)|[from] item: Leftovers
+|turn|37
+|callback|decision
+|chat|zeus974|lol :P
+|chat|tigers|no i misclicked ;)
+|
+|move|p1a: DeathStar|Rapid Spin|p2a: Wobbuffet
+|-damage|p2a: Wobbuffet|2 (42\/48)
+|-damage|p1a: DeathStar|10 (39\/48)|[from] item: Life Orb
+|move|p2a: Wobbuffet|Encore|p1a: DeathStar
+|-start|p1a: DeathStar|Encore
+|
+|-heal|p2a: Wobbuffet|6 (45\/48)|[from] item: Leftovers
+|turn|38
+|callback|decision
+|
+|switch|p2a: Cloyster|Cloyster, F| (34\/48)
+|move|p1a: DeathStar|Rapid Spin|p2a: Cloyster
+|-damage|p2a: Cloyster|4 (32\/48)
+|-damage|p1a: DeathStar|10 (34\/48)|[from] item: Life Orb
+|
+|turn|39
+|callback|decision
+|
+|switch|p1a: PePPeRonI|Heatran, M, shiny| (48\/48)
+|move|p2a: Cloyster|Shell Smash|p2a: Cloyster
+|-boost|p2a: Cloyster|atk|2
+|-boost|p2a: Cloyster|spa|2
+|-boost|p2a: Cloyster|spe|2
+|-unboost|p2a: Cloyster|def|1
+|-unboost|p2a: Cloyster|spd|1
+|-enditem|p2a: Cloyster|White Herb
+|-restoreboost|p2a: Cloyster|[silent]
+|
+|turn|40
+|callback|decision
+|
+|move|p2a: Cloyster|Razor Shell|p1a: PePPeRonI
+|-supereffective|p1a: PePPeRonI
+|-damage|p1a: PePPeRonI|97 (1\/48)
+|move|p1a: PePPeRonI|Flamethrower|p2a: Cloyster
+|-crit|p2a: Cloyster
+|-damage|p2a: Cloyster|66 (0\/48 fnt)
+|faint|p2a: Cloyster
+|
+|-heal|p1a: PePPeRonI|6 (4\/48)|[from] item: Leftovers
+|callback|decision
+|chat|meow meow :3|booo
+|chat|zeus974|how do u predict the cc lol
+|
+|switch|p2a: Breloom|Breloom, F| (48\/48)
+|turn|41
+|callback|decision
+|chat|tigers|this one didnt matter
+|chat|meow meow :3|cc?
+|chat|zeus974|oh yes, he got a low spe def
+|chat|zeus974|ch
+|chat|zeus974|critical hit sry
+|
+|switch|p1a: DeathStar|Starmie| (34\/48)
+|move|p2a: Breloom|Bullet Seed|p1a: DeathStar
+|-supereffective|p1a: DeathStar
+|-damage|p1a: DeathStar|56 (7\/48)
+|-supereffective|p1a: DeathStar
+|-damage|p1a: DeathStar|14 (0\/48 fnt)
+|-hitcount|p1a: DeathStar|2
+|faint|p1a: DeathStar
+|
+|callback|decision
+|
+|switch|p1a: PePPeRonI|Heatran, M, shiny| (4\/48)
+|turn|42
+|callback|decision
+|
+|move|p2a: Breloom|Mach Punch|p1a: PePPeRonI
+|-supereffective|p1a: PePPeRonI
+|-damage|p1a: PePPeRonI|8 (0\/48 fnt)
+|faint|p1a: PePPeRonI
+|
+|callback|decision
+|
+|switch|p1a: Scrooge|Gliscor, M| (48\/48 tox)
+|turn|43
+|callback|decision
+|
+|switch|p2a: Wobbuffet|Wobbuffet, F| (45\/48)
+|move|p1a: Scrooge|Ice Fang|p2a: Wobbuffet
+|-damage|p2a: Wobbuffet|10 (40\/48)
+|
+|-heal|p2a: Wobbuffet|6 (43\/48)|[from] item: Leftovers
+|turn|44
+|callback|decision
+|
+|move|p1a: Scrooge|Taunt|p2a: Wobbuffet
+|-start|p2a: Wobbuffet|move: Taunt
+|cant|p2a: Wobbuffet|move: Taunt|Encore
+|
+|-heal|p2a: Wobbuffet|6 (46\/48)|[from] item: Leftovers
+|turn|45
+|callback|decision
+|
+|move|p1a: Scrooge|Protect|p1a: Scrooge
+|-singleturn|p1a: Scrooge|Protect
+|move|p2a: Wobbuffet|Counter|p1a: Scrooge
+|-activate|p1a: Scrooge|Protect
+|
+|-heal|p2a: Wobbuffet|4 (48\/48)|[from] item: Leftovers
+|turn|46
+|callback|decision
+|chat|meow meow :3|back to this X[)
+|
+|move|p1a: Scrooge|Ice Fang|p2a: Wobbuffet
+|-damage|p2a: Wobbuffet|10 (43\/48)
+|move|p2a: Wobbuffet|Counter|p1a: Scrooge
+|-damage|p1a: Scrooge|31 (33\/48 tox)
+|
+|-heal|p2a: Wobbuffet|6 (46\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|12 (39\/48 tox)|[from] ability: Poison Heal
+|-end|p2a: Wobbuffet|move: Taunt
+|turn|47
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M| (28\/48)
+|move|p1a: Scrooge|Taunt|p2a: Latios
+|-start|p2a: Latios|move: Taunt
+|
+|-heal|p1a: Scrooge|12 (45\/48 tox)|[from] ability: Poison Heal
+|turn|48
+|callback|decision
+|
+|move|p1a: Scrooge|Protect|p1a: Scrooge
+|-singleturn|p1a: Scrooge|Protect
+|move|p2a: Latios|Draco Meteor|p1a: Scrooge|[miss]
+|-miss|p2a: Latios|p1a: Scrooge
+|
+|-heal|p1a: Scrooge|6 (48\/48 tox)|[from] ability: Poison Heal
+|turn|49
+|callback|decision
+|
+|switch|p1a: MeanMachine|Umbreon, M| (45\/48)
+|move|p2a: Latios|Draco Meteor|p1a: MeanMachine|[miss]
+|-miss|p2a: Latios|p1a: MeanMachine
+|
+|-heal|p1a: MeanMachine|6 (47\/48)|[from] item: Leftovers
+|turn|50
+|callback|decision
+|
+|switch|p2a: Conkeldurr|Conkeldurr, M| (48\/48)
+|move|p1a: MeanMachine|Yawn|p2a: Conkeldurr
+|-start|p2a: Conkeldurr|move: Yawn|[of] p1a: MeanMachine
+|
+|-heal|p1a: MeanMachine|2 (48\/48)|[from] item: Leftovers
+|-activate|p2a: Conkeldurr|item: Flame Orb
+|-status|p2a: Conkeldurr|brn
+|turn|51
+|callback|decision
+|
+|switch|p1a: BigMC|Jellicent, M| (48\/48)
+|move|p2a: Conkeldurr|Payback|p1a: BigMC
+|-supereffective|p1a: BigMC
+|-damage|p1a: BigMC|56 (21\/48)
+|
+|-heal|p1a: BigMC|6 (24\/48)|[from] item: Leftovers
+|-damage|p2a: Conkeldurr|12 (42\/48 brn)|[from] brn
+|turn|52
+|callback|decision
+|
+|move|p1a: BigMC|Recover|p1a: BigMC
+|-heal|p1a: BigMC|50 (47\/48)
+|move|p2a: Conkeldurr|Payback|p1a: BigMC
+|-supereffective|p1a: BigMC
+|-damage|p1a: BigMC|97 (0\/48 fnt)
+|faint|p1a: BigMC
+|
+|-damage|p2a: Conkeldurr|12 (36\/48 brn)|[from] brn
+|callback|decision
+|
+|switch|p1a: Scrooge|Gliscor, M| (48\/48 tox)
+|turn|53
+|callback|decision
+|
+|switch|p2a: Wobbuffet|Wobbuffet, F| (46\/48)
+|move|p1a: Scrooge|Earthquake|p2a: Wobbuffet
+|-damage|p2a: Wobbuffet|20 (36\/48)
+|
+|-heal|p2a: Wobbuffet|6 (39\/48)|[from] item: Leftovers
+|turn|54
+|callback|decision
+|
+|move|p1a: Scrooge|Taunt|p2a: Wobbuffet
+|-start|p2a: Wobbuffet|move: Taunt
+|cant|p2a: Wobbuffet|move: Taunt|Encore
+|
+|-heal|p2a: Wobbuffet|6 (42\/48)|[from] item: Leftovers
+|turn|55
+|callback|decision
+|
+|move|p1a: Scrooge|Ice Fang|p2a: Wobbuffet
+|-damage|p2a: Wobbuffet|10 (37\/48)
+|move|p2a: Wobbuffet|Mirror Coat|p1a: Scrooge
+|-fail|p2a: Wobbuffet
+|
+|-heal|p2a: Wobbuffet|6 (40\/48)|[from] item: Leftovers
+|turn|56
+|callback|decision
+|
+|move|p1a: Scrooge|Ice Fang|p2a: Wobbuffet
+|-crit|p2a: Wobbuffet
+|-damage|p2a: Wobbuffet|18 (32\/48)
+|move|p2a: Wobbuffet|Counter|p1a: Scrooge
+|-damage|p1a: Scrooge|54 (22\/48 tox)
+|
+|-heal|p2a: Wobbuffet|6 (35\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|12 (28\/48 tox)|[from] ability: Poison Heal
+|-end|p2a: Wobbuffet|move: Taunt
+|turn|57
+|callback|decision
+|
+|move|p1a: Scrooge|Taunt|p2a: Wobbuffet
+|-start|p2a: Wobbuffet|move: Taunt
+|cant|p2a: Wobbuffet|move: Taunt|Encore
+|
+|-heal|p2a: Wobbuffet|6 (38\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|12 (34\/48 tox)|[from] ability: Poison Heal
+|turn|58
+|callback|decision
+|
+|move|p1a: Scrooge|Protect|p1a: Scrooge
+|-singleturn|p1a: Scrooge|Protect
+|move|p2a: Wobbuffet|Counter|p1a: Scrooge
+|-activate|p1a: Scrooge|Protect
+|
+|-heal|p2a: Wobbuffet|6 (41\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|12 (40\/48 tox)|[from] ability: Poison Heal
+|turn|59
+|callback|decision
+|
+|move|p1a: Scrooge|Ice Fang|p2a: Wobbuffet
+|-damage|p2a: Wobbuffet|10 (36\/48)
+|move|p2a: Wobbuffet|Counter|p1a: Scrooge
+|-damage|p1a: Scrooge|29 (25\/48 tox)
+|
+|-heal|p2a: Wobbuffet|6 (39\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|12 (31\/48 tox)|[from] ability: Poison Heal
+|-end|p2a: Wobbuffet|move: Taunt
+|turn|60
+|callback|decision
+|
+|move|p1a: Scrooge|Taunt|p2a: Wobbuffet
+|-start|p2a: Wobbuffet|move: Taunt
+|cant|p2a: Wobbuffet|move: Taunt|Encore
+|
+|-heal|p2a: Wobbuffet|6 (42\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|12 (37\/48 tox)|[from] ability: Poison Heal
+|turn|61
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M| (28\/48)
+|move|p1a: Scrooge|Protect|p1a: Scrooge
+|
+|-heal|p1a: Scrooge|12 (43\/48 tox)|[from] ability: Poison Heal
+|turn|62
+|callback|decision
+|
+|switch|p1a: MeanMachine|Umbreon, M| (48\/48)
+|move|p2a: Latios|Trick|p1a: MeanMachine
+|-activate|p2a: Latios|move: Trick|[of] p1a: MeanMachine
+|-item|p1a: MeanMachine|Choice Scarf|[from] move: Trick
+|-item|p2a: Latios|Leftovers|[from] move: Trick
+|
+|-heal|p2a: Latios|6 (30\/48)|[from] item: Leftovers
+|turn|63
+|callback|decision
+|
+|switch|p2a: Conkeldurr|Conkeldurr, M| (36\/48 brn)
+|move|p1a: MeanMachine|Baton Pass|p1a: MeanMachine
+|callback|decision
+|
+|switch|p1a: Rosebutt LP|Roserade, F| (48\/48)
+|
+|-damage|p2a: Conkeldurr|12 (30\/48 brn)|[from] brn
+|turn|64
+|callback|decision
+|
+|move|p1a: Rosebutt LP|Giga Drain|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|33 (14\/48 brn)
+|move|p2a: Conkeldurr|Facade|p1a: Rosebutt LP
+|-damage|p1a: Rosebutt LP|100 (0\/48 fnt)
+|faint|p1a: Rosebutt LP
+|
+|-damage|p2a: Conkeldurr|12 (8\/48 brn)|[from] brn
+|callback|decision
+|
+|switch|p1a: Scrooge|Gliscor, M| (43\/48 tox)
+|turn|65
+|callback|decision
+|
+|move|p1a: Scrooge|Earthquake|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|16 (0\/48 fnt)
+|faint|p2a: Conkeldurr
+|
+|-heal|p1a: Scrooge|10 (48\/48 tox)|[from] ability: Poison Heal
+|callback|decision
+|
+|switch|p2a: Breloom|Breloom, F| (48\/48)
+|turn|66
+|callback|decision
+|
+|move|p2a: Breloom|Bullet Seed|p1a: Scrooge
+|-damage|p1a: Scrooge|14 (41\/48 tox)
+|-damage|p1a: Scrooge|14 (35\/48 tox)
+|-hitcount|p1a: Scrooge|2
+|move|p1a: Scrooge|Ice Fang|p2a: Breloom
+|-supereffective|p2a: Breloom
+|-damage|p2a: Breloom|45 (26\/48)
+|
+|-heal|p1a: Scrooge|12 (41\/48 tox)|[from] ability: Poison Heal
+|turn|67
+|callback|decision
+|
+|switch|p2a: Wobbuffet|Wobbuffet, F| (42\/48)
+|move|p1a: Scrooge|Ice Fang|p2a: Wobbuffet
+|-damage|p2a: Wobbuffet|10 (37\/48)
+|
+|-heal|p2a: Wobbuffet|6 (40\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|12 (47\/48 tox)|[from] ability: Poison Heal
+|turn|68
+|callback|decision
+|
+|move|p1a: Scrooge|Taunt|p2a: Wobbuffet
+|-start|p2a: Wobbuffet|move: Taunt
+|move|p2a: Wobbuffet|Counter|p1a: Scrooge
+|-fail|p2: Wobbuffet
+|
+|-heal|p2a: Wobbuffet|6 (43\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|2 (48\/48 tox)|[from] ability: Poison Heal
+|turn|69
+|callback|decision
+|chat|meow meow :3|eh ill just pp stall you
+|chat|tigers|i will win the PP stall
+|
+|move|p1a: Scrooge|Ice Fang|p2a: Wobbuffet
+|-damage|p2a: Wobbuffet|8 (39\/48)
+|move|p2a: Wobbuffet|Mirror Coat|p1a: Scrooge
+|-fail|p2a: Wobbuffet
+|
+|-heal|p2a: Wobbuffet|6 (42\/48)|[from] item: Leftovers
+|turn|70
+|callback|decision
+|
+|move|p1a: Scrooge|Ice Fang|p2a: Wobbuffet
+|-damage|p2a: Wobbuffet|10 (37\/48)
+|move|p2a: Wobbuffet|Counter|p1a: Scrooge
+|-damage|p1a: Scrooge|29 (34\/48 tox)
+|
+|-heal|p2a: Wobbuffet|6 (40\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|12 (40\/48 tox)|[from] ability: Poison Heal
+|-end|p2a: Wobbuffet|move: Taunt
+|turn|71
+|callback|decision
+|
+|move|p1a: Scrooge|Taunt|p2a: Wobbuffet
+|-start|p2a: Wobbuffet|move: Taunt
+|cant|p2a: Wobbuffet|move: Taunt|Encore
+|
+|-heal|p2a: Wobbuffet|6 (43\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|12 (46\/48 tox)|[from] ability: Poison Heal
+|turn|72
+|callback|decision
+|
+|move|p1a: Scrooge|Ice Fang|p2a: Wobbuffet
+|-damage|p2a: Wobbuffet|10 (38\/48)
+|move|p2a: Wobbuffet|Counter|p1a: Scrooge
+|-damage|p1a: Scrooge|31 (31\/48 tox)
+|
+|-heal|p2a: Wobbuffet|6 (41\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|12 (37\/48 tox)|[from] ability: Poison Heal
+|turn|73
+|callback|decision
+|chat|zeus974|how pp have encore :? you can dont answer me i can understand
+|chat|tigers|8 PP
+|chat|tigers|i dont know his last attack
+|chat|tigers|thats the problem
+|
+|move|p1a: Scrooge|Ice Fang|p2a: Wobbuffet
+|-damage|p2a: Wobbuffet|10 (37\/48)
+|move|p2a: Wobbuffet|Mirror Coat|p1a: Scrooge
+|-fail|p2a: Wobbuffet
+|
+|-heal|p2a: Wobbuffet|6 (40\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|12 (43\/48 tox)|[from] ability: Poison Heal
+|-end|p2a: Wobbuffet|move: Taunt
+|turn|74
+|callback|decision
+|chat|meow meow :3|im more going with eventaly he will have to atk me X[)
+|
+|move|p1a: Scrooge|Earthquake|p2a: Wobbuffet
+|-damage|p2a: Wobbuffet|22 (29\/48)
+|move|p2a: Wobbuffet|Encore|p1a: Scrooge
+|-start|p1a: Scrooge|Encore
+|
+|-heal|p2a: Wobbuffet|6 (32\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|10 (48\/48 tox)|[from] ability: Poison Heal
+|turn|75
+|callback|decision
+|chat|meow meow :3|or he can do that :3
+|chat|tigers|fuck Big mistake
+|
+|move|p1a: Scrooge|Earthquake|p2a: Wobbuffet
+|-damage|p2a: Wobbuffet|22 (21\/48)
+|move|p2a: Wobbuffet|Counter|p1a: Scrooge
+|-damage|p1a: Scrooge|70 (14\/48 tox)
+|
+|-heal|p2a: Wobbuffet|6 (24\/48)|[from] item: Leftovers
+|-heal|p1a: Scrooge|12 (20\/48 tox)|[from] ability: Poison Heal
+|turn|76
+|callback|decision
+|chat|tigers|not my game
+|chat|tigers|made to many mistakes
+|
+|move|p1a: Scrooge|Earthquake|p2a: Wobbuffet
+|-crit|p2a: Wobbuffet
+|-damage|p2a: Wobbuffet|41 (4\/48)
+|move|p2a: Wobbuffet|Counter|p1a: Scrooge
+|-damage|p1a: Scrooge|41 (0\/48 fnt)
+|faint|p1a: Scrooge
+|
+|-heal|p2a: Wobbuffet|6 (7\/48)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: MeanMachine|Umbreon, M| (48\/48)
+|turn|77
+|callback|decision
+|
+|move|p1a: MeanMachine|Yawn|p2a: Wobbuffet
+|-start|p2a: Wobbuffet|move: Yawn|[of] p1a: MeanMachine
+|move|p2a: Wobbuffet|Counter|p1a: MeanMachine
+|-fail|p2: Wobbuffet
+|
+|-heal|p2a: Wobbuffet|6 (10\/48)|[from] item: Leftovers
+|turn|78
+|callback|decision
+|chat|zeus974|when he is taunted he dont lose pp ..
+|
+|move|p1a: MeanMachine|Yawn|p2a: Wobbuffet
+|move|p2a: Wobbuffet|Safeguard|p2a: Wobbuffet
+|-sidestart|p2: meow meow :3|Safeguard
+|
+|-status|p2a: Wobbuffet|slp
+|-heal|p2a: Wobbuffet|6 (13\/48 slp)|[from] item: Leftovers
+|turn|79
+|callback|decision
+|
+|switch|p2a: Breloom|Breloom, F| (26\/48)
+|move|p1a: MeanMachine|Yawn|p2a: Breloom
+|-fail|p2a: Breloom
+|
+|turn|80
+|callback|decision
+|
+|move|p2a: Breloom|Mach Punch|p1a: MeanMachine
+|-supereffective|p1a: MeanMachine
+|-damage|p1a: MeanMachine|47 (25\/48)
+|move|p1a: MeanMachine|Yawn|p2a: Breloom
+|-fail|p2a: Breloom
+|
+|turn|81
+|callback|decision
+|
+|move|p2a: Breloom|Mach Punch|p1a: MeanMachine
+|-supereffective|p1a: MeanMachine
+|-damage|p1a: MeanMachine|45 (3\/48)
+|move|p1a: MeanMachine|Yawn|p2a: Breloom
+|-fail|p2a: Breloom
+|
+|turn|82
+|callback|decision
+|chat|meow meow :3|do you not have an attack?
+|chat|meow meow :3|on that guy?
+|chat|tigers|scarfed
+|chat|tigers|thanks to latios' trick
+|chat|meow meow :3|well ya i know but i mean why use yawn?
+|
+|move|p2a: Breloom|Mach Punch|p1a: MeanMachine
+|-supereffective|p1a: MeanMachine
+|-damage|p1a: MeanMachine|6 (0\/48 fnt)
+|faint|p1a: MeanMachine
+|
+|win|meow meow :3
+|raw|Ladder updating...
+|raw|tigers's rating: 1765 &rarr; <strong>1761<\/strong><br \/>(-4 for losing)
+|raw|meow meow :3's rating: 1565 &rarr; <strong>1571<\/strong><br \/>(+6 for winning)
+|chat|tigers|i dont have an attack 
+|chat|meow meow :3|i love wobby
+|leave|zeus974
+|chat|meow meow :3|oh thats what i was wondering
+|chat|meow meow :3|gg =)
+|join|zeus974
+|chat|zeus974|gg
+|leave|zeus974
+|chat|tigers|i play it with wish protect yawn and baton pass
+|chat|tigers|gg
+|player|p1
+|chat|meow meow :3|oh
+|leave|tigers

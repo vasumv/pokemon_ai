@@ -1,0 +1,390 @@
+|join|Kaneziken
+|join|Coatay
+|player|p1|Kaneziken|101
+|player|p2|Coatay|102
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Alakazam, F
+|poke|p1|Rotom-Wash
+|poke|p1|Magnezone
+|poke|p1|Breloom, F
+|poke|p1|Skarmory, F
+|poke|p1|Infernape, M
+|poke|p2|Crobat, M
+|poke|p2|Breloom, M
+|poke|p2|Terrakion
+|poke|p2|Ferrothorn, M
+|poke|p2|Rotom-Wash
+|poke|p2|Dragonite, F
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Alakazam|Alakazam, F| (48\/48)
+|switch|p2a: Rotom-W|Rotom-Wash| (48\/48)
+|turn|1
+|callback|decision
+|
+|move|p1a: Alakazam|Psychic|p2a: Rotom-W
+|-damage|p2a: Rotom-W|62 (18\/48)
+|move|p2a: Rotom-W|Hydro Pump|p1a: Alakazam
+|-damage|p1a: Alakazam|79 (10\/48)
+|
+|-heal|p2a: Rotom-W|6 (21\/48)|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M| (48\/48)
+|move|p1a: Alakazam|Psychic|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|16 (40\/48)
+|
+|-heal|p2a: Ferrothorn|6 (43\/48)|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p1a: Alakazam|Focus Blast|p2a: Ferrothorn|[miss]
+|-miss|p1a: Alakazam|p2a: Ferrothorn
+|move|p2a: Ferrothorn|Thunder Wave|p1a: Alakazam
+|-status|p1a: Alakazam|par
+|
+|-heal|p2a: Ferrothorn|6 (46\/48)|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|cant|p1a: Alakazam|par
+|move|p2a: Ferrothorn|Stealth Rock|p1a: Alakazam
+|-sidestart|p1: Kaneziken|move: Stealth Rock
+|
+|-heal|p2a: Ferrothorn|4 (48\/48)|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p1a: Alakazam|Focus Blast|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|58 (20\/48)
+|move|p2a: Ferrothorn|Power Whip|p1a: Alakazam
+|-damage|p1a: Alakazam|20 (0\/48 fnt)
+|faint|p1a: Alakazam
+|
+|-heal|p2a: Ferrothorn|6 (23\/48)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Breloom|Breloom, F| (48\/48)
+|-damage|p1a: Breloom|6 (45\/48)|[from] Stealth Rock
+|turn|6
+|callback|decision
+|
+|move|p1a: Breloom|Spore|p2a: Ferrothorn
+|-status|p2a: Ferrothorn|slp
+|cant|p2a: Ferrothorn|slp
+|
+|-heal|p1a: Breloom|6 (48\/48)|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|6 (26\/48 slp)|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p2a: Crobat|Crobat, M| (48\/48)
+|move|p1a: Breloom|Swords Dance|p1a: Breloom
+|-boost|p1a: Breloom|atk|2
+|
+|turn|8
+|callback|decision
+|
+|switch|p1a: Magnezone|Magnezone| (48\/48)
+|-damage|p1a: Magnezone|6 (45\/48)|[from] Stealth Rock
+|move|p2a: Crobat|Brave Bird|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-damage|p1a: Magnezone|8 (41\/48)
+|-damage|p2a: Crobat|2 (47\/48)|[from] recoil|[of] p1a: Magnezone
+|
+|-heal|p2a: Crobat|2 (48\/48)|[from] item: Black Sludge
+|turn|9
+|callback|decision
+|
+|move|p2a: Crobat|Confuse Ray|p1a: Magnezone
+|-start|p1a: Magnezone|confusion
+|-activate|p1a: Magnezone|confusion
+|-damage|p1a: Magnezone|6 (39\/48)
+|
+|turn|10
+|callback|decision
+|
+|switch|p2a: Dragonite|Dragonite, F| (48\/48)
+|-activate|p1a: Magnezone|confusion
+|move|p1a: Magnezone|Volt Switch|p2a: Dragonite
+|-damage|p2a: Dragonite|27 (35\/48)
+|callback|decision
+|
+|switch|p1a: Infernape|Infernape, M| (48\/48)
+|-damage|p1a: Infernape|12 (42\/48)|[from] Stealth Rock
+|
+|-heal|p2a: Dragonite|6 (38\/48)|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p2a: Rotom-W|Rotom-Wash| (21\/48)
+|move|p1a: Infernape|Hidden Power|p2a: Rotom-W
+|-resisted|p2a: Rotom-W
+|-damage|p2a: Rotom-W|12 (15\/48)
+|
+|-heal|p2a: Rotom-W|6 (18\/48)|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p1a: Breloom|Breloom, F| (48\/48)
+|-damage|p1a: Breloom|6 (45\/48)|[from] Stealth Rock
+|move|p2a: Rotom-W|Volt Switch|p1a: Breloom
+|-resisted|p1a: Breloom
+|-damage|p1a: Breloom|31 (30\/48)
+|callback|decision
+|
+|switch|p2a: Crobat|Crobat, M| (48\/48)
+|
+|-heal|p1a: Breloom|6 (33\/48)|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p1a: Magnezone|Magnezone| (39\/48)
+|-damage|p1a: Magnezone|6 (36\/48)|[from] Stealth Rock
+|move|p2a: Crobat|Brave Bird|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-damage|p1a: Magnezone|8 (31\/48)
+|-damage|p2a: Crobat|2 (47\/48)|[from] recoil|[of] p1a: Magnezone
+|
+|-heal|p2a: Crobat|2 (48\/48)|[from] item: Black Sludge
+|turn|14
+|callback|decision
+|
+|move|p2a: Crobat|Brave Bird|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-damage|p1a: Magnezone|8 (27\/48)
+|-damage|p2a: Crobat|2 (47\/48)|[from] recoil|[of] p1a: Magnezone
+|move|p1a: Magnezone|Hidden Power|p2a: Crobat
+|-supereffective|p2a: Crobat
+|-damage|p2a: Crobat|87 (5\/48)
+|
+|-heal|p2a: Crobat|6 (8\/48)|[from] item: Black Sludge
+|turn|15
+|callback|decision
+|
+|switch|p2a: Rotom-W|Rotom-Wash| (18\/48)
+|switch|p1a: Rotom-Wash|Rotom-Wash| (48\/48)
+|-damage|p1a: Rotom-Wash|12 (42\/48)|[from] Stealth Rock
+|
+|-heal|p2a: Rotom-W|6 (21\/48)|[from] item: Leftovers
+|-heal|p1a: Rotom-Wash|6 (45\/48)|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p2a: Rotom-W|Volt Switch|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|25 (33\/48)
+|callback|decision
+|
+|switch|p2a: Crobat|Crobat, M| (8\/48)
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Crobat
+|-status|p2a: Crobat|brn
+|
+|-heal|p2a: Crobat|6 (11\/48 brn)|[from] item: Black Sludge
+|-heal|p1a: Rotom-Wash|6 (36\/48)|[from] item: Leftovers
+|-damage|p2a: Crobat|12 (5\/48 brn)|[from] brn
+|turn|17
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, F| (48\/48)
+|-damage|p1a: Skarmory|12 (42\/48)|[from] Stealth Rock
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|50 (29\/48 brn)
+|
+|-heal|p2a: Crobat|6 (32\/48 brn)|[from] item: Black Sludge
+|-heal|p1a: Skarmory|6 (45\/48)|[from] item: Leftovers
+|-damage|p2a: Crobat|12 (26\/48 brn)|[from] brn
+|turn|18
+|callback|decision
+|
+|move|p2a: Crobat|Taunt|p1a: Skarmory
+|-start|p1a: Skarmory|move: Taunt
+|cant|p1a: Skarmory|move: Taunt|Spikes
+|
+|-heal|p2a: Crobat|6 (29\/48 brn)|[from] item: Black Sludge
+|-heal|p1a: Skarmory|6 (47\/48)|[from] item: Leftovers
+|-damage|p2a: Crobat|12 (23\/48 brn)|[from] brn
+|turn|19
+|callback|decision
+|
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|50 (47\/48 brn)
+|move|p1a: Skarmory|Brave Bird|p2a: Crobat
+|-damage|p2a: Crobat|37 (29\/48 brn)
+|-damage|p1a: Skarmory|14 (41\/48)|[from] recoil|[of] p2a: Crobat
+|
+|-heal|p2a: Crobat|6 (32\/48 brn)|[from] item: Black Sludge
+|-heal|p1a: Skarmory|6 (44\/48)|[from] item: Leftovers
+|-damage|p2a: Crobat|12 (26\/48 brn)|[from] brn
+|turn|20
+|callback|decision
+|
+|switch|p2a: Rotom-W|Rotom-Wash| (21\/48)
+|switch|p1a: Magnezone|Magnezone| (27\/48)
+|-damage|p1a: Magnezone|6 (24\/48)|[from] Stealth Rock
+|
+|-heal|p2a: Rotom-W|6 (24\/48)|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p2a: Rotom-W|Hidden Power|p1a: Magnezone
+|-supereffective|p1a: Magnezone
+|-damage|p1a: Magnezone|45 (2\/48)
+|move|p1a: Magnezone|Volt Switch|p2a: Rotom-W
+|-damage|p2a: Rotom-W|50 (0\/48 fnt)
+|faint|p2a: Rotom-W
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, F| (44\/48)
+|-damage|p1a: Skarmory|12 (38\/48)|[from] Stealth Rock
+|
+|-heal|p1a: Skarmory|6 (41\/48)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Breloom|Breloom, M| (48\/48)
+|turn|22
+|callback|decision
+|
+|move|p2a: Breloom|Spore|p1a: Skarmory
+|-status|p1a: Skarmory|slp
+|cant|p1a: Skarmory|slp
+|
+|-heal|p1a: Skarmory|6 (44\/48 slp)|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p2a: Breloom|Mach Punch|p1a: Skarmory
+|-damage|p1a: Skarmory|22 (33\/48 slp)
+|cant|p1a: Skarmory|slp
+|
+|-heal|p1a: Skarmory|6 (36\/48 slp)|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p2a: Breloom|Mach Punch|p1a: Skarmory
+|-damage|p1a: Skarmory|18 (27\/48 slp)
+|cant|p1a: Skarmory|slp
+|
+|-heal|p1a: Skarmory|6 (30\/48 slp)|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p2a: Breloom|Mach Punch|p1a: Skarmory
+|-damage|p1a: Skarmory|20 (20\/48 slp)
+|-curestatus|p1a: Skarmory|slp
+|move|p1a: Skarmory|Brave Bird|p2a: Breloom
+|-supereffective|p2a: Breloom
+|-damage|p2a: Breloom|100 (0\/48 fnt)
+|-damage|p1a: Skarmory|25 (7\/48)|[from] recoil|[of] p2a: Breloom
+|faint|p2a: Breloom
+|
+|-heal|p1a: Skarmory|6 (10\/48)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Terrakion|Terrakion| (48\/48)
+|turn|26
+|callback|decision
+|
+|switch|p1a: Magnezone|Magnezone| (2\/48)
+|-damage|p1a: Magnezone|4 (0\/48 fnt)|[from] Stealth Rock
+|faint|p1a: Magnezone
+|move|p2a: Terrakion|Close Combat|p1: Magnezone|[notarget]
+|-notarget
+|
+|callback|decision
+|
+|switch|p1a: Infernape|Infernape, M| (42\/48)
+|-damage|p1a: Infernape|12 (36\/48)|[from] Stealth Rock
+|turn|27
+|callback|decision
+|
+|move|p2a: Terrakion|Close Combat|p1a: Infernape
+|-damage|p1a: Infernape|75 (0\/48 fnt)
+|-unboost|p2a: Terrakion|def|1
+|-unboost|p2a: Terrakion|spd|1
+|faint|p1a: Infernape
+|
+|callback|decision
+|chat|Kaneziken|speed ties are a bitch 
+|chat|Kaneziken|lol
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash| (36\/48)
+|-damage|p1a: Rotom-Wash|12 (30\/48)|[from] Stealth Rock
+|turn|28
+|callback|decision
+|chat|Coatay|Thats not a tie
+|chat|Kaneziken|108 speed each
+|chat|Kaneziken|im scarf
+|
+|move|p2a: Terrakion|Close Combat|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|62 (0\/48 fnt)
+|-unboost|p2a: Terrakion|def|1
+|-unboost|p2a: Terrakion|spd|1
+|faint|p1a: Rotom-Wash
+|
+|callback|decision
+|chat|Coatay|That is a tie
+|chat|Kaneziken|yup
+|chat|Kaneziken|lol
+|
+|switch|p1a: Breloom|Breloom, F| (33\/48)
+|-damage|p1a: Breloom|6 (30\/48)|[from] Stealth Rock
+|turn|29
+|callback|decision
+|
+|switch|p2a: Crobat|Crobat, M| (26\/48 brn)
+|move|p1a: Breloom|Mach Punch|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|8 (22\/48 brn)
+|
+|-heal|p2a: Crobat|6 (25\/48 brn)|[from] item: Black Sludge
+|-heal|p1a: Breloom|6 (33\/48)|[from] item: Leftovers
+|-damage|p2a: Crobat|12 (19\/48 brn)|[from] brn
+|turn|30
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, F| (10\/48)
+|-damage|p1a: Skarmory|12 (4\/48)|[from] Stealth Rock
+|move|p2a: Crobat|Brave Bird|p1a: Skarmory
+|-crit|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|8 (0\/48 fnt)
+|-damage|p2a: Crobat|2 (18\/48 brn)|[from] recoil|[of] p1a: Skarmory
+|faint|p1a: Skarmory
+|
+|-heal|p2a: Crobat|6 (21\/48 brn)|[from] item: Black Sludge
+|-damage|p2a: Crobat|12 (15\/48 brn)|[from] brn
+|callback|decision
+|
+|switch|p1a: Breloom|Breloom, F| (33\/48)
+|-damage|p1a: Breloom|6 (30\/48)|[from] Stealth Rock
+|turn|31
+|callback|decision
+|
+|move|p2a: Crobat|Brave Bird|p1a: Breloom
+|-supereffective|p1a: Breloom
+|-damage|p1a: Breloom|62 (0\/48 fnt)
+|-damage|p2a: Crobat|14 (8\/48 brn)|[from] recoil|[of] p1a: Breloom
+|faint|p1a: Breloom
+|
+|win|Coatay
+|raw|Ladder updating...
+|raw|Kaneziken's rating: 1566 &rarr; <strong>1564<\/strong><br \/>(-2 for losing)
+|raw|Coatay's rating: 1744 &rarr; <strong>1746<\/strong><br \/>(+2 for winning)
+|chat|Kaneziken|gg
+|leave|Coatay
+|chat|Coatay|gg
+|player|p2

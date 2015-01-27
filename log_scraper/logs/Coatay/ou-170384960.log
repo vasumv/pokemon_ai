@@ -1,0 +1,296 @@
+|join|plasmodesmata
+|join|Coatay
+|player|p1|plasmodesmata|80
+|player|p2|Coatay|2
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Garchomp, M
+|poke|p1|Landorus-Therian, M
+|poke|p1|Greninja, F
+|poke|p1|Latios, M
+|poke|p1|Bisharp, F
+|poke|p1|Scizor, M
+|poke|p2|Pinsir, M, shiny
+|poke|p2|Latios, M
+|poke|p2|Clefable, M
+|poke|p2|Keldeo-Resolute, shiny
+|poke|p2|Magnezone, shiny
+|poke|p2|Landorus-Therian, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Garchomp|Garchomp, M|358\/358
+|switch|p2a: Cat|Landorus-Therian, M|319\/319
+|-ability|p2a: Cat|Intimidate|[of] p1a: Garchomp
+|-unboost|p1a: Garchomp|atk|1
+|turn|1
+|
+|move|p2a: Cat|Earthquake|p1a: Garchomp
+|-damage|p1a: Garchomp|160\/358
+|move|p1a: Garchomp|Stealth Rock|p2a: Cat
+|-sidestart|p2: Coatay|move: Stealth Rock
+|
+|turn|2
+|
+|switch|p2a: Horse|Keldeo-Resolute, shiny|323\/323
+|-damage|p2a: Horse|303\/323|[from] Stealth Rock
+|move|p1a: Garchomp|Dragon Claw|p2a: Horse
+|-damage|p2a: Horse|188\/323
+|
+|turn|3
+|
+|move|p2a: Horse|Scald|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|faint|p1a: Garchomp
+|
+|
+|switch|p1a: Latios|Latios, M|302\/302
+|turn|4
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Horse
+|-unboost|p2a: Horse|atk|1
+|switch|p2a: Zone'd|Magnezone, shiny|281\/281
+|-damage|p2a: Zone'd|264\/281|[from] Stealth Rock
+|
+|turn|5
+|
+|switch|p2a: Cat|Landorus-Therian, M|319\/319
+|-damage|p2a: Cat|280\/319|[from] Stealth Rock
+|-ability|p2a: Cat|Intimidate|[of] p1a: Landorus-Therian
+|-unboost|p1a: Landorus-Therian|atk|1
+|move|p1a: Landorus-Therian|U-turn|p2a: Cat
+|-resisted|p2a: Cat
+|-damage|p2a: Cat|247\/319
+|
+|switch|p1a: Scizor|Scizor, M|344\/344
+|
+|turn|6
+|
+|detailschange|p1a: Scizor|Scizor-Mega, M
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p2a: Cat|Earthquake|p1a: Scizor
+|-damage|p1a: Scizor|209\/344
+|move|p1a: Scizor|Knock Off|p2a: Cat
+|-crit|p2a: Cat
+|-damage|p2a: Cat|4\/319
+|-enditem|p2a: Cat|Choice Scarf|[from] move: Knock Off|[of] p1a: Scizor
+|
+|turn|7
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Cat
+|-unboost|p2a: Cat|atk|1
+|move|p2a: Cat|Earthquake|p1a: Landorus-Therian
+|-immune|p1a: Landorus-Therian|[msg]
+|
+|turn|8
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Cat
+|-resisted|p2a: Cat
+|-damage|p2a: Cat|0 fnt
+|faint|p2a: Cat
+|
+|switch|p1a: Latios|Latios, M|302\/302
+|
+|
+|switch|p2a: Clef.|Clefable, M|390\/390
+|turn|9
+|
+|move|p1a: Latios|Psyshock|p2a: Clef.
+|-damage|p2a: Clef.|242\/390
+|move|p2a: Clef.|Fire Blast|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|266\/302
+|
+|-heal|p1a: Latios|284\/302|[from] item: Leftovers
+|-heal|p2a: Clef.|266\/390|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Greninja|Greninja, F|286\/286
+|move|p2a: Clef.|Soft-Boiled|p2a: Clef.
+|-heal|p2a: Clef.|390\/390
+|
+|turn|11
+|
+|move|p1a: Greninja|Spikes|p2a: Clef.
+|-start|p1a: Greninja|typechange|Ground|[from] Protean
+|-sidestart|p2: Coatay|Spikes
+|move|p2a: Clef.|Stealth Rock|p1a: Greninja
+|-sidestart|p1: plasmodesmata|move: Stealth Rock
+|
+|turn|12
+|
+|move|p1a: Greninja|Ice Beam|p2a: Clef.
+|-start|p1a: Greninja|typechange|Ice|[from] Protean
+|-damage|p2a: Clef.|237\/390
+|-damage|p1a: Greninja|258\/286|[from] item: Life Orb
+|move|p2a: Clef.|Moonblast|p1a: Greninja
+|-damage|p1a: Greninja|104\/286
+|
+|-heal|p2a: Clef.|261\/390|[from] item: Leftovers
+|turn|13
+|
+|move|p1a: Greninja|Spikes|p2a: Clef.
+|-start|p1a: Greninja|typechange|Ground|[from] Protean
+|-sidestart|p2: Coatay|Spikes
+|move|p2a: Clef.|Soft-Boiled|p2a: Clef.
+|-heal|p2a: Clef.|390\/390
+|
+|turn|14
+|
+|switch|p1a: Bisharp|Bisharp, F|272\/272
+|-damage|p1a: Bisharp|255\/272|[from] Stealth Rock
+|move|p2a: Clef.|Moonblast|p1a: Bisharp
+|-damage|p1a: Bisharp|122\/272
+|-unboost|p1a: Bisharp|spa|1
+|-boost|p1a: Bisharp|atk|2|[from] ability: Defiant
+|
+|turn|15
+|
+|move|p1a: Bisharp|Iron Head|p2a: Clef.
+|-supereffective|p2a: Clef.
+|-damage|p2a: Clef.|0 fnt
+|-damage|p1a: Bisharp|95\/272|[from] item: Life Orb
+|faint|p2a: Clef.
+|
+|
+|switch|p2a: G6|Latios, M|309\/309
+|-damage|p2a: G6|271\/309|[from] Stealth Rock
+|turn|16
+|
+|move|p2a: G6|Defog|p1a: Bisharp
+|-unboost|p1a: Bisharp|evasion|1
+|-boost|p1a: Bisharp|atk|2|[from] ability: Defiant
+|-sideend|p1: plasmodesmata|Stealth Rock|[from] move: Defog|[of] p1a: Bisharp
+|-sideend|p2: Coatay|Spikes|[from] move: Defog|[of] p2a: G6
+|-sideend|p2: Coatay|Stealth Rock|[from] move: Defog|[of] p2a: G6
+|move|p1a: Bisharp|Knock Off|p2a: G6
+|-supereffective|p2a: G6
+|-damage|p2a: G6|0 fnt
+|-enditem|p2a: G6|Life Orb|[from] move: Knock Off|[of] p1a: Bisharp
+|-damage|p1a: Bisharp|68\/272|[from] item: Life Orb
+|faint|p2a: G6
+|
+|
+|switch|p2a: OG Mega Mence|Pinsir, M, shiny|271\/271
+|-ability|p2a: OG Mega Mence|Mold Breaker
+|turn|17
+|
+|detailschange|p2a: OG Mega Mence|Pinsir-Mega, M, shiny
+|message|Pinsir has Mega Evolved into Mega Pinsir!
+|move|p2a: OG Mega Mence|Quick Attack|p1a: Bisharp
+|-resisted|p1a: Bisharp
+|-damage|p1a: Bisharp|14\/272
+|move|p1a: Bisharp|Sucker Punch|p2a: OG Mega Mence
+|-fail|p2a: OG Mega Mence
+|
+|turn|18
+|c|âplasmodesmata|damn
+|
+|move|p2a: OG Mega Mence|Quick Attack|p1a: Bisharp
+|-resisted|p1a: Bisharp
+|-damage|p1a: Bisharp|0 fnt
+|faint|p1a: Bisharp
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: OG Mega Mence
+|-unboost|p2a: OG Mega Mence|atk|1
+|turn|19
+|
+|switch|p2a: Zone'd|Magnezone, shiny|264\/281
+|move|p1a: Landorus-Therian|Stone Edge|p2a: Zone'd
+|-resisted|p2a: Zone'd
+|-damage|p2a: Zone'd|204\/281
+|
+|turn|20
+|
+|switch|p1a: Scizor|Scizor-Mega, M|209\/344
+|move|p2a: Zone'd|Volt Switch|p1a: Scizor
+|-damage|p1a: Scizor|82\/344
+|
+|switch|p2a: Horse|Keldeo-Resolute, shiny|188\/323
+|
+|turn|21
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Horse
+|-resisted|p2a: Horse
+|-damage|p2a: Horse|122\/323
+|move|p2a: Horse|Scald|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|faint|p1a: Scizor
+|
+|
+|switch|p1a: Latios|Latios, M|284\/302
+|turn|22
+|
+|switch|p2a: Zone'd|Magnezone, shiny|204\/281
+|move|p1a: Latios|Calm Mind|p1a: Latios
+|-boost|p1a: Latios|spa|1
+|-boost|p1a: Latios|spd|1
+|
+|-heal|p1a: Latios|302\/302|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Zone'd|Flash Cannon|p1a: Latios
+|-crit|p1a: Latios
+|-damage|p1a: Latios|119\/302
+|move|p1a: Latios|Calm Mind|p1a: Latios
+|-boost|p1a: Latios|spa|1
+|-boost|p1a: Latios|spd|1
+|
+|-heal|p1a: Latios|137\/302|[from] item: Leftovers
+|turn|24
+|
+|move|p2a: Zone'd|Flash Cannon|p1a: Latios
+|-damage|p1a: Latios|73\/302
+|move|p1a: Latios|Recover|p1a: Latios
+|-heal|p1a: Latios|224\/302
+|
+|-heal|p1a: Latios|242\/302|[from] item: Leftovers
+|turn|25
+|
+|move|p2a: Zone'd|Flash Cannon|p1a: Latios
+|-damage|p1a: Latios|176\/302
+|move|p1a: Latios|Calm Mind|p1a: Latios
+|-boost|p1a: Latios|spa|1
+|-boost|p1a: Latios|spd|1
+|
+|-heal|p1a: Latios|194\/302|[from] item: Leftovers
+|turn|26
+|
+|switch|p2a: OG Mega Mence|Pinsir-Mega, M, shiny|271\/271
+|move|p1a: Latios|Calm Mind|p1a: Latios
+|-boost|p1a: Latios|spa|1
+|-boost|p1a: Latios|spd|1
+|
+|-heal|p1a: Latios|212\/302|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: Latios|Draco Meteor|p2a: OG Mega Mence
+|-damage|p2a: OG Mega Mence|0 fnt
+|-unboost|p1a: Latios|spa|2
+|faint|p2a: OG Mega Mence
+|
+|-heal|p1a: Latios|230\/302|[from] item: Leftovers
+|-message|Coatay forfeited.
+|
+|win|plasmodesmata
+|raw|Ladder updating...
+|leave|Coatay
+|player|p2
+|raw|plasmodesmata's rating: 1580 &rarr; <strong>1600<\/strong><br \/>(+20 for winning)
+|raw|Coatay's rating: 1584 &rarr; <strong>1564<\/strong><br \/>(-20 for losing)

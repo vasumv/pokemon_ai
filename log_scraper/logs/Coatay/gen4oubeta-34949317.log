@@ -1,0 +1,520 @@
+|join|Coatay
+|join|6o4huynh
+|player|p1|Coatay|2
+|player|p2|6o4huynh|163
+|gametype|singles
+|tier|[Gen 4] OU (beta)
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|
+|start
+|switch|p1a: hurrtrun|Heatran, F|365\/365
+|switch|p2a: Tyranitar|Tyranitar, M|404\/404
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Tyranitar
+|turn|1
+|callback|decision
+|
+|switch|p1a: furrgun|Flygon, F|302\/302
+|move|p2a: Tyranitar|Stealth Rock|p1a: furrgun
+|-sidestart|p1: Coatay|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|2
+|callback|decision
+|
+|switch|p2a: Skarmory|Skarmory, M|334\/334
+|move|p1a: furrgun|U-turn|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|325\/334
+|callback|decision
+|
+|switch|p1a: hurrtrun|Heatran, F|365\/365
+|-damage|p1a: hurrtrun|320\/365|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Skarmory|334\/334|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p1a: hurrtrun|Stealth Rock|p2a: Skarmory
+|-sidestart|p2: 6o4huynh|move: Stealth Rock
+|move|p2a: Skarmory|Spikes|p1a: hurrtrun
+|-sidestart|p1: Coatay|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|turn|4
+|callback|decision
+|
+|switch|p2a: Tentacruel|Tentacruel, M|364\/364
+|-damage|p2a: Tentacruel|319\/364|[from] Stealth Rock
+|move|p1a: hurrtrun|Overheat|p2a: Tentacruel|[miss]
+|-miss|p1a: hurrtrun|p2a: Tentacruel
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Tentacruel|297\/364|[from] sandstorm
+|-heal|p2a: Tentacruel|319\/364|[from] item: Black Sludge
+|turn|5
+|callback|decision
+|
+|switch|p1a: shurrmun|Shaymin|404\/404
+|-damage|p1a: shurrmun|354\/404|[from] Stealth Rock
+|-damage|p1a: shurrmun|304\/404|[from] Spikes
+|move|p2a: Tentacruel|Rapid Spin|p1a: shurrmun
+|-damage|p1a: shurrmun|292\/404
+|-sideend|p2: 6o4huynh|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Tentacruel
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: shurrmun|267\/404|[from] sandstorm
+|-damage|p2a: Tentacruel|297\/364|[from] sandstorm
+|-heal|p1a: shurrmun|292\/404|[from] item: Leftovers
+|-heal|p2a: Tentacruel|319\/364|[from] item: Black Sludge
+|turn|6
+|callback|decision
+|
+|switch|p2a: Infernape|Infernape, F|293\/293
+|move|p1a: shurrmun|Leech Seed|p2a: Infernape
+|-start|p2a: Infernape|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Infernape|275\/293|[from] sandstorm
+|-damage|p1a: shurrmun|267\/404|[from] sandstorm
+|-heal|p1a: shurrmun|292\/404|[from] item: Leftovers
+|-damage|p2a: Infernape|239\/293|[from] Leech Seed|[of] p1a: shurrmun
+|-heal|p1a: shurrmun|328\/404|[silent]
+|turn|7
+|callback|decision
+|
+|move|p1a: shurrmun|Protect|p1a: shurrmun
+|-singleturn|p1a: shurrmun|Protect
+|move|p2a: Infernape|U-turn|p1a: shurrmun
+|-activate|p1a: shurrmun|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Infernape|221\/293|[from] sandstorm
+|-damage|p1a: shurrmun|303\/404|[from] sandstorm
+|-heal|p1a: shurrmun|328\/404|[from] item: Leftovers
+|-damage|p2a: Infernape|185\/293|[from] Leech Seed|[of] p1a: shurrmun
+|-heal|p1a: shurrmun|364\/404|[silent]
+|turn|8
+|callback|decision
+|
+|move|p2a: Infernape|U-turn|p1a: shurrmun
+|-supereffective|p1a: shurrmun
+|-damage|p1a: shurrmun|170\/404
+|-damage|p2a: Infernape|156\/293|[from] item: Life Orb
+|callback|decision
+|
+|switch|p2a: Skarmory|Skarmory, M|334\/334
+|move|p1a: shurrmun|Leech Seed|p2a: Skarmory|[miss]
+|-miss|p1a: shurrmun|p2a: Skarmory
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: shurrmun|145\/404|[from] sandstorm
+|-heal|p1a: shurrmun|170\/404|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p1a: shurrmun|Hidden Power|p2a: Skarmory
+|-supereffective|p2a: Skarmory
+|-damage|p2a: Skarmory|162\/334
+|move|p2a: Skarmory|Spikes|p1a: shurrmun
+|-sidestart|p1: Coatay|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: shurrmun|145\/404|[from] sandstorm
+|-heal|p1a: shurrmun|170\/404|[from] item: Leftovers
+|-heal|p2a: Skarmory|182\/334|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p1a: shurrmun|Leech Seed|p2a: Skarmory
+|-start|p2a: Skarmory|move: Leech Seed
+|move|p2a: Skarmory|Spikes|p1a: shurrmun
+|-sidestart|p1: Coatay|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: shurrmun|145\/404|[from] sandstorm
+|-heal|p1a: shurrmun|170\/404|[from] item: Leftovers
+|-heal|p2a: Skarmory|202\/334|[from] item: Leftovers
+|-damage|p2a: Skarmory|161\/334|[from] Leech Seed|[of] p1a: shurrmun
+|-heal|p1a: shurrmun|211\/404|[silent]
+|turn|11
+|callback|decision
+|
+|move|p1a: shurrmun|Seed Flare|p2a: Skarmory|[miss]
+|-miss|p1a: shurrmun|p2a: Skarmory
+|move|p2a: Skarmory|Brave Bird|p1a: shurrmun
+|-supereffective|p1a: shurrmun
+|-damage|p1a: shurrmun|0 fnt
+|-damage|p2a: Skarmory|91\/334|[from] recoil|[of] p1a: shurrmun
+|faint|p1a: shurrmun
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Skarmory|111\/334|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: gurruhdoz|Gyarados, M|370\/370
+|-damage|p1a: gurruhdoz|278\/370|[from] Stealth Rock
+|-ability|p1a: gurruhdoz|Intimidate|[of] p2a: Skarmory
+|-unboost|p2a: Skarmory|atk|1
+|turn|12
+|callback|decision
+|
+|move|p1a: gurruhdoz|Taunt|p2a: Skarmory
+|-start|p2a: Skarmory|move: Taunt
+|cant|p2a: Skarmory|move: Taunt|Whirlwind
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: gurruhdoz|255\/370|[from] sandstorm
+|-heal|p1a: gurruhdoz|278\/370|[from] item: Leftovers
+|-heal|p2a: Skarmory|131\/334|[from] item: Leftovers
+|-damage|p2a: Skarmory|90\/334|[from] Leech Seed|[of] p1a: gurruhdoz
+|-heal|p1a: gurruhdoz|319\/370|[silent]
+|turn|13
+|callback|decision
+|
+|switch|p2a: Spectre|Gengar, M|262\/262
+|move|p1a: gurruhdoz|Dragon Dance|p1a: gurruhdoz
+|-boost|p1a: gurruhdoz|atk|1
+|-boost|p1a: gurruhdoz|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: gurruhdoz|296\/370|[from] sandstorm
+|-damage|p2a: Spectre|246\/262|[from] sandstorm
+|-heal|p1a: gurruhdoz|319\/370|[from] item: Leftovers
+|-heal|p2a: Spectre|262\/262|[from] item: Black Sludge
+|turn|14
+|callback|decision
+|
+|move|p1a: gurruhdoz|Waterfall|p2a: Spectre
+|-damage|p2a: Spectre|0 fnt
+|faint|p2a: Spectre
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: gurruhdoz|296\/370|[from] sandstorm
+|-heal|p1a: gurruhdoz|319\/370|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Tentacruel|Tentacruel, M|319\/364
+|turn|15
+|callback|decision
+|
+|move|p1a: gurruhdoz|Dragon Dance|p1a: gurruhdoz
+|-boost|p1a: gurruhdoz|atk|1
+|-boost|p1a: gurruhdoz|spe|1
+|move|p2a: Tentacruel|Knock Off|p1a: gurruhdoz
+|-damage|p1a: gurruhdoz|308\/370
+|-enditem|p1a: gurruhdoz|Leftovers|[from] move: Knock Off|[of] p2a: Tentacruel
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: gurruhdoz|285\/370|[from] sandstorm
+|-damage|p2a: Tentacruel|297\/364|[from] sandstorm
+|-heal|p2a: Tentacruel|319\/364|[from] item: Black Sludge
+|turn|16
+|callback|decision
+|
+|move|p1a: gurruhdoz|Waterfall|p2a: Tentacruel
+|-resisted|p2a: Tentacruel
+|-damage|p2a: Tentacruel|142\/364
+|cant|p2a: Tentacruel|flinch
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: gurruhdoz|262\/370|[from] sandstorm
+|-damage|p2a: Tentacruel|120\/364|[from] sandstorm
+|-heal|p2a: Tentacruel|142\/364|[from] item: Black Sludge
+|turn|17
+|callback|decision
+|
+|move|p1a: gurruhdoz|Waterfall|p2a: Tentacruel
+|-resisted|p2a: Tentacruel
+|-damage|p2a: Tentacruel|0 fnt
+|faint|p2a: Tentacruel
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: gurruhdoz|239\/370|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: Dugtrio|Dugtrio, F|212\/212
+|turn|18
+|callback|decision
+|
+|move|p1a: gurruhdoz|Waterfall|p2a: Dugtrio
+|-supereffective|p2a: Dugtrio
+|-enditem|p2a: Dugtrio|Focus Sash
+|-damage|p2a: Dugtrio|1\/212
+|move|p2a: Dugtrio|Stone Edge|p1a: gurruhdoz
+|-supereffective|p1a: gurruhdoz
+|-damage|p1a: gurruhdoz|59\/370
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: gurruhdoz|36\/370|[from] sandstorm
+|turn|19
+|callback|decision
+|
+|move|p2a: Dugtrio|Sucker Punch|p1a: gurruhdoz
+|-damage|p1a: gurruhdoz|0 fnt
+|faint|p1a: gurruhdoz
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: furrgun|Flygon, F|302\/302
+|-damage|p1a: furrgun|284\/302|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|move|p1a: furrgun|U-turn|p2a: Dugtrio
+|-damage|p2a: Dugtrio|0 fnt
+|faint|p2a: Dugtrio
+|callback|decision
+|
+|switch|p1a: hurrtrun|Heatran, F|320\/365
+|-damage|p1a: hurrtrun|275\/365|[from] Stealth Rock
+|-damage|p1a: hurrtrun|184\/365|[from] Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Infernape|Infernape, F|156\/293
+|turn|21
+|callback|decision
+|
+|move|p2a: Infernape|Close Combat|p1a: hurrtrun
+|-supereffective|p1a: hurrtrun
+|-damage|p1a: hurrtrun|0 fnt
+|-unboost|p2a: Infernape|def|1
+|-unboost|p2a: Infernape|spd|1
+|-damage|p2a: Infernape|127\/293|[from] item: Life Orb
+|faint|p1a: hurrtrun
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Infernape|109\/293|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: furrgun|Flygon, F|284\/302
+|-damage|p1a: furrgun|266\/302|[from] Stealth Rock
+|turn|22
+|callback|decision
+|
+|move|p1a: furrgun|ThunderPunch|p2a: Infernape
+|-damage|p2a: Infernape|0 fnt
+|faint|p2a: Infernape
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Skarmory|Skarmory, M|90\/334
+|turn|23
+|callback|decision
+|
+|move|p1a: furrgun|ThunderPunch|p2a: Skarmory
+|-supereffective|p2a: Skarmory
+|-damage|p2a: Skarmory|6\/334
+|move|p2a: Skarmory|Roost|p2a: Skarmory
+|-heal|p2a: Skarmory|173\/334
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Skarmory|193\/334|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p1a: furrgun|ThunderPunch|p2a: Skarmory
+|-crit|p2a: Skarmory
+|-supereffective|p2a: Skarmory
+|-damage|p2a: Skarmory|7\/334
+|-status|p2a: Skarmory|par
+|move|p2a: Skarmory|Roost|p2a: Skarmory
+|-heal|p2a: Skarmory|174\/334 par
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Skarmory|194\/334 par|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p1a: furrgun|ThunderPunch|p2a: Skarmory
+|-supereffective|p2a: Skarmory
+|-damage|p2a: Skarmory|106\/334 par
+|move|p2a: Skarmory|Roost|p2a: Skarmory
+|-heal|p2a: Skarmory|273\/334 par
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Skarmory|293\/334 par|[from] item: Leftovers
+|turn|26
+|callback|decision
+|leave|Coatay
+|player|p1
+|join|Coatay
+|player|p1|Coatay|2
+|callback|decision
+|
+|move|p1a: furrgun|ThunderPunch|p2a: Skarmory
+|-supereffective|p2a: Skarmory
+|-damage|p2a: Skarmory|205\/334 par
+|cant|p2: Skarmory|par
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Skarmory|225\/334 par|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|move|p1a: furrgun|ThunderPunch|p2a: Skarmory
+|-supereffective|p2a: Skarmory
+|-damage|p2a: Skarmory|135\/334 par
+|move|p2a: Skarmory|Roost|p2a: Skarmory
+|-heal|p2a: Skarmory|302\/334 par
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Skarmory|322\/334 par|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|move|p1a: furrgun|ThunderPunch|p2a: Skarmory
+|-supereffective|p2a: Skarmory
+|-damage|p2a: Skarmory|228\/334 par
+|move|p2a: Skarmory|Whirlwind|p1a: furrgun
+|drag|p1a: turruniturr|Tyranitar, F|357\/357
+|-damage|p1a: turruniturr|313\/357|[from] Stealth Rock
+|-damage|p1a: turruniturr|224\/357|[from] Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Skarmory|248\/334 par|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|move|p1a: turruniturr|Dragon Dance|p1a: turruniturr
+|-boost|p1a: turruniturr|atk|1
+|-boost|p1a: turruniturr|spe|1
+|cant|p2: Skarmory|par
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Skarmory|268\/334 par|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|move|p1a: turruniturr|Stone Edge|p2a: Skarmory|[miss]
+|-miss|p1a: turruniturr|p2a: Skarmory
+|move|p2a: Skarmory|Whirlwind|p1a: turruniturr
+|drag|p1a: furrgun|Flygon, F|266\/302
+|-damage|p1a: furrgun|248\/302|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Skarmory|288\/334 par|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|move|p1a: furrgun|ThunderPunch|p2a: Skarmory
+|-supereffective|p2a: Skarmory
+|-damage|p2a: Skarmory|204\/334 par
+|move|p2a: Skarmory|Whirlwind|p1a: furrgun
+|drag|p1a: shurrsors|Scizor, F|341\/341
+|-damage|p1a: shurrsors|299\/341|[from] Stealth Rock
+|-damage|p1a: shurrsors|214\/341|[from] Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Skarmory|224\/334 par|[from] item: Leftovers
+|turn|32
+|callback|decision
+|
+|move|p1a: shurrsors|Superpower|p2a: Skarmory
+|-damage|p2a: Skarmory|96\/334 par
+|-unboost|p1a: shurrsors|atk|1
+|-unboost|p1a: shurrsors|def|1
+|move|p2a: Skarmory|Roost|p2a: Skarmory
+|-heal|p2a: Skarmory|263\/334 par
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Skarmory|283\/334 par|[from] item: Leftovers
+|turn|33
+|callback|decision
+|
+|move|p1a: shurrsors|Superpower|p2a: Skarmory
+|-damage|p2a: Skarmory|187\/334 par
+|-unboost|p1a: shurrsors|atk|1
+|-unboost|p1a: shurrsors|def|1
+|move|p2a: Skarmory|Roost|p2a: Skarmory
+|-heal|p2a: Skarmory|334\/334 par
+|
+|-weather|Sandstorm|[upkeep]
+|turn|34
+|callback|decision
+|
+|move|p1a: shurrsors|Superpower|p2a: Skarmory
+|-damage|p2a: Skarmory|264\/334 par
+|-unboost|p1a: shurrsors|atk|1
+|-unboost|p1a: shurrsors|def|1
+|cant|p2: Skarmory|par
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Skarmory|284\/334 par|[from] item: Leftovers
+|turn|35
+|callback|decision
+|
+|move|p1a: shurrsors|Superpower|p2a: Skarmory
+|-damage|p2a: Skarmory|230\/334 par
+|-unboost|p1a: shurrsors|atk|1
+|-unboost|p1a: shurrsors|def|1
+|move|p2a: Skarmory|Whirlwind|p1a: shurrsors
+|drag|p1a: turruniturr|Tyranitar, F|224\/357
+|-damage|p1a: turruniturr|180\/357|[from] Stealth Rock
+|-damage|p1a: turruniturr|91\/357|[from] Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Skarmory|250\/334 par|[from] item: Leftovers
+|turn|36
+|callback|decision
+|
+|move|p1a: turruniturr|Stone Edge|p2a: Skarmory|[miss]
+|-miss|p1a: turruniturr|p2a: Skarmory
+|cant|p2: Skarmory|par
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Skarmory|270\/334 par|[from] item: Leftovers
+|turn|37
+|callback|decision
+|join|FOIB
+|
+|move|p1a: turruniturr|Stone Edge|p2a: Skarmory
+|-damage|p2a: Skarmory|171\/334 par
+|move|p2a: Skarmory|Whirlwind|p1a: turruniturr
+|drag|p1a: shurrsors|Scizor, F|214\/341
+|-damage|p1a: shurrsors|129\/341|[from] Spikes
+|-damage|p1a: shurrsors|87\/341|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Skarmory|191\/334 par|[from] item: Leftovers
+|turn|38
+|callback|decision
+|
+|move|p1a: shurrsors|Superpower|p2a: Skarmory
+|-crit|p2a: Skarmory
+|-damage|p2a: Skarmory|0 fnt
+|-unboost|p1a: shurrsors|atk|1
+|-unboost|p1a: shurrsors|def|1
+|faint|p2a: Skarmory
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, M|404\/404
+|turn|39
+|callback|decision
+|
+|move|p1a: shurrsors|Superpower|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|-unboost|p1a: shurrsors|atk|1
+|-unboost|p1a: shurrsors|def|1
+|faint|p2a: Tyranitar
+|
+|win|Coatay
+|raw|Ladder updating...
+|raw|Coatay's rating: 1565 &rarr; <strong>1595<\/strong><br \/>(+30 for winning)
+|raw|6o4huynh's rating: 1679 &rarr; <strong>1671<\/strong><br \/>(-8 for losing)
+|leave|6o4huynh
+|player|p2
+|leave|FOIB

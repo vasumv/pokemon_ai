@@ -1,0 +1,375 @@
+|join|Fateh
+|join|Coatay
+|player|p1|Fateh|156
+|player|p2|Coatay|2
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Gengar, M
+|poke|p1|Meloetta
+|poke|p1|Conkeldurr, M
+|poke|p1|Gyarados, M
+|poke|p1|Ferrothorn, M
+|poke|p1|Landorus, M
+|poke|p2|Politoed, F
+|poke|p2|Claydol
+|poke|p2|Manaphy, shiny
+|poke|p2|Amoonguss, M
+|poke|p2|Kabutops, F
+|poke|p2|Scizor, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|join|AlltheTests
+|
+|start
+|switch|p1a: Tytannial|Ferrothorn, M|352\/352
+|switch|p2a: Claydol|Claydol|324\/324
+|turn|1
+|
+|move|p2a: Claydol|Stealth Rock|p1a: Tytannial
+|-sidestart|p1: Fateh|move: Stealth Rock
+|move|p1a: Tytannial|Stealth Rock|p2a: Claydol
+|-sidestart|p2: Coatay|move: Stealth Rock
+|
+|turn|2
+|
+|move|p2a: Claydol|Rapid Spin|p1a: Tytannial
+|-resisted|p1a: Tytannial
+|-damage|p1a: Tytannial|349\/352
+|-damage|p2a: Claydol|284\/324|[from] ability: Iron Barbs|[of] p1a: Tytannial
+|-damage|p2a: Claydol|230\/324|[from] item: Rocky Helmet|[of] p1a: Tytannial
+|-sideend|p2: Coatay|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Claydol
+|move|p1a: Tytannial|Leech Seed|p2a: Claydol|[miss]
+|-miss|p1a: Tytannial|p2a: Claydol
+|
+|-heal|p2a: Claydol|250\/324|[from] item: Leftovers
+|turn|3
+|c| AlltheTests|the damage
+|
+|switch|p2a: Scizor|Scizor, F|344\/344
+|move|p1a: Tytannial|Stealth Rock|p2a: Scizor
+|-sidestart|p2: Coatay|move: Stealth Rock
+|
+|turn|4
+|
+|detailschange|p2a: Scizor|Scizor-Mega, F
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p2a: Scizor|Swords Dance|p2a: Scizor
+|-boost|p2a: Scizor|atk|2
+|move|p1a: Tytannial|Leech Seed|p2a: Scizor
+|-start|p2a: Scizor|move: Leech Seed
+|
+|-damage|p2a: Scizor|301\/344|[from] Leech Seed|[of] p1a: Tytannial
+|-heal|p1a: Tytannial|352\/352|[silent]
+|turn|5
+|
+|switch|p1a: Predator|Gyarados, M|331\/331
+|-damage|p1a: Predator|249\/331|[from] Stealth Rock
+|-ability|p1a: Predator|Intimidate|[of] p2a: Scizor
+|-unboost|p2a: Scizor|atk|1
+|move|p2a: Scizor|Swords Dance|p2a: Scizor
+|-boost|p2a: Scizor|atk|2
+|
+|-damage|p2a: Scizor|258\/344|[from] Leech Seed|[of] p1a: Predator
+|-heal|p1a: Predator|292\/331|[silent]
+|turn|6
+|
+|detailschange|p1a: Predator|Gyarados-Mega, M
+|message|Gyarados has Mega Evolved into Mega Gyarados!
+|-ability|p1a: Predator|Mold Breaker
+|move|p2a: Scizor|Bullet Punch|p1a: Predator
+|-crit|p1a: Predator
+|-resisted|p1a: Predator
+|-damage|p1a: Predator|90\/331
+|move|p1a: Predator|Substitute|p1a: Predator
+|-start|p1a: Predator|Substitute
+|-damage|p1a: Predator|8\/331
+|
+|-damage|p2a: Scizor|215\/344|[from] Leech Seed|[of] p1a: Predator
+|-heal|p1a: Predator|51\/331|[silent]
+|turn|7
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Predator
+|-resisted|p1a: Predator
+|-end|p1a: Predator|Substitute
+|move|p1a: Predator|Waterfall|p2a: Scizor
+|-damage|p2a: Scizor|97\/344
+|
+|-damage|p2a: Scizor|54\/344|[from] Leech Seed|[of] p1a: Predator
+|-heal|p1a: Predator|94\/331|[silent]
+|turn|8
+|
+|move|p1a: Predator|Waterfall|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|faint|p2a: Scizor
+|
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-damage|p2a: Amoonguss|378\/432|[from] Stealth Rock
+|turn|9
+|
+|move|p1a: Predator|Earthquake|p2a: Amoonguss
+|-damage|p2a: Amoonguss|260\/432
+|move|p2a: Amoonguss|Giga Drain|p1a: Predator
+|-supereffective|p1a: Predator
+|-damage|p1a: Predator|0 fnt
+|-heal|p2a: Amoonguss|307\/432|[from] drain|[of] p1a: Predator
+|faint|p1a: Predator
+|
+|-heal|p2a: Amoonguss|334\/432|[from] item: Black Sludge
+|
+|switch|p1a: Enten|Landorus, M|319\/319
+|-damage|p1a: Enten|280\/319|[from] Stealth Rock
+|turn|10
+|leave|AlltheTests
+|
+|switch|p2a: Claydol|Claydol|250\/324
+|-damage|p2a: Claydol|230\/324|[from] Stealth Rock
+|move|p1a: Enten|Knock Off|p2a: Claydol
+|-crit|p2a: Claydol
+|-supereffective|p2a: Claydol
+|-damage|p2a: Claydol|0 fnt
+|-enditem|p2a: Claydol|Leftovers|[from] move: Knock Off|[of] p1a: Enten
+|-damage|p1a: Enten|249\/319|[from] item: Life Orb
+|faint|p2a: Claydol
+|
+|
+|switch|p2a: Politoed|Politoed, F|384\/384
+|-damage|p2a: Politoed|336\/384|[from] Stealth Rock
+|-weather|RainDance
+|turn|11
+|
+|switch|p1a: Heihachi|Conkeldurr, M|383\/383
+|-damage|p1a: Heihachi|360\/383|[from] Stealth Rock
+|move|p2a: Politoed|Scald|p1a: Heihachi
+|-damage|p1a: Heihachi|282\/383
+|
+|-weather|RainDance|[upkeep]
+|turn|12
+|join|Bl153
+|
+|switch|p2a: Manaphy|Manaphy, shiny|404\/404
+|-damage|p2a: Manaphy|354\/404|[from] Stealth Rock
+|move|p1a: Heihachi|Drain Punch|p2a: Manaphy
+|-damage|p2a: Manaphy|218\/404
+|-heal|p1a: Heihachi|350\/383|[from] drain|[of] p2a: Manaphy
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Manaphy|243\/404|[from] item: Leftovers
+|turn|13
+|
+|move|p2a: Manaphy|Rest|p2a: Manaphy
+|-status|p2a: Manaphy|slp
+|-heal|p2a: Manaphy|404\/404 slp|[silent]
+|-status|p2a: Manaphy|slp|[from] move: Rest
+|move|p1a: Heihachi|Knock Off|p2a: Manaphy
+|-damage|p2a: Manaphy|295\/404 slp
+|-enditem|p2a: Manaphy|Leftovers|[from] move: Knock Off|[of] p1a: Heihachi
+|
+|-weather|RainDance|[upkeep]
+|-curestatus|p2a: Manaphy|slp
+|turn|14
+|c|âFateh|dude... that rain shit
+|c| Bl153|Coatay?.. OML whats up?
+|c|âFateh|is what wins in gen6 ou
+|join|Alldaalts
+|
+|move|p2a: Manaphy|Tail Glow|p2a: Manaphy
+|-boost|p2a: Manaphy|spa|3
+|move|p1a: Heihachi|Drain Punch|p2a: Manaphy
+|-damage|p2a: Manaphy|154\/404
+|-heal|p1a: Heihachi|383\/383|[from] drain|[of] p2a: Manaphy
+|
+|-weather|RainDance|[upkeep]
+|turn|15
+|c| Bl153|Haha the guy who knows Xerxes and Gubs right?
+|c|âCoatay|Just playin some vidya
+|c|âCoatay|sup
+|
+|move|p2a: Manaphy|Rest|p2a: Manaphy
+|-status|p2a: Manaphy|slp
+|-heal|p2a: Manaphy|404\/404 slp|[silent]
+|-status|p2a: Manaphy|slp|[from] move: Rest
+|move|p1a: Heihachi|Drain Punch|p2a: Manaphy
+|-damage|p2a: Manaphy|284\/404 slp
+|
+|-weather|RainDance|[upkeep]
+|-curestatus|p2a: Manaphy|slp
+|turn|16
+|
+|move|p2a: Manaphy|Psychic|p1a: Heihachi
+|-supereffective|p1a: Heihachi
+|-damage|p1a: Heihachi|123\/383
+|move|p1a: Heihachi|Drain Punch|p2a: Manaphy
+|-damage|p2a: Manaphy|148\/404
+|-heal|p1a: Heihachi|191\/383|[from] drain|[of] p2a: Manaphy
+|
+|-weather|RainDance|[upkeep]
+|turn|17
+|
+|move|p2a: Manaphy|Surf|p1a: Heihachi
+|-damage|p1a: Heihachi|0 fnt
+|faint|p1a: Heihachi
+|
+|-weather|RainDance|[upkeep]
+|c| Alldaalts|bout to get swept by a manaphy?
+|
+|switch|p1a: Enten|Landorus, M|249\/319
+|-damage|p1a: Enten|210\/319|[from] Stealth Rock
+|turn|18
+|c|âFateh|nope
+|c|âCoatay|This isnt a sweep
+|c|âCoatay|this is looking like a loss for good ol me
+|c|âFateh|its not faster den lando... melo takes a hit... nd gengar finishes it
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-damage|p2a: Amoonguss|378\/432|[from] Stealth Rock
+|move|p1a: Enten|Earth Power|p2a: Amoonguss
+|-damage|p2a: Amoonguss|112\/432
+|
+|-weather|none
+|-heal|p2a: Amoonguss|139\/432|[from] item: Black Sludge
+|turn|19
+|c| Bl153|Do u talk to Xerxes or Gubs much anymore?  I havent seen Xerxes upload in forever
+|c|âCoatay|Xerxes streams all the time
+|c| Alldaalts|dmoc doe
+|c|âCoatay|follow his twitch and you'll see him lots
+|c| Bl153|Im still subbed why dont I see it in my sub box...
+|
+|switch|p2a: Politoed|Politoed, F|336\/384
+|-damage|p2a: Politoed|288\/384|[from] Stealth Rock
+|-weather|RainDance
+|move|p1a: Enten|Earth Power|p2a: Politoed
+|-damage|p2a: Politoed|57\/384
+|
+|-weather|RainDance|[upkeep]
+|turn|20
+|c|âCoatay|Yeah he doesnt upload anymore really
+|
+|move|p1a: Enten|Earth Power|p2a: Politoed
+|-damage|p2a: Politoed|0 fnt
+|faint|p2a: Politoed
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p2a: Kabutops|Kabutops, F|262\/262
+|-damage|p2a: Kabutops|230\/262|[from] Stealth Rock
+|turn|21
+|c| Bl153|Oh ok thats why does he still play mons I thought XY kinda burned him out
+|
+|switch|p1a: Tytannial|Ferrothorn, M|352\/352
+|-damage|p1a: Tytannial|330\/352|[from] Stealth Rock
+|move|p2a: Kabutops|Low Kick|p1a: Tytannial
+|-supereffective|p1a: Tytannial
+|-damage|p1a: Tytannial|135\/352
+|-damage|p2a: Kabutops|198\/262|[from] ability: Iron Barbs|[of] p1a: Tytannial
+|-damage|p2a: Kabutops|155\/262|[from] item: Rocky Helmet|[of] p1a: Tytannial
+|-damage|p2a: Kabutops|129\/262|[from] item: Life Orb
+|
+|-weather|RainDance|[upkeep]
+|turn|22
+|c|âCoatay|He jumps on once in a while
+|
+|move|p2a: Kabutops|Low Kick|p1a: Tytannial
+|-supereffective|p1a: Tytannial
+|-damage|p1a: Tytannial|0 fnt
+|-damage|p2a: Kabutops|97\/262|[from] ability: Iron Barbs|[of] p1a: Tytannial
+|-damage|p2a: Kabutops|54\/262|[from] item: Rocky Helmet|[of] p1a: Tytannial
+|-damage|p2a: Kabutops|28\/262|[from] item: Life Orb
+|faint|p1a: Tytannial
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p1a: Zelda|Meloetta|404\/404
+|-damage|p1a: Zelda|354\/404|[from] Stealth Rock
+|turn|23
+|c| Bl153|Tytannial HAHAHA the Yugioh references yesss feel like Im watching JohnOrigins
+|
+|move|p2a: Kabutops|Waterfall|p1a: Zelda
+|-damage|p1a: Zelda|127\/404
+|-damage|p2a: Kabutops|2\/262|[from] item: Life Orb
+|move|p1a: Zelda|Psyshock|p2a: Kabutops
+|-damage|p2a: Kabutops|0 fnt
+|faint|p2a: Kabutops
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Zelda|152\/404|[from] item: Leftovers
+|c|âFateh|kabutops sweep? 
+|c|âFateh|n
+|c|âFateh|;P
+|
+|switch|p2a: Manaphy|Manaphy, shiny|148\/404
+|-damage|p2a: Manaphy|98\/404|[from] Stealth Rock
+|turn|24
+|c| Bl153|is that that name Fateh?
+|c|âFateh|look at that melo
+|
+|move|p2a: Manaphy|Rest|p2a: Manaphy
+|-status|p2a: Manaphy|slp
+|-heal|p2a: Manaphy|404\/404 slp|[silent]
+|-status|p2a: Manaphy|slp|[from] move: Rest
+|move|p1a: Zelda|Psyshock|p2a: Manaphy
+|-damage|p2a: Manaphy|295\/404 slp
+|
+|-weather|RainDance|[upkeep]
+|-curestatus|p2a: Manaphy|slp
+|-heal|p1a: Zelda|177\/404|[from] item: Leftovers
+|turn|25
+|c| Alldaalts|>melo takes one
+|
+|move|p2a: Manaphy|Tail Glow|p2a: Manaphy
+|-boost|p2a: Manaphy|spa|3
+|move|p1a: Zelda|Psyshock|p2a: Manaphy
+|-damage|p2a: Manaphy|183\/404
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Zelda|202\/404|[from] item: Leftovers
+|turn|26
+|
+|move|p2a: Manaphy|Surf|p1a: Zelda
+|-damage|p1a: Zelda|0 fnt
+|faint|p1a: Zelda
+|
+|-weather|none
+|
+|switch|p1a: Enten|Landorus, M|210\/319
+|-damage|p1a: Enten|171\/319|[from] Stealth Rock
+|turn|27
+|
+|move|p1a: Enten|Earth Power|p2a: Manaphy
+|-damage|p2a: Manaphy|0 fnt
+|faint|p2a: Manaphy
+|
+|c|âFateh|yea it is bl
+|
+|switch|p2a: Amoonguss|Amoonguss, M|283\/432
+|-damage|p2a: Amoonguss|229\/432|[from] Stealth Rock
+|turn|28
+|
+|move|p1a: Enten|Psychic|p2a: Amoonguss
+|-supereffective|p2a: Amoonguss
+|-damage|p2a: Amoonguss|0 fnt
+|faint|p2a: Amoonguss
+|
+|win|Fateh
+|raw|Ladder updating...
+|c|âFateh|and GG
+|leave|Coatay
+|player|p2
+|c| Alldaalts|gg
+|c| Bl153|gg
+|raw|Ladder (probably) updated, but score could not be retrieved (timeout).
+|raw|Ladder (probably) updated, but score could not be retrieved (Error: socket hang up).
+|leave|Fateh
+|player|p1
+|leave|Alldaalts

@@ -1,0 +1,297 @@
+|join|Chillingtilnoon
+|join|fsck
+|player|p1|Chillingtilnoon|70
+|player|p2|fsck|220
+|gametype|singles
+|gen|6
+|tier|ORAS OU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Tyranitar, F
+|poke|p1|Excadrill, M
+|poke|p1|Latias, F
+|poke|p1|Breloom, F
+|poke|p1|Kyurem-Black
+|poke|p1|Thundurus, M
+|poke|p2|Diancie
+|poke|p2|Slowbro, F
+|poke|p2|Heatran, M
+|poke|p2|Excadrill, F
+|poke|p2|Talonflame, M
+|poke|p2|Salamence, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Tyranitar|Tyranitar, F|404\/404
+|switch|p2a: Diancie|Diancie|304\/304
+|-weather|Sandstorm
+|turn|1
+|
+|move|p1a: Tyranitar|Stealth Rock|p2a: Diancie
+|-sidestart|p2: fsck|move: Stealth Rock
+|move|p2a: Diancie|Trick Room|p2a: Diancie
+|-fieldstart|move: Trick Room|[of] p2a: Diancie
+|
+|-weather|Sandstorm|[upkeep]
+|turn|2
+|
+|move|p2a: Diancie|Moonblast|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|182\/404
+|move|p1a: Tyranitar|Stone Edge|p2a: Diancie
+|-damage|p2a: Diancie|162\/304
+|
+|-weather|Sandstorm|[upkeep]
+|turn|3
+|
+|switch|p1a: Excadrill|Excadrill, M|362\/362
+|move|p2a: Diancie|Moonblast|p1a: Excadrill
+|-resisted|p1a: Excadrill
+|-damage|p1a: Excadrill|243\/362
+|-unboost|p1a: Excadrill|spa|1
+|
+|-weather|Sandstorm|[upkeep]
+|turn|4
+|
+|switch|p2a: Slowbro|Slowbro, F|394\/394
+|-damage|p2a: Slowbro|345\/394|[from] Stealth Rock
+|move|p1a: Excadrill|Swords Dance|p1a: Excadrill
+|-boost|p1a: Excadrill|atk|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Slowbro|321\/394|[from] sandstorm
+|turn|5
+|
+|move|p2a: Slowbro|Scald|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-damage|p1a: Excadrill|0 fnt
+|faint|p1a: Excadrill
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Slowbro|297\/394|[from] sandstorm
+|-fieldend|move: Trick Room
+|
+|switch|p1a: Breloom|Breloom, F|262\/262
+|turn|6
+|
+|switch|p2a: Salamence|Salamence, F|331\/331
+|-damage|p2a: Salamence|249\/331|[from] Stealth Rock
+|move|p1a: Breloom|Spore|p2a: Salamence
+|-status|p2a: Salamence|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Salamence|229\/331 slp|[from] sandstorm
+|-damage|p1a: Breloom|246\/262|[from] sandstorm
+|turn|7
+|
+|cant|p2a: Salamence|slp
+|move|p1a: Breloom|Rock Tomb|p2a: Salamence
+|-supereffective|p2a: Salamence
+|-damage|p2a: Salamence|0 fnt
+|faint|p2a: Salamence
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Breloom|230\/262|[from] sandstorm
+|
+|switch|p2a: Slowbro|Slowbro, F|394\/394
+|-damage|p2a: Slowbro|345\/394|[from] Stealth Rock
+|turn|8
+|
+|move|p1a: Breloom|Spore|p2a: Slowbro
+|-status|p2a: Slowbro|slp
+|cant|p2a: Slowbro|slp
+|
+|-weather|none
+|turn|9
+|
+|detailschange|p2a: Slowbro|Slowbro-Mega, F
+|message|Slowbro has Mega Evolved into Mega Slowbro!
+|move|p1a: Breloom|Bullet Seed|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|283\/394 slp
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|217\/394 slp
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|151\/394 slp
+|-hitcount|p2a: Slowbro|3
+|cant|p2a: Slowbro|slp
+|
+|turn|10
+|
+|switch|p2a: Talonflame|Talonflame, M|297\/297
+|-damage|p2a: Talonflame|149\/297|[from] Stealth Rock
+|move|p1a: Breloom|Bullet Seed|p2a: Talonflame
+|-resisted|p2a: Talonflame
+|-damage|p2a: Talonflame|127\/297
+|-resisted|p2a: Talonflame
+|-damage|p2a: Talonflame|106\/297
+|-hitcount|p2a: Talonflame|2
+|
+|turn|11
+|
+|switch|p1a: Tyranitar|Tyranitar, F|182\/404
+|-weather|Sandstorm
+|move|p2a: Talonflame|U-turn|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|2\/404
+|
+|switch|p2a: Excadrill|Excadrill, F|390\/390
+|-damage|p2a: Excadrill|378\/390|[from] Stealth Rock
+|-ability|p2a: Excadrill|Mold Breaker
+|
+|-weather|Sandstorm|[upkeep]
+|turn|12
+|
+|move|p2a: Excadrill|Rapid Spin|p1a: Tyranitar
+|-resisted|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|-sideend|p2: fsck|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Excadrill
+|faint|p1a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Breloom|Breloom, F|230\/262
+|turn|13
+|
+|switch|p2a: Heatran|Heatran, M|386\/386
+|move|p1a: Breloom|Mach Punch|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|186\/386
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Breloom|214\/262|[from] sandstorm
+|-heal|p2a: Heatran|210\/386|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-singleturn|p2a: Heatran|Protect
+|move|p1a: Breloom|Spore|p2a: Heatran
+|-activate|p2a: Heatran|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Breloom|198\/262|[from] sandstorm
+|-heal|p2a: Heatran|234\/386|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Breloom|Spore|p2a: Heatran
+|-message|Sleep Clause Mod activated.
+|-fail|p2a: Heatran
+|move|p2a: Heatran|Lava Plume|p1a: Breloom
+|-supereffective|p1a: Breloom
+|-damage|p1a: Breloom|0 fnt
+|faint|p1a: Breloom
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Heatran|258\/386|[from] item: Leftovers
+|
+|switch|p1a: Kyurem-Black|Kyurem-Black|391\/391
+|-ability|p1a: Kyurem-Black|Teravolt
+|turn|16
+|
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-singleturn|p2a: Heatran|Protect
+|move|p1a: Kyurem-Black|Substitute|p1a: Kyurem-Black
+|-start|p1a: Kyurem-Black|Substitute
+|-damage|p1a: Kyurem-Black|294\/391
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Kyurem-Black|270\/391|[from] sandstorm
+|-heal|p1a: Kyurem-Black|294\/391|[from] item: Leftovers
+|-heal|p2a: Heatran|282\/386|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Kyurem-Black|Earth Power|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|faint|p2a: Heatran
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Kyurem-Black|270\/391|[from] sandstorm
+|-heal|p1a: Kyurem-Black|294\/391|[from] item: Leftovers
+|
+|switch|p2a: Diancie|Diancie|162\/304
+|turn|18
+|
+|move|p1a: Kyurem-Black|Earth Power|p2a: Diancie
+|-supereffective|p2a: Diancie
+|-damage|p2a: Diancie|52\/304
+|-enditem|p2a: Diancie|Weakness Policy
+|-boost|p2a: Diancie|atk|2|[from] item: Weakness Policy
+|-boost|p2a: Diancie|spa|2|[from] item: Weakness Policy
+|move|p2a: Diancie|Trick Room|p2a: Diancie
+|-fieldstart|move: Trick Room|[of] p2a: Diancie
+|
+|-weather|none
+|-heal|p1a: Kyurem-Black|318\/391|[from] item: Leftovers
+|turn|19
+|
+|move|p2a: Diancie|Diamond Storm|p1a: Kyurem-Black
+|-supereffective|p1a: Kyurem-Black
+|-end|p1a: Kyurem-Black|Substitute
+|move|p1a: Kyurem-Black|Earth Power|p2a: Diancie
+|-supereffective|p2a: Diancie
+|-damage|p2a: Diancie|0 fnt
+|faint|p2a: Diancie
+|
+|-heal|p1a: Kyurem-Black|342\/391|[from] item: Leftovers
+|
+|switch|p2a: Excadrill|Excadrill, F|378\/390
+|-ability|p2a: Excadrill|Mold Breaker
+|turn|20
+|
+|move|p2a: Excadrill|Iron Head|p1a: Kyurem-Black
+|-supereffective|p1a: Kyurem-Black
+|-damage|p1a: Kyurem-Black|0 fnt
+|faint|p1a: Kyurem-Black
+|
+|
+|switch|p1a: Thundurus|Thundurus, M|299\/299
+|turn|21
+|
+|move|p2a: Excadrill|Rock Slide|p1a: Thundurus
+|-supereffective|p1a: Thundurus
+|-damage|p1a: Thundurus|29\/299
+|move|p1a: Thundurus|Focus Blast|p2a: Excadrill
+|-supereffective|p2a: Excadrill
+|-damage|p2a: Excadrill|92\/390
+|-damage|p1a: Thundurus|0 fnt|[from] item: Life Orb
+|faint|p1a: Thundurus
+|
+|
+|switch|p1a: Latias|Latias, F|302\/302
+|turn|22
+|
+|detailschange|p1a: Latias|Latias-Mega, F
+|message|Latias has Mega Evolved into Mega Latias!
+|move|p2a: Excadrill|Earthquake|p1a: Latias
+|-damage|p1a: Latias|143\/302
+|move|p1a: Latias|Psyshock|p2a: Excadrill
+|-resisted|p2a: Excadrill
+|-damage|p2a: Excadrill|0 fnt
+|faint|p2a: Excadrill
+|
+|-fieldend|move: Trick Room
+|
+|switch|p2a: Talonflame|Talonflame, M|106\/297
+|turn|23
+|
+|move|p2a: Talonflame|Brave Bird|p1a: Latias
+|-damage|p1a: Latias|0 fnt
+|-damage|p2a: Talonflame|59\/297|[from] recoil|[of] p1a: Latias
+|faint|p1a: Latias
+|
+|win|fsck
+|raw|Ladder updating...
+|raw|Chillingtilnoon's rating: 1189 &rarr; <strong>1156<\/strong><br \/>(-33 for losing)
+|raw|fsck's rating: 1082 &rarr; <strong>1118<\/strong><br \/>(+36 for winning)
+|leave|Chillingtilnoon
+|player|p1

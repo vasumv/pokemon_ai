@@ -1,0 +1,218 @@
+|join|jbtc11
+|join|Super Mario Bros
+|player|p1|jbtc11|117
+|player|p2|Super Mario Bros|155
+|gametype|singles
+|gen|6
+|tier|OU - No Preview
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|
+|start
+|switch|p1a: Charizard|Charizard, M|297\/297
+|switch|p2a: Machamp|Machamp, F|261\/261
+|turn|1
+|callback|decision
+|
+|-formechange|p1a: Charizard|Charizard-Mega-Y
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p2a: Machamp|Sucker Punch|p1a: Charizard
+|-damage|p1a: Charizard|79\/297
+|-damage|p2a: Machamp|235\/261|[from] item: Life Orb
+|move|p1a: Charizard|Fire Blast|p2a: Machamp
+|replace|p2a: Zoroark|Zoroark, M|235\/261
+|-damage|p2a: Zoroark|0 fnt
+|faint|p2a: Zoroark
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|chat|Super Mario Bros|wow, I just realized something
+|chat|Super Mario Bros|there's no stealth rock on my team
+|
+|switch|p2a: Charizard|Charizard, F|297\/297
+|turn|2
+|callback|decision
+|chat|jbtc11|theres none on mine either
+|
+|-formechange|p2a: Charizard|Charizard-Mega-Y
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p2a: Charizard|Fire Blast|p1a: Charizard
+|-resisted|p1a: Charizard
+|-damage|p1a: Charizard|0 fnt
+|faint|p1a: Charizard
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: Darmanitan|Darmanitan, M|351\/351
+|turn|3
+|callback|decision
+|
+|move|p1a: Darmanitan|Flare Blitz|p2a: Charizard
+|-crit|p2a: Charizard
+|-resisted|p2a: Charizard
+|-damage|p2a: Charizard|0 fnt
+|-damage|p1a: Darmanitan|253\/351|[from] recoil|[of] p2a: Charizard
+|faint|p2a: Charizard
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p2a: Ditto|Ditto|300\/300
+|-transform|p2a: Ditto|p1a: Darmanitan
+|turn|4
+|callback|decision
+|
+|move|p1a: Darmanitan|Flare Blitz|p2a: Ditto
+|-resisted|p2a: Ditto
+|-damage|p2a: Ditto|0 fnt
+|-damage|p1a: Darmanitan|154\/351|[from] recoil|[of] p2a: Ditto
+|faint|p2a: Ditto
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|303\/303
+|turn|5
+|callback|decision
+|
+|move|p1a: Darmanitan|Flare Blitz|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|133\/303
+|-damage|p1a: Darmanitan|98\/351|[from] recoil|[of] p2a: Rotom-Wash
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Darmanitan
+|-damage|p1a: Darmanitan|0 fnt
+|faint|p1a: Darmanitan
+|callback|decision
+|
+|switch|p2a: Machamp|Machamp, F|384\/384
+|
+|-weather|none
+|callback|decision
+|
+|switch|p1a: Ninetales|Ninetales, F|287\/287
+|-weather|SunnyDay
+|turn|6
+|callback|decision
+|
+|move|p1a: Ninetales|Fire Blast|p2a: Machamp
+|-damage|p2a: Machamp|219\/384
+|move|p2a: Machamp|Dynamic Punch|p1a: Ninetales
+|-damage|p1a: Ninetales|46\/287
+|-start|p1a: Ninetales|confusion
+|
+|-weather|SunnyDay|[upkeep]
+|turn|7
+|callback|decision
+|
+|-activate|p1a: Ninetales|confusion
+|move|p1a: Ninetales|Confuse Ray|p2a: Machamp
+|-start|p2a: Machamp|confusion
+|-activate|p2a: Machamp|confusion
+|move|p2a: Machamp|Knock Off|p1a: Ninetales
+|-damage|p1a: Ninetales|0 fnt
+|faint|p1a: Ninetales
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|chat|Super Mario Bros|gg
+|
+|switch|p1a: Victini|Victini|341\/341
+|turn|8
+|callback|decision
+|
+|move|p1a: Victini|V-create|p2a: Machamp
+|-damage|p2a: Machamp|0 fnt
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|faint|p2a: Machamp
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p2a: Aegislash|Aegislash, F|261\/261
+|turn|9
+|callback|decision
+|
+|move|p2a: Aegislash|King's Shield|p2a: Aegislash
+|-singleturn|p2a: Aegislash|Protect
+|move|p1a: Victini|V-create|p2a: Aegislash
+|-activate|p2a: Aegislash|Protect
+|-unboost|p1a: Victini|atk|2
+|
+|-weather|SunnyDay|[upkeep]
+|turn|10
+|callback|decision
+|
+|move|p1a: Victini|V-create|p2a: Aegislash
+|-supereffective|p2a: Aegislash
+|-damage|p2a: Aegislash|0 fnt
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|faint|p2a: Aegislash
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|133\/303
+|turn|11
+|callback|decision
+|
+|move|p1a: Victini|V-create|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|68\/303
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Victini
+|-damage|p1a: Victini|115\/341
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Rotom-Wash|86\/303|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p1a: Venusaur|Venusaur, M|301\/301
+|move|p2a: Rotom-Wash|Pain Split|p1a: Venusaur
+|-sethp|p1a: Venusaur|193\/301|p2a: Rotom-Wash|193\/303|[from] move: Pain Split
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Venusaur|211\/301|[from] item: Leftovers
+|-heal|p2a: Rotom-Wash|211\/303|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: Venusaur|Growth|p1a: Venusaur
+|-boost|p1a: Venusaur|atk|2
+|-boost|p1a: Venusaur|spa|2
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Venusaur
+|-status|p1a: Venusaur|brn
+|
+|-weather|none
+|-heal|p1a: Venusaur|229\/301 brn|[from] item: Leftovers
+|-heal|p2a: Rotom-Wash|229\/303|[from] item: Leftovers
+|-damage|p1a: Venusaur|192\/301 brn|[from] brn
+|turn|14
+|callback|decision
+|chat|Super Mario Bros|poor rotom
+|
+|move|p1a: Venusaur|Giga Drain|p2a: Rotom-Wash
+|-supereffective|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|-heal|p1a: Venusaur|301\/301 brn|[from] drain|[of] p2a: Rotom-Wash
+|faint|p2a: Rotom-Wash
+|
+|win|jbtc11
+|chat|Super Mario Bros|no mercy, huh
+|leave|Super Mario Bros
+|player|p2
+|chat|jbtc11|none whatsoever
+|join|Super Mario Bros

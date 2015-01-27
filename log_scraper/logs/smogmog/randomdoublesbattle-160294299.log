@@ -1,0 +1,150 @@
+|join|WhatYouGotBruh
+|join|smogmog
+|player|p1|WhatYouGotBruh|293
+|player|p2|smogmog|93
+|gametype|doubles
+|gen|6
+|tier|Random Doubles Battle
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|HP Percentage Mod: HP is shown in percentages
+|
+|start
+|switch|p1a: Azumarill|Azumarill, L87, F|352\/352
+|switch|p1b: Lucario|Lucario, L70, M|200\/200
+|switch|p2a: Jynx|Jynx, L84, F|230\/230
+|switch|p2b: Pelipper|Pelipper, L86, F|280\/280
+|turn|1
+|c|âsmogmog|hi
+|c|âWhatYouGotBruh|glhf
+|c|âsmogmog|same for you
+|
+|detailschange|p1b: Lucario|Lucario-Mega, L70, M
+|message|Lucario has Mega Evolved into Mega Lucario!
+|move|p2a: Jynx|Trick|p1a: Azumarill
+|-activate|p2a: Jynx|move: Trick|[of] p1a: Azumarill
+|-item|p1a: Azumarill|Choice Scarf|[from] move: Trick
+|-item|p2a: Jynx|Life Orb|[from] move: Trick
+|move|p1b: Lucario|Dark Pulse|p2a: Jynx
+|-supereffective|p2a: Jynx
+|-damage|p2a: Jynx|96\/230
+|move|p2b: Pelipper|Scald|p1b: Lucario
+|-damage|p1b: Lucario|53\/200
+|move|p1a: Azumarill|Play Rough|p2b: Pelipper
+|-damage|p2b: Pelipper|133\/280
+|
+|-heal|p2b: Pelipper|150\/280|[from] item: Leftovers
+|turn|2
+|
+|switch|p1b: Spiritomb|Spiritomb, L81, F|248\/248
+|move|p2b: Pelipper|Protect|p2b: Pelipper
+|-singleturn|p2b: Pelipper|Protect
+|move|p2a: Jynx|Psyshock|p1b: Spiritomb
+|-immune|p1b: Spiritomb|[msg]
+|move|p1a: Azumarill|Play Rough|p2a: Jynx
+|-damage|p2a: Jynx|0 fnt
+|faint|p2a: Jynx
+|
+|-heal|p2b: Pelipper|167\/280|[from] item: Leftovers
+|
+|switch|p2a: Nidoking|Nidoking, L79, M|242\/242
+|turn|3
+|
+|switch|p1a: Lucario|Lucario-Mega, L70, M|53\/200
+|move|p2a: Nidoking|Earth Power|p1b: Spiritomb
+|-damage|p1b: Spiritomb|91\/248
+|move|p2b: Pelipper|Scald|p1b: Spiritomb
+|-damage|p1b: Spiritomb|6\/248
+|move|p1b: Spiritomb|Snarl|p2b: Pelipper
+|-damage|p2a: Nidoking|193\/242
+|-unboost|p2a: Nidoking|spa|1
+|-damage|p2b: Pelipper|121\/280
+|-unboost|p2b: Pelipper|spa|1
+|
+|-heal|p2b: Pelipper|138\/280|[from] item: Leftovers
+|-heal|p1b: Spiritomb|21\/248|[from] item: Leftovers
+|turn|4
+|
+|switch|p2b: Mandibuzz|Mandibuzz, L78, F|332\/332
+|move|p1a: Lucario|Dark Pulse|p2b: Mandibuzz
+|-resisted|p2b: Mandibuzz
+|-damage|p2b: Mandibuzz|300\/332
+|move|p2a: Nidoking|Earth Power|p1a: Lucario
+|-supereffective|p1a: Lucario
+|-damage|p1a: Lucario|0 fnt
+|faint|p1a: Lucario
+|move|p1b: Spiritomb|Pain Split|p2a: Nidoking
+|-sethp|p2a: Nidoking|107\/242|p1b: Spiritomb|107\/248|[from] move: Pain Split
+|
+|-heal|p1b: Spiritomb|122\/248|[from] item: Leftovers
+|
+|switch|p1a: Cinccino|Cinccino, L82, M|241\/241
+|turn|5
+|
+|switch|p2a: Excadrill|Excadrill, L78, F|284\/284
+|-ability|p2a: Excadrill|Mold Breaker
+|move|p1a: Cinccino|Rock Blast|p2b: Mandibuzz
+|-supereffective|p2b: Mandibuzz
+|-damage|p2b: Mandibuzz|238\/332
+|-supereffective|p2b: Mandibuzz
+|-damage|p2b: Mandibuzz|178\/332
+|-supereffective|p2b: Mandibuzz
+|-damage|p2b: Mandibuzz|116\/332
+|-crit|p2b: Mandibuzz
+|-supereffective|p2b: Mandibuzz
+|-damage|p2b: Mandibuzz|28\/332
+|-supereffective|p2b: Mandibuzz
+|-damage|p2b: Mandibuzz|0 fnt
+|-hitcount|p2b: Mandibuzz|5
+|faint|p2b: Mandibuzz
+|move|p1b: Spiritomb|Snarl|p2: Mandibuzz
+|-damage|p2a: Excadrill|214\/284
+|-unboost|p2a: Excadrill|spa|1
+|
+|-heal|p1b: Spiritomb|137\/248|[from] item: Leftovers
+|
+|switch|p2b: Rotom-Frost|Rotom-Frost, L77|188\/188
+|turn|6
+|
+|move|p1b: Spiritomb|Sucker Punch|p2a: Excadrill
+|-fail|p2a: Excadrill
+|move|p1a: Cinccino|Rock Blast|p2b: Rotom-Frost
+|-supereffective|p2b: Rotom-Frost
+|-damage|p2b: Rotom-Frost|124\/188
+|-supereffective|p2b: Rotom-Frost
+|-damage|p2b: Rotom-Frost|68\/188
+|-supereffective|p2b: Rotom-Frost
+|-damage|p2b: Rotom-Frost|8\/188
+|-crit|p2b: Rotom-Frost
+|-supereffective|p2b: Rotom-Frost
+|-damage|p2b: Rotom-Frost|0 fnt
+|-hitcount|p2b: Rotom-Frost|4
+|faint|p2b: Rotom-Frost
+|move|p2a: Excadrill|Substitute|p2a: Excadrill
+|-start|p2a: Excadrill|Substitute
+|-damage|p2a: Excadrill|143\/284
+|
+|-heal|p1b: Spiritomb|152\/248|[from] item: Leftovers
+|
+|switch|p2b: Nidoking|Nidoking, L79, M|107\/242
+|turn|7
+|
+|move|p1b: Spiritomb|Shadow Sneak|p2a: Excadrill
+|-damage|p2a: Excadrill|65\/284
+|move|p1a: Cinccino|Return|p2b: Nidoking
+|-damage|p2b: Nidoking|0 fnt
+|faint|p2b: Nidoking
+|move|p2a: Excadrill|Iron Head|p1b: Spiritomb
+|-damage|p1b: Spiritomb|41\/248
+|
+|-heal|p1b: Spiritomb|56\/248|[from] item: Leftovers
+|c|âsmogmog|gg
+|-message|smogmog forfeited.
+|
+|win|WhatYouGotBruh
+|raw|Ladder updating...
+|leave|smogmog
+|player|p2
+|raw|WhatYouGotBruh's rating: 1417 &rarr; <strong>1442<\/strong><br \/>(+25 for winning)
+|raw|smogmog's rating: 1502 &rarr; <strong>1478<\/strong><br \/>(-24 for losing)
+|c|âWhatYouGotBruh|gg

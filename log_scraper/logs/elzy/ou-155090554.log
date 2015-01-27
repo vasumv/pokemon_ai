@@ -1,0 +1,704 @@
+|join|elzy
+|join|Shami15
+|player|p1|elzy|170
+|player|p2|Shami15|101
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Ambipom, F
+|poke|p1|Forretress, F
+|poke|p1|Alomomola, M
+|poke|p1|Noivern, M
+|poke|p1|Venusaur, M
+|poke|p1|Scizor, M
+|poke|p2|Smeargle, M, shiny
+|poke|p2|Lanturn, F, shiny
+|poke|p2|Medicham, M
+|poke|p2|Excadrill, M
+|poke|p2|Trevenant, M
+|poke|p2|Talonflame, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Ambipom|Ambipom, F|291\/291
+|switch|p2a: Smeargle|Smeargle, M, shiny|314\/314
+|turn|1
+|
+|switch|p2a: Trevenant|Trevenant, M|345\/345
+|move|p1a: Ambipom|Fake Out|p2a: Trevenant
+|-immune|p2a: Trevenant|[msg]
+|
+|turn|2
+|
+|move|p1a: Ambipom|U-turn|p2a: Trevenant
+|-damage|p2a: Trevenant|231\/345
+|-damage|p1a: Ambipom|262\/291|[from] item: Life Orb
+|
+|switch|p1a: Noivern|Noivern, M|311\/311
+|-item|p2a: Trevenant|Sitrus Berry|[from] ability: Frisk|[of] p1a: Noivern|[identify]
+|move|p2a: Trevenant|Will-O-Wisp|p1a: Noivern
+|-status|p1a: Noivern|brn
+|
+|-damage|p1a: Noivern|273\/311 brn|[from] brn
+|turn|3
+|
+|switch|p2a: Talonflame|Talonflame, F|360\/360
+|move|p1a: Noivern|Flamethrower|p2a: Talonflame
+|-resisted|p2a: Talonflame
+|-damage|p2a: Talonflame|268\/360
+|
+|-heal|p2a: Talonflame|290\/360|[from] item: Leftovers
+|-damage|p1a: Noivern|235\/311 brn|[from] brn
+|turn|4
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534
+|move|p2a: Talonflame|Flare Blitz|p1a: Alomomola
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|481\/534
+|-damage|p2a: Talonflame|273\/360|[from] recoil|[of] p1a: Alomomola
+|
+|-heal|p2a: Talonflame|295\/360|[from] item: Leftovers
+|-heal|p1a: Alomomola|514\/534|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Smeargle|Smeargle, M, shiny|314\/314
+|move|p1a: Alomomola|Toxic|p2a: Smeargle
+|-status|p2a: Smeargle|tox
+|
+|-heal|p1a: Alomomola|534\/534|[from] item: Leftovers
+|-damage|p2a: Smeargle|295\/314 tox|[from] psn
+|turn|6
+|
+|switch|p1a: Venusaur|Venusaur, M|364\/364
+|move|p2a: Smeargle|Dark Void|p1a: Venusaur
+|-status|p1a: Venusaur|slp
+|
+|-damage|p2a: Smeargle|257\/314 tox|[from] psn
+|turn|7
+|
+|detailschange|p1a: Venusaur|Venusaur-Mega, M
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p2a: Smeargle|Sticky Web|p1a: Venusaur
+|-sidestart|p1: elzy|move: Sticky Web
+|cant|p1a: Venusaur|slp
+|
+|-damage|p2a: Smeargle|200\/314 tox|[from] psn
+|turn|8
+|
+|switch|p2a: Medicham|Medicham, M|262\/262
+|-curestatus|p1a: Venusaur|slp
+|move|p1a: Venusaur|Giga Drain|p2a: Medicham
+|-damage|p2a: Medicham|121\/262
+|
+|turn|9
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534
+|-activate|p1a: Alomomola|move: Sticky Web
+|-unboost|p1a: Alomomola|spe|1
+|detailschange|p2a: Medicham|Medicham-Mega, M
+|message|Medicham has Mega Evolved into Mega Medicham!
+|move|p2a: Medicham|Psycho Cut|p1a: Alomomola
+|-damage|p1a: Alomomola|350\/534
+|
+|-heal|p1a: Alomomola|383\/534|[from] item: Leftovers
+|turn|10
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Medicham|Drain Punch|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-heal|p1a: Alomomola|416\/534|[from] item: Leftovers
+|turn|11
+|
+|switch|p2a: Smeargle|Smeargle, M, shiny|200\/314 tox
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-heal|p1a: Alomomola|449\/534|[from] item: Leftovers
+|-damage|p2a: Smeargle|181\/314 tox|[from] psn
+|turn|12
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Smeargle|Dark Void|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-heal|p1a: Alomomola|534\/534|[from] move: Wish|[wisher] Alomomola
+|-damage|p2a: Smeargle|143\/314 tox|[from] psn
+|turn|13
+|
+|switch|p1a: Venusaur|Venusaur-Mega, M|364\/364
+|-activate|p1a: Venusaur|move: Sticky Web
+|-unboost|p1a: Venusaur|spe|1
+|move|p2a: Smeargle|Dark Void|p1a: Venusaur
+|-miss|p2a: Smeargle|p1a: Venusaur
+|
+|-damage|p2a: Smeargle|86\/314 tox|[from] psn
+|turn|14
+|
+|move|p2a: Smeargle|Dark Void|p1a: Venusaur
+|-status|p1a: Venusaur|slp
+|cant|p1a: Venusaur|slp
+|
+|-damage|p2a: Smeargle|10\/314 tox|[from] psn
+|turn|15
+|
+|move|p2a: Smeargle|Stealth Rock|p1a: Venusaur
+|-sidestart|p1: elzy|move: Stealth Rock
+|cant|p1a: Venusaur|slp
+|
+|-damage|p2a: Smeargle|0 fnt|[from] psn
+|faint|p2a: Smeargle
+|
+|switch|p2a: Medicham|Medicham-Mega, M|121\/262
+|turn|16
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534
+|-damage|p1a: Alomomola|468\/534|[from] Stealth Rock
+|-activate|p1a: Alomomola|move: Sticky Web
+|-unboost|p1a: Alomomola|spe|1
+|move|p2a: Medicham|Drain Punch|p1a: Alomomola
+|-damage|p1a: Alomomola|266\/534
+|-heal|p2a: Medicham|222\/262|[from] drain|[of] p1a: Alomomola
+|
+|-heal|p1a: Alomomola|299\/534|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Medicham|Drain Punch|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-heal|p1a: Alomomola|332\/534|[from] item: Leftovers
+|turn|18
+|
+|move|p2a: Medicham|Drain Punch|p1a: Alomomola
+|-damage|p1a: Alomomola|137\/534
+|-heal|p2a: Medicham|262\/262|[from] drain|[of] p1a: Alomomola
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-heal|p1a: Alomomola|170\/534|[from] item: Leftovers
+|turn|19
+|
+|switch|p2a: Lanturn|Lanturn, F, shiny|454\/454
+|-item|p2a: Lanturn|Air Balloon
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-fail|p1a: Alomomola
+|
+|-heal|p1a: Alomomola|437\/534|[from] move: Wish|[wisher] Alomomola
+|-heal|p1a: Alomomola|470\/534|[from] item: Leftovers
+|turn|20
+|
+|switch|p1a: Venusaur|Venusaur-Mega, M|364\/364 slp
+|-damage|p1a: Venusaur|319\/364 slp|[from] Stealth Rock
+|-activate|p1a: Venusaur|move: Sticky Web
+|-unboost|p1a: Venusaur|spe|1
+|move|p2a: Lanturn|Volt Switch|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|289\/364 slp
+|
+|switch|p2a: Talonflame|Talonflame, F|295\/360
+|
+|-heal|p2a: Talonflame|317\/360|[from] item: Leftovers
+|turn|21
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534
+|-damage|p1a: Alomomola|468\/534|[from] Stealth Rock
+|-activate|p1a: Alomomola|move: Sticky Web
+|-unboost|p1a: Alomomola|spe|1
+|move|p2a: Talonflame|Bulk Up|p2a: Talonflame
+|-boost|p2a: Talonflame|atk|1
+|-boost|p2a: Talonflame|def|1
+|
+|-heal|p2a: Talonflame|339\/360|[from] item: Leftovers
+|-heal|p1a: Alomomola|501\/534|[from] item: Leftovers
+|turn|22
+|
+|switch|p2a: Trevenant|Trevenant, M|231\/345
+|move|p1a: Alomomola|Toxic|p2a: Trevenant
+|-status|p2a: Trevenant|tox
+|
+|-heal|p1a: Alomomola|534\/534|[from] item: Leftovers
+|-damage|p2a: Trevenant|210\/345 tox|[from] psn
+|turn|23
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Trevenant|Leech Seed|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-damage|p2a: Trevenant|168\/345 tox|[from] psn
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|254\/345 tox|[from] item: Sitrus Berry
+|turn|24
+|chat|Shami15|OOMGOADGVNIZDSOPFNHSEB
+|chat|Shami15|THIS THING NEEDS TO DIE
+|
+|switch|p2a: Medicham|Medicham-Mega, M|262\/262
+|switch|p1a: Venusaur|Venusaur-Mega, M|289\/364 slp
+|-activate|p1a: Venusaur|move: Sticky Web
+|-unboost|p1a: Venusaur|spe|1
+|-damage|p1a: Venusaur|244\/364 slp|[from] Stealth Rock
+|
+|turn|25
+|
+|move|p2a: Medicham|Psycho Cut|p1a: Venusaur
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|0 fnt
+|faint|p1a: Venusaur
+|
+|
+|switch|p1a: Noivern|Noivern, M|235\/311 brn
+|-damage|p1a: Noivern|158\/311 brn|[from] Stealth Rock
+|-item|p2a: Medicham|Medichamite|[from] ability: Frisk|[of] p1a: Noivern|[identify]
+|turn|26
+|
+|move|p1a: Noivern|Draco Meteor|p2a: Medicham
+|-damage|p2a: Medicham|0 fnt
+|-unboost|p1a: Noivern|spa|2
+|faint|p2a: Medicham
+|
+|-damage|p1a: Noivern|120\/311 brn|[from] brn
+|
+|switch|p2a: Talonflame|Talonflame, F|339\/360
+|turn|27
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534
+|-activate|p1a: Alomomola|move: Sticky Web
+|-unboost|p1a: Alomomola|spe|1
+|-damage|p1a: Alomomola|468\/534|[from] Stealth Rock
+|switch|p2a: Lanturn|Lanturn, F, shiny|454\/454
+|-item|p2a: Lanturn|Air Balloon
+|
+|-heal|p1a: Alomomola|501\/534|[from] item: Leftovers
+|turn|28
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Lanturn|Volt Switch|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-heal|p1a: Alomomola|534\/534|[from] item: Leftovers
+|turn|29
+|
+|move|p2a: Lanturn|Volt Switch|p1a: Alomomola
+|-supereffective|p1a: Alomomola
+|-damage|p1a: Alomomola|168\/534
+|
+|switch|p2a: Trevenant|Trevenant, M|254\/345 tox
+|move|p1a: Alomomola|Scald|p2a: Trevenant
+|-resisted|p2a: Trevenant
+|-damage|p2a: Trevenant|236\/345 tox
+|
+|-heal|p1a: Alomomola|201\/534|[from] item: Leftovers
+|-damage|p2a: Trevenant|215\/345 tox|[from] psn
+|-item|p2a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|turn|30
+|
+|switch|p2a: Lanturn|Lanturn, F, shiny|454\/454
+|-item|p2a: Lanturn|Air Balloon
+|switch|p1a: Noivern|Noivern, M|120\/311 brn
+|-damage|p1a: Noivern|43\/311 brn|[from] Stealth Rock
+|-item|p2a: Lanturn|Air Balloon|[from] ability: Frisk|[of] p1a: Noivern|[identify]
+|
+|-damage|p1a: Noivern|5\/311 brn|[from] brn
+|turn|31
+|
+|switch|p2a: Excadrill|Excadrill, M|386\/386
+|-ability|p2a: Excadrill|Mold Breaker
+|-item|p2a: Excadrill|Air Balloon
+|move|p1a: Noivern|Draco Meteor|p2a: Excadrill
+|-resisted|p2a: Excadrill
+|-damage|p2a: Excadrill|178\/386
+|-enditem|p2a: Excadrill|Air Balloon
+|-unboost|p1a: Noivern|spa|2
+|
+|-damage|p1a: Noivern|0 fnt|[from] brn
+|faint|p1a: Noivern
+|
+|switch|p1a: Forretress|Forretress, F|354\/354
+|-damage|p1a: Forretress|310\/354|[from] Stealth Rock
+|-activate|p1a: Forretress|move: Sticky Web
+|-unboost|p1a: Forretress|spe|1
+|turn|32
+|
+|switch|p2a: Trevenant|Trevenant, M|215\/345 tox
+|move|p1a: Forretress|Stealth Rock|p2a: Trevenant
+|-sidestart|p2: Shami15|move: Stealth Rock
+|
+|-damage|p2a: Trevenant|194\/345 tox|[from] psn
+|turn|33
+|
+|move|p2a: Trevenant|Will-O-Wisp|p1a: Forretress
+|-status|p1a: Forretress|brn
+|move|p1a: Forretress|Gyro Ball|p2a: Trevenant
+|-damage|p2a: Trevenant|148\/345 tox
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|234\/345 tox|[from] item: Sitrus Berry
+|
+|-damage|p2a: Trevenant|192\/345 tox|[from] psn
+|-damage|p1a: Forretress|266\/354 brn|[from] brn
+|-item|p2a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|turn|34
+|
+|move|p2a: Trevenant|Leech Seed|p1a: Forretress
+|-start|p1a: Forretress|move: Leech Seed
+|move|p1a: Forretress|Gyro Ball|p2a: Trevenant
+|-crit|p2a: Trevenant
+|-damage|p2a: Trevenant|113\/345 tox
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|199\/345 tox|[from] item: Sitrus Berry
+|
+|-damage|p1a: Forretress|222\/354 brn|[from] Leech Seed|[of] p2a: Trevenant
+|-heal|p2a: Trevenant|243\/345 tox|[silent]
+|-damage|p2a: Trevenant|180\/345 tox|[from] psn
+|-damage|p1a: Forretress|178\/354 brn|[from] brn
+|-item|p2a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|turn|35
+|
+|switch|p2a: Excadrill|Excadrill, M|178\/386
+|-damage|p2a: Excadrill|166\/386|[from] Stealth Rock
+|-ability|p2a: Excadrill|Mold Breaker
+|move|p1a: Forretress|Gyro Ball|p2a: Excadrill
+|-resisted|p2a: Excadrill
+|-damage|p2a: Excadrill|112\/386
+|
+|-damage|p1a: Forretress|134\/354 brn|[from] Leech Seed|[of] p2a: Excadrill
+|-heal|p2a: Excadrill|156\/386|[silent]
+|-damage|p1a: Forretress|90\/354 brn|[from] brn
+|turn|36
+|
+|move|p2a: Excadrill|Earthquake|p1a: Forretress
+|-damage|p1a: Forretress|0 fnt
+|faint|p1a: Forretress
+|
+|
+|switch|p1a: Scizor|Scizor, M|344\/344
+|-damage|p1a: Scizor|301\/344|[from] Stealth Rock
+|-activate|p1a: Scizor|move: Sticky Web
+|-unboost|p1a: Scizor|spe|1
+|turn|37
+|
+|move|p2a: Excadrill|Rapid Spin|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|289\/344
+|-sideend|p2: Shami15|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Excadrill
+|move|p1a: Scizor|Brick Break|p2a: Excadrill
+|-supereffective|p2a: Excadrill
+|-damage|p2a: Excadrill|0 fnt
+|faint|p2a: Excadrill
+|
+|
+|switch|p2a: Talonflame|Talonflame, F|339\/360
+|turn|38
+|
+|switch|p1a: Alomomola|Alomomola, M|379\/534
+|-activate|p1a: Alomomola|move: Sticky Web
+|-unboost|p1a: Alomomola|spe|1
+|-damage|p1a: Alomomola|313\/534|[from] Stealth Rock
+|move|p2a: Talonflame|Flare Blitz|p1a: Alomomola
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|260\/534
+|-damage|p2a: Talonflame|322\/360|[from] recoil|[of] p1a: Alomomola
+|
+|-heal|p2a: Talonflame|344\/360|[from] item: Leftovers
+|-heal|p1a: Alomomola|293\/534|[from] item: Leftovers
+|turn|39
+|chat|Shami15|OMFG!
+|chat|Shami15|this thing is the bane of my exsistance
+|chat|Shami15|holy hell
+|
+|switch|p2a: Trevenant|Trevenant, M|180\/345 tox
+|move|p1a: Alomomola|Toxic|p2a: Trevenant
+|-fail|p2a: Trevenant|tox
+|
+|-heal|p1a: Alomomola|326\/534|[from] item: Leftovers
+|-damage|p2a: Trevenant|159\/345 tox|[from] psn
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|245\/345 tox|[from] item: Sitrus Berry
+|turn|40
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Trevenant|Will-O-Wisp|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-heal|p1a: Alomomola|359\/534|[from] item: Leftovers
+|-damage|p2a: Trevenant|203\/345 tox|[from] psn
+|-item|p2a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|turn|41
+|
+|move|p2a: Trevenant|Leech Seed|p1a: Alomomola|[miss]
+|-miss|p2a: Trevenant|p1a: Alomomola
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-heal|p1a: Alomomola|392\/534|[from] item: Leftovers
+|-damage|p2a: Trevenant|140\/345 tox|[from] psn
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|226\/345 tox|[from] item: Sitrus Berry
+|turn|42
+|
+|switch|p2a: Lanturn|Lanturn, F, shiny|454\/454
+|-item|p2a: Lanturn|Air Balloon
+|switch|p1a: Ambipom|Ambipom, F|262\/291
+|-activate|p1a: Ambipom|move: Sticky Web
+|-unboost|p1a: Ambipom|spe|1
+|-damage|p1a: Ambipom|226\/291|[from] Stealth Rock
+|
+|-heal|p1a: Ambipom|291\/291|[from] move: Wish|[wisher] Alomomola
+|turn|43
+|
+|move|p1a: Ambipom|Pursuit|p2a: Lanturn|[from]Pursuit
+|-damage|p2a: Lanturn|297\/454
+|-enditem|p2a: Lanturn|Air Balloon
+|-damage|p1a: Ambipom|262\/291|[from] item: Life Orb
+|switch|p2a: Trevenant|Trevenant, M|226\/345 tox
+|
+|-damage|p2a: Trevenant|205\/345 tox|[from] psn
+|turn|44
+|
+|move|p1a: Ambipom|Pursuit|p2a: Trevenant
+|-supereffective|p2a: Trevenant
+|-damage|p2a: Trevenant|2\/345 tox
+|-damage|p1a: Ambipom|233\/291|[from] item: Life Orb
+|move|p2a: Trevenant|Will-O-Wisp|p1a: Ambipom|[miss]
+|-miss|p2a: Trevenant|p1a: Ambipom
+|
+|-damage|p2a: Trevenant|0 fnt|[from] psn
+|faint|p2a: Trevenant
+|chat|Shami15|ewQWEG4UOVBEWFAwEPRDSVG
+|chat|Shami15|\HBG14QEUWRHBGRGWRTJHBER4THBG
+|chat|Shami15|QWGUR VFBSERT]
+|
+|switch|p2a: Talonflame|Talonflame, F|344\/360
+|turn|45
+|
+|switch|p1a: Scizor|Scizor, M|289\/344
+|-activate|p1a: Scizor|move: Sticky Web
+|-unboost|p1a: Scizor|spe|1
+|-damage|p1a: Scizor|246\/344|[from] Stealth Rock
+|move|p2a: Talonflame|Bulk Up|p2a: Talonflame
+|-boost|p2a: Talonflame|atk|1
+|-boost|p2a: Talonflame|def|1
+|
+|-heal|p2a: Talonflame|360\/360|[from] item: Leftovers
+|turn|46
+|
+|move|p2a: Talonflame|Bulk Up|p2a: Talonflame
+|-boost|p2a: Talonflame|atk|1
+|-boost|p2a: Talonflame|def|1
+|move|p1a: Scizor|U-turn|p2a: Talonflame
+|-resisted|p2a: Talonflame
+|-damage|p2a: Talonflame|328\/360
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534
+|-damage|p1a: Alomomola|468\/534|[from] Stealth Rock
+|-activate|p1a: Alomomola|move: Sticky Web
+|-unboost|p1a: Alomomola|spe|1
+|
+|-heal|p2a: Talonflame|350\/360|[from] item: Leftovers
+|-heal|p1a: Alomomola|501\/534|[from] item: Leftovers
+|turn|47
+|
+|move|p2a: Talonflame|Brave Bird|p1a: Alomomola
+|-damage|p1a: Alomomola|273\/534
+|-damage|p2a: Talonflame|275\/360|[from] recoil|[of] p1a: Alomomola
+|move|p1a: Alomomola|Toxic|p2a: Talonflame
+|-status|p2a: Talonflame|tox
+|
+|-heal|p2a: Talonflame|297\/360 tox|[from] item: Leftovers
+|-heal|p1a: Alomomola|306\/534|[from] item: Leftovers
+|-damage|p2a: Talonflame|275\/360 tox|[from] psn
+|turn|48
+|chat|Shami15|there is no WAY!
+|chat|Shami15|how can 
+|chat|Shami15|......................
+|chat|Shami15|nOOOOOOOOOOOOOOOOOOOOOO]
+|
+|switch|p2a: Lanturn|Lanturn, F, shiny|297\/454
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-heal|p1a: Alomomola|339\/534|[from] item: Leftovers
+|turn|49
+|chat|Shami15|IT WONT DIE
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Lanturn|Volt Switch|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-heal|p1a: Alomomola|534\/534|[from] move: Wish|[wisher] Alomomola
+|turn|50
+|
+|switch|p1a: Scizor|Scizor, M|246\/344
+|-activate|p1a: Scizor|move: Sticky Web
+|-unboost|p1a: Scizor|spe|1
+|-damage|p1a: Scizor|203\/344|[from] Stealth Rock
+|move|p2a: Lanturn|Volt Switch|p1a: Scizor
+|-damage|p1a: Scizor|86\/344
+|
+|switch|p2a: Talonflame|Talonflame, F|275\/360 tox
+|
+|-heal|p2a: Talonflame|297\/360 tox|[from] item: Leftovers
+|-damage|p2a: Talonflame|275\/360 tox|[from] psn
+|turn|51
+|
+|move|p2a: Talonflame|Flare Blitz|p1a: Scizor
+|-supereffective|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|-damage|p2a: Talonflame|247\/360 tox|[from] recoil|[of] p1a: Scizor
+|faint|p1a: Scizor
+|
+|-heal|p2a: Talonflame|269\/360 tox|[from] item: Leftovers
+|-damage|p2a: Talonflame|225\/360 tox|[from] psn
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534
+|-damage|p1a: Alomomola|468\/534|[from] Stealth Rock
+|-activate|p1a: Alomomola|move: Sticky Web
+|-unboost|p1a: Alomomola|spe|1
+|turn|52
+|
+|move|p2a: Talonflame|Roost|p2a: Talonflame
+|-heal|p2a: Talonflame|360\/360 tox
+|move|p1a: Alomomola|Toxic|p2a: Talonflame
+|-fail|p2a: Talonflame|tox
+|
+|-heal|p1a: Alomomola|501\/534|[from] item: Leftovers
+|-damage|p2a: Talonflame|294\/360 tox|[from] psn
+|turn|53
+|
+|switch|p2a: Lanturn|Lanturn, F, shiny|297\/454
+|move|p1a: Alomomola|Toxic|p2a: Lanturn
+|-status|p2a: Lanturn|tox
+|
+|-heal|p1a: Alomomola|534\/534|[from] item: Leftovers
+|-damage|p2a: Lanturn|269\/454 tox|[from] psn
+|turn|54
+|chat|Shami15|can u attack?
+|chat|Shami15|OH MYYYYY
+|
+|move|p2a: Lanturn|Volt Switch|p1a: Alomomola
+|-supereffective|p1a: Alomomola
+|-damage|p1a: Alomomola|150\/534
+|
+|switch|p2a: Talonflame|Talonflame, F|294\/360 tox
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-heal|p2a: Talonflame|316\/360 tox|[from] item: Leftovers
+|-heal|p1a: Alomomola|183\/534|[from] item: Leftovers
+|-damage|p2a: Talonflame|294\/360 tox|[from] psn
+|turn|55
+|
+|switch|p2a: Lanturn|Lanturn, F, shiny|269\/454 tox
+|move|p1a: Alomomola|Scald|p2a: Lanturn
+|-resisted|p2a: Lanturn
+|-damage|p2a: Lanturn|240\/454 tox
+|
+|-heal|p1a: Alomomola|450\/534|[from] move: Wish|[wisher] Alomomola
+|-heal|p1a: Alomomola|483\/534|[from] item: Leftovers
+|-damage|p2a: Lanturn|212\/454 tox|[from] psn
+|turn|56
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Lanturn|Volt Switch|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-heal|p1a: Alomomola|516\/534|[from] item: Leftovers
+|-damage|p2a: Lanturn|156\/454 tox|[from] psn
+|turn|57
+|
+|move|p2a: Lanturn|Volt Switch|p1a: Alomomola
+|-crit|p1a: Alomomola
+|-supereffective|p1a: Alomomola
+|-damage|p1a: Alomomola|10\/534
+|chat|Shami15|:O
+|
+|switch|p2a: Talonflame|Talonflame, F|294\/360 tox
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-heal|p2a: Talonflame|316\/360 tox|[from] item: Leftovers
+|-heal|p1a: Alomomola|43\/534|[from] item: Leftovers
+|-damage|p2a: Talonflame|294\/360 tox|[from] psn
+|turn|58
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Talonflame|Brave Bird|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-heal|p1a: Alomomola|310\/534|[from] move: Wish|[wisher] Alomomola
+|-heal|p2a: Talonflame|316\/360 tox|[from] item: Leftovers
+|-heal|p1a: Alomomola|343\/534|[from] item: Leftovers
+|-damage|p2a: Talonflame|272\/360 tox|[from] psn
+|turn|59
+|chat|Shami15|IT WONT DIE!
+|
+|switch|p2a: Lanturn|Lanturn, F, shiny|156\/454 tox
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-heal|p1a: Alomomola|376\/534|[from] item: Leftovers
+|-damage|p2a: Lanturn|128\/454 tox|[from] psn
+|turn|60
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Lanturn|Volt Switch|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-heal|p1a: Alomomola|534\/534|[from] move: Wish|[wisher] Alomomola
+|-damage|p2a: Lanturn|72\/454 tox|[from] psn
+|turn|61
+|
+|move|p2a: Lanturn|Volt Switch|p1a: Alomomola
+|-supereffective|p1a: Alomomola
+|-damage|p1a: Alomomola|180\/534
+|
+|switch|p2a: Talonflame|Talonflame, F|272\/360 tox
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-heal|p2a: Talonflame|294\/360 tox|[from] item: Leftovers
+|-heal|p1a: Alomomola|213\/534|[from] item: Leftovers
+|-damage|p2a: Talonflame|272\/360 tox|[from] psn
+|turn|62
+|
+|switch|p2a: Lanturn|Lanturn, F, shiny|72\/454 tox
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-fail|p1a: Alomomola
+|
+|-heal|p1a: Alomomola|480\/534|[from] move: Wish|[wisher] Alomomola
+|-heal|p1a: Alomomola|513\/534|[from] item: Leftovers
+|-damage|p2a: Lanturn|44\/454 tox|[from] psn
+|turn|63
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Lanturn|Volt Switch|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-heal|p1a: Alomomola|534\/534|[from] item: Leftovers
+|-damage|p2a: Lanturn|0 fnt|[from] psn
+|faint|p2a: Lanturn
+|chat|Shami15|DEWGJVDSFRTBWNMJW5
+|chat|Shami15|HHBTEAJGBTJLER HBFD 
+|chat|Shami15|wrsbetfdj vabsrwthb qefatrh4b
+|chat|Shami15|LIFE IS NOT FAIR
+|-message|Shami15 forfeited.
+|
+|win|elzy
+|raw|Ladder updating...
+|leave|Shami15
+|player|p2
+|raw|elzy's rating: 1208 &rarr; <strong>1230<\/strong><br \/>(+22 for winning)
+|raw|Shami15's rating: 1167 &rarr; <strong>1145<\/strong><br \/>(-22 for losing)

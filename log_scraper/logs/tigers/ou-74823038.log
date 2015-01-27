@@ -1,0 +1,472 @@
+|join|Kwiick
+|join|tigers
+|player|p1|Kwiick|264
+|player|p2|tigers|93
+|gametype|singles
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Trevenant, M, shiny
+|poke|p1|Blissey, F
+|poke|p1|Heatran, F
+|poke|p1|Mandibuzz, F
+|poke|p1|Aegislash, F
+|poke|p1|Gyarados, M
+|poke|p2|Celebi
+|poke|p2|Forretress, M
+|poke|p2|Chansey, F
+|poke|p2|Jellicent, M
+|poke|p2|Heatran, M
+|poke|p2|Keldeo-Resolute
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Mandibuzz|Mandibuzz, F|424\/424
+|switch|p2a: Jellicent|Jellicent, M|404\/404
+|turn|1
+|callback|decision
+|
+|move|p1a: Mandibuzz|Knock Off|p2a: Jellicent
+|-supereffective|p2a: Jellicent
+|-damage|p2a: Jellicent|246\/404
+|-enditem|p2a: Jellicent|Leftovers|[from] move: Knock Off|[of] p1a: Mandibuzz
+|move|p2a: Jellicent|Will-O-Wisp|p1a: Mandibuzz
+|-status|p1a: Mandibuzz|brn
+|
+|-damage|p1a: Mandibuzz|371\/424 brn|[from] brn
+|turn|2
+|callback|decision
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|switch|p2a: Forretress|Forretress, M|354\/354
+|
+|turn|3
+|callback|decision
+|
+|move|p1a: Blissey|Aromatherapy|p1a: Blissey
+|-cureteam|p1a: Blissey|[from] move: Aromatherapy
+|move|p2a: Forretress|Spikes|p1a: Blissey
+|-sidestart|p1: Kwiick|Spikes
+|
+|turn|4
+|callback|decision
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|371\/424
+|move|p2a: Forretress|Spikes|p1a: Mandibuzz
+|-sidestart|p1: Kwiick|Spikes
+|
+|-heal|p1a: Mandibuzz|397\/424|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p1a: Mandibuzz|Defog|p2a: Forretress
+|-unboost|p2a: Forretress|evasion|1
+|-sideend|p1: Kwiick|Spikes|[from] move: Defog|[of] p1a: Mandibuzz
+|move|p2a: Forretress|Toxic|p1a: Mandibuzz
+|-status|p1a: Mandibuzz|tox
+|
+|-heal|p1a: Mandibuzz|423\/424 tox|[from] item: Leftovers
+|-damage|p1a: Mandibuzz|397\/424 tox|[from] psn
+|turn|6
+|callback|decision
+|
+|switch|p2a: Jellicent|Jellicent, M|246\/404
+|move|p1a: Mandibuzz|Knock Off|p2a: Jellicent
+|-supereffective|p2a: Jellicent
+|-damage|p2a: Jellicent|126\/404
+|
+|-heal|p1a: Mandibuzz|423\/424 tox|[from] item: Leftovers
+|-damage|p1a: Mandibuzz|371\/424 tox|[from] psn
+|turn|7
+|callback|decision
+|
+|move|p1a: Mandibuzz|Foul Play|p2a: Jellicent
+|-supereffective|p2a: Jellicent
+|-damage|p2a: Jellicent|24\/404
+|move|p2a: Jellicent|Recover|p2a: Jellicent
+|-heal|p2a: Jellicent|226\/404
+|
+|-heal|p1a: Mandibuzz|397\/424 tox|[from] item: Leftovers
+|-damage|p1a: Mandibuzz|319\/424 tox|[from] psn
+|turn|8
+|callback|decision
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|move|p2a: Jellicent|Recover|p2a: Jellicent
+|-heal|p2a: Jellicent|404\/404
+|
+|turn|9
+|callback|decision
+|
+|move|p2a: Jellicent|Taunt|p1a: Blissey
+|-start|p1a: Blissey|move: Taunt
+|cant|p1a: Blissey|move: Taunt|Aromatherapy
+|
+|turn|10
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|386\/386
+|move|p2a: Jellicent|Scald|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|258\/386
+|
+|-heal|p1a: Heatran|282\/386|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|move|p1a: Heatran|Toxic|p2a: Chansey
+|-status|p2a: Chansey|tox
+|
+|-heal|p1a: Heatran|306\/386|[from] item: Leftovers
+|-damage|p2a: Chansey|660\/704 tox|[from] psn
+|turn|12
+|callback|decision
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|move|p2a: Chansey|Seismic Toss|p1a: Blissey
+|-damage|p1a: Blissey|614\/714
+|
+|-heal|p1a: Blissey|658\/714|[from] item: Leftovers
+|-damage|p2a: Chansey|572\/704 tox|[from] psn
+|turn|13
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, M|386\/386
+|move|p1a: Blissey|Aromatherapy|p1a: Blissey
+|-cureteam|p1a: Blissey|[from] move: Aromatherapy
+|
+|-heal|p1a: Blissey|702\/714|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|319\/424
+|move|p2a: Heatran|Stealth Rock|p1a: Mandibuzz
+|-sidestart|p1: Kwiick|move: Stealth Rock
+|
+|-heal|p1a: Mandibuzz|345\/424|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|switch|p2a: Jellicent|Jellicent, M|404\/404
+|move|p1a: Mandibuzz|Defog|p2a: Jellicent
+|-unboost|p2a: Jellicent|evasion|1
+|-sideend|p1: Kwiick|Stealth Rock|[from] move: Defog|[of] p1a: Mandibuzz
+|
+|-heal|p1a: Mandibuzz|371\/424|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|306\/386
+|move|p2a: Jellicent|Scald|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|186\/386
+|
+|-heal|p1a: Heatran|210\/386|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|switch|p2a: Chansey|Chansey, F|572\/704
+|move|p1a: Heatran|Toxic|p2a: Chansey|[miss]
+|-miss|p1a: Heatran|p2a: Chansey
+|
+|-heal|p1a: Heatran|234\/386|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, F|312\/312
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|704\/704
+|
+|turn|19
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, M|386\/386
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Ball|p2a: Heatran
+|-damage|p2a: Heatran|250\/386
+|
+|-heal|p2a: Heatran|274\/386|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|switch|p1a: Blissey|Blissey, F|702\/714
+|move|p2a: Heatran|Lava Plume|p1a: Blissey
+|-damage|p1a: Blissey|611\/714
+|-status|p1a: Blissey|brn
+|
+|-heal|p2a: Heatran|298\/386|[from] item: Leftovers
+|-heal|p1a: Blissey|655\/714 brn|[from] item: Leftovers
+|-damage|p1a: Blissey|566\/714 brn|[from] brn
+|turn|21
+|callback|decision
+|
+|move|p2a: Heatran|Stealth Rock|p1a: Blissey
+|-sidestart|p1: Kwiick|move: Stealth Rock
+|move|p1a: Blissey|Thunder Wave|p2a: Heatran
+|-status|p2a: Heatran|par
+|
+|-heal|p1a: Blissey|610\/714 brn|[from] item: Leftovers
+|-heal|p2a: Heatran|322\/386 par|[from] item: Leftovers
+|-damage|p1a: Blissey|521\/714 brn|[from] brn
+|turn|22
+|callback|decision
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|371\/424
+|-damage|p1a: Mandibuzz|265\/424|[from] Stealth Rock
+|move|p2a: Heatran|Roar|p1a: Mandibuzz
+|drag|p1a: Trevenant|Trevenant, M, shiny|374\/374
+|-damage|p1a: Trevenant|328\/374|[from] Stealth Rock
+|
+|-heal|p2a: Heatran|346\/386 par|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p1a: Trevenant|Substitute|p1a: Trevenant
+|-start|p1a: Trevenant|Substitute
+|-damage|p1a: Trevenant|235\/374
+|move|p2a: Heatran|Lava Plume|p1a: Trevenant
+|-supereffective|p1a: Trevenant
+|-end|p1a: Trevenant|Substitute
+|
+|-heal|p2a: Heatran|370\/386 par|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p1a: Trevenant|Substitute|p1a: Trevenant
+|-start|p1a: Trevenant|Substitute
+|-damage|p1a: Trevenant|142\/374
+|-enditem|p1a: Trevenant|Sitrus Berry|[eat]
+|-heal|p1a: Trevenant|235\/374|[from] item: Sitrus Berry
+|cant|p2a: Heatran|par
+|
+|-heal|p2a: Heatran|386\/386 par|[from] item: Leftovers
+|-item|p1a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|turn|25
+|callback|decision
+|
+|move|p1a: Trevenant|Leech Seed|p2a: Heatran
+|-start|p2a: Heatran|move: Leech Seed
+|move|p2a: Heatran|Roar|p1a: Trevenant
+|drag|p1a: Heatran|Heatran, F|234\/386
+|-damage|p1a: Heatran|186\/386|[from] Stealth Rock
+|
+|-heal|p1a: Heatran|210\/386|[from] item: Leftovers
+|-damage|p2a: Heatran|338\/386 par|[from] Leech Seed|[of] p1a: Heatran
+|-heal|p1a: Heatran|258\/386|[silent]
+|turn|26
+|callback|decision
+|join|julie bally
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|265\/424
+|-damage|p1a: Mandibuzz|159\/424|[from] Stealth Rock
+|switch|p2a: Chansey|Chansey, F|704\/704
+|
+|-heal|p1a: Mandibuzz|185\/424|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|switch|p2a: Jellicent|Jellicent, M|404\/404
+|move|p1a: Mandibuzz|Defog|p2a: Jellicent
+|-unboost|p2a: Jellicent|evasion|1
+|-sideend|p1: Kwiick|Stealth Rock|[from] move: Defog|[of] p1a: Mandibuzz
+|
+|-heal|p1a: Mandibuzz|211\/424|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|move|p1a: Mandibuzz|Roost|p1a: Mandibuzz
+|-heal|p1a: Mandibuzz|423\/424
+|move|p2a: Jellicent|Scald|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|344\/424
+|
+|-heal|p1a: Mandibuzz|370\/424|[from] item: Leftovers
+|turn|29
+|callback|decision
+|leave|julie bally
+|
+|switch|p1a: Blissey|Blissey, F|521\/714
+|move|p2a: Jellicent|Scald|p1a: Blissey
+|-damage|p1a: Blissey|460\/714
+|
+|-heal|p1a: Blissey|504\/714|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|move|p2a: Jellicent|Taunt|p1a: Blissey
+|-start|p1a: Blissey|move: Taunt
+|cant|p1a: Blissey|move: Taunt|Thunder Wave
+|
+|-heal|p1a: Blissey|548\/714|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|switch|p1a: Trevenant|Trevenant, M, shiny|235\/374
+|move|p2a: Jellicent|Scald|p1a: Trevenant
+|-resisted|p1a: Trevenant
+|-damage|p1a: Trevenant|200\/374
+|-status|p1a: Trevenant|brn
+|
+|-damage|p1a: Trevenant|154\/374 brn|[from] brn
+|-enditem|p1a: Trevenant|Sitrus Berry|[eat]
+|-heal|p1a: Trevenant|247\/374 brn|[from] item: Sitrus Berry
+|turn|32
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, F|312\/312
+|move|p2a: Jellicent|Taunt|p1a: Aegislash
+|-start|p1a: Aegislash|move: Taunt
+|
+|turn|33
+|callback|decision
+|
+|move|p2a: Jellicent|Will-O-Wisp|p1a: Aegislash|[miss]
+|-miss|p2a: Jellicent|p1a: Aegislash
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Ball|p2a: Jellicent
+|-supereffective|p2a: Jellicent
+|-damage|p2a: Jellicent|120\/404
+|
+|turn|34
+|callback|decision
+|
+|move|p1a: Aegislash|Shadow Sneak|p2a: Jellicent
+|-supereffective|p2a: Jellicent
+|-damage|p2a: Jellicent|0 fnt
+|faint|p2a: Jellicent
+|
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, M|338\/386 par
+|turn|35
+|callback|decision
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|370\/424
+|move|p2a: Heatran|Stealth Rock|p1a: Mandibuzz
+|-sidestart|p1: Kwiick|move: Stealth Rock
+|
+|-heal|p1a: Mandibuzz|396\/424|[from] item: Leftovers
+|-heal|p2a: Heatran|362\/386 par|[from] item: Leftovers
+|turn|36
+|callback|decision
+|
+|move|p1a: Mandibuzz|Defog|p2a: Heatran
+|-unboost|p2a: Heatran|evasion|1
+|-sideend|p1: Kwiick|Stealth Rock|[from] move: Defog|[of] p1a: Mandibuzz
+|move|p2a: Heatran|Toxic|p1a: Mandibuzz
+|-status|p1a: Mandibuzz|tox
+|
+|-heal|p1a: Mandibuzz|422\/424 tox|[from] item: Leftovers
+|-heal|p2a: Heatran|386\/386 par|[from] item: Leftovers
+|-damage|p1a: Mandibuzz|396\/424 tox|[from] psn
+|turn|37
+|callback|decision
+|
+|move|p1a: Mandibuzz|Knock Off|p2a: Heatran
+|-damage|p2a: Heatran|316\/386 par
+|-enditem|p2a: Heatran|Leftovers|[from] move: Knock Off|[of] p1a: Mandibuzz
+|move|p2a: Heatran|Stealth Rock|p1a: Mandibuzz
+|-sidestart|p1: Kwiick|move: Stealth Rock
+|
+|-heal|p1a: Mandibuzz|422\/424 tox|[from] item: Leftovers
+|-damage|p1a: Mandibuzz|370\/424 tox|[from] psn
+|turn|38
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|258\/386
+|-damage|p1a: Heatran|210\/386|[from] Stealth Rock
+|move|p2a: Heatran|Lava Plume|p1a: Heatran
+|-start|p1a: Heatran|ability: Flash Fire
+|
+|-heal|p1a: Heatran|234\/386|[from] item: Leftovers
+|turn|39
+|callback|decision
+|join|Thunder631
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|move|p1a: Heatran|Stealth Rock|p2a: Chansey
+|-sidestart|p2: tigers|move: Stealth Rock
+|
+|-heal|p1a: Heatran|258\/386|[from] item: Leftovers
+|turn|40
+|callback|decision
+|join|tyc45
+|leave|tyc45
+|chat|Thunder631|kwiick
+|chat|Kwiick|y?
+|
+|switch|p1a: Blissey|Blissey, F|548\/714
+|-damage|p1a: Blissey|459\/714|[from] Stealth Rock
+|switch|p2a: Peter Pan|Celebi|404\/404
+|-damage|p2a: Peter Pan|354\/404|[from] Stealth Rock
+|
+|-heal|p2a: Peter Pan|379\/404|[from] item: Leftovers
+|-heal|p1a: Blissey|503\/714|[from] item: Leftovers
+|turn|41
+|callback|decision
+|chat|Thunder631|la team bisharp meme avec rapid spin elle marche <3
+|chat|Kwiick|je sais ^^
+|
+|move|p2a: Peter Pan|U-turn|p1a: Blissey
+|-damage|p1a: Blissey|421\/714
+|callback|decision
+|chat|Thunder631|enfin jveux dire elle dÃ©pend pas de defog ;)
+|
+|switch|p2a: Forretress|Forretress, M|354\/354
+|-damage|p2a: Forretress|310\/354|[from] Stealth Rock
+|move|p1a: Blissey|Aromatherapy|p1a: Blissey
+|-cureteam|p1a: Blissey|[from] move: Aromatherapy
+|
+|-heal|p1a: Blissey|465\/714|[from] item: Leftovers
+|-heal|p2a: Forretress|332\/354|[from] item: Leftovers
+|turn|42
+|callback|decision
+|join|tyc45
+|
+|switch|p1a: Aegislash|Aegislash, F|312\/312
+|-damage|p1a: Aegislash|293\/312|[from] Stealth Rock
+|move|p2a: Forretress|Toxic|p1a: Aegislash
+|-fail|p1a: Aegislash
+|
+|-heal|p1a: Aegislash|312\/312|[from] item: Leftovers
+|-heal|p2a: Forretress|354\/354|[from] item: Leftovers
+|turn|43
+|callback|decision
+|leave|Thunder631
+|
+|switch|p2a: Heatran|Heatran, M|316\/386 par
+|-damage|p2a: Heatran|268\/386 par|[from] Stealth Rock
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Ball|p2a: Heatran
+|-damage|p2a: Heatran|145\/386 par
+|
+|turn|44
+|callback|decision
+|join|Thunder631
+|
+|switch|p1a: Heatran|Heatran, F|258\/386
+|-damage|p1a: Heatran|210\/386|[from] Stealth Rock
+|move|p2a: Heatran|Lava Plume|p1a: Heatran
+|-start|p1a: Heatran|ability: Flash Fire
+|
+|-heal|p1a: Heatran|234\/386|[from] item: Leftovers
+|turn|45
+|callback|decision
+|leave|Thunder631
+|-message|tigers forfeited.
+|
+|win|Kwiick
+|raw|Ladder updating...
+|raw|Kwiick's rating: 2148 &rarr; <strong>2171<\/strong><br \/>(+23 for winning)
+|raw|tigers's rating: 2256 &rarr; <strong>2249<\/strong><br \/>(-7 for losing)
+|leave|tigers
+|player|p2
+|leave|tyc45

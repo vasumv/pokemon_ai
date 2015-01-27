@@ -1,0 +1,177 @@
+|join|PokeHD
+|join|patrick2054
+|player|p1|PokeHD|2
+|player|p2|patrick2054|269
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Sableye, M
+|poke|p1|Excadrill, F
+|poke|p1|Manaphy
+|poke|p1|Gliscor, M
+|poke|p1|Talonflame, M
+|poke|p1|Clefable, M
+|poke|p2|Thundurus-Therian, M
+|poke|p2|Kabutops, M
+|poke|p2|Sceptile, F
+|poke|p2|Kyurem-Black
+|poke|p2|Politoed, M
+|poke|p2|Bisharp, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Sableye|Sableye, M|303\/303
+|switch|p2a: Politoed|Politoed, M|321\/321
+|-weather|RainDance
+|turn|1
+|
+|move|p2a: Politoed|Scald|p1a: Sableye
+|-damage|p1a: Sableye|131\/303
+|move|p1a: Sableye|Knock Off|p2a: Politoed
+|-crit|p2a: Politoed
+|-damage|p2a: Politoed|153\/321
+|-enditem|p2a: Politoed|Damp Rock|[from] move: Knock Off|[of] p1a: Sableye
+|
+|-weather|RainDance|[upkeep]
+|turn|2
+|
+|switch|p2a: Kabutops|Kabutops, M|261\/261
+|switch|p1a: Manaphy|Manaphy|403\/403
+|
+|-weather|RainDance|[upkeep]
+|turn|3
+|
+|move|p2a: Kabutops|Stone Edge|p1a: Manaphy
+|-damage|p1a: Manaphy|164\/403
+|-damage|p2a: Kabutops|235\/261|[from] item: Life Orb
+|move|p1a: Manaphy|Scald|p2a: Kabutops
+|-damage|p2a: Kabutops|49\/261
+|-status|p2a: Kabutops|brn
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Manaphy|189\/403|[from] item: Leftovers
+|-damage|p2a: Kabutops|17\/261 brn|[from] brn
+|turn|4
+|
+|move|p2a: Kabutops|Knock Off|p1a: Manaphy
+|-damage|p1a: Manaphy|108\/403
+|-enditem|p1a: Manaphy|Leftovers|[from] move: Knock Off|[of] p2a: Kabutops
+|-damage|p2a: Kabutops|0 fnt|[from] item: Life Orb
+|faint|p2a: Kabutops
+|move|p1a: Manaphy|Rest|p1a: Manaphy
+|-status|p1a: Manaphy|slp
+|-heal|p1a: Manaphy|403\/403 slp|[silent]
+|-status|p1a: Manaphy|slp|[from] move: Rest
+|
+|-weather|RainDance|[upkeep]
+|-curestatus|p1a: Manaphy|slp
+|
+|switch|p2a: Sceptile|Sceptile, F|281\/281
+|turn|5
+|
+|switch|p1a: Clefable|Clefable, M|393\/393
+|detailschange|p2a: Sceptile|Sceptile-Mega, F
+|message|Sceptile has Mega Evolved into Mega Sceptile!
+|move|p2a: Sceptile|Substitute|p2a: Sceptile
+|-start|p2a: Sceptile|Substitute
+|-damage|p2a: Sceptile|211\/281
+|
+|-weather|RainDance|[upkeep]
+|turn|6
+|
+|move|p2a: Sceptile|Giga Drain|p1a: Clefable
+|-damage|p1a: Clefable|213\/393
+|-heal|p2a: Sceptile|281\/281|[from] drain|[of] p1a: Clefable
+|move|p1a: Clefable|Moonblast|p2a: Sceptile
+|-supereffective|p2a: Sceptile
+|-end|p2a: Sceptile|Substitute
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Clefable|237\/393|[from] item: Leftovers
+|turn|7
+|
+|move|p2a: Sceptile|Giga Drain|p1a: Clefable
+|-damage|p1a: Clefable|65\/393
+|move|p1a: Clefable|Moonblast|p2a: Sceptile
+|-supereffective|p2a: Sceptile
+|-damage|p2a: Sceptile|33\/281
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Clefable|89\/393|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Talonflame|Talonflame, M|345\/345
+|move|p2a: Sceptile|Giga Drain|p1a: Talonflame
+|-resisted|p1a: Talonflame
+|-damage|p1a: Talonflame|294\/345
+|-heal|p2a: Sceptile|59\/281|[from] drain|[of] p1a: Talonflame
+|
+|-weather|none
+|-heal|p1a: Talonflame|315\/345|[from] item: Leftovers
+|turn|9
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Sceptile
+|-crit|p2a: Sceptile
+|-supereffective|p2a: Sceptile
+|-damage|p2a: Sceptile|0 fnt
+|-damage|p1a: Talonflame|296\/345|[from] recoil|[of] p2a: Sceptile
+|faint|p2a: Sceptile
+|
+|-heal|p1a: Talonflame|317\/345|[from] item: Leftovers
+|
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M|299\/299
+|turn|10
+|
+|switch|p1a: Excadrill|Excadrill, F|424\/424
+|-ability|p1a: Excadrill|Mold Breaker
+|move|p2a: Thundurus-Therian|Focus Blast|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-damage|p1a: Excadrill|124\/424
+|
+|-heal|p1a: Excadrill|150\/424|[from] item: Leftovers
+|turn|11
+|
+|switch|p1a: Sableye|Sableye, M|131\/303
+|move|p2a: Thundurus-Therian|Focus Blast|p1a: Sableye
+|-immune|p1a: Sableye|[msg]
+|
+|turn|12
+|
+|switch|p2a: Politoed|Politoed, M|153\/321
+|-weather|RainDance
+|detailschange|p1a: Sableye|Sableye-Mega, M
+|message|Sableye has Mega Evolved into Mega Sableye!
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|283\/303
+|
+|-weather|RainDance|[upkeep]
+|turn|13
+|
+|switch|p1a: Manaphy|Manaphy|403\/403
+|move|p2a: Politoed|Scald|p1a: Manaphy
+|-resisted|p1a: Manaphy
+|-damage|p1a: Manaphy|333\/403
+|-status|p1a: Manaphy|brn
+|
+|-weather|RainDance|[upkeep]
+|-curestatus|p1a: Manaphy|brn
+|turn|14
+|-message|patrick2054 forfeited.
+|
+|win|PokeHD
+|raw|Ladder updating...
+|leave|patrick2054
+|player|p2
+|raw|PokeHD's rating: 1379 &rarr; <strong>1396<\/strong><br \/>(+17 for winning)
+|raw|patrick2054's rating: 1330 &rarr; <strong>1313<\/strong><br \/>(-17 for losing)

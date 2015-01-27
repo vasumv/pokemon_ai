@@ -1,0 +1,298 @@
+|join|Coatay
+|join|adds_arraassh
+|player|p1|Coatay|102
+|player|p2|adds_arraassh|1
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Crobat, M
+|poke|p1|Breloom, M
+|poke|p1|Terrakion
+|poke|p1|Ferrothorn, M
+|poke|p1|Rotom-Wash
+|poke|p1|Dragonite, F
+|poke|p2|Landorus, M
+|poke|p2|Latias, F
+|poke|p2|Tyranitar, M
+|poke|p2|Rotom-Wash
+|poke|p2|Terrakion
+|poke|p2|Scizor, M
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Rotom-W|Rotom-Wash| (48\/48)
+|switch|p2a: Scizor|Scizor, M| (48\/48)
+|turn|1
+|callback|decision
+|
+|switch|p2a: Latias|Latias, F| (48\/48)
+|move|p1a: Rotom-W|Hidden Power|p2a: Latias
+|-resisted|p2a: Latias
+|-damage|p2a: Latias|10 (43\/48)
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Latias|Draco Meteor|p1a: Rotom-W
+|-damage|p1a: Rotom-W|100 (0\/48 fnt)
+|-unboost|p2a: Latias|spa|2
+|-damage|p2a: Latias|10 (39\/48)|[from] item: Life Orb
+|faint|p1a: Rotom-W
+|
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M| (48\/48)
+|turn|3
+|callback|decision
+|join|DeerAntlerSpray
+|
+|switch|p2a: Landorus|Landorus, M| (48\/48)
+|move|p1a: Ferrothorn|Thunder Wave|p2a: Landorus
+|-immune|p2a: Landorus|[msg]
+|
+|turn|4
+|callback|decision
+|
+|move|p2a: Landorus|Focus Blast|p1a: Ferrothorn|[miss]
+|-miss|p2a: Landorus|p1a: Ferrothorn
+|move|p1a: Ferrothorn|Leech Seed|p2a: Landorus
+|-start|p2a: Landorus|move: Leech Seed
+|
+|-damage|p2a: Landorus|12 (42\/48)|[from] Leech Seed|[of] p1a: Ferrothorn
+|turn|5
+|callback|decision
+|join|Xerxes
+|
+|switch|p1a: Crobat|Crobat, M| (48\/48)
+|move|p2a: Landorus|Hidden Power|p1a: Crobat
+|-supereffective|p1a: Crobat
+|-damage|p1a: Crobat|70 (14\/48)
+|-damage|p2a: Landorus|10 (37\/48)|[from] item: Life Orb
+|
+|-heal|p1a: Crobat|6 (17\/48)|[from] item: Black Sludge
+|-damage|p2a: Landorus|12 (31\/48)|[from] Leech Seed|[of] p1a: Crobat
+|-heal|p1a: Crobat|10 (22\/48)|[silent]
+|turn|6
+|callback|decision
+|join|Gubs
+|
+|switch|p2a: Rotom-W|Rotom-Wash| (48\/48)
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-heal|p1a: Crobat|50 (46\/48)
+|
+|-heal|p1a: Crobat|4 (48\/48)|[from] item: Black Sludge
+|turn|7
+|callback|decision
+|
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-fail|p1a: Crobat
+|move|p2a: Rotom-W|Volt Switch|p1a: Crobat
+|-supereffective|p1a: Crobat
+|-damage|p1a: Crobat|52 (23\/48)
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M| (48\/48)
+|
+|-heal|p1a: Crobat|6 (26\/48)|[from] item: Black Sludge
+|turn|8
+|callback|decision
+|
+|move|p1a: Crobat|Taunt|p2a: Scizor
+|-start|p2a: Scizor|move: Taunt
+|move|p2a: Scizor|U-turn|p1a: Crobat
+|-resisted|p1a: Crobat
+|-damage|p1a: Crobat|16 (18\/48)
+|callback|decision
+|
+|switch|p2a: Terrakion|Terrakion| (48\/48)
+|
+|-heal|p1a: Crobat|6 (21\/48)|[from] item: Black Sludge
+|turn|9
+|callback|decision
+|
+|move|p2a: Terrakion|Rock Slide|p1a: Crobat
+|-supereffective|p1a: Crobat
+|-damage|p1a: Crobat|43 (0\/48 fnt)
+|faint|p1a: Crobat
+|
+|callback|decision
+|
+|switch|p1a: Breloom|Breloom, M| (48\/48)
+|turn|10
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, M| (48\/48)
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Tyranitar
+|move|p1a: Breloom|Bullet Seed|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|31 (33\/48)
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|35 (16\/48)
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|33 (0\/48 fnt)
+|-hitcount|p2a: Tyranitar|3
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Breloom|6 (45\/48)|[from] sandstorm
+|-heal|p1a: Breloom|6 (48\/48)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Latias|Latias, F| (39\/48)
+|turn|11
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M| (48\/48)
+|move|p2a: Latias|Hidden Power|p1a: Ferrothorn
+|-supereffective|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|77 (11\/48)
+|-damage|p2a: Latias|10 (34\/48)|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|6 (31\/48)|[from] sandstorm
+|-heal|p1a: Ferrothorn|6 (14\/48)|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p1a: Terrakion|Terrakion| (48\/48)
+|move|p2a: Latias|Hidden Power|p1a: Terrakion
+|-resisted|p1a: Terrakion
+|-damage|p1a: Terrakion|10 (43\/48)
+|-damage|p2a: Latias|10 (26\/48)|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|6 (23\/48)|[from] sandstorm
+|turn|13
+|callback|decision
+|
+|switch|p2a: Terrakion|Terrakion| (48\/48)
+|move|p1a: Terrakion|Stone Edge|p2a: Terrakion
+|-resisted|p2a: Terrakion
+|-damage|p2a: Terrakion|29 (34\/48)
+|
+|-weather|Sandstorm|[upkeep]
+|turn|14
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M| (14\/48)
+|move|p2a: Terrakion|Close Combat|p1a: Ferrothorn
+|-supereffective|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|29 (0\/48 fnt)
+|-damage|p2a: Terrakion|12 (28\/48)|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|-unboost|p2a: Terrakion|def|1
+|-unboost|p2a: Terrakion|spd|1
+|faint|p1a: Ferrothorn
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, F| (48\/48)
+|turn|15
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M| (48\/48)
+|move|p1a: Dragonite|Dragon Dance|p1a: Dragonite
+|-boost|p1a: Dragonite|atk|1
+|-boost|p1a: Dragonite|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Dragonite|6 (45\/48)|[from] sandstorm
+|-heal|p1a: Dragonite|6 (48\/48)|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Dragonite
+|-damage|p1a: Dragonite|25 (36\/48)
+|move|p1a: Dragonite|Earthquake|p2a: Scizor
+|-damage|p2a: Scizor|47 (25\/48)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Dragonite|6 (33\/48)|[from] sandstorm
+|-heal|p1a: Dragonite|6 (36\/48)|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Dragonite
+|-damage|p1a: Dragonite|47 (13\/48)
+|move|p1a: Dragonite|Earthquake|p2a: Scizor
+|-damage|p2a: Scizor|45 (4\/48)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Dragonite|6 (10\/48)|[from] sandstorm
+|-heal|p1a: Dragonite|6 (13\/48)|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Dragonite
+|-damage|p1a: Dragonite|27 (0\/48 fnt)
+|faint|p1a: Dragonite
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Breloom|Breloom, M| (48\/48)
+|turn|19
+|callback|decision
+|
+|move|p1a: Breloom|Mach Punch|p2a: Scizor
+|-damage|p2a: Scizor|8 (0\/48 fnt)
+|faint|p2a: Scizor
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Breloom|6 (45\/48)|[from] sandstorm
+|-heal|p1a: Breloom|6 (48\/48)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Latias|Latias, F| (23\/48)
+|turn|20
+|callback|decision
+|
+|move|p1a: Breloom|Mach Punch|p2a: Latias
+|-resisted|p2a: Latias
+|-damage|p2a: Latias|20 (13\/48)
+|move|p2a: Latias|Draco Meteor|p1a: Breloom
+|-damage|p1a: Breloom|100 (0\/48 fnt)
+|-unboost|p2a: Latias|spa|2
+|-damage|p2a: Latias|10 (8\/48)|[from] item: Life Orb
+|faint|p1a: Breloom
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|6 (5\/48)|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: Terrakion|Terrakion| (43\/48)
+|turn|21
+|callback|decision
+|
+|move|p1a: Terrakion|Stone Edge|p2a: Latias
+|-damage|p2a: Latias|10 (0\/48 fnt)
+|faint|p2a: Latias
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Terrakion|Terrakion| (28\/48)
+|turn|22
+|callback|decision
+|
+|move|p2a: Terrakion|Close Combat|p1a: Terrakion
+|-supereffective|p1a: Terrakion
+|-damage|p1a: Terrakion|89 (0\/48 fnt)
+|-unboost|p2a: Terrakion|def|1
+|-unboost|p2a: Terrakion|spd|1
+|faint|p1a: Terrakion
+|
+|win|adds_arraassh
+|raw|Ladder updating...
+|raw|Coatay's rating: 1735 &rarr; <strong>1733<\/strong><br \/>(-2 for losing)
+|raw|adds_arraassh's rating: 1439 &rarr; <strong>1595<\/strong><br \/>(+156 for winning)
+|leave|Coatay
+|player|p1

@@ -1,0 +1,290 @@
+|join|Repro
+|join|IronGrahn
+|player|p1|Repro|285
+|player|p2|IronGrahn|92
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Diancie
+|poke|p1|Heatran, M
+|poke|p1|Gyarados, F
+|poke|p1|Latios, M
+|poke|p1|Landorus-Therian, M
+|poke|p1|Bisharp, F
+|poke|p2|Azumarill, M
+|poke|p2|Talonflame, F
+|poke|p2|Clefable, F
+|poke|p2|Wobbuffet, F
+|poke|p2|Excadrill, F
+|poke|p2|Metagross
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Heatran|Heatran, M|323\/323
+|switch|p2a: Keith|Excadrill, F|361\/361
+|-ability|p2a: Keith|Mold Breaker
+|-item|p2a: Keith|Air Balloon
+|-item|p1a: Heatran|Air Balloon
+|turn|1
+|
+|move|p2a: Keith|Stealth Rock|p1a: Heatran
+|-sidestart|p1: Repro|move: Stealth Rock
+|move|p1a: Heatran|Fire Blast|p2a: Keith
+|-supereffective|p2a: Keith
+|-damage|p2a: Keith|0 fnt
+|-enditem|p2a: Keith|Air Balloon
+|faint|p2a: Keith
+|
+|
+|switch|p2a: Phoenix|Talonflame, F|297\/297
+|turn|2
+|
+|move|p2a: Phoenix|U-turn|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|308\/323
+|-enditem|p1a: Heatran|Air Balloon
+|
+|switch|p2a: Kiss me|Wobbuffet, F|584\/584
+|move|p1a: Heatran|Stealth Rock|p2a: Kiss me
+|-sidestart|p2: IronGrahn|move: Stealth Rock
+|
+|turn|3
+|
+|move|p1a: Heatran|Taunt|p2a: Kiss me
+|-start|p2a: Kiss me|move: Taunt
+|cant|p2a: Kiss me|move: Taunt|Encore
+|
+|turn|4
+|
+|switch|p2a: X-Face|Metagross|301\/301
+|-damage|p2a: X-Face|283\/301|[from] Stealth Rock
+|move|p1a: Heatran|Toxic|p2a: X-Face
+|-fail|p2a: X-Face
+|
+|turn|5
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-damage|p1a: Landorus-Therian|280\/319|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: X-Face
+|-fail|p2a: X-Face|unboost|[from] ability: Clear Body|[of] p2a: X-Face
+|detailschange|p2a: X-Face|Metagross-Mega
+|-mega|p2a: X-Face|Metagross|Metagrossite
+|move|p2a: X-Face|Earthquake|p1a: Landorus-Therian
+|-immune|p1a: Landorus-Therian|[msg]
+|
+|turn|6
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: X-Face
+|-damage|p2a: X-Face|223\/301
+|
+|switch|p1a: Gyarados|Gyarados, F|353\/353
+|-damage|p1a: Gyarados|265\/353|[from] Stealth Rock
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: X-Face
+|-unboost|p2a: X-Face|atk|1
+|move|p2a: X-Face|Ice Punch|p1a: Gyarados
+|-damage|p1a: Gyarados|169\/353
+|-status|p1a: Gyarados|frz
+|
+|-heal|p1a: Gyarados|191\/353 frz|[from] item: Leftovers
+|turn|7
+|
+|switch|p2a: Kiss me|Wobbuffet, F|584\/584
+|-damage|p2a: Kiss me|511\/584|[from] Stealth Rock
+|switch|p1a: Bisharp|Bisharp, F|289\/289
+|-damage|p1a: Bisharp|271\/289|[from] Stealth Rock
+|
+|-heal|p2a: Kiss me|547\/584|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: Bisharp|Swords Dance|p1a: Bisharp
+|-boost|p1a: Bisharp|atk|2
+|move|p2a: Kiss me|Encore|p1a: Bisharp
+|-start|p1a: Bisharp|Encore
+|
+|-heal|p2a: Kiss me|583\/584|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Barbossa|Azumarill, M|342\/342
+|-damage|p2a: Barbossa|300\/342|[from] Stealth Rock
+|move|p1a: Bisharp|Swords Dance|p1a: Bisharp
+|-boost|p1a: Bisharp|atk|2
+|
+|turn|10
+|
+|switch|p1a: Latios|Latios, M|299\/299
+|-damage|p1a: Latios|262\/299|[from] Stealth Rock
+|move|p2a: Barbossa|Belly Drum|p2a: Barbossa
+|-damage|p2a: Barbossa|129\/342
+|-setboost|p2a: Barbossa|atk|6|[from] move: Belly Drum
+|-enditem|p2a: Barbossa|Sitrus Berry|[eat]
+|-heal|p2a: Barbossa|214\/342|[from] item: Sitrus Berry
+|
+|turn|11
+|
+|move|p2a: Barbossa|Aqua Jet|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|58\/299
+|move|p1a: Latios|Psyshock|p2a: Barbossa
+|-damage|p2a: Barbossa|0 fnt
+|-damage|p1a: Latios|29\/299|[from] item: Life Orb
+|faint|p2a: Barbossa
+|
+|
+|switch|p2a: Phoenix|Talonflame, F|297\/297
+|-damage|p2a: Phoenix|149\/297|[from] Stealth Rock
+|turn|12
+|
+|move|p2a: Phoenix|Tailwind|p2a: Phoenix
+|-sidestart|p2: IronGrahn|move: Tailwind
+|move|p1a: Latios|Draco Meteor|p2a: Phoenix
+|-damage|p2a: Phoenix|0 fnt
+|-unboost|p1a: Latios|spa|2
+|-damage|p1a: Latios|0 fnt|[from] item: Life Orb
+|faint|p2a: Phoenix
+|faint|p1a: Latios
+|
+|
+|switch|p2a: X-Face|Metagross-Mega|223\/301
+|switch|p1a: Heatran|Heatran, M|308\/323
+|-damage|p2a: X-Face|205\/301|[from] Stealth Rock
+|-damage|p1a: Heatran|268\/323|[from] Stealth Rock
+|turn|13
+|
+|switch|p1a: Gyarados|Gyarados, F|191\/353 frz
+|-damage|p1a: Gyarados|103\/353 frz|[from] Stealth Rock
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: X-Face
+|-unboost|p2a: X-Face|atk|1
+|move|p2a: X-Face|Ice Punch|p1a: Gyarados
+|-damage|p1a: Gyarados|3\/353 frz
+|
+|-heal|p1a: Gyarados|25\/353 frz|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: X-Face|Meteor Mash|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-damage|p1a: Gyarados|0 fnt
+|faint|p1a: Gyarados
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|280\/319
+|-damage|p1a: Landorus-Therian|241\/319|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: X-Face
+|-unboost|p2a: X-Face|atk|1
+|turn|15
+|
+|switch|p1a: Bisharp|Bisharp, F|271\/289
+|-damage|p1a: Bisharp|253\/289|[from] Stealth Rock
+|move|p2a: X-Face|Ice Punch|p1a: Bisharp
+|-resisted|p1a: Bisharp
+|-damage|p1a: Bisharp|219\/289
+|
+|-sideend|p2: IronGrahn|move: Tailwind
+|turn|16
+|
+|switch|p2a: Kiss me|Wobbuffet, F|583\/584
+|-damage|p2a: Kiss me|510\/584|[from] Stealth Rock
+|move|p1a: Bisharp|Sucker Punch|p2a: Kiss me
+|-fail|p2a: Kiss me
+|
+|-heal|p2a: Kiss me|546\/584|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Bisharp|Swords Dance|p1a: Bisharp
+|-boost|p1a: Bisharp|atk|2
+|move|p2a: Kiss me|Encore|p1a: Bisharp
+|-start|p1a: Bisharp|Encore
+|
+|-heal|p2a: Kiss me|582\/584|[from] item: Leftovers
+|turn|18
+|
+|switch|p2a: X-Face|Metagross-Mega|205\/301
+|-damage|p2a: X-Face|187\/301|[from] Stealth Rock
+|move|p1a: Bisharp|Swords Dance|p1a: Bisharp
+|-boost|p1a: Bisharp|atk|2
+|
+|turn|19
+|
+|switch|p1a: Heatran|Heatran, M|268\/323
+|-damage|p1a: Heatran|228\/323|[from] Stealth Rock
+|move|p2a: X-Face|Ice Punch|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|198\/323
+|
+|turn|20
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|241\/319
+|-damage|p1a: Landorus-Therian|202\/319|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: X-Face
+|-unboost|p2a: X-Face|atk|1
+|move|p2a: X-Face|Earthquake|p1a: Landorus-Therian
+|-immune|p1a: Landorus-Therian|[msg]
+|
+|turn|21
+|
+|switch|p2a: Fairyheart|Clefable, F|394\/394
+|-damage|p2a: Fairyheart|345\/394|[from] Stealth Rock
+|move|p1a: Landorus-Therian|U-turn|p2a: Fairyheart
+|-resisted|p2a: Fairyheart
+|-damage|p2a: Fairyheart|305\/394
+|
+|switch|p1a: Bisharp|Bisharp, F|219\/289
+|-damage|p1a: Bisharp|201\/289|[from] Stealth Rock
+|
+|-heal|p2a: Fairyheart|329\/394|[from] item: Leftovers
+|turn|22
+|
+|move|p1a: Bisharp|Iron Head|p2a: Fairyheart
+|-supereffective|p2a: Fairyheart
+|-damage|p2a: Fairyheart|63\/394
+|move|p2a: Fairyheart|Moonblast|p1a: Bisharp
+|-damage|p1a: Bisharp|62\/289
+|-unboost|p1a: Bisharp|spa|1
+|-boost|p1a: Bisharp|atk|2|[from] ability: Defiant
+|
+|-heal|p2a: Fairyheart|87\/394|[from] item: Leftovers
+|turn|23
+|c|âIronGrahn|Welp
+|
+|move|p1a: Bisharp|Iron Head|p2a: Fairyheart
+|-supereffective|p2a: Fairyheart
+|-damage|p2a: Fairyheart|0 fnt
+|faint|p2a: Fairyheart
+|
+|
+|switch|p2a: Kiss me|Wobbuffet, F|582\/584
+|-damage|p2a: Kiss me|509\/584|[from] Stealth Rock
+|turn|24
+|
+|move|p1a: Bisharp|Knock Off|p2a: Kiss me
+|-supereffective|p2a: Kiss me
+|-damage|p2a: Kiss me|0 fnt
+|-enditem|p2a: Kiss me|Leftovers|[from] move: Knock Off|[of] p1a: Bisharp
+|faint|p2a: Kiss me
+|
+|c|âIronGrahn|gg
+|
+|switch|p2a: X-Face|Metagross-Mega|187\/301
+|-damage|p2a: X-Face|169\/301|[from] Stealth Rock
+|turn|25
+|c|âRepro|gg
+|
+|move|p1a: Bisharp|Sucker Punch|p2a: X-Face
+|-supereffective|p2a: X-Face
+|-damage|p2a: X-Face|0 fnt
+|faint|p2a: X-Face
+|
+|win|Repro
+|raw|Ladder updating...
+|raw|Repro's rating: 1525 &rarr; <strong>1542<\/strong><br \/>(+17 for winning)
+|raw|IronGrahn's rating: 1473 &rarr; <strong>1456<\/strong><br \/>(-17 for losing)

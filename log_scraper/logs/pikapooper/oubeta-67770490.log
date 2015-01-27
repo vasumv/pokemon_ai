@@ -1,0 +1,358 @@
+|join|pikapooper
+|join|rak1993
+|player|p1|pikapooper|29
+|player|p2|rak1993|1
+|gametype|singles
+|tier|OU (beta)
+|rated
+|clearpoke
+|poke|p1|Medicham, F
+|poke|p1|Scizor, M
+|poke|p1|Rotom-Wash
+|poke|p1|Mamoswine, M
+|poke|p1|Greninja, F
+|poke|p1|Goodra, F
+|poke|p2|Trevenant, M
+|poke|p2|Kangaskhan, F
+|poke|p2|Hydreigon, M
+|poke|p2|Talonflame, F
+|poke|p2|Tyranitar, M
+|poke|p2|Cloyster, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Medicham|Medicham, F|262\/262
+|switch|p2a: Tyranitar|Tyranitar, M|404\/404
+|-weather|Sandstorm
+|turn|1
+|callback|decision
+|
+|switch|p2a: Trevenant|Trevenant, M|374\/374
+|-formechange|p1a: Medicham|Medicham-Mega
+|message|Medicham has Mega Evolved into Mega Medicham!
+|move|p1a: Medicham|Drain Punch|p2a: Trevenant
+|-immune|p2a: Trevenant|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Medicham|246\/262|[from] sandstorm
+|-damage|p2a: Trevenant|351\/374|[from] sandstorm
+|turn|2
+|callback|decision
+|
+|move|p1a: Medicham|Zen Headbutt|p2a: Trevenant
+|-damage|p2a: Trevenant|48\/374
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|141\/374|[from] item: Sitrus Berry
+|cant|p2a: Trevenant|flinch
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Medicham|230\/262|[from] sandstorm
+|-damage|p2a: Trevenant|118\/374|[from] sandstorm
+|turn|3
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, M|404\/404
+|move|p1a: Medicham|Zen Headbutt|p2a: Tyranitar
+|-immune|p2a: Tyranitar|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Medicham|214\/262|[from] sandstorm
+|turn|4
+|callback|decision
+|
+|move|p1a: Medicham|Drain Punch|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-enditem|p2a: Tyranitar|Chople Berry|[eat]
+|-damage|p2a: Tyranitar|0 fnt
+|-heal|p1a: Medicham|262\/262|[from] drain|[of] p2a: Tyranitar
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Medicham|246\/262|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: Talonflame|Talonflame, F|360\/360
+|turn|5
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|296\/296
+|move|p2a: Talonflame|Brave Bird|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|232\/296
+|-damage|p2a: Talonflame|339\/360|[from] recoil|[of] p1a: Rotom-Wash
+|
+|-weather|none
+|-heal|p2a: Talonflame|360\/360|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p2a: Trevenant|Trevenant, M|118\/374
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Trevenant
+|-resisted|p2a: Trevenant
+|-damage|p2a: Trevenant|82\/374
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, M|312\/312
+|
+|-item|p2a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|175\/374|[from] item: Sitrus Berry
+|turn|7
+|callback|decision
+|
+|move|p1a: Scizor|Pursuit|p2a: Trevenant
+|-supereffective|p2a: Trevenant
+|-damage|p2a: Trevenant|0 fnt
+|faint|p2a: Trevenant
+|
+|callback|decision
+|
+|switch|p2a: Hydreigon|Hydreigon, M|325\/325
+|turn|8
+|callback|decision
+|
+|switch|p1a: Goodra|Goodra, F|371\/371
+|move|p2a: Hydreigon|Substitute|p2a: Hydreigon
+|-start|p2a: Hydreigon|Substitute
+|-damage|p2a: Hydreigon|244\/325
+|
+|-heal|p2a: Hydreigon|264\/325|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p2a: Hydreigon|Draco Meteor|p1a: Goodra
+|-supereffective|p1a: Goodra
+|-damage|p1a: Goodra|207\/371
+|-unboost|p2a: Hydreigon|spa|2
+|move|p1a: Goodra|Dragon Pulse|p2a: Hydreigon
+|-supereffective|p2a: Hydreigon
+|-end|p2a: Hydreigon|Substitute
+|
+|-heal|p2a: Hydreigon|284\/325|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p2a: Cloyster|Cloyster, M|242\/242
+|move|p1a: Goodra|Dragon Pulse|p2a: Cloyster
+|-damage|p2a: Cloyster|13\/242
+|
+|turn|11
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|232\/296
+|move|p2a: Cloyster|Icicle Spear|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|217\/296
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|202\/296
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|187\/296
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|173\/296
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|158\/296
+|-hitcount|p1a: Rotom-Wash|5
+|
+|turn|12
+|callback|decision
+|
+|move|p2a: Cloyster|Rock Blast|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|138\/296
+|-damage|p1a: Rotom-Wash|118\/296
+|-damage|p1a: Rotom-Wash|98\/296
+|-damage|p1a: Rotom-Wash|77\/296
+|-damage|p1a: Rotom-Wash|57\/296
+|-hitcount|p1a: Rotom-Wash|5
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Cloyster
+|-supereffective|p2a: Cloyster
+|-damage|p2a: Cloyster|0 fnt
+|faint|p2a: Cloyster
+|callback|decision
+|
+|switch|p1a: Mamoswine|Mamoswine, M|362\/362
+|
+|callback|decision
+|
+|switch|p2a: Kangaskhan|Kangaskhan, F|414\/414
+|turn|13
+|callback|decision
+|
+|-formechange|p2a: Kangaskhan|Kangaskhan-Mega
+|message|Kangaskhan has Mega Evolved into Mega Kangaskhan!
+|move|p1a: Mamoswine|Earthquake|p2a: Kangaskhan
+|-damage|p2a: Kangaskhan|251\/414
+|move|p2a: Kangaskhan|Power-Up Punch|p1a: Mamoswine
+|-supereffective|p1a: Mamoswine
+|-damage|p1a: Mamoswine|246\/362
+|-boost|p2a: Kangaskhan|atk|1
+|-supereffective|p1a: Mamoswine
+|-damage|p1a: Mamoswine|156\/362
+|-boost|p2a: Kangaskhan|atk|1
+|-hitcount|p1a: Mamoswine|2
+|
+|turn|14
+|callback|decision
+|
+|move|p2a: Kangaskhan|Sucker Punch|p1a: Mamoswine
+|-fail|p1a: Mamoswine
+|move|p1a: Mamoswine|Stealth Rock|p2a: Kangaskhan
+|-sidestart|p2: rak1993|move: Stealth Rock
+|
+|turn|15
+|callback|decision
+|
+|move|p1a: Mamoswine|Ice Shard|p2a: Kangaskhan
+|-damage|p2a: Kangaskhan|179\/414
+|move|p2a: Kangaskhan|Power-Up Punch|p1a: Mamoswine
+|-supereffective|p1a: Mamoswine
+|-damage|p1a: Mamoswine|0 fnt
+|-boost|p2a: Kangaskhan|atk|1
+|-hitcount|p1a: Mamoswine|1
+|faint|p1a: Mamoswine
+|
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, M|312\/312
+|turn|16
+|callback|decision
+|
+|move|p2a: Kangaskhan|Sucker Punch|p1a: Scizor
+|-damage|p1a: Scizor|74\/312
+|-damage|p1a: Scizor|0 fnt
+|-hitcount|p1a: Scizor|2
+|faint|p1a: Scizor
+|
+|callback|decision
+|
+|switch|p1a: Medicham|Medicham, F|246\/262
+|-formechange|p1a: Medicham|Medicham-Mega
+|turn|17
+|callback|decision
+|
+|move|p1a: Medicham|Fake Out|p2a: Kangaskhan
+|-damage|p2a: Kangaskhan|88\/414
+|cant|p2a: Kangaskhan|flinch
+|
+|turn|18
+|callback|decision
+|
+|switch|p1a: Greninja|Greninja, F|285\/285
+|move|p2a: Kangaskhan|Return|p1a: Greninja
+|-damage|p1a: Greninja|0 fnt
+|-hitcount|p1a: Greninja|1
+|faint|p1a: Greninja
+|
+|callback|decision
+|
+|switch|p1a: Medicham|Medicham, F|246\/262
+|-formechange|p1a: Medicham|Medicham-Mega
+|turn|19
+|callback|decision
+|
+|switch|p2a: Talonflame|Talonflame, F|360\/360
+|-damage|p2a: Talonflame|180\/360|[from] Stealth Rock
+|move|p1a: Medicham|Fake Out|p2a: Talonflame
+|-damage|p2a: Talonflame|64\/360
+|
+|-heal|p2a: Talonflame|86\/360|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|57\/296
+|move|p2a: Talonflame|Roost|p2a: Talonflame
+|-heal|p2a: Talonflame|266\/360
+|
+|-heal|p2a: Talonflame|288\/360|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p2a: Talonflame|Brave Bird|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|-damage|p2a: Talonflame|269\/360|[from] recoil|[of] p1a: Rotom-Wash
+|faint|p1a: Rotom-Wash
+|
+|-heal|p2a: Talonflame|291\/360|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Medicham|Medicham, F|246\/262
+|-formechange|p1a: Medicham|Medicham-Mega
+|turn|22
+|callback|decision
+|
+|move|p1a: Medicham|Fake Out|p2a: Talonflame
+|-damage|p2a: Talonflame|176\/360
+|cant|p2a: Talonflame|flinch
+|
+|-heal|p2a: Talonflame|198\/360|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|switch|p1a: Goodra|Goodra, F|207\/371
+|move|p2a: Talonflame|Brave Bird|p1a: Goodra
+|-damage|p1a: Goodra|0 fnt
+|-damage|p2a: Talonflame|130\/360|[from] recoil|[of] p1a: Goodra
+|-unboost|p2a: Talonflame|spe|1|[from] ability: Gooey
+|faint|p1a: Goodra
+|
+|-heal|p2a: Talonflame|152\/360|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Medicham|Medicham, F|246\/262
+|-formechange|p1a: Medicham|Medicham-Mega
+|turn|24
+|callback|decision
+|
+|move|p1a: Medicham|Fake Out|p2a: Talonflame
+|-damage|p2a: Talonflame|29\/360
+|cant|p2a: Talonflame|flinch
+|
+|-heal|p2a: Talonflame|51\/360|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p1a: Medicham|Bullet Punch|p2a: Talonflame
+|-resisted|p2a: Talonflame
+|-damage|p2a: Talonflame|0 fnt
+|faint|p2a: Talonflame
+|
+|callback|decision
+|
+|switch|p2a: Hydreigon|Hydreigon, M|284\/325
+|-damage|p2a: Hydreigon|244\/325|[from] Stealth Rock
+|turn|26
+|callback|decision
+|
+|move|p2a: Hydreigon|Dark Pulse|p1a: Medicham
+|-damage|p1a: Medicham|83\/262
+|move|p1a: Medicham|Drain Punch|p2a: Hydreigon
+|-supereffective|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|-heal|p1a: Medicham|205\/262|[from] drain|[of] p2a: Hydreigon
+|faint|p2a: Hydreigon
+|
+|callback|decision
+|
+|switch|p2a: Kangaskhan|Kangaskhan, F|88\/414
+|-formechange|p2a: Kangaskhan|Kangaskhan-Mega
+|-damage|p2a: Kangaskhan|37\/414|[from] Stealth Rock
+|turn|27
+|callback|decision
+|
+|move|p1a: Medicham|Bullet Punch|p2a: Kangaskhan
+|-damage|p2a: Kangaskhan|0 fnt
+|faint|p2a: Kangaskhan
+|
+|win|pikapooper
+|raw|Ladder updating...
+|raw|pikapooper's rating: 1719 &rarr; <strong>1721<\/strong><br \/>(+2 for winning)
+|raw|rak1993's rating: 1528 &rarr; <strong>1526<\/strong><br \/>(-2 for losing)
+|chat|pikapooper|gg
+|chat|rak1993|gg

@@ -1,0 +1,571 @@
+|join|caiopfvr
+|join|iDestructioNx
+|player|p1|caiopfvr|161
+|player|p2|iDestructioNx|265
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Latias, F
+|poke|p1|Excadrill, F
+|poke|p1|Pinsir, M
+|poke|p1|Rotom-Wash
+|poke|p1|Garchomp, F
+|poke|p1|Talonflame, M
+|poke|p2|Charizard, M, shiny
+|poke|p2|Tyranitar, M, shiny
+|poke|p2|Landorus-Therian, M
+|poke|p2|Suicune, shiny
+|poke|p2|Skarmory, M
+|poke|p2|Latios, M, shiny
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Garchomp|Garchomp, F|357\/357
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Garchomp
+|-unboost|p1a: Garchomp|atk|1
+|turn|1
+|
+|move|p2a: Landorus-Therian|Earthquake|p1a: Garchomp
+|-damage|p1a: Garchomp|132\/357
+|move|p1a: Garchomp|Stealth Rock|p2a: Landorus-Therian
+|-sidestart|p2: iDestructioNx|move: Stealth Rock
+|
+|turn|2
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|move|p2a: Landorus-Therian|Earthquake|p1a: Rotom-Wash
+|-immune|p1a: Rotom-Wash|[msg]
+|
+|turn|3
+|
+|switch|p2a: Latios|Latios, M, shiny|301\/301
+|-damage|p2a: Latios|264\/301|[from] Stealth Rock
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Latios
+|-status|p2a: Latios|brn
+|
+|-damage|p2a: Latios|227\/301 brn|[from] brn
+|turn|4
+|
+|move|p2a: Latios|Defog|p1a: Rotom-Wash
+|-unboost|p1a: Rotom-Wash|evasion|1
+|-sideend|p2: iDestructioNx|Stealth Rock|[from] move: Defog|[of] p2a: Latios
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Latios
+|-resisted|p2a: Latios
+|-damage|p2a: Latios|184\/301 brn
+|
+|switch|p1a: Talonflame|Talonflame, M|297\/297
+|
+|-damage|p2a: Latios|147\/301 brn|[from] brn
+|turn|5
+|
+|switch|p2a: Skarmory|Skarmory, M|323\/323
+|move|p1a: Talonflame|U-turn|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|309\/323
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|
+|-heal|p2a: Skarmory|323\/323|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: Latios|Latios, M, shiny|147\/301 brn
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Latios
+|-fail|p2a: Latios|brn
+|
+|-damage|p2a: Latios|110\/301 brn|[from] brn
+|turn|7
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Rotom-Wash
+|-unboost|p1a: Rotom-Wash|atk|1
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Landorus-Therian
+|-supereffective|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|faint|p2a: Landorus-Therian
+|
+|
+|switch|p2a: Charizard|Charizard, M, shiny|297\/297
+|turn|8
+|
+|detailschange|p2a: Charizard|Charizard-Mega-Y, M, shiny
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p2a: Charizard|Solar Beam|p1a: Rotom-Wash|[still]
+|-prepare|p2a: Charizard|Solar Beam|p1a: Rotom-Wash
+|-anim|p2a: Charizard|Solar Beam|p1a: Rotom-Wash
+|-supereffective|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p1a: Talonflame|Talonflame, M|297\/297
+|turn|9
+|
+|switch|p2a: Tyranitar|Tyranitar, M, shiny|341\/341
+|-weather|Sandstorm
+|move|p1a: Talonflame|Flare Blitz|p2a: Tyranitar
+|-resisted|p2a: Tyranitar
+|-damage|p2a: Tyranitar|213\/341
+|-damage|p1a: Talonflame|255\/297|[from] recoil|[of] p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Talonflame|237\/297|[from] sandstorm
+|turn|10
+|
+|move|p2a: Tyranitar|Pursuit|p1a: Talonflame|[from]Pursuit
+|-damage|p1a: Talonflame|23\/297
+|switch|p1a: Garchomp|Garchomp, F|132\/357
+|
+|-weather|Sandstorm|[upkeep]
+|turn|11
+|
+|move|p1a: Garchomp|Earthquake|p2a: Tyranitar
+|-crit|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Latios|Latios, M, shiny|110\/301 brn
+|turn|12
+|
+|switch|p1a: Excadrill|Excadrill, F|361\/361
+|-ability|p1a: Excadrill|Mold Breaker
+|-item|p1a: Excadrill|Air Balloon
+|move|p2a: Latios|Draco Meteor|p1a: Excadrill
+|-resisted|p1a: Excadrill
+|-damage|p1a: Excadrill|140\/361
+|-enditem|p1a: Excadrill|Air Balloon
+|-unboost|p2a: Latios|spa|2
+|-damage|p2a: Latios|80\/301 brn|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|62\/301 brn|[from] sandstorm
+|-damage|p2a: Latios|25\/301 brn|[from] brn
+|turn|13
+|
+|switch|p2a: Skarmory|Skarmory, M|323\/323
+|move|p1a: Excadrill|Iron Head|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|278\/323
+|
+|-weather|none
+|-heal|p2a: Skarmory|298\/323|[from] item: Leftovers
+|turn|14
+|
+|switch|p1a: Garchomp|Garchomp, F|132\/357
+|move|p2a: Skarmory|Stealth Rock|p1a: Garchomp
+|-sidestart|p1: caiopfvr|move: Stealth Rock
+|
+|-heal|p2a: Skarmory|318\/323|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Garchomp|Stealth Rock|p2a: Skarmory
+|-sidestart|p2: iDestructioNx|move: Stealth Rock
+|move|p2a: Skarmory|Whirlwind|p1a: Garchomp
+|drag|p1a: Excadrill|Excadrill, F|140\/361
+|-damage|p1a: Excadrill|129\/361|[from] Stealth Rock
+|-ability|p1a: Excadrill|Mold Breaker
+|
+|-heal|p2a: Skarmory|323\/323|[from] item: Leftovers
+|turn|16
+|
+|move|p1a: Excadrill|Rapid Spin|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|315\/323
+|-sideend|p1: caiopfvr|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Excadrill
+|move|p2a: Skarmory|Stealth Rock|p1a: Excadrill
+|-sidestart|p1: caiopfvr|move: Stealth Rock
+|
+|-heal|p2a: Skarmory|323\/323|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Excadrill|Rapid Spin|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|315\/323
+|-sideend|p1: caiopfvr|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Excadrill
+|move|p2a: Skarmory|Stealth Rock|p1a: Excadrill
+|-sidestart|p1: caiopfvr|move: Stealth Rock
+|
+|-heal|p2a: Skarmory|323\/323|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Excadrill|Rapid Spin|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|315\/323
+|-sideend|p1: caiopfvr|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Excadrill
+|move|p2a: Skarmory|Stealth Rock|p1a: Excadrill
+|-sidestart|p1: caiopfvr|move: Stealth Rock
+|
+|-heal|p2a: Skarmory|323\/323|[from] item: Leftovers
+|turn|19
+|
+|move|p1a: Excadrill|Rapid Spin|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|315\/323
+|-sideend|p1: caiopfvr|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Excadrill
+|move|p2a: Skarmory|Stealth Rock|p1a: Excadrill
+|-sidestart|p1: caiopfvr|move: Stealth Rock
+|
+|-heal|p2a: Skarmory|323\/323|[from] item: Leftovers
+|turn|20
+|
+|move|p1a: Excadrill|Rapid Spin|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|315\/323
+|-sideend|p1: caiopfvr|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Excadrill
+|move|p2a: Skarmory|Stealth Rock|p1a: Excadrill
+|-sidestart|p1: caiopfvr|move: Stealth Rock
+|
+|-heal|p2a: Skarmory|323\/323|[from] item: Leftovers
+|turn|21
+|
+|move|p1a: Excadrill|Rapid Spin|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|316\/323
+|-sideend|p1: caiopfvr|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Excadrill
+|move|p2a: Skarmory|Whirlwind|p1a: Excadrill
+|drag|p1a: Garchomp|Garchomp, F|132\/357
+|
+|-heal|p2a: Skarmory|323\/323|[from] item: Leftovers
+|turn|22
+|
+|switch|p1a: Excadrill|Excadrill, F|129\/361
+|-ability|p1a: Excadrill|Mold Breaker
+|move|p2a: Skarmory|Stealth Rock|p1a: Excadrill
+|-sidestart|p1: caiopfvr|move: Stealth Rock
+|
+|turn|23
+|
+|move|p1a: Excadrill|Rapid Spin|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|315\/323
+|-sideend|p1: caiopfvr|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Excadrill
+|move|p2a: Skarmory|Whirlwind|p1a: Excadrill
+|drag|p1a: Pinsir|Pinsir, M|271\/271
+|
+|-heal|p2a: Skarmory|323\/323|[from] item: Leftovers
+|turn|24
+|
+|switch|p1a: Excadrill|Excadrill, F|129\/361
+|-ability|p1a: Excadrill|Mold Breaker
+|move|p2a: Skarmory|Stealth Rock|p1a: Excadrill
+|-sidestart|p1: caiopfvr|move: Stealth Rock
+|
+|turn|25
+|
+|move|p1a: Excadrill|Rapid Spin|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|315\/323
+|-sideend|p1: caiopfvr|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Excadrill
+|move|p2a: Skarmory|Brave Bird|p1a: Excadrill
+|-resisted|p1a: Excadrill
+|-damage|p1a: Excadrill|39\/361
+|-damage|p2a: Skarmory|285\/323|[from] recoil|[of] p1a: Excadrill
+|
+|-heal|p2a: Skarmory|305\/323|[from] item: Leftovers
+|turn|26
+|
+|move|p1a: Excadrill|Rock Slide|p2a: Skarmory
+|-damage|p2a: Skarmory|249\/323
+|move|p2a: Skarmory|Stealth Rock|p1a: Excadrill
+|-sidestart|p1: caiopfvr|move: Stealth Rock
+|
+|-heal|p2a: Skarmory|269\/323|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: Excadrill|Rapid Spin|p2a: Skarmory
+|-crit|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|256\/323
+|-sideend|p1: caiopfvr|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Excadrill
+|move|p2a: Skarmory|Roost|p2a: Skarmory
+|-heal|p2a: Skarmory|323\/323
+|
+|turn|28
+|
+|switch|p1a: Garchomp|Garchomp, F|132\/357
+|move|p2a: Skarmory|Stealth Rock|p1a: Garchomp
+|-sidestart|p1: caiopfvr|move: Stealth Rock
+|
+|turn|29
+|
+|move|p1a: Garchomp|Fire Blast|p2a: Skarmory
+|-supereffective|p2a: Skarmory
+|-damage|p2a: Skarmory|123\/323
+|move|p2a: Skarmory|Whirlwind|p1a: Garchomp
+|drag|p1a: Excadrill|Excadrill, F|39\/361
+|-damage|p1a: Excadrill|28\/361|[from] Stealth Rock
+|-ability|p1a: Excadrill|Mold Breaker
+|
+|-heal|p2a: Skarmory|143\/323|[from] item: Leftovers
+|turn|30
+|
+|move|p1a: Excadrill|Rapid Spin|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|134\/323
+|-sideend|p1: caiopfvr|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Excadrill
+|move|p2a: Skarmory|Roost|p2a: Skarmory
+|-heal|p2a: Skarmory|296\/323
+|
+|-heal|p2a: Skarmory|316\/323|[from] item: Leftovers
+|turn|31
+|
+|move|p1a: Excadrill|Rock Slide|p2a: Skarmory
+|-damage|p2a: Skarmory|253\/323
+|cant|p2a: Skarmory|flinch
+|
+|-heal|p2a: Skarmory|273\/323|[from] item: Leftovers
+|turn|32
+|
+|move|p1a: Excadrill|Rock Slide|p2a: Skarmory
+|-damage|p2a: Skarmory|217\/323
+|cant|p2a: Skarmory|flinch
+|
+|-heal|p2a: Skarmory|237\/323|[from] item: Leftovers
+|turn|33
+|
+|move|p1a: Excadrill|Rock Slide|p2a: Skarmory
+|-damage|p2a: Skarmory|183\/323
+|move|p2a: Skarmory|Stealth Rock|p1a: Excadrill
+|-sidestart|p1: caiopfvr|move: Stealth Rock
+|
+|-heal|p2a: Skarmory|203\/323|[from] item: Leftovers
+|turn|34
+|
+|move|p1a: Excadrill|Rapid Spin|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|195\/323
+|-sideend|p1: caiopfvr|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Excadrill
+|move|p2a: Skarmory|Roost|p2a: Skarmory
+|-heal|p2a: Skarmory|323\/323
+|
+|turn|35
+|
+|move|p1a: Excadrill|Rock Slide|p2a: Skarmory
+|-damage|p2a: Skarmory|267\/323
+|cant|p2a: Skarmory|flinch
+|
+|-heal|p2a: Skarmory|287\/323|[from] item: Leftovers
+|turn|36
+|
+|move|p1a: Excadrill|Rock Slide|p2a: Skarmory
+|-damage|p2a: Skarmory|225\/323
+|cant|p2a: Skarmory|flinch
+|
+|-heal|p2a: Skarmory|245\/323|[from] item: Leftovers
+|turn|37
+|
+|move|p1a: Excadrill|Rock Slide|p2a: Skarmory
+|-damage|p2a: Skarmory|187\/323
+|move|p2a: Skarmory|Roost|p2a: Skarmory
+|-heal|p2a: Skarmory|323\/323
+|
+|turn|38
+|
+|move|p1a: Excadrill|Iron Head|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|278\/323
+|move|p2a: Skarmory|Stealth Rock|p1a: Excadrill
+|-sidestart|p1: caiopfvr|move: Stealth Rock
+|
+|-heal|p2a: Skarmory|298\/323|[from] item: Leftovers
+|turn|39
+|
+|move|p1a: Excadrill|Rapid Spin|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|290\/323
+|-sideend|p1: caiopfvr|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Excadrill
+|move|p2a: Skarmory|Whirlwind|p1a: Excadrill
+|drag|p1a: Latias|Latias, F|319\/319
+|
+|-heal|p2a: Skarmory|310\/323|[from] item: Leftovers
+|turn|40
+|
+|move|p1a: Latias|Hidden Power|p2a: Skarmory
+|-supereffective|p2a: Skarmory
+|-damage|p2a: Skarmory|84\/323
+|-damage|p1a: Latias|288\/319|[from] item: Life Orb
+|move|p2a: Skarmory|Stealth Rock|p1a: Latias
+|-sidestart|p1: caiopfvr|move: Stealth Rock
+|
+|-heal|p2a: Skarmory|104\/323|[from] item: Leftovers
+|turn|41
+|
+|switch|p2a: Suicune|Suicune, shiny|404\/404
+|-damage|p2a: Suicune|354\/404|[from] Stealth Rock
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Latias|Hidden Power|p2a: Suicune
+|-resisted|p2a: Suicune
+|-damage|p2a: Suicune|320\/404
+|-damage|p1a: Latias|257\/319|[from] item: Life Orb
+|
+|-heal|p2a: Suicune|345\/404|[from] item: Leftovers
+|turn|42
+|
+|move|p1a: Latias|Draco Meteor|p2a: Suicune
+|-damage|p2a: Suicune|131\/404
+|-unboost|p1a: Latias|spa|2
+|-damage|p1a: Latias|226\/319|[from] item: Life Orb
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p2a: Suicune|156\/404|[from] item: Leftovers
+|turn|43
+|
+|move|p1a: Latias|Defog|p2a: Suicune
+|-unboost|p2a: Suicune|evasion|1
+|-sideend|p2: iDestructioNx|Stealth Rock|[from] move: Defog|[of] p2a: Suicune
+|-sideend|p1: caiopfvr|Stealth Rock|[from] move: Defog|[of] p1a: Latias
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|
+|turn|44
+|
+|switch|p1a: Garchomp|Garchomp, F|132\/357
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Scald|p1a: Garchomp|[from]Sleep Talk
+|-damage|p1a: Garchomp|0 fnt
+|faint|p1a: Garchomp
+|
+|
+|switch|p1a: Pinsir|Pinsir, M|271\/271
+|turn|45
+|
+|move|p1a: Pinsir|Swords Dance|p1a: Pinsir
+|-boost|p1a: Pinsir|atk|2
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Scald|p1a: Pinsir|[from]Sleep Talk
+|-damage|p1a: Pinsir|112\/271
+|
+|turn|46
+|
+|detailschange|p1a: Pinsir|Pinsir-Mega, M
+|message|Pinsir has Mega Evolved into Mega Pinsir!
+|move|p1a: Pinsir|Return|p2a: Suicune
+|-damage|p2a: Suicune|68\/404 slp
+|-curestatus|p2a: Suicune|slp
+|move|p2a: Suicune|Scald|p1a: Pinsir
+|-damage|p1a: Pinsir|0 fnt
+|faint|p1a: Pinsir
+|
+|-heal|p2a: Suicune|93\/404|[from] item: Leftovers
+|
+|switch|p1a: Talonflame|Talonflame, M|23\/297
+|turn|47
+|
+|move|p1a: Talonflame|U-turn|p2a: Suicune
+|-damage|p2a: Suicune|27\/404
+|
+|switch|p1a: Latias|Latias, F|226\/319
+|move|p2a: Suicune|Scald|p1a: Latias
+|-resisted|p1a: Latias
+|-damage|p1a: Latias|175\/319
+|-status|p1a: Latias|brn
+|
+|-heal|p2a: Suicune|52\/404|[from] item: Leftovers
+|-damage|p1a: Latias|136\/319 brn|[from] brn
+|turn|48
+|
+|move|p1a: Latias|Healing Wish|p1a: Latias
+|faint|p1a: Latias
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|
+|
+|switch|p1a: Talonflame|Talonflame, M|23\/297
+|-heal|p1a: Talonflame|297\/297|[from] move: Healing Wish
+|turn|49
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Suicune
+|-damage|p2a: Suicune|232\/404 slp
+|-damage|p1a: Talonflame|240\/297|[from] recoil|[of] p2a: Suicune
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Calm Mind|p2a: Suicune|[from]Sleep Talk
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p2a: Suicune|257\/404 slp|[from] item: Leftovers
+|turn|50
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Suicune
+|-damage|p2a: Suicune|94\/404 slp
+|-damage|p1a: Talonflame|186\/297|[from] recoil|[of] p2a: Suicune
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Calm Mind|p2a: Suicune|[from]Sleep Talk
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p2a: Suicune|119\/404 slp|[from] item: Leftovers
+|turn|51
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Suicune
+|-damage|p2a: Suicune|0 fnt
+|-damage|p1a: Talonflame|147\/297|[from] recoil|[of] p2a: Suicune
+|faint|p2a: Suicune
+|
+|
+|switch|p2a: Charizard|Charizard-Mega-Y, M, shiny|297\/297
+|-weather|SunnyDay
+|turn|52
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Charizard
+|-damage|p2a: Charizard|0 fnt
+|-damage|p1a: Talonflame|49\/297|[from] recoil|[of] p2a: Charizard
+|faint|p2a: Charizard
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p2a: Skarmory|Skarmory, M|104\/323
+|turn|53
+|
+|switch|p1a: Excadrill|Excadrill, F|28\/361
+|-ability|p1a: Excadrill|Mold Breaker
+|move|p2a: Skarmory|Whirlwind|p1a: Excadrill
+|drag|p1a: Talonflame|Talonflame, M|49\/297
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Skarmory|124\/323|[from] item: Leftovers
+|turn|54
+|
+|move|p1a: Talonflame|Flare Blitz|p2a: Skarmory
+|-supereffective|p2a: Skarmory
+|-damage|p2a: Skarmory|0 fnt
+|-damage|p1a: Talonflame|8\/297|[from] recoil|[of] p2a: Skarmory
+|faint|p2a: Skarmory
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p2a: Latios|Latios, M, shiny|25\/301 brn
+|turn|55
+|-message|iDestructioNx forfeited.
+|
+|win|caiopfvr
+|raw|Ladder updating...
+|leave|iDestructioNx
+|player|p2
+|raw|caiopfvr's rating: 1604 &rarr; <strong>1626<\/strong><br \/>(+22 for winning)
+|raw|iDestructioNx's rating: 1625 &rarr; <strong>1604<\/strong><br \/>(-21 for losing)

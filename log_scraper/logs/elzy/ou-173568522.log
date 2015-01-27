@@ -1,0 +1,368 @@
+|join|Argue
+|join|elzy
+|player|p1|Argue|80
+|player|p2|elzy|266
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Scolipede, M, shiny
+|poke|p1|Espeon, F, shiny
+|poke|p1|Latios, M, shiny
+|poke|p1|Greninja, M, shiny
+|poke|p1|Charizard, M, shiny
+|poke|p1|Wobbuffet, M, shiny
+|poke|p2|Hawlucha, F
+|poke|p2|Porygon2
+|poke|p2|Gengar, F
+|poke|p2|Metagross
+|poke|p2|Venusaur, F
+|poke|p2|Umbreon, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Wobbuffet|Wobbuffet, M, shiny|584\/584
+|switch|p2a: Mr.crujidor|Hawlucha, F|298\/298
+|turn|1
+|
+|move|p2a: Mr.crujidor|Taunt|p1a: Wobbuffet
+|-start|p1a: Wobbuffet|move: Taunt
+|cant|p1a: Wobbuffet|move: Taunt|Encore
+|
+|turn|2
+|
+|move|p2a: Mr.crujidor|Acrobatics|p1a: Wobbuffet
+|-damage|p1a: Wobbuffet|335\/584
+|move|p1a: Wobbuffet|Counter|p2a: Mr.crujidor
+|-damage|p2a: Mr.crujidor|0 fnt
+|faint|p2a: Mr.crujidor
+|
+|-heal|p1a: Wobbuffet|371\/584|[from] item: Leftovers
+|
+|switch|p2a: Don risas|Gengar, F|262\/262
+|turn|3
+|
+|move|p2a: Don risas|Shadow Ball|p1a: Wobbuffet
+|-supereffective|p1a: Wobbuffet
+|-damage|p1a: Wobbuffet|28\/584
+|-damage|p2a: Don risas|236\/262|[from] item: Life Orb
+|move|p1a: Wobbuffet|Mirror Coat|p2a: Don risas
+|-damage|p2a: Don risas|0 fnt
+|faint|p2a: Don risas
+|
+|-heal|p1a: Wobbuffet|64\/584|[from] item: Leftovers
+|-end|p1a: Wobbuffet|move: Taunt
+|
+|switch|p2a: I am fat|Venusaur, F|364\/364
+|turn|4
+|
+|detailschange|p2a: I am fat|Venusaur-Mega, F
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p2a: I am fat|Knock Off|p1a: Wobbuffet
+|-crit|p1a: Wobbuffet
+|-supereffective|p1a: Wobbuffet
+|-damage|p1a: Wobbuffet|0 fnt
+|-enditem|p1a: Wobbuffet|Leftovers|[from] move: Knock Off|[of] p2a: I am fat
+|faint|p1a: Wobbuffet
+|
+|
+|switch|p1a: Latios|Latios, M, shiny|364\/364
+|turn|5
+|
+|move|p1a: Latios|Reflect|p1a: Latios
+|-sidestart|p1: Argue|Reflect
+|move|p2a: I am fat|Knock Off|p1a: Latios
+|-crit|p1a: Latios
+|-supereffective|p1a: Latios
+|-damage|p1a: Latios|98\/364
+|-enditem|p1a: Latios|Light Clay|[from] move: Knock Off|[of] p2a: I am fat
+|
+|turn|6
+|
+|move|p1a: Latios|Light Screen|p1a: Latios
+|-sidestart|p1: Argue|move: Light Screen
+|move|p2a: I am fat|Leech Seed|p1a: Latios
+|-start|p1a: Latios|move: Leech Seed
+|
+|-damage|p1a: Latios|53\/364|[from] Leech Seed|[of] p2a: I am fat
+|turn|7
+|
+|move|p1a: Latios|Memento|p2a: I am fat
+|-unboost|p2a: I am fat|atk|2
+|-unboost|p2a: I am fat|spa|2
+|faint|p1a: Latios
+|move|p2a: I am fat|Knock Off|p1: Latios|[notarget]
+|-notarget
+|
+|
+|switch|p1a: Scolipede|Scolipede, M, shiny|323\/323
+|turn|8
+|
+|move|p1a: Scolipede|Substitute|p1a: Scolipede
+|-start|p1a: Scolipede|Substitute
+|-damage|p1a: Scolipede|243\/323
+|move|p2a: I am fat|Leech Seed|p1a: Scolipede
+|
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|9
+|
+|switch|p2a: Umbreon|Umbreon, F|394\/394
+|move|p1a: Scolipede|Iron Defense|p1a: Scolipede
+|-boost|p1a: Scolipede|def|2
+|
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|10
+|
+|switch|p2a: Trollygon2|Porygon2|374\/374
+|-boost|p2a: Trollygon2|spa|1|[from] ability: Download
+|move|p1a: Scolipede|Iron Defense|p1a: Scolipede
+|-boost|p1a: Scolipede|def|2
+|
+|-sideend|p1: Argue|move: Light Screen
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|11
+|
+|move|p1a: Scolipede|Baton Pass|p1a: Scolipede
+|
+|switch|p1a: Espeon|Espeon, F, shiny|333\/333
+|move|p2a: Trollygon2|Thunderbolt|p1a: Espeon
+|-end|p1a: Espeon|Substitute
+|
+|turn|12
+|
+|switch|p2a: Umbreon|Umbreon, F|394\/394
+|move|p1a: Espeon|Calm Mind|p1a: Espeon
+|-boost|p1a: Espeon|spa|1
+|-boost|p1a: Espeon|spd|1
+|
+|-sideend|p1: Argue|Reflect
+|turn|13
+|
+|move|p1a: Espeon|Dazzling Gleam|p2a: Umbreon
+|-supereffective|p2a: Umbreon
+|-damage|p2a: Umbreon|236\/394
+|move|p2a: Umbreon|Toxic|p1a: Espeon
+|move|p1a: Espeon|Toxic|p2a: Umbreon|[from]Magic Bounce
+|-status|p2a: Umbreon|tox
+|-status|p1a: Espeon|tox
+|
+|-heal|p2a: Umbreon|260\/394 tox|[from] item: Leftovers
+|-damage|p1a: Espeon|313\/333 tox|[from] psn
+|-damage|p2a: Umbreon|236\/394 tox|[from] psn
+|turn|14
+|
+|switch|p2a: Metaweight|Metagross|364\/364
+|move|p1a: Espeon|Calm Mind|p1a: Espeon
+|-boost|p1a: Espeon|spa|1
+|-boost|p1a: Espeon|spd|1
+|
+|-heal|p1a: Espeon|333\/333 tox|[from] item: Leftovers
+|-damage|p1a: Espeon|293\/333 tox|[from] psn
+|turn|15
+|
+|move|p1a: Espeon|Stored Power|p2a: Metaweight
+|-resisted|p2a: Metaweight
+|-damage|p2a: Metaweight|162\/364
+|-enditem|p2a: Metaweight|Sitrus Berry|[eat]
+|-heal|p2a: Metaweight|253\/364|[from] item: Sitrus Berry
+|move|p2a: Metaweight|Meteor Mash|p1a: Espeon
+|-damage|p1a: Espeon|251\/333 tox
+|
+|-heal|p1a: Espeon|271\/333 tox|[from] item: Leftovers
+|-damage|p1a: Espeon|211\/333 tox|[from] psn
+|turn|16
+|
+|switch|p2a: Umbreon|Umbreon, F|236\/394 tox
+|move|p1a: Espeon|Stored Power|p2a: Umbreon
+|-immune|p2a: Umbreon|[msg]
+|
+|-heal|p1a: Espeon|231\/333 tox|[from] item: Leftovers
+|-heal|p2a: Umbreon|260\/394 tox|[from] item: Leftovers
+|-damage|p1a: Espeon|151\/333 tox|[from] psn
+|-damage|p2a: Umbreon|236\/394 tox|[from] psn
+|turn|17
+|
+|switch|p2a: I am fat|Venusaur-Mega, F|364\/364
+|move|p1a: Espeon|Dazzling Gleam|p2a: I am fat
+|-resisted|p2a: I am fat
+|-damage|p2a: I am fat|307\/364
+|
+|-heal|p1a: Espeon|171\/333 tox|[from] item: Leftovers
+|-damage|p1a: Espeon|71\/333 tox|[from] psn
+|turn|18
+|
+|switch|p2a: Metaweight|Metagross|253\/364
+|move|p1a: Espeon|Morning Sun|p1a: Espeon
+|-heal|p1a: Espeon|237\/333 tox
+|
+|-heal|p1a: Espeon|257\/333 tox|[from] item: Leftovers
+|-damage|p1a: Espeon|137\/333 tox|[from] psn
+|turn|19
+|
+|move|p1a: Espeon|Dazzling Gleam|p2a: Metaweight
+|-resisted|p2a: Metaweight
+|-damage|p2a: Metaweight|171\/364
+|move|p2a: Metaweight|Meteor Mash|p1a: Espeon
+|-damage|p1a: Espeon|88\/333 tox
+|
+|-heal|p1a: Espeon|108\/333 tox|[from] item: Leftovers
+|-damage|p1a: Espeon|0 fnt|[from] psn
+|faint|p1a: Espeon
+|
+|switch|p1a: Scolipede|Scolipede, M, shiny|243\/323
+|turn|20
+|
+|move|p1a: Scolipede|Protect|p1a: Scolipede
+|-singleturn|p1a: Scolipede|Protect
+|move|p2a: Metaweight|Zen Headbutt|p1a: Scolipede
+|-activate|p1a: Scolipede|Protect
+|
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|21
+|
+|move|p1a: Scolipede|Baton Pass|p1a: Scolipede
+|
+|switch|p1a: Charizard|Charizard, M, shiny|359\/359
+|move|p2a: Metaweight|Zen Headbutt|p1a: Charizard
+|-damage|p1a: Charizard|199\/359
+|
+|turn|22
+|
+|detailschange|p1a: Charizard|Charizard-Mega-X, M, shiny
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p1a: Charizard|Fire Punch|p2a: Metaweight
+|-supereffective|p2a: Metaweight
+|-damage|p2a: Metaweight|0 fnt
+|faint|p2a: Metaweight
+|
+|
+|switch|p2a: Trollygon2|Porygon2|374\/374
+|-boost|p2a: Trollygon2|spa|1|[from] ability: Download
+|turn|23
+|
+|move|p1a: Charizard|Swords Dance|p1a: Charizard
+|-boost|p1a: Charizard|atk|2
+|move|p2a: Trollygon2|Thunder Wave|p1a: Charizard
+|-status|p1a: Charizard|par
+|
+|turn|24
+|
+|switch|p2a: I am fat|Venusaur-Mega, F|307\/364
+|cant|p1a: Charizard|par
+|
+|turn|25
+|
+|move|p2a: I am fat|Earthquake|p1a: Charizard
+|-supereffective|p1a: Charizard
+|-damage|p1a: Charizard|65\/359 par
+|move|p1a: Charizard|Dragon Claw|p2a: I am fat
+|-damage|p2a: I am fat|22\/364
+|
+|turn|26
+|
+|move|p2a: I am fat|Earthquake|p1a: Charizard
+|-supereffective|p1a: Charizard
+|-damage|p1a: Charizard|0 fnt
+|faint|p1a: Charizard
+|
+|
+|switch|p1a: Greninja|Greninja, M, shiny|286\/286
+|turn|27
+|
+|move|p1a: Greninja|Extrasensory|p2a: I am fat
+|-start|p1a: Greninja|typechange|Psychic|[from] Protean
+|-supereffective|p2a: I am fat
+|-damage|p2a: I am fat|0 fnt
+|-damage|p1a: Greninja|258\/286|[from] item: Life Orb
+|faint|p2a: I am fat
+|
+|
+|switch|p2a: Umbreon|Umbreon, F|236\/394 tox
+|turn|28
+|
+|move|p1a: Greninja|Hydro Pump|p2a: Umbreon
+|-start|p1a: Greninja|typechange|Water|[from] Protean
+|-damage|p2a: Umbreon|96\/394 tox
+|-damage|p1a: Greninja|230\/286|[from] item: Life Orb
+|move|p2a: Umbreon|Moonlight|p2a: Umbreon
+|-heal|p2a: Umbreon|293\/394 tox
+|
+|-heal|p2a: Umbreon|317\/394 tox|[from] item: Leftovers
+|-damage|p2a: Umbreon|293\/394 tox|[from] psn
+|turn|29
+|
+|switch|p1a: Scolipede|Scolipede, M, shiny|243\/323
+|move|p2a: Umbreon|Heal Bell|p2a: Umbreon
+|-cureteam|p2a: Umbreon|[from] move: HealBell
+|
+|-heal|p2a: Umbreon|317\/394|[from] item: Leftovers
+|turn|30
+|
+|move|p1a: Scolipede|Protect|p1a: Scolipede
+|-singleturn|p1a: Scolipede|Protect
+|move|p2a: Umbreon|Foul Play|p1a: Scolipede
+|-activate|p1a: Scolipede|Protect
+|
+|-heal|p2a: Umbreon|341\/394|[from] item: Leftovers
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|31
+|
+|move|p1a: Scolipede|Iron Defense|p1a: Scolipede
+|-boost|p1a: Scolipede|def|2
+|move|p2a: Umbreon|Foul Play|p1a: Scolipede
+|-damage|p1a: Scolipede|210\/323
+|
+|-heal|p2a: Umbreon|365\/394|[from] item: Leftovers
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|32
+|
+|switch|p2a: Trollygon2|Porygon2|374\/374
+|-boost|p2a: Trollygon2|spa|1|[from] ability: Download
+|move|p1a: Scolipede|Iron Defense|p1a: Scolipede
+|-boost|p1a: Scolipede|def|2
+|
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|33
+|
+|move|p1a: Scolipede|Substitute|p1a: Scolipede
+|-start|p1a: Scolipede|Substitute
+|-damage|p1a: Scolipede|130\/323
+|move|p2a: Trollygon2|Thunderbolt|p1a: Scolipede
+|-end|p1a: Scolipede|Substitute
+|
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|34
+|
+|move|p1a: Scolipede|Baton Pass|p1a: Scolipede
+|
+|switch|p1a: Greninja|Greninja, M, shiny|230\/286
+|move|p2a: Trollygon2|Thunderbolt|p1a: Greninja
+|-supereffective|p1a: Greninja
+|-damage|p1a: Greninja|0 fnt
+|faint|p1a: Greninja
+|
+|
+|switch|p1a: Scolipede|Scolipede, M, shiny|130\/323
+|turn|35
+|
+|move|p1a: Scolipede|Baton Pass|p1a: Scolipede
+|-fail|p1a: Scolipede
+|move|p2a: Trollygon2|Thunderbolt|p1a: Scolipede
+|-damage|p1a: Scolipede|0 fnt
+|faint|p1a: Scolipede
+|
+|win|elzy
+|raw|Ladder updating...
+|raw|Argue's rating: 1625 &rarr; <strong>1602<\/strong><br \/>(-23 for losing)
+|raw|elzy's rating: 1568 &rarr; <strong>1591<\/strong><br \/>(+23 for winning)
+|c|âelzy|gg

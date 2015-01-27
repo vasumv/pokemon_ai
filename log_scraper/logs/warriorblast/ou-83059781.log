@@ -1,0 +1,344 @@
+|join|soda4949
+|join|WarriorBlast
+|player|p1|soda4949|153
+|player|p2|WarriorBlast|168
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Banette, M
+|poke|p1|Volcarona, M
+|poke|p1|Tyranitar, M
+|poke|p1|Meganium, F
+|poke|p1|Chandelure, F
+|poke|p1|Vaporeon, M
+|poke|p2|Volcarona, F, shiny
+|poke|p2|Goodra, M, shiny
+|poke|p2|Dragonite, F, shiny
+|poke|p2|Starmie, shiny
+|poke|p2|Mawile, F, shiny
+|poke|p2|Genesect, shiny
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Vaporeon|Vaporeon, M|464\/464
+|switch|p2a: Genesect|Genesect, shiny|283\/283
+|-boost|p2a: Genesect|atk|1|[from] ability: Download
+|turn|1
+|callback|decision
+|
+|move|p2a: Genesect|U-turn|p1a: Vaporeon
+|-damage|p1a: Vaporeon|79\/464
+|callback|decision
+|
+|switch|p2a: Starmie|Starmie, shiny|261\/261
+|move|p1a: Vaporeon|Scald|p2a: Starmie
+|-resisted|p2a: Starmie
+|-damage|p2a: Starmie|218\/261
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Meganium|Meganium, F|302\/302
+|move|p2a: Starmie|Thunderbolt|p1a: Meganium
+|-resisted|p1a: Meganium
+|-damage|p1a: Meganium|258\/302
+|-status|p1a: Meganium|par
+|
+|turn|3
+|callback|decision
+|
+|switch|p2a: Volcarona|Volcarona, F, shiny|312\/312
+|move|p1a: Meganium|Leech Seed|p2a: Volcarona
+|-start|p2a: Volcarona|move: Leech Seed
+|
+|-damage|p2a: Volcarona|273\/312|[from] Leech Seed|[of] p1a: Meganium
+|-heal|p1a: Meganium|297\/302 par|[silent]
+|turn|4
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, M|342\/342
+|-weather|Sandstorm
+|move|p2a: Volcarona|Fiery Dance|p1a: Tyranitar
+|-crit|p1a: Tyranitar
+|-resisted|p1a: Tyranitar
+|-damage|p1a: Tyranitar|264\/342
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Volcarona|254\/312|[from] sandstorm
+|-damage|p2a: Volcarona|215\/312|[from] Leech Seed|[of] p1a: Tyranitar
+|-heal|p1a: Tyranitar|303\/342|[silent]
+|turn|5
+|callback|decision
+|
+|switch|p2a: Starmie|Starmie, shiny|218\/261
+|move|p1a: Tyranitar|Rock Slide|p2a: Starmie
+|-damage|p2a: Starmie|58\/261
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Starmie|42\/261|[from] sandstorm
+|turn|6
+|callback|decision
+|
+|switch|p1a: Meganium|Meganium, F|297\/302 par
+|move|p2a: Starmie|Hydro Pump|p1a: Meganium|[miss]
+|-miss|p2a: Starmie|p1a: Meganium
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Starmie|26\/261|[from] sandstorm
+|-damage|p1a: Meganium|279\/302 par|[from] sandstorm
+|turn|7
+|callback|decision
+|
+|move|p2a: Starmie|Psychic|p1a: Meganium
+|-damage|p1a: Meganium|180\/302 par
+|-unboost|p1a: Meganium|spd|1
+|move|p1a: Meganium|Light Screen|p1a: Meganium
+|-sidestart|p1: soda4949|move: Light Screen
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Starmie|10\/261|[from] sandstorm
+|-damage|p1a: Meganium|162\/302 par|[from] sandstorm
+|turn|8
+|callback|decision
+|
+|switch|p1a: Vaporeon|Vaporeon, M|79\/464
+|move|p2a: Starmie|Psychic|p1a: Vaporeon
+|-damage|p1a: Vaporeon|31\/464
+|-unboost|p1a: Vaporeon|spd|1
+|
+|-weather|none
+|turn|9
+|callback|decision
+|
+|move|p2a: Starmie|Thunderbolt|p1a: Vaporeon
+|-supereffective|p1a: Vaporeon
+|-damage|p1a: Vaporeon|0 fnt
+|faint|p1a: Vaporeon
+|
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, M|303\/342
+|-weather|Sandstorm
+|turn|10
+|callback|decision
+|
+|move|p2a: Starmie|Hydro Pump|p1a: Tyranitar|[miss]
+|-miss|p2a: Starmie|p1a: Tyranitar
+|move|p1a: Tyranitar|Stealth Rock|p2a: Starmie
+|-sidestart|p2: WarriorBlast|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Starmie|0 fnt|[from] sandstorm
+|faint|p2a: Starmie
+|callback|decision
+|
+|switch|p2a: Genesect|Genesect, shiny|283\/283
+|-damage|p2a: Genesect|248\/283|[from] Stealth Rock
+|-boost|p2a: Genesect|spa|1|[from] ability: Download
+|turn|11
+|callback|decision
+|
+|move|p2a: Genesect|Iron Head|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|faint|p1a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-sideend|p1: soda4949|move: Light Screen
+|callback|decision
+|
+|switch|p1a: Chandelure|Chandelure, F|261\/261
+|turn|12
+|callback|decision
+|
+|switch|p2a: Goodra|Goodra, M, shiny|384\/384
+|-damage|p2a: Goodra|336\/384|[from] Stealth Rock
+|move|p1a: Chandelure|Flamethrower|p2a: Goodra
+|-resisted|p2a: Goodra
+|-damage|p2a: Goodra|292\/384
+|-status|p2a: Goodra|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Chandelure|245\/261|[from] sandstorm
+|-damage|p2a: Goodra|268\/384 brn|[from] sandstorm
+|-damage|p2a: Goodra|220\/384 brn|[from] brn
+|turn|13
+|callback|decision
+|
+|switch|p1a: Meganium|Meganium, F|162\/302 par
+|move|p2a: Goodra|Dragon Pulse|p1a: Meganium
+|-damage|p1a: Meganium|57\/302 par
+|-enditem|p1a: Meganium|Sitrus Berry|[eat]
+|-heal|p1a: Meganium|132\/302 par|[from] item: Sitrus Berry
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Goodra|196\/384 brn|[from] sandstorm
+|-damage|p1a: Meganium|114\/302 par|[from] sandstorm
+|-damage|p2a: Goodra|148\/384 brn|[from] brn
+|turn|14
+|callback|decision
+|
+|move|p2a: Goodra|Flamethrower|p1a: Meganium
+|-supereffective|p1a: Meganium
+|-damage|p1a: Meganium|0 fnt
+|faint|p1a: Meganium
+|
+|-weather|none
+|-damage|p2a: Goodra|100\/384 brn|[from] brn
+|callback|decision
+|
+|switch|p1a: Volcarona|Volcarona, M|312\/312
+|turn|15
+|callback|decision
+|
+|move|p1a: Volcarona|Quiver Dance|p1a: Volcarona
+|-boost|p1a: Volcarona|spa|1
+|-boost|p1a: Volcarona|spd|1
+|-boost|p1a: Volcarona|spe|1
+|move|p2a: Goodra|Dragon Pulse|p1a: Volcarona
+|-damage|p1a: Volcarona|213\/312
+|
+|-heal|p1a: Volcarona|232\/312|[from] item: Leftovers
+|-damage|p2a: Goodra|52\/384 brn|[from] brn
+|turn|16
+|callback|decision
+|
+|move|p1a: Volcarona|Quiver Dance|p1a: Volcarona
+|-boost|p1a: Volcarona|spa|1
+|-boost|p1a: Volcarona|spd|1
+|-boost|p1a: Volcarona|spe|1
+|move|p2a: Goodra|Dragon Pulse|p1a: Volcarona
+|-damage|p1a: Volcarona|163\/312
+|
+|-heal|p1a: Volcarona|182\/312|[from] item: Leftovers
+|-damage|p2a: Goodra|4\/384 brn|[from] brn
+|turn|17
+|callback|decision
+|
+|move|p1a: Volcarona|Quiver Dance|p1a: Volcarona
+|-boost|p1a: Volcarona|spa|1
+|-boost|p1a: Volcarona|spd|1
+|-boost|p1a: Volcarona|spe|1
+|move|p2a: Goodra|Dragon Pulse|p1a: Volcarona
+|-damage|p1a: Volcarona|121\/312
+|
+|-heal|p1a: Volcarona|140\/312|[from] item: Leftovers
+|-damage|p2a: Goodra|0 fnt|[from] brn
+|faint|p2a: Goodra
+|callback|decision
+|
+|switch|p2a: Dragonite|Dragonite, F, shiny|324\/324
+|-damage|p2a: Dragonite|243\/324|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|move|p2a: Dragonite|Extreme Speed|p1a: Volcarona
+|-damage|p1a: Volcarona|0 fnt
+|faint|p1a: Volcarona
+|
+|callback|decision
+|
+|switch|p1a: Banette|Banette, M|301\/301
+|turn|19
+|callback|decision
+|
+|-formechange|p1a: Banette|Banette-Mega
+|message|Banette has Mega Evolved into Mega Banette!
+|move|p2a: Dragonite|Dragon Dance|p2a: Dragonite
+|-boost|p2a: Dragonite|atk|1
+|-boost|p2a: Dragonite|spe|1
+|move|p1a: Banette|Will-O-Wisp|p2a: Dragonite
+|-status|p2a: Dragonite|brn
+|
+|-damage|p2a: Dragonite|203\/324 brn|[from] brn
+|turn|20
+|callback|decision
+|
+|move|p2a: Dragonite|Dragon Claw|p1a: Banette
+|-damage|p1a: Banette|141\/301
+|move|p1a: Banette|Phantom Force|p2a: Dragonite|[still]
+|-prepare|p1a: Banette|Phantom Force|p2a: Dragonite
+|
+|-damage|p2a: Dragonite|163\/324 brn|[from] brn
+|turn|21
+|callback|decision
+|
+|move|p2a: Dragonite|Dragon Dance|p2a: Dragonite
+|-boost|p2a: Dragonite|atk|1
+|-boost|p2a: Dragonite|spe|1
+|move|p1a: Banette|Phantom Force|p2a: Dragonite
+|-damage|p2a: Dragonite|0 fnt
+|faint|p2a: Dragonite
+|
+|callback|decision
+|
+|switch|p2a: Volcarona|Volcarona, F, shiny|215\/312
+|-damage|p2a: Volcarona|59\/312|[from] Stealth Rock
+|turn|22
+|callback|decision
+|
+|move|p1a: Banette|Shadow Sneak|p2a: Volcarona
+|-damage|p2a: Volcarona|0 fnt
+|faint|p2a: Volcarona
+|
+|callback|decision
+|
+|switch|p2a: Mawile|Mawile, F, shiny|304\/304
+|-damage|p2a: Mawile|285\/304|[from] Stealth Rock
+|-ability|p2a: Mawile|Intimidate|[of] p1a: Banette
+|-unboost|p1a: Banette|atk|1
+|turn|23
+|callback|decision
+|
+|-formechange|p2a: Mawile|Mawile-Mega
+|message|Mawile has Mega Evolved into Mega Mawile!
+|move|p1a: Banette|Will-O-Wisp|p2a: Mawile
+|-status|p2a: Mawile|brn
+|move|p2a: Mawile|Iron Head|p1a: Banette
+|-damage|p1a: Banette|0 fnt
+|faint|p1a: Banette
+|
+|-damage|p2a: Mawile|247\/304 brn|[from] brn
+|callback|decision
+|
+|switch|p1a: Chandelure|Chandelure, F|245\/261
+|turn|24
+|callback|decision
+|
+|move|p2a: Mawile|Sucker Punch|p1a: Chandelure
+|-supereffective|p1a: Chandelure
+|-damage|p1a: Chandelure|55\/261
+|move|p1a: Chandelure|Flamethrower|p2a: Mawile
+|-supereffective|p2a: Mawile
+|-damage|p2a: Mawile|0 fnt
+|faint|p2a: Mawile
+|
+|callback|decision
+|
+|switch|p2a: Genesect|Genesect, shiny|248\/283
+|-damage|p2a: Genesect|213\/283|[from] Stealth Rock
+|-boost|p2a: Genesect|atk|1|[from] ability: Download
+|turn|25
+|callback|decision
+|
+|move|p1a: Chandelure|Flamethrower|p2a: Genesect
+|-supereffective|p2a: Genesect
+|-damage|p2a: Genesect|0 fnt
+|faint|p2a: Genesect
+|
+|win|soda4949
+|raw|Ladder updating...
+|raw|soda4949's rating: 1179 &rarr; <strong>1205<\/strong><br \/>(+26 for winning)
+|raw|WarriorBlast's rating: 1186 &rarr; <strong>1161<\/strong><br \/>(-25 for losing)
+|leave|WarriorBlast
+|player|p2

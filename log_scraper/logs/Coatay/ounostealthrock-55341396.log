@@ -1,0 +1,240 @@
+|join|Coatay
+|join|Lizardon Z
+|player|p1|Coatay|2
+|player|p2|Lizardon Z|17
+|gametype|singles
+|tier|OU (No Stealth Rock)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Ninetales, M
+|poke|p1|Volcarona, F
+|poke|p1|Venusaur, M
+|poke|p1|Dragonite, F
+|poke|p1|Skarmory, M
+|poke|p1|Alakazam, M
+|poke|p2|Charizard, M
+|poke|p2|Dugtrio, F, shiny
+|poke|p2|Gyarados, F
+|poke|p2|Alakazam, F
+|poke|p2|Jolteon, F
+|poke|p2|Dragonite, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Bernier|Skarmory, M|334\/334
+|switch|p2a: Eddie Van Halen|Gyarados, F|332\/332
+|turn|1
+|callback|decision
+|
+|move|p2a: Eddie Van Halen|Dragon Dance|p2a: Eddie Van Halen
+|-boost|p2a: Eddie Van Halen|atk|1
+|-boost|p2a: Eddie Van Halen|spe|1
+|move|p1a: Bernier|Spikes|p2a: Eddie Van Halen
+|-sidestart|p2: Lizardon Z|Spikes
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Eddie Van Halen|Dragon Dance|p2a: Eddie Van Halen
+|-boost|p2a: Eddie Van Halen|atk|1
+|-boost|p2a: Eddie Van Halen|spe|1
+|move|p1a: Bernier|Whirlwind|p2a: Eddie Van Halen
+|drag|p2a: Aidan|Charizard, M|298\/298
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Aidan|Fire Blast|p1a: Bernier
+|-crit|p1a: Bernier
+|-supereffective|p1a: Bernier
+|-activate|p1a: Bernier|Sturdy
+|-damage|p1a: Bernier|1\/334
+|move|p1a: Bernier|Brave Bird|p2a: Aidan
+|-damage|p2a: Aidan|145\/298
+|-damage|p1a: Bernier|0 fnt|[from] recoil|[of] p2a: Aidan
+|faint|p1a: Bernier
+|
+|callback|decision
+|
+|switch|p1a: Raymond|Ninetales, M|288\/288
+|-weather|SunnyDay|[from] ability: Drought|[of] p1a: Raymond
+|turn|4
+|callback|decision
+|
+|switch|p2a: Eddie Van Halen|Gyarados, F|332\/332
+|move|p1a: Raymond|Flamethrower|p2a: Eddie Van Halen
+|-resisted|p2a: Eddie Van Halen
+|-damage|p2a: Eddie Van Halen|182\/332
+|
+|-weather|SunnyDay|[upkeep]
+|turn|5
+|callback|decision
+|
+|move|p1a: Raymond|Flamethrower|p2a: Eddie Van Halen
+|-resisted|p2a: Eddie Van Halen
+|-damage|p2a: Eddie Van Halen|30\/332
+|move|p2a: Eddie Van Halen|Earthquake|p1a: Raymond
+|-supereffective|p1a: Raymond
+|-damage|p1a: Raymond|0 fnt
+|faint|p1a: Raymond
+|-boost|p2a: Eddie Van Halen|atk|1|[from] ability: Moxie
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: Carlyle|Alakazam, M|251\/251
+|turn|6
+|callback|decision
+|
+|move|p1a: Carlyle|Psyshock|p2a: Eddie Van Halen
+|-damage|p2a: Eddie Van Halen|0 fnt
+|faint|p2a: Eddie Van Halen
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p2a: Magic Man|Alakazam, F|252\/252
+|turn|7
+|callback|decision
+|
+|move|p1a: Carlyle|Shadow Ball|p2a: Magic Man
+|-supereffective|p2a: Magic Man
+|-damage|p2a: Magic Man|12\/252
+|move|p2a: Magic Man|Shadow Ball|p1a: Carlyle
+|-supereffective|p1a: Carlyle
+|-enditem|p1a: Carlyle|Focus Sash
+|-damage|p1a: Carlyle|1\/251
+|-unboost|p1a: Carlyle|spd|1
+|
+|-weather|SunnyDay|[upkeep]
+|turn|8
+|callback|decision
+|
+|switch|p2a: Triple Eighch|Dugtrio, F, shiny|212\/212
+|-damage|p2a: Triple Eighch|186\/212|[from] Spikes
+|move|p1a: Carlyle|Psyshock|p2a: Triple Eighch
+|-damage|p2a: Triple Eighch|0 fnt
+|faint|p2a: Triple Eighch
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p2a: Thunders|Jolteon, F|272\/272
+|-damage|p2a: Thunders|238\/272|[from] Spikes
+|turn|9
+|callback|decision
+|
+|move|p2a: Thunders|Thunderbolt|p1a: Carlyle
+|-damage|p1a: Carlyle|0 fnt
+|faint|p1a: Carlyle
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: Phil the Thrill|Venusaur, M|302\/302
+|turn|10
+|callback|decision
+|
+|switch|p2a: Yoko|Dragonite, F|324\/324
+|move|p1a: Phil the Thrill|Growth|p1a: Phil the Thrill
+|-boost|p1a: Phil the Thrill|atk|2
+|-boost|p1a: Phil the Thrill|spa|2
+|
+|-weather|SunnyDay|[upkeep]
+|turn|11
+|callback|decision
+|
+|move|p1a: Phil the Thrill|Sludge Bomb|p2a: Yoko
+|-damage|p2a: Yoko|201\/324
+|move|p2a: Yoko|Fire Punch|p1a: Phil the Thrill
+|-supereffective|p1a: Phil the Thrill
+|-damage|p1a: Phil the Thrill|0 fnt
+|faint|p1a: Phil the Thrill
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Yoko|221\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: The Joff|Dragonite, F|368\/368
+|turn|12
+|callback|decision
+|
+|move|p1a: The Joff|Dragon Dance|p1a: The Joff
+|-boost|p1a: The Joff|atk|1
+|-boost|p1a: The Joff|spe|1
+|move|p2a: Yoko|Outrage|p1a: The Joff
+|-supereffective|p1a: The Joff
+|-damage|p1a: The Joff|142\/368
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: The Joff|165\/368|[from] item: Leftovers
+|-heal|p2a: Yoko|241\/324|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: The Joff|Dragon Claw|p2a: Yoko
+|-supereffective|p2a: Yoko
+|-damage|p2a: Yoko|0 fnt
+|faint|p2a: Yoko
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: The Joff|188\/368|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Magic Man|Alakazam, F|12\/252
+|turn|14
+|callback|decision
+|
+|move|p1a: The Joff|Dragon Claw|p2a: Magic Man
+|-damage|p2a: Magic Man|0 fnt
+|faint|p2a: Magic Man
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: The Joff|211\/368|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Aidan|Charizard, M|145\/298
+|turn|15
+|callback|decision
+|
+|move|p2a: Aidan|Fire Blast|p1a: The Joff
+|-crit|p1a: The Joff
+|-resisted|p1a: The Joff
+|-damage|p1a: The Joff|0 fnt
+|faint|p1a: The Joff
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: McLaren|Volcarona, F|345\/345
+|turn|16
+|callback|decision
+|
+|move|p2a: Aidan|Fire Blast|p1a: McLaren
+|-damage|p1a: McLaren|57\/345
+|move|p1a: McLaren|Quiver Dance|p1a: McLaren
+|-boost|p1a: McLaren|spa|1
+|-boost|p1a: McLaren|spd|1
+|-boost|p1a: McLaren|spe|1
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: McLaren|78\/345|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p2a: Aidan|Fire Blast|p1a: McLaren
+|-damage|p1a: McLaren|0 fnt
+|faint|p1a: McLaren
+|
+|win|Lizardon Z
+|raw|Ladder updating...
+|raw|Coatay's rating: 1857 &rarr; <strong>1848<\/strong><br \/>(-9 for losing)
+|raw|Lizardon Z's rating: 1592 &rarr; <strong>1632<\/strong><br \/>(+40 for winning)

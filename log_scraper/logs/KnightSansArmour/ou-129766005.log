@@ -1,0 +1,502 @@
+|join|Dr. Ad3s
+|join|KnightSansArmour
+|player|p1|Dr. Ad3s|267
+|player|p2|KnightSansArmour|170
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Gengar, F, shiny
+|poke|p1|Tyranitar, M
+|poke|p1|Rotom-Wash
+|poke|p1|Venusaur, M
+|poke|p1|Landorus-Therian, M
+|poke|p1|Skarmory, M
+|poke|p2|Gliscor, M
+|poke|p2|Chansey, F
+|poke|p2|Noivern, F
+|poke|p2|Blastoise, M
+|poke|p2|Zapdos
+|poke|p2|Metagross
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Homicide|Landorus-Therian, M|320\/320
+|switch|p2a: Blastoise|Blastoise, M|362\/362
+|-ability|p1a: Homicide|Intimidate|[of] p2a: Blastoise
+|-unboost|p2a: Blastoise|atk|1
+|turn|1
+|
+|detailschange|p2a: Blastoise|Blastoise-Mega, M
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p1a: Homicide|U-turn|p2a: Blastoise
+|-damage|p2a: Blastoise|279\/362
+|
+|switch|p1a: Judge|Venusaur, M|364\/364
+|move|p2a: Blastoise|Water Pulse|p1a: Judge
+|-resisted|p1a: Judge
+|-damage|p1a: Judge|281\/364
+|
+|turn|2
+|
+|switch|p2a: Metagross|Metagross|364\/364
+|detailschange|p1a: Judge|Venusaur-Mega, M
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p1a: Judge|Giga Drain|p2a: Metagross
+|-resisted|p2a: Metagross
+|-damage|p2a: Metagross|318\/364
+|-heal|p1a: Judge|304\/364|[from] drain|[of] p2a: Metagross
+|
+|turn|3
+|
+|switch|p1a: Juggernaut|Skarmory, M|334\/334
+|move|p2a: Metagross|Zen Headbutt|p1a: Juggernaut
+|-resisted|p1a: Juggernaut
+|-damage|p1a: Juggernaut|291\/334
+|
+|-heal|p1a: Juggernaut|311\/334|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Zapdos|Zapdos|384\/384
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Juggernaut|Stealth Rock|p2a: Zapdos
+|-sidestart|p2: KnightSansArmour|move: Stealth Rock
+|
+|-heal|p1a: Juggernaut|331\/334|[from] item: Leftovers
+|turn|5
+|
+|switch|p1a: Homicide|Landorus-Therian, M|320\/320
+|-ability|p1a: Homicide|Intimidate|[of] p2a: Zapdos
+|-unboost|p2a: Zapdos|atk|1
+|move|p2a: Zapdos|Defog|p1a: Homicide
+|-unboost|p1a: Homicide|evasion|1
+|-sideend|p2: KnightSansArmour|Stealth Rock|[from] move: Defog|[of] p2a: Zapdos
+|
+|turn|6
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354
+|move|p1a: Homicide|U-turn|p2a: Gliscor
+|-resisted|p2a: Gliscor
+|-damage|p2a: Gliscor|321\/354
+|
+|switch|p1a: Mastermind|Rotom-Wash|304\/304
+|
+|-status|p2a: Gliscor|tox|[from] item: Toxic Orb
+|turn|7
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Mastermind|Volt Switch|p2a: Gliscor
+|-immune|p2a: Gliscor|[msg]
+|
+|-heal|p2a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|turn|8
+|
+|move|p2a: Gliscor|Substitute|p2a: Gliscor
+|-start|p2a: Gliscor|Substitute
+|-damage|p2a: Gliscor|266\/354 tox
+|move|p1a: Mastermind|Hydro Pump|p2a: Gliscor
+|-supereffective|p2a: Gliscor
+|-end|p2a: Gliscor|Substitute
+|
+|-heal|p2a: Gliscor|310\/354 tox|[from] ability: Poison Heal
+|turn|9
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Mastermind|Hydro Pump|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-heal|p2a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|turn|10
+|
+|switch|p1a: Judge|Venusaur-Mega, M|304\/364
+|move|p2a: Gliscor|Substitute|p2a: Gliscor
+|-start|p2a: Gliscor|Substitute
+|-damage|p2a: Gliscor|266\/354 tox
+|
+|-heal|p2a: Gliscor|310\/354 tox|[from] ability: Poison Heal
+|turn|11
+|
+|move|p2a: Gliscor|Earthquake|p1a: Judge
+|-damage|p1a: Judge|207\/364
+|move|p1a: Judge|Sludge Bomb|p2a: Gliscor
+|-resisted|p2a: Gliscor
+|-end|p2a: Gliscor|Substitute
+|
+|-heal|p2a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|turn|12
+|
+|switch|p2a: Metagross|Metagross|318\/364
+|move|p1a: Judge|Giga Drain|p2a: Metagross
+|-resisted|p2a: Metagross
+|-damage|p2a: Metagross|269\/364
+|-heal|p1a: Judge|232\/364|[from] drain|[of] p2a: Metagross
+|
+|turn|13
+|
+|switch|p1a: Homicide|Landorus-Therian, M|320\/320
+|-ability|p1a: Homicide|Intimidate|[of] p2a: Metagross
+|-fail|p2a: Metagross|unboost|[from] ability: Clear Body|[of] p2a: Metagross
+|switch|p2a: Zapdos|Zapdos|384\/384
+|-ability|p2a: Zapdos|Pressure
+|
+|turn|14
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354 tox
+|move|p1a: Homicide|Stone Edge|p2a: Gliscor
+|-damage|p2a: Gliscor|264\/354 tox
+|
+|-heal|p2a: Gliscor|308\/354 tox|[from] ability: Poison Heal
+|turn|15
+|
+|switch|p1a: Judge|Venusaur-Mega, M|232\/364
+|move|p2a: Gliscor|Substitute|p2a: Gliscor
+|-start|p2a: Gliscor|Substitute
+|-damage|p2a: Gliscor|220\/354 tox
+|
+|-heal|p2a: Gliscor|264\/354 tox|[from] ability: Poison Heal
+|turn|16
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Judge|Giga Drain|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-heal|p2a: Gliscor|308\/354 tox|[from] ability: Poison Heal
+|turn|17
+|
+|move|p2a: Gliscor|Earthquake|p1a: Judge
+|-damage|p1a: Judge|133\/364
+|move|p1a: Judge|Giga Drain|p2a: Gliscor
+|-end|p2a: Gliscor|Substitute
+|-heal|p1a: Judge|177\/364|[from] drain|[of] p2a: Gliscor
+|
+|-heal|p2a: Gliscor|352\/354 tox|[from] ability: Poison Heal
+|turn|18
+|
+|switch|p2a: Noivern|Noivern, F|311\/311
+|move|p1a: Judge|Synthesis|p1a: Judge
+|-heal|p1a: Judge|359\/364
+|
+|turn|19
+|
+|switch|p1a: Mastermind|Rotom-Wash|304\/304
+|move|p2a: Noivern|Hurricane|p1a: Mastermind
+|-resisted|p1a: Mastermind
+|-damage|p1a: Mastermind|221\/304
+|
+|turn|20
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|move|p1a: Mastermind|Hydro Pump|p2a: Chansey
+|-damage|p2a: Chansey|610\/704
+|
+|turn|21
+|
+|move|p1a: Mastermind|Will-O-Wisp|p2a: Chansey
+|-status|p2a: Chansey|brn
+|move|p2a: Chansey|Toxic|p1a: Mastermind
+|-status|p1a: Mastermind|tox
+|
+|-damage|p1a: Mastermind|202\/304 tox|[from] psn
+|-damage|p2a: Chansey|522\/704 brn|[from] brn
+|turn|22
+|
+|switch|p2a: Gliscor|Gliscor, M|352\/354 tox
+|move|p1a: Mastermind|Volt Switch|p2a: Gliscor
+|-immune|p2a: Gliscor|[msg]
+|
+|-heal|p2a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|-damage|p1a: Mastermind|164\/304 tox|[from] psn
+|turn|23
+|
+|switch|p1a: Victim|Gengar, F, shiny|262\/262
+|move|p2a: Gliscor|Substitute|p2a: Gliscor
+|-start|p2a: Gliscor|Substitute
+|-damage|p2a: Gliscor|266\/354 tox
+|
+|-heal|p2a: Gliscor|310\/354 tox|[from] ability: Poison Heal
+|turn|24
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Victim|Substitute|p1a: Victim
+|-start|p1a: Victim|Substitute
+|-damage|p1a: Victim|197\/262
+|
+|-heal|p1a: Victim|213\/262|[from] item: Black Sludge
+|-heal|p2a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|turn|25
+|
+|switch|p2a: Chansey|Chansey, F|522\/704
+|move|p1a: Victim|Shadow Ball|p2a: Chansey
+|-immune|p2a: Chansey|[msg]
+|
+|-heal|p1a: Victim|229\/262|[from] item: Black Sludge
+|turn|26
+|
+|switch|p2a: Metagross|Metagross|269\/364
+|move|p1a: Victim|Focus Blast|p2a: Metagross
+|-damage|p2a: Metagross|168\/364
+|
+|-heal|p1a: Victim|245\/262|[from] item: Black Sludge
+|turn|27
+|
+|move|p2a: Metagross|Bullet Punch|p1a: Victim
+|-end|p1a: Victim|Substitute
+|move|p1a: Victim|Shadow Ball|p2a: Metagross
+|-supereffective|p2a: Metagross
+|-damage|p2a: Metagross|0 fnt
+|faint|p2a: Metagross
+|
+|-heal|p1a: Victim|261\/262|[from] item: Black Sludge
+|
+|switch|p2a: Noivern|Noivern, F|311\/311
+|turn|28
+|
+|switch|p1a: Stalker|Tyranitar, M|404\/404
+|-weather|Sandstorm
+|move|p2a: Noivern|Draco Meteor|p1a: Stalker
+|-damage|p1a: Stalker|280\/404
+|-unboost|p2a: Noivern|spa|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Noivern|292\/311|[from] sandstorm
+|turn|29
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|279\/362
+|move|p1a: Stalker|Crunch|p2a: Blastoise
+|-damage|p2a: Blastoise|150\/362
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Blastoise|128\/362|[from] sandstorm
+|turn|30
+|
+|move|p2a: Blastoise|Aura Sphere|p1a: Stalker
+|-supereffective|p1a: Stalker
+|-damage|p1a: Stalker|0 fnt
+|faint|p1a: Stalker
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Blastoise|106\/362|[from] sandstorm
+|
+|switch|p1a: Victim|Gengar, F, shiny|261\/262
+|turn|31
+|
+|move|p1a: Victim|Shadow Ball|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Victim|245\/262|[from] sandstorm
+|-heal|p1a: Victim|261\/262|[from] item: Black Sludge
+|
+|switch|p2a: Noivern|Noivern, F|292\/311
+|turn|32
+|
+|switch|p1a: Mastermind|Rotom-Wash|164\/304 tox
+|move|p2a: Noivern|Draco Meteor|p1a: Mastermind
+|-damage|p1a: Mastermind|0 fnt
+|-unboost|p2a: Noivern|spa|2
+|faint|p1a: Mastermind
+|
+|-weather|none
+|
+|switch|p1a: Judge|Venusaur-Mega, M|359\/364
+|turn|33
+|
+|switch|p2a: Zapdos|Zapdos|384\/384
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Judge|Sludge Bomb|p2a: Zapdos
+|-damage|p2a: Zapdos|204\/384
+|
+|-heal|p2a: Zapdos|228\/384|[from] item: Leftovers
+|turn|34
+|
+|switch|p2a: Chansey|Chansey, F|522\/704
+|move|p1a: Judge|Sludge Bomb|p2a: Chansey
+|-damage|p2a: Chansey|420\/704
+|
+|turn|35
+|
+|move|p1a: Judge|Sludge Bomb|p2a: Chansey
+|-damage|p2a: Chansey|315\/704
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|667\/704
+|
+|turn|36
+|
+|move|p1a: Judge|Sludge Bomb|p2a: Chansey
+|-damage|p2a: Chansey|556\/704
+|move|p2a: Chansey|Seismic Toss|p1a: Judge
+|-damage|p1a: Judge|259\/364
+|
+|turn|37
+|
+|move|p1a: Judge|Sludge Bomb|p2a: Chansey
+|-damage|p2a: Chansey|444\/704
+|-status|p2a: Chansey|psn
+|move|p2a: Chansey|Seismic Toss|p1a: Judge
+|-damage|p1a: Judge|159\/364
+|
+|-damage|p2a: Chansey|356\/704 psn|[from] psn
+|turn|38
+|
+|switch|p2a: Noivern|Noivern, F|292\/311
+|move|p1a: Judge|Giga Drain|p2a: Noivern
+|-resisted|p2a: Noivern
+|-damage|p2a: Noivern|250\/311
+|-heal|p1a: Judge|180\/364|[from] drain|[of] p2a: Noivern
+|
+|turn|39
+|
+|move|p2a: Noivern|Hurricane|p1a: Judge
+|-supereffective|p1a: Judge
+|-damage|p1a: Judge|0 fnt
+|faint|p1a: Judge
+|
+|
+|switch|p1a: Homicide|Landorus-Therian, M|320\/320
+|-ability|p1a: Homicide|Intimidate|[of] p2a: Noivern
+|-unboost|p2a: Noivern|atk|1
+|turn|40
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354 tox
+|move|p1a: Homicide|U-turn|p2a: Gliscor
+|-resisted|p2a: Gliscor
+|-damage|p2a: Gliscor|321\/354 tox
+|
+|switch|p1a: Victim|Gengar, F, shiny|261\/262
+|
+|-heal|p1a: Victim|262\/262|[from] item: Black Sludge
+|-heal|p2a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|turn|41
+|
+|switch|p2a: Chansey|Chansey, F|356\/704
+|move|p1a: Victim|Focus Blast|p2a: Chansey
+|-supereffective|p2a: Chansey
+|-damage|p2a: Chansey|188\/704
+|-unboost|p2a: Chansey|spd|1
+|
+|turn|42
+|
+|move|p1a: Victim|Focus Blast|p2a: Chansey
+|-supereffective|p2a: Chansey
+|-damage|p2a: Chansey|0 fnt
+|faint|p2a: Chansey
+|
+|
+|switch|p2a: Noivern|Noivern, F|250\/311
+|turn|43
+|
+|switch|p1a: Juggernaut|Skarmory, M|331\/334
+|move|p2a: Noivern|Draco Meteor|p1a: Juggernaut|[miss]
+|-miss|p2a: Noivern|p1a: Juggernaut
+|
+|-heal|p1a: Juggernaut|334\/334|[from] item: Leftovers
+|turn|44
+|
+|switch|p2a: Zapdos|Zapdos|228\/384
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Juggernaut|Stealth Rock|p2a: Zapdos
+|-sidestart|p2: KnightSansArmour|move: Stealth Rock
+|
+|-heal|p2a: Zapdos|252\/384|[from] item: Leftovers
+|turn|45
+|
+|switch|p1a: Homicide|Landorus-Therian, M|320\/320
+|-ability|p1a: Homicide|Intimidate|[of] p2a: Zapdos
+|-unboost|p2a: Zapdos|atk|1
+|move|p2a: Zapdos|Defog|p1a: Homicide
+|-unboost|p1a: Homicide|evasion|1
+|-sideend|p2: KnightSansArmour|Stealth Rock|[from] move: Defog|[of] p2a: Zapdos
+|
+|-heal|p2a: Zapdos|276\/384|[from] item: Leftovers
+|turn|46
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354 tox
+|move|p1a: Homicide|Stone Edge|p2a: Gliscor
+|-damage|p2a: Gliscor|254\/354 tox
+|
+|-heal|p2a: Gliscor|298\/354 tox|[from] ability: Poison Heal
+|turn|47
+|
+|switch|p1a: Juggernaut|Skarmory, M|334\/334
+|switch|p2a: Noivern|Noivern, F|250\/311
+|
+|turn|48
+|
+|move|p2a: Noivern|Flamethrower|p1a: Juggernaut
+|-supereffective|p1a: Juggernaut
+|-damage|p1a: Juggernaut|8\/334
+|move|p1a: Juggernaut|Stealth Rock|p2a: Noivern
+|-sidestart|p2: KnightSansArmour|move: Stealth Rock
+|
+|-heal|p1a: Juggernaut|28\/334|[from] item: Leftovers
+|turn|49
+|
+|move|p2a: Noivern|Flamethrower|p1a: Juggernaut
+|-supereffective|p1a: Juggernaut
+|-damage|p1a: Juggernaut|0 fnt
+|faint|p1a: Juggernaut
+|
+|
+|switch|p1a: Homicide|Landorus-Therian, M|320\/320
+|-ability|p1a: Homicide|Intimidate|[of] p2a: Noivern
+|-unboost|p2a: Noivern|atk|1
+|turn|50
+|
+|switch|p2a: Gliscor|Gliscor, M|298\/354 tox
+|-damage|p2a: Gliscor|254\/354 tox|[from] Stealth Rock
+|move|p1a: Homicide|Explosion|p2a: Gliscor
+|-damage|p2a: Gliscor|32\/354 tox
+|faint|p1a: Homicide
+|
+|-heal|p2a: Gliscor|76\/354 tox|[from] ability: Poison Heal
+|
+|switch|p1a: Victim|Gengar, F, shiny|262\/262
+|turn|51
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Victim|Substitute|p1a: Victim
+|-start|p1a: Victim|Substitute
+|-damage|p1a: Victim|197\/262
+|
+|-heal|p1a: Victim|213\/262|[from] item: Black Sludge
+|-heal|p2a: Gliscor|120\/354 tox|[from] ability: Poison Heal
+|turn|52
+|
+|move|p1a: Victim|Shadow Ball|p2a: Gliscor
+|-damage|p2a: Gliscor|0 fnt
+|faint|p2a: Gliscor
+|
+|-heal|p1a: Victim|229\/262|[from] item: Black Sludge
+|
+|switch|p2a: Noivern|Noivern, F|250\/311
+|-damage|p2a: Noivern|173\/311|[from] Stealth Rock
+|turn|53
+|chat|KnightSansArmour|gg
+|
+|move|p2a: Noivern|Draco Meteor|p1a: Victim
+|-damage|p1a: Victim|0 fnt
+|-unboost|p2a: Noivern|spa|2
+|faint|p1a: Victim
+|
+|win|KnightSansArmour
+|raw|Ladder updating...
+|raw|Dr. Ad3s's rating: 1676 &rarr; <strong>1648<\/strong><br \/>(-28 for losing)
+|raw|KnightSansArmour's rating: 1536 &rarr; <strong>1564<\/strong><br \/>(+28 for winning)
+|chat|Dr. Ad3s|Dat infiltrator tho
+|leave|Dr. Ad3s
+|player|p1
+|chat|KnightSansArmour|Yup
