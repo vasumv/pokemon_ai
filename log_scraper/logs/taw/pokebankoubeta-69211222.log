@@ -1,0 +1,318 @@
+|join|taw
+|join|ahti65
+|player|p1|taw|265
+|player|p2|ahti65|257
+|gametype|singles
+|tier|Pokebank OU (beta)
+|rated
+|clearpoke
+|poke|p1|Kangaskhan, F
+|poke|p1|Tyranitar, F
+|poke|p1|Rotom-Wash
+|poke|p1|Volcarona, F
+|poke|p1|Mandibuzz, F
+|poke|p1|Genesect
+|poke|p2|Breloom, M
+|poke|p2|Goodra, F
+|poke|p2|Absol, F
+|poke|p2|Skarmory, M
+|poke|p2|Klefki, F
+|poke|p2|Barbaracle, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Kangaskhan|Kangaskhan, F|414\/414
+|switch|p2a: Absol|Absol, F|271\/271
+|turn|1
+|callback|decision
+|
+|switch|p2a: Klefki|Klefki, F|318\/318
+|-formechange|p1a: Kangaskhan|Kangaskhan-Mega
+|message|Kangaskhan has Mega Evolved into Mega Kangaskhan!
+|move|p1a: Kangaskhan|Power-Up Punch|p2a: Klefki
+|-damage|p2a: Klefki|281\/318
+|-boost|p1a: Kangaskhan|atk|1
+|-damage|p2a: Klefki|252\/318
+|-boost|p1a: Kangaskhan|atk|1
+|-hitcount|p2a: Klefki|2
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Klefki|Reflect|p2a: Klefki
+|-sidestart|p2: ahti65|Reflect
+|move|p1a: Kangaskhan|Return|p2a: Klefki
+|-resisted|p2a: Klefki
+|-damage|p2a: Klefki|180\/318
+|-resisted|p2a: Klefki
+|-damage|p2a: Klefki|141\/318
+|-hitcount|p2a: Klefki|2
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Klefki|Thunder Wave|p1a: Kangaskhan
+|-status|p1a: Kangaskhan|par
+|move|p1a: Kangaskhan|Power-Up Punch|p2a: Klefki
+|-damage|p2a: Klefki|101\/318
+|-boost|p1a: Kangaskhan|atk|1
+|-crit|p2a: Klefki
+|-damage|p2a: Klefki|21\/318
+|-boost|p1a: Kangaskhan|atk|1
+|-hitcount|p2a: Klefki|2
+|
+|turn|4
+|callback|decision
+|
+|move|p2a: Klefki|Foul Play|p1a: Kangaskhan
+|-damage|p1a: Kangaskhan|52\/414 par
+|move|p1a: Kangaskhan|Power-Up Punch|p2a: Klefki
+|-damage|p2a: Klefki|0 fnt
+|-boost|p1a: Kangaskhan|atk|1
+|-hitcount|p2a: Klefki|1
+|faint|p2a: Klefki
+|
+|callback|decision
+|
+|switch|p2a: Absol|Absol, F|271\/271
+|turn|5
+|callback|decision
+|
+|-formechange|p2a: Absol|Absol-Mega
+|message|Absol has Mega Evolved into Mega Absol!
+|move|p2a: Absol|Fire Blast|p1a: Kangaskhan
+|-damage|p1a: Kangaskhan|0 fnt
+|faint|p1a: Kangaskhan
+|
+|callback|decision
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|424\/424
+|turn|6
+|callback|decision
+|
+|move|p2a: Absol|Will-O-Wisp|p1a: Mandibuzz
+|-status|p1a: Mandibuzz|brn
+|move|p1a: Mandibuzz|Toxic|p2a: Absol
+|move|p2a: Absol|Toxic|p1a: Mandibuzz|[from]Magic Bounce
+|-fail|p1a: Mandibuzz
+|
+|-damage|p1a: Mandibuzz|371\/424 brn|[from] brn
+|turn|7
+|callback|decision
+|
+|switch|p2a: Barbaracle|Barbaracle, M|286\/286
+|switch|p1a: Volcarona|Volcarona, F|374\/374
+|
+|turn|8
+|callback|decision
+|
+|move|p1a: Volcarona|Giga Drain|p2a: Barbaracle
+|-supereffective|p2a: Barbaracle
+|-damage|p2a: Barbaracle|0 fnt
+|faint|p2a: Barbaracle
+|
+|callback|decision
+|
+|switch|p2a: Breloom|Breloom, M|262\/262
+|turn|9
+|callback|decision
+|
+|move|p2a: Breloom|Spore|p1a: Volcarona
+|-status|p1a: Volcarona|slp
+|cant|p1a: Volcarona|slp
+|
+|-sideend|p2: ahti65|Reflect
+|turn|10
+|callback|decision
+|
+|move|p2a: Breloom|Rock Tomb|p1a: Volcarona
+|-supereffective|p1a: Volcarona
+|-damage|p1a: Volcarona|0 fnt
+|faint|p1a: Volcarona
+|
+|callback|decision
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|371\/424 brn
+|turn|11
+|callback|decision
+|
+|switch|p2a: Absol|Absol, F|271\/271
+|-formechange|p2a: Absol|Absol-Mega
+|move|p1a: Mandibuzz|Toxic|p2a: Absol
+|move|p2a: Absol|Toxic|p1a: Mandibuzz|[from]Magic Bounce
+|-fail|p1a: Mandibuzz
+|
+|-heal|p1a: Mandibuzz|397\/424 brn|[from] item: Leftovers
+|-damage|p1a: Mandibuzz|344\/424 brn|[from] brn
+|turn|12
+|callback|decision
+|
+|switch|p2a: Skarmory|Skarmory, M|334\/334
+|move|p1a: Mandibuzz|Knock Off|p2a: Skarmory
+|-damage|p2a: Skarmory|313\/334
+|-enditem|p2a: Skarmory|Leftovers|[from] move: Knock Off|[of] p1a: Mandibuzz
+|
+|-heal|p1a: Mandibuzz|370\/424 brn|[from] item: Leftovers
+|-damage|p1a: Mandibuzz|317\/424 brn|[from] brn
+|turn|13
+|callback|decision
+|
+|move|p1a: Mandibuzz|Defog|p2a: Skarmory
+|-unboost|p2a: Skarmory|evasion|1
+|move|p2a: Skarmory|Stealth Rock|p1a: Mandibuzz
+|-sidestart|p1: taw|move: Stealth Rock
+|
+|-heal|p1a: Mandibuzz|343\/424 brn|[from] item: Leftovers
+|-damage|p1a: Mandibuzz|290\/424 brn|[from] brn
+|turn|14
+|callback|decision
+|
+|move|p1a: Mandibuzz|Defog|p2a: Skarmory
+|-unboost|p2a: Skarmory|evasion|1
+|-sideend|p1: taw|Stealth Rock|[from] move: Defog|[of] p1a: Mandibuzz
+|move|p2a: Skarmory|Whirlwind|p1a: Mandibuzz
+|drag|p1a: Tyranitar|Tyranitar, F|404\/404
+|-weather|Sandstorm
+|
+|-weather|Sandstorm|[upkeep]
+|turn|15
+|callback|decision
+|
+|move|p2a: Skarmory|Stealth Rock|p1a: Tyranitar
+|-sidestart|p1: taw|move: Stealth Rock
+|move|p1a: Tyranitar|Stealth Rock|p2a: Skarmory
+|-sidestart|p2: ahti65|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|16
+|callback|decision
+|
+|move|p2a: Skarmory|Brave Bird|p1a: Tyranitar
+|-crit|p1a: Tyranitar
+|-resisted|p1a: Tyranitar
+|-damage|p1a: Tyranitar|329\/404
+|-damage|p2a: Skarmory|288\/334|[from] recoil|[of] p1a: Tyranitar
+|move|p1a: Tyranitar|Dragon Dance|p1a: Tyranitar
+|-boost|p1a: Tyranitar|atk|1
+|-boost|p1a: Tyranitar|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Tyranitar|354\/404|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Tyranitar|Dragon Dance|p1a: Tyranitar
+|-boost|p1a: Tyranitar|atk|1
+|-boost|p1a: Tyranitar|spe|1
+|move|p2a: Skarmory|Brave Bird|p1a: Tyranitar
+|-resisted|p1a: Tyranitar
+|-damage|p1a: Tyranitar|297\/404
+|-damage|p2a: Skarmory|269\/334|[from] recoil|[of] p1a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Tyranitar|322\/404|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p1a: Tyranitar|Stone Edge|p2a: Skarmory
+|-damage|p2a: Skarmory|92\/334
+|move|p2a: Skarmory|Brave Bird|p1a: Tyranitar
+|-resisted|p1a: Tyranitar
+|-damage|p1a: Tyranitar|270\/404
+|-damage|p2a: Skarmory|75\/334|[from] recoil|[of] p1a: Tyranitar
+|
+|-weather|none
+|-heal|p1a: Tyranitar|295\/404|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p1a: Tyranitar|Stone Edge|p2a: Skarmory
+|-damage|p2a: Skarmory|0 fnt
+|faint|p2a: Skarmory
+|
+|-heal|p1a: Tyranitar|320\/404|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Breloom|Breloom, M|262\/262
+|-damage|p2a: Breloom|246\/262|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|move|p2a: Breloom|Mach Punch|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|faint|p1a: Tyranitar
+|
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|-damage|p1a: Rotom-Wash|266\/304|[from] Stealth Rock
+|turn|21
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Trick|p2a: Breloom
+|-activate|p1a: Rotom-Wash|move: Trick|[of] p2a: Breloom
+|-item|p2a: Breloom|Choice Scarf|[from] move: Trick
+|-item|p1a: Rotom-Wash|Focus Sash|[from] move: Trick
+|move|p2a: Breloom|Bullet Seed|p1a: Rotom-Wash
+|-supereffective|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|132\/304
+|-supereffective|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|-hitcount|p1a: Rotom-Wash|2
+|faint|p1a: Rotom-Wash
+|
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|283\/283
+|-damage|p1a: Genesect|248\/283|[from] Stealth Rock
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|turn|22
+|callback|decision
+|
+|switch|p2a: Goodra|Goodra, F|384\/384
+|-damage|p2a: Goodra|336\/384|[from] Stealth Rock
+|move|p1a: Genesect|Ice Beam|p2a: Goodra
+|-supereffective|p2a: Goodra
+|-damage|p2a: Goodra|196\/384
+|
+|turn|23
+|callback|decision
+|
+|move|p1a: Genesect|Ice Beam|p2a: Goodra
+|-supereffective|p2a: Goodra
+|-damage|p2a: Goodra|52\/384
+|move|p2a: Goodra|Fire Blast|p1a: Genesect
+|-supereffective|p1a: Genesect
+|-damage|p1a: Genesect|0 fnt
+|faint|p1a: Genesect
+|
+|callback|decision
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|290\/424 brn
+|-damage|p1a: Mandibuzz|184\/424 brn|[from] Stealth Rock
+|turn|24
+|callback|decision
+|
+|move|p1a: Mandibuzz|Knock Off|p2a: Goodra
+|-damage|p2a: Goodra|6\/384
+|-unboost|p1a: Mandibuzz|spe|1|[from] ability: Gooey
+|-enditem|p2a: Goodra|Assault Vest|[from] move: Knock Off|[of] p1a: Mandibuzz
+|move|p2a: Goodra|Draco Meteor|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|0 fnt
+|-unboost|p2a: Goodra|spa|2
+|faint|p1a: Mandibuzz
+|
+|win|ahti65
+|raw|Ladder updating...
+|raw|taw's rating: 1896 &rarr; <strong>1889<\/strong><br \/>(-7 for losing)
+|raw|ahti65's rating: 1596 &rarr; <strong>1603<\/strong><br \/>(+7 for winning)
+|leave|taw
+|player|p1

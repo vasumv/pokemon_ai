@@ -1,0 +1,361 @@
+|join|Makers
+|join|MartinSousRace
+|player|p1|Makers|170
+|player|p2|MartinSousRace|264
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Gardevoir, M
+|poke|p1|Talonflame, F
+|poke|p1|Bisharp, M
+|poke|p1|Latias, F
+|poke|p1|Landorus-Therian, M
+|poke|p1|Breloom, F
+|poke|p2|Medicham, F
+|poke|p2|Milotic, F, shiny
+|poke|p2|Gliscor, M
+|poke|p2|Scizor, M
+|poke|p2|Seismitoad, F
+|poke|p2|Zapdos
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Breloom|Breloom, F|262\/262
+|switch|p2a: Medicham|Medicham, F|261\/261
+|turn|1
+|
+|detailschange|p2a: Medicham|Medicham-Mega, F
+|message|Medicham has Mega Evolved into Mega Medicham!
+|move|p2a: Medicham|Fake Out|p1a: Breloom
+|-damage|p1a: Breloom|167\/262
+|cant|p1a: Breloom|flinch
+|
+|turn|2
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|382\/382
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Medicham
+|-unboost|p2a: Medicham|atk|1
+|move|p2a: Medicham|Fire Punch|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|286\/382
+|
+|-heal|p1a: Landorus-Therian|309\/382|[from] item: Leftovers
+|turn|3
+|
+|switch|p2a: Gliscor|Gliscor, M|352\/352
+|move|p1a: Landorus-Therian|Earthquake|p2a: Gliscor
+|-immune|p2a: Gliscor|[msg]
+|
+|-heal|p1a: Landorus-Therian|332\/382|[from] item: Leftovers
+|-status|p2a: Gliscor|tox|[from] item: Toxic Orb
+|turn|4
+|
+|move|p2a: Gliscor|Taunt|p1a: Landorus-Therian
+|-start|p1a: Landorus-Therian|move: Taunt
+|cant|p1a: Landorus-Therian|move: Taunt|Stealth Rock
+|
+|-heal|p1a: Landorus-Therian|355\/382|[from] item: Leftovers
+|turn|5
+|
+|move|p2a: Gliscor|Knock Off|p1a: Landorus-Therian
+|-crit|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|249\/382
+|-enditem|p1a: Landorus-Therian|Leftovers|[from] move: Knock Off|[of] p2a: Gliscor
+|move|p1a: Landorus-Therian|U-turn|p2a: Gliscor
+|-resisted|p2a: Gliscor
+|-damage|p2a: Gliscor|323\/352 tox
+|
+|switch|p1a: Gardevoir|Gardevoir, M|277\/277
+|-ability|p1a: Gardevoir|Poison Heal|[from] ability: Trace|[of] p2a: Gliscor
+|
+|-heal|p2a: Gliscor|352\/352 tox|[from] ability: Poison Heal
+|turn|6
+|
+|detailschange|p1a: Gardevoir|Gardevoir-Mega, M
+|message|Gardevoir has Mega Evolved into Mega Gardevoir!
+|move|p2a: Gliscor|U-turn|p1a: Gardevoir
+|-damage|p1a: Gardevoir|208\/277
+|
+|switch|p2a: Scizor|Scizor, M|292\/292
+|move|p1a: Gardevoir|Will-O-Wisp|p2a: Scizor
+|-status|p2a: Scizor|brn
+|
+|-damage|p2a: Scizor|256\/292 brn|[from] brn
+|turn|7
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|249\/382
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Scizor
+|-unboost|p2a: Scizor|atk|1
+|move|p2a: Scizor|Bullet Punch|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|191\/382
+|
+|-damage|p2a: Scizor|220\/292 brn|[from] brn
+|turn|8
+|
+|switch|p2a: Milotic|Milotic, F, shiny|394\/394
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Milotic
+|-sidestart|p2: MartinSousRace|move: Stealth Rock
+|
+|turn|9
+|
+|move|p1a: Landorus-Therian|Knock Off|p2a: Milotic
+|-damage|p2a: Milotic|305\/394
+|-enditem|p2a: Milotic|Leftovers|[from] move: Knock Off|[of] p1a: Landorus-Therian
+|move|p2a: Milotic|Scald|p1a: Landorus-Therian
+|-supereffective|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|faint|p1a: Landorus-Therian
+|
+|
+|switch|p1a: Breloom|Breloom, F|167\/262
+|turn|10
+|
+|switch|p1a: Gardevoir|Gardevoir-Mega, M|208\/277
+|switch|p2a: Gliscor|Gliscor, M|352\/352 tox
+|-damage|p2a: Gliscor|308\/352 tox|[from] Stealth Rock
+|
+|-heal|p2a: Gliscor|352\/352 tox|[from] ability: Poison Heal
+|turn|11
+|
+|move|p2a: Gliscor|U-turn|p1a: Gardevoir
+|-damage|p1a: Gardevoir|137\/277
+|
+|switch|p2a: Scizor|Scizor, M|220\/292 brn
+|-damage|p2a: Scizor|184\/292 brn|[from] Stealth Rock
+|move|p1a: Gardevoir|Hyper Voice|p2a: Scizor
+|-resisted|p2a: Scizor
+|-damage|p2a: Scizor|14\/292 brn
+|
+|-damage|p2a: Scizor|0 fnt|[from] brn
+|faint|p2a: Scizor
+|
+|switch|p2a: Medicham|Medicham-Mega, F|261\/261
+|-damage|p2a: Medicham|245\/261|[from] Stealth Rock
+|turn|12
+|
+|switch|p1a: Latias|Latias, F|302\/302
+|move|p2a: Medicham|Fake Out|p1a: Latias
+|-damage|p1a: Latias|217\/302
+|
+|turn|13
+|
+|switch|p2a: Seismitoad|Seismitoad, F|414\/414
+|-damage|p2a: Seismitoad|389\/414|[from] Stealth Rock
+|move|p1a: Latias|Draco Meteor|p2a: Seismitoad
+|-damage|p2a: Seismitoad|146\/414
+|-unboost|p1a: Latias|spa|2
+|-damage|p1a: Latias|187\/302|[from] item: Life Orb
+|
+|-heal|p2a: Seismitoad|171\/414|[from] item: Leftovers
+|turn|14
+|
+|move|p1a: Latias|Draco Meteor|p2a: Seismitoad
+|-damage|p2a: Seismitoad|45\/414
+|-unboost|p1a: Latias|spa|2
+|-damage|p1a: Latias|157\/302|[from] item: Life Orb
+|move|p2a: Seismitoad|Stealth Rock|p1a: Latias
+|-sidestart|p1: Makers|move: Stealth Rock
+|
+|-heal|p2a: Seismitoad|70\/414|[from] item: Leftovers
+|turn|15
+|
+|move|p2a: Seismitoad|Protect|p2a: Seismitoad
+|-singleturn|p2a: Seismitoad|Protect
+|move|p1a: Latias|Defog|p2a: Seismitoad
+|-activate|p2a: Seismitoad|Protect
+|
+|-heal|p2a: Seismitoad|95\/414|[from] item: Leftovers
+|turn|16
+|
+|switch|p1a: Breloom|Breloom, F|167\/262
+|-damage|p1a: Breloom|151\/262|[from] Stealth Rock
+|move|p2a: Seismitoad|Ice Punch|p1a: Breloom
+|-supereffective|p1a: Breloom
+|-damage|p1a: Breloom|21\/262
+|-status|p1a: Breloom|frz
+|
+|-heal|p2a: Seismitoad|120\/414|[from] item: Leftovers
+|turn|17
+|
+|cant|p1a: Breloom|frz
+|move|p2a: Seismitoad|Ice Punch|p1a: Breloom
+|-supereffective|p1a: Breloom
+|-damage|p1a: Breloom|0 fnt
+|faint|p1a: Breloom
+|
+|-heal|p2a: Seismitoad|145\/414|[from] item: Leftovers
+|
+|switch|p1a: Gardevoir|Gardevoir-Mega, M|137\/277
+|-damage|p1a: Gardevoir|103\/277|[from] Stealth Rock
+|turn|18
+|
+|move|p2a: Seismitoad|Protect|p2a: Seismitoad
+|-singleturn|p2a: Seismitoad|Protect
+|move|p1a: Gardevoir|Hyper Voice|p2a: Seismitoad
+|-activate|p2a: Seismitoad|Protect
+|
+|-heal|p2a: Seismitoad|170\/414|[from] item: Leftovers
+|turn|19
+|
+|move|p1a: Gardevoir|Hyper Voice|p2a: Seismitoad
+|-damage|p2a: Seismitoad|0 fnt
+|faint|p2a: Seismitoad
+|
+|
+|switch|p2a: Milotic|Milotic, F, shiny|305\/394
+|-damage|p2a: Milotic|256\/394|[from] Stealth Rock
+|turn|20
+|
+|switch|p1a: Latias|Latias, F|157\/302
+|-damage|p1a: Latias|120\/302|[from] Stealth Rock
+|move|p2a: Milotic|Recover|p2a: Milotic
+|-heal|p2a: Milotic|394\/394
+|
+|turn|21
+|
+|switch|p2a: Medicham|Medicham-Mega, F|245\/261
+|-damage|p2a: Medicham|229\/261|[from] Stealth Rock
+|move|p1a: Latias|Defog|p2a: Medicham
+|-unboost|p2a: Medicham|evasion|1
+|-sideend|p2: MartinSousRace|Stealth Rock|[from] move: Defog|[of] p2a: Medicham
+|-sideend|p1: Makers|Stealth Rock|[from] move: Defog|[of] p1a: Latias
+|
+|turn|22
+|
+|move|p2a: Medicham|Fake Out|p1a: Latias
+|-damage|p1a: Latias|26\/302
+|cant|p1a: Latias|flinch
+|
+|turn|23
+|
+|switch|p2a: Milotic|Milotic, F, shiny|394\/394
+|move|p1a: Latias|Healing Wish|p1a: Latias
+|faint|p1a: Latias
+|
+|
+|switch|p1a: Gardevoir|Gardevoir-Mega, M|103\/277
+|-heal|p1a: Gardevoir|277\/277|[from] move: Healing Wish
+|turn|24
+|
+|move|p1a: Gardevoir|Hyper Voice|p2a: Milotic
+|-damage|p2a: Milotic|187\/394
+|move|p2a: Milotic|Scald|p1a: Gardevoir
+|-crit|p1a: Gardevoir
+|-damage|p1a: Gardevoir|163\/277
+|-status|p1a: Gardevoir|brn
+|
+|-damage|p1a: Gardevoir|129\/277 brn|[from] brn
+|turn|25
+|
+|move|p1a: Gardevoir|Hyper Voice|p2a: Milotic
+|-damage|p2a: Milotic|0 fnt
+|faint|p2a: Milotic
+|
+|-damage|p1a: Gardevoir|95\/277 brn|[from] brn
+|
+|switch|p2a: Medicham|Medicham-Mega, F|229\/261
+|turn|26
+|
+|switch|p1a: Bisharp|Bisharp, M|334\/334
+|move|p2a: Medicham|Fake Out|p1a: Bisharp
+|-resisted|p1a: Bisharp
+|-damage|p1a: Bisharp|296\/334
+|
+|-heal|p1a: Bisharp|316\/334|[from] item: Leftovers
+|turn|27
+|
+|switch|p2a: Gliscor|Gliscor, M|352\/352 tox
+|move|p1a: Bisharp|Swords Dance|p1a: Bisharp
+|-boost|p1a: Bisharp|atk|2
+|
+|-heal|p1a: Bisharp|334\/334|[from] item: Leftovers
+|turn|28
+|
+|move|p1a: Bisharp|Sucker Punch|p2a: Gliscor
+|-damage|p2a: Gliscor|102\/352 tox
+|move|p2a: Gliscor|Earthquake|p1a: Bisharp
+|-supereffective|p1a: Bisharp
+|-damage|p1a: Bisharp|106\/334
+|
+|-heal|p1a: Bisharp|126\/334|[from] item: Leftovers
+|-heal|p2a: Gliscor|146\/352 tox|[from] ability: Poison Heal
+|turn|29
+|
+|move|p2a: Gliscor|Earthquake|p1a: Bisharp
+|-supereffective|p1a: Bisharp
+|-damage|p1a: Bisharp|0 fnt
+|faint|p1a: Bisharp
+|
+|-heal|p2a: Gliscor|190\/352 tox|[from] ability: Poison Heal
+|
+|switch|p1a: Talonflame|Talonflame, F|309\/309
+|turn|30
+|
+|switch|p2a: Zapdos|Zapdos|383\/383
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Talonflame|Flare Blitz|p2a: Zapdos
+|-damage|p2a: Zapdos|187\/383
+|-damage|p1a: Talonflame|244\/309|[from] recoil|[of] p2a: Zapdos
+|
+|-heal|p2a: Zapdos|210\/383|[from] item: Leftovers
+|turn|31
+|
+|move|p1a: Talonflame|Flare Blitz|p2a: Zapdos
+|-damage|p2a: Zapdos|0 fnt
+|-damage|p1a: Talonflame|175\/309|[from] recoil|[of] p2a: Zapdos
+|faint|p2a: Zapdos
+|
+|chat|MartinSousRace|this roll man
+|
+|switch|p2a: Medicham|Medicham-Mega, F|229\/261
+|turn|32
+|
+|switch|p1a: Gardevoir|Gardevoir-Mega, M|95\/277 brn
+|move|p2a: Medicham|Fake Out|p1a: Gardevoir
+|-damage|p1a: Gardevoir|0 fnt
+|faint|p1a: Gardevoir
+|
+|
+|switch|p1a: Talonflame|Talonflame, F|175\/309
+|turn|33
+|
+|switch|p2a: Gliscor|Gliscor, M|190\/352 tox
+|move|p1a: Talonflame|Brave Bird|p2a: Gliscor
+|-damage|p2a: Gliscor|0 fnt
+|-damage|p1a: Talonflame|112\/309|[from] recoil|[of] p2a: Gliscor
+|faint|p2a: Gliscor
+|
+|
+|switch|p2a: Medicham|Medicham-Mega, F|229\/261
+|turn|34
+|
+|move|p2a: Medicham|Fake Out|p1a: Talonflame
+|-damage|p1a: Talonflame|3\/309
+|cant|p1a: Talonflame|flinch
+|
+|turn|35
+|chat|MartinSousRace|NOWAY
+|chat|Makers|that hp investment
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Medicham
+|-supereffective|p2a: Medicham
+|-damage|p2a: Medicham|0 fnt
+|-damage|p1a: Talonflame|0 fnt|[from] recoil|[of] p2a: Medicham
+|faint|p2a: Medicham
+|faint|p1a: Talonflame
+|
+|tie
+|raw|Ladder updating...
+|raw|Makers's rating: 1769 &rarr; <strong>1768<\/strong><br \/>(-1 for tying)
+|raw|MartinSousRace's rating: 1758 &rarr; <strong>1758<\/strong><br \/>(+0 for tying)
+|leave|Makers
+|chat|MartinSousRace|tie? lol
+|player|p1

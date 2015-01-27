@@ -1,0 +1,158 @@
+|join|d.d. survivor
+|join|MightOfTheStray
+|player|p1|d.d. survivor|30
+|player|p2|MightOfTheStray|40
+|gametype|doubles
+|gen|6
+|tier|Smogon Doubles (suspect test)
+|rated
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Latios, M
+|poke|p1|Charizard, F
+|poke|p1|Houndoom, M
+|poke|p1|Garchomp, M
+|poke|p1|Thundurus, M
+|poke|p1|Hitmontop, M
+|poke|p2|Cresselia, F
+|poke|p2|Meowstic, M, shiny
+|poke|p2|Heatran, F
+|poke|p2|Mamoswine, F
+|poke|p2|Breloom, F
+|poke|p2|Thundurus, M
+|teampreview
+|
+|start
+|switch|p1a: Thundurus|Thundurus, M|299\/299
+|switch|p1b: Hitmontop|Hitmontop, M|288\/288
+|switch|p2a: Thundurus|Thundurus, M|299\/299
+|switch|p2b: Cresselia|Cresselia, F|444\/444
+|-ability|p1b: Hitmontop|Intimidate|[of] p2a: Thundurus
+|-unboost|p2a: Thundurus|atk|1
+|-ability|p1b: Hitmontop|Intimidate|[of] p2b: Cresselia
+|-unboost|p2b: Cresselia|atk|1
+|turn|1
+|
+|move|p1b: Hitmontop|Wide Guard|p1b: Hitmontop
+|-singleturn|p1b: Hitmontop|Wide Guard
+|move|p2a: Thundurus|Taunt|p1a: Thundurus
+|-start|p1a: Thundurus|move: Taunt
+|move|p1a: Thundurus|Discharge|p2b: Cresselia
+|-activate|p1b: Hitmontop|Wide Guard
+|-damage|p2a: Thundurus|173\/299
+|-damage|p2b: Cresselia|383\/444
+|move|p2b: Cresselia|Icy Wind|p1b: Hitmontop
+|-activate|p1a: Thundurus|Wide Guard
+|-activate|p1b: Hitmontop|Wide Guard
+|
+|-heal|p2b: Cresselia|410\/444|[from] item: Leftovers
+|turn|2
+|
+|switch|p1b: Garchomp|Garchomp, M|357\/357
+|move|p1a: Thundurus|Discharge|p2b: Cresselia
+|-immune|p1b: Garchomp|[msg]
+|-damage|p2a: Thundurus|53\/299
+|-damage|p2b: Cresselia|346\/444
+|-status|p2b: Cresselia|par
+|move|p2a: Thundurus|Hidden Power|p1a: Thundurus
+|-supereffective|p1a: Thundurus
+|-damage|p1a: Thundurus|121\/299
+|move|p2b: Cresselia|Icy Wind|p1b: Garchomp
+|-supereffective|p1a: Thundurus
+|-damage|p1a: Thundurus|63\/299
+|-unboost|p1a: Thundurus|spe|1
+|-supereffective|p1b: Garchomp
+|-enditem|p1b: Garchomp|Yache Berry|[eat]
+|-damage|p1b: Garchomp|293\/357
+|-unboost|p1b: Garchomp|spe|1
+|
+|-heal|p2b: Cresselia|373\/444 par|[from] item: Leftovers
+|turn|3
+|
+|switch|p1a: Houndoom|Houndoom, M|291\/291
+|move|p1b: Garchomp|Protect|p1b: Garchomp
+|-singleturn|p1b: Garchomp|Protect
+|move|p2a: Thundurus|Hidden Power|p1b: Garchomp
+|-activate|p1b: Garchomp|Protect
+|move|p2b: Cresselia|Icy Wind|p1b: Garchomp
+|-resisted|p1a: Houndoom
+|-damage|p1a: Houndoom|275\/291
+|-unboost|p1a: Houndoom|spe|1
+|-activate|p1b: Garchomp|Protect
+|
+|-heal|p2b: Cresselia|400\/444 par|[from] item: Leftovers
+|turn|4
+|
+|switch|p1b: Hitmontop|Hitmontop, M|288\/288
+|-ability|p1b: Hitmontop|Intimidate|[of] p2a: Thundurus
+|-unboost|p2a: Thundurus|atk|1
+|-ability|p1b: Hitmontop|Intimidate|[of] p2b: Cresselia
+|-unboost|p2b: Cresselia|atk|1
+|-formechange|p1a: Houndoom|Houndoom-Mega
+|message|Houndoom has Mega Evolved into Mega Houndoom!
+|move|p2a: Thundurus|Thunderbolt|p1a: Houndoom
+|-damage|p1a: Houndoom|107\/291
+|move|p1a: Houndoom|Heat Wave|p2b: Cresselia
+|-damage|p2a: Thundurus|0 fnt
+|-damage|p2b: Cresselia|327\/444 par
+|faint|p2a: Thundurus
+|move|p2b: Cresselia|Icy Wind|p1a: Houndoom
+|-resisted|p1a: Houndoom
+|-damage|p1a: Houndoom|94\/291
+|-unboost|p1a: Houndoom|spe|1
+|-damage|p1b: Hitmontop|265\/288
+|-unboost|p1b: Hitmontop|spe|1
+|
+|-heal|p1b: Hitmontop|283\/288|[from] item: Leftovers
+|-heal|p2b: Cresselia|354\/444 par|[from] item: Leftovers
+|
+|switch|p2a: Mamoswine|Mamoswine, F|361\/361
+|turn|5
+|
+|switch|p1a: Charizard|Charizard, F|305\/305
+|move|p2a: Mamoswine|Icicle Crash|p1a: Charizard
+|-damage|p1a: Charizard|140\/305
+|move|p1b: Hitmontop|Close Combat|p2a: Mamoswine
+|-supereffective|p2a: Mamoswine
+|-enditem|p2a: Mamoswine|Focus Sash
+|-damage|p2a: Mamoswine|1\/361
+|-unboost|p1b: Hitmontop|def|1
+|-unboost|p1b: Hitmontop|spd|1
+|move|p2b: Cresselia|Charge Beam|p1b: Hitmontop
+|-damage|p1b: Hitmontop|246\/288
+|-boost|p2b: Cresselia|spa|1
+|
+|-heal|p1b: Hitmontop|264\/288|[from] item: Leftovers
+|-heal|p2b: Cresselia|381\/444 par|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: Heatran|Heatran, F|386\/386
+|-item|p2a: Heatran|Air Balloon
+|move|p1b: Hitmontop|Sucker Punch|p2a: Heatran
+|-fail|p2a: Heatran
+|move|p1a: Charizard|Heat Wave|p2b: Cresselia
+|-start|p2a: Heatran|ability: Flash Fire
+|-damage|p2b: Cresselia|306\/444 par
+|move|p2b: Cresselia|Icy Wind|p1a: Charizard
+|-damage|p1a: Charizard|100\/305
+|-unboost|p1a: Charizard|spe|1
+|-damage|p1b: Hitmontop|213\/288
+|-unboost|p1b: Hitmontop|spe|1
+|
+|-heal|p1b: Hitmontop|231\/288|[from] item: Leftovers
+|-heal|p2b: Cresselia|333\/444 par|[from] item: Leftovers
+|turn|7
+|leave|d.d. survivor
+|player|p1
+|-message|ddsurvivor lost due to inactivity.
+|
+|win|MightOfTheStray
+|raw|Ladder updating...
+|raw|d.d. survivor's rating: 1259 &rarr; <strong>1232<\/strong><br \/>(-27 for losing)
+|raw|MightOfTheStray's rating: 1228 &rarr; <strong>1255<\/strong><br \/>(+27 for winning)

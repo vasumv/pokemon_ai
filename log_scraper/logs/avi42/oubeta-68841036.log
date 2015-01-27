@@ -1,0 +1,253 @@
+|join|Avi42
+|join|Diana Prince
+|player|p1|Avi42|162
+|player|p2|Diana Prince|101
+|gametype|singles
+|tier|OU (beta)
+|rated
+|clearpoke
+|poke|p1|Aegislash, M
+|poke|p1|Talonflame, F
+|poke|p1|Hydreigon, M
+|poke|p1|Azumarill, F
+|poke|p1|Sableye, F
+|poke|p1|Tentacruel, M
+|poke|p2|Tyranitar, M
+|poke|p2|Excadrill, F
+|poke|p2|Medicham, F
+|poke|p2|Hippowdon, F
+|poke|p2|Hydreigon, M
+|poke|p2|Froslass, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|join|Hellknight10
+|
+|start
+|switch|p1a: Pikablue|Azumarill, F|404\/404
+|switch|p2a: Hydreigon|Hydreigon, M|325\/325
+|turn|1
+|callback|decision
+|
+|switch|p2a: Froslass|Froslass, F|282\/282
+|move|p1a: Pikablue|Play Rough|p2a: Froslass
+|-enditem|p2a: Froslass|Focus Sash
+|-damage|p2a: Froslass|1\/282
+|-start|p1a: Pikablue|Disable|Play Rough
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: AndÃºril|Aegislash, M|324\/324
+|move|p2a: Froslass|Spikes|p1a: AndÃºril
+|-sidestart|p1: Avi42|Spikes
+|
+|turn|3
+|callback|decision
+|
+|-formechange|p1a: AndÃºril|Aegislash-Blade
+|move|p1a: AndÃºril|Shadow Sneak|p2a: Froslass
+|-supereffective|p2a: Froslass
+|-damage|p2a: Froslass|0 fnt
+|-start|p1a: AndÃºril|Disable|Shadow Sneak
+|faint|p2a: Froslass
+|
+|callback|decision
+|
+|switch|p2a: Hippowdon|Hippowdon, F|420\/420
+|-weather|Sandstorm
+|turn|4
+|callback|decision
+|
+|switch|p1a: Jewel|Sableye, F|304\/304
+|-damage|p1a: Jewel|266\/304|[from] Spikes
+|move|p2a: Hippowdon|Earthquake|p1a: Jewel
+|-damage|p1a: Jewel|172\/304
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jewel|153\/304|[from] sandstorm
+|turn|5
+|callback|decision
+|
+|switch|p2a: Hydreigon|Hydreigon, M|325\/325
+|move|p1a: Jewel|Trick|p2a: Hydreigon
+|-activate|p1a: Jewel|move: Trick|[of] p2a: Hydreigon
+|-item|p2a: Hydreigon|Full Incense|[from] move: Trick
+|-item|p1a: Jewel|Choice Scarf|[from] move: Trick
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Hydreigon|305\/325|[from] sandstorm
+|-damage|p1a: Jewel|134\/304|[from] sandstorm
+|turn|6
+|callback|decision
+|
+|switch|p1a: Doc Oc|Tentacruel, M|364\/364
+|-damage|p1a: Doc Oc|319\/364|[from] Spikes
+|move|p2a: Hydreigon|Flash Cannon|p1a: Doc Oc
+|-resisted|p1a: Doc Oc
+|-damage|p1a: Doc Oc|288\/364
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Hydreigon|285\/325|[from] sandstorm
+|-damage|p1a: Doc Oc|266\/364|[from] sandstorm
+|-heal|p1a: Doc Oc|288\/364|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p1a: Doc Oc|Rapid Spin|p2a: Hydreigon
+|-damage|p2a: Hydreigon|271\/325
+|-sideend|p1: Avi42|Spikes|[from] move: Rapid Spin|[of] p1a: Doc Oc
+|move|p2a: Hydreigon|Draco Meteor|p1a: Doc Oc
+|-damage|p1a: Doc Oc|137\/364
+|-unboost|p2a: Hydreigon|spa|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Hydreigon|251\/325|[from] sandstorm
+|-damage|p1a: Doc Oc|115\/364|[from] sandstorm
+|-heal|p1a: Doc Oc|137\/364|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p2a: Medicham|Medicham, F|261\/261
+|move|p1a: Doc Oc|Scald|p2a: Medicham
+|-damage|p2a: Medicham|179\/261
+|
+|-weather|none
+|-heal|p1a: Doc Oc|159\/364|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p1a: AndÃºril|Aegislash, M|324\/324
+|-formechange|p2a: Medicham|Medicham-Mega
+|message|Medicham has Mega Evolved into Mega Medicham!
+|move|p2a: Medicham|Psycho Cut|p1a: AndÃºril
+|-resisted|p1a: AndÃºril
+|-damage|p1a: AndÃºril|249\/324
+|
+|-heal|p1a: AndÃºril|269\/324|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p2a: Hippowdon|Hippowdon, F|420\/420
+|-weather|Sandstorm
+|move|p1a: AndÃºril|Swords Dance|p1a: AndÃºril
+|-boost|p1a: AndÃºril|atk|2
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: AndÃºril|289\/324|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p1a: AndÃºril|Swords Dance|p1a: AndÃºril
+|-boost|p1a: AndÃºril|atk|2
+|move|p2a: Hippowdon|Whirlwind|p1a: AndÃºril
+|drag|p1a: Pikablue|Azumarill, F|404\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Pikablue|379\/404|[from] sandstorm
+|turn|12
+|callback|decision
+|
+|move|p1a: Pikablue|Waterfall|p2a: Hippowdon
+|-supereffective|p2a: Hippowdon
+|-damage|p2a: Hippowdon|108\/420
+|move|p2a: Hippowdon|Slack Off|p2a: Hippowdon
+|-heal|p2a: Hippowdon|318\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Pikablue|354\/404|[from] sandstorm
+|-heal|p2a: Hippowdon|344\/420|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p2a: Hydreigon|Hydreigon, M|251\/325
+|move|p1a: Pikablue|Waterfall|p2a: Hydreigon
+|-resisted|p2a: Hydreigon
+|-damage|p2a: Hydreigon|119\/325
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Hydreigon|99\/325|[from] sandstorm
+|-damage|p1a: Pikablue|329\/404|[from] sandstorm
+|turn|14
+|callback|decision
+|
+|move|p1a: Pikablue|Waterfall|p2a: Hydreigon
+|-resisted|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|faint|p2a: Hydreigon
+|
+|-weather|none
+|callback|decision
+|
+|switch|p2a: Medicham|Medicham, F|179\/261
+|-formechange|p2a: Medicham|Medicham-Mega
+|turn|15
+|callback|decision
+|
+|switch|p1a: AndÃºril|Aegislash, M|289\/324
+|move|p2a: Medicham|Psycho Cut|p1a: AndÃºril
+|-resisted|p1a: AndÃºril
+|-damage|p1a: AndÃºril|221\/324
+|
+|-heal|p1a: AndÃºril|241\/324|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p2a: Hippowdon|Hippowdon, F|344\/420
+|-weather|Sandstorm
+|-formechange|p1a: AndÃºril|Aegislash-Blade
+|move|p1a: AndÃºril|Sacred Sword|p2a: Hippowdon
+|-damage|p2a: Hippowdon|253\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: AndÃºril|261\/324|[from] item: Leftovers
+|-heal|p2a: Hippowdon|279\/420|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|switch|p1a: Fairy Food|Hydreigon, M|325\/325
+|move|p2a: Hippowdon|Stone Edge|p1a: Fairy Food
+|-damage|p1a: Fairy Food|232\/325
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Fairy Food|212\/325|[from] sandstorm
+|-heal|p1a: Fairy Food|232\/325|[from] item: Leftovers
+|-heal|p2a: Hippowdon|305\/420|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, M|404\/404
+|move|p1a: Fairy Food|Dragon Pulse|p2a: Tyranitar
+|-damage|p2a: Tyranitar|320\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Fairy Food|212\/325|[from] sandstorm
+|-heal|p1a: Fairy Food|232\/325|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p1a: Fairy Food|Focus Blast|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|20\/404
+|-unboost|p2a: Tyranitar|spd|1
+|move|p2a: Tyranitar|Stealth Rock|p1a: Fairy Food
+|-sidestart|p1: Avi42|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Fairy Food|212\/325|[from] sandstorm
+|-heal|p1a: Fairy Food|232\/325|[from] item: Leftovers
+|turn|20
+|callback|decision
+|-message|Diana Prince forfeited.
+|
+|win|Avi42
+|raw|Ladder updating...
+|leave|Diana Prince
+|player|p2
+|raw|Avi42's rating: 1866 &rarr; <strong>1869<\/strong><br \/>(+3 for winning)
+|raw|Diana Prince's rating: 1744 &rarr; <strong>1742<\/strong><br \/>(-2 for losing)

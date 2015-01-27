@@ -1,0 +1,276 @@
+|join|pikapooper
+|join|seraphimofd
+|player|p1|pikapooper|29
+|player|p2|seraphimofd|163
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Salamence, M
+|poke|p1|Heatran, M
+|poke|p1|Jirachi
+|poke|p1|Simipour, M
+|poke|p1|Hariyama, M
+|poke|p1|Galvantula, F
+|poke|p2|Infernape, M
+|poke|p2|Garchomp, M
+|poke|p2|Tyranitar, M
+|poke|p2|Ferrothorn, M
+|poke|p2|Starmie
+|poke|p2|Rotom-Wash
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Hariyama|Hariyama, M|492\/492
+|switch|p2a: steelmoss|Ferrothorn, M|290\/290
+|turn|1
+|callback|decision
+|
+|move|p2a: steelmoss|Stealth Rock|p1a: Hariyama
+|-sidestart|p1: pikapooper|move: Stealth Rock
+|move|p1a: Hariyama|Close Combat|p2a: steelmoss
+|-supereffective|p2a: steelmoss
+|-damage|p2a: steelmoss|0 fnt
+|-damage|p1a: Hariyama|431\/492|[from] ability: Iron Barbs|[of] p2a: steelmoss
+|-unboost|p1a: Hariyama|def|1
+|-unboost|p1a: Hariyama|spd|1
+|faint|p2a: steelmoss
+|
+|-heal|p1a: Hariyama|461\/492|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: laundry|Rotom-Wash|241\/241
+|turn|2
+|callback|decision
+|
+|move|p2a: laundry|Will-O-Wisp|p1a: Hariyama
+|-status|p1a: Hariyama|brn
+|move|p1a: Hariyama|Close Combat|p2a: laundry
+|-damage|p2a: laundry|133\/241
+|-unboost|p1a: Hariyama|def|1
+|-unboost|p1a: Hariyama|spd|1
+|
+|-heal|p1a: Hariyama|491\/492 brn|[from] item: Leftovers
+|-damage|p1a: Hariyama|430\/492 brn|[from] brn
+|turn|3
+|callback|decision
+|
+|switch|p2a: jewel|Starmie|324\/324
+|move|p1a: Hariyama|Bullet Punch|p2a: jewel
+|-resisted|p2a: jewel
+|-damage|p2a: jewel|310\/324
+|
+|-heal|p2a: jewel|324\/324|[from] item: Leftovers
+|-heal|p1a: Hariyama|460\/492 brn|[from] item: Leftovers
+|-damage|p1a: Hariyama|399\/492 brn|[from] brn
+|turn|4
+|callback|decision
+|
+|switch|p1a: Galvantula|Galvantula, F|281\/281
+|-damage|p1a: Galvantula|211\/281|[from] Stealth Rock
+|move|p2a: jewel|Surf|p1a: Galvantula
+|-damage|p1a: Galvantula|0 fnt
+|faint|p1a: Galvantula
+|
+|callback|decision
+|
+|switch|p1a: Simipour|Simipour, M|292\/292
+|-damage|p1a: Simipour|256\/292|[from] Stealth Rock
+|turn|5
+|callback|decision
+|
+|move|p1a: Simipour|Grass Knot|p2a: jewel
+|-supereffective|p2a: jewel
+|-damage|p2a: jewel|150\/324
+|move|p2a: jewel|Thunderbolt|p1a: Simipour
+|-supereffective|p1a: Simipour
+|-damage|p1a: Simipour|0 fnt
+|faint|p1a: Simipour
+|
+|-heal|p2a: jewel|170\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Jirachi|Jirachi|342\/342
+|-damage|p1a: Jirachi|321\/342|[from] Stealth Rock
+|turn|6
+|callback|decision
+|
+|switch|p2a: laundry|Rotom-Wash|133\/241
+|move|p1a: Jirachi|Iron Head|p2a: laundry
+|-resisted|p2a: laundry
+|-damage|p2a: laundry|105\/241
+|
+|turn|7
+|callback|decision
+|
+|move|p2a: laundry|Will-O-Wisp|p1a: Jirachi
+|-status|p1a: Jirachi|brn
+|move|p1a: Jirachi|Iron Head|p2a: laundry
+|-resisted|p2a: laundry
+|-damage|p2a: laundry|92\/241
+|
+|-damage|p1a: Jirachi|279\/342 brn|[from] brn
+|turn|8
+|callback|decision
+|
+|switch|p2a: spikes|Tyranitar, M|404\/404
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: spikes
+|move|p1a: Jirachi|Drain Punch|p2a: spikes
+|-supereffective|p2a: spikes
+|-damage|p2a: spikes|268\/404
+|-heal|p1a: Jirachi|342\/342 brn|[from] drain|[of] p2a: spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jirachi|300\/342 brn|[from] brn
+|turn|9
+|callback|decision
+|
+|move|p1a: Jirachi|Iron Head|p2a: spikes
+|-supereffective|p2a: spikes
+|-damage|p2a: spikes|148\/404
+|cant|p2a: spikes|flinch
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jirachi|258\/342 brn|[from] brn
+|turn|10
+|callback|decision
+|
+|switch|p2a: sharkdrake|Garchomp, M|358\/358
+|move|p1a: Jirachi|Drain Punch|p2a: sharkdrake
+|-damage|p2a: sharkdrake|322\/358
+|-heal|p1a: Jirachi|276\/342 brn|[from] drain|[of] p2a: sharkdrake
+|-damage|p1a: Jirachi|234\/342 brn|[from] ability: Rough Skin|[of] p2a: sharkdrake
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jirachi|192\/342 brn|[from] brn
+|turn|11
+|callback|decision
+|
+|move|p2a: sharkdrake|Earthquake|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|-damage|p2a: sharkdrake|287\/358|[from] item: Life Orb
+|faint|p1a: Jirachi
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|323\/323
+|-damage|p1a: Heatran|283\/323|[from] Stealth Rock
+|turn|12
+|callback|decision
+|
+|move|p1a: Heatran|Dragon Pulse|p2a: sharkdrake
+|-supereffective|p2a: sharkdrake
+|-damage|p2a: sharkdrake|11\/358
+|move|p2a: sharkdrake|Earthquake|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|-damage|p2a: sharkdrake|0 fnt|[from] item: Life Orb
+|faint|p1a: Heatran
+|faint|p2a: sharkdrake
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: spikes|Tyranitar, M|148\/404
+|switch|p1a: Hariyama|Hariyama, M|399\/492 brn
+|-damage|p1a: Hariyama|369\/492 brn|[from] Stealth Rock
+|turn|13
+|callback|decision
+|
+|switch|p2a: jewel|Starmie|170\/324
+|move|p1a: Hariyama|Close Combat|p2a: jewel
+|-resisted|p2a: jewel
+|-damage|p2a: jewel|111\/324
+|-unboost|p1a: Hariyama|def|1
+|-unboost|p1a: Hariyama|spd|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: jewel|91\/324|[from] sandstorm
+|-damage|p1a: Hariyama|339\/492 brn|[from] sandstorm
+|-heal|p2a: jewel|111\/324|[from] item: Leftovers
+|-heal|p1a: Hariyama|369\/492 brn|[from] item: Leftovers
+|-damage|p1a: Hariyama|308\/492 brn|[from] brn
+|turn|14
+|callback|decision
+|
+|move|p2a: jewel|Recover|p2a: jewel
+|-heal|p2a: jewel|273\/324
+|move|p1a: Hariyama|Stone Edge|p2a: jewel
+|-damage|p2a: jewel|199\/324
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: jewel|179\/324|[from] sandstorm
+|-damage|p1a: Hariyama|278\/492 brn|[from] sandstorm
+|-heal|p2a: jewel|199\/324|[from] item: Leftovers
+|-heal|p1a: Hariyama|308\/492 brn|[from] item: Leftovers
+|-damage|p1a: Hariyama|247\/492 brn|[from] brn
+|turn|15
+|callback|decision
+|
+|move|p2a: jewel|Surf|p1a: Hariyama
+|-crit|p1a: Hariyama
+|-damage|p1a: Hariyama|0 fnt
+|faint|p1a: Hariyama
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: jewel|179\/324|[from] sandstorm
+|-heal|p2a: jewel|199\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Salamence|Salamence, M|332\/332
+|-damage|p1a: Salamence|249\/332|[from] Stealth Rock
+|turn|16
+|callback|decision
+|
+|move|p1a: Salamence|Dragon Claw|p2a: jewel
+|-crit|p2a: jewel
+|-damage|p2a: jewel|0 fnt
+|-damage|p1a: Salamence|216\/332|[from] item: Life Orb
+|faint|p2a: jewel
+|-boost|p1a: Salamence|atk|1|[from] ability: Moxie
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salamence|196\/332|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: laundry|Rotom-Wash|92\/241
+|turn|17
+|callback|decision
+|
+|move|p2a: laundry|Will-O-Wisp|p1a: Salamence
+|-status|p1a: Salamence|brn
+|move|p1a: Salamence|Dragon Claw|p2a: laundry
+|-damage|p2a: laundry|0 fnt
+|-damage|p1a: Salamence|163\/332 brn|[from] item: Life Orb
+|faint|p2a: laundry
+|-boost|p1a: Salamence|atk|1|[from] ability: Moxie
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salamence|143\/332 brn|[from] sandstorm
+|-damage|p1a: Salamence|102\/332 brn|[from] brn
+|callback|decision
+|
+|switch|p2a: assonfire|Infernape, M|293\/293
+|turn|18
+|callback|decision
+|
+|move|p2a: assonfire|ThunderPunch|p1a: Salamence
+|-damage|p1a: Salamence|0 fnt
+|faint|p1a: Salamence
+|
+|win|seraphimofd
+|raw|Ladder updating...
+|raw|pikapooper's rating: 1179 &rarr; <strong>1174<\/strong><br \/>(-5 for losing)
+|raw|seraphimofd's rating: 1263 &rarr; <strong>1280<\/strong><br \/>(+17 for winning)
+|leave|pikapooper
+|player|p1

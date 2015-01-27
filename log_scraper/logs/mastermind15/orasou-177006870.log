@@ -1,0 +1,414 @@
+|join|RavenousHunger
+|join|mastermind15
+|player|p1|RavenousHunger|165
+|player|p2|mastermind15|33
+|gametype|singles
+|gen|6
+|tier|ORAS OU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Sceptile, M
+|poke|p1|Heatran, F
+|poke|p1|Azumarill, F
+|poke|p1|Mamoswine, M
+|poke|p1|Bisharp, M
+|poke|p1|Latios, M
+|poke|p2|Slowbro, M, shiny
+|poke|p2|Gliscor, M
+|poke|p2|Amoonguss, F, shiny
+|poke|p2|Tyranitar, M
+|poke|p2|Zapdos
+|poke|p2|Altaria, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Energizer|Azumarill, F|401\/401
+|switch|p2a: Teresa|Altaria, F|307\/307
+|turn|1
+|
+|switch|p2a: Penelope|Amoonguss, F, shiny|432\/432
+|move|p1a: Energizer|Knock Off|p2a: Penelope
+|-damage|p2a: Penelope|248\/432
+|-enditem|p2a: Penelope|Black Sludge|[from] move: Knock Off|[of] p1a: Energizer
+|
+|turn|2
+|
+|switch|p1a: Weed E'eryday|Sceptile, M|301\/301
+|move|p2a: Penelope|Spore|p1a: Weed E'eryday
+|-fail|p1a: Weed E'eryday
+|
+|turn|3
+|
+|switch|p1a: Earthquake Please|Heatran, F|323\/323
+|move|p2a: Penelope|Clear Smog|p1a: Earthquake Please
+|-immune|p1a: Earthquake Please|[msg]
+|
+|turn|4
+|
+|switch|p2a: Ivan|Gliscor, M|352\/352
+|move|p1a: Earthquake Please|Overheat|p2a: Ivan
+|-damage|p2a: Ivan|39\/352
+|-unboost|p1a: Earthquake Please|spa|2
+|
+|-status|p2a: Ivan|tox|[from] item: Toxic Orb
+|turn|5
+|
+|switch|p1a: Weed E'eryday|Sceptile, M|301\/301
+|switch|p2a: Bill|Slowbro, M, shiny|394\/394
+|
+|turn|6
+|
+|switch|p2a: Penelope|Amoonguss, F, shiny|392\/432
+|detailschange|p1a: Weed E'eryday|Sceptile-Mega, M
+|message|Sceptile has Mega Evolved into Mega Sceptile!
+|move|p1a: Weed E'eryday|Substitute|p1a: Weed E'eryday
+|-start|p1a: Weed E'eryday|Substitute
+|-damage|p1a: Weed E'eryday|226\/301
+|
+|turn|7
+|
+|move|p1a: Weed E'eryday|Dragon Pulse|p2a: Penelope
+|-damage|p2a: Penelope|238\/432
+|move|p2a: Penelope|Foul Play|p1a: Weed E'eryday
+|-end|p1a: Weed E'eryday|Substitute
+|
+|turn|8
+|
+|move|p1a: Weed E'eryday|Dragon Pulse|p2a: Penelope
+|-damage|p2a: Penelope|97\/432
+|move|p2a: Penelope|Clear Smog|p1a: Weed E'eryday
+|-supereffective|p1a: Weed E'eryday
+|-damage|p1a: Weed E'eryday|112\/301
+|-clearboost|p1a: Weed E'eryday
+|
+|turn|9
+|
+|switch|p2a: Sam|Tyranitar, M|341\/341
+|-weather|Sandstorm
+|move|p1a: Weed E'eryday|Giga Drain|p2a: Sam
+|-supereffective|p2a: Sam
+|-damage|p2a: Sam|245\/341
+|-heal|p1a: Weed E'eryday|160\/301|[from] drain|[of] p2a: Sam
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Weed E'eryday|142\/301|[from] sandstorm
+|turn|10
+|
+|switch|p1a: Red Ranger|Bisharp, M|271\/271
+|move|p2a: Sam|Crunch|p1a: Red Ranger
+|-resisted|p1a: Red Ranger
+|-damage|p1a: Red Ranger|201\/271
+|
+|-weather|Sandstorm|[upkeep]
+|turn|11
+|
+|switch|p2a: Larry|Zapdos|383\/383
+|-ability|p2a: Larry|Pressure
+|move|p1a: Red Ranger|Iron Head|p2a: Larry
+|-resisted|p2a: Larry
+|-damage|p2a: Larry|321\/383
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Larry|298\/383|[from] sandstorm
+|-heal|p2a: Larry|321\/383|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Larry|Heat Wave|p1a: Red Ranger
+|-supereffective|p1a: Red Ranger
+|-damage|p1a: Red Ranger|0 fnt
+|faint|p1a: Red Ranger
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Larry|298\/383|[from] sandstorm
+|-heal|p2a: Larry|321\/383|[from] item: Leftovers
+|
+|switch|p1a: Bulldoze|Mamoswine, M|361\/361
+|turn|13
+|
+|switch|p2a: Bill|Slowbro, M, shiny|394\/394
+|move|p1a: Bulldoze|Stealth Rock|p2a: Bill
+|-sidestart|p2: mastermind15|move: Stealth Rock
+|
+|-weather|none
+|turn|14
+|
+|switch|p1a: Weed E'eryday|Sceptile-Mega, M|142\/301
+|move|p2a: Bill|Scald|p1a: Weed E'eryday
+|-resisted|p1a: Weed E'eryday
+|-damage|p1a: Weed E'eryday|116\/301
+|-status|p1a: Weed E'eryday|brn
+|
+|-damage|p1a: Weed E'eryday|79\/301 brn|[from] brn
+|turn|15
+|
+|switch|p2a: Ivan|Gliscor, M|39\/352 tox
+|-damage|p2a: Ivan|0 fnt|[from] Stealth Rock
+|faint|p2a: Ivan
+|move|p1a: Weed E'eryday|Giga Drain|p2: Ivan|[notarget]
+|-notarget
+|
+|-damage|p1a: Weed E'eryday|42\/301 brn|[from] brn
+|
+|switch|p2a: Teresa|Altaria, F|307\/307
+|-damage|p2a: Teresa|231\/307|[from] Stealth Rock
+|turn|16
+|
+|switch|p1a: Earthquake Please|Heatran, F|323\/323
+|detailschange|p2a: Teresa|Altaria-Mega, F
+|message|Altaria has Mega Evolved into Mega Altaria!
+|move|p2a: Teresa|Roost|p2a: Teresa
+|-heal|p2a: Teresa|307\/307
+|
+|turn|17
+|
+|move|p1a: Earthquake Please|Flash Cannon|p2a: Teresa
+|-supereffective|p2a: Teresa
+|-damage|p2a: Teresa|29\/307
+|move|p2a: Teresa|Earthquake|p1a: Earthquake Please
+|-supereffective|p1a: Earthquake Please
+|-damage|p1a: Earthquake Please|0 fnt
+|faint|p1a: Earthquake Please
+|
+|
+|switch|p1a: Bulldoze|Mamoswine, M|361\/361
+|turn|18
+|
+|switch|p2a: Bill|Slowbro, M, shiny|394\/394
+|-damage|p2a: Bill|345\/394|[from] Stealth Rock
+|move|p1a: Bulldoze|Ice Shard|p2a: Bill
+|-resisted|p2a: Bill
+|-damage|p2a: Bill|321\/394
+|
+|turn|19
+|
+|switch|p1a: Motto Tsuyoku|Latios, M|301\/301
+|move|p2a: Bill|Scald|p1a: Motto Tsuyoku
+|-resisted|p1a: Motto Tsuyoku
+|-damage|p1a: Motto Tsuyoku|259\/301
+|
+|turn|20
+|
+|switch|p1a: Bulldoze|Mamoswine, M|361\/361
+|switch|p2a: Teresa|Altaria-Mega, F|29\/307
+|-damage|p2a: Teresa|0 fnt|[from] Stealth Rock
+|faint|p2a: Teresa
+|
+|
+|switch|p2a: Bill|Slowbro, M, shiny|394\/394
+|-damage|p2a: Bill|345\/394|[from] Stealth Rock
+|turn|21
+|
+|switch|p1a: Weed E'eryday|Sceptile-Mega, M|42\/301 brn
+|move|p2a: Bill|Scald|p1a: Weed E'eryday
+|-resisted|p1a: Weed E'eryday
+|-damage|p1a: Weed E'eryday|14\/301 brn
+|
+|-damage|p1a: Weed E'eryday|0 fnt|[from] brn
+|faint|p1a: Weed E'eryday
+|
+|switch|p1a: Energizer|Azumarill, F|401\/401
+|turn|22
+|
+|switch|p2a: Larry|Zapdos|321\/383
+|-damage|p2a: Larry|226\/383|[from] Stealth Rock
+|-ability|p2a: Larry|Pressure
+|move|p1a: Energizer|Knock Off|p2a: Larry
+|-damage|p2a: Larry|101\/383
+|-enditem|p2a: Larry|Leftovers|[from] move: Knock Off|[of] p1a: Energizer
+|
+|turn|23
+|
+|move|p2a: Larry|Roost|p2a: Larry
+|-heal|p2a: Larry|293\/383
+|move|p1a: Energizer|Waterfall|p2a: Larry
+|-damage|p2a: Larry|130\/383
+|
+|turn|24
+|
+|move|p2a: Larry|Roost|p2a: Larry
+|-heal|p2a: Larry|322\/383
+|move|p1a: Energizer|Play Rough|p2a: Larry
+|-damage|p2a: Larry|163\/383
+|-unboost|p2a: Larry|atk|1
+|
+|turn|25
+|
+|switch|p1a: Bulldoze|Mamoswine, M|361\/361
+|move|p2a: Larry|Defog|p1a: Bulldoze
+|-unboost|p1a: Bulldoze|evasion|1
+|-sideend|p2: mastermind15|Stealth Rock|[from] move: Defog|[of] p2a: Larry
+|
+|turn|26
+|
+|move|p1a: Bulldoze|Ice Shard|p2a: Larry
+|-supereffective|p2a: Larry
+|-damage|p2a: Larry|25\/383
+|move|p2a: Larry|Defog|p1a: Bulldoze
+|-unboost|p1a: Bulldoze|evasion|1
+|
+|turn|27
+|
+|move|p1a: Bulldoze|Ice Shard|p2a: Larry
+|-supereffective|p2a: Larry
+|-damage|p2a: Larry|0 fnt
+|faint|p2a: Larry
+|
+|
+|switch|p2a: Bill|Slowbro, M, shiny|394\/394
+|turn|28
+|
+|move|p1a: Bulldoze|Stealth Rock|p2a: Bill
+|-sidestart|p2: mastermind15|move: Stealth Rock
+|move|p2a: Bill|Scald|p1a: Bulldoze
+|-supereffective|p1a: Bulldoze
+|-damage|p1a: Bulldoze|55\/361
+|-status|p1a: Bulldoze|brn
+|
+|-damage|p1a: Bulldoze|10\/361 brn|[from] brn
+|turn|29
+|
+|move|p1a: Bulldoze|Endeavor|p2a: Bill
+|-damage|p2a: Bill|10\/394
+|move|p2a: Bill|Scald|p1a: Bulldoze
+|-supereffective|p1a: Bulldoze
+|-damage|p1a: Bulldoze|0 fnt
+|faint|p1a: Bulldoze
+|
+|
+|switch|p1a: Energizer|Azumarill, F|401\/401
+|turn|30
+|
+|move|p1a: Energizer|Knock Off|p2a: Bill
+|-supereffective|p2a: Bill
+|-damage|p2a: Bill|0 fnt
+|-enditem|p2a: Bill|Assault Vest|[from] move: Knock Off|[of] p1a: Energizer
+|faint|p2a: Bill
+|
+|
+|switch|p2a: Penelope|Amoonguss, F, shiny|241\/432
+|-damage|p2a: Penelope|187\/432|[from] Stealth Rock
+|turn|31
+|
+|move|p1a: Energizer|Waterfall|p2a: Penelope
+|-resisted|p2a: Penelope
+|-damage|p2a: Penelope|87\/432
+|move|p2a: Penelope|Spore|p1a: Energizer
+|-status|p1a: Energizer|slp
+|
+|turn|32
+|
+|switch|p1a: Motto Tsuyoku|Latios, M|259\/301
+|move|p2a: Penelope|Giga Drain|p1a: Motto Tsuyoku
+|-crit|p1a: Motto Tsuyoku
+|-resisted|p1a: Motto Tsuyoku
+|-damage|p1a: Motto Tsuyoku|208\/301
+|-heal|p2a: Penelope|113\/432|[from] drain|[of] p1a: Motto Tsuyoku
+|
+|turn|33
+|
+|switch|p1a: Energizer|Azumarill, F|401\/401 slp
+|switch|p2a: Sam|Tyranitar, M|245\/341
+|-damage|p2a: Sam|203\/341|[from] Stealth Rock
+|-weather|Sandstorm
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Energizer|376\/401 slp|[from] sandstorm
+|turn|34
+|
+|move|p2a: Sam|Rock Slide|p1a: Energizer
+|-miss|p2a: Sam|p1a: Energizer
+|cant|p1a: Energizer|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Energizer|351\/401 slp|[from] sandstorm
+|turn|35
+|
+|switch|p2a: Penelope|Amoonguss, F, shiny|257\/432
+|-damage|p2a: Penelope|203\/432|[from] Stealth Rock
+|cant|p1a: Energizer|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Energizer|326\/401 slp|[from] sandstorm
+|-damage|p2a: Penelope|176\/432|[from] sandstorm
+|turn|36
+|
+|switch|p1a: Motto Tsuyoku|Latios, M|208\/301
+|move|p2a: Penelope|Giga Drain|p1a: Motto Tsuyoku
+|-resisted|p1a: Motto Tsuyoku
+|-damage|p1a: Motto Tsuyoku|172\/301
+|-heal|p2a: Penelope|194\/432|[from] drain|[of] p1a: Motto Tsuyoku
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Motto Tsuyoku|154\/301|[from] sandstorm
+|-damage|p2a: Penelope|167\/432|[from] sandstorm
+|turn|37
+|
+|switch|p1a: Energizer|Azumarill, F|326\/401 slp
+|switch|p2a: Sam|Tyranitar, M|203\/341
+|-damage|p2a: Sam|161\/341|[from] Stealth Rock
+|
+|-weather|none
+|turn|38
+|
+|switch|p2a: Penelope|Amoonguss, F, shiny|311\/432
+|-damage|p2a: Penelope|257\/432|[from] Stealth Rock
+|switch|p1a: Motto Tsuyoku|Latios, M|154\/301
+|
+|turn|39
+|
+|switch|p2a: Sam|Tyranitar, M|161\/341
+|-damage|p2a: Sam|119\/341|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p1a: Motto Tsuyoku|Thunderbolt|p2a: Sam
+|-damage|p2a: Sam|75\/341
+|-damage|p1a: Motto Tsuyoku|124\/301|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Motto Tsuyoku|106\/301|[from] sandstorm
+|turn|40
+|
+|switch|p2a: Penelope|Amoonguss, F, shiny|401\/432
+|-damage|p2a: Penelope|347\/432|[from] Stealth Rock
+|move|p1a: Motto Tsuyoku|Draco Meteor|p2a: Penelope
+|-damage|p2a: Penelope|94\/432
+|-unboost|p1a: Motto Tsuyoku|spa|2
+|-damage|p1a: Motto Tsuyoku|76\/301|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Motto Tsuyoku|58\/301|[from] sandstorm
+|-damage|p2a: Penelope|67\/432|[from] sandstorm
+|turn|41
+|
+|switch|p1a: Energizer|Azumarill, F|326\/401 slp
+|switch|p2a: Sam|Tyranitar, M|75\/341
+|-damage|p2a: Sam|33\/341|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Energizer|301\/401 slp|[from] sandstorm
+|turn|42
+|
+|-curestatus|p1a: Energizer|slp
+|move|p1a: Energizer|Aqua Jet|p2a: Sam
+|-supereffective|p2a: Sam
+|-damage|p2a: Sam|0 fnt
+|faint|p2a: Sam
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Energizer|276\/401|[from] sandstorm
+|-message|mastermind15 forfeited.
+|
+|win|RavenousHunger
+|raw|Ladder updating...
+|raw|RavenousHunger's rating: 1260 &rarr; <strong>1278<\/strong><br \/>(+18 for winning)
+|raw|mastermind15's rating: 1167 &rarr; <strong>1149<\/strong><br \/>(-18 for losing)
+|leave|mastermind15
+|player|p2

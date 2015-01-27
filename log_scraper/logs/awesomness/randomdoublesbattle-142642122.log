@@ -1,0 +1,233 @@
+|join|SD130928
+|join|awesomness
+|player|p1|SD130928|290
+|player|p2|awesomness|99
+|gametype|doubles
+|gen|6
+|tier|Random Doubles Battle
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|HP Percentage Mod: HP is reported as percentages
+|
+|start
+|switch|p1a: Emolga|Emolga, L86, F|218\/218
+|switch|p1b: Watchog|Watchog, L87, M|283\/283
+|switch|p2a: Furret|Furret, L87, M|272\/272
+|switch|p2b: Walrein|Walrein, L76, F|324\/324
+|-item|p1a: Emolga|Yache Berry|[from] ability: Frisk|[of] p2a: Furret|[identify]
+|-item|p1b: Watchog|Chople Berry|[from] ability: Frisk|[of] p2a: Furret|[identify]
+|turn|1
+|
+|move|p1b: Watchog|Protect|p1b: Watchog
+|-singleturn|p1b: Watchog|Protect
+|move|p2a: Furret|Trick|p1a: Emolga
+|-activate|p2a: Furret|move: Trick|[of] p1a: Emolga
+|-item|p1a: Emolga|Choice Scarf|[from] move: Trick
+|-item|p2a: Furret|Yache Berry|[from] move: Trick
+|move|p1a: Emolga|Charge Beam|p2b: Walrein
+|-supereffective|p2b: Walrein
+|-damage|p2b: Walrein|202\/324
+|move|p2b: Walrein|Ice Beam|p1a: Emolga
+|-supereffective|p1a: Emolga
+|-damage|p1a: Emolga|0 fnt
+|faint|p1a: Emolga
+|
+|
+|switch|p1a: Escavalier|Escavalier, L80, M|277\/277
+|turn|2
+|
+|move|p2a: Furret|Trick|p1a: Escavalier
+|-activate|p2a: Furret|move: Trick|[of] p1a: Escavalier
+|-item|p1a: Escavalier|Yache Berry|[from] move: Trick
+|-item|p2a: Furret|Expert Belt|[from] move: Trick
+|move|p1b: Watchog|Hypnosis|p2b: Walrein
+|-status|p2b: Walrein|slp
+|cant|p2b: Walrein|slp
+|move|p1a: Escavalier|Knock Off|p2b: Walrein
+|-damage|p2b: Walrein|86\/324 slp
+|-enditem|p2b: Walrein|Chople Berry|[from] move: Knock Off|[of] p1a: Escavalier
+|
+|turn|3
+|
+|move|p2a: Furret|Knock Off|p1a: Escavalier
+|-damage|p1a: Escavalier|200\/277
+|-enditem|p1a: Escavalier|Yache Berry|[from] move: Knock Off|[of] p2a: Furret
+|move|p1b: Watchog|Hypnosis|p2a: Furret
+|-message|Sleep Clause Mod activated.
+|-fail|p2a: Furret
+|cant|p2b: Walrein|slp
+|move|p1a: Escavalier|Knock Off|p2a: Furret
+|-damage|p2a: Furret|154\/272
+|-enditem|p2a: Furret|Expert Belt|[from] move: Knock Off|[of] p1a: Escavalier
+|
+|turn|4
+|
+|move|p2a: Furret|Trick|p1b: Watchog
+|-activate|p2a: Furret|move: Trick|[of] p1b: Watchog
+|-item|p2a: Furret|Chople Berry|[from] move: Trick
+|move|p1b: Watchog|Hypnosis|p2a: Furret
+|-message|Sleep Clause Mod activated.
+|-fail|p2a: Furret
+|cant|p2b: Walrein|slp
+|move|p1a: Escavalier|Drill Run|p2b: Walrein
+|-damage|p2b: Walrein|0 fnt
+|faint|p2b: Walrein
+|
+|
+|switch|p2b: Genesect-Burn|Genesect-Burn, L70|201\/201
+|-boost|p2b: Genesect-Burn|atk|1|[from] ability: Download
+|turn|5
+|
+|move|p2a: Furret|Double-Edge|p1b: Watchog
+|-damage|p1b: Watchog|97\/283
+|-damage|p2a: Furret|93\/272|[from] recoil|[of] p1b: Watchog
+|move|p2b: Genesect-Burn|Blaze Kick|p1a: Escavalier
+|-supereffective|p1a: Escavalier
+|-damage|p1a: Escavalier|0 fnt
+|faint|p1a: Escavalier
+|move|p1b: Watchog|Hypnosis|p2b: Genesect-Burn
+|-status|p2b: Genesect-Burn|slp
+|
+|
+|switch|p1a: Gogoat|Gogoat, L76, F|344\/344
+|turn|6
+|
+|move|p1b: Watchog|Protect|p1b: Watchog
+|-singleturn|p1b: Watchog|Protect
+|move|p2a: Furret|Ice Punch|p1a: Gogoat
+|-supereffective|p1a: Gogoat
+|-enditem|p1a: Gogoat|Yache Berry|[eat]
+|-damage|p1a: Gogoat|260\/344
+|cant|p2b: Genesect-Burn|slp
+|move|p1a: Gogoat|Earthquake|p2b: Genesect-Burn
+|-activate|p1b: Watchog|Protect
+|-damage|p2a: Furret|17\/272
+|-damage|p2b: Genesect-Burn|135\/201 slp
+|
+|turn|7
+|
+|move|p2a: Furret|Double-Edge|p1b: Watchog
+|-damage|p1b: Watchog|0 fnt
+|-damage|p2a: Furret|0 fnt|[from] recoil|[of] p1b: Watchog
+|faint|p1b: Watchog
+|faint|p2a: Furret
+|cant|p2b: Genesect-Burn|slp
+|move|p1a: Gogoat|Rock Slide|p2b: Genesect-Burn
+|-damage|p2b: Genesect-Burn|72\/201 slp
+|
+|
+|switch|p1b: Politoed|Politoed, L79, F|305\/305
+|switch|p2a: Beautifly|Beautifly, L89, F|289\/289
+|-weather|RainDance
+|turn|8
+|
+|switch|p1a: Clawitzer|Clawitzer, L79, M|275\/275
+|-curestatus|p2b: Genesect-Burn|slp
+|move|p2b: Genesect-Burn|Bug Buzz|p1a: Clawitzer
+|-damage|p1a: Clawitzer|169\/275
+|move|p2a: Beautifly|Quiver Dance|p2a: Beautifly
+|-boost|p2a: Beautifly|spa|1
+|-boost|p2a: Beautifly|spd|1
+|-boost|p2a: Beautifly|spe|1
+|move|p1b: Politoed|Encore|p2b: Genesect-Burn
+|-start|p2b: Genesect-Burn|Encore
+|
+|-weather|RainDance|[upkeep]
+|turn|9
+|
+|move|p2a: Beautifly|Giga Drain|p1a: Clawitzer
+|-supereffective|p1a: Clawitzer
+|-damage|p1a: Clawitzer|0 fnt
+|faint|p1a: Clawitzer
+|move|p2b: Genesect-Burn|Bug Buzz|p1b: Politoed
+|-damage|p1b: Politoed|205\/305
+|move|p1b: Politoed|Ice Beam|p2a: Beautifly
+|-supereffective|p2a: Beautifly
+|-enditem|p2a: Beautifly|Yache Berry|[eat]
+|-damage|p2a: Beautifly|222\/289
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p1a: Gogoat|Gogoat, L76, F|260\/344
+|turn|10
+|
+|move|p2a: Beautifly|Giga Drain|p1b: Politoed
+|-supereffective|p1b: Politoed
+|-damage|p1b: Politoed|1\/305
+|-heal|p2a: Beautifly|289\/289|[from] drain|[of] p1b: Politoed
+|-enditem|p1b: Politoed|Sitrus Berry|[eat]
+|-heal|p1b: Politoed|77\/305|[from] item: Sitrus Berry
+|move|p2b: Genesect-Burn|Bug Buzz|p1a: Gogoat
+|-supereffective|p1a: Gogoat
+|-damage|p1a: Gogoat|14\/344
+|move|p1b: Politoed|Hydro Pump|p2b: Genesect-Burn
+|-damage|p2b: Genesect-Burn|0 fnt
+|faint|p2b: Genesect-Burn
+|move|p1a: Gogoat|Rock Slide|p2: Genesect-Burn
+|-supereffective|p2a: Beautifly
+|-damage|p2a: Beautifly|0 fnt
+|faint|p2a: Beautifly
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p2a: Hariyama|Hariyama, L82, F|405\/405
+|switch|p2b: Corsola|Corsola, L91, M|286\/286
+|turn|11
+|
+|move|p1b: Politoed|Hypnosis|p2a: Hariyama
+|-status|p2a: Hariyama|slp
+|move|p1a: Gogoat|Earthquake|p2a: Hariyama
+|-damage|p1b: Politoed|8\/305
+|-damage|p2a: Hariyama|329\/405 slp
+|-supereffective|p2b: Corsola
+|-damage|p2b: Corsola|176\/286
+|cant|p2a: Hariyama|slp
+|move|p2b: Corsola|Scald|p1b: Politoed
+|-resisted|p1b: Politoed
+|-damage|p1b: Politoed|0 fnt
+|faint|p1b: Politoed
+|
+|-weather|RainDance|[upkeep]
+|turn|12
+|
+|move|p1a: Gogoat|Horn Leech|p2b: Corsola
+|-supereffective|p2b: Corsola
+|-damage|p2b: Corsola|0 fnt
+|-heal|p1a: Gogoat|102\/344|[from] drain|[of] p2b: Corsola
+|faint|p2b: Corsola
+|cant|p2a: Hariyama|slp
+|
+|-weather|none
+|turn|13
+|
+|move|p1a: Gogoat|Bulk Up|p1a: Gogoat
+|-boost|p1a: Gogoat|atk|1
+|-boost|p1a: Gogoat|def|1
+|cant|p2a: Hariyama|slp
+|
+|turn|14
+|
+|move|p1a: Gogoat|Horn Leech|p2a: Hariyama
+|-damage|p2a: Hariyama|160\/405 slp
+|-heal|p1a: Gogoat|187\/344|[from] drain|[of] p2a: Hariyama
+|-enditem|p2a: Hariyama|Sitrus Berry|[eat]
+|-heal|p2a: Hariyama|261\/405 slp|[from] item: Sitrus Berry
+|-curestatus|p2a: Hariyama|slp
+|move|p2a: Hariyama|Close Combat|p1a: Gogoat
+|-damage|p1a: Gogoat|27\/344
+|-unboost|p2a: Hariyama|def|1
+|-unboost|p2a: Hariyama|spd|1
+|
+|turn|15
+|
+|move|p1a: Gogoat|Horn Leech|p2a: Hariyama
+|-damage|p2a: Hariyama|0 fnt
+|-heal|p1a: Gogoat|158\/344|[from] drain|[of] p2a: Hariyama
+|faint|p2a: Hariyama
+|
+|win|SD130928
+|raw|Ladder updating...
+|raw|SD130928's rating: 1000 &rarr; <strong>1040<\/strong><br \/>(+40 for winning)
+|raw|awesomness's rating: 1000 &rarr; <strong>1000<\/strong><br \/>(+0 for losing)
+|leave|awesomness
+|player|p2

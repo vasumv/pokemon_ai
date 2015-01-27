@@ -1,0 +1,182 @@
+|join|HollowHead
+|join|WebBowser
+|player|p1|HollowHead|80
+|player|p2|WebBowser|92
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Manectric, M, shiny
+|poke|p1|Landorus-Therian, M, shiny
+|poke|p1|Gothitelle, F
+|poke|p1|Lucario, M
+|poke|p1|Whimsicott, F
+|poke|p1|Starmie
+|poke|p2|Scolipede, M
+|poke|p2|Espeon, F
+|poke|p2|Latios, M
+|poke|p2|Greninja, M
+|poke|p2|Charizard, F
+|poke|p2|Sylveon, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Landorus-Therian|Landorus-Therian, M, shiny|382\/382
+|switch|p2a: Latios|Latios, M|364\/364
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Latios
+|-unboost|p2a: Latios|atk|1
+|turn|1
+|
+|switch|p1a: Whimsicott|Whimsicott, F|324\/324
+|move|p2a: Latios|Reflect|p2a: Latios
+|-sidestart|p2: WebBowser|Reflect
+|
+|turn|2
+|
+|switch|p2a: Greninja|Greninja, M|286\/286
+|move|p1a: Whimsicott|Encore|p2a: Greninja
+|-fail|p2a: Greninja
+|
+|turn|3
+|
+|switch|p1a: Gothitelle|Gothitelle, F|302\/302
+|move|p2a: Greninja|Ice Beam|p1a: Gothitelle
+|-start|p2a: Greninja|typechange|Ice|[from] Protean
+|-damage|p1a: Gothitelle|141\/302
+|-damage|p2a: Greninja|258\/286|[from] item: Life Orb
+|
+|turn|4
+|
+|move|p2a: Greninja|Ice Beam|p1a: Gothitelle
+|-crit|p1a: Gothitelle
+|-damage|p1a: Gothitelle|0 fnt
+|-damage|p2a: Greninja|230\/286|[from] item: Life Orb
+|faint|p1a: Gothitelle
+|
+|
+|switch|p1a: Manectric|Manectric, M, shiny|282\/282
+|turn|5
+|
+|detailschange|p1a: Manectric|Manectric-Mega, M, shiny
+|message|Manectric has Mega Evolved into Mega Manectric!
+|-ability|p1a: Manectric|Intimidate|[of] p2a: Greninja
+|-unboost|p2a: Greninja|atk|1
+|move|p2a: Greninja|Hydro Pump|p1a: Manectric
+|-start|p2a: Greninja|typechange|Water|[from] Protean
+|-damage|p1a: Manectric|17\/282
+|-damage|p2a: Greninja|202\/286|[from] item: Life Orb
+|move|p1a: Manectric|Thunderbolt|p2a: Greninja
+|-supereffective|p2a: Greninja
+|-damage|p2a: Greninja|0 fnt
+|faint|p2a: Greninja
+|
+|
+|switch|p2a: Latios|Latios, M|364\/364
+|turn|6
+|
+|move|p1a: Manectric|Volt Switch|p2a: Latios
+|-resisted|p2a: Latios
+|-damage|p2a: Latios|306\/364
+|
+|switch|p1a: Whimsicott|Whimsicott, F|324\/324
+|move|p2a: Latios|Light Screen|p2a: Latios
+|-sidestart|p2: WebBowser|move: Light Screen
+|
+|turn|7
+|
+|switch|p2a: Sylveon|Sylveon, M|394\/394
+|switch|p1a: Landorus-Therian|Landorus-Therian, M, shiny|382\/382
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Sylveon
+|-unboost|p2a: Sylveon|atk|1
+|
+|turn|8
+|
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Sylveon
+|-sidestart|p2: WebBowser|move: Stealth Rock
+|move|p2a: Sylveon|Hyper Voice|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|faint|p1a: Landorus-Therian
+|
+|-sideend|p2: WebBowser|Reflect
+|
+|switch|p1a: Lucario|Lucario, M|281\/281
+|turn|9
+|
+|move|p1a: Lucario|Swords Dance|p1a: Lucario
+|-boost|p1a: Lucario|atk|2
+|move|p2a: Sylveon|Hyper Voice|p1a: Lucario
+|-damage|p1a: Lucario|0 fnt
+|faint|p1a: Lucario
+|
+|
+|switch|p1a: Whimsicott|Whimsicott, F|324\/324
+|turn|10
+|c|âWebBowser|#sylveon sweep?
+|
+|move|p1a: Whimsicott|Stun Spore|p2a: Sylveon
+|-status|p2a: Sylveon|par
+|move|p2a: Sylveon|Hyper Voice|p1a: Whimsicott
+|-damage|p1a: Whimsicott|57\/324
+|
+|-heal|p1a: Whimsicott|77\/324|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Whimsicott|Leech Seed|p2a: Sylveon
+|-start|p2a: Sylveon|move: Leech Seed
+|move|p2a: Sylveon|Hyper Voice|p1a: Whimsicott
+|-damage|p1a: Whimsicott|0 fnt
+|faint|p1a: Whimsicott
+|
+|c|âHollowHead|I lost to a baton pass team that didn't use baton pass once. :'(
+|
+|switch|p1a: Manectric|Manectric-Mega, M, shiny|17\/282
+|-ability|p1a: Manectric|Intimidate|[of] p2a: Sylveon
+|-unboost|p2a: Sylveon|atk|1
+|turn|12
+|c|âWebBowser|rofl
+|
+|move|p1a: Manectric|Thunderbolt|p2a: Sylveon
+|-damage|p2a: Sylveon|322\/394 par
+|cant|p2a: Sylveon|par
+|
+|-damage|p2a: Sylveon|273\/394 par|[from] Leech Seed|[of] p1a: Manectric
+|-heal|p1a: Manectric|66\/282|[silent]
+|turn|13
+|
+|move|p1a: Manectric|Thunderbolt|p2a: Sylveon
+|-damage|p2a: Sylveon|206\/394 par
+|move|p2a: Sylveon|Hyper Voice|p1a: Manectric
+|-damage|p1a: Manectric|0 fnt
+|faint|p1a: Manectric
+|
+|-sideend|p2: WebBowser|move: Light Screen
+|
+|switch|p1a: Starmie|Starmie|261\/261
+|turn|14
+|
+|move|p1a: Starmie|Hydro Pump|p2a: Sylveon
+|-damage|p2a: Sylveon|41\/394 par
+|-damage|p1a: Starmie|235\/261|[from] item: Life Orb
+|move|p2a: Sylveon|Hyper Voice|p1a: Starmie
+|-crit|p1a: Starmie
+|-damage|p1a: Starmie|0 fnt
+|faint|p1a: Starmie
+|
+|win|WebBowser
+|raw|Ladder updating...
+|raw|HollowHead's rating: 1642 &rarr; <strong>1624<\/strong><br \/>(-18 for losing)
+|raw|WebBowser's rating: 1679 &rarr; <strong>1697<\/strong><br \/>(+18 for winning)
+|c|âHollowHead|gg!
+|c|âWebBowser|gg, lol
+|leave|HollowHead
+|player|p1

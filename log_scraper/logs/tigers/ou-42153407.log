@@ -1,0 +1,773 @@
+|join|tigers
+|join|richard III
+|player|p1|tigers|93
+|player|p2|richard III|170
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Tentacruel, M
+|poke|p1|Celebi
+|poke|p1|Heatran, M
+|poke|p1|Quagsire, M
+|poke|p1|Skarmory, M
+|poke|p1|Gengar, M
+|poke|p2|Dragonite, F
+|poke|p2|Ferrothorn, F
+|poke|p2|Latios, M
+|poke|p2|Golurk
+|poke|p2|Terrakion
+|poke|p2|Heatran, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Cruel2|Tentacruel, M|364\/364
+|switch|p2a: Heatran|Heatran, F|385\/385
+|turn|1
+|callback|decision
+|
+|switch|p2a: Dragonite|Dragonite, F|323\/323
+|move|p1a: Cruel2|Toxic Spikes|p2a: Dragonite
+|-sidestart|p2: richard III|move: Toxic Spikes
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|move|p2a: Dragonite|Draco Meteor|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|153\/334
+|-unboost|p2a: Dragonite|spa|2
+|
+|-heal|p1a: Skarmory|173\/334|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, F|385\/385
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334
+|
+|turn|4
+|callback|decision
+|
+|switch|p1a: Cruel2|Tentacruel, M|364\/364
+|move|p2a: Heatran|Lava Plume|p1a: Cruel2
+|-resisted|p1a: Cruel2
+|-damage|p1a: Cruel2|325\/364
+|
+|-heal|p1a: Cruel2|347\/364|[from] item: Black Sludge
+|turn|5
+|callback|decision
+|
+|move|p1a: Cruel2|Toxic Spikes|p2a: Heatran
+|-sidestart|p2: richard III|move: Toxic Spikes
+|move|p2a: Heatran|Lava Plume|p1a: Cruel2
+|-resisted|p1a: Cruel2
+|-damage|p1a: Cruel2|305\/364
+|
+|-heal|p1a: Cruel2|327\/364|[from] item: Black Sludge
+|turn|6
+|callback|decision
+|
+|switch|p2a: Dragonite|Dragonite, F|323\/323
+|move|p1a: Cruel2|Knock Off|p2a: Dragonite
+|-damage|p2a: Dragonite|317\/323
+|-enditem|p2a: Dragonite|Choice Specs|[from] move: Knock Off|[of] p1a: Cruel2
+|
+|-heal|p1a: Cruel2|349\/364|[from] item: Black Sludge
+|turn|7
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|386\/386
+|move|p2a: Dragonite|Thunder|p1a: Heatran|[miss]
+|-miss|p2a: Dragonite|p1a: Heatran
+|
+|turn|8
+|callback|decision
+|
+|switch|p2a: Terrakion|Terrakion|324\/324
+|-status|p2a: Terrakion|tox
+|-enditem|p2a: Terrakion|Lum Berry|[eat]
+|-curestatus|p2a: Terrakion|tox
+|move|p1a: Heatran|Stealth Rock|p2a: Terrakion
+|-sidestart|p2: richard III|move: Stealth Rock
+|
+|turn|9
+|callback|decision
+|
+|switch|p1a: sireStupidO|Quagsire, M|394\/394
+|move|p2a: Terrakion|Swords Dance|p2a: Terrakion
+|-boost|p2a: Terrakion|atk|2
+|
+|turn|10
+|callback|decision
+|
+|switch|p2a: Dragonite|Dragonite, F|317\/323
+|-damage|p2a: Dragonite|237\/323|[from] Stealth Rock
+|move|p1a: sireStupidO|Scald|p2a: Dragonite
+|-resisted|p2a: Dragonite
+|-damage|p2a: Dragonite|198\/323
+|
+|turn|11
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|386\/386
+|move|p2a: Dragonite|Hurricane|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|317\/386
+|
+|-heal|p1a: Heatran|341\/386|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|301\/301
+|-damage|p2a: Latios|264\/301|[from] Stealth Rock
+|move|p1a: Heatran|Roar|p2a: Latios
+|drag|p2a: Ferrothorn|Ferrothorn, F|352\/352
+|-damage|p2a: Ferrothorn|330\/352|[from] Stealth Rock
+|
+|-heal|p1a: Heatran|365\/386|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|352\/352|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, F|385\/385
+|-damage|p2a: Heatran|337\/385|[from] Stealth Rock
+|move|p1a: Heatran|Lava Plume|p2a: Heatran
+|-start|p2a: Heatran|ability: Flash Fire
+|
+|-heal|p2a: Heatran|361\/385|[from] item: Leftovers
+|-heal|p1a: Heatran|386\/386|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|264\/301
+|-damage|p2a: Latios|227\/301|[from] Stealth Rock
+|switch|p1a: Cruel2|Tentacruel, M|349\/364
+|
+|-heal|p1a: Cruel2|364\/364|[from] item: Black Sludge
+|turn|15
+|callback|decision
+|
+|switch|p1a: Celebi|Celebi|404\/404
+|move|p2a: Latios|Trick|p1a: Celebi
+|-activate|p2a: Latios|move: Trick|[of] p1a: Celebi
+|-item|p1a: Celebi|Choice Scarf|[from] move: Trick
+|-item|p2a: Latios|Leftovers|[from] move: Trick
+|
+|-heal|p2a: Latios|245\/301|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Celebi|U-turn|p2a: Latios
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|133\/301
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|386\/386
+|move|p2a: Latios|Draco Meteor|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|290\/386
+|-unboost|p2a: Latios|spa|2
+|
+|-heal|p2a: Latios|151\/301|[from] item: Leftovers
+|-heal|p1a: Heatran|314\/386|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p2a: Latios|Surf|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|232\/386
+|move|p1a: Heatran|Roar|p2a: Latios
+|drag|p2a: Terrakion|Terrakion|324\/324
+|-status|p2a: Terrakion|tox
+|-damage|p2a: Terrakion|304\/324 tox|[from] Stealth Rock
+|
+|-heal|p1a: Heatran|256\/386|[from] item: Leftovers
+|-damage|p2a: Terrakion|284\/324 tox|[from] psn
+|turn|18
+|callback|decision
+|
+|switch|p1a: sireStupidO|Quagsire, M|394\/394
+|move|p2a: Terrakion|Close Combat|p1a: sireStupidO
+|-damage|p1a: sireStupidO|220\/394
+|-unboost|p2a: Terrakion|def|1
+|-unboost|p2a: Terrakion|spd|1
+|
+|-heal|p1a: sireStupidO|244\/394|[from] item: Leftovers
+|-damage|p2a: Terrakion|244\/324 tox|[from] psn
+|turn|19
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|352\/352
+|-damage|p2a: Ferrothorn|330\/352|[from] Stealth Rock
+|move|p1a: sireStupidO|Recover|p1a: sireStupidO
+|-heal|p1a: sireStupidO|394\/394
+|
+|-heal|p2a: Ferrothorn|352\/352|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|switch|p1a: Cruel2|Tentacruel, M|364\/364
+|move|p2a: Ferrothorn|Leech Seed|p1a: Cruel2
+|-start|p1a: Cruel2|move: Leech Seed
+|
+|-damage|p1a: Cruel2|319\/364|[from] Leech Seed|[of] p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|307\/352|[from] ability: Liquid Ooze|[of] p1a: Cruel2
+|turn|21
+|callback|decision
+|
+|switch|p2a: Dragonite|Dragonite, F|198\/323
+|-damage|p2a: Dragonite|118\/323|[from] Stealth Rock
+|move|p1a: Cruel2|Knock Off|p2a: Dragonite
+|-damage|p2a: Dragonite|106\/323
+|
+|-heal|p1a: Cruel2|341\/364|[from] item: Black Sludge
+|-damage|p1a: Cruel2|296\/364|[from] Leech Seed|[of] p2a: Dragonite
+|-damage|p2a: Dragonite|61\/323|[from] ability: Liquid Ooze|[of] p1a: Cruel2
+|turn|22
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|256\/386
+|move|p2a: Dragonite|Thunder|p1a: Heatran
+|-damage|p1a: Heatran|149\/386
+|-status|p1a: Heatran|par
+|
+|-heal|p1a: Heatran|173\/386 par|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p2a: Dragonite|Thunder|p1a: Heatran
+|-damage|p1a: Heatran|67\/386 par
+|move|p1a: Heatran|Roar|p2a: Dragonite
+|drag|p2a: Heatran|Heatran, F|361\/385
+|-damage|p2a: Heatran|313\/385|[from] Stealth Rock
+|
+|-heal|p2a: Heatran|337\/385|[from] item: Leftovers
+|-heal|p1a: Heatran|91\/386 par|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|switch|p1a: Cruel2|Tentacruel, M|296\/364
+|move|p2a: Heatran|Roar|p1a: Cruel2
+|drag|p1a: Celebi|Celebi|404\/404
+|
+|-heal|p2a: Heatran|361\/385|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p1a: Celebi|U-turn|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|350\/385
+|callback|decision
+|
+|switch|p1a: Cruel2|Tentacruel, M|296\/364
+|move|p2a: Heatran|Lava Plume|p1a: Cruel2
+|-resisted|p1a: Cruel2
+|-damage|p1a: Cruel2|256\/364
+|-status|p1a: Cruel2|brn
+|
+|-heal|p1a: Cruel2|278\/364 brn|[from] item: Black Sludge
+|-heal|p2a: Heatran|374\/385|[from] item: Leftovers
+|-damage|p1a: Cruel2|233\/364 brn|[from] brn
+|turn|26
+|callback|decision
+|
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-singleturn|p2a: Heatran|Protect
+|move|p1a: Cruel2|Scald|p2a: Heatran
+|-activate|p2a: Heatran|Protect
+|
+|-heal|p1a: Cruel2|255\/364 brn|[from] item: Black Sludge
+|-heal|p2a: Heatran|385\/385|[from] item: Leftovers
+|-damage|p1a: Cruel2|210\/364 brn|[from] brn
+|turn|27
+|callback|decision
+|
+|switch|p2a: Dragonite|Dragonite, F|61\/323
+|-damage|p2a: Dragonite|0 fnt|[from] Stealth Rock
+|faint|p2a: Dragonite
+|move|p1a: Cruel2|Scald|p2: Dragonite|[notarget]
+|-notarget
+|
+|-heal|p1a: Cruel2|232\/364 brn|[from] item: Black Sludge
+|-damage|p1a: Cruel2|187\/364 brn|[from] brn
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|151\/301
+|-damage|p2a: Latios|114\/301|[from] Stealth Rock
+|turn|28
+|callback|decision
+|
+|switch|p1a: Celebi|Celebi|404\/404
+|move|p2a: Latios|Surf|p1a: Celebi
+|-resisted|p1a: Celebi
+|-damage|p1a: Celebi|362\/404
+|
+|-heal|p2a: Latios|132\/301|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|307\/352
+|-damage|p2a: Ferrothorn|285\/352|[from] Stealth Rock
+|move|p1a: Celebi|U-turn|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|250\/352
+|-damage|p1a: Celebi|312\/404|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|
+|-heal|p2a: Ferrothorn|272\/352|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|move|p1a: Skarmory|Spikes|p2a: Ferrothorn
+|-sidestart|p2: richard III|Spikes
+|move|p2a: Ferrothorn|Leech Seed|p1a: Skarmory
+|-start|p1a: Skarmory|move: Leech Seed
+|
+|-heal|p2a: Ferrothorn|294\/352|[from] item: Leftovers
+|-damage|p1a: Skarmory|293\/334|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|335\/352|[silent]
+|turn|31
+|callback|decision
+|
+|switch|p1a: Cruel2|Tentacruel, M|187\/364 brn
+|switch|p2a: Heatran|Heatran, F|385\/385
+|-damage|p2a: Heatran|337\/385|[from] Stealth Rock
+|-damage|p2a: Heatran|289\/385|[from] Spikes
+|
+|-heal|p1a: Cruel2|209\/364 brn|[from] item: Black Sludge
+|-heal|p2a: Heatran|313\/385|[from] item: Leftovers
+|-damage|p1a: Cruel2|164\/364 brn|[from] brn
+|turn|32
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|91\/386 par
+|move|p2a: Heatran|Lava Plume|p1a: Heatran
+|-start|p1a: Heatran|ability: Flash Fire
+|
+|-heal|p2a: Heatran|337\/385|[from] item: Leftovers
+|-heal|p1a: Heatran|115\/386 par|[from] item: Leftovers
+|turn|33
+|callback|decision
+|
+|move|p2a: Heatran|Roar|p1a: Heatran
+|drag|p1a: sireStupidO|Quagsire, M|394\/394
+|
+|-heal|p2a: Heatran|361\/385|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|move|p2a: Heatran|Toxic|p1a: sireStupidO
+|-status|p1a: sireStupidO|tox
+|move|p1a: sireStupidO|Scald|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|263\/385
+|
+|-heal|p2a: Heatran|287\/385|[from] item: Leftovers
+|-damage|p1a: sireStupidO|370\/394 tox|[from] psn
+|turn|35
+|callback|decision
+|
+|move|p2a: Heatran|Lava Plume|p1a: sireStupidO
+|-resisted|p1a: sireStupidO
+|-damage|p1a: sireStupidO|297\/394 tox
+|move|p1a: sireStupidO|Scald|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|201\/385
+|
+|-heal|p2a: Heatran|225\/385|[from] item: Leftovers
+|-heal|p1a: sireStupidO|321\/394 tox|[from] item: Leftovers
+|-damage|p1a: sireStupidO|273\/394 tox|[from] psn
+|turn|36
+|callback|decision
+|
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-singleturn|p2a: Heatran|Protect
+|move|p1a: sireStupidO|Earthquake|p2a: Heatran
+|-activate|p2a: Heatran|Protect
+|
+|-heal|p2a: Heatran|249\/385|[from] item: Leftovers
+|-heal|p1a: sireStupidO|297\/394 tox|[from] item: Leftovers
+|-damage|p1a: sireStupidO|225\/394 tox|[from] psn
+|turn|37
+|callback|decision
+|
+|switch|p2a: Golurk|Golurk|382\/382
+|-damage|p2a: Golurk|359\/382|[from] Stealth Rock
+|-damage|p2a: Golurk|312\/382|[from] Spikes
+|-status|p2a: Golurk|tox
+|switch|p1a: Heatran|Heatran, M|115\/386 par
+|
+|-heal|p2a: Golurk|335\/382 tox|[from] item: Leftovers
+|-heal|p1a: Heatran|139\/386 par|[from] item: Leftovers
+|-damage|p2a: Golurk|312\/382 tox|[from] psn
+|turn|38
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|293\/334
+|move|p2a: Golurk|Stealth Rock|p1a: Skarmory
+|-sidestart|p1: tigers|move: Stealth Rock
+|
+|-heal|p1a: Skarmory|313\/334|[from] item: Leftovers
+|-heal|p2a: Golurk|335\/382 tox|[from] item: Leftovers
+|-damage|p2a: Golurk|289\/382 tox|[from] psn
+|turn|39
+|callback|decision
+|
+|move|p1a: Skarmory|Spikes|p2a: Golurk
+|-sidestart|p2: richard III|Spikes
+|move|p2a: Golurk|Fire Punch|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|197\/334
+|
+|-heal|p1a: Skarmory|217\/334|[from] item: Leftovers
+|-heal|p2a: Golurk|312\/382 tox|[from] item: Leftovers
+|-damage|p2a: Golurk|243\/382 tox|[from] psn
+|turn|40
+|callback|decision
+|
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334
+|move|p2a: Golurk|Fire Punch|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|214\/334
+|
+|-heal|p1a: Skarmory|234\/334|[from] item: Leftovers
+|-heal|p2a: Golurk|266\/382 tox|[from] item: Leftovers
+|-damage|p2a: Golurk|174\/382 tox|[from] psn
+|turn|41
+|callback|decision
+|
+|move|p1a: Skarmory|Spikes|p2a: Golurk
+|-sidestart|p2: richard III|Spikes
+|move|p2a: Golurk|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|
+|-heal|p1a: Skarmory|254\/334|[from] item: Leftovers
+|-heal|p2a: Golurk|197\/382 tox|[from] item: Leftovers
+|-damage|p2a: Golurk|82\/382 tox|[from] psn
+|turn|42
+|callback|decision
+|
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334
+|move|p2a: Golurk|Fire Punch|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|220\/334
+|
+|-heal|p1a: Skarmory|240\/334|[from] item: Leftovers
+|-heal|p2a: Golurk|105\/382 tox|[from] item: Leftovers
+|-damage|p2a: Golurk|0 fnt|[from] psn
+|faint|p2a: Golurk
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, F|249\/385
+|-damage|p2a: Heatran|201\/385|[from] Stealth Rock
+|-damage|p2a: Heatran|105\/385|[from] Spikes
+|turn|43
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|132\/301
+|-damage|p2a: Latios|95\/301|[from] Stealth Rock
+|switch|p1a: Cruel2|Tentacruel, M|164\/364 brn
+|-damage|p1a: Cruel2|119\/364 brn|[from] Stealth Rock
+|
+|-heal|p2a: Latios|113\/301|[from] item: Leftovers
+|-heal|p1a: Cruel2|141\/364 brn|[from] item: Black Sludge
+|-damage|p1a: Cruel2|96\/364 brn|[from] brn
+|turn|44
+|callback|decision
+|
+|switch|p1a: Celebi|Celebi|312\/404
+|-damage|p1a: Celebi|262\/404|[from] Stealth Rock
+|move|p2a: Latios|Draco Meteor|p1a: Celebi
+|-damage|p1a: Celebi|55\/404
+|-unboost|p2a: Latios|spa|2
+|
+|-heal|p2a: Latios|131\/301|[from] item: Leftovers
+|turn|45
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|335\/352
+|-damage|p2a: Ferrothorn|247\/352|[from] Spikes
+|-damage|p2a: Ferrothorn|225\/352|[from] Stealth Rock
+|move|p1a: Celebi|U-turn|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|190\/352
+|-damage|p1a: Celebi|5\/404|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|callback|decision
+|
+|switch|p1a: Cruel2|Tentacruel, M|96\/364 brn
+|-damage|p1a: Cruel2|51\/364 brn|[from] Stealth Rock
+|
+|-heal|p1a: Cruel2|73\/364 brn|[from] item: Black Sludge
+|-heal|p2a: Ferrothorn|212\/352|[from] item: Leftovers
+|-damage|p1a: Cruel2|28\/364 brn|[from] brn
+|turn|46
+|callback|decision
+|
+|move|p1a: Cruel2|Knock Off|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|210\/352
+|-damage|p1a: Cruel2|0 fnt|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|-enditem|p2a: Ferrothorn|Leftovers|[from] move: Knock Off|[of] p1a: Cruel2
+|faint|p1a: Cruel2
+|move|p2a: Ferrothorn|Spikes|p1: Cruel2
+|-sidestart|p1: tigers|Spikes
+|
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, M|262\/262
+|-damage|p1a: Gengar|230\/262|[from] Stealth Rock
+|turn|47
+|callback|decision
+|
+|move|p1a: Gengar|Substitute|p1a: Gengar
+|-start|p1a: Gengar|Substitute
+|-damage|p1a: Gengar|165\/262
+|move|p2a: Ferrothorn|Gyro Ball|p1a: Gengar
+|-end|p1a: Gengar|Substitute
+|
+|-heal|p1a: Gengar|181\/262|[from] item: Black Sludge
+|turn|48
+|callback|decision
+|
+|move|p1a: Gengar|Disable|p2a: Ferrothorn
+|-start|p2a: Ferrothorn|Disable|Gyro Ball
+|move|p2a: Ferrothorn|Leech Seed|p1a: Gengar
+|-start|p1a: Gengar|move: Leech Seed
+|
+|-heal|p1a: Gengar|197\/262|[from] item: Black Sludge
+|-damage|p1a: Gengar|165\/262|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|242\/352|[silent]
+|turn|49
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|139\/386 par
+|-damage|p1a: Heatran|91\/386 par|[from] Spikes
+|-damage|p1a: Heatran|43\/386 par|[from] Stealth Rock
+|move|p2a: Ferrothorn|Spikes|p1a: Heatran
+|-sidestart|p1: tigers|Spikes
+|
+|-heal|p1a: Heatran|67\/386 par|[from] item: Leftovers
+|turn|50
+|callback|decision
+|
+|move|p2a: Ferrothorn|Leech Seed|p1a: Heatran
+|-start|p1a: Heatran|move: Leech Seed
+|move|p1a: Heatran|Roar|p2a: Ferrothorn
+|drag|p2a: Latios|Latios, M|131\/301
+|-damage|p2a: Latios|94\/301|[from] Stealth Rock
+|
+|-heal|p2a: Latios|112\/301|[from] item: Leftovers
+|-heal|p1a: Heatran|91\/386 par|[from] item: Leftovers
+|-damage|p1a: Heatran|43\/386 par|[from] Leech Seed|[of] p2a: Latios
+|-heal|p2a: Latios|160\/301|[silent]
+|turn|51
+|callback|decision
+|
+|move|p2a: Latios|Surf|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|-heal|p2a: Latios|178\/301|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|240\/334
+|-damage|p1a: Skarmory|199\/334|[from] Stealth Rock
+|turn|52
+|callback|decision
+|
+|move|p2a: Latios|Surf|p1a: Skarmory
+|-damage|p1a: Skarmory|82\/334
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|249\/334
+|
+|-heal|p2a: Latios|196\/301|[from] item: Leftovers
+|-heal|p1a: Skarmory|269\/334|[from] item: Leftovers
+|turn|53
+|callback|decision
+|
+|move|p2a: Latios|Surf|p1a: Skarmory
+|-damage|p1a: Skarmory|135\/334
+|move|p1a: Skarmory|Whirlwind|p2a: Latios
+|drag|p2a: Ferrothorn|Ferrothorn, F|242\/352
+|-damage|p2a: Ferrothorn|220\/352|[from] Stealth Rock
+|-damage|p2a: Ferrothorn|132\/352|[from] Spikes
+|
+|-heal|p1a: Skarmory|155\/334|[from] item: Leftovers
+|turn|54
+|callback|decision
+|
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|322\/334
+|move|p2a: Ferrothorn|Leech Seed|p1a: Skarmory
+|-start|p1a: Skarmory|move: Leech Seed
+|
+|-heal|p1a: Skarmory|334\/334|[from] item: Leftovers
+|-damage|p1a: Skarmory|293\/334|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|173\/352|[silent]
+|turn|55
+|callback|decision
+|
+|move|p2a: Ferrothorn|Spikes|p1a: Skarmory
+|-sidestart|p1: tigers|Spikes
+|move|p1a: Skarmory|Whirlwind|p2a: Ferrothorn
+|drag|p2a: Terrakion|Terrakion|244\/324 tox
+|-damage|p2a: Terrakion|163\/324 tox|[from] Spikes
+|-damage|p2a: Terrakion|143\/324 tox|[from] Stealth Rock
+|
+|-heal|p1a: Skarmory|313\/334|[from] item: Leftovers
+|-damage|p1a: Skarmory|272\/334|[from] Leech Seed|[of] p2a: Terrakion
+|-heal|p2a: Terrakion|184\/324 tox|[silent]
+|-damage|p2a: Terrakion|164\/324 tox|[from] psn
+|turn|56
+|callback|decision
+|
+|switch|p1a: Celebi|Celebi|5\/404
+|-damage|p1a: Celebi|0 fnt|[from] Stealth Rock
+|faint|p1a: Celebi
+|move|p2a: Terrakion|Close Combat|p1: Celebi|[notarget]
+|-notarget
+|
+|-damage|p2a: Terrakion|124\/324 tox|[from] psn
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, M|165\/262
+|-damage|p1a: Gengar|133\/262|[from] Stealth Rock
+|turn|57
+|callback|decision
+|
+|move|p1a: Gengar|Substitute|p1a: Gengar
+|-start|p1a: Gengar|Substitute
+|-damage|p1a: Gengar|68\/262
+|move|p2a: Terrakion|Stone Edge|p1a: Gengar|[miss]
+|-miss|p2a: Terrakion|p1a: Gengar
+|
+|-heal|p1a: Gengar|84\/262|[from] item: Black Sludge
+|-damage|p2a: Terrakion|64\/324 tox|[from] psn
+|turn|58
+|callback|decision
+|
+|move|p1a: Gengar|Shadow Ball|p2a: Terrakion
+|-damage|p2a: Terrakion|0 fnt
+|faint|p2a: Terrakion
+|
+|-heal|p1a: Gengar|100\/262|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|173\/352
+|-damage|p2a: Ferrothorn|85\/352|[from] Spikes
+|-damage|p2a: Ferrothorn|63\/352|[from] Stealth Rock
+|turn|59
+|callback|decision
+|
+|move|p1a: Gengar|Focus Blast|p2a: Ferrothorn|[miss]
+|-miss|p1a: Gengar|p2a: Ferrothorn
+|move|p2a: Ferrothorn|Gyro Ball|p1a: Gengar
+|-end|p1a: Gengar|Substitute
+|
+|-heal|p1a: Gengar|116\/262|[from] item: Black Sludge
+|turn|60
+|callback|decision
+|
+|move|p1a: Gengar|Focus Blast|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|faint|p2a: Ferrothorn
+|
+|-heal|p1a: Gengar|132\/262|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|196\/301
+|-damage|p2a: Latios|159\/301|[from] Stealth Rock
+|turn|61
+|callback|decision
+|
+|move|p2a: Latios|Psyshock|p1a: Gengar
+|-supereffective|p1a: Gengar
+|-damage|p1a: Gengar|0 fnt
+|faint|p1a: Gengar
+|
+|-heal|p2a: Latios|177\/301|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|272\/334
+|-damage|p1a: Skarmory|231\/334|[from] Stealth Rock
+|turn|62
+|callback|decision
+|
+|move|p2a: Latios|Surf|p1a: Skarmory
+|-damage|p1a: Skarmory|110\/334
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|277\/334
+|
+|-heal|p2a: Latios|195\/301|[from] item: Leftovers
+|-heal|p1a: Skarmory|297\/334|[from] item: Leftovers
+|turn|63
+|callback|decision
+|
+|move|p2a: Latios|Draco Meteor|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|153\/334
+|-unboost|p2a: Latios|spa|2
+|move|p1a: Skarmory|Whirlwind|p2a: Latios
+|drag|p2a: Heatran|Heatran, F|105\/385
+|-damage|p2a: Heatran|57\/385|[from] Stealth Rock
+|-damage|p2a: Heatran|0 fnt|[from] Spikes
+|faint|p2a: Heatran
+|
+|-heal|p1a: Skarmory|173\/334|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|195\/301
+|-damage|p2a: Latios|158\/301|[from] Stealth Rock
+|turn|64
+|callback|decision
+|
+|move|p2a: Latios|Surf|p1a: Skarmory
+|-damage|p1a: Skarmory|53\/334
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|220\/334
+|
+|-heal|p2a: Latios|176\/301|[from] item: Leftovers
+|-heal|p1a: Skarmory|240\/334|[from] item: Leftovers
+|turn|65
+|callback|decision
+|
+|move|p2a: Latios|Surf|p1a: Skarmory
+|-crit|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|faint|p1a: Skarmory
+|
+|-heal|p2a: Latios|194\/301|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: sireStupidO|Quagsire, M|225\/394 tox
+|-damage|p1a: sireStupidO|201\/394 tox|[from] Stealth Rock
+|-damage|p1a: sireStupidO|103\/394 tox|[from] Spikes
+|turn|66
+|callback|decision
+|
+|move|p2a: Latios|Psyshock|p1a: sireStupidO
+|-crit|p1a: sireStupidO
+|-damage|p1a: sireStupidO|0 fnt
+|faint|p1a: sireStupidO
+|
+|win|richard III
+|raw|Ladder updating...
+|raw|tigers's rating: 2012 &rarr; <strong>2002<\/strong><br \/>(-10 for losing)
+|raw|richard III's rating: 1835 &rarr; <strong>1840<\/strong><br \/>(+5 for winning)
+|chat|richard III|ah gg
+|chat|richard III|my best win ever
+|chat|tigers|Comeon

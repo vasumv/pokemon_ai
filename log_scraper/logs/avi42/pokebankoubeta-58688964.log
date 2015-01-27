@@ -1,0 +1,285 @@
+|join|Avi42
+|join|Itachi Edo
+|player|p1|Avi42|163
+|player|p2|Itachi Edo|144
+|gametype|singles
+|tier|Pokebank OU (beta)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Aegislash, F
+|poke|p1|Mawile, F
+|poke|p1|Forretress, F
+|poke|p1|Tentacruel, M
+|poke|p1|Hydreigon, F
+|poke|p1|Weavile, F
+|poke|p2|Wobbuffet, F
+|poke|p2|Scolipede, M, shiny
+|poke|p2|Gyarados, M
+|poke|p2|Aegislash, M
+|poke|p2|Chandelure, M
+|poke|p2|Weavile, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Mawile|Mawile, F|304\/304
+|switch|p2a: Wobbuffet|Wobbuffet, F|528\/528
+|-ability|p1a: Mawile|Intimidate|[of] p2a: Wobbuffet
+|-unboost|p2a: Wobbuffet|atk|1
+|turn|1
+|callback|decision
+|
+|-formechange|p1a: Mawile|Mawile-Mega
+|message|Mawile mega-evolved into Mawile-Mega!
+|move|p1a: Mawile|Swords Dance|p1a: Mawile
+|-boost|p1a: Mawile|atk|2
+|move|p2a: Wobbuffet|Encore|p1a: Mawile
+|-start|p1a: Mawile|Encore
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: Gyarados|Gyarados, M|332\/332
+|-ability|p2a: Gyarados|Intimidate|[of] p1a: Mawile
+|-unboost|p1a: Mawile|atk|1
+|move|p1a: Mawile|Swords Dance|p1a: Mawile
+|-boost|p1a: Mawile|atk|2
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Gyarados|Dragon Dance|p2a: Gyarados
+|-boost|p2a: Gyarados|atk|1
+|-boost|p2a: Gyarados|spe|1
+|move|p1a: Mawile|Swords Dance|p1a: Mawile
+|-boost|p1a: Mawile|atk|2
+|
+|turn|4
+|callback|decision
+|
+|move|p2a: Gyarados|Earthquake|p1a: Mawile
+|-supereffective|p1a: Mawile
+|-damage|p1a: Mawile|0 fnt
+|faint|p1a: Mawile
+|
+|callback|decision
+|
+|switch|p1a: Forretress|Forretress, F|354\/354
+|turn|5
+|callback|decision
+|
+|-formechange|p2a: Gyarados|Gyarados-Mega
+|message|Gyarados mega-evolved into Gyarados-Mega!
+|-ability|p2a: Gyarados|Mold Breaker
+|move|p2a: Gyarados|Earthquake|p1a: Forretress
+|-damage|p1a: Forretress|223\/354
+|move|p1a: Forretress|Toxic|p2a: Gyarados
+|-status|p2a: Gyarados|tox
+|
+|-heal|p1a: Forretress|245\/354|[from] item: Leftovers
+|-damage|p2a: Gyarados|312\/332 tox|[from] psn
+|turn|6
+|callback|decision
+|
+|switch|p2a: Wobbuffet|Wobbuffet, F|528\/528
+|move|p1a: Forretress|Stealth Rock|p2a: Wobbuffet
+|-sidestart|p2: Itachi Edo|move: Stealth Rock
+|
+|-heal|p1a: Forretress|267\/354|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p2a: Wobbuffet|Encore|p1a: Forretress
+|-start|p1a: Forretress|Encore
+|move|p1a: Forretress|Stealth Rock|p2a: Wobbuffet
+|-fail|p2a: Wobbuffet
+|
+|-heal|p1a: Forretress|289\/354|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p2a: Scolipede|Scolipede, M, shiny|261\/261
+|-damage|p2a: Scolipede|196\/261|[from] Stealth Rock
+|move|p1a: Forretress|Stealth Rock|p2a: Scolipede
+|-fail|p2a: Scolipede
+|
+|-heal|p1a: Forretress|311\/354|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, F|287\/287
+|move|p2a: Scolipede|Swords Dance|p2a: Scolipede
+|-boost|p2a: Scolipede|atk|2
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|10
+|callback|decision
+|
+|move|p2a: Scolipede|Swords Dance|p2a: Scolipede
+|-boost|p2a: Scolipede|atk|2
+|move|p1a: Aegislash|Swords Dance|p1a: Aegislash
+|-boost|p1a: Aegislash|atk|2
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|11
+|callback|decision
+|
+|move|p1a: Aegislash|King's Shield|p1a: Aegislash
+|-singleturn|p1a: Aegislash|King's Shield
+|move|p2a: Scolipede|Earthquake|p1a: Aegislash
+|-activate|p1a: Aegislash|King's Shield
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|12
+|callback|decision
+|
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Sneak|p2a: Scolipede
+|-damage|p2a: Scolipede|12\/261
+|move|p2a: Scolipede|Earthquake|p1a: Aegislash
+|-supereffective|p1a: Aegislash
+|-damage|p1a: Aegislash|0 fnt
+|faint|p1a: Aegislash
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|callback|decision
+|
+|switch|p1a: Weavile|Weavile, F|282\/282
+|turn|13
+|callback|decision
+|
+|move|p1a: Weavile|Ice Shard|p2a: Scolipede
+|-damage|p2a: Scolipede|0 fnt
+|faint|p2a: Scolipede
+|
+|callback|decision
+|
+|switch|p2a: Wobbuffet|Wobbuffet, F|528\/528
+|-damage|p2a: Wobbuffet|462\/528|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|move|p1a: Weavile|Pursuit|p2a: Wobbuffet
+|-supereffective|p2a: Wobbuffet
+|-damage|p2a: Wobbuffet|330\/528
+|move|p2a: Wobbuffet|Counter|p1a: Weavile
+|-damage|p1a: Weavile|18\/282
+|
+|turn|15
+|callback|decision
+|
+|move|p1a: Weavile|Pursuit|p2a: Wobbuffet
+|-supereffective|p2a: Wobbuffet
+|-damage|p2a: Wobbuffet|196\/528
+|-enditem|p2a: Wobbuffet|Sitrus Berry|[eat]
+|-heal|p2a: Wobbuffet|328\/528|[from] item: Sitrus Berry
+|move|p2a: Wobbuffet|Counter|p1a: Weavile
+|-damage|p1a: Weavile|0 fnt
+|faint|p1a: Weavile
+|
+|callback|decision
+|
+|switch|p1a: Forretress|Forretress, F|311\/354
+|turn|16
+|callback|decision
+|
+|move|p2a: Wobbuffet|Encore|p1a: Forretress
+|-fail|p1a: Forretress
+|move|p1a: Forretress|Toxic|p2a: Wobbuffet
+|-status|p2a: Wobbuffet|tox
+|
+|-heal|p1a: Forretress|333\/354|[from] item: Leftovers
+|-damage|p2a: Wobbuffet|295\/528 tox|[from] psn
+|turn|17
+|callback|decision
+|
+|move|p2a: Wobbuffet|Encore|p1a: Forretress
+|-start|p1a: Forretress|Encore
+|move|p1a: Forretress|Toxic|p2a: Wobbuffet
+|-fail|p2a: Wobbuffet|tox
+|
+|-heal|p1a: Forretress|354\/354|[from] item: Leftovers
+|-damage|p2a: Wobbuffet|229\/528 tox|[from] psn
+|turn|18
+|callback|decision
+|
+|move|p2a: Wobbuffet|Safeguard|p2a: Wobbuffet
+|-sidestart|p2: Itachi Edo|Safeguard
+|move|p1a: Forretress|Toxic|p2a: Wobbuffet|[miss]
+|-miss|p1a: Forretress|p2a: Wobbuffet
+|
+|-damage|p2a: Wobbuffet|130\/528 tox|[from] psn
+|turn|19
+|callback|decision
+|
+|switch|p2a: Aegislash|Aegislash, M|262\/262
+|-damage|p2a: Aegislash|246\/262|[from] Stealth Rock
+|move|p1a: Forretress|Toxic|p2a: Aegislash
+|-fail|p2a: Aegislash
+|
+|-end|p1a: Forretress|Encore
+|turn|20
+|callback|decision
+|
+|switch|p1a: Hydreigon|Hydreigon, F|325\/325
+|move|p2a: Aegislash|Swords Dance|p2a: Aegislash
+|-boost|p2a: Aegislash|atk|2
+|
+|turn|21
+|callback|decision
+|
+|move|p1a: Hydreigon|Substitute|p1a: Hydreigon
+|-start|p1a: Hydreigon|Substitute
+|-damage|p1a: Hydreigon|244\/325
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Iron Head|p1a: Hydreigon
+|-end|p1a: Hydreigon|Substitute
+|
+|-heal|p1a: Hydreigon|264\/325|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|-formechange|p2a: Aegislash|Aegislash
+|move|p2a: Aegislash|King's Shield|p2a: Aegislash
+|-singleturn|p2a: Aegislash|King's Shield
+|move|p1a: Hydreigon|Fire Blast|p2a: Aegislash
+|-activate|p2a: Aegislash|King's Shield
+|
+|-heal|p1a: Hydreigon|284\/325|[from] item: Leftovers
+|-sideend|p2: Itachi Edo|Safeguard
+|turn|23
+|callback|decision
+|
+|move|p1a: Hydreigon|Substitute|p1a: Hydreigon
+|-start|p1a: Hydreigon|Substitute
+|-damage|p1a: Hydreigon|203\/325
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Iron Head|p1a: Hydreigon
+|-end|p1a: Hydreigon|Substitute
+|
+|-heal|p1a: Hydreigon|223\/325|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p1a: Hydreigon|Fire Blast|p2a: Aegislash|[miss]
+|-miss|p1a: Hydreigon|p2a: Aegislash
+|move|p2a: Aegislash|Iron Head|p1a: Hydreigon
+|-damage|p1a: Hydreigon|0 fnt
+|faint|p1a: Hydreigon
+|
+|callback|decision
+|-message|Avi42 forfeited.
+|
+|win|Itachi Edo
+|raw|Ladder updating...
+|leave|Avi42
+|player|p1
+|raw|Avi42's rating: 1846 &rarr; <strong>1830<\/strong><br \/>(-16 for losing)
+|raw|Itachi Edo's rating: 1661 &rarr; <strong>1676<\/strong><br \/>(+15 for winning)

@@ -1,0 +1,317 @@
+|join|Mantis
+|join|Super Mario Bros
+|player|p1|Mantis|52
+|player|p2|Super Mario Bros|155
+|gametype|singles
+|gen|6
+|tier|OU (suspect test)
+|rated
+|clearpoke
+|poke|p1|Scizor, M
+|poke|p1|Zapdos
+|poke|p1|Heatran, F
+|poke|p1|Landorus-Therian, M
+|poke|p1|Keldeo
+|poke|p1|Absol, M
+|poke|p2|Medicham, F, shiny
+|poke|p2|Suicune, shiny
+|poke|p2|Ditto, shiny
+|poke|p2|Jirachi, shiny
+|poke|p2|Machamp, M
+|poke|p2|Diggersby, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|join|Churmp Testing
+|
+|start
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|320\/320
+|switch|p2a: Machamp|Machamp, M|384\/384
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Machamp
+|-unboost|p2a: Machamp|atk|1
+|turn|1
+|join|jbtc11
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Machamp
+|-resisted|p2a: Machamp
+|-damage|p2a: Machamp|326\/384
+|
+|switch|p1a: Scizor|Scizor, M|344\/344
+|move|p2a: Machamp|Knock Off|p1a: Scizor
+|-damage|p1a: Scizor|256\/344
+|-enditem|p1a: Scizor|Choice Band|[from] move: Knock Off|[of] p2a: Machamp
+|
+|turn|2
+|
+|switch|p2a: Ditto|Ditto, shiny|300\/300
+|-transform|p2a: Ditto|p1a: Scizor
+|move|p1a: Scizor|U-turn|p2a: Ditto
+|-resisted|p2a: Ditto
+|-damage|p2a: Ditto|230\/300
+|
+|switch|p1a: Heatran|Heatran, F|386\/386
+|
+|turn|3
+|
+|move|p2a: Ditto|Superpower|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|80\/386
+|-unboost|p2a: Ditto|atk|1
+|-unboost|p2a: Ditto|def|1
+|move|p1a: Heatran|Stealth Rock|p2a: Ditto
+|-sidestart|p2: Super Mario Bros|move: Stealth Rock
+|
+|-heal|p1a: Heatran|104\/386|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Suicune|Suicune, shiny|404\/404
+|-damage|p2a: Suicune|354\/404|[from] Stealth Rock
+|-ability|p2a: Suicune|Pressure
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Suicune
+|-unboost|p2a: Suicune|atk|1
+|
+|-heal|p2a: Suicune|379\/404|[from] item: Leftovers
+|turn|5
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Suicune
+|-damage|p2a: Suicune|320\/404
+|
+|switch|p1a: Zapdos|Zapdos|384\/384
+|-ability|p1a: Zapdos|Pressure
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p2a: Suicune|345\/404|[from] item: Leftovers
+|turn|6
+|
+|move|p1a: Zapdos|Volt Switch|p2a: Suicune
+|-supereffective|p2a: Suicune
+|-damage|p2a: Suicune|225\/404
+|
+|switch|p1a: Keldeo|Keldeo|323\/323
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p2a: Suicune|250\/404|[from] item: Leftovers
+|turn|7
+|
+|move|p1a: Keldeo|Calm Mind|p1a: Keldeo
+|-boost|p1a: Keldeo|spa|1
+|-boost|p1a: Keldeo|spd|1
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|
+|turn|8
+|
+|switch|p2a: Jirachi|Jirachi, shiny|404\/404
+|-damage|p2a: Jirachi|379\/404|[from] Stealth Rock
+|move|p1a: Keldeo|Calm Mind|p1a: Keldeo
+|-boost|p1a: Keldeo|spa|1
+|-boost|p1a: Keldeo|spd|1
+|
+|-heal|p2a: Jirachi|404\/404|[from] item: Leftovers
+|turn|9
+|
+|move|p1a: Keldeo|Substitute|p1a: Keldeo
+|-start|p1a: Keldeo|Substitute
+|-damage|p1a: Keldeo|243\/323
+|move|p2a: Jirachi|Thunder Wave|p1a: Keldeo
+|
+|-heal|p1a: Keldeo|263\/323|[from] item: Leftovers
+|turn|10
+|
+|move|p1a: Keldeo|Secret Sword|p2a: Jirachi
+|-damage|p2a: Jirachi|175\/404
+|move|p2a: Jirachi|Stealth Rock|p1a: Keldeo
+|-sidestart|p1: Mantis|move: Stealth Rock
+|
+|-heal|p1a: Keldeo|283\/323|[from] item: Leftovers
+|-heal|p2a: Jirachi|200\/404|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Keldeo|Secret Sword|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|faint|p2a: Jirachi
+|
+|-heal|p1a: Keldeo|303\/323|[from] item: Leftovers
+|
+|switch|p2a: Diggersby|Diggersby, M|311\/311
+|-damage|p2a: Diggersby|292\/311|[from] Stealth Rock
+|turn|12
+|
+|move|p2a: Diggersby|Quick Attack|p1a: Keldeo
+|-end|p1a: Keldeo|Substitute
+|move|p1a: Keldeo|Surf|p2a: Diggersby
+|-supereffective|p2a: Diggersby
+|-damage|p2a: Diggersby|0 fnt
+|faint|p2a: Diggersby
+|
+|-heal|p1a: Keldeo|323\/323|[from] item: Leftovers
+|
+|switch|p2a: Ditto|Ditto, shiny|230\/300
+|-damage|p2a: Ditto|193\/300|[from] Stealth Rock
+|-transform|p2a: Ditto|p1a: Keldeo
+|turn|13
+|
+|move|p2a: Ditto|Secret Sword|p1a: Keldeo
+|-damage|p1a: Keldeo|0 fnt
+|faint|p1a: Keldeo
+|
+|
+|switch|p1a: Zapdos|Zapdos|384\/384
+|-damage|p1a: Zapdos|288\/384|[from] Stealth Rock
+|-ability|p1a: Zapdos|Pressure
+|turn|14
+|
+|switch|p2a: Machamp|Machamp, M|326\/384
+|-damage|p2a: Machamp|302\/384|[from] Stealth Rock
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|384\/384
+|
+|turn|15
+|
+|move|p1a: Zapdos|Defog|p2a: Machamp
+|-unboost|p2a: Machamp|evasion|1
+|-sideend|p2: Super Mario Bros|Stealth Rock|[from] move: Defog|[of] p2a: Machamp
+|-sideend|p1: Mantis|Stealth Rock|[from] move: Defog|[of] p1a: Zapdos
+|move|p2a: Machamp|Stone Edge|p1a: Zapdos
+|-supereffective|p1a: Zapdos
+|-damage|p1a: Zapdos|100\/384
+|
+|-heal|p1a: Zapdos|124\/384|[from] item: Leftovers
+|turn|16
+|
+|move|p1a: Zapdos|Volt Switch|p2a: Machamp
+|-damage|p2a: Machamp|227\/384
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Machamp
+|-unboost|p2a: Machamp|atk|1
+|move|p2a: Machamp|Dynamic Punch|p1a: Landorus-Therian
+|-resisted|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|245\/320
+|-start|p1a: Landorus-Therian|confusion
+|
+|turn|17
+|
+|switch|p1a: Scizor|Scizor, M|256\/344
+|move|p2a: Machamp|Knock Off|p1a: Scizor
+|-damage|p1a: Scizor|197\/344
+|
+|turn|18
+|
+|switch|p2a: Ditto|Ditto, shiny|193\/300
+|-transform|p2a: Ditto|p1a: Scizor
+|move|p1a: Scizor|Bullet Punch|p2a: Ditto
+|-resisted|p2a: Ditto
+|-damage|p2a: Ditto|138\/300
+|
+|turn|19
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|245\/320
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Ditto
+|-unboost|p2a: Ditto|atk|1
+|move|p2a: Ditto|U-turn|p1a: Landorus-Therian
+|-resisted|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|197\/320
+|
+|switch|p2a: Suicune|Suicune, shiny|404\/404 slp
+|-ability|p2a: Suicune|Pressure
+|
+|turn|20
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Suicune
+|-damage|p2a: Suicune|342\/404 slp
+|
+|switch|p1a: Absol|Absol, M|271\/271
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Calm Mind|p2a: Suicune|[from]Sleep Talk
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p2a: Suicune|367\/404 slp|[from] item: Leftovers
+|turn|21
+|
+|-formechange|p1a: Absol|Absol-Mega
+|message|Absol has Mega Evolved into Mega Absol!
+|move|p1a: Absol|Swords Dance|p1a: Absol
+|-boost|p1a: Absol|atk|2
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Scald|p1a: Absol|[from]Sleep Talk
+|-damage|p1a: Absol|93\/271
+|
+|-heal|p2a: Suicune|392\/404 slp|[from] item: Leftovers
+|turn|22
+|
+|switch|p2a: Ditto|Ditto, shiny|138\/300
+|-transform|p2a: Ditto|p1a: Absol
+|move|p1a: Absol|Knock Off|p2a: Ditto
+|-resisted|p2a: Ditto
+|-damage|p2a: Ditto|0 fnt
+|faint|p2a: Ditto
+|
+|
+|switch|p2a: Medicham|Medicham, F, shiny|261\/261
+|turn|23
+|
+|-formechange|p2a: Medicham|Medicham-Mega
+|message|Medicham has Mega Evolved into Mega Medicham!
+|move|p1a: Absol|Sucker Punch|p2a: Medicham
+|-damage|p2a: Medicham|0 fnt
+|faint|p2a: Medicham
+|
+|
+|switch|p2a: Machamp|Machamp, M|227\/384
+|turn|24
+|
+|move|p2a: Machamp|Bullet Punch|p1a: Absol
+|-damage|p1a: Absol|9\/271
+|move|p1a: Absol|Psycho Cut|p2a: Machamp
+|-crit|p2a: Machamp
+|-supereffective|p2a: Machamp
+|-damage|p2a: Machamp|0 fnt
+|faint|p2a: Machamp
+|
+|
+|switch|p2a: Suicune|Suicune, shiny|392\/404 slp
+|-ability|p2a: Suicune|Pressure
+|turn|25
+|
+|move|p1a: Absol|Knock Off|p2a: Suicune
+|-damage|p2a: Suicune|158\/404 slp
+|-enditem|p2a: Suicune|Leftovers|[from] move: Knock Off|[of] p1a: Absol
+|-curestatus|p2a: Suicune|slp
+|move|p2a: Suicune|Scald|p1a: Absol
+|-damage|p1a: Absol|0 fnt
+|faint|p1a: Absol
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|197\/320
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Suicune
+|-unboost|p2a: Suicune|atk|1
+|turn|26
+|
+|move|p1a: Landorus-Therian|Explosion|p2a: Suicune
+|-damage|p2a: Suicune|0 fnt
+|faint|p2a: Suicune
+|faint|p1a: Landorus-Therian
+|
+|win|Mantis
+|raw|Ladder updating...
+|chat|Mantis|gg
+|raw|Mantis's rating: 1426 &rarr; <strong>1443<\/strong><br \/>(+17 for winning)
+|raw|Super Mario Bros's rating: 1368 &rarr; <strong>1347<\/strong><br \/>(-21 for losing)
+|leave|Super Mario Bros
+|player|p2

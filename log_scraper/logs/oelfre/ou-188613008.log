@@ -1,0 +1,332 @@
+|join|DashTidus
+|join|oelfre
+|player|p1|DashTidus|1
+|player|p2|oelfre|80
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Charizard, M
+|poke|p1|Absol, M
+|poke|p1|Dragonite, F
+|poke|p1|Arcanine, F
+|poke|p1|Umbreon, M
+|poke|p1|Skarmory, M
+|poke|p2|Ferrothorn, F
+|poke|p2|Heatran, F
+|poke|p2|Rotom-Wash
+|poke|p2|Magnezone
+|poke|p2|Landorus-Therian, M
+|poke|p2|Lopunny, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Arcanine|Arcanine, F|384\/384
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Arcanine
+|-unboost|p1a: Arcanine|atk|1
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Landorus-Therian
+|-unboost|p2a: Landorus-Therian|atk|1
+|turn|1
+|
+|move|p2a: Landorus-Therian|U-turn|p1a: Arcanine
+|-resisted|p1a: Arcanine
+|-damage|p1a: Arcanine|360\/384
+|-damage|p2a: Landorus-Therian|267\/320|[from] item: Rocky Helmet|[of] p1a: Arcanine
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|move|p1a: Arcanine|Will-O-Wisp|p2a: Rotom-Wash
+|-status|p2a: Rotom-Wash|brn
+|
+|-damage|p2a: Rotom-Wash|266\/304 brn|[from] brn
+|turn|2
+|
+|switch|p1a: Umbreon|Umbreon, M|394\/394
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Umbreon|[miss]
+|-miss|p2a: Rotom-Wash|p1a: Umbreon
+|
+|-heal|p2a: Rotom-Wash|285\/304 brn|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|247\/304 brn|[from] brn
+|turn|3
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Umbreon
+|-damage|p1a: Umbreon|346\/394
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|352\/352
+|move|p1a: Umbreon|Foul Play|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|282\/352
+|-damage|p1a: Umbreon|297\/394|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|-damage|p1a: Umbreon|232\/394|[from] item: Rocky Helmet|[of] p2a: Ferrothorn
+|
+|-heal|p1a: Umbreon|256\/394|[from] item: Leftovers
+|turn|4
+|
+|move|p1a: Umbreon|Taunt|p2a: Ferrothorn
+|-start|p2a: Ferrothorn|move: Taunt
+|cant|p2a: Ferrothorn|move: Taunt|Leech Seed
+|
+|-heal|p1a: Umbreon|280\/394|[from] item: Leftovers
+|turn|5
+|
+|switch|p1a: Charizard|Charizard, M|297\/297
+|move|p2a: Ferrothorn|Knock Off|p1a: Charizard
+|-crit|p1a: Charizard
+|-damage|p1a: Charizard|213\/297
+|
+|turn|6
+|
+|switch|p2a: Heatran|Heatran, F|386\/386
+|detailschange|p1a: Charizard|Charizard-Mega-Y, M
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p1a: Charizard|Focus Blast|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|126\/386
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Heatran|150\/386|[from] item: Leftovers
+|turn|7
+|
+|move|p1a: Charizard|Focus Blast|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|faint|p2a: Heatran
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p2a: Lopunny|Lopunny, M|272\/272
+|turn|8
+|
+|switch|p1a: Arcanine|Arcanine, F|360\/384
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Lopunny
+|-unboost|p2a: Lopunny|atk|1
+|detailschange|p2a: Lopunny|Lopunny-Mega, M
+|message|Lopunny has Mega Evolved into Mega Lopunny!
+|move|p2a: Lopunny|Return|p1a: Arcanine
+|-damage|p1a: Arcanine|248\/384
+|-damage|p2a: Lopunny|227\/272|[from] item: Rocky Helmet|[of] p1a: Arcanine
+|
+|-weather|SunnyDay|[upkeep]
+|turn|9
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|247\/304 brn
+|move|p1a: Arcanine|Overheat|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|147\/304 brn
+|-unboost|p1a: Arcanine|spa|2
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Rotom-Wash|166\/304 brn|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|128\/304 brn|[from] brn
+|turn|10
+|
+|switch|p1a: Umbreon|Umbreon, M|280\/394
+|move|p2a: Rotom-Wash|Pain Split|p1a: Umbreon
+|-sethp|p1a: Umbreon|204\/394|p2a: Rotom-Wash|204\/304 brn|[from] move: Pain Split
+|
+|-weather|none
+|-heal|p2a: Rotom-Wash|223\/304 brn|[from] item: Leftovers
+|-heal|p1a: Umbreon|228\/394|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|185\/304 brn|[from] brn
+|turn|11
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Umbreon
+|-damage|p1a: Umbreon|174\/394
+|
+|switch|p2a: Magnezone|Magnezone|281\/281
+|move|p1a: Umbreon|Foul Play|p2a: Magnezone
+|-damage|p2a: Magnezone|214\/281
+|
+|-heal|p1a: Umbreon|198\/394|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Magnezone|Thunderbolt|p1a: Umbreon
+|-damage|p1a: Umbreon|48\/394
+|-status|p1a: Umbreon|par
+|move|p1a: Umbreon|Moonlight|p1a: Umbreon
+|-heal|p1a: Umbreon|245\/394 par
+|
+|-heal|p1a: Umbreon|269\/394 par|[from] item: Leftovers
+|turn|13
+|
+|move|p2a: Magnezone|Thunderbolt|p1a: Umbreon
+|-damage|p1a: Umbreon|113\/394 par
+|move|p1a: Umbreon|Heal Bell|p1a: Umbreon
+|-cureteam|p1a: Umbreon|[from] move: HealBell
+|
+|-heal|p1a: Umbreon|137\/394|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Magnezone|Thunderbolt|p1a: Umbreon
+|-damage|p1a: Umbreon|0 fnt
+|faint|p1a: Umbreon
+|
+|
+|switch|p1a: Dragonite|Dragonite, F|324\/324
+|turn|15
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|185\/304 brn
+|move|p1a: Dragonite|Fire Punch|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|152\/304 brn
+|
+|-heal|p2a: Rotom-Wash|171\/304 brn|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|133\/304 brn|[from] brn
+|turn|16
+|
+|move|p1a: Dragonite|Dragon Dance|p1a: Dragonite
+|-boost|p1a: Dragonite|atk|1
+|-boost|p1a: Dragonite|spe|1
+|move|p2a: Rotom-Wash|Pain Split|p1a: Dragonite
+|-sethp|p1a: Dragonite|228\/324|p2a: Rotom-Wash|228\/304 brn|[from] move: Pain Split
+|
+|-heal|p2a: Rotom-Wash|247\/304 brn|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|209\/304 brn|[from] brn
+|turn|17
+|
+|move|p1a: Dragonite|Dragon Dance|p1a: Dragonite
+|-boost|p1a: Dragonite|atk|1
+|-boost|p1a: Dragonite|spe|1
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Dragonite
+|-damage|p1a: Dragonite|144\/324
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|267\/320
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Dragonite
+|-unboost|p1a: Dragonite|atk|1
+|
+|turn|18
+|
+|move|p1a: Dragonite|Outrage|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|faint|p2a: Landorus-Therian
+|
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|282\/352
+|turn|19
+|
+|move|p1a: Dragonite|Outrage|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|149\/352
+|-damage|p1a: Dragonite|104\/324|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|-damage|p1a: Dragonite|50\/324|[from] item: Rocky Helmet|[of] p2a: Ferrothorn
+|move|p2a: Ferrothorn|Stealth Rock|p1a: Dragonite
+|-sidestart|p1: DashTidus|move: Stealth Rock
+|
+|-end|p1a: Dragonite|rampage
+|-start|p1a: Dragonite|confusion
+|-enditem|p1a: Dragonite|Lum Berry|[eat]
+|-end|p1a: Dragonite|confusion
+|turn|20
+|
+|move|p1a: Dragonite|Fire Punch|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|-damage|p1a: Dragonite|10\/324|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|-damage|p1a: Dragonite|0 fnt|[from] item: Rocky Helmet|[of] p2a: Ferrothorn
+|faint|p1a: Dragonite
+|faint|p2a: Ferrothorn
+|
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|209\/304 brn
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|-damage|p1a: Skarmory|293\/334|[from] Stealth Rock
+|turn|21
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|59\/334
+|
+|switch|p2a: Magnezone|Magnezone|214\/281
+|move|p1a: Skarmory|Defog|p2a: Magnezone
+|-unboost|p2a: Magnezone|evasion|1
+|-sideend|p1: DashTidus|Stealth Rock|[from] move: Defog|[of] p1a: Skarmory
+|
+|-heal|p1a: Skarmory|79\/334|[from] item: Leftovers
+|turn|22
+|
+|move|p2a: Magnezone|Thunderbolt|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|faint|p1a: Skarmory
+|
+|
+|switch|p1a: Absol|Absol, M|272\/272
+|turn|23
+|
+|move|p1a: Absol|Knock Off|p2a: Magnezone
+|-crit|p2a: Magnezone
+|-damage|p2a: Magnezone|0 fnt
+|-enditem|p2a: Magnezone|Choice Specs|[from] move: Knock Off|[of] p1a: Absol
+|faint|p2a: Magnezone
+|
+|
+|switch|p2a: Lopunny|Lopunny-Mega, M|227\/272
+|turn|24
+|
+|switch|p1a: Arcanine|Arcanine, F|248\/384
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Lopunny
+|-unboost|p2a: Lopunny|atk|1
+|move|p2a: Lopunny|Fake Out|p1a: Arcanine
+|-damage|p1a: Arcanine|209\/384
+|-damage|p2a: Lopunny|182\/272|[from] item: Rocky Helmet|[of] p1a: Arcanine
+|
+|turn|25
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|209\/304 brn
+|switch|p1a: Charizard|Charizard-Mega-Y, M|213\/297
+|-weather|SunnyDay
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Rotom-Wash|228\/304 brn|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|190\/304 brn|[from] brn
+|turn|26
+|
+|move|p1a: Charizard|Solar Beam|p2a: Rotom-Wash|[still]
+|-prepare|p1a: Charizard|Solar Beam|p2a: Rotom-Wash
+|-anim|p1a: Charizard|Solar Beam|p2a: Rotom-Wash
+|-supereffective|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p2a: Lopunny|Lopunny-Mega, M|182\/272
+|turn|27
+|
+|move|p2a: Lopunny|Return|p1a: Charizard
+|-damage|p1a: Charizard|0 fnt
+|faint|p1a: Charizard
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p1a: Arcanine|Arcanine, F|209\/384
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Lopunny
+|-unboost|p2a: Lopunny|atk|1
+|turn|28
+|
+|move|p2a: Lopunny|High Jump Kick|p1a: Arcanine
+|-damage|p1a: Arcanine|85\/384
+|-damage|p2a: Lopunny|137\/272|[from] item: Rocky Helmet|[of] p1a: Arcanine
+|move|p1a: Arcanine|Morning Sun|p1a: Arcanine
+|-heal|p1a: Arcanine|341\/384
+|
+|-weather|SunnyDay|[upkeep]
+|turn|29
+|-message|oelfre forfeited.
+|
+|win|DashTidus
+|raw|Ladder updating...
+|leave|oelfre
+|player|p2
+|raw|DashTidus's rating: 1324 &rarr; <strong>1341<\/strong><br \/>(+17 for winning)
+|raw|oelfre's rating: 1270 &rarr; <strong>1249<\/strong><br \/>(-21 for losing)

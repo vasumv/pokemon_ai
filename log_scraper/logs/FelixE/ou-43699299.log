@@ -1,0 +1,512 @@
+|join|FelixE
+|join|Inferno Glacier
+|player|p1|FelixE|144
+|player|p2|Inferno Glacier|222
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Politoed, F, shiny
+|poke|p1|Toxicroak, M
+|poke|p1|Latios, M
+|poke|p1|Gengar, M
+|poke|p1|Chansey, F
+|poke|p1|Jirachi, shiny
+|poke|p2|Abomasnow, M
+|poke|p2|Breloom, F
+|poke|p2|Heatran, F
+|poke|p2|Kyurem
+|poke|p2|Cloyster, F
+|poke|p2|Xatu, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Bailarbailar|Politoed, F, shiny|384\/384
+|switch|p2a: Breloom|Breloom, F|262\/262
+|-weather|RainDance|[from] ability: Drizzle|[of] p1a: Bailarbailar
+|turn|1
+|callback|decision
+|
+|switch|p1a: GraraDraco|Latios, M|302\/302
+|move|p2a: Breloom|Spore|p1a: GraraDraco
+|-status|p1a: GraraDraco|slp
+|-enditem|p1a: GraraDraco|Lum Berry|[eat]
+|-curestatus|p1a: GraraDraco|slp
+|
+|-weather|RainDance|[upkeep]
+|turn|2
+|callback|decision
+|
+|switch|p2a: Kyurem|Kyurem|392\/392
+|-ability|p2a: Kyurem|Pressure
+|move|p1a: GraraDraco|Psyshock|p2a: Kyurem
+|-damage|p2a: Kyurem|244\/392
+|
+|-weather|RainDance|[upkeep]
+|turn|3
+|callback|decision
+|
+|switch|p1a: Chansey|Chansey, F|704\/704
+|move|p2a: Kyurem|Draco Meteor|p1a: Chansey
+|-damage|p1a: Chansey|544\/704
+|-unboost|p2a: Kyurem|spa|2
+|
+|-weather|RainDance|[upkeep]
+|turn|4
+|callback|decision
+|
+|switch|p2a: Xatu|Xatu, M|272\/272
+|move|p1a: Chansey|Stealth Rock|p2a: Xatu
+|move|p2a: Xatu|Stealth Rock|p1a: Chansey|[from]Magic Bounce
+|-sidestart|p1: FelixE|move: Stealth Rock
+|
+|-weather|RainDance|[upkeep]
+|turn|5
+|callback|decision
+|
+|switch|p2a: Cloyster|Cloyster, F|242\/242
+|move|p1a: Chansey|Toxic|p2a: Cloyster
+|-status|p2a: Cloyster|tox
+|-enditem|p2a: Cloyster|Lum Berry|[eat]
+|-curestatus|p2a: Cloyster|tox
+|
+|-weather|RainDance|[upkeep]
+|turn|6
+|callback|decision
+|
+|move|p2a: Cloyster|Shell Smash|p2a: Cloyster
+|-boost|p2a: Cloyster|atk|2
+|-boost|p2a: Cloyster|spa|2
+|-boost|p2a: Cloyster|spe|2
+|-unboost|p2a: Cloyster|def|1
+|-unboost|p2a: Cloyster|spd|1
+|move|p1a: Chansey|Stealth Rock|p2a: Cloyster
+|-sidestart|p2: Inferno Glacier|move: Stealth Rock
+|
+|-weather|RainDance|[upkeep]
+|turn|7
+|callback|decision
+|
+|switch|p1a: King|Jirachi, shiny|404\/404
+|-damage|p1a: King|379\/404|[from] Stealth Rock
+|move|p2a: Cloyster|Rapid Spin|p1a: King
+|-resisted|p1a: King
+|-damage|p1a: King|359\/404
+|-sideend|p2: Inferno Glacier|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Cloyster
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: King|384\/404|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p2a: Cloyster|Icicle Spear|p1a: King
+|-resisted|p1a: King
+|-damage|p1a: King|351\/404
+|-resisted|p1a: King
+|-damage|p1a: King|315\/404
+|-resisted|p1a: King
+|-damage|p1a: King|282\/404
+|-resisted|p1a: King
+|-damage|p1a: King|243\/404
+|-resisted|p1a: King
+|-damage|p1a: King|209\/404
+|-hitcount|p1a: King|5
+|move|p1a: King|Thunder|p2a: Cloyster
+|-supereffective|p2a: Cloyster
+|-damage|p2a: Cloyster|0 fnt
+|faint|p2a: Cloyster
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: King|234\/404|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Abomasnow|Abomasnow, M|384\/384
+|-weather|Hail|[from] ability: Snow Warning|[of] p2a: Abomasnow
+|turn|9
+|callback|decision
+|
+|switch|p1a: Chansey|Chansey, F|544\/704
+|-damage|p1a: Chansey|456\/704|[from] Stealth Rock
+|switch|p2a: Heatran|Heatran, F|324\/324
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Heatran|304\/324|[from] hail
+|-damage|p1a: Chansey|412\/704|[from] hail
+|-heal|p2a: Heatran|324\/324|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p2a: Xatu|Xatu, M|272\/272
+|move|p1a: Chansey|Stealth Rock|p2a: Xatu
+|move|p2a: Xatu|Stealth Rock|p1a: Chansey|[from]Magic Bounce
+|-fail|p1a: Chansey
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Xatu|255\/272|[from] hail
+|-damage|p1a: Chansey|368\/704|[from] hail
+|-heal|p2a: Xatu|272\/272|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p2a: Xatu|Psychic|p1a: Chansey
+|-damage|p1a: Chansey|283\/704
+|move|p1a: Chansey|Toxic|p2a: Xatu
+|move|p2a: Xatu|Toxic|p1a: Chansey|[from]Magic Bounce
+|-status|p1a: Chansey|tox
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Xatu|255\/272|[from] hail
+|-damage|p1a: Chansey|239\/704 tox|[from] hail
+|-heal|p2a: Xatu|272\/272|[from] item: Leftovers
+|-damage|p1a: Chansey|195\/704 tox|[from] psn
+|turn|12
+|callback|decision
+|
+|move|p2a: Xatu|Heat Wave|p1a: Chansey
+|-crit|p1a: Chansey
+|-damage|p1a: Chansey|63\/704 tox
+|move|p1a: Chansey|Wish|p1a: Chansey
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Xatu|255\/272|[from] hail
+|-damage|p1a: Chansey|19\/704 tox|[from] hail
+|-heal|p2a: Xatu|272\/272|[from] item: Leftovers
+|-damage|p1a: Chansey|0 fnt|[from] psn
+|faint|p1a: Chansey
+|callback|decision
+|
+|switch|p1a: GraraDraco|Latios, M|302\/302
+|-damage|p1a: GraraDraco|265\/302|[from] Stealth Rock
+|turn|13
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, F|324\/324
+|move|p1a: GraraDraco|Dragon Pulse|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|249\/324
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: GraraDraco|247\/302|[from] hail
+|-damage|p2a: Heatran|229\/324|[from] hail
+|-heal|p1a: GraraDraco|302\/302|[from] move: Wish|[wisher] Chansey
+|-heal|p2a: Heatran|249\/324|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: GraraDraco|Surf|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|45\/324
+|move|p2a: Heatran|Flash Cannon|p1a: GraraDraco
+|-damage|p1a: GraraDraco|148\/302
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: GraraDraco|130\/302|[from] hail
+|-damage|p2a: Heatran|25\/324|[from] hail
+|-heal|p2a: Heatran|45\/324|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|switch|p2a: Abomasnow|Abomasnow, M|384\/384
+|move|p1a: GraraDraco|Surf|p2a: Abomasnow
+|-resisted|p2a: Abomasnow
+|-damage|p2a: Abomasnow|318\/384
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: GraraDraco|112\/302|[from] hail
+|-heal|p2a: Abomasnow|342\/384|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p1a: Bailarbailar|Politoed, F, shiny|384\/384
+|-damage|p1a: Bailarbailar|336\/384|[from] Stealth Rock
+|-weather|RainDance|[from] ability: Drizzle|[of] p1a: Bailarbailar
+|move|p2a: Abomasnow|Ice Shard|p1a: Bailarbailar
+|-resisted|p1a: Bailarbailar
+|-damage|p1a: Bailarbailar|318\/384
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Bailarbailar|342\/384|[from] item: Leftovers
+|-heal|p2a: Abomasnow|366\/384|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Bailarbailar|Toxic|p2a: Abomasnow
+|-status|p2a: Abomasnow|tox
+|move|p2a: Abomasnow|Leech Seed|p1a: Bailarbailar
+|-start|p1a: Bailarbailar|move: Leech Seed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Bailarbailar|366\/384|[from] item: Leftovers
+|-heal|p2a: Abomasnow|384\/384 tox|[from] item: Leftovers
+|-damage|p1a: Bailarbailar|318\/384|[from] Leech Seed|[of] p2a: Abomasnow
+|-damage|p2a: Abomasnow|360\/384 tox|[from] psn
+|turn|18
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, F|45\/324
+|move|p1a: Bailarbailar|Perish Song|p1a: Bailarbailar
+|-fieldactivate|move: Perish Song
+|
+|-start|p2a: Heatran|perish3
+|-start|p1a: Bailarbailar|perish3
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Heatran|65\/324|[from] item: Leftovers
+|-heal|p1a: Bailarbailar|342\/384|[from] item: Leftovers
+|-damage|p1a: Bailarbailar|294\/384|[from] Leech Seed|[of] p2a: Heatran
+|-heal|p2a: Heatran|113\/324|[silent]
+|turn|19
+|callback|decision
+|
+|switch|p2a: Abomasnow|Abomasnow, M|360\/384 tox
+|-weather|Hail|[from] ability: Snow Warning|[of] p2a: Abomasnow
+|switch|p1a: King|Jirachi, shiny|234\/404
+|-damage|p1a: King|209\/404|[from] Stealth Rock
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: King|184\/404|[from] hail
+|-heal|p1a: King|209\/404|[from] item: Leftovers
+|-heal|p2a: Abomasnow|384\/384 tox|[from] item: Leftovers
+|-damage|p2a: Abomasnow|360\/384 tox|[from] psn
+|turn|20
+|callback|decision
+|
+|move|p1a: King|Substitute|p1a: King
+|-start|p1a: King|Substitute
+|-damage|p1a: King|108\/404
+|move|p2a: Abomasnow|Leech Seed|p1a: King
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: King|83\/404|[from] hail
+|-heal|p1a: King|108\/404|[from] item: Leftovers
+|-heal|p2a: Abomasnow|384\/384 tox|[from] item: Leftovers
+|-damage|p2a: Abomasnow|336\/384 tox|[from] psn
+|turn|21
+|callback|decision
+|
+|move|p1a: King|Psyshock|p2a: Abomasnow
+|-damage|p2a: Abomasnow|225\/384 tox
+|move|p2a: Abomasnow|Blizzard|p1a: King
+|-resisted|p1a: King
+|-activate|p1a: King|Substitute|[damage]
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: King|83\/404|[from] hail
+|-heal|p1a: King|108\/404|[from] item: Leftovers
+|-heal|p2a: Abomasnow|249\/384 tox|[from] item: Leftovers
+|-damage|p2a: Abomasnow|177\/384 tox|[from] psn
+|turn|22
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, F|113\/324
+|move|p1a: King|Psyshock|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|69\/324
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: King|83\/404|[from] hail
+|-damage|p2a: Heatran|49\/324|[from] hail
+|-heal|p1a: King|108\/404|[from] item: Leftovers
+|-heal|p2a: Heatran|69\/324|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p1a: King|Psyshock|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|25\/324
+|move|p2a: Heatran|Earth Power|p1a: King
+|-supereffective|p1a: King
+|-end|p1a: King|Substitute
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: King|83\/404|[from] hail
+|-damage|p2a: Heatran|5\/324|[from] hail
+|-heal|p1a: King|108\/404|[from] item: Leftovers
+|-heal|p2a: Heatran|25\/324|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|switch|p1a: SlimShady|Gengar, M|261\/261
+|-damage|p1a: SlimShady|229\/261|[from] Stealth Rock
+|switch|p2a: Xatu|Xatu, M|272\/272
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: SlimShady|213\/261|[from] hail
+|-damage|p2a: Xatu|255\/272|[from] hail
+|-heal|p2a: Xatu|272\/272|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p1a: SlimShady|Shadow Ball|p2a: Xatu
+|-supereffective|p2a: Xatu
+|-damage|p2a: Xatu|0 fnt
+|faint|p2a: Xatu
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: SlimShady|197\/261|[from] hail
+|callback|decision
+|
+|switch|p2a: Kyurem|Kyurem|244\/392
+|-ability|p2a: Kyurem|Pressure
+|turn|26
+|callback|decision
+|
+|switch|p1a: Bailarbailar|Politoed, F, shiny|294\/384
+|-damage|p1a: Bailarbailar|246\/384|[from] Stealth Rock
+|-weather|RainDance|[from] ability: Drizzle|[of] p1a: Bailarbailar
+|move|p2a: Kyurem|Blizzard|p1a: Bailarbailar
+|-resisted|p1a: Bailarbailar
+|-damage|p1a: Bailarbailar|138\/384
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Bailarbailar|162\/384|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|switch|p2a: Abomasnow|Abomasnow, M|177\/384 tox
+|-weather|Hail|[from] ability: Snow Warning|[of] p2a: Abomasnow
+|switch|p1a: Croky-chips|Toxicroak, M|370\/370
+|-damage|p1a: Croky-chips|347\/370|[from] Stealth Rock
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Croky-chips|324\/370|[from] hail
+|-heal|p1a: Croky-chips|347\/370|[from] item: Black Sludge
+|-heal|p2a: Abomasnow|201\/384 tox|[from] item: Leftovers
+|-damage|p2a: Abomasnow|177\/384 tox|[from] psn
+|turn|28
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, F|25\/324
+|move|p1a: Croky-chips|Drain Punch|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|-heal|p1a: Croky-chips|360\/370|[from] drain|[of] p2a: Heatran
+|faint|p2a: Heatran
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Croky-chips|337\/370|[from] hail
+|-heal|p1a: Croky-chips|360\/370|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p2a: Kyurem|Kyurem|244\/392
+|-ability|p2a: Kyurem|Pressure
+|turn|29
+|callback|decision
+|
+|move|p2a: Kyurem|Draco Meteor|p1a: Croky-chips
+|-damage|p1a: Croky-chips|0 fnt
+|-unboost|p2a: Kyurem|spa|2
+|faint|p1a: Croky-chips
+|
+|-weather|Hail|[upkeep]
+|callback|decision
+|
+|switch|p1a: Bailarbailar|Politoed, F, shiny|162\/384
+|-damage|p1a: Bailarbailar|114\/384|[from] Stealth Rock
+|-weather|RainDance|[from] ability: Drizzle|[of] p1a: Bailarbailar
+|turn|30
+|callback|decision
+|
+|move|p1a: Bailarbailar|Protect|p1a: Bailarbailar
+|-singleturn|p1a: Bailarbailar|Protect
+|move|p2a: Kyurem|Draco Meteor|p1a: Bailarbailar
+|-activate|p1a: Bailarbailar|Protect
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Bailarbailar|138\/384|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|move|p2a: Kyurem|Draco Meteor|p1a: Bailarbailar
+|-damage|p1a: Bailarbailar|0 fnt
+|-unboost|p2a: Kyurem|spa|2
+|faint|p1a: Bailarbailar
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: King|Jirachi, shiny|108\/404
+|-damage|p1a: King|83\/404|[from] Stealth Rock
+|turn|32
+|callback|decision
+|
+|switch|p2a: Abomasnow|Abomasnow, M|177\/384 tox
+|-weather|Hail|[from] ability: Snow Warning|[of] p2a: Abomasnow
+|move|p1a: King|Thunder|p2a: Abomasnow
+|-resisted|p2a: Abomasnow
+|-damage|p2a: Abomasnow|126\/384 tox
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: King|58\/404|[from] hail
+|-heal|p1a: King|83\/404|[from] item: Leftovers
+|-heal|p2a: Abomasnow|150\/384 tox|[from] item: Leftovers
+|-damage|p2a: Abomasnow|126\/384 tox|[from] psn
+|turn|33
+|callback|decision
+|
+|move|p1a: King|Psyshock|p2a: Abomasnow
+|-damage|p2a: Abomasnow|6\/384 tox
+|move|p2a: Abomasnow|Leech Seed|p1a: King
+|-start|p1a: King|move: Leech Seed
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: King|58\/404|[from] hail
+|-heal|p1a: King|83\/404|[from] item: Leftovers
+|-heal|p2a: Abomasnow|30\/384 tox|[from] item: Leftovers
+|-damage|p1a: King|33\/404|[from] Leech Seed|[of] p2a: Abomasnow
+|-heal|p2a: Abomasnow|80\/384 tox|[silent]
+|-damage|p2a: Abomasnow|32\/384 tox|[from] psn
+|turn|34
+|callback|decision
+|
+|move|p2a: Abomasnow|Ice Shard|p1a: King
+|-resisted|p1a: King
+|-damage|p1a: King|12\/404
+|move|p1a: King|Psyshock|p2a: Abomasnow
+|-damage|p2a: Abomasnow|0 fnt
+|faint|p2a: Abomasnow
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: King|0 fnt|[from] hail
+|faint|p1a: King
+|callback|decision
+|chat|Inferno Glacier|gg
+|
+|switch|p2a: Kyurem|Kyurem|244\/392
+|switch|p1a: SlimShady|Gengar, M|197\/261
+|-damage|p1a: SlimShady|165\/261|[from] Stealth Rock
+|-ability|p2a: Kyurem|Pressure
+|turn|35
+|callback|decision
+|
+|move|p1a: SlimShady|Protect|p1a: SlimShady
+|-singleturn|p1a: SlimShady|Protect
+|move|p2a: Kyurem|Blizzard|p1a: SlimShady
+|-activate|p1a: SlimShady|Protect
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: SlimShady|149\/261|[from] hail
+|turn|36
+|callback|decision
+|
+|move|p2a: Kyurem|Blizzard|p1a: SlimShady
+|-damage|p1a: SlimShady|0 fnt
+|faint|p1a: SlimShady
+|
+|-weather|Hail|[upkeep]
+|callback|decision
+|-message|FelixE forfeited.
+|
+|win|Inferno Glacier
+|raw|Ladder updating...
+|leave|FelixE
+|player|p1
+|raw|FelixE's rating: 1684 &rarr; <strong>1677<\/strong><br \/>(-7 for losing)
+|raw|Inferno Glacier's rating: 1633 &rarr; <strong>1637<\/strong><br \/>(+4 for winning)

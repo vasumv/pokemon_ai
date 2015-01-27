@@ -1,0 +1,352 @@
+|join|Mrs.V
+|join|femt6
+|player|p1|Mrs.V|8
+|player|p2|femt6|265
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Gyarados, F
+|poke|p1|Excadrill, F
+|poke|p1|Jolteon, F
+|poke|p1|Azumarill, F
+|poke|p1|Ferrothorn, F
+|poke|p1|Conkeldurr, F
+|poke|p2|Latias, F
+|poke|p2|Garchomp, F
+|poke|p2|Azumarill, M
+|poke|p2|Tyranitar, M
+|poke|p2|Gliscor, F
+|poke|p2|Magnezone
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Jolteon|Jolteon, F|308\/308
+|switch|p2a: Gliscor|Gliscor, F|354\/354
+|turn|1
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Jolteon|Substitute|p1a: Jolteon
+|-start|p1a: Jolteon|Substitute
+|-damage|p1a: Jolteon|231\/308
+|
+|-heal|p1a: Jolteon|250\/308|[from] item: Leftovers
+|-status|p2a: Gliscor|tox|[from] item: Toxic Orb
+|turn|2
+|
+|switch|p2a: Tyranitar|Tyranitar, M|403\/403
+|-weather|Sandstorm
+|move|p1a: Jolteon|Baton Pass|p1a: Jolteon
+|
+|switch|p1a: Excadrill|Excadrill, F|362\/362
+|-ability|p1a: Excadrill|Mold Breaker
+|-item|p1a: Excadrill|Air Balloon
+|
+|-weather|Sandstorm|[upkeep]
+|turn|3
+|
+|switch|p2a: Gliscor|Gliscor, F|354\/354 tox
+|move|p1a: Excadrill|Earthquake|p2a: Gliscor
+|-immune|p2a: Gliscor|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|turn|4
+|
+|move|p1a: Excadrill|Swords Dance|p1a: Excadrill
+|-boost|p1a: Excadrill|atk|2
+|move|p2a: Gliscor|Taunt|p1a: Excadrill
+|-start|p1a: Excadrill|move: Taunt
+|
+|-weather|Sandstorm|[upkeep]
+|turn|5
+|
+|switch|p2a: Azumarill|Azumarill, M|387\/387
+|move|p1a: Excadrill|Rock Slide|p2a: Azumarill
+|-damage|p2a: Azumarill|153\/387
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Azumarill|129\/387|[from] sandstorm
+|turn|6
+|
+|move|p2a: Azumarill|Aqua Jet|p1a: Excadrill
+|-crit|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-end|p1a: Excadrill|Substitute
+|-enditem|p1a: Excadrill|Air Balloon
+|move|p1a: Excadrill|Earthquake|p2a: Azumarill
+|-damage|p2a: Azumarill|0 fnt
+|faint|p2a: Azumarill
+|
+|-weather|none
+|
+|switch|p2a: Garchomp|Garchomp, F|358\/358
+|turn|7
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|352\/352
+|move|p2a: Garchomp|Earthquake|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|250\/352
+|
+|turn|8
+|
+|switch|p2a: Magnezone|Magnezone|317\/317
+|switch|p1a: Conkeldurr|Conkeldurr, F|390\/390
+|
+|turn|9
+|
+|move|p2a: Magnezone|Thunderbolt|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|209\/390
+|move|p1a: Conkeldurr|Knock Off|p2a: Magnezone
+|-damage|p2a: Magnezone|211\/317
+|-enditem|p2a: Magnezone|Choice Specs|[from] move: Knock Off|[of] p1a: Conkeldurr
+|
+|turn|10
+|
+|switch|p2a: Gliscor|Gliscor, F|354\/354 tox
+|move|p1a: Conkeldurr|Drain Punch|p2a: Gliscor
+|-resisted|p2a: Gliscor
+|-damage|p2a: Gliscor|312\/354 tox
+|-heal|p1a: Conkeldurr|230\/390|[from] drain|[of] p2a: Gliscor
+|
+|-heal|p2a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|turn|11
+|
+|move|p2a: Gliscor|Earthquake|p1a: Conkeldurr
+|-crit|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|41\/390
+|move|p1a: Conkeldurr|Ice Punch|p2a: Gliscor
+|-supereffective|p2a: Gliscor
+|-damage|p2a: Gliscor|106\/354 tox
+|
+|-heal|p2a: Gliscor|150\/354 tox|[from] ability: Poison Heal
+|turn|12
+|
+|switch|p1a: Gyarados|Gyarados, F|369\/369
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Gliscor
+|-unboost|p2a: Gliscor|atk|1
+|move|p2a: Gliscor|Earthquake|p1a: Gyarados
+|-immune|p1a: Gyarados|[msg]
+|
+|-heal|p2a: Gliscor|194\/354 tox|[from] ability: Poison Heal
+|turn|13
+|
+|move|p2a: Gliscor|Toxic|p1a: Gyarados
+|-status|p1a: Gyarados|tox
+|-enditem|p1a: Gyarados|Lum Berry|[eat]
+|-curestatus|p1a: Gyarados|tox
+|move|p1a: Gyarados|Taunt|p2a: Gliscor
+|-start|p2a: Gliscor|move: Taunt
+|
+|-heal|p2a: Gliscor|238\/354 tox|[from] ability: Poison Heal
+|turn|14
+|
+|switch|p2a: Latias|Latias, F|319\/319
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|
+|turn|15
+|
+|move|p2a: Latias|Psyshock|p1a: Gyarados
+|-damage|p1a: Gyarados|162\/369
+|-damage|p2a: Latias|288\/319|[from] item: Life Orb
+|move|p1a: Gyarados|Waterfall|p2a: Latias
+|-resisted|p2a: Latias
+|-damage|p2a: Latias|156\/319
+|
+|turn|16
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|250\/352
+|move|p2a: Latias|Psyshock|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|202\/352
+|-damage|p2a: Latias|125\/319|[from] item: Life Orb
+|
+|turn|17
+|
+|switch|p2a: Magnezone|Magnezone|211\/317
+|switch|p1a: Jolteon|Jolteon, F|250\/308
+|
+|-heal|p1a: Jolteon|269\/308|[from] item: Leftovers
+|turn|18
+|
+|switch|p2a: Tyranitar|Tyranitar, M|403\/403
+|-weather|Sandstorm
+|move|p1a: Jolteon|Substitute|p1a: Jolteon
+|-start|p1a: Jolteon|Substitute
+|-damage|p1a: Jolteon|192\/308
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jolteon|173\/308|[from] sandstorm
+|-heal|p1a: Jolteon|192\/308|[from] item: Leftovers
+|turn|19
+|
+|move|p1a: Jolteon|Baton Pass|p1a: Jolteon
+|
+|switch|p1a: Gyarados|Gyarados, F|162\/369
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Tyranitar
+|-unboost|p2a: Tyranitar|atk|1
+|move|p2a: Tyranitar|Stealth Rock|p1a: Gyarados
+|-sidestart|p1: Mrs.V|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gyarados|139\/369|[from] sandstorm
+|turn|20
+|
+|-formechange|p2a: Tyranitar|Tyranitar-Mega
+|message|Tyranitar has Mega Evolved into Mega Tyranitar!
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|move|p2a: Tyranitar|Rock Slide|p1a: Gyarados
+|-supereffective|p1a: Gyarados
+|-end|p1a: Gyarados|Substitute
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gyarados|116\/369|[from] sandstorm
+|turn|21
+|
+|switch|p2a: Garchomp|Garchomp, F|358\/358
+|move|p1a: Gyarados|Waterfall|p2a: Garchomp
+|-damage|p2a: Garchomp|129\/358
+|-damage|p1a: Gyarados|70\/369|[from] ability: Rough Skin|[of] p2a: Garchomp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gyarados|47\/369|[from] sandstorm
+|turn|22
+|
+|move|p2a: Garchomp|Stone Edge|p1a: Gyarados
+|-supereffective|p1a: Gyarados
+|-damage|p1a: Gyarados|0 fnt
+|faint|p1a: Gyarados
+|
+|-weather|none
+|
+|switch|p1a: Azumarill|Azumarill, F|404\/404
+|-damage|p1a: Azumarill|354\/404|[from] Stealth Rock
+|turn|23
+|
+|switch|p2a: Latias|Latias, F|125\/319
+|move|p1a: Azumarill|Waterfall|p2a: Latias
+|-resisted|p2a: Latias
+|-damage|p2a: Latias|0 fnt
+|faint|p2a: Latias
+|
+|
+|switch|p2a: Magnezone|Magnezone|211\/317
+|turn|24
+|
+|switch|p2a: Tyranitar|Tyranitar, M|403\/403
+|-formechange|p2a: Tyranitar|Tyranitar-Mega
+|-weather|Sandstorm
+|switch|p1a: Jolteon|Jolteon, F|192\/308
+|-damage|p1a: Jolteon|154\/308|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jolteon|135\/308|[from] sandstorm
+|-heal|p1a: Jolteon|154\/308|[from] item: Leftovers
+|turn|25
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|202\/352
+|-damage|p1a: Ferrothorn|180\/352|[from] Stealth Rock
+|move|p2a: Tyranitar|Crunch|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|83\/352
+|-damage|p2a: Tyranitar|353\/403|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|-damage|p2a: Tyranitar|286\/403|[from] item: Rocky Helmet|[of] p1a: Ferrothorn
+|-unboost|p1a: Ferrothorn|def|1
+|
+|-weather|Sandstorm|[upkeep]
+|turn|26
+|
+|move|p2a: Tyranitar|Crunch|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|0 fnt
+|-damage|p2a: Tyranitar|236\/403|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|-damage|p2a: Tyranitar|169\/403|[from] item: Rocky Helmet|[of] p1a: Ferrothorn
+|faint|p1a: Ferrothorn
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Excadrill|Excadrill, F|362\/362
+|-damage|p1a: Excadrill|351\/362|[from] Stealth Rock
+|-ability|p1a: Excadrill|Mold Breaker
+|turn|27
+|
+|switch|p2a: Gliscor|Gliscor, F|238\/354 tox
+|move|p1a: Excadrill|Earthquake|p2a: Gliscor
+|-immune|p2a: Gliscor|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Gliscor|282\/354 tox|[from] ability: Poison Heal
+|turn|28
+|
+|move|p1a: Excadrill|Rapid Spin|p2a: Gliscor
+|-damage|p2a: Gliscor|266\/354 tox
+|-sideend|p1: Mrs.V|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Excadrill
+|move|p2a: Gliscor|Earthquake|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-damage|p1a: Excadrill|0 fnt
+|faint|p1a: Excadrill
+|
+|-weather|none
+|-heal|p2a: Gliscor|310\/354 tox|[from] ability: Poison Heal
+|
+|switch|p1a: Jolteon|Jolteon, F|154\/308
+|turn|29
+|
+|move|p1a: Jolteon|Hidden Power|p2a: Gliscor
+|-supereffective|p2a: Gliscor
+|-damage|p2a: Gliscor|0 fnt
+|faint|p2a: Gliscor
+|
+|-heal|p1a: Jolteon|173\/308|[from] item: Leftovers
+|
+|switch|p2a: Tyranitar|Tyranitar, M|169\/403
+|-formechange|p2a: Tyranitar|Tyranitar-Mega
+|-weather|Sandstorm
+|turn|30
+|
+|move|p1a: Jolteon|Thunderbolt|p2a: Tyranitar
+|-damage|p2a: Tyranitar|105\/403
+|move|p2a: Tyranitar|Pursuit|p1a: Jolteon
+|-damage|p1a: Jolteon|65\/308
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jolteon|46\/308|[from] sandstorm
+|-heal|p1a: Jolteon|65\/308|[from] item: Leftovers
+|turn|31
+|
+|move|p1a: Jolteon|Thunderbolt|p2a: Tyranitar
+|-damage|p2a: Tyranitar|44\/403
+|move|p2a: Tyranitar|Stealth Rock|p1a: Jolteon
+|-sidestart|p1: Mrs.V|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jolteon|46\/308|[from] sandstorm
+|-heal|p1a: Jolteon|65\/308|[from] item: Leftovers
+|turn|32
+|
+|switch|p2a: Garchomp|Garchomp, F|129\/358
+|move|p1a: Jolteon|Hidden Power|p2a: Garchomp
+|-supereffective|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|faint|p2a: Garchomp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jolteon|46\/308|[from] sandstorm
+|-heal|p1a: Jolteon|65\/308|[from] item: Leftovers
+|-message|femt6 forfeited.
+|
+|win|Mrs.V
+|raw|Ladder updating...
+|leave|femt6
+|player|p2
+|raw|Mrs.V's rating: 1680 &rarr; <strong>1698<\/strong><br \/>(+18 for winning)
+|raw|femt6's rating: 1644 &rarr; <strong>1626<\/strong><br \/>(-18 for losing)

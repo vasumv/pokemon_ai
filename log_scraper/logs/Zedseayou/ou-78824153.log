@@ -1,0 +1,1338 @@
+|join|Zedseayou
+|join|Flesh Cannon
+|player|p1|Zedseayou|102
+|player|p2|Flesh Cannon|262
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Slowbro, M
+|poke|p1|Tornadus-Therian, M
+|poke|p1|Venusaur, M
+|poke|p1|Heatran, F
+|poke|p1|Skarmory, M
+|poke|p1|Chansey, F
+|poke|p2|Weavile, M
+|poke|p2|Tyranitar, F
+|poke|p2|Blissey, F
+|poke|p2|Crobat, M
+|poke|p2|Conkeldurr, M
+|poke|p2|Porygon2
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|chat|Flesh Cannon|GL HF
+|
+|start
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|switch|p2a: Weavile|Weavile, M|282\/282
+|turn|1
+|callback|decision
+|
+|move|p2a: Weavile|Fake Out|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|320\/334
+|-damage|p2a: Weavile|235\/282|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|cant|p1a: Skarmory|flinch
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Weavile|Knock Off|p1a: Skarmory
+|-damage|p1a: Skarmory|209\/334
+|-damage|p2a: Weavile|188\/282|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|-enditem|p1a: Skarmory|Rocky Helmet|[from] move: Knock Off|[of] p2a: Weavile
+|move|p1a: Skarmory|Taunt|p2a: Weavile
+|-start|p2a: Weavile|move: Taunt
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Weavile|Ice Punch|p1a: Skarmory
+|-damage|p1a: Skarmory|130\/334
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|297\/334
+|
+|turn|4
+|callback|decision
+|
+|switch|p2a: Crobat|Crobat, M|374\/374
+|move|p1a: Skarmory|Brave Bird|p2a: Crobat
+|-damage|p2a: Crobat|229\/374
+|-damage|p1a: Skarmory|249\/334|[from] recoil|[of] p2a: Crobat
+|
+|-heal|p2a: Crobat|252\/374|[from] item: Black Sludge
+|turn|5
+|callback|decision
+|
+|move|p2a: Crobat|Taunt|p1a: Skarmory
+|-start|p1a: Skarmory|move: Taunt
+|move|p1a: Skarmory|Brave Bird|p2a: Crobat
+|-damage|p2a: Crobat|123\/374
+|-damage|p1a: Skarmory|206\/334|[from] recoil|[of] p2a: Crobat
+|
+|-heal|p2a: Crobat|146\/374|[from] item: Black Sludge
+|turn|6
+|callback|decision
+|
+|move|p2a: Crobat|U-turn|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|200\/334
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, F|403\/403
+|-weather|Sandstorm
+|move|p1a: Skarmory|Brave Bird|p2a: Tyranitar
+|-resisted|p2a: Tyranitar
+|-damage|p2a: Tyranitar|346\/403
+|-damage|p1a: Skarmory|181\/334|[from] recoil|[of] p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|turn|7
+|callback|decision
+|
+|switch|p1a: Tornadus-Therian|Tornadus-Therian, M|299\/299
+|-formechange|p2a: Tyranitar|Tyranitar-Mega
+|message|Tyranitar has Mega Evolved into Mega Tyranitar!
+|move|p2a: Tyranitar|Substitute|p2a: Tyranitar
+|-start|p2a: Tyranitar|Substitute
+|-damage|p2a: Tyranitar|246\/403
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Tornadus-Therian|281\/299|[from] sandstorm
+|turn|8
+|callback|decision
+|
+|move|p1a: Tornadus-Therian|U-turn|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-activate|p2a: Tyranitar|Substitute|[damage]
+|callback|decision
+|
+|switch|p1a: Venusaur|Venusaur, M|364\/364
+|move|p2a: Tyranitar|Stone Edge|p1a: Venusaur
+|-damage|p1a: Venusaur|136\/364
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Venusaur|114\/364|[from] sandstorm
+|turn|9
+|callback|decision
+|
+|switch|p1a: Slowbro|Slowbro, M|393\/393
+|move|p2a: Tyranitar|Stone Edge|p1a: Slowbro|[miss]
+|-miss|p2a: Tyranitar|p1a: Slowbro
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Slowbro|369\/393|[from] sandstorm
+|turn|10
+|callback|decision
+|
+|move|p2a: Tyranitar|Stone Edge|p1a: Slowbro|[miss]
+|-miss|p2a: Tyranitar|p1a: Slowbro
+|move|p1a: Slowbro|Scald|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-end|p2a: Tyranitar|Substitute
+|
+|-weather|none
+|turn|11
+|callback|decision
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|move|p1a: Slowbro|Scald|p2a: Blissey
+|-damage|p2a: Blissey|638\/714
+|-status|p2a: Blissey|brn
+|
+|-heal|p2a: Blissey|682\/714 brn|[from] item: Leftovers
+|-damage|p2a: Blissey|593\/714 brn|[from] brn
+|turn|12
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|385\/385
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p2a: Blissey|637\/714 brn|[from] item: Leftovers
+|-damage|p2a: Blissey|548\/714 brn|[from] brn
+|turn|13
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, F|246\/403
+|-formechange|p2a: Tyranitar|Tyranitar-Mega
+|-weather|Sandstorm
+|move|p1a: Heatran|Stealth Rock|p2a: Tyranitar
+|-sidestart|p2: Flesh Cannon|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Tyranitar|403\/403|[from] move: Wish|[wisher] Blissey
+|turn|14
+|callback|decision
+|
+|move|p2a: Tyranitar|Substitute|p2a: Tyranitar
+|-start|p2a: Tyranitar|Substitute
+|-damage|p2a: Tyranitar|303\/403
+|move|p1a: Heatran|Roar|p2a: Tyranitar
+|drag|p2a: Porygon2|Porygon2|374\/374
+|-damage|p2a: Porygon2|328\/374|[from] Stealth Rock
+|-ability|p2a: Porygon2|Flash Fire|[from] ability: Trace|[of] p1a: Heatran
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Porygon2|305\/374|[from] sandstorm
+|turn|15
+|callback|decision
+|
+|move|p1a: Heatran|Ancient Power|p2a: Porygon2
+|-crit|p2a: Porygon2
+|-damage|p2a: Porygon2|247\/374
+|move|p2a: Porygon2|Discharge|p1a: Heatran
+|-damage|p1a: Heatran|342\/385
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Porygon2|224\/374|[from] sandstorm
+|-heal|p1a: Heatran|366\/385|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p1a: Chansey|Chansey, F|704\/704
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|374\/374
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Porygon2|351\/374|[from] sandstorm
+|-damage|p1a: Chansey|660\/704|[from] sandstorm
+|turn|17
+|callback|decision
+|
+|move|p2a: Porygon2|Tri Attack|p1a: Chansey
+|-damage|p1a: Chansey|593\/704
+|move|p1a: Chansey|Toxic|p2a: Porygon2
+|-status|p2a: Porygon2|tox
+|
+|-weather|none
+|-damage|p2a: Porygon2|328\/374 tox|[from] psn
+|turn|18
+|callback|decision
+|
+|switch|p2a: Blissey|Blissey, F|548\/714
+|-damage|p2a: Blissey|459\/714|[from] Stealth Rock
+|move|p1a: Chansey|Wish|p1a: Chansey
+|
+|-heal|p2a: Blissey|503\/714|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|switch|p1a: Venusaur|Venusaur, M|114\/364
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p1a: Venusaur|364\/364|[from] move: Wish|[wisher] Chansey
+|-heal|p2a: Blissey|547\/714|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|switch|p2a: Crobat|Crobat, M|146\/374
+|-damage|p2a: Crobat|53\/374|[from] Stealth Rock
+|-formechange|p1a: Venusaur|Venusaur-Mega
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p1a: Venusaur|Roar|p2a: Crobat
+|drag|p2a: Blissey|Blissey, F|547\/714
+|-damage|p2a: Blissey|458\/714|[from] Stealth Rock
+|
+|-heal|p2a: Blissey|714\/714|[from] move: Wish|[wisher] Blissey
+|turn|21
+|callback|decision
+|
+|switch|p1a: Tornadus-Therian|Tornadus-Therian, M|299\/299
+|move|p2a: Blissey|Seismic Toss|p1a: Tornadus-Therian
+|-damage|p1a: Tornadus-Therian|199\/299
+|
+|turn|22
+|callback|decision
+|
+|move|p1a: Tornadus-Therian|Knock Off|p2a: Blissey
+|-damage|p2a: Blissey|546\/714
+|-enditem|p2a: Blissey|Leftovers|[from] move: Knock Off|[of] p1a: Tornadus-Therian
+|move|p2a: Blissey|Counter|p1a: Tornadus-Therian
+|-damage|p1a: Tornadus-Therian|0 fnt
+|faint|p1a: Tornadus-Therian
+|
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|181\/334
+|turn|23
+|callback|decision
+|
+|move|p1a: Skarmory|Taunt|p2a: Blissey
+|-start|p2a: Blissey|move: Taunt
+|cant|p2a: Blissey|move: Taunt|Wish
+|
+|turn|24
+|callback|decision
+|
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334
+|move|p2a: Blissey|Counter|p1a: Skarmory
+|-fail|p1a: Skarmory
+|
+|turn|25
+|callback|decision
+|
+|switch|p1a: Chansey|Chansey, F|593\/704
+|move|p2a: Blissey|Seismic Toss|p1a: Chansey
+|-damage|p1a: Chansey|493\/704
+|
+|-end|p2a: Blissey|move: Taunt
+|turn|26
+|callback|decision
+|
+|switch|p2a: Conkeldurr|Conkeldurr, M|414\/414
+|-damage|p2a: Conkeldurr|389\/414|[from] Stealth Rock
+|move|p1a: Chansey|Soft-Boiled|p1a: Chansey
+|-heal|p1a: Chansey|704\/704
+|
+|turn|27
+|callback|decision
+|
+|switch|p1a: Venusaur|Venusaur, M|364\/364
+|-formechange|p1a: Venusaur|Venusaur-Mega
+|move|p2a: Conkeldurr|Knock Off|p1a: Venusaur
+|-damage|p1a: Venusaur|312\/364
+|
+|turn|28
+|callback|decision
+|
+|switch|p2a: Crobat|Crobat, M|53\/374
+|-damage|p2a: Crobat|0 fnt|[from] Stealth Rock
+|faint|p2a: Crobat
+|move|p1a: Venusaur|Giga Drain|p2: Crobat|[notarget]
+|-notarget
+|
+|callback|decision
+|
+|switch|p2a: Weavile|Weavile, M|188\/282
+|-damage|p2a: Weavile|118\/282|[from] Stealth Rock
+|turn|29
+|callback|decision
+|
+|move|p2a: Weavile|Fake Out|p1a: Venusaur
+|-damage|p1a: Venusaur|276\/364
+|cant|p1a: Venusaur|flinch
+|
+|turn|30
+|callback|decision
+|
+|move|p2a: Weavile|Ice Punch|p1a: Venusaur
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|174\/364
+|move|p1a: Venusaur|Synthesis|p1a: Venusaur
+|-heal|p1a: Venusaur|356\/364
+|
+|turn|31
+|callback|decision
+|
+|move|p2a: Weavile|Ice Punch|p1a: Venusaur
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|246\/364
+|-status|p1a: Venusaur|frz
+|cant|p1a: Venusaur|frz
+|
+|turn|32
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, F|303\/403
+|-formechange|p2a: Tyranitar|Tyranitar-Mega
+|-damage|p2a: Tyranitar|253\/403|[from] Stealth Rock
+|-weather|Sandstorm
+|-curestatus|p1a: Venusaur|frz
+|move|p1a: Venusaur|Synthesis|p1a: Venusaur
+|-heal|p1a: Venusaur|337\/364
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Venusaur|315\/364|[from] sandstorm
+|turn|33
+|callback|decision
+|
+|move|p2a: Tyranitar|Stone Edge|p1a: Venusaur|[miss]
+|-miss|p2a: Tyranitar|p1a: Venusaur
+|move|p1a: Venusaur|Roar|p2a: Tyranitar
+|drag|p2a: Porygon2|Porygon2|328\/374 tox
+|-damage|p2a: Porygon2|282\/374 tox|[from] Stealth Rock
+|-ability|p2a: Porygon2|Thick Fat|[from] ability: Trace|[of] p1a: Venusaur
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Venusaur|293\/364|[from] sandstorm
+|-damage|p2a: Porygon2|259\/374 tox|[from] sandstorm
+|-damage|p2a: Porygon2|236\/374 tox|[from] psn
+|turn|34
+|callback|decision
+|
+|switch|p1a: Chansey|Chansey, F|704\/704
+|move|p2a: Porygon2|Discharge|p1a: Chansey
+|-damage|p1a: Chansey|661\/704
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Porygon2|213\/374 tox|[from] sandstorm
+|-damage|p1a: Chansey|617\/704|[from] sandstorm
+|-damage|p2a: Porygon2|167\/374 tox|[from] psn
+|turn|35
+|callback|decision
+|
+|switch|p2a: Blissey|Blissey, F|546\/714
+|-damage|p2a: Blissey|457\/714|[from] Stealth Rock
+|move|p1a: Chansey|Wish|p1a: Chansey
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Blissey|413\/714|[from] sandstorm
+|-damage|p1a: Chansey|573\/704|[from] sandstorm
+|turn|36
+|callback|decision
+|
+|move|p2a: Blissey|Heal Bell|p2a: Blissey
+|-cureteam|p2a: Blissey|[from] move: HealBell
+|move|p1a: Chansey|Toxic|p2a: Blissey
+|-status|p2a: Blissey|tox
+|
+|-weather|none
+|-heal|p1a: Chansey|704\/704|[from] move: Wish|[wisher] Chansey
+|-damage|p2a: Blissey|369\/714 tox|[from] psn
+|turn|37
+|callback|decision
+|
+|move|p2a: Blissey|Wish|p2a: Blissey
+|move|p1a: Chansey|Toxic|p2a: Blissey
+|-fail|p2a: Blissey|tox
+|
+|-damage|p2a: Blissey|281\/714 tox|[from] psn
+|turn|38
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, F|253\/403
+|-formechange|p2a: Tyranitar|Tyranitar-Mega
+|-damage|p2a: Tyranitar|203\/403|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p1a: Chansey|Toxic|p2a: Tyranitar
+|-status|p2a: Tyranitar|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Chansey|660\/704|[from] sandstorm
+|-heal|p2a: Tyranitar|403\/403 tox|[from] move: Wish|[wisher] Blissey
+|-damage|p2a: Tyranitar|378\/403 tox|[from] psn
+|turn|39
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|move|p2a: Tyranitar|Substitute|p2a: Tyranitar
+|-start|p2a: Tyranitar|Substitute
+|-damage|p2a: Tyranitar|278\/403 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Tyranitar|228\/403 tox|[from] psn
+|turn|40
+|callback|decision
+|
+|-singleturn|p2a: Tyranitar|move: Focus Punch
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-fail|p1a: Skarmory
+|move|p2a: Tyranitar|Focus Punch|p1a: Skarmory
+|-damage|p1a: Skarmory|198\/334
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Tyranitar|153\/403 tox|[from] psn
+|turn|41
+|callback|decision
+|
+|switch|p1a: Slowbro|Slowbro, M|393\/393
+|move|p2a: Tyranitar|Stone Edge|p1a: Slowbro
+|-damage|p1a: Slowbro|222\/393
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Slowbro|198\/393|[from] sandstorm
+|-damage|p2a: Tyranitar|53\/403 tox|[from] psn
+|turn|42
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|198\/334
+|move|p2a: Tyranitar|Stone Edge|p1a: Skarmory
+|-damage|p1a: Skarmory|66\/334
+|
+|-weather|none
+|-damage|p2a: Tyranitar|0 fnt|[from] psn
+|faint|p2a: Tyranitar
+|callback|decision
+|
+|switch|p2a: Conkeldurr|Conkeldurr, M|389\/414
+|-damage|p2a: Conkeldurr|364\/414|[from] Stealth Rock
+|turn|43
+|callback|decision
+|
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|233\/334
+|move|p2a: Conkeldurr|Ice Punch|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|211\/334
+|-status|p1a: Skarmory|frz
+|
+|turn|44
+|callback|decision
+|
+|switch|p1a: Venusaur|Venusaur, M|293\/364
+|-formechange|p1a: Venusaur|Venusaur-Mega
+|move|p2a: Conkeldurr|Drain Punch|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|254\/364
+|-heal|p2a: Conkeldurr|384\/414|[from] drain|[of] p1a: Venusaur
+|
+|turn|45
+|callback|decision
+|
+|move|p1a: Venusaur|Giga Drain|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|318\/414
+|-heal|p1a: Venusaur|287\/364|[from] drain|[of] p2a: Conkeldurr
+|move|p2a: Conkeldurr|Ice Punch|p1a: Venusaur
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|227\/364
+|-status|p1a: Venusaur|frz
+|
+|turn|46
+|callback|decision
+|chat|Zedseayou|WHAT THE FUCK
+|
+|cant|p1a: Venusaur|frz
+|move|p2a: Conkeldurr|Ice Punch|p1a: Venusaur
+|-crit|p1a: Venusaur
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|135\/364 frz
+|
+|turn|47
+|callback|decision
+|chat|Flesh Cannon|Ice type is best type
+|chat|Zedseayou|2 freezes, just about forgivable, three????
+|
+|cant|p1a: Venusaur|frz
+|move|p2a: Conkeldurr|Ice Punch|p1a: Venusaur
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|77\/364 frz
+|
+|turn|48
+|callback|decision
+|chat|Flesh Cannon|To be fair, you thawed like, right after the first one
+|
+|cant|p1a: Venusaur|frz
+|move|p2a: Conkeldurr|Ice Punch|p1a: Venusaur
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|19\/364 frz
+|
+|turn|49
+|callback|decision
+|chat|Zedseayou|that's a 50% chance
+|
+|switch|p1a: Slowbro|Slowbro, M|329\/393
+|move|p2a: Conkeldurr|Mach Punch|p1a: Slowbro
+|-resisted|p1a: Slowbro
+|-damage|p1a: Slowbro|308\/393
+|
+|turn|50
+|callback|decision
+|chat|Zedseayou|this is 1\/1000
+|
+|move|p2a: Conkeldurr|Knock Off|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|156\/393
+|-enditem|p1a: Slowbro|Assault Vest|[from] move: Knock Off|[of] p2a: Conkeldurr
+|move|p1a: Slowbro|Psyshock|p2a: Conkeldurr
+|-crit|p2a: Conkeldurr
+|-supereffective|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|10\/414
+|
+|turn|51
+|callback|decision
+|
+|move|p2a: Conkeldurr|Knock Off|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|64\/393
+|move|p1a: Slowbro|Psyshock|p2a: Conkeldurr
+|-supereffective|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|0 fnt
+|faint|p2a: Conkeldurr
+|
+|callback|decision
+|
+|switch|p2a: Porygon2|Porygon2|167\/374
+|-damage|p2a: Porygon2|121\/374|[from] Stealth Rock
+|-ability|p2a: Porygon2|Regenerator|[from] ability: Trace|[of] p1a: Slowbro
+|turn|52
+|callback|decision
+|
+|switch|p1a: Chansey|Chansey, F|660\/704
+|move|p2a: Porygon2|Discharge|p1a: Chansey
+|-damage|p1a: Chansey|619\/704
+|
+|turn|53
+|callback|decision
+|
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|308\/374
+|move|p1a: Chansey|Heal Bell|p1a: Chansey
+|-cureteam|p1a: Chansey|[from] move: HealBell
+|
+|turn|54
+|callback|decision
+|chat|Flesh Cannon|Awww
+|
+|move|p2a: Porygon2|Ice Beam|p1a: Chansey
+|-damage|p1a: Chansey|568\/704
+|move|p1a: Chansey|Toxic|p2a: Porygon2
+|-status|p2a: Porygon2|tox
+|
+|-damage|p2a: Porygon2|285\/374 tox|[from] psn
+|turn|55
+|callback|decision
+|
+|move|p2a: Porygon2|Ice Beam|p1a: Chansey
+|-damage|p1a: Chansey|522\/704
+|move|p1a: Chansey|Soft-Boiled|p1a: Chansey
+|-heal|p1a: Chansey|704\/704
+|
+|-damage|p2a: Porygon2|239\/374 tox|[from] psn
+|turn|56
+|callback|decision
+|
+|switch|p2a: Blissey|Blissey, F|281\/714
+|-damage|p2a: Blissey|192\/714|[from] Stealth Rock
+|move|p1a: Chansey|Wish|p1a: Chansey
+|
+|turn|57
+|callback|decision
+|
+|switch|p1a: Venusaur|Venusaur, M|19\/364
+|-formechange|p1a: Venusaur|Venusaur-Mega
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p1a: Venusaur|364\/364|[from] move: Wish|[wisher] Chansey
+|turn|58
+|callback|decision
+|
+|move|p2a: Blissey|Heal Bell|p2a: Blissey
+|-cureteam|p2a: Blissey|[from] move: HealBell
+|move|p1a: Venusaur|Roar|p2a: Blissey
+|drag|p2a: Weavile|Weavile, M|118\/282
+|-damage|p2a: Weavile|48\/282|[from] Stealth Rock
+|
+|-heal|p2a: Weavile|282\/282|[from] move: Wish|[wisher] Blissey
+|turn|59
+|callback|decision
+|
+|move|p2a: Weavile|Fake Out|p1a: Venusaur
+|-damage|p1a: Venusaur|328\/364
+|cant|p1a: Venusaur|flinch
+|
+|turn|60
+|callback|decision
+|
+|move|p2a: Weavile|Ice Punch|p1a: Venusaur
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|236\/364
+|move|p1a: Venusaur|Earthquake|p2a: Weavile
+|-damage|p2a: Weavile|178\/282
+|
+|turn|61
+|callback|decision
+|
+|move|p2a: Weavile|Ice Punch|p1a: Venusaur
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|128\/364
+|move|p1a: Venusaur|Synthesis|p1a: Venusaur
+|-heal|p1a: Venusaur|310\/364
+|
+|turn|62
+|callback|decision
+|
+|move|p2a: Weavile|Ice Punch|p1a: Venusaur
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|202\/364
+|move|p1a: Venusaur|Giga Drain|p2a: Weavile
+|-damage|p2a: Weavile|52\/282
+|-heal|p1a: Venusaur|265\/364|[from] drain|[of] p2a: Weavile
+|
+|turn|63
+|callback|decision
+|
+|move|p2a: Weavile|Ice Punch|p1a: Venusaur
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|167\/364
+|-status|p1a: Venusaur|frz
+|cant|p1a: Venusaur|frz
+|
+|turn|64
+|callback|decision
+|chat|Flesh Cannon|Yus
+|chat|Zedseayou|oh ffs
+|
+|switch|p1a: Slowbro|Slowbro, M|195\/393
+|move|p2a: Weavile|Ice Punch|p1a: Slowbro
+|-resisted|p1a: Slowbro
+|-damage|p1a: Slowbro|147\/393
+|
+|turn|65
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|211\/334
+|move|p2a: Weavile|Knock Off|p1a: Skarmory
+|-damage|p1a: Skarmory|145\/334
+|
+|turn|66
+|callback|decision
+|
+|move|p2a: Weavile|Ice Punch|p1a: Skarmory
+|-damage|p1a: Skarmory|60\/334
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|227\/334
+|
+|turn|67
+|callback|decision
+|
+|move|p2a: Weavile|Ice Punch|p1a: Skarmory
+|-damage|p1a: Skarmory|146\/334
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|313\/334
+|
+|turn|68
+|callback|decision
+|
+|move|p2a: Weavile|Ice Punch|p1a: Skarmory
+|-damage|p1a: Skarmory|231\/334
+|move|p1a: Skarmory|Brave Bird|p2a: Weavile
+|-damage|p2a: Weavile|0 fnt
+|-damage|p1a: Skarmory|214\/334|[from] recoil|[of] p2a: Weavile
+|faint|p2a: Weavile
+|
+|callback|decision
+|
+|switch|p2a: Porygon2|Porygon2|363\/374
+|-damage|p2a: Porygon2|317\/374|[from] Stealth Rock
+|-ability|p2a: Porygon2|Sturdy|[from] ability: Trace|[of] p1a: Skarmory
+|turn|69
+|callback|decision
+|chat|Flesh Cannon|To be fair, I have three ice moves on my team
+|chat|Zedseayou|all with a 10% freeze chance
+|chat|Flesh Cannon|And I used them liberally
+|chat|Zedseayou|we can count the number of times you used them if you want, but it definitely won'tmake 4 freezes more likely than not
+|chat|Flesh Cannon|Ha
+|
+|switch|p1a: Chansey|Chansey, F|704\/704
+|move|p2a: Porygon2|Discharge|p1a: Chansey
+|-damage|p1a: Chansey|659\/704
+|
+|turn|70
+|callback|decision
+|chat|Flesh Cannon|RNG's a thing brah
+|
+|switch|p2a: Blissey|Blissey, F|192\/714
+|-damage|p2a: Blissey|103\/714|[from] Stealth Rock
+|move|p1a: Chansey|Heal Bell|p1a: Chansey
+|-cureteam|p1a: Chansey|[from] move: HealBell
+|
+|turn|71
+|callback|decision
+|chat|Zedseayou|19 uses
+|
+|move|p2a: Blissey|Wish|p2a: Blissey
+|move|p1a: Chansey|Toxic|p2a: Blissey|[miss]
+|-miss|p1a: Chansey|p2a: Blissey
+|
+|turn|72
+|callback|decision
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Chansey
+|-damage|p1a: Chansey|559\/704
+|move|p1a: Chansey|Toxic|p2a: Blissey
+|-status|p2a: Blissey|tox
+|
+|-heal|p2a: Blissey|460\/714 tox|[from] move: Wish|[wisher] Blissey
+|-damage|p2a: Blissey|416\/714 tox|[from] psn
+|turn|73
+|callback|decision
+|
+|move|p2a: Blissey|Wish|p2a: Blissey
+|move|p1a: Chansey|Wish|p1a: Chansey
+|
+|-damage|p2a: Blissey|328\/714 tox|[from] psn
+|turn|74
+|callback|decision
+|join|Flesh Fire
+|
+|switch|p1a: Venusaur|Venusaur, M|167\/364
+|-formechange|p1a: Venusaur|Venusaur-Mega
+|move|p2a: Blissey|Heal Bell|p2a: Blissey
+|-cureteam|p2a: Blissey|[from] move: HealBell
+|
+|-heal|p2a: Blissey|685\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Venusaur|364\/364|[from] move: Wish|[wisher] Chansey
+|turn|75
+|callback|decision
+|
+|move|p1a: Venusaur|Earthquake|p2a: Blissey
+|-damage|p2a: Blissey|539\/714
+|move|p2a: Blissey|Seismic Toss|p1a: Venusaur
+|-damage|p1a: Venusaur|264\/364
+|
+|turn|76
+|callback|decision
+|
+|move|p1a: Venusaur|Giga Drain|p2a: Blissey
+|-damage|p2a: Blissey|455\/714
+|-heal|p1a: Venusaur|306\/364|[from] drain|[of] p2a: Blissey
+|move|p2a: Blissey|Seismic Toss|p1a: Venusaur
+|-damage|p1a: Venusaur|206\/364
+|
+|turn|77
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|214\/334
+|move|p2a: Blissey|Counter|p1a: Skarmory
+|-fail|p1a: Skarmory
+|
+|turn|78
+|callback|decision
+|
+|move|p1a: Skarmory|Taunt|p2a: Blissey
+|-start|p2a: Blissey|move: Taunt
+|move|p2a: Blissey|Seismic Toss|p1a: Skarmory
+|-damage|p1a: Skarmory|114\/334
+|
+|turn|79
+|callback|decision
+|
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|281\/334
+|move|p2a: Blissey|Seismic Toss|p1a: Skarmory
+|-damage|p1a: Skarmory|181\/334
+|
+|turn|80
+|callback|decision
+|
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334
+|move|p2a: Blissey|Counter|p1a: Skarmory
+|-fail|p1a: Skarmory
+|
+|-end|p2a: Blissey|move: Taunt
+|turn|81
+|callback|decision
+|
+|move|p1a: Skarmory|Taunt|p2a: Blissey
+|-start|p2a: Blissey|move: Taunt
+|move|p2a: Blissey|Counter|p1a: Skarmory
+|-fail|p1a: Skarmory
+|
+|turn|82
+|callback|decision
+|
+|switch|p1a: Slowbro|Slowbro, M|278\/393
+|move|p2a: Blissey|Seismic Toss|p1a: Slowbro
+|-damage|p1a: Slowbro|178\/393
+|
+|turn|83
+|callback|decision
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Slowbro
+|-damage|p1a: Slowbro|78\/393
+|move|p1a: Slowbro|Psyshock|p2a: Blissey
+|-damage|p2a: Blissey|298\/714
+|
+|-end|p2a: Blissey|move: Taunt
+|turn|84
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|turn|85
+|callback|decision
+|
+|move|p1a: Skarmory|Taunt|p2a: Blissey
+|-start|p2a: Blissey|move: Taunt
+|move|p2a: Blissey|Seismic Toss|p1a: Skarmory
+|-damage|p1a: Skarmory|234\/334
+|
+|-heal|p2a: Blissey|655\/714|[from] move: Wish|[wisher] Blissey
+|turn|86
+|callback|decision
+|
+|switch|p1a: Chansey|Chansey, F|559\/704
+|move|p2a: Blissey|Counter|p1a: Chansey
+|-fail|p1a: Chansey
+|
+|turn|87
+|callback|decision
+|
+|switch|p2a: Porygon2|Porygon2|317\/374
+|-damage|p2a: Porygon2|271\/374|[from] Stealth Rock
+|-ability|p2a: Porygon2|Natural Cure|[from] ability: Trace|[of] p1a: Chansey
+|move|p1a: Chansey|Toxic|p2a: Porygon2
+|-status|p2a: Porygon2|tox
+|
+|-damage|p2a: Porygon2|248\/374 tox|[from] psn
+|turn|88
+|callback|decision
+|
+|move|p2a: Porygon2|Discharge|p1a: Chansey
+|-damage|p1a: Chansey|513\/704
+|move|p1a: Chansey|Toxic|p2a: Porygon2
+|-fail|p2a: Porygon2|tox
+|
+|-damage|p2a: Porygon2|202\/374 tox|[from] psn
+|turn|89
+|callback|decision
+|
+|move|p2a: Porygon2|Ice Beam|p1a: Chansey
+|-damage|p1a: Chansey|464\/704
+|move|p1a: Chansey|Soft-Boiled|p1a: Chansey
+|-heal|p1a: Chansey|704\/704
+|
+|-damage|p2a: Porygon2|133\/374 tox|[from] psn
+|turn|90
+|callback|decision
+|
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|320\/374 tox
+|move|p1a: Chansey|Wish|p1a: Chansey
+|
+|-damage|p2a: Porygon2|228\/374 tox|[from] psn
+|turn|91
+|callback|decision
+|
+|switch|p2a: Blissey|Blissey, F|655\/714
+|-damage|p2a: Blissey|566\/714|[from] Stealth Rock
+|switch|p1a: Heatran|Heatran, F|366\/385
+|
+|-heal|p1a: Heatran|385\/385|[from] move: Wish|[wisher] Chansey
+|turn|92
+|callback|decision
+|
+|switch|p2a: Porygon2|Porygon2|228\/374
+|-damage|p2a: Porygon2|182\/374|[from] Stealth Rock
+|-ability|p2a: Porygon2|Flash Fire|[from] ability: Trace|[of] p1a: Heatran
+|move|p1a: Heatran|Roar|p2a: Porygon2
+|drag|p2a: Blissey|Blissey, F|566\/714
+|-damage|p2a: Blissey|477\/714|[from] Stealth Rock
+|
+|turn|93
+|callback|decision
+|
+|move|p2a: Blissey|Wish|p2a: Blissey
+|move|p1a: Heatran|Roar|p2a: Blissey
+|drag|p2a: Porygon2|Porygon2|182\/374
+|-damage|p2a: Porygon2|136\/374|[from] Stealth Rock
+|-ability|p2a: Porygon2|Flash Fire|[from] ability: Trace|[of] p1a: Heatran
+|
+|turn|94
+|callback|decision
+|
+|switch|p1a: Chansey|Chansey, F|704\/704
+|move|p2a: Porygon2|Discharge|p1a: Chansey
+|-damage|p1a: Chansey|661\/704
+|
+|-heal|p2a: Porygon2|374\/374|[from] move: Wish|[wisher] Blissey
+|turn|95
+|callback|decision
+|
+|switch|p2a: Blissey|Blissey, F|477\/714
+|-damage|p2a: Blissey|388\/714|[from] Stealth Rock
+|move|p1a: Chansey|Toxic|p2a: Blissey|[miss]
+|-miss|p1a: Chansey|p2a: Blissey
+|
+|turn|96
+|callback|decision
+|
+|move|p2a: Blissey|Wish|p2a: Blissey
+|move|p1a: Chansey|Toxic|p2a: Blissey
+|-status|p2a: Blissey|tox
+|
+|-damage|p2a: Blissey|344\/714 tox|[from] psn
+|turn|97
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|234\/334
+|move|p2a: Blissey|Seismic Toss|p1a: Skarmory
+|-damage|p1a: Skarmory|134\/334
+|
+|-heal|p2a: Blissey|701\/714 tox|[from] move: Wish|[wisher] Blissey
+|-damage|p2a: Blissey|613\/714 tox|[from] psn
+|turn|98
+|callback|decision
+|
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|301\/334
+|move|p2a: Blissey|Seismic Toss|p1a: Skarmory
+|-damage|p1a: Skarmory|201\/334
+|
+|-damage|p2a: Blissey|481\/714 tox|[from] psn
+|turn|99
+|callback|decision
+|
+|switch|p2a: Porygon2|Porygon2|374\/374
+|-damage|p2a: Porygon2|328\/374|[from] Stealth Rock
+|-ability|p2a: Porygon2|Sturdy|[from] ability: Trace|[of] p1a: Skarmory
+|move|p1a: Skarmory|Taunt|p2a: Porygon2
+|-start|p2a: Porygon2|move: Taunt
+|
+|turn|100
+|callback|decision
+|
+|switch|p1a: Chansey|Chansey, F|661\/704
+|move|p2a: Porygon2|Tri Attack|p1a: Chansey
+|-damage|p1a: Chansey|601\/704
+|
+|turn|101
+|callback|decision
+|
+|switch|p2a: Blissey|Blissey, F|481\/714
+|-damage|p2a: Blissey|392\/714|[from] Stealth Rock
+|move|p1a: Chansey|Toxic|p2a: Blissey
+|-status|p2a: Blissey|tox
+|
+|-damage|p2a: Blissey|348\/714 tox|[from] psn
+|turn|102
+|callback|decision
+|chat|Zedseayou|oh, i just worked it out, the chances of the 4 freezes were 0.079%
+|
+|move|p2a: Blissey|Wish|p2a: Blissey
+|move|p1a: Chansey|Wish|p1a: Chansey
+|
+|-damage|p2a: Blissey|260\/714 tox|[from] psn
+|turn|103
+|callback|decision
+|chat|Flesh Cannon|#Iamthe1%
+|chat|Zedseayou|i mean 0.079%
+|chat|Zedseayou|i mean 0.79%
+|
+|switch|p1a: Venusaur|Venusaur, M|206\/364
+|-formechange|p1a: Venusaur|Venusaur-Mega
+|move|p2a: Blissey|Heal Bell|p2a: Blissey
+|-cureteam|p2a: Blissey|[from] move: HealBell
+|
+|-heal|p2a: Blissey|617\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Venusaur|364\/364|[from] move: Wish|[wisher] Chansey
+|turn|104
+|callback|decision
+|
+|move|p2a: Blissey|Counter|p1a: Venusaur
+|-fail|p1a: Venusaur
+|move|p1a: Venusaur|Roar|p2a: Blissey
+|drag|p2a: Porygon2|Porygon2|328\/374
+|-damage|p2a: Porygon2|282\/374|[from] Stealth Rock
+|-ability|p2a: Porygon2|Thick Fat|[from] ability: Trace|[of] p1a: Venusaur
+|
+|turn|105
+|callback|decision
+|
+|switch|p1a: Slowbro|Slowbro, M|209\/393
+|move|p2a: Porygon2|Tri Attack|p1a: Slowbro
+|-damage|p1a: Slowbro|100\/393
+|
+|turn|106
+|callback|decision
+|
+|switch|p1a: Chansey|Chansey, F|601\/704
+|move|p2a: Porygon2|Tri Attack|p1a: Chansey
+|-damage|p1a: Chansey|537\/704
+|-status|p1a: Chansey|brn
+|
+|-damage|p1a: Chansey|449\/704 brn|[from] brn
+|turn|107
+|callback|decision
+|
+|switch|p2a: Blissey|Blissey, F|617\/714
+|-damage|p2a: Blissey|528\/714|[from] Stealth Rock
+|move|p1a: Chansey|Toxic|p2a: Blissey
+|-status|p2a: Blissey|tox
+|
+|-damage|p2a: Blissey|484\/714 tox|[from] psn
+|-damage|p1a: Chansey|361\/704 brn|[from] brn
+|turn|108
+|callback|decision
+|
+|switch|p2a: Porygon2|Porygon2|282\/374
+|-damage|p2a: Porygon2|236\/374|[from] Stealth Rock
+|-ability|p2a: Porygon2|Natural Cure|[from] ability: Trace|[of] p1a: Chansey
+|move|p1a: Chansey|Soft-Boiled|p1a: Chansey
+|-heal|p1a: Chansey|704\/704 brn
+|
+|-damage|p1a: Chansey|616\/704 brn|[from] brn
+|turn|109
+|callback|decision
+|
+|move|p2a: Porygon2|Tri Attack|p1a: Chansey
+|-damage|p1a: Chansey|553\/704 brn
+|move|p1a: Chansey|Toxic|p2a: Porygon2
+|-status|p2a: Porygon2|tox
+|
+|-damage|p2a: Porygon2|213\/374 tox|[from] psn
+|-damage|p1a: Chansey|465\/704 brn|[from] brn
+|turn|110
+|callback|decision
+|
+|move|p2a: Porygon2|Tri Attack|p1a: Chansey
+|-damage|p1a: Chansey|404\/704 brn
+|move|p1a: Chansey|Soft-Boiled|p1a: Chansey
+|-heal|p1a: Chansey|704\/704 brn
+|
+|-damage|p2a: Porygon2|167\/374 tox|[from] psn
+|-damage|p1a: Chansey|616\/704 brn|[from] brn
+|turn|111
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|385\/385
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|354\/374 tox
+|
+|-damage|p2a: Porygon2|285\/374 tox|[from] psn
+|turn|112
+|callback|decision
+|
+|move|p1a: Heatran|Lava Plume|p2a: Porygon2
+|-crit|p2a: Porygon2
+|-damage|p2a: Porygon2|164\/374 tox
+|move|p2a: Porygon2|Discharge|p1a: Heatran
+|-crit|p1a: Heatran
+|-damage|p1a: Heatran|314\/385
+|
+|-heal|p1a: Heatran|338\/385|[from] item: Leftovers
+|-damage|p2a: Porygon2|72\/374 tox|[from] psn
+|turn|113
+|callback|decision
+|
+|switch|p2a: Blissey|Blissey, F|484\/714
+|-damage|p2a: Blissey|395\/714|[from] Stealth Rock
+|move|p1a: Heatran|Lava Plume|p2a: Blissey
+|-damage|p2a: Blissey|311\/714
+|
+|-heal|p1a: Heatran|362\/385|[from] item: Leftovers
+|turn|114
+|callback|decision
+|
+|move|p1a: Heatran|Lava Plume|p2a: Blissey
+|-damage|p2a: Blissey|227\/714
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p1a: Heatran|385\/385|[from] item: Leftovers
+|turn|115
+|callback|decision
+|
+|move|p1a: Heatran|Lava Plume|p2a: Blissey
+|-crit|p2a: Blissey
+|-damage|p2a: Blissey|92\/714
+|move|p2a: Blissey|Seismic Toss|p1a: Heatran
+|-damage|p1a: Heatran|285\/385
+|
+|-heal|p2a: Blissey|449\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Heatran|309\/385|[from] item: Leftovers
+|turn|116
+|callback|decision
+|
+|move|p1a: Heatran|Lava Plume|p2a: Blissey
+|-damage|p2a: Blissey|362\/714
+|-status|p2a: Blissey|brn
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p1a: Heatran|333\/385|[from] item: Leftovers
+|-damage|p2a: Blissey|273\/714 brn|[from] brn
+|turn|117
+|callback|decision
+|
+|switch|p2a: Porygon2|Porygon2|72\/374
+|-damage|p2a: Porygon2|26\/374|[from] Stealth Rock
+|-ability|p2a: Porygon2|Flash Fire|[from] ability: Trace|[of] p1a: Heatran
+|move|p1a: Heatran|Ancient Power|p2a: Porygon2
+|-damage|p2a: Porygon2|0 fnt
+|faint|p2a: Porygon2
+|
+|-heal|p1a: Heatran|357\/385|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Blissey|Blissey, F|273\/714
+|-damage|p2a: Blissey|184\/714|[from] Stealth Rock
+|turn|118
+|callback|decision
+|
+|move|p1a: Heatran|Ancient Power|p2a: Blissey
+|-damage|p2a: Blissey|139\/714
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p1a: Heatran|381\/385|[from] item: Leftovers
+|turn|119
+|callback|decision
+|
+|move|p1a: Heatran|Ancient Power|p2a: Blissey
+|-damage|p2a: Blissey|91\/714
+|move|p2a: Blissey|Seismic Toss|p1a: Heatran
+|-damage|p1a: Heatran|281\/385
+|
+|-heal|p2a: Blissey|448\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Heatran|305\/385|[from] item: Leftovers
+|turn|120
+|callback|decision
+|
+|move|p1a: Heatran|Ancient Power|p2a: Blissey
+|-damage|p2a: Blissey|399\/714
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p1a: Heatran|329\/385|[from] item: Leftovers
+|turn|121
+|callback|decision
+|
+|move|p1a: Heatran|Ancient Power|p2a: Blissey
+|-crit|p2a: Blissey
+|-damage|p2a: Blissey|327\/714
+|move|p2a: Blissey|Seismic Toss|p1a: Heatran
+|-damage|p1a: Heatran|229\/385
+|
+|-heal|p2a: Blissey|684\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Heatran|253\/385|[from] item: Leftovers
+|turn|122
+|callback|decision
+|
+|move|p1a: Heatran|Ancient Power|p2a: Blissey
+|-damage|p2a: Blissey|640\/714
+|move|p2a: Blissey|Seismic Toss|p1a: Heatran
+|-damage|p1a: Heatran|153\/385
+|
+|-heal|p1a: Heatran|177\/385|[from] item: Leftovers
+|turn|123
+|callback|decision
+|
+|move|p1a: Heatran|Ancient Power|p2a: Blissey
+|-damage|p2a: Blissey|591\/714
+|move|p2a: Blissey|Seismic Toss|p1a: Heatran
+|-damage|p1a: Heatran|77\/385
+|
+|-heal|p1a: Heatran|101\/385|[from] item: Leftovers
+|turn|124
+|callback|decision
+|
+|switch|p1a: Chansey|Chansey, F|616\/704
+|move|p2a: Blissey|Seismic Toss|p1a: Chansey
+|-damage|p1a: Chansey|516\/704
+|
+|turn|125
+|callback|decision
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Chansey
+|-damage|p1a: Chansey|416\/704
+|move|p1a: Chansey|Toxic|p2a: Blissey
+|-status|p2a: Blissey|tox
+|
+|-damage|p2a: Blissey|547\/714 tox|[from] psn
+|turn|126
+|callback|decision
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Chansey
+|-damage|p1a: Chansey|316\/704
+|move|p1a: Chansey|Soft-Boiled|p1a: Chansey
+|-heal|p1a: Chansey|668\/704
+|
+|-damage|p2a: Blissey|459\/714 tox|[from] psn
+|turn|127
+|callback|decision
+|chat|Zedseayou|still got heal bell pp?
+|
+|move|p2a: Blissey|Wish|p2a: Blissey
+|move|p1a: Chansey|Wish|p1a: Chansey
+|
+|-damage|p2a: Blissey|327\/714 tox|[from] psn
+|turn|128
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|101\/385
+|move|p2a: Blissey|Heal Bell|p2a: Blissey
+|-cureteam|p2a: Blissey|[from] move: HealBell
+|
+|-heal|p2a: Blissey|684\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Heatran|385\/385|[from] move: Wish|[wisher] Chansey
+|turn|129
+|callback|decision
+|chat|Flesh Cannon|Yep
+|
+|move|p1a: Heatran|Lava Plume|p2a: Blissey
+|-crit|p2a: Blissey
+|-damage|p2a: Blissey|555\/714
+|-status|p2a: Blissey|brn
+|move|p2a: Blissey|Seismic Toss|p1a: Heatran
+|-damage|p1a: Heatran|285\/385
+|
+|-heal|p1a: Heatran|309\/385|[from] item: Leftovers
+|-damage|p2a: Blissey|466\/714 brn|[from] brn
+|turn|130
+|callback|decision
+|chat|Flesh Cannon|Oh, ty
+|chat|Flesh Cannon|Burn isn't as bad as toxoc
+|chat|Flesh Cannon|*toxic
+|
+|move|p1a: Heatran|Lava Plume|p2a: Blissey
+|-damage|p2a: Blissey|370\/714 brn
+|move|p2a: Blissey|Seismic Toss|p1a: Heatran
+|-damage|p1a: Heatran|209\/385
+|
+|-heal|p1a: Heatran|233\/385|[from] item: Leftovers
+|-damage|p2a: Blissey|281\/714 brn|[from] brn
+|turn|131
+|callback|decision
+|chat|Zedseayou|lol i have no toxics left
+|
+|move|p1a: Heatran|Lava Plume|p2a: Blissey
+|-damage|p2a: Blissey|197\/714 brn
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p1a: Heatran|257\/385|[from] item: Leftovers
+|-damage|p2a: Blissey|108\/714 brn|[from] brn
+|turn|132
+|callback|decision
+|
+|move|p1a: Heatran|Lava Plume|p2a: Blissey
+|-damage|p2a: Blissey|15\/714 brn
+|move|p2a: Blissey|Heal Bell|p2a: Blissey
+|-cureteam|p2a: Blissey|[from] move: HealBell
+|
+|-heal|p2a: Blissey|372\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Heatran|281\/385|[from] item: Leftovers
+|turn|133
+|callback|decision
+|
+|move|p1a: Heatran|Lava Plume|p2a: Blissey
+|-damage|p2a: Blissey|285\/714
+|move|p2a: Blissey|Seismic Toss|p1a: Heatran
+|-damage|p1a: Heatran|181\/385
+|
+|-heal|p1a: Heatran|205\/385|[from] item: Leftovers
+|turn|134
+|callback|decision
+|
+|move|p1a: Heatran|Lava Plume|p2a: Blissey
+|-damage|p2a: Blissey|186\/714
+|move|p2a: Blissey|Seismic Toss|p1a: Heatran
+|-damage|p1a: Heatran|105\/385
+|
+|-heal|p1a: Heatran|129\/385|[from] item: Leftovers
+|turn|135
+|callback|decision
+|
+|move|p1a: Heatran|Lava Plume|p2a: Blissey
+|-damage|p2a: Blissey|89\/714
+|move|p2a: Blissey|Seismic Toss|p1a: Heatran
+|-damage|p1a: Heatran|29\/385
+|
+|-heal|p1a: Heatran|53\/385|[from] item: Leftovers
+|turn|136
+|callback|decision
+|
+|move|p1a: Heatran|Lava Plume|p2a: Blissey
+|-damage|p2a: Blissey|0 fnt
+|faint|p2a: Blissey
+|
+|win|Zedseayou
+|raw|Ladder updating...
+|chat|Flesh Cannon|gg

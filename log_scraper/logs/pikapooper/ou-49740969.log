@@ -1,0 +1,285 @@
+|join|pikapooper
+|join|pcm
+|player|p1|pikapooper|29
+|player|p2|pcm|265
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Salamence, M
+|poke|p1|Conkeldurr, M
+|poke|p1|Volcarona, F
+|poke|p1|Donphan, M
+|poke|p1|Thundurus-Therian, M
+|poke|p1|Rotom-Wash
+|poke|p2|Scizor, F
+|poke|p2|Garchomp, M, shiny
+|poke|p2|Breloom, F
+|poke|p2|Dragonite, M
+|poke|p2|Kingdra, M
+|poke|p2|Starmie
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Volcarona|Volcarona, F|311\/311
+|switch|p2a: Breloom|Breloom, F|262\/262
+|turn|1
+|callback|decision
+|
+|move|p1a: Volcarona|Fiery Dance|p2a: Breloom
+|-supereffective|p2a: Breloom
+|-enditem|p2a: Breloom|Focus Sash
+|-damage|p2a: Breloom|1\/262
+|move|p2a: Breloom|Spore|p1a: Volcarona
+|-status|p1a: Volcarona|slp
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Salamence|Salamence, M|331\/331
+|switch|p2a: Starmie|Starmie|261\/261
+|
+|turn|3
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|289\/289
+|move|p2a: Starmie|Ice Beam|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|238\/289
+|-damage|p2a: Starmie|235\/261|[from] item: Life Orb
+|
+|-heal|p1a: Rotom-Wash|256\/289|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p2a: Breloom|Breloom, F|1\/262
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Breloom
+|-status|p2a: Breloom|brn
+|
+|-heal|p1a: Rotom-Wash|274\/289|[from] item: Leftovers
+|-damage|p2a: Breloom|0 fnt|[from] brn
+|faint|p2a: Breloom
+|callback|decision
+|
+|switch|p2a: Starmie|Starmie|235\/261
+|turn|5
+|callback|decision
+|
+|move|p2a: Starmie|Psyshock|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|114\/289
+|-damage|p2a: Starmie|209\/261|[from] item: Life Orb
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Starmie
+|-status|p2a: Starmie|brn
+|
+|-heal|p1a: Rotom-Wash|132\/289|[from] item: Leftovers
+|-damage|p2a: Starmie|177\/261 brn|[from] brn
+|turn|6
+|callback|decision
+|
+|switch|p1a: Volcarona|Volcarona, F|311\/311 slp
+|move|p2a: Starmie|Psyshock|p1a: Volcarona
+|-crit|p1a: Volcarona
+|-damage|p1a: Volcarona|0 fnt
+|-damage|p2a: Starmie|151\/261 brn|[from] item: Life Orb
+|faint|p1a: Volcarona
+|
+|-damage|p2a: Starmie|119\/261 brn|[from] brn
+|callback|decision
+|
+|switch|p1a: Salamence|Salamence, M|331\/331
+|turn|7
+|callback|decision
+|
+|move|p1a: Salamence|Dragon Claw|p2a: Starmie
+|-damage|p2a: Starmie|0 fnt
+|faint|p2a: Starmie
+|-boost|p1a: Salamence|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, F|282\/282
+|turn|8
+|callback|decision
+|
+|switch|p1a: Conkeldurr|Conkeldurr, M|380\/380
+|move|p2a: Scizor|Bug Bite|p1a: Conkeldurr
+|-resisted|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|271\/380
+|-damage|p2a: Scizor|254\/282|[from] item: Life Orb
+|
+|-heal|p1a: Conkeldurr|294\/380|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p2a: Scizor|Swords Dance|p2a: Scizor
+|-boost|p2a: Scizor|atk|2
+|move|p1a: Conkeldurr|Bulk Up|p1a: Conkeldurr
+|-boost|p1a: Conkeldurr|atk|1
+|-boost|p1a: Conkeldurr|def|1
+|
+|-heal|p1a: Conkeldurr|317\/380|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|136\/380
+|-damage|p2a: Scizor|226\/282|[from] item: Life Orb
+|move|p1a: Conkeldurr|Bulk Up|p1a: Conkeldurr
+|-boost|p1a: Conkeldurr|atk|1
+|-boost|p1a: Conkeldurr|def|1
+|
+|-heal|p1a: Conkeldurr|159\/380|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p2a: Scizor|Superpower|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|0 fnt
+|-unboost|p2a: Scizor|atk|1
+|-unboost|p2a: Scizor|def|1
+|-damage|p2a: Scizor|198\/282|[from] item: Life Orb
+|faint|p1a: Conkeldurr
+|
+|callback|decision
+|
+|switch|p1a: Salamence|Salamence, M|331\/331
+|turn|12
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Salamence
+|-damage|p1a: Salamence|35\/331
+|-damage|p2a: Scizor|170\/282|[from] item: Life Orb
+|move|p1a: Salamence|Flamethrower|p2a: Scizor
+|-supereffective|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|faint|p2a: Scizor
+|-boost|p1a: Salamence|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|switch|p2a: Kingdra|Kingdra, M|291\/291
+|turn|13
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|132\/289
+|move|p2a: Kingdra|Rain Dance|p2a: Kingdra
+|-weather|RainDance
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Rotom-Wash|150\/289|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p2a: Kingdra|Draco Meteor|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|-unboost|p2a: Kingdra|spa|2
+|-damage|p2a: Kingdra|262\/291|[from] item: Life Orb
+|faint|p1a: Rotom-Wash
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Thundurus-Therian|Thundurus-Therian, M|299\/299
+|turn|15
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, M, shiny|376\/376
+|move|p1a: Thundurus-Therian|Thunderbolt|p2a: Garchomp
+|-immune|p2a: Garchomp|[msg]
+|
+|-weather|RainDance|[upkeep]
+|turn|16
+|callback|decision
+|
+|switch|p1a: Donphan|Donphan, M|384\/384
+|move|p2a: Garchomp|Outrage|p1a: Donphan
+|-damage|p1a: Donphan|239\/384
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Donphan|263\/384|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Donphan|Ice Shard|p2a: Garchomp
+|-supereffective|p2a: Garchomp
+|-damage|p2a: Garchomp|216\/376
+|move|p2a: Garchomp|Outrage|p1a: Donphan
+|-damage|p1a: Donphan|115\/384
+|
+|-weather|none
+|-heal|p1a: Donphan|139\/384|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p1a: Donphan|Ice Shard|p2a: Garchomp
+|-supereffective|p2a: Garchomp
+|-damage|p2a: Garchomp|60\/376
+|move|p2a: Garchomp|Outrage|p1a: Donphan
+|-damage|p1a: Donphan|0 fnt
+|faint|p1a: Donphan
+|
+|-end|p2a: Garchomp|rampage
+|-start|p2a: Garchomp|confusion
+|callback|decision
+|
+|switch|p1a: Salamence|Salamence, M|35\/331
+|turn|19
+|callback|decision
+|
+|move|p1a: Salamence|Dragon Claw|p2a: Garchomp
+|-supereffective|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|-damage|p1a: Salamence|0 fnt|[from] ability: Rough Skin|[of] p2a: Garchomp
+|faint|p2a: Garchomp
+|faint|p1a: Salamence
+|
+|callback|decision
+|
+|switch|p1a: Thundurus-Therian|Thundurus-Therian, M|299\/299
+|switch|p2a: Dragonite|Dragonite, M|324\/324
+|turn|20
+|callback|decision
+|
+|move|p1a: Thundurus-Therian|Thunderbolt|p2a: Dragonite
+|-damage|p2a: Dragonite|222\/324
+|move|p2a: Dragonite|Dragon Dance|p2a: Dragonite
+|-boost|p2a: Dragonite|atk|1
+|-boost|p2a: Dragonite|spe|1
+|
+|turn|21
+|callback|decision
+|
+|move|p2a: Dragonite|Outrage|p1a: Thundurus-Therian
+|-enditem|p1a: Thundurus-Therian|Focus Sash
+|-damage|p1a: Thundurus-Therian|1\/299
+|move|p1a: Thundurus-Therian|Hidden Power|p2a: Dragonite
+|-supereffective|p2a: Dragonite
+|-damage|p2a: Dragonite|0 fnt
+|faint|p2a: Dragonite
+|
+|callback|decision
+|
+|switch|p2a: Kingdra|Kingdra, M|262\/291
+|turn|22
+|callback|decision
+|
+|move|p1a: Thundurus-Therian|Thunderbolt|p2a: Kingdra
+|-damage|p2a: Kingdra|34\/291
+|move|p2a: Kingdra|Dragon Pulse|p1a: Thundurus-Therian
+|-damage|p1a: Thundurus-Therian|0 fnt
+|-damage|p2a: Kingdra|5\/291|[from] item: Life Orb
+|faint|p1a: Thundurus-Therian
+|
+|win|pcm
+|raw|Ladder updating...
+|raw|pikapooper's rating: 1650 &rarr; <strong>1647<\/strong><br \/>(-3 for losing)
+|raw|pcm's rating: 1281 &rarr; <strong>1497<\/strong><br \/>(+216 for winning)
+|leave|pikapooper
+|player|p1

@@ -1,0 +1,190 @@
+|join|davidVC
+|join|DreamScream
+|player|p1|davidVC|169
+|player|p2|DreamScream|169
+|gametype|singles
+|tier|OU (beta)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Dragonite, F
+|poke|p1|Excadrill, F
+|poke|p1|Venusaur, M
+|poke|p1|Blastoise, M
+|poke|p1|Charizard, F
+|poke|p1|Druddigon, F
+|poke|p2|Greninja, F
+|poke|p2|Goodra, F
+|poke|p2|Carbink
+|poke|p2|Aegislash, F
+|poke|p2|Delphox, M
+|poke|p2|Vivillon, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Excadrill|Excadrill, F|362\/362
+|switch|p2a: Vivillon|Vivillon, M|302\/302
+|turn|1
+|callback|decision
+|
+|move|p2a: Vivillon|Sleep Powder|p1a: Excadrill
+|-status|p1a: Excadrill|slp
+|cant|p1a: Excadrill|slp
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Charizard|Charizard, F|298\/298
+|move|p2a: Vivillon|Quiver Dance|p2a: Vivillon
+|-boost|p2a: Vivillon|spa|1
+|-boost|p2a: Vivillon|spd|1
+|-boost|p2a: Vivillon|spe|1
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Vivillon|Hurricane|p1a: Charizard
+|-damage|p1a: Charizard|0 fnt
+|faint|p1a: Charizard
+|
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, F|386\/386
+|turn|4
+|callback|decision
+|
+|move|p2a: Vivillon|Hurricane|p1a: Dragonite|[miss]
+|-miss|p2a: Vivillon|p1a: Dragonite
+|move|p1a: Dragonite|Outrage|p2a: Vivillon
+|-damage|p2a: Vivillon|0 fnt
+|faint|p2a: Vivillon
+|
+|callback|decision
+|
+|switch|p2a: Aegislash|Aegislash, F|324\/324
+|turn|5
+|callback|decision
+|
+|move|p2a: Aegislash|King's Shield|p2a: Aegislash
+|-singleturn|p2a: Aegislash|King's Shield
+|move|p1a: Dragonite|Outrage|p2a: Aegislash
+|-activate|p2a: Aegislash|King's Shield
+|-unboost|p1a: Dragonite|atk|2
+|
+|-end|p1a: Dragonite|rampage
+|-start|p1a: Dragonite|confusion
+|turn|6
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M|362\/362
+|move|p2a: Aegislash|Swords Dance|p2a: Aegislash
+|-boost|p2a: Aegislash|atk|2
+|
+|turn|7
+|callback|decision
+|
+|move|p1a: Blastoise|Hydro Pump|p2a: Aegislash|[miss]
+|-miss|p1a: Blastoise|p2a: Aegislash
+|move|p2a: Aegislash|Swords Dance|p2a: Aegislash
+|-boost|p2a: Aegislash|atk|2
+|
+|turn|8
+|callback|decision
+|
+|move|p1a: Blastoise|Toxic|p2a: Aegislash|[miss]
+|-miss|p1a: Blastoise|p2a: Aegislash
+|move|p2a: Aegislash|Swords Dance|p2a: Aegislash
+|-boost|p2a: Aegislash|atk|2
+|
+|turn|9
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, F|386\/386
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Shadow Sneak|p1a: Dragonite
+|-damage|p1a: Dragonite|0 fnt
+|faint|p1a: Dragonite
+|
+|callback|decision
+|
+|switch|p1a: Excadrill|Excadrill, F|362\/362 slp
+|turn|10
+|callback|decision
+|
+|cant|p1a: Excadrill|slp
+|move|p2a: Aegislash|Sacred Sword|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-damage|p1a: Excadrill|0 fnt
+|faint|p1a: Excadrill
+|
+|callback|decision
+|
+|switch|p1a: Druddigon|Druddigon, F|358\/358
+|turn|11
+|callback|decision
+|
+|move|p2a: Aegislash|Shadow Sneak|p1a: Druddigon
+|-damage|p1a: Druddigon|1\/358
+|-damage|p2a: Aegislash|284\/324|[from] ability: Rough Skin|[of] p1a: Druddigon
+|move|p1a: Druddigon|Outrage|p2a: Aegislash
+|-resisted|p2a: Aegislash
+|-damage|p2a: Aegislash|86\/324
+|
+|-heal|p2a: Aegislash|106\/324|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: Aegislash|Shadow Sneak|p1a: Druddigon
+|-damage|p1a: Druddigon|0 fnt
+|-damage|p2a: Aegislash|66\/324|[from] ability: Rough Skin|[of] p1a: Druddigon
+|faint|p1a: Druddigon
+|
+|-heal|p2a: Aegislash|86\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Venusaur|Venusaur, M|302\/302
+|turn|13
+|callback|decision
+|
+|move|p2a: Aegislash|Shadow Sneak|p1a: Venusaur
+|-damage|p1a: Venusaur|0 fnt
+|faint|p1a: Venusaur
+|
+|-heal|p2a: Aegislash|106\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M|362\/362
+|turn|14
+|callback|decision
+|
+|move|p2a: Aegislash|Shadow Sneak|p1a: Blastoise
+|-damage|p1a: Blastoise|94\/362
+|move|p1a: Blastoise|Hydro Pump|p2a: Aegislash
+|-damage|p2a: Aegislash|0 fnt
+|faint|p2a: Aegislash
+|
+|callback|decision
+|
+|switch|p2a: Goodra|Goodra, F|384\/384
+|turn|15
+|callback|decision
+|
+|move|p2a: Goodra|Draco Meteor|p1a: Blastoise
+|-crit|p1a: Blastoise
+|-damage|p1a: Blastoise|0 fnt
+|-unboost|p2a: Goodra|spa|2
+|faint|p1a: Blastoise
+|
+|win|DreamScream
+|raw|Ladder updating...
+|raw|davidVC's rating: 1037 &rarr; <strong>1034<\/strong><br \/>(-3 for losing)
+|raw|DreamScream's rating: 1388 &rarr; <strong>1395<\/strong><br \/>(+7 for winning)
+|leave|DreamScream
+|player|p2

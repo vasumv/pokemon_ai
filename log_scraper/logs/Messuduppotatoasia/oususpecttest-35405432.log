@@ -1,0 +1,186 @@
+|join|Gonyek
+|join|Messuduppotatoasia
+|player|p1|Gonyek|101
+|player|p2|Messuduppotatoasia|7
+|gametype|singles
+|tier|OU (suspect test)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Jirachi
+|poke|p1|Garchomp, M
+|poke|p1|Smeargle, F
+|poke|p1|Alakazam, F
+|poke|p1|Jellicent, F
+|poke|p1|Latios, M
+|poke|p2|Aerodactyl, F
+|poke|p2|Magnezone
+|poke|p2|Hydreigon, M
+|poke|p2|Terrakion
+|poke|p2|Scizor, M
+|poke|p2|Latias, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Jirachi|Jirachi|341\/341
+|switch|p2a: Aerodactyl|Aerodactyl, F|301\/301
+|-ability|p2a: Aerodactyl|Unnerve|p1: Gonyek
+|turn|1
+|callback|decision
+|
+|move|p2a: Aerodactyl|Taunt|p1a: Jirachi
+|-start|p1a: Jirachi|move: Taunt
+|move|p1a: Jirachi|Iron Head|p2a: Aerodactyl
+|-supereffective|p2a: Aerodactyl
+|-enditem|p2a: Aerodactyl|Focus Sash
+|-damage|p2a: Aerodactyl|1\/301
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Aerodactyl|Stealth Rock|p1a: Jirachi
+|-sidestart|p1: Gonyek|move: Stealth Rock
+|move|p1a: Jirachi|Iron Head|p2a: Aerodactyl
+|-supereffective|p2a: Aerodactyl
+|-damage|p2a: Aerodactyl|0 fnt
+|faint|p2a: Aerodactyl
+|
+|callback|decision
+|
+|switch|p2a: Magnezone|Magnezone|318\/318
+|turn|3
+|callback|decision
+|
+|move|p1a: Jirachi|Hidden Power|p2a: Magnezone
+|-crit|p2a: Magnezone
+|-supereffective|p2a: Magnezone
+|-damage|p2a: Magnezone|0 fnt
+|faint|p2a: Magnezone
+|
+|-end|p1a: Jirachi|move: Taunt
+|callback|decision
+|
+|switch|p2a: Hydreigon|Hydreigon, M|325\/325
+|turn|4
+|callback|decision
+|
+|move|p1a: Jirachi|Iron Head|p2a: Hydreigon
+|-damage|p2a: Hydreigon|187\/325
+|cant|p2a: Hydreigon|flinch
+|
+|turn|5
+|callback|decision
+|
+|move|p1a: Jirachi|Ice Punch|p2a: Hydreigon
+|-supereffective|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|faint|p2a: Hydreigon
+|
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|343\/343
+|turn|6
+|callback|decision
+|
+|move|p1a: Jirachi|Hidden Power|p2a: Scizor
+|-supereffective|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|faint|p2a: Scizor
+|
+|callback|decision
+|
+|switch|p2a: Terrakion|Terrakion|323\/323
+|turn|7
+|callback|decision
+|
+|move|p2a: Terrakion|Close Combat|p1a: Jirachi
+|-damage|p1a: Jirachi|127\/341
+|-unboost|p2a: Terrakion|def|1
+|-unboost|p2a: Terrakion|spd|1
+|move|p1a: Jirachi|Iron Head|p2a: Terrakion
+|-supereffective|p2a: Terrakion
+|-damage|p2a: Terrakion|0 fnt
+|faint|p2a: Terrakion
+|
+|callback|decision
+|
+|switch|p2a: Latias|Latias, F|364\/364
+|turn|8
+|callback|decision
+|
+|move|p2a: Latias|Calm Mind|p2a: Latias
+|-boost|p2a: Latias|spa|1
+|-boost|p2a: Latias|spd|1
+|move|p1a: Jirachi|Ice Punch|p2a: Latias
+|-crit|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|24\/364
+|
+|-heal|p2a: Latias|46\/364|[from] item: Leftovers
+|turn|9
+|callback|decision
+|chat|Gonyek|jirachi..
+|
+|move|p2a: Latias|Roost|p2a: Latias
+|-heal|p2a: Latias|228\/364
+|move|p1a: Jirachi|Ice Punch|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|54\/364
+|
+|-heal|p2a: Latias|76\/364|[from] item: Leftovers
+|turn|10
+|callback|decision
+|chat|Messuduppotatoasia|maybe it's just called getting crits all the time
+|
+|move|p2a: Latias|Roost|p2a: Latias
+|-heal|p2a: Latias|258\/364
+|move|p1a: Jirachi|Ice Punch|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|94\/364
+|
+|-heal|p2a: Latias|116\/364|[from] item: Leftovers
+|turn|11
+|callback|decision
+|chat|Gonyek|*shrug*
+|
+|move|p2a: Latias|Roost|p2a: Latias
+|-heal|p2a: Latias|298\/364
+|move|p1a: Jirachi|Ice Punch|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|130\/364
+|
+|-heal|p2a: Latias|152\/364|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: Latias|Roost|p2a: Latias
+|-heal|p2a: Latias|334\/364
+|move|p1a: Jirachi|Ice Punch|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|160\/364
+|
+|-heal|p2a: Latias|182\/364|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: Latias|Calm Mind|p2a: Latias
+|-boost|p2a: Latias|spa|1
+|-boost|p2a: Latias|spd|1
+|move|p1a: Jirachi|Ice Punch|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|0 fnt
+|faint|p2a: Latias
+|
+|win|Gonyek
+|raw|Ladder updating...
+|raw|Gonyek's rating: 1973 &rarr; <strong>1984<\/strong><br \/>(+11 for winning)
+|raw|Messuduppotatoasia's rating: 1848 &rarr; <strong>1825<\/strong><br \/>(-23 for losing)
+|leave|Messuduppotatoasia
+|player|p2

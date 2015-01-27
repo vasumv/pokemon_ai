@@ -1,0 +1,229 @@
+|join|tsukasa7
+|join|Yu-gi-oh
+|player|p1|tsukasa7|1
+|player|p2|Yu-gi-oh|264
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Tornadus, M
+|poke|p1|Dragonite, F
+|poke|p1|Magnezone
+|poke|p1|Garchomp, M
+|poke|p1|Starmie
+|poke|p1|Jirachi, shiny
+|poke|p2|Landorus, M
+|poke|p2|Tyranitar, M
+|poke|p2|Breloom, M
+|poke|p2|Ferrothorn, M
+|poke|p2|Hydreigon, F
+|poke|p2|Gengar, F
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Jirachi|Jirachi, shiny| (48\/48)
+|switch|p2a: Tyranitar|Tyranitar, M| (48\/48)
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Tyranitar
+|turn|1
+|callback|decision
+|
+|move|p1a: Jirachi|Iron Head|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|41 (28\/48)
+|move|p2a: Tyranitar|Stealth Rock|p1a: Jirachi
+|-sidestart|p1: tsukasa7|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Tyranitar|6 (31\/48)|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|move|p1a: Jirachi|U-turn|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|22 (20\/48)
+|callback|decision
+|
+|switch|p1a: Magnezone|Magnezone| (48\/48)
+|-damage|p1a: Magnezone|6 (45\/48)|[from] Stealth Rock
+|move|p2a: Tyranitar|Crunch|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-damage|p1a: Magnezone|18 (36\/48)
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Tyranitar|6 (23\/48)|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M| (48\/48)
+|move|p1a: Magnezone|Flash Cannon|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|18 (39\/48)
+|-unboost|p2a: Ferrothorn|spd|1
+|
+|-weather|Sandstorm|[upkeep]
+|turn|4
+|callback|decision
+|
+|switch|p1a: Jirachi|Jirachi, shiny| (48\/48)
+|-damage|p1a: Jirachi|6 (45\/48)|[from] Stealth Rock
+|move|p2a: Ferrothorn|Leech Seed|p1a: Jirachi
+|-start|p1a: Jirachi|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Jirachi|6 (48\/48)|[from] item: Leftovers
+|-damage|p1a: Jirachi|12 (42\/48)|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|14 (46\/48)|[silent]
+|turn|5
+|callback|decision
+|
+|switch|p1a: Magnezone|Magnezone| (36\/48)
+|-damage|p1a: Magnezone|6 (33\/48)|[from] Stealth Rock
+|move|p2a: Ferrothorn|Thunder Wave|p1a: Magnezone
+|-status|p1a: Magnezone|par
+|
+|-weather|Sandstorm|[upkeep]
+|turn|6
+|callback|decision
+|
+|move|p1a: Magnezone|Hidden Power|p2a: Ferrothorn
+|-enditem|p2a: Ferrothorn|Occa Berry|[eat]
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|64 (15\/48)
+|move|p2a: Ferrothorn|Spikes|p1a: Magnezone
+|-sidestart|p1: tsukasa7|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|turn|7
+|callback|decision
+|
+|move|p1a: Magnezone|Hidden Power|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|31 (0\/48 fnt)
+|faint|p2a: Ferrothorn
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Breloom|Breloom, M| (48\/48)
+|turn|8
+|callback|decision
+|
+|move|p2a: Breloom|Swords Dance|p2a: Breloom
+|-boost|p2a: Breloom|atk|2
+|move|p1a: Magnezone|Hidden Power|p2a: Breloom
+|-supereffective|p2a: Breloom
+|-damage|p2a: Breloom|95 (2\/48)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Breloom|4 (0\/48 fnt)|[from] sandstorm
+|faint|p2a: Breloom
+|callback|decision
+|
+|switch|p2a: Landorus|Landorus, M| (48\/48)
+|turn|9
+|callback|decision
+|
+|move|p2a: Landorus|Rock Polish|p2a: Landorus
+|-boost|p2a: Landorus|spe|2
+|cant|p1a: Magnezone|par
+|
+|-weather|Sandstorm|[upkeep]
+|turn|10
+|callback|decision
+|
+|move|p2a: Landorus|Earth Power|p1a: Magnezone
+|-supereffective|p1a: Magnezone
+|-damage|p1a: Magnezone|68 (0\/48 fnt)
+|faint|p1a: Magnezone
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, M| (48\/48)
+|-damage|p1a: Garchomp|6 (45\/48)|[from] Stealth Rock
+|-damage|p1a: Garchomp|12 (39\/48)|[from] Spikes
+|turn|11
+|callback|decision
+|
+|move|p2a: Landorus|Hidden Power|p1a: Garchomp
+|-supereffective|p1a: Garchomp
+|-damage|p1a: Garchomp|81 (0\/48 fnt)
+|-damage|p2a: Landorus|10 (43\/48)|[from] item: Life Orb
+|faint|p1a: Garchomp
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Tornadus|Tornadus, M| (48\/48)
+|-damage|p1a: Tornadus|25 (36\/48)|[from] Stealth Rock
+|turn|12
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie| (48\/48)
+|-damage|p1a: Starmie|12 (42\/48)|[from] Stealth Rock
+|-damage|p1a: Starmie|12 (36\/48)|[from] Spikes
+|move|p2a: Landorus|Hidden Power|p1a: Starmie
+|-resisted|p1a: Starmie
+|-damage|p1a: Starmie|22 (25\/48)
+|-damage|p2a: Landorus|10 (38\/48)|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Starmie|6 (22\/48)|[from] sandstorm
+|turn|13
+|callback|decision
+|
+|switch|p1a: Jirachi|Jirachi, shiny| (42\/48)
+|-damage|p1a: Jirachi|6 (39\/48)|[from] Stealth Rock
+|-damage|p1a: Jirachi|12 (33\/48)|[from] Spikes
+|move|p2a: Landorus|Earth Power|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|68 (0\/48 fnt)
+|faint|p1a: Jirachi
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Tornadus|Tornadus, M| (36\/48)
+|-damage|p1a: Tornadus|25 (24\/48)|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie| (22\/48)
+|-damage|p1a: Starmie|12 (16\/48)|[from] Stealth Rock
+|-damage|p1a: Starmie|12 (10\/48)|[from] Spikes
+|move|p2a: Landorus|Psychic|p1a: Starmie
+|-resisted|p1a: Starmie
+|-damage|p1a: Starmie|20 (0\/48 fnt)
+|faint|p1a: Starmie
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, F| (48\/48)
+|-damage|p1a: Dragonite|25 (36\/48)|[from] Stealth Rock
+|turn|15
+|callback|decision
+|
+|move|p1a: Dragonite|ExtremeSpeed|p2a: Landorus
+|-damage|p2a: Landorus|37 (20\/48)
+|move|p2a: Landorus|Hidden Power|p1a: Dragonite
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|75 (0\/48 fnt)
+|-damage|p2a: Landorus|10 (15\/48)|[from] item: Life Orb
+|faint|p1a: Dragonite
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|-message|tsukasa7 forfeited.
+|
+|win|Yu-gi-oh
+|raw|Ladder updating...
+|leave|tsukasa7
+|player|p1

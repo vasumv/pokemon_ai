@@ -1,0 +1,378 @@
+|join|Dumb bass
+|join|LOLegendaries
+|player|p1|Dumb bass|23
+|player|p2|LOLegendaries|290
+|gametype|singles
+|gen|6
+|tier|OU
+|clearpoke
+|poke|p1|Thundurus-Therian, M
+|poke|p1|Cacturne, F
+|poke|p1|Victini
+|poke|p1|Landorus-Therian, M
+|poke|p1|Venusaur, M
+|poke|p1|Scizor, F
+|poke|p2|Rotom-Wash
+|poke|p2|Garchomp, F
+|poke|p2|Tyranitar, F
+|poke|p2|Venusaur, M
+|poke|p2|Chansey, F
+|poke|p2|Scizor, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Victini|Victini|341\/341
+|switch|p2a: Rotom-Wash|Rotom-Wash|242\/242
+|turn|1
+|
+|move|p1a: Victini|U-turn|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|173\/242
+|
+|switch|p1a: Venusaur|Venusaur, M|361\/361
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|305\/361
+|
+|-heal|p2a: Rotom-Wash|188\/242|[from] item: Leftovers
+|turn|2
+|
+|detailschange|p1a: Venusaur|Venusaur-Mega, M
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|272\/361
+|
+|switch|p2a: Scizor|Scizor, F|344\/344
+|move|p1a: Venusaur|Sludge Bomb|p2a: Scizor
+|-immune|p2a: Scizor|[msg]
+|
+|turn|3
+|
+|move|p1a: Venusaur|Leech Seed|p2a: Scizor|[miss]
+|-miss|p1a: Venusaur|p2a: Scizor
+|move|p2a: Scizor|Swords Dance|p2a: Scizor
+|-boost|p2a: Scizor|atk|2
+|
+|turn|4
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|379\/379
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Scizor
+|-unboost|p2a: Scizor|atk|1
+|move|p2a: Scizor|Swords Dance|p2a: Scizor
+|-boost|p2a: Scizor|atk|2
+|
+|turn|5
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|93\/379
+|-damage|p2a: Scizor|310\/344|[from] item: Life Orb
+|move|p1a: Landorus-Therian|Earthquake|p2a: Scizor
+|-damage|p2a: Scizor|138\/344
+|
+|turn|6
+|
+|switch|p1a: Scizor|Scizor, F|330\/330
+|move|p2a: Scizor|Swords Dance|p2a: Scizor
+|-boost|p2a: Scizor|atk|2
+|
+|turn|7
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|93\/379
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Scizor
+|-unboost|p2a: Scizor|atk|1
+|move|p2a: Scizor|Bullet Punch|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|-damage|p2a: Scizor|104\/344|[from] item: Life Orb
+|faint|p1a: Landorus-Therian
+|
+|
+|switch|p1a: Victini|Victini|341\/341
+|turn|8
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Victini
+|-resisted|p1a: Victini
+|-damage|p1a: Victini|129\/341
+|-damage|p2a: Scizor|70\/344|[from] item: Life Orb
+|move|p1a: Victini|V-create|p2a: Scizor
+|-supereffective|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|faint|p2a: Scizor
+|
+|
+|switch|p2a: Tyranitar|Tyranitar, F|404\/404
+|-weather|Sandstorm
+|turn|9
+|
+|switch|p1a: Scizor|Scizor, F|330\/330
+|move|p2a: Tyranitar|Stone Edge|p1a: Scizor
+|-damage|p1a: Scizor|150\/330
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Scizor|170\/330|[from] item: Leftovers
+|turn|10
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|188\/242
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|330\/330
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Rotom-Wash|173\/242|[from] sandstorm
+|-heal|p2a: Rotom-Wash|188\/242|[from] item: Leftovers
+|turn|11
+|
+|switch|p1a: Venusaur|Venusaur-Mega, M|272\/361
+|move|p2a: Rotom-Wash|Hidden Power|p1a: Venusaur
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|234\/361
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Rotom-Wash|173\/242|[from] sandstorm
+|-damage|p1a: Venusaur|212\/361|[from] sandstorm
+|-heal|p2a: Rotom-Wash|188\/242|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|179\/361
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|move|p1a: Venusaur|Sludge Bomb|p2a: Chansey
+|-damage|p2a: Chansey|628\/704
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Venusaur|157\/361|[from] sandstorm
+|-damage|p2a: Chansey|584\/704|[from] sandstorm
+|turn|13
+|
+|move|p1a: Venusaur|Synthesis|p1a: Venusaur
+|-heal|p1a: Venusaur|247\/361
+|move|p2a: Chansey|Wish|p2a: Chansey
+|
+|-weather|none
+|turn|14
+|
+|switch|p2a: Garchomp|Garchomp, F|358\/358
+|move|p1a: Venusaur|Leech Seed|p2a: Garchomp
+|-start|p2a: Garchomp|move: Leech Seed
+|
+|-damage|p2a: Garchomp|314\/358|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|291\/361|[silent]
+|turn|15
+|
+|move|p2a: Garchomp|Earthquake|p1a: Venusaur
+|-damage|p1a: Venusaur|78\/361
+|move|p1a: Venusaur|Giga Drain|p2a: Garchomp
+|-damage|p2a: Garchomp|200\/358
+|-heal|p1a: Venusaur|135\/361|[from] drain|[of] p2a: Garchomp
+|
+|-damage|p2a: Garchomp|156\/358|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|179\/361|[silent]
+|turn|16
+|
+|switch|p2a: Tyranitar|Tyranitar, F|404\/404
+|-weather|Sandstorm
+|switch|p1a: Scizor|Scizor, F|330\/330
+|
+|-weather|Sandstorm|[upkeep]
+|turn|17
+|
+|move|p1a: Scizor|U-turn|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|164\/404
+|
+|switch|p1a: Victini|Victini|129\/341
+|move|p2a: Tyranitar|Fire Punch|p1a: Victini
+|-resisted|p1a: Victini
+|-damage|p1a: Victini|80\/341
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Victini|59\/341|[from] sandstorm
+|turn|18
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|188\/242
+|move|p1a: Victini|U-turn|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|125\/242
+|
+|switch|p1a: Cacturne|Cacturne, F|281\/281
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Rotom-Wash|110\/242|[from] sandstorm
+|-damage|p1a: Cacturne|264\/281|[from] sandstorm
+|-heal|p2a: Rotom-Wash|125\/242|[from] item: Leftovers
+|turn|19
+|
+|switch|p2a: Chansey|Chansey, F|584\/704
+|move|p1a: Cacturne|Seed Bomb|p2a: Chansey
+|-damage|p2a: Chansey|364\/704
+|-damage|p1a: Cacturne|236\/281|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Cacturne|219\/281|[from] sandstorm
+|-damage|p2a: Chansey|320\/704|[from] sandstorm
+|turn|20
+|
+|move|p1a: Cacturne|Superpower|p2a: Chansey
+|-supereffective|p2a: Chansey
+|-damage|p2a: Chansey|0 fnt
+|-unboost|p1a: Cacturne|atk|1
+|-unboost|p1a: Cacturne|def|1
+|-damage|p1a: Cacturne|191\/281|[from] item: Life Orb
+|faint|p2a: Chansey
+|
+|-weather|none
+|
+|switch|p2a: Garchomp|Garchomp, F|156\/358
+|turn|21
+|
+|switch|p1a: Scizor|Scizor, F|330\/330
+|move|p2a: Garchomp|Outrage|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|187\/330
+|
+|-heal|p1a: Scizor|207\/330|[from] item: Leftovers
+|turn|22
+|
+|move|p2a: Garchomp|Outrage|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|66\/330
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|231\/330
+|
+|-heal|p1a: Scizor|251\/330|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Garchomp|Outrage|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|101\/330
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|266\/330
+|
+|-end|p2a: Garchomp|rampage
+|-start|p2a: Garchomp|confusion
+|-heal|p1a: Scizor|286\/330|[from] item: Leftovers
+|turn|24
+|
+|switch|p2a: Venusaur|Venusaur, M|364\/364
+|move|p1a: Scizor|U-turn|p2a: Venusaur
+|-damage|p2a: Venusaur|217\/364
+|
+|switch|p1a: Victini|Victini|59\/341
+|
+|turn|25
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|125\/242
+|move|p1a: Victini|Zen Headbutt|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|14\/242
+|
+|-heal|p2a: Rotom-Wash|29\/242|[from] item: Leftovers
+|turn|26
+|
+|switch|p1a: Scizor|Scizor, F|286\/330
+|switch|p2a: Tyranitar|Tyranitar, F|164\/404
+|-weather|Sandstorm
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Scizor|306\/330|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: Scizor|U-turn|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|switch|p1a: Victini|Victini|59\/341
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Victini|38\/341|[from] sandstorm
+|
+|switch|p2a: Garchomp|Garchomp, F|156\/358
+|turn|28
+|
+|move|p1a: Victini|Zen Headbutt|p2a: Garchomp
+|-damage|p2a: Garchomp|38\/358
+|-damage|p1a: Victini|0 fnt|[from] ability: Rough Skin|[of] p2a: Garchomp
+|faint|p1a: Victini
+|move|p2a: Garchomp|Earthquake|p1: Victini|[notarget]
+|-notarget
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Thundurus-Therian|Thundurus-Therian, M|299\/299
+|turn|29
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|29\/242
+|move|p1a: Thundurus-Therian|Nasty Plot|p1a: Thundurus-Therian
+|-boost|p1a: Thundurus-Therian|spa|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Thundurus-Therian|281\/299|[from] sandstorm
+|-damage|p2a: Rotom-Wash|14\/242|[from] sandstorm
+|-heal|p2a: Rotom-Wash|29\/242|[from] item: Leftovers
+|turn|30
+|
+|move|p1a: Thundurus-Therian|Thunderbolt|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|-weather|none
+|
+|switch|p2a: Garchomp|Garchomp, F|38\/358
+|turn|31
+|
+|switch|p1a: Venusaur|Venusaur-Mega, M|179\/361
+|move|p2a: Garchomp|Earthquake|p1a: Venusaur
+|-damage|p1a: Venusaur|0 fnt
+|faint|p1a: Venusaur
+|
+|
+|switch|p1a: Scizor|Scizor, F|306\/330
+|turn|32
+|
+|move|p2a: Garchomp|Earthquake|p1a: Scizor
+|-crit|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|faint|p1a: Scizor
+|
+|
+|switch|p1a: Thundurus-Therian|Thundurus-Therian, M|281\/299
+|turn|33
+|
+|move|p2a: Garchomp|Earthquake|p1a: Thundurus-Therian
+|-immune|p1a: Thundurus-Therian|[msg]
+|move|p1a: Thundurus-Therian|Psychic|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|faint|p2a: Garchomp
+|
+|
+|switch|p2a: Venusaur|Venusaur, M|217\/364
+|turn|34
+|
+|detailschange|p2a: Venusaur|Venusaur-Mega, M
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p1a: Thundurus-Therian|Nasty Plot|p1a: Thundurus-Therian
+|-boost|p1a: Thundurus-Therian|spa|2
+|move|p2a: Venusaur|Sludge Bomb|p1a: Thundurus-Therian
+|-damage|p1a: Thundurus-Therian|62\/299
+|
+|turn|35
+|
+|move|p1a: Thundurus-Therian|Psychic|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|0 fnt
+|faint|p2a: Venusaur
+|
+|win|Dumb bass
+|leave|LOLegendaries
+|player|p2

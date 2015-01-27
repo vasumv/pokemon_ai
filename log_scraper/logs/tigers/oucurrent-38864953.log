@@ -1,0 +1,484 @@
+|join|tigers
+|join|Aurora Nova
+|player|p1|tigers|93
+|player|p2|Aurora Nova|248
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Heatran, M
+|poke|p1|Roserade, F
+|poke|p1|Jellicent, M
+|poke|p1|Gliscor, M
+|poke|p1|Jirachi
+|poke|p1|Starmie
+|poke|p2|Jirachi, shiny
+|poke|p2|Hippowdon, F
+|poke|p2|Landorus, M
+|poke|p2|Rotom-Wash
+|poke|p2|Latios, M
+|poke|p2|Terrakion
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Roserade|Roserade, F|324\/324
+|switch|p2a: Swisherz|Rotom-Wash|304\/304
+|turn|1
+|callback|decision
+|
+|switch|p2a: Vegeta|Latios, M|301\/301
+|move|p1a: Roserade|Spikes|p2a: Vegeta
+|-sidestart|p2: Aurora Nova|Spikes
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Jirachi|Jirachi|404\/404
+|move|p2a: Vegeta|Draco Meteor|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|251\/404
+|-unboost|p2a: Vegeta|spa|2
+|
+|-heal|p1a: Jirachi|276\/404|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p2a: Turtle|Hippowdon, F|420\/420
+|-damage|p2a: Turtle|368\/420|[from] Spikes
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Turtle
+|move|p1a: Jirachi|Body Slam|p2a: Turtle
+|-damage|p2a: Turtle|327\/420
+|-status|p2a: Turtle|par
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Jirachi|301\/404|[from] item: Leftovers
+|-heal|p2a: Turtle|353\/420 par|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie|274\/274
+|move|p2a: Turtle|Stealth Rock|p1a: Starmie
+|-sidestart|p1: tigers|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Starmie|257\/274|[from] sandstorm
+|-heal|p2a: Turtle|379\/420 par|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p2a: Starman|Jirachi, shiny|341\/341
+|-damage|p2a: Starman|299\/341|[from] Spikes
+|move|p1a: Starmie|Rapid Spin|p2a: Starman
+|-resisted|p2a: Starman
+|-damage|p2a: Starman|293\/341
+|-sideend|p1: tigers|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Starmie
+|-damage|p1a: Starmie|230\/274|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Starmie|213\/274|[from] sandstorm
+|turn|6
+|callback|decision
+|
+|switch|p1a: Jellicent|Jellicent, M|404\/404
+|move|p2a: Starman|Thunderbolt|p1a: Jellicent
+|-supereffective|p1a: Jellicent
+|-damage|p1a: Jellicent|224\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jellicent|199\/404|[from] sandstorm
+|-heal|p1a: Jellicent|224\/404|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p2a: Swisherz|Rotom-Wash|304\/304
+|switch|p1a: Gliscor|Gliscor, M|354\/354
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Swisherz|285\/304|[from] sandstorm
+|-activate|p1a: Gliscor|item: Toxic Orb
+|-status|p1a: Gliscor|tox
+|turn|8
+|callback|decision
+|
+|move|p1a: Gliscor|Protect|p1a: Gliscor
+|-singleturn|p1a: Gliscor|Protect
+|move|p2a: Swisherz|Hydro Pump|p1a: Gliscor
+|-activate|p1a: Gliscor|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Swisherz|266\/304|[from] sandstorm
+|turn|9
+|callback|decision
+|
+|switch|p1a: Jellicent|Jellicent, M|224\/404
+|move|p2a: Swisherz|Hydro Pump|p1a: Jellicent
+|-heal|p1a: Jellicent|325\/404|[from] ability: Water Absorb|[of] p2a: Swisherz
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Swisherz|247\/304|[from] sandstorm
+|-damage|p1a: Jellicent|300\/404|[from] sandstorm
+|-heal|p1a: Jellicent|325\/404|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p2a: Swisherz|Will-O-Wisp|p1a: Jellicent|[miss]
+|-miss|p2a: Swisherz|p1a: Jellicent
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Swisherz|[miss]
+|-miss|p1a: Jellicent|p2a: Swisherz
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Swisherz|228\/304|[from] sandstorm
+|-damage|p1a: Jellicent|300\/404|[from] sandstorm
+|-heal|p1a: Jellicent|325\/404|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, F|324\/324
+|move|p2a: Swisherz|Volt Switch|p1a: Roserade
+|-resisted|p1a: Roserade
+|-damage|p1a: Roserade|289\/324
+|callback|decision
+|
+|switch|p2a: Vegeta|Latios, M|301\/301
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Vegeta|283\/301|[from] sandstorm
+|-damage|p1a: Roserade|269\/324|[from] sandstorm
+|-heal|p1a: Roserade|289\/324|[from] item: Black Sludge
+|turn|12
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|386\/386
+|move|p2a: Vegeta|Draco Meteor|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|244\/386
+|-unboost|p2a: Vegeta|spa|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Vegeta|265\/301|[from] sandstorm
+|-heal|p1a: Heatran|268\/386|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p2a: Swisherz|Rotom-Wash|228\/304
+|move|p1a: Heatran|Stealth Rock|p2a: Swisherz
+|-sidestart|p2: Aurora Nova|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Swisherz|209\/304|[from] sandstorm
+|-heal|p1a: Heatran|292\/386|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, F|289\/324
+|move|p2a: Swisherz|Volt Switch|p1a: Roserade
+|-resisted|p1a: Roserade
+|-damage|p1a: Roserade|255\/324
+|callback|decision
+|
+|switch|p2a: Vegeta|Latios, M|265\/301
+|-damage|p2a: Vegeta|228\/301|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Vegeta|210\/301|[from] sandstorm
+|-damage|p1a: Roserade|235\/324|[from] sandstorm
+|-heal|p1a: Roserade|255\/324|[from] item: Black Sludge
+|turn|15
+|callback|decision
+|
+|switch|p1a: Jirachi|Jirachi|301\/404
+|move|p2a: Vegeta|Surf|p1a: Jirachi
+|-damage|p1a: Jirachi|169\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Vegeta|192\/301|[from] sandstorm
+|-heal|p1a: Jirachi|194\/404|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p2a: Turtle|Hippowdon, F|379\/420 par
+|-damage|p2a: Turtle|327\/420 par|[from] Spikes
+|-damage|p2a: Turtle|301\/420 par|[from] Stealth Rock
+|move|p1a: Jirachi|Wish|p1a: Jirachi
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Jirachi|219\/404|[from] item: Leftovers
+|-heal|p2a: Turtle|327\/420 par|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Jirachi|Iron Head|p2a: Turtle
+|-crit|p2a: Turtle
+|-damage|p2a: Turtle|194\/420 par
+|move|p2a: Turtle|Stealth Rock|p1a: Jirachi
+|-sidestart|p1: tigers|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Jirachi|404\/404|[from] move: Wish|[wisher] Jirachi
+|-heal|p2a: Turtle|220\/420 par|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie|213\/274
+|-damage|p1a: Starmie|179\/274|[from] Stealth Rock
+|move|p2a: Turtle|Slack Off|p2a: Turtle
+|-heal|p2a: Turtle|420\/420 par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Starmie|162\/274|[from] sandstorm
+|turn|19
+|callback|decision
+|
+|move|p1a: Starmie|Rapid Spin|p2a: Turtle
+|-damage|p2a: Turtle|410\/420 par
+|-sideend|p1: tigers|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Starmie
+|-damage|p1a: Starmie|135\/274|[from] item: Life Orb
+|move|p2a: Turtle|Stealth Rock|p1a: Starmie
+|-sidestart|p1: tigers|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Starmie|118\/274|[from] sandstorm
+|-heal|p2a: Turtle|420\/420 par|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|switch|p2a: Swisherz|Rotom-Wash|209\/304
+|-damage|p2a: Swisherz|171\/304|[from] Stealth Rock
+|move|p1a: Starmie|Rapid Spin|p2a: Swisherz
+|-crit|p2a: Swisherz
+|-damage|p2a: Swisherz|142\/304
+|-sideend|p1: tigers|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Starmie
+|-damage|p1a: Starmie|91\/274|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Starmie|74\/274|[from] sandstorm
+|-damage|p2a: Swisherz|123\/304|[from] sandstorm
+|turn|21
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, F|255\/324
+|move|p2a: Swisherz|Rest|p2a: Swisherz
+|-status|p2a: Swisherz|slp
+|-heal|p2a: Swisherz|304\/304 slp|[silent]
+|-status|p2a: Swisherz|slp|[from] move: Rest
+|-enditem|p2a: Swisherz|Chesto Berry|[eat]
+|-curestatus|p2a: Swisherz|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Roserade|235\/324|[from] sandstorm
+|-damage|p2a: Swisherz|285\/304|[from] sandstorm
+|-heal|p1a: Roserade|255\/324|[from] item: Black Sludge
+|turn|22
+|callback|decision
+|
+|switch|p2a: Starman|Jirachi, shiny|293\/341
+|-damage|p2a: Starman|251\/341|[from] Spikes
+|-damage|p2a: Starman|230\/341|[from] Stealth Rock
+|move|p1a: Roserade|Spikes|p2a: Starman
+|-sidestart|p2: Aurora Nova|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Roserade|235\/324|[from] sandstorm
+|-heal|p1a: Roserade|255\/324|[from] item: Black Sludge
+|turn|23
+|callback|decision
+|
+|switch|p1a: Jirachi|Jirachi|404\/404
+|move|p2a: Starman|Fire Punch|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|250\/404
+|-status|p1a: Jirachi|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Jirachi|275\/404 brn|[from] item: Leftovers
+|-damage|p1a: Jirachi|225\/404 brn|[from] brn
+|turn|24
+|callback|decision
+|
+|switch|p2a: Turtle|Hippowdon, F|420\/420 par
+|-damage|p2a: Turtle|394\/420 par|[from] Stealth Rock
+|-damage|p2a: Turtle|324\/420 par|[from] Spikes
+|switch|p1a: Jellicent|Jellicent, M|325\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jellicent|300\/404|[from] sandstorm
+|-heal|p1a: Jellicent|325\/404|[from] item: Leftovers
+|-heal|p2a: Turtle|350\/420 par|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p1a: Jellicent|Taunt|p2a: Turtle
+|-start|p2a: Turtle|move: Taunt
+|cant|p2a: Turtle|move: Taunt|Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jellicent|300\/404|[from] sandstorm
+|-heal|p1a: Jellicent|325\/404|[from] item: Leftovers
+|-heal|p2a: Turtle|376\/420 par|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|switch|p2a: Swisherz|Rotom-Wash|285\/304
+|-damage|p2a: Swisherz|247\/304|[from] Stealth Rock
+|move|p1a: Jellicent|Scald|p2a: Swisherz
+|-resisted|p2a: Swisherz
+|-damage|p2a: Swisherz|219\/304
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Swisherz|200\/304|[from] sandstorm
+|-damage|p1a: Jellicent|300\/404|[from] sandstorm
+|-heal|p1a: Jellicent|325\/404|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, F|255\/324
+|move|p2a: Swisherz|Will-O-Wisp|p1a: Roserade
+|-status|p1a: Roserade|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Roserade|235\/324 brn|[from] sandstorm
+|-damage|p2a: Swisherz|181\/304|[from] sandstorm
+|-heal|p1a: Roserade|255\/324 brn|[from] item: Black Sludge
+|-damage|p1a: Roserade|215\/324 brn|[from] brn
+|turn|28
+|callback|decision
+|
+|switch|p2a: Demetri|Landorus, M|319\/319
+|-damage|p2a: Demetri|280\/319|[from] Stealth Rock
+|move|p1a: Roserade|Aromatherapy|p1a: Roserade
+|-cureteam|p1a: Roserade|[from] move: Aromatherapy
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Roserade|195\/324|[from] sandstorm
+|-heal|p1a: Roserade|215\/324|[from] item: Black Sludge
+|turn|29
+|callback|decision
+|
+|switch|p1a: Jellicent|Jellicent, M|325\/404
+|move|p2a: Demetri|Earth Power|p1a: Jellicent
+|-damage|p1a: Jellicent|99\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jellicent|74\/404|[from] sandstorm
+|-heal|p1a: Jellicent|99\/404|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|switch|p1a: Gliscor|Gliscor, M|354\/354
+|move|p2a: Demetri|Earth Power|p1a: Gliscor
+|-immune|p1a: Gliscor|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-activate|p1a: Gliscor|item: Toxic Orb
+|-status|p1a: Gliscor|tox
+|turn|31
+|callback|decision
+|
+|move|p1a: Gliscor|Protect|p1a: Gliscor
+|-singleturn|p1a: Gliscor|Protect
+|move|p2a: Demetri|Hidden Power|p1a: Gliscor
+|-activate|p1a: Gliscor|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|turn|32
+|callback|decision
+|
+|switch|p1a: Jellicent|Jellicent, M|99\/404
+|move|p2a: Demetri|Rock Polish|p2a: Demetri
+|-boost|p2a: Demetri|spe|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jellicent|74\/404|[from] sandstorm
+|-heal|p1a: Jellicent|99\/404|[from] item: Leftovers
+|turn|33
+|callback|decision
+|
+|move|p2a: Demetri|Earth Power|p1a: Jellicent
+|-damage|p1a: Jellicent|0 fnt
+|faint|p1a: Jellicent
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Gliscor|Gliscor, M|354\/354 tox
+|turn|34
+|callback|decision
+|
+|move|p2a: Demetri|Hidden Power|p1a: Gliscor
+|-supereffective|p1a: Gliscor
+|-damage|p1a: Gliscor|0 fnt
+|-damage|p2a: Demetri|249\/319|[from] item: Life Orb
+|faint|p1a: Gliscor
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie|74\/274
+|turn|35
+|callback|decision
+|
+|move|p2a: Demetri|Earth Power|p1a: Starmie
+|-damage|p1a: Starmie|0 fnt
+|faint|p1a: Starmie
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Jirachi|Jirachi|225\/404
+|turn|36
+|callback|decision
+|chat|Aurora Nova|Landy is so OP at times
+|
+|move|p2a: Demetri|Earth Power|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|faint|p1a: Jirachi
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, F|215\/324
+|turn|37
+|callback|decision
+|
+|move|p2a: Demetri|Earth Power|p1a: Roserade
+|-damage|p1a: Roserade|4\/324
+|move|p1a: Roserade|Giga Drain|p2a: Demetri
+|-damage|p2a: Demetri|117\/319
+|-heal|p1a: Roserade|70\/324|[from] drain|[of] p2a: Demetri
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Roserade|50\/324|[from] sandstorm
+|-heal|p1a: Roserade|70\/324|[from] item: Black Sludge
+|turn|38
+|callback|decision
+|
+|move|p2a: Demetri|Earth Power|p1a: Roserade
+|-damage|p1a: Roserade|0 fnt
+|faint|p1a: Roserade
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|292\/386
+|turn|39
+|callback|decision
+|chat|Aurora Nova|gg
+|
+|move|p2a: Demetri|Earth Power|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|win|Aurora Nova
+|raw|Ladder updating...
+|raw|tigers's rating: 1944 &rarr; <strong>1936<\/strong><br \/>(-8 for losing)
+|raw|Aurora Nova's rating: 1719 &rarr; <strong>1735<\/strong><br \/>(+16 for winning)

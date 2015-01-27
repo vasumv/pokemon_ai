@@ -1,0 +1,391 @@
+|join|livEnwolC
+|join|Liptonicc
+|player|p1|livEnwolC|59
+|player|p2|Liptonicc|100
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Conkeldurr, F
+|poke|p1|Heatran, F
+|poke|p1|Heracross, M
+|poke|p1|Scolipede, M
+|poke|p1|Cloyster, M
+|poke|p1|Blissey, F
+|poke|p2|Moltres
+|poke|p2|Venusaur, M
+|poke|p2|Donphan, M
+|poke|p2|Doublade, M
+|poke|p2|Greninja, M
+|poke|p2|Sylveon, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Scolipede|Scolipede, M|324\/324
+|switch|p2a: Greninja|Greninja, M|348\/348
+|turn|1
+|callback|decision
+|
+|move|p1a: Scolipede|Protect|p1a: Scolipede
+|-singleturn|p1a: Scolipede|Protect
+|-start|p2a: Greninja|typechange|Dark|[from] Protean
+|move|p2a: Greninja|Taunt|p1a: Scolipede
+|-activate|p1a: Scolipede|Protect
+|
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|2
+|callback|decision
+|
+|move|p1a: Scolipede|Substitute|p1a: Scolipede
+|-start|p1a: Scolipede|Substitute
+|-damage|p1a: Scolipede|243\/324
+|move|p2a: Greninja|Taunt|p1a: Scolipede
+|-start|p1a: Scolipede|move: Taunt
+|
+|-heal|p1a: Scolipede|263\/324|[from] item: Leftovers
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|3
+|callback|decision
+|
+|switch|p1a: Cloyster|Cloyster, M|304\/304
+|-start|p2a: Greninja|typechange|Water|[from] Protean
+|move|p2a: Greninja|Scald|p1a: Cloyster
+|-resisted|p1a: Cloyster
+|-damage|p1a: Cloyster|217\/304
+|
+|-heal|p1a: Cloyster|236\/304|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: Fat Bitch|Blissey, F|714\/714
+|move|p2a: Greninja|Scald|p1a: Fat Bitch
+|-damage|p1a: Fat Bitch|638\/714
+|
+|-heal|p1a: Fat Bitch|682\/714|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|-start|p2a: Greninja|typechange|Bug|[from] Protean
+|move|p2a: Greninja|U-turn|p1a: Fat Bitch
+|-damage|p1a: Fat Bitch|556\/714
+|callback|decision
+|
+|switch|p2a: Donphan|Donphan, M|384\/384
+|move|p1a: Fat Bitch|Thunder Wave|p2a: Donphan
+|-immune|p2a: Donphan|[msg]
+|
+|-heal|p1a: Fat Bitch|600\/714|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p1a: The Broom|Heracross, M|363\/363
+|move|p2a: Donphan|Stealth Rock|p1a: The Broom
+|-sidestart|p1: livEnwolC|move: Stealth Rock
+|
+|turn|7
+|callback|decision
+|
+|switch|p2a: Doublade|Doublade, M|322\/322
+|-formechange|p1a: The Broom|Heracross-Mega
+|message|Heracross has Mega Evolved into Mega Heracross!
+|move|p1a: The Broom|Bullet Seed|p2a: Doublade
+|-resisted|p2a: Doublade
+|-damage|p2a: Doublade|311\/322
+|-resisted|p2a: Doublade
+|-damage|p2a: Doublade|301\/322
+|-resisted|p2a: Doublade
+|-damage|p2a: Doublade|290\/322
+|-resisted|p2a: Doublade
+|-damage|p2a: Doublade|281\/322
+|-resisted|p2a: Doublade
+|-damage|p2a: Doublade|271\/322
+|-hitcount|p2a: Doublade|5
+|
+|turn|8
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|386\/386
+|-damage|p1a: Heatran|338\/386|[from] Stealth Rock
+|move|p2a: Doublade|Sacred Sword|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|186\/386
+|
+|-heal|p1a: Heatran|210\/386|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p2a: Greninja|Greninja, M|348\/348
+|move|p1a: Heatran|Lava Plume|p2a: Greninja
+|-resisted|p2a: Greninja
+|-damage|p2a: Greninja|237\/348
+|
+|-heal|p2a: Greninja|258\/348|[from] item: Leftovers
+|-heal|p1a: Heatran|234\/386|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p1a: Fat Bitch|Blissey, F|600\/714
+|-damage|p1a: Fat Bitch|511\/714|[from] Stealth Rock
+|-start|p2a: Greninja|typechange|Poison|[from] Protean
+|move|p2a: Greninja|Toxic Spikes|p1a: Fat Bitch
+|-sidestart|p1: livEnwolC|move: Toxic Spikes
+|
+|-heal|p2a: Greninja|279\/348|[from] item: Leftovers
+|-heal|p1a: Fat Bitch|555\/714|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|-start|p2a: Greninja|typechange|Bug|[from] Protean
+|move|p2a: Greninja|U-turn|p1a: Fat Bitch
+|-crit|p1a: Fat Bitch
+|-damage|p1a: Fat Bitch|350\/714
+|callback|decision
+|
+|switch|p2a: Donphan|Donphan, M|384\/384
+|move|p1a: Fat Bitch|Thunder Wave|p2a: Donphan
+|-immune|p2a: Donphan|[msg]
+|
+|-heal|p1a: Fat Bitch|394\/714|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Fat Bitch|Seismic Toss|p2a: Donphan
+|-damage|p2a: Donphan|284\/384
+|move|p2a: Donphan|Knock Off|p1a: Fat Bitch
+|-damage|p1a: Fat Bitch|242\/714
+|-enditem|p1a: Fat Bitch|Leftovers|[from] move: Knock Off|[of] p2a: Donphan
+|
+|-heal|p2a: Donphan|308\/384|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: Fat Bitch|Wish|p1a: Fat Bitch
+|move|p2a: Donphan|Earthquake|p1a: Fat Bitch
+|-damage|p1a: Fat Bitch|0 fnt
+|faint|p1a: Fat Bitch
+|
+|-heal|p2a: Donphan|332\/384|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Scolipede|Scolipede, M|263\/324
+|-damage|p1a: Scolipede|182\/324|[from] Stealth Rock
+|-sideend|p1: livEnwolC|move: Toxic Spikes|[of] p1a: Scolipede
+|turn|14
+|callback|decision
+|
+|move|p1a: Scolipede|Substitute|p1a: Scolipede
+|-start|p1a: Scolipede|Substitute
+|-damage|p1a: Scolipede|101\/324
+|move|p2a: Donphan|Earthquake|p1a: Scolipede
+|-end|p1a: Scolipede|Substitute
+|
+|-heal|p1a: Scolipede|324\/324|[from] move: Wish|[wisher] Fat Bitch
+|-heal|p2a: Donphan|356\/384|[from] item: Leftovers
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|15
+|callback|decision
+|
+|move|p1a: Scolipede|Protect|p1a: Scolipede
+|-singleturn|p1a: Scolipede|Protect
+|move|p2a: Donphan|Earthquake|p1a: Scolipede
+|-activate|p1a: Scolipede|Protect
+|
+|-heal|p2a: Donphan|380\/384|[from] item: Leftovers
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|16
+|callback|decision
+|
+|move|p1a: Scolipede|Substitute|p1a: Scolipede
+|-start|p1a: Scolipede|Substitute
+|-damage|p1a: Scolipede|243\/324
+|move|p2a: Donphan|Earthquake|p1a: Scolipede
+|-end|p1a: Scolipede|Substitute
+|
+|-heal|p1a: Scolipede|263\/324|[from] item: Leftovers
+|-heal|p2a: Donphan|384\/384|[from] item: Leftovers
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|17
+|callback|decision
+|
+|move|p1a: Scolipede|Baton Pass|p1a: Scolipede
+|callback|decision
+|
+|switch|p1a: The Broom|Heracross, M|363\/363
+|-formechange|p1a: The Broom|Heracross-Mega
+|-damage|p1a: The Broom|318\/363|[from] Stealth Rock
+|move|p2a: Donphan|Earthquake|p1a: The Broom
+|-resisted|p1a: The Broom
+|-damage|p1a: The Broom|258\/363
+|
+|turn|18
+|callback|decision
+|
+|switch|p2a: Doublade|Doublade, M|271\/322
+|move|p1a: The Broom|Bullet Seed|p2a: Doublade
+|-resisted|p2a: Doublade
+|-damage|p2a: Doublade|260\/322
+|-resisted|p2a: Doublade
+|-damage|p2a: Doublade|250\/322
+|-resisted|p2a: Doublade
+|-damage|p2a: Doublade|240\/322
+|-resisted|p2a: Doublade
+|-damage|p2a: Doublade|230\/322
+|-resisted|p2a: Doublade
+|-damage|p2a: Doublade|220\/322
+|-hitcount|p2a: Doublade|5
+|
+|turn|19
+|callback|decision
+|
+|move|p1a: The Broom|Pin Missile|p2a: Doublade
+|-resisted|p2a: Doublade
+|-damage|p2a: Doublade|213\/322
+|-resisted|p2a: Doublade
+|-damage|p2a: Doublade|205\/322
+|-resisted|p2a: Doublade
+|-damage|p2a: Doublade|197\/322
+|-resisted|p2a: Doublade
+|-damage|p2a: Doublade|190\/322
+|-resisted|p2a: Doublade
+|-damage|p2a: Doublade|183\/322
+|-hitcount|p2a: Doublade|5
+|move|p2a: Doublade|Gyro Ball|p1a: The Broom
+|-damage|p1a: The Broom|95\/363
+|
+|turn|20
+|callback|decision
+|
+|switch|p1a: Conkeldurr|Conkeldurr, F|414\/414
+|-damage|p1a: Conkeldurr|389\/414|[from] Stealth Rock
+|move|p2a: Doublade|Gyro Ball|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|331\/414
+|
+|-heal|p1a: Conkeldurr|356\/414|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|switch|p2a: Venusaur|Venusaur, M|361\/361
+|move|p1a: Conkeldurr|Knock Off|p2a: Venusaur
+|-damage|p2a: Venusaur|259\/361
+|
+|-heal|p1a: Conkeldurr|381\/414|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p2a: Venusaur|Leech Seed|p1a: Conkeldurr
+|-start|p1a: Conkeldurr|move: Leech Seed
+|move|p1a: Conkeldurr|Drain Punch|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|196\/361
+|-heal|p1a: Conkeldurr|413\/414|[from] drain|[of] p2a: Venusaur
+|
+|-heal|p1a: Conkeldurr|414\/414|[from] item: Leftovers
+|-damage|p1a: Conkeldurr|363\/414|[from] Leech Seed|[of] p2a: Venusaur
+|-heal|p2a: Venusaur|247\/361|[silent]
+|turn|23
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|234\/386
+|-damage|p1a: Heatran|186\/386|[from] Stealth Rock
+|move|p2a: Venusaur|Knock Off|p1a: Heatran
+|-crit|p1a: Heatran
+|-damage|p1a: Heatran|83\/386
+|-enditem|p1a: Heatran|Leftovers|[from] move: Knock Off|[of] p2a: Venusaur
+|
+|turn|24
+|callback|decision
+|
+|switch|p2a: Greninja|Greninja, M|279\/348
+|move|p1a: Heatran|Lava Plume|p2a: Greninja
+|-resisted|p2a: Greninja
+|-damage|p2a: Greninja|175\/348
+|
+|-heal|p2a: Greninja|196\/348|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|-start|p2a: Greninja|typechange|Water|[from] Protean
+|move|p2a: Greninja|Scald|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|-heal|p2a: Greninja|217\/348|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Scolipede|Scolipede, M|263\/324
+|-damage|p1a: Scolipede|182\/324|[from] Stealth Rock
+|turn|26
+|callback|decision
+|
+|move|p1a: Scolipede|Protect|p1a: Scolipede
+|-singleturn|p1a: Scolipede|Protect
+|-start|p2a: Greninja|typechange|Poison|[from] Protean
+|move|p2a: Greninja|Toxic Spikes|p1a: Scolipede
+|-sidestart|p1: livEnwolC|move: Toxic Spikes
+|
+|-heal|p2a: Greninja|238\/348|[from] item: Leftovers
+|-heal|p1a: Scolipede|202\/324|[from] item: Leftovers
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|27
+|callback|decision
+|
+|move|p1a: Scolipede|Swords Dance|p1a: Scolipede
+|-boost|p1a: Scolipede|atk|2
+|-start|p2a: Greninja|typechange|Dark|[from] Protean
+|move|p2a: Greninja|Taunt|p1a: Scolipede
+|-start|p1a: Scolipede|move: Taunt
+|
+|-heal|p1a: Scolipede|222\/324|[from] item: Leftovers
+|-heal|p2a: Greninja|259\/348|[from] item: Leftovers
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|28
+|callback|decision
+|
+|-activate|p1a: Scolipede|move: Struggle
+|move|p1a: Scolipede|Struggle|p2a: Greninja
+|-damage|p2a: Greninja|142\/348
+|-damage|p1a: Scolipede|141\/324
+|-start|p2a: Greninja|typechange|Water|[from] Protean
+|move|p2a: Greninja|Scald|p1a: Scolipede
+|-damage|p1a: Scolipede|5\/324
+|
+|-heal|p1a: Scolipede|25\/324|[from] item: Leftovers
+|-heal|p2a: Greninja|163\/348|[from] item: Leftovers
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|29
+|callback|decision
+|
+|switch|p2a: Moltres|Moltres|383\/383
+|-ability|p2a: Moltres|Pressure
+|-activate|p1a: Scolipede|move: Struggle
+|move|p1a: Scolipede|Struggle|p2a: Moltres
+|-damage|p2a: Moltres|317\/383
+|-damage|p1a: Scolipede|0 fnt
+|faint|p1a: Scolipede
+|
+|-heal|p2a: Moltres|340\/383|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Conkeldurr|Conkeldurr, F|363\/414
+|-damage|p1a: Conkeldurr|338\/414|[from] Stealth Rock
+|-status|p1a: Conkeldurr|psn
+|turn|30
+|callback|decision
+|-message|livEnwolC forfeited.
+|
+|win|Liptonicc
+|raw|Ladder updating...
+|leave|livEnwolC
+|player|p1

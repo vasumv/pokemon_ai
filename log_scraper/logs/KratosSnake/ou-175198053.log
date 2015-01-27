@@ -1,0 +1,470 @@
+|join|KratosSnake
+|join|Cykos
+|player|p1|KratosSnake|153
+|player|p2|Cykos|44
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Landorus-Therian, M
+|poke|p1|Gothitelle, M
+|poke|p1|Terrakion
+|poke|p1|Greninja, M
+|poke|p1|Manectric, M
+|poke|p1|Garchomp, M
+|poke|p2|Rotom-Wash
+|poke|p2|Medicham, F
+|poke|p2|Landorus-Therian, M
+|poke|p2|Kyurem-Black
+|poke|p2|Heatran, F
+|poke|p2|Starmie
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Garchomp|Garchomp, M|358\/358
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Garchomp
+|-unboost|p1a: Garchomp|atk|1
+|turn|1
+|
+|move|p2a: Landorus-Therian|Earthquake|p1a: Garchomp
+|-damage|p1a: Garchomp|147\/358
+|move|p1a: Garchomp|Swords Dance|p1a: Garchomp
+|-boost|p1a: Garchomp|atk|2
+|
+|turn|2
+|
+|switch|p2a: Starmie|Starmie|324\/324
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Starmie
+|-unboost|p2a: Starmie|atk|1
+|
+|turn|3
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Starmie
+|-supereffective|p2a: Starmie
+|-damage|p2a: Starmie|170\/324
+|
+|switch|p1a: Gothitelle|Gothitelle, M|287\/287
+|move|p2a: Starmie|Toxic|p1a: Gothitelle
+|-status|p1a: Gothitelle|tox
+|
+|-heal|p2a: Starmie|190\/324|[from] item: Leftovers
+|-damage|p1a: Gothitelle|270\/287 tox|[from] psn
+|turn|4
+|
+|move|p1a: Gothitelle|Trick|p2a: Starmie
+|-activate|p1a: Gothitelle|move: Trick|[of] p2a: Starmie
+|-item|p2a: Starmie|Choice Scarf|[from] move: Trick
+|-item|p1a: Gothitelle|Leftovers|[from] move: Trick
+|move|p2a: Starmie|Recover|p2a: Starmie
+|-heal|p2a: Starmie|324\/324
+|
+|-heal|p1a: Gothitelle|287\/287 tox|[from] item: Leftovers
+|-damage|p1a: Gothitelle|253\/287 tox|[from] psn
+|turn|5
+|
+|move|p2a: Starmie|Recover|p2a: Starmie
+|-fail|p2a: Starmie
+|move|p1a: Gothitelle|Calm Mind|p1a: Gothitelle
+|-boost|p1a: Gothitelle|spa|1
+|-boost|p1a: Gothitelle|spd|1
+|
+|-heal|p1a: Gothitelle|270\/287 tox|[from] item: Leftovers
+|-damage|p1a: Gothitelle|219\/287 tox|[from] psn
+|turn|6
+|
+|move|p2a: Starmie|Recover|p2a: Starmie
+|-fail|p2a: Starmie
+|move|p1a: Gothitelle|Calm Mind|p1a: Gothitelle
+|-boost|p1a: Gothitelle|spa|1
+|-boost|p1a: Gothitelle|spd|1
+|
+|-heal|p1a: Gothitelle|236\/287 tox|[from] item: Leftovers
+|-damage|p1a: Gothitelle|168\/287 tox|[from] psn
+|turn|7
+|
+|move|p2a: Starmie|Recover|p2a: Starmie
+|-fail|p2a: Starmie
+|move|p1a: Gothitelle|Rest|p1a: Gothitelle
+|-status|p1a: Gothitelle|slp
+|-heal|p1a: Gothitelle|287\/287 slp|[silent]
+|-status|p1a: Gothitelle|slp|[from] move: Rest
+|
+|turn|8
+|
+|move|p2a: Starmie|Recover|p2a: Starmie
+|-fail|p2a: Starmie
+|cant|p1a: Gothitelle|slp
+|
+|turn|9
+|
+|move|p2a: Starmie|Recover|p2a: Starmie
+|-fail|p2a: Starmie
+|cant|p1a: Gothitelle|slp
+|
+|turn|10
+|
+|move|p2a: Starmie|Recover|p2a: Starmie
+|-fail|p2a: Starmie
+|-curestatus|p1a: Gothitelle|slp
+|move|p1a: Gothitelle|Calm Mind|p1a: Gothitelle
+|-boost|p1a: Gothitelle|spa|1
+|-boost|p1a: Gothitelle|spd|1
+|
+|turn|11
+|
+|move|p2a: Starmie|Recover|p2a: Starmie
+|-fail|p2a: Starmie
+|move|p1a: Gothitelle|Calm Mind|p1a: Gothitelle
+|-boost|p1a: Gothitelle|spa|1
+|-boost|p1a: Gothitelle|spd|1
+|
+|turn|12
+|
+|move|p2a: Starmie|Recover|p2a: Starmie
+|-fail|p2a: Starmie
+|move|p1a: Gothitelle|Calm Mind|p1a: Gothitelle
+|-boost|p1a: Gothitelle|spa|1
+|-boost|p1a: Gothitelle|spd|1
+|
+|turn|13
+|
+|move|p2a: Starmie|Recover|p2a: Starmie
+|-fail|p2a: Starmie
+|move|p1a: Gothitelle|Calm Mind|p1a: Gothitelle
+|-boost|p1a: Gothitelle|spa|1
+|-boost|p1a: Gothitelle|spd|1
+|
+|turn|14
+|
+|move|p2a: Starmie|Recover|p2a: Starmie
+|-fail|p2a: Starmie
+|move|p1a: Gothitelle|Calm Mind|p1a: Gothitelle
+|-fail|p1a: Gothitelle
+|
+|turn|15
+|
+|move|p2a: Starmie|Recover|p2a: Starmie
+|-fail|p2a: Starmie
+|move|p1a: Gothitelle|Calm Mind|p1a: Gothitelle
+|-fail|p1a: Gothitelle
+|
+|turn|16
+|
+|move|p2a: Starmie|Recover|p2a: Starmie
+|-fail|p2a: Starmie
+|move|p1a: Gothitelle|Calm Mind|p1a: Gothitelle
+|-fail|p1a: Gothitelle
+|
+|turn|17
+|
+|move|p2a: Starmie|Recover|p2a: Starmie
+|-fail|p2a: Starmie
+|move|p1a: Gothitelle|Calm Mind|p1a: Gothitelle
+|-fail|p1a: Gothitelle
+|
+|turn|18
+|
+|move|p2a: Starmie|Recover|p2a: Starmie
+|-fail|p2a: Starmie
+|move|p1a: Gothitelle|Calm Mind|p1a: Gothitelle
+|-fail|p1a: Gothitelle
+|
+|turn|19
+|
+|move|p2a: Starmie|Recover|p2a: Starmie
+|-fail|p2a: Starmie
+|move|p1a: Gothitelle|Calm Mind|p1a: Gothitelle
+|-fail|p1a: Gothitelle
+|
+|turn|20
+|
+|-activate|p2a: Starmie|move: Struggle
+|move|p2a: Starmie|Struggle|p1a: Gothitelle
+|-damage|p1a: Gothitelle|266\/287
+|-damage|p2a: Starmie|243\/324
+|move|p1a: Gothitelle|Calm Mind|p1a: Gothitelle
+|-fail|p1a: Gothitelle
+|
+|-heal|p1a: Gothitelle|283\/287|[from] item: Leftovers
+|turn|21
+|
+|-activate|p2a: Starmie|move: Struggle
+|move|p2a: Starmie|Struggle|p1a: Gothitelle
+|-crit|p1a: Gothitelle
+|-damage|p1a: Gothitelle|241\/287
+|-damage|p2a: Starmie|162\/324
+|move|p1a: Gothitelle|Trick|p2a: Starmie
+|-activate|p1a: Gothitelle|move: Trick|[of] p2a: Starmie
+|-item|p2a: Starmie|Leftovers|[from] move: Trick
+|-item|p1a: Gothitelle|Choice Scarf|[from] move: Trick
+|
+|-heal|p2a: Starmie|182\/324|[from] item: Leftovers
+|turn|22
+|c|âCykos|STRUGGLE CAN CRIT WUT
+|
+|move|p1a: Gothitelle|Psychic|p2a: Starmie
+|-resisted|p2a: Starmie
+|-damage|p2a: Starmie|0 fnt
+|faint|p2a: Starmie
+|
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Gothitelle
+|-unboost|p1a: Gothitelle|atk|1
+|turn|23
+|
+|move|p2a: Landorus-Therian|U-turn|p1a: Gothitelle
+|-supereffective|p1a: Gothitelle
+|-damage|p1a: Gothitelle|45\/287
+|
+|switch|p2a: Medicham|Medicham, F|324\/324
+|move|p1a: Gothitelle|Psychic|p2a: Medicham
+|-damage|p2a: Medicham|0 fnt
+|faint|p2a: Medicham
+|
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Gothitelle
+|-unboost|p1a: Gothitelle|atk|1
+|turn|24
+|
+|move|p2a: Landorus-Therian|U-turn|p1a: Gothitelle
+|-supereffective|p1a: Gothitelle
+|-damage|p1a: Gothitelle|0 fnt
+|faint|p1a: Gothitelle
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|
+|
+|switch|p1a: Garchomp|Garchomp, M|147\/358
+|turn|25
+|
+|move|p1a: Garchomp|Stealth Rock|p2a: Rotom-Wash
+|-sidestart|p2: Cykos|move: Stealth Rock
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|faint|p1a: Garchomp
+|
+|
+|switch|p1a: Manectric|Manectric, M|281\/281
+|turn|26
+|
+|detailschange|p1a: Manectric|Manectric-Mega, M
+|message|Manectric has Mega Evolved into Mega Manectric!
+|-ability|p1a: Manectric|Intimidate|[of] p2a: Rotom-Wash
+|-unboost|p2a: Rotom-Wash|atk|1
+|move|p1a: Manectric|Thunderbolt|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|159\/304
+|move|p2a: Rotom-Wash|Pain Split|p1a: Manectric
+|-sethp|p1a: Manectric|220\/281|p2a: Rotom-Wash|220\/304|[from] move: Pain Split
+|
+|-heal|p2a: Rotom-Wash|239\/304|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: Manectric|Thunderbolt|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|88\/304
+|move|p2a: Rotom-Wash|Pain Split|p1a: Manectric
+|-sethp|p1a: Manectric|154\/281|p2a: Rotom-Wash|154\/304|[from] move: Pain Split
+|
+|-heal|p2a: Rotom-Wash|173\/304|[from] item: Leftovers
+|turn|28
+|
+|move|p1a: Manectric|Thunderbolt|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|10\/304
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Manectric
+|-damage|p1a: Manectric|4\/281
+|
+|-heal|p2a: Rotom-Wash|29\/304|[from] item: Leftovers
+|turn|29
+|
+|move|p1a: Manectric|Volt Switch|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|switch|p1a: Terrakion|Terrakion|323\/323
+|
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-damage|p2a: Landorus-Therian|280\/319|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Terrakion
+|-unboost|p1a: Terrakion|atk|1
+|turn|30
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Landorus-Therian
+|-unboost|p2a: Landorus-Therian|atk|1
+|move|p2a: Landorus-Therian|U-turn|p1a: Landorus-Therian
+|-resisted|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|286\/319
+|
+|switch|p2a: Heatran|Heatran, F|386\/386
+|-damage|p2a: Heatran|338\/386|[from] Stealth Rock
+|
+|-heal|p2a: Heatran|362\/386|[from] item: Leftovers
+|turn|31
+|
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-singleturn|p2a: Heatran|Protect
+|move|p1a: Landorus-Therian|Earthquake|p2a: Heatran
+|-activate|p2a: Heatran|Protect
+|
+|-heal|p2a: Heatran|386\/386|[from] item: Leftovers
+|turn|32
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|280\/319
+|-damage|p2a: Landorus-Therian|241\/319|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Landorus-Therian
+|-unboost|p1a: Landorus-Therian|atk|1
+|move|p1a: Landorus-Therian|Earthquake|p2a: Landorus-Therian
+|-immune|p2a: Landorus-Therian|[msg]
+|
+|turn|33
+|
+|switch|p1a: Manectric|Manectric-Mega, M|4\/281
+|-ability|p1a: Manectric|Intimidate|[of] p2a: Landorus-Therian
+|-unboost|p2a: Landorus-Therian|atk|1
+|move|p2a: Landorus-Therian|Earthquake|p1a: Manectric
+|-supereffective|p1a: Manectric
+|-damage|p1a: Manectric|0 fnt
+|faint|p1a: Manectric
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|286\/319
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Landorus-Therian
+|-unboost|p2a: Landorus-Therian|atk|1
+|turn|34
+|
+|switch|p2a: Kyurem-Black|Kyurem-Black|391\/391
+|-damage|p2a: Kyurem-Black|294\/391|[from] Stealth Rock
+|-ability|p2a: Kyurem-Black|Teravolt
+|move|p1a: Landorus-Therian|Earthquake|p2a: Kyurem-Black
+|-damage|p2a: Kyurem-Black|71\/391
+|
+|turn|35
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|241\/319
+|-damage|p2a: Landorus-Therian|202\/319|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Landorus-Therian
+|-unboost|p1a: Landorus-Therian|atk|1
+|move|p1a: Landorus-Therian|Earthquake|p2a: Landorus-Therian
+|-immune|p2a: Landorus-Therian|[msg]
+|
+|turn|36
+|
+|switch|p1a: Terrakion|Terrakion|323\/323
+|move|p2a: Landorus-Therian|Earthquake|p1a: Terrakion
+|-supereffective|p1a: Terrakion
+|-damage|p1a: Terrakion|0 fnt
+|faint|p1a: Terrakion
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|286\/319
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Landorus-Therian
+|-unboost|p2a: Landorus-Therian|atk|1
+|turn|37
+|
+|switch|p2a: Kyurem-Black|Kyurem-Black|71\/391
+|-damage|p2a: Kyurem-Black|0 fnt|[from] Stealth Rock
+|faint|p2a: Kyurem-Black
+|move|p1a: Landorus-Therian|U-turn|p2: Kyurem-Black|[notarget]
+|-notarget
+|
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|202\/319
+|-damage|p2a: Landorus-Therian|163\/319|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Landorus-Therian
+|-unboost|p1a: Landorus-Therian|atk|1
+|turn|38
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Landorus-Therian
+|-resisted|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|131\/319
+|
+|switch|p1a: Greninja|Greninja, M|286\/286
+|move|p2a: Landorus-Therian|Earthquake|p1a: Greninja
+|-damage|p1a: Greninja|31\/286
+|
+|turn|39
+|
+|switch|p2a: Heatran|Heatran, F|386\/386
+|-damage|p2a: Heatran|338\/386|[from] Stealth Rock
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|286\/319
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Heatran
+|-unboost|p2a: Heatran|atk|1
+|
+|-heal|p2a: Heatran|362\/386|[from] item: Leftovers
+|turn|40
+|
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-singleturn|p2a: Heatran|Protect
+|move|p1a: Landorus-Therian|Earthquake|p2a: Heatran
+|-activate|p2a: Heatran|Protect
+|
+|-heal|p2a: Heatran|386\/386|[from] item: Leftovers
+|turn|41
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|131\/319
+|-damage|p2a: Landorus-Therian|92\/319|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Landorus-Therian
+|-unboost|p1a: Landorus-Therian|atk|1
+|move|p1a: Landorus-Therian|Earthquake|p2a: Landorus-Therian
+|-immune|p2a: Landorus-Therian|[msg]
+|
+|turn|42
+|
+|switch|p1a: Greninja|Greninja, M|31\/286
+|move|p2a: Landorus-Therian|Stone Edge|p1a: Greninja
+|-crit|p1a: Greninja
+|-damage|p1a: Greninja|0 fnt
+|faint|p1a: Greninja
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|286\/319
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Landorus-Therian
+|-unboost|p2a: Landorus-Therian|atk|1
+|turn|43
+|
+|switch|p2a: Heatran|Heatran, F|386\/386
+|-damage|p2a: Heatran|338\/386|[from] Stealth Rock
+|move|p1a: Landorus-Therian|Stone Edge|p2a: Heatran|[miss]
+|-miss|p1a: Landorus-Therian|p2a: Heatran
+|
+|-heal|p2a: Heatran|362\/386|[from] item: Leftovers
+|turn|44
+|
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-singleturn|p2a: Heatran|Protect
+|move|p1a: Landorus-Therian|Stone Edge|p2a: Heatran
+|-activate|p2a: Heatran|Protect
+|
+|-heal|p2a: Heatran|386\/386|[from] item: Leftovers
+|turn|45
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|92\/319
+|-damage|p2a: Landorus-Therian|53\/319|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Landorus-Therian
+|-unboost|p1a: Landorus-Therian|atk|1
+|move|p1a: Landorus-Therian|Stone Edge|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|faint|p2a: Landorus-Therian
+|
+|-message|KratosSnake forfeited.
+|
+|win|Cykos
+|raw|Ladder updating...
+|leave|KratosSnake
+|player|p1
+|raw|KratosSnake's rating: 1685 &rarr; <strong>1666<\/strong><br \/>(-19 for losing)
+|raw|Cykos's rating: 1695 &rarr; <strong>1715<\/strong><br \/>(+20 for winning)

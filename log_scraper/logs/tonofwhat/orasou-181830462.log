@@ -1,0 +1,358 @@
+|join|tonofwhat
+|join|5ivebelow
+|player|p1|tonofwhat|102
+|player|p2|5ivebelow|66
+|gametype|singles
+|gen|6
+|tier|ORAS OU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Salamence, F
+|poke|p1|Scizor, F
+|poke|p1|Mamoswine, F
+|poke|p1|Latios, M
+|poke|p1|Greninja, M
+|poke|p1|Heatran, F
+|poke|p2|Altaria, F
+|poke|p2|Conkeldurr, M
+|poke|p2|Rotom-Wash
+|poke|p2|Excadrill, M
+|poke|p2|Heatran, F
+|poke|p2|Sylveon, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Greninja|Greninja, M|285\/285
+|switch|p2a: Excadrill|Excadrill, M|361\/361
+|-ability|p2a: Excadrill|Mold Breaker
+|turn|1
+|
+|switch|p1a: Salamence|Salamence, F|331\/331
+|-ability|p1a: Salamence|Intimidate|[of] p2a: Excadrill
+|-unboost|p2a: Excadrill|atk|1
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|
+|turn|2
+|
+|detailschange|p1a: Salamence|Salamence-Mega, F
+|message|Salamence has Mega Evolved into Mega Salamence!
+|move|p1a: Salamence|Outrage|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|91\/304
+|move|p2a: Rotom-Wash|Thunderbolt|p1a: Salamence
+|-damage|p1a: Salamence|198\/331
+|
+|-heal|p2a: Rotom-Wash|110\/304|[from] item: Leftovers
+|turn|3
+|
+|move|p2a: Rotom-Wash|Protect|p2a: Rotom-Wash
+|-singleturn|p2a: Rotom-Wash|Protect
+|move|p1a: Salamence|Outrage|p2a: Rotom-Wash
+|-activate|p2a: Rotom-Wash|Protect
+|
+|-end|p1a: Salamence|rampage
+|-start|p1a: Salamence|confusion
+|-heal|p2a: Rotom-Wash|129\/304|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Latios|Latios, M|301\/301
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Latios
+|-status|p1a: Latios|brn
+|
+|-heal|p2a: Rotom-Wash|148\/304|[from] item: Leftovers
+|-damage|p1a: Latios|264\/301 brn|[from] brn
+|turn|5
+|
+|switch|p1a: Mamoswine|Mamoswine, F|361\/361
+|move|p2a: Rotom-Wash|Protect|p2a: Rotom-Wash
+|-fail|p2a: Rotom-Wash
+|
+|-heal|p2a: Rotom-Wash|167\/304|[from] item: Leftovers
+|turn|6
+|
+|move|p1a: Mamoswine|Stealth Rock|p2a: Rotom-Wash
+|-sidestart|p2: 5ivebelow|move: Stealth Rock
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Mamoswine
+|-status|p1a: Mamoswine|brn
+|
+|-heal|p2a: Rotom-Wash|186\/304|[from] item: Leftovers
+|-damage|p1a: Mamoswine|316\/361 brn|[from] brn
+|turn|7
+|
+|switch|p1a: Latios|Latios, M|264\/301 brn
+|move|p2a: Rotom-Wash|Protect|p2a: Rotom-Wash
+|-fail|p2a: Rotom-Wash
+|
+|-heal|p2a: Rotom-Wash|205\/304|[from] item: Leftovers
+|-damage|p1a: Latios|227\/301 brn|[from] brn
+|turn|8
+|
+|move|p2a: Rotom-Wash|Protect|p2a: Rotom-Wash
+|-singleturn|p2a: Rotom-Wash|Protect
+|move|p1a: Latios|Draco Meteor|p2a: Rotom-Wash
+|-activate|p2a: Rotom-Wash|Protect
+|
+|-heal|p2a: Rotom-Wash|224\/304|[from] item: Leftovers
+|-damage|p1a: Latios|190\/301 brn|[from] brn
+|turn|9
+|
+|switch|p2a: Sylveon|Sylveon, M|394\/394
+|-damage|p2a: Sylveon|345\/394|[from] Stealth Rock
+|move|p1a: Latios|Draco Meteor|p2a: Sylveon
+|-immune|p2a: Sylveon|[msg]
+|
+|-heal|p2a: Sylveon|369\/394|[from] item: Leftovers
+|-damage|p1a: Latios|153\/301 brn|[from] brn
+|turn|10
+|
+|switch|p1a: Scizor|Scizor, F|344\/344
+|move|p2a: Sylveon|Wish|p2a: Sylveon
+|
+|-heal|p2a: Sylveon|393\/394|[from] item: Leftovers
+|turn|11
+|
+|switch|p2a: Heatran|Heatran, F|386\/386
+|-damage|p2a: Heatran|338\/386|[from] Stealth Rock
+|move|p1a: Scizor|Swords Dance|p1a: Scizor
+|-boost|p1a: Scizor|atk|2
+|
+|-heal|p2a: Heatran|386\/386|[from] move: Wish|[wisher] Sylveon
+|turn|12
+|
+|switch|p1a: Salamence|Salamence-Mega, F|198\/331
+|move|p2a: Heatran|Earth Power|p1a: Salamence
+|-immune|p1a: Salamence|[msg]
+|
+|turn|13
+|
+|move|p1a: Salamence|Return|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|293\/386
+|move|p2a: Heatran|Lava Plume|p1a: Salamence
+|-resisted|p1a: Salamence
+|-damage|p1a: Salamence|122\/331
+|
+|-heal|p2a: Heatran|317\/386|[from] item: Leftovers
+|turn|14
+|
+|switch|p1a: Heatran|Heatran, F|323\/323
+|move|p2a: Heatran|Lava Plume|p1a: Heatran
+|-start|p1a: Heatran|ability: Flash Fire
+|
+|-heal|p2a: Heatran|341\/386|[from] item: Leftovers
+|turn|15
+|
+|switch|p1a: Scizor|Scizor, F|344\/344
+|move|p2a: Heatran|Earth Power|p1a: Scizor
+|-damage|p1a: Scizor|247\/344
+|
+|-heal|p2a: Heatran|365\/386|[from] item: Leftovers
+|turn|16
+|
+|switch|p1a: Latios|Latios, M|153\/301 brn
+|move|p2a: Heatran|Lava Plume|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|101\/301 brn
+|
+|-heal|p2a: Heatran|386\/386|[from] item: Leftovers
+|-damage|p1a: Latios|64\/301 brn|[from] brn
+|turn|17
+|
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-singleturn|p2a: Heatran|Protect
+|move|p1a: Latios|Trick|p2a: Heatran
+|-activate|p2a: Heatran|Protect
+|
+|-damage|p1a: Latios|27\/301 brn|[from] brn
+|turn|18
+|
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-singleturn|p2a: Heatran|Protect
+|move|p1a: Latios|Trick|p2a: Heatran
+|-activate|p2a: Heatran|Protect
+|
+|-damage|p1a: Latios|0 fnt|[from] brn
+|faint|p1a: Latios
+|
+|switch|p1a: Greninja|Greninja, M|285\/285
+|turn|19
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|224\/304
+|-damage|p2a: Rotom-Wash|186\/304|[from] Stealth Rock
+|move|p1a: Greninja|Hydro Pump|p2a: Rotom-Wash
+|-start|p1a: Greninja|typechange|Water|[from] Protean
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|116\/304
+|-damage|p1a: Greninja|257\/285|[from] item: Life Orb
+|
+|-heal|p2a: Rotom-Wash|135\/304|[from] item: Leftovers
+|turn|20
+|
+|move|p1a: Greninja|Dark Pulse|p2a: Rotom-Wash
+|-start|p1a: Greninja|typechange|Dark|[from] Protean
+|-damage|p2a: Rotom-Wash|25\/304
+|-damage|p1a: Greninja|229\/285|[from] item: Life Orb
+|move|p2a: Rotom-Wash|Thunderbolt|p1a: Greninja
+|-damage|p1a: Greninja|67\/285
+|
+|-heal|p2a: Rotom-Wash|44\/304|[from] item: Leftovers
+|turn|21
+|
+|switch|p1a: Scizor|Scizor, F|247\/344
+|move|p2a: Rotom-Wash|Protect|p2a: Rotom-Wash
+|-fail|p2a: Rotom-Wash
+|
+|-heal|p2a: Rotom-Wash|63\/304|[from] item: Leftovers
+|turn|22
+|
+|move|p2a: Rotom-Wash|Protect|p2a: Rotom-Wash
+|-singleturn|p2a: Rotom-Wash|Protect
+|move|p1a: Scizor|Bug Bite|p2a: Rotom-Wash
+|-activate|p2a: Rotom-Wash|Protect
+|
+|-heal|p2a: Rotom-Wash|82\/304|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Scizor
+|-status|p1a: Scizor|brn
+|-enditem|p1a: Scizor|Lum Berry|[eat]
+|-curestatus|p1a: Scizor|brn
+|move|p1a: Scizor|Bug Bite|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|
+|switch|p2a: Heatran|Heatran, F|386\/386
+|-damage|p2a: Heatran|338\/386|[from] Stealth Rock
+|turn|24
+|
+|switch|p1a: Heatran|Heatran, F|323\/323
+|move|p2a: Heatran|Lava Plume|p1a: Heatran
+|-start|p1a: Heatran|ability: Flash Fire
+|
+|-heal|p2a: Heatran|362\/386|[from] item: Leftovers
+|turn|25
+|
+|move|p1a: Heatran|Earth Power|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|-damage|p1a: Heatran|291\/323|[from] item: Life Orb
+|faint|p2a: Heatran
+|
+|
+|switch|p2a: Excadrill|Excadrill, M|361\/361
+|-damage|p2a: Excadrill|350\/361|[from] Stealth Rock
+|-ability|p2a: Excadrill|Mold Breaker
+|turn|26
+|
+|switch|p1a: Mamoswine|Mamoswine, F|316\/361 brn
+|move|p2a: Excadrill|Earthquake|p1a: Mamoswine
+|-damage|p1a: Mamoswine|31\/361 brn
+|
+|-damage|p1a: Mamoswine|0 fnt|[from] brn
+|faint|p1a: Mamoswine
+|
+|switch|p1a: Salamence|Salamence-Mega, F|122\/331
+|turn|27
+|
+|move|p1a: Salamence|Return|p2a: Excadrill
+|-resisted|p2a: Excadrill
+|-damage|p2a: Excadrill|147\/361
+|move|p2a: Excadrill|Iron Head|p1a: Salamence
+|-crit|p1a: Salamence
+|-damage|p1a: Salamence|0 fnt
+|faint|p1a: Salamence
+|
+|
+|switch|p1a: Greninja|Greninja, M|67\/285
+|turn|28
+|
+|move|p1a: Greninja|U-turn|p2a: Excadrill
+|-start|p1a: Greninja|typechange|Bug|[from] Protean
+|-crit|p2a: Excadrill
+|-resisted|p2a: Excadrill
+|-damage|p2a: Excadrill|37\/361
+|-damage|p1a: Greninja|39\/285|[from] item: Life Orb
+|
+|switch|p1a: Scizor|Scizor, F|247\/344
+|move|p2a: Excadrill|Iron Head|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|160\/344
+|
+|turn|29
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Excadrill
+|-resisted|p2a: Excadrill
+|-damage|p2a: Excadrill|0 fnt
+|faint|p2a: Excadrill
+|
+|
+|switch|p2a: Conkeldurr|Conkeldurr, M|414\/414
+|-damage|p2a: Conkeldurr|389\/414|[from] Stealth Rock
+|turn|30
+|
+|switch|p1a: Greninja|Greninja, M|39\/285
+|move|p2a: Conkeldurr|Drain Punch|p1a: Greninja
+|-supereffective|p1a: Greninja
+|-damage|p1a: Greninja|0 fnt
+|-heal|p2a: Conkeldurr|409\/414|[from] drain|[of] p1a: Greninja
+|faint|p1a: Greninja
+|
+|
+|switch|p1a: Heatran|Heatran, F|291\/323
+|turn|31
+|
+|move|p1a: Heatran|Fire Blast|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|178\/414
+|-status|p2a: Conkeldurr|brn
+|-damage|p1a: Heatran|259\/323|[from] item: Life Orb
+|move|p2a: Conkeldurr|Drain Punch|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|-heal|p2a: Conkeldurr|308\/414 brn|[from] drain|[of] p1a: Heatran
+|faint|p1a: Heatran
+|
+|-damage|p2a: Conkeldurr|257\/414 brn|[from] brn
+|
+|switch|p1a: Scizor|Scizor, F|160\/344
+|turn|32
+|
+|move|p2a: Conkeldurr|Mach Punch|p1a: Scizor
+|-damage|p1a: Scizor|33\/344
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|205\/344
+|
+|-damage|p2a: Conkeldurr|206\/414 brn|[from] brn
+|turn|33
+|
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|344\/344
+|move|p2a: Conkeldurr|Drain Punch|p1a: Scizor
+|-damage|p1a: Scizor|98\/344
+|-heal|p2a: Conkeldurr|329\/414 brn|[from] drain|[of] p1a: Scizor
+|
+|-damage|p2a: Conkeldurr|278\/414 brn|[from] brn
+|turn|34
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|155\/414 brn
+|move|p2a: Conkeldurr|Drain Punch|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|-heal|p2a: Conkeldurr|204\/414 brn|[from] drain|[of] p1a: Scizor
+|faint|p1a: Scizor
+|
+|win|5ivebelow
+|raw|Ladder updating...
+|raw|tonofwhat's rating: 1236 &rarr; <strong>1207<\/strong><br \/>(-29 for losing)
+|raw|5ivebelow's rating: 1171 &rarr; <strong>1201<\/strong><br \/>(+30 for winning)
+|c|â5ivebelow|gg
+|leave|tonofwhat
+|player|p1

@@ -1,0 +1,402 @@
+|join|smogmog
+|join|maria joana
+|player|p1|smogmog|21
+|player|p2|maria joana|30
+|gametype|doubles
+|gen|6
+|tier|Smogon Doubles (current)
+|rated
+|clearpoke
+|poke|p1|Landorus-Therian, M
+|poke|p1|Mew
+|poke|p1|Latias, F
+|poke|p1|Kangaskhan, F
+|poke|p1|Klefki, M
+|poke|p1|Talonflame, M
+|poke|p2|Smeargle, F
+|poke|p2|Zoroark, F
+|poke|p2|Whimsicott, M
+|poke|p2|Klefki, M
+|poke|p2|Sableye, M
+|poke|p2|Gyarados, M
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|chat|smogmog|have fun
+|chat|maria joana|thanks babe
+|
+|start
+|switch|p1a: Mew|Mew|404\/404
+|switch|p1b: Talonflame|Talonflame, M|319\/319
+|switch|p2a: Smeargle|Smeargle, F|262\/262
+|switch|p2b: Gyarados|Gyarados, M|332\/332
+|turn|1
+|
+|move|p1a: Mew|Fake Out|p2a: Smeargle
+|replace|p2a: Zoroark|Zoroark, F|262\/262
+|-damage|p2a: Zoroark|225\/262
+|move|p1b: Talonflame|Brave Bird|p2b: Gyarados
+|-damage|p2b: Gyarados|98\/332
+|-damage|p1b: Talonflame|242\/319|[from] recoil|[of] p2b: Gyarados
+|cant|p2a: Zoroark|flinch
+|move|p2b: Gyarados|Dragon Dance|p2b: Gyarados
+|-boost|p2b: Gyarados|atk|1
+|-boost|p2b: Gyarados|spe|1
+|
+|turn|2
+|
+|move|p1b: Talonflame|Brave Bird|p2a: Zoroark
+|-damage|p2a: Zoroark|0 fnt
+|-damage|p1b: Talonflame|168\/319|[from] recoil|[of] p2a: Zoroark
+|faint|p2a: Zoroark
+|move|p2b: Gyarados|Waterfall|p1b: Talonflame
+|-supereffective|p1b: Talonflame
+|-damage|p1b: Talonflame|0 fnt
+|-damage|p2b: Gyarados|65\/332|[from] item: Life Orb
+|faint|p1b: Talonflame
+|-boost|p2b: Gyarados|atk|1|[from] ability: Moxie
+|move|p1a: Mew|Will-O-Wisp|p2b: Gyarados
+|-status|p2b: Gyarados|brn
+|
+|-damage|p2b: Gyarados|24\/332 brn|[from] brn
+|
+|switch|p1b: Klefki|Klefki, M|318\/318
+|switch|p2a: Sableye|Sableye, M|304\/304
+|turn|3
+|
+|move|p1b: Klefki|Reflect|p1b: Klefki
+|-sidestart|p1: smogmog|Reflect
+|move|p2a: Sableye|Taunt|p1a: Mew
+|-start|p1a: Mew|move: Taunt
+|move|p2b: Gyarados|Waterfall|p1a: Mew
+|-damage|p1a: Mew|286\/404
+|-damage|p2b: Gyarados|0 fnt|[from] item: Life Orb
+|faint|p2b: Gyarados
+|cant|p1a: Mew|move: Taunt|Transform
+|
+|-heal|p1a: Mew|311\/404|[from] item: Leftovers
+|
+|switch|p2b: Whimsicott|Whimsicott, M|324\/324
+|turn|4
+|
+|switch|p1a: Latias|Latias, F|364\/364
+|move|p2b: Whimsicott|Encore|p1b: Klefki
+|-start|p1b: Klefki|Encore
+|move|p1b: Klefki|Reflect|p1b: Klefki
+|-fail|p1b: Klefki
+|move|p2a: Sableye|Will-O-Wisp|p1b: Klefki
+|-status|p1b: Klefki|brn
+|
+|-damage|p1b: Klefki|279\/318 brn|[from] brn
+|turn|5
+|
+|switch|p1b: Mew|Mew|311\/404
+|move|p2b: Whimsicott|Substitute|p2b: Whimsicott
+|-start|p2b: Whimsicott|Substitute
+|-damage|p2b: Whimsicott|243\/324
+|move|p1a: Latias|Draco Meteor|p2a: Sableye
+|-damage|p2a: Sableye|144\/304
+|-unboost|p1a: Latias|spa|2
+|move|p2a: Sableye|Snarl|p1b: Mew
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|310\/364
+|-unboost|p1a: Latias|spa|1
+|-supereffective|p1b: Mew
+|-damage|p1b: Mew|243\/404
+|-unboost|p1b: Mew|spa|1
+|
+|-heal|p1b: Mew|268\/404|[from] item: Leftovers
+|-heal|p2b: Whimsicott|263\/324|[from] item: Leftovers
+|-heal|p2a: Sableye|163\/304|[from] item: Leftovers
+|turn|6
+|
+|switch|p1a: Kangaskhan|Kangaskhan, F|351\/351
+|move|p1b: Mew|Protect|p1b: Mew
+|-singleturn|p1b: Mew|Protect
+|move|p2b: Whimsicott|Taunt|p1b: Mew
+|-activate|p1b: Mew|Protect
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|304\/304
+|
+|-heal|p1b: Mew|293\/404|[from] item: Leftovers
+|-heal|p2b: Whimsicott|283\/324|[from] item: Leftovers
+|turn|7
+|
+|switch|p1b: Klefki|Klefki, M|279\/318 brn
+|detailschange|p1a: Kangaskhan|Kangaskhan-Mega, F
+|message|Kangaskhan has Mega Evolved into Mega Kangaskhan!
+|move|p1a: Kangaskhan|Protect|p1a: Kangaskhan
+|-singleturn|p1a: Kangaskhan|Protect
+|move|p2b: Whimsicott|Encore|p1b: Klefki
+|-fail|p1b: Klefki
+|move|p2a: Sableye|Will-O-Wisp|p1a: Kangaskhan
+|-activate|p1a: Kangaskhan|Protect
+|
+|-heal|p2b: Whimsicott|303\/324|[from] item: Leftovers
+|-damage|p1b: Klefki|240\/318 brn|[from] brn
+|turn|8
+|
+|switch|p1a: Mew|Mew|293\/404
+|move|p2b: Whimsicott|Encore|p1a: Mew
+|-fail|p1a: Mew
+|move|p1b: Klefki|Safeguard|p1b: Klefki
+|-sidestart|p1: smogmog|Safeguard
+|move|p2a: Sableye|Taunt|p1b: Klefki
+|-start|p1b: Klefki|move: Taunt
+|
+|-heal|p1a: Mew|318\/404|[from] item: Leftovers
+|-heal|p2b: Whimsicott|323\/324|[from] item: Leftovers
+|-damage|p1b: Klefki|201\/318 brn|[from] brn
+|turn|9
+|
+|switch|p1b: Kangaskhan|Kangaskhan-Mega, F|351\/351
+|move|p1a: Mew|Protect|p1a: Mew
+|-singleturn|p1a: Mew|Protect
+|move|p2b: Whimsicott|Leech Seed|p1a: Mew
+|-activate|p1a: Mew|Protect
+|move|p2a: Sableye|Taunt|p1a: Mew
+|-activate|p1a: Mew|Protect
+|
+|-heal|p1a: Mew|343\/404|[from] item: Leftovers
+|-heal|p2b: Whimsicott|324\/324|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Klefki|Klefki, M|201\/318 brn
+|move|p2b: Whimsicott|Taunt|p1a: Klefki
+|-start|p1a: Klefki|move: Taunt
+|move|p1b: Kangaskhan|Body Slam|p2b: Whimsicott
+|-end|p2b: Whimsicott|Substitute
+|-damage|p2b: Whimsicott|263\/324
+|-status|p2b: Whimsicott|par
+|-hitcount|p2b: Whimsicott|2
+|move|p2a: Sableye|Snarl|p1a: Klefki
+|-resisted|p1a: Klefki
+|-damage|p1a: Klefki|188\/318 brn
+|-unboost|p1a: Klefki|spa|1
+|-damage|p1b: Kangaskhan|318\/351
+|-unboost|p1b: Kangaskhan|spa|1
+|
+|-heal|p2b: Whimsicott|283\/324 par|[from] item: Leftovers
+|-damage|p1a: Klefki|149\/318 brn|[from] brn
+|-sideend|p1: smogmog|Reflect
+|turn|11
+|
+|switch|p1a: Mew|Mew|343\/404
+|move|p2b: Whimsicott|Substitute|p2b: Whimsicott
+|-start|p2b: Whimsicott|Substitute
+|-damage|p2b: Whimsicott|202\/324 par
+|move|p1b: Kangaskhan|Body Slam|p2b: Whimsicott
+|-end|p2b: Whimsicott|Substitute
+|-damage|p2b: Whimsicott|144\/324 par
+|-hitcount|p2b: Whimsicott|2
+|move|p2a: Sableye|Snarl|p1b: Kangaskhan
+|-supereffective|p1a: Mew
+|-damage|p1a: Mew|271\/404
+|-unboost|p1a: Mew|spa|1
+|-damage|p1b: Kangaskhan|287\/351
+|-unboost|p1b: Kangaskhan|spa|1
+|
+|-heal|p1a: Mew|296\/404|[from] item: Leftovers
+|-heal|p2b: Whimsicott|164\/324 par|[from] item: Leftovers
+|turn|12
+|
+|move|p1a: Mew|Fake Out|p2b: Whimsicott
+|-damage|p2b: Whimsicott|144\/324 par
+|move|p2a: Sableye|Taunt|p1a: Mew
+|-start|p1a: Mew|move: Taunt
+|cant|p2b: Whimsicott|flinch
+|move|p1b: Kangaskhan|Body Slam|p2b: Whimsicott
+|-damage|p2b: Whimsicott|27\/324 par
+|-damage|p2b: Whimsicott|0 fnt
+|-hitcount|p2b: Whimsicott|2
+|faint|p2b: Whimsicott
+|
+|-heal|p1a: Mew|321\/404|[from] item: Leftovers
+|-sideend|p1: smogmog|Safeguard
+|
+|switch|p2b: Smeargle|Smeargle, F|252\/252
+|turn|13
+|
+|switch|p1b: Klefki|Klefki, M|149\/318 brn
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|333\/333
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Sableye
+|-unboost|p2a: Sableye|atk|1
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2b: Smeargle
+|-unboost|p2b: Smeargle|atk|1
+|move|p2a: Sableye|Will-O-Wisp|p1b: Klefki
+|-fail|p1b: Klefki|brn
+|move|p2b: Smeargle|Spore|p1a: Landorus-Therian
+|-status|p1a: Landorus-Therian|slp
+|
+|-damage|p1b: Klefki|110\/318 brn|[from] brn
+|turn|14
+|
+|move|p1b: Klefki|Swagger|p2a: Sableye
+|-boost|p2a: Sableye|atk|2
+|-start|p2a: Sableye|confusion
+|-activate|p2a: Sableye|confusion
+|move|p2a: Sableye|Taunt|p1b: Klefki
+|-start|p1b: Klefki|move: Taunt
+|cant|p1a: Landorus-Therian|slp
+|move|p2b: Smeargle|Stealth Rock|p1b: Klefki
+|-sidestart|p1: smogmog|move: Stealth Rock
+|
+|-damage|p1b: Klefki|71\/318 brn|[from] brn
+|turn|15
+|
+|switch|p1b: Kangaskhan|Kangaskhan-Mega, F|287\/351
+|-damage|p1b: Kangaskhan|244\/351|[from] Stealth Rock
+|-curestatus|p1a: Landorus-Therian|slp
+|move|p1a: Landorus-Therian|Knock Off|p2a: Sableye
+|-damage|p2a: Sableye|154\/304
+|-enditem|p2a: Sableye|Leftovers|[from] move: Knock Off|[of] p1a: Landorus-Therian
+|move|p2b: Smeargle|Sticky Web|p1a: Landorus-Therian
+|-sidestart|p1: smogmog|move: Sticky Web
+|-activate|p2a: Sableye|confusion
+|-damage|p2a: Sableye|112\/304|[from] confusion
+|
+|turn|16
+|
+|-activate|p2a: Sableye|confusion
+|-damage|p2a: Sableye|70\/304|[from] confusion
+|move|p1a: Landorus-Therian|Knock Off|p2b: Smeargle
+|-damage|p2b: Smeargle|69\/252
+|-enditem|p2b: Smeargle|Focus Sash|[from] move: Knock Off|[of] p1a: Landorus-Therian
+|move|p1b: Kangaskhan|Body Slam|p2b: Smeargle
+|-damage|p2b: Smeargle|0 fnt
+|-hitcount|p2b: Smeargle|1
+|faint|p2b: Smeargle
+|
+|
+|switch|p2b: Klefki|Klefki, M|318\/318
+|turn|17
+|
+|move|p2b: Klefki|Toxic|p1a: Landorus-Therian
+|-status|p1a: Landorus-Therian|tox
+|-activate|p2a: Sableye|confusion
+|move|p2a: Sableye|Will-O-Wisp|p1b: Kangaskhan
+|-status|p1b: Kangaskhan|brn
+|move|p1a: Landorus-Therian|Knock Off|p2b: Klefki
+|-resisted|p2b: Klefki
+|-damage|p2b: Klefki|254\/318
+|-enditem|p2b: Klefki|Leftovers|[from] move: Knock Off|[of] p1a: Landorus-Therian
+|move|p1b: Kangaskhan|Drain Punch|p2b: Klefki
+|-damage|p2b: Klefki|207\/318
+|-heal|p1b: Kangaskhan|268\/351 brn|[from] drain|[of] p2b: Klefki
+|-damage|p2b: Klefki|181\/318
+|-heal|p1b: Kangaskhan|281\/351 brn|[from] drain|[of] p2b: Klefki
+|-hitcount|p2b: Klefki|2
+|
+|-damage|p1a: Landorus-Therian|313\/333 tox|[from] psn
+|-damage|p1b: Kangaskhan|238\/351 brn|[from] brn
+|turn|18
+|
+|-end|p2a: Sableye|confusion
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|222\/304
+|move|p1a: Landorus-Therian|Knock Off|p2a: Sableye
+|-damage|p2a: Sableye|109\/304
+|move|p1b: Kangaskhan|Body Slam|p2b: Klefki
+|-resisted|p2b: Klefki
+|-damage|p2b: Klefki|143\/318
+|-resisted|p2b: Klefki
+|-damage|p2b: Klefki|122\/318
+|-hitcount|p2b: Klefki|2
+|move|p2b: Klefki|Draining Kiss|p1b: Kangaskhan
+|-damage|p1b: Kangaskhan|195\/351 brn
+|-heal|p2b: Klefki|155\/318|[from] drain|[of] p1b: Kangaskhan
+|
+|-damage|p1a: Landorus-Therian|273\/333 tox|[from] psn
+|-damage|p1b: Kangaskhan|152\/351 brn|[from] brn
+|turn|19
+|
+|switch|p1a: Mew|Mew|321\/404
+|-activate|p1a: Mew|move: Sticky Web
+|-unboost|p1a: Mew|spe|1
+|-damage|p1a: Mew|271\/404|[from] Stealth Rock
+|switch|p1b: Klefki|Klefki, M|71\/318 brn
+|-activate|p1b: Klefki|move: Sticky Web
+|-unboost|p1b: Klefki|spe|1
+|-damage|p1b: Klefki|52\/318 brn|[from] Stealth Rock
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|261\/304
+|move|p2b: Klefki|Draining Kiss|p1a: Mew
+|-damage|p1a: Mew|226\/404
+|-heal|p2b: Klefki|189\/318|[from] drain|[of] p1a: Mew
+|
+|-heal|p1a: Mew|251\/404|[from] item: Leftovers
+|-damage|p1b: Klefki|13\/318 brn|[from] brn
+|turn|20
+|
+|move|p2a: Sableye|Taunt|p1a: Mew
+|-start|p1a: Mew|move: Taunt
+|move|p1b: Klefki|Safeguard|p1b: Klefki
+|-sidestart|p1: smogmog|Safeguard
+|cant|p1a: Mew|move: Taunt|Will-O-Wisp
+|move|p2b: Klefki|Draining Kiss|p1b: Klefki
+|-resisted|p1b: Klefki
+|-damage|p1b: Klefki|0 fnt
+|-heal|p2b: Klefki|199\/318|[from] drain|[of] p1b: Klefki
+|faint|p1b: Klefki
+|
+|-heal|p1a: Mew|276\/404|[from] item: Leftovers
+|
+|switch|p1b: Latias|Latias, F|310\/364
+|-damage|p1b: Latias|265\/364|[from] Stealth Rock
+|turn|21
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|273\/333 tox
+|-damage|p1a: Landorus-Therian|232\/333 tox|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Sableye
+|-unboost|p2a: Sableye|atk|1
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2b: Klefki
+|-unboost|p2b: Klefki|atk|1
+|move|p2b: Klefki|Thunder Wave|p1b: Latias
+|-fail|p1b: Latias
+|move|p1b: Latias|Draco Meteor|p2a: Sableye
+|-damage|p2a: Sableye|107\/304
+|-unboost|p1b: Latias|spa|2
+|move|p2a: Sableye|Snarl|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|193\/333 tox
+|-unboost|p1a: Landorus-Therian|spa|1
+|-supereffective|p1b: Latias
+|-damage|p1b: Latias|209\/364
+|-unboost|p1b: Latias|spa|1
+|
+|-damage|p1a: Landorus-Therian|173\/333 tox|[from] psn
+|turn|22
+|
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|259\/304
+|move|p1a: Landorus-Therian|Earthquake|p2a: Sableye
+|-immune|p1b: Latias|[msg]
+|-damage|p2a: Sableye|76\/304
+|-supereffective|p2b: Klefki
+|-damage|p2b: Klefki|0 fnt
+|faint|p2b: Klefki
+|move|p1b: Latias|Draco Meteor|p2a: Sableye
+|-damage|p2a: Sableye|16\/304
+|-unboost|p1b: Latias|spa|2
+|
+|-damage|p1a: Landorus-Therian|133\/333 tox|[from] psn
+|turn|23
+|
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|168\/304
+|move|p1a: Landorus-Therian|Earthquake|p2a: Sableye
+|-immune|p1b: Latias|[msg]
+|-damage|p2a: Sableye|0 fnt
+|faint|p2a: Sableye
+|
+|win|smogmog
+|raw|Ladder updating...
+|raw|smogmog's rating: 1381 &rarr; <strong>1387<\/strong><br \/>(+6 for winning)
+|raw|maria joana's rating: 1086 &rarr; <strong>1079<\/strong><br \/>(-7 for losing)
+|chat|smogmog|gg
+|leave|maria joana
+|player|p2

@@ -1,0 +1,392 @@
+|join|Smoo
+|join|Avi42
+|player|p1|Smoo|169
+|player|p2|Avi42|162
+|gametype|singles
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Mamoswine, M
+|poke|p1|Heatran, M
+|poke|p1|Lucario, F
+|poke|p1|Gengar, F
+|poke|p1|Mandibuzz, F
+|poke|p1|Cloyster, F
+|poke|p2|Aegislash, M
+|poke|p2|Talonflame, F
+|poke|p2|Hydreigon, M
+|poke|p2|Azumarill, M
+|poke|p2|Sableye, F
+|poke|p2|Tentacruel, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Mamoswine|Mamoswine, M|424\/424
+|switch|p2a: Pikablue|Azumarill, M|404\/404
+|turn|1
+|callback|decision
+|
+|move|p1a: Mamoswine|Stealth Rock|p2a: Pikablue
+|-sidestart|p2: Avi42|move: Stealth Rock
+|move|p2a: Pikablue|Play Rough|p1a: Mamoswine
+|-damage|p1a: Mamoswine|97\/424
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Mamoswine|Earthquake|p2a: Pikablue
+|-damage|p2a: Pikablue|170\/404
+|move|p2a: Pikablue|Play Rough|p1a: Mamoswine
+|-damage|p1a: Mamoswine|0 fnt
+|faint|p1a: Mamoswine
+|
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, F|280\/280
+|turn|3
+|callback|decision
+|
+|switch|p2a: AndÃºril|Aegislash, M|324\/324
+|-damage|p2a: AndÃºril|304\/324|[from] Stealth Rock
+|move|p1a: Gengar|Thunderbolt|p2a: AndÃºril
+|-damage|p2a: AndÃºril|234\/324
+|
+|-heal|p2a: AndÃºril|254\/324|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|424\/424
+|-formechange|p2a: AndÃºril|Aegislash-Blade
+|move|p2a: AndÃºril|Shadow Sneak|p1a: Mandibuzz
+|-resisted|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|394\/424
+|
+|-heal|p1a: Mandibuzz|420\/424|[from] item: Leftovers
+|-heal|p2a: AndÃºril|274\/324|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|-formechange|p2a: AndÃºril|Aegislash
+|move|p2a: AndÃºril|King's Shield|p2a: AndÃºril
+|-singleturn|p2a: AndÃºril|Protect
+|move|p1a: Mandibuzz|Knock Off|p2a: AndÃºril
+|-activate|p2a: AndÃºril|Protect
+|-unboost|p1a: Mandibuzz|atk|2
+|
+|-heal|p1a: Mandibuzz|424\/424|[from] item: Leftovers
+|-heal|p2a: AndÃºril|294\/324|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p2a: Doc Oc|Tentacruel, F|364\/364
+|-damage|p2a: Doc Oc|319\/364|[from] Stealth Rock
+|move|p1a: Mandibuzz|Knock Off|p2a: Doc Oc
+|-damage|p2a: Doc Oc|259\/364
+|-enditem|p2a: Doc Oc|Leftovers|[from] move: Knock Off|[of] p1a: Mandibuzz
+|
+|turn|7
+|callback|decision
+|
+|move|p2a: Doc Oc|Scald|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|355\/424
+|-status|p1a: Mandibuzz|brn
+|move|p1a: Mandibuzz|Taunt|p2a: Doc Oc
+|-start|p2a: Doc Oc|move: Taunt
+|
+|-heal|p1a: Mandibuzz|381\/424 brn|[from] item: Leftovers
+|-damage|p1a: Mandibuzz|328\/424 brn|[from] brn
+|turn|8
+|callback|decision
+|
+|move|p2a: Doc Oc|Rapid Spin|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|320\/424 brn
+|-sideend|p2: Avi42|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Doc Oc
+|move|p1a: Mandibuzz|Foul Play|p2a: Doc Oc
+|-damage|p2a: Doc Oc|204\/364
+|
+|-heal|p1a: Mandibuzz|346\/424 brn|[from] item: Leftovers
+|-damage|p1a: Mandibuzz|293\/424 brn|[from] brn
+|turn|9
+|callback|decision
+|
+|move|p2a: Doc Oc|Scald|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|224\/424 brn
+|move|p1a: Mandibuzz|Roost|p1a: Mandibuzz
+|-heal|p1a: Mandibuzz|424\/424 brn
+|
+|-damage|p1a: Mandibuzz|371\/424 brn|[from] brn
+|turn|10
+|callback|decision
+|
+|switch|p2a: Cap'n Falcon|Talonflame, F|297\/297
+|move|p1a: Mandibuzz|Foul Play|p2a: Cap'n Falcon
+|-damage|p2a: Cap'n Falcon|203\/297
+|
+|-heal|p1a: Mandibuzz|397\/424 brn|[from] item: Leftovers
+|-damage|p1a: Mandibuzz|344\/424 brn|[from] brn
+|turn|11
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|386\/386
+|-item|p1a: Heatran|Air Balloon
+|move|p2a: Cap'n Falcon|Roost|p2a: Cap'n Falcon
+|-heal|p2a: Cap'n Falcon|297\/297
+|
+|turn|12
+|callback|decision
+|
+|switch|p2a: Doc Oc|Tentacruel, F|204\/364
+|move|p1a: Heatran|Roar|p2a: Doc Oc
+|drag|p2a: AndÃºril|Aegislash, M|294\/324
+|
+|-heal|p2a: AndÃºril|314\/324|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: Heatran|Will-O-Wisp|p2a: AndÃºril
+|-status|p2a: AndÃºril|brn
+|-formechange|p2a: AndÃºril|Aegislash-Blade
+|move|p2a: AndÃºril|Sacred Sword|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|262\/386
+|-enditem|p1a: Heatran|Air Balloon
+|
+|-heal|p2a: AndÃºril|324\/324 brn|[from] item: Leftovers
+|-damage|p2a: AndÃºril|284\/324 brn|[from] brn
+|turn|14
+|callback|decision
+|
+|-formechange|p2a: AndÃºril|Aegislash
+|move|p2a: AndÃºril|King's Shield|p2a: AndÃºril
+|-singleturn|p2a: AndÃºril|Protect
+|move|p1a: Heatran|Flamethrower|p2a: AndÃºril
+|-activate|p2a: AndÃºril|Protect
+|
+|-heal|p2a: AndÃºril|304\/324 brn|[from] item: Leftovers
+|-damage|p2a: AndÃºril|264\/324 brn|[from] brn
+|turn|15
+|callback|decision
+|
+|switch|p1a: Lucario|Lucario, F|281\/281
+|move|p2a: AndÃºril|Swords Dance|p2a: AndÃºril
+|-boost|p2a: AndÃºril|atk|2
+|
+|-heal|p2a: AndÃºril|284\/324 brn|[from] item: Leftovers
+|-damage|p2a: AndÃºril|244\/324 brn|[from] brn
+|turn|16
+|callback|decision
+|
+|-formechange|p1a: Lucario|Lucario-Mega
+|message|Lucario has Mega Evolved into Mega Lucario!
+|move|p1a: Lucario|Swords Dance|p1a: Lucario
+|-boost|p1a: Lucario|atk|2
+|-formechange|p2a: AndÃºril|Aegislash-Blade
+|move|p2a: AndÃºril|Sacred Sword|p1a: Lucario
+|-supereffective|p1a: Lucario
+|-damage|p1a: Lucario|11\/281
+|
+|-heal|p2a: AndÃºril|264\/324 brn|[from] item: Leftovers
+|-damage|p2a: AndÃºril|224\/324 brn|[from] brn
+|turn|17
+|callback|decision
+|chat|Smoo|Aww, good read, I was banking on the King's Shield
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|344\/424 brn
+|move|p2a: AndÃºril|Shadow Sneak|p1a: Mandibuzz
+|-resisted|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|312\/424 brn
+|
+|-heal|p1a: Mandibuzz|338\/424 brn|[from] item: Leftovers
+|-heal|p2a: AndÃºril|244\/324 brn|[from] item: Leftovers
+|-damage|p1a: Mandibuzz|285\/424 brn|[from] brn
+|-damage|p2a: AndÃºril|204\/324 brn|[from] brn
+|turn|18
+|callback|decision
+|
+|move|p1a: Mandibuzz|Taunt|p2a: AndÃºril
+|-start|p2a: AndÃºril|move: Taunt
+|cant|p2a: AndÃºril|move: Taunt|Swords Dance
+|
+|-heal|p1a: Mandibuzz|311\/424 brn|[from] item: Leftovers
+|-heal|p2a: AndÃºril|224\/324 brn|[from] item: Leftovers
+|-damage|p1a: Mandibuzz|258\/424 brn|[from] brn
+|-damage|p2a: AndÃºril|184\/324 brn|[from] brn
+|turn|19
+|callback|decision
+|
+|move|p1a: Mandibuzz|Roost|p1a: Mandibuzz
+|-heal|p1a: Mandibuzz|424\/424 brn
+|move|p2a: AndÃºril|Sacred Sword|p1a: Mandibuzz
+|-supereffective|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|238\/424 brn
+|
+|-heal|p1a: Mandibuzz|264\/424 brn|[from] item: Leftovers
+|-heal|p2a: AndÃºril|204\/324 brn|[from] item: Leftovers
+|-damage|p1a: Mandibuzz|211\/424 brn|[from] brn
+|-damage|p2a: AndÃºril|164\/324 brn|[from] brn
+|turn|20
+|callback|decision
+|
+|move|p1a: Mandibuzz|Foul Play|p2a: AndÃºril
+|-supereffective|p2a: AndÃºril
+|-damage|p2a: AndÃºril|0 fnt
+|faint|p2a: AndÃºril
+|
+|-heal|p1a: Mandibuzz|237\/424 brn|[from] item: Leftovers
+|-damage|p1a: Mandibuzz|184\/424 brn|[from] brn
+|callback|decision
+|
+|switch|p2a: Pikablue|Azumarill, M|170\/404
+|turn|21
+|callback|decision
+|
+|move|p1a: Mandibuzz|Roost|p1a: Mandibuzz
+|-heal|p1a: Mandibuzz|396\/424 brn
+|move|p2a: Pikablue|Play Rough|p1a: Mandibuzz
+|-supereffective|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|0 fnt
+|faint|p1a: Mandibuzz
+|
+|callback|decision
+|
+|switch|p1a: Lucario|Lucario, F|11\/281
+|-formechange|p1a: Lucario|Lucario-Mega
+|turn|22
+|callback|decision
+|
+|move|p1a: Lucario|Bullet Punch|p2a: Pikablue
+|-damage|p2a: Pikablue|36\/404
+|move|p2a: Pikablue|Play Rough|p1a: Lucario
+|-damage|p1a: Lucario|0 fnt
+|faint|p1a: Lucario
+|
+|callback|decision
+|
+|switch|p1a: Cloyster|Cloyster, F|242\/242
+|turn|23
+|callback|decision
+|
+|move|p1a: Cloyster|Razor Shell|p2a: Pikablue
+|-resisted|p2a: Pikablue
+|-damage|p2a: Pikablue|0 fnt
+|faint|p2a: Pikablue
+|
+|callback|decision
+|
+|switch|p2a: Jewel|Sableye, F|304\/304
+|turn|24
+|callback|decision
+|
+|move|p1a: Cloyster|Ice Shard|p2a: Jewel
+|-damage|p2a: Jewel|250\/304
+|move|p2a: Jewel|Trick|p1a: Cloyster
+|-activate|p2a: Jewel|move: Trick|[of] p1a: Cloyster
+|-item|p1a: Cloyster|Full Incense|[from] move: Trick
+|-item|p2a: Jewel|Leftovers|[from] move: Trick
+|
+|-heal|p2a: Jewel|269\/304|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p2a: Jewel|Will-O-Wisp|p1a: Cloyster
+|-status|p1a: Cloyster|brn
+|move|p1a: Cloyster|Shell Smash|p1a: Cloyster
+|-boost|p1a: Cloyster|atk|2
+|-boost|p1a: Cloyster|spa|2
+|-boost|p1a: Cloyster|spe|2
+|-unboost|p1a: Cloyster|def|1
+|-unboost|p1a: Cloyster|spd|1
+|
+|-heal|p2a: Jewel|288\/304|[from] item: Leftovers
+|-damage|p1a: Cloyster|212\/242 brn|[from] brn
+|turn|26
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|262\/386
+|move|p2a: Jewel|Foul Play|p1a: Heatran
+|-damage|p1a: Heatran|183\/386
+|
+|-heal|p2a: Jewel|304\/304|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|switch|p2a: Doc Oc|Tentacruel, F|204\/364
+|move|p1a: Heatran|Will-O-Wisp|p2a: Doc Oc
+|-status|p2a: Doc Oc|brn
+|
+|-damage|p2a: Doc Oc|159\/364 brn|[from] brn
+|turn|28
+|callback|decision
+|
+|move|p2a: Doc Oc|Scald|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|91\/386
+|move|p1a: Heatran|Earth Power|p2a: Doc Oc
+|-supereffective|p2a: Doc Oc
+|-damage|p2a: Doc Oc|53\/364 brn
+|
+|-damage|p2a: Doc Oc|8\/364 brn|[from] brn
+|turn|29
+|callback|decision
+|
+|switch|p1a: Cloyster|Cloyster, F|212\/242 brn
+|move|p2a: Doc Oc|Scald|p1a: Cloyster
+|-resisted|p1a: Cloyster
+|-damage|p1a: Cloyster|142\/242 brn
+|
+|-damage|p1a: Cloyster|112\/242 brn|[from] brn
+|-damage|p2a: Doc Oc|0 fnt|[from] brn
+|faint|p2a: Doc Oc
+|callback|decision
+|
+|switch|p2a: Cap'n Falcon|Talonflame, F|297\/297
+|turn|30
+|callback|decision
+|chat|Smoo|Trick with Full Incense is really nice, interesting move
+|
+|switch|p1a: Heatran|Heatran, M|91\/386
+|move|p2a: Cap'n Falcon|Brave Bird|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|-damage|p2a: Cap'n Falcon|267\/297|[from] recoil|[of] p1a: Heatran
+|-damage|p2a: Cap'n Falcon|238\/297|[from] item: Life Orb
+|faint|p1a: Heatran
+|
+|callback|decision
+|
+|switch|p1a: Cloyster|Cloyster, F|112\/242 brn
+|turn|31
+|callback|decision
+|
+|move|p2a: Cap'n Falcon|Brave Bird|p1a: Cloyster
+|-damage|p1a: Cloyster|0 fnt
+|-damage|p2a: Cap'n Falcon|201\/297|[from] recoil|[of] p1a: Cloyster
+|-damage|p2a: Cap'n Falcon|172\/297|[from] item: Life Orb
+|faint|p1a: Cloyster
+|
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, F|280\/280
+|turn|32
+|callback|decision
+|
+|move|p2a: Cap'n Falcon|Brave Bird|p1a: Gengar
+|-damage|p1a: Gengar|0 fnt
+|-damage|p2a: Cap'n Falcon|80\/297|[from] recoil|[of] p1a: Gengar
+|-damage|p2a: Cap'n Falcon|51\/297|[from] item: Life Orb
+|faint|p1a: Gengar
+|
+|win|Avi42
+|raw|Ladder updating...
+|raw|Smoo's rating: 1884 &rarr; <strong>1860<\/strong><br \/>(-24 for losing)
+|raw|Avi42's rating: 1990 &rarr; <strong>2001<\/strong><br \/>(+11 for winning)
+|chat|Smoo|gg
+|chat|Avi42|gg

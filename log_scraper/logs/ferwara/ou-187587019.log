@@ -1,0 +1,118 @@
+|join|ferwara
+|join|kadratak
+|player|p1|ferwara|2
+|player|p2|kadratak|161
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Breloom, F
+|poke|p1|Whimsicott, F
+|poke|p1|Tyranitar, M
+|poke|p1|Smeargle, M
+|poke|p1|Espeon, F
+|poke|p1|Excadrill, F
+|poke|p2|Breloom, F
+|poke|p2|Tyranitar, F
+|poke|p2|Tyrantrum, F
+|poke|p2|Aggron, F
+|poke|p2|Aerodactyl, M
+|poke|p2|Aurorus, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Whimsicott|Whimsicott, F|324\/324
+|switch|p2a: Tyranitar|Tyranitar, F|342\/342
+|-weather|Sandstorm
+|turn|1
+|
+|switch|p2a: Aurorus|Aurorus, F|388\/388
+|move|p1a: Whimsicott|Tailwind|p1a: Whimsicott
+|-sidestart|p1: ferwara|move: Tailwind
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Whimsicott|304\/324|[from] sandstorm
+|turn|2
+|
+|move|p1a: Whimsicott|Memento|p2a: Aurorus
+|-unboost|p2a: Aurorus|atk|2
+|-unboost|p2a: Aurorus|spa|2
+|faint|p1a: Whimsicott
+|move|p2a: Aurorus|Nature Power|p2a: Aurorus
+|move|p2a: Aurorus|Tri Attack|p1: Whimsicott|[from]Nature Power|[notarget]
+|-notarget
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Smeargle|Smeargle, M|314\/314
+|turn|3
+|
+|move|p1a: Smeargle|Dark Void|p2a: Aurorus
+|-status|p2a: Aurorus|slp
+|cant|p2a: Aurorus|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Smeargle|295\/314|[from] sandstorm
+|turn|4
+|
+|switch|p2a: Breloom|Breloom, F|262\/262
+|move|p1a: Smeargle|Geomancy|p1a: Smeargle|[still]
+|-prepare|p1a: Smeargle|Geomancy|p1a: Smeargle
+|-enditem|p1a: Smeargle|Power Herb
+|-anim|p1a: Smeargle|Geomancy|p1a: Smeargle
+|-boost|p1a: Smeargle|spa|2
+|-boost|p1a: Smeargle|spd|2
+|-boost|p1a: Smeargle|spe|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Smeargle|276\/314|[from] sandstorm
+|-damage|p2a: Breloom|246\/262|[from] sandstorm
+|-sideend|p1: ferwara|move: Tailwind
+|turn|5
+|
+|move|p1a: Smeargle|Baton Pass|p1a: Smeargle
+|
+|switch|p1a: Espeon|Espeon, F|334\/334
+|move|p2a: Breloom|Spore|p1a: Espeon
+|move|p1a: Espeon|Spore|p2a: Breloom|[from]Magic Bounce
+|-fail|p2a: Breloom
+|
+|-weather|none
+|turn|6
+|
+|move|p2a: Breloom|Mach Punch|p1a: Espeon
+|-resisted|p1a: Espeon
+|-damage|p1a: Espeon|286\/334
+|move|p1a: Espeon|Wish|p1a: Espeon
+|
+|-heal|p1a: Espeon|306\/334|[from] item: Leftovers
+|turn|7
+|
+|move|p1a: Espeon|Calm Mind|p1a: Espeon
+|-boost|p1a: Espeon|spa|1
+|-boost|p1a: Espeon|spd|1
+|move|p2a: Breloom|Bullet Seed|p1a: Espeon
+|-damage|p1a: Espeon|245\/334
+|-damage|p1a: Espeon|184\/334
+|-damage|p1a: Espeon|123\/334
+|-damage|p1a: Espeon|54\/334
+|-damage|p1a: Espeon|0 fnt
+|-hitcount|p1a: Espeon|5
+|faint|p1a: Espeon
+|
+|-message|ferwara forfeited.
+|
+|win|kadratak
+|raw|Ladder updating...
+|leave|ferwara
+|player|p1

@@ -1,0 +1,374 @@
+|join|Boris127
+|join|antonio1999
+|player|p1|Boris127|66
+|player|p2|antonio1999|209
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Azumarill, M
+|poke|p1|Ferrothorn, M
+|poke|p1|Aegislash, F
+|poke|p1|Smeargle, M
+|poke|p1|Gengar, F
+|poke|p1|Rotom-Wash
+|poke|p2|Greninja, M
+|poke|p2|Infernape, F
+|poke|p2|Metagross, shiny
+|poke|p2|Tyranitar, F
+|poke|p2|Rotom-Wash
+|poke|p2|Togekiss, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Smeargle|Smeargle, M|314\/314
+|switch|p2a: Togekiss|Togekiss, F|312\/312
+|turn|1
+|callback|decision
+|
+|move|p1a: Smeargle|Spore|p2a: Togekiss
+|-status|p2a: Togekiss|slp
+|cant|p2a: Togekiss|slp
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Smeargle|Stealth Rock|p2a: Togekiss
+|-sidestart|p2: antonio1999|move: Stealth Rock
+|-curestatus|p2a: Togekiss|slp
+|move|p2a: Togekiss|Air Slash|p1a: Smeargle
+|-damage|p1a: Smeargle|70\/314
+|
+|turn|3
+|callback|decision
+|-activate|p2a: Togekiss|item: Quick Claw
+|
+|move|p2a: Togekiss|Air Slash|p1a: Smeargle
+|-crit|p1a: Smeargle
+|-damage|p1a: Smeargle|0 fnt
+|faint|p1a: Smeargle
+|
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, F|262\/262
+|turn|4
+|callback|decision
+|-activate|p2a: Togekiss|item: Quick Claw
+|
+|move|p2a: Togekiss|Air Slash|p1a: Gengar
+|-damage|p1a: Gengar|84\/262
+|cant|p1a: Gengar|flinch
+|
+|turn|5
+|callback|decision
+|
+|move|p1a: Gengar|Sludge Bomb|p2a: Togekiss
+|-supereffective|p2a: Togekiss
+|-damage|p2a: Togekiss|0 fnt
+|faint|p2a: Togekiss
+|
+|callback|decision
+|
+|switch|p2a: Greninja|Greninja, M|286\/286
+|-damage|p2a: Greninja|251\/286|[from] Stealth Rock
+|turn|6
+|callback|decision
+|
+|switch|p1a: Azumarill|Azumarill, M|404\/404
+|-start|p2a: Greninja|typechange|Psychic|[from] Protean
+|move|p2a: Greninja|Extrasensory|p1a: Azumarill
+|-damage|p1a: Azumarill|216\/404
+|-damage|p2a: Greninja|223\/286|[from] item: Life Orb
+|
+|turn|7
+|callback|decision
+|
+|move|p2a: Greninja|Extrasensory|p1a: Azumarill
+|-damage|p1a: Azumarill|35\/404
+|-damage|p2a: Greninja|195\/286|[from] item: Life Orb
+|move|p1a: Azumarill|Play Rough|p2a: Greninja
+|-damage|p2a: Greninja|0 fnt
+|-damage|p1a: Azumarill|0 fnt|[from] item: Life Orb
+|faint|p2a: Greninja
+|faint|p1a: Azumarill
+|
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|switch|p2a: Metagross|Metagross, shiny|336\/336
+|-damage|p2a: Metagross|315\/336|[from] Stealth Rock
+|turn|8
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Metagross
+|-status|p2a: Metagross|brn
+|move|p2a: Metagross|Zen Headbutt|p1a: Rotom-Wash
+|-crit|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|195\/304
+|
+|-heal|p1a: Rotom-Wash|214\/304|[from] item: Leftovers
+|-damage|p2a: Metagross|273\/336 brn|[from] brn
+|turn|9
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Metagross
+|-damage|p2a: Metagross|131\/336 brn
+|move|p2a: Metagross|Zen Headbutt|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|144\/304
+|
+|-heal|p1a: Rotom-Wash|163\/304|[from] item: Leftovers
+|-damage|p2a: Metagross|89\/336 brn|[from] brn
+|turn|10
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Metagross|[miss]
+|-miss|p1a: Rotom-Wash|p2a: Metagross
+|move|p2a: Metagross|Zen Headbutt|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|85\/304
+|
+|-heal|p1a: Rotom-Wash|104\/304|[from] item: Leftovers
+|-damage|p2a: Metagross|47\/336 brn|[from] brn
+|turn|11
+|callback|decision
+|
+|move|p2a: Metagross|Bullet Punch|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|95\/304
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Metagross
+|-damage|p2a: Metagross|0 fnt
+|faint|p2a: Metagross
+|
+|-heal|p1a: Rotom-Wash|114\/304|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|-damage|p2a: Rotom-Wash|266\/304|[from] Stealth Rock
+|turn|12
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Confuse Ray|p1a: Rotom-Wash
+|-start|p1a: Rotom-Wash|confusion
+|-activate|p1a: Rotom-Wash|confusion
+|-damage|p1a: Rotom-Wash|95\/304|[from] confusion
+|
+|-heal|p1a: Rotom-Wash|114\/304|[from] item: Leftovers
+|-heal|p2a: Rotom-Wash|285\/304|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|-activate|p1a: Rotom-Wash|confusion
+|-damage|p1a: Rotom-Wash|96\/304|[from] confusion
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|44\/304
+|
+|-heal|p1a: Rotom-Wash|63\/304|[from] item: Leftovers
+|-heal|p2a: Rotom-Wash|304\/304|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|callback|decision
+|
+|switch|p2a: Infernape|Infernape, F|294\/294
+|-damage|p2a: Infernape|258\/294|[from] Stealth Rock
+|
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, F|84\/262
+|turn|15
+|callback|decision
+|
+|move|p1a: Gengar|Dazzling Gleam|p2a: Infernape
+|-damage|p2a: Infernape|67\/294
+|move|p2a: Infernape|Fire Punch|p1a: Gengar
+|-damage|p1a: Gengar|0 fnt
+|faint|p1a: Gengar
+|
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, F|324\/324
+|turn|16
+|callback|decision
+|
+|move|p1a: Aegislash|King's Shield|p1a: Aegislash
+|-singleturn|p1a: Aegislash|Protect
+|move|p2a: Infernape|Fire Punch|p1a: Aegislash
+|-activate|p1a: Aegislash|Protect
+|-unboost|p2a: Infernape|atk|2
+|
+|turn|17
+|callback|decision
+|
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Sneak|p2a: Infernape
+|-damage|p2a: Infernape|0 fnt
+|faint|p2a: Infernape
+|
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|-damage|p2a: Rotom-Wash|266\/304|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|352\/352
+|move|p2a: Rotom-Wash|Confuse Ray|p1a: Ferrothorn
+|-start|p1a: Ferrothorn|confusion
+|
+|-heal|p2a: Rotom-Wash|285\/304|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Ferrothorn
+|-status|p1a: Ferrothorn|brn
+|-activate|p1a: Ferrothorn|confusion
+|-damage|p1a: Ferrothorn|343\/352 brn|[from] confusion
+|
+|-heal|p2a: Rotom-Wash|304\/304|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|352\/352 brn|[from] item: Leftovers
+|-damage|p1a: Ferrothorn|308\/352 brn|[from] brn
+|turn|20
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|240\/352 brn
+|-end|p1a: Ferrothorn|confusion
+|move|p1a: Ferrothorn|Leech Seed|p2a: Rotom-Wash
+|-start|p2a: Rotom-Wash|move: Leech Seed
+|
+|-heal|p1a: Ferrothorn|262\/352 brn|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|266\/304|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|300\/352 brn|[silent]
+|-damage|p1a: Ferrothorn|256\/352 brn|[from] brn
+|turn|21
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, F|342\/342
+|-damage|p2a: Tyranitar|300\/342|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p1a: Ferrothorn|Toxic|p2a: Tyranitar
+|-status|p2a: Tyranitar|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Ferrothorn|278\/352 brn|[from] item: Leftovers
+|-damage|p2a: Tyranitar|279\/342 tox|[from] psn
+|-damage|p1a: Ferrothorn|234\/352 brn|[from] brn
+|turn|22
+|callback|decision
+|
+|move|p2a: Tyranitar|Earthquake|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|162\/352 brn
+|move|p1a: Ferrothorn|Gyro Ball|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|121\/342 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Ferrothorn|184\/352 brn|[from] item: Leftovers
+|-damage|p2a: Tyranitar|79\/342 tox|[from] psn
+|-damage|p1a: Ferrothorn|140\/352 brn|[from] brn
+|turn|23
+|callback|decision
+|
+|move|p2a: Tyranitar|Crunch|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|52\/352 brn
+|-damage|p2a: Tyranitar|37\/342 tox|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|move|p1a: Ferrothorn|Gyro Ball|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Ferrothorn|74\/352 brn|[from] item: Leftovers
+|-damage|p1a: Ferrothorn|30\/352 brn|[from] brn
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|266\/304
+|-damage|p2a: Rotom-Wash|228\/304|[from] Stealth Rock
+|turn|24
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|0 fnt
+|faint|p1a: Ferrothorn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Rotom-Wash|209\/304|[from] sandstorm
+|-heal|p2a: Rotom-Wash|228\/304|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, F|324\/324
+|turn|25
+|callback|decision
+|
+|move|p1a: Aegislash|King's Shield|p1a: Aegislash
+|-singleturn|p1a: Aegislash|Protect
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Aegislash
+|-status|p1a: Aegislash|brn
+|
+|-weather|none
+|-heal|p2a: Rotom-Wash|247\/304|[from] item: Leftovers
+|-damage|p1a: Aegislash|284\/324 brn|[from] brn
+|turn|26
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Confuse Ray|p1a: Aegislash
+|-start|p1a: Aegislash|confusion
+|-activate|p1a: Aegislash|confusion
+|-damage|p1a: Aegislash|272\/324 brn|[from] confusion
+|
+|-heal|p2a: Rotom-Wash|266\/304|[from] item: Leftovers
+|-heal|p1a: Aegislash|292\/324 brn|[from] item: Leftovers
+|-damage|p1a: Aegislash|252\/324 brn|[from] brn
+|turn|27
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Aegislash
+|-crit|p1a: Aegislash
+|-damage|p1a: Aegislash|162\/324 brn
+|-activate|p1a: Aegislash|confusion
+|move|p1a: Aegislash|Swords Dance|p1a: Aegislash
+|-boost|p1a: Aegislash|atk|2
+|
+|-heal|p2a: Rotom-Wash|285\/304|[from] item: Leftovers
+|-heal|p1a: Aegislash|182\/324 brn|[from] item: Leftovers
+|-damage|p1a: Aegislash|142\/324 brn|[from] brn
+|turn|28
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Aegislash
+|-damage|p1a: Aegislash|33\/324 brn
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|-activate|p1a: Aegislash|confusion
+|move|p1a: Aegislash|Sacred Sword|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|176\/304
+|
+|-heal|p2a: Rotom-Wash|195\/304|[from] item: Leftovers
+|-heal|p1a: Aegislash|53\/324 brn|[from] item: Leftovers
+|-damage|p1a: Aegislash|13\/324 brn|[from] brn
+|turn|29
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Aegislash
+|-damage|p1a: Aegislash|0 fnt
+|faint|p1a: Aegislash
+|
+|win|antonio1999
+|raw|Ladder updating...
+|raw|Boris127's rating: 1167 &rarr; <strong>1142<\/strong><br \/>(-25 for losing)
+|raw|antonio1999's rating: 1168 &rarr; <strong>1193<\/strong><br \/>(+25 for winning)
+|leave|Boris127
+|player|p1

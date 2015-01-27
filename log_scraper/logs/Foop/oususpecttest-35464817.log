@@ -1,0 +1,378 @@
+|join|MasterDevious
+|join|Foop
+|player|p1|MasterDevious|265
+|player|p2|Foop|169
+|gametype|singles
+|tier|OU (suspect test)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Jirachi
+|poke|p1|Politoed, F
+|poke|p1|Landorus-Therian, M
+|poke|p1|Rotom-Wash
+|poke|p1|Celebi
+|poke|p1|Toxicroak, F
+|poke|p2|Tyranitar, F
+|poke|p2|Landorus-Therian, M
+|poke|p2|Garchomp, F
+|poke|p2|Jirachi
+|poke|p2|Keldeo
+|poke|p2|Latios, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|369\/369
+|switch|p2a: Latios|Latios, M|301\/301
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Latios
+|-unboost|p2a: Latios|atk|1
+|turn|1
+|callback|decision
+|
+|switch|p1a: Celebi|Celebi|404\/404
+|move|p2a: Latios|Draco Meteor|p1a: Celebi
+|-damage|p1a: Celebi|112\/404
+|-unboost|p2a: Latios|spa|2
+|
+|-heal|p1a: Celebi|137\/404|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p1a: Politoed|Politoed, F|384\/384
+|-weather|RainDance|[from] ability: Drizzle|[of] p1a: Politoed
+|move|p2a: Latios|Draco Meteor|p1a: Politoed|[miss]
+|-miss|p2a: Latios|p1a: Politoed
+|
+|-weather|RainDance|[upkeep]
+|turn|3
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, F|386\/386
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Tyranitar
+|move|p1a: Politoed|Scald|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|264\/386
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Politoed|360\/384|[from] sandstorm
+|-heal|p1a: Politoed|384\/384|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p1a: Politoed|Scald|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|148\/386
+|move|p2a: Tyranitar|Pursuit|p1a: Politoed
+|-damage|p1a: Politoed|270\/384
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Politoed|246\/384|[from] sandstorm
+|-heal|p1a: Politoed|270\/384|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|301\/301
+|move|p1a: Politoed|Scald|p2a: Latios
+|-resisted|p2a: Latios
+|-damage|p2a: Latios|262\/301
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|244\/301|[from] sandstorm
+|-damage|p1a: Politoed|246\/384|[from] sandstorm
+|-heal|p1a: Politoed|270\/384|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p1a: Toxicroak|Toxicroak, F|314\/314
+|move|p2a: Latios|Draco Meteor|p1a: Toxicroak
+|-damage|p1a: Toxicroak|0 fnt
+|-unboost|p2a: Latios|spa|2
+|faint|p1a: Toxicroak
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|226\/301|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: Jirachi|Jirachi|404\/404
+|turn|7
+|callback|decision
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|331\/331
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Jirachi
+|-unboost|p1a: Jirachi|atk|1
+|move|p1a: Jirachi|Substitute|p1a: Jirachi
+|-start|p1a: Jirachi|Substitute
+|-damage|p1a: Jirachi|303\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Jirachi|328\/404|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p1a: Jirachi|Psyshock|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|237\/331
+|move|p2a: Landorus-Therian|Rock Polish|p2a: Landorus-Therian
+|-boost|p2a: Landorus-Therian|spe|2
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Landorus-Therian|257\/331|[from] item: Leftovers
+|-heal|p1a: Jirachi|353\/404|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p2a: Landorus-Therian|Earthquake|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-end|p1a: Jirachi|Substitute
+|move|p1a: Jirachi|Psyshock|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|154\/331
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Landorus-Therian|174\/331|[from] item: Leftovers
+|-heal|p1a: Jirachi|378\/404|[from] item: Leftovers
+|turn|10
+|callback|decision
+|chat|MasterDevious|too much offensive pressure :\/
+|
+|switch|p1a: Celebi|Celebi|137\/404
+|move|p2a: Landorus-Therian|Swords Dance|p2a: Landorus-Therian
+|-boost|p2a: Landorus-Therian|atk|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Celebi|112\/404|[from] sandstorm
+|-heal|p2a: Landorus-Therian|194\/331|[from] item: Leftovers
+|-heal|p1a: Celebi|137\/404|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p2a: Landorus-Therian|Stone Edge|p1a: Celebi
+|-damage|p1a: Celebi|0 fnt
+|faint|p1a: Celebi
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Landorus-Therian|214\/331|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|369\/369
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Landorus-Therian
+|-unboost|p2a: Landorus-Therian|atk|1
+|turn|12
+|callback|decision
+|chat|Foop|kind of the point xD
+|
+|move|p2a: Landorus-Therian|Stone Edge|p1a: Landorus-Therian|[miss]
+|-miss|p2a: Landorus-Therian|p1a: Landorus-Therian
+|move|p1a: Landorus-Therian|Stone Edge|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|68\/331
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Landorus-Therian|88\/331|[from] item: Leftovers
+|turn|13
+|callback|decision
+|chat|MasterDevious|lol yeah
+|
+|move|p2a: Landorus-Therian|Stone Edge|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|195\/369
+|move|p1a: Landorus-Therian|Stone Edge|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|faint|p2a: Landorus-Therian
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Landorus-Therian|218\/369|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Keldeo|Keldeo|324\/324
+|turn|14
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|242\/242
+|move|p2a: Keldeo|Calm Mind|p2a: Keldeo
+|-boost|p2a: Keldeo|spa|1
+|-boost|p2a: Keldeo|spd|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-Wash|227\/242|[from] sandstorm
+|-damage|p2a: Keldeo|304\/324|[from] sandstorm
+|-heal|p2a: Keldeo|324\/324|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, F|358\/358
+|move|p1a: Rotom-Wash|Trick|p2a: Garchomp
+|-activate|p1a: Rotom-Wash|move: Trick|[of] p2a: Garchomp
+|-item|p2a: Garchomp|Choice Scarf|[from] move: Trick
+|-item|p1a: Rotom-Wash|Focus Sash|[from] move: Trick
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-Wash|212\/242|[from] sandstorm
+|turn|16
+|callback|decision
+|
+|move|p2a: Garchomp|Stealth Rock|p1a: Rotom-Wash
+|-sidestart|p1: MasterDevious|move: Stealth Rock
+|move|p1a: Rotom-Wash|Hidden Power|p2a: Garchomp
+|-supereffective|p2a: Garchomp
+|-damage|p2a: Garchomp|6\/358
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-Wash|197\/242|[from] sandstorm
+|turn|17
+|callback|decision
+|
+|move|p2a: Garchomp|Stealth Rock|p1a: Rotom-Wash
+|move|p1a: Rotom-Wash|Hidden Power|p2a: Garchomp
+|-supereffective|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|faint|p2a: Garchomp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-Wash|182\/242|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|226\/301
+|turn|18
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|218\/369
+|-damage|p1a: Landorus-Therian|172\/369|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Latios
+|-unboost|p2a: Latios|atk|1
+|move|p2a: Latios|Draco Meteor|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|-unboost|p2a: Latios|spa|2
+|faint|p1a: Landorus-Therian
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|208\/301|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: Politoed|Politoed, F|270\/384
+|-damage|p1a: Politoed|222\/384|[from] Stealth Rock
+|-weather|RainDance|[from] ability: Drizzle|[of] p1a: Politoed
+|turn|19
+|callback|decision
+|
+|switch|p2a: Keldeo|Keldeo|324\/324
+|move|p1a: Politoed|Scald|p2a: Keldeo
+|-resisted|p2a: Keldeo
+|-damage|p2a: Keldeo|255\/324
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Keldeo|275\/324|[from] item: Leftovers
+|-heal|p1a: Politoed|246\/384|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|182\/242
+|-damage|p1a: Rotom-Wash|152\/242|[from] Stealth Rock
+|move|p2a: Keldeo|Secret Sword|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|16\/242
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Keldeo|295\/324|[from] item: Leftovers
+|turn|21
+|callback|decision
+|chat|MasterDevious|not one burn ;_;
+|
+|move|p2a: Keldeo|Secret Sword|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Keldeo|315\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Jirachi|Jirachi|378\/404
+|-damage|p1a: Jirachi|353\/404|[from] Stealth Rock
+|turn|22
+|callback|decision
+|
+|move|p2a: Keldeo|Hydro Pump|p1a: Jirachi
+|-damage|p1a: Jirachi|8\/404
+|move|p1a: Jirachi|Substitute|p1a: Jirachi
+|-fail|p1a: Jirachi|move: Substitute|[weak]
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Keldeo|324\/324|[from] item: Leftovers
+|-heal|p1a: Jirachi|33\/404|[from] item: Leftovers
+|turn|23
+|callback|decision
+|chat|MasterDevious|well gg
+|
+|move|p2a: Keldeo|Secret Sword|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|faint|p1a: Jirachi
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|chat|Foop|you too
+|
+|switch|p1a: Politoed|Politoed, F|246\/384
+|-damage|p1a: Politoed|198\/384|[from] Stealth Rock
+|turn|24
+|callback|decision
+|chat|Foop|were you expecting surf when you switched in croak before?
+|
+|move|p2a: Keldeo|Secret Sword|p1a: Politoed
+|-damage|p1a: Politoed|60\/384
+|move|p1a: Politoed|Perish Song|p1a: Politoed
+|-fieldactivate|move: Perish Song
+|
+|-start|p2a: Keldeo|perish3
+|-start|p1a: Politoed|perish3
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Politoed|84\/384|[from] item: Leftovers
+|turn|25
+|callback|decision
+|chat|Foop|what a way to go out
+|chat|MasterDevious|when was that?
+|
+|move|p2a: Keldeo|Calm Mind|p2a: Keldeo
+|-boost|p2a: Keldeo|spa|1
+|-boost|p2a: Keldeo|spd|1
+|move|p1a: Politoed|Perish Song|p1a: Politoed
+|-fieldactivate|move: Perish Song
+|
+|-start|p2a: Keldeo|perish2
+|-start|p1a: Politoed|perish2
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Politoed|108\/384|[from] item: Leftovers
+|turn|26
+|callback|decision
+|chat|Foop|the only time you switched in croak xD
+|
+|move|p2a: Keldeo|Calm Mind|p2a: Keldeo
+|-boost|p2a: Keldeo|spa|1
+|-boost|p2a: Keldeo|spd|1
+|move|p1a: Politoed|Perish Song|p1a: Politoed
+|-fieldactivate|move: Perish Song
+|
+|-start|p2a: Keldeo|perish1
+|-start|p1a: Politoed|perish1
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Politoed|132\/384|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, F|148\/386
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Tyranitar
+|move|p1a: Politoed|Toxic|p2a: Tyranitar
+|-status|p2a: Tyranitar|tox
+|
+|-start|p1a: Politoed|perish0
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Tyranitar|124\/386 tox|[from] psn
+|faint|p1a: Politoed
+|
+|win|Foop
+|raw|Ladder updating...
+|chat|Foop|gg
+|raw|Ladder (probably) updated, but score could not be retrieved (timeout).
+|raw|Ladder (probably) updated, but score could not be retrieved (Error: socket hang up).
+|chat|MasterDevious|not too sure tbh

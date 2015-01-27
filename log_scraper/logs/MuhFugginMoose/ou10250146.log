@@ -1,0 +1,522 @@
+|join|MuhFugginMoose
+|join|Molotai
+|player|p1|MuhFugginMoose|2
+|player|p2|Molotai|102
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Tyranitar, F
+|poke|p1|Breloom, M
+|poke|p1|Hippowdon, F
+|poke|p1|Vaporeon, F
+|poke|p1|Reuniclus, M
+|poke|p1|Forretress, M
+|poke|p2|Infernape, M
+|poke|p2|Milotic, F, shiny
+|poke|p2|Ferrothorn, F
+|poke|p2|Gliscor, M
+|poke|p2|Hydreigon, M
+|poke|p2|Scizor, M
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: BallO'Haz|Forretress, M| (48\/48)
+|switch|p2a: Sun-Wukong|Infernape, M| (48\/48)
+|turn|1
+|callback|decision
+|
+|switch|p1a: Salz|Vaporeon, F| (48\/48)
+|move|p2a: Sun-Wukong|Fake Out|p1a: Salz
+|-damage|p1a: Salz|8 (44\/48)
+|
+|-heal|p1a: Salz|6 (47\/48)|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p1a: BallO'Haz|Forretress, M| (48\/48)
+|move|p2a: Sun-Wukong|Close Combat|p1a: BallO'Haz
+|-damage|p1a: BallO'Haz|39 (29\/48)
+|-unboost|p2a: Sun-Wukong|def|1
+|-unboost|p2a: Sun-Wukong|spd|1
+|
+|-heal|p1a: BallO'Haz|6 (32\/48)|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p1a: Salz|Vaporeon, F| (47\/48)
+|move|p2a: Sun-Wukong|Overheat|p1a: Salz
+|-resisted|p1a: Salz
+|-damage|p1a: Salz|18 (37\/48)
+|-unboost|p2a: Sun-Wukong|spa|2
+|
+|-heal|p1a: Salz|6 (40\/48)|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Sun-Wukong|U-turn|p1a: Salz
+|-damage|p1a: Salz|16 (32\/48)
+|callback|decision
+|
+|switch|p2a: Rockroach|Ferrothorn, F| (48\/48)
+|move|p1a: Salz|Wish|p1a: Salz
+|
+|-heal|p1a: Salz|6 (35\/48)|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1a: BallO'Haz|Forretress, M| (32\/48)
+|switch|p2a: Hydreigon|Hydreigon, M| (48\/48)
+|
+|-heal|p1a: BallO'Haz|33 (48\/48)|[from] move: Wish|[wisher] Salz
+|turn|6
+|callback|decision
+|
+|move|p2a: Hydreigon|Draco Meteor|p1a: BallO'Haz
+|-resisted|p1a: BallO'Haz
+|-damage|p1a: BallO'Haz|35 (31\/48)
+|-unboost|p2a: Hydreigon|spa|2
+|move|p1a: BallO'Haz|Stealth Rock|p2a: Hydreigon
+|-sidestart|p2: Molotai|move: Stealth Rock
+|
+|-heal|p1a: BallO'Haz|6 (33\/48)|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p2a: Rockroach|Ferrothorn, F| (48\/48)
+|-damage|p2a: Rockroach|6 (45\/48)|[from] Stealth Rock
+|move|p1a: BallO'Haz|Spikes|p2a: Rockroach
+|-sidestart|p2: Molotai|Spikes
+|
+|-heal|p1a: BallO'Haz|6 (36\/48)|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p1a: BallO'Haz|Spikes|p2a: Rockroach
+|-sidestart|p2: Molotai|Spikes
+|move|p2a: Rockroach|Leech Seed|p1a: BallO'Haz
+|-start|p1a: BallO'Haz|move: Leech Seed
+|
+|-heal|p1a: BallO'Haz|6 (39\/48)|[from] item: Leftovers
+|-damage|p1a: BallO'Haz|12 (33\/48)|[from] Leech Seed|[of] p2a: Rockroach
+|-heal|p2a: Rockroach|6 (48\/48)|[silent]
+|turn|9
+|callback|decision
+|
+|move|p1a: BallO'Haz|Rapid Spin|p2a: Rockroach
+|-resisted|p2a: Rockroach
+|-damage|p2a: Rockroach|2 (47\/48)
+|-damage|p1a: BallO'Haz|12 (28\/48)|[from] ability: Iron Barbs|[of] p2a: Rockroach
+|-damage|p1a: BallO'Haz|16 (20\/48)|[from] item: Rocky Helmet|[of] p2a: Rockroach
+|-end|p1a: BallO'Haz|Leech Seed|[from] move: Rapid Spin|[of] p1a: BallO'Haz
+|move|p2a: Rockroach|Stealth Rock|p1a: BallO'Haz
+|-sidestart|p1: MuhFugginMoose|move: Stealth Rock
+|
+|-heal|p1a: BallO'Haz|6 (23\/48)|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p1a: BallO'Haz|Spikes|p2a: Rockroach
+|-sidestart|p2: Molotai|Spikes
+|move|p2a: Rockroach|Leech Seed|p1a: BallO'Haz
+|-start|p1a: BallO'Haz|move: Leech Seed
+|
+|-heal|p1a: BallO'Haz|6 (25\/48)|[from] item: Leftovers
+|-damage|p1a: BallO'Haz|12 (20\/48)|[from] Leech Seed|[of] p2a: Rockroach
+|-heal|p2a: Rockroach|2 (48\/48)|[silent]
+|turn|11
+|callback|decision
+|
+|move|p1a: BallO'Haz|Rapid Spin|p2a: Rockroach
+|-resisted|p2a: Rockroach
+|-damage|p2a: Rockroach|2 (47\/48)
+|-damage|p1a: BallO'Haz|12 (14\/48)|[from] ability: Iron Barbs|[of] p2a: Rockroach
+|-damage|p1a: BallO'Haz|16 (6\/48)|[from] item: Rocky Helmet|[of] p2a: Rockroach
+|-end|p1a: BallO'Haz|Leech Seed|[from] move: Rapid Spin|[of] p1a: BallO'Haz
+|-sideend|p1: MuhFugginMoose|Stealth Rock|[from] move: Rapid Spin|[of] p1a: BallO'Haz
+|move|p2a: Rockroach|Stealth Rock|p1a: BallO'Haz
+|-sidestart|p1: MuhFugginMoose|move: Stealth Rock
+|
+|-heal|p1a: BallO'Haz|6 (9\/48)|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p1a: Rittz|Reuniclus, M| (48\/48)
+|move|p2a: Rockroach|Stealth Rock|p1a: Rittz
+|
+|turn|13
+|callback|decision
+|
+|switch|p2a: Milotic|Milotic, F, shiny| (48\/48)
+|-damage|p2a: Milotic|12 (42\/48)|[from] Stealth Rock
+|-damage|p2a: Milotic|25 (30\/48)|[from] Spikes
+|move|p1a: Rittz|Trick Room|p1a: Rittz
+|-fieldstart|move: Trick Room|[of] p1a: Rittz
+|
+|-heal|p2a: Milotic|6 (33\/48)|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: Rittz|Psychic|p2a: Milotic
+|-damage|p2a: Milotic|37 (15\/48)
+|move|p2a: Milotic|Recover|p2a: Milotic
+|-heal|p2a: Milotic|50 (39\/48)
+|
+|-heal|p2a: Milotic|6 (42\/48)|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1a: Rittz|Psychic|p2a: Milotic
+|-damage|p2a: Milotic|39 (23\/48)
+|move|p2a: Milotic|Scald|p1a: Rittz
+|-damage|p1a: Rittz|25 (36\/48)
+|
+|-heal|p2a: Milotic|6 (26\/48)|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Rittz|Psychic|p2a: Milotic
+|-damage|p2a: Milotic|37 (8\/48)
+|move|p2a: Milotic|Recover|p2a: Milotic
+|-heal|p2a: Milotic|50 (32\/48)
+|
+|-heal|p2a: Milotic|6 (35\/48)|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Rittz|Psychic|p2a: Milotic
+|-damage|p2a: Milotic|39 (16\/48)
+|move|p2a: Milotic|Recover|p2a: Milotic
+|-heal|p2a: Milotic|50 (40\/48)
+|
+|-heal|p2a: Milotic|6 (43\/48)|[from] item: Leftovers
+|-fieldend|move: Trick Room
+|turn|18
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M| (48\/48)
+|-damage|p2a: Scizor|12 (42\/48)|[from] Stealth Rock
+|-damage|p2a: Scizor|25 (30\/48)|[from] Spikes
+|move|p1a: Rittz|Trick Room|p1a: Rittz
+|-fieldstart|move: Trick Room|[of] p1a: Rittz
+|
+|turn|19
+|callback|decision
+|
+|move|p1a: Rittz|Focus Blast|p2a: Scizor
+|-damage|p2a: Scizor|62 (0\/48 fnt)
+|faint|p2a: Scizor
+|
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, M| (48\/48)
+|-damage|p2a: Gliscor|12 (42\/48)|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|move|p1a: Rittz|Psychic|p2a: Gliscor
+|-damage|p2a: Gliscor|83 (2\/48)
+|move|p2a: Gliscor|Earthquake|p1a: Rittz
+|-damage|p1a: Rittz|39 (17\/48)
+|
+|-activate|p2a: Gliscor|item: Toxic Orb
+|-status|p2a: Gliscor|tox
+|turn|21
+|callback|decision
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Rittz|Psychic|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-heal|p2a: Gliscor|12 (8\/48 tox)|[from] ability: Poison Heal
+|turn|22
+|callback|decision
+|
+|switch|p2a: Hydreigon|Hydreigon, M| (48\/48)
+|-damage|p2a: Hydreigon|12 (42\/48)|[from] Stealth Rock
+|move|p1a: Rittz|Psychic|p2a: Hydreigon
+|-immune|p2a: Hydreigon|[msg]
+|
+|-fieldend|move: Trick Room
+|turn|23
+|callback|decision
+|
+|switch|p1a: BallO'Haz|Forretress, M| (9\/48)
+|-damage|p1a: BallO'Haz|12 (3\/48)|[from] Stealth Rock
+|move|p2a: Hydreigon|Flamethrower|p1a: BallO'Haz
+|-supereffective|p1a: BallO'Haz
+|-damage|p1a: BallO'Haz|6 (0\/48 fnt)
+|faint|p1a: BallO'Haz
+|
+|callback|decision
+|
+|switch|p1a: Tec|Breloom, M| (48\/48)
+|-damage|p1a: Tec|6 (45\/48)|[from] Stealth Rock
+|turn|24
+|callback|decision
+|
+|move|p2a: Hydreigon|Flamethrower|p1a: Tec
+|-supereffective|p1a: Tec
+|-damage|p1a: Tec|93 (0\/48 fnt)
+|faint|p1a: Tec
+|
+|callback|decision
+|
+|switch|p1a: Rytanirat|Tyranitar, F| (48\/48)
+|-damage|p1a: Rytanirat|12 (42\/48)|[from] Stealth Rock
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Rytanirat
+|turn|25
+|callback|decision
+|
+|switch|p2a: Rockroach|Ferrothorn, F| (47\/48)
+|-damage|p2a: Rockroach|6 (44\/48)|[from] Stealth Rock
+|-damage|p2a: Rockroach|25 (32\/48)|[from] Spikes
+|move|p1a: Rytanirat|Rest|p1a: Rytanirat
+|-status|p1a: Rytanirat|slp
+|-heal|p1a: Rytanirat|12 (48\/48 slp)|[silent]
+|-status|p1a: Rytanirat|slp|[from] move: Rest
+|
+|-weather|Sandstorm|[upkeep]
+|turn|26
+|callback|decision
+|
+|cant|p1a: Rytanirat|slp
+|move|p1a: Rytanirat|Sleep Talk|p1a: Rytanirat
+|move|p1a: Rytanirat|Rest|p1a: Rytanirat|[from]Sleep Talk
+|-fail|p1a: Rytanirat
+|move|p2a: Rockroach|Leech Seed|p1a: Rytanirat
+|-start|p1a: Rytanirat|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rytanirat|12 (42\/48 slp)|[from] Leech Seed|[of] p2a: Rockroach
+|-heal|p2a: Rockroach|14 (39\/48)|[silent]
+|turn|27
+|callback|decision
+|
+|cant|p1a: Rytanirat|slp
+|move|p1a: Rytanirat|Sleep Talk|p1a: Rytanirat
+|move|p1a: Rytanirat|Curse|p1a: Rytanirat|[from]Sleep Talk
+|-boost|p1a: Rytanirat|atk|1
+|-boost|p1a: Rytanirat|def|1
+|-unboost|p1a: Rytanirat|spe|1
+|move|p2a: Rockroach|Gyro Ball|p1a: Rytanirat
+|-supereffective|p1a: Rytanirat
+|-damage|p1a: Rytanirat|25 (30\/48 slp)
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Rytanirat|6 (33\/48 slp)|[from] item: Leftovers
+|-damage|p1a: Rytanirat|12 (27\/48 slp)|[from] Leech Seed|[of] p2a: Rockroach
+|-heal|p2a: Rockroach|14 (46\/48)|[silent]
+|turn|28
+|callback|decision
+|
+|-curestatus|p1a: Rytanirat|slp
+|move|p1a: Rytanirat|Curse|p1a: Rytanirat
+|-boost|p1a: Rytanirat|atk|1
+|-boost|p1a: Rytanirat|def|1
+|-unboost|p1a: Rytanirat|spe|1
+|move|p2a: Rockroach|Power Whip|p1a: Rytanirat
+|-crit|p1a: Rytanirat
+|-supereffective|p1a: Rytanirat
+|-damage|p1a: Rytanirat|56 (0\/48 fnt)
+|faint|p1a: Rytanirat
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|chat|MuhFugginMoose|T_T
+|
+|switch|p1a: MawMaw|Hippowdon, F| (48\/48)
+|-damage|p1a: MawMaw|6 (45\/48)|[from] Stealth Rock
+|turn|29
+|callback|decision
+|chat|Molotai|sorrie :(
+|
+|move|p1a: MawMaw|Ice Fang|p2a: Rockroach
+|-damage|p2a: Rockroach|18 (37\/48)
+|-damage|p1a: MawMaw|12 (39\/48)|[from] ability: Iron Barbs|[of] p2a: Rockroach
+|-damage|p1a: MawMaw|16 (31\/48)|[from] item: Rocky Helmet|[of] p2a: Rockroach
+|-damage|p1a: MawMaw|10 (26\/48)|[from] item: Life Orb
+|move|p2a: Rockroach|Leech Seed|p1a: MawMaw
+|-start|p1a: MawMaw|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: MawMaw|12 (21\/48)|[from] Leech Seed|[of] p2a: Rockroach
+|-heal|p2a: Rockroach|14 (44\/48)|[silent]
+|turn|30
+|callback|decision
+|
+|move|p1a: MawMaw|Earthquake|p2a: Rockroach
+|-damage|p2a: Rockroach|50 (20\/48)
+|-damage|p1a: MawMaw|10 (16\/48)|[from] item: Life Orb
+|move|p2a: Rockroach|Power Whip|p1a: MawMaw
+|-supereffective|p1a: MawMaw
+|-damage|p1a: MawMaw|33 (0\/48 fnt)
+|faint|p1a: MawMaw
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Rittz|Reuniclus, M| (17\/48)
+|turn|31
+|callback|decision
+|
+|switch|p2a: Milotic|Milotic, F, shiny| (43\/48)
+|-damage|p2a: Milotic|12 (37\/48)|[from] Stealth Rock
+|-damage|p2a: Milotic|25 (25\/48)|[from] Spikes
+|move|p1a: Rittz|Trick Room|p1a: Rittz
+|-fieldstart|move: Trick Room|[of] p1a: Rittz
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Milotic|6 (22\/48)|[from] sandstorm
+|-heal|p2a: Milotic|6 (25\/48)|[from] item: Leftovers
+|turn|32
+|callback|decision
+|
+|move|p1a: Rittz|Psychic|p2a: Milotic
+|-crit|p2a: Milotic
+|-damage|p2a: Milotic|52 (0\/48 fnt)
+|faint|p2a: Milotic
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Sun-Wukong|Infernape, M| (48\/48)
+|-damage|p2a: Sun-Wukong|25 (36\/48)|[from] Spikes
+|-damage|p2a: Sun-Wukong|12 (30\/48)|[from] Stealth Rock
+|turn|33
+|callback|decision
+|
+|move|p2a: Sun-Wukong|Fake Out|p1a: Rittz
+|-damage|p1a: Rittz|10 (12\/48)
+|cant|p1a: Rittz|flinch
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Sun-Wukong|6 (27\/48)|[from] sandstorm
+|turn|34
+|callback|decision
+|
+|switch|p2a: Hydreigon|Hydreigon, M| (42\/48)
+|-damage|p2a: Hydreigon|12 (36\/48)|[from] Stealth Rock
+|move|p1a: Rittz|Focus Blast|p2a: Hydreigon
+|-supereffective|p2a: Hydreigon
+|-damage|p2a: Hydreigon|75 (0\/48 fnt)
+|faint|p2a: Hydreigon
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, M| (8\/48 tox)
+|-damage|p2a: Gliscor|12 (2\/48 tox)|[from] Stealth Rock
+|turn|35
+|callback|decision
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Rittz|Psychic|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Gliscor|12 (8\/48 tox)|[from] ability: Poison Heal
+|-fieldend|move: Trick Room
+|turn|36
+|callback|decision
+|
+|move|p2a: Gliscor|Earthquake|p1a: Rittz
+|-damage|p1a: Rittz|25 (0\/48 fnt)
+|faint|p1a: Rittz
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Gliscor|12 (14\/48 tox)|[from] ability: Poison Heal
+|callback|decision
+|
+|switch|p1a: Salz|Vaporeon, F| (35\/48)
+|-damage|p1a: Salz|12 (29\/48)|[from] Stealth Rock
+|turn|37
+|callback|decision
+|
+|move|p2a: Gliscor|Fling|p1a: Salz
+|-enditem|p2a: Gliscor|Toxic Orb|[from] move: Fling
+|-damage|p1a: Salz|6 (27\/48)
+|-status|p1a: Salz|tox
+|move|p1a: Salz|Wish|p1a: Salz
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salz|6 (24\/48 tox)|[from] sandstorm
+|-heal|p1a: Salz|6 (27\/48 tox)|[from] item: Leftovers
+|-heal|p2a: Gliscor|12 (20\/48 tox)|[from] ability: Poison Heal
+|-damage|p1a: Salz|6 (24\/48 tox)|[from] psn
+|turn|38
+|callback|decision
+|
+|move|p2a: Gliscor|Acrobatics|p1a: Salz
+|-damage|p1a: Salz|29 (10\/48 tox)
+|move|p1a: Salz|Heal Bell|p1a: Salz
+|-cureteam|p1a: Salz|[from] move: HealBell
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salz|6 (7\/48)|[from] sandstorm
+|-heal|p1a: Salz|50 (31\/48)|[from] move: Wish|[wisher] Salz
+|-heal|p1a: Salz|6 (34\/48)|[from] item: Leftovers
+|-heal|p2a: Gliscor|12 (26\/48 tox)|[from] ability: Poison Heal
+|turn|39
+|callback|decision
+|
+|move|p2a: Gliscor|Acrobatics|p1a: Salz
+|-damage|p1a: Salz|31 (19\/48)
+|move|p1a: Salz|Scald|p2a: Gliscor
+|-supereffective|p2a: Gliscor
+|-damage|p2a: Gliscor|54 (0\/48 fnt)
+|faint|p2a: Gliscor
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salz|6 (16\/48)|[from] sandstorm
+|-heal|p1a: Salz|6 (19\/48)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Sun-Wukong|Infernape, M| (27\/48)
+|-damage|p2a: Sun-Wukong|12 (21\/48)|[from] Stealth Rock
+|-damage|p2a: Sun-Wukong|25 (9\/48)|[from] Spikes
+|turn|40
+|callback|decision
+|
+|move|p1a: Salz|Protect|p1a: Salz
+|-singleturn|p1a: Salz|Protect
+|move|p2a: Sun-Wukong|Fake Out|p1a: Salz
+|-activate|p1a: Salz|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Sun-Wukong|6 (6\/48)|[from] sandstorm
+|-damage|p1a: Salz|6 (16\/48)|[from] sandstorm
+|-heal|p1a: Salz|6 (19\/48)|[from] item: Leftovers
+|turn|41
+|callback|decision
+|
+|move|p2a: Sun-Wukong|Close Combat|p1a: Salz
+|-damage|p1a: Salz|37 (1\/48)
+|-unboost|p2a: Sun-Wukong|def|1
+|-unboost|p2a: Sun-Wukong|spd|1
+|move|p1a: Salz|Wish|p1a: Salz
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Sun-Wukong|6 (3\/48)|[from] sandstorm
+|-damage|p1a: Salz|2 (0\/48 fnt)|[from] sandstorm
+|faint|p1a: Salz
+|
+|win|Molotai
+|raw|Ladder updating...
+|raw|MuhFugginMoose's rating: 1552 &rarr; <strong>1532<\/strong><br \/>(-20 for losing)
+|raw|Molotai's rating: 1418 &rarr; <strong>1430<\/strong><br \/>(+12 for winning)
+|chat|MuhFugginMoose|gg sucks leftys doesnt heal first
+|chat|Molotai|Damn good battle
+|chat|MuhFugginMoose|haha i appreciate it you too
+|chat|Molotai|See you around!
+|leave|MuhFugginMoose
+|player|p1

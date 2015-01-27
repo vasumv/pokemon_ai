@@ -1,0 +1,232 @@
+|join|livEnwolC
+|join|downupside
+|player|p1|livEnwolC|59
+|player|p2|downupside|266
+|gametype|singles
+|tier|OU (beta)
+|rated
+|clearpoke
+|poke|p1|Pinsir, F
+|poke|p1|Rotom-Wash
+|poke|p1|Tentacruel, M
+|poke|p1|Scizor, F
+|poke|p1|Blissey, F, shiny
+|poke|p1|Houndoom, F
+|poke|p2|Starmie
+|poke|p2|Garchomp, M
+|poke|p2|Politoed, F
+|poke|p2|Azumarill, F
+|poke|p2|Electivire, F
+|poke|p2|Aegislash, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Scrotom-Wash|Rotom-Wash|296\/296
+|switch|p2a: Politoed|Politoed, F|384\/384
+|-weather|RainDance
+|turn|1
+|callback|decision
+|
+|move|p1a: Scrotom-Wash|Will-O-Wisp|p2a: Politoed
+|-status|p2a: Politoed|brn
+|move|p2a: Politoed|Perish Song|p2a: Politoed
+|-fieldactivate|move: Perish Song
+|
+|-start|p1a: Scrotom-Wash|perish3
+|-start|p2a: Politoed|perish3
+|-weather|RainDance|[upkeep]
+|-damage|p2a: Politoed|336\/384 brn|[from] brn
+|turn|2
+|callback|decision
+|
+|switch|p2a: Electivire|Electivire, F|292\/292
+|move|p1a: Scrotom-Wash|Volt Switch|p2a: Electivire
+|-boost|p2a: Electivire|spe|1|[from] ability: Motor Drive
+|
+|-start|p1a: Scrotom-Wash|perish2
+|-weather|RainDance|[upkeep]
+|turn|3
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, F|336\/384 brn
+|move|p1a: Scrotom-Wash|Will-O-Wisp|p2a: Politoed
+|-fail|p2a: Politoed|brn
+|
+|-start|p1a: Scrotom-Wash|perish1
+|-weather|RainDance|[upkeep]
+|-damage|p2a: Politoed|288\/384 brn|[from] brn
+|turn|4
+|callback|decision
+|
+|switch|p1a: Big Bitch|Blissey, F, shiny|714\/714
+|move|p2a: Politoed|Perish Song|p2a: Politoed
+|-fieldactivate|move: Perish Song
+|
+|-start|p2a: Politoed|perish3
+|-start|p1a: Big Bitch|perish3
+|-weather|RainDance|[upkeep]
+|-damage|p2a: Politoed|240\/384 brn|[from] brn
+|turn|5
+|callback|decision
+|
+|switch|p2a: Aegislash|Aegislash, M|324\/324
+|move|p1a: Big Bitch|Seismic Toss|p2a: Aegislash
+|-immune|p2a: Aegislash|[msg]
+|
+|-start|p1a: Big Bitch|perish2
+|-weather|RainDance|[upkeep]
+|turn|6
+|callback|decision
+|
+|move|p2a: Aegislash|Swords Dance|p2a: Aegislash
+|-boost|p2a: Aegislash|atk|2
+|move|p1a: Big Bitch|Thunder Wave|p2a: Aegislash
+|-status|p2a: Aegislash|par
+|
+|-start|p1a: Big Bitch|perish1
+|-weather|RainDance|[upkeep]
+|turn|7
+|callback|decision
+|
+|switch|p1a: Scrotom-Wash|Rotom-Wash|296\/296
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Sacred Sword|p1a: Scrotom-Wash
+|-damage|p1a: Scrotom-Wash|114\/296
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Scrotom-Wash|132\/296|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p2a: Aegislash|Shadow Sneak|p1a: Scrotom-Wash
+|-damage|p1a: Scrotom-Wash|15\/296
+|move|p1a: Scrotom-Wash|Thunderbolt|p2a: Aegislash
+|-damage|p2a: Aegislash|123\/324 par
+|
+|-weather|none
+|-heal|p1a: Scrotom-Wash|33\/296|[from] item: Leftovers
+|-heal|p2a: Aegislash|143\/324 par|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p2a: Aegislash|Shadow Sneak|p1a: Scrotom-Wash
+|-damage|p1a: Scrotom-Wash|0 fnt
+|faint|p1a: Scrotom-Wash
+|
+|-heal|p2a: Aegislash|163\/324 par|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Pinsir|Pinsir, F|334\/334
+|turn|10
+|callback|decision
+|
+|move|p2a: Aegislash|Shadow Sneak|p1a: Pinsir
+|-damage|p1a: Pinsir|171\/334
+|move|p1a: Pinsir|Earthquake|p2a: Aegislash
+|-supereffective|p2a: Aegislash
+|-damage|p2a: Aegislash|0 fnt
+|faint|p2a: Aegislash
+|-boost|p1a: Pinsir|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, F|240\/384 brn
+|-weather|RainDance
+|turn|11
+|callback|decision
+|
+|-formechange|p1a: Pinsir|Pinsir-Mega
+|message|Pinsir has Mega Evolved into Mega Pinsir!
+|move|p1a: Pinsir|Quick Attack|p2a: Politoed
+|-damage|p2a: Politoed|2\/384 brn
+|move|p2a: Politoed|Ice Beam|p1a: Pinsir
+|-supereffective|p1a: Pinsir
+|-damage|p1a: Pinsir|0 fnt
+|faint|p1a: Pinsir
+|
+|-weather|RainDance|[upkeep]
+|-damage|p2a: Politoed|0 fnt|[from] brn
+|faint|p2a: Politoed
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, M|358\/358
+|switch|p1a: Tentacruel|Tentacruel, M|364\/364
+|turn|12
+|callback|decision
+|
+|switch|p1a: Big Bitch|Blissey, F, shiny|714\/714
+|-formechange|p2a: Garchomp|Garchomp-Mega
+|message|Garchomp has Mega Evolved into Mega Garchomp!
+|move|p2a: Garchomp|Earthquake|p1a: Big Bitch
+|-damage|p1a: Big Bitch|335\/714
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Big Bitch|379\/714|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: Big Bitch|Protect|p1a: Big Bitch
+|-singleturn|p1a: Big Bitch|Protect
+|move|p2a: Garchomp|Swords Dance|p2a: Garchomp
+|-boost|p2a: Garchomp|atk|2
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Big Bitch|423\/714|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p2a: Garchomp|Earthquake|p1a: Big Bitch
+|-damage|p1a: Big Bitch|0 fnt
+|faint|p1a: Big Bitch
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Mr. Krabs|Scizor, F|344\/344
+|turn|15
+|callback|decision
+|
+|move|p2a: Garchomp|Earthquake|p1a: Mr. Krabs
+|-damage|p1a: Mr. Krabs|0 fnt
+|faint|p1a: Mr. Krabs
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Tentacruel|Tentacruel, M|364\/364
+|turn|16
+|callback|decision
+|
+|move|p2a: Garchomp|Earthquake|p1a: Tentacruel
+|-supereffective|p1a: Tentacruel
+|-damage|p1a: Tentacruel|0 fnt
+|faint|p1a: Tentacruel
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Houndoom|Houndoom, F|292\/292
+|turn|17
+|callback|decision
+|
+|move|p1a: Houndoom|Shadow Ball|p2a: Garchomp
+|-damage|p2a: Garchomp|272\/358
+|move|p2a: Garchomp|Earthquake|p1a: Houndoom
+|-supereffective|p1a: Houndoom
+|-damage|p1a: Houndoom|0 fnt
+|faint|p1a: Houndoom
+|
+|win|downupside
+|raw|Ladder updating...
+|raw|livEnwolC's rating: 1846 &rarr; <strong>1841<\/strong><br \/>(-5 for losing)
+|raw|downupside's rating: 1635 &rarr; <strong>1641<\/strong><br \/>(+6 for winning)
+|chat|downupside|gg
+|leave|livEnwolC
+|player|p1

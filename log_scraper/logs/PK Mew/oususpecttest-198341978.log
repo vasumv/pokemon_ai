@@ -1,0 +1,283 @@
+|join|PK Mew
+|join|noideaxd
+|player|p1|PK Mew|209
+|player|p2|noideaxd|45
+|gametype|singles
+|gen|6
+|tier|OU (suspect test)
+|rated
+|clearpoke
+|poke|p1|Gyarados, M
+|poke|p1|Heatran, F
+|poke|p1|Ferrothorn, M
+|poke|p1|Landorus-Therian, M
+|poke|p1|Thundurus, M
+|poke|p1|Latias, F
+|poke|p2|Heatran, M
+|poke|p2|Ferrothorn, M
+|poke|p2|Latios, M
+|poke|p2|Manaphy
+|poke|p2|Gengar, M
+|poke|p2|Scizor, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Heatran|Heatran, F|327\/327
+|switch|p2a: Heatran|Heatran, M|326\/326
+|-item|p2a: Heatran|Air Balloon
+|-item|p1a: Heatran|Air Balloon
+|turn|1
+|
+|move|p2a: Heatran|Taunt|p1a: Heatran
+|-start|p1a: Heatran|move: Taunt
+|move|p1a: Heatran|Ancient Power|p2a: Heatran
+|-damage|p2a: Heatran|255\/326
+|-enditem|p2a: Heatran|Air Balloon
+|
+|turn|2
+|
+|switch|p2a: Gengar|Gengar, M|261\/261
+|move|p1a: Heatran|Earth Power|p2a: Gengar
+|-immune|p2a: Gengar|[msg]
+|
+|turn|3
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|352\/352
+|move|p2a: Gengar|Focus Blast|p1a: Ferrothorn|[miss]
+|-miss|p2a: Gengar|p1a: Ferrothorn
+|
+|turn|4
+|
+|move|p2a: Gengar|Focus Blast|p1a: Ferrothorn
+|-supereffective|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|61\/352
+|-damage|p2a: Gengar|235\/261|[from] item: Life Orb
+|move|p1a: Ferrothorn|Knock Off|p2a: Gengar
+|-supereffective|p2a: Gengar
+|-damage|p2a: Gengar|35\/261
+|-enditem|p2a: Gengar|Life Orb|[from] move: Knock Off|[of] p1a: Ferrothorn
+|
+|-heal|p1a: Ferrothorn|83\/352|[from] item: Leftovers
+|turn|5
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Gengar
+|-unboost|p2a: Gengar|atk|1
+|move|p2a: Gengar|Shadow Ball|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|157\/319
+|
+|turn|6
+|
+|move|p1a: Landorus-Therian|Knock Off|p2a: Gengar
+|-supereffective|p2a: Gengar
+|-damage|p2a: Gengar|0 fnt
+|faint|p2a: Gengar
+|
+|
+|switch|p2a: Heatran|Heatran, M|255\/326
+|turn|7
+|
+|switch|p1a: Heatran|Heatran, F|327\/327
+|-item|p1a: Heatran|Air Balloon
+|switch|p2a: Latios|Latios, M|301\/301
+|
+|turn|8
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|83\/352
+|move|p2a: Latios|Psyshock|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|41\/352
+|
+|-heal|p1a: Ferrothorn|63\/352|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Heatran|Heatran, M|255\/326
+|move|p1a: Ferrothorn|Knock Off|p2a: Heatran
+|-crit|p2a: Heatran
+|-damage|p2a: Heatran|190\/326
+|
+|-heal|p1a: Ferrothorn|85\/352|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Heatran|Heatran, F|327\/327
+|-item|p1a: Heatran|Air Balloon
+|move|p2a: Heatran|Stealth Rock|p1a: Heatran
+|-sidestart|p1: PK Mew|move: Stealth Rock
+|
+|turn|11
+|
+|switch|p2a: Scizor|Scizor, M|281\/281
+|move|p1a: Heatran|Earth Power|p2a: Scizor
+|-damage|p2a: Scizor|151\/281
+|
+|turn|12
+|
+|detailschange|p2a: Scizor|Scizor-Mega, M
+|-mega|p2a: Scizor|Scizor|Scizorite
+|move|p1a: Heatran|Magma Storm|p2a: Scizor
+|-supereffective|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|faint|p2a: Scizor
+|
+|
+|switch|p2a: Manaphy|Manaphy|365\/365
+|turn|13
+|
+|switch|p1a: Latias|Latias, F|305\/305
+|-damage|p1a: Latias|267\/305|[from] Stealth Rock
+|move|p2a: Manaphy|Tail Glow|p2a: Manaphy
+|-boost|p2a: Manaphy|spa|3
+|
+|turn|14
+|
+|move|p1a: Latias|Defog|p2a: Manaphy
+|-unboost|p2a: Manaphy|evasion|1
+|-sideend|p1: PK Mew|Stealth Rock|[from] move: Defog|[of] p1a: Latias
+|move|p2a: Manaphy|Ice Beam|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|0 fnt
+|faint|p1a: Latias
+|
+|
+|switch|p1a: Thundurus|Thundurus, M|299\/299
+|turn|15
+|
+|move|p1a: Thundurus|Thunderbolt|p2a: Manaphy
+|-supereffective|p2a: Manaphy
+|-damage|p2a: Manaphy|0 fnt
+|-damage|p1a: Thundurus|270\/299|[from] item: Life Orb
+|faint|p2a: Manaphy
+|
+|
+|switch|p2a: Latios|Latios, M|301\/301
+|turn|16
+|
+|move|p1a: Thundurus|Thunder Wave|p2a: Latios
+|-status|p2a: Latios|par
+|move|p2a: Latios|Draco Meteor|p1a: Thundurus
+|-damage|p1a: Thundurus|0 fnt
+|-unboost|p2a: Latios|spa|2
+|faint|p1a: Thundurus
+|
+|
+|switch|p1a: Heatran|Heatran, F|327\/327
+|-item|p1a: Heatran|Air Balloon
+|turn|17
+|
+|switch|p2a: Heatran|Heatran, M|190\/326
+|move|p1a: Heatran|Flash Cannon|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|157\/326
+|
+|turn|18
+|
+|move|p2a: Heatran|Stealth Rock|p1a: Heatran
+|-sidestart|p1: PK Mew|move: Stealth Rock
+|move|p1a: Heatran|Earth Power|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|faint|p2a: Heatran
+|
+|
+|switch|p2a: Latios|Latios, M|301\/301 par
+|turn|19
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|85\/352
+|-damage|p1a: Ferrothorn|63\/352|[from] Stealth Rock
+|move|p2a: Latios|Psyshock|p1a: Ferrothorn
+|-crit|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|0 fnt
+|faint|p1a: Ferrothorn
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|157\/319
+|-damage|p1a: Landorus-Therian|118\/319|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Latios
+|-unboost|p2a: Latios|atk|1
+|turn|20
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|move|p1a: Landorus-Therian|U-turn|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|280\/352
+|-damage|p1a: Landorus-Therian|79\/319|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|
+|switch|p1a: Heatran|Heatran, F|327\/327
+|-damage|p1a: Heatran|287\/327|[from] Stealth Rock
+|-item|p1a: Heatran|Air Balloon
+|
+|-heal|p2a: Ferrothorn|302\/352|[from] item: Leftovers
+|turn|21
+|
+|switch|p2a: Latios|Latios, M|301\/301 par
+|move|p1a: Heatran|Magma Storm|p2a: Latios
+|-resisted|p2a: Latios
+|-damage|p2a: Latios|212\/301 par
+|-activate|p2a: Latios|move: Magma Storm|[of] p1a: Heatran
+|
+|-damage|p2a: Latios|175\/301 par|[from] move: Magma Storm|[partiallytrapped]
+|turn|22
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|79\/319
+|-damage|p1a: Landorus-Therian|40\/319|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Latios
+|-unboost|p2a: Latios|atk|1
+|move|p2a: Latios|Draco Meteor|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|-unboost|p2a: Latios|spa|2
+|faint|p1a: Landorus-Therian
+|
+|-end|p2a: Latios|Magma Storm|[partiallytrapped]
+|
+|switch|p1a: Heatran|Heatran, F|287\/327
+|-damage|p1a: Heatran|247\/327|[from] Stealth Rock
+|-item|p1a: Heatran|Air Balloon
+|turn|23
+|
+|move|p1a: Heatran|Flash Cannon|p2a: Latios
+|-damage|p2a: Latios|42\/301 par
+|move|p2a: Latios|Draco Meteor|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|196\/327
+|-enditem|p1a: Heatran|Air Balloon
+|-unboost|p2a: Latios|spa|2
+|
+|turn|24
+|
+|move|p1a: Heatran|Magma Storm|p2a: Latios|[miss]
+|-miss|p1a: Heatran|p2a: Latios
+|move|p2a: Latios|Draco Meteor|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|162\/327
+|-unboost|p2a: Latios|spa|2
+|
+|turn|25
+|
+|move|p1a: Heatran|Flash Cannon|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|faint|p2a: Latios
+|
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|302\/352
+|turn|26
+|
+|move|p1a: Heatran|Magma Storm|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|faint|p2a: Ferrothorn
+|
+|win|PK Mew
+|raw|Ladder updating...
+|raw|PK Mew's rating: 1335 &rarr; <strong>1349<\/strong><br \/>(+14 for winning)
+|raw|noideaxd's rating: 1229 &rarr; <strong>1211<\/strong><br \/>(-18 for losing)
+|c|âPK Mew|gg
+|c|ânoideaxd|gg

@@ -1,0 +1,291 @@
+|join|chiplee1215
+|join|femt6
+|player|p1|chiplee1215|269
+|player|p2|femt6|265
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Tyranitar, F
+|poke|p1|Heatran, F
+|poke|p1|Celebi
+|poke|p1|Lucario, M
+|poke|p1|Landorus-Therian, M
+|poke|p2|Tyranitar, M
+|poke|p2|Garchomp, M
+|poke|p2|Jellicent, M
+|poke|p2|Latios, M
+|poke|p2|Forretress, M
+|poke|p2|Breloom, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|chat|chiplee1215|herpaderp
+|chat|chiplee1215|forgot a poke
+|
+|start
+|switch|p1a: Heatran|Heatran, F|323\/323
+|switch|p2a: Garchomp|Garchomp, M|411\/411
+|-item|p1a: Heatran|Air Balloon
+|turn|1
+|callback|decision
+|
+|move|p2a: Garchomp|Stealth Rock|p1a: Heatran
+|-sidestart|p1: chiplee1215|move: Stealth Rock
+|move|p1a: Heatran|Hidden Power|p2a: Garchomp
+|-supereffective|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|faint|p2a: Garchomp
+|
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|301\/301
+|turn|2
+|callback|decision
+|
+|move|p2a: Latios|Surf|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|11\/323
+|-enditem|p1a: Heatran|Air Balloon
+|move|p1a: Heatran|Stealth Rock|p2a: Latios
+|-sidestart|p2: femt6|move: Stealth Rock
+|
+|turn|3
+|callback|decision
+|
+|switch|p2a: Jellicent|Jellicent, M|404\/404
+|-damage|p2a: Jellicent|354\/404|[from] Stealth Rock
+|move|p1a: Heatran|Hidden Power|p2a: Jellicent
+|-resisted|p2a: Jellicent
+|-damage|p2a: Jellicent|311\/404
+|
+|-heal|p2a: Jellicent|336\/404|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p1a: Heatran|Earth Power|p2a: Jellicent
+|-damage|p2a: Jellicent|231\/404
+|move|p2a: Jellicent|Scald|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|-heal|p2a: Jellicent|256\/404|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Celebi|Celebi|396\/396
+|-damage|p1a: Celebi|347\/396|[from] Stealth Rock
+|turn|5
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, M|342\/342
+|-damage|p2a: Tyranitar|300\/342|[from] Stealth Rock
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Tyranitar
+|move|p1a: Celebi|U-turn|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|210\/342
+|callback|decision
+|
+|switch|p1a: Lucario|Lucario, M|281\/281
+|-damage|p1a: Lucario|273\/281|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|6
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, F|342\/342
+|-damage|p1a: Tyranitar|300\/342|[from] Stealth Rock
+|move|p2a: Tyranitar|Superpower|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|-unboost|p2a: Tyranitar|atk|1
+|-unboost|p2a: Tyranitar|def|1
+|faint|p1a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-damage|p1a: Landorus-Therian|280\/319|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Tyranitar
+|-unboost|p2a: Tyranitar|atk|1
+|turn|7
+|callback|decision
+|
+|switch|p2a: Forretress|Forretress, M|353\/353
+|-damage|p2a: Forretress|309\/353|[from] Stealth Rock
+|move|p1a: Landorus-Therian|U-turn|p2a: Forretress
+|-resisted|p2a: Forretress
+|-damage|p2a: Forretress|278\/353
+|callback|decision
+|
+|switch|p1a: Lucario|Lucario, M|273\/281
+|-damage|p1a: Lucario|265\/281|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Forretress|300\/353|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p1a: Lucario|Swords Dance|p1a: Lucario
+|-boost|p1a: Lucario|atk|2
+|move|p2a: Forretress|Rapid Spin|p1a: Lucario
+|-resisted|p1a: Lucario
+|-damage|p1a: Lucario|255\/281
+|-sideend|p2: femt6|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Forretress
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Forretress|322\/353|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p1a: Lucario|Swords Dance|p1a: Lucario
+|-boost|p1a: Lucario|atk|2
+|move|p2a: Forretress|Volt Switch|p1a: Lucario
+|-damage|p1a: Lucario|207\/281
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, M|210\/342
+|
+|-weather|Sandstorm|[upkeep]
+|turn|10
+|callback|decision
+|
+|move|p1a: Lucario|Bullet Punch|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|-damage|p1a: Lucario|179\/281|[from] item: Life Orb
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Jellicent|Jellicent, M|256\/404
+|turn|11
+|callback|decision
+|
+|move|p1a: Lucario|Bullet Punch|p2a: Jellicent
+|-resisted|p2a: Jellicent
+|-damage|p2a: Jellicent|118\/404
+|-damage|p1a: Lucario|151\/281|[from] item: Life Orb
+|move|p2a: Jellicent|Scald|p1a: Lucario
+|-damage|p1a: Lucario|39\/281
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Jellicent|93\/404|[from] sandstorm
+|-heal|p2a: Jellicent|118\/404|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p2a: Forretress|Forretress, M|322\/353
+|move|p1a: Lucario|Close Combat|p2a: Forretress
+|-damage|p2a: Forretress|0 fnt
+|-unboost|p1a: Lucario|def|1
+|-unboost|p1a: Lucario|spd|1
+|-damage|p1a: Lucario|11\/281|[from] item: Life Orb
+|faint|p2a: Forretress
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Jellicent|Jellicent, M|118\/404
+|turn|13
+|callback|decision
+|
+|move|p1a: Lucario|Bullet Punch|p2a: Jellicent
+|-resisted|p2a: Jellicent
+|-damage|p2a: Jellicent|0 fnt
+|-damage|p1a: Lucario|0 fnt|[from] item: Life Orb
+|faint|p2a: Jellicent
+|faint|p1a: Lucario
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|301\/301
+|switch|p1a: Celebi|Celebi|347\/396
+|-damage|p1a: Celebi|298\/396|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|move|p2a: Latios|Draco Meteor|p1a: Celebi
+|-damage|p1a: Celebi|46\/396
+|-unboost|p2a: Latios|spa|2
+|move|p1a: Celebi|Recover|p1a: Celebi
+|-heal|p1a: Celebi|244\/396
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|283\/301|[from] sandstorm
+|-damage|p1a: Celebi|220\/396|[from] sandstorm
+|-heal|p1a: Celebi|244\/396|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|switch|p2a: Breloom|Breloom, F|262\/262
+|move|p1a: Celebi|Recover|p1a: Celebi
+|-heal|p1a: Celebi|396\/396
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Celebi|372\/396|[from] sandstorm
+|-damage|p2a: Breloom|246\/262|[from] sandstorm
+|-heal|p1a: Celebi|396\/396|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Celebi|Psychic|p2a: Breloom
+|-supereffective|p2a: Breloom
+|-damage|p2a: Breloom|0 fnt
+|faint|p2a: Breloom
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Celebi|372\/396|[from] sandstorm
+|-heal|p1a: Celebi|396\/396|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|283\/301
+|turn|17
+|callback|decision
+|chat|chiplee1215|gg
+|chat|chiplee1215|any suggestions for my last member?
+|
+|move|p2a: Latios|Hidden Power|p1a: Celebi
+|-supereffective|p1a: Celebi
+|-damage|p1a: Celebi|230\/396
+|move|p1a: Celebi|U-turn|p2a: Latios
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|153\/301
+|callback|decision
+|chat|femt6|spinner
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|280\/319
+|-damage|p1a: Landorus-Therian|241\/319|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Latios
+|-unboost|p2a: Latios|atk|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|135\/301|[from] sandstorm
+|-heal|p1a: Landorus-Therian|260\/319|[from] item: Leftovers
+|turn|18
+|callback|decision
+|chat|chiplee1215|which one do you suggeest?
+|
+|move|p2a: Latios|Hidden Power|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|94\/319
+|move|p1a: Landorus-Therian|U-turn|p2a: Latios
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|faint|p2a: Latios
+|
+|win|chiplee1215
+|raw|Ladder updating...
+|raw|chiplee1215's rating: 1818 &rarr; <strong>1825<\/strong><br \/>(+7 for winning)
+|raw|femt6's rating: 1821 &rarr; <strong>1818<\/strong><br \/>(-3 for losing)
+|leave|femt6
+|chat|femt6|mayb forre
+|player|p2

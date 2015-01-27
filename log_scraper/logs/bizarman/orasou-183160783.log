@@ -1,0 +1,361 @@
+|join|bizarman
+|join|Trainer Apollo
+|player|p1|bizarman|42
+|player|p2|Trainer Apollo|265
+|gametype|singles
+|gen|6
+|tier|ORAS OU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Metagross
+|poke|p1|Starmie
+|poke|p1|Greninja, M
+|poke|p1|Dragonite, M
+|poke|p1|Landorus-Therian, M
+|poke|p1|Heatran, F
+|poke|p2|Archeops, F
+|poke|p2|Rotom-Wash
+|poke|p2|Flygon, M
+|poke|p2|Whimsicott, F
+|poke|p2|Jolteon, F
+|poke|p2|Beedrill, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Starmie|Starmie|323\/323
+|switch|p2a: Rotom-Wash|Rotom-Wash|303\/303
+|turn|1
+|
+|move|p1a: Starmie|Reflect Type|p2a: Rotom-Wash
+|-start|p1a: Starmie|typechange|[from] move: Reflect Type|[of] p2a: Rotom-Wash
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Starmie
+|-damage|p1a: Starmie|233\/323
+|c|âTrainer Apollo|hmm
+|
+|switch|p2a: Archeops|Archeops, F|311\/311
+|
+|-heal|p1a: Starmie|253\/323|[from] item: Leftovers
+|turn|2
+|
+|move|p2a: Archeops|Earthquake|p1a: Starmie
+|-supereffective|p1a: Starmie
+|-damage|p1a: Starmie|0 fnt
+|faint|p1a: Starmie
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Archeops
+|-unboost|p2a: Archeops|atk|1
+|turn|3
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|303\/303
+|move|p1a: Landorus-Therian|U-turn|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|244\/303
+|
+|switch|p1a: Heatran|Heatran, F|386\/386
+|
+|-heal|p2a: Rotom-Wash|262\/303|[from] item: Leftovers
+|turn|4
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|198\/386
+|move|p1a: Heatran|Toxic|p2a: Rotom-Wash
+|-status|p2a: Rotom-Wash|tox
+|
+|-heal|p2a: Rotom-Wash|280\/303 tox|[from] item: Leftovers
+|-heal|p1a: Heatran|222\/386|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|262\/303 tox|[from] psn
+|turn|5
+|
+|switch|p2a: Flygon|Flygon, M|344\/344
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-fail|p1a: Heatran
+|
+|-heal|p1a: Heatran|246\/386|[from] item: Leftovers
+|turn|6
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Flygon
+|-unboost|p2a: Flygon|atk|1
+|move|p2a: Flygon|Earthquake|p1a: Landorus-Therian
+|-immune|p1a: Landorus-Therian|[msg]
+|
+|turn|7
+|
+|move|p1a: Landorus-Therian|Superpower|p2a: Flygon
+|-damage|p2a: Flygon|136\/344
+|-unboost|p1a: Landorus-Therian|atk|1
+|-unboost|p1a: Landorus-Therian|def|1
+|move|p2a: Flygon|U-turn|p1a: Landorus-Therian
+|-resisted|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|291\/319
+|
+|switch|p2a: Archeops|Archeops, F|311\/311
+|
+|turn|8
+|
+|switch|p1a: Heatran|Heatran, F|246\/386
+|move|p2a: Archeops|Stealth Rock|p1a: Heatran
+|-sidestart|p1: bizarman|move: Stealth Rock
+|
+|-heal|p1a: Heatran|270\/386|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Flygon|Flygon, M|136\/344
+|move|p1a: Heatran|Toxic|p2a: Flygon
+|-status|p2a: Flygon|tox
+|-enditem|p2a: Flygon|Lum Berry|[eat]
+|-curestatus|p2a: Flygon|tox
+|
+|-heal|p1a: Heatran|294\/386|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|291\/319
+|-damage|p1a: Landorus-Therian|252\/319|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Flygon
+|-unboost|p2a: Flygon|atk|1
+|move|p2a: Flygon|U-turn|p1a: Landorus-Therian
+|-resisted|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|230\/319
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|262\/303 tox
+|
+|-heal|p2a: Rotom-Wash|280\/303 tox|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|262\/303 tox|[from] psn
+|turn|11
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|198\/303 tox
+|
+|switch|p1a: Heatran|Heatran, F|294\/386
+|-damage|p1a: Heatran|246\/386|[from] Stealth Rock
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|52\/386
+|
+|-heal|p2a: Rotom-Wash|216\/303 tox|[from] item: Leftovers
+|-heal|p1a: Heatran|76\/386|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|180\/303 tox|[from] psn
+|turn|12
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-heal|p2a: Rotom-Wash|198\/303 tox|[from] item: Leftovers
+|-heal|p1a: Heatran|100\/386|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|144\/303 tox|[from] psn
+|turn|13
+|
+|switch|p1a: Greninja|Greninja, M|285\/285
+|-damage|p1a: Greninja|250\/285|[from] Stealth Rock
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Greninja|[miss]
+|-miss|p2a: Rotom-Wash|p1a: Greninja
+|
+|-heal|p2a: Rotom-Wash|162\/303 tox|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|90\/303 tox|[from] psn
+|turn|14
+|
+|switch|p2a: Whimsicott|Whimsicott, F|322\/322
+|move|p1a: Greninja|Dark Pulse|p2a: Whimsicott
+|-start|p1a: Greninja|typechange|Dark|[from] Protean
+|-resisted|p2a: Whimsicott
+|-damage|p2a: Whimsicott|243\/322
+|-damage|p1a: Greninja|222\/285|[from] item: Life Orb
+|
+|turn|15
+|
+|move|p2a: Whimsicott|Encore|p1a: Greninja
+|-start|p1a: Greninja|Encore
+|move|p1a: Greninja|Dark Pulse|p2a: Whimsicott
+|-resisted|p2a: Whimsicott
+|-damage|p2a: Whimsicott|169\/322
+|-damage|p1a: Greninja|194\/285|[from] item: Life Orb
+|
+|turn|16
+|
+|switch|p1a: Metagross|Metagross|321\/321
+|-damage|p1a: Metagross|301\/321|[from] Stealth Rock
+|move|p2a: Whimsicott|Stun Spore|p1a: Metagross
+|-status|p1a: Metagross|par
+|
+|turn|17
+|
+|detailschange|p1a: Metagross|Metagross-Mega
+|message|Metagross has Mega Evolved into Mega Metagross!
+|move|p2a: Whimsicott|U-turn|p1a: Metagross
+|-damage|p1a: Metagross|274\/321 par
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|90\/303 tox
+|cant|p1a: Metagross|par
+|
+|-heal|p2a: Rotom-Wash|108\/303 tox|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|90\/303 tox|[from] psn
+|turn|18
+|
+|move|p2a: Rotom-Wash|Pain Split|p1a: Metagross
+|-sethp|p1a: Metagross|182\/321 par|p2a: Rotom-Wash|182\/303 tox|[from] move: Pain Split
+|move|p1a: Metagross|Zen Headbutt|p2a: Rotom-Wash
+|-crit|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|
+|switch|p2a: Jolteon|Jolteon, F|291\/291
+|turn|19
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|230\/319
+|-damage|p1a: Landorus-Therian|191\/319|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Jolteon
+|-unboost|p2a: Jolteon|atk|1
+|move|p2a: Jolteon|Shadow Ball|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|61\/319
+|-damage|p2a: Jolteon|262\/291|[from] item: Life Orb
+|
+|turn|20
+|
+|switch|p2a: Archeops|Archeops, F|311\/311
+|move|p1a: Landorus-Therian|Earthquake|p2a: Archeops
+|-immune|p2a: Archeops|[msg]
+|
+|turn|21
+|
+|move|p2a: Archeops|U-turn|p1a: Landorus-Therian
+|-resisted|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|8\/319
+|
+|switch|p2a: Flygon|Flygon, M|136\/344
+|move|p1a: Landorus-Therian|Earthquake|p2a: Flygon
+|-immune|p2a: Flygon|[msg]
+|
+|turn|22
+|
+|move|p1a: Landorus-Therian|Earthquake|p2a: Flygon
+|-immune|p2a: Flygon|[msg]
+|move|p2a: Flygon|U-turn|p1a: Landorus-Therian
+|-resisted|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|faint|p1a: Landorus-Therian
+|
+|switch|p2a: Archeops|Archeops, F|311\/311
+|
+|
+|switch|p1a: Heatran|Heatran, F|100\/386
+|-damage|p1a: Heatran|52\/386|[from] Stealth Rock
+|turn|23
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Archeops|Head Smash|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-heal|p1a: Heatran|76\/386|[from] item: Leftovers
+|turn|24
+|
+|switch|p1a: Metagross|Metagross-Mega|182\/321 par
+|-damage|p1a: Metagross|162\/321 par|[from] Stealth Rock
+|move|p2a: Archeops|Head Smash|p1a: Metagross|[miss]
+|-miss|p2a: Archeops|p1a: Metagross
+|
+|turn|25
+|
+|switch|p2a: Whimsicott|Whimsicott, F|169\/322
+|move|p1a: Metagross|Meteor Mash|p2a: Whimsicott|[miss]
+|-miss|p1a: Metagross|p2a: Whimsicott
+|
+|turn|26
+|
+|move|p2a: Whimsicott|Moonblast|p1a: Metagross
+|-resisted|p1a: Metagross
+|-damage|p1a: Metagross|119\/321 par
+|move|p1a: Metagross|Meteor Mash|p2a: Whimsicott
+|-crit|p2a: Whimsicott
+|-supereffective|p2a: Whimsicott
+|-damage|p2a: Whimsicott|0 fnt
+|-boost|p1a: Metagross|atk|1
+|faint|p2a: Whimsicott
+|
+|
+|switch|p2a: Jolteon|Jolteon, F|262\/291
+|turn|27
+|
+|move|p2a: Jolteon|Shadow Ball|p1a: Metagross
+|-supereffective|p1a: Metagross
+|-damage|p1a: Metagross|0 fnt
+|-damage|p2a: Jolteon|233\/291|[from] item: Life Orb
+|faint|p1a: Metagross
+|
+|
+|switch|p1a: Heatran|Heatran, F|76\/386
+|-damage|p1a: Heatran|28\/386|[from] Stealth Rock
+|turn|28
+|
+|switch|p2a: Beedrill|Beedrill, M|271\/271
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-fail|p1a: Heatran
+|
+|-heal|p1a: Heatran|52\/386|[from] item: Leftovers
+|turn|29
+|
+|detailschange|p2a: Beedrill|Beedrill-Mega, M
+|message|Beedrill has Mega Evolved into Mega Beedrill!
+|move|p2a: Beedrill|Drill Run|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|
+|switch|p1a: Dragonite|Dragonite, M|324\/324
+|-damage|p1a: Dragonite|243\/324|[from] Stealth Rock
+|turn|30
+|
+|move|p1a: Dragonite|Extreme Speed|p2a: Beedrill
+|-damage|p2a: Beedrill|69\/271
+|move|p2a: Beedrill|Poison Jab|p1a: Dragonite
+|-damage|p1a: Dragonite|23\/324
+|
+|turn|31
+|
+|move|p1a: Dragonite|Extreme Speed|p2a: Beedrill
+|-damage|p2a: Beedrill|0 fnt
+|faint|p2a: Beedrill
+|
+|
+|switch|p2a: Archeops|Archeops, F|311\/311
+|turn|32
+|c|âbizarman|gg
+|
+|move|p2a: Archeops|U-turn|p1a: Dragonite
+|-resisted|p1a: Dragonite
+|-damage|p1a: Dragonite|0 fnt
+|faint|p1a: Dragonite
+|
+|switch|p2a: Jolteon|Jolteon, F|233\/291
+|
+|c|âTrainer Apollo|gg
+|
+|switch|p1a: Greninja|Greninja, M|194\/285
+|-damage|p1a: Greninja|159\/285|[from] Stealth Rock
+|turn|33
+|
+|move|p2a: Jolteon|Volt Switch|p1a: Greninja
+|-supereffective|p1a: Greninja
+|-damage|p1a: Greninja|0 fnt
+|-damage|p2a: Jolteon|204\/291|[from] item: Life Orb
+|faint|p1a: Greninja
+|
+|win|Trainer Apollo
+|raw|Ladder updating...
+|raw|bizarman's rating: 1412 &rarr; <strong>1391<\/strong><br \/>(-21 for losing)
+|raw|Trainer Apollo's rating: 1405 &rarr; <strong>1426<\/strong><br \/>(+21 for winning)

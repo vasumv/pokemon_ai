@@ -1,0 +1,375 @@
+|join|Aaron Lennon
+|join|Zedseayou
+|player|p1|Aaron Lennon|99
+|player|p2|Zedseayou|169
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Chesnaught, F
+|poke|p1|Latias, F
+|poke|p1|Keldeo
+|poke|p1|Heatran, M
+|poke|p1|Aegislash, M
+|poke|p1|Raikou
+|poke|p2|Landorus-Therian, M
+|poke|p2|Tyranitar, M
+|poke|p2|Aegislash, M, shiny
+|poke|p2|Rotom-Wash
+|poke|p2|Conkeldurr, M
+|poke|p2|Genesect, shiny
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Chesnaught|Chesnaught, F|380\/380
+|switch|p2a: Red Ranger|Genesect, shiny|283\/283
+|-boost|p2a: Red Ranger|spa|1|[from] ability: Download
+|turn|1
+|callback|decision
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-singleturn|p1a: Chesnaught|move: Protect
+|move|p2a: Red Ranger|U-turn|p1a: Chesnaught
+|-activate|p1a: Chesnaught|move: Protect
+|-damage|p2a: Red Ranger|248\/283|[from] Spiky Shield|[of] p1a: Chesnaught
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: Catdorus|Landorus-Therian, M|370\/370
+|-ability|p2a: Catdorus|Intimidate|[of] p1a: Chesnaught
+|-unboost|p1a: Chesnaught|atk|1
+|switch|p1a: Heatran|Heatran, M|386\/386
+|
+|turn|3
+|callback|decision
+|
+|switch|p1a: Chesnaught|Chesnaught, F|380\/380
+|move|p2a: Catdorus|Stealth Rock|p1a: Chesnaught
+|-sidestart|p1: Aaron Lennon|move: Stealth Rock
+|
+|turn|4
+|callback|decision
+|
+|switch|p2a: Joker|Conkeldurr, M|351\/351
+|move|p1a: Chesnaught|Spikes|p2a: Joker
+|-sidestart|p2: Zedseayou|Spikes
+|
+|turn|5
+|callback|decision
+|
+|move|p1a: Chesnaught|Leech Seed|p2a: Joker
+|-start|p2a: Joker|move: Leech Seed
+|move|p2a: Joker|Knock Off|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|338\/380
+|-enditem|p1a: Chesnaught|Leftovers|[from] move: Knock Off|[of] p2a: Joker
+|
+|-damage|p2a: Joker|308\/351|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|380\/380|[silent]
+|turn|6
+|callback|decision
+|
+|move|p1a: Chesnaught|Spikes|p2a: Joker
+|-sidestart|p2: Zedseayou|Spikes
+|move|p2a: Joker|Ice Punch|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-damage|p1a: Chesnaught|254\/380
+|
+|-damage|p2a: Joker|265\/351|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|297\/380|[silent]
+|turn|7
+|callback|decision
+|
+|move|p1a: Chesnaught|Spikes|p2a: Joker
+|-sidestart|p2: Zedseayou|Spikes
+|move|p2a: Joker|Drain Punch|p1a: Chesnaught
+|-damage|p1a: Chesnaught|200\/380
+|-heal|p2a: Joker|314\/351|[from] drain|[of] p1a: Chesnaught
+|
+|-damage|p2a: Joker|271\/351|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|243\/380|[silent]
+|turn|8
+|callback|decision
+|
+|switch|p2a: I'm Rock Hard|Tyranitar, M|342\/342
+|-damage|p2a: I'm Rock Hard|257\/342|[from] Spikes
+|-weather|Sandstorm
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-fail|p1a: Chesnaught
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Chesnaught|220\/380|[from] sandstorm
+|turn|9
+|callback|decision
+|
+|-formechange|p2a: I'm Rock Hard|Tyranitar-Mega
+|message|Tyranitar has Mega Evolved into Mega Tyranitar!
+|move|p2a: I'm Rock Hard|Fire Punch|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-damage|p1a: Chesnaught|78\/380
+|-status|p1a: Chesnaught|brn
+|move|p1a: Chesnaught|Hammer Arm|p2a: I'm Rock Hard
+|-supereffective|p2a: I'm Rock Hard
+|-damage|p2a: I'm Rock Hard|65\/342
+|-unboost|p1a: Chesnaught|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Chesnaught|55\/380 brn|[from] sandstorm
+|-damage|p1a: Chesnaught|8\/380 brn|[from] brn
+|turn|10
+|callback|decision
+|chat|Aaron Lennon|of course
+|
+|move|p2a: I'm Rock Hard|Crunch|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|0 fnt
+|faint|p1a: Chesnaught
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Keldeo|Keldeo|323\/323
+|-damage|p1a: Keldeo|303\/323|[from] Stealth Rock
+|turn|11
+|callback|decision
+|
+|move|p1a: Keldeo|Scald|p2a: I'm Rock Hard
+|-supereffective|p2a: I'm Rock Hard
+|-damage|p2a: I'm Rock Hard|0 fnt
+|faint|p2a: I'm Rock Hard
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Keldeo|283\/323|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: Wishy Washy|Rotom-Wash|304\/304
+|turn|12
+|callback|decision
+|
+|switch|p1a: Latias|Latias, F|302\/302
+|-damage|p1a: Latias|265\/302|[from] Stealth Rock
+|move|p2a: Wishy Washy|Volt Switch|p1a: Latias
+|-resisted|p1a: Latias
+|-damage|p1a: Latias|231\/302
+|callback|decision
+|
+|switch|p2a: Red Ranger|Genesect, shiny|248\/283
+|-damage|p2a: Red Ranger|178\/283|[from] Spikes
+|-boost|p2a: Red Ranger|atk|1|[from] ability: Download
+|
+|-weather|none
+|turn|13
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|386\/386
+|-damage|p1a: Heatran|338\/386|[from] Stealth Rock
+|move|p2a: Red Ranger|U-turn|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|296\/386
+|callback|decision
+|
+|switch|p2a: Catdorus|Landorus-Therian, M|370\/370
+|-ability|p2a: Catdorus|Intimidate|[of] p1a: Heatran
+|-unboost|p1a: Heatran|atk|1
+|
+|-heal|p1a: Heatran|320\/386|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Catdorus|Earthquake|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-heal|p1a: Heatran|344\/386|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p2a: Catdorus|Earthquake|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|callback|decision
+|
+|switch|p1a: Latias|Latias, F|231\/302
+|-damage|p1a: Latias|194\/302|[from] Stealth Rock
+|turn|16
+|callback|decision
+|
+|move|p1a: Latias|Surf|p2a: Catdorus
+|-supereffective|p2a: Catdorus
+|-damage|p2a: Catdorus|68\/370
+|-damage|p1a: Latias|164\/302|[from] item: Life Orb
+|move|p2a: Catdorus|U-turn|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|0 fnt
+|faint|p1a: Latias
+|callback|decision
+|
+|switch|p2a: Wishy Washy|Rotom-Wash|304\/304
+|
+|callback|decision
+|
+|switch|p1a: Raikou|Raikou|322\/322
+|-damage|p1a: Raikou|282\/322|[from] Stealth Rock
+|-ability|p1a: Raikou|Pressure
+|turn|17
+|callback|decision
+|
+|move|p1a: Raikou|Calm Mind|p1a: Raikou
+|-boost|p1a: Raikou|spa|1
+|-boost|p1a: Raikou|spd|1
+|move|p2a: Wishy Washy|Hydro Pump|p1a: Raikou|[miss]
+|-miss|p2a: Wishy Washy|p1a: Raikou
+|
+|-heal|p1a: Raikou|302\/322|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p1a: Raikou|Substitute|p1a: Raikou
+|-start|p1a: Raikou|Substitute
+|-damage|p1a: Raikou|222\/322
+|move|p2a: Wishy Washy|Hydro Pump|p1a: Raikou
+|-end|p1a: Raikou|Substitute
+|
+|-heal|p1a: Raikou|242\/322|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p1a: Raikou|Substitute|p1a: Raikou
+|-start|p1a: Raikou|Substitute
+|-damage|p1a: Raikou|162\/322
+|move|p2a: Wishy Washy|Hydro Pump|p1a: Raikou
+|-end|p1a: Raikou|Substitute
+|
+|-heal|p1a: Raikou|182\/322|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p1a: Raikou|Calm Mind|p1a: Raikou
+|-boost|p1a: Raikou|spa|1
+|-boost|p1a: Raikou|spd|1
+|move|p2a: Wishy Washy|Hydro Pump|p1a: Raikou
+|-damage|p1a: Raikou|109\/322
+|
+|-heal|p1a: Raikou|129\/322|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|switch|p2a: Joker|Conkeldurr, M|271\/351
+|-damage|p2a: Joker|184\/351|[from] Spikes
+|move|p1a: Raikou|Thunderbolt|p2a: Joker
+|-damage|p2a: Joker|0 fnt
+|faint|p2a: Joker
+|
+|-heal|p1a: Raikou|149\/322|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Wishy Washy|Rotom-Wash|304\/304
+|turn|22
+|callback|decision
+|
+|move|p1a: Raikou|Substitute|p1a: Raikou
+|-start|p1a: Raikou|Substitute
+|-damage|p1a: Raikou|69\/322
+|move|p2a: Wishy Washy|Will-O-Wisp|p1a: Raikou|[miss]
+|-miss|p2a: Wishy Washy|p1a: Raikou
+|
+|-heal|p1a: Raikou|89\/322|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p1a: Raikou|Calm Mind|p1a: Raikou
+|-boost|p1a: Raikou|spa|1
+|-boost|p1a: Raikou|spd|1
+|move|p2a: Wishy Washy|Volt Switch|p1a: Raikou
+|-crit|p1a: Raikou
+|-resisted|p1a: Raikou
+|-activate|p1a: Raikou|Substitute|[damage]
+|callback|decision
+|
+|switch|p2a: Catdorus|Landorus-Therian, M|68\/370
+|-activate|p1a: Raikou|Substitute|ability: Intimidate|[of] p2a: Catdorus
+|
+|-heal|p1a: Raikou|109\/322|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p1a: Raikou|Hidden Power|p2a: Catdorus
+|-supereffective|p2a: Catdorus
+|-damage|p2a: Catdorus|0 fnt
+|faint|p2a: Catdorus
+|
+|-heal|p1a: Raikou|129\/322|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Red Ranger|Genesect, shiny|178\/283
+|-damage|p2a: Red Ranger|108\/283|[from] Spikes
+|-boost|p2a: Red Ranger|atk|1|[from] ability: Download
+|turn|25
+|callback|decision
+|
+|move|p2a: Red Ranger|U-turn|p1a: Raikou
+|-end|p1a: Raikou|Substitute
+|callback|decision
+|
+|switch|p2a: Wishy Washy|Rotom-Wash|304\/304
+|move|p1a: Raikou|Thunderbolt|p2a: Wishy Washy
+|-damage|p2a: Wishy Washy|0 fnt
+|faint|p2a: Wishy Washy
+|
+|-heal|p1a: Raikou|149\/322|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Red Ranger|Genesect, shiny|108\/283
+|-damage|p2a: Red Ranger|38\/283|[from] Spikes
+|-boost|p2a: Red Ranger|atk|1|[from] ability: Download
+|turn|26
+|callback|decision
+|
+|move|p2a: Red Ranger|U-turn|p1a: Raikou
+|-damage|p1a: Raikou|0 fnt
+|faint|p1a: Raikou
+|callback|decision
+|
+|switch|p2a: Excalibur|Aegislash, M, shiny|269\/269
+|-damage|p2a: Excalibur|202\/269|[from] Spikes
+|
+|callback|decision
+|
+|switch|p1a: Keldeo|Keldeo|283\/323
+|-damage|p1a: Keldeo|263\/323|[from] Stealth Rock
+|turn|27
+|callback|decision
+|
+|move|p1a: Keldeo|Scald|p2a: Excalibur
+|-damage|p2a: Excalibur|52\/269
+|-status|p2a: Excalibur|brn
+|-formechange|p2a: Excalibur|Aegislash-Blade
+|move|p2a: Excalibur|Shadow Ball|p1a: Keldeo
+|-damage|p1a: Keldeo|21\/323
+|-damage|p2a: Excalibur|26\/269 brn|[from] item: Life Orb
+|
+|-damage|p2a: Excalibur|0 fnt|[from] brn
+|faint|p2a: Excalibur
+|callback|decision
+|chat|Aaron Lennon|gg
+|-message|Zedseayou forfeited.
+|
+|win|Aaron Lennon
+|raw|Ladder updating...
+|leave|Zedseayou
+|player|p2
+|raw|Ladder (probably) updated, but score could not be retrieved (timeout).
+|raw|Ladder (probably) updated, but score could not be retrieved (Error: socket hang up).

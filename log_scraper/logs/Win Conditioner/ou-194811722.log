@@ -1,0 +1,328 @@
+|join|Storm's Gale
+|join|Win Conditioner
+|player|p1|Storm's Gale|151
+|player|p2|Win Conditioner|264
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Doublade, M
+|poke|p1|Meloetta
+|poke|p1|Gastrodon, M
+|poke|p1|Magneton
+|poke|p1|Moltres
+|poke|p1|Throh, M
+|poke|p2|Altaria, F
+|poke|p2|Magnezone
+|poke|p2|Chansey, F
+|poke|p2|Landorus-Therian, M
+|poke|p2|Zapdos
+|poke|p2|Mew
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Magneto|Magneton|242\/242
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Magneto
+|-unboost|p1a: Magneto|atk|1
+|turn|1
+|
+|switch|p1a: Gastroid|Gastrodon, M|426\/426
+|move|p2a: Landorus-Therian|U-turn|p1a: Gastroid
+|-damage|p1a: Gastroid|347\/426
+|
+|switch|p2a: Mew|Mew|404\/404
+|
+|-heal|p1a: Gastroid|373\/426|[from] item: Leftovers
+|turn|2
+|
+|switch|p1a: Mercury|Moltres|384\/384
+|-ability|p1a: Mercury|Pressure
+|move|p2a: Mew|Knock Off|p1a: Mercury
+|-damage|p1a: Mercury|297\/384
+|-enditem|p1a: Mercury|Choice Specs|[from] move: Knock Off|[of] p2a: Mew
+|
+|turn|3
+|
+|switch|p2a: Altaria|Altaria, F|320\/320
+|move|p1a: Mercury|Fire Blast|p2a: Altaria|[miss]
+|-miss|p1a: Mercury|p2a: Altaria
+|
+|turn|4
+|
+|switch|p1a: Knight|Doublade, M|322\/322
+|detailschange|p2a: Altaria|Altaria-Mega, F
+|message|Altaria has Mega Evolved into Mega Altaria!
+|move|p2a: Altaria|Frustration|p1a: Knight
+|-crit|p1a: Knight
+|-resisted|p1a: Knight
+|-damage|p1a: Knight|261\/322
+|
+|turn|5
+|
+|switch|p2a: Magnezone|Magnezone|282\/282
+|move|p1a: Knight|Sacred Sword|p2a: Magnezone
+|-supereffective|p2a: Magnezone
+|-damage|p2a: Magnezone|132\/282
+|
+|turn|6
+|
+|move|p2a: Magnezone|Volt Switch|p1a: Knight
+|-damage|p1a: Knight|114\/322
+|
+|switch|p2a: Zapdos|Zapdos|384\/384
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Knight|Sacred Sword|p2a: Zapdos
+|-resisted|p2a: Zapdos
+|-damage|p2a: Zapdos|355\/384
+|
+|-heal|p2a: Zapdos|379\/384|[from] item: Leftovers
+|turn|7
+|
+|switch|p2a: Mew|Mew|404\/404
+|move|p1a: Knight|Rest|p1a: Knight
+|-status|p1a: Knight|slp
+|-heal|p1a: Knight|322\/322 slp|[silent]
+|-status|p1a: Knight|slp|[from] move: Rest
+|
+|turn|8
+|
+|move|p2a: Mew|Knock Off|p1a: Knight
+|-supereffective|p1a: Knight
+|-damage|p1a: Knight|262\/322 slp
+|-enditem|p1a: Knight|Eviolite|[from] move: Knock Off|[of] p2a: Mew
+|cant|p1a: Knight|slp
+|move|p1a: Knight|Sleep Talk|p1a: Knight
+|move|p1a: Knight|Sacred Sword|p2a: Mew|[from]Sleep Talk
+|-resisted|p2a: Mew
+|-damage|p2a: Mew|371\/404
+|
+|-heal|p2a: Mew|396\/404|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Zapdos|Zapdos|379\/384
+|-ability|p2a: Zapdos|Pressure
+|switch|p1a: Mercury|Moltres|297\/384
+|-ability|p1a: Mercury|Pressure
+|
+|-heal|p2a: Zapdos|384\/384|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Gastroid|Gastrodon, M|373\/426
+|move|p2a: Zapdos|Volt Switch|p1a: Gastroid
+|-immune|p1a: Gastroid|[msg]
+|
+|-heal|p1a: Gastroid|399\/426|[from] item: Leftovers
+|turn|11
+|
+|switch|p2a: Mew|Mew|396\/404
+|move|p1a: Gastroid|Scald|p2a: Mew
+|-damage|p2a: Mew|312\/404
+|-status|p2a: Mew|brn
+|-status|p1a: Gastroid|brn
+|
+|-heal|p2a: Mew|337\/404 brn|[from] item: Leftovers
+|-heal|p1a: Gastroid|425\/426 brn|[from] item: Leftovers
+|-damage|p2a: Mew|287\/404 brn|[from] brn
+|-damage|p1a: Gastroid|372\/426 brn|[from] brn
+|turn|12
+|
+|switch|p1a: Mercury|Moltres|297\/384
+|-ability|p1a: Mercury|Pressure
+|move|p2a: Mew|Knock Off|p1a: Mercury
+|-damage|p1a: Mercury|267\/384
+|
+|-heal|p2a: Mew|312\/404 brn|[from] item: Leftovers
+|-damage|p2a: Mew|262\/404 brn|[from] brn
+|turn|13
+|
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|404\/404 brn
+|move|p1a: Mercury|Fire Blast|p2a: Mew
+|-crit|p2a: Mew
+|-damage|p2a: Mew|100\/404 brn
+|
+|-heal|p2a: Mew|125\/404 brn|[from] item: Leftovers
+|-damage|p2a: Mew|75\/404 brn|[from] brn
+|turn|14
+|
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|277\/404 brn
+|move|p1a: Mercury|Fire Blast|p2a: Mew
+|-damage|p2a: Mew|61\/404 brn
+|
+|-heal|p2a: Mew|86\/404 brn|[from] item: Leftovers
+|-damage|p2a: Mew|36\/404 brn|[from] brn
+|turn|15
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|move|p1a: Mercury|Overheat|p2a: Chansey
+|-damage|p2a: Chansey|533\/704
+|-unboost|p1a: Mercury|spa|2
+|
+|turn|16
+|
+|switch|p1a: Chuck|Throh, M|444\/444
+|-ability|p1a: Chuck|Mold Breaker
+|move|p2a: Chansey|Heal Bell|p2a: Chansey
+|-cureteam|p2a: Chansey|[from] move: HealBell
+|
+|turn|17
+|
+|switch|p2a: Zapdos|Zapdos|384\/384
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Chuck|Substitute|p1a: Chuck
+|-start|p1a: Chuck|Substitute
+|-damage|p1a: Chuck|333\/444
+|
+|-heal|p1a: Chuck|360\/444|[from] item: Leftovers
+|turn|18
+|
+|move|p2a: Zapdos|Volt Switch|p1a: Chuck
+|-activate|p1a: Chuck|Substitute|[damage]
+|
+|switch|p2a: Altaria|Altaria-Mega, F|320\/320
+|move|p1a: Chuck|Bulk Up|p1a: Chuck
+|-boost|p1a: Chuck|atk|1
+|-boost|p1a: Chuck|def|1
+|
+|-heal|p1a: Chuck|387\/444|[from] item: Leftovers
+|turn|19
+|
+|move|p2a: Altaria|Frustration|p1a: Chuck
+|-supereffective|p1a: Chuck
+|-end|p1a: Chuck|Substitute
+|move|p1a: Chuck|Bulk Up|p1a: Chuck
+|-boost|p1a: Chuck|atk|1
+|-boost|p1a: Chuck|def|1
+|
+|-heal|p1a: Chuck|414\/444|[from] item: Leftovers
+|turn|20
+|
+|move|p2a: Altaria|Frustration|p1a: Chuck
+|-supereffective|p1a: Chuck
+|-damage|p1a: Chuck|126\/444
+|move|p1a: Chuck|Earthquake|p2a: Altaria
+|-damage|p2a: Altaria|170\/320
+|
+|-heal|p1a: Chuck|153\/444|[from] item: Leftovers
+|turn|21
+|
+|switch|p1a: Magneto|Magneton|242\/242
+|move|p2a: Altaria|Frustration|p1a: Magneto
+|-resisted|p1a: Magneto
+|-damage|p1a: Magneto|127\/242
+|
+|turn|22
+|
+|switch|p2a: Chansey|Chansey, F|533\/704
+|move|p1a: Magneto|Hidden Power|p2a: Chansey
+|-damage|p2a: Chansey|491\/704
+|
+|turn|23
+|
+|switch|p1a: Knight|Doublade, M|262\/322 slp
+|move|p2a: Chansey|Protect|p2a: Chansey
+|-fail|p2a: Chansey
+|
+|turn|24
+|
+|switch|p2a: Altaria|Altaria-Mega, F|170\/320
+|cant|p1a: Knight|slp
+|move|p1a: Knight|Sleep Talk|p1a: Knight
+|move|p1a: Knight|Rest|p1a: Knight|[from]Sleep Talk
+|-fail|p1a: Knight
+|
+|turn|25
+|
+|move|p2a: Altaria|Roost|p2a: Altaria
+|-heal|p2a: Altaria|320\/320
+|-curestatus|p1a: Knight|slp
+|move|p1a: Knight|Gyro Ball|p2a: Altaria
+|-crit|p2a: Altaria
+|-supereffective|p2a: Altaria
+|-damage|p2a: Altaria|56\/320
+|
+|turn|26
+|c|âWin Conditioner|god damnit
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Knight
+|-unboost|p1a: Knight|atk|1
+|move|p1a: Knight|Gyro Ball|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|172\/320
+|
+|turn|27
+|c|âWin Conditioner|i've been getting haxed all fucking day
+|c|âStorm's Gale|me2
+|c|âStorm's Gale|so :I
+|
+|move|p2a: Landorus-Therian|Earthquake|p1a: Knight
+|-supereffective|p1a: Knight
+|-damage|p1a: Knight|64\/322
+|move|p1a: Knight|Rest|p1a: Knight
+|-status|p1a: Knight|slp
+|-heal|p1a: Knight|322\/322 slp|[silent]
+|-status|p1a: Knight|slp|[from] move: Rest
+|
+|turn|28
+|
+|switch|p2a: Zapdos|Zapdos|384\/384
+|-ability|p2a: Zapdos|Pressure
+|switch|p1a: Mercury|Moltres|267\/384
+|-ability|p1a: Mercury|Pressure
+|
+|turn|29
+|
+|switch|p1a: Gastroid|Gastrodon, M|372\/426 brn
+|move|p2a: Zapdos|Volt Switch|p1a: Gastroid
+|-immune|p1a: Gastroid|[msg]
+|
+|-heal|p1a: Gastroid|398\/426 brn|[from] item: Leftovers
+|-damage|p1a: Gastroid|345\/426 brn|[from] brn
+|turn|30
+|
+|switch|p2a: Chansey|Chansey, F|491\/704
+|move|p1a: Gastroid|Toxic|p2a: Chansey
+|-status|p2a: Chansey|tox
+|
+|-heal|p1a: Gastroid|371\/426 brn|[from] item: Leftovers
+|-damage|p2a: Chansey|447\/704 tox|[from] psn
+|-damage|p1a: Gastroid|318\/426 brn|[from] brn
+|turn|31
+|
+|switch|p1a: Zelda|Meloetta|404\/404
+|move|p2a: Chansey|Wish|p2a: Chansey
+|
+|-damage|p2a: Chansey|359\/704 tox|[from] psn
+|turn|32
+|
+|move|p2a: Chansey|Protect|p2a: Chansey
+|-singleturn|p2a: Chansey|Protect
+|move|p1a: Zelda|Substitute|p1a: Zelda
+|-start|p1a: Zelda|Substitute
+|-damage|p1a: Zelda|303\/404
+|
+|-heal|p2a: Chansey|704\/704 tox|[from] move: Wish|[wisher] Chansey
+|-heal|p1a: Zelda|328\/404|[from] item: Leftovers
+|-damage|p2a: Chansey|572\/704 tox|[from] psn
+|turn|33
+|c|âWin Conditioner|this game is fucking worthless lmfao
+|-message|Win Conditioner forfeited.
+|
+|win|Storm's Gale
+|raw|Ladder updating...
+|leave|Win Conditioner
+|player|p2
+|raw|Storm&apos;s Gale's rating: 1660 &rarr; <strong>1674<\/strong><br \/>(+14 for winning)
+|raw|Win Conditioner's rating: 1563 &rarr; <strong>1549<\/strong><br \/>(-14 for losing)

@@ -1,0 +1,402 @@
+|join|Eighty
+|join|Messuduppotatoasia
+|player|p1|Eighty|255
+|player|p2|Messuduppotatoasia|7
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Hippowdon, F, shiny
+|poke|p1|Latias, F
+|poke|p1|Skarmory, F
+|poke|p1|Roserade, F, shiny
+|poke|p1|Stoutland, F
+|poke|p1|Jellicent, F, shiny
+|poke|p2|Politoed, F
+|poke|p2|Starmie
+|poke|p2|Scizor, F
+|poke|p2|Keldeo
+|poke|p2|Ferrothorn, M
+|poke|p2|Thundurus-Therian, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Hippowdon|Hippowdon, F, shiny|420\/420
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M|299\/299
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Hippowdon
+|turn|1
+|callback|decision
+|
+|move|p2a: Thundurus-Therian|Hidden Power|p1a: Hippowdon
+|-supereffective|p1a: Hippowdon
+|-damage|p1a: Hippowdon|191\/420
+|-damage|p2a: Thundurus-Therian|270\/299|[from] item: Life Orb
+|move|p1a: Hippowdon|Stealth Rock|p2a: Thundurus-Therian
+|-sidestart|p2: Messuduppotatoasia|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Thundurus-Therian|252\/299|[from] sandstorm
+|-heal|p1a: Hippowdon|217\/420|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p1a: Latias|Latias, F|364\/364
+|move|p2a: Thundurus-Therian|Hidden Power|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|172\/364
+|-damage|p2a: Thundurus-Therian|223\/299|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latias|150\/364|[from] sandstorm
+|-damage|p2a: Thundurus-Therian|205\/299|[from] sandstorm
+|-heal|p1a: Latias|172\/364|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p2a: Operation Rainfall|Politoed, F|383\/383
+|-damage|p2a: Operation Rainfall|336\/383|[from] Stealth Rock
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Operation Rainfall
+|move|p1a: Latias|Roost|p1a: Latias
+|-heal|p1a: Latias|354\/364
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Latias|364\/364|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: Jellicent|Jellicent, F, shiny|403\/403
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|-damage|p2a: Ferrothorn|330\/352|[from] Stealth Rock
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Ferrothorn|352\/352|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, F, shiny|324\/324
+|switch|p2a: Swimming Goggles|Starmie|261\/261
+|-damage|p2a: Swimming Goggles|229\/261|[from] Stealth Rock
+|
+|-weather|RainDance|[upkeep]
+|turn|6
+|callback|decision
+|
+|switch|p1a: Jellicent|Jellicent, F, shiny|403\/403
+|move|p2a: Swimming Goggles|Rapid Spin|p1a: Jellicent
+|-immune|p1a: Jellicent|[msg]
+|
+|-weather|RainDance|[upkeep]
+|turn|7
+|callback|decision
+|
+|move|p2a: Swimming Goggles|Thunder|p1a: Jellicent
+|-supereffective|p1a: Jellicent
+|-damage|p1a: Jellicent|120\/403
+|-status|p1a: Jellicent|par
+|-damage|p2a: Swimming Goggles|203\/261|[from] item: Life Orb
+|move|p1a: Jellicent|Shadow Ball|p2a: Swimming Goggles
+|-supereffective|p2a: Swimming Goggles
+|-damage|p2a: Swimming Goggles|5\/261
+|-unboost|p2a: Swimming Goggles|spd|1
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Jellicent|145\/403 par|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p2a: Swimming Goggles|Thunder|p1a: Jellicent
+|-supereffective|p1a: Jellicent
+|-damage|p1a: Jellicent|0 fnt
+|-damage|p2a: Swimming Goggles|0 fnt|[from] item: Life Orb
+|faint|p1a: Jellicent
+|faint|p2a: Swimming Goggles
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, F|343\/343
+|-damage|p2a: Scizor|301\/343|[from] Stealth Rock
+|switch|p1a: Hippowdon|Hippowdon, F, shiny|217\/420
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Hippowdon
+|turn|9
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, F|334\/334
+|move|p2a: Scizor|U-turn|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|303\/334
+|-damage|p2a: Scizor|244\/343|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|callback|decision
+|
+|switch|p2a: Operation Rainfall|Politoed, F|336\/383
+|-damage|p2a: Operation Rainfall|289\/383|[from] Stealth Rock
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Operation Rainfall
+|
+|-weather|RainDance|[upkeep]
+|turn|10
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, F, shiny|324\/324
+|move|p2a: Operation Rainfall|Ice Beam|p1a: Roserade
+|-supereffective|p1a: Roserade
+|-damage|p1a: Roserade|60\/324
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Roserade|80\/324|[from] item: Black Sludge
+|turn|11
+|callback|decision
+|
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M|205\/299
+|-damage|p2a: Thundurus-Therian|131\/299|[from] Stealth Rock
+|move|p1a: Roserade|Sleep Powder|p2a: Thundurus-Therian|[miss]
+|-miss|p1a: Roserade|p2a: Thundurus-Therian
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Roserade|100\/324|[from] item: Black Sludge
+|turn|12
+|callback|decision
+|chat|Eighty|fml
+|
+|switch|p1a: Latias|Latias, F|364\/364
+|move|p2a: Thundurus-Therian|Hidden Power|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|172\/364
+|-damage|p2a: Thundurus-Therian|102\/299|[from] item: Life Orb
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Latias|194\/364|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: Latias|Roost|p1a: Latias
+|-heal|p1a: Latias|364\/364
+|move|p2a: Thundurus-Therian|Hidden Power|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|172\/364
+|-damage|p2a: Thundurus-Therian|73\/299|[from] item: Life Orb
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Latias|194\/364|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|-damage|p2a: Ferrothorn|330\/352|[from] Stealth Rock
+|move|p1a: Latias|Calm Mind|p1a: Latias
+|-boost|p1a: Latias|spa|1
+|-boost|p1a: Latias|spd|1
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Latias|216\/364|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|352\/352|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|switch|p1a: Hippowdon|Hippowdon, F, shiny|217\/420
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Hippowdon
+|move|p2a: Ferrothorn|Gyro Ball|p1a: Hippowdon
+|-damage|p1a: Hippowdon|136\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Hippowdon|162\/420|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, F|303\/334
+|move|p2a: Ferrothorn|Leech Seed|p1a: Skarmory
+|-start|p1a: Skarmory|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Skarmory|262\/334|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|17
+|callback|decision
+|
+|move|p1a: Skarmory|Spikes|p2a: Ferrothorn
+|-sidestart|p2: Messuduppotatoasia|Spikes
+|move|p2a: Ferrothorn|Stealth Rock|p1a: Skarmory
+|-sidestart|p1: Eighty|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Skarmory|221\/334|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|18
+|callback|decision
+|
+|move|p1a: Skarmory|Brave Bird|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|267\/352
+|-damage|p1a: Skarmory|193\/334|[from] recoil|[of] p2a: Ferrothorn
+|-damage|p1a: Skarmory|152\/334|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|move|p2a: Ferrothorn|Gyro Ball|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|119\/334
+|-damage|p2a: Ferrothorn|209\/352|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Ferrothorn|231\/352|[from] item: Leftovers
+|-damage|p1a: Skarmory|78\/334|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|272\/352|[silent]
+|turn|19
+|callback|decision
+|
+|switch|p2a: Operation Rainfall|Politoed, F|289\/383
+|-damage|p2a: Operation Rainfall|242\/383|[from] Spikes
+|-damage|p2a: Operation Rainfall|195\/383|[from] Stealth Rock
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Operation Rainfall
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|245\/334
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1a: Skarmory|204\/334|[from] Leech Seed|[of] p2a: Operation Rainfall
+|-heal|p2a: Operation Rainfall|236\/383|[silent]
+|turn|20
+|callback|decision
+|chat|Eighty|stupid frog
+|
+|switch|p1a: Hippowdon|Hippowdon, F, shiny|162\/420
+|-damage|p1a: Hippowdon|136\/420|[from] Stealth Rock
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Hippowdon
+|move|p2a: Operation Rainfall|Surf|p1a: Hippowdon
+|-supereffective|p1a: Hippowdon
+|-damage|p1a: Hippowdon|0 fnt
+|faint|p1a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Operation Rainfall|213\/383|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: Stoutland|Stoutland, F|311\/311
+|-damage|p1a: Stoutland|273\/311|[from] Stealth Rock
+|turn|21
+|callback|decision
+|
+|move|p1a: Stoutland|Pursuit|p2a: Operation Rainfall|[from]Pursuit
+|-damage|p2a: Operation Rainfall|58\/383
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M|73\/299
+|-damage|p2a: Thundurus-Therian|0 fnt|[from] Stealth Rock
+|faint|p2a: Thundurus-Therian
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|chat|Eighty|G FUCKING G POLITOED
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|272\/352
+|-damage|p2a: Ferrothorn|228\/352|[from] Spikes
+|-damage|p2a: Ferrothorn|206\/352|[from] Stealth Rock
+|turn|22
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, F|204\/334
+|-damage|p1a: Skarmory|163\/334|[from] Stealth Rock
+|move|p2a: Ferrothorn|Gyro Ball|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|130\/334
+|-damage|p2a: Ferrothorn|148\/352|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Ferrothorn|170\/352|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p2a: Ferrothorn|Leech Seed|p1a: Skarmory|[miss]
+|-miss|p2a: Ferrothorn|p1a: Skarmory
+|move|p1a: Skarmory|Whirlwind|p2a: Ferrothorn
+|drag|p2a: Ponyboy|Keldeo|323\/323
+|-damage|p2a: Ponyboy|303\/323|[from] Stealth Rock
+|-damage|p2a: Ponyboy|263\/323|[from] Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Ponyboy|243\/323|[from] sandstorm
+|turn|24
+|callback|decision
+|
+|move|p2a: Ponyboy|Hidden Power|p1a: Skarmory
+|-damage|p1a: Skarmory|14\/334
+|move|p1a: Skarmory|Brave Bird|p2a: Ponyboy
+|-supereffective|p2a: Ponyboy
+|-damage|p2a: Ponyboy|0 fnt
+|-damage|p1a: Skarmory|0 fnt|[from] recoil|[of] p2a: Ponyboy
+|faint|p2a: Ponyboy
+|faint|p1a: Skarmory
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Stoutland|Stoutland, F|273\/311
+|-damage|p1a: Stoutland|235\/311|[from] Stealth Rock
+|switch|p2a: Operation Rainfall|Politoed, F|58\/383
+|-damage|p2a: Operation Rainfall|11\/383|[from] Stealth Rock
+|-damage|p2a: Operation Rainfall|0 fnt|[from] Spikes
+|faint|p2a: Operation Rainfall
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|170\/352
+|-damage|p2a: Ferrothorn|126\/352|[from] Spikes
+|-damage|p2a: Ferrothorn|104\/352|[from] Stealth Rock
+|turn|25
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, F, shiny|100\/324
+|-damage|p1a: Roserade|60\/324|[from] Stealth Rock
+|move|p2a: Ferrothorn|Gyro Ball|p1a: Roserade
+|-damage|p1a: Roserade|0 fnt
+|faint|p1a: Roserade
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Ferrothorn|126\/352|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Latias|Latias, F|216\/364
+|-damage|p1a: Latias|171\/364|[from] Stealth Rock
+|turn|26
+|callback|decision
+|
+|move|p1a: Latias|Hidden Power|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|faint|p2a: Ferrothorn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latias|149\/364|[from] sandstorm
+|-heal|p1a: Latias|171\/364|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, F|244\/343
+|-damage|p2a: Scizor|202\/343|[from] Stealth Rock
+|-damage|p2a: Scizor|160\/343|[from] Spikes
+|turn|27
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Latias
+|-damage|p1a: Latias|0 fnt
+|faint|p1a: Latias
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Stoutland|Stoutland, F|235\/311
+|-damage|p1a: Stoutland|197\/311|[from] Stealth Rock
+|turn|28
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Stoutland
+|-damage|p1a: Stoutland|17\/311
+|move|p1a: Stoutland|Superpower|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|-unboost|p1a: Stoutland|atk|1
+|-unboost|p1a: Stoutland|def|1
+|faint|p2a: Scizor
+|
+|win|Eighty
+|raw|Ladder updating...
+|chat|Eighty|whew
+|leave|Messuduppotatoasia
+|player|p2
+|raw|Eighty's rating: 2429 &rarr; <strong>2460<\/strong><br \/>(+31 for winning)
+|raw|Messuduppotatoasia's rating: 2374 &rarr; <strong>2368<\/strong><br \/>(-6 for losing)

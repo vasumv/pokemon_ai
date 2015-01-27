@@ -1,0 +1,255 @@
+|join|tigers
+|join|svartwolf
+|player|p1|tigers|93
+|player|p2|svartwolf|2
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Ninetales, M, shiny
+|poke|p1|Dugtrio, F
+|poke|p1|Xatu, M
+|poke|p1|Scizor, F
+|poke|p1|Darmanitan, F, shiny
+|poke|p1|Venusaur, M, shiny
+|poke|p2|Espeon, F
+|poke|p2|Umbreon, M
+|poke|p2|Haxorus, M
+|poke|p2|Rotom-Wash
+|poke|p2|Skarmory, M
+|poke|p2|Chandelure, F
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Guy Fawkes|Darmanitan, F, shiny| (100\/100)
+|switch|p2a: WashÃ³n|Rotom-Wash| (100\/100)
+|turn|1
+|callback|decision
+|
+|move|p1a: Guy Fawkes|U-turn|p2a: WashÃ³n
+|-damage|p2a: WashÃ³n|31 (69\/100)
+|callback|decision
+|
+|switch|p1a: SilverSideUp|Ninetales, M, shiny| (100\/100)
+|-weather|SunnyDay|[from] ability: Drought|[of] p1a: SilverSideUp
+|move|p2a: WashÃ³n|Toxic|p1a: SilverSideUp
+|-status|p1a: SilverSideUp|tox
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: WashÃ³n|6 (75\/100)|[from] item: Leftovers
+|-damage|p1a: SilverSideUp|6 (94\/100 tox)|[from] psn
+|turn|2
+|callback|decision
+|
+|move|p1a: SilverSideUp|Toxic|p2a: WashÃ³n
+|-status|p2a: WashÃ³n|tox
+|move|p2a: WashÃ³n|Volt Switch|p1a: SilverSideUp
+|-damage|p1a: SilverSideUp|23 (71\/100 tox)
+|callback|decision
+|
+|switch|p2a: Ars Magicka|Espeon, F| (100\/100)
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: SilverSideUp|6 (77\/100 tox)|[from] item: Leftovers
+|-damage|p1a: SilverSideUp|12 (65\/100 tox)|[from] psn
+|turn|3
+|callback|decision
+|
+|move|p2a: Ars Magicka|Reflect|p2a: Ars Magicka
+|-sidestart|p2: svartwolf|Reflect
+|move|p1a: SilverSideUp|Fire Blast|p2a: Ars Magicka|[miss]
+|-miss|p1a: SilverSideUp
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: SilverSideUp|6 (71\/100 tox)|[from] item: Leftovers
+|-damage|p1a: SilverSideUp|18 (53\/100 tox)|[from] psn
+|turn|4
+|callback|decision
+|
+|switch|p1a: Guy Fawkes|Darmanitan, F, shiny| (100\/100)
+|move|p2a: Ars Magicka|Light Screen|p2a: Ars Magicka
+|-sidestart|p2: svartwolf|move: Light Screen
+|
+|-weather|SunnyDay|[upkeep]
+|turn|5
+|callback|decision
+|
+|switch|p2a: Gothika|Chandelure, F| (100\/100)
+|move|p1a: Guy Fawkes|Flare Blitz|p2a: Gothika
+|-start|p2a: Gothika|ability: Flash Fire
+|
+|-weather|SunnyDay|[upkeep]
+|turn|6
+|callback|decision
+|
+|switch|p1a: SilverSideUp|Ninetales, M, shiny| (53\/100 tox)
+|move|p2a: Gothika|Overheat|p1a: SilverSideUp
+|-resisted|p1a: SilverSideUp
+|-damage|p1a: SilverSideUp|53 (0\/100 fnt)
+|-unboost|p2a: Gothika|spa|2
+|faint|p1a: SilverSideUp
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: aNgry trio|Dugtrio, F| (100\/100)
+|turn|7
+|callback|decision
+|
+|move|p2a: Gothika|Overheat|p1a: aNgry trio
+|-enditem|p1a: aNgry trio|Focus Sash
+|-damage|p1a: aNgry trio|100 (1\/100)
+|-unboost|p2a: Gothika|spa|2
+|move|p1a: aNgry trio|Earthquake|p2a: Gothika
+|-supereffective|p2a: Gothika
+|-damage|p2a: Gothika|51 (49\/100)
+|
+|-weather|SunnyDay|[upkeep]
+|turn|8
+|callback|decision
+|
+|move|p2a: Gothika|Overheat|p1a: aNgry trio
+|-damage|p1a: aNgry trio|0 (0\/100 fnt)
+|-unboost|p2a: Gothika|spa|2
+|faint|p1a: aNgry trio
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: Guy Fawkes|Darmanitan, F, shiny| (100\/100)
+|turn|9
+|callback|decision
+|
+|switch|p2a: WashÃ³n|Rotom-Wash| (75\/100 tox)
+|move|p1a: Guy Fawkes|Earthquake|p2a: WashÃ³n
+|-immune|p2a: WashÃ³n|[msg]
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: WashÃ³n|6 (81\/100 tox)|[from] item: Leftovers
+|-damage|p2a: WashÃ³n|6 (75\/100 tox)|[from] psn
+|turn|10
+|callback|decision
+|
+|switch|p1a: pepper|Venusaur, M, shiny| (100\/100)
+|move|p2a: WashÃ³n|Volt Switch|p1a: pepper
+|-resisted|p1a: pepper
+|-damage|p1a: pepper|12 (88\/100)
+|callback|decision
+|
+|switch|p2a: Ars Magicka|Espeon, F| (100\/100)
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: pepper|6 (94\/100)|[from] item: Black Sludge
+|-sideend|p2: svartwolf|Reflect
+|turn|11
+|callback|decision
+|
+|move|p1a: pepper|Growth|p1a: pepper
+|-boost|p1a: pepper|atk|2
+|-boost|p1a: pepper|spa|2
+|move|p2a: Ars Magicka|Psyshock|p1a: pepper
+|-supereffective|p1a: pepper
+|-damage|p1a: pepper|86 (8\/100)
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: pepper|6 (14\/100)|[from] item: Black Sludge
+|-sideend|p2: svartwolf|move: Light Screen
+|turn|12
+|callback|decision
+|
+|switch|p2a: Shield|Skarmory, M| (100\/100)
+|move|p1a: pepper|Sludge Bomb|p2a: Shield
+|-immune|p2a: Shield|[msg]
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: pepper|6 (20\/100)|[from] item: Black Sludge
+|turn|13
+|callback|decision
+|
+|move|p1a: pepper|Hidden Power|p2a: Shield
+|-supereffective|p2a: Shield
+|-activate|p2a: Shield|Sturdy
+|-damage|p2a: Shield|100 (1\/100)
+|move|p2a: Shield|Brave Bird|p1a: pepper
+|-supereffective|p1a: pepper
+|-damage|p1a: pepper|20 (0\/100 fnt)
+|-damage|p2a: Shield|0 (0\/100 fnt)|[from] recoil|[of] p1a: pepper
+|faint|p1a: pepper
+|faint|p2a: Shield
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: Guy Fawkes|Darmanitan, F, shiny| (100\/100)
+|switch|p2a: Ars Magicka|Espeon, F| (100\/100)
+|turn|14
+|callback|decision
+|
+|move|p1a: Guy Fawkes|U-turn|p2a: Ars Magicka
+|-supereffective|p2a: Ars Magicka
+|-damage|p2a: Ars Magicka|93 (7\/100)
+|callback|decision
+|
+|switch|p1a: SonicBanker's|Scizor, F| (100\/100)
+|move|p2a: Ars Magicka|Reflect|p2a: Ars Magicka
+|-sidestart|p2: svartwolf|Reflect
+|
+|-weather|SunnyDay|[upkeep]
+|turn|15
+|callback|decision
+|
+|move|p2a: Ars Magicka|Light Screen|p2a: Ars Magicka
+|-sidestart|p2: svartwolf|move: Light Screen
+|move|p1a: SonicBanker's|U-turn|p2a: Ars Magicka
+|-supereffective|p2a: Ars Magicka
+|-damage|p2a: Ars Magicka|7 (0\/100 fnt)
+|faint|p2a: Ars Magicka
+|callback|decision
+|
+|switch|p1a: Guy Fawkes|Darmanitan, F, shiny| (100\/100)
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p2a: Arcano|Umbreon, M| (100\/100)
+|turn|16
+|callback|decision
+|
+|move|p1a: Guy Fawkes|Flare Blitz|p2a: Arcano
+|-damage|p2a: Arcano|39 (61\/100)
+|-damage|p1a: Guy Fawkes|14 (86\/100)|[from] recoil|[of] p2a: Arcano
+|move|p2a: Arcano|Foul Play|p1a: Guy Fawkes
+|-damage|p1a: Guy Fawkes|83 (3\/100)
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Arcano|6 (67\/100)|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|switch|p1a: SonicBanker's|Scizor, F| (100\/100)
+|move|p2a: Arcano|Wish|p2a: Arcano
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Arcano|6 (73\/100)|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p1a: SonicBanker's|U-turn|p2a: Arcano
+|-supereffective|p2a: Arcano
+|-damage|p2a: Arcano|34 (40\/100)
+|callback|decision
+|-message|tigers forfeited.
+|
+|win|svartwolf
+|chatmsg-raw|Ladder updating...
+|leave|tigers
+|player|p1
+|raw|tigers's rating: 1727 &rarr; <strong>1723<\/strong><br \/>(-4 for losing)
+|raw|svartwolf's rating: 1559 &rarr; <strong>1565<\/strong><br \/>(+6 for winning)

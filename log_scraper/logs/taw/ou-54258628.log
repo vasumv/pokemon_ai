@@ -1,0 +1,235 @@
+|join|taw
+|join|Mexor
+|player|p1|taw|257
+|player|p2|Mexor|109
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Terrakion
+|poke|p1|Celebi
+|poke|p1|Forretress, F
+|poke|p1|Volcarona, F
+|poke|p1|Dragonite, M
+|poke|p1|Mamoswine, F
+|poke|p2|Latias, F
+|poke|p2|Tyranitar, F
+|poke|p2|Reuniclus, M
+|poke|p2|Garchomp, F
+|poke|p2|Rotom-Wash
+|poke|p2|Forretress, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Terrakion|Terrakion|323\/323
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|turn|1
+|callback|decision
+|
+|move|p1a: Terrakion|Stealth Rock|p2a: Rotom-Wash
+|-sidestart|p2: Mexor|move: Stealth Rock
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Terrakion
+|-status|p1a: Terrakion|brn
+|
+|-damage|p1a: Terrakion|283\/323 brn|[from] brn
+|turn|2
+|callback|decision
+|
+|move|p1a: Terrakion|Close Combat|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|211\/304
+|-unboost|p1a: Terrakion|def|1
+|-unboost|p1a: Terrakion|spd|1
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Terrakion
+|-damage|p1a: Terrakion|153\/323 brn
+|callback|decision
+|
+|switch|p2a: Forretress|Forretress, M|354\/354
+|-damage|p2a: Forretress|310\/354|[from] Stealth Rock
+|
+|-heal|p2a: Forretress|332\/354|[from] item: Leftovers
+|-damage|p1a: Terrakion|113\/323 brn|[from] brn
+|turn|3
+|callback|decision
+|
+|switch|p1a: Volcarona|Volcarona, F|312\/312
+|move|p2a: Forretress|Rapid Spin|p1a: Volcarona
+|-damage|p1a: Volcarona|290\/312
+|-status|p2a: Forretress|brn
+|-sideend|p2: Mexor|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Forretress
+|
+|-heal|p1a: Volcarona|309\/312|[from] item: Leftovers
+|-heal|p2a: Forretress|354\/354 brn|[from] item: Leftovers
+|-damage|p2a: Forretress|310\/354 brn|[from] brn
+|turn|4
+|callback|decision
+|
+|move|p1a: Volcarona|Quiver Dance|p1a: Volcarona
+|-boost|p1a: Volcarona|spa|1
+|-boost|p1a: Volcarona|spd|1
+|-boost|p1a: Volcarona|spe|1
+|move|p2a: Forretress|Volt Switch|p1a: Volcarona
+|-damage|p1a: Volcarona|285\/312
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, F|357\/357
+|
+|-heal|p1a: Volcarona|304\/312|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p2a: Garchomp|Outrage|p1a: Volcarona
+|-damage|p1a: Volcarona|19\/312
+|move|p1a: Volcarona|Giga Drain|p2a: Garchomp
+|-damage|p2a: Garchomp|175\/357
+|-heal|p1a: Volcarona|110\/312|[from] drain|[of] p2a: Garchomp
+|
+|-heal|p1a: Volcarona|129\/312|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p1a: Forretress|Forretress, F|354\/354
+|move|p2a: Garchomp|Outrage|p1a: Forretress
+|-resisted|p1a: Forretress
+|-damage|p1a: Forretress|280\/354
+|
+|-heal|p1a: Forretress|302\/354|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p2a: Garchomp|Outrage|p1a: Forretress
+|-resisted|p1a: Forretress
+|-damage|p1a: Forretress|227\/354
+|move|p1a: Forretress|Gyro Ball|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|-damage|p1a: Forretress|183\/354|[from] ability: Rough Skin|[of] p2a: Garchomp
+|faint|p2a: Garchomp
+|
+|-heal|p1a: Forretress|205\/354|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Reuniclus|Reuniclus, M|424\/424
+|turn|8
+|callback|decision
+|
+|move|p2a: Reuniclus|Calm Mind|p2a: Reuniclus
+|-boost|p2a: Reuniclus|spa|1
+|-boost|p2a: Reuniclus|spd|1
+|move|p1a: Forretress|Volt Switch|p2a: Reuniclus
+|-damage|p2a: Reuniclus|394\/424
+|callback|decision
+|
+|switch|p1a: Volcarona|Volcarona, F|129\/312
+|
+|-heal|p1a: Volcarona|148\/312|[from] item: Leftovers
+|-heal|p2a: Reuniclus|420\/424|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p1a: Volcarona|Quiver Dance|p1a: Volcarona
+|-boost|p1a: Volcarona|spa|1
+|-boost|p1a: Volcarona|spd|1
+|-boost|p1a: Volcarona|spe|1
+|move|p2a: Reuniclus|Psyshock|p1a: Volcarona
+|-damage|p1a: Volcarona|0 fnt
+|faint|p1a: Volcarona
+|
+|-heal|p2a: Reuniclus|424\/424|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Celebi|Celebi|404\/404
+|turn|10
+|callback|decision
+|
+|move|p1a: Celebi|Swords Dance|p1a: Celebi
+|-boost|p1a: Celebi|atk|2
+|move|p2a: Reuniclus|Psyshock|p1a: Celebi
+|-resisted|p1a: Celebi
+|-damage|p1a: Celebi|338\/404
+|
+|-heal|p1a: Celebi|363\/404|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p1a: Celebi|Swords Dance|p1a: Celebi
+|-boost|p1a: Celebi|atk|2
+|move|p2a: Reuniclus|Calm Mind|p2a: Reuniclus
+|-boost|p2a: Reuniclus|spa|1
+|-boost|p2a: Reuniclus|spd|1
+|
+|-heal|p1a: Celebi|388\/404|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Celebi|Swords Dance|p1a: Celebi
+|-boost|p1a: Celebi|atk|2
+|move|p2a: Reuniclus|Psyshock|p1a: Celebi
+|-resisted|p1a: Celebi
+|-damage|p1a: Celebi|301\/404
+|
+|-heal|p1a: Celebi|326\/404|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: Celebi|Baton Pass|p1a: Celebi
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, M|386\/386
+|move|p2a: Reuniclus|Psyshock|p1a: Dragonite
+|-damage|p1a: Dragonite|142\/386
+|
+|turn|14
+|callback|decision
+|
+|switch|p2a: Forretress|Forretress, M|310\/354 brn
+|move|p1a: Dragonite|ExtremeSpeed|p2a: Forretress
+|-resisted|p2a: Forretress
+|-damage|p2a: Forretress|128\/354 brn
+|
+|-heal|p2a: Forretress|150\/354 brn|[from] item: Leftovers
+|-damage|p2a: Forretress|106\/354 brn|[from] brn
+|turn|15
+|callback|decision
+|
+|move|p1a: Dragonite|ExtremeSpeed|p2a: Forretress
+|-resisted|p2a: Forretress
+|-damage|p2a: Forretress|0 fnt
+|faint|p2a: Forretress
+|
+|callback|decision
+|
+|switch|p2a: Latias|Latias, F|302\/302
+|turn|16
+|callback|decision
+|chat|taw|I think you're in trouble
+|
+|move|p1a: Dragonite|ExtremeSpeed|p2a: Latias
+|-damage|p2a: Latias|0 fnt
+|faint|p2a: Latias
+|
+|callback|decision
+|
+|switch|p2a: Reuniclus|Reuniclus, M|424\/424
+|turn|17
+|callback|decision
+|
+|move|p1a: Dragonite|ExtremeSpeed|p2a: Reuniclus
+|-damage|p2a: Reuniclus|0 fnt
+|faint|p2a: Reuniclus
+|
+|callback|decision
+|-message|Mexor forfeited.
+|
+|win|taw
+|raw|Ladder updating...
+|leave|Mexor
+|player|p2
+|raw|taw's rating: 1994 &rarr; <strong>1996<\/strong><br \/>(+2 for winning)
+|raw|Mexor's rating: 1795 &rarr; <strong>1792<\/strong><br \/>(-3 for losing)

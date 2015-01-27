@@ -1,0 +1,171 @@
+|join|FelixE
+|join|StrangeStrike
+|player|p1|FelixE|290
+|player|p2|StrangeStrike|15
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Conkeldurr, F
+|poke|p1|Genesect, shiny
+|poke|p1|Mandibuzz, F
+|poke|p1|Lucario, M, shiny
+|poke|p1|Chandelure, F
+|poke|p1|Blissey, F
+|poke|p2|Marowak, F
+|poke|p2|Scolipede, M
+|poke|p2|Smeargle, F
+|poke|p2|Ferrothorn, F
+|poke|p2|Landorus-Therian, M
+|poke|p2|Rotom-Wash
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Conkeldurr|Conkeldurr, F|414\/414
+|switch|p2a: Smeargle|Smeargle, F|314\/314
+|turn|1
+|callback|decision
+|
+|move|p2a: Smeargle|Spore|p1a: Conkeldurr
+|-status|p1a: Conkeldurr|slp
+|cant|p1a: Conkeldurr|slp
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: King sweeper|Lucario, M, shiny|282\/282
+|move|p2a: Smeargle|Sticky Web|p1a: King sweeper
+|-sidestart|p1: FelixE|move: Sticky Web
+|
+|turn|3
+|callback|decision
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|382\/382
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: King sweeper
+|-unboost|p1a: King sweeper|atk|1
+|-formechange|p1a: King sweeper|Lucario-Mega
+|message|Lucario has Mega Evolved into Mega Lucario!
+|move|p1a: King sweeper|Nasty Plot|p1a: King sweeper
+|-boost|p1a: King sweeper|spa|2
+|
+|turn|4
+|callback|decision
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|424\/424
+|move|p2a: Landorus-Therian|Earthquake|p1a: Mandibuzz
+|-immune|p1a: Mandibuzz|[msg]
+|
+|turn|5
+|callback|decision
+|
+|move|p2a: Landorus-Therian|U-turn|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|370\/424
+|callback|decision
+|
+|switch|p2a: Scolipede|Scolipede, M|323\/323
+|move|p1a: Mandibuzz|Knock Off|p2a: Scolipede
+|-damage|p2a: Scolipede|236\/323
+|-enditem|p2a: Scolipede|Black Sludge|[from] move: Knock Off|[of] p1a: Mandibuzz
+|
+|-heal|p1a: Mandibuzz|396\/424|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|-activate|p1a: Blissey|move: Sticky Web
+|-unboost|p1a: Blissey|spe|1
+|move|p2a: Scolipede|Substitute|p2a: Scolipede
+|-start|p2a: Scolipede|Substitute
+|-damage|p2a: Scolipede|156\/323
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|7
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect, shiny|308\/308
+|-activate|p1a: Genesect|move: Sticky Web
+|-unboost|p1a: Genesect|spe|1
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|move|p2a: Scolipede|Swords Dance|p2a: Scolipede
+|-boost|p2a: Scolipede|atk|2
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|8
+|callback|decision
+|
+|move|p2a: Scolipede|Baton Pass|p2a: Scolipede
+|callback|decision
+|
+|switch|p2a: Marowak|Marowak, F|323\/323
+|move|p1a: Genesect|Shift Gear|p1a: Genesect
+|-boost|p1a: Genesect|atk|1
+|-boost|p1a: Genesect|spe|2
+|
+|turn|9
+|callback|decision
+|
+|move|p1a: Genesect|Extreme Speed|p2a: Marowak
+|-crit|p2a: Marowak
+|-end|p2a: Marowak|Substitute
+|move|p2a: Marowak|Fire Punch|p1a: Genesect
+|-supereffective|p1a: Genesect
+|-damage|p1a: Genesect|0 fnt
+|faint|p1a: Genesect
+|
+|callback|decision
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|-activate|p1a: Blissey|move: Sticky Web
+|-unboost|p1a: Blissey|spe|1
+|turn|10
+|callback|decision
+|
+|move|p2a: Marowak|Earthquake|p1a: Blissey
+|-damage|p1a: Blissey|0 fnt
+|faint|p1a: Blissey
+|
+|callback|decision
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|396\/424
+|turn|11
+|callback|decision
+|
+|move|p2a: Marowak|Stone Edge|p1a: Mandibuzz
+|-supereffective|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|0 fnt
+|faint|p1a: Mandibuzz
+|
+|callback|decision
+|
+|switch|p1a: King sweeper|Lucario, M, shiny|282\/282
+|-formechange|p1a: King sweeper|Lucario-Mega
+|-activate|p1a: King sweeper|move: Sticky Web
+|-unboost|p1a: King sweeper|spe|1
+|turn|12
+|callback|decision
+|
+|move|p1a: King sweeper|Vacuum Wave|p2a: Marowak
+|-damage|p2a: Marowak|201\/323
+|move|p2a: Marowak|Earthquake|p1a: King sweeper
+|-supereffective|p1a: King sweeper
+|-damage|p1a: King sweeper|0 fnt
+|faint|p1a: King sweeper
+|
+|callback|decision
+|-message|FelixE forfeited.
+|
+|win|StrangeStrike
+|raw|Ladder updating...
+|leave|FelixE
+|player|p1
+|raw|FelixE's rating: 1145 &rarr; <strong>1116<\/strong><br \/>(-29 for losing)
+|raw|StrangeStrike's rating: 1099 &rarr; <strong>1127<\/strong><br \/>(+28 for winning)

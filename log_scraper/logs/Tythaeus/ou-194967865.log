@@ -1,0 +1,150 @@
+|join|Tythaeus
+|join|WakeUpUppercut
+|player|p1|Tythaeus|40
+|player|p2|WakeUpUppercut|102
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Sableye, M
+|poke|p1|Talonflame, F
+|poke|p1|Clefable, F
+|poke|p1|Slowbro, F
+|poke|p1|Landorus-Therian, M
+|poke|p1|Jirachi
+|poke|p2|Mamoswine, F
+|poke|p2|Latios, M
+|poke|p2|Heatran, M
+|poke|p2|Venusaur, M
+|poke|p2|Gliscor, M
+|poke|p2|Rotom-Wash
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Sableye|Sableye, M|303\/303
+|switch|p2a: Mamoswine|Mamoswine, F|361\/361
+|turn|1
+|
+|switch|p2a: Heatran|Heatran, M|326\/326
+|-item|p2a: Heatran|Air Balloon
+|detailschange|p1a: Sableye|Sableye-Mega, M
+|message|Sableye has Mega Evolved into Mega Sableye!
+|move|p1a: Sableye|Knock Off|p2a: Heatran
+|-damage|p2a: Heatran|235\/326
+|-enditem|p2a: Heatran|Air Balloon
+|
+|turn|2
+|
+|switch|p1a: Slowbro|Slowbro, F|394\/394
+|move|p2a: Heatran|Fire Blast|p1a: Slowbro
+|-resisted|p1a: Slowbro
+|-damage|p1a: Slowbro|273\/394
+|
+|-heal|p1a: Slowbro|297\/394|[from] item: Leftovers
+|turn|3
+|
+|switch|p2a: Venusaur|Venusaur, M|359\/359
+|switch|p1a: Sableye|Sableye-Mega, M|303\/303
+|
+|turn|4
+|
+|switch|p1a: Jirachi|Jirachi|341\/341
+|detailschange|p2a: Venusaur|Venusaur-Mega, M
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p2a: Venusaur|Sludge Bomb|p1a: Jirachi
+|-immune|p1a: Jirachi|[msg]
+|
+|turn|5
+|
+|move|p1a: Jirachi|U-turn|p2a: Venusaur
+|-damage|p2a: Venusaur|303\/359
+|
+|switch|p1a: Sableye|Sableye-Mega, M|303\/303
+|move|p2a: Venusaur|Hidden Power|p1a: Sableye
+|-damage|p1a: Sableye|232\/303
+|
+|turn|6
+|
+|move|p2a: Venusaur|Sludge Bomb|p1a: Sableye
+|-resisted|p1a: Sableye
+|-damage|p1a: Sableye|157\/303
+|move|p1a: Sableye|Will-O-Wisp|p2a: Venusaur
+|-status|p2a: Venusaur|brn
+|
+|-damage|p2a: Venusaur|259\/359 brn|[from] brn
+|turn|7
+|
+|switch|p1a: Jirachi|Jirachi|341\/341
+|move|p2a: Venusaur|Giga Drain|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|269\/341
+|-heal|p2a: Venusaur|295\/359 brn|[from] drain|[of] p1a: Jirachi
+|
+|-damage|p2a: Venusaur|251\/359 brn|[from] brn
+|turn|8
+|
+|switch|p2a: Heatran|Heatran, M|235\/326
+|move|p1a: Jirachi|Zen Headbutt|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|182\/326
+|
+|turn|9
+|
+|switch|p1a: Slowbro|Slowbro, F|394\/394
+|move|p2a: Heatran|Fire Blast|p1a: Slowbro
+|-resisted|p1a: Slowbro
+|-damage|p1a: Slowbro|280\/394
+|-status|p1a: Slowbro|brn
+|
+|-heal|p1a: Slowbro|304\/394 brn|[from] item: Leftovers
+|-damage|p1a: Slowbro|255\/394 brn|[from] brn
+|turn|10
+|
+|move|p2a: Heatran|Stealth Rock|p1a: Slowbro
+|-sidestart|p1: Tythaeus|move: Stealth Rock
+|move|p1a: Slowbro|Psyshock|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|140\/326
+|
+|-heal|p1a: Slowbro|279\/394 brn|[from] item: Leftovers
+|-damage|p1a: Slowbro|230\/394 brn|[from] brn
+|turn|11
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|303\/303
+|move|p1a: Slowbro|Psyshock|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|230\/303
+|
+|-heal|p2a: Rotom-Wash|248\/303|[from] item: Leftovers
+|-heal|p1a: Slowbro|254\/394 brn|[from] item: Leftovers
+|-damage|p1a: Slowbro|205\/394 brn|[from] brn
+|turn|12
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-damage|p1a: Landorus-Therian|280\/320|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Rotom-Wash
+|-unboost|p2a: Rotom-Wash|atk|1
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Landorus-Therian
+|-supereffective|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|faint|p1a: Landorus-Therian
+|
+|-heal|p2a: Rotom-Wash|266\/303|[from] item: Leftovers
+|-message|Tythaeus forfeited.
+|
+|win|WakeUpUppercut
+|raw|Ladder updating...
+|leave|Tythaeus
+|player|p1
+|raw|Tythaeus's rating: 1455 &rarr; <strong>1435<\/strong><br \/>(-20 for losing)
+|raw|WakeUpUppercut's rating: 1443 &rarr; <strong>1464<\/strong><br \/>(+21 for winning)
+|c|âWakeUpUppercut|gg

@@ -1,0 +1,284 @@
+|join|Coatay
+|join|Thebob650
+|player|p1|Coatay|169
+|player|p2|Thebob650|101
+|gametype|singles
+|tier|[Gen 4] OU (beta)
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|
+|start
+|switch|p1a: hurrtrun|Heatran, M|365\/365
+|switch|p2a: Best lead|Azelf, shiny|291\/291
+|turn|1
+|callback|decision
+|
+|move|p2a: Best lead|Hidden Power|p1a: hurrtrun
+|-crit|p1a: hurrtrun
+|-supereffective|p1a: hurrtrun
+|-damage|p1a: hurrtrun|0 fnt
+|faint|p1a: hurrtrun
+|
+|callback|decision
+|
+|switch|p1a: furrgun|Flygon, M|302\/302
+|turn|2
+|callback|decision
+|
+|switch|p2a: Water|Rotom-Wash|241\/241
+|move|p1a: furrgun|U-turn|p2a: Water
+|-resisted|p2a: Water
+|-damage|p2a: Water|206\/241
+|callback|decision
+|
+|switch|p1a: shurrmun|Shaymin|404\/404
+|
+|turn|3
+|callback|decision
+|
+|switch|p2a: #1|Scizor, M|341\/341
+|move|p1a: shurrmun|Leech Seed|p2a: #1
+|-start|p2a: #1|move: Leech Seed
+|
+|-damage|p2a: #1|299\/341|[from] Leech Seed|[of] p1a: shurrmun
+|turn|4
+|callback|decision
+|
+|switch|p1a: gurruhdoz|Gyarados, F|370\/370
+|-ability|p1a: gurruhdoz|Intimidate|[of] p2a: #1
+|-unboost|p2a: #1|atk|1
+|move|p2a: #1|U-turn|p1a: gurruhdoz
+|-resisted|p1a: gurruhdoz
+|-damage|p1a: gurruhdoz|298\/370
+|callback|decision
+|
+|switch|p2a: Best lead|Azelf, shiny|291\/291
+|
+|-heal|p1a: gurruhdoz|321\/370|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1a: shurrmun|Shaymin|404\/404
+|move|p2a: Best lead|Psychic|p1a: shurrmun
+|-damage|p1a: shurrmun|259\/404
+|
+|-heal|p1a: shurrmun|284\/404|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Best lead|Flamethrower|p1a: shurrmun
+|-supereffective|p1a: shurrmun
+|-damage|p1a: shurrmun|54\/404
+|move|p1a: shurrmun|Seed Flare|p2a: Best lead
+|-damage|p2a: Best lead|89\/291
+|
+|-heal|p1a: shurrmun|79\/404|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p1a: gurruhdoz|Gyarados, F|321\/370
+|-ability|p1a: gurruhdoz|Intimidate|[of] p2a: Best lead
+|-unboost|p2a: Best lead|atk|1
+|move|p2a: Best lead|Psychic|p1a: gurruhdoz
+|-damage|p1a: gurruhdoz|161\/370
+|
+|-heal|p1a: gurruhdoz|184\/370|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p2a: Best lead|Thunderbolt|p1a: gurruhdoz
+|-supereffective|p1a: gurruhdoz
+|-damage|p1a: gurruhdoz|0 fnt
+|faint|p1a: gurruhdoz
+|
+|callback|decision
+|
+|switch|p1a: turruniturr|Tyranitar, F|357\/357
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: turruniturr
+|turn|9
+|callback|decision
+|
+|move|p2a: Best lead|Hidden Power|p1a: turruniturr
+|-supereffective|p1a: turruniturr
+|-damage|p1a: turruniturr|255\/357
+|move|p1a: turruniturr|Dragon Dance|p1a: turruniturr
+|-boost|p1a: turruniturr|atk|1
+|-boost|p1a: turruniturr|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Best lead|71\/291|[from] sandstorm
+|turn|10
+|callback|decision
+|
+|move|p2a: Best lead|Hidden Power|p1a: turruniturr
+|-supereffective|p1a: turruniturr
+|-damage|p1a: turruniturr|155\/357
+|move|p1a: turruniturr|Crunch|p2a: Best lead
+|-supereffective|p2a: Best lead
+|-damage|p2a: Best lead|0 fnt
+|faint|p2a: Best lead
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: #1|Scizor, M|299\/341
+|turn|11
+|callback|decision
+|
+|switch|p1a: shurrsors|Scizor, M|341\/341
+|move|p2a: #1|Bullet Punch|p1a: shurrsors
+|-resisted|p1a: shurrsors
+|-damage|p1a: shurrsors|255\/341
+|
+|-weather|Sandstorm|[upkeep]
+|turn|12
+|callback|decision
+|
+|switch|p2a: Water|Rotom-Wash|206\/241
+|move|p1a: shurrsors|U-turn|p2a: Water
+|-crit|p2a: Water
+|-resisted|p2a: Water
+|-damage|p2a: Water|2\/241
+|callback|decision
+|
+|switch|p1a: furrgun|Flygon, M|302\/302
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Water|0 fnt|[from] sandstorm
+|faint|p2a: Water
+|callback|decision
+|
+|switch|p2a: KOS|Gengar, M, shiny|262\/262
+|turn|13
+|callback|decision
+|
+|move|p1a: furrgun|U-turn|p2a: KOS
+|-resisted|p2a: KOS
+|-damage|p2a: KOS|235\/262
+|callback|decision
+|
+|switch|p1a: shurrmun|Shaymin|79\/404
+|move|p2a: KOS|Shadow Ball|p1a: shurrmun
+|-damage|p1a: shurrmun|0 fnt
+|faint|p1a: shurrmun
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: KOS|219\/262|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: turruniturr|Tyranitar, F|155\/357
+|turn|14
+|callback|decision
+|
+|move|p2a: KOS|Shadow Ball|p1a: turruniturr
+|-resisted|p1a: turruniturr
+|-damage|p1a: turruniturr|88\/357
+|move|p1a: turruniturr|Stone Edge|p2a: KOS
+|-damage|p2a: KOS|0 fnt
+|faint|p2a: KOS
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: #1|Scizor, M|299\/341
+|turn|15
+|callback|decision
+|
+|switch|p1a: shurrsors|Scizor, M|255\/341
+|move|p2a: #1|Bullet Punch|p1a: shurrsors
+|-resisted|p1a: shurrsors
+|-damage|p1a: shurrsors|168\/341
+|
+|-weather|Sandstorm|[upkeep]
+|turn|16
+|callback|decision
+|
+|move|p2a: #1|Bullet Punch|p1a: shurrsors
+|-resisted|p1a: shurrsors
+|-damage|p1a: shurrsors|75\/341
+|move|p1a: shurrsors|Superpower|p2a: #1
+|-damage|p2a: #1|56\/341
+|-unboost|p1a: shurrsors|atk|1
+|-unboost|p1a: shurrsors|def|1
+|
+|-weather|Sandstorm|[upkeep]
+|turn|17
+|callback|decision
+|
+|switch|p1a: turruniturr|Tyranitar, F|88\/357
+|move|p2a: #1|Bullet Punch|p1a: turruniturr
+|-supereffective|p1a: turruniturr
+|-damage|p1a: turruniturr|0 fnt
+|faint|p1a: turruniturr
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: furrgun|Flygon, M|302\/302
+|turn|18
+|callback|decision
+|
+|move|p2a: #1|Bullet Punch|p1a: furrgun
+|-damage|p1a: furrgun|92\/302
+|move|p1a: furrgun|Earthquake|p2a: #1
+|-damage|p2a: #1|0 fnt
+|faint|p2a: #1
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Neptune|Kingdra, M|291\/291
+|turn|19
+|callback|decision
+|
+|move|p1a: furrgun|Earthquake|p2a: Neptune
+|-crit|p2a: Neptune
+|-damage|p2a: Neptune|0 fnt
+|faint|p2a: Neptune
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|chat|Thebob650|again with the hax 
+|
+|switch|p2a: Hax Master|Jirachi, shiny|341\/341
+|turn|20
+|callback|decision
+|chat|Thebob650|gg
+|chat|Coatay|gg
+|
+|move|p2a: Hax Master|Iron Head|p1a: furrgun
+|-damage|p1a: furrgun|0 fnt
+|faint|p1a: furrgun
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: shurrsors|Scizor, M|75\/341
+|turn|21
+|callback|decision
+|
+|move|p2a: Hax Master|Iron Head|p1a: shurrsors
+|-resisted|p1a: shurrsors
+|-damage|p1a: shurrsors|4\/341
+|cant|p1a: shurrsors|flinch
+|
+|-weather|Sandstorm|[upkeep]
+|turn|22
+|callback|decision
+|
+|move|p2a: Hax Master|Iron Head|p1a: shurrsors
+|-resisted|p1a: shurrsors
+|-damage|p1a: shurrsors|0 fnt
+|faint|p1a: shurrsors
+|
+|win|Thebob650
+|raw|Ladder updating...
+|raw|Coatay's rating: 1455 &rarr; <strong>1434<\/strong><br \/>(-21 for losing)
+|raw|Thebob650's rating: 1582 &rarr; <strong>1599<\/strong><br \/>(+17 for winning)
+|leave|Coatay
+|player|p1

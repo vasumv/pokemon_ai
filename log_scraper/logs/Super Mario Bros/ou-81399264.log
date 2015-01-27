@@ -1,0 +1,191 @@
+|join|Kaminari Ninja
+|join|Super Mario Bros
+|player|p1|Kaminari Ninja|285
+|player|p2|Super Mario Bros|155
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Hippowdon, F
+|poke|p1|Rotom-Wash
+|poke|p1|Tyranitar, F
+|poke|p1|Jellicent, F
+|poke|p1|Conkeldurr, F
+|poke|p1|Gliscor, M
+|poke|p2|Heatran, F
+|poke|p2|Talonflame, F
+|poke|p2|Sylveon, M
+|poke|p2|Manaphy
+|poke|p2|Genesect
+|poke|p2|Lucario, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Conkeldurr|Conkeldurr, F|377\/377
+|switch|p2a: Sylveon|Sylveon, M|392\/392
+|turn|1
+|callback|decision
+|join|jbtc12
+|
+|move|p2a: Sylveon|Hyper Voice|p1a: Conkeldurr
+|-supereffective|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|0 fnt
+|faint|p1a: Conkeldurr
+|
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|242\/242
+|turn|2
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Thunderbolt|p2a: Sylveon
+|-damage|p2a: Sylveon|212\/392
+|move|p2a: Sylveon|Hyper Voice|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|
+|callback|decision
+|
+|switch|p1a: Hippowdon|Hippowdon, F|383\/383
+|-weather|Sandstorm
+|turn|3
+|callback|decision
+|
+|move|p2a: Sylveon|Hyper Voice|p1a: Hippowdon
+|-damage|p1a: Hippowdon|67\/383
+|move|p1a: Hippowdon|Earthquake|p2a: Sylveon
+|-damage|p2a: Sylveon|31\/392
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Sylveon|7\/392|[from] sandstorm
+|-heal|p1a: Hippowdon|90\/383|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Sylveon|Hyper Voice|p1a: Hippowdon
+|-damage|p1a: Hippowdon|0 fnt
+|faint|p1a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Sylveon|0 fnt|[from] sandstorm
+|faint|p2a: Sylveon
+|callback|decision
+|
+|switch|p2a: Manaphy|Manaphy|404\/404
+|switch|p1a: Tyranitar|Tyranitar, F|342\/342
+|turn|5
+|callback|decision
+|
+|-formechange|p1a: Tyranitar|Tyranitar-Mega
+|message|Tyranitar has Mega Evolved into Mega Tyranitar!
+|move|p2a: Manaphy|Tail Glow|p2a: Manaphy
+|-boost|p2a: Manaphy|spa|3
+|move|p1a: Tyranitar|Dragon Dance|p1a: Tyranitar
+|-boost|p1a: Tyranitar|atk|1
+|-boost|p1a: Tyranitar|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Manaphy|379\/404|[from] sandstorm
+|-heal|p2a: Manaphy|404\/404|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p1a: Tyranitar|Stone Edge|p2a: Manaphy
+|-crit|p2a: Manaphy
+|-damage|p2a: Manaphy|0 fnt
+|faint|p2a: Manaphy
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Genesect|Genesect|283\/283
+|-boost|p2a: Genesect|spa|1|[from] ability: Download
+|turn|7
+|callback|decision
+|
+|move|p2a: Genesect|U-turn|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|204\/342
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, F|386\/386
+|move|p1a: Tyranitar|Dragon Dance|p1a: Tyranitar
+|-boost|p1a: Tyranitar|atk|1
+|-boost|p1a: Tyranitar|spe|1
+|
+|-weather|none
+|turn|8
+|callback|decision
+|
+|move|p1a: Tyranitar|Earthquake|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|faint|p2a: Heatran
+|
+|callback|decision
+|
+|switch|p2a: Talonflame|Talonflame, F|359\/359
+|turn|9
+|callback|decision
+|
+|move|p2a: Talonflame|Brave Bird|p1a: Tyranitar
+|-resisted|p1a: Tyranitar
+|-damage|p1a: Tyranitar|108\/342
+|-damage|p2a: Talonflame|327\/359|[from] recoil|[of] p1a: Tyranitar
+|move|p1a: Tyranitar|Crunch|p2a: Talonflame
+|-damage|p2a: Talonflame|0 fnt
+|faint|p2a: Talonflame
+|
+|callback|decision
+|
+|switch|p2a: Lucario|Lucario, M|281\/281
+|turn|10
+|callback|decision
+|
+|-formechange|p2a: Lucario|Lucario-Mega
+|message|Lucario has Mega Evolved into Mega Lucario!
+|move|p2a: Lucario|Bullet Punch|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|faint|p1a: Tyranitar
+|
+|callback|decision
+|
+|switch|p1a: Jellicent|Jellicent, F|404\/404
+|turn|11
+|callback|decision
+|
+|switch|p2a: Genesect|Genesect|283\/283
+|-boost|p2a: Genesect|atk|1|[from] ability: Download
+|move|p1a: Jellicent|Scald|p2a: Genesect
+|-damage|p2a: Genesect|192\/283
+|
+|turn|12
+|callback|decision
+|
+|move|p2a: Genesect|Thunderbolt|p1a: Jellicent
+|-supereffective|p1a: Jellicent
+|-damage|p1a: Jellicent|228\/404
+|move|p1a: Jellicent|Scald|p2a: Genesect
+|-damage|p2a: Genesect|104\/283
+|
+|-heal|p1a: Jellicent|253\/404|[from] item: Leftovers
+|turn|13
+|callback|decision
+|-message|Super Mario Bros forfeited.
+|
+|win|Kaminari Ninja
+|raw|Ladder updating...
+|leave|Super Mario Bros
+|player|p2
+|raw|Kaminari Ninja's rating: 1379 &rarr; <strong>1402<\/strong><br \/>(+23 for winning)
+|raw|Super Mario Bros's rating: 1342 &rarr; <strong>1320<\/strong><br \/>(-22 for losing)

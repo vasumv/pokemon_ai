@@ -1,0 +1,251 @@
+|join|thatisnotedible
+|join|siouxper
+|player|p1|thatisnotedible|101
+|player|p2|siouxper|265
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Aegislash, M
+|poke|p1|Greninja, M
+|poke|p1|Gyarados, F
+|poke|p1|Azumarill, F
+|poke|p1|Talonflame, M
+|poke|p1|Latias, F
+|poke|p2|Pinsir, M, shiny
+|poke|p2|Tyranitar, M
+|poke|p2|Clefable, M
+|poke|p2|Rotom-Wash, shiny
+|poke|p2|Garchomp, M, shiny
+|poke|p2|Excadrill, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Talonflame|Talonflame, M|360\/360
+|switch|p2a: Garchomp|Garchomp, M, shiny|357\/357
+|turn|1
+|
+|move|p2a: Garchomp|Stealth Rock|p1a: Talonflame
+|-sidestart|p1: thatisnotedible|move: Stealth Rock
+|move|p1a: Talonflame|Me First|p2a: Garchomp
+|-fail|p2a: Garchomp
+|
+|turn|2
+|
+|switch|p2a: Rotom - W|Rotom-Wash, shiny|304\/304
+|move|p1a: Talonflame|Me First|p2a: Rotom - W
+|-fail|p2a: Rotom - W
+|
+|turn|3
+|
+|move|p1a: Talonflame|Me First|p2a: Rotom - W
+|move|p1a: Talonflame|Hydro Pump|p2a: Rotom - W|[from]Me First|[miss]
+|-miss|p1a: Talonflame|p2a: Rotom - W
+|move|p2a: Rotom - W|Hydro Pump|p1a: Talonflame
+|-supereffective|p1a: Talonflame
+|-damage|p1a: Talonflame|6\/360
+|
+|turn|4
+|
+|switch|p1a: Latias|Latias, F|364\/364
+|-damage|p1a: Latias|319\/364|[from] Stealth Rock
+|move|p2a: Rotom - W|Volt Switch|p1a: Latias
+|-resisted|p1a: Latias
+|-damage|p1a: Latias|286\/364
+|
+|switch|p2a: Tyranitar|Tyranitar, M|391\/391
+|-weather|Sandstorm
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latias|264\/364|[from] sandstorm
+|-heal|p1a: Latias|286\/364|[from] item: Leftovers
+|turn|5
+|
+|move|p1a: Latias|Defog|p2a: Tyranitar
+|-unboost|p2a: Tyranitar|evasion|1
+|-sideend|p1: thatisnotedible|Stealth Rock|[from] move: Defog|[of] p1a: Latias
+|move|p2a: Tyranitar|Crunch|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|0 fnt
+|faint|p1a: Latias
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Azumarill|Azumarill, F|404\/404
+|turn|6
+|
+|switch|p2a: Rotom - W|Rotom-Wash, shiny|304\/304
+|move|p1a: Azumarill|Play Rough|p2a: Rotom - W
+|-damage|p2a: Rotom - W|156\/304
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Rotom - W|137\/304|[from] sandstorm
+|-damage|p1a: Azumarill|379\/404|[from] sandstorm
+|-heal|p2a: Rotom - W|156\/304|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Talonflame|Talonflame, M|6\/360
+|move|p2a: Rotom - W|Will-O-Wisp|p1a: Talonflame|[miss]
+|-miss|p2a: Rotom - W|p1a: Talonflame
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Talonflame|0 fnt|[from] sandstorm
+|-damage|p2a: Rotom - W|137\/304|[from] sandstorm
+|-heal|p2a: Rotom - W|156\/304|[from] item: Leftovers
+|faint|p1a: Talonflame
+|
+|switch|p1a: Gyarados|Gyarados, F|332\/332
+|turn|8
+|
+|detailschange|p1a: Gyarados|Gyarados-Mega, F
+|message|Gyarados has Mega Evolved into Mega Gyarados!
+|-ability|p1a: Gyarados|Mold Breaker
+|move|p1a: Gyarados|Earthquake|p2a: Rotom - W
+|-supereffective|p2a: Rotom - W
+|-damage|p2a: Rotom - W|0 fnt
+|faint|p2a: Rotom - W
+|
+|-weather|none
+|
+|switch|p2a: Clefable|Clefable, M|394\/394
+|turn|9
+|
+|switch|p1a: Aegislash|Aegislash, M|261\/261
+|move|p2a: Clefable|Calm Mind|p2a: Clefable
+|-boost|p2a: Clefable|spa|1
+|-boost|p2a: Clefable|spd|1
+|
+|turn|10
+|
+|move|p2a: Clefable|Flamethrower|p1a: Aegislash
+|-supereffective|p1a: Aegislash
+|-damage|p1a: Aegislash|89\/261
+|move|p1a: Aegislash|Swords Dance|p1a: Aegislash
+|-boost|p1a: Aegislash|atk|2
+|
+|-heal|p1a: Aegislash|105\/261|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Aegislash|King's Shield|p1a: Aegislash
+|-singleturn|p1a: Aegislash|Protect
+|move|p2a: Clefable|Flamethrower|p1a: Aegislash
+|-activate|p1a: Aegislash|Protect
+|
+|-heal|p1a: Aegislash|121\/261|[from] item: Leftovers
+|turn|12
+|
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Sneak|p2a: Clefable
+|-damage|p2a: Clefable|234\/394
+|move|p2a: Clefable|Flamethrower|p1a: Aegislash
+|-supereffective|p1a: Aegislash
+|-damage|p1a: Aegislash|0 fnt
+|faint|p1a: Aegislash
+|
+|
+|switch|p1a: Greninja|Greninja, M|285\/285
+|turn|13
+|
+|move|p1a: Greninja|Hydro Pump|p2a: Clefable
+|-start|p1a: Greninja|typechange|Water|[from] Protean
+|-damage|p2a: Clefable|73\/394
+|-damage|p1a: Greninja|257\/285|[from] item: Life Orb
+|move|p2a: Clefable|Soft-Boiled|p2a: Clefable
+|-heal|p2a: Clefable|270\/394
+|
+|turn|14
+|
+|switch|p1a: Azumarill|Azumarill, F|379\/404
+|move|p2a: Clefable|Soft-Boiled|p2a: Clefable
+|-heal|p2a: Clefable|394\/394
+|
+|turn|15
+|
+|move|p2a: Clefable|Moonblast|p1a: Azumarill
+|-damage|p1a: Azumarill|141\/404
+|-unboost|p1a: Azumarill|spa|1
+|-enditem|p1a: Azumarill|Sitrus Berry|[eat]
+|-heal|p1a: Azumarill|242\/404|[from] item: Sitrus Berry
+|move|p1a: Azumarill|Belly Drum|p1a: Azumarill
+|-damage|p1a: Azumarill|40\/404
+|-setboost|p1a: Azumarill|atk|6|[from] move: Belly Drum
+|
+|turn|16
+|
+|move|p1a: Azumarill|Aqua Jet|p2a: Clefable
+|-damage|p2a: Clefable|96\/394
+|move|p2a: Clefable|Moonblast|p1a: Azumarill
+|-damage|p1a: Azumarill|0 fnt
+|faint|p1a: Azumarill
+|
+|
+|switch|p1a: Greninja|Greninja, M|257\/285
+|turn|17
+|
+|move|p1a: Greninja|Hydro Pump|p2a: Clefable
+|-start|p1a: Greninja|typechange|Water|[from] Protean
+|-damage|p2a: Clefable|0 fnt
+|-damage|p1a: Greninja|229\/285|[from] item: Life Orb
+|faint|p2a: Clefable
+|
+|
+|switch|p2a: Garchomp|Garchomp, M, shiny|357\/357
+|turn|18
+|
+|move|p1a: Greninja|Ice Beam|p2a: Garchomp
+|-start|p1a: Greninja|typechange|Ice|[from] Protean
+|-supereffective|p2a: Garchomp
+|-enditem|p2a: Garchomp|Focus Sash
+|-damage|p2a: Garchomp|1\/357
+|-damage|p1a: Greninja|201\/285|[from] item: Life Orb
+|move|p2a: Garchomp|Outrage|p1a: Greninja
+|-damage|p1a: Greninja|0 fnt
+|faint|p1a: Greninja
+|
+|
+|switch|p1a: Gyarados|Gyarados-Mega, F|332\/332
+|-ability|p1a: Gyarados|Mold Breaker
+|turn|19
+|
+|move|p2a: Garchomp|Outrage|p1a: Gyarados
+|-damage|p1a: Gyarados|149\/332
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|
+|turn|20
+|
+|move|p1a: Gyarados|Ice Fang|p2a: Garchomp
+|-supereffective|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|-damage|p1a: Gyarados|108\/332|[from] ability: Rough Skin|[of] p2a: Garchomp
+|faint|p2a: Garchomp
+|
+|
+|switch|p2a: Tyranitar|Tyranitar, M|391\/391
+|-weather|Sandstorm
+|turn|21
+|
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|move|p2a: Tyranitar|Earthquake|p1a: Gyarados
+|-damage|p1a: Gyarados|0 fnt
+|faint|p1a: Gyarados
+|
+|win|siouxper
+|raw|Ladder updating...
+|raw|thatisnotedible's rating: 1533 &rarr; <strong>1508<\/strong><br \/>(-25 for losing)
+|raw|siouxper's rating: 1442 &rarr; <strong>1467<\/strong><br \/>(+25 for winning)
+|leave|thatisnotedible
+|player|p1

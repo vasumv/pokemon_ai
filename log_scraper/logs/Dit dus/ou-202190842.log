@@ -1,0 +1,219 @@
+|join|boj0
+|join|Dit dus
+|player|p1|boj0|101
+|player|p2|Dit dus|169
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Bisharp, F
+|poke|p1|Rotom-Wash
+|poke|p1|Landorus, M
+|poke|p1|Conkeldurr, F
+|poke|p1|Latias, F
+|poke|p1|Gallade, M
+|poke|p2|Charizard, F
+|poke|p2|Tyranitar, M
+|poke|p2|Azumarill, F
+|poke|p2|Mamoswine, F
+|poke|p2|Latios, M
+|poke|p2|Landorus-Therian, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Conkeldurr|Conkeldurr, F|413\/413
+|switch|p2a: Latios|Latios, M|301\/301
+|turn|1
+|
+|move|p2a: Latios|Draco Meteor|p1a: Conkeldurr|[miss]
+|-miss|p2a: Latios|p1a: Conkeldurr
+|move|p1a: Conkeldurr|Knock Off|p2a: Latios
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|-enditem|p2a: Latios|Life Orb|[from] move: Knock Off|[of] p1a: Conkeldurr
+|faint|p2a: Latios
+|
+|
+|switch|p2a: Azumarill|Azumarill, F|400\/400
+|turn|2
+|
+|move|p2a: Azumarill|Play Rough|p1a: Conkeldurr
+|-supereffective|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|0 fnt
+|faint|p1a: Conkeldurr
+|
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|turn|3
+|
+|switch|p2a: Mamoswine|Mamoswine, F|361\/361
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Mamoswine
+|-supereffective|p2a: Mamoswine
+|-enditem|p2a: Mamoswine|Focus Sash
+|-damage|p2a: Mamoswine|1\/361
+|
+|turn|4
+|
+|move|p2a: Mamoswine|Endeavor|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|1\/304
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Mamoswine
+|-status|p2a: Mamoswine|brn
+|
+|-heal|p1a: Rotom-Wash|20\/304|[from] item: Leftovers
+|-damage|p2a: Mamoswine|0 fnt|[from] brn
+|faint|p2a: Mamoswine
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Rotom-Wash
+|-unboost|p1a: Rotom-Wash|atk|1
+|turn|5
+|
+|move|p2a: Landorus-Therian|U-turn|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|
+|switch|p2a: Charizard|Charizard, F|297\/297
+|
+|
+|switch|p1a: Latias|Latias, F|301\/301
+|turn|6
+|
+|switch|p2a: Tyranitar|Tyranitar, M|403\/403
+|-weather|Sandstorm
+|move|p1a: Latias|Draco Meteor|p2a: Tyranitar
+|-crit|p2a: Tyranitar
+|-damage|p2a: Tyranitar|215\/403
+|-unboost|p1a: Latias|spa|2
+|-damage|p1a: Latias|271\/301|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latias|253\/301|[from] Sandstorm
+|turn|7
+|
+|move|p2a: Tyranitar|Pursuit|p1a: Latias|[from]Pursuit
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|0 fnt
+|faint|p1a: Latias
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Gallade|Gallade, M|277\/277
+|turn|8
+|
+|detailschange|p1a: Gallade|Gallade-Mega, M
+|-mega|p1a: Gallade|Gallade|Galladite
+|move|p1a: Gallade|Swords Dance|p1a: Gallade
+|-boost|p1a: Gallade|atk|2
+|move|p2a: Tyranitar|Crunch|p1a: Gallade
+|-damage|p1a: Gallade|112\/277
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gallade|95\/277|[from] Sandstorm
+|turn|9
+|
+|move|p1a: Gallade|Drain Punch|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|-heal|p1a: Gallade|203\/277|[from] drain|[of] p2a: Tyranitar
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gallade|186\/277|[from] Sandstorm
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Gallade
+|-unboost|p1a: Gallade|atk|1
+|turn|10
+|
+|move|p2a: Landorus-Therian|Earthquake|p1a: Gallade
+|-damage|p1a: Gallade|0 fnt
+|faint|p1a: Gallade
+|
+|-weather|none
+|
+|switch|p1a: Landorus|Landorus, M|319\/319
+|turn|11
+|
+|switch|p2a: Charizard|Charizard, F|297\/297
+|move|p1a: Landorus|Psychic|p2a: Charizard
+|-damage|p2a: Charizard|122\/297
+|
+|turn|12
+|
+|detailschange|p2a: Charizard|Charizard-Mega-Y, F
+|-mega|p2a: Charizard|Charizard|Charizardite Y
+|-weather|SunnyDay
+|move|p1a: Landorus|Psychic|p2a: Charizard
+|-damage|p2a: Charizard|0 fnt
+|faint|p2a: Charizard
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p2a: Azumarill|Azumarill, F|400\/400
+|turn|13
+|
+|move|p1a: Landorus|Earth Power|p2a: Azumarill
+|-damage|p2a: Azumarill|80\/400
+|-enditem|p2a: Azumarill|Sitrus Berry|[eat]
+|-heal|p2a: Azumarill|180\/400|[from] item: Sitrus Berry
+|move|p2a: Azumarill|Play Rough|p1a: Landorus
+|-damage|p1a: Landorus|120\/319
+|
+|-weather|SunnyDay|[upkeep]
+|turn|14
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Landorus
+|-unboost|p1a: Landorus|atk|1
+|move|p1a: Landorus|Earth Power|p2a: Landorus-Therian
+|-immune|p2a: Landorus-Therian|[msg]
+|
+|-weather|SunnyDay|[upkeep]
+|turn|15
+|
+|move|p2a: Landorus-Therian|Knock Off|p1a: Landorus
+|-damage|p1a: Landorus|0 fnt
+|-enditem|p1a: Landorus|Life Orb|[from] move: Knock Off|[of] p2a: Landorus-Therian
+|faint|p1a: Landorus
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p1a: Bisharp|Bisharp, F|333\/333
+|turn|16
+|c|âboj0|gg
+|
+|switch|p2a: Azumarill|Azumarill, F|180\/400
+|move|p1a: Bisharp|Iron Head|p2a: Azumarill
+|-damage|p2a: Azumarill|0 fnt
+|faint|p2a: Azumarill
+|
+|-weather|none
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Bisharp
+|-unboost|p1a: Bisharp|atk|1
+|-boost|p1a: Bisharp|atk|2|[from] ability: Defiant
+|turn|17
+|
+|move|p1a: Bisharp|Sucker Punch|p2a: Landorus-Therian
+|-crit|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|faint|p2a: Landorus-Therian
+|
+|win|boj0
+|raw|Ladder updating...
+|c|âDit dus|or was it
+|raw|boj0's rating: 1535 &rarr; <strong>1552<\/strong><br \/>(+17 for winning)
+|raw|Dit dus's rating: 1493 &rarr; <strong>1475<\/strong><br \/>(-18 for losing)
+|leave|Dit dus
+|player|p2

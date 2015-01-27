@@ -1,0 +1,374 @@
+|join|Coatay
+|join|surfingsuicune
+|player|p1|Coatay|102
+|player|p2|surfingsuicune|2
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Crobat, M
+|poke|p1|Breloom, M
+|poke|p1|Terrakion
+|poke|p1|Ferrothorn, M
+|poke|p1|Rotom-Wash
+|poke|p1|Dragonite, F
+|poke|p2|Hippowdon, M
+|poke|p2|Stoutland, F
+|poke|p2|Jirachi
+|poke|p2|Hydreigon, F
+|poke|p2|Scizor, F
+|poke|p2|Rotom-Wash
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|join|Xerxes
+|join|Welker
+|
+|start
+|switch|p1a: Rotom-W|Rotom-Wash|242\/242
+|switch|p2a: Hippowdon|Hippowdon, M|420\/420
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Hippowdon
+|turn|1
+|callback|decision
+|join|Ana Ivanovic
+|join|Gubs
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|move|p1a: Rotom-W|Hydro Pump|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|236\/304
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-W|227\/242|[from] sandstorm
+|-damage|p2a: Rotom-Wash|217\/304|[from] sandstorm
+|-heal|p1a: Rotom-W|242\/242|[from] item: Leftovers
+|-heal|p2a: Rotom-Wash|236\/304|[from] item: Leftovers
+|turn|2
+|callback|decision
+|join|Goldilocks
+|
+|move|p1a: Rotom-W|Hydro Pump|p2a: Rotom-Wash|[miss]
+|-miss|p1a: Rotom-W|p2a: Rotom-Wash
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Rotom-W|[miss]
+|-miss|p2a: Rotom-Wash|p1a: Rotom-W
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-W|227\/242|[from] sandstorm
+|-damage|p2a: Rotom-Wash|217\/304|[from] sandstorm
+|-heal|p1a: Rotom-W|242\/242|[from] item: Leftovers
+|-heal|p2a: Rotom-Wash|236\/304|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p1a: Rotom-W|Volt Switch|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|164\/304
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|352\/352
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Ferrothorn
+|-status|p1a: Ferrothorn|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Rotom-Wash|145\/304|[from] sandstorm
+|-heal|p2a: Rotom-Wash|164\/304|[from] item: Leftovers
+|-damage|p1a: Ferrothorn|308\/352 brn|[from] brn
+|turn|4
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|278\/352 brn
+|callback|decision
+|
+|switch|p2a: Hippowdon|Hippowdon, M|420\/420
+|move|p1a: Ferrothorn|Leech Seed|p2a: Hippowdon
+|-start|p2a: Hippowdon|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Ferrothorn|300\/352 brn|[from] item: Leftovers
+|-damage|p2a: Hippowdon|368\/420|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|352\/352 brn|[silent]
+|-damage|p1a: Ferrothorn|308\/352 brn|[from] brn
+|turn|5
+|callback|decision
+|
+|switch|p2a: Hydreigon|Hydreigon, F|325\/325
+|switch|p1a: Rotom-W|Rotom-Wash|242\/242
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-W|227\/242|[from] sandstorm
+|-damage|p2a: Hydreigon|305\/325|[from] sandstorm
+|-heal|p1a: Rotom-W|242\/242|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|308\/352 brn
+|move|p2a: Hydreigon|Draco Meteor|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|197\/352 brn
+|-unboost|p2a: Hydreigon|spa|2
+|-damage|p2a: Hydreigon|273\/325|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Hydreigon|253\/325|[from] sandstorm
+|-heal|p1a: Ferrothorn|219\/352 brn|[from] item: Leftovers
+|-damage|p1a: Ferrothorn|175\/352 brn|[from] brn
+|turn|7
+|callback|decision
+|
+|switch|p1a: Terrakion|Terrakion|323\/323
+|move|p2a: Hydreigon|Substitute|p2a: Hydreigon
+|-start|p2a: Hydreigon|Substitute
+|-damage|p2a: Hydreigon|172\/325
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Hydreigon|152\/325|[from] sandstorm
+|turn|8
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|175\/352 brn
+|move|p2a: Hydreigon|Draco Meteor|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|115\/352 brn
+|-unboost|p2a: Hydreigon|spa|2
+|-damage|p2a: Hydreigon|120\/325|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Hydreigon|100\/325|[from] sandstorm
+|-heal|p1a: Ferrothorn|137\/352 brn|[from] item: Leftovers
+|-damage|p1a: Ferrothorn|93\/352 brn|[from] brn
+|turn|9
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi|341\/341
+|move|p1a: Ferrothorn|Power Whip|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|308\/341
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Ferrothorn|115\/352 brn|[from] item: Leftovers
+|-damage|p1a: Ferrothorn|71\/352 brn|[from] brn
+|turn|10
+|callback|decision
+|
+|move|p2a: Jirachi|Ice Punch|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|8\/352 brn
+|-damage|p2a: Jirachi|266\/341|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|move|p1a: Ferrothorn|Stealth Rock|p2a: Jirachi
+|-sidestart|p2: surfingsuicune|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Ferrothorn|30\/352 brn|[from] item: Leftovers
+|-damage|p1a: Ferrothorn|0 fnt|[from] brn
+|faint|p1a: Ferrothorn
+|callback|decision
+|
+|switch|p1a: Terrakion|Terrakion|323\/323
+|turn|11
+|callback|decision
+|
+|switch|p2a: Hippowdon|Hippowdon, M|368\/420
+|-damage|p2a: Hippowdon|342\/420|[from] Stealth Rock
+|move|p1a: Terrakion|Close Combat|p2a: Hippowdon
+|-damage|p2a: Hippowdon|215\/420
+|-unboost|p1a: Terrakion|def|1
+|-unboost|p1a: Terrakion|spd|1
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|241\/420|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p1a: Rotom-W|Rotom-Wash|242\/242
+|move|p2a: Hippowdon|Stealth Rock|p1a: Rotom-W
+|-sidestart|p1: Coatay|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-W|227\/242|[from] sandstorm
+|-heal|p1a: Rotom-W|242\/242|[from] item: Leftovers
+|-heal|p2a: Hippowdon|267\/420|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|164\/304
+|-damage|p2a: Rotom-Wash|126\/304|[from] Stealth Rock
+|move|p1a: Rotom-W|Hydro Pump|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|62\/304
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-W|227\/242|[from] sandstorm
+|-damage|p2a: Rotom-Wash|43\/304|[from] sandstorm
+|-heal|p1a: Rotom-W|242\/242|[from] item: Leftovers
+|-heal|p2a: Rotom-Wash|62\/304|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: Rotom-W|Volt Switch|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|callback|decision
+|
+|switch|p1a: Terrakion|Terrakion|323\/323
+|-damage|p1a: Terrakion|303\/323|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, F|344\/344
+|-damage|p2a: Scizor|301\/344|[from] Stealth Rock
+|turn|15
+|callback|decision
+|
+|switch|p1a: Crobat|Crobat, M|374\/374
+|-damage|p1a: Crobat|281\/374|[from] Stealth Rock
+|move|p2a: Scizor|Swords Dance|p2a: Scizor
+|-boost|p2a: Scizor|atk|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Crobat|258\/374|[from] sandstorm
+|-heal|p1a: Crobat|281\/374|[from] item: Black Sludge
+|-heal|p2a: Scizor|322\/344|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Crobat
+|-damage|p1a: Crobat|37\/374
+|move|p1a: Crobat|Confuse Ray|p2a: Scizor
+|-start|p2a: Scizor|confusion
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Crobat|14\/374|[from] sandstorm
+|-heal|p1a: Crobat|37\/374|[from] item: Black Sludge
+|-heal|p2a: Scizor|343\/344|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|-activate|p2a: Scizor|confusion
+|move|p2a: Scizor|Bullet Punch|p1a: Crobat
+|-damage|p1a: Crobat|0 fnt
+|faint|p1a: Crobat
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Scizor|344\/344|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Rotom-W|Rotom-Wash|242\/242
+|-damage|p1a: Rotom-W|212\/242|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|switch|p2a: Hydreigon|Hydreigon, F|100\/325
+|-damage|p2a: Hydreigon|60\/325|[from] Stealth Rock
+|move|p1a: Rotom-W|Hidden Power|p2a: Hydreigon
+|-resisted|p2a: Hydreigon
+|-damage|p2a: Hydreigon|22\/325
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-W|197\/242|[from] sandstorm
+|-damage|p2a: Hydreigon|2\/325|[from] sandstorm
+|-heal|p1a: Rotom-W|212\/242|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, F|368\/368
+|-damage|p1a: Dragonite|276\/368|[from] Stealth Rock
+|move|p2a: Hydreigon|Draco Meteor|p1a: Dragonite
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|0 fnt
+|-unboost|p2a: Hydreigon|spa|2
+|-damage|p2a: Hydreigon|0 fnt|[from] item: Life Orb
+|faint|p1a: Dragonite
+|faint|p2a: Hydreigon
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Stoutland|Stoutland, F|311\/311
+|-damage|p2a: Stoutland|273\/311|[from] Stealth Rock
+|switch|p1a: Breloom|Breloom, M|262\/262
+|-damage|p1a: Breloom|246\/262|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|move|p1a: Breloom|Mach Punch|p2a: Stoutland
+|-supereffective|p2a: Stoutland
+|-damage|p2a: Stoutland|27\/311
+|move|p2a: Stoutland|Return|p1a: Breloom
+|-damage|p1a: Breloom|0 fnt
+|faint|p1a: Breloom
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Terrakion|Terrakion|303\/323
+|-damage|p1a: Terrakion|283\/323|[from] Stealth Rock
+|turn|21
+|callback|decision
+|
+|move|p1a: Terrakion|Close Combat|p2a: Stoutland
+|-supereffective|p2a: Stoutland
+|-damage|p2a: Stoutland|0 fnt
+|-unboost|p1a: Terrakion|def|1
+|-unboost|p1a: Terrakion|spd|1
+|faint|p2a: Stoutland
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, F|344\/344
+|-damage|p2a: Scizor|301\/344|[from] Stealth Rock
+|turn|22
+|callback|decision
+|
+|switch|p1a: Rotom-W|Rotom-Wash|212\/242
+|-damage|p1a: Rotom-W|182\/242|[from] Stealth Rock
+|move|p2a: Scizor|Swords Dance|p2a: Scizor
+|-boost|p2a: Scizor|atk|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-W|167\/242|[from] sandstorm
+|-heal|p1a: Rotom-W|182\/242|[from] item: Leftovers
+|-heal|p2a: Scizor|322\/344|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p1a: Rotom-W|Hidden Power|p2a: Scizor
+|-supereffective|p2a: Scizor
+|-damage|p2a: Scizor|26\/344
+|move|p2a: Scizor|Bug Bite|p1a: Rotom-W
+|-damage|p1a: Rotom-W|0 fnt
+|faint|p1a: Rotom-W
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Scizor|47\/344|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Terrakion|Terrakion|283\/323
+|-damage|p1a: Terrakion|263\/323|[from] Stealth Rock
+|turn|24
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Terrakion
+|-supereffective|p1a: Terrakion
+|-damage|p1a: Terrakion|0 fnt
+|faint|p1a: Terrakion
+|
+|win|surfingsuicune
+|raw|Ladder updating...
+|raw|Coatay's rating: 1764 &rarr; <strong>1759<\/strong><br \/>(-5 for losing)
+|raw|surfingsuicune's rating: 1471 &rarr; <strong>1522<\/strong><br \/>(+51 for winning)
+|chat|surfingsuicune|gg
+|chat|Coatay|gg
+|leave|Xerxes
+|leave|Ana Ivanovic
+|leave|Goldilocks
+|leave|Gubs
+|leave|Welker
+|join|Welker
+|leave|Welker

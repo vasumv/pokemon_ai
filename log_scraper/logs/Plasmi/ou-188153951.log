@@ -1,0 +1,240 @@
+|join|EndgameN
+|join|Plasmi
+|player|p1|EndgameN|170
+|player|p2|Plasmi|75
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Greninja, M
+|poke|p1|Conkeldurr, F
+|poke|p1|Metagross
+|poke|p1|Slurpuff, F
+|poke|p1|Volcarona, M
+|poke|p1|Gliscor, F
+|poke|p2|Lopunny, F, shiny
+|poke|p2|Gardevoir, F
+|poke|p2|Gourgeist-*, F
+|poke|p2|Latias, F
+|poke|p2|Blissey, F
+|poke|p2|Talonflame, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Gliscor|Gliscor, F|354\/354
+|switch|p2a: Isuna|Blissey, F|714\/714
+|turn|1
+|
+|move|p1a: Gliscor|Toxic|p2a: Isuna
+|-status|p2a: Isuna|tox
+|move|p2a: Isuna|Seismic Toss|p1a: Gliscor
+|-damage|p1a: Gliscor|254\/354
+|
+|-damage|p2a: Isuna|670\/714 tox|[from] psn
+|-status|p1a: Gliscor|tox|[from] item: Toxic Orb
+|turn|2
+|
+|switch|p2a: Lazuli|Latias, F|319\/319
+|move|p1a: Gliscor|Earthquake|p2a: Lazuli
+|-immune|p2a: Lazuli|[msg]
+|
+|-heal|p1a: Gliscor|298\/354 tox|[from] ability: Poison Heal
+|turn|3
+|
+|move|p2a: Lazuli|Draco Meteor|p1a: Gliscor
+|-damage|p1a: Gliscor|0 fnt
+|-unboost|p2a: Lazuli|spa|2
+|-damage|p2a: Lazuli|288\/319|[from] item: Life Orb
+|faint|p1a: Gliscor
+|
+|
+|switch|p1a: Metagross|Metagross|302\/302
+|turn|4
+|
+|switch|p2a: Kokoro|Gourgeist-Super, F|374\/374
+|-item|p1a: Metagross|Metagrossite|[from] ability: Frisk|[of] p2a: Kokoro|[identify]
+|detailschange|p1a: Metagross|Metagross-Mega
+|message|Metagross has Mega Evolved into Mega Metagross!
+|move|p1a: Metagross|Meteor Mash|p2a: Kokoro
+|-damage|p2a: Kokoro|229\/374
+|
+|-heal|p2a: Kokoro|252\/374|[from] item: Leftovers
+|turn|5
+|
+|switch|p1a: Volcarona|Volcarona, M|312\/312
+|move|p2a: Kokoro|Leech Seed|p1a: Volcarona
+|-start|p1a: Volcarona|move: Leech Seed
+|
+|-heal|p2a: Kokoro|275\/374|[from] item: Leftovers
+|-damage|p1a: Volcarona|273\/312|[from] Leech Seed|[of] p2a: Kokoro
+|-heal|p2a: Kokoro|314\/374|[silent]
+|turn|6
+|
+|switch|p2a: Mokou|Talonflame, F|297\/297
+|move|p1a: Volcarona|Quiver Dance|p1a: Volcarona
+|-boost|p1a: Volcarona|spa|1
+|-boost|p1a: Volcarona|spd|1
+|-boost|p1a: Volcarona|spe|1
+|
+|-damage|p1a: Volcarona|234\/312|[from] Leech Seed|[of] p2a: Mokou
+|turn|7
+|
+|move|p1a: Volcarona|Fiery Dance|p2a: Mokou
+|-resisted|p2a: Mokou
+|-damage|p2a: Mokou|99\/297
+|-boost|p1a: Volcarona|spa|1
+|move|p2a: Mokou|Fire Blast|p1a: Volcarona
+|-damage|p1a: Volcarona|147\/312
+|
+|-damage|p1a: Volcarona|108\/312|[from] Leech Seed|[of] p2a: Mokou
+|-heal|p2a: Mokou|138\/297|[silent]
+|turn|8
+|
+|move|p2a: Mokou|Brave Bird|p1a: Volcarona
+|-supereffective|p1a: Volcarona
+|-damage|p1a: Volcarona|0 fnt
+|-damage|p2a: Mokou|102\/297|[from] recoil|[of] p1a: Volcarona
+|faint|p1a: Volcarona
+|
+|
+|switch|p1a: Greninja|Greninja, M|286\/286
+|turn|9
+|
+|move|p2a: Mokou|Brave Bird|p1a: Greninja
+|-damage|p1a: Greninja|57\/286
+|-damage|p2a: Mokou|26\/297|[from] recoil|[of] p1a: Greninja
+|-enditem|p2a: Mokou|Liechi Berry|[eat]
+|-boost|p2a: Mokou|atk|1|[from] item: Liechi Berry
+|move|p1a: Greninja|Hydro Pump|p2a: Mokou
+|-start|p1a: Greninja|typechange|Water|[from] Protean
+|-supereffective|p2a: Mokou
+|-damage|p2a: Mokou|0 fnt
+|faint|p2a: Mokou
+|
+|
+|switch|p2a: Isuna|Blissey, F|670\/714
+|turn|10
+|
+|switch|p1a: Conkeldurr|Conkeldurr, F|414\/414
+|move|p2a: Isuna|Seismic Toss|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|314\/414
+|
+|-heal|p2a: Isuna|714\/714|[from] item: Leftovers
+|turn|11
+|
+|switch|p2a: Eve|Gardevoir, F|296\/296
+|-ability|p2a: Eve|Iron Fist|[from] ability: Trace|[of] p1a: Conkeldurr
+|move|p1a: Conkeldurr|Knock Off|p2a: Eve
+|-crit|p2a: Eve
+|-damage|p2a: Eve|18\/296
+|-enditem|p2a: Eve|Leftovers|[from] move: Knock Off|[of] p1a: Conkeldurr
+|
+|turn|12
+|
+|move|p1a: Conkeldurr|Mach Punch|p2a: Eve
+|-resisted|p2a: Eve
+|-damage|p2a: Eve|0 fnt
+|faint|p2a: Eve
+|
+|c|âPlasmi|dam
+|c|âPlasmi|that crit mattered
+|
+|switch|p2a: Lazuli|Latias, F|288\/319
+|turn|13
+|
+|switch|p1a: Metagross|Metagross-Mega|302\/302
+|move|p2a: Lazuli|Psyshock|p1a: Metagross
+|-resisted|p1a: Metagross
+|-damage|p1a: Metagross|276\/302
+|-damage|p2a: Lazuli|257\/319|[from] item: Life Orb
+|
+|turn|14
+|
+|switch|p2a: Kokoro|Gourgeist-Super, F|314\/374
+|-item|p1a: Metagross|Metagrossite|[from] ability: Frisk|[of] p2a: Kokoro|[identify]
+|move|p1a: Metagross|Meteor Mash|p2a: Kokoro
+|-damage|p2a: Kokoro|160\/374
+|-boost|p1a: Metagross|atk|1
+|
+|-heal|p2a: Kokoro|183\/374|[from] item: Leftovers
+|turn|15
+|
+|move|p2a: Kokoro|Shadow Sneak|p1a: Metagross
+|-supereffective|p1a: Metagross
+|-damage|p1a: Metagross|204\/302
+|move|p1a: Metagross|Meteor Mash|p2a: Kokoro
+|-damage|p2a: Kokoro|0 fnt
+|faint|p2a: Kokoro
+|
+|
+|switch|p2a: Cherry|Lopunny, F, shiny|280\/280
+|turn|16
+|
+|detailschange|p2a: Cherry|Lopunny-Mega, F, shiny
+|message|Lopunny has Mega Evolved into Mega Lopunny!
+|move|p2a: Cherry|Fake Out|p1a: Metagross
+|-resisted|p1a: Metagross
+|-damage|p1a: Metagross|177\/302
+|cant|p1a: Metagross|flinch
+|
+|turn|17
+|
+|move|p2a: Cherry|High Jump Kick|p1a: Metagross
+|-damage|p1a: Metagross|0 fnt
+|faint|p1a: Metagross
+|
+|
+|switch|p1a: Slurpuff|Slurpuff, F|306\/306
+|turn|18
+|
+|switch|p2a: Isuna|Blissey, F|714\/714
+|move|p1a: Slurpuff|Belly Drum|p1a: Slurpuff
+|-damage|p1a: Slurpuff|153\/306
+|-setboost|p1a: Slurpuff|atk|6|[from] move: Belly Drum
+|-enditem|p1a: Slurpuff|Sitrus Berry|[eat]
+|-heal|p1a: Slurpuff|229\/306|[from] item: Sitrus Berry
+|
+|turn|19
+|
+|move|p1a: Slurpuff|Drain Punch|p2a: Isuna
+|-supereffective|p2a: Isuna
+|-damage|p2a: Isuna|0 fnt
+|-heal|p1a: Slurpuff|306\/306|[from] drain|[of] p2a: Isuna
+|faint|p2a: Isuna
+|
+|
+|switch|p2a: Cherry|Lopunny-Mega, F, shiny|280\/280
+|turn|20
+|
+|move|p2a: Cherry|Fake Out|p1a: Slurpuff
+|-damage|p1a: Slurpuff|222\/306
+|cant|p1a: Slurpuff|flinch
+|
+|turn|21
+|c|âPlasmi|i am a fool
+|c|âPlasmi|for switching out
+|
+|move|p1a: Slurpuff|Drain Punch|p2a: Cherry
+|-supereffective|p2a: Cherry
+|-damage|p2a: Cherry|0 fnt
+|-heal|p1a: Slurpuff|306\/306|[from] drain|[of] p2a: Cherry
+|faint|p2a: Cherry
+|
+|-message|Plasmi forfeited.
+|
+|win|EndgameN
+|raw|Ladder updating...
+|leave|Plasmi
+|player|p2
+|raw|EndgameN's rating: 1184 &rarr; <strong>1209<\/strong><br \/>(+25 for winning)
+|raw|Plasmi's rating: 1185 &rarr; <strong>1160<\/strong><br \/>(-25 for losing)

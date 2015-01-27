@@ -1,0 +1,227 @@
+|join|tigers
+|join|Time for smth brok
+|player|p1|tigers|93
+|player|p2|Time for smth brok|167
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Hippowdon, M
+|poke|p1|Forretress, M
+|poke|p1|Jellicent, M
+|poke|p1|Dragonite, M
+|poke|p1|Celebi
+|poke|p1|Terrakion, shiny
+|poke|p2|Politoed, F
+|poke|p2|Ferrothorn, M
+|poke|p2|Rotom-Wash
+|poke|p2|Starmie
+|poke|p2|Azumarill, F
+|poke|p2|Breloom, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Celebi|Celebi|404\/404
+|switch|p2a: Rotom-Wash|Rotom-Wash|241\/241
+|turn|1
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Celebi
+|-resisted|p1a: Celebi
+|-damage|p1a: Celebi|361\/404
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|move|p1a: Celebi|Thunder Wave|p2a: Ferrothorn
+|-status|p2a: Ferrothorn|par
+|
+|-heal|p1a: Celebi|386\/404|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p1a: Forretress|Forretress, M|354\/354
+|cant|p2a: Ferrothorn|par
+|
+|turn|3
+|callback|decision
+|
+|move|p1a: Forretress|Spikes|p2a: Ferrothorn
+|-sidestart|p2: Time for smth brok|Spikes
+|move|p2a: Ferrothorn|Stealth Rock|p1a: Forretress
+|-sidestart|p1: tigers|move: Stealth Rock
+|
+|turn|4
+|callback|decision
+|
+|move|p1a: Forretress|Rapid Spin|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|346\/352 par
+|-damage|p1a: Forretress|310\/354|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|-damage|p1a: Forretress|251\/354|[from] item: Rocky Helmet|[of] p2a: Ferrothorn
+|-sideend|p1: tigers|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Forretress
+|move|p2a: Ferrothorn|Leech Seed|p1a: Forretress
+|-start|p1a: Forretress|move: Leech Seed
+|
+|-heal|p1a: Forretress|273\/354|[from] item: Leftovers
+|-damage|p1a: Forretress|229\/354|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|352\/352 par|[silent]
+|turn|5
+|callback|decision
+|
+|move|p1a: Forretress|Spikes|p2a: Ferrothorn
+|-sidestart|p2: Time for smth brok|Spikes
+|move|p2a: Ferrothorn|Stealth Rock|p1a: Forretress
+|-sidestart|p1: tigers|move: Stealth Rock
+|
+|-heal|p1a: Forretress|251\/354|[from] item: Leftovers
+|-damage|p1a: Forretress|207\/354|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|6
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|241\/241
+|move|p1a: Forretress|Rapid Spin|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|227\/241
+|-end|p1a: Forretress|Leech Seed|[from] move: Rapid Spin|[of] p1a: Forretress
+|-sideend|p1: tigers|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Forretress
+|
+|-heal|p1a: Forretress|229\/354|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p1a: Celebi|Celebi|386\/404
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Celebi
+|-resisted|p1a: Celebi
+|-damage|p1a: Celebi|346\/404
+|callback|decision
+|
+|switch|p2a: Starmie|Starmie|261\/261
+|-damage|p2a: Starmie|218\/261|[from] Spikes
+|
+|-heal|p2a: Starmie|234\/261|[from] item: Leftovers
+|-heal|p1a: Celebi|371\/404|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p1a: Jellicent|Jellicent, M|404\/404
+|move|p2a: Starmie|Thunder|p1a: Jellicent
+|-supereffective|p1a: Jellicent
+|-damage|p1a: Jellicent|154\/404
+|-status|p1a: Jellicent|par
+|
+|-heal|p2a: Starmie|250\/261|[from] item: Leftovers
+|-heal|p1a: Jellicent|179\/404 par|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p1a: Hippowdon|Hippowdon, M|420\/420
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Hippowdon
+|move|p2a: Starmie|Thunder|p1a: Hippowdon
+|-immune|p1a: Hippowdon|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Starmie|234\/261|[from] sandstorm
+|-heal|p2a: Starmie|250\/261|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p1a: Jellicent|Jellicent, M|179\/404 par
+|move|p2a: Starmie|Thunder|p1a: Jellicent
+|-supereffective|p1a: Jellicent
+|-damage|p1a: Jellicent|0 fnt
+|faint|p1a: Jellicent
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Starmie|234\/261|[from] sandstorm
+|-heal|p2a: Starmie|250\/261|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Terrakion|Terrakion, shiny|324\/324
+|turn|11
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, F|384\/384
+|-damage|p2a: Politoed|320\/384|[from] Spikes
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|move|p1a: Terrakion|X-Scissor|p2a: Politoed
+|-damage|p2a: Politoed|231\/384
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|255\/384|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p1a: Celebi|Celebi|371\/404
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352 par
+|-damage|p2a: Ferrothorn|294\/352 par|[from] Spikes
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Celebi|396\/404|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p1a: Forretress|Forretress, M|229\/354
+|move|p2a: Ferrothorn|Stealth Rock|p1a: Forretress
+|-sidestart|p1: tigers|move: Stealth Rock
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Forretress|251\/354|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p2a: Starmie|Starmie|250\/261
+|-damage|p2a: Starmie|207\/261|[from] Spikes
+|move|p1a: Forretress|Rapid Spin|p2a: Starmie
+|-damage|p2a: Starmie|191\/261
+|-sideend|p1: tigers|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Forretress
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Starmie|207\/261|[from] item: Leftovers
+|-heal|p1a: Forretress|273\/354|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p2a: Starmie|Rapid Spin|p1a: Forretress
+|-resisted|p1a: Forretress
+|-damage|p1a: Forretress|269\/354
+|-sideend|p2: Time for smth brok|Spikes|[from] move: Rapid Spin|[of] p2a: Starmie
+|move|p1a: Forretress|Volt Switch|p2a: Starmie
+|-supereffective|p2a: Starmie
+|-damage|p2a: Starmie|127\/261
+|callback|decision
+|
+|switch|p1a: Terrakion|Terrakion, shiny|324\/324
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Starmie|143\/261|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Terrakion|Close Combat|p2a: Starmie
+|-resisted|p2a: Starmie
+|-damage|p2a: Starmie|32\/261
+|-unboost|p1a: Terrakion|def|1
+|-unboost|p1a: Terrakion|spd|1
+|move|p2a: Starmie|Surf|p1a: Terrakion
+|-supereffective|p1a: Terrakion
+|-damage|p1a: Terrakion|0 fnt
+|faint|p1a: Terrakion
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Starmie|48\/261|[from] item: Leftovers
+|callback|decision
+|-message|tigers forfeited.
+|
+|win|Time for smth brok
+|raw|Ladder updating...
+|raw|tigers's rating: 1812 &rarr; <strong>1799<\/strong><br \/>(-13 for losing)
+|raw|Time for smth brok's rating: 1758 &rarr; <strong>1821<\/strong><br \/>(+63 for winning)
+|leave|tigers
+|player|p1

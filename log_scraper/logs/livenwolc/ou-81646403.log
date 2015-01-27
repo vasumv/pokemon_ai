@@ -1,0 +1,378 @@
+|join|ToxicWyvern
+|join|livEnwolC
+|player|p1|ToxicWyvern|94
+|player|p2|livEnwolC|59
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Golurk
+|poke|p1|Froslass, F
+|poke|p1|Banette, M
+|poke|p1|Gengar, M
+|poke|p1|Sableye, M
+|poke|p1|Cofagrigus, F
+|poke|p2|Conkeldurr, F
+|poke|p2|Heatran, F
+|poke|p2|Heracross, M
+|poke|p2|Scolipede, F
+|poke|p2|Cloyster, M
+|poke|p2|Blissey, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Golurk|Golurk|382\/382
+|switch|p2a: Scolipede|Scolipede, F|324\/324
+|turn|1
+|callback|decision
+|
+|move|p2a: Scolipede|Substitute|p2a: Scolipede
+|-start|p2a: Scolipede|Substitute
+|-damage|p2a: Scolipede|243\/324
+|move|p1a: Golurk|Stealth Rock|p2a: Scolipede
+|-sidestart|p2: livEnwolC|move: Stealth Rock
+|
+|-heal|p2a: Scolipede|263\/324|[from] item: Leftovers
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|2
+|callback|decision
+|
+|move|p2a: Scolipede|Swords Dance|p2a: Scolipede
+|-boost|p2a: Scolipede|atk|2
+|move|p1a: Golurk|Stone Edge|p2a: Scolipede
+|-supereffective|p2a: Scolipede
+|-end|p2a: Scolipede|Substitute
+|
+|-heal|p2a: Scolipede|283\/324|[from] item: Leftovers
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|3
+|callback|decision
+|
+|move|p2a: Scolipede|Baton Pass|p2a: Scolipede
+|callback|decision
+|
+|switch|p2a: The Broom|Heracross, M|363\/363
+|-damage|p2a: The Broom|318\/363|[from] Stealth Rock
+|move|p1a: Golurk|Earthquake|p2a: The Broom
+|-resisted|p2a: The Broom
+|-damage|p2a: The Broom|188\/363
+|
+|turn|4
+|callback|decision
+|
+|-formechange|p2a: The Broom|Heracross-Mega
+|message|Heracross has Mega Evolved into Mega Heracross!
+|move|p2a: The Broom|Bullet Seed|p1a: Golurk
+|-supereffective|p1a: Golurk
+|-damage|p1a: Golurk|184\/382
+|-supereffective|p1a: Golurk
+|-damage|p1a: Golurk|0 fnt
+|-hitcount|p1a: Golurk|2
+|faint|p1a: Golurk
+|
+|callback|decision
+|
+|switch|p1a: Cofagrigus|Cofagrigus, F|320\/320
+|turn|5
+|callback|decision
+|
+|move|p2a: The Broom|Pin Missile|p1a: Cofagrigus
+|-resisted|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|278\/320
+|-resisted|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|235\/320
+|-resisted|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|185\/320
+|-resisted|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|139\/320
+|-crit|p1a: Cofagrigus
+|-resisted|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|64\/320
+|-hitcount|p1a: Cofagrigus|5
+|move|p1a: Cofagrigus|Psychic|p2a: The Broom
+|-crit|p2a: The Broom
+|-supereffective|p2a: The Broom
+|-damage|p2a: The Broom|0 fnt
+|faint|p2a: The Broom
+|
+|callback|decision
+|
+|switch|p2a: Conkeldurr|Conkeldurr, F|414\/414
+|-damage|p2a: Conkeldurr|389\/414|[from] Stealth Rock
+|turn|6
+|callback|decision
+|
+|move|p2a: Conkeldurr|Knock Off|p1a: Cofagrigus
+|-supereffective|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|0 fnt
+|-ability|p2a: Conkeldurr|Mummy|[from] Mummy
+|faint|p1a: Cofagrigus
+|
+|-heal|p2a: Conkeldurr|414\/414|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Sableye|Sableye, M|303\/303
+|turn|7
+|callback|decision
+|
+|move|p1a: Sableye|Will-O-Wisp|p2a: Conkeldurr
+|-status|p2a: Conkeldurr|brn
+|move|p2a: Conkeldurr|Knock Off|p1a: Sableye
+|-damage|p1a: Sableye|212\/303
+|-enditem|p1a: Sableye|Leftovers|[from] move: Knock Off|[of] p2a: Conkeldurr
+|
+|-damage|p2a: Conkeldurr|363\/414 brn|[from] brn
+|turn|8
+|callback|decision
+|
+|switch|p2a: Fat Bitch|Blissey, F|714\/714
+|-damage|p2a: Fat Bitch|625\/714|[from] Stealth Rock
+|move|p1a: Sableye|Substitute|p1a: Sableye
+|-start|p1a: Sableye|Substitute
+|-damage|p1a: Sableye|137\/303
+|
+|-heal|p2a: Fat Bitch|669\/714|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|289\/303
+|move|p2a: Fat Bitch|Heal Bell|p2a: Fat Bitch
+|-cureteam|p2a: Fat Bitch|[from] move: HealBell
+|
+|-heal|p2a: Fat Bitch|713\/714|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p1a: Sableye|Will-O-Wisp|p2a: Fat Bitch|[miss]
+|-miss|p1a: Sableye|p2a: Fat Bitch
+|move|p2a: Fat Bitch|Wish|p2a: Fat Bitch
+|
+|-heal|p2a: Fat Bitch|714\/714|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p2a: Scolipede|Scolipede, F|283\/324
+|-damage|p2a: Scolipede|202\/324|[from] Stealth Rock
+|move|p1a: Sableye|Foul Play|p2a: Scolipede
+|-damage|p2a: Scolipede|70\/324
+|
+|-heal|p2a: Scolipede|324\/324|[from] move: Wish|[wisher] Fat Bitch
+|turn|12
+|callback|decision
+|
+|move|p1a: Sableye|Will-O-Wisp|p2a: Scolipede
+|-status|p2a: Scolipede|brn
+|move|p2a: Scolipede|Substitute|p2a: Scolipede
+|-start|p2a: Scolipede|Substitute
+|-damage|p2a: Scolipede|243\/324 brn
+|
+|-heal|p2a: Scolipede|263\/324 brn|[from] item: Leftovers
+|-damage|p2a: Scolipede|223\/324 brn|[from] brn
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|13
+|callback|decision
+|
+|move|p2a: Scolipede|Swords Dance|p2a: Scolipede
+|-boost|p2a: Scolipede|atk|2
+|move|p1a: Sableye|Foul Play|p2a: Scolipede
+|-end|p2a: Scolipede|Substitute
+|
+|-heal|p2a: Scolipede|243\/324 brn|[from] item: Leftovers
+|-damage|p2a: Scolipede|203\/324 brn|[from] brn
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|14
+|callback|decision
+|
+|move|p2a: Scolipede|Baton Pass|p2a: Scolipede
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, F|386\/386
+|-damage|p2a: Heatran|338\/386|[from] Stealth Rock
+|move|p1a: Sableye|Foul Play|p2a: Heatran
+|-damage|p2a: Heatran|166\/386
+|
+|-heal|p2a: Heatran|190\/386|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p2a: Heatran|Lava Plume|p1a: Sableye
+|-end|p1a: Sableye|Substitute
+|move|p1a: Sableye|Foul Play|p2a: Heatran
+|-damage|p2a: Heatran|25\/386
+|
+|-heal|p2a: Heatran|49\/386|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p2a: Heatran|Lava Plume|p1a: Sableye
+|-damage|p1a: Sableye|139\/303
+|-status|p1a: Sableye|brn
+|move|p1a: Sableye|Foul Play|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|faint|p2a: Heatran
+|
+|-damage|p1a: Sableye|102\/303 brn|[from] brn
+|callback|decision
+|
+|switch|p2a: Conkeldurr|Conkeldurr, F|363\/414
+|-damage|p2a: Conkeldurr|338\/414|[from] Stealth Rock
+|turn|17
+|callback|decision
+|
+|move|p1a: Sableye|Foul Play|p2a: Conkeldurr
+|-resisted|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|287\/414
+|move|p2a: Conkeldurr|Knock Off|p1a: Sableye
+|-damage|p1a: Sableye|0 fnt
+|faint|p1a: Sableye
+|
+|-heal|p2a: Conkeldurr|312\/414|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Banette|Banette, M|332\/332
+|-item|p2a: Conkeldurr|Leftovers|[from] ability: Frisk|[of] p1a: Banette|[identify]
+|turn|18
+|callback|decision
+|
+|-formechange|p1a: Banette|Banette-Mega
+|message|Banette has Mega Evolved into Mega Banette!
+|move|p1a: Banette|Shadow Claw|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|146\/414
+|move|p2a: Conkeldurr|Knock Off|p1a: Banette
+|-supereffective|p1a: Banette
+|-damage|p1a: Banette|94\/332
+|
+|-heal|p2a: Conkeldurr|171\/414|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|switch|p2a: Fat Bitch|Blissey, F|714\/714
+|-damage|p2a: Fat Bitch|625\/714|[from] Stealth Rock
+|move|p1a: Banette|Destiny Bond|p1a: Banette
+|-singlemove|p1a: Banette|Destiny Bond
+|
+|-heal|p2a: Fat Bitch|669\/714|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p1a: Banette|Knock Off|p2a: Fat Bitch
+|-damage|p2a: Fat Bitch|396\/714
+|-enditem|p2a: Fat Bitch|Leftovers|[from] move: Knock Off|[of] p1a: Banette
+|move|p2a: Fat Bitch|Thunder Wave|p1a: Banette
+|-status|p1a: Banette|par
+|
+|turn|21
+|callback|decision
+|
+|switch|p1a: Froslass|Froslass, F|344\/344
+|move|p2a: Fat Bitch|Heal Bell|p2a: Fat Bitch
+|-cureteam|p2a: Fat Bitch|[from] move: HealBell
+|
+|turn|22
+|callback|decision
+|
+|move|p1a: Froslass|Taunt|p2a: Fat Bitch
+|-start|p2a: Fat Bitch|move: Taunt
+|cant|p2a: Fat Bitch|move: Taunt|Wish
+|
+|turn|23
+|callback|decision
+|
+|switch|p2a: Cloyster|Cloyster, M|304\/304
+|-damage|p2a: Cloyster|228\/304|[from] Stealth Rock
+|move|p1a: Froslass|Spikes|p2a: Cloyster
+|-sidestart|p2: livEnwolC|Spikes
+|
+|-heal|p2a: Cloyster|247\/304|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p1a: Froslass|Taunt|p2a: Cloyster
+|-start|p2a: Cloyster|move: Taunt
+|move|p2a: Cloyster|Razor Shell|p1a: Froslass
+|-damage|p1a: Froslass|197\/344
+|-start|p2a: Cloyster|Disable|Razor Shell
+|
+|-heal|p2a: Cloyster|266\/304|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p1a: Froslass|Spikes|p2a: Cloyster
+|-sidestart|p2: livEnwolC|Spikes
+|move|p2a: Cloyster|Icicle Spear|p1a: Froslass
+|-resisted|p1a: Froslass
+|-damage|p1a: Froslass|170\/344
+|-resisted|p1a: Froslass
+|-damage|p1a: Froslass|143\/344
+|-resisted|p1a: Froslass
+|-damage|p1a: Froslass|118\/344
+|-resisted|p1a: Froslass
+|-damage|p1a: Froslass|94\/344
+|-resisted|p1a: Froslass
+|-damage|p1a: Froslass|70\/344
+|-hitcount|p1a: Froslass|5
+|
+|-heal|p2a: Cloyster|285\/304|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|move|p1a: Froslass|Destiny Bond|p1a: Froslass
+|-singlemove|p1a: Froslass|Destiny Bond
+|move|p2a: Cloyster|Icicle Spear|p1a: Froslass
+|-resisted|p1a: Froslass
+|-damage|p1a: Froslass|46\/344
+|-resisted|p1a: Froslass
+|-damage|p1a: Froslass|18\/344
+|-resisted|p1a: Froslass
+|-damage|p1a: Froslass|0 fnt
+|-hitcount|p1a: Froslass|3
+|faint|p1a: Froslass
+|-activate|p1a: Froslass|Destiny Bond
+|faint|p2a: Cloyster
+|
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, M|262\/262
+|switch|p2a: Fat Bitch|Blissey, F|396\/714
+|-damage|p2a: Fat Bitch|307\/714|[from] Stealth Rock
+|-damage|p2a: Fat Bitch|188\/714|[from] Spikes
+|turn|27
+|callback|decision
+|
+|move|p1a: Gengar|Substitute|p1a: Gengar
+|-start|p1a: Gengar|Substitute
+|-damage|p1a: Gengar|197\/262
+|move|p2a: Fat Bitch|Wish|p2a: Fat Bitch
+|
+|-heal|p1a: Gengar|213\/262|[from] item: Black Sludge
+|turn|28
+|callback|decision
+|
+|switch|p2a: Conkeldurr|Conkeldurr, F|171\/414
+|-damage|p2a: Conkeldurr|102\/414|[from] Spikes
+|-damage|p2a: Conkeldurr|77\/414|[from] Stealth Rock
+|move|p1a: Gengar|Dazzling Gleam|p2a: Conkeldurr
+|-supereffective|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|0 fnt
+|faint|p2a: Conkeldurr
+|
+|-heal|p1a: Gengar|229\/262|[from] item: Black Sludge
+|callback|decision
+|-message|livEnwolC forfeited.
+|
+|win|ToxicWyvern
+|raw|Ladder updating...
+|leave|livEnwolC
+|player|p2
+|raw|ToxicWyvern's rating: 1237 &rarr; <strong>1263<\/strong><br \/>(+26 for winning)
+|raw|livEnwolC's rating: 1258 &rarr; <strong>1232<\/strong><br \/>(-26 for losing)

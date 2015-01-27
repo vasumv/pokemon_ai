@@ -1,0 +1,207 @@
+|join|bizarman
+|join|pus1010
+|player|p1|bizarman|42
+|player|p2|pus1010|249
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Rotom-Wash
+|poke|p1|Heatran, F
+|poke|p1|Charizard, M
+|poke|p1|Kyurem-Black
+|poke|p1|Azumarill, M
+|poke|p1|Mandibuzz, F
+|poke|p2|Whimsicott, F
+|poke|p2|Smeargle, F
+|poke|p2|Espeon, F
+|poke|p2|Kingdra, F
+|poke|p2|Gothitelle, F
+|poke|p2|Thundurus, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Mandibuzz|Mandibuzz, F|424\/424
+|switch|p2a: Whimsicott|Whimsicott, F|323\/323
+|turn|1
+|
+|move|p2a: Whimsicott|Taunt|p1a: Mandibuzz
+|-start|p1a: Mandibuzz|move: Taunt
+|cant|p1a: Mandibuzz|move: Taunt|Taunt
+|
+|turn|2
+|
+|switch|p1a: Heatran|Heatran, F|386\/386
+|move|p2a: Whimsicott|Tailwind|p2a: Whimsicott
+|-sidestart|p2: pus1010|move: Tailwind
+|
+|turn|3
+|
+|move|p2a: Whimsicott|Memento|p1a: Heatran
+|-unboost|p1a: Heatran|atk|2
+|-unboost|p1a: Heatran|spa|2
+|faint|p2a: Whimsicott
+|move|p1a: Heatran|Lava Plume|p2: Whimsicott|[notarget]
+|-notarget
+|
+|
+|switch|p2a: Smeargle|Smeargle, F|294\/294
+|turn|4
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|424\/424
+|move|p2a: Smeargle|Dark Void|p1a: Mandibuzz
+|-status|p1a: Mandibuzz|slp
+|
+|turn|5
+|
+|switch|p1a: Charizard|Charizard, M|298\/298
+|move|p2a: Smeargle|Geomancy|p2a: Smeargle|[still]
+|-prepare|p2a: Smeargle|Geomancy|p2a: Smeargle
+|-enditem|p2a: Smeargle|Power Herb
+|-anim|p2a: Smeargle|Geomancy|p2a: Smeargle
+|-boost|p2a: Smeargle|spa|2
+|-boost|p2a: Smeargle|spd|2
+|-boost|p2a: Smeargle|spe|2
+|
+|-sideend|p2: pus1010|move: Tailwind
+|turn|6
+|
+|detailschange|p1a: Charizard|Charizard-Mega-X, M
+|-mega|p1a: Charizard|Charizard|Charizardite X
+|move|p2a: Smeargle|Baton Pass|p2a: Smeargle
+|
+|switch|p2a: Espeon|Espeon, F|334\/334
+|move|p1a: Charizard|Dragon Claw|p2a: Espeon
+|-damage|p2a: Espeon|136\/334
+|
+|-heal|p2a: Espeon|156\/334|[from] item: Leftovers
+|turn|7
+|
+|move|p2a: Espeon|Stored Power|p1a: Charizard
+|-damage|p1a: Charizard|0 fnt
+|faint|p1a: Charizard
+|
+|-heal|p2a: Espeon|176\/334|[from] item: Leftovers
+|
+|switch|p1a: Azumarill|Azumarill, M|404\/404
+|turn|8
+|
+|move|p1a: Azumarill|Aqua Jet|p2a: Espeon
+|-damage|p2a: Espeon|37\/334
+|move|p2a: Espeon|Stored Power|p1a: Azumarill
+|-damage|p1a: Azumarill|0 fnt
+|faint|p1a: Azumarill
+|
+|-heal|p2a: Espeon|57\/334|[from] item: Leftovers
+|
+|switch|p1a: Heatran|Heatran, F|386\/386
+|turn|9
+|
+|move|p2a: Espeon|Morning Sun|p2a: Espeon
+|-heal|p2a: Espeon|224\/334
+|move|p1a: Heatran|Lava Plume|p2a: Espeon
+|-damage|p2a: Espeon|163\/334
+|-status|p2a: Espeon|brn
+|
+|-heal|p2a: Espeon|183\/334 brn|[from] item: Leftovers
+|-damage|p2a: Espeon|142\/334 brn|[from] brn
+|turn|10
+|
+|move|p2a: Espeon|Morning Sun|p2a: Espeon
+|-heal|p2a: Espeon|309\/334 brn
+|move|p1a: Heatran|Lava Plume|p2a: Espeon
+|-damage|p2a: Espeon|246\/334 brn
+|
+|-heal|p2a: Espeon|266\/334 brn|[from] item: Leftovers
+|-damage|p2a: Espeon|225\/334 brn|[from] brn
+|turn|11
+|
+|move|p2a: Espeon|Stored Power|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|225\/386
+|move|p1a: Heatran|Lava Plume|p2a: Espeon
+|-damage|p2a: Espeon|158\/334 brn
+|
+|-heal|p2a: Espeon|178\/334 brn|[from] item: Leftovers
+|-heal|p1a: Heatran|249\/386|[from] item: Leftovers
+|-damage|p2a: Espeon|137\/334 brn|[from] brn
+|turn|12
+|
+|move|p2a: Espeon|Stored Power|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|98\/386
+|move|p1a: Heatran|Lava Plume|p2a: Espeon
+|-damage|p2a: Espeon|70\/334 brn
+|
+|-heal|p2a: Espeon|90\/334 brn|[from] item: Leftovers
+|-heal|p1a: Heatran|122\/386|[from] item: Leftovers
+|-damage|p2a: Espeon|49\/334 brn|[from] brn
+|turn|13
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Espeon|Morning Sun|p2a: Espeon
+|-heal|p2a: Espeon|216\/334 brn
+|
+|-heal|p2a: Espeon|236\/334 brn|[from] item: Leftovers
+|-heal|p1a: Heatran|146\/386|[from] item: Leftovers
+|-damage|p2a: Espeon|195\/334 brn|[from] brn
+|turn|14
+|
+|move|p2a: Espeon|Stored Power|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|6\/386
+|move|p1a: Heatran|Lava Plume|p2a: Espeon
+|-damage|p2a: Espeon|135\/334 brn
+|
+|-heal|p2a: Espeon|155\/334 brn|[from] item: Leftovers
+|-heal|p1a: Heatran|30\/386|[from] item: Leftovers
+|-damage|p2a: Espeon|114\/334 brn|[from] brn
+|turn|15
+|
+|move|p2a: Espeon|Dazzling Gleam|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|3\/386
+|move|p1a: Heatran|Lava Plume|p2a: Espeon
+|-damage|p2a: Espeon|48\/334 brn
+|
+|-heal|p2a: Espeon|68\/334 brn|[from] item: Leftovers
+|-heal|p1a: Heatran|27\/386|[from] item: Leftovers
+|-damage|p2a: Espeon|27\/334 brn|[from] brn
+|turn|16
+|
+|move|p2a: Espeon|Morning Sun|p2a: Espeon
+|-heal|p2a: Espeon|194\/334 brn
+|move|p1a: Heatran|Lava Plume|p2a: Espeon
+|-damage|p2a: Espeon|128\/334 brn
+|
+|-heal|p2a: Espeon|148\/334 brn|[from] item: Leftovers
+|-heal|p1a: Heatran|51\/386|[from] item: Leftovers
+|-damage|p2a: Espeon|107\/334 brn|[from] brn
+|turn|17
+|
+|move|p2a: Espeon|Stored Power|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|-heal|p2a: Espeon|127\/334 brn|[from] item: Leftovers
+|-damage|p2a: Espeon|86\/334 brn|[from] brn
+|-message|bizarman forfeited.
+|
+|win|pus1010
+|raw|Ladder updating...
+|leave|bizarman
+|player|p1
+|raw|bizarman's rating: 1679 &rarr; <strong>1648<\/strong><br \/>(-31 for losing)
+|raw|pus1010's rating: 1465 &rarr; <strong>1496<\/strong><br \/>(+31 for winning)

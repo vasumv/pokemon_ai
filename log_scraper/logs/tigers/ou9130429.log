@@ -1,0 +1,364 @@
+|join|tigers
+|join|QUB 2
+|player|p1|tigers|93
+|player|p2|QUB 2|1
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Ninetales, M, shiny
+|poke|p1|Dugtrio, M
+|poke|p1|Xatu, M
+|poke|p1|Scizor, F
+|poke|p1|Darmanitan, M, shiny
+|poke|p1|Venusaur, M, shiny
+|poke|p2|Deoxys-Defense
+|poke|p2|Gengar, M
+|poke|p2|Terrakion
+|poke|p2|Keldeo
+|poke|p2|Scizor, M
+|poke|p2|Latios, M
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Guy Fawkes|Darmanitan, M, shiny| (100\/100)
+|switch|p2a: Terrakion|Terrakion| (100\/100)
+|turn|1
+|callback|decision
+|
+|switch|p1a: SonicBanker's|Scizor, F| (100\/100)
+|move|p2a: Terrakion|Close Combat|p1a: SonicBanker's
+|-damage|p1a: SonicBanker's|68 (32\/100)
+|-unboost|p2a: Terrakion|def|1
+|-unboost|p2a: Terrakion|spd|1
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: Keldeo|Keldeo| (100\/100)
+|move|p1a: SonicBanker's|Bullet Punch|p2a: Keldeo
+|-resisted|p2a: Keldeo
+|-damage|p2a: Keldeo|31 (69\/100)
+|
+|turn|3
+|callback|decision
+|
+|switch|p1a: SilverSideUp|Ninetales, M, shiny| (100\/100)
+|-weather|SunnyDay|[from] ability: Drought|[of] p1a: SilverSideUp
+|move|p2a: Keldeo|Secret Sword|p1a: SilverSideUp
+|-damage|p1a: SilverSideUp|56 (44\/100)
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: SilverSideUp|6 (50\/100)|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: Bad Medicine|Xatu, M| (100\/100)
+|move|p2a: Keldeo|Secret Sword|p1a: Bad Medicine
+|-resisted|p1a: Bad Medicine
+|-damage|p1a: Bad Medicine|12 (88\/100)
+|
+|-weather|SunnyDay|[upkeep]
+|turn|5
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M| (100\/100)
+|move|p1a: Bad Medicine|Reflect|p1a: Bad Medicine
+|-sidestart|p1: tigers|Reflect
+|
+|-weather|SunnyDay|[upkeep]
+|turn|6
+|callback|decision
+|
+|move|p1a: Bad Medicine|Light Screen|p1a: Bad Medicine
+|-sidestart|p1: tigers|move: Light Screen
+|move|p2a: Scizor|U-turn|p1a: Bad Medicine
+|-damage|p1a: Bad Medicine|34 (54\/100)
+|callback|decision
+|
+|switch|p2a: Terrakion|Terrakion| (100\/100)
+|
+|-weather|SunnyDay|[upkeep]
+|turn|7
+|callback|decision
+|
+|switch|p1a: pepper|Venusaur, M, shiny| (100\/100)
+|move|p2a: Terrakion|Substitute|p2a: Terrakion
+|-start|p2a: Terrakion|Substitute
+|-damage|p2a: Terrakion|25 (75\/100)
+|
+|-weather|SunnyDay|[upkeep]
+|turn|8
+|callback|decision
+|
+|move|p1a: pepper|Giga Drain|p2a: Terrakion
+|-supereffective|p2a: Terrakion
+|-end|p2a: Terrakion|Substitute
+|move|p2a: Terrakion|Stone Edge|p1a: pepper
+|-enditem|p2a: Terrakion|Rock Gem|[from] gem|[move] Stone Edge
+|-damage|p1a: pepper|45 (55\/100)
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: pepper|6 (61\/100)|[from] item: Black Sludge
+|turn|9
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M| (100\/100)
+|move|p1a: pepper|Giga Drain|p2a: Latios
+|-resisted|p2a: Latios
+|-damage|p2a: Latios|15 (85\/100)
+|-heal|p1a: pepper|7 (69\/100)|[from] drain|[of] p2a: Latios
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: pepper|6 (75\/100)|[from] item: Black Sludge
+|turn|10
+|callback|decision
+|
+|switch|p1a: Guy Fawkes|Darmanitan, M, shiny| (100\/100)
+|move|p2a: Latios|Hidden Power|p1a: Guy Fawkes
+|-resisted|p1a: Guy Fawkes
+|-damage|p1a: Guy Fawkes|18 (82\/100)
+|-damage|p2a: Latios|10 (75\/100)|[from] item: Life Orb
+|
+|-weather|SunnyDay|[upkeep]
+|turn|11
+|callback|decision
+|
+|move|p1a: Guy Fawkes|Flare Blitz|p2a: Latios
+|-resisted|p2a: Latios
+|-damage|p2a: Latios|75 (0\/100 fnt)
+|-damage|p1a: Guy Fawkes|21 (61\/100)|[from] recoil|[of] p2a: Latios
+|faint|p2a: Latios
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p2a: Terrakion|Terrakion| (75\/100)
+|turn|12
+|callback|decision
+|
+|move|p1a: Guy Fawkes|Flare Blitz|p2a: Terrakion
+|-resisted|p2a: Terrakion
+|-damage|p2a: Terrakion|75 (0\/100 fnt)
+|-damage|p1a: Guy Fawkes|23 (38\/100)|[from] recoil|[of] p2a: Terrakion
+|faint|p2a: Terrakion
+|
+|-weather|SunnyDay|[upkeep]
+|-sideend|p1: tigers|Reflect
+|callback|decision
+|
+|switch|p2a: Keldeo|Keldeo| (69\/100)
+|turn|13
+|callback|decision
+|
+|switch|p1a: Bad Medicine|Xatu, M| (54\/100)
+|move|p2a: Keldeo|Secret Sword|p1a: Bad Medicine
+|-resisted|p1a: Bad Medicine
+|-damage|p1a: Bad Medicine|6 (48\/100)
+|
+|-weather|SunnyDay|[upkeep]
+|-sideend|p1: tigers|move: Light Screen
+|turn|14
+|callback|decision
+|
+|switch|p2a: Gengar|Gengar, M| (100\/100)
+|move|p1a: Bad Medicine|Reflect|p1a: Bad Medicine
+|-sidestart|p1: tigers|Reflect
+|
+|-weather|SunnyDay|[upkeep]
+|turn|15
+|callback|decision
+|
+|move|p2a: Gengar|Substitute|p2a: Gengar
+|-start|p2a: Gengar|Substitute
+|-damage|p2a: Gengar|25 (75\/100)
+|move|p1a: Bad Medicine|Light Screen|p1a: Bad Medicine
+|-sidestart|p1: tigers|move: Light Screen
+|
+|-weather|SunnyDay|[upkeep]
+|turn|16
+|callback|decision
+|
+|move|p2a: Gengar|Shadow Ball|p1a: Bad Medicine
+|-supereffective|p1a: Bad Medicine
+|-damage|p1a: Bad Medicine|48 (0\/100 fnt)
+|-damage|p2a: Gengar|10 (65\/100)|[from] item: Life Orb
+|faint|p1a: Bad Medicine
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: SonicBanker's|Scizor, F| (32\/100)
+|turn|17
+|callback|decision
+|
+|move|p1a: SonicBanker's|Bullet Punch|p2a: Gengar
+|-end|p2a: Gengar|Substitute
+|move|p2a: Gengar|Focus Blast|p1a: SonicBanker's|[miss]
+|-miss|p2a: Gengar
+|
+|-weather|SunnyDay|[upkeep]
+|turn|18
+|callback|decision
+|
+|switch|p2a: Keldeo|Keldeo| (69\/100)
+|move|p1a: SonicBanker's|Bullet Punch|p2a: Keldeo
+|-resisted|p2a: Keldeo
+|-damage|p2a: Keldeo|30 (39\/100)
+|
+|-weather|SunnyDay|[upkeep]
+|turn|19
+|callback|decision
+|
+|switch|p1a: pepper|Venusaur, M, shiny| (75\/100)
+|move|p2a: Keldeo|Secret Sword|p1a: pepper
+|-resisted|p1a: pepper
+|-damage|p1a: pepper|13 (62\/100)
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: pepper|6 (68\/100)|[from] item: Black Sludge
+|turn|20
+|callback|decision
+|
+|switch|p2a: Deoxys-Defense|Deoxys-Defense| (100\/100)
+|-ability|p2a: Deoxys-Defense|Pressure
+|move|p1a: pepper|Growth|p1a: pepper
+|-boost|p1a: pepper|atk|2
+|-boost|p1a: pepper|spa|2
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: pepper|6 (74\/100)|[from] item: Black Sludge
+|turn|21
+|callback|decision
+|
+|move|p1a: pepper|Giga Drain|p2a: Deoxys-Defense
+|-damage|p2a: Deoxys-Defense|35 (65\/100)
+|-heal|p1a: pepper|17 (91\/100)|[from] drain|[of] p2a: Deoxys-Defense
+|move|p2a: Deoxys-Defense|Thunder Wave|p1a: pepper
+|-status|p1a: pepper|par
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: pepper|6 (97\/100 par)|[from] item: Black Sludge
+|-sideend|p1: tigers|Reflect
+|turn|22
+|callback|decision
+|
+|move|p2a: Deoxys-Defense|Stealth Rock|p1a: pepper
+|-sidestart|p1: tigers|move: Stealth Rock
+|move|p1a: pepper|Giga Drain|p2a: Deoxys-Defense
+|-damage|p2a: Deoxys-Defense|33 (33\/100)
+|-heal|p1a: pepper|3 (100\/100 par)|[from] drain|[of] p2a: Deoxys-Defense
+|
+|-weather|SunnyDay|[upkeep]
+|-sideend|p1: tigers|move: Light Screen
+|turn|23
+|callback|decision
+|
+|move|p2a: Deoxys-Defense|Spikes|p1a: pepper
+|-sidestart|p1: tigers|Spikes
+|move|p1a: pepper|Giga Drain|p2a: Deoxys-Defense
+|-damage|p2a: Deoxys-Defense|33 (0\/100 fnt)
+|faint|p2a: Deoxys-Defense
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p2a: Gengar|Gengar, M| (65\/100)
+|turn|24
+|callback|decision
+|
+|move|p2a: Gengar|Shadow Ball|p1a: pepper
+|-damage|p1a: pepper|63 (37\/100 par)
+|-unboost|p1a: pepper|spd|1
+|-damage|p2a: Gengar|10 (55\/100)|[from] item: Life Orb
+|move|p1a: pepper|Hidden Power|p2a: Gengar
+|-damage|p2a: Gengar|55 (0\/100 fnt)
+|faint|p2a: Gengar
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: pepper|6 (44\/100 par)|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M| (100\/100)
+|turn|25
+|callback|decision
+|
+|move|p2a: Scizor|U-turn|p1a: pepper
+|-damage|p1a: pepper|44 (0\/100 fnt)
+|faint|p1a: pepper
+|callback|decision
+|
+|switch|p2a: Keldeo|Keldeo| (39\/100)
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: aNgry trio|Dugtrio, M| (100\/100)
+|-damage|p1a: aNgry trio|12 (88\/100)|[from] Spikes
+|-damage|p1a: aNgry trio|6 (82\/100)|[from] Stealth Rock
+|turn|26
+|callback|decision
+|
+|move|p2a: Keldeo|Surf|p1a: aNgry trio
+|-crit|p1a: aNgry trio
+|-supereffective|p1a: aNgry trio
+|-damage|p1a: aNgry trio|82 (0\/100 fnt)
+|faint|p1a: aNgry trio
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: Guy Fawkes|Darmanitan, M, shiny| (38\/100)
+|-damage|p1a: Guy Fawkes|25 (13\/100)|[from] Stealth Rock
+|-damage|p1a: Guy Fawkes|13 (1\/100)|[from] Spikes
+|turn|27
+|callback|decision
+|
+|move|p2a: Keldeo|Surf|p1a: Guy Fawkes
+|-supereffective|p1a: Guy Fawkes
+|-damage|p1a: Guy Fawkes|1 (0\/100 fnt)
+|faint|p1a: Guy Fawkes
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: SonicBanker's|Scizor, F| (32\/100)
+|-damage|p1a: SonicBanker's|12 (19\/100)|[from] Spikes
+|-damage|p1a: SonicBanker's|12 (7\/100)|[from] Stealth Rock
+|turn|28
+|callback|decision
+|
+|move|p1a: SonicBanker's|Bullet Punch|p2a: Keldeo
+|-resisted|p2a: Keldeo
+|-damage|p2a: Keldeo|28 (11\/100)
+|move|p2a: Keldeo|Surf|p1a: SonicBanker's
+|-damage|p1a: SonicBanker's|7 (0\/100 fnt)
+|faint|p1a: SonicBanker's
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: SilverSideUp|Ninetales, M, shiny| (50\/100)
+|-damage|p1a: SilverSideUp|25 (25\/100)|[from] Stealth Rock
+|-damage|p1a: SilverSideUp|12 (13\/100)|[from] Spikes
+|turn|29
+|callback|decision
+|
+|move|p2a: Keldeo|Surf|p1a: SilverSideUp
+|-supereffective|p1a: SilverSideUp
+|-damage|p1a: SilverSideUp|13 (0\/100 fnt)
+|faint|p1a: SilverSideUp
+|
+|win|QUB 2
+|chatmsg-raw|Ladder updating...
+|chat|QUB 2|gg
+|raw|tigers's rating: 1754 &rarr; <strong>1752<\/strong><br \/>(-2 for losing)
+|raw|QUB 2's rating: 1646 &rarr; <strong>1742<\/strong><br \/>(+96 for winning)
+|player|p1

@@ -1,0 +1,371 @@
+|join|Mikasa1337
+|join|nnbbd
+|player|p1|Mikasa1337|265
+|player|p2|nnbbd|10
+|gametype|singles
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Charizard, F
+|poke|p1|Aegislash, F
+|poke|p1|Jolteon, F
+|poke|p1|Garchomp, M
+|poke|p1|Tyranitar, F
+|poke|p1|Greninja, F
+|poke|p2|Machamp, M
+|poke|p2|Gastrodon, M
+|poke|p2|Tentacruel, M
+|poke|p2|Sableye, M
+|poke|p2|Rotom-Wash
+|poke|p2|Malamar, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Tyranitar|Tyranitar, F|341\/341
+|switch|p2a: Malamar|Malamar, F|376\/376
+|-weather|Sandstorm
+|turn|1
+|callback|decision
+|
+|switch|p2a: Machamp|Machamp, M|384\/384
+|move|p1a: Tyranitar|Stealth Rock|p2a: Machamp
+|-sidestart|p2: nnbbd|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Machamp|360\/384|[from] sandstorm
+|turn|2
+|callback|decision
+|
+|switch|p1a: Charizard|Charizard, F|297\/297
+|move|p2a: Machamp|Dynamic Punch|p1a: Charizard
+|-resisted|p1a: Charizard
+|-damage|p1a: Charizard|145\/297
+|-start|p1a: Charizard|confusion
+|-damage|p2a: Machamp|322\/384|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Charizard|127\/297|[from] sandstorm
+|-damage|p2a: Machamp|298\/384|[from] sandstorm
+|turn|3
+|callback|decision
+|
+|switch|p2a: Tentacruel|Tentacruel, M|302\/302
+|-damage|p2a: Tentacruel|265\/302|[from] Stealth Rock
+|-item|p2a: Tentacruel|Air Balloon
+|-formechange|p1a: Charizard|Charizard-Mega-X
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-activate|p1a: Charizard|confusion
+|-damage|p1a: Charizard|84\/297|[from] confusion
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Charizard|66\/297|[from] sandstorm
+|-damage|p2a: Tentacruel|247\/302|[from] sandstorm
+|turn|4
+|callback|decision
+|
+|move|p2a: Tentacruel|Rapid Spin|p1a: Charizard
+|-damage|p1a: Charizard|56\/297
+|-sideend|p2: nnbbd|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Tentacruel
+|-activate|p1a: Charizard|confusion
+|move|p1a: Charizard|Outrage|p2a: Tentacruel
+|-damage|p2a: Tentacruel|0 fnt
+|-enditem|p2a: Tentacruel|Air Balloon
+|faint|p2a: Tentacruel
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Charizard|38\/297|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|turn|5
+|callback|decision
+|
+|-activate|p1a: Charizard|confusion
+|move|p1a: Charizard|Outrage|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|37\/304
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Charizard
+|-crit|p1a: Charizard
+|-damage|p1a: Charizard|0 fnt
+|faint|p1a: Charizard
+|
+|-weather|none
+|-heal|p2a: Rotom-Wash|56\/304|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, F|341\/341
+|-weather|Sandstorm
+|turn|6
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Tyranitar
+|-status|p1a: Tyranitar|brn
+|move|p1a: Tyranitar|Stealth Rock|p2a: Rotom-Wash
+|-sidestart|p2: nnbbd|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Rotom-Wash|37\/304|[from] sandstorm
+|-heal|p2a: Rotom-Wash|56\/304|[from] item: Leftovers
+|-damage|p1a: Tyranitar|299\/341 brn|[from] brn
+|turn|7
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Confuse Ray|p1a: Tyranitar
+|-start|p1a: Tyranitar|confusion
+|-activate|p1a: Tyranitar|confusion
+|move|p1a: Tyranitar|Stone Edge|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Tyranitar|257\/341 brn|[from] brn
+|callback|decision
+|
+|switch|p2a: Gastrodon|Gastrodon, M|426\/426
+|-damage|p2a: Gastrodon|400\/426|[from] Stealth Rock
+|turn|8
+|callback|decision
+|
+|switch|p1a: Jolteon|Jolteon, F|271\/271
+|-item|p1a: Jolteon|Air Balloon
+|move|p2a: Gastrodon|Substitute|p2a: Gastrodon
+|-start|p2a: Gastrodon|Substitute
+|-damage|p2a: Gastrodon|294\/426
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jolteon|255\/271|[from] sandstorm
+|-heal|p2a: Gastrodon|320\/426|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p1a: Jolteon|Yawn|p2a: Gastrodon
+|move|p2a: Gastrodon|Toxic|p1a: Jolteon
+|-status|p1a: Jolteon|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jolteon|239\/271 tox|[from] sandstorm
+|-heal|p2a: Gastrodon|346\/426|[from] item: Leftovers
+|-damage|p1a: Jolteon|223\/271 tox|[from] psn
+|turn|10
+|callback|decision
+|
+|switch|p1a: Greninja|Greninja, F|286\/286
+|move|p2a: Gastrodon|Scald|p1a: Greninja
+|-resisted|p1a: Greninja
+|-damage|p1a: Greninja|223\/286
+|-status|p1a: Greninja|brn
+|-enditem|p1a: Greninja|Lum Berry|[eat]
+|-curestatus|p1a: Greninja|brn
+|
+|-weather|none
+|-heal|p2a: Gastrodon|372\/426|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|-start|p1a: Greninja|typechange|Psychic|[from] Protean
+|move|p1a: Greninja|Extrasensory|p2a: Gastrodon
+|-end|p2a: Gastrodon|Substitute
+|move|p2a: Gastrodon|Toxic|p1a: Greninja
+|-status|p1a: Greninja|tox
+|
+|-heal|p2a: Gastrodon|398\/426|[from] item: Leftovers
+|-damage|p1a: Greninja|206\/286 tox|[from] psn
+|turn|12
+|callback|decision
+|
+|move|p1a: Greninja|Extrasensory|p2a: Gastrodon
+|-damage|p2a: Gastrodon|259\/426
+|move|p2a: Gastrodon|Substitute|p2a: Gastrodon
+|-start|p2a: Gastrodon|Substitute
+|-damage|p2a: Gastrodon|153\/426
+|
+|-heal|p2a: Gastrodon|179\/426|[from] item: Leftovers
+|-damage|p1a: Greninja|172\/286 tox|[from] psn
+|turn|13
+|callback|decision
+|
+|move|p1a: Greninja|Extrasensory|p2a: Gastrodon
+|-end|p2a: Gastrodon|Substitute
+|move|p2a: Gastrodon|Recover|p2a: Gastrodon
+|-heal|p2a: Gastrodon|392\/426
+|
+|-heal|p2a: Gastrodon|418\/426|[from] item: Leftovers
+|-damage|p1a: Greninja|121\/286 tox|[from] psn
+|turn|14
+|callback|decision
+|
+|move|p1a: Greninja|Extrasensory|p2a: Gastrodon
+|-damage|p2a: Gastrodon|271\/426
+|move|p2a: Gastrodon|Substitute|p2a: Gastrodon
+|-start|p2a: Gastrodon|Substitute
+|-damage|p2a: Gastrodon|165\/426
+|
+|-heal|p2a: Gastrodon|191\/426|[from] item: Leftovers
+|-damage|p1a: Greninja|53\/286 tox|[from] psn
+|turn|15
+|callback|decision
+|
+|move|p1a: Greninja|Extrasensory|p2a: Gastrodon
+|-end|p2a: Gastrodon|Substitute
+|move|p2a: Gastrodon|Recover|p2a: Gastrodon
+|-heal|p2a: Gastrodon|404\/426
+|
+|-heal|p2a: Gastrodon|426\/426|[from] item: Leftovers
+|-damage|p1a: Greninja|0 fnt|[from] psn
+|faint|p1a: Greninja
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, F|261\/261
+|turn|16
+|callback|decision
+|
+|switch|p2a: Sableye|Sableye, M|304\/304
+|-damage|p2a: Sableye|266\/304|[from] Stealth Rock
+|move|p1a: Aegislash|Swords Dance|p1a: Aegislash
+|-boost|p1a: Aegislash|atk|2
+|
+|-heal|p2a: Sableye|285\/304|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p2a: Sableye|Taunt|p1a: Aegislash
+|-start|p1a: Aegislash|move: Taunt
+|cant|p1a: Aegislash|move: Taunt|Swords Dance
+|
+|-heal|p2a: Sableye|304\/304|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p2a: Sableye|Will-O-Wisp|p1a: Aegislash
+|-status|p1a: Aegislash|brn
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Sneak|p2a: Sableye
+|-damage|p2a: Sableye|222\/304
+|
+|-heal|p2a: Sableye|241\/304|[from] item: Leftovers
+|-damage|p1a: Aegislash|229\/261 brn|[from] brn
+|turn|19
+|callback|decision
+|
+|switch|p1a: Jolteon|Jolteon, F|223\/271 tox
+|-item|p1a: Jolteon|Air Balloon
+|move|p2a: Sableye|Foul Play|p1a: Jolteon
+|-damage|p1a: Jolteon|138\/271 tox
+|-enditem|p1a: Jolteon|Air Balloon
+|
+|-heal|p2a: Sableye|260\/304|[from] item: Leftovers
+|-damage|p1a: Jolteon|122\/271 tox|[from] psn
+|turn|20
+|callback|decision
+|
+|move|p2a: Sableye|Taunt|p1a: Jolteon
+|-start|p1a: Jolteon|move: Taunt
+|move|p1a: Jolteon|Thunderbolt|p2a: Sableye
+|-damage|p2a: Sableye|130\/304
+|
+|-heal|p2a: Sableye|149\/304|[from] item: Leftovers
+|-damage|p1a: Jolteon|90\/271 tox|[from] psn
+|turn|21
+|callback|decision
+|
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|301\/304
+|move|p1a: Jolteon|Thunderbolt|p2a: Sableye
+|-damage|p2a: Sableye|171\/304
+|
+|-heal|p2a: Sableye|190\/304|[from] item: Leftovers
+|-damage|p1a: Jolteon|42\/271 tox|[from] psn
+|turn|22
+|callback|decision
+|
+|switch|p2a: Gastrodon|Gastrodon, M|426\/426
+|-damage|p2a: Gastrodon|400\/426|[from] Stealth Rock
+|move|p1a: Jolteon|Thunderbolt|p2a: Gastrodon
+|-immune|p2a: Gastrodon|[msg]
+|
+|-heal|p2a: Gastrodon|426\/426|[from] item: Leftovers
+|-damage|p1a: Jolteon|0 fnt|[from] psn
+|faint|p1a: Jolteon
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, F|229\/261 brn
+|turn|23
+|callback|decision
+|
+|move|p2a: Gastrodon|Scald|p1a: Aegislash
+|-damage|p1a: Aegislash|180\/261 brn
+|move|p1a: Aegislash|Swords Dance|p1a: Aegislash
+|-boost|p1a: Aegislash|atk|2
+|
+|-damage|p1a: Aegislash|148\/261 brn|[from] brn
+|turn|24
+|callback|decision
+|
+|move|p2a: Gastrodon|Substitute|p2a: Gastrodon
+|-start|p2a: Gastrodon|Substitute
+|-damage|p2a: Gastrodon|320\/426
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Sacred Sword|p2a: Gastrodon
+|-activate|p2a: Gastrodon|Substitute|[damage]
+|
+|-heal|p2a: Gastrodon|346\/426|[from] item: Leftovers
+|-damage|p1a: Aegislash|116\/261 brn|[from] brn
+|turn|25
+|callback|decision
+|
+|move|p2a: Gastrodon|Scald|p1a: Aegislash
+|-damage|p1a: Aegislash|13\/261 brn
+|move|p1a: Aegislash|Sacred Sword|p2a: Gastrodon
+|-end|p2a: Gastrodon|Substitute
+|
+|-heal|p2a: Gastrodon|372\/426|[from] item: Leftovers
+|-damage|p1a: Aegislash|0 fnt|[from] brn
+|faint|p1a: Aegislash
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, F|257\/341 brn
+|-weather|Sandstorm
+|turn|26
+|callback|decision
+|
+|move|p1a: Tyranitar|Crunch|p2a: Gastrodon
+|-damage|p2a: Gastrodon|312\/426
+|move|p2a: Gastrodon|Substitute|p2a: Gastrodon
+|-start|p2a: Gastrodon|Substitute
+|-damage|p2a: Gastrodon|206\/426
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Gastrodon|232\/426|[from] item: Leftovers
+|-damage|p1a: Tyranitar|215\/341 brn|[from] brn
+|turn|27
+|callback|decision
+|
+|move|p1a: Tyranitar|Crunch|p2a: Gastrodon
+|-activate|p2a: Gastrodon|Substitute|[damage]
+|move|p2a: Gastrodon|Scald|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|125\/341 brn
+|-enditem|p1a: Tyranitar|Weakness Policy
+|-boost|p1a: Tyranitar|atk|2|[from] item: Weakness Policy
+|-boost|p1a: Tyranitar|spa|2|[from] item: Weakness Policy
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Gastrodon|258\/426|[from] item: Leftovers
+|-damage|p1a: Tyranitar|83\/341 brn|[from] brn
+|turn|28
+|callback|decision
+|-message|Mikasa1337 forfeited.
+|
+|win|nnbbd
+|raw|Ladder updating...
+|leave|Mikasa1337
+|player|p1
+|raw|Mikasa1337's rating: 1596 &rarr; <strong>1592<\/strong><br \/>(-4 for losing)
+|raw|nnbbd's rating: 1007 &rarr; <strong>1403<\/strong><br \/>(+396 for winning)

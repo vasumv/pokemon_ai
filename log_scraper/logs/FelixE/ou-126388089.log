@@ -1,0 +1,343 @@
+|join|FelixE
+|join|Nykhoxx
+|player|p1|FelixE|3
+|player|p2|Nykhoxx|290
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Chansey, F
+|poke|p1|Heatran, F
+|poke|p1|Mandibuzz, F
+|poke|p1|Garchomp, M
+|poke|p1|Venusaur, F
+|poke|p1|Togekiss, M
+|poke|p2|Arcanine, M
+|poke|p2|Sceptile, M, shiny
+|poke|p2|Milotic, M, shiny
+|poke|p2|Sylveon, M, shiny
+|poke|p2|Garchomp, M, shiny
+|poke|p2|Rotom-Wash, shiny
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Mandibuzz|Mandibuzz, F|424\/424
+|switch|p2a: Rotom-Wash|Rotom-Wash, shiny|304\/304
+|turn|1
+|
+|switch|p1a: Chansey|Chansey, F|704\/704
+|move|p2a: Rotom-Wash|Trick|p1a: Chansey
+|-activate|p2a: Rotom-Wash|move: Trick|[of] p1a: Chansey
+|-item|p1a: Chansey|Choice Specs|[from] move: Trick
+|-item|p2a: Rotom-Wash|Eviolite|[from] move: Trick
+|
+|turn|2
+|
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Chansey
+|-status|p1a: Chansey|brn
+|move|p1a: Chansey|Seismic Toss|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|204\/304
+|
+|-damage|p1a: Chansey|616\/704 brn|[from] brn
+|turn|3
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Chansey
+|-damage|p1a: Chansey|508\/704 brn
+|
+|switch|p2a: Arcanine|Arcanine, M|321\/321
+|move|p1a: Chansey|Seismic Toss|p2a: Arcanine
+|-damage|p2a: Arcanine|221\/321
+|
+|-heal|p2a: Arcanine|241\/321|[from] item: Leftovers
+|-damage|p1a: Chansey|420\/704 brn|[from] brn
+|turn|4
+|
+|switch|p1a: Heatran|Heatran, F|386\/386
+|-item|p1a: Heatran|Air Balloon
+|move|p2a: Arcanine|Wild Charge|p1a: Heatran
+|-damage|p1a: Heatran|289\/386
+|-enditem|p1a: Heatran|Air Balloon
+|-damage|p2a: Arcanine|217\/321|[from] recoil|[of] p1a: Heatran
+|
+|-heal|p2a: Arcanine|237\/321|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Garchomp|Garchomp, M, shiny|357\/357
+|move|p1a: Heatran|Earth Power|p2a: Garchomp
+|-damage|p2a: Garchomp|212\/357
+|
+|turn|6
+|
+|switch|p1a: Togekiss|Togekiss, M|374\/374
+|move|p2a: Garchomp|Swords Dance|p2a: Garchomp
+|-boost|p2a: Garchomp|atk|2
+|
+|turn|7
+|
+|move|p2a: Garchomp|Iron Head|p1a: Togekiss
+|-supereffective|p1a: Togekiss
+|-damage|p1a: Togekiss|0 fnt
+|faint|p1a: Togekiss
+|
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|424\/424
+|turn|8
+|
+|detailschange|p2a: Garchomp|Garchomp-Mega, M, shiny
+|message|Garchomp has Mega Evolved into Mega Garchomp!
+|move|p2a: Garchomp|Dragon Claw|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|49\/424
+|-damage|p2a: Garchomp|153\/357|[from] item: Rocky Helmet|[of] p1a: Mandibuzz
+|move|p1a: Mandibuzz|Roost|p1a: Mandibuzz
+|-heal|p1a: Mandibuzz|261\/424
+|
+|turn|9
+|
+|move|p2a: Garchomp|Dragon Claw|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|0 fnt
+|-damage|p2a: Garchomp|94\/357|[from] item: Rocky Helmet|[of] p1a: Mandibuzz
+|faint|p1a: Mandibuzz
+|
+|
+|switch|p1a: Garchomp|Garchomp, M|358\/358
+|turn|10
+|
+|switch|p2a: Sylveon|Sylveon, M, shiny|394\/394
+|move|p1a: Garchomp|Dragon Claw|p2a: Sylveon
+|-immune|p2a: Sylveon|[msg]
+|
+|turn|11
+|
+|switch|p1a: Venusaur|Venusaur, F|364\/364
+|move|p2a: Sylveon|Moonblast|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|300\/364
+|
+|turn|12
+|
+|switch|p2a: Arcanine|Arcanine, M|237\/321
+|detailschange|p1a: Venusaur|Venusaur-Mega, F
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p1a: Venusaur|Giga Drain|p2a: Arcanine
+|-resisted|p2a: Arcanine
+|-damage|p2a: Arcanine|177\/321
+|-heal|p1a: Venusaur|330\/364|[from] drain|[of] p2a: Arcanine
+|
+|-heal|p2a: Arcanine|197\/321|[from] item: Leftovers
+|turn|13
+|
+|move|p2a: Arcanine|Extreme Speed|p1a: Venusaur
+|-damage|p1a: Venusaur|266\/364
+|move|p1a: Venusaur|Sludge Bomb|p2a: Arcanine
+|-damage|p2a: Arcanine|40\/321
+|
+|-heal|p2a: Arcanine|60\/321|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Arcanine|Flare Blitz|p1a: Venusaur
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|138\/364
+|-damage|p2a: Arcanine|18\/321|[from] recoil|[of] p1a: Venusaur
+|move|p1a: Venusaur|Leech Seed|p2a: Arcanine
+|-start|p2a: Arcanine|move: Leech Seed
+|
+|-heal|p2a: Arcanine|38\/321|[from] item: Leftovers
+|-damage|p2a: Arcanine|0 fnt|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|176\/364|[silent]
+|faint|p2a: Arcanine
+|
+|switch|p2a: Garchomp|Garchomp-Mega, M, shiny|94\/357
+|turn|15
+|
+|move|p2a: Garchomp|Earthquake|p1a: Venusaur
+|-damage|p1a: Venusaur|40\/364
+|move|p1a: Venusaur|Giga Drain|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|-heal|p1a: Venusaur|87\/364|[from] drain|[of] p2a: Garchomp
+|faint|p2a: Garchomp
+|
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash, shiny|204\/304
+|turn|16
+|
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Venusaur
+|-status|p1a: Venusaur|brn
+|move|p1a: Venusaur|Synthesis|p1a: Venusaur
+|-heal|p1a: Venusaur|269\/364 brn
+|
+|-damage|p1a: Venusaur|224\/364 brn|[from] brn
+|turn|17
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|173\/364 brn
+|
+|switch|p2a: Milotic|Milotic, M, shiny|394\/394
+|move|p1a: Venusaur|Synthesis|p1a: Venusaur
+|-heal|p1a: Venusaur|355\/364 brn
+|
+|-damage|p1a: Venusaur|310\/364 brn|[from] brn
+|turn|18
+|
+|switch|p1a: Chansey|Chansey, F|420\/704
+|move|p2a: Milotic|Mirror Coat|p1a: Chansey
+|-fail|p1a: Chansey
+|
+|turn|19
+|
+|move|p2a: Milotic|Scald|p1a: Chansey
+|-damage|p1a: Chansey|306\/704
+|-status|p1a: Chansey|brn
+|move|p1a: Chansey|Heal Bell|p1a: Chansey
+|-cureteam|p1a: Chansey|[from] move: HealBell
+|
+|turn|20
+|
+|switch|p1a: Venusaur|Venusaur-Mega, F|310\/364
+|move|p2a: Milotic|Scald|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|255\/364
+|-status|p1a: Venusaur|brn
+|
+|-damage|p1a: Venusaur|210\/364 brn|[from] brn
+|turn|21
+|
+|move|p1a: Venusaur|Giga Drain|p2a: Milotic
+|-supereffective|p2a: Milotic
+|-damage|p2a: Milotic|220\/394
+|-heal|p1a: Venusaur|297\/364 brn|[from] drain|[of] p2a: Milotic
+|move|p2a: Milotic|Mirror Coat|p1a: Venusaur
+|-damage|p1a: Venusaur|0 fnt
+|faint|p1a: Venusaur
+|
+|-heal|p2a: Milotic|244\/394|[from] item: Leftovers
+|
+|switch|p1a: Garchomp|Garchomp, M|358\/358
+|turn|22
+|
+|move|p1a: Garchomp|Substitute|p1a: Garchomp
+|-start|p1a: Garchomp|Substitute
+|-damage|p1a: Garchomp|269\/358
+|move|p2a: Milotic|Ice Beam|p1a: Garchomp
+|-supereffective|p1a: Garchomp
+|-end|p1a: Garchomp|Substitute
+|
+|-heal|p1a: Garchomp|291\/358|[from] item: Leftovers
+|-heal|p2a: Milotic|268\/394|[from] item: Leftovers
+|turn|23
+|
+|switch|p1a: Chansey|Chansey, F|306\/704
+|move|p2a: Milotic|Ice Beam|p1a: Chansey
+|-damage|p1a: Chansey|217\/704
+|
+|-heal|p2a: Milotic|292\/394|[from] item: Leftovers
+|turn|24
+|
+|move|p2a: Milotic|Ice Beam|p1a: Chansey
+|-crit|p1a: Chansey
+|-damage|p1a: Chansey|85\/704
+|move|p1a: Chansey|Soft-Boiled|p1a: Chansey
+|-heal|p1a: Chansey|437\/704
+|
+|-heal|p2a: Milotic|316\/394|[from] item: Leftovers
+|turn|25
+|
+|move|p2a: Milotic|Ice Beam|p1a: Chansey
+|-damage|p1a: Chansey|346\/704
+|move|p1a: Chansey|Soft-Boiled|p1a: Chansey
+|-heal|p1a: Chansey|698\/704
+|
+|-heal|p2a: Milotic|340\/394|[from] item: Leftovers
+|turn|26
+|
+|switch|p1a: Heatran|Heatran, F|289\/386
+|move|p2a: Milotic|Scald|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|55\/386
+|
+|-heal|p2a: Milotic|364\/394|[from] item: Leftovers
+|turn|27
+|
+|move|p2a: Milotic|Scald|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|-heal|p2a: Milotic|388\/394|[from] item: Leftovers
+|
+|switch|p1a: Chansey|Chansey, F|698\/704
+|turn|28
+|
+|move|p2a: Milotic|Scald|p1a: Chansey
+|-damage|p1a: Chansey|589\/704
+|move|p1a: Chansey|Seismic Toss|p2a: Milotic
+|-damage|p2a: Milotic|288\/394
+|
+|-heal|p2a: Milotic|312\/394|[from] item: Leftovers
+|turn|29
+|
+|move|p2a: Milotic|Scald|p1a: Chansey
+|-damage|p1a: Chansey|477\/704
+|move|p1a: Chansey|Seismic Toss|p2a: Milotic
+|-damage|p2a: Milotic|212\/394
+|
+|-heal|p2a: Milotic|236\/394|[from] item: Leftovers
+|turn|30
+|
+|move|p2a: Milotic|Recover|p2a: Milotic
+|-heal|p2a: Milotic|394\/394
+|move|p1a: Chansey|Seismic Toss|p2a: Milotic
+|-damage|p2a: Milotic|294\/394
+|
+|-heal|p2a: Milotic|318\/394|[from] item: Leftovers
+|turn|31
+|
+|move|p2a: Milotic|Ice Beam|p1a: Chansey
+|-damage|p1a: Chansey|387\/704
+|move|p1a: Chansey|Seismic Toss|p2a: Milotic
+|-damage|p2a: Milotic|218\/394
+|
+|-heal|p2a: Milotic|242\/394|[from] item: Leftovers
+|turn|32
+|
+|move|p2a: Milotic|Scald|p1a: Chansey
+|-damage|p1a: Chansey|278\/704
+|move|p1a: Chansey|Seismic Toss|p2a: Milotic
+|-damage|p2a: Milotic|142\/394
+|
+|-heal|p2a: Milotic|166\/394|[from] item: Leftovers
+|turn|33
+|
+|move|p2a: Milotic|Recover|p2a: Milotic
+|-heal|p2a: Milotic|363\/394
+|move|p1a: Chansey|Seismic Toss|p2a: Milotic
+|-damage|p2a: Milotic|263\/394
+|
+|-heal|p2a: Milotic|287\/394|[from] item: Leftovers
+|turn|34
+|
+|switch|p1a: Garchomp|Garchomp, M|291\/358
+|move|p2a: Milotic|Scald|p1a: Garchomp
+|-damage|p1a: Garchomp|165\/358
+|-status|p1a: Garchomp|brn
+|
+|-heal|p1a: Garchomp|187\/358 brn|[from] item: Leftovers
+|-heal|p2a: Milotic|311\/394|[from] item: Leftovers
+|-damage|p1a: Garchomp|143\/358 brn|[from] brn
+|turn|35
+|-message|FelixE forfeited.
+|
+|win|Nykhoxx
+|raw|Ladder updating...
+|raw|FelixE's rating: 1332 &rarr; <strong>1311<\/strong><br \/>(-21 for losing)
+|raw|Nykhoxx's rating: 1319 &rarr; <strong>1340<\/strong><br \/>(+21 for winning)
+|leave|FelixE
+|player|p1
