@@ -24,18 +24,14 @@ def get_logs(link):
 
 if __name__ == "__main__":
     usernames = get_usernames()
-    links_list = []
     for user in usernames:
         print user
         links = get_user_replays(user)
         for link in links:
-            if link in links_list:
-                continue
             directory = path("logs/%s" % user)
             log = get_logs(link)
             if not directory.exists():
                 directory.makedirs()
             with open("logs/%s/%s.log" % (user, link[1:]), 'w') as f:
                 f.write(log)
-            links_list.append(link)
 
