@@ -2,6 +2,7 @@ import time
 import re
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import UnexpectedAlertPresentException
 from selenium.webdriver.common.keys import Keys
 
 class Selenium():
@@ -24,9 +25,6 @@ class Selenium():
 
     def start_driver(self):
         self.driver.get(self.url)
-        while(self.driver.find_element_by_xpath("//*[@id='mainmenu']/div/div[1]/div[2]/div[1]/form/p[1]/button").get_attribute("value") != "randombattle"):
-            print self.driver.find_element_by_xpath("//*[@id='mainmenu']/div/div[1]/div[2]/div[1]/form/p[1]/button").get_attribute("value")
-            time.sleep(1)
 
     def get_state(self):
         url = self.driver.current_url
@@ -37,14 +35,15 @@ class Selenium():
 
     def login(self, username, password):
         time.sleep(1)
+        while(self.driver.find_element_by_xpath("//*[@id='mainmenu']/div/div[1]/div[2]/div[1]/form/p[1]/button").get_attribute("value") != "randombattle"):
+            print self.driver.find_element_by_xpath("//*[@id='mainmenu']/div/div[1]/div[2]/div[1]/form/p[1]/button").get_attribute("value")
+            time.sleep(1)
         #button = driver.find_element_by_xpath("//*[@id='mainmenu']/div/div[1]/div[2]/div[1]/form/p[1]/button")
         #text = button.text
         #if text != "Random Battle":
             #while text != "Random Battle":
                 #time.sleep(2)
                 #text = button.text
-        while not self.check_exists_by_xpath("//*[@id='mainmenu']/div/div[1]/div[2]/div[1]/form/p[1]/button"):
-            time.sleep(1)
         elem = self.driver.find_element_by_name("login")
         elem.click()
         time.sleep(1)
@@ -348,17 +347,7 @@ class SeleniumException(Exception):
     pass
 
 if __name__ == "__main__":
-    with open('log.txt', 'r') as fp:
-        log_text = fp.read()
-    SimulatorLog.parse(log_text)
-    #selenium = Selenium(url='http://replay.pokemonshowdown.com/oususpecttest-197218079')
-
-    #selenium.start_driver()
-    #play = selenium.driver.find_element_by_xpath('/html/body/div[2]/div/div[1]/div[1]/div/button[2]')
-    #play.click()
-    #for i in range(20):
-        #skip = selenium.driver.find_element_by_xpath('/html/body/div[2]/div/div[1]/div[3]/button[3]')
-        #skip.click()
-    #time.sleep(5)
-    #with open('log2.txt', 'w') as f:
-        #f.write(selenium.get_log().encode('utf-8'))
+    pass
+    #with open('log.txt', 'r') as fp:
+        #log_text = fp.read()
+    #SimulatorLog.parse(log_text)

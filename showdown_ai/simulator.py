@@ -127,6 +127,10 @@ class Simulator():
         elif type == "mold_breaker":
             poke.ability = "Mold Breaker"
             print "%s has mold breaker!" % poke
+        elif type == "disabled":
+            poke.ability = "Mold Breaker"
+            move = event.details['move']
+            print "%s has mold breaker!" % poke
 
 
 
