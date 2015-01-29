@@ -1,6 +1,8 @@
 from move_list import moves as MOVES
 from mega_items import mega_items as MEGA_ITEMS
+from naive_bayes import get_moves
 from log import SimulatorLog
+import json
 
 import logging
 logging.basicConfig()
@@ -8,6 +10,8 @@ MOVE_CORRECTIONS = {"ExtremeSpeed": "Extreme Speed",
                     "ThunderPunch": "Thunder Punch",
                     "SolarBeam": "Solar Beam",
                     "DynamicPunch": "Dynamic Punch"}
+with open("data/graph.json") as fp:
+    graph = json.loads(fp.read())
 
 class Simulator():
 
@@ -52,11 +56,19 @@ class Simulator():
             print "%s got damaged: %f" % (poke, event.details['damage'])
         elif type == "move":
             print "%s used %s." % (poke, event.details['move'])
-            move = event.details['move']
-            if move in MOVE_CORRECTIONS:
-                move = MOVE_CORRECTIONS[move]
-            if move not in poke.moveset.moves and move != "Hidden Power":
-                poke.moveset.moves.append(move)
+            if player == 1:
+                move = event.details['move']
+                if move in MOVE_CORRECTIONS:
+                    move = MOVE_CORRECTIONS[move]
+                if move not in poke.moveset.known_moves:
+                    poke.moveset.known_moves.append(move)
+                    poke_name = poke.name
+                    if poke_name == "Charizard-Mega-X" or poke_name == "Charizard-Mega-Y":
+                        poke_name = "Charizard"
+                    elif poke_name[:-5] == "-Mega":
+                        poke_name = poke_name[:-5]
+                    guess_moves = [x[0] for x in get_moves(poke_name, poke.moveset.known_moves, graph)[:4-len(poke.moveset.known_moves)]]
+                    poke.moveset.moves = poke.moveset.known_moves + guess_moves
             if poke.item in ["Choice Scarf", "Choice Specs", "Choice Band"]:
                 moves = ["Hidden Power" if "Hidden Power" in m else m for m in poke.moveset.moves]
                 try:

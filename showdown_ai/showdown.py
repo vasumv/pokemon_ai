@@ -5,6 +5,7 @@ from log import SimulatorLog
 from simulator import Simulator
 from gamestate import GameState
 from smogon import Smogon
+from naive_bayes import get_moves
 
 import sys
 import signal
@@ -24,6 +25,8 @@ NAME_CORRECTIONS = {"Keldeo-Resolute": "Keldeo",
                     "Pikachu-Rock-Star": "Pikachu",
                     "Meowstic": "Meowstic-M",
                     "Gourgeist-*": "Gourgeist"}
+with open("data/graph.json") as fp:
+    graph = json.loads(fp.read())
 
 class Showdown():
     def __init__(self, team_text, agent, username, password=None, driver_path="./chromedriver",
@@ -76,11 +79,13 @@ class Showdown():
                 if not len(moveset):
                     moveset = [m for m in self.bw_data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag']]
                 assert len(moveset), "No candidate movesets for %s" % name
-                if len(moveset) >= 2 and (poke_name != "Latios" or poke_name != "Skarmory"):
-                    moveset = SmogonMoveset.from_dict(moveset[1])
-                else:
-                    moveset = SmogonMoveset.from_dict(moveset[0])
-                moveset.moves = moveset.moves[:4]
+                moveset = SmogonMoveset.from_dict(moveset[0])
+                #if len(moveset) >= 2 and (poke_name != "Latios" or poke_name != "Skarmory"):
+                    #moveset = SmogonMoveset.from_dict(moveset[1])
+                #else:
+                    #moveset = SmogonMoveset.from_dict(moveset[0])
+                moves = get_moves(poke_name, [], graph)[:4]
+                moveset.moves = [move[0] for move in moves]
                 typing = self.data[poke_name].typing
                 stats = self.data[poke_name].stats
                 poke = Pokemon(name, typing, stats, moveset, calculate=True)

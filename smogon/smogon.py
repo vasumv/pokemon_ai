@@ -129,6 +129,7 @@ class SmogonMoveset():
         self.evs = evs
         self.nature = nature
         self.moves = moves
+        self.known_moves = []
         self.tag = tag
     def to_dict(self):
         dictionary = {'name': self.name, 'item': self.item, 'ability': self.ability, 'evs': self.evs, 'nature': self.nature, 'moves': self.moves, 'tag': self.tag}
