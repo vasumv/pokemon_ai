@@ -10,11 +10,11 @@ class Selenium():
     def __init__(self, url=BASE_URL, driver_path="/home/vasu/Downloads/chromedriver"):
         self.url = url
         self.driver_path = driver_path
-        #PROXY = "127.0.0.1:9666"
-        #chrome_options = webdriver.ChromeOptions()
-        #chrome_options.add_argument('--proxy-server=%s' % PROXY)
-        #self.driver = webdriver.Chrome(executable_path=self.driver_path, chrome_options=chrome_options)
-        self.driver = webdriver.Chrome(executable_path=self.driver_path)
+        PROXY = "127.0.0.1:9666"
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.add_argument('--proxy-server=%s' % PROXY)
+        self.driver = webdriver.Chrome(executable_path=self.driver_path, chrome_options=chrome_options)
+        #self.driver = webdriver.Chrome(executable_path=self.driver_path)
         #self.driver = webdriver.PhantomJS()
 
         self.state = None
@@ -232,18 +232,6 @@ class Selenium():
         log = self.driver.find_element_by_xpath("/html/body/div[4]/div[3]/div[1]")
         return log.text.encode('utf-8')
 
-    def check_is_over(self):
-        if self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/p[1]/em/button[2]"):
-            self.chat("gg")
-            save_replay = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/p[1]/em/button[2]")
-            save_replay.click()
-            #print "clicked save replay"
-            while not self.check_exists_by_id(self.get_battle_id()):
-                time.sleep(1)
-            ps_overlay = self.driver.find_element_by_xpath("/html/body/div[6]")
-            ps_overlay.click()
-            raise SeleniumException()
-
     def wait_for_move(self):
         move_exists = self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[1]")
         #self.start_timer()
@@ -261,7 +249,6 @@ class Selenium():
                 ps_overlay = self.driver.find_element_by_xpath("/html/body/div[6]")
                 ps_overlay.click()
                 raise SeleniumException()
-            #self.check_is_over()
 
         #print "their move just ended"
 

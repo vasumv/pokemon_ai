@@ -67,7 +67,7 @@ class Simulator():
                         poke_name = "Charizard"
                     elif poke_name[:-5] == "-Mega":
                         poke_name = poke_name[:-5]
-                    guess_moves = [x[0] for x in get_moves(poke_name, poke.moveset.known_moves, graph)[:4-len(poke.moveset.known_moves)]]
+                    guess_moves = [x[0] for x in get_moves(poke_name, poke.moveset.known_moves, graph) if x[0] != "Hidden Power"][:4-len(poke.moveset.known_moves)]
                     poke.moveset.moves = poke.moveset.known_moves + guess_moves
             if poke.item in ["Choice Scarf", "Choice Specs", "Choice Band"]:
                 moves = ["Hidden Power" if "Hidden Power" in m else m for m in poke.moveset.moves]

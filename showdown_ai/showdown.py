@@ -84,7 +84,7 @@ class Showdown():
                     #moveset = SmogonMoveset.from_dict(moveset[1])
                 #else:
                     #moveset = SmogonMoveset.from_dict(moveset[0])
-                moves = get_moves(poke_name, [], graph)[:4]
+                moves = [x for x in get_moves(poke_name, [], graph) if x != "Hidden Power"][:4]
                 moveset.moves = [move[0] for move in moves]
                 typing = self.data[poke_name].typing
                 stats = self.data[poke_name].stats
