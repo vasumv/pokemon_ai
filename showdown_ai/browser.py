@@ -10,11 +10,11 @@ class Selenium():
     def __init__(self, url=BASE_URL, driver_path="/home/vasu/Downloads/chromedriver"):
         self.url = url
         self.driver_path = driver_path
-        PROXY = "127.0.0.1:9666"
-        chrome_options = webdriver.ChromeOptions()
-        chrome_options.add_argument('--proxy-server=%s' % PROXY)
-        self.driver = webdriver.Chrome(executable_path=self.driver_path, chrome_options=chrome_options)
-        #self.driver = webdriver.Chrome(executable_path=self.driver_path)
+        #PROXY = "127.0.0.1:9666"
+        #chrome_options = webdriver.ChromeOptions()
+        #chrome_options.add_argument('--proxy-server=%s' % PROXY)
+        #self.driver = webdriver.Chrome(executable_path=self.driver_path, chrome_options=chrome_options)
+        self.driver = webdriver.Chrome(executable_path=self.driver_path)
         #self.driver = webdriver.PhantomJS()
 
         self.state = None
@@ -63,25 +63,43 @@ class Selenium():
         ou.click()
 
     def start_battle(self):
-        url1 = self.driver.current_url
-        battle = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div[2]/div[1]/form/p[3]/button")
-        battle.click()
-        battle_click = True
-        time.sleep(1)
-        if url1 == self.driver.current_url and self.check_exists_by_name("username"):
-            ps_overlay = self.driver.find_element_by_xpath("/html/body/div[4]")
-            ps_overlay.click()
-            battle_click = False
-        while url1 == self.driver.current_url and self.check_exists_by_name("login"):
-            time.sleep(1)
-        if url1 == self.driver.current_url and not battle_click:
-            battle = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div[2]/div[1]/form/p[3]/button")
-            battle.click()
-            time.sleep(1)
-        while url1 == self.driver.current_url:
-            time.sleep(1.5)
+        #url1 = self.driver.current_url
+        #battle = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div[2]/div[1]/form/p[3]/button")
+        #battle.click()
+        #battle_click = True
+        #time.sleep(1)
+        #if url1 == self.driver.current_url and self.check_exists_by_name("username"):
+            #ps_overlay = self.driver.find_element_by_xpath("/html/body/div[4]")
+            #ps_overlay.click()
+            #battle_click = False
+        #while url1 == self.driver.current_url and self.check_exists_by_name("login"):
+            #time.sleep(1)
+        #if url1 == self.driver.current_url and not battle_click:
+            #battle = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div[2]/div[1]/form/p[3]/button")
+            #battle.click()
+            #time.sleep(1)
+        #while url1 == self.driver.current_url:
+            #time.sleep(1.5)
             #print "waiting"
         #print "found battle"
+        lobby = self.driver.find_element_by_xpath("/html/body/div[3]/div/div/div[1]/a")
+        lobby.click()
+        time.sleep(2)
+        usav = self.driver.find_element_by_xpath("//*[@id='lobby-userlist-user-bousheesnaw']/button/span")
+        usav.click()
+        time.sleep(2)
+        challenge = self.driver.find_element_by_xpath("/html/body/div[5]/p/button[1]")
+        challenge.click()
+        form = self.driver.find_element_by_xpath("//*[@id='mainmenu']/div/div[1]/div[1]/div/div[1]/div[1]/form/p[2]/button")
+        form.click()
+        time.sleep(2)
+        ou = self.driver.find_element_by_xpath("/html/body/div[5]/ul[1]/li[3]/button")
+        ou.click()
+        time.sleep(2)
+        make_challenge = self.driver.find_element_by_xpath("//*[@id='mainmenu']/div/div[1]/div[1]/div/div[1]/div[1]/form/p[4]/button[1]")
+        make_challenge.click()
+        lobby_quit = self.driver.find_element_by_xpath("//*[@id='header']/div[2]/div/ul[2]/li[1]/a[2]")
+        lobby_quit.click()
 
     def get_battle_id(self):
         url = self.driver.current_url
@@ -126,7 +144,7 @@ class Selenium():
             if mega:
                 mega_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[5]/div/div[2]/div[2]/label/input')
                 mega_button.click()
-            move = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (index + 1))
+            move = self.driver.find_elements_by_name("chooseMove")[index]
             move.click()
             if volt_turn is not None:
                 #print "Waiting for volt turn"
@@ -135,11 +153,25 @@ class Selenium():
         self.wait_for_move()
         self.backup_switch(backup_switch)
 
-    def switch(self, index, backup_switch):
+    def switch_initial(self, index, backup_switch):
+        #if self.check_alive():
+        i = self.poke_map[index]
+        choose = self.driver.find_elements_by_name("chooseTeamPreview")[index]
+        choose.click()
+        old_primary = None
+        for k, v in self.poke_map.items():
+            if v == 0:
+                old_primary = k
+
+        self.poke_map[index] = 0
+        self.poke_map[old_primary] = i
+        self.wait_for_move()
+
+    def switch(self, index, backup_switch, use_backup=True):
         #self.check_is_over()
         if self.check_alive():
             i = self.poke_map[index]
-            choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[3]/div[2]/button[%d]" % (i + 1))
+            choose = self.driver.find_elements_by_name("chooseSwitch")[index]
             choose.click()
             old_primary = None
             for k, v in self.poke_map.items():
@@ -150,7 +182,8 @@ class Selenium():
             self.poke_map[old_primary] = i
 
         self.wait_for_move()
-        self.backup_switch(backup_switch)
+        if use_backup:
+            self.backup_switch(backup_switch)
 
     def backup_switch(self, index):
         #print "Backup switching"
@@ -158,7 +191,7 @@ class Selenium():
         if not self.check_alive():
             #print "Is alive"
             i = self.poke_map[index]
-            choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (i + 1))
+            choose = self.driver.find_elements_by_name("chooseSwitch")[index]
             choose.click()
             old_primary = None
             for k, v in self.poke_map.items():
@@ -170,11 +203,11 @@ class Selenium():
 
     def volt_turn_switch(self, index):
         #self.check_is_over()
-        if not self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[6]"):
+        if self.check_exists_by_class("chooseMove")[index]:
             pass
         else:
             i = self.poke_map[index]
-            choose = self.driver.find_element_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[%d]" % (i + 1))
+            choose = self.driver.find_elements_by_name("chooseSwitch")[index]
             choose.click()
             old_primary = None
             for k, v in self.poke_map.items():
@@ -222,6 +255,14 @@ class Selenium():
             return False
         return True
 
+    def check_exists_by_class(self, cls):
+        try:
+            self.driver.find_elements_by_class_name(cls)
+        except NoSuchElementException:
+            return False
+        return True
+
+
     def start_timer(self):
         if self.check_exists_by_name("setTimer"):
             timer = self.driver.find_element_by_name("setTimer")
@@ -262,8 +303,11 @@ class Selenium():
     def close(self):
         self.driver.close()
 
-    def get_opp_team(self):
-        names = self.driver.find_element_by_xpath("/html/body/div[4]/div[3]/div[1]/div[15]/em")
+    def get_opp_team(self, lobby_game=False):
+        if lobby_game:
+            names = self.driver.find_element_by_xpath("/html/body/div[4]/div[3]/div[1]/div[14]/em")
+        else:
+            names = self.driver.find_element_by_xpath("/html/body/div[4]/div[3]/div[1]/div[15]/em")
         name_list = names.text.split("/")
         name_list = [x.strip(" ") for x in name_list]
         opp_info = {}

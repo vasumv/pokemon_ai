@@ -8,6 +8,7 @@ from smogon import Smogon
 from naive_bayes import get_moves
 
 import sys
+import time
 import signal
 import requests
 import json
@@ -50,57 +51,56 @@ class Showdown():
         self.simulator = Simulator()
 
     def reset(self):
-        self.selenium.reset()
+        #self.selenium.reset()
         self.opp_team = None
         self.my_team = Team.make_team(self.team_text, self.data)
 
-    def create_initial_gamestate(self, my_team, opp_team):
+    def create_initial_gamestate(self):
         my_pokes = self.my_team.copy()
-        primary = None
         for i, poke in enumerate(my_pokes.poke_list):
             poke_name = poke.name
             if poke_name in NAME_CORRECTIONS:
                 poke_name = NAME_CORRECTIONS[poke_name]
-            poke.health = my_team[poke_name]['health'] / 100.0 * poke.final_stats['hp']
-            poke.alive = my_team[poke_name]['alive']
-            if my_team[poke_name]['primary']:
-                primary = i
-        my_pokes.primary_poke = primary
-        if not self.opp_team:
-            opp_poke_names = list(opp_team.keys())
-            opp_poke_list = []
-            for name in opp_poke_names:
-                if not name:
-                    continue
-                poke_name = name
-                if poke_name in NAME_CORRECTIONS:
-                    poke_name = NAME_CORRECTIONS[poke_name]
-                moveset = [m for m in self.data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag']]
-                if not len(moveset):
-                    moveset = [m for m in self.bw_data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag']]
-                assert len(moveset), "No candidate movesets for %s" % name
-                moveset = SmogonMoveset.from_dict(moveset[0])
-                #if len(moveset) >= 2 and (poke_name != "Latios" or poke_name != "Skarmory"):
-                    #moveset = SmogonMoveset.from_dict(moveset[1])
-                #else:
-                    #moveset = SmogonMoveset.from_dict(moveset[0])
-                moves = [x for x in get_moves(poke_name, [], graph) if x != "Hidden Power"][:4]
-                moveset.moves = [move[0] for move in moves]
-                typing = self.data[poke_name].typing
-                stats = self.data[poke_name].stats
-                poke = Pokemon(name, typing, stats, moveset, calculate=True)
-                opp_poke_list.append(poke)
+            poke.health = poke.final_stats['hp']
+            poke.alive = True
+        opp_poke_list = []
+        log = SimulatorLog.parse(self.selenium.get_log())
+        for event in log.events:
+            if event.type == "team" and event.details['username'] != self.username:
+                opp_poke_names = event.details['team']
+        for name in opp_poke_names:
+            if not name:
+                continue
+            poke_name = name
+            if poke_name in NAME_CORRECTIONS:
+                poke_name = NAME_CORRECTIONS[poke_name]
+            moveset = [m for m in self.data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag']]
+            if not len(moveset):
+                moveset = [m for m in self.bw_data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag']]
+            assert len(moveset), "No candidate movesets for %s" % name
+            moveset = SmogonMoveset.from_dict(moveset[0])
+            moves = [x for x in get_moves(poke_name, [], graph) if x != "Hidden Power"][:4]
+            moveset.moves = [move[0] for move in moves]
+            typing = self.data[poke_name].typing
+            stats = self.data[poke_name].stats
+            poke = Pokemon(name, typing, stats, moveset, calculate=True)
+            poke.health = poke.final_stats['hp']
+            poke.alive = True
+            opp_poke_list.append(poke)
+        for event in log.events:
+            if event.type == "switch" and event.player == 0:
+                for poke in my_pokes.poke_list:
+                    if poke.name == event.poke:
+                        my_primary = my_pokes.poke_list.index(poke)
+            elif event.type == "switch" and event.player == 1:
+                for poke in opp_poke_list:
+                    if poke.name == event.poke:
+                        opp_primary = opp_poke_list.index(poke)
 
-            self.opp_team = Team(opp_poke_list)
-
+        self.opp_team = Team(opp_poke_list)
         opp_pokes = self.opp_team.copy()
-        primary = None
-        for i, poke in enumerate(opp_pokes.poke_list):
-            poke.health = opp_team[poke.name]['health'] / 100.0 * poke.final_stats['hp']
-            poke.alive = opp_team[poke.name]['alive']
-            if opp_team[poke.name]['primary']:
-                primary = i
-        opp_pokes.primary_poke = primary
+        my_pokes.primary_poke = my_primary
+        opp_pokes.primary_poke = opp_primary
 
         gamestate = GameState([my_pokes, opp_pokes])
         return gamestate
@@ -154,16 +154,14 @@ class Showdown():
             except:
                 pass
 
-    def play_game(self):
+    def play_game(self, lobby_game=False):
         self.selenium.choose_tier()
         self.selenium.start_battle()
         self.selenium.wait_for_move()
         self.battle_url = self.selenium.driver.current_url
         self.update_monitor()
-        self.selenium.move(0, 0)
-        my_team = self.selenium.get_my_team()
-        opp_team = self.selenium.get_opp_team()
-        gamestate = self.create_initial_gamestate(my_team, opp_team)
+        self.selenium.switch_initial(0, 0)
+        gamestate = self.create_initial_gamestate()
         self.update_latest_turn(gamestate)
         over = False
         while not over:
@@ -192,13 +190,14 @@ class Showdown():
         }
         def signal_handler(signal, frame):
             self.update_monitor(done=True)
-            sys.exit(0)
+            time.sleep(1000)
+            #sys.exit(0)
         signal.signal(signal.SIGINT, signal_handler)
         for i in range(num_games):
             self.simulator.log.reset()
             result, error = None, None
             try:
-                self.play_game()
+                self.play_game(True)
             except SeleniumException:
                 log = SimulatorLog.parse(self.selenium.get_log())
                 _, over_event = log.is_over()
@@ -234,7 +233,7 @@ class Showdown():
                     fp.write(error)
             self.reset()
         self.update_monitor(done=True)
-        self.selenium.close()
+        #self.selenium.close()
         print self.scores
 
 

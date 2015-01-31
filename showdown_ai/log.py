@@ -27,7 +27,8 @@ STAT_CHANGE = r'%s|%s' % (ABILITY_STAT_CHANGE, MOVE_STAT_CHANGE)
 POKE_NAME = '((?P<pokename>[^ ]+?)|(?P<nickname>.+?) \((?P<pokename2>[^ ]+?)\))'
 
 BATTLE_STARTED = r'Battle between (.*?) and (.*?) started!'
-
+TEAM = r"(?P<username>.+?)'s team:"
+POKES = r"(.+?) / (.+?) / (.+?)"
 MY_SWITCH = r'Go! %s!' % POKE_NAME
 OPP_SWITCH = r'.+? sent out %s!' % POKE_NAME
 MOVE = r'(?P<opposing>The opposing )?(?P<poke>.+?) used (?P<move>.+?)!'
@@ -61,6 +62,7 @@ class SimulatorLog():
         self.events = []
         self.event_count = 0
         self.nicknames = [{}, {}]
+        self.detected_team = (False, None)
 
     def __iter__(self):
         return iter(self.events)
@@ -68,6 +70,31 @@ class SimulatorLog():
     def handle_line(self, line, opp_poke=None):
         event = {}
         line = line.strip()
+
+        if self.detected_team[0]:
+            self.event_count += 1
+            event['type'] = 'team'
+            event['index'] = self.event_count
+            event['player'] = 0
+            event['poke'] = None
+            team = [poke.strip() for poke in line.split("/")]
+            event['details'] = {'team': team, 'username': self.detected_team[1]}
+            self.detected_team = (False, None)
+            return SimulatorEvent.from_dict(event)
+
+
+        match = re.match(TEAM, line)
+        if match:
+            self.event_count += 1
+            event['type'] = 'team_detect'
+            event['index'] = self.event_count
+            username = match.group('username')
+            event['player'] = 0
+            event['poke'] = None
+            details = {'username': username}
+            event['details'] = details
+            self.detected_team = (True, username)
+            return SimulatorEvent.from_dict(event)
 
         match = re.match(STAT_CHANGE, line)
         if match:
@@ -96,6 +123,8 @@ class SimulatorLog():
             event['type'] = 'stat_change'
             event['details'] = details
             return SimulatorEvent.from_dict(event)
+
+
 
         match = re.match(DAMAGE, line)
         if match:
@@ -450,6 +479,7 @@ class SimulatorLog():
             index = self.event_count
             type = "mega_evolve"
             poke = match.group('poke')
+            print line
             mega = match.group('mega')
             mega = mega.split()
             player = 1 if match.group('opposing') is not None else 0
@@ -465,6 +495,8 @@ class SimulatorLog():
             event['details'] = details
             event['poke'] = poke
             mega_name = None
+            if player == 0:
+                opp_poke = poke
             if opp_poke == "charizard-mega-x":
                 mega_name = "Charizard-Mega-X"
             elif opp_poke == "charizard-mega-y":
