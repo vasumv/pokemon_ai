@@ -51,7 +51,7 @@ class Showdown():
         self.simulator = Simulator()
 
     def reset(self):
-        #self.selenium.reset()
+        self.selenium.reset()
         self.opp_team = None
         self.my_team = Team.make_team(self.team_text, self.data)
 
@@ -233,7 +233,7 @@ class Showdown():
                     fp.write(error)
             self.reset()
         self.update_monitor(done=True)
-        #self.selenium.close()
+        self.selenium.close()
         print self.scores
 
 
