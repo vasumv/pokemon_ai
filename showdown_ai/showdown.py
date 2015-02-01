@@ -103,9 +103,6 @@ class Showdown():
 
         self.opp_team = Team(opp_poke_list)
         opp_pokes = self.opp_team.copy()
-        print [x.name for x in opp_pokes]
-        print [x.moveset.moves for x in opp_pokes]
-        print [x.item for x in opp_pokes]
         my_pokes.primary_poke = my_primary
         opp_pokes.primary_poke = opp_primary
 
@@ -200,8 +197,7 @@ class Showdown():
         }
         def signal_handler(signal, frame):
             self.update_monitor(done=True)
-            time.sleep(1000)
-            #sys.exit(0)
+            sys.exit(0)
         signal.signal(signal.SIGINT, signal_handler)
         for i in range(num_games):
             self.simulator.log.reset()

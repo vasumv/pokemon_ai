@@ -47,7 +47,7 @@ BURN = r"(?P<opposing>The opposing )?(?P<poke>.+?) was burned!"
 PARALYZE = r"(?P<opposing>The opposing )?(?P<poke>.+?) was paralyzed! It may be unable to move!"
 HURT_BURN = r"(?P<opposing>The opposing )?(?P<poke>.+?) was hurt by its burn!"
 FLOAT_BALLOON = r"(?P<opposing>The opposing )?(?P<poke>.+?) floats in the air with its Air Balloon!"
-DRAGGED_OUT = r"(?P<opposing>The opposing )?(?P<poke>.+?) (\((?P<nickname>.+?)\))? was dragged out!"
+DRAGGED_OUT = r"(?P<opposing>The opposing )?(?P<nickname>.+?) (\((?P<poke>.+?)\))? was dragged out!"
 POP_BALLOON = r"(?P<opposing>The opposing )?(?P<poke>.+?)'s Air Balloon popped!"
 NEW_ITEM = r"(?P<opposing>The opposing )?(?P<poke>.+?) obtained one (?P<item>.+)."
 BELLY_DRUM = r"(?P<opposing>The opposing )?(?P<poke>.+?) cut its own HP and maximized its Attack!"
@@ -453,8 +453,10 @@ class SimulatorLog():
             player = 1 if match.group('opposing') is not None else 0
             event['index'] = self.event_count
             event['type'] = 'switch'
-            poke = match.group('poke')
-            poke = self.nicknames[player][poke]
+            if match.group('poke'):
+                self.nicknames[0][match.group('nickname')] = match.group('poke')
+            nickname = match.group('nickname')
+            poke = self.nicknames[player][nickname]
             event['player'] = player
             event['poke'] = poke
             details = {}
