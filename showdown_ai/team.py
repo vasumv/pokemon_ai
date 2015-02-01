@@ -117,7 +117,6 @@ class Pokemon():
             status = self.status
             poke = Pokemon(name, typing, stats, moveset, status=status, old_typing=None, calculate=True, is_mega=True)
             poke.health = self.health
-
             if log:
                 print "%s mega evolved into %s." % (
                     self,
@@ -142,6 +141,11 @@ class Pokemon():
     def to_tuple(self):
         return (self.name, self.item, self.health, tuple(self.typing), self.status, tuple(self.stages.values()))
 
+    @staticmethod
+    def from_tuple(tupl):
+        poke = Pokemon(tupl[0], tupl[1], tupl[2], tupl[3], tupl[4], tupl[5])
+        return poke
+
     def __repr__(self):
         return "%s(%u)" % (self.name, self.health)
 
@@ -157,6 +161,12 @@ class Team():
 
     def to_tuple(self):
         return (self.primary_poke, tuple(x.to_tuple() for x in self.poke_list))
+
+    @staticmethod
+    def from_tuple(tupl):
+        team = Team(poke.from_tuple() for poke in tupl[1])
+        team.primary_poke = tupl[0]
+        return team
 
     def primary(self):
         if self.primary_poke is None:

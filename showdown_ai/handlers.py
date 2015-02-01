@@ -79,6 +79,14 @@ def handle_endeavor(gamestate, damage, who):
     my_health = gamestate.get_team(who).primary().health
     gamestate.get_team(1 - who).primary().health = my_health
     return 0
+def handle_brave_bird(gamestate, damage, who):
+    poke = gamestate.get_team(who).primary()
+    poke.damage(damage / 3)
+    return 0
+def handle_flare_blitz(gamestate, damage, who):
+    poke = gamestate.get_team(who).primary()
+    poke.damage(damage / 3)
+    return 0
 def handle_relic_song(gamestate, damage, who):
     my_poke = gamestate.get_team(who).primary()
     moveset = my_poke.moveset

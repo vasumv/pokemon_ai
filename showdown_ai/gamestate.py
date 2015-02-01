@@ -1,3 +1,4 @@
+import pickle
 from simulator import Action
 from type import get_multiplier
 import logging
@@ -8,6 +9,16 @@ class GameState():
         self.teams = teams
         self.rocks = [False, False]
         self.spikes = [0, 0]
+
+    def dump(path):
+        with open(path, 'wb') as fp:
+            pickle.dump(self, fp)
+
+    @staticmethod
+    def load(path):
+        with open(path, 'rb') as fp:
+            gs = pickle.load(fp)
+        return gs
 
     def deep_copy(self):
         state = GameState([x.copy() for x in self.teams])
@@ -26,6 +37,10 @@ class GameState():
 
     def to_tuple(self):
         return (tuple(x.to_tuple() for x in self.teams), (self.rocks[0], self.rocks[1], self.spikes[0], self.spikes[1]))
+
+    @staticmethod
+    def from_tuple(tupl):
+        return GameState([team.from_tuple() for team in tupl[0]])
 
     def evaluate(self, who):
         win_bonus = 0

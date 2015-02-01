@@ -7,9 +7,10 @@ from selenium.webdriver.common.keys import Keys
 class Selenium():
     BASE_URL="http://play.pokemonshowdown.com"
     #BASE_URL="http://frost.psim.us"
-    def __init__(self, url=BASE_URL, driver_path="/home/vasu/Downloads/chromedriver"):
+    def __init__(self, url=BASE_URL, driver_path="/home/vasu/Downloads/chromedriver", timer_on=False):
         self.url = url
         self.driver_path = driver_path
+        self.timer_on = timer_on
         #PROXY = "127.0.0.1:9666"
         #chrome_options = webdriver.ChromeOptions()
         #chrome_options.add_argument('--proxy-server=%s' % PROXY)
@@ -129,6 +130,15 @@ class Selenium():
         mute = self.driver.find_element_by_xpath("/html/body/div[4]/p[3]/label/input")
         mute.click()
 
+    def get_my_primary(self):
+        img = self.driver.find_element_by_xpath("/html/body/div[4]/div[1]/div/div[4]/div[4]/img[1]")
+        text = img.get_attribute('src')
+        back = text.rindex('.')
+        poke = text[46:back]
+        if "shiny" in poke:
+            poke = poke[6:]
+        return poke
+
     def get_opp_primary(self):
         img = self.driver.find_element_by_xpath("/html/body/div[4]/div[1]/div/div[4]/div[1]/img[6]")
         text = img.get_attribute('src')
@@ -171,7 +181,7 @@ class Selenium():
         #self.check_is_over()
         if self.check_alive():
             i = self.poke_map[index]
-            choose = self.driver.find_elements_by_name("chooseSwitch")[index]
+            choose = self.driver.find_elements_by_css_selector("[name='chooseDisabled'],[name='chooseSwitch']")[index]
             choose.click()
             old_primary = None
             for k, v in self.poke_map.items():
@@ -191,7 +201,7 @@ class Selenium():
         if not self.check_alive():
             #print "Is alive"
             i = self.poke_map[index]
-            choose = self.driver.find_elements_by_name("chooseSwitch")[index]
+            choose = self.driver.find_elements_by_css_selector("[name='chooseDisabled'],[name='chooseSwitch']")[index]
             choose.click()
             old_primary = None
             for k, v in self.poke_map.items():
@@ -201,14 +211,11 @@ class Selenium():
             self.poke_map[old_primary] = i
             self.wait_for_move()
 
-    def volt_turn_switch(self, index):
-        #self.check_is_over()
-        if self.check_exists_by_class("chooseMove")[index]:
-            pass
-        else:
+    def volt_turn(self, index):
+        if not self.check_exists_by_name("chooseMove"):
             i = self.poke_map[index]
-            choose = self.driver.find_elements_by_name("chooseSwitch")[index]
-            choose.click()
+            buttons = self.driver.find_elements_by_css_selector("[name='chooseDisabled'],[name='chooseSwitch']")
+            buttons[index].click()
             old_primary = None
             for k, v in self.poke_map.items():
                 if v == 0:
@@ -216,15 +223,6 @@ class Selenium():
             self.poke_map[index] = 0
             self.poke_map[old_primary] = i
         self.wait_for_move()
-
-    def volt_turn(self, volt_turn):
-        #print "Volt turning"
-        my_team = self.get_my_team()
-        for poke in my_team.values():
-            #print poke['primary'], poke['alive']
-            if poke['primary'] and poke['alive']:
-                self.volt_turn_switch(volt_turn)
-                break
 
     def check_alive(self):
         return self.check_exists_by_xpath("/html/body/div[4]/div[1]/div/div[5]/div[2]/strong")
@@ -268,6 +266,7 @@ class Selenium():
             timer = self.driver.find_element_by_name("setTimer")
             if timer.text == "Start timer":
                 timer.click()
+            self.timer_on = True
 
     def get_log(self):
         log = self.driver.find_element_by_xpath("/html/body/div[4]/div[3]/div[1]")
@@ -277,6 +276,8 @@ class Selenium():
         move_exists = self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[1]")
         #self.start_timer()
         while move_exists == False:
+            if not self.timer_on:
+                self.start_timer()
             #print "waiting for their move"
             time.sleep(2)
             move_exists = self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[1]")
@@ -302,58 +303,6 @@ class Selenium():
 
     def close(self):
         self.driver.close()
-
-    def get_opp_team(self, lobby_game=False):
-        if lobby_game:
-            names = self.driver.find_element_by_xpath("/html/body/div[4]/div[3]/div[1]/div[14]/em")
-        else:
-            names = self.driver.find_element_by_xpath("/html/body/div[4]/div[3]/div[1]/div[15]/em")
-        name_list = names.text.split("/")
-        name_list = [x.strip(" ") for x in name_list]
-        opp_info = {}
-        for i in range(2, 4):
-            for j in range(1, 4):
-                opp_poke_info = {}
-                opp_health = self.driver.find_element_by_xpath("/html/body/div[4]/div[1]/div/div[8]/div/div[%d]/span[%d]" % (i, j))
-                title = opp_health.get_attribute("title")
-                hp = re.sub("[^0-9]", "", title)
-                health = 100.0 if hp == '' else float(hp)
-                name_info = ''.join([x for x in name_list if x in title])
-                alive = not "fainted" in title
-                primary = "active" in title
-                if primary:
-                    opp_poke_info['health'] = self.get_opp_primary_health()
-                else:
-                    opp_poke_info['health'] = health
-                opp_poke_info['alive'] = alive
-                opp_poke_info['primary'] = primary
-                opp_info[name_info] = opp_poke_info
-        return opp_info
-
-    def get_my_team(self):
-        names = self.driver.find_element_by_xpath("/html/body/div[4]/div[3]/div[1]/div[14]/em")
-        name_list = names.text.split("/")
-        name_list = [x.strip(" ") for x in name_list]
-        my_info = {}
-        for i in range(2, 4):
-            for j in range(1, 4):
-                my_poke_info = {}
-                my_health = self.driver.find_element_by_xpath("/html/body/div[4]/div[1]/div/div[7]/div/div[%d]/span[%d]" % (i, j))
-                title = my_health.get_attribute("title")
-                hp = re.sub(r"[^0-9\.]", "", title)
-                health = 100.0 if hp == '' else float(hp)
-                name_info = ''.join([x for x in name_list if x in title])
-                alive = not "fainted" in title
-                primary = "active" in title
-                if primary:
-                    my_poke_info['health'] = self.get_my_primary_health()
-                else:
-                    my_poke_info['health'] = health
-                my_poke_info['alive'] = alive
-                my_poke_info['primary'] = primary
-                my_info[name_info] = my_poke_info
-        return my_info
-
 
     def get_my_primary_health(self):
         if self.check_exists_by_xpath("/html/body/div[4]/div[1]/div/div[5]/div[contains(@class,'statbar rstatbar')]/div/div[1]"):

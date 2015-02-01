@@ -47,7 +47,7 @@ BURN = r"(?P<opposing>The opposing )?(?P<poke>.+?) was burned!"
 PARALYZE = r"(?P<opposing>The opposing )?(?P<poke>.+?) was paralyzed! It may be unable to move!"
 HURT_BURN = r"(?P<opposing>The opposing )?(?P<poke>.+?) was hurt by its burn!"
 FLOAT_BALLOON = r"(?P<opposing>The opposing )?(?P<poke>.+?) floats in the air with its Air Balloon!"
-DRAGGED_OUT = r"(?P<opposing>The opposing )?(?P<poke>.+?) was dragged out!"
+DRAGGED_OUT = r"(?P<opposing>The opposing )?(?P<poke>.+?) (\((?P<nickname>.+?)\))? was dragged out!"
 POP_BALLOON = r"(?P<opposing>The opposing )?(?P<poke>.+?)'s Air Balloon popped!"
 NEW_ITEM = r"(?P<opposing>The opposing )?(?P<poke>.+?) obtained one (?P<item>.+)."
 BELLY_DRUM = r"(?P<opposing>The opposing )?(?P<poke>.+?) cut its own HP and maximized its Attack!"
@@ -67,7 +67,7 @@ class SimulatorLog():
     def __iter__(self):
         return iter(self.events)
 
-    def handle_line(self, line, opp_poke=None):
+    def handle_line(self, line, my_poke=None, opp_poke=None):
         event = {}
         line = line.strip()
 
@@ -454,6 +454,7 @@ class SimulatorLog():
             event['index'] = self.event_count
             event['type'] = 'switch'
             poke = match.group('poke')
+            poke = self.nicknames[player][poke]
             event['player'] = player
             event['poke'] = poke
             details = {}
@@ -467,6 +468,7 @@ class SimulatorLog():
             event['index'] = self.event_count
             event['type'] = 'mold_breaker'
             poke = match.group('poke')
+            poke = self.nicknames[player][poke]
             event['player'] = player
             event['poke'] = poke
             details = {}
@@ -479,7 +481,6 @@ class SimulatorLog():
             index = self.event_count
             type = "mega_evolve"
             poke = match.group('poke')
-            print line
             mega = match.group('mega')
             mega = mega.split()
             player = 1 if match.group('opposing') is not None else 0
@@ -507,12 +508,24 @@ class SimulatorLog():
                 mega_name = "Mewtwo-Mega-Y"
             else:
                 mega_name = self.nicknames[player][old_poke] + "-Mega"
+            if player == 1:
+                my_poke = poke
+            if my_poke == "charizard-mega-x":
+                mega_name = "Charizard-Mega-X"
+            elif my_poke == "charizard-mega-y":
+                mega_name = "Charizard-Mega-Y"
+            elif my_poke == "mewtwo-mega-x":
+                mega_name = "Mewtwo-Mega-X"
+            elif my_poke == "mewtwo-mega-y":
+                mega_name = "Mewtwo-Mega-Y"
+            else:
+                mega_name = self.nicknames[player][old_poke] + "-Mega"
             self.nicknames[player][old_poke] = mega_name
             event['details']['mega'] = mega_name
             return SimulatorEvent.from_dict(event)
 
-    def add_event(self, line, opp_poke=None):
-        event = self.handle_line(line, opp_poke=opp_poke)
+    def add_event(self, line, my_poke=None, opp_poke=None):
+        event = self.handle_line(line, my_poke=my_poke, opp_poke=opp_poke)
         if event:
             self.events.append(event)
         return event

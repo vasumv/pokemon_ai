@@ -14,6 +14,7 @@ import requests
 import json
 import re
 import traceback
+import cPickle as pickle
 
 from agent import OptimisticMinimaxAgent, PessimisticMinimaxAgent, HumanAgent
 
@@ -78,7 +79,10 @@ class Showdown():
             if not len(moveset):
                 moveset = [m for m in self.bw_data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag']]
             assert len(moveset), "No candidate movesets for %s" % name
-            moveset = SmogonMoveset.from_dict(moveset[0])
+            if len(moveset) > 1:
+                moveset = SmogonMoveset.from_dict(moveset[1])
+            else:
+                moveset = SmogonMoveset.from_dict(moveset[0])
             moves = [x for x in get_moves(poke_name, [], graph) if x != "Hidden Power"][:4]
             moveset.moves = [move[0] for move in moves]
             typing = self.data[poke_name].typing
@@ -99,6 +103,9 @@ class Showdown():
 
         self.opp_team = Team(opp_poke_list)
         opp_pokes = self.opp_team.copy()
+        print [x.name for x in opp_pokes]
+        print [x.moveset.moves for x in opp_pokes]
+        print [x.item for x in opp_pokes]
         my_pokes.primary_poke = my_primary
         opp_pokes.primary_poke = opp_primary
 
@@ -126,8 +133,9 @@ class Showdown():
                 buffer = []
             else:
                 buffer.append(line)
+        my_poke = self.selenium.get_my_primary()
         opp_poke = self.selenium.get_opp_primary()
-        self.simulator.append_log(gamestate, turns[-1], opp_poke=opp_poke)
+        self.simulator.append_log(gamestate, turns[-1], my_poke=my_poke, opp_poke=opp_poke)
 
     def init(self):
         self.selenium.start_driver()
@@ -163,6 +171,8 @@ class Showdown():
         self.selenium.switch_initial(0, 0)
         gamestate = self.create_initial_gamestate()
         self.update_latest_turn(gamestate)
+        with open('cur_gs.gs', 'wb') as fp:
+            pickle.dump(gamestate, fp)
         over = False
         while not over:
             print "=========================================================================================="

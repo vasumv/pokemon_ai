@@ -18,7 +18,7 @@ class Simulator():
     def __init__(self):
         self.log = SimulatorLog()
 
-    def append_log(self, gamestate, lines, opp_poke=None):
+    def append_log(self, gamestate, lines, my_poke=None, opp_poke=None):
         for line in lines:
             event = self.log.add_event(line, opp_poke=opp_poke)
             if not event:
@@ -45,11 +45,11 @@ class Simulator():
             poke.health = 0
             poke.alive = False
             print "%s fainted." % (poke)
-
         elif type == "mega_evolve":
             poke.item = get_mega_item(event.details['mega'])
             team = gamestate.get_team(player)
             team.poke_list[team.primary_poke] = poke.mega_evolve()
+            print poke.ability
             print "%s mega evolved!" % (poke)
         elif type == "damage":
             hp = poke.final_stats['hp']
@@ -138,6 +138,7 @@ class Simulator():
         elif type == "belly_drum":
             poke.increase_stage('patk', 9999)
         elif type == "mold_breaker":
+            print poke
             poke.ability = "Mold Breaker"
             print "%s has mold breaker!" % poke
         elif type == "disabled":

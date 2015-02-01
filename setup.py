@@ -31,6 +31,7 @@ setup(
     entry_points={
         'console_scripts': [
             'showdownai=showdown_ai.showdown:main',
+            'simulator=showdown_ai.game:main',
             'showdownmonitor=pokemonitor.__init__:main',
         ],
     },
