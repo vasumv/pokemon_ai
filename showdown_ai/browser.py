@@ -269,7 +269,7 @@ class Selenium():
             self.timer_on = True
 
     def get_log(self):
-        log = self.driver.find_element_by_xpath("/html/body/div[4]/div[3]/div[1]")
+        log = self.driver.find_element_by_css_selector(".battle-log")
         return log.text.encode('utf-8')
 
     def wait_for_move(self):
