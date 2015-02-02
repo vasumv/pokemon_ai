@@ -497,33 +497,35 @@ class SimulatorLog():
             event['type'] = type
             event['details'] = details
             event['poke'] = poke
+            print "my_poke", my_poke
+            print "opp_poke", opp_poke
             mega_name = None
-            if player == 0:
-                opp_poke = poke
-            if opp_poke == "charizard-mega-x":
-                mega_name = "Charizard-Mega-X"
-            elif opp_poke == "charizard-mega-y":
-                mega_name = "Charizard-Mega-Y"
-            elif opp_poke == "mewtwo-mega-x":
-                mega_name = "Mewtwo-Mega-X"
-            elif opp_poke == "mewtwo-mega-y":
-                mega_name = "Mewtwo-Mega-Y"
-            else:
-                mega_name = self.nicknames[player][old_poke] + "-Mega"
             if player == 1:
-                my_poke = poke
-            if my_poke == "charizard-mega-x":
-                mega_name = "Charizard-Mega-X"
-            elif my_poke == "charizard-mega-y":
-                mega_name = "Charizard-Mega-Y"
-            elif my_poke == "mewtwo-mega-x":
-                mega_name = "Mewtwo-Mega-X"
-            elif my_poke == "mewtwo-mega-y":
-                mega_name = "Mewtwo-Mega-Y"
-            else:
-                mega_name = self.nicknames[player][old_poke] + "-Mega"
+                if opp_poke == "charizard-mega-x":
+                    mega_name = "Charizard-Mega-X"
+                elif opp_poke == "charizard-mega-y":
+                    mega_name = "Charizard-Mega-Y"
+                elif opp_poke == "mewtwo-mega-x":
+                    mega_name = "Mewtwo-Mega-X"
+                elif opp_poke == "mewtwo-mega-y":
+                    mega_name = "Mewtwo-Mega-Y"
+                else:
+                    mega_name = self.nicknames[player][old_poke] + "-Mega"
+            if player == 0:
+                if my_poke == "charizard-mega-x":
+                    mega_name = "Charizard-Mega-X"
+                elif my_poke == "charizard-mega-y":
+                    mega_name = "Charizard-Mega-Y"
+                elif my_poke == "mewtwo-mega-x":
+                    mega_name = "Mewtwo-Mega-X"
+                elif my_poke == "mewtwo-mega-y":
+                    mega_name = "Mewtwo-Mega-Y"
+                else:
+                    mega_name = self.nicknames[player][old_poke] + "-Mega"
             self.nicknames[player][old_poke] = mega_name
             event['details']['mega'] = mega_name
+            print event
+            print self.nicknames
             return SimulatorEvent.from_dict(event)
 
     def add_event(self, line, my_poke=None, opp_poke=None):

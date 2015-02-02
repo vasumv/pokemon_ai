@@ -20,7 +20,7 @@ class Simulator():
 
     def append_log(self, gamestate, lines, my_poke=None, opp_poke=None):
         for line in lines:
-            event = self.log.add_event(line, opp_poke=opp_poke)
+            event = self.log.add_event(line, my_poke=my_poke, opp_poke=opp_poke)
             if not event:
                 continue
             self.handle_event(gamestate, event)
@@ -97,6 +97,7 @@ class Simulator():
         elif type == "leftovers":
             poke.item = "Leftovers"
             poke.heal(1.0 / 16)
+            print event
             print "%s regained health due to leftovers" % poke
         elif type == "life_orb":
             poke.item = "Life Orb"

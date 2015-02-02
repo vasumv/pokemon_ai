@@ -133,19 +133,15 @@ class Selenium():
     def get_my_primary(self):
         img = self.driver.find_element_by_xpath("/html/body/div[4]/div[1]/div/div[4]/div[4]/img[1]")
         text = img.get_attribute('src')
-        back = text.rindex('.')
-        poke = text[46:back]
-        if "shiny" in poke:
-            poke = poke[6:]
+        poke = text.split("/")[-1]
+        poke = poke[:-4]
         return poke
 
     def get_opp_primary(self):
         img = self.driver.find_element_by_xpath("/html/body/div[4]/div[1]/div/div[4]/div[1]/img[6]")
         text = img.get_attribute('src')
-        back = text.rindex('.')
-        poke = text[46:back]
-        if "shiny" in poke:
-            poke = poke[6:]
+        poke = text.split("/")[-1]
+        poke = poke[:-4]
         return poke
 
     def move(self, index, backup_switch, mega=False, volt_turn=None):
