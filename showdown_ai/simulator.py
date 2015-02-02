@@ -149,6 +149,7 @@ class Simulator():
 
 
 
+
     def simulate(self, gamestate, actions, who, log=False):
         assert not gamestate.is_over()
         gamestate = gamestate.deep_copy()

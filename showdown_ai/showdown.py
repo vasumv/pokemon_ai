@@ -240,6 +240,12 @@ class Showdown():
                     fp.write(log)
                 with open('logs/crashes/%s.err' % id, 'w') as fp:
                     fp.write(error)
+            events = SimulatorLog.parse(self.selenium.get_log())
+            for event in events:
+                if event.type == "ladder":
+                    if event.details['username'] == self.username:
+                        with open("ladder_ratings.txt", "a") as fp:
+                            fp.write(event.details['ladder'] + "\n")
             self.reset()
         self.update_monitor(done=True)
         self.selenium.close()

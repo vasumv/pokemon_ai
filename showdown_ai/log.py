@@ -56,6 +56,7 @@ LIFE_ORB = r"(?P<opposing>The opposing )?(?P<poke>.+?) lost some of its HP!"
 DISABLED = r"(?P<opposing>The opposing )?(?P<poke>.+?)'s (?P<move>.+?) was disabled!"
 NOT_DISABLED = r"(?P<opposing>The opposing )?(?P<poke>.+?) is disabled no more!"
 IS_OVER = r"(?P<username>.+?) won the battle!"
+LADDER = r"(?P<username>.+?)'s rating: .+? → (?P<ladder>.+?)"
 class SimulatorLog():
 
     def __init__(self):
@@ -526,6 +527,19 @@ class SimulatorLog():
             event['details']['mega'] = mega_name
             print event
             print self.nicknames
+            return SimulatorEvent.from_dict(event)
+
+        match = re.match(LADDER, line)
+        if match:
+            self.event_count += 1
+            event['type'] = 'ladder'
+            event['index'] = self.event_count
+            username = match.group('username')
+            event['player'] = 0
+            event['poke'] = None
+            details = {'username': username, 'ladder': match.group("ladder")}
+            event['details'] = details
+            self.detected_team = (True, username)
             return SimulatorEvent.from_dict(event)
 
     def add_event(self, line, my_poke=None, opp_poke=None):

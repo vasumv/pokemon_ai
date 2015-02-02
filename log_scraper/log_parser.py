@@ -7,9 +7,7 @@ POKE = r"\|poke\|p(?P<player>.+?)\|(?P<poke>.+)"
 SWITCH = r"\|switch\|p(?P<player>.+?)a: (?P<nickname>.+?)\|(?P<pokename>.+)\|.+?"
 DRAG = r"\|drag\|p(?P<player>.+?)a: (?P<nickname>.+?)\|(?P<pokename>.+)\|.+?"
 MOVE = r"\|move\|p(?P<player>.+?)a: (?P<poke>.+?)\|(?P<move>.+?)\|.+?"
-def get_logs(username):
-    directory = path("uu/logs/%s" % username)
-    return directory.listdir()
+
 def handle_line(username, line):
     line = line.strip()
     match = re.match(USER_PLAYER, line)
@@ -25,6 +23,8 @@ def handle_line(username, line):
         if player == match.group("player"):
             poke = match.group("poke").split(",")[0]
             if poke == "Zoroark":
+                raise Zoroark()
+            if poke == "Zorua":
                 raise Zoroark()
             if "Keldeo" in poke:
                 poke = "Keldeo"
@@ -77,13 +77,15 @@ class Zoroark(Exception):
 if __name__ == "__main__":
     graph_poke = {}
     graph_frequencies = {}
-    names = path("./uu/logs")
-    for username in names.listdir():
+    names = path("./uu/logs").listdir() + path('./ou/logs').listdir()
+    for username in names:
         directory = path("%s" % username.decode("utf-8"))
         for log in directory.files():
+            if "uu-186975396" in log or "uu-197134198" in log or "uu-202631332" in log or "uu-190650459" in log:
+                continue
             if "gen4" in log or "gen3" in log or "gen2" in log or "gen1" in log or "pandora" in log:
                 continue
-            if "uu-" not in log:
+            if "uu-" not in log and "ou-" not in log:
                 continue
             print log
             player = ""
@@ -100,7 +102,6 @@ if __name__ == "__main__":
                 except Zoroark:
                     skip = True
                     break
-
             if skip:
                 continue
             for poke in opp_team:
@@ -126,5 +127,5 @@ if __name__ == "__main__":
         'frequencies': graph_frequencies,
         'cooccurences': graph_poke,
     }
-    with open("uu/graph.json", "w") as f:
+    with open("graph.json", "w") as f:
         f.write(json.dumps(poke_graph, sort_keys=True,indent=4, separators=(',', ': ')))
