@@ -152,9 +152,9 @@ class Selenium():
         #self.check_is_over()
         if self.check_alive():
             if mega:
-                mega_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[5]/div/div[2]/div[2]/label/input')
+                mega_button = self.driver.find_element_by_name('megaevo')
                 mega_button.click()
-            move = self.driver.find_elements_by_name("chooseMove")[index]
+            move = self.driver.find_elements_by_css_selector(".movemenu button")[index]
             move.click()
             if volt_turn is not None:
                 #print "Waiting for volt turn"
@@ -181,8 +181,8 @@ class Selenium():
         #self.check_is_over()
         if self.check_alive():
             i = self.poke_map[index]
-            choose = self.driver.find_elements_by_css_selector("[name='chooseDisabled'],[name='chooseSwitch']")[index]
-            choose.click()
+            buttons = self.driver.find_elements_by_css_selector(".switchmenu button")
+            buttons[i].click()
             old_primary = None
             for k, v in self.poke_map.items():
                 if v == 0:
@@ -201,8 +201,8 @@ class Selenium():
         if not self.check_alive():
             #print "Is alive"
             i = self.poke_map[index]
-            choose = self.driver.find_elements_by_css_selector("[name='chooseDisabled'],[name='chooseSwitch']")[index]
-            choose.click()
+            buttons = self.driver.find_elements_by_css_selector(".switchmenu button")
+            buttons[i].click()
             old_primary = None
             for k, v in self.poke_map.items():
                 if v == 0:
@@ -214,8 +214,8 @@ class Selenium():
     def volt_turn(self, index):
         if not self.check_exists_by_name("chooseMove"):
             i = self.poke_map[index]
-            buttons = self.driver.find_elements_by_css_selector("[name='chooseDisabled'],[name='chooseSwitch']")
-            buttons[index].click()
+            buttons = self.driver.find_elements_by_css_selector(".switchmenu button")
+            buttons[i].click()
             old_primary = None
             for k, v in self.poke_map.items():
                 if v == 0:
