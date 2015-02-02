@@ -1,0 +1,830 @@
+|join|eosuxalot
+|join|reachzero
+|player|p1|eosuxalot|266
+|player|p2|reachzero|15
+|gametype|singles
+|tier|UU
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Cobalion
+|poke|p1|Medicham, F
+|poke|p1|Gallade, M
+|poke|p1|Scrafty, M
+|poke|p1|Togekiss, F
+|poke|p1|Druddigon, F
+|poke|p2|Togekiss, M, shiny
+|poke|p2|Roserade, M, shiny
+|poke|p2|Porygon2, shiny
+|poke|p2|Swampert, F, shiny
+|poke|p2|Cofagrigus, M, shiny
+|poke|p2|Zapdos
+|teampreview
+|callback|decision
+|join|LonelyNess
+|
+|start
+|split
+|switch|p1a: Togekiss|Togekiss, F|327\/327
+|switch|p1a: Togekiss|Togekiss, F|48\/48
+|switch|p1a: Togekiss|Togekiss, F|48\/48
+|switch|p1a: Togekiss|Togekiss, F|327\/327
+|split
+|switch|p2a: Swampert|Swampert, F, shiny|48\/48
+|switch|p2a: Swampert|Swampert, F, shiny|404\/404
+|switch|p2a: Swampert|Swampert, F, shiny|48\/48
+|switch|p2a: Swampert|Swampert, F, shiny|404\/404
+|turn|1
+|callback|decision
+|
+|split
+|switch|p2a: Zapdos|Zapdos|48\/48
+|switch|p2a: Zapdos|Zapdos|382\/382
+|switch|p2a: Zapdos|Zapdos|48\/48
+|switch|p2a: Zapdos|Zapdos|382\/382
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Togekiss|Trick|p2a: Zapdos
+|-activate|p1a: Togekiss|move: Trick|[of] p2a: Zapdos
+|-item|p2a: Zapdos|Choice Scarf|[from] move: Trick
+|-item|p1a: Togekiss|Leftovers|[from] move: Trick
+|
+|turn|2
+|callback|decision
+|
+|split
+|switch|p1a: Druddigon|Druddigon, F|357\/357
+|switch|p1a: Druddigon|Druddigon, F|48\/48
+|switch|p1a: Druddigon|Druddigon, F|48\/48
+|switch|p1a: Druddigon|Druddigon, F|357\/357
+|move|p2a: Zapdos|Thunderbolt|p1a: Druddigon
+|-resisted|p1a: Druddigon
+|split
+|-damage|p1a: Druddigon|285\/357
+|-damage|p1a: Druddigon|38\/48
+|-damage|p1a: Druddigon|38\/48
+|-damage|p1a: Druddigon|285\/357
+|
+|split
+|-heal|p1a: Druddigon|307\/357|[from] item: Leftovers
+|-heal|p1a: Druddigon|41\/48|[from] item: Leftovers
+|-heal|p1a: Druddigon|41\/48|[from] item: Leftovers
+|-heal|p1a: Druddigon|307\/357|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|split
+|switch|p2a: Swampert|Swampert, F, shiny|48\/48
+|switch|p2a: Swampert|Swampert, F, shiny|404\/404
+|switch|p2a: Swampert|Swampert, F, shiny|48\/48
+|switch|p2a: Swampert|Swampert, F, shiny|404\/404
+|move|p1a: Druddigon|Stealth Rock|p2a: Swampert
+|-sidestart|p2: reachzero|move: Stealth Rock
+|
+|split
+|-heal|p1a: Druddigon|329\/357|[from] item: Leftovers
+|-heal|p1a: Druddigon|44\/48|[from] item: Leftovers
+|-heal|p1a: Druddigon|44\/48|[from] item: Leftovers
+|-heal|p1a: Druddigon|329\/357|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Swampert|Stealth Rock|p1a: Druddigon
+|-sidestart|p1: eosuxalot|move: Stealth Rock
+|move|p1a: Druddigon|Glare|p2a: Swampert|[miss]
+|-miss|p1a: Druddigon|p2a: Swampert
+|
+|split
+|-heal|p1a: Druddigon|351\/357|[from] item: Leftovers
+|-heal|p1a: Druddigon|47\/48|[from] item: Leftovers
+|-heal|p1a: Druddigon|47\/48|[from] item: Leftovers
+|-heal|p1a: Druddigon|351\/357|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|split
+|switch|p2a: Roserade|Roserade, M, shiny|48\/48
+|switch|p2a: Roserade|Roserade, M, shiny|324\/324
+|switch|p2a: Roserade|Roserade, M, shiny|48\/48
+|switch|p2a: Roserade|Roserade, M, shiny|324\/324
+|split
+|-damage|p2a: Roserade|42\/48|[from] Stealth Rock
+|-damage|p2a: Roserade|284\/324|[from] Stealth Rock
+|-damage|p2a: Roserade|42\/48|[from] Stealth Rock
+|-damage|p2a: Roserade|284\/324|[from] Stealth Rock
+|move|p1a: Druddigon|Glare|p2a: Roserade
+|-status|p2a: Roserade|par
+|
+|split
+|-heal|p1a: Druddigon|357\/357|[from] item: Leftovers
+|-heal|p1a: Druddigon|48\/48|[from] item: Leftovers
+|-heal|p1a: Druddigon|48\/48|[from] item: Leftovers
+|-heal|p1a: Druddigon|357\/357|[from] item: Leftovers
+|split
+|-heal|p2a: Roserade|45\/48 par|[from] item: Leftovers
+|-heal|p2a: Roserade|304\/324 par|[from] item: Leftovers
+|-heal|p2a: Roserade|45\/48 par|[from] item: Leftovers
+|-heal|p2a: Roserade|304\/324 par|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Roserade|Spikes|p1a: Druddigon
+|-sidestart|p1: eosuxalot|Spikes
+|move|p1a: Druddigon|Dragon Tail|p2a: Roserade
+|split
+|-damage|p2a: Roserade|26\/48 par
+|-damage|p2a: Roserade|178\/324 par
+|-damage|p2a: Roserade|26\/48 par
+|-damage|p2a: Roserade|178\/324 par
+|split
+|drag|p2a: Zapdos|Zapdos|48\/48
+|drag|p2a: Zapdos|Zapdos|382\/382
+|drag|p2a: Zapdos|Zapdos|48\/48
+|drag|p2a: Zapdos|Zapdos|382\/382
+|split
+|-damage|p2a: Zapdos|36\/48|[from] Stealth Rock
+|-damage|p2a: Zapdos|287\/382|[from] Stealth Rock
+|-damage|p2a: Zapdos|36\/48|[from] Stealth Rock
+|-damage|p2a: Zapdos|287\/382|[from] Stealth Rock
+|-ability|p2a: Zapdos|Pressure
+|
+|turn|7
+|callback|decision
+|
+|split
+|switch|p2a: Roserade|Roserade, M, shiny|26\/48
+|switch|p2a: Roserade|Roserade, M, shiny|178\/324
+|switch|p2a: Roserade|Roserade, M, shiny|26\/48
+|switch|p2a: Roserade|Roserade, M, shiny|178\/324
+|split
+|-damage|p2a: Roserade|20\/48|[from] Stealth Rock
+|-damage|p2a: Roserade|138\/324|[from] Stealth Rock
+|-damage|p2a: Roserade|20\/48|[from] Stealth Rock
+|-damage|p2a: Roserade|138\/324|[from] Stealth Rock
+|move|p1a: Druddigon|Dragon Tail|p2a: Roserade
+|-crit|p2a: Roserade
+|split
+|-damage|p2a: Roserade|0 fnt
+|-damage|p2a: Roserade|0 fnt
+|-damage|p2a: Roserade|0 fnt
+|-damage|p2a: Roserade|0 fnt
+|faint|p2a: Roserade
+|
+|callback|decision
+|
+|split
+|switch|p2a: Togekiss|Togekiss, M, shiny|48\/48
+|switch|p2a: Togekiss|Togekiss, M, shiny|373\/373
+|switch|p2a: Togekiss|Togekiss, M, shiny|48\/48
+|switch|p2a: Togekiss|Togekiss, M, shiny|373\/373
+|split
+|-damage|p2a: Togekiss|36\/48|[from] Stealth Rock
+|-damage|p2a: Togekiss|280\/373|[from] Stealth Rock
+|-damage|p2a: Togekiss|36\/48|[from] Stealth Rock
+|-damage|p2a: Togekiss|280\/373|[from] Stealth Rock
+|turn|8
+|callback|decision
+|
+|move|p2a: Togekiss|Air Slash|p1a: Druddigon
+|split
+|-damage|p1a: Druddigon|240\/357
+|-damage|p1a: Druddigon|32\/48
+|-damage|p1a: Druddigon|32\/48
+|-damage|p1a: Druddigon|240\/357
+|cant|p1a: Druddigon|flinch
+|
+|split
+|-heal|p2a: Togekiss|38\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|303\/373|[from] item: Leftovers
+|-heal|p2a: Togekiss|38\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|303\/373|[from] item: Leftovers
+|split
+|-heal|p1a: Druddigon|262\/357|[from] item: Leftovers
+|-heal|p1a: Druddigon|35\/48|[from] item: Leftovers
+|-heal|p1a: Druddigon|35\/48|[from] item: Leftovers
+|-heal|p1a: Druddigon|262\/357|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p2a: Togekiss|Air Slash|p1a: Druddigon
+|split
+|-damage|p1a: Druddigon|145\/357
+|-damage|p1a: Druddigon|19\/48
+|-damage|p1a: Druddigon|19\/48
+|-damage|p1a: Druddigon|145\/357
+|cant|p1a: Druddigon|flinch
+|
+|split
+|-heal|p2a: Togekiss|41\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|326\/373|[from] item: Leftovers
+|-heal|p2a: Togekiss|41\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|326\/373|[from] item: Leftovers
+|split
+|-heal|p1a: Druddigon|167\/357|[from] item: Leftovers
+|-heal|p1a: Druddigon|22\/48|[from] item: Leftovers
+|-heal|p1a: Druddigon|22\/48|[from] item: Leftovers
+|-heal|p1a: Druddigon|167\/357|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|split
+|switch|p1a: Togekiss|Togekiss, F|327\/327
+|switch|p1a: Togekiss|Togekiss, F|48\/48
+|switch|p1a: Togekiss|Togekiss, F|48\/48
+|switch|p1a: Togekiss|Togekiss, F|327\/327
+|split
+|-damage|p1a: Togekiss|246\/327|[from] Stealth Rock
+|-damage|p1a: Togekiss|36\/48|[from] Stealth Rock
+|-damage|p1a: Togekiss|36\/48|[from] Stealth Rock
+|-damage|p1a: Togekiss|246\/327|[from] Stealth Rock
+|move|p2a: Togekiss|Air Slash|p1a: Togekiss
+|split
+|-damage|p1a: Togekiss|162\/327
+|-damage|p1a: Togekiss|23\/48
+|-damage|p1a: Togekiss|23\/48
+|-damage|p1a: Togekiss|162\/327
+|
+|split
+|-heal|p1a: Togekiss|182\/327|[from] item: Leftovers
+|-heal|p1a: Togekiss|26\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|26\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|182\/327|[from] item: Leftovers
+|split
+|-heal|p2a: Togekiss|44\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|349\/373|[from] item: Leftovers
+|-heal|p2a: Togekiss|44\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|349\/373|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p1a: Togekiss|Fire Blast|p2a: Togekiss
+|split
+|-damage|p2a: Togekiss|27\/48
+|-damage|p2a: Togekiss|217\/373
+|-damage|p2a: Togekiss|27\/48
+|-damage|p2a: Togekiss|217\/373
+|move|p2a: Togekiss|Nasty Plot|p2a: Togekiss
+|-boost|p2a: Togekiss|spa|2
+|
+|split
+|-heal|p1a: Togekiss|202\/327|[from] item: Leftovers
+|-heal|p1a: Togekiss|29\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|29\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|202\/327|[from] item: Leftovers
+|split
+|-heal|p2a: Togekiss|30\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|240\/373|[from] item: Leftovers
+|-heal|p2a: Togekiss|30\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|240\/373|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Togekiss
+|split
+|-damage|p2a: Togekiss|15\/48
+|-damage|p2a: Togekiss|119\/373
+|-damage|p2a: Togekiss|15\/48
+|-damage|p2a: Togekiss|119\/373
+|move|p2a: Togekiss|Roost|p2a: Togekiss
+|split
+|-heal|p2a: Togekiss|39\/48
+|-heal|p2a: Togekiss|306\/373
+|-heal|p2a: Togekiss|39\/48
+|-heal|p2a: Togekiss|306\/373
+|
+|split
+|-heal|p1a: Togekiss|222\/327|[from] item: Leftovers
+|-heal|p1a: Togekiss|32\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|32\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|222\/327|[from] item: Leftovers
+|split
+|-heal|p2a: Togekiss|42\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|329\/373|[from] item: Leftovers
+|-heal|p2a: Togekiss|42\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|329\/373|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Togekiss
+|split
+|-damage|p2a: Togekiss|25\/48
+|-damage|p2a: Togekiss|199\/373
+|-damage|p2a: Togekiss|25\/48
+|-damage|p2a: Togekiss|199\/373
+|move|p2a: Togekiss|Air Slash|p1a: Togekiss|[miss]
+|-miss|p2a: Togekiss|p1a: Togekiss
+|
+|split
+|-heal|p1a: Togekiss|242\/327|[from] item: Leftovers
+|-heal|p1a: Togekiss|35\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|35\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|242\/327|[from] item: Leftovers
+|split
+|-heal|p2a: Togekiss|28\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|222\/373|[from] item: Leftovers
+|-heal|p2a: Togekiss|28\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|222\/373|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Togekiss
+|split
+|-damage|p2a: Togekiss|12\/48
+|-damage|p2a: Togekiss|98\/373
+|-damage|p2a: Togekiss|12\/48
+|-damage|p2a: Togekiss|98\/373
+|move|p2a: Togekiss|Roost|p2a: Togekiss
+|split
+|-heal|p2a: Togekiss|36\/48
+|-heal|p2a: Togekiss|285\/373
+|-heal|p2a: Togekiss|36\/48
+|-heal|p2a: Togekiss|285\/373
+|
+|split
+|-heal|p1a: Togekiss|262\/327|[from] item: Leftovers
+|-heal|p1a: Togekiss|38\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|38\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|262\/327|[from] item: Leftovers
+|split
+|-heal|p2a: Togekiss|39\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|308\/373|[from] item: Leftovers
+|-heal|p2a: Togekiss|39\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|308\/373|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Togekiss
+|split
+|-damage|p2a: Togekiss|24\/48g
+|-damage|p2a: Togekiss|191\/373
+|-damage|p2a: Togekiss|24\/48g
+|-damage|p2a: Togekiss|191\/373
+|cant|p2a: Togekiss|flinch
+|
+|split
+|-heal|p1a: Togekiss|282\/327|[from] item: Leftovers
+|-heal|p1a: Togekiss|41\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|41\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|282\/327|[from] item: Leftovers
+|split
+|-heal|p2a: Togekiss|27\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|214\/373|[from] item: Leftovers
+|-heal|p2a: Togekiss|27\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|214\/373|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Togekiss
+|split
+|-damage|p2a: Togekiss|11\/48
+|-damage|p2a: Togekiss|93\/373
+|-damage|p2a: Togekiss|11\/48
+|-damage|p2a: Togekiss|93\/373
+|move|p2a: Togekiss|Roost|p2a: Togekiss
+|split
+|-heal|p2a: Togekiss|36\/48
+|-heal|p2a: Togekiss|280\/373
+|-heal|p2a: Togekiss|36\/48
+|-heal|p2a: Togekiss|280\/373
+|
+|split
+|-heal|p1a: Togekiss|302\/327|[from] item: Leftovers
+|-heal|p1a: Togekiss|44\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|44\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|302\/327|[from] item: Leftovers
+|split
+|-heal|p2a: Togekiss|38\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|303\/373|[from] item: Leftovers
+|-heal|p2a: Togekiss|38\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|303\/373|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Togekiss
+|split
+|-damage|p2a: Togekiss|22\/48
+|-damage|p2a: Togekiss|173\/373
+|-damage|p2a: Togekiss|22\/48
+|-damage|p2a: Togekiss|173\/373
+|cant|p2a: Togekiss|flinch
+|
+|split
+|-heal|p1a: Togekiss|322\/327|[from] item: Leftovers
+|-heal|p1a: Togekiss|47\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|47\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|322\/327|[from] item: Leftovers
+|split
+|-heal|p2a: Togekiss|25\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|196\/373|[from] item: Leftovers
+|-heal|p2a: Togekiss|25\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|196\/373|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Togekiss
+|split
+|-damage|p2a: Togekiss|10\/48
+|-damage|p2a: Togekiss|79\/373
+|-damage|p2a: Togekiss|10\/48
+|-damage|p2a: Togekiss|79\/373
+|cant|p2a: Togekiss|flinch
+|
+|split
+|-heal|p1a: Togekiss|327\/327|[from] item: Leftovers
+|-heal|p1a: Togekiss|48\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|48\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|327\/327|[from] item: Leftovers
+|split
+|-heal|p2a: Togekiss|13\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|102\/373|[from] item: Leftovers
+|-heal|p2a: Togekiss|13\/48|[from] item: Leftovers
+|-heal|p2a: Togekiss|102\/373|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Togekiss
+|split
+|-damage|p2a: Togekiss|0 fnt
+|-damage|p2a: Togekiss|0 fnt
+|-damage|p2a: Togekiss|0 fnt
+|-damage|p2a: Togekiss|0 fnt
+|faint|p2a: Togekiss
+|
+|callback|decision
+|
+|split
+|switch|p2a: Zapdos|Zapdos|36\/48
+|switch|p2a: Zapdos|Zapdos|287\/382
+|switch|p2a: Zapdos|Zapdos|36\/48
+|switch|p2a: Zapdos|Zapdos|287\/382
+|split
+|-damage|p2a: Zapdos|24\/48g|[from] Stealth Rock
+|-damage|p2a: Zapdos|192\/382|[from] Stealth Rock
+|-damage|p2a: Zapdos|24\/48g|[from] Stealth Rock
+|-damage|p2a: Zapdos|192\/382|[from] Stealth Rock
+|-ability|p2a: Zapdos|Pressure
+|turn|20
+|callback|decision
+|
+|split
+|switch|p1a: Druddigon|Druddigon, F|167\/357
+|switch|p1a: Druddigon|Druddigon, F|22\/48
+|switch|p1a: Druddigon|Druddigon, F|22\/48
+|switch|p1a: Druddigon|Druddigon, F|167\/357
+|split
+|-damage|p1a: Druddigon|123\/357|[from] Spikes
+|-damage|p1a: Druddigon|16\/48|[from] Spikes
+|-damage|p1a: Druddigon|16\/48|[from] Spikes
+|-damage|p1a: Druddigon|123\/357|[from] Spikes
+|split
+|-damage|p1a: Druddigon|79\/357|[from] Stealth Rock
+|-damage|p1a: Druddigon|10\/48|[from] Stealth Rock
+|-damage|p1a: Druddigon|10\/48|[from] Stealth Rock
+|-damage|p1a: Druddigon|79\/357|[from] Stealth Rock
+|move|p2a: Zapdos|Hidden Power|p1a: Druddigon
+|split
+|-damage|p1a: Druddigon|0 fnt
+|-damage|p1a: Druddigon|0 fnt
+|-damage|p1a: Druddigon|0 fnt
+|-damage|p1a: Druddigon|0 fnt
+|faint|p1a: Druddigon
+|
+|callback|decision
+|join|Pikachuun
+|leave|Pikachuun
+|
+|split
+|switch|p1a: Medicham|Medicham, F|261\/261
+|switch|p1a: Medicham|Medicham, F|48\/48
+|switch|p1a: Medicham|Medicham, F|48\/48
+|switch|p1a: Medicham|Medicham, F|261\/261
+|split
+|-damage|p1a: Medicham|245\/261|[from] Stealth Rock
+|-damage|p1a: Medicham|45\/48|[from] Stealth Rock
+|-damage|p1a: Medicham|45\/48|[from] Stealth Rock
+|-damage|p1a: Medicham|245\/261|[from] Stealth Rock
+|split
+|-damage|p1a: Medicham|213\/261|[from] Spikes
+|-damage|p1a: Medicham|39\/48|[from] Spikes
+|-damage|p1a: Medicham|39\/48|[from] Spikes
+|-damage|p1a: Medicham|213\/261|[from] Spikes
+|turn|21
+|callback|decision
+|
+|split
+|switch|p2a: Cofagrigus|Cofagrigus, M, shiny|48\/48
+|switch|p2a: Cofagrigus|Cofagrigus, M, shiny|320\/320
+|switch|p2a: Cofagrigus|Cofagrigus, M, shiny|48\/48
+|switch|p2a: Cofagrigus|Cofagrigus, M, shiny|320\/320
+|split
+|-damage|p2a: Cofagrigus|42\/48|[from] Stealth Rock
+|-damage|p2a: Cofagrigus|280\/320|[from] Stealth Rock
+|-damage|p2a: Cofagrigus|42\/48|[from] Stealth Rock
+|-damage|p2a: Cofagrigus|280\/320|[from] Stealth Rock
+|move|p1a: Medicham|Trick|p2a: Cofagrigus
+|-activate|p1a: Medicham|move: Trick|[of] p2a: Cofagrigus
+|-item|p2a: Cofagrigus|Choice Scarf|[from] move: Trick
+|-item|p1a: Medicham|Chesto Berry|[from] move: Trick
+|
+|turn|22
+|callback|decision
+|
+|move|p1a: Medicham|Toxic|p2a: Cofagrigus
+|-status|p2a: Cofagrigus|tox
+|move|p2a: Cofagrigus|Shadow Ball|p1a: Medicham
+|-supereffective|p1a: Medicham
+|split
+|-damage|p1a: Medicham|0 fnt
+|-damage|p1a: Medicham|0 fnt
+|-damage|p1a: Medicham|0 fnt
+|-damage|p1a: Medicham|0 fnt
+|faint|p1a: Medicham
+|
+|split
+|-damage|p2a: Cofagrigus|39\/48 tox|[from] psn
+|-damage|p2a: Cofagrigus|260\/320 tox|[from] psn
+|-damage|p2a: Cofagrigus|39\/48 tox|[from] psn
+|-damage|p2a: Cofagrigus|260\/320 tox|[from] psn
+|callback|decision
+|
+|split
+|switch|p1a: Togekiss|Togekiss, F|327\/327
+|switch|p1a: Togekiss|Togekiss, F|48\/48
+|switch|p1a: Togekiss|Togekiss, F|48\/48
+|switch|p1a: Togekiss|Togekiss, F|327\/327
+|split
+|-damage|p1a: Togekiss|246\/327|[from] Stealth Rock
+|-damage|p1a: Togekiss|36\/48|[from] Stealth Rock
+|-damage|p1a: Togekiss|36\/48|[from] Stealth Rock
+|-damage|p1a: Togekiss|246\/327|[from] Stealth Rock
+|turn|23
+|callback|decision
+|
+|split
+|switch|p2a: Porygon2|Porygon2, shiny|48\/48
+|switch|p2a: Porygon2|Porygon2, shiny|374\/374
+|switch|p2a: Porygon2|Porygon2, shiny|48\/48
+|switch|p2a: Porygon2|Porygon2, shiny|374\/374
+|split
+|-damage|p2a: Porygon2|42\/48|[from] Stealth Rock
+|-damage|p2a: Porygon2|328\/374|[from] Stealth Rock
+|-damage|p2a: Porygon2|42\/48|[from] Stealth Rock
+|-damage|p2a: Porygon2|328\/374|[from] Stealth Rock
+|-ability|p2a: Porygon2|Serene Grace|[from] ability: Trace|[of] p1a: Togekiss
+|move|p1a: Togekiss|Fire Blast|p2a: Porygon2
+|split
+|-damage|p2a: Porygon2|32\/48
+|-damage|p2a: Porygon2|255\/374
+|-damage|p2a: Porygon2|32\/48
+|-damage|p2a: Porygon2|255\/374
+|-status|p2a: Porygon2|brn
+|
+|split
+|-heal|p1a: Togekiss|266\/327|[from] item: Leftovers
+|-heal|p1a: Togekiss|39\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|39\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|266\/327|[from] item: Leftovers
+|split
+|-damage|p2a: Porygon2|26\/48 brn|[from] brn
+|-damage|p2a: Porygon2|209\/374 brn|[from] brn
+|-damage|p2a: Porygon2|26\/48 brn|[from] brn
+|-damage|p2a: Porygon2|209\/374 brn|[from] brn
+|turn|24
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Porygon2
+|split
+|-damage|p2a: Porygon2|17\/48 brn
+|-damage|p2a: Porygon2|133\/374 brn
+|-damage|p2a: Porygon2|17\/48 brn
+|-damage|p2a: Porygon2|133\/374 brn
+|cant|p2a: Porygon2|flinch
+|
+|split
+|-heal|p1a: Togekiss|286\/327|[from] item: Leftovers
+|-heal|p1a: Togekiss|41\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|41\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|286\/327|[from] item: Leftovers
+|split
+|-damage|p2a: Porygon2|11\/48 brn|[from] brn
+|-damage|p2a: Porygon2|87\/374 brn|[from] brn
+|-damage|p2a: Porygon2|11\/48 brn|[from] brn
+|-damage|p2a: Porygon2|87\/374 brn|[from] brn
+|turn|25
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Porygon2
+|split
+|-damage|p2a: Porygon2|1\/48 brn
+|-damage|p2a: Porygon2|14\/374 brn
+|-damage|p2a: Porygon2|1\/48 brn
+|-damage|p2a: Porygon2|14\/374 brn
+|cant|p2a: Porygon2|flinch
+|
+|split
+|-heal|p1a: Togekiss|306\/327|[from] item: Leftovers
+|-heal|p1a: Togekiss|44\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|44\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|306\/327|[from] item: Leftovers
+|split
+|-damage|p2a: Porygon2|0 fnt|[from] brn
+|-damage|p2a: Porygon2|0 fnt|[from] brn
+|-damage|p2a: Porygon2|0 fnt|[from] brn
+|-damage|p2a: Porygon2|0 fnt|[from] brn
+|faint|p2a: Porygon2
+|callback|decision
+|
+|split
+|switch|p2a: Swampert|Swampert, F, shiny|48\/48
+|switch|p2a: Swampert|Swampert, F, shiny|404\/404
+|switch|p2a: Swampert|Swampert, F, shiny|48\/48
+|switch|p2a: Swampert|Swampert, F, shiny|404\/404
+|split
+|-damage|p2a: Swampert|45\/48|[from] Stealth Rock
+|-damage|p2a: Swampert|379\/404|[from] Stealth Rock
+|-damage|p2a: Swampert|45\/48|[from] Stealth Rock
+|-damage|p2a: Swampert|379\/404|[from] Stealth Rock
+|turn|26
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Swampert
+|split
+|-damage|p2a: Swampert|26\/48
+|-damage|p2a: Swampert|225\/404
+|-damage|p2a: Swampert|26\/48
+|-damage|p2a: Swampert|225\/404
+|cant|p2a: Swampert|flinch
+|
+|split
+|-heal|p1a: Togekiss|326\/327|[from] item: Leftovers
+|-heal|p1a: Togekiss|47\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|47\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|326\/327|[from] item: Leftovers
+|split
+|-heal|p2a: Swampert|29\/48|[from] item: Leftovers
+|-heal|p2a: Swampert|250\/404|[from] item: Leftovers
+|-heal|p2a: Swampert|29\/48|[from] item: Leftovers
+|-heal|p2a: Swampert|250\/404|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|move|p1a: Togekiss|Grass Knot|p2a: Swampert
+|-supereffective|p2a: Swampert
+|split
+|-damage|p2a: Swampert|0 fnt
+|-damage|p2a: Swampert|0 fnt
+|-damage|p2a: Swampert|0 fnt
+|-damage|p2a: Swampert|0 fnt
+|faint|p2a: Swampert
+|
+|split
+|-heal|p1a: Togekiss|327\/327|[from] item: Leftovers
+|-heal|p1a: Togekiss|48\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|48\/48|[from] item: Leftovers
+|-heal|p1a: Togekiss|327\/327|[from] item: Leftovers
+|callback|decision
+|
+|split
+|switch|p2a: Zapdos|Zapdos|24\/48g
+|switch|p2a: Zapdos|Zapdos|192\/382
+|switch|p2a: Zapdos|Zapdos|24\/48g
+|switch|p2a: Zapdos|Zapdos|192\/382
+|split
+|-damage|p2a: Zapdos|12\/48|[from] Stealth Rock
+|-damage|p2a: Zapdos|97\/382|[from] Stealth Rock
+|-damage|p2a: Zapdos|12\/48|[from] Stealth Rock
+|-damage|p2a: Zapdos|97\/382|[from] Stealth Rock
+|-ability|p2a: Zapdos|Pressure
+|turn|28
+|callback|decision
+|chat|reachzero|gg
+|
+|split
+|switch|p1a: Gallade|Gallade, M|297\/297
+|switch|p1a: Gallade|Gallade, M|48\/48
+|switch|p1a: Gallade|Gallade, M|48\/48
+|switch|p1a: Gallade|Gallade, M|297\/297
+|split
+|-damage|p1a: Gallade|260\/297|[from] Spikes
+|-damage|p1a: Gallade|42\/48|[from] Spikes
+|-damage|p1a: Gallade|42\/48|[from] Spikes
+|-damage|p1a: Gallade|260\/297|[from] Spikes
+|split
+|-damage|p1a: Gallade|242\/297|[from] Stealth Rock
+|-damage|p1a: Gallade|39\/48|[from] Stealth Rock
+|-damage|p1a: Gallade|39\/48|[from] Stealth Rock
+|-damage|p1a: Gallade|242\/297|[from] Stealth Rock
+|move|p2a: Zapdos|Thunderbolt|p1a: Gallade
+|split
+|-damage|p1a: Gallade|113\/297
+|-damage|p1a: Gallade|18\/48
+|-damage|p1a: Gallade|18\/48
+|-damage|p1a: Gallade|113\/297
+|
+|turn|29
+|callback|decision
+|
+|move|p1a: Gallade|Shadow Sneak|p2a: Zapdos
+|split
+|-damage|p2a: Zapdos|6\/48
+|-damage|p2a: Zapdos|48\/382
+|-damage|p2a: Zapdos|6\/48
+|-damage|p2a: Zapdos|48\/382
+|move|p2a: Zapdos|Thunderbolt|p1a: Gallade
+|split
+|-damage|p1a: Gallade|0 fnt
+|-damage|p1a: Gallade|0 fnt
+|-damage|p1a: Gallade|0 fnt
+|-damage|p1a: Gallade|0 fnt
+|faint|p1a: Gallade
+|
+|callback|decision
+|
+|split
+|switch|p1a: Scrafty|Scrafty, M|271\/271
+|switch|p1a: Scrafty|Scrafty, M|48\/48
+|switch|p1a: Scrafty|Scrafty, M|48\/48
+|switch|p1a: Scrafty|Scrafty, M|271\/271
+|split
+|-damage|p1a: Scrafty|255\/271|[from] Stealth Rock
+|-damage|p1a: Scrafty|45\/48|[from] Stealth Rock
+|-damage|p1a: Scrafty|45\/48|[from] Stealth Rock
+|-damage|p1a: Scrafty|255\/271|[from] Stealth Rock
+|split
+|-damage|p1a: Scrafty|222\/271|[from] Spikes
+|-damage|p1a: Scrafty|39\/48|[from] Spikes
+|-damage|p1a: Scrafty|39\/48|[from] Spikes
+|-damage|p1a: Scrafty|222\/271|[from] Spikes
+|turn|30
+|callback|decision
+|
+|move|p2a: Zapdos|Thunderbolt|p1a: Scrafty
+|split
+|-damage|p1a: Scrafty|105\/271
+|-damage|p1a: Scrafty|18\/48
+|-damage|p1a: Scrafty|18\/48
+|-damage|p1a: Scrafty|105\/271
+|move|p1a: Scrafty|Crunch|p2a: Zapdos
+|split
+|-damage|p2a: Zapdos|0 fnt
+|-damage|p2a: Zapdos|0 fnt
+|-damage|p2a: Zapdos|0 fnt
+|-damage|p2a: Zapdos|0 fnt
+|faint|p2a: Zapdos
+|-boost|p1a: Scrafty|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|split
+|switch|p2a: Cofagrigus|Cofagrigus, M, shiny|39\/48 tox
+|switch|p2a: Cofagrigus|Cofagrigus, M, shiny|260\/320 tox
+|switch|p2a: Cofagrigus|Cofagrigus, M, shiny|39\/48 tox
+|switch|p2a: Cofagrigus|Cofagrigus, M, shiny|260\/320 tox
+|split
+|-damage|p2a: Cofagrigus|33\/48 tox|[from] Stealth Rock
+|-damage|p2a: Cofagrigus|220\/320 tox|[from] Stealth Rock
+|-damage|p2a: Cofagrigus|33\/48 tox|[from] Stealth Rock
+|-damage|p2a: Cofagrigus|220\/320 tox|[from] Stealth Rock
+|turn|31
+|callback|decision
+|
+|move|p1a: Scrafty|Crunch|p2a: Cofagrigus
+|-supereffective|p2a: Cofagrigus
+|split
+|-damage|p2a: Cofagrigus|5\/48 tox
+|-damage|p2a: Cofagrigus|34\/320 tox
+|-damage|p2a: Cofagrigus|5\/48 tox
+|-damage|p2a: Cofagrigus|34\/320 tox
+|-ability|p1a: Scrafty|Mummy|[from] Mummy
+|move|p2a: Cofagrigus|Hidden Power|p1a: Scrafty
+|-enditem|p1a: Scrafty|Chople Berry|[eat]
+|-supereffective|p1a: Scrafty
+|split
+|-damage|p1a: Scrafty|59\/271
+|-damage|p1a: Scrafty|10\/48
+|-damage|p1a: Scrafty|10\/48
+|-damage|p1a: Scrafty|59\/271
+|
+|split
+|-damage|p2a: Cofagrigus|2\/48 tox|[from] psn
+|-damage|p2a: Cofagrigus|14\/320 tox|[from] psn
+|-damage|p2a: Cofagrigus|2\/48 tox|[from] psn
+|-damage|p2a: Cofagrigus|14\/320 tox|[from] psn
+|turn|32
+|callback|decision
+|
+|move|p1a: Scrafty|Crunch|p2a: Cofagrigus
+|-supereffective|p2a: Cofagrigus
+|split
+|-damage|p2a: Cofagrigus|0 fnt
+|-damage|p2a: Cofagrigus|0 fnt
+|-damage|p2a: Cofagrigus|0 fnt
+|-damage|p2a: Cofagrigus|0 fnt
+|faint|p2a: Cofagrigus
+|
+|win|eosuxalot
+|leave|reachzero
+|player|p2

@@ -1,0 +1,253 @@
+|join|smogmog
+|join|GHero
+|player|p1|smogmog|107
+|player|p2|GHero|128
+|gametype|doubles
+|gen|6
+|tier|Random Doubles Battle
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|HP Percentage Mod: HP is reported as percentages
+|
+|start
+|switch|p1a: Primeape|Primeape, L84, M|230\/230
+|switch|p1b: Quagsire|Quagsire, L86, F|340\/340
+|switch|p2a: Emboar|Emboar, L76, M|324\/324
+|switch|p2b: Dialga|Dialga, L70|242\/242
+|-ability|p2b: Dialga|Pressure
+|turn|1
+|chat|smogmog|have fun
+|chat|GHero|u2
+|
+|switch|p2a: Giratina-Origin|Giratina-Origin, L70|312\/312
+|switch|p1b: Lugia|Lugia, L70|250\/250
+|move|p1a: Primeape|Earthquake|p2a: Giratina-Origin
+|-immune|p1b: Lugia|[msg]
+|-immune|p2a: Giratina-Origin|[msg]
+|-supereffective|p2b: Dialga
+|-damage|p2b: Dialga|91\/242
+|move|p2b: Dialga|Stealth Rock|p1a: Primeape
+|-sidestart|p1: smogmog|move: Stealth Rock
+|
+|turn|2
+|
+|switch|p2b: Braviary|Braviary, L78, M|317\/317
+|move|p1a: Primeape|Earthquake|p2b: Braviary
+|-immune|p1b: Lugia|[msg]
+|-immune|p2a: Giratina-Origin|[msg]
+|-immune|p2b: Braviary|[msg]
+|move|p1b: Lugia|Substitute|p1b: Lugia
+|-start|p1b: Lugia|Substitute
+|-damage|p1b: Lugia|188\/250
+|move|p2a: Giratina-Origin|Will-O-Wisp|p1a: Primeape
+|-status|p1a: Primeape|brn
+|
+|-damage|p1a: Primeape|202\/230 brn|[from] brn
+|turn|3
+|
+|move|p1a: Primeape|Close Combat|p2b: Braviary
+|-damage|p2b: Braviary|205\/317
+|-unboost|p1a: Primeape|def|1
+|-unboost|p1a: Primeape|spd|1
+|move|p1b: Lugia|Psychic|p2b: Braviary
+|-damage|p2b: Braviary|106\/317
+|move|p2a: Giratina-Origin|Shadow Ball|p1b: Lugia
+|-supereffective|p1b: Lugia
+|-end|p1b: Lugia|Substitute
+|move|p2b: Braviary|Rock Slide|p1b: Lugia
+|-miss|p2b: Braviary|p1a: Primeape
+|-supereffective|p1b: Lugia
+|-damage|p1b: Lugia|37\/250
+|
+|-damage|p1a: Primeape|174\/230 brn|[from] brn
+|turn|4
+|
+|move|p1a: Primeape|Close Combat|p2b: Braviary
+|-damage|p2b: Braviary|0 fnt
+|-unboost|p1a: Primeape|def|1
+|-unboost|p1a: Primeape|spd|1
+|faint|p2b: Braviary
+|move|p1b: Lugia|Roost|p1b: Lugia
+|-heal|p1b: Lugia|162\/250
+|move|p2a: Giratina-Origin|Substitute|p2a: Giratina-Origin
+|-start|p2a: Giratina-Origin|Substitute
+|-damage|p2a: Giratina-Origin|234\/312
+|
+|-damage|p1a: Primeape|146\/230 brn|[from] brn
+|
+|switch|p2b: Dialga|Dialga, L70|91\/242
+|-ability|p2b: Dialga|Pressure
+|turn|5
+|
+|move|p1a: Primeape|Close Combat|p2b: Dialga
+|-supereffective|p2b: Dialga
+|-enditem|p2b: Dialga|Chople Berry|[eat]
+|-damage|p2b: Dialga|0 fnt
+|-unboost|p1a: Primeape|def|1
+|-unboost|p1a: Primeape|spd|1
+|faint|p2b: Dialga
+|move|p1b: Lugia|Substitute|p1b: Lugia
+|-start|p1b: Lugia|Substitute
+|-damage|p1b: Lugia|100\/250
+|move|p2a: Giratina-Origin|Dragon Tail|p1a: Primeape
+|-damage|p1a: Primeape|0 fnt
+|faint|p1a: Primeape
+|
+|
+|switch|p2b: Emboar|Emboar, L76, M|324\/324
+|switch|p1a: Alakazam|Alakazam, L70, F|179\/179
+|turn|6
+|
+|detailschange|p1a: Alakazam|Alakazam-Mega, L70, F
+|message|Alakazam has Mega Evolved into Mega Alakazam!
+|-ability|p1a: Alakazam|Reckless|[from] ability: Trace|[of] p2b: Emboar
+|move|p1a: Alakazam|Encore|p2a: Giratina-Origin
+|-start|p2a: Giratina-Origin|Encore
+|move|p1b: Lugia|Psychic|p2b: Emboar
+|-supereffective|p2b: Emboar
+|-damage|p2b: Emboar|102\/324
+|move|p2a: Giratina-Origin|Dragon Tail|p1b: Lugia
+|-activate|p1b: Lugia|Substitute|[damage]
+|move|p2b: Emboar|Wild Charge|p1b: Lugia
+|-supereffective|p1b: Lugia
+|-end|p1b: Lugia|Substitute
+|-damage|p2b: Emboar|101\/324|[from] recoil|[of] p1b: Lugia
+|
+|turn|7
+|
+|move|p1a: Alakazam|Psychic|p2b: Emboar
+|-crit|p2b: Emboar
+|-supereffective|p2b: Emboar
+|-damage|p2b: Emboar|0 fnt
+|faint|p2b: Emboar
+|move|p1b: Lugia|Roost|p1b: Lugia
+|-heal|p1b: Lugia|225\/250
+|move|p2a: Giratina-Origin|Dragon Tail|p1b: Lugia
+|-damage|p1b: Lugia|171\/250
+|drag|p1b: Swalot|Swalot, L82, F|333\/333
+|-damage|p1b: Swalot|292\/333|[from] Stealth Rock
+|
+|
+|switch|p2b: Magmortar|Magmortar, L75, F|221\/221
+|turn|8
+|
+|move|p1a: Alakazam|Protect|p1a: Alakazam
+|-singleturn|p1a: Alakazam|Protect
+|move|p2b: Magmortar|Protect|p2b: Magmortar
+|-singleturn|p2b: Magmortar|Protect
+|move|p1b: Swalot|Sludge Bomb|p2b: Magmortar
+|-activate|p2b: Magmortar|Protect
+|move|p2a: Giratina-Origin|Dragon Tail|p1a: Alakazam
+|-activate|p1a: Alakazam|Protect
+|
+|-end|p2a: Giratina-Origin|Encore
+|turn|9
+|
+|move|p1a: Alakazam|Encore|p2a: Giratina-Origin
+|-start|p2a: Giratina-Origin|Encore
+|move|p2b: Magmortar|Substitute|p2b: Magmortar
+|-start|p2b: Magmortar|Substitute
+|-damage|p2b: Magmortar|166\/221
+|move|p2a: Giratina-Origin|Dragon Tail|p1a: Alakazam
+|-crit|p1a: Alakazam
+|-damage|p1a: Alakazam|19\/179
+|drag|p1a: Metagross|Metagross, L70|257\/257
+|-damage|p1a: Metagross|241\/257|[from] Stealth Rock
+|move|p1b: Swalot|Yawn|p2b: Magmortar
+|-fail|p2b: Magmortar
+|
+|-heal|p2b: Magmortar|179\/221|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Lugia|Lugia, L70|171\/250
+|-damage|p1a: Lugia|109\/250|[from] Stealth Rock
+|move|p2b: Magmortar|Thunderbolt|p1b: Swalot
+|-damage|p1b: Swalot|201\/333
+|move|p1b: Swalot|Ice Beam|p2a: Giratina-Origin
+|-crit|p2a: Giratina-Origin
+|-supereffective|p2a: Giratina-Origin
+|-end|p2a: Giratina-Origin|Substitute
+|move|p2a: Giratina-Origin|Dragon Tail|p1b: Swalot
+|-damage|p1b: Swalot|128\/333
+|drag|p1b: Alakazam|Alakazam-Mega, L70, F|19\/179
+|-damage|p1b: Alakazam|0 fnt|[from] Stealth Rock
+|faint|p1b: Alakazam
+|-ability|p1: Alakazam|Levitate|[from] ability: Trace|[of] p2a: Giratina-Origin
+|
+|-heal|p2b: Magmortar|192\/221|[from] item: Leftovers
+|
+|switch|p1b: Quagsire|Quagsire, L86, F|340\/340
+|-damage|p1b: Quagsire|319\/340|[from] Stealth Rock
+|turn|11
+|
+|move|p1a: Lugia|Psychic|p2a: Giratina-Origin
+|-damage|p2a: Giratina-Origin|144\/312
+|move|p2b: Magmortar|Thunderbolt|p1a: Lugia
+|-supereffective|p1a: Lugia
+|-damage|p1a: Lugia|0 fnt
+|faint|p1a: Lugia
+|move|p1b: Quagsire|Ice Punch|p2a: Giratina-Origin
+|-supereffective|p2a: Giratina-Origin
+|-damage|p2a: Giratina-Origin|0 fnt
+|-damage|p1b: Quagsire|285\/340|[from] item: Life Orb
+|faint|p2a: Giratina-Origin
+|
+|-heal|p2b: Magmortar|205\/221|[from] item: Leftovers
+|
+|switch|p2a: Beautifly|Beautifly, L89, M|289\/289
+|switch|p1a: Swalot|Swalot, L82, F|128\/333
+|-damage|p1a: Swalot|87\/333|[from] Stealth Rock
+|turn|12
+|
+|move|p2b: Magmortar|Thunderbolt|p1a: Swalot
+|-damage|p1a: Swalot|3\/333
+|-status|p1a: Swalot|par
+|move|p2a: Beautifly|Quiver Dance|p2a: Beautifly
+|-boost|p2a: Beautifly|spa|1
+|-boost|p2a: Beautifly|spd|1
+|-boost|p2a: Beautifly|spe|1
+|move|p1a: Swalot|Pain Split|p2a: Beautifly
+|-sethp|p2a: Beautifly|146\/289|p1a: Swalot|146\/333 par|[from] move: Pain Split
+|move|p1b: Quagsire|Sludge Wave|p2b: Magmortar
+|-resisted|p1a: Swalot
+|-damage|p1a: Swalot|117\/333 par
+|-damage|p2a: Beautifly|67\/289
+|-activate|p2b: Magmortar|Substitute|[damage]
+|-damage|p1b: Quagsire|251\/340|[from] item: Life Orb
+|
+|-heal|p2b: Magmortar|218\/221|[from] item: Leftovers
+|turn|13
+|
+|switch|p1b: Metagross|Metagross, L70|241\/257
+|-damage|p1b: Metagross|225\/257|[from] Stealth Rock
+|move|p2a: Beautifly|Bug Buzz|p1b: Metagross
+|-crit|p1b: Metagross
+|-damage|p1b: Metagross|0 fnt
+|faint|p1b: Metagross
+|move|p2b: Magmortar|Focus Blast|p1a: Swalot
+|-resisted|p1a: Swalot
+|-damage|p1a: Swalot|64\/333 par
+|move|p1a: Swalot|Sludge Bomb|p2b: Magmortar
+|-end|p2b: Magmortar|Substitute
+|
+|-heal|p2b: Magmortar|221\/221|[from] item: Leftovers
+|chat|smogmog|gg
+|
+|switch|p1b: Quagsire|Quagsire, L86, F|251\/340
+|-damage|p1b: Quagsire|230\/340|[from] Stealth Rock
+|turn|14
+|
+|move|p2a: Beautifly|Bug Buzz|p1b: Quagsire
+|-damage|p1b: Quagsire|0 fnt
+|faint|p1b: Quagsire
+|move|p2b: Magmortar|Thunderbolt|p1a: Swalot
+|-damage|p1a: Swalot|0 fnt
+|faint|p1a: Swalot
+|
+|win|GHero
+|raw|Ladder updating...
+|raw|smogmog's rating: 1579 &rarr; <strong>1549<\/strong><br \/>(-30 for losing)
+|raw|GHero's rating: 1390 &rarr; <strong>1420<\/strong><br \/>(+30 for winning)
+|leave|smogmog
+|player|p1
+|chat|GHero|gg

@@ -1,0 +1,289 @@
+|join|Trintirotulene
+|join|beancount
+|player|p1|Trintirotulene|101
+|player|p2|beancount|266
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Tentacruel, F
+|poke|p1|Krookodile, M
+|poke|p1|Pidgeot, F
+|poke|p1|Gligar, F
+|poke|p1|Snorlax, M
+|poke|p1|Cobalion
+|poke|p2|Suicune
+|poke|p2|Florges, F
+|poke|p2|Sceptile, F
+|poke|p2|Empoleon, F
+|poke|p2|Crobat, M
+|poke|p2|Honchkrow, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Tentacruel|Tentacruel, F|363\/363
+|switch|p2a: Florges|Florges, F|360\/360
+|turn|1
+|
+|switch|p2a: Crobat|Crobat, M|374\/374
+|move|p1a: Tentacruel|Toxic Spikes|p2a: Crobat
+|-sidestart|p2: beancount|move: Toxic Spikes
+|
+|turn|2
+|
+|move|p2a: Crobat|Defog|p1a: Tentacruel
+|-unboost|p1a: Tentacruel|evasion|1
+|-sideend|p2: beancount|Toxic Spikes|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Tentacruel|Scald|p2a: Crobat
+|-damage|p2a: Crobat|284\/374
+|-status|p2a: Crobat|brn
+|
+|-heal|p2a: Crobat|307\/374 brn|[from] item: Black Sludge
+|-damage|p2a: Crobat|261\/374 brn|[from] brn
+|turn|3
+|
+|move|p2a: Crobat|U-turn|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|350\/363
+|
+|switch|p2a: Honchkrow|Honchkrow, M|341\/341
+|move|p1a: Tentacruel|Toxic Spikes|p2a: Honchkrow
+|-sidestart|p2: beancount|move: Toxic Spikes
+|
+|-heal|p1a: Tentacruel|363\/363|[from] item: Black Sludge
+|turn|4
+|
+|move|p2a: Honchkrow|Pursuit|p1a: Tentacruel|[from]Pursuit
+|-damage|p1a: Tentacruel|178\/363
+|-damage|p2a: Honchkrow|307\/341|[from] item: Life Orb
+|switch|p1a: Gligar|Gligar, F|334\/334
+|
+|turn|5
+|
+|switch|p2a: Crobat|Crobat, M|261\/374 brn
+|move|p1a: Gligar|Stealth Rock|p2a: Crobat
+|-sidestart|p2: beancount|move: Stealth Rock
+|
+|-heal|p2a: Crobat|284\/374 brn|[from] item: Black Sludge
+|-damage|p2a: Crobat|238\/374 brn|[from] brn
+|turn|6
+|
+|move|p2a: Crobat|Defog|p1a: Gligar
+|-unboost|p1a: Gligar|evasion|1
+|-sideend|p2: beancount|Toxic Spikes|[from] move: Defog|[of] p2a: Crobat
+|-sideend|p2: beancount|Stealth Rock|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Gligar|U-turn|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|227\/374 brn
+|
+|switch|p1a: Krookodile|Krookodile, M|331\/331
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Crobat
+|-unboost|p2a: Crobat|atk|1
+|
+|-heal|p2a: Crobat|250\/374 brn|[from] item: Black Sludge
+|-damage|p2a: Crobat|204\/374 brn|[from] brn
+|turn|7
+|
+|move|p1a: Krookodile|Pursuit|p2a: Crobat|[from]Pursuit
+|-damage|p2a: Crobat|36\/374 brn
+|switch|p2a: Suicune|Suicune|404\/404
+|-ability|p2a: Suicune|Pressure
+|
+|turn|8
+|
+|move|p1a: Krookodile|Taunt|p2a: Suicune
+|-start|p2a: Suicune|move: Taunt
+|move|p2a: Suicune|Scald|p1a: Krookodile
+|-supereffective|p1a: Krookodile
+|-damage|p1a: Krookodile|91\/331
+|-status|p1a: Krookodile|brn
+|
+|-damage|p1a: Krookodile|50\/331 brn|[from] brn
+|turn|9
+|
+|move|p1a: Krookodile|Knock Off|p2a: Suicune
+|-damage|p2a: Suicune|340\/404
+|-enditem|p2a: Suicune|Leftovers|[from] move: Knock Off|[of] p1a: Krookodile
+|move|p2a: Suicune|Scald|p1a: Krookodile
+|-supereffective|p1a: Krookodile
+|-damage|p1a: Krookodile|0 fnt
+|faint|p1a: Krookodile
+|
+|
+|switch|p1a: Tentacruel|Tentacruel, F|178\/363
+|turn|10
+|
+|switch|p2a: Honchkrow|Honchkrow, M|307\/341
+|move|p1a: Tentacruel|Toxic Spikes|p2a: Honchkrow
+|-sidestart|p2: beancount|move: Toxic Spikes
+|
+|-heal|p1a: Tentacruel|200\/363|[from] item: Black Sludge
+|turn|11
+|
+|move|p2a: Honchkrow|Pursuit|p1a: Tentacruel|[from]Pursuit
+|-damage|p1a: Tentacruel|8\/363
+|-damage|p2a: Honchkrow|273\/341|[from] item: Life Orb
+|switch|p1a: Gligar|Gligar, F|334\/334
+|
+|turn|12
+|
+|move|p2a: Honchkrow|Brave Bird|p1a: Gligar
+|-damage|p1a: Gligar|204\/334
+|-damage|p2a: Honchkrow|230\/341|[from] recoil|[of] p1a: Gligar
+|-damage|p2a: Honchkrow|196\/341|[from] item: Life Orb
+|move|p1a: Gligar|Stealth Rock|p2a: Honchkrow
+|-sidestart|p2: beancount|move: Stealth Rock
+|
+|turn|13
+|
+|switch|p2a: Crobat|Crobat, M|36\/374 brn
+|-damage|p2a: Crobat|0 fnt|[from] Stealth Rock
+|faint|p2a: Crobat
+|move|p1a: Gligar|Roost|p1a: Gligar
+|-heal|p1a: Gligar|334\/334
+|
+|
+|switch|p2a: Suicune|Suicune|340\/404
+|-status|p2a: Suicune|psn
+|-damage|p2a: Suicune|290\/404 psn|[from] Stealth Rock
+|-ability|p2a: Suicune|Pressure
+|turn|14
+|
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: Gligar|U-turn|p2a: Suicune
+|-damage|p2a: Suicune|262\/404 psn
+|
+|switch|p1a: Snorlax|Snorlax, M|462\/462
+|
+|-damage|p2a: Suicune|212\/404 psn|[from] psn
+|turn|15
+|
+|move|p2a: Suicune|Scald|p1a: Snorlax
+|-damage|p1a: Snorlax|393\/462
+|-status|p1a: Snorlax|brn
+|move|p1a: Snorlax|Return|p2a: Suicune
+|-damage|p2a: Suicune|154\/404 psn
+|
+|-damage|p2a: Suicune|104\/404 psn|[from] psn
+|-damage|p1a: Snorlax|336\/462 brn|[from] brn
+|turn|16
+|
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|move|p1a: Snorlax|Facade|p2a: Suicune
+|-crit|p2a: Suicune
+|-damage|p2a: Suicune|181\/404 slp
+|
+|-damage|p1a: Snorlax|279\/462 brn|[from] brn
+|turn|17
+|
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Scald|p1a: Snorlax|[from]Sleep Talk
+|-damage|p1a: Snorlax|221\/462 brn
+|move|p1a: Snorlax|Facade|p2a: Suicune
+|-damage|p2a: Suicune|7\/404 slp
+|
+|-damage|p1a: Snorlax|164\/462 brn|[from] brn
+|turn|18
+|
+|cant|p2a: Suicune|slp
+|move|p1a: Snorlax|Facade|p2a: Suicune
+|-damage|p2a: Suicune|0 fnt
+|faint|p2a: Suicune
+|
+|-damage|p1a: Snorlax|107\/462 brn|[from] brn
+|
+|switch|p2a: Empoleon|Empoleon, F|372\/372
+|-damage|p2a: Empoleon|349\/372|[from] Stealth Rock
+|turn|19
+|
+|move|p2a: Empoleon|Stealth Rock|p1a: Snorlax
+|-sidestart|p1: Trintirotulene|move: Stealth Rock
+|move|p1a: Snorlax|Facade|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|241\/372
+|
+|-heal|p2a: Empoleon|264\/372|[from] item: Leftovers
+|-damage|p1a: Snorlax|50\/462 brn|[from] brn
+|turn|20
+|
+|move|p2a: Empoleon|Scald|p1a: Snorlax
+|-damage|p1a: Snorlax|2\/462 brn
+|move|p1a: Snorlax|Facade|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|163\/372
+|
+|-heal|p2a: Empoleon|186\/372|[from] item: Leftovers
+|-damage|p1a: Snorlax|0 fnt|[from] brn
+|faint|p1a: Snorlax
+|
+|switch|p1a: Cobalion|Cobalion|323\/323
+|-damage|p1a: Cobalion|313\/323|[from] Stealth Rock
+|turn|21
+|
+|move|p1a: Cobalion|Close Combat|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|0 fnt
+|-unboost|p1a: Cobalion|def|1
+|-unboost|p1a: Cobalion|spd|1
+|faint|p2a: Empoleon
+|
+|
+|switch|p2a: Sceptile|Sceptile, F|281\/281
+|-status|p2a: Sceptile|psn
+|-damage|p2a: Sceptile|246\/281 psn|[from] Stealth Rock
+|turn|22
+|
+|switch|p1a: Tentacruel|Tentacruel, F|8\/363
+|-damage|p1a: Tentacruel|0 fnt|[from] Stealth Rock
+|faint|p1a: Tentacruel
+|detailschange|p2a: Sceptile|Sceptile-Mega, F
+|-mega|p2a: Sceptile|Sceptile|Sceptilite
+|move|p2a: Sceptile|Earthquake|p1: Tentacruel|[notarget]
+|-notarget
+|
+|-damage|p2a: Sceptile|211\/281 psn|[from] psn
+|
+|switch|p1a: Gligar|Gligar, F|334\/334
+|-damage|p1a: Gligar|293\/334|[from] Stealth Rock
+|turn|23
+|
+|move|p2a: Sceptile|Swords Dance|p2a: Sceptile
+|-boost|p2a: Sceptile|atk|2
+|move|p1a: Gligar|U-turn|p2a: Sceptile
+|-supereffective|p2a: Sceptile
+|-damage|p2a: Sceptile|107\/281 psn
+|
+|switch|p1a: Cobalion|Cobalion|313\/323
+|-damage|p1a: Cobalion|303\/323|[from] Stealth Rock
+|
+|-damage|p2a: Sceptile|72\/281 psn|[from] psn
+|turn|24
+|
+|move|p1a: Cobalion|Iron Head|p2a: Sceptile
+|-damage|p2a: Sceptile|0 fnt
+|faint|p2a: Sceptile
+|
+|-message|beancount forfeited.
+|leave|beancount
+|
+|win|Trintirotulene
+|raw|Ladder updating...
+|player|p2
+|raw|Trintirotulene's rating: 1611 &rarr; <strong>1616<\/strong><br \/>(+5 for winning)
+|raw|beancount's rating: 1298 &rarr; <strong>1291<\/strong><br \/>(-7 for losing)

@@ -1,0 +1,324 @@
+|join|dark08
+|join|XTheElegantShadowX
+|player|p1|dark08|153
+|player|p2|XTheElegantShadowX|153
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Lucario, M
+|poke|p1|Zoroark, M
+|poke|p1|Latios, M
+|poke|p1|Scizor, F
+|poke|p1|Espeon, F
+|poke|p1|Umbreon, F
+|poke|p2|Articuno
+|poke|p2|Entei
+|poke|p2|Jirachi
+|poke|p2|Manectric, M
+|poke|p2|Whimsicott, F
+|poke|p2|Mew
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Scizor|Scizor, F|344\/344
+|switch|p2a: Carbuncle|Whimsicott, F|261\/261
+|turn|1
+|callback|decision
+|chat|XTheElegantShadowX|Good luck and have fun. You have good taste in Avatars. ;)
+|
+|move|p2a: Carbuncle|Taunt|p1a: Scizor
+|-start|p1a: Scizor|move: Taunt
+|move|p1a: Scizor|Bullet Punch|p2a: Carbuncle
+|-supereffective|p2a: Carbuncle
+|-enditem|p2a: Carbuncle|Focus Sash
+|-damage|p2a: Carbuncle|1\/261
+|
+|turn|2
+|callback|decision
+|chat|dark08|thx u too
+|
+|switch|p2a: Ifrit|Entei|371\/371
+|-ability|p2a: Ifrit|Pressure
+|move|p1a: Scizor|Bullet Punch|p2a: Ifrit
+|-crit|p2a: Ifrit
+|-resisted|p2a: Ifrit
+|-damage|p2a: Ifrit|229\/371
+|
+|turn|3
+|callback|decision
+|
+|switch|p1a: Umbreon|Umbreon, F|394\/394
+|move|p2a: Ifrit|Sacred Fire|p1a: Umbreon
+|-damage|p1a: Umbreon|274\/394
+|-status|p1a: Umbreon|brn
+|
+|-heal|p1a: Umbreon|298\/394 brn|[from] item: Leftovers
+|-damage|p1a: Umbreon|249\/394 brn|[from] brn
+|turn|4
+|callback|decision
+|
+|switch|p2a: Shiva|Articuno|384\/384
+|-ability|p2a: Shiva|Pressure
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p1a: Umbreon|273\/394 brn|[from] item: Leftovers
+|-damage|p1a: Umbreon|224\/394 brn|[from] brn
+|turn|5
+|callback|decision
+|
+|switch|p2a: Carbuncle|Whimsicott, F|1\/261
+|move|p1a: Umbreon|Heal Bell|p1a: Umbreon
+|-cureteam|p1a: Umbreon|[from] move: HealBell
+|
+|-heal|p1a: Umbreon|394\/394|[from] move: Wish|[wisher] Umbreon
+|turn|6
+|callback|decision
+|
+|move|p2a: Carbuncle|Endeavor|p1a: Umbreon
+|-damage|p1a: Umbreon|1\/394
+|move|p1a: Umbreon|Foul Play|p2a: Carbuncle
+|-resisted|p2a: Carbuncle
+|-damage|p2a: Carbuncle|0 fnt
+|faint|p2a: Carbuncle
+|
+|-heal|p1a: Umbreon|25\/394|[from] item: Leftovers
+|callback|decision
+|chat|dark08|nice
+|chat|XTheElegantShadowX|:3
+|
+|switch|p2a: Ramah|Manectric, M|282\/282
+|turn|7
+|callback|decision
+|
+|move|p2a: Ramah|Volt Switch|p1a: Umbreon
+|-damage|p1a: Umbreon|0 fnt
+|faint|p1a: Umbreon
+|callback|decision
+|
+|switch|p2a: Ifrit|Entei|229\/371
+|-ability|p2a: Ifrit|Pressure
+|
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M|302\/302
+|turn|8
+|callback|decision
+|
+|switch|p2a: Alexander|Jirachi|404\/404
+|move|p1a: Latios|Surf|p2a: Alexander
+|-damage|p2a: Alexander|239\/404
+|
+|-heal|p2a: Alexander|264\/404|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p1a: Espeon|Espeon, F|334\/334
+|move|p2a: Alexander|Wish|p2a: Alexander
+|
+|-heal|p2a: Alexander|289\/404|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p1a: Espeon|Reflect|p1a: Espeon
+|-sidestart|p1: dark08|Reflect
+|move|p2a: Alexander|Doom Desire|p1a: Espeon
+|-start|p2a: Alexander|Doom Desire
+|
+|-heal|p2a: Alexander|404\/404|[from] move: Wish|[wisher] Alexander
+|turn|11
+|callback|decision
+|
+|move|p1a: Espeon|Light Screen|p1a: Espeon
+|-sidestart|p1: dark08|move: Light Screen
+|move|p2a: Alexander|Wish|p2a: Alexander
+|
+|turn|12
+|callback|decision
+|
+|switch|p1a: Lucario|Lucario, M|262\/262
+|switch|p2a: Kirin|Mew|404\/404
+|
+|-message|Doom Desire hit! (placeholder)
+|replace|p1a: Zoroark|Zoroark, M|262\/262
+|-damage|p1a: Zoroark|78\/262
+|turn|13
+|callback|decision
+|
+|move|p1a: Zoroark|Dark Pulse|p2a: Kirin
+|-supereffective|p2a: Kirin
+|-damage|p2a: Kirin|174\/404
+|move|p2a: Kirin|Defog|p1a: Zoroark
+|-unboost|p1a: Zoroark|evasion|1
+|-sideend|p1: dark08|Reflect
+|-sideend|p1: dark08|Reflect|[from] move: Defog|[of] p1a: Zoroark
+|-sideend|p1: dark08|move: Light Screen
+|-sideend|p1: dark08|Light Screen|[from] move: Defog|[of] p1a: Zoroark
+|
+|-heal|p2a: Kirin|199\/404|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p2a: Shiva|Articuno|384\/384
+|-ability|p2a: Shiva|Pressure
+|move|p1a: Zoroark|Dark Pulse|p2a: Shiva
+|-damage|p2a: Shiva|315\/384
+|
+|turn|15
+|callback|decision
+|
+|move|p1a: Zoroark|Flamethrower|p2a: Shiva
+|-supereffective|p2a: Shiva
+|-damage|p2a: Shiva|211\/384
+|move|p2a: Shiva|Air Cutter|p1a: Zoroark
+|-crit|p1a: Zoroark
+|-damage|p1a: Zoroark|0 fnt
+|faint|p1a: Zoroark
+|
+|callback|decision
+|
+|switch|p1a: Lucario|Lucario, M|282\/282
+|turn|16
+|callback|decision
+|
+|-formechange|p1a: Lucario|Lucario-Mega
+|message|Lucario has Mega Evolved into Mega Lucario!
+|move|p1a: Lucario|Close Combat|p2a: Shiva
+|-damage|p2a: Shiva|0 fnt
+|-unboost|p1a: Lucario|def|1
+|-unboost|p1a: Lucario|spd|1
+|faint|p2a: Shiva
+|
+|callback|decision
+|
+|switch|p2a: Ramah|Manectric, M|282\/282
+|turn|17
+|callback|decision
+|
+|-formechange|p2a: Ramah|Manectric-Mega
+|message|Manectric has Mega Evolved into Mega Manectric!
+|-ability|p2a: Ramah|Intimidate|[of] p1a: Lucario
+|-unboost|p1a: Lucario|atk|1
+|move|p1a: Lucario|Close Combat|p2a: Ramah
+|-damage|p2a: Ramah|16\/282
+|-unboost|p1a: Lucario|def|1
+|-unboost|p1a: Lucario|spd|1
+|move|p2a: Ramah|Flamethrower|p1a: Lucario
+|-supereffective|p1a: Lucario
+|-damage|p1a: Lucario|0 fnt
+|faint|p1a: Lucario
+|
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|344\/344
+|turn|18
+|callback|decision
+|
+|switch|p2a: Ifrit|Entei|229\/371
+|-ability|p2a: Ifrit|Pressure
+|move|p1a: Scizor|Bullet Punch|p2a: Ifrit
+|-resisted|p2a: Ifrit
+|-damage|p2a: Ifrit|136\/371
+|
+|turn|19
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M|302\/302
+|move|p2a: Ifrit|Sacred Fire|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|185\/302
+|-status|p1a: Latios|brn
+|
+|-damage|p1a: Latios|148\/302 brn|[from] brn
+|turn|20
+|callback|decision
+|
+|switch|p2a: Alexander|Jirachi|404\/404
+|move|p1a: Latios|Trick|p2a: Alexander
+|-activate|p1a: Latios|move: Trick|[of] p2a: Alexander
+|-item|p2a: Alexander|Choice Specs|[from] move: Trick
+|-item|p1a: Latios|Leftovers|[from] move: Trick
+|
+|-heal|p1a: Latios|166\/302 brn|[from] item: Leftovers
+|-damage|p1a: Latios|129\/302 brn|[from] brn
+|turn|21
+|callback|decision
+|
+|move|p1a: Latios|Surf|p2a: Alexander
+|-damage|p2a: Alexander|295\/404
+|move|p2a: Alexander|Doom Desire|p1a: Latios
+|-start|p2a: Alexander|Doom Desire
+|
+|-heal|p1a: Latios|147\/302 brn|[from] item: Leftovers
+|-damage|p1a: Latios|110\/302 brn|[from] brn
+|turn|22
+|callback|decision
+|
+|switch|p2a: Kirin|Mew|199\/404
+|move|p1a: Latios|Surf|p2a: Kirin
+|-damage|p2a: Kirin|97\/404
+|
+|-heal|p1a: Latios|128\/302 brn|[from] item: Leftovers
+|-heal|p2a: Kirin|122\/404|[from] item: Leftovers
+|-damage|p1a: Latios|91\/302 brn|[from] brn
+|turn|23
+|callback|decision
+|
+|move|p1a: Latios|Draco Meteor|p2a: Kirin
+|-damage|p2a: Kirin|0 fnt
+|-unboost|p1a: Latios|spa|2
+|faint|p2a: Kirin
+|
+|-message|Doom Desire hit! (placeholder)
+|-damage|p1a: Latios|0 fnt
+|faint|p1a: Latios
+|callback|decision
+|
+|switch|p2a: Ifrit|Entei|136\/371
+|switch|p1a: Scizor|Scizor, F|344\/344
+|-ability|p2a: Ifrit|Pressure
+|turn|24
+|callback|decision
+|
+|switch|p1a: Espeon|Espeon, F|334\/334
+|move|p2a: Ifrit|Sacred Fire|p1a: Espeon
+|-damage|p1a: Espeon|87\/334
+|-status|p1a: Espeon|brn
+|
+|-damage|p1a: Espeon|46\/334 brn|[from] brn
+|turn|25
+|callback|decision
+|
+|move|p2a: Ifrit|Sacred Fire|p1a: Espeon
+|-damage|p1a: Espeon|0 fnt
+|faint|p1a: Espeon
+|
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|344\/344
+|turn|26
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Ifrit
+|-resisted|p2a: Ifrit
+|-damage|p2a: Ifrit|29\/371
+|move|p2a: Ifrit|Sacred Fire|p1a: Scizor
+|-supereffective|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|faint|p1a: Scizor
+|
+|win|XTheElegantShadowX
+|raw|Ladder updating...
+|raw|dark08's rating: 1191 &rarr; <strong>1168<\/strong><br \/>(-23 for losing)
+|raw|XTheElegantShadowX's rating: 1219 &rarr; <strong>1242<\/strong><br \/>(+23 for winning)
+|chat|dark08|gg
+|chat|XTheElegantShadowX|Good game. :)

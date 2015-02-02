@@ -1,0 +1,154 @@
+|join|LeKiao
+|join|Damnosaur
+|player|p1|LeKiao|169
+|player|p2|Damnosaur|170
+|gametype|singles
+|tier|UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Electrode
+|poke|p1|Kabutops, F
+|poke|p1|Uxie
+|poke|p1|Ludicolo, F
+|poke|p1|Lanturn, F
+|poke|p1|Gorebyss, M
+|poke|p2|Weavile, M
+|poke|p2|Azelf
+|poke|p2|Rhyperior, F
+|poke|p2|Crobat, F
+|poke|p2|Roserade, F
+|poke|p2|Rotom-Heat
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Electrode|Electrode|261\/261
+|switch|p2a: Roserade|Roserade, F|324\/324
+|turn|1
+|callback|decision
+|
+|move|p1a: Electrode|Taunt|p2a: Roserade
+|-start|p2a: Roserade|move: Taunt
+|move|p2a: Roserade|Sludge Bomb|p1a: Electrode
+|-damage|p1a: Electrode|105\/261
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Electrode|Rain Dance|p1a: Electrode
+|-weather|RainDance
+|move|p2a: Roserade|Giga Drain|p1a: Electrode
+|-damage|p1a: Electrode|0 fnt
+|faint|p1a: Electrode
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Ludicolo|Ludicolo, F|301\/301
+|turn|3
+|callback|decision
+|
+|move|p1a: Ludicolo|Ice Beam|p2a: Roserade
+|-crit|p2a: Roserade
+|-supereffective|p2a: Roserade
+|-damage|p2a: Roserade|0 fnt
+|-damage|p1a: Ludicolo|271\/301|[from] item: Life Orb
+|faint|p2a: Roserade
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|chat|LeKiao|:\/
+|chat|LeKiao|shouldnt have used taunt lol
+|chat|Damnosaur|lol
+|chat|Damnosaur|now im screwed
+|chat|LeKiao|why?
+|chat|Damnosaur|my team was a badly built team
+|chat|LeKiao|oh
+|chat|LeKiao|:\/\/\/
+|chat|LeKiao|y always so qiao bu qi me
+|
+|switch|p2a: Azelf|Azelf|291\/291
+|turn|4
+|callback|decision
+|chat|LeKiao|use all the funny teams
+|
+|move|p1a: Ludicolo|Surf|p2a: Azelf
+|-damage|p2a: Azelf|0 fnt
+|-damage|p1a: Ludicolo|241\/301|[from] item: Life Orb
+|faint|p2a: Azelf
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|chat|Damnosaur|where got qiao bu qi you
+|chat|Damnosaur|all my teans are all funny funny de
+|chat|LeKiao|lol oh
+|chat|LeKiao|haha
+|chat|LeKiao|move?
+|
+|switch|p2a: Crobat|Crobat, F|355\/355
+|turn|5
+|callback|decision
+|
+|move|p1a: Ludicolo|Surf|p2a: Crobat
+|-damage|p2a: Crobat|0 fnt
+|-damage|p1a: Ludicolo|211\/301|[from] item: Life Orb
+|faint|p2a: Crobat
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|chat|Damnosaur|gg
+|chat|Damnosaur|lol
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|241\/241
+|turn|6
+|callback|decision
+|
+|move|p1a: Ludicolo|Surf|p2a: Rotom-Heat
+|-supereffective|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|0 fnt
+|-damage|p1a: Ludicolo|181\/301|[from] item: Life Orb
+|faint|p2a: Rotom-Heat
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|chat|LeKiao|wtf
+|chat|Damnosaur|told you
+|chat|LeKiao|im just frigging surfing ur whole team
+|
+|switch|p2a: Weavile|Weavile, M|282\/282
+|-ability|p2a: Weavile|Pressure
+|turn|7
+|callback|decision
+|
+|move|p1a: Ludicolo|Surf|p2a: Weavile
+|-damage|p2a: Weavile|0 fnt
+|-damage|p1a: Ludicolo|151\/301|[from] item: Life Orb
+|faint|p2a: Weavile
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Rhyperior|Rhyperior, F|434\/434
+|turn|8
+|callback|decision
+|chat|LeKiao|its not even hydro pump
+|
+|move|p1a: Ludicolo|Surf|p2a: Rhyperior
+|-supereffective|p2a: Rhyperior
+|-damage|p2a: Rhyperior|0 fnt
+|-damage|p1a: Ludicolo|121\/301|[from] item: Life Orb
+|faint|p2a: Rhyperior
+|
+|win|LeKiao
+|chat|Damnosaur|you just 5-0 me
+|chat|LeKiao|lol
+|chat|LeKiao|use another team?
+|chat|Damnosaur|ok lol
+|leave|Damnosaur
+|player|p2

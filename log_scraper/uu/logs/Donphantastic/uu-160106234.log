@@ -1,0 +1,428 @@
+|join|Donphantastic
+|join|nhnd
+|player|p1|Donphantastic|101
+|player|p2|nhnd|101
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Togekiss, F
+|poke|p1|Raikou
+|poke|p1|Quagsire, M
+|poke|p1|Nidoqueen, F
+|poke|p1|Hydreigon, F
+|poke|p1|Infernape, M
+|poke|p2|Diancie
+|poke|p2|Blissey, F
+|poke|p2|Entei, shiny
+|poke|p2|Sableye, F
+|poke|p2|Hydreigon, F
+|poke|p2|Blastoise, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Infernape|Infernape, M|293\/293
+|switch|p2a: Blastoise|Blastoise, M|362\/362
+|turn|1
+|
+|switch|p1a: Quagsire|Quagsire, M|394\/394
+|detailschange|p2a: Blastoise|Blastoise-Mega, M
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Blastoise|Scald|p1a: Quagsire
+|-immune|p1a: Quagsire|[msg]
+|
+|turn|2
+|
+|switch|p2a: Sableye|Sableye, F|304\/304
+|move|p1a: Quagsire|Encore|p2a: Sableye
+|-fail|p2a: Sableye
+|
+|turn|3
+|
+|switch|p1a: Infernape|Infernape, M|293\/293
+|move|p2a: Sableye|Taunt|p1a: Infernape
+|-start|p1a: Infernape|move: Taunt
+|
+|turn|4
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|362\/362
+|move|p1a: Infernape|Fire Blast|p2a: Blastoise
+|-resisted|p2a: Blastoise
+|-damage|p2a: Blastoise|279\/362
+|-damage|p1a: Infernape|264\/293|[from] item: Life Orb
+|
+|turn|5
+|
+|switch|p1a: Togekiss|Togekiss, F|373\/373
+|move|p2a: Blastoise|Aura Sphere|p1a: Togekiss
+|-resisted|p1a: Togekiss
+|-damage|p1a: Togekiss|348\/373
+|
+|-heal|p1a: Togekiss|371\/373|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: Diancie|Diancie|304\/304
+|move|p1a: Togekiss|Thunder Wave|p2a: Diancie
+|-status|p2a: Diancie|par
+|
+|-heal|p1a: Togekiss|373\/373|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Quagsire|Quagsire, M|394\/394
+|move|p2a: Diancie|Stealth Rock|p1a: Quagsire
+|-sidestart|p1: Donphantastic|move: Stealth Rock
+|
+|turn|8
+|
+|switch|p2a: Sableye|Sableye, F|304\/304
+|move|p1a: Quagsire|Scald|p2a: Sableye
+|-damage|p2a: Sableye|208\/304
+|
+|-heal|p2a: Sableye|227\/304|[from] item: Leftovers
+|turn|9
+|
+|move|p2a: Sableye|Knock Off|p1a: Quagsire
+|-damage|p1a: Quagsire|324\/394
+|-enditem|p1a: Quagsire|Leftovers|[from] move: Knock Off|[of] p2a: Sableye
+|move|p1a: Quagsire|Encore|p2a: Sableye
+|-start|p2a: Sableye|Encore
+|
+|-heal|p2a: Sableye|246\/304|[from] item: Leftovers
+|turn|10
+|c|ânhnd|!data quagsire
+|c|~|\/data-pokemon Quagsire
+
+|
+|switch|p2a: Hydreigon|Hydreigon, F|325\/325
+|switch|p1a: Infernape|Infernape, M|264\/293
+|-damage|p1a: Infernape|228\/293|[from] Stealth Rock
+|
+|turn|11
+|
+|switch|p2a: Sableye|Sableye, F|246\/304
+|move|p1a: Infernape|Close Combat|p2a: Sableye
+|-immune|p2a: Sableye|[msg]
+|
+|-heal|p2a: Sableye|265\/304|[from] item: Leftovers
+|turn|12
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|279\/362
+|move|p1a: Infernape|Fire Blast|p2a: Blastoise|[miss]
+|-miss|p1a: Infernape|p2a: Blastoise
+|
+|turn|13
+|
+|switch|p1a: Quagsire|Quagsire, M|324\/394
+|-damage|p1a: Quagsire|300\/394|[from] Stealth Rock
+|move|p2a: Blastoise|Scald|p1a: Quagsire
+|-heal|p1a: Quagsire|394\/394|[from] ability: Water Absorb|[of] p2a: Blastoise
+|
+|turn|14
+|
+|switch|p2a: Hydreigon|Hydreigon, F|325\/325
+|move|p1a: Quagsire|Scald|p2a: Hydreigon
+|-resisted|p2a: Hydreigon
+|-damage|p2a: Hydreigon|288\/325
+|-status|p2a: Hydreigon|brn
+|
+|-damage|p2a: Hydreigon|248\/325 brn|[from] brn
+|turn|15
+|
+|move|p2a: Hydreigon|Dark Pulse|p1a: Quagsire
+|-damage|p1a: Quagsire|69\/394
+|cant|p1a: Quagsire|flinch
+|
+|-damage|p2a: Hydreigon|208\/325 brn|[from] brn
+|turn|16
+|
+|switch|p1a: Togekiss|Togekiss, F|373\/373
+|-damage|p1a: Togekiss|280\/373|[from] Stealth Rock
+|move|p2a: Hydreigon|Dark Pulse|p1a: Togekiss
+|-crit|p1a: Togekiss
+|-resisted|p1a: Togekiss
+|-damage|p1a: Togekiss|175\/373
+|
+|-heal|p1a: Togekiss|198\/373|[from] item: Leftovers
+|-damage|p2a: Hydreigon|168\/325 brn|[from] brn
+|turn|17
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|move|p1a: Togekiss|Defog|p2a: Blissey
+|-unboost|p2a: Blissey|evasion|1
+|-sideend|p1: Donphantastic|Stealth Rock|[from] move: Defog|[of] p1a: Togekiss
+|
+|-heal|p1a: Togekiss|221\/373|[from] item: Leftovers
+|turn|18
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|350\/350
+|move|p2a: Blissey|Heal Bell|p2a: Blissey
+|-cureteam|p2a: Blissey|[from] move: HealBell
+|
+|turn|19
+|
+|switch|p2a: Hydreigon|Hydreigon, F|168\/325
+|move|p1a: Nidoqueen|Stealth Rock|p2a: Hydreigon
+|-sidestart|p2: nhnd|move: Stealth Rock
+|
+|turn|20
+|
+|switch|p1a: Togekiss|Togekiss, F|221\/373
+|move|p2a: Hydreigon|Dark Pulse|p1a: Togekiss
+|-resisted|p1a: Togekiss
+|-damage|p1a: Togekiss|153\/373
+|
+|-heal|p1a: Togekiss|176\/373|[from] item: Leftovers
+|turn|21
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|-damage|p2a: Blissey|625\/714|[from] Stealth Rock
+|move|p1a: Togekiss|Roost|p1a: Togekiss
+|-heal|p1a: Togekiss|363\/373
+|
+|-heal|p1a: Togekiss|373\/373|[from] item: Leftovers
+|-heal|p2a: Blissey|669\/714|[from] item: Leftovers
+|turn|22
+|
+|switch|p1a: Quagsire|Quagsire, M|69\/394
+|move|p2a: Blissey|Stealth Rock|p1a: Quagsire
+|-sidestart|p1: Donphantastic|move: Stealth Rock
+|
+|-heal|p2a: Blissey|713\/714|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Blissey|Toxic|p1a: Quagsire
+|-status|p1a: Quagsire|tox
+|move|p1a: Quagsire|Recover|p1a: Quagsire
+|-heal|p1a: Quagsire|266\/394 tox
+|
+|-heal|p2a: Blissey|714\/714|[from] item: Leftovers
+|-damage|p1a: Quagsire|242\/394 tox|[from] psn
+|turn|24
+|
+|move|p2a: Blissey|Wish|p2a: Blissey
+|move|p1a: Quagsire|Encore|p2a: Blissey
+|-start|p2a: Blissey|Encore
+|
+|-damage|p1a: Quagsire|194\/394 tox|[from] psn
+|turn|25
+|
+|switch|p2a: Hydreigon|Hydreigon, F|168\/325
+|-damage|p2a: Hydreigon|128\/325|[from] Stealth Rock
+|move|p1a: Quagsire|Earthquake|p2a: Hydreigon
+|-immune|p2a: Hydreigon|[msg]
+|
+|-heal|p2a: Hydreigon|325\/325|[from] move: Wish|[wisher] Blissey
+|-damage|p1a: Quagsire|122\/394 tox|[from] psn
+|turn|26
+|
+|switch|p1a: Togekiss|Togekiss, F|373\/373
+|-damage|p1a: Togekiss|280\/373|[from] Stealth Rock
+|move|p2a: Hydreigon|Dark Pulse|p1a: Togekiss
+|-resisted|p1a: Togekiss
+|-damage|p1a: Togekiss|202\/373
+|
+|-heal|p1a: Togekiss|225\/373|[from] item: Leftovers
+|turn|27
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|-damage|p2a: Blissey|625\/714|[from] Stealth Rock
+|move|p1a: Togekiss|Roost|p1a: Togekiss
+|-heal|p1a: Togekiss|373\/373
+|
+|-heal|p2a: Blissey|669\/714|[from] item: Leftovers
+|turn|28
+|
+|switch|p1a: Quagsire|Quagsire, M|122\/394 tox
+|-damage|p1a: Quagsire|98\/394 tox|[from] Stealth Rock
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p2a: Blissey|713\/714|[from] item: Leftovers
+|-damage|p1a: Quagsire|74\/394 tox|[from] psn
+|turn|29
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|279\/362
+|-damage|p2a: Blastoise|234\/362|[from] Stealth Rock
+|switch|p1a: Infernape|Infernape, M|228\/293
+|-damage|p1a: Infernape|192\/293|[from] Stealth Rock
+|
+|-heal|p2a: Blastoise|362\/362|[from] move: Wish|[wisher] Blissey
+|turn|30
+|
+|switch|p1a: Togekiss|Togekiss, F|373\/373
+|-damage|p1a: Togekiss|280\/373|[from] Stealth Rock
+|move|p2a: Blastoise|Aura Sphere|p1a: Togekiss
+|-resisted|p1a: Togekiss
+|-damage|p1a: Togekiss|252\/373
+|
+|-heal|p1a: Togekiss|275\/373|[from] item: Leftovers
+|turn|31
+|
+|move|p1a: Togekiss|Thunder Wave|p2a: Blastoise
+|-status|p2a: Blastoise|par
+|move|p2a: Blastoise|Rapid Spin|p1a: Togekiss
+|-damage|p1a: Togekiss|260\/373
+|-sideend|p2: nhnd|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Blastoise
+|
+|-heal|p1a: Togekiss|283\/373|[from] item: Leftovers
+|turn|32
+|
+|switch|p2a: Blissey|Blissey, F|713\/714
+|move|p1a: Togekiss|Defog|p2a: Blissey
+|-unboost|p2a: Blissey|evasion|1
+|-sideend|p1: Donphantastic|Stealth Rock|[from] move: Defog|[of] p1a: Togekiss
+|
+|-heal|p1a: Togekiss|306\/373|[from] item: Leftovers
+|-heal|p2a: Blissey|714\/714|[from] item: Leftovers
+|turn|33
+|
+|switch|p1a: Infernape|Infernape, M|192\/293
+|move|p2a: Blissey|Stealth Rock|p1a: Infernape
+|-sidestart|p1: Donphantastic|move: Stealth Rock
+|
+|turn|34
+|
+|switch|p2a: Diancie|Diancie|304\/304
+|move|p1a: Infernape|Fire Blast|p2a: Diancie
+|-resisted|p2a: Diancie
+|-damage|p2a: Diancie|238\/304
+|-damage|p1a: Infernape|163\/293|[from] item: Life Orb
+|
+|-heal|p2a: Diancie|257\/304|[from] item: Leftovers
+|turn|35
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|350\/350
+|-damage|p1a: Nidoqueen|329\/350|[from] Stealth Rock
+|move|p2a: Diancie|Diamond Storm|p1a: Nidoqueen
+|-resisted|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|266\/350
+|
+|-heal|p2a: Diancie|276\/304|[from] item: Leftovers
+|turn|36
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|362\/362 par
+|move|p1a: Nidoqueen|Stealth Rock|p2a: Blastoise
+|-sidestart|p2: nhnd|move: Stealth Rock
+|
+|turn|37
+|
+|move|p1a: Nidoqueen|Thunderbolt|p2a: Blastoise
+|-supereffective|p2a: Blastoise
+|-damage|p2a: Blastoise|136\/362 par
+|move|p2a: Blastoise|Rapid Spin|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|249\/350
+|-sideend|p2: nhnd|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Blastoise
+|
+|turn|38
+|
+|switch|p2a: Hydreigon|Hydreigon, F|325\/325
+|move|p1a: Nidoqueen|Stealth Rock|p2a: Hydreigon
+|-sidestart|p2: nhnd|move: Stealth Rock
+|
+|turn|39
+|
+|switch|p1a: Quagsire|Quagsire, M|74\/394 tox
+|-damage|p1a: Quagsire|50\/394 tox|[from] Stealth Rock
+|move|p2a: Hydreigon|Dark Pulse|p1a: Quagsire
+|-damage|p1a: Quagsire|0 fnt
+|faint|p1a: Quagsire
+|
+|
+|switch|p1a: Infernape|Infernape, M|163\/293
+|-damage|p1a: Infernape|127\/293|[from] Stealth Rock
+|turn|40
+|
+|switch|p2a: Diancie|Diancie|276\/304
+|-damage|p2a: Diancie|238\/304|[from] Stealth Rock
+|move|p1a: Infernape|Close Combat|p2a: Diancie
+|-damage|p2a: Diancie|137\/304
+|-unboost|p1a: Infernape|def|1
+|-unboost|p1a: Infernape|spd|1
+|-damage|p1a: Infernape|98\/293|[from] item: Life Orb
+|
+|-heal|p2a: Diancie|156\/304|[from] item: Leftovers
+|turn|41
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|249\/350
+|-damage|p1a: Nidoqueen|228\/350|[from] Stealth Rock
+|move|p2a: Diancie|Moonblast|p1a: Nidoqueen
+|-resisted|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|166\/350
+|-unboost|p1a: Nidoqueen|spa|1
+|
+|-heal|p2a: Diancie|175\/304|[from] item: Leftovers
+|turn|42
+|
+|switch|p1a: Hydreigon|Hydreigon, F|325\/325
+|-damage|p1a: Hydreigon|285\/325|[from] Stealth Rock
+|switch|p2a: Blissey|Blissey, F|714\/714
+|-damage|p2a: Blissey|625\/714|[from] Stealth Rock
+|
+|-heal|p2a: Blissey|669\/714|[from] item: Leftovers
+|turn|43
+|
+|switch|p2a: Sableye|Sableye, F|265\/304
+|-damage|p2a: Sableye|227\/304|[from] Stealth Rock
+|move|p1a: Hydreigon|Draco Meteor|p2a: Sableye
+|-damage|p2a: Sableye|0 fnt
+|-unboost|p1a: Hydreigon|spa|2
+|-damage|p1a: Hydreigon|253\/325|[from] item: Life Orb
+|faint|p2a: Sableye
+|
+|c|ânhnd|whyyyyyyyyyy?
+|
+|switch|p2a: Hydreigon|Hydreigon, F|325\/325
+|-damage|p2a: Hydreigon|285\/325|[from] Stealth Rock
+|turn|44
+|
+|switch|p1a: Togekiss|Togekiss, F|306\/373
+|-damage|p1a: Togekiss|213\/373|[from] Stealth Rock
+|move|p2a: Hydreigon|Dark Pulse|p1a: Togekiss
+|-resisted|p1a: Togekiss
+|-damage|p1a: Togekiss|141\/373
+|
+|-heal|p1a: Togekiss|164\/373|[from] item: Leftovers
+|turn|45
+|
+|switch|p2a: Entei|Entei, shiny|372\/372
+|-damage|p2a: Entei|279\/372|[from] Stealth Rock
+|-ability|p2a: Entei|Pressure
+|move|p1a: Togekiss|Thunder Wave|p2a: Entei
+|-status|p2a: Entei|par
+|
+|-heal|p1a: Togekiss|187\/373|[from] item: Leftovers
+|turn|46
+|
+|move|p2a: Entei|Extreme Speed|p1a: Togekiss
+|-damage|p1a: Togekiss|40\/373
+|move|p1a: Togekiss|Defog|p2a: Entei
+|-unboost|p2a: Entei|evasion|1
+|-sideend|p2: nhnd|Stealth Rock|[from] move: Defog|[of] p2a: Entei
+|-sideend|p1: Donphantastic|Stealth Rock|[from] move: Defog|[of] p1a: Togekiss
+|
+|-heal|p1a: Togekiss|63\/373|[from] item: Leftovers
+|turn|47
+|
+|cant|p2a: Entei|par
+|move|p1a: Togekiss|Roost|p1a: Togekiss
+|-heal|p1a: Togekiss|250\/373
+|
+|-heal|p1a: Togekiss|273\/373|[from] item: Leftovers
+|turn|48
+|-message|nhnd forfeited.
+|
+|win|Donphantastic
+|raw|Ladder updating...
+|leave|nhnd
+|player|p2
+|raw|Donphantastic's rating: 1573 &rarr; <strong>1587<\/strong><br \/>(+14 for winning)
+|raw|nhnd's rating: 1467 &rarr; <strong>1453<\/strong><br \/>(-14 for losing)

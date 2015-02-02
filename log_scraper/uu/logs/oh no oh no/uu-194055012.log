@@ -1,0 +1,437 @@
+|join|In Your Window
+|join|oh no oh no
+|player|p1|In Your Window|2
+|player|p2|oh no oh no|265
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Raikou
+|poke|p1|Beedrill, M
+|poke|p1|Hydreigon, F
+|poke|p1|Starmie
+|poke|p1|Blissey, F
+|poke|p1|Chesnaught, F
+|poke|p2|Weezing, M
+|poke|p2|Donphan, M
+|poke|p2|Froslass, F
+|poke|p2|Vaporeon, F
+|poke|p2|Blissey, F
+|poke|p2|Sharpedo, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Beedrill|Beedrill, M|271\/271
+|switch|p2a: Froslass|Froslass, F|344\/344
+|turn|1
+|
+|detailschange|p1a: Beedrill|Beedrill-Mega, M
+|message|Beedrill has Mega Evolved into Mega Beedrill!
+|move|p2a: Froslass|Spikes|p1a: Beedrill
+|-sidestart|p1: In Your Window|Spikes
+|move|p1a: Beedrill|Knock Off|p2a: Froslass
+|-supereffective|p2a: Froslass
+|-damage|p2a: Froslass|10\/344
+|-enditem|p2a: Froslass|Focus Sash|[from] move: Knock Off|[of] p1a: Beedrill
+|
+|turn|2
+|
+|move|p1a: Beedrill|U-turn|p2a: Froslass
+|-resisted|p2a: Froslass
+|-damage|p2a: Froslass|0 fnt
+|faint|p2a: Froslass
+|
+|switch|p1a: Chesnaught|Chesnaught, F|379\/379
+|-damage|p1a: Chesnaught|332\/379|[from] Spikes
+|
+|-heal|p1a: Chesnaught|355\/379|[from] item: Leftovers
+|
+|switch|p2a: Weezing|Weezing, M|333\/333
+|turn|3
+|
+|switch|p1a: Starmie|Starmie|323\/323
+|-damage|p1a: Starmie|283\/323|[from] Spikes
+|move|p2a: Weezing|Will-O-Wisp|p1a: Starmie
+|-status|p1a: Starmie|brn
+|
+|-heal|p1a: Starmie|303\/323 brn|[from] item: Leftovers
+|-damage|p1a: Starmie|263\/323 brn|[from] brn
+|turn|4
+|
+|switch|p2a: Blissey|Blissey, F|657\/657
+|move|p1a: Starmie|Rapid Spin|p2a: Blissey
+|-damage|p2a: Blissey|648\/657
+|-sideend|p1: In Your Window|Spikes|[from] move: Rapid Spin|[of] p1a: Starmie
+|
+|-heal|p1a: Starmie|283\/323 brn|[from] item: Leftovers
+|-heal|p2a: Blissey|657\/657|[from] item: Leftovers
+|-damage|p1a: Starmie|243\/323 brn|[from] brn
+|turn|5
+|
+|switch|p1a: Blissey|Blissey, F|713\/713
+|move|p2a: Blissey|Toxic|p1a: Blissey|[miss]
+|-miss|p2a: Blissey|p1a: Blissey
+|
+|turn|6
+|
+|switch|p2a: Donphan|Donphan, M|381\/381
+|move|p1a: Blissey|Stealth Rock|p2a: Donphan
+|-sidestart|p2: oh no oh no|move: Stealth Rock
+|
+|turn|7
+|
+|move|p1a: Blissey|Seismic Toss|p2a: Donphan
+|-damage|p2a: Donphan|281\/381
+|move|p2a: Donphan|Stealth Rock|p1a: Blissey
+|-sidestart|p1: In Your Window|move: Stealth Rock
+|
+|-heal|p2a: Donphan|304\/381|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Chesnaught|Chesnaught, F|355\/379
+|-damage|p1a: Chesnaught|332\/379|[from] Stealth Rock
+|move|p2a: Donphan|Rapid Spin|p1a: Chesnaught
+|-damage|p1a: Chesnaught|319\/379
+|-sideend|p2: oh no oh no|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Donphan
+|
+|-heal|p1a: Chesnaught|342\/379|[from] item: Leftovers
+|-heal|p2a: Donphan|327\/381|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Weezing|Weezing, M|333\/333
+|move|p1a: Chesnaught|Leech Seed|p2a: Weezing
+|-start|p2a: Weezing|move: Leech Seed
+|
+|-heal|p1a: Chesnaught|365\/379|[from] item: Leftovers
+|-damage|p2a: Weezing|292\/333|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|379\/379|[silent]
+|turn|10
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-singleturn|p1a: Chesnaught|move: Protect
+|move|p2a: Weezing|Toxic Spikes|p1a: Chesnaught
+|-sidestart|p1: In Your Window|move: Toxic Spikes
+|
+|-heal|p2a: Weezing|312\/333|[from] item: Leftovers
+|-damage|p2a: Weezing|271\/333|[from] Leech Seed|[of] p1a: Chesnaught
+|turn|11
+|
+|move|p1a: Chesnaught|Spikes|p2a: Weezing
+|-sidestart|p2: oh no oh no|Spikes
+|move|p2a: Weezing|Fire Blast|p1a: Chesnaught|[miss]
+|-miss|p2a: Weezing|p1a: Chesnaught
+|
+|-heal|p2a: Weezing|291\/333|[from] item: Leftovers
+|-damage|p2a: Weezing|250\/333|[from] Leech Seed|[of] p1a: Chesnaught
+|turn|12
+|
+|switch|p1a: Starmie|Starmie|243\/323
+|-damage|p1a: Starmie|203\/323|[from] Stealth Rock
+|-status|p1a: Starmie|psn
+|move|p2a: Weezing|Fire Blast|p1a: Starmie
+|-resisted|p1a: Starmie
+|-damage|p1a: Starmie|156\/323 psn
+|
+|-heal|p1a: Starmie|176\/323 psn|[from] item: Leftovers
+|-heal|p2a: Weezing|270\/333|[from] item: Leftovers
+|-damage|p2a: Weezing|229\/333|[from] Leech Seed|[of] p1a: Starmie
+|-heal|p1a: Starmie|217\/323 psn|[silent]
+|-damage|p1a: Starmie|177\/323 psn|[from] psn
+|turn|13
+|
+|switch|p2a: Blissey|Blissey, F|657\/657
+|-damage|p2a: Blissey|575\/657|[from] Spikes
+|move|p1a: Starmie|Rapid Spin|p2a: Blissey
+|-damage|p2a: Blissey|557\/657
+|-sideend|p1: In Your Window|Toxic Spikes|[from] move: Rapid Spin|[of] p1a: Starmie
+|-sideend|p1: In Your Window|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Starmie
+|
+|-heal|p1a: Starmie|197\/323 psn|[from] item: Leftovers
+|-heal|p2a: Blissey|598\/657|[from] item: Leftovers
+|-damage|p1a: Starmie|157\/323 psn|[from] psn
+|turn|14
+|
+|move|p1a: Starmie|Recover|p1a: Starmie
+|-heal|p1a: Starmie|319\/323 psn
+|move|p2a: Blissey|Toxic|p1a: Starmie
+|-fail|p1a: Starmie
+|
+|-heal|p1a: Starmie|323\/323 psn|[from] item: Leftovers
+|-heal|p2a: Blissey|639\/657|[from] item: Leftovers
+|-damage|p1a: Starmie|283\/323 psn|[from] psn
+|turn|15
+|
+|switch|p1a: Hydreigon|Hydreigon, F|325\/325
+|move|p2a: Blissey|Seismic Toss|p1a: Hydreigon
+|-damage|p1a: Hydreigon|225\/325
+|
+|-heal|p2a: Blissey|657\/657|[from] item: Leftovers
+|turn|16
+|
+|move|p1a: Hydreigon|Taunt|p2a: Blissey
+|-start|p2a: Blissey|move: Taunt
+|cant|p2a: Blissey|move: Taunt|Toxic
+|
+|turn|17
+|
+|switch|p1a: Chesnaught|Chesnaught, F|379\/379
+|move|p2a: Blissey|Seismic Toss|p1a: Chesnaught
+|-damage|p1a: Chesnaught|279\/379
+|
+|-heal|p1a: Chesnaught|302\/379|[from] item: Leftovers
+|turn|18
+|
+|switch|p2a: Donphan|Donphan, M|327\/381
+|-damage|p2a: Donphan|280\/381|[from] Spikes
+|move|p1a: Chesnaught|Leech Seed|p2a: Donphan
+|-start|p2a: Donphan|move: Leech Seed
+|
+|-heal|p1a: Chesnaught|325\/379|[from] item: Leftovers
+|-heal|p2a: Donphan|303\/381|[from] item: Leftovers
+|-damage|p2a: Donphan|256\/381|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|372\/379|[silent]
+|turn|19
+|
+|move|p1a: Chesnaught|Spikes|p2a: Donphan
+|-sidestart|p2: oh no oh no|Spikes
+|move|p2a: Donphan|Rapid Spin|p1a: Chesnaught
+|-damage|p1a: Chesnaught|358\/379
+|-end|p2a: Donphan|Leech Seed|[from] move: Rapid Spin|[of] p2a: Donphan
+|-sideend|p2: oh no oh no|Spikes|[from] move: Rapid Spin|[of] p2a: Donphan
+|
+|-heal|p1a: Chesnaught|379\/379|[from] item: Leftovers
+|-heal|p2a: Donphan|279\/381|[from] item: Leftovers
+|turn|20
+|
+|move|p1a: Chesnaught|Leech Seed|p2a: Donphan
+|-start|p2a: Donphan|move: Leech Seed
+|move|p2a: Donphan|Stealth Rock|p1a: Chesnaught
+|-sidestart|p1: In Your Window|move: Stealth Rock
+|
+|-heal|p2a: Donphan|302\/381|[from] item: Leftovers
+|-damage|p2a: Donphan|255\/381|[from] Leech Seed|[of] p1a: Chesnaught
+|turn|21
+|
+|move|p1a: Chesnaught|Leech Seed|p2a: Donphan|[miss]
+|-miss|p1a: Chesnaught|p2a: Donphan
+|move|p2a: Donphan|Rapid Spin|p1a: Chesnaught
+|-damage|p1a: Chesnaught|365\/379
+|-end|p2a: Donphan|Leech Seed|[from] move: Rapid Spin|[of] p2a: Donphan
+|
+|-heal|p1a: Chesnaught|379\/379|[from] item: Leftovers
+|-heal|p2a: Donphan|278\/381|[from] item: Leftovers
+|turn|22
+|
+|move|p1a: Chesnaught|Leech Seed|p2a: Donphan
+|-start|p2a: Donphan|move: Leech Seed
+|move|p2a: Donphan|Knock Off|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|347\/379
+|-enditem|p1a: Chesnaught|Leftovers|[from] move: Knock Off|[of] p2a: Donphan
+|
+|-heal|p2a: Donphan|301\/381|[from] item: Leftovers
+|-damage|p2a: Donphan|254\/381|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|379\/379|[silent]
+|turn|23
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-singleturn|p1a: Chesnaught|move: Protect
+|move|p2a: Donphan|Rapid Spin|p1a: Chesnaught
+|-activate|p1a: Chesnaught|move: Protect
+|-damage|p2a: Donphan|207\/381|[from] Spiky Shield|[of] p1a: Chesnaught
+|
+|-heal|p2a: Donphan|230\/381|[from] item: Leftovers
+|-damage|p2a: Donphan|183\/381|[from] Leech Seed|[of] p1a: Chesnaught
+|turn|24
+|
+|move|p1a: Chesnaught|Drain Punch|p2a: Donphan
+|-crit|p2a: Donphan
+|-damage|p2a: Donphan|63\/381
+|move|p2a: Donphan|Rapid Spin|p1a: Chesnaught
+|-damage|p1a: Chesnaught|366\/379
+|-end|p2a: Donphan|Leech Seed|[from] move: Rapid Spin|[of] p2a: Donphan
+|
+|-heal|p2a: Donphan|86\/381|[from] item: Leftovers
+|turn|25
+|
+|switch|p2a: Vaporeon|Vaporeon, F|451\/451
+|move|p1a: Chesnaught|Leech Seed|p2a: Vaporeon|[miss]
+|-miss|p1a: Chesnaught|p2a: Vaporeon
+|
+|turn|26
+|
+|move|p1a: Chesnaught|Leech Seed|p2a: Vaporeon
+|-start|p2a: Vaporeon|move: Leech Seed
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-damage|p2a: Vaporeon|395\/451|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|379\/379|[silent]
+|turn|27
+|
+|switch|p1a: Starmie|Starmie|283\/323
+|-damage|p1a: Starmie|243\/323|[from] Stealth Rock
+|switch|p2a: Donphan|Donphan, M|86\/381
+|
+|-heal|p2a: Donphan|311\/381|[from] move: Wish|[wisher] Vaporeon
+|-heal|p1a: Starmie|263\/323|[from] item: Leftovers
+|-heal|p2a: Donphan|334\/381|[from] item: Leftovers
+|turn|28
+|
+|move|p1a: Starmie|Scald|p2a: Donphan
+|-crit|p2a: Donphan
+|-supereffective|p2a: Donphan
+|-damage|p2a: Donphan|28\/381
+|move|p2a: Donphan|Knock Off|p1a: Starmie
+|-supereffective|p1a: Starmie
+|-damage|p1a: Starmie|47\/323
+|-enditem|p1a: Starmie|Leftovers|[from] move: Knock Off|[of] p2a: Donphan
+|
+|-heal|p2a: Donphan|51\/381|[from] item: Leftovers
+|turn|29
+|
+|move|p1a: Starmie|Rapid Spin|p2a: Donphan
+|-damage|p2a: Donphan|42\/381
+|-sideend|p1: In Your Window|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Starmie
+|move|p2a: Donphan|Knock Off|p1a: Starmie
+|-supereffective|p1a: Starmie
+|-damage|p1a: Starmie|0 fnt
+|faint|p1a: Starmie
+|
+|-heal|p2a: Donphan|65\/381|[from] item: Leftovers
+|
+|switch|p1a: Beedrill|Beedrill-Mega, M|271\/271
+|turn|30
+|
+|switch|p2a: Weezing|Weezing, M|229\/333
+|move|p1a: Beedrill|Knock Off|p2a: Weezing
+|-damage|p2a: Weezing|153\/333
+|-enditem|p2a: Weezing|Leftovers|[from] move: Knock Off|[of] p1a: Beedrill
+|
+|turn|31
+|
+|move|p1a: Beedrill|U-turn|p2a: Weezing
+|-resisted|p2a: Weezing
+|-damage|p2a: Weezing|95\/333
+|
+|switch|p1a: Raikou|Raikou|327\/327
+|-ability|p1a: Raikou|Pressure
+|move|p2a: Weezing|Fire Blast|p1a: Raikou
+|-damage|p1a: Raikou|254\/327
+|
+|turn|32
+|
+|switch|p2a: Donphan|Donphan, M|65\/381
+|move|p1a: Raikou|Extrasensory|p2a: Donphan
+|-damage|p2a: Donphan|0 fnt
+|faint|p2a: Donphan
+|
+|
+|switch|p2a: Sharpedo|Sharpedo, M|282\/282
+|turn|33
+|
+|switch|p1a: Chesnaught|Chesnaught, F|379\/379
+|move|p2a: Sharpedo|Protect|p2a: Sharpedo
+|-fail|p2a: Sharpedo
+|
+|-boost|p2a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|34
+|
+|switch|p2a: Weezing|Weezing, M|95\/333
+|move|p1a: Chesnaught|Drain Punch|p2a: Weezing
+|-resisted|p2a: Weezing
+|-damage|p2a: Weezing|63\/333
+|
+|turn|35
+|
+|switch|p1a: Raikou|Raikou|254\/327
+|-ability|p1a: Raikou|Pressure
+|move|p2a: Weezing|Will-O-Wisp|p1a: Raikou
+|-status|p1a: Raikou|brn
+|
+|-damage|p1a: Raikou|214\/327 brn|[from] brn
+|turn|36
+|
+|switch|p2a: Blissey|Blissey, F|657\/657
+|move|p1a: Raikou|Volt Switch|p2a: Blissey
+|-damage|p2a: Blissey|554\/657
+|
+|switch|p1a: Beedrill|Beedrill-Mega, M|271\/271
+|
+|-heal|p2a: Blissey|595\/657|[from] item: Leftovers
+|turn|37
+|
+|switch|p2a: Vaporeon|Vaporeon, F|395\/451
+|move|p1a: Beedrill|U-turn|p2a: Vaporeon
+|-damage|p2a: Vaporeon|191\/451
+|
+|switch|p1a: Raikou|Raikou|214\/327 brn
+|-ability|p1a: Raikou|Pressure
+|
+|-heal|p2a: Vaporeon|219\/451|[from] item: Leftovers
+|-damage|p1a: Raikou|174\/327 brn|[from] brn
+|turn|38
+|
+|move|p2a: Vaporeon|Protect|p2a: Vaporeon
+|-singleturn|p2a: Vaporeon|Protect
+|move|p1a: Raikou|Volt Switch|p2a: Vaporeon
+|-activate|p2a: Vaporeon|Protect
+|
+|-heal|p2a: Vaporeon|247\/451|[from] item: Leftovers
+|-damage|p1a: Raikou|134\/327 brn|[from] brn
+|turn|39
+|
+|move|p1a: Raikou|Volt Switch|p2a: Vaporeon
+|-supereffective|p2a: Vaporeon
+|-damage|p2a: Vaporeon|0 fnt
+|faint|p2a: Vaporeon
+|
+|switch|p1a: Hydreigon|Hydreigon, F|225\/325
+|
+|
+|switch|p2a: Sharpedo|Sharpedo, M|282\/282
+|turn|40
+|
+|move|p2a: Sharpedo|Protect|p2a: Sharpedo
+|-singleturn|p2a: Sharpedo|Protect
+|move|p1a: Hydreigon|Roost|p1a: Hydreigon
+|-heal|p1a: Hydreigon|325\/325
+|
+|-boost|p2a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|41
+|
+|move|p2a: Sharpedo|Ice Fang|p1a: Hydreigon
+|-supereffective|p1a: Hydreigon
+|-damage|p1a: Hydreigon|137\/325
+|move|p1a: Hydreigon|Draco Meteor|p2a: Sharpedo
+|-damage|p2a: Sharpedo|0 fnt
+|-unboost|p1a: Hydreigon|spa|2
+|-damage|p1a: Hydreigon|105\/325|[from] item: Life Orb
+|faint|p2a: Sharpedo
+|
+|
+|switch|p2a: Weezing|Weezing, M|63\/333
+|turn|42
+|
+|move|p1a: Hydreigon|Dark Pulse|p2a: Weezing
+|-damage|p2a: Weezing|0 fnt
+|-damage|p1a: Hydreigon|73\/325|[from] item: Life Orb
+|faint|p2a: Weezing
+|
+|-message|oh no oh no forfeited.
+|
+|win|In Your Window
+|raw|Ladder updating...
+|raw|In Your Window's rating: 1424 &rarr; <strong>1442<\/strong><br \/>(+18 for winning)
+|raw|oh no oh no's rating: 1395 &rarr; <strong>1376<\/strong><br \/>(-19 for losing)
+|leave|oh no oh no
+|player|p2

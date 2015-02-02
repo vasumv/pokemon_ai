@@ -1,0 +1,296 @@
+|join|quotenschwarzer
+|join|CoolTrainerGary
+|player|p1|quotenschwarzer|1
+|player|p2|CoolTrainerGary|265
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Swampert, M
+|poke|p1|Chesnaught, M
+|poke|p1|Empoleon, M
+|poke|p1|Chandelure, F
+|poke|p1|Hydreigon, M
+|poke|p1|Espeon, M
+|poke|p2|Absol, F
+|poke|p2|Roserade, F
+|poke|p2|Jellicent, M
+|poke|p2|Donphan, F
+|poke|p2|Diancie
+|poke|p2|Braviary, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Hydreigon|Hydreigon, M|325\/325
+|switch|p2a: Roserade|Roserade, F|324\/324
+|turn|1
+|
+|switch|p2a: Diancie|Diancie|304\/304
+|move|p1a: Hydreigon|U-turn|p2a: Diancie
+|-resisted|p2a: Diancie
+|-damage|p2a: Diancie|285\/304
+|
+|switch|p1a: Swampert|Swampert, M|341\/341
+|
+|-heal|p2a: Diancie|304\/304|[from] item: Leftovers
+|turn|2
+|
+|switch|p2a: Roserade|Roserade, F|324\/324
+|detailschange|p1a: Swampert|Swampert-Mega, M
+|-mega|p1a: Swampert|Swampert|Swampertite
+|move|p1a: Swampert|Earthquake|p2a: Roserade
+|-damage|p2a: Roserade|0 fnt
+|faint|p2a: Roserade
+|
+|
+|switch|p2a: Jellicent|Jellicent, M|404\/404
+|turn|3
+|
+|switch|p1a: Espeon|Espeon, M|272\/272
+|move|p2a: Jellicent|Scald|p1a: Espeon
+|-damage|p1a: Espeon|211\/272
+|
+|turn|4
+|
+|switch|p2a: Diancie|Diancie|304\/304
+|move|p1a: Espeon|Psyshock|p2a: Diancie
+|-damage|p2a: Diancie|211\/304
+|
+|-heal|p2a: Diancie|230\/304|[from] item: Leftovers
+|turn|5
+|
+|move|p1a: Espeon|Psyshock|p2a: Diancie
+|-damage|p2a: Diancie|136\/304
+|move|p2a: Diancie|Earth Power|p1a: Espeon
+|-damage|p1a: Espeon|145\/272
+|
+|-heal|p2a: Diancie|155\/304|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: Absol|Absol, F|271\/271
+|move|p1a: Espeon|Psyshock|p2a: Absol
+|-immune|p2a: Absol|[msg]
+|
+|turn|7
+|c|âquotenschwarzer|noooo
+|
+|switch|p1a: Chesnaught|Chesnaught, M|379\/379
+|detailschange|p2a: Absol|Absol-Mega, F
+|-mega|p2a: Absol|Absol|Absolite
+|move|p2a: Absol|Knock Off|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|308\/379
+|-enditem|p1a: Chesnaught|Leftovers|[from] move: Knock Off|[of] p2a: Absol
+|
+|turn|8
+|
+|switch|p2a: Braviary|Braviary, M|341\/341
+|move|p1a: Chesnaught|Drain Punch|p2a: Braviary
+|-damage|p2a: Braviary|227\/341
+|-heal|p1a: Chesnaught|365\/379|[from] drain|[of] p2a: Braviary
+|
+|turn|9
+|
+|switch|p2a: Jellicent|Jellicent, M|404\/404
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-fail|p1a: Chesnaught
+|
+|turn|10
+|
+|move|p2a: Jellicent|Taunt|p1a: Chesnaught
+|-start|p1a: Chesnaught|move: Taunt
+|move|p1a: Chesnaught|Seed Bomb|p2a: Jellicent
+|-supereffective|p2a: Jellicent
+|-damage|p2a: Jellicent|198\/404
+|
+|-heal|p2a: Jellicent|223\/404|[from] item: Leftovers
+|turn|11
+|
+|switch|p1a: Hydreigon|Hydreigon, M|325\/325
+|move|p2a: Jellicent|Ice Beam|p1a: Hydreigon
+|-supereffective|p1a: Hydreigon
+|-damage|p1a: Hydreigon|169\/325
+|-status|p1a: Hydreigon|frz
+|
+|-heal|p2a: Jellicent|248\/404|[from] item: Leftovers
+|turn|12
+|
+|switch|p2a: Diancie|Diancie|155\/304
+|cant|p1a: Hydreigon|frz
+|
+|-heal|p2a: Diancie|174\/304|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: Espeon|Espeon, M|145\/272
+|move|p2a: Diancie|Diamond Storm|p1a: Espeon
+|-damage|p1a: Espeon|0 fnt
+|-boost|p2a: Diancie|def|1
+|faint|p1a: Espeon
+|
+|-heal|p2a: Diancie|193\/304|[from] item: Leftovers
+|
+|switch|p1a: Empoleon|Empoleon, M|371\/371
+|turn|14
+|
+|move|p1a: Empoleon|Stealth Rock|p2a: Diancie
+|-sidestart|p2: CoolTrainerGary|move: Stealth Rock
+|move|p2a: Diancie|Stealth Rock|p1a: Empoleon
+|-sidestart|p1: quotenschwarzer|move: Stealth Rock
+|
+|-heal|p2a: Diancie|212\/304|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Empoleon|Scald|p2a: Diancie
+|-supereffective|p2a: Diancie
+|-damage|p2a: Diancie|68\/304
+|move|p2a: Diancie|Stealth Rock|p1a: Empoleon
+|-fail|p1a: Empoleon
+|
+|-heal|p2a: Diancie|87\/304|[from] item: Leftovers
+|turn|16
+|
+|move|p1a: Empoleon|Defog|p2a: Diancie
+|-fail|p2a: Diancie|unboost|[from] ability: Clear Body|[of] p2a: Diancie
+|-sideend|p2: CoolTrainerGary|Stealth Rock|[from] move: Defog|[of] p2a: Diancie
+|-sideend|p1: quotenschwarzer|Stealth Rock|[from] move: Defog|[of] p1a: Empoleon
+|move|p2a: Diancie|Earth Power|p1a: Empoleon
+|-supereffective|p1a: Empoleon
+|-damage|p1a: Empoleon|239\/371
+|
+|-heal|p1a: Empoleon|262\/371|[from] item: Leftovers
+|-heal|p2a: Diancie|106\/304|[from] item: Leftovers
+|turn|17
+|
+|switch|p2a: Jellicent|Jellicent, M|248\/404
+|move|p1a: Empoleon|Scald|p2a: Jellicent
+|-heal|p2a: Jellicent|349\/404|[from] ability: Water Absorb|[of] p1a: Empoleon
+|
+|-heal|p2a: Jellicent|374\/404|[from] item: Leftovers
+|-heal|p1a: Empoleon|285\/371|[from] item: Leftovers
+|turn|18
+|
+|move|p2a: Jellicent|Taunt|p1a: Empoleon
+|-start|p1a: Empoleon|move: Taunt
+|cant|p1a: Empoleon|move: Taunt|Stealth Rock
+|
+|-heal|p2a: Jellicent|399\/404|[from] item: Leftovers
+|-heal|p1a: Empoleon|308\/371|[from] item: Leftovers
+|turn|19
+|
+|switch|p1a: Hydreigon|Hydreigon, M|169\/325 frz
+|move|p2a: Jellicent|Ice Beam|p1a: Hydreigon
+|-supereffective|p1a: Hydreigon
+|-damage|p1a: Hydreigon|25\/325 frz
+|
+|-heal|p2a: Jellicent|404\/404|[from] item: Leftovers
+|turn|20
+|
+|cant|p1a: Hydreigon|frz
+|move|p2a: Jellicent|Ice Beam|p1a: Hydreigon
+|-crit|p1a: Hydreigon
+|-supereffective|p1a: Hydreigon
+|-damage|p1a: Hydreigon|0 fnt
+|faint|p1a: Hydreigon
+|
+|
+|switch|p1a: Chandelure|Chandelure, F|289\/289
+|turn|21
+|
+|move|p1a: Chandelure|Substitute|p1a: Chandelure
+|-start|p1a: Chandelure|Substitute
+|-damage|p1a: Chandelure|217\/289
+|move|p2a: Jellicent|Scald|p1a: Chandelure
+|-supereffective|p1a: Chandelure
+|-end|p1a: Chandelure|Substitute
+|
+|-heal|p1a: Chandelure|235\/289|[from] item: Leftovers
+|turn|22
+|
+|switch|p2a: Braviary|Braviary, M|227\/341
+|move|p1a: Chandelure|Shadow Ball|p2a: Braviary
+|-immune|p2a: Braviary|[msg]
+|
+|-heal|p1a: Chandelure|253\/289|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Braviary|Superpower|p1a: Chandelure
+|-immune|p1a: Chandelure|[msg]
+|move|p1a: Chandelure|Shadow Ball|p2a: Braviary
+|-immune|p2a: Braviary|[msg]
+|
+|-heal|p1a: Chandelure|271\/289|[from] item: Leftovers
+|turn|24
+|c|âCoolTrainerGary|lag test
+|
+|switch|p2a: Jellicent|Jellicent, M|404\/404
+|move|p1a: Chandelure|Calm Mind|p1a: Chandelure
+|-boost|p1a: Chandelure|spa|1
+|-boost|p1a: Chandelure|spd|1
+|
+|-heal|p1a: Chandelure|289\/289|[from] item: Leftovers
+|turn|25
+|
+|move|p1a: Chandelure|Substitute|p1a: Chandelure
+|-start|p1a: Chandelure|Substitute
+|-damage|p1a: Chandelure|217\/289
+|move|p2a: Jellicent|Scald|p1a: Chandelure
+|-supereffective|p1a: Chandelure
+|-end|p1a: Chandelure|Substitute
+|
+|-heal|p1a: Chandelure|235\/289|[from] item: Leftovers
+|turn|26
+|
+|move|p1a: Chandelure|Substitute|p1a: Chandelure
+|-start|p1a: Chandelure|Substitute
+|-damage|p1a: Chandelure|163\/289
+|move|p2a: Jellicent|Scald|p1a: Chandelure
+|-supereffective|p1a: Chandelure
+|-end|p1a: Chandelure|Substitute
+|
+|-heal|p1a: Chandelure|181\/289|[from] item: Leftovers
+|turn|27
+|
+|switch|p2a: Braviary|Braviary, M|227\/341
+|move|p1a: Chandelure|Shadow Ball|p2a: Braviary
+|-immune|p2a: Braviary|[msg]
+|
+|-heal|p1a: Chandelure|199\/289|[from] item: Leftovers
+|turn|28
+|c|âquotenschwarzer|ahh not bad :D
+|
+|switch|p1a: Empoleon|Empoleon, M|308\/371
+|move|p2a: Braviary|Brave Bird|p1a: Empoleon
+|-crit|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|125\/371
+|-damage|p2a: Braviary|167\/341|[from] recoil|[of] p1a: Empoleon
+|
+|-heal|p1a: Empoleon|148\/371|[from] item: Leftovers
+|turn|29
+|
+|switch|p2a: Absol|Absol-Mega, F|271\/271
+|move|p1a: Empoleon|Stealth Rock|p2a: Absol
+|move|p2a: Absol|Stealth Rock|p1a: Empoleon|[from]Magic Bounce
+|-sidestart|p1: quotenschwarzer|move: Stealth Rock
+|
+|-heal|p1a: Empoleon|171\/371|[from] item: Leftovers
+|turn|30
+|c|âquotenschwarzer|ohh alcohol is a hell of a drug :D gg
+|-message|quotenschwarzer forfeited.
+|leave|quotenschwarzer
+|
+|win|CoolTrainerGary
+|raw|Ladder updating...
+|player|p1
+|raw|quotenschwarzer's rating: 1423 &rarr; <strong>1403<\/strong><br \/>(-20 for losing)
+|raw|CoolTrainerGary's rating: 1427 &rarr; <strong>1447<\/strong><br \/>(+20 for winning)

@@ -1,0 +1,334 @@
+|join|Hogback_fosh_men
+|join|Pete Zahut
+|player|p1|Hogback_fosh_men|170
+|player|p2|Pete Zahut|92
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Ampharos, M, shiny
+|poke|p1|Empoleon, F
+|poke|p1|Florges, F, shiny
+|poke|p1|Arcanine, F
+|poke|p1|Porygon-Z
+|poke|p1|Shaymin, shiny
+|poke|p2|Arcanine, M, shiny
+|poke|p2|Victini
+|poke|p2|Celebi, shiny
+|poke|p2|Suicune
+|poke|p2|Empoleon, M
+|poke|p2|Absol, M
+|teampreview
+|
+|start
+|switch|p1a: Amphy|Ampharos, M, shiny|384\/384
+|switch|p2a: Empoleon|Empoleon, M|372\/372
+|turn|1
+|
+|switch|p2a: Celebi|Celebi, shiny|404\/404
+|-formechange|p1a: Amphy|Ampharos-Mega
+|message|Ampharos has Mega Evolved into Mega Ampharos!
+|-ability|p1a: Amphy|Mold Breaker
+|move|p1a: Amphy|Volt Switch|p2a: Celebi
+|-resisted|p2a: Celebi
+|-damage|p2a: Celebi|341\/404
+|
+|switch|p1a: Condom|Porygon-Z|312\/312
+|-boost|p1a: Condom|atk|1|[from] ability: Download
+|
+|-heal|p2a: Celebi|366\/404|[from] item: Leftovers
+|turn|2
+|
+|move|p1a: Condom|Tri Attack|p2a: Celebi
+|-damage|p2a: Celebi|255\/404
+|move|p2a: Celebi|Perish Song|p2a: Celebi
+|-fieldactivate|move: Perish Song
+|
+|-start|p1a: Condom|perish3
+|-start|p2a: Celebi|perish3
+|-heal|p2a: Celebi|280\/404|[from] item: Leftovers
+|turn|3
+|
+|move|p1a: Condom|Tri Attack|p2a: Celebi
+|-damage|p2a: Celebi|151\/404
+|move|p2a: Celebi|Giga Drain|p1a: Condom
+|-damage|p1a: Condom|209\/312
+|-heal|p2a: Celebi|203\/404|[from] drain|[of] p1a: Condom
+|
+|-start|p1a: Condom|perish2
+|-start|p2a: Celebi|perish2
+|-heal|p2a: Celebi|228\/404|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Shaymin|Shaymin, shiny|342\/342
+|move|p2a: Celebi|Recover|p2a: Celebi
+|-heal|p2a: Celebi|404\/404
+|
+|-start|p2a: Celebi|perish1
+|turn|5
+|
+|switch|p2a: Arcanine|Arcanine, M, shiny|384\/384
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Shaymin
+|-unboost|p1a: Shaymin|atk|1
+|move|p1a: Shaymin|Earth Power|p2a: Arcanine
+|-crit|p2a: Arcanine
+|-supereffective|p2a: Arcanine
+|-damage|p2a: Arcanine|0 fnt
+|-damage|p1a: Shaymin|308\/342|[from] item: Life Orb
+|faint|p2a: Arcanine
+|
+|
+|switch|p2a: Victini|Victini|341\/341
+|turn|6
+|
+|switch|p1a: Arcanine|Arcanine, F|372\/372
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Victini
+|-unboost|p2a: Victini|atk|1
+|move|p2a: Victini|U-turn|p1a: Arcanine
+|-resisted|p1a: Arcanine
+|-damage|p1a: Arcanine|339\/372
+|
+|switch|p2a: Suicune|Suicune|404\/404
+|-ability|p2a: Suicune|Pressure
+|
+|-heal|p1a: Arcanine|362\/372|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Amphy|Ampharos, M, shiny|384\/384
+|-formechange|p1a: Amphy|Ampharos-Mega
+|-ability|p1a: Amphy|Mold Breaker
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|turn|8
+|
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: Amphy|Volt Switch|p2a: Suicune
+|-supereffective|p2a: Suicune
+|-damage|p2a: Suicune|252\/404
+|
+|switch|p1a: Shaymin|Shaymin, shiny|308\/342
+|
+|-heal|p2a: Suicune|277\/404|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Victini|Victini|341\/341
+|move|p1a: Shaymin|Seed Flare|p2a: Victini|[miss]
+|-miss|p1a: Shaymin|p2a: Victini
+|
+|turn|10
+|
+|switch|p1a: Arcanine|Arcanine, F|362\/372
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Victini
+|-unboost|p2a: Victini|atk|1
+|move|p2a: Victini|Trick|p1a: Arcanine
+|-activate|p2a: Victini|move: Trick|[of] p1a: Arcanine
+|-item|p1a: Arcanine|Choice Band|[from] move: Trick
+|-item|p2a: Victini|Leftovers|[from] move: Trick
+|
+|turn|11
+|
+|move|p2a: Victini|U-turn|p1a: Arcanine
+|-resisted|p1a: Arcanine
+|-damage|p1a: Arcanine|342\/372
+|
+|switch|p2a: Suicune|Suicune|277\/404
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Arcanine|Snarl|p2a: Suicune
+|-damage|p2a: Suicune|239\/404
+|-unboost|p2a: Suicune|spa|1
+|
+|-heal|p2a: Suicune|264\/404|[from] item: Leftovers
+|turn|12
+|
+|switch|p1a: Amphy|Ampharos, M, shiny|384\/384
+|-formechange|p1a: Amphy|Ampharos-Mega
+|-ability|p1a: Amphy|Mold Breaker
+|switch|p2a: Victini|Victini|341\/341
+|
+|turn|13
+|
+|move|p2a: Victini|U-turn|p1a: Amphy
+|-damage|p1a: Amphy|312\/384
+|
+|switch|p2a: Celebi|Celebi, shiny|404\/404
+|move|p1a: Amphy|Volt Switch|p2a: Celebi
+|-resisted|p2a: Celebi
+|-damage|p2a: Celebi|338\/404
+|
+|switch|p1a: Condom|Porygon-Z|209\/312
+|-boost|p1a: Condom|atk|1|[from] ability: Download
+|
+|-heal|p2a: Celebi|363\/404|[from] item: Leftovers
+|turn|14
+|
+|move|p1a: Condom|Trick|p2a: Celebi
+|-activate|p1a: Condom|move: Trick|[of] p2a: Celebi
+|-item|p2a: Celebi|Choice Scarf|[from] move: Trick
+|-item|p1a: Condom|Leftovers|[from] move: Trick
+|move|p2a: Celebi|Giga Drain|p1a: Condom
+|-damage|p1a: Condom|107\/312
+|-heal|p2a: Celebi|404\/404|[from] drain|[of] p1a: Condom
+|
+|-heal|p1a: Condom|126\/312|[from] item: Leftovers
+|turn|15
+|
+|switch|p2a: Victini|Victini|341\/341
+|switch|p1a: Arcanine|Arcanine, F|342\/372
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Victini
+|-unboost|p2a: Victini|atk|1
+|
+|turn|16
+|
+|move|p2a: Victini|U-turn|p1a: Arcanine
+|-resisted|p1a: Arcanine
+|-damage|p1a: Arcanine|321\/372
+|
+|switch|p2a: Suicune|Suicune|264\/404
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Arcanine|Snarl|p2a: Suicune
+|-damage|p2a: Suicune|224\/404
+|-unboost|p2a: Suicune|spa|1
+|
+|-heal|p2a: Suicune|249\/404|[from] item: Leftovers
+|turn|17
+|
+|switch|p1a: Amphy|Ampharos, M, shiny|312\/384
+|-formechange|p1a: Amphy|Ampharos-Mega
+|-ability|p1a: Amphy|Mold Breaker
+|switch|p2a: Empoleon|Empoleon, M|372\/372
+|
+|turn|18
+|
+|switch|p2a: Celebi|Celebi, shiny|404\/404
+|move|p1a: Amphy|Volt Switch|p2a: Celebi
+|-resisted|p2a: Celebi
+|-damage|p2a: Celebi|347\/404
+|
+|switch|p1a: NotsoHappyfeet|Empoleon, F|365\/365
+|
+|turn|19
+|
+|move|p2a: Celebi|Giga Drain|p1a: NotsoHappyfeet
+|-damage|p1a: NotsoHappyfeet|292\/365
+|-heal|p2a: Celebi|384\/404|[from] drain|[of] p1a: NotsoHappyfeet
+|move|p1a: NotsoHappyfeet|Stealth Rock|p2a: Celebi
+|-sidestart|p2: Pete Zahut|move: Stealth Rock
+|
+|-heal|p1a: NotsoHappyfeet|314\/365|[from] item: Leftovers
+|turn|20
+|
+|switch|p2a: Empoleon|Empoleon, M|372\/372
+|-damage|p2a: Empoleon|349\/372|[from] Stealth Rock
+|move|p1a: NotsoHappyfeet|Flash Cannon|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|322\/372
+|
+|-heal|p2a: Empoleon|345\/372|[from] item: Leftovers
+|-heal|p1a: NotsoHappyfeet|336\/365|[from] item: Leftovers
+|turn|21
+|
+|switch|p1a: Amphy|Ampharos, M, shiny|312\/384
+|-formechange|p1a: Amphy|Ampharos-Mega
+|-ability|p1a: Amphy|Mold Breaker
+|move|p2a: Empoleon|Stealth Rock|p1a: Amphy
+|-sidestart|p1: Hogback_fosh_men|move: Stealth Rock
+|
+|-heal|p2a: Empoleon|368\/372|[from] item: Leftovers
+|turn|22
+|
+|switch|p2a: Celebi|Celebi, shiny|384\/404
+|-damage|p2a: Celebi|334\/404|[from] Stealth Rock
+|move|p1a: Amphy|Volt Switch|p2a: Celebi
+|-resisted|p2a: Celebi
+|-damage|p2a: Celebi|269\/404
+|
+|switch|p1a: ULikemysmell?|Florges, F, shiny|360\/360
+|-damage|p1a: ULikemysmell?|315\/360|[from] Stealth Rock
+|
+|-heal|p1a: ULikemysmell?|337\/360|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Celebi|Recover|p2a: Celebi
+|-heal|p2a: Celebi|404\/404
+|move|p1a: ULikemysmell?|Wish|p1a: ULikemysmell?
+|
+|-heal|p1a: ULikemysmell?|359\/360|[from] item: Leftovers
+|turn|24
+|
+|switch|p2a: Suicune|Suicune|249\/404
+|-damage|p2a: Suicune|199\/404|[from] Stealth Rock
+|-ability|p2a: Suicune|Pressure
+|switch|p1a: Condom|Porygon-Z|126\/312
+|-damage|p1a: Condom|87\/312|[from] Stealth Rock
+|-boost|p1a: Condom|spa|1|[from] ability: Download
+|
+|-heal|p1a: Condom|267\/312|[from] move: Wish|[wisher] ULikemysmell?
+|-heal|p1a: Condom|286\/312|[from] item: Leftovers
+|-heal|p2a: Suicune|224\/404|[from] item: Leftovers
+|turn|25
+|
+|move|p1a: Condom|Tri Attack|p2a: Suicune
+|-damage|p2a: Suicune|4\/404
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|
+|-heal|p1a: Condom|305\/312|[from] item: Leftovers
+|turn|26
+|chat|Pete Zahut|that crit on the arcanine..
+|
+|switch|p2a: Celebi|Celebi, shiny|404\/404
+|-damage|p2a: Celebi|354\/404|[from] Stealth Rock
+|move|p1a: Condom|Tri Attack|p2a: Celebi
+|-damage|p2a: Celebi|185\/404
+|
+|-heal|p1a: Condom|312\/312|[from] item: Leftovers
+|turn|27
+|chat|Hogback_fosh_men|lol yea
+|
+|move|p2a: Celebi|Giga Drain|p1a: Condom
+|-damage|p1a: Condom|221\/312
+|-heal|p2a: Celebi|231\/404|[from] drain|[of] p1a: Condom
+|move|p1a: Condom|Dark Pulse|p2a: Celebi
+|-supereffective|p2a: Celebi
+|-damage|p2a: Celebi|0 fnt
+|faint|p2a: Celebi
+|
+|-heal|p1a: Condom|240\/312|[from] item: Leftovers
+|
+|switch|p2a: Absol|Absol, M|271\/271
+|-damage|p2a: Absol|238\/271|[from] Stealth Rock
+|-ability|p2a: Absol|Pressure
+|turn|28
+|chat|Hogback_fosh_men|raised speed on canine?
+|
+|switch|p1a: ULikemysmell?|Florges, F, shiny|359\/360
+|-damage|p1a: ULikemysmell?|314\/360|[from] Stealth Rock
+|-formechange|p2a: Absol|Absol-Mega
+|message|Absol has Mega Evolved into Mega Absol!
+|move|p2a: Absol|Sucker Punch|p1a: ULikemysmell?
+|-fail|p1a: ULikemysmell?
+|
+|-heal|p1a: ULikemysmell?|336\/360|[from] item: Leftovers
+|turn|29
+|-message|Pete Zahut forfeited.
+|
+|win|Hogback_fosh_men
+|raw|Ladder updating...
+|leave|Pete Zahut
+|player|p2
+|raw|Hogback_fosh_men's rating: 1512 &rarr; <strong>1533<\/strong><br \/>(+21 for winning)
+|raw|Pete Zahut's rating: 1525 &rarr; <strong>1504<\/strong><br \/>(-21 for losing)

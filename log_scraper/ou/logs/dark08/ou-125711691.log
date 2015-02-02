@@ -1,0 +1,227 @@
+|join|hms
+|join|dark08
+|player|p1|hms|265
+|player|p2|dark08|162
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Spiritomb, F
+|poke|p1|Heatran, F
+|poke|p1|Goodra, M, shiny
+|poke|p1|Ditto
+|poke|p1|Dugtrio, M
+|poke|p1|Zapdos
+|poke|p2|Lucario, M
+|poke|p2|Zoroark, M
+|poke|p2|Latios, M
+|poke|p2|Scizor, M
+|poke|p2|Espeon, M
+|poke|p2|Umbreon, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Dugtrio|Dugtrio, M|211\/211
+|switch|p2a: Latios|Latios, M|302\/302
+|turn|1
+|
+|switch|p2a: Espeon|Espeon, M|272\/272
+|move|p1a: Dugtrio|Stealth Rock|p2a: Espeon
+|move|p2a: Espeon|Stealth Rock|p1a: Dugtrio|[from]Magic Bounce
+|-sidestart|p1: hms|move: Stealth Rock
+|
+|turn|2
+|
+|move|p2a: Espeon|Psyshock|p1a: Dugtrio
+|-enditem|p1a: Dugtrio|Focus Sash
+|-damage|p1a: Dugtrio|1\/211
+|-damage|p2a: Espeon|245\/272|[from] item: Life Orb
+|move|p1a: Dugtrio|Earthquake|p2a: Espeon
+|-damage|p2a: Espeon|34\/272
+|
+|turn|3
+|
+|move|p1a: Dugtrio|Sucker Punch|p2a: Espeon
+|-supereffective|p2a: Espeon
+|-damage|p2a: Espeon|0 fnt
+|faint|p2a: Espeon
+|
+|
+|switch|p2a: Lucario|Lucario, M|282\/282
+|turn|4
+|
+|move|p2a: Lucario|Extreme Speed|p1a: Dugtrio
+|-damage|p1a: Dugtrio|0 fnt
+|-damage|p2a: Lucario|254\/282|[from] item: Life Orb
+|faint|p1a: Dugtrio
+|
+|
+|switch|p1a: Ditto|Ditto|299\/299
+|-damage|p1a: Ditto|262\/299|[from] Stealth Rock
+|-transform|p1a: Ditto|p2a: Lucario
+|turn|5
+|
+|switch|p2a: Latios|Latios, M|302\/302
+|move|p1a: Ditto|Ice Punch|p2a: Latios
+|-crit|p2a: Latios
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|faint|p2a: Latios
+|
+|
+|switch|p2a: Lucario|Lucario, M|254\/282
+|turn|6
+|
+|switch|p1a: Spiritomb|Spiritomb, F|304\/304
+|-damage|p1a: Spiritomb|266\/304|[from] Stealth Rock
+|move|p2a: Lucario|Close Combat|p1a: Spiritomb
+|-immune|p1a: Spiritomb|[msg]
+|
+|turn|7
+|
+|switch|p2a: Umbreon|Umbreon, M|394\/394
+|move|p1a: Spiritomb|Trick|p2a: Umbreon
+|-activate|p1a: Spiritomb|move: Trick|[of] p2a: Umbreon
+|-item|p2a: Umbreon|Choice Band|[from] move: Trick
+|-item|p1a: Spiritomb|Leftovers|[from] move: Trick
+|
+|-heal|p1a: Spiritomb|285\/304|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Heatran|Heatran, F|323\/323
+|-damage|p1a: Heatran|283\/323|[from] Stealth Rock
+|move|p2a: Umbreon|Foul Play|p1a: Heatran
+|-damage|p1a: Heatran|168\/323
+|
+|turn|9
+|
+|move|p1a: Heatran|Fire Blast|p2a: Umbreon
+|-damage|p2a: Umbreon|144\/394
+|-status|p2a: Umbreon|brn
+|move|p2a: Umbreon|Foul Play|p1a: Heatran
+|-crit|p1a: Heatran
+|-damage|p1a: Heatran|83\/323
+|
+|-damage|p2a: Umbreon|95\/394 brn|[from] brn
+|turn|10
+|
+|move|p1a: Heatran|Fire Blast|p2a: Umbreon
+|-damage|p2a: Umbreon|0 fnt
+|faint|p2a: Umbreon
+|
+|
+|switch|p2a: Scizor|Scizor, M|262\/262
+|turn|11
+|
+|move|p2a: Scizor|Sucker Punch|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|
+|switch|p1a: Zapdos|Zapdos|384\/384
+|-damage|p1a: Zapdos|288\/384|[from] Stealth Rock
+|-ability|p1a: Zapdos|Pressure
+|turn|12
+|
+|move|p2a: Scizor|Swords Dance|p2a: Scizor
+|-boost|p2a: Scizor|atk|2
+|move|p1a: Zapdos|Volt Switch|p2a: Scizor
+|replace|p2a: Zoroark|Zoroark, M|262\/262
+|-damage|p2a: Zoroark|96\/262
+|
+|switch|p1a: Ditto|Ditto|262\/299
+|-damage|p1a: Ditto|225\/299|[from] Stealth Rock
+|-transform|p1a: Ditto|p2a: Zoroark
+|
+|turn|13
+|
+|move|p1a: Ditto|Sucker Punch|p2a: Zoroark
+|-resisted|p2a: Zoroark
+|-damage|p2a: Zoroark|0 fnt
+|faint|p2a: Zoroark
+|
+|
+|switch|p2a: Lucario|Lucario, M|254\/282
+|turn|14
+|
+|switch|p1a: Spiritomb|Spiritomb, F|285\/304
+|-damage|p1a: Spiritomb|247\/304|[from] Stealth Rock
+|move|p2a: Lucario|Swords Dance|p2a: Lucario
+|-boost|p2a: Lucario|atk|2
+|
+|-heal|p1a: Spiritomb|266\/304|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Spiritomb|Shadow Sneak|p2a: Lucario
+|-damage|p2a: Lucario|169\/282
+|move|p2a: Lucario|Ice Punch|p1a: Spiritomb
+|-damage|p1a: Spiritomb|59\/304
+|-damage|p2a: Lucario|141\/282|[from] item: Life Orb
+|
+|-heal|p1a: Spiritomb|78\/304|[from] item: Leftovers
+|turn|16
+|
+|move|p1a: Spiritomb|Shadow Sneak|p2a: Lucario
+|-damage|p2a: Lucario|50\/282
+|move|p2a: Lucario|Ice Punch|p1a: Spiritomb
+|-damage|p1a: Spiritomb|0 fnt
+|-damage|p2a: Lucario|22\/282|[from] item: Life Orb
+|faint|p1a: Spiritomb
+|
+|
+|switch|p1a: Ditto|Ditto|225\/299
+|-damage|p1a: Ditto|188\/299|[from] Stealth Rock
+|-transform|p1a: Ditto|p2a: Lucario
+|turn|17
+|
+|switch|p2a: Scizor|Scizor, M|344\/344
+|move|p1a: Ditto|Extreme Speed|p2a: Scizor
+|-resisted|p2a: Scizor
+|-damage|p2a: Scizor|250\/344
+|
+|turn|18
+|
+|move|p1a: Ditto|Extreme Speed|p2a: Scizor
+|-resisted|p2a: Scizor
+|-damage|p2a: Scizor|159\/344
+|move|p2a: Scizor|U-turn|p1a: Ditto
+|-resisted|p1a: Ditto
+|-damage|p1a: Ditto|118\/299
+|
+|switch|p2a: Lucario|Lucario, M|22\/282
+|
+|turn|19
+|
+|switch|p2a: Scizor|Scizor, M|159\/344
+|move|p1a: Ditto|Extreme Speed|p2a: Scizor
+|-resisted|p2a: Scizor
+|-damage|p2a: Scizor|73\/344
+|
+|turn|20
+|
+|move|p1a: Ditto|Extreme Speed|p2a: Scizor
+|-resisted|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|faint|p2a: Scizor
+|
+|
+|switch|p2a: Lucario|Lucario, M|22\/282
+|turn|21
+|
+|move|p1a: Ditto|Extreme Speed|p2a: Lucario
+|-resisted|p2a: Lucario
+|-damage|p2a: Lucario|0 fnt
+|faint|p2a: Lucario
+|
+|win|hms
+|raw|Ladder updating...
+|raw|hms's rating: 1670 &rarr; <strong>1689<\/strong><br \/>(+19 for winning)
+|raw|dark08's rating: 1664 &rarr; <strong>1644<\/strong><br \/>(-20 for losing)

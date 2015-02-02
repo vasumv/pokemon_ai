@@ -1,0 +1,628 @@
+|join|SpecsPrimeape
+|join|Acemanassasin
+|player|p1|SpecsPrimeape|169
+|player|p2|Acemanassasin|4
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Blissey, F
+|poke|p1|Vullaby, F
+|poke|p1|Gastrodon, F
+|poke|p1|Infernape, M
+|poke|p1|Toxicroak, F
+|poke|p1|Hydreigon, F
+|poke|p2|Suicune
+|poke|p2|Mew
+|poke|p2|Donphan, M
+|poke|p2|Volcarona, M
+|poke|p2|Ambipom, M
+|poke|p2|Cloyster, M
+|teampreview
+|
+|start
+|switch|p1a: Toxicroak|Toxicroak, F|307\/307
+|switch|p2a: Ambipom|Ambipom, M|291\/291
+|turn|1
+|
+|move|p2a: Ambipom|Fake Out|p1a: Toxicroak
+|-damage|p1a: Toxicroak|138\/307
+|-damage|p2a: Ambipom|262\/291|[from] item: Life Orb
+|cant|p1a: Toxicroak|flinch
+|
+|turn|2
+|
+|switch|p2a: Mew|Mew|404\/404
+|switch|p1a: Juggernaut|Vullaby, F|344\/344
+|
+|turn|3
+|
+|move|p2a: Mew|Knock Off|p1a: Juggernaut
+|-resisted|p1a: Juggernaut
+|-damage|p1a: Juggernaut|322\/344
+|-enditem|p1a: Juggernaut|Eviolite|[from] move: Knock Off|[of] p2a: Mew
+|move|p1a: Juggernaut|Knock Off|p2a: Mew
+|-supereffective|p2a: Mew
+|-damage|p2a: Mew|264\/404
+|-enditem|p2a: Mew|Leftovers|[from] move: Knock Off|[of] p1a: Juggernaut
+|
+|turn|4
+|
+|move|p2a: Mew|Stealth Rock|p1a: Juggernaut
+|-sidestart|p1: SpecsPrimeape|move: Stealth Rock
+|move|p1a: Juggernaut|Toxic|p2a: Mew
+|-status|p2a: Mew|tox
+|-status|p1a: Juggernaut|tox
+|
+|-damage|p2a: Mew|239\/404 tox|[from] psn
+|-damage|p1a: Juggernaut|301\/344 tox|[from] psn
+|turn|5
+|
+|move|p2a: Mew|U-turn|p1a: Juggernaut
+|-damage|p1a: Juggernaut|254\/344 tox
+|
+|switch|p2a: Suicune|Suicune|404\/404
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Juggernaut|Defog|p2a: Suicune
+|-unboost|p2a: Suicune|evasion|1
+|-sideend|p1: SpecsPrimeape|Stealth Rock|[from] move: Defog|[of] p1a: Juggernaut
+|
+|-damage|p1a: Juggernaut|212\/344 tox|[from] psn
+|turn|6
+|
+|switch|p2a: Volcarona|Volcarona, M|311\/311
+|-item|p2a: Volcarona|Air Balloon
+|switch|p1a: Diva|Gastrodon, F|400\/400
+|
+|turn|7
+|
+|move|p2a: Volcarona|Giga Drain|p1a: Diva
+|-supereffective|p1a: Diva
+|-damage|p1a: Diva|36\/400
+|move|p1a: Diva|Toxic|p2a: Volcarona
+|-status|p2a: Volcarona|tox
+|
+|-heal|p1a: Diva|61\/400|[from] item: Leftovers
+|-damage|p2a: Volcarona|292\/311 tox|[from] psn
+|turn|8
+|
+|switch|p2a: Donphan|Donphan, M|384\/384
+|switch|p1a: Nymphy|Blissey, F|714\/714
+|
+|turn|9
+|
+|switch|p1a: Juggernaut|Vullaby, F|212\/344 tox
+|move|p2a: Donphan|Knock Off|p1a: Juggernaut
+|-resisted|p1a: Juggernaut
+|-damage|p1a: Juggernaut|176\/344 tox
+|
+|-damage|p1a: Juggernaut|155\/344 tox|[from] psn
+|turn|10
+|
+|switch|p2a: Mew|Mew|239\/404 tox
+|move|p1a: Juggernaut|Knock Off|p2a: Mew
+|-supereffective|p2a: Mew
+|-damage|p2a: Mew|149\/404 tox
+|
+|-damage|p2a: Mew|124\/404 tox|[from] psn
+|-damage|p1a: Juggernaut|113\/344 tox|[from] psn
+|turn|11
+|
+|move|p2a: Mew|Soft-Boiled|p2a: Mew
+|-heal|p2a: Mew|326\/404 tox
+|move|p1a: Juggernaut|Roost|p1a: Juggernaut
+|-heal|p1a: Juggernaut|285\/344 tox
+|
+|-damage|p2a: Mew|276\/404 tox|[from] psn
+|-damage|p1a: Juggernaut|222\/344 tox|[from] psn
+|turn|12
+|
+|move|p2a: Mew|Soft-Boiled|p2a: Mew
+|-heal|p2a: Mew|404\/404 tox
+|move|p1a: Juggernaut|Roost|p1a: Juggernaut
+|-heal|p1a: Juggernaut|344\/344 tox
+|
+|-damage|p2a: Mew|329\/404 tox|[from] psn
+|-damage|p1a: Juggernaut|260\/344 tox|[from] psn
+|turn|13
+|
+|move|p2a: Mew|Knock Off|p1a: Juggernaut
+|-resisted|p1a: Juggernaut
+|-damage|p1a: Juggernaut|237\/344 tox
+|move|p1a: Juggernaut|Roost|p1a: Juggernaut
+|-heal|p1a: Juggernaut|344\/344 tox
+|
+|-damage|p2a: Mew|229\/404 tox|[from] psn
+|-damage|p1a: Juggernaut|239\/344 tox|[from] psn
+|turn|14
+|
+|move|p2a: Mew|U-turn|p1a: Juggernaut
+|-damage|p1a: Juggernaut|194\/344 tox
+|
+|switch|p2a: Cloyster|Cloyster, M|242\/242
+|move|p1a: Juggernaut|Roost|p1a: Juggernaut
+|-heal|p1a: Juggernaut|344\/344 tox
+|
+|-damage|p1a: Juggernaut|218\/344 tox|[from] psn
+|turn|15
+|
+|move|p2a: Cloyster|Shell Smash|p2a: Cloyster
+|-boost|p2a: Cloyster|atk|2
+|-boost|p2a: Cloyster|spa|2
+|-boost|p2a: Cloyster|spe|2
+|-unboost|p2a: Cloyster|def|1
+|-unboost|p2a: Cloyster|spd|1
+|move|p1a: Juggernaut|Toxic|p2a: Cloyster
+|-status|p2a: Cloyster|tox
+|
+|-damage|p2a: Cloyster|227\/242 tox|[from] psn
+|-damage|p1a: Juggernaut|71\/344 tox|[from] psn
+|turn|16
+|
+|move|p2a: Cloyster|Shell Smash|p2a: Cloyster
+|-boost|p2a: Cloyster|atk|2
+|-boost|p2a: Cloyster|spa|2
+|-boost|p2a: Cloyster|spe|2
+|-unboost|p2a: Cloyster|def|1
+|-unboost|p2a: Cloyster|spd|1
+|move|p1a: Juggernaut|Roost|p1a: Juggernaut
+|-heal|p1a: Juggernaut|243\/344 tox
+|
+|-damage|p2a: Cloyster|197\/242 tox|[from] psn
+|-damage|p1a: Juggernaut|75\/344 tox|[from] psn
+|turn|17
+|
+|move|p2a: Cloyster|Ice Shard|p1a: Juggernaut
+|-supereffective|p1a: Juggernaut
+|-damage|p1a: Juggernaut|0 fnt
+|faint|p1a: Juggernaut
+|
+|-damage|p2a: Cloyster|152\/242 tox|[from] psn
+|
+|switch|p1a: Prominence|Infernape, M|293\/293
+|turn|18
+|
+|switch|p2a: Mew|Mew|229\/404 tox
+|move|p1a: Prominence|Fake Out|p2a: Mew
+|-damage|p2a: Mew|187\/404 tox
+|
+|-damage|p2a: Mew|162\/404 tox|[from] psn
+|turn|19
+|
+|move|p1a: Prominence|Fire Blast|p2a: Mew
+|-damage|p2a: Mew|72\/404 tox
+|move|p2a: Mew|Soft-Boiled|p2a: Mew
+|-heal|p2a: Mew|274\/404 tox
+|
+|-damage|p2a: Mew|224\/404 tox|[from] psn
+|turn|20
+|
+|move|p1a: Prominence|Stealth Rock|p2a: Mew
+|-sidestart|p2: Acemanassasin|move: Stealth Rock
+|move|p2a: Mew|Soft-Boiled|p2a: Mew
+|-heal|p2a: Mew|404\/404 tox
+|
+|-damage|p2a: Mew|329\/404 tox|[from] psn
+|turn|21
+|
+|move|p1a: Prominence|Fire Blast|p2a: Mew
+|-damage|p2a: Mew|238\/404 tox
+|move|p2a: Mew|Knock Off|p1a: Prominence
+|-resisted|p1a: Prominence
+|-damage|p1a: Prominence|241\/293
+|-enditem|p1a: Prominence|Focus Sash|[from] move: Knock Off|[of] p2a: Mew
+|
+|-damage|p2a: Mew|138\/404 tox|[from] psn
+|turn|22
+|
+|move|p1a: Prominence|Fire Blast|p2a: Mew
+|-damage|p2a: Mew|48\/404 tox
+|move|p2a: Mew|Stealth Rock|p1a: Prominence
+|-sidestart|p1: SpecsPrimeape|move: Stealth Rock
+|
+|-damage|p2a: Mew|0 fnt|[from] psn
+|faint|p2a: Mew
+|
+|switch|p2a: Donphan|Donphan, M|384\/384
+|-damage|p2a: Donphan|360\/384|[from] Stealth Rock
+|turn|23
+|
+|move|p1a: Prominence|Fire Blast|p2a: Donphan
+|-damage|p2a: Donphan|161\/384
+|move|p2a: Donphan|Knock Off|p1a: Prominence
+|-resisted|p1a: Prominence
+|-damage|p1a: Prominence|181\/293
+|
+|turn|24
+|
+|switch|p2a: Suicune|Suicune|404\/404
+|-damage|p2a: Suicune|354\/404|[from] Stealth Rock
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Prominence|Fire Blast|p2a: Suicune
+|-resisted|p2a: Suicune
+|-damage|p2a: Suicune|299\/404
+|
+|-heal|p2a: Suicune|324\/404|[from] item: Leftovers
+|turn|25
+|
+|switch|p2a: Donphan|Donphan, M|161\/384
+|-damage|p2a: Donphan|137\/384|[from] Stealth Rock
+|move|p1a: Prominence|Close Combat|p2a: Donphan
+|-damage|p2a: Donphan|0 fnt
+|-damage|p1a: Prominence|133\/293|[from] item: Rocky Helmet|[of] p2a: Donphan
+|-unboost|p1a: Prominence|def|1
+|-unboost|p1a: Prominence|spd|1
+|faint|p2a: Donphan
+|
+|
+|switch|p2a: Ambipom|Ambipom, M|262\/291
+|-damage|p2a: Ambipom|226\/291|[from] Stealth Rock
+|turn|26
+|
+|switch|p1a: Toxicroak|Toxicroak, F|138\/307
+|-damage|p1a: Toxicroak|119\/307|[from] Stealth Rock
+|move|p2a: Ambipom|Fake Out|p1a: Toxicroak
+|-damage|p1a: Toxicroak|0 fnt
+|-damage|p2a: Ambipom|197\/291|[from] item: Life Orb
+|faint|p1a: Toxicroak
+|
+|
+|switch|p1a: Drag trio|Hydreigon, F|325\/325
+|-damage|p1a: Drag trio|285\/325|[from] Stealth Rock
+|turn|27
+|
+|switch|p2a: Cloyster|Cloyster, M|152\/242 tox
+|-damage|p2a: Cloyster|92\/242 tox|[from] Stealth Rock
+|move|p1a: Drag trio|Draco Meteor|p2a: Cloyster
+|-damage|p2a: Cloyster|0 fnt
+|-unboost|p1a: Drag trio|spa|2
+|faint|p2a: Cloyster
+|
+|
+|switch|p2a: Volcarona|Volcarona, M|292\/311 tox
+|-damage|p2a: Volcarona|137\/311 tox|[from] Stealth Rock
+|-item|p2a: Volcarona|Air Balloon
+|turn|28
+|
+|switch|p1a: Prominence|Infernape, M|133\/293
+|-damage|p1a: Prominence|97\/293|[from] Stealth Rock
+|move|p2a: Volcarona|Bug Buzz|p1a: Prominence
+|-resisted|p1a: Prominence
+|-damage|p1a: Prominence|44\/293
+|-unboost|p1a: Prominence|spd|1
+|
+|-damage|p2a: Volcarona|118\/311 tox|[from] psn
+|turn|29
+|
+|move|p1a: Prominence|Fake Out|p2a: Volcarona
+|-damage|p2a: Volcarona|62\/311 tox
+|-enditem|p2a: Volcarona|Air Balloon
+|cant|p2a: Volcarona|flinch
+|
+|-damage|p2a: Volcarona|24\/311 tox|[from] psn
+|turn|30
+|
+|move|p1a: Prominence|Fire Blast|p2a: Volcarona
+|-damage|p2a: Volcarona|0 fnt
+|faint|p2a: Volcarona
+|
+|
+|switch|p2a: Suicune|Suicune|324\/404
+|-damage|p2a: Suicune|274\/404|[from] Stealth Rock
+|-ability|p2a: Suicune|Pressure
+|turn|31
+|
+|move|p1a: Prominence|Close Combat|p2a: Suicune
+|-crit|p2a: Suicune
+|-damage|p2a: Suicune|79\/404
+|-unboost|p1a: Prominence|def|1
+|-unboost|p1a: Prominence|spd|1
+|move|p2a: Suicune|Scald|p1a: Prominence
+|-supereffective|p1a: Prominence
+|-damage|p1a: Prominence|0 fnt
+|faint|p1a: Prominence
+|
+|-heal|p2a: Suicune|104\/404|[from] item: Leftovers
+|
+|switch|p1a: Diva|Gastrodon, F|61\/400
+|-damage|p1a: Diva|36\/400|[from] Stealth Rock
+|turn|32
+|chat|Acemanassasin|alright lets do this
+|
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|move|p1a: Diva|Recover|p1a: Diva
+|-heal|p1a: Diva|236\/400
+|
+|-heal|p1a: Diva|261\/400|[from] item: Leftovers
+|turn|33
+|
+|cant|p2a: Suicune|slp
+|move|p1a: Diva|Recover|p1a: Diva
+|-heal|p1a: Diva|400\/400
+|
+|turn|34
+|
+|switch|p1a: Drag trio|Hydreigon, F|285\/325
+|-damage|p1a: Drag trio|245\/325|[from] Stealth Rock
+|cant|p2a: Suicune|slp
+|
+|turn|35
+|
+|move|p1a: Drag trio|Dark Pulse|p2a: Suicune
+|-damage|p2a: Suicune|217\/404 slp
+|-curestatus|p2a: Suicune|slp
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p2a: Suicune|242\/404|[from] item: Leftovers
+|turn|36
+|
+|switch|p1a: Diva|Gastrodon, F|400\/400
+|-damage|p1a: Diva|375\/400|[from] Stealth Rock
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|
+|-heal|p1a: Diva|400\/400|[from] item: Leftovers
+|turn|37
+|
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Rest|p2a: Suicune|[from]Sleep Talk
+|-fail|p2a: Suicune
+|move|p1a: Diva|Clear Smog|p2a: Suicune
+|-damage|p2a: Suicune|379\/404 slp
+|-clearboost|p2a: Suicune
+|
+|-heal|p2a: Suicune|404\/404 slp|[from] item: Leftovers
+|turn|38
+|
+|switch|p1a: Drag trio|Hydreigon, F|245\/325
+|-damage|p1a: Drag trio|205\/325|[from] Stealth Rock
+|cant|p2a: Suicune|slp
+|
+|turn|39
+|
+|move|p1a: Drag trio|Draco Meteor|p2a: Suicune
+|-damage|p2a: Suicune|80\/404 slp
+|-unboost|p1a: Drag trio|spa|2
+|-curestatus|p2a: Suicune|slp
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p2a: Suicune|105\/404|[from] item: Leftovers
+|turn|40
+|
+|move|p1a: Drag trio|Draco Meteor|p2a: Suicune
+|-damage|p2a: Suicune|9\/404
+|-unboost|p1a: Drag trio|spa|2
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|
+|turn|41
+|
+|switch|p1a: Diva|Gastrodon, F|400\/400
+|-damage|p1a: Diva|375\/400|[from] Stealth Rock
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Scald|p1a: Diva|[from]Sleep Talk
+|-boost|p1a: Diva|spa|1|[from] ability: Storm Drain
+|
+|-heal|p1a: Diva|400\/400|[from] item: Leftovers
+|turn|42
+|
+|cant|p2a: Suicune|slp
+|move|p1a: Diva|Toxic|p2a: Suicune
+|-fail|p2a: Suicune
+|
+|turn|43
+|
+|-curestatus|p2a: Suicune|slp
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: Diva|Clear Smog|p2a: Suicune
+|-damage|p2a: Suicune|377\/404
+|-clearboost|p2a: Suicune
+|
+|-heal|p2a: Suicune|402\/404|[from] item: Leftovers
+|turn|44
+|
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|move|p1a: Diva|Toxic|p2a: Suicune|[miss]
+|-miss|p1a: Diva|p2a: Suicune
+|
+|turn|45
+|
+|switch|p1a: Nymphy|Blissey, F|714\/714
+|-damage|p1a: Nymphy|625\/714|[from] Stealth Rock
+|cant|p2a: Suicune|slp
+|
+|-heal|p1a: Nymphy|669\/714|[from] item: Leftovers
+|turn|46
+|
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Calm Mind|p2a: Suicune|[from]Sleep Talk
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: Nymphy|Seismic Toss|p2a: Suicune
+|-damage|p2a: Suicune|304\/404 slp
+|
+|-heal|p2a: Suicune|329\/404 slp|[from] item: Leftovers
+|-heal|p1a: Nymphy|713\/714|[from] item: Leftovers
+|turn|47
+|
+|-curestatus|p2a: Suicune|slp
+|move|p2a: Suicune|Scald|p1a: Nymphy
+|-damage|p1a: Nymphy|607\/714
+|move|p1a: Nymphy|Thunder Wave|p2a: Suicune
+|-status|p2a: Suicune|par
+|
+|-heal|p1a: Nymphy|651\/714|[from] item: Leftovers
+|-heal|p2a: Suicune|354\/404 par|[from] item: Leftovers
+|turn|48
+|
+|move|p1a: Nymphy|Seismic Toss|p2a: Suicune
+|-damage|p2a: Suicune|254\/404 par
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p1a: Nymphy|695\/714|[from] item: Leftovers
+|-heal|p2a: Suicune|279\/404 par|[from] item: Leftovers
+|turn|49
+|
+|move|p1a: Nymphy|Seismic Toss|p2a: Suicune
+|-damage|p2a: Suicune|179\/404 par
+|cant|p2a: Suicune|par
+|
+|-heal|p1a: Nymphy|714\/714|[from] item: Leftovers
+|-heal|p2a: Suicune|204\/404 par|[from] item: Leftovers
+|turn|50
+|
+|move|p1a: Nymphy|Seismic Toss|p2a: Suicune
+|-damage|p2a: Suicune|104\/404 par
+|move|p2a: Suicune|Scald|p1a: Nymphy
+|-damage|p1a: Nymphy|590\/714
+|
+|-heal|p1a: Nymphy|634\/714|[from] item: Leftovers
+|-heal|p2a: Suicune|129\/404 par|[from] item: Leftovers
+|turn|51
+|
+|move|p1a: Nymphy|Seismic Toss|p2a: Suicune
+|-damage|p2a: Suicune|29\/404 par
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|
+|-heal|p1a: Nymphy|678\/714|[from] item: Leftovers
+|turn|52
+|
+|switch|p1a: Diva|Gastrodon, F|400\/400
+|-damage|p1a: Diva|375\/400|[from] Stealth Rock
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Scald|p1a: Diva|[from]Sleep Talk
+|-boost|p1a: Diva|spa|1|[from] ability: Storm Drain
+|
+|-heal|p1a: Diva|400\/400|[from] item: Leftovers
+|turn|53
+|
+|cant|p2a: Suicune|slp
+|move|p1a: Diva|Clear Smog|p2a: Suicune
+|-damage|p2a: Suicune|380\/404 slp
+|-clearboost|p2a: Suicune
+|
+|-heal|p2a: Suicune|404\/404 slp|[from] item: Leftovers
+|turn|54
+|
+|-curestatus|p2a: Suicune|slp
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: Diva|Scald|p2a: Suicune
+|-resisted|p2a: Suicune
+|-damage|p2a: Suicune|363\/404
+|
+|-heal|p2a: Suicune|388\/404|[from] item: Leftovers
+|turn|55
+|
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|move|p1a: Diva|Clear Smog|p2a: Suicune
+|-damage|p2a: Suicune|369\/404 slp
+|-clearboost|p2a: Suicune
+|
+|-heal|p2a: Suicune|394\/404 slp|[from] item: Leftovers
+|turn|56
+|
+|switch|p1a: Drag trio|Hydreigon, F|205\/325
+|-damage|p1a: Drag trio|165\/325|[from] Stealth Rock
+|cant|p2a: Suicune|slp
+|
+|-heal|p2a: Suicune|404\/404 slp|[from] item: Leftovers
+|turn|57
+|
+|move|p1a: Drag trio|Dark Pulse|p2a: Suicune
+|-damage|p2a: Suicune|220\/404 slp
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Rest|p2a: Suicune|[from]Sleep Talk
+|-fail|p2a: Suicune
+|
+|-heal|p2a: Suicune|245\/404 slp|[from] item: Leftovers
+|turn|58
+|
+|move|p1a: Drag trio|Dark Pulse|p2a: Suicune
+|-damage|p2a: Suicune|58\/404 slp
+|-curestatus|p2a: Suicune|slp
+|cant|p2a: Suicune|flinch
+|
+|-heal|p2a: Suicune|83\/404|[from] item: Leftovers
+|turn|59
+|chat|Acemanassasin|There it is
+|
+|move|p1a: Drag trio|Dark Pulse|p2a: Suicune
+|-damage|p2a: Suicune|0 fnt
+|faint|p2a: Suicune
+|
+|
+|switch|p2a: Ambipom|Ambipom, M|197\/291
+|-damage|p2a: Ambipom|161\/291|[from] Stealth Rock
+|turn|60
+|
+|move|p2a: Ambipom|Fake Out|p1a: Drag trio
+|-damage|p1a: Drag trio|36\/325
+|-damage|p2a: Ambipom|132\/291|[from] item: Life Orb
+|cant|p1a: Drag trio|flinch
+|
+|turn|61
+|
+|move|p2a: Ambipom|Power-Up Punch|p1a: Drag trio
+|-crit|p1a: Drag trio
+|-supereffective|p1a: Drag trio
+|-damage|p1a: Drag trio|0 fnt
+|-boost|p2a: Ambipom|atk|1
+|-damage|p2a: Ambipom|103\/291|[from] item: Life Orb
+|faint|p1a: Drag trio
+|
+|
+|switch|p1a: Diva|Gastrodon, F|400\/400
+|-damage|p1a: Diva|375\/400|[from] Stealth Rock
+|turn|62
+|
+|move|p2a: Ambipom|Power-Up Punch|p1a: Diva
+|-damage|p1a: Diva|265\/400
+|-boost|p2a: Ambipom|atk|1
+|-damage|p2a: Ambipom|74\/291|[from] item: Life Orb
+|move|p1a: Diva|Scald|p2a: Ambipom
+|-damage|p2a: Ambipom|0 fnt
+|faint|p2a: Ambipom
+|
+|win|SpecsPrimeape
+|raw|Ladder updating...
+|raw|SpecsPrimeape's rating: 1348 &rarr; <strong>1370<\/strong><br \/>(+22 for winning)
+|raw|Acemanassasin's rating: 1387 &rarr; <strong>1365<\/strong><br \/>(-22 for losing)

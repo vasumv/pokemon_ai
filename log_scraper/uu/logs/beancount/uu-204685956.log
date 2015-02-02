@@ -1,0 +1,159 @@
+|join|beancount
+|join|riteshe
+|player|p1|beancount|265
+|player|p2|riteshe|101
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Sharpedo, F
+|poke|p1|Machamp, F
+|poke|p1|Swampert, M
+|poke|p1|Chandelure, F
+|poke|p1|Roserade, F
+|poke|p1|Cloyster, F
+|poke|p2|Medicham, M
+|poke|p2|Honchkrow, M
+|poke|p2|Azelf
+|poke|p2|Hydreigon, M
+|poke|p2|Chandelure, F
+|poke|p2|Starmie
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Cloyster|Cloyster, F|241\/241
+|switch|p2a: Azelf|Azelf|291\/291
+|turn|1
+|
+|move|p2a: Azelf|Taunt|p1a: Cloyster
+|-start|p1a: Cloyster|move: Taunt
+|cant|p1a: Cloyster|move: Taunt|Shell Smash
+|
+|turn|2
+|
+|move|p2a: Azelf|Stealth Rock|p1a: Cloyster
+|-sidestart|p1: beancount|move: Stealth Rock
+|move|p1a: Cloyster|Icicle Spear|p2a: Azelf
+|-damage|p2a: Azelf|227\/291
+|-damage|p2a: Azelf|166\/291
+|-damage|p2a: Azelf|106\/291
+|-damage|p2a: Azelf|46\/291
+|-damage|p2a: Azelf|0 fnt
+|-hitcount|p2a: Azelf|5
+|faint|p2a: Azelf
+|
+|
+|switch|p2a: Medicham|Medicham, M|261\/261
+|turn|3
+|
+|switch|p1a: Chandelure|Chandelure, F|261\/261
+|-damage|p1a: Chandelure|196\/261|[from] Stealth Rock
+|detailschange|p2a: Medicham|Medicham-Mega, M
+|-mega|p2a: Medicham|Medicham|Medichamite
+|move|p2a: Medicham|Psycho Cut|p1a: Chandelure
+|-crit|p1a: Chandelure
+|-damage|p1a: Chandelure|0 fnt
+|faint|p1a: Chandelure
+|
+|
+|switch|p1a: Swampert|Swampert, M|403\/403
+|-damage|p1a: Swampert|378\/403|[from] Stealth Rock
+|turn|4
+|
+|move|p2a: Medicham|High Jump Kick|p1a: Swampert
+|-damage|p1a: Swampert|95\/403
+|move|p1a: Swampert|Scald|p2a: Medicham
+|-damage|p2a: Medicham|146\/261
+|-status|p2a: Medicham|brn
+|
+|-heal|p1a: Swampert|120\/403|[from] item: Leftovers
+|-damage|p2a: Medicham|114\/261 brn|[from] brn
+|turn|5
+|
+|move|p2a: Medicham|High Jump Kick|p1a: Swampert|[miss]
+|-miss|p2a: Medicham|p1a: Swampert
+|-damage|p2a: Medicham|0 fnt|[from] highjumpkick
+|faint|p2a: Medicham
+|move|p1a: Swampert|Stealth Rock|p2: Medicham
+|-sidestart|p2: riteshe|move: Stealth Rock
+|
+|-heal|p1a: Swampert|145\/403|[from] item: Leftovers
+|
+|switch|p2a: Honchkrow|Honchkrow, M|341\/341
+|-damage|p2a: Honchkrow|256\/341|[from] Stealth Rock
+|turn|6
+|
+|move|p2a: Honchkrow|Brave Bird|p1a: Swampert
+|-damage|p1a: Swampert|0 fnt
+|-damage|p2a: Honchkrow|208\/341|[from] recoil|[of] p1a: Swampert
+|-damage|p2a: Honchkrow|174\/341|[from] item: Life Orb
+|faint|p1a: Swampert
+|-boost|p2a: Honchkrow|atk|1|[from] ability: Moxie
+|
+|
+|switch|p1a: Sharpedo|Sharpedo, F|281\/281
+|-damage|p1a: Sharpedo|246\/281|[from] Stealth Rock
+|turn|7
+|
+|move|p1a: Sharpedo|Waterfall|p2a: Honchkrow
+|-damage|p2a: Honchkrow|0 fnt
+|faint|p2a: Honchkrow
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|
+|switch|p2a: Hydreigon|Hydreigon, M|325\/325
+|-damage|p2a: Hydreigon|285\/325|[from] Stealth Rock
+|turn|8
+|
+|move|p1a: Sharpedo|Protect|p1a: Sharpedo
+|-singleturn|p1a: Sharpedo|Protect
+|move|p2a: Hydreigon|Draco Meteor|p1a: Sharpedo
+|-activate|p1a: Sharpedo|Protect
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|9
+|
+|detailschange|p1a: Sharpedo|Sharpedo-Mega, F
+|-mega|p1a: Sharpedo|Sharpedo|Sharpedonite
+|move|p1a: Sharpedo|Ice Fang|p2a: Hydreigon
+|-supereffective|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|faint|p2a: Hydreigon
+|
+|c|âbeancount|oml
+|
+|switch|p2a: Starmie|Starmie|324\/324
+|-damage|p2a: Starmie|284\/324|[from] Stealth Rock
+|turn|10
+|
+|move|p1a: Sharpedo|Crunch|p2a: Starmie
+|-supereffective|p2a: Starmie
+|-damage|p2a: Starmie|0 fnt
+|faint|p2a: Starmie
+|
+|
+|switch|p2a: Chandelure|Chandelure, F|261\/261
+|-damage|p2a: Chandelure|196\/261|[from] Stealth Rock
+|turn|11
+|
+|move|p1a: Sharpedo|Crunch|p2a: Chandelure
+|-supereffective|p2a: Chandelure
+|-damage|p2a: Chandelure|0 fnt
+|faint|p2a: Chandelure
+|
+|win|beancount
+|raw|Ladder updating...
+|raw|beancount's rating: 1413 &rarr; <strong>1431<\/strong><br \/>(+18 for winning)
+|raw|riteshe's rating: 1379 &rarr; <strong>1361<\/strong><br \/>(-18 for losing)
+|leave|riteshe
+|player|p2

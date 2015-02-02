@@ -1,0 +1,342 @@
+|join|Brandonna
+|join|in the oven now
+|player|p1|Brandonna|101
+|player|p2|in the oven now|1
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|clearpoke
+|poke|p1|Sawk, M, shiny
+|poke|p1|Victini
+|poke|p1|Abomasnow, M, shiny
+|poke|p1|Swampert, F, shiny
+|poke|p1|Crobat, M, shiny
+|poke|p1|Jirachi, shiny
+|poke|p2|Jellicent, M
+|poke|p2|Hippowdon, M
+|poke|p2|Stoutland, F
+|poke|p2|Flygon, M
+|poke|p2|Jirachi
+|poke|p2|Durant, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Sock|Sawk, M, shiny|292\/292
+|switch|p2a: Flygon|Flygon, M|301\/301
+|turn|1
+|
+|move|p2a: Flygon|U-turn|p1a: Sock
+|-resisted|p1a: Sock
+|-damage|p1a: Sock|249\/292
+|
+|switch|p2a: Hippowdon|Hippowdon, M|420\/420
+|-weather|Sandstorm
+|move|p1a: Sock|Knock Off|p2a: Hippowdon
+|-damage|p2a: Hippowdon|339\/420
+|-enditem|p2a: Hippowdon|Smooth Rock|[from] move: Knock Off|[of] p1a: Sock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Sock|231\/292|[from] sandstorm
+|turn|2
+|
+|switch|p1a: Frosty|Abomasnow, M, shiny|321\/321
+|-weather|Hail
+|move|p2a: Hippowdon|Stealth Rock|p1a: Frosty
+|-sidestart|p1: Brandonna|move: Stealth Rock
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Hippowdon|313\/420|[from] hail
+|turn|3
+|
+|switch|p2a: Durant|Durant, M|265\/265
+|-formechange|p1a: Frosty|Abomasnow-Mega
+|message|Abomasnow has Mega Evolved into Mega Abomasnow!
+|move|p1a: Frosty|Earthquake|p2a: Durant
+|-damage|p2a: Durant|151\/265
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Durant|135\/265|[from] hail
+|turn|4
+|
+|switch|p2a: Hippowdon|Hippowdon, M|313\/420
+|-weather|Sandstorm
+|switch|p1a: FLINCHINATOR|Jirachi, shiny|342\/342
+|-damage|p1a: FLINCHINATOR|321\/342|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: FLINCHINATOR|342\/342|[from] item: Leftovers
+|turn|5
+|
+|switch|p1a: FlyingRat|Crobat, M, shiny|374\/374
+|-damage|p1a: FlyingRat|281\/374|[from] Stealth Rock
+|switch|p2a: Durant|Durant, M|135\/265
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: FlyingRat|258\/374|[from] sandstorm
+|-heal|p1a: FlyingRat|281\/374|[from] item: Black Sludge
+|turn|6
+|
+|move|p2a: Durant|Iron Head|p1a: FlyingRat
+|-damage|p1a: FlyingRat|38\/374
+|cant|p1a: FlyingRat|flinch
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: FlyingRat|15\/374|[from] sandstorm
+|-heal|p1a: FlyingRat|38\/374|[from] item: Black Sludge
+|turn|7
+|chat|Brandonna|should have gotten innner focus
+|
+|move|p2a: Durant|Iron Head|p1a: FlyingRat|[miss]
+|-miss|p2a: Durant|p1a: FlyingRat
+|move|p1a: FlyingRat|Defog|p2a: Durant
+|-unboost|p2a: Durant|evasion|1
+|-sideend|p1: Brandonna|Stealth Rock|[from] move: Defog|[of] p1a: FlyingRat
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: FlyingRat|15\/374|[from] sandstorm
+|-heal|p1a: FlyingRat|38\/374|[from] item: Black Sludge
+|turn|8
+|
+|switch|p1a: Card|Victini|341\/341
+|move|p2a: Durant|Hone Claws|p2a: Durant
+|-boost|p2a: Durant|atk|1
+|-boost|p2a: Durant|accuracy|1
+|
+|-weather|none
+|turn|9
+|
+|move|p1a: Card|V-create|p2a: Durant
+|-supereffective|p2a: Durant
+|-damage|p2a: Durant|0 fnt
+|-unboost|p1a: Card|def|1
+|-unboost|p1a: Card|spd|1
+|-unboost|p1a: Card|spe|1
+|faint|p2a: Durant
+|
+|
+|switch|p2a: Stoutland|Stoutland, F|311\/311
+|turn|10
+|
+|move|p2a: Stoutland|Pursuit|p1a: Card|[from]Pursuit
+|-supereffective|p1a: Card
+|-damage|p1a: Card|0 fnt
+|faint|p1a: Card
+|
+|
+|switch|p1a: MudPounder|Swampert, F, shiny|401\/401
+|turn|11
+|
+|switch|p2a: Jellicent|Jellicent, M|385\/385
+|move|p1a: MudPounder|Earthquake|p2a: Jellicent
+|-damage|p2a: Jellicent|55\/385
+|
+|-heal|p2a: Jellicent|79\/385|[from] item: Leftovers
+|turn|12
+|
+|switch|p2a: Flygon|Flygon, M|301\/301
+|switch|p1a: Frosty|Abomasnow, M, shiny|321\/321
+|-formechange|p1a: Frosty|Abomasnow-Mega
+|-weather|Hail
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Flygon|283\/301|[from] hail
+|turn|13
+|
+|switch|p2a: Hippowdon|Hippowdon, M|313\/420
+|-weather|Sandstorm
+|move|p1a: Frosty|Ice Shard|p2a: Hippowdon
+|-supereffective|p2a: Hippowdon
+|-damage|p2a: Hippowdon|211\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Frosty|301\/321|[from] sandstorm
+|turn|14
+|
+|switch|p1a: FlyingRat|Crobat, M, shiny|38\/374
+|move|p2a: Hippowdon|Stealth Rock|p1a: FlyingRat
+|-sidestart|p1: Brandonna|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: FlyingRat|15\/374|[from] sandstorm
+|-heal|p1a: FlyingRat|38\/374|[from] item: Black Sludge
+|turn|15
+|
+|move|p1a: FlyingRat|Roost|p1a: FlyingRat
+|-heal|p1a: FlyingRat|225\/374
+|move|p2a: Hippowdon|Stealth Rock|p1a: FlyingRat
+|-fail|p1a: FlyingRat
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: FlyingRat|202\/374|[from] sandstorm
+|-heal|p1a: FlyingRat|225\/374|[from] item: Black Sludge
+|turn|16
+|
+|move|p1a: FlyingRat|Defog|p2a: Hippowdon
+|-unboost|p2a: Hippowdon|evasion|1
+|-sideend|p1: Brandonna|Stealth Rock|[from] move: Defog|[of] p1a: FlyingRat
+|move|p2a: Hippowdon|Slack Off|p2a: Hippowdon
+|-heal|p2a: Hippowdon|420\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: FlyingRat|202\/374|[from] sandstorm
+|-heal|p1a: FlyingRat|225\/374|[from] item: Black Sludge
+|turn|17
+|
+|switch|p2a: Jirachi|Jirachi|351\/351
+|move|p1a: FlyingRat|Taunt|p2a: Jirachi
+|-start|p2a: Jirachi|move: Taunt
+|
+|-weather|none
+|-heal|p1a: FlyingRat|248\/374|[from] item: Black Sludge
+|turn|18
+|
+|switch|p1a: FLINCHINATOR|Jirachi, shiny|342\/342
+|move|p2a: Jirachi|Shadow Ball|p1a: FLINCHINATOR
+|-supereffective|p1a: FLINCHINATOR
+|-damage|p1a: FLINCHINATOR|121\/342
+|-unboost|p1a: FLINCHINATOR|spd|1
+|-damage|p2a: Jirachi|316\/351|[from] item: Life Orb
+|
+|-heal|p1a: FLINCHINATOR|142\/342|[from] item: Leftovers
+|turn|19
+|
+|move|p1a: FLINCHINATOR|Thunder Wave|p2a: Jirachi
+|-status|p2a: Jirachi|par
+|move|p2a: Jirachi|Shadow Ball|p1a: FLINCHINATOR
+|-supereffective|p1a: FLINCHINATOR
+|-damage|p1a: FLINCHINATOR|0 fnt
+|-damage|p2a: Jirachi|281\/351 par|[from] item: Life Orb
+|faint|p1a: FLINCHINATOR
+|
+|
+|switch|p1a: Sock|Sawk, M, shiny|231\/292
+|turn|20
+|
+|switch|p2a: Hippowdon|Hippowdon, M|420\/420
+|-weather|Sandstorm
+|move|p1a: Sock|Knock Off|p2a: Hippowdon
+|-damage|p2a: Hippowdon|366\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Sock|213\/292|[from] sandstorm
+|turn|21
+|
+|switch|p1a: Frosty|Abomasnow, M, shiny|301\/321
+|-formechange|p1a: Frosty|Abomasnow-Mega
+|-weather|Hail
+|move|p2a: Hippowdon|Stealth Rock|p1a: Frosty
+|-sidestart|p1: Brandonna|move: Stealth Rock
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Hippowdon|340\/420|[from] hail
+|turn|22
+|
+|switch|p2a: Jellicent|Jellicent, M|79\/385
+|move|p1a: Frosty|Earthquake|p2a: Jellicent
+|-damage|p2a: Jellicent|0 fnt
+|faint|p2a: Jellicent
+|
+|-weather|Hail|[upkeep]
+|
+|switch|p2a: Hippowdon|Hippowdon, M|340\/420
+|-weather|Sandstorm
+|turn|23
+|
+|move|p1a: Frosty|Giga Drain|p2a: Hippowdon
+|-supereffective|p2a: Hippowdon
+|-damage|p2a: Hippowdon|0 fnt
+|-heal|p1a: Frosty|321\/321|[from] drain|[of] p2a: Hippowdon
+|faint|p2a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Frosty|301\/321|[from] sandstorm
+|
+|switch|p2a: Stoutland|Stoutland, F|311\/311
+|turn|24
+|
+|switch|p1a: FlyingRat|Crobat, M, shiny|248\/374
+|-damage|p1a: FlyingRat|155\/374|[from] Stealth Rock
+|move|p2a: Stoutland|Return|p1a: FlyingRat
+|-damage|p1a: FlyingRat|0 fnt
+|faint|p1a: FlyingRat
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: MudPounder|Swampert, F, shiny|401\/401
+|-damage|p1a: MudPounder|376\/401|[from] Stealth Rock
+|turn|25
+|
+|switch|p2a: Jirachi|Jirachi|281\/351 par
+|move|p1a: MudPounder|Waterfall|p2a: Jirachi
+|-damage|p2a: Jirachi|64\/351 par
+|
+|-weather|Sandstorm|[upkeep]
+|turn|26
+|
+|move|p1a: MudPounder|Waterfall|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|faint|p2a: Jirachi
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Flygon|Flygon, M|283\/301
+|turn|27
+|
+|switch|p1a: Sock|Sawk, M, shiny|213\/292
+|-damage|p1a: Sock|195\/292|[from] Stealth Rock
+|move|p2a: Flygon|Outrage|p1a: Sock
+|-damage|p1a: Sock|0 fnt
+|faint|p1a: Sock
+|
+|-weather|none
+|
+|switch|p1a: Frosty|Abomasnow, M, shiny|301\/321
+|-formechange|p1a: Frosty|Abomasnow-Mega
+|-damage|p1a: Frosty|221\/321|[from] Stealth Rock
+|-weather|Hail
+|turn|28
+|
+|move|p1a: Frosty|Ice Shard|p2a: Flygon
+|-supereffective|p2a: Flygon
+|-damage|p2a: Flygon|0 fnt
+|faint|p2a: Flygon
+|
+|-weather|Hail|[upkeep]
+|
+|switch|p2a: Stoutland|Stoutland, F|311\/311
+|turn|29
+|
+|move|p1a: Frosty|Ice Shard|p2a: Stoutland
+|-damage|p2a: Stoutland|226\/311
+|move|p2a: Stoutland|Return|p1a: Frosty
+|-damage|p1a: Frosty|0 fnt
+|faint|p1a: Frosty
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Stoutland|207\/311|[from] hail
+|
+|switch|p1a: MudPounder|Swampert, F, shiny|376\/401
+|-damage|p1a: MudPounder|351\/401|[from] Stealth Rock
+|turn|30
+|
+|move|p2a: Stoutland|Return|p1a: MudPounder
+|-damage|p1a: MudPounder|65\/401
+|move|p1a: MudPounder|Earthquake|p2a: Stoutland
+|-damage|p2a: Stoutland|0 fnt
+|faint|p2a: Stoutland
+|
+|win|Brandonna
+|raw|Ladder updating...
+|chat|Brandonna|gg
+|raw|Brandonna's rating: 1389 &rarr; <strong>1416<\/strong><br \/>(+27 for winning)
+|raw|in the oven now's rating: 1522 &rarr; <strong>1495<\/strong><br \/>(-27 for losing)
+|leave|in the oven now
+|player|p2

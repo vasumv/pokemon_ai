@@ -1,0 +1,349 @@
+|join|Acemanassasin
+|join|cantgetgood
+|player|p1|Acemanassasin|120
+|player|p2|cantgetgood|7
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Whimsicott, F
+|poke|p1|Jirachi
+|poke|p1|Tentacruel, M
+|poke|p1|Machamp, F
+|poke|p1|Sharpedo, F
+|poke|p1|Hippowdon, F
+|poke|p2|Aerodactyl, F
+|poke|p2|Hydreigon, F
+|poke|p2|Chesnaught, M
+|poke|p2|Machamp, M
+|poke|p2|Jirachi
+|poke|p2|Krookodile, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Machamp|Machamp, F|343\/343
+|switch|p2a: Jeff|Chesnaught, M|320\/320
+|turn|1
+|
+|move|p2a: Jeff|Substitute|p2a: Jeff
+|-start|p2a: Jeff|Substitute
+|-damage|p2a: Jeff|240\/320
+|move|p1a: Machamp|Ice Punch|p2a: Jeff
+|-supereffective|p2a: Jeff
+|-end|p2a: Jeff|Substitute
+|
+|turn|2
+|
+|move|p2a: Jeff|Drain Punch|p1a: Machamp
+|-damage|p1a: Machamp|207\/343
+|-heal|p2a: Jeff|308\/320|[from] drain|[of] p1a: Machamp
+|move|p1a: Machamp|Ice Punch|p2a: Jeff
+|-crit|p2a: Jeff
+|-supereffective|p2a: Jeff
+|-damage|p2a: Jeff|38\/320
+|-enditem|p2a: Jeff|Salac Berry|[eat]
+|-boost|p2a: Jeff|spe|1|[from] item: Salac Berry
+|
+|turn|3
+|
+|switch|p1a: Whimsicott|Whimsicott, F|280\/280
+|move|p2a: Jeff|Drain Punch|p1a: Whimsicott
+|-resisted|p1a: Whimsicott
+|-damage|p1a: Whimsicott|214\/280
+|-heal|p2a: Jeff|71\/320|[from] drain|[of] p1a: Whimsicott
+|
+|-heal|p1a: Whimsicott|231\/280|[from] item: Leftovers
+|turn|4
+|
+|move|p1a: Whimsicott|Encore|p2a: Jeff
+|-start|p2a: Jeff|Encore
+|move|p2a: Jeff|Drain Punch|p1a: Whimsicott
+|-resisted|p1a: Whimsicott
+|-damage|p1a: Whimsicott|164\/280
+|-heal|p2a: Jeff|105\/320|[from] drain|[of] p1a: Whimsicott
+|
+|-heal|p1a: Whimsicott|181\/280|[from] item: Leftovers
+|turn|5
+|
+|move|p2a: Jeff|Drain Punch|p1a: Whimsicott
+|-resisted|p1a: Whimsicott
+|-damage|p1a: Whimsicott|117\/280
+|-heal|p2a: Jeff|137\/320|[from] drain|[of] p1a: Whimsicott
+|move|p1a: Whimsicott|U-turn|p2a: Jeff
+|-damage|p2a: Jeff|108\/320
+|
+|switch|p1a: Jirachi|Jirachi|342\/342
+|
+|turn|6
+|
+|move|p1a: Jirachi|Zen Headbutt|p2a: Jeff|[miss]
+|-miss|p1a: Jirachi|p2a: Jeff
+|move|p2a: Jeff|Drain Punch|p1a: Jirachi
+|-damage|p1a: Jirachi|218\/342
+|-heal|p2a: Jeff|170\/320|[from] drain|[of] p1a: Jirachi
+|
+|-end|p2a: Jeff|Encore
+|turn|7
+|
+|move|p1a: Jirachi|Zen Headbutt|p2a: Jeff
+|-supereffective|p2a: Jeff
+|-damage|p2a: Jeff|0 fnt
+|faint|p2a: Jeff
+|
+|
+|switch|p2a: Jeff|Krookodile, M|393\/393
+|-ability|p2a: Jeff|Intimidate|[of] p1a: Jirachi
+|-unboost|p1a: Jirachi|atk|1
+|turn|8
+|
+|switch|p1a: Whimsicott|Whimsicott, F|117\/280
+|move|p2a: Jeff|Earthquake|p1a: Whimsicott
+|-resisted|p1a: Whimsicott
+|-damage|p1a: Whimsicott|0 fnt
+|-damage|p2a: Jeff|354\/393|[from] item: Life Orb
+|faint|p1a: Whimsicott
+|
+|
+|switch|p1a: Hippowdon|Hippowdon, F|420\/420
+|-weather|Sandstorm
+|turn|9
+|
+|move|p2a: Jeff|Knock Off|p1a: Hippowdon
+|-damage|p1a: Hippowdon|263\/420
+|-enditem|p1a: Hippowdon|Leftovers|[from] move: Knock Off|[of] p2a: Jeff
+|-damage|p2a: Jeff|315\/393|[from] item: Life Orb
+|move|p1a: Hippowdon|Toxic|p2a: Jeff|[miss]
+|-miss|p1a: Hippowdon|p2a: Jeff
+|
+|-weather|Sandstorm|[upkeep]
+|turn|10
+|
+|switch|p2a: Jeff|Jirachi|345\/345
+|move|p1a: Hippowdon|Stealth Rock|p2a: Jeff
+|-sidestart|p2: cantgetgood|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|11
+|
+|move|p2a: Jeff|Drain Punch|p1a: Hippowdon
+|-damage|p1a: Hippowdon|210\/420
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-heal|p1a: Hippowdon|420\/420
+|
+|-weather|Sandstorm|[upkeep]
+|turn|12
+|
+|switch|p2a: Jeff|Krookodile, M|315\/393
+|-damage|p2a: Jeff|291\/393|[from] Stealth Rock
+|-ability|p2a: Jeff|Intimidate|[of] p1a: Hippowdon
+|-unboost|p1a: Hippowdon|atk|1
+|move|p1a: Hippowdon|Toxic|p2a: Jeff
+|-status|p2a: Jeff|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Jeff|267\/393 tox|[from] psn
+|turn|13
+|
+|move|p2a: Jeff|Stealth Rock|p1a: Hippowdon
+|-sidestart|p1: Acemanassasin|move: Stealth Rock
+|move|p1a: Hippowdon|Earthquake|p2a: Jeff
+|-damage|p2a: Jeff|167\/393 tox
+|
+|-weather|none
+|-damage|p2a: Jeff|119\/393 tox|[from] psn
+|turn|14
+|
+|move|p2a: Jeff|Earthquake|p1a: Hippowdon
+|-crit|p1a: Hippowdon
+|-damage|p1a: Hippowdon|155\/420
+|-damage|p2a: Jeff|80\/393 tox|[from] item: Life Orb
+|move|p1a: Hippowdon|Toxic|p2a: Jeff
+|-fail|p2a: Jeff|tox
+|
+|-damage|p2a: Jeff|8\/393 tox|[from] psn
+|turn|15
+|
+|move|p2a: Jeff|Earthquake|p1a: Hippowdon
+|-damage|p1a: Hippowdon|0 fnt
+|-damage|p2a: Jeff|0 fnt|[from] item: Life Orb
+|faint|p1a: Hippowdon
+|faint|p2a: Jeff
+|
+|
+|switch|p2a: Jeff|Jirachi|345\/345
+|switch|p1a: Machamp|Machamp, F|207\/343
+|-damage|p2a: Jeff|324\/345|[from] Stealth Rock
+|-damage|p1a: Machamp|186\/343|[from] Stealth Rock
+|turn|16
+|
+|move|p2a: Jeff|Iron Head|p1a: Machamp
+|-damage|p1a: Machamp|53\/343
+|move|p1a: Machamp|Knock Off|p2a: Jeff
+|-supereffective|p2a: Jeff
+|-damage|p2a: Jeff|66\/345
+|-enditem|p2a: Jeff|Choice Scarf|[from] move: Knock Off|[of] p1a: Machamp
+|
+|turn|17
+|
+|switch|p1a: Tentacruel|Tentacruel, M|364\/364
+|-damage|p1a: Tentacruel|319\/364|[from] Stealth Rock
+|move|p2a: Jeff|Drain Punch|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|282\/364
+|-damage|p2a: Jeff|47\/345|[from] ability: Liquid Ooze|[of] p1a: Tentacruel
+|
+|-heal|p1a: Tentacruel|304\/364|[from] item: Black Sludge
+|turn|18
+|
+|move|p2a: Jeff|Healing Wish|p2a: Jeff
+|faint|p2a: Jeff
+|move|p1a: Tentacruel|Scald|p2: Jeff|[notarget]
+|-notarget
+|
+|-heal|p1a: Tentacruel|326\/364|[from] item: Black Sludge
+|c|âAcemanassasin|everyone is already fully healed lol?
+|
+|switch|p2a: Jeff|Machamp, M|384\/384
+|-heal|p2a: Jeff|384\/384|[from] move: Healing Wish
+|-damage|p2a: Jeff|360\/384|[from] Stealth Rock
+|turn|19
+|c|âcantgetgood|shhh just let it happen
+|
+|move|p1a: Tentacruel|Scald|p2a: Jeff
+|-damage|p2a: Jeff|282\/384
+|move|p2a: Jeff|Dynamic Punch|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|239\/364
+|-start|p1a: Tentacruel|confusion
+|
+|-heal|p1a: Tentacruel|261\/364|[from] item: Black Sludge
+|turn|20
+|c|âAcemanassasin|guts?
+|c|âcantgetgood|maybe haha
+|c|âAcemanassasin|nope
+|
+|-activate|p1a: Tentacruel|confusion
+|-damage|p1a: Tentacruel|238\/364|[from] confusion
+|move|p2a: Jeff|Knock Off|p1a: Tentacruel
+|-damage|p1a: Tentacruel|117\/364
+|-enditem|p1a: Tentacruel|Black Sludge|[from] move: Knock Off|[of] p2a: Jeff
+|
+|turn|21
+|
+|-activate|p1a: Tentacruel|confusion
+|-damage|p1a: Tentacruel|95\/364|[from] confusion
+|move|p2a: Jeff|Dynamic Punch|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|10\/364
+|
+|turn|22
+|
+|move|p2a: Jeff|Bullet Punch|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|0 fnt
+|faint|p1a: Tentacruel
+|
+|
+|switch|p1a: Machamp|Machamp, F|53\/343
+|-damage|p1a: Machamp|32\/343|[from] Stealth Rock
+|turn|23
+|c|âAcemanassasin|max speed?
+|
+|move|p1a: Machamp|Close Combat|p2a: Jeff
+|-damage|p2a: Jeff|18\/384
+|-unboost|p1a: Machamp|def|1
+|-unboost|p1a: Machamp|spd|1
+|move|p2a: Jeff|Knock Off|p1a: Machamp
+|-resisted|p1a: Machamp
+|-damage|p1a: Machamp|0 fnt
+|-enditem|p1a: Machamp|Assault Vest|[from] move: Knock Off|[of] p2a: Jeff
+|faint|p1a: Machamp
+|
+|c|âcantgetgood|nope
+|c|âAcemanassasin|:p
+|
+|switch|p1a: Sharpedo|Sharpedo, F|282\/282
+|-damage|p1a: Sharpedo|247\/282|[from] Stealth Rock
+|turn|24
+|
+|move|p2a: Jeff|Bullet Punch|p1a: Sharpedo
+|-resisted|p1a: Sharpedo
+|-damage|p1a: Sharpedo|200\/282
+|move|p1a: Sharpedo|Waterfall|p2a: Jeff
+|-damage|p2a: Jeff|0 fnt
+|faint|p2a: Jeff
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|
+|switch|p2a: Jeff|Hydreigon, F|325\/325
+|-damage|p2a: Jeff|285\/325|[from] Stealth Rock
+|turn|25
+|c|âAcemanassasin|neither was i lol
+|
+|move|p1a: Sharpedo|Protect|p1a: Sharpedo
+|-singleturn|p1a: Sharpedo|Protect
+|move|p2a: Jeff|U-turn|p1a: Sharpedo
+|-activate|p1a: Sharpedo|Protect
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|26
+|c|âcantgetgood|can u nt be so pro
+|c|âAcemanassasin|uhmm i could go on a roll of %
+|c|âcantgetgood|do it.
+|c|âAcemanassasin|or i could assume your scarfed
+|c|âcantgetgood|<3
+|c|âAcemanassasin|and hope for the best
+|
+|switch|p1a: Jirachi|Jirachi|218\/342
+|-damage|p1a: Jirachi|197\/342|[from] Stealth Rock
+|move|p2a: Jeff|U-turn|p1a: Jirachi
+|-damage|p1a: Jirachi|142\/342
+|
+|switch|p2a: Mega Jeff|Aerodactyl, F|301\/301
+|-damage|p2a: Mega Jeff|226\/301|[from] Stealth Rock
+|
+|turn|27
+|c|âAcemanassasin|rolls will decide this game
+|
+|detailschange|p2a: Mega Jeff|Aerodactyl-Mega, F
+|-mega|p2a: Mega Jeff|Aerodactyl|Aerodactylite
+|move|p1a: Jirachi|Iron Head|p2a: Mega Jeff
+|-supereffective|p2a: Mega Jeff
+|-damage|p2a: Mega Jeff|0 fnt
+|faint|p2a: Mega Jeff
+|
+|c|âcantgetgood|:[
+|
+|switch|p2a: Jeff|Hydreigon, F|285\/325
+|-damage|p2a: Jeff|245\/325|[from] Stealth Rock
+|turn|28
+|
+|move|p1a: Jirachi|Iron Head|p2a: Jeff
+|-crit|p2a: Jeff
+|-damage|p2a: Jeff|34\/325
+|cant|p2a: Jeff|flinch
+|
+|turn|29
+|c|âcantgetgood|gg
+|c|âAcemanassasin|or that gg
+|
+|move|p1a: Jirachi|Iron Head|p2a: Jeff
+|-damage|p2a: Jeff|0 fnt
+|faint|p2a: Jeff
+|
+|win|Acemanassasin
+|raw|Ladder updating...
+|raw|Acemanassasin's rating: 1441 &rarr; <strong>1457<\/strong><br \/>(+16 for winning)
+|raw|cantgetgood's rating: 1355 &rarr; <strong>1340<\/strong><br \/>(-15 for losing)
+|leave|cantgetgood
+|player|p2

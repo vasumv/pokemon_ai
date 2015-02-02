@@ -1,0 +1,354 @@
+|join|MaatMattos
+|join|Reverb
+|player|p1|MaatMattos|52
+|player|p2|Reverb|#reverb
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Manaphy
+|poke|p1|Cresselia, F
+|poke|p1|Ferrothorn, M
+|poke|p1|Landorus-Therian, M
+|poke|p1|Gyarados, M
+|poke|p1|Keldeo-Resolute
+|poke|p2|Empoleon, M
+|poke|p2|Tyranitar, M
+|poke|p2|Charizard, M
+|poke|p2|Keldeo
+|poke|p2|Kyurem-Black
+|poke|p2|Landorus-Therian, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Gyarados|Gyarados, M|331\/331
+|switch|p2a: Keldeo|Keldeo|323\/323
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Keldeo
+|-unboost|p2a: Keldeo|atk|1
+|turn|1
+|
+|switch|p1a: Cresselia|Cresselia, F|443\/443
+|move|p2a: Keldeo|Icy Wind|p1a: Cresselia
+|-damage|p1a: Cresselia|383\/443
+|-unboost|p1a: Cresselia|spe|1
+|
+|turn|2
+|
+|switch|p2a: Charizard|Charizard, M|297\/297
+|move|p1a: Cresselia|Thunder Wave|p2a: Charizard
+|-status|p2a: Charizard|par
+|
+|turn|3
+|
+|detailschange|p2a: Charizard|Charizard-Mega-Y, M
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p1a: Cresselia|Light Screen|p1a: Cresselia
+|-sidestart|p1: MaatMattos|move: Light Screen
+|cant|p2a: Charizard|par
+|
+|-weather|SunnyDay|[upkeep]
+|turn|4
+|
+|move|p1a: Cresselia|Reflect|p1a: Cresselia
+|-sidestart|p1: MaatMattos|Reflect
+|move|p2a: Charizard|Flamethrower|p1a: Cresselia
+|-damage|p1a: Cresselia|291\/443
+|
+|-weather|SunnyDay|[upkeep]
+|turn|5
+|
+|switch|p1a: Manaphy|Manaphy|341\/341
+|cant|p2a: Charizard|par
+|
+|-weather|SunnyDay|[upkeep]
+|turn|6
+|
+|switch|p2a: Empoleon|Empoleon, M|372\/372
+|move|p1a: Manaphy|Rain Dance|p1a: Manaphy
+|-weather|RainDance
+|
+|-weather|RainDance|[upkeep]
+|turn|7
+|
+|move|p1a: Manaphy|Tail Glow|p1a: Manaphy
+|-boost|p1a: Manaphy|spa|3
+|move|p2a: Empoleon|Stealth Rock|p1a: Manaphy
+|-sidestart|p1: MaatMattos|move: Stealth Rock
+|
+|-weather|RainDance|[upkeep]
+|turn|8
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|327\/327
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Manaphy
+|-unboost|p1a: Manaphy|atk|1
+|move|p1a: Manaphy|Scald|p2a: Landorus-Therian
+|-crit|p2a: Landorus-Therian
+|-supereffective|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|faint|p2a: Landorus-Therian
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p2a: Empoleon|Empoleon, M|372\/372
+|turn|9
+|
+|move|p1a: Manaphy|Scald|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|154\/372
+|move|p2a: Empoleon|Roar|p1a: Manaphy
+|drag|p1a: Landorus-Therian|Landorus-Therian, M|381\/381
+|-damage|p1a: Landorus-Therian|334\/381|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Empoleon
+|-unboost|p2a: Empoleon|atk|1
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Empoleon|177\/372|[from] item: Leftovers
+|turn|10
+|
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Empoleon
+|-sidestart|p2: Reverb|move: Stealth Rock
+|move|p2a: Empoleon|Scald|p1a: Landorus-Therian
+|-supereffective|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|141\/381
+|-status|p1a: Landorus-Therian|brn
+|
+|-weather|none
+|-heal|p2a: Empoleon|200\/372|[from] item: Leftovers
+|-damage|p1a: Landorus-Therian|94\/381 brn|[from] brn
+|-sideend|p1: MaatMattos|move: Light Screen
+|turn|11
+|
+|move|p1a: Landorus-Therian|Earthquake|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|68\/372
+|move|p2a: Empoleon|Defog|p1a: Landorus-Therian
+|-unboost|p1a: Landorus-Therian|evasion|1
+|-sideend|p1: MaatMattos|Reflect
+|-sideend|p1: MaatMattos|Reflect|[from] move: Defog|[of] p1a: Landorus-Therian
+|-sideend|p1: MaatMattos|Stealth Rock|[from] move: Defog|[of] p1a: Landorus-Therian
+|-sideend|p2: Reverb|Stealth Rock|[from] move: Defog|[of] p2a: Empoleon
+|
+|-heal|p2a: Empoleon|91\/372|[from] item: Leftovers
+|-damage|p1a: Landorus-Therian|47\/381 brn|[from] brn
+|turn|12
+|
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Empoleon
+|-sidestart|p2: Reverb|move: Stealth Rock
+|move|p2a: Empoleon|Defog|p1a: Landorus-Therian
+|-unboost|p1a: Landorus-Therian|evasion|1
+|-sideend|p2: Reverb|Stealth Rock|[from] move: Defog|[of] p2a: Empoleon
+|
+|-heal|p2a: Empoleon|114\/372|[from] item: Leftovers
+|-damage|p1a: Landorus-Therian|0 fnt|[from] brn
+|faint|p1a: Landorus-Therian
+|
+|switch|p1a: Keldeo-Resolute|Keldeo-Resolute|323\/323
+|turn|13
+|
+|move|p1a: Keldeo-Resolute|Secret Sword|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|0 fnt
+|faint|p2a: Empoleon
+|
+|
+|switch|p2a: Charizard|Charizard-Mega-Y, M|297\/297 par
+|-weather|SunnyDay
+|turn|14
+|join|Squirrelll
+|
+|switch|p1a: Cresselia|Cresselia, F|291\/443
+|move|p2a: Charizard|Flamethrower|p1a: Cresselia
+|-crit|p1a: Cresselia
+|-damage|p1a: Cresselia|32\/443
+|
+|-weather|SunnyDay|[upkeep]
+|turn|15
+|
+|switch|p2a: Tyranitar|Tyranitar, M|383\/383
+|-weather|Sandstorm
+|move|p1a: Cresselia|Light Screen|p1a: Cresselia
+|-sidestart|p1: MaatMattos|move: Light Screen
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Cresselia|5\/443|[from] sandstorm
+|turn|16
+|c| Squirrelll|is that av lol
+|
+|switch|p2a: Keldeo|Keldeo|323\/323
+|move|p1a: Cresselia|Reflect|p1a: Cresselia
+|-sidestart|p1: MaatMattos|Reflect
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Keldeo|303\/323|[from] sandstorm
+|-damage|p1a: Cresselia|0 fnt|[from] sandstorm
+|faint|p1a: Cresselia
+|join|I'm Rick Astley
+|c| Squirrelll|wait why didnt you kill it with char
+|
+|switch|p1a: Keldeo-Resolute|Keldeo-Resolute|323\/323
+|turn|17
+|c|âReverb|idk moonlight
+|join|craing _;
+|
+|move|p2a: Keldeo|Secret Sword|p1a: Keldeo-Resolute
+|-damage|p1a: Keldeo-Resolute|190\/323
+|move|p1a: Keldeo-Resolute|Secret Sword|p2a: Keldeo
+|-damage|p2a: Keldeo|138\/323
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Keldeo|118\/323|[from] sandstorm
+|-damage|p1a: Keldeo-Resolute|170\/323|[from] sandstorm
+|-heal|p1a: Keldeo-Resolute|190\/323|[from] item: Leftovers
+|turn|18
+|c| Squirrelll|your faster tho
+|c|âReverb|twave
+|c|âReverb|you need to pay attention
+|
+|move|p1a: Keldeo-Resolute|Secret Sword|p2a: Keldeo
+|-damage|p2a: Keldeo|0 fnt
+|faint|p2a: Keldeo
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Keldeo-Resolute|170\/323|[from] sandstorm
+|-heal|p1a: Keldeo-Resolute|190\/323|[from] item: Leftovers
+|
+|switch|p2a: Charizard|Charizard-Mega-Y, M|297\/297 par
+|-weather|SunnyDay
+|turn|19
+|c| Squirrelll|ahh just joining ill shut up lol
+|
+|move|p1a: Keldeo-Resolute|Calm Mind|p1a: Keldeo-Resolute
+|-boost|p1a: Keldeo-Resolute|spa|1
+|-boost|p1a: Keldeo-Resolute|spd|1
+|move|p2a: Charizard|Solar Beam|p1a: Keldeo-Resolute|[still]
+|-prepare|p2a: Charizard|Solar Beam|p1a: Keldeo-Resolute
+|-anim|p2a: Charizard|Solar Beam|p1a: Keldeo-Resolute
+|-supereffective|p1a: Keldeo-Resolute
+|-damage|p1a: Keldeo-Resolute|49\/323
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Keldeo-Resolute|69\/323|[from] item: Leftovers
+|turn|20
+|
+|move|p1a: Keldeo-Resolute|Scald|p2a: Charizard
+|-supereffective|p2a: Charizard
+|-damage|p2a: Charizard|91\/297 par
+|move|p2a: Charizard|Solar Beam|p1a: Keldeo-Resolute|[still]
+|-prepare|p2a: Charizard|Solar Beam|p1a: Keldeo-Resolute
+|-anim|p2a: Charizard|Solar Beam|p1a: Keldeo-Resolute
+|-supereffective|p1a: Keldeo-Resolute
+|-damage|p1a: Keldeo-Resolute|0 fnt
+|faint|p1a: Keldeo-Resolute
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p1a: Gyarados|Gyarados, M|331\/331
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Charizard
+|-unboost|p2a: Charizard|atk|1
+|turn|21
+|
+|switch|p2a: Kyurem-Black|Kyurem-Black|391\/391
+|-ability|p2a: Kyurem-Black|Teravolt
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|
+|-weather|SunnyDay|[upkeep]
+|turn|22
+|
+|detailschange|p1a: Gyarados|Gyarados-Mega, M
+|message|Gyarados has Mega Evolved into Mega Gyarados!
+|-ability|p1a: Gyarados|Mold Breaker
+|move|p2a: Kyurem-Black|Fusion Bolt|p1a: Gyarados
+|-supereffective|p1a: Gyarados
+|-damage|p1a: Gyarados|207\/331
+|move|p1a: Gyarados|Crunch|p2a: Kyurem-Black
+|-damage|p2a: Kyurem-Black|138\/391
+|-unboost|p2a: Kyurem-Black|def|1
+|
+|-weather|SunnyDay|[upkeep]
+|-sideend|p1: MaatMattos|move: Light Screen
+|turn|23
+|
+|switch|p2a: Charizard|Charizard-Mega-Y, M|91\/297 par
+|move|p1a: Gyarados|Crunch|p2a: Charizard
+|-damage|p2a: Charizard|0 fnt
+|faint|p2a: Charizard
+|
+|-weather|none
+|-sideend|p1: MaatMattos|Reflect
+|
+|switch|p2a: Kyurem-Black|Kyurem-Black|138\/391
+|-ability|p2a: Kyurem-Black|Teravolt
+|turn|24
+|
+|switch|p2a: Tyranitar|Tyranitar, M|383\/383
+|-weather|Sandstorm
+|switch|p1a: Ferrothorn|Ferrothorn, M|351\/351
+|
+|-weather|Sandstorm|[upkeep]
+|turn|25
+|
+|move|p2a: Tyranitar|Superpower|p1a: Ferrothorn
+|-supereffective|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|0 fnt
+|-damage|p2a: Tyranitar|336\/383|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|-unboost|p2a: Tyranitar|atk|1
+|-unboost|p2a: Tyranitar|def|1
+|faint|p1a: Ferrothorn
+|
+|-weather|Sandstorm|[upkeep]
+|join|Yiffeon
+|c|âMaatMattos|o
+|
+|switch|p1a: Gyarados|Gyarados-Mega, M|207\/331
+|-ability|p1a: Gyarados|Mold Breaker
+|turn|26
+|
+|switch|p1a: Manaphy|Manaphy|341\/341
+|move|p2a: Tyranitar|Superpower|p1a: Manaphy
+|-crit|p1a: Manaphy
+|-damage|p1a: Manaphy|0 fnt
+|-unboost|p2a: Tyranitar|atk|1
+|-unboost|p2a: Tyranitar|def|1
+|faint|p1a: Manaphy
+|
+|-weather|Sandstorm|[upkeep]
+|c|âMaatMattos|LOL
+|c|âReverb|sry
+|c| craing _;|loooool
+|
+|switch|p1a: Gyarados|Gyarados-Mega, M|207\/331
+|-ability|p1a: Gyarados|Mold Breaker
+|turn|27
+|
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|move|p2a: Tyranitar|Superpower|p1a: Gyarados
+|-supereffective|p1a: Gyarados
+|-damage|p1a: Gyarados|0 fnt
+|-unboost|p2a: Tyranitar|atk|1
+|-unboost|p2a: Tyranitar|def|1
+|faint|p1a: Gyarados
+|
+|win|Reverb
+|raw|Ladder updating...
+|c|âReverb|gg
+|leave|craing _;
+|raw|MaatMattos's rating: 1809 &rarr; <strong>1791<\/strong><br \/>(-18 for losing)
+|raw|Reverb's rating: 1836 &rarr; <strong>1855<\/strong><br \/>(+19 for winning)
+|leave|MaatMattos
+|player|p1
+|leave|I'm Rick Astley

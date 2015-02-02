@@ -1,0 +1,220 @@
+|join|Just Because
+|join|reachzero
+|player|p1|Just Because|153
+|player|p2|reachzero|15
+|gametype|singles
+|tier|UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Rhyperior, M
+|poke|p1|Mienshao, F
+|poke|p1|Roserade, F
+|poke|p1|Bronzong
+|poke|p1|Cofagrigus, M
+|poke|p1|Snorlax, F
+|poke|p2|Meloetta, shiny
+|poke|p2|Heracross, F, shiny
+|poke|p2|Swampert, M
+|poke|p2|Snorlax, F
+|poke|p2|Zapdos
+|poke|p2|Venomoth, M, shiny
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Roserade|Roserade, F|261\/261
+|switch|p2a: Zapdos|Zapdos|383\/383
+|-ability|p2a: Zapdos|Pressure
+|turn|1
+|callback|decision
+|join|Unthought Known
+|
+|switch|p1a: Snorlax|Snorlax, F|461\/461
+|move|p2a: Zapdos|Drill Peck|p1a: Snorlax
+|-damage|p1a: Snorlax|356\/461
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: Swampert|Swampert, M|404\/404
+|move|p1a: Snorlax|Return|p2a: Swampert
+|-damage|p2a: Swampert|211\/404
+|
+|-heal|p2a: Swampert|236\/404|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p2a: Swampert|Stealth Rock|p1a: Snorlax
+|-sidestart|p1: Just Because|move: Stealth Rock
+|move|p1a: Snorlax|Return|p2a: Swampert
+|-damage|p2a: Swampert|35\/404
+|
+|-heal|p2a: Swampert|60\/404|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Swampert|Earthquake|p1a: Snorlax
+|-damage|p1a: Snorlax|173\/461
+|move|p1a: Snorlax|Return|p2a: Swampert
+|-damage|p2a: Swampert|0 fnt
+|faint|p2a: Swampert
+|
+|callback|decision
+|
+|switch|p2a: Venomoth|Venomoth, M, shiny|291\/291
+|turn|5
+|callback|decision
+|
+|move|p2a: Venomoth|Substitute|p2a: Venomoth
+|-start|p2a: Venomoth|Substitute
+|-damage|p2a: Venomoth|219\/291
+|move|p1a: Snorlax|Return|p2a: Venomoth
+|-end|p2a: Venomoth|Substitute
+|
+|-heal|p2a: Venomoth|237\/291|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p1a: Mienshao|Mienshao, F|271\/271
+|-damage|p1a: Mienshao|255\/271|[from] Stealth Rock
+|move|p2a: Venomoth|Disable|p1a: Mienshao
+|-fail|p1a: Mienshao
+|
+|-heal|p2a: Venomoth|255\/291|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, F|461\/461
+|move|p1a: Mienshao|Stone Edge|p2a: Snorlax|[miss]
+|-miss|p1a: Mienshao|p2a: Snorlax
+|
+|turn|8
+|callback|decision
+|
+|move|p1a: Mienshao|Hi Jump Kick|p2a: Snorlax
+|-supereffective|p2a: Snorlax
+|-damage|p2a: Snorlax|0 fnt
+|-damage|p1a: Mienshao|228\/271|[from] item: Life Orb
+|faint|p2a: Snorlax
+|
+|callback|decision
+|
+|switch|p2a: Zapdos|Zapdos|383\/383
+|-ability|p2a: Zapdos|Pressure
+|turn|9
+|callback|decision
+|
+|switch|p1a: Rhyperior|Rhyperior, M|381\/381
+|-damage|p1a: Rhyperior|358\/381|[from] Stealth Rock
+|move|p2a: Zapdos|Drill Peck|p1a: Rhyperior
+|-resisted|p1a: Rhyperior
+|-damage|p1a: Rhyperior|324\/381
+|
+|turn|10
+|callback|decision
+|
+|move|p2a: Zapdos|Hidden Power|p1a: Rhyperior
+|-supereffective|p1a: Rhyperior
+|-damage|p1a: Rhyperior|0 fnt
+|faint|p1a: Rhyperior
+|
+|callback|decision
+|
+|switch|p1a: Bronzong|Bronzong|338\/338
+|-damage|p1a: Bronzong|317\/338|[from] Stealth Rock
+|turn|11
+|callback|decision
+|
+|switch|p2a: Venomoth|Venomoth, M, shiny|255\/291
+|move|p1a: Bronzong|Gyro Ball|p2a: Venomoth
+|-damage|p2a: Venomoth|0 fnt
+|faint|p2a: Venomoth
+|
+|-heal|p1a: Bronzong|338\/338|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Heracross|Heracross, F, shiny|302\/302
+|turn|12
+|callback|decision
+|
+|move|p2a: Heracross|Megahorn|p1a: Bronzong
+|-damage|p1a: Bronzong|158\/338
+|move|p1a: Bronzong|Gyro Ball|p2a: Heracross
+|-damage|p2a: Heracross|0 fnt
+|faint|p2a: Heracross
+|
+|-heal|p1a: Bronzong|179\/338|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Zapdos|Zapdos|383\/383
+|-ability|p2a: Zapdos|Pressure
+|turn|13
+|callback|decision
+|
+|move|p2a: Zapdos|Thunderbolt|p1a: Bronzong
+|-damage|p1a: Bronzong|41\/338
+|move|p1a: Bronzong|Explosion|p2a: Zapdos
+|-damage|p2a: Zapdos|85\/383
+|faint|p1a: Bronzong
+|
+|-heal|p2a: Zapdos|108\/383|[from] item: Leftovers
+|callback|decision
+|chat|reachzero|ow, ok
+|chat|reachzero|gg
+|chat|Just Because|we'll see
+|chat|reachzero|I don't think you can win without using Stone Ege
+|chat|reachzero|well
+|chat|reachzero|HJK isn't a guarantee either
+|chat|reachzero|lol
+|
+|switch|p1a: Snorlax|Snorlax, F|173\/461
+|-damage|p1a: Snorlax|116\/461|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|move|p2a: Zapdos|Drill Peck|p1a: Snorlax
+|-damage|p1a: Snorlax|0 fnt
+|faint|p1a: Snorlax
+|
+|-heal|p2a: Zapdos|131\/383|[from] item: Leftovers
+|callback|decision
+|chat|Just Because|ugh really
+|chat|reachzero|that was near-max damage
+|chat|reachzero|in fairness
+|chat|Just Because|yeah I know
+|
+|switch|p1a: Mienshao|Mienshao, F|271\/271
+|-damage|p1a: Mienshao|255\/271|[from] Stealth Rock
+|turn|15
+|callback|decision
+|
+|move|p1a: Mienshao|Hi Jump Kick|p2a: Zapdos
+|-resisted|p2a: Zapdos
+|-damage|p2a: Zapdos|0 fnt
+|-damage|p1a: Mienshao|228\/271|[from] item: Life Orb
+|faint|p2a: Zapdos
+|
+|callback|decision
+|chat|Just Because|one more
+|
+|switch|p2a: Meloetta|Meloetta, shiny|342\/342
+|turn|16
+|callback|decision
+|chat|Just Because|please
+|
+|move|p1a: Mienshao|Hi Jump Kick|p2a: Meloetta
+|-damage|p2a: Meloetta|0 fnt
+|-damage|p1a: Mienshao|201\/271|[from] item: Life Orb
+|faint|p2a: Meloetta
+|
+|win|Just Because
+|chat|Just Because|gg
+|chat|reachzero|gg
+|leave|Just Because
+|player|p1

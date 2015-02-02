@@ -1,0 +1,545 @@
+|join|Sac Riz
+|join|ThisIsRocket
+|player|p1|Sac Riz|1
+|player|p2|ThisIsRocket|130
+|gametype|singles
+|gen|6
+|tier|UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Absol, M
+|poke|p1|Nidoqueen, F
+|poke|p1|Chandelure, F
+|poke|p1|Vaporeon, M
+|poke|p1|Togekiss, F
+|poke|p1|Haxorus, M
+|poke|p2|Houndoom, M
+|poke|p2|Toxicroak, M
+|poke|p2|Togekiss, M
+|poke|p2|Hippowdon, F
+|poke|p2|Starmie
+|poke|p2|Trevenant, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|c|âSac Riz|Gl hf
+|c|âThisIsRocket|gl hf
+|join|Hiro Test
+|
+|start
+|switch|p1a: Nidoqueen|Nidoqueen, F|384\/384
+|switch|p2a: Hippowdon|Hippowdon, F|420\/420
+|-weather|Sandstorm
+|turn|1
+|
+|move|p1a: Nidoqueen|Ice Beam|p2a: Hippowdon
+|-supereffective|p2a: Hippowdon
+|-damage|p2a: Hippowdon|85\/420
+|move|p2a: Hippowdon|Stealth Rock|p1a: Nidoqueen
+|-sidestart|p1: Sac Riz|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|111\/420|[from] item: Leftovers
+|turn|2
+|
+|switch|p2a: Starmie|Starmie|324\/324
+|move|p1a: Nidoqueen|Stealth Rock|p2a: Starmie
+|-sidestart|p2: ThisIsRocket|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Starmie|304\/324|[from] sandstorm
+|-heal|p2a: Starmie|324\/324|[from] item: Leftovers
+|turn|3
+|
+|switch|p1a: Vaporeon|Vaporeon, M|464\/464
+|-damage|p1a: Vaporeon|406\/464|[from] Stealth Rock
+|move|p2a: Starmie|Scald|p1a: Vaporeon
+|-heal|p1a: Vaporeon|464\/464|[from] ability: Water Absorb|[of] p2a: Starmie
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Starmie|304\/324|[from] sandstorm
+|-damage|p1a: Vaporeon|435\/464|[from] sandstorm
+|-heal|p2a: Starmie|324\/324|[from] item: Leftovers
+|-heal|p1a: Vaporeon|464\/464|[from] item: Leftovers
+|turn|4
+|
+|move|p2a: Starmie|Toxic|p1a: Vaporeon
+|-status|p1a: Vaporeon|tox
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Starmie|304\/324|[from] sandstorm
+|-damage|p1a: Vaporeon|435\/464 tox|[from] sandstorm
+|-heal|p2a: Starmie|324\/324|[from] item: Leftovers
+|-heal|p1a: Vaporeon|464\/464 tox|[from] item: Leftovers
+|-damage|p1a: Vaporeon|435\/464 tox|[from] psn
+|turn|5
+|
+|move|p2a: Starmie|Rapid Spin|p1a: Vaporeon
+|-damage|p1a: Vaporeon|423\/464 tox
+|-sideend|p2: ThisIsRocket|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Starmie
+|move|p1a: Vaporeon|Heal Bell|p1a: Vaporeon
+|-cureteam|p1a: Vaporeon|[from] move: HealBell
+|
+|-weather|none
+|-heal|p1a: Vaporeon|464\/464|[from] move: Wish|[wisher] Vaporeon
+|turn|6
+|
+|move|p2a: Starmie|Toxic|p1a: Vaporeon
+|-status|p1a: Vaporeon|tox
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-damage|p1a: Vaporeon|435\/464 tox|[from] psn
+|turn|7
+|
+|switch|p1a: Togekiss|Togekiss, F|374\/374
+|-damage|p1a: Togekiss|281\/374|[from] Stealth Rock
+|move|p2a: Starmie|Scald|p1a: Togekiss
+|-damage|p1a: Togekiss|223\/374
+|
+|-heal|p1a: Togekiss|374\/374|[from] move: Wish|[wisher] Vaporeon
+|turn|8
+|
+|move|p2a: Starmie|Toxic|p1a: Togekiss
+|-status|p1a: Togekiss|tox
+|move|p1a: Togekiss|Defog|p2a: Starmie
+|-unboost|p2a: Starmie|evasion|1
+|-sideend|p1: Sac Riz|Stealth Rock|[from] move: Defog|[of] p1a: Togekiss
+|
+|-damage|p1a: Togekiss|351\/374 tox|[from] psn
+|turn|9
+|
+|switch|p2a: Togekiss|Togekiss, M|311\/311
+|switch|p1a: Vaporeon|Vaporeon, M|435\/464 tox
+|
+|-heal|p1a: Vaporeon|464\/464 tox|[from] item: Leftovers
+|-damage|p1a: Vaporeon|435\/464 tox|[from] psn
+|turn|10
+|
+|move|p2a: Togekiss|Air Slash|p1a: Vaporeon
+|-damage|p1a: Vaporeon|282\/464 tox
+|cant|p1a: Vaporeon|flinch
+|
+|-heal|p1a: Vaporeon|311\/464 tox|[from] item: Leftovers
+|-damage|p1a: Vaporeon|253\/464 tox|[from] psn
+|turn|11
+|
+|move|p2a: Togekiss|Air Slash|p1a: Vaporeon
+|-damage|p1a: Vaporeon|109\/464 tox
+|move|p1a: Vaporeon|Heal Bell|p1a: Vaporeon
+|-cureteam|p1a: Vaporeon|[from] move: HealBell
+|
+|-heal|p1a: Vaporeon|138\/464|[from] item: Leftovers
+|turn|12
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Togekiss|Air Slash|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Protect
+|
+|-heal|p1a: Vaporeon|167\/464|[from] item: Leftovers
+|turn|13
+|
+|move|p2a: Togekiss|Air Slash|p1a: Vaporeon
+|-damage|p1a: Vaporeon|19\/464
+|cant|p1a: Vaporeon|flinch
+|
+|-heal|p1a: Vaporeon|48\/464|[from] item: Leftovers
+|turn|14
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Togekiss|Air Slash|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Protect
+|
+|-heal|p1a: Vaporeon|77\/464|[from] item: Leftovers
+|turn|15
+|
+|switch|p1a: Togekiss|Togekiss, F|351\/374
+|move|p2a: Togekiss|Dazzling Gleam|p1a: Togekiss
+|-damage|p1a: Togekiss|249\/374
+|
+|-heal|p1a: Togekiss|272\/374|[from] item: Leftovers
+|turn|16
+|
+|move|p2a: Togekiss|Thunder Wave|p1a: Togekiss
+|-status|p1a: Togekiss|par
+|cant|p1a: Togekiss|par
+|
+|-heal|p1a: Togekiss|295\/374 par|[from] item: Leftovers
+|turn|17
+|
+|move|p2a: Togekiss|Air Slash|p1a: Togekiss
+|-damage|p1a: Togekiss|211\/374 par
+|cant|p1a: Togekiss|par
+|
+|-heal|p1a: Togekiss|234\/374 par|[from] item: Leftovers
+|turn|18
+|
+|move|p2a: Togekiss|Air Slash|p1a: Togekiss
+|-damage|p1a: Togekiss|138\/374 par
+|cant|p1a: Togekiss|flinch
+|
+|-heal|p1a: Togekiss|161\/374 par|[from] item: Leftovers
+|turn|19
+|
+|move|p2a: Togekiss|Air Slash|p1a: Togekiss
+|-damage|p1a: Togekiss|64\/374 par
+|move|p1a: Togekiss|Roost|p1a: Togekiss
+|-heal|p1a: Togekiss|251\/374 par
+|
+|-heal|p1a: Togekiss|274\/374 par|[from] item: Leftovers
+|turn|20
+|c|âThisIsRocket|omg
+|c|âThisIsRocket|ce haxx
+|
+|move|p2a: Togekiss|Air Slash|p1a: Togekiss
+|-damage|p1a: Togekiss|178\/374 par
+|move|p1a: Togekiss|Thunder Wave|p2a: Togekiss
+|-status|p2a: Togekiss|par
+|
+|-heal|p1a: Togekiss|201\/374 par|[from] item: Leftovers
+|turn|21
+|c|âThisIsRocket|ou pas :')
+|
+|cant|p2a: Togekiss|par
+|move|p1a: Togekiss|Roost|p1a: Togekiss
+|-heal|p1a: Togekiss|374\/374 par
+|
+|turn|22
+|
+|move|p2a: Togekiss|Air Slash|p1a: Togekiss
+|-damage|p1a: Togekiss|278\/374 par
+|cant|p1a: Togekiss|flinch
+|
+|-heal|p1a: Togekiss|301\/374 par|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Togekiss|Air Slash|p1a: Togekiss
+|-damage|p1a: Togekiss|217\/374 par
+|move|p1a: Togekiss|Roost|p1a: Togekiss
+|-heal|p1a: Togekiss|374\/374 par
+|
+|turn|24
+|
+|move|p2a: Togekiss|Air Slash|p1a: Togekiss
+|-damage|p1a: Togekiss|289\/374 par
+|cant|p1a: Togekiss|par
+|
+|-heal|p1a: Togekiss|312\/374 par|[from] item: Leftovers
+|turn|25
+|c|âThisIsRocket|c'est une blague lÃ  :')
+|
+|move|p2a: Togekiss|Air Slash|p1a: Togekiss
+|-damage|p1a: Togekiss|225\/374 par
+|move|p1a: Togekiss|Air Slash|p2a: Togekiss|[miss]
+|-miss|p1a: Togekiss|p2a: Togekiss
+|
+|-heal|p1a: Togekiss|248\/374 par|[from] item: Leftovers
+|turn|26
+|c|âSac Riz|Mdr
+|
+|cant|p2a: Togekiss|par
+|move|p1a: Togekiss|Roost|p1a: Togekiss
+|-heal|p1a: Togekiss|374\/374 par
+|
+|turn|27
+|
+|move|p2a: Togekiss|Air Slash|p1a: Togekiss
+|-damage|p1a: Togekiss|287\/374 par
+|cant|p1a: Togekiss|par
+|
+|-heal|p1a: Togekiss|310\/374 par|[from] item: Leftovers
+|turn|28
+|c|âThisIsRocket|on arrÃªte ? xD
+|
+|move|p2a: Togekiss|Air Slash|p1a: Togekiss
+|-damage|p1a: Togekiss|223\/374 par
+|move|p1a: Togekiss|Air Slash|p2a: Togekiss
+|-damage|p2a: Togekiss|224\/311 par
+|
+|-heal|p2a: Togekiss|243\/311 par|[from] item: Leftovers
+|-heal|p1a: Togekiss|246\/374 par|[from] item: Leftovers
+|turn|29
+|c|âSac Riz|Non :v
+|
+|move|p2a: Togekiss|Air Slash|p1a: Togekiss
+|-crit|p1a: Togekiss
+|-damage|p1a: Togekiss|116\/374 par
+|cant|p1a: Togekiss|flinch
+|
+|-heal|p2a: Togekiss|262\/311 par|[from] item: Leftovers
+|-heal|p1a: Togekiss|139\/374 par|[from] item: Leftovers
+|turn|30
+|c|âThisIsRocket|comme tu veux ;x
+|
+|move|p2a: Togekiss|Air Slash|p1a: Togekiss
+|-damage|p1a: Togekiss|43\/374 par
+|cant|p1a: Togekiss|flinch
+|
+|-heal|p2a: Togekiss|281\/311 par|[from] item: Leftovers
+|-heal|p1a: Togekiss|66\/374 par|[from] item: Leftovers
+|turn|31
+|
+|move|p2a: Togekiss|Dazzling Gleam|p1a: Togekiss
+|-crit|p1a: Togekiss
+|-damage|p1a: Togekiss|0 fnt
+|faint|p1a: Togekiss
+|
+|-heal|p2a: Togekiss|300\/311 par|[from] item: Leftovers
+|c|âThisIsRocket|:D
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|384\/384
+|turn|32
+|
+|move|p1a: Nidoqueen|Sludge Bomb|p2a: Togekiss
+|-supereffective|p2a: Togekiss
+|-damage|p2a: Togekiss|0 fnt
+|faint|p2a: Togekiss
+|
+|c|âSac Riz|:D
+|
+|switch|p2a: Starmie|Starmie|324\/324
+|turn|33
+|
+|switch|p1a: Vaporeon|Vaporeon, M|77\/464
+|move|p2a: Starmie|Scald|p1a: Vaporeon
+|-heal|p1a: Vaporeon|193\/464|[from] ability: Water Absorb|[of] p2a: Starmie
+|
+|-heal|p1a: Vaporeon|222\/464|[from] item: Leftovers
+|turn|34
+|
+|move|p2a: Starmie|Toxic|p1a: Vaporeon
+|-status|p1a: Vaporeon|tox
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|251\/464 tox|[from] item: Leftovers
+|-damage|p1a: Vaporeon|222\/464 tox|[from] psn
+|turn|35
+|
+|move|p2a: Starmie|Toxic|p1a: Vaporeon
+|-fail|p1a: Vaporeon|tox
+|move|p1a: Vaporeon|Heal Bell|p1a: Vaporeon
+|-cureteam|p1a: Vaporeon|[from] move: HealBell
+|
+|-heal|p1a: Vaporeon|454\/464|[from] move: Wish|[wisher] Vaporeon
+|-heal|p1a: Vaporeon|464\/464|[from] item: Leftovers
+|turn|36
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Starmie|Scald|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Protect
+|
+|turn|37
+|
+|move|p2a: Starmie|Toxic|p1a: Vaporeon
+|-status|p1a: Vaporeon|tox
+|move|p1a: Vaporeon|Heal Bell|p1a: Vaporeon
+|-cureteam|p1a: Vaporeon|[from] move: HealBell
+|
+|turn|38
+|
+|switch|p2a: Trevenant|Trevenant, M|374\/374
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|turn|39
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Trevenant|Substitute|p2a: Trevenant
+|-start|p2a: Trevenant|Substitute
+|-damage|p2a: Trevenant|281\/374
+|
+|turn|40
+|
+|move|p1a: Vaporeon|Scald|p2a: Trevenant
+|-resisted|p2a: Trevenant
+|-activate|p2a: Trevenant|Substitute|[damage]
+|move|p2a: Trevenant|Leech Seed|p1a: Vaporeon|[miss]
+|-miss|p2a: Trevenant|p1a: Vaporeon
+|
+|turn|41
+|
+|move|p1a: Vaporeon|Scald|p2a: Trevenant
+|-resisted|p2a: Trevenant
+|-activate|p2a: Trevenant|Substitute|[damage]
+|move|p2a: Trevenant|Leech Seed|p1a: Vaporeon
+|-start|p1a: Vaporeon|move: Leech Seed
+|
+|-damage|p1a: Vaporeon|406\/464|[from] Leech Seed|[of] p2a: Trevenant
+|-heal|p2a: Trevenant|339\/374|[silent]
+|turn|42
+|
+|move|p1a: Vaporeon|Scald|p2a: Trevenant
+|-resisted|p2a: Trevenant
+|-end|p2a: Trevenant|Substitute
+|move|p2a: Trevenant|Will-O-Wisp|p1a: Vaporeon
+|-status|p1a: Vaporeon|brn
+|
+|-heal|p1a: Vaporeon|435\/464 brn|[from] item: Leftovers
+|-damage|p1a: Vaporeon|377\/464 brn|[from] Leech Seed|[of] p2a: Trevenant
+|-heal|p2a: Trevenant|374\/374|[silent]
+|-damage|p1a: Vaporeon|319\/464 brn|[from] brn
+|turn|43
+|
+|switch|p1a: Absol|Absol, M|271\/271
+|switch|p2a: Toxicroak|Toxicroak, M|307\/307
+|
+|turn|44
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|384\/384
+|move|p2a: Toxicroak|Drain Punch|p1a: Nidoqueen
+|-resisted|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|297\/384
+|-damage|p2a: Toxicroak|277\/307|[from] item: Life Orb
+|
+|turn|45
+|
+|switch|p2a: Trevenant|Trevenant, M|374\/374
+|move|p1a: Nidoqueen|Earth Power|p2a: Trevenant
+|-resisted|p2a: Trevenant
+|-damage|p2a: Trevenant|293\/374
+|
+|turn|46
+|
+|move|p1a: Nidoqueen|Sludge Bomb|p2a: Trevenant
+|-damage|p2a: Trevenant|110\/374
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|203\/374|[from] item: Sitrus Berry
+|move|p2a: Trevenant|Leech Seed|p1a: Nidoqueen|[miss]
+|-miss|p2a: Trevenant|p1a: Nidoqueen
+|
+|turn|47
+|
+|move|p1a: Nidoqueen|Ice Beam|p2a: Trevenant
+|-supereffective|p2a: Trevenant
+|-damage|p2a: Trevenant|0 fnt
+|faint|p2a: Trevenant
+|
+|c|âThisIsRocket|mais putain
+|c|âThisIsRocket|:(
+|
+|switch|p2a: Houndoom|Houndoom, M|291\/291
+|turn|48
+|
+|switch|p1a: Vaporeon|Vaporeon, M|319\/464 brn
+|detailschange|p2a: Houndoom|Houndoom-Mega, M
+|message|Houndoom has Mega Evolved into Mega Houndoom!
+|move|p2a: Houndoom|Fire Blast|p1a: Vaporeon
+|-resisted|p1a: Vaporeon
+|-damage|p1a: Vaporeon|205\/464 brn
+|
+|-heal|p1a: Vaporeon|234\/464 brn|[from] item: Leftovers
+|-damage|p1a: Vaporeon|176\/464 brn|[from] brn
+|turn|49
+|
+|move|p2a: Houndoom|Dark Pulse|p1a: Vaporeon
+|-damage|p1a: Vaporeon|5\/464 brn
+|cant|p1a: Vaporeon|flinch
+|
+|-heal|p1a: Vaporeon|34\/464 brn|[from] item: Leftovers
+|-damage|p1a: Vaporeon|0 fnt|[from] brn
+|faint|p1a: Vaporeon
+|c| Hiro Test|'-'
+|
+|switch|p1a: Haxorus|Haxorus, M|294\/294
+|-ability|p1a: Haxorus|Mold Breaker
+|turn|50
+|
+|move|p2a: Houndoom|Dark Pulse|p1a: Haxorus
+|-damage|p1a: Haxorus|83\/294
+|move|p1a: Haxorus|Earthquake|p2a: Houndoom
+|-supereffective|p2a: Houndoom
+|-damage|p2a: Houndoom|0 fnt
+|-damage|p1a: Haxorus|54\/294|[from] item: Life Orb
+|faint|p2a: Houndoom
+|
+|
+|switch|p2a: Hippowdon|Hippowdon, F|111\/420
+|-weather|Sandstorm
+|turn|51
+|c|âSac Riz|Des gens de mauvaise foie me traitent de haxxeur (:
+|
+|move|p1a: Haxorus|Outrage|p2a: Hippowdon
+|-damage|p2a: Hippowdon|0 fnt
+|-damage|p1a: Haxorus|25\/294|[from] item: Life Orb
+|faint|p2a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Haxorus|7\/294|[from] sandstorm
+|c|âThisIsRocket|:D
+|
+|switch|p2a: Starmie|Starmie|324\/324
+|turn|52
+|
+|move|p2a: Starmie|Scald|p1a: Haxorus
+|-resisted|p1a: Haxorus
+|-damage|p1a: Haxorus|0 fnt
+|faint|p1a: Haxorus
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Starmie|304\/324|[from] sandstorm
+|-heal|p2a: Starmie|324\/324|[from] item: Leftovers
+|
+|switch|p1a: Chandelure|Chandelure, F|262\/262
+|turn|53
+|
+|move|p2a: Starmie|Scald|p1a: Chandelure
+|-supereffective|p1a: Chandelure
+|-damage|p1a: Chandelure|64\/262
+|move|p1a: Chandelure|Shadow Ball|p2a: Starmie
+|-supereffective|p2a: Starmie
+|-damage|p2a: Starmie|0 fnt
+|faint|p2a: Starmie
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Chandelure|48\/262|[from] sandstorm
+|-heal|p1a: Chandelure|64\/262|[from] item: Leftovers
+|
+|switch|p2a: Toxicroak|Toxicroak, M|277\/307
+|turn|54
+|
+|move|p1a: Chandelure|Calm Mind|p1a: Chandelure
+|-boost|p1a: Chandelure|spa|1
+|-boost|p1a: Chandelure|spd|1
+|move|p2a: Toxicroak|Swords Dance|p2a: Toxicroak
+|-boost|p2a: Toxicroak|atk|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Chandelure|48\/262|[from] sandstorm
+|-damage|p2a: Toxicroak|258\/307|[from] sandstorm
+|-heal|p1a: Chandelure|64\/262|[from] item: Leftovers
+|turn|55
+|
+|move|p2a: Toxicroak|Sucker Punch|p1a: Chandelure
+|-supereffective|p1a: Chandelure
+|-damage|p1a: Chandelure|0 fnt
+|-damage|p2a: Toxicroak|228\/307|[from] item: Life Orb
+|faint|p1a: Chandelure
+|
+|-weather|none
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|297\/384
+|turn|56
+|
+|move|p2a: Toxicroak|Sucker Punch|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|46\/384
+|-damage|p2a: Toxicroak|198\/307|[from] item: Life Orb
+|move|p1a: Nidoqueen|Earth Power|p2a: Toxicroak
+|-supereffective|p2a: Toxicroak
+|-damage|p2a: Toxicroak|0 fnt
+|faint|p2a: Toxicroak
+|
+|win|Sac Riz
+|c|âThisIsRocket|gg
+|c|âSac Riz|Yeah
+|leave|ThisIsRocket
+|player|p2
+|c|âSac Riz|Nidoqueen bg

@@ -1,0 +1,355 @@
+|join|spec n
+|join|bosh for three
+|player|p1|spec n|92
+|player|p2|bosh for three|102
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Ampharos, F
+|poke|p1|Crobat, M
+|poke|p1|Hydreigon, M
+|poke|p1|Jirachi
+|poke|p1|Suicune
+|poke|p1|Medicham, F
+|poke|p2|Blastoise, F
+|poke|p2|Crobat, M
+|poke|p2|Jirachi
+|poke|p2|Hydreigon, M
+|poke|p2|Florges, F
+|poke|p2|Raikou
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Medicham|Medicham, F|100\/100
+|switch|p2a: Raikou|Raikou|321\/321
+|-ability|p2a: Raikou|Pressure
+|turn|1
+|
+|move|p1a: Medicham|Fake Out|p2a: Raikou
+|-damage|p2a: Raikou|208\/321
+|-damage|p1a: Medicham|91\/100|[from] item: Life Orb
+|cant|p2a: Raikou|flinch
+|
+|turn|2
+|
+|switch|p1a: Ampharos|Ampharos, F|100\/100
+|move|p2a: Raikou|Volt Switch|p1a: Ampharos
+|-resisted|p1a: Ampharos
+|-damage|p1a: Ampharos|75\/100
+|
+|switch|p2a: Jirachi|Jirachi|343\/343
+|
+|turn|3
+|
+|detailschange|p1a: Ampharos|Ampharos-Mega, F
+|-mega|p1a: Ampharos|Ampharos|Ampharosite
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p2a: Jirachi|Stealth Rock|p1a: Ampharos
+|-sidestart|p1: spec n|move: Stealth Rock
+|move|p1a: Ampharos|Volt Switch|p2a: Jirachi
+|-damage|p2a: Jirachi|184\/343
+|
+|switch|p1a: Crobat|Crobat, M|100\/100
+|-damage|p1a: Crobat|76\/100|[from] Stealth Rock
+|
+|-heal|p1a: Crobat|82\/100|[from] item: Leftovers
+|-heal|p2a: Jirachi|205\/343|[from] item: Leftovers
+|turn|4
+|
+|move|p1a: Crobat|Defog|p2a: Jirachi
+|-unboost|p2a: Jirachi|evasion|1
+|-sideend|p1: spec n|Stealth Rock|[from] move: Defog|[of] p1a: Crobat
+|move|p2a: Jirachi|U-turn|p1a: Crobat
+|-resisted|p1a: Crobat
+|-damage|p1a: Crobat|76\/100
+|
+|switch|p2a: Raikou|Raikou|208\/321
+|-ability|p2a: Raikou|Pressure
+|
+|-heal|p1a: Crobat|82\/100|[from] item: Leftovers
+|turn|5
+|
+|move|p1a: Crobat|U-turn|p2a: Raikou
+|-damage|p2a: Raikou|141\/321
+|
+|switch|p1a: Ampharos|Ampharos-Mega, F|75\/100
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p2a: Raikou|Volt Switch|p1a: Ampharos
+|-resisted|p1a: Ampharos
+|-damage|p1a: Ampharos|66\/100
+|
+|switch|p2a: Hydreigon|Hydreigon, M|325\/325
+|
+|turn|6
+|
+|switch|p1a: Jirachi|Jirachi|100\/100
+|move|p2a: Hydreigon|U-turn|p1a: Jirachi
+|-damage|p1a: Jirachi|85\/100
+|
+|switch|p2a: Blastoise|Blastoise, F|362\/362
+|
+|-heal|p1a: Jirachi|91\/100|[from] item: Leftovers
+|turn|7
+|join|Soul redeemer
+|
+|switch|p1a: Suicune|Suicune|100\/100
+|-ability|p1a: Suicune|Pressure
+|detailschange|p2a: Blastoise|Blastoise-Mega, F
+|-mega|p2a: Blastoise|Blastoise|Blastoisinite
+|move|p2a: Blastoise|Dark Pulse|p1a: Suicune
+|-damage|p1a: Suicune|65\/100
+|
+|-heal|p1a: Suicune|71\/100|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: Suicune|Scald|p2a: Blastoise
+|-resisted|p2a: Blastoise
+|-damage|p2a: Blastoise|322\/362
+|move|p2a: Blastoise|Dragon Pulse|p1a: Suicune
+|-damage|p1a: Suicune|35\/100
+|
+|-heal|p1a: Suicune|42\/100|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Raikou|Raikou|141\/321
+|-ability|p2a: Raikou|Pressure
+|move|p1a: Suicune|Calm Mind|p1a: Suicune
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|
+|-heal|p1a: Suicune|48\/100|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Hydreigon|Hydreigon, M|100\/100
+|move|p2a: Raikou|Extrasensory|p1a: Hydreigon
+|-immune|p1a: Hydreigon|[msg]
+|
+|turn|11
+|
+|switch|p2a: Florges|Florges, F|360\/360
+|switch|p1a: Jirachi|Jirachi|91\/100
+|
+|-heal|p1a: Jirachi|97\/100|[from] item: Leftovers
+|turn|12
+|
+|switch|p2a: Jirachi|Jirachi|205\/343
+|move|p1a: Jirachi|Stealth Rock|p2a: Jirachi
+|-sidestart|p2: bosh for three|move: Stealth Rock
+|
+|-heal|p1a: Jirachi|100\/100|[from] item: Leftovers
+|-heal|p2a: Jirachi|226\/343|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: Medicham|Medicham, F|91\/100
+|move|p2a: Jirachi|Stealth Rock|p1a: Medicham
+|-sidestart|p1: spec n|move: Stealth Rock
+|
+|-heal|p2a: Jirachi|247\/343|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Jirachi|Iron Head|p1a: Medicham
+|-damage|p1a: Medicham|36\/100
+|cant|p1a: Medicham|flinch
+|
+|-heal|p2a: Jirachi|268\/343|[from] item: Leftovers
+|turn|15
+|
+|switch|p1a: Ampharos|Ampharos-Mega, F|66\/100
+|-damage|p1a: Ampharos|53\/100|[from] Stealth Rock
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p2a: Jirachi|U-turn|p1a: Ampharos
+|-damage|p1a: Ampharos|36\/100
+|
+|switch|p2a: Blastoise|Blastoise-Mega, F|322\/362
+|-damage|p2a: Blastoise|277\/362|[from] Stealth Rock
+|
+|turn|16
+|
+|switch|p1a: Suicune|Suicune|48\/100
+|-damage|p1a: Suicune|35\/100|[from] Stealth Rock
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Blastoise|Dragon Pulse|p1a: Suicune
+|-damage|p1a: Suicune|1\/100
+|
+|-heal|p1a: Suicune|7\/100|[from] item: Leftovers
+|turn|17
+|
+|switch|p2a: Raikou|Raikou|141\/321
+|-damage|p2a: Raikou|101\/321|[from] Stealth Rock
+|-ability|p2a: Raikou|Pressure
+|move|p1a: Suicune|Rest|p1a: Suicune
+|-status|p1a: Suicune|slp
+|-heal|p1a: Suicune|100\/100 slp|[silent]
+|-status|p1a: Suicune|slp|[from] move: Rest
+|
+|turn|18
+|
+|switch|p1a: Ampharos|Ampharos-Mega, F|36\/100
+|-damage|p1a: Ampharos|23\/100|[from] Stealth Rock
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p2a: Raikou|Volt Switch|p1a: Ampharos
+|-resisted|p1a: Ampharos
+|-damage|p1a: Ampharos|14\/100
+|
+|switch|p2a: Hydreigon|Hydreigon, M|325\/325
+|-damage|p2a: Hydreigon|285\/325|[from] Stealth Rock
+|
+|turn|19
+|
+|move|p2a: Hydreigon|Dark Pulse|p1a: Ampharos
+|-damage|p1a: Ampharos|0 fnt
+|faint|p1a: Ampharos
+|
+|
+|switch|p1a: Suicune|Suicune|100\/100 slp
+|-damage|p1a: Suicune|88\/100 slp|[from] Stealth Rock
+|-ability|p1a: Suicune|Pressure
+|turn|20
+|
+|switch|p2a: Florges|Florges, F|360\/360
+|-damage|p2a: Florges|315\/360|[from] Stealth Rock
+|cant|p1a: Suicune|slp
+|move|p1a: Suicune|Sleep Talk|p1a: Suicune
+|move|p1a: Suicune|Rest|p1a: Suicune|[from]Sleep Talk
+|-fail|p1a: Suicune
+|
+|-heal|p1a: Suicune|94\/100 slp|[from] item: Leftovers
+|-heal|p2a: Florges|337\/360|[from] item: Leftovers
+|turn|21
+|
+|cant|p1a: Suicune|slp
+|move|p1a: Suicune|Sleep Talk|p1a: Suicune
+|move|p1a: Suicune|Scald|p2a: Florges|[from]Sleep Talk
+|-damage|p2a: Florges|279\/360
+|-status|p2a: Florges|brn
+|move|p2a: Florges|Calm Mind|p2a: Florges
+|-boost|p2a: Florges|spa|1
+|-boost|p2a: Florges|spd|1
+|
+|-heal|p1a: Suicune|100\/100 slp|[from] item: Leftovers
+|-heal|p2a: Florges|301\/360 brn|[from] item: Leftovers
+|-damage|p2a: Florges|256\/360 brn|[from] brn
+|turn|22
+|leave|Soul redeemer
+|
+|switch|p2a: Raikou|Raikou|101\/321
+|-damage|p2a: Raikou|61\/321|[from] Stealth Rock
+|-ability|p2a: Raikou|Pressure
+|-curestatus|p1a: Suicune|slp
+|move|p1a: Suicune|Calm Mind|p1a: Suicune
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|
+|turn|23
+|
+|move|p2a: Raikou|Thunderbolt|p1a: Suicune
+|-supereffective|p1a: Suicune
+|-damage|p1a: Suicune|36\/100
+|move|p1a: Suicune|Calm Mind|p1a: Suicune
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|
+|-heal|p1a: Suicune|42\/100|[from] item: Leftovers
+|turn|24
+|
+|move|p2a: Raikou|Thunderbolt|p1a: Suicune
+|-supereffective|p1a: Suicune
+|-damage|p1a: Suicune|0 fnt
+|faint|p1a: Suicune
+|
+|
+|switch|p1a: Medicham|Medicham, F|36\/100
+|-damage|p1a: Medicham|30\/100|[from] Stealth Rock
+|turn|25
+|
+|move|p1a: Medicham|Fake Out|p2a: Raikou
+|-damage|p2a: Raikou|0 fnt
+|-damage|p1a: Medicham|20\/100|[from] item: Life Orb
+|faint|p2a: Raikou
+|
+|
+|switch|p2a: Jirachi|Jirachi|268\/343
+|-damage|p2a: Jirachi|247\/343|[from] Stealth Rock
+|turn|26
+|
+|switch|p1a: Jirachi|Jirachi|100\/100
+|-damage|p1a: Jirachi|94\/100|[from] Stealth Rock
+|move|p2a: Jirachi|Fire Punch|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|50\/100
+|
+|-heal|p1a: Jirachi|56\/100|[from] item: Leftovers
+|-heal|p2a: Jirachi|268\/343|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: Jirachi|Body Slam|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|226\/343
+|-status|p2a: Jirachi|par
+|move|p2a: Jirachi|Fire Punch|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|8\/100
+|-status|p1a: Jirachi|brn
+|
+|-heal|p1a: Jirachi|15\/100 brn|[from] item: Leftovers
+|-heal|p2a: Jirachi|247\/343 par|[from] item: Leftovers
+|-damage|p1a: Jirachi|2\/100 brn|[from] brn
+|turn|28
+|
+|move|p1a: Jirachi|Wish|p1a: Jirachi
+|cant|p2a: Jirachi|par
+|
+|-heal|p1a: Jirachi|8\/100 brn|[from] item: Leftovers
+|-heal|p2a: Jirachi|268\/343 par|[from] item: Leftovers
+|-damage|p1a: Jirachi|0 fnt|[from] brn
+|faint|p1a: Jirachi
+|
+|switch|p1a: Medicham|Medicham, F|20\/100
+|-damage|p1a: Medicham|14\/100|[from] Stealth Rock
+|turn|29
+|
+|move|p1a: Medicham|High Jump Kick|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|-damage|p1a: Medicham|4\/100|[from] item: Life Orb
+|faint|p2a: Jirachi
+|
+|-heal|p1a: Medicham|69\/100|[from] move: Wish|[wisher] Jirachi
+|
+|switch|p2a: Hydreigon|Hydreigon, M|285\/325
+|-damage|p2a: Hydreigon|245\/325|[from] Stealth Rock
+|turn|30
+|
+|switch|p1a: Crobat|Crobat, M|82\/100
+|-damage|p1a: Crobat|57\/100|[from] Stealth Rock
+|move|p2a: Hydreigon|Draco Meteor|p1a: Crobat
+|-damage|p1a: Crobat|0 fnt
+|-unboost|p2a: Hydreigon|spa|2
+|faint|p1a: Crobat
+|
+|
+|switch|p1a: Medicham|Medicham, F|69\/100
+|-damage|p1a: Medicham|63\/100|[from] Stealth Rock
+|turn|31
+|
+|switch|p2a: Crobat|Crobat, M|373\/373
+|-damage|p2a: Crobat|280\/373|[from] Stealth Rock
+|move|p1a: Medicham|High Jump Kick|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|151\/373
+|-damage|p1a: Medicham|53\/100|[from] item: Life Orb
+|
+|-heal|p2a: Crobat|174\/373|[from] item: Leftovers
+|turn|32
+|-message|spec n forfeited.
+|leave|spec n

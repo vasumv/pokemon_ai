@@ -1,0 +1,278 @@
+|join|ThePotatoFairy
+|join|Muuma-chan
+|player|p1|ThePotatoFairy|23
+|player|p2|Muuma-chan|37
+|gametype|singles
+|gen|6
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Spiritomb, M
+|poke|p1|Heracross, F
+|poke|p1|Hydreigon, M
+|poke|p1|Alomomola, M
+|poke|p1|Meloetta
+|poke|p1|Machamp, F
+|poke|p2|Leavanny, M
+|poke|p2|Magcargo, M
+|poke|p2|Absol, M
+|poke|p2|Mismagius, F
+|poke|p2|Gastrodon, M
+|poke|p2|Snorlax, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|join|Buwaro
+|
+|start
+|switch|p1a: Machamp|Machamp, F|384\/384
+|switch|p2a: Leavanny|Leavanny, M|350\/350
+|turn|1
+|callback|decision
+|
+|move|p2a: Leavanny|Sticky Web|p1a: Machamp
+|-sidestart|p1: ThePotatoFairy|move: Sticky Web
+|move|p1a: Machamp|Stone Edge|p2a: Leavanny
+|-supereffective|p2a: Leavanny
+|-damage|p2a: Leavanny|52\/350
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Leavanny|Leaf Blade|p1a: Machamp
+|-damage|p1a: Machamp|209\/384
+|move|p1a: Machamp|Dynamic Punch|p2a: Leavanny
+|-resisted|p2a: Leavanny
+|-damage|p2a: Leavanny|0 fnt
+|faint|p2a: Leavanny
+|
+|callback|decision
+|
+|switch|p2a: Absol|Absol, M|272\/272
+|turn|3
+|callback|decision
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534
+|-activate|p1a: Alomomola|move: Sticky Web
+|-unboost|p1a: Alomomola|spe|1
+|-formechange|p2a: Absol|Absol-Mega
+|message|Absol has Mega Evolved into Mega Absol!
+|move|p2a: Absol|Play Rough|p1a: Alomomola
+|-damage|p1a: Alomomola|428\/534
+|-unboost|p1a: Alomomola|atk|1
+|
+|-heal|p1a: Alomomola|461\/534|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p2a: Gastrodon|Gastrodon, M|426\/426
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-heal|p1a: Alomomola|494\/534|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1a: Machamp|Machamp, F|209\/384
+|-activate|p1a: Machamp|move: Sticky Web
+|-unboost|p1a: Machamp|spe|1
+|move|p2a: Gastrodon|Yawn|p1a: Machamp
+|-start|p1a: Machamp|move: Yawn|[of] p2a: Gastrodon
+|
+|-heal|p1a: Machamp|384\/384|[from] move: Wish|[wisher] Alomomola
+|turn|6
+|callback|decision
+|
+|switch|p2a: Mismagius|Mismagius, F|262\/262
+|switch|p1a: Meloetta|Meloetta|403\/403
+|-activate|p1a: Meloetta|move: Sticky Web
+|-unboost|p1a: Meloetta|spe|1
+|
+|turn|7
+|callback|decision
+|
+|move|p2a: Mismagius|Nasty Plot|p2a: Mismagius
+|-boost|p2a: Mismagius|spa|2
+|move|p1a: Meloetta|Shadow Ball|p2a: Mismagius
+|-supereffective|p2a: Mismagius
+|-damage|p2a: Mismagius|60\/262
+|-unboost|p2a: Mismagius|spd|1
+|
+|turn|8
+|callback|decision
+|
+|move|p2a: Mismagius|Dazzling Gleam|p1a: Meloetta
+|-damage|p1a: Meloetta|294\/403
+|-damage|p2a: Mismagius|34\/262|[from] item: Life Orb
+|move|p1a: Meloetta|Shadow Ball|p2a: Mismagius
+|-supereffective|p2a: Mismagius
+|-damage|p2a: Mismagius|0 fnt
+|faint|p2a: Mismagius
+|
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, F|500\/500
+|turn|9
+|callback|decision
+|
+|switch|p1a: Spiritomb|Spiritomb, M|304\/304
+|-activate|p1a: Spiritomb|move: Sticky Web
+|-unboost|p1a: Spiritomb|spe|1
+|move|p2a: Snorlax|Return|p1a: Spiritomb
+|-immune|p1a: Spiritomb|[msg]
+|
+|turn|10
+|callback|decision
+|
+|move|p1a: Spiritomb|Trick|p2a: Snorlax
+|-activate|p1a: Spiritomb|move: Trick|[of] p2a: Snorlax
+|-item|p2a: Snorlax|Choice Band|[from] move: Trick
+|-item|p1a: Spiritomb|Lum Berry|[from] move: Trick
+|move|p2a: Snorlax|Curse|p1a: Spiritomb
+|-boost|p2a: Snorlax|atk|1
+|-boost|p2a: Snorlax|def|1
+|-unboost|p2a: Snorlax|spe|1
+|
+|turn|11
+|callback|decision
+|
+|move|p1a: Spiritomb|Pursuit|p2a: Snorlax|[from]Pursuit
+|-damage|p2a: Snorlax|395\/500
+|switch|p2a: Gastrodon|Gastrodon, M|426\/426
+|
+|turn|12
+|callback|decision
+|
+|move|p2a: Gastrodon|Yawn|p1a: Spiritomb
+|-start|p1a: Spiritomb|move: Yawn|[of] p2a: Gastrodon
+|move|p1a: Spiritomb|Trick|p2a: Gastrodon
+|-activate|p1a: Spiritomb|move: Trick|[of] p2a: Gastrodon
+|-item|p2a: Gastrodon|Lum Berry|[from] move: Trick
+|-item|p1a: Spiritomb|Leftovers|[from] move: Trick
+|
+|turn|13
+|callback|decision
+|
+|switch|p1a: Meloetta|Meloetta|294\/403
+|-activate|p1a: Meloetta|move: Sticky Web
+|-unboost|p1a: Meloetta|spe|1
+|move|p2a: Gastrodon|Scald|p1a: Meloetta
+|-damage|p1a: Meloetta|249\/403
+|
+|turn|14
+|callback|decision
+|
+|move|p1a: Meloetta|Psychic|p2a: Gastrodon
+|-crit|p2a: Gastrodon
+|-damage|p2a: Gastrodon|225\/426
+|move|p2a: Gastrodon|Yawn|p1a: Meloetta
+|-start|p1a: Meloetta|move: Yawn|[of] p2a: Gastrodon
+|
+|turn|15
+|callback|decision
+|
+|move|p1a: Meloetta|U-turn|p2a: Gastrodon
+|-damage|p2a: Gastrodon|165\/426
+|callback|decision
+|
+|switch|p1a: Hydreigon|Hydreigon, M|325\/325
+|move|p2a: Gastrodon|Recover|p2a: Gastrodon
+|-heal|p2a: Gastrodon|378\/426
+|
+|turn|16
+|callback|decision
+|
+|move|p1a: Hydreigon|Draco Meteor|p2a: Gastrodon
+|-damage|p2a: Gastrodon|75\/426
+|-unboost|p1a: Hydreigon|spa|2
+|move|p2a: Gastrodon|Yawn|p1a: Hydreigon
+|-start|p1a: Hydreigon|move: Yawn|[of] p2a: Gastrodon
+|
+|turn|17
+|callback|decision
+|
+|switch|p1a: Heracross|Heracross, F|364\/364
+|-activate|p1a: Heracross|move: Sticky Web
+|-unboost|p1a: Heracross|spe|1
+|move|p2a: Gastrodon|Recover|p2a: Gastrodon
+|-heal|p2a: Gastrodon|288\/426
+|
+|turn|18
+|callback|decision
+|
+|-formechange|p1a: Heracross|Heracross-Mega
+|message|Heracross has Mega Evolved into Mega Heracross!
+|move|p1a: Heracross|Substitute|p1a: Heracross
+|-start|p1a: Heracross|Substitute
+|-damage|p1a: Heracross|273\/364
+|move|p2a: Gastrodon|Yawn|p1a: Heracross
+|
+|turn|19
+|callback|decision
+|
+|move|p1a: Heracross|Pin Missile|p2a: Gastrodon
+|-damage|p2a: Gastrodon|197\/426
+|-damage|p2a: Gastrodon|103\/426
+|-crit|p2a: Gastrodon
+|-damage|p2a: Gastrodon|0 fnt
+|-hitcount|p2a: Gastrodon|3
+|faint|p2a: Gastrodon
+|
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, F|395\/500
+|turn|20
+|callback|decision
+|
+|move|p1a: Heracross|Pin Missile|p2a: Snorlax
+|-damage|p2a: Snorlax|325\/500
+|-damage|p2a: Snorlax|249\/500
+|-damage|p2a: Snorlax|174\/500
+|-damage|p2a: Snorlax|93\/500
+|-crit|p2a: Snorlax
+|-damage|p2a: Snorlax|0 fnt
+|-hitcount|p2a: Snorlax|5
+|faint|p2a: Snorlax
+|
+|callback|decision
+|
+|switch|p2a: Magcargo|Magcargo, M|242\/242
+|turn|21
+|callback|decision
+|
+|-singleturn|p1a: Heracross|move: Focus Punch
+|move|p2a: Magcargo|Flamethrower|p1a: Heracross
+|-supereffective|p1a: Heracross
+|-end|p1a: Heracross|Substitute
+|move|p1a: Heracross|Focus Punch|p2a: Magcargo
+|-supereffective|p2a: Magcargo
+|-damage|p2a: Magcargo|0 fnt
+|faint|p2a: Magcargo
+|
+|callback|decision
+|
+|switch|p2a: Absol|Absol, M|272\/272
+|-formechange|p2a: Absol|Absol-Mega
+|turn|22
+|callback|decision
+|
+|move|p2a: Absol|Play Rough|p1a: Heracross
+|-supereffective|p1a: Heracross
+|-damage|p1a: Heracross|47\/364
+|move|p1a: Heracross|Pin Missile|p2a: Absol
+|-supereffective|p2a: Absol
+|-damage|p2a: Absol|74\/272
+|-supereffective|p2a: Absol
+|-damage|p2a: Absol|0 fnt
+|-hitcount|p2a: Absol|2
+|faint|p2a: Absol
+|
+|win|ThePotatoFairy
+|raw|Ladder updating...
+|raw|ThePotatoFairy's rating: 1679 &rarr; <strong>1686<\/strong><br \/>(+7 for winning)
+|raw|Muuma-chan's rating: 1307 &rarr; <strong>1276<\/strong><br \/>(-31 for losing)

@@ -1,0 +1,1372 @@
+|join|Poetaytoes
+|join|EchoDjinn
+|player|p1|Poetaytoes|101
+|player|p2|EchoDjinn|101
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Roserade, F
+|poke|p1|Gallade, M
+|poke|p1|Uxie
+|poke|p1|Empoleon, M
+|poke|p1|Umbreon, M
+|poke|p1|Hippowdon, M
+|poke|p2|Alakazam, F
+|poke|p2|Krookodile, M
+|poke|p2|Suicune
+|poke|p2|Crobat, M
+|poke|p2|Ampharos, M
+|poke|p2|Blissey, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Uxie|Uxie|354\/354
+|switch|p2a: Krookodile|Krookodile, M|333\/333
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Uxie
+|-unboost|p1a: Uxie|atk|1
+|turn|1
+|
+|switch|p1a: Gallade|Gallade, M|340\/340
+|move|p2a: Krookodile|Knock Off|p1a: Gallade
+|-damage|p1a: Gallade|9\/340
+|-boost|p1a: Gallade|atk|1|[from] ability: Justified
+|-enditem|p1a: Gallade|Leftovers|[from] move: Knock Off|[of] p2a: Krookodile
+|
+|turn|2
+|
+|switch|p1a: Hippowdon|Hippowdon, M|420\/420
+|-weather|Sandstorm
+|move|p2a: Krookodile|Knock Off|p1a: Hippowdon
+|-damage|p1a: Hippowdon|276\/420
+|-enditem|p1a: Hippowdon|Leftovers|[from] move: Knock Off|[of] p2a: Krookodile
+|
+|-weather|Sandstorm|[upkeep]
+|turn|3
+|
+|switch|p2a: Suicune|Suicune|404\/404
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Hippowdon|Yawn|p2a: Suicune
+|-start|p2a: Suicune|move: Yawn|[of] p1a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Suicune|379\/404|[from] sandstorm
+|-heal|p2a: Suicune|404\/404|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Roserade|Roserade, F|261\/261
+|move|p2a: Suicune|Scald|p1a: Roserade
+|-resisted|p1a: Roserade
+|-damage|p1a: Roserade|222\/261
+|
+|-status|p2a: Suicune|slp
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Roserade|206\/261|[from] sandstorm
+|-damage|p2a: Suicune|379\/404 slp|[from] sandstorm
+|-heal|p1a: Roserade|222\/261|[from] item: Black Sludge
+|-heal|p2a: Suicune|404\/404 slp|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Crobat|Crobat, M|355\/355
+|move|p1a: Roserade|Toxic Spikes|p2a: Crobat
+|-sidestart|p2: EchoDjinn|move: Toxic Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Crobat|333\/355|[from] sandstorm
+|-damage|p1a: Roserade|206\/261|[from] sandstorm
+|-heal|p2a: Crobat|355\/355|[from] item: Black Sludge
+|-heal|p1a: Roserade|222\/261|[from] item: Black Sludge
+|turn|6
+|
+|switch|p1a: Umbreon|Umbreon, M|394\/394
+|move|p2a: Crobat|Defog|p1a: Umbreon
+|-unboost|p1a: Umbreon|evasion|1
+|-sideend|p2: EchoDjinn|Toxic Spikes|[from] move: Defog|[of] p2a: Crobat
+|
+|-weather|none
+|turn|7
+|
+|move|p2a: Crobat|U-turn|p1a: Umbreon
+|-supereffective|p1a: Umbreon
+|-damage|p1a: Umbreon|274\/394
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|move|p1a: Umbreon|Toxic|p2a: Blissey
+|-status|p2a: Blissey|tox
+|
+|-heal|p1a: Umbreon|298\/394|[from] item: Leftovers
+|-damage|p2a: Blissey|670\/714 tox|[from] psn
+|turn|8
+|
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|move|p2a: Blissey|Stealth Rock|p1a: Umbreon
+|-sidestart|p1: Poetaytoes|move: Stealth Rock
+|
+|-heal|p1a: Umbreon|322\/394|[from] item: Leftovers
+|-heal|p2a: Blissey|714\/714 tox|[from] item: Leftovers
+|-damage|p2a: Blissey|626\/714 tox|[from] psn
+|turn|9
+|
+|switch|p1a: Hippowdon|Hippowdon, M|276\/420
+|-damage|p1a: Hippowdon|250\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|switch|p2a: Ampharos|Ampharos, M|384\/384
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Ampharos|360\/384|[from] sandstorm
+|-heal|p1a: Hippowdon|420\/420|[from] move: Wish|[wisher] Umbreon
+|turn|10
+|
+|switch|p2a: Suicune|Suicune|404\/404 slp
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Hippowdon|Rock Tomb|p2a: Suicune
+|-damage|p2a: Suicune|370\/404 slp
+|-unboost|p2a: Suicune|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Suicune|345\/404 slp|[from] sandstorm
+|-heal|p2a: Suicune|370\/404 slp|[from] item: Leftovers
+|turn|11
+|
+|switch|p1a: Empoleon|Empoleon, M|372\/372
+|-damage|p1a: Empoleon|349\/372|[from] Stealth Rock
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Rest|p2a: Suicune|[from]Sleep Talk
+|-fail|p2a: Suicune
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Suicune|345\/404 slp|[from] sandstorm
+|-heal|p2a: Suicune|370\/404 slp|[from] item: Leftovers
+|turn|12
+|
+|switch|p2a: Ampharos|Ampharos, M|360\/384
+|move|p1a: Empoleon|Defog|p2a: Ampharos
+|-unboost|p2a: Ampharos|evasion|1
+|-sideend|p1: Poetaytoes|Stealth Rock|[from] move: Defog|[of] p1a: Empoleon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Ampharos|336\/384|[from] sandstorm
+|turn|13
+|
+|detailschange|p2a: Ampharos|Ampharos-Mega, M
+|message|Ampharos has Mega Evolved into Mega Ampharos!
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Empoleon|Ice Beam|p2a: Ampharos
+|-supereffective|p2a: Ampharos
+|-damage|p2a: Ampharos|81\/384
+|-damage|p1a: Empoleon|312\/372|[from] item: Life Orb
+|move|p2a: Ampharos|Focus Blast|p1a: Empoleon|[miss]
+|-miss|p2a: Ampharos|p1a: Empoleon
+|
+|-weather|none
+|turn|14
+|
+|switch|p2a: Blissey|Blissey, F|626\/714
+|move|p1a: Empoleon|Ice Beam|p2a: Blissey
+|-damage|p2a: Blissey|522\/714
+|-damage|p1a: Empoleon|275\/372|[from] item: Life Orb
+|
+|-heal|p2a: Blissey|566\/714|[from] item: Leftovers
+|turn|15
+|
+|switch|p1a: Roserade|Roserade, F|222\/261
+|move|p2a: Blissey|Stealth Rock|p1a: Roserade
+|-sidestart|p1: Poetaytoes|move: Stealth Rock
+|
+|-heal|p1a: Roserade|238\/261|[from] item: Black Sludge
+|-heal|p2a: Blissey|610\/714|[from] item: Leftovers
+|turn|16
+|
+|switch|p1a: Hippowdon|Hippowdon, M|420\/420
+|-damage|p1a: Hippowdon|394\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|switch|p2a: Crobat|Crobat, M|355\/355
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Crobat|333\/355|[from] sandstorm
+|-heal|p2a: Crobat|355\/355|[from] item: Black Sludge
+|turn|17
+|
+|move|p2a: Crobat|U-turn|p1a: Hippowdon
+|-damage|p1a: Hippowdon|357\/420
+|
+|switch|p2a: Suicune|Suicune|370\/404 slp
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Hippowdon|Earthquake|p2a: Suicune
+|-damage|p2a: Suicune|288\/404 slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Suicune|263\/404 slp|[from] sandstorm
+|-heal|p2a: Suicune|288\/404 slp|[from] item: Leftovers
+|turn|18
+|
+|switch|p2a: Blissey|Blissey, F|610\/714
+|switch|p1a: Uxie|Uxie|354\/354
+|-damage|p1a: Uxie|310\/354|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Uxie|288\/354|[from] sandstorm
+|-damage|p2a: Blissey|566\/714|[from] sandstorm
+|-heal|p1a: Uxie|310\/354|[from] item: Leftovers
+|-heal|p2a: Blissey|610\/714|[from] item: Leftovers
+|turn|19
+|
+|move|p1a: Uxie|Calm Mind|p1a: Uxie
+|-boost|p1a: Uxie|spa|1
+|-boost|p1a: Uxie|spd|1
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Uxie|288\/354|[from] sandstorm
+|-damage|p2a: Blissey|566\/714|[from] sandstorm
+|-heal|p1a: Uxie|310\/354|[from] item: Leftovers
+|-heal|p2a: Blissey|610\/714|[from] item: Leftovers
+|turn|20
+|
+|move|p1a: Uxie|Psychic|p2a: Blissey
+|-damage|p2a: Blissey|513\/714
+|move|p2a: Blissey|Seismic Toss|p1a: Uxie
+|-damage|p1a: Uxie|210\/354
+|
+|-weather|none
+|-heal|p2a: Blissey|714\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Uxie|232\/354|[from] item: Leftovers
+|turn|21
+|
+|switch|p1a: Empoleon|Empoleon, M|275\/372
+|-damage|p1a: Empoleon|252\/372|[from] Stealth Rock
+|move|p2a: Blissey|Seismic Toss|p1a: Empoleon
+|-damage|p1a: Empoleon|152\/372
+|
+|turn|22
+|
+|move|p1a: Empoleon|Defog|p2a: Blissey
+|-unboost|p2a: Blissey|evasion|1
+|-sideend|p1: Poetaytoes|Stealth Rock|[from] move: Defog|[of] p1a: Empoleon
+|move|p2a: Blissey|Seismic Toss|p1a: Empoleon
+|-damage|p1a: Empoleon|52\/372
+|
+|turn|23
+|
+|switch|p1a: Roserade|Roserade, F|238\/261
+|move|p2a: Blissey|Stealth Rock|p1a: Roserade
+|-sidestart|p1: Poetaytoes|move: Stealth Rock
+|
+|-heal|p1a: Roserade|254\/261|[from] item: Black Sludge
+|turn|24
+|
+|move|p1a: Roserade|Toxic Spikes|p2a: Blissey
+|-sidestart|p2: EchoDjinn|move: Toxic Spikes
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p1a: Roserade|261\/261|[from] item: Black Sludge
+|turn|25
+|
+|switch|p2a: Crobat|Crobat, M|355\/355
+|move|p1a: Roserade|Toxic Spikes|p2a: Crobat
+|-sidestart|p2: EchoDjinn|move: Toxic Spikes
+|
+|turn|26
+|
+|switch|p1a: Hippowdon|Hippowdon, M|357\/420
+|-damage|p1a: Hippowdon|331\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p2a: Crobat|Defog|p1a: Hippowdon
+|-unboost|p1a: Hippowdon|evasion|1
+|-sideend|p1: Poetaytoes|Stealth Rock|[from] move: Defog|[of] p1a: Hippowdon
+|-sideend|p2: EchoDjinn|Toxic Spikes|[from] move: Defog|[of] p2a: Crobat
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Crobat|333\/355|[from] sandstorm
+|-heal|p2a: Crobat|355\/355|[from] item: Black Sludge
+|turn|27
+|
+|move|p2a: Crobat|U-turn|p1a: Hippowdon
+|-damage|p1a: Hippowdon|287\/420
+|
+|switch|p2a: Suicune|Suicune|288\/404 slp
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-heal|p1a: Hippowdon|420\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Suicune|263\/404 slp|[from] sandstorm
+|-heal|p2a: Suicune|288\/404 slp|[from] item: Leftovers
+|turn|28
+|
+|-curestatus|p2a: Suicune|slp
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: Hippowdon|Earthquake|p2a: Suicune
+|-damage|p2a: Suicune|210\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Suicune|185\/404|[from] sandstorm
+|-heal|p2a: Suicune|210\/404|[from] item: Leftovers
+|turn|29
+|
+|switch|p1a: Roserade|Roserade, F|261\/261
+|move|p2a: Suicune|Scald|p1a: Roserade
+|-resisted|p1a: Roserade
+|-damage|p1a: Roserade|200\/261
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Roserade|184\/261|[from] sandstorm
+|-damage|p2a: Suicune|185\/404|[from] sandstorm
+|-heal|p1a: Roserade|200\/261|[from] item: Black Sludge
+|-heal|p2a: Suicune|210\/404|[from] item: Leftovers
+|turn|30
+|
+|switch|p2a: Crobat|Crobat, M|355\/355
+|move|p1a: Roserade|Sleep Powder|p2a: Crobat
+|-status|p2a: Crobat|slp
+|
+|-weather|none
+|-heal|p1a: Roserade|216\/261|[from] item: Black Sludge
+|turn|31
+|
+|switch|p1a: Umbreon|Umbreon, M|322\/394
+|cant|p2a: Crobat|slp
+|
+|-heal|p1a: Umbreon|346\/394|[from] item: Leftovers
+|turn|32
+|
+|cant|p2a: Crobat|slp
+|move|p1a: Umbreon|Foul Play|p2a: Crobat
+|-damage|p2a: Crobat|192\/355 slp
+|
+|-heal|p2a: Crobat|214\/355 slp|[from] item: Black Sludge
+|-heal|p1a: Umbreon|370\/394|[from] item: Leftovers
+|turn|33
+|
+|-curestatus|p2a: Crobat|slp
+|move|p2a: Crobat|U-turn|p1a: Umbreon
+|-supereffective|p1a: Umbreon
+|-damage|p1a: Umbreon|266\/394
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|move|p1a: Umbreon|Foul Play|p2a: Blissey
+|-damage|p2a: Blissey|668\/714
+|
+|-heal|p1a: Umbreon|290\/394|[from] item: Leftovers
+|-heal|p2a: Blissey|712\/714|[from] item: Leftovers
+|turn|34
+|
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|move|p2a: Blissey|Stealth Rock|p1a: Umbreon
+|-sidestart|p1: Poetaytoes|move: Stealth Rock
+|
+|-heal|p1a: Umbreon|314\/394|[from] item: Leftovers
+|-heal|p2a: Blissey|714\/714|[from] item: Leftovers
+|turn|35
+|
+|switch|p1a: Roserade|Roserade, F|216\/261
+|-damage|p1a: Roserade|184\/261|[from] Stealth Rock
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p1a: Roserade|261\/261|[from] move: Wish|[wisher] Umbreon
+|turn|36
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M|81\/384
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Roserade|Sludge Bomb|p2a: Ampharos
+|-damage|p2a: Ampharos|0 fnt
+|faint|p2a: Ampharos
+|
+|
+|switch|p2a: Alakazam|Alakazam, F|252\/252
+|turn|37
+|
+|switch|p1a: Empoleon|Empoleon, M|52\/372
+|-damage|p1a: Empoleon|29\/372|[from] Stealth Rock
+|move|p2a: Alakazam|Psyshock|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|0 fnt
+|faint|p1a: Empoleon
+|
+|
+|switch|p1a: Umbreon|Umbreon, M|314\/394
+|-damage|p1a: Umbreon|265\/394|[from] Stealth Rock
+|turn|38
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p1a: Umbreon|289\/394|[from] item: Leftovers
+|turn|39
+|
+|switch|p1a: Roserade|Roserade, F|261\/261
+|-damage|p1a: Roserade|229\/261|[from] Stealth Rock
+|switch|p2a: Krookodile|Krookodile, M|333\/333
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Roserade
+|-unboost|p1a: Roserade|atk|1
+|
+|-heal|p1a: Roserade|261\/261|[from] move: Wish|[wisher] Umbreon
+|turn|40
+|
+|switch|p2a: Crobat|Crobat, M|214\/355
+|move|p1a: Roserade|Giga Drain|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|175\/355
+|
+|-heal|p2a: Crobat|197\/355|[from] item: Black Sludge
+|turn|41
+|
+|switch|p1a: Hippowdon|Hippowdon, M|420\/420
+|-damage|p1a: Hippowdon|394\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|355\/355
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Crobat|333\/355|[from] sandstorm
+|-heal|p2a: Crobat|355\/355|[from] item: Black Sludge
+|turn|42
+|join|bananagram
+|leave|bananagram
+|
+|move|p2a: Crobat|Brave Bird|p1a: Hippowdon
+|-damage|p1a: Hippowdon|283\/420
+|-damage|p2a: Crobat|318\/355|[from] recoil|[of] p1a: Hippowdon
+|move|p1a: Hippowdon|Yawn|p2a: Crobat
+|-start|p2a: Crobat|move: Yawn|[of] p1a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Crobat|296\/355|[from] sandstorm
+|-heal|p2a: Crobat|318\/355|[from] item: Black Sludge
+|turn|43
+|
+|move|p2a: Crobat|U-turn|p1a: Hippowdon
+|-damage|p1a: Hippowdon|242\/420
+|
+|switch|p2a: Suicune|Suicune|210\/404
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-heal|p1a: Hippowdon|420\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Suicune|185\/404|[from] sandstorm
+|-heal|p2a: Suicune|210\/404|[from] item: Leftovers
+|turn|44
+|
+|switch|p2a: Alakazam|Alakazam, F|252\/252
+|switch|p1a: Roserade|Roserade, F|261\/261
+|-damage|p1a: Roserade|229\/261|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Roserade|213\/261|[from] sandstorm
+|-heal|p1a: Roserade|229\/261|[from] item: Black Sludge
+|turn|45
+|
+|move|p2a: Alakazam|Focus Blast|p1a: Roserade
+|-resisted|p1a: Roserade
+|-damage|p1a: Roserade|164\/261
+|move|p1a: Roserade|Sleep Powder|p2a: Alakazam
+|-status|p2a: Alakazam|slp
+|
+|-weather|none
+|-heal|p1a: Roserade|180\/261|[from] item: Black Sludge
+|turn|46
+|
+|switch|p2a: Crobat|Crobat, M|318\/355
+|move|p1a: Roserade|Toxic Spikes|p2a: Crobat
+|-sidestart|p2: EchoDjinn|move: Toxic Spikes
+|
+|-heal|p2a: Crobat|340\/355|[from] item: Black Sludge
+|-heal|p1a: Roserade|196\/261|[from] item: Black Sludge
+|turn|47
+|
+|switch|p2a: Alakazam|Alakazam, F|252\/252 slp
+|switch|p1a: Umbreon|Umbreon, M|289\/394
+|-damage|p1a: Umbreon|240\/394|[from] Stealth Rock
+|
+|-heal|p1a: Umbreon|264\/394|[from] item: Leftovers
+|turn|48
+|
+|switch|p2a: Suicune|Suicune|210\/404
+|-status|p2a: Suicune|psn
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p2a: Suicune|235\/404 psn|[from] item: Leftovers
+|-heal|p1a: Umbreon|288\/394|[from] item: Leftovers
+|-damage|p2a: Suicune|185\/404 psn|[from] psn
+|turn|49
+|
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: Umbreon|Foul Play|p2a: Suicune
+|-damage|p2a: Suicune|134\/404 psn
+|
+|-heal|p1a: Umbreon|394\/394|[from] move: Wish|[wisher] Umbreon
+|-heal|p2a: Suicune|159\/404 psn|[from] item: Leftovers
+|-damage|p2a: Suicune|109\/404 psn|[from] psn
+|turn|50
+|
+|switch|p1a: Roserade|Roserade, F|196\/261
+|-damage|p1a: Roserade|164\/261|[from] Stealth Rock
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|
+|-heal|p1a: Roserade|180\/261|[from] item: Black Sludge
+|turn|51
+|
+|switch|p2a: Crobat|Crobat, M|340\/355
+|move|p1a: Roserade|Toxic Spikes|p2a: Crobat
+|-sidestart|p2: EchoDjinn|move: Toxic Spikes
+|
+|-heal|p2a: Crobat|355\/355|[from] item: Black Sludge
+|-heal|p1a: Roserade|196\/261|[from] item: Black Sludge
+|turn|52
+|
+|switch|p1a: Umbreon|Umbreon, M|394\/394
+|-damage|p1a: Umbreon|345\/394|[from] Stealth Rock
+|move|p2a: Crobat|U-turn|p1a: Umbreon
+|-supereffective|p1a: Umbreon
+|-damage|p1a: Umbreon|229\/394
+|
+|switch|p2a: Suicune|Suicune|404\/404 slp
+|-ability|p2a: Suicune|Pressure
+|
+|-heal|p1a: Umbreon|253\/394|[from] item: Leftovers
+|turn|53
+|
+|switch|p1a: Uxie|Uxie|232\/354
+|-damage|p1a: Uxie|188\/354|[from] Stealth Rock
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Scald|p1a: Uxie|[from]Sleep Talk
+|-damage|p1a: Uxie|119\/354
+|-status|p1a: Uxie|brn
+|
+|-heal|p1a: Uxie|141\/354 brn|[from] item: Leftovers
+|-damage|p1a: Uxie|97\/354 brn|[from] brn
+|turn|54
+|
+|move|p1a: Uxie|Calm Mind|p1a: Uxie
+|-boost|p1a: Uxie|spa|1
+|-boost|p1a: Uxie|spd|1
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Rest|p2a: Suicune|[from]Sleep Talk
+|-fail|p2a: Suicune
+|
+|-heal|p1a: Uxie|119\/354 brn|[from] item: Leftovers
+|-damage|p1a: Uxie|75\/354 brn|[from] brn
+|turn|55
+|
+|move|p1a: Uxie|Giga Drain|p2a: Suicune
+|-supereffective|p2a: Suicune
+|-damage|p2a: Suicune|286\/404 slp
+|-heal|p1a: Uxie|134\/354 brn|[from] drain|[of] p2a: Suicune
+|-curestatus|p2a: Suicune|slp
+|move|p2a: Suicune|Scald|p1a: Uxie
+|-damage|p1a: Uxie|85\/354 brn
+|
+|-heal|p1a: Uxie|107\/354 brn|[from] item: Leftovers
+|-heal|p2a: Suicune|311\/404|[from] item: Leftovers
+|-damage|p1a: Uxie|63\/354 brn|[from] brn
+|turn|56
+|
+|move|p1a: Uxie|Psychic|p2a: Suicune
+|-damage|p2a: Suicune|208\/404
+|-unboost|p2a: Suicune|spd|1
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p1a: Uxie|85\/354 brn|[from] item: Leftovers
+|-heal|p2a: Suicune|233\/404|[from] item: Leftovers
+|-damage|p1a: Uxie|41\/354 brn|[from] brn
+|turn|57
+|
+|move|p1a: Uxie|Giga Drain|p2a: Suicune
+|-supereffective|p2a: Suicune
+|-damage|p2a: Suicune|103\/404
+|-heal|p1a: Uxie|106\/354 brn|[from] drain|[of] p2a: Suicune
+|move|p2a: Suicune|Scald|p1a: Uxie
+|-damage|p1a: Uxie|34\/354 brn
+|
+|-heal|p1a: Uxie|56\/354 brn|[from] item: Leftovers
+|-heal|p2a: Suicune|128\/404|[from] item: Leftovers
+|-damage|p1a: Uxie|12\/354 brn|[from] brn
+|turn|58
+|
+|move|p1a: Uxie|Giga Drain|p2a: Suicune
+|-crit|p2a: Suicune
+|-supereffective|p2a: Suicune
+|-damage|p2a: Suicune|0 fnt
+|-heal|p1a: Uxie|76\/354 brn|[from] drain|[of] p2a: Suicune
+|faint|p2a: Suicune
+|
+|-heal|p1a: Uxie|98\/354 brn|[from] item: Leftovers
+|-damage|p1a: Uxie|54\/354 brn|[from] brn
+|
+|switch|p2a: Crobat|Crobat, M|355\/355
+|turn|59
+|
+|switch|p1a: Hippowdon|Hippowdon, M|420\/420
+|-damage|p1a: Hippowdon|394\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p2a: Crobat|U-turn|p1a: Hippowdon
+|-damage|p1a: Hippowdon|357\/420
+|
+|switch|p2a: Alakazam|Alakazam, F|252\/252 slp
+|
+|-weather|Sandstorm|[upkeep]
+|turn|60
+|
+|cant|p2a: Alakazam|slp
+|move|p1a: Hippowdon|Earthquake|p2a: Alakazam
+|-damage|p2a: Alakazam|26\/252 slp
+|
+|-weather|Sandstorm|[upkeep]
+|turn|61
+|
+|cant|p2a: Alakazam|slp
+|move|p1a: Hippowdon|Rock Tomb|p2a: Alakazam
+|-damage|p2a: Alakazam|0 fnt
+|faint|p2a: Alakazam
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Crobat|Crobat, M|355\/355
+|turn|62
+|
+|move|p2a: Crobat|Defog|p1a: Hippowdon
+|-unboost|p1a: Hippowdon|evasion|1
+|-sideend|p1: Poetaytoes|Stealth Rock|[from] move: Defog|[of] p1a: Hippowdon
+|-sideend|p2: EchoDjinn|Toxic Spikes|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-heal|p1a: Hippowdon|420\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Crobat|333\/355|[from] sandstorm
+|-heal|p2a: Crobat|355\/355|[from] item: Black Sludge
+|turn|63
+|
+|move|p2a: Crobat|U-turn|p1a: Hippowdon
+|-damage|p1a: Hippowdon|381\/420
+|
+|switch|p2a: Krookodile|Krookodile, M|333\/333
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Hippowdon
+|-unboost|p1a: Hippowdon|atk|1
+|move|p1a: Hippowdon|Yawn|p2a: Krookodile
+|-start|p2a: Krookodile|move: Yawn|[of] p1a: Hippowdon
+|
+|-weather|none
+|turn|64
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|switch|p1a: Umbreon|Umbreon, M|253\/394
+|
+|-heal|p1a: Umbreon|277\/394|[from] item: Leftovers
+|turn|65
+|
+|switch|p1a: Roserade|Roserade, F|196\/261
+|switch|p2a: Krookodile|Krookodile, M|333\/333
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Roserade
+|-unboost|p1a: Roserade|atk|1
+|
+|-heal|p1a: Roserade|212\/261|[from] item: Black Sludge
+|turn|66
+|
+|switch|p2a: Crobat|Crobat, M|355\/355
+|switch|p1a: Uxie|Uxie|54\/354 brn
+|
+|-heal|p1a: Uxie|76\/354 brn|[from] item: Leftovers
+|-damage|p1a: Uxie|32\/354 brn|[from] brn
+|turn|67
+|
+|move|p2a: Crobat|U-turn|p1a: Uxie
+|-supereffective|p1a: Uxie
+|-damage|p1a: Uxie|0 fnt
+|faint|p1a: Uxie
+|join|sadfdsafdsfdss
+|
+|switch|p2a: Krookodile|Krookodile, M|333\/333
+|
+|
+|switch|p1a: Umbreon|Umbreon, M|277\/394
+|turn|68
+|
+|move|p2a: Krookodile|Superpower|p1a: Umbreon
+|-supereffective|p1a: Umbreon
+|-damage|p1a: Umbreon|0 fnt
+|-unboost|p2a: Krookodile|atk|1
+|-unboost|p2a: Krookodile|def|1
+|faint|p1a: Umbreon
+|
+|leave|sadfdsafdsfdss
+|
+|switch|p1a: Roserade|Roserade, F|212\/261
+|turn|69
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|move|p1a: Roserade|Toxic Spikes|p2a: Blissey
+|-sidestart|p2: EchoDjinn|move: Toxic Spikes
+|
+|-heal|p1a: Roserade|228\/261|[from] item: Black Sludge
+|turn|70
+|
+|switch|p1a: Gallade|Gallade, M|9\/340
+|move|p2a: Blissey|Stealth Rock|p1a: Gallade
+|-sidestart|p1: Poetaytoes|move: Stealth Rock
+|
+|turn|71
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|move|p1a: Gallade|Ice Punch|p2a: Blissey
+|-activate|p2a: Blissey|Protect
+|
+|turn|72
+|
+|switch|p2a: Crobat|Crobat, M|355\/355
+|move|p1a: Gallade|Drain Punch|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|314\/355
+|-heal|p1a: Gallade|30\/340|[from] drain|[of] p2a: Crobat
+|
+|-heal|p2a: Crobat|336\/355|[from] item: Black Sludge
+|turn|73
+|
+|switch|p1a: Hippowdon|Hippowdon, M|381\/420
+|-damage|p1a: Hippowdon|355\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p2a: Crobat|U-turn|p1a: Hippowdon
+|-damage|p1a: Hippowdon|312\/420
+|
+|switch|p2a: Krookodile|Krookodile, M|333\/333
+|-status|p2a: Krookodile|psn
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Hippowdon
+|-unboost|p1a: Hippowdon|atk|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Krookodile|292\/333 psn|[from] psn
+|turn|74
+|
+|move|p2a: Krookodile|Earthquake|p1a: Hippowdon
+|-crit|p1a: Hippowdon
+|-damage|p1a: Hippowdon|93\/420
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-heal|p1a: Hippowdon|303\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Krookodile|251\/333 psn|[from] psn
+|turn|75
+|
+|switch|p2a: Crobat|Crobat, M|336\/355
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-heal|p1a: Hippowdon|420\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Crobat|314\/355|[from] sandstorm
+|-heal|p2a: Crobat|336\/355|[from] item: Black Sludge
+|turn|76
+|
+|move|p2a: Crobat|Defog|p1a: Hippowdon
+|-unboost|p1a: Hippowdon|evasion|1
+|-sideend|p1: Poetaytoes|Stealth Rock|[from] move: Defog|[of] p1a: Hippowdon
+|-sideend|p2: EchoDjinn|Toxic Spikes|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Hippowdon|Yawn|p2a: Crobat
+|-start|p2a: Crobat|move: Yawn|[of] p1a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Crobat|314\/355|[from] sandstorm
+|-heal|p2a: Crobat|336\/355|[from] item: Black Sludge
+|turn|77
+|
+|move|p2a: Crobat|U-turn|p1a: Hippowdon
+|-damage|p1a: Hippowdon|378\/420
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|move|p1a: Hippowdon|Earthquake|p2a: Blissey
+|-damage|p2a: Blissey|554\/714
+|
+|-weather|none
+|-heal|p2a: Blissey|598\/714|[from] item: Leftovers
+|turn|78
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Hippowdon
+|-damage|p1a: Hippowdon|278\/420
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-heal|p1a: Hippowdon|420\/420
+|
+|-heal|p2a: Blissey|642\/714|[from] item: Leftovers
+|turn|79
+|
+|switch|p1a: Roserade|Roserade, F|228\/261
+|move|p2a: Blissey|Stealth Rock|p1a: Roserade
+|-sidestart|p1: Poetaytoes|move: Stealth Rock
+|
+|-heal|p1a: Roserade|244\/261|[from] item: Black Sludge
+|-heal|p2a: Blissey|686\/714|[from] item: Leftovers
+|turn|80
+|
+|move|p1a: Roserade|Toxic Spikes|p2a: Blissey
+|-sidestart|p2: EchoDjinn|move: Toxic Spikes
+|move|p2a: Blissey|Seismic Toss|p1a: Roserade
+|-damage|p1a: Roserade|144\/261
+|
+|-heal|p1a: Roserade|160\/261|[from] item: Black Sludge
+|-heal|p2a: Blissey|714\/714|[from] item: Leftovers
+|turn|81
+|
+|move|p1a: Roserade|Sleep Powder|p2a: Blissey|[miss]
+|-miss|p1a: Roserade|p2a: Blissey
+|move|p2a: Blissey|Seismic Toss|p1a: Roserade
+|-damage|p1a: Roserade|60\/261
+|
+|-heal|p1a: Roserade|76\/261|[from] item: Black Sludge
+|turn|82
+|
+|move|p1a: Roserade|Sleep Powder|p2a: Blissey|[miss]
+|-miss|p1a: Roserade|p2a: Blissey
+|move|p2a: Blissey|Seismic Toss|p1a: Roserade
+|-damage|p1a: Roserade|0 fnt
+|faint|p1a: Roserade
+|
+|
+|switch|p1a: Gallade|Gallade, M|30\/340
+|-damage|p1a: Gallade|9\/340|[from] Stealth Rock
+|turn|83
+|
+|move|p1a: Gallade|Ice Punch|p2a: Blissey
+|-damage|p2a: Blissey|571\/714
+|move|p2a: Blissey|Seismic Toss|p1a: Gallade
+|-damage|p1a: Gallade|0 fnt
+|faint|p1a: Gallade
+|
+|-heal|p2a: Blissey|615\/714|[from] item: Leftovers
+|
+|switch|p1a: Hippowdon|Hippowdon, M|420\/420
+|-damage|p1a: Hippowdon|394\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|turn|84
+|
+|move|p2a: Blissey|Wish|p2a: Blissey
+|move|p1a: Hippowdon|Rock Tomb|p2a: Blissey|[miss]
+|-miss|p1a: Hippowdon|p2a: Blissey
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Blissey|571\/714|[from] sandstorm
+|-heal|p2a: Blissey|615\/714|[from] item: Leftovers
+|turn|85
+|
+|switch|p2a: Krookodile|Krookodile, M|251\/333 psn
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Hippowdon
+|-unboost|p1a: Hippowdon|atk|1
+|move|p1a: Hippowdon|Yawn|p2a: Krookodile
+|-fail|p2a: Krookodile
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Krookodile|333\/333 psn|[from] move: Wish|[wisher] Blissey
+|-damage|p2a: Krookodile|292\/333 psn|[from] psn
+|turn|86
+|
+|switch|p2a: Crobat|Crobat, M|336\/355
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-heal|p1a: Hippowdon|420\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Crobat|314\/355|[from] sandstorm
+|-heal|p2a: Crobat|336\/355|[from] item: Black Sludge
+|turn|87
+|
+|move|p2a: Crobat|Defog|p1a: Hippowdon
+|-unboost|p1a: Hippowdon|evasion|1
+|-sideend|p1: Poetaytoes|Stealth Rock|[from] move: Defog|[of] p1a: Hippowdon
+|-sideend|p2: EchoDjinn|Toxic Spikes|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Hippowdon|Rock Tomb|p2a: Crobat
+|-crit|p2a: Crobat
+|-supereffective|p2a: Crobat
+|-damage|p2a: Crobat|150\/355
+|-unboost|p2a: Crobat|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Crobat|128\/355|[from] sandstorm
+|-heal|p2a: Crobat|150\/355|[from] item: Black Sludge
+|turn|88
+|
+|switch|p2a: Blissey|Blissey, F|615\/714
+|move|p1a: Hippowdon|Earthquake|p2a: Blissey
+|-damage|p2a: Blissey|459\/714
+|
+|-weather|none
+|-heal|p2a: Blissey|503\/714|[from] item: Leftovers
+|turn|89
+|
+|move|p2a: Blissey|Wish|p2a: Blissey
+|move|p1a: Hippowdon|Earthquake|p2a: Blissey
+|-damage|p2a: Blissey|353\/714
+|
+|-heal|p2a: Blissey|397\/714|[from] item: Leftovers
+|turn|90
+|
+|switch|p2a: Krookodile|Krookodile, M|292\/333 psn
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Hippowdon
+|-unboost|p1a: Hippowdon|atk|1
+|move|p1a: Hippowdon|Earthquake|p2a: Krookodile
+|-damage|p2a: Krookodile|217\/333 psn
+|
+|-heal|p2a: Krookodile|333\/333 psn|[from] move: Wish|[wisher] Blissey
+|-damage|p2a: Krookodile|292\/333 psn|[from] psn
+|turn|91
+|
+|switch|p2a: Blissey|Blissey, F|397\/714
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-fail|p1a: Hippowdon
+|
+|-heal|p2a: Blissey|441\/714|[from] item: Leftovers
+|turn|92
+|
+|move|p2a: Blissey|Wish|p2a: Blissey
+|move|p1a: Hippowdon|Yawn|p2a: Blissey
+|-start|p2a: Blissey|move: Yawn|[of] p1a: Hippowdon
+|
+|-heal|p2a: Blissey|485\/714|[from] item: Leftovers
+|turn|93
+|
+|switch|p2a: Crobat|Crobat, M|150\/355
+|move|p1a: Hippowdon|Rock Tomb|p2a: Crobat
+|-supereffective|p2a: Crobat
+|-damage|p2a: Crobat|88\/355
+|-unboost|p2a: Crobat|spe|1
+|
+|-heal|p2a: Crobat|355\/355|[from] move: Wish|[wisher] Blissey
+|turn|94
+|
+|switch|p2a: Blissey|Blissey, F|485\/714
+|move|p1a: Hippowdon|Rock Tomb|p2a: Blissey
+|-damage|p2a: Blissey|440\/714
+|-unboost|p2a: Blissey|spe|1
+|
+|-heal|p2a: Blissey|484\/714|[from] item: Leftovers
+|turn|95
+|
+|move|p1a: Hippowdon|Rock Tomb|p2a: Blissey
+|-damage|p2a: Blissey|432\/714
+|-unboost|p2a: Blissey|spe|1
+|move|p2a: Blissey|Seismic Toss|p1a: Hippowdon
+|-damage|p1a: Hippowdon|320\/420
+|
+|-heal|p2a: Blissey|476\/714|[from] item: Leftovers
+|turn|96
+|
+|move|p1a: Hippowdon|Earthquake|p2a: Blissey
+|-damage|p2a: Blissey|362\/714
+|move|p2a: Blissey|Stealth Rock|p1a: Hippowdon
+|-sidestart|p1: Poetaytoes|move: Stealth Rock
+|
+|-heal|p2a: Blissey|406\/714|[from] item: Leftovers
+|turn|97
+|
+|move|p1a: Hippowdon|Earthquake|p2a: Blissey
+|-damage|p2a: Blissey|282\/714
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p2a: Blissey|326\/714|[from] item: Leftovers
+|turn|98
+|
+|switch|p2a: Krookodile|Krookodile, M|292\/333 psn
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Hippowdon
+|-unboost|p1a: Hippowdon|atk|1
+|move|p1a: Hippowdon|Yawn|p2a: Krookodile
+|-fail|p2a: Krookodile
+|
+|-heal|p2a: Krookodile|333\/333 psn|[from] move: Wish|[wisher] Blissey
+|-damage|p2a: Krookodile|292\/333 psn|[from] psn
+|turn|99
+|
+|move|p2a: Krookodile|Earthquake|p1a: Hippowdon
+|-damage|p1a: Hippowdon|169\/420
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-heal|p1a: Hippowdon|379\/420
+|
+|-damage|p2a: Krookodile|251\/333 psn|[from] psn
+|turn|100
+|
+|move|p2a: Krookodile|Earthquake|p1a: Hippowdon
+|-damage|p1a: Hippowdon|225\/420
+|move|p1a: Hippowdon|Earthquake|p2a: Krookodile
+|-damage|p2a: Krookodile|188\/333 psn
+|
+|-damage|p2a: Krookodile|147\/333 psn|[from] psn
+|turn|101
+|
+|switch|p2a: Blissey|Blissey, F|326\/714
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-heal|p1a: Hippowdon|420\/420
+|
+|-heal|p2a: Blissey|370\/714|[from] item: Leftovers
+|turn|102
+|
+|move|p2a: Blissey|Wish|p2a: Blissey
+|move|p1a: Hippowdon|Yawn|p2a: Blissey
+|-start|p2a: Blissey|move: Yawn|[of] p1a: Hippowdon
+|
+|-heal|p2a: Blissey|414\/714|[from] item: Leftovers
+|turn|103
+|
+|switch|p2a: Krookodile|Krookodile, M|147\/333 psn
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Hippowdon
+|-unboost|p1a: Hippowdon|atk|1
+|move|p1a: Hippowdon|Earthquake|p2a: Krookodile
+|-damage|p2a: Krookodile|95\/333 psn
+|
+|-heal|p2a: Krookodile|333\/333 psn|[from] move: Wish|[wisher] Blissey
+|-damage|p2a: Krookodile|292\/333 psn|[from] psn
+|turn|104
+|
+|switch|p2a: Crobat|Crobat, M|355\/355
+|move|p1a: Hippowdon|Rock Tomb|p2a: Crobat
+|-supereffective|p2a: Crobat
+|-damage|p2a: Crobat|311\/355
+|-unboost|p2a: Crobat|spe|1
+|
+|-heal|p2a: Crobat|333\/355|[from] item: Black Sludge
+|turn|105
+|
+|switch|p2a: Krookodile|Krookodile, M|292\/333 psn
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Hippowdon
+|-unboost|p1a: Hippowdon|atk|1
+|move|p1a: Hippowdon|Rock Tomb|p2a: Krookodile
+|-resisted|p2a: Krookodile
+|-damage|p2a: Krookodile|282\/333 psn
+|-unboost|p2a: Krookodile|spe|1
+|
+|-damage|p2a: Krookodile|241\/333 psn|[from] psn
+|turn|106
+|
+|switch|p2a: Crobat|Crobat, M|333\/355
+|move|p1a: Hippowdon|Rock Tomb|p2a: Crobat
+|-supereffective|p2a: Crobat
+|-damage|p2a: Crobat|293\/355
+|-unboost|p2a: Crobat|spe|1
+|
+|-heal|p2a: Crobat|315\/355|[from] item: Black Sludge
+|turn|107
+|join|Reifish
+|
+|move|p2a: Crobat|U-turn|p1a: Hippowdon
+|-damage|p1a: Hippowdon|381\/420
+|
+|switch|p2a: Krookodile|Krookodile, M|241\/333 psn
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Hippowdon
+|-unboost|p1a: Hippowdon|atk|1
+|move|p1a: Hippowdon|Rock Tomb|p2a: Krookodile
+|-resisted|p2a: Krookodile
+|-damage|p2a: Krookodile|233\/333 psn
+|-unboost|p2a: Krookodile|spe|1
+|
+|-damage|p2a: Krookodile|192\/333 psn|[from] psn
+|turn|108
+|leave|Reifish
+|
+|switch|p2a: Blissey|Blissey, F|414\/714
+|move|p1a: Hippowdon|Rock Tomb|p2a: Blissey|[miss]
+|-miss|p1a: Hippowdon|p2a: Blissey
+|
+|-heal|p2a: Blissey|458\/714|[from] item: Leftovers
+|turn|109
+|
+|move|p2a: Blissey|Wish|p2a: Blissey
+|move|p1a: Hippowdon|Rock Tomb|p2a: Blissey
+|-damage|p2a: Blissey|434\/714
+|-unboost|p2a: Blissey|spe|1
+|
+|-heal|p2a: Blissey|478\/714|[from] item: Leftovers
+|turn|110
+|
+|switch|p2a: Krookodile|Krookodile, M|192\/333 psn
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Hippowdon
+|move|p1a: Hippowdon|Rock Tomb|p2a: Krookodile
+|-resisted|p2a: Krookodile
+|-damage|p2a: Krookodile|184\/333 psn
+|-unboost|p2a: Krookodile|spe|1
+|
+|-heal|p2a: Krookodile|333\/333 psn|[from] move: Wish|[wisher] Blissey
+|-damage|p2a: Krookodile|292\/333 psn|[from] psn
+|turn|111
+|
+|switch|p2a: Blissey|Blissey, F|478\/714
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-heal|p1a: Hippowdon|420\/420
+|
+|-heal|p2a: Blissey|522\/714|[from] item: Leftovers
+|turn|112
+|
+|move|p2a: Blissey|Wish|p2a: Blissey
+|move|p1a: Hippowdon|Yawn|p2a: Blissey
+|-start|p2a: Blissey|move: Yawn|[of] p1a: Hippowdon
+|
+|-heal|p2a: Blissey|566\/714|[from] item: Leftovers
+|turn|113
+|
+|switch|p2a: Crobat|Crobat, M|315\/355
+|move|p1a: Hippowdon|Rock Tomb|p2a: Crobat
+|-supereffective|p2a: Crobat
+|-damage|p2a: Crobat|281\/355
+|-unboost|p2a: Crobat|spe|1
+|
+|-heal|p2a: Crobat|355\/355|[from] move: Wish|[wisher] Blissey
+|turn|114
+|
+|switch|p2a: Blissey|Blissey, F|566\/714
+|move|p1a: Hippowdon|Rock Tomb|p2a: Blissey
+|-damage|p2a: Blissey|541\/714
+|-unboost|p2a: Blissey|spe|1
+|
+|-heal|p2a: Blissey|585\/714|[from] item: Leftovers
+|turn|115
+|
+|move|p1a: Hippowdon|Rock Tomb|p2a: Blissey
+|-damage|p2a: Blissey|560\/714
+|-unboost|p2a: Blissey|spe|1
+|move|p2a: Blissey|Stealth Rock|p1a: Hippowdon
+|-fail|p1a: Hippowdon
+|
+|-heal|p2a: Blissey|604\/714|[from] item: Leftovers
+|turn|116
+|
+|move|p1a: Hippowdon|Yawn|p2a: Blissey
+|-start|p2a: Blissey|move: Yawn|[of] p1a: Hippowdon
+|move|p2a: Blissey|Stealth Rock|p1a: Hippowdon
+|-fail|p1a: Hippowdon
+|
+|-heal|p2a: Blissey|648\/714|[from] item: Leftovers
+|turn|117
+|
+|move|p1a: Hippowdon|Rock Tomb|p2a: Blissey
+|-damage|p2a: Blissey|622\/714
+|-unboost|p2a: Blissey|spe|1
+|move|p2a: Blissey|Stealth Rock|p1a: Hippowdon
+|-fail|p1a: Hippowdon
+|
+|-status|p2a: Blissey|slp
+|-heal|p2a: Blissey|666\/714 slp|[from] item: Leftovers
+|turn|118
+|
+|move|p1a: Hippowdon|Rock Tomb|p2a: Blissey|[miss]
+|-miss|p1a: Hippowdon|p2a: Blissey
+|cant|p2a: Blissey|slp
+|
+|-heal|p2a: Blissey|710\/714 slp|[from] item: Leftovers
+|turn|119
+|
+|move|p1a: Hippowdon|Rock Tomb|p2a: Blissey
+|-damage|p2a: Blissey|683\/714 slp
+|-unboost|p2a: Blissey|spe|1
+|cant|p2a: Blissey|slp
+|
+|-heal|p2a: Blissey|714\/714 slp|[from] item: Leftovers
+|turn|120
+|
+|move|p1a: Hippowdon|Rock Tomb|p2a: Blissey|[miss]
+|-miss|p1a: Hippowdon|p2a: Blissey
+|-curestatus|p2a: Blissey|slp
+|move|p2a: Blissey|Stealth Rock|p1a: Hippowdon
+|-fail|p1a: Hippowdon
+|
+|turn|121
+|join|Vajra Asura
+|
+|move|p1a: Hippowdon|Rock Tomb|p2a: Blissey
+|-damage|p2a: Blissey|691\/714
+|-unboost|p2a: Blissey|spe|1
+|move|p2a: Blissey|Stealth Rock|p1a: Hippowdon
+|-fail|p1a: Hippowdon
+|
+|-heal|p2a: Blissey|714\/714|[from] item: Leftovers
+|turn|122
+|
+|move|p1a: Hippowdon|Rock Tomb|p2a: Blissey
+|-damage|p2a: Blissey|689\/714
+|-unboost|p2a: Blissey|spe|1
+|move|p2a: Blissey|Stealth Rock|p1a: Hippowdon
+|-fail|p1a: Hippowdon
+|
+|-heal|p2a: Blissey|714\/714|[from] item: Leftovers
+|turn|123
+|
+|move|p1a: Hippowdon|Yawn|p2a: Blissey
+|-start|p2a: Blissey|move: Yawn|[of] p1a: Hippowdon
+|move|p2a: Blissey|Stealth Rock|p1a: Hippowdon
+|-fail|p1a: Hippowdon
+|
+|turn|124
+|
+|move|p1a: Hippowdon|Earthquake|p2a: Blissey
+|-damage|p2a: Blissey|657\/714
+|move|p2a: Blissey|Stealth Rock|p1a: Hippowdon
+|-fail|p1a: Hippowdon
+|
+|-status|p2a: Blissey|slp
+|-heal|p2a: Blissey|701\/714 slp|[from] item: Leftovers
+|turn|125
+|leave|Vajra Asura
+|
+|move|p1a: Hippowdon|Earthquake|p2a: Blissey
+|-damage|p2a: Blissey|641\/714 slp
+|cant|p2a: Blissey|slp
+|
+|-heal|p2a: Blissey|685\/714 slp|[from] item: Leftovers
+|turn|126
+|join|Vajra Asura
+|
+|move|p1a: Hippowdon|Earthquake|p2a: Blissey
+|-damage|p2a: Blissey|628\/714 slp
+|cant|p2a: Blissey|slp
+|
+|-heal|p2a: Blissey|672\/714 slp|[from] item: Leftovers
+|turn|127
+|
+|move|p1a: Hippowdon|Yawn|p2a: Blissey
+|-fail|p2a: Blissey
+|cant|p2a: Blissey|slp
+|
+|-heal|p2a: Blissey|714\/714 slp|[from] item: Leftovers
+|turn|128
+|
+|move|p1a: Hippowdon|Yawn|p2a: Blissey
+|-fail|p2a: Blissey
+|-curestatus|p2a: Blissey|slp
+|move|p2a: Blissey|Stealth Rock|p1a: Hippowdon
+|-fail|p1a: Hippowdon
+|
+|turn|129
+|
+|move|p1a: Hippowdon|Yawn|p2a: Blissey
+|-start|p2a: Blissey|move: Yawn|[of] p1a: Hippowdon
+|move|p2a: Blissey|Stealth Rock|p1a: Hippowdon
+|-fail|p1a: Hippowdon
+|
+|turn|130
+|leave|Vajra Asura
+|
+|move|p1a: Hippowdon|Yawn|p2a: Blissey
+|-fail|p2a: Blissey
+|move|p2a: Blissey|Stealth Rock|p1a: Hippowdon
+|-fail|p1a: Hippowdon
+|
+|-status|p2a: Blissey|slp
+|turn|131
+|
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-fail|p1a: Hippowdon
+|cant|p2a: Blissey|slp
+|
+|turn|132
+|
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-fail|p1a: Hippowdon
+|cant|p2a: Blissey|slp
+|
+|turn|133
+|
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-fail|p1a: Hippowdon
+|-curestatus|p2a: Blissey|slp
+|move|p2a: Blissey|Seismic Toss|p1a: Hippowdon
+|-damage|p1a: Hippowdon|320\/420
+|
+|turn|134
+|
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-heal|p1a: Hippowdon|420\/420
+|move|p2a: Blissey|Stealth Rock|p1a: Hippowdon
+|-fail|p1a: Hippowdon
+|
+|turn|135
+|
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-fail|p1a: Hippowdon
+|move|p2a: Blissey|Stealth Rock|p1a: Hippowdon
+|-fail|p1a: Hippowdon
+|
+|turn|136
+|join|THE POD
+|
+|-activate|p1a: Hippowdon|move: Struggle
+|move|p1a: Hippowdon|Struggle|p2a: Blissey
+|-damage|p2a: Blissey|694\/714
+|-damage|p1a: Hippowdon|315\/420
+|move|p2a: Blissey|Stealth Rock|p1a: Hippowdon
+|-fail|p1a: Hippowdon
+|
+|-heal|p2a: Blissey|714\/714|[from] item: Leftovers
+|turn|137
+|
+|-activate|p1a: Hippowdon|move: Struggle
+|move|p1a: Hippowdon|Struggle|p2a: Blissey
+|-damage|p2a: Blissey|694\/714
+|-damage|p1a: Hippowdon|210\/420
+|move|p2a: Blissey|Seismic Toss|p1a: Hippowdon
+|-damage|p1a: Hippowdon|110\/420
+|
+|-heal|p2a: Blissey|714\/714|[from] item: Leftovers
+|turn|138
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|-activate|p1a: Hippowdon|move: Struggle
+|move|p1a: Hippowdon|Struggle|p2a: Blissey
+|-activate|p2a: Blissey|Protect
+|
+|turn|139
+|
+|-activate|p1a: Hippowdon|move: Struggle
+|move|p1a: Hippowdon|Struggle|p2a: Blissey
+|-damage|p2a: Blissey|693\/714
+|-damage|p1a: Hippowdon|5\/420
+|move|p2a: Blissey|Stealth Rock|p1a: Hippowdon
+|-fail|p1a: Hippowdon
+|
+|-heal|p2a: Blissey|714\/714|[from] item: Leftovers
+|turn|140
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|-activate|p1a: Hippowdon|move: Struggle
+|move|p1a: Hippowdon|Struggle|p2a: Blissey
+|-activate|p2a: Blissey|Protect
+|
+|turn|141
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|-activate|p1a: Hippowdon|move: Struggle
+|move|p1a: Hippowdon|Struggle|p2a: Blissey
+|-activate|p2a: Blissey|Protect
+|
+|turn|142
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-fail|p2a: Blissey
+|-activate|p1a: Hippowdon|move: Struggle
+|move|p1a: Hippowdon|Struggle|p2a: Blissey
+|-damage|p2a: Blissey|694\/714
+|-damage|p1a: Hippowdon|0 fnt
+|faint|p1a: Hippowdon
+|
+|win|EchoDjinn
+|raw|Ladder updating...
+|raw|Poetaytoes's rating: 1464 &rarr; <strong>1441<\/strong><br \/>(-23 for losing)
+|raw|EchoDjinn's rating: 1413 &rarr; <strong>1436<\/strong><br \/>(+23 for winning)
+|c|âPoetaytoes|lmao gg

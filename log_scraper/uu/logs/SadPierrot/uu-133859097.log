@@ -1,0 +1,334 @@
+|join|SadPierrot
+|join|SpecsPrimeape
+|player|p1|SadPierrot|238
+|player|p2|SpecsPrimeape|58
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Noivern, F
+|poke|p1|Victini
+|poke|p1|Slowbro, F
+|poke|p1|Hitmontop, M
+|poke|p1|Rotom-Mow
+|poke|p1|Bronzong
+|poke|p2|Pangoro, M
+|poke|p2|Miltank, F
+|poke|p2|Blissey, F
+|poke|p2|Toxicroak, M
+|poke|p2|Tentacruel, F
+|poke|p2|Gastrodon, M
+|rule|Baton Pass Clause: Limit 3 pokemon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Rotom-Mow|Rotom-Mow|262\/262
+|switch|p2a: Miltank|Miltank, F|390\/390
+|turn|1
+|
+|move|p2a: Miltank|Stealth Rock|p1a: Rotom-Mow
+|-sidestart|p1: SadPierrot|move: Stealth Rock
+|move|p1a: Rotom-Mow|Trick|p2a: Miltank
+|-activate|p1a: Rotom-Mow|move: Trick|[of] p2a: Miltank
+|-item|p2a: Miltank|Choice Specs|[from] move: Trick
+|-item|p1a: Rotom-Mow|Leftovers|[from] move: Trick
+|
+|turn|2
+|
+|switch|p2a: Tentacruel|Tentacruel, F|363\/363
+|switch|p1a: Hitmontop|Hitmontop, M|304\/304
+|-damage|p1a: Hitmontop|285\/304|[from] Stealth Rock
+|-ability|p1a: Hitmontop|Intimidate|[of] p2a: Tentacruel
+|-unboost|p2a: Tentacruel|atk|1
+|
+|-heal|p1a: Hitmontop|304\/304|[from] item: Leftovers
+|turn|3
+|
+|move|p2a: Tentacruel|Toxic Spikes|p1a: Hitmontop
+|-sidestart|p1: SadPierrot|move: Toxic Spikes
+|move|p1a: Hitmontop|Rapid Spin|p2a: Tentacruel
+|-damage|p2a: Tentacruel|347\/363
+|-sideend|p1: SadPierrot|Toxic Spikes|[from] move: Rapid Spin|[of] p1a: Hitmontop
+|-sideend|p1: SadPierrot|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Hitmontop
+|
+|-heal|p2a: Tentacruel|363\/363|[from] item: Black Sludge
+|turn|4
+|
+|switch|p1a: Rotom-Mow|Rotom-Mow|262\/262
+|move|p2a: Tentacruel|Toxic Spikes|p1a: Rotom-Mow
+|-sidestart|p1: SadPierrot|move: Toxic Spikes
+|
+|turn|5
+|
+|move|p2a: Tentacruel|Protect|p2a: Tentacruel
+|-singleturn|p2a: Tentacruel|Protect
+|move|p1a: Rotom-Mow|Volt Switch|p2a: Tentacruel
+|-activate|p2a: Tentacruel|Protect
+|
+|turn|6
+|
+|move|p2a: Tentacruel|Toxic Spikes|p1a: Rotom-Mow
+|-sidestart|p1: SadPierrot|move: Toxic Spikes
+|move|p1a: Rotom-Mow|Volt Switch|p2a: Tentacruel
+|-supereffective|p2a: Tentacruel
+|-damage|p2a: Tentacruel|213\/363
+|
+|switch|p1a: Bronzong|Bronzong|276\/276
+|
+|-heal|p2a: Tentacruel|235\/363|[from] item: Black Sludge
+|turn|7
+|
+|switch|p2a: Pangoro|Pangoro, M|331\/331
+|move|p1a: Bronzong|Trick|p2a: Pangoro
+|-activate|p1a: Bronzong|move: Trick|[of] p2a: Pangoro
+|-item|p2a: Pangoro|Iron Ball|[from] move: Trick
+|-item|p1a: Bronzong|Choice Scarf|[from] move: Trick
+|
+|turn|8
+|
+|move|p2a: Pangoro|Parting Shot|p1a: Bronzong
+|-unboost|p1a: Bronzong|atk|1
+|-unboost|p1a: Bronzong|spa|1
+|
+|switch|p2a: Miltank|Miltank, F|390\/390
+|move|p1a: Bronzong|Stealth Rock|p2a: Miltank
+|-sidestart|p2: SpecsPrimeape|move: Stealth Rock
+|
+|turn|9
+|
+|switch|p1a: Hitmontop|Hitmontop, M|304\/304
+|-status|p1a: Hitmontop|tox
+|-ability|p1a: Hitmontop|Intimidate|[of] p2a: Miltank
+|-unboost|p2a: Miltank|atk|1
+|move|p2a: Miltank|Stealth Rock|p1a: Hitmontop
+|-sidestart|p1: SadPierrot|move: Stealth Rock
+|
+|-damage|p1a: Hitmontop|285\/304 tox|[from] psn
+|turn|10
+|
+|switch|p2a: Tentacruel|Tentacruel, F|235\/363
+|-damage|p2a: Tentacruel|190\/363|[from] Stealth Rock
+|move|p1a: Hitmontop|Rapid Spin|p2a: Tentacruel
+|-crit|p2a: Tentacruel
+|-damage|p2a: Tentacruel|167\/363
+|-sideend|p1: SadPierrot|Toxic Spikes|[from] move: Rapid Spin|[of] p1a: Hitmontop
+|-sideend|p1: SadPierrot|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Hitmontop
+|
+|-heal|p2a: Tentacruel|189\/363|[from] item: Black Sludge
+|-heal|p1a: Hitmontop|304\/304 tox|[from] item: Leftovers
+|-damage|p1a: Hitmontop|266\/304 tox|[from] psn
+|turn|11
+|
+|switch|p1a: Bronzong|Bronzong|276\/276
+|move|p2a: Tentacruel|Toxic Spikes|p1a: Bronzong
+|-sidestart|p1: SadPierrot|move: Toxic Spikes
+|
+|-heal|p2a: Tentacruel|211\/363|[from] item: Black Sludge
+|turn|12
+|
+|switch|p2a: Pangoro|Pangoro, M|331\/331
+|-damage|p2a: Pangoro|311\/331|[from] Stealth Rock
+|move|p1a: Bronzong|Trick|p2a: Pangoro
+|-activate|p1a: Bronzong|move: Trick|[of] p2a: Pangoro
+|-item|p2a: Pangoro|Choice Scarf|[from] move: Trick
+|-item|p1a: Bronzong|Iron Ball|[from] move: Trick
+|
+|turn|13
+|
+|move|p2a: Pangoro|Parting Shot|p1a: Bronzong
+|-unboost|p1a: Bronzong|atk|1
+|-unboost|p1a: Bronzong|spa|1
+|
+|switch|p2a: Miltank|Miltank, F|390\/390
+|-damage|p2a: Miltank|342\/390|[from] Stealth Rock
+|move|p1a: Bronzong|Gyro Ball|p2a: Miltank
+|-damage|p2a: Miltank|221\/390
+|
+|turn|14
+|
+|move|p2a: Miltank|Stealth Rock|p1a: Bronzong
+|-sidestart|p1: SadPierrot|move: Stealth Rock
+|move|p1a: Bronzong|Gyro Ball|p2a: Miltank
+|-damage|p2a: Miltank|77\/390
+|
+|turn|15
+|
+|switch|p2a: Tentacruel|Tentacruel, F|211\/363
+|-damage|p2a: Tentacruel|166\/363|[from] Stealth Rock
+|move|p1a: Bronzong|Gyro Ball|p2a: Tentacruel
+|-resisted|p2a: Tentacruel
+|-damage|p2a: Tentacruel|101\/363
+|
+|-heal|p2a: Tentacruel|123\/363|[from] item: Black Sludge
+|turn|16
+|
+|move|p2a: Tentacruel|Rapid Spin|p1a: Bronzong
+|-resisted|p1a: Bronzong
+|-damage|p1a: Bronzong|272\/276
+|-sideend|p2: SpecsPrimeape|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Tentacruel
+|move|p1a: Bronzong|Explosion|p2a: Tentacruel
+|-damage|p2a: Tentacruel|0 fnt
+|faint|p1a: Bronzong
+|faint|p2a: Tentacruel
+|
+|
+|switch|p2a: Toxicroak|Toxicroak, M|308\/308
+|switch|p1a: Hitmontop|Hitmontop, M|266\/304 tox
+|-damage|p1a: Hitmontop|247\/304 tox|[from] Stealth Rock
+|-ability|p1a: Hitmontop|Intimidate|[of] p2a: Toxicroak
+|-unboost|p2a: Toxicroak|atk|1
+|turn|17
+|
+|move|p2a: Toxicroak|Swords Dance|p2a: Toxicroak
+|-boost|p2a: Toxicroak|atk|2
+|move|p1a: Hitmontop|Rapid Spin|p2a: Toxicroak
+|-damage|p2a: Toxicroak|286\/308
+|-sideend|p1: SadPierrot|Toxic Spikes|[from] move: Rapid Spin|[of] p1a: Hitmontop
+|-sideend|p1: SadPierrot|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Hitmontop
+|
+|-heal|p1a: Hitmontop|266\/304 tox|[from] item: Leftovers
+|-damage|p1a: Hitmontop|247\/304 tox|[from] psn
+|turn|18
+|
+|move|p2a: Toxicroak|Swords Dance|p2a: Toxicroak
+|-boost|p2a: Toxicroak|atk|2
+|move|p1a: Hitmontop|Close Combat|p2a: Toxicroak
+|-resisted|p2a: Toxicroak
+|-damage|p2a: Toxicroak|187\/308
+|-unboost|p1a: Hitmontop|def|1
+|-unboost|p1a: Hitmontop|spd|1
+|
+|-heal|p1a: Hitmontop|266\/304 tox|[from] item: Leftovers
+|-damage|p1a: Hitmontop|228\/304 tox|[from] psn
+|turn|19
+|
+|move|p2a: Toxicroak|Drain Punch|p1a: Hitmontop
+|-damage|p1a: Hitmontop|0 fnt
+|-heal|p2a: Toxicroak|301\/308|[from] drain|[of] p1a: Hitmontop
+|-damage|p2a: Toxicroak|271\/308|[from] item: Life Orb
+|faint|p1a: Hitmontop
+|
+|
+|switch|p1a: Noivern|Noivern, F|311\/311
+|turn|20
+|
+|move|p2a: Toxicroak|Sucker Punch|p1a: Noivern
+|-damage|p1a: Noivern|0 fnt
+|-damage|p2a: Toxicroak|241\/308|[from] item: Life Orb
+|faint|p1a: Noivern
+|
+|
+|switch|p1a: Slowbro|Slowbro, F|394\/394
+|turn|21
+|
+|move|p2a: Toxicroak|Gunk Shot|p1a: Slowbro|[miss]
+|-miss|p2a: Toxicroak|p1a: Slowbro
+|move|p1a: Slowbro|Thunder Wave|p2a: Toxicroak
+|-status|p2a: Toxicroak|par
+|
+|turn|22
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|move|p1a: Slowbro|Psyshock|p2a: Blissey
+|-damage|p2a: Blissey|542\/714
+|
+|-heal|p2a: Blissey|586\/714|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Blissey|Heal Bell|p2a: Blissey
+|-cureteam|p2a: Blissey|[from] move: HealBell
+|move|p1a: Slowbro|Thunder Wave|p2a: Blissey
+|-status|p2a: Blissey|par
+|
+|-heal|p2a: Blissey|630\/714 par|[from] item: Leftovers
+|turn|24
+|
+|switch|p2a: Miltank|Miltank, F|77\/390
+|move|p1a: Slowbro|Psyshock|p2a: Miltank
+|-damage|p2a: Miltank|0 fnt
+|faint|p2a: Miltank
+|
+|
+|switch|p2a: Gastrodon|Gastrodon, M|426\/426
+|turn|25
+|
+|move|p2a: Gastrodon|Toxic|p1a: Slowbro
+|-status|p1a: Slowbro|tox
+|move|p1a: Slowbro|Psyshock|p2a: Gastrodon
+|-damage|p2a: Gastrodon|323\/426
+|
+|-heal|p2a: Gastrodon|349\/426|[from] item: Leftovers
+|-damage|p1a: Slowbro|370\/394 tox|[from] psn
+|turn|26
+|
+|switch|p1a: Rotom-Mow|Rotom-Mow|262\/262
+|move|p2a: Gastrodon|Scald|p1a: Rotom-Mow
+|-resisted|p1a: Rotom-Mow
+|-damage|p1a: Rotom-Mow|226\/262
+|-status|p1a: Rotom-Mow|brn
+|
+|-heal|p1a: Rotom-Mow|242\/262 brn|[from] item: Leftovers
+|-heal|p2a: Gastrodon|375\/426|[from] item: Leftovers
+|-damage|p1a: Rotom-Mow|210\/262 brn|[from] brn
+|turn|27
+|
+|switch|p2a: Blissey|Blissey, F|630\/714
+|move|p1a: Rotom-Mow|Leaf Storm|p2a: Blissey
+|-damage|p2a: Blissey|497\/714
+|-unboost|p1a: Rotom-Mow|spa|2
+|
+|-heal|p1a: Rotom-Mow|226\/262 brn|[from] item: Leftovers
+|-heal|p2a: Blissey|541\/714|[from] item: Leftovers
+|-damage|p1a: Rotom-Mow|194\/262 brn|[from] brn
+|turn|28
+|
+|move|p1a: Rotom-Mow|Volt Switch|p2a: Blissey
+|-damage|p2a: Blissey|504\/714
+|
+|switch|p1a: Victini|Victini|341\/341
+|move|p2a: Blissey|Thunder Wave|p1a: Victini
+|-status|p1a: Victini|par
+|
+|-heal|p2a: Blissey|548\/714|[from] item: Leftovers
+|turn|29
+|
+|move|p2a: Blissey|Soft-Boiled|p2a: Blissey
+|-heal|p2a: Blissey|714\/714
+|move|p1a: Victini|V-create|p2a: Blissey
+|-damage|p2a: Blissey|201\/714
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|
+|-heal|p2a: Blissey|245\/714|[from] item: Leftovers
+|turn|30
+|
+|move|p2a: Blissey|Soft-Boiled|p2a: Blissey
+|-heal|p2a: Blissey|602\/714
+|cant|p1a: Victini|par
+|
+|-heal|p2a: Blissey|646\/714|[from] item: Leftovers
+|turn|31
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Victini
+|-damage|p1a: Victini|241\/341 par
+|cant|p1a: Victini|par
+|
+|-heal|p2a: Blissey|690\/714|[from] item: Leftovers
+|turn|32
+|-message|SadPierrot forfeited.
+|
+|win|SpecsPrimeape
+|raw|Ladder updating...
+|leave|SadPierrot
+|player|p1
+|raw|SadPierrot's rating: 1353 &rarr; <strong>1332<\/strong><br \/>(-21 for losing)
+|raw|SpecsPrimeape's rating: 1330 &rarr; <strong>1352<\/strong><br \/>(+22 for winning)

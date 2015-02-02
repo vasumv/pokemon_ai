@@ -1,0 +1,224 @@
+|join|Firestorm350
+|join|YveltalNL
+|player|p1|Firestorm350|150
+|player|p2|YveltalNL|163
+|gametype|singles
+|tier|UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Amoonguss, M
+|poke|p1|Nidoking, M
+|poke|p1|Drapion, M
+|poke|p1|Weezing, F
+|poke|p1|Venomoth, M
+|poke|p1|Crobat, M
+|poke|p2|Honchkrow, M, shiny
+|poke|p2|Kabutops, F
+|poke|p2|Dusclops, M
+|poke|p2|Victini
+|poke|p2|Clefable, F
+|poke|p2|Sceptile, F
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Amoonguss|Amoonguss, M|432\/432
+|switch|p2a: Clefable|Clefable, F|375\/375
+|turn|1
+|callback|decision
+|
+|move|p2a: Clefable|Protect|p2a: Clefable
+|-singleturn|p2a: Clefable|Protect
+|move|p1a: Amoonguss|Spore|p2a: Clefable
+|-activate|p2a: Clefable|Protect
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Clefable|Stealth Rock|p1a: Amoonguss
+|-sidestart|p1: Firestorm350|move: Stealth Rock
+|move|p1a: Amoonguss|Spore|p2a: Clefable
+|-status|p2a: Clefable|slp
+|
+|turn|3
+|callback|decision
+|
+|switch|p2a: Victini|Victini|341\/341
+|switch|p1a: Drapion|Drapion, M|282\/282
+|-damage|p1a: Drapion|247\/282|[from] Stealth Rock
+|
+|-heal|p1a: Drapion|264\/282|[from] item: Black Sludge
+|turn|4
+|callback|decision
+|chat|Firestorm350|Drapion
+|chat|YveltalNL|onixpected victini switch
+|chat|Firestorm350|The bane of ur team
+|
+|move|p2a: Victini|V-create|p1a: Drapion
+|-damage|p1a: Drapion|0 fnt
+|-unboost|p2a: Victini|def|1
+|-unboost|p2a: Victini|spd|1
+|-unboost|p2a: Victini|spe|1
+|faint|p1a: Drapion
+|
+|callback|decision
+|chat|Firestorm350|Oops
+|chat|YveltalNL|well hes dead
+|
+|switch|p1a: Nidoking|Nidoking, M|304\/304
+|-damage|p1a: Nidoking|285\/304|[from] Stealth Rock
+|turn|5
+|callback|decision
+|
+|switch|p2a: Dusclops|Dusclops, M|275\/275
+|-ability|p2a: Dusclops|Pressure
+|move|p1a: Nidoking|Earth Power|p2a: Dusclops
+|-damage|p2a: Dusclops|189\/275
+|
+|turn|6
+|callback|decision
+|
+|switch|p1a: Venomoth|Venomoth, M|344\/344
+|-damage|p1a: Venomoth|258\/344|[from] Stealth Rock
+|move|p2a: Dusclops|Will-O-Wisp|p1a: Venomoth
+|-status|p1a: Venomoth|brn
+|
+|-heal|p1a: Venomoth|279\/344 brn|[from] item: Black Sludge
+|-damage|p1a: Venomoth|236\/344 brn|[from] brn
+|turn|7
+|callback|decision
+|chat|YveltalNL|thank god
+|chat|Firestorm350|U got me
+|chat|Firestorm350|Wow
+|
+|switch|p2a: Honchpro|Honchkrow, M, shiny|341\/341
+|move|p1a: Venomoth|Quiver Dance|p1a: Venomoth
+|-boost|p1a: Venomoth|spa|1
+|-boost|p1a: Venomoth|spd|1
+|-boost|p1a: Venomoth|spe|1
+|
+|-heal|p1a: Venomoth|257\/344 brn|[from] item: Black Sludge
+|-damage|p1a: Venomoth|214\/344 brn|[from] brn
+|turn|8
+|callback|decision
+|
+|move|p1a: Venomoth|Baton Pass|p1a: Venomoth
+|callback|decision
+|
+|switch|p1a: Weezing|Weezing, F|334\/334
+|-damage|p1a: Weezing|293\/334|[from] Stealth Rock
+|move|p2a: Honchpro|Brave Bird|p1a: Weezing
+|-damage|p1a: Weezing|106\/334
+|-damage|p2a: Honchpro|279\/341|[from] recoil|[of] p1a: Weezing
+|-damage|p2a: Honchpro|245\/341|[from] item: Life Orb
+|
+|-heal|p1a: Weezing|126\/334|[from] item: Black Sludge
+|turn|9
+|callback|decision
+|
+|move|p2a: Honchpro|Brave Bird|p1a: Weezing
+|-damage|p1a: Weezing|0 fnt
+|-damage|p2a: Honchpro|203\/341|[from] recoil|[of] p1a: Weezing
+|-damage|p2a: Honchpro|169\/341|[from] item: Life Orb
+|faint|p1a: Weezing
+|-boost|p2a: Honchpro|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|switch|p1a: Crobat|Crobat, M|349\/349
+|-damage|p1a: Crobat|262\/349|[from] Stealth Rock
+|turn|10
+|callback|decision
+|chat|YveltalNL|i predicted willowisp
+|
+|move|p2a: Honchpro|Sucker Punch|p1a: Crobat
+|-crit|p1a: Crobat
+|-damage|p1a: Crobat|0 fnt
+|-damage|p2a: Honchpro|135\/341|[from] item: Life Orb
+|faint|p1a: Crobat
+|-boost|p2a: Honchpro|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|chat|YveltalNL|lol
+|chat|Firestorm350|It was thunderbolt
+|
+|switch|p1a: Nidoking|Nidoking, M|285\/304
+|-damage|p1a: Nidoking|266\/304|[from] Stealth Rock
+|turn|11
+|callback|decision
+|chat|Firestorm350|I lost. wow
+|chat|YveltalNL|from what country are you
+|
+|move|p2a: Honchpro|Sucker Punch|p1a: Nidoking
+|-damage|p1a: Nidoking|0 fnt
+|-damage|p2a: Honchpro|101\/341|[from] item: Life Orb
+|faint|p1a: Nidoking
+|-boost|p2a: Honchpro|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|chat|Firestorm350|Singapore
+|chat|YveltalNL|cool
+|chat|Firestorm350|U want another go?
+|
+|switch|p1a: Amoonguss|Amoonguss, M|432\/432
+|-damage|p1a: Amoonguss|378\/432|[from] Stealth Rock
+|turn|12
+|callback|decision
+|chat|YveltalNL|when i beat you, yes
+|
+|move|p2a: Honchpro|Sucker Punch|p1a: Amoonguss
+|-crit|p1a: Amoonguss
+|-damage|p1a: Amoonguss|0 fnt
+|-damage|p2a: Honchpro|67\/341|[from] item: Life Orb
+|faint|p1a: Amoonguss
+|-boost|p2a: Honchpro|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|chat|Firestorm350|Ok
+|chat|Firestorm350|But i need 5 mins
+|
+|switch|p1a: Venomoth|Venomoth, M|214\/344 brn
+|-damage|p1a: Venomoth|128\/344 brn|[from] Stealth Rock
+|turn|13
+|callback|decision
+|chat|YveltalNL|oh crap
+|
+|move|p2a: Honchpro|Sucker Punch|p1a: Venomoth
+|-crit|p1a: Venomoth
+|-damage|p1a: Venomoth|0 fnt
+|-damage|p2a: Honchpro|33\/341|[from] item: Life Orb
+|faint|p1a: Venomoth
+|-boost|p2a: Honchpro|atk|1|[from] ability: Moxie
+|
+|win|YveltalNL
+|chat|Firestorm350|Yeah?
+|chat|YveltalNL|i got to go
+|chat|Firestorm350|Oh ok
+|chat|YveltalNL|my cousins party
+|chat|YveltalNL|btw
+|chat|Firestorm350|Wow. enjoy urself
+|chat|YveltalNL|what your email
+|chat|Firestorm350|firescythes@gmail.com
+|chat|Firestorm350|URs?
+|chat|YveltalNL|tobiasdekort@gmail.com
+|chat|YveltalNL|ill send you a test
+|chat|YveltalNL|bye for now
+|chat|Firestorm350|Uhhh ok
+|chat|Firestorm350|Bye
+|chat|YveltalNL|see ya
+|chat|Firestorm350|What test?
+|chat|YveltalNL|email test
+|chat|Firestorm350|Ok
+|chat|Firestorm350|Bye
+|chat|YveltalNL|im writing now
+|chat|Firestorm350|Ok?
+|chat|Firestorm350|Cya then
+|chat|YveltalNL|i send
+|chat|YveltalNL|it
+|chat|YveltalNL|check your inbox

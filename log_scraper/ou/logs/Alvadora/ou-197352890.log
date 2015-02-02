@@ -1,0 +1,170 @@
+|join|Alvadora
+|join|kerthorok
+|join|Sal-Mns
+|player|p1|Alvadora|256
+|player|p2|kerthorok|269
+|gametype|singles
+|gen|6
+|tier|OU
+|clearpoke
+|poke|p1|Charizard, M
+|poke|p1|Tyranitar, F
+|poke|p1|Excadrill, M
+|poke|p1|Keldeo
+|poke|p1|Latios, M
+|poke|p1|Gengar, F
+|poke|p2|Gallade, M
+|poke|p2|Bisharp, M
+|poke|p2|Rotom-Wash
+|poke|p2|Ferrothorn, M
+|poke|p2|Latios, M
+|poke|p2|Clefable, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|join|Ferocca
+|c|âAlvadora|gl
+|join|riraiteu
+|join|Smuli
+|
+|start
+|switch|p1a: Charizard|Charizard, M|297\/297
+|switch|p2a: Latios|Latios, M|301\/301
+|turn|1
+|
+|switch|p1a: Tyranitar|Tyranitar, F|403\/403
+|-weather|Sandstorm
+|move|p2a: Latios|Psyshock|p1a: Tyranitar
+|-immune|p1a: Tyranitar|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|283\/301|[from] sandstorm
+|turn|2
+|
+|move|p1a: Tyranitar|Pursuit|p2a: Latios|[from]Pursuit
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|faint|p2a: Latios
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|turn|3
+|
+|move|p1a: Tyranitar|Fire Blast|p2a: Ferrothorn|[miss]
+|-miss|p1a: Tyranitar|p2a: Ferrothorn
+|move|p2a: Ferrothorn|Stealth Rock|p1a: Tyranitar
+|-sidestart|p1: Alvadora|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|4
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|303\/303
+|move|p1a: Tyranitar|Stealth Rock|p2a: Rotom-Wash
+|-sidestart|p2: kerthorok|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Rotom-Wash|285\/303|[from] sandstorm
+|-heal|p2a: Rotom-Wash|303\/303|[from] item: Leftovers
+|turn|5
+|
+|switch|p1a: Latios|Latios, M|301\/301
+|-damage|p1a: Latios|264\/301|[from] Stealth Rock
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Latios
+|-status|p1a: Latios|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latios|246\/301 brn|[from] sandstorm
+|-damage|p2a: Rotom-Wash|285\/303|[from] sandstorm
+|-heal|p2a: Rotom-Wash|303\/303|[from] item: Leftovers
+|-damage|p1a: Latios|209\/301 brn|[from] brn
+|turn|6
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|-damage|p2a: Ferrothorn|330\/352|[from] Stealth Rock
+|move|p1a: Latios|Defog|p2a: Ferrothorn
+|-unboost|p2a: Ferrothorn|evasion|1
+|-sideend|p2: kerthorok|Stealth Rock|[from] move: Defog|[of] p2a: Ferrothorn
+|-sideend|p1: Alvadora|Stealth Rock|[from] move: Defog|[of] p1a: Latios
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latios|191\/301 brn|[from] sandstorm
+|-heal|p2a: Ferrothorn|352\/352|[from] item: Leftovers
+|-damage|p1a: Latios|154\/301 brn|[from] brn
+|turn|7
+|
+|switch|p1a: Charizard|Charizard, M|297\/297
+|move|p2a: Ferrothorn|Stealth Rock|p1a: Charizard
+|-sidestart|p1: Alvadora|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Charizard|279\/297|[from] sandstorm
+|turn|8
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|303\/303
+|detailschange|p1a: Charizard|Charizard-Mega-Y, M
+|-mega|p1a: Charizard|Charizard|Charizardite Y
+|-weather|SunnyDay
+|move|p1a: Charizard|Flamethrower|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|149\/303
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Rotom-Wash|167\/303|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|move|p1a: Charizard|Solar Beam|p2a: Ferrothorn|[still]
+|-prepare|p1a: Charizard|Solar Beam|p2a: Ferrothorn
+|-anim|p1a: Charizard|Solar Beam|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|323\/352
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Ferrothorn|345\/352|[from] item: Leftovers
+|turn|10
+|
+|move|p2a: Ferrothorn|Protect|p2a: Ferrothorn
+|-singleturn|p2a: Ferrothorn|Protect
+|move|p1a: Charizard|Flamethrower|p2a: Ferrothorn
+|-activate|p2a: Ferrothorn|Protect
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Ferrothorn|352\/352|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Charizard|Flamethrower|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|faint|p2a: Ferrothorn
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p2a: Bisharp|Bisharp, M|271\/271
+|turn|12
+|
+|move|p1a: Charizard|Flamethrower|p2a: Bisharp
+|-supereffective|p2a: Bisharp
+|-damage|p2a: Bisharp|0 fnt
+|faint|p2a: Bisharp
+|
+|-weather|none
+|-message|kerthorok forfeited.
+|c|âkerthorok|gg
+|
+|win|Alvadora
+|c|âAlvadora|gg
+|leave|Alvadora
+|c| Sal-Mns|sweep sweep sweep
+|player|p1
+|leave|Sal-Mns
+|leave|Smuli
+|leave|kerthorok
+|player|p2

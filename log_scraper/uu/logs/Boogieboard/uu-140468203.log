@@ -1,0 +1,110 @@
+|join|sg pokemon
+|join|BoogieBoard
+|player|p1|sg pokemon|209
+|player|p2|BoogieBoard|226
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Entei, shiny
+|poke|p1|Krookodile, F
+|poke|p1|Blastoise, F
+|poke|p1|Celebi
+|poke|p1|Doublade, M
+|poke|p1|Haxorus, F
+|poke|p2|Aggron, M
+|poke|p2|Chandelure, M
+|poke|p2|Mew
+|poke|p2|Machamp, F
+|poke|p2|Swampert, M
+|poke|p2|Crobat, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|chat|BoogieBoard|glhf
+|
+|start
+|switch|p1a: Krookodile|Krookodile, F|394\/394
+|switch|p2a: Crobat|Crobat, F|311\/311
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Crobat
+|-unboost|p2a: Crobat|atk|1
+|turn|1
+|
+|move|p2a: Crobat|Taunt|p1a: Krookodile
+|-start|p1a: Krookodile|move: Taunt
+|move|p1a: Krookodile|Knock Off|p2a: Crobat
+|-damage|p2a: Crobat|140\/311
+|-enditem|p2a: Crobat|Black Sludge|[from] move: Knock Off|[of] p1a: Krookodile
+|
+|turn|2
+|
+|move|p2a: Crobat|U-turn|p1a: Krookodile
+|-supereffective|p1a: Krookodile
+|-damage|p1a: Krookodile|320\/394
+|
+|switch|p2a: Swampert|Swampert, M|404\/404
+|move|p1a: Krookodile|Knock Off|p2a: Swampert
+|-damage|p2a: Swampert|311\/404
+|-enditem|p2a: Swampert|Leftovers|[from] move: Knock Off|[of] p1a: Krookodile
+|
+|-heal|p1a: Krookodile|344\/394|[from] item: Leftovers
+|turn|3
+|
+|move|p1a: Krookodile|Earthquake|p2a: Swampert
+|-damage|p2a: Swampert|212\/404
+|move|p2a: Swampert|Toxic|p1a: Krookodile
+|-status|p1a: Krookodile|tox
+|
+|-heal|p1a: Krookodile|368\/394 tox|[from] item: Leftovers
+|-damage|p1a: Krookodile|344\/394 tox|[from] psn
+|-end|p1a: Krookodile|move: Taunt
+|turn|4
+|
+|move|p1a: Krookodile|Stealth Rock|p2a: Swampert
+|-sidestart|p2: BoogieBoard|move: Stealth Rock
+|move|p2a: Swampert|Scald|p1a: Krookodile
+|-supereffective|p1a: Krookodile
+|-damage|p1a: Krookodile|116\/394 tox
+|
+|-heal|p1a: Krookodile|140\/394 tox|[from] item: Leftovers
+|-damage|p1a: Krookodile|92\/394 tox|[from] psn
+|turn|5
+|
+|switch|p1a: Celebi|Celebi|404\/404
+|move|p2a: Swampert|Stealth Rock|p1a: Celebi
+|-sidestart|p1: sg pokemon|move: Stealth Rock
+|
+|turn|6
+|
+|switch|p2a: Chandelure|Chandelure, M|261\/261
+|-damage|p2a: Chandelure|196\/261|[from] Stealth Rock
+|move|p1a: Celebi|Leech Seed|p2a: Chandelure
+|-start|p2a: Chandelure|move: Leech Seed
+|
+|-damage|p2a: Chandelure|164\/261|[from] Leech Seed|[of] p1a: Celebi
+|turn|7
+|
+|switch|p2a: Aggron|Aggron, M|344\/344
+|-damage|p2a: Aggron|323\/344|[from] Stealth Rock
+|move|p1a: Celebi|Psychic|p2a: Aggron
+|-resisted|p2a: Aggron
+|-damage|p2a: Aggron|268\/344
+|
+|turn|8
+|-message|BoogieBoard forfeited.
+|
+|win|sg pokemon
+|raw|Ladder updating...
+|leave|BoogieBoard
+|player|p2
+|raw|sg pokemon's rating: 1480 &rarr; <strong>1486<\/strong><br \/>(+6 for winning)
+|raw|BoogieBoard's rating: 1202 &rarr; <strong>1194<\/strong><br \/>(-8 for losing)
+|

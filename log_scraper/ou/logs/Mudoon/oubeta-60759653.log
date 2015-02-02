@@ -1,0 +1,385 @@
+|join|Mudoon
+|join|polo1
+|player|p1|Mudoon|109
+|player|p2|polo1|170
+|gametype|singles
+|tier|OU (beta)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Goodra, M
+|poke|p1|Scizor, M
+|poke|p1|Talonflame, F, shiny
+|poke|p1|Azumarill, F, shiny
+|poke|p1|Excadrill, M
+|poke|p1|Smeargle, M
+|poke|p2|Forretress, F
+|poke|p2|Machamp, F
+|poke|p2|Alakazam, M
+|poke|p2|Zapdos
+|poke|p2|Vaporeon, F
+|poke|p2|Gliscor, M, shiny
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Smeargle|Smeargle, M|314\/314
+|switch|p2a: Forretress|Forretress, F|292\/292
+|turn|1
+|callback|decision
+|
+|move|p1a: Smeargle|Dark Void|p2a: Forretress
+|-status|p2a: Forretress|slp
+|cant|p2a: Forretress|slp
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, M|291\/291
+|switch|p2a: Machamp|Machamp, F|381\/381
+|
+|turn|3
+|callback|decision
+|
+|-formechange|p1a: Scizor|Scizor-Mega
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p1a: Scizor|U-turn|p2a: Machamp
+|-resisted|p2a: Machamp
+|-damage|p2a: Machamp|295\/381
+|callback|decision
+|
+|switch|p1a: Azumarill|Azumarill, F, shiny|404\/404
+|move|p2a: Machamp|Dynamic Punch|p1a: Azumarill
+|-resisted|p1a: Azumarill
+|-damage|p1a: Azumarill|281\/404
+|-start|p1a: Azumarill|confusion
+|
+|-heal|p2a: Machamp|318\/381|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p2a: Zapdos|Zapdos|369\/369
+|-ability|p2a: Zapdos|Pressure
+|-activate|p1a: Azumarill|confusion
+|move|p1a: Azumarill|Play Rough|p2a: Zapdos
+|-damage|p2a: Zapdos|21\/369
+|
+|-heal|p2a: Zapdos|44\/369|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1a: Excadrill|Excadrill, M|362\/362
+|-ability|p1a: Excadrill|Mold Breaker
+|-item|p1a: Excadrill|Air Balloon
+|move|p2a: Zapdos|Thunderbolt|p1a: Excadrill
+|-immune|p1a: Excadrill|[msg]
+|
+|-heal|p2a: Zapdos|67\/369|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, F|408\/408
+|switch|p1a: Goodra|Goodra, M|347\/347
+|
+|turn|7
+|callback|decision
+|
+|move|p1a: Goodra|Thunderbolt|p2a: Vaporeon
+|-supereffective|p2a: Vaporeon
+|-damage|p2a: Vaporeon|236\/408
+|-status|p2a: Vaporeon|par
+|move|p2a: Vaporeon|Toxic|p1a: Goodra
+|-status|p1a: Goodra|tox
+|
+|-heal|p2a: Vaporeon|261\/408 par|[from] item: Leftovers
+|-damage|p1a: Goodra|326\/347 tox|[from] psn
+|turn|8
+|callback|decision
+|
+|move|p1a: Goodra|Dragon Pulse|p2a: Vaporeon
+|-damage|p2a: Vaporeon|152\/408 par
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-heal|p2a: Vaporeon|177\/408 par|[from] item: Leftovers
+|-damage|p1a: Goodra|284\/347 tox|[from] psn
+|turn|9
+|callback|decision
+|
+|switch|p1a: Smeargle|Smeargle, M|314\/314
+|move|p2a: Vaporeon|Protect|p2a: Vaporeon
+|-fail|p2a: Vaporeon
+|
+|-heal|p2a: Vaporeon|381\/408 par|[from] move: Wish|[wisher] Vaporeon
+|-heal|p2a: Vaporeon|406\/408 par|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p1a: Smeargle|Spikes|p2a: Vaporeon
+|-sidestart|p2: polo1|Spikes
+|move|p2a: Vaporeon|Toxic|p1a: Smeargle
+|-status|p1a: Smeargle|tox
+|
+|-heal|p2a: Vaporeon|408\/408 par|[from] item: Leftovers
+|-damage|p1a: Smeargle|295\/314 tox|[from] psn
+|turn|11
+|callback|decision
+|
+|move|p1a: Smeargle|Spikes|p2a: Vaporeon
+|-sidestart|p2: polo1|Spikes
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-damage|p1a: Smeargle|257\/314 tox|[from] psn
+|turn|12
+|callback|decision
+|
+|switch|p2a: Zapdos|Zapdos|67\/369
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Smeargle|Whirlwind|p2a: Zapdos
+|drag|p2a: Gliscor|Gliscor, M, shiny|352\/352
+|
+|-damage|p1a: Smeargle|200\/314 tox|[from] psn
+|-activate|p2a: Gliscor|item: Toxic Orb
+|-status|p2a: Gliscor|tox
+|turn|13
+|callback|decision
+|
+|switch|p2a: Machamp|Machamp, F|318\/381
+|-damage|p2a: Machamp|255\/381|[from] Spikes
+|move|p1a: Smeargle|Memento|p2a: Machamp
+|-unboost|p2a: Machamp|atk|2
+|-unboost|p2a: Machamp|spa|2
+|faint|p1a: Smeargle
+|
+|-heal|p2a: Machamp|278\/381|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Azumarill|Azumarill, F, shiny|281\/404
+|turn|14
+|callback|decision
+|
+|move|p2a: Machamp|Dynamic Punch|p1a: Azumarill
+|-resisted|p1a: Azumarill
+|-damage|p1a: Azumarill|222\/404
+|-start|p1a: Azumarill|confusion
+|-activate|p1a: Azumarill|confusion
+|move|p1a: Azumarill|Waterfall|p2a: Machamp
+|-damage|p2a: Machamp|0 fnt
+|faint|p2a: Machamp
+|
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, F|408\/408 par
+|-damage|p2a: Vaporeon|340\/408 par|[from] Spikes
+|turn|15
+|callback|decision
+|
+|switch|p1a: Goodra|Goodra, M|284\/347 tox
+|move|p2a: Vaporeon|Toxic|p1a: Goodra|[miss]
+|-miss|p2a: Vaporeon|p1a: Goodra
+|
+|-heal|p2a: Vaporeon|365\/408 par|[from] item: Leftovers
+|-damage|p1a: Goodra|263\/347 tox|[from] psn
+|turn|16
+|callback|decision
+|
+|move|p1a: Goodra|Thunderbolt|p2a: Vaporeon
+|-supereffective|p2a: Vaporeon
+|-damage|p2a: Vaporeon|199\/408 par
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-heal|p2a: Vaporeon|224\/408 par|[from] item: Leftovers
+|-damage|p1a: Goodra|221\/347 tox|[from] psn
+|turn|17
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, M|291\/291
+|-formechange|p1a: Scizor|Scizor-Mega
+|cant|p2a: Vaporeon|par
+|
+|-heal|p2a: Vaporeon|408\/408 par|[from] move: Wish|[wisher] Vaporeon
+|turn|18
+|callback|decision
+|
+|move|p1a: Scizor|U-turn|p2a: Vaporeon
+|-damage|p2a: Vaporeon|266\/408 par
+|callback|decision
+|
+|switch|p1a: Azumarill|Azumarill, F, shiny|222\/404
+|move|p2a: Vaporeon|Scald|p1a: Azumarill
+|-resisted|p1a: Azumarill
+|-damage|p1a: Azumarill|162\/404
+|-status|p1a: Azumarill|brn
+|
+|-heal|p2a: Vaporeon|291\/408 par|[from] item: Leftovers
+|-damage|p1a: Azumarill|112\/404 brn|[from] brn
+|turn|19
+|callback|decision
+|
+|move|p1a: Azumarill|Play Rough|p2a: Vaporeon
+|-damage|p2a: Vaporeon|146\/408 par
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-heal|p2a: Vaporeon|171\/408 par|[from] item: Leftovers
+|-damage|p1a: Azumarill|62\/404 brn|[from] brn
+|turn|20
+|callback|decision
+|
+|cant|p2a: Vaporeon|par
+|move|p1a: Azumarill|Play Rough|p2a: Vaporeon
+|-damage|p2a: Vaporeon|23\/408 par
+|
+|-heal|p2a: Vaporeon|227\/408 par|[from] move: Wish|[wisher] Vaporeon
+|-heal|p2a: Vaporeon|252\/408 par|[from] item: Leftovers
+|-damage|p1a: Azumarill|12\/404 brn|[from] brn
+|turn|21
+|callback|decision
+|
+|move|p1a: Azumarill|Play Rough|p2a: Vaporeon
+|-damage|p2a: Vaporeon|101\/408 par
+|-unboost|p2a: Vaporeon|atk|1
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-heal|p2a: Vaporeon|126\/408 par|[from] item: Leftovers
+|-damage|p1a: Azumarill|0 fnt|[from] brn
+|faint|p1a: Azumarill
+|callback|decision
+|
+|switch|p1a: Talonflame|Talonflame, F, shiny|320\/320
+|turn|22
+|callback|decision
+|
+|move|p1a: Talonflame|Swords Dance|p1a: Talonflame
+|-boost|p1a: Talonflame|atk|2
+|move|p2a: Vaporeon|Scald|p1a: Talonflame
+|-supereffective|p1a: Talonflame
+|-damage|p1a: Talonflame|20\/320
+|
+|-heal|p2a: Vaporeon|330\/408 par|[from] move: Wish|[wisher] Vaporeon
+|-heal|p1a: Talonflame|40\/320|[from] item: Leftovers
+|-heal|p2a: Vaporeon|355\/408 par|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p1a: Talonflame|Roost|p1a: Talonflame
+|-heal|p1a: Talonflame|200\/320
+|move|p2a: Vaporeon|Scald|p1a: Talonflame
+|-supereffective|p1a: Talonflame
+|-damage|p1a: Talonflame|0 fnt
+|faint|p1a: Talonflame
+|
+|-heal|p2a: Vaporeon|380\/408 par|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Excadrill|Excadrill, M|362\/362
+|-ability|p1a: Excadrill|Mold Breaker
+|-item|p1a: Excadrill|Air Balloon
+|turn|24
+|callback|decision
+|
+|move|p1a: Excadrill|Earthquake|p2a: Vaporeon
+|-damage|p2a: Vaporeon|163\/408 par
+|move|p2a: Vaporeon|Scald|p1a: Excadrill
+|-crit|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-damage|p1a: Excadrill|0 fnt
+|-enditem|p1a: Excadrill|Air Balloon
+|faint|p1a: Excadrill
+|
+|-heal|p2a: Vaporeon|188\/408 par|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Goodra|Goodra, M|221\/347 tox
+|turn|25
+|callback|decision
+|
+|move|p1a: Goodra|Dragon Pulse|p2a: Vaporeon
+|-damage|p2a: Vaporeon|82\/408 par
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-heal|p2a: Vaporeon|107\/408 par|[from] item: Leftovers
+|-damage|p1a: Goodra|200\/347 tox|[from] psn
+|turn|26
+|callback|decision
+|
+|move|p2a: Vaporeon|Protect|p2a: Vaporeon
+|-singleturn|p2a: Vaporeon|Protect
+|move|p1a: Goodra|Thunderbolt|p2a: Vaporeon
+|-activate|p2a: Vaporeon|Protect
+|
+|-heal|p2a: Vaporeon|311\/408 par|[from] move: Wish|[wisher] Vaporeon
+|-heal|p2a: Vaporeon|336\/408 par|[from] item: Leftovers
+|-damage|p1a: Goodra|158\/347 tox|[from] psn
+|turn|27
+|callback|decision
+|
+|move|p1a: Goodra|Thunderbolt|p2a: Vaporeon
+|-supereffective|p2a: Vaporeon
+|-damage|p2a: Vaporeon|186\/408 par
+|cant|p2a: Vaporeon|par
+|
+|-heal|p2a: Vaporeon|211\/408 par|[from] item: Leftovers
+|-damage|p1a: Goodra|95\/347 tox|[from] psn
+|turn|28
+|callback|decision
+|chat|Mudoon|fucking scald crit
+|
+|move|p1a: Goodra|Thunderbolt|p2a: Vaporeon
+|-supereffective|p2a: Vaporeon
+|-damage|p2a: Vaporeon|45\/408 par
+|cant|p2a: Vaporeon|par
+|
+|-heal|p2a: Vaporeon|70\/408 par|[from] item: Leftovers
+|-damage|p1a: Goodra|11\/347 tox|[from] psn
+|turn|29
+|callback|decision
+|
+|move|p2a: Vaporeon|Protect|p2a: Vaporeon
+|-singleturn|p2a: Vaporeon|Protect
+|move|p1a: Goodra|Thunderbolt|p2a: Vaporeon
+|-activate|p2a: Vaporeon|Protect
+|
+|-heal|p2a: Vaporeon|95\/408 par|[from] item: Leftovers
+|-damage|p1a: Goodra|0 fnt|[from] psn
+|faint|p1a: Goodra
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, M|291\/291
+|-formechange|p1a: Scizor|Scizor-Mega
+|turn|30
+|callback|decision
+|
+|move|p1a: Scizor|U-turn|p2a: Vaporeon
+|-damage|p2a: Vaporeon|0 fnt
+|faint|p2a: Vaporeon
+|
+|callback|decision
+|
+|switch|p2a: Alakazam|Alakazam, M|252\/252
+|-damage|p2a: Alakazam|210\/252|[from] Spikes
+|turn|31
+|callback|decision
+|
+|-formechange|p2a: Alakazam|Alakazam-Mega
+|message|Alakazam has Mega Evolved into Mega Alakazam!
+|-ability|p2a: Alakazam|Technician|[from] ability: Trace|[of] p1a: Scizor
+|move|p1a: Scizor|Bullet Punch|p2a: Alakazam
+|-damage|p2a: Alakazam|14\/252
+|move|p2a: Alakazam|Hidden Power|p1a: Scizor
+|-supereffective|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|faint|p1a: Scizor
+|
+|win|polo1
+|raw|Ladder updating...
+|chat|Mudoon|really
+|chat|Mudoon|oh my
+|raw|Ladder (probably) updated, but score could not be retrieved (timeout).
+|raw|Ladder (probably) updated, but score could not be retrieved (Error: socket hang up).
+|leave|Mudoon
+|player|p1

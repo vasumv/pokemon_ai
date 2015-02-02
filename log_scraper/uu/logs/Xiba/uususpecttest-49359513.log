@@ -1,0 +1,268 @@
+|join|Tayo
+|join|Xiba
+|player|p1|Tayo|92
+|player|p2|Xiba|4
+|gametype|singles
+|tier|UU (suspect test)
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Honchkrow, F
+|poke|p1|Chandelure, F
+|poke|p1|Aerodactyl, M
+|poke|p1|Kingdra, F, shiny
+|poke|p1|Mienshao, F, shiny
+|poke|p1|Virizion, shiny
+|poke|p2|Kingdra, M, shiny
+|poke|p2|Rhyperior, M, shiny
+|poke|p2|Snorlax, M
+|poke|p2|Virizion, shiny
+|poke|p2|Cofagrigus, F
+|poke|p2|Mienshao, M
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Aerodactyl|Aerodactyl, M|301\/301
+|switch|p2a: Rhyperior|Rhyperior, M, shiny|433\/433
+|-ability|p1a: Aerodactyl|Unnerve|p2: Xiba
+|turn|1
+|callback|decision
+|
+|move|p1a: Aerodactyl|Taunt|p2a: Rhyperior
+|-start|p2a: Rhyperior|move: Taunt
+|move|p2a: Rhyperior|Rock Blast|p1a: Aerodactyl
+|-supereffective|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|175\/301
+|-supereffective|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|55\/301
+|-hitcount|p1a: Aerodactyl|2
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Aerodactyl|Stealth Rock|p2a: Rhyperior
+|-sidestart|p2: Xiba|move: Stealth Rock
+|move|p2a: Rhyperior|Rock Blast|p1a: Aerodactyl
+|-supereffective|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|0 fnt
+|-hitcount|p1a: Aerodactyl|1
+|faint|p1a: Aerodactyl
+|
+|callback|decision
+|
+|switch|p1a: Virizion|Virizion, shiny|324\/324
+|turn|3
+|callback|decision
+|
+|switch|p2a: Cofagrigus|Cofagrigus, F|319\/319
+|-damage|p2a: Cofagrigus|280\/319|[from] Stealth Rock
+|move|p1a: Virizion|Swords Dance|p1a: Virizion
+|-boost|p1a: Virizion|atk|2
+|
+|-heal|p2a: Cofagrigus|299\/319|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p1a: Virizion|Leaf Blade|p2a: Cofagrigus
+|-damage|p2a: Cofagrigus|103\/319
+|-ability|p1a: Virizion|Mummy|[from] Mummy
+|move|p2a: Cofagrigus|Trick Room|p2a: Cofagrigus
+|-fieldstart|move: Trick Room|[of] p2a: Cofagrigus
+|
+|-heal|p2a: Cofagrigus|122\/319|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, M|461\/461
+|-damage|p2a: Snorlax|404\/461|[from] Stealth Rock
+|move|p1a: Virizion|Leaf Blade|p2a: Snorlax
+|-damage|p2a: Snorlax|65\/461
+|
+|turn|6
+|callback|decision
+|
+|switch|p1a: Chandelure|Chandelure, F|263\/263
+|move|p2a: Snorlax|Return|p1a: Chandelure
+|-immune|p1a: Chandelure|[msg]
+|
+|turn|7
+|callback|decision
+|
+|switch|p2a: Rhyperior|Rhyperior, M, shiny|433\/433
+|-damage|p2a: Rhyperior|406\/433|[from] Stealth Rock
+|move|p1a: Chandelure|Trick|p2a: Rhyperior
+|-activate|p1a: Chandelure|move: Trick|[of] p2a: Rhyperior
+|-item|p2a: Rhyperior|Choice Scarf|[from] move: Trick
+|-item|p1a: Chandelure|Leftovers|[from] move: Trick
+|
+|turn|8
+|callback|decision
+|
+|move|p2a: Rhyperior|Stealth Rock|p1a: Chandelure
+|-sidestart|p1: Tayo|move: Stealth Rock
+|move|p1a: Chandelure|Shadow Ball|p2a: Rhyperior
+|-crit|p2a: Rhyperior
+|-damage|p2a: Rhyperior|46\/433
+|
+|-fieldend|move: Trick Room
+|turn|9
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, M|65\/461
+|-damage|p2a: Snorlax|8\/461|[from] Stealth Rock
+|move|p1a: Chandelure|Shadow Ball|p2a: Snorlax
+|-immune|p2a: Snorlax|[msg]
+|
+|turn|10
+|callback|decision
+|
+|move|p1a: Chandelure|Flamethrower|p2a: Snorlax
+|-damage|p2a: Snorlax|0 fnt
+|faint|p2a: Snorlax
+|
+|callback|decision
+|
+|switch|p2a: Kingdra|Kingdra, M, shiny|291\/291
+|-damage|p2a: Kingdra|255\/291|[from] Stealth Rock
+|turn|11
+|callback|decision
+|
+|move|p2a: Kingdra|Rain Dance|p2a: Kingdra
+|-weather|RainDance
+|move|p1a: Chandelure|Shadow Ball|p2a: Kingdra
+|-damage|p2a: Kingdra|87\/291
+|
+|-weather|RainDance|[upkeep]
+|turn|12
+|callback|decision
+|
+|move|p2a: Kingdra|Hydro Pump|p1a: Chandelure
+|-supereffective|p1a: Chandelure
+|-damage|p1a: Chandelure|0 fnt
+|-damage|p2a: Kingdra|58\/291|[from] item: Life Orb
+|faint|p1a: Chandelure
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Honchkrow|Honchkrow, F|341\/341
+|-damage|p1a: Honchkrow|256\/341|[from] Stealth Rock
+|turn|13
+|callback|decision
+|
+|switch|p2a: Rhyperior|Rhyperior, M, shiny|46\/433
+|-damage|p2a: Rhyperior|19\/433|[from] Stealth Rock
+|move|p1a: Honchkrow|Sucker Punch|p2a: Rhyperior
+|-fail|p2a: Rhyperior
+|
+|-weather|RainDance|[upkeep]
+|turn|14
+|callback|decision
+|
+|move|p1a: Honchkrow|Pursuit|p2a: Rhyperior
+|-damage|p2a: Rhyperior|0 fnt
+|-damage|p1a: Honchkrow|222\/341|[from] item: Life Orb
+|faint|p2a: Rhyperior
+|-boost|p1a: Honchkrow|atk|1|[from] ability: Moxie
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Mienshao|Mienshao, M|271\/271
+|-damage|p2a: Mienshao|255\/271|[from] Stealth Rock
+|turn|15
+|callback|decision
+|
+|move|p1a: Honchkrow|Sucker Punch|p2a: Mienshao
+|-resisted|p2a: Mienshao
+|-damage|p2a: Mienshao|41\/271
+|-damage|p1a: Honchkrow|188\/341|[from] item: Life Orb
+|move|p2a: Mienshao|U-turn|p1a: Honchkrow
+|-damage|p1a: Honchkrow|45\/341
+|callback|decision
+|
+|switch|p2a: Kingdra|Kingdra, M, shiny|58\/291
+|-damage|p2a: Kingdra|22\/291|[from] Stealth Rock
+|
+|-weather|none
+|turn|16
+|callback|decision
+|
+|move|p2a: Kingdra|Dragon Pulse|p1a: Honchkrow
+|-damage|p1a: Honchkrow|0 fnt
+|-damage|p2a: Kingdra|0 fnt|[from] item: Life Orb
+|faint|p1a: Honchkrow
+|faint|p2a: Kingdra
+|
+|callback|decision
+|
+|switch|p2a: Mienshao|Mienshao, M|41\/271
+|-damage|p2a: Mienshao|25\/271|[from] Stealth Rock
+|switch|p1a: Mienshao|Mienshao, F, shiny|271\/271
+|-damage|p1a: Mienshao|255\/271|[from] Stealth Rock
+|turn|17
+|callback|decision
+|
+|switch|p2a: Cofagrigus|Cofagrigus, F|122\/319
+|-damage|p2a: Cofagrigus|83\/319|[from] Stealth Rock
+|move|p1a: Mienshao|Aerial Ace|p2a: Cofagrigus
+|-damage|p2a: Cofagrigus|30\/319
+|-ability|p1a: Mienshao|Mummy|[from] Mummy
+|
+|-heal|p2a: Cofagrigus|49\/319|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p1a: Mienshao|Aerial Ace|p2a: Cofagrigus
+|-damage|p2a: Cofagrigus|1\/319
+|move|p2a: Cofagrigus|Shadow Ball|p1a: Mienshao
+|-damage|p1a: Mienshao|69\/271
+|
+|-heal|p2a: Cofagrigus|20\/319|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p1a: Mienshao|Aerial Ace|p2a: Cofagrigus
+|-damage|p2a: Cofagrigus|0 fnt
+|faint|p2a: Cofagrigus
+|
+|callback|decision
+|
+|switch|p2a: Virizion|Virizion, shiny|328\/328
+|-damage|p2a: Virizion|308\/328|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|move|p1a: Mienshao|Aerial Ace|p2a: Virizion
+|-supereffective|p2a: Virizion
+|-damage|p2a: Virizion|0 fnt
+|faint|p2a: Virizion
+|
+|callback|decision
+|chat|Tayo|gg
+|
+|switch|p2a: Mienshao|Mienshao, M|25\/271
+|-damage|p2a: Mienshao|9\/271|[from] Stealth Rock
+|turn|21
+|callback|decision
+|
+|move|p2a: Mienshao|Hi Jump Kick|p1a: Mienshao|[miss]
+|-miss|p2a: Mienshao|p1a: Mienshao
+|-damage|p2a: Mienshao|0 fnt|[from] hijumpkick
+|faint|p2a: Mienshao
+|
+|win|Tayo
+|raw|Ladder updating...
+|raw|Tayo's rating: 1909 &rarr; <strong>1923<\/strong><br \/>(+14 for winning)
+|raw|Xiba's rating: 1629 &rarr; <strong>1627<\/strong><br \/>(-2 for losing)
+|leave|Xiba
+|player|p2
+|leave|Tayo
+|player|p1

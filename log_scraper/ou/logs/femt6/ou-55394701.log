@@ -1,0 +1,371 @@
+|join|Terry Kloak
+|join|femt6
+|player|p1|Terry Kloak|102
+|player|p2|femt6|266
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Tyranitar, M
+|poke|p1|Garchomp, M
+|poke|p1|Keldeo-Resolute
+|poke|p1|Starmie
+|poke|p1|Ferrothorn, M
+|poke|p1|Gengar, M
+|poke|p2|Tyranitar, F
+|poke|p2|Salamence, F
+|poke|p2|Lucario, M
+|poke|p2|Alakazam, M
+|poke|p2|Jellicent, F
+|poke|p2|Ferrothorn, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Garchomp|Garchomp, M|357\/357
+|switch|p2a: Tyranitar|Tyranitar, F|401\/401
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Tyranitar
+|turn|1
+|callback|decision
+|
+|move|p1a: Garchomp|Earthquake|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Salamence|Salamence, F|331\/331
+|turn|2
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|352\/352
+|move|p2a: Salamence|Fire Blast|p1a: Ferrothorn
+|-supereffective|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|16\/352
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Salamence|311\/331|[from] sandstorm
+|turn|3
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, M|404\/404
+|move|p2a: Salamence|Fire Blast|p1a: Tyranitar
+|-resisted|p1a: Tyranitar
+|-damage|p1a: Tyranitar|377\/404
+|-status|p1a: Tyranitar|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Salamence|291\/331|[from] sandstorm
+|-heal|p1a: Tyranitar|402\/404 brn|[from] item: Leftovers
+|-damage|p1a: Tyranitar|352\/404 brn|[from] brn
+|turn|4
+|callback|decision
+|chat|Terry Kloak|=[
+|
+|switch|p2a: Lucario|Lucario, M|282\/282
+|move|p1a: Tyranitar|Thunder Wave|p2a: Lucario
+|-status|p2a: Lucario|par
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Tyranitar|377\/404 brn|[from] item: Leftovers
+|-damage|p1a: Tyranitar|327\/404 brn|[from] brn
+|turn|5
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|16\/352
+|move|p2a: Lucario|Close Combat|p1a: Ferrothorn
+|-supereffective|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|0 fnt
+|-damage|p2a: Lucario|247\/282 par|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|-damage|p2a: Lucario|200\/282 par|[from] item: Rocky Helmet|[of] p1a: Ferrothorn
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|-damage|p2a: Lucario|172\/282 par|[from] item: Life Orb
+|faint|p1a: Ferrothorn
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, M|261\/261
+|turn|6
+|callback|decision
+|
+|cant|p2a: Lucario|par
+|move|p1a: Gengar|Substitute|p1a: Gengar
+|-start|p1a: Gengar|Substitute
+|-damage|p1a: Gengar|196\/261
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gengar|180\/261|[from] sandstorm
+|-heal|p1a: Gengar|196\/261|[from] item: Black Sludge
+|turn|7
+|callback|decision
+|
+|move|p2a: Lucario|Bullet Punch|p1a: Gengar
+|-end|p1a: Gengar|Substitute
+|-damage|p2a: Lucario|144\/282 par|[from] item: Life Orb
+|move|p1a: Gengar|Disable|p2a: Lucario
+|-start|p2a: Lucario|Disable|Bullet Punch
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gengar|180\/261|[from] sandstorm
+|-heal|p1a: Gengar|196\/261|[from] item: Black Sludge
+|turn|8
+|callback|decision
+|
+|switch|p2a: Alakazam|Alakazam, M|252\/252
+|move|p1a: Gengar|Substitute|p1a: Gengar
+|-start|p1a: Gengar|Substitute
+|-damage|p1a: Gengar|131\/261
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gengar|115\/261|[from] sandstorm
+|-heal|p1a: Gengar|131\/261|[from] item: Black Sludge
+|turn|9
+|callback|decision
+|
+|move|p2a: Alakazam|Encore|p1a: Gengar
+|-start|p1a: Gengar|Encore
+|move|p1a: Gengar|Substitute|p1a: Gengar
+|-fail|p1a: Gengar|move: Substitute
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gengar|115\/261|[from] sandstorm
+|-heal|p1a: Gengar|131\/261|[from] item: Black Sludge
+|turn|10
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, M|327\/404 brn
+|move|p2a: Alakazam|Psyshock|p1a: Tyranitar
+|-immune|p1a: Tyranitar|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Tyranitar|352\/404 brn|[from] item: Leftovers
+|-damage|p1a: Tyranitar|302\/404 brn|[from] brn
+|turn|11
+|callback|decision
+|
+|move|p2a: Alakazam|Focus Blast|p1a: Tyranitar|[miss]
+|-miss|p2a: Alakazam|p1a: Tyranitar
+|move|p1a: Tyranitar|Crunch|p2a: Alakazam
+|-supereffective|p2a: Alakazam
+|-enditem|p2a: Alakazam|Focus Sash
+|-damage|p2a: Alakazam|1\/252
+|-unboost|p2a: Alakazam|def|1
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Tyranitar|327\/404 brn|[from] item: Leftovers
+|-damage|p1a: Tyranitar|277\/404 brn|[from] brn
+|turn|12
+|callback|decision
+|
+|move|p2a: Alakazam|Focus Blast|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|5\/404 brn
+|move|p1a: Tyranitar|Stealth Rock|p2a: Alakazam
+|-sidestart|p2: femt6|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Tyranitar|30\/404 brn|[from] item: Leftovers
+|-damage|p1a: Tyranitar|0 fnt|[from] brn
+|faint|p1a: Tyranitar
+|callback|decision
+|
+|switch|p1a: Keldeo-Resolute|Keldeo-Resolute|323\/323
+|turn|13
+|callback|decision
+|
+|switch|p2a: Jellicent|Jellicent, F|403\/403
+|-damage|p2a: Jellicent|353\/403|[from] Stealth Rock
+|move|p1a: Keldeo-Resolute|Hidden Power|p2a: Jellicent
+|-supereffective|p2a: Jellicent
+|-damage|p2a: Jellicent|185\/403
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Keldeo-Resolute|303\/323|[from] sandstorm
+|-damage|p2a: Jellicent|160\/403|[from] sandstorm
+|-heal|p2a: Jellicent|185\/403|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie|261\/261
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|-damage|p2a: Ferrothorn|330\/352|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Starmie|245\/261|[from] sandstorm
+|-heal|p1a: Starmie|261\/261|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|352\/352|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, M|131\/261
+|move|p2a: Ferrothorn|Leech Seed|p1a: Gengar
+|-start|p1a: Gengar|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gengar|115\/261|[from] sandstorm
+|-heal|p1a: Gengar|131\/261|[from] item: Black Sludge
+|-damage|p1a: Gengar|99\/261|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|16
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, M|357\/357
+|move|p2a: Ferrothorn|Spikes|p1a: Garchomp
+|-sidestart|p1: Terry Kloak|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|turn|17
+|callback|decision
+|
+|move|p1a: Garchomp|Earthquake|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|154\/352
+|move|p2a: Ferrothorn|Leech Seed|p1a: Garchomp
+|-start|p1a: Garchomp|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Ferrothorn|176\/352|[from] item: Leftovers
+|-damage|p1a: Garchomp|313\/357|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|220\/352|[silent]
+|turn|18
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, M|99\/261
+|move|p2a: Ferrothorn|Power Whip|p1a: Gengar
+|-resisted|p1a: Gengar
+|-damage|p1a: Gengar|0 fnt
+|faint|p1a: Gengar
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Ferrothorn|242\/352|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Keldeo-Resolute|Keldeo-Resolute|303\/323
+|-damage|p1a: Keldeo-Resolute|263\/323|[from] Spikes
+|turn|19
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, M|313\/357
+|-damage|p1a: Garchomp|269\/357|[from] Spikes
+|switch|p2a: Jellicent|Jellicent, F|185\/403
+|-damage|p2a: Jellicent|135\/403|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Jellicent|110\/403|[from] sandstorm
+|-heal|p2a: Jellicent|135\/403|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p1a: Garchomp|Dual Chop|p2a: Jellicent
+|-damage|p2a: Jellicent|26\/403
+|-damage|p2a: Jellicent|0 fnt
+|-hitcount|p2a: Jellicent|2
+|faint|p2a: Jellicent
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|242\/352
+|-damage|p2a: Ferrothorn|220\/352|[from] Stealth Rock
+|turn|21
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie|261\/261
+|-damage|p1a: Starmie|229\/261|[from] Spikes
+|move|p2a: Ferrothorn|Thunder Wave|p1a: Starmie
+|-status|p1a: Starmie|par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Starmie|213\/261 par|[from] sandstorm
+|-heal|p1a: Starmie|229\/261 par|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|242\/352|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, M|269\/357
+|-damage|p1a: Garchomp|225\/357|[from] Spikes
+|move|p2a: Ferrothorn|Leech Seed|p1a: Garchomp
+|-start|p1a: Garchomp|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Ferrothorn|264\/352|[from] item: Leftovers
+|-damage|p1a: Garchomp|181\/357|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|308\/352|[silent]
+|turn|23
+|callback|decision
+|
+|move|p1a: Garchomp|Outrage|p2a: Ferrothorn
+|-crit|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|92\/352
+|-damage|p1a: Garchomp|137\/357|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|move|p2a: Ferrothorn|Power Whip|p1a: Garchomp
+|-damage|p1a: Garchomp|4\/357
+|-damage|p2a: Ferrothorn|48\/352|[from] ability: Rough Skin|[of] p1a: Garchomp
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Ferrothorn|70\/352|[from] item: Leftovers
+|-damage|p1a: Garchomp|0 fnt|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|74\/352|[silent]
+|faint|p1a: Garchomp
+|callback|decision
+|
+|switch|p1a: Keldeo-Resolute|Keldeo-Resolute|263\/323
+|-damage|p1a: Keldeo-Resolute|223\/323|[from] Spikes
+|turn|24
+|callback|decision
+|
+|move|p1a: Keldeo-Resolute|Secret Sword|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|faint|p2a: Ferrothorn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Keldeo-Resolute|203\/323|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: Salamence|Salamence, F|291\/331
+|-damage|p2a: Salamence|209\/331|[from] Stealth Rock
+|turn|25
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie|229\/261
+|-damage|p1a: Starmie|197\/261|[from] Spikes
+|move|p2a: Salamence|Outrage|p1a: Starmie
+|-damage|p1a: Starmie|0 fnt
+|faint|p1a: Starmie
+|-boost|p2a: Salamence|atk|1|[from] ability: Moxie
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Salamence|189\/331|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: Keldeo-Resolute|Keldeo-Resolute|203\/323
+|-damage|p1a: Keldeo-Resolute|163\/323|[from] Spikes
+|turn|26
+|callback|decision
+|
+|move|p1a: Keldeo-Resolute|Hydro Pump|p2a: Salamence
+|-resisted|p2a: Salamence
+|-damage|p2a: Salamence|50\/331
+|move|p2a: Salamence|Outrage|p1a: Keldeo-Resolute
+|-damage|p1a: Keldeo-Resolute|0 fnt
+|faint|p1a: Keldeo-Resolute
+|-boost|p2a: Salamence|atk|1|[from] ability: Moxie
+|
+|win|femt6
+|raw|Ladder updating...
+|raw|Terry Kloak's rating: 1806 &rarr; <strong>1804<\/strong><br \/>(-2 for losing)
+|raw|femt6's rating: 1917 &rarr; <strong>1921<\/strong><br \/>(+4 for winning)
+|chat|Terry Kloak|=[
+|leave|Terry Kloak
+|player|p1

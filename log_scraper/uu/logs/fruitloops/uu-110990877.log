@@ -1,0 +1,335 @@
+|join|Hogback_fosh_men
+|join|fruitloops
+|player|p1|Hogback_fosh_men|102
+|player|p2|fruitloops|109
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Ampharos, M, shiny
+|poke|p1|Entei, shiny
+|poke|p1|Shaymin
+|poke|p1|Krookodile, F
+|poke|p1|Florges, F, shiny
+|poke|p1|Empoleon, M
+|poke|p2|Blastoise, F
+|poke|p2|Metagross
+|poke|p2|Heracross, F
+|poke|p2|Umbreon, F
+|poke|p2|Galvantula, F
+|poke|p2|Houndoom, F
+|teampreview
+|
+|start
+|switch|p1a: Amphy|Ampharos, M, shiny|384\/384
+|switch|p2a: Blastoise|Blastoise, F|362\/362
+|turn|1
+|
+|switch|p2a: Umbreon|Umbreon, F|394\/394
+|-formechange|p1a: Amphy|Ampharos-Mega
+|message|Ampharos has Mega Evolved into Mega Ampharos!
+|-ability|p1a: Amphy|Mold Breaker
+|move|p1a: Amphy|Volt Switch|p2a: Umbreon
+|-damage|p2a: Umbreon|297\/394
+|
+|switch|p1a: NotsohappyFeet|Empoleon, M|372\/372
+|
+|-heal|p2a: Umbreon|321\/394|[from] item: Leftovers
+|turn|2
+|
+|move|p2a: Umbreon|Confuse Ray|p1a: NotsohappyFeet
+|-start|p1a: NotsohappyFeet|confusion
+|-activate|p1a: NotsohappyFeet|confusion
+|-damage|p1a: NotsohappyFeet|343\/372|[from] confusion
+|
+|-heal|p2a: Umbreon|345\/394|[from] item: Leftovers
+|-heal|p1a: NotsohappyFeet|366\/372|[from] item: Leftovers
+|turn|3
+|
+|switch|p2a: Galvantula|Galvantula, F|281\/281
+|-activate|p1a: NotsohappyFeet|confusion
+|-damage|p1a: NotsohappyFeet|339\/372|[from] confusion
+|
+|-heal|p1a: NotsohappyFeet|362\/372|[from] item: Leftovers
+|turn|4
+|
+|move|p2a: Galvantula|Sticky Web|p1a: NotsohappyFeet
+|-sidestart|p1: Hogback_fosh_men|move: Sticky Web
+|-end|p1a: NotsohappyFeet|confusion
+|move|p1a: NotsohappyFeet|Scald|p2a: Galvantula
+|-damage|p2a: Galvantula|85\/281
+|-status|p2a: Galvantula|brn
+|
+|-heal|p1a: NotsohappyFeet|372\/372|[from] item: Leftovers
+|-damage|p2a: Galvantula|50\/281 brn|[from] brn
+|turn|5
+|
+|move|p2a: Galvantula|Thunder|p1a: NotsohappyFeet
+|-supereffective|p1a: NotsohappyFeet
+|-damage|p1a: NotsohappyFeet|46\/372
+|move|p1a: NotsohappyFeet|Defog|p2a: Galvantula
+|-unboost|p2a: Galvantula|evasion|1
+|-sideend|p1: Hogback_fosh_men|Sticky Web|[from] move: Defog|[of] p1a: NotsohappyFeet
+|
+|-heal|p1a: NotsohappyFeet|69\/372|[from] item: Leftovers
+|-damage|p2a: Galvantula|15\/281 brn|[from] brn
+|turn|6
+|
+|move|p2a: Galvantula|Sticky Web|p1a: NotsohappyFeet
+|-sidestart|p1: Hogback_fosh_men|move: Sticky Web
+|move|p1a: NotsohappyFeet|Defog|p2a: Galvantula
+|-unboost|p2a: Galvantula|evasion|1
+|-sideend|p1: Hogback_fosh_men|Sticky Web|[from] move: Defog|[of] p1a: NotsohappyFeet
+|
+|-heal|p1a: NotsohappyFeet|92\/372|[from] item: Leftovers
+|-damage|p2a: Galvantula|0 fnt|[from] brn
+|faint|p2a: Galvantula
+|
+|switch|p2a: Houndoom|Houndoom, F|291\/291
+|turn|7
+|
+|-formechange|p2a: Houndoom|Houndoom-Mega
+|message|Houndoom has Mega Evolved into Mega Houndoom!
+|move|p2a: Houndoom|Fire Blast|p1a: NotsohappyFeet
+|-damage|p1a: NotsohappyFeet|0 fnt
+|faint|p1a: NotsohappyFeet
+|
+|
+|switch|p1a: Krookodile|Krookodile, F|332\/332
+|turn|8
+|
+|switch|p2a: Blastoise|Blastoise, F|362\/362
+|move|p1a: Krookodile|Earthquake|p2a: Blastoise
+|-damage|p2a: Blastoise|242\/362
+|
+|-heal|p2a: Blastoise|264\/362|[from] item: Leftovers
+|turn|9
+|
+|switch|p1a: Shaymin|Shaymin|342\/342
+|move|p2a: Blastoise|Toxic|p1a: Shaymin
+|-status|p1a: Shaymin|tox
+|
+|-heal|p2a: Blastoise|286\/362|[from] item: Leftovers
+|-damage|p1a: Shaymin|321\/342 tox|[from] psn
+|turn|10
+|
+|switch|p2a: Metagross|Metagross|364\/364
+|move|p1a: Shaymin|Leech Seed|p2a: Metagross
+|-start|p2a: Metagross|move: Leech Seed
+|
+|-damage|p2a: Metagross|319\/364|[from] Leech Seed|[of] p1a: Shaymin
+|-heal|p1a: Shaymin|342\/342 tox|[silent]
+|-damage|p1a: Shaymin|300\/342 tox|[from] psn
+|turn|11
+|
+|move|p1a: Shaymin|Earth Power|p2a: Metagross
+|-supereffective|p2a: Metagross
+|-damage|p2a: Metagross|140\/364
+|-damage|p1a: Shaymin|266\/342 tox|[from] item: Life Orb
+|move|p2a: Metagross|Meteor Mash|p1a: Shaymin
+|-damage|p1a: Shaymin|94\/342 tox
+|
+|-damage|p2a: Metagross|95\/364|[from] Leech Seed|[of] p1a: Shaymin
+|-heal|p1a: Shaymin|139\/342 tox|[silent]
+|-damage|p1a: Shaymin|76\/342 tox|[from] psn
+|turn|12
+|
+|switch|p1a: Amphy|Ampharos, M, shiny|384\/384
+|-formechange|p1a: Amphy|Ampharos-Mega
+|-ability|p1a: Amphy|Mold Breaker
+|move|p2a: Metagross|Bullet Punch|p1a: Amphy
+|-resisted|p1a: Amphy
+|-damage|p1a: Amphy|342\/384
+|
+|-damage|p2a: Metagross|50\/364|[from] Leech Seed|[of] p1a: Amphy
+|-heal|p1a: Amphy|384\/384|[silent]
+|turn|13
+|
+|switch|p2a: Umbreon|Umbreon, F|345\/394
+|switch|p1a: Shaymin|Shaymin|76\/342
+|
+|-heal|p2a: Umbreon|369\/394|[from] item: Leftovers
+|turn|14
+|
+|move|p1a: Shaymin|Seed Flare|p2a: Umbreon
+|-damage|p2a: Umbreon|212\/394
+|-damage|p1a: Shaymin|42\/342|[from] item: Life Orb
+|move|p2a: Umbreon|Foul Play|p1a: Shaymin
+|-damage|p1a: Shaymin|0 fnt
+|faint|p1a: Shaymin
+|
+|-heal|p2a: Umbreon|236\/394|[from] item: Leftovers
+|
+|switch|p1a: BelieveinMe|Entei, shiny|372\/372
+|-ability|p1a: BelieveinMe|Pressure
+|turn|15
+|
+|switch|p2a: Blastoise|Blastoise, F|286\/362
+|move|p1a: BelieveinMe|Sacred Fire|p2a: Blastoise
+|-crit|p2a: Blastoise
+|-resisted|p2a: Blastoise
+|-damage|p2a: Blastoise|129\/362
+|
+|-heal|p2a: Blastoise|151\/362|[from] item: Leftovers
+|turn|16
+|
+|switch|p1a: ulikemysmell?|Florges, F, shiny|360\/360
+|move|p2a: Blastoise|Scald|p1a: ulikemysmell?
+|-damage|p1a: ulikemysmell?|305\/360
+|-status|p1a: ulikemysmell?|brn
+|
+|-heal|p1a: ulikemysmell?|327\/360 brn|[from] item: Leftovers
+|-heal|p2a: Blastoise|173\/362|[from] item: Leftovers
+|-damage|p1a: ulikemysmell?|282\/360 brn|[from] brn
+|turn|17
+|
+|switch|p2a: Metagross|Metagross|50\/364
+|move|p1a: ulikemysmell?|Moonblast|p2a: Metagross
+|-resisted|p2a: Metagross
+|-damage|p2a: Metagross|0 fnt
+|faint|p2a: Metagross
+|
+|-heal|p1a: ulikemysmell?|304\/360 brn|[from] item: Leftovers
+|-damage|p1a: ulikemysmell?|259\/360 brn|[from] brn
+|
+|switch|p2a: Houndoom|Houndoom, F|291\/291
+|-formechange|p2a: Houndoom|Houndoom-Mega
+|turn|18
+|
+|switch|p1a: Amphy|Ampharos, M, shiny|384\/384
+|-formechange|p1a: Amphy|Ampharos-Mega
+|-ability|p1a: Amphy|Mold Breaker
+|move|p2a: Houndoom|Nasty Plot|p2a: Houndoom
+|-boost|p2a: Houndoom|spa|2
+|
+|turn|19
+|
+|move|p2a: Houndoom|Dark Pulse|p1a: Amphy
+|-damage|p1a: Amphy|123\/384
+|move|p1a: Amphy|Volt Switch|p2a: Houndoom
+|-damage|p2a: Houndoom|114\/291
+|
+|switch|p1a: Krookodile|Krookodile, F|332\/332
+|
+|turn|20
+|
+|switch|p2a: Heracross|Heracross, F|302\/302
+|move|p1a: Krookodile|Earthquake|p2a: Heracross
+|-resisted|p2a: Heracross
+|-damage|p2a: Heracross|189\/302
+|
+|turn|21
+|
+|switch|p1a: ulikemysmell?|Florges, F, shiny|259\/360 brn
+|move|p2a: Heracross|Close Combat|p1a: ulikemysmell?
+|-resisted|p1a: ulikemysmell?
+|-damage|p1a: ulikemysmell?|54\/360 brn
+|-unboost|p2a: Heracross|def|1
+|-unboost|p2a: Heracross|spd|1
+|
+|-heal|p1a: ulikemysmell?|76\/360 brn|[from] item: Leftovers
+|-damage|p1a: ulikemysmell?|31\/360 brn|[from] brn
+|turn|22
+|
+|move|p2a: Heracross|Close Combat|p1a: ulikemysmell?
+|-resisted|p1a: ulikemysmell?
+|-damage|p1a: ulikemysmell?|0 fnt
+|-unboost|p2a: Heracross|def|1
+|-unboost|p2a: Heracross|spd|1
+|faint|p1a: ulikemysmell?
+|-boost|p2a: Heracross|atk|1|[from] ability: Moxie
+|
+|
+|switch|p1a: BelieveinMe|Entei, shiny|372\/372
+|-ability|p1a: BelieveinMe|Pressure
+|turn|23
+|
+|move|p1a: BelieveinMe|Extreme Speed|p2a: Heracross
+|-damage|p2a: Heracross|0 fnt
+|faint|p2a: Heracross
+|
+|
+|switch|p2a: Blastoise|Blastoise, F|173\/362
+|turn|24
+|
+|switch|p1a: Amphy|Ampharos, M, shiny|123\/384
+|-formechange|p1a: Amphy|Ampharos-Mega
+|-ability|p1a: Amphy|Mold Breaker
+|move|p2a: Blastoise|Scald|p1a: Amphy
+|-resisted|p1a: Amphy
+|-damage|p1a: Amphy|87\/384
+|
+|-heal|p2a: Blastoise|195\/362|[from] item: Leftovers
+|turn|25
+|
+|move|p2a: Blastoise|Scald|p1a: Amphy
+|-resisted|p1a: Amphy
+|-damage|p1a: Amphy|51\/384
+|move|p1a: Amphy|Volt Switch|p2a: Blastoise
+|-supereffective|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|switch|p1a: BelieveinMe|Entei, shiny|372\/372
+|-ability|p1a: BelieveinMe|Pressure
+|
+|
+|switch|p2a: Houndoom|Houndoom, F|114\/291
+|-formechange|p2a: Houndoom|Houndoom-Mega
+|turn|26
+|
+|move|p1a: BelieveinMe|Extreme Speed|p2a: Houndoom
+|-damage|p2a: Houndoom|0 fnt
+|faint|p2a: Houndoom
+|
+|
+|switch|p2a: Umbreon|Umbreon, F|236\/394
+|turn|27
+|
+|switch|p1a: Amphy|Ampharos, M, shiny|51\/384
+|-formechange|p1a: Amphy|Ampharos-Mega
+|-ability|p1a: Amphy|Mold Breaker
+|move|p2a: Umbreon|Confuse Ray|p1a: Amphy
+|-start|p1a: Amphy|confusion
+|
+|-heal|p2a: Umbreon|260\/394|[from] item: Leftovers
+|turn|28
+|
+|move|p2a: Umbreon|Moonlight|p2a: Umbreon
+|-heal|p2a: Umbreon|394\/394
+|-activate|p1a: Amphy|confusion
+|move|p1a: Amphy|Volt Switch|p2a: Umbreon
+|-crit|p2a: Umbreon
+|-damage|p2a: Umbreon|241\/394
+|
+|switch|p1a: BelieveinMe|Entei, shiny|372\/372
+|-ability|p1a: BelieveinMe|Pressure
+|
+|-heal|p2a: Umbreon|265\/394|[from] item: Leftovers
+|turn|29
+|
+|move|p1a: BelieveinMe|Sacred Fire|p2a: Umbreon
+|-damage|p2a: Umbreon|24\/394
+|-status|p2a: Umbreon|brn
+|move|p2a: Umbreon|Moonlight|p2a: Umbreon
+|-heal|p2a: Umbreon|221\/394 brn
+|
+|-heal|p2a: Umbreon|245\/394 brn|[from] item: Leftovers
+|-damage|p2a: Umbreon|196\/394 brn|[from] brn
+|turn|30
+|-message|fruitloops forfeited.
+|
+|win|Hogback_fosh_men
+|raw|Ladder updating...
+|leave|fruitloops
+|player|p2
+|raw|Hogback_fosh_men's rating: 1595 &rarr; <strong>1608<\/strong><br \/>(+13 for winning)
+|raw|fruitloops's rating: 1462 &rarr; <strong>1449<\/strong><br \/>(-13 for losing)

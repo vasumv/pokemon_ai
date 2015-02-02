@@ -1,0 +1,501 @@
+|join|COMESTOANEND
+|join|luc1993
+|player|p1|COMESTOANEND|1
+|player|p2|luc1993|153
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Hydreigon, F
+|poke|p1|Granbull, M
+|poke|p1|Blissey, F
+|poke|p1|Gligar, M
+|poke|p1|Celebi
+|poke|p1|Tentacruel, F
+|poke|p2|Lucario, M
+|poke|p2|Swampert, F
+|poke|p2|Shiftry, M
+|poke|p2|Machamp, M
+|poke|p2|Aerodactyl, M
+|poke|p2|Suicune
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Celebi|Celebi|403\/403
+|switch|p2a: Machamp|Machamp, M|384\/384
+|turn|1
+|
+|switch|p2a: Shiftry|Shiftry, M|384\/384
+|move|p1a: Celebi|U-turn|p2a: Shiftry
+|-supereffective|p2a: Shiftry
+|-damage|p2a: Shiftry|124\/384
+|
+|switch|p1a: Granbull|Granbull, M|383\/383
+|-ability|p1a: Granbull|Intimidate|[of] p2a: Shiftry
+|-unboost|p2a: Shiftry|atk|1
+|
+|-heal|p2a: Shiftry|148\/384|[from] item: Leftovers
+|turn|2
+|
+|move|p2a: Shiftry|Seed Bomb|p1a: Granbull
+|-damage|p1a: Granbull|308\/383
+|move|p1a: Granbull|Play Rough|p2a: Shiftry
+|-supereffective|p2a: Shiftry
+|-damage|p2a: Shiftry|0 fnt
+|faint|p2a: Shiftry
+|
+|-heal|p1a: Granbull|331\/383|[from] item: Leftovers
+|
+|switch|p2a: Suicune|Suicune|404\/404
+|-ability|p2a: Suicune|Pressure
+|turn|3
+|
+|switch|p1a: Tentacruel|Tentacruel, F|364\/364
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|turn|4
+|
+|move|p1a: Tentacruel|Toxic Spikes|p2a: Suicune
+|-sidestart|p2: luc1993|move: Toxic Spikes
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|turn|5
+|
+|move|p1a: Tentacruel|Toxic|p2a: Suicune
+|-status|p2a: Suicune|tox
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-damage|p2a: Suicune|379\/404 tox|[from] psn
+|turn|6
+|
+|switch|p1a: Celebi|Celebi|403\/403
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p2a: Suicune|404\/404 tox|[from] item: Leftovers
+|-damage|p2a: Suicune|354\/404 tox|[from] psn
+|turn|7
+|
+|move|p1a: Celebi|Perish Song|p1a: Celebi
+|-fieldactivate|move: Perish Song
+|move|p2a: Suicune|Scald|p1a: Celebi
+|-resisted|p1a: Celebi
+|-damage|p1a: Celebi|316\/403
+|
+|-start|p1a: Celebi|perish3
+|-start|p2a: Suicune|perish3
+|-heal|p1a: Celebi|341\/403|[from] item: Leftovers
+|-heal|p2a: Suicune|379\/404 tox|[from] item: Leftovers
+|-damage|p2a: Suicune|304\/404 tox|[from] psn
+|turn|8
+|
+|move|p1a: Celebi|U-turn|p2a: Suicune
+|-damage|p2a: Suicune|277\/404 tox
+|
+|switch|p1a: Hydreigon|Hydreigon, F|387\/387
+|move|p2a: Suicune|Scald|p1a: Hydreigon
+|-resisted|p1a: Hydreigon
+|-damage|p1a: Hydreigon|259\/387
+|
+|-start|p2a: Suicune|perish2
+|-heal|p1a: Hydreigon|283\/387|[from] item: Leftovers
+|-heal|p2a: Suicune|302\/404 tox|[from] item: Leftovers
+|-damage|p2a: Suicune|202\/404 tox|[from] psn
+|turn|9
+|
+|move|p1a: Hydreigon|Taunt|p2a: Suicune
+|-start|p2a: Suicune|move: Taunt
+|cant|p2a: Suicune|move: Taunt|Rest
+|
+|-start|p2a: Suicune|perish1
+|-heal|p1a: Hydreigon|307\/387|[from] item: Leftovers
+|-heal|p2a: Suicune|227\/404 tox|[from] item: Leftovers
+|-damage|p2a: Suicune|102\/404 tox|[from] psn
+|turn|10
+|
+|switch|p1a: Celebi|Celebi|341\/403
+|switch|p2a: Machamp|Machamp, M|384\/384
+|-status|p2a: Machamp|psn
+|
+|-heal|p1a: Celebi|366\/403|[from] item: Leftovers
+|-damage|p2a: Machamp|336\/384 psn|[from] psn
+|turn|11
+|
+|move|p1a: Celebi|U-turn|p2a: Machamp
+|-resisted|p2a: Machamp
+|-damage|p2a: Machamp|310\/384 psn
+|
+|switch|p1a: Granbull|Granbull, M|331\/383
+|-ability|p1a: Granbull|Intimidate|[of] p2a: Machamp
+|-unboost|p2a: Machamp|atk|1
+|move|p2a: Machamp|Dynamic Punch|p1a: Granbull
+|-resisted|p1a: Granbull
+|-damage|p1a: Granbull|275\/383
+|-start|p1a: Granbull|confusion
+|
+|-heal|p2a: Machamp|334\/384 psn|[from] item: Leftovers
+|-heal|p1a: Granbull|298\/383|[from] item: Leftovers
+|-damage|p2a: Machamp|286\/384 psn|[from] psn
+|turn|12
+|
+|switch|p2a: Aerodactyl|Aerodactyl, M|302\/302
+|switch|p1a: Celebi|Celebi|366\/403
+|
+|-heal|p1a: Celebi|391\/403|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: Granbull|Granbull, M|298\/383
+|-ability|p1a: Granbull|Intimidate|[of] p2a: Aerodactyl
+|-unboost|p2a: Aerodactyl|atk|1
+|detailschange|p2a: Aerodactyl|Aerodactyl-Mega, M
+|message|Aerodactyl has Mega Evolved into Mega Aerodactyl!
+|move|p2a: Aerodactyl|Ice Fang|p1a: Granbull
+|-damage|p1a: Granbull|228\/383
+|
+|-heal|p1a: Granbull|251\/383|[from] item: Leftovers
+|turn|14
+|join|Lemmy
+|
+|switch|p2a: Machamp|Machamp, M|286\/384 psn
+|move|p1a: Granbull|Rest|p1a: Granbull
+|-status|p1a: Granbull|slp
+|-heal|p1a: Granbull|383\/383 slp|[silent]
+|-status|p1a: Granbull|slp|[from] move: Rest
+|
+|-heal|p2a: Machamp|310\/384 psn|[from] item: Leftovers
+|-damage|p2a: Machamp|262\/384 psn|[from] psn
+|turn|15
+|
+|move|p2a: Machamp|Knock Off|p1a: Granbull
+|-resisted|p1a: Granbull
+|-damage|p1a: Granbull|332\/383 slp
+|-enditem|p1a: Granbull|Leftovers|[from] move: Knock Off|[of] p2a: Machamp
+|cant|p1a: Granbull|slp
+|move|p1a: Granbull|Sleep Talk|p1a: Granbull
+|move|p1a: Granbull|Earthquake|p2a: Machamp|[from]Sleep Talk
+|-damage|p2a: Machamp|160\/384 psn
+|
+|-heal|p2a: Machamp|184\/384 psn|[from] item: Leftovers
+|-damage|p2a: Machamp|136\/384 psn|[from] psn
+|turn|16
+|
+|move|p2a: Machamp|Dynamic Punch|p1a: Granbull
+|-resisted|p1a: Granbull
+|-damage|p1a: Granbull|240\/383 slp
+|-start|p1a: Granbull|confusion
+|cant|p1a: Granbull|slp
+|-activate|p1a: Granbull|confusion
+|-damage|p1a: Granbull|206\/383 slp|[from] confusion
+|
+|-heal|p2a: Machamp|160\/384 psn|[from] item: Leftovers
+|-damage|p2a: Machamp|112\/384 psn|[from] psn
+|turn|17
+|
+|switch|p1a: Tentacruel|Tentacruel, F|364\/364
+|move|p2a: Machamp|Bullet Punch|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|339\/364
+|
+|-heal|p1a: Tentacruel|361\/364|[from] item: Black Sludge
+|-heal|p2a: Machamp|136\/384 psn|[from] item: Leftovers
+|-damage|p2a: Machamp|88\/384 psn|[from] psn
+|turn|18
+|
+|move|p1a: Tentacruel|Scald|p2a: Machamp
+|-damage|p2a: Machamp|0 fnt
+|faint|p2a: Machamp
+|
+|-heal|p1a: Tentacruel|364\/364|[from] item: Black Sludge
+|
+|switch|p2a: Suicune|Suicune|102\/404 tox
+|-ability|p2a: Suicune|Pressure
+|turn|19
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|
+|turn|20
+|
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Scald|p1a: Blissey|[from]Sleep Talk
+|-damage|p1a: Blissey|653\/714
+|move|p1a: Blissey|Wish|p1a: Blissey
+|
+|-heal|p1a: Blissey|697\/714|[from] item: Leftovers
+|turn|21
+|
+|switch|p2a: Luc|Lucario, M|281\/281
+|switch|p1a: Granbull|Granbull, M|206\/383 slp
+|-ability|p1a: Granbull|Intimidate|[of] p2a: Luc
+|-unboost|p2a: Luc|atk|1
+|
+|-heal|p1a: Granbull|383\/383 slp|[from] move: Wish|[wisher] Blissey
+|turn|22
+|
+|switch|p2a: Suicune|Suicune|404\/404 slp
+|-ability|p2a: Suicune|Pressure
+|switch|p1a: Tentacruel|Tentacruel, F|364\/364
+|
+|turn|23
+|
+|move|p1a: Tentacruel|Scald|p2a: Suicune
+|-resisted|p2a: Suicune
+|-damage|p2a: Suicune|372\/404 slp
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Scald|p1a: Tentacruel|[from]Sleep Talk
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|325\/364
+|-status|p1a: Tentacruel|brn
+|
+|-heal|p1a: Tentacruel|347\/364 brn|[from] item: Black Sludge
+|-heal|p2a: Suicune|397\/404 slp|[from] item: Leftovers
+|-damage|p1a: Tentacruel|302\/364 brn|[from] brn
+|turn|24
+|
+|switch|p1a: Blissey|Blissey, F|697\/714
+|-curestatus|p2a: Suicune|slp
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p2a: Suicune|404\/404|[from] item: Leftovers
+|-heal|p1a: Blissey|714\/714|[from] item: Leftovers
+|turn|25
+|
+|switch|p2a: Luc|Lucario, M|281\/281
+|move|p1a: Blissey|Heal Bell|p1a: Blissey
+|-cureteam|p1a: Blissey|[from] move: HealBell
+|
+|turn|26
+|
+|switch|p1a: Gligar|Gligar, M|334\/334
+|move|p2a: Luc|Close Combat|p1a: Gligar
+|-resisted|p1a: Gligar
+|-damage|p1a: Gligar|273\/334
+|-unboost|p2a: Luc|def|1
+|-unboost|p2a: Luc|spd|1
+|-damage|p2a: Luc|253\/281|[from] item: Life Orb
+|
+|turn|27
+|
+|switch|p2a: Suicune|Suicune|404\/404
+|-status|p2a: Suicune|psn
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Gligar|Stealth Rock|p2a: Suicune
+|-sidestart|p2: luc1993|move: Stealth Rock
+|
+|-damage|p2a: Suicune|354\/404 psn|[from] psn
+|turn|28
+|
+|switch|p1a: Hydreigon|Hydreigon, F|307\/387
+|move|p2a: Suicune|Scald|p1a: Hydreigon
+|-resisted|p1a: Hydreigon
+|-damage|p1a: Hydreigon|266\/387
+|-status|p1a: Hydreigon|brn
+|
+|-heal|p1a: Hydreigon|290\/387 brn|[from] item: Leftovers
+|-heal|p2a: Suicune|379\/404 psn|[from] item: Leftovers
+|-damage|p1a: Hydreigon|242\/387 brn|[from] brn
+|-damage|p2a: Suicune|329\/404 psn|[from] psn
+|turn|29
+|c| Lemmy|que tier es shiftry?
+|c|âCOMESTOANEND|ru
+|c| Lemmy|!
+|
+|move|p1a: Hydreigon|Dark Pulse|p2a: Suicune
+|-damage|p2a: Suicune|227\/404 psn
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|
+|-heal|p1a: Hydreigon|266\/387 brn|[from] item: Leftovers
+|-damage|p1a: Hydreigon|218\/387 brn|[from] brn
+|turn|30
+|
+|switch|p2a: Luc|Lucario, M|253\/281
+|-damage|p2a: Luc|245\/281|[from] Stealth Rock
+|move|p1a: Hydreigon|Roost|p1a: Hydreigon
+|-heal|p1a: Hydreigon|387\/387 brn
+|
+|-damage|p1a: Hydreigon|339\/387 brn|[from] brn
+|turn|31
+|
+|switch|p1a: Gligar|Gligar, M|273\/334
+|move|p2a: Luc|Close Combat|p1a: Gligar
+|-resisted|p1a: Gligar
+|-damage|p1a: Gligar|211\/334
+|-unboost|p2a: Luc|def|1
+|-unboost|p2a: Luc|spd|1
+|-damage|p2a: Luc|217\/281|[from] item: Life Orb
+|
+|turn|32
+|leave|luc1993
+|player|p2
+|leave|Lemmy
+|c|âCOMESTOANEND|rip
+|join|luc1993
+|player|p2|luc1993|153
+|c|âCOMESTOANEND|ah, nb
+|
+|switch|p2a: Suicune|Suicune|404\/404 slp
+|-damage|p2a: Suicune|354\/404 slp|[from] Stealth Rock
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Gligar|Roost|p1a: Gligar
+|-heal|p1a: Gligar|334\/334
+|
+|-heal|p2a: Suicune|379\/404 slp|[from] item: Leftovers
+|turn|33
+|
+|switch|p1a: Celebi|Celebi|391\/403
+|cant|p2a: Suicune|slp
+|
+|-heal|p1a: Celebi|403\/403|[from] item: Leftovers
+|-heal|p2a: Suicune|404\/404 slp|[from] item: Leftovers
+|turn|34
+|
+|move|p1a: Celebi|Giga Drain|p2a: Suicune
+|-supereffective|p2a: Suicune
+|-damage|p2a: Suicune|254\/404 slp
+|cant|p2a: Suicune|slp
+|
+|-heal|p2a: Suicune|279\/404 slp|[from] item: Leftovers
+|turn|35
+|
+|move|p1a: Celebi|Giga Drain|p2a: Suicune
+|-supereffective|p2a: Suicune
+|-damage|p2a: Suicune|109\/404 slp
+|-curestatus|p2a: Suicune|slp
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p2a: Suicune|134\/404|[from] item: Leftovers
+|turn|36
+|
+|move|p1a: Celebi|U-turn|p2a: Suicune
+|-damage|p2a: Suicune|108\/404
+|
+|switch|p1a: Hydreigon|Hydreigon, F|339\/387 brn
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|
+|-heal|p1a: Hydreigon|363\/387 brn|[from] item: Leftovers
+|-damage|p1a: Hydreigon|315\/387 brn|[from] brn
+|turn|37
+|
+|move|p1a: Hydreigon|Dark Pulse|p2a: Suicune
+|-damage|p2a: Suicune|337\/404 slp
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Calm Mind|p2a: Suicune|[from]Sleep Talk
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p1a: Hydreigon|339\/387 brn|[from] item: Leftovers
+|-heal|p2a: Suicune|362\/404 slp|[from] item: Leftovers
+|-damage|p1a: Hydreigon|291\/387 brn|[from] brn
+|turn|38
+|
+|move|p1a: Hydreigon|Taunt|p2a: Suicune
+|-start|p2a: Suicune|move: Taunt
+|cant|p2a: Suicune|slp
+|cant|p2a: Suicune|move: Taunt|Sleep Talk
+|
+|-heal|p1a: Hydreigon|315\/387 brn|[from] item: Leftovers
+|-heal|p2a: Suicune|387\/404 slp|[from] item: Leftovers
+|-damage|p1a: Hydreigon|267\/387 brn|[from] brn
+|turn|39
+|
+|switch|p1a: Celebi|Celebi|403\/403
+|-curestatus|p2a: Suicune|slp
+|move|p2a: Suicune|Scald|p1a: Celebi
+|-resisted|p1a: Celebi
+|-damage|p1a: Celebi|346\/403
+|
+|-heal|p1a: Celebi|371\/403|[from] item: Leftovers
+|-heal|p2a: Suicune|404\/404|[from] item: Leftovers
+|turn|40
+|
+|move|p1a: Celebi|Perish Song|p1a: Celebi
+|-fieldactivate|move: Perish Song
+|move|p2a: Suicune|Scald|p1a: Celebi
+|-resisted|p1a: Celebi
+|-damage|p1a: Celebi|304\/403
+|-status|p1a: Celebi|brn
+|
+|-start|p1a: Celebi|perish3
+|-start|p2a: Suicune|perish3
+|-heal|p1a: Celebi|329\/403 brn|[from] item: Leftovers
+|-damage|p1a: Celebi|279\/403 brn|[from] brn
+|-end|p2a: Suicune|move: Taunt
+|turn|41
+|c|âluc1993|you have got a nice team
+|c|âCOMESTOANEND|thx
+|c|âluc1993|and frankly u won
+|c|âluc1993|still
+|c|âluc1993|take down suicune ;)
+|
+|switch|p2a: Swampert|Swampert, F|404\/404
+|-status|p2a: Swampert|psn
+|-damage|p2a: Swampert|379\/404 psn|[from] Stealth Rock
+|move|p1a: Celebi|U-turn|p2a: Swampert
+|-damage|p2a: Swampert|353\/404 psn
+|
+|switch|p1a: Hydreigon|Hydreigon, F|267\/387 brn
+|
+|-heal|p1a: Hydreigon|291\/387 brn|[from] item: Leftovers
+|-damage|p1a: Hydreigon|243\/387 brn|[from] brn
+|-damage|p2a: Swampert|303\/404 psn|[from] psn
+|turn|42
+|
+|move|p1a: Hydreigon|Taunt|p2a: Swampert
+|-start|p2a: Swampert|move: Taunt
+|cant|p2a: Swampert|move: Taunt|Stealth Rock
+|
+|-heal|p1a: Hydreigon|267\/387 brn|[from] item: Leftovers
+|-damage|p1a: Hydreigon|219\/387 brn|[from] brn
+|-damage|p2a: Swampert|253\/404 psn|[from] psn
+|turn|43
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|switch|p2a: Suicune|Suicune|404\/404
+|-status|p2a: Suicune|psn
+|-damage|p2a: Suicune|354\/404 psn|[from] Stealth Rock
+|-ability|p2a: Suicune|Pressure
+|
+|-heal|p2a: Suicune|379\/404 psn|[from] item: Leftovers
+|-damage|p2a: Suicune|329\/404 psn|[from] psn
+|turn|44
+|-message|luc1993 lost due to inactivity.
+|
+|win|COMESTOANEND
+|raw|Ladder updating...
+|raw|COMESTOANEND's rating: 1578 &rarr; <strong>1596<\/strong><br \/>(+18 for winning)
+|raw|luc1993's rating: 1542 &rarr; <strong>1524<\/strong><br \/>(-18 for losing)
+|c|âCOMESTOANEND|gg
+|join|Lemmy

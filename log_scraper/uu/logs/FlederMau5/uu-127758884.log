@@ -1,0 +1,164 @@
+|join|14spades
+|join|FlederMau5
+|player|p1|14spades|1
+|player|p2|FlederMau5|164
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Lucario, F, shiny
+|poke|p1|Umbreon, F
+|poke|p1|Blastoise, M
+|poke|p1|Raikou, shiny
+|poke|p1|Hippowdon, F
+|poke|p1|Metagross
+|poke|p2|Aerodactyl, M
+|poke|p2|Suicune, shiny
+|poke|p2|Raikou, shiny
+|poke|p2|Entei, shiny
+|poke|p2|Florges, F
+|poke|p2|Roserade, M
+|teampreview
+|
+|start
+|switch|p1a: Hippowdon|Hippowdon, F|420\/420
+|switch|p2a: Mind=Blown|Roserade, M|261\/261
+|-weather|Sandstorm
+|turn|1
+|
+|switch|p1a: Metagross|Metagross|364\/364
+|move|p2a: Mind=Blown|Leaf Storm|p1a: Metagross
+|-resisted|p1a: Metagross
+|-damage|p1a: Metagross|259\/364
+|-unboost|p2a: Mind=Blown|spa|2
+|-damage|p2a: Mind=Blown|235\/261|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Mind=Blown|219\/261|[from] sandstorm
+|turn|2
+|
+|switch|p1a: Raikou|Raikou, shiny|321\/321
+|-ability|p1a: Raikou|Pressure
+|move|p2a: Mind=Blown|Sleep Powder|p1a: Raikou
+|-status|p1a: Raikou|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Raikou|301\/321 slp|[from] sandstorm
+|-damage|p2a: Mind=Blown|203\/261|[from] sandstorm
+|turn|3
+|
+|switch|p2a: t('.'t)|Suicune, shiny|404\/404
+|-ability|p2a: t('.'t)|Pressure
+|cant|p1a: Raikou|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Raikou|281\/321 slp|[from] sandstorm
+|-damage|p2a: t('.'t)|379\/404|[from] sandstorm
+|-heal|p2a: t('.'t)|404\/404|[from] item: Leftovers
+|turn|4
+|
+|cant|p1a: Raikou|slp
+|move|p2a: t('.'t)|Calm Mind|p2a: t('.'t)
+|-boost|p2a: t('.'t)|spa|1
+|-boost|p2a: t('.'t)|spd|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Raikou|261\/321 slp|[from] sandstorm
+|-damage|p2a: t('.'t)|379\/404|[from] sandstorm
+|-heal|p2a: t('.'t)|404\/404|[from] item: Leftovers
+|turn|5
+|
+|cant|p1a: Raikou|slp
+|move|p2a: t('.'t)|Calm Mind|p2a: t('.'t)
+|-boost|p2a: t('.'t)|spa|1
+|-boost|p2a: t('.'t)|spd|1
+|
+|-weather|none
+|turn|6
+|
+|-curestatus|p1a: Raikou|slp
+|move|p1a: Raikou|Thunderbolt|p2a: t('.'t)
+|-supereffective|p2a: t('.'t)
+|-damage|p2a: t('.'t)|222\/404
+|move|p2a: t('.'t)|Calm Mind|p2a: t('.'t)
+|-boost|p2a: t('.'t)|spa|1
+|-boost|p2a: t('.'t)|spd|1
+|
+|-heal|p2a: t('.'t)|247\/404|[from] item: Leftovers
+|turn|7
+|
+|move|p1a: Raikou|Thunderbolt|p2a: t('.'t)
+|-supereffective|p2a: t('.'t)
+|-damage|p2a: t('.'t)|117\/404
+|move|p2a: t('.'t)|Rest|p2a: t('.'t)
+|-status|p2a: t('.'t)|slp
+|-heal|p2a: t('.'t)|404\/404 slp|[silent]
+|-status|p2a: t('.'t)|slp|[from] move: Rest
+|
+|turn|8
+|
+|move|p1a: Raikou|Thunderbolt|p2a: t('.'t)
+|-supereffective|p2a: t('.'t)
+|-damage|p2a: t('.'t)|274\/404 slp
+|cant|p2a: t('.'t)|slp
+|move|p2a: t('.'t)|Sleep Talk|p2a: t('.'t)
+|move|p2a: t('.'t)|Rest|p2a: t('.'t)|[from]Sleep Talk
+|-fail|p2a: t('.'t)
+|
+|-heal|p2a: t('.'t)|299\/404 slp|[from] item: Leftovers
+|turn|9
+|
+|move|p1a: Raikou|Thunderbolt|p2a: t('.'t)
+|-supereffective|p2a: t('.'t)
+|-damage|p2a: t('.'t)|167\/404 slp
+|cant|p2a: t('.'t)|slp
+|move|p2a: t('.'t)|Sleep Talk|p2a: t('.'t)
+|move|p2a: t('.'t)|Calm Mind|p2a: t('.'t)|[from]Sleep Talk
+|-boost|p2a: t('.'t)|spa|1
+|-boost|p2a: t('.'t)|spd|1
+|
+|-heal|p2a: t('.'t)|192\/404 slp|[from] item: Leftovers
+|turn|10
+|
+|move|p1a: Raikou|Thunderbolt|p2a: t('.'t)
+|-supereffective|p2a: t('.'t)
+|-damage|p2a: t('.'t)|70\/404 slp
+|-curestatus|p2a: t('.'t)|slp
+|move|p2a: t('.'t)|Rest|p2a: t('.'t)
+|-status|p2a: t('.'t)|slp
+|-heal|p2a: t('.'t)|404\/404 slp|[silent]
+|-status|p2a: t('.'t)|slp|[from] move: Rest
+|
+|turn|11
+|
+|move|p1a: Raikou|Volt Switch|p2a: t('.'t)
+|-supereffective|p2a: t('.'t)
+|-damage|p2a: t('.'t)|303\/404 slp
+|
+|switch|p1a: Lucario|Lucario, F, shiny|281\/281
+|cant|p2a: t('.'t)|slp
+|move|p2a: t('.'t)|Sleep Talk|p2a: t('.'t)
+|move|p2a: t('.'t)|Scald|p1a: Lucario|[from]Sleep Talk
+|-damage|p1a: Lucario|0 fnt
+|faint|p1a: Lucario
+|
+|-heal|p2a: t('.'t)|328\/404 slp|[from] item: Leftovers
+|-message|14spades forfeited.
+|
+|win|FlederMau5
+|raw|Ladder updating...
+|leave|14spades
+|raw|14spades's rating: 1465 &rarr; <strong>1447<\/strong><br \/>(-18 for losing)
+|raw|FlederMau5's rating: 1509 &rarr; <strong>1526<\/strong><br \/>(+17 for winning)
+|player|p1
+|leave|FlederMau5
+|player|p2
+|join|FlederMau5

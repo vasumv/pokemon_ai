@@ -1,0 +1,620 @@
+|join|warden1
+|join|tigers
+|player|p1|warden1|1
+|player|p2|tigers|93
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Tyranitar, M
+|poke|p1|Skarmory, M
+|poke|p1|Conkeldurr, F
+|poke|p1|Mamoswine, M
+|poke|p1|Reuniclus, M
+|poke|p1|Starmie
+|poke|p2|Hippowdon, F
+|poke|p2|Celebi
+|poke|p2|Forretress, F
+|poke|p2|Jellicent, M
+|poke|p2|Dragonite, M
+|poke|p2|Terrakion, shiny
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Skarmory|Skarmory, M| (48\/48)
+|switch|p2a: Skinner!!|Forretress, F| (48\/48)
+|turn|1
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie| (48\/48)
+|move|p2a: Skinner!!|Spikes|p1a: Starmie
+|-sidestart|p1: warden1|Spikes
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: BigMC|Jellicent, M| (48\/48)
+|move|p1a: Starmie|Thunderbolt|p2a: BigMC
+|-supereffective|p2a: BigMC
+|-damage|p2a: BigMC|37 (30\/48)
+|
+|-heal|p2a: BigMC|6 (33\/48)|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p1a: Starmie|Psyshock|p2a: BigMC
+|-damage|p2a: BigMC|33 (18\/48)
+|move|p2a: BigMC|Recover|p2a: BigMC
+|-heal|p2a: BigMC|50 (42\/48)
+|
+|-heal|p2a: BigMC|6 (45\/48)|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p1a: Starmie|Psyshock|p2a: BigMC
+|-damage|p2a: BigMC|31 (29\/48)
+|move|p2a: BigMC|Will-O-Wisp|p1a: Starmie
+|-status|p1a: Starmie|brn
+|
+|-heal|p2a: BigMC|6 (32\/48)|[from] item: Leftovers
+|-damage|p1a: Starmie|12 (42\/48 brn)|[from] brn
+|turn|5
+|callback|decision
+|
+|switch|p1a: Reuniclus|Reuniclus, M| (48\/48)
+|move|p2a: BigMC|Recover|p2a: BigMC
+|-heal|p2a: BigMC|33 (48\/48)
+|
+|turn|6
+|callback|decision
+|
+|move|p2a: BigMC|Taunt|p1a: Reuniclus
+|-start|p1a: Reuniclus|move: Taunt
+|cant|p1a: Reuniclus|move: Taunt|Trick Room
+|
+|turn|7
+|callback|decision
+|
+|move|p2a: BigMC|Scald|p1a: Reuniclus
+|-damage|p1a: Reuniclus|22 (37\/48)
+|move|p1a: Reuniclus|Shadow Ball|p2a: BigMC
+|-supereffective|p2a: BigMC
+|-damage|p2a: BigMC|50 (24\/48)
+|
+|-heal|p2a: BigMC|6 (26\/48)|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p2a: BOSS|Dragonite, M| (48\/48)
+|move|p1a: Reuniclus|Shadow Ball|p2a: BOSS
+|-damage|p2a: BOSS|14 (41\/48)
+|
+|-heal|p2a: BOSS|6 (44\/48)|[from] item: Leftovers
+|-end|p1a: Reuniclus|move: Taunt
+|turn|9
+|callback|decision
+|
+|move|p2a: BOSS|Thunder Wave|p1a: Reuniclus
+|-status|p1a: Reuniclus|par
+|move|p1a: Reuniclus|Trick Room|p1a: Reuniclus
+|-fieldstart|move: Trick Room|[of] p1a: Reuniclus
+|
+|-heal|p2a: BOSS|6 (47\/48)|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p1a: Reuniclus|Psychic|p2a: BOSS
+|-damage|p2a: BOSS|45 (25\/48)
+|move|p2a: BOSS|Roost|p2a: BOSS
+|-heal|p2a: BOSS|47 (48\/48)
+|
+|turn|11
+|callback|decision
+|
+|move|p1a: Reuniclus|Psychic|p2a: BOSS
+|-damage|p2a: BOSS|25 (36\/48)
+|move|p2a: BOSS|Dragon Tail|p1a: Reuniclus
+|-damage|p1a: Reuniclus|25 (25\/48 par)
+|drag|p1a: Tyranitar|Tyranitar, M| (48\/48)
+|-damage|p1a: Tyranitar|12 (42\/48)|[from] Spikes
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BOSS|6 (33\/48)|[from] sandstorm
+|-heal|p1a: Tyranitar|6 (45\/48)|[from] item: Leftovers
+|-heal|p2a: BOSS|6 (36\/48)|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p2a: Skinner!!|Forretress, F| (48\/48)
+|move|p1a: Tyranitar|Toxic|p2a: Skinner!!
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Tyranitar|6 (48\/48)|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: Skinner!!|Spikes|p1a: Tyranitar
+|-sidestart|p1: warden1|Spikes
+|move|p1a: Tyranitar|Fire Blast|p2a: Skinner!!
+|-supereffective|p2a: Skinner!!
+|-activate|p2a: Skinner!!|Sturdy
+|-damage|p2a: Skinner!!|97 (1\/48)
+|-status|p2a: Skinner!!|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Skinner!!|6 (3\/48 brn)|[from] item: Leftovers
+|-damage|p2a: Skinner!!|6 (0\/48 fnt)|[from] brn
+|-fieldend|move: Trick Room
+|faint|p2a: Skinner!!
+|callback|decision
+|
+|switch|p2a: 2fast4u|Terrakion, shiny| (48\/48)
+|turn|14
+|callback|decision
+|
+|switch|p2a: BigMC|Jellicent, M| (26\/48)
+|switch|p1a: Skarmory|Skarmory, M| (48\/48)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BigMC|6 (24\/48)|[from] sandstorm
+|-heal|p2a: BigMC|6 (26\/48)|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1a: Skarmory|Spikes|p2a: BigMC
+|-sidestart|p2: tigers|Spikes
+|move|p2a: BigMC|Taunt|p1a: Skarmory
+|-start|p1a: Skarmory|move: Taunt
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BigMC|6 (24\/48)|[from] sandstorm
+|-heal|p2a: BigMC|6 (26\/48)|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Skarmory|Brave Bird|p2a: BigMC
+|-damage|p2a: BigMC|33 (10\/48)
+|-damage|p1a: Skarmory|12 (42\/48)|[from] recoil|[of] p2a: BigMC
+|move|p2a: BigMC|Recover|p2a: BigMC
+|-heal|p2a: BigMC|50 (34\/48)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BigMC|6 (31\/48)|[from] sandstorm
+|-heal|p1a: Skarmory|6 (44\/48)|[from] item: Leftovers
+|-heal|p2a: BigMC|6 (34\/48)|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|switch|p1a: Reuniclus|Reuniclus, M| (25\/48 par)
+|move|p2a: BigMC|Will-O-Wisp|p1a: Reuniclus
+|-fail|p1a: Reuniclus
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BigMC|6 (31\/48)|[from] sandstorm
+|-heal|p2a: BigMC|6 (34\/48)|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|switch|p2a: BOSS|Dragonite, M| (36\/48)
+|move|p1a: Reuniclus|Trick Room|p1a: Reuniclus
+|-fieldstart|move: Trick Room|[of] p1a: Reuniclus
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BOSS|6 (33\/48)|[from] sandstorm
+|-heal|p2a: BOSS|6 (36\/48)|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p1a: Reuniclus|Psychic|p2a: BOSS
+|-damage|p2a: BOSS|50 (12\/48)
+|move|p2a: BOSS|Roost|p2a: BOSS
+|-heal|p2a: BOSS|50 (36\/48)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BOSS|6 (33\/48)|[from] sandstorm
+|-heal|p2a: BOSS|6 (36\/48)|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p1a: Reuniclus|Psychic|p2a: BOSS
+|-damage|p2a: BOSS|47 (13\/48)
+|move|p2a: BOSS|Roost|p2a: BOSS
+|-heal|p2a: BOSS|50 (37\/48)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BOSS|6 (34\/48)|[from] sandstorm
+|-heal|p2a: BOSS|6 (37\/48)|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|switch|p1a: Mamoswine|Mamoswine, M| (48\/48)
+|-damage|p1a: Mamoswine|16 (40\/48)|[from] Spikes
+|move|p2a: BOSS|Roost|p2a: BOSS
+|-heal|p2a: BOSS|22 (48\/48)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BOSS|6 (45\/48)|[from] sandstorm
+|-heal|p2a: BOSS|6 (48\/48)|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p1a: Mamoswine|Stealth Rock|p2a: BOSS
+|-sidestart|p2: tigers|move: Stealth Rock
+|move|p2a: BOSS|Dragon Tail|p1a: Mamoswine
+|-damage|p1a: Mamoswine|31 (25\/48)
+|drag|p1a: Starmie|Starmie| (42\/48)
+|-damage|p1a: Starmie|16 (34\/48)|[from] Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BOSS|6 (45\/48)|[from] sandstorm
+|-damage|p1a: Starmie|6 (31\/48)|[from] sandstorm
+|-heal|p2a: BOSS|6 (48\/48)|[from] item: Leftovers
+|-heal|p1a: Starmie|6 (34\/48)|[from] item: Leftovers
+|-fieldend|move: Trick Room
+|turn|23
+|callback|decision
+|
+|move|p1a: Starmie|Psyshock|p2a: BOSS
+|-damage|p2a: BOSS|12 (42\/48)
+|move|p2a: BOSS|Dragon Tail|p1a: Starmie
+|-damage|p1a: Starmie|41 (14\/48)
+|drag|p1a: Mamoswine|Mamoswine, M| (25\/48)
+|-damage|p1a: Mamoswine|16 (17\/48)|[from] Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BOSS|6 (39\/48)|[from] sandstorm
+|-heal|p2a: BOSS|6 (42\/48)|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|switch|p2a: HappyHippo|Hippowdon, F| (48\/48)
+|-damage|p2a: HappyHippo|6 (45\/48)|[from] Stealth Rock
+|-damage|p2a: HappyHippo|12 (39\/48)|[from] Spikes
+|move|p1a: Mamoswine|Ice Shard|p2a: HappyHippo
+|-supereffective|p2a: HappyHippo
+|-damage|p2a: HappyHippo|22 (29\/48)
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: HappyHippo|6 (32\/48)|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M| (44\/48)
+|move|p2a: HappyHippo|Slack Off|p2a: HappyHippo
+|-heal|p2a: HappyHippo|33 (48\/48)
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Skarmory|6 (47\/48)|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|move|p1a: Skarmory|Spikes|p2a: HappyHippo
+|-sidestart|p2: tigers|Spikes
+|move|p2a: HappyHippo|Stealth Rock|p1a: Skarmory
+|-sidestart|p1: warden1|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Skarmory|2 (48\/48)|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|move|p1a: Skarmory|Whirlwind|p2a: HappyHippo
+|drag|p2a: 2fast4u|Terrakion, shiny| (48\/48)
+|-damage|p2a: 2fast4u|6 (45\/48)|[from] Stealth Rock
+|-damage|p2a: 2fast4u|16 (37\/48)|[from] Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|turn|28
+|callback|decision
+|
+|switch|p2a: BOSS|Dragonite, M| (42\/48)
+|-damage|p2a: BOSS|25 (30\/48)|[from] Stealth Rock
+|move|p1a: Skarmory|Spikes|p2a: BOSS
+|-sidestart|p2: tigers|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BOSS|6 (27\/48)|[from] sandstorm
+|-heal|p2a: BOSS|6 (30\/48)|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|move|p2a: BOSS|Dragon Tail|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|6 (45\/48)
+|drag|p1a: Reuniclus|Reuniclus, M| (25\/48 par)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BOSS|6 (27\/48)|[from] sandstorm
+|-heal|p2a: BOSS|6 (30\/48)|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|move|p2a: BOSS|Roost|p2a: BOSS
+|-heal|p2a: BOSS|37 (48\/48)
+|cant|p1a: Reuniclus|par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BOSS|6 (45\/48)|[from] sandstorm
+|-heal|p2a: BOSS|6 (48\/48)|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|move|p1a: Reuniclus|Psychic|p2a: BOSS
+|-damage|p2a: BOSS|22 (37\/48)
+|move|p2a: BOSS|Dragon Tail|p1a: Reuniclus
+|-damage|p1a: Reuniclus|29 (11\/48 par)
+|drag|p1a: Conkeldurr|Conkeldurr, F| (48\/48)
+|-damage|p1a: Conkeldurr|16 (40\/48)|[from] Spikes
+|-damage|p1a: Conkeldurr|6 (37\/48)|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BOSS|6 (34\/48)|[from] sandstorm
+|-damage|p1a: Conkeldurr|6 (34\/48)|[from] sandstorm
+|-heal|p2a: BOSS|6 (37\/48)|[from] item: Leftovers
+|-heal|p1a: Conkeldurr|6 (37\/48)|[from] item: Leftovers
+|turn|32
+|callback|decision
+|
+|move|p2a: BOSS|Roost|p2a: BOSS
+|-heal|p2a: BOSS|22 (48\/48)
+|move|p1a: Conkeldurr|Ice Punch|p2a: BOSS
+|-supereffective|p2a: BOSS
+|-damage|p2a: BOSS|27 (35\/48)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BOSS|6 (32\/48)|[from] sandstorm
+|-damage|p1a: Conkeldurr|6 (34\/48)|[from] sandstorm
+|-heal|p2a: BOSS|6 (35\/48)|[from] item: Leftovers
+|-heal|p1a: Conkeldurr|6 (37\/48)|[from] item: Leftovers
+|turn|33
+|callback|decision
+|
+|switch|p2a: BigMC|Jellicent, M| (34\/48)
+|-damage|p2a: BigMC|12 (28\/48)|[from] Stealth Rock
+|-damage|p2a: BigMC|25 (16\/48)|[from] Spikes
+|move|p1a: Conkeldurr|Ice Punch|p2a: BigMC
+|-resisted|p2a: BigMC
+|-damage|p2a: BigMC|18 (8\/48)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BigMC|6 (5\/48)|[from] sandstorm
+|-damage|p1a: Conkeldurr|6 (34\/48)|[from] sandstorm
+|-heal|p2a: BigMC|6 (8\/48)|[from] item: Leftovers
+|-heal|p1a: Conkeldurr|6 (37\/48)|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, M| (48\/48)
+|-damage|p1a: Tyranitar|12 (42\/48)|[from] Stealth Rock
+|-damage|p1a: Tyranitar|16 (34\/48)|[from] Spikes
+|move|p2a: BigMC|Recover|p2a: BigMC
+|-heal|p2a: BigMC|50 (32\/48)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BigMC|6 (29\/48)|[from] sandstorm
+|-heal|p2a: BigMC|6 (32\/48)|[from] item: Leftovers
+|-heal|p1a: Tyranitar|6 (37\/48)|[from] item: Leftovers
+|turn|35
+|callback|decision
+|
+|move|p2a: BigMC|Will-O-Wisp|p1a: Tyranitar|[miss]
+|-miss|p2a: BigMC|p1a: Tyranitar
+|move|p1a: Tyranitar|Pursuit|p2a: BigMC
+|-supereffective|p2a: BigMC
+|-damage|p2a: BigMC|33 (16\/48)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BigMC|6 (13\/48)|[from] sandstorm
+|-heal|p2a: BigMC|6 (16\/48)|[from] item: Leftovers
+|-heal|p1a: Tyranitar|6 (40\/48)|[from] item: Leftovers
+|turn|36
+|callback|decision
+|
+|move|p2a: BigMC|Will-O-Wisp|p1a: Tyranitar
+|-status|p1a: Tyranitar|brn
+|move|p1a: Tyranitar|Toxic|p2a: BigMC|[miss]
+|-miss|p1a: Tyranitar|p2a: BigMC
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BigMC|6 (13\/48)|[from] sandstorm
+|-heal|p2a: BigMC|6 (16\/48)|[from] item: Leftovers
+|-heal|p1a: Tyranitar|6 (43\/48 brn)|[from] item: Leftovers
+|-damage|p1a: Tyranitar|12 (37\/48 brn)|[from] brn
+|turn|37
+|callback|decision
+|
+|move|p2a: BigMC|Taunt|p1a: Tyranitar
+|-start|p1a: Tyranitar|move: Taunt
+|move|p1a: Tyranitar|Pursuit|p2a: BigMC
+|-crit|p2a: BigMC
+|-supereffective|p2a: BigMC
+|-damage|p2a: BigMC|33 (0\/48 fnt)
+|faint|p2a: BigMC
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Tyranitar|6 (40\/48 brn)|[from] item: Leftovers
+|-damage|p1a: Tyranitar|12 (34\/48 brn)|[from] brn
+|callback|decision
+|
+|switch|p2a: BOSS|Dragonite, M| (35\/48)
+|-damage|p2a: BOSS|25 (23\/48)|[from] Stealth Rock
+|turn|38
+|callback|decision
+|
+|move|p2a: BOSS|Substitute|p2a: BOSS
+|-start|p2a: BOSS|Substitute
+|-damage|p2a: BOSS|25 (11\/48)
+|move|p1a: Tyranitar|Crunch|p2a: BOSS
+|-activate|p2a: BOSS|Substitute|[damage]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BOSS|6 (8\/48)|[from] sandstorm
+|-heal|p2a: BOSS|6 (11\/48)|[from] item: Leftovers
+|-heal|p1a: Tyranitar|6 (37\/48 brn)|[from] item: Leftovers
+|-damage|p1a: Tyranitar|12 (31\/48 brn)|[from] brn
+|turn|39
+|callback|decision
+|
+|move|p2a: BOSS|Roost|p2a: BOSS
+|-heal|p2a: BOSS|50 (35\/48)
+|move|p1a: Tyranitar|Crunch|p2a: BOSS
+|-end|p2a: BOSS|Substitute
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BOSS|6 (32\/48)|[from] sandstorm
+|-heal|p2a: BOSS|6 (35\/48)|[from] item: Leftovers
+|-heal|p1a: Tyranitar|6 (34\/48 brn)|[from] item: Leftovers
+|-damage|p1a: Tyranitar|12 (28\/48 brn)|[from] brn
+|-end|p1a: Tyranitar|move: Taunt
+|turn|40
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie| (14\/48)
+|-damage|p1a: Starmie|12 (9\/48)|[from] Stealth Rock
+|-damage|p1a: Starmie|16 (1\/48)|[from] Spikes
+|move|p2a: BOSS|Substitute|p2a: BOSS
+|-start|p2a: BOSS|Substitute
+|-damage|p2a: BOSS|25 (23\/48)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Starmie|2 (0\/48 fnt)|[from] sandstorm
+|-damage|p2a: BOSS|6 (20\/48)|[from] sandstorm
+|-heal|p2a: BOSS|6 (23\/48)|[from] item: Leftovers
+|faint|p1a: Starmie
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M| (45\/48)
+|-damage|p1a: Skarmory|12 (39\/48)|[from] Stealth Rock
+|turn|41
+|callback|decision
+|
+|move|p1a: Skarmory|Brave Bird|p2a: BOSS
+|-activate|p2a: BOSS|Substitute|[damage]
+|-damage|p1a: Skarmory|8 (34\/48)|[from] recoil|[of] p2a: BOSS
+|move|p2a: BOSS|Dragon Tail|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|8 (31\/48)
+|drag|p1a: Reuniclus|Reuniclus, M| (11\/48 par)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BOSS|6 (20\/48)|[from] sandstorm
+|-heal|p2a: BOSS|6 (23\/48)|[from] item: Leftovers
+|turn|42
+|callback|decision
+|
+|move|p2a: BOSS|Roost|p2a: BOSS
+|-heal|p2a: BOSS|50 (47\/48)
+|move|p1a: Reuniclus|Psychic|p2a: BOSS
+|-end|p2a: BOSS|Substitute
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BOSS|6 (44\/48)|[from] sandstorm
+|-heal|p2a: BOSS|6 (47\/48)|[from] item: Leftovers
+|turn|43
+|callback|decision
+|
+|switch|p1a: Mamoswine|Mamoswine, M| (17\/48)
+|-damage|p1a: Mamoswine|12 (11\/48)|[from] Stealth Rock
+|-damage|p1a: Mamoswine|16 (3\/48)|[from] Spikes
+|move|p2a: BOSS|Roost|p2a: BOSS
+|-heal|p2a: BOSS|2 (48\/48)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BOSS|6 (45\/48)|[from] sandstorm
+|-heal|p2a: BOSS|6 (48\/48)|[from] item: Leftovers
+|turn|44
+|callback|decision
+|
+|switch|p2a: HappyHippo|Hippowdon, F| (48\/48)
+|-damage|p2a: HappyHippo|25 (36\/48)|[from] Spikes
+|-damage|p2a: HappyHippo|6 (33\/48)|[from] Stealth Rock
+|move|p1a: Mamoswine|Endeavor|p2a: HappyHippo
+|-damage|p2a: HappyHippo|62 (3\/48)
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: HappyHippo|6 (6\/48)|[from] item: Leftovers
+|turn|45
+|callback|decision
+|
+|move|p1a: Mamoswine|Earthquake|p2a: HappyHippo
+|-damage|p2a: HappyHippo|12 (0\/48 fnt)
+|faint|p2a: HappyHippo
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Peter Pan|Celebi| (48\/48)
+|-damage|p2a: Peter Pan|25 (36\/48)|[from] Spikes
+|-damage|p2a: Peter Pan|12 (30\/48)|[from] Stealth Rock
+|turn|46
+|callback|decision
+|
+|move|p1a: Mamoswine|Endeavor|p2a: Peter Pan
+|-damage|p2a: Peter Pan|56 (3\/48)
+|move|p2a: Peter Pan|Leaf Storm|p1a: Mamoswine
+|-crit|p1a: Mamoswine
+|-supereffective|p1a: Mamoswine
+|-damage|p1a: Mamoswine|6 (0\/48 fnt)
+|-unboost|p2a: Peter Pan|spa|2
+|faint|p1a: Mamoswine
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Peter Pan|6 (0\/48 fnt)|[from] sandstorm
+|faint|p2a: Peter Pan
+|callback|decision
+|
+|switch|p2a: BOSS|Dragonite, M| (48\/48)
+|-damage|p2a: BOSS|25 (36\/48)|[from] Stealth Rock
+|switch|p1a: Conkeldurr|Conkeldurr, F| (37\/48)
+|-damage|p1a: Conkeldurr|16 (29\/48)|[from] Spikes
+|-damage|p1a: Conkeldurr|6 (26\/48)|[from] Stealth Rock
+|turn|47
+|callback|decision
+|
+|move|p2a: BOSS|Roost|p2a: BOSS
+|-heal|p2a: BOSS|25 (48\/48)
+|move|p1a: Conkeldurr|Ice Punch|p2a: BOSS
+|-supereffective|p2a: BOSS
+|-damage|p2a: BOSS|25 (36\/48)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: BOSS|6 (33\/48)|[from] sandstorm
+|-damage|p1a: Conkeldurr|6 (24\/48)|[from] sandstorm
+|-heal|p2a: BOSS|6 (36\/48)|[from] item: Leftovers
+|-heal|p1a: Conkeldurr|6 (26\/48)|[from] item: Leftovers
+|turn|48
+|callback|decision
+|
+|move|p1a: Conkeldurr|Ice Punch|p2a: BOSS
+|-supereffective|p2a: BOSS
+|-damage|p2a: BOSS|75 (0\/48 fnt)
+|faint|p2a: BOSS
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Conkeldurr|6 (24\/48)|[from] sandstorm
+|-heal|p1a: Conkeldurr|6 (26\/48)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: 2fast4u|Terrakion, shiny| (37\/48)
+|-damage|p2a: 2fast4u|25 (25\/48)|[from] Spikes
+|-damage|p2a: 2fast4u|6 (22\/48)|[from] Stealth Rock
+|turn|49
+|callback|decision
+|
+|move|p1a: Conkeldurr|Mach Punch|p2a: 2fast4u
+|-supereffective|p2a: 2fast4u
+|-damage|p2a: 2fast4u|45 (0\/48 fnt)
+|faint|p2a: 2fast4u
+|
+|win|warden1
+|raw|Ladder updating...
+|raw|warden1's rating: 1713 &rarr; <strong>1717<\/strong><br \/>(+4 for winning)
+|raw|tigers's rating: 1774 &rarr; <strong>1771<\/strong><br \/>(-3 for losing)

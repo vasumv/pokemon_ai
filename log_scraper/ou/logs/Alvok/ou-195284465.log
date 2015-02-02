@@ -1,0 +1,241 @@
+|join|Alvok
+|join|bigbizze
+|player|p1|Alvok|256
+|player|p2|bigbizze|2
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Charizard, M
+|poke|p1|Tyranitar, F
+|poke|p1|Excadrill, M
+|poke|p1|Rotom-Wash
+|poke|p1|Gengar, F
+|poke|p1|Breloom, M
+|poke|p2|Landorus-Therian, M
+|poke|p2|Greninja, M
+|poke|p2|Magnezone
+|poke|p2|Bisharp, M
+|poke|p2|Gardevoir, M
+|poke|p2|Conkeldurr, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|switch|p2a: Gardevoir|Gardevoir, M|278\/278
+|turn|1
+|
+|detailschange|p2a: Gardevoir|Gardevoir-Mega, M
+|message|Gardevoir has Mega Evolved into Mega Gardevoir!
+|move|p2a: Gardevoir|Hyper Voice|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|67\/304
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Gardevoir
+|-crit|p2a: Gardevoir
+|-damage|p2a: Gardevoir|173\/278
+|
+|switch|p1a: Gengar|Gengar, F|259\/259
+|
+|turn|2
+|
+|switch|p1a: Charizard|Charizard, M|297\/297
+|switch|p2a: Bisharp|Bisharp, M|272\/272
+|
+|turn|3
+|
+|detailschange|p1a: Charizard|Charizard-Mega-Y, M
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p1a: Charizard|Flamethrower|p2a: Bisharp
+|-supereffective|p2a: Bisharp
+|-damage|p2a: Bisharp|0 fnt
+|faint|p2a: Bisharp
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p2a: Greninja|Greninja, M|285\/285
+|turn|4
+|
+|move|p2a: Greninja|Hydro Pump|p1a: Charizard
+|-start|p2a: Greninja|typechange|Water|[from] Protean
+|-supereffective|p1a: Charizard
+|-damage|p1a: Charizard|92\/297
+|-damage|p2a: Greninja|257\/285|[from] item: Life Orb
+|move|p1a: Charizard|Solar Beam|p2a: Greninja|[still]
+|-prepare|p1a: Charizard|Solar Beam|p2a: Greninja
+|-anim|p1a: Charizard|Solar Beam|p2a: Greninja
+|-supereffective|p2a: Greninja
+|-damage|p2a: Greninja|0 fnt
+|faint|p2a: Greninja
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p2a: Magnezone|Magnezone|282\/282
+|turn|5
+|
+|switch|p1a: Excadrill|Excadrill, M|359\/359
+|move|p2a: Magnezone|Volt Switch|p1a: Excadrill
+|-immune|p1a: Excadrill|[msg]
+|
+|-weather|SunnyDay|[upkeep]
+|turn|6
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|382\/382
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Excadrill
+|-unboost|p1a: Excadrill|atk|1
+|move|p1a: Excadrill|Iron Head|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|264\/382
+|-damage|p1a: Excadrill|324\/359|[from] item: Life Orb
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Landorus-Therian|287\/382|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Charizard|Charizard-Mega-Y, M|92\/297
+|move|p2a: Landorus-Therian|Stealth Rock|p1a: Charizard
+|-sidestart|p1: Alvok|move: Stealth Rock
+|
+|-weather|none
+|-heal|p2a: Landorus-Therian|310\/382|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Tyranitar|Tyranitar, F|403\/403
+|-damage|p1a: Tyranitar|353\/403|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p2a: Landorus-Therian|Knock Off|p1a: Tyranitar
+|-resisted|p1a: Tyranitar
+|-damage|p1a: Tyranitar|305\/403
+|-enditem|p1a: Tyranitar|Smooth Rock|[from] move: Knock Off|[of] p2a: Landorus-Therian
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Landorus-Therian|333\/382|[from] item: Leftovers
+|turn|9
+|
+|move|p2a: Landorus-Therian|Earthquake|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|faint|p1a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Landorus-Therian|356\/382|[from] item: Leftovers
+|
+|switch|p1a: Excadrill|Excadrill, M|324\/359
+|-damage|p1a: Excadrill|313\/359|[from] Stealth Rock
+|turn|10
+|
+|move|p1a: Excadrill|Rapid Spin|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|329\/382
+|-sideend|p1: Alvok|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Excadrill
+|-damage|p1a: Excadrill|278\/359|[from] item: Life Orb
+|move|p2a: Landorus-Therian|Earthquake|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-damage|p1a: Excadrill|0 fnt
+|faint|p1a: Excadrill
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Landorus-Therian|352\/382|[from] item: Leftovers
+|
+|switch|p1a: Charizard|Charizard-Mega-Y, M|92\/297
+|-weather|SunnyDay
+|turn|11
+|
+|move|p1a: Charizard|Flamethrower|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|faint|p2a: Landorus-Therian
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p2a: Gardevoir|Gardevoir-Mega, M|173\/278
+|turn|12
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|67\/304
+|move|p2a: Gardevoir|Psyshock|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p1a: Gengar|Gengar, F|259\/259
+|turn|13
+|
+|switch|p2a: Magnezone|Magnezone|282\/282
+|move|p1a: Gengar|Shadow Ball|p2a: Magnezone
+|-damage|p2a: Magnezone|71\/282
+|-damage|p1a: Gengar|234\/259|[from] item: Life Orb
+|
+|-weather|SunnyDay|[upkeep]
+|turn|14
+|
+|switch|p1a: Charizard|Charizard-Mega-Y, M|92\/297
+|move|p2a: Magnezone|Flash Cannon|p1a: Charizard
+|-resisted|p1a: Charizard
+|-damage|p1a: Charizard|0 fnt
+|faint|p1a: Charizard
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p1a: Breloom|Breloom, M|262\/262
+|turn|15
+|
+|move|p1a: Breloom|Mach Punch|p2a: Magnezone
+|-supereffective|p2a: Magnezone
+|-damage|p2a: Magnezone|0 fnt
+|faint|p2a: Magnezone
+|
+|-weather|none
+|
+|switch|p2a: Gardevoir|Gardevoir-Mega, M|173\/278
+|turn|16
+|
+|move|p2a: Gardevoir|Hyper Voice|p1a: Breloom
+|-supereffective|p1a: Breloom
+|-enditem|p1a: Breloom|Focus Sash
+|-damage|p1a: Breloom|1\/262
+|move|p1a: Breloom|Bullet Seed|p2a: Gardevoir
+|-damage|p2a: Gardevoir|70\/278
+|-damage|p2a: Gardevoir|0 fnt
+|-hitcount|p2a: Gardevoir|2
+|faint|p2a: Gardevoir
+|
+|
+|switch|p2a: Conkeldurr|Conkeldurr, F|414\/414
+|turn|17
+|
+|move|p1a: Breloom|Mach Punch|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|296\/414
+|move|p2a: Conkeldurr|Mach Punch|p1a: Breloom
+|-damage|p1a: Breloom|0 fnt
+|faint|p1a: Breloom
+|
+|
+|switch|p1a: Gengar|Gengar, F|234\/259
+|turn|18
+|
+|move|p1a: Gengar|Sludge Wave|p2a: Conkeldurr
+|-crit|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|2\/414
+|-damage|p1a: Gengar|209\/259|[from] item: Life Orb
+|move|p2a: Conkeldurr|Knock Off|p1a: Gengar
+|-supereffective|p1a: Gengar
+|-damage|p1a: Gengar|0 fnt
+|-enditem|p1a: Gengar|Life Orb|[from] move: Knock Off|[of] p2a: Conkeldurr
+|faint|p1a: Gengar
+|
+|win|bigbizze
+|raw|Ladder updating...
+|raw|Alvok's rating: 1612 &rarr; <strong>1585<\/strong><br \/>(-27 for losing)
+|raw|bigbizze's rating: 1486 &rarr; <strong>1513<\/strong><br \/>(+27 for winning)
+|c|âAlvok|urghhh
+|c|âAlvok|gg
+|c|âbigbizze|GG
+|leave|Alvok
+|player|p1

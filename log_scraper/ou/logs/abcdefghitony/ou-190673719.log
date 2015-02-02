@@ -1,0 +1,561 @@
+|join|abcdefghitony
+|join|ThetaStorm
+|player|p1|abcdefghitony|266
+|player|p2|ThetaStorm|283
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Gallade, M
+|poke|p1|Magnezone
+|poke|p1|Heatran, M
+|poke|p1|Latios, M
+|poke|p1|Slowbro, M
+|poke|p1|Landorus-Therian, M
+|poke|p2|Garchomp, F
+|poke|p2|Rotom-Wash
+|poke|p2|Gengar, F
+|poke|p2|Lopunny, F, shiny
+|poke|p2|Mew
+|poke|p2|Bisharp, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Heatran|Heatran, M|386\/386
+|switch|p2a: Mew|Mew|403\/403
+|turn|1
+|
+|move|p2a: Mew|Taunt|p1a: Heatran
+|-start|p1a: Heatran|move: Taunt
+|cant|p1a: Heatran|move: Taunt|Stealth Rock
+|
+|turn|2
+|
+|switch|p2a: Gengar|Gengar, F|261\/261
+|move|p1a: Heatran|Lava Plume|p2a: Gengar
+|-damage|p2a: Gengar|101\/261
+|-status|p2a: Gengar|brn
+|
+|-heal|p2a: Gengar|117\/261 brn|[from] item: Black Sludge
+|-damage|p2a: Gengar|85\/261 brn|[from] brn
+|turn|3
+|
+|move|p2a: Gengar|Shadow Ball|p1a: Heatran
+|-damage|p1a: Heatran|286\/386
+|move|p1a: Heatran|Lava Plume|p2a: Gengar
+|-damage|p2a: Gengar|0 fnt
+|faint|p2a: Gengar
+|
+|-heal|p1a: Heatran|310\/386|[from] item: Leftovers
+|-end|p1a: Heatran|move: Taunt
+|
+|switch|p2a: Mew|Mew|403\/403
+|turn|4
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Mew
+|-unboost|p2a: Mew|atk|1
+|move|p2a: Mew|Taunt|p1a: Landorus-Therian
+|-start|p1a: Landorus-Therian|move: Taunt
+|
+|turn|5
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Mew
+|-supereffective|p2a: Mew
+|-damage|p2a: Mew|211\/403
+|
+|switch|p1a: Heatran|Heatran, M|310\/386
+|move|p2a: Mew|Psyshock|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|262\/386
+|
+|-heal|p2a: Mew|236\/403|[from] item: Leftovers
+|-heal|p1a: Heatran|286\/386|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: Garchomp|Garchomp, F|378\/378
+|move|p1a: Heatran|Stealth Rock|p2a: Garchomp
+|-sidestart|p2: ThetaStorm|move: Stealth Rock
+|
+|-heal|p1a: Heatran|310\/386|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Slowbro|Slowbro, M|394\/394
+|move|p2a: Garchomp|Outrage|p1a: Slowbro
+|-damage|p1a: Slowbro|258\/394
+|
+|-heal|p1a: Slowbro|282\/394|[from] item: Leftovers
+|turn|8
+|
+|move|p2a: Garchomp|Outrage|p1a: Slowbro
+|-damage|p1a: Slowbro|164\/394
+|move|p1a: Slowbro|Scald|p2a: Garchomp
+|-damage|p2a: Garchomp|276\/378
+|-status|p2a: Garchomp|brn
+|
+|-end|p2a: Garchomp|rampage
+|-start|p2a: Garchomp|confusion
+|-heal|p1a: Slowbro|188\/394|[from] item: Leftovers
+|-damage|p2a: Garchomp|229\/378 brn|[from] brn
+|turn|9
+|
+|switch|p2a: Mew|Mew|236\/403
+|-damage|p2a: Mew|186\/403|[from] Stealth Rock
+|move|p1a: Slowbro|Slack Off|p1a: Slowbro
+|-heal|p1a: Slowbro|385\/394
+|
+|-heal|p2a: Mew|211\/403|[from] item: Leftovers
+|-heal|p1a: Slowbro|394\/394|[from] item: Leftovers
+|turn|10
+|
+|move|p2a: Mew|Taunt|p1a: Slowbro
+|-start|p1a: Slowbro|move: Taunt
+|cant|p1a: Slowbro|move: Taunt|Toxic
+|
+|-heal|p2a: Mew|236\/403|[from] item: Leftovers
+|turn|11
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Mew
+|-unboost|p2a: Mew|atk|1
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|403\/403
+|
+|turn|12
+|
+|move|p1a: Landorus-Therian|Explosion|p2a: Mew
+|-damage|p2a: Mew|101\/403
+|faint|p1a: Landorus-Therian
+|move|p2a: Mew|Psyshock|p1: Landorus-Therian|[notarget]
+|-notarget
+|
+|-heal|p2a: Mew|126\/403|[from] item: Leftovers
+|c|âabcdefghitony|efff datt
+|c|âThetaStorm|Hard body
+|c|âabcdefghitony|lol :P
+|
+|switch|p1a: Magnezone|Magnezone|282\/282
+|turn|13
+|
+|move|p1a: Magnezone|Flash Cannon|p2a: Mew
+|-damage|p2a: Mew|17\/403
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|219\/403
+|
+|-heal|p2a: Mew|244\/403|[from] item: Leftovers
+|turn|14
+|c|âThetaStorm|Told ya
+|
+|move|p1a: Magnezone|Flash Cannon|p2a: Mew
+|-damage|p2a: Mew|124\/403
+|move|p2a: Mew|Taunt|p1a: Magnezone
+|-start|p1a: Magnezone|move: Taunt
+|
+|-heal|p2a: Mew|149\/403|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Magnezone|Flash Cannon|p2a: Mew
+|-damage|p2a: Mew|22\/403
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|224\/403
+|
+|-heal|p2a: Mew|249\/403|[from] item: Leftovers
+|turn|16
+|
+|move|p1a: Magnezone|Flash Cannon|p2a: Mew
+|-damage|p2a: Mew|123\/403
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|325\/403
+|
+|-heal|p2a: Mew|350\/403|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Magnezone|Flash Cannon|p2a: Mew
+|-damage|p2a: Mew|241\/403
+|move|p2a: Mew|Psyshock|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-damage|p1a: Magnezone|243\/282
+|
+|-heal|p2a: Mew|266\/403|[from] item: Leftovers
+|-end|p1a: Magnezone|move: Taunt
+|turn|18
+|
+|switch|p1a: Gallade|Gallade, M|278\/278
+|move|p2a: Mew|Taunt|p1a: Gallade
+|-start|p1a: Gallade|move: Taunt
+|
+|-heal|p2a: Mew|291\/403|[from] item: Leftovers
+|turn|19
+|
+|detailschange|p1a: Gallade|Gallade-Mega, M
+|message|Gallade has Mega Evolved into Mega Gallade!
+|move|p1a: Gallade|Drain Punch|p2a: Mew
+|-resisted|p2a: Mew
+|-damage|p2a: Mew|213\/403
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|403\/403
+|
+|turn|20
+|
+|move|p1a: Gallade|Zen Headbutt|p2a: Mew
+|-resisted|p2a: Mew
+|-damage|p2a: Mew|321\/403
+|move|p2a: Mew|Psyshock|p1a: Gallade
+|-damage|p1a: Gallade|175\/278
+|
+|-heal|p2a: Mew|346\/403|[from] item: Leftovers
+|turn|21
+|
+|switch|p1a: Latios|Latios, M|302\/302
+|move|p2a: Mew|Psyshock|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|248\/302
+|
+|-heal|p2a: Mew|371\/403|[from] item: Leftovers
+|turn|22
+|c|âabcdefghitony|this mofo is annoying
+|c|âThetaStorm|Ten years later
+|
+|move|p1a: Latios|Draco Meteor|p2a: Mew|[miss]
+|-miss|p1a: Latios|p2a: Mew
+|move|p2a: Mew|Taunt|p1a: Latios
+|-start|p1a: Latios|move: Taunt
+|
+|-heal|p2a: Mew|396\/403|[from] item: Leftovers
+|turn|23
+|
+|move|p1a: Latios|Draco Meteor|p2a: Mew
+|-damage|p2a: Mew|139\/403
+|-unboost|p1a: Latios|spa|2
+|-damage|p1a: Latios|218\/302|[from] item: Life Orb
+|move|p2a: Mew|Stealth Rock|p1a: Latios
+|-sidestart|p1: abcdefghitony|move: Stealth Rock
+|
+|-heal|p2a: Mew|164\/403|[from] item: Leftovers
+|turn|24
+|
+|move|p1a: Latios|Draco Meteor|p2a: Mew
+|-damage|p2a: Mew|31\/403
+|-unboost|p1a: Latios|spa|2
+|-damage|p1a: Latios|188\/302|[from] item: Life Orb
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|233\/403
+|
+|-heal|p2a: Mew|258\/403|[from] item: Leftovers
+|turn|25
+|
+|switch|p1a: Magnezone|Magnezone|243\/282
+|-damage|p1a: Magnezone|226\/282|[from] Stealth Rock
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|403\/403
+|
+|turn|26
+|
+|move|p1a: Magnezone|Thunderbolt|p2a: Mew
+|-damage|p2a: Mew|279\/403
+|move|p2a: Mew|Taunt|p1a: Magnezone
+|-start|p1a: Magnezone|move: Taunt
+|
+|-heal|p2a: Mew|304\/403|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: Magnezone|Thunderbolt|p2a: Mew
+|-damage|p2a: Mew|181\/403
+|move|p2a: Mew|Psyshock|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-damage|p1a: Magnezone|184\/282
+|
+|-heal|p2a: Mew|206\/403|[from] item: Leftovers
+|turn|28
+|
+|move|p1a: Magnezone|Thunderbolt|p2a: Mew
+|-crit|p2a: Mew
+|-damage|p2a: Mew|19\/403
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|221\/403
+|
+|-heal|p2a: Mew|246\/403|[from] item: Leftovers
+|turn|29
+|
+|switch|p1a: Latios|Latios, M|188\/302
+|-damage|p1a: Latios|151\/302|[from] Stealth Rock
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|403\/403
+|
+|turn|30
+|
+|move|p1a: Latios|Draco Meteor|p2a: Mew
+|-damage|p2a: Mew|160\/403
+|-unboost|p1a: Latios|spa|2
+|-damage|p1a: Latios|121\/302|[from] item: Life Orb
+|move|p2a: Mew|Taunt|p1a: Latios
+|-start|p1a: Latios|move: Taunt
+|
+|-heal|p2a: Mew|185\/403|[from] item: Leftovers
+|turn|31
+|
+|move|p1a: Latios|Draco Meteor|p2a: Mew
+|-damage|p2a: Mew|63\/403
+|-unboost|p1a: Latios|spa|2
+|-damage|p1a: Latios|91\/302|[from] item: Life Orb
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|265\/403
+|
+|-heal|p2a: Mew|290\/403|[from] item: Leftovers
+|turn|32
+|
+|switch|p1a: Slowbro|Slowbro, M|394\/394
+|-damage|p1a: Slowbro|345\/394|[from] Stealth Rock
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|403\/403
+|
+|-heal|p1a: Slowbro|369\/394|[from] item: Leftovers
+|turn|33
+|
+|move|p2a: Mew|Taunt|p1a: Slowbro
+|-start|p1a: Slowbro|move: Taunt
+|cant|p1a: Slowbro|move: Taunt|Toxic
+|
+|-heal|p1a: Slowbro|393\/394|[from] item: Leftovers
+|turn|34
+|
+|move|p2a: Mew|Psyshock|p1a: Slowbro
+|-resisted|p1a: Slowbro
+|-damage|p1a: Slowbro|360\/394
+|move|p1a: Slowbro|Scald|p2a: Mew
+|-damage|p2a: Mew|327\/403
+|-status|p2a: Mew|brn
+|-status|p1a: Slowbro|brn
+|
+|-heal|p2a: Mew|352\/403 brn|[from] item: Leftovers
+|-heal|p1a: Slowbro|384\/394 brn|[from] item: Leftovers
+|-damage|p2a: Mew|302\/403 brn|[from] brn
+|-damage|p1a: Slowbro|335\/394 brn|[from] brn
+|turn|35
+|
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|403\/403 brn
+|move|p1a: Slowbro|Scald|p2a: Mew
+|-damage|p2a: Mew|321\/403 brn
+|
+|-heal|p2a: Mew|346\/403 brn|[from] item: Leftovers
+|-heal|p1a: Slowbro|359\/394 brn|[from] item: Leftovers
+|-damage|p2a: Mew|296\/403 brn|[from] brn
+|-damage|p1a: Slowbro|310\/394 brn|[from] brn
+|-end|p1a: Slowbro|move: Taunt
+|turn|36
+|
+|switch|p1a: Latios|Latios, M|91\/302
+|-damage|p1a: Latios|54\/302|[from] Stealth Rock
+|move|p2a: Mew|Taunt|p1a: Latios
+|-start|p1a: Latios|move: Taunt
+|
+|-heal|p2a: Mew|321\/403 brn|[from] item: Leftovers
+|-damage|p2a: Mew|271\/403 brn|[from] brn
+|turn|37
+|
+|move|p1a: Latios|Draco Meteor|p2a: Mew
+|-damage|p2a: Mew|40\/403 brn
+|-unboost|p1a: Latios|spa|2
+|-damage|p1a: Latios|24\/302|[from] item: Life Orb
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|242\/403 brn
+|
+|-heal|p2a: Mew|267\/403 brn|[from] item: Leftovers
+|-damage|p2a: Mew|217\/403 brn|[from] brn
+|turn|38
+|
+|move|p1a: Latios|Draco Meteor|p2a: Mew
+|-damage|p2a: Mew|103\/403 brn
+|-unboost|p1a: Latios|spa|2
+|-damage|p1a: Latios|0 fnt|[from] item: Life Orb
+|faint|p1a: Latios
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|305\/403 brn
+|
+|-heal|p2a: Mew|330\/403 brn|[from] item: Leftovers
+|-damage|p2a: Mew|280\/403 brn|[from] brn
+|
+|switch|p1a: Gallade|Gallade-Mega, M|175\/278
+|-damage|p1a: Gallade|158\/278|[from] Stealth Rock
+|turn|39
+|
+|move|p1a: Gallade|Swords Dance|p1a: Gallade
+|-boost|p1a: Gallade|atk|2
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|403\/403 brn
+|
+|-damage|p2a: Mew|353\/403 brn|[from] brn
+|turn|40
+|
+|move|p1a: Gallade|Zen Headbutt|p2a: Mew|[miss]
+|-miss|p1a: Gallade|p2a: Mew
+|move|p2a: Mew|Taunt|p1a: Gallade
+|-start|p1a: Gallade|move: Taunt
+|
+|-heal|p2a: Mew|378\/403 brn|[from] item: Leftovers
+|-damage|p2a: Mew|328\/403 brn|[from] brn
+|turn|41
+|
+|move|p1a: Gallade|Zen Headbutt|p2a: Mew
+|-resisted|p2a: Mew
+|-damage|p2a: Mew|151\/403 brn
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|353\/403 brn
+|
+|-heal|p2a: Mew|378\/403 brn|[from] item: Leftovers
+|-damage|p2a: Mew|328\/403 brn|[from] brn
+|turn|42
+|
+|move|p1a: Gallade|Drain Punch|p2a: Mew
+|-resisted|p2a: Mew
+|-damage|p2a: Mew|173\/403 brn
+|-heal|p1a: Gallade|236\/278|[from] drain|[of] p2a: Mew
+|move|p2a: Mew|Psyshock|p1a: Gallade
+|-damage|p1a: Gallade|130\/278
+|
+|-heal|p2a: Mew|198\/403 brn|[from] item: Leftovers
+|-damage|p2a: Mew|148\/403 brn|[from] brn
+|turn|43
+|
+|move|p1a: Gallade|Drain Punch|p2a: Mew
+|-resisted|p2a: Mew
+|-damage|p2a: Mew|0 fnt
+|-heal|p1a: Gallade|204\/278|[from] drain|[of] p2a: Mew
+|faint|p2a: Mew
+|
+|-end|p1a: Gallade|move: Taunt
+|c|âabcdefghitony|thank you based god
+|
+|switch|p2a: Lopunny|Lopunny, F, shiny|295\/295
+|-damage|p2a: Lopunny|259\/295|[from] Stealth Rock
+|turn|44
+|c|âThetaStorm|Ran out of roosts
+|
+|detailschange|p2a: Lopunny|Lopunny-Mega, F, shiny
+|message|Lopunny has Mega Evolved into Mega Lopunny!
+|move|p2a: Lopunny|Fake Out|p1a: Gallade
+|-damage|p1a: Gallade|123\/278
+|move|p1a: Gallade|Substitute|p1a: Gallade
+|-start|p1a: Gallade|Substitute
+|-damage|p1a: Gallade|54\/278
+|
+|turn|45
+|
+|move|p2a: Lopunny|Return|p1a: Gallade
+|-end|p1a: Gallade|Substitute
+|move|p1a: Gallade|Drain Punch|p2a: Lopunny
+|-supereffective|p2a: Lopunny
+|-damage|p2a: Lopunny|0 fnt
+|-heal|p1a: Gallade|184\/278|[from] drain|[of] p2a: Lopunny
+|faint|p2a: Lopunny
+|
+|
+|switch|p2a: Garchomp|Garchomp, F|229\/378 brn
+|-damage|p2a: Garchomp|206\/378 brn|[from] Stealth Rock
+|turn|46
+|
+|move|p2a: Garchomp|Outrage|p1a: Gallade
+|-damage|p1a: Gallade|85\/278
+|move|p1a: Gallade|Drain Punch|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|-heal|p1a: Gallade|188\/278|[from] drain|[of] p2a: Garchomp
+|-damage|p1a: Gallade|154\/278|[from] ability: Rough Skin|[of] p2a: Garchomp
+|faint|p2a: Garchomp
+|
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|303\/303
+|-damage|p2a: Rotom-Wash|266\/303|[from] Stealth Rock
+|turn|47
+|
+|move|p1a: Gallade|Swords Dance|p1a: Gallade
+|-boost|p1a: Gallade|atk|2
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Gallade
+|-status|p1a: Gallade|brn
+|
+|-damage|p1a: Gallade|120\/278 brn|[from] brn
+|turn|48
+|
+|move|p1a: Gallade|Drain Punch|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|109\/303
+|-heal|p1a: Gallade|199\/278 brn|[from] drain|[of] p2a: Rotom-Wash
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Gallade
+|-damage|p1a: Gallade|72\/278 brn
+|
+|-damage|p1a: Gallade|38\/278 brn|[from] brn
+|turn|49
+|
+|move|p1a: Gallade|Drain Punch|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|-heal|p1a: Gallade|93\/278 brn|[from] drain|[of] p2a: Rotom-Wash
+|faint|p2a: Rotom-Wash
+|
+|-damage|p1a: Gallade|59\/278 brn|[from] brn
+|
+|switch|p2a: Bisharp|Bisharp, M|333\/333
+|-damage|p2a: Bisharp|313\/333|[from] Stealth Rock
+|turn|50
+|
+|move|p2a: Bisharp|Sucker Punch|p1a: Gallade
+|-damage|p1a: Gallade|0 fnt
+|faint|p1a: Gallade
+|
+|
+|switch|p1a: Magnezone|Magnezone|184\/282
+|-damage|p1a: Magnezone|167\/282|[from] Stealth Rock
+|turn|51
+|
+|move|p1a: Magnezone|Volt Switch|p2a: Bisharp
+|-damage|p2a: Bisharp|139\/333
+|
+|switch|p1a: Slowbro|Slowbro, M|394\/394 brn
+|-damage|p1a: Slowbro|345\/394 brn|[from] Stealth Rock
+|move|p2a: Bisharp|Swords Dance|p2a: Bisharp
+|-boost|p2a: Bisharp|atk|2
+|
+|-heal|p1a: Slowbro|369\/394 brn|[from] item: Leftovers
+|-damage|p1a: Slowbro|320\/394 brn|[from] brn
+|turn|52
+|
+|move|p2a: Bisharp|Knock Off|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|0 fnt
+|-enditem|p1a: Slowbro|Leftovers|[from] move: Knock Off|[of] p2a: Bisharp
+|faint|p1a: Slowbro
+|
+|
+|switch|p1a: Magnezone|Magnezone|167\/282
+|-damage|p1a: Magnezone|150\/282|[from] Stealth Rock
+|turn|53
+|
+|move|p2a: Bisharp|Sucker Punch|p1a: Magnezone
+|-damage|p1a: Magnezone|0 fnt
+|faint|p1a: Magnezone
+|
+|
+|switch|p1a: Heatran|Heatran, M|310\/386
+|-damage|p1a: Heatran|262\/386|[from] Stealth Rock
+|turn|54
+|
+|move|p2a: Bisharp|Sucker Punch|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|win|ThetaStorm
+|raw|Ladder updating...
+|c|âabcdefghitony|gg bro
+|c|âThetaStorm|gg
+|leave|abcdefghitony
+|player|p1
+|raw|abcdefghitony's rating: 1215 &rarr; <strong>1189<\/strong><br \/>(-26 for losing)
+|raw|ThetaStorm's rating: 1194 &rarr; <strong>1221<\/strong><br \/>(+27 for winning)

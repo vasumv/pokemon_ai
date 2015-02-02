@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 
-LADDER_URL = "http://pokemonshowdown.com/ladder/ou"
+LADDER_URL = "http://pokemonshowdown.com/ladder/uu"
 def get_ladder_html():
     return requests.get(LADDER_URL).text
 def get_list(text):
@@ -10,7 +10,7 @@ def get_list(text):
 if __name__ == "__main__":
     text = get_ladder_html()
     names = get_list(text)
-    with open('ladder_names.txt', 'w') as fp:
+    with open('uu/ladder_names.txt', 'w') as fp:
         for name in names:
             print >>fp, name.text.encode('utf-8')
 

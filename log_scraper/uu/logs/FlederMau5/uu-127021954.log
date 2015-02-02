@@ -1,0 +1,306 @@
+|join|1gorStravinsky
+|join|FlederMau5
+|player|p1|1gorStravinsky|1
+|player|p2|FlederMau5|169
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Infernape, M
+|poke|p1|Flygon, M
+|poke|p1|Porygon2
+|poke|p1|Roserade, F
+|poke|p1|Milotic, F
+|poke|p1|Metagross
+|poke|p2|Raikou, shiny
+|poke|p2|Suicune, shiny
+|poke|p2|Entei, shiny
+|poke|p2|Chesnaught, F
+|poke|p2|Umbreon, M, shiny
+|poke|p2|Donphan, M, shiny
+|teampreview
+|
+|start
+|switch|p1a: Dr. DOOM|Metagross|364\/364
+|switch|p2a: TM87|Raikou, shiny|321\/321
+|-ability|p2a: TM87|Pressure
+|turn|1
+|
+|move|p2a: TM87|Volt Switch|p1a: Dr. DOOM
+|-damage|p1a: Dr. DOOM|243\/364
+|
+|switch|p2a: Cheshire|Umbreon, M, shiny|394\/394
+|move|p1a: Dr. DOOM|Earthquake|p2a: Cheshire
+|-damage|p2a: Cheshire|267\/394
+|
+|-heal|p1a: Dr. DOOM|265\/364|[from] item: Leftovers
+|-heal|p2a: Cheshire|291\/394|[from] item: Leftovers
+|turn|2
+|
+|switch|p2a: t('.'t)|Suicune, shiny|404\/404
+|-ability|p2a: t('.'t)|Pressure
+|move|p1a: Dr. DOOM|Stealth Rock|p2a: t('.'t)
+|-sidestart|p2: FlederMau5|move: Stealth Rock
+|
+|-heal|p1a: Dr. DOOM|287\/364|[from] item: Leftovers
+|turn|3
+|
+|switch|p1a: KittyPryde|Roserade, F|324\/324
+|move|p2a: t('.'t)|Calm Mind|p2a: t('.'t)
+|-boost|p2a: t('.'t)|spa|1
+|-boost|p2a: t('.'t)|spd|1
+|
+|turn|4
+|
+|switch|p1a: Ororo|Milotic, F|394\/394
+|move|p2a: t('.'t)|Calm Mind|p2a: t('.'t)
+|-boost|p2a: t('.'t)|spa|1
+|-boost|p2a: t('.'t)|spd|1
+|
+|turn|5
+|
+|move|p2a: t('.'t)|Scald|p1a: Ororo
+|-crit|p1a: Ororo
+|-resisted|p1a: Ororo
+|-damage|p1a: Ororo|295\/394
+|move|p1a: Ororo|Dragon Tail|p2a: t('.'t)|[miss]
+|-miss|p1a: Ororo|p2a: t('.'t)
+|
+|-heal|p1a: Ororo|319\/394|[from] item: Leftovers
+|turn|6
+|
+|move|p2a: t('.'t)|Scald|p1a: Ororo
+|-resisted|p1a: Ororo
+|-damage|p1a: Ororo|250\/394
+|-status|p1a: Ororo|brn
+|move|p1a: Ororo|Dragon Tail|p2a: t('.'t)
+|-damage|p2a: t('.'t)|394\/404
+|drag|p2a: TM87|Raikou, shiny|321\/321
+|-damage|p2a: TM87|281\/321|[from] Stealth Rock
+|-ability|p2a: TM87|Pressure
+|
+|-heal|p1a: Ororo|274\/394 brn|[from] item: Leftovers
+|-damage|p1a: Ororo|225\/394 brn|[from] brn
+|turn|7
+|
+|switch|p1a: KittyPryde|Roserade, F|324\/324
+|move|p2a: TM87|Extrasensory|p1a: KittyPryde
+|-supereffective|p1a: KittyPryde
+|-damage|p1a: KittyPryde|180\/324
+|
+|-heal|p1a: KittyPryde|200\/324|[from] item: Black Sludge
+|turn|8
+|
+|switch|p2a: Turn Up|Entei, shiny|372\/372
+|-damage|p2a: Turn Up|279\/372|[from] Stealth Rock
+|-ability|p2a: Turn Up|Pressure
+|move|p1a: KittyPryde|Giga Drain|p2a: Turn Up
+|-resisted|p2a: Turn Up
+|-damage|p2a: Turn Up|207\/372
+|-heal|p1a: KittyPryde|236\/324|[from] drain|[of] p2a: Turn Up
+|
+|-heal|p1a: KittyPryde|256\/324|[from] item: Black Sludge
+|turn|9
+|
+|switch|p1a: JARVIS|Porygon2|374\/374
+|-ability|p1a: JARVIS|Pressure|[from] ability: Trace|[of] p2a: Turn Up
+|-ability|p1a: JARVIS|Pressure
+|move|p2a: Turn Up|Extreme Speed|p1a: JARVIS
+|-damage|p1a: JARVIS|298\/374
+|
+|turn|10
+|
+|switch|p2a: YOLO|Donphan, M, shiny|364\/364
+|-damage|p2a: YOLO|342\/364|[from] Stealth Rock
+|move|p1a: JARVIS|Toxic|p2a: YOLO
+|-status|p2a: YOLO|tox
+|
+|-damage|p2a: YOLO|320\/364 tox|[from] psn
+|turn|11
+|
+|move|p2a: YOLO|Rapid Spin|p1a: JARVIS
+|-damage|p1a: JARVIS|283\/374
+|-sideend|p2: FlederMau5|Stealth Rock|[from] move: Rapid Spin|[of] p2a: YOLO
+|move|p1a: JARVIS|Tri Attack|p2a: YOLO
+|-crit|p2a: YOLO
+|-damage|p2a: YOLO|176\/364 tox
+|
+|-damage|p2a: YOLO|132\/364 tox|[from] psn
+|turn|12
+|
+|switch|p2a: Cheshire|Umbreon, M, shiny|291\/394
+|move|p1a: JARVIS|Recover|p1a: JARVIS
+|-heal|p1a: JARVIS|374\/374
+|
+|-heal|p2a: Cheshire|315\/394|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: KittyPryde|Roserade, F|256\/324
+|move|p2a: Cheshire|Heal Bell|p2a: Cheshire
+|-cureteam|p2a: Cheshire|[from] move: HealBell
+|
+|-heal|p1a: KittyPryde|276\/324|[from] item: Black Sludge
+|-heal|p2a: Cheshire|339\/394|[from] item: Leftovers
+|turn|14
+|
+|switch|p2a: Turn Up|Entei, shiny|207\/372
+|-ability|p2a: Turn Up|Pressure
+|move|p1a: KittyPryde|Spikes|p2a: Turn Up
+|-sidestart|p2: FlederMau5|Spikes
+|
+|-heal|p1a: KittyPryde|296\/324|[from] item: Black Sludge
+|turn|15
+|
+|switch|p1a: JARVIS|Porygon2|374\/374
+|-ability|p1a: JARVIS|Pressure|[from] ability: Trace|[of] p2a: Turn Up
+|-ability|p1a: JARVIS|Pressure
+|move|p2a: Turn Up|Sacred Fire|p1a: JARVIS
+|-damage|p1a: JARVIS|230\/374
+|-status|p1a: JARVIS|brn
+|
+|-damage|p1a: JARVIS|184\/374 brn|[from] brn
+|turn|16
+|
+|switch|p2a: YOLO|Donphan, M, shiny|132\/364
+|-damage|p2a: YOLO|87\/364|[from] Spikes
+|move|p1a: JARVIS|Toxic|p2a: YOLO|[miss]
+|-miss|p1a: JARVIS|p2a: YOLO
+|
+|-damage|p1a: JARVIS|138\/374 brn|[from] brn
+|turn|17
+|
+|move|p2a: YOLO|Knock Off|p1a: JARVIS
+|-damage|p1a: JARVIS|67\/374 brn
+|-enditem|p1a: JARVIS|Eviolite|[from] move: Knock Off|[of] p2a: YOLO
+|move|p1a: JARVIS|Toxic|p2a: YOLO
+|-status|p2a: YOLO|tox
+|
+|-damage|p2a: YOLO|65\/364 tox|[from] psn
+|-damage|p1a: JARVIS|21\/374 brn|[from] brn
+|turn|18
+|
+|move|p2a: YOLO|Ice Shard|p1a: JARVIS
+|-damage|p1a: JARVIS|0 fnt
+|faint|p1a: JARVIS
+|
+|-damage|p2a: YOLO|21\/364 tox|[from] psn
+|
+|switch|p1a: Pyro|Infernape, M|293\/293
+|turn|19
+|
+|move|p1a: Pyro|U-turn|p2a: YOLO
+|-damage|p2a: YOLO|0 fnt
+|faint|p2a: YOLO
+|
+|switch|p1a: TaskMaster|Flygon, M|301\/301
+|
+|
+|switch|p2a: Cheshire|Umbreon, M, shiny|339\/394
+|-damage|p2a: Cheshire|290\/394|[from] Spikes
+|turn|20
+|
+|move|p1a: TaskMaster|U-turn|p2a: Cheshire
+|-supereffective|p2a: Cheshire
+|-damage|p2a: Cheshire|166\/394
+|
+|switch|p1a: Dr. DOOM|Metagross|287\/364
+|move|p2a: Cheshire|Foul Play|p1a: Dr. DOOM
+|-crit|p1a: Dr. DOOM
+|-supereffective|p1a: Dr. DOOM
+|-damage|p1a: Dr. DOOM|0 fnt
+|faint|p1a: Dr. DOOM
+|
+|-heal|p2a: Cheshire|190\/394|[from] item: Leftovers
+|
+|switch|p1a: KittyPryde|Roserade, F|296\/324
+|turn|21
+|
+|switch|p2a: Turn Up|Entei, shiny|207\/372
+|-damage|p2a: Turn Up|161\/372|[from] Spikes
+|-ability|p2a: Turn Up|Pressure
+|move|p1a: KittyPryde|Spikes|p2a: Turn Up
+|-sidestart|p2: FlederMau5|Spikes
+|
+|-heal|p1a: KittyPryde|316\/324|[from] item: Black Sludge
+|turn|22
+|
+|switch|p1a: Pyro|Infernape, M|293\/293
+|move|p2a: Turn Up|Extreme Speed|p1a: Pyro
+|-damage|p1a: Pyro|112\/293
+|
+|turn|23
+|
+|switch|p1a: Ororo|Milotic, F|225\/394 brn
+|move|p2a: Turn Up|Extreme Speed|p1a: Ororo
+|-damage|p1a: Ororo|98\/394 brn
+|
+|-heal|p1a: Ororo|122\/394 brn|[from] item: Leftovers
+|-damage|p1a: Ororo|73\/394 brn|[from] brn
+|turn|24
+|
+|move|p2a: Turn Up|Extreme Speed|p1a: Ororo
+|-crit|p1a: Ororo
+|-damage|p1a: Ororo|0 fnt
+|faint|p1a: Ororo
+|
+|
+|switch|p1a: TaskMaster|Flygon, M|301\/301
+|turn|25
+|
+|move|p2a: Turn Up|Extreme Speed|p1a: TaskMaster
+|-damage|p1a: TaskMaster|114\/301
+|move|p1a: TaskMaster|Earthquake|p2a: Turn Up
+|-supereffective|p2a: Turn Up
+|-damage|p2a: Turn Up|0 fnt
+|faint|p2a: Turn Up
+|
+|
+|switch|p2a: t('.'t)|Suicune, shiny|394\/404
+|-damage|p2a: t('.'t)|327\/404|[from] Spikes
+|-ability|p2a: t('.'t)|Pressure
+|turn|26
+|
+|switch|p1a: KittyPryde|Roserade, F|316\/324
+|move|p2a: t('.'t)|Calm Mind|p2a: t('.'t)
+|-boost|p2a: t('.'t)|spa|1
+|-boost|p2a: t('.'t)|spd|1
+|
+|-heal|p1a: KittyPryde|324\/324|[from] item: Black Sludge
+|-heal|p2a: t('.'t)|352\/404|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: KittyPryde|Giga Drain|p2a: t('.'t)
+|-supereffective|p2a: t('.'t)
+|-damage|p2a: t('.'t)|212\/404
+|move|p2a: t('.'t)|Calm Mind|p2a: t('.'t)
+|-boost|p2a: t('.'t)|spa|1
+|-boost|p2a: t('.'t)|spd|1
+|
+|-heal|p2a: t('.'t)|237\/404|[from] item: Leftovers
+|turn|28
+|
+|move|p1a: KittyPryde|Giga Drain|p2a: t('.'t)
+|-supereffective|p2a: t('.'t)
+|-damage|p2a: t('.'t)|133\/404
+|move|p2a: t('.'t)|Rest|p2a: t('.'t)
+|-status|p2a: t('.'t)|slp
+|-heal|p2a: t('.'t)|404\/404 slp|[silent]
+|-status|p2a: t('.'t)|slp|[from] move: Rest
+|
+|turn|29
+|-message|1gorStravinsky forfeited.
+|
+|win|FlederMau5
+|raw|Ladder updating...
+|leave|1gorStravinsky
+|player|p1
+|raw|1gorStravinsky's rating: 1340 &rarr; <strong>1326<\/strong><br \/>(-14 for losing)
+|raw|FlederMau5's rating: 1452 &rarr; <strong>1466<\/strong><br \/>(+14 for winning)

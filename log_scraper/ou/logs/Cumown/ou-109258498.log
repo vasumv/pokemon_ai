@@ -1,0 +1,151 @@
+|join|Crayon Child
+|join|Cumown
+|player|p1|Crayon Child|2
+|player|p2|Cumown|265
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Goodra, M
+|poke|p1|Rotom-Wash
+|poke|p1|Salamence, M
+|poke|p1|Scizor, F
+|poke|p1|Heatran, F
+|poke|p1|Terrakion
+|poke|p2|Sylveon, F
+|poke|p2|Gliscor, M
+|poke|p2|Gourgeist-*, M
+|poke|p2|Excadrill, F
+|poke|p2|Kyurem-Black
+|poke|p2|Heatran, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Rotom-Wash|Rotom-Wash|300\/300
+|switch|p2a: Kyurem-Black|Kyurem-Black|405\/405
+|-ability|p2a: Kyurem-Black|Teravolt
+|turn|1
+|
+|move|p2a: Kyurem-Black|Substitute|p2a: Kyurem-Black
+|-start|p2a: Kyurem-Black|Substitute
+|-damage|p2a: Kyurem-Black|304\/405
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Kyurem-Black
+|
+|-heal|p2a: Kyurem-Black|329\/405|[from] item: Leftovers
+|turn|2
+|
+|move|p2a: Kyurem-Black|Earth Power|p1a: Rotom-Wash
+|-supereffective|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|94\/300
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Kyurem-Black
+|-resisted|p2a: Kyurem-Black
+|-activate|p2a: Kyurem-Black|Substitute|[damage]
+|
+|switch|p1a: Heatran|Heatran, F|333\/333
+|-item|p1a: Heatran|Air Balloon
+|
+|-heal|p2a: Kyurem-Black|354\/405|[from] item: Leftovers
+|turn|3
+|
+|move|p2a: Kyurem-Black|Fusion Bolt|p1a: Heatran
+|-damage|p1a: Heatran|206\/333
+|-enditem|p1a: Heatran|Air Balloon
+|move|p1a: Heatran|Lava Plume|p2a: Kyurem-Black
+|-end|p2a: Kyurem-Black|Substitute
+|
+|-heal|p2a: Kyurem-Black|379\/405|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|94\/300
+|move|p2a: Kyurem-Black|Substitute|p2a: Kyurem-Black
+|-start|p2a: Kyurem-Black|Substitute
+|-damage|p2a: Kyurem-Black|278\/405
+|
+|-heal|p2a: Kyurem-Black|303\/405|[from] item: Leftovers
+|-heal|p1a: Rotom-Wash|112\/300|[from] item: Leftovers
+|turn|5
+|
+|move|p2a: Kyurem-Black|Earth Power|p1a: Rotom-Wash
+|-supereffective|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|
+|-heal|p2a: Kyurem-Black|328\/405|[from] item: Leftovers
+|chat|Crayon Child|damn
+|
+|switch|p1a: Goodra|Goodra, M|384\/384
+|turn|6
+|
+|move|p2a: Kyurem-Black|Ice Beam|p1a: Goodra
+|-supereffective|p1a: Goodra
+|-damage|p1a: Goodra|150\/384
+|move|p1a: Goodra|Dragon Pulse|p2a: Kyurem-Black
+|-supereffective|p2a: Kyurem-Black
+|-end|p2a: Kyurem-Black|Substitute
+|
+|-heal|p2a: Kyurem-Black|353\/405|[from] item: Leftovers
+|-heal|p1a: Goodra|174\/384|[from] item: Leftovers
+|turn|7
+|
+|move|p2a: Kyurem-Black|Ice Beam|p1a: Goodra
+|-supereffective|p1a: Goodra
+|-damage|p1a: Goodra|0 fnt
+|faint|p1a: Goodra
+|
+|-heal|p2a: Kyurem-Black|378\/405|[from] item: Leftovers
+|
+|switch|p1a: Scizor|Scizor, F|344\/344
+|turn|8
+|
+|switch|p2a: Gourgeist-Small|Gourgeist-Small, M|314\/314
+|-item|p1a: Scizor|Scizorite|[from] ability: Frisk|[of] p2a: Gourgeist-Small|[identify]
+|-formechange|p1a: Scizor|Scizor-Mega
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p1a: Scizor|Bullet Punch|p2a: Gourgeist-Small
+|-damage|p2a: Gourgeist-Small|208\/314
+|
+|-heal|p2a: Gourgeist-Small|227\/314|[from] item: Leftovers
+|turn|9
+|
+|move|p2a: Gourgeist-Small|Leech Seed|p1a: Scizor
+|-start|p1a: Scizor|move: Leech Seed
+|move|p1a: Scizor|Bug Bite|p2a: Gourgeist-Small
+|-damage|p2a: Gourgeist-Small|67\/314
+|
+|-heal|p2a: Gourgeist-Small|86\/314|[from] item: Leftovers
+|-damage|p1a: Scizor|301\/344|[from] Leech Seed|[of] p2a: Gourgeist-Small
+|-heal|p2a: Gourgeist-Small|129\/314|[silent]
+|turn|10
+|
+|switch|p1a: Salamence|Salamence, M|332\/332
+|move|p2a: Gourgeist-Small|Substitute|p2a: Gourgeist-Small
+|-start|p2a: Gourgeist-Small|Substitute
+|-damage|p2a: Gourgeist-Small|51\/314
+|
+|-heal|p2a: Gourgeist-Small|70\/314|[from] item: Leftovers
+|turn|11
+|
+|move|p2a: Gourgeist-Small|Will-O-Wisp|p1a: Salamence
+|-status|p1a: Salamence|brn
+|move|p1a: Salamence|Dragon Claw|p2a: Gourgeist-Small
+|-activate|p2a: Gourgeist-Small|Substitute|[damage]
+|
+|-heal|p2a: Gourgeist-Small|89\/314|[from] item: Leftovers
+|-damage|p1a: Salamence|291\/332 brn|[from] brn
+|turn|12
+|-message|Crayon Child forfeited.
+|
+|win|Cumown
+|raw|Ladder updating...
+|raw|Crayon Child's rating: 1360 &rarr; <strong>1338<\/strong><br \/>(-22 for losing)
+|raw|Cumown's rating: 1325 &rarr; <strong>1347<\/strong><br \/>(+22 for winning)
+|leave|Crayon Child
+|player|p1

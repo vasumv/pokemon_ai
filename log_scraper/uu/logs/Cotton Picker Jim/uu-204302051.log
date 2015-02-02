@@ -1,0 +1,183 @@
+|join|Cotton Picker Jim
+|join|ira deorum
+|player|p1|Cotton Picker Jim|247
+|player|p2|ira deorum|101
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Swampert, F
+|poke|p1|Alomomola, F
+|poke|p1|Granbull, M
+|poke|p1|Blissey, F
+|poke|p1|Celebi
+|poke|p1|Crobat, M
+|poke|p2|Espeon, F
+|poke|p2|Absol, M
+|poke|p2|Arcanine, F
+|poke|p2|Vaporeon, M
+|poke|p2|Roserade, F
+|poke|p2|Donphan, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Crobat|Crobat, M|341\/341
+|switch|p2a: Roserade|Roserade, F|261\/261
+|turn|1
+|
+|switch|p2a: Arcanine|Arcanine, F|383\/383
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Crobat
+|-unboost|p1a: Crobat|atk|1
+|move|p1a: Crobat|Brave Bird|p2a: Arcanine
+|-damage|p2a: Arcanine|314\/383
+|-damage|p1a: Crobat|318\/341|[from] recoil|[of] p2a: Arcanine
+|
+|-heal|p1a: Crobat|339\/341|[from] item: Black Sludge
+|-heal|p2a: Arcanine|337\/383|[from] item: Leftovers
+|turn|2
+|
+|switch|p1a: Clit|Alomomola, F|533\/533
+|move|p2a: Arcanine|Will-O-Wisp|p1a: Clit
+|-status|p1a: Clit|brn
+|
+|-heal|p2a: Arcanine|360\/383|[from] item: Leftovers
+|-damage|p1a: Clit|467\/533 brn|[from] brn
+|turn|3
+|
+|switch|p2a: Roserade|Roserade, F|261\/261
+|switch|p1a: Blissey|Blissey, F|652\/652
+|
+|turn|4
+|
+|move|p2a: Roserade|Sleep Powder|p1a: Blissey
+|-status|p1a: Blissey|slp
+|cant|p1a: Blissey|slp
+|
+|turn|5
+|
+|move|p2a: Roserade|Sleep Powder|p1a: Blissey
+|-fail|p1a: Blissey|slp
+|-curestatus|p1a: Blissey|slp
+|move|p1a: Blissey|Seismic Toss|p2a: Roserade
+|-damage|p2a: Roserade|161\/261
+|
+|turn|6
+|
+|move|p2a: Roserade|Sleep Powder|p1a: Blissey
+|-status|p1a: Blissey|slp
+|cant|p1a: Blissey|slp
+|
+|turn|7
+|
+|move|p2a: Roserade|Spikes|p1a: Blissey
+|-sidestart|p1: Cotton Picker Jim|Spikes
+|-curestatus|p1a: Blissey|slp
+|move|p1a: Blissey|Seismic Toss|p2a: Roserade
+|-damage|p2a: Roserade|61\/261
+|
+|turn|8
+|
+|switch|p2a: Donphan|Donphan, M|364\/364
+|switch|p1a: Crobat|Crobat, M|339\/341
+|
+|-heal|p1a: Crobat|341\/341|[from] item: Black Sludge
+|turn|9
+|
+|move|p1a: Crobat|Defog|p2a: Donphan
+|-unboost|p2a: Donphan|evasion|1
+|-sideend|p1: Cotton Picker Jim|Spikes|[from] move: Defog|[of] p1a: Crobat
+|move|p2a: Donphan|Knock Off|p1a: Crobat
+|-damage|p1a: Crobat|209\/341
+|-enditem|p1a: Crobat|Black Sludge|[from] move: Knock Off|[of] p2a: Donphan
+|
+|turn|10
+|
+|switch|p1a: Celebi|Celebi|403\/403
+|move|p2a: Donphan|Ice Shard|p1a: Celebi
+|-supereffective|p1a: Celebi
+|-damage|p1a: Celebi|323\/403
+|
+|-heal|p1a: Celebi|348\/403|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Celebi|Stealth Rock|p2a: Donphan
+|-sidestart|p2: ira deorum|move: Stealth Rock
+|move|p2a: Donphan|Knock Off|p1a: Celebi
+|-supereffective|p1a: Celebi
+|-damage|p1a: Celebi|184\/403
+|-enditem|p1a: Celebi|Leftovers|[from] move: Knock Off|[of] p2a: Donphan
+|
+|turn|12
+|
+|move|p1a: Celebi|Giga Drain|p2a: Donphan
+|-supereffective|p2a: Donphan
+|-damage|p2a: Donphan|190\/364
+|-heal|p1a: Celebi|271\/403|[from] drain|[of] p2a: Donphan
+|move|p2a: Donphan|Rapid Spin|p1a: Celebi
+|-damage|p1a: Celebi|251\/403
+|-sideend|p2: ira deorum|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Donphan
+|
+|turn|13
+|
+|switch|p2a: Espeon|Espeon, F|334\/334
+|move|p1a: Celebi|Giga Drain|p2a: Espeon
+|-damage|p2a: Espeon|243\/334
+|-heal|p1a: Celebi|297\/403|[from] drain|[of] p2a: Espeon
+|
+|turn|14
+|
+|switch|p1a: Swampert|Swampert, F|404\/404
+|move|p2a: Espeon|Light Screen|p2a: Espeon
+|-sidestart|p2: ira deorum|move: Light Screen
+|
+|turn|15
+|
+|detailschange|p1a: Swampert|Swampert-Mega, F
+|-mega|p1a: Swampert|Swampert|Swampertite
+|move|p2a: Espeon|Reflect|p2a: Espeon
+|-sidestart|p2: ira deorum|Reflect
+|move|p1a: Swampert|Earthquake|p2a: Espeon
+|-crit|p2a: Espeon
+|-damage|p2a: Espeon|0 fnt
+|faint|p2a: Espeon
+|
+|
+|switch|p2a: Absol|Absol, M|271\/271
+|turn|16
+|
+|detailschange|p2a: Absol|Absol-Mega, M
+|-mega|p2a: Absol|Absol|Absolite
+|move|p2a: Absol|Swords Dance|p2a: Absol
+|-boost|p2a: Absol|atk|2
+|move|p1a: Swampert|Scald|p2a: Absol
+|-damage|p2a: Absol|207\/271
+|
+|turn|17
+|
+|move|p2a: Absol|Swords Dance|p2a: Absol
+|-boost|p2a: Absol|atk|2
+|move|p1a: Swampert|Scald|p2a: Absol
+|-damage|p2a: Absol|144\/271
+|-status|p2a: Absol|brn
+|
+|-damage|p2a: Absol|111\/271 brn|[from] brn
+|turn|18
+|-message|ira deorum forfeited.
+|leave|ira deorum
+|
+|win|Cotton Picker Jim
+|raw|Ladder updating...
+|player|p2
+|c|âCotton Picker Jim|lol scrub
+|raw|Cotton Picker Jim's rating: 1498 &rarr; <strong>1521<\/strong><br \/>(+23 for winning)
+|raw|ira deorum's rating: 1544 &rarr; <strong>1521<\/strong><br \/>(-23 for losing)

@@ -1,0 +1,305 @@
+|join|BellyDrumZohan
+|join|MegaRango
+|player|p1|BellyDrumZohan|76
+|player|p2|MegaRango|102
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Swampert, F
+|poke|p1|Kingdra, M
+|poke|p1|Crobat, F
+|poke|p1|Omastar, F
+|poke|p1|Ludicolo, F
+|poke|p1|Tornadus, M
+|poke|p2|Sceptile, M
+|poke|p2|Gligar, F
+|poke|p2|Cofagrigus, M
+|poke|p2|Umbreon, F
+|poke|p2|Quagsire, F
+|poke|p2|Chandelure, F, shiny
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Omastar|Omastar, F|281\/281
+|switch|p2a: Chandelure 10.6|Chandelure, F, shiny|261\/261
+|turn|1
+|
+|move|p2a: Chandelure 10.6|Trick|p1a: Omastar
+|-activate|p2a: Chandelure 10.6|move: Trick|[of] p1a: Omastar
+|-item|p1a: Omastar|Choice Scarf|[from] move: Trick
+|-item|p2a: Chandelure 10.6|Focus Sash|[from] move: Trick
+|move|p1a: Omastar|Rain Dance|p1a: Omastar
+|-weather|RainDance
+|
+|-weather|RainDance|[upkeep]
+|turn|2
+|
+|switch|p1a: Ludicolo|Ludicolo, F|301\/301
+|move|p2a: Chandelure 10.6|Shadow Ball|p1a: Ludicolo
+|-damage|p1a: Ludicolo|141\/301
+|-unboost|p1a: Ludicolo|spd|1
+|
+|-weather|RainDance|[upkeep]
+|turn|3
+|
+|move|p1a: Ludicolo|Hydro Pump|p2a: Chandelure 10.6
+|-crit|p2a: Chandelure 10.6
+|-supereffective|p2a: Chandelure 10.6
+|-enditem|p2a: Chandelure 10.6|Focus Sash
+|-damage|p2a: Chandelure 10.6|1\/261
+|-damage|p1a: Ludicolo|111\/301|[from] item: Life Orb
+|move|p2a: Chandelure 10.6|Shadow Ball|p1a: Ludicolo
+|-damage|p1a: Ludicolo|0 fnt
+|faint|p1a: Ludicolo
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p1a: Crobat|Crobat, F|373\/373
+|turn|4
+|
+|move|p1a: Crobat|Brave Bird|p2a: Chandelure 10.6
+|-damage|p2a: Chandelure 10.6|0 fnt
+|-damage|p1a: Crobat|372\/373|[from] recoil|[of] p2a: Chandelure 10.6
+|faint|p2a: Chandelure 10.6
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p2a: Cofagrigus 0.91|Cofagrigus, M|319\/319
+|turn|5
+|
+|switch|p1a: Tornadus|Tornadus, M|299\/299
+|move|p2a: Cofagrigus 0.91|Toxic Spikes|p1a: Tornadus
+|-sidestart|p1: BellyDrumZohan|move: Toxic Spikes
+|
+|-weather|none
+|turn|6
+|
+|move|p1a: Tornadus|Taunt|p2a: Cofagrigus 0.91
+|-start|p2a: Cofagrigus 0.91|move: Taunt
+|move|p2a: Cofagrigus 0.91|Shadow Ball|p1a: Tornadus
+|-damage|p1a: Tornadus|184\/299
+|
+|turn|7
+|
+|move|p1a: Tornadus|Rain Dance|p1a: Tornadus
+|-weather|RainDance
+|move|p2a: Cofagrigus 0.91|Shadow Ball|p1a: Tornadus
+|-damage|p1a: Tornadus|67\/299
+|
+|-weather|RainDance|[upkeep]
+|turn|8
+|
+|switch|p2a: Umbreon 6.92|Umbreon, F|394\/394
+|move|p1a: Tornadus|U-turn|p2a: Umbreon 6.92
+|-supereffective|p2a: Umbreon 6.92
+|-damage|p2a: Umbreon 6.92|276\/394
+|
+|switch|p1a: Swampert|Swampert, F|341\/341
+|-status|p1a: Swampert|psn
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Umbreon 6.92|300\/394|[from] item: Leftovers
+|-damage|p1a: Swampert|299\/341 psn|[from] psn
+|turn|9
+|
+|switch|p2a: Cofagrigus 0.91|Cofagrigus, M|319\/319
+|detailschange|p1a: Swampert|Swampert-Mega, F
+|message|Swampert has Mega Evolved into Mega Swampert!
+|move|p1a: Swampert|Waterfall|p2a: Cofagrigus 0.91
+|-damage|p2a: Cofagrigus 0.91|168\/319
+|-endability|p1a: Swampert|swiftswim|[from] Mummy
+|-ability|p1a: Swampert|Mummy|[from] Mummy
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Cofagrigus 0.91|187\/319|[from] item: Leftovers
+|-damage|p1a: Swampert|257\/341 psn|[from] psn
+|turn|10
+|
+|move|p1a: Swampert|Waterfall|p2a: Cofagrigus 0.91
+|-damage|p2a: Cofagrigus 0.91|39\/319
+|move|p2a: Cofagrigus 0.91|Pain Split|p1a: Swampert
+|-sethp|p1a: Swampert|148\/341 psn|p2a: Cofagrigus 0.91|148\/319|[from] move: Pain Split
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Cofagrigus 0.91|167\/319|[from] item: Leftovers
+|-damage|p1a: Swampert|106\/341 psn|[from] psn
+|turn|11
+|
+|move|p1a: Swampert|Waterfall|p2a: Cofagrigus 0.91
+|-damage|p2a: Cofagrigus 0.91|32\/319
+|move|p2a: Cofagrigus 0.91|Toxic Spikes|p1a: Swampert
+|-sidestart|p1: BellyDrumZohan|move: Toxic Spikes
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Cofagrigus 0.91|51\/319|[from] item: Leftovers
+|-damage|p1a: Swampert|64\/341 psn|[from] psn
+|turn|12
+|
+|move|p1a: Swampert|Waterfall|p2a: Cofagrigus 0.91
+|-damage|p2a: Cofagrigus 0.91|0 fnt
+|faint|p2a: Cofagrigus 0.91
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1a: Swampert|22\/341 psn|[from] psn
+|
+|switch|p2a: Sceptile 2.72|Sceptile, M|281\/281
+|turn|13
+|
+|detailschange|p2a: Sceptile 2.72|Sceptile-Mega, M
+|message|Sceptile has Mega Evolved into Mega Sceptile!
+|move|p2a: Sceptile 2.72|Dragon Claw|p1a: Swampert
+|-damage|p1a: Swampert|0 fnt
+|-endability|p2a: Sceptile 2.72|lightningrod|[from] Mummy
+|-ability|p2a: Sceptile 2.72|Mummy|[from] Mummy
+|faint|p1a: Swampert
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p1a: Crobat|Crobat, F|372\/373
+|turn|14
+|
+|switch|p2a: Quagsire 2.92|Quagsire, F|394\/394
+|move|p1a: Crobat|Brave Bird|p2a: Quagsire 2.92
+|-damage|p2a: Quagsire 2.92|285\/394
+|-damage|p1a: Crobat|336\/373|[from] recoil|[of] p2a: Quagsire 2.92
+|
+|-weather|none
+|-heal|p2a: Quagsire 2.92|309\/394|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Crobat|Defog|p2a: Quagsire 2.92
+|-unboost|p2a: Quagsire 2.92|evasion|1
+|-sideend|p1: BellyDrumZohan|Toxic Spikes|[from] move: Defog|[of] p1a: Crobat
+|move|p2a: Quagsire 2.92|Scald|p1a: Crobat
+|-damage|p1a: Crobat|260\/373
+|-status|p1a: Crobat|brn
+|
+|-heal|p2a: Quagsire 2.92|333\/394|[from] item: Leftovers
+|-damage|p1a: Crobat|214\/373 brn|[from] brn
+|turn|16
+|
+|move|p1a: Crobat|Rain Dance|p1a: Crobat
+|-weather|RainDance
+|move|p2a: Quagsire 2.92|Scald|p1a: Crobat
+|-damage|p1a: Crobat|103\/373 brn
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Quagsire 2.92|357\/394|[from] item: Leftovers
+|-damage|p1a: Crobat|57\/373 brn|[from] brn
+|turn|17
+|
+|switch|p1a: Kingdra|Kingdra, M|297\/297
+|switch|p2a: Umbreon 6.92|Umbreon, F|300\/394
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Umbreon 6.92|324\/394|[from] item: Leftovers
+|turn|18
+|
+|switch|p1a: Tornadus|Tornadus, M|67\/299
+|move|p2a: Umbreon 6.92|Wish|p2a: Umbreon 6.92
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Umbreon 6.92|348\/394|[from] item: Leftovers
+|turn|19
+|
+|move|p1a: Tornadus|U-turn|p2a: Umbreon 6.92
+|-supereffective|p2a: Umbreon 6.92
+|-damage|p2a: Umbreon 6.92|238\/394
+|
+|switch|p1a: Kingdra|Kingdra, M|297\/297
+|move|p2a: Umbreon 6.92|Foul Play|p1a: Kingdra
+|-crit|p1a: Kingdra
+|-damage|p1a: Kingdra|170\/297
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Umbreon 6.92|394\/394|[from] move: Wish|[wisher] Umbreon 6.92
+|turn|20
+|
+|move|p1a: Kingdra|Hydro Pump|p2a: Umbreon 6.92
+|-damage|p2a: Umbreon 6.92|144\/394
+|move|p2a: Umbreon 6.92|Foul Play|p1a: Kingdra
+|-damage|p1a: Kingdra|80\/297
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Umbreon 6.92|168\/394|[from] item: Leftovers
+|turn|21
+|
+|move|p2a: Umbreon 6.92|Protect|p2a: Umbreon 6.92
+|-singleturn|p2a: Umbreon 6.92|Protect
+|move|p1a: Kingdra|Hydro Pump|p2a: Umbreon 6.92
+|-activate|p2a: Umbreon 6.92|Protect
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Umbreon 6.92|192\/394|[from] item: Leftovers
+|turn|22
+|
+|switch|p1a: Tornadus|Tornadus, M|67\/299
+|switch|p2a: Gligar 4.58|Gligar, F|334\/334
+|
+|-weather|RainDance|[upkeep]
+|turn|23
+|
+|move|p1a: Tornadus|Hurricane|p2a: Gligar 4.58
+|-damage|p2a: Gligar 4.58|214\/334
+|move|p2a: Gligar 4.58|Stealth Rock|p1a: Tornadus
+|-sidestart|p1: BellyDrumZohan|move: Stealth Rock
+|
+|-weather|none
+|turn|24
+|
+|switch|p2a: Sceptile 2.72|Sceptile-Mega, M|281\/281
+|move|p1a: Tornadus|Rain Dance|p1a: Tornadus
+|-weather|RainDance
+|
+|-weather|RainDance|[upkeep]
+|turn|25
+|
+|move|p2a: Sceptile 2.72|Dragon Claw|p1a: Tornadus
+|-crit|p1a: Tornadus
+|-damage|p1a: Tornadus|0 fnt
+|faint|p1a: Tornadus
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p1a: Kingdra|Kingdra, M|80\/297
+|-damage|p1a: Kingdra|43\/297|[from] Stealth Rock
+|turn|26
+|
+|switch|p2a: Gligar 4.58|Gligar, F|214\/334
+|move|p1a: Kingdra|Ice Beam|p2a: Gligar 4.58
+|-supereffective|p2a: Gligar 4.58
+|-damage|p2a: Gligar 4.58|0 fnt
+|faint|p2a: Gligar 4.58
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p2a: Umbreon 6.92|Umbreon, F|192\/394
+|turn|27
+|
+|move|p1a: Kingdra|Ice Beam|p2a: Umbreon 6.92
+|-damage|p2a: Umbreon 6.92|110\/394
+|move|p2a: Umbreon 6.92|Wish|p2a: Umbreon 6.92
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Umbreon 6.92|134\/394|[from] item: Leftovers
+|turn|28
+|c|âBellyDrumZohan|gg
+|-message|BellyDrumZohan forfeited.
+|
+|win|MegaRango
+|raw|Ladder updating...
+|leave|BellyDrumZohan
+|player|p1
+|raw|BellyDrumZohan's rating: 1501 &rarr; <strong>1478<\/strong><br \/>(-23 for losing)
+|raw|MegaRango's rating: 1461 &rarr; <strong>1483<\/strong><br \/>(+22 for winning)

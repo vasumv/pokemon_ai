@@ -1,0 +1,792 @@
+|join|Shone101
+|join|KnightSansArmour
+|player|p1|Shone101|1
+|player|p2|KnightSansArmour|102
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Noivern, M
+|poke|p1|Hippowdon, F
+|poke|p1|Blastoise, F
+|poke|p1|Hitmontop, M
+|poke|p1|Zapdos
+|poke|p1|Mawile, F
+|poke|p2|Gliscor, M
+|poke|p2|Chansey, F
+|poke|p2|Noivern, F
+|poke|p2|Blastoise, M
+|poke|p2|Zapdos
+|poke|p2|Metagross
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Noivern|Noivern, M|311\/311
+|switch|p2a: Gliscor|Gliscor, M|354\/354
+|-item|p2a: Gliscor|Toxic Orb|[from] ability: Frisk|[of] p1a: Noivern|[identify]
+|turn|1
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Noivern|Hurricane|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-status|p2a: Gliscor|tox|[from] item: Toxic Orb
+|turn|2
+|
+|switch|p1a: Zapdos|Zapdos|383\/383
+|-ability|p1a: Zapdos|Pressure
+|switch|p2a: Chansey|Chansey, F|704\/704
+|
+|turn|3
+|
+|move|p1a: Zapdos|Volt Switch|p2a: Chansey
+|-damage|p2a: Chansey|597\/704
+|-damage|p1a: Zapdos|345\/383|[from] item: Life Orb
+|
+|switch|p1a: Hippowdon|Hippowdon, F|404\/404
+|-weather|Sandstorm
+|move|p2a: Chansey|Toxic|p1a: Hippowdon
+|-status|p1a: Hippowdon|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Chansey|553\/704|[from] Sandstorm
+|-damage|p1a: Hippowdon|379\/404 tox|[from] psn
+|turn|4
+|
+|switch|p2a: Blastoise|Blastoise, M|362\/362
+|move|p1a: Hippowdon|Stealth Rock|p2a: Blastoise
+|-sidestart|p2: KnightSansArmour|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Blastoise|340\/362|[from] Sandstorm
+|-heal|p1a: Hippowdon|404\/404 tox|[from] item: Leftovers
+|-damage|p1a: Hippowdon|354\/404 tox|[from] psn
+|turn|5
+|
+|detailschange|p2a: Blastoise|Blastoise-Mega, M
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Blastoise|Rapid Spin|p1a: Hippowdon
+|-damage|p1a: Hippowdon|340\/404 tox
+|-sideend|p2: KnightSansArmour|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Blastoise
+|move|p1a: Hippowdon|Stealth Rock|p2a: Blastoise
+|-sidestart|p2: KnightSansArmour|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Blastoise|318\/362|[from] Sandstorm
+|-heal|p1a: Hippowdon|365\/404 tox|[from] item: Leftovers
+|-damage|p1a: Hippowdon|290\/404 tox|[from] psn
+|turn|6
+|
+|switch|p1a: Zapdos|Zapdos|345\/383
+|-ability|p1a: Zapdos|Pressure
+|move|p2a: Blastoise|Rapid Spin|p1a: Zapdos
+|-damage|p1a: Zapdos|329\/383
+|-sideend|p2: KnightSansArmour|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Blastoise
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Zapdos|306\/383|[from] Sandstorm
+|-damage|p2a: Blastoise|296\/362|[from] Sandstorm
+|turn|7
+|
+|switch|p2a: Chansey|Chansey, F|553\/704
+|move|p1a: Zapdos|Volt Switch|p2a: Chansey
+|-damage|p2a: Chansey|452\/704
+|-damage|p1a: Zapdos|268\/383|[from] item: Life Orb
+|
+|switch|p1a: Mawile|Mawile, F|284\/284
+|-ability|p1a: Mawile|Intimidate|[of] p2a: Chansey
+|-unboost|p2a: Chansey|atk|1
+|
+|-weather|none
+|turn|8
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354 tox
+|detailschange|p1a: Mawile|Mawile-Mega, F
+|message|Mawile has Mega Evolved into Mega Mawile!
+|move|p1a: Mawile|Play Rough|p2a: Gliscor
+|-damage|p2a: Gliscor|146\/354 tox
+|
+|-heal|p2a: Gliscor|190\/354 tox|[from] ability: Poison Heal
+|turn|9
+|
+|switch|p1a: Blastoise|Blastoise, F|362\/362
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-fail|p2a: Gliscor
+|
+|-heal|p2a: Gliscor|234\/354 tox|[from] ability: Poison Heal
+|turn|10
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Blastoise|Scald|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-heal|p2a: Gliscor|278\/354 tox|[from] ability: Poison Heal
+|turn|11
+|
+|switch|p2a: Chansey|Chansey, F|452\/704
+|move|p1a: Blastoise|Scald|p2a: Chansey
+|-damage|p2a: Chansey|395\/704
+|
+|turn|12
+|
+|switch|p1a: Mawile|Mawile-Mega, F|284\/284
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|704\/704
+|
+|turn|13
+|
+|switch|p2a: Metagross|Metagross|364\/364
+|move|p1a: Mawile|Substitute|p1a: Mawile
+|-start|p1a: Mawile|Substitute
+|-damage|p1a: Mawile|213\/284
+|
+|turn|14
+|
+|move|p2a: Metagross|Earthquake|p1a: Mawile
+|-supereffective|p1a: Mawile
+|-end|p1a: Mawile|Substitute
+|move|p1a: Mawile|Play Rough|p2a: Metagross
+|-resisted|p2a: Metagross
+|-damage|p2a: Metagross|245\/364
+|
+|turn|15
+|
+|move|p1a: Mawile|Sucker Punch|p2a: Metagross
+|-supereffective|p2a: Metagross
+|-damage|p2a: Metagross|0 fnt
+|faint|p2a: Metagross
+|
+|
+|switch|p2a: Zapdos|Zapdos|384\/384
+|-ability|p2a: Zapdos|Pressure
+|turn|16
+|
+|switch|p1a: Hippowdon|Hippowdon, F|290\/404 tox
+|-weather|Sandstorm
+|move|p2a: Zapdos|Heat Wave|p1a: Hippowdon
+|-miss|p2a: Zapdos|p1a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Zapdos|360\/384|[from] Sandstorm
+|-heal|p2a: Zapdos|384\/384|[from] item: Leftovers
+|-heal|p1a: Hippowdon|315\/404 tox|[from] item: Leftovers
+|-damage|p1a: Hippowdon|290\/404 tox|[from] psn
+|turn|17
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|296\/362
+|switch|p1a: Zapdos|Zapdos|268\/383
+|-ability|p1a: Zapdos|Pressure
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Zapdos|245\/383|[from] Sandstorm
+|-damage|p2a: Blastoise|274\/362|[from] Sandstorm
+|turn|18
+|
+|switch|p2a: Gliscor|Gliscor, M|278\/354 tox
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|383\/383
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Zapdos|360\/383|[from] Sandstorm
+|-heal|p2a: Gliscor|322\/354 tox|[from] ability: Poison Heal
+|turn|19
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Zapdos|Heat Wave|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Zapdos|337\/383|[from] Sandstorm
+|-heal|p2a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|turn|20
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|move|p1a: Zapdos|Hidden Power|p2a: Chansey
+|-damage|p2a: Chansey|646\/704
+|-damage|p1a: Zapdos|299\/383|[from] item: Life Orb
+|
+|-weather|none
+|turn|21
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354 tox
+|move|p1a: Zapdos|Volt Switch|p2a: Gliscor
+|-immune|p2a: Gliscor|[msg]
+|
+|turn|22
+|
+|switch|p2a: Chansey|Chansey, F|646\/704
+|move|p1a: Zapdos|Hidden Power|p2a: Chansey
+|-damage|p2a: Chansey|586\/704
+|-damage|p1a: Zapdos|261\/383|[from] item: Life Orb
+|
+|turn|23
+|
+|move|p1a: Zapdos|Volt Switch|p2a: Chansey
+|-damage|p2a: Chansey|481\/704
+|-damage|p1a: Zapdos|223\/383|[from] item: Life Orb
+|
+|switch|p1a: Mawile|Mawile-Mega, F|213\/284
+|move|p2a: Chansey|Toxic|p1a: Mawile
+|-fail|p1a: Mawile
+|
+|turn|24
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354 tox
+|move|p1a: Mawile|Substitute|p1a: Mawile
+|-start|p1a: Mawile|Substitute
+|-damage|p1a: Mawile|142\/284
+|
+|turn|25
+|
+|move|p2a: Gliscor|Substitute|p2a: Gliscor
+|-start|p2a: Gliscor|Substitute
+|-damage|p2a: Gliscor|266\/354 tox
+|move|p1a: Mawile|Substitute|p1a: Mawile
+|-fail|p1a: Mawile|move: Substitute
+|
+|-heal|p2a: Gliscor|310\/354 tox|[from] ability: Poison Heal
+|turn|26
+|
+|move|p2a: Gliscor|Earthquake|p1a: Mawile
+|-supereffective|p1a: Mawile
+|-end|p1a: Mawile|Substitute
+|move|p1a: Mawile|Play Rough|p2a: Gliscor|[miss]
+|-miss|p1a: Mawile|p2a: Gliscor
+|
+|-heal|p2a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|turn|27
+|
+|switch|p1a: Blastoise|Blastoise, F|362\/362
+|move|p2a: Gliscor|Earthquake|p1a: Blastoise
+|-damage|p1a: Blastoise|284\/362
+|
+|-heal|p1a: Blastoise|306\/362|[from] item: Leftovers
+|turn|28
+|
+|move|p2a: Gliscor|Toxic|p1a: Blastoise|[miss]
+|-miss|p2a: Gliscor|p1a: Blastoise
+|move|p1a: Blastoise|Roar|p2a: Gliscor
+|drag|p2a: Noivern|Noivern, F|311\/311
+|
+|-heal|p1a: Blastoise|328\/362|[from] item: Leftovers
+|turn|29
+|
+|switch|p2a: Chansey|Chansey, F|481\/704
+|switch|p1a: Hippowdon|Hippowdon, F|290\/404 tox
+|-weather|Sandstorm
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Chansey|437\/704|[from] Sandstorm
+|-heal|p1a: Hippowdon|315\/404 tox|[from] item: Leftovers
+|-damage|p1a: Hippowdon|290\/404 tox|[from] psn
+|turn|30
+|
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|704\/704
+|move|p1a: Hippowdon|Earthquake|p2a: Chansey
+|-damage|p2a: Chansey|538\/704
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Chansey|494\/704|[from] Sandstorm
+|-heal|p1a: Hippowdon|315\/404 tox|[from] item: Leftovers
+|-damage|p1a: Hippowdon|265\/404 tox|[from] psn
+|turn|31
+|
+|switch|p1a: Hitmontop|Hitmontop, M|242\/242
+|move|p2a: Chansey|Seismic Toss|p1a: Hitmontop
+|-damage|p1a: Hitmontop|142\/242
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Hitmontop|127\/242|[from] Sandstorm
+|-damage|p2a: Chansey|450\/704|[from] Sandstorm
+|turn|32
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354 tox
+|move|p1a: Hitmontop|Close Combat|p2a: Gliscor
+|-resisted|p2a: Gliscor
+|-damage|p2a: Gliscor|280\/354 tox
+|-unboost|p1a: Hitmontop|def|1
+|-unboost|p1a: Hitmontop|spd|1
+|-damage|p1a: Hitmontop|103\/242|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Hitmontop|88\/242|[from] Sandstorm
+|-heal|p2a: Gliscor|324\/354 tox|[from] ability: Poison Heal
+|turn|33
+|
+|switch|p1a: Noivern|Noivern, M|311\/311
+|-item|p2a: Gliscor|Toxic Orb|[from] ability: Frisk|[of] p1a: Noivern|[identify]
+|move|p2a: Gliscor|Substitute|p2a: Gliscor
+|-start|p2a: Gliscor|Substitute
+|-damage|p2a: Gliscor|236\/354 tox
+|
+|-weather|none
+|-heal|p2a: Gliscor|280\/354 tox|[from] ability: Poison Heal
+|turn|34
+|
+|move|p1a: Noivern|Boomburst|p2a: Gliscor
+|-damage|p2a: Gliscor|41\/354 tox
+|move|p2a: Gliscor|Toxic|p1a: Noivern
+|-status|p1a: Noivern|tox
+|
+|-damage|p1a: Noivern|292\/311 tox|[from] psn
+|-heal|p2a: Gliscor|85\/354 tox|[from] ability: Poison Heal
+|turn|35
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Noivern|Boomburst|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-damage|p1a: Noivern|254\/311 tox|[from] psn
+|-heal|p2a: Gliscor|129\/354 tox|[from] ability: Poison Heal
+|turn|36
+|
+|switch|p1a: Hitmontop|Hitmontop, M|88\/242
+|switch|p2a: Chansey|Chansey, F|450\/704
+|
+|turn|37
+|
+|switch|p2a: Gliscor|Gliscor, M|129\/354 tox
+|move|p1a: Hitmontop|Stone Edge|p2a: Gliscor|[miss]
+|-miss|p1a: Hitmontop|p2a: Gliscor
+|
+|-heal|p2a: Gliscor|173\/354 tox|[from] ability: Poison Heal
+|turn|38
+|
+|switch|p1a: Noivern|Noivern, M|254\/311 tox
+|-item|p2a: Gliscor|Toxic Orb|[from] ability: Frisk|[of] p1a: Noivern|[identify]
+|move|p2a: Gliscor|Substitute|p2a: Gliscor
+|-start|p2a: Gliscor|Substitute
+|-damage|p2a: Gliscor|85\/354 tox
+|
+|-damage|p1a: Noivern|235\/311 tox|[from] psn
+|-heal|p2a: Gliscor|129\/354 tox|[from] ability: Poison Heal
+|turn|39
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Noivern|Boomburst|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-damage|p1a: Noivern|197\/311 tox|[from] psn
+|-heal|p2a: Gliscor|173\/354 tox|[from] ability: Poison Heal
+|turn|40
+|
+|switch|p2a: Chansey|Chansey, F|450\/704
+|move|p1a: Noivern|Boomburst|p2a: Chansey
+|-damage|p2a: Chansey|318\/704
+|
+|-damage|p1a: Noivern|140\/311 tox|[from] psn
+|turn|41
+|
+|switch|p1a: Mawile|Mawile-Mega, F|142\/284
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|670\/704
+|
+|turn|42
+|
+|switch|p2a: Zapdos|Zapdos|384\/384
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Mawile|Substitute|p1a: Mawile
+|-start|p1a: Mawile|Substitute
+|-damage|p1a: Mawile|71\/284
+|
+|turn|43
+|
+|move|p2a: Zapdos|Heat Wave|p1a: Mawile
+|-supereffective|p1a: Mawile
+|-end|p1a: Mawile|Substitute
+|move|p1a: Mawile|Pain Split|p2a: Zapdos
+|-sethp|p2a: Zapdos|227\/384|p1a: Mawile|227\/284|[from] move: Pain Split
+|
+|-heal|p2a: Zapdos|251\/384|[from] item: Leftovers
+|turn|44
+|
+|switch|p1a: Hippowdon|Hippowdon, F|265\/404 tox
+|-weather|Sandstorm
+|move|p2a: Zapdos|Heat Wave|p1a: Hippowdon
+|-damage|p1a: Hippowdon|153\/404 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Zapdos|227\/384|[from] Sandstorm
+|-heal|p2a: Zapdos|251\/384|[from] item: Leftovers
+|-heal|p1a: Hippowdon|178\/404 tox|[from] item: Leftovers
+|-damage|p1a: Hippowdon|153\/404 tox|[from] psn
+|turn|45
+|
+|move|p2a: Zapdos|Roost|p2a: Zapdos
+|-heal|p2a: Zapdos|384\/384
+|move|p1a: Hippowdon|Stealth Rock|p2a: Zapdos
+|-sidestart|p2: KnightSansArmour|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Zapdos|360\/384|[from] Sandstorm
+|-heal|p2a: Zapdos|384\/384|[from] item: Leftovers
+|-heal|p1a: Hippowdon|178\/404 tox|[from] item: Leftovers
+|-damage|p1a: Hippowdon|128\/404 tox|[from] psn
+|turn|46
+|
+|switch|p1a: Zapdos|Zapdos|223\/383
+|-ability|p1a: Zapdos|Pressure
+|move|p2a: Zapdos|Defog|p1a: Zapdos
+|-unboost|p1a: Zapdos|evasion|1
+|-sideend|p2: KnightSansArmour|Stealth Rock|[from] move: Defog|[of] p2a: Zapdos
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Zapdos|200\/383|[from] Sandstorm
+|-damage|p2a: Zapdos|360\/384|[from] Sandstorm
+|-heal|p2a: Zapdos|384\/384|[from] item: Leftovers
+|turn|47
+|
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|383\/383
+|move|p2a: Zapdos|Thunderbolt|p1a: Zapdos
+|-resisted|p1a: Zapdos
+|-damage|p1a: Zapdos|297\/383
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Zapdos|274\/383|[from] Sandstorm
+|-damage|p2a: Zapdos|360\/384|[from] Sandstorm
+|-heal|p2a: Zapdos|384\/384|[from] item: Leftovers
+|turn|48
+|
+|switch|p2a: Chansey|Chansey, F|670\/704
+|move|p1a: Zapdos|Hidden Power|p2a: Chansey
+|-damage|p2a: Chansey|605\/704
+|-damage|p1a: Zapdos|236\/383|[from] item: Life Orb
+|
+|-weather|none
+|turn|49
+|
+|move|p1a: Zapdos|Hidden Power|p2a: Chansey
+|-damage|p2a: Chansey|540\/704
+|-damage|p1a: Zapdos|198\/383|[from] item: Life Orb
+|move|p2a: Chansey|Seismic Toss|p1a: Zapdos
+|-damage|p1a: Zapdos|98\/383
+|
+|turn|50
+|
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|290\/383
+|move|p2a: Chansey|Toxic|p1a: Zapdos
+|-status|p1a: Zapdos|tox
+|
+|-damage|p1a: Zapdos|267\/383 tox|[from] psn
+|turn|51
+|
+|move|p1a: Zapdos|Volt Switch|p2a: Chansey
+|-damage|p2a: Chansey|445\/704
+|-damage|p1a: Zapdos|229\/383 tox|[from] item: Life Orb
+|
+|switch|p1a: Mawile|Mawile-Mega, F|227\/284
+|move|p2a: Chansey|Seismic Toss|p1a: Mawile
+|-damage|p1a: Mawile|127\/284
+|
+|turn|52
+|
+|switch|p2a: Noivern|Noivern, F|311\/311
+|move|p1a: Mawile|Substitute|p1a: Mawile
+|-start|p1a: Mawile|Substitute
+|-damage|p1a: Mawile|56\/284
+|
+|turn|53
+|
+|switch|p1a: Blastoise|Blastoise, F|328\/362
+|move|p2a: Noivern|Flamethrower|p1a: Blastoise
+|-resisted|p1a: Blastoise
+|-damage|p1a: Blastoise|263\/362
+|
+|-heal|p1a: Blastoise|285\/362|[from] item: Leftovers
+|turn|54
+|
+|switch|p2a: Chansey|Chansey, F|445\/704
+|switch|p1a: Noivern|Noivern, M|140\/311 tox
+|-item|p2a: Chansey|Eviolite|[from] ability: Frisk|[of] p1a: Noivern|[identify]
+|
+|-damage|p1a: Noivern|121\/311 tox|[from] psn
+|turn|55
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|274\/362
+|move|p1a: Noivern|U-turn|p2a: Blastoise
+|-damage|p2a: Blastoise|243\/362
+|
+|switch|p1a: Zapdos|Zapdos|229\/383 tox
+|-ability|p1a: Zapdos|Pressure
+|
+|-damage|p1a: Zapdos|206\/383 tox|[from] psn
+|turn|56
+|
+|switch|p2a: Gliscor|Gliscor, M|173\/354 tox
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|383\/383 tox
+|
+|-heal|p2a: Gliscor|217\/354 tox|[from] ability: Poison Heal
+|-damage|p1a: Zapdos|337\/383 tox|[from] psn
+|turn|57
+|
+|switch|p1a: Noivern|Noivern, M|121\/311 tox
+|-item|p2a: Gliscor|Toxic Orb|[from] ability: Frisk|[of] p1a: Noivern|[identify]
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-fail|p2a: Gliscor
+|
+|-damage|p1a: Noivern|102\/311 tox|[from] psn
+|-heal|p2a: Gliscor|261\/354 tox|[from] ability: Poison Heal
+|turn|58
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Noivern|Hurricane|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-damage|p1a: Noivern|64\/311 tox|[from] psn
+|-heal|p2a: Gliscor|305\/354 tox|[from] ability: Poison Heal
+|turn|59
+|
+|switch|p2a: Chansey|Chansey, F|445\/704
+|move|p1a: Noivern|Hurricane|p2a: Chansey
+|-damage|p2a: Chansey|303\/704
+|
+|-damage|p1a: Noivern|7\/311 tox|[from] psn
+|turn|60
+|
+|move|p1a: Noivern|Hurricane|p2a: Chansey|[miss]
+|-miss|p1a: Noivern|p2a: Chansey
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|655\/704
+|
+|-damage|p1a: Noivern|0 fnt|[from] psn
+|faint|p1a: Noivern
+|
+|switch|p1a: Mawile|Mawile-Mega, F|56\/284
+|turn|61
+|
+|switch|p2a: Gliscor|Gliscor, M|305\/354 tox
+|move|p1a: Mawile|Pain Split|p2a: Gliscor
+|-sethp|p2a: Gliscor|180\/354 tox|p1a: Mawile|180\/284|[from] move: Pain Split
+|
+|-heal|p2a: Gliscor|224\/354 tox|[from] ability: Poison Heal
+|turn|62
+|
+|switch|p1a: Blastoise|Blastoise, F|285\/362
+|move|p2a: Gliscor|Substitute|p2a: Gliscor
+|-start|p2a: Gliscor|Substitute
+|-damage|p2a: Gliscor|136\/354 tox
+|
+|-heal|p1a: Blastoise|307\/362|[from] item: Leftovers
+|-heal|p2a: Gliscor|180\/354 tox|[from] ability: Poison Heal
+|turn|63
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Blastoise|Roar|p2a: Gliscor
+|drag|p2a: Zapdos|Zapdos|384\/384
+|-ability|p2a: Zapdos|Pressure
+|
+|-heal|p1a: Blastoise|329\/362|[from] item: Leftovers
+|turn|64
+|
+|switch|p1a: Hippowdon|Hippowdon, F|128\/404 tox
+|-weather|Sandstorm
+|move|p2a: Zapdos|Heat Wave|p1a: Hippowdon
+|-damage|p1a: Hippowdon|26\/404 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Zapdos|360\/384|[from] Sandstorm
+|-heal|p2a: Zapdos|384\/384|[from] item: Leftovers
+|-heal|p1a: Hippowdon|51\/404 tox|[from] item: Leftovers
+|-damage|p1a: Hippowdon|26\/404 tox|[from] psn
+|turn|65
+|
+|move|p2a: Zapdos|Heat Wave|p1a: Hippowdon
+|-crit|p1a: Hippowdon
+|-damage|p1a: Hippowdon|0 fnt
+|faint|p1a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Zapdos|360\/384|[from] Sandstorm
+|-heal|p2a: Zapdos|384\/384|[from] item: Leftovers
+|
+|switch|p1a: Hitmontop|Hitmontop, M|88\/242
+|turn|66
+|
+|switch|p2a: Gliscor|Gliscor, M|180\/354 tox
+|move|p1a: Hitmontop|Stone Edge|p2a: Gliscor
+|-damage|p2a: Gliscor|86\/354 tox
+|-damage|p1a: Hitmontop|64\/242|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Hitmontop|49\/242|[from] Sandstorm
+|-heal|p2a: Gliscor|130\/354 tox|[from] ability: Poison Heal
+|turn|67
+|
+|switch|p1a: Blastoise|Blastoise, F|329\/362
+|move|p2a: Gliscor|Substitute|p2a: Gliscor
+|-start|p2a: Gliscor|Substitute
+|-damage|p2a: Gliscor|42\/354 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blastoise|307\/362|[from] Sandstorm
+|-heal|p1a: Blastoise|329\/362|[from] item: Leftovers
+|-heal|p2a: Gliscor|86\/354 tox|[from] ability: Poison Heal
+|turn|68
+|
+|move|p2a: Gliscor|Toxic|p1a: Blastoise
+|-status|p1a: Blastoise|tox
+|move|p1a: Blastoise|Roar|p2a: Gliscor
+|drag|p2a: Noivern|Noivern, F|311\/311
+|
+|-weather|none
+|-heal|p1a: Blastoise|351\/362 tox|[from] item: Leftovers
+|-damage|p1a: Blastoise|329\/362 tox|[from] psn
+|turn|69
+|
+|switch|p2a: Chansey|Chansey, F|655\/704
+|switch|p1a: Mawile|Mawile-Mega, F|180\/284
+|
+|turn|70
+|
+|switch|p2a: Gliscor|Gliscor, M|86\/354 tox
+|move|p1a: Mawile|Play Rough|p2a: Gliscor
+|-damage|p2a: Gliscor|0 fnt
+|faint|p2a: Gliscor
+|
+|
+|switch|p2a: Noivern|Noivern, F|311\/311
+|turn|71
+|
+|switch|p1a: Zapdos|Zapdos|337\/383 tox
+|-ability|p1a: Zapdos|Pressure
+|move|p2a: Noivern|Flamethrower|p1a: Zapdos
+|-damage|p1a: Zapdos|192\/383 tox
+|
+|-damage|p1a: Zapdos|169\/383 tox|[from] psn
+|turn|72
+|
+|switch|p2a: Chansey|Chansey, F|655\/704
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|361\/383 tox
+|
+|-damage|p1a: Zapdos|315\/383 tox|[from] psn
+|turn|73
+|
+|move|p1a: Zapdos|Volt Switch|p2a: Chansey
+|-damage|p2a: Chansey|560\/704
+|-damage|p1a: Zapdos|277\/383 tox|[from] item: Life Orb
+|
+|switch|p1a: Mawile|Mawile-Mega, F|180\/284
+|move|p2a: Chansey|Seismic Toss|p1a: Mawile
+|-damage|p1a: Mawile|80\/284
+|
+|turn|74
+|
+|switch|p2a: Zapdos|Zapdos|384\/384
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Mawile|Pain Split|p2a: Zapdos
+|-sethp|p2a: Zapdos|232\/384|p1a: Mawile|232\/284|[from] move: Pain Split
+|
+|-heal|p2a: Zapdos|256\/384|[from] item: Leftovers
+|turn|75
+|
+|switch|p1a: Zapdos|Zapdos|277\/383 tox
+|-ability|p1a: Zapdos|Pressure
+|move|p2a: Zapdos|Heat Wave|p1a: Zapdos
+|-damage|p1a: Zapdos|155\/383 tox
+|
+|-heal|p2a: Zapdos|280\/384|[from] item: Leftovers
+|-damage|p1a: Zapdos|132\/383 tox|[from] psn
+|turn|76
+|
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|324\/383 tox
+|move|p2a: Zapdos|Roost|p2a: Zapdos
+|-heal|p2a: Zapdos|384\/384
+|
+|-damage|p1a: Zapdos|278\/383 tox|[from] psn
+|turn|77
+|
+|move|p1a: Zapdos|Hidden Power|p2a: Zapdos
+|-supereffective|p2a: Zapdos
+|-damage|p2a: Zapdos|192\/384
+|-damage|p1a: Zapdos|240\/383 tox|[from] item: Life Orb
+|move|p2a: Zapdos|Thunderbolt|p1a: Zapdos
+|-damage|p1a: Zapdos|50\/383 tox
+|
+|-heal|p2a: Zapdos|216\/384|[from] item: Leftovers
+|-damage|p1a: Zapdos|0 fnt|[from] psn
+|faint|p1a: Zapdos
+|
+|switch|p1a: Hitmontop|Hitmontop, M|49\/242
+|turn|78
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|243\/362
+|move|p1a: Hitmontop|Stone Edge|p2a: Blastoise|[miss]
+|-miss|p1a: Hitmontop|p2a: Blastoise
+|
+|turn|79
+|
+|switch|p1a: Blastoise|Blastoise, F|329\/362 tox
+|move|p2a: Blastoise|Aura Sphere|p1a: Blastoise
+|-crit|p1a: Blastoise
+|-damage|p1a: Blastoise|82\/362 tox
+|
+|-heal|p1a: Blastoise|104\/362 tox|[from] item: Leftovers
+|-damage|p1a: Blastoise|82\/362 tox|[from] psn
+|turn|80
+|
+|move|p2a: Blastoise|Aura Sphere|p1a: Blastoise
+|-damage|p1a: Blastoise|0 fnt
+|faint|p1a: Blastoise
+|
+|
+|switch|p1a: Hitmontop|Hitmontop, M|49\/242
+|turn|81
+|
+|move|p1a: Hitmontop|Close Combat|p2a: Blastoise
+|-damage|p2a: Blastoise|51\/362
+|-unboost|p1a: Hitmontop|def|1
+|-unboost|p1a: Hitmontop|spd|1
+|-damage|p1a: Hitmontop|25\/242|[from] item: Life Orb
+|move|p2a: Blastoise|Water Pulse|p1a: Hitmontop
+|-damage|p1a: Hitmontop|0 fnt
+|faint|p1a: Hitmontop
+|
+|
+|switch|p1a: Mawile|Mawile-Mega, F|232\/284
+|turn|82
+|
+|move|p1a: Mawile|Sucker Punch|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|
+|switch|p2a: Noivern|Noivern, F|311\/311
+|turn|83
+|
+|move|p1a: Mawile|Sucker Punch|p2a: Noivern
+|-damage|p2a: Noivern|108\/311
+|move|p2a: Noivern|Flamethrower|p1a: Mawile
+|-supereffective|p1a: Mawile
+|-damage|p1a: Mawile|0 fnt
+|faint|p1a: Mawile
+|
+|win|KnightSansArmour
+|raw|Ladder updating...
+|raw|Shone101's rating: 1631 &rarr; <strong>1608<\/strong><br \/>(-23 for losing)
+|raw|KnightSansArmour's rating: 1584 &rarr; <strong>1607<\/strong><br \/>(+23 for winning)
+|chat|KnightSansArmour|gg
+|chat|Shone101|gg
+|chat|Shone101|wp
+|leave|KnightSansArmour
+|player|p2

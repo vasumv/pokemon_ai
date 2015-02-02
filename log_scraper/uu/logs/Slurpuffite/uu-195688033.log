@@ -1,0 +1,306 @@
+|join|Slurpuffite
+|join|beancount
+|player|p1|Slurpuffite|266
+|player|p2|beancount|1
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Sharpedo, F
+|poke|p1|Shaymin
+|poke|p1|Rotom-Heat
+|poke|p1|Krookodile, M
+|poke|p1|Nidoking, M
+|poke|p1|Jirachi
+|poke|p2|Sharpedo, M
+|poke|p2|Machamp, M
+|poke|p2|Reuniclus, M, shiny
+|poke|p2|Froslass, F
+|poke|p2|Swampert, F
+|poke|p2|Tornadus, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Jirachi|Jirachi|341\/341
+|switch|p2a: Froslass|Froslass, F|344\/344
+|turn|1
+|
+|switch|p2a: Swampert|Swampert, F|403\/403
+|move|p1a: Jirachi|Iron Head|p2a: Swampert
+|-resisted|p2a: Swampert
+|-damage|p2a: Swampert|360\/403
+|
+|-heal|p2a: Swampert|385\/403|[from] item: Leftovers
+|turn|2
+|
+|switch|p1a: Shaymin|Shaymin|403\/403
+|move|p2a: Swampert|Stealth Rock|p1a: Shaymin
+|-sidestart|p1: Slurpuffite|move: Stealth Rock
+|
+|-heal|p2a: Swampert|403\/403|[from] item: Leftovers
+|turn|3
+|
+|switch|p2a: Tornadus|Tornadus, M|299\/299
+|move|p1a: Shaymin|Seed Flare|p2a: Tornadus
+|-resisted|p2a: Tornadus
+|-damage|p2a: Tornadus|190\/299
+|-unboost|p2a: Tornadus|spd|2
+|-boost|p2a: Tornadus|atk|2|[from] ability: Defiant
+|
+|turn|4
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|303\/303
+|-damage|p1a: Rotom-Heat|228\/303|[from] Stealth Rock
+|move|p2a: Tornadus|Acrobatics|p1a: Rotom-Heat
+|-resisted|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|138\/303
+|
+|-heal|p1a: Rotom-Heat|156\/303|[from] item: Leftovers
+|turn|5
+|
+|move|p2a: Tornadus|Knock Off|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|0 fnt
+|-enditem|p1a: Rotom-Heat|Leftovers|[from] move: Knock Off|[of] p2a: Tornadus
+|faint|p1a: Rotom-Heat
+|
+|
+|switch|p1a: Krookodile|Krookodile, M|394\/394
+|-damage|p1a: Krookodile|370\/394|[from] Stealth Rock
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Tornadus
+|-unboost|p2a: Tornadus|atk|1
+|-boost|p2a: Tornadus|atk|2|[from] ability: Defiant
+|turn|6
+|
+|move|p2a: Tornadus|Superpower|p1a: Krookodile
+|-supereffective|p1a: Krookodile
+|-damage|p1a: Krookodile|0 fnt
+|-unboost|p2a: Tornadus|atk|1
+|-unboost|p2a: Tornadus|def|1
+|faint|p1a: Krookodile
+|
+|c|âbeancount|lol
+|
+|switch|p1a: Sharpedo|Sharpedo, F|281\/281
+|-damage|p1a: Sharpedo|246\/281|[from] Stealth Rock
+|turn|7
+|
+|switch|p2a: Machamp|Machamp, M|364\/364
+|move|p1a: Sharpedo|Protect|p1a: Sharpedo
+|-fail|p1a: Sharpedo
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|8
+|
+|switch|p1a: Nidoking|Nidoking, M|304\/304
+|-damage|p1a: Nidoking|285\/304|[from] Stealth Rock
+|move|p2a: Machamp|Close Combat|p1a: Nidoking
+|-resisted|p1a: Nidoking
+|-damage|p1a: Nidoking|141\/304
+|-unboost|p2a: Machamp|def|1
+|-unboost|p2a: Machamp|spd|1
+|
+|turn|9
+|
+|switch|p2a: Froslass|Froslass, F|344\/344
+|move|p1a: Nidoking|Earth Power|p2a: Froslass
+|-damage|p2a: Froslass|75\/344
+|-start|p1a: Nidoking|Disable|Earth Power
+|
+|turn|10
+|
+|switch|p1a: Jirachi|Jirachi|341\/341
+|-damage|p1a: Jirachi|320\/341|[from] Stealth Rock
+|move|p2a: Froslass|Destiny Bond|p2a: Froslass
+|-singlemove|p2a: Froslass|Destiny Bond
+|
+|turn|11
+|
+|move|p1a: Jirachi|Trick|p2a: Froslass
+|-activate|p1a: Jirachi|move: Trick|[of] p2a: Froslass
+|-item|p2a: Froslass|Choice Scarf|[from] move: Trick
+|-item|p1a: Jirachi|Focus Sash|[from] move: Trick
+|move|p2a: Froslass|Spikes|p1a: Jirachi
+|-sidestart|p1: Slurpuffite|Spikes
+|
+|turn|12
+|
+|move|p2a: Froslass|Spikes|p1a: Jirachi
+|-sidestart|p1: Slurpuffite|Spikes
+|move|p1a: Jirachi|Trick|p2a: Froslass
+|-activate|p1a: Jirachi|move: Trick|[of] p2a: Froslass
+|-item|p2a: Froslass|Focus Sash|[from] move: Trick
+|-item|p1a: Jirachi|Choice Scarf|[from] move: Trick
+|
+|turn|13
+|
+|move|p1a: Jirachi|Iron Head|p2a: Froslass
+|-supereffective|p2a: Froslass
+|-damage|p2a: Froslass|0 fnt
+|faint|p2a: Froslass
+|
+|
+|switch|p2a: Swampert|Swampert, F|403\/403
+|turn|14
+|
+|move|p1a: Jirachi|Iron Head|p2a: Swampert
+|-resisted|p2a: Swampert
+|-damage|p2a: Swampert|358\/403
+|cant|p2a: Swampert|flinch
+|
+|-heal|p2a: Swampert|383\/403|[from] item: Leftovers
+|turn|15
+|
+|switch|p1a: Nidoking|Nidoking, M|141\/304
+|-damage|p1a: Nidoking|122\/304|[from] Stealth Rock
+|-damage|p1a: Nidoking|72\/304|[from] Spikes
+|move|p2a: Swampert|Roar|p1a: Nidoking
+|drag|p1a: Jirachi|Jirachi|320\/341
+|-damage|p1a: Jirachi|299\/341|[from] Stealth Rock
+|-damage|p1a: Jirachi|243\/341|[from] Spikes
+|
+|-heal|p2a: Swampert|403\/403|[from] item: Leftovers
+|turn|16
+|
+|move|p1a: Jirachi|Trick|p2a: Swampert
+|-activate|p1a: Jirachi|move: Trick|[of] p2a: Swampert
+|-item|p2a: Swampert|Choice Scarf|[from] move: Trick
+|-item|p1a: Jirachi|Leftovers|[from] move: Trick
+|move|p2a: Swampert|Earthquake|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|faint|p1a: Jirachi
+|
+|c|âSlurpuffite|rofl
+|
+|switch|p1a: Shaymin|Shaymin|403\/403
+|-damage|p1a: Shaymin|336\/403|[from] Spikes
+|-damage|p1a: Shaymin|286\/403|[from] Stealth Rock
+|turn|17
+|c|âbeancount|got predicted
+|c|âSlurpuffite|got countered ;)
+|
+|switch|p2a: Tornadus|Tornadus, M|190\/299
+|move|p1a: Shaymin|Psychic|p2a: Tornadus
+|-damage|p2a: Tornadus|66\/299
+|-enditem|p2a: Tornadus|Sitrus Berry|[eat]
+|-heal|p2a: Tornadus|140\/299|[from] item: Sitrus Berry
+|
+|-heal|p1a: Shaymin|311\/403|[from] item: Leftovers
+|turn|18
+|c|âbeancount|my boy coming through
+|
+|switch|p1a: Nidoking|Nidoking, M|72\/304
+|-damage|p1a: Nidoking|22\/304|[from] Spikes
+|-damage|p1a: Nidoking|3\/304|[from] Stealth Rock
+|move|p2a: Tornadus|Acrobatics|p1a: Nidoking
+|-damage|p1a: Nidoking|0 fnt
+|faint|p1a: Nidoking
+|
+|
+|switch|p1a: Sharpedo|Sharpedo, F|246\/281
+|-damage|p1a: Sharpedo|200\/281|[from] Spikes
+|-damage|p1a: Sharpedo|165\/281|[from] Stealth Rock
+|turn|19
+|
+|move|p1a: Sharpedo|Protect|p1a: Sharpedo
+|-singleturn|p1a: Sharpedo|Protect
+|move|p2a: Tornadus|Agility|p2a: Tornadus
+|-boost|p2a: Tornadus|spe|2
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|20
+|c|âbeancount|hehe
+|c|âSlurpuffite|wow so much counter (Y)
+|c|âSlurpuffite|hahahaha
+|
+|move|p1a: Sharpedo|Protect|p1a: Sharpedo
+|-singleturn|p1a: Sharpedo|Protect
+|move|p2a: Tornadus|Acrobatics|p1a: Sharpedo
+|-activate|p1a: Sharpedo|Protect
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|21
+|
+|move|p1a: Sharpedo|Protect|p1a: Sharpedo
+|-singleturn|p1a: Sharpedo|Protect
+|move|p2a: Tornadus|Acrobatics|p1a: Sharpedo
+|-activate|p1a: Sharpedo|Protect
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|22
+|c|âbeancount|what
+|c|âbeancount|trip protect
+|
+|detailschange|p1a: Sharpedo|Sharpedo-Mega, F
+|message|Sharpedo has Mega Evolved into Mega Sharpedo!
+|move|p1a: Sharpedo|Waterfall|p2a: Tornadus
+|-damage|p2a: Tornadus|0 fnt
+|faint|p2a: Tornadus
+|
+|
+|switch|p2a: Machamp|Machamp, M|364\/364
+|turn|23
+|c|âSlurpuffite|but i need a flinch on machamp to win
+|
+|move|p1a: Sharpedo|Waterfall|p2a: Machamp
+|-damage|p2a: Machamp|166\/364
+|move|p2a: Machamp|Close Combat|p1a: Sharpedo
+|-supereffective|p1a: Sharpedo
+|-damage|p1a: Sharpedo|0 fnt
+|-unboost|p2a: Machamp|def|1
+|-unboost|p2a: Machamp|spd|1
+|faint|p1a: Sharpedo
+|
+|c|âbeancount|nope
+|
+|switch|p1a: Shaymin|Shaymin|311\/403
+|-damage|p1a: Shaymin|261\/403|[from] Stealth Rock
+|-damage|p1a: Shaymin|194\/403|[from] Spikes
+|turn|24
+|
+|move|p1a: Shaymin|Seed Flare|p2a: Machamp
+|-damage|p2a: Machamp|0 fnt
+|faint|p2a: Machamp
+|
+|-heal|p1a: Shaymin|219\/403|[from] item: Leftovers
+|
+|switch|p2a: Sharpedo|Sharpedo, M|281\/281
+|turn|25
+|c|âSlurpuffite|man, i'm trying to peak #15 for an rmt, could u forfeit? y\/n XDDDD
+|
+|move|p2a: Sharpedo|Protect|p2a: Sharpedo
+|-singleturn|p2a: Sharpedo|Protect
+|move|p1a: Shaymin|Seed Flare|p2a: Sharpedo
+|-activate|p2a: Sharpedo|Protect
+|
+|-heal|p1a: Shaymin|244\/403|[from] item: Leftovers
+|-boost|p2a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|26
+|
+|detailschange|p2a: Sharpedo|Sharpedo-Mega, M
+|message|Sharpedo has Mega Evolved into Mega Sharpedo!
+|move|p2a: Sharpedo|Ice Fang|p1a: Shaymin
+|-crit|p1a: Shaymin
+|-supereffective|p1a: Shaymin
+|-damage|p1a: Shaymin|0 fnt
+|faint|p1a: Shaymin
+|
+|win|beancount
+|raw|Ladder updating...
+|raw|Slurpuffite's rating: 1595 &rarr; <strong>1563<\/strong><br \/>(-32 for losing)
+|raw|beancount's rating: 1328 &rarr; <strong>1361<\/strong><br \/>(+33 for winning)
+|c|âbeancount|sorry
+|leave|Slurpuffite
+|player|p1
+|join|Slurpuffite
+|c|âbeancount|clicked too fast

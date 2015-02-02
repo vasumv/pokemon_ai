@@ -1,0 +1,590 @@
+|join|Bob the Bro
+|join|oioirnambe
+|player|p1|Bob the Bro|23
+|player|p2|oioirnambe|247
+|gametype|singles
+|gen|6
+|tier|UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Forretress, F
+|poke|p1|Mienshao, M
+|poke|p1|Hydreigon, F
+|poke|p1|Crobat, F
+|poke|p1|Blissey, F
+|poke|p1|Jellicent, F
+|poke|p2|Blissey, F
+|poke|p2|Granbull, F
+|poke|p2|Slowking, F
+|poke|p2|Rhyperior, F
+|poke|p2|Sableye, M
+|poke|p2|Roserade, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|join|InnovativeUsername
+|join|OverUnderUsed
+|
+|start
+|switch|p1a: Forretress|Forretress, F|354\/354
+|switch|p2a: Sableye|Sableye, M|304\/304
+|turn|1
+|join|hydralord
+|
+|move|p2a: Sableye|Taunt|p1a: Forretress
+|-start|p1a: Forretress|move: Taunt
+|move|p1a: Forretress|Volt Switch|p2a: Sableye
+|-damage|p2a: Sableye|270\/304
+|
+|switch|p1a: Crobat|Crobat, F|325\/325
+|
+|-heal|p2a: Sableye|289\/304|[from] item: Leftovers
+|turn|2
+|
+|move|p2a: Sableye|Taunt|p1a: Crobat
+|-start|p1a: Crobat|move: Taunt
+|cant|p1a: Crobat|move: Taunt|Toxic
+|
+|-heal|p2a: Sableye|304\/304|[from] item: Leftovers
+|turn|3
+|join|Meruu
+|
+|move|p2a: Sableye|Will-O-Wisp|p1a: Crobat
+|-status|p1a: Crobat|brn
+|move|p1a: Crobat|U-turn|p2a: Sableye
+|-damage|p2a: Sableye|264\/304
+|
+|switch|p1a: Jellicent|Jellicent, F|393\/393
+|
+|-heal|p2a: Sableye|283\/304|[from] item: Leftovers
+|turn|4
+|join|OG_Wanka
+|join|silverbackkap
+|
+|move|p2a: Sableye|Taunt|p1a: Jellicent
+|-start|p1a: Jellicent|move: Taunt
+|move|p1a: Jellicent|Scald|p2a: Sableye
+|-damage|p2a: Sableye|198\/304
+|
+|-heal|p2a: Sableye|217\/304|[from] item: Leftovers
+|turn|5
+|join|Kyla's Nightmare
+|
+|move|p1a: Jellicent|Scald|p2a: Sableye
+|-damage|p2a: Sableye|142\/304
+|-status|p2a: Sableye|brn
+|move|p2a: Sableye|Knock Off|p1a: Jellicent
+|-supereffective|p1a: Jellicent
+|-damage|p1a: Jellicent|309\/393
+|-enditem|p1a: Jellicent|Leftovers|[from] move: Knock Off|[of] p2a: Sableye
+|
+|-heal|p2a: Sableye|161\/304 brn|[from] item: Leftovers
+|-damage|p2a: Sableye|123\/304 brn|[from] brn
+|turn|6
+|c| OverUnderUsed|Hai Kyla
+|
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|275\/304 brn
+|move|p1a: Jellicent|Scald|p2a: Sableye
+|-damage|p2a: Sableye|203\/304 brn
+|
+|-heal|p2a: Sableye|222\/304 brn|[from] item: Leftovers
+|-damage|p2a: Sableye|184\/304 brn|[from] brn
+|-end|p1a: Jellicent|move: Taunt
+|turn|7
+|
+|move|p2a: Sableye|Will-O-Wisp|p1a: Jellicent
+|-status|p1a: Jellicent|brn
+|move|p1a: Jellicent|Scald|p2a: Sableye
+|-damage|p2a: Sableye|108\/304 brn
+|
+|-heal|p2a: Sableye|127\/304 brn|[from] item: Leftovers
+|-damage|p1a: Jellicent|260\/393 brn|[from] brn
+|-damage|p2a: Sableye|89\/304 brn|[from] brn
+|turn|8
+|
+|switch|p1a: Mienshao|Mienshao, M|271\/271
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|241\/304 brn
+|
+|-heal|p2a: Sableye|260\/304 brn|[from] item: Leftovers
+|-damage|p2a: Sableye|222\/304 brn|[from] brn
+|turn|9
+|
+|switch|p2a: Granbull|Granbull, F|384\/384
+|-ability|p2a: Granbull|Intimidate|[of] p1a: Mienshao
+|-unboost|p1a: Mienshao|atk|1
+|move|p1a: Mienshao|Knock Off|p2a: Granbull
+|-crit|p2a: Granbull
+|-resisted|p2a: Granbull
+|-damage|p2a: Granbull|261\/384
+|-enditem|p2a: Granbull|Leftovers|[from] move: Knock Off|[of] p1a: Mienshao
+|
+|turn|10
+|
+|switch|p1a: Forretress|Forretress, F|354\/354
+|switch|p2a: Sableye|Sableye, M|222\/304 brn
+|
+|-heal|p2a: Sableye|241\/304 brn|[from] item: Leftovers
+|-damage|p2a: Sableye|203\/304 brn|[from] brn
+|turn|11
+|
+|move|p2a: Sableye|Taunt|p1a: Forretress
+|-start|p1a: Forretress|move: Taunt
+|move|p1a: Forretress|Volt Switch|p2a: Sableye
+|-damage|p2a: Sableye|171\/304 brn
+|
+|switch|p1a: Mienshao|Mienshao, M|271\/271
+|
+|-heal|p2a: Sableye|190\/304 brn|[from] item: Leftovers
+|-damage|p2a: Sableye|152\/304 brn|[from] brn
+|turn|12
+|
+|move|p2a: Sableye|Will-O-Wisp|p1a: Mienshao
+|-status|p1a: Mienshao|brn
+|move|p1a: Mienshao|Knock Off|p2a: Sableye
+|-crit|p2a: Sableye
+|-damage|p2a: Sableye|0 fnt
+|-enditem|p2a: Sableye|Leftovers|[from] move: Knock Off|[of] p1a: Mienshao
+|faint|p2a: Sableye
+|
+|-damage|p1a: Mienshao|238\/271 brn|[from] brn
+|join|Penis of Shrek
+|c| Meruu|rofl bob how do you always get lucky
+|c|âBob the Bro|coz im good
+|c| OverUnderUsed|^
+|c| OG_Wanka|luck>skill
+|
+|switch|p2a: Roserade|Roserade, M|320\/320
+|turn|13
+|c| hydralord|Luck=true skill
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|move|p2a: Roserade|Spikes|p1a: Blissey
+|-sidestart|p1: Bob the Bro|Spikes
+|
+|turn|14
+|c| OG_Wanka|just heal off tht burn latr
+|c| OG_Wanka|ez
+|
+|switch|p2a: Rhyperior|Rhyperior, F|434\/434
+|move|p1a: Blissey|Heal Bell|p1a: Blissey
+|-cureteam|p1a: Blissey|[from] move: HealBell
+|
+|turn|15
+|join|Technosis
+|c| OG_Wanka|there she is
+|
+|switch|p1a: Forretress|Forretress, F|354\/354
+|-damage|p1a: Forretress|310\/354|[from] Spikes
+|move|p2a: Rhyperior|Roar|p1a: Forretress
+|drag|p1a: Jellicent|Jellicent, F|260\/393
+|-damage|p1a: Jellicent|211\/393|[from] Spikes
+|
+|turn|16
+|c| OG_Wanka|Technosis.....the agles
+|c| OG_Wanka|are getiing
+|c| OG_Wanka|pooped on
+|
+|switch|p2a: Roserade|Roserade, M|320\/320
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Roserade
+|-status|p2a: Roserade|brn
+|
+|-damage|p2a: Roserade|280\/320 brn|[from] brn
+|turn|17
+|c| Technosis|yep
+|c| Technosis|tbf tho
+|
+|switch|p2a: Slowking|Slowking, F|394\/394
+|switch|p1a: Crobat|Crobat, F|325\/325
+|
+|turn|18
+|c| Technosis|they had everything working against em
+|c| OG_Wanka|its hard to win at lambou tbh
+|leave|OverUnderUsed
+|
+|move|p1a: Crobat|U-turn|p2a: Slowking
+|-supereffective|p2a: Slowking
+|-damage|p2a: Slowking|280\/394
+|c| OG_Wanka|green bay is too gud at home
+|
+|switch|p1a: Hydreigon|Hydreigon, F|325\/325
+|move|p2a: Slowking|Psyshock|p1a: Hydreigon
+|-immune|p1a: Hydreigon|[msg]
+|
+|-heal|p2a: Slowking|304\/394|[from] item: Leftovers
+|turn|19
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|move|p1a: Hydreigon|U-turn|p2a: Blissey
+|-damage|p2a: Blissey|601\/714
+|c| Technosis|If they were at Lincoln, then it might have been a more even match
+|c| Technosis|oh well
+|c| Technosis|no johns
+|join|Jvasss
+|
+|switch|p1a: Mienshao|Mienshao, M|238\/271
+|-damage|p1a: Mienshao|205\/271|[from] Spikes
+|
+|-heal|p2a: Blissey|645\/714|[from] item: Leftovers
+|turn|20
+|c| OG_Wanka|mark hadnt been playing tbh until the pic 6
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|move|p1a: Mienshao|Knock Off|p2a: Blissey
+|-activate|p2a: Blissey|Protect
+|
+|-heal|p2a: Blissey|689\/714|[from] item: Leftovers
+|turn|21
+|
+|switch|p2a: Granbull|Granbull, F|261\/384
+|-ability|p2a: Granbull|Intimidate|[of] p1a: Mienshao
+|-unboost|p1a: Mienshao|atk|1
+|move|p1a: Mienshao|Knock Off|p2a: Granbull
+|-crit|p2a: Granbull
+|-resisted|p2a: Granbull
+|-damage|p2a: Granbull|176\/384
+|
+|turn|22
+|leave|Meruu
+|
+|switch|p1a: Forretress|Forretress, F|310\/354
+|-damage|p1a: Forretress|266\/354|[from] Spikes
+|move|p2a: Granbull|Roar|p1a: Forretress
+|drag|p1a: Mienshao|Mienshao, M|205\/271
+|-damage|p1a: Mienshao|172\/271|[from] Spikes
+|
+|turn|23
+|c|âBob the Bro|ez crits
+|join|Meruu
+|
+|move|p1a: Mienshao|High Jump Kick|p2a: Granbull
+|-resisted|p2a: Granbull
+|-damage|p2a: Granbull|0 fnt
+|faint|p2a: Granbull
+|
+|c| OG_Wanka|rip
+|
+|switch|p2a: Slowking|Slowking, F|394\/394
+|turn|24
+|c|âBob the Bro|ez
+|join|thymetime
+|join|TheManOfMany23
+|join|SmashBrosBrawl
+|c| OG_Wanka|fkin bopped
+|
+|switch|p1a: Hydreigon|Hydreigon, F|325\/325
+|move|p2a: Slowking|Calm Mind|p2a: Slowking
+|-boost|p2a: Slowking|spa|1
+|-boost|p2a: Slowking|spd|1
+|
+|turn|25
+|c| Technosis|ripip
+|
+|move|p1a: Hydreigon|U-turn|p2a: Slowking
+|-supereffective|p2a: Slowking
+|-damage|p2a: Slowking|294\/394
+|leave|SmashBrosBrawl
+|
+|switch|p1a: Forretress|Forretress, F|266\/354
+|-damage|p1a: Forretress|222\/354|[from] Spikes
+|move|p2a: Slowking|Calm Mind|p2a: Slowking
+|-boost|p2a: Slowking|spa|1
+|-boost|p2a: Slowking|spd|1
+|
+|-heal|p2a: Slowking|318\/394|[from] item: Leftovers
+|-heal|p1a: Forretress|244\/354|[from] item: Leftovers
+|turn|26
+|join|SmashBrosBrawl
+|join|blitzfiend
+|
+|move|p2a: Slowking|Scald|p1a: Forretress
+|-damage|p1a: Forretress|0 fnt
+|faint|p1a: Forretress
+|
+|-heal|p2a: Slowking|342\/394|[from] item: Leftovers
+|leave|blitzfiend
+|c| TheManOfMany23|rip
+|
+|switch|p1a: Crobat|Crobat, F|325\/325
+|turn|27
+|
+|move|p1a: Crobat|Toxic|p2a: Slowking
+|-status|p2a: Slowking|tox
+|move|p2a: Slowking|Psyshock|p1a: Crobat
+|-supereffective|p1a: Crobat
+|-damage|p1a: Crobat|0 fnt
+|faint|p1a: Crobat
+|
+|-heal|p2a: Slowking|366\/394 tox|[from] item: Leftovers
+|-damage|p2a: Slowking|342\/394 tox|[from] psn
+|c| OG_Wanka|w8 how did he out pace forry
+|
+|switch|p1a: Jellicent|Jellicent, F|211\/393
+|-damage|p1a: Jellicent|162\/393|[from] Spikes
+|turn|28
+|
+|switch|p2a: Blissey|Blissey, F|689\/714
+|move|p1a: Jellicent|Recover|p1a: Jellicent
+|-heal|p1a: Jellicent|359\/393
+|
+|-heal|p2a: Blissey|714\/714|[from] item: Leftovers
+|turn|29
+|c|âBob the Bro|forgot forry is min speed
+|c| Meruu|gyro ball forry
+|
+|move|p1a: Jellicent|Taunt|p2a: Blissey
+|-start|p2a: Blissey|move: Taunt
+|cant|p2a: Blissey|move: Taunt|Heal Bell
+|
+|turn|30
+|c| OG_Wanka|ic ic
+|c| TheManOfMany23|why did you switch out?
+|
+|switch|p2a: Roserade|Roserade, M|280\/320
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Roserade
+|-status|p2a: Roserade|brn
+|
+|-heal|p2a: Roserade|300\/320 brn|[from] item: Black Sludge
+|-damage|p2a: Roserade|260\/320 brn|[from] brn
+|turn|31
+|c| TheManOfMany23|noooo
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|-damage|p1a: Blissey|625\/714|[from] Spikes
+|move|p2a: Roserade|Toxic Spikes|p1a: Blissey
+|-sidestart|p1: Bob the Bro|move: Toxic Spikes
+|
+|-heal|p2a: Roserade|280\/320 brn|[from] item: Black Sludge
+|-heal|p1a: Blissey|669\/714|[from] item: Leftovers
+|-damage|p2a: Roserade|240\/320 brn|[from] brn
+|turn|32
+|c| Meruu|ooooooo
+|
+|move|p2a: Roserade|Toxic Spikes|p1a: Blissey
+|-sidestart|p1: Bob the Bro|move: Toxic Spikes
+|move|p1a: Blissey|Wish|p1a: Blissey
+|
+|-heal|p2a: Roserade|260\/320 brn|[from] item: Black Sludge
+|-heal|p1a: Blissey|713\/714|[from] item: Leftovers
+|-damage|p2a: Roserade|220\/320 brn|[from] brn
+|turn|33
+|
+|move|p2a: Roserade|Spikes|p1a: Blissey
+|-sidestart|p1: Bob the Bro|Spikes
+|move|p1a: Blissey|Seismic Toss|p2a: Roserade
+|-damage|p2a: Roserade|120\/320 brn
+|
+|-heal|p1a: Blissey|714\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p2a: Roserade|140\/320 brn|[from] item: Black Sludge
+|-damage|p2a: Roserade|100\/320 brn|[from] brn
+|turn|34
+|
+|switch|p2a: Rhyperior|Rhyperior, F|434\/434
+|move|p1a: Blissey|Wish|p1a: Blissey
+|
+|turn|35
+|
+|switch|p1a: Hydreigon|Hydreigon, F|325\/325
+|move|p2a: Rhyperior|Stealth Rock|p1a: Hydreigon
+|-sidestart|p1: Bob the Bro|move: Stealth Rock
+|
+|turn|36
+|c| TheManOfMany23|lol
+|c|âoioirnambe|when in doubt, hazard stack
+|c| Technosis|Hazards r in
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|move|p1a: Hydreigon|U-turn|p2a: Blissey
+|-damage|p2a: Blissey|611\/714
+|c| TheManOfMany23|hydreigon used defog
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|-damage|p1a: Blissey|625\/714|[from] Stealth Rock
+|-status|p1a: Blissey|tox
+|-damage|p1a: Blissey|506\/714 tox|[from] Spikes
+|
+|-heal|p2a: Blissey|655\/714|[from] item: Leftovers
+|-heal|p1a: Blissey|550\/714 tox|[from] item: Leftovers
+|-damage|p1a: Blissey|506\/714 tox|[from] psn
+|turn|37
+|c| Meruu|that
+|
+|move|p2a: Blissey|Heal Bell|p2a: Blissey
+|-cureteam|p2a: Blissey|[from] move: HealBell
+|move|p1a: Blissey|Wish|p1a: Blissey
+|
+|-heal|p1a: Blissey|550\/714 tox|[from] item: Leftovers
+|-heal|p2a: Blissey|699\/714|[from] item: Leftovers
+|-damage|p1a: Blissey|462\/714 tox|[from] psn
+|turn|38
+|c| Meruu|why not go to shao
+|c| Meruu|o.0
+|c| hydralord|Hydreigon can't defog
+|
+|switch|p1a: Mienshao|Mienshao, M|172\/271
+|-status|p1a: Mienshao|tox
+|-damage|p1a: Mienshao|156\/271 tox|[from] Stealth Rock
+|-damage|p1a: Mienshao|111\/271 tox|[from] Spikes
+|move|p2a: Blissey|Seismic Toss|p1a: Mienshao
+|-damage|p1a: Mienshao|11\/271 tox
+|
+|-heal|p1a: Mienshao|271\/271 tox|[from] move: Wish|[wisher] Blissey
+|-heal|p2a: Blissey|714\/714|[from] item: Leftovers
+|-damage|p1a: Mienshao|255\/271 tox|[from] psn
+|turn|39
+|c| hydralord|O.o
+|c| TheManOfMany23|oh
+|c| OG_Wanka|o.O
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|move|p1a: Mienshao|Knock Off|p2a: Blissey
+|-activate|p2a: Blissey|Protect
+|
+|-damage|p1a: Mienshao|223\/271 tox|[from] psn
+|turn|40
+|c| hydralord|lmao he's stuck with hazards
+|join|dyn
+|
+|move|p1a: Mienshao|Knock Off|p2a: Blissey
+|-damage|p2a: Blissey|357\/714
+|-enditem|p2a: Blissey|Leftovers|[from] move: Knock Off|[of] p1a: Mienshao
+|move|p2a: Blissey|Seismic Toss|p1a: Mienshao
+|-damage|p1a: Mienshao|123\/271 tox
+|
+|-damage|p1a: Mienshao|75\/271 tox|[from] psn
+|turn|41
+|c| Jvasss|cos it is gen 5 min
+|
+|switch|p1a: Blissey|Blissey, F|462\/714
+|-status|p1a: Blissey|tox
+|-damage|p1a: Blissey|343\/714 tox|[from] Spikes
+|-damage|p1a: Blissey|254\/714 tox|[from] Stealth Rock
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p1a: Blissey|298\/714 tox|[from] item: Leftovers
+|-damage|p1a: Blissey|254\/714 tox|[from] psn
+|turn|42
+|c| TheManOfMany23|interesting
+|leave|Technosis
+|
+|move|p1a: Blissey|Wish|p1a: Blissey
+|move|p2a: Blissey|Seismic Toss|p1a: Blissey
+|-damage|p1a: Blissey|154\/714 tox
+|
+|-heal|p2a: Blissey|714\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Blissey|198\/714 tox|[from] item: Leftovers
+|-damage|p1a: Blissey|110\/714 tox|[from] psn
+|turn|43
+|join|DrReuniclus387
+|join|tuRkizzles
+|
+|switch|p2a: Slowking|Slowking, F|394\/394
+|move|p1a: Blissey|Seismic Toss|p2a: Slowking
+|-damage|p2a: Slowking|294\/394
+|
+|-heal|p1a: Blissey|467\/714 tox|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Blissey|511\/714 tox|[from] item: Leftovers
+|-heal|p2a: Slowking|318\/394|[from] item: Leftovers
+|-damage|p1a: Blissey|379\/714 tox|[from] psn
+|turn|44
+|
+|switch|p1a: Hydreigon|Hydreigon, F|325\/325
+|-damage|p1a: Hydreigon|285\/325|[from] Stealth Rock
+|move|p2a: Slowking|Calm Mind|p2a: Slowking
+|-boost|p2a: Slowking|spa|1
+|-boost|p2a: Slowking|spd|1
+|
+|-heal|p2a: Slowking|342\/394|[from] item: Leftovers
+|turn|45
+|
+|move|p1a: Hydreigon|Dark Pulse|p2a: Slowking
+|-supereffective|p2a: Slowking
+|-damage|p2a: Slowking|184\/394
+|move|p2a: Slowking|Slack Off|p2a: Slowking
+|-heal|p2a: Slowking|381\/394
+|
+|-heal|p2a: Slowking|394\/394|[from] item: Leftovers
+|turn|46
+|c| Meruu|inb4 bob gets his usual crit
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|move|p1a: Hydreigon|Dark Pulse|p2a: Blissey
+|-damage|p2a: Blissey|614\/714
+|
+|turn|47
+|
+|switch|p1a: Jellicent|Jellicent, F|359\/393
+|-damage|p1a: Jellicent|294\/393|[from] Spikes
+|-damage|p1a: Jellicent|245\/393|[from] Stealth Rock
+|-status|p1a: Jellicent|tox
+|move|p2a: Blissey|Seismic Toss|p1a: Jellicent
+|-immune|p1a: Jellicent|[msg]
+|
+|-damage|p1a: Jellicent|221\/393 tox|[from] psn
+|turn|48
+|c| TheManOfMany23|hydreigon used superpower
+|c| Meruu|get dat last spike
+|
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Blissey
+|-status|p2a: Blissey|brn
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-damage|p1a: Jellicent|173\/393 tox|[from] psn
+|-damage|p2a: Blissey|525\/714 brn|[from] brn
+|turn|49
+|c| Meruu|bop
+|
+|switch|p1a: Mienshao|Mienshao, M|75\/271 tox
+|-damage|p1a: Mienshao|30\/271 tox|[from] Spikes
+|-damage|p1a: Mienshao|14\/271 tox|[from] Stealth Rock
+|switch|p2a: Roserade|Roserade, M|100\/320
+|
+|-heal|p2a: Roserade|320\/320|[from] move: Wish|[wisher] Blissey
+|-damage|p1a: Mienshao|0 fnt|[from] psn
+|faint|p1a: Mienshao
+|c| Meruu|also the karma of bob losing to stall
+|c| Meruu|lollllllllllllllllllllllllllll
+|c|âBob the Bro|o rip
+|c|âBob the Bro|forgot
+|c| TheManOfMany23|that is not a stall team
+|-message|Bob the Bro forfeited.
+|
+|win|oioirnambe
+|c|âoioirnambe|gg
+|c| Meruu|wot
+|leave|hydralord
+|leave|thymetime
+|c| Meruu|blissey\/slowking\/double spike rose
+|c| Meruu|isnt stall?
+|c| Meruu|granbull
+|leave|Bob the Bro
+|player|p1
+|c| Meruu|sableye
+|c| Meruu|rhyperior
+|c| Meruu|????????????????
+|c| TheManOfMany23|good point
+|c|âoioirnambe|I consider it stall
+|c|âoioirnambe|but whatever
+|leave|dyn
+|leave|Meruu
+|leave|TheManOfMany23
+|leave|DrReuniclus387
+|leave|Kyla's Nightmare
+|leave|InnovativeUsername
+|leave|tuRkizzles
+|leave|Penis of Shrek
+|leave|silverbackkap
+|leave|oioirnambe
+|player|p2
+|join|oioirnambe
+|leave|Jvasss
+|leave|SmashBrosBrawl

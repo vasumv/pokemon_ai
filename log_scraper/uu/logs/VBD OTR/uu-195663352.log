@@ -1,0 +1,234 @@
+|join|VBD OTR
+|join|benatho
+|player|p1|VBD OTR|126
+|player|p2|benatho|17
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Dragalge, F
+|poke|p1|Krookodile, F
+|poke|p1|Tentacruel, M
+|poke|p1|Darmanitan, M
+|poke|p1|Abomasnow, M
+|poke|p1|Florges, F
+|poke|p2|Absol, F
+|poke|p2|Lanturn, M
+|poke|p2|Amoonguss, M
+|poke|p2|Quagsire, M
+|poke|p2|Hydreigon, M
+|poke|p2|Hitmontop, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Dragalge|Dragalge, F|292\/292
+|switch|p2a: Hydreigon|Hydreigon, M|325\/325
+|turn|1
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Hydreigon|Draco Meteor|p1a: Florges
+|-immune|p1a: Florges|[msg]
+|
+|turn|2
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|switch|p1a: Dragalge|Dragalge, F|292\/292
+|
+|turn|3
+|
+|switch|p2a: Hydreigon|Hydreigon, M|325\/325
+|move|p1a: Dragalge|Draco Meteor|p2a: Hydreigon
+|-supereffective|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|-unboost|p1a: Dragalge|spa|2
+|faint|p2a: Hydreigon
+|
+|
+|switch|p2a: Quagsire|Quagsire, M|394\/394
+|turn|4
+|
+|move|p1a: Dragalge|Draco Meteor|p2a: Quagsire
+|-damage|p2a: Quagsire|120\/394
+|-unboost|p1a: Dragalge|spa|2
+|move|p2a: Quagsire|Earth Power|p1a: Dragalge
+|-supereffective|p1a: Dragalge
+|-damage|p1a: Dragalge|158\/292
+|
+|turn|5
+|
+|switch|p2a: Absol|Absol, F|334\/334
+|move|p1a: Dragalge|Draco Meteor|p2a: Absol
+|-damage|p2a: Absol|190\/334
+|-unboost|p1a: Dragalge|spa|2
+|
+|turn|6
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|detailschange|p2a: Absol|Absol-Mega, F
+|message|Absol has Mega Evolved into Mega Absol!
+|move|p2a: Absol|Knock Off|p1a: Florges
+|-resisted|p1a: Florges
+|-damage|p1a: Florges|272\/360
+|-enditem|p1a: Florges|Leftovers|[from] move: Knock Off|[of] p2a: Absol
+|
+|turn|7
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|move|p1a: Florges|Moonblast|p2a: Amoonguss
+|-resisted|p2a: Amoonguss
+|-damage|p2a: Amoonguss|379\/432
+|
+|turn|8
+|
+|switch|p1a: Tentacruel|Tentacruel, M|361\/361
+|move|p2a: Amoonguss|Giga Drain|p1a: Tentacruel
+|-damage|p1a: Tentacruel|267\/361
+|-damage|p2a: Amoonguss|332\/432|[from] ability: Liquid Ooze|[of] p1a: Tentacruel
+|
+|-heal|p1a: Tentacruel|289\/361|[from] item: Black Sludge
+|turn|9
+|
+|switch|p2a: Lanturn|Lanturn, M|454\/454
+|move|p1a: Tentacruel|Toxic Spikes|p2a: Lanturn
+|-sidestart|p2: benatho|move: Toxic Spikes
+|
+|-heal|p1a: Tentacruel|311\/361|[from] item: Black Sludge
+|turn|10
+|
+|switch|p1a: Krookodile|Krookodile, F|331\/331
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Lanturn
+|-unboost|p2a: Lanturn|atk|1
+|move|p2a: Lanturn|Scald|p1a: Krookodile
+|-supereffective|p1a: Krookodile
+|-damage|p1a: Krookodile|41\/331
+|
+|turn|11
+|
+|move|p1a: Krookodile|Earthquake|p2a: Lanturn
+|-supereffective|p2a: Lanturn
+|-damage|p2a: Lanturn|0 fnt
+|faint|p2a: Lanturn
+|
+|
+|switch|p2a: Hitmontop|Hitmontop, M|304\/304
+|-status|p2a: Hitmontop|psn
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Krookodile
+|-unboost|p1a: Krookodile|atk|1
+|turn|12
+|
+|move|p2a: Hitmontop|Mach Punch|p1a: Krookodile
+|-supereffective|p1a: Krookodile
+|-damage|p1a: Krookodile|0 fnt
+|faint|p1a: Krookodile
+|
+|-damage|p2a: Hitmontop|266\/304 psn|[from] psn
+|
+|switch|p1a: Dragalge|Dragalge, F|158\/292
+|turn|13
+|
+|move|p2a: Hitmontop|Rapid Spin|p1a: Dragalge
+|-damage|p1a: Dragalge|133\/292
+|-sideend|p2: benatho|Toxic Spikes|[from] move: Rapid Spin|[of] p2a: Hitmontop
+|move|p1a: Dragalge|Sludge Wave|p2a: Hitmontop
+|-crit|p2a: Hitmontop
+|-damage|p2a: Hitmontop|0 fnt
+|faint|p2a: Hitmontop
+|
+|
+|switch|p2a: Absol|Absol-Mega, F|190\/334
+|turn|14
+|
+|switch|p1a: Florges|Florges, F|272\/360
+|move|p2a: Absol|Knock Off|p1a: Florges
+|-resisted|p1a: Florges
+|-damage|p1a: Florges|218\/360
+|
+|turn|15
+|
+|switch|p1a: Dragalge|Dragalge, F|133\/292
+|move|p2a: Absol|Knock Off|p1a: Dragalge
+|-damage|p1a: Dragalge|0 fnt
+|-enditem|p1a: Dragalge|Choice Specs|[from] move: Knock Off|[of] p2a: Absol
+|faint|p1a: Dragalge
+|
+|
+|switch|p1a: Darmanitan|Darmanitan, M|351\/351
+|turn|16
+|
+|switch|p2a: Quagsire|Quagsire, M|120\/394
+|move|p1a: Darmanitan|U-turn|p2a: Quagsire
+|-damage|p2a: Quagsire|47\/394
+|-damage|p1a: Darmanitan|293\/351|[from] item: Rocky Helmet|[of] p2a: Quagsire
+|
+|switch|p1a: Abomasnow|Abomasnow, M|384\/384
+|
+|turn|17
+|
+|detailschange|p1a: Abomasnow|Abomasnow-Mega, M
+|message|Abomasnow has Mega Evolved into Mega Abomasnow!
+|-weather|Hail
+|move|p1a: Abomasnow|Swords Dance|p1a: Abomasnow
+|-boost|p1a: Abomasnow|atk|2
+|move|p2a: Quagsire|Recover|p2a: Quagsire
+|-heal|p2a: Quagsire|244\/394
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Quagsire|220\/394|[from] hail
+|turn|18
+|
+|move|p2a: Quagsire|Toxic|p1a: Abomasnow
+|-status|p1a: Abomasnow|tox
+|move|p1a: Abomasnow|Seed Bomb|p2a: Quagsire
+|-supereffective|p2a: Quagsire
+|-damage|p2a: Quagsire|0 fnt
+|faint|p2a: Quagsire
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Abomasnow|360\/384 tox|[from] psn
+|
+|switch|p2a: Absol|Absol-Mega, F|190\/334
+|turn|19
+|
+|move|p1a: Abomasnow|Ice Shard|p2a: Absol
+|-damage|p2a: Absol|0 fnt
+|faint|p2a: Absol
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Abomasnow|312\/384 tox|[from] psn
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|turn|20
+|
+|move|p1a: Abomasnow|Ice Shard|p2a: Amoonguss
+|-supereffective|p2a: Amoonguss
+|-damage|p2a: Amoonguss|36\/432
+|move|p2a: Amoonguss|Sludge Bomb|p1a: Abomasnow
+|-supereffective|p1a: Abomasnow
+|-damage|p1a: Abomasnow|78\/384 tox
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Amoonguss|9\/432|[from] hail
+|-damage|p1a: Abomasnow|6\/384 tox|[from] psn
+|turn|21
+|c|âVBD OTR|gg
+|c|âbenatho|gg
+|
+|move|p1a: Abomasnow|Ice Shard|p2a: Amoonguss
+|-supereffective|p2a: Amoonguss
+|-damage|p2a: Amoonguss|0 fnt
+|faint|p2a: Amoonguss
+|
+|win|VBD OTR
+|raw|Ladder updating...
+|raw|VBD OTR's rating: 1357 &rarr; <strong>1369<\/strong><br \/>(+12 for winning)
+|raw|benatho's rating: 1205 &rarr; <strong>1190<\/strong><br \/>(-15 for losing)

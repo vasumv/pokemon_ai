@@ -1,0 +1,555 @@
+|join|Bob the Bro
+|join|Latios pls
+|player|p1|Bob the Bro|23
+|player|p2|Latios pls|217
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Zygarde
+|poke|p1|Aggron, M
+|poke|p1|Forretress, M
+|poke|p1|Jellicent, M
+|poke|p1|Blissey, F
+|poke|p1|Aromatisse, M
+|poke|p2|Rhyperior, F
+|poke|p2|Toxicroak, F
+|poke|p2|Jirachi
+|poke|p2|Shaymin
+|poke|p2|Crobat, M
+|poke|p2|Blastoise, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|c|âLatios pls|oml disgusting stall :(
+|
+|start
+|switch|p1a: Transformer|Forretress, M|354\/354
+|switch|p2a: Shaymin|Shaymin|341\/341
+|turn|1
+|
+|switch|p2a: Blastoise|Blastoise, F|322\/322
+|move|p1a: Transformer|Toxic|p2a: Blastoise
+|-status|p2a: Blastoise|tox
+|
+|-damage|p2a: Blastoise|302\/322 tox|[from] psn
+|turn|2
+|
+|switch|p1a: Sham|Blissey, F|714\/714
+|detailschange|p2a: Blastoise|Blastoise-Mega, F
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Blastoise|Aura Sphere|p1a: Sham
+|-supereffective|p1a: Sham
+|-damage|p1a: Sham|464\/714
+|
+|-heal|p1a: Sham|508\/714|[from] item: Leftovers
+|-damage|p2a: Blastoise|262\/322 tox|[from] psn
+|turn|3
+|
+|switch|p2a: Toxicroak|Toxicroak, F|307\/307
+|move|p1a: Sham|Wish|p1a: Sham
+|
+|-heal|p1a: Sham|552\/714|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Bee|Jellicent, M|394\/394
+|move|p2a: Toxicroak|Gunk Shot|p1a: Bee
+|-resisted|p1a: Bee
+|-damage|p1a: Bee|246\/394
+|-damage|p2a: Toxicroak|277\/307|[from] item: Life Orb
+|
+|-heal|p1a: Bee|394\/394|[from] move: Wish|[wisher] Sham
+|turn|5
+|
+|switch|p2a: Shaymin|Shaymin|341\/341
+|move|p1a: Bee|Will-O-Wisp|p2a: Shaymin
+|-status|p2a: Shaymin|brn
+|
+|-damage|p2a: Shaymin|299\/341 brn|[from] brn
+|turn|6
+|
+|switch|p1a: Transformer|Forretress, M|354\/354
+|move|p2a: Shaymin|Leech Seed|p1a: Transformer
+|-start|p1a: Transformer|move: Leech Seed
+|
+|-heal|p2a: Shaymin|320\/341 brn|[from] item: Leftovers
+|-damage|p1a: Transformer|310\/354|[from] Leech Seed|[of] p2a: Shaymin
+|-heal|p2a: Shaymin|341\/341 brn|[silent]
+|-damage|p2a: Shaymin|299\/341 brn|[from] brn
+|turn|7
+|
+|move|p2a: Shaymin|Air Slash|p1a: Transformer
+|-damage|p1a: Transformer|187\/354
+|cant|p1a: Transformer|flinch
+|
+|-heal|p2a: Shaymin|320\/341 brn|[from] item: Leftovers
+|-heal|p1a: Transformer|209\/354|[from] item: Leftovers
+|-damage|p1a: Transformer|165\/354|[from] Leech Seed|[of] p2a: Shaymin
+|-heal|p2a: Shaymin|341\/341 brn|[silent]
+|-damage|p2a: Shaymin|299\/341 brn|[from] brn
+|turn|8
+|
+|switch|p1a: Sham|Blissey, F|552\/714
+|move|p2a: Shaymin|Seed Flare|p1a: Sham
+|-damage|p1a: Sham|411\/714
+|
+|-heal|p2a: Shaymin|320\/341 brn|[from] item: Leftovers
+|-heal|p1a: Sham|455\/714|[from] item: Leftovers
+|-damage|p2a: Shaymin|278\/341 brn|[from] brn
+|turn|9
+|
+|switch|p2a: Toxicroak|Toxicroak, F|277\/307
+|move|p1a: Sham|Wish|p1a: Sham
+|
+|-heal|p1a: Sham|499\/714|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Transformer|Forretress, M|165\/354
+|move|p2a: Toxicroak|Swords Dance|p2a: Toxicroak
+|-boost|p2a: Toxicroak|atk|2
+|
+|-heal|p1a: Transformer|354\/354|[from] move: Wish|[wisher] Sham
+|turn|11
+|
+|move|p2a: Toxicroak|Drain Punch|p1a: Transformer
+|-damage|p1a: Transformer|158\/354
+|-heal|p2a: Toxicroak|307\/307|[from] drain|[of] p1a: Transformer
+|-damage|p2a: Toxicroak|277\/307|[from] item: Life Orb
+|move|p1a: Transformer|Volt Switch|p2a: Toxicroak
+|-damage|p2a: Toxicroak|222\/307
+|
+|switch|p1a: Fabled Tortoise|Aggron, M|344\/344
+|
+|turn|12
+|
+|switch|p2a: Blastoise|Blastoise-Mega, F|262\/322 tox
+|detailschange|p1a: Fabled Tortoise|Aggron-Mega, M
+|message|Aggron has Mega Evolved into Mega Aggron!
+|move|p1a: Fabled Tortoise|Metal Burst|p2a: Blastoise
+|-fail|p2a: Blastoise
+|
+|-damage|p2a: Blastoise|242\/322 tox|[from] psn
+|turn|13
+|
+|switch|p1a: Sham|Blissey, F|499\/714
+|move|p2a: Blastoise|Aura Sphere|p1a: Sham
+|-supereffective|p1a: Sham
+|-damage|p1a: Sham|243\/714
+|
+|-heal|p1a: Sham|287\/714|[from] item: Leftovers
+|-damage|p2a: Blastoise|202\/322 tox|[from] psn
+|turn|14
+|
+|switch|p2a: Toxicroak|Toxicroak, F|222\/307
+|move|p1a: Sham|Wish|p1a: Sham
+|
+|-heal|p1a: Sham|331\/714|[from] item: Leftovers
+|turn|15
+|
+|switch|p1a: Transformer|Forretress, M|158\/354
+|move|p2a: Toxicroak|Swords Dance|p2a: Toxicroak
+|-boost|p2a: Toxicroak|atk|2
+|
+|-heal|p1a: Transformer|354\/354|[from] move: Wish|[wisher] Sham
+|turn|16
+|
+|switch|p1a: Bee|Jellicent, M|394\/394
+|move|p2a: Toxicroak|Gunk Shot|p1a: Bee
+|-resisted|p1a: Bee
+|-damage|p1a: Bee|94\/394
+|-damage|p2a: Toxicroak|192\/307|[from] item: Life Orb
+|
+|-heal|p1a: Bee|118\/394|[from] item: Leftovers
+|turn|17
+|
+|move|p2a: Toxicroak|Gunk Shot|p1a: Bee
+|-resisted|p1a: Bee
+|-damage|p1a: Bee|0 fnt
+|-damage|p2a: Toxicroak|162\/307|[from] item: Life Orb
+|faint|p1a: Bee
+|
+|
+|switch|p1a: HideOfTerramorphou|Zygarde|404\/404
+|-ability|p1a: HideOfTerramorphou|Aura Break
+|turn|18
+|
+|switch|p2a: Shaymin|Shaymin|278\/341
+|move|p1a: HideOfTerramorphou|Earthquake|p2a: Shaymin
+|-resisted|p2a: Shaymin
+|-damage|p2a: Shaymin|224\/341
+|
+|-heal|p2a: Shaymin|245\/341|[from] item: Leftovers
+|turn|19
+|
+|switch|p1a: Fabled Tortoise|Aggron-Mega, M|344\/344
+|move|p2a: Shaymin|Seed Flare|p1a: Fabled Tortoise
+|-resisted|p1a: Fabled Tortoise
+|-damage|p1a: Fabled Tortoise|260\/344
+|-unboost|p1a: Fabled Tortoise|spd|2
+|
+|-heal|p2a: Shaymin|266\/341|[from] item: Leftovers
+|turn|20
+|
+|switch|p1a: Sham|Blissey, F|331\/714
+|move|p2a: Shaymin|Leech Seed|p1a: Sham
+|-start|p1a: Sham|move: Leech Seed
+|
+|-heal|p2a: Shaymin|287\/341|[from] item: Leftovers
+|-heal|p1a: Sham|375\/714|[from] item: Leftovers
+|-damage|p1a: Sham|286\/714|[from] Leech Seed|[of] p2a: Shaymin
+|-heal|p2a: Shaymin|341\/341|[silent]
+|turn|21
+|c|âLatios pls|!dt metal burst
+|c|~|\/data-move Metal Burst
+|raw|<font size="1"><font color=#585858>Priority:<\/font> 0&nbsp;|&ThickSpace;<font color=#585858>Target:<\/font> Unknown<\/font>
+|
+|switch|p2a: Toxicroak|Toxicroak, F|162\/307
+|switch|p1a: Transformer|Forretress, M|354\/354
+|
+|turn|22
+|
+|move|p2a: Toxicroak|Drain Punch|p1a: Transformer
+|-damage|p1a: Transformer|257\/354
+|-heal|p2a: Toxicroak|211\/307|[from] drain|[of] p1a: Transformer
+|-damage|p2a: Toxicroak|181\/307|[from] item: Life Orb
+|move|p1a: Transformer|Volt Switch|p2a: Toxicroak
+|-damage|p2a: Toxicroak|127\/307
+|
+|switch|p1a: HideOfTerramorphou|Zygarde|404\/404
+|-ability|p1a: HideOfTerramorphou|Aura Break
+|
+|turn|23
+|
+|switch|p2a: Crobat|Crobat, M|317\/317
+|move|p1a: HideOfTerramorphou|Dragon Tail|p2a: Crobat
+|-damage|p2a: Crobat|232\/317
+|drag|p2a: Jirachi|Jirachi|341\/341
+|
+|turn|24
+|
+|switch|p1a: Transformer|Forretress, M|257\/354
+|move|p2a: Jirachi|U-turn|p1a: Transformer
+|-resisted|p1a: Transformer
+|-damage|p1a: Transformer|237\/354
+|
+|switch|p2a: Blastoise|Blastoise-Mega, F|202\/322 tox
+|
+|-heal|p1a: Transformer|259\/354|[from] item: Leftovers
+|-damage|p2a: Blastoise|182\/322 tox|[from] psn
+|turn|25
+|join|DMT
+|
+|switch|p1a: Cradle|Aromatisse, M|406\/406
+|move|p2a: Blastoise|Hydro Pump|p1a: Cradle
+|-damage|p1a: Cradle|177\/406
+|
+|-heal|p1a: Cradle|202\/406|[from] item: Leftovers
+|-damage|p2a: Blastoise|142\/322 tox|[from] psn
+|turn|26
+|
+|switch|p2a: Crobat|Crobat, M|232\/317
+|move|p1a: Cradle|Protect|p1a: Cradle
+|-fail|p1a: Cradle
+|
+|-heal|p1a: Cradle|227\/406|[from] item: Leftovers
+|turn|27
+|
+|move|p2a: Crobat|Brave Bird|p1a: Cradle
+|-crit|p1a: Cradle
+|-damage|p1a: Cradle|0 fnt
+|-damage|p2a: Crobat|157\/317|[from] recoil|[of] p1a: Cradle
+|faint|p1a: Cradle
+|
+|
+|switch|p1a: Fabled Tortoise|Aggron-Mega, M|260\/344
+|turn|28
+|c|âBob the Bro|fk me
+|c|âLatios pls|:(
+|
+|switch|p2a: Shaymin|Shaymin|341\/341
+|move|p1a: Fabled Tortoise|Stealth Rock|p2a: Shaymin
+|-sidestart|p2: Latios pls|move: Stealth Rock
+|
+|turn|29
+|
+|move|p2a: Shaymin|Leech Seed|p1a: Fabled Tortoise
+|-start|p1a: Fabled Tortoise|move: Leech Seed
+|move|p1a: Fabled Tortoise|Heavy Slam|p2a: Shaymin
+|-damage|p2a: Shaymin|146\/341
+|
+|-heal|p2a: Shaymin|167\/341|[from] item: Leftovers
+|-damage|p1a: Fabled Tortoise|217\/344|[from] Leech Seed|[of] p2a: Shaymin
+|-heal|p2a: Shaymin|210\/341|[silent]
+|turn|30
+|
+|switch|p1a: Transformer|Forretress, M|259\/354
+|move|p2a: Shaymin|Seed Flare|p1a: Transformer
+|-resisted|p1a: Transformer
+|-damage|p1a: Transformer|192\/354
+|
+|-heal|p2a: Shaymin|231\/341|[from] item: Leftovers
+|-heal|p1a: Transformer|214\/354|[from] item: Leftovers
+|turn|31
+|
+|move|p2a: Shaymin|Air Slash|p1a: Transformer
+|-damage|p1a: Transformer|91\/354
+|move|p1a: Transformer|Volt Switch|p2a: Shaymin
+|-resisted|p2a: Shaymin
+|-damage|p2a: Shaymin|212\/341
+|
+|switch|p1a: Sham|Blissey, F|286\/714
+|
+|-heal|p2a: Shaymin|233\/341|[from] item: Leftovers
+|-heal|p1a: Sham|330\/714|[from] item: Leftovers
+|turn|32
+|
+|switch|p2a: Toxicroak|Toxicroak, F|127\/307
+|-damage|p2a: Toxicroak|108\/307|[from] Stealth Rock
+|move|p1a: Sham|Wish|p1a: Sham
+|
+|-heal|p1a: Sham|374\/714|[from] item: Leftovers
+|turn|33
+|
+|switch|p1a: Fabled Tortoise|Aggron-Mega, M|217\/344
+|move|p2a: Toxicroak|Drain Punch|p1a: Fabled Tortoise
+|-supereffective|p1a: Fabled Tortoise
+|-damage|p1a: Fabled Tortoise|94\/344
+|-heal|p2a: Toxicroak|170\/307|[from] drain|[of] p1a: Fabled Tortoise
+|-damage|p2a: Toxicroak|140\/307|[from] item: Life Orb
+|
+|-heal|p1a: Fabled Tortoise|344\/344|[from] move: Wish|[wisher] Sham
+|turn|34
+|
+|move|p2a: Toxicroak|Drain Punch|p1a: Fabled Tortoise
+|-supereffective|p1a: Fabled Tortoise
+|-damage|p1a: Fabled Tortoise|227\/344
+|-heal|p2a: Toxicroak|199\/307|[from] drain|[of] p1a: Fabled Tortoise
+|-damage|p2a: Toxicroak|169\/307|[from] item: Life Orb
+|move|p1a: Fabled Tortoise|Heavy Slam|p2a: Toxicroak
+|-damage|p2a: Toxicroak|0 fnt
+|faint|p2a: Toxicroak
+|
+|
+|switch|p2a: Blastoise|Blastoise-Mega, F|142\/322 tox
+|-damage|p2a: Blastoise|102\/322 tox|[from] Stealth Rock
+|turn|35
+|
+|switch|p1a: Transformer|Forretress, M|91\/354
+|move|p2a: Blastoise|Aura Sphere|p1a: Transformer
+|-damage|p1a: Transformer|0 fnt
+|faint|p1a: Transformer
+|
+|-damage|p2a: Blastoise|82\/322 tox|[from] psn
+|
+|switch|p1a: Sham|Blissey, F|374\/714
+|turn|36
+|
+|switch|p2a: Jirachi|Jirachi|341\/341
+|-damage|p2a: Jirachi|320\/341|[from] Stealth Rock
+|move|p1a: Sham|Protect|p1a: Sham
+|-fail|p1a: Sham
+|
+|-heal|p1a: Sham|418\/714|[from] item: Leftovers
+|turn|37
+|join|Dudeman130498
+|
+|move|p1a: Sham|Protect|p1a: Sham
+|-singleturn|p1a: Sham|Protect
+|move|p2a: Jirachi|Trick|p1a: Sham
+|-activate|p1a: Sham|Protect
+|
+|-heal|p1a: Sham|462\/714|[from] item: Leftovers
+|turn|38
+|
+|switch|p2a: Rhyperior|Rhyperior, F|433\/433
+|-damage|p2a: Rhyperior|406\/433|[from] Stealth Rock
+|switch|p1a: Fabled Tortoise|Aggron-Mega, M|227\/344
+|
+|-heal|p2a: Rhyperior|433\/433|[from] item: Leftovers
+|turn|39
+|
+|move|p2a: Rhyperior|Earthquake|p1a: Fabled Tortoise
+|-supereffective|p1a: Fabled Tortoise
+|-damage|p1a: Fabled Tortoise|104\/344
+|move|p1a: Fabled Tortoise|Heavy Slam|p2a: Rhyperior
+|-supereffective|p2a: Rhyperior
+|-damage|p2a: Rhyperior|355\/433
+|
+|-heal|p2a: Rhyperior|382\/433|[from] item: Leftovers
+|turn|40
+|
+|switch|p1a: HideOfTerramorphou|Zygarde|404\/404
+|-ability|p1a: HideOfTerramorphou|Aura Break
+|move|p2a: Rhyperior|Earthquake|p1a: HideOfTerramorphou
+|-damage|p1a: HideOfTerramorphou|278\/404
+|
+|-heal|p1a: HideOfTerramorphou|303\/404|[from] item: Leftovers
+|-heal|p2a: Rhyperior|409\/433|[from] item: Leftovers
+|turn|41
+|leave|DMT
+|c|âLatios pls|"Its super effective!"
+|
+|switch|p2a: Shaymin|Shaymin|233\/341
+|-damage|p2a: Shaymin|191\/341|[from] Stealth Rock
+|move|p1a: HideOfTerramorphou|Coil|p1a: HideOfTerramorphou
+|-boost|p1a: HideOfTerramorphou|atk|1
+|-boost|p1a: HideOfTerramorphou|def|1
+|-boost|p1a: HideOfTerramorphou|accuracy|1
+|
+|-heal|p2a: Shaymin|212\/341|[from] item: Leftovers
+|-heal|p1a: HideOfTerramorphou|328\/404|[from] item: Leftovers
+|turn|42
+|
+|move|p2a: Shaymin|Seed Flare|p1a: HideOfTerramorphou
+|-damage|p1a: HideOfTerramorphou|172\/404
+|move|p1a: HideOfTerramorphou|Dragon Tail|p2a: Shaymin
+|-damage|p2a: Shaymin|113\/341
+|drag|p2a: Jirachi|Jirachi|320\/341
+|-damage|p2a: Jirachi|299\/341|[from] Stealth Rock
+|
+|-heal|p1a: HideOfTerramorphou|197\/404|[from] item: Leftovers
+|turn|43
+|
+|move|p2a: Jirachi|Iron Head|p1a: HideOfTerramorphou
+|-damage|p1a: HideOfTerramorphou|124\/404
+|move|p1a: HideOfTerramorphou|Earthquake|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|faint|p2a: Jirachi
+|
+|-heal|p1a: HideOfTerramorphou|149\/404|[from] item: Leftovers
+|
+|switch|p2a: Shaymin|Shaymin|113\/341
+|-damage|p2a: Shaymin|71\/341|[from] Stealth Rock
+|turn|44
+|
+|switch|p1a: Fabled Tortoise|Aggron-Mega, M|104\/344
+|move|p2a: Shaymin|Seed Flare|p1a: Fabled Tortoise
+|-resisted|p1a: Fabled Tortoise
+|-damage|p1a: Fabled Tortoise|24\/344
+|-unboost|p1a: Fabled Tortoise|spd|2
+|
+|-heal|p2a: Shaymin|92\/341|[from] item: Leftovers
+|turn|45
+|
+|move|p2a: Shaymin|Seed Flare|p1a: Fabled Tortoise
+|-resisted|p1a: Fabled Tortoise
+|-damage|p1a: Fabled Tortoise|0 fnt
+|faint|p1a: Fabled Tortoise
+|
+|-heal|p2a: Shaymin|113\/341|[from] item: Leftovers
+|join|waiv
+|
+|switch|p1a: Sham|Blissey, F|462\/714
+|turn|46
+|c| waiv|argh bob
+|c| waiv|i keep overpredicting
+|c| waiv|:(
+|
+|move|p2a: Shaymin|Leech Seed|p1a: Sham
+|-start|p1a: Sham|move: Leech Seed
+|move|p1a: Sham|Wish|p1a: Sham
+|
+|-heal|p2a: Shaymin|134\/341|[from] item: Leftovers
+|-heal|p1a: Sham|506\/714|[from] item: Leftovers
+|-damage|p1a: Sham|417\/714|[from] Leech Seed|[of] p2a: Shaymin
+|-heal|p2a: Shaymin|223\/341|[silent]
+|turn|47
+|c| waiv|is this dat latias
+|
+|move|p2a: Shaymin|Seed Flare|p1a: Sham
+|-damage|p1a: Sham|269\/714
+|move|p1a: Sham|Seismic Toss|p2a: Shaymin
+|-damage|p2a: Shaymin|123\/341
+|
+|-heal|p1a: Sham|626\/714|[from] move: Wish|[wisher] Sham
+|-heal|p2a: Shaymin|144\/341|[from] item: Leftovers
+|-heal|p1a: Sham|670\/714|[from] item: Leftovers
+|-damage|p1a: Sham|581\/714|[from] Leech Seed|[of] p2a: Shaymin
+|-heal|p2a: Shaymin|233\/341|[silent]
+|turn|48
+|c|âLatios pls|n
+|c|âLatios pls|:(
+|
+|move|p2a: Shaymin|Air Slash|p1a: Sham
+|-damage|p1a: Sham|520\/714
+|move|p1a: Sham|Wish|p1a: Sham
+|
+|-heal|p2a: Shaymin|254\/341|[from] item: Leftovers
+|-heal|p1a: Sham|564\/714|[from] item: Leftovers
+|-damage|p1a: Sham|475\/714|[from] Leech Seed|[of] p2a: Shaymin
+|-heal|p2a: Shaymin|341\/341|[silent]
+|turn|49
+|
+|move|p2a: Shaymin|Leech Seed|p1a: Sham
+|-fail|p1a: Sham
+|move|p1a: Sham|Seismic Toss|p2a: Shaymin
+|-damage|p2a: Shaymin|241\/341
+|
+|-heal|p1a: Sham|714\/714|[from] move: Wish|[wisher] Sham
+|-heal|p2a: Shaymin|262\/341|[from] item: Leftovers
+|-damage|p1a: Sham|625\/714|[from] Leech Seed|[of] p2a: Shaymin
+|-heal|p2a: Shaymin|341\/341|[silent]
+|turn|50
+|
+|switch|p2a: Rhyperior|Rhyperior, F|409\/433
+|-damage|p2a: Rhyperior|382\/433|[from] Stealth Rock
+|move|p1a: Sham|Seismic Toss|p2a: Rhyperior
+|-damage|p2a: Rhyperior|282\/433
+|
+|-heal|p1a: Sham|669\/714|[from] item: Leftovers
+|-heal|p2a: Rhyperior|309\/433|[from] item: Leftovers
+|-damage|p1a: Sham|580\/714|[from] Leech Seed|[of] p2a: Rhyperior
+|-heal|p2a: Rhyperior|398\/433|[silent]
+|turn|51
+|
+|move|p2a: Rhyperior|Earthquake|p1a: Sham
+|-damage|p1a: Sham|279\/714
+|move|p1a: Sham|Counter|p2a: Rhyperior
+|-damage|p2a: Rhyperior|0 fnt
+|faint|p2a: Rhyperior
+|
+|-heal|p1a: Sham|323\/714|[from] item: Leftovers
+|
+|switch|p2a: Crobat|Crobat, M|157\/317
+|-damage|p2a: Crobat|78\/317|[from] Stealth Rock
+|turn|52
+|
+|move|p2a: Crobat|Brave Bird|p1a: Sham
+|-damage|p1a: Sham|0 fnt
+|-damage|p2a: Crobat|0 fnt|[from] recoil|[of] p1a: Sham
+|faint|p1a: Sham
+|faint|p2a: Crobat
+|
+|join|bleve
+|
+|switch|p2a: Shaymin|Shaymin|341\/341
+|-damage|p2a: Shaymin|299\/341|[from] Stealth Rock
+|switch|p1a: HideOfTerramorphou|Zygarde|149\/404
+|-ability|p1a: HideOfTerramorphou|Aura Break
+|turn|53
+|c|âLatios pls|gg
+|c| Dudeman130498|get destroyed nerd...
+|
+|move|p2a: Shaymin|Seed Flare|p1a: HideOfTerramorphou
+|-damage|p1a: HideOfTerramorphou|0 fnt
+|faint|p1a: HideOfTerramorphou
+|
+|win|Latios pls
+|raw|Ladder updating...
+|raw|Bob the Bro's rating: 1706 &rarr; <strong>1679<\/strong><br \/>(-27 for losing)
+|raw|Latios pls's rating: 1571 &rarr; <strong>1599<\/strong><br \/>(+28 for winning)
+|c| bleve|kek
+|c|âLatios pls|:]]]]]]
+|c|âBob the Bro|rip
+|c|âLatios pls|gg bob
+|leave|Bob the Bro
+|player|p1

@@ -1,0 +1,327 @@
+|join|Ronin 3000
+|join|bange
+|player|p1|Ronin 3000|25
+|player|p2|bange|2
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Tyranitar, M
+|poke|p1|Blissey, F
+|poke|p1|Donphan, F
+|poke|p1|Skarmory, M
+|poke|p1|Latios, M
+|poke|p1|Metagross
+|poke|p2|Feraligatr, F
+|poke|p2|Xatu, F
+|poke|p2|Gastrodon, M, shiny
+|poke|p2|Primeape, M
+|poke|p2|Magnezone, shiny
+|poke|p2|Latios, M
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Tyranitar|Tyranitar, M|341\/341
+|switch|p2a: Primeape|Primeape, M|272\/272
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar
+|turn|1
+|callback|decision
+|
+|move|p2a: Primeape|U-turn|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|189\/341
+|callback|decision
+|
+|switch|p2a: Xatu|Xatu, F|334\/334
+|move|p1a: Tyranitar|Stealth Rock|p2a: Xatu
+|move|p2a: Xatu|Stealth Rock|p1a: Tyranitar|[from]Magic Bounce
+|-sidestart|p1: Ronin 3000|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Xatu|314\/334|[from] sandstorm
+|turn|2
+|callback|decision
+|
+|move|p1a: Tyranitar|Crunch|p2a: Xatu
+|-supereffective|p2a: Xatu
+|-damage|p2a: Xatu|78\/334
+|-damage|p1a: Tyranitar|133\/341|[from] item: Rocky Helmet|[of] p2a: Xatu
+|move|p2a: Xatu|U-turn|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|59\/341
+|callback|decision
+|
+|switch|p2a: Primeape|Primeape, M|272\/272
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Primeape|255\/272|[from] sandstorm
+|turn|3
+|callback|decision
+|
+|switch|p1a: Donphan|Donphan, F|384\/384
+|-damage|p1a: Donphan|360\/384|[from] Stealth Rock
+|move|p2a: Primeape|U-turn|p1a: Donphan
+|-damage|p1a: Donphan|314\/384
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|302\/302
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|284\/302|[from] sandstorm
+|-heal|p1a: Donphan|338\/384|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p1a: Donphan|Ice Shard|p2a: Latios
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|190\/302
+|move|p2a: Latios|Draco Meteor|p1a: Donphan
+|-damage|p1a: Donphan|0 fnt
+|-unboost|p2a: Latios|spa|2
+|-damage|p2a: Latios|160\/302|[from] item: Life Orb
+|faint|p1a: Donphan
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|142\/302|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M|301\/301
+|-damage|p1a: Latios|264\/301|[from] Stealth Rock
+|turn|5
+|callback|decision
+|
+|move|p1a: Latios|Draco Meteor|p2a: Latios
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|-unboost|p1a: Latios|spa|2
+|faint|p2a: Latios
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latios|246\/301|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: Gastrodon|Gastrodon, M, shiny|426\/426
+|turn|6
+|callback|decision
+|
+|switch|p1a: Blissey|Blissey, F|652\/652
+|-damage|p1a: Blissey|571\/652|[from] Stealth Rock
+|switch|p2a: Primeape|Primeape, M|255\/272
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Primeape|238\/272|[from] sandstorm
+|-damage|p1a: Blissey|531\/652|[from] sandstorm
+|-heal|p1a: Blissey|571\/652|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|327\/327
+|-damage|p1a: Skarmory|287\/327|[from] Stealth Rock
+|move|p2a: Primeape|U-turn|p1a: Skarmory
+|-crit|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|268\/327
+|callback|decision
+|
+|switch|p2a: Magnezone|Magnezone, shiny|319\/319
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Skarmory|288\/327|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p2a: Magnezone|Volt Switch|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|faint|p1a: Skarmory
+|callback|decision
+|
+|switch|p2a: Xatu|Xatu, F|78\/334
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Xatu|58\/334|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: Metagross|Metagross|342\/342
+|-damage|p1a: Metagross|321\/342|[from] Stealth Rock
+|turn|9
+|callback|decision
+|
+|move|p1a: Metagross|Pursuit|p2a: Xatu|[from]Pursuit
+|-supereffective|p2a: Xatu
+|-damage|p2a: Xatu|0 fnt
+|-damage|p1a: Metagross|264\/342|[from] item: Rocky Helmet|[of] p2a: Xatu
+|faint|p2a: Xatu
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Magnezone|Magnezone, shiny|319\/319
+|turn|10
+|callback|decision
+|
+|move|p2a: Magnezone|Hidden Power|p1a: Metagross
+|-supereffective|p1a: Metagross
+|-damage|p1a: Metagross|0 fnt
+|faint|p1a: Metagross
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Blissey|Blissey, F|571\/652
+|-damage|p1a: Blissey|490\/652|[from] Stealth Rock
+|turn|11
+|callback|decision
+|
+|switch|p2a: Feraligatr|Feraligatr, F|359\/359
+|move|p1a: Blissey|Thunder Wave|p2a: Feraligatr
+|-status|p2a: Feraligatr|par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blissey|450\/652|[from] sandstorm
+|-damage|p2a: Feraligatr|337\/359 par|[from] sandstorm
+|-heal|p1a: Blissey|490\/652|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p2a: Magnezone|Magnezone, shiny|319\/319
+|move|p1a: Blissey|Softboiled|p1a: Blissey
+|-heal|p1a: Blissey|652\/652
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blissey|612\/652|[from] sandstorm
+|-heal|p1a: Blissey|652\/652|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: Magnezone|Volt Switch|p1a: Blissey
+|-crit|p1a: Blissey
+|-damage|p1a: Blissey|450\/652
+|callback|decision
+|
+|switch|p2a: Gastrodon|Gastrodon, M, shiny|426\/426
+|move|p1a: Blissey|Thunder Wave|p2a: Gastrodon
+|-immune|p2a: Gastrodon|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blissey|410\/652|[from] sandstorm
+|-heal|p1a: Blissey|450\/652|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: Blissey|Softboiled|p1a: Blissey
+|-heal|p1a: Blissey|652\/652
+|move|p2a: Gastrodon|Toxic|p1a: Blissey
+|-status|p1a: Blissey|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blissey|612\/652 tox|[from] sandstorm
+|-heal|p1a: Blissey|652\/652 tox|[from] item: Leftovers
+|-damage|p1a: Blissey|612\/652 tox|[from] psn
+|turn|15
+|callback|decision
+|
+|move|p1a: Blissey|Aromatherapy|p1a: Blissey
+|-cureteam|p1a: Blissey|[from] move: Aromatherapy
+|move|p2a: Gastrodon|Ice Beam|p1a: Blissey
+|-damage|p1a: Blissey|567\/652
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blissey|527\/652|[from] sandstorm
+|-heal|p1a: Blissey|567\/652|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Blissey|Seismic Toss|p2a: Gastrodon
+|-damage|p2a: Gastrodon|326\/426
+|move|p2a: Gastrodon|Surf|p1a: Blissey
+|-damage|p1a: Blissey|500\/652
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blissey|460\/652|[from] sandstorm
+|-heal|p1a: Blissey|500\/652|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Blissey|Seismic Toss|p2a: Gastrodon
+|-damage|p2a: Gastrodon|226\/426
+|move|p2a: Gastrodon|Toxic|p1a: Blissey
+|-status|p1a: Blissey|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blissey|460\/652 tox|[from] sandstorm
+|-heal|p1a: Blissey|500\/652 tox|[from] item: Leftovers
+|-damage|p1a: Blissey|460\/652 tox|[from] psn
+|turn|18
+|callback|decision
+|
+|switch|p2a: Primeape|Primeape, M|238\/272
+|move|p1a: Blissey|Aromatherapy|p1a: Blissey
+|-cureteam|p1a: Blissey|[from] move: Aromatherapy
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Primeape|221\/272|[from] sandstorm
+|-damage|p1a: Blissey|420\/652|[from] sandstorm
+|-heal|p1a: Blissey|460\/652|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p2a: Primeape|Close Combat|p1a: Blissey
+|-supereffective|p1a: Blissey
+|-damage|p1a: Blissey|0 fnt
+|-unboost|p2a: Primeape|def|1
+|-unboost|p2a: Primeape|spd|1
+|faint|p1a: Blissey
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Primeape|204\/272|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M|246\/301
+|-damage|p1a: Latios|209\/301|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|switch|p2a: Gastrodon|Gastrodon, M, shiny|226\/426
+|move|p1a: Latios|Trick|p2a: Gastrodon
+|-activate|p1a: Latios|move: Trick|[of] p2a: Gastrodon
+|-item|p2a: Gastrodon|Choice Scarf|[from] move: Trick
+|-item|p1a: Latios|Sitrus Berry|[from] move: Trick
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latios|191\/301|[from] sandstorm
+|turn|21
+|callback|decision
+|
+|move|p1a: Latios|Surf|p2a: Gastrodon
+|-boost|p2a: Gastrodon|spa|1|[from] ability: Storm Drain
+|move|p2a: Gastrodon|Ice Beam|p1a: Latios
+|-supereffective|p1a: Latios
+|-damage|p1a: Latios|0 fnt
+|faint|p1a: Latios
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, M|59\/341
+|-damage|p1a: Tyranitar|17\/341|[from] Stealth Rock
+|turn|22
+|callback|decision
+|
+|move|p1a: Tyranitar|Low Kick|p2a: Gastrodon
+|-damage|p2a: Gastrodon|158\/426
+|move|p2a: Gastrodon|Ice Beam|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|faint|p1a: Tyranitar
+|
+|win|bange
+|raw|Ladder updating...
+|raw|Ronin 3000's rating: 1596 &rarr; <strong>1594<\/strong><br \/>(-2 for losing)
+|raw|bange's rating: 1639 &rarr; <strong>1653<\/strong><br \/>(+14 for winning)

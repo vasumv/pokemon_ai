@@ -1,0 +1,519 @@
+|join|Tipsy Russian
+|join|narutoRGR94
+|player|p1|Tipsy Russian|23
+|player|p2|narutoRGR94|162
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Gallade, M
+|poke|p1|Chesnaught, F
+|poke|p1|Milotic, F
+|poke|p1|Shaymin
+|poke|p1|Rotom-Heat
+|poke|p1|Regirock
+|poke|p2|Hippowdon, F
+|poke|p2|Lucario, F
+|poke|p2|Blastoise, F
+|poke|p2|Blissey, F
+|poke|p2|Victini
+|poke|p2|Honchkrow, F
+|rule|Baton Pass Clause: Limit 3 pokemon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Rotom-Heat|Rotom-Heat|241\/241
+|switch|p2a: Blissey|Blissey, F|713\/713
+|turn|1
+|
+|move|p1a: Rotom-Heat|Trick|p2a: Blissey
+|-activate|p1a: Rotom-Heat|move: Trick|[of] p2a: Blissey
+|-item|p2a: Blissey|Choice Scarf|[from] move: Trick
+|-item|p1a: Rotom-Heat|Leftovers|[from] move: Trick
+|move|p2a: Blissey|Toxic|p1a: Rotom-Heat
+|-status|p1a: Rotom-Heat|tox
+|
+|-damage|p1a: Rotom-Heat|226\/241 tox|[from] psn
+|turn|2
+|
+|switch|p1a: Shaymin|Shaymin|342\/342
+|move|p2a: Blissey|Toxic|p1a: Shaymin
+|-status|p1a: Shaymin|tox
+|
+|-damage|p1a: Shaymin|321\/342 tox|[from] psn
+|turn|3
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|226\/241 tox
+|switch|p2a: Victini|Victini|342\/342
+|
+|-heal|p1a: Rotom-Heat|241\/241 tox|[from] item: Leftovers
+|-damage|p1a: Rotom-Heat|226\/241 tox|[from] psn
+|turn|4
+|
+|switch|p1a: Regirock|Regirock|364\/364
+|move|p2a: Victini|Zen Headbutt|p1a: Regirock
+|-damage|p1a: Regirock|289\/364
+|
+|turn|5
+|
+|switch|p2a: Hippowdon|Hippowdon, F|419\/419
+|-weather|Sandstorm
+|move|p1a: Regirock|Stone Edge|p2a: Hippowdon|[miss]
+|-miss|p1a: Regirock|p2a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|turn|6
+|
+|move|p1a: Regirock|Ice Punch|p2a: Hippowdon
+|-supereffective|p2a: Hippowdon
+|-damage|p2a: Hippowdon|299\/419
+|move|p2a: Hippowdon|Stealth Rock|p1a: Regirock
+|-sidestart|p1: Tipsy Russian|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|325\/419|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Chesnaught|Chesnaught, F|380\/380
+|-damage|p1a: Chesnaught|357\/380|[from] Stealth Rock
+|move|p2a: Hippowdon|Earthquake|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|314\/380
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Chesnaught|291\/380|[from] sandstorm
+|-heal|p1a: Chesnaught|314\/380|[from] item: Leftovers
+|-heal|p2a: Hippowdon|351\/419|[from] item: Leftovers
+|turn|8
+|
+|switch|p2a: Honchkrow|Honchkrow, F|342\/342
+|move|p1a: Chesnaught|Toxic|p2a: Honchkrow
+|-status|p2a: Honchkrow|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Honchkrow|321\/342 tox|[from] sandstorm
+|-damage|p1a: Chesnaught|291\/380|[from] sandstorm
+|-heal|p1a: Chesnaught|314\/380|[from] item: Leftovers
+|-damage|p2a: Honchkrow|300\/342 tox|[from] psn
+|turn|9
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-singleturn|p1a: Chesnaught|move: Protect
+|move|p2a: Honchkrow|Brave Bird|p1a: Chesnaught
+|-activate|p1a: Chesnaught|move: Protect
+|-damage|p2a: Honchkrow|258\/342 tox|[from] Spiky Shield|[of] p1a: Chesnaught
+|
+|-weather|none
+|-heal|p1a: Chesnaught|337\/380|[from] item: Leftovers
+|-damage|p2a: Honchkrow|216\/342 tox|[from] psn
+|turn|10
+|
+|switch|p1a: Regirock|Regirock|289\/364
+|-damage|p1a: Regirock|244\/364|[from] Stealth Rock
+|move|p2a: Honchkrow|Brave Bird|p1a: Regirock
+|-resisted|p1a: Regirock
+|-damage|p1a: Regirock|166\/364
+|-damage|p2a: Honchkrow|190\/342 tox|[from] recoil|[of] p1a: Regirock
+|-damage|p2a: Honchkrow|156\/342 tox|[from] item: Life Orb
+|
+|-damage|p2a: Honchkrow|93\/342 tox|[from] psn
+|turn|11
+|
+|move|p2a: Honchkrow|Superpower|p1a: Regirock
+|-supereffective|p1a: Regirock
+|-damage|p1a: Regirock|0 fnt
+|-unboost|p2a: Honchkrow|atk|1
+|-unboost|p2a: Honchkrow|def|1
+|-damage|p2a: Honchkrow|59\/342 tox|[from] item: Life Orb
+|faint|p1a: Regirock
+|-boost|p2a: Honchkrow|atk|1|[from] ability: Moxie
+|
+|-damage|p2a: Honchkrow|0 fnt|[from] psn
+|faint|p2a: Honchkrow
+|
+|switch|p2a: Victini|Victini|342\/342
+|switch|p1a: Chesnaught|Chesnaught, F|337\/380
+|-damage|p1a: Chesnaught|314\/380|[from] Stealth Rock
+|turn|12
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-singleturn|p1a: Chesnaught|move: Protect
+|move|p2a: Victini|V-create|p1a: Chesnaught
+|-activate|p1a: Chesnaught|move: Protect
+|-damage|p2a: Victini|300\/342|[from] Spiky Shield|[of] p1a: Chesnaught
+|
+|-heal|p1a: Chesnaught|337\/380|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|226\/241 tox
+|-damage|p1a: Rotom-Heat|166\/241 tox|[from] Stealth Rock
+|move|p2a: Victini|V-create|p1a: Rotom-Heat
+|-resisted|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|34\/241 tox
+|-unboost|p2a: Victini|def|1
+|-unboost|p2a: Victini|spd|1
+|-unboost|p2a: Victini|spe|1
+|
+|-heal|p1a: Rotom-Heat|49\/241 tox|[from] item: Leftovers
+|-damage|p1a: Rotom-Heat|34\/241 tox|[from] psn
+|turn|14
+|
+|switch|p2a: Blissey|Blissey, F|713\/713
+|move|p1a: Rotom-Heat|Overheat|p2a: Blissey
+|-damage|p2a: Blissey|562\/713
+|-unboost|p1a: Rotom-Heat|spa|2
+|
+|-heal|p1a: Rotom-Heat|49\/241 tox|[from] item: Leftovers
+|-damage|p1a: Rotom-Heat|19\/241 tox|[from] psn
+|turn|15
+|
+|move|p1a: Rotom-Heat|Volt Switch|p2a: Blissey
+|-damage|p2a: Blissey|523\/713
+|
+|switch|p1a: Shaymin|Shaymin|321\/342
+|-damage|p1a: Shaymin|279\/342|[from] Stealth Rock
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p1a: Shaymin|300\/342|[from] item: Leftovers
+|turn|16
+|
+|switch|p2a: Victini|Victini|300\/342
+|move|p1a: Shaymin|Substitute|p1a: Shaymin
+|-start|p1a: Shaymin|Substitute
+|-damage|p1a: Shaymin|215\/342
+|
+|-heal|p2a: Victini|342\/342|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Shaymin|236\/342|[from] item: Leftovers
+|turn|17
+|
+|move|p2a: Victini|U-turn|p1a: Shaymin
+|-supereffective|p1a: Shaymin
+|-end|p1a: Shaymin|Substitute
+|
+|switch|p2a: Lucario|Lucario, F|281\/281
+|move|p1a: Shaymin|Earth Power|p2a: Lucario
+|-supereffective|p2a: Lucario
+|-damage|p2a: Lucario|61\/281
+|
+|-heal|p1a: Shaymin|257\/342|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Shaymin|Earth Power|p2a: Lucario
+|-supereffective|p2a: Lucario
+|-damage|p2a: Lucario|0 fnt
+|faint|p2a: Lucario
+|
+|-heal|p1a: Shaymin|278\/342|[from] item: Leftovers
+|
+|switch|p2a: Victini|Victini|342\/342
+|turn|19
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|19\/241 tox
+|-damage|p1a: Rotom-Heat|0 fnt|[from] Stealth Rock
+|faint|p1a: Rotom-Heat
+|move|p2a: Victini|V-create|p1: Rotom-Heat|[notarget]
+|-notarget
+|
+|
+|switch|p1a: Milotic|Milotic, F|394\/394
+|-damage|p1a: Milotic|345\/394|[from] Stealth Rock
+|turn|20
+|
+|switch|p2a: Blissey|Blissey, F|523\/713
+|move|p1a: Milotic|Toxic|p2a: Blissey
+|-status|p2a: Blissey|tox
+|
+|-heal|p1a: Milotic|369\/394|[from] item: Leftovers
+|-damage|p2a: Blissey|479\/713 tox|[from] psn
+|turn|21
+|
+|move|p2a: Blissey|Toxic|p1a: Milotic
+|-status|p1a: Milotic|tox
+|move|p1a: Milotic|Scald|p2a: Blissey
+|-damage|p2a: Blissey|409\/713 tox
+|
+|-heal|p1a: Milotic|393\/394 tox|[from] item: Leftovers
+|-damage|p2a: Blissey|321\/713 tox|[from] psn
+|-damage|p1a: Milotic|369\/394 tox|[from] psn
+|turn|22
+|
+|switch|p2a: Blastoise|Blastoise, F|361\/361
+|move|p1a: Milotic|Scald|p2a: Blastoise
+|-resisted|p2a: Blastoise
+|-damage|p2a: Blastoise|315\/361
+|-status|p2a: Blastoise|brn
+|
+|-heal|p1a: Milotic|393\/394 tox|[from] item: Leftovers
+|-damage|p1a: Milotic|345\/394 tox|[from] psn
+|-damage|p2a: Blastoise|270\/361 brn|[from] brn
+|turn|23
+|
+|switch|p1a: Gallade|Gallade, M|340\/340
+|-damage|p1a: Gallade|319\/340|[from] Stealth Rock
+|switch|p2a: Blissey|Blissey, F|321\/713
+|
+|turn|24
+|
+|move|p2a: Blissey|Wish|p2a: Blissey
+|move|p1a: Gallade|Knock Off|p2a: Blissey
+|-damage|p2a: Blissey|79\/713
+|-enditem|p2a: Blissey|Choice Scarf|[from] move: Knock Off|[of] p1a: Gallade
+|
+|turn|25
+|
+|switch|p2a: Victini|Victini|342\/342
+|move|p1a: Gallade|Drain Punch|p2a: Victini
+|-resisted|p2a: Victini
+|-damage|p2a: Victini|264\/342
+|-heal|p1a: Gallade|340\/340|[from] drain|[of] p2a: Victini
+|
+|-heal|p2a: Victini|342\/342|[from] move: Wish|[wisher] Blissey
+|turn|26
+|
+|switch|p1a: Milotic|Milotic, F|345\/394 tox
+|-damage|p1a: Milotic|296\/394 tox|[from] Stealth Rock
+|move|p2a: Victini|V-create|p1a: Milotic
+|-resisted|p1a: Milotic
+|-damage|p1a: Milotic|174\/394 tox
+|-unboost|p2a: Victini|def|1
+|-unboost|p2a: Victini|spd|1
+|-unboost|p2a: Victini|spe|1
+|
+|-heal|p1a: Milotic|198\/394 tox|[from] item: Leftovers
+|-damage|p1a: Milotic|174\/394 tox|[from] psn
+|turn|27
+|
+|switch|p2a: Blissey|Blissey, F|79\/713
+|move|p1a: Milotic|Recover|p1a: Milotic
+|-heal|p1a: Milotic|371\/394 tox
+|
+|-heal|p1a: Milotic|394\/394 tox|[from] item: Leftovers
+|-damage|p1a: Milotic|346\/394 tox|[from] psn
+|turn|28
+|
+|move|p1a: Milotic|Scald|p2a: Blissey
+|-damage|p2a: Blissey|12\/713
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p1a: Milotic|370\/394 tox|[from] item: Leftovers
+|-damage|p1a: Milotic|298\/394 tox|[from] psn
+|turn|29
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|move|p1a: Milotic|Scald|p2a: Blissey
+|-activate|p2a: Blissey|Protect
+|
+|-heal|p2a: Blissey|368\/713|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Milotic|322\/394 tox|[from] item: Leftovers
+|-damage|p1a: Milotic|226\/394 tox|[from] psn
+|turn|30
+|chat|Tipsy Russian|what a cookie cutter team
+|
+|switch|p1a: Gallade|Gallade, M|340\/340
+|-damage|p1a: Gallade|319\/340|[from] Stealth Rock
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|turn|31
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|move|p1a: Gallade|Knock Off|p2a: Blissey
+|-activate|p2a: Blissey|Protect
+|
+|-heal|p2a: Blissey|713\/713|[from] move: Wish|[wisher] Blissey
+|turn|32
+|
+|move|p1a: Gallade|Knock Off|p2a: Blissey
+|-damage|p2a: Blissey|556\/713
+|move|p2a: Blissey|Heal Bell|p2a: Blissey
+|-cureteam|p2a: Blissey|[from] move: HealBell
+|
+|turn|33
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|move|p1a: Gallade|Knock Off|p2a: Blissey
+|-activate|p2a: Blissey|Protect
+|
+|turn|34
+|
+|move|p1a: Gallade|Knock Off|p2a: Blissey
+|-damage|p2a: Blissey|419\/713
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|turn|35
+|
+|switch|p2a: Blastoise|Blastoise, F|270\/361
+|move|p1a: Gallade|Knock Off|p2a: Blastoise
+|-damage|p2a: Blastoise|183\/361
+|
+|-heal|p2a: Blastoise|361\/361|[from] move: Wish|[wisher] Blissey
+|turn|36
+|
+|detailschange|p2a: Blastoise|Blastoise-Mega, F
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p1a: Gallade|Leaf Blade|p2a: Blastoise
+|-supereffective|p2a: Blastoise
+|-damage|p2a: Blastoise|171\/361
+|move|p2a: Blastoise|Dark Pulse|p1a: Gallade
+|-damage|p1a: Gallade|224\/340
+|-boost|p1a: Gallade|atk|1|[from] ability: Justified
+|
+|turn|37
+|
+|switch|p2a: Victini|Victini|342\/342
+|move|p1a: Gallade|Drain Punch|p2a: Victini
+|-resisted|p2a: Victini
+|-damage|p2a: Victini|240\/342
+|-heal|p1a: Gallade|275\/340|[from] drain|[of] p2a: Victini
+|
+|turn|38
+|
+|switch|p1a: Milotic|Milotic, F|226\/394 tox
+|-damage|p1a: Milotic|177\/394 tox|[from] Stealth Rock
+|move|p2a: Victini|V-create|p1a: Milotic
+|-resisted|p1a: Milotic
+|-damage|p1a: Milotic|66\/394 tox
+|-unboost|p2a: Victini|def|1
+|-unboost|p2a: Victini|spd|1
+|-unboost|p2a: Victini|spe|1
+|
+|-heal|p1a: Milotic|90\/394 tox|[from] item: Leftovers
+|-damage|p1a: Milotic|66\/394 tox|[from] psn
+|turn|39
+|
+|move|p2a: Victini|V-create|p1a: Milotic
+|-resisted|p1a: Milotic
+|-damage|p1a: Milotic|0 fnt
+|-unboost|p2a: Victini|def|1
+|-unboost|p2a: Victini|spd|1
+|-unboost|p2a: Victini|spe|1
+|faint|p1a: Milotic
+|
+|
+|switch|p1a: Gallade|Gallade, M|275\/340
+|-damage|p1a: Gallade|254\/340|[from] Stealth Rock
+|turn|40
+|
+|switch|p2a: Blissey|Blissey, F|419\/713
+|move|p1a: Gallade|Knock Off|p2a: Blissey
+|-damage|p2a: Blissey|261\/713
+|
+|turn|41
+|
+|move|p1a: Gallade|Drain Punch|p2a: Blissey
+|-supereffective|p2a: Blissey
+|-damage|p2a: Blissey|0 fnt
+|-heal|p1a: Gallade|340\/340|[from] drain|[of] p2a: Blissey
+|faint|p2a: Blissey
+|
+|
+|switch|p2a: Victini|Victini|240\/342
+|turn|42
+|
+|switch|p1a: Chesnaught|Chesnaught, F|337\/380
+|-damage|p1a: Chesnaught|314\/380|[from] Stealth Rock
+|move|p2a: Victini|V-create|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-damage|p1a: Chesnaught|0 fnt
+|-unboost|p2a: Victini|def|1
+|-unboost|p2a: Victini|spd|1
+|-unboost|p2a: Victini|spe|1
+|faint|p1a: Chesnaught
+|
+|
+|switch|p1a: Shaymin|Shaymin|278\/342
+|-damage|p1a: Shaymin|236\/342|[from] Stealth Rock
+|turn|43
+|
+|switch|p2a: Hippowdon|Hippowdon, F|351\/419
+|-weather|Sandstorm
+|move|p1a: Shaymin|Substitute|p1a: Shaymin
+|-start|p1a: Shaymin|Substitute
+|-damage|p1a: Shaymin|151\/342
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Shaymin|130\/342|[from] sandstorm
+|-heal|p1a: Shaymin|151\/342|[from] item: Leftovers
+|-heal|p2a: Hippowdon|377\/419|[from] item: Leftovers
+|turn|44
+|
+|move|p1a: Shaymin|Seed Flare|p2a: Hippowdon
+|-supereffective|p2a: Hippowdon
+|-damage|p2a: Hippowdon|0 fnt
+|faint|p2a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Shaymin|130\/342|[from] sandstorm
+|-heal|p1a: Shaymin|151\/342|[from] item: Leftovers
+|
+|switch|p2a: Victini|Victini|240\/342
+|turn|45
+|
+|move|p2a: Victini|U-turn|p1a: Shaymin
+|-supereffective|p1a: Shaymin
+|-end|p1a: Shaymin|Substitute
+|
+|switch|p2a: Blastoise|Blastoise-Mega, F|171\/361
+|move|p1a: Shaymin|Earth Power|p2a: Blastoise
+|-crit|p2a: Blastoise
+|-damage|p2a: Blastoise|42\/361
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Shaymin|130\/342|[from] sandstorm
+|-damage|p2a: Blastoise|20\/361|[from] sandstorm
+|-heal|p1a: Shaymin|151\/342|[from] item: Leftovers
+|turn|46
+|
+|move|p1a: Shaymin|Earth Power|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Shaymin|130\/342|[from] sandstorm
+|-heal|p1a: Shaymin|151\/342|[from] item: Leftovers
+|
+|switch|p2a: Victini|Victini|240\/342
+|turn|47
+|
+|move|p2a: Victini|V-create|p1a: Shaymin
+|-crit|p1a: Shaymin
+|-supereffective|p1a: Shaymin
+|-damage|p1a: Shaymin|0 fnt
+|-unboost|p2a: Victini|def|1
+|-unboost|p2a: Victini|spd|1
+|-unboost|p2a: Victini|spe|1
+|faint|p1a: Shaymin
+|
+|-weather|none
+|chat|narutoRGR94|gg
+|
+|switch|p1a: Gallade|Gallade, M|340\/340
+|-damage|p1a: Gallade|319\/340|[from] Stealth Rock
+|turn|48
+|
+|-activate|p2a: Victini|move: Struggle
+|move|p2a: Victini|Struggle|p1a: Gallade
+|-damage|p1a: Gallade|239\/340
+|-damage|p2a: Victini|155\/342
+|move|p1a: Gallade|Knock Off|p2a: Victini
+|-supereffective|p2a: Victini
+|-damage|p2a: Victini|0 fnt
+|faint|p2a: Victini
+|
+|win|Tipsy Russian
+|raw|Ladder updating...
+|raw|Tipsy Russian's rating: 1379 &rarr; <strong>1393<\/strong><br \/>(+14 for winning)
+|raw|narutoRGR94's rating: 1278 &rarr; <strong>1260<\/strong><br \/>(-18 for losing)
+|chat|Tipsy Russian|gg
+|leave|narutoRGR94
+|player|p2

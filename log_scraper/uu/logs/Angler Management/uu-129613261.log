@@ -1,0 +1,638 @@
+|join|angler management
+|join|asd12
+|player|p1|angler management|198
+|player|p2|asd12|1
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Fletchinder, F
+|poke|p1|Flygon, F
+|poke|p1|Lucario, F
+|poke|p1|Swampert, F
+|poke|p1|Florges, F
+|poke|p1|Snorlax, F
+|poke|p2|Mienshao, M
+|poke|p2|Slowbro, F
+|poke|p2|Amoonguss, M
+|poke|p2|Dugtrio, F
+|poke|p2|Raikou, shiny
+|poke|p2|Hitmontop, M
+|teampreview
+|join|BFoxy
+|
+|start
+|switch|p1a: Florges|Florges, F|360\/360
+|switch|p2a: Dugtrio|Dugtrio, F|212\/212
+|turn|1
+|
+|move|p2a: Dugtrio|Stealth Rock|p1a: Florges
+|-sidestart|p1: angler management|move: Stealth Rock
+|move|p1a: Florges|Moonblast|p2a: Dugtrio
+|-damage|p2a: Dugtrio|49\/212
+|
+|turn|2
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|move|p1a: Florges|Moonblast|p2a: Amoonguss
+|-resisted|p2a: Amoonguss
+|-damage|p2a: Amoonguss|357\/432
+|
+|-heal|p2a: Amoonguss|384\/432|[from] item: Black Sludge
+|turn|3
+|
+|switch|p1a: Snorlax|Snorlax, F|491\/491
+|-damage|p1a: Snorlax|430\/491|[from] Stealth Rock
+|move|p2a: Amoonguss|Spore|p1a: Snorlax
+|-status|p1a: Snorlax|slp
+|
+|-heal|p1a: Snorlax|460\/491 slp|[from] item: Leftovers
+|-heal|p2a: Amoonguss|411\/432|[from] item: Black Sludge
+|turn|4
+|
+|switch|p2a: Hitmontop|Hitmontop, M|304\/304
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Snorlax
+|-unboost|p1a: Snorlax|atk|1
+|cant|p1a: Snorlax|slp
+|move|p1a: Snorlax|Sleep Talk|p1a: Snorlax
+|move|p1a: Snorlax|Rest|p1a: Snorlax|[from]Sleep Talk
+|-fail|p1a: Snorlax
+|
+|-heal|p1a: Snorlax|490\/491 slp|[from] item: Leftovers
+|turn|5
+|
+|switch|p1a: Swampert|Swampert, F|401\/401
+|-damage|p1a: Swampert|376\/401|[from] Stealth Rock
+|move|p2a: Hitmontop|High Jump Kick|p1a: Swampert
+|-damage|p1a: Swampert|256\/401
+|
+|-heal|p1a: Swampert|281\/401|[from] item: Leftovers
+|turn|6
+|
+|move|p2a: Hitmontop|Toxic|p1a: Swampert
+|-status|p1a: Swampert|tox
+|move|p1a: Swampert|Scald|p2a: Hitmontop
+|-damage|p2a: Hitmontop|244\/304
+|
+|-heal|p2a: Hitmontop|263\/304|[from] item: Leftovers
+|-heal|p1a: Swampert|306\/401 tox|[from] item: Leftovers
+|-damage|p1a: Swampert|281\/401 tox|[from] psn
+|turn|7
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|move|p1a: Swampert|Scald|p2a: Amoonguss
+|-resisted|p2a: Amoonguss
+|-damage|p2a: Amoonguss|384\/432
+|-status|p2a: Amoonguss|brn
+|
+|-heal|p1a: Swampert|306\/401 tox|[from] item: Leftovers
+|-heal|p2a: Amoonguss|411\/432 brn|[from] item: Black Sludge
+|-damage|p1a: Swampert|256\/401 tox|[from] psn
+|-damage|p2a: Amoonguss|357\/432 brn|[from] brn
+|turn|8
+|
+|switch|p1a: Flygon|Flygon, F|301\/301
+|-damage|p1a: Flygon|283\/301|[from] Stealth Rock
+|switch|p2a: Mienshao|Mienshao, M|271\/271
+|
+|turn|9
+|
+|move|p2a: Mienshao|Fake Out|p1a: Flygon
+|-damage|p1a: Flygon|204\/301
+|-damage|p2a: Mienshao|244\/271|[from] item: Life Orb
+|cant|p1a: Flygon|flinch
+|
+|turn|10
+|
+|switch|p2a: Hitmontop|Hitmontop, M|263\/304
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Flygon
+|-unboost|p1a: Flygon|atk|1
+|move|p1a: Flygon|Defog|p2a: Hitmontop
+|-unboost|p2a: Hitmontop|evasion|1
+|-sideend|p1: angler management|Stealth Rock|[from] move: Defog|[of] p1a: Flygon
+|
+|-heal|p2a: Hitmontop|282\/304|[from] item: Leftovers
+|turn|11
+|chat|asd12|ohhh, nice defoger
+|join|bleve
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Hitmontop|High Jump Kick|p1a: Florges
+|-resisted|p1a: Florges
+|-damage|p1a: Florges|289\/360
+|
+|-heal|p1a: Florges|311\/360|[from] item: Leftovers
+|-heal|p2a: Hitmontop|301\/304|[from] item: Leftovers
+|turn|12
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432 brn
+|move|p1a: Florges|Moonblast|p2a: Amoonguss
+|-resisted|p2a: Amoonguss
+|-damage|p2a: Amoonguss|359\/432 brn
+|
+|-heal|p1a: Florges|333\/360|[from] item: Leftovers
+|-heal|p2a: Amoonguss|386\/432 brn|[from] item: Black Sludge
+|-damage|p2a: Amoonguss|332\/432 brn|[from] brn
+|turn|13
+|
+|move|p1a: Florges|Moonblast|p2a: Amoonguss
+|-resisted|p2a: Amoonguss
+|-damage|p2a: Amoonguss|257\/432 brn
+|move|p2a: Amoonguss|Sludge Bomb|p1a: Florges
+|-supereffective|p1a: Florges
+|-damage|p1a: Florges|181\/360
+|
+|-heal|p1a: Florges|203\/360|[from] item: Leftovers
+|-heal|p2a: Amoonguss|284\/432 brn|[from] item: Black Sludge
+|-damage|p2a: Amoonguss|230\/432 brn|[from] brn
+|turn|14
+|join|BEEN TRILL
+|
+|switch|p2a: Dugtrio|Dugtrio, F|49\/212
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p1a: Florges|225\/360|[from] item: Leftovers
+|turn|15
+|
+|switch|p2a: Amoonguss|Amoonguss, M|374\/432 brn
+|move|p1a: Florges|Moonblast|p2a: Amoonguss
+|-resisted|p2a: Amoonguss
+|-damage|p2a: Amoonguss|306\/432 brn
+|-unboost|p2a: Amoonguss|spa|1
+|
+|-heal|p1a: Florges|360\/360|[from] move: Wish|[wisher] Florges
+|-heal|p2a: Amoonguss|333\/432 brn|[from] item: Black Sludge
+|-damage|p2a: Amoonguss|279\/432 brn|[from] brn
+|turn|16
+|
+|switch|p1a: Lucario|Lucario, F|289\/289
+|move|p2a: Amoonguss|Sludge Bomb|p1a: Lucario
+|-immune|p1a: Lucario|[msg]
+|
+|-heal|p2a: Amoonguss|306\/432 brn|[from] item: Black Sludge
+|-damage|p2a: Amoonguss|252\/432 brn|[from] brn
+|turn|17
+|join|Dudeman130498
+|
+|switch|p2a: Hitmontop|Hitmontop, M|301\/304
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Lucario
+|-unboost|p1a: Lucario|atk|1
+|move|p1a: Lucario|Nasty Plot|p1a: Lucario
+|-boost|p1a: Lucario|spa|2
+|
+|-heal|p2a: Hitmontop|304\/304|[from] item: Leftovers
+|turn|18
+|
+|switch|p1a: Going Postal|Fletchinder, F|291\/291
+|move|p2a: Hitmontop|High Jump Kick|p1a: Going Postal
+|-resisted|p1a: Going Postal
+|-damage|p1a: Going Postal|179\/291
+|
+|turn|19
+|
+|switch|p2a: Slowbro|Slowbro, F|394\/394
+|move|p1a: Going Postal|Will-O-Wisp|p2a: Slowbro
+|-status|p2a: Slowbro|brn
+|
+|-damage|p2a: Slowbro|345\/394 brn|[from] brn
+|turn|20
+|
+|switch|p1a: Snorlax|Snorlax, F|490\/491 slp
+|move|p2a: Slowbro|Calm Mind|p2a: Slowbro
+|-boost|p2a: Slowbro|spa|1
+|-boost|p2a: Slowbro|spd|1
+|
+|-heal|p1a: Snorlax|491\/491 slp|[from] item: Leftovers
+|-heal|p2a: Slowbro|369\/394 brn|[from] item: Leftovers
+|-damage|p2a: Slowbro|320\/394 brn|[from] brn
+|turn|21
+|
+|cant|p1a: Snorlax|slp
+|move|p1a: Snorlax|Sleep Talk|p1a: Snorlax
+|move|p1a: Snorlax|Double-Edge|p2a: Slowbro|[from]Sleep Talk
+|-damage|p2a: Slowbro|212\/394 brn
+|-damage|p1a: Snorlax|455\/491 slp|[from] recoil|[of] p2a: Slowbro
+|move|p2a: Slowbro|Calm Mind|p2a: Slowbro
+|-boost|p2a: Slowbro|spa|1
+|-boost|p2a: Slowbro|spd|1
+|
+|-heal|p1a: Snorlax|485\/491 slp|[from] item: Leftovers
+|-heal|p2a: Slowbro|236\/394 brn|[from] item: Leftovers
+|-damage|p2a: Slowbro|187\/394 brn|[from] brn
+|turn|22
+|
+|cant|p1a: Snorlax|slp
+|move|p2a: Slowbro|Slack Off|p2a: Slowbro
+|-heal|p2a: Slowbro|384\/394 brn
+|
+|-heal|p1a: Snorlax|491\/491 slp|[from] item: Leftovers
+|-heal|p2a: Slowbro|394\/394 brn|[from] item: Leftovers
+|-damage|p2a: Slowbro|345\/394 brn|[from] brn
+|turn|23
+|
+|-curestatus|p1a: Snorlax|slp
+|move|p1a: Snorlax|Curse|p1a: Snorlax
+|-boost|p1a: Snorlax|atk|1
+|-boost|p1a: Snorlax|def|1
+|-unboost|p1a: Snorlax|spe|1
+|move|p2a: Slowbro|Psyshock|p1a: Snorlax
+|-damage|p1a: Snorlax|344\/491
+|
+|-heal|p2a: Slowbro|369\/394 brn|[from] item: Leftovers
+|-heal|p1a: Snorlax|374\/491|[from] item: Leftovers
+|-damage|p2a: Slowbro|320\/394 brn|[from] brn
+|turn|24
+|
+|move|p2a: Slowbro|Calm Mind|p2a: Slowbro
+|-boost|p2a: Slowbro|spa|1
+|-boost|p2a: Slowbro|spd|1
+|move|p1a: Snorlax|Double-Edge|p2a: Slowbro
+|-crit|p2a: Slowbro
+|-damage|p2a: Slowbro|82\/394 brn
+|-damage|p1a: Snorlax|295\/491|[from] recoil|[of] p2a: Slowbro
+|
+|-heal|p2a: Slowbro|106\/394 brn|[from] item: Leftovers
+|-heal|p1a: Snorlax|325\/491|[from] item: Leftovers
+|-damage|p2a: Slowbro|57\/394 brn|[from] brn
+|turn|25
+|
+|move|p2a: Slowbro|Slack Off|p2a: Slowbro
+|-heal|p2a: Slowbro|254\/394 brn
+|move|p1a: Snorlax|Double-Edge|p2a: Slowbro
+|-crit|p2a: Slowbro
+|-damage|p2a: Slowbro|11\/394 brn
+|-damage|p1a: Snorlax|245\/491|[from] recoil|[of] p2a: Slowbro
+|
+|-heal|p2a: Slowbro|35\/394 brn|[from] item: Leftovers
+|-heal|p1a: Snorlax|275\/491|[from] item: Leftovers
+|-damage|p2a: Slowbro|0 fnt|[from] brn
+|faint|p2a: Slowbro
+|chat|asd12|WTF
+|chat|Dudeman130498|:^)
+|
+|switch|p2a: Mienshao|Mienshao, M|271\/271
+|turn|26
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Mienshao|Knock Off|p1a: Florges
+|-resisted|p1a: Florges
+|-damage|p1a: Florges|287\/360
+|-enditem|p1a: Florges|Leftovers|[from] move: Knock Off|[of] p2a: Mienshao
+|-damage|p2a: Mienshao|244\/271|[from] item: Life Orb
+|
+|turn|27
+|
+|move|p2a: Mienshao|U-turn|p1a: Florges
+|-resisted|p1a: Florges
+|-damage|p1a: Florges|236\/360
+|-damage|p2a: Mienshao|217\/271|[from] item: Life Orb
+|
+|switch|p2a: Amoonguss|Amoonguss, M|396\/432 brn
+|move|p1a: Florges|Moonblast|p2a: Amoonguss
+|-resisted|p2a: Amoonguss
+|-damage|p2a: Amoonguss|329\/432 brn
+|
+|-heal|p2a: Amoonguss|356\/432 brn|[from] item: Black Sludge
+|-damage|p2a: Amoonguss|302\/432 brn|[from] brn
+|turn|28
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Amoonguss|Spore|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-heal|p2a: Amoonguss|329\/432 brn|[from] item: Black Sludge
+|-damage|p2a: Amoonguss|275\/432 brn|[from] brn
+|turn|29
+|
+|switch|p1a: Snorlax|Snorlax, F|275\/491
+|switch|p2a: Mienshao|Mienshao, M|271\/271
+|
+|-heal|p1a: Snorlax|305\/491|[from] item: Leftovers
+|turn|30
+|
+|move|p2a: Mienshao|High Jump Kick|p1a: Snorlax
+|-supereffective|p1a: Snorlax
+|-damage|p1a: Snorlax|0 fnt
+|-damage|p2a: Mienshao|244\/271|[from] item: Life Orb
+|faint|p1a: Snorlax
+|
+|
+|switch|p1a: Going Postal|Fletchinder, F|179\/291
+|turn|31
+|chat|BEEN TRILL|fletch god
+|chat|BEEN TRILL|willo this bitch
+|
+|switch|p2a: Raikou|Raikou, shiny|322\/322
+|-ability|p2a: Raikou|Pressure
+|move|p1a: Going Postal|Will-O-Wisp|p2a: Raikou
+|-status|p2a: Raikou|brn
+|
+|-damage|p2a: Raikou|282\/322 brn|[from] brn
+|turn|32
+|
+|switch|p1a: Swampert|Swampert, F|256\/401 tox
+|move|p2a: Raikou|Volt Switch|p1a: Swampert
+|-immune|p1a: Swampert|[msg]
+|
+|-heal|p1a: Swampert|281\/401 tox|[from] item: Leftovers
+|-damage|p2a: Raikou|242\/322 brn|[from] brn
+|-damage|p1a: Swampert|256\/401 tox|[from] psn
+|turn|33
+|
+|switch|p2a: Hitmontop|Hitmontop, M|304\/304
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Swampert
+|-unboost|p1a: Swampert|atk|1
+|move|p1a: Swampert|Stealth Rock|p2a: Hitmontop
+|-sidestart|p2: asd12|move: Stealth Rock
+|
+|-heal|p1a: Swampert|281\/401 tox|[from] item: Leftovers
+|-damage|p1a: Swampert|231\/401 tox|[from] psn
+|turn|34
+|chat|BEEN TRILL|double to the fletch
+|chat|BEEN TRILL|noooooooooo
+|chat|angler management|too slow :[
+|
+|move|p2a: Hitmontop|Rapid Spin|p1a: Swampert
+|-damage|p1a: Swampert|219\/401 tox
+|-sideend|p2: asd12|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Hitmontop
+|move|p1a: Swampert|Scald|p2a: Hitmontop
+|-damage|p2a: Hitmontop|252\/304
+|-status|p2a: Hitmontop|brn
+|
+|-heal|p2a: Hitmontop|271\/304 brn|[from] item: Leftovers
+|-heal|p1a: Swampert|244\/401 tox|[from] item: Leftovers
+|-damage|p2a: Hitmontop|233\/304 brn|[from] brn
+|-damage|p1a: Swampert|169\/401 tox|[from] psn
+|turn|35
+|chat|bleve|nerds
+|
+|move|p2a: Hitmontop|High Jump Kick|p1a: Swampert
+|-damage|p1a: Swampert|109\/401 tox
+|move|p1a: Swampert|Stealth Rock|p2a: Hitmontop
+|-sidestart|p2: asd12|move: Stealth Rock
+|
+|-heal|p2a: Hitmontop|252\/304 brn|[from] item: Leftovers
+|-heal|p1a: Swampert|134\/401 tox|[from] item: Leftovers
+|-damage|p2a: Hitmontop|214\/304 brn|[from] brn
+|-damage|p1a: Swampert|34\/401 tox|[from] psn
+|turn|36
+|chat|bleve|finally finals are over
+|
+|move|p2a: Hitmontop|Rapid Spin|p1a: Swampert
+|-damage|p1a: Swampert|27\/401 tox
+|-sideend|p2: asd12|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Hitmontop
+|move|p1a: Swampert|Stealth Rock|p2a: Hitmontop
+|-sidestart|p2: asd12|move: Stealth Rock
+|
+|-heal|p2a: Hitmontop|233\/304 brn|[from] item: Leftovers
+|-heal|p1a: Swampert|52\/401 tox|[from] item: Leftovers
+|-damage|p2a: Hitmontop|195\/304 brn|[from] brn
+|-damage|p1a: Swampert|0 fnt|[from] psn
+|faint|p1a: Swampert
+|chat|BEEN TRILL|the finals arent over game three is tonight
+|chat|bleve|;]
+|chat|BEEN TRILL|dumbass
+|chat|bleve|;[
+|chat|angler management|does acro kill
+|chat|bleve|stop being mean to me tre
+|chat|angler management|help
+|chat|bleve|ye
+|chat|bleve|just
+|chat|bleve|sd
+|chat|bleve|and sweep
+|chat|Dudeman130498|^
+|chat|angler management|he's balk though
+|chat|Dudeman130498|sd
+|chat|angler management|kou
+|chat|angler management|watch this man bring the
+|chat|Dudeman130498|w8
+|chat|BEEN TRILL|whats normal fletch set
+|chat|angler management|rock tomb
+|chat|bleve|oh
+|chat|asd12|lol
+|chat|bleve|willo roost sd acro
+|
+|switch|p1a: Going Postal|Fletchinder, F|179\/291
+|turn|37
+|chat|BEEN TRILL|spread
+|
+|move|p1a: Going Postal|Roost|p1a: Going Postal
+|-heal|p1a: Going Postal|291\/291
+|move|p2a: Hitmontop|Rapid Spin|p1a: Going Postal
+|-damage|p1a: Going Postal|277\/291
+|-sideend|p2: asd12|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Hitmontop
+|
+|-heal|p2a: Hitmontop|214\/304 brn|[from] item: Leftovers
+|-damage|p2a: Hitmontop|176\/304 brn|[from] brn
+|turn|38
+|chat|Dudeman130498|sd twice imo
+|chat|bleve|i just creep honch
+|chat|bleve|rest in hp
+|chat|bleve|and atk
+|
+|move|p1a: Going Postal|Acrobatics|p2a: Hitmontop
+|-supereffective|p2a: Hitmontop
+|-damage|p2a: Hitmontop|0 fnt
+|faint|p2a: Hitmontop
+|
+|
+|switch|p2a: Raikou|Raikou, shiny|242\/322 brn
+|-ability|p2a: Raikou|Pressure
+|turn|39
+|chat|Dudeman130498|stay in imo
+|
+|switch|p1a: Florges|Florges, F|236\/360
+|move|p2a: Raikou|Hidden Power|p1a: Florges
+|-damage|p1a: Florges|189\/360
+|
+|-damage|p2a: Raikou|202\/322 brn|[from] brn
+|turn|40
+|chat|BEEN TRILL|no item
+|chat|Dudeman130498|he's hp icing
+|chat|bleve|ye
+|
+|switch|p2a: Amoonguss|Amoonguss, M|419\/432 brn
+|switch|p1a: Flygon|Flygon, F|204\/301
+|
+|-heal|p2a: Amoonguss|432\/432 brn|[from] item: Black Sludge
+|-damage|p2a: Amoonguss|378\/432 brn|[from] brn
+|turn|41
+|
+|move|p1a: Flygon|U-turn|p2a: Amoonguss
+|-damage|p2a: Amoonguss|302\/432 brn
+|
+|switch|p1a: Florges|Florges, F|189\/360
+|move|p2a: Amoonguss|Spore|p1a: Florges
+|-status|p1a: Florges|slp
+|
+|-heal|p2a: Amoonguss|329\/432 brn|[from] item: Black Sludge
+|-damage|p2a: Amoonguss|275\/432 brn|[from] brn
+|turn|42
+|
+|switch|p1a: Lucario|Lucario, F|289\/289
+|switch|p2a: Mienshao|Mienshao, M|271\/271
+|
+|turn|43
+|chat|bleve|1 more turn of burn damage on kou
+|chat|bleve|and fletch sweeps after sd
+|chat|BEEN TRILL|s
+|chat|BEEN TRILL|d
+|chat|BEEN TRILL|plz
+|chat|BEEN TRILL|noa
+|chat|asd12|shatap nerds
+|chat|BEEN TRILL|its lose lose for him
+|chat|angler management|hmm
+|join|blavo
+|chat|angler management|do I sac luc
+|chat|blavo|kek
+|chat|blavo|pls outspeed
+|chat|bleve|kek
+|chat|angler management|HELP!!!
+|chat|bleve|kek
+|chat|blavo|and ko
+|chat|bleve|kek
+|chat|bleve|kek
+|chat|bleve|kek
+|chat|bleve|i think u lose
+|chat|angler management|how do I type
+|chat|BEEN TRILL|set up
+|chat|angler management|how do I breathe
+|chat|blavo|pls no critc from es
+|chat|BEEN TRILL|just set up with this
+|chat|BEEN TRILL|he has to edge
+|
+|switch|p1a: Going Postal|Fletchinder, F|277\/291
+|move|p2a: Mienshao|High Jump Kick|p1a: Going Postal|[miss]
+|-miss|p2a: Mienshao|p1a: Going Postal
+|-damage|p2a: Mienshao|136\/271|[from] highjumpkick
+|
+|turn|44
+|chat|blavo|NO
+|chat|bleve|kek
+|chat|asd12|ASDFASDF
+|chat|BEEN TRILL|sd
+|chat|BEEN TRILL|gg
+|
+|switch|p2a: Dugtrio|Dugtrio, F|49\/212
+|move|p1a: Going Postal|Swords Dance|p1a: Going Postal
+|-boost|p1a: Going Postal|atk|2
+|
+|turn|45
+|
+|move|p1a: Going Postal|Acrobatics|p2a: Dugtrio
+|-damage|p2a: Dugtrio|0 fnt
+|faint|p2a: Dugtrio
+|
+|chat|bleve|acro wont kill
+|chat|bleve|kou unless max
+|chat|Dudeman130498|^
+|chat|BEEN TRILL|ye
+|
+|switch|p2a: Raikou|Raikou, shiny|202\/322 brn
+|-ability|p2a: Raikou|Pressure
+|turn|46
+|chat|BEEN TRILL|just go to flygon
+|chat|BEEN TRILL|ez
+|chat|Dudeman130498|^
+|
+|move|p1a: Going Postal|Roost|p1a: Going Postal
+|-heal|p1a: Going Postal|291\/291
+|move|p2a: Raikou|Volt Switch|p1a: Going Postal
+|-damage|p1a: Going Postal|83\/291
+|
+|switch|p2a: Mienshao|Mienshao, M|226\/271
+|
+|turn|47
+|chat|BEEN TRILL|.
+|
+|move|p2a: Mienshao|Fake Out|p1a: Going Postal
+|-damage|p1a: Going Postal|0 fnt
+|-damage|p2a: Mienshao|199\/271|[from] item: Life Orb
+|faint|p1a: Going Postal
+|
+|chat|Dudeman130498|,
+|chat|bleve|lel
+|chat|BEEN TRILL|.
+|
+|switch|p1a: Flygon|Flygon, F|204\/301
+|turn|48
+|chat|BEEN TRILL|BEEN TRILL: just go to flygon
+|chat|bleve|i thought this was scarf
+|
+|move|p1a: Flygon|U-turn|p2a: Mienshao
+|-resisted|p2a: Mienshao
+|-damage|p2a: Mienshao|146\/271
+|
+|switch|p1a: Florges|Florges, F|189\/360 slp
+|move|p2a: Mienshao|High Jump Kick|p1a: Florges
+|-crit|p1a: Florges
+|-resisted|p1a: Florges
+|-damage|p1a: Florges|0 fnt
+|-damage|p2a: Mienshao|119\/271|[from] item: Life Orb
+|faint|p1a: Florges
+|
+|leave|Dudeman130498
+|chat|bleve|mfw
+|
+|switch|p1a: Lucario|Lucario, F|289\/289
+|turn|49
+|chat|bleve|anger is shit
+|chat|angler management|lol
+|chat|angler management|how to choke
+|join|epic4eternity
+|
+|move|p2a: Mienshao|High Jump Kick|p1a: Lucario
+|-supereffective|p1a: Lucario
+|-damage|p1a: Lucario|0 fnt
+|-damage|p2a: Mienshao|92\/271|[from] item: Life Orb
+|faint|p1a: Lucario
+|
+|chat|BEEN TRILL|what set
+|
+|switch|p1a: Flygon|Flygon, F|204\/301
+|turn|50
+|chat|BEEN TRILL|was that
+|chat|angler management|np
+|chat|bleve|special
+|
+|move|p1a: Flygon|Earthquake|p2a: Mienshao
+|-damage|p2a: Mienshao|0 fnt
+|faint|p2a: Mienshao
+|
+|
+|switch|p2a: Raikou|Raikou, shiny|202\/322 brn
+|-ability|p2a: Raikou|Pressure
+|turn|51
+|
+|move|p2a: Raikou|Hidden Power|p1a: Flygon
+|-supereffective|p1a: Flygon
+|-damage|p1a: Flygon|0 fnt
+|faint|p1a: Flygon
+|
+|win|asd12
+|raw|Ladder updating...
+|chat|asd12|GG nerd
+|chat|BEEN TRILL|vac doesnt kill
+|chat|BEEN TRILL|?
+|chat|bleve|eww
+|leave|angler management
+|player|p1
+|join|Dudeman130498
+|chat|bleve|**NERD**
+|raw|angler management's rating: 1563 &rarr; <strong>1532<\/strong><br \/>(-31 for losing)
+|raw|asd12's rating: 1348 &rarr; <strong>1379<\/strong><br \/>(+31 for winning)
+|leave|bleve
+|leave|epic4eternity
+|leave|BFoxy
+|chat|asd12|unles timid + max dmg roll + life orb
+|leave|BEEN TRILL
+|leave|Dudeman130498

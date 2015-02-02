@@ -1,0 +1,344 @@
+|join|Suckerformetal
+|join|Alek.Freeman
+|player|p1|Suckerformetal|265
+|player|p2|Alek.Freeman|2
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Celebi
+|poke|p1|Rotom-Wash
+|poke|p1|Scizor, M
+|poke|p1|Landorus-Therian, M
+|poke|p1|Mienshao, M
+|poke|p1|Gengar, F
+|poke|p2|Salamence, F
+|poke|p2|Scizor, M
+|poke|p2|Dragonite, M
+|poke|p2|Kyurem-Black
+|poke|p2|Magnezone
+|poke|p2|Starmie
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|382\/382
+|switch|p2a: Dragonite|Dragonite, M|324\/324
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Dragonite
+|-unboost|p2a: Dragonite|atk|1
+|turn|1
+|callback|decision
+|
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Dragonite
+|-sidestart|p2: Alek.Freeman|move: Stealth Rock
+|move|p2a: Dragonite|Draco Meteor|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|27\/382
+|-unboost|p2a: Dragonite|spa|2
+|-damage|p2a: Dragonite|292\/324|[from] item: Life Orb
+|
+|-heal|p1a: Landorus-Therian|50\/382|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|move|p2a: Dragonite|ExtremeSpeed|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|-damage|p2a: Dragonite|260\/324|[from] item: Life Orb
+|faint|p1a: Landorus-Therian
+|
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|298\/298
+|turn|3
+|callback|decision
+|
+|move|p2a: Dragonite|ExtremeSpeed|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|216\/298
+|-damage|p2a: Dragonite|228\/324|[from] item: Life Orb
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Dragonite
+|-damage|p2a: Dragonite|123\/324
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, F|261\/261
+|
+|turn|4
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|337\/337
+|-damage|p2a: Scizor|295\/337|[from] Stealth Rock
+|move|p1a: Gengar|Substitute|p1a: Gengar
+|-start|p1a: Gengar|Substitute
+|-damage|p1a: Gengar|196\/261
+|
+|-heal|p1a: Gengar|212\/261|[from] item: Black Sludge
+|turn|5
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Gengar
+|-end|p1a: Gengar|Substitute
+|move|p1a: Gengar|Focus Blast|p2a: Scizor|[miss]
+|-miss|p1a: Gengar|p2a: Scizor
+|
+|-heal|p1a: Gengar|228\/261|[from] item: Black Sludge
+|turn|6
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|216\/298
+|move|p2a: Scizor|Bullet Punch|p1a: Rotom-Wash
+|-crit|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|135\/298
+|
+|turn|7
+|callback|decision
+|
+|switch|p2a: Magnezone|Magnezone|282\/282
+|-damage|p2a: Magnezone|265\/282|[from] Stealth Rock
+|move|p1a: Rotom-Wash|Trick|p2a: Magnezone
+|-activate|p1a: Rotom-Wash|move: Trick|[of] p2a: Magnezone
+|-item|p2a: Magnezone|Choice Scarf|[from] move: Trick
+|-item|p1a: Rotom-Wash|Choice Scarf|[from] move: Trick
+|
+|turn|8
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Magnezone
+|-crit|p2a: Magnezone
+|-resisted|p2a: Magnezone
+|-damage|p2a: Magnezone|164\/282
+|callback|decision
+|
+|switch|p1a: Celebi|Celebi|404\/404
+|move|p2a: Magnezone|Volt Switch|p1a: Celebi
+|-crit|p1a: Celebi
+|-resisted|p1a: Celebi
+|-damage|p1a: Celebi|311\/404
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|295\/337
+|-damage|p2a: Scizor|253\/337|[from] Stealth Rock
+|
+|-heal|p1a: Celebi|336\/404|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p1a: Celebi|Thunder Wave|p2a: Scizor
+|-status|p2a: Scizor|par
+|move|p2a: Scizor|U-turn|p1a: Celebi
+|-supereffective|p1a: Celebi
+|-damage|p1a: Celebi|0 fnt
+|faint|p1a: Celebi
+|callback|decision
+|
+|switch|p2a: Starmie|Starmie|324\/324
+|-damage|p2a: Starmie|284\/324|[from] Stealth Rock
+|
+|-heal|p2a: Starmie|304\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|135\/298
+|turn|10
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Thunderbolt|p2a: Starmie
+|-supereffective|p2a: Starmie
+|-damage|p2a: Starmie|0 fnt
+|faint|p2a: Starmie
+|
+|callback|decision
+|
+|switch|p2a: Kyurem-Black|Kyurem-Black|392\/392
+|-damage|p2a: Kyurem-Black|294\/392|[from] Stealth Rock
+|-ability|p2a: Kyurem-Black|Teravolt
+|turn|11
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Thunderbolt|p2a: Kyurem-Black
+|-resisted|p2a: Kyurem-Black
+|-damage|p2a: Kyurem-Black|218\/392
+|-status|p2a: Kyurem-Black|par
+|cant|p2a: Kyurem-Black|par
+|
+|turn|12
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Thunderbolt|p2a: Kyurem-Black
+|-resisted|p2a: Kyurem-Black
+|-damage|p2a: Kyurem-Black|143\/392 par
+|cant|p2a: Kyurem-Black|par
+|
+|turn|13
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Thunderbolt|p2a: Kyurem-Black
+|-resisted|p2a: Kyurem-Black
+|-damage|p2a: Kyurem-Black|71\/392 par
+|move|p2a: Kyurem-Black|Fusion Bolt|p1a: Rotom-Wash
+|-crit|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, F|228\/261
+|turn|14
+|callback|decision
+|
+|move|p1a: Gengar|Substitute|p1a: Gengar
+|-start|p1a: Gengar|Substitute
+|-damage|p1a: Gengar|163\/261
+|move|p2a: Kyurem-Black|Fusion Bolt|p1a: Gengar
+|-end|p1a: Gengar|Substitute
+|
+|-heal|p1a: Gengar|179\/261|[from] item: Black Sludge
+|turn|15
+|callback|decision
+|
+|move|p1a: Gengar|Substitute|p1a: Gengar
+|-start|p1a: Gengar|Substitute
+|-damage|p1a: Gengar|114\/261
+|move|p2a: Kyurem-Black|Fusion Bolt|p1a: Gengar
+|-end|p1a: Gengar|Substitute
+|
+|-heal|p1a: Gengar|130\/261|[from] item: Black Sludge
+|turn|16
+|callback|decision
+|
+|move|p1a: Gengar|Disable|p2a: Kyurem-Black
+|-start|p2a: Kyurem-Black|Disable|Fusion Bolt
+|cant|p2a: Kyurem-Black|Disable|Fusion Bolt
+|
+|-heal|p1a: Gengar|146\/261|[from] item: Black Sludge
+|turn|17
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|253\/337 par
+|-damage|p2a: Scizor|211\/337 par|[from] Stealth Rock
+|move|p1a: Gengar|Substitute|p1a: Gengar
+|-start|p1a: Gengar|Substitute
+|-damage|p1a: Gengar|81\/261
+|
+|-heal|p1a: Gengar|97\/261|[from] item: Black Sludge
+|turn|18
+|callback|decision
+|
+|cant|p2a: Scizor|par
+|move|p1a: Gengar|Focus Blast|p2a: Scizor
+|-damage|p2a: Scizor|40\/337 par
+|
+|-heal|p1a: Gengar|113\/261|[from] item: Black Sludge
+|turn|19
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Gengar
+|-end|p1a: Gengar|Substitute
+|move|p1a: Gengar|Shadow Ball|p2a: Scizor
+|-resisted|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|faint|p2a: Scizor
+|
+|-heal|p1a: Gengar|129\/261|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p2a: Magnezone|Magnezone|164\/282
+|-damage|p2a: Magnezone|147\/282|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|move|p2a: Magnezone|Thunderbolt|p1a: Gengar
+|-damage|p1a: Gengar|0 fnt
+|faint|p1a: Gengar
+|
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, M|340\/340
+|turn|21
+|callback|decision
+|
+|move|p2a: Magnezone|Thunderbolt|p1a: Scizor
+|-damage|p1a: Scizor|142\/340
+|move|p1a: Scizor|U-turn|p2a: Magnezone
+|-resisted|p2a: Magnezone
+|-damage|p2a: Magnezone|60\/282
+|callback|decision
+|
+|switch|p1a: Mienshao|Mienshao, M|271\/271
+|
+|turn|22
+|callback|decision
+|
+|switch|p2a: Kyurem-Black|Kyurem-Black|71\/392 par
+|-damage|p2a: Kyurem-Black|0 fnt|[from] Stealth Rock
+|faint|p2a: Kyurem-Black
+|move|p1a: Mienshao|Fake Out|p2: Kyurem-Black|[notarget]
+|-notarget
+|
+|callback|decision
+|
+|switch|p2a: Dragonite|Dragonite, M|123\/324
+|-damage|p2a: Dragonite|42\/324|[from] Stealth Rock
+|turn|23
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, M|142\/340
+|move|p2a: Dragonite|ExtremeSpeed|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|78\/340
+|-damage|p2a: Dragonite|10\/324|[from] item: Life Orb
+|
+|turn|24
+|callback|decision
+|
+|move|p1a: Scizor|Quick Attack|p2a: Dragonite
+|-damage|p2a: Dragonite|0 fnt
+|faint|p2a: Dragonite
+|
+|callback|decision
+|
+|switch|p2a: Magnezone|Magnezone|60\/282
+|-damage|p2a: Magnezone|43\/282|[from] Stealth Rock
+|turn|25
+|callback|decision
+|
+|move|p1a: Scizor|Quick Attack|p2a: Magnezone
+|-resisted|p2a: Magnezone
+|-damage|p2a: Magnezone|0 fnt
+|faint|p2a: Magnezone
+|
+|callback|decision
+|
+|switch|p2a: Salamence|Salamence, F|332\/332
+|-damage|p2a: Salamence|249\/332|[from] Stealth Rock
+|turn|26
+|callback|decision
+|
+|move|p1a: Scizor|Quick Attack|p2a: Salamence
+|-damage|p2a: Salamence|96\/332
+|move|p2a: Salamence|Outrage|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|faint|p1a: Scizor
+|-boost|p2a: Salamence|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|switch|p1a: Mienshao|Mienshao, M|271\/271
+|turn|27
+|callback|decision
+|
+|move|p1a: Mienshao|Fake Out|p2a: Salamence
+|-crit|p2a: Salamence
+|-damage|p2a: Salamence|0 fnt
+|-damage|p1a: Mienshao|244\/271|[from] item: Life Orb
+|faint|p2a: Salamence
+|
+|win|Suckerformetal
+|raw|Ladder updating...
+|raw|Suckerformetal's rating: 1868 &rarr; <strong>1877<\/strong><br \/>(+9 for winning)
+|raw|Alek.Freeman's rating: 1961 &rarr; <strong>1957<\/strong><br \/>(-4 for losing)

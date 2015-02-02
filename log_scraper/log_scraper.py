@@ -3,12 +3,12 @@ from path import path
 import requests
 
 def get_usernames():
-    with open("ladder_names.txt") as f:
+    with open("uu/ladder_names.txt") as f:
         usernames = f.read().split("\n")
     return usernames
 
 def get_log_usernames():
-    names = path("./logs")
+    names = path("./uu/logs")
     return names.listdir()
 
 
@@ -17,7 +17,7 @@ def get_user_replays(username):
     html = requests.get(USERNAME_URL).text
     soup = BeautifulSoup(html)
     links = soup.find_all('a')
-    links = [link.get("href").encode("utf-8") for link in links if "ou" in link.get("href")]
+    links = [link.get("href").encode("utf-8") for link in links if "uu" in link.get("href")]
     return links
 
 def get_logs(link):
@@ -29,22 +29,17 @@ def get_logs(link):
 
 if __name__ == "__main__":
     usernames = get_usernames()
-    user = "WECAMEASROMANS"
     for user in usernames:
-        dir = path("./logs") / user.decode("utf-8")
-        if not dir.exists():
-            continue
-        already_logs = dir.files()
-        print user
+        dir = path("./uu/logs") / user.decode("utf-8")
+	if not dir.exists():
+            dir.mkdir()
         links = get_user_replays(user)
+	print user
         for link in links:
-            if (dir + link + ".log") in already_logs:
-                continue
-            directory = path("logs/") / user
+            directory = path("uu/logs/") / user
             log = get_logs(link)
             if not directory.exists():
                 directory.makedirs()
-            with open("logs/%s/%s.log" % (user, link[1:]), 'w') as f:
+            with open("uu/logs/%s/%s.log" % (user, link[1:]), 'w') as f:
                 f.write(log)
-            print "writing new log"
 

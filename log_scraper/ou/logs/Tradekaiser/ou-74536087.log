@@ -1,0 +1,278 @@
+|join|Tradekaiser
+|join|IamGBS
+|player|p1|Tradekaiser|265
+|player|p2|IamGBS|269
+|gametype|singles
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Genesect
+|poke|p1|Charizard, F
+|poke|p1|Smeargle, M
+|poke|p1|Rotom-Wash
+|poke|p1|Excadrill, M
+|poke|p1|Tauros, M
+|poke|p2|Bisharp, F
+|poke|p2|Garchomp, M
+|poke|p2|Azumarill, M
+|poke|p2|Lucario, M
+|poke|p2|Thundurus, M
+|poke|p2|Deoxys-Defense
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|chat|IamGBS|good luck
+|
+|start
+|switch|p1a: Smeargle|Smeargle, M|271\/271
+|switch|p2a: Deoxys-Defense|Deoxys-Defense|304\/304
+|-ability|p2a: Deoxys-Defense|Pressure
+|turn|1
+|callback|decision
+|
+|move|p1a: Smeargle|Magic Coat|p1a: Smeargle
+|-singleturn|p1a: Smeargle|move: Magic Coat
+|move|p2a: Deoxys-Defense|Taunt|p1a: Smeargle
+|move|p1a: Smeargle|Taunt|p2a: Deoxys-Defense|[from]Magic Coat
+|-start|p2a: Deoxys-Defense|move: Taunt
+|
+|turn|2
+|callback|decision
+|chat|IamGBS|i thoguh u were gonna do that :p
+|
+|switch|p2a: Thundurus|Thundurus, M|299\/299
+|move|p1a: Smeargle|Spore|p2a: Thundurus
+|-status|p2a: Thundurus|slp
+|
+|turn|3
+|callback|decision
+|
+|cant|p2a: Thundurus|slp
+|move|p1a: Smeargle|Sticky Web|p2a: Thundurus
+|-sidestart|p2: IamGBS|move: Sticky Web
+|
+|turn|4
+|callback|decision
+|
+|-curestatus|p2a: Thundurus|slp
+|move|p2a: Thundurus|Thunderbolt|p1a: Smeargle
+|-damage|p1a: Smeargle|24\/271
+|move|p1a: Smeargle|Stealth Rock|p2a: Thundurus
+|-sidestart|p2: IamGBS|move: Stealth Rock
+|
+|turn|5
+|callback|decision
+|
+|move|p1a: Smeargle|Magic Coat|p1a: Smeargle
+|-singleturn|p1a: Smeargle|move: Magic Coat
+|move|p2a: Thundurus|Thunderbolt|p1a: Smeargle
+|-crit|p1a: Smeargle
+|-damage|p1a: Smeargle|0 fnt
+|faint|p1a: Smeargle
+|
+|callback|decision
+|
+|switch|p1a: Excadrill|Excadrill, M|405\/405
+|-ability|p1a: Excadrill|Mold Breaker
+|-item|p1a: Excadrill|Air Balloon
+|turn|6
+|callback|decision
+|
+|move|p2a: Thundurus|Focus Blast|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-damage|p1a: Excadrill|127\/405
+|-enditem|p1a: Excadrill|Air Balloon
+|move|p1a: Excadrill|Rock Slide|p2a: Thundurus
+|-supereffective|p2a: Thundurus
+|-damage|p2a: Thundurus|49\/299
+|
+|-heal|p2a: Thundurus|67\/299|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|283\/283
+|-boost|p1a: Genesect|atk|1|[from] ability: Download
+|move|p2a: Thundurus|Focus Blast|p1a: Genesect
+|-damage|p1a: Genesect|128\/283
+|
+|-heal|p2a: Thundurus|85\/299|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p2a: Thundurus|Thunder Wave|p1a: Genesect
+|-status|p1a: Genesect|par
+|move|p1a: Genesect|U-turn|p2a: Thundurus
+|-resisted|p2a: Thundurus
+|-damage|p2a: Thundurus|0 fnt
+|faint|p2a: Thundurus
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|241\/241
+|
+|callback|decision
+|
+|switch|p2a: Lucario|Lucario, M|281\/281
+|-activate|p2a: Lucario|move: Sticky Web
+|-unboost|p2a: Lucario|spe|1
+|-damage|p2a: Lucario|273\/281|[from] Stealth Rock
+|turn|9
+|callback|decision
+|
+|-formechange|p2a: Lucario|Lucario-Mega
+|message|Lucario has Mega Evolved into Mega Lucario!
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Lucario
+|-damage|p2a: Lucario|66\/281
+|move|p2a: Lucario|Nasty Plot|p2a: Lucario
+|-boost|p2a: Lucario|spa|2
+|
+|turn|10
+|callback|decision
+|
+|move|p2a: Lucario|Vacuum Wave|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|39\/241
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Lucario
+|-damage|p2a: Lucario|0 fnt
+|faint|p2a: Lucario
+|
+|callback|decision
+|
+|switch|p2a: Bisharp|Bisharp, F|279\/279
+|-damage|p2a: Bisharp|262\/279|[from] Stealth Rock
+|-activate|p2a: Bisharp|move: Sticky Web
+|-unboost|p2a: Bisharp|spe|1
+|-boost|p2a: Bisharp|atk|2|[from] ability: Defiant
+|turn|11
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|128\/283 par
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|move|p2a: Bisharp|Sucker Punch|p1a: Genesect
+|-fail|p1a: Genesect
+|
+|turn|12
+|callback|decision
+|
+|move|p2a: Bisharp|Knock Off|p1a: Genesect
+|-damage|p1a: Genesect|0 fnt
+|-damage|p2a: Bisharp|235\/279|[from] item: Life Orb
+|faint|p1a: Genesect
+|
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|39\/241
+|turn|13
+|callback|decision
+|
+|move|p2a: Bisharp|Sucker Punch|p1a: Rotom-Wash
+|-fail|p1a: Rotom-Wash
+|move|p1a: Rotom-Wash|Trick|p2a: Bisharp
+|-activate|p1a: Rotom-Wash|move: Trick|[of] p2a: Bisharp
+|-item|p2a: Bisharp|Choice Scarf|[from] move: Trick
+|-item|p1a: Rotom-Wash|Life Orb|[from] move: Trick
+|
+|turn|14
+|callback|decision
+|
+|switch|p1a: Tauros|Tauros, M|292\/292
+|move|p2a: Bisharp|Knock Off|p1a: Tauros
+|-damage|p1a: Tauros|0 fnt
+|faint|p1a: Tauros
+|
+|callback|decision
+|
+|switch|p1a: Charizard|Charizard, F|298\/298
+|turn|15
+|callback|decision
+|
+|-formechange|p1a: Charizard|Charizard-Mega-Y
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p1a: Charizard|Fire Blast|p2a: Bisharp
+|-supereffective|p2a: Bisharp
+|-damage|p2a: Bisharp|0 fnt
+|faint|p2a: Bisharp
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p2a: Deoxys-Defense|Deoxys-Defense|304\/304
+|-damage|p2a: Deoxys-Defense|266\/304|[from] Stealth Rock
+|-activate|p2a: Deoxys-Defense|move: Sticky Web
+|-unboost|p2a: Deoxys-Defense|spe|1
+|-ability|p2a: Deoxys-Defense|Pressure
+|turn|16
+|callback|decision
+|
+|move|p1a: Charizard|Fire Blast|p2a: Deoxys-Defense
+|-damage|p2a: Deoxys-Defense|43\/304
+|-enditem|p2a: Deoxys-Defense|Red Card|[of] p1a: Charizard
+|drag|p1a: Excadrill|Excadrill, M|127\/405
+|-ability|p1a: Excadrill|Mold Breaker
+|move|p2a: Deoxys-Defense|Stealth Rock|p1a: Excadrill
+|-sidestart|p1: Tradekaiser|move: Stealth Rock
+|
+|-weather|SunnyDay|[upkeep]
+|turn|17
+|callback|decision
+|
+|move|p1a: Excadrill|Earthquake|p2a: Deoxys-Defense
+|-damage|p2a: Deoxys-Defense|0 fnt
+|faint|p2a: Deoxys-Defense
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, M|357\/357
+|-activate|p2a: Garchomp|move: Sticky Web
+|-unboost|p2a: Garchomp|spe|1
+|-damage|p2a: Garchomp|335\/357|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|move|p2a: Garchomp|Outrage|p1a: Excadrill
+|-resisted|p1a: Excadrill
+|-damage|p1a: Excadrill|0 fnt
+|faint|p1a: Excadrill
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: Charizard|Charizard, F|298\/298
+|-formechange|p1a: Charizard|Charizard-Mega-Y
+|-damage|p1a: Charizard|149\/298|[from] Stealth Rock
+|turn|19
+|callback|decision
+|
+|move|p1a: Charizard|Dragon Pulse|p2a: Garchomp
+|-supereffective|p2a: Garchomp
+|-damage|p2a: Garchomp|47\/357
+|move|p2a: Garchomp|Outrage|p1a: Charizard
+|-damage|p1a: Charizard|0 fnt
+|faint|p1a: Charizard
+|
+|-weather|none
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|39\/241
+|-damage|p1a: Rotom-Wash|9\/241|[from] Stealth Rock
+|turn|20
+|callback|decision
+|chat|IamGBS|gg
+|
+|move|p2a: Garchomp|Outrage|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|
+|win|IamGBS
+|raw|Ladder updating...
+|raw|Tradekaiser's rating: 2047 &rarr; <strong>2039<\/strong><br \/>(-8 for losing)
+|raw|IamGBS's rating: 2324 &rarr; <strong>2329<\/strong><br \/>(+5 for winning)
+|chat|IamGBS|well played
+|leave|Tradekaiser
+|player|p1

@@ -1,0 +1,215 @@
+|join|Mlle Noob
+|join|AiAmEric
+|player|p1|Mlle Noob|1
+|player|p2|AiAmEric|10
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Fletchinder, F, shiny
+|poke|p1|Raikou, shiny
+|poke|p1|Absol, M
+|poke|p1|Donphan, M
+|poke|p1|Flygon, F
+|poke|p1|Uxie
+|poke|p2|Toxicroak, M
+|poke|p2|Quagsire, M
+|poke|p2|Absol, F
+|poke|p2|Rotom-Heat
+|poke|p2|Empoleon, F
+|poke|p2|Chesnaught, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: D-Angelo|Absol, M|271\/271
+|switch|p2a: Quagsire|Quagsire, M|394\/394
+|turn|1
+|
+|move|p1a: D-Angelo|Protect|p1a: D-Angelo
+|-singleturn|p1a: D-Angelo|Protect
+|move|p2a: Quagsire|Scald|p1a: D-Angelo
+|-activate|p1a: D-Angelo|Protect
+|
+|turn|2
+|
+|move|p1a: D-Angelo|Play Rough|p2a: Quagsire
+|-damage|p2a: Quagsire|313\/394
+|move|p2a: Quagsire|Scald|p1a: D-Angelo
+|-damage|p1a: D-Angelo|175\/271
+|-status|p1a: D-Angelo|brn
+|
+|-heal|p2a: Quagsire|337\/394|[from] item: Leftovers
+|-damage|p1a: D-Angelo|142\/271 brn|[from] brn
+|turn|3
+|
+|switch|p1a: Uzzi|Uxie|353\/353
+|move|p2a: Quagsire|Earthquake|p1a: Uzzi
+|-immune|p1a: Uzzi|[msg]
+|
+|-heal|p2a: Quagsire|361\/394|[from] item: Leftovers
+|turn|4
+|
+|move|p1a: Uzzi|Yawn|p2a: Quagsire
+|-start|p2a: Quagsire|move: Yawn|[of] p1a: Uzzi
+|move|p2a: Quagsire|Toxic|p1a: Uzzi|[miss]
+|-miss|p2a: Quagsire|p1a: Uzzi
+|
+|-heal|p2a: Quagsire|385\/394|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Empoleon|Empoleon, F|372\/372
+|move|p1a: Uzzi|Stealth Rock|p2a: Empoleon
+|-sidestart|p2: AiAmEric|move: Stealth Rock
+|
+|turn|6
+|
+|move|p1a: Uzzi|U-turn|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|347\/372
+|
+|switch|p1a: D-Angelo|Absol, M|142\/271 brn
+|move|p2a: Empoleon|Defog|p1a: D-Angelo
+|-unboost|p1a: D-Angelo|evasion|1
+|-sideend|p2: AiAmEric|Stealth Rock|[from] move: Defog|[of] p2a: Empoleon
+|
+|-heal|p2a: Empoleon|370\/372|[from] item: Leftovers
+|-damage|p1a: D-Angelo|109\/271 brn|[from] brn
+|turn|7
+|
+|switch|p2a: Quagsire|Quagsire, M|385\/394
+|detailschange|p1a: D-Angelo|Absol-Mega, M
+|message|Absol has Mega Evolved into Mega Absol!
+|move|p1a: D-Angelo|Protect|p1a: D-Angelo
+|-fail|p1a: D-Angelo
+|
+|-heal|p2a: Quagsire|394\/394|[from] item: Leftovers
+|-damage|p1a: D-Angelo|76\/271 brn|[from] brn
+|turn|8
+|
+|switch|p1a: Uzzi|Uxie|353\/353
+|move|p2a: Quagsire|Scald|p1a: Uzzi
+|-damage|p1a: Uzzi|311\/353
+|
+|-heal|p1a: Uzzi|333\/353|[from] item: Leftovers
+|turn|9
+|
+|move|p1a: Uzzi|Yawn|p2a: Quagsire
+|-start|p2a: Quagsire|move: Yawn|[of] p1a: Uzzi
+|move|p2a: Quagsire|Toxic|p1a: Uzzi
+|-status|p1a: Uzzi|tox
+|
+|-heal|p1a: Uzzi|353\/353 tox|[from] item: Leftovers
+|-damage|p1a: Uzzi|331\/353 tox|[from] psn
+|turn|10
+|
+|switch|p2a: Empoleon|Empoleon, F|370\/372
+|move|p1a: Uzzi|Stealth Rock|p2a: Empoleon
+|-sidestart|p2: AiAmEric|move: Stealth Rock
+|
+|-heal|p1a: Uzzi|353\/353 tox|[from] item: Leftovers
+|-heal|p2a: Empoleon|372\/372|[from] item: Leftovers
+|-damage|p1a: Uzzi|309\/353 tox|[from] psn
+|turn|11
+|
+|move|p1a: Uzzi|Knock Off|p2a: Empoleon
+|-damage|p2a: Empoleon|307\/372
+|-enditem|p2a: Empoleon|Leftovers|[from] move: Knock Off|[of] p1a: Uzzi
+|move|p2a: Empoleon|Defog|p1a: Uzzi
+|-unboost|p1a: Uzzi|evasion|1
+|-sideend|p2: AiAmEric|Stealth Rock|[from] move: Defog|[of] p2a: Empoleon
+|
+|-heal|p1a: Uzzi|331\/353 tox|[from] item: Leftovers
+|-damage|p1a: Uzzi|265\/353 tox|[from] psn
+|turn|12
+|
+|move|p1a: Uzzi|Yawn|p2a: Empoleon
+|-start|p2a: Empoleon|move: Yawn|[of] p1a: Uzzi
+|move|p2a: Empoleon|Scald|p1a: Uzzi
+|-damage|p1a: Uzzi|202\/353 tox
+|
+|-heal|p1a: Uzzi|224\/353 tox|[from] item: Leftovers
+|-damage|p1a: Uzzi|136\/353 tox|[from] psn
+|turn|13
+|
+|switch|p2a: Quagsire|Quagsire, M|394\/394
+|move|p1a: Uzzi|Knock Off|p2a: Quagsire
+|-damage|p2a: Quagsire|342\/394
+|-enditem|p2a: Quagsire|Leftovers|[from] move: Knock Off|[of] p1a: Uzzi
+|
+|-heal|p1a: Uzzi|158\/353 tox|[from] item: Leftovers
+|-damage|p1a: Uzzi|48\/353 tox|[from] psn
+|turn|14
+|
+|move|p1a: Uzzi|Yawn|p2a: Quagsire
+|-start|p2a: Quagsire|move: Yawn|[of] p1a: Uzzi
+|move|p2a: Quagsire|Scald|p1a: Uzzi
+|-damage|p1a: Uzzi|2\/353 tox
+|
+|-heal|p1a: Uzzi|24\/353 tox|[from] item: Leftovers
+|-damage|p1a: Uzzi|0 fnt|[from] psn
+|faint|p1a: Uzzi
+|
+|switch|p1a: Musho|Raikou, shiny|322\/322
+|-ability|p1a: Musho|Pressure
+|turn|15
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|303\/303
+|move|p1a: Musho|Thunderbolt|p2a: Rotom-Heat
+|-resisted|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|234\/303
+|
+|-heal|p2a: Rotom-Heat|252\/303|[from] item: Leftovers
+|turn|16
+|
+|move|p1a: Musho|Substitute|p1a: Musho
+|-start|p1a: Musho|Substitute
+|-damage|p1a: Musho|242\/322
+|move|p2a: Rotom-Heat|Overheat|p1a: Musho
+|-end|p1a: Musho|Substitute
+|-unboost|p2a: Rotom-Heat|spa|2
+|
+|-heal|p1a: Musho|262\/322|[from] item: Leftovers
+|-heal|p2a: Rotom-Heat|270\/303|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Musho|Substitute|p1a: Musho
+|-start|p1a: Musho|Substitute
+|-damage|p1a: Musho|182\/322
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Musho
+|-resisted|p1a: Musho
+|-activate|p1a: Musho|Substitute|[damage]
+|
+|switch|p2a: Quagsire|Quagsire, M|342\/394
+|
+|-heal|p1a: Musho|202\/322|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Musho|Calm Mind|p1a: Musho
+|-boost|p1a: Musho|spa|1
+|-boost|p1a: Musho|spd|1
+|move|p2a: Quagsire|Earthquake|p1a: Musho
+|-supereffective|p1a: Musho
+|-end|p1a: Musho|Substitute
+|
+|-heal|p1a: Musho|222\/322|[from] item: Leftovers
+|turn|19
+|leave|AiAmEric
+|player|p2
+|-message|aiameric lost due to inactivity.
+|
+|win|Mlle Noob
+|raw|Ladder updating...
+|raw|Mlle Noob's rating: 1325 &rarr; <strong>1337<\/strong><br \/>(+12 for winning)
+|raw|AiAmEric's rating: 1177 &rarr; <strong>1162<\/strong><br \/>(-15 for losing)
+|join|MissNoob
+|leave|MissNoob

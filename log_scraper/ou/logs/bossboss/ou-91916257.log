@@ -1,0 +1,468 @@
+|join|bossboss
+|join|NemoX
+|player|p1|bossboss|266
+|player|p2|NemoX|265
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Manaphy
+|poke|p1|Politoed, F
+|poke|p1|Skarmory, M
+|poke|p1|Quagsire, F
+|poke|p1|Thundurus, M
+|poke|p1|Tentacruel, F
+|poke|p2|Samurott, M
+|poke|p2|Skarmory, F
+|poke|p2|Blissey, F
+|poke|p2|Gourgeist-*, F
+|poke|p2|Conkeldurr, F
+|poke|p2|Donphan, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Politoed|Politoed, F|384\/384
+|switch|p2a: Samurott|Samurott, M|393\/393
+|-weather|RainDance
+|turn|1
+|
+|switch|p1a: Tentacruel|Tentacruel, F|364\/364
+|move|p2a: Samurott|Toxic|p1a: Tentacruel
+|-fail|p1a: Tentacruel
+|
+|-weather|RainDance|[upkeep]
+|turn|2
+|
+|switch|p2a: Gourgeist-Super|Gourgeist-Super, F|373\/373
+|-item|p1a: Tentacruel|Black Sludge|[from] ability: Frisk|[of] p2a: Gourgeist-Super|[identify]
+|move|p1a: Tentacruel|Toxic Spikes|p2a: Gourgeist-Super
+|-sidestart|p2: NemoX|move: Toxic Spikes
+|
+|-weather|RainDance|[upkeep]
+|turn|3
+|
+|move|p1a: Tentacruel|Toxic Spikes|p2a: Gourgeist-Super
+|-sidestart|p2: NemoX|move: Toxic Spikes
+|move|p2a: Gourgeist-Super|Substitute|p2a: Gourgeist-Super
+|-start|p2a: Gourgeist-Super|Substitute
+|-damage|p2a: Gourgeist-Super|280\/373
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Gourgeist-Super|303\/373|[from] item: Leftovers
+|turn|4
+|
+|move|p1a: Tentacruel|Sludge Wave|p2a: Gourgeist-Super
+|-activate|p2a: Gourgeist-Super|Substitute|[damage]
+|move|p2a: Gourgeist-Super|Will-O-Wisp|p1a: Tentacruel
+|-status|p1a: Tentacruel|brn
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Gourgeist-Super|326\/373|[from] item: Leftovers
+|-damage|p1a: Tentacruel|319\/364 brn|[from] brn
+|turn|5
+|
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|move|p2a: Gourgeist-Super|Substitute|p2a: Gourgeist-Super
+|-fail|p2a: Gourgeist-Super|move: Substitute
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Gourgeist-Super|349\/373|[from] item: Leftovers
+|turn|6
+|
+|switch|p1a: Manaphy|Manaphy|404\/404
+|move|p2a: Gourgeist-Super|Leech Seed|p1a: Manaphy
+|-start|p1a: Manaphy|move: Leech Seed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Gourgeist-Super|372\/373|[from] item: Leftovers
+|-damage|p1a: Manaphy|354\/404|[from] Leech Seed|[of] p2a: Gourgeist-Super
+|-heal|p2a: Gourgeist-Super|373\/373|[silent]
+|turn|7
+|
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|move|p2a: Gourgeist-Super|Will-O-Wisp|p1a: Skarmory
+|-status|p1a: Skarmory|brn
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1a: Skarmory|293\/334 brn|[from] brn
+|turn|8
+|
+|move|p1a: Skarmory|Stealth Rock|p2a: Gourgeist-Super
+|-sidestart|p2: NemoX|move: Stealth Rock
+|move|p2a: Gourgeist-Super|Leech Seed|p1a: Skarmory
+|-start|p1a: Skarmory|move: Leech Seed
+|
+|-weather|none
+|-damage|p1a: Skarmory|252\/334 brn|[from] Leech Seed|[of] p2a: Gourgeist-Super
+|-damage|p1a: Skarmory|211\/334 brn|[from] brn
+|turn|9
+|
+|switch|p1a: Politoed|Politoed, F|384\/384
+|-weather|RainDance
+|switch|p2a: Donphan|Donphan, F|383\/383
+|-status|p2a: Donphan|tox
+|-damage|p2a: Donphan|360\/383 tox|[from] Stealth Rock
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Donphan|383\/383 tox|[from] item: Leftovers
+|-damage|p2a: Donphan|360\/383 tox|[from] psn
+|turn|10
+|
+|switch|p1a: Skarmory|Skarmory, M|211\/334 brn
+|move|p2a: Donphan|Rapid Spin|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|204\/334 brn
+|-damage|p2a: Donphan|297\/383 tox|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|-sideend|p2: NemoX|Toxic Spikes|[from] move: Rapid Spin|[of] p2a: Donphan
+|-sideend|p2: NemoX|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Donphan
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Donphan|320\/383 tox|[from] item: Leftovers
+|-damage|p1a: Skarmory|163\/334 brn|[from] brn
+|-damage|p2a: Donphan|274\/383 tox|[from] psn
+|turn|11
+|
+|switch|p2a: Skarmory|Skarmory, F|333\/333
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|330\/334 brn
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1a: Skarmory|289\/334 brn|[from] brn
+|turn|12
+|
+|move|p2a: Skarmory|Stealth Rock|p1a: Skarmory
+|-sidestart|p1: bossboss|move: Stealth Rock
+|move|p1a: Skarmory|Stealth Rock|p2a: Skarmory
+|-sidestart|p2: NemoX|move: Stealth Rock
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1a: Skarmory|248\/334 brn|[from] brn
+|turn|13
+|
+|move|p2a: Skarmory|Spikes|p1a: Skarmory
+|-sidestart|p1: bossboss|Spikes
+|move|p1a: Skarmory|Spikes|p2a: Skarmory
+|-sidestart|p2: NemoX|Spikes
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1a: Skarmory|207\/334 brn|[from] brn
+|turn|14
+|
+|move|p2a: Skarmory|Spikes|p1a: Skarmory
+|-sidestart|p1: bossboss|Spikes
+|move|p1a: Skarmory|Spikes|p2a: Skarmory
+|-sidestart|p2: NemoX|Spikes
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1a: Skarmory|166\/334 brn|[from] brn
+|turn|15
+|
+|switch|p1a: Tentacruel|Tentacruel, F|319\/364 brn
+|-damage|p1a: Tentacruel|274\/364 brn|[from] Stealth Rock
+|-damage|p1a: Tentacruel|214\/364 brn|[from] Spikes
+|move|p2a: Skarmory|Spikes|p1a: Tentacruel
+|-sidestart|p1: bossboss|Spikes
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Tentacruel|236\/364 brn|[from] ability: Rain Dish
+|-heal|p1a: Tentacruel|258\/364 brn|[from] item: Black Sludge
+|-damage|p1a: Tentacruel|213\/364 brn|[from] brn
+|turn|16
+|
+|switch|p2a: Gourgeist-Super|Gourgeist-Super, F|373\/373
+|-damage|p2a: Gourgeist-Super|311\/373|[from] Spikes
+|-damage|p2a: Gourgeist-Super|265\/373|[from] Stealth Rock
+|-item|p1a: Tentacruel|Black Sludge|[from] ability: Frisk|[of] p2a: Gourgeist-Super|[identify]
+|move|p1a: Tentacruel|Toxic Spikes|p2a: Gourgeist-Super
+|-sidestart|p2: NemoX|move: Toxic Spikes
+|
+|-weather|none
+|-heal|p1a: Tentacruel|235\/364 brn|[from] item: Black Sludge
+|-heal|p2a: Gourgeist-Super|288\/373|[from] item: Leftovers
+|-damage|p1a: Tentacruel|190\/364 brn|[from] brn
+|turn|17
+|
+|move|p1a: Tentacruel|Sludge Wave|p2a: Gourgeist-Super
+|-damage|p2a: Gourgeist-Super|203\/373
+|move|p2a: Gourgeist-Super|Substitute|p2a: Gourgeist-Super
+|-start|p2a: Gourgeist-Super|Substitute
+|-damage|p2a: Gourgeist-Super|110\/373
+|
+|-heal|p1a: Tentacruel|212\/364 brn|[from] item: Black Sludge
+|-heal|p2a: Gourgeist-Super|133\/373|[from] item: Leftovers
+|-damage|p1a: Tentacruel|167\/364 brn|[from] brn
+|turn|18
+|
+|switch|p1a: Skarmory|Skarmory, M|166\/334 brn
+|-damage|p1a: Skarmory|125\/334 brn|[from] Stealth Rock
+|move|p2a: Gourgeist-Super|Leech Seed|p1a: Skarmory
+|-start|p1a: Skarmory|move: Leech Seed
+|
+|-heal|p2a: Gourgeist-Super|156\/373|[from] item: Leftovers
+|-damage|p1a: Skarmory|84\/334 brn|[from] Leech Seed|[of] p2a: Gourgeist-Super
+|-heal|p2a: Gourgeist-Super|197\/373|[silent]
+|-damage|p1a: Skarmory|43\/334 brn|[from] brn
+|turn|19
+|
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|210\/334 brn
+|move|p2a: Gourgeist-Super|Phantom Force|p1a: Skarmory|[still]
+|-prepare|p2a: Gourgeist-Super|Phantom Force|p1a: Skarmory
+|
+|-heal|p2a: Gourgeist-Super|220\/373|[from] item: Leftovers
+|-damage|p1a: Skarmory|169\/334 brn|[from] Leech Seed|[of] p2a: Gourgeist-Super
+|-heal|p2a: Gourgeist-Super|261\/373|[silent]
+|-damage|p1a: Skarmory|128\/334 brn|[from] brn
+|turn|20
+|
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|295\/334 brn
+|move|p2a: Gourgeist-Super|Phantom Force|p1a: Skarmory
+|-damage|p1a: Skarmory|232\/334 brn
+|-damage|p2a: Gourgeist-Super|199\/373|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|
+|-heal|p2a: Gourgeist-Super|222\/373|[from] item: Leftovers
+|-damage|p1a: Skarmory|191\/334 brn|[from] Leech Seed|[of] p2a: Gourgeist-Super
+|-heal|p2a: Gourgeist-Super|263\/373|[silent]
+|-damage|p1a: Skarmory|150\/334 brn|[from] brn
+|turn|21
+|
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|317\/334 brn
+|move|p2a: Gourgeist-Super|Phantom Force|p1a: Skarmory|[still]
+|-prepare|p2a: Gourgeist-Super|Phantom Force|p1a: Skarmory
+|
+|-heal|p2a: Gourgeist-Super|286\/373|[from] item: Leftovers
+|-damage|p1a: Skarmory|276\/334 brn|[from] Leech Seed|[of] p2a: Gourgeist-Super
+|-heal|p2a: Gourgeist-Super|327\/373|[silent]
+|-damage|p1a: Skarmory|235\/334 brn|[from] brn
+|turn|22
+|
+|move|p1a: Skarmory|Brave Bird|p2a: Gourgeist-Super|[miss]
+|-miss|p1a: Skarmory|p2a: Gourgeist-Super
+|move|p2a: Gourgeist-Super|Phantom Force|p1a: Skarmory
+|-damage|p1a: Skarmory|166\/334 brn
+|-damage|p2a: Gourgeist-Super|265\/373|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|
+|-heal|p2a: Gourgeist-Super|288\/373|[from] item: Leftovers
+|-damage|p1a: Skarmory|125\/334 brn|[from] Leech Seed|[of] p2a: Gourgeist-Super
+|-heal|p2a: Gourgeist-Super|329\/373|[silent]
+|-damage|p1a: Skarmory|84\/334 brn|[from] brn
+|turn|23
+|
+|switch|p1a: Manaphy|Manaphy|354\/404
+|-damage|p1a: Manaphy|304\/404|[from] Stealth Rock
+|-damage|p1a: Manaphy|203\/404|[from] Spikes
+|switch|p2a: Donphan|Donphan, F|274\/383 tox
+|-damage|p2a: Donphan|251\/383 tox|[from] Stealth Rock
+|-damage|p2a: Donphan|188\/383 tox|[from] Spikes
+|
+|-heal|p1a: Manaphy|228\/404|[from] item: Leftovers
+|-heal|p2a: Donphan|211\/383 tox|[from] item: Leftovers
+|-damage|p2a: Donphan|188\/383 tox|[from] psn
+|turn|24
+|
+|move|p1a: Manaphy|Surf|p2a: Donphan
+|-supereffective|p2a: Donphan
+|-damage|p2a: Donphan|0 fnt
+|faint|p2a: Donphan
+|
+|-heal|p1a: Manaphy|253\/404|[from] item: Leftovers
+|
+|switch|p2a: Conkeldurr|Conkeldurr, F|413\/413
+|-status|p2a: Conkeldurr|psn
+|-damage|p2a: Conkeldurr|345\/413 psn|[from] Spikes
+|-damage|p2a: Conkeldurr|320\/413 psn|[from] Stealth Rock
+|turn|25
+|
+|switch|p1a: Politoed|Politoed, F|384\/384
+|-damage|p1a: Politoed|336\/384|[from] Stealth Rock
+|-damage|p1a: Politoed|240\/384|[from] Spikes
+|-weather|RainDance
+|move|p2a: Conkeldurr|Drain Punch|p1a: Politoed
+|-damage|p1a: Politoed|30\/384
+|-heal|p2a: Conkeldurr|413\/413 psn|[from] drain|[of] p1a: Politoed
+|
+|-weather|RainDance|[upkeep]
+|-damage|p2a: Conkeldurr|362\/413 psn|[from] psn
+|turn|26
+|
+|move|p2a: Conkeldurr|Mach Punch|p1a: Politoed
+|-damage|p1a: Politoed|0 fnt
+|faint|p1a: Politoed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Conkeldurr|387\/413 psn|[from] item: Leftovers
+|-damage|p2a: Conkeldurr|336\/413 psn|[from] psn
+|
+|switch|p1a: Tentacruel|Tentacruel, F|167\/364 brn
+|-damage|p1a: Tentacruel|122\/364 brn|[from] Stealth Rock
+|-damage|p1a: Tentacruel|31\/364 brn|[from] Spikes
+|turn|27
+|
+|move|p2a: Conkeldurr|Mach Punch|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|0 fnt
+|faint|p1a: Tentacruel
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Conkeldurr|361\/413 psn|[from] item: Leftovers
+|-damage|p2a: Conkeldurr|310\/413 psn|[from] psn
+|
+|switch|p1a: Quagsire|Quagsire, F|394\/394
+|-damage|p1a: Quagsire|370\/394|[from] Stealth Rock
+|-damage|p1a: Quagsire|272\/394|[from] Spikes
+|turn|28
+|
+|move|p2a: Conkeldurr|Drain Punch|p1a: Quagsire
+|-damage|p1a: Quagsire|79\/394
+|-heal|p2a: Conkeldurr|407\/413 psn|[from] drain|[of] p1a: Quagsire
+|move|p1a: Quagsire|Earthquake|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|298\/413 psn
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Conkeldurr|323\/413 psn|[from] item: Leftovers
+|-heal|p1a: Quagsire|103\/394|[from] item: Leftovers
+|-damage|p2a: Conkeldurr|272\/413 psn|[from] psn
+|turn|29
+|
+|switch|p1a: Skarmory|Skarmory, M|84\/334 brn
+|-damage|p1a: Skarmory|43\/334 brn|[from] Stealth Rock
+|move|p2a: Conkeldurr|Drain Punch|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|-heal|p2a: Conkeldurr|294\/413 psn|[from] drain|[of] p1a: Skarmory
+|-damage|p2a: Conkeldurr|226\/413 psn|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|faint|p1a: Skarmory
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Conkeldurr|251\/413 psn|[from] item: Leftovers
+|-damage|p2a: Conkeldurr|200\/413 psn|[from] psn
+|
+|switch|p1a: Manaphy|Manaphy|253\/404
+|-damage|p1a: Manaphy|152\/404|[from] Spikes
+|-damage|p1a: Manaphy|102\/404|[from] Stealth Rock
+|turn|30
+|
+|move|p2a: Conkeldurr|Mach Punch|p1a: Manaphy
+|-damage|p1a: Manaphy|0 fnt
+|faint|p1a: Manaphy
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Conkeldurr|225\/413 psn|[from] item: Leftovers
+|-damage|p2a: Conkeldurr|174\/413 psn|[from] psn
+|
+|switch|p1a: Thundurus|Thundurus, M|299\/299
+|-damage|p1a: Thundurus|225\/299|[from] Stealth Rock
+|turn|31
+|
+|switch|p2a: Blissey|Blissey, F|713\/713
+|-damage|p2a: Blissey|595\/713|[from] Spikes
+|-status|p2a: Blissey|psn
+|-damage|p2a: Blissey|506\/713 psn|[from] Stealth Rock
+|move|p1a: Thundurus|Thunder|p2a: Blissey
+|-damage|p2a: Blissey|382\/713 psn
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Blissey|426\/713 psn|[from] item: Leftovers
+|-damage|p2a: Blissey|337\/713 psn|[from] psn
+|turn|32
+|
+|move|p1a: Thundurus|Superpower|p2a: Blissey
+|-supereffective|p2a: Blissey
+|-damage|p2a: Blissey|0 fnt
+|-unboost|p1a: Thundurus|atk|1
+|-unboost|p1a: Thundurus|def|1
+|faint|p2a: Blissey
+|
+|-weather|none
+|
+|switch|p2a: Samurott|Samurott, M|393\/393
+|-damage|p2a: Samurott|328\/393|[from] Spikes
+|-damage|p2a: Samurott|279\/393|[from] Stealth Rock
+|-status|p2a: Samurott|psn
+|turn|33
+|
+|move|p1a: Thundurus|Thunder|p2a: Samurott
+|-supereffective|p2a: Samurott
+|-damage|p2a: Samurott|0 fnt
+|faint|p2a: Samurott
+|
+|
+|switch|p2a: Gourgeist-Super|Gourgeist-Super, F|329\/373
+|-damage|p2a: Gourgeist-Super|283\/373|[from] Stealth Rock
+|-status|p2a: Gourgeist-Super|psn
+|-damage|p2a: Gourgeist-Super|221\/373 psn|[from] Spikes
+|-item|p1a: Thundurus|Damp Rock|[from] ability: Frisk|[of] p2a: Gourgeist-Super|[identify]
+|turn|34
+|
+|switch|p1a: Quagsire|Quagsire, F|103\/394
+|-damage|p1a: Quagsire|79\/394|[from] Stealth Rock
+|-damage|p1a: Quagsire|0 fnt|[from] Spikes
+|faint|p1a: Quagsire
+|move|p2a: Gourgeist-Super|Leech Seed|p1: Quagsire|[notarget]
+|-notarget
+|
+|-heal|p2a: Gourgeist-Super|244\/373 psn|[from] item: Leftovers
+|-damage|p2a: Gourgeist-Super|198\/373 psn|[from] psn
+|
+|switch|p1a: Thundurus|Thundurus, M|225\/299
+|-damage|p1a: Thundurus|151\/299|[from] Stealth Rock
+|turn|35
+|
+|move|p1a: Thundurus|Knock Off|p2a: Gourgeist-Super
+|-supereffective|p2a: Gourgeist-Super
+|-damage|p2a: Gourgeist-Super|14\/373 psn
+|-enditem|p2a: Gourgeist-Super|Leftovers|[from] move: Knock Off|[of] p1a: Thundurus
+|move|p2a: Gourgeist-Super|Leech Seed|p1a: Thundurus
+|-start|p1a: Thundurus|move: Leech Seed
+|
+|-damage|p1a: Thundurus|114\/299|[from] Leech Seed|[of] p2a: Gourgeist-Super
+|-heal|p2a: Gourgeist-Super|51\/373 psn|[silent]
+|-damage|p2a: Gourgeist-Super|5\/373 psn|[from] psn
+|turn|36
+|
+|move|p1a: Thundurus|Knock Off|p2a: Gourgeist-Super
+|-supereffective|p2a: Gourgeist-Super
+|-damage|p2a: Gourgeist-Super|0 fnt
+|faint|p2a: Gourgeist-Super
+|
+|
+|switch|p2a: Skarmory|Skarmory, F|333\/333
+|-damage|p2a: Skarmory|292\/333|[from] Stealth Rock
+|turn|37
+|
+|move|p1a: Thundurus|Thunder|p2a: Skarmory
+|-supereffective|p2a: Skarmory
+|-damage|p2a: Skarmory|0 fnt
+|faint|p2a: Skarmory
+|
+|
+|switch|p2a: Conkeldurr|Conkeldurr, F|174\/413 psn
+|-damage|p2a: Conkeldurr|149\/413 psn|[from] Stealth Rock
+|-damage|p2a: Conkeldurr|81\/413 psn|[from] Spikes
+|turn|38
+|
+|move|p2a: Conkeldurr|Mach Punch|p1a: Thundurus
+|-resisted|p1a: Thundurus
+|-damage|p1a: Thundurus|18\/299
+|move|p1a: Thundurus|Superpower|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|0 fnt
+|-unboost|p1a: Thundurus|atk|1
+|-unboost|p1a: Thundurus|def|1
+|faint|p2a: Conkeldurr
+|
+|win|bossboss
+|raw|Ladder updating...
+|raw|bossboss's rating: 1754 &rarr; <strong>1764<\/strong><br \/>(+10 for winning)
+|raw|NemoX's rating: 1548 &rarr; <strong>1538<\/strong><br \/>(-10 for losing)
+|chat|NemoX|gg
+|leave|bossboss
+|player|p1

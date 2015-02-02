@@ -1,0 +1,365 @@
+|join|Damnosaur
+|join|LBA
+|player|p1|Damnosaur|167
+|player|p2|LBA|192
+|gametype|singles
+|tier|[Gen 5] UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Shaymin
+|poke|p1|Yanmega, M
+|poke|p1|Blastoise, F
+|poke|p1|Rotom-Heat
+|poke|p1|Rhyperior, M
+|poke|p1|Ambipom, M
+|poke|p2|Heracross, M
+|poke|p2|Honchkrow, F
+|poke|p2|Umbreon, M, shiny
+|poke|p2|Gligar, M
+|poke|p2|Victini
+|poke|p2|Porygon-Z
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Ambipom|Ambipom, M|291\/291
+|switch|p2a: Magician's Red|Victini|341\/341
+|turn|1
+|callback|decision
+|
+|switch|p2a: Hermit Purple|Gligar, M|334\/334
+|move|p1a: Ambipom|Fake Out|p2a: Hermit Purple
+|-damage|p2a: Hermit Purple|288\/334
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Ambipom|U-turn|p2a: Hermit Purple
+|-resisted|p2a: Hermit Purple
+|-damage|p2a: Hermit Purple|273\/334
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, F|362\/362
+|move|p2a: Hermit Purple|Toxic|p1a: Blastoise
+|-status|p1a: Blastoise|tox
+|
+|-damage|p1a: Blastoise|340\/362 tox|[from] psn
+|turn|3
+|callback|decision
+|
+|switch|p2a: Hierophant Green|Umbreon, M, shiny|394\/394
+|move|p1a: Blastoise|Toxic|p2a: Hierophant Green|[miss]
+|-miss|p1a: Blastoise|p2a: Hierophant Green
+|
+|-heal|p1a: Blastoise|362\/362 tox|[from] item: Leftovers
+|-damage|p1a: Blastoise|318\/362 tox|[from] psn
+|turn|4
+|callback|decision
+|
+|switch|p1a: Yanmega|Yanmega, M|313\/313
+|move|p2a: Hierophant Green|Protect|p2a: Hierophant Green
+|-fail|p2a: Hierophant Green
+|
+|turn|5
+|callback|decision
+|
+|move|p1a: Yanmega|Bug Buzz|p2a: Hierophant Green
+|-supereffective|p2a: Hierophant Green
+|-damage|p2a: Hierophant Green|118\/394
+|-unboost|p2a: Hierophant Green|spd|1
+|move|p2a: Hierophant Green|Foul Play|p1a: Yanmega
+|-damage|p1a: Yanmega|219\/313
+|
+|-heal|p2a: Hierophant Green|142\/394|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p1a: Yanmega|Bug Buzz|p2a: Hierophant Green
+|-supereffective|p2a: Hierophant Green
+|-damage|p2a: Hierophant Green|0 fnt
+|faint|p2a: Hierophant Green
+|
+|callback|decision
+|
+|switch|p2a: The Fool|Porygon-Z|312\/312
+|turn|7
+|callback|decision
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|241\/241
+|move|p2a: The Fool|Tri Attack|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|71\/241
+|
+|turn|8
+|callback|decision
+|
+|switch|p1a: Rhyperior|Rhyperior, M|434\/434
+|move|p2a: The Fool|Tri Attack|p1a: Rhyperior
+|-resisted|p1a: Rhyperior
+|-damage|p1a: Rhyperior|268\/434
+|
+|-heal|p1a: Rhyperior|295\/434|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p2a: Magician's Red|Victini|341\/341
+|move|p1a: Rhyperior|Stealth Rock|p2a: Magician's Red
+|-sidestart|p2: LBA|move: Stealth Rock
+|
+|-heal|p1a: Rhyperior|322\/434|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|71\/241
+|move|p2a: Magician's Red|Grass Knot|p1a: Rotom-Heat
+|-resisted|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|59\/241
+|-damage|p2a: Magician's Red|307\/341|[from] item: Life Orb
+|
+|turn|11
+|callback|decision
+|
+|move|p1a: Rotom-Heat|Volt Switch|p2a: Magician's Red
+|-damage|p2a: Magician's Red|207\/341
+|callback|decision
+|
+|switch|p1a: Shaymin|Shaymin|341\/341
+|move|p2a: Magician's Red|Psychic|p1a: Shaymin
+|-damage|p1a: Shaymin|156\/341
+|-damage|p2a: Magician's Red|173\/341|[from] item: Life Orb
+|
+|turn|12
+|callback|decision
+|
+|move|p2a: Magician's Red|Psychic|p1a: Shaymin
+|-damage|p1a: Shaymin|0 fnt
+|-damage|p2a: Magician's Red|139\/341|[from] item: Life Orb
+|faint|p1a: Shaymin
+|
+|callback|decision
+|
+|switch|p1a: Ambipom|Ambipom, M|291\/291
+|turn|13
+|callback|decision
+|
+|switch|p2a: Hermit Purple|Gligar, M|273\/334
+|-damage|p2a: Hermit Purple|232\/334|[from] Stealth Rock
+|move|p1a: Ambipom|Return|p2a: Hermit Purple
+|-damage|p2a: Hermit Purple|153\/334
+|
+|turn|14
+|callback|decision
+|
+|move|p1a: Ambipom|U-turn|p2a: Hermit Purple
+|-resisted|p2a: Hermit Purple
+|-damage|p2a: Hermit Purple|137\/334
+|callback|decision
+|
+|switch|p1a: Yanmega|Yanmega, M|219\/313
+|move|p2a: Hermit Purple|Roost|p2a: Hermit Purple
+|-heal|p2a: Hermit Purple|304\/334
+|
+|turn|15
+|callback|decision
+|
+|switch|p2a: Magician's Red|Victini|139\/341
+|-damage|p2a: Magician's Red|54\/341|[from] Stealth Rock
+|move|p1a: Yanmega|Bug Buzz|p2a: Magician's Red
+|-damage|p2a: Magician's Red|0 fnt
+|faint|p2a: Magician's Red
+|
+|callback|decision
+|
+|switch|p2a: The Fool|Porygon-Z|312\/312
+|-damage|p2a: The Fool|273\/312|[from] Stealth Rock
+|turn|16
+|callback|decision
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|59\/241
+|move|p2a: The Fool|Tri Attack|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|0 fnt
+|faint|p1a: Rotom-Heat
+|
+|callback|decision
+|
+|switch|p1a: Ambipom|Ambipom, M|291\/291
+|turn|17
+|callback|decision
+|
+|move|p1a: Ambipom|Fake Out|p2a: The Fool
+|-damage|p2a: The Fool|128\/312
+|cant|p2a: The Fool|flinch
+|
+|turn|18
+|callback|decision
+|
+|switch|p1a: Rhyperior|Rhyperior, M|322\/434
+|move|p2a: The Fool|Tri Attack|p1a: Rhyperior
+|-crit|p1a: Rhyperior
+|-resisted|p1a: Rhyperior
+|-damage|p1a: Rhyperior|13\/434
+|
+|-heal|p1a: Rhyperior|40\/434|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p2a: The Fool|Tri Attack|p1a: Rhyperior
+|-resisted|p1a: Rhyperior
+|-damage|p1a: Rhyperior|0 fnt
+|faint|p1a: Rhyperior
+|
+|callback|decision
+|
+|switch|p1a: Ambipom|Ambipom, M|291\/291
+|turn|20
+|callback|decision
+|
+|switch|p2a: Hermit Purple|Gligar, M|304\/334
+|-damage|p2a: Hermit Purple|263\/334|[from] Stealth Rock
+|move|p1a: Ambipom|Fake Out|p2a: Hermit Purple
+|-damage|p2a: Hermit Purple|208\/334
+|
+|turn|21
+|callback|decision
+|
+|move|p1a: Ambipom|Return|p2a: Hermit Purple
+|-damage|p2a: Hermit Purple|129\/334
+|move|p2a: Hermit Purple|Toxic|p1a: Ambipom
+|-status|p1a: Ambipom|tox
+|
+|-damage|p1a: Ambipom|273\/291 tox|[from] psn
+|turn|22
+|callback|decision
+|
+|move|p1a: Ambipom|U-turn|p2a: Hermit Purple
+|-resisted|p2a: Hermit Purple
+|-damage|p2a: Hermit Purple|114\/334
+|callback|decision
+|
+|switch|p1a: Yanmega|Yanmega, M|219\/313
+|move|p2a: Hermit Purple|Roost|p2a: Hermit Purple
+|-heal|p2a: Hermit Purple|281\/334
+|
+|turn|23
+|callback|decision
+|
+|move|p1a: Yanmega|Air Slash|p2a: Hermit Purple
+|-damage|p2a: Hermit Purple|104\/334
+|cant|p2a: Hermit Purple|flinch
+|
+|turn|24
+|callback|decision
+|
+|move|p1a: Yanmega|Air Slash|p2a: Hermit Purple
+|-damage|p2a: Hermit Purple|0 fnt
+|faint|p2a: Hermit Purple
+|
+|callback|decision
+|
+|switch|p2a: The Fool|Porygon-Z|128\/312
+|-damage|p2a: The Fool|89\/312|[from] Stealth Rock
+|turn|25
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, F|318\/362 tox
+|move|p2a: The Fool|Tri Attack|p1a: Blastoise
+|-damage|p1a: Blastoise|176\/362 tox
+|
+|-heal|p1a: Blastoise|198\/362 tox|[from] item: Leftovers
+|-damage|p1a: Blastoise|176\/362 tox|[from] psn
+|turn|26
+|callback|decision
+|
+|move|p2a: The Fool|Tri Attack|p1a: Blastoise
+|-damage|p1a: Blastoise|28\/362 tox
+|move|p1a: Blastoise|Scald|p2a: The Fool
+|-damage|p2a: The Fool|0 fnt
+|faint|p2a: The Fool
+|
+|-heal|p1a: Blastoise|50\/362 tox|[from] item: Leftovers
+|-damage|p1a: Blastoise|6\/362 tox|[from] psn
+|callback|decision
+|
+|switch|p2a: Silver Chariot|Honchkrow, F|341\/341
+|-damage|p2a: Silver Chariot|256\/341|[from] Stealth Rock
+|turn|27
+|callback|decision
+|
+|move|p2a: Silver Chariot|Brave Bird|p1a: Blastoise
+|-damage|p1a: Blastoise|0 fnt
+|-damage|p2a: Silver Chariot|254\/341|[from] recoil|[of] p1a: Blastoise
+|-damage|p2a: Silver Chariot|220\/341|[from] item: Life Orb
+|faint|p1a: Blastoise
+|-boost|p2a: Silver Chariot|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|switch|p1a: Ambipom|Ambipom, M|273\/291 tox
+|turn|28
+|callback|decision
+|
+|move|p1a: Ambipom|Fake Out|p2a: Silver Chariot
+|-damage|p2a: Silver Chariot|33\/341
+|cant|p2a: Silver Chariot|flinch
+|
+|-damage|p1a: Ambipom|255\/291 tox|[from] psn
+|turn|29
+|callback|decision
+|
+|switch|p1a: Yanmega|Yanmega, M|219\/313
+|move|p2a: Silver Chariot|Sucker Punch|p1a: Yanmega
+|-fail|p1a: Yanmega
+|
+|turn|30
+|callback|decision
+|
+|move|p1a: Yanmega|Bug Buzz|p2a: Silver Chariot
+|-damage|p2a: Silver Chariot|0 fnt
+|faint|p2a: Silver Chariot
+|
+|callback|decision
+|
+|switch|p2a: Star Platinum|Heracross, M|302\/302
+|-damage|p2a: Star Platinum|265\/302|[from] Stealth Rock
+|turn|31
+|callback|decision
+|
+|move|p2a: Star Platinum|Stone Edge|p1a: Yanmega
+|-supereffective|p1a: Yanmega
+|-damage|p1a: Yanmega|0 fnt
+|faint|p1a: Yanmega
+|
+|callback|decision
+|
+|switch|p1a: Ambipom|Ambipom, M|255\/291 tox
+|turn|32
+|callback|decision
+|
+|move|p1a: Ambipom|Fake Out|p2a: Star Platinum
+|-damage|p2a: Star Platinum|117\/302
+|cant|p2a: Star Platinum|flinch
+|
+|-damage|p1a: Ambipom|237\/291 tox|[from] psn
+|turn|33
+|callback|decision
+|
+|move|p2a: Star Platinum|Stone Edge|p1a: Ambipom
+|-damage|p1a: Ambipom|70\/291 tox
+|move|p1a: Ambipom|Return|p2a: Star Platinum
+|-damage|p2a: Star Platinum|0 fnt
+|faint|p2a: Star Platinum
+|
+|win|Damnosaur
+|raw|Ladder updating...
+|raw|Damnosaur's rating: 1851 &rarr; <strong>1867<\/strong><br \/>(+16 for winning)
+|raw|LBA's rating: 1916 &rarr; <strong>1909<\/strong><br \/>(-7 for losing)
+|chat|LBA|gg
+|chat|Damnosaur|gg
+|leave|LBA
+|player|p2

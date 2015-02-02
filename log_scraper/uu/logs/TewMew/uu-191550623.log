@@ -1,0 +1,340 @@
+|join|TewMew
+|join|Tom Yabo
+|player|p1|TewMew|43
+|player|p2|Tom Yabo|101
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Alomomola, F
+|poke|p1|Krookodile, F
+|poke|p1|Gallade, M
+|poke|p1|Whimsicott, M
+|poke|p1|Snorlax, M
+|poke|p1|Crobat, M
+|poke|p2|Sceptile, M
+|poke|p2|Empoleon, M
+|poke|p2|Swampert, M
+|poke|p2|Crobat, F
+|poke|p2|Jirachi, shiny
+|poke|p2|Mienshao, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Whimsicott|Whimsicott, M|262\/262
+|switch|p2a: Crobat|Crobat, F|311\/311
+|turn|1
+|
+|switch|p1a: Alomomola|Alomomola, F|521\/521
+|move|p2a: Crobat|U-turn|p1a: Alomomola
+|-damage|p1a: Alomomola|447\/521
+|-damage|p2a: Crobat|260\/311|[from] item: Rocky Helmet|[of] p1a: Alomomola
+|
+|switch|p2a: Sceptile|Sceptile, M|281\/281
+|
+|turn|2
+|
+|switch|p1a: Whimsicott|Whimsicott, M|262\/262
+|detailschange|p2a: Sceptile|Sceptile-Mega, M
+|message|Sceptile has Mega Evolved into Mega Sceptile!
+|move|p2a: Sceptile|Toxic|p1a: Whimsicott
+|-status|p1a: Whimsicott|tox
+|
+|-damage|p1a: Whimsicott|246\/262 tox|[from] psn
+|turn|3
+|
+|move|p2a: Sceptile|Hidden Power|p1a: Whimsicott
+|-supereffective|p1a: Whimsicott
+|-damage|p1a: Whimsicott|0 fnt
+|faint|p1a: Whimsicott
+|
+|
+|switch|p1a: Snorlax|Snorlax, M|493\/493
+|turn|4
+|
+|switch|p2a: Swampert|Swampert, M|401\/401
+|move|p1a: Snorlax|Frustration|p2a: Swampert
+|-damage|p2a: Swampert|305\/401
+|
+|-heal|p2a: Swampert|330\/401|[from] item: Leftovers
+|turn|5
+|
+|move|p2a: Swampert|Scald|p1a: Snorlax
+|-damage|p1a: Snorlax|439\/493
+|-status|p1a: Snorlax|brn
+|move|p1a: Snorlax|Curse|p1a: Snorlax
+|-boost|p1a: Snorlax|atk|1
+|-boost|p1a: Snorlax|def|1
+|-unboost|p1a: Snorlax|spe|1
+|
+|-heal|p2a: Swampert|355\/401|[from] item: Leftovers
+|-heal|p1a: Snorlax|469\/493 brn|[from] item: Leftovers
+|-damage|p1a: Snorlax|408\/493 brn|[from] brn
+|turn|6
+|
+|move|p2a: Swampert|Stealth Rock|p1a: Snorlax
+|-sidestart|p1: TewMew|move: Stealth Rock
+|move|p1a: Snorlax|Rest|p1a: Snorlax
+|-status|p1a: Snorlax|slp
+|-heal|p1a: Snorlax|493\/493 slp|[silent]
+|-status|p1a: Snorlax|slp|[from] move: Rest
+|
+|-heal|p2a: Swampert|380\/401|[from] item: Leftovers
+|turn|7
+|
+|cant|p1a: Snorlax|slp
+|move|p1a: Snorlax|Sleep Talk|p1a: Snorlax
+|move|p1a: Snorlax|Curse|p1a: Snorlax|[from]Sleep Talk
+|-boost|p1a: Snorlax|atk|1
+|-boost|p1a: Snorlax|def|1
+|-unboost|p1a: Snorlax|spe|1
+|move|p2a: Swampert|Roar|p1a: Snorlax
+|drag|p1a: Alomomola|Alomomola, F|521\/521
+|-damage|p1a: Alomomola|456\/521|[from] Stealth Rock
+|
+|-heal|p2a: Swampert|401\/401|[from] item: Leftovers
+|turn|8
+|
+|switch|p2a: Lukewarm|Empoleon, M|371\/371
+|move|p1a: Alomomola|Toxic|p2a: Lukewarm
+|-fail|p2a: Lukewarm
+|
+|turn|9
+|
+|move|p1a: Alomomola|Scald|p2a: Lukewarm
+|-resisted|p2a: Lukewarm
+|-damage|p2a: Lukewarm|355\/371
+|move|p2a: Lukewarm|Toxic|p1a: Alomomola
+|-status|p1a: Alomomola|tox
+|
+|-heal|p2a: Lukewarm|371\/371|[from] item: Leftovers
+|-damage|p1a: Alomomola|424\/521 tox|[from] psn
+|turn|10
+|
+|move|p2a: Lukewarm|Protect|p2a: Lukewarm
+|-singleturn|p2a: Lukewarm|Protect
+|move|p1a: Alomomola|Scald|p2a: Lukewarm
+|-activate|p2a: Lukewarm|Protect
+|
+|-damage|p1a: Alomomola|360\/521 tox|[from] psn
+|turn|11
+|
+|move|p1a: Alomomola|Scald|p2a: Lukewarm
+|-resisted|p2a: Lukewarm
+|-damage|p2a: Lukewarm|354\/371
+|move|p2a: Lukewarm|Scald|p1a: Alomomola
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|274\/521 tox
+|
+|-heal|p2a: Lukewarm|371\/371|[from] item: Leftovers
+|-damage|p1a: Alomomola|178\/521 tox|[from] psn
+|turn|12
+|
+|switch|p1a: Snorlax|Snorlax, M|493\/493 slp
+|-damage|p1a: Snorlax|432\/493 slp|[from] Stealth Rock
+|switch|p2a: Jirachi|Jirachi, shiny|403\/403
+|
+|-heal|p1a: Snorlax|462\/493 slp|[from] item: Leftovers
+|turn|13
+|
+|switch|p2a: Swampert|Swampert, M|401\/401
+|switch|p1a: Alomomola|Alomomola, F|351\/521 tox
+|-damage|p1a: Alomomola|286\/521 tox|[from] Stealth Rock
+|
+|-damage|p1a: Alomomola|254\/521 tox|[from] psn
+|turn|14
+|
+|switch|p2a: Lukewarm|Empoleon, M|371\/371
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-damage|p1a: Alomomola|190\/521 tox|[from] psn
+|turn|15
+|
+|switch|p1a: Gallade|Gallade, M|277\/277
+|-damage|p1a: Gallade|260\/277|[from] Stealth Rock
+|move|p2a: Lukewarm|Scald|p1a: Gallade
+|-crit|p1a: Gallade
+|-damage|p1a: Gallade|121\/277
+|
+|-heal|p1a: Gallade|277\/277|[from] move: Wish|[wisher] Alomomola
+|turn|16
+|
+|switch|p2a: Swampert|Swampert, M|401\/401
+|detailschange|p1a: Gallade|Gallade-Mega, M
+|message|Gallade has Mega Evolved into Mega Gallade!
+|move|p1a: Gallade|Zen Headbutt|p2a: Swampert
+|-damage|p2a: Swampert|269\/401
+|
+|-heal|p2a: Swampert|294\/401|[from] item: Leftovers
+|turn|17
+|
+|switch|p2a: Crobat|Crobat, F|260\/311
+|move|p1a: Gallade|Knock Off|p2a: Crobat
+|-damage|p2a: Crobat|93\/311
+|-enditem|p2a: Crobat|Choice Band|[from] move: Knock Off|[of] p1a: Gallade
+|
+|turn|18
+|
+|switch|p2a: Jirachi|Jirachi, shiny|403\/403
+|switch|p1a: Alomomola|Alomomola, F|363\/521 tox
+|-damage|p1a: Alomomola|298\/521 tox|[from] Stealth Rock
+|
+|-damage|p1a: Alomomola|266\/521 tox|[from] psn
+|turn|19
+|
+|move|p2a: Jirachi|Substitute|p2a: Jirachi
+|-start|p2a: Jirachi|Substitute
+|-damage|p2a: Jirachi|303\/403
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-heal|p2a: Jirachi|328\/403|[from] item: Leftovers
+|-damage|p1a: Alomomola|202\/521 tox|[from] psn
+|turn|20
+|
+|switch|p1a: Gallade|Gallade-Mega, M|277\/277
+|-damage|p1a: Gallade|260\/277|[from] Stealth Rock
+|move|p2a: Jirachi|Calm Mind|p2a: Jirachi
+|-boost|p2a: Jirachi|spa|1
+|-boost|p2a: Jirachi|spd|1
+|
+|-heal|p1a: Gallade|277\/277|[from] move: Wish|[wisher] Alomomola
+|-heal|p2a: Jirachi|353\/403|[from] item: Leftovers
+|turn|21
+|
+|move|p1a: Gallade|Knock Off|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-end|p2a: Jirachi|Substitute
+|move|p2a: Jirachi|Moonblast|p1a: Gallade
+|-supereffective|p1a: Gallade
+|-damage|p1a: Gallade|79\/277
+|-unboost|p1a: Gallade|spa|1
+|
+|-heal|p2a: Jirachi|378\/403|[from] item: Leftovers
+|turn|22
+|
+|switch|p2a: Sceptile|Sceptile-Mega, M|281\/281
+|move|p1a: Gallade|Knock Off|p2a: Sceptile
+|-damage|p2a: Sceptile|160\/281
+|
+|turn|23
+|
+|switch|p1a: Snorlax|Snorlax, M|462\/493 slp
+|-damage|p1a: Snorlax|401\/493 slp|[from] Stealth Rock
+|move|p2a: Sceptile|Giga Drain|p1a: Snorlax
+|-damage|p1a: Snorlax|307\/493 slp
+|-heal|p2a: Sceptile|207\/281|[from] drain|[of] p1a: Snorlax
+|
+|-heal|p1a: Snorlax|337\/493 slp|[from] item: Leftovers
+|turn|24
+|
+|switch|p2a: Mienshao|Mienshao, F|271\/271
+|cant|p1a: Snorlax|slp
+|move|p1a: Snorlax|Sleep Talk|p1a: Snorlax
+|move|p1a: Snorlax|Frustration|p2a: Mienshao|[from]Sleep Talk
+|-damage|p2a: Mienshao|70\/271
+|
+|-heal|p1a: Snorlax|367\/493 slp|[from] item: Leftovers
+|turn|25
+|
+|switch|p2a: Jirachi|Jirachi, shiny|378\/403
+|switch|p1a: Crobat|Crobat, M|373\/373
+|-damage|p1a: Crobat|280\/373|[from] Stealth Rock
+|
+|-heal|p1a: Crobat|303\/373|[from] item: Black Sludge
+|-heal|p2a: Jirachi|403\/403|[from] item: Leftovers
+|turn|26
+|
+|move|p1a: Crobat|Defog|p2a: Jirachi
+|-unboost|p2a: Jirachi|evasion|1
+|-sideend|p1: TewMew|Stealth Rock|[from] move: Defog|[of] p1a: Crobat
+|move|p2a: Jirachi|Moonblast|p1a: Crobat
+|-resisted|p1a: Crobat
+|-damage|p1a: Crobat|261\/373
+|
+|-heal|p1a: Crobat|284\/373|[from] item: Black Sludge
+|turn|27
+|
+|move|p1a: Crobat|U-turn|p2a: Jirachi
+|-damage|p2a: Jirachi|347\/403
+|
+|switch|p1a: Snorlax|Snorlax, M|367\/493 slp
+|move|p2a: Jirachi|Calm Mind|p2a: Jirachi
+|-boost|p2a: Jirachi|spa|1
+|-boost|p2a: Jirachi|spd|1
+|
+|-heal|p2a: Jirachi|372\/403|[from] item: Leftovers
+|-heal|p1a: Snorlax|397\/493 slp|[from] item: Leftovers
+|turn|28
+|
+|move|p2a: Jirachi|Psyshock|p1a: Snorlax
+|-damage|p1a: Snorlax|226\/493 slp
+|-curestatus|p1a: Snorlax|slp
+|move|p1a: Snorlax|Curse|p1a: Snorlax
+|-boost|p1a: Snorlax|atk|1
+|-boost|p1a: Snorlax|def|1
+|-unboost|p1a: Snorlax|spe|1
+|
+|-heal|p2a: Jirachi|397\/403|[from] item: Leftovers
+|-heal|p1a: Snorlax|256\/493|[from] item: Leftovers
+|turn|29
+|
+|move|p2a: Jirachi|Calm Mind|p2a: Jirachi
+|-boost|p2a: Jirachi|spa|1
+|-boost|p2a: Jirachi|spd|1
+|move|p1a: Snorlax|Curse|p1a: Snorlax
+|-boost|p1a: Snorlax|atk|1
+|-boost|p1a: Snorlax|def|1
+|-unboost|p1a: Snorlax|spe|1
+|
+|-heal|p2a: Jirachi|403\/403|[from] item: Leftovers
+|-heal|p1a: Snorlax|286\/493|[from] item: Leftovers
+|turn|30
+|
+|move|p2a: Jirachi|Psyshock|p1a: Snorlax
+|-crit|p1a: Snorlax
+|-damage|p1a: Snorlax|0 fnt
+|faint|p1a: Snorlax
+|
+|
+|switch|p1a: Krookodile|Krookodile, F|394\/394
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Jirachi
+|-unboost|p2a: Jirachi|atk|1
+|turn|31
+|
+|move|p1a: Krookodile|Pursuit|p2a: Jirachi|[from]Pursuit
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|18\/403
+|-damage|p1a: Krookodile|355\/394|[from] item: Life Orb
+|switch|p2a: Sceptile|Sceptile-Mega, M|207\/281
+|
+|turn|32
+|
+|switch|p1a: Crobat|Crobat, M|284\/373
+|move|p2a: Sceptile|Dragon Pulse|p1a: Crobat
+|-damage|p1a: Crobat|79\/373
+|
+|-heal|p1a: Crobat|102\/373|[from] item: Black Sludge
+|turn|33
+|
+|move|p2a: Sceptile|Dragon Pulse|p1a: Crobat
+|-damage|p1a: Crobat|0 fnt
+|faint|p1a: Crobat
+|
+|-message|TewMew forfeited.
+|
+|win|Tom Yabo
+|raw|Ladder updating...
+|leave|TewMew
+|player|p1
+|raw|TewMew's rating: 1600 &rarr; <strong>1576<\/strong><br \/>(-24 for losing)
+|raw|Tom Yabo's rating: 1513 &rarr; <strong>1538<\/strong><br \/>(+25 for winning)

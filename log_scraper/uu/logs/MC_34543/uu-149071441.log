@@ -1,0 +1,308 @@
+|join|MC_34543
+|join|Juday
+|player|p1|MC_34543|167
+|player|p2|Juday|266
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Arcanine, M
+|poke|p1|Heracross, F
+|poke|p1|Honchkrow, F
+|poke|p1|Flygon, M
+|poke|p1|Galvantula, F
+|poke|p1|Blastoise, F
+|poke|p2|Arcanine, M
+|poke|p2|Donphan, M
+|poke|p2|Darmanitan, M
+|poke|p2|Blissey, F
+|poke|p2|Noivern, M
+|poke|p2|Rotom-Mow
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Galvantula|Galvantula, F|281\/281
+|switch|p2a: Darmanitan|Darmanitan, M|351\/351
+|turn|1
+|
+|move|p2a: Darmanitan|U-turn|p1a: Galvantula
+|-damage|p1a: Galvantula|128\/281
+|
+|switch|p2a: Donphan|Donphan, M|384\/384
+|move|p1a: Galvantula|Sticky Web|p2a: Donphan
+|-sidestart|p2: Juday|move: Sticky Web
+|
+|turn|2
+|
+|switch|p1a: Flygon|Flygon, M|301\/301
+|move|p2a: Donphan|Stealth Rock|p1a: Flygon
+|-sidestart|p1: MC_34543|move: Stealth Rock
+|
+|turn|3
+|
+|move|p1a: Flygon|Dragon Claw|p2a: Donphan
+|-damage|p2a: Donphan|276\/384
+|move|p2a: Donphan|Rapid Spin|p1a: Flygon
+|-damage|p1a: Flygon|279\/301
+|-sideend|p2: Juday|Sticky Web|[from] move: Rapid Spin|[of] p2a: Donphan
+|
+|-heal|p2a: Donphan|300\/384|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Blastoise|Blastoise, F|362\/362
+|-damage|p1a: Blastoise|317\/362|[from] Stealth Rock
+|move|p2a: Donphan|Ice Shard|p1a: Blastoise
+|-resisted|p1a: Blastoise
+|-damage|p1a: Blastoise|297\/362
+|
+|-heal|p2a: Donphan|324\/384|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Rotom-Mow|Rotom-Mow|241\/241
+|detailschange|p1a: Blastoise|Blastoise-Mega, F
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p1a: Blastoise|Rapid Spin|p2a: Rotom-Mow
+|-crit|p2a: Rotom-Mow
+|-damage|p2a: Rotom-Mow|219\/241
+|-sideend|p1: MC_34543|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Blastoise
+|
+|turn|6
+|
+|switch|p1a: Arcanine|Arcanine, M|384\/384
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Rotom-Mow
+|-unboost|p2a: Rotom-Mow|atk|1
+|move|p2a: Rotom-Mow|Volt Switch|p1a: Arcanine
+|-damage|p1a: Arcanine|239\/384
+|
+|switch|p2a: Donphan|Donphan, M|324\/384
+|
+|-heal|p1a: Arcanine|263\/384|[from] item: Leftovers
+|-heal|p2a: Donphan|348\/384|[from] item: Leftovers
+|turn|7
+|
+|move|p1a: Arcanine|Flare Blitz|p2a: Donphan
+|-damage|p2a: Donphan|204\/384
+|-damage|p1a: Arcanine|215\/384|[from] recoil|[of] p2a: Donphan
+|move|p2a: Donphan|Stealth Rock|p1a: Arcanine
+|-sidestart|p1: MC_34543|move: Stealth Rock
+|
+|-heal|p1a: Arcanine|239\/384|[from] item: Leftovers
+|-heal|p2a: Donphan|228\/384|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Flygon|Flygon, M|279\/301
+|-damage|p1a: Flygon|261\/301|[from] Stealth Rock
+|move|p2a: Donphan|Earthquake|p1a: Flygon
+|-immune|p1a: Flygon|[msg]
+|
+|-heal|p2a: Donphan|252\/384|[from] item: Leftovers
+|turn|9
+|
+|move|p2a: Donphan|Ice Shard|p1a: Flygon
+|-supereffective|p1a: Flygon
+|-damage|p1a: Flygon|69\/301
+|move|p1a: Flygon|Earthquake|p2a: Donphan
+|-damage|p2a: Donphan|107\/384
+|
+|-heal|p2a: Donphan|131\/384|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Blastoise|Blastoise-Mega, F|297\/362
+|-damage|p1a: Blastoise|252\/362|[from] Stealth Rock
+|switch|p2a: Rotom-Mow|Rotom-Mow|219\/241
+|
+|turn|11
+|
+|switch|p1a: Heracross|Heracross, F|302\/302
+|-damage|p1a: Heracross|265\/302|[from] Stealth Rock
+|move|p2a: Rotom-Mow|Leaf Storm|p1a: Heracross
+|-resisted|p1a: Heracross
+|-damage|p1a: Heracross|142\/302
+|-unboost|p2a: Rotom-Mow|spa|2
+|
+|turn|12
+|
+|switch|p2a: Arcanine|Arcanine, M|384\/384
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Heracross
+|-unboost|p1a: Heracross|atk|1
+|move|p1a: Heracross|Stone Edge|p2a: Arcanine|[miss]
+|-miss|p1a: Heracross|p2a: Arcanine
+|
+|turn|13
+|chat|MC_34543|shoot :P
+|
+|switch|p1a: Flygon|Flygon, M|69\/301
+|-damage|p1a: Flygon|51\/301|[from] Stealth Rock
+|switch|p2a: Donphan|Donphan, M|131\/384
+|
+|-heal|p2a: Donphan|155\/384|[from] item: Leftovers
+|turn|14
+|
+|switch|p1a: Blastoise|Blastoise-Mega, F|252\/362
+|-damage|p1a: Blastoise|207\/362|[from] Stealth Rock
+|move|p2a: Donphan|Ice Shard|p1a: Blastoise
+|-resisted|p1a: Blastoise
+|-damage|p1a: Blastoise|190\/362
+|
+|-heal|p2a: Donphan|179\/384|[from] item: Leftovers
+|turn|15
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|move|p1a: Blastoise|Dark Pulse|p2a: Blissey
+|-damage|p2a: Blissey|622\/714
+|
+|-heal|p2a: Blissey|666\/714|[from] item: Leftovers
+|turn|16
+|
+|move|p1a: Blastoise|Rapid Spin|p2a: Blissey
+|-damage|p2a: Blissey|608\/714
+|-sideend|p1: MC_34543|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Blastoise
+|move|p2a: Blissey|Toxic|p1a: Blastoise
+|-status|p1a: Blastoise|tox
+|
+|-heal|p2a: Blissey|652\/714|[from] item: Leftovers
+|-damage|p1a: Blastoise|168\/362 tox|[from] psn
+|turn|17
+|
+|switch|p1a: Heracross|Heracross, F|142\/302
+|move|p2a: Blissey|Dazzling Gleam|p1a: Heracross
+|-supereffective|p1a: Heracross
+|-damage|p1a: Heracross|34\/302
+|
+|-heal|p2a: Blissey|696\/714|[from] item: Leftovers
+|turn|18
+|
+|switch|p2a: Donphan|Donphan, M|179\/384
+|move|p1a: Heracross|Close Combat|p2a: Donphan
+|-damage|p2a: Donphan|56\/384
+|-unboost|p1a: Heracross|def|1
+|-unboost|p1a: Heracross|spd|1
+|
+|-heal|p2a: Donphan|80\/384|[from] item: Leftovers
+|turn|19
+|
+|move|p1a: Heracross|Close Combat|p2a: Donphan
+|-damage|p2a: Donphan|0 fnt
+|-unboost|p1a: Heracross|def|1
+|-unboost|p1a: Heracross|spd|1
+|faint|p2a: Donphan
+|
+|
+|switch|p2a: Rotom-Mow|Rotom-Mow|219\/241
+|turn|20
+|
+|move|p1a: Heracross|Close Combat|p2a: Rotom-Mow
+|-damage|p2a: Rotom-Mow|33\/241
+|-unboost|p1a: Heracross|def|1
+|-unboost|p1a: Heracross|spd|1
+|move|p2a: Rotom-Mow|Volt Switch|p1a: Heracross
+|-damage|p1a: Heracross|0 fnt
+|faint|p1a: Heracross
+|
+|switch|p2a: Darmanitan|Darmanitan, M|351\/351
+|
+|
+|switch|p1a: Galvantula|Galvantula, F|128\/281
+|turn|21
+|
+|move|p2a: Darmanitan|Flare Blitz|p1a: Galvantula
+|-supereffective|p1a: Galvantula
+|-damage|p1a: Galvantula|0 fnt
+|-damage|p2a: Darmanitan|309\/351|[from] recoil|[of] p1a: Galvantula
+|faint|p1a: Galvantula
+|
+|
+|switch|p1a: Blastoise|Blastoise-Mega, F|168\/362 tox
+|turn|22
+|
+|switch|p2a: Blissey|Blissey, F|696\/714
+|move|p1a: Blastoise|Water Pulse|p2a: Blissey
+|-damage|p2a: Blissey|581\/714
+|
+|-heal|p2a: Blissey|625\/714|[from] item: Leftovers
+|-damage|p1a: Blastoise|146\/362 tox|[from] psn
+|turn|23
+|
+|switch|p1a: Arcanine|Arcanine, M|239\/384
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Blissey
+|-unboost|p2a: Blissey|atk|1
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p1a: Arcanine|263\/384|[from] item: Leftovers
+|-heal|p2a: Blissey|669\/714|[from] item: Leftovers
+|turn|24
+|
+|switch|p2a: Arcanine|Arcanine, M|384\/384
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Arcanine
+|-unboost|p1a: Arcanine|atk|1
+|move|p1a: Arcanine|Flare Blitz|p2a: Arcanine
+|-resisted|p2a: Arcanine
+|-damage|p2a: Arcanine|326\/384
+|-damage|p1a: Arcanine|199\/384|[from] item: Rocky Helmet|[of] p2a: Arcanine
+|-damage|p1a: Arcanine|180\/384|[from] recoil|[of] p2a: Arcanine
+|
+|-heal|p2a: Arcanine|384\/384|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Arcanine|204\/384|[from] item: Leftovers
+|turn|25
+|
+|switch|p1a: Flygon|Flygon, M|51\/301
+|move|p2a: Arcanine|Close Combat|p1a: Flygon
+|-damage|p1a: Flygon|0 fnt
+|-unboost|p2a: Arcanine|def|1
+|-unboost|p2a: Arcanine|spd|1
+|faint|p1a: Flygon
+|
+|
+|switch|p1a: Honchkrow|Honchkrow, F|342\/342
+|turn|26
+|
+|move|p1a: Honchkrow|Sucker Punch|p2a: Arcanine
+|-fail|p2a: Arcanine
+|move|p2a: Arcanine|Will-O-Wisp|p1a: Honchkrow
+|-status|p1a: Honchkrow|brn
+|
+|-damage|p1a: Honchkrow|300\/342 brn|[from] brn
+|turn|27
+|
+|move|p1a: Honchkrow|Sucker Punch|p2a: Arcanine
+|-damage|p2a: Arcanine|271\/384
+|-damage|p1a: Honchkrow|243\/342 brn|[from] item: Rocky Helmet|[of] p2a: Arcanine
+|-damage|p1a: Honchkrow|209\/342 brn|[from] item: Life Orb
+|move|p2a: Arcanine|Flare Blitz|p1a: Honchkrow
+|-damage|p1a: Honchkrow|0 fnt
+|-damage|p2a: Arcanine|202\/384|[from] recoil|[of] p1a: Honchkrow
+|faint|p1a: Honchkrow
+|
+|
+|switch|p1a: Arcanine|Arcanine, M|204\/384
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Arcanine
+|-unboost|p2a: Arcanine|atk|1
+|turn|28
+|
+|switch|p2a: Noivern|Noivern, M|311\/311
+|move|p1a: Arcanine|Close Combat|p2a: Noivern
+|-resisted|p2a: Noivern
+|-damage|p2a: Noivern|227\/311
+|-unboost|p1a: Arcanine|def|1
+|-unboost|p1a: Arcanine|spd|1
+|
+|-heal|p1a: Arcanine|228\/384|[from] item: Leftovers
+|turn|29
+|-message|MC_34543 forfeited.
+|
+|win|Juday
+|raw|Ladder updating...
+|leave|MC_34543
+|player|p1
+|raw|MC_34543's rating: 1233 &rarr; <strong>1212<\/strong><br \/>(-21 for losing)
+|raw|Juday's rating: 1297 &rarr; <strong>1317<\/strong><br \/>(+20 for winning)

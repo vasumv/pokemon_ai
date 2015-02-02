@@ -1,0 +1,202 @@
+|join|dhiswudhiua
+|join|KidKazam
+|player|p1|dhiswudhiua|149
+|player|p2|KidKazam|56
+|gametype|singles
+|gen|6
+|tier|ORAS OU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Amoonguss, F
+|poke|p1|Chansey, F
+|poke|p1|Latios, M
+|poke|p1|Heatran, F
+|poke|p1|Keldeo
+|poke|p1|Skarmory, M
+|poke|p2|Cottonee, F
+|poke|p2|Azelf
+|poke|p2|Whimsicott, M
+|poke|p2|Smeargle, M
+|poke|p2|Espeon, M
+|poke|p2|Latias, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Heatran|Heatran, F|385\/385
+|switch|p2a: Cottonee|Cottonee, F|284\/284
+|-item|p1a: Heatran|Air Balloon
+|turn|1
+|
+|move|p2a: Cottonee|Taunt|p1a: Heatran
+|-start|p1a: Heatran|move: Taunt
+|cant|p1a: Heatran|move: Taunt|Stealth Rock
+|
+|turn|2
+|
+|move|p2a: Cottonee|Stun Spore|p1a: Heatran|[miss]
+|-miss|p2a: Cottonee|p1a: Heatran
+|move|p1a: Heatran|Fire Blast|p2a: Cottonee
+|-supereffective|p2a: Cottonee
+|-enditem|p2a: Cottonee|Focus Sash
+|-damage|p2a: Cottonee|1\/284
+|
+|turn|3
+|
+|switch|p1a: Amoonguss|Amoonguss, F|432\/432
+|move|p2a: Cottonee|Tailwind|p2a: Cottonee
+|-sidestart|p2: KidKazam|move: Tailwind
+|
+|turn|4
+|
+|move|p2a: Cottonee|Memento|p1a: Amoonguss
+|-unboost|p1a: Amoonguss|atk|2
+|-unboost|p1a: Amoonguss|spa|2
+|faint|p2a: Cottonee
+|move|p1a: Amoonguss|Hidden Power|p2: Cottonee|[notarget]
+|-notarget
+|
+|
+|switch|p2a: Azelf|Azelf|292\/292
+|turn|5
+|
+|switch|p1a: Heatran|Heatran, F|385\/385
+|-item|p1a: Heatran|Air Balloon
+|move|p2a: Azelf|Taunt|p1a: Heatran
+|-start|p1a: Heatran|move: Taunt
+|
+|turn|6
+|
+|move|p2a: Azelf|Light Screen|p2a: Azelf
+|-sidestart|p2: KidKazam|move: Light Screen
+|move|p1a: Heatran|Fire Blast|p2a: Azelf
+|-damage|p2a: Azelf|180\/292
+|
+|-sideend|p2: KidKazam|move: Tailwind
+|turn|7
+|
+|move|p2a: Azelf|Reflect|p2a: Azelf
+|-sidestart|p2: KidKazam|Reflect
+|move|p1a: Heatran|Fire Blast|p2a: Azelf
+|-damage|p2a: Azelf|68\/292
+|
+|turn|8
+|
+|move|p2a: Azelf|Explosion|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|253\/385
+|-enditem|p1a: Heatran|Air Balloon
+|faint|p2a: Azelf
+|move|p1a: Heatran|Fire Blast|p2: Azelf|[notarget]
+|-notarget
+|
+|-end|p1a: Heatran|move: Taunt
+|
+|switch|p2a: Whimsicott|Whimsicott, M|324\/324
+|turn|9
+|
+|move|p2a: Whimsicott|Tailwind|p2a: Whimsicott
+|-sidestart|p2: KidKazam|move: Tailwind
+|move|p1a: Heatran|Fire Blast|p2a: Whimsicott
+|-crit|p2a: Whimsicott
+|-supereffective|p2a: Whimsicott
+|-enditem|p2a: Whimsicott|Focus Sash
+|-damage|p2a: Whimsicott|1\/324
+|
+|turn|10
+|
+|move|p2a: Whimsicott|Memento|p1a: Heatran
+|-unboost|p1a: Heatran|atk|2
+|-unboost|p1a: Heatran|spa|2
+|faint|p2a: Whimsicott
+|move|p1a: Heatran|Stealth Rock|p2: Whimsicott
+|-sidestart|p2: KidKazam|move: Stealth Rock
+|
+|
+|switch|p2a: Smeargle|Smeargle, M|314\/314
+|-damage|p2a: Smeargle|275\/314|[from] Stealth Rock
+|turn|11
+|
+|switch|p1a: Amoonguss|Amoonguss, F|432\/432
+|move|p2a: Smeargle|Spore|p1a: Amoonguss
+|-fail|p1a: Amoonguss
+|
+|turn|12
+|
+|move|p2a: Smeargle|Geomancy|p2a: Smeargle|[still]
+|-prepare|p2a: Smeargle|Geomancy|p2a: Smeargle
+|-enditem|p2a: Smeargle|Power Herb
+|-anim|p2a: Smeargle|Geomancy|p2a: Smeargle
+|-boost|p2a: Smeargle|spa|2
+|-boost|p2a: Smeargle|spd|2
+|-boost|p2a: Smeargle|spe|2
+|move|p1a: Amoonguss|Spore|p2a: Smeargle
+|-status|p2a: Smeargle|slp
+|
+|-sideend|p2: KidKazam|move: Tailwind
+|turn|13
+|
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|cant|p2a: Smeargle|slp
+|
+|-sideend|p2: KidKazam|move: Light Screen
+|turn|14
+|
+|cant|p2a: Smeargle|slp
+|move|p1a: Skarmory|Whirlwind|p2a: Smeargle
+|drag|p2a: Espeon|Espeon, M|272\/272
+|-damage|p2a: Espeon|238\/272|[from] Stealth Rock
+|
+|-heal|p2a: Espeon|255\/272|[from] item: Leftovers
+|-sideend|p2: KidKazam|Reflect
+|turn|15
+|
+|switch|p1a: Latios|Latios, M|301\/301
+|move|p2a: Espeon|Substitute|p2a: Espeon
+|-start|p2a: Espeon|Substitute
+|-damage|p2a: Espeon|187\/272
+|
+|-heal|p2a: Espeon|204\/272|[from] item: Leftovers
+|turn|16
+|
+|detailschange|p1a: Latios|Latios-Mega, M
+|message|Latios has Mega Evolved into Mega Latios!
+|move|p2a: Espeon|Calm Mind|p2a: Espeon
+|-boost|p2a: Espeon|spa|1
+|-boost|p2a: Espeon|spd|1
+|move|p1a: Latios|Earthquake|p2a: Espeon
+|-end|p2a: Espeon|Substitute
+|
+|-heal|p2a: Espeon|221\/272|[from] item: Leftovers
+|turn|17
+|
+|move|p2a: Espeon|Dazzling Gleam|p1a: Latios
+|-supereffective|p1a: Latios
+|-damage|p1a: Latios|49\/301
+|move|p1a: Latios|Dragon Dance|p1a: Latios
+|-boost|p1a: Latios|atk|1
+|-boost|p1a: Latios|spe|1
+|
+|-heal|p2a: Espeon|238\/272|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Latios|Earthquake|p2a: Espeon
+|-damage|p2a: Espeon|0 fnt
+|faint|p2a: Espeon
+|
+|-message|KidKazam forfeited.
+|
+|win|dhiswudhiua
+|raw|Ladder updating...
+|leave|KidKazam
+|player|p2
+|raw|Ladder (probably) updated, but score could not be retrieved (timeout).
+|raw|Ladder (probably) updated, but score could not be retrieved (Error: socket hang up).

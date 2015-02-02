@@ -1,0 +1,290 @@
+|join|Dan Smith
+|join|Beasteh
+|player|p1|Dan Smith|101
+|player|p2|Beasteh|101
+|gametype|singles
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Genesect
+|poke|p1|Gengar, M
+|poke|p1|Garchomp, M
+|poke|p1|Deoxys-Defense
+|poke|p1|Latios, M
+|poke|p1|Terrakion
+|poke|p2|Dragonite, M
+|poke|p2|Breloom, F
+|poke|p2|Jirachi
+|poke|p2|Terrakion
+|poke|p2|Starmie
+|poke|p2|Genesect
+|rule|Sleep Clause
+|rule|Species Clause
+|rule|OHKO Clause
+|rule|Moody Clause
+|rule|Evasion Clause
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Deoxys-Defense|Deoxys-Defense| (100\/100)
+|switch|p2a: Terrakion|Terrakion| (100\/100)
+|-ability|p1a: Deoxys-Defense|Pressure
+|turn|1
+|callback|decision
+|
+|move|p2a: Terrakion|X-Scissor|p1a: Deoxys-Defense
+|-supereffective|p1a: Deoxys-Defense
+|-damage|p1a: Deoxys-Defense|42 (58\/100)
+|-enditem|p1a: Deoxys-Defense|Red Card|[of] p1a: Deoxys-Defense
+|drag|p2a: Jirachi|Jirachi| (100\/100)
+|move|p1a: Deoxys-Defense|Taunt|p2a: Jirachi
+|-start|p2a: Jirachi|move: Taunt
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: Starmie|Starmie| (100\/100)
+|move|p1a: Deoxys-Defense|Stealth Rock|p2a: Starmie
+|-sidestart|p2: Beasteh|move: Stealth Rock
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Starmie|Psyshock|p1a: Deoxys-Defense
+|-resisted|p1a: Deoxys-Defense
+|-damage|p1a: Deoxys-Defense|12 (46\/100)
+|move|p1a: Deoxys-Defense|Spikes|p2a: Starmie
+|-sidestart|p2: Beasteh|Spikes
+|
+|turn|4
+|callback|decision
+|
+|move|p2a: Starmie|Rapid Spin|p1a: Deoxys-Defense
+|-damage|p1a: Deoxys-Defense|3 (43\/100)
+|-sideend|p2: Beasteh|Spikes|[from] move: Rapid Spin|[of] p2a: Starmie
+|-sideend|p2: Beasteh|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Starmie
+|move|p1a: Deoxys-Defense|Night Shade|p2a: Starmie
+|-damage|p2a: Starmie|38 (62\/100)
+|
+|-heal|p2a: Starmie|6 (68\/100)|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p2a: Starmie|Surf|p1a: Deoxys-Defense
+|-damage|p1a: Deoxys-Defense|31 (13\/100)
+|move|p1a: Deoxys-Defense|Stealth Rock|p2a: Starmie
+|-sidestart|p2: Beasteh|move: Stealth Rock
+|
+|-heal|p2a: Starmie|6 (74\/100)|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Starmie|Rapid Spin|p1a: Deoxys-Defense
+|-damage|p1a: Deoxys-Defense|2 (11\/100)
+|-sideend|p2: Beasteh|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Starmie
+|move|p1a: Deoxys-Defense|Stealth Rock|p2a: Starmie
+|-sidestart|p2: Beasteh|move: Stealth Rock
+|
+|-heal|p2a: Starmie|6 (80\/100)|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, M| (100\/100)
+|move|p2a: Starmie|Psyshock|p1a: Gengar
+|-supereffective|p1a: Gengar
+|-damage|p1a: Gengar|100 (0\/100 fnt)
+|faint|p1a: Gengar
+|
+|-heal|p2a: Starmie|6 (86\/100)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, M| (100\/100)
+|turn|8
+|callback|decision
+|
+|move|p1a: Garchomp|Earthquake|p2a: Starmie
+|-damage|p2a: Starmie|79 (8\/100)
+|move|p2a: Starmie|Rapid Spin|p1a: Garchomp
+|-damage|p1a: Garchomp|4 (96\/100)
+|-damage|p2a: Starmie|8 (0\/100 fnt)|[from] ability: Rough Skin|[of] p1a: Garchomp
+|faint|p2a: Starmie
+|
+|callback|decision
+|chat|Beasteh|what
+|
+|switch|p2a: Breloom|Breloom, F| (100\/100)
+|-damage|p2a: Breloom|6 (94\/100)|[from] Stealth Rock
+|turn|9
+|callback|decision
+|
+|move|p1a: Garchomp|Earthquake|p2a: Breloom
+|-resisted|p2a: Breloom
+|-damage|p2a: Breloom|38 (56\/100)
+|move|p2a: Breloom|Spore|p1a: Garchomp
+|-status|p1: Garchomp|slp
+|
+|turn|10
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M| (100\/100)
+|move|p2a: Breloom|Swords Dance|p2a: Breloom
+|-boost|p2a: Breloom|atk|2
+|
+|turn|11
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi| (100\/100)
+|-damage|p2a: Jirachi|6 (94\/100)|[from] Stealth Rock
+|move|p1a: Latios|Psyshock|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|13 (81\/100)
+|-damage|p1a: Latios|10 (90\/100)|[from] item: Life Orb
+|
+|-heal|p2a: Jirachi|6 (87\/100)|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Latios|Hidden Power|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|42 (46\/100)
+|-damage|p1a: Latios|10 (80\/100)|[from] item: Life Orb
+|move|p2a: Jirachi|Thunder Wave|p1a: Latios
+|-status|p1: Latios|par
+|
+|-heal|p2a: Jirachi|6 (52\/100)|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: Jirachi|Stealth Rock|p1a: Latios
+|-sidestart|p1: Dan Smith|move: Stealth Rock
+|move|p1a: Latios|Hidden Power|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|40 (12\/100)
+|-damage|p1a: Latios|10 (70\/100 par)|[from] item: Life Orb
+|
+|-heal|p2a: Jirachi|6 (18\/100)|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Latios
+|-damage|p1a: Latios|38 (32\/100 par)
+|cant|p1a: Latios|flinch
+|
+|-heal|p2a: Jirachi|6 (24\/100)|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Latios
+|-damage|p1a: Latios|32 (0\/100 fnt)
+|faint|p1a: Latios
+|
+|-heal|p2a: Jirachi|6 (30\/100)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Terrakion|Terrakion| (100\/100)
+|-damage|p1a: Terrakion|6 (94\/100)|[from] Stealth Rock
+|turn|16
+|callback|decision
+|
+|move|p1a: Terrakion|Close Combat|p2a: Jirachi
+|-damage|p2a: Jirachi|30 (0\/100 fnt)
+|-unboost|p1a: Terrakion|def|1
+|-unboost|p1a: Terrakion|spd|1
+|faint|p2a: Jirachi
+|
+|callback|decision
+|
+|switch|p2a: Breloom|Breloom, F| (56\/100)
+|-damage|p2a: Breloom|6 (50\/100)|[from] Stealth Rock
+|turn|17
+|callback|decision
+|
+|move|p2a: Breloom|Mach Punch|p1a: Terrakion
+|-supereffective|p1a: Terrakion
+|-damage|p1a: Terrakion|94 (0\/100 fnt)
+|faint|p1a: Terrakion
+|
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect| (100\/100)
+|-damage|p1a: Genesect|12 (88\/100)|[from] Stealth Rock
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|turn|18
+|callback|decision
+|
+|move|p2a: Breloom|Mach Punch|p1a: Genesect
+|-damage|p1a: Genesect|41 (46\/100)
+|move|p1a: Genesect|Rock Polish|p1a: Genesect
+|-boost|p1a: Genesect|spe|2
+|
+|turn|19
+|callback|decision
+|
+|move|p2a: Breloom|Mach Punch|p1a: Genesect
+|-damage|p1a: Genesect|41 (5\/100)
+|move|p1a: Genesect|Ice Beam|p2a: Breloom
+|-supereffective|p2a: Breloom
+|-damage|p2a: Breloom|50 (0\/100 fnt)
+|-damage|p1a: Genesect|5 (0\/100 fnt)|[from] item: Life Orb
+|faint|p2a: Breloom
+|faint|p1a: Genesect
+|
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, M| (96\/100 slp)
+|-damage|p1a: Garchomp|6 (90\/100 slp)|[from] Stealth Rock
+|switch|p2a: Dragonite|Dragonite, M| (100\/100)
+|-damage|p2a: Dragonite|25 (75\/100)|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|cant|p1: Garchomp|slp
+|move|p2a: Dragonite|Dragon Dance|p2a: Dragonite
+|-boost|p2a: Dragonite|atk|1
+|-boost|p2a: Dragonite|spe|1
+|
+|turn|21
+|callback|decision
+|
+|-curestatus|p1a: Garchomp|slp
+|move|p1a: Garchomp|Outrage|p2a: Dragonite
+|-supereffective|p2a: Dragonite
+|-damage|p2a: Dragonite|75 (0\/100 fnt)
+|faint|p2a: Dragonite
+|
+|callback|decision
+|
+|switch|p2a: Genesect|Genesect| (100\/100)
+|-damage|p2a: Genesect|12 (88\/100)|[from] Stealth Rock
+|-boost|p2a: Genesect|spa|1|[from] ability: Download
+|turn|22
+|callback|decision
+|
+|move|p1a: Garchomp|Outrage|p2a: Genesect
+|-resisted|p2a: Genesect
+|-damage|p2a: Genesect|36 (52\/100)
+|move|p2a: Genesect|Rock Polish|p2a: Genesect
+|-boost|p2a: Genesect|spe|2
+|
+|turn|23
+|callback|decision
+|
+|move|p2a: Genesect|Ice Beam|p1a: Garchomp
+|-supereffective|p1a: Garchomp
+|-damage|p1a: Garchomp|90 (0\/100 fnt)
+|-damage|p2a: Genesect|10 (42\/100)|[from] item: Life Orb
+|faint|p1a: Garchomp
+|
+|callback|decision
+|
+|switch|p1a: Deoxys-Defense|Deoxys-Defense| (11\/100)
+|-damage|p1a: Deoxys-Defense|11 (0\/100 fnt)|[from] Stealth Rock
+|faint|p1a: Deoxys-Defense
+|
+|win|Beasteh
+|chatmsg-raw|Ladder updating...
+|raw|Dan Smith's rating: 1954 &rarr; <strong>1929<\/strong><br \/>(-25 for losing)
+|raw|Beasteh's rating: 1749 &rarr; <strong>1754<\/strong><br \/>(+5 for winning)
+|leave|Dan Smith
+|player|p1

@@ -1,0 +1,243 @@
+|join|pipas13
+|join|asdfpoiu
+|player|p1|pipas13|1
+|player|p2|asdfpoiu|1
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Snorlax, F
+|poke|p1|Infernape, M
+|poke|p1|Tentacruel, F
+|poke|p1|Krookodile, M
+|poke|p1|Roserade, M
+|poke|p1|Aerodactyl, M
+|poke|p2|Trevenant, F
+|poke|p2|Chandelure, F
+|poke|p2|Blastoise, M
+|poke|p2|Aggron, F
+|poke|p2|Infernape, F
+|poke|p2|Swampert, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit three PokÃ©mon knowing Baton Pass
+|teampreview
+|join|piyakpiyak
+|
+|start
+|switch|p1a: Roserade|Roserade, M|269\/269
+|switch|p2a: Aggron|Aggron, F|344\/344
+|turn|1
+|
+|move|p1a: Roserade|Sleep Powder|p2a: Aggron|[miss]
+|-miss|p1a: Roserade|p2a: Aggron
+|move|p2a: Aggron|Stealth Rock|p1a: Roserade
+|-sidestart|p1: pipas13|move: Stealth Rock
+|
+|turn|2
+|
+|move|p1a: Roserade|Spikes|p2a: Aggron
+|-sidestart|p2: asdfpoiu|Spikes
+|move|p2a: Aggron|Thunder Wave|p1a: Roserade
+|-status|p1a: Roserade|par
+|
+|turn|3
+|
+|move|p1a: Roserade|Sleep Powder|p2a: Aggron
+|-status|p2a: Aggron|slp
+|cant|p2a: Aggron|slp
+|
+|turn|4
+|
+|cant|p2a: Aggron|slp
+|move|p1a: Roserade|Leaf Storm|p2a: Aggron
+|-activate|p2a: Aggron|Sturdy
+|-damage|p2a: Aggron|1\/344 slp
+|-unboost|p1a: Roserade|spa|2
+|
+|-heal|p2a: Aggron|22\/344 slp|[from] item: Leftovers
+|turn|5
+|
+|-curestatus|p2a: Aggron|slp
+|move|p2a: Aggron|Taunt|p1a: Roserade
+|-start|p1a: Roserade|move: Taunt
+|move|p1a: Roserade|Leaf Storm|p2a: Aggron
+|-damage|p2a: Aggron|0 fnt
+|-unboost|p1a: Roserade|spa|2
+|faint|p2a: Aggron
+|
+|
+|switch|p2a: Infernape|Infernape, F|294\/294
+|-damage|p2a: Infernape|258\/294|[from] Spikes
+|turn|6
+|
+|switch|p1a: Tentacruel|Tentacruel, F|363\/363
+|-damage|p1a: Tentacruel|318\/363|[from] Stealth Rock
+|move|p2a: Infernape|Acrobatics|p1a: Tentacruel
+|-crit|p1a: Tentacruel
+|-damage|p1a: Tentacruel|160\/363
+|
+|-heal|p1a: Tentacruel|182\/363|[from] item: Black Sludge
+|turn|7
+|
+|move|p2a: Infernape|U-turn|p1a: Tentacruel
+|-crit|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|129\/363
+|
+|switch|p2a: Blastoise|Blastoise, M|344\/344
+|-damage|p2a: Blastoise|301\/344|[from] Spikes
+|move|p1a: Tentacruel|Rapid Spin|p2a: Blastoise
+|-damage|p2a: Blastoise|290\/344
+|-sideend|p1: pipas13|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Tentacruel
+|
+|-heal|p1a: Tentacruel|151\/363|[from] item: Black Sludge
+|turn|8
+|
+|detailschange|p2a: Blastoise|Blastoise-Mega, M
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p1a: Tentacruel|Toxic|p2a: Blastoise
+|-status|p2a: Blastoise|tox
+|move|p2a: Blastoise|Dragon Pulse|p1a: Tentacruel
+|-damage|p1a: Tentacruel|34\/363
+|
+|-heal|p1a: Tentacruel|56\/363|[from] item: Black Sludge
+|-damage|p2a: Blastoise|269\/344 tox|[from] psn
+|turn|9
+|
+|move|p1a: Tentacruel|Sludge Bomb|p2a: Blastoise
+|-damage|p2a: Blastoise|200\/344 tox
+|move|p2a: Blastoise|Dragon Pulse|p1a: Tentacruel
+|-damage|p1a: Tentacruel|0 fnt
+|faint|p1a: Tentacruel
+|
+|-damage|p2a: Blastoise|158\/344 tox|[from] psn
+|
+|switch|p1a: Aerodactyl|Aerodactyl, M|301\/301
+|-ability|p1a: Aerodactyl|Pressure
+|turn|10
+|
+|detailschange|p1a: Aerodactyl|Aerodactyl-Mega, M
+|message|Aerodactyl has Mega Evolved into Mega Aerodactyl!
+|move|p1a: Aerodactyl|Stone Edge|p2a: Blastoise|[miss]
+|-miss|p1a: Aerodactyl|p2a: Blastoise
+|move|p2a: Blastoise|Water Pulse|p1a: Aerodactyl
+|-supereffective|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|0 fnt
+|faint|p1a: Aerodactyl
+|
+|-damage|p2a: Blastoise|95\/344 tox|[from] psn
+|
+|switch|p1a: Krookodile|Krookodile, M|393\/393
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Blastoise
+|-unboost|p2a: Blastoise|atk|1
+|turn|11
+|
+|move|p1a: Krookodile|Earthquake|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|
+|switch|p2a: Trevenant|Trevenant, F|341\/341
+|-damage|p2a: Trevenant|299\/341|[from] Spikes
+|turn|12
+|
+|move|p1a: Krookodile|Knock Off|p2a: Trevenant
+|-supereffective|p2a: Trevenant
+|-damage|p2a: Trevenant|0 fnt
+|-enditem|p2a: Trevenant|Lum Berry|[from] move: Knock Off|[of] p1a: Krookodile
+|faint|p2a: Trevenant
+|
+|
+|switch|p2a: Infernape|Infernape, F|258\/294
+|-damage|p2a: Infernape|222\/294|[from] Spikes
+|turn|13
+|
+|switch|p1a: Roserade|Roserade, M|269\/269 par
+|move|p2a: Infernape|Close Combat|p1a: Roserade
+|-resisted|p1a: Roserade
+|-damage|p1a: Roserade|143\/269 par
+|-unboost|p2a: Infernape|def|1
+|-unboost|p2a: Infernape|spd|1
+|
+|turn|14
+|
+|move|p2a: Infernape|Acrobatics|p1a: Roserade
+|-supereffective|p1a: Roserade
+|-damage|p1a: Roserade|0 fnt
+|faint|p1a: Roserade
+|
+|
+|switch|p1a: Infernape|Infernape, M|293\/293
+|turn|15
+|
+|move|p1a: Infernape|Close Combat|p2a: Infernape
+|-crit|p2a: Infernape
+|-damage|p2a: Infernape|0 fnt
+|-unboost|p1a: Infernape|def|1
+|-unboost|p1a: Infernape|spd|1
+|faint|p2a: Infernape
+|
+|
+|switch|p2a: Swampert|Swampert, M|361\/361
+|-damage|p2a: Swampert|316\/361|[from] Spikes
+|turn|16
+|
+|move|p1a: Infernape|Close Combat|p2a: Swampert
+|-damage|p2a: Swampert|120\/361
+|-unboost|p1a: Infernape|def|1
+|-unboost|p1a: Infernape|spd|1
+|move|p2a: Swampert|Earthquake|p1a: Infernape
+|-supereffective|p1a: Infernape
+|-damage|p1a: Infernape|0 fnt
+|faint|p1a: Infernape
+|
+|-heal|p2a: Swampert|142\/361|[from] item: Leftovers
+|
+|switch|p1a: Krookodile|Krookodile, M|393\/393
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Swampert
+|-unboost|p2a: Swampert|atk|1
+|turn|17
+|
+|move|p1a: Krookodile|Earthquake|p2a: Swampert
+|-damage|p2a: Swampert|4\/361
+|move|p2a: Swampert|Waterfall|p1a: Krookodile
+|-supereffective|p1a: Krookodile
+|-damage|p1a: Krookodile|127\/393
+|
+|-heal|p1a: Krookodile|151\/393|[from] item: Leftovers
+|-heal|p2a: Swampert|26\/361|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Krookodile|Earthquake|p2a: Swampert
+|-crit|p2a: Swampert
+|-damage|p2a: Swampert|0 fnt
+|faint|p2a: Swampert
+|
+|-heal|p1a: Krookodile|175\/393|[from] item: Leftovers
+|
+|switch|p2a: Chandelure|Chandelure, F|286\/286
+|-damage|p2a: Chandelure|251\/286|[from] Spikes
+|turn|19
+|
+|move|p1a: Krookodile|Earthquake|p2a: Chandelure
+|-supereffective|p2a: Chandelure
+|-damage|p2a: Chandelure|0 fnt
+|faint|p2a: Chandelure
+|
+|win|pipas13
+|raw|Ladder updating...
+|raw|pipas13's rating: 1165 &rarr; <strong>1192<\/strong><br \/>(+27 for winning)
+|raw|asdfpoiu's rating: 1184 &rarr; <strong>1157<\/strong><br \/>(-27 for losing)
+|chat|asdfpoiu|gg
+|chat|pipas13|gg
+|leave|asdfpoiu
+|player|p2
+|leave|piyakpiyak

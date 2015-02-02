@@ -1,0 +1,253 @@
+|join|PiggK
+|join|DumberThanSlowpoke
+|player|p1|PiggK|125
+|player|p2|DumberThanSlowpoke|168
+|gametype|singles
+|gen|6
+|tier|ORAS OU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Salamence, M
+|poke|p1|Tyranitar, F
+|poke|p1|Excadrill, M
+|poke|p1|Greninja, F
+|poke|p1|Dragonite, M
+|poke|p1|Scizor, M
+|poke|p2|Lopunny, M
+|poke|p2|Ferrothorn, M
+|poke|p2|Sylveon, F
+|poke|p2|Rotom-Wash
+|poke|p2|Landorus, M
+|poke|p2|Latios, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Scizor|Scizor, M|311\/311
+|switch|p2a: Lopunny|Lopunny, M|272\/272
+|turn|1
+|
+|detailschange|p2a: Lopunny|Lopunny-Mega, M
+|message|Lopunny has Mega Evolved into Mega Lopunny!
+|move|p2a: Lopunny|Fake Out|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|275\/311
+|cant|p1a: Scizor|flinch
+|
+|turn|2
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|move|p1a: Scizor|Superpower|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|165\/304
+|-unboost|p1a: Scizor|atk|1
+|-unboost|p1a: Scizor|def|1
+|
+|-heal|p2a: Rotom-Wash|184\/304|[from] item: Leftovers
+|turn|3
+|
+|switch|p1a: Tyranitar|Tyranitar, F|403\/403
+|-weather|Sandstorm
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Tyranitar
+|-status|p1a: Tyranitar|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Rotom-Wash|165\/304|[from] sandstorm
+|-heal|p2a: Rotom-Wash|184\/304|[from] item: Leftovers
+|-damage|p1a: Tyranitar|353\/403 brn|[from] brn
+|turn|4
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Tyranitar
+|-crit|p1a: Tyranitar
+|-damage|p1a: Tyranitar|262\/403 brn
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|move|p1a: Tyranitar|Stealth Rock|p2a: Ferrothorn
+|-sidestart|p2: DumberThanSlowpoke|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Tyranitar|212\/403 brn|[from] brn
+|turn|5
+|
+|switch|p1a: Salamence|Salamence, M|331\/331
+|-ability|p1a: Salamence|Intimidate|[of] p2a: Ferrothorn
+|-unboost|p2a: Ferrothorn|atk|1
+|move|p2a: Ferrothorn|Leech Seed|p1a: Salamence
+|-start|p1a: Salamence|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salamence|311\/331|[from] sandstorm
+|-damage|p1a: Salamence|270\/331|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|6
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|184\/304
+|-damage|p2a: Rotom-Wash|146\/304|[from] Stealth Rock
+|detailschange|p1a: Salamence|Salamence-Mega, M
+|message|Salamence has Mega Evolved into Mega Salamence!
+|move|p1a: Salamence|Fire Blast|p2a: Rotom-Wash|[miss]
+|-miss|p1a: Salamence|p2a: Rotom-Wash
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salamence|250\/331|[from] sandstorm
+|-damage|p2a: Rotom-Wash|127\/304|[from] sandstorm
+|-heal|p2a: Rotom-Wash|146\/304|[from] item: Leftovers
+|-damage|p1a: Salamence|209\/331|[from] Leech Seed|[of] p2a: Rotom-Wash
+|-heal|p2a: Rotom-Wash|187\/304|[silent]
+|turn|7
+|
+|move|p1a: Salamence|Draco Meteor|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|-unboost|p1a: Salamence|spa|2
+|faint|p2a: Rotom-Wash
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salamence|189\/331|[from] sandstorm
+|
+|switch|p2a: Sylveon|Sylveon, F|394\/394
+|-damage|p2a: Sylveon|345\/394|[from] Stealth Rock
+|turn|8
+|
+|switch|p1a: Scizor|Scizor, M|275\/311
+|move|p2a: Sylveon|Hyper Voice|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|184\/311
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Sylveon|321\/394|[from] sandstorm
+|-heal|p2a: Sylveon|345\/394|[from] item: Leftovers
+|turn|9
+|
+|move|p2a: Sylveon|Protect|p2a: Sylveon
+|-singleturn|p2a: Sylveon|Protect
+|move|p1a: Scizor|U-turn|p2a: Sylveon
+|-activate|p2a: Sylveon|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Sylveon|321\/394|[from] sandstorm
+|-heal|p2a: Sylveon|345\/394|[from] item: Leftovers
+|turn|10
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|-damage|p2a: Ferrothorn|330\/352|[from] Stealth Rock
+|move|p1a: Scizor|U-turn|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|207\/352
+|-damage|p1a: Scizor|146\/311|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|
+|switch|p1a: Salamence|Salamence-Mega, M|189\/331
+|
+|-weather|none
+|-heal|p2a: Ferrothorn|229\/352|[from] item: Leftovers
+|turn|11
+|
+|switch|p2a: Sylveon|Sylveon, F|345\/394
+|-damage|p2a: Sylveon|296\/394|[from] Stealth Rock
+|move|p1a: Salamence|Fire Blast|p2a: Sylveon
+|-damage|p2a: Sylveon|200\/394
+|
+|-heal|p2a: Sylveon|224\/394|[from] item: Leftovers
+|turn|12
+|
+|move|p1a: Salamence|Frustration|p2a: Sylveon
+|-damage|p2a: Sylveon|0 fnt
+|faint|p2a: Sylveon
+|
+|
+|switch|p2a: Landorus|Landorus, M|319\/319
+|-damage|p2a: Landorus|280\/319|[from] Stealth Rock
+|turn|13
+|
+|move|p1a: Salamence|Frustration|p2a: Landorus
+|-damage|p2a: Landorus|28\/319
+|move|p2a: Landorus|Psychic|p1a: Salamence
+|-damage|p1a: Salamence|0 fnt
+|faint|p1a: Salamence
+|
+|
+|switch|p1a: Greninja|Greninja, F|285\/285
+|turn|14
+|
+|move|p1a: Greninja|Ice Beam|p2a: Landorus
+|-start|p1a: Greninja|typechange|Ice|[from] Protean
+|-supereffective|p2a: Landorus
+|-damage|p2a: Landorus|0 fnt
+|-damage|p1a: Greninja|257\/285|[from] item: Life Orb
+|faint|p2a: Landorus
+|
+|
+|switch|p2a: Lopunny|Lopunny-Mega, M|272\/272
+|-damage|p2a: Lopunny|255\/272|[from] Stealth Rock
+|turn|15
+|
+|switch|p1a: Tyranitar|Tyranitar, F|212\/403 brn
+|-weather|Sandstorm
+|move|p2a: Lopunny|Power-Up Punch|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|-boost|p2a: Lopunny|atk|1
+|faint|p1a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Lopunny|238\/272|[from] sandstorm
+|
+|switch|p1a: Excadrill|Excadrill, M|361\/361
+|turn|16
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|229\/352
+|-damage|p2a: Ferrothorn|207\/352|[from] Stealth Rock
+|move|p1a: Excadrill|Earthquake|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|39\/352
+|-damage|p1a: Excadrill|325\/361|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Ferrothorn|61\/352|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Excadrill|Earthquake|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|-damage|p1a: Excadrill|289\/361|[from] item: Life Orb
+|faint|p2a: Ferrothorn
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Latios|Latios, M|302\/302
+|-damage|p2a: Latios|265\/302|[from] Stealth Rock
+|turn|18
+|
+|move|p1a: Excadrill|Iron Head|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|-damage|p1a: Excadrill|253\/361|[from] item: Life Orb
+|faint|p2a: Latios
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Lopunny|Lopunny-Mega, M|238\/272
+|-damage|p2a: Lopunny|221\/272|[from] Stealth Rock
+|turn|19
+|
+|move|p2a: Lopunny|Fake Out|p1a: Excadrill
+|-resisted|p1a: Excadrill
+|-damage|p1a: Excadrill|196\/361
+|cant|p1a: Excadrill|flinch
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Lopunny|204\/272|[from] sandstorm
+|turn|20
+|
+|move|p1a: Excadrill|Earthquake|p2a: Lopunny
+|-damage|p2a: Lopunny|0 fnt
+|-damage|p1a: Excadrill|160\/361|[from] item: Life Orb
+|faint|p2a: Lopunny
+|
+|win|PiggK
+|raw|Ladder updating...
+|raw|PiggK's rating: 1208 &rarr; <strong>1237<\/strong><br \/>(+29 for winning)
+|raw|DumberThanSlowpoke's rating: 1269 &rarr; <strong>1240<\/strong><br \/>(-29 for losing)
+|leave|DumberThanSlowpoke
+|player|p2

@@ -1,0 +1,229 @@
+|join|Kodiaka
+|join|meeowiekins
+|player|p1|Kodiaka|238
+|player|p2|meeowiekins|160
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Aerodactyl, M
+|poke|p1|Hippowdon, F
+|poke|p1|Tentacruel, M
+|poke|p1|Celebi
+|poke|p1|Chandelure, M
+|poke|p1|Haxorus, M, shiny
+|poke|p2|Lucario, F
+|poke|p2|Infernape, M
+|poke|p2|Azelf
+|poke|p2|Crobat, M
+|poke|p2|Blastoise, F
+|poke|p2|Flygon, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Big Bertha|Hippowdon, F|420\/420
+|switch|p2a: Azelf|Azelf|292\/292
+|-weather|Sandstorm
+|turn|1
+|
+|move|p2a: Azelf|Taunt|p1a: Big Bertha
+|-start|p1a: Big Bertha|move: Taunt
+|cant|p1a: Big Bertha|move: Taunt|Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Azelf|274\/292|[from] sandstorm
+|turn|2
+|
+|switch|p1a: Onion Thing|Celebi|403\/403
+|move|p2a: Azelf|Stealth Rock|p1a: Onion Thing
+|-sidestart|p1: Kodiaka|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Azelf|256\/292|[from] sandstorm
+|-damage|p1a: Onion Thing|378\/403|[from] sandstorm
+|-heal|p1a: Onion Thing|403\/403|[from] item: Leftovers
+|turn|3
+|
+|move|p2a: Azelf|Taunt|p1a: Onion Thing
+|-start|p1a: Onion Thing|move: Taunt
+|move|p1a: Onion Thing|Giga Drain|p2a: Azelf
+|-damage|p2a: Azelf|141\/292
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Azelf|123\/292|[from] sandstorm
+|-damage|p1a: Onion Thing|378\/403|[from] sandstorm
+|-heal|p1a: Onion Thing|403\/403|[from] item: Leftovers
+|turn|4
+|
+|move|p2a: Azelf|Knock Off|p1a: Onion Thing
+|-supereffective|p1a: Onion Thing
+|-damage|p1a: Onion Thing|189\/403
+|-enditem|p1a: Onion Thing|Leftovers|[from] move: Knock Off|[of] p2a: Azelf
+|move|p1a: Onion Thing|U-turn|p2a: Azelf
+|-supereffective|p2a: Azelf
+|-damage|p2a: Azelf|1\/292
+|
+|switch|p1a: The Kraken|Tentacruel, M|361\/361
+|-damage|p1a: The Kraken|316\/361|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Azelf|0 fnt|[from] sandstorm
+|-damage|p1a: The Kraken|294\/361|[from] sandstorm
+|-heal|p1a: The Kraken|316\/361|[from] item: Black Sludge
+|faint|p2a: Azelf
+|
+|switch|p2a: Flygon|Flygon, F|301\/301
+|turn|5
+|
+|switch|p1a: Big Bertha|Hippowdon, F|420\/420
+|-damage|p1a: Big Bertha|394\/420|[from] Stealth Rock
+|move|p2a: Flygon|Earthquake|p1a: Big Bertha
+|-damage|p1a: Big Bertha|291\/420
+|
+|-weather|none
+|-heal|p1a: Big Bertha|317\/420|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: Blastoise|Blastoise, F|362\/362
+|move|p1a: Big Bertha|Stealth Rock|p2a: Blastoise
+|-sidestart|p2: meeowiekins|move: Stealth Rock
+|
+|-heal|p1a: Big Bertha|343\/420|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: The Kraken|Tentacruel, M|316\/361
+|-damage|p1a: The Kraken|271\/361|[from] Stealth Rock
+|detailschange|p2a: Blastoise|Blastoise-Mega, F
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Blastoise|Rapid Spin|p1a: The Kraken
+|-damage|p1a: The Kraken|257\/361
+|-sideend|p2: meeowiekins|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Blastoise
+|
+|-heal|p1a: The Kraken|279\/361|[from] item: Black Sludge
+|turn|8
+|
+|switch|p2a: Flygon|Flygon, F|301\/301
+|move|p1a: The Kraken|Rapid Spin|p2a: Flygon
+|-damage|p2a: Flygon|287\/301
+|-sideend|p1: Kodiaka|Stealth Rock|[from] move: Rapid Spin|[of] p1a: The Kraken
+|
+|-heal|p1a: The Kraken|301\/361|[from] item: Black Sludge
+|turn|9
+|
+|move|p2a: Flygon|U-turn|p1a: The Kraken
+|-resisted|p1a: The Kraken
+|-damage|p1a: The Kraken|271\/361
+|
+|switch|p2a: Blastoise|Blastoise-Mega, F|362\/362
+|move|p1a: The Kraken|Scald|p2a: Blastoise
+|-resisted|p2a: Blastoise
+|-damage|p2a: Blastoise|326\/362
+|
+|-heal|p1a: The Kraken|293\/361|[from] item: Black Sludge
+|turn|10
+|
+|move|p1a: The Kraken|Toxic Spikes|p2a: Blastoise
+|-sidestart|p2: meeowiekins|move: Toxic Spikes
+|move|p2a: Blastoise|Dark Pulse|p1a: The Kraken
+|-damage|p1a: The Kraken|195\/361
+|
+|-heal|p1a: The Kraken|217\/361|[from] item: Black Sludge
+|turn|11
+|
+|move|p1a: The Kraken|Scald|p2a: Blastoise
+|-resisted|p2a: Blastoise
+|-damage|p2a: Blastoise|290\/362
+|-status|p2a: Blastoise|brn
+|move|p2a: Blastoise|Rapid Spin|p1a: The Kraken
+|-damage|p1a: The Kraken|210\/361
+|-sideend|p2: meeowiekins|Toxic Spikes|[from] move: Rapid Spin|[of] p2a: Blastoise
+|
+|-heal|p1a: The Kraken|232\/361|[from] item: Black Sludge
+|-damage|p2a: Blastoise|245\/362 brn|[from] brn
+|turn|12
+|
+|switch|p1a: Onion Thing|Celebi|189\/403
+|switch|p2a: Flygon|Flygon, F|287\/301
+|
+|turn|13
+|
+|move|p2a: Flygon|U-turn|p1a: Onion Thing
+|-supereffective|p1a: Onion Thing
+|-damage|p1a: Onion Thing|0 fnt
+|faint|p1a: Onion Thing
+|
+|switch|p2a: Crobat|Crobat, M|325\/325
+|
+|
+|switch|p1a: Disco Inferno|Chandelure, M|261\/261
+|turn|14
+|
+|switch|p2a: Blastoise|Blastoise-Mega, F|245\/362 brn
+|move|p1a: Disco Inferno|Shadow Ball|p2a: Blastoise
+|-damage|p2a: Blastoise|34\/362 brn
+|
+|-damage|p2a: Blastoise|0 fnt|[from] brn
+|faint|p2a: Blastoise
+|
+|switch|p2a: Flygon|Flygon, F|287\/301
+|turn|15
+|
+|move|p2a: Flygon|U-turn|p1a: Disco Inferno
+|-resisted|p1a: Disco Inferno
+|-damage|p1a: Disco Inferno|243\/261
+|
+|switch|p2a: Lucario|Lucario, F|281\/281
+|move|p1a: Disco Inferno|Shadow Ball|p2a: Lucario
+|-damage|p2a: Lucario|0 fnt
+|faint|p2a: Lucario
+|
+|
+|switch|p2a: Crobat|Crobat, M|325\/325
+|turn|16
+|
+|move|p2a: Crobat|Brave Bird|p1a: Disco Inferno
+|-damage|p1a: Disco Inferno|0 fnt
+|-damage|p2a: Crobat|245\/325|[from] recoil|[of] p1a: Disco Inferno
+|faint|p1a: Disco Inferno
+|
+|
+|switch|p1a: Terrordactyl|Aerodactyl, M|301\/301
+|-ability|p1a: Terrordactyl|Pressure
+|turn|17
+|
+|switch|p2a: Flygon|Flygon, F|287\/301
+|detailschange|p1a: Terrordactyl|Aerodactyl-Mega, M
+|message|Aerodactyl has Mega Evolved into Mega Aerodactyl!
+|move|p1a: Terrordactyl|Ice Fang|p2a: Flygon
+|-supereffective|p2a: Flygon
+|-damage|p2a: Flygon|0 fnt
+|faint|p2a: Flygon
+|
+|
+|switch|p2a: Infernape|Infernape, M|293\/293
+|turn|18
+|
+|move|p1a: Terrordactyl|Earthquake|p2a: Infernape
+|-supereffective|p2a: Infernape
+|-damage|p2a: Infernape|0 fnt
+|faint|p2a: Infernape
+|
+|c|âKodiaka|gg
+|-message|meeowiekins forfeited.
+|
+|win|Kodiaka
+|raw|Ladder updating...
+|leave|meeowiekins
+|player|p2
+|raw|Kodiaka's rating: 1456 &rarr; <strong>1477<\/strong><br \/>(+21 for winning)
+|raw|meeowiekins's rating: 1479 &rarr; <strong>1458<\/strong><br \/>(-21 for losing)

@@ -1,0 +1,286 @@
+|join|BURNSOFF
+|join|TimidTotodile
+|player|p1|BURNSOFF|164
+|player|p2|TimidTotodile|160
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Nidoqueen, F
+|poke|p1|Starmie
+|poke|p1|Infernape, F
+|poke|p1|Jirachi
+|poke|p1|Hydreigon, M
+|poke|p1|Ampharos, M
+|poke|p2|Cresselia, F
+|poke|p2|Ampharos, M
+|poke|p2|Pangoro, F
+|poke|p2|Aromatisse, F
+|poke|p2|Porygon2
+|poke|p2|Empoleon, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Nidoqueen|Nidoqueen, F|353\/353
+|switch|p2a: Cresselia|Cresselia, F|444\/444
+|turn|1
+|
+|move|p1a: Nidoqueen|Stealth Rock|p2a: Cresselia
+|-sidestart|p2: TimidTotodile|move: Stealth Rock
+|move|p2a: Cresselia|Trick Room|p2a: Cresselia
+|-fieldstart|move: Trick Room|[of] p2a: Cresselia
+|
+|turn|2
+|
+|switch|p1a: Hydreigon|Hydreigon, M|325\/325
+|move|p2a: Cresselia|Psyshock|p1a: Hydreigon
+|-immune|p1a: Hydreigon|[msg]
+|
+|turn|3
+|
+|switch|p1a: Jirachi|Jirachi|341\/341
+|move|p2a: Cresselia|Moonblast|p1a: Jirachi
+|-crit|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|279\/341
+|
+|turn|4
+|
+|move|p2a: Cresselia|Moonblast|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|234\/341
+|move|p1a: Jirachi|U-turn|p2a: Cresselia
+|-supereffective|p2a: Cresselia
+|-damage|p2a: Cresselia|330\/444
+|
+|switch|p1a: Ampharos|Ampharos, M|384\/384
+|
+|-heal|p2a: Cresselia|357\/444|[from] item: Leftovers
+|turn|5
+|
+|move|p1a: Ampharos|Volt Switch|p2a: Cresselia
+|-damage|p2a: Cresselia|254\/444
+|
+|switch|p1a: Jirachi|Jirachi|234\/341
+|move|p2a: Cresselia|Moonblast|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|195\/341
+|
+|-heal|p2a: Cresselia|281\/444|[from] item: Leftovers
+|-fieldend|move: Trick Room
+|turn|6
+|
+|move|p1a: Jirachi|Trick|p2a: Cresselia
+|-activate|p1a: Jirachi|move: Trick|[of] p2a: Cresselia
+|-item|p2a: Cresselia|Choice Scarf|[from] move: Trick
+|-item|p1a: Jirachi|Leftovers|[from] move: Trick
+|move|p2a: Cresselia|Trick Room|p2a: Cresselia
+|-fieldstart|move: Trick Room|[of] p2a: Cresselia
+|
+|-heal|p1a: Jirachi|216\/341|[from] item: Leftovers
+|turn|7
+|
+|switch|p2a: Pangoro|Pangoro, F|393\/393
+|-damage|p2a: Pangoro|369\/393|[from] Stealth Rock
+|move|p1a: Jirachi|U-turn|p2a: Pangoro
+|-crit|p2a: Pangoro
+|-damage|p2a: Pangoro|230\/393
+|
+|switch|p1a: Infernape|Infernape, F|293\/293
+|
+|turn|8
+|
+|move|p1a: Infernape|Mach Punch|p2a: Pangoro
+|-supereffective|p2a: Pangoro
+|-damage|p2a: Pangoro|0 fnt
+|faint|p2a: Pangoro
+|
+|
+|switch|p2a: Ampharos|Ampharos, M|383\/383
+|-damage|p2a: Ampharos|336\/383|[from] Stealth Rock
+|turn|9
+|
+|switch|p1a: Ampharos|Ampharos, M|384\/384
+|detailschange|p2a: Ampharos|Ampharos-Mega, M
+|-mega|p2a: Ampharos|Ampharos|Ampharosite
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p2a: Ampharos|Dragon Pulse|p1a: Ampharos
+|-damage|p1a: Ampharos|158\/384
+|
+|turn|10
+|
+|detailschange|p1a: Ampharos|Ampharos-Mega, M
+|-mega|p1a: Ampharos|Ampharos|Ampharosite
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p2a: Ampharos|Dragon Pulse|p1a: Ampharos
+|-supereffective|p1a: Ampharos
+|-damage|p1a: Ampharos|0 fnt
+|faint|p1a: Ampharos
+|
+|-fieldend|move: Trick Room
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|353\/353
+|turn|11
+|
+|switch|p2a: Cresselia|Cresselia, F|281\/444
+|-damage|p2a: Cresselia|226\/444|[from] Stealth Rock
+|move|p1a: Nidoqueen|Sludge Wave|p2a: Cresselia
+|-damage|p2a: Cresselia|53\/444
+|
+|turn|12
+|
+|move|p1a: Nidoqueen|Sludge Wave|p2a: Cresselia
+|-damage|p2a: Cresselia|0 fnt
+|faint|p2a: Cresselia
+|
+|
+|switch|p2a: Porygon2|Porygon2|373\/373
+|-damage|p2a: Porygon2|327\/373|[from] Stealth Rock
+|-ability|p2a: Porygon2|Sheer Force|[from] ability: Trace|[of] p1a: Nidoqueen
+|turn|13
+|
+|move|p1a: Nidoqueen|Sludge Wave|p2a: Porygon2
+|-damage|p2a: Porygon2|187\/373
+|move|p2a: Porygon2|Trick Room|p2a: Porygon2
+|-fieldstart|move: Trick Room|[of] p2a: Porygon2
+|
+|turn|14
+|
+|move|p2a: Porygon2|Tri Attack|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|215\/353
+|move|p1a: Nidoqueen|Sludge Wave|p2a: Porygon2
+|-damage|p2a: Porygon2|47\/373
+|
+|turn|15
+|
+|switch|p1a: Infernape|Infernape, F|293\/293
+|move|p2a: Porygon2|Tri Attack|p1a: Infernape
+|-damage|p1a: Infernape|121\/293
+|
+|turn|16
+|
+|move|p1a: Infernape|Mach Punch|p2a: Porygon2
+|-supereffective|p2a: Porygon2
+|-damage|p2a: Porygon2|0 fnt
+|faint|p2a: Porygon2
+|
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M|336\/383
+|-damage|p2a: Ampharos|289\/383|[from] Stealth Rock
+|-ability|p2a: Ampharos|Mold Breaker
+|turn|17
+|
+|switch|p1a: Jirachi|Jirachi|216\/341
+|move|p2a: Ampharos|Dragon Pulse|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|114\/341
+|
+|-heal|p1a: Jirachi|135\/341|[from] item: Leftovers
+|-fieldend|move: Trick Room
+|turn|18
+|
+|move|p1a: Jirachi|Healing Wish|p1a: Jirachi
+|faint|p1a: Jirachi
+|move|p2a: Ampharos|Volt Switch|p1: Jirachi|[notarget]
+|-notarget
+|
+|
+|switch|p1a: Infernape|Infernape, F|121\/293
+|-heal|p1a: Infernape|293\/293|[from] move: Healing Wish
+|turn|19
+|
+|move|p1a: Infernape|Close Combat|p2a: Ampharos
+|-damage|p2a: Ampharos|7\/383
+|-unboost|p1a: Infernape|def|1
+|-unboost|p1a: Infernape|spd|1
+|move|p2a: Ampharos|Volt Switch|p1a: Infernape
+|-damage|p1a: Infernape|0 fnt
+|faint|p1a: Infernape
+|
+|switch|p2a: Empoleon|Empoleon, F|372\/372
+|-damage|p2a: Empoleon|349\/372|[from] Stealth Rock
+|
+|-heal|p2a: Empoleon|372\/372|[from] item: Leftovers
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|215\/353
+|turn|20
+|
+|move|p1a: Nidoqueen|Earth Power|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|65\/372
+|move|p2a: Empoleon|Defog|p1a: Nidoqueen
+|-unboost|p1a: Nidoqueen|evasion|1
+|-sideend|p2: TimidTotodile|Stealth Rock|[from] move: Defog|[of] p2a: Empoleon
+|
+|-heal|p2a: Empoleon|88\/372|[from] item: Leftovers
+|turn|21
+|
+|move|p1a: Nidoqueen|Earth Power|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|0 fnt
+|faint|p2a: Empoleon
+|
+|
+|switch|p2a: Aromatisse|Aromatisse, F|406\/406
+|turn|22
+|
+|move|p1a: Nidoqueen|Sludge Wave|p2a: Aromatisse
+|-supereffective|p2a: Aromatisse
+|-damage|p2a: Aromatisse|60\/406
+|move|p2a: Aromatisse|Trick Room|p2a: Aromatisse
+|-fieldstart|move: Trick Room|[of] p2a: Aromatisse
+|
+|-heal|p2a: Aromatisse|85\/406|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Aromatisse|Moonblast|p1a: Nidoqueen
+|-resisted|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|151\/353
+|move|p1a: Nidoqueen|Sludge Wave|p2a: Aromatisse
+|-supereffective|p2a: Aromatisse
+|-damage|p2a: Aromatisse|0 fnt
+|faint|p2a: Aromatisse
+|
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M|7\/383
+|-ability|p2a: Ampharos|Mold Breaker
+|turn|24
+|
+|switch|p1a: Starmie|Starmie|261\/261
+|move|p2a: Ampharos|Dragon Pulse|p1a: Starmie
+|-crit|p1a: Starmie
+|-damage|p1a: Starmie|0 fnt
+|faint|p1a: Starmie
+|
+|
+|switch|p1a: Hydreigon|Hydreigon, M|325\/325
+|turn|25
+|
+|move|p2a: Ampharos|Dragon Pulse|p1a: Hydreigon
+|-supereffective|p1a: Hydreigon
+|-damage|p1a: Hydreigon|0 fnt
+|faint|p1a: Hydreigon
+|
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|151\/353
+|turn|26
+|
+|move|p2a: Ampharos|Dragon Pulse|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|0 fnt
+|faint|p1a: Nidoqueen
+|
+|win|TimidTotodile
+|raw|Ladder updating...
+|raw|BURNSOFF's rating: 1344 &rarr; <strong>1324<\/strong><br \/>(-20 for losing)
+|raw|TimidTotodile's rating: 1348 &rarr; <strong>1368<\/strong><br \/>(+20 for winning)
+|c|âTimidTotodile|gg

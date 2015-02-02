@@ -1,0 +1,261 @@
+|join|JeyTheGrey
+|join|9Nackers
+|player|p1|JeyTheGrey|170
+|player|p2|9Nackers|170
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Alakazam, F
+|poke|p1|Crobat, M
+|poke|p1|Swampert, M
+|poke|p1|Florges, F
+|poke|p1|Hydreigon, M
+|poke|p1|Lucario, F
+|poke|p2|Blastoise, F
+|poke|p2|Hippowdon, F, shiny
+|poke|p2|Infernape, M
+|poke|p2|Krookodile, M
+|poke|p2|Raikou, shiny
+|poke|p2|Trevenant, F, shiny
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Hydreigon|Hydreigon, M|325\/325
+|switch|p2a: Boo Berry|Trevenant, F, shiny|374\/374
+|turn|1
+|
+|switch|p2a: Slade|Krookodile, M|373\/373
+|-ability|p2a: Slade|Intimidate|[of] p1a: Hydreigon
+|-unboost|p1a: Hydreigon|atk|1
+|move|p1a: Hydreigon|Dark Pulse|p2a: Slade
+|-resisted|p2a: Slade
+|-damage|p2a: Slade|280\/373
+|
+|turn|2
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Slade|Knock Off|p1a: Florges
+|-resisted|p1a: Florges
+|-damage|p1a: Florges|269\/360
+|-enditem|p1a: Florges|Leftovers|[from] move: Knock Off|[of] p2a: Slade
+|
+|turn|3
+|
+|switch|p1a: Hydreigon|Hydreigon, M|325\/325
+|move|p2a: Slade|Earthquake|p1a: Hydreigon
+|-immune|p1a: Hydreigon|[msg]
+|
+|turn|4
+|
+|move|p1a: Hydreigon|Draco Meteor|p2a: Slade
+|-damage|p2a: Slade|0 fnt
+|-unboost|p1a: Hydreigon|spa|2
+|faint|p2a: Slade
+|
+|
+|switch|p2a: Boo Berry|Trevenant, F, shiny|374\/374
+|turn|5
+|
+|switch|p1a: Crobat|Crobat, M|311\/311
+|move|p2a: Boo Berry|Substitute|p2a: Boo Berry
+|-start|p2a: Boo Berry|Substitute
+|-damage|p2a: Boo Berry|281\/374
+|
+|turn|6
+|
+|move|p1a: Crobat|Brave Bird|p2a: Boo Berry
+|-supereffective|p2a: Boo Berry
+|-end|p2a: Boo Berry|Substitute
+|-damage|p1a: Crobat|280\/311|[from] recoil|[of] p2a: Boo Berry
+|move|p2a: Boo Berry|Will-O-Wisp|p1a: Crobat|[miss]
+|-miss|p2a: Boo Berry|p1a: Crobat
+|
+|-heal|p1a: Crobat|299\/311|[from] item: Leftovers
+|turn|7
+|
+|switch|p2a: Sandy Cheeks|Hippowdon, F, shiny|420\/420
+|-weather|Sandstorm
+|move|p1a: Crobat|U-turn|p2a: Sandy Cheeks
+|-damage|p2a: Sandy Cheeks|377\/420
+|-damage|p1a: Crobat|248\/311|[from] item: Rocky Helmet|[of] p2a: Sandy Cheeks
+|
+|switch|p1a: Swampert|Swampert, M|404\/404
+|
+|-weather|Sandstorm|[upkeep]
+|turn|8
+|
+|move|p1a: Swampert|Scald|p2a: Sandy Cheeks
+|-supereffective|p2a: Sandy Cheeks
+|-damage|p2a: Sandy Cheeks|155\/420
+|-status|p2a: Sandy Cheeks|brn
+|move|p2a: Sandy Cheeks|Stealth Rock|p1a: Swampert
+|-sidestart|p1: JeyTheGrey|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Sandy Cheeks|103\/420 brn|[from] brn
+|turn|9
+|
+|move|p1a: Swampert|Scald|p2a: Sandy Cheeks
+|-supereffective|p2a: Sandy Cheeks
+|-damage|p2a: Sandy Cheeks|0 fnt
+|faint|p2a: Sandy Cheeks
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Boo Berry|Trevenant, F, shiny|281\/374
+|turn|10
+|
+|switch|p1a: Crobat|Crobat, M|248\/311
+|-damage|p1a: Crobat|171\/311|[from] Stealth Rock
+|move|p2a: Boo Berry|Substitute|p2a: Boo Berry
+|-start|p2a: Boo Berry|Substitute
+|-damage|p2a: Boo Berry|188\/374
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Crobat|152\/311|[from] sandstorm
+|-damage|p2a: Boo Berry|165\/374|[from] sandstorm
+|-heal|p1a: Crobat|171\/311|[from] item: Leftovers
+|-enditem|p2a: Boo Berry|Sitrus Berry|[eat]
+|-heal|p2a: Boo Berry|258\/374|[from] item: Sitrus Berry
+|turn|11
+|
+|move|p1a: Crobat|Defog|p2a: Boo Berry
+|-sideend|p1: JeyTheGrey|Stealth Rock|[from] move: Defog|[of] p1a: Crobat
+|move|p2a: Boo Berry|Will-O-Wisp|p1a: Crobat
+|-status|p1a: Crobat|brn
+|
+|-weather|none
+|-heal|p1a: Crobat|190\/311 brn|[from] item: Leftovers
+|-damage|p1a: Crobat|152\/311 brn|[from] brn
+|-item|p2a: Boo Berry|Sitrus Berry|[from] ability: Harvest
+|turn|12
+|
+|move|p1a: Crobat|Brave Bird|p2a: Boo Berry
+|-supereffective|p2a: Boo Berry
+|-end|p2a: Boo Berry|Substitute
+|-damage|p1a: Crobat|121\/311 brn|[from] recoil|[of] p2a: Boo Berry
+|move|p2a: Boo Berry|Wood Hammer|p1a: Crobat
+|-resisted|p1a: Crobat
+|-damage|p1a: Crobat|56\/311 brn
+|-damage|p2a: Boo Berry|237\/374|[from] recoil|[of] p1a: Crobat
+|
+|-heal|p1a: Crobat|75\/311 brn|[from] item: Leftovers
+|-damage|p1a: Crobat|37\/311 brn|[from] brn
+|turn|13
+|
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-heal|p1a: Crobat|193\/311 brn
+|move|p2a: Boo Berry|Earthquake|p1a: Crobat
+|-supereffective|p1a: Crobat
+|-damage|p1a: Crobat|0 fnt
+|faint|p1a: Crobat
+|
+|
+|switch|p1a: Alakazam|Alakazam, F|252\/252
+|turn|14
+|
+|detailschange|p1a: Alakazam|Alakazam-Mega, F
+|message|Alakazam has Mega Evolved into Mega Alakazam!
+|-ability|p1a: Alakazam|Harvest|[from] ability: Trace|[of] p2a: Boo Berry
+|move|p1a: Alakazam|Shadow Ball|p2a: Boo Berry
+|-supereffective|p2a: Boo Berry
+|-damage|p2a: Boo Berry|0 fnt
+|faint|p2a: Boo Berry
+|
+|
+|switch|p2a: Statutory Ape|Infernape, M|293\/293
+|turn|15
+|
+|switch|p1a: Swampert|Swampert, M|404\/404
+|move|p2a: Statutory Ape|U-turn|p1a: Swampert
+|-damage|p1a: Swampert|346\/404
+|
+|switch|p2a: Raikou|Raikou, shiny|322\/322
+|-ability|p2a: Raikou|Pressure
+|
+|-heal|p1a: Swampert|371\/404|[from] item: Leftovers
+|turn|16
+|
+|switch|p1a: Hydreigon|Hydreigon, M|325\/325
+|move|p2a: Raikou|Hidden Power|p1a: Hydreigon
+|-resisted|p1a: Hydreigon
+|-damage|p1a: Hydreigon|270\/325
+|-damage|p2a: Raikou|290\/322|[from] item: Life Orb
+|
+|turn|17
+|
+|move|p1a: Hydreigon|Draco Meteor|p2a: Raikou
+|-damage|p2a: Raikou|35\/322
+|-unboost|p1a: Hydreigon|spa|2
+|move|p2a: Raikou|Aura Sphere|p1a: Hydreigon
+|-supereffective|p1a: Hydreigon
+|-damage|p1a: Hydreigon|7\/325
+|-damage|p2a: Raikou|3\/322|[from] item: Life Orb
+|
+|turn|18
+|
+|move|p1a: Hydreigon|Draco Meteor|p2a: Raikou
+|-damage|p2a: Raikou|0 fnt
+|-unboost|p1a: Hydreigon|spa|2
+|faint|p2a: Raikou
+|
+|
+|switch|p2a: Statutory Ape|Infernape, M|293\/293
+|turn|19
+|
+|switch|p1a: Swampert|Swampert, M|371\/404
+|move|p2a: Statutory Ape|U-turn|p1a: Swampert
+|-damage|p1a: Swampert|317\/404
+|
+|switch|p2a: Supa Koopa|Blastoise, F|359\/359
+|
+|-heal|p1a: Swampert|342\/404|[from] item: Leftovers
+|turn|20
+|
+|switch|p1a: Alakazam|Alakazam-Mega, F|252\/252
+|-ability|p1a: Alakazam|Rain Dish|[from] ability: Trace|[of] p2a: Supa Koopa
+|detailschange|p2a: Supa Koopa|Blastoise-Mega, F
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Supa Koopa|Water Pulse|p1a: Alakazam
+|-damage|p1a: Alakazam|57\/252
+|-start|p1a: Alakazam|confusion
+|
+|turn|21
+|
+|-activate|p1a: Alakazam|confusion
+|move|p1a: Alakazam|Psyshock|p2a: Supa Koopa
+|-damage|p2a: Supa Koopa|187\/359
+|move|p2a: Supa Koopa|Water Pulse|p1a: Alakazam
+|-damage|p1a: Alakazam|0 fnt
+|faint|p1a: Alakazam
+|
+|
+|switch|p1a: Lucario|Lucario, F|281\/281
+|turn|22
+|
+|move|p1a: Lucario|Close Combat|p2a: Supa Koopa
+|-damage|p2a: Supa Koopa|0 fnt
+|-unboost|p1a: Lucario|def|1
+|-unboost|p1a: Lucario|spd|1
+|-damage|p1a: Lucario|253\/281|[from] item: Life Orb
+|faint|p2a: Supa Koopa
+|
+|-message|9Nackers forfeited.
+|
+|win|JeyTheGrey
+|raw|Ladder updating...
+|leave|9Nackers
+|player|p2
+|raw|JeyTheGrey's rating: 1645 &rarr; <strong>1655<\/strong><br \/>(+10 for winning)
+|raw|9Nackers's rating: 1449 &rarr; <strong>1439<\/strong><br \/>(-10 for losing)

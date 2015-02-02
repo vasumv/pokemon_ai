@@ -1,0 +1,457 @@
+|join|Super Mario Bros
+|join|basedalt
+|player|p1|Super Mario Bros|155
+|player|p2|basedalt|165
+|gametype|singles
+|gen|6
+|tier|OU (suspect test)
+|rated
+|clearpoke
+|poke|p1|Rotom-Wash
+|poke|p1|Venusaur, F
+|poke|p1|Heatran, F
+|poke|p1|Conkeldurr, M
+|poke|p1|Landorus-Therian, M
+|poke|p1|Mandibuzz, F
+|poke|p2|Absol, F
+|poke|p2|Volcarona, M
+|poke|p2|Garchomp, M
+|poke|p2|Scizor, M
+|poke|p2|Thundurus, M
+|poke|p2|Latios, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|319\/319
+|switch|p2a: Garchomp|Garchomp, M|357\/357
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Garchomp
+|-unboost|p2a: Garchomp|atk|1
+|turn|1
+|callback|decision
+|join|ShootingStarmie
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|421\/421
+|move|p2a: Garchomp|Stealth Rock|p1a: Mandibuzz
+|-sidestart|p1: Super Mario Bros|move: Stealth Rock
+|
+|turn|2
+|callback|decision
+|join|Rob Testing
+|
+|switch|p2a: Thundurus|Thundurus, M|299\/299
+|move|p1a: Mandibuzz|Defog|p2a: Thundurus
+|-unboost|p2a: Thundurus|evasion|1
+|-sideend|p1: Super Mario Bros|Stealth Rock|[from] move: Defog|[of] p1a: Mandibuzz
+|
+|turn|3
+|callback|decision
+|
+|switch|p1a: Venusaur|Venusaur, F|301\/301
+|move|p2a: Thundurus|Volt Switch|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|245\/301
+|-damage|p2a: Thundurus|270\/299|[from] item: Life Orb
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|302\/302
+|
+|turn|4
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|386\/386
+|move|p2a: Latios|Surf|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|173\/386
+|-damage|p2a: Latios|272\/302|[from] item: Life Orb
+|
+|-heal|p1a: Heatran|197\/386|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Latios|Surf|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-heal|p1a: Heatran|221\/386|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Latios|Surf|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|21\/386
+|-damage|p2a: Latios|242\/302|[from] item: Life Orb
+|move|p1a: Heatran|Stealth Rock|p2a: Latios
+|-sidestart|p2: basedalt|move: Stealth Rock
+|
+|-heal|p1a: Heatran|45\/386|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p2a: Latios|Psyshock|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|-damage|p2a: Latios|212\/302|[from] item: Life Orb
+|faint|p1a: Heatran
+|
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Latios
+|-unboost|p2a: Latios|atk|1
+|turn|8
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, M|357\/357
+|-damage|p2a: Garchomp|335\/357|[from] Stealth Rock
+|move|p1a: Landorus-Therian|U-turn|p2a: Garchomp
+|-damage|p2a: Garchomp|236\/357
+|-damage|p1a: Landorus-Therian|280\/319|[from] ability: Rough Skin|[of] p2a: Garchomp
+|-damage|p1a: Landorus-Therian|227\/319|[from] item: Rocky Helmet|[of] p2a: Garchomp
+|callback|decision
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|421\/421
+|
+|turn|9
+|callback|decision
+|join|Debury
+|
+|move|p2a: Garchomp|Stealth Rock|p1a: Mandibuzz
+|-sidestart|p1: Super Mario Bros|move: Stealth Rock
+|move|p1a: Mandibuzz|Foul Play|p2a: Garchomp
+|-damage|p2a: Garchomp|68\/357
+|-damage|p1a: Mandibuzz|369\/421|[from] ability: Rough Skin|[of] p2a: Garchomp
+|-damage|p1a: Mandibuzz|299\/421|[from] item: Rocky Helmet|[of] p2a: Garchomp
+|
+|-heal|p1a: Mandibuzz|325\/421|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p2a: Garchomp|Dragon Claw|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|219\/421
+|move|p1a: Mandibuzz|Roost|p1a: Mandibuzz
+|-heal|p1a: Mandibuzz|421\/421
+|
+|turn|11
+|callback|decision
+|
+|move|p2a: Garchomp|Dragon Claw|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|313\/421
+|move|p1a: Mandibuzz|Foul Play|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|-damage|p1a: Mandibuzz|261\/421|[from] ability: Rough Skin|[of] p2a: Garchomp
+|-damage|p1a: Mandibuzz|191\/421|[from] item: Rocky Helmet|[of] p2a: Garchomp
+|faint|p2a: Garchomp
+|
+|-heal|p1a: Mandibuzz|217\/421|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Thundurus|Thundurus, M|270\/299
+|-damage|p2a: Thundurus|196\/299|[from] Stealth Rock
+|turn|12
+|callback|decision
+|chat|Super Mario Bros|i need to play on an alt so people stop watching me failing...
+|
+|switch|p1a: Venusaur|Venusaur, F|245\/301
+|-damage|p1a: Venusaur|208\/301|[from] Stealth Rock
+|move|p2a: Thundurus|Thunder Wave|p1a: Venusaur
+|-status|p1a: Venusaur|par
+|
+|turn|13
+|callback|decision
+|chat|ShootingStarmie|.-.
+|
+|switch|p2a: Volcarona|Volcarona, M|371\/371
+|-damage|p2a: Volcarona|186\/371|[from] Stealth Rock
+|-formechange|p1a: Venusaur|Venusaur-Mega
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p1a: Venusaur|Leech Seed|p2a: Volcarona
+|-start|p2a: Volcarona|move: Leech Seed
+|
+|-heal|p2a: Volcarona|209\/371|[from] item: Leftovers
+|-damage|p2a: Volcarona|163\/371|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|254\/301 par|[silent]
+|turn|14
+|callback|decision
+|chat|ShootingStarmie|i hate it when people watch me too, sorry u_u
+|chat|ShootingStarmie|well, gl laddering man
+|
+|move|p2a: Volcarona|Roost|p2a: Volcarona
+|-heal|p2a: Volcarona|349\/371
+|move|p1a: Venusaur|Sludge Bomb|p2a: Volcarona
+|-crit|p2a: Volcarona
+|-damage|p2a: Volcarona|156\/371
+|
+|-heal|p2a: Volcarona|179\/371|[from] item: Leftovers
+|-damage|p2a: Volcarona|133\/371|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|300\/301 par|[silent]
+|turn|15
+|callback|decision
+|leave|ShootingStarmie
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|227\/319
+|-damage|p1a: Landorus-Therian|188\/319|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Volcarona
+|-unboost|p2a: Volcarona|atk|1
+|move|p2a: Volcarona|Roost|p2a: Volcarona
+|-heal|p2a: Volcarona|319\/371
+|
+|-heal|p2a: Volcarona|342\/371|[from] item: Leftovers
+|-damage|p2a: Volcarona|296\/371|[from] Leech Seed|[of] p1a: Landorus-Therian
+|-heal|p1a: Landorus-Therian|234\/319|[silent]
+|turn|16
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|339\/339
+|-damage|p2a: Scizor|297\/339|[from] Stealth Rock
+|move|p1a: Landorus-Therian|Stone Edge|p2a: Scizor|[miss]
+|-miss|p1a: Landorus-Therian|p2a: Scizor
+|
+|turn|17
+|callback|decision
+|
+|switch|p1a: Conkeldurr|Conkeldurr, M|351\/351
+|-damage|p1a: Conkeldurr|330\/351|[from] Stealth Rock
+|move|p2a: Scizor|U-turn|p1a: Conkeldurr
+|-resisted|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|220\/351
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|212\/302
+|-damage|p2a: Latios|175\/302|[from] Stealth Rock
+|
+|turn|18
+|callback|decision
+|
+|move|p1a: Conkeldurr|Mach Punch|p2a: Latios
+|-resisted|p2a: Latios
+|-damage|p2a: Latios|126\/302
+|move|p2a: Latios|Defog|p1a: Conkeldurr
+|-unboost|p1a: Conkeldurr|evasion|1
+|-sideend|p1: Super Mario Bros|Stealth Rock|[from] move: Defog|[of] p1a: Conkeldurr
+|-sideend|p2: basedalt|Stealth Rock|[from] move: Defog|[of] p2a: Latios
+|
+|turn|19
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|234\/319
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Latios
+|-unboost|p2a: Latios|atk|1
+|move|p2a: Latios|Psyshock|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|43\/319
+|-damage|p2a: Latios|96\/302|[from] item: Life Orb
+|
+|turn|20
+|callback|decision
+|join|I Don't Have a Gun
+|
+|switch|p2a: Scizor|Scizor, M|297\/339
+|move|p1a: Landorus-Therian|U-turn|p2a: Scizor
+|-resisted|p2a: Scizor
+|-damage|p2a: Scizor|248\/339
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|303\/303
+|
+|turn|21
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|96\/302
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Latios
+|-status|p2a: Latios|brn
+|
+|-damage|p2a: Latios|59\/302 brn|[from] brn
+|turn|22
+|callback|decision
+|
+|move|p2a: Latios|Draco Meteor|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|52\/303
+|-unboost|p2a: Latios|spa|2
+|-damage|p2a: Latios|29\/302 brn|[from] item: Life Orb
+|move|p1a: Rotom-Wash|Rest|p1a: Rotom-Wash
+|-status|p1a: Rotom-Wash|slp
+|-heal|p1a: Rotom-Wash|303\/303 slp|[silent]
+|-status|p1a: Rotom-Wash|slp|[from] move: Rest
+|-enditem|p1a: Rotom-Wash|Chesto Berry|[eat]
+|-curestatus|p1a: Rotom-Wash|slp
+|
+|-damage|p2a: Latios|0 fnt|[from] brn
+|faint|p2a: Latios
+|callback|decision
+|
+|switch|p2a: Thundurus|Thundurus, M|196\/299
+|turn|23
+|callback|decision
+|join|I Dig Bick
+|
+|switch|p1a: Venusaur|Venusaur, F|300\/301 par
+|-formechange|p1a: Venusaur|Venusaur-Mega
+|move|p2a: Thundurus|Volt Switch|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|248\/301 par
+|-damage|p2a: Thundurus|167\/299|[from] item: Life Orb
+|callback|decision
+|
+|switch|p2a: Volcarona|Volcarona, M|296\/371
+|
+|-heal|p2a: Volcarona|319\/371|[from] item: Leftovers
+|turn|24
+|callback|decision
+|leave|I Dig Bick
+|
+|move|p2a: Volcarona|Quiver Dance|p2a: Volcarona
+|-boost|p2a: Volcarona|spa|1
+|-boost|p2a: Volcarona|spd|1
+|-boost|p2a: Volcarona|spe|1
+|move|p1a: Venusaur|Leech Seed|p2a: Volcarona
+|-start|p2a: Volcarona|move: Leech Seed
+|
+|-heal|p2a: Volcarona|342\/371|[from] item: Leftovers
+|-damage|p2a: Volcarona|296\/371|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|294\/301 par|[silent]
+|turn|25
+|callback|decision
+|
+|switch|p1a: Conkeldurr|Conkeldurr, M|220\/351
+|move|p2a: Volcarona|Quiver Dance|p2a: Volcarona
+|-boost|p2a: Volcarona|spa|1
+|-boost|p2a: Volcarona|spd|1
+|-boost|p2a: Volcarona|spe|1
+|
+|-heal|p2a: Volcarona|319\/371|[from] item: Leftovers
+|-damage|p2a: Volcarona|273\/371|[from] Leech Seed|[of] p1a: Conkeldurr
+|-heal|p1a: Conkeldurr|266\/351|[silent]
+|turn|26
+|callback|decision
+|
+|move|p2a: Volcarona|Fiery Dance|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|103\/351
+|move|p1a: Conkeldurr|Knock Off|p2a: Volcarona
+|-damage|p2a: Volcarona|138\/371
+|-enditem|p2a: Volcarona|Leftovers|[from] move: Knock Off|[of] p1a: Conkeldurr
+|
+|-damage|p2a: Volcarona|92\/371|[from] Leech Seed|[of] p1a: Conkeldurr
+|-heal|p1a: Conkeldurr|149\/351|[silent]
+|turn|27
+|callback|decision
+|
+|move|p2a: Volcarona|Roost|p2a: Volcarona
+|-heal|p2a: Volcarona|278\/371
+|move|p1a: Conkeldurr|Drain Punch|p2a: Volcarona
+|-resisted|p2a: Volcarona
+|-damage|p2a: Volcarona|205\/371
+|-heal|p1a: Conkeldurr|186\/351|[from] drain|[of] p2a: Volcarona
+|
+|-damage|p2a: Volcarona|159\/371|[from] Leech Seed|[of] p1a: Conkeldurr
+|-heal|p1a: Conkeldurr|232\/351|[silent]
+|turn|28
+|callback|decision
+|
+|move|p2a: Volcarona|Roost|p2a: Volcarona
+|-heal|p2a: Volcarona|345\/371
+|move|p1a: Conkeldurr|Drain Punch|p2a: Volcarona
+|-resisted|p2a: Volcarona
+|-damage|p2a: Volcarona|260\/371
+|-heal|p1a: Conkeldurr|275\/351|[from] drain|[of] p2a: Volcarona
+|
+|-damage|p2a: Volcarona|214\/371|[from] Leech Seed|[of] p1a: Conkeldurr
+|-heal|p1a: Conkeldurr|321\/351|[silent]
+|turn|29
+|callback|decision
+|
+|move|p2a: Volcarona|Fiery Dance|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|144\/351
+|move|p1a: Conkeldurr|Drain Punch|p2a: Volcarona
+|-resisted|p2a: Volcarona
+|-damage|p2a: Volcarona|127\/371
+|-heal|p1a: Conkeldurr|188\/351|[from] drain|[of] p2a: Volcarona
+|
+|-damage|p2a: Volcarona|81\/371|[from] Leech Seed|[of] p1a: Conkeldurr
+|-heal|p1a: Conkeldurr|234\/351|[silent]
+|turn|30
+|callback|decision
+|
+|move|p2a: Volcarona|Roost|p2a: Volcarona
+|-heal|p2a: Volcarona|267\/371
+|move|p1a: Conkeldurr|Drain Punch|p2a: Volcarona
+|-resisted|p2a: Volcarona
+|-damage|p2a: Volcarona|186\/371
+|-heal|p1a: Conkeldurr|275\/351|[from] drain|[of] p2a: Volcarona
+|
+|-damage|p2a: Volcarona|140\/371|[from] Leech Seed|[of] p1a: Conkeldurr
+|-heal|p1a: Conkeldurr|321\/351|[silent]
+|turn|31
+|callback|decision
+|
+|move|p2a: Volcarona|Fiery Dance|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|155\/351
+|move|p1a: Conkeldurr|Drain Punch|p2a: Volcarona
+|-resisted|p2a: Volcarona
+|-damage|p2a: Volcarona|62\/371
+|-heal|p1a: Conkeldurr|194\/351|[from] drain|[of] p2a: Volcarona
+|
+|-damage|p2a: Volcarona|16\/371|[from] Leech Seed|[of] p1a: Conkeldurr
+|-heal|p1a: Conkeldurr|240\/351|[silent]
+|turn|32
+|callback|decision
+|
+|move|p1a: Conkeldurr|Mach Punch|p2a: Volcarona
+|-resisted|p2a: Volcarona
+|-damage|p2a: Volcarona|0 fnt
+|faint|p2a: Volcarona
+|
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|248\/339
+|turn|33
+|callback|decision
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|217\/421
+|move|p2a: Scizor|Superpower|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|45\/421
+|-unboost|p2a: Scizor|atk|1
+|-unboost|p2a: Scizor|def|1
+|
+|-heal|p1a: Mandibuzz|71\/421|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|move|p1a: Mandibuzz|Foul Play|p2a: Scizor
+|-damage|p2a: Scizor|65\/339
+|move|p2a: Scizor|Superpower|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|0 fnt
+|-unboost|p2a: Scizor|atk|1
+|-unboost|p2a: Scizor|def|1
+|faint|p1a: Mandibuzz
+|
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|43\/319
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Scizor
+|-unboost|p2a: Scizor|atk|1
+|turn|35
+|callback|decision
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Scizor
+|-resisted|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|faint|p2a: Scizor
+|callback|decision
+|
+|switch|p1a: Conkeldurr|Conkeldurr, M|240\/351
+|
+|callback|decision
+|-message|basedalt forfeited.
+|
+|win|Super Mario Bros
+|raw|Ladder updating...
+|leave|basedalt
+|player|p2

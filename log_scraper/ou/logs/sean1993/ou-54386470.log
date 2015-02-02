@@ -1,0 +1,347 @@
+|join|sean1993
+|join|Davriel
+|player|p1|sean1993|102
+|player|p2|Davriel|290
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Keldeo
+|poke|p1|Gengar, M
+|poke|p1|Weavile, M
+|poke|p1|Breloom, M
+|poke|p1|Garchomp, F
+|poke|p1|Scizor, F
+|poke|p2|Scizor, M
+|poke|p2|Gengar, M
+|poke|p2|Salamence, M
+|poke|p2|Tyranitar, F
+|poke|p2|Infernape, M
+|poke|p2|Starmie
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|chat|Davriel|gl  hf
+|
+|start
+|switch|p1a: Garchomp|Garchomp, F|358\/358
+|switch|p2a: Salamence|Salamence, M|331\/331
+|-ability|p2a: Salamence|Intimidate|[of] p1a: Garchomp
+|-unboost|p1a: Garchomp|atk|1
+|turn|1
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|343\/343
+|move|p1a: Garchomp|Stealth Rock|p2a: Scizor
+|-sidestart|p2: Davriel|move: Stealth Rock
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Garchomp
+|-damage|p1a: Garchomp|189\/358
+|-damage|p2a: Scizor|301\/343|[from] ability: Rough Skin|[of] p1a: Garchomp
+|move|p1a: Garchomp|Fire Fang|p2a: Scizor
+|-supereffective|p2a: Scizor
+|-damage|p2a: Scizor|73\/343
+|
+|turn|3
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|331\/331
+|switch|p2a: Starmie|Starmie|262\/262
+|-damage|p2a: Starmie|230\/262|[from] Stealth Rock
+|
+|-heal|p2a: Starmie|246\/262|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Starmie|Rapid Spin|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|325\/331
+|-sideend|p2: Davriel|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Starmie
+|move|p1a: Scizor|Bug Bite|p2a: Starmie
+|-supereffective|p2a: Starmie
+|-damage|p2a: Starmie|0 fnt
+|faint|p2a: Starmie
+|
+|callback|decision
+|
+|switch|p2a: Infernape|Infernape, M|293\/293
+|turn|5
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Infernape
+|-resisted|p2a: Infernape
+|-damage|p2a: Infernape|192\/293
+|move|p2a: Infernape|Fire Blast|p1a: Scizor|[miss]
+|-miss|p2a: Infernape|p1a: Scizor
+|
+|turn|6
+|callback|decision
+|
+|move|p2a: Infernape|Fire Blast|p1a: Scizor
+|-supereffective|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|-damage|p2a: Infernape|163\/293|[from] item: Life Orb
+|faint|p1a: Scizor
+|
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, M|261\/261
+|turn|7
+|callback|decision
+|
+|move|p1a: Gengar|Thunderbolt|p2a: Infernape
+|-damage|p2a: Infernape|0 fnt
+|-damage|p1a: Gengar|235\/261|[from] item: Life Orb
+|faint|p2a: Infernape
+|
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, F|366\/366
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Tyranitar
+|turn|8
+|callback|decision
+|
+|move|p1a: Gengar|Substitute|p1a: Gengar
+|-start|p1a: Gengar|Substitute
+|-damage|p1a: Gengar|170\/261
+|move|p2a: Tyranitar|Pursuit|p1a: Gengar
+|-supereffective|p1a: Gengar
+|-end|p1a: Gengar|Substitute
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gengar|154\/261|[from] sandstorm
+|turn|9
+|callback|decision
+|
+|move|p1a: Gengar|Sludge Bomb|p2a: Tyranitar
+|-resisted|p2a: Tyranitar
+|-damage|p2a: Tyranitar|300\/366
+|-damage|p1a: Gengar|128\/261|[from] item: Life Orb
+|move|p2a: Tyranitar|Pursuit|p1a: Gengar
+|-supereffective|p1a: Gengar
+|-damage|p1a: Gengar|0 fnt
+|faint|p1a: Gengar
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Breloom|Breloom, M|289\/289
+|turn|10
+|callback|decision
+|
+|switch|p2a: Salamence|Salamence, M|331\/331
+|-ability|p2a: Salamence|Intimidate|[of] p1a: Breloom
+|-unboost|p1a: Breloom|atk|1
+|move|p1a: Breloom|Spore|p2a: Salamence
+|-status|p2a: Salamence|slp
+|-enditem|p2a: Salamence|Lum Berry|[eat]
+|-curestatus|p2a: Salamence|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Salamence|311\/331|[from] sandstorm
+|-damage|p1a: Breloom|271\/289|[from] sandstorm
+|turn|11
+|callback|decision
+|
+|move|p2a: Salamence|Fire Blast|p1a: Breloom|[miss]
+|-miss|p2a: Salamence|p1a: Breloom
+|move|p1a: Breloom|Spore|p2a: Salamence
+|-status|p2a: Salamence|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Salamence|291\/331 slp|[from] sandstorm
+|-damage|p1a: Breloom|253\/289|[from] sandstorm
+|turn|12
+|callback|decision
+|
+|-singleturn|p1a: Breloom|move: Focus Punch
+|cant|p2a: Salamence|slp
+|move|p1a: Breloom|Focus Punch|p2a: Salamence
+|-enditem|p1a: Breloom|Fighting Gem|[from] gem|[move] Focus Punch
+|-resisted|p2a: Salamence
+|-damage|p2a: Salamence|105\/331 slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Salamence|85\/331 slp|[from] sandstorm
+|-damage|p1a: Breloom|235\/289|[from] sandstorm
+|turn|13
+|callback|decision
+|
+|switch|p2a: Gengar|Gengar, M|262\/262
+|move|p1a: Breloom|Mach Punch|p2a: Gengar
+|-immune|p2a: Gengar|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Gengar|246\/262|[from] sandstorm
+|-damage|p1a: Breloom|217\/289|[from] sandstorm
+|-heal|p2a: Gengar|262\/262|[from] item: Black Sludge
+|turn|14
+|callback|decision
+|
+|switch|p1a: Keldeo|Keldeo|323\/323
+|move|p2a: Gengar|Substitute|p2a: Gengar
+|-start|p2a: Gengar|Substitute
+|-damage|p2a: Gengar|197\/262
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Keldeo|303\/323|[from] sandstorm
+|-damage|p2a: Gengar|181\/262|[from] sandstorm
+|-heal|p2a: Gengar|197\/262|[from] item: Black Sludge
+|turn|15
+|callback|decision
+|
+|move|p1a: Keldeo|Surf|p2a: Gengar
+|-end|p2a: Gengar|Substitute
+|move|p2a: Gengar|Shadow Ball|p1a: Keldeo
+|-damage|p1a: Keldeo|156\/323
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Keldeo|136\/323|[from] sandstorm
+|-damage|p2a: Gengar|181\/262|[from] sandstorm
+|-heal|p2a: Gengar|197\/262|[from] item: Black Sludge
+|turn|16
+|callback|decision
+|
+|switch|p2a: Salamence|Salamence, M|85\/331 slp
+|-ability|p2a: Salamence|Intimidate|[of] p1a: Keldeo
+|-unboost|p1a: Keldeo|atk|1
+|move|p1a: Keldeo|Surf|p2a: Salamence
+|-resisted|p2a: Salamence
+|-damage|p2a: Salamence|0 fnt
+|faint|p2a: Salamence
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Keldeo|116\/323|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, F|300\/366
+|turn|17
+|callback|decision
+|
+|move|p1a: Keldeo|Surf|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|94\/366
+|move|p2a: Tyranitar|Earthquake|p1a: Keldeo
+|-damage|p1a: Keldeo|0 fnt
+|faint|p1a: Keldeo
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Weavile|Weavile, M|289\/289
+|-ability|p1a: Weavile|Pressure
+|turn|18
+|callback|decision
+|
+|move|p1a: Weavile|Low Kick|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-enditem|p2a: Tyranitar|Chople Berry|[eat]
+|-damage|p2a: Tyranitar|0 fnt
+|-damage|p1a: Weavile|261\/289|[from] item: Life Orb
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Weavile|243\/289|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|73\/343
+|turn|19
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, F|189\/358
+|move|p2a: Scizor|Bullet Punch|p1a: Garchomp
+|-crit|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|-damage|p2a: Scizor|31\/343|[from] ability: Rough Skin|[of] p1a: Garchomp
+|faint|p1a: Garchomp
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Breloom|Breloom, M|217\/289
+|turn|20
+|callback|decision
+|
+|switch|p2a: Gengar|Gengar, M|197\/262
+|move|p1a: Breloom|Bullet Seed|p2a: Gengar
+|-resisted|p2a: Gengar
+|-damage|p2a: Gengar|144\/262
+|-resisted|p2a: Gengar
+|-damage|p2a: Gengar|90\/262
+|-resisted|p2a: Gengar
+|-damage|p2a: Gengar|31\/262
+|-hitcount|p2a: Gengar|3
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Gengar|15\/262|[from] sandstorm
+|-damage|p1a: Breloom|199\/289|[from] sandstorm
+|-heal|p2a: Gengar|31\/262|[from] item: Black Sludge
+|turn|21
+|callback|decision
+|
+|move|p2a: Gengar|Disable|p1a: Breloom
+|-start|p1a: Breloom|Disable|Bullet Seed
+|cant|p1a: Breloom|Disable|Bullet Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Gengar|15\/262|[from] sandstorm
+|-damage|p1a: Breloom|181\/289|[from] sandstorm
+|-heal|p2a: Gengar|31\/262|[from] item: Black Sludge
+|turn|22
+|callback|decision
+|
+|move|p2a: Gengar|Focus Blast|p1a: Breloom|[miss]
+|-miss|p2a: Gengar|p1a: Breloom
+|move|p1a: Breloom|Spore|p2a: Gengar
+|-status|p2a: Gengar|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Gengar|15\/262 slp|[from] sandstorm
+|-damage|p1a: Breloom|163\/289|[from] sandstorm
+|-heal|p2a: Gengar|31\/262 slp|[from] item: Black Sludge
+|turn|23
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|31\/343
+|switch|p1a: Weavile|Weavile, M|243\/289
+|-ability|p1a: Weavile|Pressure
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Weavile|225\/289|[from] sandstorm
+|turn|24
+|callback|decision
+|
+|move|p1a: Weavile|Ice Shard|p2a: Scizor
+|-resisted|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|-damage|p1a: Weavile|197\/289|[from] item: Life Orb
+|faint|p2a: Scizor
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Weavile|179\/289|[from] sandstorm
+|callback|decision
+|chat|Davriel|gg
+|
+|switch|p2a: Gengar|Gengar, M|31\/262 slp
+|turn|25
+|callback|decision
+|
+|move|p1a: Weavile|Ice Shard|p2a: Gengar
+|-damage|p2a: Gengar|0 fnt
+|-damage|p1a: Weavile|151\/289|[from] item: Life Orb
+|faint|p2a: Gengar
+|
+|win|sean1993
+|raw|Ladder updating...
+|raw|sean1993's rating: 1737 &rarr; <strong>1739<\/strong><br \/>(+2 for winning)
+|raw|Davriel's rating: 1648 &rarr; <strong>1643<\/strong><br \/>(-5 for losing)
+|chat|sean1993|gg

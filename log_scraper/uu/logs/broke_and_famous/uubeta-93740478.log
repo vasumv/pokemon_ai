@@ -1,0 +1,375 @@
+|join|broke_and_famous
+|join|PX-5
+|player|p1|broke_and_famous|288
+|player|p2|PX-5|267
+|gametype|singles
+|gen|6
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Escavalier, F
+|poke|p1|Heracross, M
+|poke|p1|Slowbro, M
+|poke|p1|Florges, F
+|poke|p1|Victini
+|poke|p1|Manectric, F
+|poke|p2|Roserade, F
+|poke|p2|Blastoise, M
+|poke|p2|Aggron, M, shiny
+|poke|p2|Tornadus-Therian, M
+|poke|p2|Dusclops, M
+|poke|p2|Chansey, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Manectric|Manectric, F|281\/281
+|switch|p2a: Cyclone|Tornadus-Therian, M|299\/299
+|turn|1
+|
+|switch|p2a: Panzer|Aggron, M, shiny|281\/281
+|-formechange|p1a: Manectric|Manectric-Mega
+|message|Manectric has Mega Evolved into Mega Manectric!
+|-ability|p1a: Manectric|Intimidate|[of] p2a: Panzer
+|-unboost|p2a: Panzer|atk|1
+|move|p1a: Manectric|Volt Switch|p2a: Panzer
+|-damage|p2a: Panzer|92\/281
+|chat|PX-5|welp   im off to a sh1tty start
+|
+|switch|p1a: Slowbro|Slowbro, M|394\/394
+|
+|turn|2
+|
+|-formechange|p2a: Panzer|Aggron-Mega
+|message|Aggron has Mega Evolved into Mega Aggron!
+|move|p2a: Panzer|Stealth Rock|p1a: Slowbro
+|-sidestart|p1: broke_and_famous|move: Stealth Rock
+|move|p1a: Slowbro|Scald|p2a: Panzer
+|-damage|p2a: Panzer|0 fnt
+|faint|p2a: Panzer
+|
+|
+|switch|p2a: Cyclone|Tornadus-Therian, M|299\/299
+|turn|3
+|
+|move|p2a: Cyclone|Grass Knot|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|87\/394
+|-damage|p2a: Cyclone|270\/299|[from] item: Life Orb
+|move|p1a: Slowbro|Slack Off|p1a: Slowbro
+|-heal|p1a: Slowbro|284\/394
+|
+|-heal|p1a: Slowbro|308\/394|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|-damage|p1a: Florges|315\/360|[from] Stealth Rock
+|move|p2a: Cyclone|Grass Knot|p1a: Florges
+|-damage|p1a: Florges|281\/360
+|-damage|p2a: Cyclone|241\/299|[from] item: Life Orb
+|
+|-heal|p1a: Florges|303\/360|[from] item: Leftovers
+|turn|5
+|
+|move|p2a: Cyclone|Rain Dance|p2a: Cyclone
+|-weather|RainDance
+|move|p1a: Florges|Moonblast|p2a: Cyclone
+|-damage|p2a: Cyclone|91\/299
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Florges|325\/360|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: hi|Chansey, F|704\/704
+|move|p1a: Florges|Protect|p1a: Florges
+|-fail|p1a: Florges
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Florges|347\/360|[from] item: Leftovers
+|turn|7
+|
+|move|p1a: Florges|Moonblast|p2a: hi
+|-damage|p2a: hi|649\/704
+|-unboost|p2a: hi|spa|1
+|move|p2a: hi|Wish|p2a: hi
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Florges|360\/360|[from] item: Leftovers
+|turn|8
+|
+|switch|p2a: Leaf Hurricane|Roserade, F|262\/262
+|move|p1a: Florges|Moonblast|p2a: Leaf Hurricane
+|-resisted|p2a: Leaf Hurricane
+|-damage|p2a: Leaf Hurricane|208\/262
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Leaf Hurricane|262\/262|[from] move: Wish|[wisher] hi
+|turn|9
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Leaf Hurricane|Sludge Bomb|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-weather|none
+|turn|10
+|
+|switch|p1a: Escavalier|Escavalier, F|344\/344
+|-damage|p1a: Escavalier|301\/344|[from] Stealth Rock
+|move|p2a: Leaf Hurricane|Spikes|p1a: Escavalier
+|-sidestart|p1: broke_and_famous|Spikes
+|
+|turn|11
+|
+|switch|p2a: Chaos Control|Dusclops, M|221\/221
+|-item|p1a: Escavalier|Assault Vest|[from] ability: Frisk|[of] p2a: Chaos Control|[identify]
+|move|p1a: Escavalier|Knock Off|p2a: Chaos Control
+|-supereffective|p2a: Chaos Control
+|-damage|p2a: Chaos Control|107\/221
+|-enditem|p2a: Chaos Control|Eviolite|[from] move: Knock Off|[of] p1a: Escavalier
+|
+|turn|12
+|
+|switch|p1a: Heracross|Heracross, M|301\/301
+|-damage|p1a: Heracross|264\/301|[from] Spikes
+|-damage|p1a: Heracross|227\/301|[from] Stealth Rock
+|move|p2a: Chaos Control|Substitute|p2a: Chaos Control
+|-start|p2a: Chaos Control|Substitute
+|-damage|p2a: Chaos Control|52\/221
+|
+|turn|13
+|
+|move|p1a: Heracross|Earthquake|p2a: Chaos Control
+|-end|p2a: Chaos Control|Substitute
+|move|p2a: Chaos Control|Curse|p1a: Heracross
+|-start|p1a: Heracross|Curse|[of] p2a: Chaos Control
+|-damage|p2a: Chaos Control|0 fnt
+|faint|p2a: Chaos Control
+|
+|-damage|p1a: Heracross|152\/301|[from] Curse
+|
+|switch|p2a: Cyclone|Tornadus-Therian, M|190\/299
+|turn|14
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|-damage|p1a: Florges|315\/360|[from] Stealth Rock
+|-damage|p1a: Florges|270\/360|[from] Spikes
+|move|p2a: Cyclone|Hurricane|p1a: Florges
+|-damage|p1a: Florges|134\/360
+|-damage|p2a: Cyclone|161\/299|[from] item: Life Orb
+|
+|-heal|p1a: Florges|156\/360|[from] item: Leftovers
+|turn|15
+|
+|switch|p2a: hi|Chansey, F|649\/704
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p1a: Florges|178\/360|[from] item: Leftovers
+|turn|16
+|
+|move|p1a: Florges|Moonblast|p2a: hi
+|-damage|p2a: hi|595\/704
+|move|p2a: hi|Wish|p2a: hi
+|
+|-heal|p1a: Florges|358\/360|[from] move: Wish|[wisher] Florges
+|-heal|p1a: Florges|360\/360|[from] item: Leftovers
+|turn|17
+|
+|switch|p1a: Escavalier|Escavalier, F|301\/344
+|-damage|p1a: Escavalier|258\/344|[from] Stealth Rock
+|-damage|p1a: Escavalier|215\/344|[from] Spikes
+|switch|p2a: Leaf Hurricane|Roserade, F|262\/262
+|
+|turn|18
+|
+|switch|p2a: Koopa-Paratroopa|Blastoise, M|362\/362
+|move|p1a: Escavalier|Knock Off|p2a: Koopa-Paratroopa
+|-damage|p2a: Koopa-Paratroopa|276\/362
+|-enditem|p2a: Koopa-Paratroopa|Leftovers|[from] move: Knock Off|[of] p1a: Escavalier
+|
+|turn|19
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|-damage|p1a: Florges|315\/360|[from] Spikes
+|-damage|p1a: Florges|270\/360|[from] Stealth Rock
+|move|p2a: Koopa-Paratroopa|Scald|p1a: Florges
+|-damage|p1a: Florges|225\/360
+|
+|-heal|p1a: Florges|247\/360|[from] item: Leftovers
+|turn|20
+|
+|switch|p2a: Leaf Hurricane|Roserade, F|262\/262
+|move|p1a: Florges|Moonblast|p2a: Leaf Hurricane
+|-resisted|p2a: Leaf Hurricane
+|-damage|p2a: Leaf Hurricane|202\/262
+|
+|-heal|p1a: Florges|269\/360|[from] item: Leftovers
+|turn|21
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Leaf Hurricane|Spikes|p1a: Florges
+|-sidestart|p1: broke_and_famous|Spikes
+|
+|-heal|p1a: Florges|291\/360|[from] item: Leftovers
+|turn|22
+|
+|switch|p1a: Escavalier|Escavalier, F|215\/344
+|-damage|p1a: Escavalier|158\/344|[from] Spikes
+|-damage|p1a: Escavalier|115\/344|[from] Stealth Rock
+|move|p2a: Leaf Hurricane|Spikes|p1a: Escavalier
+|-sidestart|p1: broke_and_famous|Spikes
+|
+|turn|23
+|
+|switch|p2a: Koopa-Paratroopa|Blastoise, M|276\/362
+|move|p1a: Escavalier|Megahorn|p2a: Koopa-Paratroopa
+|-damage|p2a: Koopa-Paratroopa|98\/362
+|
+|turn|24
+|
+|move|p2a: Koopa-Paratroopa|Scald|p1a: Escavalier
+|-damage|p1a: Escavalier|28\/344
+|move|p1a: Escavalier|Megahorn|p2a: Koopa-Paratroopa
+|-damage|p2a: Koopa-Paratroopa|0 fnt
+|faint|p2a: Koopa-Paratroopa
+|
+|
+|switch|p2a: Cyclone|Tornadus-Therian, M|260\/299
+|turn|25
+|
+|move|p2a: Cyclone|Focus Blast|p1a: Escavalier
+|-damage|p1a: Escavalier|0 fnt
+|-damage|p2a: Cyclone|231\/299|[from] item: Life Orb
+|faint|p1a: Escavalier
+|
+|
+|switch|p1a: Florges|Florges, F|291\/360
+|-damage|p1a: Florges|246\/360|[from] Stealth Rock
+|-damage|p1a: Florges|156\/360|[from] Spikes
+|turn|26
+|
+|move|p2a: Cyclone|Rain Dance|p2a: Cyclone
+|-weather|RainDance
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Florges|178\/360|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Cyclone|Hurricane|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Florges|358\/360|[from] move: Wish|[wisher] Florges
+|-heal|p1a: Florges|360\/360|[from] item: Leftovers
+|turn|28
+|
+|move|p2a: Cyclone|Hurricane|p1a: Florges
+|-damage|p1a: Florges|234\/360
+|-damage|p2a: Cyclone|202\/299|[from] item: Life Orb
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Florges|256\/360|[from] item: Leftovers
+|turn|29
+|
+|move|p2a: Cyclone|Rain Dance|p2a: Cyclone
+|-fail|p2a: Cyclone
+|move|p1a: Florges|Moonblast|p2a: Cyclone
+|-damage|p2a: Cyclone|42\/299
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Florges|360\/360|[from] move: Wish|[wisher] Florges
+|turn|30
+|chat|PX-5|missclk
+|
+|move|p2a: Cyclone|Hurricane|p1a: Florges
+|-crit|p1a: Florges
+|-damage|p1a: Florges|169\/360
+|-start|p1a: Florges|confusion
+|-damage|p2a: Cyclone|13\/299|[from] item: Life Orb
+|-activate|p1a: Florges|confusion
+|-damage|p1a: Florges|145\/360|[from] confusion
+|
+|-weather|none
+|-heal|p1a: Florges|167\/360|[from] item: Leftovers
+|turn|31
+|
+|switch|p2a: hi|Chansey, F|595\/704
+|-end|p1a: Florges|confusion
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p1a: Florges|189\/360|[from] item: Leftovers
+|turn|32
+|
+|move|p1a: Florges|Moonblast|p2a: hi
+|-damage|p2a: hi|540\/704
+|move|p2a: hi|Light Screen|p2a: hi
+|-sidestart|p2: PX-5|move: Light Screen
+|
+|-heal|p1a: Florges|360\/360|[from] move: Wish|[wisher] Florges
+|turn|33
+|
+|move|p1a: Florges|Moonblast|p2a: hi
+|-damage|p2a: hi|511\/704
+|move|p2a: hi|Wish|p2a: hi
+|
+|turn|34
+|
+|switch|p1a: Manectric|Manectric, F|281\/281
+|-formechange|p1a: Manectric|Manectric-Mega
+|-damage|p1a: Manectric|211\/281|[from] Spikes
+|-damage|p1a: Manectric|176\/281|[from] Stealth Rock
+|-ability|p1a: Manectric|Intimidate|[of] p2a: hi
+|-unboost|p2a: hi|atk|1
+|switch|p2a: Leaf Hurricane|Roserade, F|202\/262
+|
+|-heal|p2a: Leaf Hurricane|262\/262|[from] move: Wish|[wisher] hi
+|turn|35
+|
+|switch|p2a: hi|Chansey, F|511\/704
+|move|p1a: Manectric|Flamethrower|p2a: hi
+|-damage|p2a: hi|486\/704
+|
+|turn|36
+|
+|move|p1a: Manectric|Thunderbolt|p2a: hi
+|-damage|p2a: hi|451\/704
+|-status|p2a: hi|par
+|move|p2a: hi|Wish|p2a: hi
+|
+|-sideend|p2: PX-5|move: Light Screen
+|turn|37
+|
+|switch|p1a: Victini|Victini|404\/404
+|-damage|p1a: Victini|303\/404|[from] Spikes
+|-damage|p1a: Victini|202\/404|[from] Stealth Rock
+|move|p2a: hi|Light Screen|p2a: hi
+|-sidestart|p2: PX-5|move: Light Screen
+|
+|-heal|p2a: hi|704\/704 par|[from] move: Wish|[wisher] hi
+|turn|38
+|
+|move|p1a: Victini|Final Gambit|p2a: hi
+|-damage|p2a: hi|502\/704 par
+|faint|p1a: Victini
+|cant|p2a: hi|par
+|
+|-message|broke_and_famous forfeited.
+|
+|win|PX-5
+|raw|Ladder updating...
+|leave|broke_and_famous
+|player|p1
+|chat|PX-5|lol.
+|raw|broke_and_famous's rating: 1222 &rarr; <strong>1196<\/strong><br \/>(-26 for losing)
+|raw|PX-5's rating: 1212 &rarr; <strong>1238<\/strong><br \/>(+26 for winning)

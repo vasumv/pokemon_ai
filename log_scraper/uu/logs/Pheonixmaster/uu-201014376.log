@@ -1,0 +1,340 @@
+|join|Brettlin
+|join|Pheonixmaster
+|player|p1|Brettlin|153
+|player|p2|Pheonixmaster|168
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Doublade, M, shiny
+|poke|p1|Krookodile, F
+|poke|p1|Sceptile, M, shiny
+|poke|p1|Azelf, shiny
+|poke|p1|Florges, F, shiny
+|poke|p1|Starmie, shiny
+|poke|p2|Swampert, M
+|poke|p2|Tornadus, M
+|poke|p2|Kingdra, M
+|poke|p2|Jirachi
+|poke|p2|Chesnaught, M
+|poke|p2|Toxicroak, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Sceptile|Sceptile, M, shiny|281\/281
+|switch|p2a: Jirachi|Jirachi|399\/399
+|turn|1
+|
+|switch|p1a: Doublade|Doublade, M, shiny|321\/321
+|move|p2a: Jirachi|U-turn|p1a: Doublade
+|-resisted|p1a: Doublade
+|-damage|p1a: Doublade|314\/321
+|
+|switch|p2a: Swampert|Swampert, M|349\/349
+|
+|turn|2
+|
+|switch|p1a: Sceptile|Sceptile, M, shiny|281\/281
+|detailschange|p2a: Swampert|Swampert-Mega, M
+|-mega|p2a: Swampert|Swampert|Swampertite
+|move|p2a: Swampert|Stealth Rock|p1a: Sceptile
+|-sidestart|p1: Brettlin|move: Stealth Rock
+|
+|turn|3
+|
+|switch|p2a: Jirachi|Jirachi|399\/399
+|detailschange|p1a: Sceptile|Sceptile-Mega, M, shiny
+|-mega|p1a: Sceptile|Sceptile|Sceptilite
+|move|p1a: Sceptile|Substitute|p1a: Sceptile
+|-start|p1a: Sceptile|Substitute
+|-damage|p1a: Sceptile|211\/281
+|
+|turn|4
+|
+|move|p1a: Sceptile|Substitute|p1a: Sceptile
+|-fail|p1a: Sceptile|move: Substitute
+|move|p2a: Jirachi|Iron Head|p1a: Sceptile
+|-end|p1a: Sceptile|Substitute
+|
+|turn|5
+|
+|switch|p1a: Doublade|Doublade, M, shiny|314\/321
+|-damage|p1a: Doublade|294\/321|[from] Stealth Rock
+|move|p2a: Jirachi|U-turn|p1a: Doublade
+|-resisted|p1a: Doublade
+|-damage|p1a: Doublade|286\/321
+|
+|switch|p2a: Swampert|Swampert-Mega, M|349\/349
+|
+|turn|6
+|
+|move|p2a: Swampert|Waterfall|p1a: Doublade
+|-damage|p1a: Doublade|193\/321
+|move|p1a: Doublade|Toxic|p2a: Swampert
+|-status|p2a: Swampert|tox
+|
+|-damage|p2a: Swampert|328\/349 tox|[from] psn
+|turn|7
+|
+|switch|p1a: Azelf|Azelf, shiny|292\/292
+|-damage|p1a: Azelf|256\/292|[from] Stealth Rock
+|move|p2a: Swampert|Earthquake|p1a: Azelf
+|-immune|p1a: Azelf|[msg]
+|
+|-damage|p2a: Swampert|286\/349 tox|[from] psn
+|turn|8
+|
+|switch|p2a: Chesnaught|Chesnaught, M|380\/380
+|move|p1a: Azelf|U-turn|p2a: Chesnaught
+|-damage|p2a: Chesnaught|309\/380
+|
+|switch|p1a: Florges|Florges, F, shiny|360\/360
+|-damage|p1a: Florges|315\/360|[from] Stealth Rock
+|
+|-heal|p1a: Florges|337\/360|[from] item: Leftovers
+|-heal|p2a: Chesnaught|332\/380|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Jirachi|Jirachi|399\/399
+|move|p1a: Florges|Moonblast|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|333\/399
+|
+|-heal|p1a: Florges|359\/360|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Doublade|Doublade, M, shiny|193\/321
+|-damage|p1a: Doublade|173\/321|[from] Stealth Rock
+|move|p2a: Jirachi|Rain Dance|p2a: Jirachi
+|-weather|RainDance
+|
+|-weather|RainDance|[upkeep]
+|turn|11
+|
+|move|p2a: Jirachi|U-turn|p1a: Doublade
+|-resisted|p1a: Doublade
+|-damage|p1a: Doublade|165\/321
+|
+|switch|p2a: Swampert|Swampert-Mega, M|286\/349 tox
+|move|p1a: Doublade|Swords Dance|p1a: Doublade
+|-boost|p1a: Doublade|atk|2
+|
+|-weather|RainDance|[upkeep]
+|-damage|p2a: Swampert|265\/349 tox|[from] psn
+|turn|12
+|
+|move|p1a: Doublade|Shadow Sneak|p2a: Swampert
+|-damage|p2a: Swampert|162\/349 tox
+|move|p2a: Swampert|Earthquake|p1a: Doublade
+|-supereffective|p1a: Doublade
+|-damage|p1a: Doublade|0 fnt
+|faint|p1a: Doublade
+|
+|-weather|RainDance|[upkeep]
+|-damage|p2a: Swampert|120\/349 tox|[from] psn
+|
+|switch|p1a: Starmie|Starmie, shiny|261\/261
+|-damage|p1a: Starmie|229\/261|[from] Stealth Rock
+|turn|13
+|
+|move|p1a: Starmie|Psyshock|p2a: Swampert
+|-damage|p2a: Swampert|11\/349 tox
+|move|p2a: Swampert|Earthquake|p1a: Starmie
+|-damage|p1a: Starmie|0 fnt
+|faint|p1a: Starmie
+|
+|-weather|RainDance|[upkeep]
+|-damage|p2a: Swampert|0 fnt|[from] psn
+|faint|p2a: Swampert
+|
+|switch|p1a: Azelf|Azelf, shiny|256\/292
+|switch|p2a: Toxicroak|Toxicroak, M|307\/307
+|-damage|p1a: Azelf|220\/292|[from] Stealth Rock
+|turn|14
+|
+|move|p2a: Toxicroak|Sucker Punch|p1a: Azelf
+|-fail|p1a: Azelf
+|move|p1a: Azelf|Taunt|p2a: Toxicroak
+|-start|p2a: Toxicroak|move: Taunt
+|
+|-weather|RainDance|[upkeep]
+|turn|15
+|
+|move|p2a: Toxicroak|Sucker Punch|p1a: Azelf
+|-fail|p1a: Azelf
+|move|p1a: Azelf|Stealth Rock|p2a: Toxicroak
+|-sidestart|p2: Pheonixmaster|move: Stealth Rock
+|
+|-weather|RainDance|[upkeep]
+|turn|16
+|
+|move|p2a: Toxicroak|Sucker Punch|p1a: Azelf
+|-fail|p1a: Azelf
+|move|p1a: Azelf|Taunt|p2a: Toxicroak
+|-fail|p2a: Toxicroak
+|
+|-weather|RainDance|[upkeep]
+|turn|17
+|
+|switch|p2a: Jirachi|Jirachi|333\/399
+|-damage|p2a: Jirachi|309\/399|[from] Stealth Rock
+|move|p1a: Azelf|Taunt|p2a: Jirachi
+|-start|p2a: Jirachi|move: Taunt
+|
+|-weather|none
+|turn|18
+|
+|move|p1a: Azelf|U-turn|p2a: Jirachi
+|-damage|p2a: Jirachi|253\/399
+|
+|switch|p1a: Krookodile|Krookodile, F|331\/331
+|-damage|p1a: Krookodile|311\/331|[from] Stealth Rock
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Jirachi
+|-unboost|p2a: Jirachi|atk|1
+|move|p2a: Jirachi|U-turn|p1a: Krookodile
+|-supereffective|p1a: Krookodile
+|-damage|p1a: Krookodile|229\/331
+|
+|switch|p2a: Chesnaught|Chesnaught, M|332\/380
+|-damage|p2a: Chesnaught|309\/380|[from] Stealth Rock
+|
+|-heal|p2a: Chesnaught|332\/380|[from] item: Leftovers
+|turn|19
+|
+|switch|p1a: Florges|Florges, F, shiny|359\/360
+|-damage|p1a: Florges|314\/360|[from] Stealth Rock
+|move|p2a: Chesnaught|Wood Hammer|p1a: Florges
+|-damage|p1a: Florges|104\/360
+|-damage|p2a: Chesnaught|263\/380|[from] recoil|[of] p1a: Florges
+|
+|-heal|p1a: Florges|126\/360|[from] item: Leftovers
+|-heal|p2a: Chesnaught|286\/380|[from] item: Leftovers
+|turn|20
+|
+|switch|p1a: Krookodile|Krookodile, F|229\/331
+|-damage|p1a: Krookodile|209\/331|[from] Stealth Rock
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Chesnaught
+|-unboost|p2a: Chesnaught|atk|1
+|switch|p2a: Jirachi|Jirachi|253\/399
+|-damage|p2a: Jirachi|229\/399|[from] Stealth Rock
+|
+|turn|21
+|
+|move|p1a: Krookodile|Pursuit|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|102\/399
+|-damage|p1a: Krookodile|176\/331|[from] item: Life Orb
+|move|p2a: Jirachi|Rain Dance|p2a: Jirachi
+|-weather|RainDance
+|
+|-weather|RainDance|[upkeep]
+|turn|22
+|
+|move|p1a: Krookodile|Pursuit|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|-damage|p1a: Krookodile|143\/331|[from] item: Life Orb
+|faint|p2a: Jirachi
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p2a: Kingdra|Kingdra, M|291\/291
+|-damage|p2a: Kingdra|255\/291|[from] Stealth Rock
+|turn|23
+|
+|move|p2a: Kingdra|Scald|p1a: Krookodile
+|-crit|p1a: Krookodile
+|-supereffective|p1a: Krookodile
+|-damage|p1a: Krookodile|0 fnt
+|faint|p1a: Krookodile
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p1a: Sceptile|Sceptile-Mega, M, shiny|211\/281
+|-damage|p1a: Sceptile|176\/281|[from] Stealth Rock
+|turn|24
+|
+|switch|p1a: Florges|Florges, F, shiny|126\/360
+|-damage|p1a: Florges|81\/360|[from] Stealth Rock
+|move|p2a: Kingdra|Scald|p1a: Florges
+|-damage|p1a: Florges|0 fnt
+|faint|p1a: Florges
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p1a: Azelf|Azelf, shiny|220\/292
+|-damage|p1a: Azelf|184\/292|[from] Stealth Rock
+|turn|25
+|
+|move|p2a: Kingdra|Scald|p1a: Azelf
+|-damage|p1a: Azelf|0 fnt
+|faint|p1a: Azelf
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p1a: Sceptile|Sceptile-Mega, M, shiny|176\/281
+|-damage|p1a: Sceptile|141\/281|[from] Stealth Rock
+|turn|26
+|
+|move|p2a: Kingdra|Scald|p1a: Sceptile
+|-resisted|p1a: Sceptile
+|-damage|p1a: Sceptile|65\/281
+|move|p1a: Sceptile|Giga Drain|p2a: Kingdra
+|-damage|p2a: Kingdra|99\/291
+|-heal|p1a: Sceptile|143\/281|[from] drain|[of] p2a: Kingdra
+|
+|-weather|RainDance|[upkeep]
+|turn|27
+|
+|move|p2a: Kingdra|Scald|p1a: Sceptile
+|-resisted|p1a: Sceptile
+|-damage|p1a: Sceptile|68\/281
+|move|p1a: Sceptile|Giga Drain|p2a: Kingdra
+|-damage|p2a: Kingdra|0 fnt
+|-heal|p1a: Sceptile|118\/281|[from] drain|[of] p2a: Kingdra
+|faint|p2a: Kingdra
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p2a: Tornadus|Tornadus, M|299\/299
+|-damage|p2a: Tornadus|225\/299|[from] Stealth Rock
+|turn|28
+|
+|move|p2a: Tornadus|Tailwind|p2a: Tornadus
+|-sidestart|p2: Pheonixmaster|move: Tailwind
+|move|p1a: Sceptile|Substitute|p1a: Sceptile
+|-start|p1a: Sceptile|Substitute
+|-damage|p1a: Sceptile|48\/281
+|
+|-weather|none
+|turn|29
+|
+|move|p2a: Tornadus|Hurricane|p1a: Sceptile
+|-supereffective|p1a: Sceptile
+|-end|p1a: Sceptile|Substitute
+|move|p1a: Sceptile|Dragon Pulse|p2a: Tornadus
+|-damage|p2a: Tornadus|14\/299
+|
+|turn|30
+|
+|move|p2a: Tornadus|U-turn|p1a: Sceptile
+|-supereffective|p1a: Sceptile
+|-damage|p1a: Sceptile|0 fnt
+|faint|p1a: Sceptile
+|
+|win|Pheonixmaster
+|raw|Ladder updating...
+|raw|Brettlin's rating: 1397 &rarr; <strong>1382<\/strong><br \/>(-15 for losing)
+|raw|Pheonixmaster's rating: 1488 &rarr; <strong>1503<\/strong><br \/>(+15 for winning)
+|leave|Brettlin
+|player|p1

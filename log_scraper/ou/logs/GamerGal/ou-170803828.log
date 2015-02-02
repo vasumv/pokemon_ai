@@ -1,0 +1,337 @@
+|join|GamerGal
+|join|Shoebo
+|player|p1|GamerGal|4
+|player|p2|Shoebo|33
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Charizard, F
+|poke|p1|Latios, M
+|poke|p1|Azumarill, M
+|poke|p1|Bisharp, F
+|poke|p1|Landorus, M
+|poke|p1|Slowbro, M
+|poke|p2|Sableye, M
+|poke|p2|Breloom, M
+|poke|p2|Medicham, F, shiny
+|poke|p2|Heatran, M
+|poke|p2|Latios, M
+|poke|p2|Azumarill, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Charizard|Charizard, F|339\/339
+|switch|p2a: Polka Dot|Heatran, M|337\/337
+|turn|1
+|
+|switch|p1a: Slowbro|Slowbro, M|394\/394
+|move|p2a: Polka Dot|Protect|p2a: Polka Dot
+|-fail|p2a: Polka Dot
+|
+|turn|2
+|
+|switch|p2a: Blue Bomber|Latios, M|302\/302
+|move|p1a: Slowbro|Future Sight|p2a: Blue Bomber
+|-start|p1a: Slowbro|move: Future Sight
+|
+|turn|3
+|
+|move|p2a: Blue Bomber|Thunderbolt|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|170\/394
+|-damage|p2a: Blue Bomber|272\/302|[from] item: Life Orb
+|move|p1a: Slowbro|Ice Beam|p2a: Blue Bomber
+|-crit|p2a: Blue Bomber
+|-supereffective|p2a: Blue Bomber
+|-damage|p2a: Blue Bomber|36\/302
+|
+|turn|4
+|
+|switch|p1a: Landorus|Landorus, M|319\/319
+|move|p2a: Blue Bomber|Draco Meteor|p1a: Landorus
+|-damage|p1a: Landorus|0 fnt
+|-unboost|p2a: Blue Bomber|spa|2
+|-damage|p2a: Blue Bomber|6\/302|[from] item: Life Orb
+|faint|p1a: Landorus
+|
+|-message|Future Sight hit! (placeholder)
+|-resisted|p2a: Blue Bomber
+|-damage|p2a: Blue Bomber|0 fnt
+|faint|p2a: Blue Bomber
+|
+|switch|p1a: Latios|Latios, M|301\/301
+|switch|p2a: Dolly|Breloom, M|261\/261
+|turn|5
+|
+|move|p1a: Latios|Psyshock|p2a: Dolly
+|-supereffective|p2a: Dolly
+|-enditem|p2a: Dolly|Focus Sash
+|-damage|p2a: Dolly|1\/261
+|-damage|p1a: Latios|271\/301|[from] item: Life Orb
+|move|p2a: Dolly|Spore|p1a: Latios
+|-status|p1a: Latios|slp
+|
+|turn|6
+|
+|cant|p1a: Latios|slp
+|move|p2a: Dolly|Rock Tomb|p1a: Latios
+|-damage|p1a: Latios|135\/301 slp
+|-unboost|p1a: Latios|spe|1
+|
+|turn|7
+|
+|move|p2a: Dolly|Rock Tomb|p1a: Latios
+|-damage|p1a: Latios|1\/301 slp
+|-unboost|p1a: Latios|spe|1
+|cant|p1a: Latios|slp
+|
+|turn|8
+|
+|move|p2a: Dolly|Bullet Seed|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|0 fnt
+|-hitcount|p1a: Latios|1
+|faint|p1a: Latios
+|
+|
+|switch|p1a: Azumarill|Azumarill, M|384\/384
+|turn|9
+|
+|switch|p2a: Donkey Kong|Azumarill, M|364\/364
+|move|p1a: Azumarill|Aqua Jet|p2a: Donkey Kong
+|-resisted|p2a: Donkey Kong
+|-damage|p2a: Donkey Kong|310\/364
+|
+|turn|10
+|
+|move|p2a: Donkey Kong|Belly Drum|p2a: Donkey Kong
+|-damage|p2a: Donkey Kong|128\/364
+|-setboost|p2a: Donkey Kong|atk|6|[from] move: Belly Drum
+|-enditem|p2a: Donkey Kong|Sitrus Berry|[eat]
+|-heal|p2a: Donkey Kong|219\/364|[from] item: Sitrus Berry
+|move|p1a: Azumarill|Play Rough|p2a: Donkey Kong
+|-crit|p2a: Donkey Kong
+|-damage|p2a: Donkey Kong|0 fnt
+|faint|p2a: Donkey Kong
+|
+|
+|switch|p2a: SenseiBlu|Medicham, F, shiny|261\/261
+|turn|11
+|c|âGamerGal|i don't think that mattered cause you were belly drum
+|
+|detailschange|p2a: SenseiBlu|Medicham-Mega, F, shiny
+|message|Medicham has Mega Evolved into Mega Medicham!
+|move|p2a: SenseiBlu|Fake Out|p1a: Azumarill
+|-damage|p1a: Azumarill|285\/384
+|cant|p1a: Azumarill|flinch
+|
+|turn|12
+|
+|move|p2a: SenseiBlu|Zen Headbutt|p1a: Azumarill|[miss]
+|-miss|p2a: SenseiBlu|p1a: Azumarill
+|move|p1a: Azumarill|Play Rough|p2a: SenseiBlu|[miss]
+|-miss|p1a: Azumarill|p2a: SenseiBlu
+|
+|turn|13
+|
+|move|p2a: SenseiBlu|Zen Headbutt|p1a: Azumarill|[miss]
+|-miss|p2a: SenseiBlu|p1a: Azumarill
+|move|p1a: Azumarill|Play Rough|p2a: SenseiBlu
+|-supereffective|p2a: SenseiBlu
+|-damage|p2a: SenseiBlu|0 fnt
+|faint|p2a: SenseiBlu
+|
+|c|âGamerGal|nice
+|
+|switch|p2a: Jasper|Sableye, M|304\/304
+|turn|14
+|
+|switch|p1a: Charizard|Charizard, F|339\/339
+|move|p2a: Jasper|Will-O-Wisp|p1a: Charizard
+|-fail|p1a: Charizard
+|
+|turn|15
+|
+|switch|p2a: Polka Dot|Heatran, M|337\/337
+|detailschange|p1a: Charizard|Charizard-Mega-X, F
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p1a: Charizard|Dragon Claw|p2a: Polka Dot
+|-resisted|p2a: Polka Dot
+|-damage|p2a: Polka Dot|240\/337
+|
+|-heal|p2a: Polka Dot|261\/337|[from] item: Leftovers
+|turn|16
+|
+|switch|p1a: Azumarill|Azumarill, M|285\/384
+|move|p2a: Polka Dot|Flash Cannon|p1a: Azumarill
+|-damage|p1a: Azumarill|158\/384
+|
+|-heal|p2a: Polka Dot|282\/337|[from] item: Leftovers
+|turn|17
+|
+|move|p2a: Polka Dot|Protect|p2a: Polka Dot
+|-singleturn|p2a: Polka Dot|Protect
+|move|p1a: Azumarill|Waterfall|p2a: Polka Dot
+|-activate|p2a: Polka Dot|Protect
+|
+|-heal|p2a: Polka Dot|303\/337|[from] item: Leftovers
+|turn|18
+|
+|switch|p2a: Jasper|Sableye, M|304\/304
+|move|p1a: Azumarill|Waterfall|p2a: Jasper
+|-damage|p2a: Jasper|85\/304
+|
+|-heal|p2a: Jasper|104\/304|[from] item: Leftovers
+|turn|19
+|
+|switch|p1a: Charizard|Charizard-Mega-X, F|339\/339
+|move|p2a: Jasper|Will-O-Wisp|p1a: Charizard
+|-fail|p1a: Charizard
+|
+|-heal|p2a: Jasper|123\/304|[from] item: Leftovers
+|turn|20
+|
+|switch|p1a: Slowbro|Slowbro, M|301\/394
+|move|p2a: Jasper|Will-O-Wisp|p1a: Slowbro
+|-status|p1a: Slowbro|brn
+|
+|-heal|p2a: Jasper|142\/304|[from] item: Leftovers
+|-damage|p1a: Slowbro|252\/394 brn|[from] brn
+|turn|21
+|
+|move|p2a: Jasper|Recover|p2a: Jasper
+|-heal|p2a: Jasper|294\/304
+|move|p1a: Slowbro|Scald|p2a: Jasper
+|-damage|p2a: Jasper|188\/304
+|
+|-heal|p2a: Jasper|207\/304|[from] item: Leftovers
+|-damage|p1a: Slowbro|203\/394 brn|[from] brn
+|turn|22
+|
+|move|p2a: Jasper|Knock Off|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|53\/394 brn
+|-enditem|p1a: Slowbro|Assault Vest|[from] move: Knock Off|[of] p2a: Jasper
+|move|p1a: Slowbro|Scald|p2a: Jasper
+|-crit|p2a: Jasper
+|-damage|p2a: Jasper|39\/304
+|
+|-heal|p2a: Jasper|58\/304|[from] item: Leftovers
+|-damage|p1a: Slowbro|4\/394 brn|[from] brn
+|turn|23
+|
+|switch|p1a: Charizard|Charizard-Mega-X, F|339\/339
+|move|p2a: Jasper|Recover|p2a: Jasper
+|-heal|p2a: Jasper|210\/304
+|
+|-heal|p2a: Jasper|229\/304|[from] item: Leftovers
+|turn|24
+|
+|switch|p2a: Polka Dot|Heatran, M|303\/337
+|move|p1a: Charizard|Dragon Dance|p1a: Charizard
+|-boost|p1a: Charizard|atk|1
+|-boost|p1a: Charizard|spe|1
+|
+|-heal|p2a: Polka Dot|324\/337|[from] item: Leftovers
+|turn|25
+|
+|move|p1a: Charizard|Dragon Claw|p2a: Polka Dot
+|-resisted|p2a: Polka Dot
+|-damage|p2a: Polka Dot|182\/337
+|move|p2a: Polka Dot|Earth Power|p1a: Charizard
+|-supereffective|p1a: Charizard
+|-damage|p1a: Charizard|91\/339
+|
+|-heal|p2a: Polka Dot|203\/337|[from] item: Leftovers
+|turn|26
+|
+|move|p1a: Charizard|Dragon Claw|p2a: Polka Dot
+|-resisted|p2a: Polka Dot
+|-damage|p2a: Polka Dot|59\/337
+|move|p2a: Polka Dot|Flash Cannon|p1a: Charizard
+|-resisted|p1a: Charizard
+|-damage|p1a: Charizard|0 fnt
+|faint|p1a: Charizard
+|
+|-heal|p2a: Polka Dot|80\/337|[from] item: Leftovers
+|
+|switch|p1a: Azumarill|Azumarill, M|158\/384
+|turn|27
+|
+|move|p2a: Polka Dot|Protect|p2a: Polka Dot
+|-singleturn|p2a: Polka Dot|Protect
+|move|p1a: Azumarill|Waterfall|p2a: Polka Dot
+|-activate|p2a: Polka Dot|Protect
+|
+|-heal|p2a: Polka Dot|101\/337|[from] item: Leftovers
+|turn|28
+|
+|move|p2a: Polka Dot|Flash Cannon|p1a: Azumarill
+|-damage|p1a: Azumarill|38\/384
+|-unboost|p1a: Azumarill|spd|1
+|move|p1a: Azumarill|Waterfall|p2a: Polka Dot
+|-crit|p2a: Polka Dot
+|-supereffective|p2a: Polka Dot
+|-damage|p2a: Polka Dot|0 fnt
+|faint|p2a: Polka Dot
+|
+|
+|switch|p2a: Dolly|Breloom, M|1\/261
+|turn|29
+|
+|switch|p1a: Slowbro|Slowbro, M|135\/394 brn
+|move|p2a: Dolly|Mach Punch|p1a: Slowbro
+|-resisted|p1a: Slowbro
+|-damage|p1a: Slowbro|90\/394 brn
+|
+|-damage|p1a: Slowbro|41\/394 brn|[from] brn
+|turn|30
+|
+|move|p2a: Dolly|Bullet Seed|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|0 fnt
+|-hitcount|p1a: Slowbro|1
+|faint|p1a: Slowbro
+|
+|
+|switch|p1a: Bisharp|Bisharp, F|271\/271
+|turn|31
+|
+|move|p2a: Dolly|Spore|p1a: Bisharp
+|-status|p1a: Bisharp|slp
+|cant|p1a: Bisharp|slp
+|
+|turn|32
+|
+|move|p2a: Dolly|Mach Punch|p1a: Bisharp
+|-supereffective|p1a: Bisharp
+|-damage|p1a: Bisharp|0 fnt
+|faint|p1a: Bisharp
+|
+|
+|switch|p1a: Azumarill|Azumarill, M|38\/384
+|turn|33
+|
+|move|p2a: Dolly|Mach Punch|p1a: Azumarill
+|-resisted|p1a: Azumarill
+|-damage|p1a: Azumarill|0 fnt
+|faint|p1a: Azumarill
+|
+|win|Shoebo
+|raw|Ladder updating...
+|raw|GamerGal's rating: 1527 &rarr; <strong>1500<\/strong><br \/>(-27 for losing)
+|raw|Shoebo's rating: 1404 &rarr; <strong>1431<\/strong><br \/>(+27 for winning)
+|leave|GamerGal
+|player|p1
+|c|âShoebo|gg

@@ -1,0 +1,446 @@
+|join|Prof.Celsius
+|join|michael 666
+|player|p1|Prof.Celsius|169
+|player|p2|michael 666|2
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Camerupt, F
+|poke|p1|Diancie
+|poke|p1|Chesnaught, F
+|poke|p1|Honchkrow, M
+|poke|p1|Snorlax, M
+|poke|p1|Slowking, F
+|poke|p2|Lucario, F
+|poke|p2|Starmie
+|poke|p2|Espeon, M
+|poke|p2|Honchkrow, F
+|poke|p2|Blissey, F
+|poke|p2|Hippowdon, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Chesnaught|Chesnaught, F|380\/380
+|switch|p2a: Honchkrow|Honchkrow, F|403\/403
+|turn|1
+|
+|switch|p2a: Starmie|Starmie|324\/324
+|switch|p1a: Diancie|Diancie|304\/304
+|
+|turn|2
+|
+|switch|p1a: Snorlax|Snorlax, M|497\/497
+|move|p2a: Starmie|Scald|p1a: Snorlax
+|-damage|p1a: Snorlax|428\/497
+|
+|-heal|p1a: Snorlax|459\/497|[from] item: Leftovers
+|turn|3
+|
+|move|p2a: Starmie|Scald|p1a: Snorlax
+|-crit|p1a: Snorlax
+|-damage|p1a: Snorlax|356\/497
+|move|p1a: Snorlax|Body Slam|p2a: Starmie
+|-damage|p2a: Starmie|240\/324
+|
+|-heal|p2a: Starmie|260\/324|[from] item: Leftovers
+|-heal|p1a: Snorlax|387\/497|[from] item: Leftovers
+|turn|4
+|
+|move|p2a: Starmie|Scald|p1a: Snorlax
+|-damage|p1a: Snorlax|318\/497
+|move|p1a: Snorlax|Curse|p1a: Snorlax
+|-boost|p1a: Snorlax|atk|1
+|-boost|p1a: Snorlax|def|1
+|-unboost|p1a: Snorlax|spe|1
+|
+|-heal|p2a: Starmie|280\/324|[from] item: Leftovers
+|-heal|p1a: Snorlax|349\/497|[from] item: Leftovers
+|turn|5
+|
+|move|p2a: Starmie|Scald|p1a: Snorlax
+|-damage|p1a: Snorlax|286\/497
+|-status|p1a: Snorlax|brn
+|move|p1a: Snorlax|Body Slam|p2a: Starmie
+|-damage|p2a: Starmie|216\/324
+|
+|-heal|p2a: Starmie|236\/324|[from] item: Leftovers
+|-heal|p1a: Snorlax|317\/497 brn|[from] item: Leftovers
+|-damage|p1a: Snorlax|255\/497 brn|[from] brn
+|turn|6
+|
+|switch|p2a: Hippowdon|Hippowdon, M|420\/420
+|-weather|Sandstorm
+|switch|p1a: Chesnaught|Chesnaught, F|380\/380
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Chesnaught|357\/380|[from] sandstorm
+|-heal|p1a: Chesnaught|380\/380|[from] item: Leftovers
+|turn|7
+|
+|move|p1a: Chesnaught|Substitute|p1a: Chesnaught
+|-start|p1a: Chesnaught|Substitute
+|-damage|p1a: Chesnaught|285\/380
+|move|p2a: Hippowdon|Stealth Rock|p1a: Chesnaught
+|-sidestart|p1: Prof.Celsius|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Chesnaught|262\/380|[from] sandstorm
+|-heal|p1a: Chesnaught|285\/380|[from] item: Leftovers
+|turn|8
+|
+|switch|p2a: Starmie|Starmie|236\/324
+|move|p1a: Chesnaught|Leech Seed|p2a: Starmie
+|-start|p2a: Starmie|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Starmie|216\/324|[from] sandstorm
+|-damage|p1a: Chesnaught|262\/380|[from] sandstorm
+|-heal|p2a: Starmie|236\/324|[from] item: Leftovers
+|-heal|p1a: Chesnaught|285\/380|[from] item: Leftovers
+|-damage|p2a: Starmie|196\/324|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|325\/380|[silent]
+|turn|9
+|
+|move|p2a: Starmie|Ice Beam|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-end|p1a: Chesnaught|Substitute
+|move|p1a: Chesnaught|Wood Hammer|p2a: Starmie
+|-supereffective|p2a: Starmie
+|-damage|p2a: Starmie|0 fnt
+|-damage|p1a: Chesnaught|260\/380|[from] recoil|[of] p2a: Starmie
+|faint|p2a: Starmie
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Chesnaught|237\/380|[from] sandstorm
+|-heal|p1a: Chesnaught|260\/380|[from] item: Leftovers
+|
+|switch|p2a: Honchkrow|Honchkrow, F|403\/403
+|turn|10
+|
+|switch|p1a: Diancie|Diancie|304\/304
+|-damage|p1a: Diancie|266\/304|[from] Stealth Rock
+|move|p2a: Honchkrow|Brave Bird|p1a: Diancie
+|-resisted|p1a: Diancie
+|-damage|p1a: Diancie|159\/304
+|-damage|p2a: Honchkrow|368\/403|[from] recoil|[of] p1a: Diancie
+|-damage|p2a: Honchkrow|328\/403|[from] item: Life Orb
+|
+|-weather|none
+|-heal|p1a: Diancie|178\/304|[from] item: Leftovers
+|turn|11
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|move|p1a: Diancie|Stealth Rock|p2a: Blissey
+|-sidestart|p2: michael 666|move: Stealth Rock
+|
+|-heal|p1a: Diancie|197\/304|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Blissey|Toxic|p1a: Diancie
+|-status|p1a: Diancie|tox
+|move|p1a: Diancie|Heal Bell|p1a: Diancie
+|-cureteam|p1a: Diancie|[from] move: HealBell
+|
+|-heal|p1a: Diancie|216\/304|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: Honchkrow|Honchkrow, M|341\/341
+|-damage|p1a: Honchkrow|256\/341|[from] Stealth Rock
+|move|p2a: Blissey|Seismic Toss|p1a: Honchkrow
+|-damage|p1a: Honchkrow|156\/341
+|
+|turn|14
+|
+|switch|p2a: Hippowdon|Hippowdon, M|420\/420
+|-damage|p2a: Hippowdon|394\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p1a: Honchkrow|Brave Bird|p2a: Hippowdon
+|-damage|p2a: Hippowdon|203\/420
+|-damage|p1a: Honchkrow|93\/341|[from] recoil|[of] p2a: Hippowdon
+|-damage|p1a: Honchkrow|59\/341|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Honchkrow|38\/341|[from] sandstorm
+|-heal|p2a: Hippowdon|229\/420|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Honchkrow|Brave Bird|p2a: Hippowdon
+|-damage|p2a: Hippowdon|37\/420
+|-damage|p1a: Honchkrow|0 fnt|[from] recoil|[of] p2a: Hippowdon
+|faint|p1a: Honchkrow
+|move|p2a: Hippowdon|Slack Off|p2a: Hippowdon
+|-heal|p2a: Hippowdon|247\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|273\/420|[from] item: Leftovers
+|
+|switch|p1a: Chesnaught|Chesnaught, F|260\/380
+|-damage|p1a: Chesnaught|237\/380|[from] Stealth Rock
+|turn|16
+|
+|move|p1a: Chesnaught|Substitute|p1a: Chesnaught
+|-start|p1a: Chesnaught|Substitute
+|-damage|p1a: Chesnaught|142\/380
+|move|p2a: Hippowdon|Earthquake|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-activate|p1a: Chesnaught|Substitute|[damage]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Chesnaught|119\/380|[from] sandstorm
+|-heal|p1a: Chesnaught|142\/380|[from] item: Leftovers
+|-heal|p2a: Hippowdon|299\/420|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Chesnaught|Leech Seed|p2a: Hippowdon
+|-start|p2a: Hippowdon|move: Leech Seed
+|move|p2a: Hippowdon|Earthquake|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-end|p1a: Chesnaught|Substitute
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Chesnaught|119\/380|[from] sandstorm
+|-heal|p1a: Chesnaught|142\/380|[from] item: Leftovers
+|-heal|p2a: Hippowdon|325\/420|[from] item: Leftovers
+|-damage|p2a: Hippowdon|273\/420|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|194\/380|[silent]
+|turn|18
+|
+|switch|p2a: Espeon|Espeon, M|271\/271
+|-damage|p2a: Espeon|238\/271|[from] Stealth Rock
+|move|p1a: Chesnaught|Substitute|p1a: Chesnaught
+|-start|p1a: Chesnaught|Substitute
+|-damage|p1a: Chesnaught|99\/380
+|
+|-weather|none
+|-heal|p2a: Espeon|254\/271|[from] item: Leftovers
+|-heal|p1a: Chesnaught|122\/380|[from] item: Leftovers
+|turn|19
+|
+|move|p2a: Espeon|Psyshock|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-end|p1a: Chesnaught|Substitute
+|move|p1a: Chesnaught|Wood Hammer|p2a: Espeon
+|-damage|p2a: Espeon|46\/271
+|-damage|p1a: Chesnaught|53\/380|[from] recoil|[of] p2a: Espeon
+|
+|-heal|p2a: Espeon|62\/271|[from] item: Leftovers
+|-heal|p1a: Chesnaught|76\/380|[from] item: Leftovers
+|turn|20
+|
+|switch|p1a: Slowking|Slowking, F|393\/393
+|-damage|p1a: Slowking|344\/393|[from] Stealth Rock
+|move|p2a: Espeon|Psyshock|p1a: Slowking
+|-resisted|p1a: Slowking
+|-damage|p1a: Slowking|261\/393
+|
+|-heal|p2a: Espeon|78\/271|[from] item: Leftovers
+|-heal|p1a: Slowking|285\/393|[from] item: Leftovers
+|turn|21
+|
+|move|p2a: Espeon|Shadow Ball|p1a: Slowking
+|-supereffective|p1a: Slowking
+|-damage|p1a: Slowking|111\/393
+|-unboost|p1a: Slowking|spd|1
+|move|p1a: Slowking|Trick Room|p1a: Slowking
+|-fieldstart|move: Trick Room|[of] p1a: Slowking
+|
+|-heal|p1a: Slowking|135\/393|[from] item: Leftovers
+|-heal|p2a: Espeon|94\/271|[from] item: Leftovers
+|turn|22
+|
+|move|p1a: Slowking|Scald|p2a: Espeon
+|-damage|p2a: Espeon|0 fnt
+|faint|p2a: Espeon
+|
+|-heal|p1a: Slowking|159\/393|[from] item: Leftovers
+|
+|switch|p2a: Honchkrow|Honchkrow, F|328\/403
+|-damage|p2a: Honchkrow|228\/403|[from] Stealth Rock
+|turn|23
+|
+|move|p1a: Slowking|Scald|p2a: Honchkrow
+|-damage|p2a: Honchkrow|20\/403
+|move|p2a: Honchkrow|Brave Bird|p1a: Slowking
+|-damage|p1a: Slowking|0 fnt
+|-damage|p2a: Honchkrow|0 fnt|[from] recoil|[of] p1a: Slowking
+|faint|p1a: Slowking
+|faint|p2a: Honchkrow
+|
+|
+|switch|p1a: Chesnaught|Chesnaught, F|76\/380
+|switch|p2a: Hippowdon|Hippowdon, M|273\/420
+|-damage|p2a: Hippowdon|247\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|-damage|p1a: Chesnaught|53\/380|[from] Stealth Rock
+|turn|24
+|
+|move|p2a: Hippowdon|Earthquake|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|0 fnt
+|faint|p1a: Chesnaught
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|273\/420|[from] item: Leftovers
+|
+|switch|p1a: Snorlax|Snorlax, M|255\/497
+|-damage|p1a: Snorlax|193\/497|[from] Stealth Rock
+|turn|25
+|
+|switch|p2a: Lucario|Lucario, F|281\/281
+|-damage|p2a: Lucario|273\/281|[from] Stealth Rock
+|move|p1a: Snorlax|Curse|p1a: Snorlax
+|-boost|p1a: Snorlax|atk|1
+|-boost|p1a: Snorlax|def|1
+|-unboost|p1a: Snorlax|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Snorlax|162\/497|[from] sandstorm
+|-heal|p1a: Snorlax|193\/497|[from] item: Leftovers
+|-fieldend|move: Trick Room
+|turn|26
+|
+|move|p2a: Lucario|Close Combat|p1a: Snorlax
+|-supereffective|p1a: Snorlax
+|-damage|p1a: Snorlax|0 fnt
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|-damage|p2a: Lucario|245\/281|[from] item: Life Orb
+|faint|p1a: Snorlax
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Diancie|Diancie|216\/304
+|-damage|p1a: Diancie|178\/304|[from] Stealth Rock
+|turn|27
+|
+|switch|p2a: Hippowdon|Hippowdon, M|273\/420
+|-damage|p2a: Hippowdon|247\/420|[from] Stealth Rock
+|move|p1a: Diancie|Moonblast|p2a: Hippowdon
+|-crit|p2a: Hippowdon
+|-damage|p2a: Hippowdon|0 fnt
+|faint|p2a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Diancie|197\/304|[from] item: Leftovers
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|-damage|p2a: Blissey|625\/714|[from] Stealth Rock
+|turn|28
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Diancie
+|-damage|p1a: Diancie|97\/304
+|move|p1a: Diancie|Moonblast|p2a: Blissey
+|-damage|p2a: Blissey|502\/714
+|-unboost|p2a: Blissey|spa|1
+|
+|-weather|none
+|-heal|p2a: Blissey|546\/714|[from] item: Leftovers
+|-heal|p1a: Diancie|116\/304|[from] item: Leftovers
+|turn|29
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Diancie
+|-damage|p1a: Diancie|16\/304
+|move|p1a: Diancie|Trick Room|p1a: Diancie
+|-fieldstart|move: Trick Room|[of] p1a: Diancie
+|
+|-heal|p1a: Diancie|35\/304|[from] item: Leftovers
+|-heal|p2a: Blissey|590\/714|[from] item: Leftovers
+|turn|30
+|
+|move|p1a: Diancie|Moonblast|p2a: Blissey
+|-damage|p2a: Blissey|460\/714
+|move|p2a: Blissey|Soft-Boiled|p2a: Blissey
+|-heal|p2a: Blissey|714\/714
+|
+|-heal|p1a: Diancie|54\/304|[from] item: Leftovers
+|turn|31
+|
+|move|p1a: Diancie|Moonblast|p2a: Blissey
+|-damage|p2a: Blissey|585\/714
+|move|p2a: Blissey|Toxic|p1a: Diancie|[miss]
+|-miss|p2a: Blissey|p1a: Diancie
+|
+|-heal|p1a: Diancie|73\/304|[from] item: Leftovers
+|-heal|p2a: Blissey|629\/714|[from] item: Leftovers
+|turn|32
+|
+|move|p1a: Diancie|Moonblast|p2a: Blissey
+|-damage|p2a: Blissey|500\/714
+|move|p2a: Blissey|Toxic|p1a: Diancie|[miss]
+|-miss|p2a: Blissey|p1a: Diancie
+|
+|-heal|p1a: Diancie|92\/304|[from] item: Leftovers
+|-heal|p2a: Blissey|544\/714|[from] item: Leftovers
+|turn|33
+|
+|move|p1a: Diancie|Moonblast|p2a: Blissey
+|-damage|p2a: Blissey|418\/714
+|move|p2a: Blissey|Seismic Toss|p1a: Diancie
+|-damage|p1a: Diancie|0 fnt
+|faint|p1a: Diancie
+|
+|-heal|p2a: Blissey|462\/714|[from] item: Leftovers
+|-fieldend|move: Trick Room
+|
+|switch|p1a: Camerupt|Camerupt, F|343\/343
+|-damage|p1a: Camerupt|301\/343|[from] Stealth Rock
+|turn|34
+|
+|detailschange|p1a: Camerupt|Camerupt-Mega, F
+|-mega|p1a: Camerupt|Camerupt|Cameruptite
+|move|p2a: Blissey|Toxic|p1a: Camerupt|[miss]
+|-miss|p2a: Blissey|p1a: Camerupt
+|move|p1a: Camerupt|Growth|p1a: Camerupt
+|-boost|p1a: Camerupt|atk|1
+|-boost|p1a: Camerupt|spa|1
+|
+|-heal|p2a: Blissey|506\/714|[from] item: Leftovers
+|turn|35
+|
+|move|p2a: Blissey|Toxic|p1a: Camerupt
+|-status|p1a: Camerupt|tox
+|move|p1a: Camerupt|Fire Blast|p2a: Blissey
+|-damage|p2a: Blissey|182\/714
+|
+|-heal|p2a: Blissey|226\/714|[from] item: Leftovers
+|-damage|p1a: Camerupt|280\/343 tox|[from] psn
+|turn|36
+|
+|move|p2a: Blissey|Soft-Boiled|p2a: Blissey
+|-heal|p2a: Blissey|583\/714
+|move|p1a: Camerupt|Growth|p1a: Camerupt
+|-boost|p1a: Camerupt|atk|1
+|-boost|p1a: Camerupt|spa|1
+|
+|-heal|p2a: Blissey|627\/714|[from] item: Leftovers
+|-damage|p1a: Camerupt|238\/343 tox|[from] psn
+|turn|37
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Camerupt
+|-damage|p1a: Camerupt|138\/343 tox
+|move|p1a: Camerupt|Earth Power|p2a: Blissey
+|-damage|p2a: Blissey|240\/714
+|
+|-heal|p2a: Blissey|284\/714|[from] item: Leftovers
+|-damage|p1a: Camerupt|75\/343 tox|[from] psn
+|turn|38
+|-message|Prof.Celsius forfeited.
+|leave|Prof.Celsius
+|c|âmichael 666|gg
+|
+|win|michael 666
+|raw|Ladder updating...
+|player|p1
+|raw|Prof.Celsius's rating: 1395 &rarr; <strong>1367<\/strong><br \/>(-28 for losing)
+|raw|michael 666's rating: 1251 &rarr; <strong>1286<\/strong><br \/>(+35 for winning)

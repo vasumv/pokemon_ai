@@ -1,0 +1,313 @@
+|join|NVTest
+|join|juancar_eng
+|player|p1|NVTest|100
+|player|p2|juancar_eng|290
+|gametype|singles
+|gen|6
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Latias, F
+|poke|p1|Absol, F
+|poke|p1|Golurk
+|poke|p1|Empoleon, F
+|poke|p1|Crobat, F
+|poke|p1|Rotom-Heat
+|poke|p2|Slowbro, F
+|poke|p2|Chansey, F
+|poke|p2|Zapdos
+|poke|p2|Tangrowth, M
+|poke|p2|Tornadus-Therian, M
+|poke|p2|Darmanitan, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Absol|Absol, F|271\/271
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M|362\/362
+|-ability|p1a: Absol|Pressure
+|turn|1
+|
+|-formechange|p1a: Absol|Absol-Mega
+|message|Absol has Mega Evolved into Mega Absol!
+|move|p1a: Absol|Protect|p1a: Absol
+|-singleturn|p1a: Absol|Protect
+|move|p2a: Tornadus-Therian|U-turn|p1a: Absol
+|-activate|p1a: Absol|Protect
+|
+|turn|2
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|304\/304
+|move|p2a: Tornadus-Therian|Superpower|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|184\/304
+|-unboost|p2a: Tornadus-Therian|atk|1
+|-unboost|p2a: Tornadus-Therian|def|1
+|-damage|p2a: Tornadus-Therian|326\/362|[from] item: Life Orb
+|
+|-heal|p1a: Rotom-Heat|203\/304|[from] item: Leftovers
+|turn|3
+|
+|move|p2a: Tornadus-Therian|Knock Off|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|143\/304
+|-enditem|p1a: Rotom-Heat|Leftovers|[from] move: Knock Off|[of] p2a: Tornadus-Therian
+|-damage|p2a: Tornadus-Therian|290\/362|[from] item: Life Orb
+|move|p1a: Rotom-Heat|Volt Switch|p2a: Tornadus-Therian
+|-supereffective|p2a: Tornadus-Therian
+|-damage|p2a: Tornadus-Therian|108\/362
+|
+|switch|p1a: Crobat|Crobat, F|311\/311
+|
+|turn|4
+|
+|switch|p2a: Slowbro|Slowbro, F|394\/394
+|move|p1a: Crobat|Cross Poison|p2a: Slowbro
+|-crit|p2a: Slowbro
+|-damage|p2a: Slowbro|247\/394
+|
+|-heal|p2a: Slowbro|271\/394|[from] item: Leftovers
+|turn|5
+|
+|switch|p1a: Empoleon|Empoleon, F|359\/359
+|move|p2a: Slowbro|Scald|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|330\/359
+|-status|p1a: Empoleon|brn
+|
+|-heal|p2a: Slowbro|295\/394|[from] item: Leftovers
+|-damage|p1a: Empoleon|286\/359 brn|[from] brn
+|turn|6
+|
+|move|p1a: Empoleon|Knock Off|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|249\/394
+|-enditem|p2a: Slowbro|Leftovers|[from] move: Knock Off|[of] p1a: Empoleon
+|move|p2a: Slowbro|Calm Mind|p2a: Slowbro
+|-boost|p2a: Slowbro|spa|1
+|-boost|p2a: Slowbro|spd|1
+|
+|-damage|p1a: Empoleon|242\/359 brn|[from] brn
+|turn|7
+|
+|move|p1a: Empoleon|Grass Knot|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|97\/394
+|move|p2a: Slowbro|Slack Off|p2a: Slowbro
+|-heal|p2a: Slowbro|294\/394
+|
+|-damage|p1a: Empoleon|198\/359 brn|[from] brn
+|turn|8
+|
+|move|p1a: Empoleon|Grass Knot|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|136\/394
+|move|p2a: Slowbro|Calm Mind|p2a: Slowbro
+|-boost|p2a: Slowbro|spa|1
+|-boost|p2a: Slowbro|spd|1
+|
+|-damage|p1a: Empoleon|154\/359 brn|[from] brn
+|turn|9
+|
+|move|p1a: Empoleon|Grass Knot|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|14\/394
+|move|p2a: Slowbro|Slack Off|p2a: Slowbro
+|-heal|p2a: Slowbro|211\/394
+|
+|-damage|p1a: Empoleon|110\/359 brn|[from] brn
+|turn|10
+|
+|switch|p1a: Latias|Latias, F|364\/364
+|move|p2a: Slowbro|Slack Off|p2a: Slowbro
+|-heal|p2a: Slowbro|394\/394
+|
+|turn|11
+|
+|move|p1a: Latias|Wish|p1a: Latias
+|move|p2a: Slowbro|Scald|p1a: Latias
+|-resisted|p1a: Latias
+|-damage|p1a: Latias|290\/364
+|-status|p1a: Latias|brn
+|
+|-heal|p1a: Latias|312\/364 brn|[from] item: Leftovers
+|-damage|p1a: Latias|267\/364 brn|[from] brn
+|turn|12
+|
+|switch|p1a: Empoleon|Empoleon, F|110\/359 brn
+|move|p2a: Slowbro|Calm Mind|p2a: Slowbro
+|-boost|p2a: Slowbro|spa|1
+|-boost|p2a: Slowbro|spd|1
+|
+|-heal|p1a: Empoleon|292\/359 brn|[from] move: Wish|[wisher] Latias
+|-damage|p1a: Empoleon|248\/359 brn|[from] brn
+|turn|13
+|
+|switch|p1a: Golurk|Golurk|319\/319
+|move|p2a: Slowbro|Scald|p1a: Golurk
+|-supereffective|p1a: Golurk
+|-damage|p1a: Golurk|0 fnt
+|faint|p1a: Golurk
+|
+|
+|switch|p1a: Crobat|Crobat, F|311\/311
+|turn|14
+|
+|move|p1a: Crobat|U-turn|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|256\/394
+|
+|switch|p1a: Empoleon|Empoleon, F|248\/359 brn
+|move|p2a: Slowbro|Psyshock|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|113\/359 brn
+|
+|-damage|p1a: Empoleon|69\/359 brn|[from] brn
+|turn|15
+|
+|move|p1a: Empoleon|Grass Knot|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|166\/394
+|move|p2a: Slowbro|Slack Off|p2a: Slowbro
+|-heal|p2a: Slowbro|363\/394
+|
+|-damage|p1a: Empoleon|25\/359 brn|[from] brn
+|turn|16
+|
+|switch|p1a: Crobat|Crobat, F|311\/311
+|move|p2a: Slowbro|Slack Off|p2a: Slowbro
+|-heal|p2a: Slowbro|394\/394
+|
+|turn|17
+|
+|move|p1a: Crobat|U-turn|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|262\/394
+|
+|switch|p1a: Empoleon|Empoleon, F|25\/359 brn
+|move|p2a: Slowbro|Scald|p1a: Empoleon
+|-crit|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|0 fnt
+|faint|p1a: Empoleon
+|
+|
+|switch|p1a: Absol|Absol, F|271\/271
+|-formechange|p1a: Absol|Absol-Mega
+|turn|18
+|
+|move|p1a: Absol|Knock Off|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|92\/394
+|move|p2a: Slowbro|Scald|p1a: Absol
+|-damage|p1a: Absol|0 fnt
+|faint|p1a: Absol
+|
+|
+|switch|p1a: Crobat|Crobat, F|311\/311
+|turn|19
+|
+|switch|p2a: Zapdos|Zapdos|384\/384
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Crobat|Brave Bird|p2a: Zapdos
+|-resisted|p2a: Zapdos
+|-damage|p2a: Zapdos|290\/384
+|-damage|p1a: Crobat|280\/311|[from] recoil|[of] p2a: Zapdos
+|-damage|p1a: Crobat|229\/311|[from] item: Rocky Helmet|[of] p2a: Zapdos
+|
+|turn|20
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|143\/304
+|move|p2a: Zapdos|Volt Switch|p1a: Rotom-Heat
+|-resisted|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|106\/304
+|
+|switch|p2a: Darmanitan|Darmanitan, F|351\/351
+|
+|turn|21
+|
+|switch|p1a: Latias|Latias, F|267\/364 brn
+|move|p2a: Darmanitan|Flare Blitz|p1a: Latias
+|-resisted|p1a: Latias
+|-damage|p1a: Latias|129\/364 brn
+|-damage|p2a: Darmanitan|305\/351|[from] recoil|[of] p1a: Latias
+|
+|-heal|p1a: Latias|151\/364 brn|[from] item: Leftovers
+|-damage|p1a: Latias|106\/364 brn|[from] brn
+|turn|22
+|
+|move|p2a: Darmanitan|Flare Blitz|p1a: Latias
+|-resisted|p1a: Latias
+|-damage|p1a: Latias|0 fnt
+|-damage|p2a: Darmanitan|270\/351|[from] recoil|[of] p1a: Latias
+|faint|p1a: Latias
+|
+|
+|switch|p1a: Crobat|Crobat, F|229\/311
+|turn|23
+|
+|switch|p2a: Zapdos|Zapdos|290\/384
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Crobat|Brave Bird|p2a: Zapdos
+|-resisted|p2a: Zapdos
+|-damage|p2a: Zapdos|185\/384
+|-damage|p1a: Crobat|194\/311|[from] recoil|[of] p2a: Zapdos
+|-damage|p1a: Crobat|143\/311|[from] item: Rocky Helmet|[of] p2a: Zapdos
+|
+|turn|24
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|106\/304
+|move|p2a: Zapdos|Roost|p2a: Zapdos
+|-heal|p2a: Zapdos|377\/384
+|
+|turn|25
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|move|p1a: Rotom-Heat|Will-O-Wisp|p2a: Chansey
+|-status|p2a: Chansey|brn
+|
+|-damage|p2a: Chansey|616\/704 brn|[from] brn
+|turn|26
+|
+|move|p1a: Rotom-Heat|Volt Switch|p2a: Chansey
+|-damage|p2a: Chansey|556\/704 brn
+|
+|switch|p1a: Crobat|Crobat, F|143\/311
+|move|p2a: Chansey|Stealth Rock|p1a: Crobat
+|-sidestart|p1: NVTest|move: Stealth Rock
+|
+|-damage|p2a: Chansey|468\/704 brn|[from] brn
+|turn|27
+|
+|move|p1a: Crobat|Cross Poison|p2a: Chansey
+|-damage|p2a: Chansey|284\/704 brn
+|move|p2a: Chansey|Counter|p1a: Crobat
+|-damage|p1a: Crobat|0 fnt
+|faint|p1a: Crobat
+|
+|-damage|p2a: Chansey|196\/704 brn|[from] brn
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|106\/304
+|-damage|p1a: Rotom-Heat|30\/304|[from] Stealth Rock
+|turn|28
+|chat|juancar_eng|6-0
+|
+|move|p1a: Rotom-Heat|Volt Switch|p2a: Chansey
+|-damage|p2a: Chansey|136\/704 brn
+|move|p2a: Chansey|Seismic Toss|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|0 fnt
+|faint|p1a: Rotom-Heat
+|
+|win|juancar_eng
+|raw|Ladder updating...
+|raw|NVTest's rating: 1453 &rarr; <strong>1435<\/strong><br \/>(-18 for losing)
+|raw|juancar_eng's rating: 1488 &rarr; <strong>1506<\/strong><br \/>(+18 for winning)
+|chat|juancar_eng|gg
+|chat|NVTest|yeah 1st loss'
+|chat|NVTest|gg
+|leave|NVTest
+|player|p1

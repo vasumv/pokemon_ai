@@ -1,0 +1,495 @@
+|join|xMarth
+|join|dynamic test
+|player|p1|xMarth|153
+|player|p2|dynamic test|5
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Togekiss, M, shiny
+|poke|p1|Alakazam, F
+|poke|p1|Krookodile, M
+|poke|p1|Empoleon, F
+|poke|p1|Arcanine, F
+|poke|p1|Whimsicott, F
+|poke|p2|Hydreigon, M
+|poke|p2|Jirachi, shiny
+|poke|p2|Vaporeon, M
+|poke|p2|Gligar, F
+|poke|p2|Granbull, F
+|poke|p2|Aerodactyl, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|c|âdynamic test|o
+|c|âdynamic test|hey
+|c|âdynamic test|gl hf
+|c|âxMarth|hi
+|c|âxMarth|u2
+|
+|start
+|switch|p1a: Krookodile|Krookodile, M|331\/331
+|switch|p2a: Gligar|Gligar, F|334\/334
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Gligar
+|-fail|p2a: Gligar|unboost|Attack|[from] ability: Hyper Cutter|[of] p2a: Gligar
+|turn|1
+|
+|switch|p2a: Granbull|Granbull, F|384\/384
+|-ability|p2a: Granbull|Intimidate|[of] p1a: Krookodile
+|-unboost|p1a: Krookodile|atk|1
+|move|p1a: Krookodile|Knock Off|p2a: Granbull
+|-crit|p2a: Granbull
+|-resisted|p2a: Granbull
+|-damage|p2a: Granbull|228\/384
+|-enditem|p2a: Granbull|Leftovers|[from] move: Knock Off|[of] p1a: Krookodile
+|
+|turn|2
+|
+|switch|p1a: Arcanine|Arcanine, F|383\/383
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Granbull
+|-unboost|p2a: Granbull|atk|1
+|switch|p2a: Gligar|Gligar, F|334\/334
+|
+|turn|3
+|
+|move|p1a: Arcanine|Will-O-Wisp|p2a: Gligar
+|-status|p2a: Gligar|brn
+|move|p2a: Gligar|U-turn|p1a: Arcanine
+|-crit|p1a: Arcanine
+|-resisted|p1a: Arcanine
+|-damage|p1a: Arcanine|367\/383
+|-damage|p2a: Gligar|279\/334 brn|[from] item: Rocky Helmet|[of] p1a: Arcanine
+|
+|switch|p2a: Aerodactyl|Aerodactyl, M|327\/327
+|
+|turn|4
+|
+|switch|p1a: Krookodile|Krookodile, M|331\/331
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Aerodactyl
+|-unboost|p2a: Aerodactyl|atk|1
+|detailschange|p2a: Aerodactyl|Aerodactyl-Mega, M
+|message|Aerodactyl has Mega Evolved into Mega Aerodactyl!
+|move|p2a: Aerodactyl|Stealth Rock|p1a: Krookodile
+|-sidestart|p1: xMarth|move: Stealth Rock
+|
+|turn|5
+|
+|switch|p2a: Hydreigon|Hydreigon, M|325\/325
+|switch|p1a: Empoleon|Empoleon, F|372\/372
+|-damage|p1a: Empoleon|349\/372|[from] Stealth Rock
+|
+|-heal|p1a: Empoleon|372\/372|[from] item: Leftovers
+|turn|6
+|
+|move|p2a: Hydreigon|Superpower|p1a: Empoleon
+|-supereffective|p1a: Empoleon
+|-damage|p1a: Empoleon|109\/372
+|-unboost|p2a: Hydreigon|atk|1
+|-unboost|p2a: Hydreigon|def|1
+|-damage|p2a: Hydreigon|293\/325|[from] item: Life Orb
+|move|p1a: Empoleon|Defog|p2a: Hydreigon
+|-unboost|p2a: Hydreigon|evasion|1
+|-sideend|p1: xMarth|Stealth Rock|[from] move: Defog|[of] p1a: Empoleon
+|
+|-heal|p1a: Empoleon|132\/372|[from] item: Leftovers
+|turn|7
+|c|âxMarth|ow
+|
+|switch|p2a: Aerodactyl|Aerodactyl-Mega, M|327\/327
+|switch|p1a: Togekiss|Togekiss, M, shiny|373\/373
+|
+|turn|8
+|join|r0ady
+|
+|switch|p1a: Empoleon|Empoleon, F|132\/372
+|move|p2a: Aerodactyl|Stone Edge|p1a: Empoleon
+|-crit|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|0 fnt
+|faint|p1a: Empoleon
+|
+|
+|switch|p1a: Krookodile|Krookodile, M|331\/331
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Aerodactyl
+|-unboost|p2a: Aerodactyl|atk|1
+|turn|9
+|
+|switch|p2a: Granbull|Granbull, F|228\/384
+|-ability|p2a: Granbull|Intimidate|[of] p1a: Krookodile
+|-unboost|p1a: Krookodile|atk|1
+|move|p1a: Krookodile|Stone Edge|p2a: Granbull
+|-damage|p2a: Granbull|135\/384
+|
+|turn|10
+|
+|switch|p1a: Togekiss|Togekiss, M, shiny|373\/373
+|move|p2a: Granbull|Rest|p2a: Granbull
+|-status|p2a: Granbull|slp
+|-heal|p2a: Granbull|384\/384 slp|[silent]
+|-status|p2a: Granbull|slp|[from] move: Rest
+|
+|turn|11
+|
+|switch|p2a: Aerodactyl|Aerodactyl-Mega, M|327\/327
+|move|p1a: Togekiss|Nasty Plot|p1a: Togekiss
+|-boost|p1a: Togekiss|spa|2
+|
+|turn|12
+|
+|switch|p1a: Krookodile|Krookodile, M|331\/331
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Aerodactyl
+|-unboost|p2a: Aerodactyl|atk|1
+|move|p2a: Aerodactyl|Stealth Rock|p1a: Krookodile
+|-sidestart|p1: xMarth|move: Stealth Rock
+|
+|turn|13
+|
+|move|p1a: Krookodile|Pursuit|p2a: Aerodactyl|[from]Pursuit
+|-damage|p2a: Aerodactyl|119\/327
+|switch|p2a: Hydreigon|Hydreigon, M|293\/325
+|
+|turn|14
+|c| r0ady|saw twi good players playing each other figured id watch and try to learn <3
+|
+|switch|p2a: Jirachi|Jirachi, shiny|341\/341
+|switch|p1a: Whimsicott|Whimsicott, F|261\/261
+|-damage|p1a: Whimsicott|229\/261|[from] Stealth Rock
+|
+|-heal|p1a: Whimsicott|245\/261|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Whimsicott|Moonblast|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|281\/341
+|-unboost|p2a: Jirachi|spa|1
+|move|p2a: Jirachi|Psyshock|p1a: Whimsicott
+|-damage|p1a: Whimsicott|149\/261
+|
+|-heal|p1a: Whimsicott|165\/261|[from] item: Leftovers
+|-heal|p2a: Jirachi|302\/341|[from] item: Leftovers
+|turn|16
+|
+|move|p1a: Whimsicott|U-turn|p2a: Jirachi
+|-damage|p2a: Jirachi|271\/341
+|
+|switch|p1a: Arcanine|Arcanine, F|367\/383
+|-damage|p1a: Arcanine|272\/383|[from] Stealth Rock
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Jirachi
+|-unboost|p2a: Jirachi|atk|1
+|move|p2a: Jirachi|Moonblast|p1a: Arcanine
+|-resisted|p1a: Arcanine
+|-damage|p1a: Arcanine|233\/383
+|
+|-heal|p2a: Jirachi|292\/341|[from] item: Leftovers
+|turn|17
+|
+|switch|p2a: Vaporeon|Vaporeon, M|464\/464
+|move|p1a: Arcanine|Morning Sun|p1a: Arcanine
+|-heal|p1a: Arcanine|383\/383
+|
+|turn|18
+|
+|switch|p1a: Whimsicott|Whimsicott, F|165\/261
+|-damage|p1a: Whimsicott|133\/261|[from] Stealth Rock
+|move|p2a: Vaporeon|Baton Pass|p2a: Vaporeon
+|
+|switch|p2a: Jirachi|Jirachi, shiny|292\/341
+|
+|-heal|p1a: Whimsicott|149\/261|[from] item: Leftovers
+|-heal|p2a: Jirachi|313\/341|[from] item: Leftovers
+|turn|19
+|
+|move|p1a: Whimsicott|U-turn|p2a: Jirachi
+|-damage|p2a: Jirachi|282\/341
+|
+|switch|p1a: Togekiss|Togekiss, M, shiny|373\/373
+|-damage|p1a: Togekiss|280\/373|[from] Stealth Rock
+|move|p2a: Jirachi|Psyshock|p1a: Togekiss
+|-damage|p1a: Togekiss|183\/373
+|
+|-heal|p2a: Jirachi|303\/341|[from] item: Leftovers
+|-heal|p1a: Togekiss|206\/373|[from] item: Leftovers
+|turn|20
+|
+|move|p2a: Jirachi|Calm Mind|p2a: Jirachi
+|-boost|p2a: Jirachi|spa|1
+|-boost|p2a: Jirachi|spd|1
+|move|p1a: Togekiss|Roost|p1a: Togekiss
+|-heal|p1a: Togekiss|373\/373
+|
+|-heal|p2a: Jirachi|324\/341|[from] item: Leftovers
+|turn|21
+|
+|move|p2a: Jirachi|Psyshock|p1a: Togekiss
+|-damage|p1a: Togekiss|219\/373
+|move|p1a: Togekiss|Baton Pass|p1a: Togekiss
+|
+|switch|p1a: Arcanine|Arcanine, F|383\/383
+|-damage|p1a: Arcanine|288\/383|[from] Stealth Rock
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Jirachi
+|-unboost|p2a: Jirachi|atk|1
+|
+|-heal|p2a: Jirachi|341\/341|[from] item: Leftovers
+|turn|22
+|
+|switch|p2a: Vaporeon|Vaporeon, M|464\/464
+|move|p1a: Arcanine|Will-O-Wisp|p2a: Vaporeon
+|-status|p2a: Vaporeon|brn
+|
+|-damage|p2a: Vaporeon|406\/464 brn|[from] brn
+|turn|23
+|
+|switch|p1a: Whimsicott|Whimsicott, F|149\/261
+|-damage|p1a: Whimsicott|117\/261|[from] Stealth Rock
+|move|p2a: Vaporeon|Baton Pass|p2a: Vaporeon
+|
+|switch|p2a: Jirachi|Jirachi, shiny|341\/341
+|
+|-heal|p1a: Whimsicott|133\/261|[from] item: Leftovers
+|turn|24
+|
+|move|p1a: Whimsicott|Giga Drain|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|290\/341
+|-heal|p1a: Whimsicott|159\/261|[from] drain|[of] p2a: Jirachi
+|move|p2a: Jirachi|Psyshock|p1a: Whimsicott
+|-damage|p1a: Whimsicott|17\/261
+|
+|-heal|p1a: Whimsicott|33\/261|[from] item: Leftovers
+|-heal|p2a: Jirachi|311\/341|[from] item: Leftovers
+|turn|25
+|
+|move|p1a: Whimsicott|Encore|p2a: Jirachi
+|-start|p2a: Jirachi|Encore
+|move|p2a: Jirachi|Psyshock|p1a: Whimsicott
+|-damage|p1a: Whimsicott|0 fnt
+|faint|p1a: Whimsicott
+|
+|-heal|p2a: Jirachi|332\/341|[from] item: Leftovers
+|c|âdynamic test|o
+|
+|switch|p1a: Krookodile|Krookodile, M|331\/331
+|-damage|p1a: Krookodile|311\/331|[from] Stealth Rock
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Jirachi
+|-unboost|p2a: Jirachi|atk|1
+|turn|26
+|c|âdynamic test|not
+|c|âdynamic test|bad
+|
+|move|p1a: Krookodile|Pursuit|p2a: Jirachi|[from]Pursuit
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|faint|p2a: Jirachi
+|
+|
+|switch|p2a: Aerodactyl|Aerodactyl-Mega, M|119\/327
+|turn|27
+|
+|move|p2a: Aerodactyl|Roost|p2a: Aerodactyl
+|-heal|p2a: Aerodactyl|283\/327
+|move|p1a: Krookodile|Pursuit|p2a: Aerodactyl
+|-damage|p2a: Aerodactyl|168\/327
+|
+|turn|28
+|
+|switch|p1a: Arcanine|Arcanine, F|288\/383
+|-damage|p1a: Arcanine|193\/383|[from] Stealth Rock
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Aerodactyl
+|-unboost|p2a: Aerodactyl|atk|1
+|move|p2a: Aerodactyl|Roost|p2a: Aerodactyl
+|-heal|p2a: Aerodactyl|327\/327
+|
+|turn|29
+|
+|switch|p2a: Vaporeon|Vaporeon, M|406\/464 brn
+|switch|p1a: Krookodile|Krookodile, M|311\/331
+|-damage|p1a: Krookodile|291\/331|[from] Stealth Rock
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Vaporeon
+|-unboost|p2a: Vaporeon|atk|1
+|
+|-heal|p2a: Vaporeon|435\/464 brn|[from] item: Leftovers
+|-damage|p2a: Vaporeon|377\/464 brn|[from] brn
+|turn|30
+|
+|move|p1a: Krookodile|Earthquake|p2a: Vaporeon
+|-damage|p2a: Vaporeon|140\/464 brn
+|move|p2a: Vaporeon|Scald|p1a: Krookodile
+|-supereffective|p1a: Krookodile
+|-damage|p1a: Krookodile|9\/331
+|-status|p1a: Krookodile|brn
+|
+|-heal|p2a: Vaporeon|169\/464 brn|[from] item: Leftovers
+|-damage|p1a: Krookodile|0 fnt|[from] brn
+|-damage|p2a: Vaporeon|111\/464 brn|[from] brn
+|faint|p1a: Krookodile
+|c|âdynamic test|pullin thru
+|
+|switch|p1a: Alakazam|Alakazam, F|251\/251
+|turn|31
+|c|âdynamic test|w\/ burns
+|
+|detailschange|p1a: Alakazam|Alakazam-Mega, F
+|message|Alakazam has Mega Evolved into Mega Alakazam!
+|-ability|p1a: Alakazam|Water Absorb|[from] ability: Trace|[of] p2a: Vaporeon
+|move|p1a: Alakazam|Psyshock|p2a: Vaporeon
+|-damage|p2a: Vaporeon|0 fnt
+|faint|p2a: Vaporeon
+|
+|
+|switch|p2a: Aerodactyl|Aerodactyl-Mega, M|327\/327
+|turn|32
+|
+|switch|p1a: Arcanine|Arcanine, F|193\/383
+|-damage|p1a: Arcanine|98\/383|[from] Stealth Rock
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Aerodactyl
+|-unboost|p2a: Aerodactyl|atk|1
+|move|p2a: Aerodactyl|Crunch|p1a: Arcanine
+|-damage|p1a: Arcanine|13\/383
+|-damage|p2a: Aerodactyl|273\/327|[from] item: Rocky Helmet|[of] p1a: Arcanine
+|
+|turn|33
+|
+|move|p1a: Arcanine|Extreme Speed|p2a: Aerodactyl
+|-resisted|p2a: Aerodactyl
+|-damage|p2a: Aerodactyl|234\/327
+|move|p2a: Aerodactyl|Crunch|p1a: Arcanine
+|-damage|p1a: Arcanine|0 fnt
+|-damage|p2a: Aerodactyl|180\/327|[from] item: Rocky Helmet|[of] p1a: Arcanine
+|faint|p1a: Arcanine
+|
+|
+|switch|p1a: Alakazam|Alakazam-Mega, F|251\/251
+|-damage|p1a: Alakazam|220\/251|[from] Stealth Rock
+|-ability|p1a: Alakazam|Tough Claws|[from] ability: Trace|[of] p2a: Aerodactyl
+|turn|34
+|join|J-Schnitzel
+|
+|switch|p2a: Hydreigon|Hydreigon, M|293\/325
+|move|p1a: Alakazam|Psyshock|p2a: Hydreigon
+|-immune|p2a: Hydreigon|[msg]
+|
+|turn|35
+|
+|move|p1a: Alakazam|Dazzling Gleam|p2a: Hydreigon
+|-supereffective|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|faint|p2a: Hydreigon
+|
+|leave|r0ady
+|
+|switch|p2a: Gligar|Gligar, F|279\/334 brn
+|turn|36
+|
+|move|p1a: Alakazam|Protect|p1a: Alakazam
+|-singleturn|p1a: Alakazam|Protect
+|move|p2a: Gligar|Earthquake|p1a: Alakazam
+|-activate|p1a: Alakazam|Protect
+|
+|-damage|p2a: Gligar|238\/334 brn|[from] brn
+|turn|37
+|
+|move|p1a: Alakazam|Psyshock|p2a: Gligar
+|-damage|p2a: Gligar|126\/334 brn
+|move|p2a: Gligar|Roost|p2a: Gligar
+|-heal|p2a: Gligar|293\/334 brn
+|
+|-damage|p2a: Gligar|252\/334 brn|[from] brn
+|turn|38
+|
+|move|p1a: Alakazam|Shadow Ball|p2a: Gligar
+|-damage|p2a: Gligar|182\/334 brn
+|-unboost|p2a: Gligar|spd|1
+|move|p2a: Gligar|Earthquake|p1a: Alakazam
+|-damage|p1a: Alakazam|150\/251
+|
+|-damage|p2a: Gligar|141\/334 brn|[from] brn
+|turn|39
+|
+|move|p1a: Alakazam|Shadow Ball|p2a: Gligar
+|-damage|p2a: Gligar|19\/334 brn
+|move|p2a: Gligar|U-turn|p1a: Alakazam
+|-supereffective|p1a: Alakazam
+|-damage|p1a: Alakazam|84\/251
+|
+|switch|p2a: Granbull|Granbull, F|384\/384 slp
+|-ability|p2a: Granbull|Intimidate|[of] p1a: Alakazam
+|-unboost|p1a: Alakazam|atk|1
+|
+|turn|40
+|
+|switch|p1a: Togekiss|Togekiss, M, shiny|219\/373
+|-damage|p1a: Togekiss|126\/373|[from] Stealth Rock
+|cant|p2a: Granbull|slp
+|move|p2a: Granbull|Sleep Talk|p2a: Granbull
+|move|p2a: Granbull|Heal Bell|p2a: Granbull|[from]Sleep Talk
+|-cureteam|p2a: Granbull|[from] move: HealBell
+|
+|-heal|p1a: Togekiss|149\/373|[from] item: Leftovers
+|turn|41
+|
+|move|p1a: Togekiss|Roost|p1a: Togekiss
+|-heal|p1a: Togekiss|336\/373
+|move|p2a: Granbull|Play Rough|p1a: Togekiss
+|-damage|p1a: Togekiss|237\/373
+|
+|-heal|p1a: Togekiss|260\/373|[from] item: Leftovers
+|turn|42
+|
+|switch|p2a: Gligar|Gligar, F|19\/334
+|move|p1a: Togekiss|Air Slash|p2a: Gligar
+|-damage|p2a: Gligar|0 fnt
+|faint|p2a: Gligar
+|
+|-heal|p1a: Togekiss|283\/373|[from] item: Leftovers
+|
+|switch|p2a: Aerodactyl|Aerodactyl-Mega, M|180\/327
+|turn|43
+|c|âdynamic test|hit plz
+|
+|move|p2a: Aerodactyl|Stone Edge|p1a: Togekiss
+|-supereffective|p1a: Togekiss
+|-damage|p1a: Togekiss|0 fnt
+|faint|p1a: Togekiss
+|
+|c|âdynamic test|ty
+|
+|switch|p1a: Alakazam|Alakazam-Mega, F|84\/251
+|-damage|p1a: Alakazam|53\/251|[from] Stealth Rock
+|-ability|p1a: Alakazam|Tough Claws|[from] ability: Trace|[of] p2a: Aerodactyl
+|turn|44
+|
+|move|p1a: Alakazam|Psyshock|p2a: Aerodactyl
+|-damage|p2a: Aerodactyl|0 fnt
+|faint|p2a: Aerodactyl
+|
+|
+|switch|p2a: Granbull|Granbull, F|384\/384
+|-ability|p2a: Granbull|Intimidate|[of] p1a: Alakazam
+|-unboost|p1a: Alakazam|atk|1
+|turn|45
+|c|âxMarth|dodge here tho
+|
+|move|p1a: Alakazam|Shadow Ball|p2a: Granbull
+|-damage|p2a: Granbull|195\/384
+|move|p2a: Granbull|Play Rough|p1a: Alakazam
+|-damage|p1a: Alakazam|0 fnt
+|faint|p1a: Alakazam
+|
+|win|dynamic test
+|raw|Ladder updating...
+|raw|xMarth's rating: 1764 &rarr; <strong>1735<\/strong><br \/>(-29 for losing)
+|raw|dynamic test's rating: 1608 &rarr; <strong>1637<\/strong><br \/>(+29 for winning)
+|c|âdynamic test|gg
+|c|âxMarth|gg
+|c|âdynamic test|really gg
+|leave|J-Schnitzel
+|c|âxMarth|timid almost had u
+|c|âdynamic test|kek

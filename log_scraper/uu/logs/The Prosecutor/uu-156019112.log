@@ -1,0 +1,937 @@
+|join|CykoMore
+|join|The Prosecutor
+|player|p1|CykoMore|144
+|player|p2|The Prosecutor|110
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Rhydon, M
+|poke|p1|Alomomola, F
+|poke|p1|Blissey, F
+|poke|p1|Mew
+|poke|p1|Amoonguss, F
+|poke|p1|Forretress, M
+|poke|p2|Cloyster, F
+|poke|p2|Trevenant, M
+|poke|p2|Krookodile, F
+|poke|p2|Lucario, F
+|poke|p2|Ampharos, M
+|poke|p2|Crobat, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|chat|The Prosecutor|glhf
+|chat|The Prosecutor|stall team?
+|
+|start
+|switch|p1a: Mew|Mew|404\/404
+|switch|p2a: Krookodile|Krookodile, F|394\/394
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Mew
+|-unboost|p1a: Mew|atk|1
+|turn|1
+|
+|move|p1a: Mew|Will-O-Wisp|p2a: Krookodile
+|-status|p2a: Krookodile|brn
+|move|p2a: Krookodile|Taunt|p1a: Mew
+|-start|p1a: Mew|move: Taunt
+|
+|-damage|p2a: Krookodile|345\/394 brn|[from] brn
+|turn|2
+|
+|switch|p1a: Alomomola|Alomomola, F|534\/534
+|move|p2a: Krookodile|Knock Off|p1a: Alomomola
+|-damage|p1a: Alomomola|476\/534
+|-enditem|p1a: Alomomola|Leftovers|[from] move: Knock Off|[of] p2a: Krookodile
+|
+|-heal|p2a: Krookodile|369\/394 brn|[from] item: Leftovers
+|-damage|p2a: Krookodile|320\/394 brn|[from] brn
+|turn|3
+|
+|switch|p2a: Trevenant|Trevenant, M|311\/311
+|move|p1a: Alomomola|Toxic|p2a: Trevenant
+|-status|p2a: Trevenant|tox
+|
+|-damage|p2a: Trevenant|292\/311 tox|[from] psn
+|turn|4
+|
+|switch|p1a: Amoonguss|Amoonguss, F|432\/432
+|move|p2a: Trevenant|Will-O-Wisp|p1a: Amoonguss
+|-status|p1a: Amoonguss|brn
+|
+|-damage|p2a: Trevenant|254\/311 tox|[from] psn
+|-damage|p1a: Amoonguss|378\/432 brn|[from] brn
+|turn|5
+|
+|switch|p2a: Ampharos|Ampharos, M|384\/384
+|move|p1a: Amoonguss|Foul Play|p2a: Ampharos
+|-damage|p2a: Ampharos|356\/384
+|
+|-heal|p1a: Amoonguss|405\/432 brn|[from] item: Leftovers
+|-damage|p1a: Amoonguss|351\/432 brn|[from] brn
+|turn|6
+|
+|detailschange|p2a: Ampharos|Ampharos-Mega, M
+|message|Ampharos has Mega Evolved into Mega Ampharos!
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p2a: Ampharos|Volt Switch|p1a: Amoonguss
+|-resisted|p1a: Amoonguss
+|-damage|p1a: Amoonguss|300\/432 brn
+|
+|switch|p2a: Trevenant|Trevenant, M|254\/311 tox
+|move|p1a: Amoonguss|Spore|p2a: Trevenant
+|-fail|p2a: Trevenant
+|
+|-heal|p1a: Amoonguss|327\/432 brn|[from] item: Leftovers
+|-damage|p2a: Trevenant|235\/311 tox|[from] psn
+|-damage|p1a: Amoonguss|273\/432 brn|[from] brn
+|turn|7
+|
+|switch|p1a: Forretress|Forretress, M|354\/354
+|move|p2a: Trevenant|Will-O-Wisp|p1a: Forretress
+|-status|p1a: Forretress|brn
+|
+|-damage|p2a: Trevenant|197\/311 tox|[from] psn
+|-damage|p1a: Forretress|310\/354 brn|[from] brn
+|turn|8
+|
+|switch|p2a: Crobat|Crobat, F|311\/311
+|move|p1a: Forretress|Stealth Rock|p2a: Crobat
+|-sidestart|p2: The Prosecutor|move: Stealth Rock
+|
+|-heal|p1a: Forretress|332\/354 brn|[from] item: Leftovers
+|-damage|p1a: Forretress|288\/354 brn|[from] brn
+|turn|9
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|move|p2a: Crobat|Defog|p1a: Blissey
+|-unboost|p1a: Blissey|evasion|1
+|-sideend|p2: The Prosecutor|Stealth Rock|[from] move: Defog|[of] p2a: Crobat
+|
+|turn|10
+|
+|move|p2a: Crobat|U-turn|p1a: Blissey
+|-damage|p1a: Blissey|602\/714
+|
+|switch|p2a: Lucario|Lucario, F|281\/281
+|move|p1a: Blissey|Aromatherapy|p1a: Blissey
+|-cureteam|p1a: Blissey|[from] move: Aromatherapy
+|
+|-heal|p1a: Blissey|646\/714|[from] item: Leftovers
+|turn|11
+|
+|switch|p1a: Mew|Mew|404\/404
+|move|p2a: Lucario|Close Combat|p1a: Mew
+|-resisted|p1a: Mew
+|-damage|p1a: Mew|307\/404
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|-damage|p2a: Lucario|253\/281|[from] item: Life Orb
+|
+|-heal|p1a: Mew|332\/404|[from] item: Leftovers
+|turn|12
+|
+|switch|p2a: Krookodile|Krookodile, F|320\/394 brn
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Mew
+|-unboost|p1a: Mew|atk|1
+|move|p1a: Mew|Will-O-Wisp|p2a: Krookodile
+|-fail|p2a: Krookodile|brn
+|
+|-heal|p1a: Mew|357\/404|[from] item: Leftovers
+|-heal|p2a: Krookodile|344\/394 brn|[from] item: Leftovers
+|-damage|p2a: Krookodile|295\/394 brn|[from] brn
+|turn|13
+|
+|move|p1a: Mew|Taunt|p2a: Krookodile
+|-start|p2a: Krookodile|move: Taunt
+|move|p2a: Krookodile|Knock Off|p1a: Mew
+|-supereffective|p1a: Mew
+|-damage|p1a: Mew|265\/404
+|-enditem|p1a: Mew|Leftovers|[from] move: Knock Off|[of] p2a: Krookodile
+|
+|-heal|p2a: Krookodile|319\/394 brn|[from] item: Leftovers
+|-damage|p2a: Krookodile|270\/394 brn|[from] brn
+|turn|14
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M|356\/384
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Mew|Soft-Boiled|p1a: Mew
+|-heal|p1a: Mew|404\/404
+|
+|turn|15
+|
+|move|p1a: Mew|Taunt|p2a: Ampharos
+|-start|p2a: Ampharos|move: Taunt
+|move|p2a: Ampharos|Dragon Pulse|p1a: Mew
+|-damage|p1a: Mew|239\/404
+|
+|turn|16
+|
+|move|p1a: Mew|Will-O-Wisp|p2a: Ampharos
+|-status|p2a: Ampharos|brn
+|move|p2a: Ampharos|Volt Switch|p1a: Mew
+|-damage|p1a: Mew|113\/404
+|
+|switch|p2a: Crobat|Crobat, F|311\/311
+|
+|turn|17
+|
+|switch|p1a: Alomomola|Alomomola, F|534\/534
+|move|p2a: Crobat|Brave Bird|p1a: Alomomola
+|-damage|p1a: Alomomola|389\/534
+|-damage|p2a: Crobat|263\/311|[from] recoil|[of] p1a: Alomomola
+|
+|-heal|p2a: Crobat|282\/311|[from] item: Black Sludge
+|turn|18
+|
+|move|p2a: Crobat|U-turn|p1a: Alomomola
+|-damage|p1a: Alomomola|339\/534
+|
+|switch|p2a: Trevenant|Trevenant, M|197\/311 tox
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-damage|p2a: Trevenant|178\/311 tox|[from] psn
+|turn|19
+|
+|switch|p1a: Mew|Mew|113\/404
+|move|p2a: Trevenant|Wood Hammer|p1a: Mew
+|-damage|p1a: Mew|0 fnt
+|-damage|p2a: Trevenant|141\/311 tox|[from] recoil|[of] p1a: Mew
+|faint|p1a: Mew
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|218\/311 tox|[from] item: Sitrus Berry
+|
+|-damage|p2a: Trevenant|180\/311 tox|[from] psn
+|-item|p2a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|
+|switch|p1a: Amoonguss|Amoonguss, F|417\/432
+|turn|20
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M|356\/384 brn
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Amoonguss|Foul Play|p2a: Ampharos
+|-damage|p2a: Ampharos|298\/384 brn
+|
+|-heal|p1a: Amoonguss|432\/432|[from] item: Leftovers
+|-damage|p2a: Ampharos|250\/384 brn|[from] brn
+|turn|21
+|
+|switch|p1a: Rhydon|Rhydon, M|414\/414
+|move|p2a: Ampharos|Dragon Pulse|p1a: Rhydon
+|-damage|p1a: Rhydon|236\/414
+|
+|-damage|p2a: Ampharos|202\/384 brn|[from] brn
+|turn|22
+|
+|switch|p2a: Krookodile|Krookodile, F|270\/394 brn
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Rhydon
+|-unboost|p1a: Rhydon|atk|1
+|switch|p1a: Blissey|Blissey, F|646\/714
+|
+|-heal|p2a: Krookodile|294\/394 brn|[from] item: Leftovers
+|-heal|p1a: Blissey|690\/714|[from] item: Leftovers
+|-damage|p2a: Krookodile|245\/394 brn|[from] brn
+|turn|23
+|
+|switch|p1a: Forretress|Forretress, M|288\/354
+|move|p2a: Krookodile|Taunt|p1a: Forretress
+|-start|p1a: Forretress|move: Taunt
+|
+|-heal|p2a: Krookodile|269\/394 brn|[from] item: Leftovers
+|-heal|p1a: Forretress|310\/354|[from] item: Leftovers
+|-damage|p2a: Krookodile|220\/394 brn|[from] brn
+|turn|24
+|
+|move|p2a: Krookodile|Stealth Rock|p1a: Forretress
+|-sidestart|p1: CykoMore|move: Stealth Rock
+|move|p1a: Forretress|Gyro Ball|p2a: Krookodile
+|-damage|p2a: Krookodile|156\/394 brn
+|
+|-heal|p2a: Krookodile|180\/394 brn|[from] item: Leftovers
+|-heal|p1a: Forretress|332\/354|[from] item: Leftovers
+|-damage|p2a: Krookodile|131\/394 brn|[from] brn
+|turn|25
+|
+|switch|p2a: Lucario|Lucario, F|253\/281
+|move|p1a: Forretress|Rapid Spin|p2a: Lucario
+|-resisted|p2a: Lucario
+|-damage|p2a: Lucario|243\/281
+|-sideend|p1: CykoMore|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Forretress
+|
+|-heal|p1a: Forretress|354\/354|[from] item: Leftovers
+|turn|26
+|
+|switch|p1a: Amoonguss|Amoonguss, F|432\/432
+|move|p2a: Lucario|Swords Dance|p2a: Lucario
+|-boost|p2a: Lucario|atk|2
+|
+|turn|27
+|
+|move|p2a: Lucario|Crunch|p1a: Amoonguss
+|-crit|p1a: Amoonguss
+|-damage|p1a: Amoonguss|13\/432
+|-unboost|p1a: Amoonguss|def|1
+|-damage|p2a: Lucario|215\/281|[from] item: Life Orb
+|move|p1a: Amoonguss|Foul Play|p2a: Lucario
+|-resisted|p2a: Lucario
+|-damage|p2a: Lucario|92\/281
+|-boost|p2a: Lucario|atk|1|[from] ability: Justified
+|
+|-heal|p1a: Amoonguss|40\/432|[from] item: Leftovers
+|turn|28
+|
+|move|p2a: Lucario|Close Combat|p1a: Amoonguss
+|-resisted|p1a: Amoonguss
+|-damage|p1a: Amoonguss|0 fnt
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|-damage|p2a: Lucario|64\/281|[from] item: Life Orb
+|faint|p1a: Amoonguss
+|
+|
+|switch|p1a: Forretress|Forretress, M|354\/354
+|turn|29
+|
+|move|p2a: Lucario|Close Combat|p1a: Forretress
+|-activate|p1a: Forretress|Sturdy
+|-damage|p1a: Forretress|1\/354
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|-damage|p2a: Lucario|36\/281|[from] item: Life Orb
+|move|p1a: Forretress|Gyro Ball|p2a: Lucario
+|-resisted|p2a: Lucario
+|-damage|p2a: Lucario|0 fnt
+|faint|p2a: Lucario
+|
+|-heal|p1a: Forretress|23\/354|[from] item: Leftovers
+|
+|switch|p2a: Krookodile|Krookodile, F|131\/394 brn
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Forretress
+|-unboost|p1a: Forretress|atk|1
+|turn|30
+|
+|switch|p1a: Alomomola|Alomomola, F|517\/534
+|move|p2a: Krookodile|Knock Off|p1a: Alomomola
+|-damage|p1a: Alomomola|481\/534
+|
+|-heal|p2a: Krookodile|155\/394 brn|[from] item: Leftovers
+|-damage|p2a: Krookodile|106\/394 brn|[from] brn
+|turn|31
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M|202\/384 brn
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-damage|p2a: Ampharos|154\/384 brn|[from] brn
+|turn|32
+|
+|switch|p1a: Rhydon|Rhydon, M|236\/414
+|move|p2a: Ampharos|Dragon Pulse|p1a: Rhydon
+|-damage|p1a: Rhydon|47\/414
+|
+|-heal|p1a: Rhydon|314\/414|[from] move: Wish|[wisher] Alomomola
+|-damage|p2a: Ampharos|106\/384 brn|[from] brn
+|turn|33
+|
+|switch|p2a: Trevenant|Trevenant, M|180\/311 tox
+|switch|p1a: Blissey|Blissey, F|690\/714
+|
+|-heal|p1a: Blissey|714\/714|[from] item: Leftovers
+|-damage|p2a: Trevenant|161\/311 tox|[from] psn
+|turn|34
+|
+|switch|p2a: Krookodile|Krookodile, F|106\/394 brn
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Blissey
+|-unboost|p1a: Blissey|atk|1
+|switch|p1a: Forretress|Forretress, M|23\/354
+|
+|-heal|p2a: Krookodile|130\/394 brn|[from] item: Leftovers
+|-heal|p1a: Forretress|45\/354|[from] item: Leftovers
+|-damage|p2a: Krookodile|81\/394 brn|[from] brn
+|turn|35
+|
+|move|p2a: Krookodile|Knock Off|p1a: Forretress
+|-damage|p1a: Forretress|3\/354
+|-enditem|p1a: Forretress|Leftovers|[from] move: Knock Off|[of] p2a: Krookodile
+|move|p1a: Forretress|Rapid Spin|p2a: Krookodile
+|-damage|p2a: Krookodile|67\/394 brn
+|
+|-heal|p2a: Krookodile|91\/394 brn|[from] item: Leftovers
+|-damage|p2a: Krookodile|42\/394 brn|[from] brn
+|turn|36
+|
+|move|p2a: Krookodile|Knock Off|p1a: Forretress
+|-damage|p1a: Forretress|0 fnt
+|faint|p1a: Forretress
+|
+|-heal|p2a: Krookodile|66\/394 brn|[from] item: Leftovers
+|-damage|p2a: Krookodile|17\/394 brn|[from] brn
+|
+|switch|p1a: Alomomola|Alomomola, F|534\/534
+|turn|37
+|
+|switch|p2a: Trevenant|Trevenant, M|161\/311 tox
+|move|p1a: Alomomola|Scald|p2a: Trevenant
+|-resisted|p2a: Trevenant
+|-damage|p2a: Trevenant|131\/311 tox
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|208\/311 tox|[from] item: Sitrus Berry
+|
+|-damage|p2a: Trevenant|189\/311 tox|[from] psn
+|-item|p2a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|turn|38
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Trevenant|Will-O-Wisp|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-damage|p2a: Trevenant|151\/311 tox|[from] psn
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|228\/311 tox|[from] item: Sitrus Berry
+|turn|39
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|move|p2a: Trevenant|Will-O-Wisp|p1a: Blissey
+|-status|p1a: Blissey|brn
+|
+|-damage|p2a: Trevenant|171\/311 tox|[from] psn
+|-damage|p1a: Blissey|625\/714 brn|[from] brn
+|turn|40
+|
+|switch|p2a: Cloyster|Cloyster, F|241\/241
+|switch|p1a: Alomomola|Alomomola, F|534\/534
+|
+|turn|41
+|
+|switch|p2a: Krookodile|Krookodile, F|17\/394 brn
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Alomomola
+|-unboost|p1a: Alomomola|atk|1
+|move|p1a: Alomomola|Toxic|p2a: Krookodile
+|-fail|p2a: Krookodile
+|
+|-heal|p2a: Krookodile|41\/394 brn|[from] item: Leftovers
+|-damage|p2a: Krookodile|0 fnt|[from] brn
+|faint|p2a: Krookodile
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M|106\/384 brn
+|-ability|p2a: Ampharos|Mold Breaker
+|turn|42
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Ampharos|Rest|p2a: Ampharos
+|-status|p2a: Ampharos|slp
+|-heal|p2a: Ampharos|384\/384 slp|[silent]
+|-status|p2a: Ampharos|slp|[from] move: Rest
+|
+|turn|43
+|
+|switch|p1a: Blissey|Blissey, F|625\/714
+|cant|p2a: Ampharos|slp
+|move|p2a: Ampharos|Sleep Talk|p2a: Ampharos
+|move|p2a: Ampharos|Dragon Pulse|p1a: Blissey|[from]Sleep Talk
+|-damage|p1a: Blissey|499\/714
+|
+|-heal|p1a: Blissey|543\/714|[from] item: Leftovers
+|turn|44
+|
+|switch|p2a: Trevenant|Trevenant, M|171\/311 tox
+|move|p1a: Blissey|Seismic Toss|p2a: Trevenant
+|-immune|p2a: Trevenant|[msg]
+|
+|-heal|p1a: Blissey|587\/714|[from] item: Leftovers
+|-damage|p2a: Trevenant|152\/311 tox|[from] psn
+|turn|45
+|
+|move|p2a: Trevenant|Will-O-Wisp|p1a: Blissey
+|-status|p1a: Blissey|brn
+|move|p1a: Blissey|Toxic|p2a: Trevenant
+|-fail|p2a: Trevenant|tox
+|
+|-heal|p1a: Blissey|631\/714 brn|[from] item: Leftovers
+|-damage|p2a: Trevenant|114\/311 tox|[from] psn
+|-damage|p1a: Blissey|542\/714 brn|[from] brn
+|turn|46
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M|384\/384 slp
+|-ability|p2a: Ampharos|Mold Breaker
+|switch|p1a: Alomomola|Alomomola, F|534\/534
+|
+|turn|47
+|
+|switch|p1a: Rhydon|Rhydon, M|314\/414
+|cant|p2a: Ampharos|slp
+|move|p2a: Ampharos|Sleep Talk|p2a: Ampharos
+|move|p2a: Ampharos|Dragon Pulse|p1a: Rhydon|[from]Sleep Talk
+|-damage|p1a: Rhydon|109\/414
+|
+|turn|48
+|
+|switch|p2a: Crobat|Crobat, F|282\/311
+|switch|p1a: Blissey|Blissey, F|542\/714
+|
+|-heal|p2a: Crobat|301\/311|[from] item: Black Sludge
+|-heal|p1a: Blissey|586\/714|[from] item: Leftovers
+|turn|49
+|
+|move|p2a: Crobat|U-turn|p1a: Blissey
+|-damage|p1a: Blissey|467\/714
+|
+|switch|p2a: Trevenant|Trevenant, M|114\/311 tox
+|move|p1a: Blissey|Seismic Toss|p2a: Trevenant
+|-immune|p2a: Trevenant|[msg]
+|
+|-heal|p1a: Blissey|511\/714|[from] item: Leftovers
+|-damage|p2a: Trevenant|95\/311 tox|[from] psn
+|-item|p2a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|172\/311 tox|[from] item: Sitrus Berry
+|turn|50
+|
+|switch|p1a: Alomomola|Alomomola, F|534\/534
+|move|p2a: Trevenant|Wood Hammer|p1a: Alomomola
+|-supereffective|p1a: Alomomola
+|-damage|p1a: Alomomola|214\/534
+|-damage|p2a: Trevenant|66\/311 tox|[from] recoil|[of] p1a: Alomomola
+|
+|-damage|p2a: Trevenant|28\/311 tox|[from] psn
+|turn|51
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Trevenant|Wood Hammer|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-damage|p2a: Trevenant|0 fnt|[from] psn
+|faint|p2a: Trevenant
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M|384\/384 slp
+|-ability|p2a: Ampharos|Mold Breaker
+|turn|52
+|
+|switch|p1a: Blissey|Blissey, F|511\/714
+|-curestatus|p2a: Ampharos|slp
+|move|p2a: Ampharos|Volt Switch|p1a: Blissey
+|-damage|p1a: Blissey|418\/714
+|
+|switch|p2a: Cloyster|Cloyster, F|241\/241
+|
+|-heal|p1a: Blissey|462\/714|[from] item: Leftovers
+|turn|53
+|
+|move|p2a: Cloyster|Shell Smash|p2a: Cloyster
+|-boost|p2a: Cloyster|atk|2
+|-boost|p2a: Cloyster|spa|2
+|-boost|p2a: Cloyster|spe|2
+|-unboost|p2a: Cloyster|def|1
+|-unboost|p2a: Cloyster|spd|1
+|move|p1a: Blissey|Toxic|p2a: Cloyster
+|-status|p2a: Cloyster|tox
+|
+|-heal|p1a: Blissey|506\/714|[from] item: Leftovers
+|-damage|p2a: Cloyster|226\/241 tox|[from] psn
+|turn|54
+|
+|switch|p1a: Rhydon|Rhydon, M|109\/414
+|move|p2a: Cloyster|Rock Blast|p1a: Rhydon
+|-resisted|p1a: Rhydon
+|-damage|p1a: Rhydon|99\/414
+|-resisted|p1a: Rhydon
+|-damage|p1a: Rhydon|87\/414
+|-crit|p1a: Rhydon
+|-resisted|p1a: Rhydon
+|-damage|p1a: Rhydon|72\/414
+|-resisted|p1a: Rhydon
+|-damage|p1a: Rhydon|61\/414
+|-resisted|p1a: Rhydon
+|-damage|p1a: Rhydon|50\/414
+|-hitcount|p1a: Rhydon|5
+|
+|-damage|p2a: Cloyster|196\/241 tox|[from] psn
+|turn|55
+|
+|switch|p1a: Alomomola|Alomomola, F|392\/534
+|move|p2a: Cloyster|Icicle Spear|p1a: Alomomola
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|361\/534
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|329\/534
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|297\/534
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|261\/534
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|228\/534
+|-hitcount|p1a: Alomomola|5
+|
+|-damage|p2a: Cloyster|151\/241 tox|[from] psn
+|turn|56
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Cloyster|Rock Blast|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-damage|p2a: Cloyster|91\/241 tox|[from] psn
+|turn|57
+|
+|switch|p1a: Rhydon|Rhydon, M|50\/414
+|move|p2a: Cloyster|Rock Blast|p1a: Rhydon
+|-resisted|p1a: Rhydon
+|-damage|p1a: Rhydon|38\/414
+|-resisted|p1a: Rhydon
+|-damage|p1a: Rhydon|27\/414
+|-resisted|p1a: Rhydon
+|-damage|p1a: Rhydon|16\/414
+|-resisted|p1a: Rhydon
+|-damage|p1a: Rhydon|5\/414
+|-resisted|p1a: Rhydon
+|-damage|p1a: Rhydon|0 fnt
+|-hitcount|p1a: Rhydon|5
+|faint|p1a: Rhydon
+|
+|-damage|p2a: Cloyster|16\/241 tox|[from] psn
+|
+|switch|p1a: Alomomola|Alomomola, F|406\/534
+|turn|58
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M|384\/384
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-fail|p1a: Alomomola
+|
+|turn|59
+|
+|switch|p1a: Blissey|Blissey, F|506\/714
+|move|p2a: Ampharos|Volt Switch|p1a: Blissey
+|-damage|p1a: Blissey|410\/714
+|
+|switch|p2a: Crobat|Crobat, F|301\/311
+|
+|-heal|p2a: Crobat|311\/311|[from] item: Black Sludge
+|-heal|p1a: Blissey|454\/714|[from] item: Leftovers
+|turn|60
+|
+|move|p2a: Crobat|Brave Bird|p1a: Blissey
+|-damage|p1a: Blissey|160\/714
+|-damage|p2a: Crobat|214\/311|[from] recoil|[of] p1a: Blissey
+|move|p1a: Blissey|Soft-Boiled|p1a: Blissey
+|-heal|p1a: Blissey|517\/714
+|
+|-heal|p2a: Crobat|233\/311|[from] item: Black Sludge
+|-heal|p1a: Blissey|561\/714|[from] item: Leftovers
+|turn|61
+|
+|move|p2a: Crobat|U-turn|p1a: Blissey
+|-damage|p1a: Blissey|437\/714
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M|384\/384
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Blissey|Soft-Boiled|p1a: Blissey
+|-heal|p1a: Blissey|714\/714
+|
+|turn|62
+|
+|switch|p2a: Crobat|Crobat, F|233\/311
+|move|p1a: Blissey|Toxic|p2a: Crobat
+|-fail|p2a: Crobat
+|
+|-heal|p2a: Crobat|252\/311|[from] item: Black Sludge
+|turn|63
+|
+|move|p2a: Crobat|Brave Bird|p1a: Blissey
+|-damage|p1a: Blissey|428\/714
+|-damage|p2a: Crobat|158\/311|[from] recoil|[of] p1a: Blissey
+|move|p1a: Blissey|Seismic Toss|p2a: Crobat
+|-damage|p2a: Crobat|58\/311
+|
+|-heal|p2a: Crobat|77\/311|[from] item: Black Sludge
+|-heal|p1a: Blissey|472\/714|[from] item: Leftovers
+|turn|64
+|
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|233\/311
+|move|p1a: Blissey|Soft-Boiled|p1a: Blissey
+|-heal|p1a: Blissey|714\/714
+|
+|-heal|p2a: Crobat|252\/311|[from] item: Black Sludge
+|turn|65
+|
+|switch|p1a: Alomomola|Alomomola, F|534\/534
+|move|p2a: Crobat|Brave Bird|p1a: Alomomola
+|-damage|p1a: Alomomola|383\/534
+|-damage|p2a: Crobat|202\/311|[from] recoil|[of] p1a: Alomomola
+|
+|-heal|p2a: Crobat|221\/311|[from] item: Black Sludge
+|turn|66
+|
+|move|p2a: Crobat|U-turn|p1a: Alomomola
+|-crit|p1a: Alomomola
+|-damage|p1a: Alomomola|304\/534
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M|384\/384
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|turn|67
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|move|p2a: Ampharos|Volt Switch|p1a: Blissey
+|-damage|p1a: Blissey|618\/714
+|chat|The Prosecutor|how are you going to win, mate?
+|
+|switch|p2a: Crobat|Crobat, F|221\/311
+|
+|-heal|p1a: Blissey|714\/714|[from] move: Wish|[wisher] Alomomola
+|-heal|p2a: Crobat|240\/311|[from] item: Black Sludge
+|turn|68
+|
+|move|p2a: Crobat|Brave Bird|p1a: Blissey
+|-damage|p1a: Blissey|434\/714
+|-damage|p2a: Crobat|148\/311|[from] recoil|[of] p1a: Blissey
+|move|p1a: Blissey|Seismic Toss|p2a: Crobat
+|-damage|p2a: Crobat|48\/311
+|
+|-heal|p2a: Crobat|67\/311|[from] item: Black Sludge
+|-heal|p1a: Blissey|478\/714|[from] item: Leftovers
+|turn|69
+|
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|223\/311
+|move|p1a: Blissey|Seismic Toss|p2a: Crobat
+|-damage|p2a: Crobat|123\/311
+|
+|-heal|p2a: Crobat|142\/311|[from] item: Black Sludge
+|-heal|p1a: Blissey|522\/714|[from] item: Leftovers
+|turn|70
+|
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|298\/311
+|move|p1a: Blissey|Seismic Toss|p2a: Crobat
+|-damage|p2a: Crobat|198\/311
+|
+|-heal|p2a: Crobat|217\/311|[from] item: Black Sludge
+|-heal|p1a: Blissey|566\/714|[from] item: Leftovers
+|turn|71
+|
+|move|p2a: Crobat|U-turn|p1a: Blissey
+|-damage|p1a: Blissey|451\/714
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M|384\/384
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Blissey|Soft-Boiled|p1a: Blissey
+|-heal|p1a: Blissey|714\/714
+|
+|turn|72
+|
+|switch|p2a: Crobat|Crobat, F|217\/311
+|move|p1a: Blissey|Seismic Toss|p2a: Crobat
+|-damage|p2a: Crobat|117\/311
+|
+|-heal|p2a: Crobat|136\/311|[from] item: Black Sludge
+|turn|73
+|
+|switch|p1a: Alomomola|Alomomola, F|482\/534
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|292\/311
+|
+|-heal|p2a: Crobat|311\/311|[from] item: Black Sludge
+|turn|74
+|
+|move|p2a: Crobat|U-turn|p1a: Alomomola
+|-damage|p1a: Alomomola|431\/534
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M|384\/384
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Alomomola|Scald|p2a: Ampharos
+|-resisted|p2a: Ampharos
+|-damage|p2a: Ampharos|368\/384
+|-status|p2a: Ampharos|brn
+|
+|-damage|p2a: Ampharos|320\/384 brn|[from] brn
+|turn|75
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Ampharos|Volt Switch|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-damage|p2a: Ampharos|272\/384 brn|[from] brn
+|turn|76
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|move|p2a: Ampharos|Volt Switch|p1a: Blissey
+|-damage|p1a: Blissey|612\/714
+|
+|switch|p2a: Crobat|Crobat, F|311\/311
+|
+|-heal|p1a: Blissey|656\/714|[from] item: Leftovers
+|turn|77
+|
+|switch|p1a: Alomomola|Alomomola, F|534\/534
+|move|p2a: Crobat|Brave Bird|p1a: Alomomola
+|-damage|p1a: Alomomola|404\/534
+|-damage|p2a: Crobat|268\/311|[from] recoil|[of] p1a: Alomomola
+|
+|-heal|p2a: Crobat|287\/311|[from] item: Black Sludge
+|turn|78
+|
+|switch|p1a: Blissey|Blissey, F|656\/714
+|move|p2a: Crobat|U-turn|p1a: Blissey
+|-damage|p1a: Blissey|539\/714
+|
+|switch|p2a: Cloyster|Cloyster, F|16\/241 tox
+|
+|-heal|p1a: Blissey|583\/714|[from] item: Leftovers
+|-damage|p2a: Cloyster|1\/241 tox|[from] psn
+|turn|79
+|
+|switch|p1a: Alomomola|Alomomola, F|534\/534
+|move|p2a: Cloyster|Icicle Spear|p1a: Alomomola
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|519\/534
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|503\/534
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|488\/534
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|472\/534
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|455\/534
+|-hitcount|p1a: Alomomola|5
+|
+|-damage|p2a: Cloyster|0 fnt|[from] psn
+|faint|p2a: Cloyster
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M|272\/384 brn
+|-ability|p2a: Ampharos|Mold Breaker
+|turn|80
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Ampharos|Dragon Pulse|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-damage|p2a: Ampharos|224\/384 brn|[from] brn
+|turn|81
+|
+|switch|p1a: Blissey|Blissey, F|583\/714
+|move|p2a: Ampharos|Volt Switch|p1a: Blissey
+|-damage|p1a: Blissey|478\/714
+|
+|switch|p2a: Crobat|Crobat, F|287\/311
+|
+|-heal|p2a: Crobat|306\/311|[from] item: Black Sludge
+|-heal|p1a: Blissey|522\/714|[from] item: Leftovers
+|turn|82
+|
+|switch|p1a: Alomomola|Alomomola, F|534\/534
+|move|p2a: Crobat|Brave Bird|p1a: Alomomola
+|-damage|p1a: Alomomola|387\/534
+|-damage|p2a: Crobat|257\/311|[from] recoil|[of] p1a: Alomomola
+|
+|-heal|p2a: Crobat|276\/311|[from] item: Black Sludge
+|turn|83
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M|224\/384 brn
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-damage|p2a: Ampharos|176\/384 brn|[from] brn
+|turn|84
+|
+|switch|p1a: Blissey|Blissey, F|522\/714
+|move|p2a: Ampharos|Rest|p2a: Ampharos
+|-status|p2a: Ampharos|slp
+|-heal|p2a: Ampharos|384\/384 slp|[silent]
+|-status|p2a: Ampharos|slp|[from] move: Rest
+|
+|-heal|p1a: Blissey|714\/714|[from] move: Wish|[wisher] Alomomola
+|turn|85
+|
+|switch|p2a: Crobat|Crobat, F|276\/311
+|move|p1a: Blissey|Seismic Toss|p2a: Crobat
+|-damage|p2a: Crobat|176\/311
+|
+|-heal|p2a: Crobat|195\/311|[from] item: Black Sludge
+|turn|86
+|
+|move|p2a: Crobat|Defog|p1a: Blissey
+|-unboost|p1a: Blissey|evasion|1
+|move|p1a: Blissey|Seismic Toss|p2a: Crobat
+|-damage|p2a: Crobat|95\/311
+|
+|-heal|p2a: Crobat|114\/311|[from] item: Black Sludge
+|turn|87
+|
+|switch|p1a: Alomomola|Alomomola, F|534\/534
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|270\/311
+|
+|-heal|p2a: Crobat|289\/311|[from] item: Black Sludge
+|turn|88
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M|384\/384 slp
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Alomomola|Scald|p2a: Ampharos
+|-resisted|p2a: Ampharos
+|-damage|p2a: Ampharos|369\/384 slp
+|
+|turn|89
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|cant|p2a: Ampharos|slp
+|
+|turn|90
+|
+|switch|p2a: Crobat|Crobat, F|289\/311
+|move|p1a: Blissey|Toxic|p2a: Crobat
+|-fail|p2a: Crobat
+|
+|-heal|p2a: Crobat|308\/311|[from] item: Black Sludge
+|turn|91
+|
+|switch|p1a: Alomomola|Alomomola, F|534\/534
+|move|p2a: Crobat|Brave Bird|p1a: Alomomola
+|-damage|p1a: Alomomola|398\/534
+|-damage|p2a: Crobat|263\/311|[from] recoil|[of] p1a: Alomomola
+|
+|-heal|p2a: Crobat|282\/311|[from] item: Black Sludge
+|turn|92
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M|369\/384 slp
+|-ability|p2a: Ampharos|Mold Breaker
+|switch|p1a: Blissey|Blissey, F|714\/714
+|
+|turn|93
+|
+|switch|p2a: Crobat|Crobat, F|282\/311
+|move|p1a: Blissey|Seismic Toss|p2a: Crobat
+|-damage|p2a: Crobat|182\/311
+|
+|-heal|p2a: Crobat|201\/311|[from] item: Black Sludge
+|turn|94
+|
+|switch|p1a: Alomomola|Alomomola, F|534\/534
+|move|p2a: Crobat|Defog|p1a: Alomomola
+|-unboost|p1a: Alomomola|evasion|1
+|
+|-heal|p2a: Crobat|220\/311|[from] item: Black Sludge
+|turn|95
+|-message|CykoMore forfeited.
+|
+|win|The Prosecutor
+|raw|Ladder updating...
+|leave|CykoMore
+|player|p1
+|raw|CykoMore's rating: 1437 &rarr; <strong>1409<\/strong><br \/>(-28 for losing)
+|raw|The Prosecutor's rating: 1282 &rarr; <strong>1317<\/strong><br \/>(+35 for winning)

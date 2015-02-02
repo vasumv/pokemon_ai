@@ -1,0 +1,297 @@
+|join|sprayerj
+|join|juancar_tested
+|player|p1|sprayerj|1
+|player|p2|juancar_tested|144
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Jirachi
+|poke|p1|Rotom-Heat
+|poke|p1|Vaporeon, F
+|poke|p1|Nidoqueen, F
+|poke|p1|Whimsicott, M
+|poke|p1|Absol, F
+|poke|p2|Uxie
+|poke|p2|Camerupt, F
+|poke|p2|Clawitzer, F
+|poke|p2|Diancie
+|poke|p2|Druddigon, F
+|poke|p2|Reuniclus, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Rotom-Heat|Rotom-Heat|304\/304
+|switch|p2a: Uxie|Uxie|354\/354
+|turn|1
+|
+|move|p1a: Rotom-Heat|Volt Switch|p2a: Uxie
+|-damage|p2a: Uxie|294\/354
+|
+|switch|p1a: Absol|Absol, F|272\/272
+|move|p2a: Uxie|Stealth Rock|p1a: Absol
+|-sidestart|p1: sprayerj|move: Stealth Rock
+|
+|turn|2
+|
+|detailschange|p1a: Absol|Absol-Mega, F
+|message|Absol has Mega Evolved into Mega Absol!
+|move|p1a: Absol|Knock Off|p2a: Uxie
+|-supereffective|p2a: Uxie
+|-damage|p2a: Uxie|4\/354
+|-enditem|p2a: Uxie|Mental Herb|[from] move: Knock Off|[of] p1a: Absol
+|move|p2a: Uxie|Trick Room|p2a: Uxie
+|-fieldstart|move: Trick Room|[of] p2a: Uxie
+|
+|turn|3
+|
+|move|p2a: Uxie|Memento|p1a: Absol
+|-unboost|p1a: Absol|atk|2
+|-unboost|p1a: Absol|spa|2
+|faint|p2a: Uxie
+|move|p1a: Absol|Knock Off|p2: Uxie|[notarget]
+|-notarget
+|
+|
+|switch|p2a: Camerupt|Camerupt, F|343\/343
+|turn|4
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|304\/304
+|-damage|p1a: Rotom-Heat|228\/304|[from] Stealth Rock
+|detailschange|p2a: Camerupt|Camerupt-Mega, F
+|message|Camerupt has Mega Evolved into Mega Camerupt!
+|move|p2a: Camerupt|Earth Power|p1a: Rotom-Heat
+|-immune|p1a: Rotom-Heat|[msg]
+|
+|turn|5
+|
+|move|p2a: Camerupt|Rock Slide|p1a: Rotom-Heat
+|-miss|p2a: Camerupt|p1a: Rotom-Heat
+|move|p1a: Rotom-Heat|Hidden Power|p2a: Camerupt
+|-damage|p2a: Camerupt|292\/343
+|
+|turn|6
+|c|âjuancar_tested|always miss:(
+|
+|switch|p1a: Whimsicott|Whimsicott, M|324\/324
+|-damage|p1a: Whimsicott|284\/324|[from] Stealth Rock
+|move|p2a: Camerupt|Earth Power|p1a: Whimsicott
+|-resisted|p1a: Whimsicott
+|-damage|p1a: Whimsicott|114\/324
+|
+|-heal|p1a: Whimsicott|134\/324|[from] item: Leftovers
+|-fieldend|move: Trick Room
+|turn|7
+|
+|switch|p1a: Vaporeon|Vaporeon, F|464\/464
+|-damage|p1a: Vaporeon|406\/464|[from] Stealth Rock
+|move|p2a: Camerupt|Earth Power|p1a: Vaporeon
+|-damage|p1a: Vaporeon|216\/464
+|
+|-heal|p1a: Vaporeon|245\/464|[from] item: Leftovers
+|turn|8
+|
+|switch|p2a: Reuniclus|Reuniclus, M|424\/424
+|move|p1a: Vaporeon|Scald|p2a: Reuniclus
+|-damage|p2a: Reuniclus|313\/424
+|
+|-heal|p1a: Vaporeon|274\/464|[from] item: Leftovers
+|turn|9
+|
+|switch|p1a: Absol|Absol-Mega, F|272\/272
+|-damage|p1a: Absol|238\/272|[from] Stealth Rock
+|move|p2a: Reuniclus|Trick Room|p2a: Reuniclus
+|-fieldstart|move: Trick Room|[of] p2a: Reuniclus
+|
+|turn|10
+|
+|switch|p2a: Clawitzer|Clawitzer, F|345\/345
+|move|p1a: Absol|Sucker Punch|p2a: Clawitzer
+|-fail|p2a: Clawitzer
+|
+|turn|11
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|228\/304
+|-damage|p1a: Rotom-Heat|152\/304|[from] Stealth Rock
+|move|p2a: Clawitzer|Aura Sphere|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|64\/304
+|-damage|p2a: Clawitzer|311\/345|[from] item: Life Orb
+|
+|turn|12
+|
+|move|p2a: Clawitzer|Dark Pulse|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|0 fnt
+|-damage|p2a: Clawitzer|277\/345|[from] item: Life Orb
+|faint|p1a: Rotom-Heat
+|
+|
+|switch|p1a: Vaporeon|Vaporeon, F|274\/464
+|-damage|p1a: Vaporeon|216\/464|[from] Stealth Rock
+|turn|13
+|
+|move|p2a: Clawitzer|Dark Pulse|p1a: Vaporeon
+|-damage|p1a: Vaporeon|76\/464
+|-damage|p2a: Clawitzer|243\/345|[from] item: Life Orb
+|cant|p1a: Vaporeon|flinch
+|
+|-heal|p1a: Vaporeon|105\/464|[from] item: Leftovers
+|-fieldend|move: Trick Room
+|turn|14
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Clawitzer|Aura Sphere|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Protect
+|
+|-heal|p1a: Vaporeon|134\/464|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|move|p2a: Clawitzer|Aura Sphere|p1a: Vaporeon
+|-crit|p1a: Vaporeon
+|-damage|p1a: Vaporeon|0 fnt
+|-damage|p2a: Clawitzer|209\/345|[from] item: Life Orb
+|faint|p1a: Vaporeon
+|
+|
+|switch|p1a: Whimsicott|Whimsicott, M|134\/324
+|-damage|p1a: Whimsicott|94\/324|[from] Stealth Rock
+|turn|16
+|
+|move|p1a: Whimsicott|Substitute|p1a: Whimsicott
+|-start|p1a: Whimsicott|Substitute
+|-damage|p1a: Whimsicott|13\/324
+|move|p2a: Clawitzer|Ice Beam|p1a: Whimsicott
+|-supereffective|p1a: Whimsicott
+|-end|p1a: Whimsicott|Substitute
+|-damage|p2a: Clawitzer|175\/345|[from] item: Life Orb
+|
+|-heal|p1a: Whimsicott|245\/324|[from] move: Wish|[wisher] Vaporeon
+|-heal|p1a: Whimsicott|265\/324|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Whimsicott|Substitute|p1a: Whimsicott
+|-start|p1a: Whimsicott|Substitute
+|-damage|p1a: Whimsicott|184\/324
+|move|p2a: Clawitzer|Ice Beam|p1a: Whimsicott
+|-supereffective|p1a: Whimsicott
+|-end|p1a: Whimsicott|Substitute
+|-damage|p2a: Clawitzer|141\/345|[from] item: Life Orb
+|
+|-heal|p1a: Whimsicott|204\/324|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Whimsicott|Substitute|p1a: Whimsicott
+|-start|p1a: Whimsicott|Substitute
+|-damage|p1a: Whimsicott|123\/324
+|move|p2a: Clawitzer|Ice Beam|p1a: Whimsicott
+|-supereffective|p1a: Whimsicott
+|-end|p1a: Whimsicott|Substitute
+|-damage|p2a: Clawitzer|107\/345|[from] item: Life Orb
+|
+|-heal|p1a: Whimsicott|143\/324|[from] item: Leftovers
+|turn|19
+|
+|move|p1a: Whimsicott|Moonblast|p2a: Clawitzer
+|-crit|p2a: Clawitzer
+|-damage|p2a: Clawitzer|0 fnt
+|faint|p2a: Clawitzer
+|
+|-heal|p1a: Whimsicott|163\/324|[from] item: Leftovers
+|
+|switch|p2a: Reuniclus|Reuniclus, M|313\/424
+|turn|20
+|
+|switch|p1a: Absol|Absol-Mega, F|238\/272
+|-damage|p1a: Absol|204\/272|[from] Stealth Rock
+|move|p2a: Reuniclus|Trick Room|p2a: Reuniclus
+|-fieldstart|move: Trick Room|[of] p2a: Reuniclus
+|
+|turn|21
+|
+|switch|p2a: Diancie|Diancie|304\/304
+|move|p1a: Absol|Swords Dance|p1a: Absol
+|-boost|p1a: Absol|atk|2
+|
+|turn|22
+|
+|move|p2a: Diancie|Diamond Storm|p1a: Absol
+|-damage|p1a: Absol|0 fnt
+|faint|p1a: Absol
+|
+|
+|switch|p1a: Jirachi|Jirachi|342\/342
+|-damage|p1a: Jirachi|321\/342|[from] Stealth Rock
+|turn|23
+|
+|move|p2a: Diancie|Explosion|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|188\/342
+|faint|p2a: Diancie
+|move|p1a: Jirachi|Doom Desire|p2: Diancie|[notarget]
+|-notarget
+|
+|
+|switch|p2a: Camerupt|Camerupt-Mega, F|292\/343
+|turn|24
+|
+|switch|p1a: Whimsicott|Whimsicott, M|163\/324
+|-damage|p1a: Whimsicott|123\/324|[from] Stealth Rock
+|move|p2a: Camerupt|Earth Power|p1a: Whimsicott
+|-resisted|p1a: Whimsicott
+|-damage|p1a: Whimsicott|0 fnt
+|faint|p1a: Whimsicott
+|
+|-fieldend|move: Trick Room
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|384\/384
+|-damage|p1a: Nidoqueen|360\/384|[from] Stealth Rock
+|turn|25
+|
+|move|p1a: Nidoqueen|Earth Power|p2a: Camerupt
+|-supereffective|p2a: Camerupt
+|-damage|p2a: Camerupt|110\/343
+|move|p2a: Camerupt|Earth Power|p1a: Nidoqueen
+|-supereffective|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|0 fnt
+|faint|p1a: Nidoqueen
+|
+|c|âjuancar_tested|nothingg
+|
+|switch|p1a: Jirachi|Jirachi|188\/342
+|-damage|p1a: Jirachi|167\/342|[from] Stealth Rock
+|turn|26
+|
+|move|p1a: Jirachi|Psyshock|p2a: Camerupt
+|-damage|p2a: Camerupt|0 fnt
+|-damage|p1a: Jirachi|133\/342|[from] item: Life Orb
+|faint|p2a: Camerupt
+|
+|
+|switch|p2a: Druddigon|Druddigon, F|358\/358
+|turn|27
+|
+|move|p1a: Jirachi|Doom Desire|p2a: Druddigon
+|-start|p1a: Jirachi|Doom Desire
+|move|p2a: Druddigon|Fire Punch|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|faint|p1a: Jirachi
+|
+|win|juancar_tested
+|raw|Ladder updating...
+|c|âjuancar_tested|gg
+|leave|sprayerj
+|player|p1
+|raw|sprayerj's rating: 1349 &rarr; <strong>1328<\/strong><br \/>(-21 for losing)
+|raw|juancar_tested's rating: 1346 &rarr; <strong>1366<\/strong><br \/>(+20 for winning)

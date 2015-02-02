@@ -1,0 +1,215 @@
+|join|Aqua Mann
+|join|zoid's warhorse
+|player|p1|Aqua Mann|226
+|player|p2|zoid's warhorse|188
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Sharpedo, F
+|poke|p1|Machamp, F
+|poke|p1|Reuniclus, F, shiny
+|poke|p1|Froslass, F
+|poke|p1|Swampert, M
+|poke|p1|Spiritomb, F, shiny
+|poke|p2|Aerodactyl, M
+|poke|p2|Azelf
+|poke|p2|Dragalge, M
+|poke|p2|Lucario, F
+|poke|p2|Magneton
+|poke|p2|Serperior, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Froslass|Froslass, F|344\/344
+|switch|p2a: Azelf|Azelf|291\/291
+|turn|1
+|
+|switch|p1a: Spiritomb|Spiritomb, F, shiny|294\/294
+|move|p2a: Azelf|Taunt|p1a: Spiritomb
+|-start|p1a: Spiritomb|move: Taunt
+|
+|turn|2
+|
+|move|p2a: Azelf|Stealth Rock|p1a: Spiritomb
+|-sidestart|p1: Aqua Mann|move: Stealth Rock
+|move|p1a: Spiritomb|Pursuit|p2a: Azelf
+|-supereffective|p2a: Azelf
+|-damage|p2a: Azelf|73\/291
+|
+|turn|3
+|
+|move|p2a: Azelf|Knock Off|p1a: Spiritomb
+|-damage|p1a: Spiritomb|183\/294
+|-enditem|p1a: Spiritomb|Dread Plate|[from] move: Knock Off|[of] p2a: Azelf
+|move|p1a: Spiritomb|Pursuit|p2a: Azelf
+|-supereffective|p2a: Azelf
+|-damage|p2a: Azelf|0 fnt
+|faint|p2a: Azelf
+|
+|
+|switch|p2a: Magneton|Magneton|303\/303
+|turn|4
+|
+|move|p1a: Spiritomb|Sucker Punch|p2a: Magneton
+|-damage|p2a: Magneton|215\/303
+|move|p2a: Magneton|Volt Switch|p1a: Spiritomb
+|-damage|p1a: Spiritomb|62\/294
+|
+|switch|p2a: Dragalge|Dragalge, M|283\/283
+|
+|-end|p1a: Spiritomb|move: Taunt
+|turn|5
+|
+|move|p1a: Spiritomb|Sucker Punch|p2a: Dragalge
+|-damage|p2a: Dragalge|150\/283
+|move|p2a: Dragalge|Sludge Wave|p1a: Spiritomb
+|-resisted|p1a: Spiritomb
+|-damage|p1a: Spiritomb|0 fnt
+|faint|p1a: Spiritomb
+|
+|
+|switch|p1a: Machamp|Machamp, F|364\/364
+|-damage|p1a: Machamp|342\/364|[from] Stealth Rock
+|turn|6
+|
+|move|p1a: Machamp|Knock Off|p2a: Dragalge
+|-damage|p2a: Dragalge|13\/283
+|-enditem|p2a: Dragalge|Choice Specs|[from] move: Knock Off|[of] p1a: Machamp
+|move|p2a: Dragalge|Sludge Wave|p1a: Machamp
+|-damage|p1a: Machamp|206\/364
+|
+|turn|7
+|
+|move|p1a: Machamp|Knock Off|p2a: Dragalge
+|-damage|p2a: Dragalge|0 fnt
+|faint|p2a: Dragalge
+|
+|
+|switch|p2a: Serperior|Serperior, F|303\/303
+|turn|8
+|
+|move|p2a: Serperior|Leaf Storm|p1a: Machamp
+|-damage|p1a: Machamp|92\/364
+|-boost|p2a: Serperior|spa|2
+|move|p1a: Machamp|Close Combat|p2a: Serperior
+|-damage|p2a: Serperior|83\/303
+|-unboost|p1a: Machamp|def|1
+|-unboost|p1a: Machamp|spd|1
+|
+|turn|9
+|
+|move|p1a: Machamp|Bullet Punch|p2a: Serperior
+|-damage|p2a: Serperior|32\/303
+|move|p2a: Serperior|Leaf Storm|p1a: Machamp
+|-damage|p1a: Machamp|0 fnt
+|-boost|p2a: Serperior|spa|2
+|faint|p1a: Machamp
+|
+|
+|switch|p1a: Sharpedo|Sharpedo, F|281\/281
+|-damage|p1a: Sharpedo|246\/281|[from] Stealth Rock
+|turn|10
+|
+|switch|p2a: Magneton|Magneton|215\/303
+|move|p1a: Sharpedo|Protect|p1a: Sharpedo
+|-fail|p1a: Sharpedo
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|11
+|
+|move|p1a: Sharpedo|Protect|p1a: Sharpedo
+|-singleturn|p1a: Sharpedo|Protect
+|move|p2a: Magneton|Hidden Power|p1a: Sharpedo
+|-activate|p1a: Sharpedo|Protect
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|12
+|
+|move|p1a: Sharpedo|Waterfall|p2a: Magneton
+|-crit|p2a: Magneton
+|-damage|p2a: Magneton|65\/303
+|move|p2a: Magneton|Volt Switch|p1a: Sharpedo
+|-supereffective|p1a: Sharpedo
+|-damage|p1a: Sharpedo|0 fnt
+|faint|p1a: Sharpedo
+|
+|switch|p2a: Serperior|Serperior, F|32\/303
+|
+|
+|switch|p1a: Reuniclus|Reuniclus, F, shiny|409\/409
+|turn|13
+|
+|move|p2a: Serperior|Glare|p1a: Reuniclus
+|-status|p1a: Reuniclus|par
+|move|p1a: Reuniclus|Trick Room|p1a: Reuniclus
+|-fieldstart|move: Trick Room|[of] p1a: Reuniclus
+|
+|turn|14
+|
+|move|p1a: Reuniclus|Psyshock|p2a: Serperior
+|-damage|p2a: Serperior|0 fnt
+|faint|p2a: Serperior
+|
+|
+|switch|p2a: Aerodactyl|Aerodactyl, M|302\/302
+|-ability|p2a: Aerodactyl|Unnerve|p1: Aqua Mann
+|turn|15
+|
+|switch|p1a: Swampert|Swampert, M|403\/403
+|-damage|p1a: Swampert|378\/403|[from] Stealth Rock
+|detailschange|p2a: Aerodactyl|Aerodactyl-Mega, M
+|-mega|p2a: Aerodactyl|Aerodactyl|Aerodactylite
+|move|p2a: Aerodactyl|Stone Edge|p1a: Swampert
+|-resisted|p1a: Swampert
+|-damage|p1a: Swampert|303\/403
+|
+|-heal|p1a: Swampert|328\/403|[from] item: Leftovers
+|turn|16
+|
+|move|p1a: Swampert|Scald|p2a: Aerodactyl
+|-supereffective|p2a: Aerodactyl
+|-damage|p2a: Aerodactyl|138\/302
+|move|p2a: Aerodactyl|Aerial Ace|p1a: Swampert
+|-damage|p1a: Swampert|219\/403
+|
+|-heal|p1a: Swampert|244\/403|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Swampert|Scald|p2a: Aerodactyl
+|-supereffective|p2a: Aerodactyl
+|-damage|p2a: Aerodactyl|0 fnt
+|faint|p2a: Aerodactyl
+|
+|-heal|p1a: Swampert|269\/403|[from] item: Leftovers
+|-fieldend|move: Trick Room
+|
+|switch|p2a: Magneton|Magneton|65\/303
+|turn|18
+|
+|move|p2a: Magneton|Volt Switch|p1a: Swampert
+|-immune|p1a: Swampert|[msg]
+|move|p1a: Swampert|Earthquake|p2a: Magneton
+|-supereffective|p2a: Magneton
+|-damage|p2a: Magneton|0 fnt
+|faint|p2a: Magneton
+|
+|-heal|p1a: Swampert|294\/403|[from] item: Leftovers
+|-message|zoid's warhorse forfeited.
+|
+|win|Aqua Mann
+|raw|Ladder updating...
+|c|âzoid's warhorse|gg
+|raw|Aqua Mann's rating: 1474 &rarr; <strong>1497<\/strong><br \/>(+23 for winning)
+|raw|zoid&apos;s warhorse's rating: 1529 &rarr; <strong>1506<\/strong><br \/>(-23 for losing)
+|c|âAqua Mann|gg

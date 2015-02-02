@@ -1,0 +1,448 @@
+|join|plini
+|join|PrincePOLO
+|player|p1|plini|170
+|player|p2|PrincePOLO|156
+|gametype|singles
+|gen|6
+|tier|UU (beta)
+|clearpoke
+|poke|p1|Vaporeon, F
+|poke|p1|Honchkrow, F
+|poke|p1|Diggersby, F
+|poke|p1|Blastoise, M
+|poke|p1|Gogoat, F
+|poke|p1|Nidoking, M
+|poke|p2|Tangrowth, F
+|poke|p2|Noivern, F
+|poke|p2|Sawsbuck, M
+|poke|p2|Venomoth, M, shiny
+|poke|p2|Barbaracle, M
+|poke|p2|Aggron, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Blastoise|Blastoise, M|300\/300
+|switch|p2a: Noivern|Noivern, F|356\/356
+|turn|1
+|callback|decision
+|chat|plini|i used this team in ou haha
+|chat|plini|they all turned out to be uu in the end
+|chat|PrincePOLO|hahaa
+|
+|-formechange|p1a: Blastoise|Blastoise-Mega
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Noivern|Boomburst|p1a: Blastoise
+|-damage|p1a: Blastoise|188\/300
+|move|p1a: Blastoise|Dark Pulse|p2a: Noivern
+|-damage|p2a: Noivern|212\/356
+|
+|turn|2
+|callback|decision
+|chat|PrincePOLO|so im fked
+|join|Tengen
+|
+|switch|p2a: Tangrowth|Tangrowth, F|386\/386
+|move|p1a: Blastoise|Dark Pulse|p2a: Tangrowth
+|-damage|p2a: Tangrowth|97\/386
+|
+|-heal|p2a: Tangrowth|121\/386|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p1a: Blastoise|Dark Pulse|p2a: Tangrowth
+|-damage|p2a: Tangrowth|0 fnt
+|faint|p2a: Tangrowth
+|
+|callback|decision
+|
+|switch|p2a: Venomoth|Venomoth, M, shiny|344\/344
+|turn|4
+|callback|decision
+|chat|plini|i feel bad for usings megatoise
+|chat|plini|but then i see someone using cube
+|
+|move|p2a: Venomoth|Sleep Powder|p1a: Blastoise
+|-status|p1a: Blastoise|slp
+|cant|p1a: Blastoise|slp
+|
+|turn|5
+|callback|decision
+|chat|PrincePOLO|:(
+|
+|move|p2a: Venomoth|Quiver Dance|p2a: Venomoth
+|-boost|p2a: Venomoth|spa|1
+|-boost|p2a: Venomoth|spd|1
+|-boost|p2a: Venomoth|spe|1
+|cant|p1a: Blastoise|slp
+|
+|turn|6
+|callback|decision
+|
+|switch|p1a: Gogoat|Gogoat, F|450\/450
+|move|p2a: Venomoth|Quiver Dance|p2a: Venomoth
+|-boost|p2a: Venomoth|spa|1
+|-boost|p2a: Venomoth|spd|1
+|-boost|p2a: Venomoth|spe|1
+|
+|turn|7
+|callback|decision
+|
+|move|p2a: Venomoth|Baton Pass|p2a: Venomoth
+|callback|decision
+|
+|switch|p2a: Aggron|Aggron, M|341\/341
+|move|p1a: Gogoat|Leech Seed|p2a: Aggron|[miss]
+|-miss|p1a: Gogoat|p2a: Aggron
+|
+|turn|8
+|callback|decision
+|
+|-formechange|p2a: Aggron|Aggron-Mega
+|message|Aggron has Mega Evolved into Mega Aggron!
+|move|p2a: Aggron|Curse|p1a: Gogoat
+|-boost|p2a: Aggron|atk|1
+|-boost|p2a: Aggron|def|1
+|-unboost|p2a: Aggron|spe|1
+|move|p1a: Gogoat|Leech Seed|p2a: Aggron|[miss]
+|-miss|p1a: Gogoat|p2a: Aggron
+|
+|turn|9
+|callback|decision
+|chat|plini|really
+|chat|plini|lol what do
+|chat|Tengen|dat bad luck
+|chat|plini|im probs guna get swept now haha
+|
+|switch|p1a: Vaporeon|Vaporeon, F|464\/464
+|move|p2a: Aggron|Stealth Rock|p1a: Vaporeon
+|-sidestart|p1: plini|move: Stealth Rock
+|
+|turn|10
+|callback|decision
+|chat|plini|u there?
+|chat|PrincePOLO|yup
+|chat|PrincePOLO|lagg
+|
+|move|p2a: Aggron|Earthquake|p1a: Vaporeon
+|-damage|p1a: Vaporeon|306\/464
+|move|p1a: Vaporeon|Scald|p2a: Aggron
+|-damage|p2a: Aggron|292\/341
+|
+|-heal|p1a: Vaporeon|335\/464|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p2a: Aggron|Curse|p1a: Vaporeon
+|-boost|p2a: Aggron|atk|1
+|-boost|p2a: Aggron|def|1
+|-unboost|p2a: Aggron|spe|1
+|move|p1a: Vaporeon|Scald|p2a: Aggron
+|-damage|p2a: Aggron|244\/341
+|
+|-heal|p1a: Vaporeon|364\/464|[from] item: Leftovers
+|turn|12
+|callback|decision
+|chat|PrincePOLO|this has turned into a super tank huh?
+|
+|move|p1a: Vaporeon|Scald|p2a: Aggron
+|-damage|p2a: Aggron|199\/341
+|move|p2a: Aggron|Earthquake|p1a: Vaporeon
+|-crit|p1a: Vaporeon
+|-damage|p1a: Vaporeon|67\/464
+|
+|-heal|p1a: Vaporeon|96\/464|[from] item: Leftovers
+|turn|13
+|callback|decision
+|chat|plini|i never get lucky with my burns
+|
+|move|p1a: Vaporeon|Scald|p2a: Aggron
+|-damage|p2a: Aggron|150\/341
+|move|p2a: Aggron|Earthquake|p1a: Vaporeon
+|-damage|p1a: Vaporeon|0 fnt
+|faint|p1a: Vaporeon
+|
+|callback|decision
+|
+|switch|p1a: Gogoat|Gogoat, F|450\/450
+|-damage|p1a: Gogoat|394\/450|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|move|p1a: Gogoat|Leech Seed|p2a: Aggron
+|-start|p2a: Aggron|move: Leech Seed
+|move|p2a: Aggron|Heavy Slam|p1a: Gogoat
+|-damage|p1a: Gogoat|0 fnt
+|faint|p1a: Gogoat
+|
+|callback|decision
+|chat|PrincePOLO|you are not allowdd to be lucky
+|
+|switch|p1a: Diggersby|Diggersby, F|312\/312
+|-damage|p1a: Diggersby|293\/312|[from] Stealth Rock
+|turn|15
+|callback|decision
+|
+|move|p1a: Diggersby|Earthquake|p2a: Aggron
+|-supereffective|p2a: Aggron
+|-damage|p2a: Aggron|69\/341
+|move|p2a: Aggron|Earthquake|p1a: Diggersby
+|-damage|p1a: Diggersby|29\/312
+|
+|-damage|p2a: Aggron|27\/341|[from] Leech Seed|[of] p1a: Diggersby
+|-heal|p1a: Diggersby|71\/312|[silent]
+|turn|16
+|callback|decision
+|
+|move|p1a: Diggersby|Earthquake|p2a: Aggron
+|-supereffective|p2a: Aggron
+|-damage|p2a: Aggron|0 fnt
+|faint|p2a: Aggron
+|
+|callback|decision
+|chat|plini|phew
+|chat|PrincePOLO|it ded :(
+|
+|switch|p2a: Noivern|Noivern, F|212\/356
+|turn|17
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M|188\/300 slp
+|-formechange|p1a: Blastoise|Blastoise-Mega
+|-damage|p1a: Blastoise|151\/300 slp|[from] Stealth Rock
+|move|p2a: Noivern|Focus Blast|p1a: Blastoise
+|-damage|p1a: Blastoise|63\/300 slp
+|
+|turn|18
+|callback|decision
+|
+|move|p2a: Noivern|Focus Blast|p1a: Blastoise
+|-damage|p1a: Blastoise|0 fnt
+|faint|p1a: Blastoise
+|
+|callback|decision
+|
+|switch|p1a: Diggersby|Diggersby, F|71\/312
+|-damage|p1a: Diggersby|52\/312|[from] Stealth Rock
+|turn|19
+|callback|decision
+|
+|move|p1a: Diggersby|Return|p2a: Noivern
+|-damage|p2a: Noivern|0 fnt
+|faint|p2a: Noivern
+|
+|callback|decision
+|
+|switch|p2a: Sawsbuck|Sawsbuck, M|364\/364
+|turn|20
+|callback|decision
+|
+|move|p1a: Diggersby|Return|p2a: Sawsbuck
+|-damage|p2a: Sawsbuck|76\/364
+|move|p2a: Sawsbuck|Horn Leech|p1a: Diggersby
+|-supereffective|p1a: Diggersby
+|-damage|p1a: Diggersby|0 fnt
+|-heal|p2a: Sawsbuck|102\/364|[from] drain|[of] p1a: Diggersby
+|faint|p1a: Diggersby
+|
+|-heal|p2a: Sawsbuck|124\/364|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Honchkrow|Honchkrow, F|342\/342
+|-damage|p1a: Honchkrow|257\/342|[from] Stealth Rock
+|turn|21
+|callback|decision
+|chat|PrincePOLO|god damn diggersby
+|chat|plini|lol
+|
+|move|p1a: Honchkrow|Sucker Punch|p2a: Sawsbuck
+|-damage|p2a: Sawsbuck|0 fnt
+|-damage|p1a: Honchkrow|223\/342|[from] item: Life Orb
+|faint|p2a: Sawsbuck
+|-boost|p1a: Honchkrow|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|switch|p2a: Venomoth|Venomoth, M, shiny|344\/344
+|turn|22
+|callback|decision
+|
+|move|p2a: Venomoth|Sleep Powder|p1a: Honchkrow
+|-status|p1a: Honchkrow|slp
+|cant|p1a: Honchkrow|slp
+|
+|turn|23
+|callback|decision
+|
+|move|p2a: Venomoth|Quiver Dance|p2a: Venomoth
+|-boost|p2a: Venomoth|spa|1
+|-boost|p2a: Venomoth|spd|1
+|-boost|p2a: Venomoth|spe|1
+|cant|p1a: Honchkrow|slp
+|
+|turn|24
+|callback|decision
+|chat|plini|gg
+|
+|move|p2a: Venomoth|Quiver Dance|p2a: Venomoth
+|-boost|p2a: Venomoth|spa|1
+|-boost|p2a: Venomoth|spd|1
+|-boost|p2a: Venomoth|spe|1
+|cant|p1a: Honchkrow|slp
+|
+|turn|25
+|callback|decision
+|
+|move|p2a: Venomoth|Baton Pass|p2a: Venomoth
+|callback|decision
+|chat|PrincePOLO|pwnamoth
+|chat|plini|wake uppp >.<
+|
+|switch|p2a: Barbaracle|Barbaracle, M|319\/319
+|-curestatus|p1a: Honchkrow|slp
+|move|p1a: Honchkrow|Brave Bird|p2a: Barbaracle
+|-resisted|p2a: Barbaracle
+|-damage|p2a: Barbaracle|108\/319
+|-damage|p1a: Honchkrow|153\/342|[from] recoil|[of] p2a: Barbaracle
+|-damage|p1a: Honchkrow|119\/342|[from] item: Life Orb
+|
+|turn|26
+|callback|decision
+|
+|move|p1a: Honchkrow|Sucker Punch|p2a: Barbaracle
+|-damage|p2a: Barbaracle|0 fnt
+|-damage|p1a: Honchkrow|85\/342|[from] item: Life Orb
+|faint|p2a: Barbaracle
+|-boost|p1a: Honchkrow|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|chat|PrincePOLO|WTF
+|
+|switch|p2a: Venomoth|Venomoth, M, shiny|344\/344
+|turn|27
+|callback|decision
+|chat|PrincePOLO|fkkkkkkk that
+|chat|plini|lol
+|
+|move|p2a: Venomoth|Sleep Powder|p1a: Honchkrow
+|-status|p1a: Honchkrow|slp
+|cant|p1a: Honchkrow|slp
+|
+|turn|28
+|callback|decision
+|
+|move|p2a: Venomoth|Quiver Dance|p2a: Venomoth
+|-boost|p2a: Venomoth|spa|1
+|-boost|p2a: Venomoth|spd|1
+|-boost|p2a: Venomoth|spe|1
+|cant|p1a: Honchkrow|slp
+|
+|turn|29
+|callback|decision
+|chat|plini|dammit xD
+|
+|move|p2a: Venomoth|Bug Buzz|p1a: Honchkrow
+|-damage|p1a: Honchkrow|0 fnt
+|faint|p1a: Honchkrow
+|
+|callback|decision
+|
+|switch|p1a: Nidoking|Nidoking, M|304\/304
+|-damage|p1a: Nidoking|285\/304|[from] Stealth Rock
+|turn|30
+|callback|decision
+|
+|move|p2a: Venomoth|Sleep Powder|p1a: Nidoking
+|-status|p1a: Nidoking|slp
+|cant|p1a: Nidoking|slp
+|
+|turn|31
+|callback|decision
+|chat|PrincePOLO|im fked lol gg
+|chat|plini|nope..
+|
+|move|p2a: Venomoth|Quiver Dance|p2a: Venomoth
+|-boost|p2a: Venomoth|spa|1
+|-boost|p2a: Venomoth|spd|1
+|-boost|p2a: Venomoth|spe|1
+|-curestatus|p1a: Nidoking|slp
+|move|p1a: Nidoking|Earth Power|p2a: Venomoth
+|-damage|p2a: Venomoth|204\/344
+|
+|-heal|p2a: Venomoth|225\/344|[from] item: Black Sludge
+|turn|32
+|callback|decision
+|chat|plini|.-.
+|
+|move|p2a: Venomoth|Sleep Powder|p1a: Nidoking|[miss]
+|-miss|p2a: Venomoth|p1a: Nidoking
+|move|p1a: Nidoking|Fire Blast|p2a: Venomoth
+|-supereffective|p2a: Venomoth
+|-damage|p2a: Venomoth|17\/344
+|
+|-heal|p2a: Venomoth|38\/344|[from] item: Black Sludge
+|turn|33
+|callback|decision
+|chat|plini|that did nothing haha
+|
+|move|p2a: Venomoth|Sleep Powder|p1a: Nidoking
+|-status|p1a: Nidoking|slp
+|cant|p1a: Nidoking|slp
+|
+|-heal|p2a: Venomoth|59\/344|[from] item: Black Sludge
+|turn|34
+|callback|decision
+|
+|move|p2a: Venomoth|Quiver Dance|p2a: Venomoth
+|-boost|p2a: Venomoth|spa|1
+|-boost|p2a: Venomoth|spd|1
+|-boost|p2a: Venomoth|spe|1
+|cant|p1a: Nidoking|slp
+|
+|-heal|p2a: Venomoth|80\/344|[from] item: Black Sludge
+|turn|35
+|callback|decision
+|chat|PrincePOLO|bulky venomoth hahaha
+|
+|move|p2a: Venomoth|Bug Buzz|p1a: Nidoking
+|-resisted|p1a: Nidoking
+|-damage|p1a: Nidoking|132\/304 slp
+|-curestatus|p1a: Nidoking|slp
+|move|p1a: Nidoking|Fire Blast|p2a: Venomoth|[miss]
+|-miss|p1a: Nidoking|p2a: Venomoth
+|
+|-heal|p2a: Venomoth|101\/344|[from] item: Black Sludge
+|turn|36
+|callback|decision
+|chat|plini|NO
+|chat|PrincePOLO|OH
+|chat|PrincePOLO|LOL
+|
+|move|p2a: Venomoth|Bug Buzz|p1a: Nidoking
+|-resisted|p1a: Nidoking
+|-damage|p1a: Nidoking|0 fnt
+|faint|p1a: Nidoking
+|
+|win|PrincePOLO
+|chat|plini|noooo
+|chat|PrincePOLO|YESSSSSSSSSSSSSSSSSS
+|chat|plini|gg
+|chat|PrincePOLO|hHAHHh\
+|chat|plini|xD
+|chat|plini|oh yea
+|chat|PrincePOLO|gG
+|chat|plini|the vaporeon used to be a quagsire in ou
+|chat|PrincePOLO|lololololololol Gg
+|chat|plini|for all the annoying swords
+|chat|plini|gg
+|leave|plini
+|player|p1
+|chat|PrincePOLO|venomoth
+|chat|PrincePOLO|is mvp

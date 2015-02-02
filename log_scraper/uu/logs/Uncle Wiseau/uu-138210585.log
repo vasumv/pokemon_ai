@@ -1,0 +1,347 @@
+|join|Uncle Wiseau
+|join|Sean B
+|player|p1|Uncle Wiseau|1
+|player|p2|Sean B|107
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Blissey, F
+|poke|p1|Milotic, M
+|poke|p1|Victini
+|poke|p1|Lucario, F
+|poke|p1|Donphan, F
+|poke|p1|Roserade, M
+|poke|p2|Mienshao, F
+|poke|p2|Hydreigon, F
+|poke|p2|Lucario, F
+|poke|p2|Ampharos, M
+|poke|p2|Gligar, M
+|poke|p2|Mew
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit three PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Victini|Victini|341\/341
+|switch|p2a: Gligar|Gligar, M|333\/333
+|turn|1
+|
+|move|p1a: Victini|Trick|p2a: Gligar
+|-activate|p1a: Victini|move: Trick|[of] p2a: Gligar
+|-item|p2a: Gligar|Choice Band|[from] move: Trick
+|-item|p1a: Victini|Eviolite|[from] move: Trick
+|move|p2a: Gligar|Stealth Rock|p1a: Victini
+|-sidestart|p1: Uncle Wiseau|move: Stealth Rock
+|
+|turn|2
+|
+|switch|p2a: Ampharos|Ampharos, M|383\/383
+|move|p1a: Victini|V-create|p2a: Ampharos
+|-damage|p2a: Ampharos|158\/383
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|
+|turn|3
+|
+|detailschange|p2a: Ampharos|Ampharos-Mega, M
+|message|Ampharos has Mega Evolved into Mega Ampharos!
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Victini|U-turn|p2a: Ampharos
+|-damage|p2a: Ampharos|107\/383
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|-damage|p1a: Blissey|625\/714|[from] Stealth Rock
+|move|p2a: Ampharos|Dragon Pulse|p1a: Blissey
+|-damage|p1a: Blissey|496\/714
+|
+|-heal|p1a: Blissey|540\/714|[from] item: Leftovers
+|turn|4
+|
+|move|p1a: Blissey|Thunder Wave|p2a: Ampharos
+|-fail|p2a: Ampharos
+|move|p2a: Ampharos|Rest|p2a: Ampharos
+|-status|p2a: Ampharos|slp
+|-heal|p2a: Ampharos|383\/383 slp|[silent]
+|-status|p2a: Ampharos|slp|[from] move: Rest
+|
+|-heal|p1a: Blissey|584\/714|[from] item: Leftovers
+|turn|5
+|
+|move|p1a: Blissey|Thunder Wave|p2a: Ampharos
+|-fail|p2a: Ampharos
+|cant|p2a: Ampharos|slp
+|move|p2a: Ampharos|Sleep Talk|p2a: Ampharos
+|move|p2a: Ampharos|Volt Switch|p1a: Blissey|[from]Sleep Talk
+|-damage|p1a: Blissey|491\/714
+|
+|switch|p2a: Mienshao|Mienshao, F|271\/271
+|
+|-heal|p1a: Blissey|535\/714|[from] item: Leftovers
+|turn|6
+|
+|switch|p1a: Milotic|Milotic, M|394\/394
+|-damage|p1a: Milotic|345\/394|[from] Stealth Rock
+|move|p2a: Mienshao|High Jump Kick|p1a: Milotic
+|-crit|p1a: Milotic
+|-damage|p1a: Milotic|0 fnt
+|-damage|p2a: Mienshao|244\/271|[from] item: Life Orb
+|faint|p1a: Milotic
+|
+|
+|switch|p1a: Donphan|Donphan, F|384\/384
+|-damage|p1a: Donphan|360\/384|[from] Stealth Rock
+|turn|7
+|
+|move|p2a: Mienshao|U-turn|p1a: Donphan
+|-damage|p1a: Donphan|291\/384
+|-damage|p2a: Mienshao|217\/271|[from] item: Life Orb
+|
+|switch|p2a: Mew|Mew|404\/404
+|move|p1a: Donphan|Rapid Spin|p2a: Mew
+|-damage|p2a: Mew|383\/404
+|-sideend|p1: Uncle Wiseau|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Donphan
+|
+|-heal|p2a: Mew|404\/404|[from] item: Leftovers
+|-heal|p1a: Donphan|315\/384|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Victini|Victini|341\/341
+|move|p2a: Mew|Psychic|p1a: Victini
+|-resisted|p1a: Victini
+|-damage|p1a: Victini|287\/341
+|
+|turn|9
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M|383\/383 slp
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Victini|V-create|p2a: Ampharos
+|-resisted|p2a: Ampharos
+|-damage|p2a: Ampharos|290\/383 slp
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|
+|turn|10
+|
+|move|p1a: Victini|U-turn|p2a: Ampharos
+|-damage|p2a: Ampharos|237\/383 slp
+|
+|switch|p1a: Blissey|Blissey, F|535\/714
+|cant|p2a: Ampharos|slp
+|move|p2a: Ampharos|Sleep Talk|p2a: Ampharos
+|move|p2a: Ampharos|Rest|p2a: Ampharos|[from]Sleep Talk
+|-fail|p2a: Ampharos
+|
+|-heal|p1a: Blissey|579\/714|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Blissey|Thunder Wave|p2a: Ampharos
+|-fail|p2a: Ampharos
+|-curestatus|p2a: Ampharos|slp
+|move|p2a: Ampharos|Volt Switch|p1a: Blissey
+|-damage|p1a: Blissey|483\/714
+|
+|switch|p2a: Mienshao|Mienshao, F|271\/271
+|
+|-heal|p1a: Blissey|527\/714|[from] item: Leftovers
+|turn|12
+|
+|switch|p1a: Victini|Victini|287\/341
+|move|p2a: Mienshao|High Jump Kick|p1a: Victini
+|-resisted|p1a: Victini
+|-damage|p1a: Victini|143\/341
+|-damage|p2a: Mienshao|244\/271|[from] item: Life Orb
+|
+|turn|13
+|
+|switch|p1a: Lucario|Lucario, F|282\/282
+|move|p2a: Mienshao|Knock Off|p1a: Lucario
+|-resisted|p1a: Lucario
+|-damage|p1a: Lucario|177\/282
+|-boost|p1a: Lucario|atk|1|[from] ability: Justified
+|-enditem|p1a: Lucario|Life Orb|[from] move: Knock Off|[of] p2a: Mienshao
+|-damage|p2a: Mienshao|217\/271|[from] item: Life Orb
+|
+|turn|14
+|
+|move|p1a: Lucario|Extreme Speed|p2a: Mienshao
+|-damage|p2a: Mienshao|5\/271
+|move|p2a: Mienshao|High Jump Kick|p1a: Lucario
+|-supereffective|p1a: Lucario
+|-damage|p1a: Lucario|0 fnt
+|-damage|p2a: Mienshao|0 fnt|[from] item: Life Orb
+|faint|p1a: Lucario
+|faint|p2a: Mienshao
+|
+|
+|switch|p1a: Victini|Victini|143\/341
+|switch|p2a: Ampharos|Ampharos-Mega, M|237\/383
+|-ability|p2a: Ampharos|Mold Breaker
+|turn|15
+|
+|move|p1a: Victini|U-turn|p2a: Ampharos
+|-damage|p2a: Ampharos|190\/383
+|
+|switch|p1a: Donphan|Donphan, F|315\/384
+|move|p2a: Ampharos|Volt Switch|p1a: Donphan
+|-immune|p1a: Donphan|[msg]
+|
+|-heal|p1a: Donphan|339\/384|[from] item: Leftovers
+|turn|16
+|
+|switch|p2a: Mew|Mew|404\/404
+|move|p1a: Donphan|Earthquake|p2a: Mew
+|-damage|p2a: Mew|277\/404
+|
+|-heal|p2a: Mew|302\/404|[from] item: Leftovers
+|-heal|p1a: Donphan|363\/384|[from] item: Leftovers
+|turn|17
+|
+|switch|p1a: Roserade|Roserade, M|262\/262
+|move|p2a: Mew|Psychic|p1a: Roserade
+|-supereffective|p1a: Roserade
+|-damage|p1a: Roserade|58\/262
+|
+|-heal|p2a: Mew|327\/404|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Roserade|Sleep Powder|p2a: Mew
+|-status|p2a: Mew|slp
+|cant|p2a: Mew|slp
+|
+|-heal|p2a: Mew|352\/404 slp|[from] item: Leftovers
+|turn|19
+|
+|move|p1a: Roserade|Sludge Bomb|p2a: Mew
+|-damage|p2a: Mew|210\/404 slp
+|-damage|p1a: Roserade|32\/262|[from] item: Life Orb
+|cant|p2a: Mew|slp
+|
+|-heal|p2a: Mew|235\/404 slp|[from] item: Leftovers
+|turn|20
+|
+|move|p1a: Roserade|Leaf Storm|p2a: Mew
+|-damage|p2a: Mew|15\/404 slp
+|-unboost|p1a: Roserade|spa|2
+|-damage|p1a: Roserade|6\/262|[from] item: Life Orb
+|cant|p2a: Mew|slp
+|
+|-heal|p2a: Mew|40\/404 slp|[from] item: Leftovers
+|turn|21
+|
+|move|p1a: Roserade|Sludge Bomb|p2a: Mew
+|-damage|p2a: Mew|0 fnt
+|-damage|p1a: Roserade|0 fnt|[from] item: Life Orb
+|faint|p2a: Mew
+|faint|p1a: Roserade
+|
+|
+|switch|p1a: Blissey|Blissey, F|527\/714
+|switch|p2a: Ampharos|Ampharos-Mega, M|190\/383
+|-ability|p2a: Ampharos|Mold Breaker
+|turn|22
+|
+|switch|p1a: Donphan|Donphan, F|363\/384
+|move|p2a: Ampharos|Volt Switch|p1a: Donphan
+|-immune|p1a: Donphan|[msg]
+|
+|-heal|p1a: Donphan|384\/384|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Ampharos|Dragon Pulse|p1a: Donphan
+|-damage|p1a: Donphan|152\/384
+|move|p1a: Donphan|Knock Off|p2a: Ampharos
+|-crit|p2a: Ampharos
+|-damage|p2a: Ampharos|121\/383
+|
+|-heal|p1a: Donphan|176\/384|[from] item: Leftovers
+|turn|24
+|
+|switch|p1a: Blissey|Blissey, F|527\/714
+|move|p2a: Ampharos|Dragon Pulse|p1a: Blissey
+|-damage|p1a: Blissey|418\/714
+|
+|-heal|p1a: Blissey|462\/714|[from] item: Leftovers
+|turn|25
+|
+|move|p1a: Blissey|Seismic Toss|p2a: Ampharos
+|-damage|p2a: Ampharos|21\/383
+|move|p2a: Ampharos|Volt Switch|p1a: Blissey
+|-damage|p1a: Blissey|354\/714
+|
+|switch|p2a: Lucario|Lucario, F|281\/281
+|
+|-heal|p1a: Blissey|398\/714|[from] item: Leftovers
+|turn|26
+|
+|move|p2a: Lucario|Close Combat|p1a: Blissey
+|-supereffective|p1a: Blissey
+|-damage|p1a: Blissey|0 fnt
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|-damage|p2a: Lucario|253\/281|[from] item: Life Orb
+|faint|p1a: Blissey
+|
+|
+|switch|p1a: Victini|Victini|143\/341
+|turn|27
+|
+|switch|p2a: Gligar|Gligar, M|333\/333
+|move|p1a: Victini|V-create|p2a: Gligar
+|-damage|p2a: Gligar|134\/333
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|
+|turn|28
+|
+|switch|p1a: Donphan|Donphan, F|176\/384
+|move|p2a: Gligar|U-turn|p1a: Donphan
+|-damage|p1a: Donphan|137\/384
+|
+|switch|p2a: Lucario|Lucario, F|253\/281
+|
+|-heal|p1a: Donphan|161\/384|[from] item: Leftovers
+|turn|29
+|
+|move|p2a: Lucario|Close Combat|p1a: Donphan
+|-damage|p1a: Donphan|0 fnt
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|-damage|p2a: Lucario|225\/281|[from] item: Life Orb
+|faint|p1a: Donphan
+|
+|
+|switch|p1a: Victini|Victini|143\/341
+|turn|30
+|
+|move|p2a: Lucario|Extreme Speed|p1a: Victini
+|-damage|p1a: Victini|18\/341
+|-damage|p2a: Lucario|197\/281|[from] item: Life Orb
+|move|p1a: Victini|Bolt Strike|p2a: Lucario
+|-crit|p2a: Lucario
+|-damage|p2a: Lucario|0 fnt
+|faint|p2a: Lucario
+|
+|
+|switch|p2a: Hydreigon|Hydreigon, F|325\/325
+|turn|31
+|
+|move|p2a: Hydreigon|U-turn|p1a: Victini
+|-damage|p1a: Victini|0 fnt
+|faint|p1a: Victini
+|
+|win|Sean B
+|raw|Ladder updating...
+|raw|Uncle Wiseau's rating: 1618 &rarr; <strong>1602<\/strong><br \/>(-16 for losing)
+|raw|Sean B's rating: 1674 &rarr; <strong>1690<\/strong><br \/>(+16 for winning)

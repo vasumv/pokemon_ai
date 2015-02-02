@@ -1,0 +1,278 @@
+|join|RowDog
+|join|st123
+|player|p1|RowDog|80
+|player|p2|st123|170
+|gametype|singles
+|gen|6
+|tier|UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Nidoking, M
+|poke|p1|Hydreigon, M
+|poke|p1|Gorebyss, F
+|poke|p1|Roserade, M
+|poke|p1|Victini
+|poke|p1|Lucario, M
+|poke|p2|Froslass, F
+|poke|p2|Sableye, F
+|poke|p2|Lucario, F
+|poke|p2|Swampert, F
+|poke|p2|Roserade, F
+|poke|p2|Noivern, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|chat|RowDog|lol, I'll probs get wrecked
+|chat|RowDog|gl
+|
+|start
+|switch|p1a: Victini|Victini|341\/341
+|switch|p2a: Froslass|Froslass, F|301\/301
+|turn|1
+|chat|st123|gl
+|
+|move|p2a: Froslass|Spikes|p1a: Victini
+|-sidestart|p1: RowDog|Spikes
+|move|p1a: Victini|Trick|p2a: Froslass
+|-activate|p1a: Victini|move: Trick|[of] p2a: Froslass
+|-item|p2a: Froslass|Choice Band|[from] move: Trick
+|-item|p1a: Victini|Focus Sash|[from] move: Trick
+|
+|turn|2
+|
+|switch|p2a: Swampert|Swampert, F|404\/404
+|switch|p1a: Gorebyss|Gorebyss, F|314\/314
+|-damage|p1a: Gorebyss|275\/314|[from] Spikes
+|
+|turn|3
+|
+|move|p1a: Gorebyss|Scald|p2a: Swampert
+|-damage|p2a: Swampert|290\/404
+|move|p2a: Swampert|Stealth Rock|p1a: Gorebyss
+|-sidestart|p1: RowDog|move: Stealth Rock
+|
+|-heal|p2a: Swampert|315\/404|[from] item: Leftovers
+|turn|4
+|
+|move|p1a: Gorebyss|Scald|p2a: Swampert
+|-damage|p2a: Swampert|198\/404
+|move|p2a: Swampert|Earthquake|p1a: Gorebyss
+|-damage|p1a: Gorebyss|148\/314
+|
+|-heal|p2a: Swampert|223\/404|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Sableye|Sableye, F|303\/303
+|move|p1a: Gorebyss|Shell Smash|p1a: Gorebyss
+|-boost|p1a: Gorebyss|atk|2
+|-boost|p1a: Gorebyss|spa|2
+|-boost|p1a: Gorebyss|spe|2
+|-unboost|p1a: Gorebyss|def|1
+|-unboost|p1a: Gorebyss|spd|1
+|-enditem|p1a: Gorebyss|White Herb
+|-restoreboost|p1a: Gorebyss|[silent]
+|
+|turn|6
+|
+|move|p2a: Sableye|Taunt|p1a: Gorebyss
+|-start|p1a: Gorebyss|move: Taunt
+|move|p1a: Gorebyss|Scald|p2a: Sableye
+|-damage|p2a: Sableye|113\/303
+|-status|p2a: Sableye|brn
+|
+|-heal|p2a: Sableye|131\/303 brn|[from] item: Leftovers
+|-damage|p2a: Sableye|94\/303 brn|[from] brn
+|turn|7
+|
+|move|p2a: Sableye|Will-O-Wisp|p1a: Gorebyss
+|-status|p1a: Gorebyss|brn
+|move|p1a: Gorebyss|Scald|p2a: Sableye
+|-damage|p2a: Sableye|0 fnt
+|faint|p2a: Sableye
+|
+|-damage|p1a: Gorebyss|109\/314 brn|[from] brn
+|
+|switch|p2a: Lucario|Lucario, F|281\/281
+|turn|8
+|join|w0t4
+|
+|move|p2a: Lucario|Extreme Speed|p1a: Gorebyss
+|-damage|p1a: Gorebyss|0 fnt
+|-damage|p2a: Lucario|253\/281|[from] item: Life Orb
+|faint|p1a: Gorebyss
+|
+|chat|w0t4|u_u
+|
+|switch|p1a: Victini|Victini|341\/341
+|-damage|p1a: Victini|299\/341|[from] Spikes
+|-damage|p1a: Victini|214\/341|[from] Stealth Rock
+|turn|9
+|
+|switch|p2a: Swampert|Swampert, F|223\/404
+|move|p1a: Victini|U-turn|p2a: Swampert
+|-crit|p2a: Swampert
+|-damage|p2a: Swampert|148\/404
+|
+|switch|p1a: Roserade|Roserade, M|261\/261
+|-damage|p1a: Roserade|229\/261|[from] Stealth Rock
+|-damage|p1a: Roserade|197\/261|[from] Spikes
+|
+|-heal|p2a: Swampert|173\/404|[from] item: Leftovers
+|turn|10
+|
+|switch|p2a: Froslass|Froslass, F|301\/301
+|move|p1a: Roserade|Sludge Bomb|p2a: Froslass
+|-resisted|p2a: Froslass
+|-damage|p2a: Froslass|161\/301
+|-status|p2a: Froslass|psn
+|-damage|p1a: Roserade|171\/261|[from] item: Life Orb
+|
+|-damage|p2a: Froslass|124\/301 psn|[from] psn
+|turn|11
+|
+|move|p2a: Froslass|Ice Shard|p1a: Roserade
+|-supereffective|p1a: Roserade
+|-damage|p1a: Roserade|0 fnt
+|faint|p1a: Roserade
+|
+|-damage|p2a: Froslass|87\/301 psn|[from] psn
+|chat|w0t4|o
+|
+|switch|p1a: Lucario|Lucario, M|282\/282
+|-damage|p1a: Lucario|274\/282|[from] Stealth Rock
+|-damage|p1a: Lucario|239\/282|[from] Spikes
+|turn|12
+|
+|move|p2a: Froslass|Ice Shard|p1a: Lucario
+|-resisted|p1a: Lucario
+|-damage|p1a: Lucario|191\/282
+|move|p1a: Lucario|Swords Dance|p1a: Lucario
+|-boost|p1a: Lucario|atk|2
+|
+|-damage|p2a: Froslass|50\/301 psn|[from] psn
+|turn|13
+|
+|move|p2a: Froslass|Ice Shard|p1a: Lucario
+|-resisted|p1a: Lucario
+|-damage|p1a: Lucario|145\/282
+|move|p1a: Lucario|Swords Dance|p1a: Lucario
+|-boost|p1a: Lucario|atk|2
+|
+|-damage|p2a: Froslass|13\/301 psn|[from] psn
+|turn|14
+|
+|move|p2a: Froslass|Ice Shard|p1a: Lucario
+|-crit|p1a: Lucario
+|-resisted|p1a: Lucario
+|-damage|p1a: Lucario|67\/282
+|move|p1a: Lucario|Swords Dance|p1a: Lucario
+|-boost|p1a: Lucario|atk|2
+|
+|-damage|p2a: Froslass|0 fnt|[from] psn
+|faint|p2a: Froslass
+|
+|switch|p2a: Lucario|Lucario, F|253\/281
+|turn|15
+|
+|move|p2a: Lucario|Extreme Speed|p1a: Lucario
+|-resisted|p1a: Lucario
+|-damage|p1a: Lucario|0 fnt
+|-damage|p2a: Lucario|225\/281|[from] item: Life Orb
+|faint|p1a: Lucario
+|
+|chat|RowDog|dammit
+|chat|RowDog|is that Adamant?
+|chat|st123|nah i run jolly for speed ties
+|chat|RowDog|ah damn
+|
+|switch|p1a: Nidoking|Nidoking, M|303\/303
+|-damage|p1a: Nidoking|266\/303|[from] Spikes
+|-damage|p1a: Nidoking|248\/303|[from] Stealth Rock
+|turn|16
+|chat|st123|so many lucs around
+|
+|switch|p2a: Swampert|Swampert, F|173\/404
+|move|p1a: Nidoking|Superpower|p2a: Swampert
+|-damage|p2a: Swampert|76\/404
+|-unboost|p1a: Nidoking|atk|1
+|-unboost|p1a: Nidoking|def|1
+|-damage|p1a: Nidoking|218\/303|[from] item: Life Orb
+|
+|-heal|p2a: Swampert|101\/404|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Nidoking|Sludge Wave|p2a: Swampert
+|-resisted|p2a: Swampert
+|-damage|p2a: Swampert|0 fnt
+|faint|p2a: Swampert
+|
+|
+|switch|p2a: Noivern|Noivern, M|311\/311
+|turn|18
+|
+|move|p1a: Nidoking|Sucker Punch|p2a: Noivern
+|-damage|p2a: Noivern|249\/311
+|-damage|p1a: Nidoking|188\/303|[from] item: Life Orb
+|move|p2a: Noivern|Draco Meteor|p1a: Nidoking
+|-damage|p1a: Nidoking|0 fnt
+|-unboost|p2a: Noivern|spa|2
+|-damage|p2a: Noivern|218\/311|[from] item: Life Orb
+|faint|p1a: Nidoking
+|
+|
+|switch|p1a: Hydreigon|Hydreigon, M|325\/325
+|-damage|p1a: Hydreigon|285\/325|[from] Stealth Rock
+|turn|19
+|
+|switch|p2a: Roserade|Roserade, F|261\/261
+|move|p1a: Hydreigon|Dragon Pulse|p2a: Roserade
+|-damage|p2a: Roserade|70\/261
+|-damage|p1a: Hydreigon|253\/325|[from] item: Life Orb
+|
+|turn|20
+|
+|move|p1a: Hydreigon|Dragon Pulse|p2a: Roserade
+|-damage|p2a: Roserade|0 fnt
+|-damage|p1a: Hydreigon|221\/325|[from] item: Life Orb
+|faint|p2a: Roserade
+|
+|
+|switch|p2a: Noivern|Noivern, M|218\/311
+|turn|21
+|
+|switch|p1a: Victini|Victini|214\/341
+|-damage|p1a: Victini|172\/341|[from] Spikes
+|-damage|p1a: Victini|87\/341|[from] Stealth Rock
+|move|p2a: Noivern|Draco Meteor|p1a: Victini
+|-damage|p1a: Victini|0 fnt
+|-unboost|p2a: Noivern|spa|2
+|-damage|p2a: Noivern|187\/311|[from] item: Life Orb
+|faint|p1a: Victini
+|
+|
+|switch|p1a: Hydreigon|Hydreigon, M|221\/325
+|-damage|p1a: Hydreigon|181\/325|[from] Stealth Rock
+|turn|22
+|chat|RowDog|plz mis
+|chat|w0t4|miss draco pls
+|
+|move|p2a: Noivern|Draco Meteor|p1a: Hydreigon
+|-supereffective|p1a: Hydreigon
+|-damage|p1a: Hydreigon|0 fnt
+|-unboost|p2a: Noivern|spa|2
+|-damage|p2a: Noivern|156\/311|[from] item: Life Orb
+|faint|p1a: Hydreigon
+|
+|win|st123
+|chat|w0t4|^^^
+|chat|w0t4|,
+|chat|RowDog|gg
+|chat|st123|gg
+|leave|w0t4
+|join|w0t4

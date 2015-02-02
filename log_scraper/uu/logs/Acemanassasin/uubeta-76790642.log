@@ -1,0 +1,323 @@
+|join|futuradellarana
+|join|Acemanassasin
+|player|p1|futuradellarana|2
+|player|p2|Acemanassasin|169
+|gametype|singles
+|gen|6
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Heracross, F
+|poke|p1|Scolipede, M
+|poke|p1|Nidoqueen, F
+|poke|p1|Florges, F
+|poke|p1|Reuniclus, M
+|poke|p1|Shuckle, F
+|poke|p2|Dusclops, M
+|poke|p2|Scolipede, F, shiny
+|poke|p2|Hitmonchan, M
+|poke|p2|Medicham, F, shiny
+|poke|p2|Darmanitan, F
+|poke|p2|Suicune, shiny
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: D_ostoevsky|Shuckle, F|244\/244
+|switch|p2a: Dusclops|Dusclops, M|257\/257
+|-ability|p2a: Dusclops|Pressure
+|turn|1
+|callback|decision
+|
+|move|p2a: Dusclops|Will-O-Wisp|p1a: D_ostoevsky
+|-status|p1a: D_ostoevsky|brn
+|move|p1a: D_ostoevsky|Knock Off|p2a: Dusclops
+|-supereffective|p2a: Dusclops
+|-damage|p2a: Dusclops|249\/257
+|-enditem|p2a: Dusclops|Eviolite|[from] move: Knock Off|[of] p1a: D_ostoevsky
+|
+|-damage|p1a: D_ostoevsky|214\/244 brn|[from] brn
+|turn|2
+|callback|decision
+|
+|move|p2a: Dusclops|Night Shade|p1a: D_ostoevsky
+|-damage|p1a: D_ostoevsky|114\/244 brn
+|move|p1a: D_ostoevsky|Sticky Web|p2a: Dusclops
+|-sidestart|p2: Acemanassasin|move: Sticky Web
+|
+|-damage|p1a: D_ostoevsky|84\/244 brn|[from] brn
+|turn|3
+|callback|decision
+|
+|move|p2a: Dusclops|Curse|p1a: D_ostoevsky
+|-start|p1a: D_ostoevsky|Curse|[of] p2a: Dusclops
+|-damage|p2a: Dusclops|121\/257
+|move|p1a: D_ostoevsky|Stealth Rock|p2a: Dusclops
+|-sidestart|p2: Acemanassasin|move: Stealth Rock
+|
+|-damage|p1a: D_ostoevsky|54\/244 brn|[from] brn
+|-damage|p1a: D_ostoevsky|0 fnt|[from] Curse
+|faint|p1a: D_ostoevsky
+|callback|decision
+|
+|switch|p1a: Husserl|Scolipede, M|324\/324
+|turn|4
+|callback|decision
+|
+|move|p1a: Husserl|Swords Dance|p1a: Husserl
+|-boost|p1a: Husserl|atk|2
+|move|p2a: Dusclops|Will-O-Wisp|p1a: Husserl
+|-status|p1a: Husserl|brn
+|
+|-damage|p1a: Husserl|284\/324 brn|[from] brn
+|turn|5
+|callback|decision
+|
+|move|p1a: Husserl|Swords Dance|p1a: Husserl
+|-boost|p1a: Husserl|atk|2
+|move|p2a: Dusclops|Pain Split|p1a: Husserl
+|-sethp|p1a: Husserl|202\/324 brn|p2a: Dusclops|202\/257|[from] move: Pain Split
+|
+|-heal|p1a: Husserl|222\/324 brn|[from] item: Black Sludge
+|-damage|p1a: Husserl|182\/324 brn|[from] brn
+|turn|6
+|callback|decision
+|
+|move|p1a: Husserl|Baton Pass|p1a: Husserl
+|callback|decision
+|
+|switch|p1a: Sartre|Nidoqueen, F|384\/384
+|move|p2a: Dusclops|Curse|p1a: Sartre
+|-start|p1a: Sartre|Curse|[of] p2a: Dusclops
+|-damage|p2a: Dusclops|74\/257
+|
+|-damage|p1a: Sartre|288\/384|[from] Curse
+|turn|7
+|callback|decision
+|
+|move|p1a: Sartre|Sludge Wave|p2a: Dusclops
+|-resisted|p2a: Dusclops
+|-damage|p2a: Dusclops|0 fnt
+|faint|p2a: Dusclops
+|
+|-damage|p1a: Sartre|192\/384|[from] Curse
+|callback|decision
+|
+|switch|p2a: Medicham|Medicham, F, shiny|324\/324
+|-damage|p2a: Medicham|304\/324|[from] Stealth Rock
+|-activate|p2a: Medicham|move: Sticky Web
+|-unboost|p2a: Medicham|spe|1
+|turn|8
+|callback|decision
+|
+|switch|p1a: D_ostoevsky|Reuniclus, M|424\/424
+|-formechange|p2a: Medicham|Medicham-Mega
+|message|Medicham has Mega Evolved into Mega Medicham!
+|move|p2a: Medicham|Fake Out|p1a: D_ostoevsky
+|-damage|p1a: D_ostoevsky|352\/424
+|
+|-heal|p1a: D_ostoevsky|378\/424|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p2a: Suicune|Suicune, shiny|404\/404
+|-damage|p2a: Suicune|354\/404|[from] Stealth Rock
+|-activate|p2a: Suicune|move: Sticky Web
+|-unboost|p2a: Suicune|spe|1
+|-ability|p2a: Suicune|Pressure
+|move|p1a: D_ostoevsky|Calm Mind|p1a: D_ostoevsky
+|-boost|p1a: D_ostoevsky|spa|1
+|-boost|p1a: D_ostoevsky|spd|1
+|
+|-heal|p2a: Suicune|379\/404|[from] item: Leftovers
+|-heal|p1a: D_ostoevsky|404\/424|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: D_ostoevsky|Psyshock|p2a: Suicune
+|-damage|p2a: Suicune|264\/404
+|
+|-heal|p2a: Suicune|289\/404|[from] item: Leftovers
+|-heal|p1a: D_ostoevsky|424\/424|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: D_ostoevsky|Calm Mind|p1a: D_ostoevsky
+|-boost|p1a: D_ostoevsky|spa|1
+|-boost|p1a: D_ostoevsky|spd|1
+|
+|-heal|p2a: Suicune|314\/404|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: D_ostoevsky|Calm Mind|p1a: D_ostoevsky
+|-boost|p1a: D_ostoevsky|spa|1
+|-boost|p1a: D_ostoevsky|spd|1
+|
+|-heal|p2a: Suicune|339\/404|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: D_ostoevsky|Calm Mind|p1a: D_ostoevsky
+|-boost|p1a: D_ostoevsky|spa|1
+|-boost|p1a: D_ostoevsky|spd|1
+|
+|-heal|p2a: Suicune|364\/404|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: D_ostoevsky|Psyshock|p2a: Suicune
+|-damage|p2a: Suicune|159\/404
+|
+|-heal|p2a: Suicune|184\/404|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|move|p1a: D_ostoevsky|Psyshock|p2a: Suicune
+|-damage|p2a: Suicune|181\/404 slp
+|
+|-heal|p2a: Suicune|206\/404 slp|[from] item: Leftovers
+|turn|16
+|callback|decision
+|join|data plz
+|
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Rest|p2a: Suicune|[from]Sleep Talk
+|-fail|p2a: Suicune
+|move|p1a: D_ostoevsky|Calm Mind|p1a: D_ostoevsky
+|-boost|p1a: D_ostoevsky|spa|1
+|-boost|p1a: D_ostoevsky|spd|1
+|
+|-heal|p2a: Suicune|231\/404 slp|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Scald|p1a: D_ostoevsky|[from]Sleep Talk
+|-damage|p1a: D_ostoevsky|319\/424
+|move|p1a: D_ostoevsky|Psyshock|p2a: Suicune
+|-damage|p2a: Suicune|0 fnt
+|faint|p2a: Suicune
+|
+|-heal|p1a: D_ostoevsky|345\/424|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Darmanitan|Darmanitan, F|352\/352
+|-damage|p2a: Darmanitan|264\/352|[from] Stealth Rock
+|-activate|p2a: Darmanitan|move: Sticky Web
+|-unboost|p2a: Darmanitan|spe|1
+|turn|18
+|callback|decision
+|
+|move|p2a: Darmanitan|Flare Blitz|p1a: D_ostoevsky
+|-damage|p1a: D_ostoevsky|87\/424
+|-damage|p2a: Darmanitan|179\/352|[from] recoil|[of] p1a: D_ostoevsky
+|move|p1a: D_ostoevsky|Psyshock|p2a: Darmanitan
+|-damage|p2a: Darmanitan|0 fnt
+|faint|p2a: Darmanitan
+|
+|-heal|p1a: D_ostoevsky|113\/424|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Hitmonchan|Hitmonchan, M|242\/242
+|-activate|p2a: Hitmonchan|move: Sticky Web
+|-unboost|p2a: Hitmonchan|spe|1
+|-damage|p2a: Hitmonchan|227\/242|[from] Stealth Rock
+|turn|19
+|callback|decision
+|
+|move|p2a: Hitmonchan|Thunder Punch|p1a: D_ostoevsky
+|-crit|p1a: D_ostoevsky
+|-damage|p1a: D_ostoevsky|3\/424
+|move|p1a: D_ostoevsky|Psyshock|p2a: Hitmonchan
+|-supereffective|p2a: Hitmonchan
+|-damage|p2a: Hitmonchan|0 fnt
+|faint|p2a: Hitmonchan
+|
+|-heal|p1a: D_ostoevsky|29\/424|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Scolipede|Scolipede, F, shiny|324\/324
+|-activate|p2a: Scolipede|move: Sticky Web
+|-unboost|p2a: Scolipede|spe|1
+|-damage|p2a: Scolipede|243\/324|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|move|p2a: Scolipede|Swords Dance|p2a: Scolipede
+|-boost|p2a: Scolipede|atk|2
+|move|p1a: D_ostoevsky|Recover|p1a: D_ostoevsky
+|-heal|p1a: D_ostoevsky|241\/424
+|
+|-heal|p1a: D_ostoevsky|267\/424|[from] item: Leftovers
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|21
+|callback|decision
+|
+|move|p2a: Scolipede|Protect|p2a: Scolipede
+|-singleturn|p2a: Scolipede|Protect
+|move|p1a: D_ostoevsky|Psyshock|p2a: Scolipede
+|-activate|p2a: Scolipede|Protect
+|
+|-heal|p1a: D_ostoevsky|293\/424|[from] item: Leftovers
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|22
+|callback|decision
+|
+|move|p2a: Scolipede|Baton Pass|p2a: Scolipede
+|callback|decision
+|
+|switch|p2a: Medicham|Medicham, F, shiny|304\/324
+|-formechange|p2a: Medicham|Medicham-Mega
+|-activate|p2a: Medicham|move: Sticky Web
+|-unboost|p2a: Medicham|spe|1
+|-damage|p2a: Medicham|284\/324|[from] Stealth Rock
+|move|p1a: D_ostoevsky|Psyshock|p2a: Medicham
+|-damage|p2a: Medicham|0 fnt
+|faint|p2a: Medicham
+|
+|-heal|p1a: D_ostoevsky|319\/424|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Scolipede|Scolipede, F, shiny|243\/324
+|-damage|p2a: Scolipede|162\/324|[from] Stealth Rock
+|-activate|p2a: Scolipede|move: Sticky Web
+|-unboost|p2a: Scolipede|spe|1
+|turn|23
+|callback|decision
+|-message|Acemanassasin forfeited.
+|
+|win|futuradellarana
+|raw|Ladder updating...
+|leave|Acemanassasin
+|player|p2
+|raw|futuradellarana's rating: 1007 &rarr; <strong>1408<\/strong><br \/>(+401 for winning)
+|raw|Acemanassasin's rating: 1598 &rarr; <strong>1593<\/strong><br \/>(-5 for losing)

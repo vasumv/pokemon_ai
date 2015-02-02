@@ -1,0 +1,95 @@
+|join|jacksonjack
+|join|DynoMyte
+|player|p1|jacksonjack|92
+|player|p2|DynoMyte|153
+|gametype|singles
+|tier|Pokebank OU (beta)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Aegislash, M
+|poke|p1|Forretress, F
+|poke|p1|Gengar, F
+|poke|p1|Chansey, F
+|poke|p1|Scizor, F
+|poke|p1|Togekiss, M
+|poke|p2|Malamar, M
+|poke|p2|Lucario, F
+|poke|p2|Vivillon, M
+|poke|p2|Tyrantrum, F
+|poke|p2|Clawitzer, M
+|poke|p2|Chesnaught, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Forretress|Forretress, F|354\/354
+|switch|p2a: Lucario|Lucario, F|281\/281
+|turn|1
+|callback|decision
+|
+|-formechange|p2a: Lucario|Lucario-Mega
+|message|Lucario mega-evolved into Lucario-Mega!
+|move|p2a: Lucario|Swords Dance|p2a: Lucario
+|-boost|p2a: Lucario|atk|2
+|move|p1a: Forretress|Spikes|p2a: Lucario
+|-sidestart|p2: DynoMyte|Spikes
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Lucario|Swords Dance|p2a: Lucario
+|-boost|p2a: Lucario|atk|2
+|move|p1a: Forretress|Spikes|p2a: Lucario
+|-sidestart|p2: DynoMyte|Spikes
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Lucario|Close Combat|p1a: Forretress
+|-activate|p1a: Forretress|Sturdy
+|-damage|p1a: Forretress|1\/354
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|move|p1a: Forretress|Spikes|p2a: Lucario
+|-sidestart|p2: DynoMyte|Spikes
+|
+|turn|4
+|callback|decision
+|-enditem|p1a: Forretress|Custap Berry|[eat]
+|-activate|p1a: Forretress|Custap Berry
+|
+|move|p2a: Lucario|Bullet Punch|p1a: Forretress
+|-resisted|p1a: Forretress
+|-damage|p1a: Forretress|0 fnt
+|faint|p1a: Forretress
+|
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|343\/343
+|turn|5
+|callback|decision
+|
+|move|p2a: Lucario|Close Combat|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|faint|p1a: Scizor
+|
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, M|324\/324
+|turn|6
+|callback|decision
+|-message|jacksonjack forfeited.
+|
+|win|DynoMyte
+|raw|Ladder updating...
+|leave|jacksonjack
+|player|p1

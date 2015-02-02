@@ -1,0 +1,211 @@
+|join|Wolfhead69
+|join|IcyFireDelta
+|player|p1|Wolfhead69|1
+|player|p2|IcyFireDelta|265
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Aerodactyl, M
+|poke|p1|Lucario, F
+|poke|p1|Chandelure, F
+|poke|p1|Galvantula, F
+|poke|p1|Donphan, M
+|poke|p1|Diancie
+|poke|p2|Suicune
+|poke|p2|Azelf
+|poke|p2|Ambipom, M
+|poke|p2|Alakazam, F
+|poke|p2|Blastoise, F
+|poke|p2|Porygon2
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Galvantula|Galvantula, F|282\/282
+|switch|p2a: Ambipom|Ambipom, M|292\/292
+|turn|1
+|
+|switch|p1a: Chandelure|Chandelure, F|261\/261
+|move|p2a: Ambipom|Fake Out|p1a: Chandelure
+|-immune|p1a: Chandelure|[msg]
+|
+|turn|2
+|
+|switch|p2a: Porygon2|Porygon2|374\/374
+|-ability|p2a: Porygon2|Flash Fire|[from] ability: Trace|[of] p1a: Chandelure
+|move|p1a: Chandelure|Trick|p2a: Porygon2
+|-activate|p1a: Chandelure|move: Trick|[of] p2a: Porygon2
+|-item|p2a: Porygon2|Choice Scarf|[from] move: Trick
+|-item|p1a: Chandelure|Eviolite|[from] move: Trick
+|
+|turn|3
+|
+|switch|p1a: Diancie|Diancie|304\/304
+|move|p2a: Porygon2|Psychic|p1a: Diancie
+|-damage|p1a: Diancie|244\/304
+|
+|-heal|p1a: Diancie|263\/304|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Suicune|Suicune|404\/404
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Diancie|Stealth Rock|p2a: Suicune
+|-sidestart|p2: IcyFireDelta|move: Stealth Rock
+|
+|-heal|p1a: Diancie|282\/304|[from] item: Leftovers
+|turn|5
+|
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: Diancie|Moonblast|p2a: Suicune
+|-damage|p2a: Suicune|337\/404
+|
+|-heal|p2a: Suicune|362\/404|[from] item: Leftovers
+|-heal|p1a: Diancie|301\/304|[from] item: Leftovers
+|turn|6
+|
+|switch|p1a: Chandelure|Chandelure, F|261\/261
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p2a: Suicune|387\/404|[from] item: Leftovers
+|turn|7
+|
+|move|p1a: Chandelure|Trick|p2a: Suicune
+|-activate|p1a: Chandelure|move: Trick|[of] p2a: Suicune
+|-item|p2a: Suicune|Eviolite|[from] move: Trick
+|-item|p1a: Chandelure|Leftovers|[from] move: Trick
+|move|p2a: Suicune|Scald|p1a: Chandelure
+|-supereffective|p1a: Chandelure
+|-damage|p1a: Chandelure|0 fnt
+|faint|p1a: Chandelure
+|
+|
+|switch|p1a: Galvantula|Galvantula, F|282\/282
+|turn|8
+|
+|move|p1a: Galvantula|Thunder|p2a: Suicune
+|-supereffective|p2a: Suicune
+|-damage|p2a: Suicune|255\/404
+|move|p2a: Suicune|Scald|p1a: Galvantula
+|-crit|p1a: Galvantula
+|-enditem|p1a: Galvantula|Focus Sash
+|-damage|p1a: Galvantula|1\/282
+|-status|p1a: Galvantula|brn
+|
+|-damage|p1a: Galvantula|0 fnt|[from] brn
+|faint|p1a: Galvantula
+|
+|switch|p1a: Donphan|Donphan, M|384\/384
+|turn|9
+|
+|move|p2a: Suicune|Scald|p1a: Donphan
+|-supereffective|p1a: Donphan
+|-activate|p1a: Donphan|Sturdy
+|-damage|p1a: Donphan|1\/384
+|move|p1a: Donphan|Earthquake|p2a: Suicune
+|-damage|p2a: Suicune|129\/404
+|
+|-heal|p1a: Donphan|25\/384|[from] item: Leftovers
+|turn|10
+|
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|move|p1a: Donphan|Earthquake|p2a: Suicune
+|-damage|p2a: Suicune|287\/404 slp
+|
+|-heal|p1a: Donphan|49\/384|[from] item: Leftovers
+|turn|11
+|
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Calm Mind|p2a: Suicune|[from]Sleep Talk
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: Donphan|Earthquake|p2a: Suicune
+|-damage|p2a: Suicune|160\/404 slp
+|
+|-heal|p1a: Donphan|73\/384|[from] item: Leftovers
+|turn|12
+|
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Scald|p1a: Donphan|[from]Sleep Talk
+|-supereffective|p1a: Donphan
+|-damage|p1a: Donphan|0 fnt
+|faint|p1a: Donphan
+|
+|
+|switch|p1a: Lucario|Lucario, F|282\/282
+|turn|13
+|
+|move|p1a: Lucario|Close Combat|p2a: Suicune
+|-damage|p2a: Suicune|3\/404 slp
+|-unboost|p1a: Lucario|def|1
+|-unboost|p1a: Lucario|spd|1
+|-damage|p1a: Lucario|254\/282|[from] item: Life Orb
+|-curestatus|p2a: Suicune|slp
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|
+|turn|14
+|
+|move|p1a: Lucario|Swords Dance|p1a: Lucario
+|-boost|p1a: Lucario|atk|2
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Scald|p1a: Lucario|[from]Sleep Talk
+|-damage|p1a: Lucario|0 fnt
+|faint|p1a: Lucario
+|
+|
+|switch|p1a: Aerodactyl|Aerodactyl, M|302\/302
+|-ability|p1a: Aerodactyl|Pressure
+|turn|15
+|
+|detailschange|p1a: Aerodactyl|Aerodactyl-Mega, M
+|message|Aerodactyl has Mega Evolved into Mega Aerodactyl!
+|move|p1a: Aerodactyl|Hone Claws|p1a: Aerodactyl
+|-boost|p1a: Aerodactyl|atk|1
+|-boost|p1a: Aerodactyl|accuracy|1
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Calm Mind|p2a: Suicune|[from]Sleep Talk
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|turn|16
+|c|âIcyFireDelta|swept like a boss
+|
+|move|p1a: Aerodactyl|Stone Edge|p2a: Suicune
+|-damage|p2a: Suicune|239\/404 slp
+|-curestatus|p2a: Suicune|slp
+|move|p2a: Suicune|Scald|p1a: Aerodactyl
+|-supereffective|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|0 fnt
+|faint|p1a: Aerodactyl
+|
+|-message|Wolfhead69 forfeited.
+|
+|win|IcyFireDelta
+|raw|Ladder updating...
+|leave|Wolfhead69
+|player|p1
+|raw|Wolfhead69's rating: 1508 &rarr; <strong>1478<\/strong><br \/>(-30 for losing)
+|raw|IcyFireDelta's rating: 1310 &rarr; <strong>1341<\/strong><br \/>(+31 for winning)

@@ -1,0 +1,423 @@
+|join|Bjork
+|join|Mirari
+|player|p1|Bjork|170
+|player|p2|Mirari|169
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Deoxys-Defense
+|poke|p1|Latios, M
+|poke|p1|Magnezone
+|poke|p1|Lucario, M
+|poke|p1|Salamence, F
+|poke|p1|Gengar, M
+|poke|p2|Abomasnow, F
+|poke|p2|Reuniclus, M
+|poke|p2|Metagross
+|poke|p2|Kingdra, F
+|poke|p2|Gyarados, M
+|poke|p2|Mamoswine, M
+|rule|Sleep Clause
+|rule|Species Clause
+|rule|OHKO Clause
+|rule|Moody Clause
+|rule|Evasion Clause
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1: Deoxys-Defense|Deoxys-Defense| (100\/100)
+|switch|p2: Gyarados|Gyarados, M| (100\/100)
+|-ability|p1: Deoxys-Defense|Pressure
+|-ability|p2: Gyarados|Intimidate|[of] p1: Deoxys-Defense
+|-unboost|p1: Deoxys-Defense|atk|1
+|turn|1
+|callback|decision
+|
+|move|p1: Deoxys-Defense|Taunt|p2: Gyarados
+|-start|p2: Gyarados|move: Taunt
+|cant|p2: Gyarados|move: Taunt|Taunt
+|
+|turn|2
+|callback|decision
+|
+|move|p1: Deoxys-Defense|Stealth Rock|p2: Gyarados
+|-sidestart|p2: Mirari|move: Stealth Rock
+|move|p2: Gyarados|Waterfall|p1: Deoxys-Defense
+|-damage|p1: Deoxys-Defense|32 (68\/100)
+|-damage|p2: Gyarados|17 (83\/100)|[from] item: Rocky Helmet|[of] p1: Deoxys-Defense
+|
+|-heal|p2: Gyarados|6 (89\/100)|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p1: Deoxys-Defense|Spikes|p2: Gyarados
+|-sidestart|p2: Mirari|Spikes
+|move|p2: Gyarados|Waterfall|p1: Deoxys-Defense
+|-damage|p1: Deoxys-Defense|31 (38\/100)
+|-damage|p2: Gyarados|17 (73\/100)|[from] item: Rocky Helmet|[of] p1: Deoxys-Defense
+|
+|-heal|p2: Gyarados|6 (79\/100)|[from] item: Leftovers
+|-end|p2: Gyarados|move: Taunt
+|turn|4
+|callback|decision
+|
+|move|p1: Deoxys-Defense|Taunt|p2: Gyarados
+|-start|p2: Gyarados|move: Taunt
+|move|p2: Gyarados|Waterfall|p1: Deoxys-Defense
+|-damage|p1: Deoxys-Defense|31 (7\/100)
+|-damage|p2: Gyarados|17 (62\/100)|[from] item: Rocky Helmet|[of] p1: Deoxys-Defense
+|
+|-heal|p2: Gyarados|6 (68\/100)|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p1: Deoxys-Defense|Spikes|p2: Gyarados
+|-sidestart|p2: Mirari|Spikes
+|move|p2: Gyarados|Waterfall|p1: Deoxys-Defense
+|-damage|p1: Deoxys-Defense|7 (0\/100 fnt)
+|-damage|p2: Gyarados|17 (52\/100)|[from] item: Rocky Helmet|[of] p1: Deoxys-Defense
+|faint|p1: Deoxys-Defense
+|
+|-heal|p2: Gyarados|6 (58\/100)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1: Latios|Latios, M| (100\/100)
+|turn|6
+|callback|decision
+|
+|switch|p2: Metagross|Metagross| (100\/100)
+|-damage|p2: Metagross|16 (84\/100)|[from] Spikes
+|-damage|p2: Metagross|6 (77\/100)|[from] Stealth Rock
+|move|p1: Latios|Psyshock|p2: Metagross
+|-resisted|p2: Metagross
+|-damage|p2: Metagross|9 (68\/100)
+|-damage|p1: Latios|10 (90\/100)|[from] item: Life Orb
+|
+|turn|7
+|callback|decision
+|
+|move|p1: Latios|Surf|p2: Metagross
+|-damage|p2: Metagross|46 (22\/100)
+|-damage|p1: Latios|10 (80\/100)|[from] item: Life Orb
+|move|p2: Metagross|Ice Punch|p1: Latios
+|-supereffective|p1: Latios
+|-damage|p1: Latios|80 (0\/100 fnt)
+|faint|p1: Latios
+|
+|callback|decision
+|
+|switch|p1: Gengar|Gengar, M| (100\/100)
+|turn|8
+|callback|decision
+|
+|move|p2: Metagross|Bullet Punch|p1: Gengar
+|-damage|p1: Gengar|46 (54\/100)
+|move|p1: Gengar|Shadow Ball|p2: Metagross
+|-damage|p2: Metagross|22 (0\/100 fnt)
+|faint|p2: Metagross
+|
+|-heal|p1: Gengar|6 (60\/100)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2: Abomasnow|Abomasnow, F| (100\/100)
+|-damage|p2: Abomasnow|17 (83\/100)|[from] Spikes
+|-damage|p2: Abomasnow|25 (59\/100)|[from] Stealth Rock
+|-weather|Hail|[from] ability: Snow Warning|[of] p2: Abomasnow
+|turn|9
+|callback|decision
+|
+|switch|p1: Magnezone|Magnezone| (100\/100)
+|move|p2: Abomasnow|Blizzard|p1: Magnezone
+|-resisted|p1: Magnezone
+|-damage|p1: Magnezone|23 (77\/100)
+|
+|-weather|Hail|[upkeep]
+|-damage|p1: Magnezone|6 (71\/100)|[from] hail
+|-heal|p1: Magnezone|6 (77\/100)|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p2: Reuniclus|Reuniclus, M| (100\/100)
+|move|p1: Magnezone|Substitute|p1: Magnezone
+|-start|p1: Magnezone|Substitute
+|-damage|p1: Magnezone|25 (52\/100)
+|
+|-weather|Hail|[upkeep]
+|-damage|p1: Magnezone|6 (46\/100)|[from] hail
+|-heal|p1: Magnezone|6 (52\/100)|[from] item: Leftovers
+|-activate|p2: Reuniclus|item: Flame Orb
+|-status|p2: Reuniclus|brn
+|turn|11
+|callback|decision
+|
+|move|p1: Magnezone|Thunderbolt|p2: Reuniclus
+|-damage|p2: Reuniclus|48 (52\/100 brn)
+|move|p2: Reuniclus|Calm Mind|p2: Reuniclus
+|-boost|p2: Reuniclus|spa|1
+|-boost|p2: Reuniclus|spd|1
+|
+|-weather|Hail|[upkeep]
+|-damage|p1: Magnezone|6 (46\/100)|[from] hail
+|-heal|p1: Magnezone|6 (52\/100)|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1: Magnezone|Thunderbolt|p2: Reuniclus
+|-damage|p2: Reuniclus|33 (19\/100 brn)
+|move|p2: Reuniclus|Recover|p2: Reuniclus
+|-heal|p2: Reuniclus|50 (69\/100 brn)
+|
+|-weather|Hail|[upkeep]
+|-damage|p1: Magnezone|6 (46\/100)|[from] hail
+|-heal|p1: Magnezone|6 (52\/100)|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1: Magnezone|Thunderbolt|p2: Reuniclus
+|-damage|p2: Reuniclus|35 (33\/100 brn)
+|move|p2: Reuniclus|Recover|p2: Reuniclus
+|-heal|p2: Reuniclus|50 (83\/100 brn)
+|
+|-weather|Hail|[upkeep]
+|-damage|p1: Magnezone|6 (46\/100)|[from] hail
+|-heal|p1: Magnezone|6 (52\/100)|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1: Magnezone|Sunny Day|p1: Magnezone
+|-weather|SunnyDay
+|move|p2: Reuniclus|Calm Mind|p2: Reuniclus
+|-boost|p2: Reuniclus|spa|1
+|-boost|p2: Reuniclus|spd|1
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1: Magnezone|6 (58\/100)|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1: Magnezone|Thunderbolt|p2: Reuniclus
+|-damage|p2: Reuniclus|24 (59\/100 brn)
+|move|p2: Reuniclus|Calm Mind|p2: Reuniclus
+|-boost|p2: Reuniclus|spa|1
+|-boost|p2: Reuniclus|spd|1
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1: Magnezone|6 (64\/100)|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1: Magnezone|Thunderbolt|p2: Reuniclus
+|-damage|p2: Reuniclus|20 (39\/100 brn)
+|move|p2: Reuniclus|Recover|p2: Reuniclus
+|-heal|p2: Reuniclus|50 (89\/100 brn)
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1: Magnezone|6 (71\/100)|[from] item: Leftovers
+|turn|17
+|callback|decision
+|join|Daitya
+|
+|move|p1: Magnezone|Thunderbolt|p2: Reuniclus
+|-damage|p2: Reuniclus|21 (69\/100 brn)
+|move|p2: Reuniclus|Calm Mind|p2: Reuniclus
+|-boost|p2: Reuniclus|spa|1
+|-boost|p2: Reuniclus|spd|1
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1: Magnezone|6 (77\/100)|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p1: Magnezone|Thunderbolt|p2: Reuniclus
+|-damage|p2: Reuniclus|16 (53\/100 brn)
+|move|p2: Reuniclus|Recover|p2: Reuniclus
+|-heal|p2: Reuniclus|47 (100\/100 brn)
+|
+|-weather|none
+|-heal|p1: Magnezone|6 (83\/100)|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p1: Magnezone|Thunderbolt|p2: Reuniclus
+|-damage|p2: Reuniclus|17 (83\/100 brn)
+|move|p2: Reuniclus|Psyshock|p1: Magnezone
+|-resisted|p1: Magnezone
+|-end|p1: Magnezone|Substitute
+|
+|-heal|p1: Magnezone|6 (89\/100)|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p1: Magnezone|Thunderbolt|p2: Reuniclus
+|-damage|p2: Reuniclus|18 (66\/100 brn)
+|move|p2: Reuniclus|Recover|p2: Reuniclus
+|-heal|p2: Reuniclus|34 (100\/100 brn)
+|
+|-heal|p1: Magnezone|6 (96\/100)|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p1: Magnezone|Thunderbolt|p2: Reuniclus
+|-damage|p2: Reuniclus|18 (82\/100 brn)
+|move|p2: Reuniclus|Psyshock|p1: Magnezone
+|-resisted|p1: Magnezone
+|-damage|p1: Magnezone|43 (52\/100)
+|
+|-heal|p1: Magnezone|6 (58\/100)|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p1: Magnezone|Thunderbolt|p2: Reuniclus
+|-damage|p2: Reuniclus|16 (67\/100 brn)
+|move|p2: Reuniclus|Calm Mind|p2: Reuniclus
+|-boost|p2: Reuniclus|spa|1
+|-boost|p2: Reuniclus|spd|1
+|
+|-heal|p1: Magnezone|6 (65\/100)|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p1: Magnezone|Thunderbolt|p2: Reuniclus
+|-damage|p2: Reuniclus|15 (52\/100 brn)
+|move|p2: Reuniclus|Recover|p2: Reuniclus
+|-heal|p2: Reuniclus|48 (100\/100 brn)
+|
+|-heal|p1: Magnezone|6 (71\/100)|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p1: Magnezone|Thunderbolt|p2: Reuniclus
+|-damage|p2: Reuniclus|14 (86\/100 brn)
+|move|p2: Reuniclus|Focus Blast|p1: Magnezone|[miss]
+|-miss|p2: Reuniclus
+|
+|-heal|p1: Magnezone|6 (77\/100)|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p1: Magnezone|Thunderbolt|p2: Reuniclus
+|-damage|p2: Reuniclus|14 (71\/100 brn)
+|move|p2: Reuniclus|Recover|p2: Reuniclus
+|-heal|p2: Reuniclus|29 (100\/100 brn)
+|
+|-heal|p1: Magnezone|6 (83\/100)|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|move|p1: Magnezone|Thunderbolt|p2: Reuniclus
+|-damage|p2: Reuniclus|16 (84\/100 brn)
+|move|p2: Reuniclus|Focus Blast|p1: Magnezone
+|-supereffective|p1: Magnezone
+|-damage|p1: Magnezone|83 (0\/100 fnt)
+|faint|p1: Magnezone
+|
+|callback|decision
+|
+|switch|p1: Gengar|Gengar, M| (60\/100)
+|turn|27
+|callback|decision
+|
+|move|p1: Gengar|Substitute|p1: Gengar
+|-start|p1: Gengar|Substitute
+|-damage|p1: Gengar|25 (35\/100)
+|move|p2: Reuniclus|Psyshock|p1: Gengar
+|-supereffective|p1: Gengar
+|-end|p1: Gengar|Substitute
+|
+|-heal|p1: Gengar|6 (42\/100)|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|move|p1: Gengar|Disable|p2: Reuniclus
+|-start|p2: Reuniclus|Disable|Psyshock
+|move|p2: Reuniclus|Calm Mind|p2: Reuniclus
+|-boost|p2: Reuniclus|spa|1
+|-boost|p2: Reuniclus|spd|1
+|
+|-heal|p1: Gengar|6 (48\/100)|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|move|p1: Gengar|Substitute|p1: Gengar
+|-start|p1: Gengar|Substitute
+|-damage|p1: Gengar|25 (23\/100)
+|move|p2: Reuniclus|Recover|p2: Reuniclus
+|-heal|p2: Reuniclus|16 (100\/100 brn)
+|
+|-heal|p1: Gengar|6 (29\/100)|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|move|p1: Gengar|Shadow Ball|p2: Reuniclus
+|-crit|p2: Reuniclus
+|-supereffective|p2: Reuniclus
+|-damage|p2: Reuniclus|100 (0\/100 fnt)
+|faint|p2: Reuniclus
+|
+|-heal|p1: Gengar|6 (35\/100)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2: Mamoswine|Mamoswine, M| (100\/100)
+|-damage|p2: Mamoswine|13 (88\/100)|[from] Stealth Rock
+|-damage|p2: Mamoswine|17 (71\/100)|[from] Spikes
+|turn|31
+|callback|decision
+|
+|move|p2: Mamoswine|Ice Shard|p1: Gengar
+|-end|p1: Gengar|Substitute
+|move|p1: Gengar|Focus Blast|p2: Mamoswine
+|-supereffective|p2: Mamoswine
+|-damage|p2: Mamoswine|71 (0\/100 fnt)
+|faint|p2: Mamoswine
+|
+|-heal|p1: Gengar|6 (41\/100)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2: Kingdra|Kingdra, F| (100\/100)
+|-damage|p2: Kingdra|12 (88\/100)|[from] Stealth Rock
+|-damage|p2: Kingdra|16 (71\/100)|[from] Spikes
+|turn|32
+|callback|decision
+|
+|move|p1: Gengar|Shadow Ball|p2: Kingdra
+|-crit|p2: Kingdra
+|-damage|p2: Kingdra|71 (0\/100 fnt)
+|faint|p2: Kingdra
+|
+|-heal|p1: Gengar|6 (47\/100)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2: Abomasnow|Abomasnow, F| (59\/100)
+|-damage|p2: Abomasnow|25 (34\/100)|[from] Stealth Rock
+|-damage|p2: Abomasnow|17 (17\/100)|[from] Spikes
+|-weather|Hail|[from] ability: Snow Warning|[of] p2: Abomasnow
+|turn|33
+|callback|decision
+|
+|move|p1: Gengar|Shadow Ball|p2: Abomasnow
+|-damage|p2: Abomasnow|17 (0\/100 fnt)
+|faint|p2: Abomasnow
+|
+|-weather|Hail|[upkeep]
+|-damage|p1: Gengar|6 (41\/100)|[from] hail
+|-heal|p1: Gengar|6 (47\/100)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2: Gyarados|Gyarados, M| (58\/100)
+|-damage|p2: Gyarados|25 (33\/100)|[from] Stealth Rock
+|-ability|p2: Gyarados|Intimidate|[of] p1: Gengar
+|-unboost|p1: Gengar|atk|1
+|turn|34
+|callback|decision
+|
+|move|p1: Gengar|Shadow Ball|p2: Gyarados
+|-damage|p2: Gyarados|33 (0\/100 fnt)
+|faint|p2: Gyarados
+|
+|win|Bjork
+|chatmsg-raw|Ladder updating...
+|raw|Bjork's rating: 1825 &rarr; <strong>1835<\/strong><br \/>(+10 for winning)
+|raw|Mirari's rating: 1722 &rarr; <strong>1720<\/strong><br \/>(-2 for losing)
+|leave|Bjork
+|player|p1

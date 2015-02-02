@@ -1,0 +1,59 @@
+|join|Pablito61
+|join|Ryzed
+|player|p1|Pablito61|102
+|player|p2|Ryzed|169
+|gametype|singles
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Aurorus, M
+|poke|p1|Doublade, F
+|poke|p1|Metagross
+|poke|p1|Talonflame, M
+|poke|p1|Greninja, M
+|poke|p1|Ferrothorn, F
+|poke|p2|Pinsir, F
+|poke|p2|Heatran, F
+|poke|p2|Clefable, F
+|poke|p2|Excadrill, M
+|poke|p2|Slowbro, F
+|poke|p2|Rotom-Wash
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Ferrothorn|Ferrothorn, F|289\/289
+|switch|p2a: Rotom-Wash|Rotom-Wash|251\/251
+|turn|1
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Trick|p1a: Ferrothorn
+|-activate|p2a: Rotom-Wash|move: Trick|[of] p1a: Ferrothorn
+|-item|p1a: Ferrothorn|Choice Scarf|[from] move: Trick
+|-item|p2a: Rotom-Wash|Leftovers|[from] move: Trick
+|move|p1a: Ferrothorn|Stealth Rock|p2a: Rotom-Wash
+|-sidestart|p2: Ryzed|move: Stealth Rock
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Metagross|Metagross|364\/364
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Metagross
+|-status|p1a: Metagross|brn
+|
+|-damage|p1a: Metagross|319\/364 brn|[from] brn
+|turn|3
+|callback|decision
+|-message|Pablito61 forfeited.
+|
+|win|Ryzed
+|raw|Ladder updating...
+|leave|Pablito61
+|player|p1

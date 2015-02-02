@@ -1,0 +1,237 @@
+|join|YveltalNL
+|join|jabr0ni
+|player|p1|YveltalNL|163
+|player|p2|jabr0ni|169
+|gametype|singles
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Honchkrow, F, shiny
+|poke|p1|Blastoise, M
+|poke|p1|Dusclops, F
+|poke|p1|Arcanine, F
+|poke|p1|Clefable, M
+|poke|p1|Shaymin
+|poke|p2|Azumarill, F
+|poke|p2|Medicham, F
+|poke|p2|Rotom-Heat
+|poke|p2|Machamp, F
+|poke|p2|Porygon2
+|poke|p2|Tornadus, M
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Clefable|Clefable, M|375\/375
+|switch|p2a: Medicham|Medicham, F|261\/261
+|turn|1
+|callback|decision
+|
+|move|p1a: Clefable|Protect|p1a: Clefable
+|-singleturn|p1a: Clefable|Protect
+|move|p2a: Medicham|Psycho Cut|p1a: Clefable
+|-activate|p1a: Clefable|Protect
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Dusclops|Dusclops, F|275\/275
+|-ability|p1a: Dusclops|Pressure
+|move|p2a: Medicham|Psycho Cut|p1a: Dusclops
+|-damage|p1a: Dusclops|157\/275
+|
+|turn|3
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|241\/241
+|move|p1a: Dusclops|Pain Split|p2a: Rotom-Heat
+|-sethp|p2a: Rotom-Heat|199\/241|p1a: Dusclops|199\/275|[from] move: Pain Split
+|
+|turn|4
+|callback|decision
+|
+|switch|p1a: Arcanine|Arcanine, F|322\/322
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Rotom-Heat
+|-unboost|p2a: Rotom-Heat|atk|1
+|move|p2a: Rotom-Heat|Thunderbolt|p1a: Arcanine
+|-damage|p1a: Arcanine|92\/322
+|-damage|p2a: Rotom-Heat|175\/241|[from] item: Life Orb
+|
+|turn|5
+|callback|decision
+|
+|move|p1a: Arcanine|Close Combat|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|6\/241
+|-unboost|p1a: Arcanine|def|1
+|-unboost|p1a: Arcanine|spd|1
+|-damage|p1a: Arcanine|60\/322|[from] item: Life Orb
+|move|p2a: Rotom-Heat|Thunderbolt|p1a: Arcanine
+|-damage|p1a: Arcanine|0 fnt
+|-damage|p2a: Rotom-Heat|0 fnt|[from] item: Life Orb
+|faint|p1a: Arcanine
+|faint|p2a: Rotom-Heat
+|
+|callback|decision
+|
+|switch|p1a: Honchpro|Honchkrow, F, shiny|341\/341
+|switch|p2a: Machamp|Machamp, F|383\/383
+|turn|6
+|callback|decision
+|
+|switch|p2a: Porygon2|Porygon2|374\/374
+|-ability|p2a: Porygon2|Moxie|[from] ability: Trace|[of] p1a: Honchpro
+|move|p1a: Honchpro|Brave Bird|p2a: Porygon2
+|-damage|p2a: Porygon2|191\/374
+|-damage|p1a: Honchpro|281\/341|[from] recoil|[of] p2a: Porygon2
+|-damage|p1a: Honchpro|247\/341|[from] item: Life Orb
+|
+|turn|7
+|callback|decision
+|
+|switch|p2a: Tornadus|Tornadus, M|300\/300
+|move|p1a: Honchpro|Superpower|p2a: Tornadus
+|-resisted|p2a: Tornadus
+|-damage|p2a: Tornadus|161\/300
+|-unboost|p1a: Honchpro|atk|1
+|-unboost|p1a: Honchpro|def|1
+|-damage|p1a: Honchpro|213\/341|[from] item: Life Orb
+|
+|turn|8
+|callback|decision
+|
+|switch|p1a: Dusclops|Dusclops, F|199\/275
+|-ability|p1a: Dusclops|Pressure
+|move|p2a: Tornadus|Bulk Up|p2a: Tornadus
+|-boost|p2a: Tornadus|atk|1
+|-boost|p2a: Tornadus|def|1
+|
+|turn|9
+|callback|decision
+|
+|move|p2a: Tornadus|Acrobatics|p1a: Dusclops
+|-enditem|p2a: Tornadus|Flying Gem|[from] gem|[move] Acrobatics
+|-damage|p1a: Dusclops|1\/275
+|move|p1a: Dusclops|Will-O-Wisp|p2a: Tornadus
+|-status|p2a: Tornadus|brn
+|
+|-damage|p2a: Tornadus|124\/300 brn|[from] brn
+|turn|10
+|callback|decision
+|
+|move|p1a: Dusclops|Shadow Sneak|p2a: Tornadus
+|-crit|p2a: Tornadus
+|-damage|p2a: Tornadus|24\/300 brn
+|move|p2a: Tornadus|Acrobatics|p1a: Dusclops
+|-damage|p1a: Dusclops|0 fnt
+|faint|p1a: Dusclops
+|
+|-damage|p2a: Tornadus|0 fnt|[from] brn
+|faint|p2a: Tornadus
+|callback|decision
+|
+|switch|p1a: Honchpro|Honchkrow, F, shiny|213\/341
+|switch|p2a: Porygon2|Porygon2|191\/374
+|-ability|p2a: Porygon2|Moxie|[from] ability: Trace|[of] p1a: Honchpro
+|turn|11
+|callback|decision
+|
+|move|p1a: Honchpro|Brave Bird|p2a: Porygon2
+|-damage|p2a: Porygon2|0 fnt
+|-damage|p1a: Honchpro|150\/341|[from] recoil|[of] p2a: Porygon2
+|-damage|p1a: Honchpro|116\/341|[from] item: Life Orb
+|faint|p2a: Porygon2
+|-boost|p1a: Honchpro|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|switch|p2a: Azumarill|Azumarill, F|404\/404
+|turn|12
+|callback|decision
+|
+|move|p2a: Azumarill|Aqua Jet|p1a: Honchpro
+|-damage|p1a: Honchpro|0 fnt
+|faint|p1a: Honchpro
+|
+|callback|decision
+|
+|switch|p1a: Shaymin|Shaymin|341\/341
+|turn|13
+|callback|decision
+|
+|switch|p2a: Medicham|Medicham, F|261\/261
+|move|p1a: Shaymin|Seed Flare|p2a: Medicham
+|-damage|p2a: Medicham|44\/261
+|-unboost|p2a: Medicham|spd|2
+|
+|turn|14
+|callback|decision
+|
+|move|p1a: Shaymin|Seed Flare|p2a: Medicham
+|-damage|p2a: Medicham|0 fnt
+|faint|p2a: Medicham
+|
+|callback|decision
+|
+|switch|p2a: Machamp|Machamp, F|383\/383
+|turn|15
+|callback|decision
+|
+|move|p1a: Shaymin|Seed Flare|p2a: Machamp
+|-damage|p2a: Machamp|178\/383
+|move|p2a: Machamp|DynamicPunch|p1a: Shaymin
+|-damage|p1a: Shaymin|161\/341
+|-start|p1a: Shaymin|confusion
+|
+|-heal|p2a: Machamp|201\/383|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|-activate|p1a: Shaymin|confusion
+|move|p1a: Shaymin|Seed Flare|p2a: Machamp
+|-damage|p2a: Machamp|15\/383
+|move|p2a: Machamp|DynamicPunch|p1a: Shaymin
+|-damage|p1a: Shaymin|0 fnt
+|faint|p1a: Shaymin
+|
+|-heal|p2a: Machamp|38\/383|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M|362\/362
+|turn|17
+|callback|decision
+|
+|move|p1a: Blastoise|Scald|p2a: Machamp
+|-damage|p2a: Machamp|0 fnt
+|faint|p2a: Machamp
+|
+|callback|decision
+|
+|switch|p2a: Azumarill|Azumarill, F|404\/404
+|turn|18
+|callback|decision
+|
+|move|p1a: Blastoise|Toxic|p2a: Azumarill
+|-status|p2a: Azumarill|tox
+|move|p2a: Azumarill|Double-Edge|p1a: Blastoise
+|-damage|p1a: Blastoise|235\/362
+|-damage|p2a: Azumarill|362\/404 tox|[from] recoil|[of] p1a: Blastoise
+|
+|-heal|p1a: Blastoise|257\/362|[from] item: Leftovers
+|-damage|p2a: Azumarill|337\/404 tox|[from] psn
+|turn|19
+|callback|decision
+|-message|jabr0ni forfeited.
+|
+|win|YveltalNL
+|raw|Ladder updating...
+|leave|jabr0ni
+|player|p2
+|raw|YveltalNL's rating: 1478 &rarr; <strong>1544<\/strong><br \/>(+66 for winning)
+|raw|jabr0ni's rating: 1615 &rarr; <strong>1612<\/strong><br \/>(-3 for losing)

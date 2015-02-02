@@ -1,0 +1,427 @@
+|join|Just Because
+|join|reachzero
+|player|p1|Just Because|153
+|player|p2|reachzero|15
+|gametype|singles
+|tier|UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Abomasnow, F
+|poke|p1|Escavalier, M
+|poke|p1|Flygon, F, shiny
+|poke|p1|Slowbro, M
+|poke|p1|Rotom-Frost
+|poke|p1|Nidoqueen, F
+|poke|p2|Scrafty, M, shiny
+|poke|p2|Zapdos
+|poke|p2|Azumarill, F, shiny
+|poke|p2|Amoonguss, F, shiny
+|poke|p2|Snorlax, M
+|poke|p2|Swampert, F
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Abomasnow|Abomasnow, F|383\/383
+|switch|p2a: Snorlax|Snorlax, M|461\/461
+|-weather|Hail|[from] ability: Snow Warning|[of] p1a: Abomasnow
+|turn|1
+|callback|decision
+|
+|move|p1a: Abomasnow|Substitute|p1a: Abomasnow
+|-start|p1a: Abomasnow|Substitute
+|-damage|p1a: Abomasnow|288\/383
+|move|p2a: Snorlax|Body Slam|p1a: Abomasnow
+|-end|p1a: Abomasnow|Substitute
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Snorlax|433\/461|[from] hail
+|-heal|p1a: Abomasnow|311\/383|[from] item: Leftovers
+|-heal|p2a: Snorlax|461\/461|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p1a: Escavalier|Escavalier, M|343\/343
+|move|p2a: Snorlax|Body Slam|p1a: Escavalier
+|-resisted|p1a: Escavalier
+|-damage|p1a: Escavalier|269\/343
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Snorlax|433\/461|[from] hail
+|-heal|p2a: Snorlax|461\/461|[from] item: Leftovers
+|-heal|p1a: Escavalier|290\/343|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p2a: Zapdos|Zapdos|383\/383
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Escavalier|Knock Off|p2a: Zapdos
+|-damage|p2a: Zapdos|360\/383
+|-enditem|p2a: Zapdos|Leftovers|[from] move: Knock Off|[of] p1a: Escavalier
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Zapdos|337\/383|[from] hail
+|-heal|p1a: Escavalier|311\/343|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|330\/330
+|move|p2a: Zapdos|Drill Peck|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|230\/330
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Zapdos|314\/383|[from] hail
+|-damage|p1a: Nidoqueen|210\/330|[from] hail
+|turn|5
+|callback|decision
+|join|Applejackn'Red
+|leave|Applejackn'Red
+|
+|switch|p2a: Snorlax|Snorlax, M|461\/461
+|move|p1a: Nidoqueen|Stealth Rock|p2a: Snorlax
+|-sidestart|p2: reachzero|move: Stealth Rock
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Nidoqueen|190\/330|[from] hail
+|-damage|p2a: Snorlax|433\/461|[from] hail
+|-heal|p2a: Snorlax|461\/461|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p1a: Escavalier|Escavalier, M|311\/343
+|move|p2a: Snorlax|Earthquake|p1a: Escavalier
+|-damage|p1a: Escavalier|195\/343
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Snorlax|433\/461|[from] hail
+|-heal|p2a: Snorlax|461\/461|[from] item: Leftovers
+|-heal|p1a: Escavalier|216\/343|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p2a: Zapdos|Zapdos|314\/383
+|-damage|p2a: Zapdos|219\/383|[from] Stealth Rock
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Escavalier|Megahorn|p2a: Zapdos
+|-resisted|p2a: Zapdos
+|-damage|p2a: Zapdos|112\/383
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Zapdos|89\/383|[from] hail
+|-heal|p1a: Escavalier|237\/343|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p2a: Zapdos|Thunderbolt|p1a: Escavalier
+|-damage|p1a: Escavalier|129\/343
+|move|p1a: Escavalier|Megahorn|p2a: Zapdos
+|-resisted|p2a: Zapdos
+|-damage|p2a: Zapdos|0 fnt
+|faint|p2a: Zapdos
+|
+|-weather|Hail|[upkeep]
+|-heal|p1a: Escavalier|150\/343|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, F, shiny|432\/432
+|-damage|p2a: Amoonguss|378\/432|[from] Stealth Rock
+|turn|9
+|callback|decision
+|
+|move|p1a: Escavalier|Protect|p1a: Escavalier
+|-singleturn|p1a: Escavalier|Protect
+|move|p2a: Amoonguss|Spore|p1a: Escavalier
+|-activate|p1a: Escavalier|Protect
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Amoonguss|351\/432|[from] hail
+|-heal|p2a: Amoonguss|378\/432|[from] item: Leftovers
+|-heal|p1a: Escavalier|171\/343|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|190\/330
+|move|p2a: Amoonguss|Spore|p1a: Nidoqueen
+|-status|p1a: Nidoqueen|slp
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Nidoqueen|170\/330 slp|[from] hail
+|-damage|p2a: Amoonguss|351\/432|[from] hail
+|-heal|p2a: Amoonguss|378\/432|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p1a: Escavalier|Escavalier, M|171\/343
+|move|p2a: Amoonguss|Stun Spore|p1a: Escavalier
+|-status|p1a: Escavalier|par
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Amoonguss|351\/432|[from] hail
+|-heal|p2a: Amoonguss|378\/432|[from] item: Leftovers
+|-heal|p1a: Escavalier|192\/343 par|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p2a: Swampert|Swampert, F|404\/404
+|-damage|p2a: Swampert|379\/404|[from] Stealth Rock
+|move|p1a: Escavalier|Protect|p1a: Escavalier
+|-fail|p1a: Escavalier
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Swampert|354\/404|[from] hail
+|-heal|p2a: Swampert|379\/404|[from] item: Leftovers
+|-heal|p1a: Escavalier|213\/343 par|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: Swampert|Stealth Rock|p1a: Escavalier
+|-sidestart|p1: Just Because|move: Stealth Rock
+|move|p1a: Escavalier|Knock Off|p2a: Swampert
+|-damage|p2a: Swampert|362\/404
+|-enditem|p2a: Swampert|Leftovers|[from] move: Knock Off|[of] p1a: Escavalier
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Swampert|337\/404|[from] hail
+|-heal|p1a: Escavalier|234\/343 par|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|cant|p1a: Escavalier|par
+|move|p2a: Swampert|Earthquake|p1a: Escavalier
+|-damage|p1a: Escavalier|116\/343 par
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Swampert|312\/404|[from] hail
+|-heal|p1a: Escavalier|137\/343 par|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1a: Escavalier|Protect|p1a: Escavalier
+|-singleturn|p1a: Escavalier|Protect
+|move|p2a: Swampert|Scald|p1a: Escavalier
+|-activate|p1a: Escavalier|Protect
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Swampert|287\/404|[from] hail
+|-heal|p1a: Escavalier|158\/343 par|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p1a: Abomasnow|Abomasnow, F|311\/383
+|-damage|p1a: Abomasnow|216\/383|[from] Stealth Rock
+|move|p2a: Swampert|Scald|p1a: Abomasnow
+|-resisted|p1a: Abomasnow
+|-damage|p1a: Abomasnow|184\/383
+|-status|p1a: Abomasnow|brn
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Swampert|262\/404|[from] hail
+|-heal|p1a: Abomasnow|207\/383 brn|[from] item: Leftovers
+|-damage|p1a: Abomasnow|160\/383 brn|[from] brn
+|turn|17
+|callback|decision
+|
+|move|p1a: Abomasnow|Leech Seed|p2a: Swampert|[miss]
+|-miss|p1a: Abomasnow|p2a: Swampert
+|move|p2a: Swampert|Roar|p1a: Abomasnow
+|drag|p1a: Slowbro|Slowbro, M|393\/393
+|-damage|p1a: Slowbro|344\/393|[from] Stealth Rock
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Swampert|237\/404|[from] hail
+|-damage|p1a: Slowbro|320\/393|[from] hail
+|-heal|p1a: Slowbro|344\/393|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p1a: Slowbro|Scald|p2a: Swampert
+|-damage|p2a: Swampert|126\/404
+|move|p2a: Swampert|Roar|p1a: Slowbro
+|drag|p1a: Escavalier|Escavalier, M|158\/343 par
+|-damage|p1a: Escavalier|116\/343 par|[from] Stealth Rock
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Swampert|101\/404|[from] hail
+|-heal|p1a: Escavalier|137\/343 par|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p2a: Swampert|Scald|p1a: Escavalier
+|-damage|p1a: Escavalier|53\/343 par
+|move|p1a: Escavalier|Megahorn|p2a: Swampert
+|-damage|p2a: Swampert|0 fnt
+|faint|p2a: Swampert
+|
+|-weather|Hail|[upkeep]
+|-heal|p1a: Escavalier|74\/343 par|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Scrafty|Scrafty, M, shiny|334\/334
+|-damage|p2a: Scrafty|314\/334|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|move|p2a: Scrafty|Bulk Up|p2a: Scrafty
+|-boost|p2a: Scrafty|atk|1
+|-boost|p2a: Scrafty|def|1
+|move|p1a: Escavalier|Megahorn|p2a: Scrafty
+|-damage|p2a: Scrafty|203\/334
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Scrafty|183\/334|[from] hail
+|-heal|p2a: Scrafty|203\/334|[from] item: Leftovers
+|-heal|p1a: Escavalier|95\/343 par|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|switch|p1a: Abomasnow|Abomasnow, F|160\/383 brn
+|-damage|p1a: Abomasnow|65\/383 brn|[from] Stealth Rock
+|move|p2a: Scrafty|Drain Punch|p1a: Abomasnow
+|-supereffective|p1a: Abomasnow
+|-damage|p1a: Abomasnow|0 fnt
+|-heal|p2a: Scrafty|236\/334|[from] drain|[of] p1a: Abomasnow
+|faint|p1a: Abomasnow
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Scrafty|216\/334|[from] hail
+|-heal|p2a: Scrafty|236\/334|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Rotom-Frost|Rotom-Frost|241\/241
+|-damage|p1a: Rotom-Frost|181\/241|[from] Stealth Rock
+|turn|22
+|callback|decision
+|
+|move|p1a: Rotom-Frost|Substitute|p1a: Rotom-Frost
+|-start|p1a: Rotom-Frost|Substitute
+|-damage|p1a: Rotom-Frost|121\/241
+|move|p2a: Scrafty|Crunch|p1a: Rotom-Frost
+|-end|p1a: Rotom-Frost|Substitute
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Scrafty|216\/334|[from] hail
+|-heal|p2a: Scrafty|236\/334|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p1a: Rotom-Frost|Substitute|p1a: Rotom-Frost
+|-start|p1a: Rotom-Frost|Substitute
+|-damage|p1a: Rotom-Frost|61\/241
+|move|p2a: Scrafty|Drain Punch|p1a: Rotom-Frost
+|-supereffective|p1a: Rotom-Frost
+|-end|p1a: Rotom-Frost|Substitute
+|-heal|p2a: Scrafty|266\/334|[from] drain|[of] p1a: Rotom-Frost
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Scrafty|246\/334|[from] hail
+|-heal|p2a: Scrafty|266\/334|[from] item: Leftovers
+|turn|24
+|callback|decision
+|chat|reachzero|ah, I thought it would Trick
+|chat|Just Because|unfortunately not
+|
+|move|p1a: Rotom-Frost|Substitute|p1a: Rotom-Frost
+|-start|p1a: Rotom-Frost|Substitute
+|-damage|p1a: Rotom-Frost|1\/241
+|move|p2a: Scrafty|Drain Punch|p1a: Rotom-Frost
+|-supereffective|p1a: Rotom-Frost
+|-end|p1a: Rotom-Frost|Substitute
+|-heal|p2a: Scrafty|296\/334|[from] drain|[of] p1a: Rotom-Frost
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Scrafty|276\/334|[from] hail
+|-heal|p2a: Scrafty|296\/334|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p1a: Rotom-Frost|Blizzard|p2a: Scrafty
+|-damage|p2a: Scrafty|150\/334
+|-damage|p1a: Rotom-Frost|0 fnt|[from] item: Life Orb
+|faint|p1a: Rotom-Frost
+|move|p2a: Scrafty|Bulk Up|p2a: Scrafty
+|-boost|p2a: Scrafty|atk|1
+|-boost|p2a: Scrafty|def|1
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Scrafty|130\/334|[from] hail
+|-heal|p2a: Scrafty|150\/334|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Slowbro|Slowbro, M|393\/393
+|-damage|p1a: Slowbro|344\/393|[from] Stealth Rock
+|turn|26
+|callback|decision
+|
+|move|p2a: Scrafty|Crunch|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|126\/393
+|-unboost|p1a: Slowbro|def|1
+|move|p1a: Slowbro|Scald|p2a: Scrafty
+|-damage|p2a: Scrafty|90\/334
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Scrafty|70\/334|[from] hail
+|-damage|p1a: Slowbro|102\/393|[from] hail
+|-heal|p2a: Scrafty|90\/334|[from] item: Leftovers
+|-heal|p1a: Slowbro|126\/393|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|switch|p1a: Escavalier|Escavalier, M|95\/343 par
+|-damage|p1a: Escavalier|53\/343 par|[from] Stealth Rock
+|move|p2a: Scrafty|Crunch|p1a: Escavalier
+|-resisted|p1a: Escavalier
+|-damage|p1a: Escavalier|0 fnt
+|faint|p1a: Escavalier
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Scrafty|70\/334|[from] hail
+|-heal|p2a: Scrafty|90\/334|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Flygon|Flygon, F, shiny|301\/301
+|-damage|p1a: Flygon|283\/301|[from] Stealth Rock
+|turn|28
+|callback|decision
+|
+|move|p1a: Flygon|Outrage|p2a: Scrafty
+|-damage|p2a: Scrafty|5\/334
+|move|p2a: Scrafty|Drain Punch|p1a: Flygon
+|-damage|p1a: Flygon|78\/301
+|-heal|p2a: Scrafty|108\/334|[from] drain|[of] p1a: Flygon
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Flygon|60\/301|[from] hail
+|-damage|p2a: Scrafty|88\/334|[from] hail
+|-heal|p2a: Scrafty|108\/334|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|move|p1a: Flygon|Outrage|p2a: Scrafty
+|-damage|p2a: Scrafty|24\/334
+|move|p2a: Scrafty|Drain Punch|p1a: Flygon
+|-damage|p1a: Flygon|0 fnt
+|-heal|p2a: Scrafty|54\/334|[from] drain|[of] p1a: Flygon
+|faint|p1a: Flygon
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Scrafty|34\/334|[from] hail
+|-heal|p2a: Scrafty|54\/334|[from] item: Leftovers
+|callback|decision
+|chat|Just Because|gg
+|chat|reachzero|gg
+|chat|Just Because|ready for g2?
+|leave|Just Because
+|player|p1
+|join|Unthought Known
+|chat|Unthought Known|reach, do you want me to get in so you can save the replay?
+|chat|Unthought Known|also I want to watch it, lol
+|-message|Player 1 lost due to inactivity.
+|
+|win|reachzero

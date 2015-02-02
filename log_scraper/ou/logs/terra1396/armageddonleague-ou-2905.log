@@ -1,0 +1,200 @@
+|join|ALeader Hunty
+|join|terra1396
+|player|p1|ALeader Hunty|277
+|player|p2|terra1396|99
+|gametype|singles
+|tier|OU
+|clearpoke
+|poke|p1|Terrakion, shiny
+|poke|p1|Tyranitar, M
+|poke|p1|Aerodactyl, F, shiny
+|poke|p1|Tyrantrum, M
+|poke|p1|Aurorus, F
+|poke|p1|Omastar, F
+|poke|p2|Zoroark, F
+|poke|p2|Bronzong, shiny
+|poke|p2|Scolipede, M
+|poke|p2|Garchomp, F
+|poke|p2|Genesect
+|poke|p2|Talonflame, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|chat|ALeader Hunty|This is the official A2 Rock Gym Leader match.
+|
+|start
+|switch|p1a: Aerodactyl|Aerodactyl, F, shiny|301\/301
+|switch|p2a: Bronzong|Bronzong, shiny|262\/262
+|-ability|p1a: Aerodactyl|Unnerve|p2: terra1396
+|turn|1
+|callback|decision
+|
+|move|p1a: Aerodactyl|Taunt|p2a: Bronzong
+|-start|p2a: Bronzong|move: Taunt
+|move|p2a: Bronzong|Night Daze|p1a: Aerodactyl
+|-crit|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|31\/301
+|-unboost|p1a: Aerodactyl|accuracy|1
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Aerodactyl|Fire Blast|p2a: Bronzong|[miss]
+|-miss|p1a: Aerodactyl|p2a: Bronzong
+|move|p2a: Bronzong|Night Daze|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|0 fnt
+|faint|p1a: Aerodactyl
+|
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, M|342\/342
+|-weather|Sandstorm
+|turn|3
+|callback|decision
+|
+|-formechange|p1a: Tyranitar|Tyranitar-Mega
+|message|Tyranitar has Mega Evolved into Mega Tyranitar!
+|move|p2a: Bronzong|Focus Blast|p1a: Tyranitar
+|-crit|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|faint|p1a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Bronzong|246\/262|[from] sandstorm
+|-end|p2a: Bronzong|move: Taunt
+|callback|decision
+|
+|switch|p1a: Terrakion|Terrakion, shiny|323\/323
+|turn|4
+|callback|decision
+|
+|move|p2a: Bronzong|Focus Blast|p1a: Terrakion|[miss]
+|-miss|p2a: Bronzong|p1a: Terrakion
+|move|p1a: Terrakion|X-Scissor|p2a: Bronzong
+|-supereffective|p2a: Bronzong
+|replace|p2a: Zoroark|Zoroark, F|246\/262
+|-damage|p2a: Zoroark|0 fnt
+|-damage|p1a: Terrakion|291\/323|[from] item: Life Orb
+|faint|p2a: Zoroark
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Bronzong|Bronzong, shiny|338\/338
+|turn|5
+|callback|decision
+|
+|move|p1a: Terrakion|X-Scissor|p2a: Bronzong
+|-damage|p2a: Bronzong|241\/338
+|-damage|p1a: Terrakion|259\/323|[from] item: Life Orb
+|move|p2a: Bronzong|Reflect|p2a: Bronzong
+|-sidestart|p2: terra1396|Reflect
+|
+|-weather|Sandstorm|[upkeep]
+|turn|6
+|callback|decision
+|
+|move|p1a: Terrakion|Close Combat|p2a: Bronzong
+|-damage|p2a: Bronzong|122\/338
+|-unboost|p1a: Terrakion|def|1
+|-unboost|p1a: Terrakion|spd|1
+|-damage|p1a: Terrakion|227\/323|[from] item: Life Orb
+|move|p2a: Bronzong|Light Screen|p2a: Bronzong
+|-sidestart|p2: terra1396|move: Light Screen
+|
+|-weather|Sandstorm|[upkeep]
+|turn|7
+|callback|decision
+|
+|switch|p1a: Omastar|Omastar, F|344\/344
+|switch|p2a: Scolipede|Scolipede, M|324\/324
+|
+|-weather|none
+|turn|8
+|callback|decision
+|
+|move|p2a: Scolipede|Swords Dance|p2a: Scolipede
+|-boost|p2a: Scolipede|atk|2
+|move|p1a: Omastar|Scald|p2a: Scolipede
+|-damage|p2a: Scolipede|249\/324
+|-status|p2a: Scolipede|brn
+|
+|-damage|p2a: Scolipede|209\/324 brn|[from] brn
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|9
+|callback|decision
+|
+|move|p2a: Scolipede|Swords Dance|p2a: Scolipede
+|-boost|p2a: Scolipede|atk|2
+|move|p1a: Omastar|Ice Beam|p2a: Scolipede
+|-damage|p2a: Scolipede|158\/324 brn
+|-enditem|p2a: Scolipede|Sitrus Berry|[eat]
+|-heal|p2a: Scolipede|239\/324 brn|[from] item: Sitrus Berry
+|
+|-damage|p2a: Scolipede|199\/324 brn|[from] brn
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|10
+|callback|decision
+|chat|terra1396|hmm prepare to be amazed unless you get crit
+|
+|move|p2a: Scolipede|Baton Pass|p2a: Scolipede
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, F|420\/420
+|move|p1a: Omastar|Stealth Rock|p2a: Garchomp
+|-sidestart|p2: terra1396|move: Stealth Rock
+|
+|turn|11
+|callback|decision
+|
+|move|p2a: Garchomp|Earthquake|p1a: Omastar
+|-supereffective|p1a: Omastar
+|-damage|p1a: Omastar|0 fnt
+|faint|p1a: Omastar
+|
+|callback|decision
+|
+|switch|p1a: Aurorus|Aurorus, F|449\/449
+|turn|12
+|callback|decision
+|
+|move|p2a: Garchomp|Brick Break|p1a: Aurorus
+|-supereffective|p1a: Aurorus
+|-damage|p1a: Aurorus|0 fnt
+|faint|p1a: Aurorus
+|
+|-sideend|p2: terra1396|Reflect
+|callback|decision
+|
+|switch|p1a: Terrakion|Terrakion, shiny|227\/323
+|turn|13
+|callback|decision
+|
+|move|p2a: Garchomp|Earthquake|p1a: Terrakion
+|-supereffective|p1a: Terrakion
+|-damage|p1a: Terrakion|0 fnt
+|faint|p1a: Terrakion
+|
+|-sideend|p2: terra1396|move: Light Screen
+|callback|decision
+|
+|switch|p1a: Tyrantrum|Tyrantrum, M|306\/306
+|turn|14
+|callback|decision
+|
+|move|p2a: Garchomp|Outrage|p1a: Tyrantrum
+|-supereffective|p1a: Tyrantrum
+|-damage|p1a: Tyrantrum|0 fnt
+|faint|p1a: Tyrantrum
+|
+|win|terra1396
+|chat|terra1396|gg
+|chat|ALeader Hunty|Gg.
+|chat|ALeader Hunty|Make sure you save the link

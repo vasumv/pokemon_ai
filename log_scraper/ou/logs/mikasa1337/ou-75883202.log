@@ -1,0 +1,284 @@
+|join|ownage
+|join|Mikasa1337
+|player|p1|ownage|66
+|player|p2|Mikasa1337|2
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Latios, M
+|poke|p1|Genesect
+|poke|p1|Jolteon, F
+|poke|p1|Gyarados, M
+|poke|p1|Heatran, M
+|poke|p1|Kyurem-Black
+|poke|p2|Tyranitar, M
+|poke|p2|Charizard, M
+|poke|p2|Breloom, M
+|poke|p2|Latios, M
+|poke|p2|Tentacruel, M
+|poke|p2|Garchomp, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Genesect|Genesect|283\/283
+|switch|p2a: Garchomp|Garchomp, M|358\/358
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|turn|1
+|callback|decision
+|
+|move|p1a: Genesect|Ice Beam|p2a: Garchomp
+|-supereffective|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|faint|p2a: Garchomp
+|
+|callback|decision
+|
+|switch|p2a: Charizard|Charizard, M|298\/298
+|turn|2
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|386\/386
+|-formechange|p2a: Charizard|Charizard-Mega-Y
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p2a: Charizard|Ancient Power|p1a: Heatran
+|-damage|p1a: Heatran|305\/386
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Heatran|329\/386|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p2a: Charizard|Ancient Power|p1a: Heatran
+|-damage|p1a: Heatran|248\/386
+|move|p1a: Heatran|Roar|p2a: Charizard
+|drag|p2a: Latios|Latios, M|302\/302
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Heatran|272\/386|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Latios|Draco Meteor|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|137\/386
+|-unboost|p2a: Latios|spa|2
+|-damage|p2a: Latios|272\/302|[from] item: Life Orb
+|move|p1a: Heatran|Roar|p2a: Latios
+|drag|p2a: Charizard|Charizard, M|298\/298
+|-formechange|p2a: Charizard|Charizard-Mega-Y
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Heatran|161\/386|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p2a: Charizard|Ancient Power|p1a: Heatran
+|-damage|p1a: Heatran|87\/386
+|move|p1a: Heatran|Lava Plume|p2a: Charizard
+|-resisted|p2a: Charizard
+|-damage|p2a: Charizard|225\/298
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Heatran|111\/386|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Charizard|Ancient Power|p1a: Heatran
+|-crit|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|-weather|none
+|callback|decision
+|
+|switch|p1a: Gyarados|Gyarados, M|394\/394
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Charizard
+|-unboost|p2a: Charizard|atk|1
+|turn|7
+|callback|decision
+|
+|switch|p2a: Tentacruel|Tentacruel, M|329\/329
+|-formechange|p1a: Gyarados|Gyarados-Mega
+|message|Gyarados has Mega Evolved into Mega Gyarados!
+|-ability|p1a: Gyarados|Mold Breaker
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|
+|turn|8
+|callback|decision
+|
+|move|p2a: Tentacruel|Toxic Spikes|p1a: Gyarados
+|-sidestart|p1: ownage|move: Toxic Spikes
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|
+|turn|9
+|callback|decision
+|
+|move|p1a: Gyarados|Earthquake|p2a: Tentacruel
+|-supereffective|p2a: Tentacruel
+|-damage|p2a: Tentacruel|0 fnt
+|faint|p2a: Tentacruel
+|
+|callback|decision
+|
+|switch|p2a: Breloom|Breloom, M|261\/261
+|turn|10
+|callback|decision
+|
+|move|p2a: Breloom|Mach Punch|p1a: Gyarados
+|-supereffective|p1a: Gyarados
+|-damage|p1a: Gyarados|202\/394
+|move|p1a: Gyarados|Bite|p2a: Breloom
+|-resisted|p2a: Breloom
+|-damage|p2a: Breloom|109\/261
+|
+|turn|11
+|callback|decision
+|
+|move|p2a: Breloom|Mach Punch|p1a: Gyarados
+|-crit|p1a: Gyarados
+|-supereffective|p1a: Gyarados
+|-damage|p1a: Gyarados|0 fnt
+|faint|p1a: Gyarados
+|
+|callback|decision
+|chat|ownage|lol
+|
+|switch|p1a: Genesect|Genesect|283\/283
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|turn|12
+|callback|decision
+|chat|Mikasa1337|lol
+|
+|move|p2a: Breloom|Mach Punch|p1a: Genesect
+|-damage|p1a: Genesect|154\/283
+|move|p1a: Genesect|Ice Beam|p2a: Breloom
+|-supereffective|p2a: Breloom
+|-damage|p2a: Breloom|0 fnt
+|faint|p2a: Breloom
+|
+|callback|decision
+|
+|switch|p2a: Charizard|Charizard, M|225\/298
+|-formechange|p2a: Charizard|Charizard-Mega-Y
+|-weather|SunnyDay
+|turn|13
+|callback|decision
+|
+|move|p1a: Genesect|Ice Beam|p2a: Charizard
+|-damage|p2a: Charizard|100\/298
+|move|p2a: Charizard|Flamethrower|p1a: Genesect
+|-supereffective|p1a: Genesect
+|-damage|p1a: Genesect|0 fnt
+|faint|p1a: Genesect
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: Jolteon|Jolteon, F|272\/272
+|-status|p1a: Jolteon|psn
+|turn|14
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, M|355\/355
+|-weather|Sandstorm
+|move|p1a: Jolteon|Volt Switch|p2a: Tyranitar
+|-damage|p2a: Tyranitar|280\/355
+|callback|decision
+|
+|switch|p1a: Kyurem-Black|Kyurem-Black|392\/392
+|-status|p1a: Kyurem-Black|psn
+|-ability|p1a: Kyurem-Black|Teravolt
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Kyurem-Black|368\/392 psn|[from] sandstorm
+|-damage|p1a: Kyurem-Black|319\/392 psn|[from] psn
+|turn|15
+|callback|decision
+|
+|move|p1a: Kyurem-Black|Iron Head|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|94\/355
+|-enditem|p2a: Tyranitar|Weakness Policy
+|-boost|p2a: Tyranitar|atk|2|[from] item: Weakness Policy
+|-boost|p2a: Tyranitar|spa|2|[from] item: Weakness Policy
+|move|p2a: Tyranitar|Stone Edge|p1a: Kyurem-Black
+|-supereffective|p1a: Kyurem-Black
+|-damage|p1a: Kyurem-Black|0 fnt
+|faint|p1a: Kyurem-Black
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Jolteon|Jolteon, F|272\/272 psn
+|turn|16
+|callback|decision
+|
+|move|p1a: Jolteon|Thunderbolt|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jolteon|255\/272 psn|[from] sandstorm
+|-damage|p1a: Jolteon|221\/272 psn|[from] psn
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|272\/302
+|turn|17
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M|302\/302
+|move|p2a: Latios|Draco Meteor|p1a: Latios
+|-supereffective|p1a: Latios
+|-damage|p1a: Latios|0 fnt
+|-unboost|p2a: Latios|spa|2
+|-damage|p2a: Latios|242\/302|[from] item: Life Orb
+|faint|p1a: Latios
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|224\/302|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: Jolteon|Jolteon, F|221\/272 psn
+|turn|18
+|callback|decision
+|
+|switch|p2a: Charizard|Charizard, M|100\/298
+|-formechange|p2a: Charizard|Charizard-Mega-Y
+|-weather|SunnyDay
+|move|p1a: Jolteon|Shadow Ball|p2a: Charizard
+|-damage|p2a: Charizard|0 fnt
+|faint|p2a: Charizard
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Jolteon|187\/272 psn|[from] psn
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|224\/302
+|turn|19
+|callback|decision
+|
+|move|p1a: Jolteon|Shadow Ball|p2a: Latios
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|faint|p2a: Latios
+|
+|win|ownage
+|raw|Ladder updating...
+|raw|ownage's rating: 1770 &rarr; <strong>1774<\/strong><br \/>(+4 for winning)
+|raw|Mikasa1337's rating: 1660 &rarr; <strong>1658<\/strong><br \/>(-2 for losing)
+|chat|ownage|gg

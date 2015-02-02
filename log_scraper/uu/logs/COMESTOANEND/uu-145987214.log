@@ -1,0 +1,465 @@
+|join|COMESTOANEND
+|join|RawFrustration
+|player|p1|COMESTOANEND|51
+|player|p2|RawFrustration|80
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Sharpedo, M
+|poke|p1|Noivern, M
+|poke|p1|Infernape, M
+|poke|p1|Roserade, M
+|poke|p1|Sableye, M
+|poke|p1|Swampert, M
+|poke|p2|Mew
+|poke|p2|Blissey, F
+|poke|p2|Aromatisse, M
+|poke|p2|Gastrodon, M
+|poke|p2|Gligar, F
+|poke|p2|Ditto
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|chat|COMESTOANEND|gl
+|chat|RawFrustration|u2
+|
+|start
+|switch|p1a: Sableye|Sableye, M|299\/299
+|switch|p2a: Ditto|Ditto|300\/300
+|-transform|p2a: Ditto|p1a: Sableye
+|turn|1
+|
+|switch|p2a: Aromatisse|Aromatisse, M|406\/406
+|move|p1a: Sableye|Taunt|p2a: Aromatisse
+|-fail|p2a: Aromatisse
+|
+|turn|2
+|
+|switch|p1a: Roserade|Roserade, M|261\/261
+|switch|p2a: Mew|Mew|404\/404
+|
+|turn|3
+|
+|move|p1a: Roserade|Toxic Spikes|p2a: Mew
+|-sidestart|p2: RawFrustration|move: Toxic Spikes
+|move|p2a: Mew|Knock Off|p1a: Roserade
+|-damage|p1a: Roserade|170\/261
+|-enditem|p1a: Roserade|Life Orb|[from] move: Knock Off|[of] p2a: Mew
+|
+|turn|4
+|
+|move|p1a: Roserade|Sleep Powder|p2a: Mew
+|-status|p2a: Mew|slp
+|cant|p2a: Mew|slp
+|
+|turn|5
+|
+|switch|p1a: Noivern|Noivern, M|327\/327
+|-curestatus|p2a: Mew|slp
+|move|p2a: Mew|Infestation|p1a: Noivern
+|-resisted|p1a: Noivern
+|-damage|p1a: Noivern|318\/327
+|-activate|p1a: Noivern|move: Infestation|[of] p2a: Mew
+|
+|-damage|p1a: Noivern|264\/327|[from] move: Infestation|[partiallytrapped]
+|turn|6
+|
+|move|p1a: Noivern|Taunt|p2a: Mew
+|-start|p2a: Mew|move: Taunt
+|move|p2a: Mew|Knock Off|p1a: Noivern
+|-damage|p1a: Noivern|185\/327
+|-enditem|p1a: Noivern|Life Orb|[from] move: Knock Off|[of] p2a: Mew
+|
+|-damage|p1a: Noivern|131\/327|[from] move: Infestation|[partiallytrapped]
+|turn|7
+|
+|move|p1a: Noivern|Roost|p1a: Noivern
+|-heal|p1a: Noivern|295\/327
+|move|p2a: Mew|Knock Off|p1a: Noivern
+|-damage|p1a: Noivern|236\/327
+|
+|-damage|p1a: Noivern|182\/327|[from] move: Infestation|[partiallytrapped]
+|turn|8
+|
+|move|p1a: Noivern|Roost|p1a: Noivern
+|-heal|p1a: Noivern|327\/327
+|move|p2a: Mew|Knock Off|p1a: Noivern
+|-crit|p1a: Noivern
+|-damage|p1a: Noivern|238\/327
+|
+|-damage|p1a: Noivern|184\/327|[from] move: Infestation|[partiallytrapped]
+|-end|p2a: Mew|move: Taunt
+|turn|9
+|
+|switch|p2a: Aromatisse|Aromatisse, M|406\/406
+|-status|p2a: Aromatisse|psn
+|move|p1a: Noivern|Taunt|p2a: Aromatisse
+|-fail|p2a: Aromatisse
+|
+|-damage|p2a: Aromatisse|356\/406 psn|[from] psn
+|-end|p1a: Noivern|Infestation|[partiallytrapped]
+|turn|10
+|
+|switch|p1a: Swampert|Swampert, M|401\/401
+|switch|p2a: Mew|Mew|404\/404
+|-status|p2a: Mew|psn
+|
+|-damage|p2a: Mew|354\/404 psn|[from] psn
+|turn|11
+|
+|move|p2a: Mew|Will-O-Wisp|p1a: Swampert
+|-status|p1a: Swampert|brn
+|move|p1a: Swampert|Stealth Rock|p2a: Mew
+|-sidestart|p2: RawFrustration|move: Stealth Rock
+|
+|-damage|p2a: Mew|304\/404 psn|[from] psn
+|-damage|p1a: Swampert|351\/401 brn|[from] brn
+|turn|12
+|join|watfor
+|
+|switch|p1a: Sableye|Sableye, M|299\/299
+|move|p2a: Mew|Knock Off|p1a: Sableye
+|-damage|p1a: Sableye|208\/299
+|-enditem|p1a: Sableye|Leftovers|[from] move: Knock Off|[of] p2a: Mew
+|
+|-damage|p2a: Mew|254\/404 psn|[from] psn
+|turn|13
+|
+|switch|p2a: Aromatisse|Aromatisse, M|356\/406 psn
+|-damage|p2a: Aromatisse|306\/406 psn|[from] Stealth Rock
+|move|p1a: Sableye|Knock Off|p2a: Aromatisse
+|-resisted|p2a: Aromatisse
+|-damage|p2a: Aromatisse|264\/406 psn
+|-enditem|p2a: Aromatisse|Leftovers|[from] move: Knock Off|[of] p1a: Sableye
+|
+|-damage|p2a: Aromatisse|214\/406 psn|[from] psn
+|turn|14
+|
+|switch|p1a: Roserade|Roserade, M|170\/261
+|move|p2a: Aromatisse|Wish|p2a: Aromatisse
+|
+|-damage|p2a: Aromatisse|164\/406 psn|[from] psn
+|turn|15
+|
+|move|p2a: Aromatisse|Protect|p2a: Aromatisse
+|-singleturn|p2a: Aromatisse|Protect
+|move|p1a: Roserade|Sludge Bomb|p2a: Aromatisse
+|-activate|p2a: Aromatisse|Protect
+|
+|-heal|p2a: Aromatisse|367\/406 psn|[from] move: Wish|[wisher] Aromatisse
+|-damage|p2a: Aromatisse|317\/406 psn|[from] psn
+|turn|16
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|-damage|p2a: Blissey|625\/714|[from] Stealth Rock
+|-status|p2a: Blissey|psn
+|move|p1a: Roserade|Sludge Bomb|p2a: Blissey
+|-damage|p2a: Blissey|508\/714 psn
+|
+|-heal|p2a: Blissey|552\/714 psn|[from] item: Leftovers
+|-damage|p2a: Blissey|463\/714 psn|[from] psn
+|turn|17
+|
+|switch|p1a: Sableye|Sableye, M|208\/299
+|switch|p2a: Gligar|Gligar, F|334\/334
+|-damage|p2a: Gligar|293\/334|[from] Stealth Rock
+|
+|turn|18
+|
+|switch|p2a: Aromatisse|Aromatisse, M|317\/406 psn
+|-damage|p2a: Aromatisse|267\/406 psn|[from] Stealth Rock
+|move|p1a: Sableye|Taunt|p2a: Aromatisse
+|-fail|p2a: Aromatisse
+|
+|-damage|p2a: Aromatisse|217\/406 psn|[from] psn
+|turn|19
+|
+|switch|p1a: Infernape|Infernape, M|293\/293
+|move|p2a: Aromatisse|Wish|p2a: Aromatisse
+|
+|-damage|p2a: Aromatisse|167\/406 psn|[from] psn
+|turn|20
+|
+|move|p2a: Aromatisse|Protect|p2a: Aromatisse
+|-singleturn|p2a: Aromatisse|Protect
+|move|p1a: Infernape|Swords Dance|p1a: Infernape
+|-boost|p1a: Infernape|atk|2
+|
+|-heal|p2a: Aromatisse|370\/406 psn|[from] move: Wish|[wisher] Aromatisse
+|-damage|p2a: Aromatisse|320\/406 psn|[from] psn
+|turn|21
+|
+|move|p1a: Infernape|Flare Blitz|p2a: Aromatisse
+|-damage|p2a: Aromatisse|0 fnt
+|-damage|p1a: Infernape|187\/293|[from] recoil|[of] p2a: Aromatisse
+|-damage|p1a: Infernape|158\/293|[from] item: Life Orb
+|faint|p2a: Aromatisse
+|
+|
+|switch|p2a: Ditto|Ditto|300\/300
+|-damage|p2a: Ditto|263\/300|[from] Stealth Rock
+|-status|p2a: Ditto|psn
+|-transform|p2a: Ditto|p1a: Infernape
+|turn|22
+|
+|switch|p1a: Noivern|Noivern, M|184\/327
+|move|p2a: Ditto|Mach Punch|p1a: Noivern
+|-resisted|p1a: Noivern
+|-damage|p1a: Noivern|100\/327
+|
+|-damage|p2a: Ditto|226\/300 psn|[from] psn
+|turn|23
+|
+|switch|p2a: Blissey|Blissey, F|463\/714
+|-damage|p2a: Blissey|374\/714|[from] Stealth Rock
+|-status|p2a: Blissey|psn
+|move|p1a: Noivern|Roost|p1a: Noivern
+|-heal|p1a: Noivern|264\/327
+|
+|-heal|p2a: Blissey|418\/714 psn|[from] item: Leftovers
+|-damage|p2a: Blissey|329\/714 psn|[from] psn
+|turn|24
+|
+|switch|p2a: Ditto|Ditto|226\/300 psn
+|-damage|p2a: Ditto|189\/300 psn|[from] Stealth Rock
+|-transform|p2a: Ditto|p1a: Noivern
+|move|p1a: Noivern|Taunt|p2a: Ditto
+|-start|p2a: Ditto|move: Taunt
+|
+|-damage|p2a: Ditto|152\/300 psn|[from] psn
+|turn|25
+|
+|switch|p1a: Sableye|Sableye, M|208\/299
+|move|p2a: Ditto|Draco Meteor|p1a: Sableye
+|-damage|p1a: Sableye|30\/299
+|-unboost|p2a: Ditto|spa|2
+|
+|-damage|p2a: Ditto|115\/300 psn|[from] psn
+|turn|26
+|
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|180\/299
+|move|p2a: Ditto|Draco Meteor|p1a: Sableye
+|-damage|p1a: Sableye|96\/299
+|-unboost|p2a: Ditto|spa|2
+|
+|-damage|p2a: Ditto|78\/300 psn|[from] psn
+|turn|27
+|
+|switch|p2a: Gastrodon|Gastrodon, M|426\/426
+|-damage|p2a: Gastrodon|400\/426|[from] Stealth Rock
+|-status|p2a: Gastrodon|psn
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|246\/299
+|
+|-heal|p2a: Gastrodon|426\/426 psn|[from] item: Leftovers
+|-damage|p2a: Gastrodon|373\/426 psn|[from] psn
+|turn|28
+|
+|move|p1a: Sableye|Taunt|p2a: Gastrodon
+|-start|p2a: Gastrodon|move: Taunt
+|move|p2a: Gastrodon|Scald|p1a: Sableye
+|-damage|p1a: Sableye|161\/299
+|
+|-heal|p2a: Gastrodon|399\/426 psn|[from] item: Leftovers
+|-damage|p2a: Gastrodon|346\/426 psn|[from] psn
+|turn|29
+|
+|move|p1a: Sableye|Knock Off|p2a: Gastrodon
+|-damage|p2a: Gastrodon|258\/426 psn
+|-enditem|p2a: Gastrodon|Leftovers|[from] move: Knock Off|[of] p1a: Sableye
+|move|p2a: Gastrodon|Earth Power|p1a: Sableye
+|-crit|p1a: Sableye
+|-damage|p1a: Sableye|31\/299
+|
+|-damage|p2a: Gastrodon|205\/426 psn|[from] psn
+|turn|30
+|
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|181\/299
+|move|p2a: Gastrodon|Scald|p1a: Sableye
+|-damage|p1a: Sableye|91\/299
+|
+|-damage|p2a: Gastrodon|152\/426 psn|[from] psn
+|-end|p2a: Gastrodon|move: Taunt
+|turn|31
+|
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|241\/299
+|move|p2a: Gastrodon|Recover|p2a: Gastrodon
+|-heal|p2a: Gastrodon|365\/426 psn
+|
+|-damage|p2a: Gastrodon|312\/426 psn|[from] psn
+|turn|32
+|
+|move|p1a: Sableye|Taunt|p2a: Gastrodon
+|-start|p2a: Gastrodon|move: Taunt
+|move|p2a: Gastrodon|Scald|p1a: Sableye
+|-damage|p1a: Sableye|165\/299
+|-status|p1a: Sableye|brn
+|
+|-damage|p1a: Sableye|128\/299 brn|[from] brn
+|-damage|p2a: Gastrodon|259\/426 psn|[from] psn
+|turn|33
+|
+|switch|p1a: Noivern|Noivern, M|264\/327
+|move|p2a: Gastrodon|Earth Power|p1a: Noivern
+|-immune|p1a: Noivern|[msg]
+|
+|-damage|p2a: Gastrodon|206\/426 psn|[from] psn
+|turn|34
+|
+|move|p1a: Noivern|Draco Meteor|p2a: Gastrodon
+|-damage|p2a: Gastrodon|0 fnt
+|-unboost|p1a: Noivern|spa|2
+|faint|p2a: Gastrodon
+|
+|
+|switch|p2a: Gligar|Gligar, F|293\/334
+|-damage|p2a: Gligar|252\/334|[from] Stealth Rock
+|turn|35
+|
+|move|p1a: Noivern|Taunt|p2a: Gligar
+|-start|p2a: Gligar|move: Taunt
+|move|p2a: Gligar|Knock Off|p1a: Noivern
+|-damage|p1a: Noivern|213\/327
+|
+|turn|36
+|
+|switch|p1a: Roserade|Roserade, M|170\/261
+|move|p2a: Gligar|Knock Off|p1a: Roserade
+|-damage|p1a: Roserade|111\/261
+|
+|turn|37
+|
+|move|p1a: Roserade|Giga Drain|p2a: Gligar
+|-damage|p2a: Gligar|138\/334
+|-heal|p1a: Roserade|168\/261|[from] drain|[of] p2a: Gligar
+|move|p2a: Gligar|Earthquake|p1a: Roserade
+|-damage|p1a: Roserade|41\/261
+|
+|-end|p2a: Gligar|move: Taunt
+|turn|38
+|
+|move|p1a: Roserade|Sleep Powder|p2a: Gligar
+|-status|p2a: Gligar|slp
+|cant|p2a: Gligar|slp
+|
+|turn|39
+|
+|switch|p2a: Mew|Mew|254\/404 psn
+|-damage|p2a: Mew|204\/404 psn|[from] Stealth Rock
+|move|p1a: Roserade|Giga Drain|p2a: Mew
+|-damage|p2a: Mew|116\/404 psn
+|-heal|p1a: Roserade|85\/261|[from] drain|[of] p2a: Mew
+|
+|-damage|p2a: Mew|66\/404 psn|[from] psn
+|turn|40
+|
+|move|p1a: Roserade|Giga Drain|p2a: Mew
+|-damage|p2a: Mew|0 fnt
+|-heal|p1a: Roserade|118\/261|[from] drain|[of] p2a: Mew
+|faint|p2a: Mew
+|
+|
+|switch|p2a: Gligar|Gligar, F|138\/334 slp
+|-damage|p2a: Gligar|97\/334 slp|[from] Stealth Rock
+|turn|41
+|
+|move|p1a: Roserade|Giga Drain|p2a: Gligar
+|-damage|p2a: Gligar|0 fnt
+|-heal|p1a: Roserade|167\/261|[from] drain|[of] p2a: Gligar
+|faint|p2a: Gligar
+|
+|
+|switch|p2a: Ditto|Ditto|78\/300 psn
+|-damage|p2a: Ditto|41\/300 psn|[from] Stealth Rock
+|-transform|p2a: Ditto|p1a: Roserade
+|turn|42
+|
+|switch|p1a: Noivern|Noivern, M|213\/327
+|move|p2a: Ditto|Sludge Bomb|p1a: Noivern
+|-damage|p1a: Noivern|17\/327
+|
+|-damage|p2a: Ditto|4\/300 psn|[from] psn
+|turn|43
+|
+|switch|p1a: Swampert|Swampert, M|351\/401 brn
+|move|p2a: Ditto|Sludge Bomb|p1a: Swampert
+|-resisted|p1a: Swampert
+|-damage|p1a: Swampert|267\/401 brn
+|
+|-heal|p1a: Swampert|292\/401 brn|[from] item: Leftovers
+|-damage|p2a: Ditto|0 fnt|[from] psn
+|-damage|p1a: Swampert|242\/401 brn|[from] brn
+|faint|p2a: Ditto
+|
+|switch|p2a: Blissey|Blissey, F|329\/714
+|-status|p2a: Blissey|psn
+|-damage|p2a: Blissey|240\/714 psn|[from] Stealth Rock
+|turn|44
+|
+|switch|p1a: Sableye|Sableye, M|128\/299 brn
+|move|p2a: Blissey|Soft-Boiled|p2a: Blissey
+|-heal|p2a: Blissey|597\/714 psn
+|
+|-heal|p2a: Blissey|641\/714 psn|[from] item: Leftovers
+|-damage|p2a: Blissey|552\/714 psn|[from] psn
+|-damage|p1a: Sableye|91\/299 brn|[from] brn
+|turn|45
+|join|TFC SER TFC
+|
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|241\/299 brn
+|move|p2a: Blissey|Stealth Rock|p1a: Sableye
+|-sidestart|p1: COMESTOANEND|move: Stealth Rock
+|
+|-heal|p2a: Blissey|596\/714 psn|[from] item: Leftovers
+|-damage|p2a: Blissey|507\/714 psn|[from] psn
+|-damage|p1a: Sableye|204\/299 brn|[from] brn
+|turn|46
+|join|Mr.Zoroark
+|
+|move|p1a: Sableye|Taunt|p2a: Blissey
+|-start|p2a: Blissey|move: Taunt
+|cant|p2a: Blissey|move: Taunt|Wish
+|
+|-heal|p2a: Blissey|551\/714 psn|[from] item: Leftovers
+|-damage|p2a: Blissey|462\/714 psn|[from] psn
+|-damage|p1a: Sableye|167\/299 brn|[from] brn
+|turn|47
+|chat|RawFrustration|gg
+|-message|RawFrustration forfeited.
+|
+|win|COMESTOANEND
+|raw|Ladder updating...
+|raw|COMESTOANEND's rating: 1466 &rarr; <strong>1492<\/strong><br \/>(+26 for winning)
+|raw|RawFrustration's rating: 1567 &rarr; <strong>1541<\/strong><br \/>(-26 for losing)
+|leave|RawFrustration
+|player|p2
+|chat|COMESTOANEND|gg
+|leave|watfor
+|leave|Mr.Zoroark
+|join|Lemmy
+|join|Sken
+|chat|Lemmy|UU no vale
+|chat|Lemmy|puto
+|join|SorayShiro
+|chat|COMESTOANEND|UU mola
+|chat|COMESTOANEND|.l.
+|leave|Lemmy
+|leave|SorayShiro
+|join|Law) Ninten
+|leave|COMESTOANEND
+|player|p1
+|join|FandeFola
+|join|Paolo Ruffini

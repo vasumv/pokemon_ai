@@ -1,0 +1,366 @@
+|join|k4rpman
+|join|Freddie Gibbs
+|player|p1|k4rpman|170
+|player|p2|Freddie Gibbs|144
+|gametype|singles
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Bisharp, M
+|poke|p1|Deoxys-Defense
+|poke|p1|Thundurus, M
+|poke|p1|Medicham, M
+|poke|p1|Scizor, F
+|poke|p1|Latios, M
+|poke|p2|Tornadus-Therian, M
+|poke|p2|Heatran, F
+|poke|p2|Lanturn, M
+|poke|p2|Gliscor, F
+|poke|p2|Hitmontop, M
+|poke|p2|Ferrothorn, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Deoxys-Defense|Deoxys-Defense|304\/304
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M|299\/299
+|-ability|p1a: Deoxys-Defense|Pressure
+|turn|1
+|callback|decision
+|
+|move|p2a: Tornadus-Therian|Knock Off|p1a: Deoxys-Defense
+|-supereffective|p1a: Deoxys-Defense
+|-damage|p1a: Deoxys-Defense|212\/304
+|-damage|p2a: Tornadus-Therian|250\/299|[from] item: Rocky Helmet|[of] p1a: Deoxys-Defense
+|-enditem|p1a: Deoxys-Defense|Rocky Helmet|[from] move: Knock Off|[of] p2a: Tornadus-Therian
+|move|p1a: Deoxys-Defense|Thunder Wave|p2a: Tornadus-Therian
+|-status|p2a: Tornadus-Therian|par
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Deoxys-Defense|Stealth Rock|p2a: Tornadus-Therian
+|-sidestart|p2: Freddie Gibbs|move: Stealth Rock
+|move|p2a: Tornadus-Therian|U-turn|p1a: Deoxys-Defense
+|-supereffective|p1a: Deoxys-Defense
+|-damage|p1a: Deoxys-Defense|148\/304
+|callback|decision
+|
+|switch|p2a: Lanturn|Lanturn, M|401\/401
+|-damage|p2a: Lanturn|351\/401|[from] Stealth Rock
+|
+|-heal|p2a: Lanturn|376\/401|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p1a: Deoxys-Defense|Spikes|p2a: Lanturn
+|-sidestart|p2: Freddie Gibbs|Spikes
+|move|p2a: Lanturn|Scald|p1a: Deoxys-Defense
+|-damage|p1a: Deoxys-Defense|94\/304
+|
+|-heal|p2a: Lanturn|401\/401|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M|301\/301
+|move|p2a: Lanturn|Scald|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|263\/301
+|-status|p1a: Latios|brn
+|
+|-damage|p1a: Latios|226\/301 brn|[from] brn
+|turn|5
+|callback|decision
+|
+|move|p1a: Latios|Draco Meteor|p2a: Lanturn|[miss]
+|-miss|p1a: Latios|p2a: Lanturn
+|move|p2a: Lanturn|Heal Bell|p2a: Lanturn
+|-cureteam|p2a: Lanturn|[from] move: HealBell
+|
+|-damage|p1a: Latios|189\/301 brn|[from] brn
+|turn|6
+|callback|decision
+|
+|move|p1a: Latios|Draco Meteor|p2a: Lanturn
+|-damage|p2a: Lanturn|120\/401
+|-unboost|p1a: Latios|spa|2
+|-damage|p1a: Latios|159\/301 brn|[from] item: Life Orb
+|move|p2a: Lanturn|Volt Switch|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|129\/301 brn
+|callback|decision
+|
+|switch|p2a: Hitmontop|Hitmontop, M|304\/304
+|-damage|p2a: Hitmontop|266\/304|[from] Spikes
+|-damage|p2a: Hitmontop|247\/304|[from] Stealth Rock
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Latios
+|-unboost|p1a: Latios|atk|1
+|
+|-heal|p2a: Hitmontop|266\/304|[from] item: Leftovers
+|-damage|p1a: Latios|92\/301 brn|[from] brn
+|turn|7
+|callback|decision
+|
+|move|p1a: Latios|Psyshock|p2a: Hitmontop
+|-supereffective|p2a: Hitmontop
+|-damage|p2a: Hitmontop|139\/304
+|-damage|p1a: Latios|62\/301 brn|[from] item: Life Orb
+|move|p2a: Hitmontop|Rapid Spin|p1a: Latios
+|-damage|p1a: Latios|42\/301 brn
+|-sideend|p2: Freddie Gibbs|Spikes|[from] move: Rapid Spin|[of] p2a: Hitmontop
+|-sideend|p2: Freddie Gibbs|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Hitmontop
+|
+|-heal|p2a: Hitmontop|158\/304|[from] item: Leftovers
+|-damage|p1a: Latios|5\/301 brn|[from] brn
+|turn|8
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, F|386\/386
+|move|p1a: Latios|Roost|p1a: Latios
+|-heal|p1a: Latios|156\/301 brn
+|
+|-damage|p1a: Latios|119\/301 brn|[from] brn
+|turn|9
+|callback|decision
+|
+|switch|p1a: Medicham|Medicham, M|261\/261
+|move|p2a: Heatran|Stealth Rock|p1a: Medicham
+|-sidestart|p1: k4rpman|move: Stealth Rock
+|
+|turn|10
+|callback|decision
+|
+|switch|p2a: Hitmontop|Hitmontop, M|158\/304
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Medicham
+|-unboost|p1a: Medicham|atk|1
+|-formechange|p1a: Medicham|Medicham-Mega
+|message|Medicham has Mega Evolved into Mega Medicham!
+|move|p1a: Medicham|Substitute|p1a: Medicham
+|-start|p1a: Medicham|Substitute
+|-damage|p1a: Medicham|196\/261
+|
+|-heal|p2a: Hitmontop|177\/304|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, F|352\/352
+|move|p1a: Medicham|High Jump Kick|p2a: Gliscor
+|-resisted|p2a: Gliscor
+|-damage|p2a: Gliscor|266\/352
+|
+|-activate|p2a: Gliscor|item: Toxic Orb
+|-status|p2a: Gliscor|tox
+|turn|12
+|callback|decision
+|
+|move|p1a: Medicham|Ice Punch|p2a: Gliscor
+|-supereffective|p2a: Gliscor
+|-damage|p2a: Gliscor|30\/352 tox
+|move|p2a: Gliscor|Earthquake|p1a: Medicham
+|-crit|p1a: Medicham
+|-end|p1a: Medicham|Substitute
+|
+|-heal|p2a: Gliscor|74\/352 tox|[from] ability: Poison Heal
+|turn|13
+|callback|decision
+|
+|switch|p2a: Hitmontop|Hitmontop, M|177\/304
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Medicham
+|-unboost|p1a: Medicham|atk|1
+|move|p1a: Medicham|Substitute|p1a: Medicham
+|-start|p1a: Medicham|Substitute
+|-damage|p1a: Medicham|131\/261
+|
+|-heal|p2a: Hitmontop|196\/304|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|move|p1a: Medicham|High Jump Kick|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|64\/352
+|-damage|p1a: Medicham|99\/261|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|-damage|p1a: Medicham|56\/261|[from] item: Rocky Helmet|[of] p2a: Ferrothorn
+|
+|turn|15
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, F|74\/352 tox
+|move|p1a: Medicham|High Jump Kick|p2a: Gliscor|[miss]
+|-miss|p1a: Medicham|p2a: Gliscor
+|-damage|p1a: Medicham|0 fnt|[from] highjumpkick
+|faint|p1a: Medicham
+|
+|-heal|p2a: Gliscor|118\/352 tox|[from] ability: Poison Heal
+|callback|decision
+|
+|switch|p1a: Thundurus|Thundurus, M|299\/299
+|-damage|p1a: Thundurus|225\/299|[from] Stealth Rock
+|turn|16
+|callback|decision
+|
+|switch|p2a: Lanturn|Lanturn, M|120\/401
+|move|p1a: Thundurus|Hidden Power|p2a: Lanturn
+|-resisted|p2a: Lanturn
+|-damage|p2a: Lanturn|93\/401
+|
+|-heal|p1a: Thundurus|243\/299|[from] item: Leftovers
+|-heal|p2a: Lanturn|118\/401|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M|119\/301 brn
+|-damage|p1a: Latios|82\/301 brn|[from] Stealth Rock
+|move|p2a: Lanturn|Scald|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|44\/301 brn
+|
+|-heal|p2a: Lanturn|143\/401|[from] item: Leftovers
+|-damage|p1a: Latios|7\/301 brn|[from] brn
+|turn|18
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, F|386\/386
+|move|p1a: Latios|Roost|p1a: Latios
+|-heal|p1a: Latios|158\/301 brn
+|
+|-damage|p1a: Latios|121\/301 brn|[from] brn
+|turn|19
+|callback|decision
+|
+|move|p1a: Latios|Roost|p1a: Latios
+|-heal|p1a: Latios|272\/301 brn
+|move|p2a: Heatran|Roar|p1a: Latios
+|drag|p1a: Deoxys-Defense|Deoxys-Defense|94\/304
+|-damage|p1a: Deoxys-Defense|56\/304|[from] Stealth Rock
+|-ability|p1a: Deoxys-Defense|Pressure
+|
+|turn|20
+|callback|decision
+|
+|move|p1a: Deoxys-Defense|Stealth Rock|p2a: Heatran
+|-sidestart|p2: Freddie Gibbs|move: Stealth Rock
+|move|p2a: Heatran|Lava Plume|p1a: Deoxys-Defense
+|-damage|p1a: Deoxys-Defense|0 fnt
+|faint|p1a: Deoxys-Defense
+|
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M|272\/301 brn
+|-damage|p1a: Latios|235\/301 brn|[from] Stealth Rock
+|turn|21
+|callback|decision
+|
+|move|p1a: Latios|Thunderbolt|p2a: Heatran
+|-damage|p2a: Heatran|291\/386
+|-damage|p1a: Latios|205\/301 brn|[from] item: Life Orb
+|move|p2a: Heatran|Roar|p1a: Latios
+|drag|p1a: Bisharp|Bisharp, M|302\/302
+|-damage|p1a: Bisharp|284\/302|[from] Stealth Rock
+|
+|-heal|p2a: Heatran|315\/386|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p1a: Bisharp|Knock Off|p2a: Heatran
+|-damage|p2a: Heatran|80\/386
+|-enditem|p2a: Heatran|Leftovers|[from] move: Knock Off|[of] p1a: Bisharp
+|-damage|p1a: Bisharp|254\/302|[from] item: Life Orb
+|move|p2a: Heatran|Lava Plume|p1a: Bisharp
+|-supereffective|p1a: Bisharp
+|-damage|p1a: Bisharp|0 fnt
+|faint|p1a: Bisharp
+|
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M|205\/301 brn
+|-damage|p1a: Latios|168\/301 brn|[from] Stealth Rock
+|turn|23
+|callback|decision
+|
+|move|p1a: Latios|Roost|p1a: Latios
+|-heal|p1a: Latios|301\/301 brn
+|move|p2a: Heatran|Lava Plume|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|247\/301 brn
+|
+|-damage|p1a: Latios|210\/301 brn|[from] brn
+|turn|24
+|callback|decision
+|
+|move|p1a: Latios|Thunderbolt|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|-damage|p1a: Latios|180\/301 brn|[from] item: Life Orb
+|faint|p2a: Heatran
+|
+|-damage|p1a: Latios|143\/301 brn|[from] brn
+|callback|decision
+|
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M|299\/299
+|-damage|p2a: Tornadus-Therian|225\/299|[from] Stealth Rock
+|turn|25
+|callback|decision
+|
+|move|p2a: Tornadus-Therian|Knock Off|p1a: Latios
+|-supereffective|p1a: Latios
+|-damage|p1a: Latios|0 fnt
+|faint|p1a: Latios
+|
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|343\/343
+|-damage|p1a: Scizor|301\/343|[from] Stealth Rock
+|turn|26
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Tornadus-Therian
+|-damage|p2a: Tornadus-Therian|24\/299
+|move|p2a: Tornadus-Therian|Heat Wave|p1a: Scizor
+|-supereffective|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|faint|p1a: Scizor
+|
+|callback|decision
+|
+|switch|p1a: Thundurus|Thundurus, M|243\/299
+|-damage|p1a: Thundurus|169\/299|[from] Stealth Rock
+|turn|27
+|callback|decision
+|
+|switch|p2a: Lanturn|Lanturn, M|143\/401
+|-damage|p2a: Lanturn|93\/401|[from] Stealth Rock
+|move|p1a: Thundurus|Hidden Power|p2a: Lanturn
+|-resisted|p2a: Lanturn
+|-damage|p2a: Lanturn|64\/401
+|
+|-heal|p1a: Thundurus|187\/299|[from] item: Leftovers
+|-heal|p2a: Lanturn|89\/401|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|move|p1a: Thundurus|Hidden Power|p2a: Lanturn
+|-resisted|p2a: Lanturn
+|-damage|p2a: Lanturn|60\/401
+|move|p2a: Lanturn|Rest|p2a: Lanturn
+|-status|p2a: Lanturn|slp
+|-heal|p2a: Lanturn|401\/401 slp|[silent]
+|-status|p2a: Lanturn|slp|[from] move: Rest
+|
+|-heal|p1a: Thundurus|205\/299|[from] item: Leftovers
+|turn|29
+|callback|decision
+|-message|k4rpman forfeited.
+|
+|win|Freddie Gibbs
+|raw|Ladder updating...
+|leave|k4rpman
+|player|p1
+|raw|k4rpman's rating: 3028 &rarr; <strong>2900<\/strong><br \/>(-128 for losing)
+|raw|Freddie Gibbs's rating: 2515 &rarr; <strong>2530<\/strong><br \/>(+15 for winning)

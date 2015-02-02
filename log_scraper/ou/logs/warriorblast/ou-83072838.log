@@ -1,0 +1,166 @@
+|join|WarriorBlast
+|join|luiginomoro
+|player|p1|WarriorBlast|168
+|player|p2|luiginomoro|137
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Rotom-Wash, shiny
+|poke|p1|Tentacruel, M, shiny
+|poke|p1|Ferrothorn, M, shiny
+|poke|p1|Latios, M, shiny
+|poke|p1|Manectric, F, shiny
+|poke|p1|Togekiss, M, shiny
+|poke|p2|Haxorus, F
+|poke|p2|Sableye, F
+|poke|p2|Talonflame, F
+|poke|p2|Cinccino, F
+|poke|p2|Porygon2
+|poke|p2|Scizor, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Manectric|Manectric, F, shiny|281\/281
+|switch|p2a: Porygon2|Porygon2|374\/374
+|-ability|p2a: Porygon2|Static|[from] ability: Trace|[of] p1a: Manectric
+|turn|1
+|callback|decision
+|
+|-formechange|p1a: Manectric|Manectric-Mega
+|message|Manectric has Mega Evolved into Mega Manectric!
+|-ability|p1a: Manectric|Intimidate|[of] p2a: Porygon2
+|-unboost|p2a: Porygon2|atk|1
+|move|p2a: Porygon2|Magic Coat|p2a: Porygon2
+|-singleturn|p2a: Porygon2|move: Magic Coat
+|move|p1a: Manectric|Discharge|p2a: Porygon2
+|-crit|p2a: Porygon2
+|-damage|p2a: Porygon2|226\/374
+|-status|p2a: Porygon2|par
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Manectric|Volt Switch|p2a: Porygon2
+|-damage|p2a: Porygon2|133\/374 par
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M, shiny|352\/352
+|move|p2a: Porygon2|Ice Beam|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|269\/352
+|-status|p1a: Ferrothorn|frz
+|
+|-heal|p1a: Ferrothorn|291\/352 frz|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|cant|p1a: Ferrothorn|frz
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|320\/374 par
+|
+|-heal|p1a: Ferrothorn|313\/352 frz|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|-curestatus|p1a: Ferrothorn|frz
+|move|p1a: Ferrothorn|Gyro Ball|p2a: Porygon2
+|-damage|p2a: Porygon2|298\/374 par
+|-status|p1a: Ferrothorn|par
+|move|p2a: Porygon2|Ice Beam|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|219\/352 par
+|
+|-heal|p1a: Ferrothorn|241\/352 par|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p2a: Porygon2|Magic Coat|p2a: Porygon2
+|-singleturn|p2a: Porygon2|move: Magic Coat
+|move|p1a: Ferrothorn|Leech Seed|p2a: Porygon2
+|move|p2a: Porygon2|Leech Seed|p1a: Ferrothorn|[from]Magic Coat
+|-immune|p1a: Ferrothorn|[msg]
+|
+|-heal|p1a: Ferrothorn|263\/352 par|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, F|344\/344
+|move|p1a: Ferrothorn|Leech Seed|p2a: Scizor
+|-start|p2a: Scizor|move: Leech Seed
+|
+|-heal|p1a: Ferrothorn|285\/352 par|[from] item: Leftovers
+|-damage|p2a: Scizor|301\/344|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|328\/352 par|[silent]
+|turn|7
+|callback|decision
+|
+|-formechange|p2a: Scizor|Scizor-Mega
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p2a: Scizor|Swords Dance|p2a: Scizor
+|-boost|p2a: Scizor|atk|2
+|cant|p1a: Ferrothorn|par
+|
+|-heal|p1a: Ferrothorn|350\/352 par|[from] item: Leftovers
+|-damage|p2a: Scizor|258\/344|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|352\/352 par|[silent]
+|turn|8
+|callback|decision
+|
+|move|p2a: Scizor|Swords Dance|p2a: Scizor
+|-boost|p2a: Scizor|atk|2
+|cant|p1a: Ferrothorn|par
+|
+|-damage|p2a: Scizor|215\/344|[from] Leech Seed|[of] p1a: Ferrothorn
+|turn|9
+|callback|decision
+|
+|move|p2a: Scizor|Brick Break|p1a: Ferrothorn
+|-supereffective|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|0 fnt
+|-damage|p2a: Scizor|172\/344|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|faint|p1a: Ferrothorn
+|
+|callback|decision
+|
+|switch|p1a: Manectric|Manectric, F, shiny|281\/281
+|-formechange|p1a: Manectric|Manectric-Mega
+|-ability|p1a: Manectric|Intimidate|[of] p2a: Scizor
+|-unboost|p2a: Scizor|atk|1
+|turn|10
+|callback|decision
+|
+|move|p2a: Scizor|Quick Attack|p1a: Manectric
+|-damage|p1a: Manectric|0 fnt
+|faint|p1a: Manectric
+|
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash, shiny|304\/304
+|turn|11
+|callback|decision
+|
+|move|p2a: Scizor|Quick Attack|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|114\/304
+|move|p1a: Rotom-Wash|Trick|p2a: Scizor
+|-fail|p2a: Scizor
+|
+|-damage|p2a: Scizor|129\/344|[from] Leech Seed|[of] p1a: Rotom-Wash
+|-heal|p1a: Rotom-Wash|157\/304|[silent]
+|turn|12
+|callback|decision
+|leave|WarriorBlast
+|player|p1
+|-message|warriorblast lost due to inactivity.
+|
+|win|luiginomoro
+|raw|Ladder updating...
+|raw|WarriorBlast's rating: 1111 &rarr; <strong>1086<\/strong><br \/>(-25 for losing)
+|raw|luiginomoro's rating: 1112 &rarr; <strong>1137<\/strong><br \/>(+25 for winning)

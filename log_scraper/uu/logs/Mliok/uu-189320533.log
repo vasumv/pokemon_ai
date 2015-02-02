@@ -1,0 +1,515 @@
+|join|mliok
+|join|lopoman
+|player|p1|mliok|101
+|player|p2|lopoman|10
+|gametype|singles
+|gen|6
+|tier|UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Tangrowth, F
+|poke|p1|Milotic, M
+|poke|p1|Toxicroak, M
+|poke|p1|Jirachi
+|poke|p1|Crobat, M
+|poke|p1|Ampharos, F, shiny
+|poke|p2|Ampharos, M, shiny
+|poke|p2|Crobat, F, shiny
+|poke|p2|Empoleon, M, shiny
+|poke|p2|Aromatisse, M, shiny
+|poke|p2|Darmanitan, F, shiny
+|poke|p2|Krookodile, M, shiny
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|c|âmliok|gl
+|c|âlopoman|gl
+|
+|start
+|switch|p1a: Milotic|Milotic, M|394\/394
+|switch|p2a: Darmanitan|Darmanitan, F, shiny|351\/351
+|turn|1
+|
+|move|p2a: Darmanitan|U-turn|p1a: Milotic
+|-damage|p1a: Milotic|294\/394
+|
+|switch|p2a: Ampharos|Ampharos, M, shiny|374\/374
+|move|p1a: Milotic|Scald|p2a: Ampharos
+|-damage|p2a: Ampharos|278\/374
+|-status|p2a: Ampharos|brn
+|
+|-heal|p1a: Milotic|318\/394|[from] item: Leftovers
+|-damage|p2a: Ampharos|232\/374 brn|[from] brn
+|turn|2
+|
+|detailschange|p2a: Ampharos|Ampharos-Mega, M, shiny
+|message|Ampharos has Mega Evolved into Mega Ampharos!
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p2a: Ampharos|Volt Switch|p1a: Milotic
+|-supereffective|p1a: Milotic
+|-damage|p1a: Milotic|106\/394
+|
+|switch|p2a: Empoleon|Empoleon, M, shiny|372\/372
+|move|p1a: Milotic|Mirror Coat|p2a: Empoleon
+|-damage|p2a: Empoleon|0 fnt
+|faint|p2a: Empoleon
+|
+|-heal|p1a: Milotic|130\/394|[from] item: Leftovers
+|
+|switch|p2a: Krookodile|Krookodile, M, shiny|332\/332
+|turn|3
+|
+|switch|p1a: Tangrowth|Tangrowth, F|404\/404
+|move|p2a: Krookodile|Knock Off|p1a: Tangrowth
+|-damage|p1a: Tangrowth|310\/404
+|-damage|p2a: Krookodile|277\/332|[from] item: Rocky Helmet|[of] p1a: Tangrowth
+|-enditem|p1a: Tangrowth|Rocky Helmet|[from] move: Knock Off|[of] p2a: Krookodile
+|
+|turn|4
+|
+|switch|p2a: Darmanitan|Darmanitan, F, shiny|351\/351
+|move|p1a: Tangrowth|Knock Off|p2a: Darmanitan
+|-damage|p2a: Darmanitan|223\/351
+|-enditem|p2a: Darmanitan|Choice Scarf|[from] move: Knock Off|[of] p1a: Tangrowth
+|
+|turn|5
+|
+|switch|p1a: Ampharos|Ampharos, F, shiny|384\/384
+|move|p2a: Darmanitan|Flare Blitz|p1a: Ampharos
+|-damage|p1a: Ampharos|135\/384
+|-status|p2a: Darmanitan|par
+|-damage|p2a: Darmanitan|141\/351 par|[from] recoil|[of] p1a: Ampharos
+|
+|turn|6
+|c|âlopoman|n
+|c|âmliok|sorry
+|
+|switch|p2a: Aromatisse|Aromatisse, M, shiny|406\/406
+|detailschange|p1a: Ampharos|Ampharos-Mega, F, shiny
+|message|Ampharos has Mega Evolved into Mega Ampharos!
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p1a: Ampharos|Rest|p1a: Ampharos
+|-status|p1a: Ampharos|slp
+|-heal|p1a: Ampharos|384\/384 slp|[silent]
+|-status|p1a: Ampharos|slp|[from] move: Rest
+|
+|turn|7
+|
+|switch|p1a: Toxicroak|Toxicroak, M|307\/307
+|move|p2a: Aromatisse|Aromatherapy|p2a: Aromatisse
+|-cureteam|p2a: Aromatisse|[from] move: Aromatherapy
+|
+|turn|8
+|
+|switch|p2a: Crobat|Crobat, F, shiny|343\/343
+|move|p1a: Toxicroak|Substitute|p1a: Toxicroak
+|-start|p1a: Toxicroak|Substitute
+|-damage|p1a: Toxicroak|231\/307
+|
+|turn|9
+|
+|switch|p1a: Ampharos|Ampharos-Mega, F, shiny|384\/384 slp
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p2a: Crobat|Brave Bird|p1a: Ampharos
+|-resisted|p1a: Ampharos
+|-damage|p1a: Ampharos|327\/384 slp
+|-damage|p2a: Crobat|324\/343|[from] recoil|[of] p1a: Ampharos
+|
+|-heal|p2a: Crobat|343\/343|[from] item: Black Sludge
+|turn|10
+|
+|move|p2a: Crobat|U-turn|p1a: Ampharos
+|-damage|p1a: Ampharos|282\/384 slp
+|
+|switch|p2a: Krookodile|Krookodile, M, shiny|277\/332
+|cant|p1a: Ampharos|slp
+|move|p1a: Ampharos|Sleep Talk|p1a: Ampharos
+|move|p1a: Ampharos|Volt Switch|p2a: Krookodile|[from]Sleep Talk
+|-immune|p2a: Krookodile|[msg]
+|
+|turn|11
+|
+|switch|p1a: Tangrowth|Tangrowth, F|404\/404
+|move|p2a: Krookodile|Stone Edge|p1a: Tangrowth
+|-damage|p1a: Tangrowth|330\/404
+|
+|turn|12
+|
+|switch|p2a: Crobat|Crobat, F, shiny|343\/343
+|move|p1a: Tangrowth|Leech Seed|p2a: Crobat
+|-start|p2a: Crobat|move: Leech Seed
+|
+|-damage|p2a: Crobat|301\/343|[from] Leech Seed|[of] p1a: Tangrowth
+|-heal|p1a: Tangrowth|372\/404|[silent]
+|turn|13
+|
+|move|p2a: Crobat|U-turn|p1a: Tangrowth
+|-supereffective|p1a: Tangrowth
+|-damage|p1a: Tangrowth|290\/404
+|
+|switch|p2a: Darmanitan|Darmanitan, F, shiny|141\/351
+|move|p1a: Tangrowth|Knock Off|p2a: Darmanitan
+|-damage|p2a: Darmanitan|57\/351
+|
+|turn|14
+|
+|switch|p1a: Crobat|Crobat, M|373\/373
+|move|p2a: Darmanitan|Flare Blitz|p1a: Crobat
+|-damage|p1a: Crobat|0 fnt
+|-damage|p2a: Darmanitan|0 fnt|[from] recoil|[of] p1a: Crobat
+|faint|p1a: Crobat
+|faint|p2a: Darmanitan
+|
+|
+|switch|p1a: Jirachi|Jirachi|404\/404
+|switch|p2a: Ampharos|Ampharos-Mega, M, shiny|232\/374
+|-ability|p2a: Ampharos|Mold Breaker
+|turn|15
+|
+|move|p1a: Jirachi|Stealth Rock|p2a: Ampharos
+|-sidestart|p2: lopoman|move: Stealth Rock
+|move|p2a: Ampharos|Volt Switch|p1a: Jirachi
+|-damage|p1a: Jirachi|289\/404
+|
+|switch|p2a: Krookodile|Krookodile, M, shiny|277\/332
+|-damage|p2a: Krookodile|257\/332|[from] Stealth Rock
+|
+|-heal|p1a: Jirachi|314\/404|[from] item: Leftovers
+|turn|16
+|
+|move|p2a: Krookodile|Pursuit|p1a: Jirachi|[from]Pursuit
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|62\/404
+|switch|p1a: Tangrowth|Tangrowth, F|404\/404
+|
+|turn|17
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M, shiny|232\/374
+|-damage|p2a: Ampharos|186\/374|[from] Stealth Rock
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Tangrowth|Leech Seed|p2a: Ampharos|[miss]
+|-miss|p1a: Tangrowth|p2a: Ampharos
+|
+|turn|18
+|c|âlopoman|dsl
+|
+|move|p2a: Ampharos|Dragon Pulse|p1a: Tangrowth
+|-damage|p1a: Tangrowth|76\/404
+|move|p1a: Tangrowth|Leech Seed|p2a: Ampharos|[miss]
+|-miss|p1a: Tangrowth|p2a: Ampharos
+|
+|turn|19
+|
+|switch|p1a: Jirachi|Jirachi|62\/404
+|move|p2a: Ampharos|Volt Switch|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|faint|p1a: Jirachi
+|
+|switch|p2a: Crobat|Crobat, F, shiny|301\/343
+|-damage|p2a: Crobat|216\/343|[from] Stealth Rock
+|
+|-heal|p2a: Crobat|237\/343|[from] item: Black Sludge
+|
+|switch|p1a: Ampharos|Ampharos-Mega, F, shiny|282\/384 slp
+|-ability|p1a: Ampharos|Mold Breaker
+|turn|20
+|
+|move|p2a: Crobat|U-turn|p1a: Ampharos
+|-damage|p1a: Ampharos|242\/384 slp
+|
+|switch|p2a: Aromatisse|Aromatisse, M, shiny|406\/406
+|-damage|p2a: Aromatisse|356\/406|[from] Stealth Rock
+|cant|p1a: Ampharos|slp
+|move|p1a: Ampharos|Sleep Talk|p1a: Ampharos
+|move|p1a: Ampharos|Dragon Pulse|p2a: Aromatisse|[from]Sleep Talk
+|-immune|p2a: Aromatisse|[msg]
+|
+|-heal|p2a: Aromatisse|381\/406|[from] item: Leftovers
+|turn|21
+|
+|switch|p2a: Krookodile|Krookodile, M, shiny|257\/332
+|-damage|p2a: Krookodile|237\/332|[from] Stealth Rock
+|-curestatus|p1a: Ampharos|slp
+|move|p1a: Ampharos|Volt Switch|p2a: Krookodile
+|-immune|p2a: Krookodile|[msg]
+|
+|turn|22
+|
+|switch|p1a: Tangrowth|Tangrowth, F|210\/404
+|move|p2a: Krookodile|Earthquake|p1a: Tangrowth
+|-resisted|p1a: Tangrowth
+|-damage|p1a: Tangrowth|161\/404
+|
+|turn|23
+|
+|switch|p2a: Aromatisse|Aromatisse, M, shiny|381\/406
+|-damage|p2a: Aromatisse|331\/406|[from] Stealth Rock
+|switch|p1a: Ampharos|Ampharos-Mega, F, shiny|242\/384
+|-ability|p1a: Ampharos|Mold Breaker
+|
+|-heal|p2a: Aromatisse|356\/406|[from] item: Leftovers
+|turn|24
+|
+|switch|p1a: Milotic|Milotic, M|130\/394
+|move|p2a: Aromatisse|Moonblast|p1a: Milotic
+|-damage|p1a: Milotic|66\/394
+|-unboost|p1a: Milotic|spa|1
+|
+|-heal|p1a: Milotic|90\/394|[from] item: Leftovers
+|-heal|p2a: Aromatisse|381\/406|[from] item: Leftovers
+|turn|25
+|
+|move|p1a: Milotic|Recover|p1a: Milotic
+|-heal|p1a: Milotic|287\/394
+|move|p2a: Aromatisse|Wish|p2a: Aromatisse
+|
+|-heal|p1a: Milotic|311\/394|[from] item: Leftovers
+|-heal|p2a: Aromatisse|406\/406|[from] item: Leftovers
+|turn|26
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M, shiny|186\/374
+|-damage|p2a: Ampharos|140\/374|[from] Stealth Rock
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Milotic|Toxic|p2a: Ampharos
+|-status|p2a: Ampharos|tox
+|
+|-heal|p2a: Ampharos|343\/374 tox|[from] move: Wish|[wisher] Aromatisse
+|-heal|p1a: Milotic|335\/394|[from] item: Leftovers
+|-damage|p2a: Ampharos|320\/374 tox|[from] psn
+|turn|27
+|
+|move|p1a: Milotic|Scald|p2a: Ampharos
+|-resisted|p2a: Ampharos
+|-damage|p2a: Ampharos|292\/374 tox
+|move|p2a: Ampharos|Thunderbolt|p1a: Milotic
+|-supereffective|p1a: Milotic
+|-damage|p1a: Milotic|93\/394
+|
+|-heal|p1a: Milotic|117\/394|[from] item: Leftovers
+|-damage|p2a: Ampharos|246\/374 tox|[from] psn
+|turn|28
+|
+|move|p1a: Milotic|Recover|p1a: Milotic
+|-heal|p1a: Milotic|314\/394
+|move|p2a: Ampharos|Volt Switch|p1a: Milotic
+|-supereffective|p1a: Milotic
+|-damage|p1a: Milotic|122\/394
+|
+|switch|p2a: Crobat|Crobat, F, shiny|237\/343
+|-damage|p2a: Crobat|152\/343|[from] Stealth Rock
+|
+|-heal|p2a: Crobat|173\/343|[from] item: Black Sludge
+|-heal|p1a: Milotic|146\/394|[from] item: Leftovers
+|turn|29
+|
+|move|p2a: Crobat|Defog|p1a: Milotic
+|-unboost|p1a: Milotic|evasion|1
+|-sideend|p2: lopoman|Stealth Rock|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Milotic|Scald|p2a: Crobat
+|-damage|p2a: Crobat|98\/343
+|-status|p2a: Crobat|brn
+|
+|-heal|p2a: Crobat|119\/343 brn|[from] item: Black Sludge
+|-heal|p1a: Milotic|170\/394|[from] item: Leftovers
+|-damage|p2a: Crobat|77\/343 brn|[from] brn
+|turn|30
+|
+|move|p2a: Crobat|U-turn|p1a: Milotic
+|-damage|p1a: Milotic|130\/394
+|
+|switch|p2a: Aromatisse|Aromatisse, M, shiny|406\/406
+|move|p1a: Milotic|Recover|p1a: Milotic
+|-heal|p1a: Milotic|327\/394
+|
+|-heal|p1a: Milotic|351\/394|[from] item: Leftovers
+|turn|31
+|
+|switch|p1a: Toxicroak|Toxicroak, M|231\/307
+|move|p2a: Aromatisse|Aromatherapy|p2a: Aromatisse
+|-cureteam|p2a: Aromatisse|[from] move: Aromatherapy
+|
+|turn|32
+|
+|move|p1a: Toxicroak|Gunk Shot|p2a: Aromatisse
+|-supereffective|p2a: Aromatisse
+|-damage|p2a: Aromatisse|0 fnt
+|-damage|p1a: Toxicroak|201\/307|[from] item: Life Orb
+|faint|p2a: Aromatisse
+|
+|
+|switch|p2a: Krookodile|Krookodile, M, shiny|237\/332
+|turn|33
+|
+|switch|p1a: Tangrowth|Tangrowth, F|295\/404
+|move|p2a: Krookodile|Earthquake|p1a: Tangrowth
+|-resisted|p1a: Tangrowth
+|-damage|p1a: Tangrowth|245\/404
+|
+|turn|34
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M, shiny|246\/374
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Tangrowth|Knock Off|p2a: Ampharos
+|-damage|p2a: Ampharos|199\/374
+|
+|turn|35
+|c|âlopoman|lol
+|c|âlopoman|Ã§a fait mal de se faire tank
+|c|âlopoman|par un tangrowth
+|c|âmliok|arrÃªte il est bg :)
+|
+|switch|p1a: Ampharos|Ampharos-Mega, F, shiny|242\/384
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p2a: Ampharos|Dragon Pulse|p1a: Ampharos
+|-supereffective|p1a: Ampharos
+|-damage|p1a: Ampharos|0 fnt
+|faint|p1a: Ampharos
+|
+|
+|switch|p1a: Toxicroak|Toxicroak, M|201\/307
+|turn|36
+|c|âmliok|gunk shot miss
+|
+|switch|p2a: Krookodile|Krookodile, M, shiny|237\/332
+|move|p1a: Toxicroak|Gunk Shot|p2a: Krookodile
+|-resisted|p2a: Krookodile
+|-damage|p2a: Krookodile|91\/332
+|-damage|p1a: Toxicroak|171\/307|[from] item: Life Orb
+|
+|turn|37
+|
+|switch|p1a: Tangrowth|Tangrowth, F|379\/404
+|move|p2a: Krookodile|Earthquake|p1a: Tangrowth
+|-resisted|p1a: Tangrowth
+|-damage|p1a: Tangrowth|331\/404
+|
+|turn|38
+|
+|switch|p2a: Crobat|Crobat, F, shiny|77\/343
+|move|p1a: Tangrowth|Leech Seed|p2a: Crobat
+|-start|p2a: Crobat|move: Leech Seed
+|
+|-heal|p2a: Crobat|98\/343|[from] item: Black Sludge
+|-damage|p2a: Crobat|56\/343|[from] Leech Seed|[of] p1a: Tangrowth
+|-heal|p1a: Tangrowth|373\/404|[silent]
+|turn|39
+|
+|switch|p1a: Milotic|Milotic, M|351\/394
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|228\/343
+|
+|-heal|p2a: Crobat|249\/343|[from] item: Black Sludge
+|-heal|p1a: Milotic|375\/394|[from] item: Leftovers
+|-damage|p2a: Crobat|207\/343|[from] Leech Seed|[of] p1a: Milotic
+|-heal|p1a: Milotic|394\/394|[silent]
+|turn|40
+|
+|move|p2a: Crobat|U-turn|p1a: Milotic
+|-damage|p1a: Milotic|316\/394
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M, shiny|199\/374
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Milotic|Scald|p2a: Ampharos
+|-resisted|p2a: Ampharos
+|-damage|p2a: Ampharos|154\/374
+|
+|-heal|p1a: Milotic|340\/394|[from] item: Leftovers
+|turn|41
+|
+|move|p1a: Milotic|Recover|p1a: Milotic
+|-heal|p1a: Milotic|394\/394
+|move|p2a: Ampharos|Thunderbolt|p1a: Milotic
+|-supereffective|p1a: Milotic
+|-damage|p1a: Milotic|130\/394
+|
+|-heal|p1a: Milotic|154\/394|[from] item: Leftovers
+|turn|42
+|
+|move|p1a: Milotic|Recover|p1a: Milotic
+|-heal|p1a: Milotic|351\/394
+|move|p2a: Ampharos|Thunderbolt|p1a: Milotic
+|-supereffective|p1a: Milotic
+|-damage|p1a: Milotic|97\/394
+|
+|-heal|p1a: Milotic|121\/394|[from] item: Leftovers
+|turn|43
+|c|âmliok|merde j'avais zapper
+|c|âlopoman|?
+|c|âmliok|je t'outspeed -_-
+|
+|move|p1a: Milotic|Scald|p2a: Ampharos
+|-resisted|p2a: Ampharos
+|-damage|p2a: Ampharos|112\/374
+|move|p2a: Ampharos|Thunderbolt|p1a: Milotic
+|-supereffective|p1a: Milotic
+|-damage|p1a: Milotic|0 fnt
+|faint|p1a: Milotic
+|
+|
+|switch|p1a: Toxicroak|Toxicroak, M|171\/307
+|turn|44
+|c|âlopoman|yep
+|
+|switch|p2a: Crobat|Crobat, F, shiny|207\/343
+|move|p1a: Toxicroak|Gunk Shot|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|50\/343
+|-damage|p1a: Toxicroak|141\/307|[from] item: Life Orb
+|
+|-heal|p2a: Crobat|71\/343|[from] item: Black Sludge
+|turn|45
+|
+|switch|p1a: Tangrowth|Tangrowth, F|404\/404
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|243\/343
+|
+|-heal|p2a: Crobat|264\/343|[from] item: Black Sludge
+|turn|46
+|
+|move|p2a: Crobat|U-turn|p1a: Tangrowth
+|-supereffective|p1a: Tangrowth
+|-damage|p1a: Tangrowth|322\/404
+|
+|switch|p2a: Ampharos|Ampharos-Mega, M, shiny|112\/374
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Tangrowth|Knock Off|p2a: Ampharos
+|-damage|p2a: Ampharos|62\/374
+|
+|turn|47
+|c|âmliok|gg
+|
+|move|p2a: Ampharos|Dragon Pulse|p1a: Tangrowth
+|-damage|p1a: Tangrowth|0 fnt
+|faint|p1a: Tangrowth
+|
+|c|âlopoman|gÂ²
+|
+|switch|p1a: Toxicroak|Toxicroak, M|141\/307
+|turn|48
+|
+|move|p1a: Toxicroak|Gunk Shot|p2a: Ampharos
+|-damage|p2a: Ampharos|0 fnt
+|-damage|p1a: Toxicroak|111\/307|[from] item: Life Orb
+|faint|p2a: Ampharos
+|
+|
+|switch|p2a: Crobat|Crobat, F, shiny|264\/343
+|turn|49
+|
+|move|p1a: Toxicroak|Sucker Punch|p2a: Crobat
+|-damage|p2a: Crobat|113\/343
+|-damage|p1a: Toxicroak|81\/307|[from] item: Life Orb
+|move|p2a: Crobat|Brave Bird|p1a: Toxicroak
+|-crit|p1a: Toxicroak
+|-supereffective|p1a: Toxicroak
+|-damage|p1a: Toxicroak|0 fnt
+|-damage|p2a: Crobat|86\/343|[from] recoil|[of] p1a: Toxicroak
+|faint|p1a: Toxicroak
+|
+|win|lopoman

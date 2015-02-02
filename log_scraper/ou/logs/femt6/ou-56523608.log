@@ -1,0 +1,641 @@
+|join|femt6
+|join|AlexanderCTr
+|player|p1|femt6|266
+|player|p2|AlexanderCTr|163
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Tyranitar, M
+|poke|p1|Heatran, M
+|poke|p1|Skarmory, M
+|poke|p1|Amoonguss, M
+|poke|p1|Jellicent, M
+|poke|p1|Garchomp, F
+|poke|p2|Gengar, M
+|poke|p2|Hydreigon, M
+|poke|p2|Zapdos
+|poke|p2|Ferrothorn, M
+|poke|p2|Lucario, M
+|poke|p2|Donphan, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Grounded|Heatran, M|323\/323
+|switch|p2a: Gengar|Gengar, M|262\/262
+|-item|p1a: Grounded|Air Balloon
+|turn|1
+|callback|decision
+|
+|move|p2a: Gengar|Substitute|p2a: Gengar
+|-start|p2a: Gengar|Substitute
+|-damage|p2a: Gengar|197\/262
+|move|p1a: Grounded|Stealth Rock|p2a: Gengar
+|-sidestart|p2: AlexanderCTr|move: Stealth Rock
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Broken.|Tyranitar, M|342\/342
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Broken.
+|move|p2a: Gengar|Focus Blast|p1a: Broken.
+|-supereffective|p1a: Broken.
+|-damage|p1a: Broken.|0 fnt
+|-damage|p2a: Gengar|171\/262|[from] item: Life Orb
+|faint|p1a: Broken.
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Gengar|155\/262|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: Razor|Skarmory, M|334\/334
+|turn|3
+|callback|decision
+|
+|move|p2a: Gengar|Shadow Ball|p1a: Razor
+|-resisted|p1a: Razor
+|-damage|p1a: Razor|211\/334
+|-unboost|p1a: Razor|spd|1
+|-damage|p2a: Gengar|129\/262|[from] item: Life Orb
+|move|p1a: Razor|Whirlwind|p2a: Gengar
+|drag|p2a: Luke|Lucario, M|281\/281
+|-damage|p2a: Luke|273\/281|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|4
+|callback|decision
+|
+|switch|p2a: Zapdos|Zapdos|383\/383
+|-damage|p2a: Zapdos|288\/383|[from] Stealth Rock
+|-ability|p2a: Zapdos|Pressure
+|switch|p1a: I MUSTACHE U|Jellicent, M|404\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Zapdos|265\/383|[from] sandstorm
+|-damage|p1a: I MUSTACHE U|379\/404|[from] sandstorm
+|-heal|p2a: Zapdos|288\/383|[from] item: Leftovers
+|-heal|p1a: I MUSTACHE U|404\/404|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1a: Amoonguss|Amoonguss, M|432\/432
+|move|p2a: Zapdos|Toxic|p1a: Amoonguss
+|-fail|p1a: Amoonguss
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Zapdos|265\/383|[from] sandstorm
+|-damage|p1a: Amoonguss|405\/432|[from] sandstorm
+|-heal|p2a: Zapdos|288\/383|[from] item: Leftovers
+|-heal|p1a: Amoonguss|432\/432|[from] item: Black Sludge
+|turn|6
+|callback|decision
+|
+|move|p2a: Zapdos|Heat Wave|p1a: Amoonguss
+|-crit|p1a: Amoonguss
+|-supereffective|p1a: Amoonguss
+|-damage|p1a: Amoonguss|96\/432
+|move|p1a: Amoonguss|Spore|p2a: Zapdos
+|-status|p2a: Zapdos|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Zapdos|265\/383 slp|[from] sandstorm
+|-damage|p1a: Amoonguss|69\/432|[from] sandstorm
+|-heal|p2a: Zapdos|288\/383 slp|[from] item: Leftovers
+|-heal|p1a: Amoonguss|96\/432|[from] item: Black Sludge
+|turn|7
+|callback|decision
+|
+|switch|p2a: Gengar|Gengar, M|129\/262
+|-damage|p2a: Gengar|97\/262|[from] Stealth Rock
+|switch|p1a: Garchomp|Garchomp, F|357\/357
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Gengar|81\/262|[from] sandstorm
+|turn|8
+|callback|decision
+|
+|switch|p2a: Donphan|Donphan, M|384\/384
+|-damage|p2a: Donphan|360\/384|[from] Stealth Rock
+|move|p1a: Garchomp|Dragon Claw|p2a: Donphan
+|-damage|p2a: Donphan|266\/384
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Donphan|290\/384|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p1a: I MUSTACHE U|Jellicent, M|404\/404
+|move|p2a: Donphan|Stealth Rock|p1a: I MUSTACHE U
+|-sidestart|p1: femt6|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: I MUSTACHE U|379\/404|[from] sandstorm
+|-heal|p1a: I MUSTACHE U|404\/404|[from] item: Leftovers
+|-heal|p2a: Donphan|314\/384|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p2a: Zapdos|Zapdos|288\/383 slp
+|-damage|p2a: Zapdos|193\/383 slp|[from] Stealth Rock
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: I MUSTACHE U|Will-O-Wisp|p2a: Zapdos
+|-fail|p2a: Zapdos
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Zapdos|170\/383 slp|[from] sandstorm
+|-damage|p1a: I MUSTACHE U|379\/404|[from] sandstorm
+|-heal|p2a: Zapdos|193\/383 slp|[from] item: Leftovers
+|-heal|p1a: I MUSTACHE U|404\/404|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|cant|p2a: Zapdos|slp
+|move|p1a: I MUSTACHE U|Scald|p2a: Zapdos
+|-damage|p2a: Zapdos|130\/383 slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Zapdos|107\/383 slp|[from] sandstorm
+|-damage|p1a: I MUSTACHE U|379\/404|[from] sandstorm
+|-heal|p2a: Zapdos|130\/383 slp|[from] item: Leftovers
+|-heal|p1a: I MUSTACHE U|404\/404|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, F|357\/357
+|-damage|p1a: Garchomp|335\/357|[from] Stealth Rock
+|cant|p2a: Zapdos|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Zapdos|107\/383 slp|[from] sandstorm
+|-heal|p2a: Zapdos|130\/383 slp|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p1a: Razor|Skarmory, M|211\/334
+|-damage|p1a: Razor|170\/334|[from] Stealth Rock
+|-curestatus|p2a: Zapdos|slp
+|move|p2a: Zapdos|Roost|p2a: Zapdos
+|-heal|p2a: Zapdos|322\/383
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Zapdos|299\/383|[from] sandstorm
+|-heal|p2a: Zapdos|322\/383|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p1a: Amoonguss|Amoonguss, M|240\/432
+|-damage|p1a: Amoonguss|186\/432|[from] Stealth Rock
+|move|p2a: Zapdos|Thunderbolt|p1a: Amoonguss
+|-resisted|p1a: Amoonguss
+|-damage|p1a: Amoonguss|128\/432
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Zapdos|299\/383|[from] sandstorm
+|-damage|p1a: Amoonguss|101\/432|[from] sandstorm
+|-heal|p2a: Zapdos|322\/383|[from] item: Leftovers
+|-heal|p1a: Amoonguss|128\/432|[from] item: Black Sludge
+|turn|15
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, F|335\/357
+|-damage|p1a: Garchomp|313\/357|[from] Stealth Rock
+|move|p2a: Zapdos|Heat Wave|p1a: Garchomp
+|-resisted|p1a: Garchomp
+|-damage|p1a: Garchomp|262\/357
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Zapdos|299\/383|[from] sandstorm
+|-heal|p2a: Zapdos|322\/383|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|-damage|p2a: Ferrothorn|330\/352|[from] Stealth Rock
+|move|p1a: Garchomp|Stone Edge|p2a: Ferrothorn|[miss]
+|-miss|p1a: Garchomp|p2a: Ferrothorn
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Ferrothorn|352\/352|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|switch|p1a: Razor|Skarmory, M|170\/334
+|-damage|p1a: Razor|129\/334|[from] Stealth Rock
+|move|p2a: Ferrothorn|Leech Seed|p1a: Razor
+|-start|p1a: Razor|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Razor|88\/334|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|18
+|callback|decision
+|
+|move|p1a: Razor|Roost|p1a: Razor
+|-heal|p1a: Razor|255\/334
+|move|p2a: Ferrothorn|Spikes|p1a: Razor
+|-sidestart|p1: femt6|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Razor|214\/334|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|19
+|callback|decision
+|
+|move|p1a: Razor|Spikes|p2a: Ferrothorn
+|-sidestart|p2: AlexanderCTr|Spikes
+|move|p2a: Ferrothorn|Spikes|p1a: Razor
+|-sidestart|p1: femt6|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Razor|173\/334|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|20
+|callback|decision
+|
+|move|p1a: Razor|Spikes|p2a: Ferrothorn
+|-sidestart|p2: AlexanderCTr|Spikes
+|move|p2a: Ferrothorn|Spikes|p1a: Razor
+|-sidestart|p1: femt6|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Razor|132\/334|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|21
+|callback|decision
+|
+|switch|p2a: Hydreigon|Hydreigon, M|325\/325
+|-damage|p2a: Hydreigon|285\/325|[from] Stealth Rock
+|move|p1a: Razor|Spikes|p2a: Hydreigon
+|-sidestart|p2: AlexanderCTr|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Hydreigon|265\/325|[from] sandstorm
+|-damage|p1a: Razor|91\/334|[from] Leech Seed|[of] p2a: Hydreigon
+|-heal|p2a: Hydreigon|306\/325|[silent]
+|turn|22
+|callback|decision
+|
+|switch|p1a: Grounded|Heatran, M|323\/323
+|-damage|p1a: Grounded|283\/323|[from] Stealth Rock
+|-item|p1a: Grounded|Air Balloon
+|move|p2a: Hydreigon|Dark Pulse|p1a: Grounded
+|-resisted|p1a: Grounded
+|-damage|p1a: Grounded|220\/323
+|-enditem|p1a: Grounded|Air Balloon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Hydreigon|286\/325|[from] sandstorm
+|turn|23
+|callback|decision
+|
+|switch|p2a: Zapdos|Zapdos|322\/383
+|-damage|p2a: Zapdos|227\/383|[from] Stealth Rock
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Grounded|Hidden Power|p2a: Zapdos
+|-supereffective|p2a: Zapdos
+|-damage|p2a: Zapdos|91\/383
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Zapdos|68\/383|[from] sandstorm
+|-heal|p2a: Zapdos|91\/383|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p1a: Grounded|Hidden Power|p2a: Zapdos
+|-supereffective|p2a: Zapdos
+|-damage|p2a: Zapdos|0 fnt
+|faint|p2a: Zapdos
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Gengar|Gengar, M|81\/262
+|-damage|p2a: Gengar|49\/262|[from] Stealth Rock
+|turn|25
+|callback|decision
+|
+|switch|p1a: Razor|Skarmory, M|91\/334
+|-damage|p1a: Razor|50\/334|[from] Stealth Rock
+|move|p2a: Gengar|Focus Blast|p1a: Razor|[miss]
+|-miss|p2a: Gengar|p1a: Razor
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Gengar|33\/262|[from] sandstorm
+|turn|26
+|callback|decision
+|
+|move|p2a: Gengar|Shadow Ball|p1a: Razor
+|-resisted|p1a: Razor
+|-damage|p1a: Razor|0 fnt
+|-damage|p2a: Gengar|7\/262|[from] item: Life Orb
+|faint|p1a: Razor
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Gengar|0 fnt|[from] sandstorm
+|faint|p2a: Gengar
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, F|262\/357
+|-damage|p1a: Garchomp|173\/357|[from] Spikes
+|-damage|p1a: Garchomp|151\/357|[from] Stealth Rock
+|switch|p2a: Donphan|Donphan, M|314\/384
+|-damage|p2a: Donphan|290\/384|[from] Stealth Rock
+|-damage|p2a: Donphan|194\/384|[from] Spikes
+|turn|27
+|callback|decision
+|
+|switch|p1a: I MUSTACHE U|Jellicent, M|404\/404
+|-damage|p1a: I MUSTACHE U|303\/404|[from] Spikes
+|-damage|p1a: I MUSTACHE U|253\/404|[from] Stealth Rock
+|move|p2a: Donphan|Earthquake|p1a: I MUSTACHE U
+|-damage|p1a: I MUSTACHE U|76\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: I MUSTACHE U|51\/404|[from] sandstorm
+|-heal|p1a: I MUSTACHE U|76\/404|[from] item: Leftovers
+|-heal|p2a: Donphan|218\/384|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|move|p1a: I MUSTACHE U|Recover|p1a: I MUSTACHE U
+|-heal|p1a: I MUSTACHE U|278\/404
+|move|p2a: Donphan|Earthquake|p1a: I MUSTACHE U
+|-damage|p1a: I MUSTACHE U|98\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: I MUSTACHE U|73\/404|[from] sandstorm
+|-heal|p1a: I MUSTACHE U|98\/404|[from] item: Leftovers
+|-heal|p2a: Donphan|242\/384|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|switch|p2a: Hydreigon|Hydreigon, M|286\/325
+|-damage|p2a: Hydreigon|246\/325|[from] Stealth Rock
+|move|p1a: I MUSTACHE U|Recover|p1a: I MUSTACHE U
+|-heal|p1a: I MUSTACHE U|300\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Hydreigon|226\/325|[from] sandstorm
+|-damage|p1a: I MUSTACHE U|275\/404|[from] sandstorm
+|-heal|p1a: I MUSTACHE U|300\/404|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|move|p2a: Hydreigon|Draco Meteor|p1a: I MUSTACHE U
+|-damage|p1a: I MUSTACHE U|120\/404
+|-unboost|p2a: Hydreigon|spa|2
+|move|p1a: I MUSTACHE U|Recover|p1a: I MUSTACHE U
+|-heal|p1a: I MUSTACHE U|322\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Hydreigon|206\/325|[from] sandstorm
+|-damage|p1a: I MUSTACHE U|297\/404|[from] sandstorm
+|-heal|p1a: I MUSTACHE U|322\/404|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|-damage|p2a: Ferrothorn|330\/352|[from] Stealth Rock
+|-damage|p2a: Ferrothorn|242\/352|[from] Spikes
+|move|p1a: I MUSTACHE U|Will-O-Wisp|p2a: Ferrothorn
+|-status|p2a: Ferrothorn|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: I MUSTACHE U|297\/404|[from] sandstorm
+|-heal|p1a: I MUSTACHE U|322\/404|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|264\/352 brn|[from] item: Leftovers
+|-damage|p2a: Ferrothorn|220\/352 brn|[from] brn
+|turn|32
+|callback|decision
+|
+|move|p1a: I MUSTACHE U|Recover|p1a: I MUSTACHE U
+|-heal|p1a: I MUSTACHE U|404\/404
+|move|p2a: Ferrothorn|Power Whip|p1a: I MUSTACHE U|[miss]
+|-miss|p2a: Ferrothorn|p1a: I MUSTACHE U
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: I MUSTACHE U|379\/404|[from] sandstorm
+|-heal|p1a: I MUSTACHE U|404\/404|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|242\/352 brn|[from] item: Leftovers
+|-damage|p2a: Ferrothorn|198\/352 brn|[from] brn
+|turn|33
+|callback|decision
+|
+|switch|p1a: Amoonguss|Amoonguss, M|272\/432
+|-damage|p1a: Amoonguss|218\/432|[from] Stealth Rock
+|-damage|p1a: Amoonguss|110\/432|[from] Spikes
+|switch|p2a: Luke|Lucario, M|273\/281
+|-damage|p2a: Luke|265\/281|[from] Stealth Rock
+|-damage|p2a: Luke|195\/281|[from] Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Amoonguss|83\/432|[from] sandstorm
+|-heal|p1a: Amoonguss|110\/432|[from] item: Black Sludge
+|turn|34
+|callback|decision
+|
+|move|p2a: Luke|Ice Punch|p1a: Amoonguss
+|-supereffective|p1a: Amoonguss
+|-damage|p1a: Amoonguss|0 fnt
+|-damage|p2a: Luke|167\/281|[from] item: Life Orb
+|faint|p1a: Amoonguss
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: I MUSTACHE U|Jellicent, M|404\/404
+|-damage|p1a: I MUSTACHE U|303\/404|[from] Spikes
+|-damage|p1a: I MUSTACHE U|253\/404|[from] Stealth Rock
+|turn|35
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|198\/352 brn
+|-damage|p2a: Ferrothorn|176\/352 brn|[from] Stealth Rock
+|-damage|p2a: Ferrothorn|88\/352 brn|[from] Spikes
+|move|p1a: I MUSTACHE U|Will-O-Wisp|p2a: Ferrothorn
+|-fail|p2a: Ferrothorn|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: I MUSTACHE U|228\/404|[from] sandstorm
+|-heal|p1a: I MUSTACHE U|253\/404|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|110\/352 brn|[from] item: Leftovers
+|-damage|p2a: Ferrothorn|66\/352 brn|[from] brn
+|turn|36
+|callback|decision
+|
+|move|p1a: I MUSTACHE U|Recover|p1a: I MUSTACHE U
+|-heal|p1a: I MUSTACHE U|404\/404
+|move|p2a: Ferrothorn|Leech Seed|p1a: I MUSTACHE U
+|-start|p1a: I MUSTACHE U|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: I MUSTACHE U|379\/404|[from] sandstorm
+|-heal|p1a: I MUSTACHE U|404\/404|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|88\/352 brn|[from] item: Leftovers
+|-damage|p1a: I MUSTACHE U|354\/404|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|138\/352 brn|[silent]
+|-damage|p2a: Ferrothorn|94\/352 brn|[from] brn
+|turn|37
+|callback|decision
+|
+|switch|p1a: Grounded|Heatran, M|220\/323
+|-damage|p1a: Grounded|140\/323|[from] Spikes
+|-damage|p1a: Grounded|100\/323|[from] Stealth Rock
+|move|p2a: Ferrothorn|Leech Seed|p1a: Grounded
+|-start|p1a: Grounded|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Ferrothorn|116\/352 brn|[from] item: Leftovers
+|-damage|p1a: Grounded|60\/323|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|156\/352 brn|[silent]
+|-damage|p2a: Ferrothorn|112\/352 brn|[from] brn
+|turn|38
+|callback|decision
+|
+|switch|p2a: Hydreigon|Hydreigon, M|206\/325
+|-damage|p2a: Hydreigon|166\/325|[from] Stealth Rock
+|move|p1a: Grounded|Fire Blast|p2a: Hydreigon
+|-resisted|p2a: Hydreigon
+|-damage|p2a: Hydreigon|41\/325
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Hydreigon|21\/325|[from] sandstorm
+|-damage|p1a: Grounded|20\/323|[from] Leech Seed|[of] p2a: Hydreigon
+|-heal|p2a: Hydreigon|61\/325|[silent]
+|turn|39
+|callback|decision
+|
+|move|p2a: Hydreigon|Dark Pulse|p1a: Grounded
+|-resisted|p1a: Grounded
+|-damage|p1a: Grounded|0 fnt
+|faint|p1a: Grounded
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Hydreigon|41\/325|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, F|151\/357
+|-damage|p1a: Garchomp|129\/357|[from] Stealth Rock
+|-damage|p1a: Garchomp|40\/357|[from] Spikes
+|turn|40
+|callback|decision
+|
+|move|p1a: Garchomp|Outrage|p2a: Hydreigon
+|-supereffective|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|faint|p2a: Hydreigon
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Donphan|Donphan, M|242\/384
+|-damage|p2a: Donphan|218\/384|[from] Stealth Rock
+|-damage|p2a: Donphan|122\/384|[from] Spikes
+|turn|41
+|callback|decision
+|
+|move|p2a: Donphan|Ice Shard|p1a: Garchomp
+|-supereffective|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|faint|p1a: Garchomp
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Donphan|146\/384|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: I MUSTACHE U|Jellicent, M|354\/404
+|-damage|p1a: I MUSTACHE U|304\/404|[from] Stealth Rock
+|-damage|p1a: I MUSTACHE U|203\/404|[from] Spikes
+|turn|42
+|callback|decision
+|
+|move|p1a: I MUSTACHE U|Recover|p1a: I MUSTACHE U
+|-heal|p1a: I MUSTACHE U|404\/404
+|move|p2a: Donphan|Earthquake|p1a: I MUSTACHE U
+|-damage|p1a: I MUSTACHE U|217\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: I MUSTACHE U|192\/404|[from] sandstorm
+|-heal|p1a: I MUSTACHE U|217\/404|[from] item: Leftovers
+|-heal|p2a: Donphan|170\/384|[from] item: Leftovers
+|turn|43
+|callback|decision
+|
+|move|p1a: I MUSTACHE U|Will-O-Wisp|p2a: Donphan
+|-status|p2a: Donphan|brn
+|move|p2a: Donphan|Earthquake|p1a: I MUSTACHE U
+|-damage|p1a: I MUSTACHE U|135\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: I MUSTACHE U|110\/404|[from] sandstorm
+|-heal|p1a: I MUSTACHE U|135\/404|[from] item: Leftovers
+|-heal|p2a: Donphan|194\/384 brn|[from] item: Leftovers
+|-damage|p2a: Donphan|146\/384 brn|[from] brn
+|turn|44
+|callback|decision
+|
+|move|p1a: I MUSTACHE U|Recover|p1a: I MUSTACHE U
+|-heal|p1a: I MUSTACHE U|337\/404
+|move|p2a: Donphan|Earthquake|p1a: I MUSTACHE U
+|-damage|p1a: I MUSTACHE U|256\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: I MUSTACHE U|231\/404|[from] sandstorm
+|-heal|p1a: I MUSTACHE U|256\/404|[from] item: Leftovers
+|-heal|p2a: Donphan|170\/384 brn|[from] item: Leftovers
+|-damage|p2a: Donphan|122\/384 brn|[from] brn
+|turn|45
+|callback|decision
+|
+|move|p1a: I MUSTACHE U|Recover|p1a: I MUSTACHE U
+|-heal|p1a: I MUSTACHE U|404\/404
+|move|p2a: Donphan|Earthquake|p1a: I MUSTACHE U
+|-damage|p1a: I MUSTACHE U|313\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: I MUSTACHE U|288\/404|[from] sandstorm
+|-heal|p1a: I MUSTACHE U|313\/404|[from] item: Leftovers
+|-heal|p2a: Donphan|146\/384 brn|[from] item: Leftovers
+|-damage|p2a: Donphan|98\/384 brn|[from] brn
+|turn|46
+|callback|decision
+|
+|move|p1a: I MUSTACHE U|Scald|p2a: Donphan
+|-crit|p2a: Donphan
+|-supereffective|p2a: Donphan
+|-damage|p2a: Donphan|0 fnt
+|faint|p2a: Donphan
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: I MUSTACHE U|288\/404|[from] sandstorm
+|-heal|p1a: I MUSTACHE U|313\/404|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|112\/352 brn
+|-damage|p2a: Ferrothorn|90\/352 brn|[from] Stealth Rock
+|-damage|p2a: Ferrothorn|2\/352 brn|[from] Spikes
+|turn|47
+|callback|decision
+|
+|move|p1a: I MUSTACHE U|Scald|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|faint|p2a: Ferrothorn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: I MUSTACHE U|288\/404|[from] sandstorm
+|-heal|p1a: I MUSTACHE U|313\/404|[from] item: Leftovers
+|callback|decision
+|-message|AlexanderCTr forfeited.
+|
+|win|femt6
+|raw|Ladder updating...
+|leave|AlexanderCTr
+|player|p2
+|raw|femt6's rating: 1938 &rarr; <strong>1943<\/strong><br \/>(+5 for winning)
+|raw|AlexanderCTr's rating: 1867 &rarr; <strong>1859<\/strong><br \/>(-8 for losing)
+|chat|femt6|gg

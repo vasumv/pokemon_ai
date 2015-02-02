@@ -1,0 +1,377 @@
+|join|Garn
+|join|Bin Ladder
+|player|p1|Garn|1
+|player|p2|Bin Ladder|76
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Ditto
+|poke|p1|Diancie
+|poke|p1|Honchkrow, M
+|poke|p1|Ferrothorn, M
+|poke|p1|Landorus-Therian, M
+|poke|p1|Dragalge, M
+|poke|p2|Gyarados, M
+|poke|p2|Greninja, F
+|poke|p2|Latias, F
+|poke|p2|Gliscor, F
+|poke|p2|Clefable, M
+|poke|p2|Ferrothorn, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|319\/319
+|switch|p2a: Gyarados|Gyarados, M|341\/341
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Gyarados
+|-unboost|p2a: Gyarados|atk|1
+|-ability|p2a: Gyarados|Intimidate|[of] p1a: Landorus-Therian
+|-unboost|p1a: Landorus-Therian|atk|1
+|turn|1
+|
+|switch|p2a: Gliscor|Gliscor, F|349\/349
+|move|p1a: Landorus-Therian|U-turn|p2a: Gliscor
+|-resisted|p2a: Gliscor
+|-damage|p2a: Gliscor|323\/349
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|337\/337
+|
+|-status|p2a: Gliscor|tox|[from] item: Toxic Orb
+|turn|2
+|
+|move|p2a: Gliscor|Taunt|p1a: Ferrothorn
+|-start|p1a: Ferrothorn|move: Taunt
+|move|p1a: Ferrothorn|Power Whip|p2a: Gliscor
+|-damage|p2a: Gliscor|217\/349 tox
+|
+|-heal|p2a: Gliscor|260\/349 tox|[from] ability: Poison Heal
+|turn|3
+|
+|move|p2a: Gliscor|Knock Off|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|293\/337
+|-damage|p2a: Gliscor|217\/349 tox|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|-damage|p2a: Gliscor|159\/349 tox|[from] item: Rocky Helmet|[of] p1a: Ferrothorn
+|-enditem|p1a: Ferrothorn|Rocky Helmet|[from] move: Knock Off|[of] p2a: Gliscor
+|move|p1a: Ferrothorn|Knock Off|p2a: Gliscor
+|-damage|p2a: Gliscor|100\/349 tox
+|-enditem|p2a: Gliscor|Toxic Orb|[from] move: Knock Off|[of] p1a: Ferrothorn
+|
+|-heal|p2a: Gliscor|143\/349 tox|[from] ability: Poison Heal
+|turn|4
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|move|p1a: Ferrothorn|Power Whip|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|330\/352
+|-damage|p1a: Ferrothorn|251\/337|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|
+|-end|p1a: Ferrothorn|move: Taunt
+|turn|5
+|
+|switch|p1a: Ditto|Ditto|300\/300
+|-transform|p1a: Ditto|p2a: Ferrothorn
+|move|p2a: Ferrothorn|Stealth Rock|p1a: Ditto
+|-sidestart|p1: Garn|move: Stealth Rock
+|
+|turn|6
+|join|ALASTOR LAW
+|
+|switch|p2a: Gyarados|Gyarados, M|341\/341
+|-ability|p2a: Gyarados|Intimidate|[of] p1a: Ditto
+|-unboost|p1a: Ditto|atk|1
+|move|p1a: Ditto|Stealth Rock|p2a: Gyarados
+|-sidestart|p2: Bin Ladder|move: Stealth Rock
+|
+|turn|7
+|
+|move|p2a: Gyarados|Substitute|p2a: Gyarados
+|-start|p2a: Gyarados|Substitute
+|-damage|p2a: Gyarados|256\/341
+|move|p1a: Ditto|Leech Seed|p2a: Gyarados
+|
+|turn|8
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|251\/337
+|-damage|p1a: Ferrothorn|230\/337|[from] Stealth Rock
+|move|p2a: Gyarados|Dragon Dance|p2a: Gyarados
+|-boost|p2a: Gyarados|atk|1
+|-boost|p2a: Gyarados|spe|1
+|
+|turn|9
+|
+|detailschange|p2a: Gyarados|Gyarados-Mega, M
+|message|Gyarados has Mega Evolved into Mega Gyarados!
+|-ability|p2a: Gyarados|Mold Breaker
+|move|p2a: Gyarados|Crunch|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|86\/337
+|-damage|p2a: Gyarados|214\/341|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|-unboost|p1a: Ferrothorn|def|1
+|move|p1a: Ferrothorn|Power Whip|p2a: Gyarados
+|-supereffective|p2a: Gyarados
+|-end|p2a: Gyarados|Substitute
+|
+|turn|10
+|
+|move|p2a: Gyarados|Substitute|p2a: Gyarados
+|-start|p2a: Gyarados|Substitute
+|-damage|p2a: Gyarados|129\/341
+|move|p1a: Ferrothorn|Power Whip|p2a: Gyarados
+|-supereffective|p2a: Gyarados
+|-end|p2a: Gyarados|Substitute
+|
+|turn|11
+|
+|move|p2a: Gyarados|Crunch|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|0 fnt
+|-damage|p2a: Gyarados|87\/341|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|faint|p1a: Ferrothorn
+|
+|
+|switch|p1a: Ditto|Ditto|300\/300
+|-damage|p1a: Ditto|263\/300|[from] Stealth Rock
+|-transform|p1a: Ditto|p2a: Gyarados
+|-ability|p1a: Ditto|Mold Breaker
+|turn|12
+|
+|move|p1a: Ditto|Crunch|p2a: Gyarados
+|-resisted|p2a: Gyarados
+|-damage|p2a: Gyarados|0 fnt
+|faint|p2a: Gyarados
+|
+|join|mega-mawile14
+|
+|switch|p2a: Clefable|Clefable, M|393\/393
+|turn|13
+|c| mega-mawile14|is diancie *-*
+|leave|mega-mawile14
+|
+|move|p1a: Ditto|Waterfall|p2a: Clefable
+|-damage|p2a: Clefable|134\/393
+|move|p2a: Clefable|Moonblast|p1a: Ditto
+|-supereffective|p1a: Ditto
+|-damage|p1a: Ditto|93\/300
+|
+|-heal|p2a: Clefable|158\/393|[from] item: Leftovers
+|turn|14
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|330\/352
+|-damage|p2a: Ferrothorn|308\/352|[from] Stealth Rock
+|move|p1a: Ditto|Substitute|p1a: Ditto
+|-start|p1a: Ditto|Substitute
+|-damage|p1a: Ditto|18\/300
+|
+|turn|15
+|
+|move|p1a: Ditto|Dragon Dance|p1a: Ditto
+|-boost|p1a: Ditto|atk|1
+|-boost|p1a: Ditto|spe|1
+|move|p2a: Ferrothorn|Gyro Ball|p1a: Ditto
+|-resisted|p1a: Ditto
+|-activate|p1a: Ditto|Substitute|[damage]
+|
+|turn|16
+|
+|move|p1a: Ditto|Dragon Dance|p1a: Ditto
+|-boost|p1a: Ditto|atk|1
+|-boost|p1a: Ditto|spe|1
+|move|p2a: Ferrothorn|Gyro Ball|p1a: Ditto
+|-resisted|p1a: Ditto
+|-end|p1a: Ditto|Substitute
+|
+|turn|17
+|
+|move|p1a: Ditto|Crunch|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|19\/352
+|-damage|p1a: Ditto|0 fnt|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|faint|p1a: Ditto
+|-unboost|p2a: Ferrothorn|def|1
+|move|p2a: Ferrothorn|Gyro Ball|p1: Ditto|[notarget]
+|-notarget
+|
+|join|rojo red el piola
+|
+|switch|p1a: Honchkrow|Honchkrow, M|339\/339
+|-damage|p1a: Honchkrow|255\/339|[from] Stealth Rock
+|turn|18
+|
+|move|p1a: Honchkrow|Pursuit|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|-damage|p1a: Honchkrow|213\/339|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|-damage|p1a: Honchkrow|180\/339|[from] item: Life Orb
+|faint|p2a: Ferrothorn
+|-boost|p1a: Honchkrow|atk|1|[from] ability: Moxie
+|
+|
+|switch|p2a: Greninja|Greninja, F|285\/285
+|-damage|p2a: Greninja|250\/285|[from] Stealth Rock
+|turn|19
+|
+|move|p1a: Honchkrow|Sucker Punch|p2a: Greninja
+|-resisted|p2a: Greninja
+|-damage|p2a: Greninja|32\/285
+|-damage|p1a: Honchkrow|147\/339|[from] item: Life Orb
+|move|p2a: Greninja|Ice Beam|p1a: Honchkrow
+|-start|p2a: Greninja|typechange|Ice|[from] Protean
+|-supereffective|p1a: Honchkrow
+|-damage|p1a: Honchkrow|0 fnt
+|-damage|p2a: Greninja|4\/285|[from] item: Life Orb
+|faint|p1a: Honchkrow
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-damage|p1a: Landorus-Therian|280\/319|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Greninja
+|-unboost|p2a: Greninja|atk|1
+|turn|20
+|join|mega-mawile14
+|c|âBin Ladder|vaya hostia
+|join|Bloody alfa
+|join|LORD PAKITO
+|
+|switch|p2a: Gliscor|Gliscor, F|143\/349 tox
+|-damage|p2a: Gliscor|100\/349 tox|[from] Stealth Rock
+|move|p1a: Landorus-Therian|U-turn|p2a: Gliscor
+|-resisted|p2a: Gliscor
+|-damage|p2a: Gliscor|65\/349 tox
+|c| rojo red el piola|bien hecho greninja vuelve a tu pokebola
+|
+|switch|p1a: Diancie|Diancie|303\/303
+|-damage|p1a: Diancie|266\/303|[from] Stealth Rock
+|
+|-heal|p2a: Gliscor|108\/349 tox|[from] ability: Poison Heal
+|turn|21
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|280\/319
+|-damage|p1a: Landorus-Therian|241\/319|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Gliscor
+|-unboost|p2a: Gliscor|atk|1
+|move|p2a: Gliscor|Roost|p2a: Gliscor
+|-heal|p2a: Gliscor|283\/349 tox
+|
+|-heal|p2a: Gliscor|326\/349 tox|[from] ability: Poison Heal
+|turn|22
+|
+|move|p1a: Landorus-Therian|Hidden Power|p2a: Gliscor
+|-supereffective|p2a: Gliscor
+|-damage|p2a: Gliscor|166\/349 tox
+|move|p2a: Gliscor|Earthquake|p1a: Landorus-Therian
+|-immune|p1a: Landorus-Therian|[msg]
+|
+|-heal|p2a: Gliscor|209\/349 tox|[from] ability: Poison Heal
+|turn|23
+|
+|move|p1a: Landorus-Therian|Hidden Power|p2a: Gliscor
+|-crit|p2a: Gliscor
+|-supereffective|p2a: Gliscor
+|-damage|p2a: Gliscor|0 fnt
+|faint|p2a: Gliscor
+|
+|c|âBin Ladder|xddd
+|
+|switch|p2a: Latias|Latias, F|319\/319
+|-damage|p2a: Latias|280\/319|[from] Stealth Rock
+|turn|24
+|join|ImSNT
+|join|Sken
+|
+|switch|p1a: Diancie|Diancie|266\/303
+|-damage|p1a: Diancie|229\/303|[from] Stealth Rock
+|move|p2a: Latias|Psyshock|p1a: Diancie
+|-damage|p1a: Diancie|112\/303
+|-damage|p2a: Latias|249\/319|[from] item: Life Orb
+|
+|turn|25
+|
+|move|p2a: Latias|Psyshock|p1a: Diancie
+|-damage|p1a: Diancie|0 fnt
+|-damage|p2a: Latias|218\/319|[from] item: Life Orb
+|faint|p1a: Diancie
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|241\/319
+|-damage|p1a: Landorus-Therian|202\/319|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Latias
+|-unboost|p2a: Latias|atk|1
+|turn|26
+|
+|switch|p2a: Clefable|Clefable, M|158\/393
+|move|p1a: Landorus-Therian|U-turn|p2a: Clefable
+|-resisted|p2a: Clefable
+|-damage|p2a: Clefable|108\/393
+|
+|switch|p1a: Dragalge|Dragalge, M|303\/303
+|-damage|p1a: Dragalge|266\/303|[from] Stealth Rock
+|
+|-heal|p2a: Clefable|132\/393|[from] item: Leftovers
+|turn|27
+|c|âGarn|gg
+|
+|switch|p2a: Greninja|Greninja, F|4\/285
+|-damage|p2a: Greninja|0 fnt|[from] Stealth Rock
+|faint|p2a: Greninja
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|202\/319
+|-damage|p1a: Landorus-Therian|163\/319|[from] Stealth Rock
+|
+|join|Viduf
+|c|âGarn|d\/ced
+|
+|switch|p2a: Clefable|Clefable, M|132\/393
+|turn|28
+|leave|Viduf
+|c|âGarn|im back now
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Clefable
+|-resisted|p2a: Clefable
+|-damage|p2a: Clefable|84\/393
+|
+|switch|p1a: Dragalge|Dragalge, M|266\/303
+|-damage|p1a: Dragalge|229\/303|[from] Stealth Rock
+|move|p2a: Clefable|Soft-Boiled|p2a: Clefable
+|-heal|p2a: Clefable|281\/393
+|
+|-heal|p2a: Clefable|305\/393|[from] item: Leftovers
+|turn|29
+|c| ALASTOR LAW|axel
+|c|âBin Ladder|dime
+|c| ALASTOR LAW|juegas ahora?
+|c|âBin Ladder|pff estoy espeso
+|c|âBin Ladder|no hay mÃ¡s que verme
+|c|âBin Ladder|xD
+|c| ALASTOR LAW|si, andas algo tieso xD
+|c| ALASTOR LAW|pero bueno
+|
+|switch|p2a: Latias|Latias, F|218\/319
+|-damage|p2a: Latias|179\/319|[from] Stealth Rock
+|move|p1a: Dragalge|Sludge Wave|p2a: Latias
+|-damage|p2a: Latias|0 fnt
+|faint|p2a: Latias
+|
+|c|âGarn|specs
+|-message|Bin Ladder forfeited.
+|
+|win|Garn
+|raw|Ladder updating...
+|leave|Bin Ladder
+|player|p2
+|raw|Garn's rating: 1494 &rarr; <strong>1517<\/strong><br \/>(+23 for winning)
+|raw|Bin Ladder's rating: 1557 &rarr; <strong>1533<\/strong><br \/>(-24 for losing)
+|leave|Bloody alfa
+|c| mega-mawile14|1500 O.O
+|leave|mega-mawile14
+|leave|ImSNT
+|leave|ALASTOR LAW
+|c|âGarn|INSTANT REPLAY
+|leave|Sken
+|leave|Garn
+|player|p1
+|join|Garn

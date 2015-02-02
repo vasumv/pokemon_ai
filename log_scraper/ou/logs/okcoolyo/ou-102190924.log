@@ -1,0 +1,215 @@
+|join|okcoolyo
+|join|feenie
+|player|p1|okcoolyo|203
+|player|p2|feenie|170
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Mawile, F
+|poke|p1|Rotom-Wash
+|poke|p1|Tyranitar, M
+|poke|p1|Ditto
+|poke|p1|Landorus, M
+|poke|p1|Breloom, M
+|poke|p2|Smeargle, M, shiny
+|poke|p2|Gardevoir, F, shiny
+|poke|p2|Rotom-Wash, shiny
+|poke|p2|Bisharp, M, shiny
+|poke|p2|Terrakion, shiny
+|poke|p2|Thundurus, M, shiny
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Breloom|Breloom, M|323\/323
+|switch|p2a: Smeargle|Smeargle, M, shiny|271\/271
+|turn|1
+|
+|move|p2a: Smeargle|Taunt|p1a: Breloom
+|-start|p1a: Breloom|move: Taunt
+|cant|p1a: Breloom|move: Taunt|Spore
+|
+|-status|p1a: Breloom|tox|[from] item: Toxic Orb
+|turn|2
+|
+|-singleturn|p1a: Breloom|move: Focus Punch
+|move|p2a: Smeargle|Sticky Web|p1a: Breloom
+|-sidestart|p1: okcoolyo|move: Sticky Web
+|move|p1a: Breloom|Focus Punch|p2a: Smeargle
+|-supereffective|p2a: Smeargle
+|-enditem|p2a: Smeargle|Focus Sash
+|-damage|p2a: Smeargle|1\/271
+|
+|turn|3
+|
+|-singleturn|p1a: Breloom|move: Focus Punch
+|move|p2a: Smeargle|Stealth Rock|p1a: Breloom
+|-sidestart|p1: okcoolyo|move: Stealth Rock
+|move|p1a: Breloom|Focus Punch|p2a: Smeargle
+|-supereffective|p2a: Smeargle
+|-damage|p2a: Smeargle|0 fnt
+|faint|p2a: Smeargle
+|
+|-end|p1a: Breloom|move: Taunt
+|
+|switch|p2a: Gardevoir|Gardevoir, F, shiny|277\/277
+|-ability|p2a: Gardevoir|Poison Heal|[from] ability: Trace|[of] p1a: Breloom
+|turn|4
+|
+|switch|p1a: Mawile|Mawile, F|299\/299
+|-activate|p1a: Mawile|move: Sticky Web
+|-unboost|p1a: Mawile|spe|1
+|-damage|p1a: Mawile|281\/299|[from] Stealth Rock
+|-ability|p1a: Mawile|Intimidate|[of] p2a: Gardevoir
+|-unboost|p2a: Gardevoir|atk|1
+|-formechange|p2a: Gardevoir|Gardevoir-Mega
+|message|Gardevoir has Mega Evolved into Mega Gardevoir!
+|move|p2a: Gardevoir|Hyper Voice|p1a: Mawile
+|-resisted|p1a: Mawile
+|-damage|p1a: Mawile|92\/299
+|
+|turn|5
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash, shiny|302\/302
+|-formechange|p1a: Mawile|Mawile-Mega
+|message|Mawile has Mega Evolved into Mega Mawile!
+|move|p1a: Mawile|Sucker Punch|p2a: Rotom-Wash
+|-fail|p2a: Rotom-Wash
+|
+|turn|6
+|
+|switch|p1a: Breloom|Breloom, M|323\/323 tox
+|-damage|p1a: Breloom|303\/323 tox|[from] Stealth Rock
+|-activate|p1a: Breloom|move: Sticky Web
+|-unboost|p1a: Breloom|spe|1
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Breloom|[miss]
+|-miss|p2a: Rotom-Wash|p1a: Breloom
+|
+|-heal|p1a: Breloom|323\/323 tox|[from] ability: Poison Heal
+|turn|7
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Breloom
+|-resisted|p1a: Breloom
+|-damage|p1a: Breloom|260\/323 tox
+|
+|switch|p2a: Thundurus|Thundurus, M, shiny|299\/299
+|move|p1a: Breloom|Substitute|p1a: Breloom
+|-start|p1a: Breloom|Substitute
+|-damage|p1a: Breloom|180\/323 tox
+|
+|-heal|p1a: Breloom|220\/323 tox|[from] ability: Poison Heal
+|turn|8
+|
+|move|p2a: Thundurus|Hidden Power|p1a: Breloom
+|-supereffective|p1a: Breloom
+|-end|p1a: Breloom|Substitute
+|move|p1a: Breloom|Spore|p2a: Thundurus
+|-status|p2a: Thundurus|slp
+|
+|-heal|p1a: Breloom|260\/323 tox|[from] ability: Poison Heal
+|turn|9
+|
+|switch|p2a: Gardevoir|Gardevoir, F, shiny|277\/277
+|-formechange|p2a: Gardevoir|Gardevoir-Mega
+|move|p1a: Breloom|Leech Seed|p2a: Gardevoir
+|-start|p2a: Gardevoir|move: Leech Seed
+|
+|-damage|p2a: Gardevoir|243\/277|[from] Leech Seed|[of] p1a: Breloom
+|-heal|p1a: Breloom|294\/323 tox|[silent]
+|-heal|p1a: Breloom|323\/323 tox|[from] ability: Poison Heal
+|turn|10
+|
+|switch|p1a: Mawile|Mawile, F|92\/299
+|-formechange|p1a: Mawile|Mawile-Mega
+|-damage|p1a: Mawile|74\/299|[from] Stealth Rock
+|-activate|p1a: Mawile|move: Sticky Web
+|-unboost|p1a: Mawile|spe|1
+|move|p2a: Gardevoir|Hyper Voice|p1a: Mawile
+|-crit|p1a: Mawile
+|-resisted|p1a: Mawile
+|-damage|p1a: Mawile|0 fnt
+|faint|p1a: Mawile
+|
+|
+|switch|p1a: Landorus|Landorus, M|320\/320
+|-damage|p1a: Landorus|280\/320|[from] Stealth Rock
+|turn|11
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash, shiny|302\/302
+|move|p1a: Landorus|Earth Power|p2a: Rotom-Wash
+|-immune|p2a: Rotom-Wash|[msg]
+|
+|turn|12
+|
+|switch|p1a: Breloom|Breloom, M|323\/323 tox
+|-activate|p1a: Breloom|move: Sticky Web
+|-unboost|p1a: Breloom|spe|1
+|-damage|p1a: Breloom|303\/323 tox|[from] Stealth Rock
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Breloom
+|-resisted|p1a: Breloom
+|-damage|p1a: Breloom|241\/323 tox
+|
+|switch|p2a: Gardevoir|Gardevoir, F, shiny|243\/277
+|-formechange|p2a: Gardevoir|Gardevoir-Mega
+|
+|-heal|p1a: Breloom|281\/323 tox|[from] ability: Poison Heal
+|turn|13
+|
+|switch|p1a: Ditto|Ditto|300\/300
+|-activate|p1a: Ditto|move: Sticky Web
+|-unboost|p1a: Ditto|spe|1
+|-damage|p1a: Ditto|263\/300|[from] Stealth Rock
+|-transform|p1a: Ditto|p2a: Gardevoir
+|move|p2a: Gardevoir|Hyper Voice|p1a: Ditto
+|-damage|p1a: Ditto|62\/300
+|
+|turn|14
+|
+|move|p1a: Ditto|Hyper Voice|p2a: Gardevoir
+|-damage|p2a: Gardevoir|54\/277
+|move|p2a: Gardevoir|Hyper Voice|p1a: Ditto
+|-damage|p1a: Ditto|0 fnt
+|faint|p1a: Ditto
+|
+|
+|switch|p1a: Landorus|Landorus, M|280\/320
+|-damage|p1a: Landorus|240\/320|[from] Stealth Rock
+|turn|15
+|
+|switch|p2a: Thundurus|Thundurus, M, shiny|299\/299 slp
+|move|p1a: Landorus|Sludge Wave|p2a: Thundurus
+|-damage|p2a: Thundurus|85\/299 slp
+|
+|-heal|p2a: Thundurus|103\/299 slp|[from] item: Leftovers
+|turn|16
+|
+|cant|p2a: Thundurus|slp
+|move|p1a: Landorus|Earth Power|p2a: Thundurus
+|-immune|p2a: Thundurus|[msg]
+|
+|-heal|p2a: Thundurus|121\/299 slp|[from] item: Leftovers
+|turn|17
+|
+|-curestatus|p2a: Thundurus|slp
+|move|p2a: Thundurus|Hidden Power|p1a: Landorus
+|-supereffective|p1a: Landorus
+|-damage|p1a: Landorus|0 fnt
+|faint|p1a: Landorus
+|
+|-heal|p2a: Thundurus|139\/299|[from] item: Leftovers
+|leave|okcoolyo
+|player|p1
+|-message|okcoolyo lost due to inactivity.
+|
+|win|feenie
+|raw|Ladder updating...
+|raw|okcoolyo's rating: 1740 &rarr; <strong>1713<\/strong><br \/>(-27 for losing)
+|raw|feenie's rating: 1606 &rarr; <strong>1633<\/strong><br \/>(+27 for winning)

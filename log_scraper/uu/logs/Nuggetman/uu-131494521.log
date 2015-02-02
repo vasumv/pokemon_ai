@@ -1,0 +1,2141 @@
+|join|Nuggetman
+|join|pokemonisfun
+|player|p1|Nuggetman|165
+|player|p2|pokemonisfun|184
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Alomomola, M
+|poke|p1|Gligar, F
+|poke|p1|Florges, F
+|poke|p1|Politoed, F
+|poke|p1|Gothorita, F
+|poke|p1|Blissey, F
+|poke|p2|Banette, F
+|poke|p2|Cresselia, F
+|poke|p2|Aromatisse, M
+|poke|p2|Registeel
+|poke|p2|Pelipper, F
+|poke|p2|Roselia, F
+|teampreview
+|
+|start
+|switch|p1a: Gothorita|Gothorita, F|324\/324
+|switch|p2a: Banette|Banette, F|329\/329
+|-item|p1a: Gothorita|Eviolite|[from] ability: Frisk|[of] p2a: Banette|[identify]
+|turn|1
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|detailschange|p2a: Banette|Banette-Mega, F
+|message|Banette has Mega Evolved into Mega Banette!
+|move|p2a: Banette|Will-O-Wisp|p1a: Blissey|[miss]
+|-miss|p2a: Banette|p1a: Blissey
+|
+|turn|2
+|
+|move|p2a: Banette|Taunt|p1a: Blissey
+|-start|p1a: Blissey|move: Taunt
+|cant|p1a: Blissey|move: Taunt|Stealth Rock
+|
+|turn|3
+|
+|switch|p1a: Politoed|Politoed, F|384\/384
+|move|p2a: Banette|Will-O-Wisp|p1a: Politoed
+|-status|p1a: Politoed|brn
+|
+|-damage|p1a: Politoed|336\/384 brn|[from] brn
+|turn|4
+|
+|switch|p2a: Roselia|Roselia, F|303\/303
+|move|p1a: Politoed|Whirlpool|p2a: Roselia
+|-resisted|p2a: Roselia
+|-damage|p2a: Roselia|293\/303
+|-activate|p2a: Roselia|move: Whirlpool|[of] p1a: Politoed
+|
+|-heal|p1a: Politoed|360\/384 brn|[from] item: Leftovers
+|-damage|p1a: Politoed|312\/384 brn|[from] brn
+|-damage|p2a: Roselia|256\/303|[from] move: Whirlpool|[partiallytrapped]
+|turn|5
+|
+|switch|p1a: Gothorita|Gothorita, F|324\/324
+|move|p2a: Roselia|Spikes|p1a: Gothorita
+|-sidestart|p1: Nuggetman|Spikes
+|
+|-end|p2a: Roselia|Whirlpool|[partiallytrapped]
+|turn|6
+|
+|move|p2a: Roselia|Toxic Spikes|p1a: Gothorita
+|-sidestart|p1: Nuggetman|move: Toxic Spikes
+|move|p1a: Gothorita|Psyshock|p2a: Roselia
+|-supereffective|p2a: Roselia
+|-damage|p2a: Roselia|0 fnt
+|faint|p2a: Roselia
+|
+|
+|switch|p2a: Banette|Banette-Mega, F|329\/329
+|turn|7
+|
+|move|p2a: Banette|Shadow Claw|p1a: Gothorita
+|-supereffective|p1a: Gothorita
+|-damage|p1a: Gothorita|88\/324
+|move|p1a: Gothorita|Psyshock|p2a: Banette
+|-damage|p2a: Banette|199\/329
+|
+|turn|8
+|
+|move|p2a: Banette|Shadow Claw|p1a: Gothorita
+|-supereffective|p1a: Gothorita
+|-damage|p1a: Gothorita|0 fnt
+|faint|p1a: Gothorita
+|
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534
+|-status|p1a: Alomomola|psn
+|-damage|p1a: Alomomola|468\/534 psn|[from] Spikes
+|turn|9
+|
+|switch|p2a: Aromatisse|Aromatisse, M|406\/406
+|move|p1a: Alomomola|Scald|p2a: Aromatisse
+|-damage|p2a: Aromatisse|369\/406
+|
+|-heal|p1a: Alomomola|501\/534 psn|[from] item: Leftovers
+|-heal|p2a: Aromatisse|394\/406|[from] item: Leftovers
+|-damage|p1a: Alomomola|435\/534 psn|[from] psn
+|turn|10
+|
+|switch|p1a: Gligar|Gligar, F|334\/334
+|move|p2a: Aromatisse|Wish|p2a: Aromatisse
+|
+|-heal|p2a: Aromatisse|406\/406|[from] item: Leftovers
+|turn|11
+|
+|switch|p2a: Banette|Banette-Mega, F|199\/329
+|move|p1a: Gligar|Defog|p2a: Banette
+|-unboost|p2a: Banette|evasion|1
+|-sideend|p1: Nuggetman|Spikes|[from] move: Defog|[of] p1a: Gligar
+|-sideend|p1: Nuggetman|Toxic Spikes|[from] move: Defog|[of] p1a: Gligar
+|
+|-heal|p2a: Banette|329\/329|[from] move: Wish|[wisher] Aromatisse
+|turn|12
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 psn
+|move|p2a: Banette|Taunt|p1a: Alomomola
+|-start|p1a: Alomomola|move: Taunt
+|
+|-damage|p1a: Alomomola|468\/534 psn|[from] psn
+|turn|13
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|move|p1a: Alomomola|Scald|p2a: Registeel
+|-damage|p2a: Registeel|337\/364
+|
+|-heal|p1a: Alomomola|501\/534 psn|[from] item: Leftovers
+|-heal|p2a: Registeel|359\/364|[from] item: Leftovers
+|-damage|p1a: Alomomola|435\/534 psn|[from] psn
+|turn|14
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|move|p2a: Registeel|Stealth Rock|p1a: Blissey
+|-sidestart|p1: Nuggetman|move: Stealth Rock
+|
+|-heal|p2a: Registeel|364\/364|[from] item: Leftovers
+|turn|15
+|
+|switch|p2a: Banette|Banette-Mega, F|329\/329
+|move|p1a: Blissey|Stealth Rock|p2a: Banette
+|-sidestart|p2: pokemonisfun|move: Stealth Rock
+|
+|turn|16
+|
+|move|p2a: Banette|Taunt|p1a: Blissey
+|-start|p1a: Blissey|move: Taunt
+|cant|p1a: Blissey|move: Taunt|Toxic
+|
+|turn|17
+|
+|move|p2a: Banette|Shadow Claw|p1a: Blissey
+|-immune|p1a: Blissey|[msg]
+|move|p1a: Blissey|Seismic Toss|p2a: Banette
+|-immune|p2a: Banette|[msg]
+|
+|turn|18
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 psn
+|-damage|p1a: Alomomola|468\/534 psn|[from] Stealth Rock
+|move|p2a: Banette|Will-O-Wisp|p1a: Alomomola
+|-fail|p1a: Alomomola
+|
+|-heal|p1a: Alomomola|501\/534 psn|[from] item: Leftovers
+|-damage|p1a: Alomomola|435\/534 psn|[from] psn
+|turn|19
+|
+|switch|p2a: Aromatisse|Aromatisse, M|406\/406
+|-damage|p2a: Aromatisse|356\/406|[from] Stealth Rock
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-heal|p1a: Alomomola|468\/534 psn|[from] item: Leftovers
+|-heal|p2a: Aromatisse|381\/406|[from] item: Leftovers
+|-damage|p1a: Alomomola|402\/534 psn|[from] psn
+|turn|20
+|
+|switch|p1a: Politoed|Politoed, F|312\/384 brn
+|-damage|p1a: Politoed|264\/384 brn|[from] Stealth Rock
+|move|p2a: Aromatisse|Wish|p2a: Aromatisse
+|
+|-heal|p1a: Politoed|384\/384 brn|[from] move: Wish|[wisher] Alomomola
+|-heal|p2a: Aromatisse|406\/406|[from] item: Leftovers
+|-damage|p1a: Politoed|336\/384 brn|[from] brn
+|turn|21
+|
+|switch|p2a: Banette|Banette-Mega, F|329\/329
+|-damage|p2a: Banette|288\/329|[from] Stealth Rock
+|move|p1a: Politoed|Whirlpool|p2a: Banette
+|-damage|p2a: Banette|254\/329
+|-activate|p2a: Banette|move: Whirlpool|[of] p1a: Politoed
+|
+|-heal|p2a: Banette|329\/329|[from] move: Wish|[wisher] Aromatisse
+|-heal|p1a: Politoed|360\/384 brn|[from] item: Leftovers
+|-damage|p1a: Politoed|312\/384 brn|[from] brn
+|-damage|p2a: Banette|288\/329|[from] move: Whirlpool|[partiallytrapped]
+|turn|22
+|join|BadPlays4Days
+|join|crit my hippo
+|
+|move|p2a: Banette|Shadow Claw|p1a: Politoed
+|-damage|p1a: Politoed|143\/384 brn
+|move|p1a: Politoed|Perish Song|p1a: Politoed
+|-fieldactivate|move: Perish Song
+|
+|-start|p2a: Banette|perish3
+|-start|p1a: Politoed|perish3
+|-heal|p1a: Politoed|167\/384 brn|[from] item: Leftovers
+|-damage|p1a: Politoed|119\/384 brn|[from] brn
+|-damage|p2a: Banette|247\/329|[from] move: Whirlpool|[partiallytrapped]
+|turn|23
+|
+|switch|p2a: Aromatisse|Aromatisse, M|406\/406
+|-damage|p2a: Aromatisse|356\/406|[from] Stealth Rock
+|switch|p1a: Alomomola|Alomomola, M|534\/534 psn
+|-damage|p1a: Alomomola|468\/534 psn|[from] Stealth Rock
+|
+|-heal|p1a: Alomomola|501\/534 psn|[from] item: Leftovers
+|-heal|p2a: Aromatisse|381\/406|[from] item: Leftovers
+|-damage|p1a: Alomomola|435\/534 psn|[from] psn
+|turn|24
+|
+|move|p1a: Alomomola|Toxic|p2a: Aromatisse|[miss]
+|-miss|p1a: Alomomola|p2a: Aromatisse
+|move|p2a: Aromatisse|Moonblast|p1a: Alomomola
+|-damage|p1a: Alomomola|210\/534 psn
+|
+|-heal|p1a: Alomomola|243\/534 psn|[from] item: Leftovers
+|-heal|p2a: Aromatisse|406\/406|[from] item: Leftovers
+|-damage|p1a: Alomomola|177\/534 psn|[from] psn
+|turn|25
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|-damage|p1a: Florges|315\/360|[from] Stealth Rock
+|move|p2a: Aromatisse|Moonblast|p1a: Florges
+|-damage|p1a: Florges|258\/360
+|
+|-heal|p1a: Florges|280\/360|[from] item: Leftovers
+|turn|26
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|-damage|p2a: Registeel|342\/364|[from] Stealth Rock
+|move|p1a: Florges|Aromatherapy|p1a: Florges
+|-cureteam|p1a: Florges|[from] move: Aromatherapy
+|
+|-heal|p1a: Florges|302\/360|[from] item: Leftovers
+|-heal|p2a: Registeel|364\/364|[from] item: Leftovers
+|turn|27
+|
+|switch|p1a: Alomomola|Alomomola, M|355\/534
+|-damage|p1a: Alomomola|289\/534|[from] Stealth Rock
+|move|p2a: Registeel|Seismic Toss|p1a: Alomomola
+|-damage|p1a: Alomomola|189\/534
+|
+|-heal|p1a: Alomomola|222\/534|[from] item: Leftovers
+|turn|28
+|
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|move|p2a: Registeel|Thunder Wave|p1a: Alomomola
+|-status|p1a: Alomomola|par
+|
+|-heal|p1a: Alomomola|255\/534 par|[from] item: Leftovers
+|turn|29
+|chat|crit my hippo|wait this is uu
+|chat|crit my hippo|pif did you select the wrong team
+|
+|move|p2a: Registeel|Seismic Toss|p1a: Alomomola
+|-damage|p1a: Alomomola|155\/534 par
+|move|p1a: Alomomola|Toxic|p2a: Registeel|[miss]
+|-miss|p1a: Alomomola|p2a: Registeel
+|
+|-heal|p1a: Alomomola|422\/534 par|[from] move: Wish|[wisher] Alomomola
+|-heal|p1a: Alomomola|455\/534 par|[from] item: Leftovers
+|turn|30
+|chat|pokemonisfun|yes
+|
+|switch|p2a: Aromatisse|Aromatisse, M|406\/406
+|-damage|p2a: Aromatisse|356\/406|[from] Stealth Rock
+|move|p1a: Alomomola|Scald|p2a: Aromatisse
+|-damage|p2a: Aromatisse|317\/406
+|-status|p2a: Aromatisse|brn
+|
+|-heal|p2a: Aromatisse|342\/406 brn|[from] item: Leftovers
+|-heal|p1a: Alomomola|488\/534 par|[from] item: Leftovers
+|-damage|p2a: Aromatisse|292\/406 brn|[from] brn
+|turn|31
+|join|Pirogue
+|chat|pokemonisfun|but this team does better than the other one i think anyways
+|chat|crit my hippo|yea, pelipper is really good
+|
+|switch|p1a: Florges|Florges, F|302\/360
+|-damage|p1a: Florges|257\/360|[from] Stealth Rock
+|move|p2a: Aromatisse|Aromatherapy|p2a: Aromatisse
+|-cureteam|p2a: Aromatisse|[from] move: Aromatherapy
+|
+|-heal|p1a: Florges|279\/360|[from] item: Leftovers
+|-heal|p2a: Aromatisse|317\/406|[from] item: Leftovers
+|turn|32
+|
+|move|p1a: Florges|Wish|p1a: Florges
+|move|p2a: Aromatisse|Wish|p2a: Aromatisse
+|
+|-heal|p1a: Florges|301\/360|[from] item: Leftovers
+|-heal|p2a: Aromatisse|342\/406|[from] item: Leftovers
+|turn|33
+|chat|crit my hippo|nuggetman did you use this team to get #3 on the ladder? 
+|
+|switch|p1a: Politoed|Politoed, F|119\/384
+|-damage|p1a: Politoed|71\/384|[from] Stealth Rock
+|move|p2a: Aromatisse|Moonblast|p1a: Politoed
+|-damage|p1a: Politoed|0 fnt
+|faint|p1a: Politoed
+|
+|-heal|p2a: Aromatisse|406\/406|[from] move: Wish|[wisher] Aromatisse
+|chat|Nuggetman|almost, i had blastiose at the time
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|-damage|p1a: Blissey|625\/714|[from] Stealth Rock
+|turn|34
+|chat|crit my hippo|what does politoed do
+|chat|Nuggetman|perish trap
+|chat|crit my hippo|o
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|-damage|p2a: Registeel|342\/364|[from] Stealth Rock
+|move|p1a: Blissey|Toxic|p2a: Registeel
+|-fail|p2a: Registeel
+|
+|-heal|p1a: Blissey|669\/714|[from] item: Leftovers
+|-heal|p2a: Registeel|364\/364|[from] item: Leftovers
+|turn|35
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|switch|p2a: Banette|Banette-Mega, F|247\/329
+|-damage|p2a: Banette|206\/329|[from] Stealth Rock
+|
+|-heal|p1a: Alomomola|501\/534 par|[from] item: Leftovers
+|turn|36
+|
+|move|p2a: Banette|Pain Split|p1a: Alomomola
+|-sethp|p1a: Alomomola|353\/534 par|p2a: Banette|329\/329|[from] move: Pain Split
+|move|p1a: Alomomola|Scald|p2a: Banette
+|-damage|p2a: Banette|293\/329
+|-status|p2a: Banette|brn
+|
+|-heal|p1a: Alomomola|386\/534 par|[from] item: Leftovers
+|-damage|p2a: Banette|252\/329 brn|[from] brn
+|turn|37
+|
+|switch|p2a: Aromatisse|Aromatisse, M|406\/406
+|-damage|p2a: Aromatisse|356\/406|[from] Stealth Rock
+|move|p1a: Alomomola|Toxic|p2a: Aromatisse
+|-status|p2a: Aromatisse|tox
+|
+|-heal|p2a: Aromatisse|381\/406 tox|[from] item: Leftovers
+|-heal|p1a: Alomomola|419\/534 par|[from] item: Leftovers
+|-damage|p2a: Aromatisse|356\/406 tox|[from] psn
+|turn|38
+|
+|switch|p1a: Blissey|Blissey, F|669\/714
+|-damage|p1a: Blissey|580\/714|[from] Stealth Rock
+|move|p2a: Aromatisse|Aromatherapy|p2a: Aromatisse
+|-cureteam|p2a: Aromatisse|[from] move: Aromatherapy
+|
+|-heal|p1a: Blissey|624\/714|[from] item: Leftovers
+|-heal|p2a: Aromatisse|381\/406|[from] item: Leftovers
+|turn|39
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|-damage|p2a: Registeel|342\/364|[from] Stealth Rock
+|move|p1a: Blissey|Toxic|p2a: Registeel
+|-fail|p2a: Registeel
+|
+|-heal|p1a: Blissey|668\/714|[from] item: Leftovers
+|-heal|p2a: Registeel|364\/364|[from] item: Leftovers
+|turn|40
+|
+|move|p1a: Blissey|Toxic|p2a: Registeel
+|-fail|p2a: Registeel
+|move|p2a: Registeel|Thunder Wave|p1a: Blissey
+|-status|p1a: Blissey|par
+|
+|-heal|p1a: Blissey|712\/714 par|[from] item: Leftovers
+|turn|41
+|
+|move|p2a: Registeel|Iron Head|p1a: Blissey
+|-damage|p1a: Blissey|562\/714 par
+|cant|p1a: Blissey|par
+|
+|-heal|p1a: Blissey|606\/714 par|[from] item: Leftovers
+|turn|42
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|move|p2a: Registeel|Iron Head|p1a: Alomomola
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|435\/534 par
+|
+|-heal|p1a: Alomomola|468\/534 par|[from] item: Leftovers
+|turn|43
+|
+|switch|p2a: Aromatisse|Aromatisse, M|381\/406
+|-damage|p2a: Aromatisse|331\/406|[from] Stealth Rock
+|move|p1a: Alomomola|Toxic|p2a: Aromatisse
+|-status|p2a: Aromatisse|tox
+|
+|-heal|p2a: Aromatisse|356\/406 tox|[from] item: Leftovers
+|-heal|p1a: Alomomola|501\/534 par|[from] item: Leftovers
+|-damage|p2a: Aromatisse|331\/406 tox|[from] psn
+|turn|44
+|
+|switch|p1a: Blissey|Blissey, F|606\/714
+|-damage|p1a: Blissey|517\/714|[from] Stealth Rock
+|move|p2a: Aromatisse|Wish|p2a: Aromatisse
+|
+|-heal|p1a: Blissey|561\/714|[from] item: Leftovers
+|-heal|p2a: Aromatisse|356\/406 tox|[from] item: Leftovers
+|-damage|p2a: Aromatisse|306\/406 tox|[from] psn
+|turn|45
+|
+|move|p1a: Blissey|Toxic|p2a: Aromatisse
+|-fail|p2a: Aromatisse|tox
+|move|p2a: Aromatisse|Aromatherapy|p2a: Aromatisse
+|-cureteam|p2a: Aromatisse|[from] move: Aromatherapy
+|
+|-heal|p2a: Aromatisse|406\/406|[from] move: Wish|[wisher] Aromatisse
+|-heal|p1a: Blissey|605\/714|[from] item: Leftovers
+|turn|46
+|
+|move|p2a: Aromatisse|Protect|p2a: Aromatisse
+|-singleturn|p2a: Aromatisse|Protect
+|move|p1a: Blissey|Seismic Toss|p2a: Aromatisse
+|-activate|p2a: Aromatisse|Protect
+|
+|-heal|p1a: Blissey|649\/714|[from] item: Leftovers
+|turn|47
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|-damage|p2a: Registeel|342\/364|[from] Stealth Rock
+|move|p1a: Blissey|Toxic|p2a: Registeel
+|-fail|p2a: Registeel
+|
+|-heal|p1a: Blissey|693\/714|[from] item: Leftovers
+|-heal|p2a: Registeel|364\/364|[from] item: Leftovers
+|turn|48
+|
+|move|p1a: Blissey|Seismic Toss|p2a: Registeel
+|-damage|p2a: Registeel|264\/364
+|move|p2a: Registeel|Thunder Wave|p1a: Blissey
+|-status|p1a: Blissey|par
+|
+|-heal|p2a: Registeel|286\/364|[from] item: Leftovers
+|-heal|p1a: Blissey|714\/714 par|[from] item: Leftovers
+|turn|49
+|chat|crit my hippo|only 11 more
+|chat|crit my hippo|pp to go
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|move|p2a: Registeel|Iron Head|p1a: Alomomola
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|435\/534 par
+|
+|-heal|p2a: Registeel|308\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|468\/534 par|[from] item: Leftovers
+|turn|50
+|
+|move|p2a: Registeel|Seismic Toss|p1a: Alomomola
+|-damage|p1a: Alomomola|368\/534 par
+|move|p1a: Alomomola|Toxic|p2a: Registeel
+|-fail|p2a: Registeel
+|
+|-heal|p2a: Registeel|330\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|401\/534 par|[from] item: Leftovers
+|turn|51
+|
+|switch|p2a: Banette|Banette-Mega, F|252\/329
+|-damage|p2a: Banette|211\/329|[from] Stealth Rock
+|move|p1a: Alomomola|Scald|p2a: Banette
+|-damage|p2a: Banette|169\/329
+|
+|-heal|p1a: Alomomola|434\/534 par|[from] item: Leftovers
+|turn|52
+|chat|crit my hippo|man whyd u let ur roselia die
+|chat|pokemonisfun|.
+|chat|crit my hippo|nerd
+|chat|Pirogue|wow
+|chat|Pirogue|harsh
+|
+|move|p2a: Banette|Pain Split|p1a: Alomomola
+|-sethp|p1a: Alomomola|301\/534 par|p2a: Banette|301\/329|[from] move: Pain Split
+|move|p1a: Alomomola|Scald|p2a: Banette
+|-damage|p2a: Banette|261\/329
+|-status|p2a: Banette|brn
+|
+|-heal|p1a: Alomomola|334\/534 par|[from] item: Leftovers
+|-damage|p2a: Banette|220\/329 brn|[from] brn
+|turn|53
+|
+|switch|p2a: Aromatisse|Aromatisse, M|406\/406
+|-damage|p2a: Aromatisse|356\/406|[from] Stealth Rock
+|switch|p1a: Gligar|Gligar, F|334\/334
+|-damage|p1a: Gligar|293\/334|[from] Stealth Rock
+|
+|-heal|p2a: Aromatisse|381\/406|[from] item: Leftovers
+|turn|54
+|leave|BadPlays4Days
+|leave|Pirogue
+|
+|move|p1a: Gligar|Knock Off|p2a: Aromatisse
+|-resisted|p2a: Aromatisse
+|-damage|p2a: Aromatisse|343\/406
+|-enditem|p2a: Aromatisse|Leftovers|[from] move: Knock Off|[of] p1a: Gligar
+|move|p2a: Aromatisse|Aromatherapy|p2a: Aromatisse
+|-cureteam|p2a: Aromatisse|[from] move: Aromatherapy
+|
+|turn|55
+|
+|switch|p2a: Pelipper|Pelipper, F|324\/324
+|-damage|p2a: Pelipper|243\/324|[from] Stealth Rock
+|move|p1a: Gligar|Defog|p2a: Pelipper
+|-unboost|p2a: Pelipper|evasion|1
+|-sideend|p2: pokemonisfun|Stealth Rock|[from] move: Defog|[of] p2a: Pelipper
+|-sideend|p1: Nuggetman|Stealth Rock|[from] move: Defog|[of] p1a: Gligar
+|
+|-heal|p2a: Pelipper|263\/324|[from] item: Leftovers
+|turn|56
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|switch|p2a: Banette|Banette-Mega, F|220\/329
+|
+|turn|57
+|
+|switch|p1a: Alomomola|Alomomola, M|512\/534 par
+|move|p2a: Banette|Taunt|p1a: Alomomola
+|-start|p1a: Alomomola|move: Taunt
+|
+|-heal|p1a: Alomomola|534\/534 par|[from] item: Leftovers
+|turn|58
+|chat|crit my hippo|wow
+|chat|crit my hippo|ur politoed is the best crocune counter
+|
+|move|p2a: Banette|Pain Split|p1a: Alomomola
+|-sethp|p1a: Alomomola|377\/534 par|p2a: Banette|329\/329|[from] move: Pain Split
+|move|p1a: Alomomola|Scald|p2a: Banette
+|-damage|p2a: Banette|287\/329
+|-status|p2a: Banette|brn
+|
+|-heal|p1a: Alomomola|410\/534 par|[from] item: Leftovers
+|-damage|p2a: Banette|246\/329 brn|[from] brn
+|turn|59
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|move|p2a: Banette|Will-O-Wisp|p1a: Blissey|[miss]
+|-miss|p2a: Banette|p1a: Blissey
+|
+|-damage|p2a: Banette|205\/329 brn|[from] brn
+|turn|60
+|
+|move|p2a: Banette|Taunt|p1a: Blissey
+|-start|p1a: Blissey|move: Taunt
+|cant|p1a: Blissey|move: Taunt|Stealth Rock
+|
+|-damage|p2a: Banette|164\/329 brn|[from] brn
+|turn|61
+|
+|switch|p1a: Gligar|Gligar, F|293\/334
+|move|p2a: Banette|Pain Split|p1a: Gligar
+|-sethp|p1a: Gligar|228\/334|p2a: Banette|228\/329 brn|[from] move: Pain Split
+|
+|-damage|p2a: Banette|187\/329 brn|[from] brn
+|turn|62
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|move|p2a: Banette|Will-O-Wisp|p1a: Blissey
+|-status|p1a: Blissey|brn
+|
+|-damage|p2a: Banette|146\/329 brn|[from] brn
+|-damage|p1a: Blissey|625\/714 brn|[from] brn
+|turn|63
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|move|p2a: Banette|Pain Split|p1a: Alomomola
+|-sethp|p1a: Alomomola|340\/534 par|p2a: Banette|329\/329 brn|[from] move: Pain Split
+|
+|-heal|p1a: Alomomola|373\/534 par|[from] item: Leftovers
+|-damage|p2a: Banette|288\/329 brn|[from] brn
+|turn|64
+|
+|switch|p2a: Aromatisse|Aromatisse, M|343\/406
+|cant|p1a: Alomomola|par
+|
+|-heal|p1a: Alomomola|406\/534 par|[from] item: Leftovers
+|turn|65
+|
+|switch|p1a: Blissey|Blissey, F|625\/714
+|move|p2a: Aromatisse|Aromatherapy|p2a: Aromatisse
+|-cureteam|p2a: Aromatisse|[from] move: Aromatherapy
+|
+|-heal|p1a: Blissey|669\/714|[from] item: Leftovers
+|turn|66
+|
+|switch|p2a: Registeel|Registeel|330\/364
+|move|p1a: Blissey|Stealth Rock|p2a: Registeel
+|-sidestart|p2: pokemonisfun|move: Stealth Rock
+|
+|-heal|p1a: Blissey|713\/714|[from] item: Leftovers
+|-heal|p2a: Registeel|352\/364|[from] item: Leftovers
+|turn|67
+|
+|switch|p1a: Gligar|Gligar, F|228\/334
+|move|p2a: Registeel|Stealth Rock|p1a: Gligar
+|-sidestart|p1: Nuggetman|move: Stealth Rock
+|
+|-heal|p2a: Registeel|364\/364|[from] item: Leftovers
+|turn|68
+|chat|crit my hippo|better send in pelipper
+|
+|switch|p2a: Pelipper|Pelipper, F|263\/324
+|-damage|p2a: Pelipper|182\/324|[from] Stealth Rock
+|move|p1a: Gligar|Knock Off|p2a: Pelipper
+|-damage|p2a: Pelipper|140\/324
+|-enditem|p2a: Pelipper|Leftovers|[from] move: Knock Off|[of] p1a: Gligar
+|
+|turn|69
+|
+|switch|p1a: Blissey|Blissey, F|713\/714
+|-damage|p1a: Blissey|624\/714|[from] Stealth Rock
+|move|p2a: Pelipper|Roost|p2a: Pelipper
+|-heal|p2a: Pelipper|302\/324
+|
+|-heal|p1a: Blissey|668\/714|[from] item: Leftovers
+|turn|70
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|-damage|p2a: Registeel|342\/364|[from] Stealth Rock
+|move|p1a: Blissey|Seismic Toss|p2a: Registeel
+|-damage|p2a: Registeel|242\/364
+|
+|-heal|p1a: Blissey|712\/714|[from] item: Leftovers
+|-heal|p2a: Registeel|264\/364|[from] item: Leftovers
+|turn|71
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|move|p2a: Registeel|Thunder Wave|p1a: Alomomola
+|-fail|p1a: Alomomola|par
+|
+|-heal|p2a: Registeel|286\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|501\/534 par|[from] item: Leftovers
+|turn|72
+|
+|move|p2a: Registeel|Seismic Toss|p1a: Alomomola
+|-damage|p1a: Alomomola|401\/534 par
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-heal|p2a: Registeel|308\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|434\/534 par|[from] item: Leftovers
+|turn|73
+|
+|switch|p1a: Gligar|Gligar, F|228\/334
+|-damage|p1a: Gligar|187\/334|[from] Stealth Rock
+|move|p2a: Registeel|Seismic Toss|p1a: Gligar
+|-damage|p1a: Gligar|87\/334
+|
+|-heal|p1a: Gligar|334\/334|[from] move: Wish|[wisher] Alomomola
+|-heal|p2a: Registeel|330\/364|[from] item: Leftovers
+|turn|74
+|chat|crit my hippo|pokemonisfun: why do men watch porn so much
+|
+|switch|p2a: Pelipper|Pelipper, F|302\/324
+|-damage|p2a: Pelipper|221\/324|[from] Stealth Rock
+|move|p1a: Gligar|Defog|p2a: Pelipper
+|-unboost|p2a: Pelipper|evasion|1
+|-sideend|p2: pokemonisfun|Stealth Rock|[from] move: Defog|[of] p2a: Pelipper
+|-sideend|p1: Nuggetman|Stealth Rock|[from] move: Defog|[of] p1a: Gligar
+|
+|turn|75
+|
+|switch|p1a: Florges|Florges, F|301\/360
+|move|p2a: Pelipper|Roost|p2a: Pelipper
+|-heal|p2a: Pelipper|324\/324
+|
+|-heal|p1a: Florges|323\/360|[from] item: Leftovers
+|turn|76
+|join|zvz
+|chat|crit my hippo|hi zvz :^) 
+|
+|switch|p1a: Blissey|Blissey, F|712\/714
+|switch|p2a: Registeel|Registeel|330\/364
+|
+|-heal|p1a: Blissey|714\/714|[from] item: Leftovers
+|-heal|p2a: Registeel|352\/364|[from] item: Leftovers
+|turn|77
+|leave|zvz
+|chat|pokemonisfun|i dont watch porn personally i read porn though
+|chat|crit my hippo|LOL
+|chat|crit my hippo|w0w
+|
+|move|p1a: Blissey|Stealth Rock|p2a: Registeel
+|-sidestart|p2: pokemonisfun|move: Stealth Rock
+|move|p2a: Registeel|Stealth Rock|p1a: Blissey
+|-sidestart|p1: Nuggetman|move: Stealth Rock
+|
+|-heal|p2a: Registeel|364\/364|[from] item: Leftovers
+|turn|78
+|chat|crit my hippo|50 shades of grey????? 
+|chat|pokemonisfun|no thats too long
+|chat|crit my hippo|umm
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|move|p2a: Registeel|Thunder Wave|p1a: Alomomola
+|-fail|p1a: Alomomola|par
+|
+|-heal|p1a: Alomomola|501\/534 par|[from] item: Leftovers
+|turn|79
+|chat|crit my hippo|is it gay erotica
+|
+|move|p2a: Registeel|Seismic Toss|p1a: Alomomola
+|-damage|p1a: Alomomola|401\/534 par
+|move|p1a: Alomomola|Scald|p2a: Registeel
+|-damage|p2a: Registeel|339\/364
+|
+|-heal|p2a: Registeel|361\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|434\/534 par|[from] item: Leftovers
+|turn|80
+|
+|move|p2a: Registeel|Seismic Toss|p1a: Alomomola
+|-damage|p1a: Alomomola|334\/534 par
+|move|p1a: Alomomola|Toxic|p2a: Registeel
+|-fail|p2a: Registeel
+|
+|-heal|p2a: Registeel|364\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|367\/534 par|[from] item: Leftovers
+|turn|81
+|chat|crit my hippo|i dont rly feel like looking that up :< 
+|
+|move|p2a: Registeel|Seismic Toss|p1a: Alomomola
+|-damage|p1a: Alomomola|267\/534 par
+|move|p1a: Alomomola|Scald|p2a: Registeel
+|-damage|p2a: Registeel|336\/364
+|
+|-heal|p2a: Registeel|358\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|300\/534 par|[from] item: Leftovers
+|turn|82
+|
+|switch|p1a: Gligar|Gligar, F|334\/334
+|-damage|p1a: Gligar|293\/334|[from] Stealth Rock
+|move|p2a: Registeel|Seismic Toss|p1a: Gligar
+|-damage|p1a: Gligar|193\/334
+|
+|-heal|p2a: Registeel|364\/364|[from] item: Leftovers
+|turn|83
+|
+|switch|p2a: Pelipper|Pelipper, F|324\/324
+|-damage|p2a: Pelipper|243\/324|[from] Stealth Rock
+|move|p1a: Gligar|Roost|p1a: Gligar
+|-heal|p1a: Gligar|334\/334
+|
+|turn|84
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|-damage|p1a: Blissey|625\/714|[from] Stealth Rock
+|move|p2a: Pelipper|Scald|p1a: Blissey
+|-damage|p1a: Blissey|561\/714
+|
+|-heal|p1a: Blissey|605\/714|[from] item: Leftovers
+|turn|85
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|-damage|p2a: Registeel|342\/364|[from] Stealth Rock
+|move|p1a: Blissey|Toxic|p2a: Registeel
+|-fail|p2a: Registeel
+|
+|-heal|p1a: Blissey|649\/714|[from] item: Leftovers
+|-heal|p2a: Registeel|364\/364|[from] item: Leftovers
+|turn|86
+|
+|switch|p1a: Alomomola|Alomomola, M|478\/534 par
+|-damage|p1a: Alomomola|412\/534 par|[from] Stealth Rock
+|move|p2a: Registeel|Seismic Toss|p1a: Alomomola
+|-damage|p1a: Alomomola|312\/534 par
+|
+|-heal|p1a: Alomomola|345\/534 par|[from] item: Leftovers
+|turn|87
+|
+|move|p2a: Registeel|Seismic Toss|p1a: Alomomola
+|-damage|p1a: Alomomola|245\/534 par
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-heal|p1a: Alomomola|278\/534 par|[from] item: Leftovers
+|turn|88
+|
+|move|p2a: Registeel|Seismic Toss|p1a: Alomomola
+|-damage|p1a: Alomomola|178\/534 par
+|cant|p1a: Alomomola|par
+|
+|-heal|p1a: Alomomola|445\/534 par|[from] move: Wish|[wisher] Alomomola
+|-heal|p1a: Alomomola|478\/534 par|[from] item: Leftovers
+|turn|89
+|
+|move|p2a: Registeel|Seismic Toss|p1a: Alomomola
+|-damage|p1a: Alomomola|378\/534 par
+|move|p1a: Alomomola|Scald|p2a: Registeel
+|-damage|p2a: Registeel|337\/364
+|
+|-heal|p2a: Registeel|359\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|411\/534 par|[from] item: Leftovers
+|turn|90
+|
+|move|p2a: Registeel|Seismic Toss|p1a: Alomomola
+|-damage|p1a: Alomomola|311\/534 par
+|cant|p1a: Alomomola|par
+|
+|-heal|p2a: Registeel|364\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|344\/534 par|[from] item: Leftovers
+|turn|91
+|
+|move|p2a: Registeel|Thunder Wave|p1a: Alomomola
+|-fail|p1a: Alomomola|par
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-heal|p1a: Alomomola|377\/534 par|[from] item: Leftovers
+|turn|92
+|
+|move|p2a: Registeel|Thunder Wave|p1a: Alomomola
+|-fail|p1a: Alomomola|par
+|cant|p1a: Alomomola|par
+|
+|-heal|p1a: Alomomola|534\/534 par|[from] move: Wish|[wisher] Alomomola
+|turn|93
+|
+|switch|p1a: Blissey|Blissey, F|649\/714
+|-damage|p1a: Blissey|560\/714|[from] Stealth Rock
+|move|p2a: Registeel|Thunder Wave|p1a: Blissey
+|-status|p1a: Blissey|par
+|
+|-heal|p1a: Blissey|604\/714 par|[from] item: Leftovers
+|turn|94
+|
+|move|p2a: Registeel|Iron Head|p1a: Blissey
+|-damage|p1a: Blissey|451\/714 par
+|cant|p1a: Blissey|flinch
+|
+|-heal|p1a: Blissey|495\/714 par|[from] item: Leftovers
+|turn|95
+|
+|switch|p1a: Gligar|Gligar, F|334\/334
+|-damage|p1a: Gligar|293\/334|[from] Stealth Rock
+|move|p2a: Registeel|Iron Head|p1a: Gligar
+|-damage|p1a: Gligar|256\/334
+|
+|turn|96
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|switch|p2a: Pelipper|Pelipper, F|243\/324
+|-damage|p2a: Pelipper|162\/324|[from] Stealth Rock
+|
+|-heal|p1a: Alomomola|501\/534 par|[from] item: Leftovers
+|turn|97
+|
+|move|p2a: Pelipper|Roost|p2a: Pelipper
+|-heal|p2a: Pelipper|324\/324
+|move|p1a: Alomomola|Toxic|p2a: Pelipper
+|-status|p2a: Pelipper|tox
+|
+|-heal|p1a: Alomomola|534\/534 par|[from] item: Leftovers
+|-damage|p2a: Pelipper|304\/324 tox|[from] psn
+|turn|98
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|-damage|p2a: Registeel|342\/364|[from] Stealth Rock
+|switch|p1a: Blissey|Blissey, F|495\/714
+|-damage|p1a: Blissey|406\/714|[from] Stealth Rock
+|
+|-heal|p1a: Blissey|450\/714|[from] item: Leftovers
+|-heal|p2a: Registeel|364\/364|[from] item: Leftovers
+|turn|99
+|
+|switch|p1a: Gligar|Gligar, F|256\/334
+|-damage|p1a: Gligar|215\/334|[from] Stealth Rock
+|move|p2a: Registeel|Thunder Wave|p1a: Gligar
+|-immune|p1a: Gligar|[msg]
+|
+|turn|100
+|
+|switch|p2a: Pelipper|Pelipper, F|304\/324 tox
+|-damage|p2a: Pelipper|223\/324 tox|[from] Stealth Rock
+|move|p1a: Gligar|Roost|p1a: Gligar
+|-heal|p1a: Gligar|334\/334
+|
+|-damage|p2a: Pelipper|203\/324 tox|[from] psn
+|turn|101
+|
+|switch|p1a: Florges|Florges, F|323\/360
+|-damage|p1a: Florges|278\/360|[from] Stealth Rock
+|move|p2a: Pelipper|Defog|p1a: Florges
+|-unboost|p1a: Florges|evasion|1
+|-sideend|p1: Nuggetman|Stealth Rock|[from] move: Defog|[of] p1a: Florges
+|-sideend|p2: pokemonisfun|Stealth Rock|[from] move: Defog|[of] p2a: Pelipper
+|
+|-heal|p1a: Florges|300\/360|[from] item: Leftovers
+|-damage|p2a: Pelipper|163\/324 tox|[from] psn
+|turn|102
+|
+|switch|p1a: Gligar|Gligar, F|334\/334
+|switch|p2a: Registeel|Registeel|364\/364
+|
+|turn|103
+|
+|switch|p2a: Pelipper|Pelipper, F|163\/324 tox
+|move|p1a: Gligar|Knock Off|p2a: Pelipper
+|-damage|p2a: Pelipper|134\/324 tox
+|
+|-damage|p2a: Pelipper|114\/324 tox|[from] psn
+|turn|104
+|chat|crit my hippo|i would make a gsc joke but pif's team is newgen
+|
+|switch|p1a: Florges|Florges, F|300\/360
+|move|p2a: Pelipper|Roost|p2a: Pelipper
+|-heal|p2a: Pelipper|276\/324 tox
+|
+|-heal|p1a: Florges|322\/360|[from] item: Leftovers
+|-damage|p2a: Pelipper|236\/324 tox|[from] psn
+|turn|105
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|move|p1a: Florges|Moonblast|p2a: Registeel
+|-resisted|p2a: Registeel
+|-damage|p2a: Registeel|328\/364
+|
+|-heal|p1a: Florges|344\/360|[from] item: Leftovers
+|-heal|p2a: Registeel|350\/364|[from] item: Leftovers
+|turn|106
+|
+|switch|p1a: Gligar|Gligar, F|334\/334
+|move|p2a: Registeel|Stealth Rock|p1a: Gligar
+|-sidestart|p1: Nuggetman|move: Stealth Rock
+|
+|-heal|p2a: Registeel|364\/364|[from] item: Leftovers
+|turn|107
+|leave|crit my hippo
+|
+|switch|p2a: Pelipper|Pelipper, F|236\/324 tox
+|move|p1a: Gligar|Defog|p2a: Pelipper
+|-unboost|p2a: Pelipper|evasion|1
+|-sideend|p1: Nuggetman|Stealth Rock|[from] move: Defog|[of] p1a: Gligar
+|
+|-damage|p2a: Pelipper|216\/324 tox|[from] psn
+|turn|108
+|
+|switch|p1a: Florges|Florges, F|344\/360
+|move|p2a: Pelipper|Roost|p2a: Pelipper
+|-heal|p2a: Pelipper|324\/324 tox
+|
+|-heal|p1a: Florges|360\/360|[from] item: Leftovers
+|-damage|p2a: Pelipper|284\/324 tox|[from] psn
+|turn|109
+|
+|switch|p1a: Gligar|Gligar, F|334\/334
+|switch|p2a: Registeel|Registeel|364\/364
+|
+|turn|110
+|
+|switch|p2a: Pelipper|Pelipper, F|284\/324 tox
+|move|p1a: Gligar|Knock Off|p2a: Pelipper
+|-damage|p2a: Pelipper|255\/324 tox
+|
+|-damage|p2a: Pelipper|235\/324 tox|[from] psn
+|turn|111
+|
+|switch|p1a: Blissey|Blissey, F|450\/714
+|move|p2a: Pelipper|Scald|p1a: Blissey
+|-damage|p1a: Blissey|392\/714
+|
+|-heal|p1a: Blissey|436\/714|[from] item: Leftovers
+|-damage|p2a: Pelipper|195\/324 tox|[from] psn
+|turn|112
+|join|who even plays ru
+|chat|who even plays ru|did someone rq
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|move|p1a: Blissey|Stealth Rock|p2a: Registeel
+|-sidestart|p2: pokemonisfun|move: Stealth Rock
+|
+|-heal|p1a: Blissey|480\/714|[from] item: Leftovers
+|turn|113
+|chat|who even plays ru|oh the room said Join for some reason
+|
+|switch|p1a: Gligar|Gligar, F|334\/334
+|move|p2a: Registeel|Stealth Rock|p1a: Gligar
+|-sidestart|p1: Nuggetman|move: Stealth Rock
+|
+|turn|114
+|join|LucarioTesting
+|
+|switch|p2a: Cresselia|Cresselia, F|438\/438
+|-damage|p2a: Cresselia|384\/438|[from] Stealth Rock
+|move|p1a: Gligar|Defog|p2a: Cresselia
+|-unboost|p2a: Cresselia|evasion|1
+|-sideend|p2: pokemonisfun|Stealth Rock|[from] move: Defog|[of] p2a: Cresselia
+|-sideend|p1: Nuggetman|Stealth Rock|[from] move: Defog|[of] p1a: Gligar
+|
+|-heal|p2a: Cresselia|411\/438|[from] item: Leftovers
+|turn|115
+|chat|LucarioTesting|pif gotta use that manly roselia
+|
+|move|p2a: Cresselia|Toxic|p1a: Gligar
+|-status|p1a: Gligar|tox
+|move|p1a: Gligar|Knock Off|p2a: Cresselia
+|-supereffective|p2a: Cresselia
+|-damage|p2a: Cresselia|331\/438
+|-enditem|p2a: Cresselia|Leftovers|[from] move: Knock Off|[of] p1a: Gligar
+|
+|-damage|p1a: Gligar|314\/334 tox|[from] psn
+|turn|116
+|chat|pokemonisfun|i just misclcked
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Cresselia|Psychic|p1a: Florges
+|-damage|p1a: Florges|318\/360
+|
+|-heal|p1a: Florges|340\/360|[from] item: Leftovers
+|turn|117
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|move|p1a: Florges|Aromatherapy|p1a: Florges
+|-cureteam|p1a: Florges|[from] move: Aromatherapy
+|
+|-heal|p1a: Florges|360\/360|[from] item: Leftovers
+|turn|118
+|
+|switch|p1a: Gligar|Gligar, F|314\/334
+|move|p2a: Registeel|Stealth Rock|p1a: Gligar
+|-sidestart|p1: Nuggetman|move: Stealth Rock
+|
+|turn|119
+|
+|switch|p2a: Cresselia|Cresselia, F|331\/438
+|move|p1a: Gligar|Defog|p2a: Cresselia
+|-unboost|p2a: Cresselia|evasion|1
+|-sideend|p1: Nuggetman|Stealth Rock|[from] move: Defog|[of] p1a: Gligar
+|
+|turn|120
+|
+|switch|p1a: Blissey|Blissey, F|480\/714
+|move|p2a: Cresselia|Toxic|p1a: Blissey
+|-status|p1a: Blissey|tox
+|
+|-heal|p1a: Blissey|524\/714 tox|[from] item: Leftovers
+|-damage|p1a: Blissey|480\/714 tox|[from] psn
+|turn|121
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|move|p1a: Blissey|Stealth Rock|p2a: Registeel
+|-sidestart|p2: pokemonisfun|move: Stealth Rock
+|
+|-heal|p1a: Blissey|524\/714 tox|[from] item: Leftovers
+|-damage|p1a: Blissey|436\/714 tox|[from] psn
+|turn|122
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534
+|move|p2a: Registeel|Stealth Rock|p1a: Alomomola
+|-sidestart|p1: Nuggetman|move: Stealth Rock
+|
+|turn|123
+|
+|move|p1a: Alomomola|Scald|p2a: Registeel
+|-damage|p2a: Registeel|339\/364
+|move|p2a: Registeel|Thunder Wave|p1a: Alomomola
+|-status|p1a: Alomomola|par
+|
+|-heal|p2a: Registeel|361\/364|[from] item: Leftovers
+|turn|124
+|
+|move|p2a: Registeel|Seismic Toss|p1a: Alomomola
+|-damage|p1a: Alomomola|434\/534 par
+|move|p1a: Alomomola|Toxic|p2a: Registeel
+|-fail|p2a: Registeel
+|
+|-heal|p2a: Registeel|364\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|467\/534 par|[from] item: Leftovers
+|turn|125
+|
+|move|p2a: Registeel|Seismic Toss|p1a: Alomomola
+|-damage|p1a: Alomomola|367\/534 par
+|move|p1a: Alomomola|Scald|p2a: Registeel
+|-damage|p2a: Registeel|339\/364
+|-status|p2a: Registeel|brn
+|
+|-heal|p2a: Registeel|361\/364 brn|[from] item: Leftovers
+|-heal|p1a: Alomomola|400\/534 par|[from] item: Leftovers
+|-damage|p2a: Registeel|316\/364 brn|[from] brn
+|turn|126
+|
+|switch|p2a: Aromatisse|Aromatisse, M|343\/406
+|-damage|p2a: Aromatisse|293\/406|[from] Stealth Rock
+|switch|p1a: Gligar|Gligar, F|314\/334
+|-damage|p1a: Gligar|273\/334|[from] Stealth Rock
+|
+|turn|127
+|chat|who even plays ru|why didnt u predict the burn and rest
+|
+|move|p1a: Gligar|Earthquake|p2a: Aromatisse
+|-damage|p2a: Aromatisse|172\/406
+|move|p2a: Aromatisse|Wish|p2a: Aromatisse
+|
+|turn|128
+|chat|pokemonisfun|im bad at pokemon i guess
+|
+|move|p1a: Gligar|Earthquake|p2a: Aromatisse
+|-damage|p2a: Aromatisse|48\/406
+|move|p2a: Aromatisse|Aromatherapy|p2a: Aromatisse
+|-cureteam|p2a: Aromatisse|[from] move: Aromatherapy
+|
+|-heal|p2a: Aromatisse|251\/406|[from] move: Wish|[wisher] Aromatisse
+|turn|129
+|
+|move|p1a: Gligar|Defog|p2a: Aromatisse
+|-unboost|p2a: Aromatisse|evasion|1
+|-sideend|p2: pokemonisfun|Stealth Rock|[from] move: Defog|[of] p2a: Aromatisse
+|-sideend|p1: Nuggetman|Stealth Rock|[from] move: Defog|[of] p1a: Gligar
+|move|p2a: Aromatisse|Wish|p2a: Aromatisse
+|
+|turn|130
+|chat|who even plays ru|somebody alert the authorities pif's got criminal intent
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|move|p2a: Aromatisse|Moonblast|p1a: Alomomola
+|-damage|p1a: Alomomola|323\/534 par
+|
+|-heal|p2a: Aromatisse|406\/406|[from] move: Wish|[wisher] Aromatisse
+|-heal|p1a: Alomomola|356\/534 par|[from] item: Leftovers
+|turn|131
+|chat|who even plays ru|conspiracy to engage in lewd and indecent acts and events
+|
+|switch|p2a: Registeel|Registeel|316\/364
+|cant|p1a: Alomomola|par
+|
+|-heal|p2a: Registeel|338\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|389\/534 par|[from] item: Leftovers
+|turn|132
+|
+|move|p2a: Registeel|Stealth Rock|p1a: Alomomola
+|-sidestart|p1: Nuggetman|move: Stealth Rock
+|move|p1a: Alomomola|Scald|p2a: Registeel
+|-damage|p2a: Registeel|311\/364
+|
+|-heal|p2a: Registeel|333\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|422\/534 par|[from] item: Leftovers
+|turn|133
+|
+|switch|p2a: Pelipper|Pelipper, F|195\/324
+|switch|p1a: Gligar|Gligar, F|273\/334
+|-damage|p1a: Gligar|232\/334|[from] Stealth Rock
+|
+|turn|134
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|-damage|p1a: Florges|315\/360|[from] Stealth Rock
+|move|p2a: Pelipper|Scald|p1a: Florges
+|-damage|p1a: Florges|269\/360
+|
+|-heal|p1a: Florges|291\/360|[from] item: Leftovers
+|turn|135
+|
+|switch|p2a: Registeel|Registeel|333\/364
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p1a: Florges|313\/360|[from] item: Leftovers
+|-heal|p2a: Registeel|355\/364|[from] item: Leftovers
+|turn|136
+|
+|switch|p1a: Blissey|Blissey, F|436\/714
+|-damage|p1a: Blissey|347\/714|[from] Stealth Rock
+|switch|p2a: Banette|Banette-Mega, F|288\/329
+|
+|-heal|p1a: Blissey|527\/714|[from] move: Wish|[wisher] Florges
+|-heal|p1a: Blissey|571\/714|[from] item: Leftovers
+|turn|137
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|move|p2a: Banette|Taunt|p1a: Alomomola
+|-start|p1a: Alomomola|move: Taunt
+|
+|-heal|p1a: Alomomola|501\/534 par|[from] item: Leftovers
+|turn|138
+|
+|switch|p2a: Pelipper|Pelipper, F|195\/324
+|switch|p1a: Florges|Florges, F|313\/360
+|-damage|p1a: Florges|268\/360|[from] Stealth Rock
+|
+|-heal|p1a: Florges|290\/360|[from] item: Leftovers
+|turn|139
+|
+|switch|p1a: Blissey|Blissey, F|571\/714
+|-damage|p1a: Blissey|482\/714|[from] Stealth Rock
+|switch|p2a: Registeel|Registeel|355\/364
+|
+|-heal|p1a: Blissey|526\/714|[from] item: Leftovers
+|-heal|p2a: Registeel|364\/364|[from] item: Leftovers
+|turn|140
+|
+|move|p1a: Blissey|Stealth Rock|p2a: Registeel
+|-sidestart|p2: pokemonisfun|move: Stealth Rock
+|move|p2a: Registeel|Thunder Wave|p1a: Blissey
+|-status|p1a: Blissey|par
+|
+|-heal|p1a: Blissey|570\/714 par|[from] item: Leftovers
+|turn|141
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|move|p2a: Registeel|Iron Head|p1a: Alomomola
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|435\/534 par
+|
+|-heal|p1a: Alomomola|468\/534 par|[from] item: Leftovers
+|turn|142
+|
+|switch|p2a: Pelipper|Pelipper, F|195\/324
+|-damage|p2a: Pelipper|114\/324|[from] Stealth Rock
+|cant|p1a: Alomomola|par
+|
+|-heal|p1a: Alomomola|501\/534 par|[from] item: Leftovers
+|turn|143
+|
+|move|p2a: Pelipper|Roost|p2a: Pelipper
+|-heal|p2a: Pelipper|276\/324
+|move|p1a: Alomomola|Toxic|p2a: Pelipper
+|-status|p2a: Pelipper|tox
+|
+|-heal|p1a: Alomomola|534\/534 par|[from] item: Leftovers
+|-damage|p2a: Pelipper|256\/324 tox|[from] psn
+|turn|144
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|-damage|p2a: Registeel|342\/364|[from] Stealth Rock
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-fail|p1a: Alomomola
+|
+|-heal|p2a: Registeel|364\/364|[from] item: Leftovers
+|turn|145
+|
+|move|p2a: Registeel|Thunder Wave|p1a: Alomomola
+|-fail|p1a: Alomomola|par
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|turn|146
+|
+|switch|p1a: Florges|Florges, F|290\/360
+|-damage|p1a: Florges|245\/360|[from] Stealth Rock
+|move|p2a: Registeel|Thunder Wave|p1a: Florges
+|-status|p1a: Florges|par
+|
+|-heal|p1a: Florges|360\/360 par|[from] move: Wish|[wisher] Alomomola
+|turn|147
+|join|Calloflochie
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|move|p2a: Registeel|Iron Head|p1a: Alomomola
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|432\/534 par
+|
+|-heal|p1a: Alomomola|465\/534 par|[from] item: Leftovers
+|turn|148
+|
+|switch|p1a: Florges|Florges, F|360\/360 par
+|-damage|p1a: Florges|315\/360 par|[from] Stealth Rock
+|move|p2a: Registeel|Thunder Wave|p1a: Florges
+|-fail|p1a: Florges|par
+|
+|-heal|p1a: Florges|337\/360 par|[from] item: Leftovers
+|turn|149
+|
+|cant|p1a: Florges|par
+|move|p2a: Registeel|Iron Head|p1a: Florges
+|-supereffective|p1a: Florges
+|-damage|p1a: Florges|113\/360 par
+|
+|-heal|p1a: Florges|135\/360 par|[from] item: Leftovers
+|turn|150
+|chat|who even plays ru|wow
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|move|p2a: Registeel|Iron Head|p1a: Alomomola
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|436\/534 par
+|
+|-heal|p1a: Alomomola|469\/534 par|[from] item: Leftovers
+|turn|151
+|
+|move|p2a: Registeel|Seismic Toss|p1a: Alomomola
+|-damage|p1a: Alomomola|369\/534 par
+|move|p1a: Alomomola|Scald|p2a: Registeel
+|-damage|p2a: Registeel|339\/364
+|-status|p2a: Registeel|brn
+|
+|-heal|p2a: Registeel|361\/364 brn|[from] item: Leftovers
+|-heal|p1a: Alomomola|402\/534 par|[from] item: Leftovers
+|-damage|p2a: Registeel|316\/364 brn|[from] brn
+|turn|152
+|
+|switch|p2a: Banette|Banette-Mega, F|288\/329
+|-damage|p2a: Banette|247\/329|[from] Stealth Rock
+|switch|p1a: Florges|Florges, F|135\/360 par
+|-damage|p1a: Florges|90\/360 par|[from] Stealth Rock
+|
+|-heal|p1a: Florges|112\/360 par|[from] item: Leftovers
+|turn|153
+|
+|cant|p1a: Florges|par
+|move|p2a: Banette|Shadow Claw|p1a: Florges
+|-damage|p1a: Florges|0 fnt
+|faint|p1a: Florges
+|
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|turn|154
+|
+|move|p2a: Banette|Pain Split|p1a: Alomomola
+|-sethp|p1a: Alomomola|357\/534 par|p2a: Banette|329\/329|[from] move: Pain Split
+|move|p1a: Alomomola|Scald|p2a: Banette
+|-damage|p2a: Banette|292\/329
+|
+|-heal|p1a: Alomomola|390\/534 par|[from] item: Leftovers
+|turn|155
+|
+|switch|p2a: Aromatisse|Aromatisse, M|406\/406
+|-damage|p2a: Aromatisse|356\/406|[from] Stealth Rock
+|move|p1a: Alomomola|Toxic|p2a: Aromatisse
+|-status|p2a: Aromatisse|tox
+|
+|-heal|p1a: Alomomola|423\/534 par|[from] item: Leftovers
+|-damage|p2a: Aromatisse|331\/406 tox|[from] psn
+|turn|156
+|
+|move|p2a: Aromatisse|Wish|p2a: Aromatisse
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-heal|p1a: Alomomola|456\/534 par|[from] item: Leftovers
+|-damage|p2a: Aromatisse|281\/406 tox|[from] psn
+|turn|157
+|
+|switch|p1a: Blissey|Blissey, F|570\/714
+|-damage|p1a: Blissey|481\/714|[from] Stealth Rock
+|move|p2a: Aromatisse|Moonblast|p1a: Blissey
+|-damage|p1a: Blissey|396\/714
+|
+|-heal|p1a: Blissey|663\/714|[from] move: Wish|[wisher] Alomomola
+|-heal|p2a: Aromatisse|406\/406 tox|[from] move: Wish|[wisher] Aromatisse
+|-heal|p1a: Blissey|707\/714|[from] item: Leftovers
+|-damage|p2a: Aromatisse|331\/406 tox|[from] psn
+|turn|158
+|
+|move|p1a: Blissey|Seismic Toss|p2a: Aromatisse
+|-damage|p2a: Aromatisse|231\/406 tox
+|move|p2a: Aromatisse|Aromatherapy|p2a: Aromatisse
+|-cureteam|p2a: Aromatisse|[from] move: Aromatherapy
+|
+|-heal|p1a: Blissey|714\/714|[from] item: Leftovers
+|turn|159
+|
+|switch|p2a: Registeel|Registeel|316\/364
+|-damage|p2a: Registeel|294\/364|[from] Stealth Rock
+|move|p1a: Blissey|Toxic|p2a: Registeel
+|-fail|p2a: Registeel
+|
+|-heal|p2a: Registeel|316\/364|[from] item: Leftovers
+|turn|160
+|chat|who even plays ru|wow pif ur running out of aromatherapies
+|chat|who even plays ru|you should use a natural cure pokemon for the stall mirror
+|chat|pokemonisfun|i still have one
+|chat|pokemonisfun|.
+|
+|move|p1a: Blissey|Seismic Toss|p2a: Registeel
+|-damage|p2a: Registeel|216\/364
+|move|p2a: Registeel|Thunder Wave|p1a: Blissey
+|-status|p1a: Blissey|par
+|
+|-heal|p2a: Registeel|238\/364|[from] item: Leftovers
+|turn|161
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|move|p2a: Registeel|Iron Head|p1a: Alomomola
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|433\/534 par
+|
+|-heal|p2a: Registeel|260\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|466\/534 par|[from] item: Leftovers
+|turn|162
+|
+|move|p2a: Registeel|Seismic Toss|p1a: Alomomola
+|-damage|p1a: Alomomola|366\/534 par
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-heal|p2a: Registeel|282\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|399\/534 par|[from] item: Leftovers
+|turn|163
+|
+|switch|p2a: Pelipper|Pelipper, F|256\/324
+|-damage|p2a: Pelipper|175\/324|[from] Stealth Rock
+|move|p1a: Alomomola|Scald|p2a: Pelipper
+|-resisted|p2a: Pelipper
+|-damage|p2a: Pelipper|142\/324
+|
+|-heal|p1a: Alomomola|534\/534 par|[from] move: Wish|[wisher] Alomomola
+|turn|164
+|
+|move|p2a: Pelipper|Roost|p2a: Pelipper
+|-heal|p2a: Pelipper|304\/324
+|move|p1a: Alomomola|Toxic|p2a: Pelipper
+|-status|p2a: Pelipper|tox
+|
+|-damage|p2a: Pelipper|284\/324 tox|[from] psn
+|turn|165
+|chat|who even plays ru|blissey is so fat
+|
+|move|p2a: Pelipper|Defog|p1a: Alomomola
+|-unboost|p1a: Alomomola|evasion|1
+|-sideend|p1: Nuggetman|Stealth Rock|[from] move: Defog|[of] p1a: Alomomola
+|-sideend|p2: pokemonisfun|Stealth Rock|[from] move: Defog|[of] p2a: Pelipper
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-damage|p2a: Pelipper|244\/324 tox|[from] psn
+|turn|166
+|
+|switch|p2a: Registeel|Registeel|282\/364
+|switch|p1a: Gligar|Gligar, F|232\/334
+|
+|-heal|p1a: Gligar|334\/334|[from] move: Wish|[wisher] Alomomola
+|-heal|p2a: Registeel|304\/364|[from] item: Leftovers
+|turn|167
+|
+|switch|p2a: Cresselia|Cresselia, F|331\/438
+|move|p1a: Gligar|Knock Off|p2a: Cresselia
+|-supereffective|p2a: Cresselia
+|-damage|p2a: Cresselia|275\/438
+|
+|turn|168
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|move|p2a: Cresselia|Moonlight|p2a: Cresselia
+|-heal|p2a: Cresselia|438\/438
+|
+|turn|169
+|
+|switch|p2a: Registeel|Registeel|304\/364
+|move|p1a: Blissey|Toxic|p2a: Registeel
+|-fail|p2a: Registeel
+|
+|-heal|p2a: Registeel|326\/364|[from] item: Leftovers
+|turn|170
+|
+|move|p1a: Blissey|Stealth Rock|p2a: Registeel
+|-sidestart|p2: pokemonisfun|move: Stealth Rock
+|move|p2a: Registeel|Stealth Rock|p1a: Blissey
+|-sidestart|p1: Nuggetman|move: Stealth Rock
+|
+|-heal|p2a: Registeel|348\/364|[from] item: Leftovers
+|turn|171
+|
+|switch|p1a: Gligar|Gligar, F|334\/334
+|-damage|p1a: Gligar|293\/334|[from] Stealth Rock
+|move|p2a: Registeel|Thunder Wave|p1a: Gligar
+|-immune|p1a: Gligar|[msg]
+|
+|-heal|p2a: Registeel|364\/364|[from] item: Leftovers
+|turn|172
+|
+|switch|p2a: Cresselia|Cresselia, F|438\/438
+|-damage|p2a: Cresselia|384\/438|[from] Stealth Rock
+|move|p1a: Gligar|Knock Off|p2a: Cresselia
+|-supereffective|p2a: Cresselia
+|-damage|p2a: Cresselia|330\/438
+|
+|turn|173
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|-damage|p1a: Blissey|625\/714|[from] Stealth Rock
+|move|p2a: Cresselia|Psychic|p1a: Blissey
+|-damage|p1a: Blissey|561\/714
+|
+|-heal|p1a: Blissey|605\/714|[from] item: Leftovers
+|turn|174
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|-damage|p2a: Registeel|342\/364|[from] Stealth Rock
+|move|p1a: Blissey|Seismic Toss|p2a: Registeel
+|-damage|p2a: Registeel|242\/364
+|
+|-heal|p1a: Blissey|649\/714|[from] item: Leftovers
+|-heal|p2a: Registeel|264\/364|[from] item: Leftovers
+|turn|175
+|
+|move|p1a: Blissey|Seismic Toss|p2a: Registeel
+|-damage|p2a: Registeel|164\/364
+|move|p2a: Registeel|Thunder Wave|p1a: Blissey
+|-status|p1a: Blissey|par
+|
+|-heal|p2a: Registeel|186\/364|[from] item: Leftovers
+|-heal|p1a: Blissey|693\/714 par|[from] item: Leftovers
+|turn|176
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|move|p2a: Registeel|Iron Head|p1a: Alomomola
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|432\/534 par
+|
+|-heal|p2a: Registeel|208\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|465\/534 par|[from] item: Leftovers
+|turn|177
+|
+|cant|p1a: Alomomola|par
+|move|p2a: Registeel|Seismic Toss|p1a: Alomomola
+|-damage|p1a: Alomomola|365\/534 par
+|
+|-heal|p2a: Registeel|230\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|398\/534 par|[from] item: Leftovers
+|turn|178
+|chat|who even plays ru|jokes on u
+|
+|switch|p1a: Blissey|Blissey, F|693\/714
+|-damage|p1a: Blissey|604\/714|[from] Stealth Rock
+|move|p2a: Registeel|Thunder Wave|p1a: Blissey
+|-status|p1a: Blissey|par
+|
+|-heal|p2a: Registeel|252\/364|[from] item: Leftovers
+|-heal|p1a: Blissey|648\/714 par|[from] item: Leftovers
+|turn|179
+|chat|who even plays ru|full paralysis is helping him win the pp war
+|
+|move|p2a: Registeel|Iron Head|p1a: Blissey
+|-damage|p1a: Blissey|492\/714 par
+|cant|p1a: Blissey|par
+|
+|-heal|p2a: Registeel|274\/364|[from] item: Leftovers
+|-heal|p1a: Blissey|536\/714 par|[from] item: Leftovers
+|turn|180
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|move|p2a: Registeel|Iron Head|p1a: Alomomola
+|-crit|p1a: Alomomola
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|420\/534 par
+|
+|-heal|p2a: Registeel|296\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|453\/534 par|[from] item: Leftovers
+|turn|181
+|chat|pokemonisfun|paralysis killed florges so its probably at least worth it
+|
+|switch|p2a: Pelipper|Pelipper, F|244\/324 tox
+|-damage|p2a: Pelipper|163\/324 tox|[from] Stealth Rock
+|cant|p1a: Alomomola|par
+|
+|-heal|p1a: Alomomola|486\/534 par|[from] item: Leftovers
+|-damage|p2a: Pelipper|143\/324 tox|[from] psn
+|turn|182
+|
+|switch|p1a: Blissey|Blissey, F|536\/714
+|-damage|p1a: Blissey|447\/714|[from] Stealth Rock
+|move|p2a: Pelipper|Roost|p2a: Pelipper
+|-heal|p2a: Pelipper|305\/324 tox
+|
+|-heal|p1a: Blissey|491\/714|[from] item: Leftovers
+|-damage|p2a: Pelipper|265\/324 tox|[from] psn
+|turn|183
+|
+|move|p2a: Pelipper|Defog|p1a: Blissey
+|-unboost|p1a: Blissey|evasion|1
+|-sideend|p1: Nuggetman|Stealth Rock|[from] move: Defog|[of] p1a: Blissey
+|-sideend|p2: pokemonisfun|Stealth Rock|[from] move: Defog|[of] p2a: Pelipper
+|move|p1a: Blissey|Seismic Toss|p2a: Pelipper
+|-damage|p2a: Pelipper|165\/324 tox
+|
+|-heal|p1a: Blissey|535\/714|[from] item: Leftovers
+|-damage|p2a: Pelipper|105\/324 tox|[from] psn
+|turn|184
+|
+|switch|p2a: Registeel|Registeel|296\/364
+|move|p1a: Blissey|Stealth Rock|p2a: Registeel
+|-sidestart|p2: pokemonisfun|move: Stealth Rock
+|
+|-heal|p1a: Blissey|579\/714|[from] item: Leftovers
+|-heal|p2a: Registeel|318\/364|[from] item: Leftovers
+|turn|185
+|
+|switch|p1a: Gligar|Gligar, F|293\/334
+|move|p2a: Registeel|Stealth Rock|p1a: Gligar
+|-sidestart|p1: Nuggetman|move: Stealth Rock
+|
+|-heal|p2a: Registeel|340\/364|[from] item: Leftovers
+|turn|186
+|
+|switch|p2a: Cresselia|Cresselia, F|330\/438
+|-damage|p2a: Cresselia|276\/438|[from] Stealth Rock
+|move|p1a: Gligar|Knock Off|p2a: Cresselia
+|-supereffective|p2a: Cresselia
+|-damage|p2a: Cresselia|224\/438
+|
+|turn|187
+|
+|switch|p1a: Blissey|Blissey, F|579\/714
+|-damage|p1a: Blissey|490\/714|[from] Stealth Rock
+|move|p2a: Cresselia|Toxic|p1a: Blissey
+|-status|p1a: Blissey|tox
+|
+|-heal|p1a: Blissey|534\/714 tox|[from] item: Leftovers
+|-damage|p1a: Blissey|490\/714 tox|[from] psn
+|turn|188
+|
+|switch|p2a: Registeel|Registeel|340\/364
+|-damage|p2a: Registeel|318\/364|[from] Stealth Rock
+|move|p1a: Blissey|Soft-Boiled|p1a: Blissey
+|-heal|p1a: Blissey|714\/714 tox
+|
+|-heal|p2a: Registeel|340\/364|[from] item: Leftovers
+|-damage|p1a: Blissey|626\/714 tox|[from] psn
+|turn|189
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|move|p2a: Registeel|Seismic Toss|p1a: Alomomola
+|-damage|p1a: Alomomola|368\/534 par
+|
+|-heal|p2a: Registeel|362\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|401\/534 par|[from] item: Leftovers
+|turn|190
+|
+|cant|p1a: Alomomola|par
+|move|p2a: Registeel|Thunder Wave|p1a: Alomomola
+|-fail|p1a: Alomomola|par
+|
+|-heal|p2a: Registeel|364\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|434\/534 par|[from] item: Leftovers
+|turn|191
+|
+|switch|p1a: Gligar|Gligar, F|293\/334
+|-damage|p1a: Gligar|252\/334|[from] Stealth Rock
+|move|p2a: Registeel|Thunder Wave|p1a: Gligar
+|-immune|p1a: Gligar|[msg]
+|
+|turn|192
+|
+|switch|p2a: Cresselia|Cresselia, F|224\/438
+|-damage|p2a: Cresselia|170\/438|[from] Stealth Rock
+|move|p1a: Gligar|Knock Off|p2a: Cresselia
+|-supereffective|p2a: Cresselia
+|-damage|p2a: Cresselia|118\/438
+|
+|turn|193
+|join|FoopAwesome
+|chat|who even plays ru|c-c-c-criminal intent
+|
+|switch|p1a: Blissey|Blissey, F|626\/714
+|-damage|p1a: Blissey|537\/714|[from] Stealth Rock
+|move|p2a: Cresselia|Moonlight|p2a: Cresselia
+|-heal|p2a: Cresselia|337\/438
+|
+|-heal|p1a: Blissey|581\/714|[from] item: Leftovers
+|turn|194
+|chat|pokemonisfun|what does that even mean
+|leave|FoopAwesome
+|chat|pokemonisfun|i used to watch law and order
+|chat|pokemonisfun|but i never liked criminal intent 
+|chat|who even plays ru|"conspiracy to engage in lewd and indecent acts and events" 
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|-damage|p2a: Registeel|342\/364|[from] Stealth Rock
+|move|p1a: Blissey|Seismic Toss|p2a: Registeel
+|-damage|p2a: Registeel|242\/364
+|
+|-heal|p1a: Blissey|625\/714|[from] item: Leftovers
+|-heal|p2a: Registeel|264\/364|[from] item: Leftovers
+|turn|195
+|chat|who even plays ru|its a song nerd
+|
+|move|p1a: Blissey|Seismic Toss|p2a: Registeel
+|-damage|p2a: Registeel|164\/364
+|move|p2a: Registeel|Thunder Wave|p1a: Blissey
+|-status|p1a: Blissey|par
+|
+|-heal|p2a: Registeel|186\/364|[from] item: Leftovers
+|-heal|p1a: Blissey|669\/714 par|[from] item: Leftovers
+|turn|196
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|move|p2a: Registeel|Iron Head|p1a: Alomomola
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|434\/534 par
+|
+|-heal|p2a: Registeel|208\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|467\/534 par|[from] item: Leftovers
+|turn|197
+|
+|move|p2a: Registeel|Thunder Wave|p1a: Alomomola
+|-fail|p1a: Alomomola|par
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-heal|p2a: Registeel|230\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|500\/534 par|[from] item: Leftovers
+|turn|198
+|join|wot4 >:v(
+|
+|switch|p1a: Gligar|Gligar, F|252\/334
+|-damage|p1a: Gligar|211\/334|[from] Stealth Rock
+|move|p2a: Registeel|Thunder Wave|p1a: Gligar
+|-immune|p1a: Gligar|[msg]
+|
+|-heal|p1a: Gligar|334\/334|[from] move: Wish|[wisher] Alomomola
+|-heal|p2a: Registeel|252\/364|[from] item: Leftovers
+|turn|199
+|chat|who even plays ru|alomomola a shit
+|
+|switch|p2a: Cresselia|Cresselia, F|337\/438
+|-damage|p2a: Cresselia|283\/438|[from] Stealth Rock
+|move|p1a: Gligar|Knock Off|p2a: Cresselia
+|-supereffective|p2a: Cresselia
+|-damage|p2a: Cresselia|227\/438
+|
+|turn|200
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|move|p2a: Cresselia|Toxic|p1a: Alomomola
+|-fail|p1a: Alomomola
+|
+|-heal|p1a: Alomomola|501\/534 par|[from] item: Leftovers
+|turn|201
+|
+|switch|p2a: Registeel|Registeel|252\/364
+|-damage|p2a: Registeel|230\/364|[from] Stealth Rock
+|move|p1a: Alomomola|Toxic|p2a: Registeel|[miss]
+|-miss|p1a: Alomomola|p2a: Registeel
+|
+|-heal|p2a: Registeel|252\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|534\/534 par|[from] item: Leftovers
+|turn|202
+|
+|move|p2a: Registeel|Thunder Wave|p1a: Alomomola
+|-fail|p1a: Alomomola|par
+|move|p1a: Alomomola|Scald|p2a: Registeel
+|-damage|p2a: Registeel|225\/364
+|
+|-heal|p2a: Registeel|247\/364|[from] item: Leftovers
+|turn|203
+|
+|cant|p1a: Alomomola|par
+|move|p2a: Registeel|Thunder Wave|p1a: Alomomola
+|-fail|p1a: Alomomola|par
+|
+|-heal|p2a: Registeel|269\/364|[from] item: Leftovers
+|turn|204
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Registeel|Thunder Wave|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-heal|p2a: Registeel|291\/364|[from] item: Leftovers
+|turn|205
+|
+|switch|p1a: Gligar|Gligar, F|334\/334
+|-damage|p1a: Gligar|293\/334|[from] Stealth Rock
+|move|p2a: Registeel|Thunder Wave|p1a: Gligar
+|-immune|p1a: Gligar|[msg]
+|
+|-heal|p2a: Registeel|313\/364|[from] item: Leftovers
+|turn|206
+|
+|switch|p2a: Cresselia|Cresselia, F|227\/438
+|-damage|p2a: Cresselia|173\/438|[from] Stealth Rock
+|move|p1a: Gligar|Knock Off|p2a: Cresselia
+|-supereffective|p2a: Cresselia
+|-damage|p2a: Cresselia|125\/438
+|
+|turn|207
+|
+|switch|p1a: Blissey|Blissey, F|669\/714
+|-damage|p1a: Blissey|580\/714|[from] Stealth Rock
+|move|p2a: Cresselia|Moonlight|p2a: Cresselia
+|-heal|p2a: Cresselia|344\/438
+|
+|-heal|p1a: Blissey|624\/714|[from] item: Leftovers
+|turn|208
+|
+|switch|p2a: Registeel|Registeel|313\/364
+|-damage|p2a: Registeel|291\/364|[from] Stealth Rock
+|move|p1a: Blissey|Seismic Toss|p2a: Registeel
+|-damage|p2a: Registeel|191\/364
+|
+|-heal|p1a: Blissey|668\/714|[from] item: Leftovers
+|-heal|p2a: Registeel|213\/364|[from] item: Leftovers
+|turn|209
+|chat|who even plays ru|call your girlfriend
+|chat|who even plays ru|its time you had the talk
+|chat|who even plays ru|give your reasons 
+|join|zTerribadTastic
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|switch|p2a: Banette|Banette-Mega, F|292\/329
+|-damage|p2a: Banette|251\/329|[from] Stealth Rock
+|
+|-heal|p1a: Alomomola|501\/534 par|[from] item: Leftovers
+|turn|210
+|chat|who even plays ru|say its not her fault
+|chat|pokemonisfun|r u high right now
+|
+|move|p2a: Banette|Taunt|p1a: Alomomola
+|-start|p1a: Alomomola|move: Taunt
+|cant|p1a: Alomomola|par
+|
+|-heal|p1a: Alomomola|534\/534 par|[from] item: Leftovers
+|turn|211
+|chat|who even plays ru|but you just met somebody new 
+|
+|move|p2a: Banette|Pain Split|p1a: Alomomola
+|-sethp|p1a: Alomomola|392\/534 par|p2a: Banette|329\/329|[from] move: Pain Split
+|cant|p1a: Alomomola|par
+|
+|-heal|p1a: Alomomola|425\/534 par|[from] item: Leftovers
+|turn|212
+|chat|who even plays ru|tell her not to get obsessed, second guessing everything you said or done
+|
+|move|p2a: Banette|Shadow Claw|p1a: Alomomola
+|-damage|p1a: Alomomola|316\/534 par
+|cant|p1a: Alomomola|par
+|
+|-heal|p1a: Alomomola|349\/534 par|[from] item: Leftovers
+|-end|p1a: Alomomola|move: Taunt
+|turn|213
+|chat|who even plays ru|and then when she gets upset tell her how you never meant to hurt noone
+|
+|move|p2a: Banette|Taunt|p1a: Alomomola
+|-start|p1a: Alomomola|move: Taunt
+|move|p1a: Alomomola|Scald|p2a: Banette
+|-damage|p2a: Banette|292\/329
+|-status|p2a: Banette|brn
+|
+|-heal|p1a: Alomomola|382\/534 par|[from] item: Leftovers
+|-damage|p2a: Banette|251\/329 brn|[from] brn
+|turn|214
+|chat|who even plays ru|then you tell her that the only way her heart will mend is when she learns to love again
+|raw|<div class="broadcast-red"><b>Moderated chat was set to +!<\/b><br \/>Only users of rank + and higher can talk.<\/div>
+|join|eaglehawk
+|
+|switch|p1a: Blissey|Blissey, F|668\/714
+|-damage|p1a: Blissey|579\/714|[from] Stealth Rock
+|move|p2a: Banette|Pain Split|p1a: Blissey
+|-sethp|p1a: Blissey|415\/714|p2a: Banette|329\/329 brn|[from] move: Pain Split
+|
+|-heal|p1a: Blissey|459\/714|[from] item: Leftovers
+|-damage|p2a: Banette|288\/329 brn|[from] brn
+|turn|215
+|
+|move|p2a: Banette|Will-O-Wisp|p1a: Blissey|[miss]
+|-miss|p2a: Banette|p1a: Blissey
+|move|p1a: Blissey|Toxic|p2a: Banette
+|-fail|p2a: Banette
+|
+|-heal|p1a: Blissey|503\/714|[from] item: Leftovers
+|-damage|p2a: Banette|247\/329 brn|[from] brn
+|turn|216
+|leave|LucarioTesting
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|move|p2a: Banette|Will-O-Wisp|p1a: Alomomola
+|-fail|p1a: Alomomola
+|
+|-heal|p1a: Alomomola|501\/534 par|[from] item: Leftovers
+|-damage|p2a: Banette|206\/329 brn|[from] brn
+|turn|217
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Banette|Pain Split|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-heal|p1a: Alomomola|534\/534 par|[from] item: Leftovers
+|-damage|p2a: Banette|165\/329 brn|[from] brn
+|turn|218
+|
+|move|p2a: Banette|Pain Split|p1a: Alomomola
+|-sethp|p1a: Alomomola|349\/534 par|p2a: Banette|329\/329 brn|[from] move: Pain Split
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|-heal|p1a: Alomomola|382\/534 par|[from] item: Leftovers
+|-damage|p2a: Banette|288\/329 brn|[from] brn
+|turn|219
+|
+|switch|p1a: Blissey|Blissey, F|503\/714
+|-damage|p1a: Blissey|414\/714|[from] Stealth Rock
+|move|p2a: Banette|Taunt|p1a: Blissey
+|-start|p1a: Blissey|move: Taunt
+|
+|-heal|p1a: Blissey|681\/714|[from] move: Wish|[wisher] Alomomola
+|-heal|p1a: Blissey|714\/714|[from] item: Leftovers
+|-damage|p2a: Banette|247\/329 brn|[from] brn
+|turn|220
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|move|p2a: Banette|Will-O-Wisp|p1a: Alomomola
+|-fail|p1a: Alomomola
+|
+|-heal|p1a: Alomomola|501\/534 par|[from] item: Leftovers
+|-damage|p2a: Banette|206\/329 brn|[from] brn
+|turn|221
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Banette|Taunt|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-heal|p1a: Alomomola|534\/534 par|[from] item: Leftovers
+|-damage|p2a: Banette|165\/329 brn|[from] brn
+|turn|222
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-fail|p1a: Alomomola
+|move|p2a: Banette|Will-O-Wisp|p1a: Alomomola
+|-fail|p1a: Alomomola
+|
+|-damage|p2a: Banette|124\/329 brn|[from] brn
+|turn|223
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Banette|Pain Split|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-damage|p2a: Banette|83\/329 brn|[from] brn
+|turn|224
+|
+|move|p2a: Banette|Pain Split|p1a: Alomomola
+|-sethp|p1a: Alomomola|308\/534 par|p2a: Banette|308\/329 brn|[from] move: Pain Split
+|cant|p1a: Alomomola|par
+|
+|-heal|p1a: Alomomola|341\/534 par|[from] item: Leftovers
+|-damage|p2a: Banette|267\/329 brn|[from] brn
+|turn|225
+|
+|move|p2a: Banette|Taunt|p1a: Alomomola
+|-start|p1a: Alomomola|move: Taunt
+|cant|p1a: Alomomola|par
+|
+|-heal|p1a: Alomomola|374\/534 par|[from] item: Leftovers
+|-damage|p2a: Banette|226\/329 brn|[from] brn
+|turn|226
+|
+|move|p2a: Banette|Pain Split|p1a: Alomomola
+|-sethp|p1a: Alomomola|300\/534 par|p2a: Banette|300\/329 brn|[from] move: Pain Split
+|cant|p1a: Alomomola|par
+|
+|-heal|p1a: Alomomola|333\/534 par|[from] item: Leftovers
+|-damage|p2a: Banette|259\/329 brn|[from] brn
+|turn|227
+|
+|move|p2a: Banette|Will-O-Wisp|p1a: Alomomola|[miss]
+|-miss|p2a: Banette|p1a: Alomomola
+|move|p1a: Alomomola|Scald|p2a: Banette
+|-damage|p2a: Banette|219\/329 brn
+|
+|-heal|p1a: Alomomola|366\/534 par|[from] item: Leftovers
+|-damage|p2a: Banette|178\/329 brn|[from] brn
+|-end|p1a: Alomomola|move: Taunt
+|turn|228
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Banette|Taunt|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-heal|p1a: Alomomola|399\/534 par|[from] item: Leftovers
+|-damage|p2a: Banette|137\/329 brn|[from] brn
+|turn|229
+|
+|move|p2a: Banette|Taunt|p1a: Alomomola
+|-start|p1a: Alomomola|move: Taunt
+|cant|p1a: Alomomola|move: Taunt|Wish
+|
+|-heal|p1a: Alomomola|432\/534 par|[from] item: Leftovers
+|-damage|p2a: Banette|96\/329 brn|[from] brn
+|turn|230
+|
+|move|p2a: Banette|Pain Split|p1a: Alomomola
+|-sethp|p1a: Alomomola|264\/534 par|p2a: Banette|264\/329 brn|[from] move: Pain Split
+|move|p1a: Alomomola|Scald|p2a: Banette
+|-damage|p2a: Banette|225\/329 brn
+|
+|-heal|p1a: Alomomola|297\/534 par|[from] item: Leftovers
+|-damage|p2a: Banette|184\/329 brn|[from] brn
+|turn|231
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|-damage|p1a: Blissey|625\/714|[from] Stealth Rock
+|move|p2a: Banette|Pain Split|p1a: Blissey
+|-sethp|p1a: Blissey|404\/714|p2a: Banette|329\/329 brn|[from] move: Pain Split
+|
+|-heal|p1a: Blissey|448\/714|[from] item: Leftovers
+|-damage|p2a: Banette|288\/329 brn|[from] brn
+|turn|232
+|join|BadPlays4Days
+|
+|move|p2a: Banette|Taunt|p1a: Blissey
+|-start|p1a: Blissey|move: Taunt
+|cant|p1a: Blissey|move: Taunt|Soft-Boiled
+|
+|-heal|p1a: Blissey|492\/714|[from] item: Leftovers
+|-damage|p2a: Banette|247\/329 brn|[from] brn
+|turn|233
+|
+|switch|p1a: Alomomola|Alomomola, M|475\/534 par
+|-damage|p1a: Alomomola|409\/534 par|[from] Stealth Rock
+|move|p2a: Banette|Will-O-Wisp|p1a: Alomomola
+|-fail|p1a: Alomomola
+|
+|-heal|p1a: Alomomola|442\/534 par|[from] item: Leftovers
+|-damage|p2a: Banette|206\/329 brn|[from] brn
+|turn|234
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Banette|Taunt|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-heal|p1a: Alomomola|475\/534 par|[from] item: Leftovers
+|-damage|p2a: Banette|165\/329 brn|[from] brn
+|turn|235
+|
+|move|p2a: Banette|Taunt|p1a: Alomomola
+|-start|p1a: Alomomola|move: Taunt
+|cant|p1a: Alomomola|move: Taunt|Wish
+|
+|-heal|p1a: Alomomola|508\/534 par|[from] item: Leftovers
+|-damage|p2a: Banette|124\/329 brn|[from] brn
+|turn|236
+|join|lawnforcmntclwns
+|
+|switch|p1a: Gligar|Gligar, F|293\/334
+|-damage|p1a: Gligar|252\/334|[from] Stealth Rock
+|move|p2a: Banette|Pain Split|p1a: Gligar
+|-sethp|p1a: Gligar|188\/334|p2a: Banette|188\/329 brn|[from] move: Pain Split
+|
+|-damage|p2a: Banette|147\/329 brn|[from] brn
+|turn|237
+|join|michael dean major
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|switch|p2a: Cresselia|Cresselia, F|344\/438
+|-damage|p2a: Cresselia|290\/438|[from] Stealth Rock
+|
+|-heal|p1a: Alomomola|501\/534 par|[from] item: Leftovers
+|turn|238
+|
+|switch|p2a: Registeel|Registeel|213\/364
+|-damage|p2a: Registeel|191\/364|[from] Stealth Rock
+|cant|p1a: Alomomola|par
+|
+|-heal|p2a: Registeel|213\/364|[from] item: Leftovers
+|-heal|p1a: Alomomola|534\/534 par|[from] item: Leftovers
+|turn|239
+|
+|switch|p1a: Gligar|Gligar, F|188\/334
+|-damage|p1a: Gligar|147\/334|[from] Stealth Rock
+|move|p2a: Registeel|Thunder Wave|p1a: Gligar
+|-immune|p1a: Gligar|[msg]
+|
+|-heal|p2a: Registeel|235\/364|[from] item: Leftovers
+|turn|240
+|
+|switch|p2a: Cresselia|Cresselia, F|290\/438
+|-damage|p2a: Cresselia|236\/438|[from] Stealth Rock
+|move|p1a: Gligar|Roost|p1a: Gligar
+|-heal|p1a: Gligar|314\/334
+|
+|turn|241
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534 par
+|-damage|p1a: Alomomola|468\/534 par|[from] Stealth Rock
+|move|p2a: Cresselia|Toxic|p1a: Alomomola
+|-fail|p1a: Alomomola
+|
+|-heal|p1a: Alomomola|501\/534 par|[from] item: Leftovers
+|turn|242
+|
+|switch|p2a: Registeel|Registeel|235\/364
+|-damage|p2a: Registeel|213\/364|[from] Stealth Rock
+|switch|p1a: Gligar|Gligar, F|314\/334
+|-damage|p1a: Gligar|273\/334|[from] Stealth Rock
+|
+|-heal|p2a: Registeel|235\/364|[from] item: Leftovers
+|turn|243
+|join|rdj
+|
+|switch|p2a: Cresselia|Cresselia, F|236\/438
+|-damage|p2a: Cresselia|182\/438|[from] Stealth Rock
+|move|p1a: Gligar|Knock Off|p2a: Cresselia
+|-supereffective|p2a: Cresselia
+|-damage|p2a: Cresselia|134\/438
+|
+|turn|244
+|
+|switch|p1a: Blissey|Blissey, F|492\/714
+|-damage|p1a: Blissey|403\/714|[from] Stealth Rock
+|move|p2a: Cresselia|Moonlight|p2a: Cresselia
+|-heal|p2a: Cresselia|353\/438
+|
+|-heal|p1a: Blissey|447\/714|[from] item: Leftovers
+|turn|245
+|
+|switch|p2a: Banette|Banette-Mega, F|147\/329 brn
+|-damage|p2a: Banette|106\/329 brn|[from] Stealth Rock
+|switch|p1a: Gligar|Gligar, F|273\/334
+|-damage|p1a: G

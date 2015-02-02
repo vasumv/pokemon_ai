@@ -1,0 +1,388 @@
+|join|tigers
+|join|FlintDjinn
+|player|p1|tigers|170
+|player|p2|FlintDjinn|1
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Hippowdon, F
+|poke|p1|Celebi
+|poke|p1|Slowbro, F
+|poke|p1|Heatran, M, shiny
+|poke|p1|Garchomp, F
+|poke|p1|Forretress, F
+|poke|p2|Politoed, M
+|poke|p2|Tornadus-Therian, M
+|poke|p2|Roserade, F
+|poke|p2|Jirachi
+|poke|p2|Thundurus-Therian, M
+|poke|p2|Scizor, F
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Peter Pan|Celebi| (100\/100)
+|switch|p2a: Roserade|Roserade, F| (100\/100)
+|turn|1
+|callback|decision
+|
+|switch|p1a: Forrrt Knox|Forretress, F| (100\/100)
+|move|p2a: Roserade|Spikes|p1a: Forrrt Knox
+|-sidestart|p1: tigers|Spikes
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M| (100\/100)
+|move|p1a: Forrrt Knox|Spikes|p2a: Tornadus-Therian
+|-sidestart|p2: FlintDjinn|Spikes
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Tornadus-Therian|Taunt|p1a: Forrrt Knox
+|-start|p1a: Forrrt Knox|move: Taunt
+|move|p1a: Forrrt Knox|Rapid Spin|p2a: Tornadus-Therian
+|-damage|p2a: Tornadus-Therian|6 (94\/100)
+|-sideend|p1: tigers|Spikes|[from] move: Rapid Spin|[of] p1a: Forrrt Knox
+|
+|turn|4
+|callback|decision
+|
+|switch|p1a: HappyHippo|Hippowdon, F| (100\/100)
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: HappyHippo
+|move|p2a: Tornadus-Therian|U-turn|p1a: HappyHippo
+|-damage|p1a: HappyHippo|12 (88\/100)
+|-damage|p2a: Tornadus-Therian|10 (85\/100)|[from] item: Life Orb
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, M| (100\/100)
+|-damage|p2a: Politoed|13 (88\/100)|[from] Spikes
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|6 (94\/100)|[from] item: Leftovers
+|-heal|p1a: HappyHippo|6 (94\/100)|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, F| (100\/100)
+|-damage|p2a: Scizor|12 (88\/100)|[from] Spikes
+|switch|p1a: Peter Pan|Celebi| (100\/100)
+|
+|-weather|RainDance|[upkeep]
+|turn|6
+|callback|decision
+|
+|move|p2a: Scizor|Pursuit|p1a: Peter Pan|[from]Pursuit
+|-supereffective|p1a: Peter Pan
+|-damage|p1a: Peter Pan|77 (23\/100)
+|switch|p1a: PePPeroni|Heatran, M, shiny| (100\/100)
+|
+|-weather|RainDance|[upkeep]
+|turn|7
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, M| (94\/100)
+|-damage|p2a: Politoed|13 (81\/100)|[from] Spikes
+|move|p1a: PePPeroni|Stealth Rock|p2a: Politoed
+|-sidestart|p2: FlintDjinn|move: Stealth Rock
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|6 (88\/100)|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p1a: Peter Pan|Celebi| (23\/100)
+|switch|p2a: Jirachi|Jirachi| (100\/100)
+|-damage|p2a: Jirachi|6 (94\/100)|[from] Stealth Rock
+|-damage|p2a: Jirachi|12 (82\/100)|[from] Spikes
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Peter Pan|6 (29\/100)|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p2a: Jirachi|Ice Punch|p1a: Peter Pan
+|-supereffective|p1a: Peter Pan
+|-damage|p1a: Peter Pan|29 (0\/100 fnt)
+|faint|p1a: Peter Pan
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Lightning|Slowbro, F| (100\/100)
+|turn|10
+|callback|decision
+|
+|switch|p2a: Roserade|Roserade, F| (100\/100)
+|-damage|p2a: Roserade|12 (88\/100)|[from] Spikes
+|-damage|p2a: Roserade|12 (75\/100)|[from] Stealth Rock
+|move|p1a: Lightning|Thunder Wave|p2a: Roserade
+|-status|p2a: Roserade|par
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Roserade|6 (81\/100 par)|[from] item: Black Sludge
+|turn|11
+|callback|decision
+|
+|switch|p1a: Forrrt Knox|Forretress, F| (100\/100)
+|switch|p2a: Jirachi|Jirachi| (82\/100)
+|-damage|p2a: Jirachi|6 (75\/100)|[from] Stealth Rock
+|-damage|p2a: Jirachi|12 (63\/100)|[from] Spikes
+|
+|-weather|RainDance|[upkeep]
+|turn|12
+|callback|decision
+|
+|move|p2a: Jirachi|Trick|p1a: Forrrt Knox
+|-activate|p2a: Jirachi|move: Trick|[of] p1a: Forrrt Knox
+|-item|p1a: Forrrt Knox|Choice Scarf|[from] move: Trick
+|-item|p2a: Jirachi|Leftovers|[from] move: Trick
+|move|p1a: Forrrt Knox|Spikes|p2a: Jirachi
+|-sidestart|p2: FlintDjinn|Spikes
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Jirachi|6 (69\/100)|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p1a: HappyHippo|Hippowdon, F| (94\/100)
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: HappyHippo
+|move|p2a: Jirachi|Stealth Rock|p1a: HappyHippo
+|-sidestart|p1: tigers|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Jirachi|6 (75\/100)|[from] item: Leftovers
+|-heal|p1a: HappyHippo|6 (100\/100)|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p2a: Roserade|Roserade, F| (81\/100)
+|-damage|p2a: Roserade|17 (65\/100)|[from] Spikes
+|-damage|p2a: Roserade|12 (52\/100)|[from] Stealth Rock
+|move|p1a: HappyHippo|Earthquake|p2a: Roserade
+|-damage|p2a: Roserade|52 (0\/100 fnt)
+|faint|p2a: Roserade
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, M| (88\/100)
+|-damage|p2a: Politoed|13 (75\/100)|[from] Stealth Rock
+|-damage|p2a: Politoed|17 (58\/100)|[from] Spikes
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|turn|15
+|callback|decision
+|
+|switch|p1a: Lightning|Slowbro, F| (100\/100)
+|-damage|p1a: Lightning|12 (88\/100)|[from] Stealth Rock
+|move|p2a: Politoed|Scald|p1a: Lightning
+|-resisted|p1a: Lightning
+|-damage|p1a: Lightning|17 (70\/100)
+|-status|p1a: Lightning|brn
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|6 (65\/100)|[from] item: Leftovers
+|-heal|p1a: Lightning|6 (76\/100 brn)|[from] item: Leftovers
+|-damage|p1a: Lightning|12 (64\/100 brn)|[from] brn
+|turn|16
+|callback|decision
+|
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M| (100\/100)
+|-damage|p2a: Thundurus-Therian|25 (75\/100)|[from] Stealth Rock
+|move|p1a: Lightning|Thunder Wave|p2a: Thundurus-Therian
+|-heal|p2a: Thundurus-Therian|75 (100\/100)|[from] ability: Volt Absorb
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Lightning|6 (70\/100 brn)|[from] item: Leftovers
+|-damage|p1a: Lightning|12 (58\/100 brn)|[from] brn
+|turn|17
+|callback|decision
+|
+|switch|p1a: HappyHippo|Hippowdon, F| (100\/100)
+|-damage|p1a: HappyHippo|6 (94\/100)|[from] Stealth Rock
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: HappyHippo
+|move|p2a: Thundurus-Therian|Hidden Power|p1a: HappyHippo
+|-supereffective|p1a: HappyHippo
+|-damage|p1a: HappyHippo|52 (42\/100)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Thundurus-Therian|6 (94\/100)|[from] sandstorm
+|-heal|p2a: Thundurus-Therian|6 (100\/100)|[from] item: Leftovers
+|-heal|p1a: HappyHippo|6 (48\/100)|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|switch|p1a: PePPeroni|Heatran, M, shiny| (100\/100)
+|-damage|p1a: PePPeroni|12 (88\/100)|[from] Stealth Rock
+|move|p2a: Thundurus-Therian|Focus Blast|p1a: PePPeroni
+|-supereffective|p1a: PePPeroni
+|-damage|p1a: PePPeroni|58 (30\/100)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Thundurus-Therian|6 (94\/100)|[from] sandstorm
+|-heal|p2a: Thundurus-Therian|6 (100\/100)|[from] item: Leftovers
+|-heal|p1a: PePPeroni|6 (36\/100)|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|switch|p1a: Forrrt Knox|Forretress, F| (100\/100)
+|-damage|p1a: Forrrt Knox|12 (88\/100)|[from] Stealth Rock
+|move|p2a: Thundurus-Therian|Thunderbolt|p1a: Forrrt Knox
+|-damage|p1a: Forrrt Knox|59 (28\/100)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Thundurus-Therian|6 (94\/100)|[from] sandstorm
+|-heal|p2a: Thundurus-Therian|6 (100\/100)|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p2a: Thundurus-Therian|Thunderbolt|p1a: Forrrt Knox
+|-damage|p1a: Forrrt Knox|28 (0\/100 fnt)
+|faint|p1a: Forrrt Knox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Thundurus-Therian|6 (94\/100)|[from] sandstorm
+|-heal|p2a: Thundurus-Therian|6 (100\/100)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: enter sandmann|Garchomp, F| (100\/100)
+|-damage|p1a: enter sandmann|6 (94\/100)|[from] Stealth Rock
+|turn|21
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi| (75\/100)
+|-damage|p2a: Jirachi|16 (59\/100)|[from] Spikes
+|-damage|p2a: Jirachi|6 (53\/100)|[from] Stealth Rock
+|move|p1a: enter sandmann|Outrage|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|37 (16\/100)
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Jirachi|6 (22\/100)|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p1a: enter sandmann|Outrage|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|22 (0\/100 fnt)
+|faint|p2a: Jirachi
+|
+|-end|p1a: enter sandmann|rampage
+|-start|p1a: enter sandmann|confusion
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|join|BDH93
+|leave|BDH93
+|
+|switch|p2a: Scizor|Scizor, F| (88\/100)
+|-damage|p2a: Scizor|12 (75\/100)|[from] Stealth Rock
+|-damage|p2a: Scizor|16 (59\/100)|[from] Spikes
+|turn|23
+|callback|decision
+|
+|switch|p1a: PePPeroni|Heatran, M, shiny| (36\/100)
+|-damage|p1a: PePPeroni|12 (24\/100)|[from] Stealth Rock
+|move|p2a: Scizor|U-turn|p1a: PePPeroni
+|-resisted|p1a: PePPeroni
+|-damage|p1a: PePPeroni|10 (13\/100)
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, M| (65\/100)
+|-damage|p2a: Politoed|17 (48\/100)|[from] Spikes
+|-damage|p2a: Politoed|13 (35\/100)|[from] Stealth Rock
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: PePPeroni|6 (20\/100)|[from] item: Leftovers
+|-heal|p2a: Politoed|6 (42\/100)|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M| (100\/100)
+|-damage|p2a: Thundurus-Therian|25 (75\/100)|[from] Stealth Rock
+|move|p1a: PePPeroni|Flamethrower|p2a: Thundurus-Therian
+|-damage|p2a: Thundurus-Therian|30 (45\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Thundurus-Therian|6 (51\/100)|[from] item: Leftovers
+|-heal|p1a: PePPeroni|6 (26\/100)|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p2a: Thundurus-Therian|Agility|p2a: Thundurus-Therian
+|-boost|p2a: Thundurus-Therian|spe|2
+|move|p1a: PePPeroni|Flamethrower|p2a: Thundurus-Therian
+|-damage|p2a: Thundurus-Therian|27 (24\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Thundurus-Therian|6 (30\/100)|[from] item: Leftovers
+|-heal|p1a: PePPeroni|6 (32\/100)|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|move|p2a: Thundurus-Therian|Thunderbolt|p1a: PePPeroni
+|-crit|p1a: PePPeroni
+|-damage|p1a: PePPeroni|32 (0\/100 fnt)
+|faint|p1a: PePPeroni
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Thundurus-Therian|6 (36\/100)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Lightning|Slowbro, F| (91\/100 brn)
+|-damage|p1a: Lightning|12 (78\/100 brn)|[from] Stealth Rock
+|turn|27
+|callback|decision
+|
+|move|p2a: Thundurus-Therian|Thunderbolt|p1a: Lightning
+|-supereffective|p1a: Lightning
+|-damage|p1a: Lightning|78 (0\/100 fnt)
+|faint|p1a: Lightning
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Thundurus-Therian|6 (42\/100)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: enter sandmann|Garchomp, F| (94\/100)
+|-damage|p1a: enter sandmann|6 (88\/100)|[from] Stealth Rock
+|turn|28
+|callback|decision
+|
+|move|p2a: Thundurus-Therian|Hidden Power|p1a: enter sandmann
+|-supereffective|p1a: enter sandmann
+|-damage|p1a: enter sandmann|88 (0\/100 fnt)
+|faint|p1a: enter sandmann
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Thundurus-Therian|6 (48\/100)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: HappyHippo|Hippowdon, F| (48\/100)
+|-damage|p1a: HappyHippo|6 (42\/100)|[from] Stealth Rock
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: HappyHippo
+|turn|29
+|callback|decision
+|
+|move|p2a: Thundurus-Therian|Hidden Power|p1a: HappyHippo
+|-supereffective|p1a: HappyHippo
+|-damage|p1a: HappyHippo|42 (0\/100 fnt)
+|faint|p1a: HappyHippo
+|
+|win|FlintDjinn
+|chatmsg-raw|Ladder updating...
+|raw|tigers's rating: 1596 &rarr; <strong>1591<\/strong><br \/>(-5 for losing)
+|raw|FlintDjinn's rating: 1651 &rarr; <strong>1661<\/strong><br \/>(+10 for winning)
+|chat|FlintDjinn|gg
+|player|p1
+|chat|tigers|really gg
+|chat|tigers|you predicted me totally out :(
+|chat|FlintDjinn|had the prediction pants on.

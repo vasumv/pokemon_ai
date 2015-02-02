@@ -1,0 +1,174 @@
+|join|Rolypoly89
+|join|reachzero
+|player|p1|Rolypoly89|260
+|player|p2|reachzero|15
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|clearpoke
+|poke|p1|Hitmontop, M
+|poke|p1|Scrafty, F
+|poke|p1|Zoroark, M
+|poke|p1|Galvantula, F
+|poke|p1|Tornadus-Therian, M
+|poke|p1|Smeargle, F
+|poke|p2|Aggron, F, shiny
+|poke|p2|Thundurus-Therian, M
+|poke|p2|Gardevoir, F, shiny
+|poke|p2|Mew, shiny
+|poke|p2|Arcanine, F, shiny
+|poke|p2|Kyurem, shiny
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Smeargle|Smeargle, F|261\/261
+|switch|p2a: Kyurem|Kyurem, shiny|441\/441
+|-ability|p2a: Kyurem|Pressure
+|turn|1
+|
+|move|p1a: Smeargle|Trick|p2a: Kyurem
+|-activate|p1a: Smeargle|move: Trick|[of] p2a: Kyurem
+|-item|p2a: Kyurem|Choice Scarf|[from] move: Trick
+|-item|p1a: Smeargle|Life Orb|[from] move: Trick
+|move|p2a: Kyurem|Iron Head|p1a: Smeargle
+|replace|p1a: Zoroark|Zoroark, M|261\/261
+|-damage|p1a: Zoroark|140\/261
+|
+|turn|2
+|
+|move|p2a: Kyurem|Iron Head|p1a: Zoroark
+|-damage|p1a: Zoroark|21\/261
+|move|p1a: Zoroark|Flamethrower|p2a: Kyurem
+|-crit|p2a: Kyurem
+|-damage|p2a: Kyurem|212\/441
+|-damage|p1a: Zoroark|0 fnt|[from] item: Life Orb
+|faint|p1a: Zoroark
+|
+|
+|switch|p1a: Smeargle|Smeargle, F|314\/314
+|turn|3
+|
+|switch|p1a: Galvantula|Galvantula, F|281\/281
+|move|p2a: Kyurem|Iron Head|p1a: Galvantula
+|-resisted|p1a: Galvantula
+|-damage|p1a: Galvantula|219\/281
+|
+|turn|4
+|
+|switch|p2a: Arcanine|Arcanine, F, shiny|383\/383
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Galvantula
+|-unboost|p1a: Galvantula|atk|1
+|move|p1a: Galvantula|Sticky Web|p2a: Arcanine
+|-sidestart|p2: reachzero|move: Sticky Web
+|
+|turn|5
+|
+|move|p1a: Galvantula|Thunderbolt|p2a: Arcanine
+|-damage|p2a: Arcanine|238\/383
+|move|p2a: Arcanine|Flamethrower|p1a: Galvantula
+|-supereffective|p1a: Galvantula
+|-damage|p1a: Galvantula|0 fnt
+|faint|p1a: Galvantula
+|
+|-heal|p2a: Arcanine|261\/383|[from] item: Leftovers
+|
+|switch|p1a: Smeargle|Smeargle, F|314\/314
+|turn|6
+|
+|move|p1a: Smeargle|Spore|p2a: Arcanine
+|-status|p2a: Arcanine|slp
+|cant|p2a: Arcanine|slp
+|
+|-heal|p2a: Arcanine|284\/383 slp|[from] item: Leftovers
+|turn|7
+|
+|switch|p2a: Mew|Mew, shiny|404\/404
+|-activate|p2a: Mew|move: Sticky Web
+|-unboost|p2a: Mew|spe|1
+|move|p1a: Smeargle|Belly Drum|p1a: Smeargle
+|-damage|p1a: Smeargle|157\/314
+|-setboost|p1a: Smeargle|atk|6|[from] move: Belly Drum
+|
+|turn|8
+|
+|move|p1a: Smeargle|Baton Pass|p1a: Smeargle
+|
+|switch|p1a: Scrafty|Scrafty, F|271\/271
+|move|p2a: Mew|Will-O-Wisp|p1a: Scrafty
+|-status|p1a: Scrafty|brn
+|-enditem|p1a: Scrafty|Lum Berry|[eat]
+|-curestatus|p1a: Scrafty|brn
+|
+|turn|9
+|
+|move|p1a: Scrafty|Knock Off|p2a: Mew
+|-supereffective|p2a: Mew
+|-damage|p2a: Mew|0 fnt
+|faint|p2a: Mew
+|
+|
+|switch|p2a: Gardevoir|Gardevoir, F, shiny|340\/340
+|-activate|p2a: Gardevoir|move: Sticky Web
+|-unboost|p2a: Gardevoir|spe|1
+|-ability|p2a: Gardevoir|Moxie|[from] ability: Trace|[of] p1a: Scrafty
+|turn|10
+|
+|move|p1a: Scrafty|Poison Jab|p2a: Gardevoir
+|-supereffective|p2a: Gardevoir
+|-damage|p2a: Gardevoir|0 fnt
+|faint|p2a: Gardevoir
+|
+|
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M|299\/299
+|turn|11
+|
+|move|p2a: Thundurus-Therian|Thunderbolt|p1a: Scrafty
+|-damage|p1a: Scrafty|115\/271
+|move|p1a: Scrafty|Knock Off|p2a: Thundurus-Therian
+|-damage|p2a: Thundurus-Therian|0 fnt
+|faint|p2a: Thundurus-Therian
+|
+|
+|switch|p2a: Arcanine|Arcanine, F, shiny|284\/383 slp
+|-activate|p2a: Arcanine|move: Sticky Web
+|-unboost|p2a: Arcanine|spe|1
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Scrafty
+|-unboost|p1a: Scrafty|atk|1
+|turn|12
+|
+|move|p1a: Scrafty|Drain Punch|p2a: Arcanine
+|-damage|p2a: Arcanine|0 fnt
+|-heal|p1a: Scrafty|257\/271|[from] drain|[of] p2a: Arcanine
+|faint|p2a: Arcanine
+|-boost|p1a: Scrafty|atk|1|[from] ability: Moxie
+|
+|
+|switch|p2a: Kyurem|Kyurem, shiny|212\/441
+|-activate|p2a: Kyurem|move: Sticky Web
+|-unboost|p2a: Kyurem|spe|1
+|-ability|p2a: Kyurem|Pressure
+|turn|13
+|
+|move|p2a: Kyurem|Draco Meteor|p1a: Scrafty
+|-damage|p1a: Scrafty|26\/271
+|-unboost|p2a: Kyurem|spa|2
+|move|p1a: Scrafty|Drain Punch|p2a: Kyurem
+|-supereffective|p2a: Kyurem
+|-damage|p2a: Kyurem|0 fnt
+|-heal|p1a: Scrafty|132\/271|[from] drain|[of] p2a: Kyurem
+|faint|p2a: Kyurem
+|
+|-message|reachzero forfeited.
+|
+|win|Rolypoly89
+|raw|Ladder updating...
+|leave|reachzero
+|player|p2

@@ -1,0 +1,513 @@
+|join|yuricon
+|join|Eckleburg
+|player|p1|yuricon|2
+|player|p2|Eckleburg|281
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Azelf
+|poke|p1|Blastoise, M
+|poke|p1|Porygon2
+|poke|p1|Jirachi
+|poke|p1|Gorebyss, F
+|poke|p1|Florges, F
+|poke|p2|Froslass, F
+|poke|p2|Noivern, M
+|poke|p2|Arcanine, F
+|poke|p2|Milotic, F
+|poke|p2|Chesnaught, M
+|poke|p2|Aggron, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Azelf|Azelf|354\/354
+|switch|p2a: Noeud|Froslass, F|282\/282
+|turn|1
+|c|âyuricon|gl hf
+|c|âEckleburg|gl hf
+|
+|switch|p2a: Bruit|Noivern, M|312\/312
+|move|p1a: Azelf|Taunt|p2a: Bruit
+|-start|p2a: Bruit|move: Taunt
+|
+|turn|2
+|
+|move|p2a: Bruit|Shadow Ball|p1a: Azelf
+|-supereffective|p1a: Azelf
+|-damage|p1a: Azelf|30\/354
+|move|p1a: Azelf|Light Screen|p1a: Azelf
+|-sidestart|p1: yuricon|move: Light Screen
+|
+|turn|3
+|
+|move|p2a: Bruit|Shadow Ball|p1a: Azelf
+|-supereffective|p1a: Azelf
+|-damage|p1a: Azelf|0 fnt
+|faint|p1a: Azelf
+|
+|
+|switch|p1a: Gorebyss|Gorebyss, F|314\/314
+|turn|4
+|
+|switch|p2a: Belle|Milotic, F|394\/394
+|move|p1a: Gorebyss|Shell Smash|p1a: Gorebyss
+|-boost|p1a: Gorebyss|atk|2
+|-boost|p1a: Gorebyss|spa|2
+|-boost|p1a: Gorebyss|spe|2
+|-unboost|p1a: Gorebyss|def|1
+|-unboost|p1a: Gorebyss|spd|1
+|-enditem|p1a: Gorebyss|White Herb
+|-restoreboost|p1a: Gorebyss|[silent]
+|
+|turn|5
+|
+|move|p1a: Gorebyss|Ice Beam|p2a: Belle
+|-resisted|p2a: Belle
+|-damage|p2a: Belle|344\/394
+|move|p2a: Belle|Dragon Tail|p1a: Gorebyss
+|-damage|p1a: Gorebyss|293\/314
+|drag|p1a: Blastoise|Blastoise, M|356\/356
+|
+|-heal|p2a: Belle|368\/394|[from] item: Leftovers
+|turn|6
+|
+|detailschange|p1a: Blastoise|Blastoise-Mega, M
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p1a: Blastoise|Water Spout|p2a: Belle
+|-resisted|p2a: Belle
+|-damage|p2a: Belle|271\/394
+|move|p2a: Belle|Scald|p1a: Blastoise
+|-resisted|p1a: Blastoise
+|-damage|p1a: Blastoise|336\/356
+|
+|-heal|p2a: Belle|295\/394|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Belle|Scald|p1a: Florges
+|-crit|p1a: Florges
+|-damage|p1a: Florges|255\/360
+|
+|-heal|p2a: Belle|319\/394|[from] item: Leftovers
+|-heal|p1a: Florges|277\/360|[from] item: Leftovers
+|turn|8
+|
+|switch|p2a: Fer|Aggron, F|344\/344
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p1a: Florges|299\/360|[from] item: Leftovers
+|turn|9
+|
+|switch|p1a: Gorebyss|Gorebyss, F|293\/314
+|detailschange|p2a: Fer|Aggron-Mega, F
+|message|Aggron has Mega Evolved into Mega Aggron!
+|move|p2a: Fer|Thunder Wave|p1a: Gorebyss
+|-status|p1a: Gorebyss|par
+|
+|-heal|p1a: Gorebyss|314\/314 par|[from] move: Wish|[wisher] Florges
+|-sideend|p1: yuricon|move: Light Screen
+|turn|10
+|
+|move|p2a: Fer|Stealth Rock|p1a: Gorebyss
+|-sidestart|p1: yuricon|move: Stealth Rock
+|move|p1a: Gorebyss|Shell Smash|p1a: Gorebyss
+|-boost|p1a: Gorebyss|atk|2
+|-boost|p1a: Gorebyss|spa|2
+|-boost|p1a: Gorebyss|spe|2
+|-unboost|p1a: Gorebyss|def|1
+|-unboost|p1a: Gorebyss|spd|1
+|
+|turn|11
+|
+|move|p2a: Fer|Thunder Wave|p1a: Gorebyss
+|-fail|p1a: Gorebyss|par
+|move|p1a: Gorebyss|Baton Pass|p1a: Gorebyss
+|
+|switch|p1a: Porygon2|Porygon2|326\/326
+|-damage|p1a: Porygon2|286\/326|[from] Stealth Rock
+|-boost|p1a: Porygon2|spa|1|[from] ability: Download
+|
+|turn|12
+|
+|move|p1a: Porygon2|Thunderbolt|p2a: Fer
+|-damage|p2a: Fer|138\/344
+|move|p2a: Fer|Thunder Wave|p1a: Porygon2
+|-status|p1a: Porygon2|par
+|
+|turn|13
+|
+|move|p2a: Fer|Heavy Slam|p1a: Porygon2
+|-damage|p1a: Porygon2|84\/326 par
+|move|p1a: Porygon2|Thunderbolt|p2a: Fer
+|-damage|p2a: Fer|0 fnt
+|faint|p2a: Fer
+|
+|
+|switch|p2a: Noeud|Froslass, F|282\/282
+|turn|14
+|
+|move|p2a: Noeud|Ice Beam|p1a: Porygon2
+|-damage|p1a: Porygon2|0 fnt
+|faint|p1a: Porygon2
+|
+|
+|switch|p1a: Gorebyss|Gorebyss, F|314\/314 par
+|-damage|p1a: Gorebyss|275\/314 par|[from] Stealth Rock
+|turn|15
+|
+|move|p2a: Noeud|Taunt|p1a: Gorebyss
+|-start|p1a: Gorebyss|move: Taunt
+|cant|p1a: Gorebyss|move: Taunt|Shell Smash
+|
+|turn|16
+|
+|switch|p1a: Florges|Florges, F|299\/360
+|-damage|p1a: Florges|254\/360|[from] Stealth Rock
+|move|p2a: Noeud|Spikes|p1a: Florges
+|-sidestart|p1: yuricon|Spikes
+|
+|-heal|p1a: Florges|276\/360|[from] item: Leftovers
+|turn|17
+|
+|move|p2a: Noeud|Spikes|p1a: Florges
+|-sidestart|p1: yuricon|Spikes
+|move|p1a: Florges|Toxic|p2a: Noeud
+|-status|p2a: Noeud|tox
+|
+|-heal|p1a: Florges|298\/360|[from] item: Leftovers
+|-damage|p2a: Noeud|265\/282 tox|[from] psn
+|turn|18
+|
+|move|p2a: Noeud|Spikes|p1a: Florges
+|-sidestart|p1: yuricon|Spikes
+|move|p1a: Florges|Moonblast|p2a: Noeud
+|-damage|p2a: Noeud|112\/282 tox
+|
+|-heal|p1a: Florges|320\/360|[from] item: Leftovers
+|-damage|p2a: Noeud|78\/282 tox|[from] psn
+|turn|19
+|
+|move|p2a: Noeud|Destiny Bond|p2a: Noeud
+|-singlemove|p2a: Noeud|Destiny Bond
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p1a: Florges|342\/360|[from] item: Leftovers
+|-damage|p2a: Noeud|27\/282 tox|[from] psn
+|turn|20
+|
+|switch|p2a: Chasse|Arcanine, F|322\/322
+|-ability|p2a: Chasse|Intimidate|[of] p1a: Florges
+|-unboost|p1a: Florges|atk|1
+|move|p1a: Florges|Toxic|p2a: Chasse
+|-status|p2a: Chasse|tox
+|
+|-heal|p1a: Florges|360\/360|[from] move: Wish|[wisher] Florges
+|-damage|p2a: Chasse|302\/322 tox|[from] psn
+|turn|21
+|
+|move|p2a: Chasse|Flare Blitz|p1a: Florges
+|-damage|p1a: Florges|114\/360
+|-damage|p2a: Chasse|221\/322 tox|[from] recoil|[of] p1a: Florges
+|-damage|p2a: Chasse|189\/322 tox|[from] item: Life Orb
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p1a: Florges|136\/360|[from] item: Leftovers
+|-damage|p2a: Chasse|149\/322 tox|[from] psn
+|turn|22
+|
+|switch|p2a: Belle|Milotic, F|319\/394
+|move|p1a: Florges|Protect|p1a: Florges
+|-fail|p1a: Florges
+|
+|-heal|p1a: Florges|316\/360|[from] move: Wish|[wisher] Florges
+|-heal|p2a: Belle|343\/394|[from] item: Leftovers
+|-heal|p1a: Florges|338\/360|[from] item: Leftovers
+|turn|23
+|
+|switch|p2a: Noeud|Froslass, F|27\/282 tox
+|move|p1a: Florges|Toxic|p2a: Noeud
+|-fail|p2a: Noeud|tox
+|
+|-heal|p1a: Florges|360\/360|[from] item: Leftovers
+|-damage|p2a: Noeud|10\/282 tox|[from] psn
+|turn|24
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Noeud|Taunt|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-damage|p2a: Noeud|0 fnt|[from] psn
+|faint|p2a: Noeud
+|
+|switch|p2a: Chasse|Arcanine, F|149\/322 tox
+|-ability|p2a: Chasse|Intimidate|[of] p1a: Florges
+|-unboost|p1a: Florges|atk|1
+|turn|25
+|
+|move|p2a: Chasse|Flare Blitz|p1a: Florges
+|-damage|p1a: Florges|133\/360
+|-damage|p2a: Chasse|74\/322 tox|[from] recoil|[of] p1a: Florges
+|-damage|p2a: Chasse|42\/322 tox|[from] item: Life Orb
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p1a: Florges|155\/360|[from] item: Leftovers
+|-damage|p2a: Chasse|22\/322 tox|[from] psn
+|turn|26
+|
+|switch|p2a: Bruit|Noivern, M|312\/312
+|move|p1a: Florges|Protect|p1a: Florges
+|-fail|p1a: Florges
+|
+|-heal|p1a: Florges|335\/360|[from] move: Wish|[wisher] Florges
+|-heal|p1a: Florges|357\/360|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Bruit|Switcheroo|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-heal|p1a: Florges|360\/360|[from] item: Leftovers
+|turn|28
+|
+|switch|p2a: Chasse|Arcanine, F|22\/322 tox
+|-ability|p2a: Chasse|Intimidate|[of] p1a: Florges
+|-unboost|p1a: Florges|atk|1
+|switch|p1a: Gorebyss|Gorebyss, F|275\/314 par
+|-damage|p1a: Gorebyss|197\/314 par|[from] Spikes
+|-damage|p1a: Gorebyss|158\/314 par|[from] Stealth Rock
+|
+|-damage|p2a: Chasse|2\/322 tox|[from] psn
+|turn|29
+|
+|move|p2a: Chasse|Flare Blitz|p1a: Gorebyss
+|-resisted|p1a: Gorebyss
+|-damage|p1a: Gorebyss|35\/314 par
+|-damage|p2a: Chasse|0 fnt|[from] recoil|[of] p1a: Gorebyss
+|faint|p2a: Chasse
+|cant|p1a: Gorebyss|par
+|
+|
+|switch|p2a: Char|Chesnaught, M|380\/380
+|turn|30
+|
+|move|p2a: Char|Wood Hammer|p1a: Gorebyss
+|-supereffective|p1a: Gorebyss
+|-damage|p1a: Gorebyss|0 fnt
+|-damage|p2a: Char|368\/380|[from] recoil|[of] p1a: Gorebyss
+|faint|p1a: Gorebyss
+|
+|-heal|p2a: Char|380\/380|[from] item: Leftovers
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|-damage|p1a: Florges|315\/360|[from] Stealth Rock
+|-damage|p1a: Florges|225\/360|[from] Spikes
+|turn|31
+|
+|switch|p2a: Bruit|Noivern, M|312\/312
+|move|p1a: Florges|Moonblast|p2a: Bruit
+|-supereffective|p2a: Bruit
+|-damage|p2a: Bruit|18\/312
+|-unboost|p2a: Bruit|spa|1
+|
+|-heal|p1a: Florges|247\/360|[from] item: Leftovers
+|turn|32
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Bruit|Air Slash|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-heal|p1a: Florges|269\/360|[from] item: Leftovers
+|turn|33
+|
+|switch|p1a: Blastoise|Blastoise-Mega, M|336\/356
+|-damage|p1a: Blastoise|292\/356|[from] Stealth Rock
+|-damage|p1a: Blastoise|203\/356|[from] Spikes
+|move|p2a: Bruit|Air Slash|p1a: Blastoise
+|-damage|p1a: Blastoise|100\/356
+|
+|turn|34
+|
+|move|p2a: Bruit|Air Slash|p1a: Blastoise
+|-damage|p1a: Blastoise|0 fnt
+|faint|p1a: Blastoise
+|
+|
+|switch|p1a: Florges|Florges, F|269\/360
+|-damage|p1a: Florges|224\/360|[from] Stealth Rock
+|-damage|p1a: Florges|134\/360|[from] Spikes
+|turn|35
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Bruit|Air Slash|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-heal|p1a: Florges|156\/360|[from] item: Leftovers
+|turn|36
+|
+|move|p2a: Bruit|Air Slash|p1a: Florges
+|-damage|p1a: Florges|75\/360
+|cant|p1a: Florges|flinch
+|
+|-heal|p1a: Florges|97\/360|[from] item: Leftovers
+|turn|37
+|
+|move|p2a: Bruit|Air Slash|p1a: Florges
+|-damage|p1a: Florges|19\/360
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p1a: Florges|41\/360|[from] item: Leftovers
+|turn|38
+|
+|switch|p2a: Belle|Milotic, F|343\/394
+|move|p1a: Florges|Protect|p1a: Florges
+|-fail|p1a: Florges
+|
+|-heal|p1a: Florges|221\/360|[from] move: Wish|[wisher] Florges
+|-heal|p2a: Belle|367\/394|[from] item: Leftovers
+|-heal|p1a: Florges|243\/360|[from] item: Leftovers
+|turn|39
+|
+|move|p2a: Belle|Scald|p1a: Florges
+|-damage|p1a: Florges|173\/360
+|move|p1a: Florges|Toxic|p2a: Belle|[miss]
+|-miss|p1a: Florges|p2a: Belle
+|
+|-heal|p2a: Belle|391\/394|[from] item: Leftovers
+|-heal|p1a: Florges|195\/360|[from] item: Leftovers
+|turn|40
+|
+|move|p2a: Belle|Scald|p1a: Florges
+|-damage|p1a: Florges|132\/360
+|move|p1a: Florges|Toxic|p2a: Belle
+|-status|p2a: Belle|tox
+|
+|-heal|p2a: Belle|394\/394 tox|[from] item: Leftovers
+|-heal|p1a: Florges|154\/360|[from] item: Leftovers
+|-damage|p2a: Belle|370\/394 tox|[from] psn
+|turn|41
+|
+|move|p2a: Belle|Scald|p1a: Florges
+|-damage|p1a: Florges|85\/360
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p2a: Belle|394\/394 tox|[from] item: Leftovers
+|-heal|p1a: Florges|107\/360|[from] item: Leftovers
+|-damage|p2a: Belle|346\/394 tox|[from] psn
+|turn|42
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Belle|Scald|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-heal|p1a: Florges|287\/360|[from] move: Wish|[wisher] Florges
+|-heal|p2a: Belle|370\/394 tox|[from] item: Leftovers
+|-heal|p1a: Florges|309\/360|[from] item: Leftovers
+|-damage|p2a: Belle|298\/394 tox|[from] psn
+|turn|43
+|
+|move|p2a: Belle|Scald|p1a: Florges
+|-damage|p1a: Florges|239\/360
+|move|p1a: Florges|Moonblast|p2a: Belle
+|-damage|p2a: Belle|223\/394 tox
+|
+|-heal|p2a: Belle|247\/394 tox|[from] item: Leftovers
+|-heal|p1a: Florges|261\/360|[from] item: Leftovers
+|-damage|p2a: Belle|151\/394 tox|[from] psn
+|turn|44
+|
+|move|p2a: Belle|Scald|p1a: Florges
+|-crit|p1a: Florges
+|-damage|p1a: Florges|170\/360
+|move|p1a: Florges|Moonblast|p2a: Belle
+|-crit|p2a: Belle
+|-damage|p2a: Belle|33\/394 tox
+|
+|-heal|p2a: Belle|57\/394 tox|[from] item: Leftovers
+|-heal|p1a: Florges|192\/360|[from] item: Leftovers
+|-damage|p2a: Belle|0 fnt|[from] psn
+|faint|p2a: Belle
+|
+|switch|p2a: Bruit|Noivern, M|18\/312
+|turn|45
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Bruit|Switcheroo|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-heal|p1a: Florges|214\/360|[from] item: Leftovers
+|turn|46
+|
+|switch|p1a: Jirachi|Jirachi|341\/341
+|-damage|p1a: Jirachi|256\/341|[from] Spikes
+|-damage|p1a: Jirachi|235\/341|[from] Stealth Rock
+|move|p2a: Bruit|Switcheroo|p1a: Jirachi
+|-activate|p2a: Bruit|move: Trick|[of] p1a: Jirachi
+|-item|p1a: Jirachi|Choice Specs|[from] Trick
+|-item|p2a: Bruit|Leftovers|[from] Trick
+|
+|-heal|p2a: Bruit|37\/312|[from] item: Leftovers
+|turn|47
+|
+|move|p2a: Bruit|Shadow Ball|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|71\/341
+|move|p1a: Jirachi|Iron Head|p2a: Bruit
+|-damage|p2a: Bruit|0 fnt
+|faint|p2a: Bruit
+|
+|
+|switch|p2a: Char|Chesnaught, M|380\/380
+|turn|48
+|
+|move|p1a: Jirachi|Iron Head|p2a: Char
+|-damage|p2a: Char|295\/380
+|move|p2a: Char|Hammer Arm|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|-unboost|p2a: Char|spe|1
+|faint|p1a: Jirachi
+|
+|-heal|p2a: Char|318\/380|[from] item: Leftovers
+|
+|switch|p1a: Florges|Florges, F|214\/360
+|-damage|p1a: Florges|124\/360|[from] Spikes
+|-damage|p1a: Florges|79\/360|[from] Stealth Rock
+|turn|49
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Char|Wood Hammer|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-heal|p1a: Florges|101\/360|[from] item: Leftovers
+|-heal|p2a: Char|341\/380|[from] item: Leftovers
+|turn|50
+|
+|move|p1a: Florges|Moonblast|p2a: Char
+|-crit|p2a: Char
+|-supereffective|p2a: Char
+|-damage|p2a: Char|0 fnt
+|faint|p2a: Char
+|
+|win|yuricon
+|raw|Ladder updating...
+|raw|yuricon's rating: 1396 &rarr; <strong>1417<\/strong><br \/>(+21 for winning)
+|raw|Eckleburg's rating: 1416 &rarr; <strong>1395<\/strong><br \/>(-21 for losing)
+|leave|Eckleburg
+|player|p2

@@ -1,0 +1,60 @@
+|join|DictatorOfAmerica
+|join|Bobito Garcia
+|player|p1|DictatorOfAmerica|284
+|player|p2|Bobito Garcia|2
+|gametype|singles
+|gen|6
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Aerodactyl, F
+|poke|p1|Quagsire, M
+|poke|p1|Cresselia, F
+|poke|p1|Chesnaught, M
+|poke|p1|Chansey, F
+|poke|p1|Cofagrigus, F
+|poke|p2|Manectric, F
+|poke|p2|Victini
+|poke|p2|Haxorus, M
+|poke|p2|Scolipede, M
+|poke|p2|Metagross
+|poke|p2|Tornadus-Therian, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Aerodactyl|Aerodactyl, F|302\/302
+|switch|p2a: Manectric|Manectric, F|281\/281
+|turn|1
+|callback|decision
+|
+|switch|p1a: Quagsire|Quagsire, M|394\/394
+|-formechange|p2a: Manectric|Manectric-Mega
+|message|Manectric has Mega Evolved into Mega Manectric!
+|-ability|p2a: Manectric|Intimidate|[of] p1a: Quagsire
+|-unboost|p1a: Quagsire|atk|1
+|move|p2a: Manectric|Thunderbolt|p1a: Quagsire
+|-immune|p1a: Quagsire|[msg]
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Manectric|Hidden Power|p1a: Quagsire
+|-supereffective|p1a: Quagsire
+|-damage|p1a: Quagsire|0 fnt
+|faint|p1a: Quagsire
+|
+|callback|decision
+|-message|DictatorOfAmerica forfeited.
+|
+|win|Bobito Garcia
+|raw|Ladder updating...
+|leave|DictatorOfAmerica
+|player|p1

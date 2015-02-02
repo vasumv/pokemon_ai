@@ -1,0 +1,347 @@
+|join|Tikkito
+|join|Acemanassasin
+|player|p1|Tikkito|286
+|player|p2|Acemanassasin|4
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Houndoom, F, shiny
+|poke|p1|Qwilfish, F
+|poke|p1|Claydol, shiny
+|poke|p1|Toxicroak, M
+|poke|p1|Porygon2
+|poke|p1|Suicune, shiny
+|poke|p2|Aerodactyl, F
+|poke|p2|Suicune
+|poke|p2|Florges, F
+|poke|p2|Mew
+|poke|p2|Raikou, shiny
+|poke|p2|Arcanine, F
+|teampreview
+|join|amt8765
+|
+|start
+|switch|p1a: Claydol|Claydol, shiny|324\/324
+|switch|p2a: Mew|Mew|404\/404
+|turn|1
+|
+|move|p2a: Mew|Knock Off|p1a: Claydol
+|-crit|p1a: Claydol
+|-supereffective|p1a: Claydol
+|-damage|p1a: Claydol|104\/324
+|-enditem|p1a: Claydol|Leftovers|[from] move: Knock Off|[of] p2a: Mew
+|move|p1a: Claydol|Stealth Rock|p2a: Mew
+|-sidestart|p2: Acemanassasin|move: Stealth Rock
+|
+|turn|2
+|
+|move|p2a: Mew|Defog|p1a: Claydol
+|-unboost|p1a: Claydol|evasion|1
+|-sideend|p2: Acemanassasin|Stealth Rock|[from] move: Defog|[of] p2a: Mew
+|move|p1a: Claydol|Toxic|p2a: Mew
+|-status|p2a: Mew|tox
+|-status|p1a: Claydol|tox
+|
+|-damage|p2a: Mew|379\/404 tox|[from] psn
+|-damage|p1a: Claydol|84\/324 tox|[from] psn
+|turn|3
+|
+|move|p2a: Mew|U-turn|p1a: Claydol
+|-supereffective|p1a: Claydol
+|-damage|p1a: Claydol|0 fnt
+|faint|p1a: Claydol
+|
+|switch|p2a: Raikou|Raikou, shiny|322\/322
+|-ability|p2a: Raikou|Pressure
+|
+|
+|switch|p1a: Porygon2|Porygon2|374\/374
+|-ability|p1a: Porygon2|Pressure|[from] ability: Trace|[of] p2a: Raikou
+|-ability|p1a: Porygon2|Pressure
+|turn|4
+|
+|move|p2a: Raikou|Volt Switch|p1a: Porygon2
+|-damage|p1a: Porygon2|281\/374
+|
+|switch|p2a: Florges|Florges, F|360\/360
+|move|p1a: Porygon2|Toxic|p2a: Florges|[miss]
+|-miss|p1a: Porygon2|p2a: Florges
+|
+|turn|5
+|
+|switch|p1a: Suicune|Suicune, shiny|404\/404
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Florges|Toxic|p1a: Suicune
+|-status|p1a: Suicune|tox
+|
+|-damage|p1a: Suicune|379\/404 tox|[from] psn
+|turn|6
+|
+|switch|p2a: Raikou|Raikou, shiny|322\/322
+|-ability|p2a: Raikou|Pressure
+|move|p1a: Suicune|Calm Mind|p1a: Suicune
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|
+|-heal|p1a: Suicune|404\/404 tox|[from] item: Leftovers
+|-damage|p1a: Suicune|354\/404 tox|[from] psn
+|turn|7
+|
+|switch|p1a: Porygon2|Porygon2|281\/374
+|-ability|p1a: Porygon2|Pressure|[from] ability: Trace|[of] p2a: Raikou
+|-ability|p1a: Porygon2|Pressure
+|move|p2a: Raikou|Thunderbolt|p1a: Porygon2
+|-damage|p1a: Porygon2|155\/374
+|
+|turn|8
+|
+|move|p2a: Raikou|Thunderbolt|p1a: Porygon2
+|-damage|p1a: Porygon2|34\/374
+|-status|p1a: Porygon2|par
+|move|p1a: Porygon2|Recover|p1a: Porygon2
+|-heal|p1a: Porygon2|221\/374 par
+|
+|turn|9
+|
+|switch|p2a: Mew|Mew|379\/404 tox
+|move|p1a: Porygon2|Toxic|p2a: Mew
+|-fail|p2a: Mew|tox
+|
+|-heal|p2a: Mew|404\/404 tox|[from] item: Leftovers
+|-damage|p2a: Mew|379\/404 tox|[from] psn
+|turn|10
+|
+|switch|p1a: Houndoom|Houndoom, F, shiny|291\/291
+|move|p2a: Mew|Knock Off|p1a: Houndoom
+|-resisted|p1a: Houndoom
+|-damage|p1a: Houndoom|241\/291
+|
+|-heal|p2a: Mew|404\/404 tox|[from] item: Leftovers
+|-damage|p2a: Mew|354\/404 tox|[from] psn
+|turn|11
+|
+|switch|p2a: Florges|Florges, F|360\/360
+|-formechange|p1a: Houndoom|Houndoom-Mega
+|message|Houndoom has Mega Evolved into Mega Houndoom!
+|move|p1a: Houndoom|Nasty Plot|p1a: Houndoom
+|-boost|p1a: Houndoom|spa|2
+|
+|turn|12
+|
+|move|p1a: Houndoom|Flamethrower|p2a: Florges
+|-damage|p2a: Florges|183\/360
+|move|p2a: Florges|Toxic|p1a: Houndoom
+|-status|p1a: Houndoom|tox
+|
+|-heal|p2a: Florges|205\/360|[from] item: Leftovers
+|-damage|p1a: Houndoom|223\/291 tox|[from] psn
+|turn|13
+|
+|move|p1a: Houndoom|Nasty Plot|p1a: Houndoom
+|-boost|p1a: Houndoom|spa|2
+|move|p2a: Florges|Moonblast|p1a: Houndoom
+|-damage|p1a: Houndoom|66\/291 tox
+|
+|-heal|p2a: Florges|227\/360|[from] item: Leftovers
+|-damage|p1a: Houndoom|30\/291 tox|[from] psn
+|turn|14
+|
+|move|p2a: Florges|Protect|p2a: Florges
+|-singleturn|p2a: Florges|Protect
+|move|p1a: Houndoom|Flamethrower|p2a: Florges
+|-activate|p2a: Florges|Protect
+|
+|-heal|p2a: Florges|249\/360|[from] item: Leftovers
+|-damage|p1a: Houndoom|0 fnt|[from] psn
+|faint|p1a: Houndoom
+|
+|switch|p1a: Toxicroak|Toxicroak, M|307\/307
+|turn|15
+|
+|switch|p2a: Mew|Mew|354\/404 tox
+|move|p1a: Toxicroak|Swords Dance|p1a: Toxicroak
+|-boost|p1a: Toxicroak|atk|2
+|
+|-heal|p2a: Mew|379\/404 tox|[from] item: Leftovers
+|-damage|p2a: Mew|354\/404 tox|[from] psn
+|turn|16
+|
+|move|p1a: Toxicroak|Poison Jab|p2a: Mew
+|-damage|p2a: Mew|64\/404 tox
+|-damage|p1a: Toxicroak|277\/307|[from] item: Life Orb
+|move|p2a: Mew|Knock Off|p1a: Toxicroak
+|-resisted|p1a: Toxicroak
+|-damage|p1a: Toxicroak|217\/307
+|-enditem|p1a: Toxicroak|Life Orb|[from] move: Knock Off|[of] p2a: Mew
+|
+|-heal|p2a: Mew|89\/404 tox|[from] item: Leftovers
+|-damage|p2a: Mew|39\/404 tox|[from] psn
+|turn|17
+|
+|move|p1a: Toxicroak|Swords Dance|p1a: Toxicroak
+|-boost|p1a: Toxicroak|atk|2
+|move|p2a: Mew|U-turn|p1a: Toxicroak
+|-resisted|p1a: Toxicroak
+|-damage|p1a: Toxicroak|197\/307
+|
+|switch|p2a: Arcanine|Arcanine, F|384\/384
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Toxicroak
+|-unboost|p1a: Toxicroak|atk|1
+|-item|p2a: Arcanine|Air Balloon
+|
+|turn|18
+|
+|move|p1a: Toxicroak|Drain Punch|p2a: Arcanine
+|-damage|p2a: Arcanine|0 fnt
+|-heal|p1a: Toxicroak|307\/307|[from] drain|[of] p2a: Arcanine
+|-enditem|p2a: Arcanine|Air Balloon
+|faint|p2a: Arcanine
+|
+|
+|switch|p2a: Aerodactyl|Aerodactyl, F|302\/302
+|-ability|p2a: Aerodactyl|Pressure
+|turn|19
+|chat|Acemanassasin|sucker punch n;p
+|
+|switch|p1a: Qwilfish|Qwilfish, F|334\/334
+|-ability|p1a: Qwilfish|Intimidate|[of] p2a: Aerodactyl
+|-unboost|p2a: Aerodactyl|atk|1
+|-formechange|p2a: Aerodactyl|Aerodactyl-Mega
+|message|Aerodactyl has Mega Evolved into Mega Aerodactyl!
+|move|p2a: Aerodactyl|Earthquake|p1a: Qwilfish
+|-supereffective|p1a: Qwilfish
+|-damage|p1a: Qwilfish|182\/334
+|
+|-heal|p1a: Qwilfish|202\/334|[from] item: Black Sludge
+|turn|20
+|
+|switch|p2a: Mew|Mew|39\/404 tox
+|move|p1a: Qwilfish|Pain Split|p2a: Mew
+|-sethp|p2a: Mew|120\/404 tox|p1a: Qwilfish|120\/334|[from] move: Pain Split
+|
+|-heal|p2a: Mew|145\/404 tox|[from] item: Leftovers
+|-heal|p1a: Qwilfish|140\/334|[from] item: Black Sludge
+|-damage|p2a: Mew|120\/404 tox|[from] psn
+|turn|21
+|
+|switch|p1a: Toxicroak|Toxicroak, M|307\/307
+|move|p2a: Mew|Knock Off|p1a: Toxicroak
+|-resisted|p1a: Toxicroak
+|-damage|p1a: Toxicroak|270\/307
+|
+|-heal|p2a: Mew|145\/404 tox|[from] item: Leftovers
+|-damage|p2a: Mew|95\/404 tox|[from] psn
+|turn|22
+|
+|move|p1a: Toxicroak|Drain Punch|p2a: Mew
+|-resisted|p2a: Mew
+|-damage|p2a: Mew|44\/404 tox
+|-heal|p1a: Toxicroak|296\/307|[from] drain|[of] p2a: Mew
+|move|p2a: Mew|U-turn|p1a: Toxicroak
+|-resisted|p1a: Toxicroak
+|-damage|p1a: Toxicroak|274\/307
+|
+|switch|p2a: Aerodactyl|Aerodactyl, F|302\/302
+|-formechange|p2a: Aerodactyl|Aerodactyl-Mega
+|
+|turn|23
+|
+|switch|p1a: Qwilfish|Qwilfish, F|140\/334
+|-ability|p1a: Qwilfish|Intimidate|[of] p2a: Aerodactyl
+|-unboost|p2a: Aerodactyl|atk|1
+|move|p2a: Aerodactyl|Earthquake|p1a: Qwilfish
+|-supereffective|p1a: Qwilfish
+|-damage|p1a: Qwilfish|0 fnt
+|faint|p1a: Qwilfish
+|
+|
+|switch|p1a: Suicune|Suicune, shiny|354\/404 tox
+|-ability|p1a: Suicune|Pressure
+|turn|24
+|
+|switch|p2a: Raikou|Raikou, shiny|322\/322
+|-ability|p2a: Raikou|Pressure
+|move|p1a: Suicune|Scald|p2a: Raikou
+|-damage|p2a: Raikou|228\/322
+|-status|p2a: Raikou|brn
+|
+|-heal|p1a: Suicune|379\/404 tox|[from] item: Leftovers
+|-damage|p2a: Raikou|188\/322 brn|[from] brn
+|-damage|p1a: Suicune|354\/404 tox|[from] psn
+|turn|25
+|
+|switch|p1a: Porygon2|Porygon2|221\/374 par
+|-ability|p1a: Porygon2|Pressure|[from] ability: Trace|[of] p2a: Raikou
+|-ability|p1a: Porygon2|Pressure
+|move|p2a: Raikou|Volt Switch|p1a: Porygon2
+|-damage|p1a: Porygon2|119\/374 par
+|
+|switch|p2a: Aerodactyl|Aerodactyl, F|302\/302
+|-formechange|p2a: Aerodactyl|Aerodactyl-Mega
+|
+|turn|26
+|
+|move|p2a: Aerodactyl|Earthquake|p1a: Porygon2
+|-damage|p1a: Porygon2|29\/374 par
+|move|p1a: Porygon2|Toxic|p2a: Aerodactyl
+|-status|p2a: Aerodactyl|tox
+|
+|-damage|p2a: Aerodactyl|284\/302 tox|[from] psn
+|turn|27
+|
+|move|p2a: Aerodactyl|Earthquake|p1a: Porygon2
+|-damage|p1a: Porygon2|0 fnt
+|faint|p1a: Porygon2
+|
+|-damage|p2a: Aerodactyl|248\/302 tox|[from] psn
+|
+|switch|p1a: Suicune|Suicune, shiny|354\/404 tox
+|-ability|p1a: Suicune|Pressure
+|turn|28
+|
+|switch|p2a: Mew|Mew|44\/404 tox
+|move|p1a: Suicune|Scald|p2a: Mew
+|-damage|p2a: Mew|0 fnt
+|faint|p2a: Mew
+|
+|-heal|p1a: Suicune|379\/404 tox|[from] item: Leftovers
+|-damage|p1a: Suicune|354\/404 tox|[from] psn
+|
+|switch|p2a: Raikou|Raikou, shiny|188\/322 brn
+|-ability|p2a: Raikou|Pressure
+|turn|29
+|
+|move|p2a: Raikou|Thunderbolt|p1a: Suicune
+|-supereffective|p1a: Suicune
+|-damage|p1a: Suicune|0 fnt
+|faint|p1a: Suicune
+|
+|-damage|p2a: Raikou|148\/322 brn|[from] brn
+|
+|switch|p1a: Toxicroak|Toxicroak, M|274\/307
+|turn|30
+|
+|move|p1a: Toxicroak|Sucker Punch|p2a: Raikou
+|-damage|p2a: Raikou|39\/322 brn
+|move|p2a: Raikou|Thunderbolt|p1a: Toxicroak
+|-damage|p1a: Toxicroak|0 fnt
+|faint|p1a: Toxicroak
+|
+|win|Acemanassasin
+|raw|Ladder updating...
+|chat|amt8765|gg
+|leave|amt8765
+|chat|Acemanassasin|gg
+|raw|Ladder (probably) updated, but score could not be retrieved (timeout).
+|raw|Ladder (probably) updated, but score could not be retrieved (Error: socket hang up).
+|leave|Tikkito
+|player|p1

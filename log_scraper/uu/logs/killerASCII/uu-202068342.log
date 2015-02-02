@@ -1,0 +1,187 @@
+|join|Smoking
+|join|killerASCII
+|player|p1|Smoking|76
+|player|p2|killerASCII|163
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Beedrill, M
+|poke|p1|Alakazam, M
+|poke|p1|Darmanitan, M
+|poke|p1|Vaporeon, M
+|poke|p1|Goodra, F
+|poke|p1|Forretress, M
+|poke|p2|Steelix, F
+|poke|p2|Hippowdon, F
+|poke|p2|Jellicent, F
+|poke|p2|Reuniclus, M
+|poke|p2|Hydreigon, M
+|poke|p2|Gigalith, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Darmanitan|Darmanitan, M|352\/352
+|switch|p2a: Hippowdon|Hippowdon, F|420\/420
+|-weather|Sandstorm
+|turn|1
+|
+|move|p1a: Darmanitan|U-turn|p2a: Hippowdon
+|-damage|p2a: Hippowdon|362\/420
+|
+|switch|p1a: Vaporeon|Vaporeon, M|464\/464
+|move|p2a: Hippowdon|Stealth Rock|p1a: Vaporeon
+|-sidestart|p1: Smoking|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Vaporeon|435\/464|[from] sandstorm
+|-heal|p1a: Vaporeon|464\/464|[from] item: Leftovers
+|turn|2
+|
+|switch|p2a: Jellicent|Jellicent, F|404\/404
+|move|p1a: Vaporeon|Scald|p2a: Jellicent
+|-immune|p2a: Jellicent|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Vaporeon|435\/464|[from] sandstorm
+|-damage|p2a: Jellicent|379\/404|[from] sandstorm
+|-heal|p1a: Vaporeon|464\/464|[from] item: Leftovers
+|-heal|p2a: Jellicent|404\/404|[from] item: Leftovers
+|turn|3
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Jellicent|Trick Room|p2a: Jellicent
+|-fieldstart|move: Trick Room|[of] p2a: Jellicent
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Jellicent|379\/404|[from] sandstorm
+|-damage|p1a: Vaporeon|435\/464|[from] sandstorm
+|-heal|p2a: Jellicent|404\/404|[from] item: Leftovers
+|-heal|p1a: Vaporeon|464\/464|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Reuniclus|Reuniclus, M|424\/424
+|switch|p1a: Forretress|Forretress, M|354\/354
+|-damage|p1a: Forretress|310\/354|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Forretress|332\/354|[from] item: Leftovers
+|turn|5
+|
+|move|p2a: Reuniclus|Shadow Ball|p1a: Forretress
+|-damage|p1a: Forretress|129\/354
+|move|p1a: Forretress|Rapid Spin|p2a: Reuniclus
+|-damage|p2a: Reuniclus|404\/424
+|-sideend|p1: Smoking|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Forretress
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Forretress|151\/354|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: Hippowdon|Hippowdon, F|362\/420
+|switch|p1a: Goodra|Goodra, F|384\/384
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Goodra|360\/384|[from] sandstorm
+|turn|7
+|
+|move|p2a: Hippowdon|Stealth Rock|p1a: Goodra
+|-sidestart|p1: Smoking|move: Stealth Rock
+|move|p1a: Goodra|Ice Beam|p2a: Hippowdon
+|-supereffective|p2a: Hippowdon
+|-damage|p2a: Hippowdon|112\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Goodra|336\/384|[from] sandstorm
+|-fieldend|move: Trick Room
+|turn|8
+|
+|switch|p2a: Jellicent|Jellicent, F|404\/404
+|move|p1a: Goodra|Thunderbolt|p2a: Jellicent
+|-supereffective|p2a: Jellicent
+|-damage|p2a: Jellicent|260\/404
+|
+|-weather|none
+|-heal|p2a: Jellicent|285\/404|[from] item: Leftovers
+|turn|9
+|
+|move|p1a: Goodra|Thunderbolt|p2a: Jellicent
+|-supereffective|p2a: Jellicent
+|-damage|p2a: Jellicent|139\/404
+|move|p2a: Jellicent|Trick Room|p2a: Jellicent
+|-fieldstart|move: Trick Room|[of] p2a: Jellicent
+|
+|-heal|p2a: Jellicent|164\/404|[from] item: Leftovers
+|turn|10
+|
+|switch|p2a: Hippowdon|Hippowdon, F|112\/420
+|-weather|Sandstorm
+|move|p1a: Goodra|Thunderbolt|p2a: Hippowdon
+|-immune|p2a: Hippowdon|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Goodra|312\/384|[from] sandstorm
+|turn|11
+|
+|switch|p2a: Steelix|Steelix, F|354\/354
+|switch|p1a: Forretress|Forretress, M|151\/354
+|-damage|p1a: Forretress|107\/354|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Forretress|129\/354|[from] item: Leftovers
+|turn|12
+|
+|detailschange|p2a: Steelix|Steelix-Mega, F
+|-mega|p2a: Steelix|Steelix|Steelixite
+|move|p2a: Steelix|Fire Fang|p1a: Forretress
+|-supereffective|p1a: Forretress
+|-damage|p1a: Forretress|0 fnt
+|faint|p1a: Forretress
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Darmanitan|Darmanitan, M|352\/352
+|-damage|p1a: Darmanitan|264\/352|[from] Stealth Rock
+|turn|13
+|
+|move|p2a: Steelix|Earthquake|p1a: Darmanitan
+|-supereffective|p1a: Darmanitan
+|-damage|p1a: Darmanitan|0 fnt
+|faint|p1a: Darmanitan
+|
+|-weather|Sandstorm|[upkeep]
+|-fieldend|move: Trick Room
+|
+|switch|p1a: Vaporeon|Vaporeon, M|464\/464
+|-damage|p1a: Vaporeon|406\/464|[from] Stealth Rock
+|turn|14
+|
+|switch|p2a: Jellicent|Jellicent, F|164\/404
+|move|p1a: Vaporeon|Scald|p2a: Jellicent
+|-heal|p2a: Jellicent|265\/404|[from] ability: Water Absorb|[of] p1a: Vaporeon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Vaporeon|377\/464|[from] sandstorm
+|-damage|p2a: Jellicent|240\/404|[from] sandstorm
+|-heal|p1a: Vaporeon|406\/464|[from] item: Leftovers
+|-heal|p2a: Jellicent|265\/404|[from] item: Leftovers
+|turn|15
+|-message|Smoking forfeited.
+|leave|Smoking
+|
+|win|killerASCII
+|raw|Ladder updating...
+|player|p1
+|raw|Smoking's rating: 1304 &rarr; <strong>1279<\/strong><br \/>(-25 for losing)
+|raw|killerASCII's rating: 1226 &rarr; <strong>1256<\/strong><br \/>(+30 for winning)

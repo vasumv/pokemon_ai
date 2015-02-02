@@ -1,0 +1,358 @@
+|join|Pryze
+|join|Godsend
+|player|p1|Pryze|68
+|player|p2|Godsend|2
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Jirachi, shiny
+|poke|p1|Kingdra, M, shiny
+|poke|p1|Victini
+|poke|p1|Ampharos, F, shiny
+|poke|p1|Florges, F, shiny
+|poke|p1|Forretress, M
+|poke|p2|Swellow, F
+|poke|p2|Victini
+|poke|p2|Hydreigon, M
+|poke|p2|Suicune
+|poke|p2|Snorlax, F
+|poke|p2|Gligar, M
+|teampreview
+|
+|start
+|switch|p1a: Ampharos|Ampharos, F, shiny|384\/384
+|switch|p2a: Victini|Victini|341\/341
+|turn|1
+|
+|detailschange|p1a: Ampharos|Ampharos-Mega, F, shiny
+|message|Ampharos has Mega Evolved into Mega Ampharos!
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p2a: Victini|U-turn|p1a: Ampharos
+|-damage|p1a: Ampharos|314\/384
+|
+|switch|p2a: Snorlax|Snorlax, F|461\/461
+|move|p1a: Ampharos|Volt Switch|p2a: Snorlax
+|-crit|p2a: Snorlax
+|-damage|p2a: Snorlax|352\/461
+|
+|switch|p1a: Jirachi|Jirachi, shiny|341\/341
+|
+|turn|2
+|
+|move|p1a: Jirachi|Iron Head|p2a: Snorlax
+|-damage|p2a: Snorlax|232\/461
+|cant|p2a: Snorlax|flinch
+|
+|turn|3
+|
+|switch|p2a: Suicune|Suicune|404\/404
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Jirachi|Iron Head|p2a: Suicune
+|-resisted|p2a: Suicune
+|-damage|p2a: Suicune|368\/404
+|
+|-heal|p2a: Suicune|393\/404|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Ampharos|Ampharos-Mega, F, shiny|314\/384
+|-ability|p1a: Ampharos|Mold Breaker
+|switch|p2a: Swellow|Swellow, F|261\/261
+|
+|-status|p2a: Swellow|tox|[from] item: Toxic Orb
+|turn|5
+|
+|move|p2a: Swellow|U-turn|p1a: Ampharos
+|-damage|p1a: Ampharos|248\/384
+|
+|switch|p2a: Snorlax|Snorlax, F|232\/461
+|move|p1a: Ampharos|Volt Switch|p2a: Snorlax
+|-damage|p2a: Snorlax|154\/461
+|
+|switch|p1a: Victini|Victini|341\/341
+|
+|turn|6
+|
+|switch|p2a: Suicune|Suicune|393\/404
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Victini|V-create|p2a: Suicune
+|-resisted|p2a: Suicune
+|-damage|p2a: Suicune|265\/404
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|
+|-heal|p2a: Suicune|290\/404|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Ampharos|Ampharos-Mega, F, shiny|248\/384
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p2a: Suicune|Scald|p1a: Ampharos
+|-resisted|p1a: Ampharos
+|-damage|p1a: Ampharos|209\/384
+|
+|-heal|p2a: Suicune|315\/404|[from] item: Leftovers
+|turn|8
+|
+|switch|p2a: Gligar|Gligar, M|334\/334
+|move|p1a: Ampharos|Rest|p1a: Ampharos
+|-status|p1a: Ampharos|slp
+|-heal|p1a: Ampharos|384\/384 slp|[silent]
+|-status|p1a: Ampharos|slp|[from] move: Rest
+|
+|turn|9
+|
+|switch|p1a: Forretress|Forretress, M|354\/354
+|move|p2a: Gligar|Stealth Rock|p1a: Forretress
+|-sidestart|p1: Pryze|move: Stealth Rock
+|
+|turn|10
+|
+|switch|p2a: Victini|Victini|341\/341
+|move|p1a: Forretress|Rapid Spin|p2a: Victini
+|-damage|p2a: Victini|326\/341
+|-sideend|p1: Pryze|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Forretress
+|
+|turn|11
+|
+|move|p2a: Victini|V-create|p1a: Forretress
+|-supereffective|p1a: Forretress
+|-activate|p1a: Forretress|Sturdy
+|-damage|p1a: Forretress|1\/354
+|-unboost|p2a: Victini|def|1
+|-unboost|p2a: Victini|spd|1
+|-unboost|p2a: Victini|spe|1
+|move|p1a: Forretress|Stealth Rock|p2a: Victini
+|-sidestart|p2: Godsend|move: Stealth Rock
+|
+|-heal|p1a: Forretress|23\/354|[from] item: Leftovers
+|turn|12
+|chat|Godsend|I both love and hate people using Resttalk Amp
+|chat|Godsend|It's the best set
+|chat|Godsend|But....
+|chat|Godsend|It's the best set
+|chat|Godsend|I don't like when people do that to me
+|
+|switch|p1a: Kingdra|Kingdra, M, shiny|291\/291
+|move|p2a: Victini|V-create|p1a: Kingdra
+|-resisted|p1a: Kingdra
+|-damage|p1a: Kingdra|187\/291
+|-unboost|p2a: Victini|def|1
+|-unboost|p2a: Victini|spd|1
+|-unboost|p2a: Victini|spe|1
+|
+|turn|13
+|
+|switch|p2a: Snorlax|Snorlax, F|154\/461
+|-damage|p2a: Snorlax|97\/461|[from] Stealth Rock
+|move|p1a: Kingdra|Draco Meteor|p2a: Snorlax
+|-crit|p2a: Snorlax
+|-damage|p2a: Snorlax|0 fnt
+|-unboost|p1a: Kingdra|spa|2
+|faint|p2a: Snorlax
+|
+|
+|switch|p2a: Swellow|Swellow, F|261\/261 tox
+|-damage|p2a: Swellow|196\/261 tox|[from] Stealth Rock
+|turn|14
+|
+|switch|p1a: Forretress|Forretress, M|23\/354
+|move|p2a: Swellow|U-turn|p1a: Forretress
+|-resisted|p1a: Forretress
+|-damage|p1a: Forretress|0 fnt
+|faint|p1a: Forretress
+|
+|switch|p2a: Hydreigon|Hydreigon, M|325\/325
+|-damage|p2a: Hydreigon|285\/325|[from] Stealth Rock
+|
+|
+|switch|p1a: Florges|Florges, F, shiny|360\/360
+|turn|15
+|
+|switch|p2a: Gligar|Gligar, M|334\/334
+|-damage|p2a: Gligar|293\/334|[from] Stealth Rock
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|turn|16
+|
+|switch|p1a: Kingdra|Kingdra, M, shiny|187\/291
+|move|p2a: Gligar|Defog|p1a: Kingdra
+|-unboost|p1a: Kingdra|evasion|1
+|-sideend|p2: Godsend|Stealth Rock|[from] move: Defog|[of] p2a: Gligar
+|
+|-heal|p1a: Kingdra|291\/291|[from] move: Wish|[wisher] Florges
+|turn|17
+|
+|move|p1a: Kingdra|Scald|p2a: Gligar
+|-supereffective|p2a: Gligar
+|-damage|p2a: Gligar|0 fnt
+|faint|p2a: Gligar
+|
+|
+|switch|p2a: Hydreigon|Hydreigon, M|285\/325
+|turn|18
+|
+|switch|p1a: Jirachi|Jirachi, shiny|341\/341
+|move|p2a: Hydreigon|U-turn|p1a: Jirachi
+|-damage|p1a: Jirachi|259\/341
+|-damage|p2a: Hydreigon|253\/325|[from] item: Life Orb
+|
+|switch|p2a: Victini|Victini|326\/341
+|
+|turn|19
+|
+|move|p1a: Jirachi|U-turn|p2a: Victini
+|-damage|p2a: Victini|262\/341
+|
+|switch|p1a: Kingdra|Kingdra, M, shiny|291\/291
+|move|p2a: Victini|Bolt Strike|p1a: Kingdra
+|-damage|p1a: Kingdra|95\/291
+|
+|turn|20
+|
+|switch|p2a: Hydreigon|Hydreigon, M|253\/325
+|move|p1a: Kingdra|Draco Meteor|p2a: Hydreigon
+|-supereffective|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|-unboost|p1a: Kingdra|spa|2
+|faint|p2a: Hydreigon
+|
+|chat|Godsend|You have nuts man
+|
+|switch|p2a: Swellow|Swellow, F|196\/261 tox
+|turn|21
+|
+|switch|p1a: Jirachi|Jirachi, shiny|259\/341
+|move|p2a: Swellow|Facade|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|118\/341
+|
+|-damage|p2a: Swellow|180\/261 tox|[from] psn
+|turn|22
+|
+|switch|p2a: Suicune|Suicune|315\/404
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Jirachi|Zen Headbutt|p2a: Suicune
+|-damage|p2a: Suicune|240\/404
+|
+|-heal|p2a: Suicune|265\/404|[from] item: Leftovers
+|turn|23
+|
+|switch|p1a: Ampharos|Ampharos-Mega, F, shiny|384\/384 slp
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p2a: Suicune|Scald|p1a: Ampharos
+|-resisted|p1a: Ampharos
+|-damage|p1a: Ampharos|348\/384 slp
+|
+|-heal|p2a: Suicune|290\/404|[from] item: Leftovers
+|turn|24
+|
+|switch|p2a: Victini|Victini|262\/341
+|cant|p1a: Ampharos|slp
+|move|p1a: Ampharos|Sleep Talk|p1a: Ampharos
+|move|p1a: Ampharos|Volt Switch|p2a: Victini|[from]Sleep Talk
+|-damage|p2a: Victini|135\/341
+|chat|Godsend|You have a phenomenal team bro
+|chat|Pryze|Thanks :]
+|
+|switch|p1a: Victini|Victini|341\/341
+|
+|turn|25
+|
+|move|p2a: Victini|Bolt Strike|p1a: Victini
+|-damage|p1a: Victini|149\/341
+|move|p1a: Victini|U-turn|p2a: Victini
+|-damage|p2a: Victini|37\/341
+|
+|switch|p1a: Jirachi|Jirachi, shiny|118\/341
+|
+|turn|26
+|
+|switch|p2a: Suicune|Suicune|290\/404
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Jirachi|U-turn|p2a: Suicune
+|-crit|p2a: Suicune
+|-damage|p2a: Suicune|220\/404
+|
+|switch|p1a: Ampharos|Ampharos-Mega, F, shiny|348\/384 slp
+|-ability|p1a: Ampharos|Mold Breaker
+|
+|-heal|p2a: Suicune|245\/404|[from] item: Leftovers
+|turn|27
+|
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|cant|p1a: Ampharos|slp
+|
+|turn|28
+|
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Scald|p1a: Ampharos|[from]Sleep Talk
+|-resisted|p1a: Ampharos
+|-damage|p1a: Ampharos|308\/384 slp
+|-curestatus|p1a: Ampharos|slp
+|move|p1a: Ampharos|Volt Switch|p2a: Suicune
+|-supereffective|p2a: Suicune
+|-damage|p2a: Suicune|170\/404 slp
+|
+|switch|p1a: Victini|Victini|149\/341
+|
+|-heal|p2a: Suicune|195\/404 slp|[from] item: Leftovers
+|turn|29
+|
+|move|p1a: Victini|Bolt Strike|p2a: Suicune
+|-supereffective|p2a: Suicune
+|-damage|p2a: Suicune|0 fnt
+|faint|p2a: Suicune
+|
+|
+|switch|p2a: Swellow|Swellow, F|180\/261 tox
+|turn|30
+|
+|move|p2a: Swellow|Facade|p1a: Victini
+|-damage|p1a: Victini|0 fnt
+|faint|p1a: Victini
+|
+|-damage|p2a: Swellow|164\/261 tox|[from] psn
+|
+|switch|p1a: Ampharos|Ampharos-Mega, F, shiny|308\/384
+|-ability|p1a: Ampharos|Mold Breaker
+|turn|31
+|
+|move|p2a: Swellow|Facade|p1a: Ampharos
+|-damage|p1a: Ampharos|100\/384
+|move|p1a: Ampharos|Volt Switch|p2a: Swellow
+|-supereffective|p2a: Swellow
+|-damage|p2a: Swellow|0 fnt
+|faint|p2a: Swellow
+|
+|switch|p1a: Jirachi|Jirachi, shiny|118\/341
+|
+|
+|switch|p2a: Victini|Victini|37\/341
+|turn|32
+|chat|Pryze|gg
+|chat|Godsend|gee gee
+|
+|move|p1a: Jirachi|Iron Head|p2a: Victini
+|-resisted|p2a: Victini
+|-damage|p2a: Victini|0 fnt
+|faint|p2a: Victini
+|
+|win|Pryze
+|raw|Ladder updating...
+|raw|Pryze's rating: 1449 &rarr; <strong>1470<\/strong><br \/>(+21 for winning)
+|raw|Godsend's rating: 1479 &rarr; <strong>1457<\/strong><br \/>(-22 for losing)
+|leave|Godsend
+|player|p2

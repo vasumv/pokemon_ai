@@ -1,0 +1,215 @@
+|join|Richizen
+|join|Bin Ladder
+|player|p1|Richizen|1
+|player|p2|Bin Ladder|76
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Sceptile, F
+|poke|p1|Heatran, M, shiny
+|poke|p1|Landorus-Therian, M
+|poke|p1|Latias, F
+|poke|p1|Gothitelle, F
+|poke|p1|Scizor, M
+|poke|p2|Beedrill, F
+|poke|p2|Magnezone
+|poke|p2|Gliscor, F
+|poke|p2|Ferrothorn, M
+|poke|p2|Slowbro, F
+|poke|p2|Latios, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|320\/320
+|switch|p2a: Beedrill|Beedrill, F|271\/271
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Beedrill
+|-unboost|p2a: Beedrill|atk|1
+|turn|1
+|
+|detailschange|p2a: Beedrill|Beedrill-Mega, F
+|message|Beedrill has Mega Evolved into Mega Beedrill!
+|move|p2a: Beedrill|Protect|p2a: Beedrill
+|-singleturn|p2a: Beedrill|Protect
+|move|p1a: Landorus-Therian|Stone Edge|p2a: Beedrill
+|-activate|p2a: Beedrill|Protect
+|
+|turn|2
+|
+|switch|p2a: Gliscor|Gliscor, F|349\/349
+|move|p1a: Landorus-Therian|Stone Edge|p2a: Gliscor|[miss]
+|-miss|p1a: Landorus-Therian|p2a: Gliscor
+|
+|-status|p2a: Gliscor|tox|[from] item: Toxic Orb
+|turn|3
+|
+|switch|p1a: Latias|Latias, F|329\/329
+|move|p2a: Gliscor|Knock Off|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|161\/329
+|-enditem|p1a: Latias|Life Orb|[from] move: Knock Off|[of] p2a: Gliscor
+|
+|turn|4
+|
+|move|p1a: Latias|Psyshock|p2a: Gliscor
+|-damage|p2a: Gliscor|256\/349 tox
+|move|p2a: Gliscor|Knock Off|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|51\/329
+|
+|-heal|p2a: Gliscor|299\/349 tox|[from] ability: Poison Heal
+|turn|5
+|
+|move|p1a: Latias|Draco Meteor|p2a: Gliscor
+|-damage|p2a: Gliscor|119\/349 tox
+|-unboost|p1a: Latias|spa|2
+|move|p2a: Gliscor|Taunt|p1a: Latias
+|-start|p1a: Latias|move: Taunt
+|
+|-heal|p2a: Gliscor|162\/349 tox|[from] ability: Poison Heal
+|turn|6
+|
+|move|p1a: Latias|Draco Meteor|p2a: Gliscor
+|-damage|p2a: Gliscor|80\/349 tox
+|-unboost|p1a: Latias|spa|2
+|move|p2a: Gliscor|Roost|p2a: Gliscor
+|-heal|p2a: Gliscor|255\/349 tox
+|
+|-heal|p2a: Gliscor|298\/349 tox|[from] ability: Poison Heal
+|turn|7
+|
+|move|p1a: Latias|Draco Meteor|p2a: Gliscor
+|-damage|p2a: Gliscor|244\/349 tox
+|-unboost|p1a: Latias|spa|2
+|move|p2a: Gliscor|Knock Off|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|0 fnt
+|faint|p1a: Latias
+|
+|-heal|p2a: Gliscor|287\/349 tox|[from] ability: Poison Heal
+|
+|switch|p1a: Gothitelle|Gothitelle, F|282\/282
+|turn|8
+|
+|move|p1a: Gothitelle|Trick|p2a: Gliscor
+|-activate|p1a: Gothitelle|move: Trick|[of] p2a: Gliscor
+|-item|p2a: Gliscor|Choice Scarf|[from] move: Trick
+|-item|p1a: Gothitelle|Toxic Orb|[from] move: Trick
+|move|p2a: Gliscor|Taunt|p1a: Gothitelle
+|-start|p1a: Gothitelle|move: Taunt
+|
+|-heal|p2a: Gliscor|330\/349 tox|[from] ability: Poison Heal
+|-status|p1a: Gothitelle|tox|[from] item: Toxic Orb
+|turn|9
+|
+|switch|p1a: Scizor|Scizor, M|344\/344
+|move|p2a: Gliscor|Taunt|p1a: Scizor
+|-start|p1a: Scizor|move: Taunt
+|
+|-heal|p2a: Gliscor|349\/349 tox|[from] ability: Poison Heal
+|turn|10
+|
+|switch|p2a: Magnezone|Magnezone|282\/282
+|move|p1a: Scizor|U-turn|p2a: Magnezone
+|-resisted|p2a: Magnezone
+|-damage|p2a: Magnezone|195\/282
+|
+|switch|p1a: Sceptile|Sceptile, F|281\/281
+|
+|turn|11
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|detailschange|p1a: Sceptile|Sceptile-Mega, F
+|message|Sceptile has Mega Evolved into Mega Sceptile!
+|move|p1a: Sceptile|Hidden Power|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|100\/352
+|
+|turn|12
+|
+|move|p1a: Sceptile|Hidden Power|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|faint|p2a: Ferrothorn
+|
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|271\/271
+|turn|13
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Beedrill
+|-unboost|p2a: Beedrill|atk|1
+|move|p2a: Beedrill|U-turn|p1a: Landorus-Therian
+|-resisted|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|247\/320
+|
+|switch|p2a: Slowbro|Slowbro, F|393\/393
+|
+|turn|14
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|265\/393
+|
+|switch|p1a: Gothitelle|Gothitelle, F|282\/282 tox
+|move|p2a: Slowbro|Thunder Wave|p1a: Gothitelle
+|-fail|p1a: Gothitelle
+|
+|-heal|p2a: Slowbro|289\/393|[from] item: Leftovers
+|-damage|p1a: Gothitelle|265\/282 tox|[from] psn
+|turn|15
+|
+|move|p1a: Gothitelle|Thunderbolt|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|77\/393
+|-status|p2a: Slowbro|par
+|move|p2a: Slowbro|Scald|p1a: Gothitelle
+|-damage|p1a: Gothitelle|174\/282 tox
+|
+|-heal|p2a: Slowbro|101\/393 par|[from] item: Leftovers
+|-damage|p1a: Gothitelle|140\/282 tox|[from] psn
+|turn|16
+|
+|move|p1a: Gothitelle|Thunderbolt|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|0 fnt
+|faint|p2a: Slowbro
+|
+|-damage|p1a: Gothitelle|89\/282 tox|[from] psn
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|271\/271
+|turn|17
+|
+|move|p2a: Beedrill|U-turn|p1a: Gothitelle
+|-supereffective|p1a: Gothitelle
+|-damage|p1a: Gothitelle|0 fnt
+|faint|p1a: Gothitelle
+|
+|switch|p2a: Gliscor|Gliscor, F|349\/349 tox
+|
+|
+|switch|p1a: Heatran|Heatran, M, shiny|386\/386
+|turn|18
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Gliscor|Earthquake|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|turn|19
+|-message|Bin Ladder forfeited.
+|leave|Bin Ladder
+|
+|win|Richizen
+|raw|Ladder updating...
+|player|p2

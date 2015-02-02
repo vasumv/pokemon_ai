@@ -1,0 +1,420 @@
+|join|Sae
+|join|ManBearPignite
+|player|p1|Sae|99
+|player|p2|ManBearPignite|164
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Suicune
+|poke|p1|Chesnaught, F
+|poke|p1|Entei, shiny
+|poke|p1|Forretress, M
+|poke|p1|Blissey, F
+|poke|p1|Lucario, M
+|poke|p2|Medicham, F
+|poke|p2|Chesnaught, M
+|poke|p2|Goodra, M
+|poke|p2|Galvantula, F
+|poke|p2|Entei, shiny
+|poke|p2|Tentacruel, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Chesnaught|Chesnaught, F|380\/380
+|switch|p2a: Medicham|Medicham, F|261\/261
+|turn|1
+|
+|detailschange|p2a: Medicham|Medicham-Mega, F
+|-mega|p2a: Medicham|Medicham|Medichamite
+|move|p2a: Medicham|Fake Out|p1a: Chesnaught
+|-damage|p1a: Chesnaught|329\/380
+|cant|p1a: Chesnaught|flinch
+|
+|-heal|p1a: Chesnaught|352\/380|[from] item: Leftovers
+|turn|2
+|
+|switch|p2a: Entei|Entei, shiny|371\/371
+|-ability|p2a: Entei|Pressure
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-fail|p1a: Chesnaught
+|
+|-heal|p1a: Chesnaught|375\/380|[from] item: Leftovers
+|turn|3
+|
+|switch|p1a: Suicune|Suicune|404\/404
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Entei|Sacred Fire|p1a: Suicune
+|-resisted|p1a: Suicune
+|-damage|p1a: Suicune|320\/404
+|
+|-heal|p1a: Suicune|345\/404|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Galvantula|Galvantula, F|281\/281
+|move|p1a: Suicune|Scald|p2a: Galvantula
+|-damage|p2a: Galvantula|160\/281
+|
+|-heal|p1a: Suicune|370\/404|[from] item: Leftovers
+|turn|5
+|
+|move|p2a: Galvantula|Sticky Web|p1a: Suicune
+|-sidestart|p1: Sae|move: Sticky Web
+|move|p1a: Suicune|Scald|p2a: Galvantula
+|-damage|p2a: Galvantula|19\/281
+|
+|-heal|p1a: Suicune|395\/404|[from] item: Leftovers
+|turn|6
+|
+|move|p2a: Galvantula|Thunder|p1a: Suicune
+|-supereffective|p1a: Suicune
+|-damage|p1a: Suicune|131\/404
+|move|p1a: Suicune|Scald|p2a: Galvantula
+|-damage|p2a: Galvantula|0 fnt
+|faint|p2a: Galvantula
+|
+|-heal|p1a: Suicune|156\/404|[from] item: Leftovers
+|
+|switch|p2a: Medicham|Medicham-Mega, F|261\/261
+|turn|7
+|
+|switch|p1a: Forretress|Forretress, M|354\/354
+|-activate|p1a: Forretress|move: Sticky Web
+|-unboost|p1a: Forretress|spe|1
+|move|p2a: Medicham|Fake Out|p1a: Forretress
+|-resisted|p1a: Forretress
+|-damage|p1a: Forretress|332\/354
+|
+|-heal|p1a: Forretress|354\/354|[from] item: Leftovers
+|turn|8
+|
+|move|p2a: Medicham|High Jump Kick|p1a: Forretress
+|-damage|p1a: Forretress|149\/354
+|move|p1a: Forretress|Rapid Spin|p2a: Medicham
+|-damage|p2a: Medicham|245\/261
+|-sideend|p1: Sae|Sticky Web|[from] move: Rapid Spin|[of] p1a: Forretress
+|
+|-heal|p1a: Forretress|171\/354|[from] item: Leftovers
+|turn|9
+|
+|move|p2a: Medicham|High Jump Kick|p1a: Forretress
+|-damage|p1a: Forretress|0 fnt
+|faint|p1a: Forretress
+|
+|
+|switch|p1a: Chesnaught|Chesnaught, F|375\/380
+|turn|10
+|
+|switch|p2a: Tentacruel|Tentacruel, M|364\/364
+|move|p1a: Chesnaught|Leech Seed|p2a: Tentacruel
+|-start|p2a: Tentacruel|move: Leech Seed
+|
+|-heal|p1a: Chesnaught|380\/380|[from] item: Leftovers
+|-damage|p2a: Tentacruel|319\/364|[from] Leech Seed|[of] p1a: Chesnaught
+|-damage|p1a: Chesnaught|335\/380|[from] ability: Liquid Ooze|[of] p2a: Tentacruel
+|turn|11
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|move|p2a: Tentacruel|Knock Off|p1a: Blissey
+|-damage|p1a: Blissey|608\/714
+|-enditem|p1a: Blissey|Leftovers|[from] move: Knock Off|[of] p2a: Tentacruel
+|
+|-heal|p2a: Tentacruel|341\/364|[from] item: Black Sludge
+|-damage|p2a: Tentacruel|296\/364|[from] Leech Seed|[of] p1a: Blissey
+|-damage|p1a: Blissey|563\/714|[from] ability: Liquid Ooze|[of] p2a: Tentacruel
+|turn|12
+|
+|switch|p2a: Chesnaught|Chesnaught, M|379\/379
+|move|p1a: Blissey|Stealth Rock|p2a: Chesnaught
+|-sidestart|p2: ManBearPignite|move: Stealth Rock
+|
+|turn|13
+|
+|switch|p1a: Entei|Entei, shiny|371\/371
+|-ability|p1a: Entei|Pressure
+|move|p2a: Chesnaught|Substitute|p2a: Chesnaught
+|-start|p2a: Chesnaught|Substitute
+|-damage|p2a: Chesnaught|285\/379
+|
+|-heal|p2a: Chesnaught|308\/379|[from] item: Leftovers
+|turn|14
+|
+|move|p1a: Entei|Sacred Fire|p2a: Chesnaught
+|-supereffective|p2a: Chesnaught
+|-end|p2a: Chesnaught|Substitute
+|move|p2a: Chesnaught|Drain Punch|p1a: Entei
+|-damage|p1a: Entei|260\/371
+|-heal|p2a: Chesnaught|364\/379|[from] drain|[of] p1a: Entei
+|
+|-heal|p2a: Chesnaught|379\/379|[from] item: Leftovers
+|turn|15
+|
+|switch|p2a: Tentacruel|Tentacruel, M|296\/364
+|-damage|p2a: Tentacruel|251\/364|[from] Stealth Rock
+|move|p1a: Entei|Sacred Fire|p2a: Tentacruel
+|-resisted|p2a: Tentacruel
+|-damage|p2a: Tentacruel|132\/364
+|-status|p2a: Tentacruel|brn
+|
+|-heal|p2a: Tentacruel|154\/364 brn|[from] item: Black Sludge
+|-damage|p2a: Tentacruel|109\/364 brn|[from] brn
+|turn|16
+|
+|move|p1a: Entei|Sacred Fire|p2a: Tentacruel
+|-resisted|p2a: Tentacruel
+|-damage|p2a: Tentacruel|0 fnt
+|faint|p2a: Tentacruel
+|
+|
+|switch|p2a: Medicham|Medicham-Mega, F|245\/261
+|-damage|p2a: Medicham|229\/261|[from] Stealth Rock
+|turn|17
+|
+|switch|p1a: Chesnaught|Chesnaught, F|335\/380
+|move|p2a: Medicham|Fake Out|p1a: Chesnaught
+|-damage|p1a: Chesnaught|285\/380
+|
+|-heal|p1a: Chesnaught|308\/380|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-singleturn|p1a: Chesnaught|move: Protect
+|move|p2a: Medicham|Psycho Cut|p1a: Chesnaught
+|-activate|p1a: Chesnaught|Protect
+|
+|-heal|p1a: Chesnaught|331\/380|[from] item: Leftovers
+|turn|19
+|
+|move|p2a: Medicham|Psycho Cut|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-damage|p1a: Chesnaught|79\/380
+|move|p1a: Chesnaught|Wood Hammer|p2a: Medicham
+|-damage|p2a: Medicham|66\/261
+|-damage|p1a: Chesnaught|25\/380|[from] recoil|[of] p2a: Medicham
+|
+|-heal|p1a: Chesnaught|48\/380|[from] item: Leftovers
+|turn|20
+|
+|move|p2a: Medicham|Psycho Cut|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-damage|p1a: Chesnaught|0 fnt
+|faint|p1a: Chesnaught
+|
+|
+|switch|p1a: Lucario|Lucario, M|281\/281
+|turn|21
+|
+|switch|p2a: Chesnaught|Chesnaught, M|379\/379
+|-damage|p2a: Chesnaught|356\/379|[from] Stealth Rock
+|move|p1a: Lucario|Extreme Speed|p2a: Chesnaught
+|-damage|p2a: Chesnaught|290\/379
+|-damage|p1a: Lucario|253\/281|[from] item: Life Orb
+|
+|-heal|p2a: Chesnaught|313\/379|[from] item: Leftovers
+|turn|22
+|
+|switch|p1a: Entei|Entei, shiny|260\/371
+|-ability|p1a: Entei|Pressure
+|move|p2a: Chesnaught|Drain Punch|p1a: Entei
+|-damage|p1a: Entei|160\/371
+|-heal|p2a: Chesnaught|363\/379|[from] drain|[of] p1a: Entei
+|
+|-heal|p2a: Chesnaught|379\/379|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Chesnaught|Spiky Shield|p2a: Chesnaught
+|-singleturn|p2a: Chesnaught|move: Protect
+|move|p1a: Entei|Sacred Fire|p2a: Chesnaught
+|-activate|p2a: Chesnaught|Protect
+|
+|turn|24
+|
+|switch|p2a: Entei|Entei, shiny|371\/371
+|-damage|p2a: Entei|279\/371|[from] Stealth Rock
+|-ability|p2a: Entei|Pressure
+|move|p1a: Entei|Sacred Fire|p2a: Entei
+|-resisted|p2a: Entei
+|-damage|p2a: Entei|137\/371
+|
+|turn|25
+|
+|switch|p1a: Suicune|Suicune|156\/404
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Entei|Extreme Speed|p1a: Suicune
+|-crit|p1a: Suicune
+|-damage|p1a: Suicune|14\/404
+|
+|-heal|p1a: Suicune|39\/404|[from] item: Leftovers
+|turn|26
+|
+|move|p2a: Entei|Extreme Speed|p1a: Suicune
+|-damage|p1a: Suicune|0 fnt
+|faint|p1a: Suicune
+|
+|
+|switch|p1a: Lucario|Lucario, M|253\/281
+|turn|27
+|
+|switch|p2a: Chesnaught|Chesnaught, M|379\/379
+|-damage|p2a: Chesnaught|356\/379|[from] Stealth Rock
+|move|p1a: Lucario|Close Combat|p2a: Chesnaught
+|-damage|p2a: Chesnaught|200\/379
+|-unboost|p1a: Lucario|def|1
+|-unboost|p1a: Lucario|spd|1
+|-damage|p1a: Lucario|225\/281|[from] item: Life Orb
+|
+|-heal|p2a: Chesnaught|223\/379|[from] item: Leftovers
+|turn|28
+|
+|switch|p1a: Blissey|Blissey, F|563\/714
+|move|p2a: Chesnaught|Drain Punch|p1a: Blissey
+|-supereffective|p1a: Blissey
+|-damage|p1a: Blissey|227\/714
+|-heal|p2a: Chesnaught|379\/379|[from] drain|[of] p1a: Blissey
+|
+|turn|29
+|
+|move|p2a: Chesnaught|Substitute|p2a: Chesnaught
+|-start|p2a: Chesnaught|Substitute
+|-damage|p2a: Chesnaught|285\/379
+|move|p1a: Blissey|Wish|p1a: Blissey
+|
+|-heal|p2a: Chesnaught|308\/379|[from] item: Leftovers
+|turn|30
+|
+|switch|p1a: Entei|Entei, shiny|160\/371
+|-ability|p1a: Entei|Pressure
+|move|p2a: Chesnaught|Drain Punch|p1a: Entei
+|-damage|p1a: Entei|48\/371
+|-heal|p2a: Chesnaught|364\/379|[from] drain|[of] p1a: Entei
+|
+|-heal|p1a: Entei|371\/371|[from] move: Wish|[wisher] Blissey
+|-heal|p2a: Chesnaught|379\/379|[from] item: Leftovers
+|turn|31
+|
+|move|p2a: Chesnaught|Spiky Shield|p2a: Chesnaught
+|-singleturn|p2a: Chesnaught|move: Protect
+|move|p1a: Entei|Flare Blitz|p2a: Chesnaught
+|-activate|p2a: Chesnaught|Protect
+|-damage|p1a: Entei|325\/371|[from] Spiky Shield|[of] p2a: Chesnaught
+|
+|turn|32
+|
+|move|p1a: Entei|Flare Blitz|p2a: Chesnaught
+|-supereffective|p2a: Chesnaught
+|-end|p2a: Chesnaught|Substitute
+|-damage|p1a: Entei|294\/371|[from] recoil|[of] p2a: Chesnaught
+|move|p2a: Chesnaught|Leech Seed|p1a: Entei
+|-start|p1a: Entei|move: Leech Seed
+|
+|-damage|p1a: Entei|248\/371|[from] Leech Seed|[of] p2a: Chesnaught
+|turn|33
+|
+|move|p2a: Chesnaught|Spiky Shield|p2a: Chesnaught
+|-singleturn|p2a: Chesnaught|move: Protect
+|move|p1a: Entei|Flare Blitz|p2a: Chesnaught
+|-activate|p2a: Chesnaught|Protect
+|-damage|p1a: Entei|202\/371|[from] Spiky Shield|[of] p2a: Chesnaught
+|
+|-damage|p1a: Entei|156\/371|[from] Leech Seed|[of] p2a: Chesnaught
+|turn|34
+|
+|switch|p2a: Entei|Entei, shiny|137\/371
+|-damage|p2a: Entei|45\/371|[from] Stealth Rock
+|-ability|p2a: Entei|Pressure
+|move|p1a: Entei|Flare Blitz|p2a: Entei
+|-resisted|p2a: Entei
+|-damage|p2a: Entei|0 fnt
+|-damage|p1a: Entei|141\/371|[from] recoil|[of] p2a: Entei
+|faint|p2a: Entei
+|
+|
+|switch|p2a: Medicham|Medicham-Mega, F|66\/261
+|-damage|p2a: Medicham|50\/261|[from] Stealth Rock
+|turn|35
+|
+|switch|p1a: Blissey|Blissey, F|227\/714
+|move|p2a: Medicham|High Jump Kick|p1a: Blissey|[miss]
+|-miss|p2a: Medicham|p1a: Blissey
+|-damage|p2a: Medicham|0 fnt|[from] highjumpkick
+|faint|p2a: Medicham
+|
+|c|âManBearPignite|kek
+|
+|switch|p2a: Chesnaught|Chesnaught, M|379\/379
+|-damage|p2a: Chesnaught|356\/379|[from] Stealth Rock
+|turn|36
+|
+|move|p2a: Chesnaught|Drain Punch|p1a: Blissey
+|-supereffective|p1a: Blissey
+|-damage|p1a: Blissey|0 fnt
+|-heal|p2a: Chesnaught|379\/379|[from] drain|[of] p1a: Blissey
+|faint|p1a: Blissey
+|
+|
+|switch|p1a: Entei|Entei, shiny|141\/371
+|-ability|p1a: Entei|Pressure
+|turn|37
+|
+|move|p2a: Chesnaught|Spiky Shield|p2a: Chesnaught
+|-singleturn|p2a: Chesnaught|move: Protect
+|move|p1a: Entei|Sacred Fire|p2a: Chesnaught
+|-activate|p2a: Chesnaught|Protect
+|
+|turn|38
+|
+|switch|p2a: Goodra|Goodra, M|383\/383
+|-damage|p2a: Goodra|336\/383|[from] Stealth Rock
+|move|p1a: Entei|Sacred Fire|p2a: Goodra
+|-resisted|p2a: Goodra
+|-damage|p2a: Goodra|141\/383
+|
+|turn|39
+|
+|switch|p1a: Lucario|Lucario, M|225\/281
+|move|p2a: Goodra|Draco Meteor|p1a: Lucario
+|-crit|p1a: Lucario
+|-resisted|p1a: Lucario
+|-damage|p1a: Lucario|18\/281
+|-unboost|p2a: Goodra|spa|2
+|
+|turn|40
+|
+|move|p1a: Lucario|Close Combat|p2a: Goodra
+|-damage|p2a: Goodra|0 fnt
+|-unboost|p1a: Lucario|spe|1
+|-unboost|p1a: Lucario|def|1
+|-unboost|p1a: Lucario|spd|1
+|-damage|p1a: Lucario|0 fnt|[from] item: Life Orb
+|faint|p2a: Goodra
+|faint|p1a: Lucario
+|
+|
+|switch|p1a: Entei|Entei, shiny|141\/371
+|switch|p2a: Chesnaught|Chesnaught, M|379\/379
+|-ability|p1a: Entei|Pressure
+|-damage|p2a: Chesnaught|356\/379|[from] Stealth Rock
+|turn|41
+|
+|move|p1a: Entei|Flare Blitz|p2a: Chesnaught
+|-supereffective|p2a: Chesnaught
+|-damage|p2a: Chesnaught|0 fnt
+|-damage|p1a: Entei|24\/371|[from] recoil|[of] p2a: Chesnaught
+|faint|p2a: Chesnaught
+|
+|win|Sae
+|raw|Ladder updating...
+|raw|Sae's rating: 1479 &rarr; <strong>1490<\/strong><br \/>(+11 for winning)
+|raw|ManBearPignite's rating: 1313 &rarr; <strong>1302<\/strong><br \/>(-11 for losing)
+|leave|ManBearPignite
+|c|âSae|gg

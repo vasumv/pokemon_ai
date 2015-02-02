@@ -1,0 +1,386 @@
+|join|Mydonut
+|join|TheVoid
+|player|p1|Mydonut|170
+|player|p2|TheVoid|162
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Blastoise, M, shiny
+|poke|p1|Florges, F, shiny
+|poke|p1|Hippowdon, F, shiny
+|poke|p1|Mienshao, M, shiny
+|poke|p1|Alakazam, M, shiny
+|poke|p1|Victini, shiny
+|poke|p2|Trevenant, F, shiny
+|poke|p2|Blastoise, M, shiny
+|poke|p2|Entei, shiny
+|poke|p2|Donphan, F
+|poke|p2|Snorlax, F, shiny
+|poke|p2|Galvantula, M
+|teampreview
+|
+|start
+|switch|p1a: BigB|Blastoise, M, shiny|362\/362
+|switch|p2a: Ron Weasly|Galvantula, M|281\/281
+|turn|1
+|
+|detailschange|p1a: BigB|Blastoise-Mega, M, shiny
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Ron Weasly|Thunder|p1a: BigB
+|-supereffective|p1a: BigB
+|-damage|p1a: BigB|96\/362
+|-status|p1a: BigB|par
+|move|p1a: BigB|Water Pulse|p2a: Ron Weasly
+|-crit|p2a: Ron Weasly
+|-enditem|p2a: Ron Weasly|Focus Sash
+|-damage|p2a: Ron Weasly|1\/281
+|
+|turn|2
+|
+|move|p2a: Ron Weasly|Volt Switch|p1a: BigB
+|-crit|p1a: BigB
+|-supereffective|p1a: BigB
+|-damage|p1a: BigB|0 fnt
+|faint|p1a: BigB
+|chat|Mydonut|lol
+|
+|switch|p2a: Defensive|Entei, shiny|372\/372
+|-ability|p2a: Defensive|Pressure
+|
+|
+|switch|p1a: Hippo|Hippowdon, F, shiny|420\/420
+|-weather|Sandstorm
+|turn|3
+|
+|switch|p2a: Tail Glow|Donphan, F|384\/384
+|move|p1a: Hippo|Stealth Rock|p2a: Tail Glow
+|-sidestart|p2: TheVoid|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|4
+|
+|move|p2a: Tail Glow|Stealth Rock|p1a: Hippo
+|-sidestart|p1: Mydonut|move: Stealth Rock
+|move|p1a: Hippo|Yawn|p2a: Tail Glow
+|-start|p2a: Tail Glow|move: Yawn|[of] p1a: Hippo
+|
+|-weather|Sandstorm|[upkeep]
+|turn|5
+|
+|move|p2a: Tail Glow|Rapid Spin|p1a: Hippo
+|-damage|p1a: Hippo|409\/420
+|-damage|p2a: Tail Glow|320\/384|[from] item: Rocky Helmet|[of] p1a: Hippo
+|-sideend|p2: TheVoid|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Tail Glow
+|move|p1a: Hippo|Earthquake|p2a: Tail Glow
+|-damage|p2a: Tail Glow|244\/384
+|
+|-status|p2a: Tail Glow|slp
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Tail Glow|268\/384 slp|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: Ghostly Tree|Trevenant, F, shiny|374\/374
+|move|p1a: Hippo|Stealth Rock|p2a: Ghostly Tree
+|-sidestart|p2: TheVoid|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Ghostly Tree|351\/374|[from] sandstorm
+|turn|7
+|
+|switch|p1a: FairyQueen|Florges, F, shiny|360\/360
+|-damage|p1a: FairyQueen|315\/360|[from] Stealth Rock
+|move|p2a: Ghostly Tree|Substitute|p2a: Ghostly Tree
+|-start|p2a: Ghostly Tree|Substitute
+|-damage|p2a: Ghostly Tree|258\/374
+|
+|-weather|none
+|-heal|p1a: FairyQueen|337\/360|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: FairyQueen|Moonblast|p2a: Ghostly Tree
+|-end|p2a: Ghostly Tree|Substitute
+|move|p2a: Ghostly Tree|Curse|p1a: FairyQueen
+|-start|p1a: FairyQueen|Curse|[of] p2a: Ghostly Tree
+|-damage|p2a: Ghostly Tree|71\/374
+|-enditem|p2a: Ghostly Tree|Sitrus Berry|[eat]
+|-heal|p2a: Ghostly Tree|164\/374|[from] item: Sitrus Berry
+|
+|-heal|p1a: FairyQueen|359\/360|[from] item: Leftovers
+|-damage|p1a: FairyQueen|269\/360|[from] Curse
+|-item|p2a: Ghostly Tree|Sitrus Berry|[from] ability: Harvest
+|-enditem|p2a: Ghostly Tree|Sitrus Berry|[eat]
+|-heal|p2a: Ghostly Tree|257\/374|[from] item: Sitrus Berry
+|turn|9
+|
+|switch|p1a: Victor|Victini, shiny|341\/341
+|-damage|p1a: Victor|256\/341|[from] Stealth Rock
+|move|p2a: Ghostly Tree|Horn Leech|p1a: Victor
+|-resisted|p1a: Victor
+|-damage|p1a: Victor|200\/341
+|-heal|p2a: Ghostly Tree|285\/374|[from] drain|[of] p1a: Victor
+|
+|-item|p2a: Ghostly Tree|Sitrus Berry|[from] ability: Harvest
+|turn|10
+|
+|switch|p2a: FatShitCat|Snorlax, F, shiny|524\/524
+|-damage|p2a: FatShitCat|459\/524|[from] Stealth Rock
+|move|p1a: Victor|V-create|p2a: FatShitCat
+|-damage|p2a: FatShitCat|270\/524
+|-unboost|p1a: Victor|def|1
+|-unboost|p1a: Victor|spd|1
+|-unboost|p1a: Victor|spe|1
+|
+|turn|11
+|
+|switch|p1a: Hippo|Hippowdon, F, shiny|409\/420
+|-damage|p1a: Hippo|383\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p2a: FatShitCat|Body Slam|p1a: Hippo
+|-damage|p1a: Hippo|292\/420
+|-damage|p2a: FatShitCat|183\/524|[from] item: Rocky Helmet|[of] p1a: Hippo
+|-status|p1a: Hippo|par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: FatShitCat|151\/524|[from] sandstorm
+|turn|12
+|
+|move|p2a: FatShitCat|Ice Punch|p1a: Hippo
+|-supereffective|p1a: Hippo
+|-damage|p1a: Hippo|178\/420 par
+|-damage|p2a: FatShitCat|64\/524|[from] item: Rocky Helmet|[of] p1a: Hippo
+|move|p1a: Hippo|Earthquake|p2a: FatShitCat
+|-damage|p2a: FatShitCat|0 fnt
+|faint|p2a: FatShitCat
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Tail Glow|Donphan, F|268\/384 slp
+|-damage|p2a: Tail Glow|244\/384 slp|[from] Stealth Rock
+|turn|13
+|
+|switch|p1a: FairyQueen|Florges, F, shiny|269\/360
+|-damage|p1a: FairyQueen|224\/360|[from] Stealth Rock
+|cant|p2a: Tail Glow|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: FairyQueen|202\/360|[from] sandstorm
+|-heal|p1a: FairyQueen|224\/360|[from] item: Leftovers
+|-heal|p2a: Tail Glow|268\/384 slp|[from] item: Leftovers
+|turn|14
+|
+|move|p1a: FairyQueen|Moonblast|p2a: Tail Glow
+|-damage|p2a: Tail Glow|66\/384 slp
+|cant|p2a: Tail Glow|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: FairyQueen|202\/360|[from] sandstorm
+|-heal|p1a: FairyQueen|224\/360|[from] item: Leftovers
+|-heal|p2a: Tail Glow|90\/384 slp|[from] item: Leftovers
+|turn|15
+|
+|cant|p2a: Tail Glow|slp
+|move|p1a: FairyQueen|Moonblast|p2a: Tail Glow
+|-damage|p2a: Tail Glow|0 fnt
+|faint|p2a: Tail Glow
+|
+|-weather|none
+|-heal|p1a: FairyQueen|246\/360|[from] item: Leftovers
+|
+|switch|p2a: Defensive|Entei, shiny|372\/372
+|-damage|p2a: Defensive|279\/372|[from] Stealth Rock
+|-ability|p2a: Defensive|Pressure
+|turn|16
+|
+|move|p1a: FairyQueen|Protect|p1a: FairyQueen
+|-singleturn|p1a: FairyQueen|Protect
+|move|p2a: Defensive|Sacred Fire|p1a: FairyQueen
+|-activate|p1a: FairyQueen|Protect
+|
+|-heal|p1a: FairyQueen|268\/360|[from] item: Leftovers
+|turn|17
+|
+|switch|p1a: Hippo|Hippowdon, F, shiny|178\/420 par
+|-damage|p1a: Hippo|152\/420 par|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p2a: Defensive|Sacred Fire|p1a: Hippo
+|-damage|p1a: Hippo|0 fnt
+|faint|p1a: Hippo
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Defensive|256\/372|[from] sandstorm
+|
+|switch|p1a: Ming|Mienshao, M, shiny|271\/271
+|-damage|p1a: Ming|255\/271|[from] Stealth Rock
+|turn|18
+|
+|switch|p2a: Ghostly Tree|Trevenant, F, shiny|285\/374
+|-damage|p2a: Ghostly Tree|239\/374|[from] Stealth Rock
+|move|p1a: Ming|Fake Out|p2a: Ghostly Tree
+|-immune|p2a: Ghostly Tree|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Ming|239\/271|[from] sandstorm
+|-damage|p2a: Ghostly Tree|216\/374|[from] sandstorm
+|turn|19
+|
+|move|p1a: Ming|Stone Edge|p2a: Ghostly Tree|[miss]
+|-miss|p1a: Ming|p2a: Ghostly Tree
+|move|p2a: Ghostly Tree|Substitute|p2a: Ghostly Tree
+|-start|p2a: Ghostly Tree|Substitute
+|-damage|p2a: Ghostly Tree|123\/374
+|-enditem|p2a: Ghostly Tree|Sitrus Berry|[eat]
+|-heal|p2a: Ghostly Tree|216\/374|[from] item: Sitrus Berry
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Ming|223\/271|[from] sandstorm
+|-damage|p2a: Ghostly Tree|193\/374|[from] sandstorm
+|turn|20
+|
+|move|p1a: Ming|U-turn|p2a: Ghostly Tree
+|-end|p2a: Ghostly Tree|Substitute
+|-damage|p1a: Ming|196\/271|[from] item: Life Orb
+|
+|switch|p1a: FairyQueen|Florges, F, shiny|268\/360
+|-damage|p1a: FairyQueen|223\/360|[from] Stealth Rock
+|move|p2a: Ghostly Tree|Will-O-Wisp|p1a: FairyQueen
+|-status|p1a: FairyQueen|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: FairyQueen|201\/360 brn|[from] sandstorm
+|-damage|p2a: Ghostly Tree|170\/374|[from] sandstorm
+|-heal|p1a: FairyQueen|223\/360 brn|[from] item: Leftovers
+|-damage|p1a: FairyQueen|178\/360 brn|[from] brn
+|-item|p2a: Ghostly Tree|Sitrus Berry|[from] ability: Harvest
+|-enditem|p2a: Ghostly Tree|Sitrus Berry|[eat]
+|-heal|p2a: Ghostly Tree|263\/374|[from] item: Sitrus Berry
+|turn|21
+|
+|move|p1a: FairyQueen|Moonblast|p2a: Ghostly Tree
+|-damage|p2a: Ghostly Tree|158\/374
+|move|p2a: Ghostly Tree|Horn Leech|p1a: FairyQueen
+|-damage|p1a: FairyQueen|52\/360 brn
+|-heal|p2a: Ghostly Tree|221\/374|[from] drain|[of] p1a: FairyQueen
+|
+|-weather|none
+|-heal|p1a: FairyQueen|74\/360 brn|[from] item: Leftovers
+|-damage|p1a: FairyQueen|29\/360 brn|[from] brn
+|-item|p2a: Ghostly Tree|Sitrus Berry|[from] ability: Harvest
+|turn|22
+|
+|move|p1a: FairyQueen|Wish|p1a: FairyQueen
+|move|p2a: Ghostly Tree|Substitute|p2a: Ghostly Tree
+|-start|p2a: Ghostly Tree|Substitute
+|-damage|p2a: Ghostly Tree|128\/374
+|-enditem|p2a: Ghostly Tree|Sitrus Berry|[eat]
+|-heal|p2a: Ghostly Tree|221\/374|[from] item: Sitrus Berry
+|
+|-heal|p1a: FairyQueen|51\/360 brn|[from] item: Leftovers
+|-damage|p1a: FairyQueen|6\/360 brn|[from] brn
+|-item|p2a: Ghostly Tree|Sitrus Berry|[from] ability: Harvest
+|turn|23
+|
+|move|p1a: FairyQueen|Moonblast|p2a: Ghostly Tree
+|-end|p2a: Ghostly Tree|Substitute
+|move|p2a: Ghostly Tree|Curse|p1a: FairyQueen
+|-start|p1a: FairyQueen|Curse|[of] p2a: Ghostly Tree
+|-damage|p2a: Ghostly Tree|34\/374
+|-enditem|p2a: Ghostly Tree|Sitrus Berry|[eat]
+|-heal|p2a: Ghostly Tree|127\/374|[from] item: Sitrus Berry
+|
+|-heal|p1a: FairyQueen|186\/360 brn|[from] move: Wish|[wisher] FairyQueen
+|-heal|p1a: FairyQueen|208\/360 brn|[from] item: Leftovers
+|-damage|p1a: FairyQueen|163\/360 brn|[from] brn
+|-damage|p1a: FairyQueen|73\/360 brn|[from] Curse
+|turn|24
+|
+|switch|p2a: Ron Weasly|Galvantula, M|1\/281
+|-damage|p2a: Ron Weasly|0 fnt|[from] Stealth Rock
+|faint|p2a: Ron Weasly
+|move|p1a: FairyQueen|Moonblast|p2: Ron Weasly|[notarget]
+|-notarget
+|
+|-heal|p1a: FairyQueen|95\/360 brn|[from] item: Leftovers
+|-damage|p1a: FairyQueen|50\/360 brn|[from] brn
+|-damage|p1a: FairyQueen|0 fnt|[from] Curse
+|faint|p1a: FairyQueen
+|
+|switch|p1a: Victor|Victini, shiny|200\/341
+|-damage|p1a: Victor|115\/341|[from] Stealth Rock
+|switch|p2a: Defensive|Entei, shiny|256\/372
+|-damage|p2a: Defensive|163\/372|[from] Stealth Rock
+|-ability|p2a: Defensive|Pressure
+|turn|25
+|
+|move|p2a: Defensive|Extreme Speed|p1a: Victor
+|-damage|p1a: Victor|0 fnt
+|faint|p1a: Victor
+|
+|
+|switch|p1a: Ming|Mienshao, M, shiny|271\/271
+|-damage|p1a: Ming|255\/271|[from] Stealth Rock
+|turn|26
+|
+|switch|p2a: Ghostly Tree|Trevenant, F, shiny|127\/374
+|-damage|p2a: Ghostly Tree|81\/374|[from] Stealth Rock
+|move|p1a: Ming|Fake Out|p2a: Ghostly Tree
+|-immune|p2a: Ghostly Tree|[msg]
+|
+|turn|27
+|
+|move|p1a: Ming|Stone Edge|p2a: Ghostly Tree
+|-damage|p2a: Ghostly Tree|0 fnt
+|-damage|p1a: Ming|228\/271|[from] item: Life Orb
+|faint|p2a: Ghostly Tree
+|
+|
+|switch|p2a: Shell Smash|Blastoise, M, shiny|300\/300
+|-damage|p2a: Shell Smash|263\/300|[from] Stealth Rock
+|turn|28
+|
+|detailschange|p2a: Shell Smash|Blastoise-Mega, M, shiny
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p1a: Ming|High Jump Kick|p2a: Shell Smash
+|-damage|p2a: Shell Smash|13\/300
+|-damage|p1a: Ming|201\/271|[from] item: Life Orb
+|move|p2a: Shell Smash|Water Pulse|p1a: Ming
+|-damage|p1a: Ming|0 fnt
+|faint|p1a: Ming
+|
+|chat|Mydonut|gg
+|
+|switch|p1a: JediMaster|Alakazam, M, shiny|252\/252
+|turn|29
+|chat|TheVoid|gg
+|
+|move|p1a: JediMaster|Psyshock|p2a: Shell Smash
+|-damage|p2a: Shell Smash|0 fnt
+|faint|p2a: Shell Smash
+|
+|
+|switch|p2a: Defensive|Entei, shiny|163\/372
+|-damage|p2a: Defensive|70\/372|[from] Stealth Rock
+|-ability|p2a: Defensive|Pressure
+|turn|30
+|
+|move|p2a: Defensive|Extreme Speed|p1a: JediMaster
+|-enditem|p1a: JediMaster|Focus Sash
+|-damage|p1a: JediMaster|1\/252
+|move|p1a: JediMaster|Psyshock|p2a: Defensive
+|-damage|p2a: Defensive|0 fnt
+|faint|p2a: Defensive
+|
+|win|Mydonut
+|raw|Ladder updating...
+|raw|Mydonut's rating: 1335 &rarr; <strong>1352<\/strong><br \/>(+17 for winning)
+|raw|TheVoid's rating: 1293 &rarr; <strong>1271<\/strong><br \/>(-22 for losing)
+|leave|Mydonut
+|player|p1

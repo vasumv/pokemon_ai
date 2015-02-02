@@ -1,0 +1,276 @@
+|join|xroom
+|join|Mudoon
+|player|p1|xroom|1
+|player|p2|Mudoon|162
+|gametype|singles
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Mawile, F, shiny
+|poke|p1|Genesect, shiny
+|poke|p1|Rotom-Wash, shiny
+|poke|p1|Talonflame, M, shiny
+|poke|p1|Trevenant, F, shiny
+|poke|p1|Togekiss, F, shiny
+|poke|p2|Talonflame, M, shiny
+|poke|p2|Raikou
+|poke|p2|Medicham, M
+|poke|p2|Ferrothorn, M, shiny
+|poke|p2|Goodra, M
+|poke|p2|Mandibuzz, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Miley Cyrus|Mawile, F, shiny|300\/300
+|switch|p2a: Medicham|Medicham, M|261\/261
+|-ability|p1a: Miley Cyrus|Intimidate|[of] p2a: Medicham
+|-unboost|p2a: Medicham|atk|1
+|turn|1
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M, shiny|351\/351
+|-formechange|p1a: Miley Cyrus|Mawile-Mega
+|message|Mawile has Mega Evolved into Mega Mawile!
+|move|p1a: Miley Cyrus|Stealth Rock|p2a: Ferrothorn
+|-sidestart|p2: Mudoon|move: Stealth Rock
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Phoenxy|Talonflame, M, shiny|320\/320
+|move|p2a: Ferrothorn|Gyro Ball|p1a: Phoenxy
+|-resisted|p1a: Phoenxy
+|-damage|p1a: Phoenxy|85\/320
+|
+|turn|3
+|callback|decision
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|423\/423
+|-damage|p2a: Mandibuzz|318\/423|[from] Stealth Rock
+|move|p1a: Phoenxy|Flare Blitz|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|150\/423
+|-damage|p1a: Phoenxy|30\/320|[from] recoil|[of] p2a: Mandibuzz
+|
+|-heal|p2a: Mandibuzz|176\/423|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p1a: Phoenxy|Flare Blitz|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|11\/423
+|-damage|p1a: Phoenxy|0 fnt|[from] recoil|[of] p2a: Mandibuzz
+|faint|p1a: Phoenxy
+|move|p2a: Mandibuzz|Defog|p1: Phoenxy|[notarget]
+|-notarget
+|
+|-heal|p2a: Mandibuzz|37\/423|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Spoider|Genesect, shiny|284\/284
+|-boost|p1a: Spoider|spa|1|[from] ability: Download
+|turn|5
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M, shiny|351\/351
+|-damage|p2a: Ferrothorn|330\/351|[from] Stealth Rock
+|move|p1a: Spoider|U-turn|p2a: Ferrothorn
+|-crit|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|125\/351
+|-damage|p1a: Spoider|249\/284|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|callback|decision
+|
+|switch|p1a: Fairy Away|Togekiss, F, shiny|312\/312
+|
+|turn|6
+|callback|decision
+|
+|move|p1a: Fairy Away|Air Slash|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|17\/351
+|cant|p2a: Ferrothorn|flinch
+|
+|turn|7
+|callback|decision
+|
+|move|p1a: Fairy Away|Air Slash|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|faint|p2a: Ferrothorn
+|
+|callback|decision
+|
+|switch|p2a: Raikou|Raikou|321\/321
+|-damage|p2a: Raikou|281\/321|[from] Stealth Rock
+|-ability|p2a: Raikou|Pressure
+|turn|8
+|callback|decision
+|
+|switch|p1a: Snow Fireless|Trevenant, F, shiny|372\/372
+|move|p2a: Raikou|Volt Switch|p1a: Snow Fireless
+|-resisted|p1a: Snow Fireless
+|-damage|p1a: Snow Fireless|267\/372
+|callback|decision
+|
+|switch|p2a: Medicham|Medicham, M|261\/261
+|-damage|p2a: Medicham|245\/261|[from] Stealth Rock
+|
+|turn|9
+|callback|decision
+|
+|switch|p1a: Miley Cyrus|Mawile, F, shiny|300\/300
+|-formechange|p1a: Miley Cyrus|Mawile-Mega
+|-formechange|p2a: Medicham|Medicham-Mega
+|message|Medicham has Mega Evolved into Mega Medicham!
+|move|p2a: Medicham|Substitute|p2a: Medicham
+|-start|p2a: Medicham|Substitute
+|-damage|p2a: Medicham|180\/261
+|
+|turn|10
+|callback|decision
+|
+|move|p2a: Medicham|High Jump Kick|p1a: Miley Cyrus
+|-damage|p1a: Miley Cyrus|0 fnt
+|faint|p1a: Miley Cyrus
+|
+|callback|decision
+|
+|switch|p1a: Wabeam|Rotom-Wash, shiny|300\/300
+|turn|11
+|callback|decision
+|
+|switch|p1a: Fairy Away|Togekiss, F, shiny|312\/312
+|move|p2a: Medicham|Psycho Cut|p1a: Fairy Away
+|-damage|p1a: Fairy Away|105\/312
+|
+|turn|12
+|callback|decision
+|
+|move|p1a: Fairy Away|Air Slash|p2a: Medicham
+|-supereffective|p2a: Medicham
+|-end|p2a: Medicham|Substitute
+|move|p2a: Medicham|Psycho Cut|p1a: Fairy Away
+|-damage|p1a: Fairy Away|0 fnt
+|faint|p1a: Fairy Away
+|
+|callback|decision
+|
+|switch|p1a: Spoider|Genesect, shiny|249\/284
+|-boost|p1a: Spoider|atk|1|[from] ability: Download
+|turn|13
+|callback|decision
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|37\/423
+|-damage|p2a: Mandibuzz|0 fnt|[from] Stealth Rock
+|faint|p2a: Mandibuzz
+|move|p1a: Spoider|Extreme Speed|p2: Mandibuzz|[notarget]
+|-notarget
+|
+|callback|decision
+|
+|switch|p2a: Goodra|Goodra, M|341\/341
+|-damage|p2a: Goodra|299\/341|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|switch|p1a: Wabeam|Rotom-Wash, shiny|300\/300
+|move|p2a: Goodra|Fire Blast|p1a: Wabeam
+|-resisted|p1a: Wabeam
+|-damage|p1a: Wabeam|238\/300
+|
+|-heal|p1a: Wabeam|256\/300|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1a: Wabeam|Volt Switch|p2a: Goodra
+|-resisted|p2a: Goodra
+|-damage|p2a: Goodra|278\/341
+|callback|decision
+|
+|switch|p1a: Spoider|Genesect, shiny|249\/284
+|-boost|p1a: Spoider|atk|1|[from] ability: Download
+|move|p2a: Goodra|Dragon Pulse|p1a: Spoider
+|-resisted|p1a: Spoider
+|-damage|p1a: Spoider|171\/284
+|
+|turn|16
+|callback|decision
+|
+|switch|p2a: Talonflame|Talonflame, M, shiny|341\/341
+|-damage|p2a: Talonflame|171\/341|[from] Stealth Rock
+|move|p1a: Spoider|U-turn|p2a: Talonflame
+|-crit|p2a: Talonflame
+|-resisted|p2a: Talonflame
+|-damage|p2a: Talonflame|34\/341
+|callback|decision
+|
+|switch|p1a: Wabeam|Rotom-Wash, shiny|256\/300
+|
+|-heal|p1a: Wabeam|274\/300|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p2a: Talonflame|Flare Blitz|p1a: Wabeam
+|-resisted|p1a: Wabeam
+|-damage|p1a: Wabeam|191\/300
+|-damage|p2a: Talonflame|7\/341|[from] recoil|[of] p1a: Wabeam
+|-damage|p2a: Talonflame|0 fnt|[from] item: Life Orb
+|faint|p2a: Talonflame
+|move|p1a: Wabeam|Volt Switch|p2: Talonflame|[notarget]
+|-notarget
+|
+|-heal|p1a: Wabeam|209\/300|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Medicham|Medicham, M|180\/261
+|-formechange|p2a: Medicham|Medicham-Mega
+|-damage|p2a: Medicham|164\/261|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|move|p2a: Medicham|Psycho Cut|p1a: Wabeam
+|-damage|p1a: Wabeam|55\/300
+|move|p1a: Wabeam|Volt Switch|p2a: Medicham
+|-damage|p2a: Medicham|70\/261
+|callback|decision
+|
+|switch|p1a: Spoider|Genesect, shiny|171\/284
+|-boost|p1a: Spoider|atk|1|[from] ability: Download
+|
+|turn|19
+|callback|decision
+|
+|move|p1a: Spoider|Extreme Speed|p2a: Medicham
+|-damage|p2a: Medicham|0 fnt
+|faint|p2a: Medicham
+|
+|callback|decision
+|
+|switch|p2a: Raikou|Raikou|281\/321
+|-damage|p2a: Raikou|241\/321|[from] Stealth Rock
+|-ability|p2a: Raikou|Pressure
+|turn|20
+|callback|decision
+|
+|move|p1a: Spoider|Extreme Speed|p2a: Raikou
+|-damage|p2a: Raikou|0 fnt
+|faint|p2a: Raikou
+|
+|callback|decision
+|
+|switch|p2a: Goodra|Goodra, M|278\/341
+|-damage|p2a: Goodra|236\/341|[from] Stealth Rock
+|turn|21
+|callback|decision
+|
+|move|p1a: Spoider|Extreme Speed|p2a: Goodra
+|-damage|p2a: Goodra|0 fnt
+|-unboost|p1a: Spoider|spe|1|[from] ability: Gooey
+|faint|p2a: Goodra
+|
+|win|xroom
+|raw|Ladder updating...

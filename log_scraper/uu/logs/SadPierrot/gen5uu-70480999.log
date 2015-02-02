@@ -1,0 +1,455 @@
+|join|AlabasterW
+|join|SadPierrot
+|player|p1|AlabasterW|129
+|player|p2|SadPierrot|238
+|gametype|singles
+|tier|[Gen 5] UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Porygon2
+|poke|p1|Kingdra, M
+|poke|p1|Bronzong
+|poke|p1|Zoroark, M
+|poke|p1|Durant, M
+|poke|p1|Cofagrigus, F
+|poke|p2|Mienshao, M
+|poke|p2|Sharpedo, F
+|poke|p2|Sableye, F, shiny
+|poke|p2|Mew
+|poke|p2|Meloetta, shiny
+|poke|p2|Blastoise, M, shiny
+|teampreview
+|callback|decision
+|join|cowmoomoo
+|
+|start
+|switch|p1a: Bronzdong|Bronzong|261\/261
+|switch|p2a: Mew|Mew|341\/341
+|turn|1
+|callback|decision
+|leave|cowmoomoo
+|
+|move|p1a: Bronzdong|Dark Pulse|p2a: Mew
+|-supereffective|p2a: Mew
+|-damage|p2a: Mew|71\/341
+|move|p2a: Mew|Thunderbolt|p1a: Bronzdong
+|replace|p1a: Not Zoroark|Zoroark, M|261\/261
+|-damage|p1a: Not Zoroark|115\/261
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: Blastoise|Blastoise, M, shiny|300\/300
+|move|p1a: Not Zoroark|Dark Pulse|p2a: Blastoise
+|-damage|p2a: Blastoise|198\/300
+|
+|-heal|p2a: Blastoise|216\/300|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p1a: Bronzdong|Bronzong|338\/338
+|move|p2a: Blastoise|Scald|p1a: Bronzdong
+|-damage|p1a: Bronzdong|277\/338
+|
+|-heal|p2a: Blastoise|234\/300|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Blastoise|Scald|p1a: Bronzdong
+|-damage|p1a: Bronzdong|211\/338
+|move|p1a: Bronzdong|Stealth Rock|p2a: Blastoise
+|-sidestart|p2: SadPierrot|move: Stealth Rock
+|
+|-heal|p2a: Blastoise|252\/300|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p2a: Blastoise|Rapid Spin|p1a: Bronzdong
+|-resisted|p1a: Bronzdong
+|-damage|p1a: Bronzdong|206\/338
+|-sideend|p2: SadPierrot|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Blastoise
+|move|p1a: Bronzdong|Light Screen|p1a: Bronzdong
+|-sidestart|p1: AlabasterW|move: Light Screen
+|
+|-heal|p2a: Blastoise|270\/300|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Blastoise|Scald|p1a: Bronzdong
+|-damage|p1a: Bronzdong|176\/338
+|move|p1a: Bronzdong|Reflect|p1a: Bronzdong
+|-sidestart|p1: AlabasterW|Reflect
+|
+|-heal|p2a: Blastoise|288\/300|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p2a: Blastoise|Scald|p1a: Bronzdong
+|-damage|p1a: Bronzdong|145\/338
+|move|p1a: Bronzdong|Stealth Rock|p2a: Blastoise
+|-sidestart|p2: SadPierrot|move: Stealth Rock
+|
+|-heal|p2a: Blastoise|300\/300|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p1a: Ramses|Cofagrigus, F|320\/320
+|move|p2a: Blastoise|Scald|p1a: Ramses
+|-crit|p1a: Ramses
+|-damage|p1a: Ramses|160\/320
+|
+|-heal|p1a: Ramses|180\/320|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p2a: Blastoise|Scald|p1a: Ramses
+|-damage|p1a: Ramses|144\/320
+|move|p1a: Ramses|Knock Off|p2a: Blastoise
+|-damage|p2a: Blastoise|294\/300
+|-enditem|p2a: Blastoise|Leftovers|[from] move: Knock Off|[of] p1a: Ramses
+|
+|-heal|p1a: Ramses|164\/320|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p2a: Blastoise|Toxic|p1a: Ramses
+|-status|p1a: Ramses|tox
+|move|p1a: Ramses|Will-O-Wisp|p2a: Blastoise
+|-status|p2a: Blastoise|brn
+|
+|-heal|p1a: Ramses|184\/320 tox|[from] item: Leftovers
+|-damage|p2a: Blastoise|257\/300 brn|[from] brn
+|-damage|p1a: Ramses|164\/320 tox|[from] psn
+|turn|11
+|callback|decision
+|
+|switch|p1a: Quackers|Porygon2|374\/374
+|-ability|p1a: Quackers|Torrent|[from] ability: Trace|[of] p2a: Blastoise
+|move|p2a: Blastoise|Scald|p1a: Quackers
+|-damage|p1a: Quackers|344\/374
+|
+|-damage|p2a: Blastoise|220\/300 brn|[from] brn
+|turn|12
+|callback|decision
+|
+|move|p2a: Blastoise|Rapid Spin|p1a: Quackers
+|-damage|p1a: Quackers|342\/374
+|-sideend|p2: SadPierrot|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Blastoise
+|move|p1a: Quackers|Discharge|p2a: Blastoise
+|-crit|p2a: Blastoise
+|-supereffective|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|-sideend|p1: AlabasterW|move: Light Screen
+|callback|decision
+|
+|switch|p2a: Mienshao|Mienshao, M|272\/272
+|turn|13
+|callback|decision
+|
+|switch|p1a: Ramses|Cofagrigus, F|164\/320 tox
+|move|p2a: Mienshao|Swords Dance|p2a: Mienshao
+|-boost|p2a: Mienshao|atk|2
+|
+|-heal|p1a: Ramses|184\/320 tox|[from] item: Leftovers
+|-damage|p1a: Ramses|164\/320 tox|[from] psn
+|-sideend|p1: AlabasterW|Reflect
+|turn|14
+|callback|decision
+|
+|move|p2a: Mienshao|Swords Dance|p2a: Mienshao
+|-boost|p2a: Mienshao|atk|2
+|move|p1a: Ramses|Will-O-Wisp|p2a: Mienshao|[miss]
+|-miss|p1a: Ramses|p2a: Mienshao
+|
+|-heal|p1a: Ramses|184\/320 tox|[from] item: Leftovers
+|-damage|p1a: Ramses|144\/320 tox|[from] psn
+|turn|15
+|callback|decision
+|
+|move|p2a: Mienshao|Swords Dance|p2a: Mienshao
+|-boost|p2a: Mienshao|atk|2
+|move|p1a: Ramses|Haze|p1a: Ramses
+|-clearallboost
+|
+|-heal|p1a: Ramses|164\/320 tox|[from] item: Leftovers
+|-damage|p1a: Ramses|104\/320 tox|[from] psn
+|turn|16
+|callback|decision
+|
+|move|p2a: Mienshao|Swords Dance|p2a: Mienshao
+|-boost|p2a: Mienshao|atk|2
+|move|p1a: Ramses|Will-O-Wisp|p2a: Mienshao
+|-status|p2a: Mienshao|brn
+|
+|-heal|p1a: Ramses|124\/320 tox|[from] item: Leftovers
+|-damage|p2a: Mienshao|238\/272 brn|[from] brn
+|-damage|p1a: Ramses|44\/320 tox|[from] psn
+|turn|17
+|callback|decision
+|
+|move|p2a: Mienshao|Dual Chop|p1a: Ramses
+|-damage|p1a: Ramses|17\/320 tox
+|-ability|p2a: Mienshao|Mummy|[from] Mummy
+|-damage|p1a: Ramses|0 fnt
+|-ability|p2a: Mienshao|Mummy|[from] Mummy
+|-hitcount|p1a: Ramses|2
+|faint|p1a: Ramses
+|
+|-damage|p2a: Mienshao|204\/272 brn|[from] brn
+|callback|decision
+|
+|switch|p1a: Ragnarok|Durant, M|258\/258
+|turn|18
+|callback|decision
+|
+|switch|p2a: Meloetta|Meloetta, shiny|342\/342
+|move|p1a: Ragnarok|Hone Claws|p1a: Ragnarok
+|-boost|p1a: Ragnarok|atk|1
+|-boost|p1a: Ragnarok|accuracy|1
+|
+|turn|19
+|callback|decision
+|
+|move|p1a: Ragnarok|X-Scissor|p2a: Meloetta
+|-supereffective|p2a: Meloetta
+|-damage|p2a: Meloetta|0 fnt
+|faint|p2a: Meloetta
+|
+|callback|decision
+|
+|switch|p2a: Mew|Mew|71\/341
+|turn|20
+|callback|decision
+|
+|move|p2a: Mew|Earth Power|p1a: Ragnarok
+|-damage|p1a: Ragnarok|87\/258
+|move|p1a: Ragnarok|X-Scissor|p2a: Mew
+|-supereffective|p2a: Mew
+|-damage|p2a: Mew|0 fnt
+|faint|p2a: Mew
+|
+|callback|decision
+|
+|switch|p2a: Sharpedo|Sharpedo, F|282\/282
+|turn|21
+|callback|decision
+|
+|move|p2a: Sharpedo|Protect|p2a: Sharpedo
+|-singleturn|p2a: Sharpedo|Protect
+|move|p1a: Ragnarok|Hone Claws|p1a: Ragnarok
+|-boost|p1a: Ragnarok|atk|1
+|-boost|p1a: Ragnarok|accuracy|1
+|
+|-boost|p2a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|22
+|callback|decision
+|
+|move|p2a: Sharpedo|Earthquake|p1a: Ragnarok
+|-damage|p1a: Ragnarok|0 fnt
+|faint|p1a: Ragnarok
+|
+|-boost|p2a: Sharpedo|spe|1|[from] ability: Speed Boost
+|callback|decision
+|
+|switch|p1a: Quackers|Porygon2|342\/374
+|-ability|p1a: Quackers|Speed Boost|[from] ability: Trace|[of] p2a: Sharpedo
+|turn|23
+|callback|decision
+|
+|switch|p2a: Sableye|Sableye, F, shiny|241\/241
+|move|p1a: Quackers|Discharge|p2a: Sableye
+|-damage|p2a: Sableye|149\/241
+|-status|p2a: Sableye|par
+|-enditem|p2a: Sableye|Lum Berry|[eat]
+|-curestatus|p2a: Sableye|par
+|
+|-boost|p1a: Quackers|spe|1|[from] ability: Speed Boost
+|turn|24
+|callback|decision
+|
+|move|p2a: Sableye|Will-O-Wisp|p1a: Quackers
+|-status|p1a: Quackers|brn
+|move|p1a: Quackers|Discharge|p2a: Sableye
+|-damage|p2a: Sableye|61\/241
+|
+|-damage|p1a: Quackers|296\/374 brn|[from] brn
+|-boost|p1a: Quackers|spe|1|[from] ability: Speed Boost
+|turn|25
+|callback|decision
+|
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|182\/241
+|move|p1a: Quackers|Ice Beam|p2a: Sableye
+|-damage|p2a: Sableye|76\/241
+|
+|-damage|p1a: Quackers|250\/374 brn|[from] brn
+|-boost|p1a: Quackers|spe|1|[from] ability: Speed Boost
+|turn|26
+|callback|decision
+|
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|197\/241
+|move|p1a: Quackers|Ice Beam|p2a: Sableye
+|-damage|p2a: Sableye|82\/241
+|
+|-damage|p1a: Quackers|204\/374 brn|[from] brn
+|-boost|p1a: Quackers|spe|1|[from] ability: Speed Boost
+|turn|27
+|callback|decision
+|
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|203\/241
+|move|p1a: Quackers|Recover|p1a: Quackers
+|-heal|p1a: Quackers|374\/374 brn
+|
+|-damage|p1a: Quackers|328\/374 brn|[from] brn
+|-boost|p1a: Quackers|spe|1|[from] ability: Speed Boost
+|turn|28
+|callback|decision
+|
+|move|p2a: Sableye|Taunt|p1a: Quackers
+|-start|p1a: Quackers|move: Taunt
+|move|p1a: Quackers|Discharge|p2a: Sableye
+|-damage|p2a: Sableye|117\/241
+|-status|p2a: Sableye|par
+|
+|-damage|p1a: Quackers|282\/374 brn|[from] brn
+|-boost|p1a: Quackers|spe|1|[from] ability: Speed Boost
+|turn|29
+|callback|decision
+|
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|238\/241 par
+|move|p1a: Quackers|Discharge|p2a: Sableye
+|-damage|p2a: Sableye|151\/241 par
+|
+|-damage|p1a: Quackers|236\/374 brn|[from] brn
+|turn|30
+|callback|decision
+|
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|241\/241 par
+|move|p1a: Quackers|Ice Beam|p2a: Sableye
+|-crit|p2a: Sableye
+|-damage|p2a: Sableye|6\/241 par
+|
+|-damage|p1a: Quackers|190\/374 brn|[from] brn
+|-end|p1a: Quackers|move: Taunt
+|turn|31
+|callback|decision
+|
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|127\/241 par
+|move|p1a: Quackers|Discharge|p2a: Sableye
+|-damage|p2a: Sableye|38\/241 par
+|
+|-damage|p1a: Quackers|144\/374 brn|[from] brn
+|turn|32
+|callback|decision
+|
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|159\/241 par
+|move|p1a: Quackers|Recover|p1a: Quackers
+|-heal|p1a: Quackers|331\/374 brn
+|
+|-damage|p1a: Quackers|285\/374 brn|[from] brn
+|turn|33
+|callback|decision
+|
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|241\/241 par
+|move|p1a: Quackers|Discharge|p2a: Sableye
+|-crit|p2a: Sableye
+|-damage|p2a: Sableye|42\/241 par
+|
+|-damage|p1a: Quackers|239\/374 brn|[from] brn
+|turn|34
+|callback|decision
+|
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|163\/241 par
+|move|p1a: Quackers|Discharge|p2a: Sableye
+|-damage|p2a: Sableye|76\/241 par
+|
+|-damage|p1a: Quackers|193\/374 brn|[from] brn
+|turn|35
+|callback|decision
+|
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|197\/241 par
+|move|p1a: Quackers|Recover|p1a: Quackers
+|-heal|p1a: Quackers|374\/374 brn
+|
+|-damage|p1a: Quackers|328\/374 brn|[from] brn
+|turn|36
+|callback|decision
+|
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|241\/241 par
+|move|p1a: Quackers|Discharge|p2a: Sableye
+|-damage|p2a: Sableye|146\/241 par
+|
+|-damage|p1a: Quackers|282\/374 brn|[from] brn
+|turn|37
+|callback|decision
+|
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|241\/241 par
+|move|p1a: Quackers|Ice Beam|p2a: Sableye
+|-damage|p2a: Sableye|121\/241 par
+|
+|-damage|p1a: Quackers|236\/374 brn|[from] brn
+|turn|38
+|callback|decision
+|
+|cant|p2a: Sableye|par
+|move|p1a: Quackers|Recover|p1a: Quackers
+|-heal|p1a: Quackers|374\/374 brn
+|
+|-damage|p1a: Quackers|328\/374 brn|[from] brn
+|turn|39
+|callback|decision
+|
+|cant|p2a: Sableye|par
+|move|p1a: Quackers|Ice Beam|p2a: Sableye
+|-damage|p2a: Sableye|18\/241 par
+|
+|-damage|p1a: Quackers|282\/374 brn|[from] brn
+|turn|40
+|callback|decision
+|
+|cant|p2a: Sableye|par
+|move|p1a: Quackers|Discharge|p2a: Sableye
+|-damage|p2a: Sableye|0 fnt
+|faint|p2a: Sableye
+|
+|-damage|p1a: Quackers|236\/374 brn|[from] brn
+|callback|decision
+|
+|switch|p2a: Mienshao|Mienshao, M|204\/272 brn
+|turn|41
+|callback|decision
+|
+|move|p1a: Quackers|Tri Attack|p2a: Mienshao
+|-damage|p2a: Mienshao|0 fnt
+|faint|p2a: Mienshao
+|
+|-damage|p1a: Quackers|190\/374 brn|[from] brn
+|callback|decision
+|-message|SadPierrot forfeited.
+|
+|win|AlabasterW
+|raw|Ladder updating...
+|leave|SadPierrot
+|player|p2
+|raw|AlabasterW's rating: 1776 &rarr; <strong>1781<\/strong><br \/>(+5 for winning)
+|raw|SadPierrot's rating: 1831 &rarr; <strong>1820<\/strong><br \/>(-11 for losing)

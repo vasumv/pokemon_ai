@@ -1,0 +1,192 @@
+|join|vonschnitzel
+|join|Aman13
+|player|p1|vonschnitzel|266
+|player|p2|Aman13|137
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Gyarados, M
+|poke|p1|Aegislash, F
+|poke|p1|Hydreigon, M
+|poke|p1|Infernape, F
+|poke|p1|Greninja, M
+|poke|p1|Garchomp, F
+|poke|p2|Tyranitar, F
+|poke|p2|Jellicent, M
+|poke|p2|Excadrill, M
+|poke|p2|Rotom-Wash
+|poke|p2|Talonflame, F
+|poke|p2|Pinsir, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Infernape|Infernape, F|293\/293
+|switch|p2a: Rotom-Wash|Rotom-Wash|298\/298
+|turn|1
+|callback|decision
+|
+|move|p1a: Infernape|Fake Out|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|260\/298
+|cant|p2a: Rotom-Wash|flinch
+|
+|-heal|p2a: Rotom-Wash|278\/298|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p1a: Hydreigon|Hydreigon, M|325\/325
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Hydreigon
+|-resisted|p1a: Hydreigon
+|-damage|p1a: Hydreigon|267\/325
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, F|404\/404
+|-weather|Sandstorm
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Hydreigon|247\/325|[from] sandstorm
+|turn|3
+|callback|decision
+|
+|switch|p1a: Gyarados|Gyarados, M|332\/332
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Tyranitar
+|-unboost|p2a: Tyranitar|atk|1
+|move|p2a: Tyranitar|Stealth Rock|p1a: Gyarados
+|-sidestart|p1: vonschnitzel|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gyarados|312\/332|[from] sandstorm
+|turn|4
+|callback|decision
+|
+|switch|p2a: Jellicent|Jellicent, M|404\/404
+|-formechange|p1a: Gyarados|Gyarados-Mega
+|message|Gyarados has Mega Evolved into Mega Gyarados!
+|-ability|p1a: Gyarados|Mold Breaker
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gyarados|292\/332|[from] sandstorm
+|-damage|p2a: Jellicent|379\/404|[from] sandstorm
+|-heal|p2a: Jellicent|404\/404|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p1a: Gyarados|Substitute|p1a: Gyarados
+|-start|p1a: Gyarados|Substitute
+|-damage|p1a: Gyarados|209\/332
+|move|p2a: Jellicent|Will-O-Wisp|p1a: Gyarados
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gyarados|189\/332|[from] sandstorm
+|-damage|p2a: Jellicent|379\/404|[from] sandstorm
+|-heal|p2a: Jellicent|404\/404|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|move|p2a: Jellicent|Scald|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-activate|p1a: Gyarados|Substitute|[damage]
+|
+|-weather|none
+|turn|7
+|callback|decision
+|
+|move|p1a: Gyarados|Earthquake|p2a: Jellicent
+|-damage|p2a: Jellicent|24\/404
+|move|p2a: Jellicent|Scald|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-activate|p1a: Gyarados|Substitute|[damage]
+|
+|-heal|p2a: Jellicent|49\/404|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p1a: Gyarados|Earthquake|p2a: Jellicent
+|-damage|p2a: Jellicent|0 fnt
+|faint|p2a: Jellicent
+|
+|callback|decision
+|
+|switch|p2a: Talonflame|Talonflame, F|309\/309
+|turn|9
+|callback|decision
+|
+|move|p2a: Talonflame|Brave Bird|p1a: Gyarados
+|-end|p1a: Gyarados|Substitute
+|-damage|p2a: Talonflame|303\/309|[from] recoil|[of] p1a: Gyarados
+|move|p1a: Gyarados|Waterfall|p2a: Talonflame
+|-supereffective|p2a: Talonflame
+|-damage|p2a: Talonflame|0 fnt
+|faint|p2a: Talonflame
+|
+|callback|decision
+|
+|switch|p2a: Pinsir|Pinsir, F|271\/271
+|turn|10
+|callback|decision
+|
+|-formechange|p2a: Pinsir|Pinsir-Mega
+|message|Pinsir has Mega Evolved into Mega Pinsir!
+|move|p1a: Gyarados|Waterfall|p2a: Pinsir
+|-damage|p2a: Pinsir|0 fnt
+|faint|p2a: Pinsir
+|
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|278\/298
+|turn|11
+|callback|decision
+|
+|move|p1a: Gyarados|Earthquake|p2a: Rotom-Wash
+|-supereffective|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|callback|decision
+|
+|switch|p2a: Excadrill|Excadrill, M|361\/361
+|-ability|p2a: Excadrill|Mold Breaker
+|-item|p2a: Excadrill|Air Balloon
+|turn|12
+|callback|decision
+|
+|move|p1a: Gyarados|Waterfall|p2a: Excadrill
+|-supereffective|p2a: Excadrill
+|-damage|p2a: Excadrill|0 fnt
+|-enditem|p2a: Excadrill|Air Balloon
+|faint|p2a: Excadrill
+|
+|callback|decision
+|chat|vonschnitzel|gg wp
+|chat|Aman13|gg
+|
+|switch|p2a: Tyranitar|Tyranitar, F|404\/404
+|-weather|Sandstorm
+|turn|13
+|callback|decision
+|chat|vonschnitzel|cant touch the gyarados
+|
+|move|p1a: Gyarados|Waterfall|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|win|vonschnitzel
+|raw|Ladder updating...
+|raw|vonschnitzel's rating: 1954 &rarr; <strong>1957<\/strong><br \/>(+3 for winning)
+|raw|Aman13's rating: 1766 &rarr; <strong>1760<\/strong><br \/>(-6 for losing)

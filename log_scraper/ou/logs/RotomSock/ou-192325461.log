@@ -1,0 +1,338 @@
+|join|RotomSock
+|join|Miss Noob
+|player|p1|RotomSock|37
+|player|p2|Miss Noob|283
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Gyarados, M
+|poke|p1|Latias, F
+|poke|p1|Heatran, M
+|poke|p1|Ferrothorn, M
+|poke|p1|Thundurus, M
+|poke|p1|Keldeo
+|poke|p2|Talonflame, F
+|poke|p2|Gyarados, F
+|poke|p2|Breloom, F
+|poke|p2|Uxie
+|poke|p2|Scolipede, M
+|poke|p2|Raikou
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Thundurus|Thundurus, M|299\/299
+|switch|p2a: Uxie|Uxie|353\/353
+|turn|1
+|
+|move|p1a: Thundurus|Taunt|p2a: Uxie
+|-start|p2a: Uxie|move: Taunt
+|cant|p2a: Uxie|move: Taunt|Stealth Rock
+|
+|turn|2
+|
+|switch|p1a: Heatran|Heatran, M|385\/385
+|move|p2a: Uxie|Knock Off|p1a: Heatran
+|-damage|p1a: Heatran|325\/385
+|-enditem|p1a: Heatran|Leftovers|[from] move: Knock Off|[of] p2a: Uxie
+|
+|turn|3
+|
+|move|p2a: Uxie|U-turn|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|315\/385
+|
+|switch|p2a: Gyarados|Gyarados, F|331\/331
+|-ability|p2a: Gyarados|Intimidate|[of] p1a: Heatran
+|-unboost|p1a: Heatran|atk|1
+|move|p1a: Heatran|Stealth Rock|p2a: Gyarados
+|-sidestart|p2: Miss Noob|move: Stealth Rock
+|
+|turn|4
+|join|B470-killer
+|
+|move|p2a: Gyarados|Earthquake|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|
+|switch|p1a: Thundurus|Thundurus, M|299\/299
+|turn|5
+|
+|switch|p1a: Latias|Latias, F|301\/301
+|switch|p2a: Uxie|Uxie|353\/353
+|-damage|p2a: Uxie|309\/353|[from] Stealth Rock
+|
+|-heal|p2a: Uxie|331\/353|[from] item: Leftovers
+|turn|6
+|
+|move|p1a: Latias|Draco Meteor|p2a: Uxie
+|-damage|p2a: Uxie|154\/353
+|-unboost|p1a: Latias|spa|2
+|-damage|p1a: Latias|271\/301|[from] item: Life Orb
+|move|p2a: Uxie|Stealth Rock|p1a: Latias
+|-sidestart|p1: RotomSock|move: Stealth Rock
+|
+|-heal|p2a: Uxie|176\/353|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|352\/352
+|-damage|p1a: Ferrothorn|330\/352|[from] Stealth Rock
+|move|p2a: Uxie|Yawn|p1a: Ferrothorn
+|-start|p1a: Ferrothorn|move: Yawn|[of] p2a: Uxie
+|
+|-heal|p2a: Uxie|198\/353|[from] item: Leftovers
+|turn|8
+|
+|move|p2a: Uxie|U-turn|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|302\/352
+|-damage|p2a: Uxie|154\/353|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|
+|switch|p2a: Gyarados|Gyarados, F|331\/331
+|-damage|p2a: Gyarados|249\/331|[from] Stealth Rock
+|-ability|p2a: Gyarados|Intimidate|[of] p1a: Ferrothorn
+|-unboost|p1a: Ferrothorn|atk|1
+|move|p1a: Ferrothorn|Leech Seed|p2a: Gyarados
+|-start|p2a: Gyarados|move: Leech Seed
+|
+|-status|p1a: Ferrothorn|slp
+|-damage|p2a: Gyarados|208\/331|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|343\/352 slp|[silent]
+|turn|9
+|
+|switch|p1a: Keldeo|Keldeo|323\/323
+|-damage|p1a: Keldeo|303\/323|[from] Stealth Rock
+|move|p2a: Gyarados|Dragon Dance|p2a: Gyarados
+|-boost|p2a: Gyarados|atk|1
+|-boost|p2a: Gyarados|spe|1
+|
+|-damage|p2a: Gyarados|167\/331|[from] Leech Seed|[of] p1a: Keldeo
+|-heal|p1a: Keldeo|323\/323|[silent]
+|turn|10
+|
+|move|p1a: Keldeo|Secret Sword|p2a: Gyarados
+|-resisted|p2a: Gyarados
+|-damage|p2a: Gyarados|80\/331
+|move|p2a: Gyarados|Earthquake|p1a: Keldeo
+|-damage|p1a: Keldeo|123\/323
+|
+|-damage|p2a: Gyarados|39\/331|[from] Leech Seed|[of] p1a: Keldeo
+|-heal|p1a: Keldeo|164\/323|[silent]
+|turn|11
+|
+|switch|p2a: Scolipede|Scolipede, M|323\/323
+|-damage|p2a: Scolipede|243\/323|[from] Stealth Rock
+|move|p1a: Keldeo|Secret Sword|p2a: Scolipede
+|-resisted|p2a: Scolipede
+|-damage|p2a: Scolipede|204\/323
+|
+|-heal|p2a: Scolipede|224\/323|[from] item: Black Sludge
+|turn|12
+|
+|switch|p1a: Thundurus|Thundurus, M|299\/299
+|-damage|p1a: Thundurus|225\/299|[from] Stealth Rock
+|move|p2a: Scolipede|Substitute|p2a: Scolipede
+|-start|p2a: Scolipede|Substitute
+|-damage|p2a: Scolipede|144\/323
+|
+|-heal|p1a: Thundurus|243\/299|[from] item: Leftovers
+|-heal|p2a: Scolipede|164\/323|[from] item: Black Sludge
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|13
+|
+|move|p2a: Scolipede|Protect|p2a: Scolipede
+|-singleturn|p2a: Scolipede|Protect
+|move|p1a: Thundurus|Thunderbolt|p2a: Scolipede
+|-activate|p2a: Scolipede|Protect
+|
+|-heal|p2a: Scolipede|184\/323|[from] item: Black Sludge
+|-heal|p1a: Thundurus|261\/299|[from] item: Leftovers
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|14
+|
+|move|p1a: Thundurus|Taunt|p2a: Scolipede
+|-start|p2a: Scolipede|move: Taunt
+|cant|p2a: Scolipede|move: Taunt|Baton Pass
+|
+|-heal|p2a: Scolipede|204\/323|[from] item: Black Sludge
+|-heal|p1a: Thundurus|279\/299|[from] item: Leftovers
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|15
+|
+|switch|p2a: Gyarados|Gyarados, F|39\/331
+|-damage|p2a: Gyarados|0 fnt|[from] Stealth Rock
+|faint|p2a: Gyarados
+|move|p1a: Thundurus|Thunderbolt|p2: Gyarados|[notarget]
+|-notarget
+|
+|-heal|p1a: Thundurus|297\/299|[from] item: Leftovers
+|
+|switch|p2a: Raikou|Raikou|321\/321
+|-damage|p2a: Raikou|281\/321|[from] Stealth Rock
+|-ability|p2a: Raikou|Pressure
+|turn|16
+|
+|switch|p1a: Latias|Latias, F|271\/301
+|-damage|p1a: Latias|234\/301|[from] Stealth Rock
+|move|p2a: Raikou|Calm Mind|p2a: Raikou
+|-boost|p2a: Raikou|spa|1
+|-boost|p2a: Raikou|spd|1
+|
+|-heal|p2a: Raikou|301\/321|[from] item: Leftovers
+|turn|17
+|
+|move|p2a: Raikou|Substitute|p2a: Raikou
+|-start|p2a: Raikou|Substitute
+|-damage|p2a: Raikou|221\/321
+|move|p1a: Latias|Draco Meteor|p2a: Raikou
+|-end|p2a: Raikou|Substitute
+|-unboost|p1a: Latias|spa|2
+|-damage|p1a: Latias|204\/301|[from] item: Life Orb
+|
+|-heal|p2a: Raikou|241\/321|[from] item: Leftovers
+|turn|18
+|
+|move|p2a: Raikou|Hidden Power|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|44\/301
+|move|p1a: Latias|Psyshock|p2a: Raikou
+|-damage|p2a: Raikou|136\/321
+|-damage|p1a: Latias|14\/301|[from] item: Life Orb
+|
+|-heal|p2a: Raikou|156\/321|[from] item: Leftovers
+|turn|19
+|
+|move|p2a: Raikou|Thunderbolt|p1a: Latias
+|-resisted|p1a: Latias
+|-damage|p1a: Latias|0 fnt
+|faint|p1a: Latias
+|
+|-heal|p2a: Raikou|176\/321|[from] item: Leftovers
+|
+|switch|p1a: Keldeo|Keldeo|164\/323
+|-damage|p1a: Keldeo|144\/323|[from] Stealth Rock
+|turn|20
+|leave|B470-killer
+|
+|switch|p2a: Scolipede|Scolipede, M|204\/323
+|-damage|p2a: Scolipede|124\/323|[from] Stealth Rock
+|move|p1a: Keldeo|Secret Sword|p2a: Scolipede
+|-resisted|p2a: Scolipede
+|-damage|p2a: Scolipede|85\/323
+|
+|-heal|p2a: Scolipede|105\/323|[from] item: Black Sludge
+|turn|21
+|
+|switch|p1a: Thundurus|Thundurus, M|297\/299
+|-damage|p1a: Thundurus|223\/299|[from] Stealth Rock
+|move|p2a: Scolipede|Baton Pass|p2a: Scolipede
+|
+|switch|p2a: Raikou|Raikou|176\/321
+|-damage|p2a: Raikou|136\/321|[from] Stealth Rock
+|-ability|p2a: Raikou|Pressure
+|
+|-heal|p2a: Raikou|156\/321|[from] item: Leftovers
+|-heal|p1a: Thundurus|241\/299|[from] item: Leftovers
+|turn|22
+|
+|switch|p1a: Gyarados|Gyarados, M|331\/331
+|-damage|p1a: Gyarados|249\/331|[from] Stealth Rock
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Raikou
+|-unboost|p2a: Raikou|atk|1
+|move|p2a: Raikou|Thunderbolt|p1a: Gyarados
+|-supereffective|p1a: Gyarados
+|-damage|p1a: Gyarados|0 fnt
+|faint|p1a: Gyarados
+|
+|-heal|p2a: Raikou|176\/321|[from] item: Leftovers
+|
+|switch|p1a: Keldeo|Keldeo|144\/323
+|-damage|p1a: Keldeo|124\/323|[from] Stealth Rock
+|turn|23
+|
+|switch|p2a: Breloom|Breloom, F|287\/287
+|-damage|p2a: Breloom|270\/287|[from] Stealth Rock
+|move|p1a: Keldeo|Hydro Pump|p2a: Breloom
+|-crit|p2a: Breloom
+|-resisted|p2a: Breloom
+|-damage|p2a: Breloom|51\/287
+|
+|-status|p2a: Breloom|tox|[from] item: Toxic Orb
+|turn|24
+|c|âMiss Noob|heeeee
+|
+|move|p1a: Keldeo|Hydro Pump|p2a: Breloom
+|-resisted|p2a: Breloom
+|-damage|p2a: Breloom|0 fnt
+|faint|p2a: Breloom
+|
+|
+|switch|p2a: Talonflame|Talonflame, F|315\/315
+|-damage|p2a: Talonflame|158\/315|[from] Stealth Rock
+|turn|25
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|343\/352 slp
+|-damage|p1a: Ferrothorn|321\/352 slp|[from] Stealth Rock
+|move|p2a: Talonflame|Acrobatics|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|224\/352 slp
+|-damage|p2a: Talonflame|119\/315|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|
+|turn|26
+|
+|switch|p1a: Thundurus|Thundurus, M|241\/299
+|-damage|p1a: Thundurus|167\/299|[from] Stealth Rock
+|move|p2a: Talonflame|Roost|p2a: Talonflame
+|-heal|p2a: Talonflame|277\/315
+|
+|-heal|p1a: Thundurus|185\/299|[from] item: Leftovers
+|turn|27
+|
+|move|p2a: Talonflame|Flare Blitz|p1a: Thundurus
+|-damage|p1a: Thundurus|0 fnt
+|-damage|p2a: Talonflame|216\/315|[from] recoil|[of] p1a: Thundurus
+|faint|p1a: Thundurus
+|
+|c|âRotomSock|jolly, ofc :[
+|c|âRotomSock|gg
+|c|âMiss Noob|gg
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|224\/352 slp
+|-damage|p1a: Ferrothorn|202\/352 slp|[from] Stealth Rock
+|turn|28
+|c|âMiss Noob|is good
+|
+|move|p2a: Talonflame|Flare Blitz|p1a: Ferrothorn
+|-supereffective|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|0 fnt
+|-damage|p2a: Talonflame|177\/315|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|-damage|p2a: Talonflame|110\/315|[from] recoil|[of] p1a: Ferrothorn
+|faint|p1a: Ferrothorn
+|
+|c|âRotomSock|jolly talon ruins my team
+|
+|switch|p1a: Keldeo|Keldeo|124\/323
+|-damage|p1a: Keldeo|104\/323|[from] Stealth Rock
+|turn|29
+|c|âMiss Noob|weak to electric type
+|c|âMiss Noob|mega Manectric
+|
+|move|p2a: Talonflame|Acrobatics|p1a: Keldeo
+|-supereffective|p1a: Keldeo
+|-damage|p1a: Keldeo|0 fnt
+|faint|p1a: Keldeo
+|
+|win|Miss Noob
+|raw|Ladder updating...
+|raw|RotomSock's rating: 1655 &rarr; <strong>1629<\/strong><br \/>(-26 for losing)
+|raw|Miss Noob's rating: 1554 &rarr; <strong>1580<\/strong><br \/>(+26 for winning)

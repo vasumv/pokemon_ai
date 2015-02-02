@@ -1,0 +1,382 @@
+|join|AquaGrunt yoshi
+|join|CrackPipeAndy
+|player|p1|AquaGrunt yoshi|141
+|player|p2|CrackPipeAndy|265
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Chatot, M
+|poke|p1|Cloyster, F, shiny
+|poke|p1|Sharpedo, F
+|poke|p1|Kabutops, M
+|poke|p1|Sigilyph, M, shiny
+|poke|p1|Abomasnow, M, shiny
+|poke|p2|Chesnaught, F
+|poke|p2|Snorlax, M
+|poke|p2|Cofagrigus, M
+|poke|p2|Starmie
+|poke|p2|Hitmontop, M
+|poke|p2|Houndoom, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Chatot|Chatot, M|356\/356
+|switch|p2a: Hitmontop|Hitmontop, M|304\/304
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Chatot
+|-unboost|p1a: Chatot|atk|1
+|turn|1
+|
+|move|p2a: Hitmontop|Fake Out|p1a: Chatot
+|-damage|p1a: Chatot|294\/356
+|cant|p1a: Chatot|flinch
+|
+|turn|2
+|
+|switch|p2a: Cofagrigus|Cofagrigus, M|320\/320
+|move|p1a: Chatot|Chatter|p2a: Cofagrigus
+|-damage|p2a: Cofagrigus|260\/320
+|-start|p2a: Cofagrigus|confusion
+|
+|-heal|p2a: Cofagrigus|280\/320|[from] item: Leftovers
+|turn|3
+|
+|move|p1a: Chatot|Taunt|p2a: Cofagrigus
+|-start|p2a: Cofagrigus|move: Taunt
+|-activate|p2a: Cofagrigus|confusion
+|-damage|p2a: Cofagrigus|268\/320|[from] confusion
+|
+|-heal|p2a: Cofagrigus|288\/320|[from] item: Leftovers
+|turn|4
+|
+|move|p1a: Chatot|Rain Dance|p1a: Chatot
+|-weather|RainDance
+|-activate|p2a: Cofagrigus|confusion
+|-damage|p2a: Cofagrigus|276\/320|[from] confusion
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Cofagrigus|296\/320|[from] item: Leftovers
+|turn|5
+|
+|switch|p1a: Kabutops|Kabutops, M|262\/262
+|-activate|p2a: Cofagrigus|confusion
+|move|p2a: Cofagrigus|Knock Off|p1a: Kabutops
+|-crit|p1a: Kabutops
+|-damage|p1a: Kabutops|202\/262
+|-enditem|p1a: Kabutops|Life Orb|[from] move: Knock Off|[of] p2a: Cofagrigus
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Cofagrigus|316\/320|[from] item: Leftovers
+|-end|p2a: Cofagrigus|move: Taunt
+|turn|6
+|
+|move|p1a: Kabutops|Knock Off|p2a: Cofagrigus
+|-supereffective|p2a: Cofagrigus
+|-damage|p2a: Cofagrigus|166\/320
+|-endability|p1a: Kabutops|swiftswim|[from] Mummy
+|-ability|p1a: Kabutops|Mummy|[from] Mummy
+|-enditem|p2a: Cofagrigus|Leftovers|[from] move: Knock Off|[of] p1a: Kabutops
+|-end|p2a: Cofagrigus|confusion
+|move|p2a: Cofagrigus|Will-O-Wisp|p1a: Kabutops
+|-status|p1a: Kabutops|brn
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1a: Kabutops|170\/262 brn|[from] brn
+|turn|7
+|
+|switch|p1a: Abomasnow|Abomasnow, M, shiny|321\/321
+|-weather|Hail
+|switch|p2a: Hitmontop|Hitmontop, M|304\/304
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Abomasnow
+|-unboost|p1a: Abomasnow|atk|1
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Hitmontop|285\/304|[from] hail
+|-heal|p2a: Hitmontop|304\/304|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Sigilyph|Sigilyph, M, shiny|348\/348
+|move|p2a: Hitmontop|Fake Out|p1a: Sigilyph
+|-damage|p1a: Sigilyph|309\/348
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Hitmontop|285\/304|[from] hail
+|-heal|p1a: Sigilyph|330\/348|[from] item: Leftovers
+|-heal|p2a: Hitmontop|304\/304|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Houndoom|Houndoom, F|291\/291
+|move|p1a: Sigilyph|Cosmic Power|p1a: Sigilyph
+|-boost|p1a: Sigilyph|def|1
+|-boost|p1a: Sigilyph|spd|1
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Houndoom|273\/291|[from] hail
+|-heal|p1a: Sigilyph|348\/348|[from] item: Leftovers
+|turn|10
+|
+|move|p2a: Houndoom|Foul Play|p1a: Sigilyph
+|-supereffective|p1a: Sigilyph
+|-damage|p1a: Sigilyph|223\/348
+|-damage|p2a: Houndoom|244\/291|[from] item: Life Orb
+|move|p1a: Sigilyph|Dazzling Gleam|p2a: Houndoom
+|-damage|p2a: Houndoom|170\/291
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Houndoom|152\/291|[from] hail
+|-heal|p1a: Sigilyph|244\/348|[from] item: Leftovers
+|turn|11
+|
+|move|p2a: Houndoom|Flamethrower|p1a: Sigilyph
+|-damage|p1a: Sigilyph|145\/348
+|-damage|p2a: Houndoom|123\/291|[from] item: Life Orb
+|move|p1a: Sigilyph|Dazzling Gleam|p2a: Houndoom
+|-damage|p2a: Houndoom|39\/291
+|
+|-weather|none
+|-heal|p1a: Sigilyph|166\/348|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Houndoom|Foul Play|p1a: Sigilyph
+|-supereffective|p1a: Sigilyph
+|-damage|p1a: Sigilyph|26\/348
+|-damage|p2a: Houndoom|10\/291|[from] item: Life Orb
+|move|p1a: Sigilyph|Dazzling Gleam|p2a: Houndoom
+|-damage|p2a: Houndoom|0 fnt
+|faint|p2a: Houndoom
+|
+|-heal|p1a: Sigilyph|47\/348|[from] item: Leftovers
+|
+|switch|p2a: Hitmontop|Hitmontop, M|304\/304
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Sigilyph
+|-unboost|p1a: Sigilyph|atk|1
+|turn|13
+|
+|switch|p1a: Kabutops|Kabutops, M|170\/262 brn
+|move|p2a: Hitmontop|Fake Out|p1a: Kabutops
+|-resisted|p1a: Kabutops
+|-damage|p1a: Kabutops|155\/262 brn
+|
+|-damage|p1a: Kabutops|123\/262 brn|[from] brn
+|turn|14
+|
+|switch|p2a: Chesnaught|Chesnaught, F|362\/362
+|move|p1a: Kabutops|Knock Off|p2a: Chesnaught
+|-resisted|p2a: Chesnaught
+|-damage|p2a: Chesnaught|340\/362
+|-enditem|p2a: Chesnaught|Sitrus Berry|[from] move: Knock Off|[of] p1a: Kabutops
+|
+|-damage|p1a: Kabutops|91\/262 brn|[from] brn
+|turn|15
+|
+|move|p1a: Kabutops|Superpower|p2a: Chesnaught
+|-damage|p2a: Chesnaught|287\/362
+|-unboost|p1a: Kabutops|atk|1
+|-unboost|p1a: Kabutops|def|1
+|move|p2a: Chesnaught|Seed Bomb|p1a: Kabutops
+|-supereffective|p1a: Kabutops
+|-damage|p1a: Kabutops|0 fnt
+|faint|p1a: Kabutops
+|
+|
+|switch|p1a: Chatot|Chatot, M|294\/356
+|turn|16
+|
+|move|p1a: Chatot|Chatter|p2a: Chesnaught
+|-supereffective|p2a: Chesnaught
+|-damage|p2a: Chesnaught|19\/362
+|-start|p2a: Chesnaught|confusion
+|-activate|p2a: Chesnaught|confusion
+|move|p2a: Chesnaught|Hammer Arm|p1a: Chatot
+|-damage|p1a: Chatot|60\/356
+|-unboost|p2a: Chesnaught|spe|1
+|
+|turn|17
+|
+|move|p1a: Chatot|Chatter|p2a: Chesnaught
+|-supereffective|p2a: Chesnaught
+|-damage|p2a: Chesnaught|0 fnt
+|faint|p2a: Chesnaught
+|
+|
+|switch|p2a: Hitmontop|Hitmontop, M|304\/304
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Chatot
+|-unboost|p1a: Chatot|atk|1
+|turn|18
+|
+|move|p2a: Hitmontop|Fake Out|p1a: Chatot
+|-damage|p1a: Chatot|3\/356
+|cant|p1a: Chatot|flinch
+|
+|turn|19
+|
+|move|p2a: Hitmontop|Mach Punch|p1a: Chatot
+|-damage|p1a: Chatot|0 fnt
+|faint|p1a: Chatot
+|
+|
+|switch|p1a: Sharpedo|Sharpedo, F|281\/281
+|turn|20
+|
+|switch|p2a: Cofagrigus|Cofagrigus, M|166\/320
+|move|p1a: Sharpedo|Protect|p1a: Sharpedo
+|-fail|p1a: Sharpedo
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|21
+|
+|move|p1a: Sharpedo|Protect|p1a: Sharpedo
+|-singleturn|p1a: Sharpedo|Protect
+|move|p2a: Cofagrigus|Pain Split|p1a: Sharpedo
+|-activate|p1a: Sharpedo|Protect
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|22
+|
+|move|p1a: Sharpedo|Crunch|p2a: Cofagrigus
+|-supereffective|p2a: Cofagrigus
+|-damage|p2a: Cofagrigus|0 fnt
+|-endability|p1a: Sharpedo|speedboost|[from] Mummy
+|-ability|p1a: Sharpedo|Mummy|[from] Mummy
+|faint|p2a: Cofagrigus
+|
+|
+|switch|p2a: Snorlax|Snorlax, M|505\/505
+|turn|23
+|
+|move|p1a: Sharpedo|Waterfall|p2a: Snorlax
+|-damage|p2a: Snorlax|301\/505
+|move|p2a: Snorlax|Body Slam|p1a: Sharpedo
+|-damage|p1a: Sharpedo|43\/281
+|-endability|p2a: Snorlax|thickfat|[from] Mummy
+|-ability|p2a: Snorlax|Mummy|[from] Mummy
+|-status|p1a: Sharpedo|par
+|
+|turn|24
+|
+|cant|p1a: Sharpedo|par
+|move|p2a: Snorlax|Power-Up Punch|p1a: Sharpedo
+|-supereffective|p1a: Sharpedo
+|-damage|p1a: Sharpedo|0 fnt
+|-boost|p2a: Snorlax|atk|1
+|faint|p1a: Sharpedo
+|
+|
+|switch|p1a: Cloyster|Cloyster, F, shiny|242\/242
+|turn|25
+|
+|move|p1a: Cloyster|Icicle Spear|p2a: Snorlax
+|-damage|p2a: Snorlax|243\/505
+|-damage|p2a: Snorlax|192\/505
+|-damage|p2a: Snorlax|138\/505
+|-damage|p2a: Snorlax|81\/505
+|-crit|p2a: Snorlax
+|-damage|p2a: Snorlax|0 fnt
+|-hitcount|p2a: Snorlax|5
+|faint|p2a: Snorlax
+|
+|
+|switch|p2a: Hitmontop|Hitmontop, M|304\/304
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Cloyster
+|-unboost|p1a: Cloyster|atk|1
+|-enditem|p1a: Cloyster|White Herb
+|-restoreboost|p1a: Cloyster|[silent]
+|turn|26
+|
+|switch|p1a: Sigilyph|Sigilyph, M, shiny|47\/348
+|move|p2a: Hitmontop|Fake Out|p1a: Sigilyph
+|-damage|p1a: Sigilyph|13\/348
+|
+|-heal|p1a: Sigilyph|34\/348|[from] item: Leftovers
+|turn|27
+|
+|switch|p2a: Starmie|Starmie|261\/261
+|move|p1a: Sigilyph|Dazzling Gleam|p2a: Starmie
+|-damage|p2a: Starmie|188\/261
+|
+|-heal|p1a: Sigilyph|55\/348|[from] item: Leftovers
+|turn|28
+|
+|move|p2a: Starmie|Ice Beam|p1a: Sigilyph
+|-supereffective|p1a: Sigilyph
+|-damage|p1a: Sigilyph|0 fnt
+|faint|p1a: Sigilyph
+|
+|
+|switch|p1a: Abomasnow|Abomasnow, M, shiny|321\/321
+|-weather|Hail
+|turn|29
+|
+|detailschange|p1a: Abomasnow|Abomasnow-Mega, M, shiny
+|message|Abomasnow has Mega Evolved into Mega Abomasnow!
+|move|p2a: Starmie|Ice Beam|p1a: Abomasnow
+|-damage|p1a: Abomasnow|229\/321
+|move|p1a: Abomasnow|Wood Hammer|p2a: Starmie
+|-crit|p2a: Starmie
+|-supereffective|p2a: Starmie
+|-damage|p2a: Starmie|0 fnt
+|-damage|p1a: Abomasnow|167\/321|[from] recoil|[of] p2a: Starmie
+|faint|p2a: Starmie
+|
+|-weather|Hail|[upkeep]
+|
+|switch|p2a: Hitmontop|Hitmontop, M|304\/304
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Abomasnow
+|-unboost|p1a: Abomasnow|atk|1
+|turn|30
+|
+|move|p2a: Hitmontop|Fake Out|p1a: Abomasnow
+|-damage|p1a: Abomasnow|136\/321
+|cant|p1a: Abomasnow|flinch
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Hitmontop|285\/304|[from] hail
+|-heal|p2a: Hitmontop|304\/304|[from] item: Leftovers
+|turn|31
+|
+|move|p2a: Hitmontop|Mach Punch|p1a: Abomasnow
+|-supereffective|p1a: Abomasnow
+|-damage|p1a: Abomasnow|52\/321
+|move|p1a: Abomasnow|Blizzard|p2a: Hitmontop
+|-damage|p2a: Hitmontop|94\/304
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Hitmontop|75\/304|[from] hail
+|-heal|p2a: Hitmontop|94\/304|[from] item: Leftovers
+|turn|32
+|
+|move|p2a: Hitmontop|Mach Punch|p1a: Abomasnow
+|-supereffective|p1a: Abomasnow
+|-damage|p1a: Abomasnow|0 fnt
+|faint|p1a: Abomasnow
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Hitmontop|75\/304|[from] hail
+|-heal|p2a: Hitmontop|94\/304|[from] item: Leftovers
+|
+|switch|p1a: Cloyster|Cloyster, F, shiny|242\/242
+|turn|33
+|
+|move|p1a: Cloyster|Icicle Spear|p2a: Hitmontop
+|-damage|p2a: Hitmontop|63\/304
+|-damage|p2a: Hitmontop|33\/304
+|-damage|p2a: Hitmontop|2\/304
+|-damage|p2a: Hitmontop|0 fnt
+|-hitcount|p2a: Hitmontop|4
+|faint|p2a: Hitmontop
+|
+|win|AquaGrunt yoshi
+|raw|Ladder updating...
+|raw|AquaGrunt yoshi's rating: 1062 &rarr; <strong>1099<\/strong><br \/>(+37 for winning)
+|raw|CrackPipeAndy's rating: 1134 &rarr; <strong>1104<\/strong><br \/>(-30 for losing)
+|chat|AquaGrunt yoshi|gg

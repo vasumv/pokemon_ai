@@ -1,0 +1,267 @@
+|join|BroingHop
+|join|candres
+|player|p1|BroingHop|169
+|player|p2|candres|291
+|gametype|singles
+|gen|6
+|tier|UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Crobat, F
+|poke|p1|Donphan, F
+|poke|p1|Suicune
+|poke|p1|Blissey, F
+|poke|p1|Corsola, F
+|poke|p1|Whirlipede, M
+|poke|p2|Ampharos, F
+|poke|p2|Crobat, F
+|poke|p2|Jirachi
+|poke|p2|Swampert, M
+|poke|p2|Lucario, M
+|poke|p2|Hydreigon, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|join|tecado
+|join|Heliosan
+|leave|tecado
+|
+|start
+|switch|p1a: Crobat|Crobat, F|353\/353
+|switch|p2a: Swampert|Swampert, M|401\/401
+|turn|1
+|
+|move|p1a: Crobat|U-turn|p2a: Swampert
+|-damage|p2a: Swampert|357\/401
+|
+|switch|p1a: Suicune|Suicune|393\/393
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Swampert|Scald|p1a: Suicune
+|-resisted|p1a: Suicune
+|-damage|p1a: Suicune|355\/393
+|-status|p1a: Suicune|brn
+|
+|-heal|p1a: Suicune|379\/393 brn|[from] item: Leftovers
+|-heal|p2a: Swampert|382\/401|[from] item: Leftovers
+|-damage|p1a: Suicune|330\/393 brn|[from] brn
+|turn|2
+|
+|switch|p2a: Ampharos|Ampharos, F|369\/369
+|move|p1a: Suicune|Scald|p2a: Ampharos
+|-damage|p2a: Ampharos|267\/369
+|
+|-heal|p1a: Suicune|354\/393 brn|[from] item: Leftovers
+|-damage|p1a: Suicune|305\/393 brn|[from] brn
+|turn|3
+|
+|switch|p1a: Blissey|Blissey, F|651\/651
+|detailschange|p2a: Ampharos|Ampharos-Mega, F
+|-mega|p2a: Ampharos|Ampharos|Ampharosite
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p2a: Ampharos|Volt Switch|p1a: Blissey
+|-damage|p1a: Blissey|561\/651
+|join|oh no oh no
+|
+|switch|p2a: Lucario|Lucario, M|282\/282
+|
+|-heal|p1a: Blissey|601\/651|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Crobat|Crobat, F|353\/353
+|move|p2a: Lucario|Ice Punch|p1a: Crobat
+|-supereffective|p1a: Crobat
+|-damage|p1a: Crobat|85\/353
+|-damage|p2a: Lucario|254\/282|[from] item: Life Orb
+|
+|turn|5
+|
+|switch|p1a: Corsola|Corsola, F|313\/313
+|move|p2a: Lucario|Extreme Speed|p1a: Corsola
+|-resisted|p1a: Corsola
+|-damage|p1a: Corsola|266\/313
+|-damage|p2a: Lucario|226\/282|[from] item: Life Orb
+|
+|-heal|p1a: Corsola|285\/313|[from] item: Leftovers
+|turn|6
+|
+|switch|p1a: Whirlipede|Whirlipede, M|283\/283
+|move|p2a: Lucario|Close Combat|p1a: Whirlipede
+|-resisted|p1a: Whirlipede
+|-damage|p1a: Whirlipede|240\/283
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|-damage|p2a: Lucario|198\/282|[from] item: Life Orb
+|
+|turn|7
+|
+|switch|p2a: Hydreigon|Hydreigon, F|325\/325
+|switch|p1a: Corsola|Corsola, F|313\/313
+|
+|turn|8
+|
+|move|p2a: Hydreigon|Draco Meteor|p1a: Corsola
+|-damage|p1a: Corsola|0 fnt
+|-unboost|p2a: Hydreigon|spa|2
+|-damage|p2a: Hydreigon|293\/325|[from] item: Life Orb
+|faint|p1a: Corsola
+|
+|
+|switch|p1a: Whirlipede|Whirlipede, M|240\/283
+|turn|9
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F|267\/369
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Whirlipede|Spikes|p2a: Ampharos
+|-sidestart|p2: candres|Spikes
+|
+|-boost|p1a: Whirlipede|spe|1|[from] ability: Speed Boost
+|turn|10
+|
+|move|p1a: Whirlipede|Spikes|p2a: Ampharos
+|-sidestart|p2: candres|Spikes
+|move|p2a: Ampharos|Dragon Pulse|p1a: Whirlipede
+|-damage|p1a: Whirlipede|132\/283
+|
+|-boost|p1a: Whirlipede|spe|1|[from] ability: Speed Boost
+|turn|11
+|
+|move|p1a: Whirlipede|Toxic Spikes|p2a: Ampharos
+|-sidestart|p2: candres|move: Toxic Spikes
+|move|p2a: Ampharos|Volt Switch|p1a: Whirlipede
+|-crit|p1a: Whirlipede
+|-damage|p1a: Whirlipede|0 fnt
+|faint|p1a: Whirlipede
+|
+|switch|p2a: Crobat|Crobat, F|323\/323
+|
+|
+|switch|p1a: Donphan|Donphan, F|383\/383
+|turn|12
+|
+|move|p2a: Crobat|Defog|p1a: Donphan
+|-unboost|p1a: Donphan|evasion|1
+|-sideend|p2: candres|Spikes|[from] move: Defog|[of] p2a: Crobat
+|-sideend|p2: candres|Toxic Spikes|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Donphan|Stealth Rock|p2a: Crobat
+|-sidestart|p2: candres|move: Stealth Rock
+|
+|turn|13
+|
+|switch|p2a: Swampert|Swampert, M|382\/401
+|-damage|p2a: Swampert|357\/401|[from] Stealth Rock
+|move|p1a: Donphan|Knock Off|p2a: Swampert
+|-damage|p2a: Swampert|267\/401
+|-enditem|p2a: Swampert|Leftovers|[from] move: Knock Off|[of] p1a: Donphan
+|
+|turn|14
+|
+|switch|p1a: Suicune|Suicune|305\/393 brn
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Swampert|Stealth Rock|p1a: Suicune
+|-sidestart|p1: BroingHop|move: Stealth Rock
+|
+|-heal|p1a: Suicune|329\/393 brn|[from] item: Leftovers
+|-damage|p1a: Suicune|280\/393 brn|[from] brn
+|turn|15
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F|267\/369
+|-damage|p2a: Ampharos|221\/369|[from] Stealth Rock
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Suicune|Rest|p1a: Suicune
+|-status|p1a: Suicune|slp
+|-heal|p1a: Suicune|393\/393 slp|[silent]
+|-status|p1a: Suicune|slp|[from] move: Rest
+|
+|turn|16
+|
+|switch|p1a: Blissey|Blissey, F|601\/651
+|-damage|p1a: Blissey|520\/651|[from] Stealth Rock
+|move|p2a: Ampharos|Dragon Pulse|p1a: Blissey
+|-damage|p1a: Blissey|396\/651
+|
+|-heal|p1a: Blissey|436\/651|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Blissey|Seismic Toss|p2a: Ampharos
+|-damage|p2a: Ampharos|121\/369
+|move|p2a: Ampharos|Volt Switch|p1a: Blissey
+|-damage|p1a: Blissey|337\/651
+|
+|switch|p2a: Lucario|Lucario, M|198\/282
+|-damage|p2a: Lucario|190\/282|[from] Stealth Rock
+|
+|-heal|p1a: Blissey|377\/651|[from] item: Leftovers
+|turn|18
+|
+|switch|p1a: Donphan|Donphan, F|383\/383
+|-damage|p1a: Donphan|360\/383|[from] Stealth Rock
+|move|p2a: Lucario|Close Combat|p1a: Donphan
+|-damage|p1a: Donphan|146\/383
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|-damage|p2a: Lucario|162\/282|[from] item: Life Orb
+|
+|-heal|p1a: Donphan|169\/383|[from] item: Leftovers
+|turn|19
+|
+|move|p2a: Lucario|Close Combat|p1a: Donphan
+|-damage|p1a: Donphan|0 fnt
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|-damage|p2a: Lucario|134\/282|[from] item: Life Orb
+|faint|p1a: Donphan
+|
+|
+|switch|p1a: Crobat|Crobat, F|85\/353
+|-damage|p1a: Crobat|0 fnt|[from] Stealth Rock
+|faint|p1a: Crobat
+|
+|switch|p1a: Suicune|Suicune|393\/393 slp
+|-damage|p1a: Suicune|344\/393 slp|[from] Stealth Rock
+|-ability|p1a: Suicune|Pressure
+|turn|20
+|
+|move|p2a: Lucario|Close Combat|p1a: Suicune
+|-damage|p1a: Suicune|180\/393 slp
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|-damage|p2a: Lucario|106\/282|[from] item: Life Orb
+|cant|p1a: Suicune|slp
+|
+|-heal|p1a: Suicune|204\/393 slp|[from] item: Leftovers
+|turn|21
+|
+|move|p2a: Lucario|Swords Dance|p2a: Lucario
+|-boost|p2a: Lucario|atk|2
+|cant|p1a: Suicune|slp
+|
+|-heal|p1a: Suicune|228\/393 slp|[from] item: Leftovers
+|turn|22
+|
+|move|p2a: Lucario|Close Combat|p1a: Suicune
+|-damage|p1a: Suicune|0 fnt
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|-damage|p2a: Lucario|78\/282|[from] item: Life Orb
+|faint|p1a: Suicune
+|
+|
+|switch|p1a: Blissey|Blissey, F|377\/651
+|-damage|p1a: Blissey|296\/651|[from] Stealth Rock
+|turn|23
+|
+|move|p2a: Lucario|Close Combat|p1a: Blissey
+|-supereffective|p1a: Blissey
+|-damage|p1a: Blissey|0 fnt
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|-damage|p2a: Lucario|50\/282|[from] item: Life Orb
+|faint|p1a: Blissey
+|
+|win|candres

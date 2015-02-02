@@ -1,0 +1,339 @@
+|join|Ranvus
+|join|Kama Sutra
+|player|p1|Ranvus|143
+|player|p2|Kama Sutra|170
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Mew
+|poke|p1|Gyarados, F
+|poke|p1|Heatran, F
+|poke|p1|Slowbro, M
+|poke|p1|Celebi
+|poke|p1|Scizor, M
+|poke|p2|Gothitelle, M
+|poke|p2|Gyarados, F
+|poke|p2|Breloom, F
+|poke|p2|Talonflame, F
+|poke|p2|Latias, F
+|poke|p2|Lanturn, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Mew|Mew|403\/403
+|switch|p2a: Shrooms|Breloom, F|262\/262
+|turn|1
+|
+|move|p1a: Mew|Taunt|p2a: Shrooms
+|-start|p2a: Shrooms|move: Taunt
+|cant|p2a: Shrooms|move: Taunt|Spore
+|
+|turn|2
+|
+|switch|p2a: Phoenix|Talonflame, F|297\/297
+|move|p1a: Mew|Will-O-Wisp|p2a: Phoenix
+|-fail|p2a: Phoenix
+|
+|turn|3
+|
+|switch|p1a: Slowbro|Slowbro, M|393\/393
+|move|p2a: Phoenix|Will-O-Wisp|p1a: Slowbro
+|-status|p1a: Slowbro|brn
+|
+|-damage|p1a: Slowbro|344\/393 brn|[from] brn
+|turn|4
+|
+|switch|p2a: WTFish|Lanturn, M|454\/454
+|switch|p1a: Mew|Mew|403\/403
+|
+|turn|5
+|
+|move|p1a: Mew|Knock Off|p2a: WTFish
+|-damage|p2a: WTFish|343\/454
+|-enditem|p2a: WTFish|Choice Specs|[from] move: Knock Off|[of] p1a: Mew
+|move|p2a: WTFish|Volt Switch|p1a: Mew
+|-crit|p1a: Mew
+|-damage|p1a: Mew|255\/403
+|
+|switch|p2a: Hate My Life|Gothitelle, M|282\/282
+|
+|-heal|p1a: Mew|280\/403|[from] item: Leftovers
+|turn|6
+|
+|move|p2a: Hate My Life|Trick|p1a: Mew
+|-activate|p2a: Hate My Life|move: Trick|[of] p1a: Mew
+|-item|p1a: Mew|Choice Scarf|[from] move: Trick
+|-item|p2a: Hate My Life|Leftovers|[from] move: Trick
+|move|p1a: Mew|Knock Off|p2a: Hate My Life
+|-supereffective|p2a: Hate My Life
+|-damage|p2a: Hate My Life|122\/282
+|-enditem|p2a: Hate My Life|Leftovers|[from] move: Knock Off|[of] p1a: Mew
+|
+|turn|7
+|
+|switch|p2a: The Dragon|Gyarados, F|332\/332
+|-ability|p2a: The Dragon|Intimidate|[of] p1a: Mew
+|-unboost|p1a: Mew|atk|1
+|move|p1a: Mew|Knock Off|p2a: The Dragon
+|-damage|p2a: The Dragon|289\/332
+|
+|turn|8
+|
+|switch|p1a: Gyarados|Gyarados, F|393\/393
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: The Dragon
+|-unboost|p2a: The Dragon|atk|1
+|switch|p2a: Hate My Life|Gothitelle, M|122\/282
+|
+|turn|9
+|
+|detailschange|p1a: Gyarados|Gyarados-Mega, F
+|message|Gyarados has Mega Evolved into Mega Gyarados!
+|-ability|p1a: Gyarados|Mold Breaker
+|move|p2a: Hate My Life|Thunderbolt|p1a: Gyarados
+|-supereffective|p1a: Gyarados
+|-damage|p1a: Gyarados|277\/393
+|move|p1a: Gyarados|Waterfall|p2a: Hate My Life
+|-damage|p2a: Hate My Life|0 fnt
+|faint|p2a: Hate My Life
+|
+|
+|switch|p2a: Shrooms|Breloom, F|262\/262
+|turn|10
+|
+|switch|p1a: Celebi|Celebi|403\/403
+|move|p2a: Shrooms|Bullet Seed|p1a: Celebi
+|-resisted|p1a: Celebi
+|-damage|p1a: Celebi|369\/403
+|-resisted|p1a: Celebi
+|-damage|p1a: Celebi|336\/403
+|-resisted|p1a: Celebi
+|-damage|p1a: Celebi|306\/403
+|-hitcount|p1a: Celebi|3
+|
+|-heal|p1a: Celebi|331\/403|[from] item: Leftovers
+|turn|11
+|
+|switch|p2a: Phoenix|Talonflame, F|297\/297
+|move|p1a: Celebi|Baton Pass|p1a: Celebi
+|
+|switch|p1a: Slowbro|Slowbro, M|393\/393 brn
+|
+|-damage|p1a: Slowbro|344\/393 brn|[from] brn
+|turn|12
+|
+|switch|p2a: WTFish|Lanturn, M|343\/454
+|move|p1a: Slowbro|Thunder Wave|p2a: WTFish
+|-heal|p2a: WTFish|454\/454|[from] ability: Volt Absorb|[of] p1a: Slowbro
+|
+|-damage|p1a: Slowbro|295\/393 brn|[from] brn
+|turn|13
+|
+|switch|p1a: Celebi|Celebi|331\/403
+|move|p2a: WTFish|Hydro Pump|p1a: Celebi
+|-crit|p1a: Celebi
+|-resisted|p1a: Celebi
+|-damage|p1a: Celebi|226\/403
+|
+|-heal|p1a: Celebi|251\/403|[from] item: Leftovers
+|turn|14
+|
+|switch|p2a: Phoenix|Talonflame, F|297\/297
+|move|p1a: Celebi|Baton Pass|p1a: Celebi
+|
+|switch|p1a: Heatran|Heatran, F|385\/385
+|
+|turn|15
+|
+|switch|p2a: WTFish|Lanturn, M|454\/454
+|move|p1a: Heatran|Toxic|p2a: WTFish
+|-status|p2a: WTFish|tox
+|
+|-damage|p2a: WTFish|426\/454 tox|[from] psn
+|turn|16
+|
+|move|p1a: Heatran|Stealth Rock|p2a: WTFish
+|-sidestart|p2: Kama Sutra|move: Stealth Rock
+|move|p2a: WTFish|Scald|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|221\/385
+|
+|-heal|p1a: Heatran|245\/385|[from] item: Leftovers
+|-damage|p2a: WTFish|370\/454 tox|[from] psn
+|turn|17
+|
+|switch|p1a: Celebi|Celebi|251\/403
+|move|p2a: WTFish|Volt Switch|p1a: Celebi
+|-resisted|p1a: Celebi
+|-damage|p1a: Celebi|204\/403
+|
+|switch|p2a: Lighthouse|Latias, F|301\/301
+|-damage|p2a: Lighthouse|264\/301|[from] Stealth Rock
+|
+|-heal|p1a: Celebi|229\/403|[from] item: Leftovers
+|turn|18
+|
+|switch|p1a: Scizor|Scizor, M|281\/281
+|move|p2a: Lighthouse|Defog|p1a: Scizor
+|-unboost|p1a: Scizor|evasion|1
+|-sideend|p2: Kama Sutra|Stealth Rock|[from] move: Defog|[of] p2a: Lighthouse
+|
+|turn|19
+|
+|move|p2a: Lighthouse|Healing Wish|p2a: Lighthouse
+|faint|p2a: Lighthouse
+|move|p1a: Scizor|U-turn|p2: Lighthouse|[notarget]
+|-notarget
+|
+|
+|switch|p2a: WTFish|Lanturn, M|370\/454 tox
+|-heal|p2a: WTFish|454\/454|[from] move: Healing Wish
+|turn|20
+|
+|move|p1a: Scizor|U-turn|p2a: WTFish
+|-damage|p2a: WTFish|118\/454
+|
+|switch|p1a: Celebi|Celebi|229\/403
+|move|p2a: WTFish|Scald|p1a: Celebi
+|-resisted|p1a: Celebi
+|-damage|p1a: Celebi|172\/403
+|
+|-heal|p1a: Celebi|197\/403|[from] item: Leftovers
+|turn|21
+|
+|move|p1a: Celebi|Recover|p1a: Celebi
+|-heal|p1a: Celebi|399\/403
+|move|p2a: WTFish|Volt Switch|p1a: Celebi
+|-resisted|p1a: Celebi
+|-damage|p1a: Celebi|351\/403
+|
+|switch|p2a: Phoenix|Talonflame, F|297\/297
+|
+|-heal|p1a: Celebi|376\/403|[from] item: Leftovers
+|turn|22
+|
+|switch|p1a: Heatran|Heatran, F|245\/385
+|move|p2a: Phoenix|Brave Bird|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|156\/385
+|-damage|p2a: Phoenix|268\/297|[from] recoil|[of] p1a: Heatran
+|
+|-heal|p1a: Heatran|180\/385|[from] item: Leftovers
+|turn|23
+|
+|switch|p2a: WTFish|Lanturn, M|118\/454
+|move|p1a: Heatran|Stealth Rock|p2a: WTFish
+|-sidestart|p2: Kama Sutra|move: Stealth Rock
+|
+|-heal|p1a: Heatran|204\/385|[from] item: Leftovers
+|turn|24
+|
+|switch|p1a: Celebi|Celebi|376\/403
+|move|p2a: WTFish|Hydro Pump|p1a: Celebi
+|-resisted|p1a: Celebi
+|-damage|p1a: Celebi|303\/403
+|
+|-heal|p1a: Celebi|328\/403|[from] item: Leftovers
+|turn|25
+|
+|move|p1a: Celebi|Seed Bomb|p2a: WTFish
+|-crit|p2a: WTFish
+|-supereffective|p2a: WTFish
+|-damage|p2a: WTFish|0 fnt
+|faint|p2a: WTFish
+|
+|-heal|p1a: Celebi|353\/403|[from] item: Leftovers
+|
+|switch|p2a: Phoenix|Talonflame, F|268\/297
+|-damage|p2a: Phoenix|120\/297|[from] Stealth Rock
+|turn|26
+|
+|switch|p1a: Slowbro|Slowbro, M|393\/393 brn
+|move|p2a: Phoenix|Roost|p2a: Phoenix
+|-heal|p2a: Phoenix|269\/297
+|
+|-damage|p1a: Slowbro|344\/393 brn|[from] brn
+|turn|27
+|
+|move|p2a: Phoenix|Brave Bird|p1a: Slowbro
+|-damage|p1a: Slowbro|218\/393 brn
+|-damage|p2a: Phoenix|220\/297|[from] item: Rocky Helmet|[of] p1a: Slowbro
+|-damage|p2a: Phoenix|178\/297|[from] recoil|[of] p1a: Slowbro
+|move|p1a: Slowbro|Scald|p2a: Phoenix
+|-supereffective|p2a: Phoenix
+|-damage|p2a: Phoenix|0 fnt
+|faint|p2a: Phoenix
+|
+|-damage|p1a: Slowbro|169\/393 brn|[from] brn
+|
+|switch|p2a: The Dragon|Gyarados, F|289\/332
+|-damage|p2a: The Dragon|206\/332|[from] Stealth Rock
+|-ability|p2a: The Dragon|Intimidate|[of] p1a: Slowbro
+|-unboost|p1a: Slowbro|atk|1
+|turn|28
+|
+|detailschange|p2a: The Dragon|Gyarados-Mega, F
+|message|Gyarados has Mega Evolved into Mega Gyarados!
+|-ability|p2a: The Dragon|Mold Breaker
+|move|p2a: The Dragon|Waterfall|p1a: Slowbro
+|-resisted|p1a: Slowbro
+|-damage|p1a: Slowbro|109\/393 brn
+|-damage|p2a: The Dragon|151\/332|[from] item: Rocky Helmet|[of] p1a: Slowbro
+|cant|p1a: Slowbro|flinch
+|
+|-damage|p1a: Slowbro|60\/393 brn|[from] brn
+|turn|29
+|
+|move|p2a: The Dragon|Earthquake|p1a: Slowbro
+|-damage|p1a: Slowbro|0 fnt
+|faint|p1a: Slowbro
+|
+|
+|switch|p1a: Scizor|Scizor, M|281\/281
+|turn|30
+|
+|move|p2a: The Dragon|Waterfall|p1a: Scizor
+|-damage|p1a: Scizor|119\/281
+|move|p1a: Scizor|U-turn|p2a: The Dragon
+|-supereffective|p2a: The Dragon
+|-damage|p2a: The Dragon|0 fnt
+|faint|p2a: The Dragon
+|
+|switch|p1a: Mew|Mew|280\/403
+|
+|
+|switch|p2a: Shrooms|Breloom, F|262\/262
+|-damage|p2a: Shrooms|246\/262|[from] Stealth Rock
+|turn|31
+|
+|move|p1a: Mew|Will-O-Wisp|p2a: Shrooms
+|-status|p2a: Shrooms|brn
+|move|p2a: Shrooms|Bullet Seed|p1a: Mew
+|-damage|p1a: Mew|255\/403
+|-crit|p1a: Mew
+|-damage|p1a: Mew|210\/403
+|-damage|p1a: Mew|180\/403
+|-damage|p1a: Mew|150\/403
+|-damage|p1a: Mew|119\/403
+|-hitcount|p1a: Mew|5
+|
+|-damage|p2a: Shrooms|214\/262 brn|[from] brn
+|turn|32
+|-message|Kama Sutra forfeited.
+|
+|win|Ranvus
+|raw|Ladder updating...
+|leave|Kama Sutra
+|player|p2
+|raw|Ranvus's rating: 1651 &rarr; <strong>1668<\/strong><br \/>(+17 for winning)
+|raw|Kama Sutra's rating: 1579 &rarr; <strong>1563<\/strong><br \/>(-16 for losing)

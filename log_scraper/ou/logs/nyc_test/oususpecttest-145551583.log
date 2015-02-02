@@ -1,0 +1,359 @@
+|join|nyc_test
+|join|Far Gone
+|player|p1|nyc_test|92
+|player|p2|Far Gone|98
+|gametype|singles
+|gen|6
+|tier|OU (suspect test)
+|rated
+|clearpoke
+|poke|p1|Talonflame, M
+|poke|p1|Azumarill, M
+|poke|p1|Dugtrio, M
+|poke|p1|Latias, F, shiny
+|poke|p1|Magnezone
+|poke|p1|Charizard, M, shiny
+|poke|p2|Latios, M
+|poke|p2|Azumarill, F
+|poke|p2|Manectric, M
+|poke|p2|Landorus, M
+|poke|p2|Breloom, F
+|poke|p2|Tyranitar, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Magnezone|Magnezone|281\/281
+|switch|p2a: Landorus|Landorus, M|319\/319
+|turn|1
+|
+|move|p1a: Magnezone|Hidden Power|p2a: Landorus
+|-supereffective|p2a: Landorus
+|-damage|p2a: Landorus|0 fnt
+|faint|p2a: Landorus
+|
+|
+|switch|p2a: Azumarill|Azumarill, F|372\/372
+|turn|2
+|
+|switch|p1a: Azumarill|Azumarill, M|393\/393
+|move|p2a: Azumarill|Play Rough|p1a: Azumarill
+|-damage|p1a: Azumarill|152\/393
+|
+|turn|3
+|
+|switch|p1a: Magnezone|Magnezone|281\/281
+|move|p2a: Azumarill|Play Rough|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-damage|p1a: Magnezone|191\/281
+|
+|turn|4
+|
+|switch|p1a: Dugtrio|Dugtrio, M|208\/208
+|move|p2a: Azumarill|Waterfall|p1a: Dugtrio
+|-supereffective|p1a: Dugtrio
+|-enditem|p1a: Dugtrio|Focus Sash
+|-damage|p1a: Dugtrio|1\/208
+|
+|turn|5
+|
+|switch|p1a: Latias|Latias, F, shiny|299\/299
+|move|p2a: Azumarill|Aqua Jet|p1a: Latias
+|-resisted|p1a: Latias
+|-damage|p1a: Latias|253\/299
+|
+|turn|6
+|
+|switch|p2a: Tyranitar|Tyranitar, M|348\/348
+|-weather|Sandstorm
+|move|p1a: Latias|Psyshock|p2a: Tyranitar
+|-immune|p2a: Tyranitar|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latias|235\/299|[from] sandstorm
+|turn|7
+|
+|move|p2a: Tyranitar|Pursuit|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|71\/299
+|move|p1a: Latias|Draco Meteor|p2a: Tyranitar
+|-damage|p2a: Tyranitar|183\/348
+|-unboost|p1a: Latias|spa|2
+|-damage|p1a: Latias|42\/299|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latias|24\/299|[from] sandstorm
+|turn|8
+|
+|switch|p2a: Azumarill|Azumarill, F|372\/372
+|move|p1a: Latias|Healing Wish|p1a: Latias
+|faint|p1a: Latias
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Azumarill|349\/372|[from] sandstorm
+|
+|switch|p1a: Azumarill|Azumarill, M|152\/393
+|-heal|p1a: Azumarill|393\/393|[from] move: Healing Wish
+|turn|9
+|
+|move|p2a: Azumarill|Play Rough|p1a: Azumarill|[miss]
+|-miss|p2a: Azumarill|p1a: Azumarill
+|move|p1a: Azumarill|Play Rough|p2a: Azumarill
+|-damage|p2a: Azumarill|112\/372
+|-enditem|p2a: Azumarill|Sitrus Berry|[eat]
+|-heal|p2a: Azumarill|205\/372|[from] item: Sitrus Berry
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Azumarill|182\/372|[from] sandstorm
+|-damage|p1a: Azumarill|369\/393|[from] sandstorm
+|turn|10
+|
+|move|p2a: Azumarill|Play Rough|p1a: Azumarill
+|-damage|p1a: Azumarill|132\/393
+|move|p1a: Azumarill|Play Rough|p2a: Azumarill
+|-damage|p2a: Azumarill|0 fnt
+|faint|p2a: Azumarill
+|
+|-weather|none
+|
+|switch|p2a: Manectric|Manectric, M|291\/291
+|turn|11
+|
+|detailschange|p2a: Manectric|Manectric-Mega, M
+|message|Manectric has Mega Evolved into Mega Manectric!
+|-ability|p2a: Manectric|Intimidate|[of] p1a: Azumarill
+|-unboost|p1a: Azumarill|atk|1
+|move|p2a: Manectric|Thunderbolt|p1a: Azumarill
+|-supereffective|p1a: Azumarill
+|-damage|p1a: Azumarill|0 fnt
+|faint|p1a: Azumarill
+|
+|
+|switch|p1a: Charizard|Charizard, M, shiny|359\/359
+|turn|12
+|
+|detailschange|p1a: Charizard|Charizard-Mega-X, M, shiny
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p2a: Manectric|Volt Switch|p1a: Charizard
+|-resisted|p1a: Charizard
+|-damage|p1a: Charizard|282\/359
+|
+|switch|p2a: Tyranitar|Tyranitar, M|183\/348
+|-weather|Sandstorm
+|move|p1a: Charizard|Dragon Claw|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Charizard|260\/359|[from] sandstorm
+|
+|switch|p2a: Latios|Latios, M|303\/303
+|turn|13
+|
+|switch|p1a: Magnezone|Magnezone|191\/281
+|move|p2a: Latios|Hidden Power|p1a: Magnezone
+|-supereffective|p1a: Magnezone
+|-damage|p1a: Magnezone|0 fnt
+|-damage|p2a: Latios|273\/303|[from] item: Life Orb
+|faint|p1a: Magnezone
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|255\/303|[from] sandstorm
+|chat|nyc_test|hey i know i'ts a long shot but would you be willing to just let me win this one? i'm at 2690 COIL and i'm really tired of laddering...
+|chat|Far Gone|no, lol.
+|chat|nyc_test|sigh
+|chat|Far Gone|i'm at 2300 coil
+|chat|Far Gone|i can't afford to lose
+|chat|Far Gone|with only an hour left
+|
+|switch|p1a: Dugtrio|Dugtrio, M|1\/208
+|turn|14
+|chat|Far Gone|you're probably going to win anyway
+|
+|move|p1a: Dugtrio|Stealth Rock|p2a: Latios
+|-sidestart|p2: Far Gone|move: Stealth Rock
+|move|p2a: Latios|Psyshock|p1a: Dugtrio
+|-damage|p1a: Dugtrio|0 fnt
+|-damage|p2a: Latios|225\/303|[from] item: Life Orb
+|faint|p1a: Dugtrio
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|207\/303|[from] sandstorm
+|
+|switch|p1a: Talonflame|Talonflame, M|359\/359
+|turn|15
+|chat|nyc_test|doubt it
+|
+|switch|p2a: Breloom|Breloom, F|262\/262
+|-damage|p2a: Breloom|246\/262|[from] Stealth Rock
+|move|p1a: Talonflame|Brave Bird|p2a: Breloom
+|-supereffective|p2a: Breloom
+|-damage|p2a: Breloom|0 fnt
+|-damage|p1a: Talonflame|278\/359|[from] recoil|[of] p2a: Breloom
+|faint|p2a: Breloom
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Talonflame|256\/359|[from] sandstorm
+|-heal|p1a: Talonflame|278\/359|[from] item: Leftovers
+|
+|switch|p2a: Manectric|Manectric-Mega, M|291\/291
+|-damage|p2a: Manectric|255\/291|[from] Stealth Rock
+|-ability|p2a: Manectric|Intimidate|[of] p1a: Talonflame
+|-unboost|p1a: Talonflame|atk|1
+|turn|16
+|
+|move|p1a: Talonflame|Roost|p1a: Talonflame
+|-heal|p1a: Talonflame|359\/359
+|move|p2a: Manectric|Thunderbolt|p1a: Talonflame
+|-damage|p1a: Talonflame|208\/359
+|
+|-weather|none
+|-heal|p1a: Talonflame|230\/359|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Talonflame|Roost|p1a: Talonflame
+|-heal|p1a: Talonflame|359\/359
+|move|p2a: Manectric|Volt Switch|p1a: Talonflame
+|-damage|p1a: Talonflame|236\/359
+|
+|switch|p2a: Latios|Latios, M|207\/303
+|-damage|p2a: Latios|170\/303|[from] Stealth Rock
+|
+|-heal|p1a: Talonflame|258\/359|[from] item: Leftovers
+|turn|18
+|join|Midrash
+|
+|switch|p2a: Manectric|Manectric-Mega, M|255\/291
+|-damage|p2a: Manectric|219\/291|[from] Stealth Rock
+|-ability|p2a: Manectric|Intimidate|[of] p1a: Talonflame
+|-unboost|p1a: Talonflame|atk|1
+|move|p1a: Talonflame|Roost|p1a: Talonflame
+|-heal|p1a: Talonflame|359\/359
+|
+|turn|19
+|
+|switch|p1a: Charizard|Charizard-Mega-X, M, shiny|260\/359
+|move|p2a: Manectric|Volt Switch|p1a: Charizard
+|-resisted|p1a: Charizard
+|-damage|p1a: Charizard|188\/359
+|
+|switch|p2a: Latios|Latios, M|170\/303
+|-damage|p2a: Latios|133\/303|[from] Stealth Rock
+|
+|turn|20
+|
+|switch|p1a: Talonflame|Talonflame, M|359\/359
+|move|p2a: Latios|Draco Meteor|p1a: Talonflame
+|-damage|p1a: Talonflame|96\/359
+|-unboost|p2a: Latios|spa|2
+|-damage|p2a: Latios|103\/303|[from] item: Life Orb
+|
+|-heal|p1a: Talonflame|118\/359|[from] item: Leftovers
+|turn|21
+|
+|switch|p2a: Manectric|Manectric-Mega, M|219\/291
+|-damage|p2a: Manectric|183\/291|[from] Stealth Rock
+|-ability|p2a: Manectric|Intimidate|[of] p1a: Talonflame
+|-unboost|p1a: Talonflame|atk|1
+|move|p1a: Talonflame|Brave Bird|p2a: Manectric
+|-resisted|p2a: Manectric
+|-damage|p2a: Manectric|138\/291
+|-damage|p1a: Talonflame|103\/359|[from] recoil|[of] p2a: Manectric
+|
+|-heal|p1a: Talonflame|125\/359|[from] item: Leftovers
+|turn|22
+|
+|move|p1a: Talonflame|Roost|p1a: Talonflame
+|-heal|p1a: Talonflame|305\/359
+|move|p2a: Manectric|Thunderbolt|p1a: Talonflame
+|-damage|p1a: Talonflame|148\/359
+|
+|-heal|p1a: Talonflame|170\/359|[from] item: Leftovers
+|turn|23
+|
+|move|p1a: Talonflame|Roost|p1a: Talonflame
+|-heal|p1a: Talonflame|350\/359
+|move|p2a: Manectric|Thunderbolt|p1a: Talonflame
+|-damage|p1a: Talonflame|212\/359
+|
+|-heal|p1a: Talonflame|234\/359|[from] item: Leftovers
+|turn|24
+|
+|move|p1a: Talonflame|Roost|p1a: Talonflame
+|-heal|p1a: Talonflame|359\/359
+|move|p2a: Manectric|Thunderbolt|p1a: Talonflame
+|-damage|p1a: Talonflame|203\/359
+|-status|p1a: Talonflame|par
+|
+|-heal|p1a: Talonflame|225\/359 par|[from] item: Leftovers
+|turn|25
+|
+|move|p1a: Talonflame|Roost|p1a: Talonflame
+|-heal|p1a: Talonflame|359\/359 par
+|move|p2a: Manectric|Thunderbolt|p1a: Talonflame
+|-damage|p1a: Talonflame|208\/359 par
+|
+|-heal|p1a: Talonflame|230\/359 par|[from] item: Leftovers
+|turn|26
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Manectric
+|-resisted|p2a: Manectric
+|-damage|p2a: Manectric|93\/291
+|-damage|p1a: Talonflame|215\/359 par|[from] recoil|[of] p2a: Manectric
+|move|p2a: Manectric|Thunderbolt|p1a: Talonflame
+|-supereffective|p1a: Talonflame
+|-damage|p1a: Talonflame|0 fnt
+|faint|p1a: Talonflame
+|
+|
+|switch|p1a: Charizard|Charizard-Mega-X, M, shiny|188\/359
+|turn|27
+|
+|move|p2a: Manectric|Thunderbolt|p1a: Charizard
+|-resisted|p1a: Charizard
+|-damage|p1a: Charizard|89\/359
+|move|p1a: Charizard|Dragon Dance|p1a: Charizard
+|-boost|p1a: Charizard|atk|1
+|-boost|p1a: Charizard|spe|1
+|
+|turn|28
+|
+|move|p1a: Charizard|Dragon Claw|p2a: Manectric
+|-damage|p2a: Manectric|0 fnt
+|faint|p2a: Manectric
+|
+|chat|nyc_test|gg
+|chat|Far Gone|see
+|chat|nyc_test|gl with reqs man
+|chat|Far Gone|did you underestimate
+|chat|Far Gone|sdef talonflame
+|chat|nyc_test|surprised me actually
+|
+|switch|p2a: Latios|Latios, M|103\/303
+|-damage|p2a: Latios|66\/303|[from] Stealth Rock
+|turn|29
+|chat|nyc_test|lol yea i was never in that situation where i had to take a dm from latios
+|chat|nyc_test|should've probably ran calcs
+|chat|nyc_test|but i'm lazy
+|
+|move|p1a: Charizard|Dragon Claw|p2a: Latios
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|faint|p2a: Latios
+|
+|win|nyc_test
+|raw|Ladder updating...
+|raw|nyc_test's rating: 1472 &rarr; <strong>1487<\/strong><br \/>(+15 for winning)
+|raw|Far Gone's rating: 1389 &rarr; <strong>1374<\/strong><br \/>(-15 for losing)
+|leave|Midrash
+|leave|Far Gone
+|player|p2
+|chat|nyc_test|i better be done... 

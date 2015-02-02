@@ -1,0 +1,545 @@
+|join|nanananana
+|join|Godsend
+|player|p1|nanananana|169
+|player|p2|Godsend|102
+|gametype|singles
+|tier|UU
+|rated
+|rule|Sleep Clause
+|rule|Species Clause
+|rule|OHKO Clause
+|rule|Moody Clause
+|rule|Evasion Clause
+|clearpoke
+|poke|p1|Rotom-Heat
+|poke|p1|Zapdos
+|poke|p1|Cofagrigus, M
+|poke|p1|Empoleon, F
+|poke|p1|Krookodile, F
+|poke|p1|Hitmontop, M
+|poke|p2|Snover, F
+|poke|p2|Rotom-Frost
+|poke|p2|Slowbro, F
+|poke|p2|Mienshao, M
+|poke|p2|Nidoqueen, F
+|poke|p2|Snorlax, M
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Microwave|Rotom-Heat| (100\/100)
+|switch|p2a: Snover|Snover, F| (100\/100)
+|-weather|Hail|[from] ability: Snow Warning|[of] p2a: Snover
+|turn|1
+|callback|decision
+|
+|move|p2a: Snover|Protect|p2a: Snover
+|-singleturn|p2a: Snover|Protect
+|move|p1a: Microwave|Overheat|p2a: Snover
+|-activate|p2a: Snover|Protect
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Microwave|6 (94\/100)|[from] hail
+|turn|2
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, M| (100\/100)
+|move|p1a: Microwave|Trick|p2a: Snorlax
+|-activate|p1a: Microwave|move: Trick|[of] p2a: Snorlax
+|-item|p2a: Snorlax|Flame Orb|[from] move: Trick
+|-item|p1a: Microwave|Leftovers|[from] move: Trick
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Microwave|6 (88\/100)|[from] hail
+|-damage|p2a: Snorlax|6 (94\/100)|[from] hail
+|-heal|p1a: Microwave|6 (94\/100)|[from] item: Leftovers
+|-activate|p2a: Snorlax|item: Flame Orb
+|-status|p2a: Snorlax|brn
+|turn|3
+|callback|decision
+|
+|switch|p1a: Gobstopper?|Cofagrigus, M| (100\/100)
+|move|p2a: Snorlax|Rest|p2a: Snorlax
+|-status|p2a: Snorlax|slp
+|-heal|p2a: Snorlax|6 (100\/100 slp)|[silent]
+|-status|p2a: Snorlax|slp|[from] move: Rest
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Snorlax|6 (94\/100 slp)|[from] hail
+|-damage|p1a: Gobstopper?|6 (94\/100)|[from] hail
+|-heal|p1a: Gobstopper?|6 (100\/100)|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p2a: Nidoqueen|Nidoqueen, F| (100\/100)
+|move|p1a: Gobstopper?|Trick Room|p1a: Gobstopper?
+|-fieldstart|move: Trick Room|[of] p1a: Gobstopper?
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Gobstopper?|6 (94\/100)|[from] hail
+|-damage|p2a: Nidoqueen|6 (94\/100)|[from] hail
+|-heal|p1a: Gobstopper?|6 (100\/100)|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1a: jrrrrrrr|Zapdos| (100\/100)
+|-ability|p1a: jrrrrrrr|Pressure
+|move|p2a: Nidoqueen|Earth Power|p1a: jrrrrrrr
+|-immune|p1a: jrrrrrrr|[msg]
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Nidoqueen|6 (88\/100)|[from] hail
+|-damage|p1a: jrrrrrrr|6 (94\/100)|[from] hail
+|-heal|p1a: jrrrrrrr|6 (100\/100)|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Nidoqueen|Blizzard|p1a: jrrrrrrr
+|-supereffective|p1a: jrrrrrrr
+|-damage|p1a: jrrrrrrr|100 (0\/100 fnt)
+|faint|p1a: jrrrrrrr
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Nidoqueen|6 (81\/100)|[from] hail
+|callback|decision
+|callback|decision
+|
+|switch|p1a: James Bond|Empoleon, F| (100\/100)
+|turn|7
+|callback|decision
+|
+|move|p1a: James Bond|Stealth Rock|p2a: Nidoqueen
+|-sidestart|p2: Godsend|move: Stealth Rock
+|move|p2a: Nidoqueen|Earth Power|p1a: James Bond
+|-supereffective|p1a: James Bond
+|-damage|p1a: James Bond|74 (26\/100)
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: James Bond|6 (20\/100)|[from] hail
+|-damage|p2a: Nidoqueen|6 (75\/100)|[from] hail
+|-heal|p1a: James Bond|6 (26\/100)|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p2a: Snover|Snover, F| (100\/100)
+|-damage|p2a: Snover|25 (75\/100)|[from] Stealth Rock
+|move|p1a: James Bond|Scald|p2a: Snover
+|-resisted|p2a: Snover
+|-damage|p2a: Snover|17 (58\/100)
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: James Bond|6 (20\/100)|[from] hail
+|-heal|p1a: James Bond|6 (26\/100)|[from] item: Leftovers
+|-fieldend|move: Trick Room
+|turn|9
+|callback|decision
+|
+|move|p1a: James Bond|Toxic|p2a: Snover
+|-status|p2a: Snover|tox
+|move|p2a: Snover|Leech Seed|p1a: James Bond
+|-start|p1a: James Bond|move: Leech Seed
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: James Bond|6 (20\/100)|[from] hail
+|-heal|p1a: James Bond|6 (26\/100)|[from] item: Leftovers
+|-damage|p1a: James Bond|12 (13\/100)|[from] Leech Seed|[of] p2a: Snover
+|-heal|p2a: Snover|14 (72\/100 tox)|[silent]
+|-damage|p2a: Snover|6 (66\/100 tox)|[from] psn
+|turn|10
+|callback|decision
+|
+|move|p1a: James Bond|Scald|p2a: Snover
+|-resisted|p2a: Snover
+|-damage|p2a: Snover|17 (49\/100 tox)
+|move|p2a: Snover|Leech Seed|p1a: James Bond|[miss]
+|-miss|p2a: Snover
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: James Bond|6 (7\/100)|[from] hail
+|-heal|p1a: James Bond|6 (13\/100)|[from] item: Leftovers
+|-damage|p1a: James Bond|12 (1\/100)|[from] Leech Seed|[of] p2a: Snover
+|-heal|p2a: Snover|14 (63\/100 tox)|[silent]
+|-damage|p2a: Snover|12 (51\/100 tox)|[from] psn
+|turn|11
+|callback|decision
+|
+|move|p2a: Snover|Protect|p2a: Snover
+|-singleturn|p2a: Snover|Protect
+|move|p1a: James Bond|Toxic|p2a: Snover
+|-activate|p2a: Snover|Protect
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: James Bond|1 (0\/100 fnt)|[from] hail
+|-damage|p2a: Snover|19 (33\/100 tox)|[from] psn
+|faint|p1a: James Bond
+|callback|decision
+|callback|decision
+|
+|switch|p1a: Crocburglar|Krookodile, F| (100\/100)
+|turn|12
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, F| (100\/100)
+|-damage|p2a: Slowbro|12 (88\/100)|[from] Stealth Rock
+|move|p1a: Crocburglar|Crunch|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|45 (43\/100)
+|-unboost|p2a: Slowbro|def|1
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Crocburglar|6 (94\/100)|[from] hail
+|-damage|p2a: Slowbro|6 (37\/100)|[from] hail
+|-heal|p2a: Slowbro|6 (43\/100)|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p2a: Mienshao|Mienshao, M| (100\/100)
+|-damage|p2a: Mienshao|6 (94\/100)|[from] Stealth Rock
+|move|p1a: Crocburglar|Crunch|p2a: Mienshao
+|-resisted|p2a: Mienshao
+|-damage|p2a: Mienshao|35 (59\/100)
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Mienshao|6 (53\/100)|[from] hail
+|-damage|p1a: Crocburglar|6 (88\/100)|[from] hail
+|turn|14
+|callback|decision
+|
+|move|p2a: Mienshao|U-turn|p1a: Crocburglar
+|-supereffective|p1a: Crocburglar
+|-damage|p1a: Crocburglar|68 (20\/100)
+|callback|decision
+|
+|switch|p2a: Snover|Snover, F| (33\/100 tox)
+|-damage|p2a: Snover|25 (8\/100 tox)|[from] Stealth Rock
+|move|p1a: Crocburglar|Crunch|p2a: Snover
+|-damage|p2a: Snover|8 (0\/100 fnt)
+|faint|p2a: Snover
+|-boost|p1a: Crocburglar|atk|1|[from] ability: Moxie
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Crocburglar|6 (14\/100)|[from] hail
+|callback|decision
+|callback|decision
+|
+|switch|p2a: Mienshao|Mienshao, M| (53\/100)
+|-damage|p2a: Mienshao|6 (47\/100)|[from] Stealth Rock
+|turn|15
+|callback|decision
+|
+|switch|p1a: I see up your nose|Hitmontop, M| (100\/100)
+|-ability|p1a: I see up your nose|Intimidate|[of] p2a: Mienshao
+|-unboost|p2a: Mienshao|atk|1
+|move|p2a: Mienshao|U-turn|p1a: I see up your nose
+|-resisted|p1a: I see up your nose
+|-damage|p1a: I see up your nose|7 (93\/100)
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, F| (76\/100)
+|-damage|p2a: Slowbro|12 (64\/100)|[from] Stealth Rock
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: I see up your nose|6 (87\/100)|[from] hail
+|-damage|p2a: Slowbro|6 (58\/100)|[from] hail
+|-heal|p2a: Slowbro|6 (64\/100)|[from] item: Leftovers
+|-heal|p1a: I see up your nose|6 (93\/100)|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: I see up your nose|Toxic|p2a: Slowbro
+|-status|p2a: Slowbro|tox
+|move|p2a: Slowbro|Psyshock|p1a: I see up your nose
+|-supereffective|p1a: I see up your nose
+|-damage|p1a: I see up your nose|45 (48\/100)
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: I see up your nose|6 (41\/100)|[from] hail
+|-damage|p2a: Slowbro|6 (58\/100 tox)|[from] hail
+|-heal|p2a: Slowbro|6 (64\/100 tox)|[from] item: Leftovers
+|-heal|p1a: I see up your nose|6 (48\/100)|[from] item: Leftovers
+|-damage|p2a: Slowbro|6 (58\/100 tox)|[from] psn
+|turn|17
+|callback|decision
+|
+|move|p1a: I see up your nose|Sucker Punch|p2a: Slowbro
+|-crit|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|43 (15\/100 tox)
+|move|p2a: Slowbro|Psyshock|p1a: I see up your nose
+|-crit|p1a: I see up your nose
+|-supereffective|p1a: I see up your nose
+|-damage|p1a: I see up your nose|48 (0\/100 fnt)
+|faint|p1a: I see up your nose
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Slowbro|6 (9\/100 tox)|[from] hail
+|-heal|p2a: Slowbro|6 (15\/100 tox)|[from] item: Leftovers
+|-damage|p2a: Slowbro|12 (3\/100 tox)|[from] psn
+|callback|decision
+|callback|decision
+|
+|switch|p1a: Microwave|Rotom-Heat| (94\/100)
+|turn|18
+|callback|decision
+|
+|move|p1a: Microwave|Discharge|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|3 (0\/100 fnt)
+|faint|p2a: Slowbro
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Microwave|6 (88\/100)|[from] hail
+|-heal|p1a: Microwave|6 (94\/100)|[from] item: Leftovers
+|callback|decision
+|callback|decision
+|
+|switch|p2a: Mienshao|Mienshao, M| (47\/100)
+|-damage|p2a: Mienshao|6 (41\/100)|[from] Stealth Rock
+|turn|19
+|callback|decision
+|
+|move|p2a: Mienshao|U-turn|p1a: Microwave
+|-resisted|p1a: Microwave
+|-damage|p1a: Microwave|11 (83\/100)
+|callback|decision
+|
+|switch|p2a: Nidoqueen|Nidoqueen, F| (75\/100)
+|-damage|p2a: Nidoqueen|6 (69\/100)|[from] Stealth Rock
+|move|p1a: Microwave|Overheat|p2a: Nidoqueen|[miss]
+|-miss|p1a: Microwave
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Microwave|6 (77\/100)|[from] hail
+|-damage|p2a: Nidoqueen|6 (63\/100)|[from] hail
+|-heal|p1a: Microwave|6 (83\/100)|[from] item: Leftovers
+|turn|20
+|callback|decision
+|chat|nanananana|crucial hax ftw
+|
+|switch|p2a: Snorlax|Snorlax, M| (94\/100 slp)
+|-damage|p2a: Snorlax|12 (81\/100 slp)|[from] Stealth Rock
+|move|p1a: Microwave|Overheat|p2a: Snorlax
+|-damage|p2a: Snorlax|11 (70\/100 slp)
+|-unboost|p1a: Microwave|spa|2
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Microwave|6 (77\/100)|[from] hail
+|-damage|p2a: Snorlax|6 (64\/100 slp)|[from] hail
+|-heal|p1a: Microwave|6 (83\/100)|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|switch|p1a: Gobstopper?|Cofagrigus, M| (100\/100)
+|cant|p2a: Snorlax|slp
+|move|p2a: Snorlax|Sleep Talk|p2a: Snorlax
+|move|p2a: Snorlax|Rest|p2a: Snorlax
+|-fail|p2a: Snorlax
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Snorlax|6 (58\/100 slp)|[from] hail
+|-damage|p1a: Gobstopper?|6 (94\/100)|[from] hail
+|-heal|p1a: Gobstopper?|6 (100\/100)|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|cant|p2a: Snorlax|slp
+|move|p2a: Snorlax|Sleep Talk|p2a: Snorlax
+|move|p2a: Snorlax|Whirlwind|p1a: Gobstopper?
+|drag|p1a: Crocburglar|Krookodile, F| (14\/100)
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Crocburglar|6 (8\/100)|[from] hail
+|-damage|p2a: Snorlax|6 (52\/100 slp)|[from] hail
+|turn|23
+|callback|decision
+|
+|move|p1a: Crocburglar|Crunch|p2a: Snorlax
+|-damage|p2a: Snorlax|35 (17\/100 slp)
+|-unboost|p2a: Snorlax|def|1
+|-curestatus|p2a: Snorlax|slp
+|move|p2a: Snorlax|Rest|p2a: Snorlax
+|-status|p2a: Snorlax|slp
+|-heal|p2a: Snorlax|83 (100\/100 slp)|[silent]
+|-status|p2a: Snorlax|slp|[from] move: Rest
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Crocburglar|6 (2\/100)|[from] hail
+|-damage|p2a: Snorlax|6 (94\/100 slp)|[from] hail
+|turn|24
+|callback|decision
+|
+|switch|p2a: Mienshao|Mienshao, M| (41\/100)
+|-damage|p2a: Mienshao|6 (35\/100)|[from] Stealth Rock
+|move|p1a: Crocburglar|Crunch|p2a: Mienshao
+|-resisted|p2a: Mienshao
+|-damage|p2a: Mienshao|35 (0\/100 fnt)
+|faint|p2a: Mienshao
+|-boost|p1a: Crocburglar|atk|1|[from] ability: Moxie
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Crocburglar|2 (0\/100 fnt)|[from] hail
+|faint|p1a: Crocburglar
+|callback|decision
+|callback|decision
+|
+|switch|p2a: Rotom-Frost|Rotom-Frost| (100\/100)
+|-damage|p2a: Rotom-Frost|25 (75\/100)|[from] Stealth Rock
+|switch|p1a: Microwave|Rotom-Heat| (83\/100)
+|turn|25
+|callback|decision
+|
+|move|p2a: Rotom-Frost|Volt Switch|p1a: Microwave
+|-resisted|p1a: Microwave
+|-damage|p1a: Microwave|17 (66\/100)
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, M| (94\/100 slp)
+|-damage|p2a: Snorlax|12 (81\/100 slp)|[from] Stealth Rock
+|move|p1a: Microwave|Overheat|p2a: Snorlax
+|-damage|p2a: Snorlax|10 (71\/100 slp)
+|-unboost|p1a: Microwave|spa|2
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Microwave|6 (60\/100)|[from] hail
+|-damage|p2a: Snorlax|6 (65\/100 slp)|[from] hail
+|-heal|p1a: Microwave|6 (66\/100)|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|move|p1a: Microwave|Overheat|p2a: Snorlax
+|-damage|p2a: Snorlax|6 (59\/100 slp)
+|-unboost|p1a: Microwave|spa|2
+|cant|p2a: Snorlax|slp
+|move|p2a: Snorlax|Sleep Talk|p2a: Snorlax
+|move|p2a: Snorlax|Whirlwind|p1a: Microwave
+|drag|p1a: Gobstopper?|Cofagrigus, M| (100\/100)
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Snorlax|6 (53\/100 slp)|[from] hail
+|-damage|p1a: Gobstopper?|6 (94\/100)|[from] hail
+|-heal|p1a: Gobstopper?|6 (100\/100)|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|cant|p2a: Snorlax|slp
+|move|p2a: Snorlax|Sleep Talk|p2a: Snorlax
+|move|p2a: Snorlax|Rest|p2a: Snorlax
+|-fail|p2a: Snorlax
+|move|p1a: Gobstopper?|Trick Room|p1a: Gobstopper?
+|-fieldstart|move: Trick Room|[of] p1a: Gobstopper?
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Gobstopper?|6 (94\/100)|[from] hail
+|-damage|p2a: Snorlax|6 (47\/100 slp)|[from] hail
+|-heal|p1a: Gobstopper?|6 (100\/100)|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|move|p1a: Gobstopper?|Nasty Plot|p1a: Gobstopper?
+|-boost|p1a: Gobstopper?|spa|2
+|-curestatus|p2a: Snorlax|slp
+|move|p2a: Snorlax|Rest|p2a: Snorlax
+|-status|p2a: Snorlax|slp
+|-heal|p2a: Snorlax|53 (100\/100 slp)|[silent]
+|-status|p2a: Snorlax|slp|[from] move: Rest
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Gobstopper?|6 (94\/100)|[from] hail
+|-damage|p2a: Snorlax|6 (94\/100 slp)|[from] hail
+|-heal|p1a: Gobstopper?|6 (100\/100)|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|move|p1a: Gobstopper?|Hidden Power|p2a: Snorlax
+|-supereffective|p2a: Snorlax
+|-damage|p2a: Snorlax|37 (56\/100 slp)
+|cant|p2a: Snorlax|slp
+|move|p2a: Snorlax|Sleep Talk|p2a: Snorlax
+|move|p2a: Snorlax|Rest|p2a: Snorlax
+|-fail|p2a: Snorlax
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Gobstopper?|6 (94\/100)|[from] hail
+|-damage|p2a: Snorlax|6 (50\/100 slp)|[from] hail
+|-heal|p1a: Gobstopper?|6 (100\/100)|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|move|p1a: Gobstopper?|Hidden Power|p2a: Snorlax
+|-supereffective|p2a: Snorlax
+|-damage|p2a: Snorlax|41 (9\/100 slp)
+|cant|p2a: Snorlax|slp
+|move|p2a: Snorlax|Sleep Talk|p2a: Snorlax
+|move|p2a: Snorlax|Body Slam|p1a: Gobstopper?
+|-immune|p1a: Gobstopper?|[msg]
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Gobstopper?|6 (94\/100)|[from] hail
+|-damage|p2a: Snorlax|6 (3\/100 slp)|[from] hail
+|-heal|p1a: Gobstopper?|6 (100\/100)|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|move|p1a: Gobstopper?|Nasty Plot|p1a: Gobstopper?
+|-boost|p1a: Gobstopper?|spa|2
+|-curestatus|p2a: Snorlax|slp
+|move|p2a: Snorlax|Sleep Talk|p2a: Snorlax
+|-fail|p2a: Snorlax
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Gobstopper?|6 (94\/100)|[from] hail
+|-damage|p2a: Snorlax|3 (0\/100 fnt)|[from] hail
+|-heal|p1a: Gobstopper?|6 (100\/100)|[from] item: Leftovers
+|-fieldend|move: Trick Room
+|faint|p2a: Snorlax
+|callback|decision
+|callback|decision
+|
+|switch|p2a: Rotom-Frost|Rotom-Frost| (75\/100)
+|-damage|p2a: Rotom-Frost|25 (50\/100)|[from] Stealth Rock
+|turn|32
+|callback|decision
+|
+|move|p2a: Rotom-Frost|Blizzard|p1a: Gobstopper?
+|-damage|p1a: Gobstopper?|54 (46\/100)
+|move|p1a: Gobstopper?|Shadow Ball|p2a: Rotom-Frost
+|-damage|p2a: Rotom-Frost|50 (0\/100 fnt)
+|faint|p2a: Rotom-Frost
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Gobstopper?|6 (40\/100)|[from] hail
+|-heal|p1a: Gobstopper?|6 (46\/100)|[from] item: Leftovers
+|callback|decision
+|callback|decision
+|
+|switch|p2a: Nidoqueen|Nidoqueen, F| (63\/100)
+|-damage|p2a: Nidoqueen|6 (56\/100)|[from] Stealth Rock
+|turn|33
+|callback|decision
+|
+|move|p2a: Nidoqueen|Earth Power|p1a: Gobstopper?
+|-damage|p1a: Gobstopper?|46 (0\/100 fnt)
+|faint|p1a: Gobstopper?
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Nidoqueen|6 (50\/100)|[from] hail
+|callback|decision
+|callback|decision
+|
+|switch|p1a: Microwave|Rotom-Heat| (66\/100)
+|turn|34
+|callback|decision
+|
+|move|p1a: Microwave|Overheat|p2a: Nidoqueen
+|-damage|p2a: Nidoqueen|50 (0\/100 fnt)
+|-unboost|p1a: Microwave|spa|2
+|faint|p2a: Nidoqueen
+|
+|win|nanananana
+|chatmsg-raw|Ladder updating...
+|raw|nanananana's rating: 1615 &rarr; <strong>1705<\/strong><br \/>(+90 for winning)
+|raw|Godsend's rating: 1762 &rarr; <strong>1754<\/strong><br \/>(-8 for losing)
+|chat|nanananana|gg
+|chat|Godsend|gg
+|leave|Godsend
+|player|p2

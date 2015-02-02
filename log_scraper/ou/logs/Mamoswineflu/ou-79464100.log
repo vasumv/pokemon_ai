@@ -1,0 +1,346 @@
+|join|Mamoswineflu
+|join|sick plays
+|player|p1|Mamoswineflu|265
+|player|p2|sick plays|262
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Genesect, shiny
+|poke|p1|Garchomp, M
+|poke|p1|Mandibuzz, F
+|poke|p1|Pinsir, M
+|poke|p1|Conkeldurr, M
+|poke|p1|Rotom-Wash
+|poke|p2|Conkeldurr, F
+|poke|p2|Deoxys-Speed
+|poke|p2|Lucario, M
+|poke|p2|Bisharp, F
+|poke|p2|Thundurus, M
+|poke|p2|Aegislash, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Genesect|Genesect, shiny|283\/283
+|switch|p2a: Deoxys-Speed|Deoxys-Speed|304\/304
+|-ability|p2a: Deoxys-Speed|Pressure
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|turn|1
+|callback|decision
+|
+|move|p2a: Deoxys-Speed|Thunder Wave|p1a: Genesect
+|-status|p1a: Genesect|par
+|cant|p1a: Genesect|par
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Deoxys-Speed|Stealth Rock|p1a: Genesect
+|-sidestart|p1: Mamoswineflu|move: Stealth Rock
+|move|p1a: Genesect|U-turn|p2a: Deoxys-Speed
+|-supereffective|p2a: Deoxys-Speed
+|-enditem|p2a: Deoxys-Speed|Focus Sash
+|-damage|p2a: Deoxys-Speed|1\/304
+|callback|decision
+|
+|switch|p1a: Conkeldurr|Conkeldurr, M|381\/381
+|-damage|p1a: Conkeldurr|358\/381|[from] Stealth Rock
+|
+|turn|3
+|callback|decision
+|
+|switch|p2a: Conkeldurr|Conkeldurr, F|351\/351
+|move|p1a: Conkeldurr|Knock Off|p2a: Conkeldurr
+|-resisted|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|285\/351
+|-enditem|p2a: Conkeldurr|Assault Vest|[from] move: Knock Off|[of] p1a: Conkeldurr
+|
+|turn|4
+|callback|decision
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|424\/424
+|-damage|p1a: Mandibuzz|318\/424|[from] Stealth Rock
+|move|p2a: Conkeldurr|Knock Off|p1a: Mandibuzz
+|-resisted|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|273\/424
+|-enditem|p1a: Mandibuzz|Leftovers|[from] move: Knock Off|[of] p2a: Conkeldurr
+|
+|turn|5
+|callback|decision
+|
+|switch|p2a: Deoxys-Speed|Deoxys-Speed|1\/304
+|-ability|p2a: Deoxys-Speed|Pressure
+|move|p1a: Mandibuzz|Defog|p2a: Deoxys-Speed
+|-unboost|p2a: Deoxys-Speed|evasion|1
+|-sideend|p1: Mamoswineflu|Stealth Rock|[from] move: Defog|[of] p1a: Mandibuzz
+|
+|turn|6
+|callback|decision
+|
+|move|p2a: Deoxys-Speed|Thunder Wave|p1a: Mandibuzz
+|-status|p1a: Mandibuzz|par
+|move|p1a: Mandibuzz|Foul Play|p2a: Deoxys-Speed
+|-supereffective|p2a: Deoxys-Speed
+|-damage|p2a: Deoxys-Speed|0 fnt
+|faint|p2a: Deoxys-Speed
+|
+|callback|decision
+|
+|switch|p2a: Thundurus|Thundurus, M|300\/300
+|turn|7
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|move|p2a: Thundurus|Thunderbolt|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|196\/304
+|
+|-heal|p1a: Rotom-Wash|215\/304|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p2a: Conkeldurr|Conkeldurr, F|285\/351
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|189\/351
+|callback|decision
+|
+|switch|p1a: Pinsir|Pinsir, M|271\/271
+|
+|turn|9
+|callback|decision
+|
+|move|p1a: Pinsir|Swords Dance|p1a: Pinsir
+|-boost|p1a: Pinsir|atk|2
+|move|p2a: Conkeldurr|Rock Slide|p1a: Pinsir
+|-supereffective|p1a: Pinsir
+|-damage|p1a: Pinsir|79\/271
+|
+|turn|10
+|callback|decision
+|
+|switch|p2a: Aegislash|Aegislash, F|320\/320
+|-formechange|p1a: Pinsir|Pinsir-Mega
+|message|Pinsir has Mega Evolved into Mega Pinsir!
+|move|p1a: Pinsir|Return|p2a: Aegislash
+|-resisted|p2a: Aegislash
+|-damage|p2a: Aegislash|140\/320
+|
+|-heal|p2a: Aegislash|160\/320|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Shadow Sneak|p1a: Pinsir
+|-damage|p1a: Pinsir|25\/271
+|move|p1a: Pinsir|Earthquake|p2a: Aegislash
+|-supereffective|p2a: Aegislash
+|-damage|p2a: Aegislash|0 fnt
+|faint|p2a: Aegislash
+|
+|callback|decision
+|
+|switch|p2a: Lucario|Lucario, M|281\/281
+|turn|12
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect, shiny|283\/283 par
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|-formechange|p2a: Lucario|Lucario-Mega
+|message|Lucario has Mega Evolved into Mega Lucario!
+|move|p2a: Lucario|Extreme Speed|p1a: Genesect
+|-resisted|p1a: Genesect
+|-damage|p1a: Genesect|225\/283 par
+|
+|turn|13
+|callback|decision
+|
+|move|p2a: Lucario|Close Combat|p1a: Genesect
+|-damage|p1a: Genesect|0 fnt
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|faint|p1a: Genesect
+|
+|callback|decision
+|
+|switch|p1a: Conkeldurr|Conkeldurr, M|358\/381
+|turn|14
+|callback|decision
+|
+|switch|p2a: Conkeldurr|Conkeldurr, F|189\/351
+|move|p1a: Conkeldurr|Mach Punch|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|96\/351
+|
+|turn|15
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|215\/304
+|move|p2a: Conkeldurr|Drain Punch|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|70\/304
+|-heal|p2a: Conkeldurr|169\/351|[from] drain|[of] p1a: Rotom-Wash
+|
+|-heal|p1a: Rotom-Wash|89\/304|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Conkeldurr|[miss]
+|-miss|p1a: Rotom-Wash|p2a: Conkeldurr
+|move|p2a: Conkeldurr|Drain Punch|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|-heal|p2a: Conkeldurr|214\/351|[from] drain|[of] p1a: Rotom-Wash
+|faint|p1a: Rotom-Wash
+|
+|callback|decision
+|
+|switch|p1a: Pinsir|Pinsir, M|25\/271
+|-formechange|p1a: Pinsir|Pinsir-Mega
+|turn|17
+|callback|decision
+|
+|switch|p2a: Thundurus|Thundurus, M|300\/300
+|move|p1a: Pinsir|Return|p2a: Thundurus
+|-resisted|p2a: Thundurus
+|-damage|p2a: Thundurus|105\/300
+|
+|-heal|p2a: Thundurus|123\/300|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|switch|p1a: Conkeldurr|Conkeldurr, M|358\/381
+|move|p2a: Thundurus|Hidden Power|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|300\/381
+|
+|-heal|p2a: Thundurus|141\/300|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p2a: Thundurus|Thunderbolt|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|171\/381
+|move|p1a: Conkeldurr|Drain Punch|p2a: Thundurus
+|-resisted|p2a: Thundurus
+|-damage|p2a: Thundurus|39\/300
+|-heal|p1a: Conkeldurr|222\/381|[from] drain|[of] p2a: Thundurus
+|
+|-heal|p2a: Thundurus|57\/300|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p2a: Thundurus|Thunderbolt|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|90\/381
+|move|p1a: Conkeldurr|Drain Punch|p2a: Thundurus
+|-resisted|p2a: Thundurus
+|-damage|p2a: Thundurus|0 fnt
+|-heal|p1a: Conkeldurr|119\/381|[from] drain|[of] p2a: Thundurus
+|faint|p2a: Thundurus
+|
+|callback|decision
+|
+|switch|p2a: Conkeldurr|Conkeldurr, F|214\/351
+|turn|21
+|callback|decision
+|
+|move|p2a: Conkeldurr|Drain Punch|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|0 fnt
+|-heal|p2a: Conkeldurr|274\/351|[from] drain|[of] p1a: Conkeldurr
+|faint|p1a: Conkeldurr
+|
+|callback|decision
+|
+|switch|p1a: Pinsir|Pinsir, M|25\/271
+|-formechange|p1a: Pinsir|Pinsir-Mega
+|turn|22
+|callback|decision
+|
+|switch|p2a: Bisharp|Bisharp, F|271\/271
+|move|p1a: Pinsir|Return|p2a: Bisharp
+|-resisted|p2a: Bisharp
+|-damage|p2a: Bisharp|139\/271
+|
+|turn|23
+|callback|decision
+|
+|move|p2a: Bisharp|Sucker Punch|p1a: Pinsir
+|-damage|p1a: Pinsir|0 fnt
+|-damage|p2a: Bisharp|112\/271|[from] item: Life Orb
+|faint|p1a: Pinsir
+|
+|callback|decision
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|273\/424 par
+|turn|24
+|callback|decision
+|
+|move|p2a: Bisharp|Iron Head|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|147\/424 par
+|-damage|p2a: Bisharp|85\/271|[from] item: Life Orb
+|move|p1a: Mandibuzz|Foul Play|p2a: Bisharp
+|-resisted|p2a: Bisharp
+|-damage|p2a: Bisharp|0 fnt
+|faint|p2a: Bisharp
+|
+|callback|decision
+|
+|switch|p2a: Conkeldurr|Conkeldurr, F|274\/351
+|turn|25
+|callback|decision
+|
+|move|p2a: Conkeldurr|Rock Slide|p1a: Mandibuzz
+|-supereffective|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|0 fnt
+|faint|p1a: Mandibuzz
+|
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, M|358\/358
+|turn|26
+|callback|decision
+|
+|move|p1a: Garchomp|Earthquake|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|75\/351
+|move|p2a: Conkeldurr|Knock Off|p1a: Garchomp
+|-damage|p1a: Garchomp|224\/358
+|-damage|p2a: Conkeldurr|32\/351|[from] ability: Rough Skin|[of] p1a: Garchomp
+|-enditem|p1a: Garchomp|Focus Sash|[from] move: Knock Off|[of] p2a: Conkeldurr
+|
+|turn|27
+|callback|decision
+|
+|move|p2a: Conkeldurr|Mach Punch|p1a: Garchomp
+|-damage|p1a: Garchomp|133\/358
+|-damage|p2a: Conkeldurr|0 fnt|[from] ability: Rough Skin|[of] p1a: Garchomp
+|faint|p2a: Conkeldurr
+|move|p1a: Garchomp|Earthquake|p2: Conkeldurr|[notarget]
+|-notarget
+|
+|callback|decision
+|
+|switch|p2a: Lucario|Lucario, M|281\/281
+|-formechange|p2a: Lucario|Lucario-Mega
+|turn|28
+|callback|decision
+|
+|move|p2a: Lucario|Close Combat|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|-damage|p2a: Lucario|246\/281|[from] ability: Rough Skin|[of] p1a: Garchomp
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|faint|p1a: Garchomp
+|
+|win|sick plays
+|raw|Ladder updating...
+|raw|Mamoswineflu's rating: 1475 &rarr; <strong>1445<\/strong><br \/>(-30 for losing)
+|raw|sick plays's rating: 1396 &rarr; <strong>1427<\/strong><br \/>(+31 for winning)
+|leave|sick plays
+|player|p2
+|leave|Mamoswineflu
+|player|p1
+|join|sick plays
+|leave|sick plays
+|join|sick plays

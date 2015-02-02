@@ -1,0 +1,821 @@
+|join|xMarth
+|join|RowDog
+|player|p1|xMarth|153
+|player|p2|RowDog|80
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Umbreon, F
+|poke|p1|Gligar, M
+|poke|p1|Tentacruel, M
+|poke|p1|Jirachi
+|poke|p1|Hydreigon, M
+|poke|p1|Raikou
+|poke|p2|Aromatisse, F
+|poke|p2|Jirachi, shiny
+|poke|p2|Blissey, F
+|poke|p2|Arcanine, F
+|poke|p2|Crobat, F
+|poke|p2|Gastrodon, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|c|âRowDog|oh hi
+|c|âxMarth|hi
+|
+|start
+|switch|p1a: Gligar|Gligar, M|333\/333
+|switch|p2a: Gastrodon|Gastrodon, M|426\/426
+|turn|1
+|
+|move|p1a: Gligar|Stealth Rock|p2a: Gastrodon
+|-sidestart|p2: RowDog|move: Stealth Rock
+|move|p2a: Gastrodon|Scald|p1a: Gligar
+|-supereffective|p1a: Gligar
+|-damage|p1a: Gligar|171\/333
+|
+|turn|2
+|
+|move|p1a: Gligar|U-turn|p2a: Gastrodon
+|-damage|p2a: Gastrodon|374\/426
+|
+|switch|p1a: Umbreon|Umbreon, F|394\/394
+|move|p2a: Gastrodon|Scald|p1a: Umbreon
+|-damage|p1a: Umbreon|340\/394
+|-status|p1a: Umbreon|brn
+|-status|p2a: Gastrodon|brn
+|
+|-heal|p1a: Umbreon|364\/394 brn|[from] item: Leftovers
+|-heal|p2a: Gastrodon|400\/426 brn|[from] item: Leftovers
+|-damage|p1a: Umbreon|315\/394 brn|[from] brn
+|-damage|p2a: Gastrodon|347\/426 brn|[from] brn
+|turn|3
+|
+|switch|p2a: Aromatisse|Aromatisse, F|406\/406
+|-damage|p2a: Aromatisse|356\/406|[from] Stealth Rock
+|move|p1a: Umbreon|Heal Bell|p1a: Umbreon
+|-cureteam|p1a: Umbreon|[from] move: HealBell
+|
+|-heal|p1a: Umbreon|339\/394|[from] item: Leftovers
+|-heal|p2a: Aromatisse|381\/406|[from] item: Leftovers
+|turn|4
+|join|BenzMafia
+|
+|switch|p1a: Tentacruel|Tentacruel, M|364\/364
+|move|p2a: Aromatisse|Aromatherapy|p2a: Aromatisse
+|-cureteam|p2a: Aromatisse|[from] move: Aromatherapy
+|
+|-heal|p2a: Aromatisse|406\/406|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Crobat|Crobat, F|374\/374
+|-damage|p2a: Crobat|281\/374|[from] Stealth Rock
+|move|p1a: Tentacruel|Toxic Spikes|p2a: Crobat
+|-sidestart|p2: RowDog|move: Toxic Spikes
+|
+|-heal|p2a: Crobat|304\/374|[from] item: Black Sludge
+|turn|6
+|
+|switch|p1a: Hydreigon|Hydreigon, M|325\/325
+|move|p2a: Crobat|Defog|p1a: Hydreigon
+|-unboost|p1a: Hydreigon|evasion|1
+|-sideend|p2: RowDog|Toxic Spikes|[from] move: Defog|[of] p2a: Crobat
+|-sideend|p2: RowDog|Stealth Rock|[from] move: Defog|[of] p2a: Crobat
+|
+|-heal|p2a: Crobat|327\/374|[from] item: Black Sludge
+|turn|7
+|
+|switch|p2a: Aromatisse|Aromatisse, F|406\/406
+|move|p1a: Hydreigon|Flash Cannon|p2a: Aromatisse
+|-supereffective|p2a: Aromatisse
+|-damage|p2a: Aromatisse|159\/406
+|-damage|p1a: Hydreigon|293\/325|[from] item: Life Orb
+|
+|-heal|p2a: Aromatisse|184\/406|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Jirachi|Jirachi|341\/341
+|switch|p2a: Blissey|Blissey, F|714\/714
+|
+|turn|9
+|
+|switch|p2a: Arcanine|Arcanine, F|383\/383
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Jirachi
+|-unboost|p1a: Jirachi|atk|1
+|move|p1a: Jirachi|Trick|p2a: Arcanine
+|-activate|p1a: Jirachi|move: Trick|[of] p2a: Arcanine
+|-item|p2a: Arcanine|Choice Scarf|[from] move: Trick
+|-item|p1a: Jirachi|Rocky Helmet|[from] move: Trick
+|
+|turn|10
+|
+|switch|p1a: Tentacruel|Tentacruel, M|364\/364
+|move|p2a: Arcanine|Will-O-Wisp|p1a: Tentacruel
+|-status|p1a: Tentacruel|brn
+|
+|-damage|p1a: Tentacruel|319\/364 brn|[from] brn
+|turn|11
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|move|p1a: Tentacruel|Toxic Spikes|p2a: Blissey
+|-sidestart|p2: RowDog|move: Toxic Spikes
+|
+|-heal|p1a: Tentacruel|341\/364 brn|[from] item: Black Sludge
+|-damage|p1a: Tentacruel|296\/364 brn|[from] brn
+|turn|12
+|
+|switch|p1a: Jirachi|Jirachi|341\/341
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|turn|13
+|
+|move|p1a: Jirachi|U-turn|p2a: Blissey
+|-damage|p2a: Blissey|582\/714
+|
+|switch|p1a: Gligar|Gligar, M|171\/333
+|move|p2a: Blissey|Stealth Rock|p1a: Gligar
+|-sidestart|p1: xMarth|move: Stealth Rock
+|
+|-heal|p2a: Blissey|714\/714|[from] move: Wish|[wisher] Blissey
+|turn|14
+|
+|switch|p2a: Crobat|Crobat, F|327\/374
+|move|p1a: Gligar|Stealth Rock|p2a: Crobat
+|-sidestart|p2: RowDog|move: Stealth Rock
+|
+|-heal|p2a: Crobat|350\/374|[from] item: Black Sludge
+|turn|15
+|
+|move|p2a: Crobat|Defog|p1a: Gligar
+|-unboost|p1a: Gligar|evasion|1
+|-sideend|p1: xMarth|Stealth Rock|[from] move: Defog|[of] p1a: Gligar
+|-sideend|p2: RowDog|Toxic Spikes|[from] move: Defog|[of] p2a: Crobat
+|-sideend|p2: RowDog|Stealth Rock|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Gligar|U-turn|p2a: Crobat
+|-crit|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|331\/374
+|
+|switch|p1a: Hydreigon|Hydreigon, M|293\/325
+|
+|-heal|p2a: Crobat|354\/374|[from] item: Black Sludge
+|turn|16
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|move|p1a: Hydreigon|Draco Meteor|p2a: Blissey
+|-damage|p2a: Blissey|506\/714
+|-unboost|p1a: Hydreigon|spa|2
+|-damage|p1a: Hydreigon|261\/325|[from] item: Life Orb
+|
+|-heal|p2a: Blissey|550\/714|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Hydreigon|Superpower|p2a: Blissey
+|-crit|p2a: Blissey
+|-supereffective|p2a: Blissey
+|-damage|p2a: Blissey|0 fnt
+|-unboost|p1a: Hydreigon|atk|1
+|-unboost|p1a: Hydreigon|def|1
+|-damage|p1a: Hydreigon|229\/325|[from] item: Life Orb
+|faint|p2a: Blissey
+|
+|c|âRowDog|kek crit
+|c|âxMarth|ouch =\/
+|
+|switch|p2a: Aromatisse|Aromatisse, F|184\/406
+|turn|18
+|
+|switch|p1a: Jirachi|Jirachi|341\/341
+|switch|p2a: Arcanine|Arcanine, F|383\/383
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Jirachi
+|-unboost|p1a: Jirachi|atk|1
+|
+|turn|19
+|
+|switch|p1a: Tentacruel|Tentacruel, M|296\/364 brn
+|move|p2a: Arcanine|Flare Blitz|p1a: Tentacruel
+|-crit|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|180\/364 brn
+|-damage|p2a: Arcanine|345\/383|[from] recoil|[of] p1a: Tentacruel
+|
+|-heal|p1a: Tentacruel|202\/364 brn|[from] item: Black Sludge
+|-damage|p1a: Tentacruel|157\/364 brn|[from] brn
+|turn|20
+|
+|switch|p2a: Gastrodon|Gastrodon, M|347\/426
+|move|p1a: Tentacruel|Toxic Spikes|p2a: Gastrodon
+|-sidestart|p2: RowDog|move: Toxic Spikes
+|
+|-heal|p1a: Tentacruel|179\/364 brn|[from] item: Black Sludge
+|-heal|p2a: Gastrodon|373\/426|[from] item: Leftovers
+|-damage|p1a: Tentacruel|134\/364 brn|[from] brn
+|turn|21
+|
+|switch|p1a: Umbreon|Umbreon, F|339\/394
+|move|p2a: Gastrodon|Curse|p2a: Gastrodon
+|-boost|p2a: Gastrodon|atk|1
+|-boost|p2a: Gastrodon|def|1
+|-unboost|p2a: Gastrodon|spe|1
+|
+|-heal|p1a: Umbreon|363\/394|[from] item: Leftovers
+|-heal|p2a: Gastrodon|399\/426|[from] item: Leftovers
+|turn|22
+|join|ALOMOMOMOMOMOMOLA
+|
+|switch|p1a: Hydreigon|Hydreigon, M|229\/325
+|move|p2a: Gastrodon|Curse|p2a: Gastrodon
+|-boost|p2a: Gastrodon|atk|1
+|-boost|p2a: Gastrodon|def|1
+|-unboost|p2a: Gastrodon|spe|1
+|
+|-heal|p2a: Gastrodon|425\/426|[from] item: Leftovers
+|turn|23
+|
+|move|p1a: Hydreigon|Dark Pulse|p2a: Gastrodon
+|-damage|p2a: Gastrodon|256\/426
+|-damage|p1a: Hydreigon|197\/325|[from] item: Life Orb
+|move|p2a: Gastrodon|Recover|p2a: Gastrodon
+|-heal|p2a: Gastrodon|426\/426
+|
+|turn|24
+|
+|move|p1a: Hydreigon|Dark Pulse|p2a: Gastrodon
+|-damage|p2a: Gastrodon|251\/426
+|-damage|p1a: Hydreigon|165\/325|[from] item: Life Orb
+|move|p2a: Gastrodon|Scald|p1a: Hydreigon
+|-resisted|p1a: Hydreigon
+|-damage|p1a: Hydreigon|113\/325
+|
+|-heal|p2a: Gastrodon|277\/426|[from] item: Leftovers
+|turn|25
+|
+|switch|p2a: Jirachi|Jirachi, shiny|404\/404
+|move|p1a: Hydreigon|Draco Meteor|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|260\/404
+|-unboost|p1a: Hydreigon|spa|2
+|-damage|p1a: Hydreigon|81\/325|[from] item: Life Orb
+|
+|-heal|p2a: Jirachi|285\/404|[from] item: Leftovers
+|turn|26
+|
+|switch|p1a: Umbreon|Umbreon, F|363\/394
+|move|p2a: Jirachi|Substitute|p2a: Jirachi
+|-start|p2a: Jirachi|Substitute
+|-damage|p2a: Jirachi|184\/404
+|
+|-heal|p2a: Jirachi|209\/404|[from] item: Leftovers
+|-heal|p1a: Umbreon|387\/394|[from] item: Leftovers
+|turn|27
+|
+|move|p2a: Jirachi|Toxic|p1a: Umbreon
+|-status|p1a: Umbreon|tox
+|move|p1a: Umbreon|Foul Play|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-end|p2a: Jirachi|Substitute
+|
+|-heal|p2a: Jirachi|234\/404|[from] item: Leftovers
+|-heal|p1a: Umbreon|394\/394 tox|[from] item: Leftovers
+|-damage|p1a: Umbreon|370\/394 tox|[from] psn
+|turn|28
+|
+|switch|p2a: Aromatisse|Aromatisse, F|184\/406
+|-status|p2a: Aromatisse|psn
+|move|p1a: Umbreon|Foul Play|p2a: Aromatisse
+|-resisted|p2a: Aromatisse
+|-damage|p2a: Aromatisse|157\/406 psn
+|
+|-heal|p1a: Umbreon|394\/394 tox|[from] item: Leftovers
+|-heal|p2a: Aromatisse|182\/406 psn|[from] item: Leftovers
+|-damage|p1a: Umbreon|346\/394 tox|[from] psn
+|-damage|p2a: Aromatisse|132\/406 psn|[from] psn
+|turn|29
+|
+|switch|p1a: Raikou|Raikou|335\/335
+|-ability|p1a: Raikou|Pressure
+|move|p2a: Aromatisse|Wish|p2a: Aromatisse
+|
+|-heal|p2a: Aromatisse|157\/406 psn|[from] item: Leftovers
+|-damage|p2a: Aromatisse|107\/406 psn|[from] psn
+|turn|30
+|
+|switch|p2a: Gastrodon|Gastrodon, M|277\/426
+|-status|p2a: Gastrodon|psn
+|move|p1a: Raikou|Calm Mind|p1a: Raikou
+|-boost|p1a: Raikou|spa|1
+|-boost|p1a: Raikou|spd|1
+|
+|-heal|p2a: Gastrodon|426\/426 psn|[from] move: Wish|[wisher] Aromatisse
+|-damage|p2a: Gastrodon|373\/426 psn|[from] psn
+|turn|31
+|
+|switch|p1a: Umbreon|Umbreon, F|346\/394 tox
+|move|p2a: Gastrodon|Earthquake|p1a: Umbreon
+|-damage|p1a: Umbreon|261\/394 tox
+|
+|-heal|p1a: Umbreon|285\/394 tox|[from] item: Leftovers
+|-heal|p2a: Gastrodon|399\/426 psn|[from] item: Leftovers
+|-damage|p1a: Umbreon|261\/394 tox|[from] psn
+|-damage|p2a: Gastrodon|346\/426 psn|[from] psn
+|turn|32
+|
+|switch|p2a: Crobat|Crobat, F|354\/374
+|move|p1a: Umbreon|Heal Bell|p1a: Umbreon
+|-cureteam|p1a: Umbreon|[from] move: HealBell
+|
+|-heal|p2a: Crobat|374\/374|[from] item: Black Sludge
+|-heal|p1a: Umbreon|285\/394|[from] item: Leftovers
+|turn|33
+|
+|switch|p1a: Gligar|Gligar, M|171\/333
+|move|p2a: Crobat|Taunt|p1a: Gligar
+|-start|p1a: Gligar|move: Taunt
+|
+|turn|34
+|
+|move|p2a: Crobat|Defog|p1a: Gligar
+|-unboost|p1a: Gligar|evasion|1
+|-sideend|p2: RowDog|Toxic Spikes|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Gligar|U-turn|p2a: Crobat
+|-crit|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|356\/374
+|
+|switch|p1a: Raikou|Raikou|335\/335
+|-ability|p1a: Raikou|Pressure
+|
+|-heal|p2a: Crobat|374\/374|[from] item: Black Sludge
+|turn|35
+|
+|switch|p2a: Gastrodon|Gastrodon, M|346\/426 psn
+|move|p1a: Raikou|Substitute|p1a: Raikou
+|-start|p1a: Raikou|Substitute
+|-damage|p1a: Raikou|252\/335
+|
+|-heal|p1a: Raikou|272\/335|[from] item: Leftovers
+|-heal|p2a: Gastrodon|372\/426 psn|[from] item: Leftovers
+|-damage|p2a: Gastrodon|319\/426 psn|[from] psn
+|turn|36
+|
+|move|p1a: Raikou|Hidden Power|p2a: Gastrodon
+|-damage|p2a: Gastrodon|256\/426 psn
+|move|p2a: Gastrodon|Earthquake|p1a: Raikou
+|-supereffective|p1a: Raikou
+|-end|p1a: Raikou|Substitute
+|
+|-heal|p1a: Raikou|292\/335|[from] item: Leftovers
+|-heal|p2a: Gastrodon|282\/426 psn|[from] item: Leftovers
+|-damage|p2a: Gastrodon|229\/426 psn|[from] psn
+|turn|37
+|
+|switch|p1a: Jirachi|Jirachi|341\/341
+|move|p2a: Gastrodon|Recover|p2a: Gastrodon
+|-heal|p2a: Gastrodon|426\/426 psn
+|
+|-damage|p2a: Gastrodon|373\/426 psn|[from] psn
+|turn|38
+|
+|move|p1a: Jirachi|Trick|p2a: Gastrodon
+|-activate|p1a: Jirachi|move: Trick|[of] p2a: Gastrodon
+|-item|p2a: Gastrodon|Rocky Helmet|[from] move: Trick
+|-item|p1a: Jirachi|Leftovers|[from] move: Trick
+|move|p2a: Gastrodon|Scald|p1a: Jirachi
+|-damage|p1a: Jirachi|256\/341
+|
+|-heal|p1a: Jirachi|277\/341|[from] item: Leftovers
+|-damage|p2a: Gastrodon|320\/426 psn|[from] psn
+|turn|39
+|
+|switch|p1a: Umbreon|Umbreon, F|285\/394
+|switch|p2a: Aromatisse|Aromatisse, F|107\/406 psn
+|
+|-heal|p1a: Umbreon|309\/394|[from] item: Leftovers
+|-heal|p2a: Aromatisse|132\/406 psn|[from] item: Leftovers
+|-damage|p2a: Aromatisse|82\/406 psn|[from] psn
+|turn|40
+|
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|move|p2a: Aromatisse|Aromatherapy|p2a: Aromatisse
+|-cureteam|p2a: Aromatisse|[from] move: Aromatherapy
+|
+|-heal|p1a: Umbreon|333\/394|[from] item: Leftovers
+|-heal|p2a: Aromatisse|107\/406|[from] item: Leftovers
+|turn|41
+|
+|switch|p1a: Tentacruel|Tentacruel, M|134\/364
+|move|p2a: Aromatisse|Moonblast|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|89\/364
+|-unboost|p1a: Tentacruel|spa|1
+|
+|-heal|p1a: Tentacruel|286\/364|[from] move: Wish|[wisher] Umbreon
+|-heal|p1a: Tentacruel|308\/364|[from] item: Black Sludge
+|-heal|p2a: Aromatisse|132\/406|[from] item: Leftovers
+|turn|42
+|
+|move|p1a: Tentacruel|Toxic Spikes|p2a: Aromatisse
+|-sidestart|p2: RowDog|move: Toxic Spikes
+|move|p2a: Aromatisse|Wish|p2a: Aromatisse
+|
+|-heal|p1a: Tentacruel|330\/364|[from] item: Black Sludge
+|-heal|p2a: Aromatisse|157\/406|[from] item: Leftovers
+|turn|43
+|
+|move|p1a: Tentacruel|Toxic Spikes|p2a: Aromatisse
+|-sidestart|p2: RowDog|move: Toxic Spikes
+|move|p2a: Aromatisse|Moonblast|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|286\/364
+|
+|-heal|p2a: Aromatisse|360\/406|[from] move: Wish|[wisher] Aromatisse
+|-heal|p1a: Tentacruel|308\/364|[from] item: Black Sludge
+|-heal|p2a: Aromatisse|385\/406|[from] item: Leftovers
+|turn|44
+|
+|switch|p1a: Raikou|Raikou|292\/335
+|-ability|p1a: Raikou|Pressure
+|switch|p2a: Crobat|Crobat, F|374\/374
+|
+|-heal|p1a: Raikou|312\/335|[from] item: Leftovers
+|turn|45
+|
+|move|p2a: Crobat|Defog|p1a: Raikou
+|-unboost|p1a: Raikou|evasion|1
+|-sideend|p2: RowDog|Toxic Spikes|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Raikou|Thunderbolt|p2a: Crobat
+|-supereffective|p2a: Crobat
+|-damage|p2a: Crobat|26\/374
+|
+|-heal|p2a: Crobat|49\/374|[from] item: Black Sludge
+|-heal|p1a: Raikou|332\/335|[from] item: Leftovers
+|turn|46
+|
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|236\/374
+|move|p1a: Raikou|Thunderbolt|p2a: Crobat
+|-damage|p2a: Crobat|62\/374
+|
+|-heal|p2a: Crobat|85\/374|[from] item: Black Sludge
+|-heal|p1a: Raikou|335\/335|[from] item: Leftovers
+|turn|47
+|
+|switch|p2a: Gastrodon|Gastrodon, M|320\/426
+|move|p1a: Raikou|Thunderbolt|p2a: Gastrodon
+|-immune|p2a: Gastrodon|[msg]
+|
+|turn|48
+|
+|switch|p1a: Hydreigon|Hydreigon, M|81\/325
+|move|p2a: Gastrodon|Curse|p2a: Gastrodon
+|-boost|p2a: Gastrodon|atk|1
+|-boost|p2a: Gastrodon|def|1
+|-unboost|p2a: Gastrodon|spe|1
+|
+|turn|49
+|
+|move|p1a: Hydreigon|Dark Pulse|p2a: Gastrodon
+|-damage|p2a: Gastrodon|135\/426
+|-damage|p1a: Hydreigon|49\/325|[from] item: Life Orb
+|move|p2a: Gastrodon|Recover|p2a: Gastrodon
+|-heal|p2a: Gastrodon|348\/426
+|
+|turn|50
+|
+|move|p1a: Hydreigon|Draco Meteor|p2a: Gastrodon
+|-damage|p2a: Gastrodon|67\/426
+|-unboost|p1a: Hydreigon|spa|2
+|-damage|p1a: Hydreigon|17\/325|[from] item: Life Orb
+|move|p2a: Gastrodon|Recover|p2a: Gastrodon
+|-heal|p2a: Gastrodon|280\/426
+|
+|turn|51
+|
+|move|p1a: Hydreigon|Dark Pulse|p2a: Gastrodon
+|-damage|p2a: Gastrodon|194\/426
+|-damage|p1a: Hydreigon|0 fnt|[from] item: Life Orb
+|faint|p1a: Hydreigon
+|move|p2a: Gastrodon|Recover|p2a: Gastrodon
+|-heal|p2a: Gastrodon|407\/426
+|
+|
+|switch|p1a: Tentacruel|Tentacruel, M|308\/364
+|turn|52
+|
+|move|p1a: Tentacruel|Toxic|p2a: Gastrodon
+|-status|p2a: Gastrodon|tox
+|move|p2a: Gastrodon|Earthquake|p1a: Tentacruel
+|-supereffective|p1a: Tentacruel
+|-damage|p1a: Tentacruel|32\/364
+|
+|-heal|p1a: Tentacruel|54\/364|[from] item: Black Sludge
+|-damage|p2a: Gastrodon|381\/426 tox|[from] psn
+|turn|53
+|
+|move|p1a: Tentacruel|Toxic Spikes|p2a: Gastrodon
+|-sidestart|p2: RowDog|move: Toxic Spikes
+|move|p2a: Gastrodon|Scald|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|17\/364
+|
+|-heal|p1a: Tentacruel|39\/364|[from] item: Black Sludge
+|-damage|p2a: Gastrodon|329\/426 tox|[from] psn
+|turn|54
+|
+|move|p1a: Tentacruel|Scald|p2a: Gastrodon
+|-boost|p2a: Gastrodon|spa|1|[from] ability: Storm Drain
+|move|p2a: Gastrodon|Earthquake|p1a: Tentacruel
+|-supereffective|p1a: Tentacruel
+|-damage|p1a: Tentacruel|0 fnt
+|faint|p1a: Tentacruel
+|
+|-damage|p2a: Gastrodon|251\/426 tox|[from] psn
+|
+|switch|p1a: Gligar|Gligar, M|171\/333
+|turn|55
+|
+|switch|p2a: Crobat|Crobat, F|85\/374
+|move|p1a: Gligar|Stealth Rock|p2a: Crobat
+|-sidestart|p2: RowDog|move: Stealth Rock
+|
+|-heal|p2a: Crobat|108\/374|[from] item: Black Sludge
+|turn|56
+|
+|move|p2a: Crobat|Defog|p1a: Gligar
+|-unboost|p1a: Gligar|evasion|1
+|-sideend|p2: RowDog|Toxic Spikes|[from] move: Defog|[of] p2a: Crobat
+|-sideend|p2: RowDog|Stealth Rock|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Gligar|Earthquake|p2a: Crobat
+|-immune|p2a: Crobat|[msg]
+|
+|-heal|p2a: Crobat|131\/374|[from] item: Black Sludge
+|turn|57
+|
+|move|p2a: Crobat|Taunt|p1a: Gligar
+|-start|p1a: Gligar|move: Taunt
+|move|p1a: Gligar|U-turn|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|119\/374
+|
+|switch|p1a: Raikou|Raikou|335\/335
+|-ability|p1a: Raikou|Pressure
+|
+|-heal|p2a: Crobat|142\/374|[from] item: Black Sludge
+|turn|58
+|
+|move|p2a: Crobat|Taunt|p1a: Raikou
+|-start|p1a: Raikou|move: Taunt
+|cant|p1a: Raikou|move: Taunt|Calm Mind
+|
+|-heal|p2a: Crobat|165\/374|[from] item: Black Sludge
+|turn|59
+|
+|switch|p2a: Aromatisse|Aromatisse, F|385\/406
+|switch|p1a: Jirachi|Jirachi|277\/341
+|
+|-heal|p1a: Jirachi|298\/341|[from] item: Leftovers
+|-heal|p2a: Aromatisse|406\/406|[from] item: Leftovers
+|turn|60
+|
+|switch|p2a: Arcanine|Arcanine, F|345\/383
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Jirachi
+|-unboost|p1a: Jirachi|atk|1
+|move|p1a: Jirachi|Iron Head|p2a: Arcanine
+|-resisted|p2a: Arcanine
+|-damage|p2a: Arcanine|312\/383
+|
+|-heal|p1a: Jirachi|319\/341|[from] item: Leftovers
+|turn|61
+|
+|switch|p1a: Umbreon|Umbreon, F|333\/394
+|move|p2a: Arcanine|Will-O-Wisp|p1a: Umbreon
+|-status|p1a: Umbreon|brn
+|
+|-heal|p1a: Umbreon|357\/394 brn|[from] item: Leftovers
+|-damage|p1a: Umbreon|308\/394 brn|[from] brn
+|turn|62
+|
+|switch|p2a: Aromatisse|Aromatisse, F|406\/406
+|switch|p1a: Jirachi|Jirachi|319\/341
+|
+|-heal|p1a: Jirachi|340\/341|[from] item: Leftovers
+|turn|63
+|
+|switch|p2a: Arcanine|Arcanine, F|312\/383
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Jirachi
+|-unboost|p1a: Jirachi|atk|1
+|move|p1a: Jirachi|Iron Head|p2a: Arcanine
+|-resisted|p2a: Arcanine
+|-damage|p2a: Arcanine|277\/383
+|
+|-heal|p1a: Jirachi|341\/341|[from] item: Leftovers
+|turn|64
+|
+|switch|p1a: Umbreon|Umbreon, F|308\/394 brn
+|move|p2a: Arcanine|Flare Blitz|p1a: Umbreon
+|-damage|p1a: Umbreon|158\/394 brn
+|-damage|p2a: Arcanine|227\/383|[from] recoil|[of] p1a: Umbreon
+|
+|-heal|p1a: Umbreon|182\/394 brn|[from] item: Leftovers
+|-damage|p1a: Umbreon|133\/394 brn|[from] brn
+|turn|65
+|
+|switch|p2a: Aromatisse|Aromatisse, F|406\/406
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p1a: Umbreon|157\/394 brn|[from] item: Leftovers
+|-damage|p1a: Umbreon|108\/394 brn|[from] brn
+|turn|66
+|
+|switch|p1a: Raikou|Raikou|335\/335
+|-ability|p1a: Raikou|Pressure
+|move|p2a: Aromatisse|Aromatherapy|p2a: Aromatisse
+|-cureteam|p2a: Aromatisse|[from] move: Aromatherapy
+|
+|turn|67
+|
+|move|p1a: Raikou|Calm Mind|p1a: Raikou
+|-boost|p1a: Raikou|spa|1
+|-boost|p1a: Raikou|spd|1
+|move|p2a: Aromatisse|Wish|p2a: Aromatisse
+|
+|turn|68
+|
+|switch|p2a: Gastrodon|Gastrodon, M|251\/426
+|move|p1a: Raikou|Calm Mind|p1a: Raikou
+|-boost|p1a: Raikou|spa|1
+|-boost|p1a: Raikou|spd|1
+|
+|-heal|p2a: Gastrodon|426\/426|[from] move: Wish|[wisher] Aromatisse
+|turn|69
+|
+|move|p1a: Raikou|Hidden Power|p2a: Gastrodon
+|-damage|p2a: Gastrodon|292\/426
+|move|p2a: Gastrodon|Earthquake|p1a: Raikou
+|-supereffective|p1a: Raikou
+|-damage|p1a: Raikou|57\/335
+|
+|-heal|p1a: Raikou|77\/335|[from] item: Leftovers
+|turn|70
+|
+|move|p1a: Raikou|Hidden Power|p2a: Gastrodon
+|-damage|p2a: Gastrodon|159\/426
+|move|p2a: Gastrodon|Earthquake|p1a: Raikou
+|-supereffective|p1a: Raikou
+|-damage|p1a: Raikou|0 fnt
+|faint|p1a: Raikou
+|
+|
+|switch|p1a: Jirachi|Jirachi|341\/341
+|turn|71
+|
+|switch|p2a: Arcanine|Arcanine, F|227\/383
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Jirachi
+|-unboost|p1a: Jirachi|atk|1
+|move|p1a: Jirachi|Iron Head|p2a: Arcanine
+|-resisted|p2a: Arcanine
+|-damage|p2a: Arcanine|196\/383
+|
+|turn|72
+|
+|switch|p1a: Umbreon|Umbreon, F|108\/394 brn
+|move|p2a: Arcanine|Flare Blitz|p1a: Umbreon
+|-damage|p1a: Umbreon|0 fnt
+|-damage|p2a: Arcanine|160\/383|[from] recoil|[of] p1a: Umbreon
+|faint|p1a: Umbreon
+|
+|
+|switch|p1a: Gligar|Gligar, M|171\/333
+|turn|73
+|
+|switch|p2a: Aromatisse|Aromatisse, F|406\/406
+|move|p1a: Gligar|Stealth Rock|p2a: Aromatisse
+|-sidestart|p2: RowDog|move: Stealth Rock
+|
+|turn|74
+|
+|move|p1a: Gligar|Roost|p1a: Gligar
+|-heal|p1a: Gligar|333\/333
+|move|p2a: Aromatisse|Wish|p2a: Aromatisse
+|
+|turn|75
+|
+|switch|p2a: Gastrodon|Gastrodon, M|159\/426
+|-damage|p2a: Gastrodon|133\/426|[from] Stealth Rock
+|move|p1a: Gligar|U-turn|p2a: Gastrodon
+|-damage|p2a: Gastrodon|84\/426
+|-damage|p1a: Gligar|278\/333|[from] item: Rocky Helmet|[of] p2a: Gastrodon
+|
+|switch|p1a: Jirachi|Jirachi|341\/341
+|
+|-heal|p2a: Gastrodon|287\/426|[from] move: Wish|[wisher] Aromatisse
+|turn|76
+|
+|move|p1a: Jirachi|Iron Head|p2a: Gastrodon
+|-resisted|p2a: Gastrodon
+|-damage|p2a: Gastrodon|227\/426
+|-damage|p1a: Jirachi|285\/341|[from] item: Rocky Helmet|[of] p2a: Gastrodon
+|cant|p2a: Gastrodon|flinch
+|
+|-heal|p1a: Jirachi|306\/341|[from] item: Leftovers
+|turn|77
+|
+|move|p1a: Jirachi|Iron Head|p2a: Gastrodon
+|-resisted|p2a: Gastrodon
+|-damage|p2a: Gastrodon|165\/426
+|-damage|p1a: Jirachi|250\/341|[from] item: Rocky Helmet|[of] p2a: Gastrodon
+|move|p2a: Gastrodon|Recover|p2a: Gastrodon
+|-heal|p2a: Gastrodon|378\/426
+|
+|-heal|p1a: Jirachi|271\/341|[from] item: Leftovers
+|turn|78
+|
+|move|p1a: Jirachi|Iron Head|p2a: Gastrodon
+|-resisted|p2a: Gastrodon
+|-damage|p2a: Gastrodon|307\/426
+|-damage|p1a: Jirachi|215\/341|[from] item: Rocky Helmet|[of] p2a: Gastrodon
+|cant|p2a: Gastrodon|flinch
+|
+|-heal|p1a: Jirachi|236\/341|[from] item: Leftovers
+|turn|79
+|
+|move|p1a: Jirachi|Iron Head|p2a: Gastrodon
+|-resisted|p2a: Gastrodon
+|-damage|p2a: Gastrodon|242\/426
+|-damage|p1a: Jirachi|180\/341|[from] item: Rocky Helmet|[of] p2a: Gastrodon
+|move|p2a: Gastrodon|Recover|p2a: Gastrodon
+|-heal|p2a: Gastrodon|426\/426
+|
+|-heal|p1a: Jirachi|201\/341|[from] item: Leftovers
+|turn|80
+|
+|move|p1a: Jirachi|Iron Head|p2a: Gastrodon
+|-resisted|p2a: Gastrodon
+|-damage|p2a: Gastrodon|357\/426
+|-damage|p1a: Jirachi|145\/341|[from] item: Rocky Helmet|[of] p2a: Gastrodon
+|cant|p2a: Gastrodon|flinch
+|
+|-heal|p1a: Jirachi|166\/341|[from] item: Leftovers
+|turn|81
+|
+|move|p1a: Jirachi|Iron Head|p2a: Gastrodon
+|-resisted|p2a: Gastrodon
+|-damage|p2a: Gastrodon|287\/426
+|-damage|p1a: Jirachi|110\/341|[from] item: Rocky Helmet|[of] p2a: Gastrodon
+|cant|p2a: Gastrodon|flinch
+|
+|-heal|p1a: Jirachi|131\/341|[from] item: Leftovers
+|turn|82
+|
+|move|p1a: Jirachi|Fire Punch|p2a: Gastrodon
+|-resisted|p2a: Gastrodon
+|-damage|p2a: Gastrodon|246\/426
+|-damage|p1a: Jirachi|75\/341|[from] item: Rocky Helmet|[of] p2a: Gastrodon
+|move|p2a: Gastrodon|Earthquake|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|faint|p1a: Jirachi
+|
+|
+|switch|p1a: Gligar|Gligar, M|278\/333
+|turn|83
+|
+|move|p1a: Gligar|Earthquake|p2a: Gastrodon
+|-damage|p2a: Gastrodon|153\/426
+|move|p2a: Gastrodon|Recover|p2a: Gastrodon
+|-heal|p2a: Gastrodon|366\/426
+|
+|turn|84
+|
+|move|p1a: Gligar|Earthquake|p2a: Gastrodon
+|-damage|p2a: Gastrodon|273\/426
+|move|p2a: Gastrodon|Scald|p1a: Gligar
+|-supereffective|p1a: Gligar
+|-damage|p1a: Gligar|110\/333
+|
+|turn|85
+|
+|move|p1a: Gligar|Earthquake|p2a: Gastrodon
+|-damage|p2a: Gastrodon|174\/426
+|move|p2a: Gastrodon|Scald|p1a: Gligar
+|-supereffective|p1a: Gligar
+|-damage|p1a: Gligar|0 fnt
+|faint|p1a: Gligar
+|
+|win|RowDog
+|raw|Ladder updating...
+|raw|xMarth's rating: 1803 &rarr; <strong>1772<\/strong><br \/>(-31 for losing)
+|raw|RowDog's rating: 1580 &rarr; <strong>1612<\/strong><br \/>(+32 for winning)
+|c|âRowDog|gg
+|c|âxMarth|gg
+|leave|xMarth
+|player|p1

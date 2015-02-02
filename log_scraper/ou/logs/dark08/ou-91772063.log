@@ -1,0 +1,396 @@
+|join|dark08
+|join|Tricky
+|player|p1|dark08|153
+|player|p2|Tricky|2
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Ninetales, F
+|poke|p1|Arcanine, F
+|poke|p1|Galvantula, F
+|poke|p1|Mawile, F
+|poke|p1|Noivern, M
+|poke|p1|Sableye, F
+|poke|p2|Heatran, M
+|poke|p2|Forretress, M
+|poke|p2|Whimsicott, M
+|poke|p2|Suicune
+|poke|p2|Quagsire, M
+|poke|p2|Blissey, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Galvantula|Galvantula, F|282\/282
+|switch|p2a: Forretress|Forretress, M|354\/354
+|turn|1
+|
+|move|p1a: Galvantula|Thunder|p2a: Forretress
+|-damage|p2a: Forretress|110\/354
+|move|p2a: Forretress|Toxic Spikes|p1a: Galvantula
+|-sidestart|p1: dark08|move: Toxic Spikes
+|
+|-heal|p2a: Forretress|132\/354|[from] item: Leftovers
+|turn|2
+|
+|move|p1a: Galvantula|Sticky Web|p2a: Forretress
+|-sidestart|p2: Tricky|move: Sticky Web
+|move|p2a: Forretress|Toxic Spikes|p1a: Galvantula
+|-sidestart|p1: dark08|move: Toxic Spikes
+|
+|-heal|p2a: Forretress|154\/354|[from] item: Leftovers
+|turn|3
+|
+|switch|p2a: Heatran|Heatran, M|384\/384
+|-activate|p2a: Heatran|move: Sticky Web
+|-unboost|p2a: Heatran|spe|1
+|move|p1a: Galvantula|Thunder|p2a: Heatran
+|-damage|p2a: Heatran|246\/384
+|-status|p2a: Heatran|par
+|
+|-heal|p2a: Heatran|270\/384 par|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|-activate|p2a: Blissey|move: Sticky Web
+|-unboost|p2a: Blissey|spe|1
+|move|p1a: Galvantula|Volt Switch|p2a: Blissey
+|-damage|p2a: Blissey|653\/714
+|
+|switch|p1a: Mawile|Mawile, F|304\/304
+|-ability|p1a: Mawile|Intimidate|[of] p2a: Blissey
+|-unboost|p2a: Blissey|atk|1
+|
+|-heal|p2a: Blissey|697\/714|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Suicune|Suicune|404\/404
+|-activate|p2a: Suicune|move: Sticky Web
+|-unboost|p2a: Suicune|spe|1
+|-ability|p2a: Suicune|Pressure
+|-formechange|p1a: Mawile|Mawile-Mega
+|message|Mawile has Mega Evolved into Mega Mawile!
+|move|p1a: Mawile|Swords Dance|p1a: Mawile
+|-boost|p1a: Mawile|atk|2
+|
+|turn|6
+|
+|move|p1a: Mawile|Play Rough|p2a: Suicune
+|-damage|p2a: Suicune|0 fnt
+|faint|p2a: Suicune
+|
+|
+|switch|p2a: Quagsire|Quagsire, M|394\/394
+|-activate|p2a: Quagsire|move: Sticky Web
+|-unboost|p2a: Quagsire|spe|1
+|turn|7
+|
+|move|p1a: Mawile|Play Rough|p2a: Quagsire
+|-damage|p2a: Quagsire|63\/394
+|-unboost|p2a: Quagsire|atk|1
+|move|p2a: Quagsire|Recover|p2a: Quagsire
+|-heal|p2a: Quagsire|260\/394
+|
+|-heal|p2a: Quagsire|284\/394|[from] item: Leftovers
+|turn|8
+|
+|switch|p2a: Forretress|Forretress, M|154\/354
+|-activate|p2a: Forretress|move: Sticky Web
+|-unboost|p2a: Forretress|spe|1
+|move|p1a: Mawile|Play Rough|p2a: Forretress
+|-resisted|p2a: Forretress
+|-damage|p2a: Forretress|0 fnt
+|faint|p2a: Forretress
+|
+|
+|switch|p2a: Heatran|Heatran, M|270\/384 par
+|-activate|p2a: Heatran|move: Sticky Web
+|-unboost|p2a: Heatran|spe|1
+|turn|9
+|
+|switch|p1a: Arcanine|Arcanine, F|322\/322
+|-status|p1a: Arcanine|tox
+|cant|p2a: Heatran|par
+|
+|-heal|p2a: Heatran|294\/384 par|[from] item: Leftovers
+|-damage|p1a: Arcanine|302\/322 tox|[from] psn
+|turn|10
+|
+|switch|p2a: Quagsire|Quagsire, M|284\/394
+|-activate|p2a: Quagsire|move: Sticky Web
+|-unboost|p2a: Quagsire|spe|1
+|move|p1a: Arcanine|Close Combat|p2a: Quagsire
+|-damage|p2a: Quagsire|116\/394
+|-unboost|p1a: Arcanine|def|1
+|-unboost|p1a: Arcanine|spd|1
+|
+|-heal|p2a: Quagsire|140\/394|[from] item: Leftovers
+|-damage|p1a: Arcanine|262\/322 tox|[from] psn
+|turn|11
+|
+|switch|p2a: Whimsicott|Whimsicott, M|262\/262
+|-activate|p2a: Whimsicott|move: Sticky Web
+|-unboost|p2a: Whimsicott|spe|1
+|move|p1a: Arcanine|Close Combat|p2a: Whimsicott
+|-resisted|p2a: Whimsicott
+|-damage|p2a: Whimsicott|205\/262
+|-unboost|p1a: Arcanine|def|1
+|-unboost|p1a: Arcanine|spd|1
+|
+|-heal|p2a: Whimsicott|221\/262|[from] item: Leftovers
+|-damage|p1a: Arcanine|202\/322 tox|[from] psn
+|turn|12
+|
+|move|p2a: Whimsicott|Substitute|p2a: Whimsicott
+|-start|p2a: Whimsicott|Substitute
+|-damage|p2a: Whimsicott|156\/262
+|move|p1a: Arcanine|Flare Blitz|p2a: Whimsicott
+|-supereffective|p2a: Whimsicott
+|-end|p2a: Whimsicott|Substitute
+|-damage|p1a: Arcanine|181\/322 tox|[from] recoil|[of] p2a: Whimsicott
+|
+|-heal|p2a: Whimsicott|172\/262|[from] item: Leftovers
+|-damage|p1a: Arcanine|101\/322 tox|[from] psn
+|turn|13
+|
+|move|p2a: Whimsicott|Substitute|p2a: Whimsicott
+|-start|p2a: Whimsicott|Substitute
+|-damage|p2a: Whimsicott|107\/262
+|move|p1a: Arcanine|Flare Blitz|p2a: Whimsicott
+|-supereffective|p2a: Whimsicott
+|-end|p2a: Whimsicott|Substitute
+|-damage|p1a: Arcanine|80\/322 tox|[from] recoil|[of] p2a: Whimsicott
+|
+|-heal|p2a: Whimsicott|123\/262|[from] item: Leftovers
+|-damage|p1a: Arcanine|0 fnt|[from] psn
+|faint|p1a: Arcanine
+|
+|switch|p1a: Noivern|Noivern, M|312\/312
+|turn|14
+|
+|move|p2a: Whimsicott|Toxic|p1a: Noivern
+|-status|p1a: Noivern|tox
+|move|p1a: Noivern|Flamethrower|p2a: Whimsicott
+|-supereffective|p2a: Whimsicott
+|-damage|p2a: Whimsicott|0 fnt
+|faint|p2a: Whimsicott
+|
+|-damage|p1a: Noivern|293\/312 tox|[from] psn
+|
+|switch|p2a: Blissey|Blissey, F|697\/714
+|-activate|p2a: Blissey|move: Sticky Web
+|-unboost|p2a: Blissey|spe|1
+|turn|15
+|
+|switch|p1a: Ninetales|Ninetales, F|288\/288
+|-status|p1a: Ninetales|tox
+|-weather|SunnyDay
+|move|p2a: Blissey|Heal Bell|p2a: Blissey
+|-cureteam|p2a: Blissey|[from] move: HealBell
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Blissey|714\/714|[from] item: Leftovers
+|-damage|p1a: Ninetales|270\/288 tox|[from] psn
+|turn|16
+|
+|move|p1a: Ninetales|Nasty Plot|p1a: Ninetales
+|-boost|p1a: Ninetales|spa|2
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Ninetales|234\/288 tox|[from] psn
+|turn|17
+|
+|switch|p2a: Quagsire|Quagsire, M|140\/394
+|-activate|p2a: Quagsire|move: Sticky Web
+|-unboost|p2a: Quagsire|spe|1
+|move|p1a: Ninetales|Nasty Plot|p1a: Ninetales
+|-boost|p1a: Ninetales|spa|2
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Quagsire|394\/394|[from] move: Wish|[wisher] Blissey
+|-damage|p1a: Ninetales|180\/288 tox|[from] psn
+|turn|18
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|-activate|p2a: Blissey|move: Sticky Web
+|-unboost|p2a: Blissey|spe|1
+|move|p1a: Ninetales|Solar Beam|p2a: Blissey|[still]
+|-prepare|p1a: Ninetales|Solar Beam|p2a: Blissey
+|-anim|p1a: Ninetales|Solar Beam|p2a: Blissey
+|-damage|p2a: Blissey|496\/714
+|-damage|p1a: Ninetales|152\/288 tox|[from] item: Life Orb
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Blissey|540\/714|[from] item: Leftovers
+|-damage|p1a: Ninetales|80\/288 tox|[from] psn
+|turn|19
+|
+|move|p1a: Ninetales|Fire Blast|p2a: Blissey
+|-damage|p2a: Blissey|17\/714
+|-damage|p1a: Ninetales|52\/288 tox|[from] item: Life Orb
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-weather|none
+|-heal|p2a: Blissey|61\/714|[from] item: Leftovers
+|-damage|p1a: Ninetales|0 fnt|[from] psn
+|faint|p1a: Ninetales
+|
+|switch|p1a: Noivern|Noivern, M|293\/312 tox
+|turn|20
+|
+|move|p1a: Noivern|Draco Meteor|p2a: Blissey
+|-damage|p2a: Blissey|0 fnt
+|-unboost|p1a: Noivern|spa|2
+|faint|p2a: Blissey
+|
+|-damage|p1a: Noivern|274\/312 tox|[from] psn
+|
+|switch|p2a: Heatran|Heatran, M|294\/384
+|-activate|p2a: Heatran|move: Sticky Web
+|-unboost|p2a: Heatran|spe|1
+|turn|21
+|
+|switch|p1a: Sableye|Sableye, F|304\/304
+|-status|p1a: Sableye|tox
+|move|p2a: Heatran|Torment|p1a: Sableye
+|-start|p1a: Sableye|Torment
+|
+|-heal|p2a: Heatran|318\/384|[from] item: Leftovers
+|-damage|p1a: Sableye|285\/304 tox|[from] psn
+|turn|22
+|
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-singleturn|p2a: Heatran|Protect
+|move|p1a: Sableye|Taunt|p2a: Heatran
+|-activate|p2a: Heatran|Protect
+|
+|-heal|p2a: Heatran|342\/384|[from] item: Leftovers
+|-heal|p1a: Sableye|304\/304 tox|[from] item: Leftovers
+|-damage|p1a: Sableye|266\/304 tox|[from] psn
+|turn|23
+|
+|switch|p1a: Noivern|Noivern, M|274\/312 tox
+|move|p2a: Heatran|Substitute|p2a: Heatran
+|-start|p2a: Heatran|Substitute
+|-damage|p2a: Heatran|246\/384
+|
+|-heal|p2a: Heatran|270\/384|[from] item: Leftovers
+|-damage|p1a: Noivern|255\/312 tox|[from] psn
+|turn|24
+|
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-singleturn|p2a: Heatran|Protect
+|move|p1a: Noivern|Switcheroo|p2a: Heatran
+|-activate|p2a: Heatran|Protect
+|
+|-heal|p2a: Heatran|294\/384|[from] item: Leftovers
+|-damage|p1a: Noivern|217\/312 tox|[from] psn
+|turn|25
+|
+|move|p1a: Noivern|Switcheroo|p2a: Heatran
+|-activate|p1a: Noivern|move: Trick|[of] p2a: Heatran
+|-item|p2a: Heatran|Choice Specs|[from] Trick
+|-item|p1a: Noivern|Leftovers|[from] Trick
+|move|p2a: Heatran|Lava Plume|p1a: Noivern
+|-resisted|p1a: Noivern
+|-damage|p1a: Noivern|100\/312 tox
+|
+|-heal|p1a: Noivern|119\/312 tox|[from] item: Leftovers
+|-damage|p1a: Noivern|62\/312 tox|[from] psn
+|turn|26
+|
+|move|p1a: Noivern|Focus Blast|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|100\/384
+|move|p2a: Heatran|Lava Plume|p1a: Noivern
+|-resisted|p1a: Noivern
+|-damage|p1a: Noivern|0 fnt
+|faint|p1a: Noivern
+|
+|
+|switch|p1a: Sableye|Sableye, F|266\/304 tox
+|turn|27
+|
+|move|p2a: Heatran|Lava Plume|p1a: Sableye
+|-damage|p1a: Sableye|89\/304 tox
+|move|p1a: Sableye|Foul Play|p2a: Heatran
+|-activate|p2a: Heatran|Substitute|[damage]
+|
+|-heal|p1a: Sableye|108\/304 tox|[from] item: Leftovers
+|-damage|p1a: Sableye|89\/304 tox|[from] psn
+|turn|28
+|
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|241\/304 tox
+|move|p2a: Heatran|Lava Plume|p1a: Sableye
+|-damage|p1a: Sableye|64\/304 tox
+|
+|-heal|p1a: Sableye|83\/304 tox|[from] item: Leftovers
+|-damage|p1a: Sableye|45\/304 tox|[from] psn
+|turn|29
+|
+|move|p2a: Heatran|Lava Plume|p1a: Sableye
+|-damage|p1a: Sableye|0 fnt
+|faint|p1a: Sableye
+|
+|
+|switch|p1a: Galvantula|Galvantula, F|282\/282
+|-status|p1a: Galvantula|tox
+|turn|30
+|
+|move|p1a: Galvantula|Thunder|p2a: Heatran
+|-end|p2a: Heatran|Substitute
+|move|p2a: Heatran|Lava Plume|p1a: Galvantula
+|-supereffective|p1a: Galvantula
+|-enditem|p1a: Galvantula|Focus Sash
+|-damage|p1a: Galvantula|1\/282 tox
+|
+|-damage|p1a: Galvantula|0 fnt|[from] psn
+|faint|p1a: Galvantula
+|
+|switch|p1a: Mawile|Mawile, F|304\/304
+|-formechange|p1a: Mawile|Mawile-Mega
+|turn|31
+|
+|move|p1a: Mawile|Sucker Punch|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|faint|p2a: Heatran
+|
+|
+|switch|p2a: Quagsire|Quagsire, M|394\/394
+|-activate|p2a: Quagsire|move: Sticky Web
+|-unboost|p2a: Quagsire|spe|1
+|turn|32
+|
+|move|p1a: Mawile|Play Rough|p2a: Quagsire
+|-damage|p2a: Quagsire|43\/394
+|-unboost|p2a: Quagsire|atk|1
+|move|p2a: Quagsire|Earthquake|p1a: Mawile
+|-supereffective|p1a: Mawile
+|-damage|p1a: Mawile|188\/304
+|
+|-heal|p2a: Quagsire|67\/394|[from] item: Leftovers
+|turn|33
+|chat|Tricky|shit man
+|chat|Tricky|gg
+|chat|dark08|gg
+|
+|move|p1a: Mawile|Play Rough|p2a: Quagsire
+|-damage|p2a: Quagsire|0 fnt
+|faint|p2a: Quagsire
+|
+|win|dark08
+|raw|Ladder updating...
+|raw|dark08's rating: 1631 &rarr; <strong>1646<\/strong><br \/>(+15 for winning)
+|raw|Tricky's rating: 1536 &rarr; <strong>1521<\/strong><br \/>(-15 for losing)
+|leave|dark08
+|player|p1

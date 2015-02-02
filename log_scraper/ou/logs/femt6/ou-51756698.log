@@ -1,0 +1,311 @@
+|join|RocketSC
+|join|femt6
+|player|p1|RocketSC|290
+|player|p2|femt6|101
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Tyranitar, F
+|poke|p1|Sandslash, F
+|poke|p1|Skarmory, M
+|poke|p1|Haxorus, F
+|poke|p1|Jellicent, M
+|poke|p1|Alakazam, F
+|poke|p2|Keldeo-Resolute
+|poke|p2|Mamoswine, M
+|poke|p2|Scizor, M
+|poke|p2|Dragonite, F
+|poke|p2|Garchomp, F
+|poke|p2|Tentacruel, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Tyranitar|Tyranitar, F|404\/404
+|switch|p2a: Garchomp|Garchomp, F|357\/357
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar
+|turn|1
+|callback|decision
+|
+|move|p2a: Garchomp|Stealth Rock|p1a: Tyranitar
+|-sidestart|p1: RocketSC|move: Stealth Rock
+|move|p1a: Tyranitar|Stealth Rock|p2a: Garchomp
+|-sidestart|p2: femt6|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|2
+|callback|decision
+|
+|move|p2a: Garchomp|Earthquake|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|80\/404
+|move|p1a: Tyranitar|Crunch|p2a: Garchomp
+|-damage|p2a: Garchomp|234\/357
+|-damage|p1a: Tyranitar|30\/404|[from] ability: Rough Skin|[of] p2a: Garchomp
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Tyranitar|55\/404|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|327\/327
+|-damage|p1a: Skarmory|287\/327|[from] Stealth Rock
+|move|p2a: Garchomp|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Skarmory|307\/327|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Garchomp|Fire Blast|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|101\/327
+|move|p1a: Skarmory|Spikes|p2a: Garchomp
+|-sidestart|p2: femt6|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Skarmory|121\/327|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1a: Jellicent|Jellicent, M|404\/404
+|-damage|p1a: Jellicent|354\/404|[from] Stealth Rock
+|move|p2a: Garchomp|Fire Blast|p1a: Jellicent
+|-resisted|p1a: Jellicent
+|-damage|p1a: Jellicent|325\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jellicent|300\/404|[from] sandstorm
+|-heal|p1a: Jellicent|325\/404|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p2a: Tentacruel|Tentacruel, M|364\/364
+|-damage|p2a: Tentacruel|319\/364|[from] Stealth Rock
+|-damage|p2a: Tentacruel|274\/364|[from] Spikes
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Tentacruel
+|-status|p2a: Tentacruel|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Tentacruel|252\/364 brn|[from] sandstorm
+|-damage|p1a: Jellicent|300\/404|[from] sandstorm
+|-heal|p2a: Tentacruel|274\/364 brn|[from] item: Black Sludge
+|-heal|p1a: Jellicent|325\/404|[from] item: Leftovers
+|-damage|p2a: Tentacruel|229\/364 brn|[from] brn
+|turn|7
+|callback|decision
+|
+|switch|p1a: Alakazam|Alakazam, F|252\/252
+|move|p2a: Tentacruel|Toxic|p1a: Alakazam
+|-status|p1a: Alakazam|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Tentacruel|207\/364 brn|[from] sandstorm
+|-heal|p2a: Tentacruel|229\/364 brn|[from] item: Black Sludge
+|-damage|p2a: Tentacruel|184\/364 brn|[from] brn
+|turn|8
+|callback|decision
+|
+|move|p1a: Alakazam|Psychic|p2a: Tentacruel
+|-supereffective|p2a: Tentacruel
+|-damage|p2a: Tentacruel|0 fnt
+|faint|p2a: Tentacruel
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|343\/343
+|-damage|p2a: Scizor|301\/343|[from] Stealth Rock
+|-damage|p2a: Scizor|259\/343|[from] Spikes
+|turn|9
+|callback|decision
+|
+|move|p2a: Scizor|Pursuit|p1a: Alakazam|[from]Pursuit
+|-crit|p1a: Alakazam
+|-supereffective|p1a: Alakazam
+|-damage|p1a: Alakazam|0 fnt
+|faint|p1a: Alakazam
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|121\/327
+|-damage|p1a: Skarmory|81\/327|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, F|234\/357
+|-damage|p2a: Garchomp|212\/357|[from] Stealth Rock
+|-damage|p2a: Garchomp|168\/357|[from] Spikes
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|245\/327
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Skarmory|265\/327|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p2a: Garchomp|Fire Blast|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|71\/327
+|move|p1a: Skarmory|Spikes|p2a: Garchomp
+|-sidestart|p2: femt6|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Skarmory|91\/327|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p1a: Jellicent|Jellicent, M|325\/404
+|-damage|p1a: Jellicent|275\/404|[from] Stealth Rock
+|move|p2a: Garchomp|Outrage|p1a: Jellicent
+|-damage|p1a: Jellicent|0 fnt
+|faint|p1a: Jellicent
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|91\/327
+|-damage|p1a: Skarmory|51\/327|[from] Stealth Rock
+|turn|13
+|callback|decision
+|
+|move|p2a: Garchomp|Outrage|p1a: Skarmory
+|-crit|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|faint|p1a: Skarmory
+|
+|-end|p2a: Garchomp|rampage
+|-start|p2a: Garchomp|confusion
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Sandslash|Sandslash, F|291\/291
+|-damage|p1a: Sandslash|273\/291|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|move|p1a: Sandslash|Swords Dance|p1a: Sandslash
+|-boost|p1a: Sandslash|atk|2
+|-activate|p2a: Garchomp|confusion
+|-damage|p2a: Garchomp|118\/357|[from] confusion
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Sandslash|291\/291|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1a: Sandslash|Earthquake|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|faint|p2a: Garchomp
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Dragonite|Dragonite, F|324\/324
+|-damage|p2a: Dragonite|243\/324|[from] Stealth Rock
+|turn|16
+|callback|decision
+|
+|move|p2a: Dragonite|ExtremeSpeed|p1a: Sandslash
+|-damage|p1a: Sandslash|188\/291
+|move|p1a: Sandslash|Stone Edge|p2a: Dragonite
+|-supereffective|p2a: Dragonite
+|-damage|p2a: Dragonite|0 fnt
+|faint|p2a: Dragonite
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Sandslash|206\/291|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|259\/343
+|-damage|p2a: Scizor|217\/343|[from] Stealth Rock
+|-damage|p2a: Scizor|160\/343|[from] Spikes
+|turn|17
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Sandslash
+|-damage|p1a: Sandslash|56\/291
+|move|p1a: Sandslash|Earthquake|p2a: Scizor
+|-crit|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|faint|p2a: Scizor
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Sandslash|74\/291|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Mamoswine|Mamoswine, M|362\/362
+|-damage|p2a: Mamoswine|317\/362|[from] Stealth Rock
+|-damage|p2a: Mamoswine|257\/362|[from] Spikes
+|turn|18
+|callback|decision
+|
+|move|p2a: Mamoswine|Ice Shard|p1a: Sandslash
+|-supereffective|p1a: Sandslash
+|-damage|p1a: Sandslash|0 fnt
+|-damage|p2a: Mamoswine|221\/362|[from] item: Life Orb
+|faint|p1a: Sandslash
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, F|55\/404
+|-damage|p1a: Tyranitar|5\/404|[from] Stealth Rock
+|turn|19
+|callback|decision
+|
+|move|p2a: Mamoswine|Earthquake|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|-damage|p2a: Mamoswine|185\/362|[from] item: Life Orb
+|faint|p1a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Haxorus|Haxorus, F|294\/294
+|-damage|p1a: Haxorus|258\/294|[from] Stealth Rock
+|-ability|p1a: Haxorus|Mold Breaker
+|turn|20
+|callback|decision
+|
+|move|p1a: Haxorus|Outrage|p2a: Mamoswine
+|-damage|p2a: Mamoswine|0 fnt
+|faint|p2a: Mamoswine
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Haxorus|240\/294|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: Keldeo-Resolute|Keldeo-Resolute|324\/324
+|-damage|p2a: Keldeo-Resolute|270\/324|[from] Spikes
+|-damage|p2a: Keldeo-Resolute|250\/324|[from] Stealth Rock
+|turn|21
+|callback|decision
+|
+|move|p2a: Keldeo-Resolute|Icy Wind|p1a: Haxorus
+|-supereffective|p1a: Haxorus
+|-damage|p1a: Haxorus|24\/294
+|-unboost|p1a: Haxorus|spe|1
+|move|p1a: Haxorus|Outrage|p2a: Keldeo-Resolute
+|-damage|p2a: Keldeo-Resolute|0 fnt
+|faint|p2a: Keldeo-Resolute
+|
+|win|RocketSC
+|raw|Ladder updating...
+|raw|RocketSC's rating: 1715 &rarr; <strong>1727<\/strong><br \/>(+12 for winning)
+|raw|femt6's rating: 1927 &rarr; <strong>1920<\/strong><br \/>(-7 for losing)
+|leave|femt6
+|player|p2
+|chat|RocketSC|gg

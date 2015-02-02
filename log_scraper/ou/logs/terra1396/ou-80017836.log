@@ -1,0 +1,260 @@
+|join|terra1396
+|join|PokeYourMuffin
+|player|p1|terra1396|99
+|player|p2|PokeYourMuffin|192
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Zoroark, F
+|poke|p1|Cresselia, F
+|poke|p1|Genesect, shiny
+|poke|p1|Talonflame, M
+|poke|p1|Scolipede, M
+|poke|p1|Garchomp, M
+|poke|p2|Quagsire, M
+|poke|p2|Latias, F
+|poke|p2|Sylveon, F
+|poke|p2|Rotom-Heat
+|poke|p2|Excadrill, F
+|poke|p2|Venusaur, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Cresselia|Cresselia, F|444\/444
+|switch|p2a: Rotom-Heat|Rotom-Heat|241\/241
+|turn|1
+|callback|decision
+|
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Cresselia
+|-damage|p1a: Cresselia|372\/444
+|callback|decision
+|
+|switch|p2a: Sylveon|Sylveon, F|394\/394
+|move|p1a: Cresselia|Light Screen|p1a: Cresselia
+|-sidestart|p1: terra1396|move: Light Screen
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: Excadrill|Excadrill, F|424\/424
+|-ability|p2a: Excadrill|Mold Breaker
+|-item|p2a: Excadrill|Air Balloon
+|move|p1a: Cresselia|Thunder Wave|p2a: Excadrill
+|-immune|p2a: Excadrill|[msg]
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Excadrill|Stealth Rock|p1a: Cresselia
+|-sidestart|p1: terra1396|move: Stealth Rock
+|move|p1a: Cresselia|Reflect|p1a: Cresselia
+|-sidestart|p1: terra1396|Reflect
+|
+|turn|4
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|241\/241
+|switch|p1a: Scolipede|Scolipede, M|262\/262
+|-damage|p1a: Scolipede|230\/262|[from] Stealth Rock
+|
+|turn|5
+|callback|decision
+|
+|move|p2a: Rotom-Heat|Will-O-Wisp|p1a: Scolipede
+|-status|p1a: Scolipede|brn
+|move|p1a: Scolipede|Night Daze|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|99\/241
+|-unboost|p2a: Rotom-Heat|accuracy|1
+|
+|-damage|p1a: Scolipede|198\/262 brn|[from] brn
+|turn|6
+|callback|decision
+|
+|switch|p2a: Sylveon|Sylveon, F|394\/394
+|move|p1a: Scolipede|Night Daze|p2a: Sylveon
+|-resisted|p2a: Sylveon
+|-damage|p2a: Sylveon|352\/394
+|
+|-heal|p2a: Sylveon|376\/394|[from] item: Leftovers
+|-damage|p1a: Scolipede|166\/262 brn|[from] brn
+|turn|7
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect, shiny|284\/284
+|-damage|p1a: Genesect|249\/284|[from] Stealth Rock
+|-boost|p1a: Genesect|atk|1|[from] ability: Download
+|move|p2a: Sylveon|Wish|p2a: Sylveon
+|
+|-heal|p2a: Sylveon|394\/394|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|99\/241
+|move|p1a: Genesect|U-turn|p2a: Rotom-Heat
+|-resisted|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|33\/241
+|callback|decision
+|
+|switch|p1a: Scolipede|Scolipede, M|166\/262 brn
+|-damage|p1a: Scolipede|134\/262 brn|[from] Stealth Rock
+|
+|-heal|p2a: Rotom-Heat|230\/241|[from] move: Wish|[wisher] Sylveon
+|-damage|p1a: Scolipede|102\/262 brn|[from] brn
+|-sideend|p1: terra1396|move: Light Screen
+|turn|9
+|callback|decision
+|
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Scolipede
+|replace|p1a: Zoroark|Zoroark, F|102\/262 brn
+|-damage|p1a: Zoroark|0 fnt
+|faint|p1a: Zoroark
+|callback|decision
+|
+|switch|p2a: Quagsire|Quagsire, M|394\/394
+|
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect, shiny|249\/284
+|-damage|p1a: Genesect|214\/284|[from] Stealth Rock
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|turn|10
+|callback|decision
+|
+|move|p1a: Genesect|Bug Buzz|p2a: Quagsire
+|-damage|p2a: Quagsire|174\/394
+|move|p2a: Quagsire|Waterfall|p1a: Genesect
+|-damage|p1a: Genesect|166\/284
+|
+|-heal|p2a: Quagsire|198\/394|[from] item: Leftovers
+|-sideend|p1: terra1396|Reflect
+|turn|11
+|callback|decision
+|
+|switch|p2a: Sylveon|Sylveon, F|394\/394
+|move|p1a: Genesect|Bug Buzz|p2a: Sylveon
+|-resisted|p2a: Sylveon
+|-damage|p2a: Sylveon|314\/394
+|
+|-heal|p2a: Sylveon|338\/394|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p1a: Cresselia|Cresselia, F|372\/444
+|-damage|p1a: Cresselia|317\/444|[from] Stealth Rock
+|move|p2a: Sylveon|Moonblast|p1a: Cresselia
+|-damage|p1a: Cresselia|224\/444
+|-unboost|p1a: Cresselia|spa|1
+|
+|-heal|p2a: Sylveon|362\/394|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: Cresselia|Light Screen|p1a: Cresselia
+|-sidestart|p1: terra1396|move: Light Screen
+|move|p2a: Sylveon|Wish|p2a: Sylveon
+|
+|-heal|p2a: Sylveon|386\/394|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p2a: Quagsire|Quagsire, M|198\/394
+|move|p1a: Cresselia|Reflect|p1a: Cresselia
+|-sidestart|p1: terra1396|Reflect
+|
+|-heal|p2a: Quagsire|394\/394|[from] move: Wish|[wisher] Sylveon
+|turn|15
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect, shiny|166\/284
+|-damage|p1a: Genesect|131\/284|[from] Stealth Rock
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|move|p2a: Quagsire|Curse|p1a: Genesect
+|-boost|p2a: Quagsire|atk|1
+|-boost|p2a: Quagsire|def|1
+|-unboost|p2a: Quagsire|spe|1
+|
+|turn|16
+|callback|decision
+|
+|move|p1a: Genesect|Bug Buzz|p2a: Quagsire
+|-damage|p2a: Quagsire|151\/394
+|move|p2a: Quagsire|Earthquake|p1a: Genesect
+|-crit|p1a: Genesect
+|-damage|p1a: Genesect|0 fnt
+|faint|p1a: Genesect
+|
+|-heal|p2a: Quagsire|175\/394|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Talonflame|Talonflame, M|298\/298
+|-damage|p1a: Talonflame|149\/298|[from] Stealth Rock
+|turn|17
+|callback|decision
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Quagsire
+|-damage|p2a: Quagsire|62\/394
+|-damage|p1a: Talonflame|112\/298|[from] recoil|[of] p2a: Quagsire
+|-damage|p1a: Talonflame|83\/298|[from] item: Life Orb
+|move|p2a: Quagsire|Waterfall|p1a: Talonflame
+|-supereffective|p1a: Talonflame
+|-damage|p1a: Talonflame|0 fnt
+|faint|p1a: Talonflame
+|
+|-heal|p2a: Quagsire|86\/394|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Scolipede|Scolipede, M|324\/324
+|-damage|p1a: Scolipede|243\/324|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|move|p1a: Scolipede|Swords Dance|p1a: Scolipede
+|-boost|p1a: Scolipede|atk|2
+|move|p2a: Quagsire|Recover|p2a: Quagsire
+|-heal|p2a: Quagsire|283\/394
+|
+|-heal|p2a: Quagsire|307\/394|[from] item: Leftovers
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|19
+|callback|decision
+|
+|move|p1a: Scolipede|Megahorn|p2a: Quagsire
+|-damage|p2a: Quagsire|216\/394
+|move|p2a: Quagsire|Earthquake|p1a: Scolipede
+|-damage|p1a: Scolipede|171\/324
+|
+|-heal|p2a: Quagsire|240\/394|[from] item: Leftovers
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|20
+|callback|decision
+|
+|move|p1a: Scolipede|Swords Dance|p1a: Scolipede
+|-boost|p1a: Scolipede|atk|2
+|move|p2a: Quagsire|Curse|p1a: Scolipede
+|-boost|p2a: Quagsire|atk|1
+|-boost|p2a: Quagsire|def|1
+|-unboost|p2a: Quagsire|spe|1
+|
+|-heal|p2a: Quagsire|264\/394|[from] item: Leftovers
+|-sideend|p1: terra1396|move: Light Screen
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|21
+|callback|decision
+|-message|terra1396 forfeited.
+|
+|win|PokeYourMuffin
+|raw|Ladder updating...
+|leave|terra1396
+|player|p1
+|raw|terra1396's rating: 1323 &rarr; <strong>1294<\/strong><br \/>(-29 for losing)
+|raw|PokeYourMuffin's rating: 1265 &rarr; <strong>1295<\/strong><br \/>(+30 for winning)

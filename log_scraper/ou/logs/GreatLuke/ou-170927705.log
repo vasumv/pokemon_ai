@@ -1,0 +1,186 @@
+|join|GreatLuke
+|join|saiai
+|player|p1|GreatLuke|292
+|player|p2|saiai|247
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Politoed, F
+|poke|p1|Kingdra, F
+|poke|p1|Kabutops, F
+|poke|p1|Heliolisk, F
+|poke|p1|Forretress, F
+|poke|p1|Scizor, M
+|poke|p2|Scizor, F
+|poke|p2|Gliscor, M, shiny
+|poke|p2|Porygon2, shiny
+|poke|p2|Jellicent, F, shiny
+|poke|p2|Hydreigon, M
+|poke|p2|Venusaur, M, shiny
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Politoed|Politoed, F|384\/384
+|switch|p2a: Venusaur|Venusaur, M, shiny|351\/351
+|-weather|RainDance
+|turn|1
+|
+|detailschange|p2a: Venusaur|Venusaur-Mega, M, shiny
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p2a: Venusaur|Giga Drain|p1a: Politoed
+|-supereffective|p1a: Politoed
+|-damage|p1a: Politoed|118\/384
+|move|p1a: Politoed|Hypnosis|p2a: Venusaur
+|-status|p2a: Venusaur|slp
+|
+|-weather|RainDance|[upkeep]
+|turn|2
+|
+|switch|p1a: Kabutops|Kabutops, F|262\/262
+|cant|p2a: Venusaur|slp
+|
+|-weather|RainDance|[upkeep]
+|turn|3
+|
+|move|p1a: Kabutops|Swords Dance|p1a: Kabutops
+|-boost|p1a: Kabutops|atk|2
+|cant|p2a: Venusaur|slp
+|
+|-weather|RainDance|[upkeep]
+|turn|4
+|
+|move|p1a: Kabutops|Stone Edge|p2a: Venusaur
+|-damage|p2a: Venusaur|0 fnt
+|-damage|p1a: Kabutops|236\/262|[from] item: Life Orb
+|faint|p2a: Venusaur
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p2a: Scizor|Scizor, F|343\/343
+|turn|5
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Kabutops
+|-damage|p1a: Kabutops|73\/262
+|move|p1a: Kabutops|Waterfall|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|-damage|p1a: Kabutops|47\/262|[from] item: Life Orb
+|faint|p2a: Scizor
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p2a: Hydreigon|Hydreigon, M|326\/326
+|turn|6
+|
+|move|p1a: Kabutops|Stone Edge|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|-damage|p1a: Kabutops|21\/262|[from] item: Life Orb
+|faint|p2a: Hydreigon
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p2a: Porygon2|Porygon2, shiny|374\/374
+|-ability|p2a: Porygon2|Swift Swim|[from] ability: Trace|[of] p1a: Kabutops
+|turn|7
+|
+|move|p1a: Kabutops|Waterfall|p2a: Porygon2
+|-damage|p2a: Porygon2|54\/374
+|-damage|p1a: Kabutops|0 fnt|[from] item: Life Orb
+|faint|p1a: Kabutops
+|cant|p2a: Porygon2|flinch
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p1a: Kingdra|Kingdra, F|291\/291
+|turn|8
+|
+|move|p1a: Kingdra|Ice Beam|p2a: Porygon2
+|-crit|p2a: Porygon2
+|-damage|p2a: Porygon2|0 fnt
+|-damage|p1a: Kingdra|262\/291|[from] item: Life Orb
+|faint|p2a: Porygon2
+|
+|-weather|none
+|
+|switch|p2a: Gliscor|Gliscor, M, shiny|352\/352
+|turn|9
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Kingdra|Ice Beam|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-status|p2a: Gliscor|tox|[from] item: Toxic Orb
+|turn|10
+|
+|switch|p2a: Jellicent|Jellicent, F, shiny|404\/404
+|move|p1a: Kingdra|Ice Beam|p2a: Jellicent
+|-resisted|p2a: Jellicent
+|-damage|p2a: Jellicent|342\/404
+|-damage|p1a: Kingdra|233\/291|[from] item: Life Orb
+|
+|-heal|p2a: Jellicent|367\/404|[from] item: Leftovers
+|turn|11
+|
+|switch|p1a: Politoed|Politoed, F|118\/384
+|-weather|RainDance
+|move|p2a: Jellicent|Will-O-Wisp|p1a: Politoed
+|-status|p1a: Politoed|brn
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Jellicent|392\/404|[from] item: Leftovers
+|-damage|p1a: Politoed|70\/384 brn|[from] brn
+|turn|12
+|
+|move|p2a: Jellicent|Taunt|p1a: Politoed
+|-start|p1a: Politoed|move: Taunt
+|cant|p1a: Politoed|move: Taunt|Hypnosis
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Jellicent|404\/404|[from] item: Leftovers
+|-damage|p1a: Politoed|22\/384 brn|[from] brn
+|turn|13
+|
+|switch|p1a: Heliolisk|Heliolisk, F|265\/265
+|move|p2a: Jellicent|Scald|p1a: Heliolisk
+|-immune|p1a: Heliolisk|[msg]
+|
+|-weather|RainDance|[upkeep]
+|turn|14
+|
+|switch|p2a: Gliscor|Gliscor, M, shiny|352\/352 tox
+|move|p1a: Heliolisk|Surf|p2a: Gliscor
+|-supereffective|p2a: Gliscor
+|-damage|p2a: Gliscor|0 fnt
+|-damage|p1a: Heliolisk|239\/265|[from] item: Life Orb
+|faint|p2a: Gliscor
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Heliolisk|265\/265|[from] ability: Dry Skin
+|c|âsaiai|gg
+|
+|switch|p2a: Jellicent|Jellicent, F, shiny|404\/404
+|turn|15
+|c|âGreatLuke|gg
+|
+|move|p1a: Heliolisk|Thunder|p2a: Jellicent
+|-supereffective|p2a: Jellicent
+|-damage|p2a: Jellicent|0 fnt
+|-start|p1a: Heliolisk|Disable|Thunder
+|-damage|p1a: Heliolisk|239\/265|[from] item: Life Orb
+|faint|p2a: Jellicent
+|
+|win|GreatLuke
+|raw|Ladder updating...
+|raw|GreatLuke's rating: 1350 &rarr; <strong>1371<\/strong><br \/>(+21 for winning)
+|raw|saiai's rating: 1364 &rarr; <strong>1343<\/strong><br \/>(-21 for losing)

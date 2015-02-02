@@ -1,0 +1,220 @@
+|join|GrimoireGod
+|join|Wrapper
+|player|p1|GrimoireGod|73
+|player|p2|Wrapper|266
+|gametype|singles
+|gen|6
+|tier|OU (suspect test)
+|rated
+|clearpoke
+|poke|p1|Gallade, M
+|poke|p1|Bisharp, F
+|poke|p1|Sylveon, F
+|poke|p1|Keldeo
+|poke|p1|Klefki, F
+|poke|p1|Heatran, F
+|poke|p2|Breloom, F
+|poke|p2|Rotom-Wash
+|poke|p2|Latias, F
+|poke|p2|Charizard, M
+|poke|p2|Mew
+|poke|p2|Thundurus, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Klefki|Klefki, F|318\/318
+|switch|p2a: Charizard|Charizard, M|297\/297
+|turn|1
+|
+|switch|p2a: Mew|Mew|404\/404
+|switch|p1a: Heatran|Heatran, F|324\/324
+|-item|p1a: Heatran|Air Balloon
+|
+|turn|2
+|
+|move|p1a: Heatran|Stealth Rock|p2a: Mew
+|-sidestart|p2: Wrapper|move: Stealth Rock
+|move|p2a: Mew|Taunt|p1a: Heatran
+|-start|p1a: Heatran|move: Taunt
+|
+|turn|3
+|
+|switch|p1a: Bisharp|Bisharp, F|272\/272
+|move|p2a: Mew|Knock Off|p1a: Bisharp
+|-resisted|p1a: Bisharp
+|-damage|p1a: Bisharp|242\/272
+|-enditem|p1a: Bisharp|Life Orb|[from] move: Knock Off|[of] p2a: Mew
+|
+|turn|4
+|
+|switch|p1a: Heatran|Heatran, F|324\/324
+|-item|p1a: Heatran|Air Balloon
+|move|p2a: Mew|Will-O-Wisp|p1a: Heatran
+|-start|p1a: Heatran|ability: Flash Fire
+|
+|turn|5
+|
+|move|p1a: Heatran|Fire Blast|p2a: Mew
+|-damage|p2a: Mew|175\/404
+|-status|p2a: Mew|brn
+|move|p2a: Mew|Knock Off|p1a: Heatran
+|-damage|p1a: Heatran|297\/324
+|-enditem|p1a: Heatran|Air Balloon
+|
+|-heal|p2a: Mew|200\/404 brn|[from] item: Leftovers
+|-damage|p2a: Mew|150\/404 brn|[from] brn
+|turn|6
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|-damage|p2a: Rotom-Wash|266\/304|[from] Stealth Rock
+|move|p1a: Heatran|Fire Blast|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|136\/304
+|
+|-heal|p2a: Rotom-Wash|155\/304|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Sylveon|Sylveon, F|372\/372
+|move|p2a: Rotom-Wash|Pain Split|p1a: Sylveon
+|-sethp|p1a: Sylveon|263\/372|p2a: Rotom-Wash|263\/304|[from] move: Pain Split
+|
+|-heal|p2a: Rotom-Wash|282\/304|[from] item: Leftovers
+|turn|8
+|
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Sylveon|[miss]
+|-miss|p2a: Rotom-Wash|p1a: Sylveon
+|move|p1a: Sylveon|Hyper Voice|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|9\/304
+|
+|-heal|p2a: Rotom-Wash|28\/304|[from] item: Leftovers
+|turn|9
+|
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Sylveon
+|-status|p1a: Sylveon|brn
+|move|p1a: Sylveon|Hyper Voice|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|-damage|p1a: Sylveon|217\/372 brn|[from] brn
+|
+|switch|p2a: Breloom|Breloom, F|262\/262
+|-damage|p2a: Breloom|246\/262|[from] Stealth Rock
+|turn|10
+|
+|switch|p1a: Klefki|Klefki, F|318\/318
+|move|p2a: Breloom|Bullet Seed|p1a: Klefki
+|-resisted|p1a: Klefki
+|-damage|p1a: Klefki|284\/318
+|-resisted|p1a: Klefki
+|-damage|p1a: Klefki|248\/318
+|-hitcount|p1a: Klefki|2
+|
+|-heal|p1a: Klefki|267\/318|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Klefki|Thunder Wave|p2a: Breloom
+|-status|p2a: Breloom|par
+|move|p2a: Breloom|Spore|p1a: Klefki
+|-status|p1a: Klefki|slp
+|
+|-heal|p1a: Klefki|286\/318 slp|[from] item: Leftovers
+|turn|12
+|
+|switch|p2a: Charizard|Charizard, M|297\/297
+|-damage|p2a: Charizard|149\/297|[from] Stealth Rock
+|cant|p1a: Klefki|slp
+|
+|-heal|p1a: Klefki|305\/318 slp|[from] item: Leftovers
+|turn|13
+|
+|detailschange|p2a: Charizard|Charizard-Mega-X, M
+|-mega|p2a: Charizard|Charizard|Charizardite X
+|-curestatus|p1a: Klefki|slp
+|move|p1a: Klefki|Thunder Wave|p2a: Charizard
+|-status|p2a: Charizard|par
+|move|p2a: Charizard|Earthquake|p1a: Klefki
+|-supereffective|p1a: Klefki
+|-damage|p1a: Klefki|81\/318
+|
+|-heal|p1a: Klefki|100\/318|[from] item: Leftovers
+|turn|14
+|
+|move|p1a: Klefki|Magnet Rise|p1a: Klefki
+|-start|p1a: Klefki|Magnet Rise
+|move|p2a: Charizard|Earthquake|p1a: Klefki
+|-immune|p1a: Klefki|[msg]
+|
+|-heal|p1a: Klefki|119\/318|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Klefki|Spikes|p2a: Charizard
+|-sidestart|p2: Wrapper|Spikes
+|cant|p2a: Charizard|par
+|
+|-heal|p1a: Klefki|138\/318|[from] item: Leftovers
+|turn|16
+|
+|switch|p1a: Heatran|Heatran, F|297\/324
+|cant|p2a: Charizard|par
+|
+|turn|17
+|
+|move|p1a: Heatran|Earth Power|p2a: Charizard
+|-supereffective|p2a: Charizard
+|-damage|p2a: Charizard|0 fnt
+|faint|p2a: Charizard
+|
+|
+|switch|p2a: Thundurus|Thundurus, M|299\/299
+|-damage|p2a: Thundurus|225\/299|[from] Stealth Rock
+|turn|18
+|
+|move|p2a: Thundurus|Thunderbolt|p1a: Heatran
+|-damage|p1a: Heatran|109\/324
+|-damage|p2a: Thundurus|196\/299|[from] item: Life Orb
+|move|p1a: Heatran|Ancient Power|p2a: Thundurus
+|-crit|p2a: Thundurus
+|-supereffective|p2a: Thundurus
+|-damage|p2a: Thundurus|0 fnt
+|faint|p2a: Thundurus
+|
+|
+|switch|p2a: Latias|Latias, F|302\/302
+|-damage|p2a: Latias|265\/302|[from] Stealth Rock
+|turn|19
+|
+|switch|p1a: Bisharp|Bisharp, F|242\/272
+|move|p2a: Latias|Psyshock|p1a: Bisharp
+|-immune|p1a: Bisharp|[msg]
+|
+|-heal|p2a: Latias|283\/302|[from] item: Leftovers
+|turn|20
+|
+|move|p2a: Latias|Defog|p1a: Bisharp
+|-unboost|p1a: Bisharp|evasion|1
+|-boost|p1a: Bisharp|atk|2|[from] ability: Defiant
+|-sideend|p2: Wrapper|Spikes|[from] move: Defog|[of] p2a: Latias
+|-sideend|p2: Wrapper|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Bisharp|Knock Off|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|0 fnt
+|-enditem|p2a: Latias|Leftovers|[from] move: Knock Off|[of] p1a: Bisharp
+|faint|p2a: Latias
+|
+|-message|Wrapper forfeited.
+|leave|Wrapper
+|
+|win|GrimoireGod
+|raw|Ladder updating...
+|player|p2
+|raw|GrimoireGod's rating: 1476 &rarr; <strong>1498<\/strong><br \/>(+22 for winning)
+|raw|Wrapper's rating: 1504 &rarr; <strong>1482<\/strong><br \/>(-22 for losing)

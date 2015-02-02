@@ -1,0 +1,239 @@
+|join|raglbeez
+|join|ANGER MANAGEMENT
+|player|p1|raglbeez|1
+|player|p2|ANGER MANAGEMENT|123
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Crobat, M
+|poke|p1|Infernape, M
+|poke|p1|Mismagius, F
+|poke|p1|Ampharos, M
+|poke|p1|Florges, F
+|poke|p1|Swampert, M
+|poke|p2|Suicune
+|poke|p2|Infernape, F
+|poke|p2|Forretress, M
+|poke|p2|Beedrill, M
+|poke|p2|Florges, F
+|poke|p2|Krookodile, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Mismagius|Mismagius, F|262\/262
+|switch|p2a: Krookodile|Krookodile, M|331\/331
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Mismagius
+|-unboost|p1a: Mismagius|atk|1
+|turn|1
+|
+|move|p1a: Mismagius|Dazzling Gleam|p2a: Krookodile
+|-crit|p2a: Krookodile
+|-supereffective|p2a: Krookodile
+|-damage|p2a: Krookodile|9\/331
+|move|p2a: Krookodile|Pursuit|p1a: Mismagius
+|-supereffective|p1a: Mismagius
+|-damage|p1a: Mismagius|22\/262
+|
+|-heal|p1a: Mismagius|38\/262|[from] item: Leftovers
+|turn|2
+|
+|switch|p2a: Beedrill|Beedrill, M|271\/271
+|move|p1a: Mismagius|Dazzling Gleam|p2a: Beedrill
+|-resisted|p2a: Beedrill
+|-damage|p2a: Beedrill|224\/271
+|
+|-heal|p1a: Mismagius|54\/262|[from] item: Leftovers
+|turn|3
+|
+|switch|p1a: Crobat|Crobat, M|373\/373
+|detailschange|p2a: Beedrill|Beedrill-Mega, M
+|-mega|p2a: Beedrill|Beedrill|Beedrillite
+|move|p2a: Beedrill|Knock Off|p1a: Crobat
+|-damage|p1a: Crobat|232\/373
+|-enditem|p1a: Crobat|Black Sludge|[from] move: Knock Off|[of] p2a: Beedrill
+|
+|turn|4
+|
+|move|p2a: Beedrill|U-turn|p1a: Crobat
+|-resisted|p1a: Crobat
+|-damage|p1a: Crobat|176\/373
+|
+|switch|p2a: Suicune|Suicune|404\/404
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Crobat|Brave Bird|p2a: Suicune
+|-damage|p2a: Suicune|283\/404
+|-damage|p1a: Crobat|136\/373|[from] recoil|[of] p2a: Suicune
+|
+|-heal|p2a: Suicune|308\/404|[from] item: Leftovers
+|turn|5
+|
+|move|p1a: Crobat|U-turn|p2a: Suicune
+|-crit|p2a: Suicune
+|-damage|p2a: Suicune|225\/404
+|
+|switch|p1a: Mismagius|Mismagius, F|54\/262
+|move|p2a: Suicune|Scald|p1a: Mismagius
+|-damage|p1a: Mismagius|0 fnt
+|faint|p1a: Mismagius
+|
+|-heal|p2a: Suicune|250\/404|[from] item: Leftovers
+|
+|switch|p1a: Swampert|Swampert, M|392\/392
+|turn|6
+|
+|move|p2a: Suicune|Scald|p1a: Swampert
+|-damage|p1a: Swampert|292\/392
+|-status|p1a: Swampert|brn
+|move|p1a: Swampert|Earthquake|p2a: Suicune
+|-damage|p2a: Suicune|129\/404
+|
+|-heal|p2a: Suicune|154\/404|[from] item: Leftovers
+|-damage|p1a: Swampert|243\/392 brn|[from] brn
+|turn|7
+|
+|switch|p2a: Forretress|Forretress, M|354\/354
+|move|p1a: Swampert|Earthquake|p2a: Forretress
+|-crit|p2a: Forretress
+|-damage|p2a: Forretress|213\/354
+|
+|-heal|p2a: Forretress|235\/354|[from] item: Leftovers
+|-damage|p1a: Swampert|194\/392 brn|[from] brn
+|turn|8
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Forretress|Stealth Rock|p1a: Florges
+|-sidestart|p1: raglbeez|move: Stealth Rock
+|
+|-heal|p2a: Forretress|257\/354|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Beedrill|Beedrill-Mega, M|224\/271
+|move|p1a: Florges|Aromatherapy|p1a: Florges
+|-cureteam|p1a: Florges|[from] move: Aromatherapy
+|
+|turn|10
+|
+|switch|p1a: Crobat|Crobat, M|136\/373
+|-damage|p1a: Crobat|43\/373|[from] Stealth Rock
+|move|p2a: Beedrill|Poison Jab|p1a: Crobat
+|-resisted|p1a: Crobat
+|-damage|p1a: Crobat|0 fnt
+|faint|p1a: Crobat
+|
+|
+|switch|p1a: Swampert|Swampert, M|194\/392
+|-damage|p1a: Swampert|170\/392|[from] Stealth Rock
+|turn|11
+|
+|move|p2a: Beedrill|U-turn|p1a: Swampert
+|-damage|p1a: Swampert|0 fnt
+|faint|p1a: Swampert
+|
+|switch|p2a: Suicune|Suicune|154\/404
+|-ability|p2a: Suicune|Pressure
+|
+|-heal|p2a: Suicune|179\/404|[from] item: Leftovers
+|
+|switch|p1a: Ampharos|Ampharos, M|384\/384
+|-damage|p1a: Ampharos|336\/384|[from] Stealth Rock
+|turn|12
+|
+|detailschange|p1a: Ampharos|Ampharos-Mega, M
+|-mega|p1a: Ampharos|Ampharos|Ampharosite
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p2a: Suicune|Ice Beam|p1a: Ampharos
+|-supereffective|p1a: Ampharos
+|-damage|p1a: Ampharos|208\/384
+|move|p1a: Ampharos|Dragon Pulse|p2a: Suicune
+|-damage|p2a: Suicune|38\/404
+|
+|-heal|p2a: Suicune|63\/404|[from] item: Leftovers
+|turn|13
+|
+|move|p2a: Suicune|Ice Beam|p1a: Ampharos
+|-supereffective|p1a: Ampharos
+|-damage|p1a: Ampharos|90\/384
+|move|p1a: Ampharos|Dragon Pulse|p2a: Suicune
+|-damage|p2a: Suicune|0 fnt
+|faint|p2a: Suicune
+|
+|
+|switch|p2a: Krookodile|Krookodile, M|9\/331
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Ampharos
+|-unboost|p1a: Ampharos|atk|1
+|turn|14
+|
+|move|p2a: Krookodile|Earthquake|p1a: Ampharos
+|-supereffective|p1a: Ampharos
+|-damage|p1a: Ampharos|0 fnt
+|faint|p1a: Ampharos
+|
+|
+|switch|p1a: Infernape|Infernape, M|293\/293
+|-damage|p1a: Infernape|257\/293|[from] Stealth Rock
+|turn|15
+|
+|switch|p2a: Florges|Florges, F|360\/360
+|move|p1a: Infernape|Mach Punch|p2a: Florges
+|-resisted|p2a: Florges
+|-damage|p2a: Florges|317\/360
+|-damage|p1a: Infernape|228\/293|[from] item: Life Orb
+|
+|-heal|p2a: Florges|339\/360|[from] item: Leftovers
+|turn|16
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|-damage|p1a: Florges|315\/360|[from] Stealth Rock
+|move|p2a: Florges|Moonblast|p1a: Florges
+|-damage|p1a: Florges|236\/360
+|
+|-heal|p1a: Florges|258\/360|[from] item: Leftovers
+|-heal|p2a: Florges|360\/360|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Florges|Wish|p1a: Florges
+|move|p2a: Florges|Wish|p2a: Florges
+|
+|-heal|p1a: Florges|280\/360|[from] item: Leftovers
+|turn|18
+|
+|switch|p2a: Beedrill|Beedrill-Mega, M|224\/271
+|move|p1a: Florges|Moonblast|p2a: Beedrill
+|-resisted|p2a: Beedrill
+|-damage|p2a: Beedrill|154\/271
+|
+|-heal|p1a: Florges|360\/360|[from] move: Wish|[wisher] Florges
+|-heal|p2a: Beedrill|271\/271|[from] move: Wish|[wisher] Florges
+|turn|19
+|
+|move|p2a: Beedrill|Poison Jab|p1a: Florges
+|-supereffective|p1a: Florges
+|-damage|p1a: Florges|0 fnt
+|faint|p1a: Florges
+|
+|
+|switch|p1a: Infernape|Infernape, M|228\/293
+|-damage|p1a: Infernape|192\/293|[from] Stealth Rock
+|turn|20
+|
+|move|p2a: Beedrill|Poison Jab|p1a: Infernape
+|-damage|p1a: Infernape|0 fnt
+|faint|p1a: Infernape
+|
+|win|ANGER MANAGEMENT
+|raw|Ladder updating...
+|raw|raglbeez's rating: 1396 &rarr; <strong>1377<\/strong><br \/>(-19 for losing)
+|raw|ANGER MANAGEMENT's rating: 1408 &rarr; <strong>1427<\/strong><br \/>(+19 for winning)
+|leave|raglbeez
+|player|p1

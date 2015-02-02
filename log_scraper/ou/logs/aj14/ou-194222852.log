@@ -1,0 +1,272 @@
+|join|aj14
+|join|fkname
+|player|p1|aj14|283
+|player|p2|fkname|34
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Empoleon, F
+|poke|p1|Manaphy
+|poke|p1|Gothitelle, M
+|poke|p1|Ferrothorn, F
+|poke|p1|Heatran, F
+|poke|p1|Latias, F, shiny
+|poke|p2|Sableye, M
+|poke|p2|Chansey, F
+|poke|p2|Gliscor, M
+|poke|p2|Gyarados, F
+|poke|p2|Gothitelle, M
+|poke|p2|Landorus-Therian, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Ferrothorn|Ferrothorn, F|351\/351
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|363\/363
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Ferrothorn
+|-unboost|p1a: Ferrothorn|atk|1
+|turn|1
+|
+|move|p2a: Landorus-Therian|U-turn|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|302\/351
+|-damage|p2a: Landorus-Therian|318\/363|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|
+|switch|p2a: Gothitelle|Gothitelle, M|344\/344
+|move|p1a: Ferrothorn|Leech Seed|p2a: Gothitelle
+|-start|p2a: Gothitelle|move: Leech Seed
+|
+|-damage|p2a: Gothitelle|301\/344|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|345\/351|[silent]
+|turn|2
+|
+|switch|p1a: Heatran|Heatran, F|337\/337
+|-item|p1a: Heatran|Air Balloon
+|move|p2a: Gothitelle|Trick|p1a: Heatran
+|-activate|p2a: Gothitelle|move: Trick|[of] p1a: Heatran
+|-item|p1a: Heatran|Choice Scarf|[from] move: Trick
+|-item|p2a: Gothitelle|Air Balloon
+|-item|p2a: Gothitelle|Air Balloon|[from] move: Trick
+|
+|-damage|p2a: Gothitelle|258\/344|[from] Leech Seed|[of] p1a: Heatran
+|turn|3
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354
+|move|p1a: Heatran|Will-O-Wisp|p2a: Gliscor
+|-status|p2a: Gliscor|brn
+|
+|-damage|p2a: Gliscor|310\/354 brn|[from] brn
+|turn|4
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|345\/351
+|switch|p2a: Chansey|Chansey, F|704\/704
+|
+|turn|5
+|
+|move|p2a: Chansey|Aromatherapy|p2a: Chansey
+|-cureteam|p2a: Chansey|[from] move: Aromatherapy
+|move|p1a: Ferrothorn|Leech Seed|p2a: Chansey
+|-start|p2a: Chansey|move: Leech Seed
+|
+|-damage|p2a: Chansey|616\/704|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|351\/351|[silent]
+|turn|6
+|
+|switch|p2a: Gliscor|Gliscor, M|310\/354
+|move|p1a: Ferrothorn|Leech Seed|p2a: Gliscor
+|-start|p2a: Gliscor|move: Leech Seed
+|
+|-damage|p2a: Gliscor|266\/354|[from] Leech Seed|[of] p1a: Ferrothorn
+|-status|p2a: Gliscor|tox|[from] item: Toxic Orb
+|turn|7
+|
+|switch|p2a: Sableye|Sableye, M|304\/304
+|switch|p1a: Manaphy|Manaphy|361\/361
+|
+|turn|8
+|
+|detailschange|p2a: Sableye|Sableye-Mega, M
+|message|Sableye has Mega Evolved into Mega Sableye!
+|move|p2a: Sableye|Will-O-Wisp|p1a: Manaphy
+|-status|p1a: Manaphy|brn
+|move|p1a: Manaphy|Tail Glow|p1a: Manaphy
+|-boost|p1a: Manaphy|spa|3
+|
+|-damage|p1a: Manaphy|316\/361 brn|[from] brn
+|turn|9
+|join|DoomX
+|
+|move|p1a: Manaphy|Tail Glow|p1a: Manaphy
+|-boost|p1a: Manaphy|spa|3
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-fail|p2a: Sableye
+|
+|-heal|p1a: Manaphy|338\/361 brn|[from] item: Leftovers
+|-damage|p1a: Manaphy|293\/361 brn|[from] brn
+|turn|10
+|
+|switch|p2a: Gothitelle|Gothitelle, M|258\/344
+|-item|p2a: Gothitelle|Air Balloon
+|move|p1a: Manaphy|Scald|p2a: Gothitelle
+|-damage|p2a: Gothitelle|0 fnt
+|-enditem|p2a: Gothitelle|Air Balloon
+|faint|p2a: Gothitelle
+|
+|-heal|p1a: Manaphy|315\/361 brn|[from] item: Leftovers
+|-damage|p1a: Manaphy|270\/361 brn|[from] brn
+|
+|switch|p2a: Chansey|Chansey, F|616\/704
+|turn|11
+|
+|move|p1a: Manaphy|Scald|p2a: Chansey
+|-damage|p2a: Chansey|292\/704
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|644\/704
+|
+|-heal|p1a: Manaphy|292\/361 brn|[from] item: Leftovers
+|-damage|p1a: Manaphy|247\/361 brn|[from] brn
+|turn|12
+|
+|switch|p1a: Gothitelle|Gothitelle, M|291\/291
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|704\/704
+|
+|turn|13
+|
+|move|p1a: Gothitelle|Trick|p2a: Chansey
+|-activate|p1a: Gothitelle|move: Trick|[of] p2a: Chansey
+|-item|p2a: Chansey|Choice Specs|[from] move: Trick
+|-item|p1a: Gothitelle|Eviolite|[from] move: Trick
+|move|p2a: Chansey|Seismic Toss|p1a: Gothitelle
+|-damage|p1a: Gothitelle|191\/291
+|
+|turn|14
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|351\/351
+|move|p2a: Chansey|Seismic Toss|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|251\/351
+|-damage|p2a: Chansey|616\/704|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|
+|turn|15
+|
+|switch|p2a: Sableye|Sableye-Mega, M|304\/304
+|move|p1a: Ferrothorn|Power Whip|p2a: Sableye
+|-crit|p2a: Sableye
+|-damage|p2a: Sableye|183\/304
+|
+|turn|16
+|
+|switch|p1a: Heatran|Heatran, F|337\/337
+|move|p2a: Sableye|Calm Mind|p2a: Sableye
+|-boost|p2a: Sableye|spa|1
+|-boost|p2a: Sableye|spd|1
+|
+|turn|17
+|
+|switch|p1a: Manaphy|Manaphy|247\/361 brn
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|304\/304
+|
+|-heal|p1a: Manaphy|269\/361 brn|[from] item: Leftovers
+|-damage|p1a: Manaphy|224\/361 brn|[from] brn
+|turn|18
+|
+|move|p1a: Manaphy|Tail Glow|p1a: Manaphy
+|-boost|p1a: Manaphy|spa|3
+|move|p2a: Sableye|Calm Mind|p2a: Sableye
+|-boost|p2a: Sableye|spa|1
+|-boost|p2a: Sableye|spd|1
+|
+|-heal|p1a: Manaphy|246\/361 brn|[from] item: Leftovers
+|-damage|p1a: Manaphy|201\/361 brn|[from] brn
+|turn|19
+|
+|move|p1a: Manaphy|Scald|p2a: Sableye
+|-damage|p2a: Sableye|183\/304
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|304\/304
+|
+|-heal|p1a: Manaphy|223\/361 brn|[from] item: Leftovers
+|-damage|p1a: Manaphy|178\/361 brn|[from] brn
+|turn|20
+|
+|move|p1a: Manaphy|Scald|p2a: Sableye
+|-damage|p2a: Sableye|163\/304
+|move|p2a: Sableye|Dark Pulse|p1a: Manaphy
+|-crit|p1a: Manaphy
+|-damage|p1a: Manaphy|0 fnt
+|faint|p1a: Manaphy
+|
+|
+|switch|p1a: Empoleon|Empoleon, F|312\/312
+|turn|21
+|
+|move|p1a: Empoleon|Hydro Pump|p2a: Sableye
+|-damage|p2a: Sableye|73\/304
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|225\/304
+|
+|turn|22
+|
+|move|p1a: Empoleon|Hydro Pump|p2a: Sableye
+|-damage|p2a: Sableye|134\/304
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|286\/304
+|
+|turn|23
+|
+|move|p1a: Empoleon|Hydro Pump|p2a: Sableye|[miss]
+|-miss|p1a: Empoleon|p2a: Sableye
+|move|p2a: Sableye|Calm Mind|p2a: Sableye
+|-boost|p2a: Sableye|spa|1
+|-boost|p2a: Sableye|spd|1
+|
+|turn|24
+|
+|move|p1a: Empoleon|Hydro Pump|p2a: Sableye
+|-damage|p2a: Sableye|213\/304
+|move|p2a: Sableye|Calm Mind|p2a: Sableye
+|-boost|p2a: Sableye|spa|1
+|-boost|p2a: Sableye|spd|1
+|
+|turn|25
+|
+|move|p1a: Empoleon|Hydro Pump|p2a: Sableye
+|-damage|p2a: Sableye|156\/304
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|304\/304
+|
+|turn|26
+|
+|move|p1a: Empoleon|Ice Beam|p2a: Sableye
+|-damage|p2a: Sableye|274\/304
+|move|p2a: Sableye|Dark Pulse|p1a: Empoleon
+|-damage|p1a: Empoleon|50\/312
+|-enditem|p1a: Empoleon|Petaya Berry|[eat]
+|-boost|p1a: Empoleon|spa|1|[from] item: Petaya Berry
+|
+|turn|27
+|
+|move|p1a: Empoleon|Hydro Pump|p2a: Sableye
+|-damage|p2a: Sableye|145\/304
+|move|p2a: Sableye|Dark Pulse|p1a: Empoleon
+|-damage|p1a: Empoleon|0 fnt
+|faint|p1a: Empoleon
+|
+|-message|aj14 forfeited.
+|
+|win|fkname
+|raw|Ladder updating...
+|leave|aj14
+|player|p1
+|c|âfkname|gg
+|leave|DoomX

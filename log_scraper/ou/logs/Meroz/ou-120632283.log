@@ -1,0 +1,226 @@
+|join|hifriends
+|join|Meroz
+|player|p1|hifriends|130
+|player|p2|Meroz|92
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Azumarill, F
+|poke|p1|Excadrill, M
+|poke|p1|Charizard, M
+|poke|p1|Tyranitar, M
+|poke|p1|Breloom, M
+|poke|p1|Landorus, M
+|poke|p2|Greninja, F
+|poke|p2|Zapdos
+|poke|p2|Ferrothorn, F
+|poke|p2|Pinsir, M
+|poke|p2|Conkeldurr, M
+|poke|p2|Mandibuzz, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Tyranitar|Tyranitar, M|342\/342
+|switch|p2a: Ferrothorn|Ferrothorn, F|352\/352
+|-weather|Sandstorm
+|turn|1
+|
+|move|p1a: Tyranitar|Fire Blast|p2a: Ferrothorn|[miss]
+|-miss|p1a: Tyranitar|p2a: Ferrothorn
+|move|p2a: Ferrothorn|Stealth Rock|p1a: Tyranitar
+|-sidestart|p1: hifriends|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|2
+|
+|move|p1a: Tyranitar|Stealth Rock|p2a: Ferrothorn
+|-sidestart|p2: Meroz|move: Stealth Rock
+|move|p2a: Ferrothorn|Power Whip|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|108\/342
+|
+|-weather|Sandstorm|[upkeep]
+|turn|3
+|
+|move|p1a: Tyranitar|Fire Blast|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|52\/352
+|move|p2a: Ferrothorn|Leech Seed|p1a: Tyranitar
+|-start|p1a: Tyranitar|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Ferrothorn|74\/352|[from] item: Leftovers
+|-damage|p1a: Tyranitar|66\/342|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|116\/352|[silent]
+|turn|4
+|
+|switch|p2a: Conkeldurr|Conkeldurr, M|414\/414
+|-damage|p2a: Conkeldurr|389\/414|[from] Stealth Rock
+|move|p1a: Tyranitar|Ice Beam|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|307\/414
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Conkeldurr|282\/414|[from] sandstorm
+|-damage|p1a: Tyranitar|24\/342|[from] Leech Seed|[of] p2a: Conkeldurr
+|-heal|p2a: Conkeldurr|324\/414|[silent]
+|turn|5
+|
+|switch|p1a: Azumarill|Azumarill, F|404\/404
+|-damage|p1a: Azumarill|354\/404|[from] Stealth Rock
+|move|p2a: Conkeldurr|Mach Punch|p1a: Azumarill
+|-resisted|p1a: Azumarill
+|-damage|p1a: Azumarill|301\/404
+|
+|-weather|none
+|turn|6
+|
+|move|p1a: Azumarill|Play Rough|p2a: Conkeldurr
+|-supereffective|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|0 fnt
+|faint|p2a: Conkeldurr
+|
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|116\/352
+|-damage|p2a: Ferrothorn|94\/352|[from] Stealth Rock
+|turn|7
+|
+|move|p1a: Azumarill|Knock Off|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|-damage|p1a: Azumarill|251\/404|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|faint|p2a: Ferrothorn
+|
+|
+|switch|p2a: Zapdos|Zapdos|384\/384
+|-damage|p2a: Zapdos|288\/384|[from] Stealth Rock
+|-ability|p2a: Zapdos|Pressure
+|turn|8
+|
+|switch|p1a: Tyranitar|Tyranitar, M|24\/342
+|-damage|p1a: Tyranitar|0 fnt|[from] Stealth Rock
+|faint|p1a: Tyranitar
+|move|p2a: Zapdos|Thunderbolt|p1: Tyranitar|[notarget]
+|-notarget
+|
+|-heal|p2a: Zapdos|312\/384|[from] item: Leftovers
+|
+|switch|p1a: Landorus|Landorus, M|320\/320
+|-damage|p1a: Landorus|280\/320|[from] Stealth Rock
+|turn|9
+|
+|move|p1a: Landorus|Hidden Power|p2a: Zapdos
+|-supereffective|p2a: Zapdos
+|-damage|p2a: Zapdos|112\/384
+|-damage|p1a: Landorus|248\/320|[from] item: Life Orb
+|move|p2a: Zapdos|Hidden Power|p1a: Landorus
+|-supereffective|p1a: Landorus
+|-damage|p1a: Landorus|0 fnt
+|faint|p1a: Landorus
+|
+|-heal|p2a: Zapdos|136\/384|[from] item: Leftovers
+|
+|switch|p1a: Excadrill|Excadrill, M|361\/361
+|-damage|p1a: Excadrill|350\/361|[from] Stealth Rock
+|turn|10
+|
+|move|p1a: Excadrill|Rapid Spin|p2a: Zapdos
+|-crit|p2a: Zapdos
+|-damage|p2a: Zapdos|91\/384
+|-sideend|p1: hifriends|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Excadrill
+|-damage|p1a: Excadrill|314\/361|[from] item: Life Orb
+|move|p2a: Zapdos|Roost|p2a: Zapdos
+|-heal|p2a: Zapdos|283\/384
+|
+|-heal|p2a: Zapdos|307\/384|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Excadrill|Rock Slide|p2a: Zapdos
+|-supereffective|p2a: Zapdos
+|-damage|p2a: Zapdos|65\/384
+|-damage|p1a: Excadrill|278\/361|[from] item: Life Orb
+|move|p2a: Zapdos|Heat Wave|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-damage|p1a: Excadrill|0 fnt
+|faint|p1a: Excadrill
+|
+|-heal|p2a: Zapdos|89\/384|[from] item: Leftovers
+|
+|switch|p1a: Charizard|Charizard, M|333\/333
+|turn|12
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|424\/424
+|-damage|p2a: Mandibuzz|318\/424|[from] Stealth Rock
+|detailschange|p1a: Charizard|Charizard-Mega-X, M
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p1a: Charizard|Dragon Dance|p1a: Charizard
+|-boost|p1a: Charizard|atk|1
+|-boost|p1a: Charizard|spe|1
+|
+|-heal|p2a: Mandibuzz|344\/424|[from] item: Leftovers
+|turn|13
+|
+|move|p1a: Charizard|Flare Blitz|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|47\/424
+|-damage|p1a: Charizard|235\/333|[from] recoil|[of] p2a: Mandibuzz
+|move|p2a: Mandibuzz|Foul Play|p1a: Charizard
+|-damage|p1a: Charizard|0 fnt
+|faint|p1a: Charizard
+|
+|-heal|p2a: Mandibuzz|73\/424|[from] item: Leftovers
+|chat|Meroz|dat bulk
+|
+|switch|p1a: Breloom|Breloom, M|261\/261
+|turn|14
+|chat|hifriends|ya
+|
+|move|p1a: Breloom|Mach Punch|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|0 fnt
+|faint|p2a: Mandibuzz
+|
+|
+|switch|p2a: Pinsir|Pinsir, M|271\/271
+|-damage|p2a: Pinsir|204\/271|[from] Stealth Rock
+|turn|15
+|
+|detailschange|p2a: Pinsir|Pinsir-Mega, M
+|message|Pinsir has Mega Evolved into Mega Pinsir!
+|move|p2a: Pinsir|Return|p1a: Breloom
+|-supereffective|p1a: Breloom
+|-enditem|p1a: Breloom|Focus Sash
+|-damage|p1a: Breloom|1\/261
+|move|p1a: Breloom|Rock Tomb|p2a: Pinsir
+|-supereffective|p2a: Pinsir
+|-damage|p2a: Pinsir|0 fnt
+|faint|p2a: Pinsir
+|
+|
+|switch|p2a: Greninja|Greninja, F|286\/286
+|-damage|p2a: Greninja|251\/286|[from] Stealth Rock
+|turn|16
+|
+|move|p1a: Breloom|Mach Punch|p2a: Greninja
+|-supereffective|p2a: Greninja
+|-damage|p2a: Greninja|0 fnt
+|faint|p2a: Greninja
+|
+|
+|switch|p2a: Zapdos|Zapdos|89\/384
+|-damage|p2a: Zapdos|0 fnt|[from] Stealth Rock
+|faint|p2a: Zapdos
+|
+|win|hifriends
+|raw|Ladder updating...
+|chat|hifriends|gg
+|raw|hifriends's rating: 1661 &rarr; <strong>1682<\/strong><br \/>(+21 for winning)
+|raw|Meroz's rating: 1686 &rarr; <strong>1664<\/strong><br \/>(-22 for losing)
+|chat|Meroz|gg
+|leave|Meroz
+|player|p2

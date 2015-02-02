@@ -1,0 +1,289 @@
+|join|smogmog
+|join|arre
+|player|p1|smogmog|47
+|player|p2|arre|162
+|gametype|doubles
+|gen|6
+|tier|Random Doubles Battle
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|HP Percentage Mod: HP is shown in percentages
+|
+|start
+|switch|p1a: Bisharp|Bisharp, L80, F|269\/269
+|switch|p1b: Parasect|Parasect, L88, M|286\/286
+|switch|p2a: Yanmega|Yanmega, L78, M|247\/247
+|switch|p2b: Parasect|Parasect, L88, M|286\/286
+|-ability|p1a: Bisharp|Pressure
+|turn|1
+|c|âsmogmog|hi
+|c|âarre|suup :p
+|
+|move|p1b: Parasect|Protect|p1b: Parasect
+|-singleturn|p1b: Parasect|Protect
+|move|p2a: Yanmega|Bug Buzz|p1a: Bisharp
+|-damage|p1a: Bisharp|121\/269
+|move|p1a: Bisharp|Knock Off|p2a: Yanmega
+|-damage|p2a: Yanmega|88\/247
+|-enditem|p2a: Yanmega|Yache Berry|[from] move: Knock Off|[of] p1a: Bisharp
+|move|p2b: Parasect|X-Scissor|p1b: Parasect
+|-activate|p1b: Parasect|Protect
+|
+|turn|2
+|
+|switch|p1b: Qwilfish|Qwilfish, L86, M|235\/235
+|-ability|p1b: Qwilfish|Intimidate|[of] p2a: Yanmega
+|-unboost|p2a: Yanmega|atk|1
+|-ability|p1b: Qwilfish|Intimidate|[of] p2b: Parasect
+|-unboost|p2b: Parasect|atk|1
+|move|p1a: Bisharp|Sucker Punch|p2a: Yanmega
+|-damage|p2a: Yanmega|0 fnt
+|faint|p2a: Yanmega
+|move|p2b: Parasect|X-Scissor|p1a: Bisharp
+|-damage|p1a: Bisharp|43\/269
+|
+|
+|switch|p2a: Hypno|Hypno, L81, F|304\/304
+|turn|3
+|
+|move|p1b: Qwilfish|Poison Jab|p2b: Parasect
+|-supereffective|p2b: Parasect
+|-damage|p2b: Parasect|70\/286
+|move|p1a: Bisharp|Knock Off|p2a: Hypno
+|-supereffective|p2a: Hypno
+|-damage|p2a: Hypno|0 fnt
+|-enditem|p2a: Hypno|Life Orb|[from] move: Knock Off|[of] p1a: Bisharp
+|faint|p2a: Hypno
+|move|p2b: Parasect|X-Scissor|p1a: Bisharp
+|-damage|p1a: Bisharp|0 fnt
+|faint|p1a: Bisharp
+|
+|
+|switch|p1a: Uxie|Uxie, L71|210\/210
+|switch|p2a: Whiscash|Whiscash, L82, F|349\/349
+|turn|4
+|
+|switch|p1b: Parasect|Parasect, L88, M|286\/286
+|move|p2b: Parasect|Protect|p2b: Parasect
+|-singleturn|p2b: Parasect|Protect
+|move|p1a: Uxie|Yawn|p2a: Whiscash
+|-start|p2a: Whiscash|move: Yawn|[of] p1a: Uxie
+|move|p2a: Whiscash|Earthquake|p1b: Parasect
+|-activate|p2b: Parasect|Protect
+|-immune|p1a: Uxie|[msg]
+|-resisted|p1b: Parasect
+|-damage|p1b: Parasect|264\/286
+|
+|turn|5
+|
+|switch|p2a: Dialga|Dialga, L70|242\/242
+|-ability|p2a: Dialga|Pressure
+|move|p1a: Uxie|Psyshock|p2b: Parasect
+|-damage|p2b: Parasect|0 fnt
+|faint|p2b: Parasect
+|move|p1b: Parasect|Stun Spore|p2a: Dialga
+|-status|p2a: Dialga|par
+|
+|c|âarre|fml
+|
+|switch|p2b: Whiscash|Whiscash, L82, F|349\/349
+|turn|6
+|
+|switch|p1a: Qwilfish|Qwilfish, L86, M|235\/235
+|-ability|p1a: Qwilfish|Intimidate|[of] p2a: Dialga
+|-unboost|p2a: Dialga|atk|1
+|-ability|p1a: Qwilfish|Intimidate|[of] p2b: Whiscash
+|-unboost|p2b: Whiscash|atk|1
+|move|p2b: Whiscash|Protect|p2b: Whiscash
+|-singleturn|p2b: Whiscash|Protect
+|move|p1b: Parasect|Stun Spore|p2b: Whiscash
+|-activate|p2b: Whiscash|Protect
+|move|p2a: Dialga|Fire Blast|p1b: Parasect
+|-supereffective|p1b: Parasect
+|-damage|p1b: Parasect|0 fnt
+|faint|p1b: Parasect
+|
+|
+|switch|p1b: Cradily|Cradily, L80, F|302\/302
+|turn|7
+|
+|switch|p1a: Uxie|Uxie, L71|210\/210
+|move|p2a: Dialga|Protect|p2a: Dialga
+|-singleturn|p2a: Dialga|Protect
+|move|p2b: Whiscash|Earthquake|p1a: Uxie
+|-activate|p2a: Dialga|Protect
+|-immune|p1a: Uxie|[msg]
+|-damage|p1b: Cradily|245\/302
+|move|p1b: Cradily|Earthquake|p2b: Whiscash
+|-immune|p1a: Uxie|[msg]
+|-activate|p2a: Dialga|Protect
+|-damage|p2b: Whiscash|281\/349
+|
+|-heal|p2b: Whiscash|302\/349|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: Uxie|Helping Hand|p1b: Cradily
+|-singleturn|p1b: Cradily|Helping Hand|[of] p1a: Uxie
+|move|p2b: Whiscash|Stone Edge|p1a: Uxie
+|-damage|p1a: Uxie|167\/210
+|move|p1b: Cradily|Earthquake|p2b: Whiscash
+|-immune|p1a: Uxie|[msg]
+|-supereffective|p2a: Dialga
+|-damage|p2a: Dialga|82\/242 par
+|-damage|p2b: Whiscash|203\/349
+|move|p2a: Dialga|Draco Meteor|p1b: Cradily
+|-damage|p1b: Cradily|94\/302
+|-unboost|p2a: Dialga|spa|2
+|
+|-heal|p2b: Whiscash|224\/349|[from] item: Leftovers
+|turn|9
+|c|âarre|irpobably screwed so gg :p
+|c|âsmogmog|gg
+|
+|switch|p2a: Glaceon|Glaceon, L77, F|259\/259
+|move|p1a: Uxie|Yawn|p2b: Whiscash
+|-start|p2b: Whiscash|move: Yawn|[of] p1a: Uxie
+|move|p2b: Whiscash|Stone Edge|p1b: Cradily
+|-damage|p1b: Cradily|47\/302
+|move|p1b: Cradily|Recover|p1b: Cradily
+|-heal|p1b: Cradily|198\/302
+|
+|-heal|p2b: Whiscash|245\/349|[from] item: Leftovers
+|turn|10
+|
+|switch|p2b: Dialga|Dialga, L70|82\/242 par
+|-ability|p2b: Dialga|Pressure
+|switch|p1b: Qwilfish|Qwilfish, L86, M|235\/235
+|-ability|p1b: Qwilfish|Intimidate|[of] p2a: Glaceon
+|-unboost|p2a: Glaceon|atk|1
+|-ability|p1b: Qwilfish|Intimidate|[of] p2b: Dialga
+|-unboost|p2b: Dialga|atk|1
+|move|p1a: Uxie|Yawn|p2a: Glaceon
+|-start|p2a: Glaceon|move: Yawn|[of] p1a: Uxie
+|move|p2a: Glaceon|Ice Beam|p1a: Uxie
+|-damage|p1a: Uxie|70\/210
+|-enditem|p1a: Uxie|Sitrus Berry|[eat]
+|-heal|p1a: Uxie|122\/210|[from] item: Sitrus Berry
+|
+|turn|11
+|c|âarre|al them switche
+|
+|switch|p2a: Whiscash|Whiscash, L82, F|245\/349
+|move|p1b: Qwilfish|Waterfall|p2b: Dialga
+|-resisted|p2b: Dialga
+|-damage|p2b: Dialga|33\/242 par
+|move|p1a: Uxie|Psyshock|p2b: Dialga
+|-resisted|p2b: Dialga
+|-damage|p2b: Dialga|1\/242 par
+|move|p2b: Dialga|Earth Power|p1b: Qwilfish
+|-supereffective|p1b: Qwilfish
+|-damage|p1b: Qwilfish|17\/235
+|
+|-heal|p1b: Qwilfish|31\/235|[from] item: Black Sludge
+|-heal|p2a: Whiscash|266\/349|[from] item: Leftovers
+|turn|12
+|c|âarre|phew
+|
+|move|p1b: Qwilfish|Destiny Bond|p1b: Qwilfish
+|-singlemove|p1b: Qwilfish|Destiny Bond
+|move|p1a: Uxie|Psyshock|p2b: Dialga
+|-resisted|p2b: Dialga
+|-damage|p2b: Dialga|0 fnt
+|faint|p2b: Dialga
+|move|p2a: Whiscash|Stone Edge|p1b: Qwilfish|[miss]
+|-miss|p2a: Whiscash|p1b: Qwilfish
+|
+|-heal|p1b: Qwilfish|45\/235|[from] item: Black Sludge
+|-heal|p2a: Whiscash|287\/349|[from] item: Leftovers
+|c|âarre|wow lol :p
+|
+|switch|p2b: Glaceon|Glaceon, L77, F|259\/259
+|turn|13
+|
+|move|p1b: Qwilfish|Waterfall|p2a: Whiscash
+|-damage|p2a: Whiscash|161\/349
+|move|p1a: Uxie|Yawn|p2b: Glaceon
+|-start|p2b: Glaceon|move: Yawn|[of] p1a: Uxie
+|move|p2a: Whiscash|Waterfall|p1a: Uxie
+|-damage|p1a: Uxie|49\/210
+|move|p2b: Glaceon|Ice Beam|p1a: Uxie
+|-damage|p1a: Uxie|0 fnt
+|faint|p1a: Uxie
+|
+|-heal|p1b: Qwilfish|59\/235|[from] item: Black Sludge
+|-heal|p2a: Whiscash|182\/349|[from] item: Leftovers
+|
+|switch|p1a: Marowak|Marowak, L86, M|280\/280
+|turn|14
+|c|âarre|woow you have a marow to back you up i'm fuudged
+|c|âsmogmog|no you arent
+|c|âarre|ys i'm dead?
+|
+|switch|p1b: Cradily|Cradily, L80, F|198\/302
+|move|p2a: Whiscash|Earthquake|p1b: Cradily
+|-damage|p2b: Glaceon|187\/259
+|-damage|p1a: Marowak|214\/280
+|-damage|p1b: Cradily|110\/302
+|move|p2b: Glaceon|Ice Beam|p1a: Marowak
+|-supereffective|p1a: Marowak
+|-damage|p1a: Marowak|0 fnt
+|faint|p1a: Marowak
+|
+|-status|p2b: Glaceon|slp
+|-heal|p2a: Whiscash|203\/349|[from] item: Leftovers
+|
+|switch|p1a: Qwilfish|Qwilfish, L86, M|59\/235
+|-ability|p1a: Qwilfish|Intimidate|[of] p2a: Whiscash
+|-unboost|p2a: Whiscash|atk|1
+|-ability|p1a: Qwilfish|Intimidate|[of] p2b: Glaceon
+|-unboost|p2b: Glaceon|atk|1
+|turn|15
+|c|âarre|whew
+|
+|move|p1a: Qwilfish|Destiny Bond|p1a: Qwilfish
+|-singlemove|p1a: Qwilfish|Destiny Bond
+|move|p2a: Whiscash|Stone Edge|p1b: Cradily
+|-damage|p1b: Cradily|58\/302
+|cant|p2b: Glaceon|slp
+|move|p1b: Cradily|Seed Bomb|p2b: Glaceon
+|-damage|p2b: Glaceon|111\/259 slp
+|
+|-heal|p1a: Qwilfish|73\/235|[from] item: Black Sludge
+|-heal|p2a: Whiscash|224\/349|[from] item: Leftovers
+|turn|16
+|c|âsmogmog|both are faster than marowak
+|c|âarre|dam was hoping for crit 
+|c|âarre|why no seed bomb on whisch
+|c|âarre|i would be dead by long7
+|c|âsmogmog|glaceon wakeup will be my end
+|c|âarre|ah you thought detiny
+|c|âsmogmog|glaceon need to die first
+|c|âarre|aha i see
+|
+|-curestatus|p2b: Glaceon|slp
+|move|p2b: Glaceon|Helping Hand|p2a: Whiscash
+|-singleturn|p2a: Whiscash|Helping Hand|[of] p2b: Glaceon
+|move|p1a: Qwilfish|Waterfall|p2b: Glaceon
+|-boost|p1b: Cradily|spa|1|[from] ability: Storm Drain
+|move|p2a: Whiscash|Earthquake|p1b: Cradily
+|-damage|p2b: Glaceon|29\/259
+|-supereffective|p1a: Qwilfish
+|-damage|p1a: Qwilfish|0 fnt
+|-damage|p1b: Cradily|0 fnt
+|faint|p1a: Qwilfish
+|faint|p1b: Cradily
+|
+|win|arre
+|raw|Ladder updating...
+|raw|smogmog's rating: 1698 &rarr; <strong>1667<\/strong><br \/>(-31 for losing)
+|raw|arre's rating: 1495 &rarr; <strong>1526<\/strong><br \/>(+31 for winning)
+|c|âsmogmog|see
+|c|âsmogmog|gg
+|leave|smogmog
+|player|p1
+|c|âarre|lolz
+|c|âarre|dang
+|c|âarre|comeback
+|leave|arre
+|player|p2
+|join|arre

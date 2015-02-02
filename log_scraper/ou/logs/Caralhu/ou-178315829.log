@@ -1,0 +1,182 @@
+|join|Caralhu
+|join|Argue
+|player|p1|Caralhu|165
+|player|p2|Argue|80
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Cresselia, F
+|poke|p1|Azumarill, M
+|poke|p1|Volcarona, F
+|poke|p1|Latios, M
+|poke|p1|Scizor, F
+|poke|p1|Landorus-Therian, M
+|poke|p2|Cottonee, F, shiny
+|poke|p2|Azelf, shiny
+|poke|p2|Whimsicott, F, shiny
+|poke|p2|Smeargle, M, shiny
+|poke|p2|Espeon, F, shiny
+|poke|p2|Gothitelle, F, shiny
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|320\/320
+|switch|p2a: Cottonee|Cottonee, F, shiny|284\/284
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Cottonee
+|-unboost|p2a: Cottonee|atk|1
+|turn|1
+|
+|move|p2a: Cottonee|Tailwind|p2a: Cottonee
+|-sidestart|p2: Argue|move: Tailwind
+|move|p1a: Landorus-Therian|U-turn|p2a: Cottonee
+|-damage|p2a: Cottonee|138\/284
+|
+|switch|p1a: Scizor|Scizor, F|344\/344
+|
+|turn|2
+|
+|detailschange|p1a: Scizor|Scizor-Mega, F
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p2a: Cottonee|Memento|p1a: Scizor
+|-unboost|p1a: Scizor|atk|2
+|-unboost|p1a: Scizor|spa|2
+|faint|p2a: Cottonee
+|move|p1a: Scizor|Bullet Punch|p2: Cottonee|[notarget]
+|-notarget
+|
+|
+|switch|p2a: Whimsicott|Whimsicott, F, shiny|324\/324
+|turn|3
+|
+|move|p2a: Whimsicott|Taunt|p1a: Scizor
+|-start|p1a: Scizor|move: Taunt
+|cant|p1a: Scizor|move: Taunt|Swords Dance
+|
+|turn|4
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Whimsicott
+|-unboost|p2a: Whimsicott|atk|1
+|move|p2a: Whimsicott|Memento|p1a: Landorus-Therian
+|-unboost|p1a: Landorus-Therian|atk|2
+|-unboost|p1a: Landorus-Therian|spa|2
+|faint|p2a: Whimsicott
+|
+|-sideend|p2: Argue|move: Tailwind
+|
+|switch|p2a: Azelf|Azelf, shiny|354\/354
+|turn|5
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Azelf
+|-supereffective|p2a: Azelf
+|-damage|p2a: Azelf|226\/354
+|
+|switch|p1a: Scizor|Scizor-Mega, F|344\/344
+|move|p2a: Azelf|Reflect|p2a: Azelf
+|-sidestart|p2: Argue|Reflect
+|
+|turn|6
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Azelf
+|-damage|p2a: Azelf|147\/354
+|move|p2a: Azelf|Taunt|p1a: Scizor
+|-start|p1a: Scizor|move: Taunt
+|
+|turn|7
+|
+|move|p2a: Azelf|Light Screen|p2a: Azelf
+|-sidestart|p2: Argue|move: Light Screen
+|move|p1a: Scizor|Pursuit|p2a: Azelf
+|-supereffective|p2a: Azelf
+|-damage|p2a: Azelf|37\/354
+|
+|turn|8
+|
+|move|p2a: Azelf|Explosion|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|260\/344
+|faint|p2a: Azelf
+|move|p1a: Scizor|Pursuit|p2: Azelf|[notarget]
+|-notarget
+|
+|
+|switch|p2a: Smeargle|Smeargle, M, shiny|251\/251
+|turn|9
+|
+|switch|p1a: Cresselia|Cresselia, F|444\/444
+|move|p2a: Smeargle|Spore|p1a: Cresselia
+|-status|p1a: Cresselia|slp
+|
+|turn|10
+|
+|move|p2a: Smeargle|Geomancy|p2a: Smeargle|[still]
+|-prepare|p2a: Smeargle|Geomancy|p2a: Smeargle
+|-enditem|p2a: Smeargle|Power Herb
+|-anim|p2a: Smeargle|Geomancy|p2a: Smeargle
+|-boost|p2a: Smeargle|spa|2
+|-boost|p2a: Smeargle|spd|2
+|-boost|p2a: Smeargle|spe|2
+|cant|p1a: Cresselia|slp
+|
+|turn|11
+|
+|move|p2a: Smeargle|Cotton Guard|p2a: Smeargle
+|-boost|p2a: Smeargle|def|3
+|cant|p1a: Cresselia|slp
+|
+|turn|12
+|
+|move|p2a: Smeargle|Baton Pass|p2a: Smeargle
+|
+|switch|p2a: Espeon|Espeon, F, shiny|321\/321
+|-curestatus|p1a: Cresselia|slp
+|move|p1a: Cresselia|Thunder Wave|p2a: Espeon
+|move|p2a: Espeon|Thunder Wave|p1a: Cresselia|[from]Magic Bounce
+|-status|p1a: Cresselia|par
+|
+|-sideend|p2: Argue|Reflect
+|turn|13
+|
+|switch|p1a: Volcarona|Volcarona, F|312\/312
+|move|p2a: Espeon|Substitute|p2a: Espeon
+|-start|p2a: Espeon|Substitute
+|-damage|p2a: Espeon|241\/321
+|
+|-heal|p2a: Espeon|261\/321|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Espeon|Stored Power|p1a: Volcarona
+|-damage|p1a: Volcarona|0 fnt
+|faint|p1a: Volcarona
+|
+|-heal|p2a: Espeon|281\/321|[from] item: Leftovers
+|-sideend|p2: Argue|move: Light Screen
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-activate|p2a: Espeon|Substitute|ability: Intimidate|[of] p1a: Landorus-Therian
+|turn|15
+|
+|move|p2a: Espeon|Stored Power|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|faint|p1a: Landorus-Therian
+|
+|-heal|p2a: Espeon|301\/321|[from] item: Leftovers
+|-message|Caralhu forfeited.
+|
+|win|Argue
+|raw|Ladder updating...
+|leave|Caralhu
+|player|p1
+|raw|Caralhu's rating: 1495 &rarr; <strong>1474<\/strong><br \/>(-21 for losing)
+|raw|Argue's rating: 1478 &rarr; <strong>1499<\/strong><br \/>(+21 for winning)

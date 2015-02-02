@@ -1,0 +1,553 @@
+|join|Ryzed
+|join|vizjun
+|player|p1|Ryzed|169
+|player|p2|vizjun|165
+|gametype|singles
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Pinsir, F
+|poke|p1|Clefable, F
+|poke|p1|Heatran, F
+|poke|p1|Excadrill, F
+|poke|p1|Slowbro, F
+|poke|p1|Rotom-Wash
+|poke|p2|Aegislash, F
+|poke|p2|Thundurus, M
+|poke|p2|Lucario, M, shiny
+|poke|p2|Rotom-Wash
+|poke|p2|Garchomp, F
+|poke|p2|Amoonguss, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Heatran|Heatran, F|339\/339
+|switch|p2a: Amoonguss|Amoonguss, F|432\/432
+|turn|1
+|callback|decision
+|
+|move|p1a: Heatran|Stealth Rock|p2a: Amoonguss
+|-sidestart|p2: vizjun|move: Stealth Rock
+|move|p2a: Amoonguss|Spore|p1a: Heatran
+|-status|p1a: Heatran|slp
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Clefable|Clefable, F|394\/394
+|switch|p2a: Garchomp|Garchomp, F|357\/357
+|-damage|p2a: Garchomp|335\/357|[from] Stealth Rock
+|
+|turn|3
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, F|432\/432
+|-damage|p2a: Amoonguss|378\/432|[from] Stealth Rock
+|move|p1a: Clefable|Moonblast|p2a: Amoonguss
+|-resisted|p2a: Amoonguss
+|-damage|p2a: Amoonguss|297\/432
+|
+|-heal|p2a: Amoonguss|324\/432|[from] item: Black Sludge
+|turn|4
+|callback|decision
+|
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|move|p2a: Amoonguss|Sludge Bomb|p1a: Clefable
+|-supereffective|p1a: Clefable
+|-damage|p1a: Clefable|262\/394
+|
+|-heal|p2a: Amoonguss|351\/432|[from] item: Black Sludge
+|turn|5
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, F|335\/357
+|-damage|p2a: Garchomp|313\/357|[from] Stealth Rock
+|move|p1a: Clefable|Moonblast|p2a: Garchomp
+|-supereffective|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|faint|p2a: Garchomp
+|
+|callback|decision
+|
+|switch|p2a: Lucario|Lucario, M, shiny|281\/281
+|-damage|p2a: Lucario|273\/281|[from] Stealth Rock
+|turn|6
+|callback|decision
+|
+|switch|p1a: Slowbro|Slowbro, F|393\/393
+|-formechange|p2a: Lucario|Lucario-Mega
+|message|Lucario has Mega Evolved into Mega Lucario!
+|move|p2a: Lucario|Flash Cannon|p1a: Slowbro
+|-crit|p1a: Slowbro
+|-resisted|p1a: Slowbro
+|-damage|p1a: Slowbro|293\/393
+|
+|turn|7
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|299\/299
+|-damage|p2a: Rotom-Wash|262\/299|[from] Stealth Rock
+|move|p1a: Slowbro|Scald|p2a: Rotom-Wash
+|-crit|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|193\/299
+|-status|p2a: Rotom-Wash|brn
+|
+|-heal|p2a: Rotom-Wash|211\/299 brn|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|174\/299 brn|[from] brn
+|turn|8
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Pain Split|p1a: Slowbro
+|-sethp|p1a: Slowbro|233\/393|p2a: Rotom-Wash|233\/299 brn|[from] move: Pain Split
+|move|p1a: Slowbro|Scald|p2a: Rotom-Wash
+|-crit|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|164\/299 brn
+|
+|-heal|p2a: Rotom-Wash|182\/299 brn|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|145\/299 brn|[from] brn
+|turn|9
+|callback|decision
+|chat|vizjun|.
+|
+|switch|p1a: Excadrill|Excadrill, F|369\/369
+|-ability|p1a: Excadrill|Mold Breaker
+|-item|p1a: Excadrill|Air Balloon
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Excadrill
+|-status|p1a: Excadrill|brn
+|
+|-heal|p2a: Rotom-Wash|163\/299 brn|[from] item: Leftovers
+|-damage|p1a: Excadrill|323\/369 brn|[from] brn
+|-damage|p2a: Rotom-Wash|126\/299 brn|[from] brn
+|turn|10
+|callback|decision
+|chat|Ryzed|wp
+|
+|switch|p2a: Amoonguss|Amoonguss, F|432\/432
+|-damage|p2a: Amoonguss|378\/432|[from] Stealth Rock
+|move|p1a: Excadrill|Earthquake|p2a: Amoonguss
+|-damage|p2a: Amoonguss|263\/432
+|
+|-heal|p2a: Amoonguss|290\/432|[from] item: Black Sludge
+|-damage|p1a: Excadrill|277\/369 brn|[from] brn
+|turn|11
+|callback|decision
+|
+|move|p1a: Excadrill|Swords Dance|p1a: Excadrill
+|-boost|p1a: Excadrill|atk|2
+|move|p2a: Amoonguss|Giga Drain|p1a: Excadrill
+|-damage|p1a: Excadrill|168\/369 brn
+|-heal|p2a: Amoonguss|345\/432|[from] drain|[of] p1a: Excadrill
+|-enditem|p1a: Excadrill|Air Balloon
+|
+|-heal|p2a: Amoonguss|372\/432|[from] item: Black Sludge
+|-damage|p1a: Excadrill|122\/369 brn|[from] brn
+|turn|12
+|callback|decision
+|
+|switch|p2a: Thundurus|Thundurus, M|299\/299
+|-damage|p2a: Thundurus|225\/299|[from] Stealth Rock
+|move|p1a: Excadrill|Earthquake|p2a: Thundurus
+|-immune|p2a: Thundurus|[msg]
+|
+|-heal|p2a: Thundurus|243\/299|[from] item: Leftovers
+|-damage|p1a: Excadrill|76\/369 brn|[from] brn
+|turn|13
+|callback|decision
+|
+|move|p2a: Thundurus|Hidden Power|p1a: Excadrill
+|-damage|p1a: Excadrill|0 fnt
+|faint|p1a: Excadrill
+|
+|-heal|p2a: Thundurus|261\/299|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|251\/251
+|turn|14
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, F|432\/432
+|-damage|p2a: Amoonguss|378\/432|[from] Stealth Rock
+|move|p1a: Rotom-Wash|Trick|p2a: Amoonguss
+|-activate|p1a: Rotom-Wash|move: Trick|[of] p2a: Amoonguss
+|-item|p2a: Amoonguss|Choice Scarf|[from] move: Trick
+|-item|p1a: Rotom-Wash|Black Sludge|[from] move: Trick
+|
+|-damage|p1a: Rotom-Wash|220\/251|[from] item: Black Sludge
+|turn|15
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Amoonguss
+|-resisted|p2a: Amoonguss
+|-damage|p2a: Amoonguss|333\/432
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|339\/339 slp
+|move|p2a: Amoonguss|Sludge Bomb|p1a: Heatran
+|-immune|p1a: Heatran|[msg]
+|
+|turn|16
+|callback|decision
+|chat|vizjun|that thing needs some calfort now
+|
+|switch|p1a: Slowbro|Slowbro, F|364\/393
+|switch|p2a: Lucario|Lucario, M, shiny|273\/281
+|-formechange|p2a: Lucario|Lucario-Mega
+|-damage|p2a: Lucario|265\/281|[from] Stealth Rock
+|
+|turn|17
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|126\/299 brn
+|-damage|p2a: Rotom-Wash|89\/299 brn|[from] Stealth Rock
+|move|p1a: Slowbro|Fire Blast|p2a: Rotom-Wash|[miss]
+|-miss|p1a: Slowbro|p2a: Rotom-Wash
+|
+|-heal|p2a: Rotom-Wash|107\/299 brn|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|70\/299 brn|[from] brn
+|turn|18
+|callback|decision
+|
+|switch|p1a: Clefable|Clefable, F|262\/394
+|move|p2a: Rotom-Wash|Pain Split|p1a: Clefable
+|-sethp|p1a: Clefable|166\/394|p2a: Rotom-Wash|166\/299 brn|[from] move: Pain Split
+|
+|-heal|p2a: Rotom-Wash|184\/299 brn|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|147\/299 brn|[from] brn
+|turn|19
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Clefable
+|-damage|p1a: Clefable|63\/394
+|callback|decision
+|
+|switch|p2a: Lucario|Lucario, M, shiny|265\/281
+|-formechange|p2a: Lucario|Lucario-Mega
+|-damage|p2a: Lucario|257\/281|[from] Stealth Rock
+|move|p1a: Clefable|Soft-Boiled|p1a: Clefable
+|-heal|p1a: Clefable|260\/394
+|
+|turn|20
+|callback|decision
+|
+|switch|p1a: Slowbro|Slowbro, F|393\/393
+|move|p2a: Lucario|Flash Cannon|p1a: Slowbro
+|-resisted|p1a: Slowbro
+|-damage|p1a: Slowbro|333\/393
+|
+|turn|21
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|147\/299 brn
+|-damage|p2a: Rotom-Wash|110\/299 brn|[from] Stealth Rock
+|move|p1a: Slowbro|Fire Blast|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|68\/299 brn
+|
+|-heal|p2a: Rotom-Wash|86\/299 brn|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|49\/299 brn|[from] brn
+|turn|22
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Pain Split|p1a: Slowbro
+|-sethp|p1a: Slowbro|191\/393|p2a: Rotom-Wash|191\/299 brn|[from] move: Pain Split
+|move|p1a: Slowbro|Psyshock|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|119\/299 brn
+|
+|-heal|p2a: Rotom-Wash|137\/299 brn|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|100\/299 brn|[from] brn
+|turn|23
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|81\/393
+|callback|decision
+|
+|switch|p2a: Aegislash|Aegislash, F|323\/323
+|-damage|p2a: Aegislash|303\/323|[from] Stealth Rock
+|move|p1a: Slowbro|Fire Blast|p2a: Aegislash
+|-crit|p2a: Aegislash
+|-supereffective|p2a: Aegislash
+|-damage|p2a: Aegislash|125\/323
+|
+|-heal|p2a: Aegislash|145\/323|[from] item: Leftovers
+|turn|24
+|callback|decision
+|chat|Ryzed|THE TANKINESS
+|chat|vizjun|that did balls
+|chat|vizjun|y u no use slowking at this point
+|chat|Ryzed|good point
+|chat|Ryzed|i guess i have suprise value
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|220\/251
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Shadow Ball|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|66\/251
+|
+|-damage|p1a: Rotom-Wash|35\/251|[from] item: Black Sludge
+|-heal|p2a: Aegislash|165\/323|[from] item: Leftovers
+|turn|25
+|callback|decision
+|chat|vizjun|against dumb pieces of shit like me yes
+|
+|move|p2a: Aegislash|Shadow Sneak|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|
+|-heal|p2a: Aegislash|185\/323|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Pinsir|Pinsir, F|272\/272
+|turn|26
+|callback|decision
+|chat|vizjun|the threat
+|chat|Ryzed|hmm
+|
+|move|p1a: Pinsir|Swords Dance|p1a: Pinsir
+|-boost|p1a: Pinsir|atk|2
+|move|p2a: Aegislash|Shadow Ball|p1a: Pinsir
+|-damage|p1a: Pinsir|52\/272
+|
+|-heal|p2a: Aegislash|205\/323|[from] item: Leftovers
+|turn|27
+|callback|decision
+|chat|vizjun|hmm
+|chat|Ryzed|the mindgames
+|chat|Ryzed|aww shit
+|chat|vizjun|got ya
+|chat|Ryzed|i was eqing
+|chat|Ryzed|1 second earlier
+|chat|Ryzed|lucky guy
+|chat|vizjun|:]
+|
+|switch|p1a: Heatran|Heatran, F|339\/339 slp
+|-formechange|p2a: Aegislash|Aegislash
+|move|p2a: Aegislash|King's Shield|p2a: Aegislash
+|-fail|p2a: Aegislash
+|
+|-heal|p2a: Aegislash|225\/323|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|cant|p1a: Heatran|slp
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Shadow Ball|p1a: Heatran
+|-damage|p1a: Heatran|180\/339 slp
+|-unboost|p1a: Heatran|spd|1
+|
+|-heal|p1a: Heatran|201\/339 slp|[from] item: Leftovers
+|-heal|p2a: Aegislash|245\/323|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|100\/299 brn
+|-damage|p2a: Rotom-Wash|63\/299 brn|[from] Stealth Rock
+|cant|p1a: Heatran|slp
+|
+|-heal|p2a: Rotom-Wash|81\/299 brn|[from] item: Leftovers
+|-heal|p1a: Heatran|222\/339 slp|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|44\/299 brn|[from] brn
+|turn|30
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Heatran|[miss]
+|-miss|p2a: Rotom-Wash|p1a: Heatran
+|-curestatus|p1a: Heatran|slp
+|move|p1a: Heatran|Lava Plume|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|-heal|p1a: Heatran|243\/339|[from] item: Leftovers
+|callback|decision
+|chat|vizjun|did i say balls already?
+|
+|switch|p2a: Lucario|Lucario, M, shiny|257\/281
+|-formechange|p2a: Lucario|Lucario-Mega
+|-damage|p2a: Lucario|249\/281|[from] Stealth Rock
+|turn|31
+|callback|decision
+|
+|switch|p1a: Slowbro|Slowbro, F|212\/393
+|move|p2a: Lucario|Aura Sphere|p1a: Slowbro
+|-resisted|p1a: Slowbro
+|-damage|p1a: Slowbro|145\/393
+|
+|turn|32
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, F|432\/432
+|-damage|p2a: Amoonguss|378\/432|[from] Stealth Rock
+|switch|p1a: Pinsir|Pinsir, F|52\/272
+|
+|turn|33
+|callback|decision
+|chat|Ryzed|awwwwwwwwww shit
+|chat|Ryzed|mindgames
+|chat|vizjun|the fungus is here
+|
+|-formechange|p1a: Pinsir|Pinsir-Mega
+|message|Pinsir has Mega Evolved into Mega Pinsir!
+|move|p1a: Pinsir|Return|p2a: Amoonguss
+|-supereffective|p2a: Amoonguss
+|-damage|p2a: Amoonguss|0 fnt
+|faint|p2a: Amoonguss
+|
+|callback|decision
+|chat|Ryzed|yeshhhhhhhhh
+|chat|vizjun|the fungus was here
+|
+|switch|p2a: Thundurus|Thundurus, M|261\/299
+|-damage|p2a: Thundurus|187\/299|[from] Stealth Rock
+|turn|34
+|callback|decision
+|
+|move|p2a: Thundurus|Thunderbolt|p1a: Pinsir
+|-crit|p1a: Pinsir
+|-supereffective|p1a: Pinsir
+|-damage|p1a: Pinsir|0 fnt
+|faint|p1a: Pinsir
+|
+|-heal|p2a: Thundurus|205\/299|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Clefable|Clefable, F|260\/394
+|turn|35
+|callback|decision
+|
+|move|p2a: Thundurus|Thunderbolt|p1a: Clefable
+|-damage|p1a: Clefable|80\/394
+|move|p1a: Clefable|Soft-Boiled|p1a: Clefable
+|-heal|p1a: Clefable|277\/394
+|
+|-heal|p2a: Thundurus|223\/299|[from] item: Leftovers
+|turn|36
+|callback|decision
+|
+|move|p2a: Thundurus|Thunderbolt|p1a: Clefable
+|-damage|p1a: Clefable|99\/394
+|move|p1a: Clefable|Moonblast|p2a: Thundurus
+|-damage|p2a: Thundurus|0 fnt
+|faint|p2a: Thundurus
+|
+|callback|decision
+|chat|Ryzed|THAT DAMAGE
+|
+|switch|p2a: Lucario|Lucario, M, shiny|249\/281
+|-formechange|p2a: Lucario|Lucario-Mega
+|-damage|p2a: Lucario|241\/281|[from] Stealth Rock
+|turn|37
+|callback|decision
+|
+|switch|p2a: Aegislash|Aegislash, F|245\/323
+|-damage|p2a: Aegislash|225\/323|[from] Stealth Rock
+|switch|p1a: Slowbro|Slowbro, F|276\/393
+|
+|-heal|p2a: Aegislash|245\/323|[from] item: Leftovers
+|turn|38
+|callback|decision
+|
+|switch|p1a: Clefable|Clefable, F|99\/394
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Shadow Ball|p1a: Clefable
+|-damage|p1a: Clefable|0 fnt
+|faint|p1a: Clefable
+|
+|-heal|p2a: Aegislash|265\/323|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|243\/339
+|turn|39
+|callback|decision
+|chat|Ryzed|please dont tell me that thing can beat heatran
+|chat|vizjun|god damn it
+|chat|vizjun|i doubt it
+|
+|-formechange|p2a: Aegislash|Aegislash
+|move|p2a: Aegislash|King's Shield|p2a: Aegislash
+|-singleturn|p2a: Aegislash|Protect
+|move|p1a: Heatran|Lava Plume|p2a: Aegislash
+|-activate|p2a: Aegislash|Protect
+|
+|-heal|p1a: Heatran|264\/339|[from] item: Leftovers
+|-heal|p2a: Aegislash|285\/323|[from] item: Leftovers
+|turn|40
+|callback|decision
+|
+|move|p1a: Heatran|Lava Plume|p2a: Aegislash
+|-supereffective|p2a: Aegislash
+|-damage|p2a: Aegislash|57\/323
+|-status|p2a: Aegislash|brn
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Sacred Sword|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|168\/339
+|
+|-heal|p1a: Heatran|189\/339|[from] item: Leftovers
+|-heal|p2a: Aegislash|77\/323 brn|[from] item: Leftovers
+|-damage|p2a: Aegislash|37\/323 brn|[from] brn
+|turn|41
+|callback|decision
+|chat|vizjun|imma gfet the 30
+|chat|vizjun|get*
+|chat|vizjun|yep
+|chat|Ryzed|hahahahahahahah
+|chat|vizjun|of course
+|chat|Ryzed|actually it didnt matter
+|chat|vizjun|it didnt
+|chat|Ryzed|looks like you wouldnt have beat me anyway
+|chat|Ryzed|very good game though
+|
+|move|p1a: Heatran|Lava Plume|p2a: Aegislash
+|-supereffective|p2a: Aegislash
+|-damage|p2a: Aegislash|0 fnt
+|faint|p2a: Aegislash
+|
+|-heal|p1a: Heatran|210\/339|[from] item: Leftovers
+|callback|decision
+|chat|vizjun|i sucked
+|
+|switch|p2a: Lucario|Lucario, M, shiny|241\/281
+|-formechange|p2a: Lucario|Lucario-Mega
+|-damage|p2a: Lucario|233\/281|[from] Stealth Rock
+|turn|42
+|callback|decision
+|
+|move|p2a: Lucario|Aura Sphere|p1a: Heatran
+|-crit|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|callback|decision
+|
+|switch|p1a: Slowbro|Slowbro, F|393\/393
+|turn|43
+|callback|decision
+|
+|move|p2a: Lucario|Nasty Plot|p2a: Lucario
+|-boost|p2a: Lucario|spa|2
+|move|p1a: Slowbro|Fire Blast|p2a: Lucario
+|-supereffective|p2a: Lucario
+|-damage|p2a: Lucario|0 fnt
+|faint|p2a: Lucario
+|
+|win|Ryzed
+|raw|Ladder updating...
+|raw|Ryzed's rating: 2106 &rarr; <strong>2194<\/strong><br \/>(+88 for winning)
+|raw|vizjun's rating: 2576 &rarr; <strong>2477<\/strong><br \/>(-99 for losing)
+|leave|vizjun
+|player|p2
+|chat|Ryzed|:)

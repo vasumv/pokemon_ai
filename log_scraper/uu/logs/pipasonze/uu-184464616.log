@@ -1,0 +1,414 @@
+|join|BFoxy
+|join|pipasonze
+|player|p1|BFoxy|172
+|player|p2|pipasonze|193
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Jellicent, M
+|poke|p1|Zygarde
+|poke|p1|Aggron, M
+|poke|p1|Blissey, F
+|poke|p1|Forretress, M, shiny
+|poke|p1|Aromatisse, F
+|poke|p2|Abomasnow, F
+|poke|p2|Tentacruel, M
+|poke|p2|Mienshao, M
+|poke|p2|Krookodile, M
+|poke|p2|Jirachi
+|poke|p2|Noivern, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Walnut|Forretress, M, shiny|353\/353
+|switch|p2a: Krookodile|Krookodile, M|331\/331
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Walnut
+|-unboost|p1a: Walnut|atk|1
+|turn|1
+|
+|move|p2a: Krookodile|Knock Off|p1a: Walnut
+|-damage|p1a: Walnut|217\/353
+|-enditem|p1a: Walnut|Leftovers|[from] move: Knock Off|[of] p2a: Krookodile
+|move|p1a: Walnut|Toxic|p2a: Krookodile
+|-status|p2a: Krookodile|tox
+|
+|-damage|p2a: Krookodile|311\/331 tox|[from] psn
+|turn|2
+|
+|switch|p2a: Tentacruel|Tentacruel, M|363\/363
+|move|p1a: Walnut|Spikes|p2a: Tentacruel
+|-sidestart|p2: pipasonze|Spikes
+|
+|turn|3
+|
+|move|p2a: Tentacruel|Toxic|p1a: Walnut
+|-fail|p1a: Walnut
+|move|p1a: Walnut|Volt Switch|p2a: Tentacruel
+|-supereffective|p2a: Tentacruel
+|-damage|p2a: Tentacruel|299\/363
+|
+|switch|p1a: Terramorphous|Zygarde|404\/404
+|-ability|p1a: Terramorphous|Aura Break
+|
+|-heal|p2a: Tentacruel|321\/363|[from] item: Black Sludge
+|turn|4
+|
+|move|p1a: Terramorphous|Substitute|p1a: Terramorphous
+|-start|p1a: Terramorphous|Substitute
+|-damage|p1a: Terramorphous|303\/404
+|move|p2a: Tentacruel|Ice Beam|p1a: Terramorphous
+|-supereffective|p1a: Terramorphous
+|-end|p1a: Terramorphous|Substitute
+|
+|-heal|p1a: Terramorphous|328\/404|[from] item: Leftovers
+|-heal|p2a: Tentacruel|343\/363|[from] item: Black Sludge
+|turn|5
+|
+|switch|p2a: Krookodile|Krookodile, M|311\/331 tox
+|-damage|p2a: Krookodile|270\/331 tox|[from] Spikes
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Terramorphous
+|-unboost|p1a: Terramorphous|atk|1
+|move|p1a: Terramorphous|Earthquake|p2a: Krookodile
+|-damage|p2a: Krookodile|177\/331 tox
+|
+|-heal|p1a: Terramorphous|353\/404|[from] item: Leftovers
+|-damage|p2a: Krookodile|157\/331 tox|[from] psn
+|turn|6
+|
+|switch|p1a: Gooch|Aromatisse, F|405\/405
+|move|p2a: Krookodile|Earthquake|p1a: Gooch
+|-crit|p1a: Gooch
+|-damage|p1a: Gooch|83\/405
+|
+|-heal|p1a: Gooch|108\/405|[from] item: Leftovers
+|-damage|p2a: Krookodile|117\/331 tox|[from] psn
+|turn|7
+|
+|move|p1a: Gooch|Protect|p1a: Gooch
+|-singleturn|p1a: Gooch|Protect
+|move|p2a: Krookodile|Earthquake|p1a: Gooch
+|-activate|p1a: Gooch|Protect
+|
+|-heal|p1a: Gooch|133\/405|[from] item: Leftovers
+|-damage|p2a: Krookodile|57\/331 tox|[from] psn
+|turn|8
+|
+|switch|p1a: Walnut|Forretress, M, shiny|217\/353
+|move|p2a: Krookodile|Earthquake|p1a: Walnut
+|-damage|p1a: Walnut|82\/353
+|
+|-damage|p2a: Krookodile|0 fnt|[from] psn
+|faint|p2a: Krookodile
+|
+|switch|p2a: Tentacruel|Tentacruel, M|343\/363
+|-damage|p2a: Tentacruel|298\/363|[from] Spikes
+|turn|9
+|
+|move|p2a: Tentacruel|Rapid Spin|p1a: Walnut
+|-resisted|p1a: Walnut
+|-damage|p1a: Walnut|79\/353
+|-sideend|p2: pipasonze|Spikes|[from] move: Rapid Spin|[of] p2a: Tentacruel
+|move|p1a: Walnut|Volt Switch|p2a: Tentacruel
+|-supereffective|p2a: Tentacruel
+|-damage|p2a: Tentacruel|230\/363
+|
+|switch|p1a: Terramorphous|Zygarde|353\/404
+|-ability|p1a: Terramorphous|Aura Break
+|
+|-heal|p1a: Terramorphous|378\/404|[from] item: Leftovers
+|-heal|p2a: Tentacruel|252\/363|[from] item: Black Sludge
+|turn|10
+|
+|switch|p2a: Abomasnow|Abomasnow, F|383\/383
+|move|p1a: Terramorphous|Substitute|p1a: Terramorphous
+|-start|p1a: Terramorphous|Substitute
+|-damage|p1a: Terramorphous|277\/404
+|
+|-heal|p1a: Terramorphous|302\/404|[from] item: Leftovers
+|turn|11
+|
+|detailschange|p2a: Abomasnow|Abomasnow-Mega, F
+|message|Abomasnow has Mega Evolved into Mega Abomasnow!
+|-weather|Hail
+|move|p2a: Abomasnow|Ice Shard|p1a: Terramorphous
+|-supereffective|p1a: Terramorphous
+|-end|p1a: Terramorphous|Substitute
+|move|p1a: Terramorphous|Dragon Tail|p2a: Abomasnow
+|-damage|p2a: Abomasnow|308\/383
+|drag|p2a: Noivern|Noivern, F|311\/311
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Noivern|292\/311|[from] hail
+|-damage|p1a: Terramorphous|277\/404|[from] hail
+|-heal|p1a: Terramorphous|302\/404|[from] item: Leftovers
+|turn|12
+|
+|switch|p1a: Aggron|Aggron, M|344\/344
+|move|p2a: Noivern|U-turn|p1a: Aggron
+|-resisted|p1a: Aggron
+|-damage|p1a: Aggron|332\/344
+|
+|switch|p2a: Jirachi|Jirachi|343\/343
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Jirachi|322\/343|[from] hail
+|-damage|p1a: Aggron|311\/344|[from] hail
+|-heal|p2a: Jirachi|343\/343|[from] item: Leftovers
+|turn|13
+|
+|detailschange|p1a: Aggron|Aggron-Mega, M
+|message|Aggron has Mega Evolved into Mega Aggron!
+|move|p2a: Jirachi|Stealth Rock|p1a: Aggron
+|-sidestart|p1: BFoxy|move: Stealth Rock
+|move|p1a: Aggron|Stealth Rock|p2a: Jirachi
+|-sidestart|p2: pipasonze|move: Stealth Rock
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Jirachi|322\/343|[from] hail
+|-damage|p1a: Aggron|290\/344|[from] hail
+|-heal|p2a: Jirachi|343\/343|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Jirachi|U-turn|p1a: Aggron
+|-resisted|p1a: Aggron
+|-damage|p1a: Aggron|272\/344
+|
+|switch|p2a: Tentacruel|Tentacruel, M|252\/363
+|-damage|p2a: Tentacruel|207\/363|[from] Stealth Rock
+|move|p1a: Aggron|Heavy Slam|p2a: Tentacruel
+|-resisted|p2a: Tentacruel
+|-damage|p2a: Tentacruel|117\/363
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Tentacruel|95\/363|[from] hail
+|-damage|p1a: Aggron|251\/344|[from] hail
+|-heal|p2a: Tentacruel|117\/363|[from] item: Black Sludge
+|turn|15
+|
+|switch|p1a: Pringles|Jellicent, M|403\/403
+|-damage|p1a: Pringles|353\/403|[from] Stealth Rock
+|move|p2a: Tentacruel|Rapid Spin|p1a: Pringles
+|-immune|p1a: Pringles|[msg]
+|
+|-weather|none
+|-heal|p2a: Tentacruel|139\/363|[from] item: Black Sludge
+|-heal|p1a: Pringles|378\/403|[from] item: Leftovers
+|turn|16
+|
+|move|p2a: Tentacruel|Toxic|p1a: Pringles
+|-status|p1a: Pringles|tox
+|move|p1a: Pringles|Taunt|p2a: Tentacruel
+|-start|p2a: Tentacruel|move: Taunt
+|
+|-heal|p2a: Tentacruel|161\/363|[from] item: Black Sludge
+|-heal|p1a: Pringles|403\/403 tox|[from] item: Leftovers
+|-damage|p1a: Pringles|378\/403 tox|[from] psn
+|turn|17
+|
+|switch|p2a: Noivern|Noivern, F|292\/311
+|-damage|p2a: Noivern|215\/311|[from] Stealth Rock
+|move|p1a: Pringles|Will-O-Wisp|p2a: Noivern
+|-status|p2a: Noivern|brn
+|
+|-heal|p1a: Pringles|403\/403 tox|[from] item: Leftovers
+|-damage|p2a: Noivern|177\/311 brn|[from] brn
+|-damage|p1a: Pringles|353\/403 tox|[from] psn
+|turn|18
+|
+|move|p2a: Noivern|U-turn|p1a: Pringles
+|-resisted|p1a: Pringles
+|-damage|p1a: Pringles|344\/403 tox
+|
+|switch|p2a: Jirachi|Jirachi|343\/343
+|-damage|p2a: Jirachi|322\/343|[from] Stealth Rock
+|move|p1a: Pringles|Recover|p1a: Pringles
+|-heal|p1a: Pringles|403\/403 tox
+|
+|-heal|p2a: Jirachi|343\/343|[from] item: Leftovers
+|-damage|p1a: Pringles|328\/403 tox|[from] psn
+|turn|19
+|
+|move|p2a: Jirachi|Iron Head|p1a: Pringles
+|-resisted|p1a: Pringles
+|-damage|p1a: Pringles|271\/403 tox
+|move|p1a: Pringles|Scald|p2a: Jirachi
+|-damage|p2a: Jirachi|253\/343
+|
+|-heal|p2a: Jirachi|274\/343|[from] item: Leftovers
+|-heal|p1a: Pringles|296\/403 tox|[from] item: Leftovers
+|-damage|p1a: Pringles|196\/403 tox|[from] psn
+|turn|20
+|
+|switch|p1a: Walnut|Forretress, M, shiny|79\/353
+|-damage|p1a: Walnut|35\/353|[from] Stealth Rock
+|move|p2a: Jirachi|Iron Head|p1a: Walnut
+|-crit|p1a: Walnut
+|-resisted|p1a: Walnut
+|-damage|p1a: Walnut|0 fnt
+|faint|p1a: Walnut
+|
+|-heal|p2a: Jirachi|295\/343|[from] item: Leftovers
+|
+|switch|p1a: Aggron|Aggron-Mega, M|251\/344
+|-damage|p1a: Aggron|230\/344|[from] Stealth Rock
+|turn|21
+|
+|move|p2a: Jirachi|Fire Punch|p1a: Aggron
+|-supereffective|p1a: Aggron
+|-damage|p1a: Aggron|172\/344
+|move|p1a: Aggron|Heavy Slam|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|205\/343
+|
+|-heal|p2a: Jirachi|226\/343|[from] item: Leftovers
+|turn|22
+|
+|move|p2a: Jirachi|Fire Punch|p1a: Aggron
+|-supereffective|p1a: Aggron
+|-damage|p1a: Aggron|117\/344
+|move|p1a: Aggron|Metal Burst|p2a: Jirachi
+|-damage|p2a: Jirachi|144\/343
+|
+|-heal|p2a: Jirachi|165\/343|[from] item: Leftovers
+|turn|23
+|
+|switch|p1a: Terramorphous|Zygarde|302\/404
+|-damage|p1a: Terramorphous|277\/404|[from] Stealth Rock
+|-ability|p1a: Terramorphous|Aura Break
+|move|p2a: Jirachi|Fire Punch|p1a: Terramorphous
+|-resisted|p1a: Terramorphous
+|-damage|p1a: Terramorphous|246\/404
+|
+|-heal|p2a: Jirachi|186\/343|[from] item: Leftovers
+|-heal|p1a: Terramorphous|271\/404|[from] item: Leftovers
+|turn|24
+|
+|move|p2a: Jirachi|Iron Head|p1a: Terramorphous
+|-damage|p1a: Terramorphous|163\/404
+|cant|p1a: Terramorphous|flinch
+|
+|-heal|p2a: Jirachi|207\/343|[from] item: Leftovers
+|-heal|p1a: Terramorphous|188\/404|[from] item: Leftovers
+|turn|25
+|
+|move|p2a: Jirachi|U-turn|p1a: Terramorphous
+|-damage|p1a: Terramorphous|132\/404
+|
+|switch|p2a: Abomasnow|Abomasnow-Mega, F|308\/383
+|-damage|p2a: Abomasnow|213\/383|[from] Stealth Rock
+|-weather|Hail
+|move|p1a: Terramorphous|Earthquake|p2a: Abomasnow
+|-resisted|p2a: Abomasnow
+|-damage|p2a: Abomasnow|155\/383
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Terramorphous|107\/404|[from] hail
+|-heal|p1a: Terramorphous|132\/404|[from] item: Leftovers
+|turn|26
+|
+|switch|p1a: Aggron|Aggron-Mega, M|117\/344
+|-damage|p1a: Aggron|96\/344|[from] Stealth Rock
+|move|p2a: Abomasnow|Earthquake|p1a: Aggron
+|-supereffective|p1a: Aggron
+|-damage|p1a: Aggron|0 fnt
+|faint|p1a: Aggron
+|
+|-weather|Hail|[upkeep]
+|
+|switch|p1a: Teen Mom|Blissey, F|714\/714
+|-damage|p1a: Teen Mom|625\/714|[from] Stealth Rock
+|turn|27
+|
+|move|p1a: Teen Mom|Wish|p1a: Teen Mom
+|move|p2a: Abomasnow|Swords Dance|p2a: Abomasnow
+|-boost|p2a: Abomasnow|atk|2
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Teen Mom|581\/714|[from] hail
+|-heal|p1a: Teen Mom|625\/714|[from] item: Leftovers
+|turn|28
+|
+|move|p2a: Abomasnow|Earthquake|p1a: Teen Mom
+|-damage|p1a: Teen Mom|160\/714
+|move|p1a: Teen Mom|Counter|p2a: Abomasnow
+|-damage|p2a: Abomasnow|0 fnt
+|faint|p2a: Abomasnow
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Teen Mom|116\/714|[from] hail
+|-heal|p1a: Teen Mom|473\/714|[from] move: Wish|[wisher] Teen Mom
+|-heal|p1a: Teen Mom|517\/714|[from] item: Leftovers
+|
+|switch|p2a: Jirachi|Jirachi|207\/343
+|-damage|p2a: Jirachi|186\/343|[from] Stealth Rock
+|turn|29
+|
+|move|p2a: Jirachi|Iron Head|p1a: Teen Mom
+|-damage|p1a: Teen Mom|310\/714
+|move|p1a: Teen Mom|Counter|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|faint|p2a: Jirachi
+|
+|-weather|none
+|-heal|p1a: Teen Mom|354\/714|[from] item: Leftovers
+|
+|switch|p2a: Mienshao|Mienshao, M|271\/271
+|-damage|p2a: Mienshao|255\/271|[from] Stealth Rock
+|turn|30
+|
+|move|p1a: Teen Mom|Protect|p1a: Teen Mom
+|-singleturn|p1a: Teen Mom|Protect
+|move|p2a: Mienshao|Knock Off|p1a: Teen Mom
+|-activate|p1a: Teen Mom|Protect
+|
+|-heal|p1a: Teen Mom|398\/714|[from] item: Leftovers
+|turn|31
+|
+|switch|p2a: Tentacruel|Tentacruel, M|161\/363
+|-damage|p2a: Tentacruel|116\/363|[from] Stealth Rock
+|move|p1a: Teen Mom|Counter|p2a: Tentacruel
+|-fail|p2a: Tentacruel
+|
+|-heal|p2a: Tentacruel|138\/363|[from] item: Black Sludge
+|-heal|p1a: Teen Mom|442\/714|[from] item: Leftovers
+|turn|32
+|
+|move|p2a: Tentacruel|Rapid Spin|p1a: Teen Mom
+|-damage|p1a: Teen Mom|421\/714
+|-sideend|p2: pipasonze|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Tentacruel
+|move|p1a: Teen Mom|Wish|p1a: Teen Mom
+|
+|-heal|p2a: Tentacruel|160\/363|[from] item: Black Sludge
+|-heal|p1a: Teen Mom|465\/714|[from] item: Leftovers
+|turn|33
+|
+|move|p2a: Tentacruel|Toxic|p1a: Teen Mom
+|-status|p1a: Teen Mom|tox
+|move|p1a: Teen Mom|Seismic Toss|p2a: Tentacruel
+|-damage|p2a: Tentacruel|60\/363
+|
+|-heal|p1a: Teen Mom|714\/714 tox|[from] move: Wish|[wisher] Teen Mom
+|-heal|p2a: Tentacruel|82\/363|[from] item: Black Sludge
+|-damage|p1a: Teen Mom|670\/714 tox|[from] psn
+|turn|34
+|c|âpipasonze|i was stupid for not using wood hammer on blissey and koing it along with abomasnow, you were lucky to not get blissey flinched
+|c|âpipasonze|counter blissey is bad btw
+|-message|pipasonze forfeited.
+|
+|win|BFoxy
+|raw|Ladder updating...
+|leave|pipasonze
+|player|p2
+|raw|BFoxy's rating: 1548 &rarr; <strong>1564<\/strong><br \/>(+16 for winning)
+|raw|pipasonze's rating: 1492 &rarr; <strong>1475<\/strong><br \/>(-17 for losing)

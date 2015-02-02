@@ -1,0 +1,184 @@
+|inactive|Battle timer is ON: inactive players will automatically lose when time's up.
+|join|shartruce2
+|join|Xyldaz
+|player|p1|shartruce2|43
+|player|p2|Xyldaz|84
+|gametype|singles
+|gen|6
+|tier|OU
+|clearpoke
+|poke|p1|Latios, M
+|poke|p1|Tyranitar, F
+|poke|p1|Heatran, F
+|poke|p1|Ferrothorn, F
+|poke|p1|Landorus-Therian, M
+|poke|p1|Azumarill, M
+|poke|p2|Charizard, F
+|poke|p2|Gastrodon, M
+|poke|p2|Roserade, M
+|poke|p2|Chansey, F
+|poke|p2|Clefable, F
+|poke|p2|Zapdos
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|join|Zenadark
+|join|GIMME ME THE LOOT
+|
+|start
+|switch|p1a: mandatory ground|Landorus-Therian, M|318\/318
+|switch|p2a: Charizard|Charizard, F|359\/359
+|-ability|p1a: mandatory ground|Intimidate|[of] p2a: Charizard
+|-unboost|p2a: Charizard|atk|1
+|turn|1
+|join|Sm0g Fr0g
+|join|Toad le Lucario
+|
+|switch|p2a: Chansey|Chansey, F|662\/662
+|move|p1a: mandatory ground|U-turn|p2a: Chansey
+|-damage|p2a: Chansey|377\/662
+|
+|switch|p1a: mandatory grass|Ferrothorn, F|352\/352
+|
+|turn|2
+|
+|move|p2a: Chansey|Stealth Rock|p1a: mandatory grass
+|-sidestart|p1: shartruce2|move: Stealth Rock
+|move|p1a: mandatory grass|Stealth Rock|p2a: Chansey
+|-sidestart|p2: Xyldaz|move: Stealth Rock
+|
+|turn|3
+|leave|Toad le Lucario
+|
+|switch|p2a: Charizard|Charizard, F|359\/359
+|-damage|p2a: Charizard|180\/359|[from] Stealth Rock
+|move|p1a: mandatory grass|Leech Seed|p2a: Charizard
+|-start|p2a: Charizard|move: Leech Seed
+|
+|-damage|p2a: Charizard|136\/359|[from] Leech Seed|[of] p1a: mandatory grass
+|turn|4
+|
+|switch|p1a: mandatory fire|Heatran, F|386\/386
+|-damage|p1a: mandatory fire|338\/386|[from] Stealth Rock
+|detailschange|p2a: Charizard|Charizard-Mega-Y, F
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p2a: Charizard|Roost|p2a: Charizard
+|-heal|p2a: Charizard|316\/359
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: mandatory fire|362\/386|[from] item: Leftovers
+|-damage|p2a: Charizard|272\/359|[from] Leech Seed|[of] p1a: mandatory fire
+|-heal|p1a: mandatory fire|386\/386|[silent]
+|turn|5
+|
+|switch|p2a: Gastrodon|Gastrodon, M|426\/426
+|-damage|p2a: Gastrodon|400\/426|[from] Stealth Rock
+|move|p1a: mandatory fire|Toxic|p2a: Gastrodon
+|-status|p2a: Gastrodon|tox
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Gastrodon|426\/426 tox|[from] item: Leftovers
+|-damage|p2a: Gastrodon|400\/426 tox|[from] psn
+|turn|6
+|
+|switch|p1a: mandatory grass|Ferrothorn, F|352\/352
+|-damage|p1a: mandatory grass|330\/352|[from] Stealth Rock
+|move|p2a: Gastrodon|Earthquake|p1a: mandatory grass
+|-damage|p1a: mandatory grass|270\/352
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Gastrodon|426\/426 tox|[from] item: Leftovers
+|-heal|p1a: mandatory grass|292\/352|[from] item: Leftovers
+|-damage|p2a: Gastrodon|374\/426 tox|[from] psn
+|turn|7
+|leave|GIMME ME THE LOOT
+|join|iSunny.
+|
+|switch|p2a: Zapdos|Zapdos|383\/383
+|-damage|p2a: Zapdos|288\/383|[from] Stealth Rock
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: mandatory grass|Gyro Ball|p2a: Zapdos
+|-crit|p2a: Zapdos
+|-resisted|p2a: Zapdos
+|-damage|p2a: Zapdos|151\/383
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Zapdos|174\/383|[from] item: Leftovers
+|-heal|p1a: mandatory grass|314\/352|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: mandatory fire|Heatran, F|386\/386
+|-damage|p1a: mandatory fire|338\/386|[from] Stealth Rock
+|move|p2a: Zapdos|Defog|p1a: mandatory fire
+|-unboost|p1a: mandatory fire|evasion|1
+|-sideend|p1: shartruce2|Stealth Rock|[from] move: Defog|[of] p1a: mandatory fire
+|-sideend|p2: Xyldaz|Stealth Rock|[from] move: Defog|[of] p2a: Zapdos
+|
+|-weather|none
+|-heal|p1a: mandatory fire|362\/386|[from] item: Leftovers
+|-heal|p2a: Zapdos|197\/383|[from] item: Leftovers
+|turn|9
+|
+|move|p1a: mandatory fire|Taunt|p2a: Zapdos
+|-start|p2a: Zapdos|move: Taunt
+|move|p2a: Zapdos|Thunderbolt|p1a: mandatory fire
+|-damage|p1a: mandatory fire|260\/386
+|
+|-heal|p1a: mandatory fire|284\/386|[from] item: Leftovers
+|-heal|p2a: Zapdos|220\/383|[from] item: Leftovers
+|turn|10
+|
+|move|p1a: mandatory fire|Toxic|p2a: Zapdos
+|-status|p2a: Zapdos|tox
+|move|p2a: Zapdos|Thunderbolt|p1a: mandatory fire
+|-damage|p1a: mandatory fire|167\/386
+|
+|-heal|p1a: mandatory fire|191\/386|[from] item: Leftovers
+|-heal|p2a: Zapdos|243\/383 tox|[from] item: Leftovers
+|-damage|p2a: Zapdos|220\/383 tox|[from] psn
+|turn|11
+|c|âXyldaz|lol
+|leave|Sm0g Fr0g
+|c|âXyldaz|i don't have all my moves
+|c|âXyldaz|gg
+|
+|switch|p1a: mandatory dragon|Latios, M|302\/302
+|move|p2a: Zapdos|Thunderbolt|p1a: mandatory dragon
+|-resisted|p1a: mandatory dragon
+|-damage|p1a: mandatory dragon|245\/302
+|
+|-heal|p2a: Zapdos|243\/383 tox|[from] item: Leftovers
+|-damage|p2a: Zapdos|197\/383 tox|[from] psn
+|-end|p2a: Zapdos|move: Taunt
+|turn|12
+|
+|switch|p2a: Clefable|Clefable, F|352\/352
+|move|p1a: mandatory dragon|Psyshock|p2a: Clefable
+|-damage|p2a: Clefable|130\/352
+|-damage|p1a: mandatory dragon|215\/302|[from] item: Life Orb
+|
+|-heal|p2a: Clefable|152\/352|[from] item: Leftovers
+|turn|13
+|
+|move|p1a: mandatory dragon|Psyshock|p2a: Clefable
+|-damage|p2a: Clefable|0 fnt
+|-damage|p1a: mandatory dragon|185\/302|[from] item: Life Orb
+|faint|p2a: Clefable
+|
+|c|âXyldaz|and no evs .-.
+|c|âXyldaz|yeah gg
+|leave|Xyldaz
+|player|p2
+|leave|Zenadark
+|-message|Player 2 lost due to inactivity.
+|
+|win|shartruce2
+|leave|iSunny.

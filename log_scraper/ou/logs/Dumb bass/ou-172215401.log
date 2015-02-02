@@ -1,0 +1,430 @@
+|join|YunanTheWanderer
+|join|Dumb bass
+|player|p1|YunanTheWanderer|198
+|player|p2|Dumb bass|102
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Gothitelle, F
+|poke|p1|Charizard, F
+|poke|p1|Quagsire, F
+|poke|p1|Amoonguss, M, shiny
+|poke|p1|Chansey, F
+|poke|p1|Skarmory, M
+|poke|p2|Entei, shiny
+|poke|p2|Scrafty, M
+|poke|p2|Flygon, M
+|poke|p2|Swampert, M
+|poke|p2|Amoonguss, M
+|poke|p2|Blastoise, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Gothitelle|Gothitelle, F|300\/300
+|switch|p2a: Blastoise|Blastoise, F|300\/300
+|turn|1
+|
+|detailschange|p2a: Blastoise|Blastoise-Mega, F
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p1a: Gothitelle|Psychic|p2a: Blastoise
+|-damage|p2a: Blastoise|189\/300
+|move|p2a: Blastoise|Dark Pulse|p1a: Gothitelle
+|-supereffective|p1a: Gothitelle
+|-damage|p1a: Gothitelle|0 fnt
+|faint|p1a: Gothitelle
+|
+|
+|switch|p1a: Amoonguss|Amoonguss, M, shiny|432\/432
+|turn|2
+|
+|switch|p2a: Amoonguss|Amoonguss, M|423\/423
+|move|p1a: Amoonguss|Spore|p2a: Amoonguss
+|-fail|p2a: Amoonguss
+|
+|turn|3
+|
+|switch|p1a: Charizard|Charizard, F|360\/360
+|move|p2a: Amoonguss|Sludge Bomb|p1a: Charizard
+|-damage|p1a: Charizard|275\/360
+|
+|turn|4
+|
+|switch|p2a: Swampert|Swampert, M|401\/401
+|detailschange|p1a: Charizard|Charizard-Mega-Y, F
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p1a: Charizard|Solar Beam|p2a: Swampert|[still]
+|-prepare|p1a: Charizard|Solar Beam|p2a: Swampert
+|-anim|p1a: Charizard|Solar Beam|p2a: Swampert
+|-supereffective|p2a: Swampert
+|-damage|p2a: Swampert|0 fnt
+|faint|p2a: Swampert
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p2a: Scrafty|Scrafty, M|302\/302
+|turn|5
+|
+|move|p1a: Charizard|Focus Blast|p2a: Scrafty|[miss]
+|-miss|p1a: Charizard|p2a: Scrafty
+|move|p2a: Scrafty|Dragon Tail|p1a: Charizard
+|-damage|p1a: Charizard|212\/360
+|drag|p1a: Amoonguss|Amoonguss, M, shiny|432\/432
+|
+|-weather|SunnyDay|[upkeep]
+|turn|6
+|
+|switch|p2a: Amoonguss|Amoonguss, M|423\/423
+|move|p1a: Amoonguss|Spore|p2a: Amoonguss
+|-fail|p2a: Amoonguss
+|
+|-weather|SunnyDay|[upkeep]
+|turn|7
+|
+|switch|p1a: Charizard|Charizard-Mega-Y, F|212\/360
+|move|p2a: Amoonguss|Spore|p1a: Charizard
+|-status|p1a: Charizard|slp
+|
+|-weather|SunnyDay|[upkeep]
+|turn|8
+|
+|switch|p1a: Chansey|Chansey, F|704\/704
+|switch|p2a: Blastoise|Blastoise-Mega, F|189\/300
+|
+|-weather|none
+|turn|9
+|
+|move|p2a: Blastoise|Aura Sphere|p1a: Chansey
+|-supereffective|p1a: Chansey
+|-damage|p1a: Chansey|564\/704
+|move|p1a: Chansey|Seismic Toss|p2a: Blastoise
+|-damage|p2a: Blastoise|89\/300
+|
+|turn|10
+|
+|switch|p2a: Scrafty|Scrafty, M|302\/302
+|move|p1a: Chansey|Seismic Toss|p2a: Scrafty
+|-damage|p2a: Scrafty|202\/302
+|
+|turn|11
+|
+|switch|p1a: Quagsire|Quagsire, F|394\/394
+|move|p2a: Scrafty|Knock Off|p1a: Quagsire
+|-damage|p1a: Quagsire|288\/394
+|-enditem|p1a: Quagsire|Leftovers|[from] move: Knock Off|[of] p2a: Scrafty
+|
+|turn|12
+|
+|move|p2a: Scrafty|Drain Punch|p1a: Quagsire
+|-damage|p1a: Quagsire|204\/394
+|-heal|p2a: Scrafty|244\/302|[from] drain|[of] p1a: Quagsire
+|move|p1a: Quagsire|Toxic|p2a: Scrafty
+|-status|p2a: Scrafty|tox
+|
+|-activate|p2a: Scrafty|ability: Shed Skin
+|-curestatus|p2a: Scrafty|tox
+|turn|13
+|
+|move|p2a: Scrafty|Super Fang|p1a: Quagsire
+|-damage|p1a: Quagsire|102\/394
+|move|p1a: Quagsire|Recover|p1a: Quagsire
+|-heal|p1a: Quagsire|299\/394
+|
+|turn|14
+|
+|move|p2a: Scrafty|Super Fang|p1a: Quagsire
+|-damage|p1a: Quagsire|150\/394
+|move|p1a: Quagsire|Scald|p2a: Scrafty
+|-damage|p2a: Scrafty|214\/302
+|-status|p2a: Scrafty|brn
+|
+|-damage|p2a: Scrafty|177\/302 brn|[from] brn
+|turn|15
+|
+|move|p2a: Scrafty|Drain Punch|p1a: Quagsire
+|-damage|p1a: Quagsire|108\/394
+|-heal|p2a: Scrafty|198\/302 brn|[from] drain|[of] p1a: Quagsire
+|move|p1a: Quagsire|Recover|p1a: Quagsire
+|-heal|p1a: Quagsire|305\/394
+|
+|-damage|p2a: Scrafty|161\/302 brn|[from] brn
+|turn|16
+|
+|move|p2a: Scrafty|Drain Punch|p1a: Quagsire
+|-damage|p1a: Quagsire|269\/394
+|-heal|p2a: Scrafty|179\/302 brn|[from] drain|[of] p1a: Quagsire
+|move|p1a: Quagsire|Scald|p2a: Scrafty
+|-damage|p2a: Scrafty|149\/302 brn
+|
+|-damage|p2a: Scrafty|112\/302 brn|[from] brn
+|turn|17
+|
+|switch|p2a: Amoonguss|Amoonguss, M|423\/423
+|move|p1a: Quagsire|Recover|p1a: Quagsire
+|-heal|p1a: Quagsire|394\/394
+|
+|turn|18
+|
+|switch|p2a: Entei|Entei, shiny|372\/372
+|-ability|p2a: Entei|Pressure
+|switch|p1a: Chansey|Chansey, F|564\/704
+|
+|turn|19
+|
+|move|p2a: Entei|Sacred Fire|p1a: Chansey
+|-damage|p1a: Chansey|0 fnt
+|-damage|p2a: Entei|335\/372|[from] item: Life Orb
+|faint|p1a: Chansey
+|
+|c|âYunanTheWanderer|sacred fire SHOULDNT BE PHYSICAL THATS SOOOO DUMB
+|
+|switch|p1a: Charizard|Charizard-Mega-Y, F|212\/360 slp
+|-weather|SunnyDay
+|turn|20
+|
+|move|p2a: Entei|Howl|p2a: Entei
+|-boost|p2a: Entei|atk|1
+|cant|p1a: Charizard|slp
+|
+|-weather|SunnyDay|[upkeep]
+|turn|21
+|
+|move|p2a: Entei|Howl|p2a: Entei
+|-boost|p2a: Entei|atk|1
+|-curestatus|p1a: Charizard|slp
+|move|p1a: Charizard|Roost|p1a: Charizard
+|-heal|p1a: Charizard|360\/360
+|
+|-weather|SunnyDay|[upkeep]
+|turn|22
+|
+|switch|p1a: Quagsire|Quagsire, F|394\/394
+|move|p2a: Entei|Sacred Fire|p1a: Quagsire
+|-resisted|p1a: Quagsire
+|-damage|p1a: Quagsire|246\/394
+|-damage|p2a: Entei|298\/372|[from] item: Life Orb
+|
+|-weather|SunnyDay|[upkeep]
+|turn|23
+|
+|move|p2a: Entei|Extreme Speed|p1a: Quagsire
+|-damage|p1a: Quagsire|151\/394
+|-damage|p2a: Entei|261\/372|[from] item: Life Orb
+|move|p1a: Quagsire|Recover|p1a: Quagsire
+|-heal|p1a: Quagsire|348\/394
+|
+|-weather|SunnyDay|[upkeep]
+|turn|24
+|
+|switch|p2a: Amoonguss|Amoonguss, M|423\/423
+|move|p1a: Quagsire|Scald|p2a: Amoonguss
+|-resisted|p2a: Amoonguss
+|-damage|p2a: Amoonguss|408\/423
+|
+|-weather|none
+|-heal|p2a: Amoonguss|423\/423|[from] item: Black Sludge
+|turn|25
+|
+|switch|p1a: Amoonguss|Amoonguss, M, shiny|432\/432
+|move|p2a: Amoonguss|Spore|p1a: Amoonguss
+|-fail|p1a: Amoonguss
+|
+|turn|26
+|
+|switch|p1a: Charizard|Charizard-Mega-Y, F|360\/360
+|-weather|SunnyDay
+|move|p2a: Amoonguss|Sludge Bomb|p1a: Charizard
+|-damage|p1a: Charizard|293\/360
+|-status|p1a: Charizard|psn
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Charizard|248\/360 psn|[from] psn
+|turn|27
+|
+|switch|p2a: Blastoise|Blastoise-Mega, F|89\/300
+|move|p1a: Charizard|Flamethrower|p2a: Blastoise
+|-resisted|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Charizard|203\/360 psn|[from] psn
+|
+|switch|p2a: Entei|Entei, shiny|261\/372
+|-ability|p2a: Entei|Pressure
+|turn|28
+|
+|switch|p1a: Quagsire|Quagsire, F|348\/394
+|move|p2a: Entei|Extreme Speed|p1a: Quagsire
+|-damage|p1a: Quagsire|245\/394
+|-damage|p2a: Entei|224\/372|[from] item: Life Orb
+|
+|-weather|SunnyDay|[upkeep]
+|turn|29
+|
+|switch|p2a: Amoonguss|Amoonguss, M|423\/423
+|move|p1a: Quagsire|Recover|p1a: Quagsire
+|-heal|p1a: Quagsire|394\/394
+|
+|-weather|SunnyDay|[upkeep]
+|turn|30
+|
+|switch|p1a: Amoonguss|Amoonguss, M, shiny|432\/432
+|move|p2a: Amoonguss|Foul Play|p1a: Amoonguss
+|-damage|p1a: Amoonguss|350\/432
+|
+|-weather|none
+|-heal|p1a: Amoonguss|377\/432|[from] item: Black Sludge
+|turn|31
+|
+|move|p2a: Amoonguss|Foul Play|p1a: Amoonguss
+|-damage|p1a: Amoonguss|294\/432
+|move|p1a: Amoonguss|Foul Play|p2a: Amoonguss
+|-damage|p2a: Amoonguss|338\/423
+|
+|-heal|p1a: Amoonguss|321\/432|[from] item: Black Sludge
+|-heal|p2a: Amoonguss|364\/423|[from] item: Black Sludge
+|turn|32
+|
+|move|p1a: Amoonguss|Foul Play|p2a: Amoonguss
+|-damage|p2a: Amoonguss|292\/423
+|move|p2a: Amoonguss|Sludge Bomb|p1a: Amoonguss
+|-damage|p1a: Amoonguss|240\/432
+|
+|-heal|p2a: Amoonguss|318\/423|[from] item: Black Sludge
+|-heal|p1a: Amoonguss|267\/432|[from] item: Black Sludge
+|turn|33
+|
+|switch|p2a: Scrafty|Scrafty, M|112\/302 brn
+|move|p1a: Amoonguss|Foul Play|p2a: Scrafty
+|-resisted|p2a: Scrafty
+|-damage|p2a: Scrafty|94\/302 brn
+|
+|-heal|p1a: Amoonguss|294\/432|[from] item: Black Sludge
+|-damage|p2a: Scrafty|57\/302 brn|[from] brn
+|turn|34
+|
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|move|p2a: Scrafty|Knock Off|p1a: Skarmory
+|-damage|p1a: Skarmory|298\/334
+|-damage|p2a: Scrafty|7\/302 brn|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|-enditem|p1a: Skarmory|Rocky Helmet|[from] move: Knock Off|[of] p2a: Scrafty
+|
+|-damage|p2a: Scrafty|0 fnt|[from] brn
+|faint|p2a: Scrafty
+|
+|switch|p2a: Entei|Entei, shiny|224\/372
+|-ability|p2a: Entei|Pressure
+|turn|35
+|
+|move|p2a: Entei|Sacred Fire|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|46\/334
+|-status|p1a: Skarmory|brn
+|-damage|p2a: Entei|187\/372|[from] item: Life Orb
+|move|p1a: Skarmory|Counter|p2a: Entei
+|-damage|p2a: Entei|0 fnt
+|faint|p2a: Entei
+|
+|-damage|p1a: Skarmory|5\/334 brn|[from] brn
+|
+|switch|p2a: Flygon|Flygon, M|301\/301
+|turn|36
+|
+|move|p2a: Flygon|U-turn|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|faint|p1a: Skarmory
+|
+|switch|p2a: Amoonguss|Amoonguss, M|423\/423
+|
+|
+|switch|p1a: Charizard|Charizard-Mega-Y, F|203\/360 psn
+|-weather|SunnyDay
+|turn|37
+|
+|move|p1a: Charizard|Flamethrower|p2a: Amoonguss
+|-supereffective|p2a: Amoonguss
+|-damage|p2a: Amoonguss|0 fnt
+|faint|p2a: Amoonguss
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Charizard|158\/360 psn|[from] psn
+|
+|switch|p2a: Flygon|Flygon, M|301\/301
+|turn|38
+|
+|switch|p1a: Amoonguss|Amoonguss, M, shiny|432\/432
+|move|p2a: Flygon|Outrage|p1a: Amoonguss
+|-damage|p1a: Amoonguss|194\/432
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Amoonguss|221\/432|[from] item: Black Sludge
+|turn|39
+|
+|switch|p1a: Charizard|Charizard-Mega-Y, F|158\/360 psn
+|move|p2a: Flygon|Outrage|p1a: Charizard
+|-damage|p1a: Charizard|0 fnt
+|faint|p1a: Charizard
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p1a: Amoonguss|Amoonguss, M, shiny|365\/432
+|turn|40
+|
+|move|p2a: Flygon|Outrage|p1a: Amoonguss
+|-damage|p1a: Amoonguss|113\/432
+|move|p1a: Amoonguss|Spore|p2a: Flygon
+|-status|p2a: Flygon|slp
+|
+|-end|p2a: Flygon|rampage
+|-start|p2a: Flygon|confusion
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Amoonguss|140\/432|[from] item: Black Sludge
+|turn|41
+|
+|cant|p2a: Flygon|slp
+|move|p1a: Amoonguss|Giga Drain|p2a: Flygon
+|-damage|p2a: Flygon|202\/301 slp
+|-heal|p1a: Amoonguss|190\/432|[from] drain|[of] p2a: Flygon
+|
+|-weather|none
+|-heal|p1a: Amoonguss|217\/432|[from] item: Black Sludge
+|turn|42
+|
+|-curestatus|p2a: Flygon|slp
+|-activate|p2a: Flygon|confusion
+|-damage|p2a: Flygon|154\/301|[from] confusion
+|move|p1a: Amoonguss|Giga Drain|p2a: Flygon
+|-damage|p2a: Flygon|61\/301
+|-heal|p1a: Amoonguss|264\/432|[from] drain|[of] p2a: Flygon
+|
+|-heal|p1a: Amoonguss|291\/432|[from] item: Black Sludge
+|turn|43
+|
+|-activate|p2a: Flygon|confusion
+|-damage|p2a: Flygon|14\/301|[from] confusion
+|move|p1a: Amoonguss|Foul Play|p2a: Flygon
+|-damage|p2a: Flygon|0 fnt
+|faint|p2a: Flygon
+|
+|win|YunanTheWanderer
+|raw|Ladder updating...
+|raw|YunanTheWanderer's rating: 1414 &rarr; <strong>1439<\/strong><br \/>(+25 for winning)
+|raw|Dumb bass's rating: 1511 &rarr; <strong>1485<\/strong><br \/>(-26 for losing)
+|c|âYunanTheWanderer|gg
+|c|âYunanTheWanderer|wow
+|c|âDumb bass|gg
+|c|âDumb bass|gg
+|c|âYunanTheWanderer|im that good facing people 100 more rating then myself

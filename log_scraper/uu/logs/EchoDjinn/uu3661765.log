@@ -1,0 +1,245 @@
+|join|EchoDjinn
+|join|koult45
+|player|p1|EchoDjinn|170
+|player|p2|koult45|80
+|tier|UU
+|rated
+|rule|Sleep Clause
+|rule|Species Clause
+|rule|OHKO Clause
+|rule|Moody Clause
+|rule|Evasion Clause
+|clearpoke
+|poke|p1|Zapdos
+|poke|p1|Roserade, M
+|poke|p1|Snorlax, F
+|poke|p1|Chandelure, F
+|poke|p1|Flygon, F
+|poke|p1|Cobalion
+|poke|p2|Samurott, M
+|poke|p2|Stoutland, M
+|poke|p2|Simisear, M
+|poke|p2|Leavanny, M
+|poke|p2|Krookodile, M
+|poke|p2|Galvantula, M
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1: Cobalion|Cobalion| (100\/100)
+|switch|p2: Krookodile|Krookodile, M| (100\/100)
+|turn|1
+|callback|decision
+|
+|switch|p1: Flygon|Flygon, F| (100\/100)
+|move|p2: Krookodile|Superpower|p1: Flygon
+|-damage|p1: Flygon|53 (47\/100)
+|-unboost|p2: Krookodile|atk|1
+|-unboost|p2: Krookodile|def|1
+|
+|turn|2
+|callback|decision
+|
+|switch|p2: Stoutland|Stoutland, M| (100\/100)
+|move|p1: Flygon|U-turn|p2: Stoutland
+|-damage|p2: Stoutland|25 (75\/100)
+|callback|decision
+|
+|switch|p1: Cobalion|Cobalion| (100\/100)
+|
+|turn|3
+|callback|decision
+|
+|move|p1: Cobalion|Stealth Rock|p2: Stoutland
+|-sidestart|p2: koult45|move: Stealth Rock
+|move|p2: Stoutland|Superpower|p1: Cobalion
+|-supereffective|p1: Cobalion
+|-damage|p1: Cobalion|85 (15\/100)
+|-unboost|p2: Stoutland|atk|1
+|-unboost|p2: Stoutland|def|1
+|
+|-heal|p1: Cobalion|6 (21\/100)|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p2: Samurott|Samurott, M| (100\/100)
+|-damage|p2: Samurott|12 (88\/100)|[from] Stealth Rock
+|move|p1: Cobalion|Close Combat|p2: Samurott
+|-damage|p2: Samurott|54 (34\/100)
+|-unboost|p1: Cobalion|def|1
+|-unboost|p1: Cobalion|spd|1
+|
+|-heal|p1: Cobalion|6 (27\/100)|[from] item: Leftovers
+|-heal|p2: Samurott|6 (40\/100)|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1: Roserade|Roserade, M| (100\/100)
+|move|p2: Samurott|Aqua Jet|p1: Roserade
+|-resisted|p1: Roserade
+|-damage|p1: Roserade|14 (86\/100)
+|
+|-heal|p2: Samurott|6 (46\/100)|[from] item: Leftovers
+|-heal|p1: Roserade|6 (92\/100)|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p1: Roserade|Sleep Powder|p2: Samurott|[miss]
+|-miss|p1: Roserade
+|move|p2: Samurott|Ice Beam|p1: Roserade
+|-supereffective|p1: Roserade
+|-damage|p1: Roserade|76 (16\/100)
+|
+|-heal|p2: Samurott|6 (52\/100)|[from] item: Leftovers
+|-heal|p1: Roserade|6 (22\/100)|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p2: Galvantula|Galvantula, M| (100\/100)
+|-damage|p2: Galvantula|25 (75\/100)|[from] Stealth Rock
+|move|p1: Roserade|Giga Drain|p2: Galvantula
+|-resisted|p2: Galvantula
+|-damage|p2: Galvantula|32 (43\/100)
+|-heal|p1: Roserade|17 (39\/100)|[from] drain|[of] p2: Galvantula
+|
+|-heal|p1: Roserade|6 (45\/100)|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p1: Snorlax|Snorlax, F| (100\/100)
+|move|p2: Galvantula|Bug Buzz|p1: Snorlax
+|-damage|p1: Snorlax|25 (75\/100)
+|-unboost|p1: Snorlax|spd|1
+|-damage|p2: Galvantula|10 (33\/100)|[from] item: Life Orb
+|
+|-heal|p1: Snorlax|6 (81\/100)|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p2: Galvantula|Thunder|p1: Snorlax
+|-damage|p1: Snorlax|44 (37\/100)
+|-damage|p2: Galvantula|10 (23\/100)|[from] item: Life Orb
+|move|p1: Snorlax|Body Slam|p2: Galvantula
+|-damage|p2: Galvantula|23 (0\/100 fnt)
+|faint|p2: Galvantula
+|
+|-heal|p1: Snorlax|6 (43\/100)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2: Simisear|Simisear, M| (100\/100)
+|-damage|p2: Simisear|25 (75\/100)|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|switch|p1: Chandelure|Chandelure, F| (100\/100)
+|move|p2: Simisear|Grass Knot|p1: Chandelure
+|-crit|p1: Chandelure
+|-resisted|p1: Chandelure
+|-damage|p1: Chandelure|33 (67\/100)
+|-damage|p2: Simisear|10 (65\/100)|[from] item: Life Orb
+|
+|-heal|p1: Chandelure|6 (74\/100)|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p2: Simisear|Hidden Power|p1: Chandelure
+|-supereffective|p1: Chandelure
+|-damage|p1: Chandelure|73 (1\/100)
+|-damage|p2: Simisear|10 (55\/100)|[from] item: Life Orb
+|move|p1: Chandelure|Substitute|p1: Chandelure
+|-fail|p1: Chandelure|move: Substitute|[weak]
+|
+|-heal|p1: Chandelure|6 (7\/100)|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p1: Cobalion|Cobalion| (27\/100)
+|move|p2: Simisear|Hidden Power|p1: Cobalion
+|-supereffective|p1: Cobalion
+|-damage|p1: Cobalion|27 (0\/100 fnt)
+|-damage|p2: Simisear|10 (45\/100)|[from] item: Life Orb
+|faint|p1: Cobalion
+|
+|callback|decision
+|
+|switch|p1: Flygon|Flygon, F| (47\/100)
+|turn|13
+|callback|decision
+|
+|switch|p2: Samurott|Samurott, M| (52\/100)
+|-damage|p2: Samurott|12 (40\/100)|[from] Stealth Rock
+|move|p1: Flygon|Earthquake|p2: Samurott
+|-damage|p2: Samurott|40 (0\/100 fnt)
+|faint|p2: Samurott
+|
+|callback|decision
+|
+|switch|p2: Krookodile|Krookodile, M| (100\/100)
+|-damage|p2: Krookodile|6 (94\/100)|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|move|p2: Krookodile|Pursuit|p1: Flygon
+|-damage|p1: Flygon|47 (0\/100 fnt)
+|faint|p1: Flygon
+|-boost|p2: Krookodile|atk|1|[from] ability: Moxie
+|
+|callback|decision
+The restart or kick was interrupted by activity.
+|
+|switch|p1: Snorlax|Snorlax, F| (43\/100)
+|turn|15
+|callback|decision
+|
+|move|p2: Krookodile|Earthquake|p1: Snorlax
+|-enditem|p2: Krookodile|Ground Gem|[from] gem|[move] Earthquake
+|-damage|p1: Snorlax|43 (0\/100 fnt)
+|faint|p1: Snorlax
+|-boost|p2: Krookodile|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|switch|p1: Roserade|Roserade, M| (45\/100)
+|turn|16
+|callback|decision
+|
+|move|p2: Krookodile|Earthquake|p1: Roserade
+|-damage|p1: Roserade|45 (0\/100 fnt)
+|faint|p1: Roserade
+|-boost|p2: Krookodile|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|switch|p1: Zapdos|Zapdos| (100\/100)
+|-ability|p1: Zapdos|Pressure
+|turn|17
+|callback|decision
+|
+|move|p2: Krookodile|Pursuit|p1: Zapdos
+|-damage|p1: Zapdos|36 (64\/100)
+|move|p1: Zapdos|Hidden Power|p2: Krookodile
+|-supereffective|p2: Krookodile
+|-damage|p2: Krookodile|52 (42\/100)
+|
+|-heal|p1: Zapdos|6 (70\/100)|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p2: Krookodile|Superpower|p1: Zapdos
+|-crit|p1: Zapdos
+|-resisted|p1: Zapdos
+|-damage|p1: Zapdos|70 (0\/100 fnt)
+|-unboost|p2: Krookodile|atk|1
+|-unboost|p2: Krookodile|def|1
+|faint|p1: Zapdos
+|-boost|p2: Krookodile|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|-message|EchoDjinn forfeited.
+|
+|win|koult45
+|chatmsg-raw|Ladder updating...
+|raw|EchoDjinn's rating: 1495 &rarr; <strong>1452<\/strong><br \/>(-43 for losing)
+|raw|koult45's rating: 1338 &rarr; <strong>1389<\/strong><br \/>(+51 for winning)
+|leave|EchoDjinn
+|player|p1

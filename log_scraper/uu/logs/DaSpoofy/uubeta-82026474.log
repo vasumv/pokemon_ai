@@ -1,0 +1,257 @@
+|join|DaSpoofy
+|join|duekyy
+|player|p1|DaSpoofy|265
+|player|p2|duekyy|115
+|gametype|singles
+|gen|6
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Gardevoir, F, shiny
+|poke|p1|Medicham, F
+|poke|p1|Bisharp, F, shiny
+|poke|p1|Zapdos
+|poke|p1|Ariados, F, shiny
+|poke|p1|Arcanine, F, shiny
+|poke|p2|Scolipede, F, shiny
+|poke|p2|Latias, F
+|poke|p2|Keldeo
+|poke|p2|Swampert, M
+|poke|p2|Manectric, M
+|poke|p2|Metagross
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Ariados|Ariados, F, shiny|281\/281
+|switch|p2a: Manectric|Manectric, M|286\/286
+|turn|1
+|callback|decision
+|
+|-formechange|p2a: Manectric|Manectric-Mega
+|message|Manectric has Mega Evolved into Mega Manectric!
+|-ability|p2a: Manectric|Intimidate|[of] p1a: Ariados
+|-unboost|p1a: Ariados|atk|1
+|move|p2a: Manectric|Flamethrower|p1a: Ariados
+|-crit|p1a: Ariados
+|-supereffective|p1a: Ariados
+|-enditem|p1a: Ariados|Focus Sash
+|-damage|p1a: Ariados|1\/281
+|move|p1a: Ariados|Sticky Web|p2a: Manectric
+|-sidestart|p2: duekyy|move: Sticky Web
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Arcanine|Arcanine, F, shiny|321\/321
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Manectric
+|-unboost|p2a: Manectric|atk|1
+|move|p2a: Manectric|Thunderbolt|p1a: Arcanine
+|-damage|p1a: Arcanine|104\/321
+|
+|-heal|p1a: Arcanine|124\/321|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p1a: Gardevoir|Gardevoir, F, shiny|340\/340
+|-ability|p1a: Gardevoir|Intimidate|[from] ability: Trace|[of] p2a: Manectric
+|-ability|p1a: Gardevoir|Intimidate|[of] p2a: Manectric
+|-unboost|p2a: Manectric|atk|1
+|move|p2a: Manectric|Thunderbolt|p1a: Gardevoir
+|-damage|p1a: Gardevoir|228\/340
+|-status|p1a: Gardevoir|par
+|
+|-heal|p1a: Gardevoir|249\/340 par|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Manectric|Volt Switch|p1a: Gardevoir
+|-damage|p1a: Gardevoir|164\/340 par
+|callback|decision
+|
+|switch|p2a: Metagross|Metagross|364\/364
+|-activate|p2a: Metagross|move: Sticky Web
+|-fail|p2a: Metagross|unboost|[from] ability: Clear Body|[of] p2a: Metagross
+|move|p1a: Gardevoir|Will-O-Wisp|p2a: Metagross
+|-status|p2a: Metagross|brn
+|
+|-heal|p1a: Gardevoir|185\/340 par|[from] item: Leftovers
+|-damage|p2a: Metagross|319\/364 brn|[from] brn
+|turn|5
+|callback|decision
+|
+|switch|p1a: Zapdos|Zapdos|384\/384
+|-ability|p1a: Zapdos|Pressure
+|move|p2a: Metagross|Meteor Mash|p1a: Zapdos
+|-crit|p1a: Zapdos
+|-resisted|p1a: Zapdos
+|-damage|p1a: Zapdos|333\/384
+|-boost|p2a: Metagross|atk|1
+|
+|-heal|p1a: Zapdos|357\/384|[from] item: Leftovers
+|-damage|p2a: Metagross|274\/364 brn|[from] brn
+|turn|6
+|callback|decision
+|
+|switch|p2a: Latias|Latias, F|364\/364
+|move|p1a: Zapdos|Heat Wave|p2a: Latias
+|-miss|p1a: Zapdos|p2a: Latias
+|
+|-heal|p1a: Zapdos|381\/384|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p2a: Swampert|Swampert, M|404\/404
+|-activate|p2a: Swampert|move: Sticky Web
+|-unboost|p2a: Swampert|spe|1
+|move|p1a: Zapdos|Toxic|p2a: Swampert|[miss]
+|-miss|p1a: Zapdos|p2a: Swampert
+|
+|-heal|p1a: Zapdos|384\/384|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p1a: Zapdos|Toxic|p2a: Swampert
+|-status|p2a: Swampert|tox
+|move|p2a: Swampert|Stealth Rock|p1a: Zapdos
+|-sidestart|p1: DaSpoofy|move: Stealth Rock
+|
+|-damage|p2a: Swampert|379\/404 tox|[from] psn
+|turn|9
+|callback|decision
+|
+|move|p1a: Zapdos|Heat Wave|p2a: Swampert
+|-resisted|p2a: Swampert
+|-damage|p2a: Swampert|333\/404 tox
+|move|p2a: Swampert|Roar|p1a: Zapdos
+|drag|p1a: Medicham|Medicham, F|261\/261
+|-damage|p1a: Medicham|245\/261|[from] Stealth Rock
+|
+|-heal|p2a: Swampert|358\/404 tox|[from] item: Leftovers
+|-damage|p2a: Swampert|308\/404 tox|[from] psn
+|turn|10
+|callback|decision
+|
+|-formechange|p1a: Medicham|Medicham-Mega
+|message|Medicham has Mega Evolved into Mega Medicham!
+|move|p1a: Medicham|Drain Punch|p2a: Swampert
+|-damage|p2a: Swampert|125\/404 tox
+|-heal|p1a: Medicham|261\/261|[from] drain|[of] p2a: Swampert
+|move|p2a: Swampert|Scald|p1a: Medicham
+|-damage|p1a: Medicham|117\/261
+|
+|-heal|p2a: Swampert|150\/404 tox|[from] item: Leftovers
+|-damage|p2a: Swampert|75\/404 tox|[from] psn
+|turn|11
+|callback|decision
+|
+|switch|p2a: Latias|Latias, F|364\/364
+|move|p1a: Medicham|Psycho Cut|p2a: Latias
+|-resisted|p2a: Latias
+|-damage|p2a: Latias|245\/364
+|
+|-heal|p2a: Latias|267\/364|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Medicham|Ice Punch|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|0 fnt
+|faint|p2a: Latias
+|
+|callback|decision
+|
+|switch|p2a: Manectric|Manectric, M|286\/286
+|-formechange|p2a: Manectric|Manectric-Mega
+|-activate|p2a: Manectric|move: Sticky Web
+|-unboost|p2a: Manectric|spe|1
+|-ability|p2a: Manectric|Intimidate|[of] p1a: Medicham
+|-unboost|p1a: Medicham|atk|1
+|turn|13
+|callback|decision
+|
+|switch|p1a: Ariados|Ariados, F, shiny|1\/281
+|-damage|p1a: Ariados|0 fnt|[from] Stealth Rock
+|faint|p1a: Ariados
+|switch|p2a: Swampert|Swampert, M|75\/404 tox
+|-activate|p2a: Swampert|move: Sticky Web
+|-unboost|p2a: Swampert|spe|1
+|
+|-heal|p2a: Swampert|100\/404 tox|[from] item: Leftovers
+|-damage|p2a: Swampert|75\/404 tox|[from] psn
+|callback|decision
+|
+|switch|p1a: Arcanine|Arcanine, F, shiny|124\/321
+|-damage|p1a: Arcanine|44\/321|[from] Stealth Rock
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Swampert
+|-unboost|p2a: Swampert|atk|1
+|turn|14
+|callback|decision
+|
+|move|p1a: Arcanine|Extreme Speed|p2a: Swampert
+|-damage|p2a: Swampert|0 fnt
+|faint|p2a: Swampert
+|
+|-heal|p1a: Arcanine|64\/321|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Manectric|Manectric, M|286\/286
+|-formechange|p2a: Manectric|Manectric-Mega
+|-activate|p2a: Manectric|move: Sticky Web
+|-unboost|p2a: Manectric|spe|1
+|-ability|p2a: Manectric|Intimidate|[of] p1a: Arcanine
+|-unboost|p1a: Arcanine|atk|1
+|turn|15
+|callback|decision
+|
+|move|p1a: Arcanine|Flare Blitz|p2a: Manectric
+|-crit|p2a: Manectric
+|-damage|p2a: Manectric|0 fnt
+|-damage|p1a: Arcanine|0 fnt|[from] recoil|[of] p2a: Manectric
+|faint|p2a: Manectric
+|faint|p1a: Arcanine
+|
+|callback|decision
+|
+|switch|p1a: Medicham|Medicham, F|117\/261
+|-formechange|p1a: Medicham|Medicham-Mega
+|-damage|p1a: Medicham|101\/261|[from] Stealth Rock
+|switch|p2a: Metagross|Metagross|274\/364 brn
+|-activate|p2a: Metagross|move: Sticky Web
+|-fail|p2a: Metagross|unboost|[from] ability: Clear Body|[of] p2a: Metagross
+|turn|16
+|callback|decision
+|
+|move|p1a: Medicham|Drain Punch|p2a: Metagross
+|-damage|p2a: Metagross|84\/364 brn
+|-heal|p1a: Medicham|196\/261|[from] drain|[of] p2a: Metagross
+|move|p2a: Metagross|Meteor Mash|p1a: Medicham
+|-damage|p1a: Medicham|100\/261
+|
+|-damage|p2a: Metagross|39\/364 brn|[from] brn
+|turn|17
+|callback|decision
+|
+|move|p2a: Metagross|Bullet Punch|p1a: Medicham
+|-damage|p1a: Medicham|52\/261
+|move|p1a: Medicham|Drain Punch|p2a: Metagross
+|-damage|p2a: Metagross|0 fnt
+|-heal|p1a: Medicham|72\/261|[from] drain|[of] p2a: Metagross
+|faint|p2a: Metagross
+|
+|callback|decision
+|-message|duekyy forfeited.
+|
+|win|DaSpoofy
+|raw|Ladder updating...
+|leave|duekyy
+|player|p2
+|raw|DaSpoofy's rating: 1424 &rarr; <strong>1449<\/strong><br \/>(+25 for winning)
+|raw|duekyy's rating: 1423 &rarr; <strong>1398<\/strong><br \/>(-25 for losing)

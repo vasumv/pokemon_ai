@@ -1,0 +1,380 @@
+|join|Brock's Blue Balls
+|join|Pleasure Kitten
+|player|p1|Brock's Blue Balls|154
+|player|p2|Pleasure Kitten|39
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Nidoqueen, F
+|poke|p1|Mew
+|poke|p1|Slowbro, F
+|poke|p1|Sableye, F
+|poke|p1|Dugtrio, M
+|poke|p1|Florges, F
+|poke|p2|Blissey, F
+|poke|p2|Slowbro, M
+|poke|p2|Florges, F
+|poke|p2|Forretress, F
+|poke|p2|Meloetta
+|poke|p2|Victini
+|rule|Baton Pass Clause: Limit 3 pokemon knowing Baton Pass
+|teampreview
+|join|LTI Cyrus
+|
+|start
+|switch|p1a: Dugtrio|Dugtrio, M|212\/212
+|switch|p2a: Slowbro|Slowbro, M|394\/394
+|turn|1
+|
+|switch|p1a: Mew|Mew|404\/404
+|move|p2a: Slowbro|Yawn|p1a: Mew
+|-start|p1a: Mew|move: Yawn|[of] p2a: Slowbro
+|
+|turn|2
+|join|King Brobat
+|
+|move|p1a: Mew|Knock Off|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|292\/394
+|-damage|p1a: Mew|337\/404|[from] item: Rocky Helmet|[of] p2a: Slowbro
+|-enditem|p2a: Slowbro|Rocky Helmet|[from] move: Knock Off|[of] p1a: Mew
+|move|p2a: Slowbro|Scald|p1a: Mew
+|-damage|p1a: Mew|261\/404
+|
+|-status|p1a: Mew|slp
+|-heal|p1a: Mew|286\/404 slp|[from] item: Leftovers
+|turn|3
+|
+|cant|p1a: Mew|slp
+|move|p2a: Slowbro|Scald|p1a: Mew
+|-damage|p1a: Mew|211\/404 slp
+|
+|-heal|p1a: Mew|236\/404 slp|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Victini|Victini|341\/341
+|cant|p1a: Mew|slp
+|
+|-heal|p1a: Mew|261\/404 slp|[from] item: Leftovers
+|turn|5
+|
+|switch|p1a: Slowbro|Slowbro, F|394\/394
+|move|p2a: Victini|V-create|p1a: Slowbro
+|-resisted|p1a: Slowbro
+|-damage|p1a: Slowbro|262\/394
+|-damage|p2a: Victini|285\/341|[from] item: Rocky Helmet|[of] p1a: Slowbro
+|-unboost|p2a: Victini|def|1
+|-unboost|p2a: Victini|spd|1
+|-unboost|p2a: Victini|spe|1
+|
+|turn|6
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|move|p1a: Slowbro|Scald|p2a: Blissey
+|-damage|p2a: Blissey|645\/714
+|
+|-heal|p2a: Blissey|689\/714|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|384\/384
+|move|p2a: Blissey|Stealth Rock|p1a: Nidoqueen
+|-sidestart|p1: Brock's Blue Balls|move: Stealth Rock
+|
+|-heal|p2a: Blissey|714\/714|[from] item: Leftovers
+|turn|8
+|
+|switch|p2a: Victini|Victini|285\/341
+|move|p1a: Nidoqueen|Stealth Rock|p2a: Victini
+|-sidestart|p2: Pleasure Kitten|move: Stealth Rock
+|
+|turn|9
+|
+|move|p2a: Victini|U-turn|p1a: Nidoqueen
+|-resisted|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|339\/384
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|-damage|p2a: Blissey|625\/714|[from] Stealth Rock
+|move|p1a: Nidoqueen|Earth Power|p2a: Blissey
+|-damage|p2a: Blissey|538\/714
+|
+|-heal|p1a: Nidoqueen|363\/384|[from] item: Leftovers
+|-heal|p2a: Blissey|582\/714|[from] item: Leftovers
+|turn|10
+|
+|switch|p2a: Victini|Victini|285\/341
+|-damage|p2a: Victini|200\/341|[from] Stealth Rock
+|move|p1a: Nidoqueen|Toxic Spikes|p2a: Victini
+|-sidestart|p2: Pleasure Kitten|move: Toxic Spikes
+|
+|-heal|p1a: Nidoqueen|384\/384|[from] item: Leftovers
+|turn|11
+|
+|move|p2a: Victini|Trick|p1a: Nidoqueen
+|-activate|p2a: Victini|move: Trick|[of] p1a: Nidoqueen
+|-item|p1a: Nidoqueen|Choice Band|[from] move: Trick
+|-item|p2a: Victini|Leftovers|[from] move: Trick
+|move|p1a: Nidoqueen|Earth Power|p2a: Victini
+|-crit|p2a: Victini
+|-supereffective|p2a: Victini
+|-damage|p2a: Victini|0 fnt
+|faint|p2a: Victini
+|
+|
+|switch|p2a: Blissey|Blissey, F|582\/714
+|-status|p2a: Blissey|psn
+|-damage|p2a: Blissey|493\/714 psn|[from] Stealth Rock
+|turn|12
+|
+|switch|p1a: Dugtrio|Dugtrio, M|212\/212
+|-damage|p1a: Dugtrio|199\/212|[from] Stealth Rock
+|move|p2a: Blissey|Seismic Toss|p1a: Dugtrio
+|-damage|p1a: Dugtrio|99\/212
+|
+|-heal|p2a: Blissey|537\/714 psn|[from] item: Leftovers
+|-damage|p2a: Blissey|448\/714 psn|[from] psn
+|turn|13
+|
+|move|p1a: Dugtrio|Earthquake|p2a: Blissey
+|-damage|p2a: Blissey|67\/714 psn
+|move|p2a: Blissey|Seismic Toss|p1a: Dugtrio
+|-damage|p1a: Dugtrio|0 fnt
+|faint|p1a: Dugtrio
+|
+|-heal|p2a: Blissey|111\/714 psn|[from] item: Leftovers
+|-damage|p2a: Blissey|22\/714 psn|[from] psn
+|join|kidd timelapse
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|-damage|p1a: Florges|315\/360|[from] Stealth Rock
+|turn|14
+|
+|move|p1a: Florges|Moonblast|p2a: Blissey
+|-damage|p2a: Blissey|0 fnt
+|faint|p2a: Blissey
+|
+|-heal|p1a: Florges|337\/360|[from] item: Leftovers
+|
+|switch|p2a: Forretress|Forretress, F|354\/354
+|-damage|p2a: Forretress|310\/354|[from] Stealth Rock
+|turn|15
+|
+|switch|p1a: Sableye|Sableye, F|302\/302
+|-damage|p1a: Sableye|265\/302|[from] Stealth Rock
+|move|p2a: Forretress|Spikes|p1a: Sableye
+|-sidestart|p1: Brock's Blue Balls|Spikes
+|
+|-heal|p1a: Sableye|283\/302|[from] item: Leftovers
+|-heal|p2a: Forretress|332\/354|[from] item: Leftovers
+|turn|16
+|
+|move|p1a: Sableye|Taunt|p2a: Forretress
+|-start|p2a: Forretress|move: Taunt
+|cant|p2a: Forretress|move: Taunt|Spikes
+|
+|-heal|p1a: Sableye|301\/302|[from] item: Leftovers
+|-heal|p2a: Forretress|354\/354|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Sableye|Knock Off|p2a: Forretress
+|-damage|p2a: Forretress|303\/354
+|-enditem|p2a: Forretress|Leftovers|[from] move: Knock Off|[of] p1a: Sableye
+|move|p2a: Forretress|Volt Switch|p1a: Sableye
+|-damage|p1a: Sableye|268\/302
+|
+|switch|p2a: Florges|Florges, F|360\/360
+|-damage|p2a: Florges|315\/360|[from] Stealth Rock
+|-status|p2a: Florges|psn
+|
+|-heal|p2a: Florges|337\/360 psn|[from] item: Leftovers
+|-heal|p1a: Sableye|286\/302|[from] item: Leftovers
+|-damage|p2a: Florges|292\/360 psn|[from] psn
+|turn|18
+|
+|switch|p2a: Forretress|Forretress, F|303\/354
+|-damage|p2a: Forretress|259\/354|[from] Stealth Rock
+|switch|p1a: Slowbro|Slowbro, F|393\/394
+|-damage|p1a: Slowbro|344\/394|[from] Spikes
+|-damage|p1a: Slowbro|295\/394|[from] Stealth Rock
+|
+|turn|19
+|
+|move|p2a: Forretress|Spikes|p1a: Slowbro
+|-sidestart|p1: Brock's Blue Balls|Spikes
+|move|p1a: Slowbro|Calm Mind|p1a: Slowbro
+|-boost|p1a: Slowbro|spa|1
+|-boost|p1a: Slowbro|spd|1
+|
+|turn|20
+|
+|move|p2a: Forretress|Rapid Spin|p1a: Slowbro
+|-damage|p1a: Slowbro|286\/394
+|-damage|p2a: Forretress|200\/354|[from] item: Rocky Helmet|[of] p1a: Slowbro
+|-sideend|p2: Pleasure Kitten|Toxic Spikes|[from] move: Rapid Spin|[of] p2a: Forretress
+|-sideend|p2: Pleasure Kitten|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Forretress
+|move|p1a: Slowbro|Scald|p2a: Forretress
+|-damage|p2a: Forretress|0 fnt
+|faint|p2a: Forretress
+|
+|
+|switch|p2a: Meloetta|Meloetta|342\/342
+|turn|21
+|
+|move|p2a: Meloetta|Relic Song|p1a: Slowbro
+|-damage|p1a: Slowbro|164\/394
+|-message|Sleep Clause Mod activated.
+|-formechange|p2a: Meloetta|Meloetta-Pirouette
+|-damage|p2a: Meloetta|308\/342|[from] item: Life Orb
+|move|p1a: Slowbro|Psyshock|p2a: Meloetta
+|-supereffective|p2a: Meloetta
+|-damage|p2a: Meloetta|18\/342
+|
+|turn|22
+|
+|move|p2a: Meloetta|Knock Off|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|0 fnt
+|-damage|p2a: Meloetta|0 fnt|[from] item: Rocky Helmet|[of] p1a: Slowbro
+|faint|p1a: Slowbro
+|faint|p2a: Meloetta
+|
+|
+|switch|p2a: Florges|Florges, F|292\/360 psn
+|switch|p1a: Florges|Florges, F|337\/360
+|-damage|p1a: Florges|292\/360|[from] Stealth Rock
+|-damage|p1a: Florges|232\/360|[from] Spikes
+|turn|23
+|
+|move|p2a: Florges|Aromatherapy|p2a: Florges
+|-cureteam|p2a: Florges|[from] move: Aromatherapy
+|move|p1a: Florges|Aromatherapy|p1a: Florges
+|-cureteam|p1a: Florges|[from] move: Aromatherapy
+|
+|-heal|p2a: Florges|314\/360|[from] item: Leftovers
+|-heal|p1a: Florges|254\/360|[from] item: Leftovers
+|turn|24
+|
+|move|p2a: Florges|Moonblast|p1a: Florges
+|-damage|p1a: Florges|173\/360
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p2a: Florges|336\/360|[from] item: Leftovers
+|-heal|p1a: Florges|195\/360|[from] item: Leftovers
+|turn|25
+|
+|switch|p1a: Mew|Mew|261\/404
+|-damage|p1a: Mew|211\/404|[from] Stealth Rock
+|-damage|p1a: Mew|144\/404|[from] Spikes
+|move|p2a: Florges|Moonblast|p1a: Mew
+|-crit|p1a: Mew
+|-damage|p1a: Mew|3\/404
+|
+|-heal|p1a: Mew|183\/404|[from] move: Wish|[wisher] Florges
+|-heal|p1a: Mew|208\/404|[from] item: Leftovers
+|-heal|p2a: Florges|358\/360|[from] item: Leftovers
+|turn|26
+|chat|Pleasure Kitten|lol
+|chat|Pleasure Kitten|i'd feel bad if that killed x)
+|
+|switch|p2a: Slowbro|Slowbro, M|394\/394
+|move|p1a: Mew|Defog|p2a: Slowbro
+|-unboost|p2a: Slowbro|evasion|1
+|-sideend|p1: Brock's Blue Balls|Spikes|[from] move: Defog|[of] p1a: Mew
+|-sideend|p1: Brock's Blue Balls|Stealth Rock|[from] move: Defog|[of] p1a: Mew
+|
+|-heal|p1a: Mew|233\/404|[from] item: Leftovers
+|turn|27
+|chat|Brock's Blue Balls|me too
+|
+|move|p1a: Mew|Will-O-Wisp|p2a: Slowbro
+|-status|p2a: Slowbro|brn
+|move|p2a: Slowbro|Scald|p1a: Mew
+|-damage|p1a: Mew|169\/404
+|-status|p1a: Mew|brn
+|
+|-heal|p1a: Mew|194\/404 brn|[from] item: Leftovers
+|-damage|p1a: Mew|144\/404 brn|[from] brn
+|-damage|p2a: Slowbro|345\/394 brn|[from] brn
+|turn|28
+|
+|move|p1a: Mew|Roost|p1a: Mew
+|-heal|p1a: Mew|346\/404 brn
+|move|p2a: Slowbro|Yawn|p1a: Mew
+|-fail|p1a: Mew
+|
+|-heal|p1a: Mew|371\/404 brn|[from] item: Leftovers
+|-damage|p1a: Mew|321\/404 brn|[from] brn
+|-damage|p2a: Slowbro|296\/394 brn|[from] brn
+|turn|29
+|
+|move|p1a: Mew|Knock Off|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|258\/394 brn
+|move|p2a: Slowbro|Slack Off|p2a: Slowbro
+|-heal|p2a: Slowbro|394\/394 brn
+|
+|-heal|p1a: Mew|346\/404 brn|[from] item: Leftovers
+|-damage|p1a: Mew|296\/404 brn|[from] brn
+|-damage|p2a: Slowbro|345\/394 brn|[from] brn
+|turn|30
+|leave|kidd timelapse
+|
+|switch|p1a: Florges|Florges, F|195\/360
+|move|p2a: Slowbro|Scald|p1a: Florges
+|-damage|p1a: Florges|135\/360
+|
+|-heal|p1a: Florges|157\/360|[from] item: Leftovers
+|-damage|p2a: Slowbro|296\/394 brn|[from] brn
+|turn|31
+|join|kidd timelapse
+|
+|move|p1a: Florges|Aromatherapy|p1a: Florges
+|-cureteam|p1a: Florges|[from] move: Aromatherapy
+|move|p2a: Slowbro|Yawn|p1a: Florges
+|-start|p1a: Florges|move: Yawn|[of] p2a: Slowbro
+|
+|-heal|p1a: Florges|179\/360|[from] item: Leftovers
+|-damage|p2a: Slowbro|247\/394 brn|[from] brn
+|turn|32
+|chat|LTI Cyrus|should have set up the 6x defog on slowbro to hit it with an ohko move imo
+|
+|move|p1a: Florges|Wish|p1a: Florges
+|move|p2a: Slowbro|Psyshock|p1a: Florges
+|-damage|p1a: Florges|88\/360
+|
+|-status|p1a: Florges|slp
+|-heal|p1a: Florges|110\/360 slp|[from] item: Leftovers
+|-damage|p2a: Slowbro|198\/394 brn|[from] brn
+|turn|33
+|
+|cant|p1a: Florges|slp
+|move|p2a: Slowbro|Psyshock|p1a: Florges
+|-damage|p1a: Florges|10\/360 slp
+|
+|-heal|p1a: Florges|190\/360 slp|[from] move: Wish|[wisher] Florges
+|-heal|p1a: Florges|212\/360 slp|[from] item: Leftovers
+|-damage|p2a: Slowbro|149\/394 brn|[from] brn
+|turn|34
+|chat|Pleasure Kitten|ya for sure
+|chat|Pleasure Kitten|k i need cm over yawn lol
+|chat|Pleasure Kitten|gg
+|chat|Brock's Blue Balls|gg
+|-message|Pleasure Kitten forfeited.
+|
+|win|Brock's Blue Balls
+|raw|Ladder updating...
+|leave|Pleasure Kitten
+|player|p2
+|leave|LTI Cyrus
+|leave|kidd timelapse
+|raw|Brock&apos;s Blue Balls's rating: 1535 &rarr; <strong>1561<\/strong><br \/>(+26 for winning)
+|raw|Pleasure Kitten's rating: 1635 &rarr; <strong>1610<\/strong><br \/>(-25 for losing)

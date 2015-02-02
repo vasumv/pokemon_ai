@@ -1,0 +1,334 @@
+|join|lapraz
+|join|Bob the Wut
+|player|p1|lapraz|157
+|player|p2|Bob the Wut|23
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Blissey, F
+|poke|p1|Steelix, F
+|poke|p1|Tentacruel, F
+|poke|p1|Goodra, M
+|poke|p1|Jellicent, F
+|poke|p1|Chesnaught, M
+|poke|p2|Jirachi
+|poke|p2|Suicune
+|poke|p2|Lucario, M
+|poke|p2|Swampert, F
+|poke|p2|Crobat, F
+|poke|p2|Machamp, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Chesnaught|Chesnaught, M|380\/380
+|switch|p2a: Machamp|Machamp, M|321\/321
+|turn|1
+|c|âBob the Wut|fk
+|
+|move|p2a: Machamp|Knock Off|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|325\/380
+|-enditem|p1a: Chesnaught|Leftovers|[from] move: Knock Off|[of] p2a: Machamp
+|move|p1a: Chesnaught|Leech Seed|p2a: Machamp
+|-start|p2a: Machamp|move: Leech Seed
+|
+|-damage|p2a: Machamp|281\/321|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|365\/380|[silent]
+|turn|2
+|
+|switch|p2a: Crobat|Crobat, F|325\/325
+|move|p1a: Chesnaught|Spikes|p2a: Crobat
+|-sidestart|p2: Bob the Wut|Spikes
+|
+|turn|3
+|
+|switch|p1a: Steelix|Steelix, F|354\/354
+|move|p2a: Crobat|Defog|p1a: Steelix
+|-unboost|p1a: Steelix|evasion|1
+|-sideend|p2: Bob the Wut|Spikes|[from] move: Defog|[of] p2a: Crobat
+|
+|turn|4
+|join|Keronian
+|
+|switch|p2a: Swampert|Swampert, F|404\/404
+|detailschange|p1a: Steelix|Steelix-Mega, F
+|-mega|p1a: Steelix|Steelix|Steelixite
+|move|p1a: Steelix|Stealth Rock|p2a: Swampert
+|-sidestart|p2: Bob the Wut|move: Stealth Rock
+|
+|turn|5
+|
+|switch|p1a: Chesnaught|Chesnaught, M|365\/380
+|move|p2a: Swampert|Scald|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|316\/380
+|
+|turn|6
+|
+|switch|p2a: Crobat|Crobat, F|325\/325
+|-damage|p2a: Crobat|244\/325|[from] Stealth Rock
+|move|p1a: Chesnaught|Leech Seed|p2a: Crobat
+|-start|p2a: Crobat|move: Leech Seed
+|
+|-heal|p2a: Crobat|264\/325|[from] item: Black Sludge
+|-damage|p2a: Crobat|224\/325|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|356\/380|[silent]
+|turn|7
+|
+|switch|p1a: Jellicent|Jellicent, F|404\/404
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|325\/325
+|
+|-damage|p2a: Crobat|285\/325|[from] Leech Seed|[of] p1a: Jellicent
+|turn|8
+|
+|switch|p2a: Machamp|Machamp, M|281\/321
+|-damage|p2a: Machamp|261\/321|[from] Stealth Rock
+|move|p1a: Jellicent|Scald|p2a: Machamp
+|-damage|p2a: Machamp|170\/321
+|
+|turn|9
+|
+|switch|p1a: Chesnaught|Chesnaught, M|356\/380
+|move|p2a: Machamp|Close Combat|p1a: Chesnaught
+|-damage|p1a: Chesnaught|148\/380
+|-unboost|p2a: Machamp|def|1
+|-unboost|p2a: Machamp|spd|1
+|
+|turn|10
+|
+|switch|p2a: Jirachi|Jirachi|341\/341
+|-damage|p2a: Jirachi|320\/341|[from] Stealth Rock
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-fail|p1a: Chesnaught
+|
+|turn|11
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-singleturn|p1a: Chesnaught|move: Protect
+|move|p2a: Jirachi|U-turn|p1a: Chesnaught
+|-activate|p1a: Chesnaught|move: Protect
+|-damage|p2a: Jirachi|278\/341|[from] Spiky Shield|[of] p1a: Chesnaught
+|
+|turn|12
+|
+|move|p2a: Jirachi|U-turn|p1a: Chesnaught
+|-damage|p1a: Chesnaught|105\/380
+|
+|switch|p2a: Crobat|Crobat, F|285\/325
+|-damage|p2a: Crobat|204\/325|[from] Stealth Rock
+|move|p1a: Chesnaught|Leech Seed|p2a: Crobat
+|-start|p2a: Crobat|move: Leech Seed
+|
+|-heal|p2a: Crobat|224\/325|[from] item: Black Sludge
+|-damage|p2a: Crobat|184\/325|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|145\/380|[silent]
+|turn|13
+|
+|switch|p2a: Lucario|Lucario, M|281\/281
+|-damage|p2a: Lucario|273\/281|[from] Stealth Rock
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-fail|p1a: Chesnaught
+|
+|turn|14
+|
+|switch|p1a: Jellicent|Jellicent, F|404\/404
+|move|p2a: Lucario|Swords Dance|p2a: Lucario
+|-boost|p2a: Lucario|atk|2
+|
+|turn|15
+|
+|move|p2a: Lucario|Iron Tail|p1a: Jellicent
+|-resisted|p1a: Jellicent
+|-damage|p1a: Jellicent|175\/404
+|-damage|p2a: Lucario|245\/281|[from] item: Life Orb
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Lucario|[miss]
+|-miss|p1a: Jellicent|p2a: Lucario
+|
+|-heal|p1a: Jellicent|200\/404|[from] item: Leftovers
+|turn|16
+|
+|switch|p1a: Tentacruel|Tentacruel, F|364\/364
+|move|p2a: Lucario|Iron Tail|p1a: Tentacruel
+|-crit|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|36\/364
+|-damage|p2a: Lucario|217\/281|[from] item: Life Orb
+|
+|-heal|p1a: Tentacruel|58\/364|[from] item: Black Sludge
+|turn|17
+|
+|switch|p1a: Jellicent|Jellicent, F|200\/404
+|move|p2a: Lucario|Close Combat|p1a: Jellicent
+|-immune|p1a: Jellicent|[msg]
+|
+|-heal|p1a: Jellicent|225\/404|[from] item: Leftovers
+|turn|18
+|
+|move|p2a: Lucario|Iron Tail|p1a: Jellicent
+|-resisted|p1a: Jellicent
+|-damage|p1a: Jellicent|7\/404
+|-unboost|p1a: Jellicent|def|1
+|-damage|p2a: Lucario|189\/281|[from] item: Life Orb
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Lucario
+|-status|p2a: Lucario|brn
+|
+|-heal|p1a: Jellicent|32\/404|[from] item: Leftovers
+|-damage|p2a: Lucario|154\/281 brn|[from] brn
+|turn|19
+|
+|switch|p1a: Chesnaught|Chesnaught, M|145\/380
+|move|p2a: Lucario|Iron Tail|p1a: Chesnaught
+|-damage|p1a: Chesnaught|0 fnt
+|-damage|p2a: Lucario|126\/281 brn|[from] item: Life Orb
+|faint|p1a: Chesnaught
+|
+|-damage|p2a: Lucario|91\/281 brn|[from] brn
+|
+|switch|p1a: Goodra|Goodra, M|384\/384
+|turn|20
+|
+|switch|p2a: Crobat|Crobat, F|184\/325
+|-damage|p2a: Crobat|103\/325|[from] Stealth Rock
+|move|p1a: Goodra|Earthquake|p2a: Crobat
+|-immune|p2a: Crobat|[msg]
+|
+|-heal|p2a: Crobat|123\/325|[from] item: Black Sludge
+|turn|21
+|
+|move|p2a: Crobat|Defog|p1a: Goodra
+|-unboost|p1a: Goodra|evasion|1
+|-sideend|p2: Bob the Wut|Stealth Rock|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Goodra|Dragon Tail|p2a: Crobat
+|-crit|p2a: Crobat
+|-damage|p2a: Crobat|0 fnt
+|faint|p2a: Crobat
+|
+|
+|switch|p2a: Jirachi|Jirachi|278\/341
+|turn|22
+|
+|switch|p1a: Steelix|Steelix-Mega, F|354\/354
+|move|p2a: Jirachi|U-turn|p1a: Steelix
+|-resisted|p1a: Steelix
+|-damage|p1a: Steelix|339\/354
+|
+|switch|p2a: Swampert|Swampert, F|404\/404
+|
+|turn|23
+|
+|move|p2a: Swampert|Earthquake|p1a: Steelix
+|-supereffective|p1a: Steelix
+|-damage|p1a: Steelix|223\/354
+|move|p1a: Steelix|Stealth Rock|p2a: Swampert
+|-sidestart|p2: Bob the Wut|move: Stealth Rock
+|
+|turn|24
+|
+|switch|p1a: Goodra|Goodra, M|384\/384
+|move|p2a: Swampert|Earthquake|p1a: Goodra
+|-damage|p1a: Goodra|272\/384
+|
+|-heal|p1a: Goodra|296\/384|[from] item: Leftovers
+|turn|25
+|
+|move|p2a: Swampert|Stealth Rock|p1a: Goodra
+|-sidestart|p1: lapraz|move: Stealth Rock
+|move|p1a: Goodra|Dragon Tail|p2a: Swampert
+|-crit|p2a: Swampert
+|-damage|p2a: Swampert|322\/404
+|drag|p2a: Lucario|Lucario, M|91\/281 brn
+|-damage|p2a: Lucario|83\/281 brn|[from] Stealth Rock
+|
+|-heal|p1a: Goodra|320\/384|[from] item: Leftovers
+|-damage|p2a: Lucario|48\/281 brn|[from] brn
+|turn|26
+|join|watfor
+|
+|switch|p2a: Swampert|Swampert, F|322\/404
+|-damage|p2a: Swampert|297\/404|[from] Stealth Rock
+|move|p1a: Goodra|Earthquake|p2a: Swampert
+|-crit|p2a: Swampert
+|-damage|p2a: Swampert|210\/404
+|
+|-heal|p1a: Goodra|344\/384|[from] item: Leftovers
+|-heal|p2a: Swampert|235\/404|[from] item: Leftovers
+|turn|27
+|
+|move|p2a: Swampert|Earthquake|p1a: Goodra
+|-damage|p1a: Goodra|235\/384
+|move|p1a: Goodra|Dragon Tail|p2a: Swampert
+|-damage|p2a: Swampert|175\/404
+|drag|p2a: Jirachi|Jirachi|278\/341
+|-damage|p2a: Jirachi|257\/341|[from] Stealth Rock
+|
+|-heal|p1a: Goodra|259\/384|[from] item: Leftovers
+|turn|28
+|
+|switch|p1a: Steelix|Steelix-Mega, F|223\/354
+|-damage|p1a: Steelix|212\/354|[from] Stealth Rock
+|move|p2a: Jirachi|Healing Wish|p2a: Jirachi
+|faint|p2a: Jirachi
+|
+|
+|switch|p2a: Lucario|Lucario, M|48\/281 brn
+|-heal|p2a: Lucario|281\/281|[from] move: Healing Wish
+|-damage|p2a: Lucario|273\/281|[from] Stealth Rock
+|turn|29
+|
+|move|p2a: Lucario|Close Combat|p1a: Steelix
+|-supereffective|p1a: Steelix
+|-damage|p1a: Steelix|0 fnt
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|-damage|p2a: Lucario|245\/281|[from] item: Life Orb
+|faint|p1a: Steelix
+|
+|
+|switch|p1a: Goodra|Goodra, M|259\/384
+|-damage|p1a: Goodra|211\/384|[from] Stealth Rock
+|turn|30
+|
+|move|p2a: Lucario|Close Combat|p1a: Goodra
+|-damage|p1a: Goodra|0 fnt
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|-damage|p2a: Lucario|217\/281|[from] item: Life Orb
+|faint|p1a: Goodra
+|
+|c|âBob the Wut|gg
+|join|Toge Power
+|c|âlapraz|gg
+|
+|switch|p1a: Tentacruel|Tentacruel, F|58\/364
+|-damage|p1a: Tentacruel|13\/364|[from] Stealth Rock
+|turn|31
+|
+|move|p2a: Lucario|Close Combat|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|0 fnt
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|-damage|p2a: Lucario|189\/281|[from] item: Life Orb
+|faint|p1a: Tentacruel
+|
+|-message|lapraz forfeited.
+|
+|win|Bob the Wut
+|raw|Ladder updating...
+|leave|lapraz
+|player|p1
+|leave|watfor
+|raw|lapraz's rating: 1715 &rarr; <strong>1688<\/strong><br \/>(-27 for losing)
+|raw|Bob the Wut's rating: 1585 &rarr; <strong>1612<\/strong><br \/>(+27 for winning)

@@ -1,0 +1,513 @@
+|join|TheAmphy
+|join|Valafar123âs Alt
+|player|p1|TheAmphy|102
+|player|p2|Valafar123âs Alt|109
+|gametype|singles
+|gen|6
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Manectric, F
+|poke|p1|Gourgeist-Super, M
+|poke|p1|Crawdaunt, M
+|poke|p1|Florges, F
+|poke|p1|Rhyperior, F
+|poke|p1|Dragalge, M
+|poke|p2|Magnezone
+|poke|p2|Noivern, M
+|poke|p2|Keldeo-Resolute
+|poke|p2|Mew
+|poke|p2|Kyurem
+|poke|p2|Victini
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Manectric|Manectric, F|281\/281
+|switch|p2a: Under the Truck|Mew|403\/403
+|turn|1
+|callback|decision
+|
+|-formechange|p1a: Manectric|Manectric-Mega
+|message|Manectric has Mega Evolved into Mega Manectric!
+|-ability|p1a: Manectric|Intimidate|[of] p2a: Under the Truck
+|-unboost|p2a: Under the Truck|atk|1
+|move|p1a: Manectric|Thunderbolt|p2a: Under the Truck
+|-damage|p2a: Under the Truck|246\/403
+|move|p2a: Under the Truck|Roost|p2a: Under the Truck
+|-heal|p2a: Under the Truck|403\/403
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Manectric|Volt Switch|p2a: Under the Truck
+|-damage|p2a: Under the Truck|270\/403
+|callback|decision
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Under the Truck|Will-O-Wisp|p1a: Florges
+|-status|p1a: Florges|brn
+|
+|-heal|p2a: Under the Truck|295\/403|[from] item: Leftovers
+|-damage|p1a: Florges|315\/360 brn|[from] brn
+|turn|3
+|callback|decision
+|
+|move|p2a: Under the Truck|U-turn|p1a: Florges
+|-resisted|p1a: Florges
+|-damage|p1a: Florges|292\/360 brn
+|callback|decision
+|
+|switch|p2a: 462 Teraflops|Magnezone|325\/325
+|move|p1a: Florges|Aromatherapy|p1a: Florges
+|-cureteam|p1a: Florges|[from] move: Aromatherapy
+|
+|-heal|p1a: Florges|314\/360|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: Dragalge|Dragalge, M|334\/334
+|move|p2a: 462 Teraflops|Volt Switch|p1a: Dragalge
+|-resisted|p1a: Dragalge
+|-damage|p1a: Dragalge|255\/334
+|callback|decision
+|
+|switch|p2a: David Bowie|Kyurem|391\/391
+|-ability|p2a: David Bowie|Pressure
+|
+|turn|5
+|callback|decision
+|
+|switch|p1a: Florges|Florges, F|314\/360
+|move|p2a: David Bowie|Substitute|p2a: David Bowie
+|-start|p2a: David Bowie|Substitute
+|-damage|p2a: David Bowie|294\/391
+|
+|-heal|p2a: David Bowie|318\/391|[from] item: Leftovers
+|-heal|p1a: Florges|336\/360|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: David Bowie|Ice Beam|p1a: Florges
+|-crit|p1a: Florges
+|-damage|p1a: Florges|195\/360
+|move|p1a: Florges|Moonblast|p2a: David Bowie
+|-supereffective|p2a: David Bowie
+|-end|p2a: David Bowie|Substitute
+|
+|-heal|p2a: David Bowie|342\/391|[from] item: Leftovers
+|-heal|p1a: Florges|217\/360|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p2a: V-Wheel! ~|Victini|341\/341
+|move|p1a: Florges|Moonblast|p2a: V-Wheel! ~
+|-resisted|p2a: V-Wheel! ~
+|-damage|p2a: V-Wheel! ~|281\/341
+|
+|-heal|p1a: Florges|239\/360|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: V-Wheel! ~|V-create|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-heal|p1a: Florges|261\/360|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p2a: Mood Swings|Keldeo-Resolute|323\/323
+|switch|p1a: Rhyperior|Rhyperior, F|433\/433
+|
+|turn|10
+|callback|decision
+|
+|switch|p1a: Florges|Florges, F|261\/360
+|move|p2a: Mood Swings|Surf|p1a: Florges
+|-damage|p1a: Florges|148\/360
+|-damage|p2a: Mood Swings|291\/323|[from] item: Life Orb
+|
+|-heal|p1a: Florges|170\/360|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p2a: V-Wheel! ~|Victini|281\/341
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p1a: Florges|192\/360|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: V-Wheel! ~|Zen Headbutt|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-heal|p1a: Florges|360\/360|[from] move: Wish|[wisher] Florges
+|turn|13
+|callback|decision
+|
+|switch|p1a: Rhyperior|Rhyperior, F|433\/433
+|move|p2a: V-Wheel! ~|Zen Headbutt|p1a: Rhyperior
+|-damage|p1a: Rhyperior|300\/433
+|
+|-heal|p1a: Rhyperior|327\/433|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p2a: Mood Swings|Keldeo-Resolute|291\/323
+|move|p1a: Rhyperior|Stealth Rock|p2a: Mood Swings
+|-sidestart|p2: Valafar123âs Alt|move: Stealth Rock
+|
+|-heal|p1a: Rhyperior|354\/433|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|switch|p2a: Under the Truck|Mew|295\/403
+|-damage|p2a: Under the Truck|245\/403|[from] Stealth Rock
+|switch|p1a: Florges|Florges, F|360\/360
+|
+|-heal|p2a: Under the Truck|270\/403|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p1a: Crawdaunt|Crawdaunt, M|268\/268
+|move|p2a: Under the Truck|Defog|p1a: Crawdaunt
+|-unboost|p1a: Crawdaunt|evasion|1
+|-sideend|p2: Valafar123âs Alt|Stealth Rock|[from] move: Defog|[of] p2a: Under the Truck
+|
+|-heal|p2a: Under the Truck|295\/403|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p2a: Under the Truck|Will-O-Wisp|p1a: Crawdaunt
+|-status|p1a: Crawdaunt|brn
+|move|p1a: Crawdaunt|Knock Off|p2a: Under the Truck
+|-supereffective|p2a: Under the Truck
+|-damage|p2a: Under the Truck|87\/403
+|-enditem|p2a: Under the Truck|Leftovers|[from] move: Knock Off|[of] p1a: Crawdaunt
+|-damage|p1a: Crawdaunt|242\/268 brn|[from] item: Life Orb
+|
+|-damage|p1a: Crawdaunt|209\/268 brn|[from] brn
+|turn|18
+|callback|decision
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Under the Truck|Roost|p2a: Under the Truck
+|-heal|p2a: Under the Truck|289\/403
+|
+|turn|19
+|callback|decision
+|
+|move|p2a: Under the Truck|U-turn|p1a: Florges
+|-resisted|p1a: Florges
+|-damage|p1a: Florges|321\/360
+|callback|decision
+|
+|switch|p2a: Echo|Noivern, M|311\/311
+|move|p1a: Florges|Aromatherapy|p1a: Florges
+|-cureteam|p1a: Florges|[from] move: Aromatherapy
+|
+|-heal|p1a: Florges|343\/360|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p2a: Echo|Switcheroo|p1a: Florges
+|-activate|p2a: Echo|move: Trick|[of] p1a: Florges
+|-item|p1a: Florges|Choice Scarf|[from] Trick
+|-item|p2a: Echo|Leftovers|[from] Trick
+|move|p1a: Florges|Moonblast|p2a: Echo
+|-supereffective|p2a: Echo
+|-damage|p2a: Echo|0 fnt
+|faint|p2a: Echo
+|
+|callback|decision
+|
+|switch|p2a: 462 Teraflops|Magnezone|325\/325
+|turn|21
+|callback|decision
+|
+|switch|p1a: Manectric|Manectric, F|281\/281
+|-formechange|p1a: Manectric|Manectric-Mega
+|-ability|p1a: Manectric|Intimidate|[of] p2a: 462 Teraflops
+|-unboost|p2a: 462 Teraflops|atk|1
+|move|p2a: 462 Teraflops|Flash Cannon|p1a: Manectric
+|-resisted|p1a: Manectric
+|-damage|p1a: Manectric|147\/281
+|
+|turn|22
+|callback|decision
+|
+|switch|p2a: David Bowie|Kyurem|342\/391
+|-ability|p2a: David Bowie|Pressure
+|move|p1a: Manectric|Volt Switch|p2a: David Bowie
+|-resisted|p2a: David Bowie
+|-damage|p2a: David Bowie|273\/391
+|callback|decision
+|
+|switch|p1a: Florges|Florges, F|343\/360
+|
+|-heal|p2a: David Bowie|297\/391|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p2a: David Bowie|Substitute|p2a: David Bowie
+|-start|p2a: David Bowie|Substitute
+|-damage|p2a: David Bowie|200\/391
+|move|p1a: Florges|Moonblast|p2a: David Bowie
+|-supereffective|p2a: David Bowie
+|-end|p2a: David Bowie|Substitute
+|
+|-heal|p2a: David Bowie|224\/391|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|switch|p2a: V-Wheel! ~|Victini|281\/341
+|move|p1a: Florges|Moonblast|p2a: V-Wheel! ~
+|-resisted|p2a: V-Wheel! ~
+|-damage|p2a: V-Wheel! ~|221\/341
+|
+|turn|25
+|callback|decision
+|
+|switch|p1a: Rhyperior|Rhyperior, F|354\/433
+|move|p2a: V-Wheel! ~|U-turn|p1a: Rhyperior
+|-damage|p1a: Rhyperior|282\/433
+|callback|decision
+|
+|switch|p2a: Mood Swings|Keldeo-Resolute|291\/323
+|
+|-heal|p1a: Rhyperior|309\/433|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|switch|p1a: Florges|Florges, F|343\/360
+|move|p2a: Mood Swings|Surf|p1a: Florges
+|-damage|p1a: Florges|226\/360
+|-damage|p2a: Mood Swings|259\/323|[from] item: Life Orb
+|
+|turn|27
+|callback|decision
+|
+|switch|p2a: V-Wheel! ~|Victini|221\/341
+|move|p1a: Florges|Moonblast|p2a: V-Wheel! ~
+|-resisted|p2a: V-Wheel! ~
+|-damage|p2a: V-Wheel! ~|161\/341
+|
+|turn|28
+|callback|decision
+|
+|switch|p1a: Rhyperior|Rhyperior, F|309\/433
+|move|p2a: V-Wheel! ~|Zen Headbutt|p1a: Rhyperior
+|-damage|p1a: Rhyperior|186\/433
+|
+|-heal|p1a: Rhyperior|213\/433|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|switch|p2a: Under the Truck|Mew|289\/403
+|move|p1a: Rhyperior|Earthquake|p2a: Under the Truck
+|-damage|p2a: Under the Truck|156\/403
+|
+|-heal|p1a: Rhyperior|240\/433|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|switch|p1a: Florges|Florges, F|226\/360
+|move|p2a: Under the Truck|Roost|p2a: Under the Truck
+|-heal|p2a: Under the Truck|358\/403
+|
+|turn|31
+|callback|decision
+|
+|move|p1a: Florges|Moonblast|p2a: Under the Truck
+|-damage|p2a: Under the Truck|237\/403
+|move|p2a: Under the Truck|Will-O-Wisp|p1a: Florges
+|-status|p1a: Florges|brn
+|
+|-damage|p1a: Florges|181\/360 brn|[from] brn
+|turn|32
+|callback|decision
+|
+|move|p1a: Florges|Moonblast|p2a: Under the Truck
+|-damage|p2a: Under the Truck|107\/403
+|move|p2a: Under the Truck|Roost|p2a: Under the Truck
+|-heal|p2a: Under the Truck|309\/403
+|
+|-damage|p1a: Florges|136\/360 brn|[from] brn
+|turn|33
+|callback|decision
+|
+|move|p1a: Florges|Moonblast|p2a: Under the Truck
+|-damage|p2a: Under the Truck|189\/403
+|move|p2a: Under the Truck|Roost|p2a: Under the Truck
+|-heal|p2a: Under the Truck|391\/403
+|
+|-damage|p1a: Florges|91\/360 brn|[from] brn
+|turn|34
+|callback|decision
+|
+|move|p1a: Florges|Moonblast|p2a: Under the Truck
+|-damage|p2a: Under the Truck|273\/403
+|move|p2a: Under the Truck|Roost|p2a: Under the Truck
+|-heal|p2a: Under the Truck|403\/403
+|
+|-damage|p1a: Florges|46\/360 brn|[from] brn
+|turn|35
+|callback|decision
+|
+|move|p1a: Florges|Moonblast|p2a: Under the Truck
+|-damage|p2a: Under the Truck|280\/403
+|-unboost|p2a: Under the Truck|spa|1
+|move|p2a: Under the Truck|Roost|p2a: Under the Truck
+|-heal|p2a: Under the Truck|403\/403
+|
+|-damage|p1a: Florges|1\/360 brn|[from] brn
+|turn|36
+|callback|decision
+|
+|move|p1a: Florges|Moonblast|p2a: Under the Truck
+|-damage|p2a: Under the Truck|288\/403
+|-unboost|p2a: Under the Truck|spa|1
+|move|p2a: Under the Truck|Roost|p2a: Under the Truck
+|-heal|p2a: Under the Truck|403\/403
+|
+|-damage|p1a: Florges|0 fnt|[from] brn
+|faint|p1a: Florges
+|callback|decision
+|
+|switch|p1a: Dragalge|Dragalge, M|255\/334
+|turn|37
+|callback|decision
+|
+|switch|p2a: 462 Teraflops|Magnezone|325\/325
+|move|p1a: Dragalge|Draco Meteor|p2a: 462 Teraflops
+|-resisted|p2a: 462 Teraflops
+|-damage|p2a: 462 Teraflops|165\/325
+|-unboost|p1a: Dragalge|spa|2
+|
+|turn|38
+|callback|decision
+|
+|switch|p1a: Gourgeist-Super|Gourgeist-Super, M|374\/374
+|-item|p2a: 462 Teraflops|Choice Specs|[from] ability: Frisk|[of] p1a: Gourgeist-Super|[identify]
+|move|p2a: 462 Teraflops|Hidden Power|p1a: Gourgeist-Super
+|-crit|p1a: Gourgeist-Super
+|-resisted|p1a: Gourgeist-Super
+|-damage|p1a: Gourgeist-Super|254\/374
+|
+|-heal|p1a: Gourgeist-Super|277\/374|[from] item: Leftovers
+|turn|39
+|callback|decision
+|
+|switch|p2a: V-Wheel! ~|Victini|161\/341
+|move|p1a: Gourgeist-Super|Leech Seed|p2a: V-Wheel! ~
+|-start|p2a: V-Wheel! ~|move: Leech Seed
+|
+|-heal|p1a: Gourgeist-Super|300\/374|[from] item: Leftovers
+|-damage|p2a: V-Wheel! ~|119\/341|[from] Leech Seed|[of] p1a: Gourgeist-Super
+|-heal|p1a: Gourgeist-Super|342\/374|[silent]
+|turn|40
+|callback|decision
+|
+|switch|p1a: Rhyperior|Rhyperior, F|240\/433
+|move|p2a: V-Wheel! ~|U-turn|p1a: Rhyperior
+|-damage|p1a: Rhyperior|164\/433
+|callback|decision
+|
+|switch|p2a: David Bowie|Kyurem|224\/391
+|-ability|p2a: David Bowie|Pressure
+|
+|-heal|p2a: David Bowie|248\/391|[from] item: Leftovers
+|-heal|p1a: Rhyperior|191\/433|[from] item: Leftovers
+|turn|41
+|callback|decision
+|
+|move|p2a: David Bowie|Ice Beam|p1a: Rhyperior
+|-supereffective|p1a: Rhyperior
+|-damage|p1a: Rhyperior|0 fnt
+|faint|p1a: Rhyperior
+|
+|-heal|p2a: David Bowie|272\/391|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Manectric|Manectric, F|147\/281
+|-formechange|p1a: Manectric|Manectric-Mega
+|-ability|p1a: Manectric|Intimidate|[of] p2a: David Bowie
+|-unboost|p2a: David Bowie|atk|1
+|turn|42
+|callback|decision
+|
+|move|p1a: Manectric|Flamethrower|p2a: David Bowie
+|-damage|p2a: David Bowie|150\/391
+|move|p2a: David Bowie|Substitute|p2a: David Bowie
+|-start|p2a: David Bowie|Substitute
+|-damage|p2a: David Bowie|53\/391
+|
+|-heal|p2a: David Bowie|77\/391|[from] item: Leftovers
+|turn|43
+|callback|decision
+|
+|move|p1a: Manectric|Flamethrower|p2a: David Bowie
+|-end|p2a: David Bowie|Substitute
+|move|p2a: David Bowie|Earth Power|p1a: Manectric
+|-supereffective|p1a: Manectric
+|-damage|p1a: Manectric|0 fnt
+|faint|p1a: Manectric
+|
+|-heal|p2a: David Bowie|101\/391|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Gourgeist-Super|Gourgeist-Super, M|342\/374
+|-item|p2a: David Bowie|Leftovers|[from] ability: Frisk|[of] p1a: Gourgeist-Super|[identify]
+|turn|44
+|callback|decision
+|
+|move|p1a: Gourgeist-Super|Shadow Sneak|p2a: David Bowie
+|-damage|p2a: David Bowie|52\/391
+|move|p2a: David Bowie|Substitute|p2a: David Bowie
+|-fail|p2a: David Bowie|move: Substitute|[weak]
+|
+|-heal|p2a: David Bowie|76\/391|[from] item: Leftovers
+|-heal|p1a: Gourgeist-Super|365\/374|[from] item: Leftovers
+|turn|45
+|callback|decision
+|
+|move|p1a: Gourgeist-Super|Shadow Sneak|p2a: David Bowie
+|-damage|p2a: David Bowie|25\/391
+|move|p2a: David Bowie|Ice Beam|p1a: Gourgeist-Super
+|-supereffective|p1a: Gourgeist-Super
+|-damage|p1a: Gourgeist-Super|0 fnt
+|faint|p1a: Gourgeist-Super
+|
+|-heal|p2a: David Bowie|49\/391|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Crawdaunt|Crawdaunt, M|209\/268
+|turn|46
+|callback|decision
+|
+|switch|p2a: Under the Truck|Mew|403\/403
+|move|p1a: Crawdaunt|Aqua Jet|p2a: Under the Truck
+|-damage|p2a: Under the Truck|317\/403
+|-damage|p1a: Crawdaunt|183\/268|[from] item: Life Orb
+|
+|turn|47
+|callback|decision
+|-message|TheAmphy forfeited.
+|
+|win|Valafar123âs Alt
+|raw|Ladder updating...
+|leave|TheAmphy
+|player|p1
+|raw|TheAmphy's rating: 1195 &rarr; <strong>1168<\/strong><br \/>(-27 for losing)
+|raw|Valafar123âs Alt's rating: 1170 &rarr; <strong>1197<\/strong><br \/>(+27 for winning)

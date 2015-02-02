@@ -1,0 +1,227 @@
+|join|zoid's warhorse
+|join|yearoflight
+|player|p1|zoid's warhorse|188
+|player|p2|yearoflight|222
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Aerodactyl, M
+|poke|p1|Azelf
+|poke|p1|Dragalge, F
+|poke|p1|Lucario, M
+|poke|p1|Magneton
+|poke|p1|Serperior, M
+|poke|p2|Abomasnow, M
+|poke|p2|Reuniclus, F
+|poke|p2|Porygon2
+|poke|p2|Pangoro, M
+|poke|p2|Diancie
+|poke|p2|Cresselia, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Azelf|Azelf|291\/291
+|switch|p2a: Diancie|Diancie|304\/304
+|turn|1
+|
+|move|p1a: Azelf|Taunt|p2a: Diancie
+|-start|p2a: Diancie|move: Taunt
+|move|p2a: Diancie|Diamond Storm|p1a: Azelf
+|-damage|p1a: Azelf|123\/291
+|
+|turn|2
+|
+|move|p1a: Azelf|Stealth Rock|p2a: Diancie
+|-sidestart|p2: yearoflight|move: Stealth Rock
+|move|p2a: Diancie|Diamond Storm|p1a: Azelf
+|-damage|p1a: Azelf|0 fnt
+|faint|p1a: Azelf
+|
+|
+|switch|p1a: Serperior|Serperior, M|303\/303
+|turn|3
+|
+|switch|p2a: Abomasnow|Abomasnow, M|383\/383
+|-damage|p2a: Abomasnow|288\/383|[from] Stealth Rock
+|move|p1a: Serperior|Leaf Storm|p2a: Abomasnow
+|-resisted|p2a: Abomasnow
+|-damage|p2a: Abomasnow|202\/383
+|-boost|p1a: Serperior|spa|2
+|
+|turn|4
+|
+|detailschange|p2a: Abomasnow|Abomasnow-Mega, M
+|-mega|p2a: Abomasnow|Abomasnow|Abomasite
+|-weather|Hail
+|move|p2a: Abomasnow|Ice Shard|p1a: Serperior
+|-supereffective|p1a: Serperior
+|-damage|p1a: Serperior|145\/303
+|move|p1a: Serperior|Hidden Power|p2a: Abomasnow
+|-supereffective|p2a: Abomasnow
+|-damage|p2a: Abomasnow|0 fnt
+|faint|p2a: Abomasnow
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Serperior|127\/303|[from] hail
+|
+|switch|p2a: Reuniclus|Reuniclus, F|423\/423
+|turn|5
+|
+|move|p1a: Serperior|Leaf Storm|p2a: Reuniclus
+|-damage|p2a: Reuniclus|116\/423
+|-boost|p1a: Serperior|spa|2
+|move|p2a: Reuniclus|Trick Room|p2a: Reuniclus
+|-fieldstart|move: Trick Room|[of] p2a: Reuniclus
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Serperior|109\/303|[from] hail
+|turn|6
+|
+|switch|p1a: Magneton|Magneton|303\/303
+|move|p2a: Reuniclus|Focus Blast|p1a: Magneton
+|-supereffective|p1a: Magneton
+|-damage|p1a: Magneton|0 fnt
+|faint|p1a: Magneton
+|
+|-weather|Hail|[upkeep]
+|
+|switch|p1a: Aerodactyl|Aerodactyl, M|302\/302
+|-ability|p1a: Aerodactyl|Unnerve|p2: yearoflight
+|turn|7
+|
+|switch|p2a: Porygon2|Porygon2|335\/335
+|-damage|p2a: Porygon2|294\/335|[from] Stealth Rock
+|-boost|p2a: Porygon2|atk|1|[from] ability: Download
+|detailschange|p1a: Aerodactyl|Aerodactyl-Mega, M
+|-mega|p1a: Aerodactyl|Aerodactyl|Aerodactylite
+|move|p1a: Aerodactyl|Aqua Tail|p2a: Porygon2
+|-damage|p2a: Porygon2|203\/335
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Porygon2|183\/335|[from] hail
+|-damage|p1a: Aerodactyl|284\/302|[from] hail
+|turn|8
+|
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|335\/335
+|move|p1a: Aerodactyl|Stone Edge|p2a: Porygon2
+|-damage|p2a: Porygon2|226\/335
+|
+|-weather|none
+|turn|9
+|
+|switch|p1a: Lucario|Lucario, M|279\/279
+|move|p2a: Porygon2|Ice Beam|p1a: Lucario
+|-resisted|p1a: Lucario
+|-damage|p1a: Lucario|217\/279
+|
+|-fieldend|move: Trick Room
+|turn|10
+|
+|move|p1a: Lucario|Close Combat|p2a: Porygon2
+|-supereffective|p2a: Porygon2
+|-damage|p2a: Porygon2|0 fnt
+|-unboost|p1a: Lucario|def|1
+|-unboost|p1a: Lucario|spd|1
+|-damage|p1a: Lucario|190\/279|[from] item: Life Orb
+|faint|p2a: Porygon2
+|
+|
+|switch|p2a: Diancie|Diancie|304\/304
+|-damage|p2a: Diancie|266\/304|[from] Stealth Rock
+|turn|11
+|
+|move|p1a: Lucario|Earthquake|p2a: Diancie
+|-supereffective|p2a: Diancie
+|-damage|p2a: Diancie|68\/304
+|-damage|p1a: Lucario|163\/279|[from] item: Life Orb
+|move|p2a: Diancie|Trick Room|p2a: Diancie
+|-fieldstart|move: Trick Room|[of] p2a: Diancie
+|
+|-heal|p2a: Diancie|87\/304|[from] item: Leftovers
+|turn|12
+|
+|move|p1a: Lucario|Bullet Punch|p2a: Diancie
+|-supereffective|p2a: Diancie
+|-damage|p2a: Diancie|0 fnt
+|-damage|p1a: Lucario|136\/279|[from] item: Life Orb
+|faint|p2a: Diancie
+|
+|
+|switch|p2a: Pangoro|Pangoro, M|393\/393
+|-damage|p2a: Pangoro|369\/393|[from] Stealth Rock
+|turn|13
+|
+|move|p1a: Lucario|Bullet Punch|p2a: Pangoro
+|-damage|p2a: Pangoro|270\/393
+|-damage|p1a: Lucario|109\/279|[from] item: Life Orb
+|move|p2a: Pangoro|Drain Punch|p1a: Lucario
+|-supereffective|p1a: Lucario
+|-damage|p1a: Lucario|0 fnt
+|-heal|p2a: Pangoro|325\/393|[from] drain|[of] p1a: Lucario
+|-damage|p2a: Pangoro|286\/393|[from] item: Life Orb
+|faint|p1a: Lucario
+|
+|
+|switch|p1a: Aerodactyl|Aerodactyl-Mega, M|284\/302
+|turn|14
+|
+|move|p2a: Pangoro|Ice Punch|p1a: Aerodactyl
+|-supereffective|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|0 fnt
+|-damage|p2a: Pangoro|247\/393|[from] item: Life Orb
+|faint|p1a: Aerodactyl
+|
+|
+|switch|p1a: Serperior|Serperior, M|109\/303
+|turn|15
+|
+|move|p2a: Pangoro|Ice Punch|p1a: Serperior
+|-supereffective|p1a: Serperior
+|-damage|p1a: Serperior|0 fnt
+|-damage|p2a: Pangoro|208\/393|[from] item: Life Orb
+|faint|p1a: Serperior
+|
+|-fieldend|move: Trick Room
+|
+|switch|p1a: Dragalge|Dragalge, F|283\/283
+|turn|16
+|
+|move|p2a: Pangoro|Ice Punch|p1a: Dragalge
+|-supereffective|p1a: Dragalge
+|-damage|p1a: Dragalge|0 fnt
+|-damage|p2a: Pangoro|169\/393|[from] item: Life Orb
+|faint|p1a: Dragalge
+|
+|win|yearoflight
+|raw|Ladder updating...
+|raw|zoid&apos;s warhorse's rating: 1532 &rarr; <strong>1506<\/strong><br \/>(-26 for losing)
+|raw|yearoflight's rating: 1420 &rarr; <strong>1447<\/strong><br \/>(+27 for winning)
+|c|âyearoflight|gg
+|c|âzoid's warhorse|gg
+|c|âyearoflight|why
+|c|âyearoflight|didn't you go for the punch on lucario
+|c|âyearoflight|wouldn't that have done more damage?
+|c|âzoid's warhorse|no
+|c|âyearoflight|160* stab
+|c|âyearoflight|vs 100
+|c|âzoid's warhorse|oh
+|c|âyearoflight|i mean 200
+|c|âzoid's warhorse|i'm dumb
+|c|âyearoflight|so 240 base
+|c|âyearoflight|vs 200
+|c|âyearoflight|:D
+|c|âzoid's warhorse|thanks for the enlightenment
+|c|âyearoflight|np
+|c|âyearoflight|don't fight me again :D

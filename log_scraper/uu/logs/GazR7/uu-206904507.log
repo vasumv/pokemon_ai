@@ -1,0 +1,344 @@
+|join|GazR7
+|join|kingofsimbas
+|player|p1|GazR7|265
+|player|p2|kingofsimbas|7
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Pidgeot, M
+|poke|p1|Mienshao, F
+|poke|p1|Celebi
+|poke|p1|Alomomola, M
+|poke|p1|Snorlax, M
+|poke|p1|Raikou
+|poke|p2|Medicham, F, shiny
+|poke|p2|Serperior, F, shiny
+|poke|p2|Donphan, F
+|poke|p2|Vaporeon, F, shiny
+|poke|p2|Kingdra, F, shiny
+|poke|p2|Amoonguss, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Celebi|Celebi|396\/396
+|switch|p2a: Dolphan|Donphan, F|384\/384
+|turn|1
+|
+|move|p1a: Celebi|Stealth Rock|p2a: Dolphan
+|-sidestart|p2: kingofsimbas|move: Stealth Rock
+|move|p2a: Dolphan|Stealth Rock|p1a: Celebi
+|-sidestart|p1: GazR7|move: Stealth Rock
+|
+|turn|2
+|
+|move|p1a: Celebi|Giga Drain|p2a: Dolphan
+|-supereffective|p2a: Dolphan
+|-damage|p2a: Dolphan|16\/384
+|move|p2a: Dolphan|Rapid Spin|p1a: Celebi
+|-damage|p1a: Celebi|378\/396
+|-sideend|p2: kingofsimbas|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Dolphan
+|
+|-heal|p1a: Celebi|396\/396|[from] item: Leftovers
+|-heal|p2a: Dolphan|40\/384|[from] item: Leftovers
+|turn|3
+|
+|move|p2a: Dolphan|Ice Shard|p1a: Celebi
+|-supereffective|p1a: Celebi
+|-damage|p1a: Celebi|316\/396
+|move|p1a: Celebi|Stealth Rock|p2a: Dolphan
+|-sidestart|p2: kingofsimbas|move: Stealth Rock
+|
+|-heal|p1a: Celebi|340\/396|[from] item: Leftovers
+|-heal|p2a: Dolphan|64\/384|[from] item: Leftovers
+|turn|4
+|
+|move|p2a: Dolphan|Ice Shard|p1a: Celebi
+|-supereffective|p1a: Celebi
+|-damage|p1a: Celebi|264\/396
+|move|p1a: Celebi|Psychic|p2a: Dolphan
+|-damage|p2a: Dolphan|0 fnt
+|faint|p2a: Dolphan
+|
+|-heal|p1a: Celebi|288\/396|[from] item: Leftovers
+|
+|switch|p2a: Amoonguss|Amoonguss, F|431\/431
+|-damage|p2a: Amoonguss|378\/431|[from] Stealth Rock
+|turn|5
+|
+|move|p1a: Celebi|Psychic|p2a: Amoonguss
+|-supereffective|p2a: Amoonguss
+|-damage|p2a: Amoonguss|34\/431
+|move|p2a: Amoonguss|Sludge Bomb|p1a: Celebi
+|-supereffective|p1a: Celebi
+|-damage|p1a: Celebi|0 fnt
+|faint|p1a: Celebi
+|
+|
+|switch|p1a: Pidgeot|Pidgeot, M|307\/307
+|-damage|p1a: Pidgeot|231\/307|[from] Stealth Rock
+|turn|6
+|
+|switch|p2a: Vaporeon|Vaporeon, F, shiny|464\/464
+|-damage|p2a: Vaporeon|406\/464|[from] Stealth Rock
+|detailschange|p1a: Pidgeot|Pidgeot-Mega, M
+|-mega|p1a: Pidgeot|Pidgeot|Pidgeotite
+|move|p1a: Pidgeot|Hurricane|p2a: Vaporeon
+|-damage|p2a: Vaporeon|252\/464
+|
+|-heal|p2a: Vaporeon|281\/464|[from] item: Leftovers
+|turn|7
+|
+|move|p1a: Pidgeot|Hurricane|p2a: Vaporeon
+|-damage|p2a: Vaporeon|118\/464
+|-start|p2a: Vaporeon|confusion
+|-activate|p2a: Vaporeon|confusion
+|move|p2a: Vaporeon|Toxic|p1a: Pidgeot
+|-status|p1a: Pidgeot|tox
+|
+|-heal|p2a: Vaporeon|147\/464|[from] item: Leftovers
+|-damage|p1a: Pidgeot|212\/307 tox|[from] psn
+|turn|8
+|
+|switch|p1a: Raikou|Raikou|321\/321
+|-damage|p1a: Raikou|281\/321|[from] Stealth Rock
+|-ability|p1a: Raikou|Pressure
+|-activate|p2a: Vaporeon|confusion
+|move|p2a: Vaporeon|Protect|p2a: Vaporeon
+|-fail|p2a: Vaporeon
+|
+|-heal|p1a: Raikou|301\/321|[from] item: Leftovers
+|-heal|p2a: Vaporeon|176\/464|[from] item: Leftovers
+|turn|9
+|
+|move|p1a: Raikou|Substitute|p1a: Raikou
+|-start|p1a: Raikou|Substitute
+|-damage|p1a: Raikou|221\/321
+|-end|p2a: Vaporeon|confusion
+|move|p2a: Vaporeon|Scald|p1a: Raikou
+|-end|p1a: Raikou|Substitute
+|
+|-heal|p1a: Raikou|241\/321|[from] item: Leftovers
+|-heal|p2a: Vaporeon|205\/464|[from] item: Leftovers
+|turn|10
+|
+|move|p1a: Raikou|Calm Mind|p1a: Raikou
+|-boost|p1a: Raikou|spa|1
+|-boost|p1a: Raikou|spd|1
+|move|p2a: Vaporeon|Scald|p1a: Raikou
+|-damage|p1a: Raikou|177\/321
+|-status|p1a: Raikou|brn
+|
+|-heal|p1a: Raikou|197\/321 brn|[from] item: Leftovers
+|-heal|p2a: Vaporeon|234\/464|[from] item: Leftovers
+|-damage|p1a: Raikou|157\/321 brn|[from] brn
+|turn|11
+|c|âGazR7|KNEW IT
+|c|âGazR7|if that didn't burn
+|c|âGazR7|it was game over
+|c|âGazR7|there and the
+|c|âkingofsimbas|i know
+|c|âGazR7|then
+|
+|move|p2a: Vaporeon|Protect|p2a: Vaporeon
+|-singleturn|p2a: Vaporeon|Protect
+|move|p1a: Raikou|Thunderbolt|p2a: Vaporeon
+|-activate|p2a: Vaporeon|Protect
+|
+|-heal|p1a: Raikou|177\/321 brn|[from] item: Leftovers
+|-heal|p2a: Vaporeon|263\/464|[from] item: Leftovers
+|-damage|p1a: Raikou|137\/321 brn|[from] brn
+|turn|12
+|c|âGazR7|you risked me calm minding again and just winning....
+|c|âkingofsimbas|r u serious
+|c|âGazR7|because you wouldn't have been able to switch to amoongus
+|c|âkingofsimbas|bro im sweeping u dont worry
+|c|âGazR7|no you're not
+|c|âGazR7|don't be stupid
+|c|âkingofsimbas|loool
+|c|âGazR7|your move
+|
+|switch|p2a: Amoonguss|Amoonguss, F|177\/431
+|-damage|p2a: Amoonguss|124\/431|[from] Stealth Rock
+|move|p1a: Raikou|Thunderbolt|p2a: Amoonguss
+|-resisted|p2a: Amoonguss
+|-damage|p2a: Amoonguss|0 fnt
+|faint|p2a: Amoonguss
+|
+|-heal|p1a: Raikou|157\/321 brn|[from] item: Leftovers
+|-damage|p1a: Raikou|117\/321 brn|[from] brn
+|c|âGazR7|good choice
+|c|âGazR7|letting amoo die
+|
+|switch|p2a: Kingdra|Kingdra, F, shiny|291\/291
+|-damage|p2a: Kingdra|255\/291|[from] Stealth Rock
+|turn|13
+|
+|move|p1a: Raikou|Thunderbolt|p2a: Kingdra
+|-damage|p2a: Kingdra|44\/291
+|move|p2a: Kingdra|Dragon Dance|p2a: Kingdra
+|-boost|p2a: Kingdra|atk|1
+|-boost|p2a: Kingdra|spe|1
+|
+|-heal|p2a: Kingdra|62\/291|[from] item: Leftovers
+|-heal|p1a: Raikou|137\/321 brn|[from] item: Leftovers
+|-damage|p1a: Raikou|97\/321 brn|[from] brn
+|turn|14
+|c|âGazR7|come on big man
+|c|âGazR7|sweep me
+|c|âGazR7|tthis will be funny
+|c|âGazR7|!data mienshao
+|c|~|\/data-pokemon Mienshao
+
+|c|âGazR7|!data kingdra
+|c|~|\/data-pokemon Kingdra
+
+|c|âGazR7|aw
+|
+|move|p2a: Kingdra|Waterfall|p1a: Raikou
+|-damage|p1a: Raikou|0 fnt
+|faint|p1a: Raikou
+|
+|-heal|p2a: Kingdra|80\/291|[from] item: Leftovers
+|c|âGazR7|scarf mienshao
+|c|âGazR7|is quicker?
+|c|âGazR7|:(
+|
+|switch|p1a: Mienshao|Mienshao, F|271\/271
+|-damage|p1a: Mienshao|255\/271|[from] Stealth Rock
+|turn|15
+|c|âGazR7|dang!
+|c|âkingofsimbas|bro it doesnt matter u are not looking at the greater picture here... all in due time young one
+|c|âGazR7|your move
+|
+|move|p1a: Mienshao|U-turn|p2a: Kingdra
+|-damage|p2a: Kingdra|0 fnt
+|faint|p2a: Kingdra
+|c|âGazR7|is serp gonna sweep me then?
+|c|âGazR7|the thing that gets one shotted by pidge?
+|
+|switch|p1a: Snorlax|Snorlax, M|524\/524
+|-damage|p1a: Snorlax|459\/524|[from] Stealth Rock
+|
+|-heal|p1a: Snorlax|491\/524|[from] item: Leftovers
+|c|âkingofsimbas|loool
+|c|âkingofsimbas|hhahahahah
+|c|âkingofsimbas|snorlaax
+|c|âkingofsimbas|ahahahhaha
+|c|âGazR7|your move
+|c|âkingofsimbas|you fool
+|
+|switch|p2a: Thy Guru|Medicham, F, shiny|261\/261
+|-damage|p2a: Thy Guru|245\/261|[from] Stealth Rock
+|turn|16
+|
+|switch|p1a: Alomomola|Alomomola, M|533\/533
+|-damage|p1a: Alomomola|467\/533|[from] Stealth Rock
+|detailschange|p2a: Thy Guru|Medicham-Mega, F, shiny
+|-mega|p2a: Thy Guru|Medicham|Medichamite
+|move|p2a: Thy Guru|Bulk Up|p2a: Thy Guru
+|-boost|p2a: Thy Guru|atk|1
+|-boost|p2a: Thy Guru|def|1
+|
+|turn|17
+|c|âkingofsimbas|time to eat dick
+|
+|move|p2a: Thy Guru|Bulk Up|p2a: Thy Guru
+|-boost|p2a: Thy Guru|atk|1
+|-boost|p2a: Thy Guru|def|1
+|move|p1a: Alomomola|Scald|p2a: Thy Guru
+|-damage|p2a: Thy Guru|188\/261
+|
+|turn|18
+|c|âGazR7|burnnn
+|c|âGazR7|wow
+|c|âkingofsimbas|you pathetic trainer
+|c|âGazR7|TRAINER!?
+|c|âGazR7|AHAHAHHAHAHAH
+|
+|move|p2a: Thy Guru|Zen Headbutt|p1a: Alomomola
+|-damage|p1a: Alomomola|37\/533
+|-damage|p2a: Thy Guru|145\/261|[from] item: Rocky Helmet|[of] p1a: Alomomola
+|move|p1a: Alomomola|Scald|p2a: Thy Guru
+|-damage|p2a: Thy Guru|94\/261
+|
+|turn|19
+|c|âGazR7|you're such a loser
+|c|âGazR7|:')
+|c|âGazR7|again
+|c|âGazR7|no burn
+|c|âGazR7|ok
+|
+|switch|p1a: Snorlax|Snorlax, M|491\/524
+|-damage|p1a: Snorlax|426\/524|[from] Stealth Rock
+|move|p2a: Thy Guru|Drain Punch|p1a: Snorlax
+|-supereffective|p1a: Snorlax
+|-damage|p1a: Snorlax|0 fnt
+|-heal|p2a: Thy Guru|261\/261|[from] drain|[of] p1a: Snorlax
+|faint|p1a: Snorlax
+|
+|c|âkingofsimbas|yummy
+|c|âGazR7|whatever
+|
+|switch|p1a: Mienshao|Mienshao, F|271\/271
+|-damage|p1a: Mienshao|255\/271|[from] Stealth Rock
+|turn|20
+|c|âkingofsimbas|bad cause u got swepted after i said u would lmao
+|c|âkingofsimbas|ahahahahaha
+|c|âGazR7|you got lucky...
+|c|âkingofsimbas|your just bad
+|c|âGazR7|it was literally 50\/500
+|c|âGazR7|50\/50
+|
+|move|p1a: Mienshao|Poison Jab|p2a: Thy Guru
+|-damage|p2a: Thy Guru|206\/261
+|move|p2a: Thy Guru|Drain Punch|p1a: Mienshao
+|-damage|p1a: Mienshao|0 fnt
+|-heal|p2a: Thy Guru|261\/261|[from] drain|[of] p1a: Mienshao
+|faint|p1a: Mienshao
+|
+|c|âGazR7|and you're*
+|c|âGazR7|idiot
+|
+|switch|p1a: Pidgeot|Pidgeot-Mega, M|212\/307 tox
+|-damage|p1a: Pidgeot|136\/307 tox|[from] Stealth Rock
+|turn|21
+|c|âkingofsimbas|ahhhhh nice SWEEP
+|c|âGazR7|and i could have re generator spammed
+|c|âGazR7|but i really don't care enough
+|c|âGazR7|it's a pokemon game...
+|c|âkingofsimbas|none of that matters
+|c|âGazR7|i'm sure all of your friends think you're so cool :'[
+|c|âkingofsimbas|just sit back and enjoy the sweep
+|c|âGazR7|:'
+|c|âGazR7|:']
+|c|âkingofsimbas|bro just shut the fuck up with ur excuses
+|c|âkingofsimbas|loooool
+|c|âGazR7|it's not an excuse...
+|c|âGazR7|i'm just saying you're really cool
+|c|âkingofsimbas|why are you even still here wasting ur time... u know u lost
+|
+|move|p2a: Thy Guru|Bullet Punch|p1a: Pidgeot
+|-damage|p1a: Pidgeot|0 fnt
+|faint|p1a: Pidgeot
+|
+|c|âGazR7|i know, but i don't care
+|c|âGazR7|lol
+|-message|GazR7 forfeited.
+|
+|win|kingofsimbas
+|raw|Ladder updating...
+|leave|GazR7
+|player|p1
+|raw|GazR7's rating: 1571 &rarr; <strong>1546<\/strong><br \/>(-25 for losing)
+|raw|kingofsimbas's rating: 1471 &rarr; <strong>1496<\/strong><br \/>(+25 for winning)

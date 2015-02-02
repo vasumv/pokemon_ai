@@ -1,0 +1,298 @@
+|join|femt6
+|join|SolidSteve
+|player|p1|femt6|170
+|player|p2|SolidSteve|1
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Roserade, F
+|poke|p1|Jellicent, M
+|poke|p1|Sandslash, M
+|poke|p1|Metagross
+|poke|p1|Volcarona, F
+|poke|p1|Tyranitar, M
+|poke|p2|Politoed, F
+|poke|p2|Ferrothorn, M
+|poke|p2|Toxicroak, F
+|poke|p2|Latios, M
+|poke|p2|Mamoswine, F
+|poke|p2|Starmie
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Roserade|Roserade, F|324\/324
+|switch|p2a: Politoed|Politoed, F|384\/384
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|turn|1
+|callback|decision
+|
+|move|p1a: Roserade|Spikes|p2a: Politoed
+|-sidestart|p2: SolidSteve|Spikes
+|move|p2a: Politoed|Ice Beam|p1a: Roserade
+|-supereffective|p1a: Roserade
+|-damage|p1a: Roserade|198\/324
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Roserade|218\/324|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|301\/301
+|move|p1a: Roserade|Spikes|p2a: Latios
+|-sidestart|p2: SolidSteve|Spikes
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Roserade|238\/324|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, M|366\/366
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar
+|move|p2a: Latios|Psyshock|p1a: Tyranitar
+|-immune|p1a: Tyranitar|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|283\/301|[from] sandstorm
+|turn|4
+|callback|decision
+|
+|move|p1a: Tyranitar|Pursuit|p2a: Latios|[from]Pursuit
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|faint|p2a: Latios
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, F|384\/384
+|-damage|p2a: Politoed|320\/384|[from] Spikes
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|turn|5
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, F|238\/324
+|move|p2a: Politoed|Toxic|p1a: Roserade
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Roserade|258\/324|[from] item: Leftovers
+|-heal|p2a: Politoed|344\/384|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, M|366\/366
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar
+|switch|p2a: Starmie|Starmie|261\/261
+|-damage|p2a: Starmie|218\/261|[from] Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Starmie|202\/261|[from] sandstorm
+|-heal|p2a: Starmie|218\/261|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p2a: Starmie|Hydro Pump|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|136\/366
+|move|p1a: Tyranitar|Crunch|p2a: Starmie
+|-supereffective|p2a: Starmie
+|-damage|p2a: Starmie|0 fnt
+|faint|p2a: Starmie
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Mamoswine|Mamoswine, F|424\/424
+|-damage|p2a: Mamoswine|354\/424|[from] Spikes
+|turn|8
+|callback|decision
+|
+|switch|p1a: Sandslash|Sandslash, M|291\/291
+|move|p2a: Mamoswine|Earthquake|p1a: Sandslash
+|-damage|p1a: Sandslash|80\/291
+|-damage|p2a: Mamoswine|312\/424|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|turn|9
+|callback|decision
+|
+|move|p2a: Mamoswine|Ice Shard|p1a: Sandslash
+|-supereffective|p1a: Sandslash
+|-damage|p1a: Sandslash|0 fnt
+|-damage|p2a: Mamoswine|270\/424|[from] item: Life Orb
+|faint|p1a: Sandslash
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Jellicent|Jellicent, M|403\/403
+|turn|10
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, F|344\/384
+|-damage|p2a: Politoed|280\/384|[from] Spikes
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Politoed|[miss]
+|-miss|p1a: Jellicent|p2a: Politoed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|304\/384|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, F|258\/324
+|move|p2a: Politoed|Toxic|p1a: Roserade
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Roserade|278\/324|[from] item: Leftovers
+|-heal|p2a: Politoed|328\/384|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p2a: Toxicroak|Toxicroak, F|370\/370
+|-damage|p2a: Toxicroak|309\/370|[from] Spikes
+|move|p1a: Roserade|Spikes|p2a: Toxicroak
+|-sidestart|p2: SolidSteve|Spikes
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Toxicroak|355\/370|[from] ability: Dry Skin
+|-heal|p1a: Roserade|298\/324|[from] item: Leftovers
+|-heal|p2a: Toxicroak|370\/370|[from] item: Black Sludge
+|turn|13
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, M|136\/366
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar
+|move|p2a: Toxicroak|Substitute|p2a: Toxicroak
+|-start|p2a: Toxicroak|Substitute
+|-damage|p2a: Toxicroak|278\/370
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Toxicroak|255\/370|[from] sandstorm
+|-heal|p2a: Toxicroak|278\/370|[from] item: Black Sludge
+|turn|14
+|callback|decision
+|
+|-singleturn|p2a: Toxicroak|move: Focus Punch
+|switch|p1a: Metagross|Metagross|364\/364
+|move|p2a: Toxicroak|Focus Punch|p1a: Metagross
+|-damage|p1a: Metagross|160\/364
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Toxicroak|255\/370|[from] sandstorm
+|-heal|p2a: Toxicroak|278\/370|[from] item: Black Sludge
+|-heal|p1a: Metagross|182\/364|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|-singleturn|p2a: Toxicroak|move: Focus Punch
+|move|p1a: Metagross|Stealth Rock|p2a: Toxicroak
+|-sidestart|p2: SolidSteve|move: Stealth Rock
+|move|p2a: Toxicroak|Focus Punch|p1a: Metagross
+|-damage|p1a: Metagross|0 fnt
+|faint|p1a: Metagross
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Toxicroak|255\/370|[from] sandstorm
+|-heal|p2a: Toxicroak|278\/370|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p1a: Volcarona|Volcarona, F|371\/371
+|turn|16
+|callback|decision
+|
+|-singleturn|p2a: Toxicroak|move: Focus Punch
+|move|p1a: Volcarona|Fiery Dance|p2a: Toxicroak
+|-end|p2a: Toxicroak|Substitute
+|-boost|p1a: Volcarona|spa|1
+|move|p2a: Toxicroak|Focus Punch|p1a: Volcarona
+|-resisted|p1a: Volcarona
+|-damage|p1a: Volcarona|249\/371
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Volcarona|226\/371|[from] sandstorm
+|-damage|p2a: Toxicroak|255\/370|[from] sandstorm
+|-heal|p2a: Toxicroak|278\/370|[from] item: Black Sludge
+|turn|17
+|callback|decision
+|
+|switch|p2a: Politoed|Politoed, F|328\/384
+|-damage|p2a: Politoed|232\/384|[from] Spikes
+|-damage|p2a: Politoed|184\/384|[from] Stealth Rock
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|move|p1a: Volcarona|Quiver Dance|p1a: Volcarona
+|-boost|p1a: Volcarona|spa|1
+|-boost|p1a: Volcarona|spd|1
+|-boost|p1a: Volcarona|spe|1
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|208\/384|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p1a: Volcarona|Bug Buzz|p2a: Politoed
+|-damage|p2a: Politoed|0 fnt
+|faint|p2a: Politoed
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|-damage|p2a: Ferrothorn|264\/352|[from] Spikes
+|-damage|p2a: Ferrothorn|242\/352|[from] Stealth Rock
+|turn|19
+|callback|decision
+|
+|move|p1a: Volcarona|Fiery Dance|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|-boost|p1a: Volcarona|spa|1
+|faint|p2a: Ferrothorn
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Toxicroak|Toxicroak, F|278\/370
+|-damage|p2a: Toxicroak|186\/370|[from] Spikes
+|-damage|p2a: Toxicroak|163\/370|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|move|p2a: Toxicroak|Sucker Punch|p1a: Volcarona
+|-damage|p1a: Volcarona|128\/371
+|move|p1a: Volcarona|Fiery Dance|p2a: Toxicroak
+|-damage|p2a: Toxicroak|0 fnt
+|faint|p2a: Toxicroak
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Mamoswine|Mamoswine, F|270\/424
+|-damage|p2a: Mamoswine|164\/424|[from] Spikes
+|-damage|p2a: Mamoswine|111\/424|[from] Stealth Rock
+|turn|21
+|callback|decision
+|
+|move|p2a: Mamoswine|Ice Shard|p1a: Volcarona
+|-resisted|p1a: Volcarona
+|-damage|p1a: Volcarona|81\/371
+|-damage|p2a: Mamoswine|69\/424|[from] item: Life Orb
+|move|p1a: Volcarona|Fiery Dance|p2a: Mamoswine
+|-supereffective|p2a: Mamoswine
+|-damage|p2a: Mamoswine|0 fnt
+|-boost|p1a: Volcarona|spa|1
+|faint|p2a: Mamoswine
+|
+|win|femt6
+|raw|Ladder updating...
+|raw|femt6's rating: 1794 &rarr; <strong>1796<\/strong><br \/>(+2 for winning)
+|raw|SolidSteve's rating: 1606 &rarr; <strong>1603<\/strong><br \/>(-3 for losing)
+|leave|SolidSteve
+|player|p2

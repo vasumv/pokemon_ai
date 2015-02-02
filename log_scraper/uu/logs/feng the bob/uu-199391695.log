@@ -1,0 +1,580 @@
+|join|feng the bob
+|join|ZZNN
+|player|p1|feng the bob|23
+|player|p2|ZZNN|144
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Swampert, F
+|poke|p1|Crobat, M
+|poke|p1|Jirachi
+|poke|p1|Suicune
+|poke|p1|Zygarde
+|poke|p1|Machamp, M
+|poke|p2|Suicune, shiny
+|poke|p2|Gligar, M
+|poke|p2|Umbreon, F, shiny
+|poke|p2|Haxorus, F
+|poke|p2|Arcanine, F
+|poke|p2|Jirachi
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Machamp|Machamp, M|321\/321
+|switch|p2a: Haxorus|Haxorus, F|293\/293
+|-ability|p2a: Haxorus|Mold Breaker
+|turn|1
+|
+|switch|p1a: Jirachi|Jirachi|341\/341
+|move|p2a: Haxorus|Outrage|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|140\/341
+|
+|turn|2
+|
+|move|p1a: Jirachi|U-turn|p2a: Haxorus
+|-damage|p2a: Haxorus|211\/293
+|
+|switch|p1a: Suicune|Suicune|400\/400
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Haxorus|Outrage|p1a: Suicune
+|-damage|p1a: Suicune|130\/400
+|
+|-end|p2a: Haxorus|rampage
+|-start|p2a: Haxorus|confusion
+|-heal|p1a: Suicune|155\/400|[from] item: Leftovers
+|turn|3
+|
+|switch|p1a: Swampert|Swampert, F|404\/404
+|-activate|p2a: Haxorus|confusion
+|move|p2a: Haxorus|Outrage|p1a: Swampert
+|-damage|p1a: Swampert|115\/404
+|
+|-heal|p1a: Swampert|140\/404|[from] item: Leftovers
+|turn|4
+|
+|-activate|p2a: Haxorus|confusion
+|-damage|p2a: Haxorus|121\/293|[from] confusion
+|move|p1a: Swampert|Earthquake|p2a: Haxorus
+|-damage|p2a: Haxorus|0 fnt
+|faint|p2a: Haxorus
+|
+|-heal|p1a: Swampert|165\/404|[from] item: Leftovers
+|
+|switch|p2a: Gligar|Gligar, M|334\/334
+|turn|5
+|
+|move|p2a: Gligar|Toxic|p1a: Swampert
+|-status|p1a: Swampert|tox
+|move|p1a: Swampert|Scald|p2a: Gligar
+|-supereffective|p2a: Gligar
+|-damage|p2a: Gligar|226\/334
+|-status|p2a: Gligar|brn
+|
+|-heal|p1a: Swampert|190\/404 tox|[from] item: Leftovers
+|-damage|p2a: Gligar|185\/334 brn|[from] brn
+|-damage|p1a: Swampert|165\/404 tox|[from] psn
+|turn|6
+|
+|switch|p1a: Machamp|Machamp, M|321\/321
+|move|p2a: Gligar|Roost|p2a: Gligar
+|-heal|p2a: Gligar|334\/334 brn
+|
+|-damage|p2a: Gligar|293\/334 brn|[from] brn
+|turn|7
+|
+|switch|p2a: Arcanine|Arcanine, F|384\/384
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Machamp
+|-unboost|p1a: Machamp|atk|1
+|move|p1a: Machamp|Knock Off|p2a: Arcanine
+|-damage|p2a: Arcanine|283\/384
+|-damage|p1a: Machamp|268\/321|[from] item: Rocky Helmet|[of] p2a: Arcanine
+|-enditem|p2a: Arcanine|Rocky Helmet|[from] move: Knock Off|[of] p1a: Machamp
+|
+|turn|8
+|
+|switch|p1a: Swampert|Swampert, F|165\/404 tox
+|move|p2a: Arcanine|Morning Sun|p2a: Arcanine
+|-heal|p2a: Arcanine|384\/384
+|
+|-heal|p1a: Swampert|190\/404 tox|[from] item: Leftovers
+|-damage|p1a: Swampert|165\/404 tox|[from] psn
+|turn|9
+|
+|switch|p2a: Gligar|Gligar, M|293\/334 brn
+|move|p1a: Swampert|Stealth Rock|p2a: Gligar
+|-sidestart|p2: ZZNN|move: Stealth Rock
+|
+|-heal|p1a: Swampert|190\/404 tox|[from] item: Leftovers
+|-damage|p2a: Gligar|252\/334 brn|[from] brn
+|-damage|p1a: Swampert|140\/404 tox|[from] psn
+|turn|10
+|
+|switch|p1a: Machamp|Machamp, M|268\/321
+|move|p2a: Gligar|Defog|p1a: Machamp
+|-unboost|p1a: Machamp|evasion|1
+|-sideend|p2: ZZNN|Stealth Rock|[from] move: Defog|[of] p2a: Gligar
+|
+|-damage|p2a: Gligar|211\/334 brn|[from] brn
+|turn|11
+|
+|switch|p2a: Arcanine|Arcanine, F|384\/384
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Machamp
+|-unboost|p1a: Machamp|atk|1
+|move|p1a: Machamp|Knock Off|p2a: Arcanine
+|-damage|p2a: Arcanine|317\/384
+|
+|turn|12
+|
+|switch|p1a: Suicune|Suicune|155\/400
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Arcanine|Flare Blitz|p1a: Suicune
+|-resisted|p1a: Suicune
+|-damage|p1a: Suicune|107\/400
+|-status|p1a: Suicune|brn
+|-damage|p2a: Arcanine|301\/384|[from] recoil|[of] p1a: Suicune
+|
+|-heal|p1a: Suicune|132\/400 brn|[from] item: Leftovers
+|-damage|p1a: Suicune|82\/400 brn|[from] brn
+|turn|13
+|
+|switch|p2a: Jirachi|Jirachi|341\/341
+|move|p1a: Suicune|Rest|p1a: Suicune
+|-status|p1a: Suicune|slp
+|-heal|p1a: Suicune|400\/400 slp|[silent]
+|-status|p1a: Suicune|slp|[from] move: Rest
+|
+|turn|14
+|
+|switch|p1a: Swampert|Swampert, F|140\/404 tox
+|move|p2a: Jirachi|U-turn|p1a: Swampert
+|-crit|p1a: Swampert
+|-damage|p1a: Swampert|54\/404 tox
+|
+|switch|p2a: Suicune|Suicune, shiny|404\/404
+|-ability|p2a: Suicune|Pressure
+|
+|-heal|p1a: Swampert|79\/404 tox|[from] item: Leftovers
+|-damage|p1a: Swampert|54\/404 tox|[from] psn
+|turn|15
+|
+|move|p2a: Suicune|Scald|p1a: Swampert
+|-damage|p1a: Swampert|0 fnt
+|faint|p1a: Swampert
+|
+|
+|switch|p1a: Jirachi|Jirachi|140\/341
+|turn|16
+|
+|switch|p2a: Jirachi|Jirachi|341\/341
+|move|p1a: Jirachi|Trick|p2a: Jirachi
+|-activate|p1a: Jirachi|move: Trick|[of] p2a: Jirachi
+|-item|p2a: Jirachi|Choice Scarf|[from] move: Trick
+|-item|p1a: Jirachi|Choice Scarf|[from] move: Trick
+|
+|turn|17
+|
+|move|p1a: Jirachi|U-turn|p2a: Jirachi
+|-damage|p2a: Jirachi|267\/341
+|
+|switch|p1a: Crobat|Crobat, M|325\/325
+|move|p2a: Jirachi|U-turn|p1a: Crobat
+|-resisted|p1a: Crobat
+|-damage|p1a: Crobat|304\/325
+|
+|switch|p2a: Umbreon|Umbreon, F, shiny|394\/394
+|
+|-heal|p1a: Crobat|324\/325|[from] item: Black Sludge
+|turn|18
+|
+|switch|p1a: Machamp|Machamp, M|268\/321
+|move|p2a: Umbreon|Heal Bell|p2a: Umbreon
+|-cureteam|p2a: Umbreon|[from] move: HealBell
+|
+|turn|19
+|
+|switch|p2a: Arcanine|Arcanine, F|301\/384
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Machamp
+|-unboost|p1a: Machamp|atk|1
+|move|p1a: Machamp|Close Combat|p2a: Arcanine
+|-damage|p2a: Arcanine|108\/384
+|-unboost|p1a: Machamp|def|1
+|-unboost|p1a: Machamp|spd|1
+|
+|turn|20
+|join|Shit user
+|c| Shit user|ur gonna lose
+|c|âfeng the bob|k
+|c| Shit user|stay in
+|
+|switch|p1a: Suicune|Suicune|400\/400 slp
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Arcanine|Morning Sun|p2a: Arcanine
+|-heal|p2a: Arcanine|300\/384
+|
+|turn|21
+|
+|switch|p2a: Gligar|Gligar, M|211\/334
+|cant|p1a: Suicune|slp
+|move|p1a: Suicune|Sleep Talk|p1a: Suicune
+|move|p1a: Suicune|Scald|p2a: Gligar|[from]Sleep Talk
+|-supereffective|p2a: Gligar
+|-damage|p2a: Gligar|109\/334
+|
+|turn|22
+|c| Shit user|told u u run max speed and shit
+|c| Shit user|wait
+|c| Shit user|why is gligar
+|
+|cant|p1a: Suicune|slp
+|move|p1a: Suicune|Sleep Talk|p1a: Suicune
+|move|p1a: Suicune|Scald|p2a: Gligar|[from]Sleep Talk
+|-supereffective|p2a: Gligar
+|-damage|p2a: Gligar|0 fnt
+|faint|p2a: Gligar
+|
+|c| Shit user|the counter
+|c| Shit user|what
+|
+|switch|p2a: Jirachi|Jirachi|267\/341
+|turn|23
+|c| Shit user|you have cune
+|c| Shit user|and umbreon
+|c| Shit user|cool
+|c| Shit user|dont trick yet just u turn
+|
+|switch|p1a: Crobat|Crobat, M|324\/325
+|move|p2a: Jirachi|Iron Head|p1a: Crobat
+|-damage|p1a: Crobat|186\/325
+|
+|-heal|p1a: Crobat|206\/325|[from] item: Black Sludge
+|turn|24
+|
+|switch|p2a: Suicune|Suicune, shiny|404\/404
+|-ability|p2a: Suicune|Pressure
+|switch|p1a: Suicune|Suicune|400\/400 slp
+|-ability|p1a: Suicune|Pressure
+|
+|turn|25
+|c| Shit user|hes inner focus bat u tard theres no point
+|
+|switch|p1a: Crobat|Crobat, M|206\/325
+|move|p2a: Suicune|Scald|p1a: Crobat
+|-damage|p1a: Crobat|97\/325
+|-status|p1a: Crobat|brn
+|
+|-heal|p1a: Crobat|117\/325 brn|[from] item: Black Sludge
+|-damage|p1a: Crobat|77\/325 brn|[from] brn
+|turn|26
+|c| Shit user|why are y'all niggas dumb as fuck
+|
+|move|p1a: Crobat|Toxic|p2a: Suicune
+|-status|p2a: Suicune|tox
+|move|p2a: Suicune|Scald|p1a: Crobat
+|-damage|p1a: Crobat|0 fnt
+|faint|p1a: Crobat
+|
+|-damage|p2a: Suicune|379\/404 tox|[from] psn
+|c| Shit user|sending in non counters
+|c| Shit user|fucking smh
+|
+|switch|p1a: Machamp|Machamp, M|268\/321
+|turn|27
+|c| Shit user|just crocune vs crocune
+|c| Shit user|so neither of you can use it
+|
+|switch|p2a: Arcanine|Arcanine, F|300\/384
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Machamp
+|-unboost|p1a: Machamp|atk|1
+|move|p1a: Machamp|Low Kick|p2a: Arcanine
+|-damage|p2a: Arcanine|129\/384
+|
+|turn|28
+|c| Shit user|wtf
+|
+|move|p2a: Arcanine|Morning Sun|p2a: Arcanine
+|-heal|p2a: Arcanine|321\/384
+|move|p1a: Machamp|Low Kick|p2a: Arcanine
+|-damage|p2a: Arcanine|167\/384
+|
+|turn|29
+|c| Shit user|theres no point carryin low lick
+|
+|move|p2a: Arcanine|Flare Blitz|p1a: Machamp
+|-damage|p1a: Machamp|88\/321
+|-damage|p2a: Arcanine|108\/384|[from] recoil|[of] p1a: Machamp
+|move|p1a: Machamp|Low Kick|p2a: Arcanine
+|-damage|p2a: Arcanine|0 fnt
+|faint|p2a: Arcanine
+|
+|
+|switch|p2a: Jirachi|Jirachi|267\/341
+|turn|30
+|
+|switch|p1a: Jirachi|Jirachi|140\/341
+|move|p2a: Jirachi|Iron Head|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|84\/341
+|
+|turn|31
+|c| Shit user|low kick cc knock off and what
+|
+|move|p2a: Jirachi|Iron Head|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|21\/341
+|cant|p1a: Jirachi|flinch
+|
+|turn|32
+|
+|switch|p1a: Suicune|Suicune|400\/400 slp
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Jirachi|Iron Head|p1a: Suicune
+|-resisted|p1a: Suicune
+|-damage|p1a: Suicune|362\/400 slp
+|
+|-heal|p1a: Suicune|387\/400 slp|[from] item: Leftovers
+|turn|33
+|
+|switch|p2a: Suicune|Suicune, shiny|379\/404 tox
+|-ability|p2a: Suicune|Pressure
+|switch|p1a: Jirachi|Jirachi|21\/341
+|
+|-heal|p2a: Suicune|404\/404 tox|[from] item: Leftovers
+|-damage|p2a: Suicune|379\/404 tox|[from] psn
+|turn|34
+|
+|switch|p2a: Jirachi|Jirachi|267\/341
+|move|p1a: Jirachi|Healing Wish|p1a: Jirachi
+|faint|p1a: Jirachi
+|
+|
+|switch|p1a: Machamp|Machamp, M|88\/321
+|-heal|p1a: Machamp|321\/321|[from] move: Healing Wish
+|turn|35
+|
+|move|p2a: Jirachi|Trick|p1a: Machamp
+|-activate|p2a: Jirachi|move: Trick|[of] p1a: Machamp
+|-item|p1a: Machamp|Choice Scarf|[from] move: Trick
+|-item|p2a: Jirachi|Choice Band|[from] move: Trick
+|move|p1a: Machamp|Close Combat|p2a: Jirachi
+|-damage|p2a: Jirachi|15\/341
+|-unboost|p1a: Machamp|def|1
+|-unboost|p1a: Machamp|spd|1
+|
+|turn|36
+|
+|switch|p1a: Suicune|Suicune|387\/400 slp
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Jirachi|Iron Head|p1a: Suicune
+|-resisted|p1a: Suicune
+|-damage|p1a: Suicune|333\/400 slp
+|
+|-heal|p1a: Suicune|358\/400 slp|[from] item: Leftovers
+|turn|37
+|
+|move|p2a: Jirachi|Iron Head|p1a: Suicune
+|-resisted|p1a: Suicune
+|-damage|p1a: Suicune|301\/400 slp
+|-curestatus|p1a: Suicune|slp
+|move|p1a: Suicune|Sleep Talk|p1a: Suicune
+|-fail|p1a: Suicune
+|
+|-heal|p1a: Suicune|326\/400|[from] item: Leftovers
+|turn|38
+|
+|switch|p2a: Umbreon|Umbreon, F, shiny|394\/394
+|move|p1a: Suicune|Scald|p2a: Umbreon
+|-damage|p2a: Umbreon|345\/394
+|-status|p2a: Umbreon|brn
+|-status|p1a: Suicune|brn
+|
+|-heal|p1a: Suicune|351\/400 brn|[from] item: Leftovers
+|-heal|p2a: Umbreon|369\/394 brn|[from] item: Leftovers
+|-damage|p1a: Suicune|301\/400 brn|[from] brn
+|-damage|p2a: Umbreon|320\/394 brn|[from] brn
+|turn|39
+|
+|switch|p1a: Machamp|Machamp, M|321\/321
+|switch|p2a: Jirachi|Jirachi|15\/341
+|
+|turn|40
+|
+|move|p2a: Jirachi|Iron Head|p1a: Machamp
+|-damage|p1a: Machamp|122\/321
+|cant|p1a: Machamp|flinch
+|
+|turn|41
+|
+|switch|p1a: Suicune|Suicune|301\/400 brn
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Jirachi|Iron Head|p1a: Suicune
+|-resisted|p1a: Suicune
+|-damage|p1a: Suicune|247\/400 brn
+|
+|-heal|p1a: Suicune|272\/400 brn|[from] item: Leftovers
+|-damage|p1a: Suicune|222\/400 brn|[from] brn
+|turn|42
+|
+|move|p2a: Jirachi|Iron Head|p1a: Suicune
+|-resisted|p1a: Suicune
+|-damage|p1a: Suicune|163\/400 brn
+|move|p1a: Suicune|Rest|p1a: Suicune
+|-status|p1a: Suicune|slp
+|-heal|p1a: Suicune|400\/400 slp|[silent]
+|-status|p1a: Suicune|slp|[from] move: Rest
+|
+|turn|43
+|c|âZZNN|where is serene grace
+|
+|switch|p2a: Umbreon|Umbreon, F, shiny|320\/394 brn
+|cant|p1a: Suicune|slp
+|move|p1a: Suicune|Sleep Talk|p1a: Suicune
+|move|p1a: Suicune|Calm Mind|p1a: Suicune|[from]Sleep Talk
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|
+|-heal|p2a: Umbreon|344\/394 brn|[from] item: Leftovers
+|-damage|p2a: Umbreon|295\/394 brn|[from] brn
+|turn|44
+|
+|switch|p1a: Machamp|Machamp, M|122\/321
+|move|p2a: Umbreon|Heal Bell|p2a: Umbreon
+|-cureteam|p2a: Umbreon|[from] move: HealBell
+|
+|-heal|p2a: Umbreon|319\/394|[from] item: Leftovers
+|turn|45
+|
+|move|p2a: Umbreon|Protect|p2a: Umbreon
+|-singleturn|p2a: Umbreon|Protect
+|move|p1a: Machamp|Knock Off|p2a: Umbreon
+|-activate|p2a: Umbreon|Protect
+|
+|-heal|p2a: Umbreon|343\/394|[from] item: Leftovers
+|turn|46
+|
+|move|p1a: Machamp|Knock Off|p2a: Umbreon
+|-resisted|p2a: Umbreon
+|-damage|p2a: Umbreon|287\/394
+|-enditem|p2a: Umbreon|Leftovers|[from] move: Knock Off|[of] p1a: Machamp
+|move|p2a: Umbreon|Foul Play|p1a: Machamp
+|-resisted|p1a: Machamp
+|-damage|p1a: Machamp|16\/321
+|
+|turn|47
+|c|âZZNN|5%
+|
+|switch|p1a: Suicune|Suicune|400\/400 slp
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Umbreon|Wish|p2a: Umbreon
+|
+|turn|48
+|c|âZZNN|please
+|c|âZZNN|luck
+|
+|switch|p2a: Jirachi|Jirachi|15\/341
+|cant|p1a: Suicune|slp
+|move|p1a: Suicune|Sleep Talk|p1a: Suicune
+|move|p1a: Suicune|Calm Mind|p1a: Suicune|[from]Sleep Talk
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|
+|-heal|p2a: Jirachi|212\/341|[from] move: Wish|[wisher] Umbreon
+|turn|49
+|c|âZZNN|yeahhhhhhhhhhhhhhhhhhhhhhhhh
+|
+|switch|p1a: Machamp|Machamp, M|16\/321
+|move|p2a: Jirachi|U-turn|p1a: Machamp
+|-resisted|p1a: Machamp
+|-damage|p1a: Machamp|0 fnt
+|faint|p1a: Machamp
+|
+|switch|p2a: Suicune|Suicune, shiny|379\/404
+|-ability|p2a: Suicune|Pressure
+|
+|-heal|p2a: Suicune|404\/404|[from] item: Leftovers
+|
+|switch|p1a: Zygarde|Zygarde|357\/357
+|-ability|p1a: Zygarde|Aura Break
+|turn|50
+|
+|move|p1a: Zygarde|Dragon Dance|p1a: Zygarde
+|-boost|p1a: Zygarde|atk|1
+|-boost|p1a: Zygarde|spe|1
+|move|p2a: Suicune|Ice Beam|p1a: Zygarde
+|-crit|p1a: Zygarde
+|-supereffective|p1a: Zygarde
+|-damage|p1a: Zygarde|0 fnt
+|faint|p1a: Zygarde
+|
+|
+|switch|p1a: Suicune|Suicune|400\/400 slp
+|-ability|p1a: Suicune|Pressure
+|turn|51
+|c|âZZNN|my god
+|
+|switch|p2a: Jirachi|Jirachi|212\/341
+|-curestatus|p1a: Suicune|slp
+|move|p1a: Suicune|Sleep Talk|p1a: Suicune
+|-fail|p1a: Suicune
+|
+|turn|52
+|
+|move|p2a: Jirachi|Trick|p1a: Suicune
+|-activate|p2a: Jirachi|move: Trick|[of] p1a: Suicune
+|-item|p1a: Suicune|Choice Band|[from] move: Trick
+|-item|p2a: Jirachi|Leftovers|[from] move: Trick
+|move|p1a: Suicune|Scald|p2a: Jirachi
+|-damage|p2a: Jirachi|122\/341
+|
+|-heal|p2a: Jirachi|143\/341|[from] item: Leftovers
+|turn|53
+|c|âZZNN|gg
+|
+|switch|p2a: Suicune|Suicune, shiny|404\/404
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Suicune|Scald|p2a: Suicune
+|-resisted|p2a: Suicune
+|-damage|p2a: Suicune|369\/404
+|-status|p2a: Suicune|brn
+|
+|-heal|p2a: Suicune|394\/404 brn|[from] item: Leftovers
+|-damage|p2a: Suicune|344\/404 brn|[from] brn
+|turn|54
+|
+|move|p1a: Suicune|Scald|p2a: Suicune
+|-resisted|p2a: Suicune
+|-damage|p2a: Suicune|312\/404 brn
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|
+|turn|55
+|c|âZZNN|struggle band
+|
+|move|p1a: Suicune|Scald|p2a: Suicune
+|-resisted|p2a: Suicune
+|-damage|p2a: Suicune|366\/404 slp
+|cant|p2a: Suicune|slp
+|
+|-heal|p2a: Suicune|391\/404 slp|[from] item: Leftovers
+|turn|56
+|-message|feng the bob forfeited.
+|
+|win|ZZNN
+|raw|Ladder updating...
+|raw|feng the bob's rating: 1708 &rarr; <strong>1681<\/strong><br \/>(-27 for losing)
+|raw|ZZNN's rating: 1571 &rarr; <strong>1598<\/strong><br \/>(+27 for winning)
+|leave|feng the bob
+|player|p1

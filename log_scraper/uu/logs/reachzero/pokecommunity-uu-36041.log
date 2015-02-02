@@ -1,0 +1,1463 @@
+|join|reachzero
+|join|charles ramsey
+|player|p1|reachzero|15
+|player|p2|charles ramsey|24
+|gametype|singles
+|tier|UU
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Zapdos
+|poke|p1|Mew, shiny
+|poke|p1|Suicune
+|poke|p1|Froslass, F, shiny
+|poke|p1|Nidoqueen, F
+|poke|p1|Snorlax, F, shiny
+|poke|p2|Snorlax, F
+|poke|p2|Gligar, F
+|poke|p2|Blastoise, M
+|poke|p2|Heracross, F
+|poke|p2|Sableye, F
+|poke|p2|Roselia, F
+|teampreview
+|callback|decision
+|chat|charles ramsey|Are sprites just not working
+|chat|charles ramsey|or something
+|chat|charles ramsey|ah
+|chat|charles ramsey|there we go
+|
+|start
+|switch|p1a: Nidoqueen|Nidoqueen, F|363\/363
+|switch|p2a: Earthworm|Sableye, F|304\/304
+|turn|1
+|callback|decision
+|
+|move|p2a: Earthworm|Taunt|p1a: Nidoqueen
+|-start|p1a: Nidoqueen|move: Taunt
+|move|p1a: Nidoqueen|Earth Power|p2a: Earthworm
+|-damage|p2a: Earthworm|120\/304
+|
+|-heal|p2a: Earthworm|139\/304|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p2a: Earthworm|Blastoise, M|362\/362
+|move|p1a: Nidoqueen|Earth Power|p2a: Earthworm
+|-damage|p2a: Earthworm|152\/362
+|
+|-heal|p2a: Earthworm|174\/362|[from] item: Leftovers
+|turn|3
+|callback|decision
+|chat|charles ramsey|oh i forgot eo uses shit spreads
+|
+|switch|p2a: Earthworm|Snorlax, F|524\/524
+|move|p1a: Nidoqueen|Earth Power|p2a: Earthworm
+|-damage|p2a: Earthworm|389\/524
+|
+|-heal|p2a: Earthworm|421\/524|[from] item: Leftovers
+|-end|p1a: Nidoqueen|move: Taunt
+|turn|4
+|callback|decision
+|
+|switch|p1a: Mew|Mew, shiny|404\/404
+|move|p2a: Earthworm|Body Slam|p1a: Mew
+|-damage|p1a: Mew|286\/404
+|-status|p1a: Mew|par
+|-status|p2a: Earthworm|par
+|
+|-heal|p1a: Mew|311\/404 par|[from] item: Leftovers
+|-heal|p2a: Earthworm|453\/524 par|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p1a: Mew|Will-O-Wisp|p2a: Earthworm
+|-fail|p2a: Earthworm
+|move|p2a: Earthworm|Body Slam|p1a: Mew
+|-damage|p1a: Mew|199\/404 par
+|
+|-heal|p1a: Mew|224\/404 par|[from] item: Leftovers
+|-heal|p2a: Earthworm|485\/524 par|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p1a: Mew|Psyshock|p2a: Earthworm
+|-crit|p2a: Earthworm
+|-damage|p2a: Earthworm|206\/524 par
+|move|p2a: Earthworm|Body Slam|p1a: Mew
+|-damage|p1a: Mew|118\/404 par
+|
+|-heal|p1a: Mew|143\/404 par|[from] item: Leftovers
+|-heal|p2a: Earthworm|238\/524 par|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p1a: Mew|Roost|p1a: Mew
+|-heal|p1a: Mew|345\/404 par
+|move|p2a: Earthworm|Rest|p2a: Earthworm
+|-status|p2a: Earthworm|slp
+|-heal|p2a: Earthworm|524\/524 slp|[silent]
+|-status|p2a: Earthworm|slp|[from] move: Rest
+|
+|-heal|p1a: Mew|370\/404 par|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|363\/363
+|cant|p2a: Earthworm|slp
+|move|p2a: Earthworm|Sleep Talk|p2a: Earthworm
+|move|p2a: Earthworm|Rest|p2a: Earthworm|[from]Sleep Talk
+|-fail|p2a: Earthworm
+|
+|turn|9
+|callback|decision
+|
+|move|p1a: Nidoqueen|Focus Blast|p2a: Earthworm
+|-supereffective|p2a: Earthworm
+|-damage|p2a: Earthworm|296\/524 slp
+|cant|p2a: Earthworm|slp
+|move|p2a: Earthworm|Sleep Talk|p2a: Earthworm
+|move|p2a: Earthworm|Body Slam|p1a: Nidoqueen|[from]Sleep Talk
+|-damage|p1a: Nidoqueen|251\/363
+|-status|p1a: Nidoqueen|par
+|
+|-heal|p2a: Earthworm|328\/524 slp|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|-curestatus|p2a: Earthworm|slp
+|move|p2a: Earthworm|Body Slam|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|130\/363 par
+|cant|p1a: Nidoqueen|par
+|
+|-heal|p2a: Earthworm|360\/524|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p1a: Froslass|Froslass, F, shiny|343\/343
+|move|p2a: Earthworm|Body Slam|p1a: Froslass
+|-immune|p1a: Froslass|[msg]
+|
+|-heal|p2a: Earthworm|392\/524|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p2a: Earthworm|Heracross, F|301\/301
+|move|p1a: Froslass|Spikes|p2a: Earthworm
+|-sidestart|p2: charles ramsey|Spikes
+|
+|turn|13
+|callback|decision
+|
+|move|p2a: Earthworm|Pursuit|p1a: Froslass|[from]Pursuit
+|-supereffective|p1a: Froslass
+|-damage|p1a: Froslass|101\/343
+|switch|p1a: Suicune|Suicune|404\/404
+|-ability|p1a: Suicune|Pressure
+|
+|turn|14
+|callback|decision
+|
+|switch|p2a: Earthworm|Roselia, F|304\/304
+|-damage|p2a: Earthworm|266\/304|[from] Spikes
+|switch|p1a: Zapdos|Zapdos|383\/383
+|-ability|p1a: Zapdos|Pressure
+|
+|turn|15
+|callback|decision
+|
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-supereffective|p2a: Earthworm
+|-damage|p2a: Earthworm|146\/304
+|move|p2a: Earthworm|Spikes|p1a: Zapdos
+|-sidestart|p1: reachzero|Spikes
+|
+|turn|16
+|callback|decision
+|
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-supereffective|p2a: Earthworm
+|-damage|p2a: Earthworm|24\/304
+|move|p2a: Earthworm|Rest|p2a: Earthworm
+|-status|p2a: Earthworm|slp
+|-heal|p2a: Earthworm|304\/304 slp|[silent]
+|-status|p2a: Earthworm|slp|[from] move: Rest
+|
+|turn|17
+|callback|decision
+|
+|switch|p1a: Froslass|Froslass, F, shiny|101\/343
+|-damage|p1a: Froslass|59\/343|[from] Spikes
+|switch|p2a: Earthworm|Snorlax, F|392\/524
+|-damage|p2a: Earthworm|327\/524|[from] Spikes
+|
+|-heal|p1a: Froslass|80\/343|[from] item: Leftovers
+|-heal|p2a: Earthworm|359\/524|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p1a: Froslass|Pain Split|p2a: Earthworm
+|-sethp|p2a: Earthworm|219\/524|p1a: Froslass|219\/343|[from] move: Pain Split
+|move|p2a: Earthworm|Whirlwind|p1a: Froslass
+|drag|p1a: Mew|Mew, shiny|370\/404 par
+|-damage|p1a: Mew|320\/404 par|[from] Spikes
+|
+|-heal|p2a: Earthworm|251\/524|[from] item: Leftovers
+|-heal|p1a: Mew|345\/404 par|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p2a: Earthworm|Body Slam|p1a: Mew
+|-damage|p1a: Mew|231\/404 par
+|cant|p1a: Mew|par
+|
+|-heal|p2a: Earthworm|283\/524|[from] item: Leftovers
+|-heal|p1a: Mew|256\/404 par|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p2a: Earthworm|Body Slam|p1a: Mew
+|-damage|p1a: Mew|150\/404 par
+|move|p1a: Mew|Taunt|p2a: Earthworm
+|-start|p2a: Earthworm|move: Taunt
+|
+|-heal|p2a: Earthworm|315\/524|[from] item: Leftovers
+|-heal|p1a: Mew|175\/404 par|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|switch|p1a: Froslass|Froslass, F, shiny|219\/343
+|-damage|p1a: Froslass|177\/343|[from] Spikes
+|move|p2a: Earthworm|Body Slam|p1a: Froslass
+|-immune|p1a: Froslass|[msg]
+|
+|-heal|p1a: Froslass|198\/343|[from] item: Leftovers
+|-heal|p2a: Earthworm|347\/524|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|switch|p2a: Earthworm|Heracross, F|301\/301
+|-damage|p2a: Earthworm|264\/301|[from] Spikes
+|move|p1a: Froslass|Spikes|p2a: Earthworm
+|-sidestart|p2: charles ramsey|Spikes
+|
+|-heal|p1a: Froslass|219\/343|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p2a: Earthworm|Pursuit|p1a: Froslass|[from]Pursuit
+|-supereffective|p1a: Froslass
+|-damage|p1a: Froslass|0 fnt
+|-start|p2a: Earthworm|Disable|Pursuit
+|faint|p1a: Froslass
+|-boost|p2a: Earthworm|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|130\/363 par
+|-damage|p1a: Nidoqueen|85\/363 par|[from] Spikes
+|turn|24
+|callback|decision
+|
+|-activate|p2a: Earthworm|move: Struggle
+|move|p2a: Earthworm|Struggle|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|0 fnt
+|-damage|p2a: Earthworm|189\/301
+|faint|p1a: Nidoqueen
+|-boost|p2a: Earthworm|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|chat|charles ramsey|yolo
+|
+|switch|p1a: Zapdos|Zapdos|383\/383
+|-ability|p1a: Zapdos|Pressure
+|turn|25
+|callback|decision
+|
+|switch|p2a: Earthworm|Roselia, F|304\/304
+|-damage|p2a: Earthworm|254\/304|[from] Spikes
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-supereffective|p2a: Earthworm
+|-damage|p2a: Earthworm|122\/304
+|
+|turn|26
+|callback|decision
+|
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-supereffective|p2a: Earthworm
+|-damage|p2a: Earthworm|2\/304
+|move|p2a: Earthworm|Rest|p2a: Earthworm
+|-status|p2a: Earthworm|slp
+|-heal|p2a: Earthworm|304\/304 slp|[silent]
+|-status|p2a: Earthworm|slp|[from] move: Rest
+|
+|turn|27
+|callback|decision
+|
+|switch|p2a: Earthworm|Snorlax, F|347\/524
+|-damage|p2a: Earthworm|260\/524|[from] Spikes
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-damage|p2a: Earthworm|187\/524
+|
+|-heal|p2a: Earthworm|219\/524|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|switch|p1a: Snorlax|Snorlax, F, shiny|461\/461
+|-damage|p1a: Snorlax|404\/461|[from] Spikes
+|move|p2a: Earthworm|Rest|p2a: Earthworm
+|-status|p2a: Earthworm|slp
+|-heal|p2a: Earthworm|524\/524 slp|[silent]
+|-status|p2a: Earthworm|slp|[from] move: Rest
+|
+|-heal|p1a: Snorlax|432\/461|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|move|p1a: Snorlax|Body Slam|p2a: Earthworm
+|-damage|p2a: Earthworm|332\/524 slp
+|cant|p2a: Earthworm|slp
+|move|p2a: Earthworm|Sleep Talk|p2a: Earthworm
+|move|p2a: Earthworm|Whirlwind|p1a: Snorlax|[from]Sleep Talk
+|drag|p1a: Mew|Mew, shiny|175\/404 par
+|-damage|p1a: Mew|125\/404 par|[from] Spikes
+|
+|-heal|p2a: Earthworm|364\/524 slp|[from] item: Leftovers
+|-heal|p1a: Mew|150\/404 par|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|move|p2a: Earthworm|Sleep Talk|p2a: Earthworm
+|move|p2a: Earthworm|Body Slam|p1a: Mew|[from]Sleep Talk
+|-damage|p1a: Mew|36\/404 par
+|move|p1a: Mew|Taunt|p2a: Earthworm
+|-start|p2a: Earthworm|move: Taunt
+|
+|-heal|p2a: Earthworm|396\/524 slp|[from] item: Leftovers
+|-heal|p1a: Mew|61\/404 par|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|-curestatus|p2a: Earthworm|slp
+|move|p2a: Earthworm|Body Slam|p1a: Mew
+|-damage|p1a: Mew|0 fnt
+|faint|p1a: Mew
+|
+|-heal|p2a: Earthworm|428\/524|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Suicune|Suicune|404\/404
+|-damage|p1a: Suicune|354\/404|[from] Spikes
+|-ability|p1a: Suicune|Pressure
+|turn|32
+|callback|decision
+|
+|move|p2a: Earthworm|Body Slam|p1a: Suicune
+|-damage|p1a: Suicune|287\/404
+|move|p1a: Suicune|Roar|p2a: Earthworm
+|drag|p2a: Earthworm|Blastoise, M|174\/362
+|-damage|p2a: Earthworm|114\/362|[from] Spikes
+|
+|-heal|p1a: Suicune|312\/404|[from] item: Leftovers
+|-heal|p2a: Earthworm|136\/362|[from] item: Leftovers
+|turn|33
+|callback|decision
+|
+|move|p1a: Suicune|Scald|p2a: Earthworm
+|-resisted|p2a: Earthworm
+|-damage|p2a: Earthworm|94\/362
+|-status|p2a: Earthworm|brn
+|move|p2a: Earthworm|Rapid Spin|p1a: Suicune
+|-damage|p1a: Suicune|306\/404
+|-sideend|p2: charles ramsey|Spikes|[from] move: Rapid Spin|[of] p2a: Earthworm
+|
+|-heal|p1a: Suicune|331\/404|[from] item: Leftovers
+|-heal|p2a: Earthworm|116\/362 brn|[from] item: Leftovers
+|-damage|p2a: Earthworm|71\/362 brn|[from] brn
+|turn|34
+|callback|decision
+|
+|move|p1a: Suicune|Scald|p2a: Earthworm
+|-resisted|p2a: Earthworm
+|-damage|p2a: Earthworm|28\/362 brn
+|move|p2a: Earthworm|Dragon Tail|p1a: Suicune
+|-damage|p1a: Suicune|318\/404
+|drag|p1a: Zapdos|Zapdos|383\/383
+|-ability|p1a: Zapdos|Pressure
+|
+|-heal|p2a: Earthworm|50\/362 brn|[from] item: Leftovers
+|-damage|p2a: Earthworm|5\/362 brn|[from] brn
+|turn|35
+|callback|decision
+|
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-damage|p2a: Earthworm|0 fnt
+|faint|p2a: Earthworm
+|
+|callback|decision
+|
+|switch|p2a: Earthworm|Sableye, F|139\/304
+|turn|36
+|callback|decision
+|
+|switch|p1a: Suicune|Suicune|318\/404
+|-damage|p1a: Suicune|268\/404|[from] Spikes
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Earthworm|Recover|p2a: Earthworm
+|-heal|p2a: Earthworm|291\/304
+|
+|-heal|p1a: Suicune|293\/404|[from] item: Leftovers
+|-heal|p2a: Earthworm|304\/304|[from] item: Leftovers
+|turn|37
+|callback|decision
+|
+|move|p2a: Earthworm|Will-O-Wisp|p1a: Suicune
+|-status|p1a: Suicune|brn
+|move|p1a: Suicune|Scald|p2a: Earthworm
+|-damage|p2a: Earthworm|228\/304
+|
+|-heal|p1a: Suicune|318\/404 brn|[from] item: Leftovers
+|-heal|p2a: Earthworm|247\/304|[from] item: Leftovers
+|-damage|p1a: Suicune|268\/404 brn|[from] brn
+|turn|38
+|callback|decision
+|
+|move|p2a: Earthworm|Taunt|p1a: Suicune
+|-start|p1a: Suicune|move: Taunt
+|move|p1a: Suicune|Scald|p2a: Earthworm
+|-damage|p2a: Earthworm|169\/304
+|
+|-heal|p1a: Suicune|293\/404 brn|[from] item: Leftovers
+|-heal|p2a: Earthworm|188\/304|[from] item: Leftovers
+|-damage|p1a: Suicune|243\/404 brn|[from] brn
+|turn|39
+|callback|decision
+|
+|move|p1a: Suicune|Scald|p2a: Earthworm
+|-damage|p2a: Earthworm|103\/304
+|-status|p2a: Earthworm|brn
+|move|p2a: Earthworm|Night Shade|p1a: Suicune
+|-damage|p1a: Suicune|143\/404 brn
+|
+|-heal|p1a: Suicune|168\/404 brn|[from] item: Leftovers
+|-heal|p2a: Earthworm|122\/304 brn|[from] item: Leftovers
+|-damage|p1a: Suicune|118\/404 brn|[from] brn
+|-damage|p2a: Earthworm|84\/304 brn|[from] brn
+|turn|40
+|callback|decision
+|
+|move|p2a: Earthworm|Recover|p2a: Earthworm
+|-heal|p2a: Earthworm|236\/304 brn
+|move|p1a: Suicune|Scald|p2a: Earthworm
+|-damage|p2a: Earthworm|151\/304 brn
+|
+|-heal|p1a: Suicune|143\/404 brn|[from] item: Leftovers
+|-heal|p2a: Earthworm|170\/304 brn|[from] item: Leftovers
+|-damage|p1a: Suicune|93\/404 brn|[from] brn
+|-damage|p2a: Earthworm|132\/304 brn|[from] brn
+|-end|p1a: Suicune|move: Taunt
+|turn|41
+|callback|decision
+|
+|move|p1a: Suicune|Scald|p2a: Earthworm
+|-damage|p2a: Earthworm|45\/304 brn
+|move|p2a: Earthworm|Night Shade|p1a: Suicune
+|-damage|p1a: Suicune|0 fnt
+|faint|p1a: Suicune
+|
+|-heal|p2a: Earthworm|64\/304 brn|[from] item: Leftovers
+|-damage|p2a: Earthworm|26\/304 brn|[from] brn
+|callback|decision
+|
+|switch|p1a: Snorlax|Snorlax, F, shiny|432\/461
+|-damage|p1a: Snorlax|375\/461|[from] Spikes
+|turn|42
+|callback|decision
+|
+|move|p2a: Earthworm|Will-O-Wisp|p1a: Snorlax
+|-status|p1a: Snorlax|brn
+|move|p1a: Snorlax|Earthquake|p2a: Earthworm
+|-damage|p2a: Earthworm|0 fnt
+|faint|p2a: Earthworm
+|
+|-heal|p1a: Snorlax|403\/461 brn|[from] item: Leftovers
+|-damage|p1a: Snorlax|346\/461 brn|[from] brn
+|callback|decision
+|
+|switch|p2a: Earthworm|Gligar, F|334\/334
+|turn|43
+|callback|decision
+|
+|move|p2a: Earthworm|Stealth Rock|p1a: Snorlax
+|-sidestart|p1: reachzero|move: Stealth Rock
+|move|p1a: Snorlax|Body Slam|p2a: Earthworm
+|-damage|p2a: Earthworm|300\/334
+|-status|p2a: Earthworm|par
+|
+|-heal|p1a: Snorlax|374\/461 brn|[from] item: Leftovers
+|-damage|p1a: Snorlax|317\/461 brn|[from] brn
+|turn|44
+|callback|decision
+|
+|move|p1a: Snorlax|Body Slam|p2a: Earthworm
+|-crit|p2a: Earthworm
+|-damage|p2a: Earthworm|233\/334 par
+|move|p2a: Earthworm|Earthquake|p1a: Snorlax
+|-damage|p1a: Snorlax|185\/461 brn
+|
+|-heal|p1a: Snorlax|213\/461 brn|[from] item: Leftovers
+|-damage|p1a: Snorlax|156\/461 brn|[from] brn
+|turn|45
+|callback|decision
+|
+|move|p1a: Snorlax|Body Slam|p2a: Earthworm
+|-damage|p2a: Earthworm|196\/334 par
+|cant|p2a: Earthworm|par
+|
+|-heal|p1a: Snorlax|184\/461 brn|[from] item: Leftovers
+|-damage|p1a: Snorlax|127\/461 brn|[from] brn
+|turn|46
+|callback|decision
+|
+|move|p1a: Snorlax|Body Slam|p2a: Earthworm
+|-damage|p2a: Earthworm|162\/334 par
+|move|p2a: Earthworm|Earthquake|p1a: Snorlax
+|-damage|p1a: Snorlax|0 fnt
+|faint|p1a: Snorlax
+|
+|callback|decision
+|
+|switch|p1a: Zapdos|Zapdos|383\/383
+|-damage|p1a: Zapdos|288\/383|[from] Stealth Rock
+|-ability|p1a: Zapdos|Pressure
+|turn|47
+|callback|decision
+|chat|charles ramsey|gg
+|
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-start|p1a: Zapdos|Substitute
+|-damage|p1a: Zapdos|193\/383
+|move|p2a: Earthworm|Toxic|p1a: Zapdos
+|
+|-heal|p1a: Zapdos|216\/383|[from] item: Leftovers
+|turn|48
+|callback|decision
+|chat|charles ramsey|o
+|chat|charles ramsey|hm
+|
+|switch|p2a: Earthworm|Snorlax, F|428\/524
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|383\/383
+|
+|-heal|p2a: Earthworm|460\/524|[from] item: Leftovers
+|turn|49
+|callback|decision
+|
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-damage|p2a: Earthworm|376\/524
+|move|p2a: Earthworm|Body Slam|p1a: Zapdos
+|-end|p1a: Zapdos|Substitute
+|
+|-heal|p2a: Earthworm|408\/524|[from] item: Leftovers
+|turn|50
+|callback|decision
+|
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-start|p1a: Zapdos|Substitute
+|-damage|p1a: Zapdos|288\/383
+|move|p2a: Earthworm|Body Slam|p1a: Zapdos
+|-end|p1a: Zapdos|Substitute
+|
+|-heal|p1a: Zapdos|311\/383|[from] item: Leftovers
+|-heal|p2a: Earthworm|440\/524|[from] item: Leftovers
+|turn|51
+|callback|decision
+|
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-start|p1a: Zapdos|Substitute
+|-damage|p1a: Zapdos|216\/383
+|move|p2a: Earthworm|Body Slam|p1a: Zapdos
+|-end|p1a: Zapdos|Substitute
+|
+|-heal|p1a: Zapdos|239\/383|[from] item: Leftovers
+|-heal|p2a: Earthworm|472\/524|[from] item: Leftovers
+|turn|52
+|callback|decision
+|
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-start|p1a: Zapdos|Substitute
+|-damage|p1a: Zapdos|144\/383
+|move|p2a: Earthworm|Body Slam|p1a: Zapdos
+|-end|p1a: Zapdos|Substitute
+|
+|-heal|p1a: Zapdos|167\/383|[from] item: Leftovers
+|-heal|p2a: Earthworm|504\/524|[from] item: Leftovers
+|turn|53
+|callback|decision
+|
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-start|p1a: Zapdos|Substitute
+|-damage|p1a: Zapdos|72\/383
+|move|p2a: Earthworm|Body Slam|p1a: Zapdos
+|-end|p1a: Zapdos|Substitute
+|
+|-heal|p1a: Zapdos|95\/383|[from] item: Leftovers
+|-heal|p2a: Earthworm|524\/524|[from] item: Leftovers
+|turn|54
+|callback|decision
+|
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|287\/383
+|move|p2a: Earthworm|Body Slam|p1a: Zapdos
+|-damage|p1a: Zapdos|182\/383
+|-status|p1a: Zapdos|par
+|
+|-heal|p1a: Zapdos|205\/383 par|[from] item: Leftovers
+|turn|55
+|callback|decision
+|
+|move|p2a: Earthworm|Body Slam|p1a: Zapdos
+|-damage|p1a: Zapdos|91\/383 par
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|283\/383 par
+|
+|-heal|p1a: Zapdos|306\/383 par|[from] item: Leftovers
+|turn|56
+|callback|decision
+|
+|switch|p2a: Earthworm|Heracross, F|189\/301
+|cant|p1a: Zapdos|par
+|
+|-heal|p1a: Zapdos|329\/383 par|[from] item: Leftovers
+|turn|57
+|callback|decision
+|
+|move|p2a: Earthworm|Megahorn|p1a: Zapdos
+|-resisted|p1a: Zapdos
+|-damage|p1a: Zapdos|225\/383 par
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-supereffective|p2a: Earthworm
+|-damage|p2a: Earthworm|0 fnt
+|faint|p2a: Earthworm
+|
+|-heal|p1a: Zapdos|248\/383 par|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Earthworm|Roselia, F|304\/304
+|turn|58
+|callback|decision
+|
+|move|p2a: Earthworm|Spikes|p1a: Zapdos
+|-sidestart|p1: reachzero|Spikes
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-supereffective|p2a: Earthworm
+|-damage|p2a: Earthworm|176\/304
+|
+|-heal|p1a: Zapdos|271\/383 par|[from] item: Leftovers
+|turn|59
+|callback|decision
+|
+|move|p2a: Earthworm|Toxic Spikes|p1a: Zapdos
+|-sidestart|p1: reachzero|move: Toxic Spikes
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-supereffective|p2a: Earthworm
+|-damage|p2a: Earthworm|50\/304
+|
+|-heal|p1a: Zapdos|294\/383 par|[from] item: Leftovers
+|turn|60
+|callback|decision
+|
+|move|p2a: Earthworm|Rest|p2a: Earthworm
+|-status|p2a: Earthworm|slp
+|-heal|p2a: Earthworm|304\/304 slp|[silent]
+|-status|p2a: Earthworm|slp|[from] move: Rest
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-supereffective|p2a: Earthworm
+|-damage|p2a: Earthworm|170\/304 slp
+|
+|-heal|p1a: Zapdos|317\/383 par|[from] item: Leftovers
+|turn|61
+|callback|decision
+|
+|switch|p2a: Earthworm|Snorlax, F|524\/524
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-damage|p2a: Earthworm|433\/524
+|
+|-heal|p2a: Earthworm|465\/524|[from] item: Leftovers
+|-heal|p1a: Zapdos|340\/383 par|[from] item: Leftovers
+|turn|62
+|callback|decision
+|chat|charles ramsey|ugh do you really wanna play this 
+|
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-start|p1a: Zapdos|Substitute
+|-damage|p1a: Zapdos|245\/383 par
+|move|p2a: Earthworm|Whirlwind|p1a: Zapdos
+|
+|-heal|p2a: Earthworm|497\/524|[from] item: Leftovers
+|-heal|p1a: Zapdos|268\/383 par|[from] item: Leftovers
+|turn|63
+|callback|decision
+|chat|reachzero|yrd
+|chat|reachzero|*yes
+|
+|cant|p1a: Zapdos|par
+|move|p2a: Earthworm|Whirlwind|p1a: Zapdos
+|
+|-heal|p2a: Earthworm|524\/524|[from] item: Leftovers
+|-heal|p1a: Zapdos|291\/383 par|[from] item: Leftovers
+|turn|64
+|callback|decision
+|
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-damage|p2a: Earthworm|458\/524
+|move|p2a: Earthworm|Whirlwind|p1a: Zapdos
+|
+|-heal|p2a: Earthworm|490\/524|[from] item: Leftovers
+|-heal|p1a: Zapdos|314\/383 par|[from] item: Leftovers
+|turn|65
+|callback|decision
+|
+|move|p2a: Earthworm|Rest|p2a: Earthworm
+|-status|p2a: Earthworm|slp
+|-heal|p2a: Earthworm|524\/524 slp|[silent]
+|-status|p2a: Earthworm|slp|[from] move: Rest
+|cant|p1a: Zapdos|par
+|
+|-heal|p1a: Zapdos|337\/383 par|[from] item: Leftovers
+|turn|66
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|move|p2a: Earthworm|Sleep Talk|p2a: Earthworm
+|move|p2a: Earthworm|Rest|p2a: Earthworm|[from]Sleep Talk
+|-fail|p2a: Earthworm
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-damage|p2a: Earthworm|457\/524 slp
+|
+|-heal|p2a: Earthworm|489\/524 slp|[from] item: Leftovers
+|-heal|p1a: Zapdos|360\/383 par|[from] item: Leftovers
+|turn|67
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|cant|p1a: Zapdos|par
+|
+|-heal|p2a: Earthworm|521\/524 slp|[from] item: Leftovers
+|-heal|p1a: Zapdos|383\/383 par|[from] item: Leftovers
+|turn|68
+|callback|decision
+|
+|switch|p2a: Earthworm|Roselia, F|170\/304
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-fail|p1a: Zapdos|move: Substitute
+|
+|turn|69
+|callback|decision
+|
+|switch|p2a: Earthworm|Snorlax, F|521\/524 slp
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-damage|p2a: Earthworm|451\/524 slp
+|
+|-heal|p2a: Earthworm|483\/524 slp|[from] item: Leftovers
+|turn|70
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-damage|p2a: Earthworm|393\/524 slp
+|
+|-heal|p2a: Earthworm|425\/524 slp|[from] item: Leftovers
+|turn|71
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-damage|p2a: Earthworm|341\/524 slp
+|
+|-heal|p2a: Earthworm|373\/524 slp|[from] item: Leftovers
+|turn|72
+|callback|decision
+|
+|switch|p2a: Earthworm|Roselia, F|170\/304
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-supereffective|p2a: Earthworm
+|-damage|p2a: Earthworm|42\/304
+|
+|turn|73
+|callback|decision
+|
+|move|p2a: Earthworm|Rest|p2a: Earthworm
+|-status|p2a: Earthworm|slp
+|-heal|p2a: Earthworm|304\/304 slp|[silent]
+|-status|p2a: Earthworm|slp|[from] move: Rest
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-supereffective|p2a: Earthworm
+|-damage|p2a: Earthworm|188\/304 slp
+|
+|turn|74
+|callback|decision
+|
+|switch|p2a: Earthworm|Snorlax, F|373\/524 slp
+|cant|p1a: Zapdos|par
+|
+|-heal|p2a: Earthworm|405\/524 slp|[from] item: Leftovers
+|turn|75
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-fail|p1a: Zapdos|move: Substitute
+|
+|-heal|p2a: Earthworm|437\/524 slp|[from] item: Leftovers
+|turn|76
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-damage|p2a: Earthworm|368\/524 slp
+|
+|-heal|p2a: Earthworm|400\/524 slp|[from] item: Leftovers
+|turn|77
+|callback|decision
+|
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-damage|p2a: Earthworm|328\/524 slp
+|-curestatus|p2a: Earthworm|slp
+|move|p2a: Earthworm|Whirlwind|p1a: Zapdos
+|
+|-heal|p2a: Earthworm|360\/524|[from] item: Leftovers
+|turn|78
+|callback|decision
+|
+|move|p2a: Earthworm|Rest|p2a: Earthworm
+|-status|p2a: Earthworm|slp
+|-heal|p2a: Earthworm|524\/524 slp|[silent]
+|-status|p2a: Earthworm|slp|[from] move: Rest
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-damage|p2a: Earthworm|425\/524 slp
+|
+|-heal|p2a: Earthworm|457\/524 slp|[from] item: Leftovers
+|turn|79
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-fail|p1a: Zapdos|move: Substitute
+|
+|-heal|p2a: Earthworm|489\/524 slp|[from] item: Leftovers
+|turn|80
+|callback|decision
+|
+|switch|p2a: Earthworm|Roselia, F|188\/304
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-crit|p2a: Earthworm
+|-supereffective|p2a: Earthworm
+|-damage|p2a: Earthworm|0 fnt
+|faint|p2a: Earthworm
+|
+|callback|decision
+|
+|switch|p2a: Earthworm|Snorlax, F|489\/524 slp
+|turn|81
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-fail|p1a: Zapdos
+|
+|-heal|p2a: Earthworm|521\/524 slp|[from] item: Leftovers
+|turn|82
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-fail|p1a: Zapdos
+|
+|-heal|p2a: Earthworm|524\/524 slp|[from] item: Leftovers
+|turn|83
+|callback|decision
+|
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-fail|p1a: Zapdos|move: Substitute
+|-curestatus|p2a: Earthworm|slp
+|move|p2a: Earthworm|Whirlwind|p1a: Zapdos
+|
+|turn|84
+|callback|decision
+|
+|move|p2a: Earthworm|Sleep Talk|p2a: Earthworm
+|-fail|p2a: Earthworm
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-fail|p1a: Zapdos|move: Substitute
+|
+|turn|85
+|callback|decision
+|
+|switch|p2a: Earthworm|Gligar, F|162\/334 par
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-fail|p1a: Zapdos|move: Substitute
+|
+|turn|86
+|callback|decision
+|
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-damage|p2a: Earthworm|66\/334 par
+|move|p2a: Earthworm|Roost|p2a: Earthworm
+|-heal|p2a: Earthworm|233\/334 par
+|
+|turn|87
+|callback|decision
+|
+|switch|p2a: Earthworm|Snorlax, F|524\/524
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-crit|p2a: Earthworm
+|-damage|p2a: Earthworm|400\/524
+|
+|-heal|p2a: Earthworm|432\/524|[from] item: Leftovers
+|turn|88
+|callback|decision
+|
+|move|p2a: Earthworm|Rest|p2a: Earthworm
+|-status|p2a: Earthworm|slp
+|-heal|p2a: Earthworm|524\/524 slp|[silent]
+|-status|p2a: Earthworm|slp|[from] move: Rest
+|cant|p1a: Zapdos|par
+|
+|turn|89
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|cant|p1a: Zapdos|par
+|
+|turn|90
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-damage|p2a: Earthworm|440\/524 slp
+|
+|-heal|p2a: Earthworm|472\/524 slp|[from] item: Leftovers
+|turn|91
+|callback|decision
+|
+|switch|p2a: Earthworm|Gligar, F|233\/334 par
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-damage|p2a: Earthworm|137\/334 par
+|
+|turn|92
+|callback|decision
+|
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-damage|p2a: Earthworm|47\/334 par
+|move|p2a: Earthworm|Roost|p2a: Earthworm
+|-heal|p2a: Earthworm|214\/334 par
+|
+|turn|93
+|callback|decision
+|
+|switch|p2a: Earthworm|Snorlax, F|472\/524 slp
+|cant|p1a: Zapdos|par
+|
+|-heal|p2a: Earthworm|504\/524 slp|[from] item: Leftovers
+|turn|94
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-fail|p1a: Zapdos|move: Substitute
+|
+|-heal|p2a: Earthworm|524\/524 slp|[from] item: Leftovers
+|turn|95
+|callback|decision
+|
+|switch|p2a: Earthworm|Gligar, F|214\/334 par
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-damage|p2a: Earthworm|121\/334 par
+|
+|turn|96
+|callback|decision
+|
+|switch|p2a: Earthworm|Snorlax, F|524\/524 slp
+|move|p1a: Zapdos|Hidden Power|p2a: Earthworm
+|-damage|p2a: Earthworm|452\/524 slp
+|
+|-heal|p2a: Earthworm|484\/524 slp|[from] item: Leftovers
+|turn|97
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|cant|p1a: Zapdos|par
+|
+|-heal|p2a: Earthworm|516\/524 slp|[from] item: Leftovers
+|turn|98
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|move|p2a: Earthworm|Sleep Talk|p2a: Earthworm
+|move|p2a: Earthworm|Body Slam|p1a: Zapdos|[from]Sleep Talk
+|-end|p1a: Zapdos|Substitute
+|cant|p1a: Zapdos|par
+|
+|-heal|p2a: Earthworm|524\/524 slp|[from] item: Leftovers
+|turn|99
+|callback|decision
+|chat|charles ramsey|the power.
+|
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-start|p1a: Zapdos|Substitute
+|-damage|p1a: Zapdos|288\/383 par
+|-curestatus|p2a: Earthworm|slp
+|move|p2a: Earthworm|Whirlwind|p1a: Zapdos
+|
+|-heal|p1a: Zapdos|311\/383 par|[from] item: Leftovers
+|turn|100
+|callback|decision
+|chat|reachzero|I should not
+|chat|reachzero|have left Nidoqueen in to be Body Slammed
+|
+|switch|p2a: Earthworm|Gligar, F|121\/334 par
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-fail|p1a: Zapdos|move: Substitute
+|
+|-heal|p1a: Zapdos|334\/383 par|[from] item: Leftovers
+|turn|101
+|callback|decision
+|
+|switch|p2a: Earthworm|Snorlax, F|524\/524
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-damage|p2a: Earthworm|436\/524
+|
+|-heal|p2a: Earthworm|468\/524|[from] item: Leftovers
+|-heal|p1a: Zapdos|357\/383 par|[from] item: Leftovers
+|turn|102
+|callback|decision
+|
+|move|p2a: Earthworm|Rest|p2a: Earthworm
+|-status|p2a: Earthworm|slp
+|-heal|p2a: Earthworm|524\/524 slp|[silent]
+|-status|p2a: Earthworm|slp|[from] move: Rest
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-damage|p2a: Earthworm|427\/524 slp
+|
+|-heal|p2a: Earthworm|459\/524 slp|[from] item: Leftovers
+|-heal|p1a: Zapdos|380\/383 par|[from] item: Leftovers
+|turn|103
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|move|p2a: Earthworm|Sleep Talk|p2a: Earthworm
+|move|p2a: Earthworm|Body Slam|p1a: Zapdos|[from]Sleep Talk
+|-crit|p1a: Zapdos
+|-end|p1a: Zapdos|Substitute
+|cant|p1a: Zapdos|par
+|
+|-heal|p2a: Earthworm|491\/524 slp|[from] item: Leftovers
+|-heal|p1a: Zapdos|383\/383 par|[from] item: Leftovers
+|turn|104
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|move|p2a: Earthworm|Sleep Talk|p2a: Earthworm
+|move|p2a: Earthworm|Body Slam|p1a: Zapdos|[from]Sleep Talk
+|-damage|p1a: Zapdos|259\/383 par
+|cant|p1a: Zapdos|par
+|
+|-heal|p2a: Earthworm|523\/524 slp|[from] item: Leftovers
+|-heal|p1a: Zapdos|282\/383 par|[from] item: Leftovers
+|turn|105
+|callback|decision
+|
+|switch|p2a: Earthworm|Gligar, F|121\/334 par
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-start|p1a: Zapdos|Substitute
+|-damage|p1a: Zapdos|187\/383 par
+|
+|-heal|p1a: Zapdos|210\/383 par|[from] item: Leftovers
+|turn|106
+|callback|decision
+|
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|383\/383 par
+|move|p2a: Earthworm|Roost|p2a: Earthworm
+|-heal|p2a: Earthworm|288\/334 par
+|
+|turn|107
+|callback|decision
+|
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-immune|p2a: Earthworm|[msg]
+|move|p2a: Earthworm|Stealth Rock|p1a: Zapdos
+|
+|turn|108
+|callback|decision
+|
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-immune|p2a: Earthworm|[msg]
+|move|p2a: Earthworm|Roost|p2a: Earthworm
+|-heal|p2a: Earthworm|334\/334 par
+|
+|turn|109
+|callback|decision
+|
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-immune|p2a: Earthworm|[msg]
+|move|p2a: Earthworm|Stealth Rock|p1a: Zapdos
+|
+|turn|110
+|callback|decision
+|
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-immune|p2a: Earthworm|[msg]
+|cant|p2a: Earthworm|par
+|
+|turn|111
+|callback|decision
+|
+|cant|p1a: Zapdos|par
+|cant|p2a: Earthworm|par
+|
+|turn|112
+|callback|decision
+|
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-immune|p2a: Earthworm|[msg]
+|move|p2a: Earthworm|Stealth Rock|p1a: Zapdos
+|
+|turn|113
+|callback|decision
+|
+|cant|p1a: Zapdos|par
+|move|p2a: Earthworm|Stealth Rock|p1a: Zapdos
+|
+|turn|114
+|callback|decision
+|
+|cant|p1a: Zapdos|par
+|move|p2a: Earthworm|Earthquake|p1a: Zapdos
+|-immune|p1a: Zapdos|[msg]
+|
+|turn|115
+|callback|decision
+|
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-immune|p2a: Earthworm|[msg]
+|cant|p2a: Earthworm|par
+|
+|turn|116
+|callback|decision
+|
+|cant|p1a: Zapdos|par
+|move|p2a: Earthworm|Toxic|p1a: Zapdos
+|
+|turn|117
+|callback|decision
+|
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-immune|p2a: Earthworm|[msg]
+|move|p2a: Earthworm|Toxic|p1a: Zapdos|[miss]
+|-miss|p2a: Earthworm|p1a: Zapdos
+|
+|turn|118
+|callback|decision
+|
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-immune|p2a: Earthworm|[msg]
+|move|p2a: Earthworm|Toxic|p1a: Zapdos
+|
+|turn|119
+|callback|decision
+|
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-fail|p1a: Zapdos
+|move|p2a: Earthworm|Toxic|p1a: Zapdos
+|
+|turn|120
+|callback|decision
+|
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-fail|p1a: Zapdos
+|move|p2a: Earthworm|Toxic|p1a: Zapdos
+|
+|turn|121
+|callback|decision
+|
+|cant|p1a: Zapdos|par
+|move|p2a: Earthworm|Toxic|p1a: Zapdos
+|
+|turn|122
+|callback|decision
+|
+|cant|p1a: Zapdos|par
+|cant|p2a: Earthworm|par
+|
+|turn|123
+|callback|decision
+|
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-fail|p1a: Zapdos
+|cant|p2a: Earthworm|par
+|
+|turn|124
+|callback|decision
+|
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-immune|p2a: Earthworm|[msg]
+|cant|p2a: Earthworm|par
+|
+|turn|125
+|callback|decision
+|
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-fail|p1a: Zapdos
+|move|p2a: Earthworm|Toxic|p1a: Zapdos|[miss]
+|-miss|p2a: Earthworm|p1a: Zapdos
+|
+|turn|126
+|callback|decision
+|
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-fail|p1a: Zapdos
+|move|p2a: Earthworm|Earthquake|p1a: Zapdos
+|-immune|p1a: Zapdos|[msg]
+|
+|turn|127
+|callback|decision
+|
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-fail|p1a: Zapdos
+|move|p2a: Earthworm|Earthquake|p1a: Zapdos
+|-immune|p1a: Zapdos|[msg]
+|
+|turn|128
+|callback|decision
+|
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-fail|p1a: Zapdos
+|move|p2a: Earthworm|Stealth Rock|p1a: Zapdos
+|
+|turn|129
+|callback|decision
+|join|Treiner Orenge
+|
+|switch|p2a: Earthworm|Snorlax, F|523\/524 slp
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-fail|p1a: Zapdos
+|
+|-heal|p2a: Earthworm|524\/524 slp|[from] item: Leftovers
+|turn|130
+|callback|decision
+|
+|switch|p2a: Earthworm|Gligar, F|334\/334 par
+|cant|p1a: Zapdos|par
+|
+|turn|131
+|callback|decision
+|leave|Treiner Orenge
+|
+|switch|p2a: Earthworm|Snorlax, F|524\/524 slp
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-damage|p2a: Earthworm|436\/524 slp
+|
+|-heal|p2a: Earthworm|468\/524 slp|[from] item: Leftovers
+|turn|132
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-crit|p2a: Earthworm
+|-damage|p2a: Earthworm|294\/524 slp
+|
+|-heal|p2a: Earthworm|326\/524 slp|[from] item: Leftovers
+|turn|133
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-damage|p2a: Earthworm|242\/524 slp
+|
+|-heal|p2a: Earthworm|274\/524 slp|[from] item: Leftovers
+|turn|134
+|callback|decision
+|
+|-curestatus|p2a: Earthworm|slp
+|move|p2a: Earthworm|Rest|p2a: Earthworm
+|-status|p2a: Earthworm|slp
+|-heal|p2a: Earthworm|524\/524 slp|[silent]
+|-status|p2a: Earthworm|slp|[from] move: Rest
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-damage|p2a: Earthworm|437\/524 slp
+|
+|-heal|p2a: Earthworm|469\/524 slp|[from] item: Leftovers
+|turn|135
+|callback|decision
+|join|JabbaTheGriffin
+|
+|cant|p2a: Earthworm|slp
+|move|p2a: Earthworm|Sleep Talk|p2a: Earthworm
+|move|p2a: Earthworm|Body Slam|p1a: Zapdos|[from]Sleep Talk
+|-end|p1a: Zapdos|Substitute
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-damage|p2a: Earthworm|370\/524 slp
+|
+|-heal|p2a: Earthworm|402\/524 slp|[from] item: Leftovers
+|turn|136
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|move|p2a: Earthworm|Sleep Talk|p2a: Earthworm
+|move|p2a: Earthworm|Body Slam|p1a: Zapdos|[from]Sleep Talk
+|-damage|p1a: Zapdos|277\/383 par
+|cant|p1a: Zapdos|par
+|
+|-heal|p2a: Earthworm|434\/524 slp|[from] item: Leftovers
+|-heal|p1a: Zapdos|300\/383 par|[from] item: Leftovers
+|turn|137
+|callback|decision
+|chat|charles ramsey|hm
+|chat|charles ramsey|i feel like thats a glitch
+|chat|charles ramsey|if i sleep talk a move with no pp
+|chat|charles ramsey|it always gets picked
+|chat|charles ramsey|idk
+|
+|switch|p2a: Earthworm|Gligar, F|334\/334 par
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-immune|p2a: Earthworm|[msg]
+|
+|-heal|p1a: Zapdos|323\/383 par|[from] item: Leftovers
+|turn|138
+|callback|decision
+|
+|switch|p2a: Earthworm|Snorlax, F|434\/524 slp
+|move|p1a: Zapdos|Thunderbolt|p2a: Earthworm
+|-damage|p2a: Earthworm|337\/524 slp
+|
+|-heal|p2a: Earthworm|369\/524 slp|[from] item: Leftovers
+|-heal|p1a: Zapdos|346\/383 par|[from] item: Leftovers
+|turn|139
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|move|p2a: Earthworm|Sleep Talk|p2a: Earthworm
+|move|p2a: Earthworm|Whirlwind|p1a: Zapdos|[from]Sleep Talk
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|383\/383 par
+|
+|-heal|p2a: Earthworm|401\/524 slp|[from] item: Leftovers
+|turn|140
+|callback|decision
+|chat|charles ramsey|welp that solves that
+|
+|cant|p2a: Earthworm|slp
+|move|p2a: Earthworm|Sleep Talk|p2a: Earthworm
+|move|p2a: Earthworm|Whirlwind|p1a: Zapdos|[from]Sleep Talk
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-fail|p1a: Zapdos
+|
+|-heal|p2a: Earthworm|433\/524 slp|[from] item: Leftovers
+|turn|141
+|callback|decision
+|
+|-curestatus|p2a: Earthworm|slp
+|move|p2a: Earthworm|Rest|p2a: Earthworm
+|-status|p2a: Earthworm|slp
+|-heal|p2a: Earthworm|524\/524 slp|[silent]
+|-status|p2a: Earthworm|slp|[from] move: Rest
+|-activate|p1a: Zapdos|move: Struggle
+|move|p1a: Zapdos|Struggle|p2a: Earthworm
+|-damage|p2a: Earthworm|481\/524 slp
+|-damage|p1a: Zapdos|288\/383 par
+|
+|-heal|p2a: Earthworm|513\/524 slp|[from] item: Leftovers
+|-heal|p1a: Zapdos|311\/383 par|[from] item: Leftovers
+|turn|142
+|callback|decision
+|chat|charles ramsey|Gg
+|
+|cant|p2a: Earthworm|slp
+|move|p2a: Earthworm|Sleep Talk|p2a: Earthworm
+|move|p2a: Earthworm|Rest|p2a: Earthworm|[from]Sleep Talk
+|-fail|p2a: Earthworm
+|-activate|p1a: Zapdos|move: Struggle
+|move|p1a: Zapdos|Struggle|p2a: Earthworm
+|-damage|p2a: Earthworm|471\/524 slp
+|-damage|p1a: Zapdos|216\/383 par
+|
+|-heal|p2a: Earthworm|503\/524 slp|[from] item: Leftovers
+|-heal|p1a: Zapdos|239\/383 par|[from] item: Leftovers
+|turn|143
+|callback|decision
+|chat|reachzero|lol
+|chat|reachzero|how was that
+|chat|reachzero|a good game?
+|chat|charles ramsey|Lol.
+|chat|reachzero|I totally choked
+|chat|reachzero|literally all I needed to do
+|chat|reachzero|what not let Nidoqueen get paralyzed
+|chat|reachzero|and I did
+|
+|cant|p2a: Earthworm|slp
+|move|p2a: Earthworm|Sleep Talk|p2a: Earthworm
+|move|p2a: Earthworm|Rest|p2a: Earthworm|[from]Sleep Talk
+|-fail|p2a: Earthworm
+|-activate|p1a: Zapdos|move: Struggle
+|move|p1a: Zapdos|Struggle|p2a: Earthworm
+|-damage|p2a: Earthworm|462\/524 slp
+|-damage|p1a: Zapdos|144\/383 par
+|
+|-heal|p2a: Earthworm|494\/524 slp|[from] item: Leftovers
+|-heal|p1a: Zapdos|167\/383 par|[from] item: Leftovers
+|turn|144
+|callback|decision
+|
+|-curestatus|p2a: Earthworm|slp
+|move|p2a: Earthworm|Rest|p2a: Earthworm
+|-status|p2a: Earthworm|slp
+|-heal|p2a: Earthworm|524\/524 slp|[silent]
+|-status|p2a: Earthworm|slp|[from] move: Rest
+|-activate|p1a: Zapdos|move: Struggle
+|move|p1a: Zapdos|Struggle|p2a: Earthworm
+|-damage|p2a: Earthworm|485\/524 slp
+|-damage|p1a: Zapdos|72\/383 par
+|
+|-heal|p2a: Earthworm|517\/524 slp|[from] item: Leftovers
+|-heal|p1a: Zapdos|95\/383 par|[from] item: Leftovers
+|turn|145
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|cant|p1a: Zapdos|par
+|
+|-heal|p2a: Earthworm|524\/524 slp|[from] item: Leftovers
+|-heal|p1a: Zapdos|118\/383 par|[from] item: Leftovers
+|turn|146
+|callback|decision
+|
+|cant|p2a: Earthworm|slp
+|-activate|p1a: Zapdos|move: Struggle
+|move|p1a: Zapdos|Struggle|p2a: Earthworm
+|-damage|p2a: Earthworm|485\/524 slp
+|-damage|p1a: Zapdos|23\/383 par
+|
+|-heal|p2a: Earthworm|517\/524 slp|[from] item: Leftovers
+|-heal|p1a: Zapdos|46\/383 par|[from] item: Leftovers
+|turn|147
+|callback|decision
+|join|Dark Azelf
+|
+|-curestatus|p2a: Earthworm|slp
+|move|p2a: Earthworm|Rest|p2a: Earthworm
+|-status|p2a: Earthworm|slp
+|-heal|p2a: Earthworm|524\/524 slp|[silent]
+|-status|p2a: Earthworm|slp|[from] move: Rest
+|-activate|p1a: Zapdos|move: Struggle
+|move|p1a: Zapdos|Struggle|p2a: Earthworm
+|-damage|p2a: Earthworm|484\/524 slp
+|-damage|p1a: Zapdos|0 fnt
+|faint|p1a: Zapdos
+|
+|win|charles ramsey

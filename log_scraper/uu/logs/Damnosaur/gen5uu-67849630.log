@@ -1,0 +1,622 @@
+|join|Woony
+|join|Damnosaur
+|player|p1|Woony|20
+|player|p2|Damnosaur|220
+|gametype|singles
+|tier|[Gen 5] UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Umbreon, F
+|poke|p1|Gligar, M
+|poke|p1|Victini
+|poke|p1|Azumarill, F
+|poke|p1|Raikou
+|poke|p1|Virizion
+|poke|p2|Dusclops, F
+|poke|p2|Roserade, M
+|poke|p2|Rhyperior, F
+|poke|p2|Blastoise, M
+|poke|p2|Umbreon, M
+|poke|p2|Darmanitan, F
+|teampreview
+|callback|decision
+|chat|Woony|od team
+|chat|Woony|old
+|chat|Damnosaur|same
+|
+|start
+|switch|p1a: Gligar|Gligar, M|333\/333
+|switch|p2a: Roserade|Roserade, M|261\/261
+|turn|1
+|callback|decision
+|
+|move|p2a: Roserade|Spikes|p1a: Gligar
+|-sidestart|p1: Woony|Spikes
+|move|p1a: Gligar|Stealth Rock|p2a: Roserade
+|-sidestart|p2: Damnosaur|move: Stealth Rock
+|
+|turn|2
+|callback|decision
+|chat|Woony|:(
+|
+|switch|p1a: Victini|Victini|341\/341
+|-damage|p1a: Victini|299\/341|[from] Spikes
+|move|p2a: Roserade|Sludge Bomb|p1a: Victini
+|-damage|p1a: Victini|99\/341
+|-damage|p2a: Roserade|235\/261|[from] item: Life Orb
+|
+|turn|3
+|callback|decision
+|chat|Damnosaur|such dmges
+|chat|Woony|o spiker
+|
+|switch|p2a: Dusclops|Dusclops, F|284\/284
+|-damage|p2a: Dusclops|249\/284|[from] Stealth Rock
+|-ability|p2a: Dusclops|Pressure
+|move|p1a: Victini|V-create|p2a: Dusclops
+|-damage|p2a: Dusclops|144\/284
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|
+|turn|4
+|callback|decision
+|
+|switch|p1a: Gligar|Gligar, M|333\/333
+|move|p2a: Dusclops|Will-O-Wisp|p1a: Gligar|[miss]
+|-miss|p2a: Dusclops|p1a: Gligar
+|
+|turn|5
+|callback|decision
+|chat|Damnosaur|:(
+|
+|move|p1a: Gligar|Taunt|p2a: Dusclops
+|-start|p2a: Dusclops|move: Taunt
+|cant|p2a: Dusclops|move: Taunt|Will-O-Wisp
+|
+|turn|6
+|callback|decision
+|chat|Woony|knn 99 hp on my victini
+|chat|Woony|but spikes so
+|chat|Damnosaur|:>
+|
+|switch|p1a: Virizion|Virizion|328\/328
+|-damage|p1a: Virizion|287\/328|[from] Spikes
+|move|p2a: Dusclops|Night Shade|p1a: Virizion
+|-damage|p1a: Virizion|187\/328
+|
+|-heal|p1a: Virizion|207\/328|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p1a: Virizion|Calm Mind|p1a: Virizion
+|-boost|p1a: Virizion|spa|1
+|-boost|p1a: Virizion|spd|1
+|move|p2a: Dusclops|Night Shade|p1a: Virizion
+|-damage|p1a: Virizion|107\/328
+|
+|-heal|p1a: Virizion|127\/328|[from] item: Leftovers
+|-end|p2a: Dusclops|move: Taunt
+|turn|8
+|callback|decision
+|
+|move|p1a: Virizion|Giga Drain|p2a: Dusclops
+|-damage|p2a: Dusclops|68\/284
+|-heal|p1a: Virizion|165\/328|[from] drain|[of] p2a: Dusclops
+|move|p2a: Dusclops|Rest|p2a: Dusclops
+|-status|p2a: Dusclops|slp
+|-heal|p2a: Dusclops|284\/284 slp|[silent]
+|-status|p2a: Dusclops|slp|[from] move: Rest
+|
+|-heal|p1a: Virizion|185\/328|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p2a: Darmanitan|Darmanitan, F|351\/351
+|-damage|p2a: Darmanitan|264\/351|[from] Stealth Rock
+|move|p1a: Virizion|Calm Mind|p1a: Virizion
+|-boost|p1a: Virizion|spa|1
+|-boost|p1a: Virizion|spd|1
+|
+|-heal|p1a: Virizion|205\/328|[from] item: Leftovers
+|turn|10
+|callback|decision
+|chat|Woony|knn scarfed?
+|chat|Damnosaur|what do you think
+|
+|switch|p1a: Gligar|Gligar, M|333\/333
+|move|p2a: Darmanitan|Flare Blitz|p1a: Gligar
+|-damage|p1a: Gligar|192\/333
+|-damage|p2a: Darmanitan|217\/351|[from] recoil|[of] p1a: Gligar
+|
+|turn|11
+|callback|decision
+|chat|Woony|wow data dmg
+|
+|switch|p2a: Blastoise|Blastoise, M|362\/362
+|-damage|p2a: Blastoise|317\/362|[from] Stealth Rock
+|move|p1a: Gligar|Roost|p1a: Gligar
+|-heal|p1a: Gligar|333\/333
+|
+|-heal|p2a: Blastoise|339\/362|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Gligar|Stealth Rock|p2a: Blastoise
+|-fail|p2a: Blastoise
+|move|p2a: Blastoise|Rapid Spin|p1a: Gligar
+|-damage|p1a: Gligar|327\/333
+|-sideend|p2: Damnosaur|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Blastoise
+|
+|-heal|p2a: Blastoise|361\/362|[from] item: Leftovers
+|turn|13
+|callback|decision
+|chat|Damnosaur|lelelel
+|chat|Woony|wow
+|chat|Woony|i thought gligar was slow
+|
+|move|p1a: Gligar|Stealth Rock|p2a: Blastoise
+|-sidestart|p2: Damnosaur|move: Stealth Rock
+|move|p2a: Blastoise|Scald|p1a: Gligar
+|-supereffective|p1a: Gligar
+|-damage|p1a: Gligar|157\/333
+|
+|-heal|p2a: Blastoise|362\/362|[from] item: Leftovers
+|turn|14
+|callback|decision
+|chat|Damnosaur|85 speed is good for a wall
+|
+|switch|p1a: Virizion|Virizion|205\/328
+|-damage|p1a: Virizion|164\/328|[from] Spikes
+|move|p2a: Blastoise|Toxic|p1a: Virizion
+|-status|p1a: Virizion|tox
+|
+|-heal|p1a: Virizion|184\/328 tox|[from] item: Leftovers
+|-damage|p1a: Virizion|164\/328 tox|[from] psn
+|turn|15
+|callback|decision
+|chat|Woony|:(
+|chat|Damnosaur|all dem predictions
+|
+|move|p1a: Virizion|Giga Drain|p2a: Blastoise
+|-supereffective|p2a: Blastoise
+|-damage|p2a: Blastoise|210\/362
+|-heal|p1a: Virizion|240\/328 tox|[from] drain|[of] p2a: Blastoise
+|move|p2a: Blastoise|Rapid Spin|p1a: Virizion
+|-damage|p1a: Virizion|225\/328 tox
+|-sideend|p2: Damnosaur|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Blastoise
+|
+|-heal|p1a: Virizion|245\/328 tox|[from] item: Leftovers
+|-heal|p2a: Blastoise|232\/362|[from] item: Leftovers
+|-damage|p1a: Virizion|205\/328 tox|[from] psn
+|turn|16
+|callback|decision
+|
+|switch|p2a: Umbreon|Umbreon, M|394\/394
+|move|p1a: Virizion|Hidden Power|p2a: Umbreon
+|-damage|p2a: Umbreon|355\/394
+|
+|-heal|p1a: Virizion|225\/328 tox|[from] item: Leftovers
+|-heal|p2a: Umbreon|379\/394|[from] item: Leftovers
+|-damage|p1a: Virizion|165\/328 tox|[from] psn
+|turn|17
+|callback|decision
+|
+|switch|p1a: Azumarill|Azumarill, F|403\/403
+|-damage|p1a: Azumarill|353\/403|[from] Spikes
+|move|p2a: Umbreon|Heal Bell|p2a: Umbreon
+|-cureteam|p2a: Umbreon|[from] move: HealBell
+|
+|-heal|p2a: Umbreon|394\/394|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p2a: Umbreon|Protect|p2a: Umbreon
+|-singleturn|p2a: Umbreon|Protect
+|move|p1a: Azumarill|Waterfall|p2a: Umbreon
+|-activate|p2a: Umbreon|Protect
+|
+|turn|19
+|callback|decision
+|
+|switch|p2a: Dusclops|Dusclops, F|284\/284
+|-ability|p2a: Dusclops|Pressure
+|move|p1a: Azumarill|Waterfall|p2a: Dusclops
+|-damage|p2a: Dusclops|179\/284
+|
+|turn|20
+|callback|decision
+|
+|switch|p1a: Victini|Victini|99\/341
+|-damage|p1a: Victini|57\/341|[from] Spikes
+|move|p2a: Dusclops|Will-O-Wisp|p1a: Victini
+|-fail|p1a: Victini
+|
+|turn|21
+|callback|decision
+|chat|Woony|good prediction but bad switch right
+|chat|Damnosaur|doesnt benefit you
+|chat|Woony|how is dusclops so bulky
+|chat|Damnosaur|evio
+|
+|move|p1a: Victini|U-turn|p2a: Dusclops
+|-resisted|p2a: Dusclops
+|-damage|p2a: Dusclops|164\/284
+|callback|decision
+|chat|Damnosaur|and pressure is awesome too
+|chat|Woony|wasted a switch lol
+|
+|switch|p1a: Umbreon|Umbreon, F|394\/394
+|-damage|p1a: Umbreon|345\/394|[from] Spikes
+|move|p2a: Dusclops|Will-O-Wisp|p1a: Umbreon
+|-status|p1a: Umbreon|brn
+|-status|p2a: Dusclops|brn
+|
+|-heal|p1a: Umbreon|369\/394 brn|[from] item: Leftovers
+|-damage|p1a: Umbreon|320\/394 brn|[from] brn
+|-damage|p2a: Dusclops|129\/284 brn|[from] brn
+|turn|22
+|callback|decision
+|chat|Damnosaur|wasted a switch to get 5.3% dmg on me
+|chat|Woony|:(
+|chat|Woony|some times i hate synch
+|
+|switch|p2a: Rhyperior|Rhyperior, F|434\/434
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p1a: Umbreon|344\/394 brn|[from] item: Leftovers
+|-damage|p1a: Umbreon|295\/394 brn|[from] brn
+|turn|23
+|callback|decision
+|
+|move|p1a: Umbreon|Foul Play|p2a: Rhyperior
+|-damage|p2a: Rhyperior|388\/434
+|move|p2a: Rhyperior|Roar|p1a: Umbreon
+|drag|p1a: Azumarill|Azumarill, F|353\/403
+|-damage|p1a: Azumarill|303\/403|[from] Spikes
+|
+|-heal|p1a: Azumarill|403\/403|[from] move: Wish|[wisher] Umbreon
+|-heal|p2a: Rhyperior|415\/434|[from] item: Leftovers
+|turn|24
+|callback|decision
+|chat|Woony|such luck
+|
+|switch|p2a: Blastoise|Blastoise, M|232\/362
+|move|p1a: Azumarill|Waterfall|p2a: Blastoise
+|-resisted|p2a: Blastoise
+|-damage|p2a: Blastoise|100\/362
+|
+|-heal|p2a: Blastoise|122\/362|[from] item: Leftovers
+|turn|25
+|callback|decision
+|chat|Woony|that dmg
+|chat|Woony|r u special
+|
+|switch|p2a: Roserade|Roserade, M|235\/261
+|move|p1a: Azumarill|Waterfall|p2a: Roserade
+|-resisted|p2a: Roserade
+|-damage|p2a: Roserade|29\/261
+|
+|turn|26
+|callback|decision
+|chat|Woony|wow
+|
+|move|p2a: Roserade|Giga Drain|p1a: Azumarill
+|-supereffective|p1a: Azumarill
+|-damage|p1a: Azumarill|0 fnt
+|-heal|p2a: Roserade|231\/261|[from] drain|[of] p1a: Azumarill
+|-damage|p2a: Roserade|205\/261|[from] item: Life Orb
+|faint|p1a: Azumarill
+|
+|callback|decision
+|chat|Woony|u didnt spike?
+|chat|Damnosaur|nah
+|chat|Woony|:(
+|chat|Damnosaur|too risky
+|chat|Woony|true
+|chat|Damnosaur|i gain nothing from spiking
+|chat|Woony|azu is a bigger threar
+|chat|Damnosaur|besides ensuring your victini dies
+|chat|Damnosaur|which i can easily wall
+|chat|Woony|isnt that gd
+|chat|Woony|:(
+|
+|switch|p1a: Umbreon|Umbreon, F|295\/394 brn
+|-damage|p1a: Umbreon|246\/394 brn|[from] Spikes
+|turn|27
+|callback|decision
+|
+|move|p2a: Roserade|Spikes|p1a: Umbreon
+|-sidestart|p1: Woony|Spikes
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p1a: Umbreon|270\/394 brn|[from] item: Leftovers
+|-damage|p1a: Umbreon|221\/394 brn|[from] brn
+|turn|28
+|callback|decision
+|
+|move|p2a: Roserade|Sludge Bomb|p1a: Umbreon
+|-damage|p1a: Umbreon|99\/394 brn
+|-damage|p2a: Roserade|179\/261|[from] item: Life Orb
+|move|p1a: Umbreon|Foul Play|p2a: Roserade
+|-damage|p2a: Roserade|119\/261
+|
+|-heal|p1a: Umbreon|296\/394 brn|[from] move: Wish|[wisher] Umbreon
+|-heal|p1a: Umbreon|320\/394 brn|[from] item: Leftovers
+|-damage|p1a: Umbreon|271\/394 brn|[from] brn
+|turn|29
+|callback|decision
+|
+|move|p2a: Roserade|Spikes|p1a: Umbreon
+|-sidestart|p1: Woony|Spikes
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p1a: Umbreon|295\/394 brn|[from] item: Leftovers
+|-damage|p1a: Umbreon|246\/394 brn|[from] brn
+|turn|30
+|callback|decision
+|chat|Woony|:(
+|chat|Woony|spike fodder
+|chat|Woony|no spin
+|chat|Woony|:((((
+|chat|Damnosaur|stall is good
+|chat|Damnosaur|:>
+|
+|move|p2a: Roserade|Sludge Bomb|p1a: Umbreon
+|-crit|p1a: Umbreon
+|-damage|p1a: Umbreon|0 fnt
+|-damage|p2a: Roserade|93\/261|[from] item: Life Orb
+|faint|p1a: Umbreon
+|
+|callback|decision
+|chat|Damnosaur|oh
+|chat|Damnosaur|oops
+|chat|Woony|-.-
+|
+|switch|p1a: Raikou|Raikou|322\/322
+|-damage|p1a: Raikou|242\/322|[from] Spikes
+|-ability|p1a: Raikou|Pressure
+|turn|31
+|callback|decision
+|chat|Damnosaur|i wouldve lived your foul play anyway
+|chat|Woony|dmg is necessary
+|chat|Woony|any kind of dmg is gd
+|chat|Damnosaur|wish tho
+|
+|move|p1a: Raikou|Extrasensory|p2a: Roserade
+|-supereffective|p2a: Roserade
+|-damage|p2a: Roserade|0 fnt
+|faint|p2a: Roserade
+|
+|callback|decision
+|
+|switch|p2a: Umbreon|Umbreon, M|394\/394
+|turn|32
+|callback|decision
+|
+|switch|p1a: Gligar|Gligar, M|157\/333
+|move|p2a: Umbreon|Heal Bell|p2a: Umbreon
+|-cureteam|p2a: Umbreon|[from] move: HealBell
+|
+|turn|33
+|callback|decision
+|
+|switch|p2a: Blastoise|Blastoise, M|122\/362
+|move|p1a: Gligar|Roost|p1a: Gligar
+|-heal|p1a: Gligar|324\/333
+|
+|-heal|p2a: Blastoise|144\/362|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|switch|p1a: Virizion|Virizion|165\/328 tox
+|-damage|p1a: Virizion|83\/328 tox|[from] Spikes
+|move|p2a: Blastoise|Scald|p1a: Virizion
+|-resisted|p1a: Virizion
+|-damage|p1a: Virizion|48\/328 tox
+|
+|-heal|p1a: Virizion|68\/328 tox|[from] item: Leftovers
+|-heal|p2a: Blastoise|166\/362|[from] item: Leftovers
+|-damage|p1a: Virizion|48\/328 tox|[from] psn
+|turn|35
+|callback|decision
+|
+|switch|p2a: Dusclops|Dusclops, F|129\/284
+|-ability|p2a: Dusclops|Pressure
+|move|p1a: Virizion|Giga Drain|p2a: Dusclops
+|-damage|p2a: Dusclops|75\/284
+|-heal|p1a: Virizion|75\/328 tox|[from] drain|[of] p2a: Dusclops
+|
+|-heal|p1a: Virizion|95\/328 tox|[from] item: Leftovers
+|-damage|p1a: Virizion|55\/328 tox|[from] psn
+|turn|36
+|callback|decision
+|
+|move|p1a: Virizion|Giga Drain|p2a: Dusclops
+|-damage|p2a: Dusclops|17\/284
+|-heal|p1a: Virizion|84\/328 tox|[from] drain|[of] p2a: Dusclops
+|move|p2a: Dusclops|Rest|p2a: Dusclops
+|-status|p2a: Dusclops|slp
+|-heal|p2a: Dusclops|284\/284 slp|[silent]
+|-status|p2a: Dusclops|slp|[from] move: Rest
+|
+|-heal|p1a: Virizion|104\/328 tox|[from] item: Leftovers
+|-damage|p1a: Virizion|44\/328 tox|[from] psn
+|turn|37
+|callback|decision
+|chat|Damnosaur|stall is so good
+|chat|Woony|:(
+|
+|switch|p2a: Umbreon|Umbreon, M|394\/394
+|move|p1a: Virizion|Giga Drain|p2a: Umbreon
+|-damage|p2a: Umbreon|334\/394
+|-heal|p1a: Virizion|74\/328 tox|[from] drain|[of] p2a: Umbreon
+|
+|-heal|p1a: Virizion|94\/328 tox|[from] item: Leftovers
+|-heal|p2a: Umbreon|358\/394|[from] item: Leftovers
+|-damage|p1a: Virizion|14\/328 tox|[from] psn
+|turn|38
+|callback|decision
+|chat|Woony|pls dont protect
+|chat|Woony|PLS
+|
+|move|p2a: Umbreon|Protect|p2a: Umbreon
+|-singleturn|p2a: Umbreon|Protect
+|move|p1a: Virizion|Focus Blast|p2a: Umbreon
+|-activate|p2a: Umbreon|Protect
+|
+|-heal|p1a: Virizion|34\/328 tox|[from] item: Leftovers
+|-heal|p2a: Umbreon|382\/394|[from] item: Leftovers
+|-damage|p1a: Virizion|0 fnt|[from] psn
+|faint|p1a: Virizion
+|callback|decision
+|chat|Damnosaur|:>
+|chat|Woony|:(
+|
+|switch|p1a: Raikou|Raikou|242\/322
+|-damage|p1a: Raikou|162\/322|[from] Spikes
+|-ability|p1a: Raikou|Pressure
+|turn|39
+|callback|decision
+|
+|move|p1a: Raikou|Thunderbolt|p2a: Umbreon
+|-damage|p2a: Umbreon|255\/394
+|move|p2a: Umbreon|Foul Play|p1a: Raikou
+|-damage|p1a: Raikou|56\/322
+|
+|-heal|p2a: Umbreon|279\/394|[from] item: Leftovers
+|turn|40
+|callback|decision
+|
+|move|p1a: Raikou|Thunderbolt|p2a: Umbreon
+|-damage|p2a: Umbreon|143\/394
+|-status|p2a: Umbreon|par
+|-status|p1a: Raikou|par
+|move|p2a: Umbreon|Wish|p2a: Umbreon
+|
+|-heal|p2a: Umbreon|167\/394 par|[from] item: Leftovers
+|turn|41
+|callback|decision
+|
+|move|p1a: Raikou|Thunderbolt|p2a: Umbreon
+|-damage|p2a: Umbreon|25\/394 par
+|cant|p2a: Umbreon|par
+|
+|-heal|p2a: Umbreon|222\/394 par|[from] move: Wish|[wisher] Umbreon
+|-heal|p2a: Umbreon|246\/394 par|[from] item: Leftovers
+|turn|42
+|callback|decision
+|
+|move|p1a: Raikou|Thunderbolt|p2a: Umbreon
+|-damage|p2a: Umbreon|99\/394 par
+|move|p2a: Umbreon|Heal Bell|p2a: Umbreon
+|-cureteam|p2a: Umbreon|[from] move: HealBell
+|
+|-heal|p2a: Umbreon|123\/394|[from] item: Leftovers
+|turn|43
+|callback|decision
+|
+|move|p2a: Umbreon|Protect|p2a: Umbreon
+|-singleturn|p2a: Umbreon|Protect
+|move|p1a: Raikou|Thunderbolt|p2a: Umbreon
+|-activate|p2a: Umbreon|Protect
+|
+|-heal|p2a: Umbreon|147\/394|[from] item: Leftovers
+|turn|44
+|callback|decision
+|
+|switch|p2a: Rhyperior|Rhyperior, F|415\/434
+|move|p1a: Raikou|Thunderbolt|p2a: Rhyperior
+|-immune|p2a: Rhyperior|[msg]
+|
+|-heal|p2a: Rhyperior|434\/434|[from] item: Leftovers
+|turn|45
+|callback|decision
+|
+|switch|p1a: Victini|Victini|57\/341
+|-damage|p1a: Victini|0 fnt|[from] Spikes
+|faint|p1a: Victini
+|move|p2a: Rhyperior|Stealth Rock|p1: Victini
+|-sidestart|p1: Woony|move: Stealth Rock
+|
+|callback|decision
+|chat|Damnosaur|late game rocks lel
+|chat|Woony|walao
+|
+|switch|p1a: Gligar|Gligar, M|324\/333
+|-damage|p1a: Gligar|283\/333|[from] Stealth Rock
+|turn|46
+|callback|decision
+|
+|switch|p2a: Dusclops|Dusclops, F|284\/284
+|-ability|p2a: Dusclops|Pressure
+|move|p1a: Gligar|Earthquake|p2a: Dusclops
+|-damage|p2a: Dusclops|247\/284
+|
+|turn|47
+|callback|decision
+|chat|Woony|give up liao
+|
+|move|p1a: Gligar|Taunt|p2a: Dusclops
+|-start|p2a: Dusclops|move: Taunt
+|move|p2a: Dusclops|Night Shade|p1a: Gligar
+|-damage|p1a: Gligar|183\/333
+|
+|turn|48
+|callback|decision
+|
+|move|p1a: Gligar|Roost|p1a: Gligar
+|-heal|p1a: Gligar|333\/333
+|move|p2a: Dusclops|Night Shade|p1a: Gligar
+|-damage|p1a: Gligar|233\/333
+|
+|turn|49
+|callback|decision
+|chat|Damnosaur|roost has 16pp
+|chat|Damnosaur|8 under pressure
+|chat|Woony|inb4 night shade crit
+|chat|Damnosaur|:>
+|
+|move|p1a: Gligar|Earthquake|p2a: Dusclops
+|-damage|p2a: Dusclops|208\/284
+|move|p2a: Dusclops|Night Shade|p1a: Gligar
+|-damage|p1a: Gligar|133\/333
+|
+|-end|p2a: Dusclops|move: Taunt
+|turn|50
+|callback|decision
+|
+|move|p1a: Gligar|Roost|p1a: Gligar
+|-heal|p1a: Gligar|300\/333
+|move|p2a: Dusclops|Will-O-Wisp|p1a: Gligar
+|-status|p1a: Gligar|brn
+|
+|-damage|p1a: Gligar|259\/333 brn|[from] brn
+|turn|51
+|callback|decision
+|chat|Woony|how you know i wont taunt
+|chat|Damnosaur|even if you did
+|chat|Damnosaur|id still outstall you
+|-message|Woony forfeited.
+|
+|win|Damnosaur
+|chat|Damnosaur|if you taunted
+|chat|Woony|bleh
+|chat|Damnosaur|and i attacked
+|chat|Woony|not fun
+|chat|Damnosaur|youd be at 10%
+|chat|Damnosaur|which means youd be forced to spam roost
+|chat|Damnosaur|and that drains pp
+|chat|Woony|:(
+|chat|Damnosaur|which isnt the best option for you
+|chat|Woony|:(((
+|chat|Damnosaur|dem purdictions
+|chat|Woony|i hate hazard and spins
+|chat|Woony|too hard to pull off for me
+|chat|Damnosaur|stallllzz

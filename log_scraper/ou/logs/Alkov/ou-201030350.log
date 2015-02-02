@@ -1,0 +1,628 @@
+|join|Alkov
+|join|RebornCelebi
+|player|p1|Alkov|256
+|player|p2|RebornCelebi|2
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Gothitelle, F
+|poke|p1|Skarmory, M
+|poke|p1|Cresselia, F
+|poke|p1|Quagsire, M
+|poke|p1|Sableye, M
+|poke|p1|Chansey, F
+|poke|p2|Kyurem-Black
+|poke|p2|Landorus-Therian, M
+|poke|p2|Keldeo
+|poke|p2|Tyranitar, F
+|poke|p2|Charizard, F
+|poke|p2|Empoleon, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Chansey|Chansey, F|704\/704
+|switch|p2a: Charizard|Charizard, F|297\/297
+|turn|1
+|
+|switch|p2a: Tyranitar|Tyranitar, F|403\/403
+|-weather|Sandstorm
+|move|p1a: Chansey|Stealth Rock|p2a: Tyranitar
+|-sidestart|p2: RebornCelebi|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Chansey|660\/704|[from] sandstorm
+|turn|2
+|
+|move|p2a: Tyranitar|Pursuit|p1a: Chansey|[from]Pursuit
+|-damage|p1a: Chansey|350\/704
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|
+|-weather|Sandstorm|[upkeep]
+|turn|3
+|
+|switch|p1a: Sableye|Sableye, M|303\/303
+|switch|p2a: Keldeo|Keldeo|323\/323
+|-damage|p2a: Keldeo|303\/323|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Keldeo|283\/323|[from] sandstorm
+|-damage|p1a: Sableye|285\/303|[from] sandstorm
+|turn|4
+|
+|switch|p1a: Cresselia|Cresselia, F|444\/444
+|move|p2a: Keldeo|Scald|p1a: Cresselia
+|-damage|p1a: Cresselia|288\/444
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Keldeo|263\/323|[from] sandstorm
+|-damage|p1a: Cresselia|261\/444|[from] sandstorm
+|-heal|p1a: Cresselia|288\/444|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Empoleon|Empoleon, M|372\/372
+|-damage|p2a: Empoleon|349\/372|[from] Stealth Rock
+|move|p1a: Cresselia|Thunder Wave|p2a: Empoleon
+|-status|p2a: Empoleon|par
+|
+|-weather|none
+|-heal|p1a: Cresselia|315\/444|[from] item: Leftovers
+|-heal|p2a: Empoleon|372\/372 par|[from] item: Leftovers
+|turn|6
+|
+|switch|p1a: Gothitelle|Gothitelle, F|301\/301
+|switch|p2a: Tyranitar|Tyranitar, F|403\/403
+|-damage|p2a: Tyranitar|353\/403|[from] Stealth Rock
+|-weather|Sandstorm
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gothitelle|283\/301|[from] sandstorm
+|turn|7
+|
+|move|p1a: Gothitelle|Trick|p2a: Tyranitar
+|-activate|p1a: Gothitelle|move: Trick|[of] p2a: Tyranitar
+|-item|p2a: Tyranitar|Choice Scarf|[from] move: Trick
+|-item|p1a: Gothitelle|Choice Band|[from] move: Trick
+|move|p2a: Tyranitar|Pursuit|p1a: Gothitelle
+|-supereffective|p1a: Gothitelle
+|-damage|p1a: Gothitelle|107\/301
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gothitelle|89\/301|[from] sandstorm
+|turn|8
+|
+|move|p1a: Gothitelle|Rest|p1a: Gothitelle
+|-status|p1a: Gothitelle|slp
+|-heal|p1a: Gothitelle|301\/301 slp|[silent]
+|-status|p1a: Gothitelle|slp|[from] move: Rest
+|move|p2a: Tyranitar|Pursuit|p1a: Gothitelle
+|-supereffective|p1a: Gothitelle
+|-damage|p1a: Gothitelle|133\/301 slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gothitelle|115\/301 slp|[from] sandstorm
+|turn|9
+|
+|cant|p1a: Gothitelle|slp
+|move|p2a: Tyranitar|Pursuit|p1a: Gothitelle
+|-supereffective|p1a: Gothitelle
+|-damage|p1a: Gothitelle|0 fnt
+|faint|p1a: Gothitelle
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Sableye|Sableye, M|285\/303
+|turn|10
+|
+|switch|p2a: Keldeo|Keldeo|263\/323
+|-damage|p2a: Keldeo|243\/323|[from] Stealth Rock
+|detailschange|p1a: Sableye|Sableye-Mega, M
+|-mega|p1a: Sableye|Sableye|Sablenite
+|move|p1a: Sableye|Will-O-Wisp|p2a: Keldeo
+|-status|p2a: Keldeo|brn
+|
+|-weather|none
+|-damage|p2a: Keldeo|203\/323 brn|[from] brn
+|turn|11
+|
+|switch|p1a: Cresselia|Cresselia, F|315\/444
+|move|p2a: Keldeo|Scald|p1a: Cresselia
+|-damage|p1a: Cresselia|147\/444
+|
+|-heal|p1a: Cresselia|174\/444|[from] item: Leftovers
+|-damage|p2a: Keldeo|163\/323 brn|[from] brn
+|turn|12
+|
+|switch|p2a: Empoleon|Empoleon, M|372\/372 par
+|-damage|p2a: Empoleon|349\/372 par|[from] Stealth Rock
+|move|p1a: Cresselia|Moonlight|p1a: Cresselia
+|-heal|p1a: Cresselia|396\/444
+|
+|-heal|p1a: Cresselia|423\/444|[from] item: Leftovers
+|-heal|p2a: Empoleon|372\/372 par|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: Sableye|Sableye-Mega, M|285\/303
+|move|p2a: Empoleon|Defog|p1a: Sableye
+|move|p1a: Sableye|Defog|p2a: Empoleon|[from]Magic Bounce
+|-unboost|p2a: Empoleon|evasion|1
+|-sideend|p2: RebornCelebi|Stealth Rock|[from] move: Defog|[of] p2a: Empoleon
+|
+|turn|14
+|
+|switch|p2a: Charizard|Charizard, F|297\/297
+|move|p1a: Sableye|Calm Mind|p1a: Sableye
+|-boost|p1a: Sableye|spa|1
+|-boost|p1a: Sableye|spd|1
+|
+|turn|15
+|
+|detailschange|p2a: Charizard|Charizard-Mega-Y, F
+|-mega|p2a: Charizard|Charizard|Charizardite Y
+|-weather|SunnyDay
+|move|p2a: Charizard|Fire Blast|p1a: Sableye
+|-damage|p1a: Sableye|105\/303
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|257\/303
+|
+|-weather|SunnyDay|[upkeep]
+|turn|16
+|
+|move|p2a: Charizard|Fire Blast|p1a: Sableye
+|-damage|p1a: Sableye|85\/303
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|237\/303
+|
+|-weather|SunnyDay|[upkeep]
+|turn|17
+|
+|move|p2a: Charizard|Fire Blast|p1a: Sableye
+|-damage|p1a: Sableye|57\/303
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|209\/303
+|
+|-weather|SunnyDay|[upkeep]
+|turn|18
+|
+|move|p2a: Charizard|Fire Blast|p1a: Sableye
+|-damage|p1a: Sableye|31\/303
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|183\/303
+|
+|-weather|SunnyDay|[upkeep]
+|turn|19
+|
+|move|p2a: Charizard|Fire Blast|p1a: Sableye
+|-damage|p1a: Sableye|0 fnt
+|faint|p1a: Sableye
+|
+|-weather|none
+|c|âAlkov|are you serious
+|c|âAlkov|0.85^5 is so shit small and you hit all of it
+|c|âAlkov|with an increased in roll
+|c|âAlkov|-.-
+|
+|switch|p1a: Chansey|Chansey, F|350\/704
+|turn|20
+|c|âRebornCelebi|idk what to say
+|
+|switch|p2a: Tyranitar|Tyranitar, F|353\/403
+|-weather|Sandstorm
+|move|p1a: Chansey|Soft-Boiled|p1a: Chansey
+|-heal|p1a: Chansey|702\/704
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Chansey|658\/704|[from] sandstorm
+|turn|21
+|
+|move|p2a: Tyranitar|Superpower|p1a: Chansey
+|-supereffective|p1a: Chansey
+|-damage|p1a: Chansey|240\/704
+|-unboost|p2a: Tyranitar|atk|1
+|-unboost|p2a: Tyranitar|def|1
+|move|p1a: Chansey|Stealth Rock|p2a: Tyranitar
+|-sidestart|p2: RebornCelebi|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Chansey|196\/704|[from] sandstorm
+|turn|22
+|
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|move|p2a: Tyranitar|Superpower|p1a: Skarmory
+|-damage|p1a: Skarmory|277\/334
+|-unboost|p2a: Tyranitar|atk|1
+|-unboost|p2a: Tyranitar|def|1
+|
+|-weather|Sandstorm|[upkeep]
+|turn|23
+|
+|move|p2a: Tyranitar|Superpower|p1a: Skarmory
+|-damage|p1a: Skarmory|233\/334
+|-unboost|p2a: Tyranitar|atk|1
+|-unboost|p2a: Tyranitar|def|1
+|move|p1a: Skarmory|Spikes|p2a: Tyranitar
+|-sidestart|p2: RebornCelebi|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|turn|24
+|
+|switch|p2a: Charizard|Charizard-Mega-Y, F|297\/297
+|-damage|p2a: Charizard|149\/297|[from] Stealth Rock
+|-weather|SunnyDay
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334
+|
+|-weather|SunnyDay|[upkeep]
+|turn|25
+|
+|switch|p1a: Chansey|Chansey, F|196\/704
+|move|p2a: Charizard|Roost|p2a: Charizard
+|-heal|p2a: Charizard|297\/297
+|
+|-weather|SunnyDay|[upkeep]
+|turn|26
+|
+|switch|p2a: Empoleon|Empoleon, M|372\/372 par
+|-damage|p2a: Empoleon|349\/372 par|[from] Stealth Rock
+|-damage|p2a: Empoleon|303\/372 par|[from] Spikes
+|move|p1a: Chansey|Soft-Boiled|p1a: Chansey
+|-heal|p1a: Chansey|548\/704
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Empoleon|326\/372 par|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: Chansey|Seismic Toss|p2a: Empoleon
+|-damage|p2a: Empoleon|226\/372 par
+|move|p2a: Empoleon|Defog|p1a: Chansey
+|-unboost|p1a: Chansey|evasion|1
+|-sideend|p2: RebornCelebi|Spikes|[from] move: Defog|[of] p2a: Empoleon
+|-sideend|p2: RebornCelebi|Stealth Rock|[from] move: Defog|[of] p2a: Empoleon
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Empoleon|249\/372 par|[from] item: Leftovers
+|turn|28
+|
+|switch|p2a: Keldeo|Keldeo|163\/323 brn
+|move|p1a: Chansey|Seismic Toss|p2a: Keldeo
+|-damage|p2a: Keldeo|63\/323 brn
+|
+|-weather|none
+|-damage|p2a: Keldeo|23\/323 brn|[from] brn
+|turn|29
+|
+|switch|p1a: Cresselia|Cresselia, F|423\/444
+|move|p2a: Keldeo|Scald|p1a: Cresselia
+|-crit|p1a: Cresselia
+|-damage|p1a: Cresselia|197\/444
+|-status|p1a: Cresselia|brn
+|
+|-heal|p1a: Cresselia|224\/444 brn|[from] item: Leftovers
+|-damage|p2a: Keldeo|0 fnt|[from] brn
+|-damage|p1a: Cresselia|169\/444 brn|[from] brn
+|faint|p2a: Keldeo
+|
+|switch|p2a: Charizard|Charizard-Mega-Y, F|297\/297
+|-weather|SunnyDay
+|turn|30
+|
+|switch|p1a: Chansey|Chansey, F|548\/704
+|move|p2a: Charizard|Fire Blast|p1a: Chansey
+|-damage|p1a: Chansey|329\/704
+|
+|-weather|SunnyDay|[upkeep]
+|turn|31
+|
+|switch|p2a: Tyranitar|Tyranitar, F|353\/403
+|-weather|Sandstorm
+|move|p1a: Chansey|Soft-Boiled|p1a: Chansey
+|-heal|p1a: Chansey|681\/704
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Chansey|637\/704|[from] sandstorm
+|turn|32
+|
+|move|p2a: Tyranitar|Pursuit|p1a: Chansey|[from]Pursuit
+|-damage|p1a: Chansey|438\/704
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|
+|-weather|Sandstorm|[upkeep]
+|turn|33
+|
+|switch|p2a: Charizard|Charizard-Mega-Y, F|297\/297
+|-weather|SunnyDay
+|move|p1a: Skarmory|Spikes|p2a: Charizard
+|-sidestart|p2: RebornCelebi|Spikes
+|
+|-weather|SunnyDay|[upkeep]
+|turn|34
+|
+|switch|p2a: Tyranitar|Tyranitar, F|353\/403
+|-damage|p2a: Tyranitar|303\/403|[from] Spikes
+|-weather|Sandstorm
+|switch|p1a: Chansey|Chansey, F|438\/704
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Chansey|394\/704|[from] sandstorm
+|turn|35
+|
+|move|p2a: Tyranitar|Superpower|p1a: Chansey
+|-supereffective|p1a: Chansey
+|-damage|p1a: Chansey|0 fnt
+|-unboost|p2a: Tyranitar|atk|1
+|-unboost|p2a: Tyranitar|def|1
+|faint|p1a: Chansey
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Quagsire|Quagsire, M|394\/394
+|turn|36
+|
+|switch|p2a: Empoleon|Empoleon, M|249\/372 par
+|-damage|p2a: Empoleon|203\/372 par|[from] Spikes
+|move|p1a: Quagsire|Earthquake|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|0 fnt
+|faint|p2a: Empoleon
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Charizard|Charizard-Mega-Y, F|297\/297
+|-weather|SunnyDay
+|turn|37
+|
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|move|p2a: Charizard|Solar Beam|p1a: Skarmory|[still]
+|-prepare|p2a: Charizard|Solar Beam|p1a: Skarmory
+|-anim|p2a: Charizard|Solar Beam|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|277\/334
+|
+|-weather|SunnyDay|[upkeep]
+|turn|38
+|
+|switch|p1a: Quagsire|Quagsire, M|394\/394
+|move|p2a: Charizard|Solar Beam|p1a: Quagsire|[still]
+|-prepare|p2a: Charizard|Solar Beam|p1a: Quagsire
+|-anim|p2a: Charizard|Solar Beam|p1a: Quagsire
+|-crit|p1a: Quagsire
+|-supereffective|p1a: Quagsire
+|-damage|p1a: Quagsire|0 fnt
+|faint|p1a: Quagsire
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p1a: Cresselia|Cresselia, F|169\/444 brn
+|turn|39
+|c|âRebornCelebi|;)
+|
+|move|p2a: Charizard|Fire Blast|p1a: Cresselia|[miss]
+|-miss|p2a: Charizard|p1a: Cresselia
+|move|p1a: Cresselia|Moonlight|p1a: Cresselia
+|-heal|p1a: Cresselia|444\/444 brn
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Cresselia|389\/444 brn|[from] brn
+|turn|40
+|
+|switch|p2a: Tyranitar|Tyranitar, F|303\/403
+|-damage|p2a: Tyranitar|253\/403|[from] Spikes
+|-weather|Sandstorm
+|move|p1a: Cresselia|Thunder Wave|p2a: Tyranitar
+|-status|p2a: Tyranitar|par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Cresselia|362\/444 brn|[from] sandstorm
+|-heal|p1a: Cresselia|389\/444 brn|[from] item: Leftovers
+|-damage|p1a: Cresselia|334\/444 brn|[from] brn
+|turn|41
+|
+|cant|p2a: Tyranitar|par
+|switch|p1a: Skarmory|Skarmory, M|277\/334
+|
+|-weather|Sandstorm|[upkeep]
+|turn|42
+|
+|switch|p2a: Kyurem-Black|Kyurem-Black|391\/391
+|-damage|p2a: Kyurem-Black|343\/391|[from] Spikes
+|-ability|p2a: Kyurem-Black|Teravolt
+|move|p1a: Skarmory|Spikes|p2a: Kyurem-Black
+|-sidestart|p2: RebornCelebi|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Kyurem-Black|319\/391|[from] sandstorm
+|turn|43
+|
+|move|p2a: Kyurem-Black|Ice Beam|p1a: Skarmory
+|-damage|p1a: Skarmory|96\/334
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|263\/334
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Kyurem-Black|295\/391|[from] sandstorm
+|turn|44
+|
+|switch|p2a: Tyranitar|Tyranitar, F|253\/403 par
+|-damage|p2a: Tyranitar|186\/403 par|[from] Spikes
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334
+|
+|-weather|none
+|turn|45
+|
+|move|p1a: Skarmory|Spikes|p2a: Tyranitar
+|-sidestart|p2: RebornCelebi|Spikes
+|move|p2a: Tyranitar|Stone Edge|p1a: Skarmory
+|-damage|p1a: Skarmory|216\/334
+|
+|turn|46
+|
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334
+|move|p2a: Tyranitar|Stone Edge|p1a: Skarmory|[miss]
+|-miss|p2a: Tyranitar|p1a: Skarmory
+|
+|turn|47
+|
+|move|p1a: Skarmory|Spikes|p2a: Tyranitar
+|-fail|p2a: Tyranitar
+|cant|p2a: Tyranitar|par
+|
+|turn|48
+|
+|switch|p2a: Charizard|Charizard-Mega-Y, F|297\/297
+|-weather|SunnyDay
+|move|p1a: Skarmory|Brave Bird|p2a: Charizard
+|-damage|p2a: Charizard|149\/297
+|-damage|p1a: Skarmory|285\/334|[from] recoil|[of] p2a: Charizard
+|
+|-weather|SunnyDay|[upkeep]
+|turn|49
+|
+|switch|p1a: Cresselia|Cresselia, F|334\/444 brn
+|move|p2a: Charizard|Roost|p2a: Charizard
+|-heal|p2a: Charizard|297\/297
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Cresselia|361\/444 brn|[from] item: Leftovers
+|-damage|p1a: Cresselia|306\/444 brn|[from] brn
+|turn|50
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Cresselia
+|-unboost|p1a: Cresselia|atk|1
+|move|p1a: Cresselia|Moonlight|p1a: Cresselia
+|-heal|p1a: Cresselia|444\/444 brn
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Cresselia|389\/444 brn|[from] brn
+|turn|51
+|
+|switch|p1a: Skarmory|Skarmory, M|285\/334
+|move|p2a: Landorus-Therian|U-turn|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|272\/334
+|
+|switch|p2a: Charizard|Charizard-Mega-Y, F|297\/297
+|
+|-weather|SunnyDay|[upkeep]
+|turn|52
+|
+|switch|p1a: Cresselia|Cresselia, F|389\/444 brn
+|move|p2a: Charizard|Solar Beam|p1a: Cresselia|[still]
+|-prepare|p2a: Charizard|Solar Beam|p1a: Cresselia
+|-anim|p2a: Charizard|Solar Beam|p1a: Cresselia
+|-damage|p1a: Cresselia|265\/444 brn
+|
+|-weather|none
+|-heal|p1a: Cresselia|292\/444 brn|[from] item: Leftovers
+|-damage|p1a: Cresselia|237\/444 brn|[from] brn
+|turn|53
+|
+|switch|p2a: Tyranitar|Tyranitar, F|186\/403 par
+|-damage|p2a: Tyranitar|86\/403 par|[from] Spikes
+|-weather|Sandstorm
+|move|p1a: Cresselia|Moonlight|p1a: Cresselia
+|-heal|p1a: Cresselia|348\/444 brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Cresselia|321\/444 brn|[from] sandstorm
+|-heal|p1a: Cresselia|348\/444 brn|[from] item: Leftovers
+|-damage|p1a: Cresselia|293\/444 brn|[from] brn
+|turn|54
+|
+|move|p1a: Cresselia|Moonblast|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|4\/403 par
+|cant|p2a: Tyranitar|par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Cresselia|266\/444 brn|[from] sandstorm
+|-heal|p1a: Cresselia|293\/444 brn|[from] item: Leftovers
+|-damage|p1a: Cresselia|238\/444 brn|[from] brn
+|turn|55
+|
+|move|p2a: Tyranitar|Pursuit|p1a: Cresselia|[from]Pursuit
+|-supereffective|p1a: Cresselia
+|-damage|p1a: Cresselia|8\/444 brn
+|switch|p1a: Skarmory|Skarmory, M|272\/334
+|
+|-weather|Sandstorm|[upkeep]
+|turn|56
+|
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334
+|move|p2a: Tyranitar|Pursuit|p1a: Skarmory
+|-crit|p1a: Skarmory
+|-damage|p1a: Skarmory|265\/334
+|
+|-weather|Sandstorm|[upkeep]
+|turn|57
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Skarmory
+|-unboost|p1a: Skarmory|atk|1
+|move|p1a: Skarmory|Brave Bird|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|237\/319
+|-damage|p1a: Skarmory|238\/334|[from] recoil|[of] p2a: Landorus-Therian
+|
+|-weather|none
+|turn|58
+|
+|switch|p2a: Tyranitar|Tyranitar, F|4\/403 par
+|-damage|p2a: Tyranitar|0 fnt|[from] Spikes
+|faint|p2a: Tyranitar
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334
+|
+|
+|switch|p2a: Kyurem-Black|Kyurem-Black|295\/391
+|-damage|p2a: Kyurem-Black|198\/391|[from] Spikes
+|-ability|p2a: Kyurem-Black|Teravolt
+|turn|59
+|
+|move|p2a: Kyurem-Black|Ice Beam|p1a: Skarmory
+|-damage|p1a: Skarmory|168\/334
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334
+|
+|turn|60
+|
+|move|p2a: Kyurem-Black|Ice Beam|p1a: Skarmory
+|-damage|p1a: Skarmory|168\/334
+|move|p1a: Skarmory|Brave Bird|p2a: Kyurem-Black
+|-damage|p2a: Kyurem-Black|113\/391
+|-damage|p1a: Skarmory|140\/334|[from] recoil|[of] p2a: Kyurem-Black
+|
+|turn|61
+|c|âAlkov|gg
+|
+|move|p2a: Kyurem-Black|Ice Beam|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|faint|p1a: Skarmory
+|
+|c|âRebornCelebi|gg
+|
+|switch|p1a: Cresselia|Cresselia, F|8\/444 brn
+|turn|62
+|
+|move|p2a: Kyurem-Black|Ice Beam|p1a: Cresselia
+|-damage|p1a: Cresselia|0 fnt
+|faint|p1a: Cresselia
+|
+|win|RebornCelebi
+|raw|Ladder updating...
+|raw|Alkov's rating: 1634 &rarr; <strong>1613<\/strong><br \/>(-21 for losing)
+|raw|RebornCelebi's rating: 1618 &rarr; <strong>1639<\/strong><br \/>(+21 for winning)
+|leave|Alkov
+|player|p1

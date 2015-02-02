@@ -1,0 +1,569 @@
+|join|JiaShengz
+|join|KratosSnake
+|player|p1|JiaShengz|1
+|player|p2|KratosSnake|159
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Sableye, F
+|poke|p1|Heatran, F
+|poke|p1|Tentacruel, M
+|poke|p1|Chesnaught, F
+|poke|p1|Chansey, F
+|poke|p1|Clefable, F
+|poke|p2|Keldeo
+|poke|p2|Metagross
+|poke|p2|Talonflame, M
+|poke|p2|Rotom-Wash
+|poke|p2|Latios, M
+|poke|p2|Landorus-Therian, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Sableye|Sableye, F|304\/304
+|switch|p2a: Keldeo|Keldeo|323\/323
+|turn|1
+|
+|switch|p2a: Talonflame|Talonflame, M|359\/359
+|switch|p1a: Tentacruel|Tentacruel, M|361\/361
+|
+|turn|2
+|
+|move|p2a: Talonflame|Taunt|p1a: Tentacruel
+|-start|p1a: Tentacruel|move: Taunt
+|cant|p1a: Tentacruel|move: Taunt|Toxic Spikes
+|
+|turn|3
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|303\/303
+|move|p1a: Tentacruel|Scald|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|264\/303
+|
+|-heal|p2a: Rotom-Wash|282\/303|[from] item: Leftovers
+|turn|4
+|
+|move|p1a: Tentacruel|Knock Off|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|248\/303
+|-enditem|p2a: Rotom-Wash|Leftovers|[from] move: Knock Off|[of] p1a: Tentacruel
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Tentacruel
+|-supereffective|p1a: Tentacruel
+|-damage|p1a: Tentacruel|223\/361
+|
+|switch|p2a: Metagross|Metagross|301\/301
+|
+|-heal|p1a: Tentacruel|245\/361|[from] item: Black Sludge
+|-end|p1a: Tentacruel|move: Taunt
+|turn|5
+|
+|detailschange|p2a: Metagross|Metagross-Mega
+|message|Metagross has Mega Evolved into Mega Metagross!
+|move|p2a: Metagross|Pursuit|p1a: Tentacruel|[from]Pursuit
+|-damage|p1a: Tentacruel|113\/361
+|switch|p1a: Sableye|Sableye, F|304\/304
+|
+|turn|6
+|
+|switch|p2a: Talonflame|Talonflame, M|359\/359
+|detailschange|p1a: Sableye|Sableye-Mega, F
+|message|Sableye has Mega Evolved into Mega Sableye!
+|move|p1a: Sableye|Will-O-Wisp|p2a: Talonflame
+|-fail|p2a: Talonflame
+|
+|turn|7
+|
+|move|p2a: Talonflame|Brave Bird|p1a: Sableye
+|-damage|p1a: Sableye|232\/304
+|-damage|p2a: Talonflame|335\/359|[from] recoil|[of] p1a: Sableye
+|move|p1a: Sableye|Knock Off|p2a: Talonflame
+|-damage|p2a: Talonflame|200\/359
+|-enditem|p2a: Talonflame|Leftovers|[from] move: Knock Off|[of] p1a: Sableye
+|
+|turn|8
+|
+|switch|p2a: Keldeo|Keldeo|323\/323
+|move|p1a: Sableye|Taunt|p2a: Keldeo
+|-start|p2a: Keldeo|move: Taunt
+|
+|turn|9
+|
+|switch|p1a: Clefable|Clefable, F|394\/394
+|move|p2a: Keldeo|Scald|p1a: Clefable
+|-damage|p1a: Clefable|238\/394
+|
+|-heal|p1a: Clefable|262\/394|[from] item: Leftovers
+|turn|10
+|
+|switch|p2a: Talonflame|Talonflame, M|200\/359
+|move|p1a: Clefable|Wish|p1a: Clefable
+|
+|-heal|p1a: Clefable|286\/394|[from] item: Leftovers
+|turn|11
+|
+|switch|p1a: Tentacruel|Tentacruel, M|113\/361
+|move|p2a: Talonflame|Brave Bird|p1a: Tentacruel
+|-damage|p1a: Tentacruel|7\/361
+|-damage|p2a: Talonflame|165\/359|[from] recoil|[of] p1a: Tentacruel
+|
+|-heal|p1a: Tentacruel|204\/361|[from] move: Wish|[wisher] Clefable
+|-heal|p1a: Tentacruel|226\/361|[from] item: Black Sludge
+|turn|12
+|
+|move|p2a: Talonflame|Will-O-Wisp|p1a: Tentacruel
+|-status|p1a: Tentacruel|brn
+|move|p1a: Tentacruel|Scald|p2a: Talonflame
+|-supereffective|p2a: Talonflame
+|-damage|p2a: Talonflame|15\/359
+|
+|-heal|p1a: Tentacruel|248\/361 brn|[from] item: Black Sludge
+|-damage|p1a: Tentacruel|203\/361 brn|[from] brn
+|turn|13
+|
+|move|p2a: Talonflame|Roost|p2a: Talonflame
+|-heal|p2a: Talonflame|195\/359
+|move|p1a: Tentacruel|Toxic Spikes|p2a: Talonflame
+|-sidestart|p2: KratosSnake|move: Toxic Spikes
+|
+|-heal|p1a: Tentacruel|225\/361 brn|[from] item: Black Sludge
+|-damage|p1a: Tentacruel|180\/361 brn|[from] brn
+|turn|14
+|
+|switch|p1a: Sableye|Sableye-Mega, F|232\/304
+|move|p2a: Talonflame|Roost|p2a: Talonflame
+|-heal|p2a: Talonflame|359\/359
+|
+|turn|15
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|248\/303
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|304\/304
+|
+|turn|16
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Sableye
+|-damage|p1a: Sableye|192\/304
+|move|p1a: Sableye|Will-O-Wisp|p2a: Rotom-Wash
+|-status|p2a: Rotom-Wash|brn
+|
+|-damage|p2a: Rotom-Wash|211\/303 brn|[from] brn
+|turn|17
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Sableye
+|-damage|p1a: Sableye|114\/304
+|
+|switch|p2a: Latios|Latios, M|301\/301
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|266\/304
+|
+|turn|18
+|
+|move|p2a: Latios|Defog|p1a: Sableye
+|move|p1a: Sableye|Defog|p2a: Latios|[from]Magic Bounce
+|-unboost|p2a: Latios|evasion|1
+|-sideend|p2: KratosSnake|Toxic Spikes|[from] move: Defog|[of] p2a: Latios
+|move|p1a: Sableye|Knock Off|p2a: Latios
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|53\/301
+|-enditem|p2a: Latios|Choice Scarf|[from] move: Knock Off|[of] p1a: Sableye
+|
+|turn|19
+|
+|switch|p2a: Talonflame|Talonflame, M|359\/359
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|304\/304
+|
+|turn|20
+|
+|move|p2a: Talonflame|Brave Bird|p1a: Sableye
+|-damage|p1a: Sableye|225\/304
+|-damage|p2a: Talonflame|333\/359|[from] recoil|[of] p1a: Sableye
+|move|p1a: Sableye|Taunt|p2a: Talonflame
+|-start|p2a: Talonflame|move: Taunt
+|
+|turn|21
+|
+|switch|p2a: Keldeo|Keldeo|323\/323
+|move|p1a: Sableye|Knock Off|p2a: Keldeo
+|-resisted|p2a: Keldeo
+|-damage|p2a: Keldeo|272\/323
+|-boost|p2a: Keldeo|atk|1|[from] ability: Justified
+|-enditem|p2a: Keldeo|Leftovers|[from] move: Knock Off|[of] p1a: Sableye
+|
+|turn|22
+|
+|switch|p1a: Chesnaught|Chesnaught, F|380\/380
+|move|p2a: Keldeo|Substitute|p2a: Keldeo
+|-start|p2a: Keldeo|Substitute
+|-damage|p2a: Keldeo|192\/323
+|
+|turn|23
+|
+|move|p2a: Keldeo|Scald|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|290\/380
+|move|p1a: Chesnaught|Drain Punch|p2a: Keldeo
+|-end|p2a: Keldeo|Substitute
+|-heal|p1a: Chesnaught|330\/380|[from] drain|[of] p2a: Keldeo
+|
+|-heal|p1a: Chesnaught|353\/380|[from] item: Leftovers
+|turn|24
+|
+|switch|p2a: Talonflame|Talonflame, M|333\/359
+|move|p1a: Chesnaught|Drain Punch|p2a: Talonflame
+|-resisted|p2a: Talonflame
+|-damage|p2a: Talonflame|275\/359
+|-heal|p1a: Chesnaught|380\/380|[from] drain|[of] p2a: Talonflame
+|
+|turn|25
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|382\/382
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Chesnaught
+|-unboost|p1a: Chesnaught|atk|1
+|switch|p1a: Sableye|Sableye-Mega, F|225\/304
+|
+|turn|26
+|
+|move|p2a: Landorus-Therian|U-turn|p1a: Sableye
+|-damage|p1a: Sableye|177\/304
+|
+|switch|p2a: Keldeo|Keldeo|192\/323
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|304\/304
+|
+|turn|27
+|
+|move|p2a: Keldeo|Scald|p1a: Sableye
+|-damage|p1a: Sableye|175\/304
+|move|p1a: Sableye|Will-O-Wisp|p2a: Keldeo
+|-status|p2a: Keldeo|brn
+|
+|-damage|p2a: Keldeo|152\/323 brn|[from] brn
+|turn|28
+|
+|switch|p1a: Chesnaught|Chesnaught, F|380\/380
+|move|p2a: Keldeo|Scald|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|289\/380
+|
+|-heal|p1a: Chesnaught|312\/380|[from] item: Leftovers
+|-damage|p2a: Keldeo|112\/323 brn|[from] brn
+|turn|29
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|382\/382
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Chesnaught
+|-unboost|p1a: Chesnaught|atk|1
+|move|p1a: Chesnaught|Leech Seed|p2a: Landorus-Therian
+|-start|p2a: Landorus-Therian|move: Leech Seed
+|
+|-heal|p1a: Chesnaught|335\/380|[from] item: Leftovers
+|-damage|p2a: Landorus-Therian|335\/382|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|380\/380|[silent]
+|turn|30
+|
+|switch|p1a: Sableye|Sableye-Mega, F|175\/304
+|move|p2a: Landorus-Therian|U-turn|p1a: Sableye
+|-damage|p1a: Sableye|130\/304
+|
+|switch|p2a: Metagross|Metagross-Mega|301\/301
+|
+|turn|31
+|
+|switch|p1a: Tentacruel|Tentacruel, M|180\/361 brn
+|move|p2a: Metagross|Meteor Mash|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|76\/361 brn
+|
+|-heal|p1a: Tentacruel|98\/361 brn|[from] item: Black Sludge
+|-damage|p1a: Tentacruel|53\/361 brn|[from] brn
+|turn|32
+|
+|move|p2a: Metagross|Earthquake|p1a: Tentacruel
+|-supereffective|p1a: Tentacruel
+|-damage|p1a: Tentacruel|0 fnt
+|faint|p1a: Tentacruel
+|
+|
+|switch|p1a: Chesnaught|Chesnaught, F|380\/380
+|turn|33
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|335\/382
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Chesnaught
+|-unboost|p1a: Chesnaught|atk|1
+|move|p1a: Chesnaught|Leech Seed|p2a: Landorus-Therian
+|-start|p2a: Landorus-Therian|move: Leech Seed
+|
+|-heal|p2a: Landorus-Therian|358\/382|[from] item: Leftovers
+|-damage|p2a: Landorus-Therian|311\/382|[from] Leech Seed|[of] p1a: Chesnaught
+|turn|34
+|
+|move|p2a: Landorus-Therian|U-turn|p1a: Chesnaught
+|-damage|p1a: Chesnaught|335\/380
+|
+|switch|p2a: Talonflame|Talonflame, M|275\/359
+|move|p1a: Chesnaught|Spikes|p2a: Talonflame
+|-sidestart|p2: KratosSnake|Spikes
+|
+|-heal|p1a: Chesnaught|358\/380|[from] item: Leftovers
+|turn|35
+|
+|switch|p2a: Metagross|Metagross-Mega|301\/301
+|-damage|p2a: Metagross|264\/301|[from] Spikes
+|switch|p1a: Heatran|Heatran, F|386\/386
+|
+|turn|36
+|
+|switch|p2a: Latios|Latios, M|53\/301
+|switch|p1a: Chesnaught|Chesnaught, F|358\/380
+|
+|-heal|p1a: Chesnaught|380\/380|[from] item: Leftovers
+|turn|37
+|
+|move|p2a: Latios|Psyshock|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-damage|p1a: Chesnaught|216\/380
+|move|p1a: Chesnaught|Leech Seed|p2a: Latios
+|-start|p2a: Latios|move: Leech Seed
+|
+|-heal|p1a: Chesnaught|239\/380|[from] item: Leftovers
+|-damage|p2a: Latios|16\/301|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|276\/380|[silent]
+|turn|38
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-singleturn|p1a: Chesnaught|move: Protect
+|move|p2a: Latios|Draco Meteor|p1a: Chesnaught
+|-activate|p1a: Chesnaught|move: Protect
+|
+|-heal|p1a: Chesnaught|299\/380|[from] item: Leftovers
+|-damage|p2a: Latios|0 fnt|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|315\/380|[silent]
+|faint|p2a: Latios
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|311\/382
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Chesnaught
+|-unboost|p1a: Chesnaught|atk|1
+|turn|39
+|
+|switch|p1a: Sableye|Sableye-Mega, F|130\/304
+|move|p2a: Landorus-Therian|U-turn|p1a: Sableye
+|-damage|p1a: Sableye|83\/304
+|
+|switch|p2a: Metagross|Metagross-Mega|264\/301
+|-damage|p2a: Metagross|227\/301|[from] Spikes
+|
+|turn|40
+|
+|move|p2a: Metagross|Meteor Mash|p1a: Sableye
+|-damage|p1a: Sableye|0 fnt
+|faint|p1a: Sableye
+|
+|
+|switch|p1a: Chesnaught|Chesnaught, F|315\/380
+|turn|41
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|311\/382
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Chesnaught
+|-unboost|p1a: Chesnaught|atk|1
+|move|p1a: Chesnaught|Leech Seed|p2a: Landorus-Therian
+|-start|p2a: Landorus-Therian|move: Leech Seed
+|
+|-heal|p2a: Landorus-Therian|334\/382|[from] item: Leftovers
+|-heal|p1a: Chesnaught|338\/380|[from] item: Leftovers
+|-damage|p2a: Landorus-Therian|287\/382|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|380\/380|[silent]
+|turn|42
+|
+|move|p2a: Landorus-Therian|Toxic|p1a: Chesnaught
+|-status|p1a: Chesnaught|tox
+|move|p1a: Chesnaught|Leech Seed|p2a: Landorus-Therian
+|-fail|p2a: Landorus-Therian
+|
+|-heal|p2a: Landorus-Therian|310\/382|[from] item: Leftovers
+|-damage|p2a: Landorus-Therian|263\/382|[from] Leech Seed|[of] p1a: Chesnaught
+|-damage|p1a: Chesnaught|357\/380 tox|[from] psn
+|turn|43
+|
+|switch|p1a: Clefable|Clefable, F|286\/394
+|move|p2a: Landorus-Therian|Stealth Rock|p1a: Clefable
+|-sidestart|p1: JiaShengz|move: Stealth Rock
+|
+|-heal|p2a: Landorus-Therian|286\/382|[from] item: Leftovers
+|-heal|p1a: Clefable|310\/394|[from] item: Leftovers
+|-damage|p2a: Landorus-Therian|239\/382|[from] Leech Seed|[of] p1a: Clefable
+|-heal|p1a: Clefable|357\/394|[silent]
+|turn|44
+|
+|move|p2a: Landorus-Therian|U-turn|p1a: Clefable
+|-crit|p1a: Clefable
+|-resisted|p1a: Clefable
+|-damage|p1a: Clefable|308\/394
+|
+|switch|p2a: Metagross|Metagross-Mega|227\/301
+|-damage|p2a: Metagross|190\/301|[from] Spikes
+|move|p1a: Clefable|Wish|p1a: Clefable
+|
+|-heal|p1a: Clefable|332\/394|[from] item: Leftovers
+|turn|45
+|
+|switch|p1a: Chansey|Chansey, F|703\/703
+|-damage|p1a: Chansey|616\/703|[from] Stealth Rock
+|move|p2a: Metagross|Zen Headbutt|p1a: Chansey
+|-damage|p1a: Chansey|325\/703
+|
+|-heal|p1a: Chansey|522\/703|[from] move: Wish|[wisher] Clefable
+|turn|46
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|239\/382
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Chansey
+|-unboost|p1a: Chansey|atk|1
+|move|p1a: Chansey|Soft-Boiled|p1a: Chansey
+|-heal|p1a: Chansey|703\/703
+|
+|-heal|p2a: Landorus-Therian|262\/382|[from] item: Leftovers
+|turn|47
+|
+|switch|p1a: Chesnaught|Chesnaught, F|357\/380 tox
+|-damage|p1a: Chesnaught|334\/380 tox|[from] Stealth Rock
+|move|p2a: Landorus-Therian|Earthquake|p1a: Chesnaught
+|-crit|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|260\/380 tox
+|
+|-heal|p2a: Landorus-Therian|285\/382|[from] item: Leftovers
+|-heal|p1a: Chesnaught|283\/380 tox|[from] item: Leftovers
+|-damage|p1a: Chesnaught|260\/380 tox|[from] psn
+|turn|48
+|
+|move|p2a: Landorus-Therian|U-turn|p1a: Chesnaught
+|-damage|p1a: Chesnaught|211\/380 tox
+|
+|switch|p2a: Talonflame|Talonflame, M|275\/359
+|move|p1a: Chesnaught|Spikes|p2a: Talonflame
+|-sidestart|p2: KratosSnake|Spikes
+|
+|-heal|p1a: Chesnaught|234\/380 tox|[from] item: Leftovers
+|-damage|p1a: Chesnaught|188\/380 tox|[from] psn
+|turn|49
+|
+|switch|p1a: Heatran|Heatran, F|386\/386
+|-damage|p1a: Heatran|338\/386|[from] Stealth Rock
+|move|p2a: Talonflame|Taunt|p1a: Heatran
+|-start|p1a: Heatran|move: Taunt
+|
+|-heal|p1a: Heatran|362\/386|[from] item: Leftovers
+|turn|50
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|211\/303 brn
+|move|p1a: Heatran|Lava Plume|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|154\/303 brn
+|
+|-heal|p1a: Heatran|386\/386|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|117\/303 brn|[from] brn
+|turn|51
+|
+|switch|p1a: Chansey|Chansey, F|703\/703
+|-damage|p1a: Chansey|616\/703|[from] Stealth Rock
+|move|p2a: Rotom-Wash|Pain Split|p1a: Chansey
+|-sethp|p1a: Chansey|366\/703|p2a: Rotom-Wash|303\/303 brn|[from] move: Pain Split
+|
+|-damage|p2a: Rotom-Wash|266\/303 brn|[from] brn
+|turn|52
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Chansey
+|-damage|p1a: Chansey|308\/703
+|
+|switch|p2a: Keldeo|Keldeo|112\/323 brn
+|-damage|p2a: Keldeo|59\/323 brn|[from] Spikes
+|move|p1a: Chansey|Heal Bell|p1a: Chansey
+|-cureteam|p1a: Chansey|[from] move: HealBell
+|
+|-damage|p2a: Keldeo|19\/323 brn|[from] brn
+|turn|53
+|
+|switch|p1a: Clefable|Clefable, F|332\/394
+|-damage|p1a: Clefable|283\/394|[from] Stealth Rock
+|move|p2a: Keldeo|Secret Sword|p1a: Clefable
+|-resisted|p1a: Clefable
+|-damage|p1a: Clefable|214\/394
+|
+|-heal|p1a: Clefable|238\/394|[from] item: Leftovers
+|-damage|p2a: Keldeo|0 fnt|[from] brn
+|faint|p2a: Keldeo
+|
+|switch|p2a: Metagross|Metagross-Mega|190\/301
+|-damage|p2a: Metagross|140\/301|[from] Spikes
+|turn|54
+|
+|move|p2a: Metagross|Meteor Mash|p1a: Clefable
+|-supereffective|p1a: Clefable
+|-damage|p1a: Clefable|0 fnt
+|faint|p1a: Clefable
+|
+|
+|switch|p1a: Chesnaught|Chesnaught, F|188\/380
+|-damage|p1a: Chesnaught|165\/380|[from] Stealth Rock
+|turn|55
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-singleturn|p1a: Chesnaught|move: Protect
+|move|p2a: Metagross|Zen Headbutt|p1a: Chesnaught
+|-activate|p1a: Chesnaught|move: Protect
+|-damage|p2a: Metagross|103\/301|[from] Spiky Shield|[of] p1a: Chesnaught
+|
+|-heal|p1a: Chesnaught|188\/380|[from] item: Leftovers
+|turn|56
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-singleturn|p1a: Chesnaught|move: Protect
+|move|p2a: Metagross|Zen Headbutt|p1a: Chesnaught
+|-activate|p1a: Chesnaught|move: Protect
+|-damage|p2a: Metagross|66\/301|[from] Spiky Shield|[of] p1a: Chesnaught
+|
+|-heal|p1a: Chesnaught|211\/380|[from] item: Leftovers
+|turn|57
+|
+|switch|p1a: Heatran|Heatran, F|386\/386
+|-damage|p1a: Heatran|338\/386|[from] Stealth Rock
+|move|p2a: Metagross|Zen Headbutt|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|240\/386
+|
+|-heal|p1a: Heatran|264\/386|[from] item: Leftovers
+|turn|58
+|
+|move|p2a: Metagross|Earthquake|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|
+|switch|p1a: Chesnaught|Chesnaught, F|211\/380
+|-damage|p1a: Chesnaught|188\/380|[from] Stealth Rock
+|turn|59
+|c|âKratosSnake|gg
+|
+|move|p2a: Metagross|Zen Headbutt|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-damage|p1a: Chesnaught|0 fnt
+|faint|p1a: Chesnaught
+|
+|-message|JiaShengz forfeited.
+|
+|win|KratosSnake
+|raw|Ladder updating...
+|leave|JiaShengz
+|player|p1
+|raw|JiaShengz's rating: 1716 &rarr; <strong>1692<\/strong><br \/>(-24 for losing)
+|raw|KratosSnake's rating: 1662 &rarr; <strong>1685<\/strong><br \/>(+23 for winning)

@@ -1,0 +1,330 @@
+|join|vladmicrozoom
+|join|YveltalNL
+|player|p1|vladmicrozoom|101
+|player|p2|YveltalNL|163
+|gametype|singles
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Latias, F
+|poke|p1|Cofagrigus, F
+|poke|p1|Darmanitan, M
+|poke|p1|Keldeo
+|poke|p1|Gardevoir, F
+|poke|p1|Thundurus-Therian, M
+|poke|p2|Florges, F
+|poke|p2|Keldeo-Resolute
+|poke|p2|Gogoat, M
+|poke|p2|Ampharos, F
+|poke|p2|Claydol
+|poke|p2|Crobat, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|join|Staricarus
+|chat|YveltalNL|gl
+|
+|start
+|switch|p1a: Cofagrigus|Cofagrigus, F|320\/320
+|switch|p2a: Crobat|Crobat, M|311\/311
+|turn|1
+|callback|decision
+|
+|move|p2a: Crobat|U-turn|p1a: Cofagrigus
+|-resisted|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|295\/320
+|-ability|p2a: Crobat|Mummy|[from] Mummy
+|callback|decision
+|
+|switch|p2a: Ampharos|Ampharos, F|322\/322
+|move|p1a: Cofagrigus|Will-O-Wisp|p2a: Ampharos
+|-status|p2a: Ampharos|brn
+|
+|-heal|p1a: Cofagrigus|315\/320|[from] item: Leftovers
+|-damage|p2a: Ampharos|282\/322 brn|[from] brn
+|turn|2
+|callback|decision
+|
+|switch|p2a: Florges|Florges, F|360\/360
+|move|p1a: Cofagrigus|Shadow Ball|p2a: Florges
+|-damage|p2a: Florges|315\/360
+|
+|-heal|p2a: Florges|337\/360|[from] item: Leftovers
+|-heal|p1a: Cofagrigus|320\/320|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p2a: Florges|Moonblast|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|211\/320
+|move|p1a: Cofagrigus|Will-O-Wisp|p2a: Florges|[miss]
+|-miss|p1a: Cofagrigus|p2a: Florges
+|
+|-heal|p2a: Florges|359\/360|[from] item: Leftovers
+|-heal|p1a: Cofagrigus|231\/320|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Florges|Moonblast|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|122\/320
+|move|p1a: Cofagrigus|Will-O-Wisp|p2a: Florges|[miss]
+|-miss|p1a: Cofagrigus|p2a: Florges
+|
+|-heal|p2a: Florges|360\/360|[from] item: Leftovers
+|-heal|p1a: Cofagrigus|142\/320|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p2a: Florges|Moonblast|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|19\/320
+|move|p1a: Cofagrigus|Pain Split|p2a: Florges
+|-sethp|p2a: Florges|189\/360|p1a: Cofagrigus|189\/320|[from] move: Pain Split
+|
+|-heal|p2a: Florges|211\/360|[from] item: Leftovers
+|-heal|p1a: Cofagrigus|209\/320|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Florges|Moonblast|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|92\/320
+|move|p1a: Cofagrigus|Will-O-Wisp|p2a: Florges
+|-status|p2a: Florges|brn
+|
+|-heal|p2a: Florges|233\/360 brn|[from] item: Leftovers
+|-heal|p1a: Cofagrigus|112\/320|[from] item: Leftovers
+|-damage|p2a: Florges|188\/360 brn|[from] brn
+|turn|7
+|callback|decision
+|
+|switch|p1a: Gardevoir|Gardevoir, F|340\/340
+|move|p2a: Florges|Moonblast|p1a: Gardevoir
+|-damage|p1a: Gardevoir|225\/340
+|
+|-heal|p2a: Florges|210\/360 brn|[from] item: Leftovers
+|-damage|p2a: Florges|165\/360 brn|[from] brn
+|turn|8
+|callback|decision
+|
+|-formechange|p1a: Gardevoir|Gardevoir-Mega
+|message|Gardevoir has Mega Evolved into Mega Gardevoir!
+|move|p1a: Gardevoir|Psychic|p2a: Florges
+|-damage|p2a: Florges|50\/360 brn
+|move|p2a: Florges|Aromatherapy|p2a: Florges
+|-cureteam|p2a: Florges|[from] move: Aromatherapy
+|
+|-heal|p2a: Florges|72\/360|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p2a: Florges|Protect|p2a: Florges
+|-singleturn|p2a: Florges|Protect
+|move|p1a: Gardevoir|Moonblast|p2a: Florges
+|-activate|p2a: Florges|Protect
+|
+|-heal|p2a: Florges|94\/360|[from] item: Leftovers
+|turn|10
+|callback|decision
+|chat|YveltalNL|use hyper voice
+|chat|YveltalNL|goes through subs
+|
+|move|p1a: Gardevoir|Moonblast|p2a: Florges
+|-damage|p2a: Florges|0 fnt
+|faint|p2a: Florges
+|
+|callback|decision
+|
+|switch|p2a: Claydol|Claydol|324\/324
+|turn|11
+|callback|decision
+|
+|move|p1a: Gardevoir|Shadow Ball|p2a: Claydol
+|-supereffective|p2a: Claydol
+|-damage|p2a: Claydol|98\/324
+|move|p2a: Claydol|Stealth Rock|p1a: Gardevoir
+|-sidestart|p1: vladmicrozoom|move: Stealth Rock
+|
+|-heal|p2a: Claydol|118\/324|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Gardevoir|Shadow Ball|p2a: Claydol
+|-supereffective|p2a: Claydol
+|-damage|p2a: Claydol|0 fnt
+|faint|p2a: Claydol
+|
+|callback|decision
+|
+|switch|p2a: Crobat|Crobat, M|311\/311
+|turn|13
+|callback|decision
+|
+|move|p2a: Crobat|Cross Poison|p1a: Gardevoir
+|-supereffective|p1a: Gardevoir
+|-damage|p1a: Gardevoir|0 fnt
+|faint|p1a: Gardevoir
+|
+|callback|decision
+|
+|switch|p1a: Latias|Latias, F|302\/302
+|-damage|p1a: Latias|265\/302|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|switch|p2a: Ampharos|Ampharos, F|282\/322
+|move|p1a: Latias|Psyshock|p2a: Ampharos
+|-damage|p2a: Ampharos|155\/322
+|
+|-heal|p1a: Latias|283\/302|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1a: Latias|Dragon Pulse|p2a: Ampharos
+|-damage|p2a: Ampharos|40\/322
+|move|p2a: Ampharos|Agility|p2a: Ampharos
+|-boost|p2a: Ampharos|spe|2
+|
+|-heal|p1a: Latias|301\/302|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|-formechange|p2a: Ampharos|Ampharos-Mega
+|message|Ampharos has Mega Evolved into Mega Ampharos!
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p2a: Ampharos|Dragon Pulse|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|41\/302
+|move|p1a: Latias|Dragon Pulse|p2a: Ampharos
+|-supereffective|p2a: Ampharos
+|-damage|p2a: Ampharos|0 fnt
+|faint|p2a: Ampharos
+|
+|-heal|p1a: Latias|59\/302|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Crobat|Crobat, M|311\/311
+|turn|17
+|callback|decision
+|
+|switch|p1a: Cofagrigus|Cofagrigus, F|112\/320
+|-damage|p1a: Cofagrigus|72\/320|[from] Stealth Rock
+|move|p2a: Crobat|U-turn|p1a: Cofagrigus
+|-resisted|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|45\/320
+|-ability|p2a: Crobat|Mummy|[from] Mummy
+|callback|decision
+|
+|switch|p2a: Keldeo-Resolute|Keldeo-Resolute|323\/323
+|
+|-heal|p1a: Cofagrigus|65\/320|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p2a: Keldeo-Resolute|Hydro Pump|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|0 fnt
+|-damage|p2a: Keldeo-Resolute|291\/323|[from] item: Life Orb
+|faint|p1a: Cofagrigus
+|
+|callback|decision
+|
+|switch|p1a: Thundurus-Therian|Thundurus-Therian, M|300\/300
+|-damage|p1a: Thundurus-Therian|225\/300|[from] Stealth Rock
+|turn|19
+|callback|decision
+|
+|move|p2a: Keldeo-Resolute|Icy Wind|p1a: Thundurus-Therian
+|-supereffective|p1a: Thundurus-Therian
+|-damage|p1a: Thundurus-Therian|22\/300
+|-unboost|p1a: Thundurus-Therian|spe|1
+|-damage|p2a: Keldeo-Resolute|259\/323|[from] item: Life Orb
+|move|p1a: Thundurus-Therian|Thunderbolt|p2a: Keldeo-Resolute
+|-supereffective|p2a: Keldeo-Resolute
+|-damage|p2a: Keldeo-Resolute|0 fnt
+|faint|p2a: Keldeo-Resolute
+|
+|-heal|p1a: Thundurus-Therian|40\/300|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Crobat|Crobat, M|311\/311
+|turn|20
+|callback|decision
+|
+|move|p2a: Crobat|Cross Poison|p1a: Thundurus-Therian
+|-damage|p1a: Thundurus-Therian|0 fnt
+|faint|p1a: Thundurus-Therian
+|
+|callback|decision
+|
+|switch|p1a: Darmanitan|Darmanitan, M|414\/414
+|-damage|p1a: Darmanitan|311\/414|[from] Stealth Rock
+|turn|21
+|callback|decision
+|
+|move|p2a: Crobat|Cross Poison|p1a: Darmanitan
+|-damage|p1a: Darmanitan|65\/414
+|move|p1a: Darmanitan|Rock Slide|p2a: Crobat
+|-supereffective|p2a: Crobat
+|-damage|p2a: Crobat|0 fnt
+|faint|p2a: Crobat
+|
+|callback|decision
+|
+|switch|p2a: Gogoat|Gogoat, M|388\/388
+|turn|22
+|callback|decision
+|
+|move|p2a: Gogoat|Horn Leech|p1a: Darmanitan
+|-resisted|p1a: Darmanitan
+|-damage|p1a: Darmanitan|0 fnt
+|faint|p1a: Darmanitan
+|
+|callback|decision
+|chat|YveltalNL|will gogoat do this
+|chat|YveltalNL|probably not
+|
+|switch|p1a: Latias|Latias, F|59\/302
+|-damage|p1a: Latias|22\/302|[from] Stealth Rock
+|turn|23
+|callback|decision
+|
+|move|p2a: Gogoat|Horn Leech|p1a: Latias
+|-resisted|p1a: Latias
+|-damage|p1a: Latias|0 fnt
+|faint|p1a: Latias
+|
+|callback|decision
+|
+|switch|p1a: Keldeo|Keldeo|386\/386
+|-damage|p1a: Keldeo|362\/386|[from] Stealth Rock
+|turn|24
+|callback|decision
+|
+|move|p2a: Gogoat|Horn Leech|p1a: Keldeo
+|-supereffective|p1a: Keldeo
+|-damage|p1a: Keldeo|134\/386
+|move|p1a: Keldeo|Secret Sword|p2a: Gogoat
+|-damage|p2a: Gogoat|237\/388
+|
+|-heal|p1a: Keldeo|158\/386|[from] item: Leftovers
+|turn|25
+|callback|decision
+|chat|YveltalNL|gg
+|
+|move|p2a: Gogoat|Horn Leech|p1a: Keldeo
+|-crit|p1a: Keldeo
+|-supereffective|p1a: Keldeo
+|-damage|p1a: Keldeo|0 fnt
+|-heal|p2a: Gogoat|316\/388|[from] drain|[of] p1a: Keldeo
+|faint|p1a: Keldeo
+|
+|win|YveltalNL
+|raw|Ladder updating...
+|raw|vladmicrozoom's rating: 1341 &rarr; <strong>1331<\/strong><br \/>(-10 for losing)
+|raw|YveltalNL's rating: 1544 &rarr; <strong>1558<\/strong><br \/>(+14 for winning)
+|leave|vladmicrozoom
+|player|p1
+|leave|Staricarus

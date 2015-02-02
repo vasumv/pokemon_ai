@@ -1,0 +1,542 @@
+|join|Efsiletest
+|join|zumbyl
+|player|p1|Efsiletest|265
+|player|p2|zumbyl|65
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Jirachi
+|poke|p1|Donphan, F
+|poke|p1|Beedrill, F
+|poke|p1|Chandelure, M
+|poke|p1|Weezing, F
+|poke|p1|Umbreon, M
+|poke|p2|Crobat, M
+|poke|p2|Nidoqueen, F
+|poke|p2|Vaporeon, M
+|poke|p2|Granbull, F
+|poke|p2|Aggron, M
+|poke|p2|Shiftry, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Donphan|Donphan, F|383\/383
+|switch|p2a: Aggron|Aggron, M|343\/343
+|turn|1
+|
+|detailschange|p2a: Aggron|Aggron-Mega, M
+|-mega|p2a: Aggron|Aggron|Aggronite
+|move|p1a: Donphan|Earthquake|p2a: Aggron
+|-supereffective|p2a: Aggron
+|-damage|p2a: Aggron|202\/343
+|move|p2a: Aggron|Toxic|p1a: Donphan
+|-status|p1a: Donphan|tox
+|
+|-damage|p1a: Donphan|360\/383 tox|[from] psn
+|turn|2
+|
+|switch|p2a: Crobat|Crobat, M|311\/311
+|move|p1a: Donphan|Knock Off|p2a: Crobat
+|-damage|p2a: Crobat|171\/311
+|-enditem|p2a: Crobat|Choice Band|[from] move: Knock Off|[of] p1a: Donphan
+|
+|-damage|p1a: Donphan|314\/383 tox|[from] psn
+|turn|3
+|
+|switch|p1a: Weezing|Weezing, F|334\/334
+|move|p2a: Crobat|U-turn|p1a: Weezing
+|-resisted|p1a: Weezing
+|-damage|p1a: Weezing|314\/334
+|
+|switch|p2a: Nidoqueen|Nidoqueen, F|366\/366
+|
+|-heal|p1a: Weezing|334\/334|[from] item: Black Sludge
+|turn|4
+|
+|move|p2a: Nidoqueen|Taunt|p1a: Weezing
+|-start|p1a: Weezing|move: Taunt
+|cant|p1a: Weezing|move: Taunt|Will-O-Wisp
+|
+|turn|5
+|
+|switch|p1a: Umbreon|Umbreon, M|394\/394
+|move|p2a: Nidoqueen|Ice Beam|p1a: Umbreon
+|-crit|p1a: Umbreon
+|-damage|p1a: Umbreon|274\/394
+|
+|-heal|p1a: Umbreon|298\/394|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: Granbull|Granbull, F|383\/383
+|-ability|p2a: Granbull|Intimidate|[of] p1a: Umbreon
+|-unboost|p1a: Umbreon|atk|1
+|move|p1a: Umbreon|Foul Play|p2a: Granbull
+|-resisted|p2a: Granbull
+|-damage|p2a: Granbull|278\/383
+|
+|-heal|p1a: Umbreon|322\/394|[from] item: Leftovers
+|-heal|p2a: Granbull|301\/383|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Weezing|Weezing, F|334\/334
+|switch|p2a: Vaporeon|Vaporeon, M|451\/451
+|
+|turn|8
+|
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|move|p1a: Weezing|Will-O-Wisp|p2a: Vaporeon
+|-status|p2a: Vaporeon|brn
+|
+|-damage|p2a: Vaporeon|395\/451 brn|[from] brn
+|turn|9
+|
+|switch|p2a: Aggron|Aggron-Mega, M|202\/343
+|move|p1a: Weezing|Will-O-Wisp|p2a: Aggron
+|-status|p2a: Aggron|brn
+|
+|-heal|p2a: Aggron|343\/343 brn|[from] move: Wish|[wisher] Vaporeon
+|-damage|p2a: Aggron|301\/343 brn|[from] brn
+|turn|10
+|
+|switch|p1a: Donphan|Donphan, F|314\/383 tox
+|move|p2a: Aggron|Stealth Rock|p1a: Donphan
+|-sidestart|p1: Efsiletest|move: Stealth Rock
+|
+|-damage|p1a: Donphan|291\/383 tox|[from] psn
+|-damage|p2a: Aggron|259\/343 brn|[from] brn
+|turn|11
+|
+|switch|p2a: Shiftry|Shiftry, F|321\/321
+|move|p1a: Donphan|Knock Off|p2a: Shiftry
+|-resisted|p2a: Shiftry
+|-damage|p2a: Shiftry|223\/321
+|-enditem|p2a: Shiftry|Life Orb|[from] move: Knock Off|[of] p1a: Donphan
+|
+|-damage|p1a: Donphan|245\/383 tox|[from] psn
+|turn|12
+|
+|switch|p1a: Weezing|Weezing, F|334\/334
+|-damage|p1a: Weezing|293\/334|[from] Stealth Rock
+|move|p2a: Shiftry|Leaf Storm|p1a: Weezing
+|-crit|p1a: Weezing
+|-resisted|p1a: Weezing
+|-damage|p1a: Weezing|144\/334
+|-unboost|p2a: Shiftry|spa|2
+|
+|-heal|p1a: Weezing|164\/334|[from] item: Black Sludge
+|turn|13
+|
+|switch|p2a: Vaporeon|Vaporeon, M|395\/451 brn
+|move|p1a: Weezing|Pain Split|p2a: Vaporeon
+|-sethp|p2a: Vaporeon|279\/451 brn|p1a: Weezing|279\/334|[from] move: Pain Split
+|
+|-heal|p2a: Vaporeon|307\/451 brn|[from] item: Leftovers
+|-heal|p1a: Weezing|299\/334|[from] item: Black Sludge
+|-damage|p2a: Vaporeon|251\/451 brn|[from] brn
+|turn|14
+|
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|move|p1a: Weezing|Sludge Bomb|p2a: Vaporeon
+|-damage|p2a: Vaporeon|160\/451 brn
+|
+|-heal|p2a: Vaporeon|188\/451 brn|[from] item: Leftovers
+|-heal|p1a: Weezing|319\/334|[from] item: Black Sludge
+|-damage|p2a: Vaporeon|132\/451 brn|[from] brn
+|turn|15
+|
+|switch|p1a: Jirachi|Jirachi|404\/404
+|-damage|p1a: Jirachi|379\/404|[from] Stealth Rock
+|move|p2a: Vaporeon|Scald|p1a: Jirachi
+|-damage|p1a: Jirachi|306\/404
+|-status|p1a: Jirachi|brn
+|
+|-heal|p2a: Vaporeon|357\/451 brn|[from] move: Wish|[wisher] Vaporeon
+|-heal|p1a: Jirachi|331\/404 brn|[from] item: Leftovers
+|-heal|p2a: Vaporeon|385\/451 brn|[from] item: Leftovers
+|-damage|p1a: Jirachi|281\/404 brn|[from] brn
+|-damage|p2a: Vaporeon|329\/451 brn|[from] brn
+|turn|16
+|
+|switch|p2a: Nidoqueen|Nidoqueen, F|366\/366
+|move|p1a: Jirachi|Stealth Rock|p2a: Nidoqueen
+|-sidestart|p2: zumbyl|move: Stealth Rock
+|
+|-heal|p1a: Jirachi|306\/404 brn|[from] item: Leftovers
+|-damage|p1a: Jirachi|256\/404 brn|[from] brn
+|turn|17
+|
+|switch|p1a: Umbreon|Umbreon, M|322\/394
+|-damage|p1a: Umbreon|273\/394|[from] Stealth Rock
+|move|p2a: Nidoqueen|Ice Beam|p1a: Umbreon
+|-damage|p1a: Umbreon|183\/394
+|
+|-heal|p1a: Umbreon|207\/394|[from] item: Leftovers
+|turn|18
+|
+|move|p2a: Nidoqueen|Sludge Wave|p1a: Umbreon
+|-damage|p1a: Umbreon|67\/394
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p1a: Umbreon|91\/394|[from] item: Leftovers
+|turn|19
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Nidoqueen|Taunt|p1a: Umbreon
+|-activate|p1a: Umbreon|Protect
+|
+|-heal|p1a: Umbreon|288\/394|[from] move: Wish|[wisher] Umbreon
+|-heal|p1a: Umbreon|312\/394|[from] item: Leftovers
+|turn|20
+|
+|switch|p2a: Granbull|Granbull, F|301\/383
+|-damage|p2a: Granbull|254\/383|[from] Stealth Rock
+|-ability|p2a: Granbull|Intimidate|[of] p1a: Umbreon
+|-unboost|p1a: Umbreon|atk|1
+|move|p1a: Umbreon|Foul Play|p2a: Granbull
+|-resisted|p2a: Granbull
+|-damage|p2a: Granbull|151\/383
+|
+|-heal|p1a: Umbreon|336\/394|[from] item: Leftovers
+|-heal|p2a: Granbull|174\/383|[from] item: Leftovers
+|turn|21
+|
+|switch|p1a: Weezing|Weezing, F|319\/334
+|-damage|p1a: Weezing|278\/334|[from] Stealth Rock
+|move|p2a: Granbull|Heal Bell|p2a: Granbull
+|-cureteam|p2a: Granbull|[from] move: HealBell
+|
+|-heal|p1a: Weezing|298\/334|[from] item: Black Sludge
+|-heal|p2a: Granbull|197\/383|[from] item: Leftovers
+|turn|22
+|
+|switch|p1a: Umbreon|Umbreon, M|336\/394
+|-damage|p1a: Umbreon|287\/394|[from] Stealth Rock
+|switch|p2a: Vaporeon|Vaporeon, M|329\/451
+|-damage|p2a: Vaporeon|273\/451|[from] Stealth Rock
+|
+|-heal|p2a: Vaporeon|301\/451|[from] item: Leftovers
+|-heal|p1a: Umbreon|311\/394|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p2a: Vaporeon|329\/451|[from] item: Leftovers
+|-heal|p1a: Umbreon|335\/394|[from] item: Leftovers
+|turn|24
+|
+|switch|p2a: Granbull|Granbull, F|197\/383
+|-damage|p2a: Granbull|150\/383|[from] Stealth Rock
+|-ability|p2a: Granbull|Intimidate|[of] p1a: Umbreon
+|-unboost|p1a: Umbreon|atk|1
+|move|p1a: Umbreon|Heal Bell|p1a: Umbreon
+|-cureteam|p1a: Umbreon|[from] move: HealBell
+|
+|-heal|p1a: Umbreon|394\/394|[from] move: Wish|[wisher] Umbreon
+|-heal|p2a: Granbull|375\/383|[from] move: Wish|[wisher] Vaporeon
+|-heal|p2a: Granbull|383\/383|[from] item: Leftovers
+|turn|25
+|
+|switch|p1a: Weezing|Weezing, F|298\/334
+|-damage|p1a: Weezing|257\/334|[from] Stealth Rock
+|move|p2a: Granbull|Fire Punch|p1a: Weezing
+|-damage|p1a: Weezing|198\/334
+|
+|-heal|p1a: Weezing|218\/334|[from] item: Black Sludge
+|turn|26
+|
+|switch|p1a: Umbreon|Umbreon, M|394\/394
+|-damage|p1a: Umbreon|345\/394|[from] Stealth Rock
+|switch|p2a: Vaporeon|Vaporeon, M|329\/451
+|-damage|p2a: Vaporeon|273\/451|[from] Stealth Rock
+|
+|-heal|p1a: Umbreon|369\/394|[from] item: Leftovers
+|-heal|p2a: Vaporeon|301\/451|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-heal|p1a: Umbreon|393\/394|[from] item: Leftovers
+|-heal|p2a: Vaporeon|329\/451|[from] item: Leftovers
+|turn|28
+|
+|switch|p1a: Donphan|Donphan, F|245\/383
+|-damage|p1a: Donphan|222\/383|[from] Stealth Rock
+|switch|p2a: Aggron|Aggron-Mega, M|259\/343
+|-damage|p2a: Aggron|238\/343|[from] Stealth Rock
+|
+|-heal|p2a: Aggron|343\/343|[from] move: Wish|[wisher] Vaporeon
+|-heal|p1a: Donphan|383\/383|[from] move: Wish|[wisher] Umbreon
+|turn|29
+|
+|switch|p2a: Vaporeon|Vaporeon, M|329\/451
+|-damage|p2a: Vaporeon|273\/451|[from] Stealth Rock
+|move|p1a: Donphan|Rapid Spin|p2a: Vaporeon
+|-damage|p2a: Vaporeon|249\/451
+|-sideend|p1: Efsiletest|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Donphan
+|
+|-heal|p2a: Vaporeon|277\/451|[from] item: Leftovers
+|turn|30
+|
+|switch|p1a: Weezing|Weezing, F|218\/334
+|move|p2a: Vaporeon|Scald|p1a: Weezing
+|-damage|p1a: Weezing|74\/334
+|
+|-heal|p2a: Vaporeon|305\/451|[from] item: Leftovers
+|-heal|p1a: Weezing|94\/334|[from] item: Black Sludge
+|turn|31
+|
+|switch|p1a: Umbreon|Umbreon, M|393\/394
+|move|p2a: Vaporeon|Scald|p1a: Umbreon
+|-damage|p1a: Umbreon|330\/394
+|
+|-heal|p1a: Umbreon|354\/394|[from] item: Leftovers
+|-heal|p2a: Vaporeon|333\/451|[from] item: Leftovers
+|turn|32
+|
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p2a: Vaporeon|361\/451|[from] item: Leftovers
+|-heal|p1a: Umbreon|378\/394|[from] item: Leftovers
+|turn|33
+|
+|switch|p2a: Crobat|Crobat, M|171\/311
+|-damage|p2a: Crobat|94\/311|[from] Stealth Rock
+|switch|p1a: Jirachi|Jirachi|256\/404
+|
+|-heal|p1a: Jirachi|404\/404|[from] move: Wish|[wisher] Umbreon
+|-heal|p2a: Crobat|311\/311|[from] move: Wish|[wisher] Vaporeon
+|turn|34
+|
+|move|p2a: Crobat|U-turn|p1a: Jirachi
+|-damage|p1a: Jirachi|333\/404
+|
+|switch|p2a: Shiftry|Shiftry, F|223\/321
+|-damage|p2a: Shiftry|183\/321|[from] Stealth Rock
+|move|p1a: Jirachi|Thunder|p2a: Shiftry|[miss]
+|-miss|p1a: Jirachi|p2a: Shiftry
+|
+|-heal|p1a: Jirachi|358\/404|[from] item: Leftovers
+|turn|35
+|
+|move|p2a: Shiftry|Knock Off|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|-enditem|p1a: Jirachi|Leftovers|[from] move: Knock Off|[of] p2a: Shiftry
+|faint|p1a: Jirachi
+|
+|
+|switch|p1a: Beedrill|Beedrill, F|271\/271
+|turn|36
+|
+|detailschange|p1a: Beedrill|Beedrill-Mega, F
+|-mega|p1a: Beedrill|Beedrill|Beedrillite
+|move|p1a: Beedrill|Protect|p1a: Beedrill
+|-singleturn|p1a: Beedrill|Protect
+|move|p2a: Shiftry|Sucker Punch|p1a: Beedrill
+|-fail|p1a: Beedrill
+|
+|turn|37
+|
+|switch|p1a: Weezing|Weezing, F|94\/334
+|move|p2a: Shiftry|Defog|p1a: Weezing
+|-unboost|p1a: Weezing|evasion|1
+|-sideend|p2: zumbyl|Stealth Rock|[from] move: Defog|[of] p2a: Shiftry
+|
+|-heal|p1a: Weezing|114\/334|[from] item: Black Sludge
+|turn|38
+|
+|move|p2a: Shiftry|Knock Off|p1a: Weezing
+|-damage|p1a: Weezing|18\/334
+|-enditem|p1a: Weezing|Black Sludge|[from] move: Knock Off|[of] p2a: Shiftry
+|move|p1a: Weezing|Pain Split|p2a: Shiftry
+|-sethp|p2a: Shiftry|100\/321|p1a: Weezing|100\/334|[from] move: Pain Split
+|
+|turn|39
+|
+|move|p2a: Shiftry|Leaf Storm|p1a: Weezing
+|-resisted|p1a: Weezing
+|-damage|p1a: Weezing|12\/334
+|-unboost|p2a: Shiftry|spa|2
+|move|p1a: Weezing|Pain Split|p2a: Shiftry
+|-sethp|p2a: Shiftry|56\/321|p1a: Weezing|56\/334|[from] move: Pain Split
+|
+|turn|40
+|
+|move|p2a: Shiftry|Knock Off|p1a: Weezing
+|-crit|p1a: Weezing
+|-damage|p1a: Weezing|0 fnt
+|faint|p1a: Weezing
+|
+|
+|switch|p1a: Donphan|Donphan, F|383\/383
+|turn|41
+|
+|move|p1a: Donphan|Ice Shard|p2a: Shiftry
+|-supereffective|p2a: Shiftry
+|-damage|p2a: Shiftry|0 fnt
+|faint|p2a: Shiftry
+|
+|
+|switch|p2a: Vaporeon|Vaporeon, M|361\/451
+|turn|42
+|
+|move|p2a: Vaporeon|Scald|p1a: Donphan
+|-supereffective|p1a: Donphan
+|-damage|p1a: Donphan|165\/383
+|move|p1a: Donphan|Knock Off|p2a: Vaporeon
+|-damage|p2a: Vaporeon|233\/451
+|-enditem|p2a: Vaporeon|Leftovers|[from] move: Knock Off|[of] p1a: Donphan
+|
+|turn|43
+|
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|move|p1a: Donphan|Earthquake|p2a: Vaporeon
+|-damage|p2a: Vaporeon|40\/451
+|
+|turn|44
+|
+|switch|p1a: Beedrill|Beedrill-Mega, F|271\/271
+|move|p2a: Vaporeon|Scald|p1a: Beedrill
+|-damage|p1a: Beedrill|159\/271
+|
+|-heal|p2a: Vaporeon|265\/451|[from] move: Wish|[wisher] Vaporeon
+|turn|45
+|
+|move|p1a: Beedrill|U-turn|p2a: Vaporeon
+|-damage|p2a: Vaporeon|73\/451
+|
+|switch|p1a: Umbreon|Umbreon, M|378\/394
+|move|p2a: Vaporeon|Scald|p1a: Umbreon
+|-damage|p1a: Umbreon|315\/394
+|
+|-heal|p1a: Umbreon|339\/394|[from] item: Leftovers
+|turn|46
+|
+|switch|p2a: Granbull|Granbull, F|383\/383
+|-ability|p2a: Granbull|Intimidate|[of] p1a: Umbreon
+|-unboost|p1a: Umbreon|atk|1
+|move|p1a: Umbreon|Foul Play|p2a: Granbull
+|-resisted|p2a: Granbull
+|-damage|p2a: Granbull|264\/383
+|
+|-heal|p1a: Umbreon|363\/394|[from] item: Leftovers
+|-heal|p2a: Granbull|287\/383|[from] item: Leftovers
+|turn|47
+|
+|switch|p1a: Chandelure|Chandelure, M|261\/261
+|move|p2a: Granbull|Earthquake|p1a: Chandelure
+|-supereffective|p1a: Chandelure
+|-damage|p1a: Chandelure|0 fnt
+|faint|p1a: Chandelure
+|
+|-heal|p2a: Granbull|310\/383|[from] item: Leftovers
+|
+|switch|p1a: Beedrill|Beedrill-Mega, F|159\/271
+|turn|48
+|
+|switch|p2a: Crobat|Crobat, M|311\/311
+|move|p1a: Beedrill|U-turn|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|253\/311
+|
+|switch|p1a: Donphan|Donphan, F|165\/383
+|
+|turn|49
+|
+|move|p2a: Crobat|U-turn|p1a: Donphan
+|-damage|p1a: Donphan|108\/383
+|
+|switch|p2a: Vaporeon|Vaporeon, M|73\/451
+|move|p1a: Donphan|Knock Off|p2a: Vaporeon
+|-damage|p2a: Vaporeon|0 fnt
+|faint|p2a: Vaporeon
+|
+|
+|switch|p2a: Nidoqueen|Nidoqueen, F|366\/366
+|turn|50
+|
+|switch|p1a: Umbreon|Umbreon, M|363\/394
+|move|p2a: Nidoqueen|Earth Power|p1a: Umbreon
+|-damage|p1a: Umbreon|227\/394
+|
+|-heal|p1a: Umbreon|251\/394|[from] item: Leftovers
+|turn|51
+|
+|move|p2a: Nidoqueen|Taunt|p1a: Umbreon
+|-start|p1a: Umbreon|move: Taunt
+|cant|p1a: Umbreon|move: Taunt|Wish
+|
+|-heal|p1a: Umbreon|275\/394|[from] item: Leftovers
+|turn|52
+|
+|move|p2a: Nidoqueen|Earth Power|p1a: Umbreon
+|-damage|p1a: Umbreon|158\/394
+|move|p1a: Umbreon|Foul Play|p2a: Nidoqueen
+|-damage|p2a: Nidoqueen|279\/366
+|
+|-heal|p1a: Umbreon|182\/394|[from] item: Leftovers
+|turn|53
+|
+|move|p2a: Nidoqueen|Earth Power|p1a: Umbreon
+|-damage|p1a: Umbreon|52\/394
+|move|p1a: Umbreon|Foul Play|p2a: Nidoqueen
+|-damage|p2a: Nidoqueen|185\/366
+|
+|-heal|p1a: Umbreon|76\/394|[from] item: Leftovers
+|-end|p1a: Umbreon|move: Taunt
+|turn|54
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Nidoqueen|Earth Power|p1a: Umbreon
+|-activate|p1a: Umbreon|Protect
+|
+|-heal|p1a: Umbreon|100\/394|[from] item: Leftovers
+|turn|55
+|
+|move|p2a: Nidoqueen|Earth Power|p1a: Umbreon
+|-damage|p1a: Umbreon|0 fnt
+|faint|p1a: Umbreon
+|
+|
+|switch|p1a: Donphan|Donphan, F|108\/383
+|turn|56
+|
+|move|p2a: Nidoqueen|Ice Beam|p1a: Donphan
+|-supereffective|p1a: Donphan
+|-damage|p1a: Donphan|0 fnt
+|faint|p1a: Donphan
+|
+|
+|switch|p1a: Beedrill|Beedrill-Mega, F|159\/271
+|turn|57
+|
+|move|p1a: Beedrill|U-turn|p2a: Nidoqueen
+|-resisted|p2a: Nidoqueen
+|-damage|p2a: Nidoqueen|83\/366
+|move|p2a: Nidoqueen|Earth Power|p1a: Beedrill
+|-damage|p1a: Beedrill|0 fnt
+|faint|p1a: Beedrill
+|
+|win|zumbyl
+|raw|Ladder updating...
+|raw|Efsiletest's rating: 1379 &rarr; <strong>1352<\/strong><br \/>(-27 for losing)
+|raw|zumbyl's rating: 1260 &rarr; <strong>1293<\/strong><br \/>(+33 for winning)
+|leave|Efsiletest
+|player|p1
+|c|âzumbyl|gg

@@ -1,0 +1,566 @@
+|join|tigers
+|join|killer moth
+|player|p1|tigers|1
+|player|p2|killer moth|101
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Hippowdon, M
+|poke|p1|Celebi
+|poke|p1|Forretress, M
+|poke|p1|Jellicent, M
+|poke|p1|Dragonite, F
+|poke|p1|Terrakion, shiny
+|poke|p2|Alakazam, F
+|poke|p2|Garchomp, M
+|poke|p2|Terrakion
+|poke|p2|Thundurus-Therian, M
+|poke|p2|Jirachi
+|poke|p2|Latias, F
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: HappyHippo|Hippowdon, M| (100\/100)
+|switch|p2a: Garchomp|Garchomp, M| (100\/100)
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: HappyHippo
+|turn|1
+|callback|decision
+|
+|move|p2a: Garchomp|Stealth Rock|p1a: HappyHippo
+|-sidestart|p1: tigers|move: Stealth Rock
+|move|p1a: HappyHippo|Stealth Rock|p2a: Garchomp
+|-sidestart|p2: killer moth|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|2
+|callback|decision
+|
+|move|p2a: Garchomp|Earthquake|p1a: HappyHippo
+|-damage|p1a: HappyHippo|29 (71\/100)
+|move|p1a: HappyHippo|Ice Fang|p2a: Garchomp
+|-enditem|p2a: Garchomp|Yache Berry|[eat]
+|-supereffective|p2a: Garchomp
+|-damage|p2a: Garchomp|32 (68\/100)
+|-damage|p1a: HappyHippo|12 (59\/100)|[from] ability: Rough Skin|[of] p2a: Garchomp
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: HappyHippo|6 (65\/100)|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p2a: Latias|Latias, F| (100\/100)
+|-damage|p2a: Latias|12 (88\/100)|[from] Stealth Rock
+|move|p1a: HappyHippo|Slack Off|p1a: HappyHippo
+|-heal|p1a: HappyHippo|35 (100\/100)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|6 (82\/100)|[from] sandstorm
+|turn|4
+|callback|decision
+|
+|move|p2a: Latias|Surf|p1a: HappyHippo
+|-supereffective|p1a: HappyHippo
+|-damage|p1a: HappyHippo|63 (37\/100)
+|-damage|p2a: Latias|10 (72\/100)|[from] item: Life Orb
+|move|p1a: HappyHippo|Ice Fang|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|41 (31\/100)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|6 (25\/100)|[from] sandstorm
+|-heal|p1a: HappyHippo|6 (43\/100)|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1a: BigMC|Jellicent, M| (100\/100)
+|-damage|p1a: BigMC|12 (88\/100)|[from] Stealth Rock
+|move|p2a: Latias|Surf|p1a: BigMC
+|-heal|p1a: BigMC|50 (100\/100)|[from] ability: Water Absorb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|6 (19\/100)|[from] sandstorm
+|-damage|p1a: BigMC|6 (94\/100)|[from] sandstorm
+|-heal|p1a: BigMC|6 (100\/100)|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Latias|Roost|p2a: Latias
+|-heal|p2a: Latias|50 (70\/100)
+|move|p1a: BigMC|Will-O-Wisp|p2a: Latias
+|-status|p2a: Latias|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|6 (64\/100 brn)|[from] sandstorm
+|-damage|p1a: BigMC|6 (94\/100)|[from] sandstorm
+|-heal|p1a: BigMC|6 (100\/100)|[from] item: Leftovers
+|-damage|p2a: Latias|12 (51\/100 brn)|[from] brn
+|turn|7
+|callback|decision
+|
+|move|p2a: Latias|Roost|p2a: Latias
+|-heal|p2a: Latias|49 (100\/100 brn)
+|move|p1a: BigMC|Scald|p2a: Latias
+|-resisted|p2a: Latias
+|-damage|p2a: Latias|11 (89\/100 brn)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|6 (83\/100 brn)|[from] sandstorm
+|-damage|p1a: BigMC|6 (94\/100)|[from] sandstorm
+|-heal|p1a: BigMC|6 (100\/100)|[from] item: Leftovers
+|-damage|p2a: Latias|12 (71\/100 brn)|[from] brn
+|turn|8
+|callback|decision
+|
+|move|p2a: Latias|Draco Meteor|p1a: BigMC|[miss]
+|-miss|p2a: Latias
+|move|p1a: BigMC|Scald|p2a: Latias
+|-resisted|p2a: Latias
+|-damage|p2a: Latias|11 (60\/100 brn)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|6 (54\/100 brn)|[from] sandstorm
+|-damage|p1a: BigMC|6 (94\/100)|[from] sandstorm
+|-heal|p1a: BigMC|6 (100\/100)|[from] item: Leftovers
+|-damage|p2a: Latias|12 (41\/100 brn)|[from] brn
+|turn|9
+|callback|decision
+|
+|switch|p1a: Skinner!!|Forretress, M| (100\/100)
+|-damage|p1a: Skinner!!|12 (88\/100)|[from] Stealth Rock
+|move|p2a: Latias|Roost|p2a: Latias
+|-heal|p2a: Latias|50 (92\/100 brn)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|6 (86\/100 brn)|[from] sandstorm
+|-heal|p1a: Skinner!!|6 (94\/100)|[from] item: Leftovers
+|-damage|p2a: Latias|12 (73\/100 brn)|[from] brn
+|turn|10
+|callback|decision
+|
+|move|p2a: Latias|Surf|p1a: Skinner!!
+|-damage|p1a: Skinner!!|39 (55\/100)
+|-damage|p2a: Latias|10 (64\/100 brn)|[from] item: Life Orb
+|move|p1a: Skinner!!|Rapid Spin|p2a: Latias
+|-damage|p2a: Latias|5 (58\/100 brn)
+|-sideend|p1: tigers|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Skinner!!
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|6 (52\/100 brn)|[from] sandstorm
+|-heal|p1a: Skinner!!|6 (61\/100)|[from] item: Leftovers
+|-damage|p2a: Latias|12 (40\/100 brn)|[from] brn
+|turn|11
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, M| (68\/100)
+|-damage|p2a: Garchomp|6 (61\/100)|[from] Stealth Rock
+|move|p1a: Skinner!!|Spikes|p2a: Garchomp
+|-sidestart|p2: killer moth|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Skinner!!|6 (67\/100)|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: Garchomp|Stealth Rock|p1a: Skinner!!
+|-sidestart|p1: tigers|move: Stealth Rock
+|move|p1a: Skinner!!|Toxic|p2a: Garchomp
+|-status|p2a: Garchomp|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Skinner!!|6 (73\/100)|[from] item: Leftovers
+|-damage|p2a: Garchomp|6 (55\/100 tox)|[from] psn
+|turn|13
+|callback|decision
+|
+|move|p2a: Garchomp|Fire Blast|p1a: Skinner!!
+|-supereffective|p1a: Skinner!!
+|-damage|p1a: Skinner!!|73 (0\/100 fnt)
+|faint|p1a: Skinner!!
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Garchomp|12 (43\/100 tox)|[from] psn
+|callback|decision
+|
+|switch|p1a: BigBrother|Terrakion, shiny| (100\/100)
+|-damage|p1a: BigBrother|6 (94\/100)|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|move|p1a: BigBrother|Close Combat|p2a: Garchomp
+|-damage|p2a: Garchomp|43 (0\/100 fnt)
+|-damage|p1a: BigBrother|12 (81\/100)|[from] ability: Rough Skin|[of] p2a: Garchomp
+|-unboost|p1a: BigBrother|def|1
+|-unboost|p1a: BigBrother|spd|1
+|faint|p2a: Garchomp
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M| (100\/100)
+|-damage|p2a: Thundurus-Therian|25 (75\/100)|[from] Stealth Rock
+|turn|15
+|callback|decision
+|
+|switch|p1a: BigMC|Jellicent, M| (100\/100)
+|-damage|p1a: BigMC|12 (88\/100)|[from] Stealth Rock
+|move|p2a: Thundurus-Therian|Hidden Power|p1a: BigMC
+|-resisted|p1a: BigMC
+|-damage|p1a: BigMC|12 (75\/100)
+|-damage|p2a: Thundurus-Therian|10 (66\/100)|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Thundurus-Therian|6 (60\/100)|[from] sandstorm
+|-damage|p1a: BigMC|6 (69\/100)|[from] sandstorm
+|-heal|p1a: BigMC|6 (75\/100)|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p1a: HappyHippo|Hippowdon, M| (43\/100)
+|-damage|p1a: HappyHippo|6 (37\/100)|[from] Stealth Rock
+|move|p2a: Thundurus-Therian|Thunderbolt|p1a: HappyHippo
+|-immune|p1a: HappyHippo|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Thundurus-Therian|6 (54\/100)|[from] sandstorm
+|-heal|p1a: HappyHippo|6 (43\/100)|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p2a: Thundurus-Therian|Hidden Power|p1a: HappyHippo
+|-supereffective|p1a: HappyHippo
+|-damage|p1a: HappyHippo|43 (0\/100 fnt)
+|-damage|p2a: Thundurus-Therian|10 (44\/100)|[from] item: Life Orb
+|faint|p1a: HappyHippo
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Thundurus-Therian|6 (38\/100)|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: BigBrother|Terrakion, shiny| (81\/100)
+|-damage|p1a: BigBrother|6 (75\/100)|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi| (100\/100)
+|-damage|p2a: Jirachi|12 (88\/100)|[from] Spikes
+|-damage|p2a: Jirachi|6 (81\/100)|[from] Stealth Rock
+|move|p1a: BigBrother|Stone Edge|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|23 (59\/100)
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Jirachi|6 (65\/100)|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|switch|p1a: 1NiteStand|Dragonite, F| (100\/100)
+|-damage|p1a: 1NiteStand|25 (75\/100)|[from] Stealth Rock
+|move|p2a: Jirachi|Wish|p2a: Jirachi
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: 1NiteStand|6 (69\/100)|[from] sandstorm
+|-heal|p2a: Jirachi|6 (71\/100)|[from] item: Leftovers
+|-heal|p1a: 1NiteStand|6 (75\/100)|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p2a: Jirachi|Body Slam|p1a: 1NiteStand
+|-damage|p1a: 1NiteStand|16 (60\/100)
+|-status|p1a: 1NiteStand|par
+|move|p1a: 1NiteStand|Substitute|p1a: 1NiteStand
+|-start|p1a: 1NiteStand|Substitute
+|-damage|p1a: 1NiteStand|25 (35\/100 par)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: 1NiteStand|6 (28\/100 par)|[from] sandstorm
+|-heal|p2a: Jirachi|29 (100\/100)|[from] move: Wish|[wisher] Jirachi
+|-heal|p1a: 1NiteStand|6 (35\/100 par)|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: 1NiteStand
+|-activate|p1a: 1NiteStand|Substitute|[damage]
+|move|p1a: 1NiteStand|Thunder Wave|p2a: Jirachi
+|-status|p2a: Jirachi|par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: 1NiteStand|6 (28\/100 par)|[from] sandstorm
+|-heal|p1a: 1NiteStand|6 (35\/100 par)|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|cant|p2a: Jirachi|par
+|cant|p1a: 1NiteStand|par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: 1NiteStand|6 (28\/100 par)|[from] sandstorm
+|-heal|p1a: 1NiteStand|6 (35\/100 par)|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|cant|p2a: Jirachi|par
+|move|p1a: 1NiteStand|Roost|p1a: 1NiteStand
+|-heal|p1a: 1NiteStand|50 (85\/100 par)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: 1NiteStand|6 (78\/100 par)|[from] sandstorm
+|-heal|p1a: 1NiteStand|6 (85\/100 par)|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: 1NiteStand
+|-end|p1a: 1NiteStand|Substitute
+|move|p1a: 1NiteStand|Roost|p1a: 1NiteStand
+|-heal|p1a: 1NiteStand|15 (100\/100 par)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: 1NiteStand|6 (94\/100 par)|[from] sandstorm
+|-heal|p1a: 1NiteStand|6 (100\/100 par)|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|switch|p2a: Alakazam|Alakazam, F| (100\/100)
+|move|p1a: 1NiteStand|Substitute|p1a: 1NiteStand
+|-start|p1a: 1NiteStand|Substitute
+|-damage|p1a: 1NiteStand|25 (75\/100 par)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: 1NiteStand|6 (69\/100 par)|[from] sandstorm
+|-heal|p1a: 1NiteStand|6 (75\/100 par)|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|move|p2a: Alakazam|Psychic|p1a: 1NiteStand
+|-end|p1a: 1NiteStand|Substitute
+|move|p1a: 1NiteStand|Thunder Wave|p2a: Alakazam
+|-status|p2a: Alakazam|par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: 1NiteStand|6 (69\/100 par)|[from] sandstorm
+|-heal|p1a: 1NiteStand|6 (75\/100 par)|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|switch|p1a: Peter Pan|Celebi| (100\/100)
+|-damage|p1a: Peter Pan|12 (88\/100)|[from] Stealth Rock
+|move|p2a: Alakazam|Hidden Power|p1a: Peter Pan
+|-supereffective|p1a: Peter Pan
+|-damage|p1a: Peter Pan|36 (52\/100)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Peter Pan|6 (46\/100)|[from] sandstorm
+|-heal|p1a: Peter Pan|6 (52\/100)|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|switch|p2a: Latias|Latias, F| (40\/100 brn)
+|-damage|p2a: Latias|12 (28\/100 brn)|[from] Stealth Rock
+|move|p1a: Peter Pan|Leaf Storm|p2a: Latias
+|-resisted|p2a: Latias
+|-damage|p2a: Latias|20 (8\/100 brn)
+|-unboost|p1a: Peter Pan|spa|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|6 (2\/100 brn)|[from] sandstorm
+|-damage|p1a: Peter Pan|6 (46\/100)|[from] sandstorm
+|-heal|p1a: Peter Pan|6 (52\/100)|[from] item: Leftovers
+|-damage|p2a: Latias|2 (0\/100 fnt)|[from] brn
+|faint|p2a: Latias
+|callback|decision
+|
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M| (38\/100)
+|-damage|p2a: Thundurus-Therian|25 (13\/100)|[from] Stealth Rock
+|turn|29
+|callback|decision
+|
+|move|p2a: Thundurus-Therian|Thunderbolt|p1a: Peter Pan
+|-crit|p1a: Peter Pan
+|-resisted|p1a: Peter Pan
+|-damage|p1a: Peter Pan|50 (1\/100)
+|-status|p1a: Peter Pan|par
+|-damage|p2a: Thundurus-Therian|10 (3\/100)|[from] item: Life Orb
+|move|p1a: Peter Pan|Leaf Storm|p2a: Thundurus-Therian
+|-resisted|p2a: Thundurus-Therian
+|-damage|p2a: Thundurus-Therian|3 (0\/100 fnt)
+|-unboost|p1a: Peter Pan|spa|2
+|faint|p2a: Thundurus-Therian
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Peter Pan|1 (0\/100 fnt)|[from] sandstorm
+|faint|p1a: Peter Pan
+|callback|decision
+|
+|switch|p1a: BigBrother|Terrakion, shiny| (75\/100)
+|-damage|p1a: BigBrother|6 (69\/100)|[from] Stealth Rock
+|switch|p2a: Jirachi|Jirachi| (100\/100 par)
+|-damage|p2a: Jirachi|12 (88\/100 par)|[from] Spikes
+|-damage|p2a: Jirachi|6 (81\/100 par)|[from] Stealth Rock
+|turn|30
+|callback|decision
+|
+|move|p1a: BigBrother|Earthquake|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|59 (23\/100 par)
+|move|p2a: Jirachi|Iron Head|p1a: BigBrother
+|-supereffective|p1a: BigBrother
+|-damage|p1a: BigBrother|59 (10\/100)
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Jirachi|6 (29\/100 par)|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|cant|p2a: Jirachi|par
+|move|p1a: BigBrother|Earthquake|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|29 (0\/100 fnt)
+|faint|p2a: Jirachi
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Alakazam|Alakazam, F| (100\/100 par)
+|turn|32
+|callback|decision
+|
+|switch|p1a: 1NiteStand|Dragonite, F| (75\/100 par)
+|-damage|p1a: 1NiteStand|25 (50\/100 par)|[from] Stealth Rock
+|move|p2a: Alakazam|Shadow Ball|p1a: 1NiteStand
+|-damage|p1a: 1NiteStand|20 (30\/100 par)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: 1NiteStand|6 (24\/100 par)|[from] sandstorm
+|-heal|p1a: 1NiteStand|6 (30\/100 par)|[from] item: Leftovers
+|turn|33
+|callback|decision
+|
+|move|p2a: Alakazam|Hidden Power|p1a: 1NiteStand
+|-supereffective|p1a: 1NiteStand
+|-damage|p1a: 1NiteStand|30 (0\/100 fnt)
+|faint|p1a: 1NiteStand
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: BigBrother|Terrakion, shiny| (10\/100)
+|-damage|p1a: BigBrother|6 (4\/100)|[from] Stealth Rock
+|turn|34
+|callback|decision
+|
+|move|p1a: BigBrother|Earthquake|p2a: Alakazam
+|-damage|p2a: Alakazam|81 (19\/100 par)
+|move|p2a: Alakazam|Psychic|p1a: BigBrother
+|-supereffective|p1a: BigBrother
+|-damage|p1a: BigBrother|4 (0\/100 fnt)
+|faint|p1a: BigBrother
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: BigMC|Jellicent, M| (75\/100)
+|-damage|p1a: BigMC|12 (63\/100)|[from] Stealth Rock
+|turn|35
+|callback|decision
+|
+|move|p1a: BigMC|Recover|p1a: BigMC
+|-heal|p1a: BigMC|37 (100\/100)
+|move|p2a: Alakazam|Shadow Ball|p1a: BigMC
+|-supereffective|p1a: BigMC
+|-damage|p1a: BigMC|41 (59\/100)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BigMC|6 (53\/100)|[from] sandstorm
+|-heal|p1a: BigMC|6 (59\/100)|[from] item: Leftovers
+|turn|36
+|callback|decision
+|
+|move|p1a: BigMC|Recover|p1a: BigMC
+|-heal|p1a: BigMC|41 (100\/100)
+|move|p2a: Alakazam|Shadow Ball|p1a: BigMC
+|-supereffective|p1a: BigMC
+|-damage|p1a: BigMC|37 (63\/100)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BigMC|6 (57\/100)|[from] sandstorm
+|-heal|p1a: BigMC|6 (63\/100)|[from] item: Leftovers
+|turn|37
+|callback|decision
+|
+|move|p1a: BigMC|Recover|p1a: BigMC
+|-heal|p1a: BigMC|37 (100\/100)
+|cant|p2a: Alakazam|par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BigMC|6 (94\/100)|[from] sandstorm
+|-heal|p1a: BigMC|6 (100\/100)|[from] item: Leftovers
+|turn|38
+|callback|decision
+|
+|move|p1a: BigMC|Scald|p2a: Alakazam
+|-damage|p2a: Alakazam|19 (0\/100 fnt)
+|faint|p2a: Alakazam
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BigMC|6 (94\/100)|[from] sandstorm
+|-heal|p1a: BigMC|6 (100\/100)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Terrakion|Terrakion| (100\/100)
+|-damage|p2a: Terrakion|6 (94\/100)|[from] Stealth Rock
+|-damage|p2a: Terrakion|12 (81\/100)|[from] Spikes
+|turn|39
+|callback|decision
+|
+|move|p2a: Terrakion|Stone Edge|p1a: BigMC|[miss]
+|-miss|p2a: Terrakion
+|move|p1a: BigMC|Will-O-Wisp|p2a: Terrakion
+|-status|p2a: Terrakion|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BigMC|6 (94\/100)|[from] sandstorm
+|-heal|p1a: BigMC|6 (100\/100)|[from] item: Leftovers
+|-damage|p2a: Terrakion|12 (69\/100 brn)|[from] brn
+|turn|40
+|callback|decision
+|chat|killer moth|wow................
+|
+|move|p2a: Terrakion|Stone Edge|p1a: BigMC
+|-damage|p1a: BigMC|39 (61\/100)
+|move|p1a: BigMC|Scald|p2a: Terrakion
+|-supereffective|p2a: Terrakion
+|-damage|p2a: Terrakion|41 (28\/100 brn)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BigMC|6 (54\/100)|[from] sandstorm
+|-heal|p1a: BigMC|6 (61\/100)|[from] item: Leftovers
+|-damage|p2a: Terrakion|12 (16\/100 brn)|[from] brn
+|turn|41
+|callback|decision
+|chat|killer moth|nice luck.
+|chat|tigers|sorry for you dude :(
+|
+|move|p2a: Terrakion|Stone Edge|p1a: BigMC
+|-damage|p1a: BigMC|38 (23\/100)
+|move|p1a: BigMC|Scald|p2a: Terrakion
+|-supereffective|p2a: Terrakion
+|-damage|p2a: Terrakion|16 (0\/100 fnt)
+|faint|p2a: Terrakion
+|
+|win|tigers
+|chatmsg-raw|Ladder updating...
+|raw|tigers's rating: 1625 &rarr; <strong>1630<\/strong><br \/>(+5 for winning)
+|raw|killer moth's rating: 1690 &rarr; <strong>1681<\/strong><br \/>(-9 for losing)
+|chat|tigers|but it happens
+|chat|tigers|gg
+|chat|tigers|close game 
+|chat|killer moth|gg
+|player|p1
+|leave|tigers

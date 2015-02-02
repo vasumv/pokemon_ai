@@ -1,0 +1,702 @@
+|join|RowDog
+|join|mama223
+|player|p1|RowDog|80
+|player|p2|mama223|30
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Aromatisse, M
+|poke|p1|Doublade, M
+|poke|p1|Blissey, F
+|poke|p1|Arcanine, F
+|poke|p1|Crobat, F
+|poke|p1|Gastrodon, M
+|poke|p2|Pineco, L1, F
+|poke|p2|Cloyster, F, shiny
+|poke|p2|Snorlax, M, shiny
+|poke|p2|Scrafty, F, shiny
+|poke|p2|Sigilyph, M, shiny
+|poke|p2|Banette, F, shiny
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|c|âmama223|hfgl
+|
+|start
+|switch|p1a: Doublade|Doublade, M|319\/319
+|switch|p2a: Pineco|Pineco, L1, F|12\/12
+|turn|1
+|join|Bob the Bro
+|c| Bob the Bro|wtf
+|c|âRowDog|u2
+|c| Bob the Bro|is this real
+|c|âRowDog|it is actually a thing
+|
+|move|p1a: Doublade|Swords Dance|p1a: Doublade
+|-boost|p1a: Doublade|atk|2
+|move|p2a: Pineco|Stealth Rock|p1a: Doublade
+|-sidestart|p1: RowDog|move: Stealth Rock
+|
+|turn|2
+|
+|move|p1a: Doublade|Swords Dance|p1a: Doublade
+|-boost|p1a: Doublade|atk|2
+|move|p2a: Pineco|Pain Split|p1a: Doublade
+|-sethp|p1a: Doublade|165\/319|p2a: Pineco|12\/12|[from] move: Pain Split
+|
+|turn|3
+|
+|move|p1a: Doublade|Toxic|p2a: Pineco
+|-status|p2a: Pineco|tox
+|move|p2a: Pineco|Pain Split|p1a: Doublade
+|-sethp|p1a: Doublade|88\/319|p2a: Pineco|12\/12 tox|[from] move: Pain Split
+|
+|-damage|p2a: Pineco|11\/12 tox|[from] psn
+|turn|4
+|
+|move|p1a: Doublade|Shadow Sneak|p2a: Pineco
+|-damage|p2a: Pineco|0 fnt
+|faint|p2a: Pineco
+|
+|
+|switch|p2a: Scrafty|Scrafty, F, shiny|334\/334
+|turn|5
+|
+|switch|p1a: Aromatisse|Aromatisse, M|406\/406
+|-damage|p1a: Aromatisse|356\/406|[from] Stealth Rock
+|move|p2a: Scrafty|Knock Off|p1a: Aromatisse
+|-resisted|p1a: Aromatisse
+|-damage|p1a: Aromatisse|304\/406
+|-enditem|p1a: Aromatisse|Leftovers|[from] move: Knock Off|[of] p2a: Scrafty
+|
+|turn|6
+|
+|switch|p2a: Sigilyph|Sigilyph, M, shiny|348\/348
+|move|p1a: Aromatisse|Moonblast|p2a: Sigilyph
+|-damage|p2a: Sigilyph|225\/348
+|
+|-status|p2a: Sigilyph|brn|[from] item: Flame Orb
+|turn|7
+|
+|move|p2a: Sigilyph|Cosmic Power|p2a: Sigilyph
+|-boost|p2a: Sigilyph|def|1
+|-boost|p2a: Sigilyph|spd|1
+|move|p1a: Aromatisse|Wish|p1a: Aromatisse
+|
+|turn|8
+|
+|switch|p1a: Doublade|Doublade, M|88\/319
+|-damage|p1a: Doublade|69\/319|[from] Stealth Rock
+|move|p2a: Sigilyph|Cosmic Power|p2a: Sigilyph
+|-boost|p2a: Sigilyph|def|1
+|-boost|p2a: Sigilyph|spd|1
+|
+|-heal|p1a: Doublade|272\/319|[from] move: Wish|[wisher] Aromatisse
+|turn|9
+|
+|move|p2a: Sigilyph|Psycho Shift|p1a: Doublade
+|-status|p1a: Doublade|brn
+|-curestatus|p2a: Sigilyph|brn
+|move|p1a: Doublade|Swords Dance|p1a: Doublade
+|-boost|p1a: Doublade|atk|2
+|
+|-damage|p1a: Doublade|233\/319 brn|[from] brn
+|-status|p2a: Sigilyph|brn|[from] item: Flame Orb
+|turn|10
+|
+|move|p2a: Sigilyph|Cosmic Power|p2a: Sigilyph
+|-boost|p2a: Sigilyph|def|1
+|-boost|p2a: Sigilyph|spd|1
+|move|p1a: Doublade|Swords Dance|p1a: Doublade
+|-boost|p1a: Doublade|atk|2
+|
+|-damage|p1a: Doublade|194\/319 brn|[from] brn
+|turn|11
+|
+|move|p2a: Sigilyph|Roost|p2a: Sigilyph
+|-heal|p2a: Sigilyph|348\/348 brn
+|move|p1a: Doublade|Swords Dance|p1a: Doublade
+|-boost|p1a: Doublade|atk|2
+|
+|-damage|p1a: Doublade|155\/319 brn|[from] brn
+|turn|12
+|
+|move|p1a: Doublade|Shadow Sneak|p2a: Sigilyph
+|-supereffective|p2a: Sigilyph
+|-damage|p2a: Sigilyph|258\/348 brn
+|move|p2a: Sigilyph|Roost|p2a: Sigilyph
+|-heal|p2a: Sigilyph|348\/348 brn
+|
+|-damage|p1a: Doublade|116\/319 brn|[from] brn
+|turn|13
+|c|âRowDog|fck me
+|
+|switch|p1a: Aromatisse|Aromatisse, M|304\/406
+|-damage|p1a: Aromatisse|254\/406|[from] Stealth Rock
+|move|p2a: Sigilyph|Roost|p2a: Sigilyph
+|-fail|p2a: Sigilyph
+|
+|turn|14
+|c| Bob the Bro|kek
+|
+|move|p2a: Sigilyph|Cosmic Power|p2a: Sigilyph
+|-boost|p2a: Sigilyph|def|1
+|-boost|p2a: Sigilyph|spd|1
+|move|p1a: Aromatisse|Aromatherapy|p1a: Aromatisse
+|-cureteam|p1a: Aromatisse|[from] move: Aromatherapy
+|
+|turn|15
+|
+|move|p2a: Sigilyph|Stored Power|p1a: Aromatisse
+|-damage|p1a: Aromatisse|34\/406
+|move|p1a: Aromatisse|Wish|p1a: Aromatisse
+|
+|turn|16
+|
+|move|p1a: Aromatisse|Protect|p1a: Aromatisse
+|-singleturn|p1a: Aromatisse|Protect
+|move|p2a: Sigilyph|Psycho Shift|p1a: Aromatisse
+|-activate|p1a: Aromatisse|Protect
+|
+|-heal|p1a: Aromatisse|237\/406|[from] move: Wish|[wisher] Aromatisse
+|turn|17
+|
+|move|p2a: Sigilyph|Cosmic Power|p2a: Sigilyph
+|-boost|p2a: Sigilyph|def|1
+|-boost|p2a: Sigilyph|spd|1
+|move|p1a: Aromatisse|Wish|p1a: Aromatisse
+|
+|turn|18
+|c| Bob the Bro|lol you can stall it outta stored powers easy
+|c|âRowDog|yeah probs
+|
+|move|p1a: Aromatisse|Protect|p1a: Aromatisse
+|-singleturn|p1a: Aromatisse|Protect
+|move|p2a: Sigilyph|Stored Power|p1a: Aromatisse
+|-activate|p1a: Aromatisse|Protect
+|
+|-heal|p1a: Aromatisse|406\/406|[from] move: Wish|[wisher] Aromatisse
+|turn|19
+|c|âRowDog|!data Stored Power
+|c|~|\/data-move Stored Power
+
+|
+|move|p2a: Sigilyph|Psycho Shift|p1a: Aromatisse
+|-status|p1a: Aromatisse|brn
+|-curestatus|p2a: Sigilyph|brn
+|move|p1a: Aromatisse|Wish|p1a: Aromatisse
+|
+|-damage|p1a: Aromatisse|356\/406 brn|[from] brn
+|-status|p2a: Sigilyph|brn|[from] item: Flame Orb
+|turn|20
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|-damage|p1a: Blissey|625\/714|[from] Stealth Rock
+|move|p2a: Sigilyph|Cosmic Power|p2a: Sigilyph
+|-boost|p2a: Sigilyph|def|1
+|-boost|p2a: Sigilyph|spd|1
+|
+|-heal|p1a: Blissey|714\/714|[from] move: Wish|[wisher] Aromatisse
+|turn|21
+|c| Bob the Bro|dt cosmic power
+|
+|move|p2a: Sigilyph|Psycho Shift|p1a: Blissey
+|-status|p1a: Blissey|brn
+|-curestatus|p2a: Sigilyph|brn
+|move|p1a: Blissey|Wish|p1a: Blissey
+|
+|-damage|p1a: Blissey|625\/714 brn|[from] brn
+|-status|p2a: Sigilyph|brn|[from] item: Flame Orb
+|turn|22
+|
+|switch|p2a: Scrafty|Scrafty, F, shiny|334\/334
+|move|p1a: Blissey|Stealth Rock|p2a: Scrafty
+|-sidestart|p2: mama223|move: Stealth Rock
+|
+|-heal|p1a: Blissey|714\/714 brn|[from] move: Wish|[wisher] Blissey
+|-damage|p1a: Blissey|625\/714 brn|[from] brn
+|turn|23
+|
+|switch|p1a: Aromatisse|Aromatisse, M|356\/406 brn
+|-damage|p1a: Aromatisse|306\/406 brn|[from] Stealth Rock
+|move|p2a: Scrafty|Dragon Dance|p2a: Scrafty
+|-boost|p2a: Scrafty|atk|1
+|-boost|p2a: Scrafty|spe|1
+|
+|-damage|p1a: Aromatisse|256\/406 brn|[from] brn
+|turn|24
+|
+|move|p2a: Scrafty|Poison Jab|p1a: Aromatisse
+|-supereffective|p1a: Aromatisse
+|-damage|p1a: Aromatisse|82\/406 brn
+|move|p1a: Aromatisse|Moonblast|p2a: Scrafty
+|-supereffective|p2a: Scrafty
+|-damage|p2a: Scrafty|0 fnt
+|faint|p2a: Scrafty
+|
+|-damage|p1a: Aromatisse|32\/406 brn|[from] brn
+|
+|switch|p2a: Banette|Banette, F, shiny|332\/332
+|-damage|p2a: Banette|291\/332|[from] Stealth Rock
+|turn|25
+|
+|detailschange|p2a: Banette|Banette-Mega, F, shiny
+|message|Banette has Mega Evolved into Mega Banette!
+|move|p2a: Banette|Shadow Claw|p1a: Aromatisse
+|-damage|p1a: Aromatisse|0 fnt
+|faint|p1a: Aromatisse
+|
+|
+|switch|p1a: Arcanine|Arcanine, F|383\/383
+|-damage|p1a: Arcanine|288\/383|[from] Stealth Rock
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Banette
+|-unboost|p2a: Banette|atk|1
+|turn|26
+|
+|switch|p2a: Sigilyph|Sigilyph, M, shiny|348\/348 brn
+|move|p1a: Arcanine|Flare Blitz|p2a: Sigilyph
+|-damage|p2a: Sigilyph|210\/348 brn
+|-damage|p1a: Arcanine|242\/383|[from] recoil|[of] p2a: Sigilyph
+|
+|turn|27
+|
+|move|p2a: Sigilyph|Roost|p2a: Sigilyph
+|-heal|p2a: Sigilyph|348\/348 brn
+|move|p1a: Arcanine|Flare Blitz|p2a: Sigilyph
+|-damage|p2a: Sigilyph|212\/348 brn
+|-damage|p1a: Arcanine|197\/383|[from] recoil|[of] p2a: Sigilyph
+|
+|turn|28
+|
+|move|p2a: Sigilyph|Roost|p2a: Sigilyph
+|-heal|p2a: Sigilyph|348\/348 brn
+|move|p1a: Arcanine|Flare Blitz|p2a: Sigilyph
+|-damage|p2a: Sigilyph|227\/348 brn
+|-damage|p1a: Arcanine|157\/383|[from] recoil|[of] p2a: Sigilyph
+|
+|turn|29
+|
+|move|p2a: Sigilyph|Cosmic Power|p2a: Sigilyph
+|-boost|p2a: Sigilyph|def|1
+|-boost|p2a: Sigilyph|spd|1
+|move|p1a: Arcanine|Morning Sun|p1a: Arcanine
+|-heal|p1a: Arcanine|348\/383
+|
+|turn|30
+|
+|switch|p1a: Blissey|Blissey, F|625\/714
+|-damage|p1a: Blissey|536\/714|[from] Stealth Rock
+|move|p2a: Sigilyph|Roost|p2a: Sigilyph
+|-heal|p2a: Sigilyph|348\/348 brn
+|
+|-heal|p1a: Blissey|580\/714|[from] item: Leftovers
+|turn|31
+|
+|switch|p2a: Snorlax|Snorlax, M, shiny|524\/524
+|-damage|p2a: Snorlax|459\/524|[from] Stealth Rock
+|move|p1a: Blissey|Seismic Toss|p2a: Snorlax
+|-damage|p2a: Snorlax|359\/524
+|
+|-heal|p1a: Blissey|624\/714|[from] item: Leftovers
+|turn|32
+|
+|move|p1a: Blissey|Wish|p1a: Blissey
+|move|p2a: Snorlax|Curse|p2a: Snorlax
+|-boost|p2a: Snorlax|atk|1
+|-boost|p2a: Snorlax|def|1
+|-unboost|p2a: Snorlax|spe|1
+|
+|-heal|p1a: Blissey|668\/714|[from] item: Leftovers
+|turn|33
+|
+|switch|p1a: Doublade|Doublade, M|116\/319
+|-damage|p1a: Doublade|97\/319|[from] Stealth Rock
+|move|p2a: Snorlax|Crunch|p1a: Doublade
+|-supereffective|p1a: Doublade
+|-damage|p1a: Doublade|3\/319
+|
+|-heal|p1a: Doublade|319\/319|[from] move: Wish|[wisher] Blissey
+|turn|34
+|
+|switch|p2a: Sigilyph|Sigilyph, M, shiny|348\/348 brn
+|move|p1a: Doublade|Swords Dance|p1a: Doublade
+|-boost|p1a: Doublade|atk|2
+|
+|turn|35
+|
+|move|p1a: Doublade|Shadow Sneak|p2a: Sigilyph
+|-supereffective|p2a: Sigilyph
+|-damage|p2a: Sigilyph|130\/348 brn
+|move|p2a: Sigilyph|Psycho Shift|p1a: Doublade
+|-status|p1a: Doublade|brn
+|-curestatus|p2a: Sigilyph|brn
+|
+|-damage|p1a: Doublade|280\/319 brn|[from] brn
+|-status|p2a: Sigilyph|brn|[from] item: Flame Orb
+|turn|36
+|
+|move|p1a: Doublade|Shadow Sneak|p2a: Sigilyph
+|-supereffective|p2a: Sigilyph
+|-damage|p2a: Sigilyph|10\/348 brn
+|move|p2a: Sigilyph|Roost|p2a: Sigilyph
+|-heal|p2a: Sigilyph|184\/348 brn
+|
+|-damage|p1a: Doublade|241\/319 brn|[from] brn
+|turn|37
+|
+|move|p2a: Sigilyph|Roost|p2a: Sigilyph
+|-heal|p2a: Sigilyph|348\/348 brn
+|move|p1a: Doublade|Swords Dance|p1a: Doublade
+|-boost|p1a: Doublade|atk|2
+|
+|-damage|p1a: Doublade|202\/319 brn|[from] brn
+|turn|38
+|
+|move|p1a: Doublade|Shadow Sneak|p2a: Sigilyph
+|-supereffective|p2a: Sigilyph
+|-damage|p2a: Sigilyph|168\/348 brn
+|move|p2a: Sigilyph|Roost|p2a: Sigilyph
+|-heal|p2a: Sigilyph|342\/348 brn
+|
+|-damage|p1a: Doublade|163\/319 brn|[from] brn
+|turn|39
+|
+|move|p2a: Sigilyph|Cosmic Power|p2a: Sigilyph
+|-boost|p2a: Sigilyph|def|1
+|-boost|p2a: Sigilyph|spd|1
+|move|p1a: Doublade|Swords Dance|p1a: Doublade
+|-boost|p1a: Doublade|atk|2
+|
+|-damage|p1a: Doublade|124\/319 brn|[from] brn
+|turn|40
+|
+|move|p1a: Doublade|Shadow Sneak|p2a: Sigilyph
+|-supereffective|p2a: Sigilyph
+|-damage|p2a: Sigilyph|196\/348 brn
+|move|p2a: Sigilyph|Roost|p2a: Sigilyph
+|-heal|p2a: Sigilyph|348\/348 brn
+|
+|-damage|p1a: Doublade|85\/319 brn|[from] brn
+|turn|41
+|
+|switch|p1a: Blissey|Blissey, F|668\/714
+|-damage|p1a: Blissey|579\/714|[from] Stealth Rock
+|move|p2a: Sigilyph|Stored Power|p1a: Blissey
+|-crit|p1a: Blissey
+|-damage|p1a: Blissey|500\/714
+|
+|-heal|p1a: Blissey|544\/714|[from] item: Leftovers
+|turn|42
+|
+|switch|p2a: Snorlax|Snorlax, M, shiny|359\/524
+|-damage|p2a: Snorlax|294\/524|[from] Stealth Rock
+|move|p1a: Blissey|Wish|p1a: Blissey
+|
+|-heal|p1a: Blissey|588\/714|[from] item: Leftovers
+|turn|43
+|
+|switch|p1a: Crobat|Crobat, F|374\/374
+|-damage|p1a: Crobat|281\/374|[from] Stealth Rock
+|move|p2a: Snorlax|Crunch|p1a: Crobat
+|-damage|p1a: Crobat|201\/374
+|
+|-heal|p1a: Crobat|374\/374|[from] move: Wish|[wisher] Blissey
+|turn|44
+|
+|move|p1a: Crobat|Taunt|p2a: Snorlax
+|-start|p2a: Snorlax|move: Taunt
+|cant|p2a: Snorlax|move: Taunt|Rest
+|
+|turn|45
+|
+|switch|p2a: Sigilyph|Sigilyph, M, shiny|348\/348 brn
+|move|p1a: Crobat|Brave Bird|p2a: Sigilyph
+|-damage|p2a: Sigilyph|237\/348 brn
+|-damage|p1a: Crobat|337\/374|[from] recoil|[of] p2a: Sigilyph
+|
+|-heal|p1a: Crobat|360\/374|[from] item: Black Sludge
+|turn|46
+|
+|move|p1a: Crobat|Taunt|p2a: Sigilyph
+|-start|p2a: Sigilyph|move: Taunt
+|cant|p2a: Sigilyph|move: Taunt|Psycho Shift
+|
+|-heal|p1a: Crobat|374\/374|[from] item: Black Sludge
+|turn|47
+|
+|move|p1a: Crobat|Brave Bird|p2a: Sigilyph
+|-damage|p2a: Sigilyph|114\/348 brn
+|-damage|p1a: Crobat|333\/374|[from] recoil|[of] p2a: Sigilyph
+|move|p2a: Sigilyph|Stored Power|p1a: Crobat
+|-supereffective|p1a: Crobat
+|-damage|p1a: Crobat|271\/374
+|
+|-heal|p1a: Crobat|294\/374|[from] item: Black Sludge
+|turn|48
+|
+|switch|p2a: Banette|Banette-Mega, F, shiny|291\/332
+|-damage|p2a: Banette|250\/332|[from] Stealth Rock
+|move|p1a: Crobat|Brave Bird|p2a: Banette
+|-damage|p2a: Banette|69\/332
+|-damage|p1a: Crobat|234\/374|[from] recoil|[of] p2a: Banette
+|
+|-heal|p1a: Crobat|257\/374|[from] item: Black Sludge
+|turn|49
+|
+|move|p2a: Banette|Destiny Bond|p2a: Banette
+|-singlemove|p2a: Banette|Destiny Bond
+|move|p1a: Crobat|Taunt|p2a: Banette
+|-start|p2a: Banette|move: Taunt
+|
+|-heal|p1a: Crobat|280\/374|[from] item: Black Sludge
+|turn|50
+|
+|switch|p1a: Arcanine|Arcanine, F|348\/383
+|-damage|p1a: Arcanine|253\/383|[from] Stealth Rock
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Banette
+|-unboost|p2a: Banette|atk|1
+|move|p2a: Banette|Shadow Claw|p1a: Arcanine
+|-damage|p1a: Arcanine|163\/383
+|-damage|p2a: Banette|14\/332|[from] item: Rocky Helmet|[of] p1a: Arcanine
+|
+|turn|51
+|
+|move|p1a: Arcanine|Flare Blitz|p2a: Banette
+|-damage|p2a: Banette|0 fnt
+|-damage|p1a: Arcanine|158\/383|[from] recoil|[of] p2a: Banette
+|faint|p2a: Banette
+|
+|
+|switch|p2a: Snorlax|Snorlax, M, shiny|294\/524
+|-damage|p2a: Snorlax|229\/524|[from] Stealth Rock
+|turn|52
+|
+|switch|p1a: Crobat|Crobat, F|280\/374
+|-damage|p1a: Crobat|187\/374|[from] Stealth Rock
+|move|p2a: Snorlax|Rest|p2a: Snorlax
+|-status|p2a: Snorlax|slp
+|-heal|p2a: Snorlax|524\/524 slp|[silent]
+|-status|p2a: Snorlax|slp|[from] move: Rest
+|-enditem|p2a: Snorlax|Chesto Berry|[eat]
+|-curestatus|p2a: Snorlax|slp
+|
+|-heal|p1a: Crobat|210\/374|[from] item: Black Sludge
+|turn|53
+|c| Bob the Bro|kek
+|
+|move|p1a: Crobat|Taunt|p2a: Snorlax
+|-start|p2a: Snorlax|move: Taunt
+|move|p2a: Snorlax|Body Slam|p1a: Crobat
+|-crit|p1a: Crobat
+|-damage|p1a: Crobat|5\/374
+|
+|-heal|p1a: Crobat|28\/374|[from] item: Black Sludge
+|turn|54
+|
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-heal|p1a: Crobat|215\/374
+|move|p2a: Snorlax|Body Slam|p1a: Crobat
+|-damage|p1a: Crobat|82\/374
+|
+|-heal|p1a: Crobat|105\/374|[from] item: Black Sludge
+|turn|55
+|
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-heal|p1a: Crobat|292\/374
+|move|p2a: Snorlax|Body Slam|p1a: Crobat
+|-damage|p1a: Crobat|157\/374
+|
+|-heal|p1a: Crobat|180\/374|[from] item: Black Sludge
+|-end|p2a: Snorlax|move: Taunt
+|turn|56
+|
+|move|p1a: Crobat|Taunt|p2a: Snorlax
+|-start|p2a: Snorlax|move: Taunt
+|move|p2a: Snorlax|Body Slam|p1a: Crobat
+|-damage|p1a: Crobat|44\/374
+|
+|-heal|p1a: Crobat|67\/374|[from] item: Black Sludge
+|turn|57
+|c|âmama223|omg 
+|c| Bob the Bro|gastro just wins
+|c|âmama223|!data body slam
+|c|~|\/data-move Body Slam
+
+|c|âmama223|it has a 30 percent chance
+|c|âRowDog|does it beat Sigi though?
+|c|âmama223|same as scald
+|
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-heal|p1a: Crobat|254\/374
+|move|p2a: Snorlax|Body Slam|p1a: Crobat
+|-damage|p1a: Crobat|124\/374
+|-status|p1a: Crobat|par
+|
+|-heal|p1a: Crobat|147\/374 par|[from] item: Black Sludge
+|turn|58
+|c| Bob the Bro|y
+|
+|switch|p1a: Gastrodon|Gastrodon, M|426\/426
+|-damage|p1a: Gastrodon|400\/426|[from] Stealth Rock
+|move|p2a: Snorlax|Body Slam|p1a: Gastrodon
+|-damage|p1a: Gastrodon|291\/426
+|
+|-heal|p1a: Gastrodon|317\/426|[from] item: Leftovers
+|-end|p2a: Snorlax|move: Taunt
+|turn|59
+|
+|move|p1a: Gastrodon|Curse|p1a: Gastrodon
+|-boost|p1a: Gastrodon|atk|1
+|-boost|p1a: Gastrodon|def|1
+|-unboost|p1a: Gastrodon|spe|1
+|move|p2a: Snorlax|Curse|p2a: Snorlax
+|-boost|p2a: Snorlax|atk|1
+|-boost|p2a: Snorlax|def|1
+|-unboost|p2a: Snorlax|spe|1
+|
+|-heal|p1a: Gastrodon|343\/426|[from] item: Leftovers
+|turn|60
+|
+|move|p1a: Gastrodon|Curse|p1a: Gastrodon
+|-boost|p1a: Gastrodon|atk|1
+|-boost|p1a: Gastrodon|def|1
+|-unboost|p1a: Gastrodon|spe|1
+|move|p2a: Snorlax|Curse|p2a: Snorlax
+|-boost|p2a: Snorlax|atk|1
+|-boost|p2a: Snorlax|def|1
+|-unboost|p2a: Snorlax|spe|1
+|
+|-heal|p1a: Gastrodon|369\/426|[from] item: Leftovers
+|turn|61
+|
+|move|p1a: Gastrodon|Curse|p1a: Gastrodon
+|-boost|p1a: Gastrodon|atk|1
+|-boost|p1a: Gastrodon|def|1
+|-unboost|p1a: Gastrodon|spe|1
+|move|p2a: Snorlax|Body Slam|p1a: Gastrodon
+|-damage|p1a: Gastrodon|273\/426
+|
+|-heal|p1a: Gastrodon|299\/426|[from] item: Leftovers
+|turn|62
+|
+|move|p2a: Snorlax|Body Slam|p1a: Gastrodon
+|-damage|p1a: Gastrodon|211\/426
+|move|p1a: Gastrodon|Curse|p1a: Gastrodon
+|-boost|p1a: Gastrodon|atk|1
+|-boost|p1a: Gastrodon|def|1
+|-unboost|p1a: Gastrodon|spe|1
+|
+|-heal|p1a: Gastrodon|237\/426|[from] item: Leftovers
+|turn|63
+|
+|move|p2a: Snorlax|Curse|p2a: Snorlax
+|-boost|p2a: Snorlax|atk|1
+|-boost|p2a: Snorlax|def|1
+|-unboost|p2a: Snorlax|spe|1
+|move|p1a: Gastrodon|Recover|p1a: Gastrodon
+|-heal|p1a: Gastrodon|426\/426
+|
+|turn|64
+|
+|move|p2a: Snorlax|Body Slam|p1a: Gastrodon
+|-damage|p1a: Gastrodon|320\/426
+|move|p1a: Gastrodon|Scald|p2a: Snorlax
+|-damage|p2a: Snorlax|467\/524
+|
+|-heal|p1a: Gastrodon|346\/426|[from] item: Leftovers
+|turn|65
+|
+|move|p2a: Snorlax|Body Slam|p1a: Gastrodon
+|-damage|p1a: Gastrodon|246\/426
+|move|p1a: Gastrodon|Scald|p2a: Snorlax
+|-damage|p2a: Snorlax|401\/524
+|-status|p2a: Snorlax|brn
+|
+|-heal|p1a: Gastrodon|272\/426|[from] item: Leftovers
+|-damage|p2a: Snorlax|336\/524 brn|[from] brn
+|turn|66
+|
+|move|p2a: Snorlax|Crunch|p1a: Gastrodon
+|-damage|p1a: Gastrodon|240\/426
+|-unboost|p1a: Gastrodon|def|1
+|move|p1a: Gastrodon|Earthquake|p2a: Snorlax
+|-damage|p2a: Snorlax|182\/524 brn
+|
+|-heal|p1a: Gastrodon|266\/426|[from] item: Leftovers
+|-damage|p2a: Snorlax|117\/524 brn|[from] brn
+|turn|67
+|
+|move|p2a: Snorlax|Rest|p2a: Snorlax
+|-status|p2a: Snorlax|slp
+|-heal|p2a: Snorlax|524\/524 slp|[silent]
+|-status|p2a: Snorlax|slp|[from] move: Rest
+|move|p1a: Gastrodon|Earthquake|p2a: Snorlax
+|-damage|p2a: Snorlax|368\/524 slp
+|
+|-heal|p1a: Gastrodon|292\/426|[from] item: Leftovers
+|turn|68
+|
+|cant|p2a: Snorlax|slp
+|move|p1a: Gastrodon|Scald|p2a: Snorlax
+|-damage|p2a: Snorlax|308\/524 slp
+|
+|-heal|p1a: Gastrodon|318\/426|[from] item: Leftovers
+|turn|69
+|join|BenzMafia
+|
+|cant|p2a: Snorlax|slp
+|move|p1a: Gastrodon|Earthquake|p2a: Snorlax
+|-damage|p2a: Snorlax|133\/524 slp
+|
+|-heal|p1a: Gastrodon|344\/426|[from] item: Leftovers
+|turn|70
+|
+|-curestatus|p2a: Snorlax|slp
+|move|p2a: Snorlax|Rest|p2a: Snorlax
+|-status|p2a: Snorlax|slp
+|-heal|p2a: Snorlax|524\/524 slp|[silent]
+|-status|p2a: Snorlax|slp|[from] move: Rest
+|move|p1a: Gastrodon|Curse|p1a: Gastrodon
+|-boost|p1a: Gastrodon|atk|1
+|-boost|p1a: Gastrodon|def|1
+|-unboost|p1a: Gastrodon|spe|1
+|
+|-heal|p1a: Gastrodon|370\/426|[from] item: Leftovers
+|turn|71
+|
+|switch|p2a: Sigilyph|Sigilyph, M, shiny|114\/348 brn
+|move|p1a: Gastrodon|Scald|p2a: Sigilyph
+|-damage|p2a: Sigilyph|12\/348 brn
+|
+|-heal|p1a: Gastrodon|396\/426|[from] item: Leftovers
+|turn|72
+|
+|move|p2a: Sigilyph|Roost|p2a: Sigilyph
+|-heal|p2a: Sigilyph|186\/348 brn
+|move|p1a: Gastrodon|Earthquake|p2a: Sigilyph
+|-damage|p2a: Sigilyph|0 fnt
+|faint|p2a: Sigilyph
+|
+|-heal|p1a: Gastrodon|422\/426|[from] item: Leftovers
+|c|âRowDog|yes
+|c| Bob the Bro|i taught you well
+|c|âRowDog|you taught me nothing
+|-message|mama223 forfeited.
+|
+|win|RowDog
+|raw|Ladder updating...
+|raw|RowDog's rating: 1601 &rarr; <strong>1613<\/strong><br \/>(+12 for winning)
+|raw|mama223's rating: 1447 &rarr; <strong>1435<\/strong><br \/>(-12 for losing)
+|leave|mama223
+|player|p2
+|c|âRowDog|gay
+|c| Bob the Bro|wow harsh

@@ -1,0 +1,410 @@
+|join|cheerless
+|join|FelixE
+|player|p1|cheerless|34
+|player|p2|FelixE|144
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Breloom, F
+|poke|p1|Garchomp, F
+|poke|p1|Ferrothorn, F
+|poke|p1|Keldeo-Resolute
+|poke|p1|Rotom-Wash, shiny
+|poke|p1|Volcarona, F
+|poke|p2|Politoed, F, shiny
+|poke|p2|Toxicroak, M
+|poke|p2|Landorus-Therian, M, shiny
+|poke|p2|Gengar, F
+|poke|p2|Latios, M
+|poke|p2|Jirachi, shiny
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Breloom|Breloom, F|262\/262
+|switch|p2a: latios|Latios, M|302\/302
+|turn|1
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|352\/352
+|move|p2a: latios|Hidden Power|p1a: Ferrothorn
+|-supereffective|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|64\/352
+|
+|-heal|p1a: Ferrothorn|86\/352|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p1a: Volcarona|Volcarona, F|311\/311
+|move|p2a: latios|Hidden Power|p1a: Volcarona
+|-damage|p1a: Volcarona|234\/311
+|
+|-heal|p1a: Volcarona|253\/311|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p2a: latios|Dragon Pulse|p1a: Volcarona
+|-damage|p1a: Volcarona|91\/311
+|move|p1a: Volcarona|Bug Buzz|p2a: latios
+|-supereffective|p2a: latios
+|-damage|p2a: latios|0 fnt
+|faint|p2a: latios
+|
+|-heal|p1a: Volcarona|110\/311|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: SlimShady|Gengar, F|261\/261
+|turn|4
+|callback|decision
+|
+|switch|p1a: Keldeo|Keldeo-Resolute|324\/324
+|move|p2a: SlimShady|Shadow Ball|p1a: Keldeo
+|-damage|p1a: Keldeo|152\/324
+|-unboost|p1a: Keldeo|spd|1
+|
+|-heal|p1a: Keldeo|172\/324|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p1a: Keldeo|Substitute|p1a: Keldeo
+|-start|p1a: Keldeo|Substitute
+|-damage|p1a: Keldeo|91\/324
+|move|p2a: SlimShady|Shadow Ball|p1a: Keldeo
+|-end|p1a: Keldeo|Substitute
+|
+|-heal|p1a: Keldeo|111\/324|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p1a: Keldeo|Hydro Pump|p2a: SlimShady
+|-damage|p2a: SlimShady|2\/261
+|move|p2a: SlimShady|Shadow Ball|p1a: Keldeo
+|-damage|p1a: Keldeo|0 fnt
+|faint|p1a: Keldeo
+|
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, F|358\/358
+|turn|7
+|callback|decision
+|
+|move|p2a: SlimShady|Protect|p2a: SlimShady
+|-singleturn|p2a: SlimShady|Protect
+|move|p1a: Garchomp|Dragon Claw|p2a: SlimShady
+|-activate|p2a: SlimShady|Protect
+|
+|turn|8
+|callback|decision
+|
+|move|p1a: Garchomp|Dragon Claw|p2a: SlimShady
+|-damage|p2a: SlimShady|0 fnt
+|faint|p2a: SlimShady
+|
+|callback|decision
+|
+|switch|p2a: GraraDraco|Landorus-Therian, M, shiny|331\/331
+|-ability|p2a: GraraDraco|Intimidate|[of] p1a: Garchomp
+|-unboost|p1a: Garchomp|atk|1
+|turn|9
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash, shiny|241\/241
+|move|p2a: GraraDraco|Earthquake|p1a: Rotom-Wash
+|-immune|p1a: Rotom-Wash|[msg]
+|
+|turn|10
+|callback|decision
+|
+|switch|p2a: King|Jirachi, shiny|404\/404
+|move|p1a: Rotom-Wash|Hidden Power|p2a: King
+|-supereffective|p2a: King
+|-damage|p2a: King|280\/404
+|
+|-heal|p2a: King|305\/404|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Hidden Power|p2a: King
+|-supereffective|p2a: King
+|-damage|p2a: King|171\/404
+|move|p2a: King|Calm Mind|p2a: King
+|-boost|p2a: King|spa|1
+|-boost|p2a: King|spd|1
+|
+|-heal|p2a: King|196\/404|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|86\/352
+|move|p2a: King|Psyshock|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|41\/352
+|
+|-heal|p2a: King|221\/404|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|63\/352|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: King|Psyshock|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|24\/352
+|move|p1a: Ferrothorn|Leech Seed|p2a: King
+|-start|p2a: King|move: Leech Seed
+|
+|-heal|p2a: King|246\/404|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|46\/352|[from] item: Leftovers
+|-damage|p2a: King|196\/404|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|96\/352|[silent]
+|turn|14
+|callback|decision
+|
+|switch|p2a: Croky-chips|Toxicroak, M|370\/370
+|move|p1a: Ferrothorn|Thunder Wave|p2a: Croky-chips
+|-status|p2a: Croky-chips|par
+|
+|-heal|p1a: Ferrothorn|118\/352|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|switch|p1a: Volcarona|Volcarona, F|110\/311
+|move|p2a: Croky-chips|Ice Punch|p1a: Volcarona
+|-resisted|p1a: Volcarona
+|-damage|p1a: Volcarona|45\/311
+|
+|-heal|p1a: Volcarona|64\/311|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Volcarona|Fiery Dance|p2a: Croky-chips
+|-damage|p2a: Croky-chips|103\/370 par
+|-boost|p1a: Volcarona|spa|1
+|move|p2a: Croky-chips|Drain Punch|p1a: Volcarona
+|-resisted|p1a: Volcarona
+|-damage|p1a: Volcarona|0 fnt
+|-heal|p2a: Croky-chips|135\/370 par|[from] drain|[of] p1a: Volcarona
+|faint|p1a: Volcarona
+|
+|-heal|p2a: Croky-chips|158\/370 par|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, F|358\/358
+|turn|17
+|callback|decision
+|
+|switch|p2a: GraraDraco|Landorus-Therian, M, shiny|331\/331
+|-ability|p2a: GraraDraco|Intimidate|[of] p1a: Garchomp
+|-unboost|p1a: Garchomp|atk|1
+|move|p1a: Garchomp|Earthquake|p2a: GraraDraco
+|-immune|p2a: GraraDraco|[msg]
+|
+|turn|18
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash, shiny|241\/241
+|move|p2a: GraraDraco|Stone Edge|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|115\/241
+|
+|turn|19
+|callback|decision
+|
+|switch|p2a: Croky-chips|Toxicroak, M|158\/370 par
+|move|p1a: Rotom-Wash|Hidden Power|p2a: Croky-chips
+|-crit|p2a: Croky-chips
+|-damage|p2a: Croky-chips|0 fnt
+|faint|p2a: Croky-chips
+|
+|callback|decision
+|
+|switch|p2a: Bailarbailar|Politoed, F, shiny|384\/384
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Bailarbailar
+|turn|20
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|118\/352
+|move|p2a: Bailarbailar|Toxic|p1a: Ferrothorn
+|-fail|p1a: Ferrothorn
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Ferrothorn|140\/352|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|switch|p2a: GraraDraco|Landorus-Therian, M, shiny|331\/331
+|-ability|p2a: GraraDraco|Intimidate|[of] p1a: Ferrothorn
+|-unboost|p1a: Ferrothorn|atk|1
+|move|p1a: Ferrothorn|Leech Seed|p2a: GraraDraco
+|-start|p2a: GraraDraco|move: Leech Seed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Ferrothorn|162\/352|[from] item: Leftovers
+|-damage|p2a: GraraDraco|290\/331|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|203\/352|[silent]
+|turn|22
+|callback|decision
+|
+|move|p2a: GraraDraco|Stone Edge|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|157\/352
+|move|p1a: Ferrothorn|Thunder Wave|p2a: GraraDraco
+|-immune|p2a: GraraDraco|[msg]
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Ferrothorn|179\/352|[from] item: Leftovers
+|-damage|p2a: GraraDraco|249\/331|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|220\/352|[silent]
+|turn|23
+|callback|decision
+|
+|move|p2a: GraraDraco|Earthquake|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|100\/352
+|move|p1a: Ferrothorn|Stealth Rock|p2a: GraraDraco
+|-sidestart|p2: FelixE|move: Stealth Rock
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Ferrothorn|122\/352|[from] item: Leftovers
+|-damage|p2a: GraraDraco|208\/331|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|163\/352|[silent]
+|turn|24
+|callback|decision
+|
+|move|p2a: GraraDraco|Earthquake|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|25\/352
+|move|p1a: Ferrothorn|Spikes|p2a: GraraDraco
+|-sidestart|p2: FelixE|Spikes
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Ferrothorn|47\/352|[from] item: Leftovers
+|-damage|p2a: GraraDraco|167\/331|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|88\/352|[silent]
+|turn|25
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash, shiny|115\/241
+|move|p2a: GraraDraco|Earthquake|p1a: Rotom-Wash
+|-immune|p1a: Rotom-Wash|[msg]
+|
+|-weather|RainDance|[upkeep]
+|-damage|p2a: GraraDraco|126\/331|[from] Leech Seed|[of] p1a: Rotom-Wash
+|-heal|p1a: Rotom-Wash|156\/241|[silent]
+|turn|26
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: GraraDraco
+|-supereffective|p2a: GraraDraco
+|-damage|p2a: GraraDraco|0 fnt
+|faint|p2a: GraraDraco
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: King|Jirachi, shiny|196\/404
+|-damage|p2a: King|171\/404|[from] Stealth Rock
+|-damage|p2a: King|121\/404|[from] Spikes
+|turn|27
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|88\/352
+|move|p2a: King|Thunder|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|50\/352
+|-status|p1a: Ferrothorn|par
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: King|146\/404|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|72\/352 par|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|move|p2a: King|Substitute|p2a: King
+|-start|p2a: King|Substitute
+|-damage|p2a: King|45\/404
+|move|p1a: Ferrothorn|Leech Seed|p2a: King
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: King|70\/404|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|94\/352 par|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, F|358\/358
+|move|p2a: King|Calm Mind|p2a: King
+|-boost|p2a: King|spa|1
+|-boost|p2a: King|spd|1
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: King|95\/404|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|move|p1a: Garchomp|Earthquake|p2a: King
+|-supereffective|p2a: King
+|-end|p2a: King|Substitute
+|move|p2a: King|Psyshock|p1a: Garchomp
+|-damage|p1a: Garchomp|202\/358
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: King|120\/404|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|switch|p2a: Bailarbailar|Politoed, F, shiny|384\/384
+|-damage|p2a: Bailarbailar|336\/384|[from] Spikes
+|-damage|p2a: Bailarbailar|288\/384|[from] Stealth Rock
+|move|p1a: Garchomp|Earthquake|p2a: Bailarbailar
+|-damage|p2a: Bailarbailar|129\/384
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Bailarbailar|153\/384|[from] item: Leftovers
+|turn|32
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|94\/352 par
+|move|p2a: Bailarbailar|Scald|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|37\/352 par
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Bailarbailar|177\/384|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|59\/352 par|[from] item: Leftovers
+|turn|33
+|callback|decision
+|
+|move|p2a: Bailarbailar|Scald|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|0 fnt
+|faint|p1a: Ferrothorn
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Bailarbailar|201\/384|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Breloom|Breloom, F|262\/262
+|turn|34
+|callback|decision
+|
+|switch|p2a: King|Jirachi, shiny|120\/404
+|-damage|p2a: King|95\/404|[from] Stealth Rock
+|-damage|p2a: King|45\/404|[from] Spikes
+|move|p1a: Breloom|Spore|p2a: King
+|-status|p2a: King|slp
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: King|70\/404 slp|[from] item: Leftovers
+|turn|35
+|callback|decision
+|leave|FelixE
+|player|p2
+|-message|felixe lost due to inactivity.
+|
+|win|cheerless
+|raw|Ladder updating...
+|raw|cheerless's rating: 1064 &rarr; <strong>1272<\/strong><br \/>(+208 for winning)
+|raw|FelixE's rating: 1522 &rarr; <strong>1517<\/strong><br \/>(-5 for losing)

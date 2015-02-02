@@ -1,0 +1,311 @@
+|join|SasuSakuGen91
+|join|sean1993
+|player|p1|SasuSakuGen91|118
+|player|p2|sean1993|170
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Espeon, F
+|poke|p1|Vaporeon, F, shiny
+|poke|p1|Jolteon, F
+|poke|p1|Umbreon, M
+|poke|p1|Flareon, F
+|poke|p1|Leafeon, F, shiny
+|poke|p2|Keldeo
+|poke|p2|Gengar, M
+|poke|p2|Weavile, F
+|poke|p2|Breloom, F
+|poke|p2|Garchomp, M
+|poke|p2|Scizor, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Jolteon|Jolteon, F|271\/271
+|switch|p2a: Breloom|Breloom, F|289\/289
+|turn|1
+|callback|decision
+|
+|move|p1a: Jolteon|Yawn|p2a: Breloom
+|-start|p2a: Breloom|move: Yawn|[of] p1a: Jolteon
+|move|p2a: Breloom|Bullet Seed|p1a: Jolteon
+|-damage|p1a: Jolteon|162\/271
+|-damage|p1a: Jolteon|57\/271
+|-damage|p1a: Jolteon|0 fnt
+|-hitcount|p1a: Jolteon|3
+|faint|p1a: Jolteon
+|
+|callback|decision
+|
+|switch|p1a: Leafeon|Leafeon, F, shiny|311\/311
+|turn|2
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, F|331\/331
+|move|p1a: Leafeon|Substitute|p1a: Leafeon
+|-start|p1a: Leafeon|Substitute
+|-damage|p1a: Leafeon|234\/311
+|
+|turn|3
+|callback|decision
+|
+|move|p1a: Leafeon|Baton Pass|p1a: Leafeon
+|callback|decision
+|
+|switch|p1a: Flareon|Flareon, F|301\/301
+|move|p2a: Scizor|Bug Bite|p1a: Flareon
+|-resisted|p1a: Flareon
+|-end|p1a: Flareon|Substitute
+|
+|turn|4
+|callback|decision
+|
+|move|p1a: Flareon|Flame Charge|p2a: Scizor
+|-supereffective|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|-boost|p1a: Flareon|spe|1
+|faint|p2a: Scizor
+|
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, M|358\/358
+|turn|5
+|callback|decision
+|
+|move|p2a: Garchomp|Stealth Rock|p1a: Flareon
+|-sidestart|p1: SasuSakuGen91|move: Stealth Rock
+|move|p1a: Flareon|Baton Pass|p1a: Flareon
+|callback|decision
+|
+|switch|p1a: Vaporeon|Vaporeon, F, shiny|402\/402
+|-damage|p1a: Vaporeon|352\/402|[from] Stealth Rock
+|
+|-heal|p1a: Vaporeon|377\/402|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p2a: Weavile|Weavile, F|289\/289
+|-ability|p2a: Weavile|Pressure
+|move|p1a: Vaporeon|Acid Armor|p1a: Vaporeon
+|-boost|p1a: Vaporeon|def|2
+|
+|-heal|p1a: Vaporeon|402\/402|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p2a: Weavile|Night Slash|p1a: Vaporeon
+|-damage|p1a: Vaporeon|320\/402
+|-damage|p2a: Weavile|261\/289|[from] item: Life Orb
+|move|p1a: Vaporeon|Substitute|p1a: Vaporeon
+|-start|p1a: Vaporeon|Substitute
+|-damage|p1a: Vaporeon|220\/402
+|
+|-heal|p1a: Vaporeon|245\/402|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p2a: Weavile|Night Slash|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Substitute|[damage]
+|-damage|p2a: Weavile|233\/289|[from] item: Life Orb
+|move|p1a: Vaporeon|Acid Armor|p1a: Vaporeon
+|-boost|p1a: Vaporeon|def|2
+|
+|-heal|p1a: Vaporeon|270\/402|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p2a: Gengar|Gengar, M|261\/261
+|move|p1a: Vaporeon|Baton Pass|p1a: Vaporeon
+|callback|decision
+|
+|switch|p1a: Espeon|Espeon, F|311\/311
+|-damage|p1a: Espeon|273\/311|[from] Stealth Rock
+|
+|-heal|p1a: Espeon|292\/311|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p1a: Espeon|Psyshock|p2a: Gengar
+|-supereffective|p2a: Gengar
+|-enditem|p2a: Gengar|Focus Sash
+|-damage|p2a: Gengar|1\/261
+|move|p2a: Gengar|Shadow Ball|p1a: Espeon
+|-supereffective|p1a: Espeon
+|-end|p1a: Espeon|Substitute
+|
+|-heal|p1a: Espeon|311\/311|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p2a: Weavile|Weavile, F|233\/289
+|-ability|p2a: Weavile|Pressure
+|move|p1a: Espeon|Psyshock|p2a: Weavile
+|-immune|p2a: Weavile|[msg]
+|
+|turn|12
+|callback|decision
+|
+|move|p1a: Espeon|Baton Pass|p1a: Espeon
+|callback|decision
+|
+|switch|p1a: Vaporeon|Vaporeon, F, shiny|270\/402
+|-damage|p1a: Vaporeon|220\/402|[from] Stealth Rock
+|move|p2a: Weavile|Night Slash|p1a: Vaporeon
+|-damage|p1a: Vaporeon|158\/402
+|-damage|p2a: Weavile|205\/289|[from] item: Life Orb
+|
+|-heal|p1a: Vaporeon|183\/402|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: Weavile|Night Slash|p1a: Vaporeon
+|-damage|p1a: Vaporeon|127\/402
+|-damage|p2a: Weavile|177\/289|[from] item: Life Orb
+|move|p1a: Vaporeon|Substitute|p1a: Vaporeon
+|-start|p1a: Vaporeon|Substitute
+|-damage|p1a: Vaporeon|27\/402
+|
+|-heal|p1a: Vaporeon|52\/402|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p2a: Weavile|Night Slash|p1a: Vaporeon
+|-crit|p1a: Vaporeon
+|-end|p1a: Vaporeon|Substitute
+|-damage|p2a: Weavile|149\/289|[from] item: Life Orb
+|move|p1a: Vaporeon|Baton Pass|p1a: Vaporeon
+|callback|decision
+|
+|switch|p1a: Flareon|Flareon, F|301\/301
+|-damage|p1a: Flareon|226\/301|[from] Stealth Rock
+|
+|-heal|p1a: Flareon|244\/301|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p2a: Weavile|Night Slash|p1a: Flareon
+|-damage|p1a: Flareon|170\/301
+|-damage|p2a: Weavile|121\/289|[from] item: Life Orb
+|move|p1a: Flareon|Flame Charge|p2a: Weavile
+|-supereffective|p2a: Weavile
+|-damage|p2a: Weavile|0 fnt
+|-boost|p1a: Flareon|spe|1
+|faint|p2a: Weavile
+|
+|-heal|p1a: Flareon|188\/301|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Gengar|Gengar, M|1\/261
+|turn|16
+|callback|decision
+|
+|move|p1a: Flareon|Flame Charge|p2a: Gengar
+|-damage|p2a: Gengar|0 fnt
+|-boost|p1a: Flareon|spe|1
+|faint|p2a: Gengar
+|
+|-heal|p1a: Flareon|206\/301|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Keldeo|Keldeo|323\/323
+|turn|17
+|callback|decision
+|
+|move|p2a: Keldeo|Secret Sword|p1a: Flareon
+|-damage|p1a: Flareon|130\/301
+|move|p1a: Flareon|Baton Pass|p1a: Flareon
+|callback|decision
+|
+|switch|p1a: Leafeon|Leafeon, F, shiny|234\/311
+|-damage|p1a: Leafeon|196\/311|[from] Stealth Rock
+|
+|turn|18
+|callback|decision
+|
+|switch|p2a: Breloom|Breloom, F|289\/289
+|move|p1a: Leafeon|Leaf Blade|p2a: Breloom
+|-resisted|p2a: Breloom
+|-damage|p2a: Breloom|187\/289
+|
+|turn|19
+|callback|decision
+|
+|move|p1a: Leafeon|X-Scissor|p2a: Breloom
+|-damage|p2a: Breloom|72\/289
+|move|p2a: Breloom|Spore|p1a: Leafeon
+|-status|p1a: Leafeon|slp
+|-enditem|p1a: Leafeon|Lum Berry|[eat]
+|-curestatus|p1a: Leafeon|slp
+|
+|turn|20
+|callback|decision
+|
+|move|p1a: Leafeon|Substitute|p1a: Leafeon
+|-start|p1a: Leafeon|Substitute
+|-damage|p1a: Leafeon|119\/311
+|move|p2a: Breloom|Spore|p1a: Leafeon
+|
+|turn|21
+|callback|decision
+|
+|move|p2a: Breloom|Mach Punch|p1a: Leafeon
+|-enditem|p2a: Breloom|Fighting Gem|[from] gem|[move] Mach Punch
+|-activate|p1a: Leafeon|Substitute|[damage]
+|move|p1a: Leafeon|X-Scissor|p2a: Breloom
+|-damage|p2a: Breloom|0 fnt
+|faint|p2a: Breloom
+|
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, M|358\/358
+|turn|22
+|callback|decision
+|
+|move|p1a: Leafeon|Baton Pass|p1a: Leafeon
+|callback|decision
+|
+|switch|p1a: Espeon|Espeon, F|311\/311
+|-damage|p1a: Espeon|273\/311|[from] Stealth Rock
+|move|p2a: Garchomp|Fire Blast|p1a: Espeon
+|-end|p1a: Espeon|Substitute
+|
+|-heal|p1a: Espeon|292\/311|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p1a: Espeon|Calm Mind|p1a: Espeon
+|-boost|p1a: Espeon|spa|1
+|-boost|p1a: Espeon|spd|1
+|move|p2a: Garchomp|Dual Chop|p1a: Espeon
+|-damage|p1a: Espeon|262\/311
+|-damage|p1a: Espeon|234\/311
+|-hitcount|p1a: Espeon|2
+|
+|-heal|p1a: Espeon|253\/311|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p1a: Espeon|Psyshock|p2a: Garchomp
+|-damage|p2a: Garchomp|166\/358
+|move|p2a: Garchomp|Earthquake|p1a: Espeon
+|-damage|p1a: Espeon|187\/311
+|
+|-heal|p1a: Espeon|206\/311|[from] item: Leftovers
+|turn|25
+|callback|decision
+|-message|sean1993 forfeited.
+|
+|win|SasuSakuGen91
+|raw|Ladder updating...
+|leave|sean1993
+|player|p2
+|raw|SasuSakuGen91's rating: 1682 &rarr; <strong>1686<\/strong><br \/>(+4 for winning)
+|raw|sean1993's rating: 1768 &rarr; <strong>1764<\/strong><br \/>(-4 for losing)

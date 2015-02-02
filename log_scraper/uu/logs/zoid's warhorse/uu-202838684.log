@@ -1,0 +1,216 @@
+|join|zoid's warhorse
+|join|testjg
+|player|p1|zoid's warhorse|188
+|player|p2|testjg|52
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Aerodactyl, M
+|poke|p1|Azelf
+|poke|p1|Dragalge, F
+|poke|p1|Lucario, M
+|poke|p1|Magneton
+|poke|p1|Serperior, M
+|poke|p2|Nidoqueen, F
+|poke|p2|Rotom-Mow
+|poke|p2|Cobalion
+|poke|p2|Chandelure, M
+|poke|p2|Krookodile, F
+|poke|p2|Milotic, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Azelf|Azelf|291\/291
+|switch|p2a: Nidoqueen|Nidoqueen, F|370\/370
+|turn|1
+|
+|switch|p2a: Krookodile|Krookodile, F|332\/332
+|move|p1a: Azelf|Stealth Rock|p2a: Krookodile
+|-sidestart|p2: testjg|move: Stealth Rock
+|
+|turn|2
+|
+|move|p2a: Krookodile|Pursuit|p1a: Azelf
+|-supereffective|p1a: Azelf
+|-damage|p1a: Azelf|99\/291
+|move|p1a: Azelf|Knock Off|p2a: Krookodile
+|-resisted|p2a: Krookodile
+|-damage|p2a: Krookodile|266\/332
+|-enditem|p2a: Krookodile|Choice Scarf|[from] move: Knock Off|[of] p1a: Azelf
+|
+|turn|3
+|
+|move|p1a: Azelf|Explosion|p2a: Krookodile
+|-crit|p2a: Krookodile
+|-damage|p2a: Krookodile|0 fnt
+|faint|p1a: Azelf
+|faint|p2a: Krookodile
+|
+|
+|switch|p1a: Lucario|Lucario, M|279\/279
+|switch|p2a: Nidoqueen|Nidoqueen, F|370\/370
+|-damage|p2a: Nidoqueen|347\/370|[from] Stealth Rock
+|turn|4
+|
+|move|p1a: Lucario|Earthquake|p2a: Nidoqueen
+|-supereffective|p2a: Nidoqueen
+|-damage|p2a: Nidoqueen|27\/370
+|-damage|p1a: Lucario|252\/279|[from] item: Life Orb
+|move|p2a: Nidoqueen|Earth Power|p1a: Lucario
+|-supereffective|p1a: Lucario
+|-damage|p1a: Lucario|0 fnt
+|faint|p1a: Lucario
+|
+|c|âtestjg|never seen a lucario with EQ before
+|
+|switch|p1a: Serperior|Serperior, M|303\/303
+|turn|5
+|
+|move|p1a: Serperior|Leaf Storm|p2a: Nidoqueen
+|-damage|p2a: Nidoqueen|0 fnt
+|-boost|p1a: Serperior|spa|2
+|faint|p2a: Nidoqueen
+|
+|
+|switch|p2a: Chandelure|Chandelure, M|261\/261
+|-damage|p2a: Chandelure|196\/261|[from] Stealth Rock
+|turn|6
+|
+|switch|p1a: Dragalge|Dragalge, F|283\/283
+|move|p2a: Chandelure|Trick|p1a: Dragalge
+|-activate|p2a: Chandelure|move: Trick|[of] p1a: Dragalge
+|-item|p1a: Dragalge|Choice Scarf|[from] move: Trick
+|-item|p2a: Chandelure|Choice Specs|[from] move: Trick
+|
+|turn|7
+|
+|move|p2a: Chandelure|Shadow Ball|p1a: Dragalge
+|-damage|p1a: Dragalge|93\/283
+|move|p1a: Dragalge|Draco Meteor|p2a: Chandelure
+|-damage|p2a: Chandelure|0 fnt
+|-unboost|p1a: Dragalge|spa|2
+|faint|p2a: Chandelure
+|
+|
+|switch|p2a: Cobalion|Cobalion|324\/324
+|-damage|p2a: Cobalion|314\/324|[from] Stealth Rock
+|turn|8
+|
+|move|p2a: Cobalion|Swords Dance|p2a: Cobalion
+|-boost|p2a: Cobalion|atk|2
+|move|p1a: Dragalge|Draco Meteor|p2a: Cobalion|[miss]
+|-miss|p1a: Dragalge|p2a: Cobalion
+|
+|-heal|p2a: Cobalion|324\/324|[from] item: Leftovers
+|turn|9
+|
+|move|p2a: Cobalion|Iron Head|p1a: Dragalge
+|-damage|p1a: Dragalge|0 fnt
+|faint|p1a: Dragalge
+|
+|
+|switch|p1a: Serperior|Serperior, M|303\/303
+|turn|10
+|
+|move|p1a: Serperior|Glare|p2a: Cobalion
+|-status|p2a: Cobalion|par
+|move|p2a: Cobalion|Sacred Sword|p1a: Serperior
+|-damage|p1a: Serperior|83\/303
+|
+|turn|11
+|
+|move|p1a: Serperior|Hidden Power|p2a: Cobalion
+|-supereffective|p2a: Cobalion
+|-damage|p2a: Cobalion|202\/324 par
+|move|p2a: Cobalion|Iron Head|p1a: Serperior
+|-damage|p1a: Serperior|0 fnt
+|faint|p1a: Serperior
+|
+|-heal|p2a: Cobalion|222\/324 par|[from] item: Leftovers
+|
+|switch|p1a: Magneton|Magneton|303\/303
+|turn|12
+|
+|move|p1a: Magneton|Volt Switch|p2a: Cobalion
+|-damage|p2a: Cobalion|65\/324 par
+|
+|switch|p1a: Aerodactyl|Aerodactyl, M|302\/302
+|-ability|p1a: Aerodactyl|Unnerve|p2: testjg
+|cant|p2a: Cobalion|par
+|
+|-heal|p2a: Cobalion|85\/324 par|[from] item: Leftovers
+|turn|13
+|
+|detailschange|p1a: Aerodactyl|Aerodactyl-Mega, M
+|-mega|p1a: Aerodactyl|Aerodactyl|Aerodactylite
+|move|p1a: Aerodactyl|Aqua Tail|p2a: Cobalion|[miss]
+|-miss|p1a: Aerodactyl|p2a: Cobalion
+|move|p2a: Cobalion|Iron Head|p1a: Aerodactyl
+|-supereffective|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|0 fnt
+|faint|p1a: Aerodactyl
+|
+|-heal|p2a: Cobalion|105\/324 par|[from] item: Leftovers
+|
+|switch|p1a: Magneton|Magneton|303\/303
+|turn|14
+|
+|move|p1a: Magneton|Thunderbolt|p2a: Cobalion
+|-damage|p2a: Cobalion|0 fnt
+|faint|p2a: Cobalion
+|
+|
+|switch|p2a: Rotom-Mow|Rotom-Mow|241\/241
+|-damage|p2a: Rotom-Mow|211\/241|[from] Stealth Rock
+|turn|15
+|
+|move|p2a: Rotom-Mow|Thunderbolt|p1a: Magneton
+|-resisted|p1a: Magneton
+|-damage|p1a: Magneton|210\/303
+|move|p1a: Magneton|Thunderbolt|p2a: Rotom-Mow
+|-resisted|p2a: Rotom-Mow
+|-damage|p2a: Rotom-Mow|172\/241
+|
+|turn|16
+|
+|move|p2a: Rotom-Mow|Thunderbolt|p1a: Magneton
+|-resisted|p1a: Magneton
+|-damage|p1a: Magneton|123\/303
+|move|p1a: Magneton|Flash Cannon|p2a: Rotom-Mow
+|-resisted|p2a: Rotom-Mow
+|-damage|p2a: Rotom-Mow|100\/241
+|
+|turn|17
+|c|âzoid's warhorse|gg
+|
+|move|p2a: Rotom-Mow|Thunderbolt|p1a: Magneton
+|-resisted|p1a: Magneton
+|-damage|p1a: Magneton|33\/303
+|move|p1a: Magneton|Flash Cannon|p2a: Rotom-Mow
+|-resisted|p2a: Rotom-Mow
+|-damage|p2a: Rotom-Mow|34\/241
+|
+|turn|18
+|c|âtestjg|gg
+|
+|move|p2a: Rotom-Mow|Thunderbolt|p1a: Magneton
+|-resisted|p1a: Magneton
+|-damage|p1a: Magneton|0 fnt
+|faint|p1a: Magneton
+|
+|win|testjg
+|raw|Ladder updating...
+|raw|zoid&apos;s warhorse's rating: 1472 &rarr; <strong>1452<\/strong><br \/>(-20 for losing)
+|raw|testjg's rating: 1463 &rarr; <strong>1484<\/strong><br \/>(+21 for winning)
+|leave|testjg

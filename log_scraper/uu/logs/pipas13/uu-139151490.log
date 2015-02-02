@@ -1,0 +1,414 @@
+|join|lucky100x
+|join|pipas13
+|player|p1|lucky100x|40
+|player|p2|pipas13|1
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Tangrowth, M
+|poke|p1|Granbull, M
+|poke|p1|Jirachi
+|poke|p1|Heracross, F, shiny
+|poke|p1|Nidoking, M, shiny
+|poke|p1|Mantine, F, shiny
+|poke|p2|Snorlax, F
+|poke|p2|Infernape, F
+|poke|p2|Tentacruel, F
+|poke|p2|Krookodile, M
+|poke|p2|Roserade, F
+|poke|p2|Aerodactyl, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit three PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Jirachi|Jirachi|404\/404
+|switch|p2a: Infernape|Infernape, F|293\/293
+|turn|1
+|
+|switch|p1a: Granbull|Granbull, M|383\/383
+|-ability|p1a: Granbull|Intimidate|[of] p2a: Infernape
+|-unboost|p2a: Infernape|atk|1
+|move|p2a: Infernape|Flare Blitz|p1a: Granbull
+|-damage|p1a: Granbull|229\/383
+|-damage|p2a: Infernape|242\/293|[from] recoil|[of] p1a: Granbull
+|
+|-heal|p1a: Granbull|252\/383|[from] item: Leftovers
+|turn|2
+|
+|switch|p2a: Krookodile|Krookodile, M|393\/393
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Granbull
+|-unboost|p1a: Granbull|atk|1
+|switch|p1a: Mantine|Mantine, F, shiny|334\/334
+|
+|turn|3
+|
+|move|p2a: Krookodile|Stealth Rock|p1a: Mantine
+|-sidestart|p1: lucky100x|move: Stealth Rock
+|move|p1a: Mantine|Scald|p2a: Krookodile
+|-supereffective|p2a: Krookodile
+|-damage|p2a: Krookodile|177\/393
+|
+|-heal|p2a: Krookodile|201\/393|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Tentacruel|Tentacruel, F|363\/363
+|move|p1a: Mantine|Scald|p2a: Tentacruel
+|-resisted|p2a: Tentacruel
+|-damage|p2a: Tentacruel|327\/363
+|
+|-heal|p2a: Tentacruel|349\/363|[from] item: Black Sludge
+|turn|5
+|
+|move|p2a: Tentacruel|Toxic|p1a: Mantine
+|-status|p1a: Mantine|tox
+|move|p1a: Mantine|Scald|p2a: Tentacruel
+|-resisted|p2a: Tentacruel
+|-damage|p2a: Tentacruel|316\/363
+|-status|p2a: Tentacruel|brn
+|
+|-heal|p2a: Tentacruel|338\/363 brn|[from] item: Black Sludge
+|-damage|p2a: Tentacruel|293\/363 brn|[from] brn
+|-damage|p1a: Mantine|314\/334 tox|[from] psn
+|turn|6
+|
+|move|p2a: Tentacruel|Sludge Bomb|p1a: Mantine
+|-damage|p1a: Mantine|245\/334 tox
+|move|p1a: Mantine|Defog|p2a: Tentacruel
+|-unboost|p2a: Tentacruel|evasion|1
+|-sideend|p1: lucky100x|Stealth Rock|[from] move: Defog|[of] p1a: Mantine
+|
+|-heal|p2a: Tentacruel|315\/363 brn|[from] item: Black Sludge
+|-heal|p1a: Mantine|265\/334 tox|[from] item: Leftovers
+|-damage|p2a: Tentacruel|270\/363 brn|[from] brn
+|-damage|p1a: Mantine|225\/334 tox|[from] psn
+|turn|7
+|
+|switch|p2a: Roserade|Roserade, F|269\/269
+|switch|p1a: Jirachi|Jirachi|404\/404
+|
+|turn|8
+|
+|move|p2a: Roserade|Sleep Powder|p1a: Jirachi
+|-status|p1a: Jirachi|slp
+|cant|p1a: Jirachi|slp
+|
+|turn|9
+|
+|move|p2a: Roserade|Spikes|p1a: Jirachi
+|-sidestart|p1: lucky100x|Spikes
+|cant|p1a: Jirachi|slp
+|
+|turn|10
+|
+|move|p2a: Roserade|Hidden Power|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|258\/404 slp
+|-curestatus|p1a: Jirachi|slp
+|move|p1a: Jirachi|Body Slam|p2a: Roserade
+|-damage|p2a: Roserade|166\/269
+|-status|p2a: Roserade|par
+|
+|-heal|p1a: Jirachi|283\/404|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Jirachi|Iron Head|p2a: Roserade
+|-crit|p2a: Roserade
+|-damage|p2a: Roserade|0 fnt
+|faint|p2a: Roserade
+|
+|-heal|p1a: Jirachi|308\/404|[from] item: Leftovers
+|
+|switch|p2a: Infernape|Infernape, F|242\/293
+|turn|12
+|
+|move|p1a: Jirachi|Protect|p1a: Jirachi
+|-singleturn|p1a: Jirachi|Protect
+|move|p2a: Infernape|U-turn|p1a: Jirachi
+|-activate|p1a: Jirachi|Protect
+|
+|-heal|p1a: Jirachi|333\/404|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: Mantine|Mantine, F, shiny|225\/334 tox
+|move|p2a: Infernape|U-turn|p1a: Mantine
+|-resisted|p1a: Mantine
+|-damage|p1a: Mantine|176\/334 tox
+|
+|switch|p2a: Krookodile|Krookodile, M|201\/393
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Mantine
+|-unboost|p1a: Mantine|atk|1
+|
+|-heal|p2a: Krookodile|225\/393|[from] item: Leftovers
+|-heal|p1a: Mantine|196\/334 tox|[from] item: Leftovers
+|-damage|p1a: Mantine|176\/334 tox|[from] psn
+|turn|14
+|
+|move|p2a: Krookodile|Knock Off|p1a: Mantine
+|-damage|p1a: Mantine|37\/334 tox
+|-enditem|p1a: Mantine|Leftovers|[from] move: Knock Off|[of] p2a: Krookodile
+|move|p1a: Mantine|Scald|p2a: Krookodile
+|-supereffective|p2a: Krookodile
+|-damage|p2a: Krookodile|15\/393
+|-status|p2a: Krookodile|brn
+|
+|-heal|p2a: Krookodile|39\/393 brn|[from] item: Leftovers
+|-damage|p2a: Krookodile|0 fnt|[from] brn
+|-damage|p1a: Mantine|0 fnt|[from] psn
+|faint|p2a: Krookodile
+|faint|p1a: Mantine
+|
+|switch|p2a: Aerodactyl|Aerodactyl, F|301\/301
+|switch|p1a: Heracross|Heracross, F, shiny|302\/302
+|-damage|p1a: Heracross|265\/302|[from] Spikes
+|-ability|p2a: Aerodactyl|Pressure
+|turn|15
+|
+|switch|p1a: Tangrowth|Tangrowth, M|404\/404
+|-damage|p1a: Tangrowth|354\/404|[from] Spikes
+|detailschange|p2a: Aerodactyl|Aerodactyl-Mega, F
+|message|Aerodactyl has Mega Evolved into Mega Aerodactyl!
+|move|p2a: Aerodactyl|Fire Fang|p1a: Tangrowth
+|-supereffective|p1a: Tangrowth
+|-damage|p1a: Tangrowth|146\/404
+|
+|turn|16
+|
+|switch|p1a: Granbull|Granbull, M|252\/383
+|-damage|p1a: Granbull|205\/383|[from] Spikes
+|-ability|p1a: Granbull|Intimidate|[of] p2a: Aerodactyl
+|-unboost|p2a: Aerodactyl|atk|1
+|move|p2a: Aerodactyl|Fire Fang|p1a: Granbull
+|-damage|p1a: Granbull|138\/383
+|-status|p1a: Granbull|brn
+|
+|-heal|p1a: Granbull|161\/383 brn|[from] item: Leftovers
+|-damage|p1a: Granbull|114\/383 brn|[from] brn
+|turn|17
+|
+|move|p2a: Aerodactyl|Stone Edge|p1a: Granbull|[miss]
+|-miss|p2a: Aerodactyl|p1a: Granbull
+|move|p1a: Granbull|Heal Bell|p1a: Granbull
+|-cureteam|p1a: Granbull|[from] move: HealBell
+|
+|-heal|p1a: Granbull|137\/383|[from] item: Leftovers
+|turn|18
+|
+|switch|p1a: Jirachi|Jirachi|333\/404
+|-damage|p1a: Jirachi|283\/404|[from] Spikes
+|move|p2a: Aerodactyl|Stone Edge|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|211\/404
+|
+|-heal|p1a: Jirachi|236\/404|[from] item: Leftovers
+|turn|19
+|
+|switch|p2a: Tentacruel|Tentacruel, F|270\/363 brn
+|move|p1a: Jirachi|Iron Head|p2a: Tentacruel
+|-resisted|p2a: Tentacruel
+|-damage|p2a: Tentacruel|227\/363 brn
+|
+|-heal|p1a: Jirachi|261\/404|[from] item: Leftovers
+|-heal|p2a: Tentacruel|249\/363 brn|[from] item: Black Sludge
+|-damage|p2a: Tentacruel|204\/363 brn|[from] brn
+|turn|20
+|
+|move|p1a: Jirachi|Wish|p1a: Jirachi
+|move|p2a: Tentacruel|Scald|p1a: Jirachi
+|-damage|p1a: Jirachi|198\/404
+|-status|p1a: Jirachi|brn
+|
+|-heal|p1a: Jirachi|223\/404 brn|[from] item: Leftovers
+|-heal|p2a: Tentacruel|226\/363 brn|[from] item: Black Sludge
+|-damage|p1a: Jirachi|173\/404 brn|[from] brn
+|-damage|p2a: Tentacruel|181\/363 brn|[from] brn
+|turn|21
+|
+|move|p1a: Jirachi|Iron Head|p2a: Tentacruel
+|-resisted|p2a: Tentacruel
+|-damage|p2a: Tentacruel|157\/363 brn
+|cant|p2a: Tentacruel|flinch
+|
+|-heal|p1a: Jirachi|375\/404 brn|[from] move: Wish|[wisher] Jirachi
+|-heal|p1a: Jirachi|400\/404 brn|[from] item: Leftovers
+|-heal|p2a: Tentacruel|179\/363 brn|[from] item: Black Sludge
+|-damage|p1a: Jirachi|350\/404 brn|[from] brn
+|-damage|p2a: Tentacruel|134\/363 brn|[from] brn
+|turn|22
+|
+|move|p1a: Jirachi|Wish|p1a: Jirachi
+|move|p2a: Tentacruel|Scald|p1a: Jirachi
+|-damage|p1a: Jirachi|292\/404 brn
+|
+|-heal|p1a: Jirachi|317\/404 brn|[from] item: Leftovers
+|-heal|p2a: Tentacruel|156\/363 brn|[from] item: Black Sludge
+|-damage|p1a: Jirachi|267\/404 brn|[from] brn
+|-damage|p2a: Tentacruel|111\/363 brn|[from] brn
+|turn|23
+|
+|move|p1a: Jirachi|Iron Head|p2a: Tentacruel
+|-resisted|p2a: Tentacruel
+|-damage|p2a: Tentacruel|90\/363 brn
+|move|p2a: Tentacruel|Scald|p1a: Jirachi
+|-damage|p1a: Jirachi|204\/404 brn
+|
+|-heal|p1a: Jirachi|404\/404 brn|[from] move: Wish|[wisher] Jirachi
+|-heal|p2a: Tentacruel|112\/363 brn|[from] item: Black Sludge
+|-damage|p1a: Jirachi|354\/404 brn|[from] brn
+|-damage|p2a: Tentacruel|67\/363 brn|[from] brn
+|turn|24
+|
+|move|p1a: Jirachi|Wish|p1a: Jirachi
+|move|p2a: Tentacruel|Scald|p1a: Jirachi
+|-damage|p1a: Jirachi|297\/404 brn
+|
+|-heal|p1a: Jirachi|322\/404 brn|[from] item: Leftovers
+|-heal|p2a: Tentacruel|89\/363 brn|[from] item: Black Sludge
+|-damage|p1a: Jirachi|272\/404 brn|[from] brn
+|-damage|p2a: Tentacruel|44\/363 brn|[from] brn
+|turn|25
+|
+|switch|p2a: Infernape|Infernape, F|242\/293
+|move|p1a: Jirachi|Body Slam|p2a: Infernape
+|-damage|p2a: Infernape|198\/293
+|-status|p2a: Infernape|par
+|
+|-heal|p1a: Jirachi|404\/404 brn|[from] move: Wish|[wisher] Jirachi
+|-damage|p1a: Jirachi|354\/404 brn|[from] brn
+|turn|26
+|
+|move|p1a: Jirachi|Wish|p1a: Jirachi
+|cant|p2a: Infernape|par
+|
+|-heal|p1a: Jirachi|379\/404 brn|[from] item: Leftovers
+|-damage|p1a: Jirachi|329\/404 brn|[from] brn
+|turn|27
+|
+|switch|p1a: Granbull|Granbull, M|137\/383
+|-damage|p1a: Granbull|90\/383|[from] Spikes
+|-ability|p1a: Granbull|Intimidate|[of] p2a: Infernape
+|-unboost|p2a: Infernape|atk|1
+|move|p2a: Infernape|Flare Blitz|p1a: Granbull
+|-damage|p1a: Granbull|0 fnt
+|-damage|p2a: Infernape|168\/293 par|[from] recoil|[of] p1a: Granbull
+|faint|p1a: Granbull
+|
+|
+|switch|p1a: Nidoking|Nidoking, M, shiny|304\/304
+|-damage|p1a: Nidoking|266\/304|[from] Spikes
+|turn|28
+|
+|switch|p2a: Snorlax|Snorlax, F|461\/461
+|move|p1a: Nidoking|Earth Power|p2a: Snorlax
+|-damage|p2a: Snorlax|356\/461
+|
+|turn|29
+|
+|switch|p1a: Tangrowth|Tangrowth, M|280\/404
+|-damage|p1a: Tangrowth|230\/404|[from] Spikes
+|move|p2a: Snorlax|Earthquake|p1a: Tangrowth
+|-resisted|p1a: Tangrowth
+|-damage|p1a: Tangrowth|182\/404
+|
+|turn|30
+|
+|switch|p2a: Tentacruel|Tentacruel, F|44\/363 brn
+|move|p1a: Tangrowth|Knock Off|p2a: Tentacruel
+|-damage|p2a: Tentacruel|0 fnt
+|-enditem|p2a: Tentacruel|Black Sludge|[from] move: Knock Off|[of] p1a: Tangrowth
+|faint|p2a: Tentacruel
+|
+|
+|switch|p2a: Infernape|Infernape, F|168\/293 par
+|turn|31
+|
+|move|p1a: Tangrowth|Earthquake|p2a: Infernape
+|-supereffective|p2a: Infernape
+|-damage|p2a: Infernape|0 fnt
+|faint|p2a: Infernape
+|
+|
+|switch|p2a: Aerodactyl|Aerodactyl-Mega, F|301\/301
+|turn|32
+|
+|switch|p1a: Jirachi|Jirachi|329\/404 brn
+|-damage|p1a: Jirachi|279\/404 brn|[from] Spikes
+|move|p2a: Aerodactyl|Fire Fang|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|47\/404 brn
+|
+|-heal|p1a: Jirachi|72\/404 brn|[from] item: Leftovers
+|-damage|p1a: Jirachi|22\/404 brn|[from] brn
+|turn|33
+|
+|move|p2a: Aerodactyl|Fire Fang|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|faint|p1a: Jirachi
+|
+|
+|switch|p1a: Tangrowth|Tangrowth, M|316\/404
+|-damage|p1a: Tangrowth|266\/404|[from] Spikes
+|turn|34
+|
+|move|p2a: Aerodactyl|Fire Fang|p1a: Tangrowth
+|-supereffective|p1a: Tangrowth
+|-damage|p1a: Tangrowth|78\/404
+|move|p1a: Tangrowth|Leaf Storm|p2a: Aerodactyl
+|-damage|p2a: Aerodactyl|126\/301
+|-unboost|p1a: Tangrowth|spa|2
+|
+|turn|35
+|
+|move|p2a: Aerodactyl|Fire Fang|p1a: Tangrowth
+|-supereffective|p1a: Tangrowth
+|-damage|p1a: Tangrowth|0 fnt
+|faint|p1a: Tangrowth
+|
+|
+|switch|p1a: Nidoking|Nidoking, M, shiny|266\/304
+|-damage|p1a: Nidoking|228\/304|[from] Spikes
+|turn|36
+|
+|move|p2a: Aerodactyl|Aqua Tail|p1a: Nidoking
+|-supereffective|p1a: Nidoking
+|-damage|p1a: Nidoking|0 fnt
+|faint|p1a: Nidoking
+|
+|
+|switch|p1a: Heracross|Heracross, F, shiny|265\/302
+|-damage|p1a: Heracross|228\/302|[from] Spikes
+|turn|37
+|
+|move|p1a: Heracross|Close Combat|p2a: Aerodactyl
+|-damage|p2a: Aerodactyl|0 fnt
+|-unboost|p1a: Heracross|def|1
+|-unboost|p1a: Heracross|spd|1
+|faint|p2a: Aerodactyl
+|
+|
+|switch|p2a: Snorlax|Snorlax, F|356\/461
+|turn|38
+|
+|move|p1a: Heracross|Close Combat|p2a: Snorlax
+|-supereffective|p2a: Snorlax
+|-damage|p2a: Snorlax|0 fnt
+|-unboost|p1a: Heracross|def|1
+|-unboost|p1a: Heracross|spd|1
+|faint|p2a: Snorlax
+|
+|win|lucky100x
+|raw|Ladder updating...
+|raw|lucky100x's rating: 1341 &rarr; <strong>1353<\/strong><br \/>(+12 for winning)
+|raw|pipas13's rating: 1192 &rarr; <strong>1177<\/strong><br \/>(-15 for losing)
+|leave|pipas13
+|player|p2

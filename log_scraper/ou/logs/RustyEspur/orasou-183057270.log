@@ -1,0 +1,371 @@
+|join|RustyEspur
+|join|paddy>all
+|player|p1|RustyEspur|172
+|player|p2|paddy>all|260
+|gametype|singles
+|gen|6
+|tier|ORAS OU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Mamoswine, F
+|poke|p1|Ditto
+|poke|p1|Scizor, M
+|poke|p1|Latios, M
+|poke|p1|Keldeo
+|poke|p1|Garchomp, F
+|poke|p2|Breloom, F
+|poke|p2|Clefable, F
+|poke|p2|Greninja, M
+|poke|p2|Heatran, M
+|poke|p2|Landorus-Therian, M
+|poke|p2|Sableye, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Keldeo|Keldeo|323\/323
+|switch|p2a: Sableye|Sableye, F|304\/304
+|turn|1
+|
+|move|p1a: Keldeo|Scald|p2a: Sableye
+|-damage|p2a: Sableye|129\/304
+|move|p2a: Sableye|Knock Off|p1a: Keldeo
+|-resisted|p1a: Keldeo
+|-damage|p1a: Keldeo|274\/323
+|-boost|p1a: Keldeo|atk|1|[from] ability: Justified
+|-enditem|p1a: Keldeo|Expert Belt|[from] move: Knock Off|[of] p2a: Sableye
+|
+|turn|2
+|
+|switch|p2a: Clefable|Clefable, F|394\/394
+|move|p1a: Keldeo|Scald|p2a: Clefable
+|-damage|p2a: Clefable|264\/394
+|-status|p2a: Clefable|brn
+|
+|turn|3
+|
+|switch|p1a: Scizor|Scizor, M|343\/343
+|move|p2a: Clefable|Flamethrower|p1a: Scizor
+|-supereffective|p1a: Scizor
+|-damage|p1a: Scizor|21\/343
+|
+|turn|4
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|337\/337
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Scizor
+|-unboost|p1a: Scizor|atk|1
+|detailschange|p1a: Scizor|Scizor-Mega, M
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|193\/343
+|
+|turn|5
+|
+|move|p2a: Landorus-Therian|U-turn|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|157\/343
+|
+|switch|p2a: Heatran|Heatran, M|385\/385
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|329\/343
+|
+|turn|6
+|
+|switch|p1a: Ifightformyfrens|Mamoswine, F|361\/361
+|move|p2a: Heatran|Lava Plume|p1a: Ifightformyfrens
+|-supereffective|p1a: Ifightformyfrens
+|-damage|p1a: Ifightformyfrens|173\/361
+|
+|turn|7
+|
+|move|p1a: Ifightformyfrens|Icicle Crash|p2a: Heatran
+|-crit|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|307\/385
+|-damage|p1a: Ifightformyfrens|137\/361|[from] item: Life Orb
+|move|p2a: Heatran|Lava Plume|p1a: Ifightformyfrens
+|-supereffective|p1a: Ifightformyfrens
+|-damage|p1a: Ifightformyfrens|0 fnt
+|faint|p1a: Ifightformyfrens
+|
+|-heal|p2a: Heatran|331\/385|[from] item: Leftovers
+|
+|switch|p1a: Keldeo|Keldeo|274\/323
+|turn|8
+|
+|switch|p2a: Clefable|Clefable, F|264\/394 brn
+|move|p1a: Keldeo|Hydro Pump|p2a: Clefable
+|-damage|p2a: Clefable|84\/394 brn
+|
+|turn|9
+|join|Rates
+|
+|move|p1a: Keldeo|Scald|p2a: Clefable
+|-damage|p2a: Clefable|0 fnt
+|faint|p2a: Clefable
+|
+|
+|switch|p2a: Breloom|Breloom, F|289\/289
+|turn|10
+|
+|switch|p1a: Ditto|Ditto|300\/300
+|-transform|p1a: Ditto|p2a: Breloom
+|move|p2a: Breloom|Spore|p1a: Ditto
+|-fail|p1a: Ditto
+|
+|-status|p2a: Breloom|tox|[from] item: Toxic Orb
+|turn|11
+|
+|move|p1a: Ditto|Drain Punch|p2a: Breloom
+|-damage|p2a: Breloom|109\/289 tox
+|move|p2a: Breloom|Substitute|p2a: Breloom
+|-start|p2a: Breloom|Substitute
+|-damage|p2a: Breloom|37\/289 tox
+|
+|-heal|p2a: Breloom|73\/289 tox|[from] ability: Poison Heal
+|turn|12
+|
+|move|p2a: Breloom|Drain Punch|p1a: Ditto
+|-damage|p1a: Ditto|126\/300
+|-heal|p2a: Breloom|160\/289 tox|[from] drain|[of] p1a: Ditto
+|move|p1a: Ditto|Drain Punch|p2a: Breloom
+|-end|p2a: Breloom|Substitute
+|-heal|p1a: Ditto|162\/300|[from] drain|[of] p2a: Breloom
+|
+|-heal|p2a: Breloom|196\/289 tox|[from] ability: Poison Heal
+|turn|13
+|
+|move|p2a: Breloom|Drain Punch|p1a: Ditto
+|-damage|p1a: Ditto|0 fnt
+|-heal|p2a: Breloom|277\/289 tox|[from] drain|[of] p1a: Ditto
+|faint|p1a: Ditto
+|
+|-heal|p2a: Breloom|289\/289 tox|[from] ability: Poison Heal
+|
+|switch|p1a: Latios|Latios, M|301\/301
+|turn|14
+|
+|switch|p2a: Heatran|Heatran, M|331\/385
+|move|p1a: Latios|Psyshock|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|249\/385
+|-damage|p1a: Latios|271\/301|[from] item: Life Orb
+|
+|-heal|p2a: Heatran|273\/385|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Latios|Earthquake|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|-damage|p1a: Latios|241\/301|[from] item: Life Orb
+|faint|p2a: Heatran
+|
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|337\/337
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Latios
+|-unboost|p1a: Latios|atk|1
+|turn|16
+|
+|switch|p1a: Scizor|Scizor-Mega, M|329\/343
+|move|p2a: Landorus-Therian|U-turn|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|298\/343
+|
+|switch|p2a: Sableye|Sableye, F|129\/304
+|
+|turn|17
+|
+|switch|p1a: Keldeo|Keldeo|274\/323
+|detailschange|p2a: Sableye|Sableye-Mega, F
+|message|Sableye has Mega Evolved into Mega Sableye!
+|move|p2a: Sableye|Will-O-Wisp|p1a: Keldeo
+|-status|p1a: Keldeo|brn
+|
+|-damage|p1a: Keldeo|234\/323 brn|[from] brn
+|turn|18
+|
+|switch|p2a: Breloom|Breloom, F|289\/289 tox
+|move|p1a: Keldeo|Hydro Pump|p2a: Breloom
+|-resisted|p2a: Breloom
+|-damage|p2a: Breloom|152\/289 tox
+|
+|-damage|p1a: Keldeo|194\/323 brn|[from] brn
+|-heal|p2a: Breloom|188\/289 tox|[from] ability: Poison Heal
+|turn|19
+|
+|move|p1a: Keldeo|Icy Wind|p2a: Breloom
+|-supereffective|p2a: Breloom
+|-damage|p2a: Breloom|0 fnt
+|faint|p2a: Breloom
+|
+|-damage|p1a: Keldeo|154\/323 brn|[from] brn
+|
+|switch|p2a: Greninja|Greninja, M|285\/285
+|turn|20
+|
+|switch|p1a: Latios|Latios, M|241\/301
+|move|p2a: Greninja|U-turn|p1a: Latios
+|-start|p2a: Greninja|typechange|Bug|[from] Protean
+|-supereffective|p1a: Latios
+|-damage|p1a: Latios|49\/301
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|337\/337
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Latios
+|-unboost|p1a: Latios|atk|1
+|
+|turn|21
+|
+|move|p2a: Landorus-Therian|U-turn|p1a: Latios
+|-supereffective|p1a: Latios
+|-damage|p1a: Latios|0 fnt
+|faint|p1a: Latios
+|
+|switch|p2a: Greninja|Greninja, M|285\/285
+|
+|
+|switch|p1a: Garchomp|Garchomp, F|358\/358
+|turn|22
+|
+|move|p2a: Greninja|Ice Beam|p1a: Garchomp
+|-start|p2a: Greninja|typechange|Ice|[from] Protean
+|-supereffective|p1a: Garchomp
+|-enditem|p1a: Garchomp|Focus Sash
+|-damage|p1a: Garchomp|1\/358
+|move|p1a: Garchomp|Outrage|p2a: Greninja
+|-damage|p2a: Greninja|0 fnt
+|faint|p2a: Greninja
+|
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|337\/337
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Garchomp
+|-unboost|p1a: Garchomp|atk|1
+|turn|23
+|
+|move|p2a: Landorus-Therian|U-turn|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|-damage|p2a: Landorus-Therian|295\/337|[from] ability: Rough Skin|[of] p1a: Garchomp
+|faint|p1a: Garchomp
+|
+|switch|p2a: Sableye|Sableye-Mega, F|129\/304
+|
+|
+|switch|p1a: Keldeo|Keldeo|154\/323 brn
+|turn|24
+|
+|move|p1a: Keldeo|Hydro Pump|p2a: Sableye
+|-damage|p2a: Sableye|0 fnt
+|faint|p2a: Sableye
+|
+|-damage|p1a: Keldeo|114\/323 brn|[from] brn
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|295\/337
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Keldeo
+|-unboost|p1a: Keldeo|atk|1
+|turn|25
+|
+|move|p2a: Landorus-Therian|Earthquake|p1a: Keldeo
+|-damage|p1a: Keldeo|0 fnt
+|faint|p1a: Keldeo
+|
+|
+|switch|p1a: Scizor|Scizor-Mega, M|298\/343
+|turn|26
+|
+|move|p2a: Landorus-Therian|Earthquake|p1a: Scizor
+|-damage|p1a: Scizor|157\/343
+|move|p1a: Scizor|Swords Dance|p1a: Scizor
+|-boost|p1a: Scizor|atk|2
+|
+|turn|27
+|c|âpaddy>all|bg
+|
+|move|p2a: Landorus-Therian|Earthquake|p1a: Scizor
+|-damage|p1a: Scizor|3\/343
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|175\/343
+|
+|turn|28
+|c|âRustyEspur|gb
+|c|âRustyEspur|bb
+|
+|move|p2a: Landorus-Therian|Earthquake|p1a: Scizor
+|-damage|p1a: Scizor|18\/343
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|190\/343
+|
+|turn|29
+|
+|move|p2a: Landorus-Therian|Earthquake|p1a: Scizor
+|-damage|p1a: Scizor|48\/343
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|220\/343
+|
+|turn|30
+|
+|move|p2a: Landorus-Therian|Earthquake|p1a: Scizor
+|-damage|p1a: Scizor|79\/343
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|251\/343
+|
+|turn|31
+|
+|move|p2a: Landorus-Therian|Earthquake|p1a: Scizor
+|-crit|p1a: Scizor
+|-damage|p1a: Scizor|22\/343
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|194\/343
+|
+|turn|32
+|
+|move|p2a: Landorus-Therian|Earthquake|p1a: Scizor
+|-damage|p1a: Scizor|55\/343
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|227\/343
+|
+|turn|33
+|
+|move|p2a: Landorus-Therian|Earthquake|p1a: Scizor
+|-damage|p1a: Scizor|70\/343
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|242\/343
+|
+|turn|34
+|
+|move|p2a: Landorus-Therian|Earthquake|p1a: Scizor
+|-damage|p1a: Scizor|109\/343
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|281\/343
+|
+|turn|35
+|
+|move|p2a: Landorus-Therian|Earthquake|p1a: Scizor
+|-damage|p1a: Scizor|127\/343
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|299\/343
+|
+|turn|36
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|49\/337
+|move|p2a: Landorus-Therian|Earthquake|p1a: Scizor
+|-damage|p1a: Scizor|160\/343
+|
+|turn|37
+|c|âpaddy>all|you made ass plays all battle and won by hax
+|c|âpaddy>all|good player
+|-message|paddy>all forfeited.
+|
+|win|RustyEspur
+|raw|Ladder updating...
+|raw|RustyEspur's rating: 1473 &rarr; <strong>1492<\/strong><br \/>(+19 for winning)
+|raw|paddy&gt;all's rating: 1447 &rarr; <strong>1428<\/strong><br \/>(-19 for losing)
+|leave|paddy>all
+|player|p2

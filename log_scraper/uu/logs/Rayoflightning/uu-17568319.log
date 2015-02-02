@@ -1,0 +1,256 @@
+|join|Rayoflightning
+|join|91827lDragon
+|player|p1|Rayoflightning|2
+|player|p2|91827lDragon|169
+|gametype|singles
+|tier|UU
+|rated
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Blastoise, M
+|poke|p1|Magneton
+|poke|p1|Crobat, F
+|poke|p1|Piloswine, F
+|poke|p1|Darmanitan, F
+|poke|p1|Shaymin
+|poke|p2|Azelf
+|poke|p2|Swampert, M
+|poke|p2|Galvantula, F
+|poke|p2|Ferroseed, F
+|poke|p2|Xatu, M
+|poke|p2|Venomoth, F
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Crobat|Crobat, F|311\/311
+|switch|p2a: Azelf|Azelf|291\/291
+|turn|1
+|callback|decision
+|
+|move|p2a: Azelf|Psychic|p1a: Crobat
+|-supereffective|p1a: Crobat
+|-damage|p1a: Crobat|0 fnt
+|faint|p1a: Crobat
+|
+|callback|decision
+|
+|switch|p1a: Magneton|Magneton|294\/294
+|turn|2
+|callback|decision
+|
+|switch|p2a: Swampert|Swampert, M|404\/404
+|switch|p1a: Darmanitan|Darmanitan, F|351\/351
+|
+|turn|3
+|callback|decision
+|
+|move|p1a: Darmanitan|U-turn|p2a: Swampert
+|-damage|p2a: Swampert|305\/404
+|callback|decision
+|
+|switch|p1a: Shaymin|Shaymin|341\/341
+|move|p2a: Swampert|Earthquake|p1a: Shaymin
+|-resisted|p1a: Shaymin
+|-damage|p1a: Shaymin|213\/341
+|
+|turn|4
+|callback|decision
+|
+|switch|p2a: Xatu|Xatu, M|334\/334
+|move|p1a: Shaymin|Seed Flare|p2a: Xatu
+|-resisted|p2a: Xatu
+|-damage|p2a: Xatu|171\/334
+|-damage|p1a: Shaymin|179\/341|[from] item: Life Orb
+|
+|-heal|p2a: Xatu|191\/334|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1a: Piloswine|Piloswine, F|404\/404
+|move|p2a: Xatu|Roost|p2a: Xatu
+|-heal|p2a: Xatu|334\/334
+|
+|turn|6
+|callback|decision
+|
+|switch|p2a: Ferroseed|Ferroseed, F|292\/292
+|move|p1a: Piloswine|Icicle Spear|p2a: Ferroseed
+|-damage|p2a: Ferroseed|270\/292
+|-damage|p2a: Ferroseed|248\/292
+|-damage|p2a: Ferroseed|226\/292
+|-damage|p2a: Ferroseed|204\/292
+|-hitcount|p2a: Ferroseed|4
+|
+|turn|7
+|callback|decision
+|
+|switch|p2a: Swampert|Swampert, M|305\/404
+|move|p1a: Piloswine|Stealth Rock|p2a: Swampert
+|-sidestart|p2: 91827lDragon|move: Stealth Rock
+|
+|turn|8
+|callback|decision
+|
+|switch|p1a: Shaymin|Shaymin|179\/341
+|move|p2a: Swampert|Superpower|p1a: Shaymin
+|-damage|p1a: Shaymin|0 fnt
+|-unboost|p2a: Swampert|atk|1
+|-unboost|p2a: Swampert|def|1
+|faint|p1a: Shaymin
+|
+|callback|decision
+|
+|switch|p1a: Piloswine|Piloswine, F|404\/404
+|turn|9
+|callback|decision
+|
+|move|p2a: Swampert|Superpower|p1a: Piloswine
+|-supereffective|p1a: Piloswine
+|-damage|p1a: Piloswine|172\/404
+|-unboost|p2a: Swampert|atk|1
+|-unboost|p2a: Swampert|def|1
+|move|p1a: Piloswine|Earthquake|p2a: Swampert
+|-damage|p2a: Swampert|0 fnt
+|faint|p2a: Swampert
+|
+|callback|decision
+|
+|switch|p2a: Venomoth|Venomoth, F|344\/344
+|-damage|p2a: Venomoth|258\/344|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|move|p1a: Piloswine|Ice Shard|p2a: Venomoth
+|-damage|p2a: Venomoth|161\/344
+|move|p2a: Venomoth|Quiver Dance|p2a: Venomoth
+|-boost|p2a: Venomoth|spa|1
+|-boost|p2a: Venomoth|spd|1
+|-boost|p2a: Venomoth|spe|1
+|
+|-heal|p2a: Venomoth|182\/344|[from] item: Black Sludge
+|turn|11
+|callback|decision
+|
+|move|p2a: Venomoth|Bug Buzz|p1a: Piloswine
+|-damage|p1a: Piloswine|31\/404
+|move|p1a: Piloswine|Icicle Spear|p2a: Venomoth
+|-damage|p2a: Venomoth|122\/344
+|-damage|p2a: Venomoth|62\/344
+|-damage|p2a: Venomoth|4\/344
+|-damage|p2a: Venomoth|0 fnt
+|-hitcount|p2a: Venomoth|4
+|faint|p2a: Venomoth
+|
+|callback|decision
+|
+|switch|p2a: Galvantula|Galvantula, F|281\/281
+|-damage|p2a: Galvantula|211\/281|[from] Stealth Rock
+|turn|12
+|callback|decision
+|
+|move|p1a: Piloswine|Ice Shard|p2a: Galvantula
+|-damage|p2a: Galvantula|106\/281
+|move|p2a: Galvantula|Giga Drain|p1a: Piloswine
+|-supereffective|p1a: Piloswine
+|-damage|p1a: Piloswine|0 fnt
+|-heal|p2a: Galvantula|122\/281|[from] drain|[of] p1a: Piloswine
+|faint|p1a: Piloswine
+|
+|callback|decision
+|
+|switch|p1a: Magneton|Magneton|294\/294
+|turn|13
+|callback|decision
+|
+|move|p2a: Galvantula|Thunder|p1a: Magneton
+|-resisted|p1a: Magneton
+|-damage|p1a: Magneton|212\/294
+|move|p1a: Magneton|Hidden Power|p2a: Galvantula
+|-crit|p2a: Galvantula
+|-damage|p2a: Galvantula|0 fnt
+|faint|p2a: Galvantula
+|
+|callback|decision
+|
+|switch|p2a: Azelf|Azelf|291\/291
+|-damage|p2a: Azelf|255\/291|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M|362\/362
+|move|p2a: Azelf|Fire Blast|p1a: Blastoise
+|-resisted|p1a: Blastoise
+|-damage|p1a: Blastoise|288\/362
+|
+|-heal|p1a: Blastoise|310\/362|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|switch|p2a: Ferroseed|Ferroseed, F|204\/292
+|-damage|p2a: Ferroseed|186\/292|[from] Stealth Rock
+|move|p1a: Blastoise|Roar|p2a: Ferroseed
+|drag|p2a: Azelf|Azelf|255\/291
+|-damage|p2a: Azelf|219\/291|[from] Stealth Rock
+|
+|-heal|p1a: Blastoise|332\/362|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p2a: Azelf|Thunderbolt|p1a: Blastoise
+|-supereffective|p1a: Blastoise
+|-damage|p1a: Blastoise|80\/362
+|move|p1a: Blastoise|Scald|p2a: Azelf
+|-damage|p2a: Azelf|66\/291
+|-status|p2a: Azelf|brn
+|
+|-heal|p1a: Blastoise|102\/362|[from] item: Leftovers
+|-damage|p2a: Azelf|30\/291 brn|[from] brn
+|turn|17
+|callback|decision
+|
+|move|p2a: Azelf|Thunderbolt|p1a: Blastoise
+|-supereffective|p1a: Blastoise
+|-damage|p1a: Blastoise|0 fnt
+|faint|p1a: Blastoise
+|
+|-damage|p2a: Azelf|0 fnt|[from] brn
+|faint|p2a: Azelf
+|callback|decision
+|
+|switch|p1a: Darmanitan|Darmanitan, F|351\/351
+|switch|p2a: Xatu|Xatu, M|334\/334
+|-damage|p2a: Xatu|251\/334|[from] Stealth Rock
+|turn|18
+|callback|decision
+|chat|91827lDragon|gg
+|chat|Rayoflightning|gg
+|
+|move|p1a: Darmanitan|Flare Blitz|p2a: Xatu
+|-damage|p2a: Xatu|0 fnt
+|-damage|p1a: Darmanitan|268\/351|[from] recoil|[of] p2a: Xatu
+|faint|p2a: Xatu
+|
+|callback|decision
+|
+|switch|p2a: Ferroseed|Ferroseed, F|186\/292
+|-damage|p2a: Ferroseed|168\/292|[from] Stealth Rock
+|turn|19
+|callback|decision
+|
+|move|p1a: Darmanitan|Flare Blitz|p2a: Ferroseed
+|-supereffective|p2a: Ferroseed
+|-damage|p2a: Ferroseed|0 fnt
+|-damage|p1a: Darmanitan|213\/351|[from] recoil|[of] p2a: Ferroseed
+|-damage|p1a: Darmanitan|170\/351|[from] ability: Iron Barbs|[of] p2a: Ferroseed
+|faint|p2a: Ferroseed
+|
+|win|Rayoflightning
+|raw|Ladder updating...
+|raw|Rayoflightning's rating: 1687 &rarr; <strong>1693<\/strong><br \/>(+6 for winning)
+|raw|91827lDragon's rating: 1536 &rarr; <strong>1534<\/strong><br \/>(-2 for losing)

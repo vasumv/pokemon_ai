@@ -1,0 +1,401 @@
+|join|Uncle Wiseau
+|join|lolrus
+|player|p1|Uncle Wiseau|2
+|player|p2|lolrus|47
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|clearpoke
+|poke|p1|Smeargle, M
+|poke|p1|Ditto
+|poke|p1|Blastoise, M
+|poke|p1|Tangrowth, F
+|poke|p1|Rotom-Heat
+|poke|p1|Heracross, M
+|poke|p2|Absol, M
+|poke|p2|Slowking, F
+|poke|p2|Rotom-Heat
+|poke|p2|Gligar, M
+|poke|p2|Virizion
+|poke|p2|Metagross
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Ditto|Ditto|300\/300
+|switch|p2a: Absol|Absol, M|271\/271
+|-transform|p1a: Ditto|p2a: Absol
+|turn|1
+|
+|switch|p1a: Smeargle|Smeargle, M|314\/314
+|switch|p2a: Rotom-Heat|Rotom-Heat|241\/241
+|
+|turn|2
+|
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Smeargle
+|-damage|p1a: Smeargle|121\/314
+|
+|switch|p2a: Virizion|Virizion|324\/324
+|move|p1a: Smeargle|Stealth Rock|p2a: Virizion
+|-sidestart|p2: lolrus|move: Stealth Rock
+|
+|turn|3
+|
+|switch|p1a: Tangrowth|Tangrowth, F|404\/404
+|move|p2a: Virizion|Substitute|p2a: Virizion
+|-start|p2a: Virizion|Substitute
+|-damage|p2a: Virizion|243\/324
+|
+|-heal|p2a: Virizion|263\/324|[from] item: Leftovers
+|turn|4
+|
+|move|p2a: Virizion|Close Combat|p1a: Tangrowth
+|-damage|p1a: Tangrowth|277\/404
+|-unboost|p2a: Virizion|def|1
+|-unboost|p2a: Virizion|spd|1
+|move|p1a: Tangrowth|Sludge Bomb|p2a: Virizion
+|-supereffective|p2a: Virizion
+|-end|p2a: Virizion|Substitute
+|
+|-heal|p2a: Virizion|283\/324|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Gligar|Gligar, M|334\/334
+|-damage|p2a: Gligar|293\/334|[from] Stealth Rock
+|move|p1a: Tangrowth|Knock Off|p2a: Gligar
+|-damage|p2a: Gligar|255\/334
+|-enditem|p2a: Gligar|Eviolite|[from] move: Knock Off|[of] p1a: Tangrowth
+|
+|turn|6
+|
+|switch|p1a: Blastoise|Blastoise, M|362\/362
+|move|p2a: Gligar|Toxic|p1a: Blastoise
+|-status|p1a: Blastoise|tox
+|
+|-damage|p1a: Blastoise|340\/362 tox|[from] psn
+|turn|7
+|
+|switch|p2a: Virizion|Virizion|283\/324
+|-damage|p2a: Virizion|263\/324|[from] Stealth Rock
+|-formechange|p1a: Blastoise|Blastoise-Mega
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p1a: Blastoise|Aura Sphere|p2a: Virizion
+|-damage|p2a: Virizion|128\/324
+|
+|-heal|p2a: Virizion|148\/324|[from] item: Leftovers
+|-damage|p1a: Blastoise|296\/362 tox|[from] psn
+|turn|8
+|
+|switch|p2a: Gligar|Gligar, M|255\/334
+|-damage|p2a: Gligar|214\/334|[from] Stealth Rock
+|switch|p1a: Tangrowth|Tangrowth, F|404\/404
+|
+|turn|9
+|
+|switch|p1a: Heracross|Heracross, M|302\/302
+|move|p2a: Gligar|Defog|p1a: Heracross
+|-unboost|p1a: Heracross|evasion|1
+|-sideend|p2: lolrus|Stealth Rock|[from] move: Defog|[of] p2a: Gligar
+|
+|turn|10
+|
+|move|p1a: Heracross|Substitute|p1a: Heracross
+|-start|p1a: Heracross|Substitute
+|-damage|p1a: Heracross|227\/302
+|move|p2a: Gligar|Roost|p2a: Gligar
+|-heal|p2a: Gligar|334\/334
+|
+|-heal|p1a: Heracross|245\/302|[from] item: Leftovers
+|turn|11
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|241\/241
+|move|p1a: Heracross|Stone Edge|p2a: Rotom-Heat
+|-supereffective|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|3\/241
+|
+|-heal|p1a: Heracross|263\/302|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Heracross
+|-end|p1a: Heracross|Substitute
+|
+|switch|p2a: Metagross|Metagross|364\/364
+|move|p1a: Heracross|Close Combat|p2a: Metagross
+|-damage|p2a: Metagross|223\/364
+|-unboost|p1a: Heracross|def|1
+|-unboost|p1a: Heracross|spd|1
+|
+|-heal|p1a: Heracross|281\/302|[from] item: Leftovers
+|-heal|p2a: Metagross|245\/364|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: Tangrowth|Tangrowth, F|404\/404
+|move|p2a: Metagross|Stealth Rock|p1a: Tangrowth
+|-sidestart|p1: Uncle Wiseau|move: Stealth Rock
+|
+|-heal|p2a: Metagross|267\/364|[from] item: Leftovers
+|turn|14
+|
+|switch|p2a: Gligar|Gligar, M|334\/334
+|move|p1a: Tangrowth|Knock Off|p2a: Gligar
+|-damage|p2a: Gligar|296\/334
+|
+|turn|15
+|
+|switch|p1a: Blastoise|Blastoise, M|296\/362 tox
+|-formechange|p1a: Blastoise|Blastoise-Mega
+|-damage|p1a: Blastoise|251\/362 tox|[from] Stealth Rock
+|move|p2a: Gligar|Toxic|p1a: Blastoise
+|-fail|p1a: Blastoise|tox
+|
+|-damage|p1a: Blastoise|229\/362 tox|[from] psn
+|turn|16
+|
+|switch|p2a: Slowking|Slowking, F|394\/394
+|move|p1a: Blastoise|Rapid Spin|p2a: Slowking
+|-damage|p2a: Slowking|378\/394
+|-sideend|p1: Uncle Wiseau|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Blastoise
+|
+|-damage|p1a: Blastoise|185\/362 tox|[from] psn
+|turn|17
+|
+|switch|p1a: Heracross|Heracross, M|281\/302
+|move|p2a: Slowking|Scald|p1a: Heracross
+|-damage|p1a: Heracross|181\/302
+|-status|p1a: Heracross|brn
+|
+|-heal|p1a: Heracross|199\/302 brn|[from] item: Leftovers
+|-damage|p1a: Heracross|162\/302 brn|[from] brn
+|turn|18
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|3\/241
+|move|p1a: Heracross|Megahorn|p2a: Rotom-Heat|[miss]
+|-miss|p1a: Heracross|p2a: Rotom-Heat
+|
+|-heal|p1a: Heracross|180\/302 brn|[from] item: Leftovers
+|-damage|p1a: Heracross|143\/302 brn|[from] brn
+|turn|19
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|241\/241
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Rotom-Heat
+|-resisted|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|190\/241
+|
+|switch|p2a: Slowking|Slowking, F|394\/394
+|
+|turn|20
+|
+|switch|p2a: Gligar|Gligar, M|296\/334
+|move|p1a: Rotom-Heat|Volt Switch|p2a: Gligar
+|-immune|p2a: Gligar|[msg]
+|
+|turn|21
+|
+|switch|p1a: Smeargle|Smeargle, M|121\/314
+|move|p2a: Gligar|Toxic|p1a: Smeargle
+|-status|p1a: Smeargle|tox
+|
+|-damage|p1a: Smeargle|102\/314 tox|[from] psn
+|turn|22
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|3\/241
+|move|p1a: Smeargle|Stealth Rock|p2a: Rotom-Heat
+|-sidestart|p2: lolrus|move: Stealth Rock
+|
+|-damage|p1a: Smeargle|64\/314 tox|[from] psn
+|turn|23
+|
+|switch|p1a: Ditto|Ditto|300\/300
+|-transform|p1a: Ditto|p2a: Rotom-Heat
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Ditto
+|-resisted|p1a: Ditto
+|-damage|p1a: Ditto|245\/300
+|
+|switch|p2a: Slowking|Slowking, F|394\/394
+|-damage|p2a: Slowking|345\/394|[from] Stealth Rock
+|
+|turn|24
+|
+|move|p1a: Ditto|Overheat|p2a: Slowking
+|-resisted|p2a: Slowking
+|-damage|p2a: Slowking|300\/394
+|-unboost|p1a: Ditto|spa|2
+|move|p2a: Slowking|Scald|p1a: Ditto
+|-supereffective|p1a: Ditto
+|-damage|p1a: Ditto|39\/300
+|
+|turn|25
+|
+|switch|p1a: Tangrowth|Tangrowth, F|404\/404
+|move|p2a: Slowking|Scald|p1a: Tangrowth
+|-resisted|p1a: Tangrowth
+|-damage|p1a: Tangrowth|366\/404
+|
+|turn|26
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|190\/241
+|switch|p2a: Gligar|Gligar, M|296\/334
+|-damage|p2a: Gligar|255\/334|[from] Stealth Rock
+|
+|turn|27
+|
+|move|p1a: Rotom-Heat|Thunderbolt|p2a: Gligar
+|-immune|p2a: Gligar|[msg]
+|move|p2a: Gligar|Roost|p2a: Gligar
+|-heal|p2a: Gligar|334\/334
+|
+|turn|28
+|
+|switch|p1a: Smeargle|Smeargle, M|64\/314 tox
+|move|p2a: Gligar|Defog|p1a: Smeargle
+|-unboost|p1a: Smeargle|evasion|1
+|-sideend|p2: lolrus|Stealth Rock|[from] move: Defog|[of] p2a: Gligar
+|
+|-damage|p1a: Smeargle|45\/314 tox|[from] psn
+|turn|29
+|
+|move|p1a: Smeargle|Stealth Rock|p2a: Gligar
+|-sidestart|p2: lolrus|move: Stealth Rock
+|move|p2a: Gligar|Defog|p1a: Smeargle
+|-unboost|p1a: Smeargle|evasion|1
+|-sideend|p2: lolrus|Stealth Rock|[from] move: Defog|[of] p2a: Gligar
+|
+|-damage|p1a: Smeargle|7\/314 tox|[from] psn
+|turn|30
+|
+|move|p1a: Smeargle|Spore|p2a: Gligar
+|-status|p2a: Gligar|slp
+|cant|p2a: Gligar|slp
+|
+|-damage|p1a: Smeargle|0 fnt|[from] psn
+|faint|p1a: Smeargle
+|
+|switch|p1a: Blastoise|Blastoise, M|185\/362 tox
+|-formechange|p1a: Blastoise|Blastoise-Mega
+|turn|31
+|
+|switch|p2a: Slowking|Slowking, F|394\/394
+|move|p1a: Blastoise|Dark Pulse|p2a: Slowking
+|-supereffective|p2a: Slowking
+|-damage|p2a: Slowking|246\/394
+|
+|-damage|p1a: Blastoise|163\/362 tox|[from] psn
+|turn|32
+|
+|move|p1a: Blastoise|Dark Pulse|p2a: Slowking
+|-supereffective|p2a: Slowking
+|-damage|p2a: Slowking|82\/394
+|move|p2a: Slowking|Psychic|p1a: Blastoise
+|-damage|p1a: Blastoise|57\/362 tox
+|
+|-damage|p1a: Blastoise|13\/362 tox|[from] psn
+|turn|33
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|3\/241
+|move|p1a: Blastoise|Water Pulse|p2a: Rotom-Heat
+|-supereffective|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|0 fnt
+|faint|p2a: Rotom-Heat
+|
+|-damage|p1a: Blastoise|0 fnt|[from] psn
+|faint|p1a: Blastoise
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|190\/241
+|switch|p2a: Gligar|Gligar, M|334\/334 slp
+|turn|34
+|
+|move|p1a: Rotom-Heat|Trick|p2a: Gligar
+|-activate|p1a: Rotom-Heat|move: Trick|[of] p2a: Gligar
+|-item|p2a: Gligar|Choice Scarf|[from] move: Trick
+|-curestatus|p2a: Gligar|slp
+|move|p2a: Gligar|Toxic|p1a: Rotom-Heat
+|-status|p1a: Rotom-Heat|tox
+|
+|-damage|p1a: Rotom-Heat|175\/241 tox|[from] psn
+|turn|35
+|
+|switch|p1a: Ditto|Ditto|39\/300
+|-transform|p1a: Ditto|p2a: Gligar
+|switch|p2a: Slowking|Slowking, F|213\/394
+|
+|turn|36
+|
+|switch|p2a: Metagross|Metagross|267\/364
+|move|p1a: Ditto|Toxic|p2a: Metagross
+|-fail|p2a: Metagross
+|
+|-heal|p2a: Metagross|289\/364|[from] item: Leftovers
+|turn|37
+|
+|switch|p1a: Tangrowth|Tangrowth, F|404\/404
+|move|p2a: Metagross|Stealth Rock|p1a: Tangrowth
+|-sidestart|p1: Uncle Wiseau|move: Stealth Rock
+|
+|-heal|p2a: Metagross|311\/364|[from] item: Leftovers
+|turn|38
+|
+|switch|p2a: Gligar|Gligar, M|334\/334
+|move|p1a: Tangrowth|Sludge Bomb|p2a: Gligar
+|-resisted|p2a: Gligar
+|-damage|p2a: Gligar|281\/334
+|
+|turn|39
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|175\/241 tox
+|-damage|p1a: Rotom-Heat|115\/241 tox|[from] Stealth Rock
+|move|p2a: Gligar|Toxic|p1a: Rotom-Heat
+|-fail|p1a: Rotom-Heat|tox
+|
+|-damage|p1a: Rotom-Heat|100\/241 tox|[from] psn
+|turn|40
+|
+|switch|p2a: Slowking|Slowking, F|344\/394
+|move|p1a: Rotom-Heat|Thunderbolt|p2a: Slowking
+|-supereffective|p2a: Slowking
+|-damage|p2a: Slowking|212\/394
+|
+|-damage|p1a: Rotom-Heat|70\/241 tox|[from] psn
+|turn|41
+|
+|switch|p2a: Gligar|Gligar, M|281\/334
+|move|p1a: Rotom-Heat|Thunderbolt|p2a: Gligar
+|-immune|p2a: Gligar|[msg]
+|
+|-damage|p1a: Rotom-Heat|25\/241 tox|[from] psn
+|turn|42
+|
+|switch|p2a: Slowking|Slowking, F|343\/394
+|move|p1a: Rotom-Heat|Overheat|p2a: Slowking
+|-resisted|p2a: Slowking
+|-damage|p2a: Slowking|295\/394
+|-unboost|p1a: Rotom-Heat|spa|2
+|
+|-damage|p1a: Rotom-Heat|0 fnt|[from] psn
+|faint|p1a: Rotom-Heat
+|
+|switch|p1a: Heracross|Heracross, M|143\/302 brn
+|-damage|p1a: Heracross|106\/302 brn|[from] Stealth Rock
+|turn|43
+|
+|switch|p2a: Gligar|Gligar, M|281\/334
+|move|p1a: Heracross|Stone Edge|p2a: Gligar|[miss]
+|-miss|p1a: Heracross|p2a: Gligar
+|
+|-heal|p1a: Heracross|124\/302 brn|[from] item: Leftovers
+|-damage|p1a: Heracross|87\/302 brn|[from] brn
+|turn|44
+|-message|Uncle Wiseau forfeited.
+|
+|win|lolrus
+|raw|Ladder updating...
+|leave|Uncle Wiseau
+|player|p1
+|raw|Uncle Wiseau's rating: 1380 &rarr; <strong>1354<\/strong><br \/>(-26 for losing)
+|raw|lolrus's rating: 1273 &rarr; <strong>1305<\/strong><br \/>(+32 for winning)

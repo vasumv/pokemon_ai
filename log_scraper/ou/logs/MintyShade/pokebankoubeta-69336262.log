@@ -1,0 +1,291 @@
+|join|Super cinoS
+|join|MintyShade
+|player|p1|Super cinoS|102
+|player|p2|MintyShade|169
+|gametype|singles
+|tier|Pokebank OU (beta)
+|rated
+|clearpoke
+|poke|p1|Deoxys-Defense
+|poke|p1|Aegislash, F
+|poke|p1|Rotom-Wash
+|poke|p1|Scizor, F
+|poke|p1|Kangaskhan, F
+|poke|p1|Landorus-Therian, M
+|poke|p2|Empoleon, M
+|poke|p2|Rotom-Heat
+|poke|p2|Roserade, F
+|poke|p2|Jirachi
+|poke|p2|Salamence, F
+|poke|p2|Infernape, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Deoxys-Defense|Deoxys-Defense|304\/304
+|switch|p2a: Jirachi|Jirachi|341\/341
+|-ability|p1a: Deoxys-Defense|Pressure
+|turn|1
+|callback|decision
+|
+|move|p2a: Jirachi|U-turn|p1a: Deoxys-Defense
+|-supereffective|p1a: Deoxys-Defense
+|-damage|p1a: Deoxys-Defense|226\/304
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|241\/241
+|move|p1a: Deoxys-Defense|Spikes|p2a: Rotom-Heat
+|-sidestart|p2: MintyShade|Spikes
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Rotom-Heat|Trick|p1a: Deoxys-Defense
+|-activate|p2a: Rotom-Heat|move: Trick|[of] p1a: Deoxys-Defense
+|-item|p1a: Deoxys-Defense|Choice Scarf|[from] move: Trick
+|-item|p2a: Rotom-Heat|Mental Herb|[from] move: Trick
+|move|p1a: Deoxys-Defense|Spikes|p2a: Rotom-Heat
+|-sidestart|p2: MintyShade|Spikes
+|
+|turn|3
+|callback|decision
+|
+|move|p1a: Deoxys-Defense|Spikes|p2a: Rotom-Heat
+|-sidestart|p2: MintyShade|Spikes
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Deoxys-Defense
+|-damage|p1a: Deoxys-Defense|157\/304
+|callback|decision
+|
+|switch|p2a: Salamence|Salamence, F|331\/331
+|
+|turn|4
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|381\/381
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Salamence
+|-unboost|p2a: Salamence|atk|1
+|move|p2a: Salamence|Dragon Dance|p2a: Salamence
+|-boost|p2a: Salamence|atk|1
+|-boost|p2a: Salamence|spe|1
+|
+|turn|5
+|callback|decision
+|
+|move|p2a: Salamence|Dragon Claw|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|237\/381
+|move|p1a: Landorus-Therian|Stone Edge|p2a: Salamence
+|-supereffective|p2a: Salamence
+|-damage|p2a: Salamence|49\/331
+|
+|turn|6
+|callback|decision
+|
+|move|p2a: Salamence|Dragon Claw|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|111\/381
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Salamence
+|-sidestart|p2: MintyShade|move: Stealth Rock
+|
+|turn|7
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|343\/343
+|move|p2a: Salamence|Dragon Claw|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|272\/343
+|
+|turn|8
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Salamence
+|-damage|p2a: Salamence|0 fnt
+|faint|p2a: Salamence
+|
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi|341\/341
+|-damage|p2a: Jirachi|320\/341|[from] Stealth Rock
+|-damage|p2a: Jirachi|235\/341|[from] Spikes
+|turn|9
+|callback|decision
+|
+|switch|p1a: Deoxys-Defense|Deoxys-Defense|157\/304
+|-ability|p1a: Deoxys-Defense|Pressure
+|move|p2a: Jirachi|U-turn|p1a: Deoxys-Defense
+|-supereffective|p1a: Deoxys-Defense
+|-damage|p1a: Deoxys-Defense|77\/304
+|callback|decision
+|
+|switch|p2a: Roserade|Roserade, F|324\/324
+|-damage|p2a: Roserade|284\/324|[from] Stealth Rock
+|-damage|p2a: Roserade|203\/324|[from] Spikes
+|
+|turn|10
+|callback|decision
+|
+|move|p1a: Deoxys-Defense|Taunt|p2a: Roserade
+|-start|p2a: Roserade|move: Taunt
+|move|p2a: Roserade|Giga Drain|p1a: Deoxys-Defense
+|-damage|p1a: Deoxys-Defense|0 fnt
+|-heal|p2a: Roserade|242\/324|[from] drain|[of] p1a: Deoxys-Defense
+|faint|p1a: Deoxys-Defense
+|
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|272\/343
+|turn|11
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|241\/241
+|-damage|p2a: Rotom-Heat|181\/241|[from] Stealth Rock
+|move|p1a: Scizor|U-turn|p2a: Rotom-Heat
+|-resisted|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|91\/241
+|callback|decision
+|
+|switch|p1a: Kangaskhan|Kangaskhan, F|351\/351
+|
+|turn|12
+|callback|decision
+|
+|-formechange|p1a: Kangaskhan|Kangaskhan-Mega
+|message|Kangaskhan has Mega Evolved into Mega Kangaskhan!
+|move|p2a: Rotom-Heat|Will-O-Wisp|p1a: Kangaskhan|[miss]
+|-miss|p2a: Rotom-Heat|p1a: Kangaskhan
+|move|p1a: Kangaskhan|Power-Up Punch|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|39\/241
+|-boost|p1a: Kangaskhan|atk|1
+|-damage|p2a: Rotom-Heat|3\/241
+|-boost|p1a: Kangaskhan|atk|1
+|-hitcount|p2a: Rotom-Heat|2
+|
+|turn|13
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|111\/381
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Rotom-Heat
+|-unboost|p2a: Rotom-Heat|atk|1
+|move|p2a: Rotom-Heat|Will-O-Wisp|p1a: Landorus-Therian
+|-status|p1a: Landorus-Therian|brn
+|
+|-damage|p1a: Landorus-Therian|64\/381 brn|[from] brn
+|turn|14
+|callback|decision
+|
+|switch|p2a: Empoleon|Empoleon, M|371\/371
+|-damage|p2a: Empoleon|279\/371|[from] Spikes
+|-damage|p2a: Empoleon|256\/371|[from] Stealth Rock
+|move|p1a: Landorus-Therian|U-turn|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|234\/371
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|
+|-heal|p2a: Empoleon|257\/371|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|119\/371
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|64\/381 brn
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Empoleon
+|-unboost|p2a: Empoleon|atk|1
+|move|p2a: Empoleon|Defog|p1a: Landorus-Therian
+|-unboost|p1a: Landorus-Therian|evasion|1
+|-sideend|p2: MintyShade|Spikes|[from] move: Defog|[of] p2a: Empoleon
+|-sideend|p2: MintyShade|Stealth Rock|[from] move: Defog|[of] p2a: Empoleon
+|
+|-heal|p2a: Empoleon|142\/371|[from] item: Leftovers
+|-damage|p1a: Landorus-Therian|17\/381 brn|[from] brn
+|turn|16
+|callback|decision
+|
+|move|p1a: Landorus-Therian|Earthquake|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|0 fnt
+|faint|p2a: Empoleon
+|
+|-damage|p1a: Landorus-Therian|0 fnt|[from] brn
+|faint|p1a: Landorus-Therian
+|callback|decision
+|
+|switch|p1a: Kangaskhan|Kangaskhan, F|351\/351
+|-formechange|p1a: Kangaskhan|Kangaskhan-Mega
+|switch|p2a: Rotom-Heat|Rotom-Heat|3\/241
+|turn|17
+|callback|decision
+|
+|move|p1a: Kangaskhan|Power-Up Punch|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|0 fnt
+|-boost|p1a: Kangaskhan|atk|1
+|-hitcount|p2a: Rotom-Heat|1
+|faint|p2a: Rotom-Heat
+|
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi|235\/341
+|turn|18
+|callback|decision
+|
+|move|p1a: Kangaskhan|Sucker Punch|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|-hitcount|p2a: Jirachi|1
+|faint|p2a: Jirachi
+|
+|callback|decision
+|
+|switch|p2a: Infernape|Infernape, M|293\/293
+|turn|19
+|callback|decision
+|
+|move|p1a: Kangaskhan|Sucker Punch|p2a: Infernape
+|-resisted|p2a: Infernape
+|-damage|p2a: Infernape|186\/293
+|-resisted|p2a: Infernape
+|-damage|p2a: Infernape|138\/293
+|-hitcount|p2a: Infernape|2
+|move|p2a: Infernape|Close Combat|p1a: Kangaskhan
+|-supereffective|p1a: Kangaskhan
+|-damage|p1a: Kangaskhan|0 fnt
+|-unboost|p2a: Infernape|def|1
+|-unboost|p2a: Infernape|spd|1
+|faint|p1a: Kangaskhan
+|
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|272\/343
+|turn|20
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Infernape
+|-resisted|p2a: Infernape
+|-damage|p2a: Infernape|0 fnt
+|faint|p2a: Infernape
+|
+|callback|decision
+|
+|switch|p2a: Roserade|Roserade, F|242\/324
+|turn|21
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Roserade
+|-damage|p2a: Roserade|0 fnt
+|faint|p2a: Roserade
+|
+|win|Super cinoS
+|raw|Ladder updating...
+|chat|MintyShade|gg
+|raw|Super cinoS's rating: 1818 &rarr; <strong>1826<\/strong><br \/>(+8 for winning)
+|raw|MintyShade's rating: 1623 &rarr; <strong>1622<\/strong><br \/>(-1 for losing)
+|leave|MintyShade
+|player|p2

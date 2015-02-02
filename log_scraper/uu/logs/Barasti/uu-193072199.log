@@ -1,0 +1,693 @@
+|join|barasti
+|join|Preserve
+|player|p1|barasti|101
+|player|p2|Preserve|101
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Entei, shiny
+|poke|p1|Zygarde
+|poke|p1|Tentacruel, F
+|poke|p1|Florges, F
+|poke|p1|Bronzong
+|poke|p1|Sceptile, F
+|poke|p2|Houndoom, F
+|poke|p2|Alomomola, F
+|poke|p2|Snorlax, F
+|poke|p2|Starmie
+|poke|p2|Diancie
+|poke|p2|Crobat, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Sceptile|Sceptile, F|281\/281
+|switch|p2a: Diancie|Diancie|304\/304
+|turn|1
+|
+|switch|p2a: Snorlax|Snorlax, F|524\/524
+|detailschange|p1a: Sceptile|Sceptile-Mega, F
+|message|Sceptile has Mega Evolved into Mega Sceptile!
+|move|p1a: Sceptile|Leaf Storm|p2a: Snorlax
+|-damage|p2a: Snorlax|359\/524
+|-unboost|p1a: Sceptile|spa|2
+|
+|turn|2
+|
+|move|p2a: Snorlax|Pursuit|p1a: Sceptile|[from]Pursuit
+|-damage|p1a: Sceptile|165\/281
+|switch|p1a: Bronzong|Bronzong|338\/338
+|
+|turn|3
+|
+|switch|p2a: Starmie|Starmie|324\/324
+|move|p1a: Bronzong|Stealth Rock|p2a: Starmie
+|-sidestart|p2: Preserve|move: Stealth Rock
+|
+|turn|4
+|
+|switch|p1a: Sceptile|Sceptile-Mega, F|165\/281
+|move|p2a: Starmie|Rapid Spin|p1a: Sceptile
+|-damage|p1a: Sceptile|152\/281
+|-sideend|p2: Preserve|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Starmie
+|
+|turn|5
+|
+|switch|p2a: Snorlax|Snorlax, F|359\/524
+|move|p1a: Sceptile|Giga Drain|p2a: Snorlax
+|-damage|p2a: Snorlax|277\/524
+|-heal|p1a: Sceptile|193\/281|[from] drain|[of] p2a: Snorlax
+|
+|turn|6
+|
+|move|p1a: Sceptile|Focus Blast|p2a: Snorlax
+|-supereffective|p2a: Snorlax
+|-damage|p2a: Snorlax|73\/524
+|move|p2a: Snorlax|Pursuit|p1a: Sceptile
+|-crit|p1a: Sceptile
+|-damage|p1a: Sceptile|99\/281
+|
+|turn|7
+|
+|move|p1a: Sceptile|Dragon Pulse|p2a: Snorlax
+|-damage|p2a: Snorlax|0 fnt
+|faint|p2a: Snorlax
+|
+|
+|switch|p2a: Crobat|Crobat, M|319\/319
+|turn|8
+|
+|switch|p1a: Bronzong|Bronzong|338\/338
+|move|p2a: Crobat|U-turn|p1a: Bronzong
+|-damage|p1a: Bronzong|274\/338
+|
+|switch|p2a: Houndoom|Houndoom, F|291\/291
+|
+|-heal|p1a: Bronzong|295\/338|[from] item: Leftovers
+|turn|9
+|
+|switch|p1a: Tentacruel|Tentacruel, F|361\/361
+|detailschange|p2a: Houndoom|Houndoom-Mega, F
+|message|Houndoom has Mega Evolved into Mega Houndoom!
+|move|p2a: Houndoom|Nasty Plot|p2a: Houndoom
+|-boost|p2a: Houndoom|spa|2
+|
+|turn|10
+|
+|move|p2a: Houndoom|Sunny Day|p2a: Houndoom
+|-weather|SunnyDay
+|move|p1a: Tentacruel|Scald|p2a: Houndoom
+|-supereffective|p2a: Houndoom
+|-damage|p2a: Houndoom|195\/291
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p2a: Houndoom|159\/291|[from] ability: Solar Power
+|turn|11
+|
+|move|p2a: Houndoom|Dark Pulse|p1a: Tentacruel
+|-damage|p1a: Tentacruel|0 fnt
+|faint|p1a: Tentacruel
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p2a: Houndoom|123\/291|[from] ability: Solar Power
+|
+|switch|p1a: Entei|Entei, shiny|371\/371
+|-ability|p1a: Entei|Pressure
+|turn|12
+|
+|switch|p2a: Alomomola|Alomomola, F|534\/534
+|move|p1a: Entei|Extreme Speed|p2a: Alomomola
+|-damage|p2a: Alomomola|424\/534
+|-damage|p1a: Entei|310\/371|[from] item: Rocky Helmet|[of] p2a: Alomomola
+|
+|-weather|SunnyDay|[upkeep]
+|turn|13
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Alomomola|Wish|p2a: Alomomola
+|
+|-weather|SunnyDay|[upkeep]
+|turn|14
+|
+|switch|p2a: Houndoom|Houndoom-Mega, F|123\/291
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-weather|none
+|-heal|p2a: Houndoom|291\/291|[from] move: Wish|[wisher] Alomomola
+|turn|15
+|
+|move|p2a: Houndoom|Overheat|p1a: Florges
+|-damage|p1a: Florges|222\/360
+|-unboost|p2a: Houndoom|spa|2
+|move|p1a: Florges|Moonblast|p2a: Houndoom
+|-damage|p2a: Houndoom|150\/291
+|
+|-heal|p1a: Florges|360\/360|[from] move: Wish|[wisher] Florges
+|turn|16
+|
+|switch|p2a: Diancie|Diancie|304\/304
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|turn|17
+|
+|switch|p1a: Sceptile|Sceptile-Mega, F|99\/281
+|move|p2a: Diancie|Moonblast|p1a: Sceptile
+|-supereffective|p1a: Sceptile
+|-damage|p1a: Sceptile|0 fnt
+|faint|p1a: Sceptile
+|
+|
+|switch|p1a: Zygarde|Zygarde|404\/404
+|-ability|p1a: Zygarde|Aura Break
+|turn|18
+|
+|move|p1a: Zygarde|Coil|p1a: Zygarde
+|-boost|p1a: Zygarde|atk|1
+|-boost|p1a: Zygarde|def|1
+|-boost|p1a: Zygarde|accuracy|1
+|move|p2a: Diancie|Stealth Rock|p1a: Zygarde
+|-sidestart|p1: barasti|move: Stealth Rock
+|
+|turn|19
+|
+|move|p1a: Zygarde|Earthquake|p2a: Diancie
+|-supereffective|p2a: Diancie
+|-damage|p2a: Diancie|46\/304
+|move|p2a: Diancie|Moonblast|p1a: Zygarde
+|-supereffective|p1a: Zygarde
+|-damage|p1a: Zygarde|192\/404
+|
+|-heal|p1a: Zygarde|217\/404|[from] item: Leftovers
+|-heal|p2a: Diancie|65\/304|[from] item: Leftovers
+|turn|20
+|
+|move|p1a: Zygarde|Earthquake|p2a: Diancie
+|-supereffective|p2a: Diancie
+|-damage|p2a: Diancie|0 fnt
+|faint|p2a: Diancie
+|
+|-heal|p1a: Zygarde|242\/404|[from] item: Leftovers
+|
+|switch|p2a: Houndoom|Houndoom-Mega, F|150\/291
+|turn|21
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|-damage|p1a: Florges|315\/360|[from] Stealth Rock
+|move|p2a: Houndoom|Dark Pulse|p1a: Florges
+|-resisted|p1a: Florges
+|-damage|p1a: Florges|268\/360
+|
+|-heal|p1a: Florges|290\/360|[from] item: Leftovers
+|turn|22
+|
+|switch|p2a: Crobat|Crobat, M|319\/319
+|move|p1a: Florges|Moonblast|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|241\/319
+|
+|-heal|p1a: Florges|312\/360|[from] item: Leftovers
+|turn|23
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Crobat|Brave Bird|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-heal|p1a: Florges|334\/360|[from] item: Leftovers
+|turn|24
+|
+|switch|p2a: Houndoom|Houndoom-Mega, F|150\/291
+|switch|p1a: Bronzong|Bronzong|295\/338
+|-damage|p1a: Bronzong|274\/338|[from] Stealth Rock
+|
+|-heal|p1a: Bronzong|295\/338|[from] item: Leftovers
+|turn|25
+|
+|move|p2a: Houndoom|Nasty Plot|p2a: Houndoom
+|-boost|p2a: Houndoom|spa|2
+|move|p1a: Bronzong|Earthquake|p2a: Houndoom
+|-supereffective|p2a: Houndoom
+|-damage|p2a: Houndoom|0 fnt
+|faint|p2a: Houndoom
+|
+|-heal|p1a: Bronzong|316\/338|[from] item: Leftovers
+|
+|switch|p2a: Starmie|Starmie|324\/324
+|turn|26
+|
+|switch|p1a: Florges|Florges, F|334\/360
+|-damage|p1a: Florges|289\/360|[from] Stealth Rock
+|move|p2a: Starmie|Scald|p1a: Florges
+|-damage|p1a: Florges|232\/360
+|-status|p1a: Florges|brn
+|
+|-heal|p1a: Florges|254\/360 brn|[from] item: Leftovers
+|-damage|p1a: Florges|209\/360 brn|[from] brn
+|turn|27
+|
+|move|p2a: Starmie|Psyshock|p1a: Florges
+|-damage|p1a: Florges|115\/360 brn
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p1a: Florges|137\/360 brn|[from] item: Leftovers
+|-damage|p1a: Florges|92\/360 brn|[from] brn
+|turn|28
+|
+|switch|p2a: Crobat|Crobat, M|241\/319
+|move|p1a: Florges|Protect|p1a: Florges
+|-fail|p1a: Florges
+|
+|-heal|p1a: Florges|272\/360 brn|[from] move: Wish|[wisher] Florges
+|-heal|p1a: Florges|294\/360 brn|[from] item: Leftovers
+|-damage|p1a: Florges|249\/360 brn|[from] brn
+|turn|29
+|
+|switch|p1a: Bronzong|Bronzong|316\/338
+|-damage|p1a: Bronzong|295\/338|[from] Stealth Rock
+|move|p2a: Crobat|Brave Bird|p1a: Bronzong
+|-resisted|p1a: Bronzong
+|-damage|p1a: Bronzong|211\/338
+|-damage|p2a: Crobat|213\/319|[from] recoil|[of] p1a: Bronzong
+|
+|-heal|p1a: Bronzong|232\/338|[from] item: Leftovers
+|turn|30
+|
+|move|p2a: Crobat|Brave Bird|p1a: Bronzong
+|-resisted|p1a: Bronzong
+|-damage|p1a: Bronzong|146\/338
+|-damage|p2a: Crobat|185\/319|[from] recoil|[of] p1a: Bronzong
+|move|p1a: Bronzong|Stealth Rock|p2a: Crobat
+|-sidestart|p2: Preserve|move: Stealth Rock
+|
+|-heal|p1a: Bronzong|167\/338|[from] item: Leftovers
+|turn|31
+|
+|switch|p2a: Starmie|Starmie|324\/324
+|-damage|p2a: Starmie|284\/324|[from] Stealth Rock
+|move|p1a: Bronzong|Gyro Ball|p2a: Starmie
+|-resisted|p2a: Starmie
+|-damage|p2a: Starmie|196\/324
+|
+|-heal|p2a: Starmie|216\/324|[from] item: Leftovers
+|-heal|p1a: Bronzong|188\/338|[from] item: Leftovers
+|turn|32
+|
+|switch|p1a: Zygarde|Zygarde|242\/404
+|-damage|p1a: Zygarde|217\/404|[from] Stealth Rock
+|-ability|p1a: Zygarde|Aura Break
+|move|p2a: Starmie|Rapid Spin|p1a: Zygarde
+|-damage|p1a: Zygarde|209\/404
+|-sideend|p2: Preserve|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Starmie
+|
+|-heal|p2a: Starmie|236\/324|[from] item: Leftovers
+|-heal|p1a: Zygarde|234\/404|[from] item: Leftovers
+|turn|33
+|
+|move|p2a: Starmie|Scald|p1a: Zygarde
+|-damage|p1a: Zygarde|143\/404
+|move|p1a: Zygarde|Substitute|p1a: Zygarde
+|-start|p1a: Zygarde|Substitute
+|-damage|p1a: Zygarde|42\/404
+|
+|-heal|p2a: Starmie|256\/324|[from] item: Leftovers
+|-heal|p1a: Zygarde|67\/404|[from] item: Leftovers
+|turn|34
+|
+|switch|p2a: Crobat|Crobat, M|185\/319
+|move|p1a: Zygarde|Dragon Tail|p2a: Crobat
+|-damage|p2a: Crobat|98\/319
+|drag|p2a: Starmie|Starmie|256\/324
+|
+|-heal|p2a: Starmie|276\/324|[from] item: Leftovers
+|-heal|p1a: Zygarde|92\/404|[from] item: Leftovers
+|turn|35
+|
+|move|p2a: Starmie|Scald|p1a: Zygarde
+|-activate|p1a: Zygarde|Substitute|[damage]
+|move|p1a: Zygarde|Coil|p1a: Zygarde
+|-boost|p1a: Zygarde|atk|1
+|-boost|p1a: Zygarde|def|1
+|-boost|p1a: Zygarde|accuracy|1
+|
+|-heal|p2a: Starmie|296\/324|[from] item: Leftovers
+|-heal|p1a: Zygarde|117\/404|[from] item: Leftovers
+|turn|36
+|
+|move|p2a: Starmie|Scald|p1a: Zygarde
+|-end|p1a: Zygarde|Substitute
+|move|p1a: Zygarde|Dragon Tail|p2a: Starmie
+|-damage|p2a: Starmie|167\/324
+|drag|p2a: Crobat|Crobat, M|98\/319
+|
+|-heal|p1a: Zygarde|142\/404|[from] item: Leftovers
+|turn|37
+|
+|move|p2a: Crobat|Brave Bird|p1a: Zygarde
+|-damage|p1a: Zygarde|0 fnt
+|-damage|p2a: Crobat|51\/319|[from] recoil|[of] p1a: Zygarde
+|faint|p1a: Zygarde
+|
+|
+|switch|p1a: Entei|Entei, shiny|310\/371
+|-damage|p1a: Entei|218\/371|[from] Stealth Rock
+|-ability|p1a: Entei|Pressure
+|turn|38
+|
+|switch|p2a: Alomomola|Alomomola, F|534\/534
+|move|p1a: Entei|Extreme Speed|p2a: Alomomola
+|-damage|p2a: Alomomola|423\/534
+|-damage|p1a: Entei|157\/371|[from] item: Rocky Helmet|[of] p2a: Alomomola
+|
+|turn|39
+|
+|switch|p1a: Florges|Florges, F|249\/360 brn
+|-damage|p1a: Florges|204\/360 brn|[from] Stealth Rock
+|move|p2a: Alomomola|Wish|p2a: Alomomola
+|
+|-heal|p1a: Florges|226\/360 brn|[from] item: Leftovers
+|-damage|p1a: Florges|181\/360 brn|[from] brn
+|turn|40
+|
+|switch|p2a: Starmie|Starmie|167\/324
+|move|p1a: Florges|Moonblast|p2a: Starmie
+|-damage|p2a: Starmie|34\/324
+|
+|-heal|p2a: Starmie|301\/324|[from] move: Wish|[wisher] Alomomola
+|-heal|p2a: Starmie|321\/324|[from] item: Leftovers
+|-heal|p1a: Florges|203\/360 brn|[from] item: Leftovers
+|-damage|p1a: Florges|158\/360 brn|[from] brn
+|turn|41
+|
+|move|p2a: Starmie|Psyshock|p1a: Florges
+|-damage|p1a: Florges|67\/360 brn
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p2a: Starmie|324\/324|[from] item: Leftovers
+|-heal|p1a: Florges|89\/360 brn|[from] item: Leftovers
+|-damage|p1a: Florges|44\/360 brn|[from] brn
+|turn|42
+|
+|switch|p2a: Crobat|Crobat, M|51\/319
+|move|p1a: Florges|Aromatherapy|p1a: Florges
+|-cureteam|p1a: Florges|[from] move: Aromatherapy
+|
+|-heal|p1a: Florges|224\/360|[from] move: Wish|[wisher] Florges
+|-heal|p1a: Florges|246\/360|[from] item: Leftovers
+|turn|43
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Crobat|Brave Bird|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-heal|p1a: Florges|268\/360|[from] item: Leftovers
+|turn|44
+|
+|switch|p1a: Bronzong|Bronzong|188\/338
+|-damage|p1a: Bronzong|167\/338|[from] Stealth Rock
+|move|p2a: Crobat|Brave Bird|p1a: Bronzong
+|-resisted|p1a: Bronzong
+|-damage|p1a: Bronzong|91\/338
+|-damage|p2a: Crobat|26\/319|[from] recoil|[of] p1a: Bronzong
+|
+|-heal|p1a: Bronzong|112\/338|[from] item: Leftovers
+|turn|45
+|
+|switch|p2a: Starmie|Starmie|324\/324
+|move|p1a: Bronzong|Hidden Power|p2a: Starmie
+|-supereffective|p2a: Starmie
+|-damage|p2a: Starmie|242\/324
+|
+|-heal|p2a: Starmie|262\/324|[from] item: Leftovers
+|-heal|p1a: Bronzong|133\/338|[from] item: Leftovers
+|turn|46
+|
+|move|p2a: Starmie|Scald|p1a: Bronzong
+|-damage|p1a: Bronzong|42\/338
+|move|p1a: Bronzong|Stealth Rock|p2a: Starmie
+|-sidestart|p2: Preserve|move: Stealth Rock
+|
+|-heal|p2a: Starmie|282\/324|[from] item: Leftovers
+|-heal|p1a: Bronzong|63\/338|[from] item: Leftovers
+|turn|47
+|
+|move|p2a: Starmie|Scald|p1a: Bronzong
+|-damage|p1a: Bronzong|0 fnt
+|faint|p1a: Bronzong
+|
+|-heal|p2a: Starmie|302\/324|[from] item: Leftovers
+|
+|switch|p1a: Florges|Florges, F|268\/360
+|-damage|p1a: Florges|223\/360|[from] Stealth Rock
+|turn|48
+|
+|move|p2a: Starmie|Rapid Spin|p1a: Florges
+|-damage|p1a: Florges|213\/360
+|-sideend|p2: Preserve|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Starmie
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p2a: Starmie|322\/324|[from] item: Leftovers
+|-heal|p1a: Florges|235\/360|[from] item: Leftovers
+|turn|49
+|
+|move|p2a: Starmie|Scald|p1a: Florges
+|-damage|p1a: Florges|177\/360
+|move|p1a: Florges|Moonblast|p2a: Starmie
+|-damage|p2a: Starmie|187\/324
+|
+|-heal|p1a: Florges|357\/360|[from] move: Wish|[wisher] Florges
+|-heal|p2a: Starmie|207\/324|[from] item: Leftovers
+|-heal|p1a: Florges|360\/360|[from] item: Leftovers
+|turn|50
+|
+|move|p2a: Starmie|Scald|p1a: Florges
+|-damage|p1a: Florges|296\/360
+|-status|p1a: Florges|brn
+|move|p1a: Florges|Moonblast|p2a: Starmie
+|-damage|p2a: Starmie|54\/324
+|
+|-heal|p2a: Starmie|74\/324|[from] item: Leftovers
+|-heal|p1a: Florges|318\/360 brn|[from] item: Leftovers
+|-damage|p1a: Florges|273\/360 brn|[from] brn
+|turn|51
+|
+|move|p2a: Starmie|Recover|p2a: Starmie
+|-heal|p2a: Starmie|236\/324
+|move|p1a: Florges|Moonblast|p2a: Starmie
+|-damage|p2a: Starmie|107\/324
+|
+|-heal|p2a: Starmie|127\/324|[from] item: Leftovers
+|-heal|p1a: Florges|295\/360 brn|[from] item: Leftovers
+|-damage|p1a: Florges|250\/360 brn|[from] brn
+|turn|52
+|
+|move|p2a: Starmie|Recover|p2a: Starmie
+|-heal|p2a: Starmie|289\/324
+|move|p1a: Florges|Aromatherapy|p1a: Florges
+|-cureteam|p1a: Florges|[from] move: Aromatherapy
+|
+|-heal|p2a: Starmie|309\/324|[from] item: Leftovers
+|-heal|p1a: Florges|272\/360|[from] item: Leftovers
+|turn|53
+|
+|move|p2a: Starmie|Scald|p1a: Florges
+|-crit|p1a: Florges
+|-damage|p1a: Florges|185\/360
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p2a: Starmie|324\/324|[from] item: Leftovers
+|-heal|p1a: Florges|207\/360|[from] item: Leftovers
+|turn|54
+|
+|move|p2a: Starmie|Psyshock|p1a: Florges
+|-damage|p1a: Florges|105\/360
+|move|p1a: Florges|Moonblast|p2a: Starmie
+|-damage|p2a: Starmie|171\/324
+|
+|-heal|p1a: Florges|285\/360|[from] move: Wish|[wisher] Florges
+|-heal|p2a: Starmie|191\/324|[from] item: Leftovers
+|-heal|p1a: Florges|307\/360|[from] item: Leftovers
+|turn|55
+|
+|move|p2a: Starmie|Recover|p2a: Starmie
+|-heal|p2a: Starmie|324\/324
+|move|p1a: Florges|Moonblast|p2a: Starmie
+|-damage|p2a: Starmie|186\/324
+|
+|-heal|p2a: Starmie|206\/324|[from] item: Leftovers
+|-heal|p1a: Florges|329\/360|[from] item: Leftovers
+|turn|56
+|
+|move|p2a: Starmie|Psyshock|p1a: Florges
+|-damage|p1a: Florges|232\/360
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p2a: Starmie|226\/324|[from] item: Leftovers
+|-heal|p1a: Florges|254\/360|[from] item: Leftovers
+|turn|57
+|
+|move|p2a: Starmie|Scald|p1a: Florges
+|-damage|p1a: Florges|200\/360
+|move|p1a: Florges|Moonblast|p2a: Starmie
+|-damage|p2a: Starmie|96\/324
+|-unboost|p2a: Starmie|spa|1
+|
+|-heal|p1a: Florges|360\/360|[from] move: Wish|[wisher] Florges
+|-heal|p2a: Starmie|116\/324|[from] item: Leftovers
+|turn|58
+|
+|move|p2a: Starmie|Scald|p1a: Florges
+|-damage|p1a: Florges|323\/360
+|move|p1a: Florges|Moonblast|p2a: Starmie
+|-damage|p2a: Starmie|0 fnt
+|faint|p2a: Starmie
+|
+|-heal|p1a: Florges|345\/360|[from] item: Leftovers
+|
+|switch|p2a: Crobat|Crobat, M|26\/319
+|turn|59
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Crobat|Brave Bird|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-heal|p1a: Florges|360\/360|[from] item: Leftovers
+|turn|60
+|
+|switch|p2a: Alomomola|Alomomola, F|534\/534
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|turn|61
+|
+|move|p1a: Florges|Moonblast|p2a: Alomomola
+|-damage|p2a: Alomomola|303\/534
+|move|p2a: Alomomola|Toxic|p1a: Florges
+|-status|p1a: Florges|tox
+|
+|-damage|p1a: Florges|338\/360 tox|[from] psn
+|turn|62
+|
+|move|p1a: Florges|Aromatherapy|p1a: Florges
+|-cureteam|p1a: Florges|[from] move: Aromatherapy
+|move|p2a: Alomomola|Wish|p2a: Alomomola
+|
+|-heal|p1a: Florges|360\/360|[from] item: Leftovers
+|turn|63
+|
+|move|p1a: Florges|Moonblast|p2a: Alomomola
+|-damage|p2a: Alomomola|90\/534
+|move|p2a: Alomomola|Toxic|p1a: Florges
+|-status|p1a: Florges|tox
+|
+|-heal|p2a: Alomomola|357\/534|[from] move: Wish|[wisher] Alomomola
+|-damage|p1a: Florges|338\/360 tox|[from] psn
+|turn|64
+|
+|move|p1a: Florges|Moonblast|p2a: Alomomola
+|-damage|p2a: Alomomola|131\/534
+|move|p2a: Alomomola|Wish|p2a: Alomomola
+|
+|-heal|p1a: Florges|360\/360 tox|[from] item: Leftovers
+|-damage|p1a: Florges|316\/360 tox|[from] psn
+|turn|65
+|
+|move|p2a: Alomomola|Protect|p2a: Alomomola
+|-singleturn|p2a: Alomomola|Protect
+|move|p1a: Florges|Aromatherapy|p1a: Florges
+|-cureteam|p1a: Florges|[from] move: Aromatherapy
+|
+|-heal|p2a: Alomomola|398\/534|[from] move: Wish|[wisher] Alomomola
+|-heal|p1a: Florges|338\/360|[from] item: Leftovers
+|turn|66
+|
+|move|p1a: Florges|Moonblast|p2a: Alomomola
+|-damage|p2a: Alomomola|149\/534
+|move|p2a: Alomomola|Wish|p2a: Alomomola
+|
+|-heal|p1a: Florges|360\/360|[from] item: Leftovers
+|turn|67
+|
+|move|p2a: Alomomola|Protect|p2a: Alomomola
+|-singleturn|p2a: Alomomola|Protect
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p2a: Alomomola|416\/534|[from] move: Wish|[wisher] Alomomola
+|turn|68
+|
+|move|p1a: Florges|Moonblast|p2a: Alomomola
+|-damage|p2a: Alomomola|173\/534
+|move|p2a: Alomomola|Wish|p2a: Alomomola
+|
+|turn|69
+|
+|move|p1a: Florges|Wish|p1a: Florges
+|move|p2a: Alomomola|Toxic|p1a: Florges
+|-status|p1a: Florges|tox
+|
+|-heal|p2a: Alomomola|440\/534|[from] move: Wish|[wisher] Alomomola
+|-damage|p1a: Florges|338\/360 tox|[from] psn
+|turn|70
+|
+|move|p1a: Florges|Aromatherapy|p1a: Florges
+|-cureteam|p1a: Florges|[from] move: Aromatherapy
+|move|p2a: Alomomola|Wish|p2a: Alomomola
+|
+|-heal|p1a: Florges|360\/360|[from] move: Wish|[wisher] Florges
+|turn|71
+|
+|move|p1a: Florges|Moonblast|p2a: Alomomola
+|-crit|p2a: Alomomola
+|-damage|p2a: Alomomola|124\/534
+|move|p2a: Alomomola|Toxic|p1a: Florges
+|-status|p1a: Florges|tox
+|
+|-heal|p2a: Alomomola|391\/534|[from] move: Wish|[wisher] Alomomola
+|-damage|p1a: Florges|338\/360 tox|[from] psn
+|turn|72
+|
+|move|p1a: Florges|Wish|p1a: Florges
+|move|p2a: Alomomola|Wish|p2a: Alomomola
+|
+|-heal|p1a: Florges|360\/360 tox|[from] item: Leftovers
+|-damage|p1a: Florges|316\/360 tox|[from] psn
+|turn|73
+|
+|switch|p2a: Crobat|Crobat, M|26\/319
+|move|p1a: Florges|Protect|p1a: Florges
+|-fail|p1a: Florges
+|
+|-heal|p2a: Crobat|293\/319|[from] move: Wish|[wisher] Alomomola
+|-heal|p1a: Florges|360\/360 tox|[from] move: Wish|[wisher] Florges
+|-damage|p1a: Florges|294\/360 tox|[from] psn
+|turn|74
+|c|âbarasti|wtf i clicked moonblast
+|c|âbarasti|stupid showdown
+|c|âPreserve|XD
+|c|âPreserve|welp
+|
+|move|p2a: Crobat|Brave Bird|p1a: Florges
+|-damage|p1a: Florges|51\/360 tox
+|-damage|p2a: Crobat|213\/319|[from] recoil|[of] p1a: Florges
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p1a: Florges|73\/360 tox|[from] item: Leftovers
+|-damage|p1a: Florges|0 fnt|[from] psn
+|faint|p1a: Florges
+|c|âbarasti|gg
+|-message|barasti forfeited.
+|
+|win|Preserve
+|raw|Ladder updating...
+|leave|barasti
+|player|p1

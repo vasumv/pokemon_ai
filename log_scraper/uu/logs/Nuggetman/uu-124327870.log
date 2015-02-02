@@ -1,0 +1,227 @@
+|join|Nuggetman
+|join|blargondoogle
+|player|p1|Nuggetman|165
+|player|p2|blargondoogle|121
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Alomomola, M
+|poke|p1|Empoleon, F
+|poke|p1|Cresselia, F
+|poke|p1|Ditto
+|poke|p1|Zangoose, F
+|poke|p1|Dusknoir, F
+|poke|p2|Gligar, F
+|poke|p2|Flygon, F
+|poke|p2|Milotic, F
+|poke|p2|Chandelure, F
+|poke|p2|Magneton
+|poke|p2|Ferroseed, M
+|teampreview
+|
+|start
+|switch|p1a: Dusknoir|Dusknoir, F|294\/294
+|switch|p2a: Flygon|Flygon, F|301\/301
+|-ability|p1a: Dusknoir|Pressure
+|turn|1
+|
+|move|p2a: Flygon|U-turn|p1a: Dusknoir
+|-resisted|p1a: Dusknoir
+|-damage|p1a: Dusknoir|265\/294
+|
+|switch|p2a: Chandelure|Chandelure, F|261\/261
+|move|p1a: Dusknoir|Trick|p2a: Chandelure
+|-activate|p1a: Dusknoir|move: Trick|[of] p2a: Chandelure
+|-item|p2a: Chandelure|Choice Band|[from] move: Trick
+|-item|p1a: Dusknoir|Choice Scarf|[from] move: Trick
+|
+|turn|2
+|
+|switch|p1a: Empoleon|Empoleon, F|372\/372
+|move|p2a: Chandelure|Trick|p1a: Empoleon
+|-activate|p2a: Chandelure|move: Trick|[of] p1a: Empoleon
+|-item|p1a: Empoleon|Choice Band|[from] move: Trick
+|-item|p2a: Chandelure|Leftovers|[from] move: Trick
+|
+|turn|3
+|
+|switch|p2a: Magneton|Magneton|294\/294
+|move|p1a: Empoleon|Stealth Rock|p2a: Magneton
+|-sidestart|p2: blargondoogle|move: Stealth Rock
+|
+|turn|4
+|
+|move|p2a: Magneton|Substitute|p2a: Magneton
+|-start|p2a: Magneton|Substitute
+|-damage|p2a: Magneton|221\/294
+|move|p1a: Empoleon|Stealth Rock|p2a: Magneton
+|-fail|p2a: Magneton
+|
+|turn|5
+|
+|move|p2a: Magneton|Magnet Rise|p2a: Magneton
+|-start|p2a: Magneton|Magnet Rise
+|move|p1a: Empoleon|Stealth Rock|p2a: Magneton
+|-fail|p2a: Magneton
+|
+|turn|6
+|
+|move|p2a: Magneton|Thunderbolt|p1a: Empoleon
+|-supereffective|p1a: Empoleon
+|-damage|p1a: Empoleon|174\/372
+|move|p1a: Empoleon|Stealth Rock|p2a: Magneton
+|-fail|p2a: Magneton
+|
+|turn|7
+|
+|move|p2a: Magneton|Thunderbolt|p1a: Empoleon
+|-supereffective|p1a: Empoleon
+|-damage|p1a: Empoleon|0 fnt
+|faint|p1a: Empoleon
+|
+|
+|switch|p1a: Dusknoir|Dusknoir, F|265\/294
+|-ability|p1a: Dusknoir|Pressure
+|turn|8
+|
+|move|p2a: Magneton|Thunderbolt|p1a: Dusknoir
+|-damage|p1a: Dusknoir|166\/294
+|move|p1a: Dusknoir|Fire Punch|p2a: Magneton
+|-supereffective|p2a: Magneton
+|-end|p2a: Magneton|Substitute
+|
+|turn|9
+|
+|switch|p2a: Milotic|Milotic, F|393\/393
+|-damage|p2a: Milotic|344\/393|[from] Stealth Rock
+|switch|p1a: Cresselia|Cresselia, F|444\/444
+|
+|-heal|p2a: Milotic|368\/393|[from] item: Leftovers
+|turn|10
+|
+|move|p1a: Cresselia|Toxic|p2a: Milotic
+|-status|p2a: Milotic|tox
+|move|p2a: Milotic|Scald|p1a: Cresselia
+|-damage|p1a: Cresselia|392\/444
+|
+|-heal|p1a: Cresselia|419\/444|[from] item: Leftovers
+|-heal|p2a: Milotic|392\/393 tox|[from] item: Leftovers
+|-damage|p2a: Milotic|368\/393 tox|[from] psn
+|turn|11
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534
+|switch|p2a: Ferroseed|Ferroseed, M|292\/292
+|-damage|p2a: Ferroseed|274\/292|[from] Stealth Rock
+|
+|turn|12
+|
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|move|p2a: Ferroseed|Spikes|p1a: Alomomola
+|-sidestart|p1: Nuggetman|Spikes
+|
+|turn|13
+|
+|switch|p1a: Dusknoir|Dusknoir, F|166\/294
+|-damage|p1a: Dusknoir|130\/294|[from] Spikes
+|-ability|p1a: Dusknoir|Pressure
+|move|p2a: Ferroseed|Spikes|p1a: Dusknoir
+|-sidestart|p1: Nuggetman|Spikes
+|
+|-heal|p1a: Dusknoir|294\/294|[from] move: Wish|[wisher] Alomomola
+|turn|14
+|
+|move|p2a: Ferroseed|Protect|p2a: Ferroseed
+|-singleturn|p2a: Ferroseed|Protect
+|move|p1a: Dusknoir|Trick|p2a: Ferroseed
+|-activate|p2a: Ferroseed|Protect
+|
+|turn|15
+|
+|switch|p2a: Flygon|Flygon, F|301\/301
+|-damage|p2a: Flygon|283\/301|[from] Stealth Rock
+|move|p1a: Dusknoir|Trick|p2a: Flygon
+|-activate|p1a: Dusknoir|move: Trick|[of] p2a: Flygon
+|-item|p2a: Flygon|Choice Scarf|[from] move: Trick
+|-item|p1a: Dusknoir|Choice Scarf|[from] move: Trick
+|
+|turn|16
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534
+|-damage|p1a: Alomomola|445\/534|[from] Spikes
+|move|p2a: Flygon|U-turn|p1a: Alomomola
+|-damage|p1a: Alomomola|386\/534
+|
+|switch|p2a: Ferroseed|Ferroseed, M|274\/292
+|-damage|p2a: Ferroseed|256\/292|[from] Stealth Rock
+|
+|-heal|p1a: Alomomola|419\/534|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Alomomola|Scald|p2a: Ferroseed
+|-resisted|p2a: Ferroseed
+|-damage|p2a: Ferroseed|243\/292
+|move|p2a: Ferroseed|Spikes|p1a: Alomomola
+|-sidestart|p1: Nuggetman|Spikes
+|
+|-heal|p1a: Alomomola|452\/534|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|move|p2a: Ferroseed|Leech Seed|p1a: Alomomola
+|-start|p1a: Alomomola|move: Leech Seed
+|
+|-heal|p1a: Alomomola|485\/534|[from] item: Leftovers
+|-damage|p1a: Alomomola|419\/534|[from] Leech Seed|[of] p2a: Ferroseed
+|-heal|p2a: Ferroseed|292\/292|[silent]
+|turn|19
+|
+|switch|p1a: Brick Wall?|Zangoose, F|287\/287
+|-damage|p1a: Brick Wall?|216\/287|[from] Spikes
+|move|p2a: Ferroseed|Protect|p2a: Ferroseed
+|-fail|p2a: Ferroseed
+|
+|-heal|p1a: Brick Wall?|287\/287|[from] move: Wish|[wisher] Alomomola
+|-status|p1a: Brick Wall?|tox|[from] item: Toxic Orb
+|turn|20
+|
+|switch|p2a: Gligar|Gligar, F|334\/334
+|-damage|p2a: Gligar|293\/334|[from] Stealth Rock
+|move|p1a: Brick Wall?|Fire Punch|p2a: Gligar
+|-damage|p2a: Gligar|239\/334
+|
+|-damage|p1a: Brick Wall?|270\/287 tox|[from] psn
+|turn|21
+|
+|move|p1a: Brick Wall?|Knock Off|p2a: Gligar
+|-damage|p2a: Gligar|167\/334
+|-enditem|p2a: Gligar|Eviolite|[from] move: Knock Off|[of] p1a: Brick Wall?
+|move|p2a: Gligar|Roost|p2a: Gligar
+|-heal|p2a: Gligar|334\/334
+|
+|-damage|p1a: Brick Wall?|236\/287 tox|[from] psn
+|turn|22
+|
+|move|p1a: Brick Wall?|Fire Punch|p2a: Gligar
+|-damage|p2a: Gligar|253\/334
+|move|p2a: Gligar|Earthquake|p1a: Brick Wall?
+|-damage|p1a: Brick Wall?|86\/287 tox
+|
+|-damage|p1a: Brick Wall?|35\/287 tox|[from] psn
+|turn|23
+|-message|Nuggetman forfeited.
+|
+|win|blargondoogle
+|raw|Ladder updating...
+|leave|Nuggetman
+|player|p1
+|raw|Nuggetman's rating: 1428 &rarr; <strong>1403<\/strong><br \/>(-25 for losing)
+|raw|blargondoogle's rating: 1344 &rarr; <strong>1369<\/strong><br \/>(+25 for winning)

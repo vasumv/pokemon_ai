@@ -1,0 +1,499 @@
+|join|GraffikMonkey
+|join|FelixE
+|player|p1|GraffikMonkey|101
+|player|p2|FelixE|144
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Dragonite, F
+|poke|p1|Ferrothorn, M
+|poke|p1|Jellicent, F
+|poke|p1|Infernape, M
+|poke|p1|Donphan, F
+|poke|p1|Latios, M
+|poke|p2|Tyranitar, F
+|poke|p2|Scizor, M, shiny
+|poke|p2|Swampert, M
+|poke|p2|Magnezone
+|poke|p2|Jellicent, M
+|poke|p2|Gliscor, M, shiny
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Bertha|Donphan, F|384\/384
+|switch|p2a: Tyranitar|Tyranitar, F|404\/404
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Tyranitar
+|turn|1
+|callback|decision
+|
+|switch|p2a: Jellicent|Jellicent, M|404\/404
+|move|p1a: Bertha|Earthquake|p2a: Jellicent
+|-damage|p2a: Jellicent|214\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Jellicent|189\/404|[from] sandstorm
+|turn|2
+|callback|decision
+|
+|switch|p1a: Hentai|Ferrothorn, M|352\/352
+|move|p2a: Jellicent|Will-O-Wisp|p1a: Hentai
+|-status|p1a: Hentai|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Jellicent|164\/404|[from] sandstorm
+|-damage|p1a: Hentai|308\/352 brn|[from] brn
+|turn|3
+|callback|decision
+|
+|move|p2a: Jellicent|Protect|p2a: Jellicent
+|-singleturn|p2a: Jellicent|Protect
+|move|p1a: Hentai|Thunder Wave|p2a: Jellicent
+|-activate|p2a: Jellicent|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Jellicent|139\/404|[from] sandstorm
+|-heal|p1a: Hentai|330\/352 brn|[from] item: Leftovers
+|-damage|p1a: Hentai|286\/352 brn|[from] brn
+|turn|4
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, M, shiny|354\/354
+|move|p1a: Hentai|Power Whip|p2a: Gliscor
+|-damage|p2a: Gliscor|312\/354
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Hentai|308\/352 brn|[from] item: Leftovers
+|-damage|p1a: Hentai|264\/352 brn|[from] brn
+|-activate|p2a: Gliscor|item: Toxic Orb
+|-status|p2a: Gliscor|tox
+|turn|5
+|callback|decision
+|
+|move|p2a: Gliscor|Substitute|p2a: Gliscor
+|-start|p2a: Gliscor|Substitute
+|-damage|p2a: Gliscor|224\/354 tox
+|move|p1a: Hentai|Leech Seed|p2a: Gliscor
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Hentai|286\/352 brn|[from] item: Leftovers
+|-heal|p2a: Gliscor|268\/354 tox|[from] ability: Poison Heal
+|-damage|p1a: Hentai|242\/352 brn|[from] brn
+|turn|6
+|callback|decision
+|
+|switch|p1a: Lady Gaga|Jellicent, F|403\/403
+|move|p2a: Gliscor|Earthquake|p1a: Lady Gaga
+|-damage|p1a: Lady Gaga|283\/403
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Lady Gaga|258\/403|[from] sandstorm
+|-heal|p1a: Lady Gaga|283\/403|[from] item: Leftovers
+|-heal|p2a: Gliscor|312\/354 tox|[from] ability: Poison Heal
+|turn|7
+|callback|decision
+|
+|move|p2a: Gliscor|Earthquake|p1a: Lady Gaga
+|-damage|p1a: Lady Gaga|159\/403
+|move|p1a: Lady Gaga|Scald|p2a: Gliscor
+|-supereffective|p2a: Gliscor
+|-end|p2a: Gliscor|Substitute
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Lady Gaga|134\/403|[from] sandstorm
+|-heal|p1a: Lady Gaga|159\/403|[from] item: Leftovers
+|-heal|p2a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|turn|8
+|callback|decision
+|
+|switch|p2a: Jellicent|Jellicent, M|139\/404
+|move|p1a: Lady Gaga|Recover|p1a: Lady Gaga
+|-heal|p1a: Lady Gaga|361\/403
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Lady Gaga|336\/403|[from] sandstorm
+|-damage|p2a: Jellicent|114\/404|[from] sandstorm
+|-heal|p1a: Lady Gaga|361\/403|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p1a: Lady Gaga|Taunt|p2a: Jellicent
+|-start|p2a: Jellicent|move: Taunt
+|move|p2a: Jellicent|Shadow Ball|p1a: Lady Gaga
+|-supereffective|p1a: Lady Gaga
+|-damage|p1a: Lady Gaga|211\/403
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Lady Gaga|186\/403|[from] sandstorm
+|-damage|p2a: Jellicent|89\/404|[from] sandstorm
+|-heal|p1a: Lady Gaga|211\/403|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p1a: Lady Gaga|Recover|p1a: Lady Gaga
+|-heal|p1a: Lady Gaga|403\/403
+|move|p2a: Jellicent|Shadow Ball|p1a: Lady Gaga
+|-supereffective|p1a: Lady Gaga
+|-damage|p1a: Lady Gaga|265\/403
+|-unboost|p1a: Lady Gaga|spd|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Lady Gaga|240\/403|[from] sandstorm
+|-damage|p2a: Jellicent|64\/404|[from] sandstorm
+|-heal|p1a: Lady Gaga|265\/403|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p1a: Lady Gaga|Toxic|p2a: Jellicent
+|-status|p2a: Jellicent|tox
+|-enditem|p2a: Jellicent|Lum Berry|[eat]
+|-curestatus|p2a: Jellicent|tox
+|move|p2a: Jellicent|Shadow Ball|p1a: Lady Gaga
+|-supereffective|p1a: Lady Gaga
+|-damage|p1a: Lady Gaga|61\/403
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Lady Gaga|36\/403|[from] sandstorm
+|-damage|p2a: Jellicent|39\/404|[from] sandstorm
+|-heal|p1a: Lady Gaga|61\/403|[from] item: Leftovers
+|-end|p2a: Jellicent|move: Taunt
+|turn|12
+|callback|decision
+|
+|move|p1a: Lady Gaga|Recover|p1a: Lady Gaga
+|-heal|p1a: Lady Gaga|263\/403
+|move|p2a: Jellicent|Shadow Ball|p1a: Lady Gaga
+|-supereffective|p1a: Lady Gaga
+|-damage|p1a: Lady Gaga|53\/403
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Lady Gaga|28\/403|[from] sandstorm
+|-damage|p2a: Jellicent|14\/404|[from] sandstorm
+|-heal|p1a: Lady Gaga|53\/403|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: Lady Gaga|Recover|p1a: Lady Gaga
+|-heal|p1a: Lady Gaga|255\/403
+|move|p2a: Jellicent|Shadow Ball|p1a: Lady Gaga
+|-supereffective|p1a: Lady Gaga
+|-damage|p1a: Lady Gaga|31\/403
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Lady Gaga|6\/403|[from] sandstorm
+|-damage|p2a: Jellicent|0 fnt|[from] sandstorm
+|-heal|p1a: Lady Gaga|31\/403|[from] item: Leftovers
+|faint|p2a: Jellicent
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M, shiny|282\/282
+|turn|14
+|callback|decision
+|
+|move|p2a: Scizor|Pursuit|p1a: Lady Gaga
+|-supereffective|p1a: Lady Gaga
+|-damage|p1a: Lady Gaga|0 fnt
+|faint|p1a: Lady Gaga
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: GraffikMonkey|Infernape, M|293\/293
+|turn|15
+|callback|decision
+|
+|switch|p2a: Swampert|Swampert, M|401\/401
+|move|p1a: GraffikMonkey|Overheat|p2a: Swampert
+|-resisted|p2a: Swampert
+|-damage|p2a: Swampert|301\/401
+|-unboost|p1a: GraffikMonkey|spa|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: GraffikMonkey|275\/293|[from] sandstorm
+|-heal|p2a: Swampert|326\/401|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p1a: Eon|Latios, M|302\/302
+|move|p2a: Swampert|Ice Beam|p1a: Eon
+|-crit|p1a: Eon
+|-supereffective|p1a: Eon
+|-damage|p1a: Eon|42\/302
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Eon|24\/302|[from] sandstorm
+|-heal|p2a: Swampert|351\/401|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p2a: Swampert|Protect|p2a: Swampert
+|-singleturn|p2a: Swampert|Protect
+|move|p1a: Eon|Hidden Power|p2a: Swampert
+|-activate|p2a: Swampert|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Eon|6\/302|[from] sandstorm
+|-heal|p2a: Swampert|376\/401|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, M, shiny|354\/354 tox
+|move|p1a: Eon|Draco Meteor|p2a: Gliscor
+|-damage|p2a: Gliscor|0 fnt
+|-unboost|p1a: Eon|spa|2
+|-damage|p1a: Eon|0 fnt|[from] item: Life Orb
+|faint|p2a: Gliscor
+|faint|p1a: Eon
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Tyranitar|Tyranitar, F|404\/404
+|switch|p1a: Bertha|Donphan, F|384\/384
+|turn|19
+|callback|decision
+|
+|switch|p2a: Swampert|Swampert, M|376\/401
+|move|p1a: Bertha|Earthquake|p2a: Swampert
+|-damage|p2a: Swampert|232\/401
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Swampert|257\/401|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|switch|p1a: Hentai|Ferrothorn, M|242\/352 brn
+|move|p2a: Swampert|Earthquake|p1a: Hentai
+|-damage|p1a: Hentai|149\/352 brn
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Swampert|282\/401|[from] item: Leftovers
+|-heal|p1a: Hentai|171\/352 brn|[from] item: Leftovers
+|-damage|p1a: Hentai|127\/352 brn|[from] brn
+|turn|21
+|callback|decision
+|
+|move|p2a: Swampert|Protect|p2a: Swampert
+|-singleturn|p2a: Swampert|Protect
+|move|p1a: Hentai|Leech Seed|p2a: Swampert
+|-activate|p2a: Swampert|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Swampert|307\/401|[from] item: Leftovers
+|-heal|p1a: Hentai|149\/352 brn|[from] item: Leftovers
+|-damage|p1a: Hentai|105\/352 brn|[from] brn
+|turn|22
+|callback|decision
+|
+|switch|p2a: Magnezone|Magnezone|281\/281
+|-item|p2a: Magnezone|Air Balloon
+|move|p1a: Hentai|Leech Seed|p2a: Magnezone
+|-start|p2a: Magnezone|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Hentai|127\/352 brn|[from] item: Leftovers
+|-damage|p2a: Magnezone|246\/281|[from] Leech Seed|[of] p1a: Hentai
+|-heal|p1a: Hentai|162\/352 brn|[silent]
+|-damage|p1a: Hentai|118\/352 brn|[from] brn
+|turn|23
+|callback|decision
+|
+|move|p2a: Magnezone|Hidden Power|p1a: Hentai
+|-supereffective|p1a: Hentai
+|-damage|p1a: Hentai|0 fnt
+|faint|p1a: Hentai
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: GraffikMonkey|Infernape, M|275\/293
+|turn|24
+|callback|decision
+|
+|switch|p2a: Swampert|Swampert, M|307\/401
+|move|p1a: GraffikMonkey|Close Combat|p2a: Swampert
+|-damage|p2a: Swampert|180\/401
+|-unboost|p1a: GraffikMonkey|def|1
+|-unboost|p1a: GraffikMonkey|spd|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: GraffikMonkey|257\/293|[from] sandstorm
+|-heal|p2a: Swampert|205\/401|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|switch|p1a: Bertha|Donphan, F|384\/384
+|move|p2a: Swampert|Toxic|p1a: Bertha
+|-status|p1a: Bertha|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Swampert|230\/401|[from] item: Leftovers
+|-damage|p1a: Bertha|360\/384 tox|[from] psn
+|turn|26
+|callback|decision
+|
+|move|p2a: Swampert|Protect|p2a: Swampert
+|-singleturn|p2a: Swampert|Protect
+|move|p1a: Bertha|Earthquake|p2a: Swampert
+|-activate|p2a: Swampert|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Swampert|255\/401|[from] item: Leftovers
+|-heal|p1a: Bertha|384\/384 tox|[from] item: Leftovers
+|-damage|p1a: Bertha|336\/384 tox|[from] psn
+|turn|27
+|callback|decision
+|
+|switch|p2a: Magnezone|Magnezone|246\/281
+|-item|p2a: Magnezone|Air Balloon
+|move|p1a: Bertha|Earthquake|p2a: Magnezone
+|-immune|p2a: Magnezone|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Bertha|360\/384 tox|[from] item: Leftovers
+|-damage|p1a: Bertha|288\/384 tox|[from] psn
+|turn|28
+|callback|decision
+|
+|switch|p2a: Swampert|Swampert, M|255\/401
+|move|p1a: Bertha|Stealth Rock|p2a: Swampert
+|-sidestart|p2: FelixE|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Swampert|280\/401|[from] item: Leftovers
+|-heal|p1a: Bertha|312\/384 tox|[from] item: Leftovers
+|-damage|p1a: Bertha|216\/384 tox|[from] psn
+|turn|29
+|callback|decision
+|
+|switch|p1a: Debra|Dragonite, F|323\/323
+|move|p2a: Swampert|Ice Beam|p1a: Debra
+|-supereffective|p1a: Debra
+|-damage|p1a: Debra|191\/323
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Debra|171\/323|[from] sandstorm
+|-heal|p2a: Swampert|305\/401|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|switch|p1a: GraffikMonkey|Infernape, M|257\/293
+|move|p2a: Swampert|Toxic|p1a: GraffikMonkey
+|-status|p1a: GraffikMonkey|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: GraffikMonkey|239\/293 tox|[from] sandstorm
+|-heal|p2a: Swampert|330\/401|[from] item: Leftovers
+|-damage|p1a: GraffikMonkey|221\/293 tox|[from] psn
+|turn|31
+|callback|decision
+|
+|move|p2a: Swampert|Protect|p2a: Swampert
+|-singleturn|p2a: Swampert|Protect
+|move|p1a: GraffikMonkey|Close Combat|p2a: Swampert
+|-activate|p2a: Swampert|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: GraffikMonkey|203\/293 tox|[from] sandstorm
+|-heal|p2a: Swampert|355\/401|[from] item: Leftovers
+|-damage|p1a: GraffikMonkey|167\/293 tox|[from] psn
+|turn|32
+|callback|decision
+|
+|move|p1a: GraffikMonkey|Close Combat|p2a: Swampert
+|-crit|p2a: Swampert
+|-damage|p2a: Swampert|76\/401
+|-unboost|p1a: GraffikMonkey|def|1
+|-unboost|p1a: GraffikMonkey|spd|1
+|move|p2a: Swampert|Earthquake|p1a: GraffikMonkey
+|-supereffective|p1a: GraffikMonkey
+|-damage|p1a: GraffikMonkey|0 fnt
+|faint|p1a: GraffikMonkey
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Swampert|101\/401|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Debra|Dragonite, F|171\/323
+|turn|33
+|callback|decision
+|
+|move|p2a: Swampert|Protect|p2a: Swampert
+|-singleturn|p2a: Swampert|Protect
+|move|p1a: Debra|Outrage|p2a: Swampert
+|-activate|p2a: Swampert|Protect
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Debra|151\/323|[from] sandstorm
+|-heal|p2a: Swampert|126\/401|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M, shiny|282\/282
+|-damage|p2a: Scizor|247\/282|[from] Stealth Rock
+|move|p1a: Debra|Earthquake|p2a: Scizor
+|-damage|p2a: Scizor|114\/282
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Debra|131\/323|[from] sandstorm
+|turn|35
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Debra
+|-damage|p1a: Debra|10\/323
+|move|p1a: Debra|Earthquake|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|faint|p2a: Scizor
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Debra|0 fnt|[from] sandstorm
+|faint|p1a: Debra
+|callback|decision
+|
+|switch|p2a: Magnezone|Magnezone|246\/281
+|-damage|p2a: Magnezone|229\/281|[from] Stealth Rock
+|switch|p1a: Bertha|Donphan, F|216\/384 tox
+|-item|p2a: Magnezone|Air Balloon
+|turn|36
+|callback|decision
+|
+|move|p1a: Bertha|Ice Shard|p2a: Magnezone
+|-resisted|p2a: Magnezone
+|-damage|p2a: Magnezone|208\/281
+|-enditem|p2a: Magnezone|Air Balloon
+|move|p2a: Magnezone|Flash Cannon|p1a: Bertha
+|-damage|p1a: Bertha|3\/384 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Bertha|27\/384 tox|[from] item: Leftovers
+|-damage|p1a: Bertha|3\/384 tox|[from] psn
+|turn|37
+|callback|decision
+|
+|switch|p2a: Swampert|Swampert, M|126\/401
+|-damage|p2a: Swampert|101\/401|[from] Stealth Rock
+|move|p1a: Bertha|Earthquake|p2a: Swampert
+|-damage|p2a: Swampert|0 fnt
+|faint|p2a: Swampert
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Bertha|27\/384 tox|[from] item: Leftovers
+|-damage|p1a: Bertha|0 fnt|[from] psn
+|faint|p1a: Bertha
+|
+|win|FelixE
+|raw|Ladder updating...
+|raw|GraffikMonkey's rating: 1800 &rarr; <strong>1745<\/strong><br \/>(-55 for losing)
+|raw|FelixE's rating: 1149 &rarr; <strong>1253<\/strong><br \/>(+104 for winning)
+|chat|GraffikMonkey|gg
+|chat|FelixE|gg
+|leave|GraffikMonkey
+|player|p1

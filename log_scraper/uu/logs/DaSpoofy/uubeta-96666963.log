@@ -1,0 +1,128 @@
+|join|testinglolz
+|join|DaSpoofy
+|player|p1|testinglolz|269
+|player|p2|DaSpoofy|253
+|gametype|singles
+|gen|6
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Chansey, F
+|poke|p1|Chesnaught, M
+|poke|p1|Mew
+|poke|p1|Aggron, M
+|poke|p1|Celebi
+|poke|p1|Alomomola, F
+|poke|p2|Darmanitan, F
+|poke|p2|Metagross
+|poke|p2|Ariados, F
+|poke|p2|Tornadus-Therian, M
+|poke|p2|Mew
+|poke|p2|Manectric, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Aggron|Aggron, M|343\/343
+|switch|p2a: Ariados|Ariados, F|281\/281
+|turn|1
+|
+|-formechange|p1a: Aggron|Aggron-Mega
+|message|Aggron has Mega Evolved into Mega Aggron!
+|move|p2a: Ariados|Sticky Web|p1a: Aggron
+|-sidestart|p1: testinglolz|move: Sticky Web
+|move|p1a: Aggron|Heavy Slam|p2a: Ariados
+|-damage|p2a: Ariados|8\/281
+|
+|turn|2
+|
+|move|p2a: Ariados|Toxic Spikes|p1a: Aggron
+|-sidestart|p1: testinglolz|move: Toxic Spikes
+|move|p1a: Aggron|Dragon Tail|p2a: Ariados
+|-damage|p2a: Ariados|0 fnt
+|faint|p2a: Ariados
+|
+|
+|switch|p2a: Darmanitan|Darmanitan, F|351\/351
+|turn|3
+|
+|switch|p1a: Alomomola|Alomomola, F|534\/534
+|-activate|p1a: Alomomola|move: Sticky Web
+|-unboost|p1a: Alomomola|spe|1
+|-status|p1a: Alomomola|psn
+|move|p2a: Darmanitan|Substitute|p2a: Darmanitan
+|-start|p2a: Darmanitan|Substitute
+|-damage|p2a: Darmanitan|264\/351
+|
+|-damage|p1a: Alomomola|468\/534 psn|[from] psn
+|turn|4
+|
+|move|p2a: Darmanitan|Belly Drum|p2a: Darmanitan
+|-damage|p2a: Darmanitan|89\/351
+|-setboost|p2a: Darmanitan|atk|6|[from] move: Belly Drum
+|move|p1a: Alomomola|Scald|p2a: Darmanitan
+|-supereffective|p2a: Darmanitan
+|-end|p2a: Darmanitan|Substitute
+|
+|-heal|p1a: Alomomola|501\/534 psn|[from] item: Leftovers
+|-damage|p1a: Alomomola|435\/534 psn|[from] psn
+|turn|5
+|
+|move|p2a: Darmanitan|Substitute|p2a: Darmanitan
+|-start|p2a: Darmanitan|Substitute
+|-damage|p2a: Darmanitan|2\/351
+|-enditem|p2a: Darmanitan|Salac Berry|[eat]
+|-boost|p2a: Darmanitan|spe|1|[from] item: Salac Berry
+|move|p1a: Alomomola|Scald|p2a: Darmanitan
+|-supereffective|p2a: Darmanitan
+|-end|p2a: Darmanitan|Substitute
+|
+|-heal|p1a: Alomomola|468\/534 psn|[from] item: Leftovers
+|-damage|p1a: Alomomola|402\/534 psn|[from] psn
+|turn|6
+|
+|move|p2a: Darmanitan|Rock Slide|p1a: Alomomola
+|-damage|p1a: Alomomola|0 fnt
+|faint|p1a: Alomomola
+|
+|
+|switch|p1a: Aggron|Aggron, M|343\/343
+|-formechange|p1a: Aggron|Aggron-Mega
+|-activate|p1a: Aggron|move: Sticky Web
+|-unboost|p1a: Aggron|spe|1
+|turn|7
+|
+|move|p2a: Darmanitan|Fire Punch|p1a: Aggron
+|-supereffective|p1a: Aggron
+|-damage|p1a: Aggron|0 fnt
+|faint|p1a: Aggron
+|
+|
+|switch|p1a: Mew|Mew|404\/404
+|-status|p1a: Mew|psn
+|-activate|p1a: Mew|move: Sticky Web
+|-unboost|p1a: Mew|spe|1
+|turn|8
+|
+|move|p2a: Darmanitan|Fire Punch|p1a: Mew
+|-damage|p1a: Mew|0 fnt
+|faint|p1a: Mew
+|
+|
+|switch|p1a: Chansey|Chansey, F|704\/704
+|-activate|p1a: Chansey|move: Sticky Web
+|-unboost|p1a: Chansey|spe|1
+|-status|p1a: Chansey|psn
+|turn|9
+|-message|testinglolz forfeited.
+|leave|testinglolz
+|
+|win|DaSpoofy
+|raw|Ladder updating...
+|player|p1

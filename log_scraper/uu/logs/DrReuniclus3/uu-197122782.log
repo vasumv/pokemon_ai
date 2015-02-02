@@ -1,0 +1,449 @@
+|join|DrReuniclus3
+|join|strikingdiamonds
+|player|p1|DrReuniclus3|147
+|player|p2|strikingdiamonds|285
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Aggron, M
+|poke|p1|Entei, shiny
+|poke|p1|Vaporeon, M
+|poke|p1|Shaymin
+|poke|p1|Raikou
+|poke|p1|Crobat, M
+|poke|p2|Rotom-Heat
+|poke|p2|Lucario, M
+|poke|p2|Tentacruel, M
+|poke|p2|Haxorus, M
+|poke|p2|Beedrill, F
+|poke|p2|Hippowdon, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Aggron|Aggron, M|344\/344
+|switch|p2a: Haxorus|Haxorus, M|302\/302
+|-ability|p2a: Haxorus|Mold Breaker
+|turn|1
+|
+|detailschange|p1a: Aggron|Aggron-Mega, M
+|-mega|p1a: Aggron|Aggron|Aggronite
+|move|p2a: Haxorus|Dragon Dance|p2a: Haxorus
+|-boost|p2a: Haxorus|atk|1
+|-boost|p2a: Haxorus|spe|1
+|move|p1a: Aggron|Ice Punch|p2a: Haxorus
+|-supereffective|p2a: Haxorus
+|-damage|p2a: Haxorus|136\/302
+|
+|turn|2
+|
+|move|p2a: Haxorus|Earthquake|p1a: Aggron
+|-supereffective|p1a: Aggron
+|-damage|p1a: Aggron|170\/344
+|move|p1a: Aggron|Ice Punch|p2a: Haxorus
+|-supereffective|p2a: Haxorus
+|-damage|p2a: Haxorus|0 fnt
+|faint|p2a: Haxorus
+|
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|241\/241
+|turn|3
+|
+|switch|p1a: Raikou|Raikou|322\/322
+|-ability|p1a: Raikou|Pressure
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Raikou
+|-resisted|p1a: Raikou
+|-damage|p1a: Raikou|268\/322
+|
+|switch|p2a: Beedrill|Beedrill, F|272\/272
+|
+|turn|4
+|
+|detailschange|p2a: Beedrill|Beedrill-Mega, F
+|-mega|p2a: Beedrill|Beedrill|Beedrillite
+|move|p2a: Beedrill|Protect|p2a: Beedrill
+|-singleturn|p2a: Beedrill|Protect
+|move|p1a: Raikou|Extrasensory|p2a: Beedrill
+|-activate|p2a: Beedrill|Protect
+|
+|turn|5
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|241\/241
+|move|p1a: Raikou|Extrasensory|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|151\/241
+|
+|turn|6
+|
+|move|p1a: Raikou|Extrasensory|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|73\/241
+|move|p2a: Rotom-Heat|Overheat|p1a: Raikou
+|-damage|p1a: Raikou|52\/322
+|-unboost|p2a: Rotom-Heat|spa|2
+|
+|turn|7
+|
+|switch|p2a: Hippowdon|Hippowdon, F|420\/420
+|-weather|Sandstorm
+|move|p1a: Raikou|Extrasensory|p2a: Hippowdon
+|-damage|p2a: Hippowdon|304\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Raikou|32\/322|[from] sandstorm
+|-heal|p2a: Hippowdon|330\/420|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Shaymin|Shaymin|341\/341
+|move|p2a: Hippowdon|Stealth Rock|p1a: Shaymin
+|-sidestart|p1: DrReuniclus3|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Shaymin|320\/341|[from] sandstorm
+|-heal|p1a: Shaymin|341\/341|[from] item: Leftovers
+|-heal|p2a: Hippowdon|356\/420|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|73\/241
+|move|p1a: Shaymin|Leech Seed|p2a: Rotom-Heat
+|-start|p2a: Rotom-Heat|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Rotom-Heat|58\/241|[from] sandstorm
+|-damage|p1a: Shaymin|320\/341|[from] sandstorm
+|-heal|p1a: Shaymin|341\/341|[from] item: Leftovers
+|-damage|p2a: Rotom-Heat|28\/241|[from] Leech Seed|[of] p1a: Shaymin
+|turn|10
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|272\/272
+|move|p1a: Shaymin|Protect|p1a: Shaymin
+|-fail|p1a: Shaymin
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Beedrill|255\/272|[from] sandstorm
+|-damage|p1a: Shaymin|320\/341|[from] sandstorm
+|-heal|p1a: Shaymin|341\/341|[from] item: Leftovers
+|turn|11
+|
+|switch|p1a: Crobat|Crobat, M|373\/373
+|-damage|p1a: Crobat|280\/373|[from] Stealth Rock
+|move|p2a: Beedrill|U-turn|p1a: Crobat
+|-resisted|p1a: Crobat
+|-damage|p1a: Crobat|227\/373
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|28\/241
+|
+|-weather|none
+|-heal|p1a: Crobat|250\/373|[from] item: Black Sludge
+|turn|12
+|
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Crobat
+|-supereffective|p1a: Crobat
+|-damage|p1a: Crobat|0 fnt
+|faint|p1a: Crobat
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|255\/272
+|
+|
+|switch|p1a: Entei|Entei, shiny|371\/371
+|-damage|p1a: Entei|279\/371|[from] Stealth Rock
+|-ability|p1a: Entei|Pressure
+|turn|13
+|
+|move|p2a: Beedrill|Protect|p2a: Beedrill
+|-singleturn|p2a: Beedrill|Protect
+|move|p1a: Entei|Extreme Speed|p2a: Beedrill
+|-activate|p2a: Beedrill|Protect
+|
+|turn|14
+|
+|switch|p2a: Hippowdon|Hippowdon, F|356\/420
+|-weather|Sandstorm
+|move|p1a: Entei|Extreme Speed|p2a: Hippowdon
+|-damage|p2a: Hippowdon|256\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Entei|256\/371|[from] sandstorm
+|-heal|p2a: Hippowdon|282\/420|[from] item: Leftovers
+|turn|15
+|
+|switch|p1a: Raikou|Raikou|32\/322
+|-damage|p1a: Raikou|0 fnt|[from] Stealth Rock
+|faint|p1a: Raikou
+|move|p2a: Hippowdon|Roar|p1: Raikou|[notarget]
+|-notarget
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|308\/420|[from] item: Leftovers
+|
+|switch|p1a: Shaymin|Shaymin|341\/341
+|-damage|p1a: Shaymin|299\/341|[from] Stealth Rock
+|turn|16
+|
+|switch|p2a: Tentacruel|Tentacruel, M|364\/364
+|move|p1a: Shaymin|Leech Seed|p2a: Tentacruel
+|-start|p2a: Tentacruel|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Shaymin|278\/341|[from] sandstorm
+|-damage|p2a: Tentacruel|342\/364|[from] sandstorm
+|-heal|p1a: Shaymin|299\/341|[from] item: Leftovers
+|-heal|p2a: Tentacruel|364\/364|[from] item: Black Sludge
+|-damage|p2a: Tentacruel|319\/364|[from] Leech Seed|[of] p1a: Shaymin
+|-damage|p1a: Shaymin|254\/341|[from] ability: Liquid Ooze|[of] p2a: Tentacruel
+|turn|17
+|
+|switch|p1a: Vaporeon|Vaporeon, M|451\/451
+|-damage|p1a: Vaporeon|395\/451|[from] Stealth Rock
+|move|p2a: Tentacruel|Toxic Spikes|p1a: Vaporeon
+|-sidestart|p1: DrReuniclus3|move: Toxic Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Tentacruel|297\/364|[from] sandstorm
+|-damage|p1a: Vaporeon|367\/451|[from] sandstorm
+|-heal|p2a: Tentacruel|319\/364|[from] item: Black Sludge
+|-heal|p1a: Vaporeon|395\/451|[from] item: Leftovers
+|-damage|p2a: Tentacruel|274\/364|[from] Leech Seed|[of] p1a: Vaporeon
+|-damage|p1a: Vaporeon|350\/451|[from] ability: Liquid Ooze|[of] p2a: Tentacruel
+|turn|18
+|
+|move|p2a: Tentacruel|Toxic Spikes|p1a: Vaporeon
+|-sidestart|p1: DrReuniclus3|move: Toxic Spikes
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-weather|none
+|-heal|p2a: Tentacruel|296\/364|[from] item: Black Sludge
+|-heal|p1a: Vaporeon|378\/451|[from] item: Leftovers
+|-damage|p2a: Tentacruel|251\/364|[from] Leech Seed|[of] p1a: Vaporeon
+|-damage|p1a: Vaporeon|333\/451|[from] ability: Liquid Ooze|[of] p2a: Tentacruel
+|turn|19
+|
+|move|p2a: Tentacruel|Knock Off|p1a: Vaporeon
+|-damage|p1a: Vaporeon|278\/451
+|-enditem|p1a: Vaporeon|Leftovers|[from] move: Knock Off|[of] p2a: Tentacruel
+|move|p1a: Vaporeon|Scald|p2a: Tentacruel
+|-crit|p2a: Tentacruel
+|-resisted|p2a: Tentacruel
+|-damage|p2a: Tentacruel|189\/364
+|
+|-heal|p1a: Vaporeon|451\/451|[from] move: Wish|[wisher] Vaporeon
+|-heal|p2a: Tentacruel|211\/364|[from] item: Black Sludge
+|-damage|p2a: Tentacruel|166\/364|[from] Leech Seed|[of] p1a: Vaporeon
+|-damage|p1a: Vaporeon|406\/451|[from] ability: Liquid Ooze|[of] p2a: Tentacruel
+|turn|20
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|28\/241
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|turn|21
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Protect
+|
+|-heal|p1a: Vaporeon|451\/451|[from] move: Wish|[wisher] Vaporeon
+|turn|22
+|
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Vaporeon
+|-supereffective|p1a: Vaporeon
+|-damage|p1a: Vaporeon|259\/451
+|
+|switch|p2a: Tentacruel|Tentacruel, M|166\/364
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-heal|p2a: Tentacruel|188\/364|[from] item: Black Sludge
+|turn|23
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|28\/241
+|move|p1a: Vaporeon|Scald|p2a: Rotom-Heat
+|-supereffective|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|0 fnt
+|faint|p2a: Rotom-Heat
+|
+|-heal|p1a: Vaporeon|451\/451|[from] move: Wish|[wisher] Vaporeon
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|255\/272
+|turn|24
+|
+|move|p2a: Beedrill|Poison Jab|p1a: Vaporeon
+|-damage|p1a: Vaporeon|221\/451
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|turn|25
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Beedrill|Poison Jab|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Protect
+|
+|-heal|p1a: Vaporeon|446\/451|[from] move: Wish|[wisher] Vaporeon
+|turn|26
+|
+|move|p2a: Beedrill|U-turn|p1a: Vaporeon
+|-damage|p1a: Vaporeon|246\/451
+|
+|switch|p2a: Hippowdon|Hippowdon, F|308\/420
+|-weather|Sandstorm
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Vaporeon|218\/451|[from] sandstorm
+|-heal|p2a: Hippowdon|334\/420|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: Vaporeon|Scald|p2a: Hippowdon
+|-supereffective|p2a: Hippowdon
+|-damage|p2a: Hippowdon|74\/420
+|-status|p2a: Hippowdon|brn
+|move|p2a: Hippowdon|Roar|p1a: Vaporeon
+|drag|p1a: Entei|Entei, shiny|256\/371
+|-status|p1a: Entei|tox
+|-damage|p1a: Entei|164\/371 tox|[from] Stealth Rock
+|-ability|p1a: Entei|Pressure
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Entei|141\/371 tox|[from] sandstorm
+|-heal|p1a: Entei|366\/371 tox|[from] move: Wish|[wisher] Vaporeon
+|-heal|p2a: Hippowdon|100\/420 brn|[from] item: Leftovers
+|-damage|p1a: Entei|343\/371 tox|[from] psn
+|-damage|p2a: Hippowdon|48\/420 brn|[from] brn
+|turn|28
+|
+|move|p1a: Entei|Extreme Speed|p2a: Hippowdon
+|-damage|p2a: Hippowdon|0 fnt
+|faint|p2a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Entei|320\/371 tox|[from] sandstorm
+|-damage|p1a: Entei|274\/371 tox|[from] psn
+|
+|switch|p2a: Tentacruel|Tentacruel, M|188\/364
+|turn|29
+|
+|move|p1a: Entei|Extreme Speed|p2a: Tentacruel
+|-damage|p2a: Tentacruel|63\/364
+|move|p2a: Tentacruel|Scald|p1a: Entei
+|-crit|p1a: Entei
+|-supereffective|p1a: Entei
+|-damage|p1a: Entei|0 fnt
+|faint|p1a: Entei
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Tentacruel|41\/364|[from] sandstorm
+|-heal|p2a: Tentacruel|63\/364|[from] item: Black Sludge
+|
+|switch|p1a: Vaporeon|Vaporeon, M|218\/451
+|-status|p1a: Vaporeon|tox
+|-damage|p1a: Vaporeon|162\/451 tox|[from] Stealth Rock
+|turn|30
+|
+|move|p2a: Tentacruel|Knock Off|p1a: Vaporeon
+|-damage|p1a: Vaporeon|123\/451 tox
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-weather|none
+|-heal|p2a: Tentacruel|85\/364|[from] item: Black Sludge
+|-damage|p1a: Vaporeon|95\/451 tox|[from] psn
+|turn|31
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|255\/272
+|move|p1a: Vaporeon|Heal Bell|p1a: Vaporeon
+|-cureteam|p1a: Vaporeon|[from] move: HealBell
+|
+|-heal|p1a: Vaporeon|320\/451|[from] move: Wish|[wisher] Vaporeon
+|turn|32
+|
+|move|p2a: Beedrill|Poison Jab|p1a: Vaporeon
+|-damage|p1a: Vaporeon|76\/451
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|turn|33
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Beedrill|Poison Jab|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Protect
+|
+|-heal|p1a: Vaporeon|301\/451|[from] move: Wish|[wisher] Vaporeon
+|turn|34
+|
+|move|p2a: Beedrill|Poison Jab|p1a: Vaporeon
+|-damage|p1a: Vaporeon|91\/451
+|-status|p1a: Vaporeon|psn
+|move|p1a: Vaporeon|Scald|p2a: Beedrill
+|-crit|p2a: Beedrill
+|-damage|p2a: Beedrill|68\/272
+|
+|-damage|p1a: Vaporeon|35\/451 psn|[from] psn
+|turn|35
+|
+|move|p2a: Beedrill|Poison Jab|p1a: Vaporeon
+|-damage|p1a: Vaporeon|0 fnt
+|faint|p1a: Vaporeon
+|
+|c|âstrikingdiamonds|gg
+|
+|switch|p1a: Aggron|Aggron-Mega, M|170\/344
+|-damage|p1a: Aggron|149\/344|[from] Stealth Rock
+|turn|36
+|
+|move|p2a: Beedrill|U-turn|p1a: Aggron
+|-resisted|p1a: Aggron
+|-damage|p1a: Aggron|110\/344
+|
+|switch|p2a: Tentacruel|Tentacruel, M|85\/364
+|move|p1a: Aggron|Earthquake|p2a: Tentacruel
+|-supereffective|p2a: Tentacruel
+|-damage|p2a: Tentacruel|0 fnt
+|faint|p2a: Tentacruel
+|
+|
+|switch|p2a: Lucario|Lucario, M|281\/281
+|turn|37
+|
+|move|p2a: Lucario|Close Combat|p1a: Aggron
+|-supereffective|p1a: Aggron
+|-damage|p1a: Aggron|0 fnt
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|-damage|p2a: Lucario|253\/281|[from] item: Life Orb
+|faint|p1a: Aggron
+|
+|
+|switch|p1a: Shaymin|Shaymin|254\/341
+|-damage|p1a: Shaymin|212\/341|[from] Stealth Rock
+|-status|p1a: Shaymin|tox
+|turn|38
+|
+|move|p2a: Lucario|Extreme Speed|p1a: Shaymin
+|-damage|p1a: Shaymin|83\/341 tox
+|-damage|p2a: Lucario|225\/281|[from] item: Life Orb
+|move|p1a: Shaymin|Seed Flare|p2a: Lucario
+|-resisted|p2a: Lucario
+|-damage|p2a: Lucario|62\/281
+|
+|-heal|p1a: Shaymin|104\/341 tox|[from] item: Leftovers
+|-damage|p1a: Shaymin|83\/341 tox|[from] psn
+|turn|39
+|c|âDrReuniclus3|gg
+|
+|move|p2a: Lucario|Extreme Speed|p1a: Shaymin
+|-damage|p1a: Shaymin|0 fnt
+|-damage|p2a: Lucario|34\/281|[from] item: Life Orb
+|faint|p1a: Shaymin
+|
+|win|strikingdiamonds
+|raw|Ladder updating...
+|raw|DrReuniclus3's rating: 1390 &rarr; <strong>1362<\/strong><br \/>(-28 for losing)
+|raw|strikingdiamonds's rating: 1250 &rarr; <strong>1285<\/strong><br \/>(+35 for winning)
+|leave|DrReuniclus3
+|player|p1

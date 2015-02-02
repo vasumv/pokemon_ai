@@ -1,0 +1,525 @@
+|join|TofuTroll
+|join|Bob the Bro
+|player|p1|TofuTroll|124
+|player|p2|Bob the Bro|23
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Hippowdon, M
+|poke|p1|Umbreon, M
+|poke|p1|Stoutland, M
+|poke|p1|Krookodile, M
+|poke|p1|Suicune
+|poke|p1|Aggron, M
+|poke|p2|Celebi
+|poke|p2|Crobat, F
+|poke|p2|Aggron, M
+|poke|p2|Blissey, F
+|poke|p2|Alomomola, F
+|poke|p2|Krookodile, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Hippowdon|Hippowdon, M|420\/420
+|switch|p2a: Phi|Krookodile, M|331\/331
+|-ability|p2a: Phi|Intimidate|[of] p1a: Hippowdon
+|-unboost|p1a: Hippowdon|atk|1
+|-weather|Sandstorm
+|turn|1
+|
+|move|p2a: Phi|Knock Off|p1a: Hippowdon
+|-damage|p1a: Hippowdon|273\/420
+|-enditem|p1a: Hippowdon|Smooth Rock|[from] move: Knock Off|[of] p2a: Phi
+|move|p1a: Hippowdon|Stealth Rock|p2a: Phi
+|-sidestart|p2: Bob the Bro|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|2
+|
+|switch|p2a: Delta|Alomomola, F|534\/534
+|-damage|p2a: Delta|468\/534|[from] Stealth Rock
+|move|p1a: Hippowdon|Whirlwind|p2a: Delta
+|drag|p2a: Rho|Aggron, M|344\/344
+|-damage|p2a: Rho|323\/344|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|3
+|
+|detailschange|p2a: Rho|Aggron-Mega, M
+|message|Aggron has Mega Evolved into Mega Aggron!
+|move|p1a: Hippowdon|Earthquake|p2a: Rho
+|-crit|p2a: Rho
+|-supereffective|p2a: Rho
+|-damage|p2a: Rho|175\/344
+|move|p2a: Rho|Stealth Rock|p1a: Hippowdon
+|-sidestart|p1: TofuTroll|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|4
+|
+|switch|p2a: Delta|Alomomola, F|534\/534
+|-damage|p2a: Delta|468\/534|[from] Stealth Rock
+|move|p1a: Hippowdon|Earthquake|p2a: Delta
+|-damage|p2a: Delta|399\/534
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Delta|366\/534|[from] sandstorm
+|turn|5
+|
+|switch|p1a: Umbreon|Umbreon, M|394\/394
+|-damage|p1a: Umbreon|345\/394|[from] Stealth Rock
+|move|p2a: Delta|Toxic|p1a: Umbreon
+|-status|p1a: Umbreon|tox
+|-status|p2a: Delta|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Umbreon|321\/394 tox|[from] sandstorm
+|-damage|p2a: Delta|333\/534 tox|[from] sandstorm
+|-heal|p1a: Umbreon|345\/394 tox|[from] item: Leftovers
+|-damage|p2a: Delta|300\/534 tox|[from] psn
+|-damage|p1a: Umbreon|321\/394 tox|[from] psn
+|turn|6
+|join|or not to Luna
+|
+|move|p1a: Umbreon|Heal Bell|p1a: Umbreon
+|-cureteam|p1a: Umbreon|[from] move: HealBell
+|move|p2a: Delta|Wish|p2a: Delta
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Umbreon|297\/394|[from] sandstorm
+|-damage|p2a: Delta|267\/534 tox|[from] sandstorm
+|-heal|p1a: Umbreon|321\/394|[from] item: Leftovers
+|-damage|p2a: Delta|201\/534 tox|[from] psn
+|turn|7
+|
+|switch|p2a: Rho|Aggron-Mega, M|175\/344
+|-damage|p2a: Rho|154\/344|[from] Stealth Rock
+|switch|p1a: Stoutland|Stoutland, M|312\/312
+|-damage|p1a: Stoutland|273\/312|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Rho|344\/344|[from] move: Wish|[wisher] Delta
+|turn|8
+|
+|switch|p1a: Suicune|Suicune|404\/404
+|-damage|p1a: Suicune|354\/404|[from] Stealth Rock
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Rho|Heavy Slam|p1a: Suicune
+|-resisted|p1a: Suicune
+|-damage|p1a: Suicune|322\/404
+|
+|-weather|none
+|-heal|p1a: Suicune|347\/404|[from] item: Leftovers
+|turn|9
+|
+|switch|p1a: Aggron|Aggron, M|282\/282
+|-damage|p1a: Aggron|265\/282|[from] Stealth Rock
+|switch|p2a: Omega|Celebi|341\/341
+|-damage|p2a: Omega|299\/341|[from] Stealth Rock
+|
+|-heal|p2a: Omega|320\/341|[from] item: Leftovers
+|turn|10
+|join|DiGiTAL WiNG
+|
+|switch|p2a: Delta|Alomomola, F|379\/534 tox
+|-damage|p2a: Delta|313\/534 tox|[from] Stealth Rock
+|detailschange|p1a: Aggron|Aggron-Mega, M
+|message|Aggron has Mega Evolved into Mega Aggron!
+|move|p1a: Aggron|Heavy Slam|p2a: Delta
+|-resisted|p2a: Delta
+|-damage|p2a: Delta|202\/534 tox
+|-damage|p1a: Aggron|218\/282|[from] item: Rocky Helmet|[of] p2a: Delta
+|
+|-damage|p2a: Delta|169\/534 tox|[from] psn
+|turn|11
+|
+|switch|p2a: Rho|Aggron-Mega, M|344\/344
+|-damage|p2a: Rho|323\/344|[from] Stealth Rock
+|move|p1a: Aggron|Earthquake|p2a: Rho
+|-supereffective|p2a: Rho
+|-damage|p2a: Rho|220\/344
+|
+|turn|12
+|
+|move|p1a: Aggron|Earthquake|p2a: Rho
+|-supereffective|p2a: Rho
+|-damage|p2a: Rho|124\/344
+|move|p2a: Rho|Metal Burst|p1a: Aggron
+|-damage|p1a: Aggron|74\/282
+|
+|turn|13
+|
+|switch|p2a: Phi|Krookodile, M|331\/331
+|-damage|p2a: Phi|311\/331|[from] Stealth Rock
+|-ability|p2a: Phi|Intimidate|[of] p1a: Aggron
+|-unboost|p1a: Aggron|atk|1
+|move|p1a: Aggron|Earthquake|p2a: Phi
+|-damage|p2a: Phi|209\/331
+|
+|turn|14
+|
+|switch|p1a: Hippowdon|Hippowdon, M|273\/420
+|-damage|p1a: Hippowdon|247\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p2a: Phi|Earthquake|p1a: Hippowdon
+|-damage|p1a: Hippowdon|90\/420
+|
+|-weather|Sandstorm|[upkeep]
+|turn|15
+|
+|move|p2a: Phi|Earthquake|p1a: Hippowdon
+|-damage|p1a: Hippowdon|0 fnt
+|faint|p1a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Stoutland|Stoutland, M|273\/312
+|-damage|p1a: Stoutland|234\/312|[from] Stealth Rock
+|turn|16
+|
+|switch|p2a: Rho|Aggron-Mega, M|124\/344
+|-damage|p2a: Rho|103\/344|[from] Stealth Rock
+|move|p1a: Stoutland|Return|p2a: Rho
+|-crit|p2a: Rho
+|-resisted|p2a: Rho
+|-damage|p2a: Rho|2\/344
+|
+|-weather|Sandstorm|[upkeep]
+|turn|17
+|
+|move|p1a: Stoutland|Return|p2a: Rho
+|-resisted|p2a: Rho
+|-damage|p2a: Rho|0 fnt
+|faint|p2a: Rho
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Tau|Blissey, F|714\/714
+|-damage|p2a: Tau|625\/714|[from] Stealth Rock
+|turn|18
+|
+|move|p2a: Tau|Protect|p2a: Tau
+|-singleturn|p2a: Tau|Protect
+|move|p1a: Stoutland|Return|p2a: Tau
+|-activate|p2a: Tau|Protect
+|
+|-weather|none
+|-heal|p2a: Tau|669\/714|[from] item: Leftovers
+|turn|19
+|
+|move|p1a: Stoutland|Return|p2a: Tau
+|-damage|p2a: Tau|179\/714
+|move|p2a: Tau|Wish|p2a: Tau
+|
+|-heal|p2a: Tau|223\/714|[from] item: Leftovers
+|turn|20
+|
+|move|p2a: Tau|Protect|p2a: Tau
+|-singleturn|p2a: Tau|Protect
+|move|p1a: Stoutland|Return|p2a: Tau
+|-activate|p2a: Tau|Protect
+|
+|-heal|p2a: Tau|580\/714|[from] move: Wish|[wisher] Tau
+|-heal|p2a: Tau|624\/714|[from] item: Leftovers
+|turn|21
+|
+|move|p1a: Stoutland|Return|p2a: Tau
+|-damage|p2a: Tau|182\/714
+|move|p2a: Tau|Wish|p2a: Tau
+|
+|-heal|p2a: Tau|226\/714|[from] item: Leftovers
+|turn|22
+|
+|switch|p2a: Delta|Alomomola, F|347\/534 tox
+|-damage|p2a: Delta|281\/534 tox|[from] Stealth Rock
+|move|p1a: Stoutland|Return|p2a: Delta
+|-damage|p2a: Delta|71\/534 tox
+|-damage|p1a: Stoutland|182\/312|[from] item: Rocky Helmet|[of] p2a: Delta
+|
+|-heal|p2a: Delta|428\/534 tox|[from] move: Wish|[wisher] Tau
+|-damage|p2a: Delta|395\/534 tox|[from] psn
+|turn|23
+|
+|switch|p1a: Umbreon|Umbreon, M|321\/394
+|-damage|p1a: Umbreon|272\/394|[from] Stealth Rock
+|move|p2a: Delta|Knock Off|p1a: Umbreon
+|-crit|p1a: Umbreon
+|-resisted|p1a: Umbreon
+|-damage|p1a: Umbreon|230\/394
+|-enditem|p1a: Umbreon|Leftovers|[from] move: Knock Off|[of] p2a: Delta
+|
+|-damage|p2a: Delta|329\/534 tox|[from] psn
+|turn|24
+|
+|switch|p2a: Tau|Blissey, F|226\/714
+|-damage|p2a: Tau|137\/714|[from] Stealth Rock
+|move|p1a: Umbreon|Foul Play|p2a: Tau
+|-damage|p2a: Tau|91\/714
+|
+|-heal|p2a: Tau|135\/714|[from] item: Leftovers
+|turn|25
+|
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|move|p2a: Tau|Wish|p2a: Tau
+|
+|-heal|p2a: Tau|179\/714|[from] item: Leftovers
+|turn|26
+|
+|switch|p1a: Krookodile|Krookodile, M|332\/332
+|-damage|p1a: Krookodile|312\/332|[from] Stealth Rock
+|move|p2a: Tau|Seismic Toss|p1a: Krookodile
+|-damage|p1a: Krookodile|212\/332
+|
+|-heal|p2a: Tau|536\/714|[from] move: Wish|[wisher] Tau
+|-heal|p1a: Krookodile|332\/332|[from] move: Wish|[wisher] Umbreon
+|-heal|p2a: Tau|580\/714|[from] item: Leftovers
+|turn|27
+|
+|move|p2a: Tau|Protect|p2a: Tau
+|-singleturn|p2a: Tau|Protect
+|move|p1a: Krookodile|Knock Off|p2a: Tau
+|-activate|p2a: Tau|Protect
+|
+|-heal|p2a: Tau|624\/714|[from] item: Leftovers
+|turn|28
+|
+|move|p1a: Krookodile|Knock Off|p2a: Tau
+|-damage|p2a: Tau|278\/714
+|-enditem|p2a: Tau|Leftovers|[from] move: Knock Off|[of] p1a: Krookodile
+|move|p2a: Tau|Wish|p2a: Tau
+|
+|turn|29
+|
+|switch|p1a: Stoutland|Stoutland, M|182\/312
+|-damage|p1a: Stoutland|143\/312|[from] Stealth Rock
+|move|p2a: Tau|Heal Bell|p2a: Tau
+|-cureteam|p2a: Tau|[from] move: HealBell
+|
+|-heal|p2a: Tau|635\/714|[from] move: Wish|[wisher] Tau
+|turn|30
+|
+|switch|p2a: Delta|Alomomola, F|507\/534
+|-damage|p2a: Delta|441\/534|[from] Stealth Rock
+|move|p1a: Stoutland|Return|p2a: Delta
+|-damage|p2a: Delta|204\/534
+|-damage|p1a: Stoutland|91\/312|[from] item: Rocky Helmet|[of] p2a: Delta
+|
+|turn|31
+|
+|switch|p2a: Beta|Crobat, F|325\/325
+|-damage|p2a: Beta|244\/325|[from] Stealth Rock
+|move|p1a: Stoutland|Return|p2a: Beta
+|-damage|p2a: Beta|0 fnt
+|faint|p2a: Beta
+|
+|
+|switch|p2a: Phi|Krookodile, M|209\/331
+|-damage|p2a: Phi|189\/331|[from] Stealth Rock
+|-ability|p2a: Phi|Intimidate|[of] p1a: Stoutland
+|-unboost|p1a: Stoutland|atk|1
+|turn|32
+|
+|move|p2a: Phi|Earthquake|p1a: Stoutland
+|-damage|p1a: Stoutland|0 fnt
+|faint|p1a: Stoutland
+|
+|
+|switch|p1a: Suicune|Suicune|347\/404
+|-damage|p1a: Suicune|297\/404|[from] Stealth Rock
+|-ability|p1a: Suicune|Pressure
+|turn|33
+|
+|switch|p2a: Omega|Celebi|320\/341
+|-damage|p2a: Omega|278\/341|[from] Stealth Rock
+|switch|p1a: Aggron|Aggron-Mega, M|74\/282
+|-damage|p1a: Aggron|57\/282|[from] Stealth Rock
+|
+|-heal|p2a: Omega|299\/341|[from] item: Leftovers
+|turn|34
+|
+|switch|p2a: Delta|Alomomola, F|382\/534
+|-damage|p2a: Delta|316\/534|[from] Stealth Rock
+|move|p1a: Aggron|Heavy Slam|p2a: Delta
+|-resisted|p2a: Delta
+|-damage|p2a: Delta|220\/534
+|-damage|p1a: Aggron|10\/282|[from] item: Rocky Helmet|[of] p2a: Delta
+|
+|turn|35
+|
+|move|p1a: Aggron|Earthquake|p2a: Delta
+|-damage|p2a: Delta|112\/534
+|move|p2a: Delta|Scald|p1a: Aggron
+|-damage|p1a: Aggron|0 fnt
+|faint|p1a: Aggron
+|
+|
+|switch|p1a: Krookodile|Krookodile, M|332\/332
+|-damage|p1a: Krookodile|312\/332|[from] Stealth Rock
+|turn|36
+|
+|switch|p2a: Tau|Blissey, F|635\/714
+|-damage|p2a: Tau|546\/714|[from] Stealth Rock
+|move|p1a: Krookodile|Knock Off|p2a: Tau
+|-damage|p2a: Tau|314\/714
+|
+|turn|37
+|
+|move|p1a: Krookodile|Knock Off|p2a: Tau
+|-damage|p2a: Tau|106\/714
+|move|p2a: Tau|Wish|p2a: Tau
+|
+|turn|38
+|
+|switch|p1a: Suicune|Suicune|297\/404
+|-damage|p1a: Suicune|247\/404|[from] Stealth Rock
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Tau|Protect|p2a: Tau
+|-fail|p2a: Tau
+|
+|-heal|p2a: Tau|463\/714|[from] move: Wish|[wisher] Tau
+|-heal|p1a: Suicune|272\/404|[from] item: Leftovers
+|turn|39
+|join|4FS
+|
+|switch|p2a: Omega|Celebi|299\/341
+|-damage|p2a: Omega|257\/341|[from] Stealth Rock
+|move|p1a: Suicune|Scald|p2a: Omega
+|-resisted|p2a: Omega
+|-damage|p2a: Omega|212\/341
+|
+|-heal|p2a: Omega|233\/341|[from] item: Leftovers
+|-heal|p1a: Suicune|297\/404|[from] item: Leftovers
+|turn|40
+|
+|switch|p1a: Umbreon|Umbreon, M|230\/394
+|-damage|p1a: Umbreon|181\/394|[from] Stealth Rock
+|move|p2a: Omega|Swords Dance|p2a: Omega
+|-boost|p2a: Omega|atk|2
+|
+|-heal|p2a: Omega|254\/341|[from] item: Leftovers
+|turn|41
+|
+|move|p2a: Omega|Seed Bomb|p1a: Umbreon
+|-damage|p1a: Umbreon|0 fnt
+|faint|p1a: Umbreon
+|
+|-heal|p2a: Omega|275\/341|[from] item: Leftovers
+|
+|switch|p1a: Krookodile|Krookodile, M|312\/332
+|-damage|p1a: Krookodile|292\/332|[from] Stealth Rock
+|turn|42
+|
+|switch|p2a: Tau|Blissey, F|463\/714
+|-damage|p2a: Tau|374\/714|[from] Stealth Rock
+|move|p1a: Krookodile|Knock Off|p2a: Tau
+|-damage|p2a: Tau|173\/714
+|
+|turn|43
+|
+|move|p1a: Krookodile|Knock Off|p2a: Tau
+|-damage|p2a: Tau|0 fnt
+|faint|p2a: Tau
+|-boost|p1a: Krookodile|atk|1|[from] ability: Moxie
+|
+|
+|switch|p2a: Phi|Krookodile, M|189\/331
+|-damage|p2a: Phi|169\/331|[from] Stealth Rock
+|-ability|p2a: Phi|Intimidate|[of] p1a: Krookodile
+|-unboost|p1a: Krookodile|atk|1
+|turn|44
+|join|waiv
+|c| waiv|bob why are you still awake
+|
+|move|p1a: Krookodile|Knock Off|p2a: Phi
+|-resisted|p2a: Phi
+|-damage|p2a: Phi|64\/331
+|-enditem|p2a: Phi|Choice Band|[from] move: Knock Off|[of] p1a: Krookodile
+|move|p2a: Phi|Earthquake|p1a: Krookodile
+|-damage|p1a: Krookodile|99\/332
+|
+|turn|45
+|c| waiv|go 2 bed 
+|c| waiv|isn't it like 2 oclcok
+|c|âBob the Bro|lol i dont need sleep
+|c| waiv|LOL k
+|c| waiv|well i'm gonna go off now
+|c|âBob the Bro|okie
+|c| waiv|cya ;D
+|
+|switch|p1a: Suicune|Suicune|297\/404
+|-damage|p1a: Suicune|247\/404|[from] Stealth Rock
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Phi|Earthquake|p1a: Suicune
+|-damage|p1a: Suicune|142\/404
+|
+|-heal|p1a: Suicune|167\/404|[from] item: Leftovers
+|turn|46
+|c|âBob the Bro|goodnight
+|leave|waiv
+|
+|move|p2a: Phi|Knock Off|p1a: Suicune
+|-damage|p1a: Suicune|70\/404
+|-enditem|p1a: Suicune|Leftovers|[from] move: Knock Off|[of] p2a: Phi
+|move|p1a: Suicune|Scald|p2a: Phi
+|-supereffective|p2a: Phi
+|-damage|p2a: Phi|0 fnt
+|faint|p2a: Phi
+|
+|
+|switch|p2a: Omega|Celebi|275\/341
+|-damage|p2a: Omega|233\/341|[from] Stealth Rock
+|turn|47
+|
+|move|p2a: Omega|Seed Bomb|p1a: Suicune
+|-supereffective|p1a: Suicune
+|-damage|p1a: Suicune|0 fnt
+|faint|p1a: Suicune
+|
+|-heal|p2a: Omega|254\/341|[from] item: Leftovers
+|
+|switch|p1a: Krookodile|Krookodile, M|99\/332
+|-damage|p1a: Krookodile|79\/332|[from] Stealth Rock
+|turn|48
+|
+|move|p1a: Krookodile|Knock Off|p2a: Omega
+|-supereffective|p2a: Omega
+|-damage|p2a: Omega|0 fnt
+|-enditem|p2a: Omega|Leftovers|[from] move: Knock Off|[of] p1a: Krookodile
+|faint|p2a: Omega
+|-boost|p1a: Krookodile|atk|1|[from] ability: Moxie
+|
+|
+|switch|p2a: Delta|Alomomola, F|290\/534
+|-damage|p2a: Delta|224\/534|[from] Stealth Rock
+|turn|49
+|
+|move|p1a: Krookodile|Knock Off|p2a: Delta
+|-damage|p2a: Delta|17\/534
+|-damage|p1a: Krookodile|24\/332|[from] item: Rocky Helmet|[of] p2a: Delta
+|-enditem|p2a: Delta|Rocky Helmet|[from] move: Knock Off|[of] p1a: Krookodile
+|move|p2a: Delta|Scald|p1a: Krookodile
+|-supereffective|p1a: Krookodile
+|-damage|p1a: Krookodile|0 fnt
+|faint|p1a: Krookodile
+|
+|win|Bob the Bro
+|raw|Ladder updating...
+|raw|TofuTroll's rating: 1483 &rarr; <strong>1476<\/strong><br \/>(-7 for losing)
+|raw|Bob the Bro's rating: 1735 &rarr; <strong>1743<\/strong><br \/>(+8 for winning)
+|c|âTofuTroll|gg
+|c|âBob the Bro|clutch af
+|c|âTofuTroll|yep
+|c|âBob the Bro|gg
+|leave|TofuTroll
+|player|p1

@@ -1,0 +1,242 @@
+|join|angre management
+|join|aqbf
+|player|p1|angre management|82
+|player|p2|aqbf|4
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Haxorus, M
+|poke|p1|Lucario, M
+|poke|p1|Nidoqueen, F
+|poke|p1|Crobat, F
+|poke|p1|Azelf
+|poke|p1|Absol, F
+|poke|p2|Vivillon, F
+|poke|p2|Toxicroak, F
+|poke|p2|Chandelure, M
+|poke|p2|Aerodactyl, F, shiny
+|poke|p2|Krookodile, F
+|poke|p2|Swampert, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|c|âaqbf|hi AM
+|c|âangre management|hello
+|
+|start
+|switch|p1a: Azelf|Azelf|291\/291
+|switch|p2a: Kraid|Swampert, F|404\/404
+|turn|1
+|
+|move|p1a: Azelf|Taunt|p2a: Kraid
+|-start|p2a: Kraid|move: Taunt
+|move|p2a: Kraid|Scald|p1a: Azelf
+|-damage|p1a: Azelf|189\/291
+|-status|p1a: Azelf|brn
+|
+|-damage|p1a: Azelf|153\/291 brn|[from] brn
+|turn|2
+|
+|switch|p2a: Ridley|Aerodactyl, F, shiny|331\/331
+|-ability|p2a: Ridley|Pressure
+|move|p1a: Azelf|Stealth Rock|p2a: Ridley
+|-sidestart|p2: aqbf|move: Stealth Rock
+|
+|-damage|p1a: Azelf|117\/291 brn|[from] brn
+|turn|3
+|
+|detailschange|p2a: Ridley|Aerodactyl-Mega, F, shiny
+|message|Aerodactyl has Mega Evolved into Mega Aerodactyl!
+|move|p2a: Ridley|Aerial Ace|p1a: Azelf
+|-damage|p1a: Azelf|0 fnt
+|faint|p1a: Azelf
+|
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|353\/353
+|turn|4
+|
+|move|p2a: Ridley|Defog|p1a: Nidoqueen
+|-unboost|p1a: Nidoqueen|evasion|1
+|-sideend|p2: aqbf|Stealth Rock|[from] move: Defog|[of] p2a: Ridley
+|move|p1a: Nidoqueen|Ice Beam|p2a: Ridley
+|-supereffective|p2a: Ridley
+|-damage|p2a: Ridley|19\/331
+|
+|turn|5
+|
+|switch|p2a: Kraid|Swampert, F|404\/404
+|move|p1a: Nidoqueen|Ice Beam|p2a: Kraid
+|-damage|p2a: Kraid|265\/404
+|
+|-heal|p2a: Kraid|290\/404|[from] item: Leftovers
+|turn|6
+|
+|move|p1a: Nidoqueen|Taunt|p2a: Kraid
+|-start|p2a: Kraid|move: Taunt
+|cant|p2a: Kraid|move: Taunt|Stealth Rock
+|
+|-heal|p2a: Kraid|315\/404|[from] item: Leftovers
+|turn|7
+|c|âaqbf|hazard control?
+|
+|move|p1a: Nidoqueen|Earth Power|p2a: Kraid
+|-damage|p2a: Kraid|85\/404
+|move|p2a: Kraid|Scald|p1a: Nidoqueen
+|-supereffective|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|89\/353
+|
+|-heal|p2a: Kraid|110\/404|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: Nidoqueen|Ice Beam|p2a: Kraid
+|-damage|p2a: Kraid|0 fnt
+|faint|p2a: Kraid
+|
+|
+|switch|p2a: Ridley|Aerodactyl-Mega, F, shiny|19\/331
+|turn|9
+|
+|move|p2a: Ridley|Aqua Tail|p1a: Nidoqueen
+|-supereffective|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|0 fnt
+|faint|p1a: Nidoqueen
+|
+|
+|switch|p1a: Absol|Absol, F|281\/281
+|turn|10
+|
+|detailschange|p1a: Absol|Absol-Mega, F
+|message|Absol has Mega Evolved into Mega Absol!
+|move|p1a: Absol|Sucker Punch|p2a: Ridley
+|-damage|p2a: Ridley|0 fnt
+|faint|p2a: Ridley
+|
+|
+|switch|p2a: Toxicroak|Toxicroak, F|334\/334
+|turn|11
+|
+|move|p1a: Absol|Baton Pass|p1a: Absol
+|
+|switch|p1a: Crobat|Crobat, F|321\/321
+|move|p2a: Toxicroak|Drain Punch|p1a: Crobat
+|-crit|p1a: Crobat
+|-resisted|p1a: Crobat
+|-damage|p1a: Crobat|250\/321
+|-damage|p2a: Toxicroak|301\/334|[from] item: Life Orb
+|
+|turn|12
+|
+|switch|p2a: Phantoon|Chandelure, M|289\/289
+|move|p1a: Crobat|Brave Bird|p2a: Phantoon
+|-damage|p2a: Phantoon|27\/289
+|-damage|p1a: Crobat|164\/321|[from] recoil|[of] p2a: Phantoon
+|
+|-heal|p2a: Phantoon|45\/289|[from] item: Leftovers
+|turn|13
+|
+|move|p1a: Crobat|Brave Bird|p2a: Phantoon
+|-damage|p2a: Phantoon|0 fnt
+|-damage|p1a: Crobat|149\/321|[from] recoil|[of] p2a: Phantoon
+|faint|p2a: Phantoon
+|
+|
+|switch|p2a: Crocomire|Krookodile, F|332\/332
+|turn|14
+|
+|switch|p1a: Lucario|Lucario, M|281\/281
+|move|p2a: Crocomire|Earthquake|p1a: Lucario
+|-supereffective|p1a: Lucario
+|-damage|p1a: Lucario|0 fnt
+|faint|p1a: Lucario
+|-boost|p2a: Crocomire|atk|1|[from] ability: Moxie
+|
+|
+|switch|p1a: Crobat|Crobat, F|149\/321
+|turn|15
+|
+|switch|p2a: Toxicroak|Toxicroak, F|301\/334
+|move|p1a: Crobat|U-turn|p2a: Toxicroak
+|-resisted|p2a: Toxicroak
+|-damage|p2a: Toxicroak|268\/334
+|
+|switch|p1a: Haxorus|Haxorus, M|307\/307
+|-ability|p1a: Haxorus|Mold Breaker
+|
+|turn|16
+|
+|move|p1a: Haxorus|Earthquake|p2a: Toxicroak
+|-supereffective|p2a: Toxicroak
+|-damage|p2a: Toxicroak|0 fnt
+|faint|p2a: Toxicroak
+|
+|
+|switch|p2a: Vivillion|Vivillon, F|301\/301
+|turn|17
+|
+|move|p1a: Haxorus|Outrage|p2a: Vivillion
+|-enditem|p2a: Vivillion|Focus Sash
+|-damage|p2a: Vivillion|1\/301
+|move|p2a: Vivillion|Quiver Dance|p2a: Vivillion
+|-boost|p2a: Vivillion|spa|1
+|-boost|p2a: Vivillion|spd|1
+|-boost|p2a: Vivillion|spe|1
+|
+|turn|18
+|
+|move|p2a: Vivillion|Hurricane|p1a: Haxorus
+|-damage|p1a: Haxorus|0 fnt
+|faint|p1a: Haxorus
+|
+|
+|switch|p1a: Crobat|Crobat, F|149\/321
+|turn|19
+|
+|move|p1a: Crobat|Quick Attack|p2a: Vivillion
+|-damage|p2a: Vivillion|0 fnt
+|faint|p2a: Vivillion
+|
+|
+|switch|p2a: Crocomire|Krookodile, F|332\/332
+|turn|20
+|
+|switch|p1a: Absol|Absol-Mega, F|281\/281
+|move|p2a: Crocomire|Stone Edge|p1a: Absol
+|-damage|p1a: Absol|115\/281
+|
+|turn|21
+|
+|move|p1a: Absol|Sucker Punch|p2a: Crocomire
+|-resisted|p2a: Crocomire
+|-damage|p2a: Crocomire|238\/332
+|move|p2a: Crocomire|Stone Edge|p1a: Absol
+|-damage|p1a: Absol|0 fnt
+|faint|p1a: Absol
+|-boost|p2a: Crocomire|atk|1|[from] ability: Moxie
+|
+|
+|switch|p1a: Crobat|Crobat, F|149\/321
+|turn|22
+|c|âaqbf|let's see if I can hit another se
+|
+|move|p2a: Crocomire|Stone Edge|p1a: Crobat
+|-crit|p1a: Crobat
+|-supereffective|p1a: Crobat
+|-damage|p1a: Crobat|0 fnt
+|faint|p1a: Crobat
+|-boost|p2a: Crocomire|atk|1|[from] ability: Moxie
+|
+|win|aqbf
+|raw|Ladder updating...
+|raw|angre management's rating: 1594 &rarr; <strong>1571<\/strong><br \/>(-23 for losing)
+|raw|aqbf's rating: 1545 &rarr; <strong>1568<\/strong><br \/>(+23 for winning)
+|c|âaqbf|gg
+|c|âangre management|gg

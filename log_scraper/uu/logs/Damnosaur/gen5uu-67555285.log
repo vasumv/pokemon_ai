@@ -1,0 +1,501 @@
+|join|AcoLysis
+|join|Damnosaur
+|player|p1|AcoLysis|76
+|player|p2|Damnosaur|220
+|gametype|singles
+|tier|[Gen 5] UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Abomasnow, F
+|poke|p1|Umbreon, F
+|poke|p1|Victini
+|poke|p1|Zapdos
+|poke|p1|Bronzong
+|poke|p1|Kingdra, F
+|poke|p2|Poliwrath, M
+|poke|p2|Roserade, F
+|poke|p2|Arcanine, F
+|poke|p2|Claydol
+|poke|p2|Sableye, M
+|poke|p2|Scrafty, M
+|teampreview
+|callback|decision
+|chat|Damnosaur|wait 
+|chat|Damnosaur|what com are you using now
+|chat|AcoLysis|same one
+|chat|Damnosaur|so you revived it?
+|chat|AcoLysis|no
+|chat|AcoLysis|its gonna die soon
+|chat|Damnosaur|....
+|chat|Damnosaur|charger?
+|
+|start
+|switch|p1a: Abomasnow|Abomasnow, F|321\/321
+|switch|p2a: Arcanine|Arcanine, F|321\/321
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Abomasnow
+|-unboost|p1a: Abomasnow|atk|1
+|-weather|Hail|[from] ability: Snow Warning|[of] p1a: Abomasnow
+|turn|1
+|callback|decision
+|chat|AcoLysis|die for life
+|chat|Damnosaur|omg
+|
+|switch|p1a: Kingdra|Kingdra, F|291\/291
+|move|p2a: Arcanine|Close Combat|p1a: Kingdra
+|-damage|p1a: Kingdra|125\/291
+|-unboost|p2a: Arcanine|def|1
+|-unboost|p2a: Arcanine|spd|1
+|-damage|p2a: Arcanine|289\/321|[from] item: Life Orb
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Arcanine|269\/321|[from] hail
+|-damage|p1a: Kingdra|107\/291|[from] hail
+|turn|2
+|callback|decision
+|
+|move|p2a: Arcanine|Close Combat|p1a: Kingdra
+|-damage|p1a: Kingdra|0 fnt
+|-unboost|p2a: Arcanine|def|1
+|-unboost|p2a: Arcanine|spd|1
+|-damage|p2a: Arcanine|237\/321|[from] item: Life Orb
+|faint|p1a: Kingdra
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Arcanine|217\/321|[from] hail
+|callback|decision
+|chat|AcoLysis|oh god
+|chat|Damnosaur|pwr
+|
+|switch|p1a: Zapdos|Zapdos|322\/322
+|-ability|p1a: Zapdos|Pressure
+|turn|3
+|callback|decision
+|
+|switch|p2a: Claydol|Claydol|324\/324
+|move|p1a: Zapdos|Volt Switch|p2a: Claydol
+|-immune|p2a: Claydol|[msg]
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Zapdos|302\/322|[from] hail
+|-damage|p2a: Claydol|304\/324|[from] hail
+|-heal|p2a: Claydol|324\/324|[from] item: Leftovers
+|turn|4
+|callback|decision
+|chat|AcoLysis|oh my god
+|
+|switch|p1a: Abomasnow|Abomasnow, F|321\/321
+|switch|p2a: Arcanine|Arcanine, F|217\/321
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Abomasnow
+|-unboost|p1a: Abomasnow|atk|1
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Arcanine|197\/321|[from] hail
+|turn|5
+|callback|decision
+|
+|switch|p1a: Victini|Victini|342\/342
+|move|p2a: Arcanine|Flare Blitz|p1a: Victini
+|-resisted|p1a: Victini
+|-damage|p1a: Victini|202\/342
+|-damage|p2a: Arcanine|151\/321|[from] recoil|[of] p1a: Victini
+|-damage|p2a: Arcanine|119\/321|[from] item: Life Orb
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Victini|181\/342|[from] hail
+|-damage|p2a: Arcanine|99\/321|[from] hail
+|turn|6
+|callback|decision
+|
+|switch|p2a: Poliwrath|Poliwrath, M|384\/384
+|move|p1a: Victini|V-create|p2a: Poliwrath
+|-resisted|p2a: Poliwrath
+|-damage|p2a: Poliwrath|302\/384
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Victini|160\/342|[from] hail
+|-damage|p2a: Poliwrath|278\/384|[from] hail
+|-heal|p2a: Poliwrath|302\/384|[from] item: Leftovers
+|turn|7
+|callback|decision
+|chat|AcoLysis|oh my god
+|chat|AcoLysis|i hate you liao
+|chat|Damnosaur|8)
+|
+|switch|p1a: Zapdos|Zapdos|302\/322
+|-ability|p1a: Zapdos|Pressure
+|move|p2a: Poliwrath|Circle Throw|p1a: Zapdos|[miss]
+|-miss|p2a: Poliwrath|p1a: Zapdos
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Zapdos|282\/322|[from] hail
+|-damage|p2a: Poliwrath|278\/384|[from] hail
+|-heal|p2a: Poliwrath|302\/384|[from] item: Leftovers
+|turn|8
+|callback|decision
+|chat|Damnosaur|nooo
+|chat|AcoLysis|yay
+|
+|move|p1a: Zapdos|Heat Wave|p2a: Poliwrath
+|-miss|p1a: Zapdos|p2a: Poliwrath
+|move|p2a: Poliwrath|Circle Throw|p1a: Zapdos
+|-resisted|p1a: Zapdos
+|-damage|p1a: Zapdos|244\/322
+|drag|p1a: Abomasnow|Abomasnow, F|321\/321
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Poliwrath|278\/384|[from] hail
+|-heal|p2a: Poliwrath|302\/384|[from] item: Leftovers
+|turn|9
+|callback|decision
+|chat|AcoLysis|walao
+|chat|Damnosaur|lmao
+|join|Woony
+|chat|Damnosaur|yo woon
+|
+|move|p1a: Abomasnow|Wood Hammer|p2a: Poliwrath
+|-supereffective|p2a: Poliwrath
+|-damage|p2a: Poliwrath|0 fnt
+|-damage|p1a: Abomasnow|221\/321|[from] recoil|[of] p2a: Poliwrath
+|faint|p2a: Poliwrath
+|
+|-weather|Hail|[upkeep]
+|callback|decision
+|
+|switch|p2a: Arcanine|Arcanine, F|99\/321
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Abomasnow
+|-unboost|p1a: Abomasnow|atk|1
+|turn|10
+|callback|decision
+|chat|AcoLysis|omg
+|chat|AcoLysis|woon
+|chat|AcoLysis|im getting raped by leon
+|chat|Damnosaur|8)
+|
+|switch|p1a: Victini|Victini|160\/342
+|move|p2a: Arcanine|Close Combat|p1a: Victini
+|-resisted|p1a: Victini
+|-damage|p1a: Victini|74\/342
+|-unboost|p2a: Arcanine|def|1
+|-unboost|p2a: Arcanine|spd|1
+|-damage|p2a: Arcanine|67\/321|[from] item: Life Orb
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Victini|53\/342|[from] hail
+|-damage|p2a: Arcanine|47\/321|[from] hail
+|turn|11
+|callback|decision
+|chat|Woony|lel
+|
+|move|p1a: Victini|U-turn|p2a: Arcanine
+|-resisted|p2a: Arcanine
+|-damage|p2a: Arcanine|0 fnt
+|faint|p2a: Arcanine
+|callback|decision
+|chat|Damnosaur|fak
+|
+|switch|p1a: Zapdos|Zapdos|244\/322
+|-ability|p1a: Zapdos|Pressure
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Zapdos|224\/322|[from] hail
+|callback|decision
+|chat|Woony|too purdict
+|chat|Woony|dont let him rock
+|chat|Woony|derek
+|chat|Damnosaur|shh
+|chat|AcoLysis|:)
+|chat|Woony|NO
+|chat|AcoLysis|woon
+|chat|Woony|leon is too op
+|chat|Woony|must nerf
+|chat|AcoLysis|i have hax 
+|chat|Woony|lel
+|chat|Damnosaur|lel
+|
+|switch|p2a: Sableye|Sableye, M|304\/304
+|turn|12
+|callback|decision
+|chat|Woony|not gonna save your victini
+|chat|AcoLysis|my comp
+|chat|AcoLysis|is falshing white & black
+|chat|Woony|WhA
+|chat|Damnosaur|shit
+|chat|Damnosaur|gg
+|
+|move|p1a: Zapdos|Heat Wave|p2a: Sableye
+|-damage|p2a: Sableye|141\/304
+|move|p2a: Sableye|Foul Play|p1a: Zapdos
+|-damage|p1a: Zapdos|112\/322
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Zapdos|92\/322|[from] hail
+|-damage|p2a: Sableye|122\/304|[from] hail
+|-heal|p2a: Sableye|141\/304|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|293\/304
+|move|p1a: Zapdos|Heat Wave|p2a: Sableye
+|-damage|p2a: Sableye|126\/304
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Zapdos|72\/322|[from] hail
+|-damage|p2a: Sableye|107\/304|[from] hail
+|-heal|p2a: Sableye|126\/304|[from] item: Leftovers
+|turn|14
+|callback|decision
+|chat|AcoLysis|oh thats gay
+|
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|278\/304
+|move|p1a: Zapdos|Heat Wave|p2a: Sableye
+|-miss|p1a: Zapdos|p2a: Sableye
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Zapdos|52\/322|[from] hail
+|-damage|p2a: Sableye|259\/304|[from] hail
+|-heal|p2a: Sableye|278\/304|[from] item: Leftovers
+|turn|15
+|callback|decision
+|chat|Woony|why does foul play do so much
+|chat|Damnosaur|inb4 crit
+|chat|Damnosaur|yay
+|chat|AcoLysis|og no
+|
+|switch|p1a: Victini|Victini|53\/342
+|move|p2a: Sableye|Will-O-Wisp|p1a: Victini|[miss]
+|-miss|p2a: Sableye|p1a: Victini
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Victini|32\/342|[from] hail
+|-damage|p2a: Sableye|259\/304|[from] hail
+|-heal|p2a: Sableye|278\/304|[from] item: Leftovers
+|turn|16
+|callback|decision
+|chat|Damnosaur|fak
+|chat|Damnosaur|gg
+|
+|move|p1a: Victini|V-create|p2a: Sableye
+|-damage|p2a: Sableye|4\/304
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|move|p2a: Sableye|Foul Play|p1a: Victini
+|-supereffective|p1a: Victini
+|-damage|p1a: Victini|0 fnt
+|faint|p1a: Victini
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Sableye|0 fnt|[from] hail
+|faint|p2a: Sableye
+|callback|decision
+|chat|Damnosaur|oh cool
+|chat|Woony|wow
+|
+|switch|p1a: Zapdos|Zapdos|52\/322
+|switch|p2a: Claydol|Claydol|324\/324
+|-ability|p1a: Zapdos|Pressure
+|turn|17
+|callback|decision
+|chat|Damnosaur|i think i lost
+|
+|move|p1a: Zapdos|Hidden Power|p2a: Claydol
+|-supereffective|p2a: Claydol
+|-damage|p2a: Claydol|108\/324
+|move|p2a: Claydol|Ice Beam|p1a: Zapdos
+|-supereffective|p1a: Zapdos
+|-damage|p1a: Zapdos|0 fnt
+|faint|p1a: Zapdos
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Claydol|88\/324|[from] hail
+|-heal|p2a: Claydol|108\/324|[from] item: Leftovers
+|callback|decision
+|chat|Damnosaur|ok now maybe not
+|chat|Damnosaur|:]
+|
+|switch|p1a: Abomasnow|Abomasnow, F|221\/321
+|turn|18
+|callback|decision
+|
+|move|p1a: Abomasnow|Wood Hammer|p2a: Claydol
+|-supereffective|p2a: Claydol
+|-damage|p2a: Claydol|0 fnt
+|-damage|p1a: Abomasnow|185\/321|[from] recoil|[of] p2a: Claydol
+|faint|p2a: Claydol
+|
+|-weather|Hail|[upkeep]
+|callback|decision
+|chat|AcoLysis|im scared
+|
+|switch|p2a: Roserade|Roserade, F|262\/262
+|turn|19
+|callback|decision
+|chat|AcoLysis|cos my comp
+|chat|AcoLysis|is blue 
+|chat|AcoLysis|and red
+|chat|Damnosaur|....
+|
+|move|p1a: Abomasnow|Ice Shard|p2a: Roserade
+|-supereffective|p2a: Roserade
+|-damage|p2a: Roserade|58\/262
+|move|p2a: Roserade|Sleep Powder|p1a: Abomasnow
+|-status|p1a: Abomasnow|slp
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Roserade|42\/262|[from] hail
+|turn|20
+|callback|decision
+|
+|cant|p1a: Abomasnow|slp
+|move|p2a: Roserade|Hidden Power|p1a: Abomasnow
+|-supereffective|p1a: Abomasnow
+|-damage|p1a: Abomasnow|0 fnt
+|-damage|p2a: Roserade|16\/262|[from] item: Life Orb
+|faint|p1a: Abomasnow
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Roserade|0 fnt|[from] hail
+|faint|p2a: Roserade
+|callback|decision
+|
+|switch|p2a: Scrafty|Scrafty, M|334\/334
+|switch|p1a: Bronzong|Bronzong|338\/338
+|turn|21
+|callback|decision
+|
+|move|p2a: Scrafty|Bulk Up|p2a: Scrafty
+|-boost|p2a: Scrafty|atk|1
+|-boost|p2a: Scrafty|def|1
+|move|p1a: Bronzong|Toxic|p2a: Scrafty
+|-status|p2a: Scrafty|tox
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Scrafty|314\/334 tox|[from] hail
+|-damage|p1a: Bronzong|317\/338|[from] hail
+|-heal|p2a: Scrafty|334\/334 tox|[from] item: Leftovers
+|-heal|p1a: Bronzong|338\/338|[from] item: Leftovers
+|-damage|p2a: Scrafty|314\/334 tox|[from] psn
+|turn|22
+|callback|decision
+|chat|Damnosaur|gg
+|chat|Woony|shed skin yo
+|chat|Damnosaur|:]
+|chat|Woony|LELELELELELELELELEL
+|chat|Woony|TROLOLOLOL
+|chat|AcoLysis|r u
+|chat|AcoLysis|fking
+|chat|AcoLysis|kidding me
+|chat|Damnosaur|i have rest anyway
+|chat|Damnosaur|so yeah
+|chat|Damnosaur|foul play wont do shit
+|chat|Damnosaur|4x resist
+|chat|Woony|TROLOLOLOL
+|chat|Woony|TROLO
+|chat|Woony|TROLOLOL
+|chat|AcoLysis|woon
+|chat|Damnosaur|+i have defense boosts
+|chat|AcoLysis|diam
+|
+|switch|p1a: Umbreon|Umbreon, F|394\/394
+|move|p2a: Scrafty|Bulk Up|p2a: Scrafty
+|-boost|p2a: Scrafty|atk|1
+|-boost|p2a: Scrafty|def|1
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Umbreon|370\/394|[from] hail
+|-damage|p2a: Scrafty|294\/334 tox|[from] hail
+|-heal|p1a: Umbreon|394\/394|[from] item: Leftovers
+|-heal|p2a: Scrafty|314\/334 tox|[from] item: Leftovers
+|-damage|p2a: Scrafty|274\/334 tox|[from] psn
+|turn|23
+|callback|decision
+|chat|Damnosaur|hahahaha
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Scrafty|Bulk Up|p2a: Scrafty
+|-boost|p2a: Scrafty|atk|1
+|-boost|p2a: Scrafty|def|1
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Umbreon|370\/394|[from] hail
+|-damage|p2a: Scrafty|254\/334 tox|[from] hail
+|-heal|p1a: Umbreon|394\/394|[from] item: Leftovers
+|-activate|p2a: Scrafty|ability: Shed Skin
+|-curestatus|p2a: Scrafty|tox
+|-heal|p2a: Scrafty|274\/334|[from] item: Leftovers
+|turn|24
+|callback|decision
+|chat|Damnosaur|i can setup to +6
+|chat|Damnosaur|there we go
+|
+|move|p1a: Umbreon|Toxic|p2a: Scrafty|[miss]
+|-miss|p1a: Umbreon|p2a: Scrafty
+|move|p2a: Scrafty|Drain Punch|p1a: Umbreon
+|-supereffective|p1a: Umbreon
+|-damage|p1a: Umbreon|22\/394
+|-heal|p2a: Scrafty|334\/334|[from] drain|[of] p1a: Umbreon
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Umbreon|0 fnt|[from] hail
+|-damage|p2a: Scrafty|314\/334|[from] hail
+|-heal|p2a: Scrafty|334\/334|[from] item: Leftovers
+|faint|p1a: Umbreon
+|callback|decision
+|chat|AcoLysis|hahah gg
+|chat|Damnosaur|:]
+|chat|Damnosaur|gg
+|
+|switch|p1a: Bronzong|Bronzong|338\/338
+|turn|25
+|callback|decision
+|
+|move|p2a: Scrafty|Crunch|p1a: Bronzong
+|-damage|p1a: Bronzong|185\/338
+|move|p1a: Bronzong|Toxic|p2a: Scrafty
+|-status|p2a: Scrafty|tox
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Scrafty|314\/334 tox|[from] hail
+|-damage|p1a: Bronzong|164\/338|[from] hail
+|-activate|p2a: Scrafty|ability: Shed Skin
+|-curestatus|p2a: Scrafty|tox
+|-heal|p2a: Scrafty|334\/334|[from] item: Leftovers
+|-heal|p1a: Bronzong|185\/338|[from] item: Leftovers
+|turn|26
+|callback|decision
+|chat|Damnosaur|dat bulk
+|
+|move|p2a: Scrafty|Drain Punch|p1a: Bronzong
+|-damage|p1a: Bronzong|46\/338
+|move|p1a: Bronzong|Gyro Ball|p2a: Scrafty
+|-damage|p2a: Scrafty|310\/334
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Scrafty|290\/334|[from] hail
+|-damage|p1a: Bronzong|25\/338|[from] hail
+|-heal|p2a: Scrafty|310\/334|[from] item: Leftovers
+|-heal|p1a: Bronzong|46\/338|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|move|p2a: Scrafty|Drain Punch|p1a: Bronzong
+|-damage|p1a: Bronzong|0 fnt
+|-heal|p2a: Scrafty|333\/334|[from] drain|[of] p1a: Bronzong
+|faint|p1a: Bronzong
+|
+|win|Damnosaur
+|chat|Damnosaur|gg
+|leave|AcoLysis
+|player|p1

@@ -1,0 +1,189 @@
+|join|hp horse
+|join|Mamoswineflu
+|player|p1|hp horse|5
+|player|p2|Mamoswineflu|265
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Clefable, M
+|poke|p1|Medicham, M
+|poke|p1|Aegislash, M
+|poke|p1|Spiritomb, F
+|poke|p1|Forretress, M
+|poke|p1|Heatran, M
+|poke|p2|Abomasnow, M
+|poke|p2|Heatran, M
+|poke|p2|Mandibuzz, F
+|poke|p2|Aegislash, M
+|poke|p2|Terrakion
+|poke|p2|Reuniclus, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Heatran|Heatran, M|383\/383
+|switch|p2a: Mandibuzz|Mandibuzz, F|424\/424
+|turn|1
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, M|386\/386
+|move|p1a: Heatran|Stealth Rock|p2a: Heatran
+|-sidestart|p2: Mamoswineflu|move: Stealth Rock
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Heatran|Stealth Rock|p1a: Heatran
+|-sidestart|p1: hp horse|move: Stealth Rock
+|move|p1a: Heatran|Earth Power|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|118\/386
+|
+|-heal|p2a: Heatran|142\/386|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-singleturn|p2a: Heatran|Protect
+|move|p1a: Heatran|Lava Plume|p2a: Heatran
+|-activate|p2a: Heatran|Protect
+|
+|-heal|p2a: Heatran|166\/386|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p2a: Reuniclus|Reuniclus, F|421\/421
+|move|p1a: Heatran|Earth Power|p2a: Reuniclus
+|-damage|p2a: Reuniclus|321\/421
+|
+|turn|5
+|callback|decision
+|
+|move|p1a: Heatran|Lava Plume|p2a: Reuniclus
+|-damage|p2a: Reuniclus|188\/421
+|move|p2a: Reuniclus|Shadow Ball|p1a: Heatran
+|-damage|p1a: Heatran|295\/383
+|
+|-heal|p1a: Heatran|318\/383|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p1a: Heatran|Lava Plume|p2a: Reuniclus
+|-damage|p2a: Reuniclus|56\/421
+|-status|p2a: Reuniclus|brn
+|move|p2a: Reuniclus|Focus Blast|p1a: Heatran|[miss]
+|-miss|p2a: Reuniclus|p1a: Heatran
+|
+|-heal|p1a: Heatran|341\/383|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p1a: Heatran|Lava Plume|p2a: Reuniclus
+|-damage|p2a: Reuniclus|0 fnt
+|faint|p2a: Reuniclus
+|
+|-heal|p1a: Heatran|364\/383|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Terrakion|Terrakion|323\/323
+|-damage|p2a: Terrakion|303\/323|[from] Stealth Rock
+|turn|8
+|callback|decision
+|
+|switch|p1a: Forretress|Forretress, M|354\/354
+|-damage|p1a: Forretress|310\/354|[from] Stealth Rock
+|move|p2a: Terrakion|Earthquake|p1a: Forretress
+|-damage|p1a: Forretress|207\/354
+|
+|-heal|p1a: Forretress|229\/354|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p2a: Aegislash|Aegislash, M|324\/324
+|-damage|p2a: Aegislash|304\/324|[from] Stealth Rock
+|move|p1a: Forretress|Volt Switch|p2a: Aegislash
+|-damage|p2a: Aegislash|276\/324
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|364\/383
+|-damage|p1a: Heatran|317\/383|[from] Stealth Rock
+|
+|-heal|p1a: Heatran|340\/383|[from] item: Leftovers
+|-heal|p2a: Aegislash|296\/324|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p1a: Heatran|Lava Plume|p2a: Aegislash
+|-supereffective|p2a: Aegislash
+|-damage|p2a: Aegislash|116\/324
+|-status|p2a: Aegislash|brn
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Sacred Sword|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|224\/383
+|
+|-heal|p1a: Heatran|247\/383|[from] item: Leftovers
+|-heal|p2a: Aegislash|136\/324 brn|[from] item: Leftovers
+|-damage|p2a: Aegislash|96\/324 brn|[from] brn
+|turn|11
+|callback|decision
+|
+|move|p1a: Heatran|Earth Power|p2a: Aegislash
+|-supereffective|p2a: Aegislash
+|-damage|p2a: Aegislash|0 fnt
+|faint|p2a: Aegislash
+|
+|-heal|p1a: Heatran|270\/383|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Terrakion|Terrakion|303\/323
+|-damage|p2a: Terrakion|283\/323|[from] Stealth Rock
+|turn|12
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, M|324\/324
+|-damage|p1a: Aegislash|304\/324|[from] Stealth Rock
+|move|p2a: Terrakion|Close Combat|p1a: Aegislash
+|-immune|p1a: Aegislash|[msg]
+|
+|-heal|p1a: Aegislash|324\/324|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|424\/424
+|-damage|p2a: Mandibuzz|318\/424|[from] Stealth Rock
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Iron Head|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|192\/424
+|
+|-heal|p2a: Mandibuzz|218\/424|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p1a: Forretress|Forretress, M|229\/354
+|-damage|p1a: Forretress|185\/354|[from] Stealth Rock
+|move|p2a: Mandibuzz|Foul Play|p1a: Forretress
+|-damage|p1a: Forretress|122\/354
+|
+|-heal|p2a: Mandibuzz|244\/424|[from] item: Leftovers
+|-heal|p1a: Forretress|144\/354|[from] item: Leftovers
+|turn|15
+|callback|decision
+|-message|Mamoswineflu forfeited.
+|
+|win|hp horse
+|raw|Ladder updating...
+|leave|Mamoswineflu
+|player|p2
+|raw|hp horse's rating: 1587 &rarr; <strong>1611<\/strong><br \/>(+24 for winning)
+|raw|Mamoswineflu's rating: 1583 &rarr; <strong>1558<\/strong><br \/>(-25 for losing)
+|join|frozen speartuna

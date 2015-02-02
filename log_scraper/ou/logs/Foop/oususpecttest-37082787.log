@@ -1,0 +1,370 @@
+|join|Foop
+|join|Astate
+|player|p1|Foop|1
+|player|p2|Astate|196
+|gametype|singles
+|tier|OU (suspect test)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Starmie
+|poke|p1|Jirachi
+|poke|p1|Garchomp, M
+|poke|p1|Volcarona, F
+|poke|p1|Dragonite, M
+|poke|p1|Keldeo
+|poke|p2|Politoed, M
+|poke|p2|Vaporeon, M
+|poke|p2|Keldeo-Resolute
+|poke|p2|Rotom-Wash
+|poke|p2|Slowbro, M
+|poke|p2|Kingdra, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Starmie|Starmie|261\/261
+|switch|p2a: Politoed|Politoed, M|384\/384
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|turn|1
+|callback|decision
+|
+|move|p2a: Politoed|Protect|p2a: Politoed
+|-singleturn|p2a: Politoed|Protect
+|move|p1a: Starmie|Thunderbolt|p2a: Politoed
+|-activate|p2a: Politoed|Protect
+|
+|-weather|RainDance|[upkeep]
+|turn|2
+|callback|decision
+|
+|move|p1a: Starmie|Thunderbolt|p2a: Politoed
+|-supereffective|p2a: Politoed
+|-damage|p2a: Politoed|150\/384
+|-damage|p1a: Starmie|235\/261|[from] item: Life Orb
+|move|p2a: Politoed|Scald|p1a: Starmie
+|-resisted|p1a: Starmie
+|-damage|p1a: Starmie|160\/261
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|174\/384|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p2a: Politoed|Protect|p2a: Politoed
+|-singleturn|p2a: Politoed|Protect
+|move|p1a: Starmie|Thunderbolt|p2a: Politoed
+|-activate|p2a: Politoed|Protect
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|198\/384|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p1a: Starmie|Thunderbolt|p2a: Politoed
+|-supereffective|p2a: Politoed
+|-damage|p2a: Politoed|0 fnt
+|-damage|p1a: Starmie|134\/261|[from] item: Life Orb
+|faint|p2a: Politoed
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|303\/303
+|turn|5
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, M|358\/358
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Garchomp
+|-damage|p1a: Garchomp|4\/358
+|
+|-weather|RainDance|[upkeep]
+|turn|6
+|callback|decision
+|
+|move|p1a: Garchomp|Stealth Rock|p2a: Rotom-Wash
+|-sidestart|p2: Astate|move: Stealth Rock
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Garchomp|[miss]
+|-miss|p2a: Rotom-Wash|p1a: Garchomp
+|
+|-weather|RainDance|[upkeep]
+|turn|7
+|callback|decision
+|
+|move|p1a: Garchomp|Outrage|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|111\/303
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|faint|p1a: Garchomp
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Rotom-Wash|129\/303|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Keldeo|Keldeo|324\/324
+|turn|8
+|callback|decision
+|
+|move|p1a: Keldeo|Secret Sword|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Keldeo-Resolute|Keldeo-Resolute|323\/323
+|-damage|p2a: Keldeo-Resolute|303\/323|[from] Stealth Rock
+|turn|9
+|callback|decision
+|
+|move|p2a: Keldeo-Resolute|Secret Sword|p1a: Keldeo
+|-damage|p1a: Keldeo|159\/324
+|move|p1a: Keldeo|Secret Sword|p2a: Keldeo-Resolute
+|-damage|p2a: Keldeo-Resolute|123\/323
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Keldeo|179\/324|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p2a: Keldeo-Resolute|Secret Sword|p1a: Keldeo
+|-damage|p1a: Keldeo|11\/324
+|move|p1a: Keldeo|Secret Sword|p2a: Keldeo-Resolute
+|-damage|p2a: Keldeo-Resolute|0 fnt
+|faint|p2a: Keldeo-Resolute
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Keldeo|31\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, M|464\/464
+|-damage|p2a: Vaporeon|406\/464|[from] Stealth Rock
+|turn|11
+|callback|decision
+|
+|move|p1a: Keldeo|Calm Mind|p1a: Keldeo
+|-boost|p1a: Keldeo|spa|1
+|-boost|p1a: Keldeo|spd|1
+|move|p2a: Vaporeon|Toxic|p1a: Keldeo
+|-status|p1a: Keldeo|tox
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Keldeo|51\/324 tox|[from] item: Leftovers
+|-heal|p2a: Vaporeon|435\/464|[from] item: Leftovers
+|-damage|p1a: Keldeo|31\/324 tox|[from] psn
+|turn|12
+|callback|decision
+|
+|move|p2a: Vaporeon|Protect|p2a: Vaporeon
+|-singleturn|p2a: Vaporeon|Protect
+|move|p1a: Keldeo|Secret Sword|p2a: Vaporeon
+|-activate|p2a: Vaporeon|Protect
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Keldeo|51\/324 tox|[from] item: Leftovers
+|-heal|p2a: Vaporeon|464\/464|[from] item: Leftovers
+|-damage|p1a: Keldeo|11\/324 tox|[from] psn
+|turn|13
+|callback|decision
+|
+|move|p1a: Keldeo|Secret Sword|p2a: Vaporeon
+|-damage|p2a: Vaporeon|97\/464
+|move|p2a: Vaporeon|Rest|p2a: Vaporeon
+|-status|p2a: Vaporeon|slp
+|-heal|p2a: Vaporeon|464\/464 slp|[silent]
+|-status|p2a: Vaporeon|slp|[from] move: Rest
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Keldeo|31\/324 tox|[from] item: Leftovers
+|-curestatus|p2a: Vaporeon|slp
+|-damage|p1a: Keldeo|0 fnt|[from] psn
+|faint|p1a: Keldeo
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie|134\/261
+|turn|14
+|callback|decision
+|
+|move|p1a: Starmie|Thunderbolt|p2a: Vaporeon
+|-supereffective|p2a: Vaporeon
+|-damage|p2a: Vaporeon|285\/464
+|-damage|p1a: Starmie|108\/261|[from] item: Life Orb
+|move|p2a: Vaporeon|Scald|p1a: Starmie
+|-resisted|p1a: Starmie
+|-damage|p1a: Starmie|14\/261
+|-status|p1a: Starmie|brn
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Vaporeon|314\/464|[from] item: Leftovers
+|-damage|p1a: Starmie|0 fnt|[from] brn
+|faint|p1a: Starmie
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, M|323\/323
+|turn|15
+|callback|decision
+|
+|move|p1a: Dragonite|Dragon Dance|p1a: Dragonite
+|-boost|p1a: Dragonite|atk|1
+|-boost|p1a: Dragonite|spe|1
+|move|p2a: Vaporeon|Toxic|p1a: Dragonite
+|-status|p1a: Dragonite|tox
+|-enditem|p1a: Dragonite|Lum Berry|[eat]
+|-curestatus|p1a: Dragonite|tox
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Vaporeon|343\/464|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Dragonite|Dragon Dance|p1a: Dragonite
+|-boost|p1a: Dragonite|atk|1
+|-boost|p1a: Dragonite|spe|1
+|move|p2a: Vaporeon|Toxic|p1a: Dragonite
+|-status|p1a: Dragonite|tox
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Vaporeon|372\/464|[from] item: Leftovers
+|-damage|p1a: Dragonite|303\/323 tox|[from] psn
+|turn|17
+|callback|decision
+|
+|move|p1a: Dragonite|Dragon Dance|p1a: Dragonite
+|-boost|p1a: Dragonite|atk|1
+|-boost|p1a: Dragonite|spe|1
+|move|p2a: Vaporeon|Scald|p1a: Dragonite
+|-resisted|p1a: Dragonite
+|-damage|p1a: Dragonite|228\/323 tox
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Vaporeon|401\/464|[from] item: Leftovers
+|-damage|p1a: Dragonite|188\/323 tox|[from] psn
+|turn|18
+|callback|decision
+|
+|move|p2a: Vaporeon|Protect|p2a: Vaporeon
+|-singleturn|p2a: Vaporeon|Protect
+|move|p1a: Dragonite|Outrage|p2a: Vaporeon
+|-activate|p2a: Vaporeon|Protect
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Vaporeon|430\/464|[from] item: Leftovers
+|-damage|p1a: Dragonite|128\/323 tox|[from] psn
+|turn|19
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|394\/394
+|-damage|p2a: Slowbro|345\/394|[from] Stealth Rock
+|move|p1a: Dragonite|Outrage|p2a: Slowbro
+|-damage|p2a: Slowbro|0 fnt
+|faint|p2a: Slowbro
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1a: Dragonite|48\/323 tox|[from] psn
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, M|430\/464
+|-damage|p2a: Vaporeon|372\/464|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|move|p2a: Vaporeon|Protect|p2a: Vaporeon
+|-singleturn|p2a: Vaporeon|Protect
+|move|p1a: Dragonite|Outrage|p2a: Vaporeon
+|-activate|p2a: Vaporeon|Protect
+|
+|-end|p1a: Dragonite|rampage
+|-start|p1a: Dragonite|confusion
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Vaporeon|401\/464|[from] item: Leftovers
+|-damage|p1a: Dragonite|0 fnt|[from] psn
+|faint|p1a: Dragonite
+|callback|decision
+|
+|switch|p1a: Volcarona|Volcarona, F|312\/312
+|turn|21
+|callback|decision
+|
+|move|p1a: Volcarona|Quiver Dance|p1a: Volcarona
+|-boost|p1a: Volcarona|spa|1
+|-boost|p1a: Volcarona|spd|1
+|-boost|p1a: Volcarona|spe|1
+|move|p2a: Vaporeon|Scald|p1a: Volcarona
+|-supereffective|p1a: Volcarona
+|-damage|p1a: Volcarona|112\/312
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Volcarona|131\/312|[from] item: Leftovers
+|-heal|p2a: Vaporeon|430\/464|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p1a: Volcarona|Giga Drain|p2a: Vaporeon
+|-supereffective|p2a: Vaporeon
+|-damage|p2a: Vaporeon|200\/464
+|-heal|p1a: Volcarona|246\/312|[from] drain|[of] p2a: Vaporeon
+|move|p2a: Vaporeon|Scald|p1a: Volcarona
+|-supereffective|p1a: Volcarona
+|-damage|p1a: Volcarona|64\/312
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Volcarona|83\/312|[from] item: Leftovers
+|-heal|p2a: Vaporeon|229\/464|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p1a: Volcarona|Bug Buzz|p2a: Vaporeon
+|-damage|p2a: Vaporeon|37\/464
+|move|p2a: Vaporeon|Scald|p1a: Volcarona
+|-supereffective|p1a: Volcarona
+|-damage|p1a: Volcarona|0 fnt
+|faint|p1a: Volcarona
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Vaporeon|66\/464|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Jirachi|Jirachi|341\/341
+|turn|24
+|callback|decision
+|
+|move|p1a: Jirachi|ThunderPunch|p2a: Vaporeon
+|-crit|p2a: Vaporeon
+|-supereffective|p2a: Vaporeon
+|-damage|p2a: Vaporeon|0 fnt
+|faint|p2a: Vaporeon
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Kingdra|Kingdra, F|291\/291
+|-damage|p2a: Kingdra|255\/291|[from] Stealth Rock
+|turn|25
+|callback|decision
+|
+|move|p1a: Jirachi|ThunderPunch|p2a: Kingdra
+|-damage|p2a: Kingdra|172\/291
+|move|p2a: Kingdra|Waterfall|p1a: Jirachi
+|-damage|p1a: Jirachi|166\/341
+|
+|-weather|RainDance|[upkeep]
+|turn|26
+|callback|decision
+|
+|move|p1a: Jirachi|ThunderPunch|p2a: Kingdra
+|-damage|p2a: Kingdra|87\/291
+|move|p2a: Kingdra|Waterfall|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|faint|p1a: Jirachi
+|
+|win|Astate
+|raw|Ladder updating...
+|raw|Foop's rating: 1965 &rarr; <strong>1956<\/strong><br \/>(-9 for losing)
+|raw|Astate's rating: 1730 &rarr; <strong>1753<\/strong><br \/>(+23 for winning)
+|chat|Astate|gg

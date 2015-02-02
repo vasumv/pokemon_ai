@@ -1,0 +1,209 @@
+|join|ViperGold42
+|join|reachzero
+|player|p1|ViperGold42|68
+|player|p2|reachzero|15
+|gametype|singles
+|tier|UU (suspect test)
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Rhyperior, M
+|poke|p1|Arcanine, M
+|poke|p1|Blastoise, M
+|poke|p1|Roserade, F
+|poke|p1|Umbreon, M
+|poke|p1|Flygon, M
+|poke|p2|Zapdos
+|poke|p2|Porygon-Z, shiny
+|poke|p2|Qwilfish, F, shiny
+|poke|p2|Xatu, F, shiny
+|poke|p2|Rhyperior, M
+|poke|p2|Snorlax, F
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Rhyperior|Rhyperior, M|433\/433
+|switch|p2a: Xatu|Xatu, F, shiny|334\/334
+|turn|1
+|callback|decision
+|
+|move|p2a: Xatu|Grass Knot|p1a: Rhyperior
+|-supereffective|p1a: Rhyperior
+|-damage|p1a: Rhyperior|142\/433
+|move|p1a: Rhyperior|Rock Blast|p2a: Xatu
+|-supereffective|p2a: Xatu
+|-damage|p2a: Xatu|224\/334
+|-supereffective|p2a: Xatu
+|-damage|p2a: Xatu|92\/334
+|-hitcount|p2a: Xatu|2
+|
+|-heal|p2a: Xatu|112\/334|[from] item: Leftovers
+|-heal|p1a: Rhyperior|169\/433|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p1a: Umbreon|Umbreon, M|394\/394
+|move|p2a: Xatu|Roost|p2a: Xatu
+|-heal|p2a: Xatu|279\/334
+|
+|-heal|p2a: Xatu|299\/334|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p2a: Xatu|Night Shade|p1a: Umbreon
+|-damage|p1a: Umbreon|294\/394
+|move|p1a: Umbreon|Foul Play|p2a: Xatu
+|-crit|p2a: Xatu
+|-supereffective|p2a: Xatu
+|-damage|p2a: Xatu|0 fnt
+|faint|p2a: Xatu
+|
+|-heal|p1a: Umbreon|318\/394|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Qwilfish|Qwilfish, F, shiny|334\/334
+|-ability|p2a: Qwilfish|Intimidate|[of] p1a: Umbreon
+|-unboost|p1a: Umbreon|atk|1
+|turn|4
+|callback|decision
+|
+|move|p2a: Qwilfish|Spikes|p1a: Umbreon
+|-sidestart|p1: ViperGold42|Spikes
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p1a: Umbreon|342\/394|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M|362\/362
+|-damage|p1a: Blastoise|317\/362|[from] Spikes
+|move|p2a: Qwilfish|Waterfall|p1a: Blastoise
+|-resisted|p1a: Blastoise
+|-damage|p1a: Blastoise|282\/362
+|
+|-heal|p1a: Blastoise|362\/362|[from] move: Wish|[wisher] Umbreon
+|turn|6
+|callback|decision
+|
+|move|p2a: Qwilfish|Thunder Wave|p1a: Blastoise
+|-status|p1a: Blastoise|par
+|move|p1a: Blastoise|Rapid Spin|p2a: Qwilfish
+|-damage|p2a: Qwilfish|321\/334
+|-sideend|p1: ViperGold42|Spikes|[from] move: Rapid Spin|[of] p1a: Blastoise
+|
+|-heal|p2a: Qwilfish|334\/334|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p2a: Qwilfish|Spikes|p1a: Blastoise
+|-sidestart|p1: ViperGold42|Spikes
+|move|p1a: Blastoise|Dragon Tail|p2a: Qwilfish
+|-damage|p2a: Qwilfish|301\/334
+|drag|p2a: Zapdos|Zapdos|383\/383
+|-ability|p2a: Zapdos|Pressure
+|
+|turn|8
+|callback|decision
+|
+|switch|p1a: Flygon|Flygon, M|301\/301
+|move|p2a: Zapdos|Thunderbolt|p1a: Flygon
+|-immune|p1a: Flygon|[msg]
+|
+|turn|9
+|callback|decision
+|
+|move|p1a: Flygon|Outrage|p2a: Zapdos
+|-damage|p2a: Zapdos|56\/383
+|move|p2a: Zapdos|Roost|p2a: Zapdos
+|-heal|p2a: Zapdos|248\/383
+|
+|-heal|p2a: Zapdos|271\/383|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p2a: Qwilfish|Qwilfish, F, shiny|301\/334
+|-ability|p2a: Qwilfish|Intimidate|[of] p1a: Flygon
+|-unboost|p1a: Flygon|atk|1
+|move|p1a: Flygon|Outrage|p2a: Qwilfish
+|-damage|p2a: Qwilfish|139\/334
+|
+|-end|p1a: Flygon|rampage
+|-start|p1a: Flygon|confusion
+|-heal|p2a: Qwilfish|159\/334|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p1a: Umbreon|Umbreon, M|342\/394
+|-damage|p1a: Umbreon|293\/394|[from] Spikes
+|move|p2a: Qwilfish|Pain Split|p1a: Umbreon
+|-sethp|p1a: Umbreon|226\/394|p2a: Qwilfish|226\/334|[from] move: Pain Split
+|
+|-heal|p2a: Qwilfish|246\/334|[from] item: Leftovers
+|-heal|p1a: Umbreon|250\/394|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p2a: Porygon-Z|Porygon-Z, shiny|336\/336
+|move|p1a: Umbreon|Heal Bell|p1a: Umbreon
+|-cureteam|p1a: Umbreon|[from] move: HealBell
+|
+|-heal|p1a: Umbreon|274\/394|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: Porygon-Z|Nasty Plot|p2a: Porygon-Z
+|-boost|p2a: Porygon-Z|spa|2
+|move|p1a: Umbreon|Foul Play|p2a: Porygon-Z
+|-damage|p2a: Porygon-Z|249\/336
+|
+|-heal|p1a: Umbreon|298\/394|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p2a: Porygon-Z|Agility|p2a: Porygon-Z
+|-boost|p2a: Porygon-Z|spe|2
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p1a: Umbreon|322\/394|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p2a: Porygon-Z|Tri Attack|p1a: Umbreon
+|-damage|p1a: Umbreon|70\/394
+|move|p1a: Umbreon|Foul Play|p2a: Porygon-Z
+|-damage|p2a: Porygon-Z|159\/336
+|
+|-heal|p1a: Umbreon|267\/394|[from] move: Wish|[wisher] Umbreon
+|-heal|p1a: Umbreon|291\/394|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Porygon-Z|Nasty Plot|p2a: Porygon-Z
+|-boost|p2a: Porygon-Z|spa|2
+|
+|-heal|p1a: Umbreon|315\/394|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p2a: Porygon-Z|Tri Attack|p1a: Umbreon
+|-damage|p1a: Umbreon|0 fnt
+|faint|p1a: Umbreon
+|
+|callback|decision
+|-message|ViperGold42 forfeited.
+|
+|win|reachzero
+|raw|Ladder updating...
+|raw|ViperGold42's rating: 1084 &rarr; <strong>1079<\/strong><br \/>(-5 for losing)
+|raw|reachzero's rating: 1647 &rarr; <strong>1656<\/strong><br \/>(+9 for winning)
+|leave|ViperGold42
+|player|p1

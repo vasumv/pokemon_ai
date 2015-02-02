@@ -1,0 +1,371 @@
+|join|isuckedadickonce
+|join|Boris127
+|player|p1|isuckedadickonce|10
+|player|p2|Boris127|162
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Bisharp, F
+|poke|p1|Gliscor, F
+|poke|p1|Rotom-Wash
+|poke|p1|Latios, M
+|poke|p1|Charizard, F
+|poke|p1|Sylveon, F
+|poke|p2|Venusaur, F
+|poke|p2|Goodra, M
+|poke|p2|Landorus-Therian, M
+|poke|p2|Infernape, M
+|poke|p2|Azumarill, M
+|poke|p2|Thundurus, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: SO OU|Rotom-Wash|304\/304
+|switch|p2a: Venusaur|Venusaur, F|364\/364
+|turn|1
+|
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p1a: SO OU|Will-O-Wisp|p2a: Venusaur
+|-status|p2a: Venusaur|brn
+|move|p2a: Venusaur|Leech Seed|p1a: SO OU
+|-start|p1a: SO OU|move: Leech Seed
+|
+|-damage|p1a: SO OU|266\/304|[from] Leech Seed|[of] p2a: Venusaur
+|-damage|p2a: Venusaur|319\/364 brn|[from] brn
+|turn|2
+|
+|switch|p1a: Edgyzard|Charizard, F|298\/298
+|move|p2a: Venusaur|Leech Seed|p1a: Edgyzard
+|-start|p1a: Edgyzard|move: Leech Seed
+|
+|-damage|p1a: Edgyzard|261\/298|[from] Leech Seed|[of] p2a: Venusaur
+|-heal|p2a: Venusaur|356\/364 brn|[silent]
+|-damage|p2a: Venusaur|311\/364 brn|[from] brn
+|turn|3
+|
+|switch|p1a: THE CLAMPS|Gliscor, F|354\/354
+|switch|p2a: Goodra|Goodra, M|384\/384
+|
+|-activate|p1a: THE CLAMPS|item: Toxic Orb
+|-status|p1a: THE CLAMPS|tox
+|turn|4
+|
+|move|p1a: THE CLAMPS|Stealth Rock|p2a: Goodra
+|-sidestart|p2: Boris127|move: Stealth Rock
+|move|p2a: Goodra|Ice Beam|p1a: THE CLAMPS
+|-supereffective|p1a: THE CLAMPS
+|-damage|p1a: THE CLAMPS|0 fnt
+|faint|p1a: THE CLAMPS
+|
+|
+|switch|p1a: Bundle of Sticks|Sylveon, F|394\/394
+|turn|5
+|
+|switch|p2a: Venusaur|Venusaur, F|311\/364 brn
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|-damage|p2a: Venusaur|266\/364 brn|[from] Stealth Rock
+|move|p1a: Bundle of Sticks|Toxic|p2a: Venusaur
+|-fail|p2a: Venusaur
+|
+|-damage|p2a: Venusaur|221\/364 brn|[from] brn
+|turn|6
+|
+|move|p2a: Venusaur|Leech Seed|p1a: Bundle of Sticks
+|-start|p1a: Bundle of Sticks|move: Leech Seed
+|move|p1a: Bundle of Sticks|Wish|p1a: Bundle of Sticks
+|
+|-damage|p1a: Bundle of Sticks|345\/394|[from] Leech Seed|[of] p2a: Venusaur
+|-heal|p2a: Venusaur|270\/364 brn|[silent]
+|-damage|p2a: Venusaur|225\/364 brn|[from] brn
+|turn|7
+|
+|switch|p1a: Dragon Plane|Latios, M|302\/302
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|364\/364 brn
+|
+|-damage|p2a: Venusaur|319\/364 brn|[from] brn
+|turn|8
+|
+|switch|p2a: Azumarill|Azumarill, M|404\/404
+|-damage|p2a: Azumarill|354\/404|[from] Stealth Rock
+|move|p1a: Dragon Plane|Psyshock|p2a: Azumarill
+|-damage|p2a: Azumarill|179\/404
+|
+|turn|9
+|
+|move|p1a: Dragon Plane|Psyshock|p2a: Azumarill
+|-damage|p2a: Azumarill|0 fnt
+|faint|p2a: Azumarill
+|
+|
+|switch|p2a: Thundurus|Thundurus, M|300\/300
+|-damage|p2a: Thundurus|225\/300|[from] Stealth Rock
+|turn|10
+|
+|move|p2a: Thundurus|Substitute|p2a: Thundurus
+|-start|p2a: Thundurus|Substitute
+|-damage|p2a: Thundurus|150\/300
+|move|p1a: Dragon Plane|Draco Meteor|p2a: Thundurus|[miss]
+|-miss|p1a: Dragon Plane|p2a: Thundurus
+|
+|-heal|p2a: Thundurus|168\/300|[from] item: Leftovers
+|turn|11
+|
+|move|p2a: Thundurus|Thunderbolt|p1a: Dragon Plane
+|-resisted|p1a: Dragon Plane
+|-damage|p1a: Dragon Plane|224\/302
+|move|p1a: Dragon Plane|Psyshock|p2a: Thundurus
+|-end|p2a: Thundurus|Substitute
+|
+|-heal|p2a: Thundurus|186\/300|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Thundurus|Substitute|p2a: Thundurus
+|-start|p2a: Thundurus|Substitute
+|-damage|p2a: Thundurus|111\/300
+|move|p1a: Dragon Plane|Psyshock|p2a: Thundurus
+|-crit|p2a: Thundurus
+|-end|p2a: Thundurus|Substitute
+|
+|-heal|p2a: Thundurus|129\/300|[from] item: Leftovers
+|turn|13
+|
+|move|p2a: Thundurus|Thunderbolt|p1a: Dragon Plane
+|-resisted|p1a: Dragon Plane
+|-damage|p1a: Dragon Plane|154\/302
+|move|p1a: Dragon Plane|Psyshock|p2a: Thundurus
+|-damage|p2a: Thundurus|0 fnt
+|faint|p2a: Thundurus
+|
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|382\/382
+|-damage|p2a: Landorus-Therian|335\/382|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Dragon Plane
+|-unboost|p1a: Dragon Plane|atk|1
+|turn|14
+|
+|move|p1a: Dragon Plane|Draco Meteor|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|64\/382
+|-unboost|p1a: Dragon Plane|spa|2
+|move|p2a: Landorus-Therian|Knock Off|p1a: Dragon Plane
+|-supereffective|p1a: Dragon Plane
+|-damage|p1a: Dragon Plane|0 fnt
+|faint|p1a: Dragon Plane
+|
+|-heal|p2a: Landorus-Therian|87\/382|[from] item: Leftovers
+|
+|switch|p1a: SO OU|Rotom-Wash|266\/304
+|turn|15
+|
+|move|p1a: SO OU|Trick|p2a: Landorus-Therian
+|-activate|p1a: SO OU|move: Trick|[of] p2a: Landorus-Therian
+|-item|p2a: Landorus-Therian|Choice Scarf|[from] move: Trick
+|-item|p1a: SO OU|Leftovers|[from] move: Trick
+|move|p2a: Landorus-Therian|Stealth Rock|p1a: SO OU
+|-sidestart|p1: isuckedadickonce|move: Stealth Rock
+|
+|-heal|p1a: SO OU|285\/304|[from] item: Leftovers
+|turn|16
+|
+|switch|p2a: Goodra|Goodra, M|384\/384
+|-damage|p2a: Goodra|336\/384|[from] Stealth Rock
+|move|p1a: SO OU|Will-O-Wisp|p2a: Goodra
+|-status|p2a: Goodra|brn
+|
+|-heal|p1a: SO OU|304\/304|[from] item: Leftovers
+|-damage|p2a: Goodra|288\/384 brn|[from] brn
+|turn|17
+|
+|move|p1a: SO OU|Volt Switch|p2a: Goodra
+|-resisted|p2a: Goodra
+|-damage|p2a: Goodra|266\/384 brn
+|
+|switch|p1a: Bundle of Sticks|Sylveon, F|345\/394
+|-damage|p1a: Bundle of Sticks|296\/394|[from] Stealth Rock
+|move|p2a: Goodra|Dragon Pulse|p1a: Bundle of Sticks
+|-immune|p1a: Bundle of Sticks|[msg]
+|
+|-heal|p1a: Bundle of Sticks|320\/394|[from] item: Leftovers
+|-damage|p2a: Goodra|218\/384 brn|[from] brn
+|turn|18
+|
+|switch|p2a: Venusaur|Venusaur, F|319\/364 brn
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|-damage|p2a: Venusaur|274\/364 brn|[from] Stealth Rock
+|move|p1a: Bundle of Sticks|Hyper Voice|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|211\/364 brn
+|
+|-heal|p1a: Bundle of Sticks|344\/394|[from] item: Leftovers
+|-damage|p2a: Venusaur|166\/364 brn|[from] brn
+|turn|19
+|
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|348\/364 brn
+|move|p1a: Bundle of Sticks|Hyper Voice|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|287\/364 brn
+|
+|-heal|p1a: Bundle of Sticks|368\/394|[from] item: Leftovers
+|-damage|p2a: Venusaur|242\/364 brn|[from] brn
+|turn|20
+|
+|switch|p1a: Edgyzard|Charizard, F|261\/298
+|-damage|p1a: Edgyzard|112\/298|[from] Stealth Rock
+|move|p2a: Venusaur|Leech Seed|p1a: Edgyzard
+|-start|p1a: Edgyzard|move: Leech Seed
+|
+|-damage|p1a: Edgyzard|75\/298|[from] Leech Seed|[of] p2a: Venusaur
+|-heal|p2a: Venusaur|279\/364 brn|[silent]
+|-damage|p2a: Venusaur|234\/364 brn|[from] brn
+|turn|21
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|87\/382
+|-damage|p2a: Landorus-Therian|40\/382|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Edgyzard
+|-unboost|p1a: Edgyzard|atk|1
+|-formechange|p1a: Edgyzard|Charizard-Mega-X
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p1a: Edgyzard|Roost|p1a: Edgyzard
+|-heal|p1a: Edgyzard|224\/298
+|
+|-damage|p1a: Edgyzard|187\/298|[from] Leech Seed|[of] p2a: Landorus-Therian
+|-heal|p2a: Landorus-Therian|77\/382|[silent]
+|turn|22
+|
+|switch|p1a: SO OU|Rotom-Wash|304\/304
+|-damage|p1a: SO OU|266\/304|[from] Stealth Rock
+|move|p2a: Landorus-Therian|Earthquake|p1a: SO OU
+|-immune|p1a: SO OU|[msg]
+|
+|-heal|p1a: SO OU|285\/304|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Landorus-Therian|Earthquake|p1a: SO OU
+|-immune|p1a: SO OU|[msg]
+|move|p1a: SO OU|Hydro Pump|p2a: Landorus-Therian|[miss]
+|-miss|p1a: SO OU|p2a: Landorus-Therian
+|
+|-heal|p1a: SO OU|304\/304|[from] item: Leftovers
+|turn|24
+|
+|switch|p2a: Venusaur|Venusaur, F|234\/364 brn
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|-damage|p2a: Venusaur|189\/364 brn|[from] Stealth Rock
+|move|p1a: SO OU|Hydro Pump|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|138\/364 brn
+|
+|-damage|p2a: Venusaur|93\/364 brn|[from] brn
+|turn|25
+|
+|move|p1a: SO OU|Volt Switch|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|62\/364 brn
+|
+|switch|p1a: Edgyzard|Charizard, F|187\/298
+|-formechange|p1a: Edgyzard|Charizard-Mega-X
+|-damage|p1a: Edgyzard|113\/298|[from] Stealth Rock
+|move|p2a: Venusaur|Synthesis|p2a: Venusaur
+|-heal|p2a: Venusaur|244\/364 brn
+|
+|-damage|p2a: Venusaur|199\/364 brn|[from] brn
+|turn|26
+|
+|move|p1a: Edgyzard|Flare Blitz|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|0 fnt
+|-damage|p1a: Edgyzard|47\/298|[from] recoil|[of] p2a: Venusaur
+|faint|p2a: Venusaur
+|
+|
+|switch|p2a: Infernape|Infernape, M|293\/293
+|-damage|p2a: Infernape|257\/293|[from] Stealth Rock
+|turn|27
+|
+|switch|p1a: SO OU|Rotom-Wash|304\/304
+|-damage|p1a: SO OU|266\/304|[from] Stealth Rock
+|move|p2a: Infernape|Close Combat|p1a: SO OU
+|-damage|p1a: SO OU|133\/304
+|-unboost|p2a: Infernape|def|1
+|-unboost|p2a: Infernape|spd|1
+|
+|-heal|p1a: SO OU|152\/304|[from] item: Leftovers
+|turn|28
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|77\/382
+|-damage|p2a: Landorus-Therian|30\/382|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: SO OU
+|-unboost|p1a: SO OU|atk|1
+|move|p1a: SO OU|Hydro Pump|p2a: Landorus-Therian
+|-supereffective|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|faint|p2a: Landorus-Therian
+|
+|-heal|p1a: SO OU|171\/304|[from] item: Leftovers
+|
+|switch|p2a: Goodra|Goodra, M|218\/384 brn
+|-damage|p2a: Goodra|170\/384 brn|[from] Stealth Rock
+|turn|29
+|
+|move|p1a: SO OU|Volt Switch|p2a: Goodra
+|-resisted|p2a: Goodra
+|-damage|p2a: Goodra|150\/384 brn
+|
+|switch|p1a: Bundle of Sticks|Sylveon, F|368\/394
+|-damage|p1a: Bundle of Sticks|319\/394|[from] Stealth Rock
+|move|p2a: Goodra|Thunderbolt|p1a: Bundle of Sticks
+|-damage|p1a: Bundle of Sticks|255\/394
+|
+|-heal|p1a: Bundle of Sticks|279\/394|[from] item: Leftovers
+|-damage|p2a: Goodra|102\/384 brn|[from] brn
+|turn|30
+|
+|move|p2a: Goodra|Thunderbolt|p1a: Bundle of Sticks
+|-damage|p1a: Bundle of Sticks|219\/394
+|move|p1a: Bundle of Sticks|Wish|p1a: Bundle of Sticks
+|
+|-heal|p1a: Bundle of Sticks|243\/394|[from] item: Leftovers
+|-damage|p2a: Goodra|54\/384 brn|[from] brn
+|turn|31
+|
+|move|p2a: Goodra|Thunderbolt|p1a: Bundle of Sticks
+|-damage|p1a: Bundle of Sticks|181\/394
+|move|p1a: Bundle of Sticks|Hyper Voice|p2a: Goodra
+|-supereffective|p2a: Goodra
+|-damage|p2a: Goodra|0 fnt
+|faint|p2a: Goodra
+|
+|-heal|p1a: Bundle of Sticks|378\/394|[from] move: Wish|[wisher] Bundle of Sticks
+|-heal|p1a: Bundle of Sticks|394\/394|[from] item: Leftovers
+|
+|switch|p2a: Infernape|Infernape, M|257\/293
+|-damage|p2a: Infernape|221\/293|[from] Stealth Rock
+|turn|32
+|
+|move|p2a: Infernape|Close Combat|p1a: Bundle of Sticks
+|-resisted|p1a: Bundle of Sticks
+|-damage|p1a: Bundle of Sticks|253\/394
+|-unboost|p2a: Infernape|def|1
+|-unboost|p2a: Infernape|spd|1
+|move|p1a: Bundle of Sticks|Hyper Voice|p2a: Infernape
+|-damage|p2a: Infernape|0 fnt
+|faint|p2a: Infernape
+|
+|win|isuckedadickonce
+|raw|Ladder updating...
+|raw|isuckedadickonce's rating: 1304 &rarr; <strong>1332<\/strong><br \/>(+28 for winning)
+|raw|Boris127's rating: 1338 &rarr; <strong>1311<\/strong><br \/>(-27 for losing)
+|chat|isuckedadickonce|gg
+|leave|Boris127
+|player|p2

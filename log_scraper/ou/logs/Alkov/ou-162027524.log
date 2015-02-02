@@ -1,0 +1,489 @@
+|join|Alkov
+|join|paperkath
+|player|p1|Alkov|261
+|player|p2|paperkath|101
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Ferrothorn, F
+|poke|p1|Charizard, M, shiny
+|poke|p1|Azumarill, M
+|poke|p1|Clefable, F
+|poke|p1|Latios, M
+|poke|p1|Landorus-Therian, M, shiny
+|poke|p2|Venomoth, M
+|poke|p2|Togekiss, M
+|poke|p2|Latios, M
+|poke|p2|Jirachi
+|poke|p2|Jolteon, F
+|poke|p2|Hippowdon, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Landorus-Therian|Landorus-Therian, M, shiny|320\/320
+|switch|p2a: Jolteon|Jolteon, F|272\/272
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Jolteon
+|-unboost|p2a: Jolteon|atk|1
+|-item|p2a: Jolteon|Air Balloon
+|turn|1
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Jolteon
+|-damage|p2a: Jolteon|125\/272
+|-enditem|p2a: Jolteon|Air Balloon
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|352\/352
+|move|p2a: Jolteon|Toxic|p1a: Ferrothorn
+|-fail|p1a: Ferrothorn
+|
+|turn|2
+|
+|move|p2a: Jolteon|Volt Switch|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|312\/352
+|
+|switch|p2a: Jirachi|Jirachi|404\/404
+|move|p1a: Ferrothorn|Stealth Rock|p2a: Jirachi
+|-sidestart|p2: paperkath|move: Stealth Rock
+|
+|-heal|p1a: Ferrothorn|334\/352|[from] item: Leftovers
+|turn|3
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M, shiny|320\/320
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Jirachi
+|-unboost|p2a: Jirachi|atk|1
+|move|p2a: Jirachi|Wish|p2a: Jirachi
+|
+|turn|4
+|
+|switch|p2a: Togekiss|Togekiss, M|312\/312
+|-damage|p2a: Togekiss|234\/312|[from] Stealth Rock
+|move|p1a: Landorus-Therian|Knock Off|p2a: Togekiss
+|-resisted|p2a: Togekiss
+|-damage|p2a: Togekiss|161\/312
+|-enditem|p2a: Togekiss|Leftovers|[from] move: Knock Off|[of] p1a: Landorus-Therian
+|
+|-heal|p2a: Togekiss|312\/312|[from] move: Wish|[wisher] Jirachi
+|turn|5
+|
+|switch|p1a: Latios|Latios, M|302\/302
+|move|p2a: Togekiss|Substitute|p2a: Togekiss
+|-start|p2a: Togekiss|Substitute
+|-damage|p2a: Togekiss|234\/312
+|
+|turn|6
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|334\/352
+|move|p2a: Togekiss|Thunder Wave|p1a: Ferrothorn
+|-status|p1a: Ferrothorn|par
+|
+|-heal|p1a: Ferrothorn|352\/352 par|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M, shiny|320\/320
+|-activate|p2a: Togekiss|Substitute|ability: Intimidate|[of] p1a: Landorus-Therian
+|move|p2a: Togekiss|Air Slash|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|164\/320
+|
+|turn|8
+|
+|move|p1a: Landorus-Therian|Stone Edge|p2a: Togekiss
+|-supereffective|p2a: Togekiss
+|-end|p2a: Togekiss|Substitute
+|move|p2a: Togekiss|Air Slash|p1a: Landorus-Therian|[miss]
+|-miss|p2a: Togekiss|p1a: Landorus-Therian
+|
+|turn|9
+|
+|switch|p2a: Cool Story Bro|Hippowdon, M|420\/420
+|-damage|p2a: Cool Story Bro|394\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p1a: Landorus-Therian|Stone Edge|p2a: Cool Story Bro
+|-resisted|p2a: Cool Story Bro
+|-damage|p2a: Cool Story Bro|346\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Cool Story Bro|372\/420|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Azumarill|Azumarill, M|403\/403
+|move|p2a: Cool Story Bro|Stealth Rock|p1a: Azumarill
+|-sidestart|p1: Alkov|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Azumarill|378\/403|[from] sandstorm
+|-heal|p2a: Cool Story Bro|398\/420|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Azumarill|Waterfall|p2a: Cool Story Bro
+|-supereffective|p2a: Cool Story Bro
+|-damage|p2a: Cool Story Bro|48\/420
+|move|p2a: Cool Story Bro|Roar|p1a: Azumarill
+|drag|p1a: Landorus-Therian|Landorus-Therian, M, shiny|164\/320
+|-damage|p1a: Landorus-Therian|124\/320|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Cool Story Bro
+|-unboost|p2a: Cool Story Bro|atk|1
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Cool Story Bro|74\/420|[from] item: Leftovers
+|turn|12
+|
+|switch|p2a: Latios|Latios, M|302\/302
+|-damage|p2a: Latios|265\/302|[from] Stealth Rock
+|move|p1a: Landorus-Therian|Knock Off|p2a: Latios
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|-enditem|p2a: Latios|Choice Scarf|[from] move: Knock Off|[of] p1a: Landorus-Therian
+|faint|p2a: Latios
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Togekiss|Togekiss, M|234\/312
+|-damage|p2a: Togekiss|156\/312|[from] Stealth Rock
+|turn|13
+|
+|switch|p1a: Azumarill|Azumarill, M|378\/403
+|-damage|p1a: Azumarill|328\/403|[from] Stealth Rock
+|move|p2a: Togekiss|Substitute|p2a: Togekiss
+|-start|p2a: Togekiss|Substitute
+|-damage|p2a: Togekiss|78\/312
+|
+|-weather|none
+|turn|14
+|
+|move|p1a: Azumarill|Aqua Jet|p2a: Togekiss
+|-end|p2a: Togekiss|Substitute
+|move|p2a: Togekiss|Thunder Wave|p1a: Azumarill
+|-status|p1a: Azumarill|par
+|
+|turn|15
+|
+|switch|p2a: Jirachi|Jirachi|404\/404
+|-damage|p2a: Jirachi|379\/404|[from] Stealth Rock
+|move|p1a: Azumarill|Aqua Jet|p2a: Jirachi
+|-damage|p2a: Jirachi|259\/404
+|
+|-heal|p2a: Jirachi|284\/404|[from] item: Leftovers
+|turn|16
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|352\/352 par
+|-damage|p1a: Ferrothorn|330\/352 par|[from] Stealth Rock
+|move|p2a: Jirachi|Iron Head|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|292\/352 par
+|-damage|p2a: Jirachi|234\/404|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|
+|-heal|p2a: Jirachi|259\/404|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|314\/352 par|[from] item: Leftovers
+|turn|17
+|
+|move|p2a: Jirachi|Wish|p2a: Jirachi
+|move|p1a: Ferrothorn|Leech Seed|p2a: Jirachi
+|-start|p2a: Jirachi|move: Leech Seed
+|
+|-heal|p2a: Jirachi|284\/404|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|336\/352 par|[from] item: Leftovers
+|-damage|p2a: Jirachi|234\/404|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|352\/352 par|[silent]
+|turn|18
+|
+|move|p2a: Jirachi|Fire Punch|p1a: Ferrothorn
+|-supereffective|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|180\/352 par
+|-damage|p2a: Jirachi|184\/404|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|move|p1a: Ferrothorn|Leech Seed|p2a: Jirachi
+|-fail|p2a: Jirachi
+|
+|-heal|p2a: Jirachi|386\/404|[from] move: Wish|[wisher] Jirachi
+|-heal|p2a: Jirachi|404\/404|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|202\/352 par|[from] item: Leftovers
+|-damage|p2a: Jirachi|354\/404|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|252\/352 par|[silent]
+|turn|19
+|
+|move|p2a: Jirachi|Wish|p2a: Jirachi
+|move|p1a: Ferrothorn|Thunder Wave|p2a: Jirachi
+|-status|p2a: Jirachi|par
+|
+|-heal|p2a: Jirachi|379\/404 par|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|274\/352 par|[from] item: Leftovers
+|-damage|p2a: Jirachi|329\/404 par|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|324\/352 par|[silent]
+|turn|20
+|
+|switch|p2a: Cool Story Bro|Hippowdon, M|74\/420
+|-damage|p2a: Cool Story Bro|48\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|switch|p1a: Landorus-Therian|Landorus-Therian, M, shiny|124\/320
+|-damage|p1a: Landorus-Therian|84\/320|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Cool Story Bro
+|-unboost|p2a: Cool Story Bro|atk|1
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Cool Story Bro|250\/420|[from] move: Wish|[wisher] Jirachi
+|-heal|p2a: Cool Story Bro|276\/420|[from] item: Leftovers
+|turn|21
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Cool Story Bro
+|-damage|p2a: Cool Story Bro|216\/420
+|
+|switch|p1a: Clefable|Clefable, F|394\/394
+|move|p2a: Cool Story Bro|Slack Off|p2a: Cool Story Bro
+|-heal|p2a: Cool Story Bro|420\/420
+|
+|-weather|Sandstorm|[upkeep]
+|turn|22
+|
+|switch|p2a: Jirachi|Jirachi|329\/404 par
+|-damage|p2a: Jirachi|304\/404 par|[from] Stealth Rock
+|move|p1a: Clefable|Moonblast|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|265\/404 par
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Jirachi|290\/404 par|[from] item: Leftovers
+|turn|23
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|324\/352 par
+|-damage|p1a: Ferrothorn|302\/352 par|[from] Stealth Rock
+|move|p2a: Jirachi|Wish|p2a: Jirachi
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Jirachi|315\/404 par|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|324\/352 par|[from] item: Leftovers
+|turn|24
+|
+|switch|p2a: Jolteon|Jolteon, F|125\/272
+|-damage|p2a: Jolteon|91\/272|[from] Stealth Rock
+|move|p1a: Ferrothorn|Leech Seed|p2a: Jolteon|[miss]
+|-miss|p1a: Ferrothorn|p2a: Jolteon
+|
+|-weather|none
+|-heal|p2a: Jolteon|272\/272|[from] move: Wish|[wisher] Jirachi
+|-heal|p1a: Ferrothorn|346\/352 par|[from] item: Leftovers
+|turn|25
+|
+|move|p2a: Jolteon|Heal Bell|p2a: Jolteon
+|-cureteam|p2a: Jolteon|[from] move: HealBell
+|move|p1a: Ferrothorn|Gyro Ball|p2a: Jolteon
+|-resisted|p2a: Jolteon
+|-damage|p2a: Jolteon|155\/272
+|
+|-heal|p1a: Ferrothorn|352\/352 par|[from] item: Leftovers
+|turn|26
+|
+|move|p2a: Jolteon|Volt Switch|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|313\/352 par
+|
+|switch|p2a: Jirachi|Jirachi|315\/404
+|-damage|p2a: Jirachi|290\/404|[from] Stealth Rock
+|move|p1a: Ferrothorn|Leech Seed|p2a: Jirachi|[miss]
+|-miss|p1a: Ferrothorn|p2a: Jirachi
+|
+|-heal|p2a: Jirachi|315\/404|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|335\/352 par|[from] item: Leftovers
+|turn|27
+|c|âAlkov|-.-
+|
+|move|p2a: Jirachi|Wish|p2a: Jirachi
+|move|p1a: Ferrothorn|Leech Seed|p2a: Jirachi|[miss]
+|-miss|p1a: Ferrothorn|p2a: Jirachi
+|
+|-heal|p2a: Jirachi|340\/404|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|352\/352 par|[from] item: Leftovers
+|turn|28
+|c|âAlkov|wow
+|
+|move|p2a: Jirachi|Fire Punch|p1a: Ferrothorn
+|-crit|p1a: Ferrothorn
+|-supereffective|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|108\/352 par
+|-damage|p2a: Jirachi|290\/404|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|move|p1a: Ferrothorn|Leech Seed|p2a: Jirachi
+|-start|p2a: Jirachi|move: Leech Seed
+|
+|-heal|p2a: Jirachi|404\/404|[from] move: Wish|[wisher] Jirachi
+|-heal|p1a: Ferrothorn|130\/352 par|[from] item: Leftovers
+|-damage|p2a: Jirachi|354\/404|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|180\/352 par|[silent]
+|turn|29
+|
+|switch|p1a: Latios|Latios, M|302\/302
+|-damage|p1a: Latios|265\/302|[from] Stealth Rock
+|move|p2a: Jirachi|Fire Punch|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|232\/302
+|
+|-heal|p2a: Jirachi|379\/404|[from] item: Leftovers
+|-damage|p2a: Jirachi|329\/404|[from] Leech Seed|[of] p1a: Latios
+|-heal|p1a: Latios|282\/302|[silent]
+|turn|30
+|
+|move|p1a: Latios|Defog|p2a: Jirachi
+|-unboost|p2a: Jirachi|evasion|1
+|-sideend|p2: paperkath|Stealth Rock|[from] move: Defog|[of] p2a: Jirachi
+|-sideend|p1: Alkov|Stealth Rock|[from] move: Defog|[of] p1a: Latios
+|move|p2a: Jirachi|Thunder Wave|p1a: Latios
+|-status|p1a: Latios|par
+|
+|-heal|p2a: Jirachi|354\/404|[from] item: Leftovers
+|-damage|p2a: Jirachi|304\/404|[from] Leech Seed|[of] p1a: Latios
+|-heal|p1a: Latios|302\/302 par|[silent]
+|turn|31
+|
+|switch|p2a: Cool Story Bro|Hippowdon, M|420\/420
+|-weather|Sandstorm
+|switch|p1a: Azumarill|Azumarill, M|328\/403 par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Azumarill|303\/403 par|[from] sandstorm
+|turn|32
+|
+|move|p2a: Cool Story Bro|Earthquake|p1a: Azumarill
+|-damage|p1a: Azumarill|140\/403 par
+|cant|p1a: Azumarill|par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Azumarill|115\/403 par|[from] sandstorm
+|turn|33
+|c|âAlkov|ya of course
+|c|âAlkov|miss all the leech seed and parahax
+|
+|cant|p1a: Azumarill|par
+|move|p2a: Cool Story Bro|Stealth Rock|p1a: Azumarill
+|-sidestart|p1: Alkov|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Azumarill|90\/403 par|[from] sandstorm
+|turn|34
+|
+|move|p1a: Azumarill|Aqua Jet|p2a: Cool Story Bro
+|-supereffective|p2a: Cool Story Bro
+|-damage|p2a: Cool Story Bro|250\/420
+|move|p2a: Cool Story Bro|Earthquake|p1a: Azumarill
+|-damage|p1a: Azumarill|0 fnt
+|faint|p1a: Azumarill
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Cool Story Bro|276\/420|[from] item: Leftovers
+|
+|switch|p1a: Clefable|Clefable, F|394\/394
+|turn|35
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|180\/352 par
+|-damage|p1a: Ferrothorn|158\/352 par|[from] Stealth Rock
+|switch|p2a: Jirachi|Jirachi|304\/404
+|
+|-weather|none
+|-heal|p2a: Jirachi|329\/404|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|180\/352 par|[from] item: Leftovers
+|turn|36
+|
+|move|p2a: Jirachi|Fire Punch|p1a: Ferrothorn
+|-supereffective|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|16\/352 par
+|-damage|p2a: Jirachi|279\/404|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|move|p1a: Ferrothorn|Stealth Rock|p2a: Jirachi
+|-sidestart|p2: paperkath|move: Stealth Rock
+|
+|-heal|p2a: Jirachi|304\/404|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|38\/352 par|[from] item: Leftovers
+|turn|37
+|
+|move|p2a: Jirachi|Thunder Wave|p1a: Ferrothorn
+|-fail|p1a: Ferrothorn|par
+|cant|p1a: Ferrothorn|par
+|
+|-heal|p2a: Jirachi|329\/404|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|60\/352 par|[from] item: Leftovers
+|turn|38
+|
+|move|p2a: Jirachi|Fire Punch|p1a: Ferrothorn
+|-supereffective|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|0 fnt
+|-damage|p2a: Jirachi|279\/404|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|faint|p1a: Ferrothorn
+|
+|-heal|p2a: Jirachi|304\/404|[from] item: Leftovers
+|
+|switch|p1a: Charizard|Charizard, M, shiny|297\/297
+|-damage|p1a: Charizard|149\/297|[from] Stealth Rock
+|turn|39
+|
+|switch|p2a: HAHA DIE DIE DIE|Venomoth, M|344\/344
+|-damage|p2a: HAHA DIE DIE DIE|258\/344|[from] Stealth Rock
+|detailschange|p1a: Charizard|Charizard-Mega-X, M, shiny
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p1a: Charizard|Flare Blitz|p2a: HAHA DIE DIE DIE
+|-supereffective|p2a: HAHA DIE DIE DIE
+|-damage|p2a: HAHA DIE DIE DIE|0 fnt
+|-damage|p1a: Charizard|64\/297|[from] recoil|[of] p2a: HAHA DIE DIE DIE
+|faint|p2a: HAHA DIE DIE DIE
+|
+|
+|switch|p2a: Cool Story Bro|Hippowdon, M|276\/420
+|-damage|p2a: Cool Story Bro|250\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|turn|40
+|
+|switch|p1a: Clefable|Clefable, F|394\/394
+|move|p2a: Cool Story Bro|Slack Off|p2a: Cool Story Bro
+|-heal|p2a: Cool Story Bro|420\/420
+|
+|-weather|Sandstorm|[upkeep]
+|turn|41
+|
+|switch|p2a: Jirachi|Jirachi|304\/404
+|-damage|p2a: Jirachi|279\/404|[from] Stealth Rock
+|move|p1a: Clefable|Moonblast|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|239\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Jirachi|264\/404|[from] item: Leftovers
+|turn|42
+|
+|move|p2a: Jirachi|Iron Head|p1a: Clefable
+|-supereffective|p1a: Clefable
+|-damage|p1a: Clefable|232\/394
+|move|p1a: Clefable|Flamethrower|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|168\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Jirachi|193\/404|[from] item: Leftovers
+|-heal|p1a: Clefable|256\/394|[from] item: Leftovers
+|turn|43
+|
+|switch|p1a: Latios|Latios, M|302\/302 par
+|-damage|p1a: Latios|265\/302 par|[from] Stealth Rock
+|move|p2a: Jirachi|Wish|p2a: Jirachi
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latios|247\/302 par|[from] sandstorm
+|-heal|p2a: Jirachi|218\/404|[from] item: Leftovers
+|turn|44
+|
+|move|p2a: Jirachi|Iron Head|p1a: Latios
+|-crit|p1a: Latios
+|-damage|p1a: Latios|85\/302 par
+|cant|p1a: Latios|flinch
+|
+|-weather|none
+|-heal|p2a: Jirachi|404\/404|[from] move: Wish|[wisher] Jirachi
+|turn|45
+|-message|Alkov forfeited.
+|
+|win|paperkath
+|raw|Ladder updating...

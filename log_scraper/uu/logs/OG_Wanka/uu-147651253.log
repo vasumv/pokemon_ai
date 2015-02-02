@@ -1,0 +1,145 @@
+|join|OG_Wanka
+|join|firmenle
+|player|p1|OG_Wanka|222
+|player|p2|firmenle|101
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Tornadus, M, shiny
+|poke|p1|Darmanitan, F
+|poke|p1|Magneton, shiny
+|poke|p1|Honchkrow, F
+|poke|p1|Swampert, M, shiny
+|poke|p1|Hydreigon, F
+|poke|p2|Cofagrigus, M
+|poke|p2|Hydreigon, F
+|poke|p2|Donphan, M
+|poke|p2|Florges, F
+|poke|p2|Galvantula, M
+|poke|p2|Absol, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Swampert|Swampert, M, shiny|401\/401
+|switch|p2a: Galvantula|Galvantula, M|281\/281
+|turn|1
+|
+|move|p2a: Galvantula|Sticky Web|p1a: Swampert
+|-sidestart|p1: OG_Wanka|move: Sticky Web
+|move|p1a: Swampert|Stealth Rock|p2a: Galvantula
+|-sidestart|p2: firmenle|move: Stealth Rock
+|
+|turn|2
+|
+|switch|p2a: Cofagrigus|Cofagrigus, M|320\/320
+|-damage|p2a: Cofagrigus|280\/320|[from] Stealth Rock
+|move|p1a: Swampert|Roar|p2a: Cofagrigus
+|drag|p2a: Donphan|Donphan, M|375\/375
+|-damage|p2a: Donphan|352\/375|[from] Stealth Rock
+|
+|turn|3
+|
+|move|p2a: Donphan|Rapid Spin|p1a: Swampert
+|-damage|p1a: Swampert|379\/401
+|-sideend|p2: firmenle|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Donphan
+|move|p1a: Swampert|Roar|p2a: Donphan
+|drag|p2a: Hydreigon|Hydreigon, F|325\/325
+|
+|-heal|p1a: Swampert|401\/401|[from] item: Leftovers
+|turn|4
+|
+|move|p2a: Hydreigon|Draco Meteor|p1a: Swampert
+|-damage|p1a: Swampert|145\/401
+|-unboost|p2a: Hydreigon|spa|2
+|move|p1a: Swampert|Stealth Rock|p2a: Hydreigon
+|-sidestart|p2: firmenle|move: Stealth Rock
+|
+|-heal|p1a: Swampert|170\/401|[from] item: Leftovers
+|turn|5
+|
+|move|p2a: Hydreigon|Draco Meteor|p1a: Swampert
+|-damage|p1a: Swampert|28\/401
+|-unboost|p2a: Hydreigon|spa|2
+|move|p1a: Swampert|Waterfall|p2a: Hydreigon
+|-resisted|p2a: Hydreigon
+|-damage|p2a: Hydreigon|238\/325
+|
+|-heal|p1a: Swampert|53\/401|[from] item: Leftovers
+|turn|6
+|
+|move|p2a: Hydreigon|Draco Meteor|p1a: Swampert
+|-damage|p1a: Swampert|0 fnt
+|-unboost|p2a: Hydreigon|spa|2
+|faint|p1a: Swampert
+|
+|
+|switch|p1a: Honchkrow|Honchkrow, F|342\/342
+|turn|7
+|
+|switch|p2a: Donphan|Donphan, M|352\/375
+|-damage|p2a: Donphan|329\/375|[from] Stealth Rock
+|move|p1a: Honchkrow|Brave Bird|p2a: Donphan
+|-damage|p2a: Donphan|86\/375
+|-damage|p1a: Honchkrow|262\/342|[from] recoil|[of] p2a: Donphan
+|-damage|p1a: Honchkrow|228\/342|[from] item: Life Orb
+|
+|turn|8
+|
+|move|p1a: Honchkrow|Sucker Punch|p2a: Donphan
+|-damage|p2a: Donphan|0 fnt
+|-damage|p1a: Honchkrow|194\/342|[from] item: Life Orb
+|faint|p2a: Donphan
+|-boost|p1a: Honchkrow|atk|1|[from] ability: Moxie
+|
+|
+|switch|p2a: Florges|Florges, F|360\/360
+|-damage|p2a: Florges|315\/360|[from] Stealth Rock
+|turn|9
+|
+|move|p1a: Honchkrow|Brave Bird|p2a: Florges
+|-damage|p2a: Florges|0 fnt
+|-damage|p1a: Honchkrow|90\/342|[from] recoil|[of] p2a: Florges
+|-damage|p1a: Honchkrow|56\/342|[from] item: Life Orb
+|faint|p2a: Florges
+|-boost|p1a: Honchkrow|atk|1|[from] ability: Moxie
+|
+|
+|switch|p2a: Cofagrigus|Cofagrigus, M|280\/320
+|-damage|p2a: Cofagrigus|240\/320|[from] Stealth Rock
+|turn|10
+|
+|move|p1a: Honchkrow|Roost|p1a: Honchkrow
+|-heal|p1a: Honchkrow|227\/342
+|move|p2a: Cofagrigus|Toxic|p1a: Honchkrow|[miss]
+|-miss|p2a: Cofagrigus|p1a: Honchkrow
+|
+|-heal|p2a: Cofagrigus|260\/320|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Honchkrow|Brave Bird|p2a: Cofagrigus
+|-damage|p2a: Cofagrigus|0 fnt
+|-endability|p1a: Honchkrow|moxie|[from] Mummy
+|-ability|p1a: Honchkrow|Mummy|[from] Mummy
+|-damage|p1a: Honchkrow|141\/342|[from] recoil|[of] p2a: Cofagrigus
+|-damage|p1a: Honchkrow|107\/342|[from] item: Life Orb
+|faint|p2a: Cofagrigus
+|
+|leave|firmenle
+|player|p2
+|-message|firmenle lost due to inactivity.
+|
+|win|OG_Wanka
+|raw|Ladder updating...
+|raw|OG_Wanka's rating: 1342 &rarr; <strong>1362<\/strong><br \/>(+20 for winning)
+|raw|firmenle's rating: 1350 &rarr; <strong>1329<\/strong><br \/>(-21 for losing)

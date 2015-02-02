@@ -1,0 +1,327 @@
+|join|XeroDisk
+|join|anchorage
+|player|p1|XeroDisk|266
+|player|p2|anchorage|214
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Crawdaunt, M
+|poke|p1|Latias, F
+|poke|p1|Garchomp, M, shiny
+|poke|p1|Blastoise, M
+|poke|p1|Talonflame, M
+|poke|p1|Jolteon, M
+|poke|p2|Gyarados, M
+|poke|p2|Celebi
+|poke|p2|Thundurus, M
+|poke|p2|Landorus, M
+|poke|p2|Lucario, F
+|poke|p2|Heatran, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Crawdaunt|Crawdaunt, M|268\/268
+|switch|p2a: Landorus|Landorus, M|319\/319
+|turn|1
+|
+|move|p2a: Landorus|Earth Power|p1a: Crawdaunt
+|-damage|p1a: Crawdaunt|0 fnt
+|faint|p1a: Crawdaunt
+|
+|
+|switch|p1a: Blastoise|Blastoise, M|299\/299
+|turn|2
+|
+|detailschange|p1a: Blastoise|Blastoise-Mega, M
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Landorus|Earth Power|p1a: Blastoise
+|-crit|p1a: Blastoise
+|-damage|p1a: Blastoise|17\/299
+|move|p1a: Blastoise|Aura Sphere|p2a: Landorus
+|-resisted|p2a: Landorus
+|-damage|p2a: Landorus|228\/319
+|
+|turn|3
+|
+|move|p2a: Landorus|Stealth Rock|p1a: Blastoise
+|-sidestart|p1: XeroDisk|move: Stealth Rock
+|move|p1a: Blastoise|Water Pulse|p2a: Landorus
+|-supereffective|p2a: Landorus
+|-damage|p2a: Landorus|0 fnt
+|faint|p2a: Landorus
+|
+|
+|switch|p2a: Thundurus|Thundurus, M|299\/299
+|turn|4
+|
+|move|p2a: Thundurus|Thunderbolt|p1a: Blastoise
+|-supereffective|p1a: Blastoise
+|-damage|p1a: Blastoise|0 fnt
+|-damage|p2a: Thundurus|270\/299|[from] item: Life Orb
+|faint|p1a: Blastoise
+|
+|
+|switch|p1a: Latias|Latias, F|302\/302
+|-damage|p1a: Latias|265\/302|[from] Stealth Rock
+|turn|5
+|
+|move|p2a: Thundurus|Hidden Power|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|145\/302
+|-damage|p2a: Thundurus|241\/299|[from] item: Life Orb
+|move|p1a: Latias|Defog|p2a: Thundurus
+|-unboost|p2a: Thundurus|evasion|1
+|-sideend|p1: XeroDisk|Stealth Rock|[from] move: Defog|[of] p1a: Latias
+|
+|-heal|p1a: Latias|163\/302|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: Celebi|Celebi|403\/403
+|move|p1a: Latias|Draco Meteor|p2a: Celebi
+|-damage|p2a: Celebi|235\/403
+|-unboost|p1a: Latias|spa|2
+|
+|-heal|p1a: Latias|181\/302|[from] item: Leftovers
+|-heal|p2a: Celebi|260\/403|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Garchomp|Garchomp, M, shiny|358\/358
+|move|p2a: Celebi|Substitute|p2a: Celebi
+|-start|p2a: Celebi|Substitute
+|-damage|p2a: Celebi|160\/403
+|
+|-heal|p2a: Celebi|185\/403|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: Garchomp|Outrage|p2a: Celebi
+|-end|p2a: Celebi|Substitute
+|move|p2a: Celebi|Giga Drain|p1a: Garchomp
+|-damage|p1a: Garchomp|252\/358
+|-heal|p2a: Celebi|238\/403|[from] drain|[of] p1a: Garchomp
+|
+|-heal|p2a: Celebi|263\/403|[from] item: Leftovers
+|turn|9
+|
+|move|p1a: Garchomp|Outrage|p2a: Celebi
+|-damage|p2a: Celebi|88\/403
+|move|p2a: Celebi|Recover|p2a: Celebi
+|-heal|p2a: Celebi|290\/403
+|
+|-end|p1a: Garchomp|rampage
+|-start|p1a: Garchomp|confusion
+|-heal|p2a: Celebi|315\/403|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Latias|Latias, F|181\/302
+|move|p2a: Celebi|Baton Pass|p2a: Celebi
+|
+|switch|p2a: Lucario|Lucario, F|281\/281
+|
+|-heal|p1a: Latias|199\/302|[from] item: Leftovers
+|turn|11
+|
+|move|p2a: Lucario|Swords Dance|p2a: Lucario
+|-boost|p2a: Lucario|atk|2
+|move|p1a: Latias|Psyshock|p2a: Lucario
+|-damage|p2a: Lucario|149\/281
+|
+|-heal|p1a: Latias|217\/302|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Lucario|Extreme Speed|p1a: Latias
+|-damage|p1a: Latias|49\/302
+|-damage|p2a: Lucario|121\/281|[from] item: Life Orb
+|move|p1a: Latias|Psyshock|p2a: Lucario
+|-damage|p2a: Lucario|0 fnt
+|faint|p2a: Lucario
+|
+|-heal|p1a: Latias|67\/302|[from] item: Leftovers
+|chat|anchorage|damn this dude is weak af
+|chat|XeroDisk|yeah I dont like luccario either
+|
+|switch|p2a: Thundurus|Thundurus, M|241\/299
+|turn|13
+|chat|XeroDisk|I like his mega evolution tho
+|chat|anchorage|sometimes he cleans up but other times its just not powerful enough
+|
+|move|p2a: Thundurus|Hidden Power|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|0 fnt
+|-damage|p2a: Thundurus|212\/299|[from] item: Life Orb
+|faint|p1a: Latias
+|
+|
+|switch|p1a: Jolteon|Jolteon, M|272\/272
+|turn|14
+|
+|move|p1a: Jolteon|Thunderbolt|p2a: Thundurus
+|-damage|p2a: Thundurus|0 fnt
+|faint|p2a: Thundurus
+|
+|
+|switch|p2a: Celebi|Celebi|315\/403
+|turn|15
+|
+|move|p1a: Jolteon|Thunderbolt|p2a: Celebi
+|-resisted|p2a: Celebi
+|-damage|p2a: Celebi|214\/403
+|move|p2a: Celebi|Substitute|p2a: Celebi
+|-start|p2a: Celebi|Substitute
+|-damage|p2a: Celebi|114\/403
+|
+|-heal|p2a: Celebi|139\/403|[from] item: Leftovers
+|turn|16
+|
+|move|p1a: Jolteon|Thunderbolt|p2a: Celebi
+|-resisted|p2a: Celebi
+|-end|p2a: Celebi|Substitute
+|move|p2a: Celebi|Recover|p2a: Celebi
+|-heal|p2a: Celebi|341\/403
+|
+|-heal|p2a: Celebi|366\/403|[from] item: Leftovers
+|turn|17
+|
+|switch|p1a: Talonflame|Talonflame, M|329\/329
+|move|p2a: Celebi|Substitute|p2a: Celebi
+|-start|p2a: Celebi|Substitute
+|-damage|p2a: Celebi|266\/403
+|
+|-heal|p2a: Celebi|291\/403|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Talonflame|U-turn|p2a: Celebi
+|-supereffective|p2a: Celebi
+|-end|p2a: Celebi|Substitute
+|
+|switch|p1a: Jolteon|Jolteon, M|272\/272
+|move|p2a: Celebi|Substitute|p2a: Celebi
+|-start|p2a: Celebi|Substitute
+|-damage|p2a: Celebi|191\/403
+|
+|-heal|p2a: Celebi|216\/403|[from] item: Leftovers
+|turn|19
+|
+|move|p1a: Jolteon|Hidden Power|p2a: Celebi
+|-supereffective|p2a: Celebi
+|-end|p2a: Celebi|Substitute
+|move|p2a: Celebi|Recover|p2a: Celebi
+|-heal|p2a: Celebi|403\/403
+|
+|turn|20
+|
+|move|p1a: Jolteon|Hidden Power|p2a: Celebi
+|-crit|p2a: Celebi
+|-supereffective|p2a: Celebi
+|-damage|p2a: Celebi|127\/403
+|move|p2a: Celebi|Baton Pass|p2a: Celebi
+|
+|switch|p2a: Gyarados|Gyarados, M|331\/331
+|-ability|p2a: Gyarados|Intimidate|[of] p1a: Jolteon
+|-unboost|p1a: Jolteon|atk|1
+|
+|turn|21
+|
+|switch|p1a: Garchomp|Garchomp, M, shiny|252\/358
+|detailschange|p2a: Gyarados|Gyarados-Mega, M
+|message|Gyarados has Mega Evolved into Mega Gyarados!
+|-ability|p2a: Gyarados|Mold Breaker
+|move|p2a: Gyarados|Dragon Dance|p2a: Gyarados
+|-boost|p2a: Gyarados|atk|1
+|-boost|p2a: Gyarados|spe|1
+|
+|turn|22
+|
+|move|p1a: Garchomp|Outrage|p2a: Gyarados
+|-damage|p2a: Gyarados|102\/331
+|move|p2a: Gyarados|Ice Fang|p1a: Garchomp
+|-supereffective|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|-damage|p2a: Gyarados|61\/331|[from] ability: Rough Skin|[of] p1a: Garchomp
+|faint|p1a: Garchomp
+|
+|
+|switch|p1a: Jolteon|Jolteon, M|272\/272
+|turn|23
+|
+|move|p1a: Jolteon|Thunderbolt|p2a: Gyarados
+|-supereffective|p2a: Gyarados
+|-damage|p2a: Gyarados|0 fnt
+|faint|p2a: Gyarados
+|
+|
+|switch|p2a: Celebi|Celebi|127\/403
+|turn|24
+|
+|switch|p1a: Talonflame|Talonflame, M|329\/329
+|move|p2a: Celebi|Recover|p2a: Celebi
+|-heal|p2a: Celebi|329\/403
+|
+|-heal|p2a: Celebi|354\/403|[from] item: Leftovers
+|turn|25
+|
+|switch|p2a: Heatran|Heatran, M|323\/323
+|move|p1a: Talonflame|U-turn|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|298\/323
+|
+|switch|p1a: Jolteon|Jolteon, M|272\/272
+|
+|turn|26
+|
+|move|p2a: Heatran|Overheat|p1a: Jolteon
+|-damage|p1a: Jolteon|23\/272
+|-unboost|p2a: Heatran|spa|2
+|move|p1a: Jolteon|Volt Switch|p2a: Heatran
+|-damage|p2a: Heatran|135\/323
+|
+|switch|p1a: Talonflame|Talonflame, M|329\/329
+|
+|turn|27
+|
+|switch|p2a: Celebi|Celebi|354\/403
+|move|p1a: Talonflame|Brave Bird|p2a: Celebi
+|-supereffective|p2a: Celebi
+|-damage|p2a: Celebi|0 fnt
+|-damage|p1a: Talonflame|212\/329|[from] recoil|[of] p2a: Celebi
+|faint|p2a: Celebi
+|
+|
+|switch|p2a: Heatran|Heatran, M|135\/323
+|turn|28
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|12\/323
+|-damage|p1a: Talonflame|171\/329|[from] recoil|[of] p2a: Heatran
+|move|p2a: Heatran|Overheat|p1a: Talonflame
+|-resisted|p1a: Talonflame
+|-damage|p1a: Talonflame|10\/329
+|-unboost|p2a: Heatran|spa|2
+|
+|turn|29
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Heatran
+|-resisted|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|-damage|p1a: Talonflame|6\/329|[from] recoil|[of] p2a: Heatran
+|faint|p2a: Heatran
+|
+|win|XeroDisk
+|raw|Ladder updating...
+|chat|anchorage|gg
+|raw|XeroDisk's rating: 1290 &rarr; <strong>1316<\/strong><br \/>(+26 for winning)
+|raw|anchorage's rating: 1306 &rarr; <strong>1285<\/strong><br \/>(-21 for losing)
+|chat|XeroDisk|Lol gg
+|leave|anchorage
+|player|p2

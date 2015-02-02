@@ -1,0 +1,292 @@
+|join|Hyleos
+|join|Un-Doge
+|player|p1|Hyleos|101
+|player|p2|Un-Doge|101
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Pidgeot, M, shiny
+|poke|p1|Donphan, F, shiny
+|poke|p1|Milotic, M, shiny
+|poke|p1|Golbat, F
+|poke|p1|Haxorus, M, shiny
+|poke|p1|Porygon-Z, shiny
+|poke|p2|Sharpedo, F
+|poke|p2|Toxicroak, F
+|poke|p2|Arcanine, M
+|poke|p2|Gastrodon, M
+|poke|p2|Empoleon, F
+|poke|p2|Virizion
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Haxorus|Haxorus, M, shiny|294\/294
+|switch|p2a: Arcanine|Arcanine, M|374\/374
+|-ability|p1a: Haxorus|Mold Breaker
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Haxorus
+|-unboost|p1a: Haxorus|atk|1
+|turn|1
+|
+|move|p1a: Haxorus|Dragon Dance|p1a: Haxorus
+|-boost|p1a: Haxorus|atk|1
+|-boost|p1a: Haxorus|spe|1
+|move|p2a: Arcanine|Will-O-Wisp|p1a: Haxorus|[miss]
+|-miss|p2a: Arcanine|p1a: Haxorus
+|
+|turn|2
+|
+|move|p1a: Haxorus|Dragon Dance|p1a: Haxorus
+|-boost|p1a: Haxorus|atk|1
+|-boost|p1a: Haxorus|spe|1
+|move|p2a: Arcanine|Will-O-Wisp|p1a: Haxorus
+|-status|p1a: Haxorus|brn
+|-enditem|p1a: Haxorus|Lum Berry|[eat]
+|-curestatus|p1a: Haxorus|brn
+|
+|turn|3
+|
+|move|p1a: Haxorus|Earthquake|p2a: Arcanine
+|-supereffective|p2a: Arcanine
+|-damage|p2a: Arcanine|0 fnt
+|faint|p2a: Arcanine
+|
+|
+|switch|p2a: Gastrodon|Gastrodon, M|426\/426
+|turn|4
+|
+|move|p1a: Haxorus|Outrage|p2a: Gastrodon
+|-damage|p2a: Gastrodon|42\/426
+|move|p2a: Gastrodon|Scald|p1a: Haxorus
+|-resisted|p1a: Haxorus
+|-damage|p1a: Haxorus|235\/294
+|-status|p1a: Haxorus|brn
+|
+|-heal|p2a: Gastrodon|68\/426|[from] item: Leftovers
+|-damage|p1a: Haxorus|199\/294 brn|[from] brn
+|turn|5
+|
+|switch|p2a: Empoleon|Empoleon, F|372\/372
+|move|p1a: Haxorus|Outrage|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|282\/372
+|
+|-heal|p2a: Empoleon|305\/372|[from] item: Leftovers
+|-damage|p1a: Haxorus|163\/294 brn|[from] brn
+|turn|6
+|
+|move|p1a: Haxorus|Outrage|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|212\/372
+|move|p2a: Empoleon|Stealth Rock|p1a: Haxorus
+|-sidestart|p1: Hyleos|move: Stealth Rock
+|
+|-end|p1a: Haxorus|rampage
+|-start|p1a: Haxorus|confusion
+|-heal|p2a: Empoleon|235\/372|[from] item: Leftovers
+|-damage|p1a: Haxorus|127\/294 brn|[from] brn
+|turn|7
+|
+|switch|p2a: Virizion|Virizion|361\/361
+|-activate|p1a: Haxorus|confusion
+|move|p1a: Haxorus|Earthquake|p2a: Virizion
+|-resisted|p2a: Virizion
+|-damage|p2a: Virizion|302\/361
+|
+|-heal|p2a: Virizion|324\/361|[from] item: Leftovers
+|-damage|p1a: Haxorus|91\/294 brn|[from] brn
+|turn|8
+|
+|-activate|p1a: Haxorus|confusion
+|move|p1a: Haxorus|Poison Jab|p2a: Virizion
+|-supereffective|p2a: Virizion
+|-damage|p2a: Virizion|142\/361
+|move|p2a: Virizion|Substitute|p2a: Virizion
+|-start|p2a: Virizion|Substitute
+|-damage|p2a: Virizion|52\/361
+|
+|-heal|p2a: Virizion|74\/361|[from] item: Leftovers
+|-damage|p1a: Haxorus|55\/294 brn|[from] brn
+|turn|9
+|
+|-activate|p1a: Haxorus|confusion
+|move|p1a: Haxorus|Outrage|p2a: Virizion
+|-end|p2a: Virizion|Substitute
+|move|p2a: Virizion|Giga Drain|p1a: Haxorus
+|-resisted|p1a: Haxorus
+|-damage|p1a: Haxorus|0 fnt
+|-heal|p2a: Virizion|102\/361|[from] drain|[of] p1a: Haxorus
+|faint|p1a: Haxorus
+|
+|-heal|p2a: Virizion|124\/361|[from] item: Leftovers
+|
+|switch|p1a: Pidgeot|Pidgeot, M, shiny|308\/308
+|-damage|p1a: Pidgeot|231\/308|[from] Stealth Rock
+|turn|10
+|
+|switch|p2a: Empoleon|Empoleon, F|235\/372
+|detailschange|p1a: Pidgeot|Pidgeot-Mega, M, shiny
+|-mega|p1a: Pidgeot|Pidgeot|Pidgeotite
+|move|p1a: Pidgeot|Hurricane|p2a: Empoleon
+|-crit|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|106\/372
+|
+|-heal|p2a: Empoleon|129\/372|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Pidgeot|Heat Wave|p2a: Empoleon
+|-damage|p2a: Empoleon|33\/372
+|move|p2a: Empoleon|Scald|p1a: Pidgeot
+|-damage|p1a: Pidgeot|35\/308
+|
+|-heal|p2a: Empoleon|56\/372|[from] item: Leftovers
+|turn|12
+|
+|move|p1a: Pidgeot|Hurricane|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|0 fnt
+|faint|p2a: Empoleon
+|
+|
+|switch|p2a: Toxicroak|Toxicroak, F|354\/354
+|turn|13
+|
+|switch|p1a: Donphan|Donphan, F, shiny|384\/384
+|-damage|p1a: Donphan|360\/384|[from] Stealth Rock
+|move|p2a: Toxicroak|Sucker Punch|p1a: Donphan
+|-fail|p1a: Donphan
+|
+|-heal|p1a: Donphan|384\/384|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Toxicroak|Drain Punch|p1a: Donphan
+|-damage|p1a: Donphan|302\/384
+|move|p1a: Donphan|Rapid Spin|p2a: Toxicroak
+|-damage|p2a: Toxicroak|327\/354
+|-sideend|p1: Hyleos|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Donphan
+|
+|-heal|p2a: Toxicroak|349\/354|[from] item: Black Sludge
+|-heal|p1a: Donphan|326\/384|[from] item: Leftovers
+|turn|15
+|
+|move|p2a: Toxicroak|Drain Punch|p1a: Donphan
+|-damage|p1a: Donphan|244\/384
+|-heal|p2a: Toxicroak|354\/354|[from] drain|[of] p1a: Donphan
+|move|p1a: Donphan|Earthquake|p2a: Toxicroak
+|-supereffective|p2a: Toxicroak
+|-damage|p2a: Toxicroak|0 fnt
+|faint|p2a: Toxicroak
+|
+|-heal|p1a: Donphan|268\/384|[from] item: Leftovers
+|
+|switch|p2a: Virizion|Virizion|124\/361
+|turn|16
+|
+|switch|p1a: Porygon-Z|Porygon-Z, shiny|312\/312
+|move|p2a: Virizion|Giga Drain|p1a: Porygon-Z
+|-damage|p1a: Porygon-Z|173\/312
+|-heal|p2a: Virizion|194\/361|[from] drain|[of] p1a: Porygon-Z
+|
+|-heal|p2a: Virizion|216\/361|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Porygon-Z|Tri Attack|p2a: Virizion
+|-damage|p2a: Virizion|30\/361
+|move|p2a: Virizion|Giga Drain|p1a: Porygon-Z
+|-damage|p1a: Porygon-Z|41\/312
+|-heal|p2a: Virizion|96\/361|[from] drain|[of] p1a: Porygon-Z
+|
+|-heal|p2a: Virizion|118\/361|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Porygon-Z|Tri Attack|p2a: Virizion
+|-damage|p2a: Virizion|0 fnt
+|faint|p2a: Virizion
+|
+|
+|switch|p2a: Sharpedo|Sharpedo, F|281\/281
+|turn|19
+|
+|switch|p1a: Golbat|Golbat, F|354\/354
+|move|p2a: Sharpedo|Substitute|p2a: Sharpedo
+|-start|p2a: Sharpedo|Substitute
+|-damage|p2a: Sharpedo|211\/281
+|
+|-boost|p2a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|20
+|
+|detailschange|p2a: Sharpedo|Sharpedo-Mega, F
+|-mega|p2a: Sharpedo|Sharpedo|Sharpedonite
+|move|p2a: Sharpedo|Waterfall|p1a: Golbat
+|-damage|p1a: Golbat|233\/354
+|move|p1a: Golbat|Super Fang|p2a: Sharpedo|[miss]
+|-miss|p1a: Golbat|p2a: Sharpedo
+|
+|turn|21
+|
+|switch|p1a: Pidgeot|Pidgeot-Mega, M, shiny|35\/308
+|move|p2a: Sharpedo|Crunch|p1a: Pidgeot
+|-damage|p1a: Pidgeot|0 fnt
+|faint|p1a: Pidgeot
+|
+|
+|switch|p1a: Milotic|Milotic, M, shiny|361\/361
+|turn|22
+|
+|move|p2a: Sharpedo|Crunch|p1a: Milotic
+|-damage|p1a: Milotic|67\/361
+|move|p1a: Milotic|Scald|p2a: Sharpedo
+|-resisted|p2a: Sharpedo
+|-end|p2a: Sharpedo|Substitute
+|
+|-heal|p1a: Milotic|89\/361|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Sharpedo|Crunch|p1a: Milotic
+|-damage|p1a: Milotic|0 fnt
+|faint|p1a: Milotic
+|
+|
+|switch|p1a: Golbat|Golbat, F|233\/354
+|turn|24
+|
+|move|p2a: Sharpedo|Crunch|p1a: Golbat
+|-damage|p1a: Golbat|50\/354
+|-unboost|p1a: Golbat|def|1
+|move|p1a: Golbat|Super Fang|p2a: Sharpedo
+|-damage|p2a: Sharpedo|106\/281
+|
+|turn|25
+|
+|move|p2a: Sharpedo|Crunch|p1a: Golbat
+|-damage|p1a: Golbat|0 fnt
+|faint|p1a: Golbat
+|
+|
+|switch|p1a: Porygon-Z|Porygon-Z, shiny|41\/312
+|turn|26
+|
+|move|p2a: Sharpedo|Waterfall|p1a: Porygon-Z
+|-crit|p1a: Porygon-Z
+|-damage|p1a: Porygon-Z|0 fnt
+|faint|p1a: Porygon-Z
+|
+|-message|Hyleos forfeited.
+|leave|Hyleos
+|
+|win|Un-Doge
+|raw|Ladder updating...
+|player|p1
+|raw|Hyleos's rating: 1344 &rarr; <strong>1328<\/strong><br \/>(-16 for losing)
+|raw|Un-Doge's rating: 1427 &rarr; <strong>1442<\/strong><br \/>(+15 for winning)

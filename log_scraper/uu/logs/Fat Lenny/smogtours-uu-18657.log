@@ -1,0 +1,268 @@
+|join|Malefic
+|join|Fat Lenny
+|player|p1|Malefic|80
+|player|p2|Fat Lenny|224
+|gametype|singles
+|gen|6
+|tier|UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Krookodile, F
+|poke|p1|Jirachi
+|poke|p1|Florges, F
+|poke|p1|Chandelure, F
+|poke|p1|Roserade, F
+|poke|p1|Hydreigon, F
+|poke|p2|Heracross, M
+|poke|p2|Nidoqueen, F
+|poke|p2|Aerodactyl, M
+|poke|p2|Infernape, F
+|poke|p2|Jirachi
+|poke|p2|Hydreigon, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Jirachi|Jirachi|341\/341
+|switch|p2a: Jirachi|Jirachi|341\/341
+|turn|1
+|
+|move|p2a: Jirachi|U-turn|p1a: Jirachi
+|-damage|p1a: Jirachi|267\/341
+|
+|switch|p2a: Nidoqueen|Nidoqueen, F|366\/366
+|move|p1a: Jirachi|U-turn|p2a: Nidoqueen
+|-resisted|p2a: Nidoqueen
+|-damage|p2a: Nidoqueen|324\/366
+|
+|switch|p1a: Krookodile|Krookodile, F|331\/331
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Nidoqueen
+|-unboost|p2a: Nidoqueen|atk|1
+|
+|turn|2
+|
+|move|p1a: Krookodile|Stealth Rock|p2a: Nidoqueen
+|-sidestart|p2: Fat Lenny|move: Stealth Rock
+|move|p2a: Nidoqueen|Stealth Rock|p1a: Krookodile
+|-sidestart|p1: Malefic|move: Stealth Rock
+|
+|turn|3
+|
+|switch|p2a: Heracross|Heracross, M|311\/311
+|-damage|p2a: Heracross|273\/311|[from] Stealth Rock
+|move|p1a: Krookodile|Stone Edge|p2a: Heracross
+|-crit|p2a: Heracross
+|-damage|p2a: Heracross|0 fnt
+|-damage|p1a: Krookodile|298\/331|[from] item: Life Orb
+|faint|p2a: Heracross
+|
+|
+|switch|p2a: Hydreigon|Hydreigon, M|325\/325
+|-damage|p2a: Hydreigon|285\/325|[from] Stealth Rock
+|turn|4
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|-damage|p1a: Florges|315\/360|[from] Stealth Rock
+|move|p2a: Hydreigon|Draco Meteor|p1a: Florges
+|-immune|p1a: Florges|[msg]
+|
+|-heal|p1a: Florges|337\/360|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Jirachi|Jirachi|341\/341
+|-damage|p2a: Jirachi|320\/341|[from] Stealth Rock
+|move|p1a: Florges|Moonblast|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|255\/341
+|-unboost|p2a: Jirachi|spa|1
+|
+|-heal|p1a: Florges|359\/360|[from] item: Leftovers
+|turn|6
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Jirachi|U-turn|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-heal|p1a: Florges|360\/360|[from] item: Leftovers
+|turn|7
+|
+|move|p2a: Jirachi|U-turn|p1a: Florges
+|-resisted|p1a: Florges
+|-damage|p1a: Florges|329\/360
+|
+|switch|p2a: Nidoqueen|Nidoqueen, F|324\/366
+|-damage|p2a: Nidoqueen|302\/366|[from] Stealth Rock
+|move|p1a: Florges|Moonblast|p2a: Nidoqueen
+|-resisted|p2a: Nidoqueen
+|-damage|p2a: Nidoqueen|238\/366
+|-unboost|p2a: Nidoqueen|spa|1
+|
+|-heal|p1a: Florges|351\/360|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Roserade|Roserade, F|261\/261
+|-damage|p1a: Roserade|229\/261|[from] Stealth Rock
+|move|p2a: Nidoqueen|Sludge Wave|p1a: Roserade
+|-damage|p1a: Roserade|81\/261
+|
+|-heal|p1a: Roserade|97\/261|[from] item: Black Sludge
+|turn|9
+|
+|switch|p2a: Hydreigon|Hydreigon, M|285\/325
+|-damage|p2a: Hydreigon|245\/325|[from] Stealth Rock
+|move|p1a: Roserade|Leaf Storm|p2a: Hydreigon
+|-resisted|p2a: Hydreigon
+|-damage|p2a: Hydreigon|122\/325
+|-unboost|p1a: Roserade|spa|2
+|
+|-heal|p1a: Roserade|113\/261|[from] item: Black Sludge
+|turn|10
+|
+|switch|p1a: Florges|Florges, F|351\/360
+|-damage|p1a: Florges|306\/360|[from] Stealth Rock
+|move|p2a: Hydreigon|Flash Cannon|p1a: Florges
+|-supereffective|p1a: Florges
+|-damage|p1a: Florges|142\/360
+|-unboost|p1a: Florges|spd|1
+|-damage|p2a: Hydreigon|90\/325|[from] item: Life Orb
+|
+|-heal|p1a: Florges|164\/360|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Hydreigon|Flash Cannon|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-heal|p1a: Florges|186\/360|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Hydreigon|Dark Pulse|p1a: Florges
+|-resisted|p1a: Florges
+|-damage|p1a: Florges|92\/360
+|-damage|p2a: Hydreigon|58\/325|[from] item: Life Orb
+|move|p1a: Florges|Moonblast|p2a: Hydreigon
+|-supereffective|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|faint|p2a: Hydreigon
+|
+|-heal|p1a: Florges|114\/360|[from] item: Leftovers
+|join|blunderr
+|
+|switch|p2a: Nidoqueen|Nidoqueen, F|238\/366
+|-damage|p2a: Nidoqueen|216\/366|[from] Stealth Rock
+|turn|13
+|
+|move|p2a: Nidoqueen|Earth Power|p1a: Florges
+|-damage|p1a: Florges|0 fnt
+|faint|p1a: Florges
+|
+|
+|switch|p1a: Roserade|Roserade, F|113\/261
+|-damage|p1a: Roserade|81\/261|[from] Stealth Rock
+|turn|14
+|
+|switch|p2a: Jirachi|Jirachi|255\/341
+|-damage|p2a: Jirachi|234\/341|[from] Stealth Rock
+|move|p1a: Roserade|Spikes|p2a: Jirachi
+|-sidestart|p2: Fat Lenny|Spikes
+|
+|-heal|p1a: Roserade|97\/261|[from] item: Black Sludge
+|turn|15
+|leave|blunderr
+|
+|move|p2a: Jirachi|Iron Head|p1a: Roserade
+|-damage|p1a: Roserade|0 fnt
+|faint|p1a: Roserade
+|
+|
+|switch|p1a: Krookodile|Krookodile, F|298\/331
+|-damage|p1a: Krookodile|278\/331|[from] Stealth Rock
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Jirachi
+|-unboost|p2a: Jirachi|atk|1
+|turn|16
+|
+|move|p1a: Krookodile|Pursuit|p2a: Jirachi|[from]Pursuit
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|-damage|p1a: Krookodile|245\/331|[from] item: Life Orb
+|faint|p2a: Jirachi
+|
+|
+|switch|p2a: Aerodactyl|Aerodactyl, M|321\/321
+|-damage|p2a: Aerodactyl|241\/321|[from] Stealth Rock
+|turn|17
+|
+|detailschange|p2a: Aerodactyl|Aerodactyl-Mega, M
+|message|Aerodactyl has Mega Evolved into Mega Aerodactyl!
+|move|p2a: Aerodactyl|Aqua Tail|p1a: Krookodile
+|-supereffective|p1a: Krookodile
+|-damage|p1a: Krookodile|0 fnt
+|faint|p1a: Krookodile
+|
+|
+|switch|p1a: Jirachi|Jirachi|267\/341
+|-damage|p1a: Jirachi|246\/341|[from] Stealth Rock
+|turn|18
+|
+|switch|p2a: Nidoqueen|Nidoqueen, F|216\/366
+|-damage|p2a: Nidoqueen|194\/366|[from] Stealth Rock
+|-damage|p2a: Nidoqueen|149\/366|[from] Spikes
+|move|p1a: Jirachi|Iron Head|p2a: Nidoqueen
+|-damage|p2a: Nidoqueen|25\/366
+|
+|turn|19
+|
+|move|p1a: Jirachi|Iron Head|p2a: Nidoqueen
+|-damage|p2a: Nidoqueen|0 fnt
+|faint|p2a: Nidoqueen
+|
+|
+|switch|p2a: Infernape|Infernape, F|293\/293
+|-damage|p2a: Infernape|257\/293|[from] Stealth Rock
+|-damage|p2a: Infernape|221\/293|[from] Spikes
+|turn|20
+|
+|switch|p1a: Chandelure|Chandelure, F|261\/261
+|-damage|p1a: Chandelure|196\/261|[from] Stealth Rock
+|switch|p2a: Aerodactyl|Aerodactyl-Mega, M|241\/321
+|-damage|p2a: Aerodactyl|161\/321|[from] Stealth Rock
+|
+|-heal|p1a: Chandelure|212\/261|[from] item: Leftovers
+|turn|21
+|
+|move|p2a: Aerodactyl|Pursuit|p1a: Chandelure|[from]Pursuit
+|-supereffective|p1a: Chandelure
+|-damage|p1a: Chandelure|0 fnt
+|faint|p1a: Chandelure
+|
+|
+|switch|p1a: Hydreigon|Hydreigon, F|325\/325
+|-damage|p1a: Hydreigon|285\/325|[from] Stealth Rock
+|turn|22
+|
+|move|p1a: Hydreigon|Draco Meteor|p2a: Aerodactyl
+|-damage|p2a: Aerodactyl|0 fnt
+|-unboost|p1a: Hydreigon|spa|2
+|faint|p2a: Aerodactyl
+|
+|
+|switch|p2a: Infernape|Infernape, F|221\/293
+|-damage|p2a: Infernape|185\/293|[from] Spikes
+|-damage|p2a: Infernape|149\/293|[from] Stealth Rock
+|turn|23
+|
+|move|p1a: Hydreigon|Draco Meteor|p2a: Infernape
+|-damage|p2a: Infernape|0 fnt
+|-unboost|p1a: Hydreigon|spa|2
+|faint|p2a: Infernape
+|
+|win|Malefic

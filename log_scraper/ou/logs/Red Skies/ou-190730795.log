@@ -1,0 +1,311 @@
+|join|Red Skies
+|join|Will-I-am2
+|player|p1|Red Skies|64
+|player|p2|Will-I-am2|266
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Excadrill, M
+|poke|p1|Clefable, F
+|poke|p1|Rotom-Wash
+|poke|p1|Greninja, F
+|poke|p1|Medicham, M
+|poke|p1|Tyranitar, M
+|poke|p2|Registeel
+|poke|p2|Mamoswine, M
+|poke|p2|Hydreigon, F
+|poke|p2|Slowbro, F
+|poke|p2|Arbok, M
+|poke|p2|Xatu, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|switch|p2a: Hydreigon|Hydreigon, F|333\/333
+|turn|1
+|
+|move|p2a: Hydreigon|Dark Pulse|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|112\/304
+|move|p1a: Rotom-Wash|Pain Split|p2a: Hydreigon
+|-sethp|p2a: Hydreigon|222\/333|p1a: Rotom-Wash|222\/304|[from] move: Pain Split
+|
+|-heal|p1a: Rotom-Wash|241\/304|[from] item: Leftovers
+|turn|2
+|
+|switch|p2a: Mamoswine|Mamoswine, M|424\/424
+|switch|p1a: Clefable|Clefable, F|394\/394
+|
+|turn|3
+|
+|move|p2a: Mamoswine|Knock Off|p1a: Clefable
+|-resisted|p1a: Clefable
+|-damage|p1a: Clefable|320\/394
+|-enditem|p1a: Clefable|Leftovers|[from] move: Knock Off|[of] p2a: Mamoswine
+|-damage|p2a: Mamoswine|382\/424|[from] item: Life Orb
+|move|p1a: Clefable|Calm Mind|p1a: Clefable
+|-boost|p1a: Clefable|spa|1
+|-boost|p1a: Clefable|spd|1
+|
+|turn|4
+|
+|move|p2a: Mamoswine|Icicle Crash|p1a: Clefable
+|-damage|p1a: Clefable|102\/394
+|-damage|p2a: Mamoswine|340\/424|[from] item: Life Orb
+|move|p1a: Clefable|Soft-Boiled|p1a: Clefable
+|-heal|p1a: Clefable|299\/394
+|
+|turn|5
+|
+|move|p2a: Mamoswine|Icicle Crash|p1a: Clefable
+|-damage|p1a: Clefable|81\/394
+|-damage|p2a: Mamoswine|298\/424|[from] item: Life Orb
+|cant|p1a: Clefable|flinch
+|
+|turn|6
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|241\/304
+|move|p2a: Mamoswine|Icicle Crash|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|167\/304
+|-damage|p2a: Mamoswine|256\/424|[from] item: Life Orb
+|
+|-heal|p1a: Rotom-Wash|186\/304|[from] item: Leftovers
+|turn|7
+|
+|switch|p2a: Hydreigon|Hydreigon, F|222\/333
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Hydreigon
+|-status|p2a: Hydreigon|brn
+|
+|-heal|p1a: Rotom-Wash|205\/304|[from] item: Leftovers
+|-damage|p2a: Hydreigon|181\/333 brn|[from] brn
+|turn|8
+|
+|switch|p1a: Tyranitar|Tyranitar, M|404\/404
+|-weather|Sandstorm
+|move|p2a: Hydreigon|Focus Blast|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|faint|p1a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Hydreigon|161\/333 brn|[from] sandstorm
+|-damage|p2a: Hydreigon|120\/333 brn|[from] brn
+|
+|switch|p1a: Excadrill|Excadrill, M|372\/372
+|-item|p1a: Excadrill|Air Balloon
+|turn|9
+|
+|switch|p2a: Xatu|Xatu, M|334\/334
+|move|p1a: Excadrill|Swords Dance|p1a: Excadrill
+|-boost|p1a: Excadrill|atk|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Xatu|314\/334|[from] sandstorm
+|turn|10
+|
+|move|p1a: Excadrill|Rock Slide|p2a: Xatu
+|-supereffective|p2a: Xatu
+|-damage|p2a: Xatu|0 fnt
+|faint|p2a: Xatu
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Arbok|Arbok, M|324\/324
+|-ability|p2a: Arbok|Intimidate|[of] p1a: Excadrill
+|-unboost|p1a: Excadrill|atk|1
+|turn|11
+|
+|switch|p2a: Hydreigon|Hydreigon, F|120\/333 brn
+|move|p1a: Excadrill|Earthquake|p2a: Hydreigon
+|-immune|p2a: Hydreigon|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Hydreigon|100\/333 brn|[from] sandstorm
+|-damage|p2a: Hydreigon|59\/333 brn|[from] brn
+|turn|12
+|
+|move|p1a: Excadrill|Rock Slide|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|faint|p2a: Hydreigon
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Slowbro|Slowbro, F|394\/394
+|turn|13
+|
+|move|p1a: Excadrill|Earthquake|p2a: Slowbro
+|-damage|p2a: Slowbro|106\/394
+|move|p2a: Slowbro|Trick Room|p2a: Slowbro
+|-fieldstart|move: Trick Room|[of] p2a: Slowbro
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Slowbro|82\/394|[from] sandstorm
+|-heal|p2a: Slowbro|106\/394|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Slowbro|Scald|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-damage|p1a: Excadrill|0 fnt
+|-enditem|p1a: Excadrill|Air Balloon
+|faint|p1a: Excadrill
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Slowbro|82\/394|[from] sandstorm
+|-heal|p2a: Slowbro|106\/394|[from] item: Leftovers
+|
+|switch|p1a: Medicham|Medicham, M|262\/262
+|turn|15
+|
+|switch|p2a: Arbok|Arbok, M|324\/324
+|-ability|p2a: Arbok|Intimidate|[of] p1a: Medicham
+|-unboost|p1a: Medicham|atk|1
+|detailschange|p1a: Medicham|Medicham-Mega, M
+|message|Medicham has Mega Evolved into Mega Medicham!
+|move|p1a: Medicham|High Jump Kick|p2a: Arbok|[miss]
+|-miss|p1a: Medicham|p2a: Arbok
+|-damage|p1a: Medicham|131\/262|[from] highjumpkick
+|
+|-weather|none
+|turn|16
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|205\/304
+|move|p2a: Arbok|Coil|p2a: Arbok
+|-boost|p2a: Arbok|atk|1
+|-boost|p2a: Arbok|def|1
+|-boost|p2a: Arbok|accuracy|1
+|
+|-heal|p1a: Rotom-Wash|224\/304|[from] item: Leftovers
+|turn|17
+|
+|move|p2a: Arbok|Gunk Shot|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|44\/304
+|-status|p1a: Rotom-Wash|psn
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Arbok
+|-status|p2a: Arbok|brn
+|
+|-heal|p1a: Rotom-Wash|63\/304 psn|[from] item: Leftovers
+|-damage|p2a: Arbok|284\/324 brn|[from] brn
+|-damage|p1a: Rotom-Wash|25\/304 psn|[from] psn
+|-fieldend|move: Trick Room
+|turn|18
+|
+|move|p1a: Rotom-Wash|Pain Split|p2a: Arbok
+|-sethp|p2a: Arbok|154\/324 brn|p1a: Rotom-Wash|154\/304 psn|[from] move: Pain Split
+|move|p2a: Arbok|Gunk Shot|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|60\/304 psn
+|
+|-heal|p1a: Rotom-Wash|79\/304 psn|[from] item: Leftovers
+|-heal|p2a: Arbok|174\/324 brn|[from] item: Black Sludge
+|-damage|p1a: Rotom-Wash|41\/304 psn|[from] psn
+|-damage|p2a: Arbok|134\/324 brn|[from] brn
+|turn|19
+|
+|move|p2a: Arbok|Sucker Punch|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|
+|-heal|p2a: Arbok|154\/324 brn|[from] item: Black Sludge
+|-damage|p2a: Arbok|114\/324 brn|[from] brn
+|
+|switch|p1a: Greninja|Greninja, F|285\/285
+|turn|20
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|move|p1a: Greninja|Hydro Pump|p2a: Registeel
+|-start|p1a: Greninja|typechange|Water|[from] Protean
+|-damage|p2a: Registeel|231\/364
+|-damage|p1a: Greninja|257\/285|[from] item: Life Orb
+|
+|-heal|p2a: Registeel|253\/364|[from] item: Leftovers
+|turn|21
+|
+|switch|p1a: Medicham|Medicham-Mega, M|131\/262
+|move|p2a: Registeel|Thunder Wave|p1a: Medicham
+|-status|p1a: Medicham|par
+|
+|-heal|p2a: Registeel|275\/364|[from] item: Leftovers
+|turn|22
+|
+|switch|p2a: Arbok|Arbok, M|114\/324 brn
+|-ability|p2a: Arbok|Intimidate|[of] p1a: Medicham
+|-unboost|p1a: Medicham|atk|1
+|move|p1a: Medicham|High Jump Kick|p2a: Arbok
+|-resisted|p2a: Arbok
+|-damage|p2a: Arbok|0 fnt
+|faint|p2a: Arbok
+|
+|
+|switch|p2a: Mamoswine|Mamoswine, M|256\/424
+|turn|23
+|
+|switch|p1a: Clefable|Clefable, F|81\/394
+|move|p2a: Mamoswine|Earthquake|p1a: Clefable
+|-damage|p1a: Clefable|0 fnt
+|-damage|p2a: Mamoswine|214\/424|[from] item: Life Orb
+|faint|p1a: Clefable
+|
+|
+|switch|p1a: Greninja|Greninja, F|257\/285
+|turn|24
+|
+|switch|p2a: Registeel|Registeel|275\/364
+|move|p1a: Greninja|Hydro Pump|p2a: Registeel
+|-start|p1a: Greninja|typechange|Water|[from] Protean
+|-damage|p2a: Registeel|149\/364
+|-damage|p1a: Greninja|229\/285|[from] item: Life Orb
+|
+|-heal|p2a: Registeel|171\/364|[from] item: Leftovers
+|turn|25
+|
+|move|p1a: Greninja|Hydro Pump|p2a: Registeel|[miss]
+|-miss|p1a: Greninja|p2a: Registeel
+|move|p2a: Registeel|Thunder Wave|p1a: Greninja
+|-status|p1a: Greninja|par
+|
+|-heal|p2a: Registeel|193\/364|[from] item: Leftovers
+|turn|26
+|
+|move|p2a: Registeel|Seismic Toss|p1a: Greninja
+|-damage|p1a: Greninja|129\/285 par
+|move|p1a: Greninja|Hydro Pump|p2a: Registeel
+|-damage|p2a: Registeel|71\/364
+|-damage|p1a: Greninja|101\/285 par|[from] item: Life Orb
+|
+|-heal|p2a: Registeel|93\/364|[from] item: Leftovers
+|turn|27
+|
+|move|p2a: Registeel|Seismic Toss|p1a: Greninja
+|-damage|p1a: Greninja|1\/285 par
+|move|p1a: Greninja|Hydro Pump|p2a: Registeel
+|-damage|p2a: Registeel|0 fnt
+|-damage|p1a: Greninja|0 fnt|[from] item: Life Orb
+|faint|p2a: Registeel
+|faint|p1a: Greninja
+|
+|
+|switch|p1a: Medicham|Medicham-Mega, M|131\/262 par
+|switch|p2a: Slowbro|Slowbro, F|237\/394
+|turn|28
+|
+|move|p1a: Medicham|High Jump Kick|p2a: Slowbro
+|-resisted|p2a: Slowbro
+|-damage|p2a: Slowbro|46\/394
+|move|p2a: Slowbro|Scald|p1a: Medicham
+|-damage|p1a: Medicham|0 fnt
+|faint|p1a: Medicham
+|
+|win|Will-I-am2
+|raw|Ladder updating...
+|raw|Red Skies's rating: 1659 &rarr; <strong>1640<\/strong><br \/>(-19 for losing)
+|raw|Will-I-am2's rating: 1680 &rarr; <strong>1699<\/strong><br \/>(+19 for winning)

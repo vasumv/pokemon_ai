@@ -1,0 +1,1337 @@
+|join|RowDog
+|join|N_PokeTrainer
+|player|p1|RowDog|80
+|player|p2|N_PokeTrainer|209
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Aromatisse, F
+|poke|p1|Doublade, F
+|poke|p1|Blissey, F
+|poke|p1|Arcanine, M
+|poke|p1|Crobat, M
+|poke|p1|Gastrodon, M
+|poke|p2|Absol, M
+|poke|p2|Blissey, F
+|poke|p2|Tangrowth, F
+|poke|p2|Hippowdon, M
+|poke|p2|Mienshao, M
+|poke|p2|Blastoise, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Aromatisse|Aromatisse, F|406\/406
+|switch|p2a: Absol|Absol, M|271\/271
+|turn|1
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|move|p1a: Aromatisse|Moonblast|p2a: Blissey
+|-damage|p2a: Blissey|633\/714
+|
+|-heal|p2a: Blissey|677\/714|[from] item: Leftovers
+|turn|2
+|
+|switch|p1a: Doublade|Doublade, F|319\/319
+|move|p2a: Blissey|Seismic Toss|p1a: Doublade
+|-immune|p1a: Doublade|[msg]
+|
+|-heal|p2a: Blissey|714\/714|[from] item: Leftovers
+|turn|3
+|
+|switch|p2a: Absol|Absol, M|271\/271
+|move|p1a: Doublade|Toxic|p2a: Absol
+|-status|p2a: Absol|tox
+|
+|-damage|p2a: Absol|255\/271 tox|[from] psn
+|turn|4
+|
+|switch|p1a: Aromatisse|Aromatisse, F|406\/406
+|move|p2a: Absol|Knock Off|p1a: Aromatisse
+|-resisted|p1a: Aromatisse
+|-damage|p1a: Aromatisse|321\/406
+|-enditem|p1a: Aromatisse|Leftovers|[from] move: Knock Off|[of] p2a: Absol
+|
+|-damage|p2a: Absol|223\/271 tox|[from] psn
+|turn|5
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|move|p1a: Aromatisse|Moonblast|p2a: Blissey
+|-damage|p2a: Blissey|630\/714
+|
+|-heal|p2a: Blissey|674\/714|[from] item: Leftovers
+|turn|6
+|
+|move|p2a: Blissey|Heal Bell|p2a: Blissey
+|-cureteam|p2a: Blissey|[from] move: HealBell
+|move|p1a: Aromatisse|Wish|p1a: Aromatisse
+|
+|-heal|p2a: Blissey|714\/714|[from] item: Leftovers
+|turn|7
+|
+|switch|p2a: Hippowdon|Hippowdon, M|420\/420
+|-weather|Sandstorm
+|move|p1a: Aromatisse|Moonblast|p2a: Hippowdon
+|-damage|p2a: Hippowdon|261\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Aromatisse|296\/406|[from] sandstorm
+|-heal|p1a: Aromatisse|406\/406|[from] move: Wish|[wisher] Aromatisse
+|-heal|p2a: Hippowdon|287\/420|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Gastrodon|Gastrodon, M|426\/426
+|move|p2a: Hippowdon|Toxic|p1a: Gastrodon
+|-status|p1a: Gastrodon|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|313\/420|[from] item: Leftovers
+|-damage|p1a: Gastrodon|400\/426 tox|[from] psn
+|turn|9
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|switch|p1a: Crobat|Crobat, M|373\/373
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Crobat|350\/373|[from] sandstorm
+|-damage|p2a: Blissey|670\/714|[from] sandstorm
+|-heal|p1a: Crobat|373\/373|[from] item: Black Sludge
+|-heal|p2a: Blissey|714\/714|[from] item: Leftovers
+|turn|10
+|
+|move|p1a: Crobat|Taunt|p2a: Blissey
+|-start|p2a: Blissey|move: Taunt
+|move|p2a: Blissey|Seismic Toss|p1a: Crobat
+|-damage|p1a: Crobat|273\/373
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Crobat|250\/373|[from] sandstorm
+|-damage|p2a: Blissey|670\/714|[from] sandstorm
+|-heal|p1a: Crobat|273\/373|[from] item: Black Sludge
+|-heal|p2a: Blissey|714\/714|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Crobat|Brave Bird|p2a: Blissey
+|-damage|p2a: Blissey|459\/714
+|-damage|p1a: Crobat|189\/373|[from] recoil|[of] p2a: Blissey
+|move|p2a: Blissey|Seismic Toss|p1a: Crobat
+|-damage|p1a: Crobat|89\/373
+|
+|-weather|none
+|-heal|p1a: Crobat|112\/373|[from] item: Black Sludge
+|-heal|p2a: Blissey|503\/714|[from] item: Leftovers
+|turn|12
+|join|watfor
+|
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-heal|p1a: Crobat|299\/373
+|move|p2a: Blissey|Seismic Toss|p1a: Crobat
+|-damage|p1a: Crobat|199\/373
+|
+|-heal|p1a: Crobat|222\/373|[from] item: Black Sludge
+|-heal|p2a: Blissey|547\/714|[from] item: Leftovers
+|-end|p2a: Blissey|move: Taunt
+|turn|13
+|
+|switch|p1a: Doublade|Doublade, F|319\/319
+|move|p2a: Blissey|Seismic Toss|p1a: Doublade
+|-immune|p1a: Doublade|[msg]
+|
+|-heal|p2a: Blissey|591\/714|[from] item: Leftovers
+|turn|14
+|
+|switch|p2a: Hippowdon|Hippowdon, M|313\/420
+|-weather|Sandstorm
+|move|p1a: Doublade|Sacred Sword|p2a: Hippowdon
+|-damage|p2a: Hippowdon|243\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|269\/420|[from] item: Leftovers
+|turn|15
+|
+|move|p2a: Hippowdon|Stealth Rock|p1a: Doublade
+|-sidestart|p1: RowDog|move: Stealth Rock
+|move|p1a: Doublade|Toxic|p2a: Hippowdon
+|-status|p2a: Hippowdon|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|295\/420 tox|[from] item: Leftovers
+|-damage|p2a: Hippowdon|269\/420 tox|[from] psn
+|turn|16
+|
+|move|p2a: Hippowdon|Earthquake|p1a: Doublade
+|-supereffective|p1a: Doublade
+|-damage|p1a: Doublade|199\/319
+|move|p1a: Doublade|Swords Dance|p1a: Doublade
+|-boost|p1a: Doublade|atk|2
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|295\/420 tox|[from] item: Leftovers
+|-damage|p2a: Hippowdon|243\/420 tox|[from] psn
+|turn|17
+|
+|switch|p1a: Crobat|Crobat, M|222\/373
+|-damage|p1a: Crobat|129\/373|[from] Stealth Rock
+|move|p2a: Hippowdon|Earthquake|p1a: Crobat
+|-immune|p1a: Crobat|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Crobat|106\/373|[from] sandstorm
+|-heal|p1a: Crobat|129\/373|[from] item: Black Sludge
+|-heal|p2a: Hippowdon|269\/420 tox|[from] item: Leftovers
+|-damage|p2a: Hippowdon|191\/420 tox|[from] psn
+|turn|18
+|
+|switch|p2a: Blissey|Blissey, F|591\/714
+|move|p1a: Crobat|Taunt|p2a: Blissey
+|-start|p2a: Blissey|move: Taunt
+|
+|-weather|none
+|-heal|p1a: Crobat|152\/373|[from] item: Black Sludge
+|-heal|p2a: Blissey|635\/714|[from] item: Leftovers
+|turn|19
+|join|NBCAM
+|
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-heal|p1a: Crobat|339\/373
+|move|p2a: Blissey|Seismic Toss|p1a: Crobat
+|-damage|p1a: Crobat|239\/373
+|
+|-heal|p1a: Crobat|262\/373|[from] item: Black Sludge
+|-heal|p2a: Blissey|679\/714|[from] item: Leftovers
+|turn|20
+|
+|move|p1a: Crobat|Defog|p2a: Blissey
+|-unboost|p2a: Blissey|evasion|1
+|-sideend|p1: RowDog|Stealth Rock|[from] move: Defog|[of] p1a: Crobat
+|move|p2a: Blissey|Seismic Toss|p1a: Crobat
+|-damage|p1a: Crobat|162\/373
+|
+|-heal|p1a: Crobat|185\/373|[from] item: Black Sludge
+|-heal|p2a: Blissey|714\/714|[from] item: Leftovers
+|turn|21
+|
+|switch|p2a: Absol|Absol, M|223\/271
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-heal|p1a: Crobat|372\/373
+|
+|-heal|p1a: Crobat|373\/373|[from] item: Black Sludge
+|turn|22
+|
+|switch|p1a: Aromatisse|Aromatisse, F|406\/406
+|move|p2a: Absol|Psycho Cut|p1a: Aromatisse
+|-damage|p1a: Aromatisse|319\/406
+|
+|turn|23
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|move|p1a: Aromatisse|Moonblast|p2a: Blissey
+|-damage|p2a: Blissey|632\/714
+|-unboost|p2a: Blissey|spa|1
+|
+|-heal|p2a: Blissey|676\/714|[from] item: Leftovers
+|turn|24
+|
+|move|p2a: Blissey|Heal Bell|p2a: Blissey
+|-cureteam|p2a: Blissey|[from] move: HealBell
+|move|p1a: Aromatisse|Wish|p1a: Aromatisse
+|
+|-heal|p2a: Blissey|714\/714|[from] item: Leftovers
+|turn|25
+|
+|switch|p1a: Doublade|Doublade, F|199\/319
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p1a: Doublade|319\/319|[from] move: Wish|[wisher] Aromatisse
+|turn|26
+|
+|switch|p2a: Hippowdon|Hippowdon, M|191\/420
+|-weather|Sandstorm
+|move|p1a: Doublade|Toxic|p2a: Hippowdon
+|-status|p2a: Hippowdon|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|420\/420 tox|[from] move: Wish|[wisher] Blissey
+|-damage|p2a: Hippowdon|394\/420 tox|[from] psn
+|turn|27
+|
+|switch|p2a: Tangrowth|Tangrowth, F|403\/403
+|switch|p1a: Crobat|Crobat, M|373\/373
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Crobat|350\/373|[from] sandstorm
+|-damage|p2a: Tangrowth|378\/403|[from] sandstorm
+|-heal|p1a: Crobat|373\/373|[from] item: Black Sludge
+|turn|28
+|
+|move|p1a: Crobat|Brave Bird|p2a: Tangrowth
+|-supereffective|p2a: Tangrowth
+|-damage|p2a: Tangrowth|184\/403
+|-damage|p1a: Crobat|309\/373|[from] recoil|[of] p2a: Tangrowth
+|move|p2a: Tangrowth|Knock Off|p1a: Crobat
+|-damage|p1a: Crobat|201\/373
+|-enditem|p1a: Crobat|Black Sludge|[from] move: Knock Off|[of] p2a: Tangrowth
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Crobat|178\/373|[from] sandstorm
+|-damage|p2a: Tangrowth|159\/403|[from] sandstorm
+|turn|29
+|
+|switch|p2a: Hippowdon|Hippowdon, M|394\/420 tox
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-heal|p1a: Crobat|365\/373
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Crobat|342\/373|[from] sandstorm
+|-heal|p2a: Hippowdon|420\/420 tox|[from] item: Leftovers
+|-damage|p2a: Hippowdon|394\/420 tox|[from] psn
+|turn|30
+|
+|move|p1a: Crobat|Taunt|p2a: Hippowdon
+|-start|p2a: Hippowdon|move: Taunt
+|cant|p2a: Hippowdon|move: Taunt|Stealth Rock
+|
+|-weather|none
+|-heal|p2a: Hippowdon|420\/420 tox|[from] item: Leftovers
+|-damage|p2a: Hippowdon|368\/420 tox|[from] psn
+|turn|31
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|move|p1a: Crobat|Brave Bird|p2a: Blissey
+|-damage|p2a: Blissey|468\/714
+|-damage|p1a: Crobat|261\/373|[from] recoil|[of] p2a: Blissey
+|
+|-heal|p2a: Blissey|512\/714|[from] item: Leftovers
+|turn|32
+|
+|switch|p1a: Doublade|Doublade, F|319\/319
+|move|p2a: Blissey|Seismic Toss|p1a: Doublade
+|-immune|p1a: Doublade|[msg]
+|
+|-heal|p2a: Blissey|556\/714|[from] item: Leftovers
+|turn|33
+|
+|switch|p2a: Tangrowth|Tangrowth, F|293\/403
+|move|p1a: Doublade|Swords Dance|p1a: Doublade
+|-boost|p1a: Doublade|atk|2
+|
+|turn|34
+|
+|switch|p1a: Aromatisse|Aromatisse, F|319\/406
+|move|p2a: Tangrowth|Knock Off|p1a: Aromatisse
+|-resisted|p1a: Aromatisse
+|-damage|p1a: Aromatisse|292\/406
+|
+|turn|35
+|join|vaiw
+|
+|switch|p2a: Blissey|Blissey, F|556\/714
+|move|p1a: Aromatisse|Moonblast|p2a: Blissey
+|-damage|p2a: Blissey|472\/714
+|
+|-heal|p2a: Blissey|516\/714|[from] item: Leftovers
+|turn|36
+|c| vaiw|this team
+|
+|move|p2a: Blissey|Heal Bell|p2a: Blissey
+|-cureteam|p2a: Blissey|[from] move: HealBell
+|move|p1a: Aromatisse|Wish|p1a: Aromatisse
+|
+|-heal|p2a: Blissey|560\/714|[from] item: Leftovers
+|turn|37
+|c| vaiw|rd
+|c| vaiw|is good
+|
+|switch|p2a: Blastoise|Blastoise, M|361\/361
+|move|p1a: Aromatisse|Aromatherapy|p1a: Aromatisse
+|-cureteam|p1a: Aromatisse|[from] move: Aromatherapy
+|
+|-heal|p1a: Aromatisse|406\/406|[from] move: Wish|[wisher] Aromatisse
+|turn|38
+|c| vaiw|this is the one i've lost to
+|c|âRowDog|RK9 might be subject to change though
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|detailschange|p2a: Blastoise|Blastoise-Mega, M
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Blastoise|Water Pulse|p1a: Blissey
+|-damage|p1a: Blissey|572\/714
+|
+|-heal|p1a: Blissey|616\/714|[from] item: Leftovers
+|turn|39
+|
+|move|p2a: Blastoise|Aura Sphere|p1a: Blissey
+|-supereffective|p1a: Blissey
+|-damage|p1a: Blissey|382\/714
+|move|p1a: Blissey|Stealth Rock|p2a: Blastoise
+|-sidestart|p2: N_PokeTrainer|move: Stealth Rock
+|
+|-heal|p1a: Blissey|426\/714|[from] item: Leftovers
+|turn|40
+|c| vaiw|yeah maybs
+|
+|move|p2a: Blastoise|Aura Sphere|p1a: Blissey
+|-supereffective|p1a: Blissey
+|-damage|p1a: Blissey|196\/714
+|move|p1a: Blissey|Soft-Boiled|p1a: Blissey
+|-heal|p1a: Blissey|553\/714
+|
+|-heal|p1a: Blissey|597\/714|[from] item: Leftovers
+|turn|41
+|c| watfor|i think you can run sableye over rk9 as a luke check
+|c|âRowDog|maybe
+|c| watfor|secondary luke check i mean
+|c| vaiw|tried nido in that role?
+|c| watfor|ye
+|
+|switch|p2a: Hippowdon|Hippowdon, M|368\/420
+|-damage|p2a: Hippowdon|342\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p1a: Blissey|Seismic Toss|p2a: Hippowdon
+|-damage|p2a: Hippowdon|242\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blissey|553\/714|[from] sandstorm
+|-heal|p1a: Blissey|597\/714|[from] item: Leftovers
+|-heal|p2a: Hippowdon|268\/420|[from] item: Leftovers
+|turn|42
+|c| watfor|oh nido isn't bad either
+|
+|move|p1a: Blissey|Seismic Toss|p2a: Hippowdon
+|-damage|p2a: Hippowdon|168\/420
+|move|p2a: Hippowdon|Stealth Rock|p1a: Blissey
+|-sidestart|p1: RowDog|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blissey|553\/714|[from] sandstorm
+|-heal|p1a: Blissey|597\/714|[from] item: Leftovers
+|-heal|p2a: Hippowdon|194\/420|[from] item: Leftovers
+|turn|43
+|c| watfor|so you can run dual wishers
+|c|âRowDog|I do run dual wishers?
+|
+|move|p1a: Blissey|Seismic Toss|p2a: Hippowdon
+|-damage|p2a: Hippowdon|94\/420
+|move|p2a: Hippowdon|Slack Off|p2a: Hippowdon
+|-heal|p2a: Hippowdon|304\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blissey|553\/714|[from] sandstorm
+|-heal|p1a: Blissey|597\/714|[from] item: Leftovers
+|-heal|p2a: Hippowdon|330\/420|[from] item: Leftovers
+|turn|44
+|
+|move|p1a: Blissey|Seismic Toss|p2a: Hippowdon
+|-damage|p2a: Hippowdon|230\/420
+|move|p2a: Hippowdon|Earthquake|p1a: Blissey
+|-damage|p1a: Blissey|345\/714
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blissey|301\/714|[from] sandstorm
+|-heal|p1a: Blissey|345\/714|[from] item: Leftovers
+|-heal|p2a: Hippowdon|256\/420|[from] item: Leftovers
+|turn|45
+|c| vaiw|you can run
+|c| vaiw|fireblast blissey
+|c| vaiw|cause you're real
+|c| vaiw|:)
+|
+|move|p1a: Blissey|Soft-Boiled|p1a: Blissey
+|-heal|p1a: Blissey|702\/714
+|move|p2a: Hippowdon|Earthquake|p1a: Blissey
+|-damage|p1a: Blissey|465\/714
+|
+|-weather|none
+|-heal|p1a: Blissey|509\/714|[from] item: Leftovers
+|-heal|p2a: Hippowdon|282\/420|[from] item: Leftovers
+|turn|46
+|c|âRowDog|point
+|c| vaiw|anyways
+|c| vaiw|bai
+|leave|vaiw
+|c|âRowDog|that is actually a good idea for NidoQueen
+|
+|switch|p1a: Gastrodon|Gastrodon, M|400\/426
+|-damage|p1a: Gastrodon|374\/426|[from] Stealth Rock
+|move|p2a: Hippowdon|Toxic|p1a: Gastrodon
+|-status|p1a: Gastrodon|tox
+|
+|-heal|p2a: Hippowdon|308\/420|[from] item: Leftovers
+|-heal|p1a: Gastrodon|400\/426 tox|[from] item: Leftovers
+|-damage|p1a: Gastrodon|374\/426 tox|[from] psn
+|turn|47
+|c| watfor|wait i thought u run softboil bliss
+|c| watfor|apparently i am mixing it up with someone esle
+|
+|switch|p2a: Tangrowth|Tangrowth, F|403\/403
+|-damage|p2a: Tangrowth|353\/403|[from] Stealth Rock
+|move|p1a: Gastrodon|Scald|p2a: Tangrowth
+|-crit|p2a: Tangrowth
+|-resisted|p2a: Tangrowth
+|-damage|p2a: Tangrowth|283\/403
+|-status|p2a: Tangrowth|brn
+|
+|-heal|p1a: Gastrodon|400\/426 tox|[from] item: Leftovers
+|-damage|p2a: Tangrowth|233\/403 brn|[from] brn
+|-damage|p1a: Gastrodon|348\/426 tox|[from] psn
+|turn|48
+|c|âRowDog|SoftBoiled and Wish
+|c| watfor|ahh
+|c| watfor|i see
+|
+|switch|p1a: Arcanine|Arcanine, M|383\/383
+|-damage|p1a: Arcanine|288\/383|[from] Stealth Rock
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Tangrowth
+|-unboost|p2a: Tangrowth|atk|1
+|move|p2a: Tangrowth|Giga Drain|p1a: Arcanine
+|-resisted|p1a: Arcanine
+|-damage|p1a: Arcanine|228\/383
+|-heal|p2a: Tangrowth|263\/403 brn|[from] drain|[of] p1a: Arcanine
+|
+|-damage|p2a: Tangrowth|213\/403 brn|[from] brn
+|turn|49
+|
+|switch|p2a: Blissey|Blissey, F|560\/714
+|-damage|p2a: Blissey|471\/714|[from] Stealth Rock
+|move|p1a: Arcanine|Will-O-Wisp|p2a: Blissey
+|-status|p2a: Blissey|brn
+|
+|-heal|p2a: Blissey|515\/714 brn|[from] item: Leftovers
+|-damage|p2a: Blissey|426\/714 brn|[from] brn
+|turn|50
+|
+|move|p1a: Arcanine|Morning Sun|p1a: Arcanine
+|-heal|p1a: Arcanine|383\/383
+|move|p2a: Blissey|Heal Bell|p2a: Blissey
+|-cureteam|p2a: Blissey|[from] move: HealBell
+|
+|-heal|p2a: Blissey|470\/714|[from] item: Leftovers
+|turn|51
+|
+|move|p1a: Arcanine|Flare Blitz|p2a: Blissey
+|-damage|p2a: Blissey|214\/714
+|-damage|p1a: Arcanine|299\/383|[from] recoil|[of] p2a: Blissey
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p2a: Blissey|258\/714|[from] item: Leftovers
+|turn|52
+|
+|move|p1a: Arcanine|Will-O-Wisp|p2a: Blissey|[miss]
+|-miss|p1a: Arcanine|p2a: Blissey
+|move|p2a: Blissey|Seismic Toss|p1a: Arcanine
+|-damage|p1a: Arcanine|199\/383
+|-damage|p2a: Blissey|139\/714|[from] item: Rocky Helmet|[of] p1a: Arcanine
+|
+|-heal|p2a: Blissey|496\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p2a: Blissey|540\/714|[from] item: Leftovers
+|turn|53
+|
+|move|p1a: Arcanine|Morning Sun|p1a: Arcanine
+|-heal|p1a: Arcanine|383\/383
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p2a: Blissey|584\/714|[from] item: Leftovers
+|turn|54
+|
+|switch|p2a: Hippowdon|Hippowdon, M|308\/420
+|-damage|p2a: Hippowdon|282\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p1a: Arcanine|Will-O-Wisp|p2a: Hippowdon
+|-status|p2a: Hippowdon|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Arcanine|360\/383|[from] sandstorm
+|-heal|p2a: Hippowdon|420\/420 brn|[from] move: Wish|[wisher] Blissey
+|-damage|p2a: Hippowdon|368\/420 brn|[from] brn
+|turn|55
+|
+|switch|p1a: Crobat|Crobat, M|261\/373
+|-damage|p1a: Crobat|168\/373|[from] Stealth Rock
+|switch|p2a: Blissey|Blissey, F|584\/714
+|-damage|p2a: Blissey|495\/714|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Crobat|145\/373|[from] sandstorm
+|-damage|p2a: Blissey|451\/714|[from] sandstorm
+|-heal|p2a: Blissey|495\/714|[from] item: Leftovers
+|turn|56
+|
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-heal|p1a: Crobat|332\/373
+|move|p2a: Blissey|Seismic Toss|p1a: Crobat
+|-damage|p1a: Crobat|232\/373
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Crobat|209\/373|[from] sandstorm
+|-damage|p2a: Blissey|451\/714|[from] sandstorm
+|-heal|p2a: Blissey|495\/714|[from] item: Leftovers
+|turn|57
+|
+|move|p1a: Crobat|Taunt|p2a: Blissey
+|-start|p2a: Blissey|move: Taunt
+|move|p2a: Blissey|Seismic Toss|p1a: Crobat
+|-damage|p1a: Crobat|109\/373
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Crobat|86\/373|[from] sandstorm
+|-damage|p2a: Blissey|451\/714|[from] sandstorm
+|-heal|p2a: Blissey|495\/714|[from] item: Leftovers
+|turn|58
+|
+|switch|p2a: Mienshao|Mienshao, M|271\/271
+|-damage|p2a: Mienshao|255\/271|[from] Stealth Rock
+|move|p1a: Crobat|Defog|p2a: Mienshao
+|-unboost|p2a: Mienshao|evasion|1
+|-sideend|p2: N_PokeTrainer|Stealth Rock|[from] move: Defog|[of] p2a: Mienshao
+|-sideend|p1: RowDog|Stealth Rock|[from] move: Defog|[of] p1a: Crobat
+|
+|-weather|none
+|turn|59
+|join|Emma Bae â¥
+|
+|switch|p1a: Aromatisse|Aromatisse, F|406\/406
+|move|p2a: Mienshao|Stone Edge|p1a: Aromatisse
+|-damage|p1a: Aromatisse|303\/406
+|
+|turn|60
+|
+|switch|p2a: Blissey|Blissey, F|495\/714
+|move|p1a: Aromatisse|Wish|p1a: Aromatisse
+|
+|-heal|p2a: Blissey|539\/714|[from] item: Leftovers
+|turn|61
+|
+|move|p2a: Blissey|Heal Bell|p2a: Blissey
+|-cureteam|p2a: Blissey|[from] move: HealBell
+|move|p1a: Aromatisse|Moonblast|p2a: Blissey
+|-damage|p2a: Blissey|448\/714
+|
+|-heal|p1a: Aromatisse|406\/406|[from] move: Wish|[wisher] Aromatisse
+|-heal|p2a: Blissey|492\/714|[from] item: Leftovers
+|turn|62
+|
+|move|p2a: Blissey|Wish|p2a: Blissey
+|move|p1a: Aromatisse|Aromatherapy|p1a: Aromatisse
+|-cureteam|p1a: Aromatisse|[from] move: Aromatherapy
+|
+|-heal|p2a: Blissey|536\/714|[from] item: Leftovers
+|turn|63
+|
+|switch|p2a: Hippowdon|Hippowdon, M|368\/420
+|-weather|Sandstorm
+|switch|p1a: Doublade|Doublade, F|319\/319
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|420\/420|[from] move: Wish|[wisher] Blissey
+|turn|64
+|
+|switch|p1a: Crobat|Crobat, M|86\/373
+|move|p2a: Hippowdon|Stealth Rock|p1a: Crobat
+|-sidestart|p1: RowDog|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Crobat|63\/373|[from] sandstorm
+|turn|65
+|c| watfor|50\/50
+|
+|move|p1a: Crobat|Defog|p2a: Hippowdon
+|-unboost|p2a: Hippowdon|evasion|1
+|-sideend|p1: RowDog|Stealth Rock|[from] move: Defog|[of] p1a: Crobat
+|move|p2a: Hippowdon|Earthquake|p1a: Crobat
+|-immune|p1a: Crobat|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Crobat|40\/373|[from] sandstorm
+|turn|66
+|
+|move|p1a: Crobat|Taunt|p2a: Hippowdon
+|-start|p2a: Hippowdon|move: Taunt
+|move|p2a: Hippowdon|Earthquake|p1a: Crobat
+|-immune|p1a: Crobat|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Crobat|17\/373|[from] sandstorm
+|turn|67
+|
+|switch|p1a: Gastrodon|Gastrodon, M|348\/426
+|move|p2a: Hippowdon|Earthquake|p1a: Gastrodon
+|-crit|p1a: Gastrodon
+|-damage|p1a: Gastrodon|141\/426
+|
+|-weather|none
+|-heal|p1a: Gastrodon|167\/426|[from] item: Leftovers
+|turn|68
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|361\/361
+|switch|p1a: Crobat|Crobat, M|17\/373
+|
+|turn|69
+|
+|switch|p1a: Blissey|Blissey, F|509\/714
+|move|p2a: Blastoise|Dark Pulse|p1a: Blissey
+|-damage|p1a: Blissey|397\/714
+|
+|-heal|p1a: Blissey|441\/714|[from] item: Leftovers
+|turn|70
+|
+|move|p2a: Blastoise|Aura Sphere|p1a: Blissey
+|-supereffective|p1a: Blissey
+|-damage|p1a: Blissey|207\/714
+|move|p1a: Blissey|Soft-Boiled|p1a: Blissey
+|-heal|p1a: Blissey|564\/714
+|
+|-heal|p1a: Blissey|608\/714|[from] item: Leftovers
+|turn|71
+|
+|move|p2a: Blastoise|Aura Sphere|p1a: Blissey
+|-supereffective|p1a: Blissey
+|-damage|p1a: Blissey|360\/714
+|move|p1a: Blissey|Wish|p1a: Blissey
+|
+|-heal|p1a: Blissey|404\/714|[from] item: Leftovers
+|turn|72
+|c| Emma Bae â¥|omg da stalllll
+|
+|move|p2a: Blastoise|Aura Sphere|p1a: Blissey
+|-supereffective|p1a: Blissey
+|-damage|p1a: Blissey|156\/714
+|move|p1a: Blissey|Seismic Toss|p2a: Blastoise
+|-damage|p2a: Blastoise|261\/361
+|
+|-heal|p1a: Blissey|513\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Blissey|557\/714|[from] item: Leftovers
+|turn|73
+|
+|move|p2a: Blastoise|Aura Sphere|p1a: Blissey
+|-supereffective|p1a: Blissey
+|-damage|p1a: Blissey|311\/714
+|move|p1a: Blissey|Wish|p1a: Blissey
+|
+|-heal|p1a: Blissey|355\/714|[from] item: Leftovers
+|turn|74
+|
+|move|p2a: Blastoise|Aura Sphere|p1a: Blissey
+|-supereffective|p1a: Blissey
+|-damage|p1a: Blissey|93\/714
+|move|p1a: Blissey|Seismic Toss|p2a: Blastoise
+|-damage|p2a: Blastoise|161\/361
+|
+|-heal|p1a: Blissey|450\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Blissey|494\/714|[from] item: Leftovers
+|turn|75
+|
+|switch|p2a: Hippowdon|Hippowdon, M|420\/420
+|-weather|Sandstorm
+|move|p1a: Blissey|Soft-Boiled|p1a: Blissey
+|-heal|p1a: Blissey|714\/714
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blissey|670\/714|[from] sandstorm
+|-heal|p1a: Blissey|714\/714|[from] item: Leftovers
+|turn|76
+|
+|move|p1a: Blissey|Stealth Rock|p2a: Hippowdon
+|-sidestart|p2: N_PokeTrainer|move: Stealth Rock
+|move|p2a: Hippowdon|Stealth Rock|p1a: Blissey
+|-sidestart|p1: RowDog|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blissey|670\/714|[from] sandstorm
+|-heal|p1a: Blissey|714\/714|[from] item: Leftovers
+|turn|77
+|
+|switch|p2a: Blissey|Blissey, F|536\/714
+|-damage|p2a: Blissey|447\/714|[from] Stealth Rock
+|move|p1a: Blissey|Wish|p1a: Blissey
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blissey|670\/714|[from] sandstorm
+|-damage|p2a: Blissey|403\/714|[from] sandstorm
+|-heal|p2a: Blissey|447\/714|[from] item: Leftovers
+|-heal|p1a: Blissey|714\/714|[from] item: Leftovers
+|turn|78
+|
+|switch|p1a: Gastrodon|Gastrodon, M|167\/426
+|-damage|p1a: Gastrodon|141\/426|[from] Stealth Rock
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Blissey|403\/714|[from] sandstorm
+|-heal|p1a: Gastrodon|426\/426|[from] move: Wish|[wisher] Blissey
+|-heal|p2a: Blissey|447\/714|[from] item: Leftovers
+|turn|79
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|161\/361
+|-damage|p2a: Blastoise|116\/361|[from] Stealth Rock
+|move|p1a: Gastrodon|Scald|p2a: Blastoise
+|-resisted|p2a: Blastoise
+|-damage|p2a: Blastoise|74\/361
+|
+|-weather|none
+|-heal|p2a: Blastoise|361\/361|[from] move: Wish|[wisher] Blissey
+|turn|80
+|
+|move|p2a: Blastoise|Aura Sphere|p1a: Gastrodon
+|-damage|p1a: Gastrodon|266\/426
+|move|p1a: Gastrodon|Curse|p1a: Gastrodon
+|-boost|p1a: Gastrodon|atk|1
+|-boost|p1a: Gastrodon|def|1
+|-unboost|p1a: Gastrodon|spe|1
+|
+|-heal|p1a: Gastrodon|292\/426|[from] item: Leftovers
+|turn|81
+|
+|move|p2a: Blastoise|Dark Pulse|p1a: Gastrodon
+|-damage|p1a: Gastrodon|144\/426
+|move|p1a: Gastrodon|Recover|p1a: Gastrodon
+|-heal|p1a: Gastrodon|357\/426
+|
+|-heal|p1a: Gastrodon|383\/426|[from] item: Leftovers
+|turn|82
+|
+|move|p2a: Blastoise|Dark Pulse|p1a: Gastrodon
+|-damage|p1a: Gastrodon|223\/426
+|move|p1a: Gastrodon|Earthquake|p2a: Blastoise
+|-damage|p2a: Blastoise|235\/361
+|
+|-heal|p1a: Gastrodon|249\/426|[from] item: Leftovers
+|turn|83
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|-damage|p1a: Blissey|625\/714|[from] Stealth Rock
+|move|p2a: Blastoise|Dark Pulse|p1a: Blissey
+|-damage|p1a: Blissey|509\/714
+|
+|-heal|p1a: Blissey|553\/714|[from] item: Leftovers
+|turn|84
+|
+|move|p2a: Blastoise|Aura Sphere|p1a: Blissey
+|-supereffective|p1a: Blissey
+|-damage|p1a: Blissey|311\/714
+|move|p1a: Blissey|Seismic Toss|p2a: Blastoise
+|-damage|p2a: Blastoise|135\/361
+|
+|-heal|p1a: Blissey|355\/714|[from] item: Leftovers
+|turn|85
+|
+|move|p2a: Blastoise|Aura Sphere|p1a: Blissey
+|-supereffective|p1a: Blissey
+|-damage|p1a: Blissey|97\/714
+|move|p1a: Blissey|Soft-Boiled|p1a: Blissey
+|-heal|p1a: Blissey|454\/714
+|
+|-heal|p1a: Blissey|498\/714|[from] item: Leftovers
+|turn|86
+|leave|Emma Bae â¥
+|
+|move|p2a: Blastoise|Aura Sphere|p1a: Blissey
+|-supereffective|p1a: Blissey
+|-damage|p1a: Blissey|252\/714
+|move|p1a: Blissey|Soft-Boiled|p1a: Blissey
+|-heal|p1a: Blissey|609\/714
+|
+|-heal|p1a: Blissey|653\/714|[from] item: Leftovers
+|turn|87
+|
+|switch|p2a: Blissey|Blissey, F|447\/714
+|-damage|p2a: Blissey|358\/714|[from] Stealth Rock
+|move|p1a: Blissey|Seismic Toss|p2a: Blissey
+|-damage|p2a: Blissey|258\/714
+|
+|-heal|p2a: Blissey|302\/714|[from] item: Leftovers
+|-heal|p1a: Blissey|697\/714|[from] item: Leftovers
+|turn|88
+|
+|move|p2a: Blissey|Wish|p2a: Blissey
+|move|p1a: Blissey|Wish|p1a: Blissey
+|
+|-heal|p1a: Blissey|714\/714|[from] item: Leftovers
+|-heal|p2a: Blissey|346\/714|[from] item: Leftovers
+|turn|89
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|135\/361
+|-damage|p2a: Blastoise|90\/361|[from] Stealth Rock
+|move|p1a: Blissey|Seismic Toss|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|
+|switch|p2a: Absol|Absol, M|223\/271
+|-damage|p2a: Absol|190\/271|[from] Stealth Rock
+|turn|90
+|c| watfor|inb4 suerpower
+|
+|switch|p1a: Aromatisse|Aromatisse, F|406\/406
+|-damage|p1a: Aromatisse|356\/406|[from] Stealth Rock
+|move|p2a: Absol|Psycho Cut|p1a: Aromatisse
+|-damage|p1a: Aromatisse|268\/406
+|
+|turn|91
+|c| watfor|or iron tail
+|c| watfor|:^]
+|c| watfor|aw
+|
+|switch|p2a: Blissey|Blissey, F|346\/714
+|-damage|p2a: Blissey|257\/714|[from] Stealth Rock
+|move|p1a: Aromatisse|Wish|p1a: Aromatisse
+|
+|-heal|p2a: Blissey|301\/714|[from] item: Leftovers
+|turn|92
+|
+|move|p2a: Blissey|Wish|p2a: Blissey
+|move|p1a: Aromatisse|Moonblast|p2a: Blissey
+|-damage|p2a: Blissey|210\/714
+|
+|-heal|p1a: Aromatisse|406\/406|[from] move: Wish|[wisher] Aromatisse
+|-heal|p2a: Blissey|254\/714|[from] item: Leftovers
+|turn|93
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Aromatisse
+|-damage|p1a: Aromatisse|306\/406
+|move|p1a: Aromatisse|Moonblast|p2a: Blissey
+|-damage|p2a: Blissey|160\/714
+|
+|-heal|p2a: Blissey|517\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p2a: Blissey|561\/714|[from] item: Leftovers
+|turn|94
+|
+|switch|p1a: Doublade|Doublade, F|319\/319
+|-damage|p1a: Doublade|300\/319|[from] Stealth Rock
+|move|p2a: Blissey|Seismic Toss|p1a: Doublade
+|-immune|p1a: Doublade|[msg]
+|
+|-heal|p2a: Blissey|605\/714|[from] item: Leftovers
+|turn|95
+|
+|switch|p2a: Tangrowth|Tangrowth, F|347\/403
+|-damage|p2a: Tangrowth|297\/403|[from] Stealth Rock
+|move|p1a: Doublade|Toxic|p2a: Tangrowth
+|-status|p2a: Tangrowth|tox
+|
+|-damage|p2a: Tangrowth|272\/403 tox|[from] psn
+|turn|96
+|
+|switch|p1a: Aromatisse|Aromatisse, F|306\/406
+|-damage|p1a: Aromatisse|256\/406|[from] Stealth Rock
+|move|p2a: Tangrowth|Knock Off|p1a: Aromatisse
+|-crit|p1a: Aromatisse
+|-resisted|p1a: Aromatisse
+|-damage|p1a: Aromatisse|218\/406
+|
+|-damage|p2a: Tangrowth|222\/403 tox|[from] psn
+|turn|97
+|
+|move|p2a: Tangrowth|Power Whip|p1a: Aromatisse
+|-damage|p1a: Aromatisse|80\/406
+|move|p1a: Aromatisse|Wish|p1a: Aromatisse
+|
+|-damage|p2a: Tangrowth|147\/403 tox|[from] psn
+|turn|98
+|
+|move|p1a: Aromatisse|Protect|p1a: Aromatisse
+|-singleturn|p1a: Aromatisse|Protect
+|move|p2a: Tangrowth|Power Whip|p1a: Aromatisse
+|-activate|p1a: Aromatisse|Protect
+|
+|-heal|p1a: Aromatisse|283\/406|[from] move: Wish|[wisher] Aromatisse
+|-damage|p2a: Tangrowth|47\/403 tox|[from] psn
+|turn|99
+|
+|switch|p2a: Blissey|Blissey, F|605\/714
+|-damage|p2a: Blissey|516\/714|[from] Stealth Rock
+|move|p1a: Aromatisse|Wish|p1a: Aromatisse
+|
+|-heal|p2a: Blissey|560\/714|[from] item: Leftovers
+|turn|100
+|leave|NBCAM
+|
+|switch|p1a: Doublade|Doublade, F|300\/319
+|-damage|p1a: Doublade|281\/319|[from] Stealth Rock
+|move|p2a: Blissey|Heal Bell|p2a: Blissey
+|-cureteam|p2a: Blissey|[from] move: HealBell
+|
+|-heal|p1a: Doublade|319\/319|[from] move: Wish|[wisher] Aromatisse
+|-heal|p2a: Blissey|604\/714|[from] item: Leftovers
+|turn|101
+|
+|switch|p2a: Tangrowth|Tangrowth, F|181\/403
+|-damage|p2a: Tangrowth|131\/403|[from] Stealth Rock
+|move|p1a: Doublade|Toxic|p2a: Tangrowth
+|-status|p2a: Tangrowth|tox
+|
+|-damage|p2a: Tangrowth|106\/403 tox|[from] psn
+|turn|102
+|
+|switch|p2a: Hippowdon|Hippowdon, M|420\/420
+|-damage|p2a: Hippowdon|394\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|switch|p1a: Crobat|Crobat, M|17\/373
+|-damage|p1a: Crobat|0 fnt|[from] Stealth Rock
+|faint|p1a: Crobat
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|420\/420|[from] item: Leftovers
+|
+|switch|p1a: Gastrodon|Gastrodon, M|249\/426
+|-damage|p1a: Gastrodon|223\/426|[from] Stealth Rock
+|turn|103
+|
+|switch|p2a: Tangrowth|Tangrowth, F|240\/403 tox
+|-damage|p2a: Tangrowth|190\/403 tox|[from] Stealth Rock
+|move|p1a: Gastrodon|Recover|p1a: Gastrodon
+|-heal|p1a: Gastrodon|426\/426
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Tangrowth|165\/403 tox|[from] sandstorm
+|-damage|p2a: Tangrowth|140\/403 tox|[from] psn
+|turn|104
+|
+|switch|p1a: Arcanine|Arcanine, M|360\/383
+|-damage|p1a: Arcanine|265\/383|[from] Stealth Rock
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Tangrowth
+|-unboost|p2a: Tangrowth|atk|1
+|move|p2a: Tangrowth|Power Whip|p1a: Arcanine
+|-resisted|p1a: Arcanine
+|-damage|p1a: Arcanine|217\/383
+|-damage|p2a: Tangrowth|73\/403 tox|[from] item: Rocky Helmet|[of] p1a: Arcanine
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Arcanine|194\/383|[from] sandstorm
+|-damage|p2a: Tangrowth|48\/403 tox|[from] sandstorm
+|-damage|p2a: Tangrowth|0 fnt|[from] psn
+|faint|p2a: Tangrowth
+|c|âRowDog|why we wear a helmet
+|
+|switch|p2a: Mienshao|Mienshao, M|271\/271
+|-damage|p2a: Mienshao|255\/271|[from] Stealth Rock
+|turn|105
+|
+|switch|p1a: Doublade|Doublade, F|319\/319
+|-damage|p1a: Doublade|300\/319|[from] Stealth Rock
+|move|p2a: Mienshao|U-turn|p1a: Doublade
+|-resisted|p1a: Doublade
+|-damage|p1a: Doublade|290\/319
+|
+|switch|p2a: Absol|Absol, M|190\/271
+|-damage|p2a: Absol|157\/271|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Absol|141\/271|[from] sandstorm
+|turn|106
+|
+|move|p2a: Absol|Knock Off|p1a: Doublade
+|-supereffective|p1a: Doublade
+|-damage|p1a: Doublade|114\/319
+|-enditem|p1a: Doublade|Eviolite|[from] move: Knock Off|[of] p2a: Absol
+|move|p1a: Doublade|Sacred Sword|p2a: Absol
+|-supereffective|p2a: Absol
+|-damage|p2a: Absol|0 fnt
+|faint|p2a: Absol
+|
+|-weather|none
+|
+|switch|p2a: Hippowdon|Hippowdon, M|420\/420
+|-damage|p2a: Hippowdon|394\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|turn|107
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|-damage|p1a: Blissey|625\/714|[from] Stealth Rock
+|move|p2a: Hippowdon|Earthquake|p1a: Blissey
+|-damage|p1a: Blissey|388\/714
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blissey|344\/714|[from] sandstorm
+|-heal|p1a: Blissey|388\/714|[from] item: Leftovers
+|-heal|p2a: Hippowdon|420\/420|[from] item: Leftovers
+|turn|108
+|
+|move|p1a: Blissey|Soft-Boiled|p1a: Blissey
+|-heal|p1a: Blissey|714\/714
+|move|p2a: Hippowdon|Earthquake|p1a: Blissey
+|-damage|p1a: Blissey|470\/714
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blissey|426\/714|[from] sandstorm
+|-heal|p1a: Blissey|470\/714|[from] item: Leftovers
+|turn|109
+|
+|move|p1a: Blissey|Wish|p1a: Blissey
+|move|p2a: Hippowdon|Toxic|p1a: Blissey|[miss]
+|-miss|p2a: Hippowdon|p1a: Blissey
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blissey|426\/714|[from] sandstorm
+|-heal|p1a: Blissey|470\/714|[from] item: Leftovers
+|turn|110
+|c| watfor|based toxic evade
+|
+|switch|p1a: Aromatisse|Aromatisse, F|283\/406
+|-damage|p1a: Aromatisse|233\/406|[from] Stealth Rock
+|move|p2a: Hippowdon|Earthquake|p1a: Aromatisse
+|-damage|p1a: Aromatisse|112\/406
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Aromatisse|87\/406|[from] sandstorm
+|-heal|p1a: Aromatisse|406\/406|[from] move: Wish|[wisher] Blissey
+|turn|111
+|c| watfor|:^]
+|
+|move|p2a: Hippowdon|Earthquake|p1a: Aromatisse
+|-damage|p1a: Aromatisse|297\/406
+|move|p1a: Aromatisse|Wish|p1a: Aromatisse
+|
+|-weather|none
+|turn|112
+|
+|move|p2a: Hippowdon|Toxic|p1a: Aromatisse|[miss]
+|-miss|p2a: Hippowdon|p1a: Aromatisse
+|move|p1a: Aromatisse|Moonblast|p2a: Hippowdon
+|-crit|p2a: Hippowdon
+|-damage|p2a: Hippowdon|201\/420
+|
+|-heal|p1a: Aromatisse|406\/406|[from] move: Wish|[wisher] Aromatisse
+|-heal|p2a: Hippowdon|227\/420|[from] item: Leftovers
+|turn|113
+|c|âRowDog|kek
+|
+|move|p2a: Hippowdon|Slack Off|p2a: Hippowdon
+|-heal|p2a: Hippowdon|420\/420
+|move|p1a: Aromatisse|Moonblast|p2a: Hippowdon
+|-damage|p2a: Hippowdon|272\/420
+|
+|-heal|p2a: Hippowdon|298\/420|[from] item: Leftovers
+|turn|114
+|
+|move|p2a: Hippowdon|Earthquake|p1a: Aromatisse
+|-damage|p1a: Aromatisse|289\/406
+|move|p1a: Aromatisse|Moonblast|p2a: Hippowdon
+|-damage|p2a: Hippowdon|153\/420
+|
+|-heal|p2a: Hippowdon|179\/420|[from] item: Leftovers
+|turn|115
+|
+|move|p2a: Hippowdon|Slack Off|p2a: Hippowdon
+|-heal|p2a: Hippowdon|389\/420
+|move|p1a: Aromatisse|Moonblast|p2a: Hippowdon
+|-damage|p2a: Hippowdon|247\/420
+|
+|-heal|p2a: Hippowdon|273\/420|[from] item: Leftovers
+|turn|116
+|
+|switch|p2a: Blissey|Blissey, F|604\/714
+|-damage|p2a: Blissey|515\/714|[from] Stealth Rock
+|move|p1a: Aromatisse|Moonblast|p2a: Blissey
+|-damage|p2a: Blissey|425\/714
+|-unboost|p2a: Blissey|spa|1
+|
+|-heal|p2a: Blissey|469\/714|[from] item: Leftovers
+|turn|117
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Aromatisse
+|-damage|p1a: Aromatisse|189\/406
+|move|p1a: Aromatisse|Wish|p1a: Aromatisse
+|
+|-heal|p2a: Blissey|513\/714|[from] item: Leftovers
+|turn|118
+|
+|switch|p2a: Hippowdon|Hippowdon, M|273\/420
+|-damage|p2a: Hippowdon|247\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p1a: Aromatisse|Protect|p1a: Aromatisse
+|-fail|p1a: Aromatisse
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Aromatisse|164\/406|[from] sandstorm
+|-heal|p1a: Aromatisse|367\/406|[from] move: Wish|[wisher] Aromatisse
+|-heal|p2a: Hippowdon|273\/420|[from] item: Leftovers
+|turn|119
+|
+|move|p2a: Hippowdon|Toxic|p1a: Aromatisse
+|-status|p1a: Aromatisse|tox
+|move|p1a: Aromatisse|Moonblast|p2a: Hippowdon
+|-crit|p2a: Hippowdon
+|-damage|p2a: Hippowdon|66\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Aromatisse|342\/406 tox|[from] sandstorm
+|-heal|p2a: Hippowdon|92\/420|[from] item: Leftovers
+|-damage|p1a: Aromatisse|317\/406 tox|[from] psn
+|turn|120
+|
+|switch|p1a: Gastrodon|Gastrodon, M|426\/426
+|-damage|p1a: Gastrodon|400\/426|[from] Stealth Rock
+|move|p2a: Hippowdon|Slack Off|p2a: Hippowdon
+|-heal|p2a: Hippowdon|302\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|328\/420|[from] item: Leftovers
+|-heal|p1a: Gastrodon|426\/426|[from] item: Leftovers
+|turn|121
+|
+|switch|p2a: Blissey|Blissey, F|513\/714
+|-damage|p2a: Blissey|424\/714|[from] Stealth Rock
+|move|p1a: Gastrodon|Curse|p1a: Gastrodon
+|-boost|p1a: Gastrodon|atk|1
+|-boost|p1a: Gastrodon|def|1
+|-unboost|p1a: Gastrodon|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Blissey|380\/714|[from] sandstorm
+|-heal|p2a: Blissey|424\/714|[from] item: Leftovers
+|turn|122
+|
+|move|p2a: Blissey|Wish|p2a: Blissey
+|move|p1a: Gastrodon|Curse|p1a: Gastrodon
+|-boost|p1a: Gastrodon|atk|1
+|-boost|p1a: Gastrodon|def|1
+|-unboost|p1a: Gastrodon|spe|1
+|
+|-weather|none
+|-heal|p2a: Blissey|468\/714|[from] item: Leftovers
+|turn|123
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Gastrodon
+|-damage|p1a: Gastrodon|326\/426
+|move|p1a: Gastrodon|Scald|p2a: Blissey
+|-damage|p2a: Blissey|404\/714
+|
+|-heal|p2a: Blissey|714\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Gastrodon|352\/426|[from] item: Leftovers
+|turn|124
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Gastrodon
+|-damage|p1a: Gastrodon|252\/426
+|move|p1a: Gastrodon|Earthquake|p2a: Blissey
+|-damage|p2a: Blissey|375\/714
+|
+|-heal|p2a: Blissey|419\/714|[from] item: Leftovers
+|-heal|p1a: Gastrodon|278\/426|[from] item: Leftovers
+|turn|125
+|
+|move|p2a: Blissey|Wish|p2a: Blissey
+|move|p1a: Gastrodon|Curse|p1a: Gastrodon
+|-boost|p1a: Gastrodon|atk|1
+|-boost|p1a: Gastrodon|def|1
+|-unboost|p1a: Gastrodon|spe|1
+|
+|-heal|p2a: Blissey|463\/714|[from] item: Leftovers
+|-heal|p1a: Gastrodon|304\/426|[from] item: Leftovers
+|turn|126
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Gastrodon
+|-damage|p1a: Gastrodon|204\/426
+|move|p1a: Gastrodon|Scald|p2a: Blissey
+|-damage|p2a: Blissey|391\/714
+|
+|-heal|p2a: Blissey|714\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Gastrodon|230\/426|[from] item: Leftovers
+|turn|127
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Gastrodon
+|-damage|p1a: Gastrodon|130\/426
+|move|p1a: Gastrodon|Curse|p1a: Gastrodon
+|-boost|p1a: Gastrodon|atk|1
+|-boost|p1a: Gastrodon|def|1
+|-unboost|p1a: Gastrodon|spe|1
+|
+|-heal|p1a: Gastrodon|156\/426|[from] item: Leftovers
+|turn|128
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Gastrodon
+|-damage|p1a: Gastrodon|56\/426
+|move|p1a: Gastrodon|Recover|p1a: Gastrodon
+|-heal|p1a: Gastrodon|269\/426
+|
+|-heal|p1a: Gastrodon|295\/426|[from] item: Leftovers
+|turn|129
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Gastrodon
+|-damage|p1a: Gastrodon|195\/426
+|move|p1a: Gastrodon|Earthquake|p2a: Blissey
+|-damage|p2a: Blissey|213\/714
+|
+|-heal|p2a: Blissey|257\/714|[from] item: Leftovers
+|-heal|p1a: Gastrodon|221\/426|[from] item: Leftovers
+|turn|130
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Gastrodon
+|-damage|p1a: Gastrodon|121\/426
+|move|p1a: Gastrodon|Recover|p1a: Gastrodon
+|-heal|p1a: Gastrodon|334\/426
+|
+|-heal|p2a: Blissey|301\/714|[from] item: Leftovers
+|-heal|p1a: Gastrodon|360\/426|[from] item: Leftovers
+|turn|131
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Gastrodon
+|-damage|p1a: Gastrodon|260\/426
+|move|p1a: Gastrodon|Earthquake|p2a: Blissey
+|-damage|p2a: Blissey|0 fnt
+|faint|p2a: Blissey
+|
+|-heal|p1a: Gastrodon|286\/426|[from] item: Leftovers
+|
+|switch|p2a: Mienshao|Mienshao, M|271\/271
+|-damage|p2a: Mienshao|255\/271|[from] Stealth Rock
+|turn|132
+|
+|move|p2a: Mienshao|High Jump Kick|p1a: Gastrodon
+|-damage|p1a: Gastrodon|190\/426
+|move|p1a: Gastrodon|Earthquake|p2a: Mienshao
+|-damage|p2a: Mienshao|0 fnt
+|faint|p2a: Mienshao
+|
+|-heal|p1a: Gastrodon|216\/426|[from] item: Leftovers
+|c|âN_PokeTrainer|gg
+|c|âRowDog|gg
+|
+|switch|p2a: Hippowdon|Hippowdon, M|328\/420
+|-damage|p2a: Hippowdon|302\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|turn|133
+|
+|move|p2a: Hippowdon|Earthquake|p1a: Gastrodon
+|-damage|p1a: Gastrodon|170\/426
+|move|p1a: Gastrodon|Scald|p2a: Hippowdon
+|-supereffective|p2a: Hippowdon
+|-damage|p2a: Hippowdon|54\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|80\/420|[from] item: Leftovers
+|-heal|p1a: Gastrodon|196\/426|[from] item: Leftovers
+|turn|134
+|
+|move|p2a: Hippowdon|Slack Off|p2a: Hippowdon
+|-heal|p2a: Hippowdon|290\/420
+|move|p1a: Gastrodon|Scald|p2a: Hippowdon
+|-supereffective|p2a: Hippowdon
+|-damage|p2a: Hippowdon|38\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|64\/420|[from] item: Leftovers
+|-heal|p1a: Gastrodon|222\/426|[from] item: Leftovers
+|turn|135
+|
+|move|p2a: Hippowdon|Earthquake|p1a: Gastrodon
+|-damage|p1a: Gastrodon|171\/426
+|move|p1a: Gastrodon|Earthquake|p2a: Hippowdon
+|-damage|p2a: Hippowdon|0 fnt
+|faint|p2a: Hippowdon
+|
+|win|RowDog
+|raw|Ladder updating...
+|raw|RowDog's rating: 1642 &rarr; <strong>1651<\/strong><br \/>(+9 for winning)
+|raw|N_PokeTrainer's rating: 1428 &rarr; <strong>1419<\/strong><br \/>(-9 for losing)
+|leave|N_PokeTrainer
+|player|p2

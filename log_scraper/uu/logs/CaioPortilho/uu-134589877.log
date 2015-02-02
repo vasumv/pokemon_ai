@@ -1,0 +1,544 @@
+|join|CaioPortilho
+|join|Dan2306
+|player|p1|CaioPortilho|70
+|player|p2|Dan2306|169
+|gametype|singles
+|gen|6
+|tier|UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Chesnaught, M
+|poke|p1|Jellicent, M
+|poke|p1|Blastoise, F
+|poke|p1|Hippowdon, M
+|poke|p1|Tornadus, M
+|poke|p1|Florges, F
+|poke|p2|Entei, shiny
+|poke|p2|Jirachi
+|poke|p2|Blissey, F
+|poke|p2|Hippowdon, F
+|poke|p2|Blastoise, M
+|poke|p2|Honchkrow, M
+|rule|Baton Pass Clause: Limit 3 pokemon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Hippowdon|Hippowdon, M|420\/420
+|switch|p2a: Honchkrow|Honchkrow, M|404\/404
+|-weather|Sandstorm
+|turn|1
+|
+|move|p2a: Honchkrow|Taunt|p1a: Hippowdon
+|-start|p1a: Hippowdon|move: Taunt
+|cant|p1a: Hippowdon|move: Taunt|Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Honchkrow|379\/404|[from] sandstorm
+|-heal|p2a: Honchkrow|404\/404|[from] item: Leftovers
+|turn|2
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Honchkrow|Brave Bird|p1a: Florges
+|-damage|p1a: Florges|21\/360
+|-damage|p2a: Honchkrow|292\/404|[from] recoil|[of] p1a: Florges
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Florges|0 fnt|[from] sandstorm
+|-damage|p2a: Honchkrow|267\/404|[from] sandstorm
+|-heal|p2a: Honchkrow|292\/404|[from] item: Leftovers
+|faint|p1a: Florges
+|
+|switch|p1a: Tornadus|Tornadus, M|300\/300
+|turn|3
+|
+|switch|p2a: Hippowdon|Hippowdon, F|420\/420
+|move|p1a: Tornadus|Bulk Up|p1a: Tornadus
+|-boost|p1a: Tornadus|atk|1
+|-boost|p1a: Tornadus|def|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Tornadus|282\/300|[from] sandstorm
+|turn|4
+|
+|move|p1a: Tornadus|Aerial Ace|p2a: Hippowdon
+|-damage|p2a: Hippowdon|299\/420
+|-damage|p1a: Tornadus|252\/300|[from] item: Life Orb
+|move|p2a: Hippowdon|Roar|p1a: Tornadus
+|drag|p1a: Chesnaught|Chesnaught, M|380\/380
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Chesnaught|357\/380|[from] sandstorm
+|-heal|p1a: Chesnaught|380\/380|[from] item: Leftovers
+|-heal|p2a: Hippowdon|325\/420|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Jirachi|Jirachi|341\/341
+|move|p1a: Chesnaught|Spikes|p2a: Jirachi
+|-sidestart|p2: Dan2306|Spikes
+|
+|-weather|none
+|turn|6
+|
+|switch|p1a: Hippowdon|Hippowdon, M|420\/420
+|-weather|Sandstorm
+|move|p2a: Jirachi|Trick|p1a: Hippowdon
+|-activate|p2a: Jirachi|move: Trick|[of] p1a: Hippowdon
+|-item|p1a: Hippowdon|Choice Scarf|[from] move: Trick
+|-item|p2a: Jirachi|Leftovers|[from] move: Trick
+|
+|-weather|Sandstorm|[upkeep]
+|turn|7
+|
+|move|p2a: Jirachi|U-turn|p1a: Hippowdon
+|-damage|p1a: Hippowdon|371\/420
+|
+|switch|p2a: Honchkrow|Honchkrow, M|292\/404
+|move|p1a: Hippowdon|Stealth Rock|p2a: Honchkrow
+|-sidestart|p2: Dan2306|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Honchkrow|267\/404|[from] sandstorm
+|-heal|p2a: Honchkrow|292\/404|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: Hippowdon|Stealth Rock|p2a: Honchkrow
+|-fail|p2a: Honchkrow
+|move|p2a: Honchkrow|Brave Bird|p1a: Hippowdon
+|-damage|p1a: Hippowdon|226\/420
+|-damage|p2a: Honchkrow|244\/404|[from] recoil|[of] p1a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Honchkrow|219\/404|[from] sandstorm
+|-heal|p2a: Honchkrow|244\/404|[from] item: Leftovers
+|turn|9
+|
+|switch|p1a: Blastoise|Blastoise, F|362\/362
+|move|p2a: Honchkrow|Brave Bird|p1a: Blastoise
+|-damage|p1a: Blastoise|133\/362
+|-damage|p2a: Honchkrow|168\/404|[from] recoil|[of] p1a: Blastoise
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blastoise|111\/362|[from] sandstorm
+|-damage|p2a: Honchkrow|143\/404|[from] sandstorm
+|-heal|p2a: Honchkrow|168\/404|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Hippowdon|Hippowdon, M|226\/420
+|move|p2a: Honchkrow|Sucker Punch|p1a: Hippowdon
+|-fail|p1a: Hippowdon
+|
+|-weather|none
+|-heal|p2a: Honchkrow|193\/404|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Hippowdon|Toxic|p2a: Honchkrow
+|-status|p2a: Honchkrow|tox
+|move|p2a: Honchkrow|Taunt|p1a: Hippowdon
+|-start|p1a: Hippowdon|move: Taunt
+|
+|-heal|p2a: Honchkrow|218\/404 tox|[from] item: Leftovers
+|-damage|p2a: Honchkrow|193\/404 tox|[from] psn
+|turn|12
+|
+|switch|p1a: Blastoise|Blastoise, F|111\/362
+|switch|p2a: Jirachi|Jirachi|341\/341
+|-damage|p2a: Jirachi|320\/341|[from] Stealth Rock
+|-damage|p2a: Jirachi|278\/341|[from] Spikes
+|
+|-heal|p2a: Jirachi|299\/341|[from] item: Leftovers
+|turn|13
+|
+|detailschange|p1a: Blastoise|Blastoise-Mega, F
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Jirachi|U-turn|p1a: Blastoise
+|-damage|p1a: Blastoise|46\/362
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|-damage|p2a: Blissey|625\/714|[from] Spikes
+|-damage|p2a: Blissey|536\/714|[from] Stealth Rock
+|move|p1a: Blastoise|Rest|p1a: Blastoise
+|-status|p1a: Blastoise|slp
+|-heal|p1a: Blastoise|362\/362 slp|[silent]
+|-status|p1a: Blastoise|slp|[from] move: Rest
+|
+|-heal|p2a: Blissey|580\/714|[from] item: Leftovers
+|turn|14
+|
+|switch|p1a: Chesnaught|Chesnaught, M|380\/380
+|move|p2a: Blissey|Aromatherapy|p2a: Blissey
+|-cureteam|p2a: Blissey|[from] move: Aromatherapy
+|
+|-heal|p2a: Blissey|624\/714|[from] item: Leftovers
+|turn|15
+|
+|switch|p2a: Jirachi|Jirachi|299\/341
+|-damage|p2a: Jirachi|278\/341|[from] Stealth Rock
+|-damage|p2a: Jirachi|236\/341|[from] Spikes
+|move|p1a: Chesnaught|Hammer Arm|p2a: Jirachi
+|-damage|p2a: Jirachi|116\/341
+|-unboost|p1a: Chesnaught|spe|1
+|
+|-heal|p2a: Jirachi|137\/341|[from] item: Leftovers
+|turn|16
+|
+|move|p2a: Jirachi|U-turn|p1a: Chesnaught
+|-damage|p1a: Chesnaught|332\/380
+|
+|switch|p2a: Entei|Entei, shiny|372\/372
+|-damage|p2a: Entei|279\/372|[from] Stealth Rock
+|-damage|p2a: Entei|233\/372|[from] Spikes
+|-ability|p2a: Entei|Pressure
+|move|p1a: Chesnaught|Spikes|p2a: Entei
+|-sidestart|p2: Dan2306|Spikes
+|
+|-heal|p1a: Chesnaught|355\/380|[from] item: Leftovers
+|turn|17
+|
+|switch|p1a: Hippowdon|Hippowdon, M|226\/420
+|-weather|Sandstorm
+|move|p2a: Entei|Sacred Fire|p1a: Hippowdon
+|-damage|p1a: Hippowdon|64\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Entei|210\/372|[from] sandstorm
+|turn|18
+|
+|switch|p2a: Blastoise|Blastoise, M|362\/362
+|-damage|p2a: Blastoise|317\/362|[from] Stealth Rock
+|-damage|p2a: Blastoise|257\/362|[from] Spikes
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-heal|p1a: Hippowdon|274\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Blastoise|235\/362|[from] sandstorm
+|turn|19
+|
+|switch|p1a: Jellicent|Jellicent, M|404\/404
+|detailschange|p2a: Blastoise|Blastoise-Mega, M
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Blastoise|Rapid Spin|p1a: Jellicent
+|-immune|p1a: Jellicent|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Blastoise|213\/362|[from] sandstorm
+|-damage|p1a: Jellicent|379\/404|[from] sandstorm
+|-heal|p1a: Jellicent|404\/404|[from] item: Leftovers
+|turn|20
+|
+|move|p2a: Blastoise|Dark Pulse|p1a: Jellicent
+|-supereffective|p1a: Jellicent
+|-damage|p1a: Jellicent|218\/404
+|move|p1a: Jellicent|Taunt|p2a: Blastoise
+|-start|p2a: Blastoise|move: Taunt
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Blastoise|191\/362|[from] sandstorm
+|-damage|p1a: Jellicent|193\/404|[from] sandstorm
+|-heal|p1a: Jellicent|218\/404|[from] item: Leftovers
+|turn|21
+|
+|move|p2a: Blastoise|Rapid Spin|p1a: Jellicent
+|-immune|p1a: Jellicent|[msg]
+|move|p1a: Jellicent|Recover|p1a: Jellicent
+|-heal|p1a: Jellicent|404\/404
+|
+|-weather|none
+|turn|22
+|
+|move|p2a: Blastoise|Dark Pulse|p1a: Jellicent
+|-supereffective|p1a: Jellicent
+|-damage|p1a: Jellicent|200\/404
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Blastoise
+|-status|p2a: Blastoise|brn
+|
+|-heal|p1a: Jellicent|225\/404|[from] item: Leftovers
+|-damage|p2a: Blastoise|146\/362 brn|[from] brn
+|turn|23
+|
+|move|p2a: Blastoise|Dark Pulse|p1a: Jellicent
+|-supereffective|p1a: Jellicent
+|-damage|p1a: Jellicent|29\/404
+|move|p1a: Jellicent|Recover|p1a: Jellicent
+|-heal|p1a: Jellicent|231\/404
+|
+|-heal|p1a: Jellicent|256\/404|[from] item: Leftovers
+|-damage|p2a: Blastoise|101\/362 brn|[from] brn
+|-end|p2a: Blastoise|move: Taunt
+|turn|24
+|
+|move|p2a: Blastoise|Dark Pulse|p1a: Jellicent
+|-supereffective|p1a: Jellicent
+|-damage|p1a: Jellicent|68\/404
+|move|p1a: Jellicent|Recover|p1a: Jellicent
+|-heal|p1a: Jellicent|270\/404
+|
+|-heal|p1a: Jellicent|295\/404|[from] item: Leftovers
+|-damage|p2a: Blastoise|56\/362 brn|[from] brn
+|turn|25
+|
+|move|p2a: Blastoise|Dark Pulse|p1a: Jellicent
+|-supereffective|p1a: Jellicent
+|-damage|p1a: Jellicent|81\/404
+|cant|p1a: Jellicent|flinch
+|
+|-heal|p1a: Jellicent|106\/404|[from] item: Leftovers
+|-damage|p2a: Blastoise|11\/362 brn|[from] brn
+|turn|26
+|
+|move|p2a: Blastoise|Rapid Spin|p1a: Jellicent
+|-immune|p1a: Jellicent|[msg]
+|move|p1a: Jellicent|Recover|p1a: Jellicent
+|-heal|p1a: Jellicent|308\/404
+|
+|-heal|p1a: Jellicent|333\/404|[from] item: Leftovers
+|-damage|p2a: Blastoise|0 fnt|[from] brn
+|faint|p2a: Blastoise
+|chat|CaioPortilho|pq nao matou?
+|
+|switch|p2a: Honchkrow|Honchkrow, M|193\/404
+|-damage|p2a: Honchkrow|92\/404|[from] Stealth Rock
+|turn|27
+|
+|switch|p1a: Hippowdon|Hippowdon, M|274\/420
+|-weather|Sandstorm
+|move|p2a: Honchkrow|Brave Bird|p1a: Hippowdon
+|-damage|p1a: Hippowdon|130\/420
+|-damage|p2a: Honchkrow|44\/404|[from] recoil|[of] p1a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Honchkrow|19\/404|[from] sandstorm
+|-heal|p2a: Honchkrow|44\/404|[from] item: Leftovers
+|turn|28
+|
+|move|p1a: Hippowdon|Toxic|p2a: Honchkrow
+|-status|p2a: Honchkrow|tox
+|move|p2a: Honchkrow|Brave Bird|p1a: Hippowdon
+|-damage|p1a: Hippowdon|0 fnt
+|-damage|p2a: Honchkrow|1\/404 tox|[from] recoil|[of] p1a: Hippowdon
+|faint|p1a: Hippowdon
+|-boost|p2a: Honchkrow|atk|1|[from] ability: Moxie
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Honchkrow|0 fnt|[from] sandstorm
+|faint|p2a: Honchkrow
+|
+|switch|p2a: Jirachi|Jirachi|137\/341
+|-damage|p2a: Jirachi|81\/341|[from] Spikes
+|-damage|p2a: Jirachi|60\/341|[from] Stealth Rock
+|switch|p1a: Jellicent|Jellicent, M|333\/404
+|turn|29
+|
+|move|p2a: Jirachi|Iron Head|p1a: Jellicent
+|-resisted|p1a: Jellicent
+|-damage|p1a: Jellicent|261\/404
+|cant|p1a: Jellicent|flinch
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jellicent|236\/404|[from] sandstorm
+|-heal|p2a: Jirachi|81\/341|[from] item: Leftovers
+|-heal|p1a: Jellicent|261\/404|[from] item: Leftovers
+|turn|30
+|
+|move|p2a: Jirachi|Iron Head|p1a: Jellicent
+|-resisted|p1a: Jellicent
+|-damage|p1a: Jellicent|183\/404
+|cant|p1a: Jellicent|flinch
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jellicent|158\/404|[from] sandstorm
+|-heal|p2a: Jirachi|102\/341|[from] item: Leftovers
+|-heal|p1a: Jellicent|183\/404|[from] item: Leftovers
+|turn|31
+|
+|switch|p1a: Chesnaught|Chesnaught, M|355\/380
+|move|p2a: Jirachi|Iron Head|p1a: Chesnaught
+|-damage|p1a: Chesnaught|277\/380
+|
+|-weather|none
+|-heal|p2a: Jirachi|123\/341|[from] item: Leftovers
+|-heal|p1a: Chesnaught|300\/380|[from] item: Leftovers
+|turn|32
+|
+|move|p2a: Jirachi|Fire Punch|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-damage|p1a: Chesnaught|204\/380
+|move|p1a: Chesnaught|Leech Seed|p2a: Jirachi
+|-start|p2a: Jirachi|move: Leech Seed
+|
+|-heal|p2a: Jirachi|144\/341|[from] item: Leftovers
+|-heal|p1a: Chesnaught|227\/380|[from] item: Leftovers
+|-damage|p2a: Jirachi|102\/341|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|269\/380|[silent]
+|turn|33
+|
+|switch|p2a: Blissey|Blissey, F|624\/714
+|-damage|p2a: Blissey|505\/714|[from] Spikes
+|-damage|p2a: Blissey|416\/714|[from] Stealth Rock
+|move|p1a: Chesnaught|Spikes|p2a: Blissey
+|-sidestart|p2: Dan2306|Spikes
+|
+|-heal|p1a: Chesnaught|292\/380|[from] item: Leftovers
+|-heal|p2a: Blissey|460\/714|[from] item: Leftovers
+|turn|34
+|
+|move|p1a: Chesnaught|Hammer Arm|p2a: Blissey
+|-supereffective|p2a: Blissey
+|-damage|p2a: Blissey|38\/714
+|-unboost|p1a: Chesnaught|spe|1
+|move|p2a: Blissey|Thunder Wave|p1a: Chesnaught
+|-status|p1a: Chesnaught|par
+|
+|-heal|p2a: Blissey|82\/714|[from] item: Leftovers
+|-heal|p1a: Chesnaught|315\/380 par|[from] item: Leftovers
+|turn|35
+|
+|switch|p1a: Blastoise|Blastoise-Mega, F|362\/362 slp
+|move|p2a: Blissey|Seismic Toss|p1a: Blastoise
+|-damage|p1a: Blastoise|262\/362 slp
+|
+|-heal|p2a: Blissey|126\/714|[from] item: Leftovers
+|turn|36
+|
+|cant|p1a: Blastoise|slp
+|move|p2a: Blissey|Soft-Boiled|p2a: Blissey
+|-heal|p2a: Blissey|483\/714
+|
+|-heal|p2a: Blissey|527\/714|[from] item: Leftovers
+|turn|37
+|
+|cant|p1a: Blastoise|slp
+|move|p2a: Blissey|Seismic Toss|p1a: Blastoise
+|-damage|p1a: Blastoise|162\/362 slp
+|
+|-heal|p2a: Blissey|571\/714|[from] item: Leftovers
+|turn|38
+|
+|-curestatus|p1a: Blastoise|slp
+|move|p1a: Blastoise|Toxic|p2a: Blissey|[miss]
+|-miss|p1a: Blastoise|p2a: Blissey
+|move|p2a: Blissey|Seismic Toss|p1a: Blastoise
+|-damage|p1a: Blastoise|62\/362
+|
+|-heal|p2a: Blissey|615\/714|[from] item: Leftovers
+|turn|39
+|
+|move|p1a: Blastoise|Toxic|p2a: Blissey
+|-status|p2a: Blissey|tox
+|move|p2a: Blissey|Seismic Toss|p1a: Blastoise
+|-damage|p1a: Blastoise|0 fnt
+|faint|p1a: Blastoise
+|
+|-heal|p2a: Blissey|659\/714 tox|[from] item: Leftovers
+|-damage|p2a: Blissey|615\/714 tox|[from] psn
+|
+|switch|p1a: Jellicent|Jellicent, M|183\/404
+|turn|40
+|
+|move|p1a: Jellicent|Taunt|p2a: Blissey
+|-start|p2a: Blissey|move: Taunt
+|cant|p2a: Blissey|move: Taunt|Thunder Wave
+|
+|-heal|p1a: Jellicent|208\/404|[from] item: Leftovers
+|-heal|p2a: Blissey|659\/714 tox|[from] item: Leftovers
+|-damage|p2a: Blissey|571\/714 tox|[from] psn
+|turn|41
+|
+|switch|p2a: Hippowdon|Hippowdon, F|325\/420
+|-damage|p2a: Hippowdon|299\/420|[from] Stealth Rock
+|-damage|p2a: Hippowdon|194\/420|[from] Spikes
+|-weather|Sandstorm
+|move|p1a: Jellicent|Shadow Ball|p2a: Hippowdon
+|-crit|p2a: Hippowdon
+|-damage|p2a: Hippowdon|44\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jellicent|183\/404|[from] sandstorm
+|-heal|p1a: Jellicent|208\/404|[from] item: Leftovers
+|-heal|p2a: Hippowdon|70\/420|[from] item: Leftovers
+|turn|42
+|
+|move|p1a: Jellicent|Shadow Ball|p2a: Hippowdon
+|-damage|p2a: Hippowdon|0 fnt
+|faint|p2a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jellicent|183\/404|[from] sandstorm
+|-heal|p1a: Jellicent|208\/404|[from] item: Leftovers
+|
+|switch|p2a: Jirachi|Jirachi|102\/341
+|-damage|p2a: Jirachi|17\/341|[from] Spikes
+|-damage|p2a: Jirachi|0 fnt|[from] Stealth Rock
+|faint|p2a: Jirachi
+|
+|switch|p2a: Entei|Entei, shiny|210\/372
+|-damage|p2a: Entei|117\/372|[from] Spikes
+|-damage|p2a: Entei|24\/372|[from] Stealth Rock
+|-ability|p2a: Entei|Pressure
+|turn|43
+|
+|move|p2a: Entei|Sacred Fire|p1a: Jellicent
+|-resisted|p1a: Jellicent
+|-damage|p1a: Jellicent|64\/404
+|move|p1a: Jellicent|Shadow Ball|p2a: Entei
+|-damage|p2a: Entei|0 fnt
+|faint|p2a: Entei
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jellicent|39\/404|[from] sandstorm
+|-heal|p1a: Jellicent|64\/404|[from] item: Leftovers
+|
+|switch|p2a: Blissey|Blissey, F|571\/714
+|-damage|p2a: Blissey|482\/714|[from] Stealth Rock
+|-damage|p2a: Blissey|304\/714|[from] Spikes
+|turn|44
+|
+|move|p1a: Jellicent|Taunt|p2a: Blissey
+|-start|p2a: Blissey|move: Taunt
+|cant|p2a: Blissey|move: Taunt|Thunder Wave
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Jellicent|39\/404|[from] sandstorm
+|-damage|p2a: Blissey|260\/714|[from] sandstorm
+|-heal|p1a: Jellicent|64\/404|[from] item: Leftovers
+|-heal|p2a: Blissey|304\/714|[from] item: Leftovers
+|turn|45
+|
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Blissey
+|-status|p2a: Blissey|brn
+|move|p2a: Blissey|Seismic Toss|p1a: Jellicent
+|-immune|p1a: Jellicent|[msg]
+|
+|-weather|none
+|-heal|p1a: Jellicent|89\/404|[from] item: Leftovers
+|-heal|p2a: Blissey|348\/714 brn|[from] item: Leftovers
+|-damage|p2a: Blissey|259\/714 brn|[from] brn
+|turn|46
+|
+|switch|p1a: Tornadus|Tornadus, M|252\/300
+|move|p2a: Blissey|Seismic Toss|p1a: Tornadus
+|-damage|p1a: Tornadus|152\/300
+|
+|-heal|p2a: Blissey|303\/714 brn|[from] item: Leftovers
+|-damage|p2a: Blissey|214\/714 brn|[from] brn
+|-end|p2a: Blissey|move: Taunt
+|turn|47
+|
+|move|p1a: Tornadus|Superpower|p2a: Blissey
+|-supereffective|p2a: Blissey
+|-damage|p2a: Blissey|0 fnt
+|-unboost|p1a: Tornadus|atk|1
+|-unboost|p1a: Tornadus|def|1
+|-damage|p1a: Tornadus|122\/300|[from] item: Life Orb
+|faint|p2a: Blissey
+|
+|win|CaioPortilho
+|leave|CaioPortilho
+|player|p1
+|leave|Dan2306
+|player|p2

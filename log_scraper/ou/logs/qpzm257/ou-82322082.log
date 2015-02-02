@@ -1,0 +1,402 @@
+|join|qpzm257
+|join|Dunno Mate
+|player|p1|qpzm257|101
+|player|p2|Dunno Mate|281
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Vaporeon, F
+|poke|p1|Dragonite, M
+|poke|p1|Scizor, F
+|poke|p1|Alakazam, M
+|poke|p1|Excadrill, F
+|poke|p1|Skarmory, F
+|poke|p2|Jirachi
+|poke|p2|Landorus, M
+|poke|p2|Manaphy
+|poke|p2|Conkeldurr, F
+|poke|p2|Latias, F
+|poke|p2|Genesect
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Vaporeon|Vaporeon, F|464\/464
+|switch|p2a: Genesect|Genesect|283\/283
+|-boost|p2a: Genesect|atk|1|[from] ability: Download
+|turn|1
+|callback|decision
+|
+|move|p2a: Genesect|U-turn|p1a: Vaporeon
+|-damage|p1a: Vaporeon|262\/464
+|callback|decision
+|
+|switch|p2a: Latias|Latias, F|364\/364
+|move|p1a: Vaporeon|Scald|p2a: Latias
+|-crit|p2a: Latias
+|-resisted|p2a: Latias
+|-damage|p2a: Latias|298\/364
+|
+|-heal|p2a: Latias|320\/364|[from] item: Leftovers
+|-heal|p1a: Vaporeon|291\/464|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|344\/344
+|move|p2a: Latias|Dragon Pulse|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|285\/344
+|
+|-heal|p2a: Latias|342\/364|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p2a: Genesect|Genesect|283\/283
+|-boost|p2a: Genesect|spa|1|[from] ability: Download
+|-formechange|p1a: Scizor|Scizor-Mega
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p1a: Scizor|Bug Bite|p2a: Genesect
+|-resisted|p2a: Genesect
+|-damage|p2a: Genesect|169\/283
+|
+|turn|4
+|callback|decision
+|
+|switch|p1a: Vaporeon|Vaporeon, F|291\/464
+|move|p2a: Genesect|U-turn|p1a: Vaporeon
+|-crit|p1a: Vaporeon
+|-damage|p1a: Vaporeon|78\/464
+|callback|decision
+|
+|switch|p2a: Landorus|Landorus, M|320\/320
+|
+|-heal|p1a: Vaporeon|107\/464|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Landorus|Earth Power|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Protect
+|
+|-heal|p1a: Vaporeon|136\/464|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, F|334\/334
+|move|p2a: Landorus|Gravity|p2a: Landorus
+|-fieldstart|move: Gravity
+|
+|turn|7
+|callback|decision
+|
+|move|p2a: Landorus|Earth Power|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-activate|p1a: Skarmory|Sturdy
+|-damage|p1a: Skarmory|1\/334
+|move|p1a: Skarmory|Stealth Rock|p2a: Landorus
+|-sidestart|p2: Dunno Mate|move: Stealth Rock
+|
+|turn|8
+|callback|decision
+|
+|switch|p1a: Vaporeon|Vaporeon, F|136\/464
+|move|p2a: Landorus|Earth Power|p1a: Vaporeon
+|-damage|p1a: Vaporeon|0 fnt
+|faint|p1a: Vaporeon
+|
+|callback|decision
+|
+|switch|p1a: Alakazam|Alakazam, M|252\/252
+|turn|9
+|callback|decision
+|
+|switch|p2a: Latias|Latias, F|342\/364
+|-damage|p2a: Latias|297\/364|[from] Stealth Rock
+|move|p1a: Alakazam|Psyshock|p2a: Latias
+|-resisted|p2a: Latias
+|-damage|p2a: Latias|220\/364
+|
+|-heal|p2a: Latias|242\/364|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p1a: Alakazam|Shadow Ball|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|76\/364
+|move|p2a: Latias|Dragon Pulse|p1a: Alakazam
+|-damage|p1a: Alakazam|141\/252
+|
+|-heal|p2a: Latias|98\/364|[from] item: Leftovers
+|-fieldend|move: Gravity
+|turn|11
+|callback|decision
+|
+|move|p1a: Alakazam|Shadow Ball|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|0 fnt
+|faint|p2a: Latias
+|
+|callback|decision
+|
+|switch|p2a: Genesect|Genesect|169\/283
+|-damage|p2a: Genesect|134\/283|[from] Stealth Rock
+|-boost|p2a: Genesect|atk|1|[from] ability: Download
+|turn|12
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, F|1\/334
+|move|p2a: Genesect|U-turn|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|-damage|p2a: Genesect|87\/283|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|faint|p1a: Skarmory
+|callback|decision
+|
+|switch|p2a: Conkeldurr|Conkeldurr, F|414\/414
+|-damage|p2a: Conkeldurr|389\/414|[from] Stealth Rock
+|
+|-heal|p2a: Conkeldurr|414\/414|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, M|324\/324
+|turn|13
+|callback|decision
+|
+|move|p1a: Dragonite|Dragon Dance|p1a: Dragonite
+|-boost|p1a: Dragonite|atk|1
+|-boost|p1a: Dragonite|spe|1
+|move|p2a: Conkeldurr|Ice Punch|p1a: Dragonite
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|126\/324
+|
+|turn|14
+|callback|decision
+|
+|move|p1a: Dragonite|Outrage|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|45\/414
+|move|p2a: Conkeldurr|Ice Punch|p1a: Dragonite
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|0 fnt
+|faint|p1a: Dragonite
+|
+|-heal|p2a: Conkeldurr|70\/414|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Alakazam|Alakazam, M|141\/252
+|turn|15
+|callback|decision
+|
+|move|p1a: Alakazam|Psyshock|p2a: Conkeldurr
+|-supereffective|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|0 fnt
+|faint|p2a: Conkeldurr
+|
+|callback|decision
+|
+|switch|p2a: Genesect|Genesect|87\/283
+|-damage|p2a: Genesect|52\/283|[from] Stealth Rock
+|-boost|p2a: Genesect|atk|1|[from] ability: Download
+|turn|16
+|callback|decision
+|
+|switch|p1a: Excadrill|Excadrill, F|365\/365
+|-ability|p1a: Excadrill|Mold Breaker
+|move|p2a: Genesect|U-turn|p1a: Excadrill
+|-resisted|p1a: Excadrill
+|-damage|p1a: Excadrill|250\/365
+|callback|decision
+|
+|switch|p2a: Landorus|Landorus, M|320\/320
+|-damage|p2a: Landorus|280\/320|[from] Stealth Rock
+|
+|turn|17
+|callback|decision
+|
+|move|p2a: Landorus|Earth Power|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-damage|p1a: Excadrill|0 fnt
+|faint|p1a: Excadrill
+|
+|callback|decision
+|
+|switch|p1a: Alakazam|Alakazam, M|141\/252
+|turn|18
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi|404\/404
+|-damage|p2a: Jirachi|379\/404|[from] Stealth Rock
+|move|p1a: Alakazam|Psyshock|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|354\/404
+|
+|-heal|p2a: Jirachi|379\/404|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p1a: Alakazam|Shadow Ball|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|179\/404
+|move|p2a: Jirachi|Body Slam|p1a: Alakazam
+|-damage|p1a: Alakazam|19\/252
+|
+|-heal|p2a: Jirachi|204\/404|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p1a: Alakazam|Shadow Ball|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|4\/404
+|move|p2a: Jirachi|Wish|p2a: Jirachi
+|
+|-heal|p2a: Jirachi|29\/404|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p2a: Jirachi|Protect|p2a: Jirachi
+|-singleturn|p2a: Jirachi|Protect
+|move|p1a: Alakazam|Shadow Ball|p2a: Jirachi
+|-activate|p2a: Jirachi|Protect
+|
+|-heal|p2a: Jirachi|231\/404|[from] move: Wish|[wisher] Jirachi
+|-heal|p2a: Jirachi|256\/404|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p1a: Alakazam|Shadow Ball|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|58\/404
+|move|p2a: Jirachi|Wish|p2a: Jirachi
+|
+|-heal|p2a: Jirachi|83\/404|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p2a: Jirachi|Protect|p2a: Jirachi
+|-singleturn|p2a: Jirachi|Protect
+|move|p1a: Alakazam|Shadow Ball|p2a: Jirachi
+|-activate|p2a: Jirachi|Protect
+|
+|-heal|p2a: Jirachi|285\/404|[from] move: Wish|[wisher] Jirachi
+|-heal|p2a: Jirachi|310\/404|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p1a: Alakazam|Shadow Ball|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|124\/404
+|move|p2a: Jirachi|Iron Head|p1a: Alakazam
+|-damage|p1a: Alakazam|0 fnt
+|faint|p1a: Alakazam
+|
+|-heal|p2a: Jirachi|149\/404|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|285\/344
+|-formechange|p1a: Scizor|Scizor-Mega
+|turn|25
+|callback|decision
+|
+|move|p2a: Jirachi|Body Slam|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|259\/344
+|-status|p1a: Scizor|par
+|move|p1a: Scizor|Swords Dance|p1a: Scizor
+|-boost|p1a: Scizor|atk|2
+|
+|-heal|p2a: Jirachi|174\/404|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|225\/344 par
+|cant|p1a: Scizor|flinch
+|
+|-heal|p2a: Jirachi|199\/404|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|103\/404
+|move|p2a: Jirachi|Iron Head|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|191\/344 par
+|
+|-heal|p2a: Jirachi|128\/404|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|26\/404
+|move|p2a: Jirachi|Iron Head|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|157\/344 par
+|
+|-heal|p2a: Jirachi|51\/404|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|faint|p2a: Jirachi
+|
+|callback|decision
+|
+|switch|p2a: Manaphy|Manaphy|341\/341
+|-damage|p2a: Manaphy|299\/341|[from] Stealth Rock
+|turn|30
+|callback|decision
+|
+|move|p2a: Manaphy|Surf|p1a: Scizor
+|-damage|p1a: Scizor|21\/344 par
+|move|p1a: Scizor|Bug Bite|p2a: Manaphy
+|-damage|p2a: Manaphy|0 fnt
+|faint|p2a: Manaphy
+|
+|callback|decision
+|
+|switch|p2a: Landorus|Landorus, M|280\/320
+|-damage|p2a: Landorus|240\/320|[from] Stealth Rock
+|turn|31
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Landorus
+|-damage|p2a: Landorus|0 fnt
+|faint|p2a: Landorus
+|
+|callback|decision
+|
+|switch|p2a: Genesect|Genesect|52\/283
+|-damage|p2a: Genesect|17\/283|[from] Stealth Rock
+|-boost|p2a: Genesect|spa|1|[from] ability: Download
+|turn|32
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Genesect
+|-resisted|p2a: Genesect
+|-damage|p2a: Genesect|0 fnt
+|faint|p2a: Genesect
+|
+|win|qpzm257
+|raw|Ladder updating...
+|chat|qpzm257|holy shit
+|chat|qpzm257|gg
+|chat|Dunno Mate|gg
+|chat|Dunno Mate|bs lol
+|leave|Dunno Mate
+|player|p2
+|raw|qpzm257's rating: 1365 &rarr; <strong>1393<\/strong><br \/>(+28 for winning)
+|raw|Dunno Mate's rating: 1415 &rarr; <strong>1386<\/strong><br \/>(-29 for losing)

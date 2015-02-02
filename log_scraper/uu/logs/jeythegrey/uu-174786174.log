@@ -1,0 +1,255 @@
+|join|JeyTheGrey
+|join|jabroni1
+|player|p1|JeyTheGrey|163
+|player|p2|jabroni1|170
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Alakazam, M
+|poke|p1|Crobat, M
+|poke|p1|Swampert, M
+|poke|p1|Florges, F
+|poke|p1|Hydreigon, M
+|poke|p1|Lucario, M
+|poke|p2|Empoleon, M
+|poke|p2|Darmanitan, F
+|poke|p2|Porygon2
+|poke|p2|Cofagrigus, M
+|poke|p2|Swampert, M
+|poke|p2|Gallade, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Hydreigon|Hydreigon, M|325\/325
+|switch|p2a: Empoleon|Empoleon, M|369\/369
+|turn|1
+|
+|move|p1a: Hydreigon|U-turn|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|338\/369
+|
+|switch|p1a: Lucario|Lucario, M|281\/281
+|move|p2a: Empoleon|Scald|p1a: Lucario
+|-damage|p1a: Lucario|22\/281
+|-status|p1a: Lucario|brn
+|
+|-damage|p1a: Lucario|0 fnt|[from] brn
+|faint|p1a: Lucario
+|
+|switch|p1a: Alakazam|Alakazam, M|252\/252
+|turn|2
+|
+|detailschange|p1a: Alakazam|Alakazam-Mega, M
+|message|Alakazam has Mega Evolved into Mega Alakazam!
+|-ability|p1a: Alakazam|Torrent|[from] ability: Trace|[of] p2a: Empoleon
+|move|p1a: Alakazam|Focus Blast|p2a: Empoleon|[miss]
+|-miss|p1a: Alakazam|p2a: Empoleon
+|move|p2a: Empoleon|Scald|p1a: Alakazam
+|-damage|p1a: Alakazam|36\/252
+|
+|turn|3
+|
+|switch|p2a: Cofagrigus|Cofagrigus, M|320\/320
+|move|p1a: Alakazam|Focus Blast|p2a: Cofagrigus
+|-immune|p2a: Cofagrigus|[msg]
+|
+|turn|4
+|
+|switch|p2a: Porygon2|Porygon2|374\/374
+|-ability|p2a: Porygon2|Torrent|[from] ability: Trace|[of] p1a: Alakazam
+|move|p1a: Alakazam|Shadow Ball|p2a: Porygon2
+|-immune|p2a: Porygon2|[msg]
+|
+|turn|5
+|
+|switch|p1a: Swampert|Swampert, M|404\/404
+|move|p2a: Porygon2|Charge Beam|p1a: Swampert
+|-immune|p1a: Swampert|[msg]
+|
+|turn|6
+|
+|switch|p2a: Darmanitan|Darmanitan, F|351\/351
+|move|p1a: Swampert|Stealth Rock|p2a: Darmanitan
+|-sidestart|p2: jabroni1|move: Stealth Rock
+|
+|turn|7
+|
+|move|p2a: Darmanitan|Encore|p1a: Swampert
+|-start|p1a: Swampert|Encore
+|move|p1a: Swampert|Stealth Rock|p2a: Darmanitan
+|-fail|p2a: Darmanitan
+|
+|turn|8
+|
+|switch|p1a: Hydreigon|Hydreigon, M|325\/325
+|move|p2a: Darmanitan|Flare Blitz|p1a: Hydreigon
+|-resisted|p1a: Hydreigon
+|-damage|p1a: Hydreigon|121\/325
+|-damage|p2a: Darmanitan|284\/351|[from] recoil|[of] p1a: Hydreigon
+|
+|turn|9
+|
+|switch|p2a: Empoleon|Empoleon, M|338\/369
+|-damage|p2a: Empoleon|315\/369|[from] Stealth Rock
+|move|p1a: Hydreigon|U-turn|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|287\/369
+|
+|switch|p1a: Alakazam|Alakazam-Mega, M|36\/252
+|-ability|p1a: Alakazam|Torrent|[from] ability: Trace|[of] p2a: Empoleon
+|
+|turn|10
+|
+|switch|p2a: Gallade|Gallade, M|278\/278
+|-damage|p2a: Gallade|261\/278|[from] Stealth Rock
+|move|p1a: Alakazam|Focus Blast|p2a: Gallade|[miss]
+|-miss|p1a: Alakazam|p2a: Gallade
+|
+|turn|11
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Gallade|Close Combat|p1a: Florges
+|-resisted|p1a: Florges
+|-damage|p1a: Florges|226\/360
+|-unboost|p2a: Gallade|def|1
+|-unboost|p2a: Gallade|spd|1
+|-damage|p2a: Gallade|234\/278|[from] item: Life Orb
+|
+|-heal|p1a: Florges|248\/360|[from] item: Leftovers
+|turn|12
+|
+|switch|p1a: Alakazam|Alakazam-Mega, M|36\/252
+|-ability|p1a: Alakazam|Steadfast|[from] ability: Trace|[of] p2a: Gallade
+|move|p2a: Gallade|Taunt|p1a: Alakazam
+|-start|p1a: Alakazam|move: Taunt
+|
+|turn|13
+|
+|switch|p2a: Porygon2|Porygon2|374\/374
+|-damage|p2a: Porygon2|328\/374|[from] Stealth Rock
+|-ability|p2a: Porygon2|Steadfast|[from] ability: Trace|[of] p1a: Alakazam
+|move|p1a: Alakazam|Psyshock|p2a: Porygon2
+|-damage|p2a: Porygon2|220\/374
+|
+|turn|14
+|
+|move|p1a: Alakazam|Focus Blast|p2a: Porygon2
+|-supereffective|p2a: Porygon2
+|-damage|p2a: Porygon2|0 fnt
+|faint|p2a: Porygon2
+|
+|
+|switch|p2a: Swampert|Swampert, M|404\/404
+|-damage|p2a: Swampert|379\/404|[from] Stealth Rock
+|turn|15
+|
+|switch|p1a: Swampert|Swampert, M|404\/404
+|move|p2a: Swampert|Waterfall|p1a: Swampert
+|-damage|p1a: Swampert|254\/404
+|
+|-heal|p1a: Swampert|279\/404|[from] item: Leftovers
+|turn|16
+|
+|move|p2a: Swampert|Waterfall|p1a: Swampert
+|-damage|p1a: Swampert|123\/404
+|move|p1a: Swampert|Scald|p2a: Swampert
+|-damage|p2a: Swampert|249\/404
+|
+|-heal|p1a: Swampert|148\/404|[from] item: Leftovers
+|turn|17
+|
+|move|p2a: Swampert|Waterfall|p1a: Swampert
+|-damage|p1a: Swampert|0 fnt
+|faint|p1a: Swampert
+|
+|
+|switch|p1a: Hydreigon|Hydreigon, M|121\/325
+|turn|18
+|
+|move|p1a: Hydreigon|Dark Pulse|p2a: Swampert
+|-damage|p2a: Swampert|93\/404
+|move|p2a: Swampert|Waterfall|p1a: Hydreigon
+|-resisted|p1a: Hydreigon
+|-damage|p1a: Hydreigon|0 fnt
+|faint|p1a: Hydreigon
+|
+|
+|switch|p1a: Alakazam|Alakazam-Mega, M|36\/252
+|-ability|p1a: Alakazam|Torrent|[from] ability: Trace|[of] p2a: Swampert
+|turn|19
+|
+|move|p1a: Alakazam|Psyshock|p2a: Swampert
+|-crit|p2a: Swampert
+|-damage|p2a: Swampert|0 fnt
+|faint|p2a: Swampert
+|
+|
+|switch|p2a: Cofagrigus|Cofagrigus, M|320\/320
+|-damage|p2a: Cofagrigus|280\/320|[from] Stealth Rock
+|turn|20
+|
+|switch|p1a: Florges|Florges, F|248\/360
+|move|p2a: Cofagrigus|Shadow Ball|p1a: Florges
+|-damage|p1a: Florges|127\/360
+|
+|-heal|p1a: Florges|149\/360|[from] item: Leftovers
+|turn|21
+|
+|switch|p1a: Alakazam|Alakazam-Mega, M|36\/252
+|-ability|p1a: Alakazam|Mummy|[from] ability: Trace|[of] p2a: Cofagrigus
+|switch|p2a: Darmanitan|Darmanitan, F|284\/351
+|-damage|p2a: Darmanitan|197\/351|[from] Stealth Rock
+|
+|turn|22
+|
+|move|p1a: Alakazam|Psyshock|p2a: Darmanitan
+|-damage|p2a: Darmanitan|0 fnt
+|faint|p2a: Darmanitan
+|
+|
+|switch|p2a: Empoleon|Empoleon, M|287\/369
+|-damage|p2a: Empoleon|264\/369|[from] Stealth Rock
+|turn|23
+|
+|move|p1a: Alakazam|Focus Blast|p2a: Empoleon
+|-crit|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|0 fnt
+|faint|p2a: Empoleon
+|
+|
+|switch|p2a: Cofagrigus|Cofagrigus, M|280\/320
+|-damage|p2a: Cofagrigus|240\/320|[from] Stealth Rock
+|turn|24
+|
+|move|p1a: Alakazam|Shadow Ball|p2a: Cofagrigus
+|-supereffective|p2a: Cofagrigus
+|-damage|p2a: Cofagrigus|0 fnt
+|faint|p2a: Cofagrigus
+|
+|
+|switch|p2a: Gallade|Gallade, M|234\/278
+|-damage|p2a: Gallade|217\/278|[from] Stealth Rock
+|turn|25
+|
+|move|p1a: Alakazam|Psyshock|p2a: Gallade
+|-damage|p2a: Gallade|0 fnt
+|faint|p2a: Gallade
+|
+|win|JeyTheGrey
+|raw|Ladder updating...
+|raw|JeyTheGrey's rating: 1657 &rarr; <strong>1671<\/strong><br \/>(+14 for winning)
+|raw|jabroni1's rating: 1544 &rarr; <strong>1530<\/strong><br \/>(-14 for losing)
+|c|âjabroni1|gg wp
+|c|âJeyTheGrey|gg

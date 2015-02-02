@@ -1,0 +1,244 @@
+|join|TPO3
+|join|reachzero
+|player|p1|TPO3|169
+|player|p2|reachzero|15
+|gametype|singles
+|tier|UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Nidoqueen, F
+|poke|p1|Tornadus, M
+|poke|p1|Slowbro, F
+|poke|p1|Snorlax, M
+|poke|p1|Kingdra, F
+|poke|p1|Mienshao, F
+|poke|p2|Empoleon, M
+|poke|p2|Crobat, M
+|poke|p2|Suicune, shiny
+|poke|p2|Umbreon, F, shiny
+|poke|p2|Zapdos, shiny
+|poke|p2|Nidoqueen, F
+|teampreview
+|callback|decision
+|join|Dark Azelf
+|join|Oglemi
+|
+|start
+|switch|p1a: is cat|Mienshao, F|271\/271
+|switch|p2a: rabbit|Nidoqueen, F|364\/364
+|turn|1
+|callback|decision
+|
+|move|p1a: is cat|U-turn|p2a: rabbit
+|-resisted|p2a: rabbit
+|-damage|p2a: rabbit|319\/364
+|callback|decision
+|chat|reachzero|man this is
+|
+|switch|p1a: is bear|Snorlax, M|461\/461
+|move|p2a: rabbit|Stealth Rock|p1a: is bear
+|-sidestart|p1: TPO3|move: Stealth Rock
+|
+|turn|2
+|callback|decision
+|chat|reachzero|kokoloko vs kokoloko
+|chat|reachzero|how depressing
+|chat|TPO3|kokoloko needs better nicknames
+|
+|move|p2a: rabbit|Focus Blast|p1a: is bear|[miss]
+|-miss|p2a: rabbit|p1a: is bear
+|move|p1a: is bear|Return|p2a: rabbit
+|-damage|p2a: rabbit|39\/364
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: rabbit|Earth Power|p1a: is bear
+|-damage|p1a: is bear|302\/461
+|move|p1a: is bear|Return|p2a: rabbit
+|-damage|p2a: rabbit|0 fnt
+|faint|p2a: rabbit
+|
+|callback|decision
+|
+|switch|p2a: penguin|Empoleon, M|310\/310
+|turn|4
+|callback|decision
+|
+|switch|p1a: is hermit|Slowbro, F|394\/394
+|-damage|p1a: is hermit|345\/394|[from] Stealth Rock
+|move|p2a: penguin|Grass Knot|p1a: is hermit
+|-supereffective|p1a: is hermit
+|-damage|p1a: is hermit|0 fnt
+|faint|p1a: is hermit
+|
+|callback|decision
+|join|blackbone
+|
+|switch|p1a: is giant rat|Nidoqueen, F|372\/372
+|-damage|p1a: is giant rat|349\/372|[from] Stealth Rock
+|turn|5
+|callback|decision
+|chat|blackbone|oh
+|
+|switch|p2a: dog|Suicune, shiny|401\/401
+|-ability|p2a: dog|Pressure
+|move|p1a: is giant rat|Earth Power|p2a: dog
+|-damage|p2a: dog|205\/401
+|
+|-heal|p2a: dog|230\/401|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: dog|Scald|p1a: is giant rat
+|-supereffective|p1a: is giant rat
+|-damage|p1a: is giant rat|149\/372
+|move|p1a: is giant rat|Earth Power|p2a: dog
+|-crit|p2a: dog
+|-damage|p2a: dog|0 fnt
+|faint|p2a: dog
+|
+|callback|decision
+|
+|switch|p2a: bat|Crobat, M|353\/353
+|turn|7
+|callback|decision
+|chat|TPO3|more like is slow rat
+|chat|blackbone|wait thats kokoloko's team w\/ empoleon > scarfty?
+|join|lucky fuck
+|
+|move|p2a: bat|Brave Bird|p1a: is giant rat
+|-damage|p1a: is giant rat|0 fnt
+|-damage|p2a: bat|304\/353|[from] recoil|[of] p1a: is giant rat
+|faint|p1a: is giant rat
+|
+|-heal|p2a: bat|326\/353|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p1a: is bear|Snorlax, M|302\/461
+|-damage|p1a: is bear|245\/461|[from] Stealth Rock
+|turn|8
+|callback|decision
+|
+|move|p2a: bat|Brave Bird|p1a: is bear
+|-damage|p1a: is bear|37\/461
+|-damage|p2a: bat|257\/353|[from] recoil|[of] p1a: is bear
+|move|p1a: is bear|Return|p2a: bat
+|-damage|p2a: bat|0 fnt
+|faint|p2a: bat
+|
+|callback|decision
+|chat|TPO3|blackbone: wait thats kokoloko's team w\/ empoleon > scarfty?
+|
+|switch|p2a: cat|Umbreon, F, shiny|393\/393
+|turn|9
+|callback|decision
+|chat|TPO3|is the scrafty one kokoloko's too o_o
+|
+|move|p2a: cat|Foul Play|p1a: is bear
+|-damage|p1a: is bear|0 fnt
+|faint|p1a: is bear
+|
+|callback|decision
+|
+|switch|p1a: is cat|Mienshao, F|271\/271
+|-damage|p1a: is cat|255\/271|[from] Stealth Rock
+|turn|10
+|callback|decision
+|chat|blackbone|and yours is kokoloko team too
+|chat|blackbone|rofl
+|
+|move|p2a: cat|Protect|p2a: cat
+|-singleturn|p2a: cat|Protect
+|move|p1a: is cat|Hi Jump Kick|p2a: cat
+|-activate|p2a: cat|Protect
+|-damage|p1a: is cat|120\/271|[from] hijumpkick
+|
+|turn|11
+|callback|decision
+|chat|TPO3|>3 teams
+|
+|switch|p2a: bird|Zapdos, shiny|369\/369
+|-ability|p2a: bird|Pressure
+|move|p1a: is cat|Hi Jump Kick|p2a: bird
+|-resisted|p2a: bird
+|-damage|p2a: bird|213\/369
+|
+|-heal|p2a: bird|236\/369|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: is cat|Hi Jump Kick|p2a: bird
+|-resisted|p2a: bird
+|-damage|p2a: bird|74\/369
+|move|p2a: bird|Roost|p2a: bird
+|-heal|p2a: bird|259\/369
+|
+|-heal|p2a: bird|282\/369|[from] item: Leftovers
+|turn|13
+|callback|decision
+|chat|blackbone|for what is that?
+|
+|move|p1a: is cat|Hi Jump Kick|p2a: bird|[miss]
+|-miss|p1a: is cat|p2a: bird
+|-damage|p1a: is cat|0 fnt|[from] hijumpkick
+|faint|p1a: is cat
+|move|p2a: bird|Roost|p2a: bird
+|-heal|p2a: bird|369\/369
+|
+|callback|decision
+|
+|switch|p1a: is seahorse|Kingdra, F|291\/291
+|-damage|p1a: is seahorse|255\/291|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|switch|p2a: penguin|Empoleon, M|310\/310
+|move|p1a: is seahorse|Rain Dance|p1a: is seahorse
+|-weather|RainDance
+|
+|-weather|RainDance|[upkeep]
+|turn|15
+|callback|decision
+|chat|blackbone|uupl finals?
+|chat|TPO3|mini tourney
+|chat|blackbone|OH
+|chat|reachzero|Eightfold Path mini-tournament
+|
+|move|p1a: is seahorse|Hydro Pump|p2a: penguin
+|-resisted|p2a: penguin
+|-damage|p2a: penguin|124\/310
+|-damage|p1a: is seahorse|226\/291|[from] item: Life Orb
+|move|p2a: penguin|Ice Beam|p1a: is seahorse
+|-crit|p1a: is seahorse
+|-damage|p1a: is seahorse|0 fnt
+|faint|p1a: is seahorse
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: is genie|Tornadus, M|299\/299
+|-damage|p1a: is genie|225\/299|[from] Stealth Rock
+|turn|16
+|callback|decision
+|
+|move|p1a: is genie|Hurricane|p2a: penguin
+|-resisted|p2a: penguin
+|-damage|p2a: penguin|1\/310
+|-damage|p1a: is genie|196\/299|[from] item: Life Orb
+|move|p2a: penguin|Ice Beam|p1a: is genie
+|-supereffective|p1a: is genie
+|-damage|p1a: is genie|0 fnt
+|faint|p1a: is genie
+|
+|win|reachzero
+|chat|TPO3|gg
+|chat|reachzero|gg
+|chat|blackbone|kokoloko wins
+|leave|blackbone

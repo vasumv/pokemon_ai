@@ -1,0 +1,378 @@
+|join|pokeball tickler
+|join|Ruby Heart
+|player|p1|pokeball tickler|209
+|player|p2|Ruby Heart|129
+|gametype|singles
+|gen|6
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Metagross
+|poke|p1|Hydreigon, M
+|poke|p1|Ampharos, M
+|poke|p1|Heracross, M
+|poke|p1|Cresselia, F
+|poke|p1|Victini, shiny
+|poke|p2|Cobalion, shiny
+|poke|p2|Vaporeon, M
+|poke|p2|Drapion, M
+|poke|p2|Zapdos
+|poke|p2|Chandelure, F
+|poke|p2|Gardevoir, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Hydreigon|Hydreigon, M|326\/326
+|switch|p2a: Sting'Zorga|Drapion, M|343\/343
+|turn|1
+|callback|decision
+|
+|switch|p2a: Paragon|Gardevoir, F|277\/277
+|-ability|p2a: Paragon|Levitate|[from] ability: Trace|[of] p1a: Hydreigon
+|move|p1a: Hydreigon|Flamethrower|p2a: Paragon
+|-damage|p2a: Paragon|174\/277
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Cresselia|Cresselia, F|444\/444
+|-formechange|p2a: Paragon|Gardevoir-Mega
+|message|Gardevoir has Mega Evolved into Mega Gardevoir!
+|move|p2a: Paragon|Hyper Voice|p1a: Cresselia
+|-damage|p1a: Cresselia|288\/444
+|
+|-heal|p1a: Cresselia|315\/444|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p2a: Sting'Zorga|Drapion, M|343\/343
+|move|p1a: Cresselia|Thunder Wave|p2a: Sting'Zorga
+|-status|p2a: Sting'Zorga|par
+|
+|-heal|p1a: Cresselia|342\/444|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p1a: Cresselia|Moonblast|p2a: Sting'Zorga
+|-damage|p2a: Sting'Zorga|291\/343 par
+|move|p2a: Sting'Zorga|Toxic Spikes|p1a: Cresselia
+|-sidestart|p1: pokeball tickler|move: Toxic Spikes
+|
+|-heal|p1a: Cresselia|369\/444|[from] item: Leftovers
+|-heal|p2a: Sting'Zorga|312\/343 par|[from] item: Black Sludge
+|turn|5
+|callback|decision
+|
+|switch|p1a: Metagross|Metagross|364\/364
+|move|p2a: Sting'Zorga|Taunt|p1a: Metagross
+|-start|p1a: Metagross|move: Taunt
+|
+|-heal|p2a: Sting'Zorga|333\/343 par|[from] item: Black Sludge
+|turn|6
+|callback|decision
+|
+|switch|p2a: Kaldur'ahm|Vaporeon, M|463\/463
+|move|p1a: Metagross|Earthquake|p2a: Kaldur'ahm
+|-damage|p2a: Kaldur'ahm|336\/463
+|
+|-heal|p2a: Kaldur'ahm|364\/463|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p1a: Metagross|Meteor Mash|p2a: Kaldur'ahm|[miss]
+|-miss|p1a: Metagross|p2a: Kaldur'ahm
+|move|p2a: Kaldur'ahm|Wish|p2a: Kaldur'ahm
+|
+|-heal|p2a: Kaldur'ahm|392\/463|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p1a: Metagross|Meteor Mash|p2a: Kaldur'ahm
+|-crit|p2a: Kaldur'ahm
+|-resisted|p2a: Kaldur'ahm
+|-damage|p2a: Kaldur'ahm|263\/463
+|-boost|p1a: Metagross|atk|1
+|move|p2a: Kaldur'ahm|Heal Bell|p2a: Kaldur'ahm
+|-cureteam|p2a: Kaldur'ahm|[from] move: HealBell
+|
+|-heal|p2a: Kaldur'ahm|463\/463|[from] move: Wish|[wisher] Kaldur'ahm
+|-end|p1a: Metagross|move: Taunt
+|turn|9
+|callback|decision
+|
+|move|p1a: Metagross|Meteor Mash|p2a: Kaldur'ahm
+|-resisted|p2a: Kaldur'ahm
+|-damage|p2a: Kaldur'ahm|331\/463
+|-boost|p1a: Metagross|atk|1
+|move|p2a: Kaldur'ahm|Scald|p1a: Metagross
+|-damage|p1a: Metagross|285\/364
+|
+|-heal|p2a: Kaldur'ahm|359\/463|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p1a: Metagross|Earthquake|p2a: Kaldur'ahm
+|-damage|p2a: Kaldur'ahm|74\/463
+|move|p2a: Kaldur'ahm|Scald|p1a: Metagross
+|-damage|p1a: Metagross|216\/364
+|
+|-heal|p2a: Kaldur'ahm|102\/463|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p2a: Ketchup|Zapdos|383\/383
+|-ability|p2a: Ketchup|Pressure
+|move|p1a: Metagross|Earthquake|p2a: Ketchup
+|-immune|p2a: Ketchup|[msg]
+|
+|turn|12
+|callback|decision
+|
+|move|p2a: Ketchup|Thunderbolt|p1a: Metagross
+|-damage|p1a: Metagross|129\/364
+|move|p1a: Metagross|Ice Punch|p2a: Ketchup
+|-supereffective|p2a: Ketchup
+|-damage|p2a: Ketchup|59\/383
+|-status|p2a: Ketchup|frz
+|
+|-heal|p2a: Ketchup|82\/383 frz|[from] item: Leftovers
+|turn|13
+|callback|decision
+|chat|Ruby Heart|the salt vest is real
+|chat|pokeball tickler|i know too good
+|
+|switch|p2a: Iron Reaver|Cobalion, shiny|324\/324
+|move|p1a: Metagross|Ice Punch|p2a: Iron Reaver
+|-resisted|p2a: Iron Reaver
+|-damage|p2a: Iron Reaver|249\/324
+|-status|p2a: Iron Reaver|frz
+|
+|-heal|p2a: Iron Reaver|269\/324 frz|[from] item: Leftovers
+|turn|14
+|callback|decision
+|chat|Ruby Heart|oh for...
+|chat|pokeball tickler|haxxxxx
+|
+|switch|p2a: Nightshade|Chandelure, F|261\/261
+|move|p1a: Metagross|Earthquake|p2a: Nightshade
+|-supereffective|p2a: Nightshade
+|-damage|p2a: Nightshade|0 fnt
+|faint|p2a: Nightshade
+|
+|callback|decision
+|
+|switch|p2a: Sting'Zorga|Drapion, M|333\/343
+|turn|15
+|callback|decision
+|
+|move|p2a: Sting'Zorga|Crunch|p1a: Metagross
+|-supereffective|p1a: Metagross
+|-damage|p1a: Metagross|1\/364
+|move|p1a: Metagross|Earthquake|p2a: Sting'Zorga
+|-supereffective|p2a: Sting'Zorga
+|-damage|p2a: Sting'Zorga|0 fnt
+|faint|p2a: Sting'Zorga
+|
+|callback|decision
+|chat|pokeball tickler|oooooooo 0danm
+|
+|switch|p2a: Paragon|Gardevoir, F|174\/277
+|-formechange|p2a: Paragon|Gardevoir-Mega
+|turn|16
+|callback|decision
+|
+|move|p1a: Metagross|Bullet Punch|p2a: Paragon
+|-supereffective|p2a: Paragon
+|-damage|p2a: Paragon|0 fnt
+|faint|p2a: Paragon
+|
+|callback|decision
+|chat|Ruby Heart|i'm going to set the ocean on fire
+|
+|switch|p2a: Kaldur'ahm|Vaporeon, M|102\/463
+|turn|17
+|callback|decision
+|
+|move|p1a: Metagross|Bullet Punch|p2a: Kaldur'ahm
+|-resisted|p2a: Kaldur'ahm
+|-damage|p2a: Kaldur'ahm|25\/463
+|move|p2a: Kaldur'ahm|Heal Bell|p2a: Kaldur'ahm
+|-cureteam|p2a: Kaldur'ahm|[from] move: HealBell
+|
+|-heal|p2a: Kaldur'ahm|53\/463|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p1a: Metagross|Ice Punch|p2a: Kaldur'ahm
+|-resisted|p2a: Kaldur'ahm
+|-damage|p2a: Kaldur'ahm|0 fnt
+|faint|p2a: Kaldur'ahm
+|
+|callback|decision
+|
+|switch|p2a: Iron Reaver|Cobalion, shiny|269\/324
+|turn|19
+|callback|decision
+|
+|move|p1a: Metagross|Bullet Punch|p2a: Iron Reaver
+|-resisted|p2a: Iron Reaver
+|-damage|p2a: Iron Reaver|204\/324
+|move|p2a: Iron Reaver|Close Combat|p1a: Metagross
+|-crit|p1a: Metagross
+|-damage|p1a: Metagross|0 fnt
+|-unboost|p2a: Iron Reaver|def|1
+|-unboost|p2a: Iron Reaver|spd|1
+|faint|p1a: Metagross
+|
+|-heal|p2a: Iron Reaver|224\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Hydreigon|Hydreigon, M|326\/326
+|turn|20
+|callback|decision
+|
+|move|p2a: Iron Reaver|Close Combat|p1a: Hydreigon
+|-supereffective|p1a: Hydreigon
+|-damage|p1a: Hydreigon|0 fnt
+|-unboost|p2a: Iron Reaver|def|1
+|-unboost|p2a: Iron Reaver|spd|1
+|faint|p1a: Hydreigon
+|
+|-heal|p2a: Iron Reaver|244\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Victini|Victini, shiny|341\/341
+|-status|p1a: Victini|psn
+|turn|21
+|callback|decision
+|
+|switch|p2a: Ketchup|Zapdos|82\/383
+|-ability|p2a: Ketchup|Pressure
+|move|p1a: Victini|V-create|p2a: Ketchup
+|-damage|p2a: Ketchup|0 fnt
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|faint|p2a: Ketchup
+|
+|-damage|p1a: Victini|299\/341 psn|[from] psn
+|callback|decision
+|
+|switch|p2a: Iron Reaver|Cobalion, shiny|244\/324
+|turn|22
+|callback|decision
+|
+|switch|p1a: Cresselia|Cresselia, F|369\/444
+|move|p2a: Iron Reaver|Substitute|p2a: Iron Reaver
+|-start|p2a: Iron Reaver|Substitute
+|-damage|p2a: Iron Reaver|163\/324
+|
+|-heal|p2a: Iron Reaver|183\/324|[from] item: Leftovers
+|-heal|p1a: Cresselia|396\/444|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p2a: Iron Reaver|Swords Dance|p2a: Iron Reaver
+|-boost|p2a: Iron Reaver|atk|2
+|move|p1a: Cresselia|Moonblast|p2a: Iron Reaver
+|-activate|p2a: Iron Reaver|Substitute|[damage]
+|
+|-heal|p2a: Iron Reaver|203\/324|[from] item: Leftovers
+|-heal|p1a: Cresselia|423\/444|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p2a: Iron Reaver|Iron Head|p1a: Cresselia
+|-damage|p1a: Cresselia|233\/444
+|move|p1a: Cresselia|Moonblast|p2a: Iron Reaver
+|-end|p2a: Iron Reaver|Substitute
+|
+|-heal|p2a: Iron Reaver|223\/324|[from] item: Leftovers
+|-heal|p1a: Cresselia|260\/444|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|switch|p1a: Victini|Victini, shiny|299\/341 psn
+|move|p2a: Iron Reaver|Substitute|p2a: Iron Reaver
+|-start|p2a: Iron Reaver|Substitute
+|-damage|p2a: Iron Reaver|142\/324
+|
+|-heal|p2a: Iron Reaver|162\/324|[from] item: Leftovers
+|-damage|p1a: Victini|257\/341 psn|[from] psn
+|turn|26
+|callback|decision
+|
+|move|p1a: Victini|Zen Headbutt|p2a: Iron Reaver
+|-end|p2a: Iron Reaver|Substitute
+|move|p2a: Iron Reaver|Swords Dance|p2a: Iron Reaver
+|-boost|p2a: Iron Reaver|atk|2
+|
+|-heal|p2a: Iron Reaver|182\/324|[from] item: Leftovers
+|-damage|p1a: Victini|215\/341 psn|[from] psn
+|turn|27
+|callback|decision
+|
+|move|p1a: Victini|Zen Headbutt|p2a: Iron Reaver
+|-damage|p2a: Iron Reaver|83\/324
+|move|p2a: Iron Reaver|Close Combat|p1a: Victini
+|-resisted|p1a: Victini
+|-damage|p1a: Victini|0 fnt
+|-unboost|p2a: Iron Reaver|def|1
+|-unboost|p2a: Iron Reaver|spd|1
+|faint|p1a: Victini
+|
+|-heal|p2a: Iron Reaver|103\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Ampharos|Ampharos, M|384\/384
+|-status|p1a: Ampharos|psn
+|turn|28
+|callback|decision
+|
+|-formechange|p1a: Ampharos|Ampharos-Mega
+|message|Ampharos has Mega Evolved into Mega Ampharos!
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p2a: Iron Reaver|Close Combat|p1a: Ampharos
+|-damage|p1a: Ampharos|0 fnt
+|-unboost|p2a: Iron Reaver|def|1
+|-unboost|p2a: Iron Reaver|spd|1
+|faint|p1a: Ampharos
+|
+|-heal|p2a: Iron Reaver|123\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Heracross|Heracross, M|364\/364
+|-status|p1a: Heracross|psn
+|turn|29
+|callback|decision
+|
+|move|p2a: Iron Reaver|Iron Head|p1a: Heracross
+|-damage|p1a: Heracross|0 fnt
+|faint|p1a: Heracross
+|
+|-heal|p2a: Iron Reaver|143\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Cresselia|Cresselia, F|260\/444
+|turn|30
+|callback|decision
+|
+|move|p2a: Iron Reaver|Iron Head|p1a: Cresselia
+|-damage|p1a: Cresselia|0 fnt
+|faint|p1a: Cresselia
+|
+|win|Ruby Heart
+|raw|Ladder updating...
+|leave|pokeball tickler
+|chat|Ruby Heart|VIDEO GAMES
+|player|p1
+|raw|pokeball tickler's rating: 1083 &rarr; <strong>1054<\/strong><br \/>(-29 for losing)
+|raw|Ruby Heart's rating: 1025 &rarr; <strong>1054<\/strong><br \/>(+29 for winning)

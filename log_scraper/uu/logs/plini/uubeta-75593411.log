@@ -1,0 +1,269 @@
+|join|chadse
+|join|plini
+|player|p1|chadse|101
+|player|p2|plini|265
+|gametype|singles
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Keldeo-Resolute
+|poke|p1|Swampert, M
+|poke|p1|Zapdos
+|poke|p1|Deoxys-Defense
+|poke|p1|Bisharp, M
+|poke|p1|Medicham, M
+|poke|p2|Ampharos, M
+|poke|p2|Arcanine, M
+|poke|p2|Quagsire, F
+|poke|p2|Snorlax, M
+|poke|p2|Umbreon, M, shiny
+|poke|p2|Heracross, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Deoxys-Defense|Deoxys-Defense|304\/304
+|switch|p2a: Heracross|Heracross, F|302\/302
+|-ability|p1a: Deoxys-Defense|Pressure
+|turn|1
+|callback|decision
+|
+|switch|p1a: Zapdos|Zapdos|384\/384
+|-ability|p1a: Zapdos|Pressure
+|move|p2a: Heracross|Megahorn|p1a: Zapdos
+|-resisted|p1a: Zapdos
+|-damage|p1a: Zapdos|253\/384
+|
+|-heal|p1a: Zapdos|277\/384|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p2a: purple peasant|Snorlax, M|524\/524
+|move|p1a: Zapdos|Thunderbolt|p2a: purple peasant
+|-damage|p2a: purple peasant|431\/524
+|-status|p2a: purple peasant|par
+|
+|-heal|p1a: Zapdos|301\/384|[from] item: Leftovers
+|-heal|p2a: purple peasant|463\/524 par|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p1a: Deoxys-Defense|Deoxys-Defense|304\/304
+|-ability|p1a: Deoxys-Defense|Pressure
+|move|p2a: purple peasant|Body Slam|p1a: Deoxys-Defense
+|-damage|p1a: Deoxys-Defense|226\/304
+|-enditem|p1a: Deoxys-Defense|Red Card|[of] p2a: purple peasant
+|drag|p2a: lemon|Quagsire, F|394\/394
+|
+|turn|4
+|callback|decision
+|
+|move|p1a: Deoxys-Defense|Stealth Rock|p2a: lemon
+|-sidestart|p2: plini|move: Stealth Rock
+|move|p2a: lemon|Toxic|p1a: Deoxys-Defense|[miss]
+|-miss|p2a: lemon|p1a: Deoxys-Defense
+|
+|turn|5
+|callback|decision
+|
+|move|p1a: Deoxys-Defense|Spikes|p2a: lemon
+|-sidestart|p2: plini|Spikes
+|move|p2a: lemon|Toxic|p1a: Deoxys-Defense
+|-status|p1a: Deoxys-Defense|tox
+|
+|-damage|p1a: Deoxys-Defense|207\/304 tox|[from] psn
+|turn|6
+|callback|decision
+|
+|move|p1a: Deoxys-Defense|Spikes|p2a: lemon
+|-sidestart|p2: plini|Spikes
+|move|p2a: lemon|Earthquake|p1a: Deoxys-Defense
+|-damage|p1a: Deoxys-Defense|143\/304 tox
+|
+|-damage|p1a: Deoxys-Defense|105\/304 tox|[from] psn
+|turn|7
+|callback|decision
+|
+|switch|p2a: Heracross|Heracross, F|302\/302
+|-damage|p2a: Heracross|252\/302|[from] Spikes
+|-damage|p2a: Heracross|215\/302|[from] Stealth Rock
+|move|p1a: Deoxys-Defense|Knock Off|p2a: Heracross
+|-resisted|p2a: Heracross
+|-damage|p2a: Heracross|180\/302
+|-enditem|p2a: Heracross|Choice Scarf|[from] move: Knock Off|[of] p1a: Deoxys-Defense
+|
+|-damage|p1a: Deoxys-Defense|48\/304 tox|[from] psn
+|turn|8
+|callback|decision
+|
+|move|p1a: Deoxys-Defense|Spikes|p2a: Heracross
+|-sidestart|p2: plini|Spikes
+|move|p2a: Heracross|Stone Edge|p1a: Deoxys-Defense
+|-crit|p1a: Deoxys-Defense
+|-damage|p1a: Deoxys-Defense|0 fnt
+|faint|p1a: Deoxys-Defense
+|-boost|p2a: Heracross|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|switch|p1a: Keldeo-Resolute|Keldeo-Resolute|323\/323
+|turn|9
+|callback|decision
+|
+|move|p1a: Keldeo-Resolute|Scald|p2a: Heracross
+|-crit|p2a: Heracross
+|-damage|p2a: Heracross|0 fnt
+|faint|p2a: Heracross
+|
+|callback|decision
+|
+|switch|p2a: bun|Ampharos, M|384\/384
+|-damage|p2a: bun|288\/384|[from] Spikes
+|-damage|p2a: bun|240\/384|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|switch|p1a: Zapdos|Zapdos|301\/384
+|-ability|p1a: Zapdos|Pressure
+|-formechange|p2a: bun|Ampharos-Mega
+|message|Ampharos has Mega Evolved into Mega Ampharos!
+|-ability|p2a: bun|Mold Breaker
+|move|p2a: bun|Thunderbolt|p1a: Zapdos
+|-damage|p1a: Zapdos|132\/384
+|
+|-heal|p1a: Zapdos|156\/384|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|348\/384
+|move|p2a: bun|Thunderbolt|p1a: Zapdos
+|-resisted|p1a: Zapdos
+|-damage|p1a: Zapdos|273\/384
+|
+|-heal|p1a: Zapdos|297\/384|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: bun|Dragon Pulse|p1a: Zapdos
+|-damage|p1a: Zapdos|155\/384
+|move|p1a: Zapdos|Roar|p2a: bun
+|drag|p2a: purple peasant|Snorlax, M|463\/524 par
+|-damage|p2a: purple peasant|332\/524 par|[from] Spikes
+|-damage|p2a: purple peasant|267\/524 par|[from] Stealth Rock
+|
+|-heal|p1a: Zapdos|179\/384|[from] item: Leftovers
+|-heal|p2a: purple peasant|299\/524 par|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|371\/384
+|move|p2a: purple peasant|Body Slam|p1a: Zapdos
+|-damage|p1a: Zapdos|235\/384
+|
+|-heal|p1a: Zapdos|259\/384|[from] item: Leftovers
+|-heal|p2a: purple peasant|331\/524 par|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p2a: purple peasant|Body Slam|p1a: Zapdos
+|-damage|p1a: Zapdos|121\/384
+|move|p1a: Zapdos|Roar|p2a: purple peasant
+|drag|p2a: bun|Ampharos, M|240\/384
+|-formechange|p2a: bun|Ampharos-Mega
+|-damage|p2a: bun|192\/384|[from] Stealth Rock
+|-damage|p2a: bun|96\/384|[from] Spikes
+|-ability|p2a: bun|Mold Breaker
+|
+|-heal|p1a: Zapdos|145\/384|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|337\/384
+|move|p2a: bun|Dragon Pulse|p1a: Zapdos
+|-damage|p1a: Zapdos|189\/384
+|
+|-heal|p1a: Zapdos|213\/384|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|384\/384
+|move|p2a: bun|Dragon Pulse|p1a: Zapdos
+|-damage|p1a: Zapdos|237\/384
+|
+|-heal|p1a: Zapdos|261\/384|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p2a: bun|Dragon Pulse|p1a: Zapdos
+|-damage|p1a: Zapdos|120\/384
+|move|p1a: Zapdos|Roar|p2a: bun
+|drag|p2a: lemon|Quagsire, F|394\/394
+|-damage|p2a: lemon|296\/394|[from] Spikes
+|-damage|p2a: lemon|272\/394|[from] Stealth Rock
+|
+|-heal|p1a: Zapdos|144\/384|[from] item: Leftovers
+|-heal|p2a: lemon|296\/394|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-start|p1a: Zapdos|Substitute
+|-damage|p1a: Zapdos|48\/384
+|move|p2a: lemon|Toxic|p1a: Zapdos
+|
+|-heal|p1a: Zapdos|72\/384|[from] item: Leftovers
+|-heal|p2a: lemon|320\/394|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p2a: lemon|Scald|p1a: Zapdos
+|-activate|p1a: Zapdos|Substitute|[damage]
+|move|p1a: Zapdos|Roar|p2a: lemon
+|drag|p2a: blue circles|Umbreon, M, shiny|394\/394
+|-damage|p2a: blue circles|296\/394|[from] Spikes
+|-damage|p2a: blue circles|247\/394|[from] Stealth Rock
+|
+|-heal|p1a: Zapdos|96\/384|[from] item: Leftovers
+|-heal|p2a: blue circles|271\/394|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p2a: blue circles|Wish|p2a: blue circles
+|move|p1a: Zapdos|Roar|p2a: blue circles
+|drag|p2a: purple peasant|Snorlax, M|331\/524 par
+|-damage|p2a: purple peasant|266\/524 par|[from] Stealth Rock
+|-damage|p2a: purple peasant|135\/524 par|[from] Spikes
+|
+|-heal|p1a: Zapdos|120\/384|[from] item: Leftovers
+|-heal|p2a: purple peasant|167\/524 par|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|cant|p2a: purple peasant|par
+|move|p1a: Zapdos|Roar|p2a: purple peasant
+|drag|p2a: bun|Ampharos, M|96\/384
+|-formechange|p2a: bun|Ampharos-Mega
+|-damage|p2a: bun|0 fnt|[from] Spikes
+|faint|p2a: bun
+|
+|-heal|p1a: Zapdos|144\/384|[from] item: Leftovers
+|callback|decision
+|-message|plini forfeited.
+|
+|win|chadse
+|raw|Ladder updating...
+|leave|plini
+|player|p2
+|raw|chadse's rating: 1788 &rarr; <strong>1817<\/strong><br \/>(+29 for winning)
+|raw|plini's rating: 1592 &rarr; <strong>1588<\/strong><br \/>(-4 for losing)

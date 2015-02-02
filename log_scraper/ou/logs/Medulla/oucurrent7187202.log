@@ -1,0 +1,262 @@
+|join|Medulla
+|join|Sonicblast369
+|player|p1|Medulla|1
+|player|p2|Sonicblast369|2
+|gametype|singles
+|tier|OU (current)
+|rated
+|clearpoke
+|poke|p1|Terrakion
+|poke|p1|Kingdra, M
+|poke|p1|Tyranitar, F
+|poke|p1|Landorus, M
+|poke|p1|Gothitelle, M
+|poke|p1|Latios, M
+|poke|p2|Deoxys-Defense
+|poke|p2|Terrakion, shiny
+|poke|p2|Latios, M
+|poke|p2|Heatran, M
+|poke|p2|Thundurus-Therian, M
+|poke|p2|Jirachi
+|rule|Sleep Clause
+|rule|Species Clause
+|rule|OHKO Clause
+|rule|Moody Clause
+|rule|Evasion Clause
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Terrakion|Terrakion| (100\/100)
+|switch|p2a: Deoxys-Defense|Deoxys-Defense| (100\/100)
+|-ability|p2a: Deoxys-Defense|Pressure
+|turn|1
+|callback|decision
+|
+|move|p1a: Terrakion|Taunt|p2a: Deoxys-Defense
+|-start|p2a: Deoxys-Defense|move: Taunt
+|-enditem|p2a: Deoxys-Defense|Mental Herb
+|-end|p2a: Deoxys-Defense|move: Taunt
+|move|p2a: Deoxys-Defense|Thunder Wave|p1a: Terrakion
+|-status|p1a: Terrakion|par
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Deoxys-Defense|Taunt|p1a: Terrakion
+|-start|p1a: Terrakion|move: Taunt
+|cant|p1a: Terrakion|move: Taunt|Stealth Rock
+|
+|turn|3
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, F| (100\/100)
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar
+|move|p2a: Deoxys-Defense|Stealth Rock|p1a: Tyranitar
+|-sidestart|p1: Medulla|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Deoxys-Defense|6 (94\/100)|[from] sandstorm
+|turn|4
+|callback|decision
+|
+|move|p2a: Deoxys-Defense|Spikes|p1a: Tyranitar
+|-sidestart|p1: Medulla|Spikes
+|move|p1a: Tyranitar|Crunch|p2a: Deoxys-Defense
+|-supereffective|p2a: Deoxys-Defense
+|-damage|p2a: Deoxys-Defense|94 (0\/100 fnt)
+|faint|p2a: Deoxys-Defense
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|callback|decision
+|
+|switch|p2a: Terrakion|Terrakion, shiny| (100\/100)
+|turn|5
+|callback|decision
+|
+|switch|p1a: Terrakion|Terrakion| (100\/100 par)
+|-damage|p1a: Terrakion|6 (94\/100 par)|[from] Stealth Rock
+|-damage|p1a: Terrakion|12 (81\/100 par)|[from] Spikes
+|move|p2a: Terrakion|Rock Polish|p2a: Terrakion
+|-boost|p2a: Terrakion|spe|2
+|
+|-weather|Sandstorm|[upkeep]
+|turn|6
+|callback|decision
+|
+|move|p2a: Terrakion|Close Combat|p1a: Terrakion
+|-supereffective|p1a: Terrakion
+|-damage|p1a: Terrakion|81 (0\/100 fnt)
+|-unboost|p2a: Terrakion|def|1
+|-unboost|p2a: Terrakion|spd|1
+|faint|p1a: Terrakion
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|callback|decision
+|
+|switch|p1a: Gothitelle|Gothitelle, M| (100\/100)
+|-damage|p1a: Gothitelle|13 (88\/100)|[from] Spikes
+|-damage|p1a: Gothitelle|13 (75\/100)|[from] Stealth Rock
+|turn|7
+|callback|decision
+|
+|move|p2a: Terrakion|Stone Edge|p1a: Gothitelle
+|-damage|p1a: Gothitelle|59 (16\/100)
+|move|p1a: Gothitelle|Psyshock|p2a: Terrakion
+|-supereffective|p2a: Terrakion
+|-damage|p2a: Terrakion|100 (0\/100 fnt)
+|faint|p2a: Terrakion
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gothitelle|6 (10\/100)|[from] sandstorm
+|callback|decision
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi| (100\/100)
+|turn|8
+|callback|decision
+|
+|move|p2a: Jirachi|Ice Punch|p1a: Gothitelle
+|-damage|p1a: Gothitelle|10 (0\/100 fnt)
+|faint|p1a: Gothitelle
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, F| (100\/100)
+|-damage|p1a: Tyranitar|12 (88\/100)|[from] Stealth Rock
+|-damage|p1a: Tyranitar|12 (75\/100)|[from] Spikes
+|turn|9
+|callback|decision
+|
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M| (100\/100)
+|move|p1a: Tyranitar|Stone Edge|p2a: Thundurus-Therian
+|-crit|p2a: Thundurus-Therian
+|-supereffective|p2a: Thundurus-Therian
+|-damage|p2a: Thundurus-Therian|100 (0\/100 fnt)
+|faint|p2a: Thundurus-Therian
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi| (100\/100)
+|turn|10
+|callback|decision
+|
+|switch|p1a: Kingdra|Kingdra, M| (100\/100)
+|-damage|p1a: Kingdra|12 (88\/100)|[from] Spikes
+|-damage|p1a: Kingdra|12 (75\/100)|[from] Stealth Rock
+|move|p2a: Jirachi|Trick|p1a: Kingdra
+|-activate|p2a: Jirachi|move: Trick|[of] p1a: Kingdra
+|-item|p1a: Kingdra|Choice Scarf|[from] move: Trick
+|-item|p2a: Jirachi|Choice Specs|[from] move: Trick
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Kingdra|6 (69\/100)|[from] sandstorm
+|turn|11
+|callback|decision
+|
+|move|p1a: Kingdra|Surf|p2a: Jirachi
+|-damage|p2a: Jirachi|43 (57\/100)
+|move|p2a: Jirachi|Trick|p1a: Kingdra
+|-activate|p2a: Jirachi|move: Trick|[of] p1a: Kingdra
+|-item|p1a: Kingdra|Choice Specs|[from] move: Trick
+|-item|p2a: Jirachi|Choice Scarf|[from] move: Trick
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Kingdra|6 (63\/100)|[from] sandstorm
+|turn|12
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M| (100\/100)
+|move|p1a: Kingdra|Surf|p2a: Latios
+|-resisted|p2a: Latios
+|-damage|p2a: Latios|32 (68\/100)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|6 (62\/100)|[from] sandstorm
+|-damage|p1a: Kingdra|6 (57\/100)|[from] sandstorm
+|turn|13
+|callback|decision
+|
+|move|p2a: Latios|Surf|p1a: Kingdra
+|-resisted|p1a: Kingdra
+|-damage|p1a: Kingdra|9 (47\/100)
+|move|p1a: Kingdra|Surf|p2a: Latios
+|-resisted|p2a: Latios
+|-damage|p2a: Latios|33 (29\/100)
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|6 (23\/100)|[from] sandstorm
+|-damage|p1a: Kingdra|6 (41\/100)|[from] sandstorm
+|turn|14
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, M| (100\/100)
+|-item|p2a: Heatran|Air Balloon
+|move|p1a: Kingdra|Surf|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|100 (0\/100 fnt)
+|-enditem|p2a: Heatran|Air Balloon
+|faint|p2a: Heatran
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Kingdra|6 (35\/100)|[from] sandstorm
+|callback|decision
+|callback|decision
+|
+|switch|p2a: Jirachi|Jirachi| (57\/100)
+|turn|15
+|callback|decision
+|
+|move|p2a: Jirachi|Iron Head|p1a: Kingdra
+|-resisted|p1a: Kingdra
+|-damage|p1a: Kingdra|20 (15\/100)
+|move|p1a: Kingdra|Surf|p2a: Jirachi
+|-damage|p2a: Jirachi|57 (0\/100 fnt)
+|faint|p2a: Jirachi
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Kingdra|6 (9\/100)|[from] sandstorm
+|callback|decision
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M| (23\/100)
+|turn|16
+|callback|decision
+|
+|move|p2a: Latios|Draco Meteor|p1a: Kingdra
+|-supereffective|p1a: Kingdra
+|-damage|p1a: Kingdra|9 (0\/100 fnt)
+|-unboost|p2a: Latios|spa|2
+|faint|p1a: Kingdra
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|6 (17\/100)|[from] sandstorm
+|callback|decision
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, F| (75\/100)
+|-damage|p1a: Tyranitar|12 (63\/100)|[from] Spikes
+|-damage|p1a: Tyranitar|12 (50\/100)|[from] Stealth Rock
+|turn|17
+|callback|decision
+|
+|move|p2a: Latios|Draco Meteor|p1a: Tyranitar|[miss]
+|-miss|p2a: Latios
+|move|p1a: Tyranitar|Crunch|p2a: Latios
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|17 (0\/100 fnt)
+|faint|p2a: Latios
+|
+|win|Medulla
+|chatmsg-raw|Ladder updating...
+|raw|Medulla's rating: 1921 &rarr; <strong>1926<\/strong><br \/>(+5 for winning)
+|raw|Sonicblast369's rating: 1638 &rarr; <strong>1634<\/strong><br \/>(-4 for losing)
+|leave|Medulla
+|player|p1
+|chat|Sonicblast369|gg

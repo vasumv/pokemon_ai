@@ -1,0 +1,431 @@
+|join|EchoDjinn
+|join|The Smooze
+|player|p1|EchoDjinn|170
+|player|p2|The Smooze|2
+|gametype|singles
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Zapdos
+|poke|p1|Umbreon, F
+|poke|p1|Omastar, M
+|poke|p1|Mienshao, M
+|poke|p1|Cofagrigus, M
+|poke|p1|Hitmontop, M
+|poke|p2|Mew
+|poke|p2|Nidoking, M
+|poke|p2|Porygon-Z
+|poke|p2|Umbreon, F
+|poke|p2|Venomoth, M
+|poke|p2|Empoleon, F
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Zapdos|Zapdos|322\/322
+|switch|p2a: Mew|Mew|404\/404
+|-ability|p1a: Zapdos|Pressure
+|turn|1
+|callback|decision
+|
+|move|p1a: Zapdos|Thunderbolt|p2a: Mew
+|-damage|p2a: Mew|197\/404
+|-damage|p1a: Zapdos|290\/322|[from] item: Life Orb
+|move|p2a: Mew|Light Screen|p2a: Mew
+|-sidestart|p2: The Smooze|move: Light Screen
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Omastar|Omastar, M|344\/344
+|move|p2a: Mew|Reflect|p2a: Mew
+|-sidestart|p2: The Smooze|Reflect
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Mew|Taunt|p1a: Omastar
+|-start|p1a: Omastar|move: Taunt
+|cant|p1a: Omastar|move: Taunt|Stealth Rock
+|
+|turn|4
+|callback|decision
+|
+|switch|p2a: Venomoth|Venomoth, M|343\/343
+|move|p1a: Omastar|Scald|p2a: Venomoth
+|-damage|p2a: Venomoth|276\/343
+|
+|-heal|p2a: Venomoth|297\/343|[from] item: Black Sludge
+|turn|5
+|callback|decision
+|
+|switch|p1a: Mienshao|Mienshao, M|271\/271
+|move|p2a: Venomoth|Quiver Dance|p2a: Venomoth
+|-boost|p2a: Venomoth|spa|1
+|-boost|p2a: Venomoth|spd|1
+|-boost|p2a: Venomoth|spe|1
+|
+|-heal|p2a: Venomoth|318\/343|[from] item: Black Sludge
+|turn|6
+|callback|decision
+|
+|move|p1a: Mienshao|Stone Edge|p2a: Venomoth
+|-supereffective|p2a: Venomoth
+|-damage|p2a: Venomoth|150\/343
+|move|p2a: Venomoth|Sleep Powder|p1a: Mienshao
+|-status|p1a: Mienshao|slp
+|
+|-heal|p2a: Venomoth|171\/343|[from] item: Black Sludge
+|turn|7
+|callback|decision
+|
+|switch|p1a: Cofagrigus|Cofagrigus, M|320\/320
+|move|p2a: Venomoth|Quiver Dance|p2a: Venomoth
+|-boost|p2a: Venomoth|spa|1
+|-boost|p2a: Venomoth|spd|1
+|-boost|p2a: Venomoth|spe|1
+|
+|-heal|p2a: Venomoth|192\/343|[from] item: Black Sludge
+|turn|8
+|callback|decision
+|
+|move|p2a: Venomoth|Baton Pass|p2a: Venomoth
+|callback|decision
+|
+|switch|p2a: Porygon-Z|Porygon-Z|335\/335
+|-boost|p2a: Porygon-Z|atk|1|[from] ability: Download
+|move|p1a: Cofagrigus|Will-O-Wisp|p2a: Porygon-Z
+|-status|p2a: Porygon-Z|brn
+|
+|-damage|p2a: Porygon-Z|294\/335 brn|[from] brn
+|-sideend|p2: The Smooze|move: Light Screen
+|turn|9
+|callback|decision
+|
+|switch|p1a: Umbreon|Umbreon, F|394\/394
+|move|p2a: Porygon-Z|Dark Pulse|p1a: Umbreon
+|-resisted|p1a: Umbreon
+|-damage|p1a: Umbreon|313\/394
+|-damage|p2a: Porygon-Z|261\/335 brn|[from] item: Life Orb
+|
+|-heal|p1a: Umbreon|337\/394|[from] item: Leftovers
+|-damage|p2a: Porygon-Z|220\/335 brn|[from] brn
+|-sideend|p2: The Smooze|Reflect
+|turn|10
+|callback|decision
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Porygon-Z|Hidden Power|p1a: Umbreon
+|-activate|p1a: Umbreon|Protect
+|
+|-heal|p1a: Umbreon|361\/394|[from] item: Leftovers
+|-damage|p2a: Porygon-Z|179\/335 brn|[from] brn
+|turn|11
+|callback|decision
+|
+|switch|p1a: Cofagrigus|Cofagrigus, M|320\/320
+|move|p2a: Porygon-Z|Dark Pulse|p1a: Cofagrigus
+|-supereffective|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|0 fnt
+|-damage|p2a: Porygon-Z|146\/335 brn|[from] item: Life Orb
+|faint|p1a: Cofagrigus
+|
+|-damage|p2a: Porygon-Z|105\/335 brn|[from] brn
+|callback|decision
+|
+|switch|p1a: Hitmontop|Hitmontop, M|304\/304
+|-ability|p1a: Hitmontop|Intimidate|[of] p2a: Porygon-Z
+|-unboost|p2a: Porygon-Z|atk|1
+|turn|12
+|callback|decision
+|
+|switch|p1a: Omastar|Omastar, M|344\/344
+|move|p2a: Porygon-Z|Tri Attack|p1a: Omastar
+|-resisted|p1a: Omastar
+|-damage|p1a: Omastar|49\/344
+|-damage|p2a: Porygon-Z|72\/335 brn|[from] item: Life Orb
+|
+|-heal|p1a: Omastar|70\/344|[from] item: Leftovers
+|-damage|p2a: Porygon-Z|31\/335 brn|[from] brn
+|turn|13
+|callback|decision
+|
+|move|p2a: Porygon-Z|Tri Attack|p1a: Omastar
+|-resisted|p1a: Omastar
+|-damage|p1a: Omastar|0 fnt
+|-damage|p2a: Porygon-Z|0 fnt|[from] item: Life Orb
+|faint|p1a: Omastar
+|faint|p2a: Porygon-Z
+|
+|callback|decision
+|
+|switch|p1a: Zapdos|Zapdos|290\/322
+|switch|p2a: Umbreon|Umbreon, F|394\/394
+|-ability|p1a: Zapdos|Pressure
+|turn|14
+|callback|decision
+|
+|switch|p1a: Umbreon|Umbreon, F|361\/394
+|move|p2a: Umbreon|Wish|p2a: Umbreon
+|
+|-heal|p1a: Umbreon|385\/394|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|switch|p2a: Mew|Mew|197\/404
+|move|p1a: Umbreon|Heal Bell|p1a: Umbreon
+|-cureteam|p1a: Umbreon|[from] move: HealBell
+|
+|-heal|p2a: Mew|394\/404|[from] move: Wish|[wisher] Umbreon
+|-heal|p1a: Umbreon|394\/394|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p1a: Hitmontop|Hitmontop, M|304\/304
+|-ability|p1a: Hitmontop|Intimidate|[of] p2a: Mew
+|-unboost|p2a: Mew|atk|1
+|move|p2a: Mew|Light Screen|p2a: Mew
+|-sidestart|p2: The Smooze|move: Light Screen
+|
+|turn|17
+|callback|decision
+|
+|move|p2a: Mew|Taunt|p1a: Hitmontop
+|-start|p1a: Hitmontop|move: Taunt
+|cant|p1a: Hitmontop|move: Taunt|Toxic
+|
+|turn|18
+|callback|decision
+|
+|switch|p1a: Zapdos|Zapdos|290\/322
+|-ability|p1a: Zapdos|Pressure
+|move|p2a: Mew|Reflect|p2a: Mew
+|-sidestart|p2: The Smooze|Reflect
+|
+|turn|19
+|callback|decision
+|
+|switch|p2a: Nidoking|Nidoking, M|303\/303
+|move|p1a: Zapdos|Heat Wave|p2a: Nidoking
+|-damage|p2a: Nidoking|208\/303
+|-damage|p1a: Zapdos|258\/322|[from] item: Life Orb
+|
+|turn|20
+|callback|decision
+|
+|switch|p1a: Umbreon|Umbreon, F|394\/394
+|move|p2a: Nidoking|Ice Beam|p1a: Umbreon
+|-damage|p1a: Umbreon|297\/394
+|
+|-heal|p1a: Umbreon|321\/394|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|switch|p2a: Venomoth|Venomoth, M|192\/343
+|switch|p1a: Zapdos|Zapdos|258\/322
+|-ability|p1a: Zapdos|Pressure
+|
+|-heal|p2a: Venomoth|213\/343|[from] item: Black Sludge
+|turn|22
+|callback|decision
+|
+|move|p1a: Zapdos|Heat Wave|p2a: Venomoth
+|-supereffective|p2a: Venomoth
+|-damage|p2a: Venomoth|19\/343
+|-damage|p1a: Zapdos|226\/322|[from] item: Life Orb
+|move|p2a: Venomoth|Quiver Dance|p2a: Venomoth
+|-boost|p2a: Venomoth|spa|1
+|-boost|p2a: Venomoth|spd|1
+|-boost|p2a: Venomoth|spe|1
+|
+|-heal|p2a: Venomoth|40\/343|[from] item: Black Sludge
+|turn|23
+|callback|decision
+|
+|move|p2a: Venomoth|Sleep Powder|p1a: Zapdos
+|-status|p1a: Zapdos|slp
+|cant|p1a: Zapdos|slp
+|
+|-heal|p2a: Venomoth|61\/343|[from] item: Black Sludge
+|-sideend|p2: The Smooze|move: Light Screen
+|turn|24
+|callback|decision
+|
+|move|p2a: Venomoth|Quiver Dance|p2a: Venomoth
+|-boost|p2a: Venomoth|spa|1
+|-boost|p2a: Venomoth|spd|1
+|-boost|p2a: Venomoth|spe|1
+|cant|p1a: Zapdos|slp
+|
+|-heal|p2a: Venomoth|82\/343|[from] item: Black Sludge
+|turn|25
+|callback|decision
+|
+|move|p2a: Venomoth|Baton Pass|p2a: Venomoth
+|callback|decision
+|
+|switch|p2a: Nidoking|Nidoking, M|208\/303
+|-curestatus|p1a: Zapdos|slp
+|move|p1a: Zapdos|Hidden Power|p2a: Nidoking
+|-supereffective|p2a: Nidoking
+|-damage|p2a: Nidoking|68\/303
+|-damage|p1a: Zapdos|194\/322|[from] item: Life Orb
+|
+|-sideend|p2: The Smooze|Reflect
+|turn|26
+|callback|decision
+|
+|switch|p1a: Hitmontop|Hitmontop, M|304\/304
+|-ability|p1a: Hitmontop|Intimidate|[of] p2a: Nidoking
+|-unboost|p2a: Nidoking|atk|1
+|move|p2a: Nidoking|Sludge Wave|p1a: Hitmontop
+|-damage|p1a: Hitmontop|0 fnt
+|faint|p1a: Hitmontop
+|
+|callback|decision
+|
+|switch|p1a: Umbreon|Umbreon, F|321\/394
+|turn|27
+|callback|decision
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Nidoking|Sludge Wave|p1a: Umbreon
+|-activate|p1a: Umbreon|Protect
+|
+|-heal|p1a: Umbreon|345\/394|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|move|p2a: Nidoking|Sludge Wave|p1a: Umbreon
+|-damage|p1a: Umbreon|80\/394
+|move|p1a: Umbreon|Foul Play|p2a: Nidoking
+|-damage|p2a: Nidoking|0 fnt
+|faint|p2a: Nidoking
+|
+|-heal|p1a: Umbreon|104\/394|[from] item: Leftovers
+|callback|decision
+|chat|EchoDjinn|love you umbreon
+|
+|switch|p2a: Mew|Mew|394\/404
+|turn|29
+|callback|decision
+|chat|EchoDjinn|tank all the things
+|
+|move|p2a: Mew|Taunt|p1a: Umbreon
+|-start|p1a: Umbreon|move: Taunt
+|cant|p1a: Umbreon|move: Taunt|Wish
+|
+|-heal|p1a: Umbreon|128\/394|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|move|p2a: Mew|Light Screen|p2a: Mew
+|-sidestart|p2: The Smooze|move: Light Screen
+|move|p1a: Umbreon|Foul Play|p2a: Mew
+|-supereffective|p2a: Mew
+|-damage|p2a: Mew|236\/404
+|
+|-heal|p1a: Umbreon|152\/394|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|move|p2a: Mew|Reflect|p2a: Mew
+|-sidestart|p2: The Smooze|Reflect
+|move|p1a: Umbreon|Foul Play|p2a: Mew
+|-supereffective|p2a: Mew
+|-damage|p2a: Mew|152\/404
+|
+|-heal|p1a: Umbreon|176\/394|[from] item: Leftovers
+|-end|p1a: Umbreon|move: Taunt
+|turn|32
+|callback|decision
+|
+|move|p2a: Mew|Taunt|p1a: Umbreon
+|-start|p1a: Umbreon|move: Taunt
+|move|p1a: Umbreon|Foul Play|p2a: Mew
+|-supereffective|p2a: Mew
+|-damage|p2a: Mew|80\/404
+|
+|-heal|p1a: Umbreon|200\/394|[from] item: Leftovers
+|turn|33
+|callback|decision
+|
+|switch|p2a: Venomoth|Venomoth, M|82\/343
+|switch|p1a: Zapdos|Zapdos|194\/322
+|-ability|p1a: Zapdos|Pressure
+|
+|-heal|p2a: Venomoth|103\/343|[from] item: Black Sludge
+|turn|34
+|callback|decision
+|
+|move|p1a: Zapdos|Heat Wave|p2a: Venomoth
+|-miss|p1a: Zapdos|p2a: Venomoth
+|move|p2a: Venomoth|Sleep Powder|p1a: Zapdos|[miss]
+|-miss|p2a: Venomoth|p1a: Zapdos
+|
+|-heal|p2a: Venomoth|124\/343|[from] item: Black Sludge
+|turn|35
+|callback|decision
+|chat|The Smooze|oooooo
+|
+|move|p1a: Zapdos|Heat Wave|p2a: Venomoth
+|-supereffective|p2a: Venomoth
+|-damage|p2a: Venomoth|0 fnt
+|-damage|p1a: Zapdos|162\/322|[from] item: Life Orb
+|faint|p2a: Venomoth
+|
+|callback|decision
+|chat|EchoDjinn|nice
+|
+|switch|p2a: Empoleon|Empoleon, F|309\/309
+|turn|36
+|callback|decision
+|
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|322\/322
+|move|p2a: Empoleon|Ice Beam|p1a: Zapdos
+|-damage|p1a: Zapdos|152\/322
+|-damage|p2a: Empoleon|279\/309|[from] item: Life Orb
+|
+|turn|37
+|callback|decision
+|
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|313\/322
+|move|p2a: Empoleon|Surf|p1a: Zapdos
+|-damage|p1a: Zapdos|67\/322
+|-damage|p2a: Empoleon|249\/309|[from] item: Life Orb
+|
+|-sideend|p2: The Smooze|move: Light Screen
+|turn|38
+|callback|decision
+|
+|move|p1a: Zapdos|Thunderbolt|p2a: Empoleon
+|-crit|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|0 fnt
+|-damage|p1a: Zapdos|35\/322|[from] item: Life Orb
+|faint|p2a: Empoleon
+|
+|-sideend|p2: The Smooze|Reflect
+|callback|decision
+|chat|EchoDjinn|gg
+|chat|The Smooze|gg
+|-message|The Smooze forfeited.
+|
+|win|EchoDjinn
+|raw|Ladder updating...
+|leave|The Smooze
+|player|p2
+|raw|EchoDjinn's rating: 1814 &rarr; <strong>1817<\/strong><br \/>(+3 for winning)
+|raw|The Smooze's rating: 1633 &rarr; <strong>1629<\/strong><br \/>(-4 for losing)
+|chat|EchoDjinn|this was a very good gae

@@ -1,0 +1,2281 @@
+|join|Ruby Heart
+|join|MKBO
+|player|p1|Ruby Heart|129
+|player|p2|MKBO|278
+|gametype|singles
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Cofagrigus, M
+|poke|p1|Absol, F
+|poke|p1|Metagross
+|poke|p1|Gastrodon, M
+|poke|p1|Haxorus, M, shiny
+|poke|p1|Togetic, M
+|poke|p2|Darmanitan, F
+|poke|p2|Amoonguss, M
+|poke|p2|Slowbro, M
+|poke|p2|Tyrantrum, M
+|poke|p2|Machamp, M
+|poke|p2|Snorlax, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|join|ShyGuyGengar
+|join|DTF Like Caillou
+|
+|start
+|switch|p1a: Blaxorus|Haxorus, M, shiny|294\/294
+|switch|p2a: Darmanitan|Darmanitan, F|352\/352
+|-ability|p1a: Blaxorus|Mold Breaker
+|turn|1
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|391\/391
+|move|p1a: Blaxorus|Dragon Dance|p1a: Blaxorus
+|-boost|p1a: Blaxorus|atk|1
+|-boost|p1a: Blaxorus|spe|1
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Blaxorus|Outrage|p2a: Slowbro
+|-damage|p2a: Slowbro|124\/391
+|move|p2a: Slowbro|Toxic|p1a: Blaxorus
+|-status|p1a: Blaxorus|tox
+|-enditem|p1a: Blaxorus|Lum Berry|[eat]
+|-curestatus|p1a: Blaxorus|tox
+|
+|-heal|p2a: Slowbro|148\/391|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p2a: Tyrantrum|Tyrantrum, M|368\/368
+|move|p1a: Blaxorus|Outrage|p2a: Tyrantrum
+|-supereffective|p2a: Tyrantrum
+|-damage|p2a: Tyrantrum|0 fnt
+|faint|p2a: Tyrantrum
+|
+|-end|p1a: Blaxorus|rampage
+|-start|p1a: Blaxorus|confusion
+|callback|decision
+|
+|switch|p2a: Darmanitan|Darmanitan, F|352\/352
+|turn|4
+|callback|decision
+|
+|-activate|p1a: Blaxorus|confusion
+|-damage|p1a: Blaxorus|192\/294|[from] confusion
+|move|p2a: Darmanitan|U-turn|p1a: Blaxorus
+|-damage|p1a: Blaxorus|84\/294
+|callback|decision
+|
+|switch|p2a: Machamp|Machamp, M|379\/379
+|
+|turn|5
+|callback|decision
+|
+|move|p2a: Machamp|Bullet Punch|p1a: Blaxorus
+|-crit|p1a: Blaxorus
+|-damage|p1a: Blaxorus|0 fnt
+|faint|p1a: Blaxorus
+|
+|callback|decision
+|
+|switch|p1a: Oracle|Absol, F|271\/271
+|turn|6
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|278\/391
+|-formechange|p1a: Oracle|Absol-Mega
+|message|Absol has Mega Evolved into Mega Absol!
+|move|p1a: Oracle|Play Rough|p2a: Slowbro
+|-damage|p2a: Slowbro|190\/391
+|-unboost|p2a: Slowbro|atk|1
+|
+|-heal|p2a: Slowbro|214\/391|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p1a: Oracle|Night Slash|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|10\/391
+|move|p2a: Slowbro|Slack Off|p2a: Slowbro
+|-heal|p2a: Slowbro|206\/391
+|
+|-heal|p2a: Slowbro|230\/391|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p1a: Oracle|Night Slash|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|32\/391
+|move|p2a: Slowbro|Slack Off|p2a: Slowbro
+|-heal|p2a: Slowbro|228\/391
+|
+|-heal|p2a: Slowbro|252\/391|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p1a: Oracle|Night Slash|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|52\/391
+|move|p2a: Slowbro|Slack Off|p2a: Slowbro
+|-heal|p2a: Slowbro|248\/391
+|
+|-heal|p2a: Slowbro|272\/391|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p2a: Machamp|Machamp, M|379\/379
+|move|p1a: Oracle|Night Slash|p2a: Machamp
+|-resisted|p2a: Machamp
+|-damage|p2a: Machamp|297\/379
+|
+|turn|11
+|callback|decision
+|
+|switch|p1a: Man in Gauze|Cofagrigus, M|319\/319
+|switch|p2a: Slowbro|Slowbro, M|391\/391
+|
+|turn|12
+|callback|decision
+|
+|move|p2a: Slowbro|Toxic|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|tox
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Slowbro
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|
+|-damage|p1a: Man in Gauze|300\/319 tox|[from] psn
+|turn|13
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-sideend|p2: MKBO|move: Toxic Spikes|[of] p2a: Amoonguss
+|move|p1a: Man in Gauze|Shadow Ball|p2a: Amoonguss
+|-damage|p2a: Amoonguss|362\/432
+|
+|-heal|p2a: Amoonguss|389\/432|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|319\/319 tox|[from] item: Leftovers
+|-damage|p1a: Man in Gauze|281\/319 tox|[from] psn
+|turn|14
+|callback|decision
+|
+|move|p2a: Amoonguss|Giga Drain|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|205\/319 tox
+|-heal|p2a: Amoonguss|427\/432|[from] drain|[of] p1a: Man in Gauze
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Amoonguss
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|
+|-heal|p1a: Man in Gauze|224\/319 tox|[from] item: Leftovers
+|-heal|p2a: Amoonguss|432\/432|[from] item: Leftovers
+|-damage|p1a: Man in Gauze|167\/319 tox|[from] psn
+|turn|15
+|callback|decision
+|
+|move|p2a: Amoonguss|Giga Drain|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|92\/319 tox
+|move|p1a: Man in Gauze|Rest|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|slp
+|-heal|p1a: Man in Gauze|319\/319 slp|[silent]
+|-status|p1a: Man in Gauze|slp|[from] move: Rest
+|
+|turn|16
+|callback|decision
+|
+|switch|p1a: Wilhelm|Metagross|302\/302
+|-item|p1a: Wilhelm|Air Balloon
+|move|p2a: Amoonguss|Giga Drain|p1a: Wilhelm
+|-resisted|p1a: Wilhelm
+|-damage|p1a: Wilhelm|263\/302
+|-enditem|p1a: Wilhelm|Air Balloon
+|
+|turn|17
+|callback|decision
+|
+|move|p1a: Wilhelm|Ice Punch|p2a: Amoonguss
+|-supereffective|p2a: Amoonguss
+|-damage|p2a: Amoonguss|154\/432
+|move|p2a: Amoonguss|Spore|p1a: Wilhelm
+|-status|p1a: Wilhelm|slp
+|
+|-heal|p2a: Amoonguss|181\/432|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|391\/391
+|-status|p2a: Slowbro|psn
+|cant|p1a: Wilhelm|slp
+|
+|-damage|p2a: Slowbro|343\/391 psn|[from] psn
+|turn|19
+|callback|decision
+|
+|switch|p1a: Eggbert|Togetic, M|313\/313
+|move|p2a: Slowbro|Flamethrower|p1a: Eggbert
+|-damage|p1a: Eggbert|281\/313
+|
+|-heal|p2a: Slowbro|367\/391 psn|[from] item: Leftovers
+|-damage|p2a: Slowbro|319\/391 psn|[from] psn
+|turn|20
+|callback|decision
+|
+|move|p1a: Eggbert|Heal Bell|p1a: Eggbert
+|-cureteam|p1a: Eggbert|[from] move: HealBell
+|move|p2a: Slowbro|Toxic|p1a: Eggbert
+|-status|p1a: Eggbert|tox
+|
+|-heal|p2a: Slowbro|343\/391 psn|[from] item: Leftovers
+|-damage|p1a: Eggbert|262\/313 tox|[from] psn
+|-damage|p2a: Slowbro|295\/391 psn|[from] psn
+|turn|21
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, M|524\/524
+|-status|p2a: Snorlax|psn
+|move|p1a: Eggbert|Dazzling Gleam|p2a: Snorlax
+|-damage|p2a: Snorlax|473\/524 psn
+|
+|-heal|p2a: Snorlax|505\/524 psn|[from] item: Leftovers
+|-damage|p1a: Eggbert|224\/313 tox|[from] psn
+|-damage|p2a: Snorlax|440\/524 psn|[from] psn
+|turn|22
+|callback|decision
+|
+|switch|p1a: Wilhelm|Metagross|263\/302
+|move|p2a: Snorlax|Body Slam|p1a: Wilhelm
+|-resisted|p1a: Wilhelm
+|-damage|p1a: Wilhelm|220\/302
+|-status|p1a: Wilhelm|par
+|
+|-heal|p2a: Snorlax|472\/524 psn|[from] item: Leftovers
+|-damage|p2a: Snorlax|407\/524 psn|[from] psn
+|turn|23
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|391\/391 psn
+|move|p1a: Wilhelm|Meteor Mash|p2a: Slowbro
+|-resisted|p2a: Slowbro
+|-damage|p2a: Slowbro|325\/391 psn
+|
+|-heal|p2a: Slowbro|349\/391 psn|[from] item: Leftovers
+|-damage|p2a: Slowbro|301\/391 psn|[from] psn
+|turn|24
+|callback|decision
+|
+|switch|p1a: Man in Gauze|Cofagrigus, M|319\/319
+|move|p2a: Slowbro|Flamethrower|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|248\/319
+|
+|-heal|p2a: Slowbro|325\/391 psn|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|267\/319|[from] item: Leftovers
+|-damage|p2a: Slowbro|277\/391 psn|[from] psn
+|turn|25
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|325\/432
+|-sideend|p2: MKBO|move: Toxic Spikes|[of] p2a: Amoonguss
+|move|p1a: Man in Gauze|Shadow Ball|p2a: Amoonguss
+|-damage|p2a: Amoonguss|247\/432
+|
+|-heal|p2a: Amoonguss|274\/432|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|286\/319|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|switch|p1a: Wilhelm|Metagross|220\/302 par
+|switch|p2a: Darmanitan|Darmanitan, F|352\/352
+|
+|turn|27
+|callback|decision
+|
+|switch|p1a: Cousin Boneless|Gastrodon, M|405\/405
+|move|p2a: Darmanitan|Flare Blitz|p1a: Cousin Boneless
+|-resisted|p1a: Cousin Boneless
+|-damage|p1a: Cousin Boneless|209\/405
+|-damage|p2a: Darmanitan|287\/352|[from] recoil|[of] p1a: Cousin Boneless
+|
+|turn|28
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|418\/432
+|move|p1a: Cousin Boneless|Recover|p1a: Cousin Boneless
+|-heal|p1a: Cousin Boneless|405\/405
+|
+|-heal|p2a: Amoonguss|432\/432|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|switch|p1a: Man in Gauze|Cofagrigus, M|286\/319
+|move|p2a: Amoonguss|Spore|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|305\/319 slp|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|switch|p2a: Darmanitan|Darmanitan, F|287\/352
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|319\/319 slp|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|move|p2a: Darmanitan|U-turn|p1a: Man in Gauze
+|-crit|p1a: Man in Gauze
+|-resisted|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|278\/319 slp
+|-ability|p2a: Darmanitan|Mummy|[from] Mummy
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|297\/319 slp|[from] item: Leftovers
+|turn|32
+|callback|decision
+|
+|cant|p1a: Man in Gauze|slp
+|move|p2a: Amoonguss|Giga Drain|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|219\/319 slp
+|
+|-heal|p1a: Man in Gauze|238\/319 slp|[from] item: Leftovers
+|turn|33
+|callback|decision
+|
+|move|p2a: Amoonguss|Giga Drain|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|171\/319 slp
+|-curestatus|p1a: Man in Gauze|slp
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Amoonguss
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|
+|-heal|p1a: Man in Gauze|190\/319|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|switch|p1a: Oracle|Absol, F|271\/271
+|-formechange|p1a: Oracle|Absol-Mega
+|move|p2a: Amoonguss|Giga Drain|p1a: Oracle
+|-damage|p1a: Oracle|148\/271
+|
+|turn|35
+|callback|decision
+|
+|switch|p1a: Wilhelm|Metagross|220\/302 par
+|move|p2a: Amoonguss|Giga Drain|p1a: Wilhelm
+|-resisted|p1a: Wilhelm
+|-damage|p1a: Wilhelm|181\/302 par
+|
+|turn|36
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|391\/391 psn
+|move|p1a: Wilhelm|Meteor Mash|p2a: Slowbro
+|-resisted|p2a: Slowbro
+|-damage|p2a: Slowbro|325\/391 psn
+|
+|-heal|p2a: Slowbro|349\/391 psn|[from] item: Leftovers
+|-damage|p2a: Slowbro|301\/391 psn|[from] psn
+|turn|37
+|callback|decision
+|
+|switch|p1a: Eggbert|Togetic, M|224\/313 tox
+|move|p2a: Slowbro|Flamethrower|p1a: Eggbert
+|-damage|p1a: Eggbert|192\/313 tox
+|
+|-heal|p2a: Slowbro|325\/391 psn|[from] item: Leftovers
+|-damage|p1a: Eggbert|173\/313 tox|[from] psn
+|-damage|p2a: Slowbro|277\/391 psn|[from] psn
+|turn|38
+|callback|decision
+|
+|switch|p2a: Darmanitan|Darmanitan, F|287\/352
+|-status|p2a: Darmanitan|psn
+|move|p1a: Eggbert|Heal Bell|p1a: Eggbert
+|-cureteam|p1a: Eggbert|[from] move: HealBell
+|
+|-damage|p2a: Darmanitan|243\/352 psn|[from] psn
+|turn|39
+|callback|decision
+|
+|switch|p1a: Cousin Boneless|Gastrodon, M|405\/405
+|move|p2a: Darmanitan|Superpower|p1a: Cousin Boneless
+|-damage|p1a: Cousin Boneless|194\/405
+|-unboost|p2a: Darmanitan|atk|1
+|-unboost|p2a: Darmanitan|def|1
+|
+|-damage|p2a: Darmanitan|199\/352 psn|[from] psn
+|turn|40
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-sideend|p2: MKBO|move: Toxic Spikes|[of] p2a: Amoonguss
+|move|p1a: Cousin Boneless|Recover|p1a: Cousin Boneless
+|-heal|p1a: Cousin Boneless|397\/405
+|
+|turn|41
+|callback|decision
+|
+|switch|p1a: Wilhelm|Metagross|181\/302
+|move|p2a: Amoonguss|Giga Drain|p1a: Wilhelm
+|-resisted|p1a: Wilhelm
+|-damage|p1a: Wilhelm|140\/302
+|
+|turn|42
+|callback|decision
+|
+|switch|p1a: Oracle|Absol, F|148\/271
+|-formechange|p1a: Oracle|Absol-Mega
+|move|p2a: Amoonguss|Spore|p1a: Oracle
+|move|p1a: Oracle|Spore|p2a: Amoonguss|[from]Magic Bounce
+|-fail|p2a: Amoonguss
+|
+|turn|43
+|callback|decision
+|
+|move|p1a: Oracle|Night Slash|p2a: Amoonguss
+|-damage|p2a: Amoonguss|260\/432
+|move|p2a: Amoonguss|Giga Drain|p1a: Oracle
+|-damage|p1a: Oracle|28\/271
+|-heal|p2a: Amoonguss|320\/432|[from] drain|[of] p1a: Oracle
+|
+|-heal|p2a: Amoonguss|347\/432|[from] item: Leftovers
+|turn|44
+|callback|decision
+|
+|switch|p1a: Man in Gauze|Cofagrigus, M|190\/319
+|move|p2a: Amoonguss|Clear Smog|p1a: Man in Gauze
+|-resisted|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|166\/319
+|-clearboost|p1a: Man in Gauze
+|
+|-heal|p2a: Amoonguss|374\/432|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|185\/319|[from] item: Leftovers
+|turn|45
+|callback|decision
+|
+|move|p2a: Amoonguss|Giga Drain|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|110\/319
+|-heal|p2a: Amoonguss|412\/432|[from] drain|[of] p1a: Man in Gauze
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Amoonguss
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|
+|-heal|p2a: Amoonguss|432\/432|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|129\/319|[from] item: Leftovers
+|turn|46
+|callback|decision
+|
+|move|p1a: Man in Gauze|Rest|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|slp
+|-heal|p1a: Man in Gauze|319\/319 slp|[silent]
+|-status|p1a: Man in Gauze|slp|[from] move: Rest
+|move|p2a: Amoonguss|Giga Drain|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|250\/319 slp
+|
+|-heal|p1a: Man in Gauze|269\/319 slp|[from] item: Leftovers
+|turn|47
+|callback|decision
+|
+|switch|p2a: Darmanitan|Darmanitan, F|199\/352 psn
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|288\/319 slp|[from] item: Leftovers
+|-damage|p2a: Darmanitan|155\/352 psn|[from] psn
+|turn|48
+|callback|decision
+|
+|move|p2a: Darmanitan|Flare Blitz|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|123\/319 slp
+|-damage|p2a: Darmanitan|101\/352 psn|[from] recoil|[of] p1a: Man in Gauze
+|-ability|p2a: Darmanitan|Mummy|[from] Mummy
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|142\/319 slp|[from] item: Leftovers
+|-damage|p2a: Darmanitan|57\/352 psn|[from] psn
+|turn|49
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-sideend|p2: MKBO|move: Toxic Spikes|[of] p2a: Amoonguss
+|switch|p1a: Cousin Boneless|Gastrodon, M|397\/405
+|
+|turn|50
+|callback|decision
+|
+|switch|p1a: Wilhelm|Metagross|140\/302
+|switch|p2a: Machamp|Machamp, M|297\/379
+|
+|turn|51
+|callback|decision
+|
+|switch|p1a: Man in Gauze|Cofagrigus, M|142\/319 slp
+|move|p2a: Machamp|Dynamic Punch|p1a: Man in Gauze
+|-immune|p1a: Man in Gauze|[msg]
+|
+|-heal|p1a: Man in Gauze|161\/319 slp|[from] item: Leftovers
+|turn|52
+|callback|decision
+|
+|switch|p2a: Darmanitan|Darmanitan, F|57\/352 psn
+|-curestatus|p1a: Man in Gauze|slp
+|move|p1a: Man in Gauze|Rest|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|slp
+|-heal|p1a: Man in Gauze|319\/319 slp|[silent]
+|-status|p1a: Man in Gauze|slp|[from] move: Rest
+|
+|-damage|p2a: Darmanitan|13\/352 psn|[from] psn
+|turn|53
+|callback|decision
+|
+|switch|p1a: Cousin Boneless|Gastrodon, M|397\/405
+|move|p2a: Darmanitan|Flare Blitz|p1a: Cousin Boneless
+|-resisted|p1a: Cousin Boneless
+|-damage|p1a: Cousin Boneless|186\/405
+|-damage|p2a: Darmanitan|0 fnt|[from] recoil|[of] p1a: Cousin Boneless
+|faint|p2a: Darmanitan
+|
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|turn|54
+|callback|decision
+|chat|MKBO|this iss boring
+|
+|switch|p1a: Man in Gauze|Cofagrigus, M|319\/319 slp
+|move|p2a: Amoonguss|Spore|p1a: Man in Gauze
+|-fail|p1a: Man in Gauze|slp
+|
+|turn|55
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, M|407\/524 psn
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p2a: Snorlax|439\/524 psn|[from] item: Leftovers
+|-damage|p2a: Snorlax|374\/524 psn|[from] psn
+|turn|56
+|callback|decision
+|
+|switch|p1a: Eggbert|Togetic, M|173\/313
+|move|p2a: Snorlax|Earthquake|p1a: Eggbert
+|-immune|p1a: Eggbert|[msg]
+|
+|-heal|p2a: Snorlax|406\/524 psn|[from] item: Leftovers
+|-damage|p2a: Snorlax|341\/524 psn|[from] psn
+|turn|57
+|callback|decision
+|
+|move|p1a: Eggbert|Roost|p1a: Eggbert
+|-heal|p1a: Eggbert|313\/313
+|move|p2a: Snorlax|Body Slam|p1a: Eggbert
+|-damage|p1a: Eggbert|228\/313
+|-status|p1a: Eggbert|par
+|
+|-heal|p2a: Snorlax|373\/524 psn|[from] item: Leftovers
+|-damage|p2a: Snorlax|308\/524 psn|[from] psn
+|turn|58
+|callback|decision
+|
+|move|p2a: Snorlax|Body Slam|p1a: Eggbert
+|-crit|p1a: Eggbert
+|-damage|p1a: Eggbert|96\/313 par
+|cant|p1a: Eggbert|par
+|
+|-heal|p2a: Snorlax|340\/524 psn|[from] item: Leftovers
+|-damage|p2a: Snorlax|275\/524 psn|[from] psn
+|turn|59
+|callback|decision
+|
+|move|p2a: Snorlax|Body Slam|p1a: Eggbert
+|-damage|p1a: Eggbert|9\/313 par
+|cant|p1a: Eggbert|par
+|
+|-heal|p2a: Snorlax|307\/524 psn|[from] item: Leftovers
+|-damage|p2a: Snorlax|242\/524 psn|[from] psn
+|turn|60
+|callback|decision
+|chat|Ruby Heart|oh for...
+|
+|switch|p1a: Man in Gauze|Cofagrigus, M|319\/319 slp
+|move|p2a: Snorlax|Body Slam|p1a: Man in Gauze
+|-immune|p1a: Man in Gauze|[msg]
+|
+|-heal|p2a: Snorlax|274\/524 psn|[from] item: Leftovers
+|-damage|p2a: Snorlax|209\/524 psn|[from] psn
+|turn|61
+|callback|decision
+|
+|cant|p1a: Man in Gauze|slp
+|move|p2a: Snorlax|Earthquake|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|272\/319 slp
+|
+|-heal|p2a: Snorlax|241\/524 psn|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|291\/319 slp|[from] item: Leftovers
+|-damage|p2a: Snorlax|176\/524 psn|[from] psn
+|turn|62
+|callback|decision
+|
+|move|p2a: Snorlax|Rest|p2a: Snorlax
+|-status|p2a: Snorlax|slp
+|-heal|p2a: Snorlax|524\/524 slp|[silent]
+|-status|p2a: Snorlax|slp|[from] move: Rest
+|-curestatus|p1a: Man in Gauze|slp
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Snorlax
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|
+|-heal|p1a: Man in Gauze|310\/319|[from] item: Leftovers
+|turn|63
+|callback|decision
+|chat|DTF Like Caillou|bro
+|chat|DTF Like Caillou|do \/concede
+|
+|switch|p1a: Eggbert|Togetic, M|9\/313 par
+|cant|p2a: Snorlax|slp
+|move|p2a: Snorlax|Sleep Talk|p2a: Snorlax
+|move|p2a: Snorlax|Rest|p2a: Snorlax|[from]Sleep Talk
+|-fail|p2a: Snorlax
+|
+|turn|64
+|callback|decision
+|
+|cant|p2a: Snorlax|slp
+|move|p2a: Snorlax|Sleep Talk|p2a: Snorlax
+|move|p2a: Snorlax|Body Slam|p1a: Eggbert|[from]Sleep Talk
+|-damage|p1a: Eggbert|0 fnt
+|faint|p1a: Eggbert
+|
+|callback|decision
+|chat|Ruby Heart|eugh, i can't even get compensation
+|
+|switch|p1a: Cousin Boneless|Gastrodon, M|186\/405
+|turn|65
+|callback|decision
+|
+|move|p1a: Cousin Boneless|Recover|p1a: Cousin Boneless
+|-heal|p1a: Cousin Boneless|389\/405
+|-curestatus|p2a: Snorlax|slp
+|move|p2a: Snorlax|Body Slam|p1a: Cousin Boneless
+|-damage|p1a: Cousin Boneless|247\/405
+|
+|turn|66
+|callback|decision
+|
+|switch|p1a: Man in Gauze|Cofagrigus, M|310\/319
+|move|p2a: Snorlax|Body Slam|p1a: Man in Gauze
+|-immune|p1a: Man in Gauze|[msg]
+|
+|-heal|p1a: Man in Gauze|319\/319|[from] item: Leftovers
+|turn|67
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-sideend|p2: MKBO|move: Toxic Spikes|[of] p2a: Amoonguss
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Amoonguss
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|
+|turn|68
+|callback|decision
+|
+|move|p2a: Amoonguss|Giga Drain|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|243\/319
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Amoonguss
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|
+|-heal|p1a: Man in Gauze|262\/319|[from] item: Leftovers
+|turn|69
+|callback|decision
+|
+|move|p2a: Amoonguss|Giga Drain|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|187\/319
+|move|p1a: Man in Gauze|Shadow Ball|p2a: Amoonguss
+|-damage|p2a: Amoonguss|363\/432
+|
+|-heal|p2a: Amoonguss|390\/432|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|206\/319|[from] item: Leftovers
+|turn|70
+|callback|decision
+|
+|move|p1a: Man in Gauze|Rest|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|slp
+|-heal|p1a: Man in Gauze|319\/319 slp|[silent]
+|-status|p1a: Man in Gauze|slp|[from] move: Rest
+|move|p2a: Amoonguss|Spore|p1a: Man in Gauze
+|-fail|p1a: Man in Gauze|slp
+|
+|-heal|p2a: Amoonguss|417\/432|[from] item: Leftovers
+|turn|71
+|callback|decision
+|
+|move|p2a: Amoonguss|Giga Drain|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|241\/319 slp
+|-heal|p2a: Amoonguss|432\/432|[from] drain|[of] p1a: Man in Gauze
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|260\/319 slp|[from] item: Leftovers
+|turn|72
+|callback|decision
+|
+|move|p2a: Amoonguss|Giga Drain|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|188\/319 slp
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|207\/319 slp|[from] item: Leftovers
+|turn|73
+|callback|decision
+|
+|-curestatus|p1a: Man in Gauze|slp
+|move|p1a: Man in Gauze|Rest|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|slp
+|-heal|p1a: Man in Gauze|319\/319 slp|[silent]
+|-status|p1a: Man in Gauze|slp|[from] move: Rest
+|move|p2a: Amoonguss|Giga Drain|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|241\/319 slp
+|
+|-heal|p1a: Man in Gauze|260\/319 slp|[from] item: Leftovers
+|turn|74
+|callback|decision
+|
+|cant|p1a: Man in Gauze|slp
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|223\/319 slp
+|
+|-heal|p1a: Man in Gauze|242\/319 slp|[from] item: Leftovers
+|turn|75
+|callback|decision
+|
+|cant|p1a: Man in Gauze|slp
+|move|p2a: Amoonguss|Clear Smog|p1a: Man in Gauze
+|-resisted|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|215\/319 slp
+|-clearboost|p1a: Man in Gauze
+|
+|-heal|p1a: Man in Gauze|234\/319 slp|[from] item: Leftovers
+|turn|76
+|callback|decision
+|
+|-curestatus|p1a: Man in Gauze|slp
+|move|p1a: Man in Gauze|Rest|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|slp
+|-heal|p1a: Man in Gauze|319\/319 slp|[silent]
+|-status|p1a: Man in Gauze|slp|[from] move: Rest
+|move|p2a: Amoonguss|Clear Smog|p1a: Man in Gauze
+|-resisted|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|296\/319 slp
+|-clearboost|p1a: Man in Gauze
+|
+|-heal|p1a: Man in Gauze|315\/319 slp|[from] item: Leftovers
+|turn|77
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|391\/391 psn
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|319\/319 slp|[from] item: Leftovers
+|-damage|p2a: Slowbro|343\/391 psn|[from] psn
+|turn|78
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-sideend|p2: MKBO|move: Toxic Spikes|[of] p2a: Amoonguss
+|cant|p1a: Man in Gauze|slp
+|
+|turn|79
+|callback|decision
+|chat|ShyGuyGengar|the stall is real
+|chat|ShyGuyGengar|xD
+|
+|move|p2a: Amoonguss|Spore|p1a: Man in Gauze
+|-fail|p1a: Man in Gauze|slp
+|-curestatus|p1a: Man in Gauze|slp
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Amoonguss
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|
+|turn|80
+|callback|decision
+|
+|move|p2a: Amoonguss|Spore|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|slp
+|cant|p1a: Man in Gauze|slp
+|
+|turn|81
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|391\/391 psn
+|cant|p1a: Man in Gauze|slp
+|
+|-damage|p2a: Slowbro|343\/391 psn|[from] psn
+|turn|82
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-sideend|p2: MKBO|move: Toxic Spikes|[of] p2a: Amoonguss
+|cant|p1a: Man in Gauze|slp
+|
+|turn|83
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, M|524\/524
+|-curestatus|p1a: Man in Gauze|slp
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Snorlax
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|
+|turn|84
+|callback|decision
+|
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Snorlax
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|move|p2a: Snorlax|Earthquake|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|271\/319
+|
+|-heal|p1a: Man in Gauze|290\/319|[from] item: Leftovers
+|turn|85
+|callback|decision
+|
+|move|p2a: Snorlax|Earthquake|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|240\/319
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|
+|-heal|p1a: Man in Gauze|259\/319|[from] item: Leftovers
+|turn|86
+|callback|decision
+|
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|move|p2a: Snorlax|Earthquake|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|208\/319
+|
+|-heal|p1a: Man in Gauze|227\/319|[from] item: Leftovers
+|turn|87
+|callback|decision
+|
+|move|p2a: Snorlax|Earthquake|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|182\/319
+|move|p1a: Man in Gauze|Rest|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|slp
+|-heal|p1a: Man in Gauze|319\/319 slp|[silent]
+|-status|p1a: Man in Gauze|slp|[from] move: Rest
+|
+|turn|88
+|callback|decision
+|
+|cant|p1a: Man in Gauze|slp
+|move|p2a: Snorlax|Earthquake|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|270\/319 slp
+|
+|-heal|p1a: Man in Gauze|289\/319 slp|[from] item: Leftovers
+|turn|89
+|callback|decision
+|chat|MKBO|-_-
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-sideend|p2: MKBO|move: Toxic Spikes|[of] p2a: Amoonguss
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|308\/319 slp|[from] item: Leftovers
+|turn|90
+|callback|decision
+|
+|move|p2a: Amoonguss|Spore|p1a: Man in Gauze
+|-fail|p1a: Man in Gauze|slp
+|-curestatus|p1a: Man in Gauze|slp
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Amoonguss
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|
+|-heal|p1a: Man in Gauze|319\/319|[from] item: Leftovers
+|turn|91
+|callback|decision
+|chat|MKBO|Ruby I think 
+|chat|MKBO|nvm
+|
+|move|p1a: Man in Gauze|Shadow Ball|p2a: Amoonguss
+|-damage|p2a: Amoonguss|351\/432
+|move|p2a: Amoonguss|Clear Smog|p1a: Man in Gauze
+|-resisted|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|295\/319
+|-clearboost|p1a: Man in Gauze
+|
+|-heal|p2a: Amoonguss|378\/432|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|314\/319|[from] item: Leftovers
+|turn|92
+|callback|decision
+|chat|Ruby Heart|hm?
+|chat|DTF Like Caillou|stall
+|chat|DTF Like Caillou|Fucking
+|chat|DTF Like Caillou|stall
+|chat|DTF Like Caillou|-_-
+|chat|Ruby Heart|at this point, it's all I can even do
+|chat|Ruby Heart|ice punch doesn't knock out
+|chat|ShyGuyGengar|u know....
+|chat|Ruby Heart|absol has deceptively low power
+|chat|ShyGuyGengar|forfeiting reduces the amount of points lossed
+|chat|ShyGuyGengar|so...
+|chat|Ruby Heart|gastrodon gets bodied
+|chat|ShyGuyGengar|just a thought
+|chat|ShyGuyGengar|lol
+|chat|DTF Like Caillou|or
+|chat|DTF Like Caillou|.\/concede
+|
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Amoonguss
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|move|p2a: Amoonguss|Clear Smog|p1a: Man in Gauze
+|-resisted|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|287\/319
+|-clearboost|p1a: Man in Gauze
+|
+|-heal|p2a: Amoonguss|405\/432|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|306\/319|[from] item: Leftovers
+|turn|93
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, M|524\/524
+|-status|p2a: Snorlax|tox
+|move|p1a: Man in Gauze|Shadow Ball|p2a: Snorlax
+|-immune|p2a: Snorlax|[msg]
+|
+|-heal|p1a: Man in Gauze|319\/319|[from] item: Leftovers
+|-damage|p2a: Snorlax|492\/524 tox|[from] psn
+|turn|94
+|callback|decision
+|chat|MKBO|bro
+|chat|MKBO|I have a health pokemon then you soo
+|chat|MKBO|healthy*
+|chat|ShyGuyGengar|logic
+|chat|ShyGuyGengar|lol
+|chat|DTF Like Caillou|more healthy
+|chat|MKBO|but i think you need to forfeit 
+|
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|move|p2a: Snorlax|Earthquake|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|273\/319
+|
+|-heal|p1a: Man in Gauze|292\/319|[from] item: Leftovers
+|-heal|p2a: Snorlax|524\/524 tox|[from] item: Leftovers
+|-damage|p2a: Snorlax|460\/524 tox|[from] psn
+|turn|95
+|callback|decision
+|chat|Ruby Heart|don't mindgame me
+|chat|MKBO|where not
+|chat|MKBO|we just want to stop the stall
+|chat|DTF Like Caillou|.\/concede
+|chat|Ruby Heart|even then, i'm more of a "finish what you started" guy
+|
+|move|p2a: Snorlax|Earthquake|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|244\/319
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|
+|-heal|p2a: Snorlax|492\/524 tox|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|263\/319|[from] item: Leftovers
+|-damage|p2a: Snorlax|396\/524 tox|[from] psn
+|turn|96
+|callback|decision
+|chat|DTF Like Caillou|^an opiton
+|
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Snorlax
+|-fail|p2a: Snorlax
+|move|p2a: Snorlax|Earthquake|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|217\/319
+|
+|-heal|p2a: Snorlax|428\/524 tox|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|236\/319|[from] item: Leftovers
+|-damage|p2a: Snorlax|300\/524 tox|[from] psn
+|turn|97
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-sideend|p2: MKBO|move: Toxic Spikes|[of] p2a: Amoonguss
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Amoonguss
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|
+|-heal|p1a: Man in Gauze|255\/319|[from] item: Leftovers
+|turn|98
+|callback|decision
+|
+|move|p2a: Amoonguss|Spore|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|slp
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|274\/319 slp|[from] item: Leftovers
+|turn|99
+|callback|decision
+|
+|cant|p1a: Man in Gauze|slp
+|move|p2a: Amoonguss|Clear Smog|p1a: Man in Gauze
+|-resisted|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|248\/319 slp
+|-clearboost|p1a: Man in Gauze
+|
+|-heal|p1a: Man in Gauze|267\/319 slp|[from] item: Leftovers
+|turn|100
+|callback|decision
+|chat|Ruby Heart|you know, the longer this thing's alseep, the greater chance i have of pulling this off
+|
+|switch|p2a: Snorlax|Snorlax, M|300\/524 tox
+|-curestatus|p1a: Man in Gauze|slp
+|move|p1a: Man in Gauze|Shadow Ball|p2a: Snorlax
+|-immune|p2a: Snorlax|[msg]
+|
+|-heal|p2a: Snorlax|332\/524 tox|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|286\/319|[from] item: Leftovers
+|-damage|p2a: Snorlax|300\/524 tox|[from] psn
+|turn|101
+|callback|decision
+|chat|ShyGuyGengar|i don't think so
+|
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Snorlax
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|move|p2a: Snorlax|Earthquake|p1a: Man in Gauze
+|-crit|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|213\/319
+|
+|-heal|p2a: Snorlax|332\/524 tox|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|232\/319|[from] item: Leftovers
+|-damage|p2a: Snorlax|268\/524 tox|[from] psn
+|turn|102
+|callback|decision
+|
+|move|p2a: Snorlax|Earthquake|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|185\/319
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|
+|-heal|p2a: Snorlax|300\/524 tox|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|204\/319|[from] item: Leftovers
+|-damage|p2a: Snorlax|204\/524 tox|[from] psn
+|turn|103
+|callback|decision
+|
+|move|p2a: Snorlax|Rest|p2a: Snorlax
+|-status|p2a: Snorlax|slp
+|-heal|p2a: Snorlax|524\/524 slp|[silent]
+|-status|p2a: Snorlax|slp|[from] move: Rest
+|move|p1a: Man in Gauze|Rest|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|slp
+|-heal|p1a: Man in Gauze|319\/319 slp|[silent]
+|-status|p1a: Man in Gauze|slp|[from] move: Rest
+|
+|turn|104
+|callback|decision
+|
+|cant|p2a: Snorlax|slp
+|move|p2a: Snorlax|Sleep Talk|p2a: Snorlax
+|move|p2a: Snorlax|Earthquake|p1a: Man in Gauze|[from]Sleep Talk
+|-damage|p1a: Man in Gauze|272\/319 slp
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|291\/319 slp|[from] item: Leftovers
+|turn|105
+|callback|decision
+|
+|cant|p2a: Snorlax|slp
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|310\/319 slp|[from] item: Leftovers
+|turn|106
+|callback|decision
+|chat|MKBO|dude
+|chat|MKBO|i just want to say
+|chat|MKBO|you know you lost the match
+|chat|Ruby Heart|then prove it
+|chat|MKBO|you have 4 un healthy pokemon
+|chat|Ruby Heart|finish what you started
+|chat|MKBO|ok
+|chat|ShyGuyGengar|ur not Naruto dude
+|chat|ShyGuyGengar|js
+|chat|MKBO|i can win
+|chat|MKBO|soo just forfeit 
+|chat|MKBO|man
+|chat|MKBO|plz
+|chat|MKBO|just do it
+|chat|MKBO|it's game
+|chat|MKBO|you lost
+|chat|MKBO|ok bro
+|
+|-curestatus|p1a: Man in Gauze|slp
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|-curestatus|p2a: Snorlax|slp
+|move|p2a: Snorlax|Earthquake|p1a: Man in Gauze
+|-crit|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|238\/319
+|
+|-heal|p1a: Man in Gauze|257\/319|[from] item: Leftovers
+|turn|107
+|callback|decision
+|
+|move|p2a: Snorlax|Earthquake|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|211\/319
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Snorlax
+|-fail|p2a: Snorlax
+|
+|-heal|p1a: Man in Gauze|230\/319|[from] item: Leftovers
+|turn|108
+|callback|decision
+|
+|move|p1a: Man in Gauze|Rest|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|slp
+|-heal|p1a: Man in Gauze|319\/319 slp|[silent]
+|-status|p1a: Man in Gauze|slp|[from] move: Rest
+|move|p2a: Snorlax|Earthquake|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|269\/319 slp
+|
+|-heal|p1a: Man in Gauze|288\/319 slp|[from] item: Leftovers
+|turn|109
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-sideend|p2: MKBO|move: Toxic Spikes|[of] p2a: Amoonguss
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|307\/319 slp|[from] item: Leftovers
+|turn|110
+|callback|decision
+|
+|cant|p1a: Man in Gauze|slp
+|move|p2a: Amoonguss|Clear Smog|p1a: Man in Gauze
+|-resisted|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|284\/319 slp
+|-clearboost|p1a: Man in Gauze
+|
+|-heal|p1a: Man in Gauze|303\/319 slp|[from] item: Leftovers
+|turn|111
+|callback|decision
+|chat|ShyGuyGengar|this is a song that never ends
+|
+|-curestatus|p1a: Man in Gauze|slp
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Amoonguss
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|262\/319
+|
+|-heal|p1a: Man in Gauze|281\/319|[from] item: Leftovers
+|turn|112
+|callback|decision
+|chat|ShyGuyGengar|and it will never end my friend
+|chat|MKBO|dude just switch
+|
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Amoonguss
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|move|p2a: Amoonguss|Spore|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|300\/319 slp|[from] item: Leftovers
+|turn|113
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, M|524\/524
+|-status|p2a: Snorlax|tox
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|319\/319 slp|[from] item: Leftovers
+|-damage|p2a: Snorlax|492\/524 tox|[from] psn
+|turn|114
+|callback|decision
+|
+|move|p2a: Snorlax|Earthquake|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|270\/319 slp
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|289\/319 slp|[from] item: Leftovers
+|-heal|p2a: Snorlax|524\/524 tox|[from] item: Leftovers
+|-damage|p2a: Snorlax|460\/524 tox|[from] psn
+|turn|115
+|callback|decision
+|
+|cant|p1a: Man in Gauze|slp
+|move|p2a: Snorlax|Body Slam|p1a: Man in Gauze
+|-immune|p1a: Man in Gauze|[msg]
+|
+|-heal|p2a: Snorlax|492\/524 tox|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|308\/319 slp|[from] item: Leftovers
+|-damage|p2a: Snorlax|396\/524 tox|[from] psn
+|turn|116
+|callback|decision
+|
+|-curestatus|p1a: Man in Gauze|slp
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|move|p2a: Snorlax|Rest|p2a: Snorlax
+|-status|p2a: Snorlax|slp
+|-heal|p2a: Snorlax|524\/524 slp|[silent]
+|-status|p2a: Snorlax|slp|[from] move: Rest
+|
+|-heal|p1a: Man in Gauze|319\/319|[from] item: Leftovers
+|turn|117
+|callback|decision
+|chat|MKBO|Ruby
+|
+|switch|p1a: Cousin Boneless|Gastrodon, M|247\/405
+|cant|p2a: Snorlax|slp
+|move|p2a: Snorlax|Sleep Talk|p2a: Snorlax
+|move|p2a: Snorlax|Body Slam|p1a: Cousin Boneless|[from]Sleep Talk
+|-damage|p1a: Cousin Boneless|121\/405
+|
+|turn|118
+|callback|decision
+|
+|move|p1a: Cousin Boneless|Recover|p1a: Cousin Boneless
+|-heal|p1a: Cousin Boneless|324\/405
+|cant|p2a: Snorlax|slp
+|move|p2a: Snorlax|Sleep Talk|p2a: Snorlax
+|move|p2a: Snorlax|Body Slam|p1a: Cousin Boneless|[from]Sleep Talk
+|-damage|p1a: Cousin Boneless|203\/405
+|
+|turn|119
+|callback|decision
+|
+|move|p1a: Cousin Boneless|Recover|p1a: Cousin Boneless
+|-heal|p1a: Cousin Boneless|405\/405
+|-curestatus|p2a: Snorlax|slp
+|move|p2a: Snorlax|Body Slam|p1a: Cousin Boneless
+|-damage|p1a: Cousin Boneless|266\/405
+|
+|turn|120
+|callback|decision
+|
+|switch|p1a: Man in Gauze|Cofagrigus, M|319\/319
+|move|p2a: Snorlax|Body Slam|p1a: Man in Gauze
+|-immune|p1a: Man in Gauze|[msg]
+|
+|turn|121
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-sideend|p2: MKBO|move: Toxic Spikes|[of] p2a: Amoonguss
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|
+|turn|122
+|callback|decision
+|
+|move|p2a: Amoonguss|Clear Smog|p1a: Man in Gauze
+|-resisted|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|293\/319
+|-clearboost|p1a: Man in Gauze
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Amoonguss
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|
+|-heal|p1a: Man in Gauze|312\/319|[from] item: Leftovers
+|turn|123
+|callback|decision
+|
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Amoonguss
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|move|p2a: Amoonguss|Clear Smog|p1a: Man in Gauze
+|-resisted|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|288\/319
+|-clearboost|p1a: Man in Gauze
+|
+|-heal|p1a: Man in Gauze|307\/319|[from] item: Leftovers
+|turn|124
+|callback|decision
+|
+|move|p2a: Amoonguss|Clear Smog|p1a: Man in Gauze
+|-resisted|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|281\/319
+|-clearboost|p1a: Man in Gauze
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|
+|-heal|p1a: Man in Gauze|300\/319|[from] item: Leftovers
+|turn|125
+|callback|decision
+|
+|move|p2a: Amoonguss|Clear Smog|p1a: Man in Gauze
+|-resisted|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|275\/319
+|-clearboost|p1a: Man in Gauze
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|
+|-heal|p1a: Man in Gauze|294\/319|[from] item: Leftovers
+|turn|126
+|callback|decision
+|
+|switch|p1a: Wilhelm|Metagross|140\/302
+|move|p2a: Amoonguss|Clear Smog|p1a: Wilhelm
+|-immune|p1a: Wilhelm|[msg]
+|
+|turn|127
+|callback|decision
+|chat|DTF Like Caillou|this should be illegal
+|
+|switch|p1a: Man in Gauze|Cofagrigus, M|294\/319
+|move|p2a: Amoonguss|Spore|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|313\/319 slp|[from] item: Leftovers
+|turn|128
+|callback|decision
+|chat|ShyGuyGengar|lol
+|
+|switch|p2a: Slowbro|Slowbro, M|391\/391 psn
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|319\/319 slp|[from] item: Leftovers
+|-damage|p2a: Slowbro|343\/391 psn|[from] psn
+|turn|129
+|callback|decision
+|
+|-curestatus|p1a: Man in Gauze|slp
+|move|p1a: Man in Gauze|Shadow Ball|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|143\/391 psn
+|move|p2a: Slowbro|Scald|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|237\/319
+|
+|-heal|p2a: Slowbro|167\/391 psn|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|256\/319|[from] item: Leftovers
+|-damage|p2a: Slowbro|119\/391 psn|[from] psn
+|turn|130
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-sideend|p2: MKBO|move: Toxic Spikes|[of] p2a: Amoonguss
+|move|p1a: Man in Gauze|Shadow Ball|p2a: Amoonguss
+|-damage|p2a: Amoonguss|356\/432
+|
+|-heal|p2a: Amoonguss|383\/432|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|275\/319|[from] item: Leftovers
+|turn|131
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, M|524\/524
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|
+|-heal|p1a: Man in Gauze|294\/319|[from] item: Leftovers
+|turn|132
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|
+|-heal|p1a: Man in Gauze|313\/319|[from] item: Leftovers
+|turn|133
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, M|524\/524
+|move|p1a: Man in Gauze|Rest|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|slp
+|-heal|p1a: Man in Gauze|319\/319 slp|[silent]
+|-status|p1a: Man in Gauze|slp|[from] move: Rest
+|
+|turn|134
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|cant|p1a: Man in Gauze|slp
+|
+|turn|135
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, M|524\/524
+|cant|p1a: Man in Gauze|slp
+|
+|turn|136
+|callback|decision
+|chat|DTF Like Caillou|i hope you know
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-curestatus|p1a: Man in Gauze|slp
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Amoonguss
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|
+|turn|137
+|callback|decision
+|chat|DTF Like Caillou|you made me hate cofagrigus
+|
+|switch|p2a: Snorlax|Snorlax, M|524\/524
+|-status|p2a: Snorlax|psn
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|
+|-damage|p2a: Snorlax|459\/524 psn|[from] psn
+|turn|138
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-sideend|p2: MKBO|move: Toxic Spikes|[of] p2a: Amoonguss
+|switch|p1a: Wilhelm|Metagross|140\/302
+|
+|turn|139
+|callback|decision
+|
+|switch|p1a: Man in Gauze|Cofagrigus, M|319\/319
+|switch|p2a: Slowbro|Slowbro, M|249\/391 psn
+|
+|-heal|p2a: Slowbro|273\/391 psn|[from] item: Leftovers
+|-damage|p2a: Slowbro|225\/391 psn|[from] psn
+|turn|140
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, M|459\/524 psn
+|switch|p1a: Wilhelm|Metagross|140\/302
+|
+|-heal|p2a: Snorlax|491\/524 psn|[from] item: Leftovers
+|-damage|p2a: Snorlax|426\/524 psn|[from] psn
+|turn|141
+|callback|decision
+|
+|move|p1a: Wilhelm|Meteor Mash|p2a: Snorlax
+|-damage|p2a: Snorlax|180\/524 psn
+|move|p2a: Snorlax|Body Slam|p1a: Wilhelm
+|-resisted|p1a: Wilhelm
+|-damage|p1a: Wilhelm|98\/302
+|
+|-heal|p2a: Snorlax|212\/524 psn|[from] item: Leftovers
+|-damage|p2a: Snorlax|147\/524 psn|[from] psn
+|turn|142
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|355\/391 psn
+|move|p1a: Wilhelm|Earthquake|p2a: Slowbro
+|-damage|p2a: Slowbro|267\/391 psn
+|
+|-heal|p2a: Slowbro|291\/391 psn|[from] item: Leftovers
+|-damage|p2a: Slowbro|243\/391 psn|[from] psn
+|turn|143
+|callback|decision
+|
+|switch|p1a: Cousin Boneless|Gastrodon, M|266\/405
+|move|p2a: Slowbro|Toxic|p1a: Cousin Boneless
+|-status|p1a: Cousin Boneless|tox
+|
+|-heal|p2a: Slowbro|267\/391 psn|[from] item: Leftovers
+|-damage|p1a: Cousin Boneless|241\/405 tox|[from] psn
+|-damage|p2a: Slowbro|219\/391 psn|[from] psn
+|turn|144
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, M|147\/524 psn
+|move|p1a: Cousin Boneless|Earth Power|p2a: Snorlax
+|-damage|p2a: Snorlax|38\/524 psn
+|
+|-heal|p2a: Snorlax|70\/524 psn|[from] item: Leftovers
+|-damage|p1a: Cousin Boneless|191\/405 tox|[from] psn
+|-damage|p2a: Snorlax|5\/524 psn|[from] psn
+|turn|145
+|callback|decision
+|
+|move|p1a: Cousin Boneless|Earth Power|p2a: Snorlax
+|-damage|p2a: Snorlax|0 fnt
+|faint|p2a: Snorlax
+|
+|-damage|p1a: Cousin Boneless|116\/405 tox|[from] psn
+|callback|decision
+|
+|switch|p2a: Machamp|Machamp, M|297\/379
+|turn|146
+|callback|decision
+|
+|switch|p1a: Man in Gauze|Cofagrigus, M|319\/319
+|move|p2a: Machamp|Ice Punch|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|267\/319
+|-ability|p2a: Machamp|Mummy|[from] Mummy
+|
+|-heal|p1a: Man in Gauze|286\/319|[from] item: Leftovers
+|turn|147
+|callback|decision
+|
+|move|p2a: Machamp|Ice Punch|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|229\/319
+|-ability|p2a: Machamp|Mummy|[from] Mummy
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Machamp
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|
+|-heal|p1a: Man in Gauze|248\/319|[from] item: Leftovers
+|turn|148
+|callback|decision
+|join|STAHP THE HAX
+|chat|STAHP THE HAX|hello????
+|
+|switch|p2a: Slowbro|Slowbro, M|349\/391 psn
+|move|p1a: Man in Gauze|Shadow Ball|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|139\/391 psn
+|-unboost|p2a: Slowbro|spd|1
+|
+|-heal|p2a: Slowbro|163\/391 psn|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|267\/319|[from] item: Leftovers
+|-damage|p2a: Slowbro|115\/391 psn|[from] psn
+|turn|149
+|callback|decision
+|chat|STAHP THE HAX|why is this so long
+|chat|STAHP THE HAX|xD
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-sideend|p2: MKBO|move: Toxic Spikes|[of] p2a: Amoonguss
+|move|p1a: Man in Gauze|Shadow Ball|p2a: Amoonguss
+|-damage|p2a: Amoonguss|353\/432
+|
+|-heal|p2a: Amoonguss|380\/432|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|286\/319|[from] item: Leftovers
+|turn|150
+|callback|decision
+|chat|DTF Like Caillou|coFAGrigus
+|chat|ShyGuyGengar|idfk
+|chat|DTF Like Caillou|thats why
+|chat|Ruby Heart|because we're finishing what we've started
+|chat|STAHP THE HAX|:p
+|
+|move|p2a: Amoonguss|Spore|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|slp
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|305\/319 slp|[from] item: Leftovers
+|-heal|p2a: Amoonguss|407\/432|[from] item: Leftovers
+|turn|151
+|callback|decision
+|chat|DTF Like Caillou|.\/concede
+|chat|DTF Like Caillou|pls
+|chat|DTF Like Caillou|pls
+|
+|switch|p2a: Slowbro|Slowbro, M|245\/391 psn
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|319\/319 slp|[from] item: Leftovers
+|-heal|p2a: Slowbro|269\/391 psn|[from] item: Leftovers
+|-damage|p2a: Slowbro|221\/391 psn|[from] psn
+|turn|152
+|callback|decision
+|chat|DTF Like Caillou|pls
+|chat|DTF Like Caillou|pls
+|chat|DTF Like Caillou|pls
+|chat|DTF Like Caillou|;-;
+|chat|Ruby Heart|why are YOU even a part of this argument?
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|cant|p1a: Man in Gauze|slp
+|
+|turn|153
+|callback|decision
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|DTF Like Caillou|just
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|DTF Like Caillou|stfu
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|ShyGuyGengar|hax
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|ShyGuyGengar|plz
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|ShyGuyGengar|xD
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|chat|DTF Like Caillou|pls
+|chat|MKBO|Ruby just quite
+|chat|MKBO|plz
+|chat|MKBO|so the will over man
+|chat|MKBO|so stop being the naruto dude ok
+|
+|move|p2a: Amoonguss|Clear Smog|p1a: Man in Gauze
+|-resisted|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|295\/319 slp
+|-clearboost|p1a: Man in Gauze
+|-curestatus|p1a: Man in Gauze|slp
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Amoonguss
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|
+|-heal|p1a: Man in Gauze|314\/319|[from] item: Leftovers
+|turn|154
+|callback|decision
+|chat|Ruby Heart|not even aware that kind of quite came from naruto
+|chat|DTF Like Caillou|omg
+|chat|DTF Like Caillou|this man
+|chat|MKBO|you are being narotu
+|chat|STAHP THE HAX|à¼¼ á¤ï»¿ââ¡â à¼½á¤
+|
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Amoonguss
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|move|p2a: Amoonguss|Clear Smog|p1a: Man in Gauze
+|-resisted|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|290\/319
+|-clearboost|p1a: Man in Gauze
+|
+|-heal|p1a: Man in Gauze|309\/319|[from] item: Leftovers
+|turn|155
+|callback|decision
+|chat|Ruby Heart|call it what you will
+|chat|Ruby Heart|and i'll call it you being a whiner
+|chat|MKBO|no you are Ruby
+|chat|STAHP THE HAX|.
+|chat|MKBO|i think you are a Whiner
+|chat|MKBO|soo yeah 
+|chat|DTF Like Caillou|155 turns
+|
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|move|p2a: Amoonguss|Clear Smog|p1a: Man in Gauze
+|-resisted|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|283\/319
+|-clearboost|p1a: Man in Gauze
+|
+|-heal|p1a: Man in Gauze|302\/319|[from] item: Leftovers
+|turn|156
+|callback|decision
+|chat|DTF Like Caillou|we started an hour ago
+|
+|switch|p1a: Wilhelm|Metagross|98\/302
+|move|p2a: Amoonguss|Clear Smog|p1a: Wilhelm
+|-immune|p1a: Wilhelm|[msg]
+|
+|turn|157
+|callback|decision
+|leave|STAHP THE HAX
+|
+|move|p1a: Wilhelm|Ice Punch|p2a: Amoonguss
+|-supereffective|p2a: Amoonguss
+|-damage|p2a: Amoonguss|138\/432
+|move|p2a: Amoonguss|Spore|p1a: Wilhelm
+|-status|p1a: Wilhelm|slp
+|
+|-heal|p2a: Amoonguss|165\/432|[from] item: Leftovers
+|turn|158
+|callback|decision
+|
+|switch|p1a: Man in Gauze|Cofagrigus, M|302\/319
+|switch|p2a: Slowbro|Slowbro, M|351\/391 psn
+|
+|-heal|p2a: Slowbro|375\/391 psn|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|319\/319|[from] item: Leftovers
+|-damage|p2a: Slowbro|327\/391 psn|[from] psn
+|turn|159
+|callback|decision
+|
+|move|p2a: Slowbro|Toxic|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|tox
+|move|p1a: Man in Gauze|Shadow Ball|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|129\/391 psn
+|
+|-heal|p2a: Slowbro|153\/391 psn|[from] item: Leftovers
+|-damage|p2a: Slowbro|105\/391 psn|[from] psn
+|-damage|p1a: Man in Gauze|300\/319 tox|[from] psn
+|turn|160
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|309\/432
+|-sideend|p2: MKBO|move: Toxic Spikes|[of] p2a: Amoonguss
+|move|p1a: Man in Gauze|Shadow Ball|p2a: Amoonguss
+|-damage|p2a: Amoonguss|228\/432
+|
+|-heal|p2a: Amoonguss|255\/432|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|319\/319 tox|[from] item: Leftovers
+|-damage|p1a: Man in Gauze|281\/319 tox|[from] psn
+|turn|161
+|callback|decision
+|
+|move|p2a: Amoonguss|Clear Smog|p1a: Man in Gauze
+|-resisted|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|257\/319 tox
+|-clearboost|p1a: Man in Gauze
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Amoonguss
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|
+|-heal|p1a: Man in Gauze|276\/319 tox|[from] item: Leftovers
+|-heal|p2a: Amoonguss|282\/432|[from] item: Leftovers
+|-damage|p1a: Man in Gauze|219\/319 tox|[from] psn
+|turn|162
+|callback|decision
+|
+|move|p2a: Amoonguss|Clear Smog|p1a: Man in Gauze
+|-resisted|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|195\/319 tox
+|-clearboost|p1a: Man in Gauze
+|move|p1a: Man in Gauze|Rest|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|slp
+|-heal|p1a: Man in Gauze|319\/319 slp|[silent]
+|-status|p1a: Man in Gauze|slp|[from] move: Rest
+|
+|-heal|p2a: Amoonguss|309\/432|[from] item: Leftovers
+|turn|163
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|235\/391 psn
+|switch|p1a: Wilhelm|Metagross|98\/302 slp
+|
+|-heal|p2a: Slowbro|259\/391 psn|[from] item: Leftovers
+|-damage|p2a: Slowbro|211\/391 psn|[from] psn
+|turn|164
+|callback|decision
+|
+|switch|p1a: Cousin Boneless|Gastrodon, M|116\/405 tox
+|move|p2a: Slowbro|Scald|p1a: Cousin Boneless
+|-boost|p1a: Cousin Boneless|spa|1|[from] ability: Storm Drain
+|
+|-heal|p2a: Slowbro|235\/391 psn|[from] item: Leftovers
+|-damage|p1a: Cousin Boneless|91\/405 tox|[from] psn
+|-damage|p2a: Slowbro|187\/391 psn|[from] psn
+|turn|165
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-sideend|p2: MKBO|move: Toxic Spikes|[of] p2a: Amoonguss
+|move|p1a: Cousin Boneless|Earth Power|p2a: Amoonguss
+|-damage|p2a: Amoonguss|243\/432
+|
+|-heal|p2a: Amoonguss|270\/432|[from] item: Leftovers
+|-damage|p1a: Cousin Boneless|41\/405 tox|[from] psn
+|turn|166
+|callback|decision
+|
+|switch|p1a: Man in Gauze|Cofagrigus, M|319\/319 slp
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|278\/319 slp
+|
+|-heal|p1a: Man in Gauze|297\/319 slp|[from] item: Leftovers
+|-heal|p2a: Amoonguss|297\/432|[from] item: Leftovers
+|turn|167
+|callback|decision
+|
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|254\/319 slp
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|273\/319 slp|[from] item: Leftovers
+|-heal|p2a: Amoonguss|324\/432|[from] item: Leftovers
+|turn|168
+|callback|decision
+|
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|232\/319 slp
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|251\/319 slp|[from] item: Leftovers
+|-heal|p2a: Amoonguss|351\/432|[from] item: Leftovers
+|turn|169
+|callback|decision
+|join|Moar Cheese
+|
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|211\/319 slp
+|-curestatus|p1a: Man in Gauze|slp
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|
+|-heal|p1a: Man in Gauze|230\/319|[from] item: Leftovers
+|-heal|p2a: Amoonguss|378\/432|[from] item: Leftovers
+|turn|170
+|callback|decision
+|chat|MKBO|you are sooo gay
+|chat|MKBO|I'm just say
+|chat|MKBO|you are really gay
+|chat|Moar Cheese|. this is a nice and short battle
+|
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-crit|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|166\/319
+|
+|-heal|p2a: Amoonguss|405\/432|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|185\/319|[from] item: Leftovers
+|turn|171
+|callback|decision
+|chat|DTF Like Caillou|obv
+|chat|DTF Like Caillou|nice and 170 turns
+|chat|DTF Like Caillou|:]
+|chat|MKBO|I fucking kill you if you goo to rest if you doo
+|chat|Moar Cheese|lol upload this mkb
+|
+|move|p1a: Man in Gauze|Rest|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|slp
+|-heal|p1a: Man in Gauze|319\/319 slp|[silent]
+|-status|p1a: Man in Gauze|slp|[from] move: Rest
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|276\/319 slp
+|
+|-heal|p1a: Man in Gauze|295\/319 slp|[from] item: Leftovers
+|-heal|p2a: Amoonguss|432\/432|[from] item: Leftovers
+|turn|172
+|callback|decision
+|chat|Ruby Heart|problem officer?
+|chat|MKBO|now you are getting this
+|chat|Moar Cheese|it basically becomes who has the least amount of pp
+|chat|MKBO|ok
+|chat|MKBO|ruby
+|
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|252\/319 slp
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|271\/319 slp|[from] item: Leftovers
+|turn|173
+|callback|decision
+|
+|cant|p1a: Man in Gauze|slp
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|227\/319 slp
+|
+|-heal|p1a: Man in Gauze|246\/319 slp|[from] item: Leftovers
+|turn|174
+|callback|decision
+|
+|-curestatus|p1a: Man in Gauze|slp
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|204\/319
+|
+|-heal|p1a: Man in Gauze|223\/319|[from] item: Leftovers
+|turn|175
+|callback|decision
+|chat|DTF Like Caillou|ik
+|chat|MKBO|I think you have no friedn at School Ruby
+|chat|DTF Like Caillou|coFAGRIGUS
+|chat|ShyGuyGengar|moar
+|chat|ShyGuyGengar|plz
+|chat|ShyGuyGengar|halp
+|chat|Moar Cheese|yup
+|chat|Moar Cheese|what
+|chat|Moar Cheese|sgg
+|chat|MKBO|sooo i think you always get beat up from school when you are stalling
+|chat|MKBO|you bitch
+|
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|182\/319
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Amoonguss
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|
+|-heal|p1a: Man in Gauze|201\/319|[from] item: Leftovers
+|turn|176
+|callback|decision
+|chat|ShyGuyGengar|that's messed up
+|chat|Moar Cheese|lol mkb work on your shittalking
+|
+|move|p1a: Man in Gauze|Rest|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|slp
+|-heal|p1a: Man in Gauze|319\/319 slp|[silent]
+|-status|p1a: Man in Gauze|slp|[from] move: Rest
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|276\/319 slp
+|
+|-heal|p1a: Man in Gauze|295\/319 slp|[from] item: Leftovers
+|turn|177
+|callback|decision
+|chat|DTF Like Caillou|HOW MANY FUCKING RESTS DO YOU HAVE
+|chat|ShyGuyGengar|u want to join call
+|chat|DTF Like Caillou|YOU CANT BE TIRED
+|
+|switch|p2a: Slowbro|Slowbro, M|317\/391 psn
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p2a: Slowbro|341\/391 psn|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|314\/319 slp|[from] item: Leftovers
+|-damage|p2a: Slowbro|293\/391 psn|[from] psn
+|turn|178
+|callback|decision
+|chat|Ruby Heart|not tired. lazy
+|chat|ShyGuyGengar|w\/e
+|chat|ShyGuyGengar|>_>
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-sideend|p2: MKBO|move: Toxic Spikes|[of] p2a: Amoonguss
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|319\/319 slp|[from] item: Leftovers
+|turn|179
+|callback|decision
+|chat|DTF Like Caillou|omg
+|chat|MKBO|like you ugly face lol
+|chat|Moar Cheese|he has 16
+|chat|Moar Cheese|rests
+|chat|ShyGuyGengar|yea
+|chat|ShyGuyGengar|but
+|chat|ShyGuyGengar|we don't to scroll up to find out
+|
+|switch|p2a: Machamp|Machamp, M|297\/379
+|-curestatus|p1a: Man in Gauze|slp
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|
+|turn|180
+|callback|decision
+|chat|ShyGuyGengar|how many he used
+|chat|ShyGuyGengar|xD
+|chat|Ruby Heart|use control+f
+|chat|ShyGuyGengar|oh
+|chat|Ruby Heart|count however many times "gauze used rest" comes up
+|
+|move|p2a: Machamp|Stone Edge|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|250\/319
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Machamp
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|
+|-heal|p1a: Man in Gauze|269\/319|[from] item: Leftovers
+|turn|181
+|callback|decision
+|chat|ShyGuyGengar|that's an option
+|chat|ShyGuyGengar|thanks
+|chat|DTF Like Caillou|i have a mac
+|
+|move|p2a: Machamp|Ice Punch|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|217\/319
+|-ability|p2a: Machamp|Mummy|[from] Mummy
+|move|p1a: Man in Gauze|Shadow Ball|p2a: Machamp
+|-damage|p2a: Machamp|228\/379
+|
+|-heal|p1a: Man in Gauze|236\/319|[from] item: Leftovers
+|turn|182
+|callback|decision
+|chat|ShyGuyGengar|lol
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-sideend|p2: MKBO|move: Toxic Spikes|[of] p2a: Amoonguss
+|move|p1a: Man in Gauze|Shadow Ball|p2a: Amoonguss
+|-damage|p2a: Amoonguss|357\/432
+|
+|-heal|p1a: Man in Gauze|255\/319|[from] item: Leftovers
+|-heal|p2a: Amoonguss|384\/432|[from] item: Leftovers
+|turn|183
+|callback|decision
+|
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|212\/319
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|
+|-heal|p1a: Man in Gauze|231\/319|[from] item: Leftovers
+|-heal|p2a: Amoonguss|411\/432|[from] item: Leftovers
+|turn|184
+|callback|decision
+|chat|Ruby Heart|even if you have a mac, same deal
+|chat|DTF Like Caillou|we are almost at the 1 and 1\/2 mark
+|chat|Ruby Heart|or not. it's command+f
+|
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Amoonguss
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|193\/319
+|
+|-heal|p2a: Amoonguss|432\/432|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|212\/319|[from] item: Leftovers
+|turn|185
+|callback|decision
+|chat|DTF Like Caillou|now im full screen
+|chat|DTF Like Caillou|lel
+|
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|173\/319
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|
+|-heal|p1a: Man in Gauze|192\/319|[from] item: Leftovers
+|turn|186
+|callback|decision
+|chat|Ruby Heart|oh, did you not do it right?
+|
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|150\/319
+|
+|-heal|p1a: Man in Gauze|169\/319|[from] item: Leftovers
+|turn|187
+|callback|decision
+|chat|DTF Like Caillou|obv lol
+|
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|127\/319
+|move|p1a: Man in Gauze|Rest|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|slp
+|-heal|p1a: Man in Gauze|319\/319 slp|[silent]
+|-status|p1a: Man in Gauze|slp|[from] move: Rest
+|
+|turn|188
+|callback|decision
+|chat|Moar Cheese|just struggle mkb
+|
+|switch|p2a: Slowbro|Slowbro, M|391\/391 psn
+|cant|p1a: Man in Gauze|slp
+|
+|-damage|p2a: Slowbro|343\/391 psn|[from] psn
+|turn|189
+|callback|decision
+|chat|Moar Cheese|you canât hurt him
+|chat|ShyGuyGengar|still have 12 turns
+|chat|ShyGuyGengar|of this madness
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-sideend|p2: MKBO|move: Toxic Spikes|[of] p2a: Amoonguss
+|cant|p1a: Man in Gauze|slp
+|
+|turn|190
+|callback|decision
+|chat|DTF Like Caillou|we are almost at 200 turns
+|chat|Moar Cheese|if you struggle, it is normal type
+|chat|Moar Cheese|and will not effect him
+|chat|DTF Like Caillou|im gonna kill myself
+|chat|Moar Cheese|and therefore no recoil
+|chat|ShyGuyGengar|it does
+|chat|Ruby Heart|no, it's a ??? type
+|chat|ShyGuyGengar|ironically
+|
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|277\/319 slp
+|-curestatus|p1a: Man in Gauze|slp
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|
+|-heal|p1a: Man in Gauze|296\/319|[from] item: Leftovers
+|turn|191
+|callback|decision
+|chat|ShyGuyGengar|but regenerator does work
+|chat|DTF Like Caillou|\/me shoots himself in the head
+|
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|253\/319
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|
+|-heal|p1a: Man in Gauze|272\/319|[from] item: Leftovers
+|turn|192
+|callback|decision
+|chat|ShyGuyGengar|8 turns
+|chat|ShyGuyGengar|plz sir
+|chat|DTF Like Caillou|i dont even remember when absol was on the field
+|
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|229\/319
+|move|p1a: Man in Gauze|Toxic Spikes|p2a: Amoonguss
+|-sidestart|p2: MKBO|move: Toxic Spikes
+|
+|-heal|p1a: Man in Gauze|248\/319|[from] item: Leftovers
+|turn|193
+|callback|decision
+|chat|ShyGuyGengar|lmao
+|
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|209\/319
+|
+|-heal|p1a: Man in Gauze|228\/319|[from] item: Leftovers
+|turn|194
+|callback|decision
+|
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|move|p2a: Amoonguss|Clear Smog|p1a: Man in Gauze
+|-resisted|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|203\/319
+|-clearboost|p1a: Man in Gauze
+|
+|-heal|p1a: Man in Gauze|222\/319|[from] item: Leftovers
+|turn|195
+|callback|decision
+|chat|DTF Like Caillou|i just see coFAGrigus
+|
+|move|p1a: Man in Gauze|Haze|p1a: Man in Gauze
+|-clearallboost
+|move|p2a: Amoonguss|Clear Smog|p1a: Man in Gauze
+|-resisted|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|199\/319
+|-clearboost|p1a: Man in Gauze
+|
+|-heal|p1a: Man in Gauze|218\/319|[from] item: Leftovers
+|turn|196
+|callback|decision
+|
+|switch|p1a: Wilhelm|Metagross|98\/302 slp
+|move|p2a: Amoonguss|Hidden Power|p1a: Wilhelm
+|-resisted|p1a: Wilhelm
+|-damage|p1a: Wilhelm|74\/302 slp
+|
+|turn|197
+|callback|decision
+|
+|switch|p2a: Machamp|Machamp, M|228\/379
+|-status|p2a: Machamp|psn
+|cant|p1a: Wilhelm|slp
+|
+|-damage|p2a: Machamp|181\/379 psn|[from] psn
+|turn|198
+|callback|decision
+|
+|switch|p1a: Man in Gauze|Cofagrigus, M|218\/319
+|move|p2a: Machamp|Stone Edge|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|148\/319
+|
+|-heal|p1a: Man in Gauze|167\/319|[from] item: Leftovers
+|-damage|p2a: Machamp|134\/379 psn|[from] psn
+|turn|199
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|-sideend|p2: MKBO|move: Toxic Spikes|[of] p2a: Amoonguss
+|move|p1a: Man in Gauze|Rest|p1a: Man in Gauze
+|-status|p1a: Man in Gauze|slp
+|-heal|p1a: Man in Gauze|319\/319 slp|[silent]
+|-status|p1a: Man in Gauze|slp|[from] move: Rest
+|
+|turn|200
+|callback|decision
+|chat|DTF Like Caillou|omg
+|
+|move|p2a: Amoonguss|Hidden Power|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|276\/319 slp
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|295\/319 slp|[from] item: Leftovers
+|turn|201
+|callback|decision
+|
+|move|p2a: Amoonguss|Clear Smog|p1a: Man in Gauze
+|-resisted|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|270\/319 slp
+|-clearboost|p1a: Man in Gauze
+|cant|p1a: Man in Gauze|slp
+|
+|-heal|p1a: Man in Gauze|289\/319 slp|[from] item: Leftovers
+|turn|202
+|callback|decision
+|chat|Ruby Heart|gotta say, i like this new 6th gen sleep mechanic
+|
+|switch|p1a: Wilhelm|Metagross|74\/302 slp
+|move|p2a: Amoonguss|Clear Smog|p1a: Wilhelm
+|-immune|p1a: Wilhelm|[msg]
+|
+|turn|203
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|391\/391 psn
+|cant|p1a: Wilhelm|slp
+|
+|-damage|p2a: Slowbro|343\/391 psn|[from] psn
+|turn|204
+|callback|decision
+|
+|switch|p1a: Man in Gauze|Cofagrigus, M|289\/319 slp
+|move|p2a: Slowbro|Toxic|p1a: Man in Gauze
+|-fail|p1a: Man in Gauze
+|
+|-heal|p2a: Slowbro|367\/391 psn|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|308\/319 slp|[from] item: Leftovers
+|-damage|p2a: Slowbro|319\/391 psn|[from] psn
+|turn|205
+|callback|decision
+|
+|move|p2a: Slowbro|Scald|p1a: Man in Gauze
+|-damage|p1a: Man in Gauze|214\/319 slp
+|-curestatus|p1a: Man in Gauze|slp
+|move|p1a: Man in Gauze|Shadow Ball|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|125\/391 psn
+|
+|-heal|p2a: Slowbro|149\/391 psn|[from] item: Leftovers
+|-heal|p1a: Man in Gauze|233\/319|[from] item: Leftovers
+|-damage|p2a: Slowbro|101\/391 psn|[from] psn
+|turn|206
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|switch|p1a: Cousin Boneless|Gastrodon, M|41\/405 tox
+|
+|-damage|p1a: Cousin Boneless|16\/405 tox|[from] psn
+|turn|207
+|callback|decision
+|
+|move|p1a: Cousin Boneless|Recover|p1a: Cousin Boneless
+|-heal|p1a: Cousin Boneless|219\/405 tox
+|move|p2a: Amoonguss|Clear Smog|p1a: Cousin Boneless
+|-resisted|p1a: Cousin Boneless
+|-damage|p1a: Cousin Boneless|191\/405 tox
+|-clearboost|p1a: Cousin Boneless
+|
+|-damage|p1a: Cousin Boneless|141\/405 tox|[from] psn
+|turn|208
+|callback|decision
+|
+|move|p1a: Cousin Boneless|Recover|p1a: Cousin Boneless
+|-heal|p1a: Cousin Boneless|344\/405 tox
+|move|p2a: Amoonguss|Clear Smog|p1a: Cousin Boneless
+|-resisted|p1a: Cousin Boneless
+|-damage|p1a: Cousin Boneless|316\/405 tox
+|-clearboost|p1a: Cousin Boneless
+|
+|-damage|p1a: Cousin Boneless|241\/405 tox|[from] psn
+|turn|209
+|callback|decision
+|chat|DTF Like Caillou|i hate you
+|chat|Moar Cheese|i love everyone
+|
+|switch|p1a: Wilhelm|Metagross|74\/302 slp
+|switch|p2a: Slowbro|Slowbro, M|231\/391 psn
+|
+|-heal|p2a: Slowbro|255\/391 psn|[from] item: Leftovers
+|-damage|p2a: Slowbro|207\/391 psn|[from] psn
+|turn|210
+|callback|decision
+|join|Linda's Spinda
+|
+|switch|p1a: Cousin Boneless|Gastrodon, M|241\/405 tox
+|move|p2a: Slowbro|Flamethrower|p1a: Cousin Boneless
+|-resisted|p1a: Cousin Boneless
+|-damage|p1a: Cousin Boneless|201\/405 tox
+|
+|-heal|p2a: Slowbro|231\/391 psn|[from] item: Leftovers
+|-damage|p1a: Cousin Boneless|176\/405 tox|[from] psn
+|-damage|p2a: Slowbro|183\/391 psn|[from] psn
+|turn|211
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, M|432\/432
+|move|p1a: Cousin Boneless|Recover|p1a: Cousin Boneless
+|-heal|p1a: Cousin Boneless|379\/405 tox
+|
+|-damage|p1a: Cousin Boneless|329\/405 tox|[from] psn
+|turn|212
+|callback|decision
+|chat|Linda's Spinda|dank man
+|chat|Linda's Spinda|200+
+|chat|DTF Like Caillou|ik
+|
+|move|p1a: Cousin Boneless|Ice Beam|p2a: Amoonguss
+|-supereffective|p2a: Amoonguss
+|-damage|p2a: Amoonguss|252\/432
+|move|p2a: Amoonguss|Spore|p1a: Cousin Boneless
+|-fail|p1a: Cousin Boneless
+|
+|-heal|p2a: Amoonguss|279\/432|[from] item: Leftovers
+|-damage|p1a: Cousin Boneless|254\/405 tox|[from] psn
+|turn|213
+|callback|decision
+|chat|DTF Like Caillou|this is retarded
+|

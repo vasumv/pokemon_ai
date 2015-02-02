@@ -1,0 +1,980 @@
+|join|Hellochi
+|join|spec n
+|player|p1|Hellochi|59
+|player|p2|spec n|126
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Blissey, F
+|poke|p1|Alomomola, M
+|poke|p1|Aromatisse, M
+|poke|p1|Tentacruel, F
+|poke|p1|Gligar, M
+|poke|p1|Reuniclus, F
+|poke|p2|Ampharos, F
+|poke|p2|Crobat, F
+|poke|p2|Hydreigon, F
+|poke|p2|Jirachi
+|poke|p2|Suicune
+|poke|p2|Medicham, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Aromatisse|Aromatisse, M|406\/406
+|switch|p2a: Jirachi|Jirachi|341\/341
+|turn|1
+|
+|switch|p1a: Tentacruel|Tentacruel, F|361\/361
+|move|p2a: Jirachi|Stealth Rock|p1a: Tentacruel
+|-sidestart|p1: Hellochi|move: Stealth Rock
+|
+|turn|2
+|
+|move|p2a: Jirachi|Body Slam|p1a: Tentacruel
+|-damage|p1a: Tentacruel|285\/361
+|-status|p1a: Tentacruel|par
+|move|p1a: Tentacruel|Toxic Spikes|p2a: Jirachi
+|-sidestart|p2: spec n|move: Toxic Spikes
+|
+|-heal|p1a: Tentacruel|307\/361 par|[from] item: Leftovers
+|turn|3
+|
+|move|p2a: Jirachi|Iron Head|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|250\/361 par
+|cant|p1a: Tentacruel|flinch
+|
+|-heal|p1a: Tentacruel|272\/361 par|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Crobat|Crobat, F|374\/374
+|switch|p1a: Alomomola|Alomomola, M|497\/497
+|-damage|p1a: Alomomola|435\/497|[from] Stealth Rock
+|
+|turn|5
+|
+|move|p2a: Crobat|Defog|p1a: Alomomola
+|-unboost|p1a: Alomomola|evasion|1
+|-sideend|p1: Hellochi|Stealth Rock|[from] move: Defog|[of] p1a: Alomomola
+|-sideend|p2: spec n|Toxic Spikes|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Alomomola|Scald|p2a: Crobat
+|-damage|p2a: Crobat|320\/374
+|
+|-heal|p2a: Crobat|343\/374|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: Ampharos|Ampharos, F|384\/384
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|turn|7
+|
+|switch|p1a: Gligar|Gligar, M|334\/334
+|detailschange|p2a: Ampharos|Ampharos-Mega, F
+|-mega|p2a: Ampharos|Ampharos|Ampharosite
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p2a: Ampharos|Dragon Pulse|p1a: Gligar
+|-damage|p1a: Gligar|219\/334
+|
+|-heal|p1a: Gligar|334\/334|[from] move: Wish|[wisher] Alomomola
+|turn|8
+|
+|switch|p2a: Crobat|Crobat, F|343\/374
+|move|p1a: Gligar|Stealth Rock|p2a: Crobat
+|-sidestart|p2: spec n|move: Stealth Rock
+|
+|-heal|p2a: Crobat|366\/374|[from] item: Leftovers
+|turn|9
+|
+|move|p2a: Crobat|Defog|p1a: Gligar
+|-unboost|p1a: Gligar|evasion|1
+|-sideend|p2: spec n|Stealth Rock|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Gligar|U-turn|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|353\/374
+|
+|switch|p1a: Aromatisse|Aromatisse, M|406\/406
+|
+|-heal|p2a: Crobat|374\/374|[from] item: Leftovers
+|turn|10
+|
+|move|p2a: Crobat|U-turn|p1a: Aromatisse
+|-resisted|p1a: Aromatisse
+|-damage|p1a: Aromatisse|385\/406
+|
+|switch|p2a: Suicune|Suicune|404\/404
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Aromatisse|Aromatherapy|p1a: Aromatisse
+|-cureteam|p1a: Aromatisse|[from] move: Aromatherapy
+|
+|-heal|p1a: Aromatisse|406\/406|[from] item: Leftovers
+|turn|11
+|
+|switch|p1a: Tentacruel|Tentacruel, F|272\/361
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p1a: Tentacruel|294\/361|[from] item: Leftovers
+|turn|12
+|
+|move|p1a: Tentacruel|Acid Spray|p2a: Suicune
+|-damage|p2a: Suicune|380\/404
+|-unboost|p2a: Suicune|spd|2
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p1a: Tentacruel|316\/361|[from] item: Leftovers
+|-heal|p2a: Suicune|404\/404|[from] item: Leftovers
+|turn|13
+|
+|move|p1a: Tentacruel|Acid Spray|p2a: Suicune
+|-damage|p2a: Suicune|371\/404
+|-unboost|p2a: Suicune|spd|2
+|move|p2a: Suicune|Scald|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|238\/361
+|
+|-heal|p1a: Tentacruel|260\/361|[from] item: Leftovers
+|-heal|p2a: Suicune|396\/404|[from] item: Leftovers
+|turn|14
+|
+|move|p1a: Tentacruel|Scald|p2a: Suicune
+|-resisted|p2a: Suicune
+|-damage|p2a: Suicune|321\/404
+|-status|p2a: Suicune|brn
+|move|p2a: Suicune|Scald|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|185\/361
+|
+|-heal|p1a: Tentacruel|207\/361|[from] item: Leftovers
+|-heal|p2a: Suicune|346\/404 brn|[from] item: Leftovers
+|-damage|p2a: Suicune|296\/404 brn|[from] brn
+|turn|15
+|
+|move|p1a: Tentacruel|Acid Spray|p2a: Suicune
+|-damage|p2a: Suicune|223\/404 brn
+|-unboost|p2a: Suicune|spd|2
+|move|p2a: Suicune|Scald|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|134\/361
+|
+|-heal|p1a: Tentacruel|156\/361|[from] item: Leftovers
+|-heal|p2a: Suicune|248\/404 brn|[from] item: Leftovers
+|-damage|p2a: Suicune|198\/404 brn|[from] brn
+|turn|16
+|
+|move|p1a: Tentacruel|Scald|p2a: Suicune
+|-resisted|p2a: Suicune
+|-damage|p2a: Suicune|96\/404 brn
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|
+|-heal|p1a: Tentacruel|178\/361|[from] item: Leftovers
+|turn|17
+|
+|switch|p2a: Jirachi|Jirachi|341\/341
+|move|p1a: Tentacruel|Acid Spray|p2a: Jirachi
+|-immune|p2a: Jirachi|[msg]
+|
+|-heal|p1a: Tentacruel|200\/361|[from] item: Leftovers
+|turn|18
+|
+|switch|p1a: Alomomola|Alomomola, M|497\/497
+|move|p2a: Jirachi|Stealth Rock|p1a: Alomomola
+|-sidestart|p1: Hellochi|move: Stealth Rock
+|
+|turn|19
+|
+|switch|p2a: Hydreigon|Hydreigon, F|325\/325
+|move|p1a: Alomomola|Scald|p2a: Hydreigon
+|-crit|p2a: Hydreigon
+|-resisted|p2a: Hydreigon
+|-damage|p2a: Hydreigon|288\/325
+|
+|turn|20
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Hydreigon|Dark Pulse|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|turn|21
+|
+|switch|p1a: Blissey|Blissey, F|652\/652
+|-damage|p1a: Blissey|571\/652|[from] Stealth Rock
+|move|p2a: Hydreigon|Dark Pulse|p1a: Blissey
+|-damage|p1a: Blissey|438\/652
+|
+|-heal|p1a: Blissey|478\/652|[from] item: Leftovers
+|turn|22
+|
+|switch|p2a: Medicham|Medicham, M|261\/261
+|switch|p1a: Aromatisse|Aromatisse, M|406\/406
+|-damage|p1a: Aromatisse|356\/406|[from] Stealth Rock
+|
+|-heal|p1a: Aromatisse|381\/406|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Medicham|Fake Out|p1a: Aromatisse
+|-damage|p1a: Aromatisse|307\/406
+|-damage|p2a: Medicham|235\/261|[from] item: Life Orb
+|cant|p1a: Aromatisse|flinch
+|
+|-heal|p1a: Aromatisse|332\/406|[from] item: Leftovers
+|turn|24
+|
+|switch|p2a: Jirachi|Jirachi|341\/341
+|move|p1a: Aromatisse|Wish|p1a: Aromatisse
+|
+|-heal|p1a: Aromatisse|357\/406|[from] item: Leftovers
+|turn|25
+|
+|switch|p2a: Medicham|Medicham, M|235\/261
+|switch|p1a: Alomomola|Alomomola, M|497\/497
+|-damage|p1a: Alomomola|435\/497|[from] Stealth Rock
+|
+|-heal|p1a: Alomomola|497\/497|[from] move: Wish|[wisher] Aromatisse
+|turn|26
+|
+|switch|p2a: Hydreigon|Hydreigon, F|288\/325
+|move|p1a: Alomomola|Scald|p2a: Hydreigon
+|-resisted|p2a: Hydreigon
+|-damage|p2a: Hydreigon|264\/325
+|-status|p2a: Hydreigon|brn
+|
+|-damage|p2a: Hydreigon|224\/325 brn|[from] brn
+|turn|27
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Hydreigon|Dark Pulse|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|-damage|p2a: Hydreigon|184\/325 brn|[from] brn
+|turn|28
+|
+|switch|p2a: Medicham|Medicham, M|235\/261
+|switch|p1a: Aromatisse|Aromatisse, M|357\/406
+|-damage|p1a: Aromatisse|307\/406|[from] Stealth Rock
+|
+|-heal|p1a: Aromatisse|332\/406|[from] item: Leftovers
+|turn|29
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F|384\/384
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Aromatisse|Protect|p1a: Aromatisse
+|-fail|p1a: Aromatisse
+|
+|-heal|p1a: Aromatisse|357\/406|[from] item: Leftovers
+|turn|30
+|
+|switch|p1a: Gligar|Gligar, M|334\/334
+|-damage|p1a: Gligar|293\/334|[from] Stealth Rock
+|move|p2a: Ampharos|Thunderbolt|p1a: Gligar
+|-immune|p1a: Gligar|[msg]
+|
+|turn|31
+|
+|move|p1a: Gligar|Earthquake|p2a: Ampharos
+|-supereffective|p2a: Ampharos
+|-damage|p2a: Ampharos|214\/384
+|move|p2a: Ampharos|Dragon Pulse|p1a: Gligar
+|-damage|p1a: Gligar|157\/334
+|
+|turn|32
+|
+|switch|p2a: Suicune|Suicune|404\/404 slp
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Gligar|Roost|p1a: Gligar
+|-heal|p1a: Gligar|324\/334
+|
+|turn|33
+|
+|switch|p1a: Tentacruel|Tentacruel, F|200\/361
+|-damage|p1a: Tentacruel|155\/361|[from] Stealth Rock
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Scald|p1a: Tentacruel|[from]Sleep Talk
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|119\/361
+|
+|-heal|p1a: Tentacruel|141\/361|[from] item: Leftovers
+|turn|34
+|
+|move|p1a: Tentacruel|Rapid Spin|p2a: Suicune
+|-damage|p2a: Suicune|397\/404 slp
+|-sideend|p1: Hellochi|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Tentacruel
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Scald|p1a: Tentacruel|[from]Sleep Talk
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|102\/361
+|
+|-heal|p1a: Tentacruel|124\/361|[from] item: Leftovers
+|-heal|p2a: Suicune|404\/404 slp|[from] item: Leftovers
+|turn|35
+|
+|switch|p1a: Alomomola|Alomomola, M|497\/497
+|-curestatus|p2a: Suicune|slp
+|move|p2a: Suicune|Scald|p1a: Alomomola
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|434\/497
+|
+|turn|36
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F|214\/384
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|turn|37
+|
+|switch|p1a: Blissey|Blissey, F|478\/652
+|move|p2a: Ampharos|Volt Switch|p1a: Blissey
+|-damage|p1a: Blissey|373\/652
+|
+|switch|p2a: Suicune|Suicune|404\/404
+|-ability|p2a: Suicune|Pressure
+|
+|-heal|p1a: Blissey|621\/652|[from] move: Wish|[wisher] Alomomola
+|-heal|p1a: Blissey|652\/652|[from] item: Leftovers
+|turn|38
+|
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: Blissey|Toxic|p2a: Suicune
+|-status|p2a: Suicune|tox
+|
+|-damage|p2a: Suicune|379\/404 tox|[from] psn
+|turn|39
+|
+|switch|p1a: Reuniclus|Reuniclus, F|424\/424
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p2a: Suicune|404\/404 tox|[from] item: Leftovers
+|-damage|p2a: Suicune|354\/404 tox|[from] psn
+|turn|40
+|
+|move|p2a: Suicune|Scald|p1a: Reuniclus
+|-damage|p1a: Reuniclus|240\/424
+|-status|p1a: Reuniclus|brn
+|move|p1a: Reuniclus|Calm Mind|p1a: Reuniclus
+|-boost|p1a: Reuniclus|spa|1
+|-boost|p1a: Reuniclus|spd|1
+|
+|-heal|p2a: Suicune|379\/404 tox|[from] item: Leftovers
+|-heal|p1a: Reuniclus|266\/424 brn|[from] item: Leftovers
+|-damage|p2a: Suicune|304\/404 tox|[from] psn
+|turn|41
+|
+|switch|p2a: Jirachi|Jirachi|341\/341
+|move|p1a: Reuniclus|Recover|p1a: Reuniclus
+|-heal|p1a: Reuniclus|424\/424 brn
+|
+|turn|42
+|
+|move|p2a: Jirachi|Iron Head|p1a: Reuniclus
+|-damage|p1a: Reuniclus|328\/424 brn
+|cant|p1a: Reuniclus|flinch
+|
+|-heal|p1a: Reuniclus|354\/424 brn|[from] item: Leftovers
+|turn|43
+|
+|move|p2a: Jirachi|Wish|p2a: Jirachi
+|move|p1a: Reuniclus|Shadow Ball|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|109\/341
+|-unboost|p2a: Jirachi|spd|1
+|
+|-heal|p2a: Jirachi|130\/341|[from] item: Leftovers
+|-heal|p1a: Reuniclus|380\/424 brn|[from] item: Leftovers
+|turn|44
+|
+|switch|p2a: Hydreigon|Hydreigon, F|184\/325 brn
+|move|p1a: Reuniclus|Calm Mind|p1a: Reuniclus
+|-boost|p1a: Reuniclus|spa|1
+|-boost|p1a: Reuniclus|spd|1
+|
+|-heal|p2a: Hydreigon|325\/325 brn|[from] move: Wish|[wisher] Jirachi
+|-heal|p1a: Reuniclus|406\/424 brn|[from] item: Leftovers
+|-damage|p2a: Hydreigon|285\/325 brn|[from] brn
+|turn|45
+|
+|switch|p1a: Aromatisse|Aromatisse, M|357\/406
+|move|p2a: Hydreigon|Dark Pulse|p1a: Aromatisse
+|-resisted|p1a: Aromatisse
+|-damage|p1a: Aromatisse|242\/406
+|
+|-heal|p1a: Aromatisse|267\/406|[from] item: Leftovers
+|-damage|p2a: Hydreigon|245\/325 brn|[from] brn
+|turn|46
+|
+|switch|p2a: Jirachi|Jirachi|130\/341
+|switch|p1a: Alomomola|Alomomola, M|497\/497
+|
+|-heal|p2a: Jirachi|151\/341|[from] item: Leftovers
+|turn|47
+|
+|move|p2a: Jirachi|Wish|p2a: Jirachi
+|move|p1a: Alomomola|Scald|p2a: Jirachi
+|-damage|p2a: Jirachi|100\/341
+|
+|-heal|p2a: Jirachi|121\/341|[from] item: Leftovers
+|turn|48
+|
+|move|p2a: Jirachi|Stealth Rock|p1a: Alomomola
+|-sidestart|p1: Hellochi|move: Stealth Rock
+|move|p1a: Alomomola|Scald|p2a: Jirachi
+|-damage|p2a: Jirachi|78\/341
+|-status|p2a: Jirachi|brn
+|
+|-heal|p2a: Jirachi|248\/341 brn|[from] move: Wish|[wisher] Jirachi
+|-heal|p2a: Jirachi|269\/341 brn|[from] item: Leftovers
+|-damage|p2a: Jirachi|227\/341 brn|[from] brn
+|turn|49
+|
+|move|p2a: Jirachi|Wish|p2a: Jirachi
+|move|p1a: Alomomola|Toxic|p2a: Jirachi
+|-fail|p2a: Jirachi
+|
+|-heal|p2a: Jirachi|248\/341 brn|[from] item: Leftovers
+|-damage|p2a: Jirachi|206\/341 brn|[from] brn
+|turn|50
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F|214\/384
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Alomomola|Toxic|p2a: Ampharos|[miss]
+|-miss|p1a: Alomomola|p2a: Ampharos
+|
+|-heal|p2a: Ampharos|384\/384|[from] move: Wish|[wisher] Jirachi
+|turn|51
+|
+|switch|p1a: Blissey|Blissey, F|652\/652
+|-damage|p1a: Blissey|571\/652|[from] Stealth Rock
+|switch|p2a: Suicune|Suicune|304\/404 tox
+|-ability|p2a: Suicune|Pressure
+|
+|-heal|p2a: Suicune|329\/404 tox|[from] item: Leftovers
+|-heal|p1a: Blissey|611\/652|[from] item: Leftovers
+|-damage|p2a: Suicune|304\/404 tox|[from] psn
+|turn|52
+|
+|switch|p1a: Alomomola|Alomomola, M|497\/497
+|-damage|p1a: Alomomola|435\/497|[from] Stealth Rock
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|
+|turn|53
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F|384\/384
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|
+|turn|54
+|
+|switch|p1a: Aromatisse|Aromatisse, M|267\/406
+|-damage|p1a: Aromatisse|217\/406|[from] Stealth Rock
+|switch|p2a: Suicune|Suicune|404\/404 slp
+|-ability|p2a: Suicune|Pressure
+|
+|-heal|p1a: Aromatisse|406\/406|[from] move: Wish|[wisher] Alomomola
+|turn|55
+|
+|cant|p2a: Suicune|slp
+|move|p1a: Aromatisse|Wish|p1a: Aromatisse
+|
+|turn|56
+|
+|switch|p2a: Medicham|Medicham, M|235\/261
+|switch|p1a: Tentacruel|Tentacruel, F|124\/361
+|-damage|p1a: Tentacruel|79\/361|[from] Stealth Rock
+|
+|-heal|p1a: Tentacruel|282\/361|[from] move: Wish|[wisher] Aromatisse
+|-heal|p1a: Tentacruel|304\/361|[from] item: Leftovers
+|turn|57
+|
+|switch|p1a: Alomomola|Alomomola, M|497\/497
+|-damage|p1a: Alomomola|435\/497|[from] Stealth Rock
+|move|p2a: Medicham|High Jump Kick|p1a: Alomomola
+|-damage|p1a: Alomomola|115\/497
+|-damage|p2a: Medicham|192\/261|[from] item: Rocky Helmet|[of] p1a: Alomomola
+|-damage|p2a: Medicham|166\/261|[from] item: Life Orb
+|
+|turn|58
+|
+|move|p1a: Alomomola|Protect|p1a: Alomomola
+|-singleturn|p1a: Alomomola|Protect
+|move|p2a: Medicham|Psycho Cut|p1a: Alomomola
+|-activate|p1a: Alomomola|Protect
+|
+|turn|59
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F|384\/384
+|-ability|p2a: Ampharos|Mold Breaker
+|switch|p1a: Aromatisse|Aromatisse, M|406\/406
+|-damage|p1a: Aromatisse|356\/406|[from] Stealth Rock
+|
+|-heal|p1a: Aromatisse|381\/406|[from] item: Leftovers
+|turn|60
+|
+|move|p2a: Ampharos|Volt Switch|p1a: Aromatisse
+|-damage|p1a: Aromatisse|207\/406
+|
+|switch|p2a: Crobat|Crobat, F|374\/374
+|move|p1a: Aromatisse|Moonblast|p2a: Crobat
+|-crit|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|278\/374
+|
+|-heal|p2a: Crobat|301\/374|[from] item: Leftovers
+|-heal|p1a: Aromatisse|232\/406|[from] item: Leftovers
+|turn|61
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F|384\/384
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Aromatisse|Wish|p1a: Aromatisse
+|
+|-heal|p1a: Aromatisse|257\/406|[from] item: Leftovers
+|turn|62
+|
+|move|p1a: Aromatisse|Protect|p1a: Aromatisse
+|-singleturn|p1a: Aromatisse|Protect
+|move|p2a: Ampharos|Volt Switch|p1a: Aromatisse
+|-activate|p1a: Aromatisse|Protect
+|
+|-heal|p1a: Aromatisse|406\/406|[from] move: Wish|[wisher] Aromatisse
+|turn|63
+|
+|move|p2a: Ampharos|Volt Switch|p1a: Aromatisse
+|-damage|p1a: Aromatisse|231\/406
+|
+|switch|p2a: Crobat|Crobat, F|301\/374
+|move|p1a: Aromatisse|Wish|p1a: Aromatisse
+|
+|-heal|p2a: Crobat|324\/374|[from] item: Leftovers
+|-heal|p1a: Aromatisse|256\/406|[from] item: Leftovers
+|turn|64
+|
+|switch|p1a: Tentacruel|Tentacruel, F|304\/361
+|-damage|p1a: Tentacruel|259\/361|[from] Stealth Rock
+|move|p2a: Crobat|U-turn|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|233\/361
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F|384\/384
+|-ability|p2a: Ampharos|Mold Breaker
+|
+|-heal|p1a: Tentacruel|361\/361|[from] move: Wish|[wisher] Aromatisse
+|turn|65
+|
+|switch|p1a: Gligar|Gligar, M|324\/334
+|-damage|p1a: Gligar|283\/334|[from] Stealth Rock
+|move|p2a: Ampharos|Thunderbolt|p1a: Gligar
+|-immune|p1a: Gligar|[msg]
+|
+|turn|66
+|join|dopeshiva
+|join|Mr.Blacky
+|
+|switch|p2a: Suicune|Suicune|404\/404 slp
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Gligar|Stealth Rock|p2a: Suicune
+|-sidestart|p2: spec n|move: Stealth Rock
+|
+|turn|67
+|
+|move|p1a: Gligar|U-turn|p2a: Suicune
+|-damage|p2a: Suicune|376\/404 slp
+|
+|switch|p1a: Tentacruel|Tentacruel, F|361\/361
+|-damage|p1a: Tentacruel|316\/361|[from] Stealth Rock
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Scald|p1a: Tentacruel|[from]Sleep Talk
+|-crit|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|256\/361
+|-status|p1a: Tentacruel|brn
+|
+|-heal|p1a: Tentacruel|278\/361 brn|[from] item: Leftovers
+|-heal|p2a: Suicune|401\/404 slp|[from] item: Leftovers
+|-damage|p1a: Tentacruel|233\/361 brn|[from] brn
+|turn|68
+|join|L0NE
+|
+|move|p1a: Tentacruel|Rapid Spin|p2a: Suicune
+|-damage|p2a: Suicune|396\/404 slp
+|-sideend|p1: Hellochi|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Tentacruel
+|-curestatus|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|-fail|p2a: Suicune
+|
+|-heal|p1a: Tentacruel|255\/361 brn|[from] item: Leftovers
+|-heal|p2a: Suicune|404\/404|[from] item: Leftovers
+|-damage|p1a: Tentacruel|210\/361 brn|[from] brn
+|turn|69
+|
+|switch|p1a: Reuniclus|Reuniclus, F|406\/424 brn
+|switch|p2a: Crobat|Crobat, F|324\/374
+|-damage|p2a: Crobat|231\/374|[from] Stealth Rock
+|
+|-heal|p2a: Crobat|254\/374|[from] item: Leftovers
+|-heal|p1a: Reuniclus|424\/424 brn|[from] item: Leftovers
+|turn|70
+|join|furetto
+|
+|switch|p1a: Aromatisse|Aromatisse, M|256\/406
+|move|p2a: Crobat|U-turn|p1a: Aromatisse
+|-resisted|p1a: Aromatisse
+|-damage|p1a: Aromatisse|234\/406
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F|384\/384
+|-damage|p2a: Ampharos|336\/384|[from] Stealth Rock
+|-ability|p2a: Ampharos|Mold Breaker
+|
+|-heal|p1a: Aromatisse|259\/406|[from] item: Leftovers
+|turn|71
+|
+|switch|p2a: Crobat|Crobat, F|254\/374
+|-damage|p2a: Crobat|161\/374|[from] Stealth Rock
+|switch|p1a: Gligar|Gligar, M|283\/334
+|
+|-heal|p2a: Crobat|184\/374|[from] item: Leftovers
+|turn|72
+|
+|move|p2a: Crobat|Defog|p1a: Gligar
+|-unboost|p1a: Gligar|evasion|1
+|-sideend|p2: spec n|Stealth Rock|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Gligar|Earthquake|p2a: Crobat
+|-immune|p2a: Crobat|[msg]
+|
+|-heal|p2a: Crobat|207\/374|[from] item: Leftovers
+|turn|73
+|
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|374\/374
+|move|p1a: Gligar|Stealth Rock|p2a: Crobat
+|-sidestart|p2: spec n|move: Stealth Rock
+|
+|turn|74
+|c| furetto|come mai va avanti da cosÃ¬ tanto?
+|
+|move|p2a: Crobat|Defog|p1a: Gligar
+|-unboost|p1a: Gligar|evasion|1
+|-sideend|p2: spec n|Stealth Rock|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Gligar|Stealth Rock|p2a: Crobat
+|-sidestart|p2: spec n|move: Stealth Rock
+|
+|turn|75
+|c|âspec n|perchÃ¨ questo Ã¨ un pezzo di merda
+|
+|move|p2a: Crobat|Defog|p1a: Gligar
+|-unboost|p1a: Gligar|evasion|1
+|-sideend|p2: spec n|Stealth Rock|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Gligar|Stealth Rock|p2a: Crobat
+|-sidestart|p2: spec n|move: Stealth Rock
+|
+|turn|76
+|c|âspec n|che si riempie il team di wish e stall
+|c|âHellochi|uno dos tres
+|c|âspec n|minchia che coglione
+|c|âHellochi|imo
+|c|âspec n|it's italian idiot
+|c|âHellochi|how am i supposed to know? lol
+|
+|move|p2a: Crobat|Defog|p1a: Gligar
+|-unboost|p1a: Gligar|evasion|1
+|-sideend|p2: spec n|Stealth Rock|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Gligar|Stealth Rock|p2a: Crobat
+|-sidestart|p2: spec n|move: Stealth Rock
+|
+|turn|77
+|c| furetto|oddio,ma che fastidio da?
+|c| furetto|voglio vedere per quanto va avanti
+|c|âspec n|you're not, since a cunt who uses a bullshit team like that has an IQ of a dead worm
+|c|âHellochi|probably
+|
+|switch|p2a: Suicune|Suicune|404\/404
+|-damage|p2a: Suicune|354\/404|[from] Stealth Rock
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Gligar|Stealth Rock|p2a: Suicune
+|-fail|p2a: Suicune
+|
+|-heal|p2a: Suicune|379\/404|[from] item: Leftovers
+|turn|78
+|
+|switch|p1a: Reuniclus|Reuniclus, F|424\/424 brn
+|move|p2a: Suicune|Scald|p1a: Reuniclus
+|-damage|p1a: Reuniclus|321\/424 brn
+|
+|-heal|p2a: Suicune|404\/404|[from] item: Leftovers
+|-heal|p1a: Reuniclus|347\/424 brn|[from] item: Leftovers
+|turn|79
+|c|âHellochi|>thinking someone is dumb for something they do in a gme
+|c| furetto|io perÃ² non capisco che dice ahah
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F|336\/384
+|-damage|p2a: Ampharos|288\/384|[from] Stealth Rock
+|-ability|p2a: Ampharos|Mold Breaker
+|switch|p1a: Aromatisse|Aromatisse, M|259\/406
+|
+|-heal|p1a: Aromatisse|284\/406|[from] item: Leftovers
+|turn|80
+|leave|dopeshiva
+|
+|move|p2a: Ampharos|Thunderbolt|p1a: Aromatisse
+|-damage|p1a: Aromatisse|35\/406
+|move|p1a: Aromatisse|Wish|p1a: Aromatisse
+|
+|-heal|p1a: Aromatisse|60\/406|[from] item: Leftovers
+|turn|81
+|
+|move|p1a: Aromatisse|Protect|p1a: Aromatisse
+|-singleturn|p1a: Aromatisse|Protect
+|move|p2a: Ampharos|Volt Switch|p1a: Aromatisse
+|-activate|p1a: Aromatisse|Protect
+|
+|-heal|p1a: Aromatisse|263\/406|[from] move: Wish|[wisher] Aromatisse
+|-heal|p1a: Aromatisse|288\/406|[from] item: Leftovers
+|turn|82
+|
+|switch|p1a: Gligar|Gligar, M|283\/334
+|move|p2a: Ampharos|Volt Switch|p1a: Gligar
+|-immune|p1a: Gligar|[msg]
+|
+|turn|83
+|
+|switch|p2a: Suicune|Suicune|404\/404
+|-damage|p2a: Suicune|354\/404|[from] Stealth Rock
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Gligar|U-turn|p2a: Suicune
+|-damage|p2a: Suicune|327\/404
+|
+|switch|p1a: Reuniclus|Reuniclus, F|347\/424 brn
+|
+|-heal|p2a: Suicune|352\/404|[from] item: Leftovers
+|-heal|p1a: Reuniclus|373\/424 brn|[from] item: Leftovers
+|turn|84
+|join|dopeshiva
+|
+|switch|p2a: Hydreigon|Hydreigon, F|245\/325 brn
+|-damage|p2a: Hydreigon|205\/325 brn|[from] Stealth Rock
+|switch|p1a: Aromatisse|Aromatisse, M|288\/406
+|
+|-heal|p1a: Aromatisse|313\/406|[from] item: Leftovers
+|-damage|p2a: Hydreigon|165\/325 brn|[from] brn
+|turn|85
+|leave|dopeshiva
+|
+|switch|p2a: Crobat|Crobat, F|374\/374
+|-damage|p2a: Crobat|281\/374|[from] Stealth Rock
+|switch|p1a: Reuniclus|Reuniclus, F|373\/424 brn
+|
+|-heal|p2a: Crobat|304\/374|[from] item: Leftovers
+|-heal|p1a: Reuniclus|399\/424 brn|[from] item: Leftovers
+|turn|86
+|
+|move|p2a: Crobat|Defog|p1a: Reuniclus
+|-unboost|p1a: Reuniclus|evasion|1
+|-sideend|p2: spec n|Stealth Rock|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Reuniclus|Psyshock|p2a: Crobat
+|-supereffective|p2a: Crobat
+|-damage|p2a: Crobat|20\/374
+|
+|-heal|p2a: Crobat|43\/374|[from] item: Leftovers
+|-heal|p1a: Reuniclus|424\/424 brn|[from] item: Leftovers
+|turn|87
+|
+|move|p2a: Crobat|U-turn|p1a: Reuniclus
+|-supereffective|p1a: Reuniclus
+|-damage|p1a: Reuniclus|334\/424 brn
+|
+|switch|p2a: Hydreigon|Hydreigon, F|165\/325 brn
+|move|p1a: Reuniclus|Psyshock|p2a: Hydreigon
+|-immune|p2a: Hydreigon|[msg]
+|
+|-heal|p1a: Reuniclus|360\/424 brn|[from] item: Leftovers
+|-damage|p2a: Hydreigon|125\/325 brn|[from] brn
+|turn|88
+|
+|switch|p2a: Medicham|Medicham, M|166\/261
+|switch|p1a: Gligar|Gligar, M|283\/334
+|
+|turn|89
+|
+|switch|p1a: Reuniclus|Reuniclus, F|360\/424 brn
+|move|p2a: Medicham|Ice Punch|p1a: Reuniclus
+|-crit|p1a: Reuniclus
+|-damage|p1a: Reuniclus|174\/424 brn
+|-damage|p2a: Medicham|140\/261|[from] item: Life Orb
+|
+|-heal|p1a: Reuniclus|200\/424 brn|[from] item: Leftovers
+|turn|90
+|c| furetto|sto qui Ã¨un nabbo che si fa un team del genere sperando che l'avversario faccia forfeit per lo sfinimento
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F|288\/384
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Reuniclus|Recover|p1a: Reuniclus
+|-heal|p1a: Reuniclus|412\/424 brn
+|
+|-heal|p1a: Reuniclus|424\/424 brn|[from] item: Leftovers
+|turn|91
+|
+|switch|p2a: Suicune|Suicune|352\/404
+|-ability|p2a: Suicune|Pressure
+|switch|p1a: Gligar|Gligar, M|283\/334
+|
+|-heal|p2a: Suicune|377\/404|[from] item: Leftovers
+|turn|92
+|
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: Gligar|Stealth Rock|p2a: Suicune
+|-sidestart|p2: spec n|move: Stealth Rock
+|
+|-heal|p2a: Suicune|402\/404|[from] item: Leftovers
+|turn|93
+|
+|switch|p1a: Reuniclus|Reuniclus, F|424\/424 brn
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p2a: Suicune|404\/404|[from] item: Leftovers
+|turn|94
+|
+|move|p2a: Suicune|Scald|p1a: Reuniclus
+|-damage|p1a: Reuniclus|240\/424 brn
+|move|p1a: Reuniclus|Calm Mind|p1a: Reuniclus
+|-boost|p1a: Reuniclus|spa|1
+|-boost|p1a: Reuniclus|spd|1
+|
+|-heal|p1a: Reuniclus|266\/424 brn|[from] item: Leftovers
+|turn|95
+|
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: Reuniclus|Recover|p1a: Reuniclus
+|-heal|p1a: Reuniclus|424\/424 brn
+|
+|turn|96
+|
+|move|p2a: Suicune|Scald|p1a: Reuniclus
+|-damage|p1a: Reuniclus|258\/424 brn
+|move|p1a: Reuniclus|Calm Mind|p1a: Reuniclus
+|-boost|p1a: Reuniclus|spa|1
+|-boost|p1a: Reuniclus|spd|1
+|
+|-heal|p1a: Reuniclus|284\/424 brn|[from] item: Leftovers
+|turn|97
+|
+|move|p2a: Suicune|Scald|p1a: Reuniclus
+|-damage|p1a: Reuniclus|157\/424 brn
+|move|p1a: Reuniclus|Calm Mind|p1a: Reuniclus
+|-boost|p1a: Reuniclus|spa|1
+|-boost|p1a: Reuniclus|spd|1
+|
+|-heal|p1a: Reuniclus|183\/424 brn|[from] item: Leftovers
+|turn|98
+|
+|move|p2a: Suicune|Scald|p1a: Reuniclus
+|-crit|p1a: Reuniclus
+|-damage|p1a: Reuniclus|0 fnt
+|faint|p1a: Reuniclus
+|
+|c|âspec n|OMGG
+|
+|switch|p1a: Tentacruel|Tentacruel, F|210\/361 brn
+|turn|99
+|c| furetto|turno 98,vai cosÃ¬
+|c|âspec n|MINGHIEEEE
+|
+|move|p1a: Tentacruel|Acid Spray|p2a: Suicune
+|-damage|p2a: Suicune|389\/404
+|-unboost|p2a: Suicune|spd|2
+|move|p2a: Suicune|Scald|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|113\/361 brn
+|
+|-heal|p1a: Tentacruel|135\/361 brn|[from] item: Leftovers
+|-heal|p2a: Suicune|404\/404|[from] item: Leftovers
+|-damage|p1a: Tentacruel|90\/361 brn|[from] brn
+|turn|100
+|c| furetto|tra 98 turni gli fotti il prossimoo
+|c|âspec n|ma che ora lo faccio fuori subito
+|c|âspec n|in 10 turni
+|c|âspec n|forse 20
+|c| furetto|no si,era per dire
+|
+|move|p1a: Tentacruel|Acid Spray|p2a: Suicune
+|-damage|p2a: Suicune|382\/404
+|-unboost|p2a: Suicune|spd|2
+|move|p2a: Suicune|Scald|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|3\/361 brn
+|
+|-heal|p1a: Tentacruel|25\/361 brn|[from] item: Leftovers
+|-heal|p2a: Suicune|404\/404|[from] item: Leftovers
+|-damage|p1a: Tentacruel|0 fnt|[from] brn
+|faint|p1a: Tentacruel
+|
+|switch|p1a: Aromatisse|Aromatisse, M|313\/406
+|turn|101
+|
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: Aromatisse|Moonblast|p2a: Suicune
+|-damage|p2a: Suicune|313\/404
+|
+|-heal|p2a: Suicune|338\/404|[from] item: Leftovers
+|-heal|p1a: Aromatisse|338\/406|[from] item: Leftovers
+|turn|102
+|
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|move|p1a: Aromatisse|Moonblast|p2a: Suicune
+|-damage|p2a: Suicune|268\/404
+|
+|-heal|p2a: Suicune|293\/404|[from] item: Leftovers
+|-heal|p1a: Aromatisse|363\/406|[from] item: Leftovers
+|turn|103
+|c|âHellochi|gg fren :] try not to get so mad over video games in the futere.
+|-message|Hellochi forfeited.
+|leave|Hellochi
+|
+|win|spec n
+|raw|Ladder updating...
+|player|p1
+|raw|Hellochi's rating: 1445 &rarr; <strong>1413<\/strong><br \/>(-32 for losing)
+|raw|spec n's rating: 1207 &rarr; <strong>1247<\/strong><br \/>(+40 for winning)
+|c|âspec n|AHAHAHAHAHAHAHAHAH
+|c| furetto|minghieee
+|c| furetto|che ha detto?
+|c|âspec n|MINGHIE
+|c|âspec n|ha detto che Ã¨ un coglione
+|c| furetto|AHHAHAHAHAH traduzione leterale proprio
+|c|âspec n|esatto
+|c| furetto|*letterale
+|c|âspec n|questa me la salvo

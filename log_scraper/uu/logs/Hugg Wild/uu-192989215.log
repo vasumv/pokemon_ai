@@ -1,0 +1,406 @@
+|join|cajikalouf
+|join|Hugg Wild
+|player|p1|cajikalouf|265
+|player|p2|Hugg Wild|125
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Absol, F, shiny
+|poke|p1|Whimsicott, F, shiny
+|poke|p1|Zygarde
+|poke|p1|Suicune, shiny
+|poke|p1|Jirachi, shiny
+|poke|p1|Entei, shiny
+|poke|p2|Sharpedo, M
+|poke|p2|Machamp, M
+|poke|p2|Reuniclus, M, shiny
+|poke|p2|Froslass, F
+|poke|p2|Swampert, M
+|poke|p2|Spiritomb, M, shiny
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Absol|Absol, F, shiny|271\/271
+|switch|p2a: Froslass|Froslass, F|344\/344
+|turn|1
+|
+|detailschange|p1a: Absol|Absol-Mega, F, shiny
+|message|Absol has Mega Evolved into Mega Absol!
+|move|p2a: Froslass|Icy Wind|p1a: Absol
+|-damage|p1a: Absol|195\/271
+|-unboost|p1a: Absol|spe|1
+|move|p1a: Absol|Swords Dance|p1a: Absol
+|-boost|p1a: Absol|atk|2
+|
+|turn|2
+|
+|move|p2a: Froslass|Icy Wind|p1a: Absol
+|-crit|p1a: Absol
+|-damage|p1a: Absol|75\/271
+|-unboost|p1a: Absol|spe|1
+|move|p1a: Absol|Knock Off|p2a: Froslass
+|-supereffective|p2a: Froslass
+|-enditem|p2a: Froslass|Focus Sash
+|-damage|p2a: Froslass|1\/344
+|
+|turn|3
+|
+|move|p1a: Absol|Sucker Punch|p2a: Froslass
+|-fail|p2a: Froslass
+|move|p2a: Froslass|Destiny Bond|p2a: Froslass
+|-singlemove|p2a: Froslass|Destiny Bond
+|
+|turn|4
+|
+|move|p1a: Absol|Sucker Punch|p2a: Froslass
+|-supereffective|p2a: Froslass
+|-damage|p2a: Froslass|0 fnt
+|faint|p2a: Froslass
+|-activate|p2a: Froslass|Destiny Bond
+|faint|p1a: Absol
+|
+|
+|switch|p1a: Jirachi|Jirachi, shiny|341\/341
+|switch|p2a: Swampert|Swampert, M|403\/403
+|turn|5
+|
+|move|p1a: Jirachi|U-turn|p2a: Swampert
+|-damage|p2a: Swampert|346\/403
+|
+|switch|p1a: Whimsicott|Whimsicott, F, shiny|323\/323
+|move|p2a: Swampert|Stealth Rock|p1a: Whimsicott
+|-sidestart|p1: cajikalouf|move: Stealth Rock
+|
+|-heal|p2a: Swampert|371\/403|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: Reuniclus|Reuniclus, M, shiny|409\/409
+|move|p1a: Whimsicott|Encore|p2a: Reuniclus
+|-fail|p2a: Reuniclus
+|
+|turn|7
+|
+|move|p1a: Whimsicott|Stun Spore|p2a: Reuniclus
+|-status|p2a: Reuniclus|par
+|move|p2a: Reuniclus|Trick Room|p2a: Reuniclus
+|-fieldstart|move: Trick Room|[of] p2a: Reuniclus
+|
+|turn|8
+|
+|move|p1a: Whimsicott|Encore|p2a: Reuniclus
+|-start|p2a: Reuniclus|Encore
+|cant|p2a: Reuniclus|par
+|
+|turn|9
+|
+|switch|p2a: Machamp|Machamp, M|364\/364
+|move|p1a: Whimsicott|Moonblast|p2a: Machamp
+|-supereffective|p2a: Machamp
+|-damage|p2a: Machamp|220\/364
+|-unboost|p2a: Machamp|spa|1
+|
+|turn|10
+|
+|move|p2a: Machamp|Heavy Slam|p1a: Whimsicott
+|-supereffective|p1a: Whimsicott
+|-damage|p1a: Whimsicott|81\/323
+|move|p1a: Whimsicott|Moonblast|p2a: Machamp
+|-supereffective|p2a: Machamp
+|-damage|p2a: Machamp|92\/364
+|-unboost|p2a: Machamp|spa|1
+|
+|-heal|p1a: Whimsicott|101\/323|[from] item: Leftovers
+|turn|11
+|
+|switch|p1a: Suicune|Suicune, shiny|403\/403
+|-damage|p1a: Suicune|353\/403|[from] Stealth Rock
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Machamp|Bullet Punch|p1a: Suicune
+|-resisted|p1a: Suicune
+|-damage|p1a: Suicune|336\/403
+|
+|-heal|p1a: Suicune|361\/403|[from] item: Leftovers
+|-fieldend|move: Trick Room
+|turn|12
+|
+|move|p1a: Suicune|Scald|p2a: Machamp
+|-damage|p2a: Machamp|22\/364
+|move|p2a: Machamp|Knock Off|p1a: Suicune
+|-crit|p1a: Suicune
+|-damage|p1a: Suicune|240\/403
+|-enditem|p1a: Suicune|Leftovers|[from] move: Knock Off|[of] p2a: Machamp
+|
+|turn|13
+|
+|switch|p2a: Swampert|Swampert, M|371\/403
+|move|p1a: Suicune|Scald|p2a: Swampert
+|-damage|p2a: Swampert|272\/403
+|
+|-heal|p2a: Swampert|297\/403|[from] item: Leftovers
+|turn|14
+|
+|move|p1a: Suicune|Calm Mind|p1a: Suicune
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|move|p2a: Swampert|Roar|p1a: Suicune
+|drag|p1a: Jirachi|Jirachi, shiny|341\/341
+|-damage|p1a: Jirachi|320\/341|[from] Stealth Rock
+|
+|-heal|p2a: Swampert|322\/403|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Jirachi|U-turn|p2a: Swampert
+|-damage|p2a: Swampert|269\/403
+|
+|switch|p1a: Whimsicott|Whimsicott, F, shiny|101\/323
+|-damage|p1a: Whimsicott|61\/323|[from] Stealth Rock
+|move|p2a: Swampert|Scald|p1a: Whimsicott
+|-resisted|p1a: Whimsicott
+|-damage|p1a: Whimsicott|12\/323
+|-status|p1a: Whimsicott|brn
+|
+|-heal|p1a: Whimsicott|32\/323 brn|[from] item: Leftovers
+|-heal|p2a: Swampert|294\/403|[from] item: Leftovers
+|-damage|p1a: Whimsicott|0 fnt|[from] brn
+|faint|p1a: Whimsicott
+|
+|switch|p1a: Suicune|Suicune, shiny|240\/403
+|-damage|p1a: Suicune|190\/403|[from] Stealth Rock
+|-ability|p1a: Suicune|Pressure
+|turn|16
+|
+|move|p1a: Suicune|Scald|p2a: Swampert
+|-damage|p2a: Swampert|198\/403
+|move|p2a: Swampert|Roar|p1a: Suicune
+|drag|p1a: Jirachi|Jirachi, shiny|320\/341
+|-damage|p1a: Jirachi|299\/341|[from] Stealth Rock
+|
+|-heal|p2a: Swampert|223\/403|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Jirachi|Iron Head|p2a: Swampert
+|-resisted|p2a: Swampert
+|-damage|p2a: Swampert|178\/403
+|cant|p2a: Swampert|flinch
+|
+|-heal|p2a: Swampert|203\/403|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Jirachi|Iron Head|p2a: Swampert
+|-resisted|p2a: Swampert
+|-damage|p2a: Swampert|161\/403
+|cant|p2a: Swampert|flinch
+|
+|-heal|p2a: Swampert|186\/403|[from] item: Leftovers
+|turn|19
+|
+|switch|p1a: Entei|Entei, shiny|372\/372
+|-damage|p1a: Entei|279\/372|[from] Stealth Rock
+|-ability|p1a: Entei|Pressure
+|move|p2a: Swampert|Scald|p1a: Entei
+|-supereffective|p1a: Entei
+|-damage|p1a: Entei|151\/372
+|
+|-heal|p2a: Swampert|211\/403|[from] item: Leftovers
+|turn|20
+|
+|switch|p2a: Machamp|Machamp, M|22\/364
+|move|p1a: Entei|Sacred Fire|p2a: Machamp
+|-damage|p2a: Machamp|0 fnt
+|faint|p2a: Machamp
+|
+|
+|switch|p2a: Reuniclus|Reuniclus, M, shiny|409\/409 par
+|turn|21
+|
+|move|p1a: Entei|Sacred Fire|p2a: Reuniclus
+|-damage|p2a: Reuniclus|202\/409 par
+|move|p2a: Reuniclus|Trick Room|p2a: Reuniclus
+|-fieldstart|move: Trick Room|[of] p2a: Reuniclus
+|
+|turn|22
+|
+|move|p2a: Reuniclus|Psyshock|p1a: Entei
+|-damage|p1a: Entei|0 fnt
+|faint|p1a: Entei
+|
+|
+|switch|p1a: Jirachi|Jirachi, shiny|299\/341
+|-damage|p1a: Jirachi|278\/341|[from] Stealth Rock
+|turn|23
+|join|Samsung2310
+|
+|move|p2a: Reuniclus|Shadow Ball|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|34\/341
+|-unboost|p1a: Jirachi|spd|1
+|move|p1a: Jirachi|U-turn|p2a: Reuniclus
+|-supereffective|p2a: Reuniclus
+|-damage|p2a: Reuniclus|34\/409 par
+|
+|switch|p1a: Zygarde|Zygarde|407\/407
+|-damage|p1a: Zygarde|382\/407|[from] Stealth Rock
+|-ability|p1a: Zygarde|Aura Break
+|
+|-heal|p1a: Zygarde|407\/407|[from] item: Leftovers
+|turn|24
+|
+|move|p2a: Reuniclus|Psyshock|p1a: Zygarde
+|-damage|p1a: Zygarde|250\/407
+|move|p1a: Zygarde|Substitute|p1a: Zygarde
+|-start|p1a: Zygarde|Substitute
+|-damage|p1a: Zygarde|149\/407
+|
+|-heal|p1a: Zygarde|174\/407|[from] item: Leftovers
+|turn|25
+|
+|cant|p2a: Reuniclus|par
+|move|p1a: Zygarde|Coil|p1a: Zygarde
+|-boost|p1a: Zygarde|atk|1
+|-boost|p1a: Zygarde|def|1
+|-boost|p1a: Zygarde|accuracy|1
+|
+|-heal|p1a: Zygarde|199\/407|[from] item: Leftovers
+|-fieldend|move: Trick Room
+|turn|26
+|
+|move|p1a: Zygarde|Coil|p1a: Zygarde
+|-boost|p1a: Zygarde|atk|1
+|-boost|p1a: Zygarde|def|1
+|-boost|p1a: Zygarde|accuracy|1
+|cant|p2a: Reuniclus|par
+|
+|-heal|p1a: Zygarde|224\/407|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: Zygarde|Earthquake|p2a: Reuniclus
+|-damage|p2a: Reuniclus|0 fnt
+|faint|p2a: Reuniclus
+|
+|-heal|p1a: Zygarde|249\/407|[from] item: Leftovers
+|
+|switch|p2a: Spiritomb|Spiritomb, M, shiny|294\/294
+|turn|28
+|
+|move|p1a: Zygarde|Earthquake|p2a: Spiritomb
+|-damage|p2a: Spiritomb|56\/294
+|move|p2a: Spiritomb|Will-O-Wisp|p1a: Zygarde
+|-status|p1a: Zygarde|brn
+|
+|-heal|p1a: Zygarde|274\/407 brn|[from] item: Leftovers
+|-damage|p1a: Zygarde|224\/407 brn|[from] brn
+|turn|29
+|
+|move|p2a: Spiritomb|Sucker Punch|p1a: Zygarde
+|-damage|p1a: Zygarde|161\/407 brn
+|move|p1a: Zygarde|Earthquake|p2a: Spiritomb
+|-damage|p2a: Spiritomb|0 fnt
+|faint|p2a: Spiritomb
+|
+|-heal|p1a: Zygarde|186\/407 brn|[from] item: Leftovers
+|-damage|p1a: Zygarde|136\/407 brn|[from] brn
+|
+|switch|p2a: Sharpedo|Sharpedo, M|281\/281
+|turn|30
+|
+|move|p2a: Sharpedo|Protect|p2a: Sharpedo
+|-singleturn|p2a: Sharpedo|Protect
+|move|p1a: Zygarde|Earthquake|p2a: Sharpedo
+|-activate|p2a: Sharpedo|Protect
+|
+|-heal|p1a: Zygarde|161\/407 brn|[from] item: Leftovers
+|-damage|p1a: Zygarde|111\/407 brn|[from] brn
+|-boost|p2a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|31
+|
+|switch|p2a: Swampert|Swampert, M|211\/403
+|move|p1a: Zygarde|Earthquake|p2a: Swampert
+|-damage|p2a: Swampert|127\/403
+|
+|-heal|p1a: Zygarde|136\/407 brn|[from] item: Leftovers
+|-heal|p2a: Swampert|152\/403|[from] item: Leftovers
+|-damage|p1a: Zygarde|86\/407 brn|[from] brn
+|turn|32
+|
+|move|p1a: Zygarde|Earthquake|p2a: Swampert
+|-damage|p2a: Swampert|59\/403
+|move|p2a: Swampert|Roar|p1a: Zygarde
+|drag|p1a: Jirachi|Jirachi, shiny|34\/341
+|-damage|p1a: Jirachi|13\/341|[from] Stealth Rock
+|
+|-heal|p2a: Swampert|84\/403|[from] item: Leftovers
+|turn|33
+|join|Stupidity is Bad
+|
+|move|p1a: Jirachi|Healing Wish|p1a: Jirachi
+|faint|p1a: Jirachi
+|move|p2a: Swampert|Earthquake|p1: Jirachi|[notarget]
+|-notarget
+|
+|-heal|p2a: Swampert|109\/403|[from] item: Leftovers
+|
+|switch|p1a: Zygarde|Zygarde|86\/407 brn
+|-heal|p1a: Zygarde|407\/407|[from] move: Healing Wish
+|-damage|p1a: Zygarde|382\/407|[from] Stealth Rock
+|-ability|p1a: Zygarde|Aura Break
+|turn|34
+|c| Stupidity is Bad|RIP
+|
+|move|p1a: Zygarde|Earthquake|p2a: Swampert
+|-damage|p2a: Swampert|19\/403
+|move|p2a: Swampert|Roar|p1a: Zygarde
+|drag|p1a: Suicune|Suicune, shiny|190\/403
+|-damage|p1a: Suicune|140\/403|[from] Stealth Rock
+|-ability|p1a: Suicune|Pressure
+|
+|-heal|p2a: Swampert|44\/403|[from] item: Leftovers
+|turn|35
+|c| Stupidity is Bad|#Rekt
+|
+|move|p1a: Suicune|Scald|p2a: Swampert
+|-damage|p2a: Swampert|0 fnt
+|faint|p2a: Swampert
+|
+|
+|switch|p2a: Sharpedo|Sharpedo, M|281\/281
+|turn|36
+|
+|detailschange|p2a: Sharpedo|Sharpedo-Mega, M
+|message|Sharpedo has Mega Evolved into Mega Sharpedo!
+|move|p2a: Sharpedo|Crunch|p1a: Suicune
+|-crit|p1a: Suicune
+|-damage|p1a: Suicune|0 fnt
+|faint|p1a: Suicune
+|
+|
+|switch|p1a: Zygarde|Zygarde|382\/407
+|-damage|p1a: Zygarde|357\/407|[from] Stealth Rock
+|-ability|p1a: Zygarde|Aura Break
+|turn|37
+|
+|move|p2a: Sharpedo|Ice Fang|p1a: Zygarde
+|-supereffective|p1a: Zygarde
+|-damage|p1a: Zygarde|0 fnt
+|faint|p1a: Zygarde
+|
+|win|Hugg Wild
+|raw|Ladder updating...
+|c| Samsung2310|**REKT**
+|c|âHugg Wild|gg
+|c| Stupidity is Bad|gg
+|c| Samsung2310|gg
+|leave|cajikalouf
+|player|p1
+|raw|cajikalouf's rating: 1429 &rarr; <strong>1412<\/strong><br \/>(-17 for losing)
+|raw|Hugg Wild's rating: 1471 &rarr; <strong>1489<\/strong><br \/>(+18 for winning)

@@ -1,0 +1,141 @@
+|join|AlekDesu
+|join|Rattataz
+|player|p1|AlekDesu|190
+|player|p2|Rattataz|265
+|gametype|singles
+|tier|OU (beta)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Diggersby, F
+|poke|p1|Zapdos
+|poke|p1|Smeargle, M
+|poke|p1|Dragonite, F
+|poke|p1|Charizard, M
+|poke|p1|Excadrill, F
+|poke|p2|Charizard, F
+|poke|p2|Vaporeon, M
+|poke|p2|Gorebyss, M
+|poke|p2|Forretress, F
+|poke|p2|Ditto
+|poke|p2|Meowstic, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: #Chiant|Smeargle, M|314\/314
+|switch|p2a: Ditto|Ditto|300\/300
+|-transform|p2a: Ditto|p1a: #Chiant
+|turn|1
+|callback|decision
+|
+|move|p1a: #Chiant|Spore|p2a: Ditto
+|-status|p2a: Ditto|slp
+|cant|p2a: Ditto|slp
+|
+|turn|2
+|callback|decision
+|
+|-curestatus|p2a: Ditto|slp
+|move|p2a: Ditto|Spore|p1a: #Chiant
+|-status|p1a: #Chiant|slp
+|cant|p1a: #Chiant|slp
+|
+|turn|3
+|callback|decision
+|join|Ruissu
+|
+|switch|p1a: TehPower|Charizard, M|298\/298
+|move|p2a: Ditto|Stealth Rock|p1a: TehPower
+|-sidestart|p1: AlekDesu|move: Stealth Rock
+|
+|turn|4
+|callback|decision
+|
+|switch|p2a: Vaporeon|Vaporeon, M|464\/464
+|move|p1a: TehPower|Dragon Dance|p1a: TehPower
+|-boost|p1a: TehPower|atk|1
+|-boost|p1a: TehPower|spe|1
+|
+|turn|5
+|callback|decision
+|
+|-formechange|p1a: TehPower|Charizard-Mega-X
+|message|Charizard mega-evolved into Charizard-Mega-X!
+|move|p1a: TehPower|Outrage|p2a: Vaporeon
+|-crit|p2a: Vaporeon
+|-damage|p2a: Vaporeon|0 fnt
+|faint|p2a: Vaporeon
+|
+|callback|decision
+|chat|Rattataz|Fucking Crit
+|chat|AlekDesu|not sure if mattered
+|
+|switch|p2a: Forretress|Forretress, F|311\/311
+|turn|6
+|callback|decision
+|
+|move|p1a: TehPower|Outrage|p2a: Forretress
+|-resisted|p2a: Forretress
+|-damage|p2a: Forretress|183\/311
+|-damage|p1a: TehPower|249\/298|[from] item: Rocky Helmet|[of] p2a: Forretress
+|move|p2a: Forretress|Spikes|p1a: TehPower
+|-sidestart|p1: AlekDesu|Spikes
+|
+|-end|p1a: TehPower|rampage
+|-start|p1a: TehPower|confusion
+|turn|7
+|callback|decision
+|
+|-activate|p1a: TehPower|confusion
+|move|p1a: TehPower|Brick Break|p2a: Forretress
+|-damage|p2a: Forretress|81\/311
+|-damage|p1a: TehPower|200\/298|[from] item: Rocky Helmet|[of] p2a: Forretress
+|move|p2a: Forretress|Spikes|p1a: TehPower
+|-sidestart|p1: AlekDesu|Spikes
+|
+|turn|8
+|callback|decision
+|
+|-end|p1a: TehPower|confusion
+|move|p1a: TehPower|Dragon Dance|p1a: TehPower
+|-boost|p1a: TehPower|atk|1
+|-boost|p1a: TehPower|spe|1
+|move|p2a: Forretress|Spikes|p1a: TehPower
+|-sidestart|p1: AlekDesu|Spikes
+|
+|turn|9
+|callback|decision
+|
+|move|p1a: TehPower|Brick Break|p2a: Forretress
+|-damage|p2a: Forretress|0 fnt
+|-damage|p1a: TehPower|151\/298|[from] item: Rocky Helmet|[of] p2a: Forretress
+|faint|p2a: Forretress
+|
+|callback|decision
+|
+|switch|p2a: Ditto|Ditto|300\/300
+|-transform|p2a: Ditto|p1a: TehPower
+|turn|10
+|callback|decision
+|
+|move|p2a: Ditto|Outrage|p1a: TehPower
+|-supereffective|p1a: TehPower
+|-damage|p1a: TehPower|0 fnt
+|faint|p1a: TehPower
+|
+|callback|decision
+|-message|AlekDesu forfeited.
+|
+|win|Rattataz
+|raw|Ladder updating...
+|leave|AlekDesu
+|player|p1
+|raw|Ladder (probably) updated, but score could not be retrieved (timeout).
+|raw|Ladder (probably) updated, but score could not be retrieved (Error: socket hang up).

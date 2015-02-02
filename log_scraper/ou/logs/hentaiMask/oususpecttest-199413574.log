@@ -1,0 +1,306 @@
+|join|XGC x TeMPaH
+|join|hentaiMask
+|player|p1|XGC x TeMPaH|54
+|player|p2|hentaiMask|75
+|gametype|singles
+|gen|6
+|tier|OU (suspect test)
+|rated
+|clearpoke
+|poke|p1|Heatran, M
+|poke|p1|Breloom, M
+|poke|p1|Slowbro, M
+|poke|p1|Rotom-Wash
+|poke|p1|Diggersby, M
+|poke|p1|Skarmory, M
+|poke|p2|Zygarde
+|poke|p2|Victini
+|poke|p2|Scolipede, F
+|poke|p2|Whimsicott, F
+|poke|p2|Blastoise, M
+|poke|p2|Bisharp, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Diggersby|Diggersby, M|311\/311
+|switch|p2a: Scolipede|Scolipede, F|262\/262
+|turn|1
+|
+|move|p1a: Diggersby|Earthquake|p2a: Scolipede
+|-damage|p2a: Scolipede|30\/262
+|move|p2a: Scolipede|Swords Dance|p2a: Scolipede
+|-boost|p2a: Scolipede|atk|2
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|2
+|
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|move|p2a: Scolipede|Baton Pass|p2a: Scolipede
+|
+|switch|p2a: Bisharp|Bisharp, F|271\/271
+|
+|turn|3
+|
+|move|p2a: Bisharp|Knock Off|p1a: Skarmory
+|-damage|p1a: Skarmory|96\/334
+|-enditem|p1a: Skarmory|Leftovers|[from] move: Knock Off|[of] p2a: Bisharp
+|move|p1a: Skarmory|Counter|p2a: Bisharp
+|-damage|p2a: Bisharp|0 fnt
+|faint|p2a: Bisharp
+|
+|
+|switch|p2a: Zygarde|Zygarde|395\/395
+|-ability|p2a: Zygarde|Aura Break
+|turn|4
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|move|p2a: Zygarde|Coil|p2a: Zygarde
+|-boost|p2a: Zygarde|atk|1
+|-boost|p2a: Zygarde|def|1
+|-boost|p2a: Zygarde|accuracy|1
+|
+|turn|5
+|
+|switch|p2a: Victini|Victini|341\/341
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Victini
+|-fail|p2a: Victini
+|
+|turn|6
+|
+|move|p2a: Victini|V-create|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|103\/304
+|-unboost|p2a: Victini|def|1
+|-unboost|p2a: Victini|spd|1
+|-unboost|p2a: Victini|spe|1
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Victini
+|-damage|p2a: Victini|218\/341
+|
+|switch|p1a: Heatran|Heatran, M|384\/384
+|
+|turn|7
+|
+|switch|p2a: Blastoise|Blastoise, M|343\/343
+|move|p1a: Heatran|Stealth Rock|p2a: Blastoise
+|-sidestart|p2: hentaiMask|move: Stealth Rock
+|
+|turn|8
+|
+|detailschange|p2a: Blastoise|Blastoise-Mega, M
+|-mega|p2a: Blastoise|Blastoise|Blastoisinite
+|move|p2a: Blastoise|Aura Sphere|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|166\/384
+|move|p1a: Heatran|Toxic|p2a: Blastoise
+|-status|p2a: Blastoise|tox
+|
+|-heal|p1a: Heatran|190\/384|[from] item: Leftovers
+|-damage|p2a: Blastoise|322\/343 tox|[from] psn
+|turn|9
+|
+|switch|p1a: Breloom|Breloom, M|323\/323
+|move|p2a: Blastoise|Rapid Spin|p1a: Breloom
+|-damage|p1a: Breloom|304\/323
+|-sideend|p2: hentaiMask|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Blastoise
+|
+|-damage|p2a: Blastoise|280\/343 tox|[from] psn
+|-status|p1a: Breloom|tox|[from] item: Toxic Orb
+|turn|10
+|
+|switch|p2a: Whimsicott|Whimsicott, F|324\/324
+|move|p1a: Breloom|Leech Seed|p2a: Whimsicott
+|-immune|p2a: Whimsicott|[msg]
+|
+|-heal|p1a: Breloom|323\/323 tox|[from] ability: Poison Heal
+|turn|11
+|
+|switch|p1a: Heatran|Heatran, M|190\/384
+|move|p2a: Whimsicott|Stun Spore|p1a: Heatran
+|-status|p1a: Heatran|par
+|
+|-heal|p1a: Heatran|214\/384 par|[from] item: Leftovers
+|turn|12
+|
+|switch|p2a: Victini|Victini|218\/341
+|move|p1a: Heatran|Stealth Rock|p2a: Victini
+|-sidestart|p2: hentaiMask|move: Stealth Rock
+|
+|-heal|p1a: Heatran|238\/384 par|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: Skarmory|Skarmory, M|96\/334
+|move|p2a: Victini|V-create|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|-unboost|p2a: Victini|def|1
+|-unboost|p2a: Victini|spd|1
+|-unboost|p2a: Victini|spe|1
+|faint|p1a: Skarmory
+|
+|
+|switch|p1a: Diggersby|Diggersby, M|311\/311
+|turn|14
+|
+|switch|p2a: Whimsicott|Whimsicott, F|324\/324
+|-damage|p2a: Whimsicott|284\/324|[from] Stealth Rock
+|move|p1a: Diggersby|Return|p2a: Whimsicott
+|-damage|p2a: Whimsicott|127\/324
+|
+|-heal|p2a: Whimsicott|147\/324|[from] item: Leftovers
+|turn|15
+|
+|move|p2a: Whimsicott|Stun Spore|p1a: Diggersby
+|-status|p1a: Diggersby|par
+|move|p1a: Diggersby|Return|p2a: Whimsicott
+|-damage|p2a: Whimsicott|0 fnt
+|faint|p2a: Whimsicott
+|
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|280\/343 tox
+|-damage|p2a: Blastoise|238\/343 tox|[from] Stealth Rock
+|turn|16
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|103\/304
+|move|p2a: Blastoise|Rapid Spin|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|89\/304
+|-sideend|p2: hentaiMask|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Blastoise
+|
+|-heal|p1a: Rotom-Wash|108\/304|[from] item: Leftovers
+|-damage|p2a: Blastoise|217\/343 tox|[from] psn
+|turn|17
+|
+|move|p2a: Blastoise|Dark Pulse|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|
+|-damage|p2a: Blastoise|175\/343 tox|[from] psn
+|
+|switch|p1a: Breloom|Breloom, M|323\/323 tox
+|turn|18
+|
+|move|p2a: Blastoise|Aura Sphere|p1a: Breloom
+|-damage|p1a: Breloom|154\/323 tox
+|move|p1a: Breloom|Leech Seed|p2a: Blastoise
+|-start|p2a: Blastoise|move: Leech Seed
+|
+|-damage|p2a: Blastoise|133\/343 tox|[from] Leech Seed|[of] p1a: Breloom
+|-heal|p1a: Breloom|196\/323 tox|[silent]
+|-damage|p2a: Blastoise|70\/343 tox|[from] psn
+|-heal|p1a: Breloom|236\/323 tox|[from] ability: Poison Heal
+|turn|19
+|
+|move|p2a: Blastoise|Aura Sphere|p1a: Breloom
+|-damage|p1a: Breloom|74\/323 tox
+|move|p1a: Breloom|Spore|p2a: Blastoise
+|-fail|p2a: Blastoise
+|
+|-damage|p2a: Blastoise|28\/343 tox|[from] Leech Seed|[of] p1a: Breloom
+|-heal|p1a: Breloom|116\/323 tox|[silent]
+|-damage|p2a: Blastoise|0 fnt|[from] psn
+|-heal|p1a: Breloom|156\/323 tox|[from] ability: Poison Heal
+|faint|p2a: Blastoise
+|
+|switch|p2a: Scolipede|Scolipede, F|30\/262
+|turn|20
+|
+|move|p2a: Scolipede|Poison Jab|p1a: Breloom
+|-supereffective|p1a: Breloom
+|-damage|p1a: Breloom|0 fnt
+|faint|p1a: Breloom
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|
+|switch|p1a: Diggersby|Diggersby, M|311\/311 par
+|turn|21
+|
+|move|p2a: Scolipede|Earthquake|p1a: Diggersby
+|-damage|p1a: Diggersby|179\/311 par
+|move|p1a: Diggersby|Earthquake|p2a: Scolipede
+|-damage|p2a: Scolipede|0 fnt
+|faint|p2a: Scolipede
+|
+|
+|switch|p2a: Zygarde|Zygarde|395\/395
+|-ability|p2a: Zygarde|Aura Break
+|turn|22
+|
+|switch|p1a: Slowbro|Slowbro, M|390\/390
+|move|p2a: Zygarde|Coil|p2a: Zygarde
+|-boost|p2a: Zygarde|atk|1
+|-boost|p2a: Zygarde|def|1
+|-boost|p2a: Zygarde|accuracy|1
+|
+|turn|23
+|
+|switch|p2a: Victini|Victini|218\/341
+|detailschange|p1a: Slowbro|Slowbro-Mega, M
+|-mega|p1a: Slowbro|Slowbro|Slowbronite
+|move|p1a: Slowbro|Scald|p2a: Victini
+|-supereffective|p2a: Victini
+|-damage|p2a: Victini|0 fnt
+|faint|p2a: Victini
+|
+|
+|switch|p2a: Zygarde|Zygarde|395\/395
+|-ability|p2a: Zygarde|Aura Break
+|turn|24
+|
+|move|p2a: Zygarde|Coil|p2a: Zygarde
+|-boost|p2a: Zygarde|atk|1
+|-boost|p2a: Zygarde|def|1
+|-boost|p2a: Zygarde|accuracy|1
+|move|p1a: Slowbro|Scald|p2a: Zygarde
+|-damage|p2a: Zygarde|277\/395
+|
+|-heal|p2a: Zygarde|301\/395|[from] item: Leftovers
+|turn|25
+|
+|move|p2a: Zygarde|Earthquake|p1a: Slowbro
+|-damage|p1a: Slowbro|279\/390
+|move|p1a: Slowbro|Calm Mind|p1a: Slowbro
+|-boost|p1a: Slowbro|spa|1
+|-boost|p1a: Slowbro|spd|1
+|
+|-heal|p2a: Zygarde|325\/395|[from] item: Leftovers
+|turn|26
+|
+|move|p2a: Zygarde|Coil|p2a: Zygarde
+|-boost|p2a: Zygarde|atk|1
+|-boost|p2a: Zygarde|def|1
+|-boost|p2a: Zygarde|accuracy|1
+|move|p1a: Slowbro|Slack Off|p1a: Slowbro
+|-heal|p1a: Slowbro|390\/390
+|
+|-heal|p2a: Zygarde|349\/395|[from] item: Leftovers
+|turn|27
+|
+|move|p2a: Zygarde|Earthquake|p1a: Slowbro
+|-damage|p1a: Slowbro|239\/390
+|move|p1a: Slowbro|Scald|p2a: Zygarde
+|-damage|p2a: Zygarde|160\/395
+|
+|-heal|p2a: Zygarde|184\/395|[from] item: Leftovers
+|turn|28
+|
+|move|p2a: Zygarde|Earthquake|p1a: Slowbro
+|-damage|p1a: Slowbro|76\/390
+|move|p1a: Slowbro|Scald|p2a: Zygarde
+|-damage|p2a: Zygarde|0 fnt
+|faint|p2a: Zygarde
+|
+|win|XGC x TeMPaH
+|raw|Ladder updating...
+|raw|XGC x TeMPaH's rating: 1315 &rarr; <strong>1341<\/strong><br \/>(+26 for winning)
+|raw|hentaiMask's rating: 1429 &rarr; <strong>1402<\/strong><br \/>(-27 for losing)
+|c|âXGC x TeMPaH|gg
+|leave|hentaiMask
+|player|p2

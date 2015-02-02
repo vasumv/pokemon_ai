@@ -1,0 +1,385 @@
+|join|SJR Queen
+|join|Uncle Wiseau
+|player|p1|SJR Queen|170
+|player|p2|Uncle Wiseau|101
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|clearpoke
+|poke|p1|Vivillon, F
+|poke|p1|Jolteon, F
+|poke|p1|Mew
+|poke|p1|Nidoqueen, F
+|poke|p1|Rotom-Heat
+|poke|p1|Suicune
+|poke|p2|Smeargle, M
+|poke|p2|Ditto
+|poke|p2|Blastoise, M
+|poke|p2|Tangrowth, F
+|poke|p2|Rotom-Heat
+|poke|p2|Heracross, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Jolteon|Jolteon, F|271\/271
+|switch|p2a: Smeargle|Smeargle, M|314\/314
+|turn|1
+|
+|move|p1a: Jolteon|Substitute|p1a: Jolteon
+|-start|p1a: Jolteon|Substitute
+|-damage|p1a: Jolteon|204\/271
+|move|p2a: Smeargle|Spore|p1a: Jolteon
+|
+|-heal|p1a: Jolteon|220\/271|[from] item: Leftovers
+|turn|2
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|241\/241
+|move|p1a: Jolteon|Thunderbolt|p2a: Rotom-Heat
+|-resisted|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|179\/241
+|
+|-heal|p1a: Jolteon|236\/271|[from] item: Leftovers
+|turn|3
+|
+|move|p2a: Rotom-Heat|Overheat|p1a: Jolteon
+|-end|p1a: Jolteon|Substitute
+|-unboost|p2a: Rotom-Heat|spa|2
+|move|p1a: Jolteon|Thunderbolt|p2a: Rotom-Heat
+|-resisted|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|110\/241
+|
+|-heal|p1a: Jolteon|252\/271|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Tangrowth|Tangrowth, F|404\/404
+|move|p1a: Jolteon|Substitute|p1a: Jolteon
+|-start|p1a: Jolteon|Substitute
+|-damage|p1a: Jolteon|185\/271
+|
+|-heal|p1a: Jolteon|201\/271|[from] item: Leftovers
+|turn|5
+|
+|move|p1a: Jolteon|Baton Pass|p1a: Jolteon
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|241\/241
+|move|p2a: Tangrowth|Knock Off|p1a: Rotom-Heat
+|-end|p1a: Rotom-Heat|Substitute
+|
+|turn|6
+|
+|switch|p2a: Ditto|Ditto|300\/300
+|-transform|p2a: Ditto|p1a: Rotom-Heat
+|move|p1a: Rotom-Heat|Overheat|p2a: Ditto
+|-resisted|p2a: Ditto
+|-damage|p2a: Ditto|204\/300
+|-unboost|p1a: Rotom-Heat|spa|2
+|
+|turn|7
+|
+|move|p1a: Rotom-Heat|Overheat|p2a: Ditto
+|-resisted|p2a: Ditto
+|-damage|p2a: Ditto|159\/300
+|-unboost|p1a: Rotom-Heat|spa|2
+|move|p2a: Ditto|Overheat|p1a: Rotom-Heat
+|-resisted|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|147\/241
+|-unboost|p2a: Ditto|spa|2
+|
+|turn|8
+|
+|switch|p2a: Smeargle|Smeargle, M|314\/314
+|switch|p1a: Mew|Mew|404\/404
+|
+|turn|9
+|
+|move|p2a: Smeargle|Spore|p1a: Mew
+|-status|p1a: Mew|slp
+|cant|p1a: Mew|slp
+|
+|turn|10
+|
+|move|p2a: Smeargle|Stealth Rock|p1a: Mew
+|-sidestart|p1: SJR Queen|move: Stealth Rock
+|-curestatus|p1a: Mew|slp
+|move|p1a: Mew|Stealth Rock|p2a: Smeargle
+|-sidestart|p2: Uncle Wiseau|move: Stealth Rock
+|
+|turn|11
+|
+|move|p2a: Smeargle|Spore|p1a: Mew
+|-status|p1a: Mew|slp
+|cant|p1a: Mew|slp
+|
+|turn|12
+|
+|move|p2a: Smeargle|Sticky Web|p1a: Mew
+|-sidestart|p1: SJR Queen|move: Sticky Web
+|cant|p1a: Mew|slp
+|
+|turn|13
+|
+|switch|p2a: Blastoise|Blastoise, M|362\/362
+|-damage|p2a: Blastoise|317\/362|[from] Stealth Rock
+|-curestatus|p1a: Mew|slp
+|move|p1a: Mew|Defog|p2a: Blastoise
+|-unboost|p2a: Blastoise|evasion|1
+|-sideend|p2: Uncle Wiseau|Stealth Rock|[from] move: Defog|[of] p2a: Blastoise
+|-sideend|p1: SJR Queen|Stealth Rock|[from] move: Defog|[of] p1a: Mew
+|-sideend|p1: SJR Queen|Sticky Web|[from] move: Defog|[of] p1a: Mew
+|
+|turn|14
+|
+|-formechange|p2a: Blastoise|Blastoise-Mega
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p1a: Mew|Stealth Rock|p2a: Blastoise
+|-sidestart|p2: Uncle Wiseau|move: Stealth Rock
+|move|p2a: Blastoise|Dark Pulse|p1a: Mew
+|-supereffective|p1a: Mew
+|-damage|p1a: Mew|174\/404
+|
+|-heal|p1a: Mew|199\/404|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Mew|U-turn|p2a: Blastoise
+|-damage|p2a: Blastoise|265\/362
+|
+|switch|p1a: Jolteon|Jolteon, F|201\/271
+|move|p2a: Blastoise|Rapid Spin|p1a: Jolteon
+|-damage|p1a: Jolteon|180\/271
+|-sideend|p2: Uncle Wiseau|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Blastoise
+|
+|-heal|p1a: Jolteon|196\/271|[from] item: Leftovers
+|turn|16
+|
+|switch|p2a: Tangrowth|Tangrowth, F|404\/404
+|move|p1a: Jolteon|Thunderbolt|p2a: Tangrowth
+|-resisted|p2a: Tangrowth
+|-damage|p2a: Tangrowth|350\/404
+|
+|-heal|p1a: Jolteon|212\/271|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Jolteon|Baton Pass|p1a: Jolteon
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|147\/241
+|move|p2a: Tangrowth|Sludge Bomb|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|76\/241
+|-status|p1a: Rotom-Heat|psn
+|
+|-damage|p1a: Rotom-Heat|46\/241 psn|[from] psn
+|turn|18
+|
+|switch|p2a: Blastoise|Blastoise, M|265\/362
+|-formechange|p2a: Blastoise|Blastoise-Mega
+|move|p1a: Rotom-Heat|Trick|p2a: Blastoise
+|-fail|p2a: Blastoise
+|
+|-damage|p1a: Rotom-Heat|16\/241 psn|[from] psn
+|turn|19
+|
+|move|p1a: Rotom-Heat|Trick|p2a: Blastoise
+|-fail|p2a: Blastoise
+|move|p2a: Blastoise|Aura Sphere|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|0 fnt
+|faint|p1a: Rotom-Heat
+|
+|
+|switch|p1a: Jolteon|Jolteon, F|212\/271
+|turn|20
+|
+|switch|p2a: Tangrowth|Tangrowth, F|404\/404
+|move|p1a: Jolteon|Substitute|p1a: Jolteon
+|-start|p1a: Jolteon|Substitute
+|-damage|p1a: Jolteon|145\/271
+|
+|-heal|p1a: Jolteon|161\/271|[from] item: Leftovers
+|turn|21
+|
+|move|p1a: Jolteon|Baton Pass|p1a: Jolteon
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|346\/346
+|move|p2a: Tangrowth|Power Whip|p1a: Nidoqueen
+|-end|p1a: Nidoqueen|Substitute
+|
+|turn|22
+|
+|move|p1a: Nidoqueen|Ice Beam|p2a: Tangrowth
+|-supereffective|p2a: Tangrowth
+|-damage|p2a: Tangrowth|212\/404
+|move|p2a: Tangrowth|Earthquake|p1a: Nidoqueen
+|-supereffective|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|184\/346
+|
+|turn|23
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|110\/241
+|move|p1a: Nidoqueen|Sludge Wave|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|0 fnt
+|faint|p2a: Rotom-Heat
+|
+|
+|switch|p2a: Smeargle|Smeargle, M|314\/314
+|turn|24
+|
+|switch|p1a: Suicune|Suicune|404\/404
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Smeargle|Spore|p1a: Suicune
+|-status|p1a: Suicune|slp
+|
+|turn|25
+|
+|switch|p1a: Mew|Mew|199\/404
+|move|p2a: Smeargle|Stealth Rock|p1a: Mew
+|-sidestart|p1: SJR Queen|move: Stealth Rock
+|
+|-heal|p1a: Mew|224\/404|[from] item: Leftovers
+|turn|26
+|
+|switch|p2a: Heracross|Heracross, M|302\/302
+|move|p1a: Mew|Defog|p2a: Heracross
+|-unboost|p2a: Heracross|evasion|1
+|-sideend|p1: SJR Queen|Stealth Rock|[from] move: Defog|[of] p1a: Mew
+|
+|-heal|p1a: Mew|249\/404|[from] item: Leftovers
+|turn|27
+|
+|move|p2a: Heracross|Substitute|p2a: Heracross
+|-start|p2a: Heracross|Substitute
+|-damage|p2a: Heracross|227\/302
+|move|p1a: Mew|U-turn|p2a: Heracross
+|-resisted|p2a: Heracross
+|-activate|p2a: Heracross|Substitute|[damage]
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|184\/346
+|
+|-heal|p2a: Heracross|245\/302|[from] item: Leftovers
+|turn|28
+|
+|move|p2a: Heracross|Close Combat|p1a: Nidoqueen
+|-resisted|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|61\/346
+|-unboost|p2a: Heracross|def|1
+|-unboost|p2a: Heracross|spd|1
+|move|p1a: Nidoqueen|Sludge Wave|p2a: Heracross
+|-end|p2a: Heracross|Substitute
+|
+|-heal|p2a: Heracross|263\/302|[from] item: Leftovers
+|turn|29
+|
+|move|p2a: Heracross|Close Combat|p1a: Nidoqueen
+|-resisted|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|0 fnt
+|-unboost|p2a: Heracross|def|1
+|-unboost|p2a: Heracross|spd|1
+|faint|p1a: Nidoqueen
+|
+|-heal|p2a: Heracross|281\/302|[from] item: Leftovers
+|
+|switch|p1a: Vivillon|Vivillon, F|301\/301
+|turn|30
+|
+|switch|p2a: Blastoise|Blastoise, M|265\/362
+|-formechange|p2a: Blastoise|Blastoise-Mega
+|move|p1a: Vivillon|Hurricane|p2a: Blastoise
+|-crit|p2a: Blastoise
+|-damage|p2a: Blastoise|55\/362
+|-start|p2a: Blastoise|confusion
+|
+|turn|31
+|
+|move|p1a: Vivillon|Sleep Powder|p2a: Blastoise
+|-status|p2a: Blastoise|slp
+|cant|p2a: Blastoise|slp
+|
+|turn|32
+|
+|move|p1a: Vivillon|Hurricane|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|
+|switch|p2a: Ditto|Ditto|159\/300
+|-transform|p2a: Ditto|p1a: Vivillon
+|turn|33
+|
+|switch|p1a: Mew|Mew|249\/404
+|move|p2a: Ditto|Hurricane|p1a: Mew
+|-damage|p1a: Mew|117\/404
+|
+|-heal|p1a: Mew|142\/404|[from] item: Leftovers
+|turn|34
+|
+|switch|p2a: Heracross|Heracross, M|281\/302
+|move|p1a: Mew|U-turn|p2a: Heracross
+|-resisted|p2a: Heracross
+|-damage|p2a: Heracross|249\/302
+|
+|switch|p1a: Vivillon|Vivillon, F|301\/301
+|
+|-heal|p2a: Heracross|267\/302|[from] item: Leftovers
+|turn|35
+|
+|switch|p2a: Smeargle|Smeargle, M|314\/314
+|move|p1a: Vivillon|Hurricane|p2a: Smeargle
+|-damage|p2a: Smeargle|20\/314
+|
+|turn|36
+|
+|switch|p2a: Heracross|Heracross, M|267\/302
+|move|p1a: Vivillon|Quiver Dance|p1a: Vivillon
+|-boost|p1a: Vivillon|spa|1
+|-boost|p1a: Vivillon|spd|1
+|-boost|p1a: Vivillon|spe|1
+|
+|-heal|p2a: Heracross|285\/302|[from] item: Leftovers
+|turn|37
+|
+|move|p1a: Vivillon|Hurricane|p2a: Heracross
+|-supereffective|p2a: Heracross
+|-damage|p2a: Heracross|0 fnt
+|faint|p2a: Heracross
+|
+|
+|switch|p2a: Ditto|Ditto|159\/300
+|-transform|p2a: Ditto|p1a: Vivillon
+|turn|38
+|
+|move|p2a: Ditto|Hurricane|p1a: Vivillon
+|-supereffective|p1a: Vivillon
+|-enditem|p1a: Vivillon|Focus Sash
+|-damage|p1a: Vivillon|1\/301
+|move|p1a: Vivillon|Hurricane|p2a: Ditto
+|-supereffective|p2a: Ditto
+|-damage|p2a: Ditto|0 fnt
+|faint|p2a: Ditto
+|
+|
+|switch|p2a: Tangrowth|Tangrowth, F|346\/404
+|turn|39
+|
+|move|p1a: Vivillon|Hurricane|p2a: Tangrowth
+|-supereffective|p2a: Tangrowth
+|-damage|p2a: Tangrowth|0 fnt
+|faint|p2a: Tangrowth
+|
+|
+|switch|p2a: Smeargle|Smeargle, M|20\/314
+|turn|40
+|chat|SJR Queen|gg
+|
+|move|p1a: Vivillon|Bug Buzz|p2a: Smeargle
+|-damage|p2a: Smeargle|0 fnt
+|faint|p2a: Smeargle
+|
+|win|SJR Queen
+|raw|Ladder updating...
+|raw|SJR Queen's rating: 1583 &rarr; <strong>1601<\/strong><br \/>(+18 for winning)
+|raw|Uncle Wiseau's rating: 1556 &rarr; <strong>1537<\/strong><br \/>(-19 for losing)

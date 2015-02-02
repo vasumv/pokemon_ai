@@ -1,0 +1,440 @@
+|join|Daiquiri
+|join|femt6
+|player|p1|Daiquiri|51
+|player|p2|femt6|86
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Tyranitar, F
+|poke|p1|Venusaur, M
+|poke|p1|Gyarados, M
+|poke|p1|Rotom-Wash
+|poke|p1|Mamoswine, F
+|poke|p1|Latios, M
+|poke|p2|Charizard, M, shiny
+|poke|p2|Conkeldurr, F, shiny
+|poke|p2|Landorus-Therian, M, shiny
+|poke|p2|Rotom-Wash, shiny
+|poke|p2|Latios, M, shiny
+|poke|p2|Tyranitar, F, shiny
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|chat|Daiquiri|gl
+|join|julianna
+|
+|start
+|switch|p1a: Tyranitar|Tyranitar, F|393\/393
+|switch|p2a: Conkeldurr|Conkeldurr, F, shiny|398\/398
+|-weather|Sandstorm
+|turn|1
+|
+|switch|p1a: Venusaur|Venusaur, M|359\/359
+|move|p2a: Conkeldurr|Ice Punch|p1a: Venusaur
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|171\/359
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Venusaur|149\/359|[from] sandstorm
+|-damage|p2a: Conkeldurr|374\/398|[from] sandstorm
+|turn|2
+|
+|detailschange|p1a: Venusaur|Venusaur-Mega, M
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p1a: Venusaur|Sleep Powder|p2a: Conkeldurr
+|-status|p2a: Conkeldurr|slp
+|cant|p2a: Conkeldurr|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Venusaur|127\/359|[from] sandstorm
+|-damage|p2a: Conkeldurr|350\/398 slp|[from] sandstorm
+|turn|3
+|
+|switch|p2a: Charizard|Charizard, M, shiny|306\/306
+|move|p1a: Venusaur|Leech Seed|p2a: Charizard
+|-start|p2a: Charizard|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Charizard|287\/306|[from] sandstorm
+|-damage|p1a: Venusaur|105\/359|[from] sandstorm
+|-damage|p2a: Charizard|249\/306|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|143\/359|[silent]
+|turn|4
+|
+|switch|p1a: Gyarados|Gyarados, M|370\/370
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Charizard
+|-unboost|p2a: Charizard|atk|1
+|detailschange|p2a: Charizard|Charizard-Mega-Y, M, shiny
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p2a: Charizard|Fire Blast|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-damage|p1a: Gyarados|175\/370
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Gyarados|198\/370|[from] item: Leftovers
+|-damage|p2a: Charizard|211\/306|[from] Leech Seed|[of] p1a: Gyarados
+|-heal|p1a: Gyarados|236\/370|[silent]
+|turn|5
+|
+|switch|p2a: Tyranitar|Tyranitar, F, shiny|341\/341
+|-weather|Sandstorm
+|switch|p1a: Tyranitar|Tyranitar, F|393\/393
+|
+|-weather|Sandstorm|[upkeep]
+|turn|6
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M, shiny|381\/381
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Tyranitar
+|-unboost|p1a: Tyranitar|atk|1
+|move|p1a: Tyranitar|Superpower|p2a: Landorus-Therian
+|-resisted|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|310\/381
+|-unboost|p1a: Tyranitar|atk|1
+|-unboost|p1a: Tyranitar|def|1
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Landorus-Therian|333\/381|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Mamoswine|Mamoswine, F|380\/380
+|move|p2a: Landorus-Therian|U-turn|p1a: Mamoswine
+|-damage|p1a: Mamoswine|294\/380
+|
+|switch|p2a: Charizard|Charizard-Mega-Y, M, shiny|211\/306
+|-weather|SunnyDay
+|
+|-weather|SunnyDay|[upkeep]
+|turn|8
+|
+|switch|p1a: Tyranitar|Tyranitar, F|393\/393
+|-weather|Sandstorm
+|move|p2a: Charizard|Fire Blast|p1a: Tyranitar
+|-resisted|p1a: Tyranitar
+|-damage|p1a: Tyranitar|306\/393
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Charizard|192\/306|[from] sandstorm
+|turn|9
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M, shiny|333\/381
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Tyranitar
+|-unboost|p1a: Tyranitar|atk|1
+|move|p1a: Tyranitar|Ice Punch|p2a: Landorus-Therian
+|-supereffective|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|faint|p2a: Landorus-Therian
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Charizard|Charizard-Mega-Y, M, shiny|192\/306
+|-weather|SunnyDay
+|turn|10
+|
+|switch|p2a: Tyranitar|Tyranitar, F, shiny|341\/341
+|-weather|Sandstorm
+|switch|p1a: Latios|Latios, M|302\/302
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latios|284\/302|[from] sandstorm
+|turn|11
+|chat|Daiquiri|cri
+|
+|move|p2a: Tyranitar|Pursuit|p1a: Latios
+|-crit|p1a: Latios
+|-supereffective|p1a: Latios
+|-damage|p1a: Latios|24\/302
+|move|p1a: Latios|Draco Meteor|p2a: Tyranitar
+|-crit|p2a: Tyranitar
+|-damage|p2a: Tyranitar|51\/341
+|-unboost|p1a: Latios|spa|2
+|-damage|p1a: Latios|0 fnt|[from] item: Life Orb
+|faint|p1a: Latios
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Venusaur|Venusaur-Mega, M|143\/359
+|turn|12
+|
+|switch|p2a: Latios|Latios, M, shiny|301\/301
+|move|p1a: Venusaur|Leech Seed|p2a: Latios
+|-start|p2a: Latios|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|283\/301|[from] sandstorm
+|-damage|p1a: Venusaur|121\/359|[from] sandstorm
+|-damage|p2a: Latios|246\/301|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|158\/359|[silent]
+|turn|13
+|
+|switch|p2a: Conkeldurr|Conkeldurr, F, shiny|350\/398 slp
+|switch|p1a: Rotom-Wash|Rotom-Wash|294\/294
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-Wash|276\/294|[from] sandstorm
+|-damage|p2a: Conkeldurr|326\/398 slp|[from] sandstorm
+|turn|14
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|250\/398 slp
+|
+|switch|p1a: Venusaur|Venusaur-Mega, M|158\/359
+|cant|p2a: Conkeldurr|slp
+|
+|-weather|none
+|turn|15
+|
+|move|p1a: Venusaur|Leech Seed|p2a: Conkeldurr
+|-start|p2a: Conkeldurr|move: Leech Seed
+|cant|p2a: Conkeldurr|slp
+|
+|-damage|p2a: Conkeldurr|201\/398 slp|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|207\/359|[silent]
+|turn|16
+|
+|switch|p2a: Charizard|Charizard-Mega-Y, M, shiny|192\/306
+|-weather|SunnyDay
+|move|p1a: Venusaur|Leech Seed|p2a: Charizard
+|-start|p2a: Charizard|move: Leech Seed
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p2a: Charizard|154\/306|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|245\/359|[silent]
+|turn|17
+|
+|switch|p1a: Tyranitar|Tyranitar, F|306\/393
+|-weather|Sandstorm
+|move|p2a: Charizard|Fire Blast|p1a: Tyranitar|[miss]
+|-miss|p2a: Charizard|p1a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Charizard|135\/306|[from] sandstorm
+|-damage|p2a: Charizard|97\/306|[from] Leech Seed|[of] p1a: Tyranitar
+|-heal|p1a: Tyranitar|344\/393|[silent]
+|turn|18
+|
+|move|p2a: Charizard|Focus Blast|p1a: Tyranitar|[miss]
+|-miss|p2a: Charizard|p1a: Tyranitar
+|move|p1a: Tyranitar|Stone Edge|p2a: Charizard|[miss]
+|-miss|p1a: Tyranitar|p2a: Charizard
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Charizard|78\/306|[from] sandstorm
+|-damage|p2a: Charizard|40\/306|[from] Leech Seed|[of] p1a: Tyranitar
+|-heal|p1a: Tyranitar|382\/393|[silent]
+|turn|19
+|chat|femt6|....
+|chat|femt6|swift
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash, shiny|303\/303
+|switch|p1a: Venusaur|Venusaur-Mega, M|245\/359
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Rotom-Wash|285\/303|[from] sandstorm
+|-damage|p1a: Venusaur|223\/359|[from] sandstorm
+|-heal|p2a: Rotom-Wash|303\/303|[from] item: Leftovers
+|turn|20
+|
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Venusaur
+|-status|p1a: Venusaur|brn
+|move|p1a: Venusaur|Leech Seed|p2a: Rotom-Wash
+|-start|p2a: Rotom-Wash|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Rotom-Wash|285\/303|[from] sandstorm
+|-damage|p1a: Venusaur|201\/359 brn|[from] sandstorm
+|-heal|p2a: Rotom-Wash|303\/303|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|266\/303|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|238\/359 brn|[silent]
+|-damage|p1a: Venusaur|194\/359 brn|[from] brn
+|turn|21
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|160\/359 brn
+|
+|switch|p2a: Conkeldurr|Conkeldurr, F, shiny|201\/398 slp
+|move|p1a: Venusaur|Leech Seed|p2a: Conkeldurr
+|-start|p2a: Conkeldurr|move: Leech Seed
+|
+|-weather|none
+|-damage|p2a: Conkeldurr|152\/398 slp|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|209\/359 brn|[silent]
+|-damage|p1a: Venusaur|165\/359 brn|[from] brn
+|turn|22
+|
+|switch|p1a: Gyarados|Gyarados, M|236\/370
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Conkeldurr
+|-unboost|p2a: Conkeldurr|atk|1
+|-curestatus|p2a: Conkeldurr|slp
+|move|p2a: Conkeldurr|Knock Off|p1a: Gyarados
+|-damage|p1a: Gyarados|143\/370
+|-enditem|p1a: Gyarados|Leftovers|[from] move: Knock Off|[of] p2a: Conkeldurr
+|
+|-damage|p2a: Conkeldurr|103\/398|[from] Leech Seed|[of] p1a: Gyarados
+|-heal|p1a: Gyarados|192\/370|[silent]
+|turn|23
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|276\/294
+|switch|p2a: Rotom-Wash|Rotom-Wash, shiny|266\/303
+|
+|-heal|p2a: Rotom-Wash|284\/303|[from] item: Leftovers
+|turn|24
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|198\/294
+|
+|switch|p2a: Latios|Latios, M, shiny|246\/301
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Latios
+|-status|p2a: Latios|brn
+|
+|-damage|p2a: Latios|209\/301 brn|[from] brn
+|turn|25
+|
+|switch|p1a: Tyranitar|Tyranitar, F|382\/393
+|-weather|Sandstorm
+|move|p2a: Latios|Draco Meteor|p1a: Tyranitar|[miss]
+|-miss|p2a: Latios|p1a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|191\/301 brn|[from] sandstorm
+|-damage|p2a: Latios|154\/301 brn|[from] brn
+|turn|26
+|chat|femt6|oh shittt
+|
+|move|p2a: Latios|Draco Meteor|p1a: Tyranitar
+|-damage|p1a: Tyranitar|178\/393
+|-unboost|p2a: Latios|spa|2
+|-damage|p2a: Latios|124\/301 brn|[from] item: Life Orb
+|move|p1a: Tyranitar|Stone Edge|p2a: Latios|[miss]
+|-miss|p1a: Tyranitar|p2a: Latios
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|106\/301 brn|[from] sandstorm
+|-damage|p2a: Latios|69\/301 brn|[from] brn
+|turn|27
+|chat|julianna|oof
+|
+|switch|p2a: Tyranitar|Tyranitar, F, shiny|51\/341
+|move|p1a: Tyranitar|Stone Edge|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Charizard|Charizard-Mega-Y, M, shiny|40\/306
+|-weather|SunnyDay
+|turn|28
+|join|Gros Orteil
+|chat|Daiquiri|wow this is a very delicate moment
+|chat|femt6|=\/
+|
+|switch|p1a: Gyarados|Gyarados, M|192\/370
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Charizard
+|-unboost|p2a: Charizard|atk|1
+|move|p2a: Charizard|Solar Beam|p1a: Gyarados|[still]
+|-prepare|p2a: Charizard|Solar Beam|p1a: Gyarados
+|-anim|p2a: Charizard|Solar Beam|p1a: Gyarados
+|-damage|p1a: Gyarados|13\/370
+|
+|-weather|SunnyDay|[upkeep]
+|turn|29
+|
+|move|p2a: Charizard|Roost|p2a: Charizard
+|-heal|p2a: Charizard|193\/306
+|move|p1a: Gyarados|Waterfall|p2a: Charizard
+|-supereffective|p2a: Charizard
+|-damage|p2a: Charizard|43\/306
+|
+|-weather|SunnyDay|[upkeep]
+|turn|30
+|
+|move|p2a: Charizard|Solar Beam|p1a: Gyarados|[still]
+|-prepare|p2a: Charizard|Solar Beam|p1a: Gyarados
+|-anim|p2a: Charizard|Solar Beam|p1a: Gyarados
+|-damage|p1a: Gyarados|0 fnt
+|faint|p1a: Gyarados
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p1a: Mamoswine|Mamoswine, F|294\/380
+|turn|31
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash, shiny|284\/303
+|move|p1a: Mamoswine|Stealth Rock|p2a: Rotom-Wash
+|-sidestart|p2: femt6|move: Stealth Rock
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Rotom-Wash|302\/303|[from] item: Leftovers
+|turn|32
+|chat|Daiquiri|phew
+|
+|switch|p1a: Venusaur|Venusaur-Mega, M|165\/359 brn
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|130\/359 brn
+|
+|switch|p2a: Latios|Latios, M, shiny|69\/301 brn
+|-damage|p2a: Latios|32\/301 brn|[from] Stealth Rock
+|
+|-weather|none
+|-damage|p2a: Latios|0 fnt|[from] brn
+|-damage|p1a: Venusaur|86\/359 brn|[from] brn
+|faint|p2a: Latios
+|chat|femt6|shit
+|
+|switch|p2a: Conkeldurr|Conkeldurr, F, shiny|103\/398
+|-damage|p2a: Conkeldurr|79\/398|[from] Stealth Rock
+|turn|33
+|
+|move|p1a: Venusaur|Giga Drain|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|0 fnt
+|-heal|p1a: Venusaur|126\/359 brn|[from] drain|[of] p2a: Conkeldurr
+|faint|p2a: Conkeldurr
+|
+|-damage|p1a: Venusaur|82\/359 brn|[from] brn
+|
+|switch|p2a: Charizard|Charizard-Mega-Y, M, shiny|43\/306
+|-damage|p2a: Charizard|0 fnt|[from] Stealth Rock
+|faint|p2a: Charizard
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash, shiny|302\/303
+|-damage|p2a: Rotom-Wash|265\/303|[from] Stealth Rock
+|turn|34
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|34\/359 brn
+|move|p1a: Venusaur|Giga Drain|p2a: Rotom-Wash
+|-supereffective|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|65\/303
+|-heal|p1a: Venusaur|134\/359 brn|[from] drain|[of] p2a: Rotom-Wash
+|
+|-heal|p2a: Rotom-Wash|83\/303|[from] item: Leftovers
+|-damage|p1a: Venusaur|90\/359 brn|[from] brn
+|turn|35
+|chat|Daiquiri|gg
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|40\/359 brn
+|move|p1a: Venusaur|Giga Drain|p2a: Rotom-Wash
+|-supereffective|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|-heal|p1a: Venusaur|82\/359 brn|[from] drain|[of] p2a: Rotom-Wash
+|faint|p2a: Rotom-Wash
+|
+|win|Daiquiri
+|raw|Ladder updating...
+|raw|Daiquiri's rating: 1599 &rarr; <strong>1620<\/strong><br \/>(+21 for winning)
+|raw|femt6's rating: 1616 &rarr; <strong>1595<\/strong><br \/>(-21 for losing)
+|leave|femt6
+|player|p2
+|leave|julianna

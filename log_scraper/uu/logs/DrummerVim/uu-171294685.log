@@ -1,0 +1,237 @@
+|join|DrummerVim
+|join|King victini
+|player|p1|DrummerVim|87
+|player|p2|King victini|101
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Fletchinder, M
+|poke|p1|Nidoking, M
+|poke|p1|Florges, F
+|poke|p1|Snorlax, M
+|poke|p1|Tentacruel, M
+|poke|p1|Shaymin
+|poke|p2|Zoroark, F
+|poke|p2|Blastoise, F
+|poke|p2|Porygon-Z
+|poke|p2|Darmanitan, F
+|poke|p2|Nidoking, M
+|poke|p2|Froslass, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Shaymin|Shaymin|342\/342
+|switch|p2a: Froslass|Froslass, F|261\/261
+|turn|1
+|
+|move|p2a: Froslass|Flamethrower|p1a: Shaymin
+|-supereffective|p1a: Shaymin
+|-damage|p1a: Shaymin|118\/342
+|-damage|p2a: Froslass|235\/261|[from] item: Life Orb
+|move|p1a: Shaymin|Dazzling Gleam|p2a: Froslass
+|-supereffective|p2a: Froslass
+|replace|p2a: Zoroark|Zoroark, F|235\/261
+|-damage|p2a: Zoroark|0 fnt
+|-damage|p1a: Shaymin|84\/342|[from] item: Life Orb
+|faint|p2a: Zoroark
+|
+|
+|switch|p2a: Darmanitan|Darmanitan, F|351\/351
+|turn|2
+|
+|switch|p1a: Snorlax|Snorlax, M|524\/524
+|move|p2a: Darmanitan|U-turn|p1a: Snorlax
+|-damage|p1a: Snorlax|344\/524
+|
+|switch|p2a: Nidoking|Nidoking, M|303\/303
+|
+|-heal|p1a: Snorlax|376\/524|[from] item: Leftovers
+|turn|3
+|
+|move|p2a: Nidoking|Superpower|p1a: Snorlax
+|-supereffective|p1a: Snorlax
+|-damage|p1a: Snorlax|28\/524
+|-unboost|p2a: Nidoking|atk|1
+|-unboost|p2a: Nidoking|def|1
+|-damage|p2a: Nidoking|273\/303|[from] item: Life Orb
+|move|p1a: Snorlax|Body Slam|p2a: Nidoking
+|-damage|p2a: Nidoking|71\/303
+|
+|-heal|p1a: Snorlax|60\/524|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Tentacruel|Tentacruel, M|364\/364
+|move|p2a: Nidoking|Earth Power|p1a: Tentacruel
+|-supereffective|p1a: Tentacruel
+|-damage|p1a: Tentacruel|21\/364
+|
+|-heal|p1a: Tentacruel|43\/364|[from] item: Black Sludge
+|turn|5
+|
+|switch|p1a: Fletchinder|Fletchinder, M|327\/327
+|move|p2a: Nidoking|Earth Power|p1a: Fletchinder
+|-immune|p1a: Fletchinder|[msg]
+|
+|turn|6
+|
+|switch|p2a: Blastoise|Blastoise, F|346\/346
+|move|p1a: Fletchinder|Acrobatics|p2a: Blastoise
+|-damage|p2a: Blastoise|207\/346
+|
+|turn|7
+|
+|switch|p2a: Froslass|Froslass, F|290\/290
+|switch|p1a: Tentacruel|Tentacruel, M|43\/364
+|
+|-heal|p1a: Tentacruel|65\/364|[from] item: Black Sludge
+|turn|8
+|
+|move|p2a: Froslass|Taunt|p1a: Tentacruel
+|-start|p1a: Tentacruel|move: Taunt
+|move|p1a: Tentacruel|Knock Off|p2a: Froslass
+|-supereffective|p2a: Froslass
+|-damage|p2a: Froslass|180\/290
+|-enditem|p2a: Froslass|Focus Sash|[from] move: Knock Off|[of] p1a: Tentacruel
+|
+|-heal|p1a: Tentacruel|87\/364|[from] item: Black Sludge
+|turn|9
+|
+|move|p2a: Froslass|Spikes|p1a: Tentacruel
+|-sidestart|p1: DrummerVim|Spikes
+|move|p1a: Tentacruel|Scald|p2a: Froslass
+|-damage|p2a: Froslass|69\/290
+|
+|-heal|p1a: Tentacruel|109\/364|[from] item: Black Sludge
+|turn|10
+|
+|move|p2a: Froslass|Destiny Bond|p2a: Froslass
+|-singlemove|p2a: Froslass|Destiny Bond
+|move|p1a: Tentacruel|Scald|p2a: Froslass
+|-damage|p2a: Froslass|0 fnt
+|faint|p2a: Froslass
+|-activate|p2a: Froslass|Destiny Bond
+|faint|p1a: Tentacruel
+|
+|
+|switch|p2a: Blastoise|Blastoise, F|207\/346
+|switch|p1a: Florges|Florges, F|360\/360
+|-damage|p1a: Florges|315\/360|[from] Spikes
+|turn|11
+|
+|detailschange|p2a: Blastoise|Blastoise-Mega, F
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Blastoise|Scald|p1a: Florges
+|-damage|p1a: Florges|209\/360
+|move|p1a: Florges|Moonblast|p2a: Blastoise
+|-damage|p2a: Blastoise|93\/346
+|
+|-heal|p1a: Florges|231\/360|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Blastoise|Scald|p1a: Florges
+|-damage|p1a: Florges|131\/360
+|move|p1a: Florges|Moonblast|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|-heal|p1a: Florges|153\/360|[from] item: Leftovers
+|
+|switch|p2a: Porygon-Z|Porygon-Z|312\/312
+|turn|13
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Porygon-Z|Psyshock|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-heal|p1a: Florges|175\/360|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Porygon-Z|Psyshock|p1a: Florges
+|-damage|p1a: Florges|57\/360
+|move|p1a: Florges|Moonblast|p2a: Porygon-Z
+|-damage|p2a: Porygon-Z|155\/312
+|
+|-heal|p1a: Florges|79\/360|[from] item: Leftovers
+|turn|15
+|
+|move|p2a: Porygon-Z|Psyshock|p1a: Florges
+|-damage|p1a: Florges|0 fnt
+|faint|p1a: Florges
+|
+|
+|switch|p1a: Shaymin|Shaymin|84\/342
+|-damage|p1a: Shaymin|42\/342|[from] Spikes
+|turn|16
+|
+|move|p2a: Porygon-Z|Psyshock|p1a: Shaymin
+|-damage|p1a: Shaymin|0 fnt
+|faint|p1a: Shaymin
+|
+|
+|switch|p1a: Fletchinder|Fletchinder, M|327\/327
+|turn|17
+|
+|move|p1a: Fletchinder|Acrobatics|p2a: Porygon-Z
+|-damage|p2a: Porygon-Z|0 fnt
+|faint|p2a: Porygon-Z
+|
+|
+|switch|p2a: Darmanitan|Darmanitan, F|351\/351
+|turn|18
+|
+|switch|p1a: Snorlax|Snorlax, M|60\/524
+|-damage|p1a: Snorlax|0 fnt|[from] Spikes
+|faint|p1a: Snorlax
+|move|p2a: Darmanitan|Stone Edge|p1: Snorlax|[notarget]
+|-notarget
+|
+|
+|switch|p1a: Nidoking|Nidoking, M|304\/304
+|-damage|p1a: Nidoking|266\/304|[from] Spikes
+|turn|19
+|
+|switch|p2a: Nidoking|Nidoking, M|71\/303
+|move|p1a: Nidoking|Earth Power|p2a: Nidoking
+|-supereffective|p2a: Nidoking
+|-damage|p2a: Nidoking|0 fnt
+|faint|p2a: Nidoking
+|
+|
+|switch|p2a: Darmanitan|Darmanitan, F|351\/351
+|turn|20
+|
+|move|p2a: Darmanitan|Flare Blitz|p1a: Nidoking
+|-damage|p1a: Nidoking|0 fnt
+|-damage|p2a: Darmanitan|263\/351|[from] recoil|[of] p1a: Nidoking
+|faint|p1a: Nidoking
+|
+|
+|switch|p1a: Fletchinder|Fletchinder, M|327\/327
+|turn|21
+|
+|move|p1a: Fletchinder|Acrobatics|p2a: Darmanitan
+|-damage|p2a: Darmanitan|16\/351
+|move|p2a: Darmanitan|Flare Blitz|p1a: Fletchinder
+|-resisted|p1a: Fletchinder
+|-damage|p1a: Fletchinder|0 fnt
+|-damage|p2a: Darmanitan|0 fnt|[from] recoil|[of] p1a: Fletchinder
+|faint|p1a: Fletchinder
+|faint|p2a: Darmanitan
+|
+|win|King victini
+|raw|Ladder updating...
+|raw|DrummerVim's rating: 1392 &rarr; <strong>1368<\/strong><br \/>(-24 for losing)
+|raw|King victini's rating: 1326 &rarr; <strong>1350<\/strong><br \/>(+24 for winning)
+|c|âDrummerVim|isnt it a tie?

@@ -1,0 +1,328 @@
+|join|ArchPhantom
+|join|teambuild tester
+|player|p1|ArchPhantom|222
+|player|p2|teambuild tester|5
+|gametype|singles
+|gen|6
+|tier|OU (suspect test)
+|rated
+|clearpoke
+|poke|p1|Lopunny, M
+|poke|p1|Bisharp, F
+|poke|p1|Landorus-Therian, M
+|poke|p1|Rotom-Wash
+|poke|p1|Empoleon, M
+|poke|p1|Gothitelle, M
+|poke|p2|Chansey, F
+|poke|p2|Skarmory, M
+|poke|p2|Thundurus, M
+|poke|p2|Steelix, M
+|poke|p2|Slowbro, M
+|poke|p2|Landorus, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Rotom-Wash|Rotom-Wash|303\/303
+|switch|p2a: Landorus|Landorus, M|319\/319
+|turn|1
+|
+|switch|p2a: Slowbro|Slowbro, M|394\/394
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Slowbro
+|-resisted|p2a: Slowbro
+|-damage|p2a: Slowbro|307\/394
+|
+|-heal|p2a: Slowbro|331\/394|[from] item: Leftovers
+|turn|2
+|
+|switch|p2a: Steelix|Steelix, M|354\/354
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Steelix
+|-immune|p2a: Steelix|[msg]
+|
+|turn|3
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Chansey
+|-status|p2a: Chansey|brn
+|
+|-damage|p2a: Chansey|616\/704 brn|[from] brn
+|turn|4
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Chansey
+|-damage|p2a: Chansey|559\/704 brn
+|
+|switch|p1a: Bisharp|Bisharp, F|271\/271
+|move|p2a: Chansey|Seismic Toss|p1a: Bisharp
+|-damage|p1a: Bisharp|171\/271
+|
+|-damage|p2a: Chansey|471\/704 brn|[from] brn
+|turn|5
+|
+|move|p1a: Bisharp|Pursuit|p2a: Chansey|[from]Pursuit
+|-damage|p2a: Chansey|228\/704 brn
+|-damage|p1a: Bisharp|144\/271|[from] item: Life Orb
+|switch|p2a: Skarmory|Skarmory, M|334\/334
+|
+|turn|6
+|
+|move|p1a: Bisharp|Knock Off|p2a: Skarmory
+|-damage|p2a: Skarmory|188\/334
+|-damage|p1a: Bisharp|99\/271|[from] item: Rocky Helmet|[of] p2a: Skarmory
+|-enditem|p2a: Skarmory|Rocky Helmet|[from] move: Knock Off|[of] p1a: Bisharp
+|-damage|p1a: Bisharp|72\/271|[from] item: Life Orb
+|move|p2a: Skarmory|Stealth Rock|p1a: Bisharp
+|-sidestart|p1: ArchPhantom|move: Stealth Rock
+|
+|turn|7
+|
+|switch|p1a: Gothitelle|Gothitelle, M|310\/310
+|-damage|p1a: Gothitelle|272\/310|[from] Stealth Rock
+|move|p2a: Skarmory|Roost|p2a: Skarmory
+|-heal|p2a: Skarmory|334\/334
+|
+|turn|8
+|
+|move|p1a: Gothitelle|Thunderbolt|p2a: Skarmory
+|-supereffective|p2a: Skarmory
+|-activate|p2a: Skarmory|Sturdy
+|-damage|p2a: Skarmory|1\/334
+|-status|p2a: Skarmory|par
+|cant|p2a: Skarmory|par
+|
+|turn|9
+|
+|move|p1a: Gothitelle|Thunderbolt|p2a: Skarmory
+|-supereffective|p2a: Skarmory
+|-damage|p2a: Skarmory|0 fnt
+|faint|p2a: Skarmory
+|
+|
+|switch|p2a: Landorus|Landorus, M|319\/319
+|turn|10
+|
+|switch|p1a: Bisharp|Bisharp, F|72\/271
+|-damage|p1a: Bisharp|56\/271|[from] Stealth Rock
+|move|p2a: Landorus|Sludge Wave|p1a: Bisharp
+|-immune|p1a: Bisharp|[msg]
+|
+|turn|11
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|303\/303
+|-damage|p1a: Rotom-Wash|266\/303|[from] Stealth Rock
+|move|p2a: Landorus|Knock Off|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|178\/303
+|-enditem|p1a: Rotom-Wash|Leftovers|[from] move: Knock Off|[of] p2a: Landorus
+|-damage|p2a: Landorus|288\/319|[from] item: Life Orb
+|
+|turn|12
+|
+|switch|p1a: Bisharp|Bisharp, F|56\/271
+|-damage|p1a: Bisharp|40\/271|[from] Stealth Rock
+|move|p2a: Landorus|Sludge Wave|p1a: Bisharp
+|-immune|p1a: Bisharp|[msg]
+|
+|turn|13
+|
+|move|p1a: Bisharp|Sucker Punch|p2a: Landorus
+|-damage|p2a: Landorus|74\/319
+|-damage|p1a: Bisharp|13\/271|[from] item: Life Orb
+|move|p2a: Landorus|Earth Power|p1a: Bisharp
+|-crit|p1a: Bisharp
+|-supereffective|p1a: Bisharp
+|-damage|p1a: Bisharp|0 fnt
+|faint|p1a: Bisharp
+|
+|
+|switch|p1a: Lopunny|Lopunny, M|271\/271
+|-damage|p1a: Lopunny|238\/271|[from] Stealth Rock
+|turn|14
+|
+|switch|p2a: Chansey|Chansey, F|228\/704
+|detailschange|p1a: Lopunny|Lopunny-Mega, M
+|-mega|p1a: Lopunny|Lopunny|Lopunnite
+|move|p1a: Lopunny|High Jump Kick|p2a: Chansey
+|-crit|p2a: Chansey
+|-supereffective|p2a: Chansey
+|-damage|p2a: Chansey|0 fnt
+|faint|p2a: Chansey
+|
+|
+|switch|p2a: Slowbro|Slowbro, M|394\/394
+|turn|15
+|
+|switch|p1a: Gothitelle|Gothitelle, M|272\/310
+|-damage|p1a: Gothitelle|234\/310|[from] Stealth Rock
+|move|p2a: Slowbro|Scald|p1a: Gothitelle
+|-crit|p1a: Gothitelle
+|-damage|p1a: Gothitelle|111\/310
+|-status|p1a: Gothitelle|brn
+|
+|-damage|p1a: Gothitelle|73\/310 brn|[from] brn
+|turn|16
+|
+|move|p1a: Gothitelle|Thunderbolt|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|42\/394
+|move|p2a: Slowbro|Scald|p1a: Gothitelle
+|-damage|p1a: Gothitelle|0 fnt
+|faint|p1a: Gothitelle
+|
+|-heal|p2a: Slowbro|66\/394|[from] item: Leftovers
+|
+|switch|p1a: Lopunny|Lopunny-Mega, M|238\/271
+|-damage|p1a: Lopunny|222\/271|[from] Stealth Rock
+|turn|17
+|
+|switch|p2a: Steelix|Steelix, M|354\/354
+|move|p1a: Lopunny|High Jump Kick|p2a: Steelix
+|-supereffective|p2a: Steelix
+|-damage|p2a: Steelix|156\/354
+|
+|turn|18
+|
+|detailschange|p2a: Steelix|Steelix-Mega, M
+|-mega|p2a: Steelix|Steelix|Steelixite
+|move|p1a: Lopunny|High Jump Kick|p2a: Steelix
+|-supereffective|p2a: Steelix
+|-damage|p2a: Steelix|0 fnt
+|faint|p2a: Steelix
+|
+|
+|switch|p2a: Slowbro|Slowbro, M|197\/394
+|turn|19
+|
+|move|p1a: Lopunny|Frustration|p2a: Slowbro
+|-damage|p2a: Slowbro|62\/394
+|move|p2a: Slowbro|Slack Off|p2a: Slowbro
+|-heal|p2a: Slowbro|259\/394
+|
+|-heal|p2a: Slowbro|283\/394|[from] item: Leftovers
+|turn|20
+|
+|switch|p1a: Empoleon|Empoleon, M|372\/372
+|-damage|p1a: Empoleon|349\/372|[from] Stealth Rock
+|move|p2a: Slowbro|Slack Off|p2a: Slowbro
+|-heal|p2a: Slowbro|394\/394
+|
+|-heal|p1a: Empoleon|372\/372|[from] item: Leftovers
+|turn|21
+|
+|switch|p2a: Thundurus|Thundurus, M|299\/299
+|move|p1a: Empoleon|Defog|p2a: Thundurus
+|-unboost|p2a: Thundurus|evasion|1
+|-boost|p2a: Thundurus|atk|2|[from] ability: Defiant
+|-sideend|p1: ArchPhantom|Stealth Rock|[from] move: Defog|[of] p1a: Empoleon
+|
+|turn|22
+|
+|move|p2a: Thundurus|Knock Off|p1a: Empoleon
+|-crit|p1a: Empoleon
+|-damage|p1a: Empoleon|80\/372
+|-enditem|p1a: Empoleon|Leftovers|[from] move: Knock Off|[of] p2a: Thundurus
+|-damage|p2a: Thundurus|270\/299|[from] item: Life Orb
+|move|p1a: Empoleon|Scald|p2a: Thundurus
+|-damage|p2a: Thundurus|68\/299
+|
+|turn|23
+|
+|move|p2a: Thundurus|Knock Off|p1a: Empoleon
+|-crit|p1a: Empoleon
+|-damage|p1a: Empoleon|0 fnt
+|-damage|p2a: Thundurus|39\/299|[from] item: Life Orb
+|faint|p1a: Empoleon
+|
+|
+|switch|p1a: Lopunny|Lopunny-Mega, M|222\/271
+|turn|24
+|
+|switch|p2a: Slowbro|Slowbro, M|394\/394
+|move|p1a: Lopunny|Fake Out|p2a: Slowbro
+|-crit|p2a: Slowbro
+|-damage|p2a: Slowbro|325\/394
+|
+|-heal|p2a: Slowbro|349\/394|[from] item: Leftovers
+|turn|25
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|178\/303
+|move|p2a: Slowbro|Psyshock|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|114\/303
+|
+|-heal|p2a: Slowbro|373\/394|[from] item: Leftovers
+|turn|26
+|
+|switch|p2a: Landorus|Landorus, M|74\/319
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Landorus
+|-supereffective|p2a: Landorus
+|-damage|p2a: Landorus|0 fnt
+|faint|p2a: Landorus
+|
+|
+|switch|p2a: Thundurus|Thundurus, M|39\/299
+|turn|27
+|
+|switch|p1a: Lopunny|Lopunny-Mega, M|222\/271
+|move|p2a: Thundurus|Hidden Power|p1a: Lopunny
+|-damage|p1a: Lopunny|138\/271
+|-damage|p2a: Thundurus|10\/299|[from] item: Life Orb
+|
+|turn|28
+|
+|switch|p2a: Slowbro|Slowbro, M|394\/394
+|move|p1a: Lopunny|Fake Out|p2a: Slowbro
+|-damage|p2a: Slowbro|346\/394
+|
+|-heal|p2a: Slowbro|370\/394|[from] item: Leftovers
+|turn|29
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|114\/303
+|move|p2a: Slowbro|Psyshock|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|51\/303
+|
+|-heal|p2a: Slowbro|394\/394|[from] item: Leftovers
+|turn|30
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|190\/394
+|
+|switch|p1a: Lopunny|Lopunny-Mega, M|138\/271
+|move|p2a: Slowbro|Psyshock|p1a: Lopunny
+|-supereffective|p1a: Lopunny
+|-damage|p1a: Lopunny|0 fnt
+|faint|p1a: Lopunny
+|
+|-heal|p2a: Slowbro|214\/394|[from] item: Leftovers
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|51\/303
+|turn|31
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|0 fnt
+|faint|p2a: Slowbro
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|319\/319
+|
+|c|âArchPhantom|Ah rolls
+|c|âArchPhantom|gg
+|
+|switch|p2a: Thundurus|Thundurus, M|10\/299
+|turn|32
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Thundurus
+|-resisted|p2a: Thundurus
+|-damage|p2a: Thundurus|0 fnt
+|faint|p2a: Thundurus
+|
+|win|ArchPhantom
+|raw|Ladder updating...
+|raw|ArchPhantom's rating: 1331 &rarr; <strong>1347<\/strong><br \/>(+16 for winning)
+|raw|teambuild tester's rating: 1267 &rarr; <strong>1247<\/strong><br \/>(-20 for losing)

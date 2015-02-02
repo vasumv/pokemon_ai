@@ -1,0 +1,373 @@
+|join|WForLife
+|join|mini117
+|player|p1|WForLife|1
+|player|p2|mini117|169
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Flygon, M
+|poke|p1|Alakazam, M
+|poke|p1|Empoleon, M
+|poke|p1|Machamp, F
+|poke|p1|Vaporeon, F
+|poke|p1|Absol, F
+|poke|p2|Galvantula, F
+|poke|p2|Empoleon, F
+|poke|p2|Chandelure, F
+|poke|p2|Machamp, F
+|poke|p2|Hydreigon, F
+|poke|p2|Trevenant, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Machamp|Machamp, F|384\/384
+|switch|p2a: Machamp|Machamp, F|384\/384
+|turn|1
+|
+|move|p2a: Machamp|Knock Off|p1a: Machamp
+|-resisted|p1a: Machamp
+|-damage|p1a: Machamp|302\/384
+|-enditem|p1a: Machamp|Assault Vest|[from] move: Knock Off|[of] p2a: Machamp
+|move|p1a: Machamp|Knock Off|p2a: Machamp
+|-resisted|p2a: Machamp
+|-damage|p2a: Machamp|314\/384
+|-enditem|p2a: Machamp|Assault Vest|[from] move: Knock Off|[of] p1a: Machamp
+|
+|turn|2
+|
+|move|p2a: Machamp|Earthquake|p1a: Machamp
+|-damage|p1a: Machamp|138\/384
+|move|p1a: Machamp|Dynamic Punch|p2a: Machamp
+|-damage|p2a: Machamp|95\/384
+|-start|p2a: Machamp|confusion
+|
+|turn|3
+|
+|move|p1a: Machamp|Bullet Punch|p2a: Machamp
+|-damage|p2a: Machamp|35\/384
+|-activate|p2a: Machamp|confusion
+|move|p2a: Machamp|Earthquake|p1a: Machamp
+|-damage|p1a: Machamp|0 fnt
+|faint|p1a: Machamp
+|
+|
+|switch|p1a: Flygon|Flygon, M|302\/302
+|turn|4
+|
+|-activate|p2a: Machamp|confusion
+|-damage|p2a: Machamp|0 fnt|[from] confusion
+|faint|p2a: Machamp
+|move|p1a: Flygon|U-turn|p2: Machamp|[notarget]
+|-notarget
+|
+|
+|switch|p2a: Empoleon|Empoleon, F|372\/372
+|turn|5
+|
+|move|p1a: Flygon|U-turn|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|342\/372
+|
+|switch|p1a: Empoleon|Empoleon, M|372\/372
+|move|p2a: Empoleon|Ice Beam|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|359\/372
+|-status|p1a: Empoleon|frz
+|
+|-heal|p2a: Empoleon|365\/372|[from] item: Leftovers
+|-heal|p1a: Empoleon|372\/372 frz|[from] item: Leftovers
+|turn|6
+|
+|switch|p1a: Vaporeon|Vaporeon, F|464\/464
+|move|p2a: Empoleon|Stealth Rock|p1a: Vaporeon
+|-sidestart|p1: WForLife|move: Stealth Rock
+|
+|-heal|p2a: Empoleon|372\/372|[from] item: Leftovers
+|turn|7
+|
+|move|p1a: Vaporeon|Heal Bell|p1a: Vaporeon
+|-cureteam|p1a: Vaporeon|[from] move: HealBell
+|move|p2a: Empoleon|Roar|p1a: Vaporeon
+|drag|p1a: Alakazam|Alakazam, M|252\/252
+|
+|turn|8
+|
+|move|p1a: Alakazam|Focus Blast|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|76\/372
+|move|p2a: Empoleon|Ice Beam|p1a: Alakazam
+|-damage|p1a: Alakazam|172\/252
+|
+|-heal|p2a: Empoleon|99\/372|[from] item: Leftovers
+|turn|9
+|
+|switch|p1a: Empoleon|Empoleon, M|372\/372
+|-damage|p1a: Empoleon|349\/372|[from] Stealth Rock
+|move|p2a: Empoleon|Ice Beam|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|337\/372
+|
+|-heal|p1a: Empoleon|360\/372|[from] item: Leftovers
+|-heal|p2a: Empoleon|122\/372|[from] item: Leftovers
+|turn|10
+|
+|move|p2a: Empoleon|Scald|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|300\/372
+|move|p1a: Empoleon|Scald|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|74\/372
+|-status|p2a: Empoleon|brn
+|
+|-heal|p1a: Empoleon|323\/372|[from] item: Leftovers
+|-heal|p2a: Empoleon|97\/372 brn|[from] item: Leftovers
+|-damage|p2a: Empoleon|51\/372 brn|[from] brn
+|turn|11
+|
+|move|p2a: Empoleon|Scald|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|264\/372
+|-status|p1a: Empoleon|brn
+|move|p1a: Empoleon|Defog|p2a: Empoleon
+|-unboost|p2a: Empoleon|evasion|1
+|-sideend|p1: WForLife|Stealth Rock|[from] move: Defog|[of] p1a: Empoleon
+|
+|-heal|p2a: Empoleon|74\/372 brn|[from] item: Leftovers
+|-heal|p1a: Empoleon|287\/372 brn|[from] item: Leftovers
+|-damage|p1a: Empoleon|241\/372 brn|[from] brn
+|-damage|p2a: Empoleon|28\/372 brn|[from] brn
+|turn|12
+|
+|move|p2a: Empoleon|Stealth Rock|p1a: Empoleon
+|-sidestart|p1: WForLife|move: Stealth Rock
+|move|p1a: Empoleon|Scald|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|0 fnt
+|faint|p2a: Empoleon
+|
+|-heal|p1a: Empoleon|264\/372 brn|[from] item: Leftovers
+|-damage|p1a: Empoleon|218\/372 brn|[from] brn
+|
+|switch|p2a: Galvantula|Galvantula, F|281\/281
+|turn|13
+|
+|switch|p1a: Flygon|Flygon, M|302\/302
+|-damage|p1a: Flygon|284\/302|[from] Stealth Rock
+|move|p2a: Galvantula|Thunder|p1a: Flygon
+|-immune|p1a: Flygon|[msg]
+|
+|turn|14
+|
+|move|p1a: Flygon|Dragon Claw|p2a: Galvantula
+|-damage|p2a: Galvantula|74\/281
+|move|p2a: Galvantula|Bug Buzz|p1a: Flygon
+|-damage|p1a: Flygon|118\/302
+|
+|turn|15
+|
+|switch|p2a: Trevenant|Trevenant, F|374\/374
+|move|p1a: Flygon|Dragon Claw|p2a: Trevenant
+|-damage|p2a: Trevenant|211\/374
+|
+|turn|16
+|
+|switch|p1a: Absol|Absol, F|272\/272
+|-damage|p1a: Absol|238\/272|[from] Stealth Rock
+|move|p2a: Trevenant|Will-O-Wisp|p1a: Absol
+|-status|p1a: Absol|brn
+|
+|-damage|p1a: Absol|204\/272 brn|[from] brn
+|turn|17
+|
+|switch|p1a: Vaporeon|Vaporeon, F|464\/464
+|-damage|p1a: Vaporeon|406\/464|[from] Stealth Rock
+|switch|p2a: Hydreigon|Hydreigon, F|325\/325
+|
+|-heal|p1a: Vaporeon|435\/464|[from] item: Leftovers
+|turn|18
+|
+|move|p2a: Hydreigon|Draco Meteor|p1a: Vaporeon
+|-damage|p1a: Vaporeon|173\/464
+|-unboost|p2a: Hydreigon|spa|2
+|move|p1a: Vaporeon|Heal Bell|p1a: Vaporeon
+|-cureteam|p1a: Vaporeon|[from] move: HealBell
+|
+|-heal|p1a: Vaporeon|202\/464|[from] item: Leftovers
+|turn|19
+|
+|move|p2a: Hydreigon|Draco Meteor|p1a: Vaporeon
+|-damage|p1a: Vaporeon|72\/464
+|-unboost|p2a: Hydreigon|spa|2
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|101\/464|[from] item: Leftovers
+|turn|20
+|
+|move|p2a: Hydreigon|Draco Meteor|p1a: Vaporeon
+|-damage|p1a: Vaporeon|10\/464
+|-unboost|p2a: Hydreigon|spa|2
+|move|p1a: Vaporeon|Scald|p2a: Hydreigon
+|-resisted|p2a: Hydreigon
+|-damage|p2a: Hydreigon|274\/325
+|-status|p2a: Hydreigon|brn
+|
+|-heal|p1a: Vaporeon|242\/464|[from] move: Wish|[wisher] Vaporeon
+|-heal|p1a: Vaporeon|271\/464|[from] item: Leftovers
+|-damage|p2a: Hydreigon|234\/325 brn|[from] brn
+|turn|21
+|
+|switch|p2a: Trevenant|Trevenant, F|211\/374
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|300\/464|[from] item: Leftovers
+|turn|22
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Trevenant|Horn Leech|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Protect
+|
+|-heal|p1a: Vaporeon|464\/464|[from] move: Wish|[wisher] Vaporeon
+|turn|23
+|
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|move|p2a: Trevenant|Substitute|p2a: Trevenant
+|-start|p2a: Trevenant|Substitute
+|-damage|p2a: Trevenant|118\/374
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|211\/374|[from] item: Sitrus Berry
+|
+|-item|p2a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|turn|24
+|
+|switch|p1a: Alakazam|Alakazam, M|172\/252
+|move|p2a: Trevenant|Horn Leech|p1a: Alakazam
+|-damage|p1a: Alakazam|0 fnt
+|-heal|p2a: Trevenant|297\/374|[from] drain|[of] p1a: Alakazam
+|faint|p1a: Alakazam
+|
+|
+|switch|p1a: Absol|Absol, F|204\/272
+|-damage|p1a: Absol|170\/272|[from] Stealth Rock
+|turn|25
+|
+|detailschange|p1a: Absol|Absol-Mega, F
+|message|Absol has Mega Evolved into Mega Absol!
+|move|p1a: Absol|Knock Off|p2a: Trevenant
+|-supereffective|p2a: Trevenant
+|-end|p2a: Trevenant|Substitute
+|move|p2a: Trevenant|Horn Leech|p1a: Absol
+|-damage|p1a: Absol|20\/272
+|-heal|p2a: Trevenant|372\/374|[from] drain|[of] p1a: Absol
+|
+|turn|26
+|
+|move|p1a: Absol|Knock Off|p2a: Trevenant
+|-supereffective|p2a: Trevenant
+|-damage|p2a: Trevenant|0 fnt
+|-enditem|p2a: Trevenant|Sitrus Berry|[from] move: Knock Off|[of] p1a: Absol
+|faint|p2a: Trevenant
+|
+|
+|switch|p2a: Hydreigon|Hydreigon, F|234\/325 brn
+|turn|27
+|
+|switch|p1a: Vaporeon|Vaporeon, F|464\/464
+|-damage|p1a: Vaporeon|406\/464|[from] Stealth Rock
+|move|p2a: Hydreigon|U-turn|p1a: Vaporeon
+|-damage|p1a: Vaporeon|379\/464
+|
+|switch|p2a: Galvantula|Galvantula, F|74\/281
+|
+|-heal|p1a: Vaporeon|408\/464|[from] item: Leftovers
+|turn|28
+|
+|move|p2a: Galvantula|Thunder|p1a: Vaporeon
+|-supereffective|p1a: Vaporeon
+|-damage|p1a: Vaporeon|72\/464
+|-status|p1a: Vaporeon|par
+|move|p1a: Vaporeon|Scald|p2a: Galvantula
+|-damage|p2a: Galvantula|0 fnt
+|faint|p2a: Galvantula
+|
+|-heal|p1a: Vaporeon|101\/464 par|[from] item: Leftovers
+|
+|switch|p2a: Chandelure|Chandelure, F|286\/286
+|turn|29
+|
+|move|p2a: Chandelure|Energy Ball|p1a: Vaporeon
+|-supereffective|p1a: Vaporeon
+|-damage|p1a: Vaporeon|0 fnt
+|faint|p1a: Vaporeon
+|
+|
+|switch|p1a: Flygon|Flygon, M|118\/302
+|-damage|p1a: Flygon|100\/302|[from] Stealth Rock
+|turn|30
+|
+|move|p1a: Flygon|Earthquake|p2a: Chandelure
+|-supereffective|p2a: Chandelure
+|-damage|p2a: Chandelure|0 fnt
+|faint|p2a: Chandelure
+|
+|
+|switch|p2a: Hydreigon|Hydreigon, F|234\/325 brn
+|turn|31
+|
+|switch|p1a: Absol|Absol-Mega, F|20\/272
+|-damage|p1a: Absol|0 fnt|[from] Stealth Rock
+|faint|p1a: Absol
+|move|p2a: Hydreigon|Dark Pulse|p1: Absol|[notarget]
+|-notarget
+|
+|-damage|p2a: Hydreigon|194\/325 brn|[from] brn
+|
+|switch|p1a: Empoleon|Empoleon, M|218\/372
+|-damage|p1a: Empoleon|195\/372|[from] Stealth Rock
+|turn|32
+|
+|move|p2a: Hydreigon|Dark Pulse|p1a: Empoleon
+|-crit|p1a: Empoleon
+|-damage|p1a: Empoleon|33\/372
+|move|p1a: Empoleon|Scald|p2a: Hydreigon
+|-resisted|p2a: Hydreigon
+|-damage|p2a: Hydreigon|110\/325 brn
+|
+|-heal|p1a: Empoleon|56\/372|[from] item: Leftovers
+|-damage|p2a: Hydreigon|70\/325 brn|[from] brn
+|turn|33
+|
+|move|p2a: Hydreigon|Dark Pulse|p1a: Empoleon
+|-damage|p1a: Empoleon|0 fnt
+|faint|p1a: Empoleon
+|
+|-damage|p2a: Hydreigon|30\/325 brn|[from] brn
+|
+|switch|p1a: Flygon|Flygon, M|100\/302
+|-damage|p1a: Flygon|82\/302|[from] Stealth Rock
+|turn|34
+|
+|move|p1a: Flygon|Dragon Claw|p2a: Hydreigon
+|-supereffective|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|faint|p2a: Hydreigon
+|
+|win|WForLife
+|raw|Ladder updating...
+|raw|WForLife's rating: 1352 &rarr; <strong>1375<\/strong><br \/>(+23 for winning)
+|raw|mini117's rating: 1401 &rarr; <strong>1378<\/strong><br \/>(-23 for losing)
+|c|âmini117|gg
+|c|âWForLife|gg
+|leave|mini117
+|player|p2

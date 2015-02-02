@@ -1,0 +1,266 @@
+|join|dEnIsSsS
+|join|Apedingo
+|player|p1|dEnIsSsS|288
+|player|p2|Apedingo|242
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Smeargle, M, shiny
+|poke|p1|Whimsicott, M
+|poke|p1|Thundurus, M
+|poke|p1|Espeon, M, shiny
+|poke|p1|Gothitelle, M
+|poke|p1|Azelf
+|poke|p2|Landorus-Therian, M
+|poke|p2|Garchomp, M
+|poke|p2|Keldeo
+|poke|p2|Latios, M
+|poke|p2|Tyranitar, M
+|poke|p2|Magnezone
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Thundurus|Thundurus, M|300\/300
+|switch|p2a: Latios|Latios, M|302\/302
+|turn|1
+|
+|move|p1a: Thundurus|Thunder Wave|p2a: Latios
+|-status|p2a: Latios|par
+|move|p2a: Latios|Draco Meteor|p1a: Thundurus
+|-enditem|p1a: Thundurus|Focus Sash
+|-damage|p1a: Thundurus|1\/300
+|-unboost|p2a: Latios|spa|2
+|
+|turn|2
+|
+|switch|p2a: Garchomp|Garchomp, M|358\/358
+|move|p1a: Thundurus|Taunt|p2a: Garchomp
+|-start|p2a: Garchomp|move: Taunt
+|
+|turn|3
+|
+|move|p1a: Thundurus|Taunt|p2a: Garchomp
+|-fail|p2a: Garchomp
+|move|p2a: Garchomp|Dragon Claw|p1a: Thundurus
+|-damage|p1a: Thundurus|0 fnt
+|faint|p1a: Thundurus
+|
+|
+|switch|p1a: Azelf|Azelf|354\/354
+|turn|4
+|
+|move|p2a: Garchomp|Dragon Claw|p1a: Azelf
+|-damage|p1a: Azelf|177\/354
+|move|p1a: Azelf|Reflect|p1a: Azelf
+|-sidestart|p1: dEnIsSsS|Reflect
+|
+|turn|5
+|
+|switch|p2a: Tyranitar|Tyranitar, M|341\/341
+|-weather|Sandstorm
+|move|p1a: Azelf|Light Screen|p1a: Azelf
+|-sidestart|p1: dEnIsSsS|move: Light Screen
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Azelf|155\/354|[from] sandstorm
+|turn|6
+|
+|detailschange|p2a: Tyranitar|Tyranitar-Mega, M
+|message|Tyranitar has Mega Evolved into Mega Tyranitar!
+|move|p1a: Azelf|Taunt|p2a: Tyranitar
+|-start|p2a: Tyranitar|move: Taunt
+|move|p2a: Tyranitar|Crunch|p1a: Azelf
+|-supereffective|p1a: Azelf
+|-damage|p1a: Azelf|0 fnt
+|faint|p1a: Azelf
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Whimsicott|Whimsicott, M|324\/324
+|turn|7
+|
+|move|p1a: Whimsicott|Tailwind|p1a: Whimsicott
+|-sidestart|p1: dEnIsSsS|move: Tailwind
+|move|p2a: Tyranitar|Ice Punch|p1a: Whimsicott
+|-supereffective|p1a: Whimsicott
+|-damage|p1a: Whimsicott|204\/324
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Whimsicott|184\/324|[from] sandstorm
+|turn|8
+|
+|move|p1a: Whimsicott|Memento|p2a: Tyranitar
+|-unboost|p2a: Tyranitar|atk|2
+|-unboost|p2a: Tyranitar|spa|2
+|faint|p1a: Whimsicott
+|move|p2a: Tyranitar|Ice Punch|p1: Whimsicott|[notarget]
+|-notarget
+|
+|-weather|Sandstorm|[upkeep]
+|-end|p2a: Tyranitar|move: Taunt
+|
+|switch|p1a: AL CAPONE|Smeargle, M, shiny|273\/273
+|turn|9
+|
+|switch|p2a: Latios|Latios, M|302\/302 par
+|move|p1a: AL CAPONE|Geomancy|p1a: AL CAPONE|[still]
+|-prepare|p1a: AL CAPONE|Geomancy|p1a: AL CAPONE
+|-enditem|p1a: AL CAPONE|Power Herb
+|-anim|p1a: AL CAPONE|Geomancy|p1a: AL CAPONE
+|-boost|p1a: AL CAPONE|spa|2
+|-boost|p1a: AL CAPONE|spd|2
+|-boost|p1a: AL CAPONE|spe|2
+|
+|-weather|none
+|turn|10
+|
+|move|p1a: AL CAPONE|Taunt|p2a: Latios
+|-start|p2a: Latios|move: Taunt
+|move|p2a: Latios|Surf|p1a: AL CAPONE
+|-damage|p1a: AL CAPONE|219\/273
+|
+|-sideend|p1: dEnIsSsS|move: Tailwind
+|turn|11
+|
+|move|p1a: AL CAPONE|Cotton Guard|p1a: AL CAPONE
+|-boost|p1a: AL CAPONE|def|3
+|move|p2a: Latios|Surf|p1a: AL CAPONE
+|-damage|p1a: AL CAPONE|158\/273
+|
+|-sideend|p1: dEnIsSsS|Reflect
+|turn|12
+|
+|switch|p2a: Keldeo|Keldeo|323\/323
+|move|p1a: AL CAPONE|Baton Pass|p1a: AL CAPONE
+|
+|switch|p1a: DON CORLEONE|Espeon, M, shiny|321\/321
+|
+|-sideend|p1: dEnIsSsS|move: Light Screen
+|turn|13
+|
+|move|p1a: DON CORLEONE|Substitute|p1a: DON CORLEONE
+|-start|p1a: DON CORLEONE|Substitute
+|-damage|p1a: DON CORLEONE|241\/321
+|move|p2a: Keldeo|Surf|p1a: DON CORLEONE
+|-end|p1a: DON CORLEONE|Substitute
+|
+|-heal|p1a: DON CORLEONE|261\/321|[from] item: Leftovers
+|turn|14
+|
+|move|p1a: DON CORLEONE|Stored Power|p2a: Keldeo
+|-crit|p2a: Keldeo
+|-supereffective|p2a: Keldeo
+|-damage|p2a: Keldeo|0 fnt
+|faint|p2a: Keldeo
+|
+|-heal|p1a: DON CORLEONE|281\/321|[from] item: Leftovers
+|
+|switch|p2a: Tyranitar|Tyranitar-Mega, M|341\/341
+|-weather|Sandstorm
+|turn|15
+|
+|move|p1a: DON CORLEONE|Dazzling Gleam|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|165\/341
+|move|p2a: Tyranitar|Crunch|p1a: DON CORLEONE
+|-supereffective|p1a: DON CORLEONE
+|-damage|p1a: DON CORLEONE|147\/321
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: DON CORLEONE|127\/321|[from] sandstorm
+|-heal|p1a: DON CORLEONE|147\/321|[from] item: Leftovers
+|turn|16
+|
+|move|p1a: DON CORLEONE|Dazzling Gleam|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: DON CORLEONE|127\/321|[from] sandstorm
+|-heal|p1a: DON CORLEONE|147\/321|[from] item: Leftovers
+|
+|switch|p2a: Garchomp|Garchomp, M|358\/358
+|turn|17
+|
+|move|p1a: DON CORLEONE|Stored Power|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|faint|p2a: Garchomp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: DON CORLEONE|127\/321|[from] sandstorm
+|-heal|p1a: DON CORLEONE|147\/321|[from] item: Leftovers
+|
+|switch|p2a: Magnezone|Magnezone|343\/343
+|turn|18
+|
+|move|p1a: DON CORLEONE|Stored Power|p2a: Magnezone
+|-resisted|p2a: Magnezone
+|-damage|p2a: Magnezone|49\/343
+|move|p2a: Magnezone|Thunderbolt|p1a: DON CORLEONE
+|-damage|p1a: DON CORLEONE|56\/321
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: DON CORLEONE|36\/321|[from] sandstorm
+|-heal|p1a: DON CORLEONE|56\/321|[from] item: Leftovers
+|-heal|p2a: Magnezone|70\/343|[from] item: Leftovers
+|turn|19
+|
+|move|p1a: DON CORLEONE|Stored Power|p2a: Magnezone
+|-crit|p2a: Magnezone
+|-resisted|p2a: Magnezone
+|-damage|p2a: Magnezone|0 fnt
+|faint|p2a: Magnezone
+|
+|-weather|none
+|-heal|p1a: DON CORLEONE|76\/321|[from] item: Leftovers
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|381\/381
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: DON CORLEONE
+|-unboost|p1a: DON CORLEONE|atk|1
+|turn|20
+|
+|move|p1a: DON CORLEONE|Stored Power|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|faint|p2a: Landorus-Therian
+|
+|-heal|p1a: DON CORLEONE|96\/321|[from] item: Leftovers
+|
+|switch|p2a: Latios|Latios, M|302\/302 par
+|turn|21
+|
+|move|p1a: DON CORLEONE|Substitute|p1a: DON CORLEONE
+|-start|p1a: DON CORLEONE|Substitute
+|-damage|p1a: DON CORLEONE|16\/321
+|move|p2a: Latios|Draco Meteor|p1a: DON CORLEONE
+|-end|p1a: DON CORLEONE|Substitute
+|-unboost|p2a: Latios|spa|2
+|
+|-heal|p1a: DON CORLEONE|36\/321|[from] item: Leftovers
+|turn|22
+|
+|move|p1a: DON CORLEONE|Morning Sun|p1a: DON CORLEONE
+|-heal|p1a: DON CORLEONE|196\/321
+|cant|p2a: Latios|par
+|
+|-heal|p1a: DON CORLEONE|216\/321|[from] item: Leftovers
+|turn|23
+|-message|Apedingo forfeited.
+|
+|win|dEnIsSsS
+|raw|Ladder updating...
+|raw|dEnIsSsS's rating: 1982 &rarr; <strong>1992<\/strong><br \/>(+10 for winning)
+|raw|Apedingo's rating: 1790 &rarr; <strong>1780<\/strong><br \/>(-10 for losing)
+|leave|Apedingo
+|player|p2

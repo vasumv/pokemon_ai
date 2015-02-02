@@ -1,0 +1,374 @@
+|join|MuhFugginMoose
+|join|prueva
+|player|p1|MuhFugginMoose|146
+|player|p2|prueva|10
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Forretress, M
+|poke|p1|Umbreon, M
+|poke|p1|Venusaur, F, shiny
+|poke|p1|Sableye, M, shiny
+|poke|p1|Vaporeon, F
+|poke|p1|Clefable, F
+|poke|p2|Slaking, F
+|poke|p2|Meowstic, M
+|poke|p2|Alakazam, F
+|poke|p2|Conkeldurr, F
+|poke|p2|Rotom-Wash
+|poke|p2|Garchomp, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: MindFck|Sableye, M, shiny|304\/304
+|switch|p2a: Meowstic|Meowstic, M|351\/351
+|turn|1
+|
+|move|p2a: Meowstic|Trick|p1a: MindFck
+|-activate|p2a: Meowstic|move: Trick|[of] p1a: MindFck
+|-item|p1a: MindFck|Choice Specs|[from] move: Trick
+|-item|p2a: Meowstic|Leftovers|[from] move: Trick
+|move|p1a: MindFck|Knock Off|p2a: Meowstic
+|-supereffective|p2a: Meowstic
+|-damage|p2a: Meowstic|127\/351
+|-enditem|p2a: Meowstic|Leftovers|[from] move: Knock Off|[of] p1a: MindFck
+|
+|turn|2
+|
+|switch|p2a: Conkeldurr|Conkeldurr, F|414\/414
+|move|p1a: MindFck|Knock Off|p2a: Conkeldurr
+|-resisted|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|363\/414
+|-enditem|p2a: Conkeldurr|Assault Vest|[from] move: Knock Off|[of] p1a: MindFck
+|
+|turn|3
+|
+|switch|p1a: GiveMeYourSoul|Venusaur, F, shiny|364\/364
+|move|p2a: Conkeldurr|Earthquake|p1a: GiveMeYourSoul
+|-damage|p1a: GiveMeYourSoul|208\/364
+|
+|turn|4
+|
+|-formechange|p1a: GiveMeYourSoul|Venusaur-Mega
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p1a: GiveMeYourSoul|Leech Seed|p2a: Conkeldurr
+|-start|p2a: Conkeldurr|move: Leech Seed
+|move|p2a: Conkeldurr|Knock Off|p1a: GiveMeYourSoul
+|-damage|p1a: GiveMeYourSoul|128\/364
+|
+|-damage|p2a: Conkeldurr|312\/414|[from] Leech Seed|[of] p1a: GiveMeYourSoul
+|-heal|p1a: GiveMeYourSoul|179\/364|[silent]
+|turn|5
+|
+|switch|p2a: Meowstic|Meowstic, M|127\/351
+|move|p1a: GiveMeYourSoul|Giga Drain|p2a: Meowstic
+|-damage|p2a: Meowstic|9\/351
+|-heal|p1a: GiveMeYourSoul|238\/364|[from] drain|[of] p2a: Meowstic
+|
+|turn|6
+|
+|switch|p1a: MindFck|Sableye, M, shiny|304\/304
+|move|p2a: Meowstic|Protect|p2a: Meowstic
+|-fail|p2a: Meowstic
+|
+|turn|7
+|
+|move|p2a: Meowstic|Toxic|p1a: MindFck|[miss]
+|-miss|p2a: Meowstic|p1a: MindFck
+|move|p1a: MindFck|Knock Off|p2a: Meowstic
+|-supereffective|p2a: Meowstic
+|-damage|p2a: Meowstic|0 fnt
+|faint|p2a: Meowstic
+|
+|
+|switch|p2a: Slaking|Slaking, F|442\/442
+|turn|8
+|
+|move|p2a: Slaking|Earthquake|p1a: MindFck
+|-damage|p1a: MindFck|133\/304
+|move|p1a: MindFck|Knock Off|p2a: Slaking
+|-damage|p2a: Slaking|352\/442
+|-enditem|p2a: Slaking|Choice Scarf|[from] move: Knock Off|[of] p1a: MindFck
+|
+|turn|9
+|
+|switch|p2a: Conkeldurr|Conkeldurr, F|312\/414
+|switch|p1a: BallO'Haz|Forretress, M|354\/354
+|
+|turn|10
+|
+|move|p2a: Conkeldurr|Knock Off|p1a: BallO'Haz
+|-damage|p1a: BallO'Haz|280\/354
+|-enditem|p1a: BallO'Haz|Leftovers|[from] move: Knock Off|[of] p2a: Conkeldurr
+|move|p1a: BallO'Haz|Toxic Spikes|p2a: Conkeldurr
+|-sidestart|p2: prueva|move: Toxic Spikes
+|
+|turn|11
+|
+|move|p2a: Conkeldurr|Drain Punch|p1a: BallO'Haz
+|-damage|p1a: BallO'Haz|183\/354
+|-heal|p2a: Conkeldurr|361\/414|[from] drain|[of] p1a: BallO'Haz
+|move|p1a: BallO'Haz|Toxic Spikes|p2a: Conkeldurr
+|-sidestart|p2: prueva|move: Toxic Spikes
+|
+|turn|12
+|
+|move|p2a: Conkeldurr|Drain Punch|p1a: BallO'Haz
+|-damage|p1a: BallO'Haz|95\/354
+|-heal|p2a: Conkeldurr|405\/414|[from] drain|[of] p1a: BallO'Haz
+|move|p1a: BallO'Haz|Stealth Rock|p2a: Conkeldurr
+|-sidestart|p2: prueva|move: Stealth Rock
+|
+|turn|13
+|
+|switch|p1a: MindFck|Sableye, M, shiny|133\/304
+|move|p2a: Conkeldurr|Earthquake|p1a: MindFck
+|-damage|p1a: MindFck|0 fnt
+|faint|p1a: MindFck
+|
+|
+|switch|p1a: GiveMeYourSoul|Venusaur, F, shiny|238\/364
+|-formechange|p1a: GiveMeYourSoul|Venusaur-Mega
+|turn|14
+|
+|move|p1a: GiveMeYourSoul|Leech Seed|p2a: Conkeldurr
+|-start|p2a: Conkeldurr|move: Leech Seed
+|move|p2a: Conkeldurr|Earthquake|p1a: GiveMeYourSoul
+|-damage|p1a: GiveMeYourSoul|126\/364
+|
+|-damage|p2a: Conkeldurr|354\/414|[from] Leech Seed|[of] p1a: GiveMeYourSoul
+|-heal|p1a: GiveMeYourSoul|177\/364|[silent]
+|turn|15
+|
+|move|p1a: GiveMeYourSoul|Giga Drain|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|206\/414
+|-heal|p1a: GiveMeYourSoul|251\/364|[from] drain|[of] p2a: Conkeldurr
+|move|p2a: Conkeldurr|Drain Punch|p1a: GiveMeYourSoul
+|-resisted|p1a: GiveMeYourSoul
+|-damage|p1a: GiveMeYourSoul|188\/364
+|-heal|p2a: Conkeldurr|238\/414|[from] drain|[of] p1a: GiveMeYourSoul
+|
+|-damage|p2a: Conkeldurr|187\/414|[from] Leech Seed|[of] p1a: GiveMeYourSoul
+|-heal|p1a: GiveMeYourSoul|239\/364|[silent]
+|turn|16
+|
+|switch|p2a: Slaking|Slaking, F|352\/442
+|-status|p2a: Slaking|tox
+|-damage|p2a: Slaking|297\/442 tox|[from] Stealth Rock
+|move|p1a: GiveMeYourSoul|Giga Drain|p2a: Slaking
+|-damage|p2a: Slaking|143\/442 tox
+|-heal|p1a: GiveMeYourSoul|316\/364|[from] drain|[of] p2a: Slaking
+|
+|-damage|p2a: Slaking|116\/442 tox|[from] psn
+|turn|17
+|
+|move|p2a: Slaking|Body Slam|p1a: GiveMeYourSoul
+|-damage|p1a: GiveMeYourSoul|169\/364
+|move|p1a: GiveMeYourSoul|Synthesis|p1a: GiveMeYourSoul
+|-heal|p1a: GiveMeYourSoul|351\/364
+|
+|-damage|p2a: Slaking|62\/442 tox|[from] psn
+|turn|18
+|
+|cant|p2a: Slaking|ability: Truant|Body Slam
+|move|p1a: GiveMeYourSoul|Giga Drain|p2a: Slaking
+|-damage|p2a: Slaking|0 fnt
+|-heal|p1a: GiveMeYourSoul|364\/364|[from] drain|[of] p2a: Slaking
+|faint|p2a: Slaking
+|
+|
+|switch|p2a: Alakazam|Alakazam, F|252\/252
+|-status|p2a: Alakazam|tox
+|turn|19
+|
+|switch|p1a: BallO'Haz|Forretress, M|95\/354
+|-formechange|p2a: Alakazam|Alakazam-Mega
+|message|Alakazam has Mega Evolved into Mega Alakazam!
+|-ability|p2a: Alakazam|Sturdy|[from] ability: Trace|[of] p1a: BallO'Haz
+|move|p2a: Alakazam|Psyshock|p1a: BallO'Haz
+|-resisted|p1a: BallO'Haz
+|-damage|p1a: BallO'Haz|41\/354
+|
+|-damage|p2a: Alakazam|237\/252 tox|[from] psn
+|turn|20
+|
+|move|p2a: Alakazam|Psyshock|p1a: BallO'Haz
+|-resisted|p1a: BallO'Haz
+|-damage|p1a: BallO'Haz|0 fnt
+|faint|p1a: BallO'Haz
+|
+|-damage|p2a: Alakazam|207\/252 tox|[from] psn
+|
+|switch|p1a: Ariel|Vaporeon, F|464\/464
+|turn|21
+|
+|move|p1a: Ariel|Protect|p1a: Ariel
+|-singleturn|p1a: Ariel|Protect
+|move|p2a: Alakazam|Psyshock|p1a: Ariel
+|-activate|p1a: Ariel|Protect
+|
+|-damage|p2a: Alakazam|162\/252 tox|[from] psn
+|turn|22
+|
+|move|p2a: Alakazam|Psyshock|p1a: Ariel
+|-damage|p1a: Ariel|287\/464
+|move|p1a: Ariel|Ice Beam|p2a: Alakazam
+|-damage|p2a: Alakazam|84\/252 tox
+|
+|-heal|p1a: Ariel|316\/464|[from] item: Leftovers
+|-damage|p2a: Alakazam|24\/252 tox|[from] psn
+|turn|23
+|
+|switch|p2a: Conkeldurr|Conkeldurr, F|187\/414
+|-status|p2a: Conkeldurr|tox
+|-damage|p2a: Conkeldurr|162\/414 tox|[from] Stealth Rock
+|move|p1a: Ariel|Wish|p1a: Ariel
+|
+|-heal|p1a: Ariel|345\/464|[from] item: Leftovers
+|-damage|p2a: Conkeldurr|137\/414 tox|[from] psn
+|turn|24
+|
+|move|p1a: Ariel|Protect|p1a: Ariel
+|-singleturn|p1a: Ariel|Protect
+|move|p2a: Conkeldurr|Drain Punch|p1a: Ariel
+|-activate|p1a: Ariel|Protect
+|
+|-heal|p1a: Ariel|464\/464|[from] move: Wish|[wisher] Ariel
+|-damage|p2a: Conkeldurr|87\/414 tox|[from] psn
+|turn|25
+|
+|switch|p1a: SoOnIt|Clefable, F|394\/394
+|move|p2a: Conkeldurr|Drain Punch|p1a: SoOnIt
+|-resisted|p1a: SoOnIt
+|-damage|p1a: SoOnIt|299\/394
+|-heal|p2a: Conkeldurr|135\/414 tox|[from] drain|[of] p1a: SoOnIt
+|
+|-heal|p1a: SoOnIt|323\/394|[from] item: Leftovers
+|-damage|p2a: Conkeldurr|60\/414 tox|[from] psn
+|turn|26
+|
+|move|p1a: SoOnIt|Wish|p1a: SoOnIt
+|move|p2a: Conkeldurr|Earthquake|p1a: SoOnIt
+|-damage|p1a: SoOnIt|155\/394
+|
+|-heal|p1a: SoOnIt|179\/394|[from] item: Leftovers
+|-damage|p2a: Conkeldurr|0 fnt|[from] psn
+|faint|p2a: Conkeldurr
+|
+|switch|p2a: Garchomp|Garchomp, M|358\/358
+|-damage|p2a: Garchomp|336\/358|[from] Stealth Rock
+|-status|p2a: Garchomp|tox
+|turn|27
+|
+|switch|p1a: Ariel|Vaporeon, F|464\/464
+|move|p2a: Garchomp|Poison Jab|p1a: Ariel
+|-crit|p1a: Ariel
+|-damage|p1a: Ariel|316\/464
+|
+|-heal|p1a: Ariel|464\/464|[from] move: Wish|[wisher] SoOnIt
+|-damage|p2a: Garchomp|314\/358 tox|[from] psn
+|turn|28
+|
+|switch|p1a: GiveMeYourSoul|Venusaur, F, shiny|364\/364
+|-formechange|p1a: GiveMeYourSoul|Venusaur-Mega
+|move|p2a: Garchomp|Swords Dance|p2a: Garchomp
+|-boost|p2a: Garchomp|atk|2
+|
+|-damage|p2a: Garchomp|270\/358 tox|[from] psn
+|turn|29
+|
+|move|p2a: Garchomp|Outrage|p1a: GiveMeYourSoul
+|-damage|p1a: GiveMeYourSoul|0 fnt
+|faint|p1a: GiveMeYourSoul
+|
+|-damage|p2a: Garchomp|204\/358 tox|[from] psn
+|
+|switch|p1a: SoOnIt|Clefable, F|179\/394
+|turn|30
+|
+|move|p2a: Garchomp|Outrage|p1a: SoOnIt
+|-immune|p1a: SoOnIt|[msg]
+|move|p1a: SoOnIt|Wish|p1a: SoOnIt
+|
+|-heal|p1a: SoOnIt|203\/394|[from] item: Leftovers
+|-damage|p2a: Garchomp|116\/358 tox|[from] psn
+|turn|31
+|
+|move|p2a: Garchomp|Poison Jab|p1a: SoOnIt
+|-supereffective|p1a: SoOnIt
+|-damage|p1a: SoOnIt|45\/394
+|-status|p1a: SoOnIt|psn
+|move|p1a: SoOnIt|Flamethrower|p2a: Garchomp
+|-resisted|p2a: Garchomp
+|-damage|p2a: Garchomp|80\/358 tox
+|
+|-heal|p1a: SoOnIt|242\/394 psn|[from] move: Wish|[wisher] SoOnIt
+|-heal|p1a: SoOnIt|266\/394 psn|[from] item: Leftovers
+|-damage|p2a: Garchomp|0 fnt|[from] psn
+|-damage|p1a: SoOnIt|217\/394 psn|[from] psn
+|faint|p2a: Garchomp
+|
+|switch|p2a: Alakazam|Alakazam, F|24\/252 tox
+|-formechange|p2a: Alakazam|Alakazam-Mega
+|-damage|p2a: Alakazam|0 fnt|[from] Stealth Rock
+|faint|p2a: Alakazam
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|-damage|p2a: Rotom-Wash|266\/304|[from] Stealth Rock
+|turn|32
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: SoOnIt
+|-damage|p1a: SoOnIt|73\/394 psn
+|move|p1a: SoOnIt|Toxic|p2a: Rotom-Wash
+|-status|p2a: Rotom-Wash|tox
+|
+|-heal|p2a: Rotom-Wash|285\/304 tox|[from] item: Leftovers
+|-heal|p1a: SoOnIt|97\/394 psn|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|266\/304 tox|[from] psn
+|-damage|p1a: SoOnIt|48\/394 psn|[from] psn
+|turn|33
+|
+|switch|p1a: Ariel|Vaporeon, F|464\/464
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Ariel
+|-immune|p1a: Ariel|[msg]
+|
+|-heal|p2a: Rotom-Wash|285\/304 tox|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|247\/304 tox|[from] psn
+|turn|34
+|
+|switch|p1a: SoOnIt|Clefable, F|48\/394 psn
+|move|p2a: Rotom-Wash|Volt Switch|p1a: SoOnIt
+|-damage|p1a: SoOnIt|0 fnt
+|faint|p1a: SoOnIt
+|
+|-heal|p2a: Rotom-Wash|266\/304 tox|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|209\/304 tox|[from] psn
+|
+|switch|p1a: Ariel|Vaporeon, F|464\/464
+|turn|35
+|
+|move|p1a: Ariel|Protect|p1a: Ariel
+|-singleturn|p1a: Ariel|Protect
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Ariel
+|-activate|p1a: Ariel|Protect
+|
+|-heal|p2a: Rotom-Wash|228\/304 tox|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|152\/304 tox|[from] psn
+|turn|36
+|-message|prueva forfeited.
+|
+|win|MuhFugginMoose
+|raw|Ladder updating...
+|leave|prueva
+|player|p2
+|raw|MuhFugginMoose's rating: 1321 &rarr; <strong>1340<\/strong><br \/>(+19 for winning)
+|raw|prueva's rating: 1297 &rarr; <strong>1274<\/strong><br \/>(-23 for losing)

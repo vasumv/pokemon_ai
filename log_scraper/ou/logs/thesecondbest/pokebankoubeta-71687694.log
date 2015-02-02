@@ -1,0 +1,256 @@
+|join|thesecondbest
+|join|Iwamiger
+|player|p1|thesecondbest|25
+|player|p2|Iwamiger|282
+|gametype|singles
+|tier|Pokebank OU (beta)
+|rated
+|clearpoke
+|poke|p1|Mandibuzz, F
+|poke|p1|Florges, F
+|poke|p1|Tentacruel, F
+|poke|p1|Genesect
+|poke|p1|Lucario, M
+|poke|p1|Landorus-Therian, M
+|poke|p2|Greninja, M
+|poke|p2|Aegislash, M
+|poke|p2|Chansey, F
+|poke|p2|Talonflame, M
+|poke|p2|Gliscor, M
+|poke|p2|Exploud, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Genesect|Genesect|283\/283
+|switch|p2a: Pipe Organ|Exploud, M|350\/350
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|turn|1
+|callback|decision
+|
+|move|p1a: Genesect|U-turn|p2a: Pipe Organ
+|-damage|p2a: Pipe Organ|257\/350
+|callback|decision
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Pipe Organ|Boomburst|p1a: Florges
+|-damage|p1a: Florges|186\/360
+|
+|-heal|p1a: Florges|208\/360|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p2a: Kirby|Chansey, F|704\/704
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p1a: Florges|230\/360|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p1a: Tentacruel|Tentacruel, F|364\/364
+|move|p2a: Kirby|Thunder Wave|p1a: Tentacruel
+|-status|p1a: Tentacruel|par
+|
+|turn|4
+|callback|decision
+|
+|switch|p2a: Miraak|Gliscor, M|292\/292
+|cant|p1a: Tentacruel|par
+|
+|-activate|p2a: Miraak|item: Toxic Orb
+|-status|p2a: Miraak|tox
+|turn|5
+|callback|decision
+|
+|move|p2a: Miraak|Earthquake|p1a: Tentacruel
+|-supereffective|p1a: Tentacruel
+|-damage|p1a: Tentacruel|0 fnt
+|faint|p1a: Tentacruel
+|
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|283\/283
+|-boost|p1a: Genesect|spa|1|[from] ability: Download
+|turn|6
+|callback|decision
+|
+|switch|p2a: Master Sword|Aegislash, M|324\/324
+|move|p1a: Genesect|Iron Head|p2a: Master Sword
+|-resisted|p2a: Master Sword
+|-damage|p2a: Master Sword|283\/324
+|
+|-heal|p2a: Master Sword|303\/324|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|424\/424
+|move|p2a: Master Sword|Swords Dance|p2a: Master Sword
+|-boost|p2a: Master Sword|atk|2
+|
+|-heal|p2a: Master Sword|323\/324|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p2a: Kirby|Chansey, F|704\/704
+|move|p1a: Mandibuzz|Knock Off|p2a: Kirby
+|-damage|p2a: Kirby|455\/704
+|-enditem|p2a: Kirby|Eviolite|[from] move: Knock Off|[of] p1a: Mandibuzz
+|
+|turn|9
+|callback|decision
+|
+|move|p1a: Mandibuzz|Taunt|p2a: Kirby
+|-start|p2a: Kirby|move: Taunt
+|cant|p2a: Kirby|move: Taunt|Thunder Wave
+|
+|turn|10
+|callback|decision
+|
+|switch|p2a: Miraak|Gliscor, M|292\/292 tox
+|move|p1a: Mandibuzz|Knock Off|p2a: Miraak
+|-damage|p2a: Miraak|232\/292 tox
+|-enditem|p2a: Miraak|Toxic Orb|[from] move: Knock Off|[of] p1a: Mandibuzz
+|
+|-heal|p2a: Miraak|268\/292 tox|[from] ability: Poison Heal
+|turn|11
+|callback|decision
+|
+|switch|p1a: Florges|Florges, F|230\/360
+|move|p2a: Miraak|Swords Dance|p2a: Miraak
+|-boost|p2a: Miraak|atk|2
+|
+|-heal|p1a: Florges|252\/360|[from] item: Leftovers
+|-heal|p2a: Miraak|292\/292 tox|[from] ability: Poison Heal
+|turn|12
+|callback|decision
+|
+|move|p2a: Miraak|Earthquake|p1a: Florges
+|-damage|p1a: Florges|0 fnt
+|faint|p1a: Florges
+|
+|callback|decision
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|424\/424
+|turn|13
+|callback|decision
+|
+|move|p2a: Miraak|Ice Fang|p1a: Mandibuzz
+|-supereffective|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|240\/424
+|move|p1a: Mandibuzz|Whirlwind|p2a: Miraak
+|drag|p2a: Talos|Talonflame, M|298\/298
+|
+|-heal|p1a: Mandibuzz|266\/424|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p2a: Talos|U-turn|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|215\/424
+|callback|decision
+|
+|switch|p2a: Ben Froaklin|Greninja, M|286\/286
+|move|p1a: Mandibuzz|Roost|p1a: Mandibuzz
+|-heal|p1a: Mandibuzz|424\/424
+|
+|turn|15
+|callback|decision
+|
+|-start|p2a: Ben Froaklin|typechange|Ice|[from] Protean
+|move|p2a: Ben Froaklin|Ice Beam|p1a: Mandibuzz
+|-supereffective|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|39\/424
+|-damage|p2a: Ben Froaklin|258\/286|[from] item: Life Orb
+|move|p1a: Mandibuzz|Knock Off|p2a: Ben Froaklin
+|-damage|p2a: Ben Froaklin|162\/286
+|-enditem|p2a: Ben Froaklin|Life Orb|[from] move: Knock Off|[of] p1a: Mandibuzz
+|
+|-heal|p1a: Mandibuzz|65\/424|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p1a: Genesect|Genesect|283\/283
+|-boost|p1a: Genesect|atk|1|[from] ability: Download
+|-start|p2a: Ben Froaklin|typechange|Fire|[from] Protean
+|move|p2a: Ben Froaklin|Hidden Power|p1a: Genesect
+|-supereffective|p1a: Genesect
+|-damage|p1a: Genesect|0 fnt
+|faint|p1a: Genesect
+|
+|callback|decision
+|
+|switch|p1a: Lucario|Lucario, M|281\/281
+|turn|17
+|callback|decision
+|
+|switch|p2a: Master Sword|Aegislash, M|323\/324
+|-formechange|p1a: Lucario|Lucario-Mega
+|message|Lucario has Mega Evolved into Mega Lucario!
+|move|p1a: Lucario|Extreme Speed|p2a: Master Sword
+|-immune|p2a: Master Sword|[msg]
+|
+|-heal|p2a: Master Sword|324\/324|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p1a: Lucario|Dark Pulse|p2a: Master Sword
+|-supereffective|p2a: Master Sword
+|-damage|p2a: Master Sword|188\/324
+|-formechange|p2a: Master Sword|Aegislash-Blade
+|move|p2a: Master Sword|Sacred Sword|p1a: Lucario
+|-supereffective|p1a: Lucario
+|-damage|p1a: Lucario|0 fnt
+|faint|p1a: Lucario
+|
+|-heal|p2a: Master Sword|208\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Mandibuzz|Mandibuzz, F|65\/424
+|turn|19
+|callback|decision
+|
+|move|p2a: Master Sword|Shadow Sneak|p1a: Mandibuzz
+|-resisted|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|35\/424
+|move|p1a: Mandibuzz|Knock Off|p2a: Master Sword
+|-crit|p2a: Master Sword
+|-supereffective|p2a: Master Sword
+|-damage|p2a: Master Sword|0 fnt
+|faint|p2a: Master Sword
+|
+|-heal|p1a: Mandibuzz|61\/424|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Ben Froaklin|Greninja, M|162\/286
+|turn|20
+|callback|decision
+|
+|-start|p2a: Ben Froaklin|typechange|Ice|[from] Protean
+|move|p2a: Ben Froaklin|Ice Beam|p1a: Mandibuzz
+|-supereffective|p1a: Mandibuzz
+|-damage|p1a: Mandibuzz|0 fnt
+|faint|p1a: Mandibuzz
+|
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|382\/382
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Ben Froaklin
+|-unboost|p2a: Ben Froaklin|atk|1
+|turn|21
+|callback|decision
+|
+|move|p2a: Ben Froaklin|Ice Beam|p1a: Landorus-Therian
+|-supereffective|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|faint|p1a: Landorus-Therian
+|
+|win|Iwamiger
+|raw|Ladder updating...
+|raw|thesecondbest's rating: 1456 &rarr; <strong>1445<\/strong><br \/>(-11 for losing)
+|raw|Iwamiger's rating: 1651 &rarr; <strong>1655<\/strong><br \/>(+4 for winning)
+|chat|Iwamiger|gg

@@ -1,0 +1,433 @@
+|join|xMarth
+|join|PeterRee1234
+|player|p1|xMarth|153
+|player|p2|PeterRee1234|154
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Cresselia, F, shiny
+|poke|p1|Dugtrio, F
+|poke|p1|Granbull, F
+|poke|p1|Vaporeon, M
+|poke|p1|Crobat, F
+|poke|p1|Aggron, M
+|poke|p2|Darmanitan, F
+|poke|p2|Froslass, F
+|poke|p2|Porygon2
+|poke|p2|Abomasnow, F
+|poke|p2|Raikou
+|poke|p2|Donphan, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Aggron|Aggron, M|344\/344
+|switch|p2a: Froslass|Froslass, F|281\/281
+|turn|1
+|
+|detailschange|p1a: Aggron|Aggron-Mega, M
+|message|Aggron has Mega Evolved into Mega Aggron!
+|move|p2a: Froslass|Taunt|p1a: Aggron
+|-start|p1a: Aggron|move: Taunt
+|move|p1a: Aggron|Heavy Slam|p2a: Froslass
+|-supereffective|p2a: Froslass
+|-enditem|p2a: Froslass|Focus Sash
+|-damage|p2a: Froslass|1\/281
+|
+|turn|2
+|
+|switch|p1a: Crobat|Crobat, F|341\/341
+|move|p2a: Froslass|Destiny Bond|p2a: Froslass
+|-singlemove|p2a: Froslass|Destiny Bond
+|
+|turn|3
+|
+|switch|p1a: Vaporeon|Vaporeon, M|450\/450
+|move|p2a: Froslass|Ice Beam|p1a: Vaporeon
+|-resisted|p1a: Vaporeon
+|-damage|p1a: Vaporeon|399\/450
+|
+|-heal|p1a: Vaporeon|427\/450|[from] item: Leftovers
+|turn|4
+|
+|move|p2a: Froslass|Taunt|p1a: Vaporeon
+|-start|p1a: Vaporeon|move: Taunt
+|cant|p1a: Vaporeon|move: Taunt|Baton Pass
+|
+|-heal|p1a: Vaporeon|450\/450|[from] item: Leftovers
+|turn|5
+|
+|switch|p1a: Aggron|Aggron-Mega, M|344\/344
+|move|p2a: Froslass|Destiny Bond|p2a: Froslass
+|-singlemove|p2a: Froslass|Destiny Bond
+|
+|turn|6
+|
+|switch|p1a: Crobat|Crobat, F|341\/341
+|move|p2a: Froslass|Taunt|p1a: Crobat
+|-start|p1a: Crobat|move: Taunt
+|
+|turn|7
+|
+|switch|p2a: Donphan|Donphan, F|321\/321
+|move|p1a: Crobat|U-turn|p2a: Donphan
+|-damage|p2a: Donphan|279\/321
+|
+|switch|p1a: Vaporeon|Vaporeon, M|450\/450
+|
+|-heal|p2a: Donphan|299\/321|[from] item: Leftovers
+|turn|8
+|
+|switch|p2a: Abomasnow|Abomasnow, F|323\/323
+|-weather|Hail
+|move|p1a: Vaporeon|Scald|p2a: Abomasnow
+|-resisted|p2a: Abomasnow
+|-damage|p2a: Abomasnow|263\/323
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Vaporeon|422\/450|[from] hail
+|-heal|p1a: Vaporeon|450\/450|[from] item: Leftovers
+|turn|9
+|
+|switch|p1a: Aggron|Aggron-Mega, M|344\/344
+|detailschange|p2a: Abomasnow|Abomasnow-Mega, F
+|message|Abomasnow has Mega Evolved into Mega Abomasnow!
+|move|p2a: Abomasnow|Giga Drain|p1a: Aggron
+|-resisted|p1a: Aggron
+|-damage|p1a: Aggron|266\/344
+|-heal|p2a: Abomasnow|302\/323|[from] drain|[of] p1a: Aggron
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Aggron|245\/344|[from] hail
+|turn|10
+|
+|move|p2a: Abomasnow|Blizzard|p1a: Aggron
+|-resisted|p1a: Aggron
+|-damage|p1a: Aggron|125\/344
+|move|p1a: Aggron|Stealth Rock|p2a: Abomasnow
+|-sidestart|p2: PeterRee1234|move: Stealth Rock
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Aggron|104\/344|[from] hail
+|turn|11
+|
+|move|p2a: Abomasnow|Blizzard|p1a: Aggron
+|-resisted|p1a: Aggron
+|-damage|p1a: Aggron|0 fnt
+|faint|p1a: Aggron
+|
+|-weather|Hail|[upkeep]
+|
+|switch|p1a: Granbull|Granbull, F|384\/384
+|-ability|p1a: Granbull|Intimidate|[of] p2a: Abomasnow
+|-unboost|p2a: Abomasnow|atk|1
+|turn|12
+|
+|switch|p1a: Vaporeon|Vaporeon, M|450\/450
+|move|p2a: Abomasnow|Blizzard|p1a: Vaporeon
+|-resisted|p1a: Vaporeon
+|-damage|p1a: Vaporeon|355\/450
+|
+|-weather|none
+|-heal|p1a: Vaporeon|383\/450|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: Crobat|Crobat, F|341\/341
+|move|p2a: Abomasnow|Giga Drain|p1a: Crobat
+|-resisted|p1a: Crobat
+|-damage|p1a: Crobat|299\/341
+|-heal|p2a: Abomasnow|323\/323|[from] drain|[of] p1a: Crobat
+|
+|-heal|p1a: Crobat|320\/341|[from] item: Black Sludge
+|turn|14
+|
+|switch|p2a: Donphan|Donphan, F|299\/321
+|-damage|p2a: Donphan|279\/321|[from] Stealth Rock
+|move|p1a: Crobat|U-turn|p2a: Donphan
+|-damage|p2a: Donphan|242\/321
+|
+|switch|p1a: Vaporeon|Vaporeon, M|383\/450
+|
+|-heal|p2a: Donphan|262\/321|[from] item: Leftovers
+|-heal|p1a: Vaporeon|411\/450|[from] item: Leftovers
+|turn|15
+|
+|move|p2a: Donphan|Rapid Spin|p1a: Vaporeon
+|-damage|p1a: Vaporeon|387\/450
+|-sideend|p2: PeterRee1234|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Donphan
+|move|p1a: Vaporeon|Scald|p2a: Donphan
+|-supereffective|p2a: Donphan
+|-damage|p2a: Donphan|0 fnt
+|faint|p2a: Donphan
+|
+|-heal|p1a: Vaporeon|415\/450|[from] item: Leftovers
+|
+|switch|p2a: Raikou|Raikou|322\/322
+|-ability|p2a: Raikou|Pressure
+|turn|16
+|
+|switch|p2a: Abomasnow|Abomasnow-Mega, F|323\/323
+|-weather|Hail
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-fail|p1a: Vaporeon
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Vaporeon|387\/450|[from] hail
+|-heal|p1a: Vaporeon|415\/450|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Abomasnow|Blizzard|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Protect
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Vaporeon|387\/450|[from] hail
+|-heal|p1a: Vaporeon|415\/450|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Vaporeon|Baton Pass|p1a: Vaporeon
+|
+|switch|p1a: Crobat|Crobat, F|320\/341
+|move|p2a: Abomasnow|Blizzard|p1a: Crobat
+|-supereffective|p1a: Crobat
+|-damage|p1a: Crobat|0 fnt
+|faint|p1a: Crobat
+|
+|-weather|Hail|[upkeep]
+|
+|switch|p1a: Dugtrio|Dugtrio, F|211\/211
+|turn|19
+|
+|move|p1a: Dugtrio|Stone Edge|p2a: Abomasnow
+|-supereffective|p2a: Abomasnow
+|-damage|p2a: Abomasnow|35\/323
+|move|p2a: Abomasnow|Giga Drain|p1a: Dugtrio
+|-crit|p1a: Dugtrio
+|-supereffective|p1a: Dugtrio
+|-damage|p1a: Dugtrio|0 fnt
+|-heal|p2a: Abomasnow|141\/323|[from] drain|[of] p1a: Dugtrio
+|faint|p1a: Dugtrio
+|
+|-weather|Hail|[upkeep]
+|
+|switch|p1a: Granbull|Granbull, F|384\/384
+|-ability|p1a: Granbull|Intimidate|[of] p2a: Abomasnow
+|-unboost|p2a: Abomasnow|atk|1
+|turn|20
+|
+|move|p2a: Abomasnow|Blizzard|p1a: Granbull
+|-damage|p1a: Granbull|60\/384
+|-status|p1a: Granbull|frz
+|-curestatus|p1a: Granbull|frz
+|move|p1a: Granbull|Play Rough|p2a: Abomasnow
+|-damage|p2a: Abomasnow|5\/323
+|
+|-weather|none
+|-heal|p1a: Granbull|84\/384|[from] item: Leftovers
+|turn|21
+|
+|switch|p1a: Vaporeon|Vaporeon, M|415\/450
+|move|p2a: Abomasnow|Ice Shard|p1a: Vaporeon
+|-resisted|p1a: Vaporeon
+|-damage|p1a: Vaporeon|393\/450
+|
+|-heal|p1a: Vaporeon|421\/450|[from] item: Leftovers
+|turn|22
+|
+|move|p1a: Vaporeon|Scald|p2a: Abomasnow
+|-resisted|p2a: Abomasnow
+|-damage|p2a: Abomasnow|0 fnt
+|faint|p2a: Abomasnow
+|
+|-heal|p1a: Vaporeon|449\/450|[from] item: Leftovers
+|
+|switch|p2a: Raikou|Raikou|322\/322
+|-ability|p2a: Raikou|Pressure
+|turn|23
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Raikou|Volt Switch|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Protect
+|
+|-heal|p1a: Vaporeon|450\/450|[from] item: Leftovers
+|turn|24
+|
+|move|p2a: Raikou|Thunderbolt|p1a: Vaporeon
+|-crit|p1a: Vaporeon
+|-supereffective|p1a: Vaporeon
+|-damage|p1a: Vaporeon|78\/450
+|-status|p1a: Vaporeon|par
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|106\/450 par|[from] item: Leftovers
+|turn|25
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Raikou|Volt Switch|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Protect
+|
+|-heal|p1a: Vaporeon|331\/450 par|[from] move: Wish|[wisher] Vaporeon
+|-heal|p1a: Vaporeon|359\/450 par|[from] item: Leftovers
+|turn|26
+|
+|move|p2a: Raikou|Volt Switch|p1a: Vaporeon
+|-supereffective|p1a: Vaporeon
+|-damage|p1a: Vaporeon|153\/450 par
+|
+|switch|p2a: Froslass|Froslass, F|1\/281
+|move|p1a: Vaporeon|Scald|p2a: Froslass
+|-damage|p2a: Froslass|0 fnt
+|faint|p2a: Froslass
+|
+|-heal|p1a: Vaporeon|181\/450 par|[from] item: Leftovers
+|
+|switch|p2a: Raikou|Raikou|322\/322
+|-ability|p2a: Raikou|Pressure
+|turn|27
+|
+|cant|p1a: Vaporeon|par
+|move|p2a: Raikou|Thunderbolt|p1a: Vaporeon
+|-supereffective|p1a: Vaporeon
+|-damage|p1a: Vaporeon|0 fnt
+|faint|p1a: Vaporeon
+|
+|
+|switch|p1a: Body Time|Cresselia, F, shiny|433\/433
+|turn|28
+|
+|move|p2a: Raikou|Thunderbolt|p1a: Body Time
+|-damage|p1a: Body Time|312\/433
+|move|p1a: Body Time|Calm Mind|p1a: Body Time
+|-boost|p1a: Body Time|spa|1
+|-boost|p1a: Body Time|spd|1
+|
+|-heal|p1a: Body Time|339\/433|[from] item: Leftovers
+|turn|29
+|
+|move|p2a: Raikou|Volt Switch|p1a: Body Time
+|-damage|p1a: Body Time|272\/433
+|
+|switch|p2a: Porygon2|Porygon2|373\/373
+|-ability|p2a: Porygon2|Levitate|[from] ability: Trace|[of] p1a: Body Time
+|move|p1a: Body Time|Substitute|p1a: Body Time
+|-start|p1a: Body Time|Substitute
+|-damage|p1a: Body Time|164\/433
+|
+|-heal|p1a: Body Time|191\/433|[from] item: Leftovers
+|turn|30
+|
+|move|p1a: Body Time|Calm Mind|p1a: Body Time
+|-boost|p1a: Body Time|spa|1
+|-boost|p1a: Body Time|spd|1
+|move|p2a: Porygon2|Thunderbolt|p1a: Body Time
+|-activate|p1a: Body Time|Substitute|[damage]
+|
+|-heal|p1a: Body Time|218\/433|[from] item: Leftovers
+|turn|31
+|
+|move|p1a: Body Time|Calm Mind|p1a: Body Time
+|-boost|p1a: Body Time|spa|1
+|-boost|p1a: Body Time|spd|1
+|move|p2a: Porygon2|Thunderbolt|p1a: Body Time
+|-activate|p1a: Body Time|Substitute|[damage]
+|
+|-heal|p1a: Body Time|245\/433|[from] item: Leftovers
+|turn|32
+|
+|switch|p2a: Raikou|Raikou|322\/322
+|-ability|p2a: Raikou|Pressure
+|move|p1a: Body Time|Calm Mind|p1a: Body Time
+|-boost|p1a: Body Time|spa|1
+|-boost|p1a: Body Time|spd|1
+|
+|-heal|p1a: Body Time|272\/433|[from] item: Leftovers
+|turn|33
+|
+|move|p2a: Raikou|Volt Switch|p1a: Body Time
+|-activate|p1a: Body Time|Substitute|[damage]
+|
+|switch|p2a: Porygon2|Porygon2|373\/373
+|-ability|p2a: Porygon2|Levitate|[from] ability: Trace|[of] p1a: Body Time
+|move|p1a: Body Time|Substitute|p1a: Body Time
+|-fail|p1a: Body Time|move: Substitute
+|
+|-heal|p1a: Body Time|299\/433|[from] item: Leftovers
+|turn|34
+|join|BenzMafia
+|
+|move|p1a: Body Time|Psyshock|p2a: Porygon2
+|-damage|p2a: Porygon2|240\/373
+|move|p2a: Porygon2|Ice Beam|p1a: Body Time
+|-end|p1a: Body Time|Substitute
+|
+|-heal|p1a: Body Time|326\/433|[from] item: Leftovers
+|turn|35
+|
+|switch|p2a: Darmanitan|Darmanitan, F|351\/351
+|move|p1a: Body Time|Substitute|p1a: Body Time
+|-start|p1a: Body Time|Substitute
+|-damage|p1a: Body Time|218\/433
+|
+|-heal|p1a: Body Time|245\/433|[from] item: Leftovers
+|turn|36
+|
+|move|p2a: Darmanitan|U-turn|p1a: Body Time
+|-supereffective|p1a: Body Time
+|-end|p1a: Body Time|Substitute
+|
+|switch|p2a: Raikou|Raikou|322\/322
+|-ability|p2a: Raikou|Pressure
+|move|p1a: Body Time|Psyshock|p2a: Raikou
+|-damage|p2a: Raikou|0 fnt
+|faint|p2a: Raikou
+|
+|-heal|p1a: Body Time|272\/433|[from] item: Leftovers
+|
+|switch|p2a: Darmanitan|Darmanitan, F|351\/351
+|turn|37
+|
+|move|p2a: Darmanitan|Flare Blitz|p1a: Body Time
+|-damage|p1a: Body Time|47\/433
+|-damage|p2a: Darmanitan|277\/351|[from] recoil|[of] p1a: Body Time
+|move|p1a: Body Time|Psyshock|p2a: Darmanitan
+|-damage|p2a: Darmanitan|0 fnt
+|faint|p2a: Darmanitan
+|
+|-heal|p1a: Body Time|74\/433|[from] item: Leftovers
+|
+|switch|p2a: Porygon2|Porygon2|240\/373
+|-ability|p2a: Porygon2|Levitate|[from] ability: Trace|[of] p1a: Body Time
+|turn|38
+|
+|move|p1a: Body Time|Moonblast|p2a: Porygon2
+|-damage|p2a: Porygon2|82\/373
+|move|p2a: Porygon2|Toxic|p1a: Body Time
+|-status|p1a: Body Time|tox
+|
+|-heal|p1a: Body Time|101\/433 tox|[from] item: Leftovers
+|-damage|p1a: Body Time|74\/433 tox|[from] psn
+|turn|39
+|
+|move|p1a: Body Time|Moonblast|p2a: Porygon2
+|-damage|p2a: Porygon2|0 fnt
+|faint|p2a: Porygon2
+|
+|win|xMarth
+|raw|Ladder updating...
+|raw|xMarth's rating: 1642 &rarr; <strong>1655<\/strong><br \/>(+13 for winning)
+|raw|PeterRee1234's rating: 1513 &rarr; <strong>1500<\/strong><br \/>(-13 for losing)
+|leave|PeterRee1234
+|player|p2

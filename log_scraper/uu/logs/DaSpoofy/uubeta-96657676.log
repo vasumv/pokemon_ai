@@ -1,0 +1,186 @@
+|join|DaSpoofy
+|join|beastlypenguin
+|player|p1|DaSpoofy|253
+|player|p2|beastlypenguin|1
+|gametype|singles
+|gen|6
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Darmanitan, M
+|poke|p1|Metagross
+|poke|p1|Ariados, F
+|poke|p1|Tornadus-Therian, M
+|poke|p1|Mew
+|poke|p1|Manectric, F
+|poke|p2|Crawdaunt, M
+|poke|p2|Tornadus-Therian, M
+|poke|p2|Chesnaught, M
+|poke|p2|Umbreon, M
+|poke|p2|Manectric, F
+|poke|p2|Keldeo
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Ariados|Ariados, F|281\/281
+|switch|p2a: Manectric|Manectric, F|281\/281
+|turn|1
+|
+|-formechange|p2a: Manectric|Manectric-Mega
+|message|Manectric has Mega Evolved into Mega Manectric!
+|-ability|p2a: Manectric|Intimidate|[of] p1a: Ariados
+|-unboost|p1a: Ariados|atk|1
+|move|p2a: Manectric|Volt Switch|p1a: Ariados
+|-crit|p1a: Ariados
+|-damage|p1a: Ariados|11\/281
+|
+|switch|p2a: Keldeo|Keldeo|324\/324
+|move|p1a: Ariados|Sticky Web|p2a: Keldeo
+|-sidestart|p2: beastlypenguin|move: Sticky Web
+|
+|turn|2
+|
+|move|p2a: Keldeo|Surf|p1a: Ariados
+|-damage|p1a: Ariados|0 fnt
+|faint|p1a: Ariados
+|
+|
+|switch|p1a: Manectric|Manectric, F|281\/281
+|turn|3
+|
+|switch|p2a: Umbreon|Umbreon, M|394\/394
+|-activate|p2a: Umbreon|move: Sticky Web
+|-unboost|p2a: Umbreon|spe|1
+|-formechange|p1a: Manectric|Manectric-Mega
+|message|Manectric has Mega Evolved into Mega Manectric!
+|-ability|p1a: Manectric|Intimidate|[of] p2a: Umbreon
+|-unboost|p2a: Umbreon|atk|1
+|move|p1a: Manectric|Thunderbolt|p2a: Umbreon
+|-damage|p2a: Umbreon|298\/394
+|
+|-heal|p2a: Umbreon|322\/394|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Tornadus-Therian|Tornadus-Therian, M|299\/299
+|move|p2a: Umbreon|Foul Play|p1a: Tornadus-Therian
+|-damage|p1a: Tornadus-Therian|118\/299
+|
+|-heal|p2a: Umbreon|346\/394|[from] item: Leftovers
+|turn|5
+|
+|move|p1a: Tornadus-Therian|U-turn|p2a: Umbreon
+|-supereffective|p2a: Umbreon
+|-damage|p2a: Umbreon|172\/394
+|-damage|p1a: Tornadus-Therian|89\/299|[from] item: Life Orb
+|
+|switch|p1a: Mew|Mew|341\/341
+|move|p2a: Umbreon|Foul Play|p1a: Mew
+|-supereffective|p1a: Mew
+|-damage|p1a: Mew|141\/341
+|
+|-heal|p1a: Mew|162\/341|[from] item: Leftovers
+|-heal|p2a: Umbreon|196\/394|[from] item: Leftovers
+|turn|6
+|
+|move|p1a: Mew|Aura Sphere|p2a: Umbreon
+|-supereffective|p2a: Umbreon
+|-damage|p2a: Umbreon|96\/394
+|move|p2a: Umbreon|Wish|p2a: Umbreon
+|
+|-heal|p1a: Mew|183\/341|[from] item: Leftovers
+|-heal|p2a: Umbreon|120\/394|[from] item: Leftovers
+|turn|7
+|
+|move|p1a: Mew|Thunder Wave|p2a: Umbreon
+|-status|p2a: Umbreon|par
+|-status|p1a: Mew|par
+|move|p2a: Umbreon|Foul Play|p1a: Mew
+|-supereffective|p1a: Mew
+|-damage|p1a: Mew|0 fnt
+|faint|p1a: Mew
+|
+|-heal|p2a: Umbreon|317\/394 par|[from] move: Wish|[wisher] Umbreon
+|-heal|p2a: Umbreon|341\/394 par|[from] item: Leftovers
+|
+|switch|p1a: Darmanitan|Darmanitan, M|351\/351
+|turn|8
+|
+|move|p1a: Darmanitan|Substitute|p1a: Darmanitan
+|-start|p1a: Darmanitan|Substitute
+|-damage|p1a: Darmanitan|264\/351
+|cant|p2a: Umbreon|par
+|
+|-heal|p2a: Umbreon|365\/394 par|[from] item: Leftovers
+|turn|9
+|
+|move|p1a: Darmanitan|Belly Drum|p1a: Darmanitan
+|-damage|p1a: Darmanitan|89\/351
+|-setboost|p1a: Darmanitan|atk|6|[from] move: Belly Drum
+|move|p2a: Umbreon|Foul Play|p1a: Darmanitan
+|-end|p1a: Darmanitan|Substitute
+|
+|-heal|p2a: Umbreon|389\/394 par|[from] item: Leftovers
+|turn|10
+|
+|move|p1a: Darmanitan|Substitute|p1a: Darmanitan
+|-start|p1a: Darmanitan|Substitute
+|-damage|p1a: Darmanitan|2\/351
+|-enditem|p1a: Darmanitan|Salac Berry|[eat]
+|-boost|p1a: Darmanitan|spe|1|[from] item: Salac Berry
+|move|p2a: Umbreon|Heal Bell|p2a: Umbreon
+|-cureteam|p2a: Umbreon|[from] move: HealBell
+|
+|-heal|p2a: Umbreon|394\/394|[from] item: Leftovers
+|turn|11
+|chat|DaSpoofy|gg
+|
+|move|p1a: Darmanitan|Fire Punch|p2a: Umbreon
+|-damage|p2a: Umbreon|0 fnt
+|faint|p2a: Umbreon
+|
+|
+|switch|p2a: Chesnaught|Chesnaught, M|380\/380
+|-activate|p2a: Chesnaught|move: Sticky Web
+|-unboost|p2a: Chesnaught|spe|1
+|turn|12
+|
+|move|p2a: Chesnaught|Spiky Shield|p2a: Chesnaught
+|-singleturn|p2a: Chesnaught|move: Protect
+|move|p1a: Darmanitan|Rock Slide|p2a: Chesnaught
+|-activate|p2a: Chesnaught|move: Protect
+|
+|turn|13
+|
+|move|p1a: Darmanitan|Fire Punch|p2a: Chesnaught
+|-supereffective|p2a: Chesnaught
+|-damage|p2a: Chesnaught|0 fnt
+|faint|p2a: Chesnaught
+|
+|
+|switch|p2a: Manectric|Manectric, F|281\/281
+|-formechange|p2a: Manectric|Manectric-Mega
+|-activate|p2a: Manectric|move: Sticky Web
+|-unboost|p2a: Manectric|spe|1
+|-activate|p1a: Darmanitan|Substitute|ability: Intimidate|[of] p2a: Manectric
+|turn|14
+|
+|move|p1a: Darmanitan|Fire Punch|p2a: Manectric
+|-damage|p2a: Manectric|0 fnt
+|faint|p2a: Manectric
+|
+|chat|beastlypenguin|gg
+|-message|beastlypenguin forfeited.
+|
+|win|DaSpoofy
+|raw|Ladder updating...
+|leave|beastlypenguin
+|player|p2
+|raw|DaSpoofy's rating: 1563 &rarr; <strong>1576<\/strong><br \/>(+13 for winning)
+|raw|beastlypenguin's rating: 1423 &rarr; <strong>1411<\/strong><br \/>(-12 for losing)

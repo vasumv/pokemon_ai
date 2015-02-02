@@ -1,0 +1,402 @@
+|join|siegberto
+|join|ntn
+|player|p1|siegberto|282
+|player|p2|ntn|2
+|gametype|singles
+|gen|6
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Ditto
+|poke|p1|Porygon-Z
+|poke|p1|Jellicent, M
+|poke|p1|Leavanny, M
+|poke|p1|Aggron, F
+|poke|p1|Hitmontop, M
+|poke|p2|Noivern, M
+|poke|p2|Absol, M
+|poke|p2|Cofagrigus, M
+|poke|p2|Empoleon, F
+|poke|p2|Barbaracle, F
+|poke|p2|Azelf
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Leavanny|Leavanny, M|292\/292
+|switch|p2a: Noivern|Noivern, M|312\/312
+|turn|1
+|callback|decision
+|
+|switch|p1a: Jellicent|Jellicent, M|404\/404
+|move|p2a: Noivern|Air Slash|p1a: Jellicent
+|-damage|p1a: Jellicent|303\/404
+|-damage|p2a: Noivern|281\/312|[from] item: Life Orb
+|
+|-heal|p1a: Jellicent|328\/404|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p2a: Empoleon|Empoleon, F|372\/372
+|move|p1a: Jellicent|Scald|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|330\/372
+|
+|-heal|p1a: Jellicent|353\/404|[from] item: Leftovers
+|-heal|p2a: Empoleon|353\/372|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p1a: Hitmontop|Hitmontop, M|304\/304
+|move|p2a: Empoleon|Stealth Rock|p1a: Hitmontop
+|-sidestart|p1: siegberto|move: Stealth Rock
+|
+|-heal|p2a: Empoleon|372\/372|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p2a: Cofagrigus|Cofagrigus, M|320\/320
+|move|p1a: Hitmontop|Rapid Spin|p2a: Cofagrigus
+|-immune|p2a: Cofagrigus|[msg]
+|
+|turn|5
+|callback|decision
+|
+|switch|p1a: Porygon-Z|Porygon-Z|312\/312
+|-damage|p1a: Porygon-Z|273\/312|[from] Stealth Rock
+|move|p2a: Cofagrigus|Will-O-Wisp|p1a: Porygon-Z|[miss]
+|-miss|p2a: Cofagrigus|p1a: Porygon-Z
+|
+|turn|6
+|callback|decision
+|
+|move|p1a: Porygon-Z|Dark Pulse|p2a: Cofagrigus
+|-supereffective|p2a: Cofagrigus
+|-damage|p2a: Cofagrigus|112\/320
+|move|p2a: Cofagrigus|Will-O-Wisp|p1a: Porygon-Z
+|-status|p1a: Porygon-Z|brn
+|
+|-damage|p1a: Porygon-Z|234\/312 brn|[from] brn
+|turn|7
+|callback|decision
+|
+|switch|p1a: Hitmontop|Hitmontop, M|304\/304
+|-damage|p1a: Hitmontop|285\/304|[from] Stealth Rock
+|switch|p2a: Absol|Absol, M|271\/271
+|-ability|p2a: Absol|Pressure
+|
+|-heal|p1a: Hitmontop|304\/304|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|-formechange|p2a: Absol|Absol-Mega
+|message|Absol has Mega Evolved into Mega Absol!
+|move|p2a: Absol|Play Rough|p1a: Hitmontop
+|-supereffective|p1a: Hitmontop
+|-damage|p1a: Hitmontop|54\/304
+|-unboost|p1a: Hitmontop|atk|1
+|move|p1a: Hitmontop|Stone Edge|p2a: Absol
+|-damage|p2a: Absol|145\/271
+|
+|-heal|p1a: Hitmontop|73\/304|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p1a: Hitmontop|Mach Punch|p2a: Absol
+|-supereffective|p2a: Absol
+|-damage|p2a: Absol|0 fnt
+|faint|p2a: Absol
+|
+|-heal|p1a: Hitmontop|92\/304|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Azelf|Azelf|291\/291
+|turn|10
+|callback|decision
+|
+|move|p2a: Azelf|Substitute|p2a: Azelf
+|-start|p2a: Azelf|Substitute
+|-damage|p2a: Azelf|219\/291
+|move|p1a: Hitmontop|Rapid Spin|p2a: Azelf
+|-activate|p2a: Azelf|Substitute|[damage]
+|-sideend|p1: siegberto|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Hitmontop
+|
+|-heal|p2a: Azelf|237\/291|[from] item: Leftovers
+|-heal|p1a: Hitmontop|111\/304|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p2a: Azelf|Psychic|p1a: Hitmontop
+|-supereffective|p1a: Hitmontop
+|-damage|p1a: Hitmontop|0 fnt
+|faint|p1a: Hitmontop
+|
+|-heal|p2a: Azelf|255\/291|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Jellicent|Jellicent, M|353\/404
+|turn|12
+|callback|decision
+|
+|move|p2a: Azelf|Energy Ball|p1a: Jellicent
+|-supereffective|p1a: Jellicent
+|-damage|p1a: Jellicent|219\/404
+|move|p1a: Jellicent|Shadow Ball|p2a: Azelf
+|-supereffective|p2a: Azelf
+|-end|p2a: Azelf|Substitute
+|
+|-heal|p2a: Azelf|273\/291|[from] item: Leftovers
+|-heal|p1a: Jellicent|244\/404|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p2a: Empoleon|Empoleon, F|372\/372
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Empoleon
+|-status|p2a: Empoleon|brn
+|
+|-heal|p1a: Jellicent|269\/404|[from] item: Leftovers
+|-damage|p2a: Empoleon|326\/372 brn|[from] brn
+|turn|14
+|callback|decision
+|
+|switch|p1a: Leavanny|Leavanny, M|292\/292
+|move|p2a: Empoleon|Stealth Rock|p1a: Leavanny
+|-sidestart|p1: siegberto|move: Stealth Rock
+|
+|-heal|p2a: Empoleon|349\/372 brn|[from] item: Leftovers
+|-damage|p2a: Empoleon|303\/372 brn|[from] brn
+|turn|15
+|callback|decision
+|
+|switch|p2a: Noivern|Noivern, M|281\/312
+|move|p1a: Leavanny|Leaf Blade|p2a: Noivern
+|-resisted|p2a: Noivern
+|-damage|p2a: Noivern|239\/312
+|
+|turn|16
+|callback|decision
+|
+|switch|p1a: Jellicent|Jellicent, M|269\/404
+|-damage|p1a: Jellicent|219\/404|[from] Stealth Rock
+|move|p2a: Noivern|Hurricane|p1a: Jellicent|[miss]
+|-miss|p2a: Noivern|p1a: Jellicent
+|
+|-heal|p1a: Jellicent|244\/404|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p2a: Noivern|Air Slash|p1a: Jellicent
+|-damage|p1a: Jellicent|139\/404
+|-damage|p2a: Noivern|208\/312|[from] item: Life Orb
+|cant|p1a: Jellicent|flinch
+|
+|-heal|p1a: Jellicent|164\/404|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p2a: Noivern|Draco Meteor|p1a: Jellicent
+|-damage|p1a: Jellicent|0 fnt
+|-unboost|p2a: Noivern|spa|2
+|-damage|p2a: Noivern|177\/312|[from] item: Life Orb
+|faint|p1a: Jellicent
+|
+|callback|decision
+|
+|switch|p1a: Aggron|Aggron, F|344\/344
+|-damage|p1a: Aggron|323\/344|[from] Stealth Rock
+|turn|19
+|callback|decision
+|
+|switch|p2a: Empoleon|Empoleon, F|303\/372 brn
+|-formechange|p1a: Aggron|Aggron-Mega
+|message|Aggron has Mega Evolved into Mega Aggron!
+|move|p1a: Aggron|Heavy Slam|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|260\/372 brn
+|
+|-heal|p2a: Empoleon|283\/372 brn|[from] item: Leftovers
+|-damage|p2a: Empoleon|237\/372 brn|[from] brn
+|turn|20
+|callback|decision
+|
+|move|p1a: Aggron|Earthquake|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|3\/372 brn
+|move|p2a: Empoleon|Roar|p1a: Aggron
+|drag|p1a: Porygon-Z|Porygon-Z|234\/312 brn
+|-damage|p1a: Porygon-Z|195\/312 brn|[from] Stealth Rock
+|
+|-heal|p2a: Empoleon|26\/372 brn|[from] item: Leftovers
+|-damage|p1a: Porygon-Z|156\/312 brn|[from] brn
+|-damage|p2a: Empoleon|0 fnt|[from] brn
+|faint|p2a: Empoleon
+|callback|decision
+|
+|switch|p2a: Noivern|Noivern, M|177\/312
+|turn|21
+|callback|decision
+|
+|switch|p2a: Barbaracle|Barbaracle, F|286\/286
+|move|p1a: Porygon-Z|Tri Attack|p2a: Barbaracle
+|-resisted|p2a: Barbaracle
+|-damage|p2a: Barbaracle|130\/286
+|
+|-damage|p1a: Porygon-Z|117\/312 brn|[from] brn
+|turn|22
+|callback|decision
+|
+|switch|p2a: Cofagrigus|Cofagrigus, M|112\/320
+|move|p1a: Porygon-Z|Tri Attack|p2a: Cofagrigus
+|-immune|p2a: Cofagrigus|[msg]
+|
+|-damage|p1a: Porygon-Z|78\/312 brn|[from] brn
+|turn|23
+|callback|decision
+|
+|switch|p1a: Leavanny|Leavanny, M|292\/292
+|-damage|p1a: Leavanny|219\/292|[from] Stealth Rock
+|move|p2a: Cofagrigus|Rest|p2a: Cofagrigus
+|-status|p2a: Cofagrigus|slp
+|-heal|p2a: Cofagrigus|320\/320 slp|[silent]
+|-status|p2a: Cofagrigus|slp|[from] move: Rest
+|-enditem|p2a: Cofagrigus|Chesto Berry|[eat]
+|-curestatus|p2a: Cofagrigus|slp
+|
+|turn|24
+|callback|decision
+|
+|move|p1a: Leavanny|Knock Off|p2a: Cofagrigus
+|-supereffective|p2a: Cofagrigus
+|-damage|p2a: Cofagrigus|226\/320
+|-ability|p1a: Leavanny|Mummy|[from] Mummy
+|move|p2a: Cofagrigus|Will-O-Wisp|p1a: Leavanny
+|-status|p1a: Leavanny|brn
+|
+|-damage|p1a: Leavanny|183\/292 brn|[from] brn
+|turn|25
+|callback|decision
+|
+|move|p1a: Leavanny|Sticky Web|p2a: Cofagrigus
+|-sidestart|p2: ntn|move: Sticky Web
+|move|p2a: Cofagrigus|Toxic Spikes|p1a: Leavanny
+|-sidestart|p1: siegberto|move: Toxic Spikes
+|
+|-damage|p1a: Leavanny|147\/292 brn|[from] brn
+|turn|26
+|callback|decision
+|
+|move|p1a: Leavanny|Leaf Blade|p2a: Cofagrigus
+|-damage|p2a: Cofagrigus|178\/320
+|-ability|p1a: Leavanny|Mummy|[from] Mummy
+|move|p2a: Cofagrigus|Toxic Spikes|p1a: Leavanny
+|-sidestart|p1: siegberto|move: Toxic Spikes
+|
+|-damage|p1a: Leavanny|111\/292 brn|[from] brn
+|turn|27
+|callback|decision
+|
+|switch|p1a: Porygon-Z|Porygon-Z|78\/312 brn
+|-damage|p1a: Porygon-Z|39\/312 brn|[from] Stealth Rock
+|move|p2a: Cofagrigus|Shadow Ball|p1a: Porygon-Z
+|-immune|p1a: Porygon-Z|[msg]
+|
+|-damage|p1a: Porygon-Z|0 fnt|[from] brn
+|faint|p1a: Porygon-Z
+|callback|decision
+|
+|switch|p1a: Aggron|Aggron, F|323\/344
+|-formechange|p1a: Aggron|Aggron-Mega
+|-damage|p1a: Aggron|302\/344|[from] Stealth Rock
+|turn|28
+|callback|decision
+|
+|move|p1a: Aggron|Heavy Slam|p2a: Cofagrigus
+|-damage|p2a: Cofagrigus|0 fnt
+|-ability|p1a: Aggron|Mummy|[from] Mummy
+|faint|p2a: Cofagrigus
+|
+|callback|decision
+|
+|switch|p2a: Noivern|Noivern, M|177\/312
+|turn|29
+|callback|decision
+|
+|move|p2a: Noivern|Flamethrower|p1a: Aggron
+|-supereffective|p1a: Aggron
+|-damage|p1a: Aggron|0 fnt
+|-damage|p2a: Noivern|146\/312|[from] item: Life Orb
+|faint|p1a: Aggron
+|
+|callback|decision
+|
+|switch|p1a: Ditto|Ditto|238\/238
+|-damage|p1a: Ditto|209\/238|[from] Stealth Rock
+|-status|p1a: Ditto|tox
+|-transform|p1a: Ditto|p2a: Noivern
+|turn|30
+|callback|decision
+|
+|move|p1a: Ditto|Draco Meteor|p2a: Noivern
+|-supereffective|p2a: Noivern
+|-damage|p2a: Noivern|0 fnt
+|-unboost|p1a: Ditto|spa|2
+|faint|p2a: Noivern
+|
+|-damage|p1a: Ditto|195\/238 tox|[from] psn
+|callback|decision
+|
+|switch|p2a: Barbaracle|Barbaracle, F|130\/286
+|-activate|p2a: Barbaracle|move: Sticky Web
+|-unboost|p2a: Barbaracle|spe|1
+|-enditem|p2a: Barbaracle|White Herb
+|-restoreboost|p2a: Barbaracle|[silent]
+|turn|31
+|callback|decision
+|
+|switch|p1a: Leavanny|Leavanny, M|111\/292 brn
+|-damage|p1a: Leavanny|38\/292 brn|[from] Stealth Rock
+|move|p2a: Barbaracle|X-Scissor|p1a: Leavanny
+|-supereffective|p1a: Leavanny
+|-damage|p1a: Leavanny|0 fnt
+|faint|p1a: Leavanny
+|
+|callback|decision
+|
+|switch|p1a: Ditto|Ditto|195\/238 tox
+|-damage|p1a: Ditto|166\/238 tox|[from] Stealth Rock
+|-transform|p1a: Ditto|p2a: Barbaracle
+|turn|32
+|callback|decision
+|
+|move|p1a: Ditto|Razor Shell|p2a: Barbaracle
+|-damage|p2a: Barbaracle|0 fnt
+|faint|p2a: Barbaracle
+|
+|-damage|p1a: Ditto|152\/238 tox|[from] psn
+|callback|decision
+|
+|switch|p2a: Azelf|Azelf|273\/291
+|turn|33
+|callback|decision
+|
+|move|p2a: Azelf|Energy Ball|p1a: Ditto
+|-supereffective|p1a: Ditto
+|-damage|p1a: Ditto|0 fnt
+|faint|p1a: Ditto
+|
+|win|ntn
+|raw|Ladder updating...
+|raw|siegberto's rating: 1313 &rarr; <strong>1296<\/strong><br \/>(-17 for losing)
+|raw|ntn's rating: 1427 &rarr; <strong>1444<\/strong><br \/>(+17 for winning)
+|chat|siegberto|gg
+|chat|ntn|really gg
+|chat|siegberto|:)
+|leave|siegberto
+|player|p1

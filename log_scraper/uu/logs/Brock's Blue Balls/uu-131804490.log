@@ -1,0 +1,395 @@
+|join|Brock's Blue Balls
+|join|EvilmanxD
+|player|p1|Brock's Blue Balls|154
+|player|p2|EvilmanxD|2
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Nidoqueen, F
+|poke|p1|Mew
+|poke|p1|Slowbro, M
+|poke|p1|Sableye, F
+|poke|p1|Dugtrio, M
+|poke|p1|Florges, F
+|poke|p2|Blissey, F
+|poke|p2|Infernape, M
+|poke|p2|Blastoise, M
+|poke|p2|Roserade, F
+|poke|p2|Nidoking, M
+|poke|p2|Honchkrow, M
+|rule|Baton Pass Clause: Limit 3 pokemon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Sableye|Sableye, F|302\/302
+|switch|p2a: Infernape|Infernape, M|293\/293
+|turn|1
+|
+|switch|p1a: Slowbro|Slowbro, M|394\/394
+|move|p2a: Infernape|Flare Blitz|p1a: Slowbro
+|-crit|p1a: Slowbro
+|-resisted|p1a: Slowbro
+|-damage|p1a: Slowbro|295\/394
+|-damage|p2a: Infernape|245\/293|[from] item: Rocky Helmet|[of] p1a: Slowbro
+|-status|p1a: Slowbro|brn
+|-damage|p2a: Infernape|212\/293|[from] recoil|[of] p1a: Slowbro
+|
+|-damage|p1a: Slowbro|246\/394 brn|[from] brn
+|turn|2
+|
+|switch|p2a: Blastoise|Blastoise, M|362\/362
+|move|p1a: Slowbro|Scald|p2a: Blastoise
+|-resisted|p2a: Blastoise
+|-damage|p2a: Blastoise|320\/362
+|
+|-damage|p1a: Slowbro|197\/394 brn|[from] brn
+|turn|3
+|
+|switch|p2a: Roserade|Roserade, F|324\/324
+|switch|p1a: Florges|Florges, F|360\/360
+|
+|turn|4
+|
+|switch|p1a: Mew|Mew|404\/404
+|move|p2a: Roserade|Sleep Powder|p1a: Mew
+|-status|p1a: Mew|slp
+|
+|turn|5
+|
+|cant|p1a: Mew|slp
+|move|p2a: Roserade|Sludge Bomb|p1a: Mew
+|-damage|p1a: Mew|284\/404 slp
+|
+|-heal|p1a: Mew|309\/404 slp|[from] item: Leftovers
+|turn|6
+|
+|cant|p1a: Mew|slp
+|move|p2a: Roserade|Spikes|p1a: Mew
+|-sidestart|p1: Brock's Blue Balls|Spikes
+|
+|-heal|p1a: Mew|334\/404 slp|[from] item: Leftovers
+|turn|7
+|
+|-curestatus|p1a: Mew|slp
+|move|p1a: Mew|Defog|p2a: Roserade
+|-unboost|p2a: Roserade|evasion|1
+|-sideend|p1: Brock's Blue Balls|Spikes|[from] move: Defog|[of] p1a: Mew
+|move|p2a: Roserade|Spikes|p1a: Mew
+|-sidestart|p1: Brock's Blue Balls|Spikes
+|
+|-heal|p1a: Mew|359\/404|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: Mew|Knock Off|p2a: Roserade
+|-damage|p2a: Roserade|208\/324
+|-enditem|p2a: Roserade|Black Sludge|[from] move: Knock Off|[of] p1a: Mew
+|move|p2a: Roserade|Sleep Powder|p1a: Mew
+|-status|p1a: Mew|slp
+|
+|-heal|p1a: Mew|384\/404 slp|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Blastoise|Blastoise, M|320\/362
+|cant|p1a: Mew|slp
+|
+|-heal|p1a: Mew|404\/404 slp|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|-damage|p1a: Florges|315\/360|[from] Spikes
+|detailschange|p2a: Blastoise|Blastoise-Mega, M
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Blastoise|Water Pulse|p1a: Florges
+|-damage|p1a: Florges|197\/360
+|
+|-heal|p1a: Florges|219\/360|[from] item: Leftovers
+|turn|11
+|
+|switch|p2a: Roserade|Roserade, F|208\/324
+|move|p1a: Florges|Aromatherapy|p1a: Florges
+|-cureteam|p1a: Florges|[from] move: Aromatherapy
+|
+|-heal|p1a: Florges|241\/360|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Roserade|Sludge Bomb|p1a: Florges
+|-supereffective|p1a: Florges
+|-damage|p1a: Florges|35\/360
+|move|p1a: Florges|Moonblast|p2a: Roserade
+|-resisted|p2a: Roserade
+|-damage|p2a: Roserade|147\/324
+|
+|-heal|p1a: Florges|57\/360|[from] item: Leftovers
+|turn|13
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Roserade|Sludge Bomb|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-heal|p1a: Florges|79\/360|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Roserade|Sludge Bomb|p1a: Florges
+|-supereffective|p1a: Florges
+|-damage|p1a: Florges|0 fnt
+|faint|p1a: Florges
+|
+|
+|switch|p1a: Dugtrio|Dugtrio, M|212\/212
+|-damage|p1a: Dugtrio|186\/212|[from] Spikes
+|turn|15
+|
+|move|p1a: Dugtrio|Earthquake|p2a: Roserade
+|-damage|p2a: Roserade|0 fnt
+|faint|p2a: Roserade
+|
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|320\/362
+|turn|16
+|
+|switch|p1a: Sableye|Sableye, F|302\/302
+|-damage|p1a: Sableye|265\/302|[from] Spikes
+|move|p2a: Blastoise|Water Pulse|p1a: Sableye
+|-damage|p1a: Sableye|94\/302
+|
+|-heal|p1a: Sableye|112\/302|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Sableye|Will-O-Wisp|p2a: Blastoise
+|-status|p2a: Blastoise|brn
+|move|p2a: Blastoise|Water Pulse|p1a: Sableye
+|-damage|p1a: Sableye|0 fnt
+|faint|p1a: Sableye
+|
+|-damage|p2a: Blastoise|275\/362 brn|[from] brn
+|
+|switch|p1a: Mew|Mew|404\/404
+|-damage|p1a: Mew|354\/404|[from] Spikes
+|turn|18
+|
+|move|p1a: Mew|Defog|p2a: Blastoise
+|-unboost|p2a: Blastoise|evasion|1
+|-sideend|p1: Brock's Blue Balls|Spikes|[from] move: Defog|[of] p1a: Mew
+|move|p2a: Blastoise|Dark Pulse|p1a: Mew
+|-supereffective|p1a: Mew
+|-damage|p1a: Mew|104\/404
+|
+|-heal|p1a: Mew|129\/404|[from] item: Leftovers
+|-damage|p2a: Blastoise|230\/362 brn|[from] brn
+|turn|19
+|
+|move|p1a: Mew|Roost|p1a: Mew
+|-heal|p1a: Mew|331\/404
+|move|p2a: Blastoise|Dark Pulse|p1a: Mew
+|-supereffective|p1a: Mew
+|-damage|p1a: Mew|79\/404
+|
+|-heal|p1a: Mew|104\/404|[from] item: Leftovers
+|-damage|p2a: Blastoise|185\/362 brn|[from] brn
+|turn|20
+|
+|move|p1a: Mew|Roost|p1a: Mew
+|-heal|p1a: Mew|306\/404
+|move|p2a: Blastoise|Dark Pulse|p1a: Mew
+|-supereffective|p1a: Mew
+|-damage|p1a: Mew|56\/404
+|
+|-heal|p1a: Mew|81\/404|[from] item: Leftovers
+|-damage|p2a: Blastoise|140\/362 brn|[from] brn
+|turn|21
+|
+|move|p1a: Mew|Roost|p1a: Mew
+|-heal|p1a: Mew|283\/404
+|move|p2a: Blastoise|Dark Pulse|p1a: Mew
+|-supereffective|p1a: Mew
+|-damage|p1a: Mew|31\/404
+|
+|-heal|p1a: Mew|56\/404|[from] item: Leftovers
+|-damage|p2a: Blastoise|95\/362 brn|[from] brn
+|turn|22
+|
+|move|p1a: Mew|Roost|p1a: Mew
+|-heal|p1a: Mew|258\/404
+|move|p2a: Blastoise|Dark Pulse|p1a: Mew
+|-supereffective|p1a: Mew
+|-damage|p1a: Mew|38\/404
+|
+|-heal|p1a: Mew|63\/404|[from] item: Leftovers
+|-damage|p2a: Blastoise|50\/362 brn|[from] brn
+|turn|23
+|
+|move|p1a: Mew|Roost|p1a: Mew
+|-heal|p1a: Mew|265\/404
+|move|p2a: Blastoise|Dark Pulse|p1a: Mew
+|-supereffective|p1a: Mew
+|-damage|p1a: Mew|29\/404
+|
+|-heal|p1a: Mew|54\/404|[from] item: Leftovers
+|-damage|p2a: Blastoise|5\/362 brn|[from] brn
+|turn|24
+|chat|EvilmanxD|real great strategy you got going
+|
+|move|p1a: Mew|Knock Off|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|-heal|p1a: Mew|79\/404|[from] item: Leftovers
+|chat|EvilmanxD|must take a lot of skill lol
+|
+|switch|p2a: Infernape|Infernape, M|212\/293
+|turn|25
+|chat|Brock's Blue Balls|well it certainly was effective
+|chat|EvilmanxD|its solitare
+|
+|switch|p1a: Slowbro|Slowbro, M|328\/394
+|move|p2a: Infernape|U-turn|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|238\/394
+|-damage|p2a: Infernape|164\/293|[from] item: Rocky Helmet|[of] p1a: Slowbro
+|chat|EvilmanxD|no skill. just playing with your self
+|
+|switch|p2a: Nidoking|Nidoking, M|304\/304
+|
+|turn|26
+|
+|switch|p1a: Mew|Mew|79\/404
+|move|p2a: Nidoking|Thunderbolt|p1a: Mew
+|-damage|p1a: Mew|0 fnt
+|faint|p1a: Mew
+|
+|
+|switch|p1a: Dugtrio|Dugtrio, M|186\/212
+|turn|27
+|
+|move|p1a: Dugtrio|Earthquake|p2a: Nidoking
+|-supereffective|p2a: Nidoking
+|-damage|p2a: Nidoking|0 fnt
+|faint|p2a: Nidoking
+|
+|
+|switch|p2a: Honchkrow|Honchkrow, M|341\/341
+|turn|28
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|384\/384
+|move|p2a: Honchkrow|Brave Bird|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|195\/384
+|-damage|p2a: Honchkrow|279\/341|[from] recoil|[of] p1a: Nidoqueen
+|
+|-heal|p2a: Honchkrow|300\/341|[from] item: Leftovers
+|-heal|p1a: Nidoqueen|219\/384|[from] item: Leftovers
+|turn|29
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|move|p1a: Nidoqueen|Ice Beam|p2a: Blissey
+|-damage|p2a: Blissey|651\/714
+|
+|-heal|p1a: Nidoqueen|243\/384|[from] item: Leftovers
+|-heal|p2a: Blissey|695\/714|[from] item: Leftovers
+|turn|30
+|
+|move|p1a: Nidoqueen|Stealth Rock|p2a: Blissey
+|-sidestart|p2: EvilmanxD|move: Stealth Rock
+|move|p2a: Blissey|Seismic Toss|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|143\/384
+|
+|-heal|p1a: Nidoqueen|167\/384|[from] item: Leftovers
+|-heal|p2a: Blissey|714\/714|[from] item: Leftovers
+|turn|31
+|
+|move|p1a: Nidoqueen|Toxic Spikes|p2a: Blissey
+|-sidestart|p2: EvilmanxD|move: Toxic Spikes
+|move|p2a: Blissey|Seismic Toss|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|67\/384
+|
+|-heal|p1a: Nidoqueen|91\/384|[from] item: Leftovers
+|turn|32
+|
+|move|p1a: Nidoqueen|Toxic Spikes|p2a: Blissey
+|-sidestart|p2: EvilmanxD|move: Toxic Spikes
+|move|p2a: Blissey|Seismic Toss|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|0 fnt
+|faint|p1a: Nidoqueen
+|
+|
+|switch|p1a: Dugtrio|Dugtrio, M|186\/212
+|turn|33
+|
+|move|p1a: Dugtrio|Earthquake|p2a: Blissey
+|-damage|p2a: Blissey|324\/714
+|move|p2a: Blissey|Seismic Toss|p1a: Dugtrio
+|-damage|p1a: Dugtrio|86\/212
+|
+|-heal|p2a: Blissey|368\/714|[from] item: Leftovers
+|turn|34
+|
+|move|p1a: Dugtrio|Earthquake|p2a: Blissey
+|-damage|p2a: Blissey|0 fnt
+|faint|p2a: Blissey
+|
+|
+|switch|p2a: Infernape|Infernape, M|164\/293
+|-status|p2a: Infernape|tox
+|-damage|p2a: Infernape|128\/293 tox|[from] Stealth Rock
+|turn|35
+|
+|move|p2a: Infernape|Close Combat|p1a: Dugtrio
+|-damage|p1a: Dugtrio|0 fnt
+|-unboost|p2a: Infernape|def|1
+|-unboost|p2a: Infernape|spd|1
+|faint|p1a: Dugtrio
+|
+|-damage|p2a: Infernape|110\/293 tox|[from] psn
+|
+|switch|p1a: Slowbro|Slowbro, M|369\/394
+|turn|36
+|chat|Brock's Blue Balls|gg
+|
+|move|p2a: Infernape|Close Combat|p1a: Slowbro
+|-resisted|p1a: Slowbro
+|-damage|p1a: Slowbro|312\/394
+|-damage|p2a: Infernape|62\/293 tox|[from] item: Rocky Helmet|[of] p1a: Slowbro
+|-unboost|p2a: Infernape|def|1
+|-unboost|p2a: Infernape|spd|1
+|move|p1a: Slowbro|Calm Mind|p1a: Slowbro
+|-boost|p1a: Slowbro|spa|1
+|-boost|p1a: Slowbro|spd|1
+|
+|-damage|p2a: Infernape|26\/293 tox|[from] psn
+|turn|37
+|
+|move|p2a: Infernape|Close Combat|p1a: Slowbro
+|-resisted|p1a: Slowbro
+|-damage|p1a: Slowbro|249\/394
+|-damage|p2a: Infernape|0 fnt|[from] item: Rocky Helmet|[of] p1a: Slowbro
+|faint|p2a: Infernape
+|move|p1a: Slowbro|Slack Off|p1a: Slowbro
+|-heal|p1a: Slowbro|394\/394
+|
+|
+|switch|p2a: Honchkrow|Honchkrow, M|300\/341
+|-damage|p2a: Honchkrow|215\/341|[from] Stealth Rock
+|turn|38
+|chat|Brock's Blue Balls|don't be bitter. you just couldn't break me :D
+|
+|move|p2a: Honchkrow|Sucker Punch|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|206\/394
+|-damage|p2a: Honchkrow|159\/341|[from] item: Rocky Helmet|[of] p1a: Slowbro
+|move|p1a: Slowbro|Scald|p2a: Honchkrow
+|-damage|p2a: Honchkrow|0 fnt
+|faint|p2a: Honchkrow
+|
+|win|Brock's Blue Balls
+|raw|Ladder updating...
+|raw|Brock&apos;s Blue Balls's rating: 1478 &rarr; <strong>1488<\/strong><br \/>(+10 for winning)
+|raw|EvilmanxD's rating: 1289 &rarr; <strong>1276<\/strong><br \/>(-13 for losing)

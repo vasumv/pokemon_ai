@@ -1,0 +1,380 @@
+|join|sarrodar
+|join|axel620
+|player|p1|sarrodar|102
+|player|p2|axel620|1
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|clearpoke
+|poke|p1|Absol, F
+|poke|p1|Armaldo, F
+|poke|p1|Lunatone
+|poke|p1|Mantine, F
+|poke|p1|Avalugg, M
+|poke|p1|Haunter, M
+|poke|p2|Cloyster, M, shiny
+|poke|p2|Chandelure, M, shiny
+|poke|p2|Gastrodon, F
+|poke|p2|Florges, F
+|poke|p2|Manectric, F
+|poke|p2|Machamp, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Haunter|Haunter, M|232\/232
+|switch|p2a: Manectric|Manectric, F|282\/282
+|turn|1
+|
+|-formechange|p2a: Manectric|Manectric-Mega
+|message|Manectric has Mega Evolved into Mega Manectric!
+|-ability|p2a: Manectric|Intimidate|[of] p1a: Haunter
+|-unboost|p1a: Haunter|atk|1
+|move|p1a: Haunter|Sludge Wave|p2a: Manectric
+|-damage|p2a: Manectric|84\/282
+|move|p2a: Manectric|Volt Switch|p1a: Haunter
+|-damage|p1a: Haunter|10\/232
+|
+|switch|p2a: Chandelure|Chandelure, M, shiny|261\/261
+|
+|turn|2
+|
+|switch|p1a: Mantine|Mantine, F|334\/334
+|move|p2a: Chandelure|Energy Ball|p1a: Mantine
+|-damage|p1a: Mantine|287\/334
+|
+|turn|3
+|
+|switch|p2a: Florges|Florges, F|360\/360
+|move|p1a: Mantine|Surf|p2a: Florges
+|-damage|p2a: Florges|312\/360
+|
+|-heal|p2a: Florges|334\/360|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Haunter|Haunter, M|10\/232
+|move|p2a: Florges|Toxic|p1a: Haunter
+|-fail|p1a: Haunter
+|
+|-heal|p2a: Florges|356\/360|[from] item: Leftovers
+|turn|5
+|
+|move|p1a: Haunter|Sludge Wave|p2a: Florges
+|-supereffective|p2a: Florges
+|-damage|p2a: Florges|204\/360
+|move|p2a: Florges|Moonblast|p1a: Haunter
+|-resisted|p1a: Haunter
+|-damage|p1a: Haunter|0 fnt
+|faint|p1a: Haunter
+|
+|-heal|p2a: Florges|226\/360|[from] item: Leftovers
+|
+|switch|p1a: Avalugg|Avalugg, M|394\/394
+|turn|6
+|
+|switch|p2a: Chandelure|Chandelure, M, shiny|261\/261
+|move|p1a: Avalugg|Gyro Ball|p2a: Chandelure
+|-resisted|p2a: Chandelure
+|-damage|p2a: Chandelure|190\/261
+|
+|turn|7
+|
+|switch|p1a: Mantine|Mantine, F|287\/334
+|move|p2a: Chandelure|Flamethrower|p1a: Mantine
+|-resisted|p1a: Mantine
+|-damage|p1a: Mantine|256\/334
+|
+|turn|8
+|
+|switch|p2a: Florges|Florges, F|226\/360
+|move|p1a: Mantine|Air Slash|p2a: Florges
+|-damage|p2a: Florges|189\/360
+|
+|-heal|p2a: Florges|211\/360|[from] item: Leftovers
+|turn|9
+|
+|switch|p1a: Lunatone|Lunatone|344\/344
+|move|p2a: Florges|Energy Ball|p1a: Lunatone
+|-supereffective|p1a: Lunatone
+|-damage|p1a: Lunatone|168\/344
+|
+|-heal|p2a: Florges|233\/360|[from] item: Leftovers
+|turn|10
+|
+|move|p2a: Florges|Energy Ball|p1a: Lunatone
+|-supereffective|p1a: Lunatone
+|-damage|p1a: Lunatone|0 fnt
+|faint|p1a: Lunatone
+|
+|-heal|p2a: Florges|255\/360|[from] item: Leftovers
+|
+|switch|p1a: Armaldo|Armaldo, F|354\/354
+|turn|11
+|
+|move|p2a: Florges|Energy Ball|p1a: Armaldo
+|-damage|p1a: Armaldo|264\/354
+|move|p1a: Armaldo|Substitute|p1a: Armaldo
+|-start|p1a: Armaldo|Substitute
+|-damage|p1a: Armaldo|176\/354
+|
+|-heal|p2a: Florges|277\/360|[from] item: Leftovers
+|turn|12
+|
+|switch|p2a: Chandelure|Chandelure, M, shiny|190\/261
+|move|p1a: Armaldo|Stone Edge|p2a: Chandelure
+|-supereffective|p2a: Chandelure
+|-damage|p2a: Chandelure|0 fnt
+|faint|p2a: Chandelure
+|
+|
+|switch|p2a: Machamp|Machamp, M|384\/384
+|turn|13
+|
+|move|p2a: Machamp|Bullet Punch|p1a: Armaldo
+|-supereffective|p1a: Armaldo
+|-end|p1a: Armaldo|Substitute
+|-damage|p2a: Machamp|346\/384|[from] item: Life Orb
+|move|p1a: Armaldo|Aqua Jet|p2a: Machamp
+|-damage|p2a: Machamp|287\/384
+|
+|turn|14
+|
+|switch|p1a: Mantine|Mantine, F|256\/334
+|move|p2a: Machamp|Bullet Punch|p1a: Mantine
+|-resisted|p1a: Mantine
+|-damage|p1a: Mantine|212\/334
+|-damage|p2a: Machamp|249\/384|[from] item: Life Orb
+|
+|turn|15
+|
+|move|p1a: Mantine|Air Slash|p2a: Machamp
+|-supereffective|p2a: Machamp
+|-damage|p2a: Machamp|91\/384
+|cant|p2a: Machamp|flinch
+|
+|turn|16
+|
+|switch|p2a: Florges|Florges, F|277\/360
+|move|p1a: Mantine|Air Slash|p2a: Florges
+|-damage|p2a: Florges|241\/360
+|
+|-heal|p2a: Florges|263\/360|[from] item: Leftovers
+|turn|17
+|
+|switch|p1a: Avalugg|Avalugg, M|394\/394
+|move|p2a: Florges|Toxic|p1a: Avalugg
+|-status|p1a: Avalugg|tox
+|
+|-heal|p2a: Florges|285\/360|[from] item: Leftovers
+|-damage|p1a: Avalugg|370\/394 tox|[from] psn
+|turn|18
+|
+|switch|p2a: Gastrodon|Gastrodon, F|426\/426
+|move|p1a: Avalugg|Curse|p1a: Avalugg
+|-boost|p1a: Avalugg|atk|1
+|-boost|p1a: Avalugg|def|1
+|-unboost|p1a: Avalugg|spe|1
+|
+|-heal|p1a: Avalugg|394\/394 tox|[from] item: Leftovers
+|-damage|p1a: Avalugg|346\/394 tox|[from] psn
+|turn|19
+|
+|move|p2a: Gastrodon|Scald|p1a: Avalugg
+|-damage|p1a: Avalugg|169\/394 tox
+|move|p1a: Avalugg|Avalanche|p2a: Gastrodon
+|-damage|p2a: Gastrodon|218\/426
+|
+|-heal|p2a: Gastrodon|244\/426|[from] item: Leftovers
+|-heal|p1a: Avalugg|193\/394 tox|[from] item: Leftovers
+|-damage|p1a: Avalugg|121\/394 tox|[from] psn
+|turn|20
+|
+|switch|p1a: Mantine|Mantine, F|212\/334
+|move|p2a: Gastrodon|Scald|p1a: Mantine
+|-heal|p1a: Mantine|295\/334|[from] ability: Water Absorb|[of] p2a: Gastrodon
+|
+|-heal|p2a: Gastrodon|270\/426|[from] item: Leftovers
+|turn|21
+|
+|move|p1a: Mantine|Air Slash|p2a: Gastrodon
+|-damage|p2a: Gastrodon|183\/426
+|move|p2a: Gastrodon|Toxic|p1a: Mantine
+|-status|p1a: Mantine|tox
+|
+|-heal|p2a: Gastrodon|209\/426|[from] item: Leftovers
+|-damage|p1a: Mantine|275\/334 tox|[from] psn
+|turn|22
+|
+|switch|p1a: Absol|Absol, F|271\/271
+|move|p2a: Gastrodon|Recover|p2a: Gastrodon
+|-heal|p2a: Gastrodon|422\/426
+|
+|-heal|p2a: Gastrodon|426\/426|[from] item: Leftovers
+|turn|23
+|
+|move|p1a: Absol|Night Slash|p2a: Gastrodon
+|-crit|p2a: Gastrodon
+|-damage|p2a: Gastrodon|248\/426
+|move|p2a: Gastrodon|Toxic|p1a: Absol
+|-status|p1a: Absol|tox
+|
+|-heal|p2a: Gastrodon|274\/426|[from] item: Leftovers
+|-damage|p1a: Absol|255\/271 tox|[from] psn
+|turn|24
+|chat|axel620|scope lens super luck high crit moves?
+|
+|move|p1a: Absol|Night Slash|p2a: Gastrodon
+|-crit|p2a: Gastrodon
+|-damage|p2a: Gastrodon|109\/426
+|move|p2a: Gastrodon|Scald|p1a: Absol
+|-damage|p1a: Absol|132\/271 tox
+|
+|-heal|p2a: Gastrodon|135\/426|[from] item: Leftovers
+|-damage|p1a: Absol|100\/271 tox|[from] psn
+|turn|25
+|
+|move|p1a: Absol|Night Slash|p2a: Gastrodon
+|-crit|p2a: Gastrodon
+|-damage|p2a: Gastrodon|0 fnt
+|faint|p2a: Gastrodon
+|
+|-damage|p1a: Absol|52\/271 tox|[from] psn
+|chat|sarrodar|yupp :)
+|chat|axel620|lol
+|
+|switch|p2a: Machamp|Machamp, M|91\/384
+|turn|26
+|
+|switch|p1a: Mantine|Mantine, F|275\/334 tox
+|move|p2a: Machamp|Bullet Punch|p1a: Mantine
+|-resisted|p1a: Mantine
+|-damage|p1a: Mantine|228\/334 tox
+|-damage|p2a: Machamp|53\/384|[from] item: Life Orb
+|
+|-damage|p1a: Mantine|208\/334 tox|[from] psn
+|turn|27
+|
+|move|p1a: Mantine|Surf|p2a: Machamp
+|-damage|p2a: Machamp|0 fnt
+|faint|p2a: Machamp
+|
+|-damage|p1a: Mantine|168\/334 tox|[from] psn
+|
+|switch|p2a: Florges|Florges, F|285\/360
+|turn|28
+|
+|switch|p1a: Avalugg|Avalugg, M|121\/394 tox
+|move|p2a: Florges|Energy Ball|p1a: Avalugg
+|-damage|p1a: Avalugg|0 fnt
+|faint|p1a: Avalugg
+|
+|-heal|p2a: Florges|307\/360|[from] item: Leftovers
+|
+|switch|p1a: Armaldo|Armaldo, F|176\/354
+|turn|29
+|
+|move|p2a: Florges|Energy Ball|p1a: Armaldo
+|-damage|p1a: Armaldo|81\/354
+|move|p1a: Armaldo|Stone Edge|p2a: Florges
+|-damage|p2a: Florges|27\/360
+|
+|-heal|p2a: Florges|49\/360|[from] item: Leftovers
+|turn|30
+|
+|move|p1a: Armaldo|Aqua Jet|p2a: Florges
+|-damage|p2a: Florges|0 fnt
+|faint|p2a: Florges
+|
+|
+|switch|p2a: Manectric|Manectric, F|84\/282
+|-formechange|p2a: Manectric|Manectric-Mega
+|-ability|p2a: Manectric|Intimidate|[of] p1a: Armaldo
+|-unboost|p1a: Armaldo|atk|1
+|turn|31
+|
+|switch|p1a: Mantine|Mantine, F|168\/334 tox
+|move|p2a: Manectric|Flamethrower|p1a: Mantine
+|-resisted|p1a: Mantine
+|-damage|p1a: Mantine|148\/334 tox
+|
+|-damage|p1a: Mantine|128\/334 tox|[from] psn
+|turn|32
+|
+|move|p2a: Manectric|Thunderbolt|p1a: Mantine
+|-crit|p1a: Mantine
+|-supereffective|p1a: Mantine
+|-damage|p1a: Mantine|0 fnt
+|faint|p1a: Mantine
+|
+|
+|switch|p1a: Absol|Absol, F|52\/271 tox
+|turn|33
+|
+|move|p1a: Absol|Sucker Punch|p2a: Manectric
+|-damage|p2a: Manectric|0 fnt
+|faint|p2a: Manectric
+|
+|-damage|p1a: Absol|36\/271 tox|[from] psn
+|
+|switch|p2a: BL|Cloyster, M, shiny|242\/242
+|turn|34
+|
+|move|p1a: Absol|Superpower|p2a: BL
+|-supereffective|p2a: BL
+|-damage|p2a: BL|64\/242
+|-unboost|p1a: Absol|atk|1
+|-unboost|p1a: Absol|def|1
+|move|p2a: BL|Shell Smash|p2a: BL
+|-boost|p2a: BL|atk|2
+|-boost|p2a: BL|spa|2
+|-boost|p2a: BL|spe|2
+|-unboost|p2a: BL|def|1
+|-unboost|p2a: BL|spd|1
+|
+|-damage|p1a: Absol|4\/271 tox|[from] psn
+|turn|35
+|
+|move|p1a: Absol|Sucker Punch|p2a: BL
+|-fail|p2a: BL
+|move|p2a: BL|Shell Smash|p2a: BL
+|-boost|p2a: BL|atk|2
+|-boost|p2a: BL|spa|2
+|-boost|p2a: BL|spe|2
+|-unboost|p2a: BL|def|1
+|-unboost|p2a: BL|spd|1
+|
+|-damage|p1a: Absol|0 fnt|[from] psn
+|faint|p1a: Absol
+|chat|sarrodar|crap :P
+|chat|axel620|the plays man
+|
+|switch|p1a: Armaldo|Armaldo, F|81\/354
+|turn|36
+|chat|axel620|i prdicted suck punch
+|
+|move|p1a: Armaldo|Aqua Jet|p2a: BL
+|-resisted|p2a: BL
+|-damage|p2a: BL|33\/242
+|move|p2a: BL|Surf|p1a: Armaldo
+|-supereffective|p1a: Armaldo
+|-damage|p1a: Armaldo|0 fnt
+|faint|p1a: Armaldo
+|
+|win|axel620
+|raw|Ladder updating...
+|raw|sarrodar's rating: 1108 &rarr; <strong>1075<\/strong><br \/>(-33 for losing)
+|raw|axel620's rating: 1000 &rarr; <strong>1052<\/strong><br \/>(+52 for winning)
+|chat|sarrodar|yeah :P
+|chat|axel620|gg
+|chat|sarrodar|gg
+|leave|sarrodar
+|chat|sarrodar|:)
+|player|p1
+|chat|axel620|:)

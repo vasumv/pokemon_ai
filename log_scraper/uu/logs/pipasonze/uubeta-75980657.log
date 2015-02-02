@@ -1,0 +1,357 @@
+|join|Resoleon
+|join|pipasonze
+|player|p1|Resoleon|265
+|player|p2|pipasonze|120
+|gametype|singles
+|gen|6
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Ampharos, F
+|poke|p1|Zapdos
+|poke|p1|Mew
+|poke|p1|Rhyperior, M
+|poke|p1|Umbreon, F
+|poke|p1|Chandelure, F
+|poke|p2|Metagross
+|poke|p2|Blastoise, M
+|poke|p2|Celebi
+|poke|p2|Rotom-Heat
+|poke|p2|Hippowdon, M
+|poke|p2|Bisharp, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Haji|Rhyperior, M|372\/372
+|switch|p2a: Rotom-Heat|Rotom-Heat|241\/241
+|turn|1
+|callback|decision
+|
+|switch|p1a: Komari|Ampharos, F|384\/384
+|move|p2a: Rotom-Heat|Trick|p1a: Komari
+|-fail|p1a: Komari
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: Hippowdon|Hippowdon, M|420\/420
+|-weather|Sandstorm
+|-formechange|p1a: Komari|Ampharos-Mega
+|message|Ampharos has Mega Evolved into Mega Ampharos!
+|-ability|p1a: Komari|Mold Breaker
+|move|p1a: Komari|Dragon Pulse|p2a: Hippowdon
+|-damage|p2a: Hippowdon|218\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Komari|360\/384|[from] sandstorm
+|-heal|p2a: Hippowdon|244\/420|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p1a: Mew|Mew|404\/404
+|move|p2a: Hippowdon|Stealth Rock|p1a: Mew
+|-sidestart|p1: Resoleon|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Mew|379\/404|[from] sandstorm
+|-heal|p2a: Hippowdon|270\/420|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p1a: Mew|Trick|p2a: Hippowdon
+|-activate|p1a: Mew|move: Trick|[of] p2a: Hippowdon
+|-item|p2a: Hippowdon|Choice Scarf|[from] move: Trick
+|-item|p1a: Mew|Leftovers|[from] move: Trick
+|move|p2a: Hippowdon|Earthquake|p1a: Mew
+|-damage|p1a: Mew|252\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Mew|227\/404|[from] sandstorm
+|-heal|p1a: Mew|252\/404|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p2a: Bisharp|Bisharp, M|284\/284
+|move|p1a: Mew|Defog|p2a: Bisharp
+|-unboost|p2a: Bisharp|evasion|1
+|-boost|p2a: Bisharp|atk|2|[from] ability: Defiant
+|-sideend|p1: Resoleon|Stealth Rock|[from] move: Defog|[of] p1a: Mew
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Mew|227\/404|[from] sandstorm
+|-heal|p1a: Mew|252\/404|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p1a: Mew|Stealth Rock|p2a: Bisharp
+|-sidestart|p2: pipasonze|move: Stealth Rock
+|move|p2a: Bisharp|Knock Off|p1a: Mew
+|-supereffective|p1a: Mew
+|-damage|p1a: Mew|0 fnt
+|-damage|p2a: Bisharp|256\/284|[from] item: Life Orb
+|faint|p1a: Mew
+|
+|-weather|none
+|callback|decision
+|
+|switch|p1a: Haji|Rhyperior, M|372\/372
+|turn|7
+|callback|decision
+|
+|move|p2a: Bisharp|Iron Head|p1a: Haji
+|-supereffective|p1a: Haji
+|-damage|p1a: Haji|0 fnt
+|-damage|p2a: Bisharp|228\/284|[from] item: Life Orb
+|faint|p1a: Haji
+|
+|callback|decision
+|
+|switch|p1a: Thoron|Zapdos|384\/384
+|-ability|p1a: Thoron|Pressure
+|turn|8
+|callback|decision
+|
+|move|p2a: Bisharp|Sucker Punch|p1a: Thoron
+|-fail|p1a: Thoron
+|move|p1a: Thoron|Substitute|p1a: Thoron
+|-start|p1a: Thoron|Substitute
+|-damage|p1a: Thoron|288\/384
+|
+|-heal|p1a: Thoron|312\/384|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p1a: Thoron|Thunderbolt|p2a: Bisharp
+|-damage|p2a: Bisharp|65\/284
+|move|p2a: Bisharp|Knock Off|p1a: Thoron
+|-end|p1a: Thoron|Substitute
+|-damage|p2a: Bisharp|37\/284|[from] item: Life Orb
+|
+|-heal|p1a: Thoron|336\/384|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p1a: Thoron|Substitute|p1a: Thoron
+|-start|p1a: Thoron|Substitute
+|-damage|p1a: Thoron|240\/384
+|move|p2a: Bisharp|Knock Off|p1a: Thoron
+|-end|p1a: Thoron|Substitute
+|-damage|p2a: Bisharp|9\/284|[from] item: Life Orb
+|
+|-heal|p1a: Thoron|264\/384|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p1a: Thoron|Substitute|p1a: Thoron
+|-start|p1a: Thoron|Substitute
+|-damage|p1a: Thoron|168\/384
+|move|p2a: Bisharp|Knock Off|p1a: Thoron
+|-end|p1a: Thoron|Substitute
+|-damage|p2a: Bisharp|0 fnt|[from] item: Life Orb
+|faint|p2a: Bisharp
+|
+|-heal|p1a: Thoron|192\/384|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Hippowdon|Hippowdon, M|270\/420
+|-damage|p2a: Hippowdon|244\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|turn|12
+|callback|decision
+|
+|move|p1a: Thoron|Toxic|p2a: Hippowdon|[miss]
+|-miss|p1a: Thoron|p2a: Hippowdon
+|move|p2a: Hippowdon|Stealth Rock|p1a: Thoron
+|-sidestart|p1: Resoleon|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Thoron|168\/384|[from] sandstorm
+|-heal|p1a: Thoron|192\/384|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p2a: Metagross|Metagross|364\/364
+|-damage|p2a: Metagross|342\/364|[from] Stealth Rock
+|move|p1a: Thoron|Substitute|p1a: Thoron
+|-start|p1a: Thoron|Substitute
+|-damage|p1a: Thoron|96\/384
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Thoron|72\/384|[from] sandstorm
+|-heal|p1a: Thoron|96\/384|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: Thoron|Roost|p1a: Thoron
+|-heal|p1a: Thoron|288\/384
+|move|p2a: Metagross|Meteor Mash|p1a: Thoron
+|-resisted|p1a: Thoron
+|-end|p1a: Thoron|Substitute
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Thoron|264\/384|[from] sandstorm
+|-heal|p1a: Thoron|288\/384|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1a: Thoron|Roost|p1a: Thoron
+|-heal|p1a: Thoron|384\/384
+|move|p2a: Metagross|Meteor Mash|p1a: Thoron
+|-resisted|p1a: Thoron
+|-damage|p1a: Thoron|285\/384
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Thoron|261\/384|[from] sandstorm
+|-heal|p1a: Thoron|285\/384|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p2a: Hippowdon|Hippowdon, M|244\/420
+|-damage|p2a: Hippowdon|218\/420|[from] Stealth Rock
+|move|p1a: Thoron|Substitute|p1a: Thoron
+|-start|p1a: Thoron|Substitute
+|-damage|p1a: Thoron|189\/384
+|
+|-weather|none
+|-heal|p1a: Thoron|213\/384|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Thoron|Toxic|p2a: Hippowdon
+|-status|p2a: Hippowdon|tox
+|move|p2a: Hippowdon|Whirlwind|p1a: Thoron
+|drag|p1a: Thany|Umbreon, F|394\/394
+|-damage|p1a: Thany|345\/394|[from] Stealth Rock
+|
+|-heal|p1a: Thany|369\/394|[from] item: Leftovers
+|-damage|p2a: Hippowdon|192\/420 tox|[from] psn
+|turn|18
+|callback|decision
+|
+|move|p1a: Thany|Wish|p1a: Thany
+|move|p2a: Hippowdon|Whirlwind|p1a: Thany
+|drag|p1a: Knoll|Chandelure, F|324\/324
+|-damage|p1a: Knoll|243\/324|[from] Stealth Rock
+|
+|-damage|p2a: Hippowdon|140\/420 tox|[from] psn
+|turn|19
+|callback|decision
+|
+|move|p1a: Knoll|Shadow Ball|p2a: Hippowdon
+|-damage|p2a: Hippowdon|0 fnt
+|faint|p2a: Hippowdon
+|
+|-heal|p1a: Knoll|324\/324|[from] move: Wish|[wisher] Thany
+|callback|decision
+|
+|switch|p2a: Blastoise|Blastoise, M|362\/362
+|-damage|p2a: Blastoise|317\/362|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|-formechange|p2a: Blastoise|Blastoise-Mega
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p1a: Knoll|Shadow Ball|p2a: Blastoise
+|-damage|p2a: Blastoise|172\/362
+|move|p2a: Blastoise|Dark Pulse|p1a: Knoll
+|-supereffective|p1a: Knoll
+|-damage|p1a: Knoll|0 fnt
+|faint|p1a: Knoll
+|
+|callback|decision
+|
+|switch|p1a: Komari|Ampharos, F|360\/384
+|-formechange|p1a: Komari|Ampharos-Mega
+|-damage|p1a: Komari|312\/384|[from] Stealth Rock
+|-ability|p1a: Komari|Mold Breaker
+|turn|21
+|callback|decision
+|
+|move|p2a: Blastoise|Rapid Spin|p1a: Komari
+|-damage|p1a: Komari|297\/384
+|-sideend|p2: pipasonze|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Blastoise
+|move|p1a: Komari|Thunderbolt|p2a: Blastoise
+|-crit|p2a: Blastoise
+|-supereffective|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|callback|decision
+|
+|switch|p2a: Metagross|Metagross|342\/364
+|turn|22
+|callback|decision
+|
+|move|p2a: Metagross|Earthquake|p1a: Komari
+|-supereffective|p1a: Komari
+|-damage|p1a: Komari|0 fnt
+|faint|p1a: Komari
+|
+|callback|decision
+|
+|switch|p1a: Thoron|Zapdos|213\/384
+|-damage|p1a: Thoron|117\/384|[from] Stealth Rock
+|-ability|p1a: Thoron|Pressure
+|turn|23
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|241\/241
+|move|p1a: Thoron|Roost|p1a: Thoron
+|-heal|p1a: Thoron|309\/384
+|
+|-heal|p1a: Thoron|333\/384|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p2a: Rotom-Heat|Trick|p1a: Thoron
+|-activate|p2a: Rotom-Heat|move: Trick|[of] p1a: Thoron
+|-item|p1a: Thoron|Choice Scarf|[from] move: Trick
+|-item|p2a: Rotom-Heat|Leftovers|[from] move: Trick
+|move|p1a: Thoron|Toxic|p2a: Rotom-Heat
+|-status|p2a: Rotom-Heat|tox
+|
+|-damage|p2a: Rotom-Heat|226\/241 tox|[from] psn
+|turn|25
+|callback|decision
+|
+|move|p1a: Thoron|Toxic|p2a: Rotom-Heat
+|-fail|p2a: Rotom-Heat|tox
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Thoron
+|-crit|p1a: Thoron
+|-damage|p1a: Thoron|168\/384
+|callback|decision
+|
+|switch|p2a: Metagross|Metagross|342\/364
+|
+|turn|26
+|callback|decision
+|
+|switch|p1a: Thany|Umbreon, F|369\/394
+|-damage|p1a: Thany|320\/394|[from] Stealth Rock
+|move|p2a: Metagross|Meteor Mash|p1a: Thany
+|-damage|p1a: Thany|131\/394
+|-boost|p2a: Metagross|atk|1
+|
+|-heal|p1a: Thany|155\/394|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|move|p2a: Metagross|Meteor Mash|p1a: Thany
+|-damage|p1a: Thany|0 fnt
+|faint|p1a: Thany
+|
+|callback|decision
+|-message|Resoleon forfeited.
+|
+|win|pipasonze
+|raw|Ladder updating...
+|leave|Resoleon
+|player|p1

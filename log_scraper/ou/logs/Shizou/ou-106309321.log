@@ -1,0 +1,324 @@
+|join|cowgurll
+|join|Shizou
+|player|p1|cowgurll|211
+|player|p2|Shizou|101
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Chansey, F
+|poke|p1|Quagsire, F
+|poke|p1|Skarmory, F
+|poke|p1|Amoonguss, F
+|poke|p1|Gyarados, M
+|poke|p1|Aegislash, M
+|poke|p2|Mawile, F
+|poke|p2|Keldeo
+|poke|p2|Tyranitar, M
+|poke|p2|Heatran, F
+|poke|p2|Mamoswine, M
+|poke|p2|Latias, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|join|mgarion
+|
+|start
+|switch|p1a: Quagsire|Quagsire, F|394\/394
+|switch|p2a: Keldeo|Keldeo|322\/322
+|turn|1
+|
+|switch|p1a: Amoonguss|Amoonguss, F|432\/432
+|move|p2a: Keldeo|Secret Sword|p1a: Amoonguss
+|-resisted|p1a: Amoonguss
+|-damage|p1a: Amoonguss|276\/432
+|
+|-heal|p1a: Amoonguss|303\/432|[from] item: Leftovers
+|turn|2
+|
+|switch|p2a: Latias|Latias, F|301\/301
+|move|p1a: Amoonguss|Spore|p2a: Latias
+|-status|p2a: Latias|slp
+|
+|-heal|p1a: Amoonguss|330\/432|[from] item: Leftovers
+|turn|3
+|
+|switch|p2a: Heatran|Heatran, F|386\/386
+|switch|p1a: Quagsire|Quagsire, F|394\/394
+|
+|turn|4
+|
+|switch|p2a: Latias|Latias, F|301\/301 slp
+|move|p1a: Quagsire|Earthquake|p2a: Latias
+|-immune|p2a: Latias|[msg]
+|
+|turn|5
+|
+|cant|p2a: Latias|slp
+|move|p1a: Quagsire|Earthquake|p2a: Latias
+|-immune|p2a: Latias|[msg]
+|
+|turn|6
+|
+|switch|p1a: Skarmory|Skarmory, F|334\/334
+|cant|p2a: Latias|slp
+|
+|turn|7
+|
+|switch|p2a: Heatran|Heatran, F|386\/386
+|move|p1a: Skarmory|Stealth Rock|p2a: Heatran
+|-sidestart|p2: Shizou|move: Stealth Rock
+|
+|turn|8
+|
+|switch|p1a: Gyarados|Gyarados, M|340\/340
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Heatran
+|-unboost|p2a: Heatran|atk|1
+|move|p2a: Heatran|Toxic|p1a: Gyarados
+|-status|p1a: Gyarados|tox
+|
+|-damage|p1a: Gyarados|319\/340 tox|[from] psn
+|turn|9
+|
+|switch|p2a: Mawile|Mawile, F|304\/304
+|-damage|p2a: Mawile|285\/304|[from] Stealth Rock
+|-ability|p2a: Mawile|Intimidate|[of] p1a: Gyarados
+|-unboost|p1a: Gyarados|atk|1
+|-formechange|p1a: Gyarados|Gyarados-Mega
+|message|Gyarados has Mega Evolved into Mega Gyarados!
+|-ability|p1a: Gyarados|Mold Breaker
+|move|p1a: Gyarados|Earthquake|p2a: Mawile
+|-supereffective|p2a: Mawile
+|-damage|p2a: Mawile|55\/304
+|
+|-damage|p1a: Gyarados|277\/340 tox|[from] psn
+|turn|10
+|
+|switch|p2a: Latias|Latias, F|301\/301 slp
+|-damage|p2a: Latias|264\/301 slp|[from] Stealth Rock
+|move|p1a: Gyarados|Earthquake|p2a: Latias
+|-damage|p2a: Latias|179\/301 slp
+|
+|-heal|p2a: Latias|197\/301 slp|[from] item: Leftovers
+|-damage|p1a: Gyarados|214\/340 tox|[from] psn
+|turn|11
+|
+|switch|p1a: Chansey|Chansey, F|704\/704
+|-curestatus|p2a: Latias|slp
+|move|p2a: Latias|Draco Meteor|p1a: Chansey
+|-damage|p1a: Chansey|602\/704
+|-unboost|p2a: Latias|spa|2
+|
+|-heal|p2a: Latias|215\/301|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Latias|Defog|p1a: Chansey
+|-unboost|p1a: Chansey|evasion|1
+|-sideend|p2: Shizou|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Chansey|Heal Bell|p1a: Chansey
+|-cureteam|p1a: Chansey|[from] move: HealBell
+|
+|-heal|p2a: Latias|233\/301|[from] item: Leftovers
+|turn|13
+|
+|switch|p2a: Tyranitar|Tyranitar, M|341\/341
+|-weather|Sandstorm
+|move|p1a: Chansey|Wish|p1a: Chansey
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Chansey|558\/704|[from] sandstorm
+|turn|14
+|
+|move|p2a: Tyranitar|Pursuit|p1a: Chansey|[from]Pursuit
+|-damage|p1a: Chansey|363\/704
+|switch|p1a: Gyarados|Gyarados, M|214\/340
+|-formechange|p1a: Gyarados|Gyarados-Mega
+|-ability|p1a: Gyarados|Mold Breaker
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gyarados|193\/340|[from] sandstorm
+|-heal|p1a: Gyarados|340\/340|[from] move: Wish|[wisher] Chansey
+|turn|15
+|
+|switch|p2a: Keldeo|Keldeo|322\/322
+|move|p1a: Gyarados|Earthquake|p2a: Keldeo
+|-crit|p2a: Keldeo
+|-damage|p2a: Keldeo|57\/322
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Keldeo|37\/322|[from] sandstorm
+|-damage|p1a: Gyarados|319\/340|[from] sandstorm
+|turn|16
+|
+|switch|p1a: Amoonguss|Amoonguss, F|432\/432
+|move|p2a: Keldeo|Hidden Power|p1a: Amoonguss
+|-supereffective|p1a: Amoonguss
+|-damage|p1a: Amoonguss|244\/432
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Keldeo|17\/322|[from] sandstorm
+|-damage|p1a: Amoonguss|217\/432|[from] sandstorm
+|-heal|p1a: Amoonguss|244\/432|[from] item: Leftovers
+|turn|17
+|
+|switch|p2a: Latias|Latias, F|233\/301
+|switch|p1a: Chansey|Chansey, F|363\/704
+|
+|-weather|none
+|-heal|p2a: Latias|251\/301|[from] item: Leftovers
+|turn|18
+|
+|move|p2a: Latias|Psyshock|p1a: Chansey
+|-damage|p1a: Chansey|218\/704
+|move|p1a: Chansey|Soft-Boiled|p1a: Chansey
+|-heal|p1a: Chansey|570\/704
+|
+|-heal|p2a: Latias|269\/301|[from] item: Leftovers
+|turn|19
+|
+|switch|p2a: Heatran|Heatran, F|386\/386
+|move|p1a: Chansey|Soft-Boiled|p1a: Chansey
+|-heal|p1a: Chansey|704\/704
+|
+|turn|20
+|
+|move|p2a: Heatran|Toxic|p1a: Chansey
+|-status|p1a: Chansey|tox
+|move|p1a: Chansey|Seismic Toss|p2a: Heatran
+|-damage|p2a: Heatran|286\/386
+|
+|-heal|p2a: Heatran|310\/386|[from] item: Leftovers
+|-damage|p1a: Chansey|660\/704 tox|[from] psn
+|turn|21
+|
+|switch|p1a: Gyarados|Gyarados, M|319\/340
+|-formechange|p1a: Gyarados|Gyarados-Mega
+|-ability|p1a: Gyarados|Mold Breaker
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-fail|p2a: Heatran
+|
+|-heal|p2a: Heatran|334\/386|[from] item: Leftovers
+|turn|22
+|
+|switch|p2a: Latias|Latias, F|269\/301
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|
+|-heal|p2a: Latias|287\/301|[from] item: Leftovers
+|turn|23
+|
+|move|p1a: Gyarados|Earthquake|p2a: Latias
+|-damage|p2a: Latias|106\/301
+|move|p2a: Latias|Draco Meteor|p1a: Gyarados
+|-damage|p1a: Gyarados|180\/340
+|-unboost|p2a: Latias|spa|2
+|
+|-heal|p2a: Latias|124\/301|[from] item: Leftovers
+|turn|24
+|
+|switch|p2a: Keldeo|Keldeo|17\/322
+|move|p1a: Gyarados|Earthquake|p2a: Keldeo
+|-damage|p2a: Keldeo|0 fnt
+|faint|p2a: Keldeo
+|
+|
+|switch|p2a: Tyranitar|Tyranitar, M|341\/341
+|-weather|Sandstorm
+|turn|25
+|
+|switch|p1a: Skarmory|Skarmory, F|334\/334
+|move|p2a: Tyranitar|Stone Edge|p1a: Skarmory
+|-damage|p1a: Skarmory|219\/334
+|
+|-weather|Sandstorm|[upkeep]
+|turn|26
+|
+|switch|p2a: Latias|Latias, F|124\/301
+|move|p1a: Skarmory|Stealth Rock|p2a: Latias
+|-sidestart|p2: Shizou|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|106\/301|[from] sandstorm
+|-heal|p2a: Latias|124\/301|[from] item: Leftovers
+|turn|27
+|
+|switch|p1a: Chansey|Chansey, F|660\/704
+|move|p2a: Latias|Roost|p2a: Latias
+|-heal|p2a: Latias|275\/301
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|257\/301|[from] sandstorm
+|-damage|p1a: Chansey|616\/704|[from] sandstorm
+|-heal|p2a: Latias|275\/301|[from] item: Leftovers
+|turn|28
+|
+|move|p2a: Latias|Defog|p1a: Chansey
+|-unboost|p1a: Chansey|evasion|1
+|-sideend|p2: Shizou|Stealth Rock|[from] move: Defog|[of] p2a: Latias
+|move|p1a: Chansey|Wish|p1a: Chansey
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|257\/301|[from] sandstorm
+|-damage|p1a: Chansey|572\/704|[from] sandstorm
+|-heal|p2a: Latias|275\/301|[from] item: Leftovers
+|turn|29
+|
+|switch|p2a: Tyranitar|Tyranitar, M|341\/341
+|switch|p1a: Gyarados|Gyarados, M|180\/340
+|-formechange|p1a: Gyarados|Gyarados-Mega
+|-ability|p1a: Gyarados|Mold Breaker
+|
+|-weather|none
+|-heal|p1a: Gyarados|340\/340|[from] move: Wish|[wisher] Chansey
+|turn|30
+|
+|move|p2a: Tyranitar|Stone Edge|p1a: Gyarados
+|-damage|p1a: Gyarados|174\/340
+|move|p1a: Gyarados|Waterfall|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|
+|switch|p2a: Mamoswine|Mamoswine, M|361\/361
+|turn|31
+|
+|switch|p1a: Quagsire|Quagsire, F|394\/394
+|move|p2a: Mamoswine|Earthquake|p1a: Quagsire
+|-damage|p1a: Quagsire|262\/394
+|
+|-heal|p1a: Quagsire|286\/394|[from] item: Leftovers
+|turn|32
+|
+|switch|p2a: Latias|Latias, F|275\/301
+|move|p1a: Quagsire|Toxic|p2a: Latias|[miss]
+|-miss|p1a: Quagsire|p2a: Latias
+|
+|-heal|p2a: Latias|293\/301|[from] item: Leftovers
+|-heal|p1a: Quagsire|310\/394|[from] item: Leftovers
+|turn|33
+|
+|move|p2a: Latias|Psyshock|p1a: Quagsire
+|-damage|p1a: Quagsire|232\/394
+|move|p1a: Quagsire|Toxic|p2a: Latias
+|-status|p2a: Latias|tox
+|
+|-heal|p2a: Latias|301\/301 tox|[from] item: Leftovers
+|-heal|p1a: Quagsire|256\/394|[from] item: Leftovers
+|-damage|p2a: Latias|283\/301 tox|[from] psn
+|turn|34
+|-message|Shizou forfeited.
+|
+|win|cowgurll
+|raw|Ladder updating...
+|leave|Shizou
+|player|p2
+|raw|cowgurll's rating: 1672 &rarr; <strong>1687<\/strong><br \/>(+15 for winning)
+|raw|Shizou's rating: 1587 &rarr; <strong>1572<\/strong><br \/>(-15 for losing)

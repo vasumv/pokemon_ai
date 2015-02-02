@@ -1,0 +1,276 @@
+|join|SummerSpice
+|join|shabbir
+|player|p1|SummerSpice|285
+|player|p2|shabbir|265
+|gametype|singles
+|tier|UU
+|rated
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Roserade, F
+|poke|p1|Cofagrigus, F
+|poke|p1|Piloswine, M
+|poke|p1|Scrafty, M
+|poke|p1|Snorlax, M
+|poke|p1|Slowbro, M
+|poke|p2|Ambipom, F
+|poke|p2|Raikou, shiny
+|poke|p2|Victini
+|poke|p2|Weavile, M
+|poke|p2|Shaymin
+|poke|p2|Mienshao, M
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Cocaine|Slowbro, M|393\/393
+|switch|p2a: Peace|Victini|341\/341
+|turn|1
+|callback|decision
+|
+|switch|p2a: Batman|Shaymin|404\/404
+|move|p1a: Cocaine|Scald|p2a: Batman
+|-resisted|p2a: Batman
+|-damage|p2a: Batman|305\/404
+|-status|p2a: Batman|brn
+|
+|-damage|p2a: Batman|255\/404 brn|[from] brn
+|turn|2
+|callback|decision
+|
+|switch|p1a: Obese|Snorlax, M|481\/481
+|move|p2a: Batman|Air Slash|p1a: Obese
+|-damage|p1a: Obese|391\/481
+|-damage|p2a: Batman|215\/404 brn|[from] item: Life Orb
+|
+|-heal|p1a: Obese|421\/481|[from] item: Leftovers
+|-damage|p2a: Batman|165\/404 brn|[from] brn
+|turn|3
+|callback|decision
+|
+|move|p2a: Batman|Synthesis|p2a: Batman
+|-heal|p2a: Batman|367\/404 brn
+|move|p1a: Obese|Body Slam|p2a: Batman
+|-crit|p2a: Batman
+|-damage|p2a: Batman|91\/404 brn
+|
+|-heal|p1a: Obese|451\/481|[from] item: Leftovers
+|-damage|p2a: Batman|41\/404 brn|[from] brn
+|turn|4
+|callback|decision
+|
+|move|p2a: Batman|Seed Flare|p1a: Obese
+|-damage|p1a: Obese|241\/481
+|-unboost|p1a: Obese|spd|2
+|-damage|p2a: Batman|1\/404 brn|[from] item: Life Orb
+|move|p1a: Obese|Body Slam|p2a: Batman
+|-damage|p2a: Batman|0 fnt
+|faint|p2a: Batman
+|
+|-heal|p1a: Obese|271\/481|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Jack Sparrow|Raikou, shiny|322\/322
+|-ability|p2a: Jack Sparrow|Pressure
+|turn|5
+|callback|decision
+|
+|move|p2a: Jack Sparrow|Aura Sphere|p1a: Obese
+|-crit|p1a: Obese
+|-supereffective|p1a: Obese
+|-damage|p1a: Obese|0 fnt
+|faint|p1a: Obese
+|
+|callback|decision
+|
+|switch|p1a: Poison Ivy|Roserade, F|303\/303
+|turn|6
+|callback|decision
+|
+|switch|p2a: Peace|Victini|341\/341
+|move|p1a: Poison Ivy|Sleep Powder|p2a: Peace
+|-status|p2a: Peace|slp
+|
+|turn|7
+|callback|decision
+|
+|switch|p2a: Shifu|Mienshao, M|271\/271
+|move|p1a: Poison Ivy|Toxic Spikes|p2a: Shifu
+|-sidestart|p2: shabbir|move: Toxic Spikes
+|
+|turn|8
+|callback|decision
+|
+|move|p2a: Shifu|U-turn|p1a: Poison Ivy
+|-damage|p1a: Poison Ivy|150\/303
+|callback|decision
+|
+|switch|p2a: Abu|Ambipom, F|291\/291
+|-status|p2a: Abu|psn
+|move|p1a: Poison Ivy|Toxic Spikes|p2a: Abu
+|-sidestart|p2: shabbir|move: Toxic Spikes
+|
+|-damage|p2a: Abu|255\/291 psn|[from] psn
+|turn|9
+|callback|decision
+|
+|move|p2a: Abu|U-turn|p1a: Poison Ivy
+|-damage|p1a: Poison Ivy|39\/303
+|callback|decision
+|
+|switch|p2a: Shifu|Mienshao, M|271\/271
+|-status|p2a: Shifu|tox
+|move|p1a: Poison Ivy|Giga Drain|p2a: Shifu
+|-damage|p2a: Shifu|1\/271 tox
+|-heal|p1a: Poison Ivy|174\/303|[from] drain|[of] p2a: Shifu
+|-damage|p1a: Poison Ivy|144\/303|[from] item: Life Orb
+|
+|-damage|p2a: Shifu|0 fnt|[from] psn
+|faint|p2a: Shifu
+|callback|decision
+|
+|switch|p2a: Robin Hood|Weavile, M|282\/282
+|-status|p2a: Robin Hood|tox
+|-ability|p2a: Robin Hood|Pressure
+|turn|10
+|callback|decision
+|
+|move|p2a: Robin Hood|Swords Dance|p2a: Robin Hood
+|-boost|p2a: Robin Hood|atk|2
+|move|p1a: Poison Ivy|Hidden Power|p2a: Robin Hood
+|-supereffective|p2a: Robin Hood
+|-damage|p2a: Robin Hood|34\/282 tox
+|-damage|p1a: Poison Ivy|114\/303|[from] item: Life Orb
+|
+|-damage|p2a: Robin Hood|17\/282 tox|[from] psn
+|turn|11
+|callback|decision
+|
+|move|p2a: Robin Hood|Ice Punch|p1a: Poison Ivy
+|-supereffective|p1a: Poison Ivy
+|-damage|p1a: Poison Ivy|0 fnt
+|-damage|p2a: Robin Hood|0 fnt|[from] item: Life Orb
+|faint|p1a: Poison Ivy
+|faint|p2a: Robin Hood
+|
+|callback|decision
+|
+|switch|p2a: Jack Sparrow|Raikou, shiny|322\/322
+|-status|p2a: Jack Sparrow|tox
+|switch|p1a: Pork Chop|Piloswine, M|404\/404
+|-ability|p2a: Jack Sparrow|Pressure
+|turn|12
+|callback|decision
+|
+|switch|p1a: Cleopatra|Cofagrigus, F|319\/319
+|move|p2a: Jack Sparrow|Aura Sphere|p1a: Cleopatra
+|-immune|p1a: Cleopatra|[msg]
+|
+|-damage|p2a: Jack Sparrow|302\/322 tox|[from] psn
+|turn|13
+|callback|decision
+|
+|switch|p2a: Peace|Victini|341\/341 slp
+|move|p1a: Cleopatra|Trick Room|p1a: Cleopatra
+|-fieldstart|move: Trick Room|[of] p1a: Cleopatra
+|
+|turn|14
+|callback|decision
+|
+|move|p1a: Cleopatra|Shadow Ball|p2a: Peace
+|-supereffective|p2a: Peace
+|-damage|p2a: Peace|75\/341 slp
+|cant|p2a: Peace|slp
+|
+|turn|15
+|callback|decision
+|
+|move|p1a: Cleopatra|Shadow Ball|p2a: Peace
+|-supereffective|p2a: Peace
+|-damage|p2a: Peace|0 fnt
+|faint|p2a: Peace
+|
+|callback|decision
+|
+|switch|p2a: Jack Sparrow|Raikou, shiny|302\/322 tox
+|-ability|p2a: Jack Sparrow|Pressure
+|turn|16
+|callback|decision
+|
+|move|p1a: Cleopatra|Shadow Ball|p2a: Jack Sparrow
+|-damage|p2a: Jack Sparrow|167\/322 tox
+|move|p2a: Jack Sparrow|Volt Switch|p1a: Cleopatra
+|-damage|p1a: Cleopatra|141\/319
+|callback|decision
+|
+|switch|p2a: Abu|Ambipom, F|255\/291 psn
+|
+|-heal|p1a: Cleopatra|160\/319|[from] item: Leftovers
+|-damage|p2a: Abu|219\/291 psn|[from] psn
+|turn|17
+|callback|decision
+|
+|move|p1a: Cleopatra|Hidden Power|p2a: Abu
+|-supereffective|p2a: Abu
+|-damage|p2a: Abu|21\/291 psn
+|move|p2a: Abu|U-turn|p1a: Cleopatra
+|-resisted|p1a: Cleopatra
+|-damage|p1a: Cleopatra|136\/319
+|-ability|p2a: Abu|Mummy|[from] Mummy
+|callback|decision
+|
+|switch|p2a: Jack Sparrow|Raikou, shiny|167\/322 tox
+|-ability|p2a: Jack Sparrow|Pressure
+|
+|-heal|p1a: Cleopatra|155\/319|[from] item: Leftovers
+|-damage|p2a: Jack Sparrow|147\/322 tox|[from] psn
+|-fieldend|move: Trick Room
+|turn|18
+|callback|decision
+|
+|switch|p1a: Pork Chop|Piloswine, M|404\/404
+|move|p2a: Jack Sparrow|Aura Sphere|p1a: Pork Chop
+|-supereffective|p1a: Pork Chop
+|-damage|p1a: Pork Chop|74\/404
+|
+|-damage|p2a: Jack Sparrow|107\/322 tox|[from] psn
+|turn|19
+|callback|decision
+|
+|switch|p2a: Abu|Ambipom, F|21\/291 psn
+|move|p1a: Pork Chop|Ice Shard|p2a: Abu
+|-damage|p2a: Abu|0 fnt
+|faint|p2a: Abu
+|
+|callback|decision
+|
+|switch|p2a: Jack Sparrow|Raikou, shiny|107\/322 tox
+|-ability|p2a: Jack Sparrow|Pressure
+|turn|20
+|callback|decision
+|
+|move|p1a: Pork Chop|Ice Shard|p2a: Jack Sparrow
+|-damage|p2a: Jack Sparrow|28\/322 tox
+|move|p2a: Jack Sparrow|Hidden Power|p1a: Pork Chop
+|-damage|p1a: Pork Chop|8\/404
+|
+|-damage|p2a: Jack Sparrow|8\/322 tox|[from] psn
+|turn|21
+|callback|decision
+|
+|move|p1a: Pork Chop|Ice Shard|p2a: Jack Sparrow
+|-damage|p2a: Jack Sparrow|0 fnt
+|faint|p2a: Jack Sparrow
+|
+|win|SummerSpice
+|raw|Ladder updating...
+|raw|SummerSpice's rating: 1467 &rarr; <strong>1512<\/strong><br \/>(+45 for winning)
+|raw|shabbir's rating: 1662 &rarr; <strong>1658<\/strong><br \/>(-4 for losing)
+|chat|SummerSpice|gg
+|leave|shabbir
+|player|p2

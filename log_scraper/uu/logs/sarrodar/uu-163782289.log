@@ -1,0 +1,309 @@
+|join|sarrodar
+|join|zapp.zapp
+|player|p1|sarrodar|266
+|player|p2|zapp.zapp|64
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Alakazam, F
+|poke|p1|Trevenant, F
+|poke|p1|Blissey, F
+|poke|p1|Blastoise, F
+|poke|p1|Darmanitan, F
+|poke|p1|Scrafty, M
+|poke|p2|Darmanitan, M
+|poke|p2|Togekiss, F
+|poke|p2|Hydreigon, F
+|poke|p2|Quagsire, F
+|poke|p2|Raikou
+|poke|p2|Celebi
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Scrafty|Scrafty, M|271\/271
+|switch|p2a: Hydreigon|Hydreigon, F|325\/325
+|turn|1
+|
+|switch|p2a: Togekiss|Togekiss, F|373\/373
+|move|p1a: Scrafty|Drain Punch|p2a: Togekiss
+|-resisted|p2a: Togekiss
+|-damage|p2a: Togekiss|345\/373
+|
+|-heal|p2a: Togekiss|368\/373|[from] item: Leftovers
+|turn|2
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|switch|p2a: Darmanitan|Darmanitan, M|351\/351
+|
+|turn|3
+|
+|move|p1a: Blissey|Protect|p1a: Blissey
+|-singleturn|p1a: Blissey|Protect
+|move|p2a: Darmanitan|Flare Blitz|p1a: Blissey
+|-activate|p1a: Blissey|Protect
+|
+|turn|4
+|
+|switch|p1a: Blastoise|Blastoise, F|338\/338
+|move|p2a: Darmanitan|Flare Blitz|p1a: Blastoise
+|-resisted|p1a: Blastoise
+|-damage|p1a: Blastoise|127\/338
+|-damage|p2a: Darmanitan|281\/351|[from] recoil|[of] p1a: Blastoise
+|
+|turn|5
+|
+|detailschange|p1a: Blastoise|Blastoise-Mega, F
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Darmanitan|Flare Blitz|p1a: Blastoise
+|-resisted|p1a: Blastoise
+|-damage|p1a: Blastoise|0 fnt
+|-damage|p2a: Darmanitan|239\/351|[from] recoil|[of] p1a: Blastoise
+|faint|p1a: Blastoise
+|
+|
+|switch|p1a: Darmanitan|Darmanitan, F|352\/352
+|turn|6
+|
+|switch|p2a: Quagsire|Quagsire, F|394\/394
+|move|p1a: Darmanitan|Flare Blitz|p2a: Quagsire
+|-resisted|p2a: Quagsire
+|-damage|p2a: Quagsire|238\/394
+|-damage|p1a: Darmanitan|301\/352|[from] recoil|[of] p2a: Quagsire
+|
+|-heal|p2a: Quagsire|262\/394|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Trevenant|Trevenant, F|374\/374
+|move|p2a: Quagsire|Recover|p2a: Quagsire
+|-heal|p2a: Quagsire|394\/394
+|
+|turn|8
+|
+|switch|p2a: Celebi|Celebi|403\/403
+|move|p1a: Trevenant|Leech Seed|p2a: Celebi
+|-immune|p2a: Celebi|[msg]
+|
+|turn|9
+|
+|switch|p1a: Scrafty|Scrafty, M|271\/271
+|move|p2a: Celebi|Stealth Rock|p1a: Scrafty
+|-sidestart|p1: sarrodar|move: Stealth Rock
+|
+|turn|10
+|
+|switch|p2a: Togekiss|Togekiss, F|368\/373
+|move|p1a: Scrafty|Dragon Dance|p1a: Scrafty
+|-boost|p1a: Scrafty|atk|1
+|-boost|p1a: Scrafty|spe|1
+|
+|-heal|p2a: Togekiss|373\/373|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Scrafty|Ice Punch|p2a: Togekiss
+|-supereffective|p2a: Togekiss
+|-damage|p2a: Togekiss|137\/373
+|move|p2a: Togekiss|Thunder Wave|p1a: Scrafty
+|-status|p1a: Scrafty|par
+|-enditem|p1a: Scrafty|Lum Berry|[eat]
+|-curestatus|p1a: Scrafty|par
+|
+|-heal|p2a: Togekiss|160\/373|[from] item: Leftovers
+|turn|12
+|
+|switch|p2a: Quagsire|Quagsire, F|394\/394
+|move|p1a: Scrafty|Ice Punch|p2a: Quagsire
+|-damage|p2a: Quagsire|337\/394
+|
+|-heal|p2a: Quagsire|361\/394|[from] item: Leftovers
+|turn|13
+|
+|move|p1a: Scrafty|Knock Off|p2a: Quagsire
+|-damage|p2a: Quagsire|237\/394
+|-enditem|p2a: Quagsire|Leftovers|[from] move: Knock Off|[of] p1a: Scrafty
+|move|p2a: Quagsire|Toxic|p1a: Scrafty
+|-status|p1a: Scrafty|tox
+|
+|-damage|p1a: Scrafty|255\/271 tox|[from] psn
+|turn|14
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|-damage|p1a: Blissey|625\/714|[from] Stealth Rock
+|move|p2a: Quagsire|Recover|p2a: Quagsire
+|-heal|p2a: Quagsire|394\/394
+|
+|-heal|p1a: Blissey|669\/714|[from] item: Leftovers
+|turn|15
+|
+|switch|p2a: Togekiss|Togekiss, F|160\/373
+|move|p1a: Blissey|Toxic|p2a: Togekiss
+|-status|p2a: Togekiss|tox
+|
+|-heal|p2a: Togekiss|183\/373 tox|[from] item: Leftovers
+|-heal|p1a: Blissey|713\/714|[from] item: Leftovers
+|-damage|p2a: Togekiss|160\/373 tox|[from] psn
+|turn|16
+|
+|move|p2a: Togekiss|Roost|p2a: Togekiss
+|-heal|p2a: Togekiss|347\/373 tox
+|move|p1a: Blissey|Seismic Toss|p2a: Togekiss
+|-damage|p2a: Togekiss|247\/373 tox
+|
+|-heal|p2a: Togekiss|270\/373 tox|[from] item: Leftovers
+|-heal|p1a: Blissey|714\/714|[from] item: Leftovers
+|-damage|p2a: Togekiss|224\/373 tox|[from] psn
+|turn|17
+|
+|switch|p2a: Darmanitan|Darmanitan, M|239\/351
+|move|p1a: Blissey|Wish|p1a: Blissey
+|
+|turn|18
+|
+|switch|p1a: Scrafty|Scrafty, M|255\/271 tox
+|-damage|p1a: Scrafty|239\/271 tox|[from] Stealth Rock
+|move|p2a: Darmanitan|Flare Blitz|p1a: Scrafty
+|-damage|p1a: Scrafty|0 fnt
+|-damage|p2a: Darmanitan|160\/351|[from] recoil|[of] p1a: Scrafty
+|faint|p1a: Scrafty
+|
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|-damage|p1a: Blissey|625\/714|[from] Stealth Rock
+|turn|19
+|
+|move|p2a: Darmanitan|Flare Blitz|p1a: Blissey
+|-damage|p1a: Blissey|0 fnt
+|-damage|p2a: Darmanitan|0 fnt|[from] recoil|[of] p1a: Blissey
+|faint|p1a: Blissey
+|faint|p2a: Darmanitan
+|
+|
+|switch|p2a: Hydreigon|Hydreigon, F|325\/325
+|switch|p1a: Alakazam|Alakazam, F|252\/252
+|turn|20
+|
+|move|p2a: Hydreigon|Dark Pulse|p1a: Alakazam
+|-crit|p1a: Alakazam
+|-supereffective|p1a: Alakazam
+|-enditem|p1a: Alakazam|Focus Sash
+|-damage|p1a: Alakazam|1\/252
+|move|p1a: Alakazam|Dazzling Gleam|p2a: Hydreigon
+|-supereffective|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|faint|p2a: Hydreigon
+|
+|
+|switch|p2a: Celebi|Celebi|403\/403
+|turn|21
+|
+|move|p1a: Alakazam|Shadow Ball|p2a: Celebi
+|-crit|p2a: Celebi
+|-supereffective|p2a: Celebi
+|-damage|p2a: Celebi|143\/403
+|-unboost|p2a: Celebi|spd|1
+|move|p2a: Celebi|Heal Bell|p2a: Celebi
+|-cureteam|p2a: Celebi|[from] move: HealBell
+|
+|-heal|p2a: Celebi|168\/403|[from] item: Leftovers
+|turn|22
+|
+|move|p1a: Alakazam|Shadow Ball|p2a: Celebi
+|-supereffective|p2a: Celebi
+|-damage|p2a: Celebi|0 fnt
+|faint|p2a: Celebi
+|
+|
+|switch|p2a: Raikou|Raikou|321\/321
+|-ability|p2a: Raikou|Pressure
+|turn|23
+|
+|switch|p1a: Trevenant|Trevenant, F|374\/374
+|-damage|p1a: Trevenant|328\/374|[from] Stealth Rock
+|move|p2a: Raikou|Volt Switch|p1a: Trevenant
+|-resisted|p1a: Trevenant
+|-damage|p1a: Trevenant|226\/374
+|
+|switch|p2a: Togekiss|Togekiss, F|224\/373
+|
+|-heal|p2a: Togekiss|247\/373|[from] item: Leftovers
+|turn|24
+|
+|move|p2a: Togekiss|Air Slash|p1a: Trevenant
+|-supereffective|p1a: Trevenant
+|-damage|p1a: Trevenant|2\/374
+|cant|p1a: Trevenant|flinch
+|
+|-heal|p2a: Togekiss|270\/373|[from] item: Leftovers
+|turn|25
+|
+|move|p2a: Togekiss|Air Slash|p1a: Trevenant
+|-supereffective|p1a: Trevenant
+|-damage|p1a: Trevenant|0 fnt
+|faint|p1a: Trevenant
+|
+|-heal|p2a: Togekiss|293\/373|[from] item: Leftovers
+|
+|switch|p1a: Darmanitan|Darmanitan, F|301\/352
+|-damage|p1a: Darmanitan|213\/352|[from] Stealth Rock
+|turn|26
+|
+|switch|p2a: Quagsire|Quagsire, F|394\/394
+|move|p1a: Darmanitan|Flare Blitz|p2a: Quagsire
+|-resisted|p2a: Quagsire
+|-damage|p2a: Quagsire|235\/394
+|-damage|p1a: Darmanitan|161\/352|[from] recoil|[of] p2a: Quagsire
+|
+|turn|27
+|
+|move|p1a: Darmanitan|Earthquake|p2a: Quagsire
+|-damage|p2a: Quagsire|105\/394
+|-damage|p1a: Darmanitan|126\/352|[from] item: Life Orb
+|move|p2a: Quagsire|Earthquake|p1a: Darmanitan
+|-crit|p1a: Darmanitan
+|-supereffective|p1a: Darmanitan
+|-damage|p1a: Darmanitan|0 fnt
+|faint|p1a: Darmanitan
+|
+|
+|switch|p1a: Alakazam|Alakazam, F|1\/252
+|turn|28
+|
+|move|p1a: Alakazam|Shadow Ball|p2a: Quagsire
+|-damage|p2a: Quagsire|0 fnt
+|faint|p2a: Quagsire
+|
+|
+|switch|p2a: Togekiss|Togekiss, F|293\/373
+|turn|29
+|
+|move|p1a: Alakazam|Psyshock|p2a: Togekiss
+|-damage|p2a: Togekiss|131\/373
+|move|p2a: Togekiss|Thunder Wave|p1a: Alakazam
+|-status|p1a: Alakazam|par
+|
+|-heal|p2a: Togekiss|154\/373|[from] item: Leftovers
+|turn|30
+|
+|move|p2a: Togekiss|Air Slash|p1a: Alakazam
+|-damage|p1a: Alakazam|0 fnt
+|faint|p1a: Alakazam
+|
+|win|zapp.zapp
+|raw|Ladder updating...
+|raw|sarrodar's rating: 1354 &rarr; <strong>1340<\/strong><br \/>(-14 for losing)
+|raw|zapp.zapp's rating: 1456 &rarr; <strong>1471<\/strong><br \/>(+15 for winning)
+|leave|zapp.zapp
+|player|p2
+|leave|sarrodar
+|player|p1
+|join|zapp.zapp

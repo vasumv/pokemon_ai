@@ -1,0 +1,192 @@
+|join|dayladavid
+|join|Snickered
+|player|p1|dayladavid|1
+|player|p2|Snickered|34
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Heatran, M
+|poke|p1|Manectric, F
+|poke|p1|Landorus-Therian, M
+|poke|p1|Weavile, M
+|poke|p1|Ferrothorn, M
+|poke|p1|Greninja, M
+|poke|p2|Azumarill, M, shiny
+|poke|p2|Azelf, shiny
+|poke|p2|Rotom-Wash
+|poke|p2|Garchomp, M
+|poke|p2|Gardevoir, F, shiny
+|poke|p2|Bisharp, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|c|âSnickered|glhf
+|
+|start
+|switch|p1a: Ferrothorn|Ferrothorn, M|352\/352
+|switch|p2a: Azelf|Azelf, shiny|291\/291
+|turn|1
+|
+|move|p2a: Azelf|Taunt|p1a: Ferrothorn
+|-start|p1a: Ferrothorn|move: Taunt
+|cant|p1a: Ferrothorn|move: Taunt|Spikes
+|
+|turn|2
+|
+|move|p2a: Azelf|Stealth Rock|p1a: Ferrothorn
+|-sidestart|p1: dayladavid|move: Stealth Rock
+|move|p1a: Ferrothorn|Power Whip|p2a: Azelf
+|-damage|p2a: Azelf|102\/291
+|
+|turn|3
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|381\/381
+|-damage|p1a: Landorus-Therian|334\/381|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Azelf
+|-unboost|p2a: Azelf|atk|1
+|move|p2a: Azelf|Knock Off|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|250\/381
+|-enditem|p1a: Landorus-Therian|Leftovers|[from] move: Knock Off|[of] p2a: Azelf
+|
+|turn|4
+|
+|move|p2a: Azelf|Explosion|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|41\/381
+|faint|p2a: Azelf
+|move|p1a: Landorus-Therian|U-turn|p2: Azelf|[notarget]
+|-notarget
+|
+|
+|switch|p2a: Garchomp|Garchomp, M|357\/357
+|turn|5
+|
+|move|p2a: Garchomp|Fire Blast|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|faint|p1a: Landorus-Therian
+|
+|
+|switch|p1a: Manectric|Manectric, F|281\/281
+|-damage|p1a: Manectric|246\/281|[from] Stealth Rock
+|turn|6
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|detailschange|p1a: Manectric|Manectric-Mega, F
+|message|Manectric has Mega Evolved into Mega Manectric!
+|-ability|p1a: Manectric|Intimidate|[of] p2a: Rotom-Wash
+|-unboost|p2a: Rotom-Wash|atk|1
+|move|p1a: Manectric|Hidden Power|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|271\/304
+|
+|-heal|p2a: Rotom-Wash|290\/304|[from] item: Leftovers
+|turn|7
+|
+|move|p1a: Manectric|Thunderbolt|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|140\/304
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Manectric
+|-status|p1a: Manectric|brn
+|
+|-heal|p2a: Rotom-Wash|159\/304|[from] item: Leftovers
+|-damage|p1a: Manectric|211\/281 brn|[from] brn
+|turn|8
+|
+|move|p1a: Manectric|Thunderbolt|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|-damage|p1a: Manectric|176\/281 brn|[from] brn
+|
+|switch|p2a: Garchomp|Garchomp, M|357\/357
+|turn|9
+|
+|move|p2a: Garchomp|Earthquake|p1a: Manectric
+|-supereffective|p1a: Manectric
+|-damage|p1a: Manectric|0 fnt
+|faint|p1a: Manectric
+|
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|352\/352
+|-damage|p1a: Ferrothorn|330\/352|[from] Stealth Rock
+|turn|10
+|
+|switch|p2a: Bisharp|Bisharp, M|272\/272
+|move|p1a: Ferrothorn|Leech Seed|p2a: Bisharp
+|-start|p2a: Bisharp|move: Leech Seed
+|
+|-damage|p2a: Bisharp|238\/272|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|352\/352|[silent]
+|turn|11
+|
+|move|p2a: Bisharp|Swords Dance|p2a: Bisharp
+|-boost|p2a: Bisharp|atk|2
+|move|p1a: Ferrothorn|Spikes|p2a: Bisharp
+|-sidestart|p2: Snickered|Spikes
+|
+|-damage|p2a: Bisharp|204\/272|[from] Leech Seed|[of] p1a: Ferrothorn
+|turn|12
+|
+|move|p2a: Bisharp|Swords Dance|p2a: Bisharp
+|-boost|p2a: Bisharp|atk|2
+|move|p1a: Ferrothorn|Spikes|p2a: Bisharp
+|-sidestart|p2: Snickered|Spikes
+|
+|-damage|p2a: Bisharp|170\/272|[from] Leech Seed|[of] p1a: Ferrothorn
+|turn|13
+|
+|move|p2a: Bisharp|Knock Off|p1a: Ferrothorn
+|-crit|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|0 fnt
+|-damage|p2a: Bisharp|136\/272|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|-damage|p2a: Bisharp|91\/272|[from] item: Rocky Helmet|[of] p1a: Ferrothorn
+|-enditem|p1a: Ferrothorn|Rocky Helmet|[from] move: Knock Off|[of] p2a: Bisharp
+|faint|p1a: Ferrothorn
+|
+|
+|switch|p1a: Heatran|Heatran, M|385\/385
+|-damage|p1a: Heatran|337\/385|[from] Stealth Rock
+|turn|14
+|
+|move|p2a: Bisharp|Knock Off|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|-enditem|p1a: Heatran|Leftovers|[from] move: Knock Off|[of] p2a: Bisharp
+|faint|p1a: Heatran
+|
+|
+|switch|p1a: Weavile|Weavile, M|281\/281
+|-damage|p1a: Weavile|211\/281|[from] Stealth Rock
+|-ability|p1a: Weavile|Pressure
+|turn|15
+|
+|move|p1a: Weavile|Ice Shard|p2a: Bisharp
+|-resisted|p2a: Bisharp
+|-damage|p2a: Bisharp|47\/272
+|-damage|p1a: Weavile|183\/281|[from] item: Life Orb
+|move|p2a: Bisharp|Iron Head|p1a: Weavile
+|-supereffective|p1a: Weavile
+|-damage|p1a: Weavile|0 fnt
+|faint|p1a: Weavile
+|
+|
+|switch|p1a: Greninja|Greninja, M|286\/286
+|-damage|p1a: Greninja|251\/286|[from] Stealth Rock
+|turn|16
+|c|âSnickered|gg
+|
+|move|p2a: Bisharp|Sucker Punch|p1a: Greninja
+|-resisted|p1a: Greninja
+|-damage|p1a: Greninja|0 fnt
+|faint|p1a: Greninja
+|
+|win|Snickered
+|raw|Ladder updating...
+|raw|dayladavid's rating: 1476 &rarr; <strong>1459<\/strong><br \/>(-17 for losing)
+|raw|Snickered's rating: 1529 &rarr; <strong>1546<\/strong><br \/>(+17 for winning)

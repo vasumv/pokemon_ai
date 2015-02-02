@@ -1,0 +1,569 @@
+|join|Xiba
+|join|zzboss
+|player|p1|Xiba|273
+|player|p2|zzboss|2
+|gametype|singles
+|tier|UU (suspect test)
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Blastoise, M
+|poke|p1|Roserade, M
+|poke|p1|Snorlax, M
+|poke|p1|Arcanine, F
+|poke|p1|Rhyperior, F
+|poke|p1|Cofagrigus, F
+|poke|p2|Cofagrigus, M, shiny
+|poke|p2|Blastoise, F
+|poke|p2|Machamp, F
+|poke|p2|Arcanine, M, shiny
+|poke|p2|Azelf, shiny
+|poke|p2|Registeel, shiny
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Rhyperior|Rhyperior, F|433\/433
+|switch|p2a: Blastoise|Blastoise, F|362\/362
+|turn|1
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, M|324\/324
+|move|p2a: Blastoise|Scald|p1a: Roserade
+|-resisted|p1a: Roserade
+|-damage|p1a: Roserade|295\/324
+|-status|p1a: Roserade|brn
+|
+|-heal|p1a: Roserade|315\/324 brn|[from] item: Black Sludge
+|-damage|p1a: Roserade|275\/324 brn|[from] brn
+|turn|2
+|callback|decision
+|
+|switch|p2a: Registeel|Registeel, shiny|364\/364
+|move|p1a: Roserade|Spikes|p2a: Registeel
+|-sidestart|p2: zzboss|Spikes
+|
+|-heal|p1a: Roserade|295\/324 brn|[from] item: Black Sludge
+|-damage|p1a: Roserade|255\/324 brn|[from] brn
+|turn|3
+|callback|decision
+|
+|switch|p1a: Arcanine|Arcanine, F|383\/383
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Registeel
+|-fail|p2a: Registeel|unboost|[from] ability: Clear Body|[of] p2a: Registeel
+|move|p2a: Registeel|Thunder Wave|p1a: Arcanine
+|-status|p1a: Arcanine|par
+|
+|turn|4
+|callback|decision
+|
+|switch|p2a: Blastoise|Blastoise, F|362\/362
+|-damage|p2a: Blastoise|317\/362|[from] Spikes
+|switch|p1a: Roserade|Roserade, M|255\/324
+|
+|-heal|p1a: Roserade|275\/324|[from] item: Black Sludge
+|-heal|p2a: Blastoise|339\/362|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p2a: Arcanine|Arcanine, M, shiny|384\/384
+|-damage|p2a: Arcanine|336\/384|[from] Spikes
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Roserade
+|-unboost|p1a: Roserade|atk|1
+|move|p1a: Roserade|Giga Drain|p2a: Arcanine
+|-resisted|p2a: Arcanine
+|-damage|p2a: Arcanine|270\/384
+|-heal|p1a: Roserade|308\/324|[from] drain|[of] p2a: Arcanine
+|
+|-heal|p1a: Roserade|324\/324|[from] item: Black Sludge
+|turn|6
+|callback|decision
+|
+|switch|p1a: Rhyperior|Rhyperior, F|433\/433
+|move|p2a: Arcanine|Wild Charge|p1a: Rhyperior
+|-immune|p1a: Rhyperior|[msg]
+|
+|turn|7
+|callback|decision
+|
+|move|p2a: Arcanine|Close Combat|p1a: Rhyperior
+|-supereffective|p1a: Rhyperior
+|-damage|p1a: Rhyperior|226\/433
+|-unboost|p2a: Arcanine|def|1
+|-unboost|p2a: Arcanine|spd|1
+|-damage|p2a: Arcanine|232\/384|[from] item: Life Orb
+|move|p1a: Rhyperior|Stealth Rock|p2a: Arcanine
+|-sidestart|p2: zzboss|move: Stealth Rock
+|
+|-heal|p1a: Rhyperior|253\/433|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p2a: Machamp|Machamp, F|384\/384
+|-damage|p2a: Machamp|336\/384|[from] Spikes
+|-damage|p2a: Machamp|312\/384|[from] Stealth Rock
+|switch|p1a: Arcanine|Arcanine, F|383\/383 par
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Machamp
+|-unboost|p2a: Machamp|atk|1
+|
+|turn|9
+|callback|decision
+|
+|switch|p1a: Cofagrigus|Cofagrigus, F|319\/319
+|move|p2a: Machamp|Stone Edge|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|234\/319
+|
+|-heal|p1a: Cofagrigus|253\/319|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, M|324\/324
+|move|p2a: Machamp|Stone Edge|p1a: Roserade
+|-damage|p1a: Roserade|136\/324
+|
+|-heal|p1a: Roserade|156\/324|[from] item: Black Sludge
+|turn|11
+|callback|decision
+|
+|switch|p1a: Arcanine|Arcanine, F|383\/383 par
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Machamp
+|-unboost|p2a: Machamp|atk|1
+|switch|p2a: Registeel|Registeel, shiny|364\/364
+|-damage|p2a: Registeel|342\/364|[from] Stealth Rock
+|-damage|p2a: Registeel|297\/364|[from] Spikes
+|
+|-heal|p2a: Registeel|319\/364|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p1a: Rhyperior|Rhyperior, F|253\/433
+|move|p2a: Registeel|Counter|p1a: Rhyperior
+|-fail|p1a: Rhyperior
+|
+|-heal|p2a: Registeel|341\/364|[from] item: Leftovers
+|-heal|p1a: Rhyperior|280\/433|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: Registeel|Iron Head|p1a: Rhyperior
+|-supereffective|p1a: Rhyperior
+|-damage|p1a: Rhyperior|181\/433
+|move|p1a: Rhyperior|Dragon Tail|p2a: Registeel
+|-resisted|p2a: Registeel
+|-damage|p2a: Registeel|318\/364
+|drag|p2a: Blastoise|Blastoise, F|339\/362
+|-damage|p2a: Blastoise|294\/362|[from] Spikes
+|-damage|p2a: Blastoise|249\/362|[from] Stealth Rock
+|
+|-heal|p2a: Blastoise|271\/362|[from] item: Leftovers
+|-heal|p1a: Rhyperior|208\/433|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, M|156\/324
+|move|p2a: Blastoise|Foresight|p1a: Roserade
+|-start|p1a: Roserade|Foresight
+|
+|-heal|p1a: Roserade|176\/324|[from] item: Black Sludge
+|-heal|p2a: Blastoise|293\/362|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1a: Roserade|Giga Drain|p2a: Blastoise
+|-supereffective|p2a: Blastoise
+|-damage|p2a: Blastoise|113\/362
+|-heal|p1a: Roserade|266\/324|[from] drain|[of] p2a: Blastoise
+|move|p2a: Blastoise|Rapid Spin|p1a: Roserade
+|-damage|p1a: Roserade|243\/324
+|-sideend|p2: zzboss|Spikes|[from] move: Rapid Spin|[of] p2a: Blastoise
+|-sideend|p2: zzboss|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Blastoise
+|
+|-heal|p1a: Roserade|263\/324|[from] item: Black Sludge
+|-heal|p2a: Blastoise|135\/362|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p2a: Arcanine|Arcanine, M, shiny|232\/384
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Roserade
+|-unboost|p1a: Roserade|atk|1
+|move|p1a: Roserade|Spikes|p2a: Arcanine
+|-sidestart|p2: zzboss|Spikes
+|
+|-heal|p1a: Roserade|283\/324|[from] item: Black Sludge
+|turn|17
+|callback|decision
+|
+|switch|p1a: Arcanine|Arcanine, F|383\/383 par
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Arcanine
+|-unboost|p2a: Arcanine|atk|1
+|move|p2a: Arcanine|Close Combat|p1a: Arcanine
+|-damage|p1a: Arcanine|289\/383 par
+|-unboost|p2a: Arcanine|def|1
+|-unboost|p2a: Arcanine|spd|1
+|-damage|p2a: Arcanine|194\/384|[from] item: Life Orb
+|
+|-heal|p1a: Arcanine|312\/383 par|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|switch|p2a: Blastoise|Blastoise, F|135\/362
+|-damage|p2a: Blastoise|90\/362|[from] Spikes
+|cant|p1a: Arcanine|par
+|
+|-heal|p2a: Blastoise|112\/362|[from] item: Leftovers
+|-heal|p1a: Arcanine|335\/383 par|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, M|283\/324
+|move|p2a: Blastoise|Scald|p1a: Roserade
+|-resisted|p1a: Roserade
+|-damage|p1a: Roserade|239\/324
+|
+|-heal|p1a: Roserade|259\/324|[from] item: Black Sludge
+|-heal|p2a: Blastoise|134\/362|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|switch|p2a: Azelf|Azelf, shiny|292\/292
+|move|p1a: Roserade|Aromatherapy|p1a: Roserade
+|-cureteam|p1a: Roserade|[from] move: Aromatherapy
+|
+|-heal|p1a: Roserade|279\/324|[from] item: Black Sludge
+|turn|21
+|callback|decision
+|
+|switch|p1a: Snorlax|Snorlax, M|497\/497
+|move|p2a: Azelf|Stealth Rock|p1a: Snorlax
+|-sidestart|p1: Xiba|move: Stealth Rock
+|
+|turn|22
+|callback|decision
+|
+|switch|p2a: Machamp|Machamp, F|312\/384
+|-damage|p2a: Machamp|264\/384|[from] Spikes
+|move|p1a: Snorlax|Body Slam|p2a: Machamp
+|-damage|p2a: Machamp|144\/384
+|-status|p2a: Machamp|par
+|
+|turn|23
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M|362\/362
+|-damage|p1a: Blastoise|317\/362|[from] Stealth Rock
+|move|p2a: Machamp|DynamicPunch|p1a: Blastoise
+|-damage|p1a: Blastoise|130\/362
+|-start|p1a: Blastoise|confusion
+|
+|-heal|p1a: Blastoise|152\/362|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|switch|p1a: Cofagrigus|Cofagrigus, F|253\/319
+|-damage|p1a: Cofagrigus|214\/319|[from] Stealth Rock
+|move|p2a: Machamp|DynamicPunch|p1a: Cofagrigus
+|-immune|p1a: Cofagrigus|[msg]
+|
+|-heal|p1a: Cofagrigus|233\/319|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|switch|p2a: Azelf|Azelf, shiny|292\/292
+|move|p1a: Cofagrigus|Nasty Plot|p1a: Cofagrigus
+|-boost|p1a: Cofagrigus|spa|2
+|
+|-heal|p1a: Cofagrigus|252\/319|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|move|p2a: Azelf|Psychic|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|45\/319
+|-unboost|p1a: Cofagrigus|spd|1
+|-damage|p2a: Azelf|263\/292|[from] item: Life Orb
+|move|p1a: Cofagrigus|Trick Room|p1a: Cofagrigus
+|-fieldstart|move: Trick Room|[of] p1a: Cofagrigus
+|
+|-heal|p1a: Cofagrigus|64\/319|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|switch|p2a: Blastoise|Blastoise, F|134\/362
+|-damage|p2a: Blastoise|89\/362|[from] Spikes
+|move|p1a: Cofagrigus|Shadow Ball|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|-heal|p1a: Cofagrigus|83\/319|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Machamp|Machamp, F|144\/384 par
+|-damage|p2a: Machamp|96\/384 par|[from] Spikes
+|turn|28
+|callback|decision
+|
+|move|p2a: Machamp|Stone Edge|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|0 fnt
+|faint|p1a: Cofagrigus
+|
+|callback|decision
+|
+|switch|p1a: Arcanine|Arcanine, F|335\/383
+|-damage|p1a: Arcanine|240\/383|[from] Stealth Rock
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Machamp
+|-unboost|p2a: Machamp|atk|1
+|turn|29
+|callback|decision
+|
+|move|p1a: Arcanine|ExtremeSpeed|p2a: Machamp
+|-damage|p2a: Machamp|7\/384 par
+|move|p2a: Machamp|Stone Edge|p1a: Arcanine
+|-supereffective|p1a: Arcanine
+|-damage|p1a: Arcanine|48\/383
+|
+|-heal|p1a: Arcanine|71\/383|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|move|p1a: Arcanine|ExtremeSpeed|p2a: Machamp
+|-damage|p2a: Machamp|0 fnt
+|faint|p2a: Machamp
+|
+|-heal|p1a: Arcanine|94\/383|[from] item: Leftovers
+|-fieldend|move: Trick Room
+|callback|decision
+|
+|switch|p2a: Azelf|Azelf, shiny|263\/292
+|turn|31
+|callback|decision
+|
+|switch|p1a: Snorlax|Snorlax, M|497\/497
+|-damage|p1a: Snorlax|435\/497|[from] Stealth Rock
+|move|p2a: Azelf|Psychic|p1a: Snorlax
+|-damage|p1a: Snorlax|287\/497
+|-damage|p2a: Azelf|234\/292|[from] item: Life Orb
+|
+|-heal|p1a: Snorlax|318\/497|[from] item: Leftovers
+|turn|32
+|callback|decision
+|
+|switch|p2a: Registeel|Registeel, shiny|318\/364
+|-damage|p2a: Registeel|273\/364|[from] Spikes
+|move|p1a: Snorlax|Whirlwind|p2a: Registeel
+|drag|p2a: Cofagrigus|Cofagrigus, M, shiny|320\/320
+|-damage|p2a: Cofagrigus|280\/320|[from] Spikes
+|
+|-heal|p1a: Snorlax|349\/497|[from] item: Leftovers
+|turn|33
+|callback|decision
+|
+|move|p2a: Cofagrigus|Nasty Plot|p2a: Cofagrigus
+|-boost|p2a: Cofagrigus|spa|2
+|move|p1a: Snorlax|Whirlwind|p2a: Cofagrigus
+|drag|p2a: Registeel|Registeel, shiny|273\/364
+|-damage|p2a: Registeel|228\/364|[from] Spikes
+|
+|-heal|p2a: Registeel|250\/364|[from] item: Leftovers
+|-heal|p1a: Snorlax|380\/497|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M|152\/362
+|-damage|p1a: Blastoise|107\/362|[from] Stealth Rock
+|move|p2a: Registeel|Iron Head|p1a: Blastoise
+|-resisted|p1a: Blastoise
+|-damage|p1a: Blastoise|78\/362
+|
+|-heal|p1a: Blastoise|100\/362|[from] item: Leftovers
+|-heal|p2a: Registeel|272\/364|[from] item: Leftovers
+|turn|35
+|callback|decision
+|
+|move|p1a: Blastoise|Scald|p2a: Registeel
+|-damage|p2a: Registeel|203\/364
+|move|p2a: Registeel|Thunder Wave|p1a: Blastoise
+|-status|p1a: Blastoise|par
+|
+|-heal|p2a: Registeel|225\/364|[from] item: Leftovers
+|-heal|p1a: Blastoise|122\/362 par|[from] item: Leftovers
+|turn|36
+|callback|decision
+|
+|move|p2a: Registeel|Iron Head|p1a: Blastoise
+|-resisted|p1a: Blastoise
+|-damage|p1a: Blastoise|97\/362 par
+|move|p1a: Blastoise|Rest|p1a: Blastoise
+|-status|p1a: Blastoise|slp
+|-heal|p1a: Blastoise|362\/362 slp|[silent]
+|-status|p1a: Blastoise|slp|[from] move: Rest
+|
+|-heal|p2a: Registeel|247\/364|[from] item: Leftovers
+|turn|37
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, M|279\/324
+|-damage|p1a: Roserade|239\/324|[from] Stealth Rock
+|switch|p2a: Azelf|Azelf, shiny|234\/292
+|
+|-heal|p1a: Roserade|259\/324|[from] item: Black Sludge
+|turn|38
+|callback|decision
+|
+|switch|p1a: Snorlax|Snorlax, M|380\/497
+|-damage|p1a: Snorlax|318\/497|[from] Stealth Rock
+|move|p2a: Azelf|Psychic|p1a: Snorlax
+|-damage|p1a: Snorlax|154\/497
+|-damage|p2a: Azelf|205\/292|[from] item: Life Orb
+|
+|-heal|p1a: Snorlax|185\/497|[from] item: Leftovers
+|turn|39
+|callback|decision
+|
+|switch|p2a: Cofagrigus|Cofagrigus, M, shiny|280\/320
+|-damage|p2a: Cofagrigus|240\/320|[from] Spikes
+|move|p1a: Snorlax|Rest|p1a: Snorlax
+|-status|p1a: Snorlax|slp
+|-heal|p1a: Snorlax|497\/497 slp|[silent]
+|-status|p1a: Snorlax|slp|[from] move: Rest
+|
+|turn|40
+|callback|decision
+|
+|cant|p1a: Snorlax|slp
+|move|p1a: Snorlax|Sleep Talk|p1a: Snorlax
+|move|p1a: Snorlax|Rest|p1a: Snorlax|[from]Sleep Talk
+|-fail|p1a: Snorlax
+|move|p2a: Cofagrigus|Trick Room|p2a: Cofagrigus
+|-fieldstart|move: Trick Room|[of] p2a: Cofagrigus
+|
+|turn|41
+|callback|decision
+|
+|move|p2a: Cofagrigus|Nasty Plot|p2a: Cofagrigus
+|-boost|p2a: Cofagrigus|spa|2
+|cant|p1a: Snorlax|slp
+|move|p1a: Snorlax|Sleep Talk|p1a: Snorlax
+|move|p1a: Snorlax|Whirlwind|p2a: Cofagrigus|[from]Sleep Talk
+|drag|p2a: Registeel|Registeel, shiny|247\/364
+|-damage|p2a: Registeel|202\/364|[from] Spikes
+|
+|-heal|p2a: Registeel|224\/364|[from] item: Leftovers
+|turn|42
+|callback|decision
+|
+|-curestatus|p1a: Snorlax|slp
+|move|p1a: Snorlax|Body Slam|p2a: Registeel
+|-resisted|p2a: Registeel
+|-damage|p2a: Registeel|188\/364
+|move|p2a: Registeel|Thunder Wave|p1a: Snorlax
+|-status|p1a: Snorlax|par
+|
+|-heal|p2a: Registeel|210\/364|[from] item: Leftovers
+|turn|43
+|callback|decision
+|
+|switch|p2a: Arcanine|Arcanine, M, shiny|194\/384
+|-damage|p2a: Arcanine|146\/384|[from] Spikes
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Snorlax
+|-unboost|p1a: Snorlax|atk|1
+|cant|p1a: Snorlax|par
+|
+|turn|44
+|callback|decision
+|
+|move|p1a: Snorlax|Body Slam|p2a: Arcanine
+|-damage|p2a: Arcanine|62\/384
+|move|p2a: Arcanine|Close Combat|p1a: Snorlax
+|-supereffective|p1a: Snorlax
+|-damage|p1a: Snorlax|112\/497 par
+|-unboost|p2a: Arcanine|def|1
+|-unboost|p2a: Arcanine|spd|1
+|-damage|p2a: Arcanine|24\/384|[from] item: Life Orb
+|
+|-heal|p1a: Snorlax|143\/497 par|[from] item: Leftovers
+|-fieldend|move: Trick Room
+|turn|45
+|callback|decision
+|
+|switch|p1a: Arcanine|Arcanine, F|94\/383
+|-damage|p1a: Arcanine|0 fnt|[from] Stealth Rock
+|faint|p1a: Arcanine
+|move|p2a: Arcanine|Close Combat|p1: Arcanine|[notarget]
+|-notarget
+|
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M|362\/362 slp
+|-damage|p1a: Blastoise|317\/362 slp|[from] Stealth Rock
+|turn|46
+|callback|decision
+|
+|move|p2a: Arcanine|Close Combat|p1a: Blastoise
+|-damage|p1a: Blastoise|181\/362 slp
+|-unboost|p2a: Arcanine|def|1
+|-unboost|p2a: Arcanine|spd|1
+|-damage|p2a: Arcanine|0 fnt|[from] item: Life Orb
+|faint|p2a: Arcanine
+|cant|p1a: Blastoise|slp
+|
+|-heal|p1a: Blastoise|203\/362 slp|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Azelf|Azelf, shiny|205\/292
+|turn|47
+|callback|decision
+|
+|move|p2a: Azelf|Thunderbolt|p1a: Blastoise
+|-supereffective|p1a: Blastoise
+|-damage|p1a: Blastoise|0 fnt
+|-damage|p2a: Azelf|176\/292|[from] item: Life Orb
+|faint|p1a: Blastoise
+|
+|callback|decision
+|
+|switch|p1a: Rhyperior|Rhyperior, F|208\/433
+|-damage|p1a: Rhyperior|181\/433|[from] Stealth Rock
+|turn|48
+|callback|decision
+|
+|move|p2a: Azelf|Psychic|p1a: Rhyperior
+|-damage|p1a: Rhyperior|0 fnt
+|-damage|p2a: Azelf|147\/292|[from] item: Life Orb
+|faint|p1a: Rhyperior
+|
+|callback|decision
+|
+|switch|p1a: Snorlax|Snorlax, M|143\/497 par
+|-damage|p1a: Snorlax|81\/497 par|[from] Stealth Rock
+|turn|49
+|callback|decision
+|
+|move|p2a: Azelf|Psychic|p1a: Snorlax
+|-damage|p1a: Snorlax|0 fnt
+|-damage|p2a: Azelf|118\/292|[from] item: Life Orb
+|faint|p1a: Snorlax
+|
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, M|259\/324
+|-damage|p1a: Roserade|219\/324|[from] Stealth Rock
+|turn|50
+|callback|decision
+|
+|move|p2a: Azelf|Psychic|p1a: Roserade
+|-supereffective|p1a: Roserade
+|-damage|p1a: Roserade|0 fnt
+|-damage|p2a: Azelf|89\/292|[from] item: Life Orb
+|faint|p1a: Roserade
+|
+|win|zzboss
+|raw|Ladder updating...
+|raw|Xiba's rating: 1670 &rarr; <strong>1665<\/strong><br \/>(-5 for losing)
+|raw|zzboss's rating: 1244 &rarr; <strong>1457<\/strong><br \/>(+213 for winning)
+|leave|Xiba
+|player|p1

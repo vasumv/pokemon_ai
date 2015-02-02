@@ -1,0 +1,108 @@
+|join|FelixE
+|join|SoaringHawk
+|player|p1|FelixE|144
+|player|p2|SoaringHawk|136
+|gametype|singles
+|tier|OU Monotype
+|rated
+|rule|Same Type Clause: Pokemon in a team must share a type
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Gengar, F
+|poke|p1|Froslass, F
+|poke|p1|Sableye, M
+|poke|p1|Chandelure, F
+|poke|p1|Jellicent, M
+|poke|p1|Golurk
+|poke|p2|Eelektross, M
+|poke|p2|Galvantula, F
+|poke|p2|Rotom-Wash
+|poke|p2|Electivire, M, shiny
+|poke|p2|Magnezone, shiny
+|poke|p2|Raikou, shiny
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Froslass|Froslass, F|343\/343
+|switch|p2a: Eelektross|Eelektross, M|360\/360
+|turn|1
+|callback|decision
+|
+|move|p1a: Froslass|Spikes|p2a: Eelektross
+|-sidestart|p2: SoaringHawk|Spikes
+|move|p2a: Eelektross|Flamethrower|p1a: Froslass
+|-supereffective|p1a: Froslass
+|-damage|p1a: Froslass|53\/343
+|
+|-heal|p1a: Froslass|74\/343|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p1a: Chandelure|Chandelure, F|261\/261
+|move|p2a: Eelektross|Volt Switch|p1a: Chandelure
+|-damage|p1a: Chandelure|135\/261
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|241\/241
+|
+|turn|3
+|callback|decision
+|
+|switch|p1a: Jellicent|Jellicent, M|403\/403
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Jellicent
+|-supereffective|p1a: Jellicent
+|-damage|p1a: Jellicent|173\/403
+|callback|decision
+|chat|SoaringHawk|troll lvl: xpert
+|
+|switch|p2a: Galvantula|Galvantula, F|281\/281
+|-damage|p2a: Galvantula|246\/281|[from] Spikes
+|
+|-heal|p1a: Jellicent|198\/403|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p1a: Jellicent|Protect|p1a: Jellicent
+|-singleturn|p1a: Jellicent|Protect
+|move|p2a: Galvantula|Volt Switch|p1a: Jellicent
+|-activate|p1a: Jellicent|Protect
+|
+|-heal|p1a: Jellicent|223\/403|[from] item: Leftovers
+|turn|5
+|callback|decision
+|chat|SoaringHawk|lOL
+|
+|switch|p1a: Golurk|Golurk|382\/382
+|move|p2a: Galvantula|Giga Drain|p1a: Golurk
+|-supereffective|p1a: Golurk
+|-damage|p1a: Golurk|132\/382
+|-heal|p2a: Galvantula|281\/281|[from] drain|[of] p1a: Golurk
+|-damage|p2a: Galvantula|253\/281|[from] item: Life Orb
+|
+|-heal|p1a: Golurk|155\/382|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Galvantula|Giga Drain|p1a: Golurk
+|-supereffective|p1a: Golurk
+|-damage|p1a: Golurk|0 fnt
+|-heal|p2a: Galvantula|281\/281|[from] drain|[of] p1a: Golurk
+|-damage|p2a: Galvantula|253\/281|[from] item: Life Orb
+|faint|p1a: Golurk
+|
+|callback|decision
+|-message|FelixE forfeited.
+|
+|win|SoaringHawk
+|raw|Ladder updating...
+|raw|FelixE's rating: 1283 &rarr; <strong>1279<\/strong><br \/>(-4 for losing)
+|raw|SoaringHawk's rating: 1649 &rarr; <strong>1650<\/strong><br \/>(+1 for winning)
+|leave|FelixE
+|player|p1

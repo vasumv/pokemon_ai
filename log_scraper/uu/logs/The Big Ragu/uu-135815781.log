@@ -1,0 +1,271 @@
+|join|The Big Ragu
+|join|focon23
+|player|p1|The Big Ragu|126
+|player|p2|focon23|262
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Alakazam, F
+|poke|p1|Blastoise, M
+|poke|p1|Victini
+|poke|p1|Blissey, F
+|poke|p1|Lucario, M
+|poke|p1|Honchkrow, M
+|poke|p2|Eelektross, M, shiny
+|poke|p2|Gligar, M
+|poke|p2|Tentacruel, F
+|poke|p2|Forretress, M
+|poke|p2|Honchkrow, F
+|poke|p2|Machamp, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit 3 pokemon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Blastoise|Blastoise, M|362\/362
+|switch|p2a: Machamp|Machamp, M|367\/367
+|turn|1
+|
+|detailschange|p1a: Blastoise|Blastoise-Mega, M
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p1a: Blastoise|Scald|p2a: Machamp
+|-damage|p2a: Machamp|259\/367
+|move|p2a: Machamp|Dynamic Punch|p1a: Blastoise
+|-damage|p1a: Blastoise|214\/362
+|-start|p1a: Blastoise|confusion
+|
+|turn|2
+|
+|switch|p2a: Tentacruel|Tentacruel, F|364\/364
+|-activate|p1a: Blastoise|confusion
+|-damage|p1a: Blastoise|189\/362|[from] confusion
+|
+|turn|3
+|
+|switch|p1a: Honchkrow|Honchkrow, M|341\/341
+|move|p2a: Tentacruel|Toxic|p1a: Honchkrow
+|-status|p1a: Honchkrow|tox
+|
+|-damage|p1a: Honchkrow|320\/341 tox|[from] psn
+|turn|4
+|
+|move|p1a: Honchkrow|Brave Bird|p2a: Tentacruel
+|-damage|p2a: Tentacruel|16\/364
+|-damage|p1a: Honchkrow|205\/341 tox|[from] recoil|[of] p2a: Tentacruel
+|-damage|p1a: Honchkrow|171\/341 tox|[from] item: Life Orb
+|move|p2a: Tentacruel|Knock Off|p1a: Honchkrow
+|-crit|p1a: Honchkrow
+|-resisted|p1a: Honchkrow
+|-damage|p1a: Honchkrow|103\/341 tox
+|-enditem|p1a: Honchkrow|Life Orb|[from] move: Knock Off|[of] p2a: Tentacruel
+|
+|-heal|p2a: Tentacruel|38\/364|[from] item: Black Sludge
+|-damage|p1a: Honchkrow|61\/341 tox|[from] psn
+|turn|5
+|
+|move|p1a: Honchkrow|Pursuit|p2a: Tentacruel
+|-damage|p2a: Tentacruel|0 fnt
+|faint|p2a: Tentacruel
+|-boost|p1a: Honchkrow|atk|1|[from] ability: Moxie
+|
+|-damage|p1a: Honchkrow|0 fnt|[from] psn
+|faint|p1a: Honchkrow
+|
+|switch|p1a: Victini|Victini|341\/341
+|switch|p2a: Forretress|Forretress, M|354\/354
+|turn|6
+|
+|switch|p2a: Gligar|Gligar, M|334\/334
+|move|p1a: Victini|V-create|p2a: Gligar
+|-damage|p2a: Gligar|199\/334
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|
+|turn|7
+|
+|switch|p1a: Lucario|Lucario, M|281\/281
+|move|p2a: Gligar|Knock Off|p1a: Lucario
+|-resisted|p1a: Lucario
+|-damage|p1a: Lucario|241\/281
+|-boost|p1a: Lucario|atk|1|[from] ability: Justified
+|-enditem|p1a: Lucario|Life Orb|[from] move: Knock Off|[of] p2a: Gligar
+|
+|turn|8
+|
+|switch|p2a: Forretress|Forretress, M|354\/354
+|move|p1a: Lucario|Ice Punch|p2a: Forretress
+|-resisted|p2a: Forretress
+|-damage|p2a: Forretress|315\/354
+|-enditem|p2a: Forretress|Red Card|[of] p1a: Lucario
+|drag|p1a: Victini|Victini|341\/341
+|
+|turn|9
+|
+|move|p1a: Victini|V-create|p2a: Forretress
+|-supereffective|p2a: Forretress
+|-damage|p2a: Forretress|0 fnt
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|faint|p2a: Forretress
+|
+|
+|switch|p2a: Honchkrow|Honchkrow, F|382\/382
+|turn|10
+|
+|move|p2a: Honchkrow|Pursuit|p1a: Victini|[from]Pursuit
+|-supereffective|p1a: Victini
+|-damage|p1a: Victini|0 fnt
+|faint|p1a: Victini
+|-boost|p2a: Honchkrow|atk|1|[from] ability: Moxie
+|
+|
+|switch|p1a: Alakazam|Alakazam, F|251\/251
+|turn|11
+|
+|move|p2a: Honchkrow|Sucker Punch|p1a: Alakazam
+|-supereffective|p1a: Alakazam
+|-enditem|p1a: Alakazam|Focus Sash
+|-damage|p1a: Alakazam|1\/251
+|move|p1a: Alakazam|Focus Blast|p2a: Honchkrow|[miss]
+|-miss|p1a: Alakazam|p2a: Honchkrow
+|
+|turn|12
+|
+|move|p2a: Honchkrow|Sucker Punch|p1a: Alakazam
+|-supereffective|p1a: Alakazam
+|-damage|p1a: Alakazam|0 fnt
+|faint|p1a: Alakazam
+|-boost|p2a: Honchkrow|atk|1|[from] ability: Moxie
+|
+|
+|switch|p1a: Lucario|Lucario, M|241\/281
+|turn|13
+|
+|move|p2a: Honchkrow|Sucker Punch|p1a: Lucario
+|-resisted|p1a: Lucario
+|-damage|p1a: Lucario|27\/281
+|-boost|p1a: Lucario|atk|1|[from] ability: Justified
+|move|p1a: Lucario|Close Combat|p2a: Honchkrow
+|-damage|p2a: Honchkrow|0 fnt
+|-unboost|p1a: Lucario|def|1
+|-unboost|p1a: Lucario|spd|1
+|faint|p2a: Honchkrow
+|
+|
+|switch|p2a: Machamp|Machamp, M|259\/367
+|turn|14
+|
+|switch|p1a: Blastoise|Blastoise-Mega, M|189\/362
+|move|p2a: Machamp|Bullet Punch|p1a: Blastoise
+|-resisted|p1a: Blastoise
+|-damage|p1a: Blastoise|170\/362
+|
+|turn|15
+|
+|switch|p2a: Gligar|Gligar, M|199\/334
+|move|p1a: Blastoise|Scald|p2a: Gligar
+|-supereffective|p2a: Gligar
+|-damage|p2a: Gligar|0 fnt
+|faint|p2a: Gligar
+|
+|
+|switch|p2a: Eelektross|Eelektross, M, shiny|367\/367
+|turn|16
+|
+|switch|p1a: Blissey|Blissey, F|652\/652
+|move|p2a: Eelektross|Thunderbolt|p1a: Blissey
+|-damage|p1a: Blissey|531\/652
+|-damage|p2a: Eelektross|331\/367|[from] item: Life Orb
+|
+|-heal|p1a: Blissey|571\/652|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Blissey|Toxic|p2a: Eelektross
+|-status|p2a: Eelektross|tox
+|move|p2a: Eelektross|U-turn|p1a: Blissey
+|-damage|p1a: Blissey|427\/652
+|-damage|p2a: Eelektross|295\/367 tox|[from] item: Life Orb
+|
+|switch|p2a: Machamp|Machamp, M|259\/367
+|
+|-heal|p1a: Blissey|467\/652|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Blissey|Protect|p1a: Blissey
+|-singleturn|p1a: Blissey|Protect
+|move|p2a: Machamp|Dynamic Punch|p1a: Blissey
+|-activate|p1a: Blissey|Protect
+|
+|-heal|p1a: Blissey|507\/652|[from] item: Leftovers
+|turn|19
+|
+|move|p2a: Machamp|Dynamic Punch|p1a: Blissey
+|-supereffective|p1a: Blissey
+|-damage|p1a: Blissey|0 fnt
+|faint|p1a: Blissey
+|
+|
+|switch|p1a: Blastoise|Blastoise-Mega, M|170\/362
+|turn|20
+|
+|move|p1a: Blastoise|Scald|p2a: Machamp
+|-damage|p2a: Machamp|141\/367
+|move|p2a: Machamp|Dynamic Punch|p1a: Blastoise
+|-damage|p1a: Blastoise|29\/362
+|-start|p1a: Blastoise|confusion
+|
+|turn|21
+|
+|move|p2a: Machamp|Bullet Punch|p1a: Blastoise
+|-resisted|p1a: Blastoise
+|-damage|p1a: Blastoise|10\/362
+|-activate|p1a: Blastoise|confusion
+|move|p1a: Blastoise|Scald|p2a: Machamp
+|-crit|p2a: Machamp
+|-damage|p2a: Machamp|0 fnt
+|faint|p2a: Machamp
+|
+|
+|switch|p2a: Eelektross|Eelektross, M, shiny|295\/367 tox
+|turn|22
+|
+|-activate|p1a: Blastoise|confusion
+|-damage|p1a: Blastoise|0 fnt|[from] confusion
+|faint|p1a: Blastoise
+|move|p2a: Eelektross|Grass Knot|p1: Blastoise|[notarget]
+|-notarget
+|
+|-damage|p2a: Eelektross|273\/367 tox|[from] psn
+|
+|switch|p1a: Lucario|Lucario, M|27\/281
+|turn|23
+|
+|move|p1a: Lucario|Close Combat|p2a: Eelektross
+|-damage|p2a: Eelektross|38\/367 tox
+|-unboost|p1a: Lucario|def|1
+|-unboost|p1a: Lucario|spd|1
+|move|p2a: Eelektross|Flamethrower|p1a: Lucario
+|-supereffective|p1a: Lucario
+|-damage|p1a: Lucario|0 fnt
+|-damage|p2a: Eelektross|2\/367 tox|[from] item: Life Orb
+|faint|p1a: Lucario
+|
+|win|focon23
+|raw|Ladder updating...
+|raw|The Big Ragu's rating: 1379 &rarr; <strong>1356<\/strong><br \/>(-23 for losing)
+|raw|focon23's rating: 1322 &rarr; <strong>1345<\/strong><br \/>(+23 for winning)
+|chat|The Big Ragu|gg
+|chat|focon23|gg
+|leave|The Big Ragu
+|player|p1

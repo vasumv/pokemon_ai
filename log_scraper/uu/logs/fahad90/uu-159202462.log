@@ -1,0 +1,228 @@
+|join|dancingking
+|join|fahad90
+|player|p1|dancingking|213
+|player|p2|fahad90|37
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Ninjask, F
+|poke|p1|Nidoqueen, F
+|poke|p1|Heracross, M
+|poke|p1|Blastoise, F
+|poke|p1|Hydreigon, F
+|poke|p1|Toxicroak, M
+|poke|p2|Houndoom, M
+|poke|p2|Blissey, F
+|poke|p2|Mew
+|poke|p2|Mienshao, F
+|poke|p2|Jellicent, M
+|poke|p2|Roserade, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Nidoqueen|Nidoqueen, F|321\/321
+|switch|p2a: Mew|Mew|404\/404
+|turn|1
+|
+|move|p2a: Mew|Knock Off|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|229\/321
+|-enditem|p1a: Nidoqueen|Life Orb|[from] move: Knock Off|[of] p2a: Mew
+|move|p1a: Nidoqueen|Sludge Wave|p2a: Mew
+|-damage|p2a: Mew|235\/404
+|
+|-heal|p2a: Mew|260\/404|[from] item: Leftovers
+|turn|2
+|
+|move|p2a: Mew|Stealth Rock|p1a: Nidoqueen
+|-sidestart|p1: dancingking|move: Stealth Rock
+|move|p1a: Nidoqueen|Stealth Rock|p2a: Mew
+|-sidestart|p2: fahad90|move: Stealth Rock
+|
+|-heal|p2a: Mew|285\/404|[from] item: Leftovers
+|turn|3
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|-damage|p2a: Blissey|625\/714|[from] Stealth Rock
+|move|p1a: Nidoqueen|Earth Power|p2a: Blissey
+|-damage|p2a: Blissey|507\/714
+|
+|-heal|p2a: Blissey|551\/714|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Heracross|Heracross, M|301\/301
+|-damage|p1a: Heracross|264\/301|[from] Stealth Rock
+|move|p2a: Blissey|Thunder Wave|p1a: Heracross
+|-status|p1a: Heracross|par
+|
+|-heal|p2a: Blissey|595\/714|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Jellicent|Jellicent, M|404\/404
+|-damage|p2a: Jellicent|354\/404|[from] Stealth Rock
+|move|p1a: Heracross|Knock Off|p2a: Jellicent
+|-supereffective|p2a: Jellicent
+|-damage|p2a: Jellicent|0 fnt
+|-enditem|p2a: Jellicent|Leftovers|[from] move: Knock Off|[of] p1a: Heracross
+|faint|p2a: Jellicent
+|
+|
+|switch|p2a: Roserade|Roserade, F|324\/324
+|-damage|p2a: Roserade|284\/324|[from] Stealth Rock
+|turn|6
+|
+|move|p2a: Roserade|Spikes|p1a: Heracross
+|-sidestart|p1: dancingking|Spikes
+|move|p1a: Heracross|Knock Off|p2a: Roserade
+|-damage|p2a: Roserade|5\/324
+|-enditem|p2a: Roserade|Black Sludge|[from] move: Knock Off|[of] p1a: Heracross
+|
+|turn|7
+|
+|move|p2a: Roserade|Giga Drain|p1a: Heracross
+|-resisted|p1a: Heracross
+|-damage|p1a: Heracross|204\/301 par
+|-heal|p2a: Roserade|35\/324|[from] drain|[of] p1a: Heracross
+|move|p1a: Heracross|Knock Off|p2a: Roserade
+|-damage|p2a: Roserade|0 fnt
+|faint|p2a: Roserade
+|
+|
+|switch|p2a: Mienshao|Mienshao, F|271\/271
+|-damage|p2a: Mienshao|255\/271|[from] Stealth Rock
+|turn|8
+|
+|move|p2a: Mienshao|Aerial Ace|p1a: Heracross
+|-supereffective|p1a: Heracross
+|-damage|p1a: Heracross|0 fnt
+|faint|p1a: Heracross
+|
+|
+|switch|p1a: Blastoise|Blastoise, F|299\/299
+|-damage|p1a: Blastoise|262\/299|[from] Stealth Rock
+|-damage|p1a: Blastoise|225\/299|[from] Spikes
+|turn|9
+|
+|switch|p2a: Blissey|Blissey, F|595\/714
+|-damage|p2a: Blissey|506\/714|[from] Stealth Rock
+|detailschange|p1a: Blastoise|Blastoise-Mega, F
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p1a: Blastoise|Rapid Spin|p2a: Blissey
+|-crit|p2a: Blissey
+|-damage|p2a: Blissey|463\/714
+|-sideend|p1: dancingking|Spikes|[from] move: Rapid Spin|[of] p1a: Blastoise
+|-sideend|p1: dancingking|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Blastoise
+|
+|-heal|p2a: Blissey|507\/714|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Limitless|Ninjask, F|325\/325
+|move|p2a: Blissey|Thunder Wave|p1a: Limitless
+|-status|p1a: Limitless|par
+|
+|-heal|p2a: Blissey|551\/714|[from] item: Leftovers
+|turn|11
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Limitless
+|-damage|p1a: Limitless|225\/325 par
+|cant|p1a: Limitless|par
+|
+|-heal|p2a: Blissey|595\/714|[from] item: Leftovers
+|-heal|p1a: Limitless|245\/325 par|[from] item: Leftovers
+|-boost|p1a: Limitless|spe|1|[from] ability: Speed Boost
+|turn|12
+|
+|switch|p2a: Mienshao|Mienshao, F|255\/271
+|-damage|p2a: Mienshao|239\/271|[from] Stealth Rock
+|cant|p1a: Limitless|par
+|
+|-heal|p1a: Limitless|265\/325 par|[from] item: Leftovers
+|-boost|p1a: Limitless|spe|1|[from] ability: Speed Boost
+|turn|13
+|c|âdancingking|jesus
+|c|âdancingking|zzzzzzzzzzzz
+|
+|switch|p1a: Blastoise|Blastoise-Mega, F|225\/299
+|move|p2a: Mienshao|Aerial Ace|p1a: Blastoise
+|-crit|p1a: Blastoise
+|-damage|p1a: Blastoise|132\/299
+|
+|turn|14
+|
+|switch|p2a: Blissey|Blissey, F|595\/714
+|-damage|p2a: Blissey|506\/714|[from] Stealth Rock
+|switch|p1a: Limitless|Ninjask, F|265\/325 par
+|
+|-heal|p2a: Blissey|550\/714|[from] item: Leftovers
+|-heal|p1a: Limitless|285\/325 par|[from] item: Leftovers
+|turn|15
+|
+|switch|p2a: Houndoom|Houndoom, M|292\/292
+|-damage|p2a: Houndoom|219\/292|[from] Stealth Rock
+|move|p1a: Limitless|Substitute|p1a: Limitless
+|-start|p1a: Limitless|Substitute
+|-damage|p1a: Limitless|204\/325 par
+|
+|-heal|p1a: Limitless|224\/325 par|[from] item: Leftovers
+|-boost|p1a: Limitless|spe|1|[from] ability: Speed Boost
+|turn|16
+|
+|detailschange|p2a: Houndoom|Houndoom-Mega, M
+|message|Houndoom has Mega Evolved into Mega Houndoom!
+|move|p2a: Houndoom|Sunny Day|p2a: Houndoom
+|-weather|SunnyDay
+|move|p1a: Limitless|Baton Pass|p1a: Limitless
+|
+|switch|p1a: Toxicroak|Toxicroak, M|307\/307
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Toxicroak|269\/307|[from] ability: Dry Skin
+|-damage|p2a: Houndoom|183\/292|[from] ability: Solar Power
+|-heal|p1a: Toxicroak|288\/307|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Toxicroak|Earthquake|p2a: Houndoom
+|-supereffective|p2a: Houndoom
+|-damage|p2a: Houndoom|0 fnt
+|faint|p2a: Houndoom
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Toxicroak|250\/307|[from] ability: Dry Skin
+|-heal|p1a: Toxicroak|269\/307|[from] item: Leftovers
+|
+|switch|p2a: Mienshao|Mienshao, F|239\/271
+|-damage|p2a: Mienshao|223\/271|[from] Stealth Rock
+|turn|18
+|
+|move|p2a: Mienshao|Aerial Ace|p1a: Toxicroak
+|-supereffective|p1a: Toxicroak
+|-end|p1a: Toxicroak|Substitute
+|move|p1a: Toxicroak|Gunk Shot|p2a: Mienshao
+|-damage|p2a: Mienshao|0 fnt
+|faint|p2a: Mienshao
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Toxicroak|231\/307|[from] ability: Dry Skin
+|-heal|p1a: Toxicroak|250\/307|[from] item: Leftovers
+|
+|switch|p2a: Mew|Mew|285\/404
+|-damage|p2a: Mew|235\/404|[from] Stealth Rock
+|turn|19
+|-message|fahad90 forfeited.
+|
+|win|dancingking
+|raw|Ladder updating...
+|leave|fahad90
+|player|p2
+|raw|dancingking's rating: 1500 &rarr; <strong>1518<\/strong><br \/>(+18 for winning)
+|raw|fahad90's rating: 1466 &rarr; <strong>1448<\/strong><br \/>(-18 for losing)

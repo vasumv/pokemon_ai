@@ -1,0 +1,248 @@
+|join|SpecsPrimeape
+|join|Tipsy Russian
+|player|p1|SpecsPrimeape|184
+|player|p2|Tipsy Russian|47
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Blissey, F
+|poke|p1|Forretress, M
+|poke|p1|Banette, F
+|poke|p1|Mienshao, M
+|poke|p1|Alomomola, F
+|poke|p1|Roserade, F
+|poke|p2|Whimsicott, F, shiny
+|poke|p2|Raikou
+|poke|p2|Chesnaught, F
+|poke|p2|Nidoqueen, F
+|poke|p2|Mantine, F
+|poke|p2|Azelf
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: I'm a Ghost|Banette, F|300\/300
+|switch|p2a: Whimsicott|Whimsicott, F, shiny|261\/261
+|-item|p2a: Whimsicott|Leftovers|[from] ability: Frisk|[of] p1a: I'm a Ghost|[identify]
+|turn|1
+|
+|detailschange|p1a: I'm a Ghost|Banette-Mega, F
+|message|Banette has Mega Evolved into Mega Banette!
+|move|p2a: Whimsicott|Taunt|p1a: I'm a Ghost
+|-start|p1a: I'm a Ghost|move: Taunt
+|move|p1a: I'm a Ghost|Knock Off|p2a: Whimsicott
+|-resisted|p2a: Whimsicott
+|-damage|p2a: Whimsicott|197\/261
+|-enditem|p2a: Whimsicott|Leftovers|[from] move: Knock Off|[of] p1a: I'm a Ghost
+|
+|turn|2
+|
+|switch|p1a: Bouquet|Roserade, F|324\/324
+|move|p2a: Whimsicott|Leech Seed|p1a: Bouquet
+|-immune|p1a: Bouquet|[msg]
+|
+|turn|3
+|
+|switch|p2a: Chesnaught|Chesnaught, F|358\/358
+|move|p1a: Bouquet|Spikes|p2a: Chesnaught
+|-sidestart|p2: Tipsy Russian|Spikes
+|
+|turn|4
+|
+|switch|p1a: Hazard Removal|Forretress, M|354\/354
+|move|p2a: Chesnaught|Earthquake|p1a: Hazard Removal
+|-damage|p1a: Hazard Removal|259\/354
+|
+|-heal|p1a: Hazard Removal|281\/354|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Nidoqueen|Nidoqueen, F|348\/348
+|-damage|p2a: Nidoqueen|305\/348|[from] Spikes
+|move|p1a: Hazard Removal|Stealth Rock|p2a: Nidoqueen
+|-sidestart|p2: Tipsy Russian|move: Stealth Rock
+|
+|-heal|p1a: Hazard Removal|303\/354|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: Mantine|Mantine, F|334\/334
+|-damage|p2a: Mantine|251\/334|[from] Stealth Rock
+|switch|p1a: Ms Cuddlesworth|Blissey, F|680\/680
+|
+|-heal|p2a: Mantine|271\/334|[from] item: Leftovers
+|turn|7
+|
+|move|p2a: Mantine|Defog|p1a: Ms Cuddlesworth
+|-unboost|p1a: Ms Cuddlesworth|evasion|1
+|-sideend|p2: Tipsy Russian|Spikes|[from] move: Defog|[of] p2a: Mantine
+|-sideend|p2: Tipsy Russian|Stealth Rock|[from] move: Defog|[of] p2a: Mantine
+|move|p1a: Ms Cuddlesworth|Thunder Wave|p2a: Mantine
+|-status|p2a: Mantine|par
+|
+|-heal|p2a: Mantine|291\/334 par|[from] item: Leftovers
+|turn|8
+|
+|switch|p2a: Whimsicott|Whimsicott, F, shiny|197\/261
+|move|p1a: Ms Cuddlesworth|Thunder Wave|p2a: Whimsicott
+|-status|p2a: Whimsicott|par
+|
+|turn|9
+|
+|switch|p1a: Bouquet|Roserade, F|324\/324
+|move|p2a: Whimsicott|Taunt|p1a: Bouquet
+|-start|p1a: Bouquet|move: Taunt
+|
+|turn|10
+|
+|switch|p1a: Hazard Removal|Forretress, M|303\/354
+|switch|p2a: Chesnaught|Chesnaught, F|358\/358
+|
+|-heal|p1a: Hazard Removal|325\/354|[from] item: Leftovers
+|turn|11
+|
+|switch|p2a: Raikou|Raikou|321\/321
+|-ability|p2a: Raikou|Pressure
+|move|p1a: Hazard Removal|Stealth Rock|p2a: Raikou
+|-sidestart|p2: Tipsy Russian|move: Stealth Rock
+|
+|-heal|p1a: Hazard Removal|347\/354|[from] item: Leftovers
+|turn|12
+|
+|switch|p1a: Bouquet|Roserade, F|324\/324
+|move|p2a: Raikou|Volt Switch|p1a: Bouquet
+|-resisted|p1a: Bouquet
+|-damage|p1a: Bouquet|284\/324
+|
+|switch|p2a: Azelf|Azelf|291\/291
+|-damage|p2a: Azelf|255\/291|[from] Stealth Rock
+|
+|-heal|p1a: Bouquet|304\/324|[from] item: Black Sludge
+|turn|13
+|
+|move|p2a: Azelf|U-turn|p1a: Bouquet
+|-crit|p1a: Bouquet
+|-damage|p1a: Bouquet|117\/324
+|
+|switch|p2a: Chesnaught|Chesnaught, F|358\/358
+|-damage|p2a: Chesnaught|336\/358|[from] Stealth Rock
+|move|p1a: Bouquet|Leech Seed|p2a: Chesnaught
+|-immune|p2a: Chesnaught|[msg]
+|
+|-heal|p1a: Bouquet|137\/324|[from] item: Black Sludge
+|turn|14
+|
+|switch|p1a: Hazard Removal|Forretress, M|347\/354
+|move|p2a: Chesnaught|Earthquake|p1a: Hazard Removal
+|-damage|p1a: Hazard Removal|251\/354
+|
+|-heal|p1a: Hazard Removal|273\/354|[from] item: Leftovers
+|turn|15
+|
+|switch|p2a: Raikou|Raikou|321\/321
+|-damage|p2a: Raikou|281\/321|[from] Stealth Rock
+|-ability|p2a: Raikou|Pressure
+|move|p1a: Hazard Removal|Spikes|p2a: Raikou
+|-sidestart|p2: Tipsy Russian|Spikes
+|
+|-heal|p1a: Hazard Removal|295\/354|[from] item: Leftovers
+|turn|16
+|
+|switch|p1a: Ms Cuddlesworth|Blissey, F|680\/680
+|move|p2a: Raikou|Thunderbolt|p1a: Ms Cuddlesworth
+|-damage|p1a: Ms Cuddlesworth|580\/680
+|
+|-heal|p1a: Ms Cuddlesworth|622\/680|[from] item: Leftovers
+|turn|17
+|
+|switch|p2a: Whimsicott|Whimsicott, F, shiny|197\/261 par
+|-damage|p2a: Whimsicott|165\/261 par|[from] Stealth Rock
+|-damage|p2a: Whimsicott|133\/261 par|[from] Spikes
+|move|p1a: Ms Cuddlesworth|Seismic Toss|p2a: Whimsicott
+|-damage|p2a: Whimsicott|33\/261 par
+|
+|-heal|p1a: Ms Cuddlesworth|664\/680|[from] item: Leftovers
+|turn|18
+|
+|cant|p2a: Whimsicott|par
+|move|p1a: Ms Cuddlesworth|Seismic Toss|p2a: Whimsicott
+|-damage|p2a: Whimsicott|0 fnt
+|faint|p2a: Whimsicott
+|
+|-heal|p1a: Ms Cuddlesworth|680\/680|[from] item: Leftovers
+|
+|switch|p2a: Chesnaught|Chesnaught, F|336\/358
+|-damage|p2a: Chesnaught|314\/358|[from] Stealth Rock
+|-damage|p2a: Chesnaught|270\/358|[from] Spikes
+|turn|19
+|
+|switch|p1a: Hazard Removal|Forretress, M|295\/354
+|move|p2a: Chesnaught|Earthquake|p1a: Hazard Removal
+|-damage|p1a: Hazard Removal|205\/354
+|
+|-heal|p1a: Hazard Removal|227\/354|[from] item: Leftovers
+|turn|20
+|
+|move|p2a: Chesnaught|Earthquake|p1a: Hazard Removal
+|-damage|p1a: Hazard Removal|127\/354
+|move|p1a: Hazard Removal|Volt Switch|p2a: Chesnaught
+|-resisted|p2a: Chesnaught
+|-damage|p2a: Chesnaught|247\/358
+|
+|switch|p1a: Mega Luvdisc|Alomomola, F|529\/529
+|
+|turn|21
+|
+|switch|p2a: Raikou|Raikou|281\/321
+|-damage|p2a: Raikou|241\/321|[from] Stealth Rock
+|-damage|p2a: Raikou|201\/321|[from] Spikes
+|-ability|p2a: Raikou|Pressure
+|move|p1a: Mega Luvdisc|Toxic|p2a: Raikou
+|-status|p2a: Raikou|tox
+|
+|-damage|p2a: Raikou|181\/321 tox|[from] psn
+|turn|22
+|
+|move|p1a: Mega Luvdisc|Protect|p1a: Mega Luvdisc
+|-singleturn|p1a: Mega Luvdisc|Protect
+|move|p2a: Raikou|Volt Switch|p1a: Mega Luvdisc
+|-activate|p1a: Mega Luvdisc|Protect
+|
+|-damage|p2a: Raikou|141\/321 tox|[from] psn
+|turn|23
+|
+|switch|p1a: Ms Cuddlesworth|Blissey, F|680\/680
+|move|p2a: Raikou|Volt Switch|p1a: Ms Cuddlesworth
+|-damage|p1a: Ms Cuddlesworth|601\/680
+|
+|switch|p2a: Chesnaught|Chesnaught, F|247\/358
+|-damage|p2a: Chesnaught|225\/358|[from] Stealth Rock
+|-damage|p2a: Chesnaught|181\/358|[from] Spikes
+|
+|-heal|p1a: Ms Cuddlesworth|643\/680|[from] item: Leftovers
+|turn|24
+|
+|switch|p1a: Hazard Removal|Forretress, M|127\/354
+|move|p2a: Chesnaught|Wood Hammer|p1a: Hazard Removal
+|-resisted|p1a: Hazard Removal
+|-damage|p1a: Hazard Removal|80\/354
+|-damage|p2a: Chesnaught|165\/358|[from] recoil|[of] p1a: Hazard Removal
+|
+|-heal|p1a: Hazard Removal|102\/354|[from] item: Leftovers
+|turn|25
+|-message|Tipsy Russian forfeited.
+|
+|win|SpecsPrimeape
+|raw|Ladder updating...
+|leave|Tipsy Russian
+|raw|SpecsPrimeape's rating: 1361 &rarr; <strong>1386<\/strong><br \/>(+25 for winning)
+|raw|Tipsy Russian's rating: 1460 &rarr; <strong>1434<\/strong><br \/>(-26 for losing)
+|player|p2

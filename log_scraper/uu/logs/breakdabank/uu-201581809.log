@@ -1,0 +1,165 @@
+|join|breakdabank
+|join|candres
+|player|p1|breakdabank|266
+|player|p2|candres|291
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Nidoqueen, F
+|poke|p1|Celebi
+|poke|p1|Vaporeon, M
+|poke|p1|Cobalion
+|poke|p1|Hydreigon, F
+|poke|p1|Diancie
+|poke|p2|Serperior, M
+|poke|p2|Aerodactyl, F
+|poke|p2|Jirachi
+|poke|p2|Suicune
+|poke|p2|Hydreigon, M
+|poke|p2|Slurpuff, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Hydreigon|Hydreigon, F|325\/325
+|switch|p2a: Suicune|Suicune|404\/404
+|-ability|p2a: Suicune|Pressure
+|turn|1
+|
+|switch|p2a: Serperior|Serperior, M|291\/291
+|move|p1a: Hydreigon|U-turn|p2a: Serperior
+|-supereffective|p2a: Serperior
+|-damage|p2a: Serperior|191\/291
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|359\/359
+|
+|-heal|p2a: Serperior|209\/291|[from] item: Leftovers
+|turn|2
+|
+|move|p2a: Serperior|Leaf Storm|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|163\/359
+|-boost|p2a: Serperior|spa|2
+|move|p1a: Nidoqueen|Sludge Wave|p2a: Serperior
+|-supereffective|p2a: Serperior
+|-damage|p2a: Serperior|0 fnt
+|faint|p2a: Serperior
+|
+|
+|switch|p2a: Aerodactyl|Aerodactyl, F|311\/311
+|-ability|p2a: Aerodactyl|Pressure
+|turn|3
+|
+|switch|p1a: Vaporeon|Vaporeon, M|435\/435
+|detailschange|p2a: Aerodactyl|Aerodactyl-Mega, F
+|-mega|p2a: Aerodactyl|Aerodactyl|Aerodactylite
+|move|p2a: Aerodactyl|Earthquake|p1a: Vaporeon
+|-damage|p1a: Vaporeon|310\/435
+|
+|-heal|p1a: Vaporeon|337\/435|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Jirachi|Jirachi|381\/381
+|move|p1a: Vaporeon|Scald|p2a: Jirachi
+|-damage|p2a: Jirachi|305\/381
+|
+|-heal|p2a: Jirachi|328\/381|[from] item: Leftovers
+|-heal|p1a: Vaporeon|364\/435|[from] item: Leftovers
+|turn|5
+|
+|move|p2a: Jirachi|Stealth Rock|p1a: Vaporeon
+|-sidestart|p1: breakdabank|move: Stealth Rock
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-heal|p2a: Jirachi|351\/381|[from] item: Leftovers
+|-heal|p1a: Vaporeon|391\/435|[from] item: Leftovers
+|turn|6
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|163\/359
+|-damage|p1a: Nidoqueen|141\/359|[from] Stealth Rock
+|move|p2a: Jirachi|Body Slam|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|60\/359
+|
+|-heal|p1a: Nidoqueen|277\/359|[from] move: Wish|[wisher] Vaporeon
+|-heal|p2a: Jirachi|374\/381|[from] item: Leftovers
+|turn|7
+|
+|move|p2a: Jirachi|Iron Head|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|162\/359
+|cant|p1a: Nidoqueen|flinch
+|
+|-heal|p2a: Jirachi|381\/381|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Vaporeon|Vaporeon, M|391\/435
+|-damage|p1a: Vaporeon|337\/435|[from] Stealth Rock
+|move|p2a: Jirachi|U-turn|p1a: Vaporeon
+|-damage|p1a: Vaporeon|283\/435
+|
+|switch|p2a: Slurpuff|Slurpuff, F|306\/306
+|
+|-heal|p1a: Vaporeon|310\/435|[from] item: Leftovers
+|turn|9
+|
+|move|p2a: Slurpuff|Belly Drum|p2a: Slurpuff
+|-damage|p2a: Slurpuff|153\/306
+|-setboost|p2a: Slurpuff|atk|6|[from] move: Belly Drum
+|-enditem|p2a: Slurpuff|Sitrus Berry|[eat]
+|-heal|p2a: Slurpuff|229\/306|[from] item: Sitrus Berry
+|move|p1a: Vaporeon|Scald|p2a: Slurpuff
+|-damage|p2a: Slurpuff|105\/306
+|
+|-heal|p1a: Vaporeon|337\/435|[from] item: Leftovers
+|turn|10
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Slurpuff|Play Rough|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Protect
+|
+|-heal|p1a: Vaporeon|364\/435|[from] item: Leftovers
+|turn|11
+|
+|move|p2a: Slurpuff|Play Rough|p1a: Vaporeon
+|-damage|p1a: Vaporeon|0 fnt
+|faint|p1a: Vaporeon
+|
+|
+|switch|p1a: Hydreigon|Hydreigon, F|325\/325
+|-damage|p1a: Hydreigon|285\/325|[from] Stealth Rock
+|turn|12
+|
+|move|p2a: Slurpuff|Drain Punch|p1a: Hydreigon
+|-supereffective|p1a: Hydreigon
+|-damage|p1a: Hydreigon|0 fnt
+|-heal|p2a: Slurpuff|248\/306|[from] drain|[of] p1a: Hydreigon
+|faint|p1a: Hydreigon
+|
+|
+|switch|p1a: Cobalion|Cobalion|323\/323
+|-damage|p1a: Cobalion|313\/323|[from] Stealth Rock
+|turn|13
+|
+|move|p2a: Slurpuff|Drain Punch|p1a: Cobalion
+|-supereffective|p1a: Cobalion
+|-damage|p1a: Cobalion|0 fnt
+|-heal|p2a: Slurpuff|306\/306|[from] drain|[of] p1a: Cobalion
+|faint|p1a: Cobalion
+|
+|-message|breakdabank forfeited.
+|
+|win|candres
+|raw|Ladder updating...
+|leave|breakdabank
+|player|p1
+|raw|breakdabank's rating: 1499 &rarr; <strong>1474<\/strong><br \/>(-25 for losing)
+|raw|candres's rating: 1416 &rarr; <strong>1441<\/strong><br \/>(+25 for winning)

@@ -1,0 +1,402 @@
+|join|Vorg
+|join|Vlado Vladimir
+|player|p1|Vorg|102
+|player|p2|Vlado Vladimir|101
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Scizor, M, shiny
+|poke|p1|Rotom-Wash, shiny
+|poke|p1|Landorus-Therian, M, shiny
+|poke|p1|Heatran, M, shiny
+|poke|p1|Cobalion, shiny
+|poke|p1|Blastoise, F, shiny
+|poke|p2|Metagross
+|poke|p2|Rotom-Wash
+|poke|p2|Thundurus-Therian, M
+|poke|p2|Latios, M
+|poke|p2|Ferrothorn, F
+|poke|p2|Landorus-Therian, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Cobalion|Cobalion, shiny|386\/386
+|switch|p2a: Rotom-Wash|Rotom-Wash|242\/242
+|turn|1
+|
+|move|p1a: Cobalion|Taunt|p2a: Rotom-Wash
+|-start|p2a: Rotom-Wash|move: Taunt
+|cant|p2a: Rotom-Wash|move: Taunt|Will-O-Wisp
+|
+|turn|2
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|382\/382
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Cobalion
+|-unboost|p1a: Cobalion|atk|1
+|move|p1a: Cobalion|Stealth Rock|p2a: Landorus-Therian
+|-sidestart|p2: Vlado Vladimir|move: Stealth Rock
+|
+|turn|3
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M, shiny|319\/319
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Landorus-Therian
+|-unboost|p2a: Landorus-Therian|atk|1
+|move|p2a: Landorus-Therian|Stealth Rock|p1a: Landorus-Therian
+|-sidestart|p1: Vorg|move: Stealth Rock
+|
+|turn|4
+|
+|move|p1a: Landorus-Therian|Knock Off|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|279\/382
+|-enditem|p2a: Landorus-Therian|Leftovers|[from] move: Knock Off|[of] p1a: Landorus-Therian
+|move|p2a: Landorus-Therian|U-turn|p1a: Landorus-Therian
+|-resisted|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|293\/319
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|352\/352
+|-damage|p2a: Ferrothorn|330\/352|[from] Stealth Rock
+|
+|turn|5
+|
+|move|p1a: Landorus-Therian|Knock Off|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|241\/352
+|-damage|p1a: Landorus-Therian|254\/319|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|-damage|p1a: Landorus-Therian|201\/319|[from] item: Rocky Helmet|[of] p2a: Ferrothorn
+|-enditem|p2a: Ferrothorn|Rocky Helmet|[from] move: Knock Off|[of] p1a: Landorus-Therian
+|move|p2a: Ferrothorn|Spikes|p1a: Landorus-Therian
+|-sidestart|p1: Vorg|Spikes
+|
+|turn|6
+|
+|switch|p1a: Blastoise|Blastoise, F, shiny|361\/361
+|-damage|p1a: Blastoise|316\/361|[from] Spikes
+|-damage|p1a: Blastoise|271\/361|[from] Stealth Rock
+|move|p2a: Ferrothorn|Leech Seed|p1a: Blastoise
+|-start|p1a: Blastoise|move: Leech Seed
+|
+|-damage|p1a: Blastoise|226\/361|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|286\/352|[silent]
+|turn|7
+|
+|switch|p2a: Latios|Latios, M|302\/302
+|-damage|p2a: Latios|265\/302|[from] Stealth Rock
+|detailschange|p1a: Blastoise|Blastoise-Mega, F, shiny
+|-mega|p1a: Blastoise|Blastoise|Blastoisinite
+|move|p1a: Blastoise|Aura Sphere|p2a: Latios
+|-resisted|p2a: Latios
+|-damage|p2a: Latios|186\/302
+|
+|-damage|p1a: Blastoise|181\/361|[from] Leech Seed|[of] p2a: Latios
+|-heal|p2a: Latios|231\/302|[silent]
+|turn|8
+|
+|move|p2a: Latios|Psyshock|p1a: Blastoise
+|-damage|p1a: Blastoise|24\/361
+|-damage|p2a: Latios|201\/302|[from] item: Life Orb
+|move|p1a: Blastoise|Dark Pulse|p2a: Latios
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|faint|p2a: Latios
+|
+|
+|switch|p2a: Metagross|Metagross|302\/302
+|-damage|p2a: Metagross|284\/302|[from] Stealth Rock
+|turn|9
+|
+|detailschange|p2a: Metagross|Metagross-Mega
+|-mega|p2a: Metagross|Metagross|Metagrossite
+|move|p2a: Metagross|Zen Headbutt|p1a: Blastoise
+|-damage|p1a: Blastoise|0 fnt
+|faint|p1a: Blastoise
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M, shiny|201\/319
+|-damage|p1a: Landorus-Therian|162\/319|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Metagross
+|-unboost|p2a: Metagross|atk|1
+|turn|10
+|
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M|299\/299
+|-damage|p2a: Thundurus-Therian|225\/299|[from] Stealth Rock
+|move|p1a: Landorus-Therian|U-turn|p2a: Thundurus-Therian
+|-resisted|p2a: Thundurus-Therian
+|-damage|p2a: Thundurus-Therian|161\/299
+|
+|switch|p1a: Cobalion|Cobalion, shiny|386\/386
+|-damage|p1a: Cobalion|338\/386|[from] Spikes
+|-damage|p1a: Cobalion|326\/386|[from] Stealth Rock
+|
+|-heal|p1a: Cobalion|350\/386|[from] item: Leftovers
+|turn|11
+|
+|move|p2a: Thundurus-Therian|Volt Switch|p1a: Cobalion
+|-damage|p1a: Cobalion|179\/386
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|279\/382
+|-damage|p2a: Landorus-Therian|232\/382|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Cobalion
+|-unboost|p1a: Cobalion|atk|1
+|move|p1a: Cobalion|Close Combat|p2a: Landorus-Therian
+|-resisted|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|200\/382
+|-unboost|p1a: Cobalion|def|1
+|-unboost|p1a: Cobalion|spd|1
+|
+|-heal|p1a: Cobalion|203\/386|[from] item: Leftovers
+|turn|12
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M, shiny|162\/319
+|-damage|p1a: Landorus-Therian|123\/319|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Landorus-Therian
+|-unboost|p2a: Landorus-Therian|atk|1
+|move|p2a: Landorus-Therian|U-turn|p1a: Landorus-Therian
+|-resisted|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|95\/319
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|286\/352
+|-damage|p2a: Ferrothorn|264\/352|[from] Stealth Rock
+|
+|turn|13
+|
+|move|p1a: Landorus-Therian|Earthquake|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|122\/352
+|move|p2a: Ferrothorn|Spikes|p1a: Landorus-Therian
+|-sidestart|p1: Vorg|Spikes
+|
+|turn|14
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|200\/382
+|-damage|p2a: Landorus-Therian|153\/382|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Landorus-Therian
+|-unboost|p1a: Landorus-Therian|atk|1
+|move|p1a: Landorus-Therian|Earthquake|p2a: Landorus-Therian
+|-immune|p2a: Landorus-Therian|[msg]
+|
+|turn|15
+|
+|switch|p1a: Cobalion|Cobalion, shiny|203\/386
+|-damage|p1a: Cobalion|139\/386|[from] Spikes
+|-damage|p1a: Cobalion|127\/386|[from] Stealth Rock
+|move|p2a: Landorus-Therian|U-turn|p1a: Cobalion
+|-resisted|p1a: Cobalion
+|-damage|p1a: Cobalion|113\/386
+|
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M|161\/299
+|-damage|p2a: Thundurus-Therian|87\/299|[from] Stealth Rock
+|
+|-heal|p1a: Cobalion|137\/386|[from] item: Leftovers
+|turn|16
+|
+|move|p2a: Thundurus-Therian|Volt Switch|p1a: Cobalion
+|-damage|p1a: Cobalion|0 fnt
+|faint|p1a: Cobalion
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|242\/242
+|-damage|p2a: Rotom-Wash|212\/242|[from] Stealth Rock
+|
+|-heal|p2a: Rotom-Wash|227\/242|[from] item: Leftovers
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash, shiny|303\/303
+|-damage|p1a: Rotom-Wash|266\/303|[from] Stealth Rock
+|turn|17
+|
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M|87\/299
+|-damage|p2a: Thundurus-Therian|13\/299|[from] Stealth Rock
+|move|p1a: Rotom-Wash|Hidden Power|p2a: Thundurus-Therian
+|-resisted|p2a: Thundurus-Therian
+|-damage|p2a: Thundurus-Therian|0 fnt
+|faint|p2a: Thundurus-Therian
+|
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|122\/352
+|-damage|p2a: Ferrothorn|100\/352|[from] Stealth Rock
+|turn|18
+|
+|switch|p1a: Heatran|Heatran, M, shiny|385\/385
+|-damage|p1a: Heatran|321\/385|[from] Spikes
+|-damage|p1a: Heatran|273\/385|[from] Stealth Rock
+|move|p2a: Ferrothorn|Leech Seed|p1a: Heatran
+|-start|p1a: Heatran|move: Leech Seed
+|
+|-heal|p1a: Heatran|297\/385|[from] item: Leftovers
+|-damage|p1a: Heatran|249\/385|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|148\/352|[silent]
+|turn|19
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|227\/242
+|-damage|p2a: Rotom-Wash|197\/242|[from] Stealth Rock
+|move|p1a: Heatran|Lava Plume|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|153\/242
+|
+|-heal|p2a: Rotom-Wash|168\/242|[from] item: Leftovers
+|-heal|p1a: Heatran|273\/385|[from] item: Leftovers
+|-damage|p1a: Heatran|225\/385|[from] Leech Seed|[of] p2a: Rotom-Wash
+|-heal|p2a: Rotom-Wash|216\/242|[silent]
+|turn|20
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash, shiny|266\/303
+|-damage|p1a: Rotom-Wash|229\/303|[from] Stealth Rock
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|164\/303
+|
+|-heal|p2a: Rotom-Wash|231\/242|[from] item: Leftovers
+|turn|21
+|
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Rotom-Wash|[miss]
+|-miss|p2a: Rotom-Wash|p1a: Rotom-Wash
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Rotom-Wash
+|-crit|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|27\/242
+|c|âVlado Vladimir|....
+|
+|switch|p1a: Scizor|Scizor, M, shiny|343\/343
+|-damage|p1a: Scizor|286\/343|[from] Spikes
+|-damage|p1a: Scizor|244\/343|[from] Stealth Rock
+|
+|-heal|p2a: Rotom-Wash|42\/242|[from] item: Leftovers
+|turn|22
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|148\/352
+|-damage|p2a: Ferrothorn|126\/352|[from] Stealth Rock
+|move|p1a: Scizor|Bullet Punch|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|60\/352
+|-damage|p1a: Scizor|202\/343|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|
+|turn|23
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|-damage|p1a: Scizor|160\/343|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|faint|p2a: Ferrothorn
+|
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|153\/382
+|-damage|p2a: Landorus-Therian|106\/382|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Scizor
+|-unboost|p1a: Scizor|atk|1
+|turn|24
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|10\/382
+|move|p2a: Landorus-Therian|Stone Edge|p1a: Scizor
+|-damage|p1a: Scizor|54\/343
+|
+|turn|25
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|faint|p2a: Landorus-Therian
+|
+|
+|switch|p2a: Metagross|Metagross-Mega|284\/302
+|-damage|p2a: Metagross|266\/302|[from] Stealth Rock
+|turn|26
+|
+|switch|p1a: Heatran|Heatran, M, shiny|225\/385
+|-damage|p1a: Heatran|161\/385|[from] Spikes
+|-damage|p1a: Heatran|113\/385|[from] Stealth Rock
+|move|p2a: Metagross|Zen Headbutt|p1a: Heatran|[miss]
+|-miss|p2a: Metagross|p1a: Heatran
+|
+|-heal|p1a: Heatran|137\/385|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Metagross|Zen Headbutt|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-heal|p1a: Heatran|161\/385|[from] item: Leftovers
+|turn|28
+|c|âVlado Vladimir|oh my fucking god
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M, shiny|95\/319
+|-damage|p1a: Landorus-Therian|56\/319|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Metagross
+|-unboost|p2a: Metagross|atk|1
+|move|p2a: Metagross|Zen Headbutt|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|faint|p1a: Landorus-Therian
+|
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash, shiny|164\/303
+|-damage|p1a: Rotom-Wash|127\/303|[from] Stealth Rock
+|turn|29
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|42\/242
+|-damage|p2a: Rotom-Wash|12\/242|[from] Stealth Rock
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|
+|switch|p2a: Metagross|Metagross-Mega|266\/302
+|-damage|p2a: Metagross|248\/302|[from] Stealth Rock
+|turn|30
+|
+|move|p2a: Metagross|Zen Headbutt|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|
+|
+|switch|p1a: Heatran|Heatran, M, shiny|161\/385
+|-damage|p1a: Heatran|113\/385|[from] Stealth Rock
+|-damage|p1a: Heatran|49\/385|[from] Spikes
+|turn|31
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Metagross|Agility|p2a: Metagross
+|-boost|p2a: Metagross|spe|2
+|
+|-heal|p1a: Heatran|73\/385|[from] item: Leftovers
+|turn|32
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-fail|p1a: Heatran
+|move|p2a: Metagross|Zen Headbutt|p1a: Heatran|[miss]
+|-miss|p2a: Metagross|p1a: Heatran
+|
+|-heal|p1a: Heatran|97\/385|[from] item: Leftovers
+|turn|33
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Metagross|Zen Headbutt|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-heal|p1a: Heatran|121\/385|[from] item: Leftovers
+|turn|34
+|c|âVlado Vladimir|this mist be a joke
+|
+|move|p2a: Metagross|Zen Headbutt|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|11\/385
+|move|p1a: Heatran|Lava Plume|p2a: Metagross
+|-crit|p2a: Metagross
+|-supereffective|p2a: Metagross
+|-damage|p2a: Metagross|0 fnt
+|faint|p2a: Metagross
+|
+|win|Vorg
+|raw|Ladder updating...
+|raw|Vorg's rating: 1622 &rarr; <strong>1643<\/strong><br \/>(+21 for winning)
+|raw|Vlado Vladimir's rating: 1641 &rarr; <strong>1620<\/strong><br \/>(-21 for losing)
+|leave|Vlado Vladimir
+|player|p2

@@ -1,0 +1,308 @@
+|join|SuperDuperDerp
+|join|Murdercow
+|player|p1|SuperDuperDerp|114
+|player|p2|Murdercow|92
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Crobat, M
+|poke|p1|Krookodile, M
+|poke|p1|Yanmega, F
+|poke|p1|Snorlax, F
+|poke|p1|Infernape, F
+|poke|p1|Vaporeon, M
+|poke|p2|Beedrill, M
+|poke|p2|Shaymin
+|poke|p2|Empoleon, M
+|poke|p2|Infernape, M
+|poke|p2|Azelf
+|poke|p2|Krookodile, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Crobat|Crobat, M|336\/336
+|switch|p2a: Beedrill|Beedrill, M|271\/271
+|turn|1
+|
+|detailschange|p2a: Beedrill|Beedrill-Mega, M
+|-mega|p2a: Beedrill|Beedrill|Beedrillite
+|move|p2a: Beedrill|Protect|p2a: Beedrill
+|-singleturn|p2a: Beedrill|Protect
+|move|p1a: Crobat|Brave Bird|p2a: Beedrill
+|-activate|p2a: Beedrill|Protect
+|
+|turn|2
+|
+|move|p2a: Beedrill|U-turn|p1a: Crobat
+|-resisted|p1a: Crobat
+|-damage|p1a: Crobat|281\/336
+|
+|switch|p2a: Empoleon|Empoleon, M|371\/371
+|move|p1a: Crobat|U-turn|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|334\/371
+|
+|switch|p1a: Infernape|Infernape, F|293\/293
+|
+|-heal|p2a: Empoleon|357\/371|[from] item: Leftovers
+|turn|3
+|
+|switch|p2a: Azelf|Azelf|291\/291
+|move|p1a: Infernape|Close Combat|p2a: Azelf
+|-resisted|p2a: Azelf
+|-damage|p2a: Azelf|112\/291
+|-unboost|p1a: Infernape|def|1
+|-unboost|p1a: Infernape|spd|1
+|-damage|p1a: Infernape|264\/293|[from] item: Life Orb
+|
+|turn|4
+|
+|switch|p1a: Snorlax|Snorlax, F|524\/524
+|move|p2a: Azelf|U-turn|p1a: Snorlax
+|-damage|p1a: Snorlax|438\/524
+|
+|switch|p2a: Krookodile|Krookodile, M|331\/331
+|
+|-heal|p1a: Snorlax|470\/524|[from] item: Leftovers
+|turn|5
+|
+|switch|p1a: Krookodile|Krookodile, M|331\/331
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Krookodile
+|-unboost|p2a: Krookodile|atk|1
+|move|p2a: Krookodile|Knock Off|p1a: Krookodile
+|-resisted|p1a: Krookodile
+|-damage|p1a: Krookodile|268\/331
+|-enditem|p1a: Krookodile|Life Orb|[from] move: Knock Off|[of] p2a: Krookodile
+|
+|turn|6
+|
+|switch|p2a: Shaymin|Shaymin|403\/403
+|move|p1a: Krookodile|Stealth Rock|p2a: Shaymin
+|-sidestart|p2: Murdercow|move: Stealth Rock
+|
+|turn|7
+|
+|switch|p1a: Yanmega|Yanmega, F|313\/313
+|move|p2a: Shaymin|Tailwind|p2a: Shaymin
+|-sidestart|p2: Murdercow|move: Tailwind
+|
+|turn|8
+|
+|switch|p2a: Empoleon|Empoleon, M|357\/371
+|-damage|p2a: Empoleon|334\/371|[from] Stealth Rock
+|move|p1a: Yanmega|Protect|p1a: Yanmega
+|-fail|p1a: Yanmega
+|
+|-heal|p2a: Empoleon|357\/371|[from] item: Leftovers
+|-boost|p1a: Yanmega|spe|1|[from] ability: Speed Boost
+|turn|9
+|
+|switch|p1a: Vaporeon|Vaporeon, M|449\/449
+|move|p2a: Empoleon|Stealth Rock|p1a: Vaporeon
+|-sidestart|p1: SuperDuperDerp|move: Stealth Rock
+|
+|-heal|p2a: Empoleon|371\/371|[from] item: Leftovers
+|turn|10
+|
+|move|p2a: Empoleon|Toxic|p1a: Vaporeon
+|-status|p1a: Vaporeon|tox
+|move|p1a: Vaporeon|Baton Pass|p1a: Vaporeon
+|
+|switch|p1a: Infernape|Infernape, F|264\/293
+|-damage|p1a: Infernape|228\/293|[from] Stealth Rock
+|
+|-sideend|p2: Murdercow|move: Tailwind
+|turn|11
+|
+|switch|p2a: Shaymin|Shaymin|403\/403
+|-damage|p2a: Shaymin|353\/403|[from] Stealth Rock
+|move|p1a: Infernape|Close Combat|p2a: Shaymin
+|-damage|p2a: Shaymin|107\/403
+|-unboost|p1a: Infernape|def|1
+|-unboost|p1a: Infernape|spd|1
+|-damage|p1a: Infernape|199\/293|[from] item: Life Orb
+|
+|-heal|p2a: Shaymin|132\/403|[from] item: Leftovers
+|turn|12
+|
+|move|p1a: Infernape|Close Combat|p2a: Shaymin
+|-damage|p2a: Shaymin|0 fnt
+|-unboost|p1a: Infernape|def|1
+|-unboost|p1a: Infernape|spd|1
+|-damage|p1a: Infernape|170\/293|[from] item: Life Orb
+|faint|p2a: Shaymin
+|
+|
+|switch|p2a: Beedrill|Beedrill-Mega, M|271\/271
+|-damage|p2a: Beedrill|204\/271|[from] Stealth Rock
+|turn|13
+|
+|switch|p1a: Crobat|Crobat, M|281\/336
+|-damage|p1a: Crobat|197\/336|[from] Stealth Rock
+|move|p2a: Beedrill|Poison Jab|p1a: Crobat
+|-resisted|p1a: Crobat
+|-damage|p1a: Crobat|80\/336
+|
+|-heal|p1a: Crobat|101\/336|[from] item: Black Sludge
+|turn|14
+|
+|switch|p1a: Krookodile|Krookodile, M|268\/331
+|-damage|p1a: Krookodile|248\/331|[from] Stealth Rock
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Beedrill
+|-unboost|p2a: Beedrill|atk|1
+|move|p2a: Beedrill|Poison Jab|p1a: Krookodile
+|-resisted|p1a: Krookodile
+|-damage|p1a: Krookodile|162\/331
+|
+|turn|15
+|
+|switch|p1a: Crobat|Crobat, M|101\/336
+|-damage|p1a: Crobat|17\/336|[from] Stealth Rock
+|move|p2a: Beedrill|U-turn|p1a: Crobat
+|-resisted|p1a: Crobat
+|-damage|p1a: Crobat|0 fnt
+|faint|p1a: Crobat
+|
+|switch|p2a: Azelf|Azelf|112\/291
+|-damage|p2a: Azelf|76\/291|[from] Stealth Rock
+|
+|
+|switch|p1a: Vaporeon|Vaporeon, M|449\/449 tox
+|-damage|p1a: Vaporeon|393\/449 tox|[from] Stealth Rock
+|turn|16
+|
+|move|p2a: Azelf|Thunderbolt|p1a: Vaporeon
+|-supereffective|p1a: Vaporeon
+|-damage|p1a: Vaporeon|175\/449 tox
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|203\/449 tox|[from] item: Leftovers
+|-damage|p1a: Vaporeon|175\/449 tox|[from] psn
+|turn|17
+|
+|switch|p2a: Empoleon|Empoleon, M|371\/371
+|-damage|p2a: Empoleon|348\/371|[from] Stealth Rock
+|switch|p1a: Krookodile|Krookodile, M|162\/331
+|-damage|p1a: Krookodile|142\/331|[from] Stealth Rock
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Empoleon
+|-unboost|p2a: Empoleon|atk|1
+|
+|-heal|p1a: Krookodile|331\/331|[from] move: Wish|[wisher] Vaporeon
+|-heal|p2a: Empoleon|371\/371|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Krookodile|Earthquake|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|0 fnt
+|faint|p2a: Empoleon
+|
+|
+|switch|p2a: Beedrill|Beedrill-Mega, M|204\/271
+|-damage|p2a: Beedrill|137\/271|[from] Stealth Rock
+|turn|19
+|
+|switch|p1a: Vaporeon|Vaporeon, M|175\/449 tox
+|-damage|p1a: Vaporeon|119\/449 tox|[from] Stealth Rock
+|move|p2a: Beedrill|U-turn|p1a: Vaporeon
+|-damage|p1a: Vaporeon|0 fnt
+|faint|p1a: Vaporeon
+|
+|switch|p2a: Azelf|Azelf|76\/291
+|-damage|p2a: Azelf|40\/291|[from] Stealth Rock
+|
+|
+|switch|p1a: Infernape|Infernape, F|170\/293
+|-damage|p1a: Infernape|134\/293|[from] Stealth Rock
+|turn|20
+|
+|move|p1a: Infernape|Mach Punch|p2a: Azelf
+|-resisted|p2a: Azelf
+|-damage|p2a: Azelf|0 fnt
+|-damage|p1a: Infernape|105\/293|[from] item: Life Orb
+|faint|p2a: Azelf
+|
+|
+|switch|p2a: Infernape|Infernape, M|293\/293
+|-damage|p2a: Infernape|257\/293|[from] Stealth Rock
+|turn|21
+|
+|move|p2a: Infernape|Fake Out|p1a: Infernape
+|-damage|p1a: Infernape|31\/293
+|-damage|p2a: Infernape|228\/293|[from] item: Life Orb
+|cant|p1a: Infernape|flinch
+|
+|turn|22
+|
+|move|p1a: Infernape|Close Combat|p2a: Infernape
+|-damage|p2a: Infernape|0 fnt
+|-unboost|p1a: Infernape|def|1
+|-unboost|p1a: Infernape|spd|1
+|-damage|p1a: Infernape|2\/293|[from] item: Life Orb
+|faint|p2a: Infernape
+|
+|
+|switch|p2a: Krookodile|Krookodile, M|331\/331
+|-damage|p2a: Krookodile|311\/331|[from] Stealth Rock
+|turn|23
+|
+|move|p1a: Infernape|Mach Punch|p2a: Krookodile
+|-supereffective|p2a: Krookodile
+|-damage|p2a: Krookodile|77\/331
+|-damage|p1a: Infernape|0 fnt|[from] item: Life Orb
+|faint|p1a: Infernape
+|move|p2a: Krookodile|Knock Off|p1: Infernape|[notarget]
+|-notarget
+|
+|
+|switch|p1a: Krookodile|Krookodile, M|331\/331
+|-damage|p1a: Krookodile|311\/331|[from] Stealth Rock
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Krookodile
+|-unboost|p2a: Krookodile|atk|1
+|turn|24
+|
+|move|p2a: Krookodile|Knock Off|p1a: Krookodile
+|-resisted|p1a: Krookodile
+|-damage|p1a: Krookodile|265\/331
+|move|p1a: Krookodile|Earthquake|p2a: Krookodile
+|-crit|p2a: Krookodile
+|-damage|p2a: Krookodile|0 fnt
+|faint|p2a: Krookodile
+|
+|
+|switch|p2a: Beedrill|Beedrill-Mega, M|137\/271
+|-damage|p2a: Beedrill|70\/271|[from] Stealth Rock
+|turn|25
+|
+|move|p2a: Beedrill|U-turn|p1a: Krookodile
+|-supereffective|p1a: Krookodile
+|-damage|p1a: Krookodile|0 fnt
+|faint|p1a: Krookodile
+|
+|
+|switch|p1a: Snorlax|Snorlax, F|470\/524
+|-damage|p1a: Snorlax|405\/524|[from] Stealth Rock
+|turn|26
+|
+|move|p2a: Beedrill|Poison Jab|p1a: Snorlax
+|-damage|p1a: Snorlax|145\/524
+|move|p1a: Snorlax|Body Slam|p2a: Beedrill
+|-damage|p2a: Beedrill|0 fnt
+|faint|p2a: Beedrill
+|
+|win|SuperDuperDerp
+|raw|Ladder updating...
+|raw|SuperDuperDerp's rating: 1438 &rarr; <strong>1452<\/strong><br \/>(+14 for winning)
+|raw|Murdercow's rating: 1328 &rarr; <strong>1314<\/strong><br \/>(-14 for losing)
+|leave|Murdercow
+|player|p2

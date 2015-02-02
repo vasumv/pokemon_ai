@@ -1,0 +1,299 @@
+|join|jiajin32
+|join|KingBowser
+|player|p1|jiajin32|265
+|player|p2|KingBowser|40
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Abomasnow, F
+|poke|p1|Infernape, M
+|poke|p1|Jirachi
+|poke|p1|Starmie
+|poke|p1|Nidoqueen, F
+|poke|p1|Hydreigon, M
+|poke|p2|Donphan, F
+|poke|p2|Jirachi, shiny
+|poke|p2|Darmanitan, M, shiny
+|poke|p2|Snorlax, F, shiny
+|poke|p2|Vaporeon, M
+|poke|p2|Mienshao, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Nidoqueen|Nidoqueen, F|321\/321
+|switch|p2a: Mienshao|Mienshao, F|271\/271
+|turn|1
+|
+|move|p2a: Mienshao|Fake Out|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|252\/321
+|-damage|p2a: Mienshao|244\/271|[from] item: Life Orb
+|cant|p1a: Nidoqueen|flinch
+|
+|turn|2
+|
+|switch|p2a: Vaporeon|Vaporeon, M|464\/464
+|move|p1a: Nidoqueen|Stealth Rock|p2a: Vaporeon
+|-sidestart|p2: KingBowser|move: Stealth Rock
+|
+|turn|3
+|
+|switch|p1a: Abomasnow|Abomasnow, F|383\/383
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|turn|4
+|
+|switch|p2a: Darmanitan|Darmanitan, M, shiny|351\/351
+|-damage|p2a: Darmanitan|264\/351|[from] Stealth Rock
+|detailschange|p1a: Abomasnow|Abomasnow-Mega, F
+|-mega|p1a: Abomasnow|Abomasnow|Abomasite
+|-weather|Hail
+|move|p1a: Abomasnow|Swords Dance|p1a: Abomasnow
+|-boost|p1a: Abomasnow|atk|2
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Darmanitan|243\/351|[from] hail
+|-heal|p2a: Darmanitan|351\/351|[from] move: Wish|[wisher] Vaporeon
+|turn|5
+|
+|switch|p1a: Starmie|Starmie|323\/323
+|move|p2a: Darmanitan|Flare Blitz|p1a: Starmie
+|-resisted|p1a: Starmie
+|-damage|p1a: Starmie|57\/323
+|-damage|p2a: Darmanitan|263\/351|[from] recoil|[of] p1a: Starmie
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Starmie|37\/323|[from] hail
+|-damage|p2a: Darmanitan|242\/351|[from] hail
+|-heal|p1a: Starmie|57\/323|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: Snorlax|Snorlax, F, shiny|524\/524
+|-damage|p2a: Snorlax|459\/524|[from] Stealth Rock
+|move|p1a: Starmie|Scald|p2a: Snorlax
+|-damage|p2a: Snorlax|398\/524
+|-status|p2a: Snorlax|brn
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Starmie|37\/323|[from] hail
+|-damage|p2a: Snorlax|366\/524 brn|[from] hail
+|-heal|p1a: Starmie|57\/323|[from] item: Leftovers
+|-heal|p2a: Snorlax|398\/524 brn|[from] item: Leftovers
+|-damage|p2a: Snorlax|333\/524 brn|[from] brn
+|turn|7
+|
+|switch|p1a: Jirachi|Jirachi|404\/404
+|move|p2a: Snorlax|Body Slam|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|378\/404
+|-status|p1a: Jirachi|par
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Snorlax|301\/524 brn|[from] hail
+|-damage|p1a: Jirachi|353\/404 par|[from] hail
+|-heal|p2a: Snorlax|333\/524 brn|[from] item: Leftovers
+|-heal|p1a: Jirachi|378\/404 par|[from] item: Leftovers
+|-damage|p2a: Snorlax|268\/524 brn|[from] brn
+|turn|8
+|
+|switch|p2a: Donphan|Donphan, F|364\/364
+|-damage|p2a: Donphan|342\/364|[from] Stealth Rock
+|move|p1a: Jirachi|Substitute|p1a: Jirachi
+|-start|p1a: Jirachi|Substitute
+|-damage|p1a: Jirachi|277\/404 par
+|
+|-weather|none
+|-heal|p2a: Donphan|364\/364|[from] item: Leftovers
+|-heal|p1a: Jirachi|302\/404 par|[from] item: Leftovers
+|turn|9
+|
+|move|p2a: Donphan|Rapid Spin|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-activate|p1a: Jirachi|Substitute|[damage]
+|-sideend|p2: KingBowser|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Donphan
+|move|p1a: Jirachi|Toxic|p2a: Donphan
+|-status|p2a: Donphan|tox
+|
+|-heal|p1a: Jirachi|327\/404 par|[from] item: Leftovers
+|-damage|p2a: Donphan|342\/364 tox|[from] psn
+|turn|10
+|
+|move|p2a: Donphan|Earthquake|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-end|p1a: Jirachi|Substitute
+|cant|p1a: Jirachi|par
+|
+|-heal|p2a: Donphan|364\/364 tox|[from] item: Leftovers
+|-heal|p1a: Jirachi|352\/404 par|[from] item: Leftovers
+|-damage|p2a: Donphan|320\/364 tox|[from] psn
+|turn|11
+|
+|switch|p1a: Abomasnow|Abomasnow-Mega, F|383\/383
+|-weather|Hail
+|move|p2a: Donphan|Knock Off|p1a: Abomasnow
+|-damage|p1a: Abomasnow|302\/383
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Donphan|298\/364 tox|[from] hail
+|-heal|p2a: Donphan|320\/364 tox|[from] item: Leftovers
+|-damage|p2a: Donphan|254\/364 tox|[from] psn
+|turn|12
+|
+|move|p2a: Donphan|Earthquake|p1a: Abomasnow
+|-resisted|p1a: Abomasnow
+|-damage|p1a: Abomasnow|214\/383
+|move|p1a: Abomasnow|Earthquake|p2a: Donphan
+|-damage|p2a: Donphan|135\/364 tox
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Donphan|113\/364 tox|[from] hail
+|-heal|p2a: Donphan|135\/364 tox|[from] item: Leftovers
+|-damage|p2a: Donphan|47\/364 tox|[from] psn
+|turn|13
+|
+|move|p1a: Abomasnow|Ice Shard|p2a: Donphan
+|-crit|p2a: Donphan
+|-supereffective|p2a: Donphan
+|-damage|p2a: Donphan|0 fnt
+|faint|p2a: Donphan
+|
+|-weather|Hail|[upkeep]
+|
+|switch|p2a: Darmanitan|Darmanitan, M, shiny|242\/351
+|turn|14
+|
+|move|p1a: Abomasnow|Ice Shard|p2a: Darmanitan
+|-resisted|p2a: Darmanitan
+|-damage|p2a: Darmanitan|182\/351
+|move|p2a: Darmanitan|U-turn|p1a: Abomasnow
+|-supereffective|p1a: Abomasnow
+|-damage|p1a: Abomasnow|0 fnt
+|faint|p1a: Abomasnow
+|
+|switch|p2a: Mienshao|Mienshao, F|244\/271
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Mienshao|228\/271|[from] hail
+|
+|switch|p1a: Jirachi|Jirachi|352\/404 par
+|turn|15
+|
+|move|p2a: Mienshao|Knock Off|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|56\/404 par
+|-enditem|p1a: Jirachi|Leftovers|[from] move: Knock Off|[of] p2a: Mienshao
+|-damage|p2a: Mienshao|201\/271|[from] item: Life Orb
+|move|p1a: Jirachi|Iron Head|p2a: Mienshao
+|-damage|p2a: Mienshao|48\/271
+|
+|-weather|none
+|turn|16
+|
+|move|p2a: Mienshao|U-turn|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|-damage|p2a: Mienshao|21\/271|[from] item: Life Orb
+|faint|p1a: Jirachi
+|
+|switch|p2a: Jirachi|Jirachi, shiny|341\/341
+|
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|252\/321
+|turn|17
+|
+|move|p2a: Jirachi|U-turn|p1a: Nidoqueen
+|-resisted|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|215\/321
+|
+|switch|p2a: Vaporeon|Vaporeon, M|464\/464
+|move|p1a: Nidoqueen|Earth Power|p2a: Vaporeon
+|-damage|p2a: Vaporeon|253\/464
+|
+|-heal|p2a: Vaporeon|282\/464|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Nidoqueen|Stealth Rock|p2a: Vaporeon
+|-sidestart|p2: KingBowser|move: Stealth Rock
+|move|p2a: Vaporeon|Scald|p1a: Nidoqueen
+|-supereffective|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|0 fnt
+|faint|p1a: Nidoqueen
+|
+|-heal|p2a: Vaporeon|311\/464|[from] item: Leftovers
+|
+|switch|p1a: Hydreigon|Hydreigon, M|325\/325
+|turn|19
+|
+|move|p2a: Vaporeon|Protect|p2a: Vaporeon
+|-singleturn|p2a: Vaporeon|Protect
+|move|p1a: Hydreigon|Draco Meteor|p2a: Vaporeon
+|-activate|p2a: Vaporeon|Protect
+|
+|-heal|p2a: Vaporeon|340\/464|[from] item: Leftovers
+|turn|20
+|
+|move|p1a: Hydreigon|Draco Meteor|p2a: Vaporeon|[miss]
+|-miss|p1a: Hydreigon|p2a: Vaporeon
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-heal|p2a: Vaporeon|369\/464|[from] item: Leftovers
+|turn|21
+|
+|move|p1a: Hydreigon|Draco Meteor|p2a: Vaporeon
+|-damage|p2a: Vaporeon|131\/464
+|-unboost|p1a: Hydreigon|spa|2
+|move|p2a: Vaporeon|Ice Beam|p1a: Hydreigon
+|-supereffective|p1a: Hydreigon
+|-damage|p1a: Hydreigon|159\/325
+|
+|-heal|p2a: Vaporeon|363\/464|[from] move: Wish|[wisher] Vaporeon
+|-heal|p2a: Vaporeon|392\/464|[from] item: Leftovers
+|turn|22
+|
+|switch|p1a: Starmie|Starmie|57\/323
+|move|p2a: Vaporeon|Scald|p1a: Starmie
+|-resisted|p1a: Starmie
+|-damage|p1a: Starmie|0 fnt
+|faint|p1a: Starmie
+|
+|-heal|p2a: Vaporeon|421\/464|[from] item: Leftovers
+|
+|switch|p1a: Infernape|Infernape, M|293\/293
+|turn|23
+|
+|move|p1a: Infernape|Grass Knot|p2a: Vaporeon
+|-supereffective|p2a: Vaporeon
+|-damage|p2a: Vaporeon|247\/464
+|-damage|p1a: Infernape|264\/293|[from] item: Life Orb
+|move|p2a: Vaporeon|Scald|p1a: Infernape
+|-supereffective|p1a: Infernape
+|-damage|p1a: Infernape|16\/293
+|
+|-heal|p2a: Vaporeon|276\/464|[from] item: Leftovers
+|turn|24
+|
+|move|p1a: Infernape|Grass Knot|p2a: Vaporeon
+|-supereffective|p2a: Vaporeon
+|-damage|p2a: Vaporeon|94\/464
+|-damage|p1a: Infernape|0 fnt|[from] item: Life Orb
+|faint|p1a: Infernape
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-heal|p2a: Vaporeon|123\/464|[from] item: Leftovers
+|-message|jiajin32 forfeited.
+|
+|win|KingBowser
+|raw|Ladder updating...
+|leave|jiajin32
+|player|p1
+|raw|jiajin32's rating: 1629 &rarr; <strong>1600<\/strong><br \/>(-29 for losing)
+|raw|KingBowser's rating: 1465 &rarr; <strong>1493<\/strong><br \/>(+28 for winning)

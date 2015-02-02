@@ -1,0 +1,655 @@
+|join|GreenBuildZiggs
+|join|Pseudo-Yoik
+|player|p1|GreenBuildZiggs|2
+|player|p2|Pseudo-Yoik|148
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Beedrill, F
+|poke|p1|Raikou
+|poke|p1|Donphan, M
+|poke|p1|Florges, F
+|poke|p1|Trevenant, M
+|poke|p1|Hydreigon, M
+|poke|p2|Hydreigon, M
+|poke|p2|Audino, M
+|poke|p2|Empoleon, M
+|poke|p2|Chesnaught, M
+|poke|p2|Rotom-Heat
+|poke|p2|Doublade, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Raikou|Raikou|321\/321
+|switch|p2a: Rotom-Heat|Rotom-Heat|289\/289
+|-ability|p1a: Raikou|Pressure
+|turn|1
+|
+|move|p1a: Raikou|Volt Switch|p2a: Rotom-Heat
+|-resisted|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|239\/289
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Rotom-Heat|Trick|p1a: Florges
+|-activate|p2a: Rotom-Heat|move: Trick|[of] p1a: Florges
+|-item|p1a: Florges|Choice Specs|[from] move: Trick
+|-item|p2a: Rotom-Heat|Leftovers|[from] move: Trick
+|
+|-heal|p2a: Rotom-Heat|257\/289|[from] item: Leftovers
+|turn|2
+|
+|move|p2a: Rotom-Heat|Thunderbolt|p1a: Florges
+|-crit|p1a: Florges
+|-damage|p1a: Florges|237\/360
+|move|p1a: Florges|Moonblast|p2a: Rotom-Heat
+|-resisted|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|172\/289
+|-unboost|p2a: Rotom-Heat|spa|1
+|
+|-heal|p2a: Rotom-Heat|190\/289|[from] item: Leftovers
+|turn|3
+|
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Florges
+|-damage|p1a: Florges|198\/360
+|
+|switch|p2a: Empoleon|Empoleon, M|369\/369
+|move|p1a: Florges|Moonblast|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|303\/369
+|
+|-heal|p2a: Empoleon|326\/369|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Raikou|Raikou|321\/321
+|-ability|p1a: Raikou|Pressure
+|move|p2a: Empoleon|Stealth Rock|p1a: Raikou
+|-sidestart|p1: GreenBuildZiggs|move: Stealth Rock
+|
+|-heal|p2a: Empoleon|349\/369|[from] item: Leftovers
+|turn|5
+|
+|move|p1a: Raikou|Volt Switch|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|175\/369
+|
+|switch|p1a: Trevenant|Trevenant, M|374\/374
+|-damage|p1a: Trevenant|328\/374|[from] Stealth Rock
+|move|p2a: Empoleon|Scald|p1a: Trevenant
+|-resisted|p1a: Trevenant
+|-damage|p1a: Trevenant|263\/374
+|
+|-heal|p2a: Empoleon|198\/369|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|190\/289
+|move|p1a: Trevenant|Leech Seed|p2a: Rotom-Heat
+|-start|p2a: Rotom-Heat|move: Leech Seed
+|
+|-heal|p2a: Rotom-Heat|208\/289|[from] item: Leftovers
+|-damage|p2a: Rotom-Heat|172\/289|[from] Leech Seed|[of] p1a: Trevenant
+|-heal|p1a: Trevenant|299\/374|[silent]
+|turn|7
+|
+|switch|p1a: Florges|Florges, F|198\/360
+|-damage|p1a: Florges|153\/360|[from] Stealth Rock
+|move|p2a: Rotom-Heat|Trick|p1a: Florges
+|-activate|p2a: Rotom-Heat|move: Trick|[of] p1a: Florges
+|-item|p1a: Florges|Leftovers|[from] move: Trick
+|-item|p2a: Rotom-Heat|Choice Specs|[from] move: Trick
+|
+|-heal|p1a: Florges|175\/360|[from] item: Leftovers
+|-damage|p2a: Rotom-Heat|136\/289|[from] Leech Seed|[of] p1a: Florges
+|-heal|p1a: Florges|211\/360|[silent]
+|turn|8
+|
+|switch|p2a: Empoleon|Empoleon, M|198\/369
+|move|p1a: Florges|Protect|p1a: Florges
+|-fail|p1a: Florges
+|
+|-heal|p1a: Florges|233\/360|[from] item: Leftovers
+|-heal|p2a: Empoleon|221\/369|[from] item: Leftovers
+|turn|9
+|
+|move|p1a: Florges|Wish|p1a: Florges
+|move|p2a: Empoleon|Scald|p1a: Florges
+|-damage|p1a: Florges|179\/360
+|
+|-heal|p1a: Florges|201\/360|[from] item: Leftovers
+|-heal|p2a: Empoleon|244\/369|[from] item: Leftovers
+|turn|10
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Empoleon|Roar|p1a: Florges
+|drag|p1a: Donphan|Donphan, M|384\/384
+|-damage|p1a: Donphan|360\/384|[from] Stealth Rock
+|
+|-heal|p1a: Donphan|384\/384|[from] move: Wish|[wisher] Florges
+|-heal|p2a: Empoleon|267\/369|[from] item: Leftovers
+|turn|11
+|
+|move|p2a: Empoleon|Scald|p1a: Donphan
+|-supereffective|p1a: Donphan
+|-damage|p1a: Donphan|88\/384
+|move|p1a: Donphan|Earthquake|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|0 fnt
+|faint|p2a: Empoleon
+|
+|-heal|p1a: Donphan|112\/384|[from] item: Leftovers
+|
+|switch|p2a: Chesnaught|Chesnaught, M|369\/369
+|turn|12
+|
+|switch|p1a: Trevenant|Trevenant, M|299\/374
+|-damage|p1a: Trevenant|253\/374|[from] Stealth Rock
+|move|p2a: Chesnaught|Wood Hammer|p1a: Trevenant
+|-resisted|p1a: Trevenant
+|-damage|p1a: Trevenant|189\/374
+|-damage|p2a: Chesnaught|348\/369|[from] recoil|[of] p1a: Trevenant
+|
+|-heal|p2a: Chesnaught|369\/369|[from] item: Leftovers
+|turn|13
+|
+|move|p2a: Chesnaught|Substitute|p2a: Chesnaught
+|-start|p2a: Chesnaught|Substitute
+|-damage|p2a: Chesnaught|277\/369
+|move|p1a: Trevenant|Leech Seed|p2a: Chesnaught
+|-immune|p2a: Chesnaught|[msg]
+|
+|-heal|p2a: Chesnaught|300\/369|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Chesnaught|Wood Hammer|p1a: Trevenant
+|-resisted|p1a: Trevenant
+|-damage|p1a: Trevenant|123\/374
+|-damage|p2a: Chesnaught|278\/369|[from] recoil|[of] p1a: Trevenant
+|move|p1a: Trevenant|Horn Leech|p2a: Chesnaught
+|-resisted|p2a: Chesnaught
+|-activate|p2a: Chesnaught|Substitute|[damage]
+|-heal|p1a: Trevenant|137\/374|[from] drain|[of] p2a: Chesnaught
+|
+|-heal|p2a: Chesnaught|301\/369|[from] item: Leftovers
+|turn|15
+|
+|move|p2a: Chesnaught|Wood Hammer|p1a: Trevenant
+|-resisted|p1a: Trevenant
+|-damage|p1a: Trevenant|67\/374
+|-damage|p2a: Chesnaught|278\/369|[from] recoil|[of] p1a: Trevenant
+|move|p1a: Trevenant|Horn Leech|p2a: Chesnaught
+|-resisted|p2a: Chesnaught
+|-activate|p2a: Chesnaught|Substitute|[damage]
+|-heal|p1a: Trevenant|84\/374|[from] drain|[of] p2a: Chesnaught
+|
+|-heal|p2a: Chesnaught|301\/369|[from] item: Leftovers
+|turn|16
+|
+|move|p2a: Chesnaught|Wood Hammer|p1a: Trevenant
+|-resisted|p1a: Trevenant
+|-damage|p1a: Trevenant|12\/374
+|-damage|p2a: Chesnaught|277\/369|[from] recoil|[of] p1a: Trevenant
+|move|p1a: Trevenant|Rest|p1a: Trevenant
+|-status|p1a: Trevenant|slp
+|-heal|p1a: Trevenant|374\/374 slp|[silent]
+|-status|p1a: Trevenant|slp|[from] move: Rest
+|-enditem|p1a: Trevenant|Lum Berry|[eat]
+|-curestatus|p1a: Trevenant|slp
+|
+|-heal|p2a: Chesnaught|300\/369|[from] item: Leftovers
+|-item|p1a: Trevenant|Lum Berry|[from] ability: Harvest
+|turn|17
+|
+|-singleturn|p2a: Chesnaught|move: Focus Punch
+|move|p1a: Trevenant|Horn Leech|p2a: Chesnaught
+|-resisted|p2a: Chesnaught
+|-activate|p2a: Chesnaught|Substitute|[damage]
+|move|p2a: Chesnaught|Focus Punch|p1a: Trevenant
+|-immune|p1a: Trevenant|[msg]
+|
+|-heal|p2a: Chesnaught|323\/369|[from] item: Leftovers
+|turn|18
+|
+|-singleturn|p2a: Chesnaught|move: Focus Punch
+|move|p1a: Trevenant|Horn Leech|p2a: Chesnaught
+|-resisted|p2a: Chesnaught
+|-end|p2a: Chesnaught|Substitute
+|move|p2a: Chesnaught|Focus Punch|p1a: Trevenant
+|-immune|p1a: Trevenant|[msg]
+|
+|-heal|p2a: Chesnaught|346\/369|[from] item: Leftovers
+|turn|19
+|
+|move|p2a: Chesnaught|Substitute|p2a: Chesnaught
+|-start|p2a: Chesnaught|Substitute
+|-damage|p2a: Chesnaught|254\/369
+|move|p1a: Trevenant|Will-O-Wisp|p2a: Chesnaught
+|
+|-heal|p2a: Chesnaught|277\/369|[from] item: Leftovers
+|turn|20
+|c|âGreenBuildZiggs|Are we really doing this?
+|
+|-singleturn|p2a: Chesnaught|move: Focus Punch
+|move|p1a: Trevenant|Horn Leech|p2a: Chesnaught
+|-crit|p2a: Chesnaught
+|-resisted|p2a: Chesnaught
+|-activate|p2a: Chesnaught|Substitute|[damage]
+|move|p2a: Chesnaught|Focus Punch|p1a: Trevenant
+|-immune|p1a: Trevenant|[msg]
+|
+|-heal|p2a: Chesnaught|300\/369|[from] item: Leftovers
+|turn|21
+|c|âPseudo-Yoik|Well
+|c|âPseudo-Yoik|You can't do anything with Chesnaught
+|c|âGreenBuildZiggs|And you cant touch my trevenant
+|
+|-singleturn|p2a: Chesnaught|move: Focus Punch
+|move|p1a: Trevenant|Horn Leech|p2a: Chesnaught
+|-crit|p2a: Chesnaught
+|-resisted|p2a: Chesnaught
+|-end|p2a: Chesnaught|Substitute
+|move|p2a: Chesnaught|Focus Punch|p1a: Trevenant
+|-immune|p1a: Trevenant|[msg]
+|
+|-heal|p2a: Chesnaught|323\/369|[from] item: Leftovers
+|turn|22
+|c|âPseudo-Yoik|Exactly =)))
+|c|âPseudo-Yoik|Let's see who has the patience =)))
+|
+|switch|p1a: Beedrill|Beedrill, F|271\/271
+|-damage|p1a: Beedrill|204\/271|[from] Stealth Rock
+|move|p2a: Chesnaught|Substitute|p2a: Chesnaught
+|-start|p2a: Chesnaught|Substitute
+|-damage|p2a: Chesnaught|231\/369
+|
+|-heal|p2a: Chesnaught|254\/369|[from] item: Leftovers
+|turn|23
+|
+|detailschange|p1a: Beedrill|Beedrill-Mega, F
+|-mega|p1a: Beedrill|Beedrill|Beedrillite
+|move|p1a: Beedrill|U-turn|p2a: Chesnaught
+|-end|p2a: Chesnaught|Substitute
+|
+|switch|p1a: Hydreigon|Hydreigon, M|325\/325
+|-damage|p1a: Hydreigon|285\/325|[from] Stealth Rock
+|move|p2a: Chesnaught|Leech Seed|p1a: Hydreigon
+|-start|p1a: Hydreigon|move: Leech Seed
+|
+|-heal|p2a: Chesnaught|277\/369|[from] item: Leftovers
+|-damage|p1a: Hydreigon|245\/325|[from] Leech Seed|[of] p2a: Chesnaught
+|-heal|p2a: Chesnaught|317\/369|[silent]
+|turn|24
+|
+|switch|p2a: Audino|Audino, M|401\/401
+|move|p1a: Hydreigon|Fire Blast|p2a: Audino
+|-damage|p2a: Audino|237\/401
+|
+|-damage|p1a: Hydreigon|205\/325|[from] Leech Seed|[of] p2a: Audino
+|-heal|p2a: Audino|277\/401|[silent]
+|turn|25
+|
+|switch|p1a: Donphan|Donphan, M|112\/384
+|-damage|p1a: Donphan|88\/384|[from] Stealth Rock
+|detailschange|p2a: Audino|Audino-Mega, M
+|-mega|p2a: Audino|Audino|Audinite
+|move|p2a: Audino|Dazzling Gleam|p1a: Donphan
+|-damage|p1a: Donphan|0 fnt
+|faint|p1a: Donphan
+|
+|
+|switch|p1a: Beedrill|Beedrill-Mega, F|204\/271
+|-damage|p1a: Beedrill|137\/271|[from] Stealth Rock
+|turn|26
+|
+|switch|p2a: Doublade|Doublade, M|321\/321
+|move|p1a: Beedrill|U-turn|p2a: Doublade
+|-resisted|p2a: Doublade
+|-damage|p2a: Doublade|301\/321
+|
+|switch|p1a: Hydreigon|Hydreigon, M|205\/325
+|-damage|p1a: Hydreigon|165\/325|[from] Stealth Rock
+|
+|turn|27
+|
+|switch|p2a: Audino|Audino-Mega, M|277\/401
+|move|p1a: Hydreigon|Fire Blast|p2a: Audino
+|-damage|p2a: Audino|170\/401
+|
+|turn|28
+|
+|move|p1a: Hydreigon|Fire Blast|p2a: Audino
+|-damage|p2a: Audino|52\/401
+|move|p2a: Audino|Rest|p2a: Audino
+|-status|p2a: Audino|slp
+|-heal|p2a: Audino|401\/401 slp|[silent]
+|-status|p2a: Audino|slp|[from] move: Rest
+|
+|turn|29
+|
+|switch|p1a: Trevenant|Trevenant, M|374\/374
+|-damage|p1a: Trevenant|328\/374|[from] Stealth Rock
+|cant|p2a: Audino|slp
+|move|p2a: Audino|Sleep Talk|p2a: Audino
+|move|p2a: Audino|Heal Bell|p2a: Audino|[from]Sleep Talk
+|-cureteam|p2a: Audino|[from] move: HealBell
+|
+|turn|30
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|136\/289
+|move|p1a: Trevenant|Will-O-Wisp|p2a: Rotom-Heat
+|-fail|p2a: Rotom-Heat
+|
+|turn|31
+|
+|switch|p1a: Hydreigon|Hydreigon, M|165\/325
+|-damage|p1a: Hydreigon|125\/325|[from] Stealth Rock
+|move|p2a: Rotom-Heat|Overheat|p1a: Hydreigon|[miss]
+|-miss|p2a: Rotom-Heat|p1a: Hydreigon
+|
+|turn|32
+|
+|switch|p2a: Audino|Audino-Mega, M|401\/401
+|move|p1a: Hydreigon|Dark Pulse|p2a: Audino
+|-resisted|p2a: Audino
+|-damage|p2a: Audino|342\/401
+|
+|turn|33
+|c|âPseudo-Yoik|#why
+|
+|switch|p1a: Beedrill|Beedrill-Mega, F|137\/271
+|-damage|p1a: Beedrill|70\/271|[from] Stealth Rock
+|move|p2a: Audino|Dazzling Gleam|p1a: Beedrill
+|-resisted|p1a: Beedrill
+|-damage|p1a: Beedrill|26\/271
+|
+|turn|34
+|
+|switch|p2a: Doublade|Doublade, M|301\/321
+|move|p1a: Beedrill|X-Scissor|p2a: Doublade
+|-resisted|p2a: Doublade
+|-damage|p2a: Doublade|276\/321
+|
+|turn|35
+|
+|move|p1a: Beedrill|Protect|p1a: Beedrill
+|-singleturn|p1a: Beedrill|Protect
+|move|p2a: Doublade|Shadow Sneak|p1a: Beedrill
+|-activate|p1a: Beedrill|Protect
+|
+|turn|36
+|
+|move|p1a: Beedrill|Protect|p1a: Beedrill
+|-singleturn|p1a: Beedrill|Protect
+|move|p2a: Doublade|Shadow Sneak|p1a: Beedrill
+|-activate|p1a: Beedrill|Protect
+|
+|turn|37
+|
+|move|p1a: Beedrill|Protect|p1a: Beedrill
+|-fail|p1a: Beedrill
+|move|p2a: Doublade|Gyro Ball|p1a: Beedrill
+|-damage|p1a: Beedrill|0 fnt
+|faint|p1a: Beedrill
+|
+|
+|switch|p1a: Raikou|Raikou|321\/321
+|-damage|p1a: Raikou|281\/321|[from] Stealth Rock
+|-ability|p1a: Raikou|Pressure
+|turn|38
+|
+|switch|p2a: Audino|Audino-Mega, M|342\/401
+|move|p1a: Raikou|Thunderbolt|p2a: Audino
+|-damage|p2a: Audino|258\/401
+|
+|turn|39
+|
+|move|p1a: Raikou|Thunderbolt|p2a: Audino
+|-damage|p2a: Audino|159\/401
+|move|p2a: Audino|Dazzling Gleam|p1a: Raikou
+|-damage|p1a: Raikou|205\/321
+|
+|turn|40
+|
+|move|p1a: Raikou|Thunderbolt|p2a: Audino
+|-damage|p2a: Audino|72\/401
+|move|p2a: Audino|Rest|p2a: Audino
+|-status|p2a: Audino|slp
+|-heal|p2a: Audino|401\/401 slp|[silent]
+|-status|p2a: Audino|slp|[from] move: Rest
+|
+|turn|41
+|
+|move|p1a: Raikou|Thunderbolt|p2a: Audino
+|-damage|p2a: Audino|316\/401 slp
+|cant|p2a: Audino|slp
+|move|p2a: Audino|Sleep Talk|p2a: Audino
+|move|p2a: Audino|Heal Bell|p2a: Audino|[from]Sleep Talk
+|-cureteam|p2a: Audino|[from] move: HealBell
+|
+|turn|42
+|
+|move|p1a: Raikou|Thunderbolt|p2a: Audino
+|-damage|p2a: Audino|232\/401
+|-status|p2a: Audino|par
+|move|p2a: Audino|Dazzling Gleam|p1a: Raikou
+|-damage|p1a: Raikou|129\/321
+|
+|turn|43
+|
+|move|p1a: Raikou|Thunderbolt|p2a: Audino
+|-damage|p2a: Audino|148\/401 par
+|move|p2a: Audino|Rest|p2a: Audino
+|-status|p2a: Audino|slp
+|-heal|p2a: Audino|401\/401 slp|[silent]
+|-status|p2a: Audino|slp|[from] move: Rest
+|
+|turn|44
+|
+|move|p1a: Raikou|Thunderbolt|p2a: Audino
+|-damage|p2a: Audino|308\/401 slp
+|cant|p2a: Audino|slp
+|move|p2a: Audino|Sleep Talk|p2a: Audino
+|move|p2a: Audino|Heal Bell|p2a: Audino|[from]Sleep Talk
+|-cureteam|p2a: Audino|[from] move: HealBell
+|
+|turn|45
+|
+|move|p1a: Raikou|Thunderbolt|p2a: Audino
+|-damage|p2a: Audino|212\/401
+|move|p2a: Audino|Dazzling Gleam|p1a: Raikou
+|-damage|p1a: Raikou|50\/321
+|
+|turn|46
+|
+|move|p1a: Raikou|Thunderbolt|p2a: Audino
+|-damage|p2a: Audino|125\/401
+|move|p2a: Audino|Rest|p2a: Audino
+|-status|p2a: Audino|slp
+|-heal|p2a: Audino|401\/401 slp|[silent]
+|-status|p2a: Audino|slp|[from] move: Rest
+|
+|turn|47
+|
+|move|p1a: Raikou|Thunderbolt|p2a: Audino
+|-damage|p2a: Audino|311\/401 slp
+|cant|p2a: Audino|slp
+|move|p2a: Audino|Sleep Talk|p2a: Audino
+|move|p2a: Audino|Rest|p2a: Audino|[from]Sleep Talk
+|-fail|p2a: Audino
+|
+|turn|48
+|
+|move|p1a: Raikou|Thunderbolt|p2a: Audino
+|-damage|p2a: Audino|215\/401 slp
+|cant|p2a: Audino|slp
+|move|p2a: Audino|Sleep Talk|p2a: Audino
+|move|p2a: Audino|Dazzling Gleam|p1a: Raikou|[from]Sleep Talk
+|-damage|p1a: Raikou|0 fnt
+|faint|p1a: Raikou
+|
+|
+|switch|p1a: Trevenant|Trevenant, M|328\/374
+|-damage|p1a: Trevenant|282\/374|[from] Stealth Rock
+|turn|49
+|
+|switch|p2a: Chesnaught|Chesnaught, M|317\/369
+|move|p1a: Trevenant|Will-O-Wisp|p2a: Chesnaught
+|-status|p2a: Chesnaught|brn
+|
+|-heal|p2a: Chesnaught|340\/369 brn|[from] item: Leftovers
+|-damage|p2a: Chesnaught|294\/369 brn|[from] brn
+|turn|50
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|136\/289
+|move|p1a: Trevenant|Leech Seed|p2a: Rotom-Heat
+|-start|p2a: Rotom-Heat|move: Leech Seed
+|
+|-damage|p2a: Rotom-Heat|100\/289|[from] Leech Seed|[of] p1a: Trevenant
+|-heal|p1a: Trevenant|318\/374|[silent]
+|turn|51
+|
+|switch|p1a: Florges|Florges, F|201\/360
+|-damage|p1a: Florges|156\/360|[from] Stealth Rock
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Florges
+|-damage|p1a: Florges|68\/360
+|
+|switch|p2a: Doublade|Doublade, M|276\/321
+|
+|-heal|p1a: Florges|90\/360|[from] item: Leftovers
+|turn|52
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Doublade|Gyro Ball|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-heal|p1a: Florges|112\/360|[from] item: Leftovers
+|turn|53
+|
+|switch|p1a: Trevenant|Trevenant, M|318\/374
+|-damage|p1a: Trevenant|272\/374|[from] Stealth Rock
+|move|p2a: Doublade|Gyro Ball|p1a: Trevenant
+|-crit|p1a: Trevenant
+|-damage|p1a: Trevenant|173\/374
+|
+|turn|54
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|100\/289
+|move|p1a: Trevenant|Will-O-Wisp|p2a: Rotom-Heat|[miss]
+|-miss|p1a: Trevenant|p2a: Rotom-Heat
+|
+|turn|55
+|
+|move|p2a: Rotom-Heat|Thunderbolt|p1a: Trevenant
+|-resisted|p1a: Trevenant
+|-damage|p1a: Trevenant|44\/374
+|move|p1a: Trevenant|Rest|p1a: Trevenant
+|-status|p1a: Trevenant|slp
+|-heal|p1a: Trevenant|374\/374 slp|[silent]
+|-status|p1a: Trevenant|slp|[from] move: Rest
+|-enditem|p1a: Trevenant|Lum Berry|[eat]
+|-curestatus|p1a: Trevenant|slp
+|
+|-item|p1a: Trevenant|Lum Berry|[from] ability: Harvest
+|turn|56
+|
+|switch|p2a: Audino|Audino-Mega, M|215\/401 slp
+|switch|p1a: Hydreigon|Hydreigon, M|125\/325
+|-damage|p1a: Hydreigon|85\/325|[from] Stealth Rock
+|
+|turn|57
+|
+|move|p1a: Hydreigon|Earth Power|p2a: Audino
+|-damage|p2a: Audino|113\/401 slp
+|-curestatus|p2a: Audino|slp
+|move|p2a: Audino|Heal Bell|p2a: Audino
+|-cureteam|p2a: Audino|[from] move: HealBell
+|
+|turn|58
+|
+|move|p1a: Hydreigon|Earth Power|p2a: Audino
+|-crit|p2a: Audino
+|-damage|p2a: Audino|0 fnt
+|faint|p2a: Audino
+|
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|100\/289
+|turn|59
+|
+|switch|p1a: Florges|Florges, F|112\/360
+|-damage|p1a: Florges|67\/360|[from] Stealth Rock
+|move|p2a: Rotom-Heat|Thunderbolt|p1a: Florges
+|-damage|p1a: Florges|0 fnt
+|faint|p1a: Florges
+|
+|
+|switch|p1a: Hydreigon|Hydreigon, M|85\/325
+|-damage|p1a: Hydreigon|45\/325|[from] Stealth Rock
+|turn|60
+|
+|switch|p2a: Chesnaught|Chesnaught, M|294\/369
+|move|p1a: Hydreigon|Dark Pulse|p2a: Chesnaught
+|-resisted|p2a: Chesnaught
+|-damage|p2a: Chesnaught|169\/369
+|
+|-heal|p2a: Chesnaught|192\/369|[from] item: Leftovers
+|turn|61
+|
+|move|p1a: Hydreigon|Dark Pulse|p2a: Chesnaught
+|-resisted|p2a: Chesnaught
+|-damage|p2a: Chesnaught|69\/369
+|move|p2a: Chesnaught|Wood Hammer|p1a: Hydreigon
+|-resisted|p1a: Hydreigon
+|-damage|p1a: Hydreigon|0 fnt
+|-damage|p2a: Chesnaught|54\/369|[from] recoil|[of] p1a: Hydreigon
+|faint|p1a: Hydreigon
+|
+|-heal|p2a: Chesnaught|77\/369|[from] item: Leftovers
+|
+|switch|p1a: Trevenant|Trevenant, M|374\/374
+|-damage|p1a: Trevenant|328\/374|[from] Stealth Rock
+|turn|62
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|100\/289
+|move|p1a: Trevenant|Will-O-Wisp|p2a: Rotom-Heat
+|-fail|p2a: Rotom-Heat
+|
+|turn|63
+|
+|move|p2a: Rotom-Heat|Trick|p1a: Trevenant
+|-activate|p2a: Rotom-Heat|move: Trick|[of] p1a: Trevenant
+|-item|p1a: Trevenant|Choice Specs|[from] move: Trick
+|-item|p2a: Rotom-Heat|Lum Berry|[from] move: Trick
+|move|p1a: Trevenant|Rest|p1a: Trevenant
+|-status|p1a: Trevenant|slp
+|-heal|p1a: Trevenant|374\/374 slp|[silent]
+|-status|p1a: Trevenant|slp|[from] move: Rest
+|
+|turn|64
+|
+|move|p2a: Rotom-Heat|Overheat|p1a: Trevenant
+|-crit|p1a: Trevenant
+|-supereffective|p1a: Trevenant
+|-damage|p1a: Trevenant|0 fnt
+|-unboost|p2a: Rotom-Heat|spa|2
+|faint|p1a: Trevenant
+|
+|win|Pseudo-Yoik
+|raw|Ladder updating...
+|c|âPseudo-Yoik|GG
+|raw|GreenBuildZiggs's rating: 1258 &rarr; <strong>1238<\/strong><br \/>(-20 for losing)
+|raw|Pseudo-Yoik's rating: 1322 &rarr; <strong>1338<\/strong><br \/>(+16 for winning)
+|c|âGreenBuildZiggs|kys
+|c|âPseudo-Yoik|?
+|c|âGreenBuildZiggs|Kill yourself
+|c|âPseudo-Yoik|lel k

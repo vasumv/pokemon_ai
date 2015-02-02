@@ -1,0 +1,364 @@
+|join|Fenix-
+|join|fastgills
+|player|p1|Fenix-|170
+|player|p2|fastgills|168
+|gametype|singles
+|tier|[Gen 5] OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Politoed, F
+|poke|p1|Dugtrio, F
+|poke|p1|Jirachi
+|poke|p1|Tentacruel, F
+|poke|p1|Latios, M
+|poke|p1|Dragonite, M
+|poke|p2|Tyranitar, M
+|poke|p2|Landorus-Therian, M
+|poke|p2|Rotom-Wash
+|poke|p2|Keldeo
+|poke|p2|Latios, M
+|poke|p2|Conkeldurr, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|join|bootycalls
+|
+|start
+|switch|p1a: Latios|Latios, M|302\/302
+|switch|p2a: Sagan|Rotom-Wash|241\/241
+|turn|1
+|callback|decision
+|
+|switch|p2a: Massa|Tyranitar, M|404\/404
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Massa
+|move|p1a: Latios|Draco Meteor|p2a: Massa
+|-damage|p2a: Massa|229\/404
+|-unboost|p1a: Latios|spa|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latios|284\/302|[from] sandstorm
+|turn|2
+|callback|decision
+|
+|switch|p1a: Dugtrio|Dugtrio, F|211\/211
+|switch|p2a: Lil' Terio|Landorus-Therian, M|319\/319
+|-ability|p2a: Lil' Terio|Intimidate|[of] p1a: Dugtrio
+|-unboost|p1a: Dugtrio|atk|1
+|
+|-weather|Sandstorm|[upkeep]
+|turn|3
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, M|386\/386
+|move|p2a: Lil' Terio|Stealth Rock|p1a: Dragonite
+|-sidestart|p1: Fenix-|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Dragonite|362\/386|[from] sandstorm
+|-heal|p1a: Dragonite|386\/386|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Lil' Terio|U-turn|p1a: Dragonite
+|-resisted|p1a: Dragonite
+|-damage|p1a: Dragonite|363\/386
+|callback|decision
+|
+|switch|p2a: CrusherHogan|Conkeldurr, F|414\/414
+|move|p1a: Dragonite|Dragon Dance|p1a: Dragonite
+|-boost|p1a: Dragonite|atk|1
+|-boost|p1a: Dragonite|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Dragonite|339\/386|[from] sandstorm
+|-damage|p2a: CrusherHogan|389\/414|[from] sandstorm
+|-heal|p1a: Dragonite|363\/386|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p1a: Dragonite|Substitute|p1a: Dragonite
+|-start|p1a: Dragonite|Substitute
+|-damage|p1a: Dragonite|267\/386
+|move|p2a: CrusherHogan|Ice Punch|p1a: Dragonite
+|-supereffective|p1a: Dragonite
+|-end|p1a: Dragonite|Substitute
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Dragonite|243\/386|[from] sandstorm
+|-damage|p2a: CrusherHogan|364\/414|[from] sandstorm
+|-heal|p1a: Dragonite|267\/386|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p1a: Dragonite|Roost|p1a: Dragonite
+|-heal|p1a: Dragonite|386\/386
+|move|p2a: CrusherHogan|Ice Punch|p1a: Dragonite
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|213\/386
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Dragonite|189\/386|[from] sandstorm
+|-damage|p2a: CrusherHogan|339\/414|[from] sandstorm
+|-heal|p1a: Dragonite|213\/386|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p1a: Dragonite|Roost|p1a: Dragonite
+|-heal|p1a: Dragonite|386\/386
+|move|p2a: CrusherHogan|Ice Punch|p1a: Dragonite
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|213\/386
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Dragonite|189\/386|[from] sandstorm
+|-damage|p2a: CrusherHogan|314\/414|[from] sandstorm
+|-heal|p1a: Dragonite|213\/386|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p1a: Tentacruel|Tentacruel, F|363\/363
+|-damage|p1a: Tentacruel|318\/363|[from] Stealth Rock
+|move|p2a: CrusherHogan|Ice Punch|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|226\/363
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Tentacruel|204\/363|[from] sandstorm
+|-damage|p2a: CrusherHogan|289\/414|[from] sandstorm
+|-heal|p1a: Tentacruel|226\/363|[from] item: Black Sludge
+|turn|9
+|callback|decision
+|chat|fastgills|that was the stupidest stall attempt i've ever seen
+|
+|move|p1a: Tentacruel|Rapid Spin|p2a: CrusherHogan
+|-damage|p2a: CrusherHogan|278\/414
+|-sideend|p1: Fenix-|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Tentacruel
+|move|p2a: CrusherHogan|Thunder Punch|p1a: Tentacruel
+|-supereffective|p1a: Tentacruel
+|-damage|p1a: Tentacruel|0 fnt
+|faint|p1a: Tentacruel
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: CrusherHogan|253\/414|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M|284\/302
+|turn|10
+|callback|decision
+|
+|switch|p2a: Sagan|Rotom-Wash|241\/241
+|move|p1a: Latios|Draco Meteor|p2a: Sagan
+|-damage|p2a: Sagan|18\/241
+|-unboost|p1a: Latios|spa|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latios|266\/302|[from] sandstorm
+|-damage|p2a: Sagan|3\/241|[from] sandstorm
+|turn|11
+|callback|decision
+|
+|move|p1a: Latios|Draco Meteor|p2a: Sagan
+|-damage|p2a: Sagan|0 fnt
+|-unboost|p1a: Latios|spa|2
+|faint|p2a: Sagan
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latios|248\/302|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: Lil' Terio|Landorus-Therian, M|319\/319
+|-ability|p2a: Lil' Terio|Intimidate|[of] p1a: Latios
+|-unboost|p1a: Latios|atk|1
+|turn|12
+|callback|decision
+|
+|switch|p1a: Politoed|Politoed, F|384\/384
+|-weather|RainDance|[from] ability: Drizzle|[of] p1a: Politoed
+|move|p2a: Lil' Terio|Stealth Rock|p1a: Politoed
+|-sidestart|p1: Fenix-|move: Stealth Rock
+|
+|-weather|RainDance|[upkeep]
+|turn|13
+|callback|decision
+|
+|move|p2a: Lil' Terio|U-turn|p1a: Politoed
+|-damage|p1a: Politoed|310\/384
+|callback|decision
+|
+|switch|p2a: Baenihime|Latios, M|302\/302
+|move|p1a: Politoed|Scald|p2a: Baenihime
+|-resisted|p2a: Baenihime
+|-damage|p2a: Baenihime|244\/302
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Politoed|334\/384|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p1a: Jirachi|Jirachi|404\/404
+|-damage|p1a: Jirachi|379\/404|[from] Stealth Rock
+|move|p2a: Baenihime|Draco Meteor|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|198\/404
+|-unboost|p2a: Baenihime|spa|2
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Jirachi|223\/404|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|switch|p2a: Stony|Keldeo|323\/323
+|switch|p1a: Dugtrio|Dugtrio, F|211\/211
+|-damage|p1a: Dugtrio|198\/211|[from] Stealth Rock
+|
+|-weather|RainDance|[upkeep]
+|turn|16
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M|248\/302
+|-damage|p1a: Latios|211\/302|[from] Stealth Rock
+|move|p2a: Stony|Surf|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|89\/302
+|
+|-weather|RainDance|[upkeep]
+|turn|17
+|callback|decision
+|
+|move|p1a: Latios|Draco Meteor|p2a: Stony
+|-damage|p2a: Stony|44\/323
+|-unboost|p1a: Latios|spa|2
+|move|p2a: Stony|Surf|p1a: Latios
+|-crit|p1a: Latios
+|-resisted|p1a: Latios
+|-damage|p1a: Latios|0 fnt
+|faint|p1a: Latios
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|chat|fastgills|scarf lol
+|
+|switch|p1a: Dragonite|Dragonite, M|213\/386
+|-damage|p1a: Dragonite|117\/386|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|switch|p2a: CrusherHogan|Conkeldurr, F|253\/414
+|move|p1a: Dragonite|Roost|p1a: Dragonite
+|-heal|p1a: Dragonite|310\/386
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Dragonite|334\/386|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|switch|p1a: Politoed|Politoed, F|334\/384
+|-damage|p1a: Politoed|286\/384|[from] Stealth Rock
+|move|p2a: CrusherHogan|Ice Punch|p1a: Politoed
+|-crit|p1a: Politoed
+|-resisted|p1a: Politoed
+|-damage|p1a: Politoed|131\/384
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Politoed|155\/384|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p1a: Politoed|Ice Beam|p2a: CrusherHogan
+|-damage|p2a: CrusherHogan|164\/414
+|move|p2a: CrusherHogan|Drain Punch|p1a: Politoed
+|-damage|p1a: Politoed|0 fnt
+|-heal|p2a: CrusherHogan|242\/414|[from] drain|[of] p1a: Politoed
+|-damage|p2a: CrusherHogan|201\/414|[from] item: Life Orb
+|faint|p1a: Politoed
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Dugtrio|Dugtrio, F|198\/211
+|-damage|p1a: Dugtrio|185\/211|[from] Stealth Rock
+|turn|21
+|callback|decision
+|
+|move|p1a: Dugtrio|Earthquake|p2a: CrusherHogan
+|-damage|p2a: CrusherHogan|68\/414
+|move|p2a: CrusherHogan|Drain Punch|p1a: Dugtrio
+|-damage|p1a: Dugtrio|0 fnt
+|-heal|p2a: CrusherHogan|161\/414|[from] drain|[of] p1a: Dugtrio
+|-damage|p2a: CrusherHogan|120\/414|[from] item: Life Orb
+|faint|p1a: Dugtrio
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Jirachi|Jirachi|223\/404
+|-damage|p1a: Jirachi|198\/404|[from] Stealth Rock
+|turn|22
+|callback|decision
+|
+|move|p1a: Jirachi|Thunder|p2a: CrusherHogan
+|-damage|p2a: CrusherHogan|0 fnt
+|faint|p2a: CrusherHogan
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Jirachi|223\/404|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Stony|Keldeo|44\/323
+|turn|23
+|callback|decision
+|
+|move|p2a: Stony|Surf|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|faint|p1a: Jirachi
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, M|334\/386
+|-damage|p1a: Dragonite|238\/386|[from] Stealth Rock
+|turn|24
+|callback|decision
+|
+|switch|p2a: Baenihime|Latios, M|244\/302
+|move|p1a: Dragonite|Roost|p1a: Dragonite
+|-heal|p1a: Dragonite|386\/386
+|
+|-weather|RainDance|[upkeep]
+|turn|25
+|callback|decision
+|
+|move|p2a: Baenihime|Draco Meteor|p1a: Dragonite
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|53\/386
+|-unboost|p2a: Baenihime|spa|2
+|move|p1a: Dragonite|Roost|p1a: Dragonite
+|-heal|p1a: Dragonite|246\/386
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Dragonite|270\/386|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|move|p2a: Baenihime|Draco Meteor|p1a: Dragonite
+|-crit|p1a: Dragonite
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|0 fnt
+|-unboost|p2a: Baenihime|spa|2
+|faint|p1a: Dragonite
+|
+|win|fastgills
+|raw|Ladder updating...
+|leave|Fenix-
+|player|p1
+|leave|fastgills
+|player|p2
+|raw|Fenix-'s rating: 2077 &rarr; <strong>2066<\/strong><br \/>(-11 for losing)
+|raw|fastgills's rating: 1867 &rarr; <strong>1876<\/strong><br \/>(+9 for winning)
+|leave|bootycalls

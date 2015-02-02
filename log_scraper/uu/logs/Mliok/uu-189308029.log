@@ -1,0 +1,342 @@
+|join|kl0s
+|join|mliok
+|player|p1|kl0s|249
+|player|p2|mliok|2
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Suicune
+|poke|p1|Klefki, M
+|poke|p1|Spiritomb, F
+|poke|p1|Volcarona, M
+|poke|p1|Gallade, M
+|poke|p1|Gligar, F
+|poke|p2|Tangrowth, F
+|poke|p2|Milotic, M
+|poke|p2|Toxicroak, M
+|poke|p2|Jirachi
+|poke|p2|Crobat, M
+|poke|p2|Ampharos, F, shiny
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Spiritomb|Spiritomb, F|289\/289
+|switch|p2a: Ampharos|Ampharos, F, shiny|384\/384
+|turn|1
+|
+|detailschange|p2a: Ampharos|Ampharos-Mega, F, shiny
+|message|Ampharos has Mega Evolved into Mega Ampharos!
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Spiritomb|Sucker Punch|p2a: Ampharos
+|-damage|p2a: Ampharos|312\/384
+|move|p2a: Ampharos|Volt Switch|p1a: Spiritomb
+|-damage|p1a: Spiritomb|199\/289
+|
+|switch|p2a: Tangrowth|Tangrowth, F|404\/404
+|
+|-heal|p1a: Spiritomb|217\/289|[from] item: Leftovers
+|turn|2
+|
+|move|p2a: Tangrowth|Toxic|p1a: Spiritomb
+|-status|p1a: Spiritomb|tox
+|move|p1a: Spiritomb|Will-O-Wisp|p2a: Tangrowth
+|-status|p2a: Tangrowth|brn
+|
+|-heal|p1a: Spiritomb|235\/289 tox|[from] item: Leftovers
+|-damage|p2a: Tangrowth|354\/404 brn|[from] brn
+|-damage|p1a: Spiritomb|217\/289 tox|[from] psn
+|turn|3
+|
+|switch|p1a: Klefki|Klefki, M|318\/318
+|move|p2a: Tangrowth|Knock Off|p1a: Klefki
+|-resisted|p1a: Klefki
+|-damage|p1a: Klefki|303\/318
+|-enditem|p1a: Klefki|Light Clay|[from] move: Knock Off|[of] p2a: Tangrowth
+|
+|-damage|p2a: Tangrowth|304\/404 brn|[from] brn
+|turn|4
+|
+|switch|p2a: Jirachi|Jirachi|404\/404
+|move|p1a: Klefki|Reflect|p1a: Klefki
+|-sidestart|p1: kl0s|Reflect
+|
+|turn|5
+|
+|move|p1a: Klefki|Thunder Wave|p2a: Jirachi
+|-status|p2a: Jirachi|par
+|move|p2a: Jirachi|Stealth Rock|p1a: Klefki
+|-sidestart|p1: kl0s|move: Stealth Rock
+|
+|turn|6
+|
+|move|p1a: Klefki|Spikes|p2a: Jirachi
+|-sidestart|p2: mliok|Spikes
+|move|p2a: Jirachi|Thunder Wave|p1a: Klefki
+|-status|p1a: Klefki|par
+|
+|turn|7
+|
+|cant|p1a: Klefki|par
+|move|p2a: Jirachi|Iron Head|p1a: Klefki
+|-damage|p1a: Klefki|270\/318 par
+|
+|turn|8
+|
+|move|p1a: Klefki|Spikes|p2a: Jirachi
+|-sidestart|p2: mliok|Spikes
+|cant|p2a: Jirachi|par
+|
+|-sideend|p1: kl0s|Reflect
+|turn|9
+|
+|move|p1a: Klefki|Reflect|p1a: Klefki
+|-sidestart|p1: kl0s|Reflect
+|move|p2a: Jirachi|Iron Head|p1a: Klefki
+|-damage|p1a: Klefki|237\/318 par
+|
+|turn|10
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F, shiny|312\/384
+|-damage|p2a: Ampharos|248\/384|[from] Spikes
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Klefki|Spikes|p2a: Ampharos
+|-sidestart|p2: mliok|Spikes
+|
+|turn|11
+|
+|move|p1a: Klefki|Light Screen|p1a: Klefki
+|-sidestart|p1: kl0s|move: Light Screen
+|move|p2a: Ampharos|Volt Switch|p1a: Klefki
+|-damage|p1a: Klefki|165\/318 par
+|
+|switch|p2a: Crobat|Crobat, M|373\/373
+|
+|turn|12
+|
+|move|p1a: Klefki|Thunder Wave|p2a: Crobat
+|-status|p2a: Crobat|par
+|cant|p2a: Crobat|par
+|
+|turn|13
+|
+|switch|p1a: Suicune|Suicune|403\/403
+|-damage|p1a: Suicune|353\/403|[from] Stealth Rock
+|-ability|p1a: Suicune|Pressure
+|cant|p2a: Crobat|par
+|
+|-heal|p1a: Suicune|378\/403|[from] item: Leftovers
+|-sideend|p1: kl0s|Reflect
+|turn|14
+|
+|move|p1a: Suicune|Calm Mind|p1a: Suicune
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|move|p2a: Crobat|Defog|p1a: Suicune
+|-unboost|p1a: Suicune|evasion|1
+|-sideend|p1: kl0s|move: Light Screen
+|-sideend|p1: kl0s|Light Screen|[from] move: Defog|[of] p1a: Suicune
+|-sideend|p1: kl0s|Stealth Rock|[from] move: Defog|[of] p1a: Suicune
+|-sideend|p2: mliok|Spikes|[from] move: Defog|[of] p2a: Crobat
+|
+|-heal|p1a: Suicune|403\/403|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Suicune|Substitute|p1a: Suicune
+|-start|p1a: Suicune|Substitute
+|-damage|p1a: Suicune|303\/403
+|move|p2a: Crobat|Toxic|p1a: Suicune
+|-status|p1a: Suicune|tox
+|
+|-heal|p1a: Suicune|328\/403 tox|[from] item: Leftovers
+|-damage|p1a: Suicune|303\/403 tox|[from] psn
+|turn|16
+|
+|switch|p2a: Milotic|Milotic, M|394\/394
+|move|p1a: Suicune|Ice Beam|p2a: Milotic
+|-resisted|p2a: Milotic
+|-damage|p2a: Milotic|366\/394
+|
+|-heal|p1a: Suicune|328\/403 tox|[from] item: Leftovers
+|-heal|p2a: Milotic|390\/394|[from] item: Leftovers
+|-damage|p1a: Suicune|278\/403 tox|[from] psn
+|turn|17
+|
+|switch|p1a: Klefki|Klefki, M|165\/318 par
+|move|p2a: Milotic|Recover|p2a: Milotic
+|-heal|p2a: Milotic|394\/394
+|
+|turn|18
+|
+|move|p1a: Klefki|Light Screen|p1a: Klefki
+|-sidestart|p1: kl0s|move: Light Screen
+|move|p2a: Milotic|Scald|p1a: Klefki
+|-damage|p1a: Klefki|112\/318 par
+|
+|turn|19
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F, shiny|248\/384
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Klefki|Thunder Wave|p2a: Ampharos
+|-fail|p2a: Ampharos
+|
+|turn|20
+|
+|switch|p1a: Gligar|Gligar, F|333\/333
+|move|p2a: Ampharos|Volt Switch|p1a: Gligar
+|-immune|p1a: Gligar|[msg]
+|
+|turn|21
+|
+|switch|p2a: Milotic|Milotic, M|394\/394
+|move|p1a: Gligar|Earthquake|p2a: Milotic
+|-damage|p2a: Milotic|274\/394
+|
+|-heal|p2a: Milotic|298\/394|[from] item: Leftovers
+|turn|22
+|
+|move|p1a: Gligar|Stealth Rock|p2a: Milotic
+|-sidestart|p2: mliok|move: Stealth Rock
+|move|p2a: Milotic|Scald|p1a: Gligar
+|-supereffective|p1a: Gligar
+|-damage|p1a: Gligar|270\/333
+|-status|p1a: Gligar|brn
+|
+|-heal|p2a: Milotic|322\/394|[from] item: Leftovers
+|-damage|p1a: Gligar|229\/333 brn|[from] brn
+|-sideend|p1: kl0s|move: Light Screen
+|turn|23
+|
+|switch|p1a: Klefki|Klefki, M|112\/318 par
+|move|p2a: Milotic|Scald|p1a: Klefki
+|-damage|p1a: Klefki|0 fnt
+|faint|p1a: Klefki
+|
+|-heal|p2a: Milotic|346\/394|[from] item: Leftovers
+|
+|switch|p1a: Gallade|Gallade, M|277\/277
+|turn|24
+|
+|detailschange|p1a: Gallade|Gallade-Mega, M
+|message|Gallade has Mega Evolved into Mega Gallade!
+|move|p1a: Gallade|Swords Dance|p1a: Gallade
+|-boost|p1a: Gallade|atk|2
+|move|p2a: Milotic|Toxic|p1a: Gallade
+|-status|p1a: Gallade|tox
+|
+|-heal|p2a: Milotic|370\/394|[from] item: Leftovers
+|-damage|p1a: Gallade|260\/277 tox|[from] psn
+|turn|25
+|
+|switch|p2a: Tangrowth|Tangrowth, F|404\/404 brn
+|-damage|p2a: Tangrowth|354\/404 brn|[from] Stealth Rock
+|move|p1a: Gallade|Close Combat|p2a: Tangrowth
+|-damage|p2a: Tangrowth|18\/404 brn
+|-damage|p1a: Gallade|214\/277 tox|[from] item: Rocky Helmet|[of] p2a: Tangrowth
+|-unboost|p1a: Gallade|def|1
+|-unboost|p1a: Gallade|spd|1
+|
+|-damage|p1a: Gallade|180\/277 tox|[from] psn
+|-damage|p2a: Tangrowth|0 fnt|[from] brn
+|faint|p2a: Tangrowth
+|
+|switch|p2a: Crobat|Crobat, M|373\/373 par
+|-damage|p2a: Crobat|280\/373 par|[from] Stealth Rock
+|turn|26
+|
+|switch|p2a: Jirachi|Jirachi|404\/404 par
+|-damage|p2a: Jirachi|379\/404 par|[from] Stealth Rock
+|move|p1a: Gallade|Zen Headbutt|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|300\/404 par
+|
+|-heal|p2a: Jirachi|325\/404 par|[from] item: Leftovers
+|-damage|p1a: Gallade|129\/277 tox|[from] psn
+|turn|27
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F, shiny|248\/384
+|-damage|p2a: Ampharos|200\/384|[from] Stealth Rock
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Gallade|Knock Off|p2a: Ampharos
+|-damage|p2a: Ampharos|67\/384
+|
+|-damage|p1a: Gallade|61\/277 tox|[from] psn
+|turn|28
+|
+|move|p1a: Gallade|Close Combat|p2a: Ampharos
+|-damage|p2a: Ampharos|0 fnt
+|-unboost|p1a: Gallade|def|1
+|-unboost|p1a: Gallade|spd|1
+|faint|p2a: Ampharos
+|
+|-damage|p1a: Gallade|0 fnt|[from] psn
+|faint|p1a: Gallade
+|
+|switch|p1a: Volcarona|Volcarona, M|369\/369
+|switch|p2a: Milotic|Milotic, M|370\/394
+|-damage|p2a: Milotic|321\/394|[from] Stealth Rock
+|turn|29
+|
+|move|p1a: Volcarona|Quiver Dance|p1a: Volcarona
+|-boost|p1a: Volcarona|spa|1
+|-boost|p1a: Volcarona|spd|1
+|-boost|p1a: Volcarona|spe|1
+|move|p2a: Milotic|Toxic|p1a: Volcarona
+|-status|p1a: Volcarona|tox
+|
+|-heal|p2a: Milotic|345\/394|[from] item: Leftovers
+|-damage|p1a: Volcarona|346\/369 tox|[from] psn
+|turn|30
+|
+|move|p1a: Volcarona|Quiver Dance|p1a: Volcarona
+|-boost|p1a: Volcarona|spa|1
+|-boost|p1a: Volcarona|spd|1
+|-boost|p1a: Volcarona|spe|1
+|move|p2a: Milotic|Mirror Coat|p1a: Volcarona
+|-fail|p1a: Volcarona
+|
+|-heal|p2a: Milotic|369\/394|[from] item: Leftovers
+|-damage|p1a: Volcarona|300\/369 tox|[from] psn
+|turn|31
+|
+|move|p1a: Volcarona|Quiver Dance|p1a: Volcarona
+|-boost|p1a: Volcarona|spa|1
+|-boost|p1a: Volcarona|spd|1
+|-boost|p1a: Volcarona|spe|1
+|move|p2a: Milotic|Scald|p1a: Volcarona
+|-supereffective|p1a: Volcarona
+|-damage|p1a: Volcarona|220\/369 tox
+|
+|-heal|p2a: Milotic|393\/394|[from] item: Leftovers
+|-damage|p1a: Volcarona|151\/369 tox|[from] psn
+|turn|32
+|
+|move|p1a: Volcarona|Giga Drain|p2a: Milotic
+|-supereffective|p2a: Milotic
+|-damage|p2a: Milotic|81\/394
+|-heal|p1a: Volcarona|307\/369 tox|[from] drain|[of] p2a: Milotic
+|-damage|p1a: Volcarona|271\/369 tox|[from] item: Life Orb
+|move|p2a: Milotic|Mirror Coat|p1a: Volcarona
+|-damage|p1a: Volcarona|0 fnt
+|faint|p1a: Volcarona
+|
+|-heal|p2a: Milotic|105\/394|[from] item: Leftovers
+|c|âkl0s|gg
+|-message|kl0s forfeited.
+|
+|win|mliok
+|raw|Ladder updating...
+|leave|kl0s
+|player|p1
+|raw|kl0s's rating: 1306 &rarr; <strong>1292<\/strong><br \/>(-14 for losing)
+|raw|mliok's rating: 1416 &rarr; <strong>1430<\/strong><br \/>(+14 for winning)

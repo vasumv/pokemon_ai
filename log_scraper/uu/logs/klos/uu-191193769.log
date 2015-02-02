@@ -1,0 +1,412 @@
+|join|klos
+|join|bouff
+|player|p1|klos|249
+|player|p2|bouff|#cpgtan
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Gallade, M
+|poke|p1|Yanmega, M
+|poke|p1|Jirachi
+|poke|p1|Darmanitan, F
+|poke|p1|Vaporeon, F
+|poke|p1|Gligar, M
+|poke|p2|Mienshao, F
+|poke|p2|Crobat, F
+|poke|p2|Hydreigon, F
+|poke|p2|Jirachi
+|poke|p2|Sceptile, F
+|poke|p2|Swampert, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|join|purrl
+|
+|start
+|switch|p1a: Robin|Gligar, M|334\/334
+|switch|p2a: Crobat|Crobat, F|335\/335
+|turn|1
+|c|âklos|hf bouff
+|
+|switch|p1a: Flinch|Jirachi|404\/404
+|move|p2a: Crobat|U-turn|p1a: Flinch
+|-damage|p1a: Flinch|350\/404
+|
+|switch|p2a: Swampert|Swampert, M|401\/401
+|
+|-heal|p1a: Flinch|375\/404|[from] item: Leftovers
+|turn|2
+|
+|move|p1a: Flinch|Substitute|p1a: Flinch
+|-start|p1a: Flinch|Substitute
+|-damage|p1a: Flinch|274\/404
+|move|p2a: Swampert|Stealth Rock|p1a: Flinch
+|-sidestart|p1: klos|move: Stealth Rock
+|
+|-heal|p1a: Flinch|299\/404|[from] item: Leftovers
+|turn|3
+|
+|move|p1a: Flinch|Toxic|p2a: Swampert|[miss]
+|-miss|p1a: Flinch|p2a: Swampert
+|move|p2a: Swampert|Earthquake|p1a: Flinch
+|-supereffective|p1a: Flinch
+|-end|p1a: Flinch|Substitute
+|
+|-heal|p1a: Flinch|324\/404|[from] item: Leftovers
+|turn|4
+|
+|move|p1a: Flinch|Toxic|p2a: Swampert
+|-status|p2a: Swampert|tox
+|move|p2a: Swampert|Earthquake|p1a: Flinch
+|-supereffective|p1a: Flinch
+|-damage|p1a: Flinch|94\/404
+|
+|-heal|p1a: Flinch|119\/404|[from] item: Leftovers
+|-damage|p2a: Swampert|376\/401 tox|[from] psn
+|turn|5
+|
+|switch|p1a: Robin|Gligar, M|334\/334
+|-damage|p1a: Robin|293\/334|[from] Stealth Rock
+|switch|p2a: Jirachi|Jirachi|404\/404
+|
+|turn|6
+|
+|move|p2a: Jirachi|Toxic|p1a: Robin
+|-status|p1a: Robin|tox
+|move|p1a: Robin|Defog|p2a: Jirachi
+|-unboost|p2a: Jirachi|evasion|1
+|-sideend|p1: klos|Stealth Rock|[from] move: Defog|[of] p1a: Robin
+|
+|-damage|p1a: Robin|273\/334 tox|[from] psn
+|turn|7
+|
+|move|p2a: Jirachi|Iron Head|p1a: Robin
+|-damage|p1a: Robin|219\/334 tox
+|move|p1a: Robin|Stealth Rock|p2a: Jirachi
+|-sidestart|p2: bouff|move: Stealth Rock
+|
+|-damage|p1a: Robin|179\/334 tox|[from] psn
+|turn|8
+|
+|switch|p1a: Flinch|Jirachi|119\/404
+|move|p2a: Jirachi|Iron Head|p1a: Flinch
+|-resisted|p1a: Flinch
+|-damage|p1a: Flinch|77\/404
+|
+|-heal|p1a: Flinch|102\/404|[from] item: Leftovers
+|turn|9
+|
+|move|p2a: Jirachi|Substitute|p2a: Jirachi
+|-start|p2a: Jirachi|Substitute
+|-damage|p2a: Jirachi|303\/404
+|move|p1a: Flinch|Substitute|p1a: Flinch
+|-start|p1a: Flinch|Substitute
+|-damage|p1a: Flinch|1\/404
+|
+|-heal|p2a: Jirachi|328\/404|[from] item: Leftovers
+|-heal|p1a: Flinch|26\/404|[from] item: Leftovers
+|turn|10
+|
+|move|p2a: Jirachi|Iron Head|p1a: Flinch
+|-resisted|p1a: Flinch
+|-activate|p1a: Flinch|Substitute|[damage]
+|move|p1a: Flinch|Fire Punch|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-end|p2a: Jirachi|Substitute
+|
+|-heal|p2a: Jirachi|353\/404|[from] item: Leftovers
+|-heal|p1a: Flinch|51\/404|[from] item: Leftovers
+|turn|11
+|
+|move|p2a: Jirachi|Iron Head|p1a: Flinch
+|-resisted|p1a: Flinch
+|-activate|p1a: Flinch|Substitute|[damage]
+|move|p1a: Flinch|Fire Punch|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|227\/404
+|
+|-heal|p2a: Jirachi|252\/404|[from] item: Leftovers
+|-heal|p1a: Flinch|76\/404|[from] item: Leftovers
+|turn|12
+|
+|switch|p2a: Swampert|Swampert, M|376\/401 tox
+|-damage|p2a: Swampert|351\/401 tox|[from] Stealth Rock
+|move|p1a: Flinch|Fire Punch|p2a: Swampert
+|-resisted|p2a: Swampert
+|-damage|p2a: Swampert|328\/401 tox
+|
+|-heal|p1a: Flinch|101\/404|[from] item: Leftovers
+|-heal|p2a: Swampert|353\/401 tox|[from] item: Leftovers
+|-damage|p2a: Swampert|328\/401 tox|[from] psn
+|turn|13
+|
+|move|p1a: Flinch|Iron Head|p2a: Swampert
+|-resisted|p2a: Swampert
+|-damage|p2a: Swampert|293\/401 tox
+|cant|p2a: Swampert|flinch
+|
+|-heal|p1a: Flinch|126\/404|[from] item: Leftovers
+|-heal|p2a: Swampert|318\/401 tox|[from] item: Leftovers
+|-damage|p2a: Swampert|268\/401 tox|[from] psn
+|turn|14
+|
+|move|p1a: Flinch|Substitute|p1a: Flinch
+|-fail|p1a: Flinch|move: Substitute
+|move|p2a: Swampert|Stealth Rock|p1a: Flinch
+|-sidestart|p1: klos|move: Stealth Rock
+|
+|-heal|p1a: Flinch|151\/404|[from] item: Leftovers
+|-heal|p2a: Swampert|293\/401 tox|[from] item: Leftovers
+|-damage|p2a: Swampert|218\/401 tox|[from] psn
+|turn|15
+|
+|switch|p2a: Jirachi|Jirachi|252\/404
+|-damage|p2a: Jirachi|227\/404|[from] Stealth Rock
+|move|p1a: Flinch|Iron Head|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|179\/404
+|
+|-heal|p2a: Jirachi|204\/404|[from] item: Leftovers
+|-heal|p1a: Flinch|176\/404|[from] item: Leftovers
+|turn|16
+|c|âklos|lol miss click
+|
+|move|p2a: Jirachi|Iron Head|p1a: Flinch
+|-resisted|p1a: Flinch
+|-end|p1a: Flinch|Substitute
+|move|p1a: Flinch|Substitute|p1a: Flinch
+|-start|p1a: Flinch|Substitute
+|-damage|p1a: Flinch|75\/404
+|
+|-heal|p2a: Jirachi|229\/404|[from] item: Leftovers
+|-heal|p1a: Flinch|100\/404|[from] item: Leftovers
+|turn|17
+|
+|switch|p2a: Swampert|Swampert, M|218\/401 tox
+|-damage|p2a: Swampert|193\/401 tox|[from] Stealth Rock
+|move|p1a: Flinch|Fire Punch|p2a: Swampert
+|-crit|p2a: Swampert
+|-resisted|p2a: Swampert
+|-damage|p2a: Swampert|160\/401 tox
+|
+|-heal|p1a: Flinch|125\/404|[from] item: Leftovers
+|-heal|p2a: Swampert|185\/401 tox|[from] item: Leftovers
+|-damage|p2a: Swampert|160\/401 tox|[from] psn
+|turn|18
+|
+|move|p1a: Flinch|Iron Head|p2a: Swampert
+|-resisted|p2a: Swampert
+|-damage|p2a: Swampert|126\/401 tox
+|cant|p2a: Swampert|flinch
+|
+|-heal|p1a: Flinch|150\/404|[from] item: Leftovers
+|-heal|p2a: Swampert|151\/401 tox|[from] item: Leftovers
+|-damage|p2a: Swampert|101\/401 tox|[from] psn
+|turn|19
+|
+|move|p1a: Flinch|Iron Head|p2a: Swampert
+|-resisted|p2a: Swampert
+|-damage|p2a: Swampert|68\/401 tox
+|cant|p2a: Swampert|flinch
+|
+|-heal|p1a: Flinch|175\/404|[from] item: Leftovers
+|-heal|p2a: Swampert|93\/401 tox|[from] item: Leftovers
+|-damage|p2a: Swampert|18\/401 tox|[from] psn
+|turn|20
+|
+|move|p1a: Flinch|Iron Head|p2a: Swampert
+|-resisted|p2a: Swampert
+|-damage|p2a: Swampert|0 fnt
+|faint|p2a: Swampert
+|
+|-heal|p1a: Flinch|200\/404|[from] item: Leftovers
+|
+|switch|p2a: Sceptile|Sceptile, F|282\/282
+|-damage|p2a: Sceptile|247\/282|[from] Stealth Rock
+|turn|21
+|
+|detailschange|p2a: Sceptile|Sceptile-Mega, F
+|message|Sceptile has Mega Evolved into Mega Sceptile!
+|move|p2a: Sceptile|Earthquake|p1a: Flinch
+|-crit|p1a: Flinch
+|-supereffective|p1a: Flinch
+|-end|p1a: Flinch|Substitute
+|move|p1a: Flinch|Toxic|p2a: Sceptile|[miss]
+|-miss|p1a: Flinch|p2a: Sceptile
+|
+|-heal|p1a: Flinch|225\/404|[from] item: Leftovers
+|turn|22
+|
+|move|p2a: Sceptile|Earthquake|p1a: Flinch
+|-supereffective|p1a: Flinch
+|-damage|p1a: Flinch|31\/404
+|move|p1a: Flinch|Fire Punch|p2a: Sceptile
+|-damage|p2a: Sceptile|173\/282
+|
+|-heal|p1a: Flinch|56\/404|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Sceptile|Earthquake|p1a: Flinch
+|-supereffective|p1a: Flinch
+|-damage|p1a: Flinch|0 fnt
+|faint|p1a: Flinch
+|
+|
+|switch|p1a: Flare Blitz|Darmanitan, F|351\/351
+|-damage|p1a: Flare Blitz|264\/351|[from] Stealth Rock
+|turn|24
+|
+|switch|p2a: Jirachi|Jirachi|229\/404
+|-damage|p2a: Jirachi|204\/404|[from] Stealth Rock
+|move|p1a: Flare Blitz|Flare Blitz|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|-damage|p1a: Flare Blitz|197\/351|[from] recoil|[of] p2a: Jirachi
+|faint|p2a: Jirachi
+|
+|
+|switch|p2a: Mienshao|Mienshao, F|271\/271
+|-damage|p2a: Mienshao|255\/271|[from] Stealth Rock
+|turn|25
+|
+|switch|p1a: Vaporeon|Vaporeon, F|451\/451
+|-damage|p1a: Vaporeon|395\/451|[from] Stealth Rock
+|move|p2a: Mienshao|U-turn|p1a: Vaporeon
+|-damage|p1a: Vaporeon|310\/451
+|
+|switch|p2a: Sceptile|Sceptile-Mega, F|173\/282
+|-damage|p2a: Sceptile|138\/282|[from] Stealth Rock
+|
+|-heal|p1a: Vaporeon|338\/451|[from] item: Leftovers
+|turn|26
+|
+|move|p2a: Sceptile|Leaf Blade|p1a: Vaporeon
+|-supereffective|p1a: Vaporeon
+|-damage|p1a: Vaporeon|44\/451
+|move|p1a: Vaporeon|Baton Pass|p1a: Vaporeon
+|
+|switch|p1a: Gal|Gallade, M|278\/278
+|-damage|p1a: Gal|261\/278|[from] Stealth Rock
+|
+|turn|27
+|
+|detailschange|p1a: Gal|Gallade-Mega, M
+|message|Gallade has Mega Evolved into Mega Gallade!
+|move|p2a: Sceptile|Outrage|p1a: Gal
+|-damage|p1a: Gal|57\/278
+|move|p1a: Gal|Psycho Cut|p2a: Sceptile
+|-damage|p2a: Sceptile|0 fnt
+|faint|p2a: Sceptile
+|
+|
+|switch|p2a: Crobat|Crobat, F|335\/335
+|-damage|p2a: Crobat|252\/335|[from] Stealth Rock
+|turn|28
+|
+|switch|p1a: Vaporeon|Vaporeon, F|44\/451
+|-damage|p1a: Vaporeon|0 fnt|[from] Stealth Rock
+|faint|p1a: Vaporeon
+|move|p2a: Crobat|Brave Bird|p1: Vaporeon|[notarget]
+|-notarget
+|
+|
+|switch|p1a: Robin|Gligar, M|179\/334 tox
+|-damage|p1a: Robin|138\/334 tox|[from] Stealth Rock
+|turn|29
+|join|Scythe Kronos
+|
+|move|p2a: Crobat|Brave Bird|p1a: Robin
+|-damage|p1a: Robin|15\/334 tox
+|-damage|p2a: Crobat|211\/335|[from] recoil|[of] p1a: Robin
+|move|p1a: Robin|Defog|p2a: Crobat
+|-unboost|p2a: Crobat|evasion|1
+|-sideend|p2: bouff|Stealth Rock|[from] move: Defog|[of] p2a: Crobat
+|-sideend|p1: klos|Stealth Rock|[from] move: Defog|[of] p1a: Robin
+|
+|-damage|p1a: Robin|0 fnt|[from] psn
+|faint|p1a: Robin
+|
+|switch|p1a: Flare Blitz|Darmanitan, F|197\/351
+|turn|30
+|
+|switch|p2a: Hydreigon|Hydreigon, F|325\/325
+|move|p1a: Flare Blitz|Flare Blitz|p2a: Hydreigon
+|-resisted|p2a: Hydreigon
+|-damage|p2a: Hydreigon|49\/325
+|-damage|p1a: Flare Blitz|106\/351|[from] recoil|[of] p2a: Hydreigon
+|
+|turn|31
+|join|Waynote
+|
+|move|p2a: Hydreigon|Dark Pulse|p1a: Flare Blitz
+|-damage|p1a: Flare Blitz|0 fnt
+|-damage|p2a: Hydreigon|17\/325|[from] item: Life Orb
+|faint|p1a: Flare Blitz
+|
+|
+|switch|p1a: Gal|Gallade-Mega, M|57\/278
+|turn|32
+|
+|move|p1a: Gal|Close Combat|p2a: Hydreigon
+|-supereffective|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|-unboost|p1a: Gal|def|1
+|-unboost|p1a: Gal|spd|1
+|faint|p2a: Hydreigon
+|
+|
+|switch|p2a: Crobat|Crobat, F|211\/335
+|turn|33
+|
+|move|p1a: Gal|Shadow Sneak|p2a: Crobat
+|-damage|p2a: Crobat|138\/335
+|move|p2a: Crobat|Brave Bird|p1a: Gal
+|-supereffective|p1a: Gal
+|-damage|p1a: Gal|0 fnt
+|-damage|p2a: Crobat|119\/335|[from] recoil|[of] p1a: Gal
+|faint|p1a: Gal
+|
+|
+|switch|p1a: Mega|Yanmega, M|314\/314
+|turn|34
+|
+|move|p1a: Mega|Protect|p1a: Mega
+|-singleturn|p1a: Mega|Protect
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|287\/335
+|
+|-boost|p1a: Mega|spe|1|[from] ability: Speed Boost
+|turn|35
+|c|âklos|shit
+|
+|move|p1a: Mega|Air Slash|p2a: Crobat
+|-damage|p2a: Crobat|76\/335
+|-damage|p1a: Mega|283\/314|[from] item: Life Orb
+|move|p2a: Crobat|Brave Bird|p1a: Mega
+|-crit|p1a: Mega
+|-supereffective|p1a: Mega
+|-damage|p1a: Mega|0 fnt
+|-damage|p2a: Crobat|0 fnt|[from] recoil|[of] p1a: Mega
+|faint|p1a: Mega
+|faint|p2a: Crobat
+|
+|win|bouff
+|raw|Ladder updating...
+|raw|klos's rating: 1470 &rarr; <strong>1448<\/strong><br \/>(-22 for losing)
+|raw|bouff's rating: 1425 &rarr; <strong>1448<\/strong><br \/>(+23 for winning)
+|c|âklos|gg m8
+|c|âbouff|gg
+|leave|bouff
+|player|p2
+|leave|purrl
+|leave|Waynote
+|leave|Scythe Kronos

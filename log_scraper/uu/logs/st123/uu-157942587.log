@@ -1,0 +1,398 @@
+|join|st123
+|join|gest 1
+|player|p1|st123|153
+|player|p2|gest 1|169
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Druddigon, M
+|poke|p1|Goodra, F
+|poke|p1|Haxorus, F
+|poke|p1|Noivern, M
+|poke|p1|Tyrantrum, F
+|poke|p1|Flygon, F
+|poke|p2|Goodra, F
+|poke|p2|Chandelure, M
+|poke|p2|Gastrodon, M
+|poke|p2|Rhyperior, F
+|poke|p2|Golbat, M
+|poke|p2|Blissey, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Druddigon|Druddigon, M|353\/353
+|switch|p2a: Rhyperior|Rhyperior, F|434\/434
+|turn|1
+|
+|move|p1a: Druddigon|Stealth Rock|p2a: Rhyperior
+|-sidestart|p2: gest 1|move: Stealth Rock
+|move|p2a: Rhyperior|Stealth Rock|p1a: Druddigon
+|-sidestart|p1: st123|move: Stealth Rock
+|
+|turn|2
+|
+|move|p1a: Druddigon|Earthquake|p2a: Rhyperior
+|-supereffective|p2a: Rhyperior
+|-damage|p2a: Rhyperior|295\/434
+|move|p2a: Rhyperior|Earthquake|p1a: Druddigon
+|-damage|p1a: Druddigon|143\/353
+|
+|turn|3
+|
+|switch|p2a: Golbat|Golbat, M|354\/354
+|-damage|p2a: Golbat|266\/354|[from] Stealth Rock
+|move|p1a: Druddigon|Earthquake|p2a: Golbat
+|-immune|p2a: Golbat|[msg]
+|
+|turn|4
+|
+|move|p2a: Golbat|Toxic|p1a: Druddigon
+|-status|p1a: Druddigon|tox
+|move|p1a: Druddigon|Dragon Claw|p2a: Golbat
+|-damage|p2a: Golbat|172\/354
+|
+|-damage|p1a: Druddigon|121\/353 tox|[from] psn
+|turn|5
+|
+|move|p2a: Golbat|Roost|p2a: Golbat
+|-heal|p2a: Golbat|349\/354
+|move|p1a: Druddigon|Stealth Rock|p2a: Golbat
+|-fail|p2a: Golbat
+|
+|-damage|p1a: Druddigon|77\/353 tox|[from] psn
+|turn|6
+|
+|move|p2a: Golbat|Toxic|p1a: Druddigon
+|-fail|p1a: Druddigon|tox
+|move|p1a: Druddigon|Stealth Rock|p2a: Golbat
+|-fail|p2a: Golbat
+|
+|-damage|p1a: Druddigon|11\/353 tox|[from] psn
+|turn|7
+|
+|move|p2a: Golbat|Toxic|p1a: Druddigon
+|-fail|p1a: Druddigon|tox
+|move|p1a: Druddigon|Stealth Rock|p2a: Golbat
+|-fail|p2a: Golbat
+|
+|-damage|p1a: Druddigon|0 fnt|[from] psn
+|faint|p1a: Druddigon
+|
+|switch|p1a: Haxorus|Haxorus, F|294\/294
+|-damage|p1a: Haxorus|258\/294|[from] Stealth Rock
+|-ability|p1a: Haxorus|Mold Breaker
+|turn|8
+|
+|move|p1a: Haxorus|Swords Dance|p1a: Haxorus
+|-boost|p1a: Haxorus|atk|2
+|move|p2a: Golbat|Toxic|p1a: Haxorus
+|-status|p1a: Haxorus|tox
+|-enditem|p1a: Haxorus|Lum Berry|[eat]
+|-curestatus|p1a: Haxorus|tox
+|
+|turn|9
+|
+|move|p1a: Haxorus|Dragon Claw|p2a: Golbat
+|-damage|p2a: Golbat|175\/354
+|move|p2a: Golbat|Toxic|p1a: Haxorus
+|-status|p1a: Haxorus|tox
+|
+|-damage|p1a: Haxorus|240\/294 tox|[from] psn
+|turn|10
+|
+|switch|p2a: Gastrodon|Gastrodon, M|426\/426
+|-damage|p2a: Gastrodon|400\/426|[from] Stealth Rock
+|move|p1a: Haxorus|Dragon Claw|p2a: Gastrodon
+|-damage|p2a: Gastrodon|126\/426
+|
+|-heal|p2a: Gastrodon|152\/426|[from] item: Leftovers
+|-damage|p1a: Haxorus|204\/294 tox|[from] psn
+|turn|11
+|
+|move|p1a: Haxorus|Dragon Claw|p2a: Gastrodon
+|-damage|p2a: Gastrodon|0 fnt
+|faint|p2a: Gastrodon
+|
+|-damage|p1a: Haxorus|150\/294 tox|[from] psn
+|
+|switch|p2a: Chandelure|Chandelure, M|261\/261
+|-damage|p2a: Chandelure|196\/261|[from] Stealth Rock
+|turn|12
+|
+|switch|p1a: Goodra|Goodra, F|384\/384
+|-damage|p1a: Goodra|336\/384|[from] Stealth Rock
+|move|p2a: Chandelure|Shadow Ball|p1a: Goodra
+|-damage|p1a: Goodra|264\/384
+|
+|turn|13
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|-damage|p2a: Blissey|625\/714|[from] Stealth Rock
+|move|p1a: Goodra|Dragon Tail|p2a: Blissey
+|-damage|p2a: Blissey|502\/714
+|drag|p2a: Goodra|Goodra, F|384\/384
+|-damage|p2a: Goodra|336\/384|[from] Stealth Rock
+|
+|-heal|p2a: Goodra|360\/384|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Goodra|Dragon Pulse|p1a: Goodra
+|-supereffective|p1a: Goodra
+|-damage|p1a: Goodra|118\/384
+|move|p1a: Goodra|Dragon Tail|p2a: Goodra
+|-supereffective|p2a: Goodra
+|-damage|p2a: Goodra|160\/384
+|drag|p2a: Chandelure|Chandelure, M|196\/261
+|-damage|p2a: Chandelure|131\/261|[from] Stealth Rock
+|
+|turn|15
+|
+|switch|p2a: Blissey|Blissey, F|502\/714
+|-damage|p2a: Blissey|413\/714|[from] Stealth Rock
+|move|p1a: Goodra|Dragon Tail|p2a: Blissey|[miss]
+|-miss|p1a: Goodra|p2a: Blissey
+|
+|-heal|p2a: Blissey|457\/714|[from] item: Leftovers
+|turn|16
+|
+|switch|p1a: Tyrantrum|Tyrantrum, F|305\/305
+|-damage|p1a: Tyrantrum|267\/305|[from] Stealth Rock
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-fail|p2a: Blissey
+|
+|-heal|p2a: Blissey|501\/714|[from] item: Leftovers
+|turn|17
+|
+|switch|p2a: Goodra|Goodra, F|160\/384
+|-damage|p2a: Goodra|112\/384|[from] Stealth Rock
+|move|p1a: Tyrantrum|Head Smash|p2a: Goodra
+|-damage|p2a: Goodra|0 fnt
+|-damage|p1a: Tyrantrum|211\/305|[from] recoil|[of] p2a: Goodra
+|faint|p2a: Goodra
+|
+|
+|switch|p2a: Rhyperior|Rhyperior, F|295\/434
+|-damage|p2a: Rhyperior|268\/434|[from] Stealth Rock
+|turn|18
+|
+|switch|p1a: Haxorus|Haxorus, F|150\/294 tox
+|-damage|p1a: Haxorus|114\/294 tox|[from] Stealth Rock
+|-ability|p1a: Haxorus|Mold Breaker
+|move|p2a: Rhyperior|Earthquake|p1a: Haxorus
+|-damage|p1a: Haxorus|0 fnt
+|faint|p1a: Haxorus
+|
+|
+|switch|p1a: Flygon|Flygon, F|301\/301
+|-damage|p1a: Flygon|283\/301|[from] Stealth Rock
+|turn|19
+|
+|switch|p2a: Golbat|Golbat, M|175\/354
+|-damage|p2a: Golbat|87\/354|[from] Stealth Rock
+|move|p1a: Flygon|U-turn|p2a: Golbat
+|-resisted|p2a: Golbat
+|-damage|p2a: Golbat|77\/354
+|
+|switch|p1a: Tyrantrum|Tyrantrum, F|211\/305
+|-damage|p1a: Tyrantrum|173\/305|[from] Stealth Rock
+|
+|turn|20
+|
+|move|p1a: Tyrantrum|Head Smash|p2a: Golbat
+|-supereffective|p2a: Golbat
+|-damage|p2a: Golbat|0 fnt
+|-damage|p1a: Tyrantrum|134\/305|[from] recoil|[of] p2a: Golbat
+|faint|p2a: Golbat
+|
+|
+|switch|p2a: Chandelure|Chandelure, M|131\/261
+|-damage|p2a: Chandelure|66\/261|[from] Stealth Rock
+|turn|21
+|
+|switch|p1a: Goodra|Goodra, F|118\/384
+|-damage|p1a: Goodra|70\/384|[from] Stealth Rock
+|move|p2a: Chandelure|Shadow Ball|p1a: Goodra
+|-damage|p1a: Goodra|0 fnt
+|faint|p1a: Goodra
+|
+|
+|switch|p1a: Flygon|Flygon, F|283\/301
+|-damage|p1a: Flygon|265\/301|[from] Stealth Rock
+|turn|22
+|
+|move|p1a: Flygon|Earthquake|p2a: Chandelure
+|-supereffective|p2a: Chandelure
+|-damage|p2a: Chandelure|0 fnt
+|faint|p2a: Chandelure
+|
+|
+|switch|p2a: Blissey|Blissey, F|501\/714
+|-damage|p2a: Blissey|412\/714|[from] Stealth Rock
+|turn|23
+|
+|switch|p1a: Tyrantrum|Tyrantrum, F|134\/305
+|-damage|p1a: Tyrantrum|96\/305|[from] Stealth Rock
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-fail|p2a: Blissey
+|
+|-heal|p2a: Blissey|456\/714|[from] item: Leftovers
+|turn|24
+|
+|move|p1a: Tyrantrum|Head Smash|p2a: Blissey|[miss]
+|-miss|p1a: Tyrantrum|p2a: Blissey
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p2a: Blissey|500\/714|[from] item: Leftovers
+|turn|25
+|
+|switch|p1a: Noivern|Noivern, M|311\/311
+|-damage|p1a: Noivern|234\/311|[from] Stealth Rock
+|switch|p2a: Rhyperior|Rhyperior, F|268\/434
+|-damage|p2a: Rhyperior|241\/434|[from] Stealth Rock
+|
+|-heal|p2a: Rhyperior|434\/434|[from] move: Wish|[wisher] Blissey
+|turn|26
+|
+|switch|p2a: Blissey|Blissey, F|500\/714
+|-damage|p2a: Blissey|411\/714|[from] Stealth Rock
+|move|p1a: Noivern|Super Fang|p2a: Blissey
+|-damage|p2a: Blissey|206\/714
+|
+|-heal|p2a: Blissey|250\/714|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: Noivern|U-turn|p2a: Blissey
+|-damage|p2a: Blissey|190\/714
+|
+|switch|p1a: Tyrantrum|Tyrantrum, F|96\/305
+|-damage|p1a: Tyrantrum|58\/305|[from] Stealth Rock
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p2a: Blissey|234\/714|[from] item: Leftovers
+|turn|28
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|move|p1a: Tyrantrum|Earthquake|p2a: Blissey
+|-activate|p2a: Blissey|Protect
+|
+|-heal|p2a: Blissey|591\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p2a: Blissey|635\/714|[from] item: Leftovers
+|turn|29
+|
+|move|p1a: Tyrantrum|Earthquake|p2a: Blissey
+|-damage|p2a: Blissey|270\/714
+|move|p2a: Blissey|Seismic Toss|p1a: Tyrantrum
+|-damage|p1a: Tyrantrum|0 fnt
+|faint|p1a: Tyrantrum
+|
+|-heal|p2a: Blissey|314\/714|[from] item: Leftovers
+|
+|switch|p1a: Flygon|Flygon, F|265\/301
+|-damage|p1a: Flygon|247\/301|[from] Stealth Rock
+|turn|30
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|move|p1a: Flygon|Outrage|p2a: Blissey
+|-activate|p2a: Blissey|Protect
+|
+|-heal|p2a: Blissey|358\/714|[from] item: Leftovers
+|turn|31
+|
+|switch|p2a: Rhyperior|Rhyperior, F|434\/434
+|-damage|p2a: Rhyperior|407\/434|[from] Stealth Rock
+|move|p1a: Flygon|Outrage|p2a: Rhyperior
+|-damage|p2a: Rhyperior|274\/434
+|-damage|p1a: Flygon|197\/301|[from] item: Rocky Helmet|[of] p2a: Rhyperior
+|
+|turn|32
+|
+|move|p1a: Flygon|Outrage|p2a: Rhyperior
+|-crit|p2a: Rhyperior
+|-damage|p2a: Rhyperior|67\/434
+|-damage|p1a: Flygon|147\/301|[from] item: Rocky Helmet|[of] p2a: Rhyperior
+|move|p2a: Rhyperior|Crunch|p1a: Flygon
+|-damage|p1a: Flygon|15\/301
+|
+|turn|33
+|
+|move|p1a: Flygon|Outrage|p2a: Rhyperior
+|-damage|p2a: Rhyperior|0 fnt
+|-damage|p1a: Flygon|0 fnt|[from] item: Rocky Helmet|[of] p2a: Rhyperior
+|faint|p1a: Flygon
+|faint|p2a: Rhyperior
+|
+|
+|switch|p1a: Noivern|Noivern, M|234\/311
+|-damage|p1a: Noivern|157\/311|[from] Stealth Rock
+|switch|p2a: Blissey|Blissey, F|358\/714
+|-damage|p2a: Blissey|269\/714|[from] Stealth Rock
+|turn|34
+|c|âst123|man that head smash missed killed me lol
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|move|p1a: Noivern|Super Fang|p2a: Blissey
+|-activate|p2a: Blissey|Protect
+|
+|-heal|p2a: Blissey|313\/714|[from] item: Leftovers
+|turn|35
+|
+|move|p1a: Noivern|Super Fang|p2a: Blissey
+|-damage|p2a: Blissey|157\/714
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p2a: Blissey|201\/714|[from] item: Leftovers
+|turn|36
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|move|p1a: Noivern|Draco Meteor|p2a: Blissey
+|-activate|p2a: Blissey|Protect
+|
+|-heal|p2a: Blissey|558\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p2a: Blissey|602\/714|[from] item: Leftovers
+|turn|37
+|
+|move|p1a: Noivern|Super Fang|p2a: Blissey
+|-damage|p2a: Blissey|301\/714
+|move|p2a: Blissey|Seismic Toss|p1a: Noivern
+|-damage|p1a: Noivern|57\/311
+|
+|-heal|p2a: Blissey|345\/714|[from] item: Leftovers
+|turn|38
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|move|p1a: Noivern|Draco Meteor|p2a: Blissey
+|-activate|p2a: Blissey|Protect
+|
+|-heal|p2a: Blissey|389\/714|[from] item: Leftovers
+|turn|39
+|
+|move|p1a: Noivern|Draco Meteor|p2a: Blissey
+|-damage|p2a: Blissey|203\/714
+|-unboost|p1a: Noivern|spa|2
+|move|p2a: Blissey|Seismic Toss|p1a: Noivern
+|-damage|p1a: Noivern|0 fnt
+|faint|p1a: Noivern
+|
+|win|gest 1
+|raw|Ladder updating...
+|c|âgest 1|gg
+|raw|st123's rating: 1491 &rarr; <strong>1469<\/strong><br \/>(-22 for losing)
+|raw|gest 1's rating: 1450 &rarr; <strong>1473<\/strong><br \/>(+23 for winning)
+|leave|st123
+|player|p1

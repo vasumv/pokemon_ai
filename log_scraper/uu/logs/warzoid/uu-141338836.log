@@ -1,0 +1,506 @@
+|join|warzoid
+|join|Praestigiae
+|player|p1|warzoid|106
+|player|p2|Praestigiae|101
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Hydreigon, F
+|poke|p1|Gligar, F
+|poke|p1|Lucario, M
+|poke|p1|Mienshao, M
+|poke|p1|Cloyster, M
+|poke|p1|Blissey, F
+|poke|p2|Registeel, shiny
+|poke|p2|Sableye, F, shiny
+|poke|p2|Aromatisse, F
+|poke|p2|Victini
+|poke|p2|Hydreigon, M
+|poke|p2|Blastoise, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Gligar|Gligar, F|334\/334
+|switch|p2a: Sableye|Sableye, F, shiny|303\/303
+|turn|1
+|
+|move|p2a: Sableye|Taunt|p1a: Gligar
+|-start|p1a: Gligar|move: Taunt
+|cant|p1a: Gligar|move: Taunt|Stealth Rock
+|
+|turn|2
+|
+|move|p2a: Sableye|Will-O-Wisp|p1a: Gligar|[miss]
+|-miss|p2a: Sableye|p1a: Gligar
+|move|p1a: Gligar|Knock Off|p2a: Sableye
+|-damage|p2a: Sableye|243\/303
+|-enditem|p2a: Sableye|Leftovers|[from] move: Knock Off|[of] p1a: Gligar
+|
+|turn|3
+|
+|move|p2a: Sableye|Will-O-Wisp|p1a: Gligar
+|-status|p1a: Gligar|brn
+|move|p1a: Gligar|U-turn|p2a: Sableye
+|-damage|p2a: Sableye|220\/303
+|
+|switch|p1a: Cloyster|Cloyster, M|241\/241
+|
+|turn|4
+|
+|move|p2a: Sableye|Will-O-Wisp|p1a: Cloyster
+|-status|p1a: Cloyster|brn
+|move|p1a: Cloyster|Hydro Pump|p2a: Sableye
+|-damage|p2a: Sableye|85\/303
+|
+|-damage|p1a: Cloyster|211\/241 brn|[from] brn
+|turn|5
+|
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|237\/303
+|move|p1a: Cloyster|Hydro Pump|p2a: Sableye
+|-damage|p2a: Sableye|110\/303
+|
+|-damage|p1a: Cloyster|181\/241 brn|[from] brn
+|turn|6
+|
+|switch|p1a: Lucario|Lucario, M|281\/281
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|262\/303
+|
+|turn|7
+|
+|move|p2a: Sableye|Taunt|p1a: Lucario
+|-start|p1a: Lucario|move: Taunt
+|cant|p1a: Lucario|move: Taunt|Nasty Plot
+|
+|turn|8
+|
+|switch|p1a: Gligar|Gligar, F|334\/334 brn
+|move|p2a: Sableye|Will-O-Wisp|p1a: Gligar
+|-fail|p1a: Gligar|brn
+|
+|-damage|p1a: Gligar|293\/334 brn|[from] brn
+|turn|9
+|
+|move|p2a: Sableye|Taunt|p1a: Gligar
+|-start|p1a: Gligar|move: Taunt
+|move|p1a: Gligar|U-turn|p2a: Sableye
+|-damage|p2a: Sableye|238\/303
+|
+|switch|p1a: Lucario|Lucario, M|281\/281
+|
+|turn|10
+|
+|move|p2a: Sableye|Will-O-Wisp|p1a: Lucario
+|-status|p1a: Lucario|brn
+|move|p1a: Lucario|Flash Cannon|p2a: Sableye
+|-damage|p2a: Sableye|82\/303
+|
+|-damage|p1a: Lucario|246\/281 brn|[from] brn
+|turn|11
+|
+|switch|p2a: Blastoise|Blastoise, M|362\/362
+|move|p1a: Lucario|Nasty Plot|p1a: Lucario
+|-boost|p1a: Lucario|spa|2
+|
+|-damage|p1a: Lucario|211\/281 brn|[from] brn
+|turn|12
+|
+|detailschange|p2a: Blastoise|Blastoise-Mega, M
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p1a: Lucario|Aura Sphere|p2a: Blastoise
+|-damage|p2a: Blastoise|119\/362
+|move|p2a: Blastoise|Aura Sphere|p1a: Lucario
+|-supereffective|p1a: Lucario
+|-damage|p1a: Lucario|0 fnt
+|faint|p1a: Lucario
+|
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|turn|13
+|
+|switch|p2a: Victini|Victini|341\/341
+|move|p1a: Blissey|Heal Bell|p1a: Blissey
+|-cureteam|p1a: Blissey|[from] move: HealBell
+|
+|turn|14
+|
+|switch|p1a: Gligar|Gligar, F|293\/334
+|move|p2a: Victini|V-create|p1a: Gligar
+|-damage|p1a: Gligar|94\/334
+|-unboost|p2a: Victini|def|1
+|-unboost|p2a: Victini|spd|1
+|-unboost|p2a: Victini|spe|1
+|
+|turn|15
+|
+|move|p1a: Gligar|Roost|p1a: Gligar
+|-heal|p1a: Gligar|261\/334
+|move|p2a: Victini|V-create|p1a: Gligar
+|-damage|p1a: Gligar|71\/334
+|-unboost|p2a: Victini|def|1
+|-unboost|p2a: Victini|spd|1
+|-unboost|p2a: Victini|spe|1
+|
+|turn|16
+|
+|switch|p2a: Sableye|Sableye, F, shiny|82\/303
+|move|p1a: Gligar|Roost|p1a: Gligar
+|-heal|p1a: Gligar|238\/334
+|
+|turn|17
+|
+|move|p2a: Sableye|Taunt|p1a: Gligar
+|-start|p1a: Gligar|move: Taunt
+|move|p1a: Gligar|U-turn|p2a: Sableye
+|-damage|p2a: Sableye|37\/303
+|
+|switch|p1a: Hydreigon|Hydreigon, F|325\/325
+|
+|turn|18
+|
+|move|p2a: Sableye|Will-O-Wisp|p1a: Hydreigon
+|-status|p1a: Hydreigon|brn
+|move|p1a: Hydreigon|Iron Tail|p2a: Sableye
+|-damage|p2a: Sableye|0 fnt
+|faint|p2a: Sableye
+|
+|-damage|p1a: Hydreigon|285\/325 brn|[from] brn
+|
+|switch|p2a: Registeel|Registeel, shiny|364\/364
+|turn|19
+|
+|switch|p1a: Gligar|Gligar, F|238\/334
+|move|p2a: Registeel|Stealth Rock|p1a: Gligar
+|-sidestart|p1: warzoid|move: Stealth Rock
+|
+|turn|20
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|119\/362
+|move|p1a: Gligar|Stealth Rock|p2a: Blastoise
+|-sidestart|p2: Praestigiae|move: Stealth Rock
+|
+|turn|21
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|-damage|p1a: Blissey|625\/714|[from] Stealth Rock
+|move|p2a: Blastoise|Rapid Spin|p1a: Blissey
+|-damage|p1a: Blissey|598\/714
+|-sideend|p2: Praestigiae|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Blastoise
+|
+|turn|22
+|
+|move|p2a: Blastoise|Aura Sphere|p1a: Blissey
+|-supereffective|p1a: Blissey
+|-damage|p1a: Blissey|358\/714
+|move|p1a: Blissey|Heal Bell|p1a: Blissey
+|-cureteam|p1a: Blissey|[from] move: HealBell
+|
+|turn|23
+|
+|switch|p2a: Registeel|Registeel, shiny|364\/364
+|move|p1a: Blissey|Soft-Boiled|p1a: Blissey
+|-heal|p1a: Blissey|714\/714
+|
+|turn|24
+|
+|switch|p1a: Gligar|Gligar, F|238\/334
+|-damage|p1a: Gligar|197\/334|[from] Stealth Rock
+|switch|p2a: Victini|Victini|341\/341
+|
+|turn|25
+|
+|move|p2a: Victini|V-create|p1a: Gligar
+|-damage|p1a: Gligar|1\/334
+|-unboost|p2a: Victini|def|1
+|-unboost|p2a: Victini|spd|1
+|-unboost|p2a: Victini|spe|1
+|move|p1a: Gligar|Roost|p1a: Gligar
+|-heal|p1a: Gligar|168\/334
+|
+|turn|26
+|
+|move|p1a: Gligar|Roost|p1a: Gligar
+|-heal|p1a: Gligar|334\/334
+|move|p2a: Victini|V-create|p1a: Gligar
+|-damage|p1a: Gligar|139\/334
+|-unboost|p2a: Victini|def|1
+|-unboost|p2a: Victini|spd|1
+|-unboost|p2a: Victini|spe|1
+|
+|turn|27
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|119\/362
+|move|p1a: Gligar|Roost|p1a: Gligar
+|-heal|p1a: Gligar|306\/334
+|
+|turn|28
+|
+|switch|p1a: Hydreigon|Hydreigon, F|285\/325
+|-damage|p1a: Hydreigon|245\/325|[from] Stealth Rock
+|move|p2a: Blastoise|Water Pulse|p1a: Hydreigon
+|-resisted|p1a: Hydreigon
+|-damage|p1a: Hydreigon|138\/325
+|
+|turn|29
+|
+|switch|p2a: Registeel|Registeel, shiny|364\/364
+|move|p1a: Hydreigon|Crunch|p2a: Registeel
+|-damage|p2a: Registeel|220\/364
+|
+|-heal|p2a: Registeel|242\/364|[from] item: Leftovers
+|turn|30
+|
+|switch|p1a: Mienshao|Mienshao, M|271\/271
+|-damage|p1a: Mienshao|255\/271|[from] Stealth Rock
+|move|p2a: Registeel|Iron Head|p1a: Mienshao
+|-crit|p1a: Mienshao
+|-damage|p1a: Mienshao|95\/271
+|
+|-heal|p2a: Registeel|264\/364|[from] item: Leftovers
+|turn|31
+|
+|switch|p2a: EauDeParfum|Aromatisse, F|406\/406
+|move|p1a: Mienshao|High Jump Kick|p2a: EauDeParfum|[miss]
+|-miss|p1a: Mienshao|p2a: EauDeParfum
+|-damage|p1a: Mienshao|0 fnt|[from] highjumpkick
+|faint|p1a: Mienshao
+|
+|
+|switch|p1a: Gligar|Gligar, F|306\/334
+|-damage|p1a: Gligar|265\/334|[from] Stealth Rock
+|turn|32
+|
+|move|p1a: Gligar|Stealth Rock|p2a: EauDeParfum
+|-sidestart|p2: Praestigiae|move: Stealth Rock
+|move|p2a: EauDeParfum|Wish|p2a: EauDeParfum
+|
+|turn|33
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|119\/362
+|-damage|p2a: Blastoise|74\/362|[from] Stealth Rock
+|move|p1a: Gligar|U-turn|p2a: Blastoise
+|-damage|p2a: Blastoise|39\/362
+|
+|switch|p1a: Hydreigon|Hydreigon, F|138\/325
+|-damage|p1a: Hydreigon|98\/325|[from] Stealth Rock
+|
+|-heal|p2a: Blastoise|242\/362|[from] move: Wish|[wisher] EauDeParfum
+|turn|34
+|
+|move|p1a: Hydreigon|Outrage|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|
+|switch|p2a: EauDeParfum|Aromatisse, F|406\/406
+|-damage|p2a: EauDeParfum|356\/406|[from] Stealth Rock
+|turn|35
+|
+|move|p1a: Hydreigon|Outrage|p2a: EauDeParfum
+|-immune|p2a: EauDeParfum|[msg]
+|move|p2a: EauDeParfum|Moonblast|p1a: Hydreigon
+|-supereffective|p1a: Hydreigon
+|-damage|p1a: Hydreigon|0 fnt
+|faint|p1a: Hydreigon
+|
+|-heal|p2a: EauDeParfum|381\/406|[from] item: Leftovers
+|
+|switch|p1a: Gligar|Gligar, F|265\/334
+|-damage|p1a: Gligar|224\/334|[from] Stealth Rock
+|turn|36
+|
+|move|p1a: Gligar|Knock Off|p2a: EauDeParfum
+|-resisted|p2a: EauDeParfum
+|-damage|p2a: EauDeParfum|356\/406
+|-enditem|p2a: EauDeParfum|Leftovers|[from] move: Knock Off|[of] p1a: Gligar
+|move|p2a: EauDeParfum|Moonblast|p1a: Gligar
+|-damage|p1a: Gligar|112\/334
+|-unboost|p1a: Gligar|spa|1
+|
+|turn|37
+|
+|move|p1a: Gligar|Roost|p1a: Gligar
+|-heal|p1a: Gligar|279\/334
+|move|p2a: EauDeParfum|Moonblast|p1a: Gligar
+|-damage|p1a: Gligar|176\/334
+|
+|turn|38
+|
+|move|p1a: Gligar|Roost|p1a: Gligar
+|-heal|p1a: Gligar|334\/334
+|move|p2a: EauDeParfum|Moonblast|p1a: Gligar
+|-crit|p1a: Gligar
+|-damage|p1a: Gligar|181\/334
+|
+|turn|39
+|
+|move|p1a: Gligar|Roost|p1a: Gligar
+|-heal|p1a: Gligar|334\/334
+|move|p2a: EauDeParfum|Moonblast|p1a: Gligar
+|-damage|p1a: Gligar|229\/334
+|-unboost|p1a: Gligar|spa|1
+|
+|turn|40
+|
+|move|p1a: Gligar|U-turn|p2a: EauDeParfum
+|-resisted|p2a: EauDeParfum
+|-damage|p2a: EauDeParfum|338\/406
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|-damage|p1a: Blissey|625\/714|[from] Stealth Rock
+|move|p2a: EauDeParfum|Moonblast|p1a: Blissey
+|-damage|p1a: Blissey|540\/714
+|-unboost|p1a: Blissey|spa|1
+|
+|turn|41
+|
+|move|p1a: Blissey|Wish|p1a: Blissey
+|move|p2a: EauDeParfum|Wish|p2a: EauDeParfum
+|
+|turn|42
+|
+|switch|p2a: Victini|Victini|341\/341
+|-damage|p2a: Victini|256\/341|[from] Stealth Rock
+|move|p1a: Blissey|Seismic Toss|p2a: Victini
+|-damage|p2a: Victini|156\/341
+|
+|-heal|p2a: Victini|341\/341|[from] move: Wish|[wisher] EauDeParfum
+|-heal|p1a: Blissey|714\/714|[from] move: Wish|[wisher] Blissey
+|turn|43
+|
+|switch|p1a: Gligar|Gligar, F|229\/334
+|-damage|p1a: Gligar|188\/334|[from] Stealth Rock
+|move|p2a: Victini|U-turn|p1a: Gligar
+|-resisted|p1a: Gligar
+|-damage|p1a: Gligar|161\/334
+|
+|switch|p2a: Hydreigon|Hydreigon, M|325\/325
+|-damage|p2a: Hydreigon|285\/325|[from] Stealth Rock
+|
+|turn|44
+|
+|move|p2a: Hydreigon|Focus Blast|p1a: Gligar
+|-resisted|p1a: Gligar
+|-damage|p1a: Gligar|47\/334
+|move|p1a: Gligar|Roost|p1a: Gligar
+|-heal|p1a: Gligar|214\/334
+|
+|turn|45
+|
+|switch|p2a: EauDeParfum|Aromatisse, F|338\/406
+|-damage|p2a: EauDeParfum|288\/406|[from] Stealth Rock
+|move|p1a: Gligar|Knock Off|p2a: EauDeParfum
+|-resisted|p2a: EauDeParfum
+|-damage|p2a: EauDeParfum|270\/406
+|
+|turn|46
+|
+|move|p1a: Gligar|U-turn|p2a: EauDeParfum
+|-resisted|p2a: EauDeParfum
+|-damage|p2a: EauDeParfum|249\/406
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|-damage|p1a: Blissey|625\/714|[from] Stealth Rock
+|move|p2a: EauDeParfum|Wish|p2a: EauDeParfum
+|
+|turn|47
+|
+|switch|p2a: Victini|Victini|341\/341
+|-damage|p2a: Victini|256\/341|[from] Stealth Rock
+|move|p1a: Blissey|Wish|p1a: Blissey
+|
+|-heal|p2a: Victini|341\/341|[from] move: Wish|[wisher] EauDeParfum
+|turn|48
+|
+|switch|p1a: Gligar|Gligar, F|214\/334
+|-damage|p1a: Gligar|173\/334|[from] Stealth Rock
+|move|p2a: Victini|V-create|p1a: Gligar
+|-damage|p1a: Gligar|0 fnt
+|-unboost|p2a: Victini|def|1
+|-unboost|p2a: Victini|spd|1
+|-unboost|p2a: Victini|spe|1
+|faint|p1a: Gligar
+|
+|chat|Praestigiae|finally
+|
+|switch|p1a: Cloyster|Cloyster, M|181\/241
+|-damage|p1a: Cloyster|121\/241|[from] Stealth Rock
+|turn|49
+|
+|switch|p2a: Registeel|Registeel, shiny|264\/364
+|-damage|p2a: Registeel|242\/364|[from] Stealth Rock
+|move|p1a: Cloyster|Hydro Pump|p2a: Registeel
+|-crit|p2a: Registeel
+|-damage|p2a: Registeel|158\/364
+|
+|-heal|p2a: Registeel|180\/364|[from] item: Leftovers
+|turn|50
+|
+|move|p1a: Cloyster|Shell Smash|p1a: Cloyster
+|-boost|p1a: Cloyster|atk|2
+|-boost|p1a: Cloyster|spa|2
+|-boost|p1a: Cloyster|spe|2
+|-unboost|p1a: Cloyster|def|1
+|-unboost|p1a: Cloyster|spd|1
+|move|p2a: Registeel|Iron Head|p1a: Cloyster
+|-damage|p1a: Cloyster|48\/241
+|
+|-heal|p2a: Registeel|202\/364|[from] item: Leftovers
+|turn|51
+|
+|move|p1a: Cloyster|Icicle Spear|p2a: Registeel
+|-resisted|p2a: Registeel
+|-damage|p2a: Registeel|174\/364
+|-resisted|p2a: Registeel
+|-damage|p2a: Registeel|146\/364
+|-resisted|p2a: Registeel
+|-damage|p2a: Registeel|118\/364
+|-resisted|p2a: Registeel
+|-damage|p2a: Registeel|90\/364
+|-resisted|p2a: Registeel
+|-damage|p2a: Registeel|63\/364
+|-hitcount|p2a: Registeel|5
+|move|p2a: Registeel|Iron Head|p1a: Cloyster
+|-damage|p1a: Cloyster|0 fnt
+|faint|p1a: Cloyster
+|
+|-heal|p2a: Registeel|85\/364|[from] item: Leftovers
+|
+|switch|p1a: Blissey|Blissey, F|625\/714
+|-damage|p1a: Blissey|536\/714|[from] Stealth Rock
+|turn|52
+|
+|move|p1a: Blissey|Seismic Toss|p2a: Registeel
+|-damage|p2a: Registeel|0 fnt
+|faint|p2a: Registeel
+|
+|
+|switch|p2a: Victini|Victini|341\/341
+|-damage|p2a: Victini|256\/341|[from] Stealth Rock
+|turn|53
+|
+|move|p2a: Victini|V-create|p1a: Blissey
+|-damage|p1a: Blissey|0 fnt
+|-unboost|p2a: Victini|def|1
+|-unboost|p2a: Victini|spd|1
+|-unboost|p2a: Victini|spe|1
+|faint|p1a: Blissey
+|
+|win|Praestigiae
+|raw|Ladder updating...
+|raw|warzoid's rating: 1532 &rarr; <strong>1505<\/strong><br \/>(-27 for losing)
+|raw|Praestigiae's rating: 1406 &rarr; <strong>1433<\/strong><br \/>(+27 for winning)
+|chat|warzoid|gg
+|chat|Praestigiae|gg

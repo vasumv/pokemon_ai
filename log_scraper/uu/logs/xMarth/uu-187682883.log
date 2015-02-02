@@ -1,0 +1,382 @@
+|join|Time Square
+|join|xMarth
+|player|p1|Time Square|115
+|player|p2|xMarth|153
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Sableye, M
+|poke|p1|Snorlax, M
+|poke|p1|Swampert, F
+|poke|p1|Florges, F
+|poke|p1|Cresselia, F
+|poke|p1|Forretress, M
+|poke|p2|Lopunny, F
+|poke|p2|Hydreigon, F
+|poke|p2|Jirachi, shiny
+|poke|p2|Tentacruel, M
+|poke|p2|Gligar, F
+|poke|p2|Umbreon, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Sableye|Sableye, M|303\/303
+|switch|p2a: Tentacruel|Tentacruel, M|364\/364
+|turn|1
+|
+|detailschange|p1a: Sableye|Sableye-Mega, M
+|message|Sableye has Mega Evolved into Mega Sableye!
+|move|p1a: Sableye|Will-O-Wisp|p2a: Tentacruel
+|-status|p2a: Tentacruel|brn
+|move|p2a: Tentacruel|Toxic|p1a: Sableye
+|move|p1a: Sableye|Toxic|p2a: Tentacruel|[from]Magic Bounce
+|-fail|p2a: Tentacruel
+|
+|-damage|p2a: Tentacruel|319\/364 brn|[from] brn
+|turn|2
+|
+|switch|p2a: Gligar|Gligar, F|334\/334
+|switch|p1a: Snorlax|Snorlax, M|497\/497
+|
+|turn|3
+|
+|move|p2a: Gligar|Stealth Rock|p1a: Snorlax
+|-sidestart|p1: Time Square|move: Stealth Rock
+|move|p1a: Snorlax|Curse|p1a: Snorlax
+|-boost|p1a: Snorlax|atk|1
+|-boost|p1a: Snorlax|def|1
+|-unboost|p1a: Snorlax|spe|1
+|
+|turn|4
+|
+|move|p2a: Gligar|U-turn|p1a: Snorlax
+|-damage|p1a: Snorlax|464\/497
+|
+|switch|p2a: Lopunny|Lopunny, F|271\/271
+|move|p1a: Snorlax|Body Slam|p2a: Lopunny
+|-damage|p2a: Lopunny|84\/271
+|
+|-heal|p1a: Snorlax|495\/497|[from] item: Leftovers
+|turn|5
+|
+|detailschange|p2a: Lopunny|Lopunny-Mega, F
+|message|Lopunny has Mega Evolved into Mega Lopunny!
+|move|p2a: Lopunny|High Jump Kick|p1a: Snorlax
+|-supereffective|p1a: Snorlax
+|-damage|p1a: Snorlax|141\/497
+|move|p1a: Snorlax|Body Slam|p2a: Lopunny
+|-damage|p2a: Lopunny|0 fnt
+|faint|p2a: Lopunny
+|
+|-heal|p1a: Snorlax|172\/497|[from] item: Leftovers
+|
+|switch|p2a: Jirachi|Jirachi, shiny|341\/341
+|turn|6
+|
+|switch|p1a: Forretress|Forretress, M|353\/353
+|-damage|p1a: Forretress|309\/353|[from] Stealth Rock
+|move|p2a: Jirachi|Substitute|p2a: Jirachi
+|-start|p2a: Jirachi|Substitute
+|-damage|p2a: Jirachi|256\/341
+|
+|-heal|p2a: Jirachi|277\/341|[from] item: Leftovers
+|-heal|p1a: Forretress|331\/353|[from] item: Leftovers
+|turn|7
+|
+|move|p2a: Jirachi|Calm Mind|p2a: Jirachi
+|-boost|p2a: Jirachi|spa|1
+|-boost|p2a: Jirachi|spd|1
+|move|p1a: Forretress|Rapid Spin|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-activate|p2a: Jirachi|Substitute|[damage]
+|-sideend|p1: Time Square|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Forretress
+|
+|-heal|p2a: Jirachi|298\/341|[from] item: Leftovers
+|-heal|p1a: Forretress|353\/353|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Swampert|Swampert, F|401\/401
+|move|p2a: Jirachi|Calm Mind|p2a: Jirachi
+|-boost|p2a: Jirachi|spa|1
+|-boost|p2a: Jirachi|spd|1
+|
+|-heal|p2a: Jirachi|319\/341|[from] item: Leftovers
+|turn|9
+|
+|move|p2a: Jirachi|Moonblast|p1a: Swampert
+|-damage|p1a: Swampert|201\/401
+|move|p1a: Swampert|Roar|p2a: Jirachi
+|drag|p2a: Umbreon|Umbreon, M|394\/394
+|
+|-heal|p1a: Swampert|226\/401|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Snorlax|Snorlax, M|172\/497
+|move|p2a: Umbreon|Heal Bell|p2a: Umbreon
+|-cureteam|p2a: Umbreon|[from] move: HealBell
+|
+|-heal|p1a: Snorlax|203\/497|[from] item: Leftovers
+|turn|11
+|
+|switch|p2a: Jirachi|Jirachi, shiny|319\/341
+|move|p1a: Snorlax|Curse|p1a: Snorlax
+|-boost|p1a: Snorlax|atk|1
+|-boost|p1a: Snorlax|def|1
+|-unboost|p1a: Snorlax|spe|1
+|
+|-heal|p2a: Jirachi|340\/341|[from] item: Leftovers
+|-heal|p1a: Snorlax|234\/497|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Jirachi|Calm Mind|p2a: Jirachi
+|-boost|p2a: Jirachi|spa|1
+|-boost|p2a: Jirachi|spd|1
+|move|p1a: Snorlax|Earthquake|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|84\/341
+|
+|-heal|p2a: Jirachi|105\/341|[from] item: Leftovers
+|-heal|p1a: Snorlax|265\/497|[from] item: Leftovers
+|turn|13
+|
+|move|p2a: Jirachi|Moonblast|p1a: Snorlax
+|-damage|p1a: Snorlax|170\/497
+|-unboost|p1a: Snorlax|spa|1
+|move|p1a: Snorlax|Earthquake|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|faint|p2a: Jirachi
+|
+|-heal|p1a: Snorlax|201\/497|[from] item: Leftovers
+|
+|switch|p2a: Hydreigon|Hydreigon, F|325\/325
+|turn|14
+|join|Can't Get Off Tilt
+|
+|switch|p1a: Florges|Florges, F|359\/359
+|move|p2a: Hydreigon|U-turn|p1a: Florges
+|-crit|p1a: Florges
+|-resisted|p1a: Florges
+|-damage|p1a: Florges|321\/359
+|
+|switch|p2a: Tentacruel|Tentacruel, M|319\/364
+|
+|-heal|p2a: Tentacruel|341\/364|[from] item: Black Sludge
+|-heal|p1a: Florges|343\/359|[from] item: Leftovers
+|turn|15
+|
+|move|p2a: Tentacruel|Toxic Spikes|p1a: Florges
+|-sidestart|p1: Time Square|move: Toxic Spikes
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p2a: Tentacruel|363\/364|[from] item: Black Sludge
+|-heal|p1a: Florges|359\/359|[from] item: Leftovers
+|turn|16
+|
+|switch|p1a: Snorlax|Snorlax, M|201\/497
+|-status|p1a: Snorlax|psn
+|move|p2a: Tentacruel|Scald|p1a: Snorlax
+|-damage|p1a: Snorlax|143\/497 psn
+|
+|-heal|p1a: Snorlax|322\/497 psn|[from] move: Wish|[wisher] Florges
+|-heal|p2a: Tentacruel|364\/364|[from] item: Black Sludge
+|-heal|p1a: Snorlax|353\/497 psn|[from] item: Leftovers
+|-damage|p1a: Snorlax|291\/497 psn|[from] psn
+|turn|17
+|
+|move|p2a: Tentacruel|Toxic Spikes|p1a: Snorlax
+|-sidestart|p1: Time Square|move: Toxic Spikes
+|move|p1a: Snorlax|Body Slam|p2a: Tentacruel
+|-crit|p2a: Tentacruel
+|-damage|p2a: Tentacruel|202\/364
+|
+|-heal|p2a: Tentacruel|224\/364|[from] item: Black Sludge
+|-heal|p1a: Snorlax|322\/497 psn|[from] item: Leftovers
+|-damage|p1a: Snorlax|260\/497 psn|[from] psn
+|turn|18
+|
+|switch|p2a: Umbreon|Umbreon, M|394\/394
+|move|p1a: Snorlax|Rest|p1a: Snorlax
+|-status|p1a: Snorlax|slp
+|-heal|p1a: Snorlax|497\/497 slp|[silent]
+|-status|p1a: Snorlax|slp|[from] move: Rest
+|
+|turn|19
+|
+|move|p2a: Umbreon|Foul Play|p1a: Snorlax
+|-damage|p1a: Snorlax|361\/497 slp
+|cant|p1a: Snorlax|slp
+|
+|-heal|p1a: Snorlax|392\/497 slp|[from] item: Leftovers
+|turn|20
+|
+|move|p2a: Umbreon|Foul Play|p1a: Snorlax
+|-damage|p1a: Snorlax|259\/497 slp
+|cant|p1a: Snorlax|slp
+|
+|-heal|p1a: Snorlax|290\/497 slp|[from] item: Leftovers
+|turn|21
+|
+|move|p2a: Umbreon|Foul Play|p1a: Snorlax
+|-damage|p1a: Snorlax|145\/497 slp
+|-curestatus|p1a: Snorlax|slp
+|move|p1a: Snorlax|Curse|p1a: Snorlax
+|-boost|p1a: Snorlax|atk|1
+|-boost|p1a: Snorlax|def|1
+|-unboost|p1a: Snorlax|spe|1
+|
+|-heal|p1a: Snorlax|176\/497|[from] item: Leftovers
+|turn|22
+|
+|move|p2a: Umbreon|Foul Play|p1a: Snorlax
+|-damage|p1a: Snorlax|46\/497
+|move|p1a: Snorlax|Rest|p1a: Snorlax
+|-status|p1a: Snorlax|slp
+|-heal|p1a: Snorlax|497\/497 slp|[silent]
+|-status|p1a: Snorlax|slp|[from] move: Rest
+|
+|turn|23
+|
+|switch|p1a: Forretress|Forretress, M|353\/353
+|move|p2a: Umbreon|Foul Play|p1a: Forretress
+|-damage|p1a: Forretress|298\/353
+|
+|-heal|p1a: Forretress|320\/353|[from] item: Leftovers
+|turn|24
+|
+|switch|p2a: Tentacruel|Tentacruel, M|224\/364
+|move|p1a: Forretress|Rapid Spin|p2a: Tentacruel
+|-damage|p2a: Tentacruel|209\/364
+|-sideend|p1: Time Square|Toxic Spikes|[from] move: Rapid Spin|[of] p1a: Forretress
+|
+|-heal|p2a: Tentacruel|231\/364|[from] item: Black Sludge
+|-heal|p1a: Forretress|342\/353|[from] item: Leftovers
+|turn|25
+|
+|switch|p1a: Sableye|Sableye-Mega, M|303\/303
+|move|p2a: Tentacruel|Scald|p1a: Sableye
+|-damage|p1a: Sableye|239\/303
+|-status|p1a: Sableye|brn
+|
+|-heal|p2a: Tentacruel|253\/364|[from] item: Black Sludge
+|-damage|p1a: Sableye|202\/303 brn|[from] brn
+|turn|26
+|
+|switch|p2a: Hydreigon|Hydreigon, F|325\/325
+|move|p1a: Sableye|Will-O-Wisp|p2a: Hydreigon
+|-status|p2a: Hydreigon|brn
+|
+|-damage|p2a: Hydreigon|285\/325 brn|[from] brn
+|-damage|p1a: Sableye|165\/303 brn|[from] brn
+|turn|27
+|
+|switch|p1a: Florges|Florges, F|359\/359
+|move|p2a: Hydreigon|U-turn|p1a: Florges
+|-resisted|p1a: Florges
+|-damage|p1a: Florges|345\/359
+|
+|switch|p2a: Tentacruel|Tentacruel, M|253\/364
+|
+|-heal|p2a: Tentacruel|275\/364|[from] item: Black Sludge
+|-heal|p1a: Florges|359\/359|[from] item: Leftovers
+|turn|28
+|
+|switch|p1a: Cresselia|Cresselia, F|443\/443
+|move|p2a: Tentacruel|Toxic Spikes|p1a: Cresselia
+|-sidestart|p1: Time Square|move: Toxic Spikes
+|
+|-heal|p2a: Tentacruel|297\/364|[from] item: Black Sludge
+|turn|29
+|
+|move|p2a: Tentacruel|Toxic|p1a: Cresselia
+|-status|p1a: Cresselia|tox
+|move|p1a: Cresselia|Calm Mind|p1a: Cresselia
+|-boost|p1a: Cresselia|spa|1
+|-boost|p1a: Cresselia|spd|1
+|
+|-heal|p2a: Tentacruel|319\/364|[from] item: Black Sludge
+|-damage|p1a: Cresselia|416\/443 tox|[from] psn
+|turn|30
+|
+|move|p2a: Tentacruel|Scald|p1a: Cresselia
+|-damage|p1a: Cresselia|373\/443 tox
+|move|p1a: Cresselia|Ice Beam|p2a: Tentacruel
+|-resisted|p2a: Tentacruel
+|-damage|p2a: Tentacruel|284\/364
+|
+|-heal|p2a: Tentacruel|306\/364|[from] item: Black Sludge
+|-heal|p1a: Cresselia|400\/443 tox|[from] item: Leftovers
+|-damage|p1a: Cresselia|346\/443 tox|[from] psn
+|turn|31
+|
+|move|p2a: Tentacruel|Toxic Spikes|p1a: Cresselia
+|-sidestart|p1: Time Square|move: Toxic Spikes
+|move|p1a: Cresselia|Calm Mind|p1a: Cresselia
+|-boost|p1a: Cresselia|spa|1
+|-boost|p1a: Cresselia|spd|1
+|
+|-heal|p2a: Tentacruel|328\/364|[from] item: Black Sludge
+|-heal|p1a: Cresselia|373\/443 tox|[from] item: Leftovers
+|-damage|p1a: Cresselia|292\/443 tox|[from] psn
+|turn|32
+|
+|switch|p2a: Umbreon|Umbreon, M|394\/394
+|move|p1a: Cresselia|Ice Beam|p2a: Umbreon
+|-damage|p2a: Umbreon|326\/394
+|
+|-heal|p1a: Cresselia|319\/443 tox|[from] item: Leftovers
+|-heal|p2a: Umbreon|350\/394|[from] item: Leftovers
+|-damage|p1a: Cresselia|211\/443 tox|[from] psn
+|turn|33
+|
+|move|p1a: Cresselia|Rest|p1a: Cresselia
+|-status|p1a: Cresselia|slp
+|-heal|p1a: Cresselia|443\/443 slp|[silent]
+|-status|p1a: Cresselia|slp|[from] move: Rest
+|move|p2a: Umbreon|Heal Bell|p2a: Umbreon
+|-cureteam|p2a: Umbreon|[from] move: HealBell
+|
+|-heal|p2a: Umbreon|374\/394|[from] item: Leftovers
+|turn|34
+|
+|switch|p2a: Hydreigon|Hydreigon, F|285\/325
+|cant|p1a: Cresselia|slp
+|
+|turn|35
+|
+|move|p2a: Hydreigon|Dark Pulse|p1a: Cresselia
+|-supereffective|p1a: Cresselia
+|-damage|p1a: Cresselia|329\/443 slp
+|cant|p1a: Cresselia|slp
+|
+|-heal|p1a: Cresselia|356\/443 slp|[from] item: Leftovers
+|turn|36
+|
+|move|p2a: Hydreigon|Dark Pulse|p1a: Cresselia
+|-supereffective|p1a: Cresselia
+|-damage|p1a: Cresselia|240\/443 slp
+|-curestatus|p1a: Cresselia|slp
+|move|p1a: Cresselia|Ice Beam|p2a: Hydreigon
+|-crit|p2a: Hydreigon
+|-supereffective|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|faint|p2a: Hydreigon
+|
+|-heal|p1a: Cresselia|267\/443|[from] item: Leftovers
+|-message|xMarth forfeited.
+|
+|win|Time Square
+|raw|Ladder updating...
+|leave|xMarth
+|player|p2

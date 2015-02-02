@@ -1,0 +1,372 @@
+|join|K4rpman
+|join|Sweep
+|player|p1|K4rpman|102
+|player|p2|Sweep|278
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Salamence, F
+|poke|p1|Alakazam, F
+|poke|p1|Skarmory, F
+|poke|p1|Magnezone
+|poke|p1|Gengar, F
+|poke|p1|Breloom, F
+|poke|p2|Hippowdon, F, shiny
+|poke|p2|Latias, F
+|poke|p2|Skarmory, M
+|poke|p2|Roserade, F, shiny
+|poke|p2|Stoutland, M
+|poke|p2|Jellicent, F, shiny
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Skarmory|Skarmory, F|271\/271
+|switch|p2a: Roserade|Roserade, F, shiny|324\/324
+|turn|1
+|callback|decision
+|
+|move|p2a: Roserade|Hidden Power|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|99\/271
+|move|p1a: Skarmory|Stealth Rock|p2a: Roserade
+|-sidestart|p2: Sweep|move: Stealth Rock
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Salamence|Salamence, F|331\/331
+|move|p2a: Roserade|Sleep Powder|p1a: Salamence|[miss]
+|-miss|p2a: Roserade|p1a: Salamence
+|
+|turn|3
+|callback|decision
+|chat|Sweep|oof
+|
+|switch|p2a: Hippowdon|Hippowdon, F, shiny|420\/420
+|-damage|p2a: Hippowdon|394\/420|[from] Stealth Rock
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Hippowdon
+|move|p1a: Salamence|Outrage|p2a: Hippowdon
+|-crit|p2a: Hippowdon
+|-damage|p2a: Hippowdon|31\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salamence|311\/331|[from] sandstorm
+|-heal|p2a: Hippowdon|57\/420|[from] item: Leftovers
+|turn|4
+|callback|decision
+|chat|Sweep|jesus
+|chat|K4rpman|sorry about that
+|
+|move|p1a: Salamence|Outrage|p2a: Hippowdon
+|-damage|p2a: Hippowdon|0 fnt
+|faint|p2a: Hippowdon
+|-boost|p1a: Salamence|atk|1|[from] ability: Moxie
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salamence|291\/331|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: Skarmory|Skarmory, M|334\/334
+|-damage|p2a: Skarmory|293\/334|[from] Stealth Rock
+|turn|5
+|callback|decision
+|
+|move|p1a: Salamence|Outrage|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|201\/334
+|move|p2a: Skarmory|Spikes|p1a: Salamence
+|-sidestart|p1: K4rpman|Spikes
+|
+|-end|p1a: Salamence|rampage
+|-start|p1a: Salamence|confusion
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salamence|271\/331|[from] sandstorm
+|-heal|p2a: Skarmory|221\/334|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, F|99\/271
+|move|p2a: Skarmory|Whirlwind|p1a: Skarmory
+|drag|p1a: Gengar|Gengar, F|262\/262
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gengar|246\/262|[from] sandstorm
+|-heal|p1a: Gengar|262\/262|[from] item: Leftovers
+|-heal|p2a: Skarmory|241\/334|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p1a: Gengar|Will-O-Wisp|p2a: Skarmory
+|-status|p2a: Skarmory|brn
+|move|p2a: Skarmory|Spikes|p1a: Gengar
+|-sidestart|p1: K4rpman|Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gengar|246\/262|[from] sandstorm
+|-heal|p1a: Gengar|262\/262|[from] item: Leftovers
+|-heal|p2a: Skarmory|261\/334 brn|[from] item: Leftovers
+|-damage|p2a: Skarmory|220\/334 brn|[from] brn
+|turn|8
+|callback|decision
+|join|yuy
+|
+|move|p1a: Gengar|Focus Blast|p2a: Skarmory
+|-damage|p2a: Skarmory|36\/334 brn
+|move|p2a: Skarmory|Whirlwind|p1a: Gengar
+|drag|p1a: Breloom|Breloom, F|261\/261
+|-damage|p1a: Breloom|218\/261|[from] Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Breloom|202\/261|[from] sandstorm
+|-heal|p2a: Skarmory|56\/334 brn|[from] item: Leftovers
+|-damage|p2a: Skarmory|15\/334 brn|[from] brn
+|turn|9
+|callback|decision
+|
+|move|p1a: Breloom|Mach Punch|p2a: Skarmory
+|-damage|p2a: Skarmory|0 fnt
+|faint|p2a: Skarmory
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Breloom|186\/261|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: Latias|Latias, F|364\/364
+|-damage|p2a: Latias|319\/364|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|move|p2a: Latias|Dragon Pulse|p1a: Breloom
+|-damage|p1a: Breloom|17\/261
+|move|p1a: Breloom|Bullet Seed|p2a: Latias
+|-crit|p2a: Latias
+|-resisted|p2a: Latias
+|-damage|p2a: Latias|246\/364
+|-resisted|p2a: Latias
+|-damage|p2a: Latias|211\/364
+|-hitcount|p2a: Latias|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|189\/364|[from] sandstorm
+|-damage|p1a: Breloom|1\/261|[from] sandstorm
+|-heal|p2a: Latias|211\/364|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p2a: Latias|Roost|p2a: Latias
+|-heal|p2a: Latias|364\/364
+|move|p1a: Breloom|Spore|p2a: Latias
+|-status|p2a: Latias|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|342\/364 slp|[from] sandstorm
+|-damage|p1a: Breloom|0 fnt|[from] sandstorm
+|-heal|p2a: Latias|364\/364 slp|[from] item: Leftovers
+|faint|p1a: Breloom
+|callback|decision
+|join|shartruce3
+|
+|switch|p1a: Salamence|Salamence, F|271\/331
+|turn|12
+|callback|decision
+|
+|move|p1a: Salamence|Outrage|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|0 fnt
+|faint|p2a: Latias
+|-boost|p1a: Salamence|atk|1|[from] ability: Moxie
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salamence|251\/331|[from] sandstorm
+|callback|decision
+|
+|switch|p2a: Stoutland|Stoutland, M|311\/311
+|-damage|p2a: Stoutland|273\/311|[from] Stealth Rock
+|turn|13
+|callback|decision
+|
+|move|p2a: Stoutland|Return|p1a: Salamence
+|-damage|p1a: Salamence|0 fnt
+|faint|p1a: Salamence
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, F|262\/262
+|turn|14
+|callback|decision
+|
+|switch|p2a: Roserade|Roserade, F, shiny|324\/324
+|-damage|p2a: Roserade|284\/324|[from] Stealth Rock
+|move|p1a: Gengar|Substitute|p1a: Gengar
+|-start|p1a: Gengar|Substitute
+|-damage|p1a: Gengar|197\/262
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gengar|181\/262|[from] sandstorm
+|-damage|p2a: Roserade|264\/324|[from] sandstorm
+|-heal|p1a: Gengar|197\/262|[from] item: Leftovers
+|-heal|p2a: Roserade|284\/324|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1a: Gengar|Shadow Ball|p2a: Roserade
+|-damage|p2a: Roserade|163\/324
+|move|p2a: Roserade|Hidden Power|p1a: Gengar
+|-end|p1a: Gengar|Substitute
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gengar|181\/262|[from] sandstorm
+|-damage|p2a: Roserade|143\/324|[from] sandstorm
+|-heal|p1a: Gengar|197\/262|[from] item: Leftovers
+|-heal|p2a: Roserade|163\/324|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Gengar|Shadow Ball|p2a: Roserade
+|-damage|p2a: Roserade|42\/324
+|-unboost|p2a: Roserade|spd|1
+|move|p2a: Roserade|Hidden Power|p1a: Gengar
+|-damage|p1a: Gengar|125\/262
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gengar|109\/262|[from] sandstorm
+|-damage|p2a: Roserade|22\/324|[from] sandstorm
+|-heal|p1a: Gengar|125\/262|[from] item: Leftovers
+|-heal|p2a: Roserade|42\/324|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Gengar|Shadow Ball|p2a: Roserade
+|-damage|p2a: Roserade|0 fnt
+|faint|p2a: Roserade
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gengar|109\/262|[from] sandstorm
+|-heal|p1a: Gengar|125\/262|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Stoutland|Stoutland, M|273\/311
+|-damage|p2a: Stoutland|235\/311|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|move|p2a: Stoutland|Pursuit|p1a: Gengar
+|-supereffective|p1a: Gengar
+|-damage|p1a: Gengar|0 fnt
+|faint|p1a: Gengar
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: Magnezone|Magnezone|282\/282
+|-damage|p1a: Magnezone|235\/282|[from] Spikes
+|turn|19
+|callback|decision
+|
+|switch|p2a: Jellicent|Jellicent, F, shiny|403\/403
+|-damage|p2a: Jellicent|353\/403|[from] Stealth Rock
+|move|p1a: Magnezone|Substitute|p1a: Magnezone
+|-start|p1a: Magnezone|Substitute
+|-damage|p1a: Magnezone|165\/282
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Jellicent|328\/403|[from] sandstorm
+|-heal|p1a: Magnezone|182\/282|[from] item: Leftovers
+|-heal|p2a: Jellicent|353\/403|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p1a: Magnezone|Charge Beam|p2a: Jellicent
+|-supereffective|p2a: Jellicent
+|-damage|p2a: Jellicent|191\/403
+|-boost|p1a: Magnezone|spa|1
+|move|p2a: Jellicent|Scald|p1a: Magnezone
+|-end|p1a: Magnezone|Substitute
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Jellicent|166\/403|[from] sandstorm
+|-heal|p1a: Magnezone|199\/282|[from] item: Leftovers
+|-heal|p2a: Jellicent|191\/403|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p1a: Magnezone|Charge Beam|p2a: Jellicent
+|-supereffective|p2a: Jellicent
+|-damage|p2a: Jellicent|0 fnt
+|-boost|p1a: Magnezone|spa|1
+|faint|p2a: Jellicent
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Magnezone|216\/282|[from] item: Leftovers
+|callback|decision
+|join|O Totoro
+|chat|Sweep|ok crit to even out bad hax from earlier this match please
+|
+|switch|p2a: Stoutland|Stoutland, M|235\/311
+|-damage|p2a: Stoutland|197\/311|[from] Stealth Rock
+|turn|22
+|callback|decision
+|
+|move|p2a: Stoutland|Return|p1a: Magnezone
+|-crit|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-damage|p1a: Magnezone|0 fnt
+|faint|p1a: Magnezone
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|chat|O Totoro|LLOL
+|chat|Sweep|wow
+|
+|switch|p1a: Skarmory|Skarmory, F|99\/271
+|turn|23
+|callback|decision
+|
+|move|p2a: Stoutland|Return|p1a: Skarmory
+|-crit|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|faint|p1a: Skarmory
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|chat|O Totoro|WAT
+|
+|switch|p1a: Alakazam|Alakazam, F|252\/252
+|turn|24
+|callback|decision
+|chat|Sweep|jesus
+|chat|O Totoro|focus miss time
+|join|haxgodd
+|
+|move|p2a: Stoutland|Return|p1a: Alakazam
+|-enditem|p1a: Alakazam|Focus Sash
+|-damage|p1a: Alakazam|1\/252
+|move|p1a: Alakazam|Focus Blast|p2a: Stoutland|[miss]
+|-miss|p1a: Alakazam|p2a: Stoutland
+|
+|-weather|Sandstorm|[upkeep]
+|turn|25
+|callback|decision
+|chat|haxgodd|:)
+|chat|yuy|and there ya go
+|chat|Sweep|sorry
+|-message|K4rpman forfeited.
+|
+|win|Sweep
+|raw|Ladder updating...
+|raw|K4rpman's rating: 2339 &rarr; <strong>2329<\/strong><br \/>(-10 for losing)
+|raw|Sweep's rating: 2340 &rarr; <strong>2352<\/strong><br \/>(+12 for winning)
+|chat|Sweep|that is just awful
+|leave|K4rpman
+|player|p1

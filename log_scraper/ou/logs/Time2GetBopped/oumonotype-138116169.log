@@ -1,0 +1,120 @@
+|join|rnbs
+|join|Time2GetBopped
+|player|p1|rnbs|102
+|player|p2|Time2GetBopped|138
+|gametype|singles
+|gen|6
+|tier|OU Monotype
+|rule|Same Type Clause: PokÃ©mon in a team must share a type
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Salamence, F
+|poke|p1|Dragonite, F
+|poke|p1|Landorus, M
+|poke|p1|Skarmory, F
+|poke|p1|Charizard, F
+|poke|p1|Thundurus, M
+|poke|p2|Chandelure, M
+|poke|p2|Torkoal, M
+|poke|p2|Ninetales, M
+|poke|p2|Infernape, M
+|poke|p2|Rotom-Heat
+|poke|p2|Charizard, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit three PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Dragonite|Dragonite, F|324\/324
+|switch|p2a: Torkoal|Torkoal, M|344\/344
+|turn|1
+|
+|move|p1a: Dragonite|Dragon Dance|p1a: Dragonite
+|-boost|p1a: Dragonite|atk|1
+|-boost|p1a: Dragonite|spe|1
+|move|p2a: Torkoal|Lava Plume|p1a: Dragonite
+|-resisted|p1a: Dragonite
+|-damage|p1a: Dragonite|303\/324
+|
+|turn|2
+|
+|move|p1a: Dragonite|Outrage|p2a: Torkoal
+|-damage|p2a: Torkoal|158\/344
+|move|p2a: Torkoal|Stealth Rock|p1a: Dragonite
+|-sidestart|p1: rnbs|move: Stealth Rock
+|
+|-heal|p2a: Torkoal|179\/344|[from] item: Leftovers
+|turn|3
+|
+|move|p1a: Dragonite|Outrage|p2a: Torkoal
+|-damage|p2a: Torkoal|4\/344
+|move|p2a: Torkoal|Lava Plume|p1a: Dragonite
+|-resisted|p1a: Dragonite
+|-damage|p1a: Dragonite|262\/324
+|
+|-heal|p2a: Torkoal|25\/344|[from] item: Leftovers
+|turn|4
+|
+|move|p1a: Dragonite|Outrage|p2a: Torkoal
+|-damage|p2a: Torkoal|0 fnt
+|faint|p2a: Torkoal
+|
+|-end|p1a: Dragonite|rampage
+|-start|p1a: Dragonite|confusion
+|
+|switch|p2a: Infernape|Infernape, M|293\/293
+|-enditem|p1a: Dragonite|Lum Berry|[eat]
+|-end|p1a: Dragonite|confusion
+|turn|5
+|
+|move|p2a: Infernape|Stone Edge|p1a: Dragonite|[miss]
+|-miss|p2a: Infernape|p1a: Dragonite
+|move|p1a: Dragonite|Outrage|p2a: Infernape
+|-damage|p2a: Infernape|0 fnt
+|faint|p2a: Infernape
+|
+|join|moe_lester_4th
+|chat|Time2GetBopped|-.-
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|260\/260
+|turn|6
+|
+|move|p1a: Dragonite|Outrage|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|0 fnt
+|faint|p2a: Rotom-Heat
+|
+|chat|Time2GetBopped|ugh
+|join|potatommy19
+|chat|Time2GetBopped|if that stone miss had hit
+|chat|Time2GetBopped|or if i burned
+|
+|switch|p2a: Chandelure|Chandelure, M|262\/262
+|turn|7
+|
+|move|p1a: Dragonite|Outrage|p2a: Chandelure
+|-damage|p2a: Chandelure|0 fnt
+|faint|p2a: Chandelure
+|
+|-end|p1a: Dragonite|rampage
+|-start|p1a: Dragonite|confusion
+|leave|Time2GetBopped
+|player|p2
+|join|Time2GetBopped
+|leave|Time2GetBopped
+|leave|potatommy19
+|join|potatommy19
+|leave|potatommy19
+|leave|moe_lester_4th
+|join|manu 11
+|join|potatommy19
+|leave|potatommy19
+|leave|manu 11
+|-message|Player 2 lost due to inactivity.
+|
+|win|rnbs

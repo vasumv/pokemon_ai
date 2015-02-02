@@ -1,0 +1,374 @@
+|join|dfmetal
+|join|shabbir
+|player|p1|dfmetal|192
+|player|p2|shabbir|169
+|gametype|singles
+|tier|UU
+|rated
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Abomasnow, F
+|poke|p1|Hitmontop, M
+|poke|p1|Glaceon, F
+|poke|p1|Chandelure, M
+|poke|p1|Clefable, F
+|poke|p1|Sharpedo, F
+|poke|p2|Ambipom, F
+|poke|p2|Raikou, shiny
+|poke|p2|Victini
+|poke|p2|Weavile, M
+|poke|p2|Shaymin
+|poke|p2|Mienshao, F
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Abomasnow|Abomasnow, F|322\/322
+|switch|p2a: Jack Sparrow|Raikou, shiny|322\/322
+|-ability|p2a: Jack Sparrow|Pressure
+|-weather|Hail|[from] ability: Snow Warning|[of] p1a: Abomasnow
+|turn|1
+|callback|decision
+|
+|move|p2a: Jack Sparrow|Volt Switch|p1a: Abomasnow
+|-resisted|p1a: Abomasnow
+|-damage|p1a: Abomasnow|213\/322
+|callback|decision
+|
+|switch|p2a: Peace|Victini|341\/341
+|move|p1a: Abomasnow|Earthquake|p2a: Peace
+|-supereffective|p2a: Peace
+|-damage|p2a: Peace|151\/341
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Peace|130\/341|[from] hail
+|turn|2
+|callback|decision
+|
+|switch|p1a: Chandelure|Chandelure, M|261\/261
+|move|p2a: Peace|Psychic|p1a: Chandelure
+|-damage|p1a: Chandelure|125\/261
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Peace|109\/341|[from] hail
+|-damage|p1a: Chandelure|109\/261|[from] hail
+|turn|3
+|callback|decision
+|
+|move|p2a: Peace|Psychic|p1a: Chandelure
+|-crit|p1a: Chandelure
+|-damage|p1a: Chandelure|0 fnt
+|faint|p1a: Chandelure
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Peace|88\/341|[from] hail
+|callback|decision
+|
+|switch|p1a: Clefable|Clefable, F|394\/394
+|turn|4
+|callback|decision
+|
+|switch|p2a: Batman|Shaymin|404\/404
+|move|p1a: Clefable|Stealth Rock|p2a: Batman
+|-sidestart|p2: shabbir|move: Stealth Rock
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Batman|379\/404|[from] hail
+|turn|5
+|callback|decision
+|
+|switch|p2a: Shifu|Mienshao, F|271\/271
+|-damage|p2a: Shifu|255\/271|[from] Stealth Rock
+|move|p1a: Clefable|Seismic Toss|p2a: Shifu
+|-damage|p2a: Shifu|155\/271
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Shifu|139\/271|[from] hail
+|turn|6
+|callback|decision
+|
+|switch|p1a: Hitmontop|Hitmontop, M|304\/304
+|-ability|p1a: Hitmontop|Intimidate|[of] p2a: Shifu
+|-unboost|p2a: Shifu|atk|1
+|move|p2a: Shifu|Hi Jump Kick|p1a: Hitmontop
+|-damage|p1a: Hitmontop|106\/304
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Shifu|123\/271|[from] hail
+|-damage|p1a: Hitmontop|87\/304|[from] hail
+|-heal|p1a: Hitmontop|106\/304|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p1a: Hitmontop|Mach Punch|p2a: Shifu
+|-damage|p2a: Shifu|24\/271
+|move|p2a: Shifu|Hi Jump Kick|p1a: Hitmontop
+|-damage|p1a: Hitmontop|0 fnt
+|faint|p1a: Hitmontop
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Shifu|8\/271|[from] hail
+|callback|decision
+|
+|switch|p1a: Sharpedo|Sharpedo, F|281\/281
+|turn|8
+|callback|decision
+|
+|switch|p2a: Jack Sparrow|Raikou, shiny|322\/322
+|-damage|p2a: Jack Sparrow|282\/322|[from] Stealth Rock
+|-ability|p2a: Jack Sparrow|Pressure
+|move|p1a: Sharpedo|Protect|p1a: Sharpedo
+|-fail|p1a: Sharpedo
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Jack Sparrow|262\/322|[from] hail
+|-damage|p1a: Sharpedo|264\/281|[from] hail
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|9
+|callback|decision
+|
+|move|p1a: Sharpedo|Protect|p1a: Sharpedo
+|-singleturn|p1a: Sharpedo|Protect
+|move|p2a: Jack Sparrow|Thunderbolt|p1a: Sharpedo
+|-activate|p1a: Sharpedo|Protect
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Sharpedo|247\/281|[from] hail
+|-damage|p2a: Jack Sparrow|242\/322|[from] hail
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|10
+|callback|decision
+|
+|move|p1a: Sharpedo|Hydro Pump|p2a: Jack Sparrow
+|-damage|p2a: Jack Sparrow|0 fnt
+|-damage|p1a: Sharpedo|219\/281|[from] item: Life Orb
+|faint|p2a: Jack Sparrow
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Sharpedo|202\/281|[from] hail
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|callback|decision
+|
+|switch|p2a: Batman|Shaymin|379\/404
+|-damage|p2a: Batman|329\/404|[from] Stealth Rock
+|turn|11
+|callback|decision
+|
+|move|p1a: Sharpedo|Blizzard|p2a: Batman
+|-supereffective|p2a: Batman
+|-damage|p2a: Batman|7\/404
+|-damage|p1a: Sharpedo|174\/281|[from] item: Life Orb
+|move|p2a: Batman|Seed Flare|p1a: Sharpedo
+|-supereffective|p1a: Sharpedo
+|-damage|p1a: Sharpedo|0 fnt
+|-damage|p2a: Batman|0 fnt|[from] item: Life Orb
+|faint|p1a: Sharpedo
+|faint|p2a: Batman
+|
+|-weather|Hail|[upkeep]
+|callback|decision
+|chat|dfmetal|:O
+|chat|shabbir|shaymins a beast
+|
+|switch|p2a: Abu|Ambipom, F|291\/291
+|-damage|p2a: Abu|255\/291|[from] Stealth Rock
+|switch|p1a: Clefable|Clefable, F|394\/394
+|turn|12
+|callback|decision
+|
+|move|p2a: Abu|Fake Out|p1a: Clefable
+|-enditem|p2a: Abu|Normal Gem|[from] gem|[move] Fake Out
+|-damage|p1a: Clefable|211\/394
+|cant|p1a: Clefable|flinch
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Abu|237\/291|[from] hail
+|-heal|p1a: Clefable|235\/394|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: Abu|Covet|p1a: Clefable
+|-damage|p1a: Clefable|54\/394
+|-item|p2a: Abu|Leftovers|[from] move: Covet|[of] p1a: Clefable
+|move|p1a: Clefable|Softboiled|p1a: Clefable
+|-heal|p1a: Clefable|251\/394
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Abu|219\/291|[from] hail
+|-heal|p2a: Abu|237\/291|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p2a: Abu|Covet|p1a: Clefable
+|-damage|p1a: Clefable|92\/394
+|move|p1a: Clefable|Seismic Toss|p2a: Abu
+|-damage|p2a: Abu|137\/291
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Abu|119\/291|[from] hail
+|-heal|p2a: Abu|137\/291|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p2a: Abu|Low Sweep|p1a: Clefable
+|-supereffective|p1a: Clefable
+|-damage|p1a: Clefable|0 fnt
+|faint|p1a: Clefable
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Abu|119\/291|[from] hail
+|-heal|p2a: Abu|137\/291|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Abomasnow|Abomasnow, F|213\/322
+|turn|16
+|callback|decision
+|
+|switch|p2a: Shifu|Mienshao, F|8\/271
+|-damage|p2a: Shifu|0 fnt|[from] Stealth Rock
+|faint|p2a: Shifu
+|move|p1a: Abomasnow|Ice Shard|p2: Shifu|[notarget]
+|-notarget
+|
+|-weather|Hail|[upkeep]
+|callback|decision
+|
+|switch|p2a: Robin Hood|Weavile, M|282\/282
+|-damage|p2a: Robin Hood|212\/282|[from] Stealth Rock
+|-ability|p2a: Robin Hood|Pressure
+|turn|17
+|callback|decision
+|
+|move|p2a: Robin Hood|Low Kick|p1a: Abomasnow
+|-supereffective|p1a: Abomasnow
+|-damage|p1a: Abomasnow|0 fnt
+|faint|p1a: Abomasnow
+|
+|-weather|Hail|[upkeep]
+|callback|decision
+|
+|switch|p1a: Glaceon|Glaceon, F|334\/334
+|turn|18
+|callback|decision
+|
+|move|p2a: Robin Hood|Low Kick|p1a: Glaceon
+|-supereffective|p1a: Glaceon
+|-damage|p1a: Glaceon|190\/334
+|move|p1a: Glaceon|Toxic|p2a: Robin Hood
+|-status|p2a: Robin Hood|tox
+|
+|-weather|Hail|[upkeep]
+|-heal|p1a: Glaceon|210\/334|[from] ability: Ice Body
+|-heal|p1a: Glaceon|230\/334|[from] item: Leftovers
+|-damage|p2a: Robin Hood|195\/282 tox|[from] psn
+|turn|19
+|callback|decision
+|
+|move|p1a: Glaceon|Protect|p1a: Glaceon
+|-singleturn|p1a: Glaceon|Protect
+|move|p2a: Robin Hood|Low Kick|p1a: Glaceon
+|-activate|p1a: Glaceon|Protect
+|
+|-weather|Hail|[upkeep]
+|-heal|p1a: Glaceon|250\/334|[from] ability: Ice Body
+|-heal|p1a: Glaceon|270\/334|[from] item: Leftovers
+|-damage|p2a: Robin Hood|161\/282 tox|[from] psn
+|turn|20
+|callback|decision
+|
+|move|p2a: Robin Hood|Low Kick|p1a: Glaceon
+|-supereffective|p1a: Glaceon
+|-damage|p1a: Glaceon|130\/334
+|move|p1a: Glaceon|Wish|p1a: Glaceon
+|
+|-weather|Hail|[upkeep]
+|-heal|p1a: Glaceon|150\/334|[from] ability: Ice Body
+|-heal|p1a: Glaceon|170\/334|[from] item: Leftovers
+|-damage|p2a: Robin Hood|110\/282 tox|[from] psn
+|turn|21
+|callback|decision
+|
+|move|p2a: Robin Hood|Low Kick|p1a: Glaceon
+|-supereffective|p1a: Glaceon
+|-damage|p1a: Glaceon|32\/334
+|move|p1a: Glaceon|Blizzard|p2a: Robin Hood
+|-resisted|p2a: Robin Hood
+|-damage|p2a: Robin Hood|2\/282 tox
+|
+|-weather|Hail|[upkeep]
+|-heal|p1a: Glaceon|52\/334|[from] ability: Ice Body
+|-heal|p1a: Glaceon|219\/334|[from] move: Wish|[wisher] Glaceon
+|-heal|p1a: Glaceon|239\/334|[from] item: Leftovers
+|-damage|p2a: Robin Hood|0 fnt|[from] psn
+|faint|p2a: Robin Hood
+|callback|decision
+|
+|switch|p2a: Peace|Victini|88\/341
+|-damage|p2a: Peace|3\/341|[from] Stealth Rock
+|turn|22
+|callback|decision
+|
+|move|p1a: Glaceon|Protect|p1a: Glaceon
+|-singleturn|p1a: Glaceon|Protect
+|move|p2a: Peace|Blue Flare|p1a: Glaceon
+|-activate|p1a: Glaceon|Protect
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Peace|0 fnt|[from] hail
+|-heal|p1a: Glaceon|259\/334|[from] ability: Ice Body
+|-heal|p1a: Glaceon|279\/334|[from] item: Leftovers
+|faint|p2a: Peace
+|callback|decision
+|chat|dfmetal|x)
+|
+|switch|p2a: Abu|Ambipom, F|137\/291
+|-damage|p2a: Abu|101\/291|[from] Stealth Rock
+|turn|23
+|callback|decision
+|
+|move|p2a: Abu|Fake Out|p1a: Glaceon
+|-damage|p1a: Glaceon|216\/334
+|cant|p1a: Glaceon|flinch
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Abu|83\/291|[from] hail
+|-heal|p1a: Glaceon|236\/334|[from] ability: Ice Body
+|-heal|p2a: Abu|101\/291|[from] item: Leftovers
+|-heal|p1a: Glaceon|256\/334|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p1a: Glaceon|Protect|p1a: Glaceon
+|-singleturn|p1a: Glaceon|Protect
+|move|p2a: Abu|Low Sweep|p1a: Glaceon
+|-activate|p1a: Glaceon|Protect
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Abu|83\/291|[from] hail
+|-heal|p1a: Glaceon|276\/334|[from] ability: Ice Body
+|-heal|p2a: Abu|101\/291|[from] item: Leftovers
+|-heal|p1a: Glaceon|296\/334|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p2a: Abu|Low Sweep|p1a: Glaceon
+|-supereffective|p1a: Glaceon
+|-damage|p1a: Glaceon|174\/334
+|-unboost|p1a: Glaceon|spe|1
+|move|p1a: Glaceon|Blizzard|p2a: Abu
+|-damage|p2a: Abu|0 fnt
+|faint|p2a: Abu
+|
+|win|dfmetal
+|raw|Ladder updating...
+|raw|dfmetal's rating: 1724 &rarr; <strong>1737<\/strong><br \/>(+13 for winning)
+|raw|shabbir's rating: 1660 &rarr; <strong>1658<\/strong><br \/>(-2 for losing)
+|chat|dfmetal|gg x)
+|chat|shabbir|gg
+|leave|shabbir
+|player|p2

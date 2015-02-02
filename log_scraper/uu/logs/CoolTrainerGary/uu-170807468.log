@@ -1,0 +1,269 @@
+|join|Aggron
+|join|CoolTrainerGary
+|player|p1|Aggron|170
+|player|p2|CoolTrainerGary|282
+|gametype|singles
+|gen|6
+|tier|UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Crobat, M
+|poke|p1|Scrafty, M
+|poke|p1|Blastoise, M
+|poke|p1|Rhyperior, M
+|poke|p1|Roserade, F
+|poke|p1|Darmanitan, M
+|poke|p2|Abomasnow, M
+|poke|p2|Vaporeon, F
+|poke|p2|Druddigon, M
+|poke|p2|Infernape, F
+|poke|p2|Gligar, F
+|poke|p2|Swampert, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|c|âAggron|hf
+|c|âCoolTrainerGary|kiss me
+|
+|start
+|switch|p1a: Crobat|Crobat, M|353\/353
+|switch|p2a: Don't Do Drugs|Druddigon, M|358\/358
+|-ability|p2a: Don't Do Drugs|Mold Breaker
+|turn|1
+|
+|move|p1a: Crobat|Taunt|p2a: Don't Do Drugs
+|-start|p2a: Don't Do Drugs|move: Taunt
+|move|p2a: Don't Do Drugs|Dragon Claw|p1a: Crobat
+|-damage|p1a: Crobat|170\/353
+|
+|-heal|p1a: Crobat|192\/353|[from] item: Black Sludge
+|turn|2
+|
+|move|p2a: Don't Do Drugs|Sucker Punch|p1a: Crobat
+|-damage|p1a: Crobat|66\/353
+|move|p1a: Crobat|U-turn|p2a: Don't Do Drugs
+|-damage|p2a: Don't Do Drugs|298\/358
+|
+|switch|p1a: Rhyperior|Rhyperior, M|434\/434
+|
+|turn|3
+|
+|switch|p2a: Quak|Swampert, F|393\/393
+|move|p1a: Rhyperior|Earthquake|p2a: Quak
+|-damage|p2a: Quak|212\/393
+|
+|turn|4
+|
+|switch|p1a: Roserade|Roserade, F|262\/262
+|move|p2a: Quak|Waterfall|p1a: Roserade
+|-resisted|p1a: Roserade
+|-damage|p1a: Roserade|120\/262
+|
+|turn|5
+|
+|switch|p2a: Don't Do Drugs|Druddigon, M|298\/358
+|-ability|p2a: Don't Do Drugs|Mold Breaker
+|move|p1a: Roserade|Leaf Storm|p2a: Don't Do Drugs|[miss]
+|-miss|p1a: Roserade|p2a: Don't Do Drugs
+|
+|turn|6
+|
+|move|p1a: Roserade|Sleep Powder|p2a: Don't Do Drugs
+|-status|p2a: Don't Do Drugs|slp
+|cant|p2a: Don't Do Drugs|slp
+|
+|turn|7
+|
+|move|p1a: Roserade|Sludge Bomb|p2a: Don't Do Drugs
+|-crit|p2a: Don't Do Drugs
+|-damage|p2a: Don't Do Drugs|84\/358 slp
+|-damage|p1a: Roserade|94\/262|[from] item: Life Orb
+|cant|p2a: Don't Do Drugs|slp
+|
+|turn|8
+|
+|-curestatus|p2a: Don't Do Drugs|slp
+|move|p2a: Don't Do Drugs|Sucker Punch|p1a: Roserade
+|-fail|p1a: Roserade
+|move|p1a: Roserade|Synthesis|p1a: Roserade
+|-heal|p1a: Roserade|225\/262
+|
+|turn|9
+|
+|switch|p2a: Infernrape|Infernape, F|293\/293
+|move|p1a: Roserade|Sludge Bomb|p2a: Infernrape
+|-damage|p2a: Infernrape|15\/293
+|-status|p2a: Infernrape|psn
+|-damage|p1a: Roserade|199\/262|[from] item: Life Orb
+|
+|-damage|p2a: Infernrape|0 fnt|[from] psn
+|faint|p2a: Infernrape
+|c|âCoolTrainerGary|fnsengjeskglanglae
+|
+|switch|p2a: President|Abomasnow, M|323\/323
+|turn|10
+|c|âAggron|its a scald burn chance
+|c|âCoolTrainerGary|ok
+|c|âCoolTrainerGary|thats still 30%
+|
+|switch|p1a: Blastoise|Blastoise, M|362\/362
+|detailschange|p2a: President|Abomasnow-Mega, M
+|message|Abomasnow has Mega Evolved into Mega Abomasnow!
+|-weather|Hail
+|move|p2a: President|Blizzard|p1a: Blastoise
+|-resisted|p1a: Blastoise
+|-damage|p1a: Blastoise|259\/362
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Blastoise|237\/362|[from] hail
+|turn|11
+|
+|detailschange|p1a: Blastoise|Blastoise-Mega, M
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p1a: Blastoise|Aura Sphere|p2a: President
+|-supereffective|p2a: President
+|-damage|p2a: President|1\/323
+|move|p2a: President|Giga Drain|p1a: Blastoise
+|-supereffective|p1a: Blastoise
+|-damage|p1a: Blastoise|0 fnt
+|-heal|p2a: President|120\/323|[from] drain|[of] p1a: Blastoise
+|faint|p1a: Blastoise
+|
+|-weather|Hail|[upkeep]
+|
+|switch|p1a: Darmanitan|Darmanitan, M|351\/351
+|turn|12
+|
+|switch|p2a: pussydestroyer69|Gligar, F|334\/334
+|move|p1a: Darmanitan|U-turn|p2a: pussydestroyer69
+|-resisted|p2a: pussydestroyer69
+|-damage|p2a: pussydestroyer69|311\/334
+|
+|switch|p1a: Crobat|Crobat, M|66\/353
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Crobat|44\/353|[from] hail
+|-damage|p2a: pussydestroyer69|291\/334|[from] hail
+|-heal|p1a: Crobat|66\/353|[from] item: Black Sludge
+|turn|13
+|join|Seth Krogan
+|
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-heal|p1a: Crobat|243\/353
+|move|p2a: pussydestroyer69|Earthquake|p1a: Crobat
+|-supereffective|p1a: Crobat
+|-damage|p1a: Crobat|1\/353
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Crobat|0 fnt|[from] hail
+|-damage|p2a: pussydestroyer69|271\/334|[from] hail
+|faint|p1a: Crobat
+|
+|switch|p1a: Roserade|Roserade, F|199\/262
+|turn|14
+|
+|move|p1a: Roserade|Leaf Storm|p2a: pussydestroyer69
+|-damage|p2a: pussydestroyer69|16\/334
+|-unboost|p1a: Roserade|spa|2
+|-damage|p1a: Roserade|173\/262|[from] item: Life Orb
+|move|p2a: pussydestroyer69|Earthquake|p1a: Roserade
+|-damage|p1a: Roserade|29\/262
+|
+|-weather|none
+|turn|15
+|
+|move|p1a: Roserade|Sludge Bomb|p2a: pussydestroyer69
+|-crit|p2a: pussydestroyer69
+|-resisted|p2a: pussydestroyer69
+|-damage|p2a: pussydestroyer69|0 fnt
+|-damage|p1a: Roserade|3\/262|[from] item: Life Orb
+|faint|p2a: pussydestroyer69
+|
+|
+|switch|p2a: President|Abomasnow-Mega, M|120\/323
+|-weather|Hail
+|turn|16
+|
+|move|p1a: Roserade|Sludge Bomb|p2a: President
+|-supereffective|p2a: President
+|-damage|p2a: President|0 fnt
+|-damage|p1a: Roserade|0 fnt|[from] item: Life Orb
+|faint|p2a: President
+|faint|p1a: Roserade
+|
+|-weather|Hail|[upkeep]
+|
+|switch|p2a: Quak|Swampert, F|212\/393
+|switch|p1a: Scrafty|Scrafty, M|334\/334
+|turn|17
+|
+|move|p2a: Quak|Superpower|p1a: Scrafty
+|-supereffective|p1a: Scrafty
+|-damage|p1a: Scrafty|0 fnt
+|-unboost|p2a: Quak|atk|1
+|-unboost|p2a: Quak|def|1
+|faint|p1a: Scrafty
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Quak|188\/393|[from] hail
+|
+|switch|p1a: Rhyperior|Rhyperior, M|434\/434
+|turn|18
+|
+|switch|p2a: Don't Do Drugs|Druddigon, M|84\/358
+|-ability|p2a: Don't Do Drugs|Mold Breaker
+|move|p1a: Rhyperior|Earthquake|p2a: Don't Do Drugs
+|-damage|p2a: Don't Do Drugs|0 fnt
+|faint|p2a: Don't Do Drugs
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Rhyperior|407\/434|[from] hail
+|
+|switch|p2a: Quak|Swampert, F|188\/393
+|turn|19
+|
+|move|p2a: Quak|Waterfall|p1a: Rhyperior
+|-supereffective|p1a: Rhyperior
+|-damage|p1a: Rhyperior|0 fnt
+|faint|p1a: Rhyperior
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Quak|164\/393|[from] hail
+|
+|switch|p1a: Darmanitan|Darmanitan, M|351\/351
+|turn|20
+|
+|move|p1a: Darmanitan|Flare Blitz|p2a: Quak
+|-resisted|p2a: Quak
+|-damage|p2a: Quak|0 fnt
+|-damage|p1a: Darmanitan|297\/351|[from] recoil|[of] p2a: Quak
+|faint|p2a: Quak
+|
+|-weather|none
+|c|âCoolTrainerGary|gg
+|
+|switch|p2a: Catfish|Vaporeon, F|463\/463
+|turn|21
+|
+|move|p1a: Darmanitan|Flare Blitz|p2a: Catfish
+|-crit|p2a: Catfish
+|-resisted|p2a: Catfish
+|-damage|p2a: Catfish|214\/463
+|-damage|p1a: Darmanitan|215\/351|[from] recoil|[of] p2a: Catfish
+|move|p2a: Catfish|Scald|p1a: Darmanitan
+|-supereffective|p1a: Darmanitan
+|-damage|p1a: Darmanitan|0 fnt
+|faint|p1a: Darmanitan
+|
+|win|CoolTrainerGary
+|c|âAggron|gg
+|leave|Aggron
+|player|p1
+|leave|CoolTrainerGary
+|player|p2

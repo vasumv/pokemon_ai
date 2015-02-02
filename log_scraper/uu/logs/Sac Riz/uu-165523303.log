@@ -1,0 +1,612 @@
+|join|Xyldaz
+|join|Sac Riz
+|player|p1|Xyldaz|84
+|player|p2|Sac Riz|1
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Delphox, F
+|poke|p1|Empoleon, F
+|poke|p1|Krookodile, M
+|poke|p1|Jirachi
+|poke|p1|Quagsire, F
+|poke|p1|Whimsicott, F
+|poke|p2|Absol, M
+|poke|p2|Nidoqueen, F
+|poke|p2|Chandelure, F
+|poke|p2|Vaporeon, F
+|poke|p2|Haxorus, M
+|poke|p2|Togetic, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Delphox|Delphox, F|291\/291
+|switch|p2a: Nidoqueen|Nidoqueen, F|384\/384
+|turn|1
+|
+|switch|p2a: Togetic|Togetic, M|314\/314
+|move|p1a: Delphox|Psyshock|p2a: Togetic
+|-damage|p2a: Togetic|160\/314
+|
+|turn|2
+|
+|switch|p1a: Jirachi|Jirachi|361\/361
+|move|p2a: Togetic|Roost|p2a: Togetic
+|-heal|p2a: Togetic|314\/314
+|
+|turn|3
+|
+|move|p1a: Jirachi|Substitute|p1a: Jirachi
+|-start|p1a: Jirachi|Substitute
+|-damage|p1a: Jirachi|271\/361
+|move|p2a: Togetic|Thunder Wave|p1a: Jirachi
+|
+|-heal|p1a: Jirachi|293\/361|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Chandelure|Chandelure, F|262\/262
+|move|p1a: Jirachi|Toxic|p2a: Chandelure
+|-status|p2a: Chandelure|tox
+|
+|-heal|p1a: Jirachi|315\/361|[from] item: Leftovers
+|-damage|p2a: Chandelure|246\/262 tox|[from] psn
+|turn|5
+|
+|switch|p1a: Krookodile|Krookodile, M|331\/331
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Chandelure
+|-unboost|p2a: Chandelure|atk|1
+|move|p2a: Chandelure|Fire Blast|p1a: Krookodile
+|-damage|p1a: Krookodile|16\/331
+|
+|-heal|p2a: Chandelure|262\/262 tox|[from] item: Leftovers
+|-damage|p2a: Chandelure|230\/262 tox|[from] psn
+|turn|6
+|
+|move|p1a: Krookodile|Pursuit|p2a: Chandelure|[from]Pursuit
+|-supereffective|p2a: Chandelure
+|-damage|p2a: Chandelure|0 fnt
+|faint|p2a: Chandelure
+|
+|
+|switch|p2a: Requiem|Absol, M|271\/271
+|turn|7
+|
+|switch|p1a: Quagsire|Quagsire, F|394\/394
+|detailschange|p2a: Requiem|Absol-Mega, M
+|message|Absol has Mega Evolved into Mega Absol!
+|move|p2a: Requiem|Sucker Punch|p1a: Quagsire
+|-fail|p1a: Quagsire
+|
+|turn|8
+|
+|switch|p2a: Vaporeon|Vaporeon, F|464\/464
+|move|p1a: Quagsire|Scald|p2a: Vaporeon
+|-immune|p2a: Vaporeon|[msg]
+|
+|turn|9
+|
+|switch|p2a: Nidoqueen|Nidoqueen, F|384\/384
+|switch|p1a: Whimsicott|Whimsicott, F|324\/324
+|
+|turn|10
+|
+|move|p1a: Whimsicott|Taunt|p2a: Nidoqueen
+|-start|p2a: Nidoqueen|move: Taunt
+|cant|p2a: Nidoqueen|move: Taunt|Stealth Rock
+|
+|turn|11
+|
+|switch|p1a: Jirachi|Jirachi|315\/361
+|move|p2a: Nidoqueen|Sludge Bomb|p1a: Jirachi
+|-immune|p1a: Jirachi|[msg]
+|
+|-heal|p1a: Jirachi|337\/361|[from] item: Leftovers
+|turn|12
+|
+|move|p1a: Jirachi|Iron Head|p2a: Nidoqueen
+|-damage|p2a: Nidoqueen|249\/384
+|cant|p2a: Nidoqueen|flinch
+|
+|-heal|p1a: Jirachi|359\/361|[from] item: Leftovers
+|-end|p2a: Nidoqueen|move: Taunt
+|turn|13
+|
+|move|p1a: Jirachi|Iron Head|p2a: Nidoqueen
+|-damage|p2a: Nidoqueen|119\/384
+|cant|p2a: Nidoqueen|flinch
+|
+|-heal|p1a: Jirachi|361\/361|[from] item: Leftovers
+|turn|14
+|
+|switch|p2a: Vaporeon|Vaporeon, F|464\/464
+|move|p1a: Jirachi|Iron Head|p2a: Vaporeon
+|-resisted|p2a: Vaporeon
+|-damage|p2a: Vaporeon|406\/464
+|
+|-heal|p2a: Vaporeon|435\/464|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Jirachi|Substitute|p1a: Jirachi
+|-start|p1a: Jirachi|Substitute
+|-damage|p1a: Jirachi|271\/361
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-heal|p1a: Jirachi|293\/361|[from] item: Leftovers
+|-heal|p2a: Vaporeon|464\/464|[from] item: Leftovers
+|turn|16
+|
+|switch|p2a: Nidoqueen|Nidoqueen, F|119\/384
+|move|p1a: Jirachi|Iron Head|p2a: Nidoqueen
+|-damage|p2a: Nidoqueen|0 fnt
+|faint|p2a: Nidoqueen
+|
+|-heal|p1a: Jirachi|315\/361|[from] item: Leftovers
+|
+|switch|p2a: Requiem|Absol-Mega, M|271\/271
+|turn|17
+|
+|move|p2a: Requiem|Sucker Punch|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-end|p1a: Jirachi|Substitute
+|move|p1a: Jirachi|Iron Head|p2a: Requiem
+|-damage|p2a: Requiem|100\/271
+|
+|-heal|p1a: Jirachi|337\/361|[from] item: Leftovers
+|turn|18
+|
+|switch|p1a: Quagsire|Quagsire, F|394\/394
+|move|p2a: Requiem|Night Slash|p1a: Quagsire
+|-damage|p1a: Quagsire|288\/394
+|
+|-heal|p1a: Quagsire|312\/394|[from] item: Leftovers
+|turn|19
+|
+|switch|p2a: Vaporeon|Vaporeon, F|464\/464
+|move|p1a: Quagsire|Recover|p1a: Quagsire
+|-heal|p1a: Quagsire|394\/394
+|
+|turn|20
+|
+|switch|p1a: Whimsicott|Whimsicott, F|324\/324
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|turn|21
+|
+|switch|p2a: Haxorus|Haxorus, M|294\/294
+|-ability|p2a: Haxorus|Mold Breaker
+|move|p1a: Whimsicott|Moonblast|p2a: Haxorus
+|-supereffective|p2a: Haxorus
+|-damage|p2a: Haxorus|54\/294
+|
+|-heal|p2a: Haxorus|286\/294|[from] move: Wish|[wisher] Vaporeon
+|turn|22
+|
+|move|p2a: Haxorus|Poison Jab|p1a: Whimsicott
+|-supereffective|p1a: Whimsicott
+|-damage|p1a: Whimsicott|0 fnt
+|-damage|p2a: Haxorus|257\/294|[from] item: Life Orb
+|faint|p1a: Whimsicott
+|
+|
+|switch|p1a: Krookodile|Krookodile, M|16\/331
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Haxorus
+|-unboost|p2a: Haxorus|atk|1
+|turn|23
+|
+|move|p2a: Haxorus|Earthquake|p1a: Krookodile
+|-damage|p1a: Krookodile|0 fnt
+|-damage|p2a: Haxorus|228\/294|[from] item: Life Orb
+|faint|p1a: Krookodile
+|
+|
+|switch|p1a: Jirachi|Jirachi|337\/361
+|turn|24
+|
+|switch|p2a: Requiem|Absol-Mega, M|100\/271
+|move|p1a: Jirachi|Iron Head|p2a: Requiem
+|-damage|p2a: Requiem|0 fnt
+|faint|p2a: Requiem
+|
+|-heal|p1a: Jirachi|359\/361|[from] item: Leftovers
+|
+|switch|p2a: Haxorus|Haxorus, M|228\/294
+|-ability|p2a: Haxorus|Mold Breaker
+|turn|25
+|
+|switch|p2a: Vaporeon|Vaporeon, F|464\/464
+|switch|p1a: Quagsire|Quagsire, F|394\/394
+|
+|turn|26
+|
+|switch|p1a: Empoleon|Empoleon, F|371\/371
+|move|p2a: Vaporeon|Scald|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|338\/371
+|
+|-heal|p1a: Empoleon|361\/371|[from] item: Leftovers
+|turn|27
+|
+|move|p2a: Vaporeon|Scald|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|328\/371
+|move|p1a: Empoleon|Stealth Rock|p2a: Vaporeon
+|-sidestart|p2: Sac Riz|move: Stealth Rock
+|
+|-heal|p1a: Empoleon|351\/371|[from] item: Leftovers
+|turn|28
+|join|Hiro Test
+|
+|move|p2a: Vaporeon|Scald|p1a: Empoleon
+|-crit|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|298\/371
+|-status|p1a: Empoleon|brn
+|move|p1a: Empoleon|Roar|p2a: Vaporeon
+|drag|p2a: Togetic|Togetic, M|314\/314
+|-damage|p2a: Togetic|236\/314|[from] Stealth Rock
+|
+|-heal|p1a: Empoleon|321\/371 brn|[from] item: Leftovers
+|-damage|p1a: Empoleon|275\/371 brn|[from] brn
+|turn|29
+|
+|switch|p1a: Jirachi|Jirachi|359\/361
+|move|p2a: Togetic|Defog|p1a: Jirachi
+|-unboost|p1a: Jirachi|evasion|1
+|-sideend|p2: Sac Riz|Stealth Rock|[from] move: Defog|[of] p2a: Togetic
+|
+|-heal|p1a: Jirachi|361\/361|[from] item: Leftovers
+|turn|30
+|
+|switch|p2a: Vaporeon|Vaporeon, F|464\/464
+|move|p1a: Jirachi|Substitute|p1a: Jirachi
+|-start|p1a: Jirachi|Substitute
+|-damage|p1a: Jirachi|271\/361
+|
+|-heal|p1a: Jirachi|293\/361|[from] item: Leftovers
+|turn|31
+|
+|move|p1a: Jirachi|Toxic|p2a: Vaporeon
+|-status|p2a: Vaporeon|tox
+|move|p2a: Vaporeon|Scald|p1a: Jirachi
+|-end|p1a: Jirachi|Substitute
+|
+|-heal|p1a: Jirachi|315\/361|[from] item: Leftovers
+|-damage|p2a: Vaporeon|435\/464 tox|[from] psn
+|turn|32
+|
+|switch|p1a: Empoleon|Empoleon, F|275\/371 brn
+|move|p2a: Vaporeon|Scald|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|236\/371 brn
+|
+|-heal|p2a: Vaporeon|464\/464 tox|[from] item: Leftovers
+|-heal|p1a: Empoleon|259\/371 brn|[from] item: Leftovers
+|-damage|p2a: Vaporeon|406\/464 tox|[from] psn
+|-damage|p1a: Empoleon|213\/371 brn|[from] brn
+|turn|33
+|
+|move|p2a: Vaporeon|Heal Bell|p2a: Vaporeon
+|-cureteam|p2a: Vaporeon|[from] move: HealBell
+|move|p1a: Empoleon|Stealth Rock|p2a: Vaporeon
+|-sidestart|p2: Sac Riz|move: Stealth Rock
+|
+|-heal|p2a: Vaporeon|435\/464|[from] item: Leftovers
+|-heal|p1a: Empoleon|236\/371 brn|[from] item: Leftovers
+|-damage|p1a: Empoleon|190\/371 brn|[from] brn
+|turn|34
+|
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|move|p1a: Empoleon|Roar|p2a: Vaporeon
+|drag|p2a: Togetic|Togetic, M|236\/314
+|-damage|p2a: Togetic|158\/314|[from] Stealth Rock
+|
+|-heal|p1a: Empoleon|213\/371 brn|[from] item: Leftovers
+|-damage|p1a: Empoleon|167\/371 brn|[from] brn
+|turn|35
+|
+|switch|p1a: Jirachi|Jirachi|315\/361
+|move|p2a: Togetic|Defog|p1a: Jirachi
+|-unboost|p1a: Jirachi|evasion|1
+|-sideend|p2: Sac Riz|Stealth Rock|[from] move: Defog|[of] p2a: Togetic
+|
+|-heal|p2a: Togetic|314\/314|[from] move: Wish|[wisher] Vaporeon
+|-heal|p1a: Jirachi|337\/361|[from] item: Leftovers
+|turn|36
+|
+|switch|p2a: Vaporeon|Vaporeon, F|435\/464
+|move|p1a: Jirachi|Substitute|p1a: Jirachi
+|-start|p1a: Jirachi|Substitute
+|-damage|p1a: Jirachi|247\/361
+|
+|-heal|p1a: Jirachi|269\/361|[from] item: Leftovers
+|-heal|p2a: Vaporeon|464\/464|[from] item: Leftovers
+|turn|37
+|
+|move|p1a: Jirachi|Toxic|p2a: Vaporeon
+|-status|p2a: Vaporeon|tox
+|move|p2a: Vaporeon|Scald|p1a: Jirachi
+|-end|p1a: Jirachi|Substitute
+|
+|-heal|p1a: Jirachi|291\/361|[from] item: Leftovers
+|-damage|p2a: Vaporeon|435\/464 tox|[from] psn
+|turn|38
+|
+|move|p1a: Jirachi|Iron Head|p2a: Vaporeon
+|-crit|p2a: Vaporeon
+|-resisted|p2a: Vaporeon
+|-damage|p2a: Vaporeon|354\/464 tox
+|move|p2a: Vaporeon|Scald|p1a: Jirachi
+|-damage|p1a: Jirachi|183\/361
+|
+|-heal|p1a: Jirachi|205\/361|[from] item: Leftovers
+|-heal|p2a: Vaporeon|383\/464 tox|[from] item: Leftovers
+|-damage|p2a: Vaporeon|325\/464 tox|[from] psn
+|turn|39
+|
+|switch|p1a: Empoleon|Empoleon, F|167\/371 brn
+|move|p2a: Vaporeon|Scald|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|133\/371 brn
+|
+|-heal|p2a: Vaporeon|354\/464 tox|[from] item: Leftovers
+|-heal|p1a: Empoleon|156\/371 brn|[from] item: Leftovers
+|-damage|p2a: Vaporeon|267\/464 tox|[from] psn
+|-damage|p1a: Empoleon|110\/371 brn|[from] brn
+|turn|40
+|
+|move|p2a: Vaporeon|Heal Bell|p2a: Vaporeon
+|-cureteam|p2a: Vaporeon|[from] move: HealBell
+|move|p1a: Empoleon|Stealth Rock|p2a: Vaporeon
+|-sidestart|p2: Sac Riz|move: Stealth Rock
+|
+|-heal|p2a: Vaporeon|296\/464|[from] item: Leftovers
+|-heal|p1a: Empoleon|133\/371 brn|[from] item: Leftovers
+|-damage|p1a: Empoleon|87\/371 brn|[from] brn
+|turn|41
+|
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|move|p1a: Empoleon|Roar|p2a: Vaporeon
+|drag|p2a: Togetic|Togetic, M|314\/314
+|-damage|p2a: Togetic|236\/314|[from] Stealth Rock
+|
+|-heal|p1a: Empoleon|110\/371 brn|[from] item: Leftovers
+|-damage|p1a: Empoleon|64\/371 brn|[from] brn
+|turn|42
+|
+|move|p1a: Empoleon|Stealth Rock|p2a: Togetic
+|-fail|p2a: Togetic
+|move|p2a: Togetic|Defog|p1a: Empoleon
+|-unboost|p1a: Empoleon|evasion|1
+|-sideend|p2: Sac Riz|Stealth Rock|[from] move: Defog|[of] p2a: Togetic
+|
+|-heal|p2a: Togetic|314\/314|[from] move: Wish|[wisher] Vaporeon
+|-heal|p1a: Empoleon|87\/371 brn|[from] item: Leftovers
+|-damage|p1a: Empoleon|41\/371 brn|[from] brn
+|turn|43
+|
+|switch|p1a: Jirachi|Jirachi|205\/361
+|move|p2a: Togetic|Defog|p1a: Jirachi
+|-unboost|p1a: Jirachi|evasion|1
+|
+|-heal|p1a: Jirachi|227\/361|[from] item: Leftovers
+|turn|44
+|
+|move|p1a: Jirachi|Toxic|p2a: Togetic
+|-status|p2a: Togetic|tox
+|move|p2a: Togetic|Thunder Wave|p1a: Jirachi
+|-status|p1a: Jirachi|par
+|
+|-heal|p1a: Jirachi|249\/361 par|[from] item: Leftovers
+|-damage|p2a: Togetic|295\/314 tox|[from] psn
+|turn|45
+|
+|switch|p2a: Haxorus|Haxorus, M|228\/294
+|-ability|p2a: Haxorus|Mold Breaker
+|cant|p1a: Jirachi|par
+|
+|-heal|p1a: Jirachi|271\/361 par|[from] item: Leftovers
+|turn|46
+|
+|switch|p1a: Empoleon|Empoleon, F|41\/371 brn
+|move|p2a: Haxorus|Earthquake|p1a: Empoleon
+|-supereffective|p1a: Empoleon
+|-damage|p1a: Empoleon|0 fnt
+|-damage|p2a: Haxorus|199\/294|[from] item: Life Orb
+|faint|p1a: Empoleon
+|
+|
+|switch|p1a: Quagsire|Quagsire, F|394\/394
+|turn|47
+|
+|switch|p2a: Vaporeon|Vaporeon, F|296\/464
+|move|p1a: Quagsire|Recover|p1a: Quagsire
+|-fail|p1a: Quagsire
+|
+|-heal|p2a: Vaporeon|325\/464|[from] item: Leftovers
+|turn|48
+|
+|move|p2a: Vaporeon|Scald|p1a: Quagsire
+|-damage|p1a: Quagsire|258\/394
+|move|p1a: Quagsire|Toxic|p2a: Vaporeon
+|-status|p2a: Vaporeon|tox
+|
+|-heal|p2a: Vaporeon|354\/464 tox|[from] item: Leftovers
+|-heal|p1a: Quagsire|282\/394|[from] item: Leftovers
+|-damage|p2a: Vaporeon|325\/464 tox|[from] psn
+|turn|49
+|
+|switch|p1a: Delphox|Delphox, F|291\/291
+|move|p2a: Vaporeon|Scald|p1a: Delphox
+|-supereffective|p1a: Delphox
+|-damage|p1a: Delphox|87\/291
+|
+|-heal|p2a: Vaporeon|354\/464 tox|[from] item: Leftovers
+|-damage|p2a: Vaporeon|296\/464 tox|[from] psn
+|turn|50
+|
+|switch|p1a: Jirachi|Jirachi|271\/361 par
+|move|p2a: Vaporeon|Heal Bell|p2a: Vaporeon
+|-cureteam|p2a: Vaporeon|[from] move: HealBell
+|
+|-heal|p2a: Vaporeon|325\/464|[from] item: Leftovers
+|-heal|p1a: Jirachi|293\/361 par|[from] item: Leftovers
+|turn|51
+|
+|move|p2a: Vaporeon|Scald|p1a: Jirachi
+|-damage|p1a: Jirachi|199\/361 par
+|move|p1a: Jirachi|Toxic|p2a: Vaporeon
+|-status|p2a: Vaporeon|tox
+|
+|-heal|p2a: Vaporeon|354\/464 tox|[from] item: Leftovers
+|-heal|p1a: Jirachi|221\/361 par|[from] item: Leftovers
+|-damage|p2a: Vaporeon|325\/464 tox|[from] psn
+|turn|52
+|
+|move|p2a: Vaporeon|Scald|p1a: Jirachi
+|-damage|p1a: Jirachi|109\/361 par
+|move|p1a: Jirachi|Iron Head|p2a: Vaporeon
+|-resisted|p2a: Vaporeon
+|-damage|p2a: Vaporeon|270\/464 tox
+|
+|-heal|p2a: Vaporeon|299\/464 tox|[from] item: Leftovers
+|-heal|p1a: Jirachi|131\/361 par|[from] item: Leftovers
+|-damage|p2a: Vaporeon|241\/464 tox|[from] psn
+|turn|53
+|
+|move|p2a: Vaporeon|Scald|p1a: Jirachi
+|-damage|p1a: Jirachi|28\/361 par
+|move|p1a: Jirachi|Iron Head|p2a: Vaporeon
+|-resisted|p2a: Vaporeon
+|-damage|p2a: Vaporeon|186\/464 tox
+|
+|-heal|p2a: Vaporeon|215\/464 tox|[from] item: Leftovers
+|-heal|p1a: Jirachi|50\/361 par|[from] item: Leftovers
+|-damage|p2a: Vaporeon|128\/464 tox|[from] psn
+|turn|54
+|
+|switch|p1a: Delphox|Delphox, F|87\/291
+|move|p2a: Vaporeon|Heal Bell|p2a: Vaporeon
+|-cureteam|p2a: Vaporeon|[from] move: HealBell
+|
+|-heal|p2a: Vaporeon|157\/464|[from] item: Leftovers
+|turn|55
+|
+|move|p2a: Vaporeon|Protect|p2a: Vaporeon
+|-singleturn|p2a: Vaporeon|Protect
+|move|p1a: Delphox|Psyshock|p2a: Vaporeon
+|-activate|p2a: Vaporeon|Protect
+|
+|-heal|p2a: Vaporeon|186\/464|[from] item: Leftovers
+|turn|56
+|
+|switch|p2a: Togetic|Togetic, M|295\/314
+|move|p1a: Delphox|Psyshock|p2a: Togetic
+|-damage|p2a: Togetic|139\/314
+|
+|turn|57
+|
+|move|p1a: Delphox|Psyshock|p2a: Togetic
+|-damage|p2a: Togetic|0 fnt
+|faint|p2a: Togetic
+|
+|
+|switch|p2a: Vaporeon|Vaporeon, F|186\/464
+|turn|58
+|
+|move|p2a: Vaporeon|Protect|p2a: Vaporeon
+|-singleturn|p2a: Vaporeon|Protect
+|move|p1a: Delphox|Psyshock|p2a: Vaporeon
+|-activate|p2a: Vaporeon|Protect
+|
+|-heal|p2a: Vaporeon|215\/464|[from] item: Leftovers
+|turn|59
+|
+|switch|p1a: Jirachi|Jirachi|50\/361 par
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-heal|p2a: Vaporeon|244\/464|[from] item: Leftovers
+|-heal|p1a: Jirachi|72\/361 par|[from] item: Leftovers
+|turn|60
+|
+|move|p2a: Vaporeon|Scald|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|faint|p1a: Jirachi
+|
+|-heal|p2a: Vaporeon|464\/464|[from] move: Wish|[wisher] Vaporeon
+|
+|switch|p1a: Quagsire|Quagsire, F|282\/394
+|turn|61
+|
+|move|p2a: Vaporeon|Scald|p1a: Quagsire
+|-crit|p1a: Quagsire
+|-damage|p1a: Quagsire|54\/394
+|-status|p1a: Quagsire|brn
+|move|p1a: Quagsire|Toxic|p2a: Vaporeon
+|-status|p2a: Vaporeon|tox
+|
+|-heal|p1a: Quagsire|78\/394 brn|[from] item: Leftovers
+|-damage|p2a: Vaporeon|435\/464 tox|[from] psn
+|-damage|p1a: Quagsire|29\/394 brn|[from] brn
+|turn|62
+|c|âXyldaz|lol
+|
+|move|p2a: Vaporeon|Heal Bell|p2a: Vaporeon
+|-cureteam|p2a: Vaporeon|[from] move: HealBell
+|move|p1a: Quagsire|Earthquake|p2a: Vaporeon
+|-damage|p2a: Vaporeon|384\/464
+|
+|-heal|p2a: Vaporeon|413\/464|[from] item: Leftovers
+|-heal|p1a: Quagsire|53\/394 brn|[from] item: Leftovers
+|-damage|p1a: Quagsire|4\/394 brn|[from] brn
+|turn|63
+|
+|move|p2a: Vaporeon|Scald|p1a: Quagsire
+|-damage|p1a: Quagsire|0 fnt
+|faint|p1a: Quagsire
+|
+|-heal|p2a: Vaporeon|442\/464|[from] item: Leftovers
+|
+|switch|p1a: Delphox|Delphox, F|87\/291
+|turn|64
+|
+|move|p2a: Vaporeon|Protect|p2a: Vaporeon
+|-singleturn|p2a: Vaporeon|Protect
+|move|p1a: Delphox|Psyshock|p2a: Vaporeon
+|-activate|p2a: Vaporeon|Protect
+|
+|-heal|p2a: Vaporeon|464\/464|[from] item: Leftovers
+|turn|65
+|
+|move|p1a: Delphox|Psyshock|p2a: Vaporeon
+|-damage|p2a: Vaporeon|287\/464
+|move|p2a: Vaporeon|Scald|p1a: Delphox
+|-supereffective|p1a: Delphox
+|-damage|p1a: Delphox|0 fnt
+|faint|p1a: Delphox
+|
+|win|Sac Riz
+|raw|Ladder updating...
+|raw|Xyldaz's rating: 1449 &rarr; <strong>1434<\/strong><br \/>(-15 for losing)
+|raw|Sac Riz's rating: 1539 &rarr; <strong>1554<\/strong><br \/>(+15 for winning)
+|leave|Xyldaz
+|player|p1
+|c| Hiro Test|gg :o
+|c|âSac Riz|Thanks
+|c| Hiro Test|1554 gros gros big up :)
+|c|âSac Riz|Yep
+|c| Hiro Test|tu gÃ¨res â¥
+|c| Hiro Test|oh azy roxas qui se barre quand il m'a vu modo
+|c| Hiro Test|trop vexant kwa, je fais si peur que Ã§a ? .-.
+|c| Hiro Test|(je l'ai kick quand il est revenu :3)
+|c|âSac Riz|:')

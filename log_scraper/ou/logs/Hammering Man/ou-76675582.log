@@ -1,0 +1,318 @@
+|join|hammering man
+|join|Hephtic
+|player|p1|hammering man|28
+|player|p2|Hephtic|121
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Swampert, F
+|poke|p1|Chesnaught, F
+|poke|p1|Mawile, F
+|poke|p1|Noivern, M
+|poke|p1|Starmie
+|poke|p1|Luxray, M
+|poke|p2|Medicham, F
+|poke|p2|Azumarill, F
+|poke|p2|Garchomp, F
+|poke|p2|Rotom-Wash
+|poke|p2|Excadrill, M
+|poke|p2|Talonflame, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Noivern|Noivern, M|311\/311
+|switch|p2a: Rotom-Wash|Rotom-Wash|241\/241
+|turn|1
+|callback|decision
+|
+|switch|p1a: Luxray|Luxray, M|301\/301
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Luxray
+|-resisted|p1a: Luxray
+|-damage|p1a: Luxray|238\/301
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, F|358\/358
+|
+|-activate|p1a: Luxray|item: Flame Orb
+|-status|p1a: Luxray|brn
+|turn|2
+|callback|decision
+|
+|switch|p1a: Noivern|Noivern, M|311\/311
+|move|p2a: Garchomp|Dragon Claw|p1a: Noivern
+|-supereffective|p1a: Noivern
+|-damage|p1a: Noivern|0 fnt
+|-damage|p2a: Garchomp|323\/358|[from] item: Life Orb
+|faint|p1a: Noivern
+|
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie|261\/261
+|turn|3
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|241\/241
+|move|p1a: Starmie|Ice Beam|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|185\/241
+|
+|turn|4
+|callback|decision
+|
+|switch|p1a: Swampert|Swampert, F|404\/404
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Swampert
+|-immune|p1a: Swampert|[msg]
+|
+|turn|5
+|callback|decision
+|
+|switch|p2a: Azumarill|Azumarill, F|404\/404
+|move|p1a: Swampert|Waterfall|p2a: Azumarill
+|-resisted|p2a: Azumarill
+|-damage|p2a: Azumarill|346\/404
+|
+|turn|6
+|callback|decision
+|
+|move|p2a: Azumarill|Play Rough|p1a: Swampert
+|-damage|p1a: Swampert|199\/404
+|move|p1a: Swampert|Toxic|p2a: Azumarill
+|-status|p2a: Azumarill|tox
+|
+|-heal|p1a: Swampert|224\/404|[from] item: Leftovers
+|-damage|p2a: Azumarill|321\/404 tox|[from] psn
+|turn|7
+|callback|decision
+|
+|move|p1a: Swampert|Protect|p1a: Swampert
+|-singleturn|p1a: Swampert|Protect
+|move|p2a: Azumarill|Play Rough|p1a: Swampert
+|-activate|p1a: Swampert|Protect
+|
+|-heal|p1a: Swampert|249\/404|[from] item: Leftovers
+|-damage|p2a: Azumarill|271\/404 tox|[from] psn
+|turn|8
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|185\/241
+|switch|p1a: Mawile|Mawile, F|303\/303
+|-ability|p1a: Mawile|Intimidate|[of] p2a: Rotom-Wash
+|-unboost|p2a: Rotom-Wash|atk|1
+|
+|turn|9
+|callback|decision
+|
+|switch|p1a: Swampert|Swampert, F|249\/404
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Swampert
+|-damage|p1a: Swampert|119\/404
+|
+|-heal|p1a: Swampert|144\/404|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p2a: Azumarill|Azumarill, F|271\/404 tox
+|move|p1a: Swampert|Toxic|p2a: Azumarill
+|-fail|p2a: Azumarill|tox
+|
+|-heal|p1a: Swampert|169\/404|[from] item: Leftovers
+|-damage|p2a: Azumarill|246\/404 tox|[from] psn
+|turn|11
+|callback|decision
+|
+|move|p1a: Swampert|Protect|p1a: Swampert
+|-singleturn|p1a: Swampert|Protect
+|move|p2a: Azumarill|Waterfall|p1a: Swampert
+|-activate|p1a: Swampert|Protect
+|
+|-heal|p1a: Swampert|194\/404|[from] item: Leftovers
+|-damage|p2a: Azumarill|196\/404 tox|[from] psn
+|-enditem|p2a: Azumarill|Sitrus Berry|[eat]
+|-heal|p2a: Azumarill|297\/404 tox|[from] item: Sitrus Berry
+|turn|12
+|callback|decision
+|
+|switch|p1a: Chesnaught|Chesnaught, F|380\/380
+|move|p2a: Azumarill|Play Rough|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-damage|p1a: Chesnaught|114\/380
+|-damage|p2a: Azumarill|230\/404 tox|[from] item: Rocky Helmet|[of] p1a: Chesnaught
+|
+|-damage|p2a: Azumarill|155\/404 tox|[from] psn
+|turn|13
+|callback|decision
+|
+|move|p1a: Chesnaught|Seed Bomb|p2a: Azumarill
+|-supereffective|p2a: Azumarill
+|-damage|p2a: Azumarill|0 fnt
+|faint|p2a: Azumarill
+|
+|callback|decision
+|
+|switch|p2a: Excadrill|Excadrill, M|424\/424
+|-ability|p2a: Excadrill|Mold Breaker
+|turn|14
+|callback|decision
+|
+|move|p2a: Excadrill|Iron Head|p1a: Chesnaught
+|-damage|p1a: Chesnaught|30\/380
+|-damage|p2a: Excadrill|354\/424|[from] item: Rocky Helmet|[of] p1a: Chesnaught
+|cant|p1a: Chesnaught|flinch
+|
+|turn|15
+|callback|decision
+|
+|move|p2a: Excadrill|Earthquake|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|0 fnt
+|faint|p1a: Chesnaught
+|
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie|261\/261
+|turn|16
+|callback|decision
+|
+|move|p1a: Starmie|Surf|p2a: Excadrill
+|-supereffective|p2a: Excadrill
+|-damage|p2a: Excadrill|0 fnt
+|faint|p2a: Excadrill
+|
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|185\/241
+|turn|17
+|callback|decision
+|
+|switch|p2a: Medicham|Medicham, F|261\/261
+|switch|p1a: Swampert|Swampert, F|194\/404
+|
+|-heal|p1a: Swampert|219\/404|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|-formechange|p2a: Medicham|Medicham-Mega
+|message|Medicham has Mega Evolved into Mega Medicham!
+|move|p2a: Medicham|Fake Out|p1a: Swampert
+|-damage|p1a: Swampert|135\/404
+|cant|p1a: Swampert|flinch
+|
+|-heal|p1a: Swampert|160\/404|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|switch|p1a: Mawile|Mawile, F|303\/303
+|-ability|p1a: Mawile|Intimidate|[of] p2a: Medicham
+|-unboost|p2a: Medicham|atk|1
+|move|p2a: Medicham|Drain Punch|p1a: Mawile
+|-damage|p1a: Mawile|119\/303
+|
+|turn|20
+|callback|decision
+|
+|-formechange|p1a: Mawile|Mawile-Mega
+|message|Mawile has Mega Evolved into Mega Mawile!
+|move|p2a: Medicham|Drain Punch|p1a: Mawile
+|-damage|p1a: Mawile|0 fnt
+|faint|p1a: Mawile
+|
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie|261\/261
+|turn|21
+|callback|decision
+|
+|move|p1a: Starmie|Thunderbolt|p2a: Medicham
+|-damage|p2a: Medicham|156\/261
+|move|p2a: Medicham|Thunder Punch|p1a: Starmie
+|-supereffective|p1a: Starmie
+|-damage|p1a: Starmie|35\/261
+|
+|turn|22
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, F|323\/358
+|move|p1a: Starmie|Surf|p2a: Garchomp
+|-crit|p2a: Garchomp
+|-damage|p2a: Garchomp|32\/358
+|
+|turn|23
+|callback|decision
+|
+|move|p1a: Starmie|Surf|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|faint|p2a: Garchomp
+|
+|callback|decision
+|
+|switch|p2a: Talonflame|Talonflame, M|298\/298
+|turn|24
+|callback|decision
+|
+|move|p2a: Talonflame|Brave Bird|p1a: Starmie
+|-damage|p1a: Starmie|0 fnt
+|-damage|p2a: Talonflame|286\/298|[from] recoil|[of] p1a: Starmie
+|faint|p1a: Starmie
+|
+|callback|decision
+|
+|switch|p1a: Luxray|Luxray, M|238\/301 brn
+|turn|25
+|callback|decision
+|
+|move|p2a: Talonflame|U-turn|p1a: Luxray
+|-damage|p1a: Luxray|166\/301 brn
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|185\/241
+|move|p1a: Luxray|Wild Charge|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|-damage|p1a: Luxray|120\/301 brn|[from] recoil|[of] p2a: Rotom-Wash
+|faint|p2a: Rotom-Wash
+|
+|-damage|p1a: Luxray|83\/301 brn|[from] brn
+|callback|decision
+|
+|switch|p2a: Medicham|Medicham, F|156\/261
+|-formechange|p2a: Medicham|Medicham-Mega
+|turn|26
+|callback|decision
+|
+|move|p2a: Medicham|Drain Punch|p1a: Luxray
+|-damage|p1a: Luxray|0 fnt
+|-heal|p2a: Medicham|198\/261|[from] drain|[of] p1a: Luxray
+|faint|p1a: Luxray
+|
+|callback|decision
+|
+|switch|p1a: Swampert|Swampert, F|160\/404
+|turn|27
+|callback|decision
+|
+|move|p1a: Swampert|Protect|p1a: Swampert
+|-singleturn|p1a: Swampert|Protect
+|move|p2a: Medicham|Drain Punch|p1a: Swampert
+|-activate|p1a: Swampert|Protect
+|
+|-heal|p1a: Swampert|185\/404|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|move|p2a: Medicham|Drain Punch|p1a: Swampert
+|-damage|p1a: Swampert|0 fnt
+|-heal|p2a: Medicham|261\/261|[from] drain|[of] p1a: Swampert
+|faint|p1a: Swampert
+|
+|win|Hephtic
+|raw|Ladder updating...
+|raw|hammering man's rating: 1873 &rarr; <strong>1869<\/strong><br \/>(-4 for losing)
+|raw|Hephtic's rating: 1808 &rarr; <strong>1824<\/strong><br \/>(+16 for winning)

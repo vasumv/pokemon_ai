@@ -1,0 +1,234 @@
+|join|shabbir
+|join|Bolverin
+|player|p1|shabbir|101
+|player|p2|Bolverin|101
+|gametype|singles
+|tier|UU
+|rated
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Ambipom, M
+|poke|p1|Azelf
+|poke|p1|Victini
+|poke|p1|Weavile, F
+|poke|p1|Shaymin
+|poke|p1|Mienshao, M
+|poke|p2|Heracross, M
+|poke|p2|Sableye, M
+|poke|p2|Arcanine, M
+|poke|p2|Yanmega, M, shiny
+|poke|p2|Zoroark, M
+|poke|p2|Claydol
+|teampreview
+|callback|decision
+|chat|shabbir|oh man, yanmega, your going to sweep my team.. :\/
+|chat|Bolverin|you gut victini
+|chat|Bolverin|got
+|chat|shabbir|victini cant take bug buzz
+|chat|Bolverin|oh
+|chat|Bolverin|well
+|chat|Bolverin|change somone of your team then
+|chat|shabbir|nah, i like my team.. fully offensive..lot of fun
+|chat|Bolverin|someone*
+|chat|shabbir|only sharpedo n yanmega screw it over
+|
+|start
+|switch|p1a: Peace|Victini| (48\/48)
+|switch|p2a: Sableye|Sableye, M| (48\/48)
+|turn|1
+|callback|decision
+|chat|Bolverin|then change a member for a counter or check of them
+|
+|move|p1a: Peace|Blue Flare|p2a: Sableye
+|-enditem|p2a: Sableye|Focus Sash
+|replace|p2a: Zoroark|Zoroark, M| (48\/48)
+|-damage|p2a: Zoroark|97 (1\/48)
+|move|p2a: Zoroark|Dark Pulse|p1a: Peace
+|-supereffective|p1a: Peace
+|-damage|p1a: Peace|81 (9\/48)
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Zoroark|Sucker Punch|p1a: Peace
+|-supereffective|p1a: Peace
+|-damage|p1a: Peace|18 (0\/48 fnt)
+|faint|p1a: Peace
+|
+|callback|decision
+|
+|switch|p1a: Abu|Ambipom, M| (48\/48)
+|turn|3
+|callback|decision
+|
+|switch|p2a: Sableye|Sableye, M| (48\/48)
+|move|p1a: Abu|U-turn|p2a: Sableye
+|-damage|p2a: Sableye|25 (36\/48)
+|callback|decision
+|
+|switch|p1a: Jack Sparrow|Azelf| (48\/48)
+|
+|-heal|p2a: Sableye|6 (39\/48)|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Sableye|Will-O-Wisp|p1a: Jack Sparrow
+|-status|p1a: Jack Sparrow|brn
+|move|p1a: Jack Sparrow|Fire Blast|p2a: Sableye
+|-damage|p2a: Sableye|72 (4\/48)
+|
+|-heal|p2a: Sableye|6 (7\/48)|[from] item: Leftovers
+|-damage|p1a: Jack Sparrow|12 (42\/48 brn)|[from] brn
+|turn|5
+|callback|decision
+|
+|switch|p1a: Batman|Shaymin| (48\/48)
+|switch|p2a: Claydol|Claydol| (48\/48)
+|
+|turn|6
+|callback|decision
+|
+|move|p1a: Batman|Seed Flare|p2a: Claydol
+|-supereffective|p2a: Claydol
+|-damage|p2a: Claydol|97 (1\/48)
+|-damage|p1a: Batman|10 (43\/48)|[from] item: Life Orb
+|move|p2a: Claydol|Stealth Rock|p1a: Batman
+|-sidestart|p1: shabbir|move: Stealth Rock
+|
+|-heal|p2a: Claydol|6 (4\/48)|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p1a: Batman|Air Slash|p2a: Claydol
+|-damage|p2a: Claydol|8 (0\/48 fnt)
+|-damage|p1a: Batman|10 (38\/48)|[from] item: Life Orb
+|faint|p2a: Claydol
+|
+|callback|decision
+|
+|switch|p2a: Yanmega|Yanmega, M, shiny| (48\/48)
+|turn|8
+|callback|decision
+|
+|move|p2a: Yanmega|Protect|p2a: Yanmega
+|-singleturn|p2a: Yanmega|Protect
+|move|p1a: Batman|Air Slash|p2a: Yanmega
+|-activate|p2a: Yanmega|Protect
+|
+|-boost|p2a: Yanmega|spe|1|[from] ability: Speed Boost
+|turn|9
+|callback|decision
+|chat|shabbir|gg
+|
+|move|p2a: Yanmega|Bug Buzz|p1a: Batman
+|-supereffective|p1a: Batman
+|-damage|p1a: Batman|79 (0\/48 fnt)
+|-damage|p2a: Yanmega|10 (43\/48)|[from] item: Life Orb
+|faint|p1a: Batman
+|
+|-boost|p2a: Yanmega|spe|1|[from] ability: Speed Boost
+|callback|decision
+|
+|switch|p1a: Abu|Ambipom, M| (48\/48)
+|-damage|p1a: Abu|12 (42\/48)|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|move|p2a: Yanmega|Protect|p2a: Yanmega
+|-singleturn|p2a: Yanmega|Protect
+|move|p1a: Abu|Fake Out|p2a: Yanmega
+|-activate|p2a: Yanmega|Protect
+|
+|-boost|p2a: Yanmega|spe|1|[from] ability: Speed Boost
+|turn|11
+|callback|decision
+|
+|move|p2a: Yanmega|Bug Buzz|p1a: Abu
+|-damage|p1a: Abu|87 (0\/48 fnt)
+|-damage|p2a: Yanmega|10 (39\/48)|[from] item: Life Orb
+|faint|p1a: Abu
+|
+|-boost|p2a: Yanmega|spe|1|[from] ability: Speed Boost
+|callback|decision
+|
+|switch|p1a: Jack Sparrow|Azelf| (42\/48 brn)
+|-damage|p1a: Jack Sparrow|12 (36\/48 brn)|[from] Stealth Rock
+|turn|12
+|callback|decision
+|
+|move|p2a: Yanmega|Protect|p2a: Yanmega
+|-singleturn|p2a: Yanmega|Protect
+|move|p1a: Jack Sparrow|Psychic|p2a: Yanmega
+|-activate|p2a: Yanmega|Protect
+|
+|-damage|p1a: Jack Sparrow|12 (30\/48 brn)|[from] brn
+|-boost|p2a: Yanmega|spe|1|[from] ability: Speed Boost
+|turn|13
+|callback|decision
+|
+|move|p2a: Yanmega|Bug Buzz|p1a: Jack Sparrow
+|-supereffective|p1a: Jack Sparrow
+|-damage|p1a: Jack Sparrow|62 (0\/48 fnt)
+|-damage|p2a: Yanmega|10 (34\/48)|[from] item: Life Orb
+|faint|p1a: Jack Sparrow
+|
+|-boost|p2a: Yanmega|spe|1|[from] ability: Speed Boost
+|callback|decision
+|
+|switch|p1a: Shifu|Mienshao, M| (48\/48)
+|-damage|p1a: Shifu|6 (45\/48)|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|move|p2a: Yanmega|Protect|p2a: Yanmega
+|-singleturn|p2a: Yanmega|Protect
+|move|p1a: Shifu|Stone Edge|p2a: Yanmega
+|-activate|p2a: Yanmega|Protect
+|
+|turn|15
+|callback|decision
+|
+|move|p2a: Yanmega|Air Slash|p1a: Shifu
+|-supereffective|p1a: Shifu
+|-damage|p1a: Shifu|93 (0\/48 fnt)
+|-damage|p2a: Yanmega|10 (29\/48)|[from] item: Life Orb
+|faint|p1a: Shifu
+|
+|callback|decision
+|
+|switch|p1a: Robin Hood|Weavile, F| (48\/48)
+|-damage|p1a: Robin Hood|25 (36\/48)|[from] Stealth Rock
+|-ability|p1a: Robin Hood|Pressure
+|turn|16
+|callback|decision
+|
+|move|p1a: Robin Hood|Ice Shard|p2a: Yanmega
+|-supereffective|p2a: Yanmega
+|-damage|p2a: Yanmega|60 (0\/48 fnt)
+|faint|p2a: Yanmega
+|
+|callback|decision
+|
+|switch|p2a: Heracross|Heracross, M| (48\/48)
+|turn|17
+|callback|decision
+|
+|move|p1a: Robin Hood|Ice Shard|p2a: Heracross
+|-damage|p2a: Heracross|39 (29\/48)
+|move|p2a: Heracross|Close Combat|p1a: Robin Hood
+|-supereffective|p1a: Robin Hood
+|-damage|p1a: Robin Hood|75 (0\/48 fnt)
+|-unboost|p2a: Heracross|def|1
+|-unboost|p2a: Heracross|spd|1
+|faint|p1a: Robin Hood
+|-boost|p2a: Heracross|atk|1|[from] ability: Moxie
+|
+|win|Bolverin
+|raw|Ladder updating...
+|raw|shabbir's rating: 1540 &rarr; <strong>1534<\/strong><br \/>(-6 for losing)
+|raw|Bolverin's rating: 1358 &rarr; <strong>1420<\/strong><br \/>(+62 for winning)

@@ -1,0 +1,574 @@
+|join|alannakamura
+|join|CaioPortilho
+|player|p1|alannakamura|102
+|player|p2|CaioPortilho|260
+|gametype|singles
+|tier|UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Heracross, M
+|poke|p1|Suicune
+|poke|p1|Chandelure, M
+|poke|p1|Hitmontop, M
+|poke|p1|Umbreon, M
+|poke|p1|Sharpedo, F
+|poke|p2|Kingdra, M, shiny
+|poke|p2|Rotom-Heat
+|poke|p2|Hitmontop, M
+|poke|p2|Mismagius, F
+|poke|p2|Bronzong
+|poke|p2|Clefable, F
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Sharpedo|Sharpedo, F|282\/282
+|switch|p2a: Rotom-Heat|Rotom-Heat|242\/242
+|turn|1
+|callback|decision
+|
+|switch|p2a: Hitmontop|Hitmontop, M|304\/304
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Sharpedo
+|-unboost|p1a: Sharpedo|atk|1
+|move|p1a: Sharpedo|Protect|p1a: Sharpedo
+|-fail|p1a: Sharpedo
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|2
+|callback|decision
+|
+|switch|p1a: Suicune|Suicune|404\/404
+|-ability|p1a: Suicune|Pressure
+|switch|p2a: Rotom-Heat|Rotom-Heat|242\/242
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Suicune
+|-supereffective|p1a: Suicune
+|-damage|p1a: Suicune|182\/404
+|callback|decision
+|
+|switch|p2a: Clefable|Clefable, F|394\/394
+|move|p1a: Suicune|Calm Mind|p1a: Suicune
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|
+|-heal|p1a: Suicune|207\/404|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p1a: Suicune|Rest|p1a: Suicune
+|-status|p1a: Suicune|slp
+|-heal|p1a: Suicune|404\/404 slp|[silent]
+|-status|p1a: Suicune|slp|[from] move: Rest
+|move|p2a: Clefable|Thunder Wave|p1a: Suicune
+|-fail|p1a: Suicune
+|
+|turn|5
+|callback|decision
+|
+|switch|p2a: Kingdra|Kingdra, M, shiny|329\/329
+|cant|p1a: Suicune|slp
+|move|p1a: Suicune|Sleep Talk|p1a: Suicune
+|move|p1a: Suicune|Scald|p2a: Kingdra|[from]Sleep Talk
+|-resisted|p2a: Kingdra
+|-damage|p2a: Kingdra|299\/329
+|
+|turn|6
+|callback|decision
+|
+|move|p2a: Kingdra|Dragon Dance|p2a: Kingdra
+|-boost|p2a: Kingdra|atk|1
+|-boost|p2a: Kingdra|spe|1
+|cant|p1a: Suicune|slp
+|move|p1a: Suicune|Sleep Talk|p1a: Suicune
+|move|p1a: Suicune|Scald|p2a: Kingdra|[from]Sleep Talk
+|-resisted|p2a: Kingdra
+|-damage|p2a: Kingdra|267\/329
+|-status|p2a: Kingdra|brn
+|
+|-damage|p2a: Kingdra|226\/329 brn|[from] brn
+|turn|7
+|callback|decision
+|
+|move|p2a: Kingdra|Dragon Dance|p2a: Kingdra
+|-boost|p2a: Kingdra|atk|1
+|-boost|p2a: Kingdra|spe|1
+|-curestatus|p1a: Suicune|slp
+|move|p1a: Suicune|Calm Mind|p1a: Suicune
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|
+|-damage|p2a: Kingdra|185\/329 brn|[from] brn
+|turn|8
+|callback|decision
+|
+|move|p2a: Kingdra|Dragon Dance|p2a: Kingdra
+|-boost|p2a: Kingdra|atk|1
+|-boost|p2a: Kingdra|spe|1
+|move|p1a: Suicune|Scald|p2a: Kingdra
+|-crit|p2a: Kingdra
+|-resisted|p2a: Kingdra
+|-damage|p2a: Kingdra|91\/329 brn
+|
+|-damage|p2a: Kingdra|50\/329 brn|[from] brn
+|turn|9
+|callback|decision
+|
+|move|p2a: Kingdra|Rest|p2a: Kingdra
+|-status|p2a: Kingdra|slp
+|-heal|p2a: Kingdra|329\/329 slp|[silent]
+|-status|p2a: Kingdra|slp|[from] move: Rest
+|-enditem|p2a: Kingdra|Chesto Berry|[eat]
+|-curestatus|p2a: Kingdra|slp
+|move|p1a: Suicune|Calm Mind|p1a: Suicune
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|
+|turn|10
+|callback|decision
+|
+|move|p2a: Kingdra|Outrage|p1a: Suicune
+|-damage|p1a: Suicune|127\/404
+|move|p1a: Suicune|Scald|p2a: Kingdra
+|-resisted|p2a: Kingdra
+|-damage|p2a: Kingdra|280\/329
+|-status|p2a: Kingdra|brn
+|
+|-heal|p1a: Suicune|152\/404|[from] item: Leftovers
+|-damage|p2a: Kingdra|239\/329 brn|[from] brn
+|turn|11
+|callback|decision
+|
+|move|p2a: Kingdra|Outrage|p1a: Suicune
+|-damage|p1a: Suicune|16\/404
+|move|p1a: Suicune|Rest|p1a: Suicune
+|-status|p1a: Suicune|slp
+|-heal|p1a: Suicune|404\/404 slp|[silent]
+|-status|p1a: Suicune|slp|[from] move: Rest
+|
+|-end|p2a: Kingdra|rampage
+|-start|p2a: Kingdra|confusion
+|-damage|p2a: Kingdra|198\/329 brn|[from] brn
+|turn|12
+|callback|decision
+|
+|-activate|p2a: Kingdra|confusion
+|move|p2a: Kingdra|Rest|p2a: Kingdra
+|-status|p2a: Kingdra|slp
+|-heal|p2a: Kingdra|329\/329 slp|[silent]
+|-status|p2a: Kingdra|slp|[from] move: Rest
+|cant|p1a: Suicune|slp
+|move|p1a: Suicune|Sleep Talk|p1a: Suicune
+|move|p1a: Suicune|Calm Mind|p1a: Suicune|[from]Sleep Talk
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|
+|turn|13
+|callback|decision
+|
+|cant|p2a: Kingdra|slp
+|cant|p1a: Suicune|slp
+|
+|turn|14
+|callback|decision
+|
+|cant|p2a: Kingdra|slp
+|-curestatus|p1a: Suicune|slp
+|move|p1a: Suicune|Scald|p2a: Kingdra
+|-resisted|p2a: Kingdra
+|-damage|p2a: Kingdra|261\/329 slp
+|
+|turn|15
+|callback|decision
+|
+|-curestatus|p2a: Kingdra|slp
+|-activate|p2a: Kingdra|confusion
+|move|p2a: Kingdra|Dragon Dance|p2a: Kingdra
+|-boost|p2a: Kingdra|atk|1
+|-boost|p2a: Kingdra|spe|1
+|move|p1a: Suicune|Scald|p2a: Kingdra
+|-resisted|p2a: Kingdra
+|-damage|p2a: Kingdra|195\/329
+|
+|turn|16
+|callback|decision
+|
+|-activate|p2a: Kingdra|confusion
+|-damage|p2a: Kingdra|84\/329
+|move|p1a: Suicune|Scald|p2a: Kingdra
+|-resisted|p2a: Kingdra
+|-damage|p2a: Kingdra|21\/329
+|
+|turn|17
+|callback|decision
+|
+|-activate|p2a: Kingdra|confusion
+|-damage|p2a: Kingdra|0 fnt
+|faint|p2a: Kingdra
+|move|p1a: Suicune|Scald|p2: Kingdra|[notarget]
+|-notarget
+|
+|callback|decision
+|
+|switch|p2a: Clefable|Clefable, F|394\/394
+|turn|18
+|callback|decision
+|
+|move|p1a: Suicune|Scald|p2a: Clefable
+|-crit|p2a: Clefable
+|-damage|p2a: Clefable|0 fnt
+|faint|p2a: Clefable
+|
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|242\/242
+|turn|19
+|callback|decision
+|
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Suicune
+|-crit|p1a: Suicune
+|-supereffective|p1a: Suicune
+|-damage|p1a: Suicune|0 fnt
+|faint|p1a: Suicune
+|callback|decision
+|
+|switch|p2a: Bronzong|Bronzong|322\/322
+|
+|callback|decision
+|chat|alannakamura|hax rs
+|
+|switch|p1a: Chandelure|Chandelure, M|261\/261
+|turn|20
+|callback|decision
+|
+|switch|p1a: Umbreon|Umbreon, M|394\/394
+|move|p2a: Bronzong|Stealth Rock|p1a: Umbreon
+|-sidestart|p1: alannakamura|move: Stealth Rock
+|
+|turn|21
+|callback|decision
+|
+|move|p1a: Umbreon|Foul Play|p2a: Bronzong
+|-damage|p2a: Bronzong|256\/322
+|move|p2a: Bronzong|Confuse Ray|p1a: Umbreon
+|-start|p1a: Umbreon|confusion
+|
+|-heal|p2a: Bronzong|276\/322|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|switch|p1a: Hitmontop|Hitmontop, M|304\/304
+|-damage|p1a: Hitmontop|285\/304|[from] Stealth Rock
+|-ability|p1a: Hitmontop|Intimidate|[of] p2a: Bronzong
+|-unboost|p2a: Bronzong|atk|1
+|switch|p2a: Hitmontop|Hitmontop, M|304\/304
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Hitmontop
+|-unboost|p1a: Hitmontop|atk|1
+|
+|-heal|p1a: Hitmontop|304\/304|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|switch|p2a: Mismagius|Mismagius, F|262\/262
+|move|p1a: Hitmontop|Toxic|p2a: Mismagius
+|-status|p2a: Mismagius|tox
+|
+|-damage|p2a: Mismagius|246\/262 tox|[from] psn
+|turn|24
+|callback|decision
+|
+|move|p2a: Mismagius|Substitute|p2a: Mismagius
+|-start|p2a: Mismagius|Substitute
+|-damage|p2a: Mismagius|181\/262 tox
+|move|p1a: Hitmontop|Close Combat|p2a: Mismagius
+|-immune|p2a: Mismagius|[msg]
+|
+|-heal|p2a: Mismagius|197\/262 tox|[from] item: Leftovers
+|-damage|p2a: Mismagius|165\/262 tox|[from] psn
+|turn|25
+|callback|decision
+|
+|move|p2a: Mismagius|Shadow Ball|p1a: Hitmontop
+|-damage|p1a: Hitmontop|186\/304
+|-unboost|p1a: Hitmontop|spd|1
+|move|p1a: Hitmontop|Stone Edge|p2a: Mismagius
+|-end|p2a: Mismagius|Substitute
+|
+|-heal|p2a: Mismagius|181\/262 tox|[from] item: Leftovers
+|-heal|p1a: Hitmontop|205\/304|[from] item: Leftovers
+|-damage|p2a: Mismagius|133\/262 tox|[from] psn
+|turn|26
+|callback|decision
+|
+|switch|p2a: Bronzong|Bronzong|276\/322
+|move|p1a: Hitmontop|Stone Edge|p2a: Bronzong
+|-resisted|p2a: Bronzong
+|-damage|p2a: Bronzong|258\/322
+|
+|-heal|p1a: Hitmontop|224\/304|[from] item: Leftovers
+|-heal|p2a: Bronzong|278\/322|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|move|p1a: Hitmontop|Stone Edge|p2a: Bronzong
+|-resisted|p2a: Bronzong
+|-damage|p2a: Bronzong|260\/322
+|move|p2a: Bronzong|Zen Headbutt|p1a: Hitmontop
+|-supereffective|p1a: Hitmontop
+|-damage|p1a: Hitmontop|104\/304
+|
+|-heal|p1a: Hitmontop|123\/304|[from] item: Leftovers
+|-heal|p2a: Bronzong|280\/322|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|move|p1a: Hitmontop|Close Combat|p2a: Bronzong
+|-damage|p2a: Bronzong|222\/322
+|-unboost|p1a: Hitmontop|def|1
+|-unboost|p1a: Hitmontop|spd|1
+|move|p2a: Bronzong|Confuse Ray|p1a: Hitmontop
+|-start|p1a: Hitmontop|confusion
+|
+|-heal|p1a: Hitmontop|142\/304|[from] item: Leftovers
+|-heal|p2a: Bronzong|242\/322|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|-activate|p1a: Hitmontop|confusion
+|move|p1a: Hitmontop|Rapid Spin|p2a: Bronzong
+|-resisted|p2a: Bronzong
+|-damage|p2a: Bronzong|239\/322
+|-sideend|p1: alannakamura|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Hitmontop
+|move|p2a: Bronzong|Zen Headbutt|p1a: Hitmontop
+|-supereffective|p1a: Hitmontop
+|-damage|p1a: Hitmontop|0 fnt
+|faint|p1a: Hitmontop
+|
+|-heal|p2a: Bronzong|259\/322|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Chandelure|Chandelure, M|261\/261
+|turn|30
+|callback|decision
+|
+|move|p1a: Chandelure|Shadow Ball|p2a: Bronzong
+|-damage|p2a: Bronzong|136\/322
+|move|p2a: Bronzong|Confuse Ray|p1a: Chandelure
+|-start|p1a: Chandelure|confusion
+|
+|-heal|p2a: Bronzong|156\/322|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|switch|p1a: Umbreon|Umbreon, M|394\/394
+|move|p2a: Bronzong|Earthquake|p1a: Umbreon
+|-damage|p1a: Umbreon|340\/394
+|
+|-heal|p1a: Umbreon|364\/394|[from] item: Leftovers
+|-heal|p2a: Bronzong|176\/322|[from] item: Leftovers
+|turn|32
+|callback|decision
+|
+|move|p1a: Umbreon|Foul Play|p2a: Bronzong
+|-damage|p2a: Bronzong|106\/322
+|move|p2a: Bronzong|Stealth Rock|p1a: Umbreon
+|-sidestart|p1: alannakamura|move: Stealth Rock
+|
+|-heal|p1a: Umbreon|388\/394|[from] item: Leftovers
+|-heal|p2a: Bronzong|126\/322|[from] item: Leftovers
+|turn|33
+|callback|decision
+|
+|move|p1a: Umbreon|Foul Play|p2a: Bronzong
+|-damage|p2a: Bronzong|54\/322
+|move|p2a: Bronzong|Confuse Ray|p1a: Umbreon
+|-start|p1a: Umbreon|confusion
+|
+|-heal|p1a: Umbreon|394\/394|[from] item: Leftovers
+|-heal|p2a: Bronzong|74\/322|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|switch|p2a: Hitmontop|Hitmontop, M|304\/304
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Umbreon
+|-unboost|p1a: Umbreon|atk|1
+|-activate|p1a: Umbreon|confusion
+|-damage|p1a: Umbreon|382\/394
+|
+|-heal|p1a: Umbreon|394\/394|[from] item: Leftovers
+|turn|35
+|callback|decision
+|
+|move|p2a: Hitmontop|Rock Slide|p1a: Umbreon
+|-crit|p1a: Umbreon
+|-damage|p1a: Umbreon|271\/394
+|cant|p1a: Umbreon|flinch
+|
+|-heal|p1a: Umbreon|295\/394|[from] item: Leftovers
+|turn|36
+|callback|decision
+|
+|move|p2a: Hitmontop|Close Combat|p1a: Umbreon
+|-supereffective|p1a: Umbreon
+|-damage|p1a: Umbreon|5\/394
+|-unboost|p2a: Hitmontop|def|1
+|-unboost|p2a: Hitmontop|spd|1
+|-activate|p1a: Umbreon|confusion
+|-damage|p1a: Umbreon|0 fnt
+|faint|p1a: Umbreon
+|
+|callback|decision
+|
+|switch|p1a: Sharpedo|Sharpedo, F|282\/282
+|-damage|p1a: Sharpedo|247\/282|[from] Stealth Rock
+|turn|37
+|callback|decision
+|
+|switch|p2a: Bronzong|Bronzong|74\/322
+|move|p1a: Sharpedo|Waterfall|p2a: Bronzong
+|-damage|p2a: Bronzong|0 fnt
+|-damage|p1a: Sharpedo|219\/282|[from] item: Life Orb
+|faint|p2a: Bronzong
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|callback|decision
+|
+|switch|p2a: Hitmontop|Hitmontop, M|304\/304
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Sharpedo
+|-unboost|p1a: Sharpedo|atk|1
+|turn|38
+|callback|decision
+|
+|move|p1a: Sharpedo|Protect|p1a: Sharpedo
+|-singleturn|p1a: Sharpedo|Protect
+|move|p2a: Hitmontop|Mach Punch|p1a: Sharpedo
+|-activate|p1a: Sharpedo|Protect
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|39
+|callback|decision
+|
+|switch|p1a: Chandelure|Chandelure, M|261\/261
+|-damage|p1a: Chandelure|196\/261|[from] Stealth Rock
+|move|p2a: Hitmontop|Rock Slide|p1a: Chandelure
+|-supereffective|p1a: Chandelure
+|-damage|p1a: Chandelure|10\/261
+|
+|turn|40
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|242\/242
+|move|p1a: Chandelure|Shadow Ball|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|103\/242
+|
+|turn|41
+|callback|decision
+|
+|move|p1a: Chandelure|Shadow Ball|p2a: Rotom-Heat
+|-crit|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|0 fnt
+|faint|p2a: Rotom-Heat
+|
+|callback|decision
+|
+|switch|p2a: Hitmontop|Hitmontop, M|304\/304
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Chandelure
+|-unboost|p1a: Chandelure|atk|1
+|turn|42
+|callback|decision
+|
+|move|p1a: Chandelure|Shadow Ball|p2a: Hitmontop
+|-damage|p2a: Hitmontop|172\/304
+|move|p2a: Hitmontop|Rock Slide|p1a: Chandelure
+|-miss|p2a: Hitmontop|p1a: Chandelure
+|
+|-heal|p2a: Hitmontop|191\/304|[from] item: Leftovers
+|turn|43
+|callback|decision
+|
+|move|p1a: Chandelure|Shadow Ball|p2a: Hitmontop
+|-damage|p2a: Hitmontop|43\/304
+|move|p2a: Hitmontop|Rock Slide|p1a: Chandelure
+|-supereffective|p1a: Chandelure
+|-damage|p1a: Chandelure|0 fnt
+|faint|p1a: Chandelure
+|
+|-heal|p2a: Hitmontop|62\/304|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Sharpedo|Sharpedo, F|219\/282
+|-damage|p1a: Sharpedo|184\/282|[from] Stealth Rock
+|turn|44
+|callback|decision
+|
+|move|p1a: Sharpedo|Protect|p1a: Sharpedo
+|-singleturn|p1a: Sharpedo|Protect
+|move|p2a: Hitmontop|Mach Punch|p1a: Sharpedo
+|-activate|p1a: Sharpedo|Protect
+|
+|-heal|p2a: Hitmontop|81\/304|[from] item: Leftovers
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|45
+|callback|decision
+|
+|move|p2a: Hitmontop|Mach Punch|p1a: Sharpedo
+|-crit|p1a: Sharpedo
+|-supereffective|p1a: Sharpedo
+|-damage|p1a: Sharpedo|0 fnt
+|faint|p1a: Sharpedo
+|
+|-heal|p2a: Hitmontop|100\/304|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Heracross|Heracross, M|302\/302
+|-damage|p1a: Heracross|265\/302|[from] Stealth Rock
+|turn|46
+|callback|decision
+|
+|switch|p2a: Mismagius|Mismagius, F|133\/262 tox
+|move|p1a: Heracross|Earthquake|p2a: Mismagius
+|-immune|p2a: Mismagius|[msg]
+|
+|-heal|p2a: Mismagius|149\/262 tox|[from] item: Leftovers
+|-damage|p2a: Mismagius|133\/262 tox|[from] psn
+|turn|47
+|callback|decision
+|
+|move|p1a: Heracross|Earthquake|p2a: Mismagius
+|-immune|p2a: Mismagius|[msg]
+|move|p2a: Mismagius|Shadow Ball|p1a: Heracross
+|-damage|p1a: Heracross|132\/302
+|
+|-heal|p2a: Mismagius|149\/262 tox|[from] item: Leftovers
+|-damage|p2a: Mismagius|117\/262 tox|[from] psn
+|turn|48
+|callback|decision
+|
+|move|p1a: Heracross|Earthquake|p2a: Mismagius
+|-immune|p2a: Mismagius|[msg]
+|move|p2a: Mismagius|Shadow Ball|p1a: Heracross
+|-damage|p1a: Heracross|8\/302
+|
+|-heal|p2a: Mismagius|133\/262 tox|[from] item: Leftovers
+|-damage|p2a: Mismagius|85\/262 tox|[from] psn
+|turn|49
+|callback|decision
+|chat|CaioPortilho|gg
+|
+|move|p1a: Heracross|Earthquake|p2a: Mismagius
+|-immune|p2a: Mismagius|[msg]
+|move|p2a: Mismagius|Shadow Ball|p1a: Heracross
+|-damage|p1a: Heracross|0 fnt
+|faint|p1a: Heracross
+|
+|win|CaioPortilho
+|leave|CaioPortilho
+|player|p2

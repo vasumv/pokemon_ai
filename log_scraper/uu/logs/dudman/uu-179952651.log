@@ -1,0 +1,254 @@
+|join|dudman
+|join|mazz
+|player|p1|dudman|171
+|player|p2|mazz|170
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Zygarde
+|poke|p1|Suicune
+|poke|p1|Mienshao, F
+|poke|p1|Aggron, M
+|poke|p1|Chandelure, M
+|poke|p1|Whimsicott, M
+|poke|p2|Zygarde
+|poke|p2|Cobalion
+|poke|p2|Ampharos, F
+|poke|p2|Darmanitan, M
+|poke|p2|Vaporeon, F
+|poke|p2|Crobat, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Mienshao|Mienshao, F|271\/271
+|switch|p2a: Vaporeon|Vaporeon, F|464\/464
+|turn|1
+|
+|switch|p1a: Whimsicott|Whimsicott, M|261\/261
+|move|p2a: Vaporeon|Protect|p2a: Vaporeon
+|-fail|p2a: Vaporeon
+|
+|turn|2
+|
+|switch|p2a: Crobat|Crobat, M|373\/373
+|move|p1a: Whimsicott|U-turn|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|364\/373
+|
+|switch|p1a: Aggron|Aggron, M|323\/323
+|
+|-heal|p2a: Crobat|373\/373|[from] item: Black Sludge
+|turn|3
+|
+|detailschange|p1a: Aggron|Aggron-Mega, M
+|message|Aggron has Mega Evolved into Mega Aggron!
+|move|p2a: Crobat|U-turn|p1a: Aggron
+|-resisted|p1a: Aggron
+|-damage|p1a: Aggron|310\/323
+|
+|switch|p2a: Vaporeon|Vaporeon, F|464\/464
+|move|p1a: Aggron|Stealth Rock|p2a: Vaporeon
+|-sidestart|p2: mazz|move: Stealth Rock
+|
+|turn|4
+|
+|move|p2a: Vaporeon|Scald|p1a: Aggron
+|-damage|p1a: Aggron|189\/323
+|-status|p1a: Aggron|brn
+|move|p1a: Aggron|Toxic|p2a: Vaporeon
+|-status|p2a: Vaporeon|tox
+|
+|-damage|p2a: Vaporeon|435\/464 tox|[from] psn
+|-damage|p1a: Aggron|149\/323 brn|[from] brn
+|turn|5
+|c|âmazz|ye olde toxic aggron
+|
+|switch|p1a: Whimsicott|Whimsicott, M|261\/261
+|move|p2a: Vaporeon|Baton Pass|p2a: Vaporeon
+|
+|switch|p2a: Crobat|Crobat, M|373\/373
+|-damage|p2a: Crobat|280\/373|[from] Stealth Rock
+|
+|-heal|p2a: Crobat|303\/373|[from] item: Black Sludge
+|turn|6
+|join|DrReuniclus3
+|
+|move|p2a: Crobat|Brave Bird|p1a: Whimsicott
+|-supereffective|p1a: Whimsicott
+|-damage|p1a: Whimsicott|0 fnt
+|-damage|p2a: Crobat|217\/373|[from] recoil|[of] p1a: Whimsicott
+|faint|p1a: Whimsicott
+|
+|-heal|p2a: Crobat|240\/373|[from] item: Black Sludge
+|
+|switch|p1a: Chandelure|Chandelure, M|261\/261
+|turn|7
+|
+|move|p2a: Crobat|Defog|p1a: Chandelure
+|-unboost|p1a: Chandelure|evasion|1
+|-sideend|p2: mazz|Stealth Rock|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Chandelure|Shadow Ball|p2a: Crobat
+|-damage|p2a: Crobat|0 fnt
+|faint|p2a: Crobat
+|
+|c|âmazz|ye olde specs lure
+|c|âmazz|and its infiltrator too
+|
+|switch|p2a: Zygarde|Zygarde|404\/404
+|-ability|p2a: Zygarde|Aura Break
+|turn|8
+|
+|switch|p1a: Suicune|Suicune|365\/365
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Zygarde|Earthquake|p1a: Suicune
+|-damage|p1a: Suicune|220\/365
+|
+|-heal|p1a: Suicune|242\/365|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Ampharos|Ampharos, F|363\/363
+|move|p1a: Suicune|Scald|p2a: Ampharos
+|-damage|p2a: Ampharos|231\/363
+|
+|-heal|p1a: Suicune|264\/365|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Aggron|Aggron-Mega, M|149\/323 brn
+|detailschange|p2a: Ampharos|Ampharos-Mega, F
+|message|Ampharos has Mega Evolved into Mega Ampharos!
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p2a: Ampharos|Dragon Pulse|p1a: Aggron
+|-resisted|p1a: Aggron
+|-damage|p1a: Aggron|29\/323 brn
+|
+|-damage|p1a: Aggron|0 fnt|[from] brn
+|faint|p1a: Aggron
+|
+|switch|p1a: Zygarde|Zygarde|358\/358
+|-ability|p1a: Zygarde|Aura Break
+|turn|11
+|
+|move|p1a: Zygarde|Earthquake|p2a: Ampharos
+|-supereffective|p2a: Ampharos
+|-damage|p2a: Ampharos|0 fnt
+|faint|p2a: Ampharos
+|
+|c|âmazz|why
+|c|âmazz|did I do that
+|
+|switch|p2a: Vaporeon|Vaporeon, F|435\/464 tox
+|turn|12
+|
+|move|p1a: Zygarde|Dragon Dance|p1a: Zygarde
+|-boost|p1a: Zygarde|atk|1
+|-boost|p1a: Zygarde|spe|1
+|move|p2a: Vaporeon|Scald|p1a: Zygarde
+|-damage|p1a: Zygarde|250\/358
+|
+|-heal|p2a: Vaporeon|464\/464 tox|[from] item: Leftovers
+|-damage|p2a: Vaporeon|435\/464 tox|[from] psn
+|turn|13
+|c|âdudman|gg?
+|c|âmazz|um
+|c|âmazz|maybe
+|
+|move|p1a: Zygarde|Dragon Dance|p1a: Zygarde
+|-boost|p1a: Zygarde|atk|1
+|-boost|p1a: Zygarde|spe|1
+|move|p2a: Vaporeon|Scald|p1a: Zygarde
+|-crit|p1a: Zygarde
+|-damage|p1a: Zygarde|78\/358
+|
+|-heal|p2a: Vaporeon|464\/464 tox|[from] item: Leftovers
+|-damage|p2a: Vaporeon|406\/464 tox|[from] psn
+|turn|14
+|c|âdudman|ah
+|c|âdudman|unless that.
+|
+|move|p1a: Zygarde|Outrage|p2a: Vaporeon
+|-damage|p2a: Vaporeon|33\/464 tox
+|move|p2a: Vaporeon|Scald|p1a: Zygarde
+|-damage|p1a: Zygarde|0 fnt
+|faint|p1a: Zygarde
+|
+|-heal|p2a: Vaporeon|62\/464 tox|[from] item: Leftovers
+|-damage|p2a: Vaporeon|0 fnt|[from] psn
+|faint|p2a: Vaporeon
+|c|âmazz|it was depending on outrage
+|c|âmazz|tbh
+|
+|switch|p1a: Mienshao|Mienshao, F|271\/271
+|switch|p2a: Darmanitan|Darmanitan, M|351\/351
+|turn|15
+|
+|switch|p2a: Cobalion|Cobalion|323\/323
+|move|p1a: Mienshao|High Jump Kick|p2a: Cobalion
+|-supereffective|p2a: Cobalion
+|-damage|p2a: Cobalion|0 fnt
+|faint|p2a: Cobalion
+|
+|
+|switch|p2a: Zygarde|Zygarde|404\/404
+|-ability|p2a: Zygarde|Aura Break
+|turn|16
+|
+|move|p1a: Mienshao|High Jump Kick|p2a: Zygarde
+|-damage|p2a: Zygarde|188\/404
+|move|p2a: Zygarde|Coil|p2a: Zygarde
+|-boost|p2a: Zygarde|atk|1
+|-boost|p2a: Zygarde|def|1
+|-boost|p2a: Zygarde|accuracy|1
+|
+|-heal|p2a: Zygarde|213\/404|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Mienshao|High Jump Kick|p2a: Zygarde
+|-damage|p2a: Zygarde|66\/404
+|move|p2a: Zygarde|Earthquake|p1a: Mienshao
+|-damage|p1a: Mienshao|0 fnt
+|faint|p1a: Mienshao
+|
+|-heal|p2a: Zygarde|91\/404|[from] item: Leftovers
+|
+|switch|p1a: Suicune|Suicune|264\/365
+|-ability|p1a: Suicune|Pressure
+|turn|18
+|
+|move|p1a: Suicune|Ice Beam|p2a: Zygarde
+|-supereffective|p2a: Zygarde
+|-damage|p2a: Zygarde|0 fnt
+|faint|p2a: Zygarde
+|
+|-heal|p1a: Suicune|286\/365|[from] item: Leftovers
+|c|âmazz|ooo
+|c|âmazz|fast cune
+|c|âmazz|i dont like
+|
+|switch|p2a: Darmanitan|Darmanitan, M|351\/351
+|turn|19
+|
+|move|p2a: Darmanitan|Rock Slide|p1a: Suicune
+|-damage|p1a: Suicune|179\/365
+|move|p1a: Suicune|Scald|p2a: Darmanitan
+|-supereffective|p2a: Darmanitan
+|-damage|p2a: Darmanitan|0 fnt
+|faint|p2a: Darmanitan
+|
+|win|dudman
+|raw|Ladder updating...
+|raw|dudman's rating: 1673 &rarr; <strong>1685<\/strong><br \/>(+12 for winning)
+|raw|mazz's rating: 1526 &rarr; <strong>1514<\/strong><br \/>(-12 for losing)
+|c|âmazz|gg
+|c|âdudman|gg.
+|c|âdudman|shouldn't have dd'd twice

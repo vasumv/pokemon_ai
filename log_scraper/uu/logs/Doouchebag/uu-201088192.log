@@ -1,0 +1,526 @@
+|join|Doouchebag
+|join|Park
+|player|p1|Doouchebag|2
+|player|p2|Park|147
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Haxorus, M
+|poke|p1|Toxicroak, F
+|poke|p1|Aggron, F
+|poke|p1|Suicune
+|poke|p1|Rotom-Heat
+|poke|p1|Umbreon, F
+|poke|p2|Swampert, F
+|poke|p2|Shaymin
+|poke|p2|Crobat, F
+|poke|p2|Florges, F
+|poke|p2|Mienshao, F
+|poke|p2|Ampharos, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Aggron|Aggron, F|344\/344
+|switch|p2a: Ampharos|Ampharos, F|360\/360
+|turn|1
+|
+|detailschange|p2a: Ampharos|Ampharos-Mega, F
+|-mega|p2a: Ampharos|Ampharos|Ampharosite
+|-ability|p2a: Ampharos|Mold Breaker
+|detailschange|p1a: Aggron|Aggron-Mega, F
+|-mega|p1a: Aggron|Aggron|Aggronite
+|move|p2a: Ampharos|Volt Switch|p1a: Aggron
+|-damage|p1a: Aggron|163\/344
+|
+|switch|p2a: Swampert|Swampert, F|404\/404
+|move|p1a: Aggron|Earthquake|p2a: Swampert
+|-damage|p2a: Swampert|325\/404
+|
+|-heal|p2a: Swampert|350\/404|[from] item: Leftovers
+|turn|2
+|
+|switch|p1a: Suicune|Suicune|404\/404
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Swampert|Stealth Rock|p1a: Suicune
+|-sidestart|p1: Doouchebag|move: Stealth Rock
+|
+|-heal|p2a: Swampert|375\/404|[from] item: Leftovers
+|turn|3
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F|360\/360
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Suicune|Scald|p2a: Ampharos
+|-resisted|p2a: Ampharos
+|-damage|p2a: Ampharos|318\/360
+|-status|p2a: Ampharos|brn
+|
+|-damage|p2a: Ampharos|273\/360 brn|[from] brn
+|turn|4
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|241\/241
+|-damage|p1a: Rotom-Heat|181\/241|[from] Stealth Rock
+|move|p2a: Ampharos|Rest|p2a: Ampharos
+|-status|p2a: Ampharos|slp
+|-heal|p2a: Ampharos|360\/360 slp|[silent]
+|-status|p2a: Ampharos|slp|[from] move: Rest
+|
+|turn|5
+|
+|move|p1a: Rotom-Heat|Volt Switch|p2a: Ampharos
+|-resisted|p2a: Ampharos
+|-damage|p2a: Ampharos|335\/360 slp
+|
+|switch|p1a: Umbreon|Umbreon, F|394\/394
+|-damage|p1a: Umbreon|345\/394|[from] Stealth Rock
+|cant|p2a: Ampharos|slp
+|move|p2a: Ampharos|Sleep Talk|p2a: Ampharos
+|move|p2a: Ampharos|Dragon Pulse|p1a: Umbreon|[from]Sleep Talk
+|-damage|p1a: Umbreon|236\/394
+|
+|-heal|p1a: Umbreon|260\/394|[from] item: Leftovers
+|turn|6
+|
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|cant|p2a: Ampharos|slp
+|move|p2a: Ampharos|Sleep Talk|p2a: Ampharos
+|move|p2a: Ampharos|Volt Switch|p1a: Umbreon|[from]Sleep Talk
+|-damage|p1a: Umbreon|169\/394
+|
+|switch|p2a: Shaymin|Shaymin|341\/341
+|
+|-heal|p1a: Umbreon|193\/394|[from] item: Leftovers
+|turn|7
+|
+|move|p2a: Shaymin|Seed Flare|p1a: Umbreon
+|-damage|p1a: Umbreon|41\/394
+|-damage|p2a: Shaymin|307\/341|[from] item: Life Orb
+|move|p1a: Umbreon|Foul Play|p2a: Shaymin
+|-damage|p2a: Shaymin|226\/341
+|
+|-heal|p1a: Umbreon|238\/394|[from] move: Wish|[wisher] Umbreon
+|-heal|p1a: Umbreon|262\/394|[from] item: Leftovers
+|turn|8
+|
+|move|p2a: Shaymin|Seed Flare|p1a: Umbreon
+|-damage|p1a: Umbreon|122\/394
+|-unboost|p1a: Umbreon|spd|2
+|-damage|p2a: Shaymin|192\/341|[from] item: Life Orb
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p1a: Umbreon|146\/394|[from] item: Leftovers
+|turn|9
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Shaymin|Seed Flare|p1a: Umbreon
+|-activate|p1a: Umbreon|Protect
+|
+|-heal|p1a: Umbreon|343\/394|[from] move: Wish|[wisher] Umbreon
+|-heal|p1a: Umbreon|367\/394|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|181\/241
+|-damage|p1a: Rotom-Heat|121\/241|[from] Stealth Rock
+|move|p2a: Shaymin|Seed Flare|p1a: Rotom-Heat|[miss]
+|-miss|p2a: Shaymin|p1a: Rotom-Heat
+|
+|turn|11
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F|335\/360 slp
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Rotom-Heat|Volt Switch|p2a: Ampharos
+|-resisted|p2a: Ampharos
+|-damage|p2a: Ampharos|311\/360 slp
+|
+|switch|p1a: Haxorus|Haxorus, M|293\/293
+|-damage|p1a: Haxorus|257\/293|[from] Stealth Rock
+|-ability|p1a: Haxorus|Mold Breaker
+|
+|turn|12
+|
+|switch|p2a: Florges|Florges, F|360\/360
+|move|p1a: Haxorus|Dragon Claw|p2a: Florges
+|-immune|p2a: Florges|[msg]
+|
+|turn|13
+|
+|switch|p1a: Suicune|Suicune|404\/404
+|-damage|p1a: Suicune|354\/404|[from] Stealth Rock
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Florges|Moonblast|p1a: Suicune
+|-damage|p1a: Suicune|252\/404
+|
+|-heal|p1a: Suicune|277\/404|[from] item: Leftovers
+|turn|14
+|
+|switch|p2a: Shaymin|Shaymin|192\/341
+|move|p1a: Suicune|Scald|p2a: Shaymin
+|-resisted|p2a: Shaymin
+|-damage|p2a: Shaymin|147\/341
+|
+|-heal|p1a: Suicune|302\/404|[from] item: Leftovers
+|turn|15
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|121\/241
+|-damage|p1a: Rotom-Heat|61\/241|[from] Stealth Rock
+|move|p2a: Shaymin|Rest|p2a: Shaymin
+|-status|p2a: Shaymin|slp
+|-heal|p2a: Shaymin|341\/341 slp|[silent]
+|-status|p2a: Shaymin|slp|[from] move: Rest
+|
+|turn|16
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F|311\/360 slp
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Rotom-Heat|Overheat|p2a: Ampharos
+|-resisted|p2a: Ampharos
+|-damage|p2a: Ampharos|218\/360 slp
+|-unboost|p1a: Rotom-Heat|spa|2
+|
+|turn|17
+|
+|switch|p1a: Umbreon|Umbreon, F|367\/394
+|-damage|p1a: Umbreon|318\/394|[from] Stealth Rock
+|-curestatus|p2a: Ampharos|slp
+|move|p2a: Ampharos|Dragon Pulse|p1a: Umbreon
+|-damage|p1a: Umbreon|189\/394
+|
+|-heal|p1a: Umbreon|213\/394|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|move|p2a: Ampharos|Volt Switch|p1a: Umbreon
+|-damage|p1a: Umbreon|119\/394
+|
+|switch|p2a: Crobat|Crobat, F|349\/349
+|
+|-heal|p1a: Umbreon|143\/394|[from] item: Leftovers
+|turn|19
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Crobat|U-turn|p1a: Umbreon
+|-activate|p1a: Umbreon|Protect
+|
+|-heal|p1a: Umbreon|340\/394|[from] move: Wish|[wisher] Umbreon
+|-heal|p1a: Umbreon|364\/394|[from] item: Leftovers
+|turn|20
+|
+|move|p2a: Crobat|U-turn|p1a: Umbreon
+|-supereffective|p1a: Umbreon
+|-damage|p1a: Umbreon|266\/394
+|
+|switch|p2a: Shaymin|Shaymin|341\/341
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p1a: Umbreon|290\/394|[from] item: Leftovers
+|turn|21
+|
+|move|p2a: Shaymin|Seed Flare|p1a: Umbreon
+|-damage|p1a: Umbreon|146\/394
+|-damage|p2a: Shaymin|307\/341|[from] item: Life Orb
+|move|p1a: Umbreon|Foul Play|p2a: Shaymin
+|-damage|p2a: Shaymin|216\/341
+|
+|-heal|p1a: Umbreon|343\/394|[from] move: Wish|[wisher] Umbreon
+|-heal|p1a: Umbreon|367\/394|[from] item: Leftovers
+|turn|22
+|
+|move|p2a: Shaymin|Seed Flare|p1a: Umbreon
+|-damage|p1a: Umbreon|229\/394
+|-unboost|p1a: Umbreon|spd|2
+|-damage|p2a: Shaymin|182\/341|[from] item: Life Orb
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p1a: Umbreon|253\/394|[from] item: Leftovers
+|turn|23
+|
+|switch|p1a: Haxorus|Haxorus, M|257\/293
+|-damage|p1a: Haxorus|221\/293|[from] Stealth Rock
+|-ability|p1a: Haxorus|Mold Breaker
+|move|p2a: Shaymin|Seed Flare|p1a: Haxorus|[miss]
+|-miss|p2a: Shaymin|p1a: Haxorus
+|
+|-heal|p1a: Haxorus|293\/293|[from] move: Wish|[wisher] Umbreon
+|turn|24
+|
+|switch|p2a: Florges|Florges, F|360\/360
+|move|p1a: Haxorus|Poison Jab|p2a: Florges
+|-supereffective|p2a: Florges
+|-damage|p2a: Florges|0 fnt
+|faint|p2a: Florges
+|
+|
+|switch|p2a: Mienshao|Mienshao, F|271\/271
+|turn|25
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|61\/241
+|-damage|p1a: Rotom-Heat|1\/241|[from] Stealth Rock
+|move|p2a: Mienshao|High Jump Kick|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|0 fnt
+|faint|p1a: Rotom-Heat
+|
+|
+|switch|p1a: Suicune|Suicune|302\/404
+|-damage|p1a: Suicune|252\/404|[from] Stealth Rock
+|-ability|p1a: Suicune|Pressure
+|turn|26
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F|218\/360
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Suicune|Rest|p1a: Suicune
+|-status|p1a: Suicune|slp
+|-heal|p1a: Suicune|404\/404 slp|[silent]
+|-status|p1a: Suicune|slp|[from] move: Rest
+|
+|turn|27
+|
+|cant|p1a: Suicune|slp
+|move|p1a: Suicune|Sleep Talk|p1a: Suicune
+|move|p1a: Suicune|Calm Mind|p1a: Suicune|[from]Sleep Talk
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|move|p2a: Ampharos|Dragon Pulse|p1a: Suicune
+|-damage|p1a: Suicune|280\/404 slp
+|
+|-heal|p1a: Suicune|305\/404 slp|[from] item: Leftovers
+|turn|28
+|
+|cant|p1a: Suicune|slp
+|move|p1a: Suicune|Sleep Talk|p1a: Suicune
+|move|p1a: Suicune|Scald|p2a: Ampharos|[from]Sleep Talk
+|-resisted|p2a: Ampharos
+|-damage|p2a: Ampharos|159\/360
+|move|p2a: Ampharos|Volt Switch|p1a: Suicune
+|-supereffective|p1a: Suicune
+|-damage|p1a: Suicune|113\/404 slp
+|
+|switch|p2a: Shaymin|Shaymin|182\/341
+|
+|-heal|p1a: Suicune|138\/404 slp|[from] item: Leftovers
+|turn|29
+|
+|switch|p1a: Toxicroak|Toxicroak, F|307\/307
+|-damage|p1a: Toxicroak|288\/307|[from] Stealth Rock
+|move|p2a: Shaymin|Seed Flare|p1a: Toxicroak
+|-crit|p1a: Toxicroak
+|-resisted|p1a: Toxicroak
+|-damage|p1a: Toxicroak|61\/307
+|-damage|p2a: Shaymin|148\/341|[from] item: Life Orb
+|
+|-heal|p1a: Toxicroak|80\/307|[from] item: Black Sludge
+|turn|30
+|
+|move|p1a: Toxicroak|Sucker Punch|p2a: Shaymin
+|-damage|p2a: Shaymin|57\/341
+|move|p2a: Shaymin|Earth Power|p1a: Toxicroak
+|-supereffective|p1a: Toxicroak
+|-damage|p1a: Toxicroak|0 fnt
+|-damage|p2a: Shaymin|23\/341|[from] item: Life Orb
+|faint|p1a: Toxicroak
+|
+|
+|switch|p1a: Umbreon|Umbreon, F|253\/394
+|-damage|p1a: Umbreon|204\/394|[from] Stealth Rock
+|turn|31
+|
+|move|p2a: Shaymin|Rest|p2a: Shaymin
+|-status|p2a: Shaymin|slp
+|-heal|p2a: Shaymin|341\/341 slp|[silent]
+|-status|p2a: Shaymin|slp|[from] move: Rest
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p1a: Umbreon|228\/394|[from] item: Leftovers
+|turn|32
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F|159\/360
+|-ability|p2a: Ampharos|Mold Breaker
+|switch|p1a: Suicune|Suicune|138\/404 slp
+|-damage|p1a: Suicune|88\/404 slp|[from] Stealth Rock
+|-ability|p1a: Suicune|Pressure
+|
+|-heal|p1a: Suicune|285\/404 slp|[from] move: Wish|[wisher] Umbreon
+|-heal|p1a: Suicune|310\/404 slp|[from] item: Leftovers
+|turn|33
+|
+|switch|p1a: Aggron|Aggron-Mega, F|163\/344
+|-damage|p1a: Aggron|142\/344|[from] Stealth Rock
+|move|p2a: Ampharos|Rest|p2a: Ampharos
+|-status|p2a: Ampharos|slp
+|-heal|p2a: Ampharos|360\/360 slp|[silent]
+|-status|p2a: Ampharos|slp|[from] move: Rest
+|
+|turn|34
+|
+|switch|p2a: Swampert|Swampert, F|375\/404
+|move|p1a: Aggron|Stealth Rock|p2a: Swampert
+|-sidestart|p2: Park|move: Stealth Rock
+|
+|-heal|p2a: Swampert|400\/404|[from] item: Leftovers
+|turn|35
+|
+|move|p1a: Aggron|Toxic|p2a: Swampert
+|-status|p2a: Swampert|tox
+|move|p2a: Swampert|Roar|p1a: Aggron
+|drag|p1a: Suicune|Suicune|310\/404 slp
+|-damage|p1a: Suicune|260\/404 slp|[from] Stealth Rock
+|-ability|p1a: Suicune|Pressure
+|
+|-heal|p1a: Suicune|285\/404 slp|[from] item: Leftovers
+|-heal|p2a: Swampert|404\/404 tox|[from] item: Leftovers
+|-damage|p2a: Swampert|379\/404 tox|[from] psn
+|turn|36
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F|360\/360 slp
+|-damage|p2a: Ampharos|315\/360 slp|[from] Stealth Rock
+|-ability|p2a: Ampharos|Mold Breaker
+|-curestatus|p1a: Suicune|slp
+|move|p1a: Suicune|Calm Mind|p1a: Suicune
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|
+|-heal|p1a: Suicune|310\/404|[from] item: Leftovers
+|turn|37
+|
+|move|p1a: Suicune|Calm Mind|p1a: Suicune
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|cant|p2a: Ampharos|slp
+|move|p2a: Ampharos|Sleep Talk|p2a: Ampharos
+|move|p2a: Ampharos|Volt Switch|p1a: Suicune|[from]Sleep Talk
+|-supereffective|p1a: Suicune
+|-damage|p1a: Suicune|152\/404
+|
+|switch|p2a: Mienshao|Mienshao, F|271\/271
+|-damage|p2a: Mienshao|255\/271|[from] Stealth Rock
+|
+|-heal|p1a: Suicune|177\/404|[from] item: Leftovers
+|turn|38
+|
+|move|p2a: Mienshao|High Jump Kick|p1a: Suicune
+|-damage|p1a: Suicune|29\/404
+|move|p1a: Suicune|Rest|p1a: Suicune
+|-status|p1a: Suicune|slp
+|-heal|p1a: Suicune|404\/404 slp|[silent]
+|-status|p1a: Suicune|slp|[from] move: Rest
+|
+|turn|39
+|
+|switch|p2a: Swampert|Swampert, F|379\/404 tox
+|-damage|p2a: Swampert|354\/404 tox|[from] Stealth Rock
+|cant|p1a: Suicune|slp
+|move|p1a: Suicune|Sleep Talk|p1a: Suicune
+|move|p1a: Suicune|Calm Mind|p1a: Suicune|[from]Sleep Talk
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|
+|-heal|p2a: Swampert|379\/404 tox|[from] item: Leftovers
+|-damage|p2a: Swampert|354\/404 tox|[from] psn
+|turn|40
+|
+|cant|p1a: Suicune|slp
+|move|p1a: Suicune|Sleep Talk|p1a: Suicune
+|move|p1a: Suicune|Scald|p2a: Swampert|[from]Sleep Talk
+|-damage|p2a: Swampert|116\/404 tox
+|move|p2a: Swampert|Roar|p1a: Suicune
+|drag|p1a: Aggron|Aggron-Mega, F|142\/344
+|-damage|p1a: Aggron|121\/344|[from] Stealth Rock
+|
+|-heal|p2a: Swampert|141\/404 tox|[from] item: Leftovers
+|-damage|p2a: Swampert|91\/404 tox|[from] psn
+|turn|41
+|
+|move|p2a: Swampert|Scald|p1a: Aggron
+|-damage|p1a: Aggron|0 fnt
+|faint|p1a: Aggron
+|
+|-heal|p2a: Swampert|116\/404 tox|[from] item: Leftovers
+|-damage|p2a: Swampert|41\/404 tox|[from] psn
+|
+|switch|p1a: Haxorus|Haxorus, M|293\/293
+|-damage|p1a: Haxorus|257\/293|[from] Stealth Rock
+|-ability|p1a: Haxorus|Mold Breaker
+|turn|42
+|
+|move|p1a: Haxorus|Dragon Claw|p2a: Swampert
+|-damage|p2a: Swampert|0 fnt
+|faint|p2a: Swampert
+|
+|
+|switch|p2a: Mienshao|Mienshao, F|271\/271
+|-damage|p2a: Mienshao|255\/271|[from] Stealth Rock
+|turn|43
+|
+|move|p2a: Mienshao|High Jump Kick|p1a: Haxorus
+|-damage|p1a: Haxorus|0 fnt
+|faint|p1a: Haxorus
+|
+|
+|switch|p1a: Suicune|Suicune|404\/404 slp
+|-damage|p1a: Suicune|354\/404 slp|[from] Stealth Rock
+|-ability|p1a: Suicune|Pressure
+|turn|44
+|leave|Doouchebag
+|player|p1
+|join|Doouchebag
+|player|p1|Doouchebag|2
+|
+|move|p2a: Mienshao|High Jump Kick|p1a: Suicune
+|-damage|p1a: Suicune|207\/404 slp
+|-curestatus|p1a: Suicune|slp
+|move|p1a: Suicune|Calm Mind|p1a: Suicune
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|
+|-heal|p1a: Suicune|232\/404|[from] item: Leftovers
+|turn|45
+|
+|move|p2a: Mienshao|High Jump Kick|p1a: Suicune
+|-damage|p1a: Suicune|76\/404
+|move|p1a: Suicune|Rest|p1a: Suicune
+|-status|p1a: Suicune|slp
+|-heal|p1a: Suicune|404\/404 slp|[silent]
+|-status|p1a: Suicune|slp|[from] move: Rest
+|
+|turn|46
+|
+|switch|p2a: Ampharos|Ampharos-Mega, F|315\/360 slp
+|-damage|p2a: Ampharos|270\/360 slp|[from] Stealth Rock
+|-ability|p2a: Ampharos|Mold Breaker
+|cant|p1a: Suicune|slp
+|move|p1a: Suicune|Sleep Talk|p1a: Suicune
+|move|p1a: Suicune|Scald|p2a: Ampharos|[from]Sleep Talk
+|-resisted|p2a: Ampharos
+|-damage|p2a: Ampharos|216\/360 slp
+|
+|turn|47
+|
+|cant|p1a: Suicune|slp
+|move|p1a: Suicune|Sleep Talk|p1a: Suicune
+|move|p1a: Suicune|Calm Mind|p1a: Suicune|[from]Sleep Talk
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|cant|p2a: Ampharos|slp
+|move|p2a: Ampharos|Sleep Talk|p2a: Ampharos
+|move|p2a: Ampharos|Volt Switch|p1a: Suicune|[from]Sleep Talk
+|-supereffective|p1a: Suicune
+|-damage|p1a: Suicune|260\/404 slp
+|-message|Park forfeited.
+|leave|Park
+|
+|win|Doouchebag
+|raw|Ladder updating...
+|player|p2
+|raw|Doouchebag's rating: 1455 &rarr; <strong>1470<\/strong><br \/>(+15 for winning)
+|raw|Park's rating: 1374 &rarr; <strong>1358<\/strong><br \/>(-16 for losing)

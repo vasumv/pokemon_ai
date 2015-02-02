@@ -1,0 +1,290 @@
+|join|TriggerIF
+|join|WebBowser
+|player|p1|TriggerIF|289
+|player|p2|WebBowser|92
+|gametype|singles
+|gen|6
+|tier|ORAS OU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Scolipede, M
+|poke|p1|Espeon, F
+|poke|p1|Latios, M
+|poke|p1|Greninja, M
+|poke|p1|Charizard, M
+|poke|p1|Wobbuffet, M
+|poke|p2|Scolipede, M
+|poke|p2|Espeon, M
+|poke|p2|Latios, M
+|poke|p2|Greninja, M
+|poke|p2|Charizard, M
+|poke|p2|Wobbuffet, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|c|âWebBowser|oh hai
+|c|âTriggerIF|hello mister
+|c|âWebBowser|Good to see my team getting use
+|
+|start
+|switch|p1a: Oh no it's|Wobbuffet, M|584\/584
+|switch|p2a: Greninja|Greninja, M|285\/285
+|turn|1
+|
+|move|p2a: Greninja|U-turn|p1a: Oh no it's
+|-start|p2a: Greninja|typechange|Bug|[from] Protean
+|-supereffective|p1a: Oh no it's
+|-damage|p1a: Oh no it's|191\/584
+|-damage|p2a: Greninja|257\/285|[from] item: Life Orb
+|c|âTriggerIF|so you changed it
+|
+|switch|p2a: Scolipede|Scolipede, M|323\/323
+|-enditem|p1a: Oh no it's|Sitrus Berry|[eat]
+|-heal|p1a: Oh no it's|337\/584|[from] item: Sitrus Berry
+|move|p1a: Oh no it's|Encore|p2a: Scolipede
+|-fail|p2a: Scolipede
+|
+|turn|2
+|c|âWebBowser|been trying out stuff for ORAS
+|
+|move|p2a: Scolipede|Iron Defense|p2a: Scolipede
+|-boost|p2a: Scolipede|def|2
+|move|p1a: Oh no it's|Encore|p2a: Scolipede
+|-start|p2a: Scolipede|Encore
+|-enditem|p2a: Scolipede|Mental Herb
+|-end|p2a: Scolipede|Encore
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|3
+|c|âWebBowser|gatta adapt, yaknow?
+|
+|switch|p1a: Greninja|Greninja, M|286\/286
+|move|p2a: Scolipede|Protect|p2a: Scolipede
+|-fail|p2a: Scolipede
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|4
+|
+|move|p2a: Scolipede|Protect|p2a: Scolipede
+|-singleturn|p2a: Scolipede|Protect
+|move|p1a: Greninja|Hidden Power|p2a: Scolipede
+|-start|p1a: Greninja|typechange|Fire|[from] Protean
+|-activate|p2a: Scolipede|Protect
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|5
+|
+|move|p2a: Scolipede|Baton Pass|p2a: Scolipede
+|
+|switch|p2a: Charizard|Charizard, M|359\/359
+|move|p1a: Greninja|Dark Pulse|p2a: Charizard
+|-start|p1a: Greninja|typechange|Dark|[from] Protean
+|-damage|p2a: Charizard|190\/359
+|-damage|p1a: Greninja|258\/286|[from] item: Life Orb
+|
+|turn|6
+|
+|detailschange|p2a: Charizard|Charizard-Mega-X, M
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p2a: Charizard|Flare Blitz|p1a: Greninja
+|-damage|p1a: Greninja|0 fnt
+|-damage|p2a: Charizard|105\/359|[from] recoil|[of] p1a: Greninja
+|faint|p1a: Greninja
+|
+|
+|switch|p1a: Oh no it's|Wobbuffet, M|337\/584
+|turn|7
+|c|âWebBowser|I hav'nt played enough games with the new greninja set to really commit to it just yet
+|
+|move|p2a: Charizard|Flare Blitz|p1a: Oh no it's
+|-damage|p1a: Oh no it's|0 fnt
+|-damage|p2a: Charizard|0 fnt|[from] recoil|[of] p1a: Oh no it's
+|faint|p1a: Oh no it's
+|faint|p2a: Charizard
+|
+|
+|switch|p1a: Latios|Latios, M|364\/364
+|switch|p2a: Scolipede|Scolipede, M|323\/323
+|turn|8
+|
+|move|p1a: Latios|Memento|p2a: Scolipede
+|-unboost|p2a: Scolipede|atk|2
+|-unboost|p2a: Scolipede|spa|2
+|faint|p1a: Latios
+|move|p2a: Scolipede|Iron Defense|p2a: Scolipede
+|-boost|p2a: Scolipede|def|2
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|
+|switch|p1a: Scolipede|Scolipede, M|323\/323
+|turn|9
+|
+|move|p2a: Scolipede|Iron Defense|p2a: Scolipede
+|-boost|p2a: Scolipede|def|2
+|move|p1a: Scolipede|Iron Defense|p1a: Scolipede
+|-boost|p1a: Scolipede|def|2
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|10
+|
+|move|p2a: Scolipede|Iron Defense|p2a: Scolipede
+|-boost|p2a: Scolipede|def|2
+|move|p1a: Scolipede|Substitute|p1a: Scolipede
+|-start|p1a: Scolipede|Substitute
+|-damage|p1a: Scolipede|243\/323
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|11
+|
+|move|p2a: Scolipede|Baton Pass|p2a: Scolipede
+|
+|switch|p2a: Espeon|Espeon, M|334\/334
+|move|p1a: Scolipede|Baton Pass|p1a: Scolipede
+|
+|switch|p1a: Espeon|Espeon, F|334\/334
+|
+|turn|12
+|
+|move|p2a: Espeon|Calm Mind|p2a: Espeon
+|-boost|p2a: Espeon|spa|1
+|-boost|p2a: Espeon|spd|1
+|move|p1a: Espeon|Calm Mind|p1a: Espeon
+|-boost|p1a: Espeon|spa|1
+|-boost|p1a: Espeon|spd|1
+|
+|turn|13
+|
+|move|p2a: Espeon|Calm Mind|p2a: Espeon
+|-boost|p2a: Espeon|spa|1
+|-boost|p2a: Espeon|spd|1
+|move|p1a: Espeon|Calm Mind|p1a: Espeon
+|-boost|p1a: Espeon|spa|1
+|-boost|p1a: Espeon|spd|1
+|
+|turn|14
+|
+|move|p2a: Espeon|Stored Power|p1a: Espeon
+|-resisted|p1a: Espeon
+|-end|p1a: Espeon|Substitute
+|move|p1a: Espeon|Calm Mind|p1a: Espeon
+|-boost|p1a: Espeon|spa|1
+|-boost|p1a: Espeon|spd|1
+|
+|turn|15
+|
+|move|p2a: Espeon|Calm Mind|p2a: Espeon
+|-boost|p2a: Espeon|spa|1
+|-boost|p2a: Espeon|spd|1
+|move|p1a: Espeon|Calm Mind|p1a: Espeon
+|-boost|p1a: Espeon|spa|1
+|-boost|p1a: Espeon|spd|1
+|
+|turn|16
+|
+|move|p2a: Espeon|Calm Mind|p2a: Espeon
+|-boost|p2a: Espeon|spa|1
+|-boost|p2a: Espeon|spd|1
+|move|p1a: Espeon|Calm Mind|p1a: Espeon
+|-boost|p1a: Espeon|spa|1
+|-boost|p1a: Espeon|spd|1
+|
+|turn|17
+|
+|move|p2a: Espeon|Stored Power|p1a: Espeon
+|-resisted|p1a: Espeon
+|-damage|p1a: Espeon|185\/334
+|move|p1a: Espeon|Calm Mind|p1a: Espeon
+|-boost|p1a: Espeon|spa|1
+|-boost|p1a: Espeon|spd|1
+|
+|-heal|p1a: Espeon|205\/334|[from] item: Leftovers
+|turn|18
+|
+|move|p2a: Espeon|Stored Power|p1a: Espeon
+|-resisted|p1a: Espeon
+|-damage|p1a: Espeon|91\/334
+|move|p1a: Espeon|Stored Power|p2a: Espeon
+|-resisted|p2a: Espeon
+|-damage|p2a: Espeon|0 fnt
+|faint|p2a: Espeon
+|
+|-heal|p1a: Espeon|111\/334|[from] item: Leftovers
+|c|âTriggerIF|gg
+|
+|switch|p2a: Oh no it's|Wobbuffet, F|584\/584
+|turn|19
+|
+|move|p1a: Espeon|Morning Sun|p1a: Espeon
+|-heal|p1a: Espeon|278\/334
+|move|p2a: Oh no it's|Mirror Coat|p1a: Espeon
+|-fail|p1a: Espeon
+|
+|-heal|p1a: Espeon|298\/334|[from] item: Leftovers
+|turn|20
+|c|âWebBowser|go wobbuffet!
+|c|âTriggerIF|oh im not sure if this kills :D
+|
+|move|p1a: Espeon|Stored Power|p2a: Oh no it's
+|-resisted|p2a: Oh no it's
+|-damage|p2a: Oh no it's|0 fnt
+|faint|p2a: Oh no it's
+|
+|-heal|p1a: Espeon|318\/334|[from] item: Leftovers
+|c|âWebBowser|I'm not either
+|c|âWebBowser|well then...
+|c|âTriggerIF|well there it goes
+|
+|switch|p2a: Latios|Latios, M|364\/364
+|turn|21
+|c|âWebBowser|that's g
+|
+|move|p1a: Espeon|Stored Power|p2a: Latios
+|-resisted|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|faint|p2a: Latios
+|
+|-heal|p1a: Espeon|334\/334|[from] item: Leftovers
+|
+|switch|p2a: Greninja|Greninja, M|257\/285
+|turn|22
+|c|âTriggerIF|it was fun tho
+|
+|move|p1a: Espeon|Dazzling Gleam|p2a: Greninja
+|-supereffective|p2a: Greninja
+|-damage|p2a: Greninja|0 fnt
+|faint|p2a: Greninja
+|
+|c|âWebBowser|yup
+|
+|switch|p2a: Scolipede|Scolipede, M|323\/323
+|turn|23
+|c|âTriggerIF|use dazzling gleam
+|c|âWebBowser|I prefere relying on zard to kill sable tbh
+|c|âTriggerIF|sable is a pain
+|c|âTriggerIF|heatran is so common tho
+|
+|move|p1a: Espeon|Stored Power|p2a: Scolipede
+|-supereffective|p2a: Scolipede
+|-damage|p2a: Scolipede|0 fnt
+|faint|p2a: Scolipede
+|
+|win|TriggerIF
+|raw|Ladder updating...
+|raw|TriggerIF's rating: 1486 &rarr; <strong>1499<\/strong><br \/>(+13 for winning)
+|raw|WebBowser's rating: 1348 &rarr; <strong>1336<\/strong><br \/>(-12 for losing)
+|c|âWebBowser|true
+|c|âTriggerIF|and every one of them is using roar
+|c|âWebBowser|Is tran-sable a thing?
+|c|âWebBowser|just curious
+|c|âTriggerIF|seems so...
+|c|âWebBowser|Hmmm, in that case back to d-gleam it is
+|c|âWebBowser|I've been debating quite heavily between the two

@@ -1,0 +1,310 @@
+|join|Blueblood
+|join|purplebanditos
+|player|p1|Blueblood|1
+|player|p2|purplebanditos|221
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Suicune
+|poke|p1|Krookodile, M
+|poke|p1|Crobat, M
+|poke|p1|Chandelure, M
+|poke|p1|Chesnaught, M
+|poke|p1|Florges, F
+|poke|p2|Haxorus, M, shiny
+|poke|p2|Metagross, shiny
+|poke|p2|Hydreigon, F, shiny
+|poke|p2|Infernape, M
+|poke|p2|Florges, F, shiny
+|poke|p2|Donphan, M, shiny
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Suicune|Suicune|404\/404
+|switch|p2a: Hydreigon|Hydreigon, F, shiny|325\/325
+|-ability|p1a: Suicune|Pressure
+|turn|1
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Hydreigon|Draco Meteor|p1a: Florges
+|-immune|p1a: Florges|[msg]
+|
+|turn|2
+|
+|switch|p2a: Metaclean|Metagross, shiny|363\/363
+|switch|p1a: Chandelure|Chandelure, M|261\/261
+|
+|turn|3
+|
+|move|p1a: Chandelure|Fire Blast|p2a: Metaclean
+|-supereffective|p2a: Metaclean
+|-damage|p2a: Metaclean|0 fnt
+|faint|p2a: Metaclean
+|
+|
+|switch|p2a: Hydreigon|Hydreigon, F, shiny|325\/325
+|turn|4
+|
+|switch|p1a: Chesnaught|Chesnaught, M|379\/379
+|move|p2a: Hydreigon|U-turn|p1a: Chesnaught
+|-damage|p1a: Chesnaught|332\/379
+|
+|switch|p2a: Wukong|Infernape, M|293\/293
+|
+|-heal|p1a: Chesnaught|355\/379|[from] item: Leftovers
+|turn|5
+|
+|switch|p1a: Suicune|Suicune|404\/404
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Wukong|Nasty Plot|p2a: Wukong
+|-boost|p2a: Wukong|spa|2
+|
+|turn|6
+|
+|move|p2a: Wukong|Grass Knot|p1a: Suicune
+|-supereffective|p1a: Suicune
+|-damage|p1a: Suicune|50\/404
+|move|p1a: Suicune|Scald|p2a: Wukong
+|-supereffective|p2a: Wukong
+|-damage|p2a: Wukong|59\/293
+|
+|-heal|p1a: Suicune|75\/404|[from] item: Leftovers
+|turn|7
+|
+|move|p2a: Wukong|Grass Knot|p1a: Suicune
+|-supereffective|p1a: Suicune
+|-damage|p1a: Suicune|0 fnt
+|faint|p1a: Suicune
+|
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|turn|8
+|
+|move|p2a: Wukong|Fire Blast|p1a: Florges
+|-damage|p1a: Florges|81\/360
+|move|p1a: Florges|Moonblast|p2a: Wukong
+|-damage|p2a: Wukong|0 fnt
+|faint|p2a: Wukong
+|
+|-heal|p1a: Florges|103\/360|[from] item: Leftovers
+|
+|switch|p2a: Haxorus|Haxorus, M, shiny|293\/293
+|-ability|p2a: Haxorus|Mold Breaker
+|turn|9
+|
+|switch|p1a: Chandelure|Chandelure, M|261\/261
+|move|p2a: Haxorus|Poison Jab|p1a: Chandelure
+|-resisted|p1a: Chandelure
+|-damage|p1a: Chandelure|197\/261
+|
+|turn|10
+|
+|move|p2a: Haxorus|Dragon Claw|p1a: Chandelure
+|-damage|p1a: Chandelure|2\/261
+|move|p1a: Chandelure|Shadow Ball|p2a: Haxorus
+|-damage|p2a: Haxorus|0 fnt
+|faint|p2a: Haxorus
+|
+|
+|switch|p2a: Zanzibar|Donphan, M, shiny|383\/383
+|turn|11
+|
+|move|p2a: Zanzibar|Ice Shard|p1a: Chandelure
+|-resisted|p1a: Chandelure
+|-damage|p1a: Chandelure|0 fnt
+|faint|p1a: Chandelure
+|
+|
+|switch|p1a: Florges|Florges, F|103\/360
+|turn|12
+|
+|move|p1a: Florges|Wish|p1a: Florges
+|move|p2a: Zanzibar|Earthquake|p1a: Florges
+|-damage|p1a: Florges|0 fnt
+|faint|p1a: Florges
+|
+|
+|switch|p1a: Crobat|Crobat, M|373\/373
+|turn|13
+|
+|move|p1a: Crobat|Toxic|p2a: Zanzibar
+|-status|p2a: Zanzibar|tox
+|move|p2a: Zanzibar|Stealth Rock|p1a: Crobat
+|-sidestart|p1: Blueblood|move: Stealth Rock
+|
+|-damage|p2a: Zanzibar|360\/383 tox|[from] psn
+|turn|14
+|
+|move|p2a: Zanzibar|Ice Shard|p1a: Crobat
+|-supereffective|p1a: Crobat
+|-damage|p1a: Crobat|299\/373
+|move|p1a: Crobat|Defog|p2a: Zanzibar
+|-unboost|p2a: Zanzibar|evasion|1
+|-sideend|p1: Blueblood|Stealth Rock|[from] move: Defog|[of] p1a: Crobat
+|
+|-heal|p1a: Crobat|322\/373|[from] item: Black Sludge
+|-heal|p2a: Zanzibar|383\/383 tox|[from] item: Leftovers
+|-damage|p2a: Zanzibar|337\/383 tox|[from] psn
+|turn|15
+|
+|switch|p2a: Hydreigon|Hydreigon, F, shiny|325\/325
+|move|p1a: Crobat|Brave Bird|p2a: Hydreigon
+|-damage|p2a: Hydreigon|171\/325
+|-damage|p1a: Crobat|271\/373|[from] recoil|[of] p2a: Hydreigon
+|
+|-heal|p1a: Crobat|294\/373|[from] item: Black Sludge
+|turn|16
+|
+|switch|p1a: Krookodile|Krookodile, M|332\/332
+|move|p2a: Hydreigon|Draco Meteor|p1a: Krookodile|[miss]
+|-miss|p2a: Hydreigon|p1a: Krookodile
+|
+|turn|17
+|
+|move|p2a: Hydreigon|Draco Meteor|p1a: Krookodile
+|-damage|p1a: Krookodile|29\/332
+|-unboost|p2a: Hydreigon|spa|2
+|move|p1a: Krookodile|Stone Edge|p2a: Hydreigon|[miss]
+|-miss|p1a: Krookodile|p2a: Hydreigon
+|
+|turn|18
+|
+|move|p2a: Hydreigon|Draco Meteor|p1a: Krookodile
+|-damage|p1a: Krookodile|0 fnt
+|-unboost|p2a: Hydreigon|spa|2
+|faint|p1a: Krookodile
+|
+|
+|switch|p1a: Chesnaught|Chesnaught, M|355\/379
+|turn|19
+|
+|switch|p2a: Oprah|Florges, F, shiny|359\/359
+|move|p1a: Chesnaught|Substitute|p1a: Chesnaught
+|-start|p1a: Chesnaught|Substitute
+|-damage|p1a: Chesnaught|261\/379
+|
+|-heal|p1a: Chesnaught|284\/379|[from] item: Leftovers
+|turn|20
+|
+|move|p2a: Oprah|Moonblast|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-end|p1a: Chesnaught|Substitute
+|move|p1a: Chesnaught|Swords Dance|p1a: Chesnaught
+|-boost|p1a: Chesnaught|atk|2
+|
+|-heal|p1a: Chesnaught|307\/379|[from] item: Leftovers
+|turn|21
+|
+|switch|p1a: Crobat|Crobat, M|294\/373
+|move|p2a: Oprah|Moonblast|p1a: Crobat
+|-resisted|p1a: Crobat
+|-damage|p1a: Crobat|225\/373
+|-unboost|p1a: Crobat|spa|1
+|
+|-heal|p1a: Crobat|248\/373|[from] item: Black Sludge
+|turn|22
+|
+|switch|p2a: Zanzibar|Donphan, M, shiny|337\/383 tox
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-heal|p1a: Crobat|373\/373
+|
+|-heal|p2a: Zanzibar|360\/383 tox|[from] item: Leftovers
+|-damage|p2a: Zanzibar|337\/383 tox|[from] psn
+|turn|23
+|
+|move|p1a: Crobat|Brave Bird|p2a: Zanzibar
+|-crit|p2a: Zanzibar
+|-damage|p2a: Zanzibar|214\/383 tox
+|-damage|p1a: Crobat|332\/373|[from] recoil|[of] p2a: Zanzibar
+|move|p2a: Zanzibar|Stealth Rock|p1a: Crobat
+|-sidestart|p1: Blueblood|move: Stealth Rock
+|
+|-heal|p1a: Crobat|355\/373|[from] item: Black Sludge
+|-heal|p2a: Zanzibar|237\/383 tox|[from] item: Leftovers
+|-damage|p2a: Zanzibar|191\/383 tox|[from] psn
+|turn|24
+|
+|switch|p2a: Hydreigon|Hydreigon, F, shiny|171\/325
+|move|p1a: Crobat|Brave Bird|p2a: Hydreigon
+|-damage|p2a: Hydreigon|20\/325
+|-damage|p1a: Crobat|305\/373|[from] recoil|[of] p2a: Hydreigon
+|
+|-heal|p1a: Crobat|328\/373|[from] item: Black Sludge
+|turn|25
+|
+|move|p2a: Hydreigon|Draco Meteor|p1a: Crobat
+|-damage|p1a: Crobat|73\/373
+|-unboost|p2a: Hydreigon|spa|2
+|move|p1a: Crobat|Brave Bird|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|-damage|p1a: Crobat|66\/373|[from] recoil|[of] p2a: Hydreigon
+|faint|p2a: Hydreigon
+|
+|-heal|p1a: Crobat|89\/373|[from] item: Black Sludge
+|
+|switch|p2a: Zanzibar|Donphan, M, shiny|191\/383 tox
+|turn|26
+|
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-heal|p1a: Crobat|276\/373
+|move|p2a: Zanzibar|Earthquake|p1a: Crobat
+|-supereffective|p1a: Crobat
+|-damage|p1a: Crobat|22\/373
+|
+|-heal|p1a: Crobat|45\/373|[from] item: Black Sludge
+|-heal|p2a: Zanzibar|214\/383 tox|[from] item: Leftovers
+|-damage|p2a: Zanzibar|191\/383 tox|[from] psn
+|turn|27
+|
+|move|p2a: Zanzibar|Ice Shard|p1a: Crobat
+|-supereffective|p1a: Crobat
+|-damage|p1a: Crobat|0 fnt
+|faint|p1a: Crobat
+|
+|-heal|p2a: Zanzibar|214\/383 tox|[from] item: Leftovers
+|-damage|p2a: Zanzibar|168\/383 tox|[from] psn
+|
+|switch|p1a: Chesnaught|Chesnaught, M|307\/379
+|-damage|p1a: Chesnaught|284\/379|[from] Stealth Rock
+|turn|28
+|
+|switch|p2a: Oprah|Florges, F, shiny|359\/359
+|move|p1a: Chesnaught|Seed Bomb|p2a: Oprah
+|-damage|p2a: Oprah|224\/359
+|
+|-heal|p2a: Oprah|246\/359|[from] item: Leftovers
+|-heal|p1a: Chesnaught|307\/379|[from] item: Leftovers
+|turn|29
+|
+|move|p2a: Oprah|Moonblast|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-damage|p1a: Chesnaught|11\/379
+|move|p1a: Chesnaught|Seed Bomb|p2a: Oprah
+|-damage|p2a: Oprah|117\/359
+|
+|-heal|p2a: Oprah|139\/359|[from] item: Leftovers
+|-heal|p1a: Chesnaught|34\/379|[from] item: Leftovers
+|turn|30
+|chat|purplebanditos|gg
+|
+|move|p2a: Oprah|Moonblast|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-damage|p1a: Chesnaught|0 fnt
+|faint|p1a: Chesnaught
+|
+|win|purplebanditos
+|raw|Ladder updating...
+|chat|Blueblood|gg
+|raw|Blueblood's rating: 1367 &rarr; <strong>1347<\/strong><br \/>(-20 for losing)
+|raw|purplebanditos's rating: 1368 &rarr; <strong>1388<\/strong><br \/>(+20 for winning)

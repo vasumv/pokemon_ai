@@ -1,0 +1,156 @@
+|join|BellyDrumZohan
+|join|JohnOrigins
+|player|p1|BellyDrumZohan|76
+|player|p2|JohnOrigins|92
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Vaporeon, F
+|poke|p1|Slurpuff, M
+|poke|p1|Cresselia, F
+|poke|p1|Lucario, F
+|poke|p1|Houndoom, F
+|poke|p1|Forretress, M
+|poke|p2|Swampert, M
+|poke|p2|Azelf
+|poke|p2|Krookodile, F
+|poke|p2|Tornadus, M
+|poke|p2|Toxicroak, F
+|poke|p2|Kingdra, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Houndoom|Houndoom, F|291\/291
+|switch|p2a: Tornadoe|Tornadus, M|299\/299
+|turn|1
+|
+|detailschange|p1a: Houndoom|Houndoom-Mega, F
+|-mega|p1a: Houndoom|Houndoom|Houndoominite
+|move|p2a: Tornadoe|Rain Dance|p2a: Tornadoe
+|-weather|RainDance
+|move|p1a: Houndoom|Dark Pulse|p2a: Tornadoe
+|-damage|p2a: Tornadoe|109\/299
+|
+|-weather|RainDance|[upkeep]
+|turn|2
+|
+|move|p1a: Houndoom|Dark Pulse|p2a: Tornadoe
+|-damage|p2a: Tornadoe|0 fnt
+|faint|p2a: Tornadoe
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p2a: "Bruh" ball|Swampert, M|341\/341
+|turn|3
+|
+|detailschange|p2a: "Bruh" ball|Swampert-Mega, M
+|-mega|p2a: "Bruh" ball|Swampert|Swampertite
+|move|p1a: Houndoom|Destiny Bond|p1a: Houndoom
+|-singlemove|p1a: Houndoom|Destiny Bond
+|move|p2a: "Bruh" ball|Earthquake|p1a: Houndoom
+|-supereffective|p1a: Houndoom
+|-damage|p1a: Houndoom|0 fnt
+|faint|p1a: Houndoom
+|-activate|p1a: Houndoom|Destiny Bond
+|faint|p2a: "Bruh" ball
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p2a: Drag King|Kingdra, F|291\/291
+|switch|p1a: Cresselia|Cresselia, F|443\/443
+|turn|4
+|
+|move|p2a: Drag King|Hydro Pump|p1a: Cresselia
+|-damage|p1a: Cresselia|229\/443
+|move|p1a: Cresselia|Light Screen|p1a: Cresselia
+|-sidestart|p1: BellyDrumZohan|move: Light Screen
+|
+|-weather|RainDance|[upkeep]
+|turn|5
+|
+|switch|p2a: Krook it up|Krookodile, F|331\/331
+|move|p1a: Cresselia|Reflect|p1a: Cresselia
+|-sidestart|p1: BellyDrumZohan|Reflect
+|
+|-weather|RainDance|[upkeep]
+|turn|6
+|
+|move|p2a: Krook it up|Knock Off|p1a: Cresselia
+|-supereffective|p1a: Cresselia
+|-damage|p1a: Cresselia|87\/443
+|-enditem|p1a: Cresselia|Light Clay|[from] move: Knock Off|[of] p2a: Krook it up
+|move|p1a: Cresselia|Lunar Dance|p1a: Cresselia
+|faint|p1a: Cresselia
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p1a: Slurpuff|Slurpuff, M|316\/316
+|-heal|p1a: Slurpuff|316\/316|[from] move: Lunar Dance
+|turn|7
+|
+|switch|p2a: Drag King|Kingdra, F|291\/291
+|move|p1a: Slurpuff|Belly Drum|p1a: Slurpuff
+|-damage|p1a: Slurpuff|158\/316
+|-setboost|p1a: Slurpuff|atk|6|[from] move: Belly Drum
+|-enditem|p1a: Slurpuff|Sitrus Berry|[eat]
+|-heal|p1a: Slurpuff|237\/316|[from] item: Sitrus Berry
+|
+|-weather|RainDance|[upkeep]
+|turn|8
+|
+|move|p2a: Drag King|Scald|p1a: Slurpuff
+|-damage|p1a: Slurpuff|67\/316
+|move|p1a: Slurpuff|Drain Punch|p2a: Drag King
+|-damage|p2a: Drag King|28\/291
+|-heal|p1a: Slurpuff|199\/316|[from] drain|[of] p2a: Drag King
+|
+|-weather|none
+|turn|9
+|
+|move|p1a: Slurpuff|Drain Punch|p2a: Drag King
+|-damage|p2a: Drag King|0 fnt
+|-heal|p1a: Slurpuff|213\/316|[from] drain|[of] p2a: Drag King
+|faint|p2a: Drag King
+|
+|
+|switch|p2a: Frogtastic|Toxicroak, F|307\/307
+|turn|10
+|
+|move|p2a: Frogtastic|Sucker Punch|p1a: Slurpuff
+|-resisted|p1a: Slurpuff
+|-damage|p1a: Slurpuff|182\/316
+|-damage|p2a: Frogtastic|277\/307|[from] item: Life Orb
+|move|p1a: Slurpuff|Return|p2a: Frogtastic
+|-damage|p2a: Frogtastic|0 fnt
+|faint|p2a: Frogtastic
+|
+|
+|switch|p2a: Krook it up|Krookodile, F|331\/331
+|turn|11
+|
+|move|p1a: Slurpuff|Drain Punch|p2a: Krook it up
+|-supereffective|p2a: Krook it up
+|-damage|p2a: Krook it up|0 fnt
+|-heal|p1a: Slurpuff|316\/316|[from] drain|[of] p2a: Krook it up
+|faint|p2a: Krook it up
+|
+|-sideend|p1: BellyDrumZohan|move: Light Screen
+|-message|JohnOrigins forfeited.
+|leave|JohnOrigins
+|
+|win|BellyDrumZohan
+|raw|Ladder updating...
+|player|p2
+|raw|BellyDrumZohan's rating: 1552 &rarr; <strong>1569<\/strong><br \/>(+17 for winning)
+|raw|JohnOrigins's rating: 1502 &rarr; <strong>1485<\/strong><br \/>(-17 for losing)

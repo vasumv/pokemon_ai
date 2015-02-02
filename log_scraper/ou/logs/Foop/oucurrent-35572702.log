@@ -1,0 +1,101 @@
+|join|treyzon81
+|join|Foop
+|player|p1|treyzon81|101
+|player|p2|Foop|2
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Kyurem-Black
+|poke|p1|Victini
+|poke|p1|Abomasnow, F
+|poke|p1|Alakazam, F
+|poke|p1|Starmie
+|poke|p1|Landorus-Therian, M
+|poke|p2|Tyranitar, F
+|poke|p2|Landorus, M
+|poke|p2|Garchomp, M
+|poke|p2|Jirachi
+|poke|p2|Keldeo
+|poke|p2|Latios, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Victini|Victini|341\/341
+|switch|p2a: Dakuwaqa|Garchomp, M|358\/358
+|turn|1
+|callback|decision
+|
+|move|p2a: Dakuwaqa|Stealth Rock|p1a: Victini
+|-sidestart|p1: treyzon81|move: Stealth Rock
+|move|p1a: Victini|U-turn|p2a: Dakuwaqa
+|-damage|p2a: Dakuwaqa|250\/358
+|-damage|p1a: Victini|299\/341|[from] ability: Rough Skin|[of] p2a: Dakuwaqa
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|382\/382
+|-damage|p1a: Landorus-Therian|335\/382|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Dakuwaqa
+|-unboost|p2a: Dakuwaqa|atk|1
+|
+|-heal|p1a: Landorus-Therian|358\/382|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p2a: Dionysus|Latios, M|301\/301
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Dionysus
+|-sidestart|p2: Foop|move: Stealth Rock
+|
+|-heal|p1a: Landorus-Therian|381\/382|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p1a: Victini|Victini|299\/341
+|-damage|p1a: Victini|214\/341|[from] Stealth Rock
+|move|p2a: Dionysus|Draco Meteor|p1a: Victini
+|-damage|p1a: Victini|0 fnt
+|-unboost|p2a: Dionysus|spa|2
+|faint|p1a: Victini
+|
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie|262\/262
+|-damage|p1a: Starmie|230\/262|[from] Stealth Rock
+|turn|4
+|callback|decision
+|
+|move|p1a: Starmie|Surf|p2a: Dionysus
+|-resisted|p2a: Dionysus
+|-damage|p2a: Dionysus|235\/301
+|move|p2a: Dionysus|Draco Meteor|p1a: Starmie
+|-damage|p1a: Starmie|13\/262
+|-unboost|p2a: Dionysus|spa|2
+|
+|-heal|p1a: Starmie|29\/262|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p2a: Dakuwaqa|Garchomp, M|250\/358
+|-damage|p2a: Dakuwaqa|228\/358|[from] Stealth Rock
+|move|p1a: Starmie|Rapid Spin|p2a: Dakuwaqa
+|-damage|p2a: Dakuwaqa|215\/358
+|-damage|p1a: Starmie|0 fnt|[from] ability: Rough Skin|[of] p2a: Dakuwaqa
+|faint|p1a: Starmie
+|
+|callback|decision
+|-message|treyzon81 forfeited.
+|
+|win|Foop
+|raw|Ladder updating...
+|raw|treyzon81's rating: 1923 &rarr; <strong>1911<\/strong><br \/>(-12 for losing)
+|raw|Foop's rating: 1937 &rarr; <strong>1947<\/strong><br \/>(+10 for winning)
+|leave|treyzon81
+|player|p1

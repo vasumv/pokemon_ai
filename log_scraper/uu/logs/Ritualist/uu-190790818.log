@@ -1,0 +1,537 @@
+|join|Ritualist
+|join|DeerayYoDaddy
+|player|p1|Ritualist|205
+|player|p2|DeerayYoDaddy|170
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Donphan, M
+|poke|p1|Blissey, F, shiny
+|poke|p1|Cloyster, M, shiny
+|poke|p1|Whimsicott, F
+|poke|p1|Shuckle, M
+|poke|p1|Jirachi
+|poke|p2|Milotic, F
+|poke|p2|Sceptile, F
+|poke|p2|Jirachi
+|poke|p2|Rotom-Heat
+|poke|p2|Krookodile, F
+|poke|p2|Flygon, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Magician|Jirachi|342\/342
+|switch|p2a: Krookodile|Krookodile, F|331\/331
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Magician
+|-unboost|p1a: Magician|atk|1
+|turn|1
+|
+|move|p1a: Magician|U-turn|p2a: Krookodile
+|-supereffective|p2a: Krookodile
+|-damage|p2a: Krookodile|219\/331
+|
+|switch|p1a: Assassin|Whimsicott, F|230\/230
+|move|p2a: Krookodile|Knock Off|p1a: Assassin
+|-resisted|p1a: Assassin
+|-damage|p1a: Assassin|119\/230
+|-enditem|p1a: Assassin|Leftovers|[from] move: Knock Off|[of] p2a: Krookodile
+|
+|turn|2
+|
+|switch|p2a: TheOven|Rotom-Heat|243\/243
+|move|p1a: Assassin|Leech Seed|p2a: TheOven|[miss]
+|-miss|p1a: Assassin|p2a: TheOven
+|
+|turn|3
+|
+|move|p1a: Assassin|Substitute|p1a: Assassin
+|-start|p1a: Assassin|Substitute
+|-damage|p1a: Assassin|62\/230
+|move|p2a: TheOven|Volt Switch|p1a: Assassin
+|-resisted|p1a: Assassin
+|-activate|p1a: Assassin|Substitute|[damage]
+|
+|switch|p2a: Flygon|Flygon, F|301\/301
+|
+|turn|4
+|
+|move|p1a: Assassin|Toxic|p2a: Flygon
+|-status|p2a: Flygon|tox
+|move|p2a: Flygon|U-turn|p1a: Assassin
+|-end|p1a: Assassin|Substitute
+|
+|switch|p2a: Sceptile|Sceptile, F|282\/282
+|
+|turn|5
+|
+|switch|p1a: Healer|Blissey, F, shiny|714\/714
+|move|p2a: Sceptile|Hidden Power|p1a: Healer
+|-damage|p1a: Healer|676\/714
+|
+|-heal|p1a: Healer|714\/714|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: Krookodile|Krookodile, F|219\/331
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Healer
+|-unboost|p1a: Healer|atk|1
+|move|p1a: Healer|Wish|p1a: Healer
+|
+|turn|7
+|
+|switch|p1a: Warrior|Donphan, M|381\/381
+|move|p2a: Krookodile|Earthquake|p1a: Warrior
+|-crit|p1a: Warrior
+|-damage|p1a: Warrior|152\/381
+|
+|-heal|p1a: Warrior|381\/381|[from] move: Wish|[wisher] Healer
+|turn|8
+|
+|switch|p2a: Milotic|Milotic, F|394\/394
+|move|p1a: Warrior|Knock Off|p2a: Milotic
+|-crit|p2a: Milotic
+|-damage|p2a: Milotic|273\/394
+|-enditem|p2a: Milotic|Leftovers|[from] move: Knock Off|[of] p1a: Warrior
+|
+|turn|9
+|
+|switch|p1a: Healer|Blissey, F, shiny|714\/714
+|move|p2a: Milotic|Toxic|p1a: Healer
+|-status|p1a: Healer|tox
+|
+|-damage|p1a: Healer|670\/714 tox|[from] psn
+|turn|10
+|
+|move|p1a: Healer|Wish|p1a: Healer
+|move|p2a: Milotic|Dragon Tail|p1a: Healer
+|-damage|p1a: Healer|532\/714 tox
+|drag|p1a: Warrior|Donphan, M|381\/381
+|
+|turn|11
+|
+|switch|p1a: Assassin|Whimsicott, F|62\/230
+|move|p2a: Milotic|Dragon Tail|p1a: Assassin
+|-immune|p1a: Assassin|[msg]
+|
+|-heal|p1a: Assassin|230\/230|[from] move: Wish|[wisher] Healer
+|turn|12
+|
+|switch|p2a: StarLight|Jirachi|404\/404
+|move|p1a: Assassin|Encore|p2a: StarLight
+|-fail|p2a: StarLight
+|
+|turn|13
+|
+|move|p1a: Assassin|Substitute|p1a: Assassin
+|-start|p1a: Assassin|Substitute
+|-damage|p1a: Assassin|173\/230
+|move|p2a: StarLight|Iron Head|p1a: Assassin
+|-supereffective|p1a: Assassin
+|-end|p1a: Assassin|Substitute
+|
+|turn|14
+|
+|switch|p1a: Magician|Jirachi|342\/342
+|move|p2a: StarLight|U-turn|p1a: Magician
+|-damage|p1a: Magician|287\/342
+|
+|switch|p2a: TheOven|Rotom-Heat|243\/243
+|
+|-heal|p1a: Magician|308\/342|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Magician|U-turn|p2a: TheOven
+|-resisted|p2a: TheOven
+|-damage|p2a: TheOven|213\/243
+|
+|switch|p1a: Healer|Blissey, F, shiny|532\/714
+|move|p2a: TheOven|Volt Switch|p1a: Healer
+|-damage|p1a: Healer|460\/714
+|
+|switch|p2a: Krookodile|Krookodile, F|219\/331
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Healer
+|-unboost|p1a: Healer|atk|1
+|
+|-heal|p1a: Healer|504\/714|[from] item: Leftovers
+|turn|16
+|
+|move|p1a: Healer|Protect|p1a: Healer
+|-singleturn|p1a: Healer|Protect
+|move|p2a: Krookodile|Knock Off|p1a: Healer
+|-activate|p1a: Healer|Protect
+|
+|-heal|p1a: Healer|548\/714|[from] item: Leftovers
+|turn|17
+|
+|switch|p2a: TheOven|Rotom-Heat|213\/243
+|switch|p1a: Assassin|Whimsicott, F|173\/230
+|
+|-heal|p2a: TheOven|228\/243|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Assassin|Substitute|p1a: Assassin
+|-start|p1a: Assassin|Substitute
+|-damage|p1a: Assassin|116\/230
+|move|p2a: TheOven|Overheat|p1a: Assassin
+|-supereffective|p1a: Assassin
+|-end|p1a: Assassin|Substitute
+|-unboost|p2a: TheOven|spa|2
+|
+|-heal|p2a: TheOven|243\/243|[from] item: Leftovers
+|turn|19
+|
+|move|p1a: Assassin|Leech Seed|p2a: TheOven
+|-start|p2a: TheOven|move: Leech Seed
+|move|p2a: TheOven|Overheat|p1a: Assassin
+|-supereffective|p1a: Assassin
+|-damage|p1a: Assassin|0 fnt
+|-unboost|p2a: TheOven|spa|2
+|faint|p1a: Assassin
+|
+|
+|switch|p1a: Ranger|Cloyster, M, shiny|241\/241
+|turn|20
+|
+|move|p2a: TheOven|Volt Switch|p1a: Ranger
+|-supereffective|p1a: Ranger
+|-damage|p1a: Ranger|85\/241
+|
+|switch|p2a: StarLight|Jirachi|404\/404
+|move|p1a: Ranger|Substitute|p1a: Ranger
+|-start|p1a: Ranger|Substitute
+|-damage|p1a: Ranger|25\/241
+|
+|turn|21
+|
+|move|p1a: Ranger|Shell Smash|p1a: Ranger
+|-boost|p1a: Ranger|atk|2
+|-boost|p1a: Ranger|spa|2
+|-boost|p1a: Ranger|spe|2
+|-unboost|p1a: Ranger|def|1
+|-unboost|p1a: Ranger|spd|1
+|move|p2a: StarLight|Iron Head|p1a: Ranger
+|-crit|p1a: Ranger
+|-end|p1a: Ranger|Substitute
+|
+|turn|22
+|
+|move|p1a: Ranger|Icicle Spear|p2a: StarLight
+|-resisted|p2a: StarLight
+|-damage|p2a: StarLight|374\/404
+|-resisted|p2a: StarLight
+|-damage|p2a: StarLight|347\/404
+|-resisted|p2a: StarLight
+|-damage|p2a: StarLight|319\/404
+|-resisted|p2a: StarLight
+|-damage|p2a: StarLight|292\/404
+|-resisted|p2a: StarLight
+|-damage|p2a: StarLight|262\/404
+|-hitcount|p2a: StarLight|5
+|cant|p2a: StarLight|flinch
+|
+|-heal|p2a: StarLight|287\/404|[from] item: Leftovers
+|turn|23
+|
+|move|p1a: Ranger|Icicle Spear|p2a: StarLight
+|-resisted|p2a: StarLight
+|-damage|p2a: StarLight|258\/404
+|-resisted|p2a: StarLight
+|-damage|p2a: StarLight|231\/404
+|-resisted|p2a: StarLight
+|-damage|p2a: StarLight|204\/404
+|-resisted|p2a: StarLight
+|-damage|p2a: StarLight|177\/404
+|-resisted|p2a: StarLight
+|-damage|p2a: StarLight|148\/404
+|-hitcount|p2a: StarLight|5
+|move|p2a: StarLight|U-turn|p1a: Ranger
+|-damage|p1a: Ranger|0 fnt
+|faint|p1a: Ranger
+|
+|switch|p2a: Flygon|Flygon, F|301\/301 tox
+|
+|-damage|p2a: Flygon|283\/301 tox|[from] psn
+|
+|switch|p1a: Magician|Jirachi|308\/342
+|turn|24
+|
+|move|p2a: Flygon|Earthquake|p1a: Magician
+|-supereffective|p1a: Magician
+|-damage|p1a: Magician|6\/342
+|move|p1a: Magician|Stealth Rock|p2a: Flygon
+|-sidestart|p2: DeerayYoDaddy|move: Stealth Rock
+|
+|-heal|p1a: Magician|27\/342|[from] item: Leftovers
+|-damage|p2a: Flygon|247\/301 tox|[from] psn
+|turn|25
+|
+|move|p2a: Flygon|Earthquake|p1a: Magician
+|-supereffective|p1a: Magician
+|-damage|p1a: Magician|0 fnt
+|faint|p1a: Magician
+|
+|-damage|p2a: Flygon|193\/301 tox|[from] psn
+|
+|switch|p1a: Defender|Shuckle, M|244\/244
+|turn|26
+|
+|switch|p2a: StarLight|Jirachi|148\/404
+|-damage|p2a: StarLight|123\/404|[from] Stealth Rock
+|move|p1a: Defender|Shell Smash|p1a: Defender
+|-unboost|p1a: Defender|atk|2
+|-unboost|p1a: Defender|spa|2
+|-unboost|p1a: Defender|spe|2
+|-boost|p1a: Defender|def|1
+|-boost|p1a: Defender|spd|1
+|
+|-heal|p2a: StarLight|148\/404|[from] item: Leftovers
+|turn|27
+|
+|move|p2a: StarLight|Iron Head|p1a: Defender
+|-supereffective|p1a: Defender
+|-damage|p1a: Defender|194\/244
+|cant|p1a: Defender|flinch
+|
+|-heal|p2a: StarLight|173\/404|[from] item: Leftovers
+|-heal|p1a: Defender|209\/244|[from] item: Leftovers
+|turn|28
+|
+|move|p2a: StarLight|Iron Head|p1a: Defender
+|-supereffective|p1a: Defender
+|-damage|p1a: Defender|155\/244
+|cant|p1a: Defender|flinch
+|
+|-heal|p2a: StarLight|198\/404|[from] item: Leftovers
+|-heal|p1a: Defender|170\/244|[from] item: Leftovers
+|turn|29
+|
+|move|p2a: StarLight|Iron Head|p1a: Defender
+|-supereffective|p1a: Defender
+|-damage|p1a: Defender|120\/244
+|move|p1a: Defender|Infestation|p2a: StarLight
+|-damage|p2a: StarLight|195\/404
+|-activate|p2a: StarLight|move: Infestation|[of] p1a: Defender
+|
+|-heal|p2a: StarLight|220\/404|[from] item: Leftovers
+|-heal|p1a: Defender|135\/244|[from] item: Leftovers
+|-damage|p2a: StarLight|170\/404|[from] move: Infestation|[partiallytrapped]
+|turn|30
+|
+|move|p2a: StarLight|U-turn|p1a: Defender
+|-damage|p1a: Defender|119\/244
+|
+|switch|p2a: Milotic|Milotic, F|273\/394
+|-damage|p2a: Milotic|224\/394|[from] Stealth Rock
+|move|p1a: Defender|Shell Smash|p1a: Defender
+|-unboost|p1a: Defender|atk|2
+|-unboost|p1a: Defender|spa|2
+|-unboost|p1a: Defender|spe|2
+|-boost|p1a: Defender|def|1
+|-boost|p1a: Defender|spd|1
+|
+|-heal|p1a: Defender|134\/244|[from] item: Leftovers
+|turn|31
+|
+|move|p1a: Defender|Toxic|p2a: Milotic
+|-status|p2a: Milotic|tox
+|move|p2a: Milotic|Dragon Tail|p1a: Defender
+|-damage|p1a: Defender|127\/244
+|drag|p1a: Healer|Blissey, F, shiny|548\/714
+|
+|-heal|p1a: Healer|592\/714|[from] item: Leftovers
+|-damage|p2a: Milotic|200\/394 tox|[from] psn
+|turn|32
+|
+|move|p2a: Milotic|Recover|p2a: Milotic
+|-heal|p2a: Milotic|394\/394 tox
+|move|p1a: Healer|Wish|p1a: Healer
+|
+|-heal|p1a: Healer|636\/714|[from] item: Leftovers
+|-damage|p2a: Milotic|346\/394 tox|[from] psn
+|turn|33
+|
+|move|p2a: Milotic|Scald|p1a: Healer
+|-damage|p1a: Healer|582\/714
+|move|p1a: Healer|Seismic Toss|p2a: Milotic
+|-damage|p2a: Milotic|246\/394 tox
+|
+|-heal|p1a: Healer|714\/714|[from] move: Wish|[wisher] Healer
+|-damage|p2a: Milotic|174\/394 tox|[from] psn
+|turn|34
+|
+|switch|p2a: Krookodile|Krookodile, F|219\/331
+|-damage|p2a: Krookodile|199\/331|[from] Stealth Rock
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Healer
+|-unboost|p1a: Healer|atk|1
+|move|p1a: Healer|Seismic Toss|p2a: Krookodile
+|-damage|p2a: Krookodile|99\/331
+|
+|turn|35
+|
+|switch|p1a: Warrior|Donphan, M|381\/381
+|move|p2a: Krookodile|Knock Off|p1a: Warrior
+|-damage|p1a: Warrior|228\/381
+|-enditem|p1a: Warrior|Leftovers|[from] move: Knock Off|[of] p2a: Krookodile
+|
+|turn|36
+|
+|switch|p2a: Sceptile|Sceptile, F|282\/282
+|-damage|p2a: Sceptile|247\/282|[from] Stealth Rock
+|move|p1a: Warrior|Knock Off|p2a: Sceptile
+|-damage|p2a: Sceptile|162\/282
+|
+|turn|37
+|
+|switch|p2a: Krookodile|Krookodile, F|99\/331
+|-damage|p2a: Krookodile|79\/331|[from] Stealth Rock
+|-ability|p2a: Krookodile|Intimidate|[of] p1a: Warrior
+|-unboost|p1a: Warrior|atk|1
+|switch|p1a: Healer|Blissey, F, shiny|714\/714
+|
+|turn|38
+|
+|move|p1a: Healer|Protect|p1a: Healer
+|-singleturn|p1a: Healer|Protect
+|move|p2a: Krookodile|Earthquake|p1a: Healer
+|-activate|p1a: Healer|Protect
+|
+|turn|39
+|
+|move|p2a: Krookodile|Earthquake|p1a: Healer
+|-damage|p1a: Healer|0 fnt
+|faint|p1a: Healer
+|
+|
+|switch|p1a: Warrior|Donphan, M|228\/381
+|turn|40
+|
+|move|p2a: Krookodile|Earthquake|p1a: Warrior
+|-damage|p1a: Warrior|60\/381
+|move|p1a: Warrior|Knock Off|p2a: Krookodile
+|-resisted|p2a: Krookodile
+|-damage|p2a: Krookodile|22\/331
+|-enditem|p2a: Krookodile|Choice Band|[from] move: Knock Off|[of] p1a: Warrior
+|
+|turn|41
+|
+|move|p2a: Krookodile|Earthquake|p1a: Warrior
+|-damage|p1a: Warrior|0 fnt
+|faint|p1a: Warrior
+|
+|
+|switch|p1a: Defender|Shuckle, M|127\/244
+|turn|42
+|
+|move|p2a: Krookodile|Stone Edge|p1a: Defender
+|-supereffective|p1a: Defender
+|-damage|p1a: Defender|47\/244
+|move|p1a: Defender|Shell Smash|p1a: Defender
+|-unboost|p1a: Defender|atk|2
+|-unboost|p1a: Defender|spa|2
+|-unboost|p1a: Defender|spe|2
+|-boost|p1a: Defender|def|1
+|-boost|p1a: Defender|spd|1
+|
+|-heal|p1a: Defender|62\/244|[from] item: Leftovers
+|turn|43
+|
+|move|p2a: Krookodile|Knock Off|p1a: Defender
+|-damage|p1a: Defender|23\/244
+|-enditem|p1a: Defender|Leftovers|[from] move: Knock Off|[of] p2a: Krookodile
+|move|p1a: Defender|Rest|p1a: Defender
+|-status|p1a: Defender|slp
+|-heal|p1a: Defender|244\/244 slp|[silent]
+|-status|p1a: Defender|slp|[from] move: Rest
+|
+|turn|44
+|
+|move|p2a: Krookodile|Stone Edge|p1a: Defender
+|-supereffective|p1a: Defender
+|-damage|p1a: Defender|184\/244 slp
+|cant|p1a: Defender|slp
+|
+|turn|45
+|
+|move|p2a: Krookodile|Stone Edge|p1a: Defender
+|-supereffective|p1a: Defender
+|-damage|p1a: Defender|126\/244 slp
+|cant|p1a: Defender|slp
+|
+|turn|46
+|
+|move|p2a: Krookodile|Stone Edge|p1a: Defender
+|-supereffective|p1a: Defender
+|-damage|p1a: Defender|62\/244 slp
+|-curestatus|p1a: Defender|slp
+|move|p1a: Defender|Shell Smash|p1a: Defender
+|-unboost|p1a: Defender|atk|2
+|-unboost|p1a: Defender|spa|2
+|-unboost|p1a: Defender|spe|2
+|-boost|p1a: Defender|def|1
+|-boost|p1a: Defender|spd|1
+|
+|turn|47
+|
+|move|p2a: Krookodile|Stone Edge|p1a: Defender|[miss]
+|-miss|p2a: Krookodile|p1a: Defender
+|move|p1a: Defender|Rest|p1a: Defender
+|-status|p1a: Defender|slp
+|-heal|p1a: Defender|244\/244 slp|[silent]
+|-status|p1a: Defender|slp|[from] move: Rest
+|
+|turn|48
+|
+|switch|p2a: Sceptile|Sceptile, F|162\/282
+|-damage|p2a: Sceptile|127\/282|[from] Stealth Rock
+|cant|p1a: Defender|slp
+|
+|turn|49
+|
+|move|p2a: Sceptile|Substitute|p2a: Sceptile
+|-start|p2a: Sceptile|Substitute
+|-damage|p2a: Sceptile|57\/282
+|cant|p1a: Defender|slp
+|
+|turn|50
+|
+|detailschange|p2a: Sceptile|Sceptile-Mega, F
+|message|Sceptile has Mega Evolved into Mega Sceptile!
+|move|p2a: Sceptile|Giga Drain|p1a: Defender
+|-damage|p1a: Defender|210\/244 slp
+|-heal|p2a: Sceptile|74\/282|[from] drain|[of] p1a: Defender
+|-curestatus|p1a: Defender|slp
+|move|p1a: Defender|Infestation|p2a: Sceptile
+|-supereffective|p2a: Sceptile
+|-activate|p2a: Sceptile|Substitute|[damage]
+|
+|turn|51
+|
+|move|p2a: Sceptile|Giga Drain|p1a: Defender
+|-damage|p1a: Defender|171\/244
+|-heal|p2a: Sceptile|94\/282|[from] drain|[of] p1a: Defender
+|move|p1a: Defender|Shell Smash|p1a: Defender
+|-unboost|p1a: Defender|atk|2
+|-unboost|p1a: Defender|spa|2
+|-unboost|p1a: Defender|spe|2
+|-boost|p1a: Defender|def|1
+|-boost|p1a: Defender|spd|1
+|
+|turn|52
+|-message|Ritualist forfeited.
+|
+|win|DeerayYoDaddy
+|raw|Ladder updating...
+|raw|Ritualist's rating: 1191 &rarr; <strong>1166<\/strong><br \/>(-25 for losing)
+|raw|DeerayYoDaddy's rating: 1198 &rarr; <strong>1222<\/strong><br \/>(+24 for winning)
+|leave|Ritualist
+|player|p1

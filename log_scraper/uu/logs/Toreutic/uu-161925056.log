@@ -1,0 +1,344 @@
+|join|Toreutic
+|join|TheNorthVeil
+|player|p1|Toreutic|126
+|player|p2|TheNorthVeil|267
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Porygon-Z
+|poke|p1|Florges, F
+|poke|p1|Hydreigon, M
+|poke|p1|Swampert, F
+|poke|p1|Crobat, M
+|poke|p1|Banette, F
+|poke|p2|Nidoqueen, F, shiny
+|poke|p2|Blastoise, M
+|poke|p2|Victini, shiny
+|poke|p2|Hydreigon, F, shiny
+|poke|p2|Roserade, M, shiny
+|poke|p2|Jirachi, shiny
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Hydreigon|Hydreigon, M|325\/325
+|switch|p2a: Jirachi|Jirachi, shiny|341\/341
+|turn|1
+|
+|move|p2a: Jirachi|U-turn|p1a: Hydreigon
+|-supereffective|p1a: Hydreigon
+|-damage|p1a: Hydreigon|165\/325
+|
+|switch|p2a: Roserade|Roserade, M, shiny|323\/323
+|move|p1a: Hydreigon|Fire Blast|p2a: Roserade
+|-supereffective|p2a: Roserade
+|-damage|p2a: Roserade|137\/323
+|
+|-heal|p2a: Roserade|157\/323|[from] item: Black Sludge
+|turn|2
+|
+|switch|p1a: Porygon-Z|Porygon-Z|312\/312
+|switch|p2a: Hydreigon|Hydreigon, F, shiny|325\/325
+|
+|turn|3
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Hydreigon|U-turn|p1a: Florges
+|-resisted|p1a: Florges
+|-damage|p1a: Florges|323\/360
+|
+|switch|p2a: Victini|Victini, shiny|341\/341
+|
+|-heal|p1a: Florges|345\/360|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Swampert|Swampert, F|404\/404
+|move|p2a: Victini|U-turn|p1a: Swampert
+|-damage|p1a: Swampert|321\/404
+|-damage|p2a: Victini|285\/341|[from] item: Rocky Helmet|[of] p1a: Swampert
+|
+|switch|p2a: Roserade|Roserade, M, shiny|157\/323
+|
+|-heal|p2a: Roserade|177\/323|[from] item: Black Sludge
+|turn|5
+|
+|switch|p1a: Crobat|Crobat, M|311\/311
+|move|p2a: Roserade|Sleep Powder|p1a: Crobat
+|-status|p1a: Crobat|slp
+|
+|-heal|p2a: Roserade|197\/323|[from] item: Black Sludge
+|turn|6
+|
+|switch|p2a: Blastoise|Blastoise, M|334\/334
+|cant|p1a: Crobat|slp
+|
+|turn|7
+|
+|switch|p1a: Florges|Florges, F|345\/360
+|detailschange|p2a: Blastoise|Blastoise-Mega, M
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Blastoise|Scald|p1a: Florges
+|-damage|p1a: Florges|258\/360
+|
+|-heal|p1a: Florges|280\/360|[from] item: Leftovers
+|turn|8
+|
+|switch|p2a: Jirachi|Jirachi, shiny|341\/341
+|move|p1a: Florges|Moonblast|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|278\/341
+|
+|-heal|p1a: Florges|302\/360|[from] item: Leftovers
+|turn|9
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Jirachi|Trick|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-heal|p1a: Florges|324\/360|[from] item: Leftovers
+|turn|10
+|
+|switch|p2a: Hydreigon|Hydreigon, F, shiny|325\/325
+|switch|p1a: Hydreigon|Hydreigon, M|165\/325
+|
+|turn|11
+|
+|move|p1a: Hydreigon|U-turn|p2a: Hydreigon
+|-supereffective|p2a: Hydreigon
+|-damage|p2a: Hydreigon|195\/325
+|
+|switch|p1a: Florges|Florges, F|324\/360
+|move|p2a: Hydreigon|U-turn|p1a: Florges
+|-resisted|p1a: Florges
+|-damage|p1a: Florges|285\/360
+|
+|switch|p2a: Victini|Victini, shiny|285\/341
+|
+|-heal|p1a: Florges|307\/360|[from] item: Leftovers
+|turn|12
+|
+|switch|p2a: Nidoqueen|Nidoqueen, F, shiny|353\/353
+|move|p1a: Florges|Protect|p1a: Florges
+|-fail|p1a: Florges
+|
+|-heal|p1a: Florges|329\/360|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: Crobat|Crobat, M|311\/311 slp
+|move|p2a: Nidoqueen|Stealth Rock|p1a: Crobat
+|-sidestart|p1: Toreutic|move: Stealth Rock
+|
+|turn|14
+|
+|switch|p1a: Hydreigon|Hydreigon, M|165\/325
+|-damage|p1a: Hydreigon|125\/325|[from] Stealth Rock
+|move|p2a: Nidoqueen|Ice Beam|p1a: Hydreigon
+|-supereffective|p1a: Hydreigon
+|-damage|p1a: Hydreigon|0 fnt
+|faint|p1a: Hydreigon
+|
+|
+|switch|p1a: Porygon-Z|Porygon-Z|312\/312
+|-damage|p1a: Porygon-Z|273\/312|[from] Stealth Rock
+|turn|15
+|
+|switch|p2a: Jirachi|Jirachi, shiny|278\/341
+|move|p1a: Porygon-Z|Tri Attack|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|113\/341
+|-status|p2a: Jirachi|brn
+|
+|-damage|p2a: Jirachi|71\/341 brn|[from] brn
+|turn|16
+|
+|switch|p1a: Crobat|Crobat, M|311\/311 slp
+|-damage|p1a: Crobat|234\/311 slp|[from] Stealth Rock
+|move|p2a: Jirachi|U-turn|p1a: Crobat
+|-resisted|p1a: Crobat
+|-damage|p1a: Crobat|225\/311 slp
+|
+|switch|p2a: Hydreigon|Hydreigon, F, shiny|195\/325
+|
+|-heal|p1a: Crobat|244\/311 slp|[from] item: Black Sludge
+|turn|17
+|
+|move|p2a: Hydreigon|Draco Meteor|p1a: Crobat
+|-damage|p1a: Crobat|0 fnt
+|-unboost|p2a: Hydreigon|spa|2
+|faint|p1a: Crobat
+|
+|
+|switch|p1a: Porygon-Z|Porygon-Z|273\/312
+|-damage|p1a: Porygon-Z|234\/312|[from] Stealth Rock
+|turn|18
+|
+|switch|p2a: Jirachi|Jirachi, shiny|71\/341 brn
+|move|p1a: Porygon-Z|Tri Attack|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|faint|p2a: Jirachi
+|
+|
+|switch|p2a: Victini|Victini, shiny|285\/341
+|turn|19
+|
+|switch|p1a: Swampert|Swampert, F|321\/404
+|-damage|p1a: Swampert|296\/404|[from] Stealth Rock
+|move|p2a: Victini|U-turn|p1a: Swampert
+|-damage|p1a: Swampert|216\/404
+|-damage|p2a: Victini|229\/341|[from] item: Rocky Helmet|[of] p1a: Swampert
+|
+|switch|p2a: Roserade|Roserade, M, shiny|197\/323
+|
+|-heal|p2a: Roserade|217\/323|[from] item: Black Sludge
+|turn|20
+|
+|move|p2a: Roserade|Sleep Powder|p1a: Swampert
+|-status|p1a: Swampert|slp
+|cant|p1a: Swampert|slp
+|
+|-heal|p2a: Roserade|237\/323|[from] item: Black Sludge
+|turn|21
+|
+|move|p2a: Roserade|Spikes|p1a: Swampert
+|-sidestart|p1: Toreutic|Spikes
+|cant|p1a: Swampert|slp
+|
+|-heal|p2a: Roserade|257\/323|[from] item: Black Sludge
+|turn|22
+|
+|move|p2a: Roserade|Sludge Bomb|p1a: Swampert
+|-resisted|p1a: Swampert
+|-damage|p1a: Swampert|137\/404 slp
+|-curestatus|p1a: Swampert|slp
+|move|p1a: Swampert|Stealth Rock|p2a: Roserade
+|-sidestart|p2: TheNorthVeil|move: Stealth Rock
+|
+|-heal|p2a: Roserade|277\/323|[from] item: Black Sludge
+|turn|23
+|
+|move|p2a: Roserade|Giga Drain|p1a: Swampert
+|-supereffective|p1a: Swampert
+|-damage|p1a: Swampert|0 fnt
+|-heal|p2a: Roserade|323\/323|[from] drain|[of] p1a: Swampert
+|faint|p1a: Swampert
+|
+|
+|switch|p1a: Porygon-Z|Porygon-Z|234\/312
+|-damage|p1a: Porygon-Z|195\/312|[from] Stealth Rock
+|-damage|p1a: Porygon-Z|156\/312|[from] Spikes
+|turn|24
+|
+|move|p1a: Porygon-Z|Tri Attack|p2a: Roserade
+|-damage|p2a: Roserade|65\/323
+|move|p2a: Roserade|Sludge Bomb|p1a: Porygon-Z
+|-damage|p1a: Porygon-Z|0 fnt
+|faint|p1a: Porygon-Z
+|
+|-heal|p2a: Roserade|85\/323|[from] item: Black Sludge
+|
+|switch|p1a: Banette|Banette, F|332\/332
+|-damage|p1a: Banette|291\/332|[from] Spikes
+|-damage|p1a: Banette|250\/332|[from] Stealth Rock
+|turn|25
+|
+|detailschange|p1a: Banette|Banette-Mega, F
+|message|Banette has Mega Evolved into Mega Banette!
+|move|p1a: Banette|Shadow Sneak|p2a: Roserade
+|-damage|p2a: Roserade|0 fnt
+|faint|p2a: Roserade
+|
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|334\/334
+|-damage|p2a: Blastoise|293\/334|[from] Stealth Rock
+|turn|26
+|
+|switch|p1a: Florges|Florges, F|329\/360
+|-damage|p1a: Florges|284\/360|[from] Stealth Rock
+|-damage|p1a: Florges|239\/360|[from] Spikes
+|move|p2a: Blastoise|Dark Pulse|p1a: Florges
+|-resisted|p1a: Florges
+|-damage|p1a: Florges|196\/360
+|
+|-heal|p1a: Florges|218\/360|[from] item: Leftovers
+|turn|27
+|
+|move|p2a: Blastoise|Rapid Spin|p1a: Florges
+|-damage|p1a: Florges|199\/360
+|-sideend|p2: TheNorthVeil|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Blastoise
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p1a: Florges|221\/360|[from] item: Leftovers
+|turn|28
+|
+|switch|p2a: Hydreigon|Hydreigon, F, shiny|195\/325
+|move|p1a: Florges|Moonblast|p2a: Hydreigon
+|-crit|p2a: Hydreigon
+|-supereffective|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|faint|p2a: Hydreigon
+|
+|-heal|p1a: Florges|360\/360|[from] move: Wish|[wisher] Florges
+|
+|switch|p2a: Victini|Victini, shiny|229\/341
+|turn|29
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Victini|V-create|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|turn|30
+|join|Rune Knight Matt
+|
+|move|p2a: Victini|V-create|p1a: Florges
+|-damage|p1a: Florges|0 fnt
+|-unboost|p2a: Victini|def|1
+|-unboost|p2a: Victini|spd|1
+|-unboost|p2a: Victini|spe|1
+|faint|p1a: Florges
+|
+|
+|switch|p1a: Banette|Banette-Mega, F|250\/332
+|-damage|p1a: Banette|209\/332|[from] Spikes
+|-damage|p1a: Banette|168\/332|[from] Stealth Rock
+|turn|31
+|
+|move|p1a: Banette|Shadow Sneak|p2a: Victini
+|-supereffective|p2a: Victini
+|-damage|p2a: Victini|0 fnt
+|faint|p2a: Victini
+|
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|293\/334
+|turn|32
+|
+|move|p1a: Banette|Destiny Bond|p1a: Banette
+|-singlemove|p1a: Banette|Destiny Bond
+|move|p2a: Blastoise|Dark Pulse|p1a: Banette
+|-supereffective|p1a: Banette
+|-damage|p1a: Banette|0 fnt
+|faint|p1a: Banette
+|-activate|p1a: Banette|Destiny Bond
+|faint|p2a: Blastoise
+|
+|win|TheNorthVeil
+|raw|Ladder updating...
+|raw|Toreutic's rating: 1524 &rarr; <strong>1499<\/strong><br \/>(-25 for losing)
+|raw|TheNorthVeil's rating: 1436 &rarr; <strong>1461<\/strong><br \/>(+25 for winning)
+|c|âToreutic|gg
+|c|âTheNorthVeil|gg
+|leave|Toreutic
+|player|p1
+|leave|Rune Knight Matt

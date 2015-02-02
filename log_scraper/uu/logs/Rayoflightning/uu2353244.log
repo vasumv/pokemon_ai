@@ -1,0 +1,395 @@
+|join|Rayoflightning
+|join|Low
+|player|p1|Rayoflightning|2
+|player|p2|Low|65
+|tier|UU
+|rated
+|rule|Sleep Clause
+|rule|Species Clause
+|rule|OHKO Clause
+|rule|Evasion Clause
+|clearpoke
+|poke|p1|Porygon2
+|poke|p1|Victini
+|poke|p1|Crobat, F
+|poke|p1|Empoleon, M
+|poke|p1|Flygon, F
+|poke|p1|Hitmontop, M
+|poke|p2|Illumise, F, shiny
+|poke|p2|Rotom-Mow
+|poke|p2|Ludicolo, M
+|poke|p2|Kabutops, M
+|poke|p2|Poliwrath, M
+|poke|p2|Gorebyss, F
+|teampreview
+|callback|decision
+|join|Ragnell
+|join|Kurauna
+|
+|start
+|switch|p1: RougeTheBat|Crobat, F| (100\/100)
+|switch|p2: Illumise|Illumise, F, shiny| (100\/100)
+|turn|1
+|callback|decision
+|
+|move|p2: Illumise|Rain Dance|p2: Illumise
+|-weather|RainDance
+|move|p1: RougeTheBat|Brave Bird|p2: Illumise
+|-supereffective|p2: Illumise
+|-damage|p2: Illumise|100 (0\/100 fnt)
+|-damage|p1: RougeTheBat|36 (64\/100)|[from] recoil|[of] p2: Illumise
+|faint|p2: Illumise
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2: Kabutops|Kabutops, M| (100\/100)
+|turn|2
+|callback|decision
+|
+|switch|p1: ChillPenguin|Empoleon, M| (100\/100)
+|move|p2: Kabutops|Swords Dance|p2: Kabutops
+|-boost|p2: Kabutops|atk|2
+|
+|-weather|RainDance|[upkeep]
+|turn|3
+|callback|decision
+|
+|switch|p1: Spinnernet1|Hitmontop, M| (100\/100)
+|-ability|p1: Spinnernet1|Intimidate|[of] p2: Kabutops
+|-unboost|p2: Kabutops|atk|1
+|move|p2: Kabutops|Waterfall|p1: Spinnernet1
+|-damage|p1: Spinnernet1|100 (0\/100 fnt)
+|-damage|p2: Kabutops|10 (90\/100)|[from] item: lifeorb
+|faint|p1: Spinnernet1
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1: ChillPenguin|Empoleon, M| (100\/100)
+|turn|4
+|callback|decision
+|
+|switch|p2: Rotom-Mow|Rotom-Mow| (100\/100)
+|move|p1: ChillPenguin|Grass Knot|p2: Rotom-Mow
+|-resisted|p2: Rotom-Mow
+|-damage|p2: Rotom-Mow|2 (98\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2: Rotom-Mow|2 (100\/100)|[from] item: leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1: RatedPG2|Porygon2| (100\/100)
+|-ability|p1: RatedPG2|Levitate|[from] ability: Trace|[of] p2: Rotom-Mow
+|move|p2: Rotom-Mow|Will-O-Wisp|p1: RatedPG2
+|-status|p1: RatedPG2|brn
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1: RatedPG2|12 (88\/100 brn)|[from] brn
+|turn|6
+|callback|decision
+|
+|move|p2: Rotom-Mow|Thunder|p1: RatedPG2
+|-damage|p1: RatedPG2|29 (59\/100 brn)
+|move|p1: RatedPG2|Thunderbolt|p2: Rotom-Mow
+|-crit|p2: Rotom-Mow
+|-resisted|p2: Rotom-Mow
+|-damage|p2: Rotom-Mow|11 (89\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2: Rotom-Mow|6 (95\/100)|[from] item: leftovers
+|-damage|p1: RatedPG2|12 (47\/100 brn)|[from] brn
+|turn|7
+|callback|decision
+|
+|move|p2: Rotom-Mow|Thunder|p1: RatedPG2
+|-damage|p1: RatedPG2|26 (21\/100 brn)
+|move|p1: RatedPG2|Recover|p1: RatedPG2
+|-heal|p1: RatedPG2|50 (71\/100 brn)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2: Rotom-Mow|5 (100\/100)|[from] item: leftovers
+|-damage|p1: RatedPG2|12 (58\/100 brn)|[from] brn
+|turn|8
+|callback|decision
+|
+|switch|p2: Ludicolo|Ludicolo, M| (100\/100)
+|move|p1: RatedPG2|Recover|p1: RatedPG2
+|-heal|p1: RatedPG2|42 (100\/100 brn)
+|
+|-weather|none
+|-damage|p1: RatedPG2|12 (88\/100 brn)|[from] brn
+|turn|9
+|callback|decision
+|
+|move|p2: Ludicolo|Rain Dance|p2: Ludicolo
+|-weather|RainDance
+|move|p1: RatedPG2|Thunderbolt|p2: Ludicolo
+|-damage|p2: Ludicolo|35 (65\/100)
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1: RatedPG2|12 (75\/100 brn)|[from] brn
+|turn|10
+|callback|decision
+|
+|move|p2: Ludicolo|Hydro Pump|p1: RatedPG2
+|-damage|p1: RatedPG2|67 (9\/100 brn)
+|-damage|p2: Ludicolo|10 (55\/100)|[from] item: lifeorb
+|move|p1: RatedPG2|Recover|p1: RatedPG2
+|-heal|p1: RatedPG2|50 (59\/100 brn)
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1: RatedPG2|12 (47\/100 brn)|[from] brn
+|turn|11
+|callback|decision
+|
+|move|p2: Ludicolo|Hydro Pump|p1: RatedPG2
+|-damage|p1: RatedPG2|47 (0\/100 fnt)
+|-damage|p2: Ludicolo|10 (45\/100)|[from] item: lifeorb
+|faint|p1: RatedPG2
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1: ChillPenguin|Empoleon, M| (100\/100)
+|turn|12
+|callback|decision
+|
+|move|p2: Ludicolo|Giga Drain|p1: ChillPenguin
+|-damage|p1: ChillPenguin|31 (69\/100)
+|-heal|p2: Ludicolo|19 (64\/100)|[from] drain|[of] p1: ChillPenguin
+|-damage|p2: Ludicolo|10 (54\/100)|[from] item: lifeorb
+|move|p1: ChillPenguin|Grass Knot|p2: Ludicolo
+|-damage|p2: Ludicolo|23 (31\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1: ChillPenguin|6 (76\/100)|[from] item: leftovers
+|turn|13
+|callback|decision
+|
+|move|p2: Ludicolo|Giga Drain|p1: ChillPenguin
+|-damage|p1: ChillPenguin|28 (47\/100)
+|-heal|p2: Ludicolo|18 (49\/100)|[from] drain|[of] p1: ChillPenguin
+|-damage|p2: Ludicolo|10 (39\/100)|[from] item: lifeorb
+|move|p1: ChillPenguin|Grass Knot|p2: Ludicolo
+|-damage|p2: Ludicolo|22 (17\/100)
+|
+|-weather|none
+|-heal|p1: ChillPenguin|6 (53\/100)|[from] item: leftovers
+|turn|14
+|callback|decision
+|
+|move|p2: Ludicolo|Rain Dance|p2: Ludicolo
+|-weather|RainDance
+|move|p1: ChillPenguin|Grass Knot|p2: Ludicolo
+|-damage|p2: Ludicolo|17 (0\/100 fnt)
+|faint|p2: Ludicolo
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1: ChillPenguin|6 (60\/100)|[from] item: leftovers
+|callback|decision
+|
+|switch|p2: Poliwrath|Poliwrath, M| (100\/100)
+|turn|15
+|callback|decision
+|
+|move|p2: Poliwrath|Belly Drum|p2: Poliwrath
+|-damage|p2: Poliwrath|50 (50\/100)
+|-setboost|p2: Poliwrath|atk|6|[from] move: Belly Drum
+|move|p1: ChillPenguin|Grass Knot|p2: Poliwrath
+|-supereffective|p2: Poliwrath
+|-damage|p2: Poliwrath|45 (5\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1: ChillPenguin|6 (66\/100)|[from] item: leftovers
+|-heal|p2: Poliwrath|6 (11\/100)|[from] item: leftovers
+|turn|16
+|callback|decision
+|
+|switch|p1: CharlieSheen|Victini| (100\/100)
+|move|p2: Poliwrath|Brick Break|p1: CharlieSheen
+|-resisted|p1: CharlieSheen
+|-damage|p1: CharlieSheen|59 (41\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2: Poliwrath|6 (18\/100)|[from] item: leftovers
+|turn|17
+|callback|decision
+|
+|move|p2: Poliwrath|Waterfall|p1: CharlieSheen
+|-supereffective|p1: CharlieSheen
+|-damage|p1: CharlieSheen|41 (0\/100 fnt)
+|faint|p1: CharlieSheen
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2: Poliwrath|6 (24\/100)|[from] item: leftovers
+|callback|decision
+|
+|switch|p1: Dulcy|Flygon, F| (100\/100)
+|turn|18
+|callback|decision
+|
+|move|p1: Dulcy|Earthquake|p2: Poliwrath
+|-damage|p2: Poliwrath|24 (0\/100 fnt)
+|faint|p2: Poliwrath
+|
+|-weather|none
+|callback|decision
+|
+|switch|p2: Rotom-Mow|Rotom-Mow| (100\/100)
+|turn|19
+|callback|decision
+|
+|switch|p1: RougeTheBat|Crobat, F| (64\/100)
+|move|p2: Rotom-Mow|Will-O-Wisp|p1: RougeTheBat
+|-status|p1: RougeTheBat|brn
+|
+|-damage|p1: RougeTheBat|12 (52\/100 brn)|[from] brn
+|turn|20
+|callback|decision
+|
+|switch|p2: Kabutops|Kabutops, M| (90\/100)
+|move|p1: RougeTheBat|Cross Poison|p2: Kabutops
+|-resisted|p2: Kabutops
+|-damage|p2: Kabutops|13 (77\/100)
+|
+|-damage|p1: RougeTheBat|12 (40\/100 brn)|[from] brn
+|turn|21
+|callback|decision
+|
+|switch|p1: ChillPenguin|Empoleon, M| (66\/100)
+|move|p2: Kabutops|Stone Edge|p1: ChillPenguin
+|-resisted|p1: ChillPenguin
+|-damage|p1: ChillPenguin|35 (31\/100)
+|-damage|p2: Kabutops|10 (67\/100)|[from] item: lifeorb
+|
+|-heal|p1: ChillPenguin|6 (37\/100)|[from] item: leftovers
+|turn|22
+|callback|decision
+|
+|switch|p2: Rotom-Mow|Rotom-Mow| (100\/100)
+|move|p1: ChillPenguin|Scald|p2: Rotom-Mow
+|-resisted|p2: Rotom-Mow
+|-damage|p2: Rotom-Mow|13 (88\/100)
+|
+|-heal|p1: ChillPenguin|6 (44\/100)|[from] item: leftovers
+|-heal|p2: Rotom-Mow|6 (94\/100)|[from] item: leftovers
+|turn|23
+|callback|decision
+|
+|switch|p1: RougeTheBat|Crobat, F| (40\/100 brn)
+|move|p2: Rotom-Mow|Leaf Storm|p1: RougeTheBat
+|-resisted|p1: RougeTheBat
+|-damage|p1: RougeTheBat|17 (23\/100 brn)
+|-unboost|p2: Rotom-Mow|spa|2
+|
+|-heal|p2: Rotom-Mow|6 (100\/100)|[from] item: leftovers
+|-damage|p1: RougeTheBat|12 (10\/100 brn)|[from] brn
+|turn|24
+|callback|decision
+|
+|switch|p2: Kabutops|Kabutops, M| (67\/100)
+|move|p1: RougeTheBat|U-turn|p2: Kabutops
+|-damage|p2: Kabutops|18 (49\/100)
+|callback|decision
+|
+|switch|p1: Dulcy|Flygon, F| (100\/100)
+|
+|turn|25
+|callback|decision
+|
+|move|p2: Kabutops|Aqua Jet|p1: Dulcy
+|-damage|p1: Dulcy|38 (62\/100)
+|-damage|p2: Kabutops|10 (39\/100)|[from] item: lifeorb
+|move|p1: Dulcy|Outrage|p2: Kabutops
+|-damage|p2: Kabutops|39 (0\/100 fnt)
+|faint|p2: Kabutops
+|
+|callback|decision
+|
+|switch|p2: Rotom-Mow|Rotom-Mow| (100\/100)
+|turn|26
+|callback|decision
+|
+|move|p1: Dulcy|Outrage|p2: Rotom-Mow
+|-damage|p2: Rotom-Mow|55 (45\/100)
+|move|p2: Rotom-Mow|Will-O-Wisp|p1: Dulcy
+|-status|p1: Dulcy|brn
+|
+|-end|p1: Dulcy|rampage
+|-start|p1: Dulcy|confusion
+|-heal|p2: Rotom-Mow|6 (52\/100)|[from] item: leftovers
+|-damage|p1: Dulcy|12 (50\/100 brn)|[from] brn
+|turn|27
+|callback|decision
+|
+|switch|p1: RougeTheBat|Crobat, F| (10\/100 brn)
+|move|p2: Rotom-Mow|Thunder|p1: RougeTheBat
+|-supereffective|p1: RougeTheBat
+|-damage|p1: RougeTheBat|10 (0\/100 fnt)
+|faint|p1: RougeTheBat
+|
+|-heal|p2: Rotom-Mow|6 (58\/100)|[from] item: leftovers
+|callback|decision
+|
+|switch|p1: Dulcy|Flygon, F| (50\/100 brn)
+|turn|28
+|callback|decision
+|
+|move|p1: Dulcy|Outrage|p2: Rotom-Mow
+|-damage|p2: Rotom-Mow|29 (29\/100)
+|move|p2: Rotom-Mow|Leaf Storm|p1: Dulcy
+|-damage|p1: Dulcy|50 (0\/100 fnt)
+|-unboost|p2: Rotom-Mow|spa|2
+|faint|p1: Dulcy
+|
+|-heal|p2: Rotom-Mow|6 (35\/100)|[from] item: leftovers
+|callback|decision
+|
+|switch|p1: ChillPenguin|Empoleon, M| (44\/100)
+|turn|29
+|callback|decision
+|
+|move|p2: Rotom-Mow|Thunder|p1: ChillPenguin
+|-supereffective|p1: ChillPenguin
+|-damage|p1: ChillPenguin|30 (14\/100)
+|move|p1: ChillPenguin|Scald|p2: Rotom-Mow
+|-resisted|p2: Rotom-Mow
+|-damage|p2: Rotom-Mow|18 (17\/100)
+|-status|p2: Rotom-Mow|brn
+|
+|-heal|p1: ChillPenguin|6 (20\/100)|[from] item: leftovers
+|-heal|p2: Rotom-Mow|6 (24\/100 brn)|[from] item: leftovers
+|-damage|p2: Rotom-Mow|13 (11\/100 brn)|[from] brn
+|turn|30
+|callback|decision
+|
+|move|p2: Rotom-Mow|Will-O-Wisp|p1: ChillPenguin
+|-status|p1: ChillPenguin|brn
+|move|p1: ChillPenguin|Scald|p2: Rotom-Mow
+|-resisted|p2: Rotom-Mow
+|-damage|p2: Rotom-Mow|11 (0\/100 fnt)
+|faint|p2: Rotom-Mow
+|
+|-heal|p1: ChillPenguin|6 (26\/100 brn)|[from] item: leftovers
+|-damage|p1: ChillPenguin|12 (14\/100 brn)|[from] brn
+|callback|decision
+|
+|switch|p2: Gorebyss|Gorebyss, F| (100\/100)
+|turn|31
+|callback|decision
+|
+|move|p2: Gorebyss|Hidden Power|p1: ChillPenguin
+|-supereffective|p1: ChillPenguin
+|-damage|p1: ChillPenguin|14 (0\/100 fnt)
+|faint|p1: ChillPenguin
+|
+|win|Low
+|chatmsg-raw|Ladder updating...
+|raw|Rayoflightning's rating: 1970 &rarr; <strong>1930<\/strong><br \/>(-40 for losing)
+|raw|Low's rating: 1760 &rarr; <strong>1836<\/strong><br \/>(+76 for winning)
+|chat|Rayoflightning|gg i over predict too much
+|leave|Rayoflightning
+|player|p1
+|chat|Low|gg 

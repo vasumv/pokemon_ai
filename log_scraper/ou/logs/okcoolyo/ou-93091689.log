@@ -1,0 +1,473 @@
+|join|okcoolyo
+|join|K-Ryu
+|player|p1|okcoolyo|203
+|player|p2|K-Ryu|264
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Charizard, F
+|poke|p1|Conkeldurr, M
+|poke|p1|Manaphy
+|poke|p1|Latios, M
+|poke|p1|Gliscor, M
+|poke|p1|Ditto
+|poke|p2|Venusaur, M
+|poke|p2|Tyranitar, M
+|poke|p2|Heatran, F
+|poke|p2|Mandibuzz, F
+|poke|p2|Latios, M
+|poke|p2|Weavile, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Conkeldurr|Conkeldurr, M|414\/414
+|switch|p2a: Heatran|Heatran, F|386\/386
+|turn|1
+|
+|move|p2a: Heatran|Stealth Rock|p1a: Conkeldurr
+|-sidestart|p1: okcoolyo|move: Stealth Rock
+|move|p1a: Conkeldurr|Knock Off|p2a: Heatran
+|-damage|p2a: Heatran|254\/386
+|-enditem|p2a: Heatran|Leftovers|[from] move: Knock Off|[of] p1a: Conkeldurr
+|
+|turn|2
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|424\/424
+|move|p1a: Conkeldurr|Drain Punch|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|318\/424
+|
+|-heal|p2a: Mandibuzz|344\/424|[from] item: Leftovers
+|turn|3
+|
+|move|p2a: Mandibuzz|Knock Off|p1a: Conkeldurr
+|-resisted|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|368\/414
+|-enditem|p1a: Conkeldurr|Assault Vest|[from] move: Knock Off|[of] p2a: Mandibuzz
+|move|p1a: Conkeldurr|Drain Punch|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|230\/424
+|-heal|p1a: Conkeldurr|414\/414|[from] drain|[of] p2a: Mandibuzz
+|
+|-heal|p2a: Mandibuzz|256\/424|[from] item: Leftovers
+|turn|4
+|
+|move|p2a: Mandibuzz|Foul Play|p1a: Conkeldurr
+|-resisted|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|318\/414
+|move|p1a: Conkeldurr|Knock Off|p2a: Mandibuzz
+|-resisted|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|208\/424
+|-enditem|p2a: Mandibuzz|Leftovers|[from] move: Knock Off|[of] p1a: Conkeldurr
+|
+|turn|5
+|
+|move|p2a: Mandibuzz|Roost|p2a: Mandibuzz
+|-heal|p2a: Mandibuzz|420\/424
+|move|p1a: Conkeldurr|Drain Punch|p2a: Mandibuzz
+|-supereffective|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|214\/424
+|-heal|p1a: Conkeldurr|414\/414|[from] drain|[of] p2a: Mandibuzz
+|
+|turn|6
+|
+|switch|p2a: Venusaur|Venusaur, M|364\/364
+|move|p1a: Conkeldurr|Drain Punch|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|278\/364
+|
+|turn|7
+|
+|switch|p1a: Latios|Latios, M|302\/302
+|-damage|p1a: Latios|265\/302|[from] Stealth Rock
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p2a: Venusaur|Leech Seed|p1a: Latios
+|-start|p1a: Latios|move: Leech Seed
+|
+|-damage|p1a: Latios|228\/302|[from] Leech Seed|[of] p2a: Venusaur
+|-heal|p2a: Venusaur|315\/364|[silent]
+|turn|8
+|
+|switch|p2a: Tyranitar|Tyranitar, M|404\/404
+|-weather|Sandstorm
+|move|p1a: Latios|Defog|p2a: Tyranitar
+|-unboost|p2a: Tyranitar|evasion|1
+|-sideend|p1: okcoolyo|Stealth Rock|[from] move: Defog|[of] p1a: Latios
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Latios|210\/302|[from] sandstorm
+|-damage|p1a: Latios|173\/302|[from] Leech Seed|[of] p2a: Tyranitar
+|turn|9
+|
+|move|p1a: Latios|Draco Meteor|p2a: Tyranitar
+|-damage|p2a: Tyranitar|279\/404
+|-unboost|p1a: Latios|spa|2
+|-damage|p1a: Latios|143\/302|[from] item: Life Orb
+|move|p2a: Tyranitar|Pursuit|p1a: Latios
+|-supereffective|p1a: Latios
+|-damage|p1a: Latios|0 fnt
+|faint|p1a: Latios
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Manaphy|Manaphy|341\/341
+|turn|10
+|
+|switch|p2a: Venusaur|Venusaur, M|315\/364
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|move|p1a: Manaphy|Tail Glow|p1a: Manaphy
+|-boost|p1a: Manaphy|spa|3
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Manaphy|320\/341|[from] sandstorm
+|-damage|p2a: Venusaur|293\/364|[from] sandstorm
+|-heal|p1a: Manaphy|341\/341|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Manaphy|Ice Beam|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|133\/364
+|-status|p2a: Venusaur|frz
+|-curestatus|p2a: Venusaur|frz
+|move|p2a: Venusaur|Giga Drain|p1a: Manaphy
+|-supereffective|p1a: Manaphy
+|-damage|p1a: Manaphy|89\/341
+|-heal|p2a: Venusaur|259\/364|[from] drain|[of] p1a: Manaphy
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Manaphy|68\/341|[from] sandstorm
+|-damage|p2a: Venusaur|237\/364|[from] sandstorm
+|-heal|p1a: Manaphy|89\/341|[from] item: Leftovers
+|turn|12
+|chat|K-Ryu|ufff :D
+|
+|move|p1a: Manaphy|Ice Beam|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|91\/364
+|move|p2a: Venusaur|Giga Drain|p1a: Manaphy
+|-crit|p1a: Manaphy
+|-supereffective|p1a: Manaphy
+|-damage|p1a: Manaphy|0 fnt
+|-heal|p2a: Venusaur|136\/364|[from] drain|[of] p1a: Manaphy
+|faint|p1a: Manaphy
+|
+|-weather|none
+|
+|switch|p1a: Ditto|Ditto|299\/299
+|-transform|p1a: Ditto|p2a: Venusaur
+|turn|13
+|
+|move|p1a: Ditto|Sludge Bomb|p2a: Venusaur
+|-damage|p2a: Venusaur|36\/364
+|move|p2a: Venusaur|Sludge Bomb|p1a: Ditto
+|-damage|p1a: Ditto|202\/299
+|
+|turn|14
+|
+|switch|p2a: Heatran|Heatran, F|254\/386
+|move|p1a: Ditto|Sludge Bomb|p2a: Heatran
+|-immune|p2a: Heatran|[msg]
+|
+|turn|15
+|
+|switch|p1a: Charizard|Charizard, F|298\/298
+|move|p2a: Heatran|Protect|p2a: Heatran
+|-fail|p2a: Heatran
+|
+|turn|16
+|
+|move|p1a: Charizard|Hidden Power|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|86\/386
+|move|p2a: Heatran|Roar|p1a: Charizard
+|drag|p1a: Gliscor|Gliscor, M|354\/354
+|
+|-activate|p1a: Gliscor|item: Toxic Orb
+|-status|p1a: Gliscor|tox
+|turn|17
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|214\/424
+|move|p1a: Gliscor|Earthquake|p2a: Mandibuzz
+|-immune|p2a: Mandibuzz|[msg]
+|
+|turn|18
+|
+|move|p1a: Gliscor|Toxic|p2a: Mandibuzz
+|-status|p2a: Mandibuzz|tox
+|move|p2a: Mandibuzz|Roost|p2a: Mandibuzz
+|-heal|p2a: Mandibuzz|424\/424 tox
+|
+|-damage|p2a: Mandibuzz|398\/424 tox|[from] psn
+|turn|19
+|
+|move|p1a: Gliscor|Substitute|p1a: Gliscor
+|-start|p1a: Gliscor|Substitute
+|-damage|p1a: Gliscor|266\/354 tox
+|move|p2a: Mandibuzz|Foul Play|p1a: Gliscor
+|-activate|p1a: Gliscor|Substitute|[damage]
+|
+|-heal|p1a: Gliscor|310\/354 tox|[from] ability: Poison Heal
+|-damage|p2a: Mandibuzz|346\/424 tox|[from] psn
+|turn|20
+|
+|move|p1a: Gliscor|Protect|p1a: Gliscor
+|-singleturn|p1a: Gliscor|Protect
+|move|p2a: Mandibuzz|Foul Play|p1a: Gliscor
+|-activate|p1a: Gliscor|Protect
+|
+|-heal|p1a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|-damage|p2a: Mandibuzz|268\/424 tox|[from] psn
+|turn|21
+|
+|move|p1a: Gliscor|Protect|p1a: Gliscor
+|-singleturn|p1a: Gliscor|Protect
+|move|p2a: Mandibuzz|Foul Play|p1a: Gliscor
+|-activate|p1a: Gliscor|Protect
+|
+|-damage|p2a: Mandibuzz|164\/424 tox|[from] psn
+|turn|22
+|
+|move|p1a: Gliscor|Protect|p1a: Gliscor
+|-fail|p1a: Gliscor
+|move|p2a: Mandibuzz|Roost|p2a: Mandibuzz
+|-heal|p2a: Mandibuzz|376\/424 tox
+|
+|-damage|p2a: Mandibuzz|246\/424 tox|[from] psn
+|turn|23
+|
+|move|p1a: Gliscor|Protect|p1a: Gliscor
+|-singleturn|p1a: Gliscor|Protect
+|move|p2a: Mandibuzz|Foul Play|p1a: Gliscor
+|-activate|p1a: Gliscor|Protect
+|
+|-damage|p2a: Mandibuzz|90\/424 tox|[from] psn
+|turn|24
+|
+|switch|p2a: Latios|Latios, M|302\/302
+|move|p1a: Gliscor|Earthquake|p2a: Latios
+|-immune|p2a: Latios|[msg]
+|
+|turn|25
+|
+|move|p2a: Latios|Surf|p1a: Gliscor
+|-supereffective|p1a: Gliscor
+|-end|p1a: Gliscor|Substitute
+|move|p1a: Gliscor|Toxic|p2a: Latios
+|-status|p2a: Latios|tox
+|
+|-damage|p2a: Latios|284\/302 tox|[from] psn
+|turn|26
+|
+|switch|p2a: Weavile|Weavile, M|282\/282
+|-ability|p2a: Weavile|Pressure
+|move|p1a: Gliscor|Protect|p1a: Gliscor
+|-fail|p1a: Gliscor
+|
+|turn|27
+|
+|switch|p1a: Conkeldurr|Conkeldurr, M|414\/414
+|move|p2a: Weavile|Ice Punch|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|231\/414
+|-damage|p2a: Weavile|254\/282|[from] item: Life Orb
+|
+|turn|28
+|
+|switch|p2a: Latios|Latios, M|284\/302 tox
+|move|p1a: Conkeldurr|Drain Punch|p2a: Latios
+|-resisted|p2a: Latios
+|-damage|p2a: Latios|199\/302 tox
+|-heal|p1a: Conkeldurr|274\/414|[from] drain|[of] p2a: Latios
+|
+|-damage|p2a: Latios|181\/302 tox|[from] psn
+|turn|29
+|
+|switch|p1a: Ditto|Ditto|202\/299
+|-transform|p1a: Ditto|p2a: Latios
+|move|p2a: Latios|Psyshock|p1a: Ditto
+|-resisted|p1a: Ditto
+|-damage|p1a: Ditto|111\/299
+|
+|-damage|p2a: Latios|145\/302 tox|[from] psn
+|turn|30
+|
+|switch|p2a: Tyranitar|Tyranitar, M|279\/404
+|-weather|Sandstorm
+|move|p1a: Ditto|Draco Meteor|p2a: Tyranitar
+|-damage|p2a: Tyranitar|167\/404
+|-unboost|p1a: Ditto|spa|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Ditto|93\/299|[from] sandstorm
+|turn|31
+|
+|move|p1a: Ditto|Draco Meteor|p2a: Tyranitar
+|-damage|p2a: Tyranitar|112\/404
+|-unboost|p1a: Ditto|spa|2
+|move|p2a: Tyranitar|Pursuit|p1a: Ditto
+|-supereffective|p1a: Ditto
+|-damage|p1a: Ditto|0 fnt
+|faint|p1a: Ditto
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Gliscor|Gliscor, M|354\/354 tox
+|turn|32
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|90\/424 tox
+|move|p1a: Gliscor|Substitute|p1a: Gliscor
+|-start|p1a: Gliscor|Substitute
+|-damage|p1a: Gliscor|266\/354 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Gliscor|310\/354 tox|[from] ability: Poison Heal
+|-damage|p2a: Mandibuzz|64\/424 tox|[from] psn
+|turn|33
+|
+|move|p1a: Gliscor|Protect|p1a: Gliscor
+|-singleturn|p1a: Gliscor|Protect
+|move|p2a: Mandibuzz|Roost|p2a: Mandibuzz
+|-heal|p2a: Mandibuzz|276\/424 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|-damage|p2a: Mandibuzz|224\/424 tox|[from] psn
+|turn|34
+|
+|move|p1a: Gliscor|Earthquake|p2a: Mandibuzz
+|-immune|p2a: Mandibuzz|[msg]
+|move|p2a: Mandibuzz|Foul Play|p1a: Gliscor
+|-activate|p1a: Gliscor|Substitute|[damage]
+|
+|-weather|none
+|-damage|p2a: Mandibuzz|146\/424 tox|[from] psn
+|turn|35
+|
+|move|p1a: Gliscor|Toxic|p2a: Mandibuzz
+|-fail|p2a: Mandibuzz|tox
+|move|p2a: Mandibuzz|Roost|p2a: Mandibuzz
+|-heal|p2a: Mandibuzz|358\/424 tox
+|
+|-damage|p2a: Mandibuzz|254\/424 tox|[from] psn
+|turn|36
+|
+|switch|p2a: Latios|Latios, M|145\/302 tox
+|move|p1a: Gliscor|Toxic|p2a: Latios
+|-fail|p2a: Latios|tox
+|
+|-damage|p2a: Latios|127\/302 tox|[from] psn
+|turn|37
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|254\/424 tox
+|move|p1a: Gliscor|Protect|p1a: Gliscor
+|-fail|p1a: Gliscor
+|
+|-damage|p2a: Mandibuzz|228\/424 tox|[from] psn
+|turn|38
+|
+|switch|p1a: Charizard|Charizard, F|298\/298
+|move|p2a: Mandibuzz|Roost|p2a: Mandibuzz
+|-heal|p2a: Mandibuzz|424\/424 tox
+|
+|-damage|p2a: Mandibuzz|372\/424 tox|[from] psn
+|turn|39
+|
+|-formechange|p1a: Charizard|Charizard-Mega-Y
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p1a: Charizard|Fire Blast|p2a: Mandibuzz
+|-damage|p2a: Mandibuzz|3\/424 tox
+|move|p2a: Mandibuzz|Foul Play|p1a: Charizard
+|-damage|p1a: Charizard|175\/298
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p2a: Mandibuzz|0 fnt|[from] psn
+|faint|p2a: Mandibuzz
+|
+|switch|p2a: Latios|Latios, M|127\/302 tox
+|turn|40
+|
+|switch|p1a: Conkeldurr|Conkeldurr, M|274\/414
+|move|p2a: Latios|Draco Meteor|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|0 fnt
+|-unboost|p2a: Latios|spa|2
+|faint|p1a: Conkeldurr
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p2a: Latios|109\/302 tox|[from] psn
+|
+|switch|p1a: Gliscor|Gliscor, M|354\/354 tox
+|turn|41
+|
+|move|p2a: Latios|Surf|p1a: Gliscor
+|-supereffective|p1a: Gliscor
+|-damage|p1a: Gliscor|277\/354 tox
+|move|p1a: Gliscor|Substitute|p1a: Gliscor
+|-start|p1a: Gliscor|Substitute
+|-damage|p1a: Gliscor|189\/354 tox
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p2a: Latios|73\/302 tox|[from] psn
+|-heal|p1a: Gliscor|233\/354 tox|[from] ability: Poison Heal
+|turn|42
+|
+|switch|p2a: Venusaur|Venusaur, M|36\/364
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|move|p1a: Gliscor|Protect|p1a: Gliscor
+|-fail|p1a: Gliscor
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Gliscor|277\/354 tox|[from] ability: Poison Heal
+|turn|43
+|
+|move|p1a: Gliscor|Earthquake|p2a: Venusaur
+|-damage|p2a: Venusaur|0 fnt
+|faint|p2a: Venusaur
+|
+|-weather|none
+|-heal|p1a: Gliscor|321\/354 tox|[from] ability: Poison Heal
+|
+|switch|p2a: Weavile|Weavile, M|254\/282
+|-ability|p2a: Weavile|Pressure
+|turn|44
+|
+|move|p2a: Weavile|Ice Punch|p1a: Gliscor
+|-supereffective|p1a: Gliscor
+|-end|p1a: Gliscor|Substitute
+|-damage|p2a: Weavile|226\/282|[from] item: Life Orb
+|move|p1a: Gliscor|Earthquake|p2a: Weavile
+|-damage|p2a: Weavile|79\/282
+|
+|-heal|p1a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|turn|45
+|
+|move|p2a: Weavile|Ice Punch|p1a: Gliscor
+|-supereffective|p1a: Gliscor
+|-damage|p1a: Gliscor|0 fnt
+|-damage|p2a: Weavile|51\/282|[from] item: Life Orb
+|faint|p1a: Gliscor
+|
+|
+|switch|p1a: Charizard|Charizard, F|175\/298
+|-formechange|p1a: Charizard|Charizard-Mega-Y
+|-weather|SunnyDay
+|turn|46
+|
+|move|p2a: Weavile|Knock Off|p1a: Charizard
+|-damage|p1a: Charizard|0 fnt
+|-damage|p2a: Weavile|23\/282|[from] item: Life Orb
+|faint|p1a: Charizard
+|
+|win|K-Ryu
+|raw|Ladder updating...
+|raw|okcoolyo's rating: 1468 &rarr; <strong>1445<\/strong><br \/>(-23 for losing)
+|raw|K-Ryu's rating: 1404 &rarr; <strong>1428<\/strong><br \/>(+24 for winning)
+|leave|okcoolyo
+|player|p1

@@ -1,0 +1,272 @@
+|join|pipasonze
+|join|Flumy
+|player|p1|pipasonze|120
+|player|p2|Flumy|34
+|gametype|singles
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Metagross
+|poke|p1|Blastoise, M
+|poke|p1|Celebi
+|poke|p1|Rotom-Heat
+|poke|p1|Hippowdon, M
+|poke|p1|Bisharp, F
+|poke|p2|Ambipom, F
+|poke|p2|Honchkrow, M
+|poke|p2|Slowbro, M
+|poke|p2|Nidoqueen, F
+|poke|p2|Mismagius, F
+|poke|p2|Medicham, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Hippowdon|Hippowdon, M|420\/420
+|switch|p2a: Nidoqueen|Nidoqueen, F|384\/384
+|-weather|Sandstorm
+|turn|1
+|callback|decision
+|
+|move|p2a: Nidoqueen|Toxic|p1a: Hippowdon
+|-status|p1a: Hippowdon|tox
+|move|p1a: Hippowdon|Earthquake|p2a: Nidoqueen
+|-supereffective|p2a: Nidoqueen
+|-damage|p2a: Nidoqueen|112\/384
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Hippowdon|394\/420 tox|[from] psn
+|turn|2
+|callback|decision
+|
+|move|p2a: Nidoqueen|Stealth Rock|p1a: Hippowdon
+|-sidestart|p1: pipasonze|move: Stealth Rock
+|move|p1a: Hippowdon|Stealth Rock|p2a: Nidoqueen
+|-sidestart|p2: Flumy|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Hippowdon|420\/420 tox|[from] item: Leftovers
+|-damage|p1a: Hippowdon|368\/420 tox|[from] psn
+|turn|3
+|callback|decision
+|
+|move|p2a: Nidoqueen|Toxic Spikes|p1a: Hippowdon
+|-sidestart|p1: pipasonze|move: Toxic Spikes
+|move|p1a: Hippowdon|Earthquake|p2a: Nidoqueen
+|-supereffective|p2a: Nidoqueen
+|-damage|p2a: Nidoqueen|0 fnt
+|faint|p2a: Nidoqueen
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Hippowdon|394\/420 tox|[from] item: Leftovers
+|-damage|p1a: Hippowdon|316\/420 tox|[from] psn
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|394\/394
+|-damage|p2a: Slowbro|345\/394|[from] Stealth Rock
+|turn|4
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M|362\/362
+|-status|p1a: Blastoise|psn
+|-damage|p1a: Blastoise|317\/362 psn|[from] Stealth Rock
+|move|p2a: Slowbro|Scald|p1a: Blastoise
+|-resisted|p1a: Blastoise
+|-damage|p1a: Blastoise|273\/362 psn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Blastoise|251\/362 psn|[from] sandstorm
+|-damage|p2a: Slowbro|321\/394|[from] sandstorm
+|-damage|p1a: Blastoise|206\/362 psn|[from] psn
+|turn|5
+|callback|decision
+|
+|-formechange|p1a: Blastoise|Blastoise-Mega
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p1a: Blastoise|Dark Pulse|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|87\/394
+|cant|p2a: Slowbro|flinch
+|
+|-weather|none
+|-damage|p1a: Blastoise|161\/362 psn|[from] psn
+|turn|6
+|callback|decision
+|
+|switch|p2a: Ambipom|Ambipom, F|292\/292
+|-damage|p2a: Ambipom|256\/292|[from] Stealth Rock
+|move|p1a: Blastoise|Rapid Spin|p2a: Ambipom
+|-damage|p2a: Ambipom|233\/292
+|-sideend|p1: pipasonze|Toxic Spikes|[from] move: Rapid Spin|[of] p1a: Blastoise
+|-sideend|p1: pipasonze|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Blastoise
+|
+|-damage|p1a: Blastoise|116\/362 psn|[from] psn
+|turn|7
+|callback|decision
+|
+|switch|p1a: Metagross|Metagross|364\/364
+|move|p2a: Ambipom|Fake Out|p1a: Metagross
+|-resisted|p1a: Metagross
+|-damage|p1a: Metagross|319\/364
+|-damage|p2a: Ambipom|204\/292|[from] item: Life Orb
+|
+|turn|8
+|callback|decision
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|241\/241
+|move|p2a: Ambipom|U-turn|p1a: Rotom-Heat
+|-resisted|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|194\/241
+|-damage|p2a: Ambipom|175\/292|[from] item: Life Orb
+|callback|decision
+|
+|switch|p2a: Mismagius|Mismagius, F|320\/320
+|-damage|p2a: Mismagius|280\/320|[from] Stealth Rock
+|
+|-heal|p2a: Mismagius|300\/320|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p1a: Rotom-Heat|Trick|p2a: Mismagius
+|-activate|p1a: Rotom-Heat|move: Trick|[of] p2a: Mismagius
+|-item|p2a: Mismagius|Choice Scarf|[from] move: Trick
+|-item|p1a: Rotom-Heat|Leftovers|[from] move: Trick
+|move|p2a: Mismagius|Substitute|p2a: Mismagius
+|-start|p2a: Mismagius|Substitute
+|-damage|p2a: Mismagius|220\/320
+|
+|-heal|p1a: Rotom-Heat|209\/241|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|218\/394
+|-damage|p2a: Slowbro|169\/394|[from] Stealth Rock
+|move|p1a: Rotom-Heat|Volt Switch|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|0 fnt
+|faint|p2a: Slowbro
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M|116\/362 psn
+|-formechange|p1a: Blastoise|Blastoise-Mega
+|
+|-damage|p1a: Blastoise|71\/362 psn|[from] psn
+|callback|decision
+|
+|switch|p2a: Honchkrow|Honchkrow, M|379\/379
+|-damage|p2a: Honchkrow|285\/379|[from] Stealth Rock
+|turn|11
+|callback|decision
+|
+|move|p2a: Honchkrow|Pursuit|p1a: Blastoise
+|-damage|p1a: Blastoise|0 fnt
+|-damage|p2a: Honchkrow|248\/379|[from] item: Life Orb
+|faint|p1a: Blastoise
+|-boost|p2a: Honchkrow|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|switch|p1a: Hippowdon|Hippowdon, M|316\/420 tox
+|-weather|Sandstorm
+|turn|12
+|callback|decision
+|
+|switch|p2a: Mismagius|Mismagius, F|220\/320
+|-damage|p2a: Mismagius|180\/320|[from] Stealth Rock
+|move|p1a: Hippowdon|Whirlwind|p2a: Mismagius
+|drag|p2a: Ambipom|Ambipom, F|175\/292
+|-damage|p2a: Ambipom|139\/292|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Ambipom|121\/292|[from] sandstorm
+|-heal|p1a: Hippowdon|342\/420 tox|[from] item: Leftovers
+|-damage|p1a: Hippowdon|316\/420 tox|[from] psn
+|turn|13
+|callback|decision
+|
+|switch|p1a: Bisharp|Bisharp, F|284\/284
+|move|p2a: Ambipom|Fake Out|p1a: Bisharp
+|-resisted|p1a: Bisharp
+|-damage|p1a: Bisharp|223\/284
+|-damage|p2a: Ambipom|92\/292|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Ambipom|74\/292|[from] sandstorm
+|turn|14
+|callback|decision
+|
+|move|p1a: Bisharp|Sucker Punch|p2a: Ambipom
+|-damage|p2a: Ambipom|0 fnt
+|-damage|p1a: Bisharp|195\/284|[from] item: Life Orb
+|faint|p2a: Ambipom
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Medicham|Medicham, F|262\/262
+|-damage|p2a: Medicham|246\/262|[from] Stealth Rock
+|turn|15
+|callback|decision
+|
+|-formechange|p2a: Medicham|Medicham-Mega
+|message|Medicham has Mega Evolved into Mega Medicham!
+|move|p2a: Medicham|Acupressure|p2a: Medicham
+|-boost|p2a: Medicham|atk|2
+|move|p1a: Bisharp|Iron Head|p2a: Medicham
+|-damage|p2a: Medicham|28\/262
+|-damage|p1a: Bisharp|167\/284|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Medicham|12\/262|[from] sandstorm
+|turn|16
+|callback|decision
+|
+|move|p1a: Bisharp|Sucker Punch|p2a: Medicham
+|-damage|p2a: Medicham|0 fnt
+|-damage|p1a: Bisharp|139\/284|[from] item: Life Orb
+|faint|p2a: Medicham
+|
+|-weather|none
+|callback|decision
+|
+|switch|p2a: Honchkrow|Honchkrow, M|248\/379
+|-damage|p2a: Honchkrow|154\/379|[from] Stealth Rock
+|turn|17
+|callback|decision
+|
+|move|p2a: Honchkrow|Sucker Punch|p1a: Bisharp
+|-resisted|p1a: Bisharp
+|-damage|p1a: Bisharp|48\/284
+|-damage|p2a: Honchkrow|117\/379|[from] item: Life Orb
+|move|p1a: Bisharp|Iron Head|p2a: Honchkrow
+|-damage|p2a: Honchkrow|0 fnt
+|-damage|p1a: Bisharp|20\/284|[from] item: Life Orb
+|faint|p2a: Honchkrow
+|
+|callback|decision
+|
+|switch|p2a: Mismagius|Mismagius, F|180\/320
+|-damage|p2a: Mismagius|140\/320|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|move|p1a: Bisharp|Sucker Punch|p2a: Mismagius
+|-supereffective|p2a: Mismagius
+|-damage|p2a: Mismagius|0 fnt
+|-damage|p1a: Bisharp|0 fnt|[from] item: Life Orb
+|faint|p2a: Mismagius
+|faint|p1a: Bisharp
+|
+|win|pipasonze
+|raw|Ladder updating...
+|raw|pipasonze's rating: 2068 &rarr; <strong>2076<\/strong><br \/>(+8 for winning)
+|raw|Flumy's rating: 1424 &rarr; <strong>1412<\/strong><br \/>(-12 for losing)
+|leave|Flumy
+|player|p2

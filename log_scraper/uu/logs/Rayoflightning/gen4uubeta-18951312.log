@@ -1,0 +1,268 @@
+|join|666blaziken
+|join|Rayoflightning
+|player|p1|666blaziken|162
+|player|p2|Rayoflightning|1
+|gametype|singles
+|tier|[Gen 4] UU (beta)
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|
+|start
+|switch|p1a: Rhyperior|Rhyperior, M|432\/432
+|switch|p2a: Cloyster|Cloyster, F|281\/281
+|turn|1
+|callback|decision
+|
+|switch|p2a: Claydol|Claydol|324\/324
+|move|p1a: Rhyperior|Stone Edge|p2a: Claydol
+|-resisted|p2a: Claydol
+|-damage|p2a: Claydol|258\/324
+|
+|-heal|p2a: Claydol|278\/324|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|move|p2a: Claydol|Stealth Rock|p1a: Rhyperior
+|-sidestart|p1: 666blaziken|move: Stealth Rock
+|move|p1a: Rhyperior|Megahorn|p2a: Claydol
+|-supereffective|p2a: Claydol
+|-damage|p2a: Claydol|64\/324
+|
+|-heal|p2a: Claydol|84\/324|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p2a: Claydol|Earth Power|p1a: Rhyperior
+|-crit|p1a: Rhyperior
+|-supereffective|p1a: Rhyperior
+|-damage|p1a: Rhyperior|112\/432
+|move|p1a: Rhyperior|Megahorn|p2a: Claydol|[miss]
+|-miss|p1a: Rhyperior|p2a: Claydol
+|
+|-heal|p2a: Claydol|104\/324|[from] item: Leftovers
+|-heal|p1a: Rhyperior|139\/432|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Claydol|Earth Power|p1a: Rhyperior
+|-supereffective|p1a: Rhyperior
+|-damage|p1a: Rhyperior|0 fnt
+|faint|p1a: Rhyperior
+|
+|-heal|p2a: Claydol|124\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M|362\/362
+|-damage|p1a: Blastoise|317\/362|[from] Stealth Rock
+|turn|5
+|callback|decision
+|
+|switch|p2a: Mismagius|Mismagius, M|262\/262
+|move|p1a: Blastoise|Surf|p2a: Mismagius
+|-damage|p2a: Mismagius|126\/262
+|
+|-heal|p2a: Mismagius|142\/262|[from] item: Leftovers
+|-heal|p1a: Blastoise|339\/362|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p2a: Toxicroak|Toxicroak, F|307\/307
+|move|p1a: Blastoise|Roar|p2a: Toxicroak
+|drag|p2a: Claydol|Claydol|124\/324
+|
+|-heal|p1a: Blastoise|361\/362|[from] item: Leftovers
+|-heal|p2a: Claydol|144\/324|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p1a: Blastoise|Rapid Spin|p2a: Claydol
+|-damage|p2a: Claydol|134\/324
+|-sideend|p1: 666blaziken|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Blastoise
+|move|p2a: Claydol|Psychic|p1a: Blastoise
+|-damage|p1a: Blastoise|271\/362
+|
+|-heal|p1a: Blastoise|293\/362|[from] item: Leftovers
+|-heal|p2a: Claydol|154\/324|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p1a: Blastoise|Surf|p2a: Claydol
+|-supereffective|p2a: Claydol
+|-damage|p2a: Claydol|0 fnt
+|faint|p2a: Claydol
+|
+|-heal|p1a: Blastoise|315\/362|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Mismagius|Mismagius, M|142\/262
+|turn|9
+|callback|decision
+|
+|move|p2a: Mismagius|Thunderbolt|p1a: Blastoise
+|-supereffective|p1a: Blastoise
+|-damage|p1a: Blastoise|129\/362
+|move|p1a: Blastoise|Surf|p2a: Mismagius
+|-damage|p2a: Mismagius|19\/262
+|
+|-heal|p2a: Mismagius|35\/262|[from] item: Leftovers
+|-heal|p1a: Blastoise|151\/362|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p2a: Mismagius|Thunderbolt|p1a: Blastoise
+|-supereffective|p1a: Blastoise
+|-damage|p1a: Blastoise|0 fnt
+|faint|p1a: Blastoise
+|
+|-heal|p2a: Mismagius|51\/262|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Electrode|Electrode|324\/324
+|turn|11
+|callback|decision
+|
+|switch|p2a: Clefable|Clefable, F|394\/394
+|move|p1a: Electrode|Rain Dance|p1a: Electrode
+|-weather|RainDance
+|
+|-weather|RainDance|[upkeep]
+|-activate|p2a: Clefable|item: Flame Orb
+|-status|p2a: Clefable|brn
+|turn|12
+|callback|decision
+|
+|switch|p2a: Mismagius|Mismagius, M|51\/262
+|move|p1a: Electrode|Thunder|p2a: Mismagius
+|-crit|p2a: Mismagius
+|-damage|p2a: Mismagius|0 fnt
+|faint|p2a: Mismagius
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Clefable|Clefable, F|394\/394 brn
+|turn|13
+|callback|decision
+|
+|move|p1a: Electrode|Explosion|p2a: Clefable
+|-damage|p2a: Clefable|115\/394 brn
+|faint|p1a: Electrode
+|move|p2a: Clefable|Thunder Wave|p1: Electrode|[notarget]
+|-notarget
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Qwilfish|Qwilfish, M, shiny|272\/272
+|turn|14
+|callback|decision
+|
+|move|p1a: Qwilfish|Waterfall|p2a: Clefable
+|-damage|p2a: Clefable|0 fnt
+|-damage|p1a: Qwilfish|245\/272|[from] item: Life Orb
+|faint|p2a: Clefable
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Cloyster|Cloyster, F|281\/281
+|turn|15
+|callback|decision
+|
+|move|p1a: Qwilfish|Thunder Wave|p2a: Cloyster
+|-status|p2a: Cloyster|par
+|move|p2a: Cloyster|Rock Blast|p1a: Qwilfish
+|-damage|p1a: Qwilfish|205\/272
+|-damage|p1a: Qwilfish|161\/272
+|-damage|p1a: Qwilfish|122\/272
+|-damage|p1a: Qwilfish|82\/272
+|-damage|p1a: Qwilfish|42\/272
+|-hitcount|p1a: Qwilfish|5
+|-damage|p2a: Cloyster|253\/281 par|[from] item: Life Orb
+|
+|-weather|RainDance|[upkeep]
+|turn|16
+|callback|decision
+|
+|cant|p2: Cloyster|par
+|move|p1a: Qwilfish|Poison Jab|p2a: Cloyster
+|-damage|p2a: Cloyster|151\/281 par
+|-damage|p1a: Qwilfish|15\/272|[from] item: Life Orb
+|
+|-weather|RainDance|[upkeep]
+|turn|17
+|callback|decision
+|
+|cant|p2: Cloyster|par
+|move|p1a: Qwilfish|Poison Jab|p2a: Cloyster
+|-damage|p2a: Cloyster|48\/281 par
+|-damage|p1a: Qwilfish|0 fnt|[from] item: Life Orb
+|faint|p1a: Qwilfish
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Alakazam|Alakazam, M|252\/252
+|turn|18
+|callback|decision
+|
+|cant|p2: Cloyster|par
+|move|p1a: Alakazam|Psychic|p2a: Cloyster
+|-damage|p2a: Cloyster|0 fnt
+|-damage|p1a: Alakazam|227\/252|[from] item: Life Orb
+|faint|p2a: Cloyster
+|
+|-weather|none
+|callback|decision
+|chat|666blaziken|:(
+|
+|switch|p2a: Moltres|Moltres|321\/321
+|-ability|p2a: Moltres|Pressure
+|turn|19
+|callback|decision
+|chat|666blaziken|I don't like winning that way.
+|
+|move|p2a: Moltres|Fire Blast|p1a: Alakazam
+|-damage|p1a: Alakazam|0 fnt
+|faint|p1a: Alakazam
+|
+|callback|decision
+|
+|switch|p1a: Blaziken|Blaziken, M|301\/301
+|turn|20
+|callback|decision
+|
+|switch|p2a: Toxicroak|Toxicroak, F|307\/307
+|move|p1a: Blaziken|ThunderPunch|p2a: Toxicroak
+|-damage|p2a: Toxicroak|196\/307
+|
+|turn|21
+|callback|decision
+|
+|move|p1a: Blaziken|ThunderPunch|p2a: Toxicroak
+|-damage|p2a: Toxicroak|99\/307
+|move|p2a: Toxicroak|Low Kick|p1a: Blaziken
+|-damage|p1a: Blaziken|73\/301
+|-damage|p2a: Toxicroak|69\/307|[from] item: Life Orb
+|
+|turn|22
+|callback|decision
+|
+|move|p2a: Toxicroak|Sucker Punch|p1a: Blaziken
+|-crit|p1a: Blaziken
+|-resisted|p1a: Blaziken
+|-damage|p1a: Blaziken|0 fnt
+|-damage|p2a: Toxicroak|39\/307|[from] item: Life Orb
+|faint|p1a: Blaziken
+|
+|win|Rayoflightning
+|raw|Ladder updating...
+|raw|666blaziken's rating: 1007 &rarr; <strong>929<\/strong><br \/>(-78 for losing)
+|raw|Rayoflightning's rating: 1007 &rarr; <strong>1254<\/strong><br \/>(+247 for winning)
+|chat|666blaziken|gg
+|chat|Rayoflightning|gg

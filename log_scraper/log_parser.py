@@ -8,7 +8,7 @@ SWITCH = r"\|switch\|p(?P<player>.+?)a: (?P<nickname>.+?)\|(?P<pokename>.+)\|.+?
 DRAG = r"\|drag\|p(?P<player>.+?)a: (?P<nickname>.+?)\|(?P<pokename>.+)\|.+?"
 MOVE = r"\|move\|p(?P<player>.+?)a: (?P<poke>.+?)\|(?P<move>.+?)\|.+?"
 def get_logs(username):
-    directory = path("logs/%s" % username)
+    directory = path("uu/logs/%s" % username)
     return directory.listdir()
 def handle_line(username, line):
     line = line.strip()
@@ -77,13 +77,13 @@ class Zoroark(Exception):
 if __name__ == "__main__":
     graph_poke = {}
     graph_frequencies = {}
-    names = path("./logs")
+    names = path("./uu/logs")
     for username in names.listdir():
         directory = path("%s" % username.decode("utf-8"))
         for log in directory.files():
             if "gen4" in log or "gen3" in log or "gen2" in log or "gen1" in log or "pandora" in log:
                 continue
-            if "ou-" not in log:
+            if "uu-" not in log:
                 continue
             print log
             player = ""
@@ -126,5 +126,5 @@ if __name__ == "__main__":
         'frequencies': graph_frequencies,
         'cooccurences': graph_poke,
     }
-    with open("graph.json", "w") as f:
+    with open("uu/graph.json", "w") as f:
         f.write(json.dumps(poke_graph, sort_keys=True,indent=4, separators=(',', ': ')))

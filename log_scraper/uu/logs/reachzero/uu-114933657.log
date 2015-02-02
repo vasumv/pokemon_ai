@@ -1,0 +1,562 @@
+|join|SpecsPrimeape
+|join|reachzero
+|player|p1|SpecsPrimeape|101
+|player|p2|reachzero|15
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Miltank, F
+|poke|p1|Galvantula, F
+|poke|p1|Ditto
+|poke|p1|Yanmega, F
+|poke|p1|Jirachi
+|poke|p1|Donphan, M
+|poke|p2|Nidoking, M, shiny
+|poke|p2|Jirachi
+|poke|p2|Florges, F, shiny
+|poke|p2|Blastoise, F
+|poke|p2|Chesnaught, M, shiny
+|poke|p2|Darmanitan, M, shiny
+|teampreview
+|
+|start
+|switch|p1a: Miltank|Miltank, F|394\/394
+|switch|p2a: Nidoking|Nidoking, M, shiny|331\/331
+|turn|1
+|
+|move|p1a: Miltank|Body Slam|p2a: Nidoking
+|-damage|p2a: Nidoking|220\/331
+|move|p2a: Nidoking|Stealth Rock|p1a: Miltank
+|-sidestart|p1: SpecsPrimeape|move: Stealth Rock
+|
+|turn|2
+|
+|switch|p2a: Jirachi|Jirachi|404\/404
+|move|p1a: Miltank|Body Slam|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-damage|p2a: Jirachi|362\/404
+|
+|-heal|p2a: Jirachi|387\/404|[from] item: Leftovers
+|turn|3
+|
+|switch|p1a: Donphan|Donphan, M|349\/349
+|-damage|p1a: Donphan|328\/349|[from] Stealth Rock
+|move|p2a: Jirachi|Substitute|p2a: Jirachi
+|-start|p2a: Jirachi|Substitute
+|-damage|p2a: Jirachi|286\/404
+|
+|-heal|p2a: Jirachi|311\/404|[from] item: Leftovers
+|-heal|p1a: Donphan|349\/349|[from] item: Leftovers
+|turn|4
+|
+|move|p2a: Jirachi|Psychic|p1a: Donphan
+|-damage|p1a: Donphan|190\/349
+|move|p1a: Donphan|Earthquake|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-end|p2a: Jirachi|Substitute
+|
+|-heal|p2a: Jirachi|336\/404|[from] item: Leftovers
+|-heal|p1a: Donphan|211\/349|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Chesnaught|Chesnaught, M, shiny|380\/380
+|move|p1a: Donphan|Earthquake|p2a: Chesnaught
+|-resisted|p2a: Chesnaught
+|-damage|p2a: Chesnaught|317\/380
+|
+|-heal|p2a: Chesnaught|340\/380|[from] item: Leftovers
+|-heal|p1a: Donphan|232\/349|[from] item: Leftovers
+|turn|6
+|
+|move|p2a: Chesnaught|Wood Hammer|p1a: Donphan
+|-supereffective|p1a: Donphan
+|-damage|p1a: Donphan|8\/349
+|-damage|p2a: Chesnaught|266\/380|[from] recoil|[of] p1a: Donphan
+|move|p1a: Donphan|Rapid Spin|p2a: Chesnaught
+|-damage|p2a: Chesnaught|250\/380
+|-sideend|p1: SpecsPrimeape|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Donphan
+|
+|-heal|p2a: Chesnaught|273\/380|[from] item: Leftovers
+|-heal|p1a: Donphan|29\/349|[from] item: Leftovers
+|turn|7
+|
+|move|p2a: Chesnaught|Wood Hammer|p1a: Donphan
+|-supereffective|p1a: Donphan
+|-damage|p1a: Donphan|0 fnt
+|-damage|p2a: Chesnaught|263\/380|[from] recoil|[of] p1a: Donphan
+|faint|p1a: Donphan
+|
+|-heal|p2a: Chesnaught|286\/380|[from] item: Leftovers
+|
+|switch|p1a: Jirachi|Jirachi|397\/397
+|turn|8
+|
+|move|p1a: Jirachi|Substitute|p1a: Jirachi
+|-start|p1a: Jirachi|Substitute
+|-damage|p1a: Jirachi|298\/397
+|move|p2a: Chesnaught|Leech Seed|p1a: Jirachi
+|
+|-heal|p1a: Jirachi|322\/397|[from] item: Leftovers
+|-heal|p2a: Chesnaught|309\/380|[from] item: Leftovers
+|turn|9
+|
+|move|p1a: Jirachi|Body Slam|p2a: Chesnaught
+|-damage|p2a: Chesnaught|237\/380
+|-status|p2a: Chesnaught|par
+|move|p2a: Chesnaught|Hammer Arm|p1a: Jirachi
+|-end|p1a: Jirachi|Substitute
+|-unboost|p2a: Chesnaught|spe|1
+|
+|-heal|p1a: Jirachi|346\/397|[from] item: Leftovers
+|-heal|p2a: Chesnaught|260\/380 par|[from] item: Leftovers
+|turn|10
+|
+|move|p1a: Jirachi|Substitute|p1a: Jirachi
+|-start|p1a: Jirachi|Substitute
+|-damage|p1a: Jirachi|247\/397
+|cant|p2a: Chesnaught|par
+|
+|-heal|p1a: Jirachi|271\/397|[from] item: Leftovers
+|-heal|p2a: Chesnaught|283\/380 par|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Jirachi|Power-Up Punch|p2a: Chesnaught
+|-damage|p2a: Chesnaught|250\/380 par
+|-boost|p1a: Jirachi|atk|1
+|move|p2a: Chesnaught|Hammer Arm|p1a: Jirachi
+|-end|p1a: Jirachi|Substitute
+|-unboost|p2a: Chesnaught|spe|1
+|
+|-heal|p1a: Jirachi|295\/397|[from] item: Leftovers
+|-heal|p2a: Chesnaught|273\/380 par|[from] item: Leftovers
+|turn|12
+|
+|move|p1a: Jirachi|Substitute|p1a: Jirachi
+|-start|p1a: Jirachi|Substitute
+|-damage|p1a: Jirachi|196\/397
+|cant|p2a: Chesnaught|par
+|
+|-heal|p1a: Jirachi|220\/397|[from] item: Leftovers
+|-heal|p2a: Chesnaught|296\/380 par|[from] item: Leftovers
+|turn|13
+|
+|switch|p2a: Darmanitan|Darmanitan, M, shiny|351\/351
+|move|p1a: Jirachi|Iron Head|p2a: Darmanitan
+|-resisted|p2a: Darmanitan
+|-damage|p2a: Darmanitan|184\/351
+|
+|-heal|p1a: Jirachi|244\/397|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Darmanitan|U-turn|p1a: Jirachi
+|-activate|p1a: Jirachi|Substitute|[damage]
+|
+|switch|p2a: Chesnaught|Chesnaught, M, shiny|296\/380 par
+|move|p1a: Jirachi|Body Slam|p2a: Chesnaught
+|-damage|p2a: Chesnaught|205\/380 par
+|
+|-heal|p1a: Jirachi|268\/397|[from] item: Leftovers
+|-heal|p2a: Chesnaught|228\/380 par|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Jirachi|Iron Head|p2a: Chesnaught
+|-damage|p2a: Chesnaught|96\/380 par
+|cant|p2a: Chesnaught|par
+|
+|-heal|p1a: Jirachi|292\/397|[from] item: Leftovers
+|-heal|p2a: Chesnaught|119\/380 par|[from] item: Leftovers
+|turn|16
+|
+|move|p1a: Jirachi|Power-Up Punch|p2a: Chesnaught
+|-damage|p2a: Chesnaught|73\/380 par
+|-boost|p1a: Jirachi|atk|1
+|move|p2a: Chesnaught|Hammer Arm|p1a: Jirachi
+|-end|p1a: Jirachi|Substitute
+|-unboost|p2a: Chesnaught|spe|1
+|
+|-heal|p1a: Jirachi|316\/397|[from] item: Leftovers
+|-heal|p2a: Chesnaught|96\/380 par|[from] item: Leftovers
+|turn|17
+|
+|move|p1a: Jirachi|Substitute|p1a: Jirachi
+|-start|p1a: Jirachi|Substitute
+|-damage|p1a: Jirachi|217\/397
+|move|p2a: Chesnaught|Hammer Arm|p1a: Jirachi
+|-crit|p1a: Jirachi
+|-end|p1a: Jirachi|Substitute
+|-unboost|p2a: Chesnaught|spe|1
+|
+|-heal|p1a: Jirachi|241\/397|[from] item: Leftovers
+|-heal|p2a: Chesnaught|119\/380 par|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Jirachi|Substitute|p1a: Jirachi
+|-start|p1a: Jirachi|Substitute
+|-damage|p1a: Jirachi|142\/397
+|move|p2a: Chesnaught|Hammer Arm|p1a: Jirachi
+|-end|p1a: Jirachi|Substitute
+|-unboost|p2a: Chesnaught|spe|1
+|
+|-heal|p1a: Jirachi|166\/397|[from] item: Leftovers
+|-heal|p2a: Chesnaught|142\/380 par|[from] item: Leftovers
+|turn|19
+|
+|move|p1a: Jirachi|Substitute|p1a: Jirachi
+|-start|p1a: Jirachi|Substitute
+|-damage|p1a: Jirachi|67\/397
+|cant|p2a: Chesnaught|par
+|
+|-heal|p1a: Jirachi|91\/397|[from] item: Leftovers
+|-heal|p2a: Chesnaught|165\/380 par|[from] item: Leftovers
+|turn|20
+|
+|move|p1a: Jirachi|Iron Head|p2a: Chesnaught
+|-damage|p2a: Chesnaught|0 fnt
+|faint|p2a: Chesnaught
+|
+|-heal|p1a: Jirachi|115\/397|[from] item: Leftovers
+|
+|switch|p2a: Nidoking|Nidoking, M, shiny|220\/331
+|turn|21
+|
+|move|p1a: Jirachi|Body Slam|p2a: Nidoking
+|-damage|p2a: Nidoking|0 fnt
+|faint|p2a: Nidoking
+|
+|-heal|p1a: Jirachi|139\/397|[from] item: Leftovers
+|
+|switch|p2a: Jirachi|Jirachi|336\/404
+|turn|22
+|
+|move|p2a: Jirachi|Substitute|p2a: Jirachi
+|-start|p2a: Jirachi|Substitute
+|-damage|p2a: Jirachi|235\/404
+|move|p1a: Jirachi|Body Slam|p2a: Jirachi
+|-resisted|p2a: Jirachi
+|-activate|p2a: Jirachi|Substitute|[damage]
+|
+|-heal|p2a: Jirachi|260\/404|[from] item: Leftovers
+|-heal|p1a: Jirachi|163\/397|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Jirachi|Calm Mind|p2a: Jirachi
+|-boost|p2a: Jirachi|spa|1
+|-boost|p2a: Jirachi|spd|1
+|move|p1a: Jirachi|Power-Up Punch|p2a: Jirachi
+|-end|p2a: Jirachi|Substitute
+|-boost|p1a: Jirachi|atk|1
+|
+|-heal|p2a: Jirachi|285\/404|[from] item: Leftovers
+|-heal|p1a: Jirachi|187\/397|[from] item: Leftovers
+|turn|24
+|
+|move|p2a: Jirachi|Substitute|p2a: Jirachi
+|-start|p2a: Jirachi|Substitute
+|-damage|p2a: Jirachi|184\/404
+|move|p1a: Jirachi|Power-Up Punch|p2a: Jirachi
+|-end|p2a: Jirachi|Substitute
+|-boost|p1a: Jirachi|atk|1
+|
+|-heal|p2a: Jirachi|209\/404|[from] item: Leftovers
+|-heal|p1a: Jirachi|211\/397|[from] item: Leftovers
+|turn|25
+|
+|move|p2a: Jirachi|Thunderbolt|p1a: Jirachi
+|-end|p1a: Jirachi|Substitute
+|move|p1a: Jirachi|Power-Up Punch|p2a: Jirachi
+|-damage|p2a: Jirachi|83\/404
+|-boost|p1a: Jirachi|atk|1
+|
+|-heal|p2a: Jirachi|108\/404|[from] item: Leftovers
+|-heal|p1a: Jirachi|235\/397|[from] item: Leftovers
+|turn|26
+|
+|move|p2a: Jirachi|Thunderbolt|p1a: Jirachi
+|-damage|p1a: Jirachi|113\/397
+|move|p1a: Jirachi|Substitute|p1a: Jirachi
+|-start|p1a: Jirachi|Substitute
+|-damage|p1a: Jirachi|14\/397
+|
+|-heal|p2a: Jirachi|133\/404|[from] item: Leftovers
+|-heal|p1a: Jirachi|38\/397|[from] item: Leftovers
+|turn|27
+|
+|move|p2a: Jirachi|Thunderbolt|p1a: Jirachi
+|-end|p1a: Jirachi|Substitute
+|move|p1a: Jirachi|Power-Up Punch|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|-boost|p1a: Jirachi|atk|1
+|faint|p2a: Jirachi
+|
+|-heal|p1a: Jirachi|62\/397|[from] item: Leftovers
+|
+|switch|p2a: Darmanitan|Darmanitan, M, shiny|184\/351
+|turn|28
+|
+|move|p2a: Darmanitan|Fire Punch|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|faint|p1a: Jirachi
+|
+|
+|switch|p1a: Galvantula|Galvantula, F|281\/281
+|turn|29
+|
+|move|p2a: Darmanitan|Fire Punch|p1a: Galvantula
+|-supereffective|p1a: Galvantula
+|-enditem|p1a: Galvantula|Focus Sash
+|-damage|p1a: Galvantula|1\/281
+|move|p1a: Galvantula|Thunder Wave|p2a: Darmanitan
+|-status|p2a: Darmanitan|par
+|
+|turn|30
+|
+|switch|p2a: Florges|Florges, F, shiny|360\/360
+|move|p1a: Galvantula|Sticky Web|p2a: Florges
+|-sidestart|p2: reachzero|move: Sticky Web
+|
+|turn|31
+|
+|move|p1a: Galvantula|Giga Drain|p2a: Florges
+|-damage|p2a: Florges|327\/360
+|-heal|p1a: Galvantula|18\/281|[from] drain|[of] p2a: Florges
+|move|p2a: Florges|Aromatherapy|p2a: Florges
+|-cureteam|p2a: Florges|[from] move: Aromatherapy
+|
+|-heal|p2a: Florges|349\/360|[from] item: Leftovers
+|turn|32
+|
+|move|p1a: Galvantula|Thunder Wave|p2a: Florges
+|-status|p2a: Florges|par
+|cant|p2a: Florges|par
+|
+|-heal|p2a: Florges|360\/360 par|[from] item: Leftovers
+|turn|33
+|
+|move|p1a: Galvantula|Giga Drain|p2a: Florges
+|-damage|p2a: Florges|328\/360 par
+|-heal|p1a: Galvantula|34\/281|[from] drain|[of] p2a: Florges
+|move|p2a: Florges|Wish|p2a: Florges
+|
+|-heal|p2a: Florges|350\/360 par|[from] item: Leftovers
+|turn|34
+|
+|switch|p2a: Darmanitan|Darmanitan, M, shiny|184\/351
+|-activate|p2a: Darmanitan|move: Sticky Web
+|-unboost|p2a: Darmanitan|spe|1
+|move|p1a: Galvantula|Thunder Wave|p2a: Darmanitan
+|-status|p2a: Darmanitan|par
+|
+|-heal|p2a: Darmanitan|351\/351 par|[from] move: Wish|[wisher] Florges
+|turn|35
+|
+|switch|p2a: Florges|Florges, F, shiny|350\/360 par
+|-activate|p2a: Florges|move: Sticky Web
+|-unboost|p2a: Florges|spe|1
+|move|p1a: Galvantula|Volt Switch|p2a: Florges
+|-damage|p2a: Florges|307\/360 par
+|
+|switch|p1a: Yanmega|Yanmega, F|313\/313
+|
+|-heal|p2a: Florges|329\/360 par|[from] item: Leftovers
+|turn|36
+|
+|move|p1a: Yanmega|Bug Buzz|p2a: Florges
+|-resisted|p2a: Florges
+|-damage|p2a: Florges|169\/360 par
+|move|p2a: Florges|Aromatherapy|p2a: Florges
+|-cureteam|p2a: Florges|[from] move: Aromatherapy
+|
+|-heal|p2a: Florges|191\/360|[from] item: Leftovers
+|turn|37
+|
+|move|p2a: Florges|Protect|p2a: Florges
+|-singleturn|p2a: Florges|Protect
+|move|p1a: Yanmega|Bug Buzz|p2a: Florges
+|-activate|p2a: Florges|Protect
+|
+|-heal|p2a: Florges|213\/360|[from] item: Leftovers
+|turn|38
+|
+|move|p1a: Yanmega|Bug Buzz|p2a: Florges
+|-resisted|p2a: Florges
+|-damage|p2a: Florges|69\/360
+|-unboost|p2a: Florges|spd|1
+|move|p2a: Florges|Wish|p2a: Florges
+|
+|-heal|p2a: Florges|91\/360|[from] item: Leftovers
+|turn|39
+|
+|switch|p2a: Blastoise|Blastoise, F|362\/362
+|-activate|p2a: Blastoise|move: Sticky Web
+|-unboost|p2a: Blastoise|spe|1
+|move|p1a: Yanmega|Bug Buzz|p2a: Blastoise
+|-damage|p2a: Blastoise|130\/362
+|
+|-heal|p2a: Blastoise|310\/362|[from] move: Wish|[wisher] Florges
+|turn|40
+|
+|switch|p1a: Galvantula|Galvantula, F|34\/281
+|-formechange|p2a: Blastoise|Blastoise-Mega
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Blastoise|Ice Beam|p1a: Galvantula
+|-damage|p1a: Galvantula|0 fnt
+|faint|p1a: Galvantula
+|
+|
+|switch|p1a: Miltank|Miltank, F|394\/394
+|turn|41
+|
+|move|p1a: Miltank|Toxic|p2a: Blastoise|[miss]
+|-miss|p1a: Miltank|p2a: Blastoise
+|move|p2a: Blastoise|Scald|p1a: Miltank
+|-damage|p1a: Miltank|270\/394
+|
+|-heal|p1a: Miltank|294\/394|[from] item: Leftovers
+|turn|42
+|
+|move|p1a: Miltank|Toxic|p2a: Blastoise
+|-status|p2a: Blastoise|tox
+|move|p2a: Blastoise|Scald|p1a: Miltank
+|-damage|p1a: Miltank|167\/394
+|-status|p1a: Miltank|brn
+|
+|-heal|p1a: Miltank|191\/394 brn|[from] item: Leftovers
+|-damage|p1a: Miltank|142\/394 brn|[from] brn
+|-damage|p2a: Blastoise|288\/362 tox|[from] psn
+|turn|43
+|
+|move|p1a: Miltank|Milk Drink|p1a: Miltank
+|-heal|p1a: Miltank|339\/394 brn
+|move|p2a: Blastoise|Scald|p1a: Miltank
+|-damage|p1a: Miltank|230\/394 brn
+|
+|-heal|p1a: Miltank|254\/394 brn|[from] item: Leftovers
+|-damage|p1a: Miltank|205\/394 brn|[from] brn
+|-damage|p2a: Blastoise|244\/362 tox|[from] psn
+|turn|44
+|
+|switch|p2a: Florges|Florges, F, shiny|91\/360
+|-activate|p2a: Florges|move: Sticky Web
+|-unboost|p2a: Florges|spe|1
+|move|p1a: Miltank|Heal Bell|p1a: Miltank
+|-cureteam|p1a: Miltank|[from] move: HealBell
+|
+|-heal|p1a: Miltank|229\/394|[from] item: Leftovers
+|-heal|p2a: Florges|113\/360|[from] item: Leftovers
+|turn|45
+|
+|move|p1a: Miltank|Body Slam|p2a: Florges
+|-damage|p2a: Florges|31\/360
+|-status|p2a: Florges|par
+|move|p2a: Florges|Wish|p2a: Florges
+|
+|-heal|p1a: Miltank|253\/394|[from] item: Leftovers
+|-heal|p2a: Florges|53\/360 par|[from] item: Leftovers
+|turn|46
+|
+|move|p1a: Miltank|Body Slam|p2a: Florges
+|-damage|p2a: Florges|0 fnt
+|faint|p2a: Florges
+|
+|-heal|p1a: Miltank|277\/394|[from] item: Leftovers
+|
+|switch|p2a: Darmanitan|Darmanitan, M, shiny|351\/351
+|-activate|p2a: Darmanitan|move: Sticky Web
+|-unboost|p2a: Darmanitan|spe|1
+|turn|47
+|
+|move|p2a: Darmanitan|Flare Blitz|p1a: Miltank
+|-damage|p1a: Miltank|129\/394
+|-damage|p2a: Darmanitan|302\/351|[from] recoil|[of] p1a: Miltank
+|move|p1a: Miltank|Body Slam|p2a: Darmanitan
+|-damage|p2a: Darmanitan|167\/351
+|
+|-heal|p1a: Miltank|153\/394|[from] item: Leftovers
+|turn|48
+|
+|move|p2a: Darmanitan|Flare Blitz|p1a: Miltank
+|-damage|p1a: Miltank|15\/394
+|-damage|p2a: Darmanitan|121\/351|[from] recoil|[of] p1a: Miltank
+|move|p1a: Miltank|Milk Drink|p1a: Miltank
+|-heal|p1a: Miltank|212\/394
+|
+|-heal|p1a: Miltank|236\/394|[from] item: Leftovers
+|turn|49
+|
+|move|p2a: Darmanitan|Flare Blitz|p1a: Miltank
+|-damage|p1a: Miltank|103\/394
+|-damage|p2a: Darmanitan|77\/351|[from] recoil|[of] p1a: Miltank
+|move|p1a: Miltank|Milk Drink|p1a: Miltank
+|-heal|p1a: Miltank|300\/394
+|
+|-heal|p1a: Miltank|324\/394|[from] item: Leftovers
+|turn|50
+|
+|move|p2a: Darmanitan|Flare Blitz|p1a: Miltank
+|-damage|p1a: Miltank|194\/394
+|-damage|p2a: Darmanitan|34\/351|[from] recoil|[of] p1a: Miltank
+|move|p1a: Miltank|Body Slam|p2a: Darmanitan
+|-damage|p2a: Darmanitan|0 fnt
+|faint|p2a: Darmanitan
+|
+|-heal|p1a: Miltank|218\/394|[from] item: Leftovers
+|
+|switch|p2a: Blastoise|Blastoise, F|244\/362 tox
+|-formechange|p2a: Blastoise|Blastoise-Mega
+|-activate|p2a: Blastoise|move: Sticky Web
+|-unboost|p2a: Blastoise|spe|1
+|turn|51
+|
+|move|p1a: Miltank|Body Slam|p2a: Blastoise
+|-damage|p2a: Blastoise|192\/362 tox
+|move|p2a: Blastoise|Scald|p1a: Miltank
+|-crit|p1a: Miltank
+|-damage|p1a: Miltank|49\/394
+|
+|-heal|p1a: Miltank|73\/394|[from] item: Leftovers
+|-damage|p2a: Blastoise|170\/362 tox|[from] psn
+|turn|52
+|
+|move|p1a: Miltank|Milk Drink|p1a: Miltank
+|-heal|p1a: Miltank|270\/394
+|move|p2a: Blastoise|Scald|p1a: Miltank
+|-damage|p1a: Miltank|147\/394
+|
+|-heal|p1a: Miltank|171\/394|[from] item: Leftovers
+|-damage|p2a: Blastoise|126\/362 tox|[from] psn
+|turn|53
+|
+|move|p1a: Miltank|Milk Drink|p1a: Miltank
+|-heal|p1a: Miltank|368\/394
+|move|p2a: Blastoise|Scald|p1a: Miltank
+|-damage|p1a: Miltank|242\/394
+|
+|-heal|p1a: Miltank|266\/394|[from] item: Leftovers
+|-damage|p2a: Blastoise|60\/362 tox|[from] psn
+|turn|54
+|
+|move|p1a: Miltank|Body Slam|p2a: Blastoise
+|-damage|p2a: Blastoise|6\/362 tox
+|move|p2a: Blastoise|Scald|p1a: Miltank
+|-damage|p1a: Miltank|152\/394
+|-status|p1a: Miltank|brn
+|
+|-heal|p1a: Miltank|176\/394 brn|[from] item: Leftovers
+|-damage|p1a: Miltank|127\/394 brn|[from] brn
+|-damage|p2a: Blastoise|0 fnt|[from] psn
+|faint|p2a: Blastoise
+|
+|win|SpecsPrimeape
+|raw|Ladder updating...
+|raw|SpecsPrimeape's rating: 1404 &rarr; <strong>1428<\/strong><br \/>(+24 for winning)
+|raw|reachzero's rating: 1475 &rarr; <strong>1451<\/strong><br \/>(-24 for losing)

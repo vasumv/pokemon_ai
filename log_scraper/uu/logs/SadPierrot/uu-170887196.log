@@ -1,0 +1,538 @@
+|join|pkmn21
+|join|SadPierrot
+|player|p1|pkmn21|170
+|player|p2|SadPierrot|238
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Reuniclus, M
+|poke|p1|Blissey, F
+|poke|p1|Nidoqueen, F
+|poke|p1|Alomomola, M
+|poke|p1|Ampharos, M
+|poke|p1|Crobat, F
+|poke|p2|Arcanine, F
+|poke|p2|Roserade, F
+|poke|p2|Empoleon, M
+|poke|p2|Noivern, F
+|poke|p2|Mienshao, F
+|poke|p2|Krookodile, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Crobat|Crobat, F|341\/341
+|switch|p2a: Roserade|Roserade, F|324\/324
+|turn|1
+|
+|switch|p2a: Arcanine|Arcanine, F|384\/384
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Crobat
+|-unboost|p1a: Crobat|atk|1
+|move|p1a: Crobat|U-turn|p2a: Arcanine
+|-resisted|p2a: Arcanine
+|-damage|p2a: Arcanine|367\/384
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534
+|
+|-heal|p2a: Arcanine|384\/384|[from] item: Leftovers
+|turn|2
+|
+|switch|p2a: Empoleon|Empoleon, M|372\/372
+|move|p1a: Alomomola|Knock Off|p2a: Empoleon
+|-damage|p2a: Empoleon|329\/372
+|-enditem|p2a: Empoleon|Leftovers|[from] move: Knock Off|[of] p1a: Alomomola
+|
+|turn|3
+|
+|switch|p1a: Ampharos|Ampharos, M|379\/379
+|move|p2a: Empoleon|Stealth Rock|p1a: Ampharos
+|-sidestart|p1: pkmn21|move: Stealth Rock
+|
+|turn|4
+|
+|switch|p2a: Roserade|Roserade, F|324\/324
+|detailschange|p1a: Ampharos|Ampharos-Mega, M
+|message|Ampharos has Mega Evolved into Mega Ampharos!
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p1a: Ampharos|Volt Switch|p2a: Roserade
+|-resisted|p2a: Roserade
+|-damage|p2a: Roserade|272\/324
+|
+|switch|p1a: Crobat|Crobat, F|341\/341
+|-damage|p1a: Crobat|256\/341|[from] Stealth Rock
+|
+|-heal|p1a: Crobat|277\/341|[from] item: Black Sludge
+|-heal|p2a: Roserade|292\/324|[from] item: Black Sludge
+|turn|5
+|
+|move|p1a: Crobat|Defog|p2a: Roserade
+|-unboost|p2a: Roserade|evasion|1
+|-sideend|p1: pkmn21|Stealth Rock|[from] move: Defog|[of] p1a: Crobat
+|move|p2a: Roserade|Sleep Powder|p1a: Crobat
+|-status|p1a: Crobat|slp
+|
+|-heal|p1a: Crobat|298\/341 slp|[from] item: Black Sludge
+|-heal|p2a: Roserade|312\/324|[from] item: Black Sludge
+|turn|6
+|
+|switch|p2a: Noivern|Noivern, F|311\/311
+|cant|p1a: Crobat|slp
+|
+|-heal|p1a: Crobat|319\/341 slp|[from] item: Black Sludge
+|turn|7
+|
+|switch|p1a: Blissey|Blissey, F|652\/652
+|move|p2a: Noivern|Draco Meteor|p1a: Blissey
+|-damage|p1a: Blissey|483\/652
+|-unboost|p2a: Noivern|spa|2
+|
+|-heal|p1a: Blissey|523\/652|[from] item: Leftovers
+|turn|8
+|
+|switch|p2a: Roserade|Roserade, F|312\/324
+|move|p1a: Blissey|Toxic|p2a: Roserade|[miss]
+|-miss|p1a: Blissey|p2a: Roserade
+|
+|-heal|p2a: Roserade|324\/324|[from] item: Black Sludge
+|-heal|p1a: Blissey|563\/652|[from] item: Leftovers
+|turn|9
+|
+|switch|p1a: Crobat|Crobat, F|319\/341 slp
+|move|p2a: Roserade|Leech Seed|p1a: Crobat
+|-start|p1a: Crobat|move: Leech Seed
+|
+|-heal|p1a: Crobat|340\/341 slp|[from] item: Black Sludge
+|-damage|p1a: Crobat|298\/341 slp|[from] Leech Seed|[of] p2a: Roserade
+|turn|10
+|
+|switch|p2a: Krookodile|Krookodile, M|332\/332
+|cant|p1a: Crobat|slp
+|
+|-heal|p1a: Crobat|319\/341 slp|[from] item: Black Sludge
+|-damage|p1a: Crobat|277\/341 slp|[from] Leech Seed|[of] p2a: Krookodile
+|turn|11
+|
+|move|p2a: Krookodile|Knock Off|p1a: Crobat
+|-damage|p1a: Crobat|70\/341 slp
+|-enditem|p1a: Crobat|Black Sludge|[from] move: Knock Off|[of] p2a: Krookodile
+|-curestatus|p1a: Crobat|slp
+|move|p1a: Crobat|U-turn|p2a: Krookodile
+|-supereffective|p2a: Krookodile
+|-damage|p2a: Krookodile|186\/332
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534
+|
+|turn|12
+|
+|switch|p2a: Empoleon|Empoleon, M|329\/372
+|move|p1a: Alomomola|Knock Off|p2a: Empoleon
+|-damage|p2a: Empoleon|298\/372
+|
+|turn|13
+|
+|switch|p1a: Crobat|Crobat, F|70\/341
+|move|p2a: Empoleon|Stealth Rock|p1a: Crobat
+|-sidestart|p1: pkmn21|move: Stealth Rock
+|
+|turn|14
+|
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-heal|p1a: Crobat|241\/341
+|move|p2a: Empoleon|Scald|p1a: Crobat
+|-damage|p1a: Crobat|117\/341
+|
+|turn|15
+|
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-heal|p1a: Crobat|288\/341
+|move|p2a: Empoleon|Scald|p1a: Crobat
+|-damage|p1a: Crobat|153\/341
+|
+|turn|16
+|
+|move|p1a: Crobat|Defog|p2a: Empoleon
+|-unboost|p2a: Empoleon|evasion|1
+|-sideend|p1: pkmn21|Stealth Rock|[from] move: Defog|[of] p1a: Crobat
+|move|p2a: Empoleon|Scald|p1a: Crobat
+|-damage|p1a: Crobat|30\/341
+|
+|turn|17
+|
+|move|p1a: Crobat|U-turn|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|274\/372
+|
+|switch|p1a: Ampharos|Ampharos-Mega, M|379\/379
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p2a: Empoleon|Scald|p1a: Ampharos
+|-resisted|p1a: Ampharos
+|-damage|p1a: Ampharos|328\/379
+|
+|turn|18
+|
+|switch|p2a: Krookodile|Krookodile, M|186\/332
+|move|p1a: Ampharos|Thunderbolt|p2a: Krookodile
+|-immune|p2a: Krookodile|[msg]
+|
+|turn|19
+|
+|switch|p1a: Crobat|Crobat, F|30\/341
+|move|p2a: Krookodile|Earthquake|p1a: Crobat
+|-immune|p1a: Crobat|[msg]
+|
+|turn|20
+|
+|switch|p2a: Empoleon|Empoleon, M|274\/372
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-heal|p1a: Crobat|201\/341
+|
+|turn|21
+|
+|move|p1a: Crobat|U-turn|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|246\/372
+|
+|switch|p1a: Ampharos|Ampharos-Mega, M|328\/379
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p2a: Empoleon|Stealth Rock|p1a: Ampharos
+|-sidestart|p1: pkmn21|move: Stealth Rock
+|
+|turn|22
+|
+|switch|p2a: Roserade|Roserade, F|324\/324
+|move|p1a: Ampharos|Focus Blast|p2a: Roserade
+|-crit|p2a: Roserade
+|-resisted|p2a: Roserade
+|-damage|p2a: Roserade|230\/324
+|
+|-heal|p2a: Roserade|250\/324|[from] item: Black Sludge
+|turn|23
+|
+|move|p2a: Roserade|Sleep Powder|p1a: Ampharos
+|-status|p1a: Ampharos|slp
+|cant|p1a: Ampharos|slp
+|
+|-heal|p2a: Roserade|270\/324|[from] item: Black Sludge
+|turn|24
+|
+|switch|p1a: Crobat|Crobat, F|201\/341
+|-damage|p1a: Crobat|116\/341|[from] Stealth Rock
+|move|p2a: Roserade|Leech Seed|p1a: Crobat|[miss]
+|-miss|p2a: Roserade|p1a: Crobat
+|
+|-heal|p2a: Roserade|290\/324|[from] item: Black Sludge
+|turn|25
+|
+|switch|p2a: Empoleon|Empoleon, M|246\/372
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-heal|p1a: Crobat|287\/341
+|
+|turn|26
+|
+|move|p1a: Crobat|U-turn|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|222\/372
+|
+|switch|p1a: Blissey|Blissey, F|563\/652
+|-damage|p1a: Blissey|482\/652|[from] Stealth Rock
+|move|p2a: Empoleon|Scald|p1a: Blissey
+|-damage|p1a: Blissey|410\/652
+|-status|p1a: Blissey|brn
+|
+|-heal|p1a: Blissey|450\/652 brn|[from] item: Leftovers
+|-damage|p1a: Blissey|369\/652 brn|[from] brn
+|turn|27
+|
+|move|p1a: Blissey|Aromatherapy|p1a: Blissey
+|-cureteam|p1a: Blissey|[from] move: Aromatherapy
+|move|p2a: Empoleon|Roar|p1a: Blissey
+|drag|p1a: Ampharos|Ampharos-Mega, M|328\/379
+|-damage|p1a: Ampharos|281\/379|[from] Stealth Rock
+|-ability|p1a: Ampharos|Mold Breaker
+|
+|turn|28
+|
+|switch|p2a: Noivern|Noivern, F|311\/311
+|move|p1a: Ampharos|Focus Blast|p2a: Noivern
+|-resisted|p2a: Noivern
+|-damage|p2a: Noivern|204\/311
+|
+|turn|29
+|
+|switch|p1a: Blissey|Blissey, F|369\/652
+|-damage|p1a: Blissey|288\/652|[from] Stealth Rock
+|move|p2a: Noivern|Draco Meteor|p1a: Blissey
+|-damage|p1a: Blissey|119\/652
+|-unboost|p2a: Noivern|spa|2
+|
+|-heal|p1a: Blissey|159\/652|[from] item: Leftovers
+|turn|30
+|
+|move|p2a: Noivern|Draco Meteor|p1a: Blissey
+|-damage|p1a: Blissey|66\/652
+|-unboost|p2a: Noivern|spa|2
+|move|p1a: Blissey|Soft-Boiled|p1a: Blissey
+|-heal|p1a: Blissey|392\/652
+|
+|-heal|p1a: Blissey|432\/652|[from] item: Leftovers
+|turn|31
+|
+|switch|p2a: Roserade|Roserade, F|290\/324
+|move|p1a: Blissey|Toxic|p2a: Roserade
+|-fail|p2a: Roserade
+|
+|-heal|p2a: Roserade|310\/324|[from] item: Black Sludge
+|-heal|p1a: Blissey|472\/652|[from] item: Leftovers
+|turn|32
+|
+|move|p2a: Roserade|Sleep Powder|p1a: Blissey
+|-status|p1a: Blissey|slp
+|cant|p1a: Blissey|slp
+|
+|-heal|p2a: Roserade|324\/324|[from] item: Black Sludge
+|-heal|p1a: Blissey|512\/652 slp|[from] item: Leftovers
+|turn|33
+|
+|switch|p1a: Crobat|Crobat, F|287\/341
+|-damage|p1a: Crobat|202\/341|[from] Stealth Rock
+|move|p2a: Roserade|Sleep Powder|p1a: Crobat|[miss]
+|-miss|p2a: Roserade|p1a: Crobat
+|
+|turn|34
+|
+|switch|p2a: Arcanine|Arcanine, F|384\/384
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Crobat
+|-unboost|p1a: Crobat|atk|1
+|move|p1a: Crobat|Defog|p2a: Arcanine
+|-unboost|p2a: Arcanine|evasion|1
+|-sideend|p1: pkmn21|Stealth Rock|[from] move: Defog|[of] p1a: Crobat
+|
+|turn|35
+|
+|move|p1a: Crobat|U-turn|p2a: Arcanine
+|-crit|p2a: Arcanine
+|-resisted|p2a: Arcanine
+|-damage|p2a: Arcanine|346\/384
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534
+|move|p2a: Arcanine|Will-O-Wisp|p1a: Alomomola
+|-status|p1a: Alomomola|brn
+|
+|-heal|p2a: Arcanine|370\/384|[from] item: Leftovers
+|-damage|p1a: Alomomola|468\/534 brn|[from] brn
+|turn|36
+|
+|switch|p2a: Roserade|Roserade, F|324\/324
+|move|p1a: Alomomola|Knock Off|p2a: Roserade
+|-damage|p2a: Roserade|282\/324
+|-enditem|p2a: Roserade|Black Sludge|[from] move: Knock Off|[of] p1a: Alomomola
+|
+|-damage|p1a: Alomomola|402\/534 brn|[from] brn
+|turn|37
+|
+|switch|p1a: Crobat|Crobat, F|202\/341
+|move|p2a: Roserade|Sleep Powder|p1a: Crobat
+|-status|p1a: Crobat|slp
+|
+|turn|38
+|
+|switch|p1a: Blissey|Blissey, F|512\/652
+|move|p2a: Roserade|Leech Seed|p1a: Blissey
+|-start|p1a: Blissey|move: Leech Seed
+|
+|-heal|p1a: Blissey|552\/652|[from] item: Leftovers
+|-damage|p1a: Blissey|471\/652|[from] Leech Seed|[of] p2a: Roserade
+|-heal|p2a: Roserade|324\/324|[silent]
+|turn|39
+|
+|switch|p2a: Empoleon|Empoleon, M|222\/372
+|move|p1a: Blissey|Aromatherapy|p1a: Blissey
+|-cureteam|p1a: Blissey|[from] move: Aromatherapy
+|
+|-heal|p1a: Blissey|511\/652|[from] item: Leftovers
+|-damage|p1a: Blissey|430\/652|[from] Leech Seed|[of] p2a: Empoleon
+|-heal|p2a: Empoleon|303\/372|[silent]
+|turn|40
+|
+|switch|p1a: Ampharos|Ampharos-Mega, M|281\/379
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p2a: Empoleon|Scald|p1a: Ampharos
+|-crit|p1a: Ampharos
+|-resisted|p1a: Ampharos
+|-damage|p1a: Ampharos|216\/379
+|
+|turn|41
+|
+|switch|p2a: Roserade|Roserade, F|324\/324
+|move|p1a: Ampharos|Focus Blast|p2a: Roserade|[miss]
+|-miss|p1a: Ampharos|p2a: Roserade
+|
+|turn|42
+|
+|move|p2a: Roserade|Leech Seed|p1a: Ampharos
+|-start|p1a: Ampharos|move: Leech Seed
+|move|p1a: Ampharos|Dragon Pulse|p2a: Roserade
+|-damage|p2a: Roserade|180\/324
+|
+|-damage|p1a: Ampharos|169\/379|[from] Leech Seed|[of] p2a: Roserade
+|-heal|p2a: Roserade|227\/324|[silent]
+|turn|43
+|
+|move|p2a: Roserade|Giga Drain|p1a: Ampharos
+|-resisted|p1a: Ampharos
+|-damage|p1a: Ampharos|121\/379
+|-heal|p2a: Roserade|251\/324|[from] drain|[of] p1a: Ampharos
+|move|p1a: Ampharos|Volt Switch|p2a: Roserade
+|-resisted|p2a: Roserade
+|-damage|p2a: Roserade|199\/324
+|
+|switch|p1a: Crobat|Crobat, F|202\/341
+|
+|turn|44
+|
+|switch|p2a: Empoleon|Empoleon, M|303\/372
+|move|p1a: Crobat|Brave Bird|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|238\/372
+|-damage|p1a: Crobat|181\/341|[from] recoil|[of] p2a: Empoleon
+|
+|turn|45
+|
+|move|p1a: Crobat|U-turn|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|214\/372
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534
+|move|p2a: Empoleon|Stealth Rock|p1a: Alomomola
+|-sidestart|p1: pkmn21|move: Stealth Rock
+|
+|turn|46
+|
+|move|p1a: Alomomola|Wish|p1a: Alomomola
+|move|p2a: Empoleon|Scald|p1a: Alomomola
+|-resisted|p1a: Alomomola
+|-damage|p1a: Alomomola|440\/534
+|
+|turn|47
+|
+|switch|p1a: Ampharos|Ampharos-Mega, M|121\/379
+|-damage|p1a: Ampharos|74\/379|[from] Stealth Rock
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p2a: Empoleon|Roar|p1a: Ampharos
+|drag|p1a: Blissey|Blissey, F|430\/652
+|-damage|p1a: Blissey|349\/652|[from] Stealth Rock
+|
+|-heal|p1a: Blissey|616\/652|[from] move: Wish|[wisher] Alomomola
+|-heal|p1a: Blissey|652\/652|[from] item: Leftovers
+|turn|48
+|
+|move|p2a: Empoleon|Scald|p1a: Blissey
+|-damage|p1a: Blissey|580\/652
+|move|p1a: Blissey|Seismic Toss|p2a: Empoleon
+|-damage|p2a: Empoleon|114\/372
+|
+|-heal|p1a: Blissey|620\/652|[from] item: Leftovers
+|turn|49
+|
+|switch|p2a: Roserade|Roserade, F|199\/324
+|move|p1a: Blissey|Seismic Toss|p2a: Roserade
+|-damage|p2a: Roserade|99\/324
+|
+|-heal|p1a: Blissey|652\/652|[from] item: Leftovers
+|turn|50
+|
+|move|p2a: Roserade|Leech Seed|p1a: Blissey
+|-start|p1a: Blissey|move: Leech Seed
+|move|p1a: Blissey|Seismic Toss|p2a: Roserade
+|-damage|p2a: Roserade|0 fnt
+|faint|p2a: Roserade
+|
+|
+|switch|p2a: Empoleon|Empoleon, M|114\/372
+|turn|51
+|
+|move|p2a: Empoleon|Scald|p1a: Blissey
+|-damage|p1a: Blissey|552\/652
+|-status|p1a: Blissey|brn
+|move|p1a: Blissey|Seismic Toss|p2a: Empoleon
+|-damage|p2a: Empoleon|14\/372
+|
+|-heal|p1a: Blissey|592\/652 brn|[from] item: Leftovers
+|-damage|p1a: Blissey|511\/652 brn|[from] Leech Seed|[of] p2a: Empoleon
+|-heal|p2a: Empoleon|95\/372|[silent]
+|-damage|p1a: Blissey|430\/652 brn|[from] brn
+|turn|52
+|
+|switch|p2a: Krookodile|Krookodile, M|186\/332
+|move|p1a: Blissey|Seismic Toss|p2a: Krookodile
+|-damage|p2a: Krookodile|86\/332
+|
+|-heal|p1a: Blissey|470\/652 brn|[from] item: Leftovers
+|-damage|p1a: Blissey|389\/652 brn|[from] Leech Seed|[of] p2a: Krookodile
+|-heal|p2a: Krookodile|167\/332|[silent]
+|-damage|p1a: Blissey|308\/652 brn|[from] brn
+|turn|53
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|382\/382
+|-damage|p1a: Nidoqueen|359\/382|[from] Stealth Rock
+|move|p2a: Krookodile|Knock Off|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|239\/382
+|-enditem|p1a: Nidoqueen|Black Sludge|[from] move: Knock Off|[of] p2a: Krookodile
+|
+|turn|54
+|
+|switch|p2a: Empoleon|Empoleon, M|95\/372
+|move|p1a: Nidoqueen|Ice Beam|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|76\/372
+|
+|turn|55
+|
+|move|p1a: Nidoqueen|Earth Power|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|0 fnt
+|faint|p2a: Empoleon
+|
+|
+|switch|p2a: Noivern|Noivern, F|204\/311
+|turn|56
+|
+|switch|p2a: Mienshao|Mienshao, F|271\/271
+|move|p1a: Nidoqueen|Ice Beam|p2a: Mienshao
+|-damage|p2a: Mienshao|158\/271
+|
+|turn|57
+|
+|move|p2a: Mienshao|Fake Out|p1a: Nidoqueen
+|-crit|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|169\/382
+|-damage|p2a: Mienshao|131\/271|[from] item: Life Orb
+|cant|p1a: Nidoqueen|flinch
+|
+|turn|58
+|
+|move|p2a: Mienshao|High Jump Kick|p1a: Nidoqueen|[miss]
+|-miss|p2a: Mienshao|p1a: Nidoqueen
+|-damage|p2a: Mienshao|0 fnt|[from] highjumpkick
+|faint|p2a: Mienshao
+|move|p1a: Nidoqueen|Ice Beam|p2: Mienshao|[notarget]
+|-notarget
+|
+|-message|SadPierrot forfeited.
+|
+|win|pkmn21
+|raw|Ladder updating...
+|raw|pkmn21's rating: 1461 &rarr; <strong>1477<\/strong><br \/>(+16 for winning)
+|raw|SadPierrot's rating: 1391 &rarr; <strong>1375<\/strong><br \/>(-16 for losing)
+|leave|SadPierrot
+|player|p2

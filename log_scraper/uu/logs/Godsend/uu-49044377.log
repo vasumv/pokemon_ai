@@ -1,0 +1,790 @@
+|join|Head Miss
+|join|Godsend
+|player|p1|Head Miss|2
+|player|p2|Godsend|265
+|gametype|singles
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Xatu, F
+|poke|p1|Empoleon, F
+|poke|p1|Zapdos
+|poke|p1|Weezing, M
+|poke|p1|Roserade, F
+|poke|p1|Archeops, F
+|poke|p2|Hitmontop, M
+|poke|p2|Arcanine, M
+|poke|p2|Raikou
+|poke|p2|Roserade, M
+|poke|p2|Rotom-Heat
+|poke|p2|Golurk
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Archeops|Archeops, F|291\/291
+|switch|p2a: Raikou|Raikou|353\/353
+|-ability|p2a: Raikou|Pressure
+|turn|1
+|callback|decision
+|
+|move|p1a: Archeops|Earthquake|p2a: Raikou
+|-supereffective|p2a: Raikou
+|-damage|p2a: Raikou|69\/353
+|move|p2a: Raikou|Thunderbolt|p1a: Archeops
+|-supereffective|p1a: Archeops
+|-damage|p1a: Archeops|0 fnt
+|faint|p1a: Archeops
+|
+|-heal|p2a: Raikou|91\/353|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, F|323\/323
+|turn|2
+|callback|decision
+|
+|move|p2a: Raikou|Substitute|p2a: Raikou
+|-start|p2a: Raikou|Substitute
+|-damage|p2a: Raikou|3\/353
+|move|p1a: Roserade|Sludge Bomb|p2a: Raikou
+|-end|p2a: Raikou|Substitute
+|
+|-heal|p2a: Raikou|25\/353|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p2a: Raikou|Hidden Power|p1a: Roserade
+|-supereffective|p1a: Roserade
+|-damage|p1a: Roserade|241\/323
+|move|p1a: Roserade|Spikes|p2a: Raikou
+|-sidestart|p2: Godsend|Spikes
+|
+|-heal|p2a: Raikou|47\/353|[from] item: Leftovers
+|-heal|p1a: Roserade|261\/323|[from] item: Black Sludge
+|turn|4
+|callback|decision
+|
+|move|p2a: Raikou|Hidden Power|p1a: Roserade
+|-supereffective|p1a: Roserade
+|-damage|p1a: Roserade|179\/323
+|move|p1a: Roserade|Sludge Bomb|p2a: Raikou
+|-damage|p2a: Raikou|0 fnt
+|faint|p2a: Raikou
+|
+|-heal|p1a: Roserade|199\/323|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|241\/241
+|turn|5
+|callback|decision
+|
+|switch|p1a: Empoleon|Empoleon, F|372\/372
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Empoleon
+|-supereffective|p1a: Empoleon
+|-damage|p1a: Empoleon|228\/372
+|callback|decision
+|
+|switch|p2a: Hitmontop|Hitmontop, M|304\/304
+|-damage|p2a: Hitmontop|266\/304|[from] Spikes
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Empoleon
+|-unboost|p1a: Empoleon|atk|1
+|
+|-heal|p1a: Empoleon|251\/372|[from] item: Leftovers
+|-heal|p2a: Hitmontop|285\/304|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p1a: Weezing|Weezing, M|334\/334
+|move|p2a: Hitmontop|Rapid Spin|p1a: Weezing
+|-damage|p1a: Weezing|323\/334
+|-sideend|p2: Godsend|Spikes|[from] move: Rapid Spin|[of] p2a: Hitmontop
+|
+|-heal|p1a: Weezing|334\/334|[from] item: Black Sludge
+|-heal|p2a: Hitmontop|304\/304|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|241\/241
+|move|p1a: Weezing|Will-O-Wisp|p2a: Rotom-Heat
+|-fail|p2a: Rotom-Heat
+|
+|turn|8
+|callback|decision
+|
+|move|p2a: Rotom-Heat|Trick|p1a: Weezing
+|-activate|p2a: Rotom-Heat|move: Trick|[of] p1a: Weezing
+|-item|p1a: Weezing|Choice Scarf|[from] move: Trick
+|-item|p2a: Rotom-Heat|Black Sludge|[from] move: Trick
+|move|p1a: Weezing|Pain Split|p2a: Rotom-Heat
+|-sethp|p2a: Rotom-Heat|241\/241|p1a: Weezing|287\/334|[from] move: Pain Split
+|
+|-damage|p2a: Rotom-Heat|211\/241|[from] item: Black Sludge
+|turn|9
+|callback|decision
+|
+|switch|p1a: Zapdos|Zapdos|383\/383
+|-ability|p1a: Zapdos|Pressure
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Zapdos
+|-damage|p1a: Zapdos|265\/383
+|callback|decision
+|
+|switch|p2a: Arcanine|Arcanine, M|384\/384
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Zapdos
+|-unboost|p1a: Zapdos|atk|1
+|
+|-heal|p1a: Zapdos|288\/383|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-start|p1a: Zapdos|Substitute
+|-damage|p1a: Zapdos|193\/383
+|move|p2a: Arcanine|Will-O-Wisp|p1a: Zapdos
+|
+|-heal|p1a: Zapdos|216\/383|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p1a: Zapdos|Thunderbolt|p2a: Arcanine
+|-damage|p2a: Arcanine|272\/384
+|-status|p2a: Arcanine|par
+|move|p2a: Arcanine|Flare Blitz|p1a: Zapdos
+|-end|p1a: Zapdos|Substitute
+|-damage|p2a: Arcanine|241\/384 par|[from] recoil|[of] p1a: Zapdos
+|
+|-heal|p1a: Zapdos|239\/383|[from] item: Leftovers
+|-heal|p2a: Arcanine|265\/384 par|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-start|p1a: Zapdos|Substitute
+|-damage|p1a: Zapdos|144\/383
+|move|p2a: Arcanine|Flare Blitz|p1a: Zapdos
+|-end|p1a: Zapdos|Substitute
+|-damage|p2a: Arcanine|234\/384 par|[from] recoil|[of] p1a: Zapdos
+|
+|-heal|p1a: Zapdos|167\/383|[from] item: Leftovers
+|-heal|p2a: Arcanine|258\/384 par|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-start|p1a: Zapdos|Substitute
+|-damage|p1a: Zapdos|72\/383
+|move|p2a: Arcanine|Flare Blitz|p1a: Zapdos
+|-end|p1a: Zapdos|Substitute
+|-damage|p2a: Arcanine|227\/384 par|[from] recoil|[of] p1a: Zapdos
+|
+|-heal|p1a: Zapdos|95\/383|[from] item: Leftovers
+|-heal|p2a: Arcanine|251\/384 par|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|287\/383
+|move|p2a: Arcanine|Will-O-Wisp|p1a: Zapdos|[miss]
+|-miss|p2a: Arcanine|p1a: Zapdos
+|
+|-heal|p1a: Zapdos|310\/383|[from] item: Leftovers
+|-heal|p2a: Arcanine|275\/384 par|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-start|p1a: Zapdos|Substitute
+|-damage|p1a: Zapdos|215\/383
+|cant|p2a: Arcanine|par
+|
+|-heal|p1a: Zapdos|238\/383|[from] item: Leftovers
+|-heal|p2a: Arcanine|299\/384 par|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Zapdos|Thunderbolt|p2a: Arcanine
+|-damage|p2a: Arcanine|181\/384 par
+|move|p2a: Arcanine|Flare Blitz|p1a: Zapdos
+|-end|p1a: Zapdos|Substitute
+|-damage|p2a: Arcanine|150\/384 par|[from] recoil|[of] p1a: Zapdos
+|
+|-heal|p1a: Zapdos|261\/383|[from] item: Leftovers
+|-heal|p2a: Arcanine|174\/384 par|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Zapdos|Thunderbolt|p2a: Arcanine
+|-damage|p2a: Arcanine|68\/384 par
+|move|p2a: Arcanine|Morning Sun|p2a: Arcanine
+|-heal|p2a: Arcanine|260\/384 par
+|
+|-heal|p1a: Zapdos|284\/383|[from] item: Leftovers
+|-heal|p2a: Arcanine|284\/384 par|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-start|p1a: Zapdos|Substitute
+|-damage|p1a: Zapdos|189\/383
+|move|p2a: Arcanine|Flare Blitz|p1a: Zapdos
+|-end|p1a: Zapdos|Substitute
+|-damage|p2a: Arcanine|253\/384 par|[from] recoil|[of] p1a: Zapdos
+|
+|-heal|p1a: Zapdos|212\/383|[from] item: Leftovers
+|-heal|p2a: Arcanine|277\/384 par|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|383\/383
+|move|p2a: Arcanine|Flare Blitz|p1a: Zapdos
+|-damage|p1a: Zapdos|224\/383
+|-damage|p2a: Arcanine|225\/384 par|[from] recoil|[of] p1a: Zapdos
+|
+|-heal|p1a: Zapdos|247\/383|[from] item: Leftovers
+|-heal|p2a: Arcanine|249\/384 par|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-start|p1a: Zapdos|Substitute
+|-damage|p1a: Zapdos|152\/383
+|move|p2a: Arcanine|Will-O-Wisp|p1a: Zapdos
+|
+|-heal|p1a: Zapdos|175\/383|[from] item: Leftovers
+|-heal|p2a: Arcanine|273\/384 par|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p1a: Zapdos|Thunderbolt|p2a: Arcanine
+|-damage|p2a: Arcanine|159\/384 par
+|move|p2a: Arcanine|Flare Blitz|p1a: Zapdos
+|-end|p1a: Zapdos|Substitute
+|-damage|p2a: Arcanine|128\/384 par|[from] recoil|[of] p1a: Zapdos
+|
+|-heal|p1a: Zapdos|198\/383|[from] item: Leftovers
+|-heal|p2a: Arcanine|152\/384 par|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-start|p1a: Zapdos|Substitute
+|-damage|p1a: Zapdos|103\/383
+|move|p2a: Arcanine|Morning Sun|p2a: Arcanine
+|-heal|p2a: Arcanine|344\/384 par
+|
+|-heal|p1a: Zapdos|126\/383|[from] item: Leftovers
+|-heal|p2a: Arcanine|368\/384 par|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|318\/383
+|cant|p2a: Arcanine|par
+|
+|-heal|p1a: Zapdos|341\/383|[from] item: Leftovers
+|-heal|p2a: Arcanine|384\/384 par|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p1a: Zapdos|Thunderbolt|p2a: Arcanine
+|-damage|p2a: Arcanine|263\/384 par
+|move|p2a: Arcanine|Flare Blitz|p1a: Zapdos
+|-end|p1a: Zapdos|Substitute
+|-damage|p2a: Arcanine|232\/384 par|[from] recoil|[of] p1a: Zapdos
+|
+|-heal|p1a: Zapdos|364\/383|[from] item: Leftovers
+|-heal|p2a: Arcanine|256\/384 par|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|211\/241
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-start|p1a: Zapdos|Substitute
+|-damage|p1a: Zapdos|269\/383
+|
+|-heal|p1a: Zapdos|292\/383|[from] item: Leftovers
+|-damage|p2a: Rotom-Heat|181\/241|[from] item: Black Sludge
+|turn|26
+|callback|decision
+|
+|move|p1a: Zapdos|Thunderbolt|p2a: Rotom-Heat
+|-resisted|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|115\/241
+|move|p2a: Rotom-Heat|Overheat|p1a: Zapdos|[miss]
+|-miss|p2a: Rotom-Heat|p1a: Zapdos
+|
+|-heal|p1a: Zapdos|315\/383|[from] item: Leftovers
+|-damage|p2a: Rotom-Heat|85\/241|[from] item: Black Sludge
+|turn|27
+|callback|decision
+|
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-fail|p1a: Zapdos|move: Substitute
+|move|p2a: Rotom-Heat|Overheat|p1a: Zapdos
+|-end|p1a: Zapdos|Substitute
+|-unboost|p2a: Rotom-Heat|spa|2
+|
+|-heal|p1a: Zapdos|338\/383|[from] item: Leftovers
+|-damage|p2a: Rotom-Heat|55\/241|[from] item: Black Sludge
+|turn|28
+|callback|decision
+|
+|switch|p2a: Roserade|Roserade, M|295\/295
+|move|p1a: Zapdos|Thunderbolt|p2a: Roserade
+|-resisted|p2a: Roserade
+|-damage|p2a: Roserade|226\/295
+|
+|-heal|p1a: Zapdos|361\/383|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-start|p1a: Zapdos|Substitute
+|-damage|p1a: Zapdos|266\/383
+|move|p2a: Roserade|Sludge Bomb|p1a: Zapdos
+|-crit|p1a: Zapdos
+|-end|p1a: Zapdos|Substitute
+|-damage|p2a: Roserade|197\/295|[from] item: Life Orb
+|
+|-heal|p1a: Zapdos|289\/383|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-start|p1a: Zapdos|Substitute
+|-damage|p1a: Zapdos|194\/383
+|move|p2a: Roserade|Sludge Bomb|p1a: Zapdos
+|-end|p1a: Zapdos|Substitute
+|-damage|p2a: Roserade|168\/295|[from] item: Life Orb
+|
+|-heal|p1a: Zapdos|217\/383|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|move|p1a: Zapdos|Hidden Power|p2a: Roserade
+|-supereffective|p2a: Roserade
+|-damage|p2a: Roserade|36\/295
+|move|p2a: Roserade|Sludge Bomb|p1a: Zapdos
+|-damage|p1a: Zapdos|0 fnt
+|-damage|p2a: Roserade|7\/295|[from] item: Life Orb
+|faint|p1a: Zapdos
+|
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, F|199\/323
+|turn|32
+|callback|decision
+|
+|move|p2a: Roserade|Rest|p2a: Roserade
+|-status|p2a: Roserade|slp
+|-heal|p2a: Roserade|295\/295 slp|[silent]
+|-status|p2a: Roserade|slp|[from] move: Rest
+|move|p1a: Roserade|Sludge Bomb|p2a: Roserade
+|-damage|p2a: Roserade|178\/295 slp
+|
+|-heal|p1a: Roserade|219\/323|[from] item: Black Sludge
+|turn|33
+|callback|decision
+|
+|switch|p2a: Arcanine|Arcanine, M|256\/384 par
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Roserade
+|-unboost|p1a: Roserade|atk|1
+|move|p1a: Roserade|Sludge Bomb|p2a: Arcanine
+|-damage|p2a: Arcanine|156\/384 par
+|
+|-heal|p1a: Roserade|239\/323|[from] item: Black Sludge
+|-heal|p2a: Arcanine|180\/384 par|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|move|p1a: Roserade|Sludge Bomb|p2a: Arcanine
+|-damage|p2a: Arcanine|65\/384 par
+|move|p2a: Arcanine|Will-O-Wisp|p1a: Roserade
+|-status|p1a: Roserade|brn
+|
+|-heal|p1a: Roserade|259\/323 brn|[from] item: Black Sludge
+|-heal|p2a: Arcanine|89\/384 par|[from] item: Leftovers
+|-damage|p1a: Roserade|219\/323 brn|[from] brn
+|turn|35
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|55\/241
+|move|p1a: Roserade|Sludge Bomb|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|0 fnt
+|faint|p2a: Rotom-Heat
+|
+|-heal|p1a: Roserade|239\/323 brn|[from] item: Black Sludge
+|-damage|p1a: Roserade|199\/323 brn|[from] brn
+|callback|decision
+|
+|switch|p2a: Roserade|Roserade, M|178\/295
+|turn|36
+|callback|decision
+|
+|move|p2a: Roserade|Sludge Bomb|p1a: Roserade
+|-damage|p1a: Roserade|35\/323 brn
+|-damage|p2a: Roserade|149\/295|[from] item: Life Orb
+|move|p1a: Roserade|Rest|p1a: Roserade
+|-status|p1a: Roserade|slp
+|-heal|p1a: Roserade|323\/323 slp|[silent]
+|-status|p1a: Roserade|slp|[from] move: Rest
+|
+|turn|37
+|callback|decision
+|
+|switch|p1a: Xatu|Xatu, F|333\/333
+|move|p2a: Roserade|Leaf Storm|p1a: Xatu
+|-resisted|p1a: Xatu
+|-damage|p1a: Xatu|111\/333
+|-unboost|p2a: Roserade|spa|2
+|-damage|p2a: Roserade|120\/295|[from] item: Life Orb
+|
+|turn|38
+|callback|decision
+|
+|switch|p2a: Arcanine|Arcanine, M|89\/384 par
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Xatu
+|-unboost|p1a: Xatu|atk|1
+|move|p1a: Xatu|Roost|p1a: Xatu
+|-heal|p1a: Xatu|278\/333
+|
+|-heal|p2a: Arcanine|113\/384 par|[from] item: Leftovers
+|turn|39
+|callback|decision
+|
+|move|p1a: Xatu|Night Shade|p2a: Arcanine
+|-damage|p2a: Arcanine|13\/384 par
+|move|p2a: Arcanine|Morning Sun|p2a: Arcanine
+|-heal|p2a: Arcanine|205\/384 par
+|
+|-heal|p2a: Arcanine|229\/384 par|[from] item: Leftovers
+|turn|40
+|callback|decision
+|
+|move|p1a: Xatu|Night Shade|p2a: Arcanine
+|-damage|p2a: Arcanine|129\/384 par
+|cant|p2a: Arcanine|par
+|
+|-heal|p2a: Arcanine|153\/384 par|[from] item: Leftovers
+|turn|41
+|callback|decision
+|
+|move|p1a: Xatu|Night Shade|p2a: Arcanine
+|-damage|p2a: Arcanine|53\/384 par
+|move|p2a: Arcanine|Morning Sun|p2a: Arcanine
+|-heal|p2a: Arcanine|245\/384 par
+|
+|-heal|p2a: Arcanine|269\/384 par|[from] item: Leftovers
+|turn|42
+|callback|decision
+|
+|move|p1a: Xatu|Night Shade|p2a: Arcanine
+|-damage|p2a: Arcanine|169\/384 par
+|move|p2a: Arcanine|Flare Blitz|p1a: Xatu
+|-damage|p1a: Xatu|133\/333
+|-damage|p2a: Arcanine|121\/384 par|[from] recoil|[of] p1a: Xatu
+|-damage|p2a: Arcanine|57\/384 par|[from] item: Rocky Helmet|[of] p1a: Xatu
+|
+|-heal|p2a: Arcanine|81\/384 par|[from] item: Leftovers
+|turn|43
+|callback|decision
+|
+|move|p1a: Xatu|Roost|p1a: Xatu
+|-heal|p1a: Xatu|300\/333
+|cant|p2a: Arcanine|par
+|
+|-heal|p2a: Arcanine|105\/384 par|[from] item: Leftovers
+|turn|44
+|callback|decision
+|
+|move|p1a: Xatu|Night Shade|p2a: Arcanine
+|-damage|p2a: Arcanine|5\/384 par
+|move|p2a: Arcanine|Morning Sun|p2a: Arcanine
+|-heal|p2a: Arcanine|197\/384 par
+|
+|-heal|p2a: Arcanine|221\/384 par|[from] item: Leftovers
+|turn|45
+|callback|decision
+|
+|move|p1a: Xatu|Night Shade|p2a: Arcanine
+|-damage|p2a: Arcanine|121\/384 par
+|move|p2a: Arcanine|Flare Blitz|p1a: Xatu
+|-damage|p1a: Xatu|170\/333
+|-damage|p2a: Arcanine|78\/384 par|[from] recoil|[of] p1a: Xatu
+|-damage|p2a: Arcanine|14\/384 par|[from] item: Rocky Helmet|[of] p1a: Xatu
+|
+|-heal|p2a: Arcanine|38\/384 par|[from] item: Leftovers
+|turn|46
+|callback|decision
+|
+|move|p1a: Xatu|Roost|p1a: Xatu
+|-heal|p1a: Xatu|333\/333
+|move|p2a: Arcanine|Flare Blitz|p1a: Xatu
+|-damage|p1a: Xatu|201\/333
+|-damage|p2a: Arcanine|0 fnt|[from] recoil|[of] p1a: Xatu
+|faint|p2a: Arcanine
+|
+|callback|decision
+|
+|switch|p2a: Golurk|Golurk|382\/382
+|turn|47
+|callback|decision
+|
+|move|p1a: Xatu|Roost|p1a: Xatu
+|-heal|p1a: Xatu|333\/333
+|move|p2a: Golurk|Shadow Punch|p1a: Xatu
+|-supereffective|p1a: Xatu
+|-damage|p1a: Xatu|183\/333
+|-damage|p2a: Golurk|319\/382|[from] item: Rocky Helmet|[of] p1a: Xatu
+|
+|-heal|p2a: Golurk|342\/382|[from] item: Leftovers
+|turn|48
+|callback|decision
+|
+|move|p1a: Xatu|Roost|p1a: Xatu
+|-heal|p1a: Xatu|333\/333
+|move|p2a: Golurk|Shadow Punch|p1a: Xatu
+|-supereffective|p1a: Xatu
+|-damage|p1a: Xatu|189\/333
+|-damage|p2a: Golurk|279\/382|[from] item: Rocky Helmet|[of] p1a: Xatu
+|
+|-heal|p2a: Golurk|302\/382|[from] item: Leftovers
+|turn|49
+|callback|decision
+|
+|move|p1a: Xatu|Roost|p1a: Xatu
+|-heal|p1a: Xatu|333\/333
+|move|p2a: Golurk|Earthquake|p1a: Xatu
+|-damage|p1a: Xatu|215\/333
+|
+|-heal|p2a: Golurk|325\/382|[from] item: Leftovers
+|turn|50
+|callback|decision
+|
+|move|p1a: Xatu|Night Shade|p2a: Golurk
+|-damage|p2a: Golurk|225\/382
+|move|p2a: Golurk|Shadow Punch|p1a: Xatu
+|-supereffective|p1a: Xatu
+|-damage|p1a: Xatu|57\/333
+|-damage|p2a: Golurk|162\/382|[from] item: Rocky Helmet|[of] p1a: Xatu
+|
+|-heal|p2a: Golurk|185\/382|[from] item: Leftovers
+|turn|51
+|callback|decision
+|
+|switch|p2a: Roserade|Roserade, M|120\/295
+|move|p1a: Xatu|Roost|p1a: Xatu
+|-heal|p1a: Xatu|224\/333
+|
+|turn|52
+|callback|decision
+|
+|switch|p1a: Weezing|Weezing, M|287\/334
+|move|p2a: Roserade|Sludge Bomb|p1a: Weezing
+|-resisted|p1a: Weezing
+|-damage|p1a: Weezing|128\/334
+|-damage|p2a: Roserade|91\/295|[from] item: Life Orb
+|
+|turn|53
+|callback|decision
+|
+|move|p2a: Roserade|Rest|p2a: Roserade
+|-status|p2a: Roserade|slp
+|-heal|p2a: Roserade|295\/295 slp|[silent]
+|-status|p2a: Roserade|slp|[from] move: Rest
+|move|p1a: Weezing|Flamethrower|p2a: Roserade
+|-supereffective|p2a: Roserade
+|-damage|p2a: Roserade|173\/295 slp
+|
+|turn|54
+|callback|decision
+|
+|switch|p2a: Hitmontop|Hitmontop, M|304\/304
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Weezing
+|-unboost|p1a: Weezing|atk|1
+|switch|p1a: Xatu|Xatu, F|224\/333
+|
+|turn|55
+|callback|decision
+|
+|move|p1a: Xatu|Thunder Wave|p2a: Hitmontop
+|-status|p2a: Hitmontop|par
+|cant|p2a: Hitmontop|par
+|
+|turn|56
+|callback|decision
+|
+|move|p1a: Xatu|Roost|p1a: Xatu
+|-heal|p1a: Xatu|333\/333
+|move|p2a: Hitmontop|Stone Edge|p1a: Xatu
+|-damage|p1a: Xatu|265\/333
+|
+|turn|57
+|callback|decision
+|
+|move|p1a: Xatu|Roost|p1a: Xatu
+|-heal|p1a: Xatu|333\/333
+|move|p2a: Hitmontop|Stone Edge|p1a: Xatu
+|-crit|p1a: Xatu
+|-damage|p1a: Xatu|200\/333
+|
+|turn|58
+|callback|decision
+|
+|move|p1a: Xatu|Roost|p1a: Xatu
+|-heal|p1a: Xatu|333\/333
+|move|p2a: Hitmontop|Stone Edge|p1a: Xatu
+|-damage|p1a: Xatu|268\/333
+|
+|turn|59
+|callback|decision
+|
+|switch|p2a: Roserade|Roserade, M|173\/295
+|move|p1a: Xatu|Night Shade|p2a: Roserade
+|-damage|p2a: Roserade|73\/295
+|
+|turn|60
+|callback|decision
+|
+|move|p2a: Roserade|Rest|p2a: Roserade
+|-status|p2a: Roserade|slp
+|-heal|p2a: Roserade|295\/295 slp|[silent]
+|-status|p2a: Roserade|slp|[from] move: Rest
+|move|p1a: Xatu|Night Shade|p2a: Roserade
+|-damage|p2a: Roserade|195\/295 slp
+|
+|turn|61
+|callback|decision
+|
+|switch|p2a: Hitmontop|Hitmontop, M|304\/304 par
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Xatu
+|-unboost|p1a: Xatu|atk|1
+|move|p1a: Xatu|Night Shade|p2a: Hitmontop
+|-damage|p2a: Hitmontop|204\/304 par
+|
+|-heal|p2a: Hitmontop|223\/304 par|[from] item: Leftovers
+|turn|62
+|callback|decision
+|
+|move|p1a: Xatu|U-turn|p2a: Hitmontop
+|-resisted|p2a: Hitmontop
+|-damage|p2a: Hitmontop|212\/304 par
+|callback|decision
+|
+|switch|p1a: Weezing|Weezing, M|128\/334
+|cant|p2a: Hitmontop|par
+|
+|-heal|p2a: Hitmontop|231\/304 par|[from] item: Leftovers
+|turn|63
+|callback|decision
+|
+|move|p1a: Weezing|Flamethrower|p2a: Hitmontop
+|-damage|p2a: Hitmontop|174\/304 par
+|move|p2a: Hitmontop|Stone Edge|p1a: Weezing
+|-damage|p1a: Weezing|76\/334
+|
+|-heal|p2a: Hitmontop|193\/304 par|[from] item: Leftovers
+|turn|64
+|callback|decision
+|
+|move|p1a: Weezing|Flamethrower|p2a: Hitmontop
+|-damage|p2a: Hitmontop|132\/304 par
+|move|p2a: Hitmontop|Stone Edge|p1a: Weezing
+|-crit|p1a: Weezing
+|-damage|p1a: Weezing|0 fnt
+|faint|p1a: Weezing
+|
+|-heal|p2a: Hitmontop|151\/304 par|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, F|323\/323
+|turn|65
+|callback|decision
+|
+|switch|p2a: Roserade|Roserade, M|195\/295
+|move|p1a: Roserade|Sludge Bomb|p2a: Roserade
+|-crit|p2a: Roserade
+|-damage|p2a: Roserade|0 fnt
+|faint|p2a: Roserade
+|
+|callback|decision
+|
+|switch|p2a: Golurk|Golurk|185\/382
+|turn|66
+|callback|decision
+|
+|switch|p1a: Xatu|Xatu, F|268\/333
+|move|p2a: Golurk|Earthquake|p1a: Xatu
+|-immune|p1a: Xatu|[msg]
+|
+|-heal|p2a: Golurk|208\/382|[from] item: Leftovers
+|turn|67
+|callback|decision
+|
+|move|p1a: Xatu|Night Shade|p2a: Golurk
+|-damage|p2a: Golurk|108\/382
+|move|p2a: Golurk|Shadow Punch|p1a: Xatu
+|-supereffective|p1a: Xatu
+|-damage|p1a: Xatu|116\/333
+|-damage|p2a: Golurk|45\/382|[from] item: Rocky Helmet|[of] p1a: Xatu
+|
+|-heal|p2a: Golurk|68\/382|[from] item: Leftovers
+|turn|68
+|callback|decision
+|
+|move|p1a: Xatu|Night Shade|p2a: Golurk
+|-damage|p2a: Golurk|0 fnt
+|faint|p2a: Golurk
+|
+|callback|decision
+|
+|switch|p2a: Hitmontop|Hitmontop, M|151\/304 par
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Xatu
+|-unboost|p1a: Xatu|atk|1
+|turn|69
+|callback|decision
+|
+|move|p1a: Xatu|Roost|p1a: Xatu
+|-heal|p1a: Xatu|283\/333
+|move|p2a: Hitmontop|Stone Edge|p1a: Xatu
+|-crit|p1a: Xatu
+|-damage|p1a: Xatu|135\/333
+|
+|-heal|p2a: Hitmontop|170\/304 par|[from] item: Leftovers
+|turn|70
+|callback|decision
+|
+|move|p1a: Xatu|Roost|p1a: Xatu
+|-heal|p1a: Xatu|302\/333
+|move|p2a: Hitmontop|Close Combat|p1a: Xatu
+|-resisted|p1a: Xatu
+|-damage|p1a: Xatu|246\/333
+|-damage|p2a: Hitmontop|120\/304 par|[from] item: Rocky Helmet|[of] p1a: Xatu
+|-unboost|p2a: Hitmontop|def|1
+|-unboost|p2a: Hitmontop|spd|1
+|
+|-heal|p2a: Hitmontop|139\/304 par|[from] item: Leftovers
+|turn|71
+|callback|decision
+|
+|move|p1a: Xatu|Night Shade|p2a: Hitmontop
+|-damage|p2a: Hitmontop|39\/304 par
+|move|p2a: Hitmontop|Close Combat|p1a: Xatu
+|-resisted|p1a: Xatu
+|-damage|p1a: Xatu|214\/333
+|-damage|p2a: Hitmontop|0 fnt|[from] item: Rocky Helmet|[of] p1a: Xatu
+|faint|p2a: Hitmontop
+|
+|win|Head Miss
+|raw|Ladder updating...
+|raw|Head Miss's rating: 1940 &rarr; <strong>1964<\/strong><br \/>(+24 for winning)
+|raw|Godsend's rating: 1913 &rarr; <strong>1910<\/strong><br \/>(-3 for losing)
+|leave|Godsend
+|player|p2

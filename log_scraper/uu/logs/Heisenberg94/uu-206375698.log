@@ -1,0 +1,560 @@
+|join|Heisenberg94
+|join|BotiPro
+|player|p1|Heisenberg94|169
+|player|p2|BotiPro|269
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Sharpedo, M
+|poke|p1|Raikou
+|poke|p1|Flygon, M
+|poke|p1|Porygon2
+|poke|p1|Krookodile, F
+|poke|p1|Vaporeon, F
+|poke|p2|Gastrodon, F
+|poke|p2|Tentacruel, F, shiny
+|poke|p2|Blastoise, M, shiny
+|poke|p2|Escavalier, M
+|poke|p2|Arcanine, F
+|poke|p2|Porygon2, shiny
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Flygon|Flygon, M|301\/301
+|switch|p2a: Gastrodon|Gastrodon, F|426\/426
+|turn|1
+|
+|move|p1a: Flygon|U-turn|p2a: Gastrodon
+|-damage|p2a: Gastrodon|356\/426
+|
+|switch|p1a: Porygon2|Porygon2|373\/373
+|-ability|p1a: Porygon2|Storm Drain|[from] ability: Trace|[of] p2a: Gastrodon
+|move|p2a: Gastrodon|Ice Beam|p1a: Porygon2
+|-damage|p1a: Porygon2|342\/373
+|
+|-heal|p2a: Gastrodon|382\/426|[from] item: Leftovers
+|turn|2
+|
+|switch|p1a: Flygon|Flygon, M|301\/301
+|move|p2a: Gastrodon|Toxic|p1a: Flygon
+|-status|p1a: Flygon|tox
+|
+|-heal|p2a: Gastrodon|408\/426|[from] item: Leftovers
+|-damage|p1a: Flygon|283\/301 tox|[from] psn
+|turn|3
+|
+|move|p1a: Flygon|U-turn|p2a: Gastrodon
+|-damage|p2a: Gastrodon|344\/426
+|
+|switch|p1a: Porygon2|Porygon2|342\/373
+|-ability|p1a: Porygon2|Storm Drain|[from] ability: Trace|[of] p2a: Gastrodon
+|move|p2a: Gastrodon|Scald|p1a: Porygon2
+|-boost|p1a: Porygon2|spa|1|[from] ability: Storm Drain
+|
+|-heal|p2a: Gastrodon|370\/426|[from] item: Leftovers
+|turn|4
+|
+|move|p1a: Porygon2|Toxic|p2a: Gastrodon
+|-status|p2a: Gastrodon|tox
+|move|p2a: Gastrodon|Toxic|p1a: Porygon2
+|-status|p1a: Porygon2|tox
+|
+|-heal|p2a: Gastrodon|396\/426 tox|[from] item: Leftovers
+|-damage|p1a: Porygon2|319\/373 tox|[from] psn
+|-damage|p2a: Gastrodon|370\/426 tox|[from] psn
+|turn|5
+|
+|switch|p2a: Tentacruel|Tentacruel, F, shiny|364\/364
+|move|p1a: Porygon2|Tri Attack|p2a: Tentacruel
+|-damage|p2a: Tentacruel|273\/364
+|
+|-heal|p2a: Tentacruel|295\/364|[from] item: Black Sludge
+|-damage|p1a: Porygon2|273\/373 tox|[from] psn
+|turn|6
+|
+|switch|p2a: Gastrodon|Gastrodon, F|370\/426 tox
+|switch|p1a: Raikou|Raikou|321\/321
+|-ability|p1a: Raikou|Pressure
+|
+|-heal|p2a: Gastrodon|396\/426 tox|[from] item: Leftovers
+|-damage|p2a: Gastrodon|370\/426 tox|[from] psn
+|turn|7
+|
+|switch|p1a: Porygon2|Porygon2|273\/373 tox
+|-ability|p1a: Porygon2|Storm Drain|[from] ability: Trace|[of] p2a: Gastrodon
+|move|p2a: Gastrodon|Toxic|p1a: Porygon2
+|-fail|p1a: Porygon2|tox
+|
+|-heal|p2a: Gastrodon|396\/426 tox|[from] item: Leftovers
+|-damage|p1a: Porygon2|250\/373 tox|[from] psn
+|-damage|p2a: Gastrodon|344\/426 tox|[from] psn
+|turn|8
+|
+|switch|p1a: Krookodile|Krookodile, F|394\/394
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Gastrodon
+|-unboost|p2a: Gastrodon|atk|1
+|switch|p2a: Escavalier|Escavalier, M|344\/344
+|
+|turn|9
+|
+|move|p1a: Krookodile|Taunt|p2a: Escavalier
+|-start|p2a: Escavalier|move: Taunt
+|move|p2a: Escavalier|Megahorn|p1a: Krookodile
+|-supereffective|p1a: Krookodile
+|-damage|p1a: Krookodile|0 fnt
+|faint|p1a: Krookodile
+|
+|
+|switch|p1a: Raikou|Raikou|321\/321
+|-ability|p1a: Raikou|Pressure
+|turn|10
+|
+|switch|p2a: Gastrodon|Gastrodon, F|344\/426 tox
+|move|p1a: Raikou|Volt Switch|p2a: Gastrodon
+|-immune|p2a: Gastrodon|[msg]
+|
+|-heal|p2a: Gastrodon|370\/426 tox|[from] item: Leftovers
+|-damage|p2a: Gastrodon|344\/426 tox|[from] psn
+|turn|11
+|
+|switch|p2a: Escavalier|Escavalier, M|344\/344
+|move|p1a: Raikou|Volt Switch|p2a: Escavalier
+|-damage|p2a: Escavalier|235\/344
+|
+|switch|p1a: Flygon|Flygon, M|283\/301 tox
+|
+|-damage|p1a: Flygon|265\/301 tox|[from] psn
+|turn|12
+|
+|move|p1a: Flygon|Earthquake|p2a: Escavalier
+|-damage|p2a: Escavalier|88\/344
+|move|p2a: Escavalier|Knock Off|p1a: Flygon
+|-damage|p1a: Flygon|99\/301 tox
+|-enditem|p1a: Flygon|Choice Scarf|[from] move: Knock Off|[of] p2a: Escavalier
+|
+|-damage|p1a: Flygon|63\/301 tox|[from] psn
+|turn|13
+|
+|switch|p1a: Vaporeon|Vaporeon, F|464\/464
+|move|p2a: Escavalier|Knock Off|p1a: Vaporeon
+|-damage|p1a: Vaporeon|344\/464
+|-enditem|p1a: Vaporeon|Leftovers|[from] move: Knock Off|[of] p2a: Escavalier
+|
+|turn|14
+|
+|switch|p2a: Gastrodon|Gastrodon, F|344\/426 tox
+|move|p1a: Vaporeon|Heal Bell|p1a: Vaporeon
+|-cureteam|p1a: Vaporeon|[from] move: HealBell
+|
+|-heal|p2a: Gastrodon|370\/426 tox|[from] item: Leftovers
+|-damage|p2a: Gastrodon|344\/426 tox|[from] psn
+|turn|15
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Gastrodon|Toxic|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Protect
+|
+|-heal|p2a: Gastrodon|370\/426 tox|[from] item: Leftovers
+|-damage|p2a: Gastrodon|318\/426 tox|[from] psn
+|turn|16
+|
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|move|p2a: Gastrodon|Toxic|p1a: Vaporeon
+|-status|p1a: Vaporeon|tox
+|
+|-heal|p2a: Gastrodon|344\/426 tox|[from] item: Leftovers
+|-damage|p1a: Vaporeon|315\/464 tox|[from] psn
+|-damage|p2a: Gastrodon|266\/426 tox|[from] psn
+|turn|17
+|
+|move|p1a: Vaporeon|Heal Bell|p1a: Vaporeon
+|-cureteam|p1a: Vaporeon|[from] move: HealBell
+|move|p2a: Gastrodon|Recover|p2a: Gastrodon
+|-heal|p2a: Gastrodon|426\/426 tox
+|
+|-heal|p1a: Vaporeon|464\/464|[from] move: Wish|[wisher] Vaporeon
+|-damage|p2a: Gastrodon|322\/426 tox|[from] psn
+|turn|18
+|
+|switch|p2a: Blastoise|Blastoise, M, shiny|362\/362
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|turn|19
+|
+|switch|p1a: Porygon2|Porygon2|250\/373
+|-ability|p1a: Porygon2|Rain Dish|[from] ability: Trace|[of] p2a: Blastoise
+|detailschange|p2a: Blastoise|Blastoise-Mega, M, shiny
+|-mega|p2a: Blastoise|Blastoise|Blastoisinite
+|move|p2a: Blastoise|Dark Pulse|p1a: Porygon2
+|-damage|p1a: Porygon2|172\/373
+|
+|-heal|p1a: Porygon2|373\/373|[from] move: Wish|[wisher] Vaporeon
+|turn|20
+|
+|move|p2a: Blastoise|Aura Sphere|p1a: Porygon2
+|-supereffective|p1a: Porygon2
+|-damage|p1a: Porygon2|211\/373
+|move|p1a: Porygon2|Toxic|p2a: Blastoise
+|-status|p2a: Blastoise|tox
+|
+|-damage|p2a: Blastoise|340\/362 tox|[from] psn
+|turn|21
+|
+|move|p2a: Blastoise|Aura Sphere|p1a: Porygon2
+|-supereffective|p1a: Porygon2
+|-damage|p1a: Porygon2|51\/373
+|move|p1a: Porygon2|Recover|p1a: Porygon2
+|-heal|p1a: Porygon2|238\/373
+|
+|-damage|p2a: Blastoise|296\/362 tox|[from] psn
+|turn|22
+|
+|switch|p2a: Escavalier|Escavalier, M|88\/344
+|move|p1a: Porygon2|Recover|p1a: Porygon2
+|-heal|p1a: Porygon2|373\/373
+|
+|turn|23
+|
+|switch|p1a: Vaporeon|Vaporeon, F|464\/464
+|move|p2a: Escavalier|Megahorn|p1a: Vaporeon
+|-damage|p1a: Vaporeon|244\/464
+|
+|turn|24
+|
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|move|p2a: Escavalier|Megahorn|p1a: Vaporeon
+|-damage|p1a: Vaporeon|0 fnt
+|faint|p1a: Vaporeon
+|
+|
+|switch|p1a: Flygon|Flygon, M|63\/301
+|turn|25
+|
+|switch|p2a: Porygon2|Porygon2, shiny|374\/374
+|-boost|p2a: Porygon2|atk|1|[from] ability: Download
+|move|p1a: Flygon|Earthquake|p2a: Porygon2
+|-damage|p2a: Porygon2|266\/374
+|
+|-heal|p1a: Flygon|295\/301|[from] move: Wish|[wisher] Vaporeon
+|turn|26
+|
+|switch|p1a: Porygon2|Porygon2|373\/373
+|-ability|p1a: Porygon2|Download|[from] ability: Trace|[of] p2a: Porygon2
+|-boost|p1a: Porygon2|atk|1|[from] ability: Download
+|move|p2a: Porygon2|Toxic|p1a: Porygon2
+|-status|p1a: Porygon2|tox
+|
+|-damage|p1a: Porygon2|350\/373 tox|[from] psn
+|turn|27
+|
+|switch|p2a: Tentacruel|Tentacruel, F, shiny|295\/364
+|switch|p1a: Flygon|Flygon, M|295\/301
+|
+|-heal|p2a: Tentacruel|317\/364|[from] item: Black Sludge
+|turn|28
+|
+|switch|p2a: Porygon2|Porygon2, shiny|266\/374
+|-boost|p2a: Porygon2|atk|1|[from] ability: Download
+|move|p1a: Flygon|Earthquake|p2a: Porygon2
+|-damage|p2a: Porygon2|161\/374
+|
+|turn|29
+|
+|move|p1a: Flygon|Earthquake|p2a: Porygon2
+|-damage|p2a: Porygon2|53\/374
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|240\/374
+|
+|turn|30
+|
+|move|p1a: Flygon|U-turn|p2a: Porygon2
+|-damage|p2a: Porygon2|194\/374
+|
+|switch|p1a: Porygon2|Porygon2|350\/373 tox
+|-ability|p1a: Porygon2|Download|[from] ability: Trace|[of] p2a: Porygon2
+|-boost|p1a: Porygon2|atk|1|[from] ability: Download
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|374\/374
+|
+|-damage|p1a: Porygon2|327\/373 tox|[from] psn
+|turn|31
+|
+|move|p1a: Porygon2|Toxic|p2a: Porygon2
+|-status|p2a: Porygon2|tox
+|move|p2a: Porygon2|Tri Attack|p1a: Porygon2
+|-damage|p1a: Porygon2|272\/373 tox
+|
+|-damage|p1a: Porygon2|226\/373 tox|[from] psn
+|-damage|p2a: Porygon2|351\/374 tox|[from] psn
+|turn|32
+|
+|move|p1a: Porygon2|Recover|p1a: Porygon2
+|-heal|p1a: Porygon2|373\/373 tox
+|move|p2a: Porygon2|Tri Attack|p1a: Porygon2
+|-damage|p1a: Porygon2|319\/373 tox
+|
+|-damage|p1a: Porygon2|250\/373 tox|[from] psn
+|-damage|p2a: Porygon2|305\/374 tox|[from] psn
+|turn|33
+|
+|switch|p1a: Raikou|Raikou|321\/321
+|-ability|p1a: Raikou|Pressure
+|move|p2a: Porygon2|Tri Attack|p1a: Raikou
+|-crit|p1a: Raikou
+|-damage|p1a: Raikou|158\/321
+|
+|-damage|p2a: Porygon2|236\/374 tox|[from] psn
+|turn|34
+|
+|move|p1a: Raikou|Volt Switch|p2a: Porygon2
+|-damage|p2a: Porygon2|137\/374 tox
+|
+|switch|p1a: Porygon2|Porygon2|250\/373 tox
+|-ability|p1a: Porygon2|Download|[from] ability: Trace|[of] p2a: Porygon2
+|-boost|p1a: Porygon2|atk|1|[from] ability: Download
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|324\/374 tox
+|
+|-damage|p2a: Porygon2|232\/374 tox|[from] psn
+|-damage|p1a: Porygon2|227\/373 tox|[from] psn
+|turn|35
+|
+|switch|p2a: Gastrodon|Gastrodon, F|322\/426 tox
+|move|p1a: Porygon2|Recover|p1a: Porygon2
+|-heal|p1a: Porygon2|373\/373 tox
+|
+|-heal|p2a: Gastrodon|348\/426 tox|[from] item: Leftovers
+|-damage|p1a: Porygon2|327\/373 tox|[from] psn
+|-damage|p2a: Gastrodon|322\/426 tox|[from] psn
+|turn|36
+|
+|move|p1a: Porygon2|Tri Attack|p2a: Gastrodon
+|-damage|p2a: Gastrodon|211\/426 tox
+|move|p2a: Gastrodon|Scald|p1a: Porygon2
+|-damage|p1a: Porygon2|284\/373 tox
+|
+|-heal|p2a: Gastrodon|237\/426 tox|[from] item: Leftovers
+|-damage|p1a: Porygon2|215\/373 tox|[from] psn
+|-damage|p2a: Gastrodon|185\/426 tox|[from] psn
+|turn|37
+|
+|switch|p1a: Raikou|Raikou|158\/321
+|-ability|p1a: Raikou|Pressure
+|move|p2a: Gastrodon|Recover|p2a: Gastrodon
+|-heal|p2a: Gastrodon|398\/426 tox
+|
+|-heal|p2a: Gastrodon|424\/426 tox|[from] item: Leftovers
+|-damage|p2a: Gastrodon|346\/426 tox|[from] psn
+|turn|38
+|
+|switch|p1a: Porygon2|Porygon2|215\/373 tox
+|-ability|p1a: Porygon2|Storm Drain|[from] ability: Trace|[of] p2a: Gastrodon
+|move|p2a: Gastrodon|Scald|p1a: Porygon2
+|-boost|p1a: Porygon2|spa|1|[from] ability: Storm Drain
+|
+|-heal|p2a: Gastrodon|372\/426 tox|[from] item: Leftovers
+|-damage|p1a: Porygon2|192\/373 tox|[from] psn
+|-damage|p2a: Gastrodon|268\/426 tox|[from] psn
+|turn|39
+|
+|switch|p2a: Escavalier|Escavalier, M|88\/344
+|move|p1a: Porygon2|Tri Attack|p2a: Escavalier
+|-resisted|p2a: Escavalier
+|-damage|p2a: Escavalier|41\/344
+|
+|-damage|p1a: Porygon2|146\/373 tox|[from] psn
+|turn|40
+|
+|move|p1a: Porygon2|Tri Attack|p2a: Escavalier
+|-resisted|p2a: Escavalier
+|-damage|p2a: Escavalier|0 fnt
+|faint|p2a: Escavalier
+|
+|-damage|p1a: Porygon2|77\/373 tox|[from] psn
+|
+|switch|p2a: Arcanine|Arcanine, F|384\/384
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Porygon2
+|-unboost|p1a: Porygon2|atk|1
+|turn|41
+|
+|switch|p1a: Flygon|Flygon, M|295\/301
+|move|p2a: Arcanine|Flare Blitz|p1a: Flygon
+|-resisted|p1a: Flygon
+|-damage|p1a: Flygon|201\/301
+|-damage|p2a: Arcanine|353\/384|[from] recoil|[of] p1a: Flygon
+|
+|turn|42
+|
+|switch|p2a: Porygon2|Porygon2, shiny|232\/374 tox
+|-boost|p2a: Porygon2|atk|1|[from] ability: Download
+|move|p1a: Flygon|Earthquake|p2a: Porygon2
+|-damage|p2a: Porygon2|127\/374 tox
+|
+|-damage|p2a: Porygon2|104\/374 tox|[from] psn
+|turn|43
+|
+|move|p1a: Flygon|Earthquake|p2a: Porygon2
+|-damage|p2a: Porygon2|5\/374 tox
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|192\/374 tox
+|
+|-damage|p2a: Porygon2|146\/374 tox|[from] psn
+|turn|44
+|
+|move|p1a: Flygon|Earthquake|p2a: Porygon2
+|-damage|p2a: Porygon2|46\/374 tox
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|233\/374 tox
+|
+|-damage|p2a: Porygon2|164\/374 tox|[from] psn
+|turn|45
+|
+|move|p1a: Flygon|U-turn|p2a: Porygon2
+|-damage|p2a: Porygon2|113\/374 tox
+|
+|switch|p1a: Porygon2|Porygon2|77\/373 tox
+|-ability|p1a: Porygon2|Download|[from] ability: Trace|[of] p2a: Porygon2
+|-boost|p1a: Porygon2|atk|1|[from] ability: Download
+|move|p2a: Porygon2|Ice Beam|p1a: Porygon2
+|-damage|p1a: Porygon2|37\/373 tox
+|
+|-damage|p1a: Porygon2|14\/373 tox|[from] psn
+|-damage|p2a: Porygon2|21\/374 tox|[from] psn
+|turn|46
+|
+|move|p2a: Porygon2|Tri Attack|p1a: Porygon2
+|-damage|p1a: Porygon2|0 fnt
+|faint|p1a: Porygon2
+|
+|-damage|p2a: Porygon2|0 fnt|[from] psn
+|faint|p2a: Porygon2
+|
+|switch|p1a: Raikou|Raikou|158\/321
+|switch|p2a: Arcanine|Arcanine, F|353\/384
+|-ability|p1a: Raikou|Pressure
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Raikou
+|-unboost|p1a: Raikou|atk|1
+|turn|47
+|
+|switch|p2a: Gastrodon|Gastrodon, F|268\/426 tox
+|move|p1a: Raikou|Shadow Ball|p2a: Gastrodon
+|-damage|p2a: Gastrodon|127\/426 tox
+|
+|-heal|p2a: Gastrodon|153\/426 tox|[from] item: Leftovers
+|-damage|p2a: Gastrodon|127\/426 tox|[from] psn
+|turn|48
+|
+|move|p1a: Raikou|Shadow Ball|p2a: Gastrodon
+|-damage|p2a: Gastrodon|0 fnt
+|faint|p2a: Gastrodon
+|
+|
+|switch|p2a: Tentacruel|Tentacruel, F, shiny|317\/364
+|turn|49
+|
+|move|p1a: Raikou|Shadow Ball|p2a: Tentacruel
+|-damage|p2a: Tentacruel|237\/364
+|move|p2a: Tentacruel|Scald|p1a: Raikou
+|-damage|p1a: Raikou|86\/321
+|-status|p1a: Raikou|brn
+|
+|-heal|p2a: Tentacruel|259\/364|[from] item: Black Sludge
+|-damage|p1a: Raikou|46\/321 brn|[from] brn
+|turn|50
+|
+|move|p1a: Raikou|Shadow Ball|p2a: Tentacruel
+|-damage|p2a: Tentacruel|171\/364
+|-unboost|p2a: Tentacruel|spd|1
+|move|p2a: Tentacruel|Scald|p1a: Raikou
+|-damage|p1a: Raikou|0 fnt
+|faint|p1a: Raikou
+|
+|-heal|p2a: Tentacruel|193\/364|[from] item: Black Sludge
+|
+|switch|p1a: Flygon|Flygon, M|201\/301
+|turn|51
+|
+|move|p1a: Flygon|Earthquake|p2a: Tentacruel
+|-supereffective|p2a: Tentacruel
+|-damage|p2a: Tentacruel|0 fnt
+|faint|p2a: Tentacruel
+|
+|
+|switch|p2a: Arcanine|Arcanine, F|353\/384
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Flygon
+|-unboost|p1a: Flygon|atk|1
+|turn|52
+|
+|move|p1a: Flygon|Earthquake|p2a: Arcanine
+|-supereffective|p2a: Arcanine
+|-damage|p2a: Arcanine|155\/384
+|move|p2a: Arcanine|Toxic|p1a: Flygon
+|-status|p1a: Flygon|tox
+|
+|-damage|p1a: Flygon|183\/301 tox|[from] psn
+|turn|53
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M, shiny|296\/362 tox
+|move|p1a: Flygon|Earthquake|p2a: Blastoise
+|-damage|p2a: Blastoise|200\/362 tox
+|
+|-damage|p1a: Flygon|147\/301 tox|[from] psn
+|-damage|p2a: Blastoise|178\/362 tox|[from] psn
+|turn|54
+|
+|move|p1a: Flygon|Earthquake|p2a: Blastoise
+|-damage|p2a: Blastoise|87\/362 tox
+|move|p2a: Blastoise|Aura Sphere|p1a: Flygon
+|-crit|p1a: Flygon
+|-damage|p1a: Flygon|0 fnt
+|faint|p1a: Flygon
+|
+|-damage|p2a: Blastoise|43\/362 tox|[from] psn
+|
+|switch|p1a: Sharpedo|Sharpedo, M|281\/281
+|turn|55
+|
+|move|p1a: Sharpedo|Crunch|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|
+|switch|p2a: Arcanine|Arcanine, F|155\/384
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Sharpedo
+|-unboost|p1a: Sharpedo|atk|1
+|turn|56
+|
+|move|p1a: Sharpedo|Protect|p1a: Sharpedo
+|-singleturn|p1a: Sharpedo|Protect
+|move|p2a: Arcanine|Morning Sun|p2a: Arcanine
+|-heal|p2a: Arcanine|347\/384
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|57
+|
+|detailschange|p1a: Sharpedo|Sharpedo-Mega, M
+|-mega|p1a: Sharpedo|Sharpedo|Sharpedonite
+|move|p1a: Sharpedo|Hydro Pump|p2a: Arcanine
+|-supereffective|p2a: Arcanine
+|-damage|p2a: Arcanine|0 fnt
+|faint|p2a: Arcanine
+|
+|win|Heisenberg94
+|raw|Ladder updating...
+|leave|BotiPro
+|raw|Heisenberg94's rating: 1391 &rarr; <strong>1400<\/strong><br \/>(+9 for winning)
+|raw|BotiPro's rating: 1174 &rarr; <strong>1163<\/strong><br \/>(-11 for losing)
+|player|p2

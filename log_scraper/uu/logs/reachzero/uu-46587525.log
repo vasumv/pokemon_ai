@@ -1,0 +1,260 @@
+|join|JabbaTheGriffin
+|join|reachzero
+|player|p1|JabbaTheGriffin|101
+|player|p2|reachzero|15
+|gametype|singles
+|tier|UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Meloetta
+|poke|p1|Venomoth, M
+|poke|p1|Azelf
+|poke|p1|Zoroark, M
+|poke|p1|Hitmontop, M
+|poke|p1|Mew
+|poke|p2|Raikou
+|poke|p2|Zapdos
+|poke|p2|Rotom-Heat
+|poke|p2|Snorlax, M
+|poke|p2|Swampert, F
+|poke|p2|Cofagrigus, F
+|teampreview
+|callback|decision
+|join|double01
+|
+|start
+|switch|p1a: Azelf|Azelf|291\/291
+|switch|p2a: Raikou|Raikou|322\/322
+|-ability|p2a: Raikou|Pressure
+|turn|1
+|callback|decision
+|join|nooberboober
+|
+|move|p2a: Raikou|Thunderbolt|p1a: Azelf
+|-damage|p1a: Azelf|17\/291
+|-damage|p2a: Raikou|290\/322|[from] item: Life Orb
+|move|p1a: Azelf|Stealth Rock|p2a: Raikou
+|-sidestart|p2: reachzero|move: Stealth Rock
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Azelf|Psyshock|p2a: Raikou
+|-damage|p2a: Raikou|116\/322
+|move|p2a: Raikou|Thunderbolt|p1a: Azelf
+|-damage|p1a: Azelf|0 fnt
+|-damage|p2a: Raikou|84\/322|[from] item: Life Orb
+|faint|p1a: Azelf
+|
+|callback|decision
+|
+|switch|p1a: Hitmontop|Hitmontop, M|304\/304
+|-ability|p1a: Hitmontop|Intimidate|[of] p2a: Raikou
+|-unboost|p2a: Raikou|atk|1
+|turn|3
+|callback|decision
+|
+|switch|p2a: Swampert|Swampert, F|404\/404
+|-damage|p2a: Swampert|379\/404|[from] Stealth Rock
+|move|p1a: Hitmontop|Mach Punch|p2a: Swampert
+|-damage|p2a: Swampert|345\/404
+|
+|-heal|p2a: Swampert|370\/404|[from] item: Leftovers
+|turn|4
+|callback|decision
+|join|Ernesto_1.3
+|
+|switch|p1a: Venomoth|Venomoth, M|344\/344
+|move|p2a: Swampert|Stealth Rock|p1a: Venomoth
+|-sidestart|p1: JabbaTheGriffin|move: Stealth Rock
+|
+|-heal|p2a: Swampert|395\/404|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p1a: Venomoth|Quiver Dance|p1a: Venomoth
+|-boost|p1a: Venomoth|spa|1
+|-boost|p1a: Venomoth|spd|1
+|-boost|p1a: Venomoth|spe|1
+|move|p2a: Swampert|Earthquake|p1a: Venomoth
+|-damage|p1a: Venomoth|136\/344
+|
+|-heal|p1a: Venomoth|157\/344|[from] item: Leftovers
+|-heal|p2a: Swampert|404\/404|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p1a: Venomoth|Sleep Powder|p2a: Swampert
+|-status|p2a: Swampert|slp
+|cant|p2a: Swampert|slp
+|
+|-heal|p1a: Venomoth|178\/344|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, M|461\/461
+|-damage|p2a: Snorlax|404\/461|[from] Stealth Rock
+|move|p1a: Venomoth|Baton Pass|p1a: Venomoth
+|callback|decision
+|
+|switch|p1a: Mew|Mew|341\/341
+|-damage|p1a: Mew|299\/341|[from] Stealth Rock
+|
+|turn|8
+|callback|decision
+|
+|move|p1a: Mew|Psyshock|p2a: Snorlax
+|-damage|p2a: Snorlax|48\/461
+|-damage|p1a: Mew|265\/341|[from] item: Life Orb
+|move|p2a: Snorlax|Return|p1a: Mew
+|-damage|p1a: Mew|15\/341
+|
+|turn|9
+|callback|decision
+|
+|move|p1a: Mew|Giga Drain|p2a: Snorlax
+|-damage|p2a: Snorlax|0 fnt
+|-heal|p1a: Mew|39\/341|[from] drain|[of] p2a: Snorlax
+|-damage|p1a: Mew|5\/341|[from] item: Life Orb
+|faint|p2a: Snorlax
+|
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|271\/271
+|-damage|p2a: Rotom-Heat|204\/271|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|move|p1a: Mew|Psyshock|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|0 fnt
+|-damage|p1a: Mew|0 fnt|[from] item: Life Orb
+|faint|p2a: Rotom-Heat
+|faint|p1a: Mew
+|
+|callback|decision
+|
+|switch|p2a: Raikou|Raikou|84\/322
+|-damage|p2a: Raikou|44\/322|[from] Stealth Rock
+|switch|p1a: Meloetta|Meloetta|342\/342
+|-damage|p1a: Meloetta|300\/342|[from] Stealth Rock
+|-ability|p2a: Raikou|Pressure
+|turn|11
+|callback|decision
+|
+|switch|p1a: Venomoth|Venomoth, M|178\/344
+|-damage|p1a: Venomoth|92\/344|[from] Stealth Rock
+|move|p2a: Raikou|Thunderbolt|p1a: Venomoth
+|-damage|p1a: Venomoth|0 fnt
+|-damage|p2a: Raikou|12\/322|[from] item: Life Orb
+|faint|p1a: Venomoth
+|
+|callback|decision
+|
+|switch|p1a: Hitmontop|Hitmontop, M|304\/304
+|-damage|p1a: Hitmontop|285\/304|[from] Stealth Rock
+|-ability|p1a: Hitmontop|Intimidate|[of] p2a: Raikou
+|-unboost|p2a: Raikou|atk|1
+|turn|12
+|callback|decision
+|join|Woodchuck
+|
+|move|p1a: Hitmontop|Mach Punch|p2a: Raikou
+|-damage|p2a: Raikou|0 fnt
+|faint|p2a: Raikou
+|
+|-heal|p1a: Hitmontop|304\/304|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Cofagrigus|Cofagrigus, F|320\/320
+|-damage|p2a: Cofagrigus|280\/320|[from] Stealth Rock
+|turn|13
+|callback|decision
+|
+|switch|p1a: Meloetta|Meloetta|261\/261
+|-damage|p1a: Meloetta|229\/261|[from] Stealth Rock
+|move|p2a: Cofagrigus|Calm Mind|p2a: Cofagrigus
+|-boost|p2a: Cofagrigus|spa|1
+|-boost|p2a: Cofagrigus|spd|1
+|
+|-heal|p1a: Meloetta|245\/261|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: Meloetta|Dark Pulse|p2a: Cofagrigus
+|-supereffective|p2a: Cofagrigus
+|-damage|p2a: Cofagrigus|94\/320
+|move|p2a: Cofagrigus|Calm Mind|p2a: Cofagrigus
+|-boost|p2a: Cofagrigus|spa|1
+|-boost|p2a: Cofagrigus|spd|1
+|
+|-heal|p1a: Meloetta|261\/261|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1a: Meloetta|Dark Pulse|p2a: Cofagrigus
+|-supereffective|p2a: Cofagrigus
+|-damage|p2a: Cofagrigus|0 fnt
+|faint|p2a: Cofagrigus
+|
+|callback|decision
+|
+|switch|p2a: Zapdos|Zapdos|341\/341
+|-damage|p2a: Zapdos|256\/341|[from] Stealth Rock
+|-ability|p2a: Zapdos|Pressure
+|turn|16
+|callback|decision
+|
+|move|p1a: Meloetta|Dark Pulse|p2a: Zapdos
+|-damage|p2a: Zapdos|106\/341
+|move|p2a: Zapdos|Thunderbolt|p1a: Meloetta
+|replace|p1a: Zoroark|Zoroark, M|261\/261
+|-damage|p1a: Zoroark|20\/261
+|
+|-heal|p1a: Zoroark|36\/261|[from] item: Leftovers
+|-heal|p2a: Zapdos|127\/341|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Zoroark|Dark Pulse|p2a: Zapdos
+|-damage|p2a: Zapdos|0 fnt
+|faint|p2a: Zapdos
+|
+|-heal|p1a: Zoroark|52\/261|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Swampert|Swampert, F|404\/404 slp
+|-damage|p2a: Swampert|379\/404 slp|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|move|p1a: Zoroark|Dark Pulse|p2a: Swampert
+|-damage|p2a: Swampert|238\/404 slp
+|cant|p2a: Swampert|slp
+|
+|-heal|p1a: Zoroark|68\/261|[from] item: Leftovers
+|-heal|p2a: Swampert|263\/404 slp|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p1a: Zoroark|Dark Pulse|p2a: Swampert
+|-damage|p2a: Swampert|124\/404 slp
+|cant|p2a: Swampert|slp
+|
+|-heal|p1a: Zoroark|84\/261|[from] item: Leftovers
+|-heal|p2a: Swampert|149\/404 slp|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p1a: Zoroark|Dark Pulse|p2a: Swampert
+|-damage|p2a: Swampert|0 fnt
+|faint|p2a: Swampert
+|
+|win|JabbaTheGriffin
+|chat|reachzero|gg
+|chat|JabbaTheGriffin|gg

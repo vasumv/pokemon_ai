@@ -1,0 +1,1053 @@
+|join|Egyptian
+|join|Scizeon
+|player|p1|Egyptian|20
+|player|p2|Scizeon|288
+|gametype|singles
+|tier|Pokebank OU (beta)
+|clearpoke
+|poke|p1|Greninja, M
+|poke|p1|Garchomp, F
+|poke|p1|Heatran, F
+|poke|p1|Rotom-Wash
+|poke|p1|Skarmory, F
+|poke|p1|Venusaur, M
+|poke|p2|Heatran, M
+|poke|p2|Scizor, M
+|poke|p2|Rotom-Wash
+|poke|p2|Greninja, M
+|poke|p2|Dragonite, F
+|poke|p2|Florges, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|chat|Scizeon|gl
+|chat|Egyptian|glhf
+|
+|start
+|switch|p1a: Skarmory|Skarmory, F|334\/334
+|switch|p2a: Scizor|Scizor, M|344\/344
+|turn|1
+|callback|decision
+|
+|-formechange|p2a: Scizor|Scizor-Mega
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p1a: Skarmory|Spikes|p2a: Scizor
+|-sidestart|p2: Scizeon|Spikes
+|move|p2a: Scizor|Knock Off|p1a: Skarmory
+|-damage|p1a: Skarmory|252\/334
+|-enditem|p1a: Skarmory|Shed Shell|[from] move: Knock Off|[of] p2a: Scizor
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Scizor|Defog|p1a: Skarmory
+|-unboost|p1a: Skarmory|evasion|1
+|-sideend|p2: Scizeon|Spikes|[from] move: Defog|[of] p2a: Scizor
+|move|p1a: Skarmory|Spikes|p2a: Scizor
+|-sidestart|p2: Scizeon|Spikes
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Scizor|Defog|p1a: Skarmory
+|-unboost|p1a: Skarmory|evasion|1
+|-sideend|p2: Scizeon|Spikes|[from] move: Defog|[of] p2a: Scizor
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334
+|
+|turn|4
+|callback|decision
+|join|Green025
+|
+|move|p2a: Scizor|U-turn|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|313\/334
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|move|p1a: Skarmory|Brave Bird|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|266\/304
+|-damage|p1a: Skarmory|300\/334|[from] recoil|[of] p2a: Rotom-Wash
+|
+|turn|5
+|callback|decision
+|
+|switch|p1a: Venusaur|Venusaur, M|364\/364
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|298\/364
+|
+|turn|6
+|callback|decision
+|
+|-formechange|p1a: Venusaur|Venusaur-Mega
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p1a: Venusaur|Hidden Power|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|237\/304
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Venusaur
+|-crit|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|243\/364
+|callback|decision
+|
+|switch|p2a: Greninja|Greninja, M|286\/286
+|
+|turn|7
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|-start|p2a: Greninja|typechange|Bug|[from] Protean
+|move|p2a: Greninja|U-turn|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|168\/304
+|callback|decision
+|
+|switch|p2a: Florges|Florges, F|360\/360
+|
+|-heal|p1a: Rotom-Wash|187\/304|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Florges
+|-damage|p2a: Florges|317\/360
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|386\/386
+|move|p2a: Florges|Wish|p2a: Florges
+|
+|-heal|p2a: Florges|339\/360|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|237\/304
+|move|p1a: Heatran|Stealth Rock|p2a: Rotom-Wash
+|-sidestart|p2: Scizeon|move: Stealth Rock
+|
+|-heal|p2a: Rotom-Wash|304\/304|[from] move: Wish|[wisher] Florges
+|turn|10
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|turn|11
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Heatran
+|-damage|p1a: Heatran|323\/386
+|callback|decision
+|
+|switch|p2a: Florges|Florges, F|339\/360
+|-damage|p2a: Florges|294\/360|[from] Stealth Rock
+|move|p1a: Heatran|Roar|p2a: Florges
+|drag|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|-damage|p2a: Rotom-Wash|266\/304|[from] Stealth Rock
+|
+|-heal|p1a: Heatran|347\/386|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-heal|p1a: Heatran|371\/386|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|167\/386
+|move|p1a: Heatran|Roar|p2a: Rotom-Wash
+|drag|p2a: Scizor|Scizor, M|344\/344
+|-formechange|p2a: Scizor|Scizor-Mega
+|-damage|p2a: Scizor|301\/344|[from] Stealth Rock
+|
+|-heal|p1a: Heatran|191\/386|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|266\/304
+|-damage|p2a: Rotom-Wash|228\/304|[from] Stealth Rock
+|move|p1a: Heatran|Lava Plume|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|169\/304
+|-status|p2a: Rotom-Wash|brn
+|
+|-heal|p1a: Heatran|215\/386|[from] item: Leftovers
+|-damage|p2a: Rotom-Wash|131\/304 brn|[from] brn
+|turn|15
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Rotom-Wash|Rest|p2a: Rotom-Wash
+|-status|p2a: Rotom-Wash|slp
+|-heal|p2a: Rotom-Wash|304\/304 slp|[silent]
+|-status|p2a: Rotom-Wash|slp|[from] move: Rest
+|-enditem|p2a: Rotom-Wash|Chesto Berry|[eat]
+|-curestatus|p2a: Rotom-Wash|slp
+|
+|-heal|p1a: Heatran|239\/386|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Heatran|[miss]
+|-miss|p2a: Rotom-Wash|p1a: Heatran
+|move|p1a: Heatran|Roar|p2a: Rotom-Wash
+|drag|p2a: Heatran|Heatran, M|386\/386
+|-damage|p2a: Heatran|338\/386|[from] Stealth Rock
+|
+|-heal|p1a: Heatran|263\/386|[from] item: Leftovers
+|-heal|p2a: Heatran|362\/386|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, F|420\/420
+|move|p2a: Heatran|Earth Power|p1a: Garchomp
+|-crit|p1a: Garchomp
+|-damage|p1a: Garchomp|206\/420
+|
+|-heal|p1a: Garchomp|232\/420|[from] item: Leftovers
+|-heal|p2a: Heatran|386\/386|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|-damage|p2a: Rotom-Wash|266\/304|[from] Stealth Rock
+|move|p1a: Garchomp|Protect|p1a: Garchomp
+|-fail|p1a: Garchomp
+|
+|-heal|p1a: Garchomp|258\/420|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p1a: Garchomp|Substitute|p1a: Garchomp
+|-start|p1a: Garchomp|Substitute
+|-damage|p1a: Garchomp|153\/420
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Garchomp
+|
+|-heal|p1a: Garchomp|179\/420|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p1a: Garchomp|Protect|p1a: Garchomp
+|-singleturn|p1a: Garchomp|Protect
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Garchomp
+|-activate|p1a: Garchomp|Protect
+|
+|-heal|p1a: Garchomp|205\/420|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Garchomp
+|-end|p1a: Garchomp|Substitute
+|move|p1a: Garchomp|Dragon Tail|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|209\/304
+|drag|p2a: Dragonite|Dragonite, F|324\/324
+|-damage|p2a: Dragonite|243\/324|[from] Stealth Rock
+|
+|-heal|p1a: Garchomp|231\/420|[from] item: Leftovers
+|turn|22
+|callback|decision
+|chat|Green025|definition of vcg in that turn
+|
+|switch|p2a: Florges|Florges, F|294\/360
+|-damage|p2a: Florges|249\/360|[from] Stealth Rock
+|move|p1a: Garchomp|Dragon Tail|p2a: Florges
+|-immune|p2a: Florges|[msg]
+|
+|-heal|p1a: Garchomp|257\/420|[from] item: Leftovers
+|-heal|p2a: Florges|271\/360|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p1a: Garchomp|Substitute|p1a: Garchomp
+|-start|p1a: Garchomp|Substitute
+|-damage|p1a: Garchomp|152\/420
+|move|p2a: Florges|Moonblast|p1a: Garchomp
+|-supereffective|p1a: Garchomp
+|-end|p1a: Garchomp|Substitute
+|
+|-heal|p1a: Garchomp|178\/420|[from] item: Leftovers
+|-heal|p2a: Florges|293\/360|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, F|300\/334
+|move|p2a: Florges|Wish|p2a: Florges
+|
+|-heal|p2a: Florges|315\/360|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|209\/304
+|-damage|p2a: Rotom-Wash|171\/304|[from] Stealth Rock
+|move|p1a: Skarmory|Whirlwind|p2a: Rotom-Wash
+|drag|p2a: Heatran|Heatran, M|386\/386
+|-damage|p2a: Heatran|338\/386|[from] Stealth Rock
+|
+|-heal|p2a: Heatran|386\/386|[from] move: Wish|[wisher] Florges
+|turn|26
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|263\/386
+|move|p2a: Heatran|Stealth Rock|p1a: Heatran
+|-sidestart|p1: Egyptian|move: Stealth Rock
+|
+|-heal|p1a: Heatran|287\/386|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Heatran|Earth Power|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-heal|p1a: Heatran|311\/386|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, F|178\/420
+|-damage|p1a: Garchomp|152\/420|[from] Stealth Rock
+|move|p2a: Heatran|Roar|p1a: Garchomp
+|drag|p1a: Venusaur|Venusaur, M|243\/364
+|-formechange|p1a: Venusaur|Venusaur-Mega
+|-damage|p1a: Venusaur|198\/364|[from] Stealth Rock
+|
+|turn|29
+|callback|decision
+|
+|move|p1a: Venusaur|Leech Seed|p2a: Heatran
+|-start|p2a: Heatran|move: Leech Seed
+|move|p2a: Heatran|Earth Power|p1a: Venusaur
+|-damage|p1a: Venusaur|96\/364
+|
+|-damage|p2a: Heatran|338\/386|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|144\/364|[silent]
+|turn|30
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, F|152\/420
+|-damage|p1a: Garchomp|126\/420|[from] Stealth Rock
+|switch|p2a: Florges|Florges, F|315\/360
+|-damage|p2a: Florges|270\/360|[from] Stealth Rock
+|
+|-heal|p1a: Garchomp|152\/420|[from] item: Leftovers
+|-heal|p2a: Florges|292\/360|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|move|p1a: Garchomp|Earthquake|p2a: Florges
+|-damage|p2a: Florges|100\/360
+|move|p2a: Florges|Moonblast|p1a: Garchomp
+|-supereffective|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|faint|p1a: Garchomp
+|
+|-heal|p2a: Florges|122\/360|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Greninja|Greninja, M|285\/285
+|-damage|p1a: Greninja|250\/285|[from] Stealth Rock
+|turn|32
+|callback|decision
+|
+|move|p2a: Florges|Protect|p2a: Florges
+|-singleturn|p2a: Florges|Protect
+|-start|p1a: Greninja|typechange|Water|[from] Protean
+|move|p1a: Greninja|Hydro Pump|p2a: Florges
+|-activate|p2a: Florges|Protect
+|
+|-heal|p2a: Florges|144\/360|[from] item: Leftovers
+|turn|33
+|callback|decision
+|
+|switch|p2a: Dragonite|Dragonite, F|243\/324
+|-damage|p2a: Dragonite|162\/324|[from] Stealth Rock
+|move|p1a: Greninja|Hydro Pump|p2a: Dragonite
+|-resisted|p2a: Dragonite
+|-damage|p2a: Dragonite|32\/324
+|
+|turn|34
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, F|300\/334
+|-damage|p1a: Skarmory|259\/334|[from] Stealth Rock
+|move|p2a: Dragonite|Extreme Speed|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|227\/334
+|
+|turn|35
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|301\/344
+|-formechange|p2a: Scizor|Scizor-Mega
+|-damage|p2a: Scizor|258\/344|[from] Stealth Rock
+|move|p1a: Skarmory|Spikes|p2a: Scizor
+|-sidestart|p2: Scizeon|Spikes
+|
+|turn|36
+|callback|decision
+|
+|move|p2a: Scizor|Defog|p1a: Skarmory
+|-unboost|p1a: Skarmory|evasion|1
+|-sideend|p1: Egyptian|Stealth Rock|[from] move: Defog|[of] p1a: Skarmory
+|-sideend|p2: Scizeon|Spikes|[from] move: Defog|[of] p2a: Scizor
+|-sideend|p2: Scizeon|Stealth Rock|[from] move: Defog|[of] p2a: Scizor
+|move|p1a: Skarmory|Brave Bird|p2a: Scizor
+|-damage|p2a: Scizor|177\/344
+|-damage|p1a: Skarmory|200\/334|[from] recoil|[of] p2a: Scizor
+|
+|turn|37
+|callback|decision
+|
+|move|p2a: Scizor|U-turn|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|178\/334
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, M|338\/386
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334
+|
+|-heal|p2a: Heatran|362\/386|[from] item: Leftovers
+|turn|38
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|187\/304
+|move|p2a: Heatran|Lava Plume|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|133\/304
+|-status|p1a: Rotom-Wash|brn
+|
+|-heal|p1a: Rotom-Wash|152\/304 brn|[from] item: Leftovers
+|-heal|p2a: Heatran|386\/386|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|114\/304 brn|[from] brn
+|turn|39
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Pain Split|p2a: Heatran
+|-sethp|p2a: Heatran|250\/386|p1a: Rotom-Wash|250\/304 brn|[from] move: Pain Split
+|move|p2a: Heatran|Stealth Rock|p1a: Rotom-Wash
+|-sidestart|p1: Egyptian|move: Stealth Rock
+|
+|-heal|p1a: Rotom-Wash|269\/304 brn|[from] item: Leftovers
+|-heal|p2a: Heatran|274\/386|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|231\/304 brn|[from] brn
+|turn|40
+|callback|decision
+|
+|switch|p2a: Florges|Florges, F|144\/360
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Florges
+|-damage|p2a: Florges|72\/360
+|
+|-heal|p1a: Rotom-Wash|250\/304 brn|[from] item: Leftovers
+|-heal|p2a: Florges|94\/360|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|212\/304 brn|[from] brn
+|turn|41
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Florges
+|-status|p2a: Florges|brn
+|move|p2a: Florges|Wish|p2a: Florges
+|
+|-heal|p1a: Rotom-Wash|231\/304 brn|[from] item: Leftovers
+|-heal|p2a: Florges|116\/360 brn|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|193\/304 brn|[from] brn
+|-damage|p2a: Florges|71\/360 brn|[from] brn
+|turn|42
+|callback|decision
+|
+|move|p2a: Florges|Protect|p2a: Florges
+|-singleturn|p2a: Florges|Protect
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Florges
+|-activate|p2a: Florges|Protect
+|
+|-heal|p2a: Florges|251\/360 brn|[from] move: Wish|[wisher] Florges
+|-heal|p1a: Rotom-Wash|212\/304 brn|[from] item: Leftovers
+|-heal|p2a: Florges|273\/360 brn|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|174\/304 brn|[from] brn
+|-damage|p2a: Florges|228\/360 brn|[from] brn
+|turn|43
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Florges
+|-damage|p2a: Florges|156\/360 brn
+|move|p2a: Florges|Aromatherapy|p2a: Florges
+|-cureteam|p2a: Florges|[from] move: Aromatherapy
+|
+|-heal|p1a: Rotom-Wash|193\/304 brn|[from] item: Leftovers
+|-heal|p2a: Florges|178\/360|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|155\/304 brn|[from] brn
+|turn|44
+|callback|decision
+|
+|move|p2a: Florges|Protect|p2a: Florges
+|-singleturn|p2a: Florges|Protect
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Florges
+|-activate|p2a: Florges|Protect
+|
+|-heal|p1a: Rotom-Wash|174\/304 brn|[from] item: Leftovers
+|-heal|p2a: Florges|200\/360|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|136\/304 brn|[from] brn
+|turn|45
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Florges|[miss]
+|-miss|p1a: Rotom-Wash|p2a: Florges
+|move|p2a: Florges|Wish|p2a: Florges
+|
+|-heal|p1a: Rotom-Wash|155\/304 brn|[from] item: Leftovers
+|-heal|p2a: Florges|222\/360|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|117\/304 brn|[from] brn
+|turn|46
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Florges
+|-damage|p2a: Florges|173\/360
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|311\/386
+|-damage|p1a: Heatran|263\/386|[from] Stealth Rock
+|move|p2a: Florges|Moonblast|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|243\/386
+|
+|-heal|p2a: Florges|353\/360|[from] move: Wish|[wisher] Florges
+|-heal|p1a: Heatran|267\/386|[from] item: Leftovers
+|-heal|p2a: Florges|360\/360|[from] item: Leftovers
+|turn|47
+|callback|decision
+|
+|switch|p2a: Dragonite|Dragonite, F|32\/324
+|move|p1a: Heatran|Stealth Rock|p2a: Dragonite
+|-sidestart|p2: Scizeon|move: Stealth Rock
+|
+|-heal|p1a: Heatran|291\/386|[from] item: Leftovers
+|turn|48
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, F|334\/334
+|-damage|p1a: Skarmory|293\/334|[from] Stealth Rock
+|move|p2a: Dragonite|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|
+|turn|49
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|171\/304
+|-damage|p2a: Rotom-Wash|133\/304|[from] Stealth Rock
+|move|p1a: Skarmory|Whirlwind|p2a: Rotom-Wash
+|drag|p2a: Florges|Florges, F|360\/360
+|-damage|p2a: Florges|315\/360|[from] Stealth Rock
+|
+|-heal|p2a: Florges|337\/360|[from] item: Leftovers
+|turn|50
+|callback|decision
+|
+|move|p2a: Florges|Wish|p2a: Florges
+|move|p1a: Skarmory|Brave Bird|p2a: Florges
+|-damage|p2a: Florges|190\/360
+|-damage|p1a: Skarmory|244\/334|[from] recoil|[of] p2a: Florges
+|
+|-heal|p2a: Florges|212\/360|[from] item: Leftovers
+|turn|51
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|133\/304
+|-damage|p2a: Rotom-Wash|95\/304|[from] Stealth Rock
+|move|p1a: Skarmory|Whirlwind|p2a: Rotom-Wash
+|drag|p2a: Dragonite|Dragonite, F|32\/324
+|-damage|p2a: Dragonite|0 fnt|[from] Stealth Rock
+|faint|p2a: Dragonite
+|
+|callback|decision
+|chat|Egyptian|nope.avi
+|
+|switch|p2a: Heatran|Heatran, M|274\/386
+|-damage|p2a: Heatran|226\/386|[from] Stealth Rock
+|turn|52
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|117\/304 brn
+|-damage|p1a: Rotom-Wash|79\/304 brn|[from] Stealth Rock
+|move|p2a: Heatran|Lava Plume|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|23\/304 brn
+|
+|-heal|p1a: Rotom-Wash|42\/304 brn|[from] item: Leftovers
+|-heal|p2a: Heatran|250\/386|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|4\/304 brn|[from] brn
+|turn|53
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Pain Split|p2a: Heatran
+|-sethp|p2a: Heatran|127\/386|p1a: Rotom-Wash|127\/304 brn|[from] move: Pain Split
+|move|p2a: Heatran|Lava Plume|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|66\/304 brn
+|
+|-heal|p1a: Rotom-Wash|85\/304 brn|[from] item: Leftovers
+|-heal|p2a: Heatran|151\/386|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|47\/304 brn|[from] brn
+|turn|54
+|callback|decision
+|
+|switch|p2a: Greninja|Greninja, M|286\/286
+|-damage|p2a: Greninja|251\/286|[from] Stealth Rock
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Greninja|[miss]
+|-miss|p1a: Rotom-Wash|p2a: Greninja
+|
+|-heal|p1a: Rotom-Wash|66\/304 brn|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|28\/304 brn|[from] brn
+|turn|55
+|callback|decision
+|
+|-start|p2a: Greninja|typechange|Bug|[from] Protean
+|move|p2a: Greninja|U-turn|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|callback|decision
+|
+|switch|p2a: Florges|Florges, F|212\/360
+|-damage|p2a: Florges|167\/360|[from] Stealth Rock
+|
+|-heal|p2a: Florges|189\/360|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, F|244\/334
+|-damage|p1a: Skarmory|203\/334|[from] Stealth Rock
+|turn|56
+|callback|decision
+|
+|move|p2a: Florges|Wish|p2a: Florges
+|move|p1a: Skarmory|Spikes|p2a: Florges
+|-sidestart|p2: Scizeon|Spikes
+|
+|-heal|p2a: Florges|211\/360|[from] item: Leftovers
+|turn|57
+|callback|decision
+|
+|move|p2a: Florges|Moonblast|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|125\/334
+|move|p1a: Skarmory|Whirlwind|p2a: Florges
+|drag|p2a: Scizor|Scizor, M|177\/344
+|-formechange|p2a: Scizor|Scizor-Mega
+|-damage|p2a: Scizor|134\/344|[from] Stealth Rock
+|-damage|p2a: Scizor|91\/344|[from] Spikes
+|
+|-heal|p2a: Scizor|271\/344|[from] move: Wish|[wisher] Florges
+|turn|58
+|callback|decision
+|
+|move|p2a: Scizor|Defog|p1a: Skarmory
+|-unboost|p1a: Skarmory|evasion|1
+|-sideend|p1: Egyptian|Stealth Rock|[from] move: Defog|[of] p1a: Skarmory
+|-sideend|p2: Scizeon|Spikes|[from] move: Defog|[of] p2a: Scizor
+|-sideend|p2: Scizeon|Stealth Rock|[from] move: Defog|[of] p2a: Scizor
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|292\/334
+|
+|turn|59
+|callback|decision
+|chat|Egyptian|i hate that scizor lol
+|
+|move|p2a: Scizor|U-turn|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|271\/334
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|95\/304
+|move|p1a: Skarmory|Spikes|p2a: Rotom-Wash
+|-sidestart|p2: Scizeon|Spikes
+|
+|turn|60
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Skarmory
+|-status|p1a: Skarmory|brn
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334 brn
+|
+|-damage|p1a: Skarmory|293\/334 brn|[from] brn
+|turn|61
+|callback|decision
+|
+|switch|p1a: Venusaur|Venusaur, M|144\/364
+|-formechange|p1a: Venusaur|Venusaur-Mega
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|109\/364
+|callback|decision
+|
+|switch|p2a: Florges|Florges, F|211\/360
+|-damage|p2a: Florges|166\/360|[from] Spikes
+|
+|-heal|p2a: Florges|188\/360|[from] item: Leftovers
+|turn|62
+|callback|decision
+|
+|move|p1a: Venusaur|Leech Seed|p2a: Florges
+|-start|p2a: Florges|move: Leech Seed
+|move|p2a: Florges|Wish|p2a: Florges
+|
+|-heal|p2a: Florges|210\/360|[from] item: Leftovers
+|-damage|p2a: Florges|165\/360|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|154\/364|[silent]
+|turn|63
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, M|151\/386
+|-damage|p2a: Heatran|103\/386|[from] Spikes
+|move|p1a: Venusaur|Leech Seed|p2a: Heatran
+|-start|p2a: Heatran|move: Leech Seed
+|
+|-heal|p2a: Heatran|283\/386|[from] move: Wish|[wisher] Florges
+|-heal|p2a: Heatran|307\/386|[from] item: Leftovers
+|-damage|p2a: Heatran|259\/386|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|202\/364|[silent]
+|turn|64
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|291\/386
+|switch|p2a: Rotom-Wash|Rotom-Wash|95\/304
+|
+|-heal|p1a: Heatran|315\/386|[from] item: Leftovers
+|turn|65
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-heal|p1a: Heatran|339\/386|[from] item: Leftovers
+|turn|66
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Heatran
+|-damage|p1a: Heatran|278\/386
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, M|259\/386
+|-damage|p2a: Heatran|211\/386|[from] Spikes
+|move|p1a: Heatran|Stealth Rock|p2a: Heatran
+|-sidestart|p2: Scizeon|move: Stealth Rock
+|
+|-heal|p1a: Heatran|302\/386|[from] item: Leftovers
+|-heal|p2a: Heatran|235\/386|[from] item: Leftovers
+|turn|67
+|callback|decision
+|
+|move|p2a: Heatran|Stealth Rock|p1a: Heatran
+|-sidestart|p1: Egyptian|move: Stealth Rock
+|move|p1a: Heatran|Roar|p2a: Heatran
+|drag|p2a: Rotom-Wash|Rotom-Wash|95\/304
+|-damage|p2a: Rotom-Wash|57\/304|[from] Stealth Rock
+|
+|-heal|p1a: Heatran|326\/386|[from] item: Leftovers
+|turn|68
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Rest|p2a: Rotom-Wash
+|-status|p2a: Rotom-Wash|slp
+|-heal|p2a: Rotom-Wash|304\/304 slp|[silent]
+|-status|p2a: Rotom-Wash|slp|[from] move: Rest
+|move|p1a: Heatran|Lava Plume|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|253\/304 slp
+|
+|-heal|p1a: Heatran|350\/386|[from] item: Leftovers
+|turn|69
+|callback|decision
+|
+|cant|p2a: Rotom-Wash|slp
+|move|p1a: Heatran|Roar|p2a: Rotom-Wash
+|drag|p2a: Greninja|Greninja, M|251\/286
+|-damage|p2a: Greninja|216\/286|[from] Spikes
+|-damage|p2a: Greninja|181\/286|[from] Stealth Rock
+|
+|-heal|p1a: Heatran|374\/386|[from] item: Leftovers
+|turn|70
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|-start|p2a: Greninja|typechange|Water|[from] Protean
+|move|p2a: Greninja|Waterfall|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-heal|p1a: Heatran|386\/386|[from] item: Leftovers
+|turn|71
+|callback|decision
+|
+|move|p2a: Greninja|Waterfall|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|62\/386
+|move|p1a: Heatran|Roar|p2a: Greninja
+|drag|p2a: Rotom-Wash|Rotom-Wash|253\/304 slp
+|-damage|p2a: Rotom-Wash|215\/304 slp|[from] Stealth Rock
+|
+|-heal|p1a: Heatran|86\/386|[from] item: Leftovers
+|turn|72
+|callback|decision
+|
+|cant|p2a: Rotom-Wash|slp
+|move|p1a: Heatran|Roar|p2a: Rotom-Wash
+|drag|p2a: Heatran|Heatran, M|235\/386
+|-damage|p2a: Heatran|187\/386|[from] Spikes
+|-damage|p2a: Heatran|139\/386|[from] Stealth Rock
+|
+|-heal|p1a: Heatran|110\/386|[from] item: Leftovers
+|-heal|p2a: Heatran|163\/386|[from] item: Leftovers
+|turn|73
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Heatran|Roar|p1a: Heatran
+|drag|p1a: Venusaur|Venusaur, M|202\/364
+|-formechange|p1a: Venusaur|Venusaur-Mega
+|-damage|p1a: Venusaur|157\/364|[from] Stealth Rock
+|
+|-heal|p2a: Heatran|187\/386|[from] item: Leftovers
+|turn|74
+|callback|decision
+|
+|move|p1a: Venusaur|Leech Seed|p2a: Heatran
+|-start|p2a: Heatran|move: Leech Seed
+|move|p2a: Heatran|Lava Plume|p1a: Venusaur
+|-supereffective|p1a: Venusaur
+|-damage|p1a: Venusaur|17\/364
+|
+|-heal|p2a: Heatran|211\/386|[from] item: Leftovers
+|-damage|p2a: Heatran|163\/386|[from] Leech Seed|[of] p1a: Venusaur
+|-heal|p1a: Venusaur|65\/364|[silent]
+|turn|75
+|callback|decision
+|
+|switch|p2a: Greninja|Greninja, M|181\/286
+|-damage|p2a: Greninja|146\/286|[from] Spikes
+|-damage|p2a: Greninja|111\/286|[from] Stealth Rock
+|move|p1a: Venusaur|Giga Drain|p2a: Greninja
+|-supereffective|p2a: Greninja
+|-damage|p2a: Greninja|0 fnt
+|-heal|p1a: Venusaur|121\/364|[from] drain|[of] p2a: Greninja
+|faint|p2a: Greninja
+|
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, M|163\/386
+|-damage|p2a: Heatran|115\/386|[from] Spikes
+|-damage|p2a: Heatran|67\/386|[from] Stealth Rock
+|turn|76
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, F|110\/386
+|-damage|p1a: Heatran|62\/386|[from] Stealth Rock
+|move|p2a: Heatran|Lava Plume|p1a: Heatran
+|-start|p1a: Heatran|ability: Flash Fire
+|
+|-heal|p1a: Heatran|86\/386|[from] item: Leftovers
+|-heal|p2a: Heatran|91\/386|[from] item: Leftovers
+|turn|77
+|callback|decision
+|
+|move|p2a: Heatran|Earth Power|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|-heal|p2a: Heatran|115\/386|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Greninja|Greninja, M|250\/285
+|-damage|p1a: Greninja|215\/285|[from] Stealth Rock
+|turn|78
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|215\/304 slp
+|-damage|p2a: Rotom-Wash|177\/304 slp|[from] Stealth Rock
+|-start|p1a: Greninja|typechange|Water|[from] Protean
+|move|p1a: Greninja|Hydro Pump|p2a: Rotom-Wash|[miss]
+|-miss|p1a: Greninja|p2a: Rotom-Wash
+|
+|turn|79
+|callback|decision
+|
+|switch|p1a: Venusaur|Venusaur, M|121\/364
+|-formechange|p1a: Venusaur|Venusaur-Mega
+|-damage|p1a: Venusaur|76\/364|[from] Stealth Rock
+|-curestatus|p2a: Rotom-Wash|slp
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Venusaur
+|-resisted|p1a: Venusaur
+|-damage|p1a: Venusaur|38\/364
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|271\/344
+|-formechange|p2a: Scizor|Scizor-Mega
+|-damage|p2a: Scizor|228\/344|[from] Stealth Rock
+|-damage|p2a: Scizor|185\/344|[from] Spikes
+|
+|turn|80
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Venusaur
+|-damage|p1a: Venusaur|0 fnt
+|faint|p1a: Venusaur
+|
+|callback|decision
+|
+|switch|p1a: Greninja|Greninja, M|215\/285
+|-damage|p1a: Greninja|180\/285|[from] Stealth Rock
+|turn|81
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Greninja
+|-resisted|p1a: Greninja
+|-damage|p1a: Greninja|85\/285
+|-start|p1a: Greninja|typechange|Water|[from] Protean
+|move|p1a: Greninja|Hydro Pump|p2a: Scizor|[miss]
+|-miss|p1a: Greninja|p2a: Scizor
+|
+|turn|82
+|callback|decision
+|chat|Egyptian|dat miss...
+|chat|Egyptian|ggwp
+|chat|Scizeon|gg
+|
+|switch|p1a: Skarmory|Skarmory, F|293\/334 brn
+|-damage|p1a: Skarmory|252\/334 brn|[from] Stealth Rock
+|move|p2a: Scizor|Bullet Punch|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|213\/334 brn
+|
+|-damage|p1a: Skarmory|172\/334 brn|[from] brn
+|turn|83
+|callback|decision
+|
+|move|p2a: Scizor|Defog|p1a: Skarmory
+|-unboost|p1a: Skarmory|evasion|1
+|-sideend|p1: Egyptian|Stealth Rock|[from] move: Defog|[of] p1a: Skarmory
+|-sideend|p2: Scizeon|Spikes|[from] move: Defog|[of] p2a: Scizor
+|-sideend|p2: Scizeon|Stealth Rock|[from] move: Defog|[of] p2a: Scizor
+|move|p1a: Skarmory|Spikes|p2a: Scizor
+|-sidestart|p2: Scizeon|Spikes
+|
+|-damage|p1a: Skarmory|131\/334 brn|[from] brn
+|turn|84
+|callback|decision
+|
+|move|p2a: Scizor|Defog|p1a: Skarmory
+|-unboost|p1a: Skarmory|evasion|1
+|-sideend|p2: Scizeon|Spikes|[from] move: Defog|[of] p2a: Scizor
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|298\/334 brn
+|
+|-damage|p1a: Skarmory|257\/334 brn|[from] brn
+|turn|85
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, M|115\/386
+|move|p1a: Skarmory|Whirlwind|p2a: Heatran
+|drag|p2a: Florges|Florges, F|165\/360
+|
+|-heal|p2a: Florges|187\/360|[from] item: Leftovers
+|-damage|p1a: Skarmory|216\/334 brn|[from] brn
+|turn|86
+|callback|decision
+|
+|move|p2a: Florges|Wish|p2a: Florges
+|move|p1a: Skarmory|Spikes|p2a: Florges
+|-sidestart|p2: Scizeon|Spikes
+|
+|-heal|p2a: Florges|209\/360|[from] item: Leftovers
+|-damage|p1a: Skarmory|175\/334 brn|[from] brn
+|turn|87
+|callback|decision
+|
+|move|p2a: Florges|Moonblast|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|90\/334 brn
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|257\/334 brn
+|
+|-heal|p2a: Florges|360\/360|[from] move: Wish|[wisher] Florges
+|-damage|p1a: Skarmory|216\/334 brn|[from] brn
+|turn|88
+|callback|decision
+|leave|Green025
+|
+|move|p2a: Florges|Moonblast|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|129\/334 brn
+|-unboost|p1a: Skarmory|spa|1
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|296\/334 brn
+|
+|-damage|p1a: Skarmory|255\/334 brn|[from] brn
+|turn|89
+|callback|decision
+|
+|move|p2a: Florges|Wish|p2a: Florges
+|move|p1a: Skarmory|Spikes|p2a: Florges
+|-sidestart|p2: Scizeon|Spikes
+|
+|-damage|p1a: Skarmory|214\/334 brn|[from] brn
+|turn|90
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|185\/344
+|-formechange|p2a: Scizor|Scizor-Mega
+|-damage|p2a: Scizor|128\/344|[from] Spikes
+|move|p1a: Skarmory|Whirlwind|p2a: Scizor
+|drag|p2a: Heatran|Heatran, M|115\/386
+|-damage|p2a: Heatran|51\/386|[from] Spikes
+|
+|-heal|p2a: Heatran|231\/386|[from] move: Wish|[wisher] Florges
+|-heal|p2a: Heatran|255\/386|[from] item: Leftovers
+|-damage|p1a: Skarmory|173\/334 brn|[from] brn
+|turn|91
+|callback|decision
+|
+|move|p2a: Heatran|Lava Plume|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|faint|p1a: Skarmory
+|
+|-heal|p2a: Heatran|279\/386|[from] item: Leftovers
+|callback|decision
+|chat|Egyptian|what's your evs on mega scizor
+|chat|Scizeon|hp and attack
+|
+|switch|p1a: Greninja|Greninja, M|85\/285
+|turn|92
+|callback|decision
+|
+|-start|p1a: Greninja|typechange|Dark|[from] Protean
+|move|p1a: Greninja|Dark Pulse|p2a: Heatran
+|-damage|p2a: Heatran|110\/386
+|move|p2a: Heatran|Earth Power|p1a: Greninja
+|-crit|p1a: Greninja
+|-damage|p1a: Greninja|0 fnt
+|faint|p1a: Greninja
+|
+|win|Scizeon
+|chat|Egyptian|ggwp
+|chat|Scizeon|gg
+|leave|Scizeon
+|player|p2
+|leave|Egyptian
+|player|p1
+|join|Egyptian

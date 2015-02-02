@@ -1,0 +1,378 @@
+|join|360panicknife
+|join|iDmoon
+|player|p1|360panicknife|170
+|player|p2|iDmoon|78
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Infernape, M
+|poke|p1|Flygon, F
+|poke|p1|Krookodile, F
+|poke|p1|Diancie
+|poke|p1|Chesnaught, M
+|poke|p1|Meloetta
+|poke|p2|Nidoking, M
+|poke|p2|Kyurem
+|poke|p2|Florges, F
+|poke|p2|Rotom-Heat
+|poke|p2|Blastoise, M
+|poke|p2|Hydreigon, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Flygon|Flygon, F|301\/301
+|switch|p2a: Blastoise|Blastoise, M|355\/355
+|turn|1
+|
+|detailschange|p2a: Blastoise|Blastoise-Mega, M
+|-mega|p2a: Blastoise|Blastoise|Blastoisinite
+|move|p1a: Flygon|U-turn|p2a: Blastoise
+|-damage|p2a: Blastoise|300\/355
+|
+|switch|p1a: I think naught|Chesnaught, M|379\/379
+|move|p2a: Blastoise|Ice Beam|p1a: I think naught
+|-supereffective|p1a: I think naught
+|-damage|p1a: I think naught|87\/379
+|
+|turn|2
+|
+|move|p2a: Blastoise|Ice Beam|p1a: I think naught
+|-supereffective|p1a: I think naught
+|-damage|p1a: I think naught|0 fnt
+|faint|p1a: I think naught
+|
+|
+|switch|p1a: Meloetta|Meloetta|403\/403
+|turn|3
+|
+|move|p1a: Meloetta|Hyper Voice|p2a: Blastoise
+|-damage|p2a: Blastoise|150\/355
+|move|p2a: Blastoise|Dark Pulse|p1a: Meloetta
+|-supereffective|p1a: Meloetta
+|-damage|p1a: Meloetta|219\/403
+|
+|turn|4
+|
+|switch|p2a: Hydreigon|Hydreigon, M|325\/325
+|move|p1a: Meloetta|Hyper Voice|p2a: Hydreigon
+|-damage|p2a: Hydreigon|123\/325
+|
+|turn|5
+|
+|move|p2a: Hydreigon|U-turn|p1a: Meloetta
+|-supereffective|p1a: Meloetta
+|-damage|p1a: Meloetta|63\/403
+|
+|switch|p2a: Florges|Florges, F|360\/360
+|move|p1a: Meloetta|Hyper Voice|p2a: Florges
+|-damage|p2a: Florges|260\/360
+|
+|-heal|p2a: Florges|282\/360|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: Hydreigon|Hydreigon, M|123\/325
+|move|p1a: Meloetta|Psyshock|p2a: Hydreigon
+|-immune|p2a: Hydreigon|[msg]
+|
+|turn|7
+|
+|move|p2a: Hydreigon|U-turn|p1a: Meloetta
+|-supereffective|p1a: Meloetta
+|-damage|p1a: Meloetta|0 fnt
+|faint|p1a: Meloetta
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|150\/355
+|
+|
+|switch|p1a: them shades|Krookodile, F|393\/393
+|-ability|p1a: them shades|Intimidate|[of] p2a: Blastoise
+|-unboost|p2a: Blastoise|atk|1
+|turn|8
+|
+|move|p1a: them shades|Earthquake|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|304\/304
+|turn|9
+|
+|move|p1a: them shades|Substitute|p1a: them shades
+|-start|p1a: them shades|Substitute
+|-damage|p1a: them shades|295\/393
+|move|p2a: Rotom-Heat|Will-O-Wisp|p1a: them shades|[miss]
+|-miss|p2a: Rotom-Heat|p1a: them shades
+|
+|-heal|p1a: them shades|319\/393|[from] item: Leftovers
+|turn|10
+|
+|switch|p2a: Kyurem|Kyurem|403\/403
+|-ability|p2a: Kyurem|Pressure
+|move|p1a: them shades|Bulk Up|p1a: them shades
+|-boost|p1a: them shades|atk|1
+|-boost|p1a: them shades|def|1
+|
+|-heal|p1a: them shades|343\/393|[from] item: Leftovers
+|turn|11
+|
+|move|p2a: Kyurem|Ice Beam|p1a: them shades
+|-supereffective|p1a: them shades
+|-end|p1a: them shades|Substitute
+|move|p1a: them shades|Knock Off|p2a: Kyurem
+|-damage|p2a: Kyurem|106\/403
+|-enditem|p2a: Kyurem|Leftovers|[from] move: Knock Off|[of] p1a: them shades
+|
+|-heal|p1a: them shades|367\/393|[from] item: Leftovers
+|turn|12
+|
+|switch|p1a: Infernape|Infernape, M|293\/293
+|move|p2a: Kyurem|Ice Beam|p1a: Infernape
+|-resisted|p1a: Infernape
+|-damage|p1a: Infernape|187\/293
+|
+|turn|13
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|304\/304
+|move|p1a: Infernape|Fire Blast|p2a: Rotom-Heat|[miss]
+|-miss|p1a: Infernape|p2a: Rotom-Heat
+|
+|turn|14
+|
+|move|p1a: Infernape|Close Combat|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|160\/304
+|-unboost|p1a: Infernape|def|1
+|-unboost|p1a: Infernape|spd|1
+|-damage|p1a: Infernape|158\/293|[from] item: Life Orb
+|move|p2a: Rotom-Heat|Will-O-Wisp|p1a: Infernape
+|-fail|p1a: Infernape
+|
+|-heal|p2a: Rotom-Heat|179\/304|[from] item: Leftovers
+|turn|15
+|
+|switch|p1a: Flygon|Flygon, F|301\/301
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Flygon
+|-immune|p1a: Flygon|[msg]
+|
+|-heal|p2a: Rotom-Heat|198\/304|[from] item: Leftovers
+|turn|16
+|
+|move|p1a: Flygon|Stone Edge|p2a: Rotom-Heat
+|-supereffective|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|54\/304
+|move|p2a: Rotom-Heat|Pain Split|p1a: Flygon
+|-sethp|p1a: Flygon|177\/301|p2a: Rotom-Heat|177\/304|[from] move: Pain Split
+|
+|-heal|p2a: Rotom-Heat|196\/304|[from] item: Leftovers
+|turn|17
+|
+|switch|p1a: Infernape|Infernape, M|158\/293
+|move|p2a: Rotom-Heat|Pain Split|p1a: Infernape
+|-sethp|p1a: Infernape|177\/293|p2a: Rotom-Heat|177\/304|[from] move: Pain Split
+|
+|-heal|p2a: Rotom-Heat|196\/304|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Infernape|Fire Blast|p2a: Rotom-Heat
+|-resisted|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|101\/304
+|-damage|p1a: Infernape|148\/293|[from] item: Life Orb
+|move|p2a: Rotom-Heat|Pain Split|p1a: Infernape
+|-sethp|p1a: Infernape|124\/293|p2a: Rotom-Heat|124\/304|[from] move: Pain Split
+|
+|-heal|p2a: Rotom-Heat|143\/304|[from] item: Leftovers
+|turn|19
+|
+|move|p1a: Infernape|Close Combat|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|0 fnt
+|-unboost|p1a: Infernape|def|1
+|-unboost|p1a: Infernape|spd|1
+|-damage|p1a: Infernape|95\/293|[from] item: Life Orb
+|faint|p2a: Rotom-Heat
+|
+|
+|switch|p2a: Nidoking|Nidoking, M|303\/303
+|turn|20
+|
+|switch|p1a: Diancie|Diancie|241\/241
+|move|p2a: Nidoking|Sucker Punch|p1a: Diancie
+|-fail|p1a: Diancie
+|
+|turn|21
+|
+|switch|p1a: Flygon|Flygon, F|177\/301
+|move|p2a: Nidoking|Poison Jab|p1a: Flygon
+|-resisted|p1a: Flygon
+|-damage|p1a: Flygon|48\/301
+|
+|turn|22
+|
+|switch|p2a: Kyurem|Kyurem|106\/403
+|-ability|p2a: Kyurem|Pressure
+|move|p1a: Flygon|Earthquake|p2a: Kyurem
+|-damage|p2a: Kyurem|0 fnt
+|faint|p2a: Kyurem
+|
+|
+|switch|p2a: Hydreigon|Hydreigon, M|123\/325
+|turn|23
+|
+|move|p1a: Flygon|Earthquake|p2a: Hydreigon
+|-immune|p2a: Hydreigon|[msg]
+|move|p2a: Hydreigon|U-turn|p1a: Flygon
+|-damage|p1a: Flygon|0 fnt
+|faint|p1a: Flygon
+|
+|switch|p2a: Florges|Florges, F|282\/360
+|
+|-heal|p2a: Florges|304\/360|[from] item: Leftovers
+|
+|switch|p1a: Diancie|Diancie|241\/241
+|turn|24
+|
+|detailschange|p1a: Diancie|Diancie-Mega
+|-mega|p1a: Diancie|Diancie|Diancite
+|move|p1a: Diancie|Stealth Rock|p2a: Florges
+|-sidestart|p2: iDmoon|move: Stealth Rock
+|move|p2a: Florges|Wish|p2a: Florges
+|
+|-heal|p2a: Florges|326\/360|[from] item: Leftovers
+|turn|25
+|
+|move|p1a: Diancie|Moonblast|p2a: Florges
+|-damage|p2a: Florges|212\/360
+|-unboost|p2a: Florges|spa|1
+|move|p2a: Florges|Moonblast|p1a: Diancie
+|-damage|p1a: Diancie|171\/241
+|-unboost|p1a: Diancie|spa|1
+|
+|-heal|p2a: Florges|360\/360|[from] move: Wish|[wisher] Florges
+|turn|26
+|
+|move|p1a: Diancie|Moonblast|p2a: Florges
+|-crit|p2a: Florges
+|-damage|p2a: Florges|213\/360
+|move|p2a: Florges|Wish|p2a: Florges
+|
+|-heal|p2a: Florges|235\/360|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: Diancie|Moonblast|p2a: Florges
+|-damage|p2a: Florges|165\/360
+|move|p2a: Florges|Moonblast|p1a: Diancie
+|-damage|p1a: Diancie|89\/241
+|-unboost|p1a: Diancie|spa|1
+|
+|-heal|p2a: Florges|345\/360|[from] move: Wish|[wisher] Florges
+|-heal|p2a: Florges|360\/360|[from] item: Leftovers
+|turn|28
+|
+|switch|p1a: them shades|Krookodile, F|367\/393
+|-ability|p1a: them shades|Intimidate|[of] p2a: Florges
+|-unboost|p2a: Florges|atk|1
+|move|p2a: Florges|Wish|p2a: Florges
+|
+|-heal|p1a: them shades|391\/393|[from] item: Leftovers
+|turn|29
+|
+|move|p1a: them shades|Substitute|p1a: them shades
+|-start|p1a: them shades|Substitute
+|-damage|p1a: them shades|293\/393
+|move|p2a: Florges|Moonblast|p1a: them shades
+|-supereffective|p1a: them shades
+|-end|p1a: them shades|Substitute
+|
+|-heal|p1a: them shades|317\/393|[from] item: Leftovers
+|turn|30
+|
+|move|p1a: them shades|Earthquake|p2a: Florges
+|-damage|p2a: Florges|102\/360
+|move|p2a: Florges|Moonblast|p1a: them shades
+|-supereffective|p1a: them shades
+|-damage|p1a: them shades|111\/393
+|
+|-heal|p1a: them shades|135\/393|[from] item: Leftovers
+|-heal|p2a: Florges|124\/360|[from] item: Leftovers
+|turn|31
+|
+|move|p1a: them shades|Substitute|p1a: them shades
+|-start|p1a: them shades|Substitute
+|-damage|p1a: them shades|37\/393
+|move|p2a: Florges|Moonblast|p1a: them shades
+|-supereffective|p1a: them shades
+|-end|p1a: them shades|Substitute
+|
+|-heal|p1a: them shades|61\/393|[from] item: Leftovers
+|-heal|p2a: Florges|146\/360|[from] item: Leftovers
+|turn|32
+|
+|move|p1a: them shades|Earthquake|p2a: Florges
+|-damage|p2a: Florges|0 fnt
+|faint|p2a: Florges
+|
+|-heal|p1a: them shades|85\/393|[from] item: Leftovers
+|
+|switch|p2a: Hydreigon|Hydreigon, M|123\/325
+|-damage|p2a: Hydreigon|83\/325|[from] Stealth Rock
+|turn|33
+|
+|move|p2a: Hydreigon|U-turn|p1a: them shades
+|-crit|p1a: them shades
+|-supereffective|p1a: them shades
+|-damage|p1a: them shades|0 fnt
+|faint|p1a: them shades
+|
+|switch|p2a: Nidoking|Nidoking, M|303\/303
+|-damage|p2a: Nidoking|285\/303|[from] Stealth Rock
+|
+|
+|switch|p1a: Diancie|Diancie-Mega|89\/241
+|turn|34
+|
+|move|p2a: Nidoking|Sucker Punch|p1a: Diancie
+|-resisted|p1a: Diancie
+|-damage|p1a: Diancie|34\/241
+|-damage|p2a: Nidoking|255\/303|[from] item: Life Orb
+|move|p1a: Diancie|Earth Power|p2a: Nidoking
+|-supereffective|p2a: Nidoking
+|-damage|p2a: Nidoking|0 fnt
+|faint|p2a: Nidoking
+|
+|
+|switch|p2a: Hydreigon|Hydreigon, M|83\/325
+|-damage|p2a: Hydreigon|43\/325|[from] Stealth Rock
+|turn|35
+|
+|move|p2a: Hydreigon|Dark Pulse|p1a: Diancie
+|-resisted|p1a: Diancie
+|-damage|p1a: Diancie|0 fnt
+|faint|p1a: Diancie
+|
+|
+|switch|p1a: Infernape|Infernape, M|95\/293
+|turn|36
+|c|â360panicknife|gg (:
+|
+|move|p1a: Infernape|Mach Punch|p2a: Hydreigon
+|-supereffective|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|-damage|p1a: Infernape|66\/293|[from] item: Life Orb
+|faint|p2a: Hydreigon
+|
+|win|360panicknife
+|raw|Ladder updating...
+|c|âiDmoon|gg
+|raw|360panicknife's rating: 1378 &rarr; <strong>1394<\/strong><br \/>(+16 for winning)
+|raw|iDmoon's rating: 1306 &rarr; <strong>1290<\/strong><br \/>(-16 for losing)
+|leave|iDmoon
+|player|p2

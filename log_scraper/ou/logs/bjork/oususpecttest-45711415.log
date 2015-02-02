@@ -1,0 +1,246 @@
+|join|ogouig
+|join|Bjork
+|player|p1|ogouig|102
+|player|p2|Bjork|266
+|gametype|singles
+|tier|OU (suspect test)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Tyranitar, M
+|poke|p1|Hippowdon, M
+|poke|p1|Amoonguss, F
+|poke|p1|Latios, M
+|poke|p1|Stoutland, M
+|poke|p1|Magneton
+|poke|p2|Rotom-Wash
+|poke|p2|Scizor, F
+|poke|p2|Garchomp, F
+|poke|p2|Froslass, F
+|poke|p2|Salamence, M
+|poke|p2|Latios, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|chat|ogouig|oh hey
+|chat|ogouig|sorry was away from comp
+|
+|start
+|switch|p1a: Kendrick L.|Magneton|242\/242
+|switch|p2a: Froslass|Froslass, F|281\/281
+|turn|1
+|callback|decision
+|
+|move|p1a: Kendrick L.|Volt Switch|p2a: Froslass
+|-damage|p2a: Froslass|155\/281
+|callback|decision
+|
+|switch|p1a: GangStarr|Tyranitar, M|365\/365
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: GangStarr
+|move|p2a: Froslass|Thunder Wave|p1a: GangStarr
+|-status|p1a: GangStarr|par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Froslass|138\/281|[from] sandstorm
+|turn|2
+|callback|decision
+|
+|move|p2a: Froslass|Spikes|p1a: GangStarr
+|-sidestart|p1: ogouig|Spikes
+|move|p1a: GangStarr|Pursuit|p2a: Froslass
+|-supereffective|p2a: Froslass
+|-damage|p2a: Froslass|0 fnt
+|faint|p2a: Froslass
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, F|344\/344
+|turn|3
+|callback|decision
+|
+|switch|p1a: Nas|Hippowdon, M|420\/420
+|-damage|p1a: Nas|368\/420|[from] Spikes
+|move|p2a: Scizor|U-turn|p1a: Nas
+|-damage|p1a: Nas|223\/420
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|302\/302
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|284\/302|[from] sandstorm
+|-heal|p1a: Nas|249\/420|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Latios|Surf|p1a: Nas
+|-supereffective|p1a: Nas
+|-damage|p1a: Nas|0 fnt
+|-damage|p2a: Latios|254\/302|[from] item: Life Orb
+|faint|p1a: Nas
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|236\/302|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: Lupe Fiasco|Latios, M|301\/301
+|turn|5
+|callback|decision
+|
+|switch|p1a: Kendrick L.|Magneton|242\/242
+|-damage|p1a: Kendrick L.|212\/242|[from] Spikes
+|move|p2a: Latios|Dragon Pulse|p1a: Kendrick L.
+|-resisted|p1a: Kendrick L.
+|-damage|p1a: Kendrick L.|82\/242
+|-damage|p2a: Latios|206\/302|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|188\/302|[from] sandstorm
+|turn|6
+|callback|decision
+|
+|move|p1a: Kendrick L.|Flash Cannon|p2a: Latios
+|-damage|p2a: Latios|68\/302
+|move|p2a: Latios|Dragon Pulse|p1a: Kendrick L.
+|-resisted|p1a: Kendrick L.
+|-damage|p1a: Kendrick L.|0 fnt
+|-damage|p2a: Latios|38\/302|[from] item: Life Orb
+|faint|p1a: Kendrick L.
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|20\/302|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: GangStarr|Tyranitar, M|365\/365 par
+|-damage|p1a: GangStarr|320\/365 par|[from] Spikes
+|turn|7
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, F|358\/358
+|move|p1a: GangStarr|Superpower|p2a: Garchomp
+|-damage|p2a: Garchomp|94\/358
+|-damage|p1a: GangStarr|275\/365 par|[from] ability: Rough Skin|[of] p2a: Garchomp
+|-damage|p1a: GangStarr|215\/365 par|[from] item: Rocky Helmet|[of] p2a: Garchomp
+|-unboost|p1a: GangStarr|atk|1
+|-unboost|p1a: GangStarr|def|1
+|
+|-weather|Sandstorm|[upkeep]
+|turn|8
+|callback|decision
+|
+|move|p2a: Garchomp|Stealth Rock|p1a: GangStarr
+|-sidestart|p1: ogouig|move: Stealth Rock
+|move|p1a: GangStarr|Superpower|p2a: Garchomp
+|-damage|p2a: Garchomp|0 fnt
+|-damage|p1a: GangStarr|170\/365 par|[from] ability: Rough Skin|[of] p2a: Garchomp
+|-damage|p1a: GangStarr|110\/365 par|[from] item: Rocky Helmet|[of] p2a: Garchomp
+|-unboost|p1a: GangStarr|atk|1
+|-unboost|p1a: GangStarr|def|1
+|faint|p2a: Garchomp
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, F|344\/344
+|turn|9
+|callback|decision
+|
+|move|p2a: Scizor|U-turn|p1a: GangStarr
+|-supereffective|p1a: GangStarr
+|-damage|p1a: GangStarr|0 fnt
+|faint|p1a: GangStarr
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|20\/302
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|2\/302|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: Kanye West|Stoutland, M|311\/311
+|-damage|p1a: Kanye West|273\/311|[from] Stealth Rock
+|-damage|p1a: Kanye West|235\/311|[from] Spikes
+|turn|10
+|callback|decision
+|
+|move|p1a: Kanye West|Frustration|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|faint|p2a: Latios
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, F|344\/344
+|turn|11
+|callback|decision
+|
+|move|p1a: Kanye West|Frustration|p2a: Scizor
+|-resisted|p2a: Scizor
+|-damage|p2a: Scizor|229\/344
+|move|p2a: Scizor|U-turn|p1a: Kanye West
+|-damage|p1a: Kanye West|0 fnt
+|faint|p1a: Kanye West
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|242\/242
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Rotom-Wash|227\/242|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: Childish G.|Amoonguss, F|428\/428
+|-damage|p1a: Childish G.|375\/428|[from] Stealth Rock
+|-damage|p1a: Childish G.|322\/428|[from] Spikes
+|turn|12
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Trick|p1a: Childish G.
+|-activate|p2a: Rotom-Wash|move: Trick|[of] p1a: Childish G.
+|-item|p1a: Childish G.|Choice Specs|[from] move: Trick
+|-item|p2a: Rotom-Wash|Black Sludge|[from] move: Trick
+|move|p1a: Childish G.|Spore|p2a: Rotom-Wash
+|-status|p2a: Rotom-Wash|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Rotom-Wash|212\/242 slp|[from] sandstorm
+|-damage|p1a: Childish G.|296\/428|[from] sandstorm
+|-damage|p2a: Rotom-Wash|182\/242 slp|[from] item: Black Sludge
+|turn|13
+|callback|decision
+|
+|switch|p2a: Salamence|Salamence, M|331\/331
+|switch|p1a: Lupe Fiasco|Latios, M|301\/301
+|-damage|p1a: Lupe Fiasco|264\/301|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Salamence|311\/331|[from] sandstorm
+|-damage|p1a: Lupe Fiasco|246\/301|[from] sandstorm
+|turn|14
+|callback|decision
+|
+|move|p2a: Salamence|Dragon Claw|p1a: Lupe Fiasco
+|-crit|p1a: Lupe Fiasco
+|-supereffective|p1a: Lupe Fiasco
+|-damage|p1a: Lupe Fiasco|0 fnt
+|faint|p1a: Lupe Fiasco
+|-boost|p2a: Salamence|atk|1|[from] ability: Moxie
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Salamence|291\/331|[from] sandstorm
+|callback|decision
+|chat|ogouig|gg
+|-message|ogouig forfeited.
+|
+|win|Bjork
+|raw|Ladder updating...
+|raw|ogouig's rating: 1833 &rarr; <strong>1830<\/strong><br \/>(-3 for losing)
+|raw|Bjork's rating: 2203 &rarr; <strong>2207<\/strong><br \/>(+4 for winning)
+|leave|ogouig
+|player|p1
+|leave|Bjork
+|player|p2

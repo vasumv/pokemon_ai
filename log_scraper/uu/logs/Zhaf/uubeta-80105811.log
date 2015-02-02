@@ -1,0 +1,102 @@
+|join|playnice
+|join|Zhaf
+|player|p1|playnice|101
+|player|p2|Zhaf|101
+|gametype|singles
+|gen|6
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Chandelure, M
+|poke|p1|Slowbro, F
+|poke|p1|Bisharp, F
+|poke|p1|Celebi
+|poke|p1|Keldeo
+|poke|p1|Arcanine, M
+|poke|p2|Chatot, F
+|poke|p2|Steelix, F
+|poke|p2|Leavanny, M
+|poke|p2|Medicham, F
+|poke|p2|Blastoise, M
+|poke|p2|Chandelure, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Bisharp|Bisharp, F|334\/334
+|switch|p2a: Leavanny|Leavanny, M|291\/291
+|turn|1
+|callback|decision
+|
+|move|p2a: Leavanny|Sticky Web|p1a: Bisharp
+|-sidestart|p1: playnice|move: Sticky Web
+|move|p1a: Bisharp|Knock Off|p2a: Leavanny
+|-damage|p2a: Leavanny|81\/291
+|-enditem|p2a: Leavanny|Focus Sash|[from] move: Knock Off|[of] p1a: Bisharp
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Bisharp|Sucker Punch|p2a: Leavanny
+|-fail|p2a: Leavanny
+|move|p2a: Leavanny|Swords Dance|p2a: Leavanny
+|-boost|p2a: Leavanny|atk|2
+|
+|turn|3
+|callback|decision
+|
+|move|p1a: Bisharp|Sucker Punch|p2a: Leavanny
+|-fail|p2a: Leavanny
+|move|p2a: Leavanny|Baton Pass|p2a: Leavanny
+|callback|decision
+|
+|switch|p2a: Medicham|Medicham, F|262\/262
+|
+|turn|4
+|callback|decision
+|
+|switch|p1a: Chandelure|Chandelure, M|261\/261
+|-activate|p1a: Chandelure|move: Sticky Web
+|-unboost|p1a: Chandelure|spe|1
+|move|p2a: Medicham|Substitute|p2a: Medicham
+|-start|p2a: Medicham|Substitute
+|-damage|p2a: Medicham|197\/262
+|
+|turn|5
+|callback|decision
+|
+|-formechange|p2a: Medicham|Medicham-Mega
+|message|Medicham has Mega Evolved into Mega Medicham!
+|move|p2a: Medicham|Thunder Punch|p1a: Chandelure
+|-damage|p1a: Chandelure|0 fnt
+|faint|p1a: Chandelure
+|
+|callback|decision
+|
+|switch|p1a: Celebi|Celebi|404\/404
+|-activate|p1a: Celebi|move: Sticky Web
+|-unboost|p1a: Celebi|spe|1
+|turn|6
+|callback|decision
+|
+|move|p2a: Medicham|Ice Punch|p1a: Celebi
+|-supereffective|p1a: Celebi
+|-damage|p1a: Celebi|0 fnt
+|faint|p1a: Celebi
+|
+|callback|decision
+|-message|playnice forfeited.
+|
+|win|Zhaf
+|raw|Ladder updating...
+|raw|playnice's rating: 1036 &rarr; <strong>1011<\/strong><br \/>(-25 for losing)
+|raw|Zhaf's rating: 1026 &rarr; <strong>1052<\/strong><br \/>(+26 for winning)
+|leave|playnice
+|player|p1

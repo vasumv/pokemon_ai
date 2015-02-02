@@ -1,0 +1,377 @@
+|join|MiguelATM
+|join|KnightSansArmour
+|player|p1|MiguelATM|266
+|player|p2|KnightSansArmour|208
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Sableye, M
+|poke|p1|Jirachi
+|poke|p1|Heatran, M
+|poke|p1|Latios, M
+|poke|p1|Landorus-Therian, M
+|poke|p1|Rotom-Wash
+|poke|p2|Chansey, F
+|poke|p2|Gliscor, M
+|poke|p2|Blastoise, M
+|poke|p2|Jirachi
+|poke|p2|Zapdos
+|poke|p2|Noivern, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Sableye|Sableye, M|304\/304
+|switch|p2a: Blastoise|Blastoise, M|362\/362
+|turn|1
+|
+|detailschange|p2a: Blastoise|Blastoise-Mega, M
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|detailschange|p1a: Sableye|Sableye-Mega, M
+|message|Sableye has Mega Evolved into Mega Sableye!
+|move|p1a: Sableye|Will-O-Wisp|p2a: Blastoise
+|-status|p2a: Blastoise|brn
+|move|p2a: Blastoise|Water Pulse|p1a: Sableye
+|-damage|p1a: Sableye|145\/304
+|
+|-damage|p2a: Blastoise|317\/362 brn|[from] brn
+|turn|2
+|
+|switch|p1a: Latios|Latios, M|301\/301
+|move|p2a: Blastoise|Dark Pulse|p1a: Latios
+|-supereffective|p1a: Latios
+|-damage|p1a: Latios|5\/301
+|
+|-damage|p2a: Blastoise|272\/362 brn|[from] brn
+|turn|3
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|move|p1a: Latios|Draco Meteor|p2a: Chansey|[miss]
+|-miss|p1a: Latios|p2a: Chansey
+|
+|turn|4
+|
+|move|p1a: Latios|Recover|p1a: Latios
+|-heal|p1a: Latios|156\/301
+|move|p2a: Chansey|Aromatherapy|p2a: Chansey
+|-cureteam|p2a: Chansey|[from] move: Aromatherapy
+|
+|turn|5
+|
+|move|p1a: Latios|Recover|p1a: Latios
+|-heal|p1a: Latios|301\/301
+|move|p2a: Chansey|Toxic|p1a: Latios
+|-status|p1a: Latios|tox
+|
+|-damage|p1a: Latios|283\/301 tox|[from] psn
+|turn|6
+|
+|switch|p1a: Sableye|Sableye-Mega, M|145\/304
+|move|p2a: Chansey|Seismic Toss|p1a: Sableye
+|-immune|p1a: Sableye|[msg]
+|
+|turn|7
+|
+|switch|p2a: Zapdos|Zapdos|384\/384
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|297\/304
+|
+|turn|8
+|
+|move|p2a: Zapdos|Thunderbolt|p1a: Sableye
+|-damage|p1a: Sableye|140\/304
+|move|p1a: Sableye|Calm Mind|p1a: Sableye
+|-boost|p1a: Sableye|spa|1
+|-boost|p1a: Sableye|spd|1
+|
+|turn|9
+|
+|move|p2a: Zapdos|Thunderbolt|p1a: Sableye
+|-damage|p1a: Sableye|37\/304
+|move|p1a: Sableye|Dark Pulse|p2a: Zapdos
+|-damage|p2a: Zapdos|257\/384
+|
+|-heal|p2a: Zapdos|281\/384|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Zapdos
+|-unboost|p2a: Zapdos|atk|1
+|move|p2a: Zapdos|Heat Wave|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|180\/319
+|
+|-heal|p2a: Zapdos|305\/384|[from] item: Leftovers
+|turn|11
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|272\/362
+|move|p1a: Landorus-Therian|Stone Edge|p2a: Blastoise
+|-damage|p2a: Blastoise|162\/362
+|
+|turn|12
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|303\/303
+|move|p2a: Blastoise|Water Pulse|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|210\/303
+|
+|-heal|p1a: Rotom-Wash|228\/303|[from] item: Leftovers
+|turn|13
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Chansey
+|-damage|p2a: Chansey|638\/704
+|
+|switch|p1a: Latios|Latios, M|283\/301 tox
+|
+|-damage|p1a: Latios|265\/301 tox|[from] psn
+|turn|14
+|
+|move|p1a: Latios|Psyshock|p2a: Chansey
+|-damage|p2a: Chansey|404\/704
+|-damage|p1a: Latios|235\/301 tox|[from] item: Life Orb
+|move|p2a: Chansey|Seismic Toss|p1a: Latios
+|-damage|p1a: Latios|135\/301 tox
+|
+|-damage|p1a: Latios|99\/301 tox|[from] psn
+|turn|15
+|
+|move|p1a: Latios|Recover|p1a: Latios
+|-heal|p1a: Latios|250\/301 tox
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|704\/704
+|
+|-damage|p1a: Latios|196\/301 tox|[from] psn
+|turn|16
+|
+|switch|p1a: Sableye|Sableye-Mega, M|37\/304
+|move|p2a: Chansey|Seismic Toss|p1a: Sableye
+|-immune|p1a: Sableye|[msg]
+|
+|turn|17
+|
+|switch|p2a: Noivern|Noivern, M|311\/311
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|189\/304
+|
+|turn|18
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|228\/303
+|move|p2a: Noivern|Draco Meteor|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|-unboost|p2a: Noivern|spa|2
+|faint|p1a: Rotom-Wash
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|180\/319
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Noivern
+|-unboost|p2a: Noivern|atk|1
+|turn|19
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354
+|move|p1a: Landorus-Therian|Knock Off|p2a: Gliscor
+|-damage|p2a: Gliscor|279\/354
+|-enditem|p2a: Gliscor|Toxic Orb|[from] move: Knock Off|[of] p1a: Landorus-Therian
+|
+|turn|20
+|
+|move|p1a: Landorus-Therian|Knock Off|p2a: Gliscor
+|-damage|p2a: Gliscor|221\/354
+|move|p2a: Gliscor|Toxic|p1a: Landorus-Therian
+|-status|p1a: Landorus-Therian|tox
+|
+|-damage|p1a: Landorus-Therian|161\/319 tox|[from] psn
+|turn|21
+|
+|switch|p1a: Latios|Latios, M|196\/301 tox
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-fail|p2a: Gliscor
+|
+|-damage|p1a: Latios|178\/301 tox|[from] psn
+|turn|22
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Latios|Recover|p1a: Latios
+|-heal|p1a: Latios|301\/301 tox
+|
+|-damage|p1a: Latios|265\/301 tox|[from] psn
+|turn|23
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|move|p1a: Latios|Draco Meteor|p2a: Chansey
+|-damage|p2a: Chansey|500\/704
+|-unboost|p1a: Latios|spa|2
+|-damage|p1a: Latios|235\/301 tox|[from] item: Life Orb
+|
+|-damage|p1a: Latios|181\/301 tox|[from] psn
+|turn|24
+|
+|switch|p1a: Sableye|Sableye-Mega, M|189\/304
+|switch|p2a: Gliscor|Gliscor, M|221\/354
+|
+|turn|25
+|
+|move|p2a: Gliscor|Toxic|p1a: Sableye
+|move|p1a: Sableye|Toxic|p2a: Gliscor|[from]Magic Bounce
+|-status|p2a: Gliscor|tox
+|move|p1a: Sableye|Will-O-Wisp|p2a: Gliscor
+|-fail|p2a: Gliscor
+|
+|-heal|p2a: Gliscor|265\/354 tox|[from] ability: Poison Heal
+|turn|26
+|
+|move|p2a: Gliscor|Earthquake|p1a: Sableye
+|-damage|p1a: Sableye|123\/304
+|move|p1a: Sableye|Calm Mind|p1a: Sableye
+|-boost|p1a: Sableye|spa|1
+|-boost|p1a: Sableye|spd|1
+|
+|-heal|p2a: Gliscor|309\/354 tox|[from] ability: Poison Heal
+|turn|27
+|
+|switch|p2a: Jirachi|Jirachi|397\/397
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|275\/304
+|
+|turn|28
+|
+|move|p2a: Jirachi|Iron Head|p1a: Sableye
+|-damage|p1a: Sableye|191\/304
+|cant|p1a: Sableye|flinch
+|
+|turn|29
+|
+|move|p2a: Jirachi|Iron Head|p1a: Sableye
+|-damage|p1a: Sableye|115\/304
+|move|p1a: Sableye|Dark Pulse|p2a: Jirachi
+|-crit|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|19\/397
+|
+|-heal|p2a: Jirachi|43\/397|[from] item: Leftovers
+|turn|30
+|
+|move|p2a: Jirachi|Iron Head|p1a: Sableye
+|-damage|p1a: Sableye|30\/304
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|182\/304
+|
+|-heal|p2a: Jirachi|67\/397|[from] item: Leftovers
+|turn|31
+|
+|move|p2a: Jirachi|Iron Head|p1a: Sableye
+|-damage|p1a: Sableye|94\/304
+|cant|p1a: Sableye|flinch
+|
+|-heal|p2a: Jirachi|91\/397|[from] item: Leftovers
+|turn|32
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|161\/319 tox
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Jirachi
+|-unboost|p2a: Jirachi|atk|1
+|move|p2a: Jirachi|Iron Head|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|65\/319 tox
+|
+|-heal|p2a: Jirachi|115\/397|[from] item: Leftovers
+|-damage|p1a: Landorus-Therian|46\/319 tox|[from] psn
+|turn|33
+|
+|switch|p2a: Gliscor|Gliscor, M|309\/354 tox
+|move|p1a: Landorus-Therian|Knock Off|p2a: Gliscor
+|-crit|p2a: Gliscor
+|-damage|p2a: Gliscor|228\/354 tox
+|
+|-damage|p1a: Landorus-Therian|8\/319 tox|[from] psn
+|-heal|p2a: Gliscor|272\/354 tox|[from] ability: Poison Heal
+|turn|34
+|c|âMiguelATM|you are a fucking wanker
+|c|âKnightSansArmour|<3 you too
+|c|âMiguelATM|seriously, this isn't funny
+|c|âMiguelATM|pokemon are meant to be funny
+|c|âKnightSansArmour|Stall is a legitimate strategy
+|
+|move|p1a: Landorus-Therian|Knock Off|p2a: Gliscor
+|-damage|p2a: Gliscor|220\/354 tox
+|move|p2a: Gliscor|Earthquake|p1a: Landorus-Therian
+|-immune|p1a: Landorus-Therian|[msg]
+|
+|-damage|p1a: Landorus-Therian|0 fnt|[from] psn
+|-heal|p2a: Gliscor|264\/354 tox|[from] ability: Poison Heal
+|faint|p1a: Landorus-Therian
+|
+|switch|p1a: Sableye|Sableye-Mega, M|94\/304
+|turn|35
+|
+|switch|p2a: Noivern|Noivern, M|311\/311
+|move|p1a: Sableye|Dark Pulse|p2a: Noivern
+|-crit|p2a: Noivern
+|-damage|p2a: Noivern|155\/311
+|
+|turn|36
+|
+|move|p2a: Noivern|Hurricane|p1a: Sableye
+|-damage|p1a: Sableye|0 fnt
+|faint|p1a: Sableye
+|
+|
+|switch|p1a: Heatran|Heatran, M|386\/386
+|turn|37
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|162\/362
+|move|p1a: Heatran|Stealth Rock|p2a: Blastoise
+|-sidestart|p2: KnightSansArmour|move: Stealth Rock
+|
+|turn|38
+|
+|move|p2a: Blastoise|Rapid Spin|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|379\/386
+|-sideend|p2: KnightSansArmour|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Blastoise
+|move|p1a: Heatran|Roar|p2a: Blastoise
+|drag|p2a: Jirachi|Jirachi|115\/397
+|
+|-heal|p2a: Jirachi|139\/397|[from] item: Leftovers
+|-heal|p1a: Heatran|386\/386|[from] item: Leftovers
+|turn|39
+|
+|move|p2a: Jirachi|Body Slam|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|341\/386
+|-status|p1a: Heatran|par
+|move|p1a: Heatran|Lava Plume|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|faint|p2a: Jirachi
+|
+|-heal|p1a: Heatran|365\/386 par|[from] item: Leftovers
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|162\/362
+|turn|40
+|
+|move|p2a: Blastoise|Water Pulse|p1a: Heatran
+|-crit|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|c|âMiguelATM|i hope you legitimately die
+|c|âKnightSansArmour|That seems an unreasonable punishment
+|-message|MiguelATM forfeited.
+|
+|win|KnightSansArmour
+|raw|Ladder updating...
+|leave|MiguelATM
+|player|p1
+|raw|MiguelATM's rating: 1296 &rarr; <strong>1270<\/strong><br \/>(-26 for losing)
+|raw|KnightSansArmour's rating: 1283 &rarr; <strong>1309<\/strong><br \/>(+26 for winning)

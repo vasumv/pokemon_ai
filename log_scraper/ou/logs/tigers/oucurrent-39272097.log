@@ -1,0 +1,281 @@
+|join|tigers
+|join|asdazxvccgf
+|player|p1|tigers|93
+|player|p2|asdazxvccgf|169
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Tentacruel, M
+|poke|p1|Celebi
+|poke|p1|Heatran, M
+|poke|p1|Quagsire, M
+|poke|p1|Skarmory, M
+|poke|p1|Gengar, M
+|poke|p2|Magnezone
+|poke|p2|Latios, M
+|poke|p2|Mamoswine, M
+|poke|p2|Scizor, M
+|poke|p2|Kyurem-Black
+|poke|p2|Garchomp, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: sireStupidO|Quagsire, M|394\/394
+|switch|p2a: Mamoswine|Mamoswine, M|362\/362
+|turn|1
+|callback|decision
+|
+|move|p2a: Mamoswine|Stealth Rock|p1a: sireStupidO
+|-sidestart|p1: tigers|move: Stealth Rock
+|move|p1a: sireStupidO|Scald|p2a: Mamoswine
+|-supereffective|p2a: Mamoswine
+|-damage|p2a: Mamoswine|146\/362
+|-status|p2a: Mamoswine|brn
+|
+|-damage|p2a: Mamoswine|101\/362 brn|[from] brn
+|turn|2
+|callback|decision
+|
+|move|p2a: Mamoswine|Earthquake|p1a: sireStupidO
+|-damage|p1a: sireStupidO|298\/394
+|move|p1a: sireStupidO|Scald|p2a: Mamoswine
+|-supereffective|p2a: Mamoswine
+|-damage|p2a: Mamoswine|0 fnt
+|faint|p2a: Mamoswine
+|
+|-heal|p1a: sireStupidO|322\/394|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Kyurem|Kyurem-Black|405\/405
+|-ability|p2a: Kyurem|Teravolt
+|turn|3
+|callback|decision
+|
+|move|p2a: Kyurem|Substitute|p2a: Kyurem
+|-start|p2a: Kyurem|Substitute
+|-damage|p2a: Kyurem|304\/405
+|move|p1a: sireStupidO|Earthquake|p2a: Kyurem
+|-end|p2a: Kyurem|Substitute
+|
+|-heal|p2a: Kyurem|329\/405|[from] item: Leftovers
+|-heal|p1a: sireStupidO|346\/394|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Kyurem|Ice Beam|p1a: sireStupidO
+|-damage|p1a: sireStupidO|136\/394
+|move|p1a: sireStupidO|Earthquake|p2a: Kyurem
+|-damage|p2a: Kyurem|212\/405
+|
+|-heal|p2a: Kyurem|237\/405|[from] item: Leftovers
+|-heal|p1a: sireStupidO|160\/394|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|386\/386
+|-damage|p1a: Heatran|338\/386|[from] Stealth Rock
+|move|p2a: Kyurem|Substitute|p2a: Kyurem
+|-start|p2a: Kyurem|Substitute
+|-damage|p2a: Kyurem|136\/405
+|
+|-heal|p2a: Kyurem|161\/405|[from] item: Leftovers
+|-heal|p1a: Heatran|362\/386|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Kyurem|Fusion Bolt|p1a: Heatran
+|-damage|p1a: Heatran|266\/386
+|move|p1a: Heatran|Stealth Rock|p2a: Kyurem
+|-sidestart|p2: asdazxvccgf|move: Stealth Rock
+|
+|-heal|p2a: Kyurem|186\/405|[from] item: Leftovers
+|-heal|p1a: Heatran|290\/386|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p2a: Kyurem|Fusion Bolt|p1a: Heatran
+|-damage|p1a: Heatran|194\/386
+|move|p1a: Heatran|Roar|p2a: Kyurem
+|drag|p2a: Latios|Latios, M|302\/302
+|-damage|p2a: Latios|265\/302|[from] Stealth Rock
+|
+|-heal|p1a: Heatran|218\/386|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p1a: Celebi|Celebi|404\/404
+|-damage|p1a: Celebi|354\/404|[from] Stealth Rock
+|move|p2a: Latios|Draco Meteor|p1a: Celebi
+|-damage|p1a: Celebi|74\/404
+|-unboost|p2a: Latios|spa|2
+|
+|-heal|p1a: Celebi|99\/404|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p2a: Latios|Draco Meteor|p1a: Celebi
+|-damage|p1a: Celebi|0 fnt
+|-unboost|p2a: Latios|spa|2
+|faint|p1a: Celebi
+|
+|callback|decision
+|
+|switch|p1a: Cruel2|Tentacruel, M|364\/364
+|-damage|p1a: Cruel2|319\/364|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|switch|p2a: Kyurem|Kyurem-Black|186\/405
+|-damage|p2a: Kyurem|85\/405|[from] Stealth Rock
+|-ability|p2a: Kyurem|Teravolt
+|move|p1a: Cruel2|Rapid Spin|p2a: Kyurem
+|-damage|p2a: Kyurem|72\/405
+|-sideend|p1: tigers|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Cruel2
+|
+|-heal|p2a: Kyurem|97\/405|[from] item: Leftovers
+|-heal|p1a: Cruel2|341\/364|[from] item: Black Sludge
+|turn|11
+|callback|decision
+|
+|switch|p1a: sireStupidO|Quagsire, M|160\/394
+|move|p2a: Kyurem|Fusion Bolt|p1a: sireStupidO
+|-immune|p1a: sireStupidO|[msg]
+|
+|-heal|p2a: Kyurem|122\/405|[from] item: Leftovers
+|-heal|p1a: sireStupidO|184\/394|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|218\/386
+|move|p2a: Kyurem|Ice Beam|p1a: Heatran
+|-resisted|p1a: Heatran
+|-damage|p1a: Heatran|186\/386
+|-status|p1a: Heatran|frz
+|
+|-heal|p2a: Kyurem|147\/405|[from] item: Leftovers
+|-heal|p1a: Heatran|210\/386 frz|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: Kyurem|Fusion Bolt|p1a: Heatran
+|-damage|p1a: Heatran|98\/386 frz
+|cant|p1a: Heatran|frz
+|
+|-heal|p2a: Kyurem|172\/405|[from] item: Leftovers
+|-heal|p1a: Heatran|122\/386 frz|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p2a: Kyurem|Fusion Bolt|p1a: Heatran
+|-damage|p1a: Heatran|16\/386 frz
+|cant|p1a: Heatran|frz
+|
+|-heal|p2a: Kyurem|197\/405|[from] item: Leftovers
+|-heal|p1a: Heatran|40\/386 frz|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p2a: Kyurem|Fusion Bolt|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|-heal|p2a: Kyurem|222\/405|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, M|262\/262
+|turn|16
+|callback|decision
+|
+|move|p1a: Gengar|Focus Blast|p2a: Kyurem|[miss]
+|-miss|p1a: Gengar|p2a: Kyurem
+|move|p2a: Kyurem|Ice Beam|p1a: Gengar
+|-damage|p1a: Gengar|28\/262
+|
+|-heal|p1a: Gengar|44\/262|[from] item: Black Sludge
+|-heal|p2a: Kyurem|247\/405|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Gengar|Focus Blast|p2a: Kyurem|[miss]
+|-miss|p1a: Gengar|p2a: Kyurem
+|move|p2a: Kyurem|Ice Beam|p1a: Gengar
+|-damage|p1a: Gengar|0 fnt
+|faint|p1a: Gengar
+|
+|-heal|p2a: Kyurem|272\/405|[from] item: Leftovers
+|callback|decision
+|chat|tigers|Comeon
+|
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|turn|18
+|callback|decision
+|
+|move|p2a: Kyurem|Ice Beam|p1a: Skarmory
+|-damage|p1a: Skarmory|136\/334
+|move|p1a: Skarmory|Whirlwind|p2a: Kyurem
+|drag|p2a: Latios|Latios, M|265\/302
+|-damage|p2a: Latios|228\/302|[from] Stealth Rock
+|
+|-heal|p1a: Skarmory|156\/334|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|switch|p1a: Cruel2|Tentacruel, M|341\/364
+|move|p2a: Latios|Draco Meteor|p1a: Cruel2
+|-damage|p1a: Cruel2|59\/364
+|-unboost|p2a: Latios|spa|2
+|
+|-heal|p1a: Cruel2|81\/364|[from] item: Black Sludge
+|turn|20
+|callback|decision
+|
+|switch|p2a: Kyurem|Kyurem-Black|272\/405
+|-damage|p2a: Kyurem|171\/405|[from] Stealth Rock
+|-ability|p2a: Kyurem|Teravolt
+|move|p1a: Cruel2|Knock Off|p2a: Kyurem
+|-crit|p2a: Kyurem
+|-damage|p2a: Kyurem|143\/405
+|-enditem|p2a: Kyurem|Leftovers|[from] move: Knock Off|[of] p1a: Cruel2
+|
+|-heal|p1a: Cruel2|103\/364|[from] item: Black Sludge
+|turn|21
+|callback|decision
+|
+|move|p2a: Kyurem|Fusion Bolt|p1a: Cruel2
+|-supereffective|p1a: Cruel2
+|-damage|p1a: Cruel2|0 fnt
+|faint|p1a: Cruel2
+|
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|156\/334
+|turn|22
+|callback|decision
+|
+|move|p2a: Kyurem|Ice Beam|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|faint|p1a: Skarmory
+|
+|callback|decision
+|
+|switch|p1a: sireStupidO|Quagsire, M|184\/394
+|turn|23
+|callback|decision
+|
+|move|p2a: Kyurem|Ice Beam|p1a: sireStupidO
+|-damage|p1a: sireStupidO|0 fnt
+|faint|p1a: sireStupidO
+|
+|win|asdazxvccgf
+|raw|Ladder updating...
+|raw|tigers's rating: 1942 &rarr; <strong>1936<\/strong><br \/>(-6 for losing)
+|raw|asdazxvccgf's rating: 1414 &rarr; <strong>1736<\/strong><br \/>(+322 for winning)

@@ -1,0 +1,250 @@
+|join|reachzero
+|join|cmour06
+|player|p1|reachzero|15
+|player|p2|cmour06|170
+|gametype|singles
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Crustle, F, shiny
+|poke|p1|Chandelure, F
+|poke|p1|Shaymin, shiny
+|poke|p1|Arcanine, M, shiny
+|poke|p1|Snorlax, F, shiny
+|poke|p1|Rhyperior, M, shiny
+|poke|p2|Bisharp, F
+|poke|p2|Mismagius, F
+|poke|p2|Blastoise, F
+|poke|p2|Amoonguss, M
+|poke|p2|Scrafty, M
+|poke|p2|Rotom-Heat
+|teampreview
+|callback|decision
+|join|RT.
+|join|psych071c
+|join|Ace Emerald
+|join|Bye Little Pony
+|
+|start
+|switch|p1a: Crustle|Crustle, F, shiny|344\/344
+|switch|p2a: Rotom-Heat|Rotom-Heat|241\/241
+|turn|1
+|callback|decision
+|join|PTJon7
+|
+|move|p2a: Rotom-Heat|Trick|p1a: Crustle
+|-activate|p2a: Rotom-Heat|move: Trick|[of] p1a: Crustle
+|-item|p1a: Crustle|Choice Scarf|[from] move: Trick
+|-item|p2a: Rotom-Heat|Custap Berry|[from] move: Trick
+|move|p1a: Crustle|Stealth Rock|p2a: Rotom-Heat
+|-sidestart|p2: cmour06|move: Stealth Rock
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Rhyperior|Rhyperior, M, shiny|434\/434
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Rhyperior
+|-immune|p1a: Rhyperior|[msg]
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Rotom-Heat|Hidden Power|p1a: Rhyperior
+|-supereffective|p1a: Rhyperior
+|-damage|p1a: Rhyperior|0 fnt
+|faint|p1a: Rhyperior
+|
+|callback|decision
+|chat|Bye Little Pony|was that Rock Polish?
+|
+|switch|p1a: Crustle|Crustle, F, shiny|344\/344
+|turn|4
+|callback|decision
+|
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Crustle
+|-damage|p1a: Crustle|185\/344
+|callback|decision
+|
+|switch|p2a: Blastoise|Blastoise, F|362\/362
+|-damage|p2a: Blastoise|317\/362|[from] Stealth Rock
+|move|p1a: Crustle|Spikes|p2a: Blastoise
+|-sidestart|p2: cmour06|Spikes
+|
+|-heal|p2a: Blastoise|339\/362|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1a: Chandelure|Chandelure, F|301\/301
+|move|p2a: Blastoise|Scald|p1a: Chandelure
+|-supereffective|p1a: Chandelure
+|-damage|p1a: Chandelure|127\/301
+|
+|-heal|p2a: Blastoise|361\/362|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p1a: Chandelure|Energy Ball|p2a: Blastoise
+|-supereffective|p2a: Blastoise
+|-damage|p2a: Blastoise|17\/362
+|move|p2a: Blastoise|Scald|p1a: Chandelure
+|-supereffective|p1a: Chandelure
+|-damage|p1a: Chandelure|0 fnt
+|faint|p1a: Chandelure
+|
+|-heal|p2a: Blastoise|39\/362|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Arcanine|Arcanine, M, shiny|383\/383
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Blastoise
+|-unboost|p2a: Blastoise|atk|1
+|turn|7
+|callback|decision
+|
+|move|p1a: Arcanine|Crunch|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|callback|decision
+|join|LonelyNess
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|241\/241
+|-damage|p2a: Rotom-Heat|181\/241|[from] Stealth Rock
+|turn|8
+|callback|decision
+|
+|switch|p1a: Crustle|Crustle, F, shiny|185\/344
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Crustle
+|-damage|p1a: Crustle|28\/344
+|callback|decision
+|
+|switch|p2a: Scrafty|Scrafty, M|271\/271
+|-damage|p2a: Scrafty|255\/271|[from] Stealth Rock
+|-damage|p2a: Scrafty|222\/271|[from] Spikes
+|
+|turn|9
+|callback|decision
+|
+|move|p2a: Scrafty|Dragon Dance|p2a: Scrafty
+|-boost|p2a: Scrafty|atk|1
+|-boost|p2a: Scrafty|spe|1
+|move|p1a: Crustle|X-Scissor|p2a: Scrafty
+|-damage|p2a: Scrafty|107\/271
+|
+|turn|10
+|callback|decision
+|
+|move|p2a: Scrafty|Crunch|p1a: Crustle
+|-damage|p1a: Crustle|0 fnt
+|faint|p1a: Crustle
+|-boost|p2a: Scrafty|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|switch|p1a: Arcanine|Arcanine, M, shiny|383\/383
+|-ability|p1a: Arcanine|Intimidate|[of] p2a: Scrafty
+|-unboost|p2a: Scrafty|atk|1
+|turn|11
+|callback|decision
+|
+|move|p2a: Scrafty|Hi Jump Kick|p1a: Arcanine
+|-crit|p1a: Arcanine
+|-damage|p1a: Arcanine|0 fnt
+|faint|p1a: Arcanine
+|-boost|p2a: Scrafty|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|switch|p1a: Shaymin|Shaymin, shiny|361\/361
+|turn|12
+|callback|decision
+|
+|move|p2a: Scrafty|Hi Jump Kick|p1a: Shaymin
+|-damage|p1a: Shaymin|22\/361
+|move|p1a: Shaymin|Seed Flare|p2a: Scrafty
+|-damage|p2a: Scrafty|0 fnt
+|faint|p2a: Scrafty
+|
+|-heal|p1a: Shaymin|44\/361|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Mismagius|Mismagius, F|262\/262
+|-damage|p2a: Mismagius|230\/262|[from] Stealth Rock
+|turn|13
+|callback|decision
+|
+|switch|p1a: Snorlax|Snorlax, F, shiny|461\/461
+|move|p2a: Mismagius|Hidden Power|p1a: Snorlax
+|-supereffective|p1a: Snorlax
+|-damage|p1a: Snorlax|315\/461
+|-damage|p2a: Mismagius|204\/262|[from] item: Life Orb
+|
+|turn|14
+|callback|decision
+|
+|move|p2a: Mismagius|Hidden Power|p1a: Snorlax
+|-supereffective|p1a: Snorlax
+|-damage|p1a: Snorlax|188\/461
+|-damage|p2a: Mismagius|178\/262|[from] item: Life Orb
+|move|p1a: Snorlax|Pursuit|p2a: Mismagius
+|-supereffective|p2a: Mismagius
+|-damage|p2a: Mismagius|0 fnt
+|faint|p2a: Mismagius
+|
+|callback|decision
+|
+|switch|p2a: Bisharp|Bisharp, F|290\/290
+|-damage|p2a: Bisharp|254\/290|[from] Spikes
+|-damage|p2a: Bisharp|236\/290|[from] Stealth Rock
+|turn|15
+|callback|decision
+|chat|Bye Little Pony|what kind of shaymin is that?
+|join|Lunaciel
+|
+|switch|p1a: Shaymin|Shaymin, shiny|44\/361
+|move|p2a: Bisharp|Thunder Wave|p1a: Shaymin
+|-status|p1a: Shaymin|par
+|
+|-heal|p1a: Shaymin|66\/361 par|[from] item: Leftovers
+|turn|16
+|callback|decision
+|chat|Bye Little Pony|did 4% less than the calc has on the minimum
+|
+|switch|p1a: Snorlax|Snorlax, F, shiny|188\/461
+|move|p2a: Bisharp|Iron Head|p1a: Snorlax
+|-damage|p1a: Snorlax|0 fnt
+|faint|p1a: Snorlax
+|
+|callback|decision
+|
+|switch|p1a: Shaymin|Shaymin, shiny|66\/361
+|turn|17
+|callback|decision
+|
+|move|p1a: Shaymin|Leech Seed|p2a: Bisharp
+|-start|p2a: Bisharp|move: Leech Seed
+|move|p2a: Bisharp|Iron Head|p1a: Shaymin
+|-damage|p1a: Shaymin|0 fnt
+|faint|p1a: Shaymin
+|
+|win|cmour06
+|raw|Ladder updating...
+|raw|reachzero's rating: 1839 &rarr; <strong>1821<\/strong><br \/>(-18 for losing)
+|raw|cmour06's rating: 1616 &rarr; <strong>1638<\/strong><br \/>(+22 for winning)
+|leave|RT.
+|leave|LonelyNess
+|chat|reachzero|GG
+|leave|Lunaciel
+|leave|Ace Emerald
+|leave|psych071c
+|chat|cmour06|gg
+|leave|reachzero
+|player|p1
+|leave|PTJon7
+|leave|Bye Little Pony

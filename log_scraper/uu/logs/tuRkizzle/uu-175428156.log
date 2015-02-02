@@ -1,0 +1,319 @@
+|join|tuRkizzle
+|join|blahblahmelody
+|player|p1|tuRkizzle|115
+|player|p2|blahblahmelody|97
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Machamp, F
+|poke|p1|Krookodile, M
+|poke|p1|Suicune
+|poke|p1|Aggron, F
+|poke|p1|Chandelure, F
+|poke|p1|Whimsicott, M
+|poke|p2|Tentacruel, F
+|poke|p2|Alomomola, F
+|poke|p2|Roserade, F
+|poke|p2|Swampert, M
+|poke|p2|Rotom-Heat
+|poke|p2|Infernape, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Aggron|Aggron, F|302\/302
+|switch|p2a: Swampert|Swampert, M|392\/392
+|turn|1
+|
+|detailschange|p1a: Aggron|Aggron-Mega, F
+|message|Aggron has Mega Evolved into Mega Aggron!
+|move|p2a: Swampert|Earthquake|p1a: Aggron
+|-supereffective|p1a: Aggron
+|-damage|p1a: Aggron|136\/302
+|move|p1a: Aggron|Toxic|p2a: Swampert
+|-status|p2a: Swampert|tox
+|
+|-damage|p2a: Swampert|368\/392 tox|[from] psn
+|turn|2
+|
+|move|p2a: Swampert|Earthquake|p1a: Aggron
+|-supereffective|p1a: Aggron
+|-damage|p1a: Aggron|0 fnt
+|faint|p1a: Aggron
+|
+|-damage|p2a: Swampert|320\/392 tox|[from] psn
+|
+|switch|p1a: Whimsicott|Whimsicott, M|262\/262
+|turn|3
+|
+|switch|p2a: Roserade|Roserade, F|324\/324
+|move|p1a: Whimsicott|Giga Drain|p2a: Roserade
+|-resisted|p2a: Roserade
+|-damage|p2a: Roserade|305\/324
+|
+|-heal|p2a: Roserade|324\/324|[from] item: Black Sludge
+|turn|4
+|
+|move|p1a: Whimsicott|U-turn|p2a: Roserade
+|-damage|p2a: Roserade|276\/324
+|
+|switch|p1a: Chandelure|Chandelure, F|324\/324
+|move|p2a: Roserade|Spikes|p1a: Chandelure
+|-sidestart|p1: tuRkizzle|Spikes
+|
+|-heal|p2a: Roserade|296\/324|[from] item: Black Sludge
+|turn|5
+|
+|move|p2a: Roserade|Sleep Powder|p1a: Chandelure
+|-status|p1a: Chandelure|slp
+|cant|p1a: Chandelure|slp
+|
+|-heal|p2a: Roserade|316\/324|[from] item: Black Sludge
+|turn|6
+|
+|switch|p2a: Swampert|Swampert, M|320\/392 tox
+|cant|p1a: Chandelure|slp
+|
+|-damage|p2a: Swampert|296\/392 tox|[from] psn
+|turn|7
+|
+|switch|p1a: Suicune|Suicune|380\/380
+|-damage|p1a: Suicune|333\/380|[from] Spikes
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Swampert|Earthquake|p1a: Suicune
+|-damage|p1a: Suicune|158\/380
+|
+|-heal|p1a: Suicune|181\/380|[from] item: Leftovers
+|-damage|p2a: Swampert|248\/392 tox|[from] psn
+|turn|8
+|
+|move|p1a: Suicune|Scald|p2a: Swampert
+|-damage|p2a: Swampert|145\/392 tox
+|move|p2a: Swampert|Earthquake|p1a: Suicune
+|-damage|p1a: Suicune|18\/380
+|
+|-heal|p1a: Suicune|41\/380|[from] item: Leftovers
+|-damage|p2a: Swampert|73\/392 tox|[from] psn
+|turn|9
+|
+|switch|p2a: Infernape|Infernape, F|293\/293
+|move|p1a: Suicune|Ice Beam|p2a: Infernape
+|-resisted|p2a: Infernape
+|-damage|p2a: Infernape|243\/293
+|
+|-heal|p1a: Suicune|64\/380|[from] item: Leftovers
+|turn|10
+|
+|move|p2a: Infernape|Grass Knot|p1a: Suicune
+|-supereffective|p1a: Suicune
+|-damage|p1a: Suicune|0 fnt
+|-damage|p2a: Infernape|214\/293|[from] item: Life Orb
+|faint|p1a: Suicune
+|
+|
+|switch|p1a: Krookodile|Krookodile, M|370\/370
+|-damage|p1a: Krookodile|324\/370|[from] Spikes
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Infernape
+|-unboost|p2a: Infernape|atk|1
+|turn|11
+|
+|switch|p2a: Alomomola|Alomomola, F|529\/529
+|move|p1a: Krookodile|Knock Off|p2a: Alomomola
+|-damage|p2a: Alomomola|330\/529
+|-enditem|p2a: Alomomola|Leftovers|[from] move: Knock Off|[of] p1a: Krookodile
+|
+|-heal|p1a: Krookodile|347\/370|[from] item: Leftovers
+|turn|12
+|
+|move|p1a: Krookodile|Bulk Up|p1a: Krookodile
+|-boost|p1a: Krookodile|atk|1
+|-boost|p1a: Krookodile|def|1
+|move|p2a: Alomomola|Wish|p2a: Alomomola
+|
+|-heal|p1a: Krookodile|370\/370|[from] item: Leftovers
+|turn|13
+|
+|move|p1a: Krookodile|Bulk Up|p1a: Krookodile
+|-boost|p1a: Krookodile|atk|1
+|-boost|p1a: Krookodile|def|1
+|move|p2a: Alomomola|Scald|p1a: Krookodile
+|-supereffective|p1a: Krookodile
+|-damage|p1a: Krookodile|242\/370
+|
+|-heal|p2a: Alomomola|529\/529|[from] move: Wish|[wisher] Alomomola
+|-heal|p1a: Krookodile|265\/370|[from] item: Leftovers
+|turn|14
+|
+|move|p1a: Krookodile|Earthquake|p2a: Alomomola
+|-damage|p2a: Alomomola|108\/529
+|move|p2a: Alomomola|Scald|p1a: Krookodile
+|-supereffective|p1a: Krookodile
+|-damage|p1a: Krookodile|131\/370
+|-status|p1a: Krookodile|brn
+|
+|-heal|p1a: Krookodile|154\/370 brn|[from] item: Leftovers
+|-damage|p1a: Krookodile|108\/370 brn|[from] brn
+|turn|15
+|
+|move|p2a: Alomomola|Protect|p2a: Alomomola
+|-singleturn|p2a: Alomomola|Protect
+|move|p1a: Krookodile|Pursuit|p2a: Alomomola
+|-activate|p2a: Alomomola|Protect
+|
+|-heal|p1a: Krookodile|131\/370 brn|[from] item: Leftovers
+|-damage|p1a: Krookodile|85\/370 brn|[from] brn
+|turn|16
+|
+|move|p1a: Krookodile|Earthquake|p2a: Alomomola
+|-damage|p2a: Alomomola|0 fnt
+|faint|p2a: Alomomola
+|
+|-heal|p1a: Krookodile|108\/370 brn|[from] item: Leftovers
+|-damage|p1a: Krookodile|62\/370 brn|[from] brn
+|
+|switch|p2a: Infernape|Infernape, F|214\/293
+|turn|17
+|
+|move|p2a: Infernape|Grass Knot|p1a: Krookodile
+|-supereffective|p1a: Krookodile
+|-damage|p1a: Krookodile|0 fnt
+|-damage|p2a: Infernape|185\/293|[from] item: Life Orb
+|faint|p1a: Krookodile
+|
+|
+|switch|p1a: Chandelure|Chandelure, F|324\/324 slp
+|-damage|p1a: Chandelure|284\/324 slp|[from] Spikes
+|turn|18
+|
+|switch|p2a: Roserade|Roserade, F|316\/324
+|-curestatus|p1a: Chandelure|slp
+|move|p1a: Chandelure|Shadow Ball|p2a: Roserade
+|-damage|p2a: Roserade|121\/324
+|-unboost|p2a: Roserade|spd|1
+|
+|-heal|p2a: Roserade|141\/324|[from] item: Black Sludge
+|turn|19
+|
+|move|p2a: Roserade|Sleep Powder|p1a: Chandelure|[miss]
+|-miss|p2a: Roserade|p1a: Chandelure
+|move|p1a: Chandelure|Shadow Ball|p2a: Roserade
+|-damage|p2a: Roserade|0 fnt
+|faint|p2a: Roserade
+|
+|
+|switch|p2a: Tentacruel|Tentacruel, F|364\/364
+|turn|20
+|
+|move|p2a: Tentacruel|Toxic|p1a: Chandelure
+|-status|p1a: Chandelure|tox
+|move|p1a: Chandelure|Shadow Ball|p2a: Tentacruel
+|-damage|p2a: Tentacruel|144\/364
+|
+|-heal|p2a: Tentacruel|166\/364|[from] item: Black Sludge
+|-damage|p1a: Chandelure|264\/324 tox|[from] psn
+|turn|21
+|
+|move|p2a: Tentacruel|Scald|p1a: Chandelure
+|-supereffective|p1a: Chandelure
+|-damage|p1a: Chandelure|90\/324 tox
+|move|p1a: Chandelure|Shadow Ball|p2a: Tentacruel
+|-crit|p2a: Tentacruel
+|-damage|p2a: Tentacruel|0 fnt
+|faint|p2a: Tentacruel
+|
+|-damage|p1a: Chandelure|50\/324 tox|[from] psn
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|303\/303
+|turn|22
+|
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Chandelure
+|-damage|p1a: Chandelure|0 fnt
+|faint|p1a: Chandelure
+|
+|switch|p2a: Infernape|Infernape, F|185\/293
+|
+|
+|switch|p1a: Whimsicott|Whimsicott, M|262\/262
+|-damage|p1a: Whimsicott|230\/262|[from] Spikes
+|turn|23
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|303\/303
+|move|p1a: Whimsicott|Moonblast|p2a: Rotom-Heat
+|-resisted|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|244\/303
+|
+|-heal|p1a: Whimsicott|246\/262|[from] item: Leftovers
+|-heal|p2a: Rotom-Heat|262\/303|[from] item: Leftovers
+|turn|24
+|
+|switch|p1a: Machamp|Machamp, F|384\/384
+|-damage|p1a: Machamp|336\/384|[from] Spikes
+|move|p2a: Rotom-Heat|Thunder Wave|p1a: Machamp
+|-status|p1a: Machamp|par
+|
+|-heal|p2a: Rotom-Heat|280\/303|[from] item: Leftovers
+|turn|25
+|
+|move|p2a: Rotom-Heat|Overheat|p1a: Machamp
+|-damage|p1a: Machamp|162\/384 par
+|-unboost|p2a: Rotom-Heat|spa|2
+|move|p1a: Machamp|Close Combat|p2a: Rotom-Heat
+|-damage|p2a: Rotom-Heat|0 fnt
+|-unboost|p1a: Machamp|def|1
+|-unboost|p1a: Machamp|spd|1
+|faint|p2a: Rotom-Heat
+|
+|
+|switch|p2a: Swampert|Swampert, M|73\/392 tox
+|turn|26
+|
+|switch|p1a: Whimsicott|Whimsicott, M|246\/262
+|-damage|p1a: Whimsicott|214\/262|[from] Spikes
+|move|p2a: Swampert|Ice Punch|p1a: Whimsicott
+|-supereffective|p1a: Whimsicott
+|-damage|p1a: Whimsicott|0 fnt
+|faint|p1a: Whimsicott
+|
+|-damage|p2a: Swampert|49\/392 tox|[from] psn
+|
+|switch|p1a: Machamp|Machamp, F|162\/384 par
+|-damage|p1a: Machamp|114\/384 par|[from] Spikes
+|turn|27
+|
+|move|p1a: Machamp|Bullet Punch|p2a: Swampert
+|-resisted|p2a: Swampert
+|-damage|p2a: Swampert|0 fnt
+|faint|p2a: Swampert
+|
+|
+|switch|p2a: Infernape|Infernape, F|185\/293
+|turn|28
+|
+|move|p1a: Machamp|Bullet Punch|p2a: Infernape
+|-resisted|p2a: Infernape
+|-damage|p2a: Infernape|105\/293
+|move|p2a: Infernape|Close Combat|p1a: Machamp
+|-damage|p1a: Machamp|0 fnt
+|-unboost|p2a: Infernape|def|1
+|-unboost|p2a: Infernape|spd|1
+|-damage|p2a: Infernape|76\/293|[from] item: Life Orb
+|faint|p1a: Machamp
+|
+|win|blahblahmelody
+|raw|Ladder updating...
+|raw|tuRkizzle's rating: 1612 &rarr; <strong>1588<\/strong><br \/>(-24 for losing)
+|raw|blahblahmelody's rating: 1535 &rarr; <strong>1559<\/strong><br \/>(+24 for winning)
+|c|âblahblahmelody|gg
+|c|âtuRkizzle|gg
+|leave|tuRkizzle
+|player|p1

@@ -1,0 +1,174 @@
+|join|sdarbzzz
+|join|HappyPierrot
+|player|p1|sdarbzzz|102
+|player|p2|HappyPierrot|29
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Chandelure, F
+|poke|p1|Crobat, M
+|poke|p1|Chesnaught, M
+|poke|p1|Forretress, F
+|poke|p1|Empoleon, M
+|poke|p1|Hydreigon, F
+|poke|p2|Sharpedo, F
+|poke|p2|Gligar, F
+|poke|p2|Jirachi
+|poke|p2|Donphan, F
+|poke|p2|Serperior, M
+|poke|p2|Darmanitan, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Hydreigon|Hydreigon, F|325\/325
+|switch|p2a: Darmanitan|Darmanitan, M|352\/352
+|turn|1
+|
+|switch|p1a: Chandelure|Chandelure, F|261\/261
+|move|p2a: Darmanitan|U-turn|p1a: Chandelure
+|-resisted|p1a: Chandelure
+|-damage|p1a: Chandelure|225\/261
+|
+|switch|p2a: Sharpedo|Sharpedo, F|281\/281
+|
+|turn|2
+|
+|switch|p1a: Forretress|Forretress, F|344\/344
+|move|p2a: Sharpedo|Protect|p2a: Sharpedo
+|-fail|p2a: Sharpedo
+|
+|-boost|p2a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|3
+|
+|switch|p2a: Darmanitan|Darmanitan, M|352\/352
+|move|p1a: Forretress|Stealth Rock|p2a: Darmanitan
+|-sidestart|p2: HappyPierrot|move: Stealth Rock
+|
+|turn|4
+|
+|move|p2a: Darmanitan|Earthquake|p1a: Forretress
+|-damage|p1a: Forretress|246\/344
+|move|p1a: Forretress|Spikes|p2a: Darmanitan
+|-sidestart|p2: HappyPierrot|Spikes
+|
+|turn|5
+|
+|switch|p2a: Donphan|Donphan, F|322\/322
+|-damage|p2a: Donphan|282\/322|[from] Spikes
+|-damage|p2a: Donphan|262\/322|[from] Stealth Rock
+|move|p1a: Forretress|Spikes|p2a: Donphan
+|-sidestart|p2: HappyPierrot|Spikes
+|
+|-heal|p2a: Donphan|282\/322|[from] item: Leftovers
+|turn|6
+|
+|move|p2a: Donphan|Earthquake|p1a: Forretress
+|-damage|p1a: Forretress|138\/344
+|move|p1a: Forretress|Stealth Rock|p2a: Donphan
+|-fail|p2a: Donphan
+|
+|-heal|p2a: Donphan|302\/322|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Chesnaught|Chesnaught, M|376\/376
+|move|p2a: Donphan|Rapid Spin|p1a: Chesnaught
+|-damage|p1a: Chesnaught|359\/376
+|-sideend|p2: HappyPierrot|Spikes|[from] move: Rapid Spin|[of] p2a: Donphan
+|-sideend|p2: HappyPierrot|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Donphan
+|
+|-heal|p1a: Chesnaught|376\/376|[from] item: Leftovers
+|-heal|p2a: Donphan|322\/322|[from] item: Leftovers
+|turn|8
+|
+|switch|p2a: Serperior|Serperior, M|291\/291
+|move|p1a: Chesnaught|Leech Seed|p2a: Serperior
+|-immune|p2a: Serperior|[msg]
+|
+|turn|9
+|
+|switch|p1a: Crobat|Crobat, M|312\/312
+|move|p2a: Serperior|Dragon Pulse|p1a: Crobat
+|-damage|p1a: Crobat|207\/312
+|-damage|p2a: Serperior|262\/291|[from] item: Life Orb
+|
+|turn|10
+|
+|switch|p2a: Gligar|Gligar, F|333\/333
+|move|p1a: Crobat|U-turn|p2a: Gligar
+|-resisted|p2a: Gligar
+|-damage|p2a: Gligar|311\/333
+|
+|switch|p1a: Forretress|Forretress, F|138\/344
+|
+|turn|11
+|
+|move|p2a: Gligar|Swords Dance|p2a: Gligar
+|-boost|p2a: Gligar|atk|2
+|move|p1a: Forretress|Stealth Rock|p2a: Gligar
+|-sidestart|p2: HappyPierrot|move: Stealth Rock
+|
+|turn|12
+|
+|switch|p1a: Hydreigon|Hydreigon, F|325\/325
+|move|p2a: Gligar|Swords Dance|p2a: Gligar
+|-boost|p2a: Gligar|atk|2
+|
+|turn|13
+|
+|move|p1a: Hydreigon|Draco Meteor|p2a: Gligar
+|-damage|p2a: Gligar|71\/333
+|-unboost|p1a: Hydreigon|spa|2
+|move|p2a: Gligar|Baton Pass|p2a: Gligar
+|
+|switch|p2a: Sharpedo|Sharpedo, F|281\/281
+|-damage|p2a: Sharpedo|246\/281|[from] Stealth Rock
+|
+|turn|14
+|
+|switch|p1a: Chesnaught|Chesnaught, M|376\/376
+|move|p2a: Sharpedo|Protect|p2a: Sharpedo
+|-fail|p2a: Sharpedo
+|
+|-boost|p2a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|15
+|
+|move|p2a: Sharpedo|Protect|p2a: Sharpedo
+|-singleturn|p2a: Sharpedo|Protect
+|move|p1a: Chesnaught|Substitute|p1a: Chesnaught
+|-start|p1a: Chesnaught|Substitute
+|-damage|p1a: Chesnaught|282\/376
+|
+|-heal|p1a: Chesnaught|305\/376|[from] item: Leftovers
+|-boost|p2a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|16
+|
+|detailschange|p2a: Sharpedo|Sharpedo-Mega, F
+|-mega|p2a: Sharpedo|Sharpedo|Sharpedonite
+|move|p2a: Sharpedo|Ice Fang|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-end|p1a: Chesnaught|Substitute
+|move|p1a: Chesnaught|Drain Punch|p2a: Sharpedo
+|-supereffective|p2a: Sharpedo
+|-damage|p2a: Sharpedo|0 fnt
+|-heal|p1a: Chesnaught|376\/376|[from] drain|[of] p2a: Sharpedo
+|faint|p2a: Sharpedo
+|
+|-message|HappyPierrot forfeited.
+|
+|win|sdarbzzz
+|raw|Ladder updating...
+|leave|HappyPierrot
+|player|p2
+|raw|sdarbzzz's rating: 1300 &rarr; <strong>1327<\/strong><br \/>(+27 for winning)
+|raw|HappyPierrot's rating: 1409 &rarr; <strong>1383<\/strong><br \/>(-26 for losing)

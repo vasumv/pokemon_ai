@@ -1,0 +1,246 @@
+|join|ruddy420__
+|join|Lefoufou
+|player|p1|ruddy420__|235
+|player|p2|Lefoufou|94
+|gametype|singles
+|gen|6
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Scolipede, M
+|poke|p1|Azelf
+|poke|p1|Porygon-Z
+|poke|p1|Empoleon, M
+|poke|p1|Manectric, F
+|poke|p1|Haxorus, F
+|poke|p2|Florges, F
+|poke|p2|Noivern, F
+|poke|p2|Aerodactyl, F
+|poke|p2|Malamar, M
+|poke|p2|Reuniclus, F, shiny
+|poke|p2|Heracross, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Empoleon|Empoleon, M|372\/372
+|switch|p2a: Noivern|Noivern, F|311\/311
+|turn|1
+|callback|decision
+|
+|switch|p2a: Florges|Florges, F|298\/298
+|move|p1a: Empoleon|Knock Off|p2a: Florges
+|-resisted|p2a: Florges
+|-damage|p2a: Florges|256\/298
+|-enditem|p2a: Florges|Leftovers|[from] move: Knock Off|[of] p1a: Empoleon
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Florges|Energy Ball|p1a: Empoleon
+|-damage|p1a: Empoleon|301\/372
+|-unboost|p1a: Empoleon|spd|1
+|move|p1a: Empoleon|Stealth Rock|p2a: Florges
+|-sidestart|p2: Lefoufou|move: Stealth Rock
+|
+|-heal|p1a: Empoleon|324\/372|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p1a: Scolipede|Scolipede, M|275\/275
+|move|p2a: Florges|Energy Ball|p1a: Scolipede
+|-resisted|p1a: Scolipede
+|-damage|p1a: Scolipede|240\/275
+|
+|turn|4
+|callback|decision
+|
+|move|p1a: Scolipede|Swords Dance|p1a: Scolipede
+|-boost|p1a: Scolipede|atk|2
+|move|p2a: Florges|Psychic|p1a: Scolipede
+|-supereffective|p1a: Scolipede
+|-damage|p1a: Scolipede|0 fnt
+|faint|p1a: Scolipede
+|
+|callback|decision
+|
+|switch|p1a: Azelf|Azelf|292\/292
+|turn|5
+|callback|decision
+|
+|move|p1a: Azelf|Zen Headbutt|p2a: Florges
+|-damage|p2a: Florges|0 fnt
+|faint|p2a: Florges
+|
+|callback|decision
+|
+|switch|p2a: Reuniclus|Reuniclus, F, shiny|362\/362
+|-damage|p2a: Reuniclus|317\/362|[from] Stealth Rock
+|turn|6
+|callback|decision
+|
+|switch|p1a: Haxorus|Haxorus, F|356\/356
+|-ability|p1a: Haxorus|Mold Breaker
+|move|p2a: Reuniclus|Signal Beam|p1a: Haxorus
+|-damage|p1a: Haxorus|175\/356
+|-damage|p2a: Reuniclus|281\/362|[from] item: Life Orb
+|
+|-heal|p1a: Haxorus|197\/356|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p1a: Haxorus|Swords Dance|p1a: Haxorus
+|-boost|p1a: Haxorus|atk|2
+|move|p2a: Reuniclus|Psychic|p1a: Haxorus
+|-damage|p1a: Haxorus|0 fnt
+|-damage|p2a: Reuniclus|245\/362|[from] item: Life Orb
+|faint|p1a: Haxorus
+|
+|callback|decision
+|
+|switch|p1a: Azelf|Azelf|292\/292
+|turn|8
+|callback|decision
+|
+|move|p1a: Azelf|Knock Off|p2a: Reuniclus
+|-supereffective|p2a: Reuniclus
+|-damage|p2a: Reuniclus|0 fnt
+|faint|p2a: Reuniclus
+|
+|callback|decision
+|
+|switch|p2a: Malamar|Malamar, M|376\/376
+|-damage|p2a: Malamar|329\/376|[from] Stealth Rock
+|turn|9
+|callback|decision
+|
+|move|p1a: Azelf|Knock Off|p2a: Malamar
+|-damage|p2a: Malamar|157\/376
+|-enditem|p2a: Malamar|Focus Sash|[from] move: Knock Off|[of] p1a: Azelf
+|move|p2a: Malamar|Night Slash|p1a: Azelf
+|-supereffective|p1a: Azelf
+|-damage|p1a: Azelf|0 fnt
+|faint|p1a: Azelf
+|
+|callback|decision
+|
+|switch|p1a: Empoleon|Empoleon, M|324\/372
+|turn|10
+|callback|decision
+|
+|move|p2a: Malamar|Superpower|p1a: Empoleon
+|-supereffective|p1a: Empoleon
+|-damage|p1a: Empoleon|50\/372
+|-boost|p2a: Malamar|atk|1
+|-boost|p2a: Malamar|def|1
+|move|p1a: Empoleon|Scald|p2a: Malamar
+|-damage|p2a: Malamar|0 fnt
+|faint|p2a: Malamar
+|
+|-heal|p1a: Empoleon|73\/372|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Heracross|Heracross, F|302\/302
+|-damage|p2a: Heracross|265\/302|[from] Stealth Rock
+|turn|11
+|callback|decision
+|
+|-formechange|p2a: Heracross|Heracross-Mega
+|message|Heracross has Mega Evolved into Mega Heracross!
+|move|p2a: Heracross|Arm Thrust|p1a: Empoleon
+|-supereffective|p1a: Empoleon
+|-damage|p1a: Empoleon|0 fnt
+|-hitcount|p1a: Empoleon|1
+|faint|p1a: Empoleon
+|
+|callback|decision
+|
+|switch|p1a: Manectric|Manectric, F|295\/295
+|turn|12
+|callback|decision
+|
+|-formechange|p1a: Manectric|Manectric-Mega
+|message|Manectric has Mega Evolved into Mega Manectric!
+|-ability|p1a: Manectric|Intimidate|[of] p2a: Heracross
+|-unboost|p2a: Heracross|atk|1
+|move|p1a: Manectric|Flamethrower|p2a: Heracross
+|-supereffective|p2a: Heracross
+|-damage|p2a: Heracross|59\/302
+|move|p2a: Heracross|Arm Thrust|p1a: Manectric
+|-damage|p1a: Manectric|268\/295
+|-damage|p1a: Manectric|238\/295
+|-damage|p1a: Manectric|208\/295
+|-damage|p1a: Manectric|180\/295
+|-damage|p1a: Manectric|152\/295
+|-hitcount|p1a: Manectric|5
+|
+|turn|13
+|callback|decision
+|
+|move|p1a: Manectric|Thunderbolt|p2a: Heracross
+|-damage|p2a: Heracross|0 fnt
+|faint|p2a: Heracross
+|
+|callback|decision
+|
+|switch|p2a: Noivern|Noivern, F|311\/311
+|-damage|p2a: Noivern|234\/311|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|switch|p1a: Porygon-Z|Porygon-Z|374\/374
+|move|p2a: Noivern|Dragon Pulse|p1a: Porygon-Z
+|-damage|p1a: Porygon-Z|223\/374
+|
+|-heal|p1a: Porygon-Z|246\/374|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p2a: Noivern|Dragon Pulse|p1a: Porygon-Z
+|-damage|p1a: Porygon-Z|98\/374
+|move|p1a: Porygon-Z|Ice Beam|p2a: Noivern
+|-supereffective|p2a: Noivern
+|-damage|p2a: Noivern|0 fnt
+|faint|p2a: Noivern
+|
+|-heal|p1a: Porygon-Z|121\/374|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Aerodactyl|Aerodactyl, F|302\/302
+|-damage|p2a: Aerodactyl|227\/302|[from] Stealth Rock
+|turn|16
+|callback|decision
+|
+|move|p2a: Aerodactyl|Earthquake|p1a: Porygon-Z
+|-damage|p1a: Porygon-Z|0 fnt
+|faint|p1a: Porygon-Z
+|
+|callback|decision
+|
+|switch|p1a: Manectric|Manectric, F|152\/295
+|-formechange|p1a: Manectric|Manectric-Mega
+|-ability|p1a: Manectric|Intimidate|[of] p2a: Aerodactyl
+|-unboost|p2a: Aerodactyl|atk|1
+|turn|17
+|callback|decision
+|
+|move|p2a: Aerodactyl|Earthquake|p1a: Manectric
+|-supereffective|p1a: Manectric
+|-damage|p1a: Manectric|0 fnt
+|faint|p1a: Manectric
+|
+|win|Lefoufou
+|raw|Ladder updating...
+|raw|ruddy420__'s rating: 1148 &rarr; <strong>1118<\/strong><br \/>(-30 for losing)
+|raw|Lefoufou's rating: 1075 &rarr; <strong>1105<\/strong><br \/>(+30 for winning)
+|chat|ruddy420__|gg
+|chat|Lefoufou|gg
+|leave|ruddy420__
+|player|p1

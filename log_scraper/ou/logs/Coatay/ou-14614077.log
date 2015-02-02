@@ -1,0 +1,254 @@
+|join|TeHKiNG
+|join|Coatay
+|player|p1|TeHKiNG|266
+|player|p2|Coatay|170
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Infernape, M
+|poke|p1|Forretress, M
+|poke|p1|Gastrodon, F
+|poke|p1|Breloom, F
+|poke|p1|Landorus, M
+|poke|p1|Alakazam, M
+|poke|p2|Crobat, M
+|poke|p2|Breloom, M
+|poke|p2|Terrakion
+|poke|p2|Ferrothorn, M
+|poke|p2|Rotom-Wash
+|poke|p2|Dragonite, F
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|join|FTWinner123
+|leave|FTWinner123
+|
+|start
+|switch|p1a: Forretress|Forretress, M|352\/352
+|switch|p2a: Rotom-W|Rotom-Wash|242\/242
+|turn|1
+|callback|decision
+|
+|move|p2a: Rotom-W|Hidden Power|p1a: Forretress
+|-crit|p1a: Forretress
+|-supereffective|p1a: Forretress
+|-activate|p1a: Forretress|Sturdy
+|-damage|p1a: Forretress|1\/352
+|move|p1a: Forretress|Stealth Rock|p2a: Rotom-W
+|-sidestart|p2: Coatay|move: Stealth Rock
+|
+|-heal|p1a: Forretress|23\/352|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p1a: Gastrodon|Gastrodon, F|426\/426
+|move|p2a: Rotom-W|Hydro Pump|p1a: Gastrodon
+|-boost|p1a: Gastrodon|spa|1|[from] ability: Storm Drain
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Rotom-W|Will-O-Wisp|p1a: Gastrodon
+|-status|p1a: Gastrodon|brn
+|move|p1a: Gastrodon|Toxic|p2a: Rotom-W
+|-status|p2a: Rotom-W|tox
+|
+|-damage|p2a: Rotom-W|227\/242 tox|[from] psn
+|-damage|p1a: Gastrodon|373\/426 brn|[from] brn
+|turn|4
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|-damage|p2a: Ferrothorn|330\/352|[from] Stealth Rock
+|move|p1a: Gastrodon|Scald|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|282\/352
+|-status|p2a: Ferrothorn|brn
+|
+|-heal|p1a: Gastrodon|399\/426 brn|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|304\/352 brn|[from] item: Leftovers
+|-damage|p1a: Gastrodon|346\/426 brn|[from] brn
+|-damage|p2a: Ferrothorn|260\/352 brn|[from] brn
+|turn|5
+|callback|decision
+|
+|move|p1a: Gastrodon|Earth Power|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|161\/352 brn
+|move|p2a: Ferrothorn|Leech Seed|p1a: Gastrodon
+|-start|p1a: Gastrodon|move: Leech Seed
+|
+|-heal|p1a: Gastrodon|372\/426 brn|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|183\/352 brn|[from] item: Leftovers
+|-damage|p1a: Gastrodon|319\/426 brn|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|236\/352 brn|[silent]
+|-damage|p1a: Gastrodon|266\/426 brn|[from] brn
+|-damage|p2a: Ferrothorn|192\/352 brn|[from] brn
+|turn|6
+|callback|decision
+|
+|switch|p1a: pterodactyl|Infernape, M|294\/294
+|move|p2a: Ferrothorn|Stealth Rock|p1a: pterodactyl
+|-sidestart|p1: TeHKiNG|move: Stealth Rock
+|
+|-heal|p2a: Ferrothorn|214\/352 brn|[from] item: Leftovers
+|-damage|p2a: Ferrothorn|170\/352 brn|[from] brn
+|turn|7
+|callback|decision
+|
+|move|p1a: pterodactyl|Close Combat|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|-damage|p1a: pterodactyl|258\/294|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|-unboost|p1a: pterodactyl|def|1
+|-unboost|p1a: pterodactyl|spd|1
+|faint|p2a: Ferrothorn
+|
+|callback|decision
+|
+|switch|p2a: Crobat|Crobat, M|374\/374
+|-damage|p2a: Crobat|281\/374|[from] Stealth Rock
+|turn|8
+|callback|decision
+|
+|switch|p1a: Forretress|Forretress, M|23\/352
+|-damage|p1a: Forretress|0 fnt|[from] Stealth Rock
+|faint|p1a: Forretress
+|move|p2a: Crobat|Brave Bird|p1: Forretress|[notarget]
+|-notarget
+|
+|-heal|p2a: Crobat|304\/374|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p1a: pterodactyl|Infernape, M|258\/294
+|-damage|p1a: pterodactyl|222\/294|[from] Stealth Rock
+|turn|9
+|callback|decision
+|
+|switch|p2a: Dragonite|Dragonite, F|368\/368
+|-damage|p2a: Dragonite|276\/368|[from] Stealth Rock
+|move|p1a: pterodactyl|Stone Edge|p2a: Dragonite
+|-crit|p2a: Dragonite
+|-supereffective|p2a: Dragonite
+|-damage|p2a: Dragonite|0 fnt
+|faint|p2a: Dragonite
+|
+|callback|decision
+|
+|switch|p2a: Terrakion|Terrakion|323\/323
+|-damage|p2a: Terrakion|303\/323|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|switch|p1a: Gastrodon|Gastrodon, F|266\/426 brn
+|-damage|p1a: Gastrodon|240\/426 brn|[from] Stealth Rock
+|move|p2a: Terrakion|Close Combat|p1a: Gastrodon
+|-damage|p1a: Gastrodon|0 fnt
+|-unboost|p2a: Terrakion|def|1
+|-unboost|p2a: Terrakion|spd|1
+|faint|p1a: Gastrodon
+|
+|callback|decision
+|
+|switch|p1a: Landorus|Landorus, M|320\/320
+|-damage|p1a: Landorus|280\/320|[from] Stealth Rock
+|turn|11
+|callback|decision
+|
+|switch|p2a: Rotom-W|Rotom-Wash|227\/242 tox
+|-damage|p2a: Rotom-W|197\/242 tox|[from] Stealth Rock
+|move|p1a: Landorus|Psychic|p2a: Rotom-W
+|-damage|p2a: Rotom-W|29\/242 tox
+|
+|-heal|p2a: Rotom-W|44\/242 tox|[from] item: Leftovers
+|-damage|p2a: Rotom-W|29\/242 tox|[from] psn
+|turn|12
+|callback|decision
+|
+|move|p1a: Landorus|Psychic|p2a: Rotom-W
+|-crit|p2a: Rotom-W
+|-damage|p2a: Rotom-W|0 fnt
+|faint|p2a: Rotom-W
+|
+|callback|decision
+|
+|switch|p2a: Terrakion|Terrakion|303\/323
+|-damage|p2a: Terrakion|283\/323|[from] Stealth Rock
+|turn|13
+|callback|decision
+|
+|move|p2a: Terrakion|Stone Edge|p1a: Landorus
+|-damage|p1a: Landorus|99\/320
+|move|p1a: Landorus|Earth Power|p2a: Terrakion
+|-supereffective|p2a: Terrakion
+|-damage|p2a: Terrakion|0 fnt
+|faint|p2a: Terrakion
+|
+|callback|decision
+|
+|switch|p2a: Crobat|Crobat, M|304\/374
+|-damage|p2a: Crobat|211\/374|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|move|p2a: Crobat|Brave Bird|p1a: Landorus
+|-damage|p1a: Landorus|0 fnt
+|-damage|p2a: Crobat|178\/374|[from] recoil|[of] p1a: Landorus
+|faint|p1a: Landorus
+|
+|-heal|p2a: Crobat|201\/374|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p1a: Alakazam|Alakazam, M|252\/252
+|turn|15
+|callback|decision
+|
+|move|p2a: Crobat|Brave Bird|p1a: Alakazam
+|-enditem|p1a: Alakazam|Focus Sash
+|-damage|p1a: Alakazam|1\/252
+|-damage|p2a: Crobat|118\/374|[from] recoil|[of] p1a: Alakazam
+|move|p1a: Alakazam|Psyshock|p2a: Crobat
+|-supereffective|p2a: Crobat
+|-damage|p2a: Crobat|0 fnt
+|faint|p2a: Crobat
+|
+|callback|decision
+|
+|switch|p2a: Breloom|Breloom, M|262\/262
+|-damage|p2a: Breloom|246\/262|[from] Stealth Rock
+|turn|16
+|callback|decision
+|
+|move|p2a: Breloom|Mach Punch|p1a: Alakazam
+|-resisted|p1a: Alakazam
+|-damage|p1a: Alakazam|0 fnt
+|faint|p1a: Alakazam
+|
+|-heal|p2a: Breloom|262\/262|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: pterodactyl|Infernape, M|222\/294
+|-damage|p1a: pterodactyl|186\/294|[from] Stealth Rock
+|turn|17
+|callback|decision
+|
+|move|p2a: Breloom|Mach Punch|p1a: pterodactyl
+|-damage|p1a: pterodactyl|32\/294
+|move|p1a: pterodactyl|Flare Blitz|p2a: Breloom
+|-supereffective|p2a: Breloom
+|-damage|p2a: Breloom|0 fnt
+|-damage|p1a: pterodactyl|0 fnt|[from] recoil|[of] p2a: Breloom
+|faint|p2a: Breloom
+|faint|p1a: pterodactyl
+|
+|win|TeHKiNG
+|raw|Ladder updating...
+|raw|TeHKiNG's rating: 1624 &rarr; <strong>1628<\/strong><br \/>(+4 for winning)
+|raw|Coatay's rating: 1753 &rarr; <strong>1749<\/strong><br \/>(-4 for losing)
+|leave|Coatay
+|player|p2

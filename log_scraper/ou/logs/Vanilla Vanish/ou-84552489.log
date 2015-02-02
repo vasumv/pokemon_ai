@@ -1,0 +1,645 @@
+|join|SaunterDownwards
+|join|Vanilla Vanish
+|player|p1|SaunterDownwards|50
+|player|p2|Vanilla Vanish|2
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Mew
+|poke|p1|Tangrowth, M
+|poke|p1|Magnezone
+|poke|p1|Ditto
+|poke|p1|Slowking, M
+|poke|p1|Wobbuffet, F
+|poke|p2|Charizard, M
+|poke|p2|Shuckle, F
+|poke|p2|Trevenant, F
+|poke|p2|Starmie
+|poke|p2|Lucario, M
+|poke|p2|Rotom-Wash
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Ditto|Ditto|300\/300
+|switch|p2a: Shuckle|Shuckle, F|244\/244
+|-transform|p1a: Ditto|p2a: Shuckle
+|turn|1
+|callback|decision
+|
+|switch|p1a: Mew|Mew|404\/404
+|move|p2a: Shuckle|Encore|p1a: Mew
+|-fail|p1a: Mew
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Mew|Aura Sphere|p2a: Shuckle
+|-damage|p2a: Shuckle|218\/244
+|move|p2a: Shuckle|Sticky Web|p1a: Mew
+|-sidestart|p1: SaunterDownwards|move: Sticky Web
+|
+|-heal|p2a: Shuckle|233\/244|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p1a: Mew|Aura Sphere|p2a: Shuckle
+|-damage|p2a: Shuckle|207\/244
+|move|p2a: Shuckle|Stealth Rock|p1a: Mew
+|-sidestart|p1: SaunterDownwards|move: Stealth Rock
+|
+|-heal|p2a: Shuckle|222\/244|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p1a: Mew|Aura Sphere|p2a: Shuckle
+|-damage|p2a: Shuckle|198\/244
+|move|p2a: Shuckle|Toxic|p1a: Mew
+|-status|p1a: Mew|tox
+|-status|p2a: Shuckle|tox
+|
+|-heal|p2a: Shuckle|213\/244 tox|[from] item: Leftovers
+|-damage|p1a: Mew|379\/404 tox|[from] psn
+|-damage|p2a: Shuckle|198\/244 tox|[from] psn
+|turn|5
+|callback|decision
+|
+|move|p1a: Mew|Heal Bell|p1a: Mew
+|-cureteam|p1a: Mew|[from] move: HealBell
+|move|p2a: Shuckle|Encore|p1a: Mew
+|-start|p1a: Mew|Encore
+|
+|-heal|p1a: Mew|404\/404|[from] item: Leftovers
+|-heal|p2a: Shuckle|213\/244 tox|[from] item: Leftovers
+|-damage|p2a: Shuckle|183\/244 tox|[from] psn
+|turn|6
+|callback|decision
+|
+|switch|p1a: Tangrowth|Tangrowth, M|404\/404
+|-activate|p1a: Tangrowth|move: Sticky Web
+|-unboost|p1a: Tangrowth|spe|1
+|-damage|p1a: Tangrowth|354\/404|[from] Stealth Rock
+|switch|p2a: Charizard|Charizard, M|298\/298
+|
+|-heal|p1a: Tangrowth|379\/404|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p1a: Wobbuffet|Wobbuffet, F|522\/522
+|-damage|p1a: Wobbuffet|457\/522|[from] Stealth Rock
+|-activate|p1a: Wobbuffet|move: Sticky Web
+|-unboost|p1a: Wobbuffet|spe|1
+|-formechange|p2a: Charizard|Charizard-Mega-Y
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p2a: Charizard|Flamethrower|p1a: Wobbuffet
+|-damage|p1a: Wobbuffet|123\/522
+|-enditem|p1a: Wobbuffet|Sitrus Berry|[eat]
+|-heal|p1a: Wobbuffet|253\/522|[from] item: Sitrus Berry
+|
+|-weather|SunnyDay|[upkeep]
+|turn|8
+|callback|decision
+|
+|move|p2a: Charizard|Flamethrower|p1a: Wobbuffet
+|-damage|p1a: Wobbuffet|0 fnt
+|faint|p1a: Wobbuffet
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: Magnezone|Magnezone|282\/282
+|-damage|p1a: Magnezone|265\/282|[from] Stealth Rock
+|-activate|p1a: Magnezone|move: Sticky Web
+|-unboost|p1a: Magnezone|spe|1
+|turn|9
+|callback|decision
+|
+|move|p2a: Charizard|Flamethrower|p1a: Magnezone
+|-supereffective|p1a: Magnezone
+|-damage|p1a: Magnezone|0 fnt
+|faint|p1a: Magnezone
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: Slowking|Slowking, M|394\/394
+|-damage|p1a: Slowking|345\/394|[from] Stealth Rock
+|-activate|p1a: Slowking|move: Sticky Web
+|-unboost|p1a: Slowking|spe|1
+|turn|10
+|callback|decision
+|
+|move|p1a: Slowking|Protect|p1a: Slowking
+|-singleturn|p1a: Slowking|Protect
+|move|p2a: Charizard|Solar Beam|p1a: Slowking|[still]
+|-prepare|p2a: Charizard|Solar Beam|p1a: Slowking
+|-anim|p2a: Charizard|Solar Beam|p1a: Slowking
+|-activate|p1a: Slowking|Protect
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Slowking|369\/394|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p1a: Tangrowth|Tangrowth, M|404\/404
+|-damage|p1a: Tangrowth|354\/404|[from] Stealth Rock
+|-activate|p1a: Tangrowth|move: Sticky Web
+|-unboost|p1a: Tangrowth|spe|1
+|move|p2a: Charizard|Solar Beam|p1a: Tangrowth|[still]
+|-prepare|p2a: Charizard|Solar Beam|p1a: Tangrowth
+|-anim|p2a: Charizard|Solar Beam|p1a: Tangrowth
+|-crit|p1a: Tangrowth
+|-resisted|p1a: Tangrowth
+|-damage|p1a: Tangrowth|104\/404
+|
+|-weather|none
+|-heal|p1a: Tangrowth|129\/404|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p1a: Slowking|Slowking, M|394\/394
+|-damage|p1a: Slowking|345\/394|[from] Stealth Rock
+|-activate|p1a: Slowking|move: Sticky Web
+|-unboost|p1a: Slowking|spe|1
+|move|p2a: Charizard|Flamethrower|p1a: Slowking
+|-resisted|p1a: Slowking
+|-damage|p1a: Slowking|275\/394
+|
+|-heal|p1a: Slowking|299\/394|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p2a: Trevenant|Trevenant, F|374\/374
+|move|p1a: Slowking|Scald|p2a: Trevenant
+|-crit|p2a: Trevenant
+|-resisted|p2a: Trevenant
+|-damage|p2a: Trevenant|286\/374
+|
+|-heal|p1a: Slowking|323\/394|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: Slowking|Protect|p1a: Slowking
+|-singleturn|p1a: Slowking|Protect
+|move|p2a: Trevenant|Will-O-Wisp|p1a: Slowking
+|-activate|p1a: Slowking|Protect
+|
+|-heal|p1a: Slowking|347\/394|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|switch|p1a: Mew|Mew|404\/404
+|-activate|p1a: Mew|move: Sticky Web
+|-unboost|p1a: Mew|spe|1
+|-damage|p1a: Mew|354\/404|[from] Stealth Rock
+|move|p2a: Trevenant|Will-O-Wisp|p1a: Mew
+|-status|p1a: Mew|brn
+|-status|p2a: Trevenant|brn
+|
+|-heal|p1a: Mew|379\/404 brn|[from] item: Leftovers
+|-damage|p1a: Mew|329\/404 brn|[from] brn
+|-damage|p2a: Trevenant|240\/374 brn|[from] brn
+|turn|16
+|callback|decision
+|
+|switch|p2a: Lucario|Lucario, M|282\/282
+|move|p1a: Mew|Heal Bell|p1a: Mew
+|-cureteam|p1a: Mew|[from] move: HealBell
+|
+|-heal|p1a: Mew|354\/404|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p2a: Lucario|Earthquake|p1a: Mew
+|-damage|p1a: Mew|195\/404
+|move|p1a: Mew|Roost|p1a: Mew
+|-heal|p1a: Mew|397\/404
+|
+|-heal|p1a: Mew|404\/404|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p2a: Lucario|Earthquake|p1a: Mew
+|-damage|p1a: Mew|237\/404
+|move|p1a: Mew|Aura Sphere|p2a: Lucario
+|-supereffective|p2a: Lucario
+|-damage|p2a: Lucario|98\/282
+|
+|-heal|p1a: Mew|262\/404|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|switch|p2a: Trevenant|Trevenant, F|240\/374 brn
+|move|p1a: Mew|Aura Sphere|p2a: Trevenant
+|-immune|p2a: Trevenant|[msg]
+|
+|-heal|p1a: Mew|287\/404|[from] item: Leftovers
+|-damage|p2a: Trevenant|194\/374 brn|[from] brn
+|turn|20
+|callback|decision
+|
+|move|p1a: Mew|Roost|p1a: Mew
+|-heal|p1a: Mew|404\/404
+|move|p2a: Trevenant|Leech Seed|p1a: Mew
+|-start|p1a: Mew|move: Leech Seed
+|
+|-damage|p1a: Mew|354\/404|[from] Leech Seed|[of] p2a: Trevenant
+|-heal|p2a: Trevenant|244\/374 brn|[silent]
+|-damage|p2a: Trevenant|198\/374 brn|[from] brn
+|turn|21
+|callback|decision
+|
+|switch|p1a: Tangrowth|Tangrowth, M|263\/404
+|-damage|p1a: Tangrowth|213\/404|[from] Stealth Rock
+|-activate|p1a: Tangrowth|move: Sticky Web
+|-unboost|p1a: Tangrowth|spe|1
+|move|p2a: Trevenant|Horn Leech|p1a: Tangrowth
+|-resisted|p1a: Tangrowth
+|-damage|p1a: Tangrowth|200\/404
+|-heal|p2a: Trevenant|205\/374 brn|[from] drain|[of] p1a: Tangrowth
+|
+|-heal|p1a: Tangrowth|225\/404|[from] item: Leftovers
+|-damage|p2a: Trevenant|159\/374 brn|[from] brn
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|252\/374 brn|[from] item: Sitrus Berry
+|turn|22
+|callback|decision
+|
+|move|p2a: Trevenant|Will-O-Wisp|p1a: Tangrowth
+|-status|p1a: Tangrowth|brn
+|move|p1a: Tangrowth|Knock Off|p2a: Trevenant
+|-supereffective|p2a: Trevenant
+|-damage|p2a: Trevenant|214\/374 brn
+|
+|-heal|p1a: Tangrowth|250\/404 brn|[from] item: Leftovers
+|-damage|p2a: Trevenant|168\/374 brn|[from] brn
+|-damage|p1a: Tangrowth|200\/404 brn|[from] brn
+|-item|p2a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|261\/374 brn|[from] item: Sitrus Berry
+|turn|23
+|callback|decision
+|
+|switch|p1a: Ditto|Ditto|300\/300
+|-damage|p1a: Ditto|263\/300|[from] Stealth Rock
+|-activate|p1a: Ditto|move: Sticky Web
+|-unboost|p1a: Ditto|spe|1
+|-transform|p1a: Ditto|p2a: Trevenant
+|move|p2a: Trevenant|Leech Seed|p1a: Ditto
+|-immune|p1a: Ditto|[msg]
+|
+|-damage|p2a: Trevenant|215\/374 brn|[from] brn
+|-item|p2a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|turn|24
+|callback|decision
+|
+|switch|p2a: Shuckle|Shuckle, F|183\/244 tox
+|move|p1a: Ditto|Protect|p1a: Ditto
+|-fail|p1a: Ditto
+|
+|-heal|p2a: Shuckle|198\/244 tox|[from] item: Leftovers
+|-damage|p2a: Shuckle|183\/244 tox|[from] psn
+|turn|25
+|callback|decision
+|
+|switch|p1a: Mew|Mew|354\/404
+|-activate|p1a: Mew|move: Sticky Web
+|-unboost|p1a: Mew|spe|1
+|-damage|p1a: Mew|304\/404|[from] Stealth Rock
+|move|p2a: Shuckle|Toxic|p1a: Mew
+|-status|p1a: Mew|tox
+|
+|-heal|p1a: Mew|329\/404 tox|[from] item: Leftovers
+|-heal|p2a: Shuckle|198\/244 tox|[from] item: Leftovers
+|-damage|p1a: Mew|304\/404 tox|[from] psn
+|-damage|p2a: Shuckle|168\/244 tox|[from] psn
+|turn|26
+|callback|decision
+|
+|move|p1a: Mew|Heal Bell|p1a: Mew
+|-cureteam|p1a: Mew|[from] move: HealBell
+|move|p2a: Shuckle|Encore|p1a: Mew
+|-start|p1a: Mew|Encore
+|
+|-heal|p1a: Mew|329\/404|[from] item: Leftovers
+|-heal|p2a: Shuckle|183\/244 tox|[from] item: Leftovers
+|-damage|p2a: Shuckle|138\/244 tox|[from] psn
+|turn|27
+|callback|decision
+|
+|switch|p1a: Slowking|Slowking, M|394\/394
+|-activate|p1a: Slowking|move: Sticky Web
+|-unboost|p1a: Slowking|spe|1
+|-damage|p1a: Slowking|345\/394|[from] Stealth Rock
+|switch|p2a: Charizard|Charizard, M|298\/298
+|-formechange|p2a: Charizard|Charizard-Mega-Y
+|-weather|SunnyDay
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Slowking|369\/394|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|move|p2a: Charizard|Dragon Pulse|p1a: Slowking
+|-damage|p1a: Slowking|279\/394
+|move|p1a: Slowking|Scald|p2a: Charizard
+|-supereffective|p2a: Charizard
+|-damage|p2a: Charizard|208\/298
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Slowking|303\/394|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|move|p2a: Charizard|Solar Beam|p1a: Slowking|[still]
+|-prepare|p2a: Charizard|Solar Beam|p1a: Slowking
+|-anim|p2a: Charizard|Solar Beam|p1a: Slowking
+|-supereffective|p1a: Slowking
+|-damage|p1a: Slowking|77\/394
+|move|p1a: Slowking|Scald|p2a: Charizard
+|-supereffective|p2a: Charizard
+|-damage|p2a: Charizard|122\/298
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Slowking|101\/394|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|move|p2a: Charizard|Solar Beam|p1a: Slowking|[still]
+|-prepare|p2a: Charizard|Solar Beam|p1a: Slowking
+|-anim|p2a: Charizard|Solar Beam|p1a: Slowking
+|-supereffective|p1a: Slowking
+|-damage|p1a: Slowking|0 fnt
+|faint|p1a: Slowking
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: Ditto|Ditto|263\/300
+|-activate|p1a: Ditto|move: Sticky Web
+|-unboost|p1a: Ditto|spe|1
+|-damage|p1a: Ditto|226\/300|[from] Stealth Rock
+|-transform|p1a: Ditto|p2a: Charizard
+|turn|31
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|241\/241
+|move|p1a: Ditto|Dragon Pulse|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|111\/241
+|
+|-weather|none
+|turn|32
+|callback|decision
+|
+|move|p1a: Ditto|Dragon Pulse|p2a: Rotom-Wash
+|-crit|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|callback|decision
+|
+|switch|p2a: Lucario|Lucario, M|98\/282
+|turn|33
+|callback|decision
+|
+|switch|p1a: Mew|Mew|329\/404
+|-damage|p1a: Mew|279\/404|[from] Stealth Rock
+|-activate|p1a: Mew|move: Sticky Web
+|-unboost|p1a: Mew|spe|1
+|move|p2a: Lucario|Extreme Speed|p1a: Mew
+|-damage|p1a: Mew|147\/404
+|
+|-heal|p1a: Mew|172\/404|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|switch|p2a: Starmie|Starmie|262\/262
+|move|p1a: Mew|Aura Sphere|p2a: Starmie
+|-resisted|p2a: Starmie
+|-damage|p2a: Starmie|227\/262
+|
+|-heal|p1a: Mew|197\/404|[from] item: Leftovers
+|turn|35
+|callback|decision
+|
+|move|p2a: Starmie|Dazzling Gleam|p1a: Mew
+|-damage|p1a: Mew|107\/404
+|-damage|p2a: Starmie|201\/262|[from] item: Life Orb
+|move|p1a: Mew|Roost|p1a: Mew
+|-heal|p1a: Mew|309\/404
+|
+|-heal|p1a: Mew|334\/404|[from] item: Leftovers
+|turn|36
+|callback|decision
+|
+|move|p2a: Starmie|Dazzling Gleam|p1a: Mew
+|-damage|p1a: Mew|255\/404
+|-damage|p2a: Starmie|175\/262|[from] item: Life Orb
+|move|p1a: Mew|Roost|p1a: Mew
+|-heal|p1a: Mew|404\/404
+|
+|turn|37
+|callback|decision
+|
+|switch|p2a: Shuckle|Shuckle, F|138\/244 tox
+|move|p1a: Mew|Transform|p2a: Shuckle
+|-transform|p1a: Mew|p2a: Shuckle
+|
+|-heal|p2a: Shuckle|153\/244 tox|[from] item: Leftovers
+|-damage|p2a: Shuckle|138\/244 tox|[from] psn
+|turn|38
+|callback|decision
+|
+|move|p1a: Mew|Stealth Rock|p2a: Shuckle
+|-sidestart|p2: Vanilla Vanish|move: Stealth Rock
+|move|p2a: Shuckle|Encore|p1a: Mew
+|-start|p1a: Mew|Encore
+|
+|-heal|p2a: Shuckle|153\/244 tox|[from] item: Leftovers
+|-damage|p2a: Shuckle|123\/244 tox|[from] psn
+|turn|39
+|callback|decision
+|
+|switch|p1a: Tangrowth|Tangrowth, M|334\/404
+|-activate|p1a: Tangrowth|move: Sticky Web
+|-unboost|p1a: Tangrowth|spe|1
+|-damage|p1a: Tangrowth|284\/404|[from] Stealth Rock
+|switch|p2a: Starmie|Starmie|175\/262
+|-damage|p2a: Starmie|143\/262|[from] Stealth Rock
+|
+|-heal|p1a: Tangrowth|309\/404|[from] item: Leftovers
+|turn|40
+|callback|decision
+|
+|move|p1a: Tangrowth|Protect|p1a: Tangrowth
+|-singleturn|p1a: Tangrowth|Protect
+|move|p2a: Starmie|Rapid Spin|p1a: Tangrowth
+|-activate|p1a: Tangrowth|Protect
+|
+|-heal|p1a: Tangrowth|334\/404|[from] item: Leftovers
+|turn|41
+|callback|decision
+|
+|move|p2a: Starmie|Rapid Spin|p1a: Tangrowth
+|-damage|p1a: Tangrowth|324\/404
+|-sideend|p2: Vanilla Vanish|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Starmie
+|-damage|p2a: Starmie|117\/262|[from] item: Life Orb
+|move|p1a: Tangrowth|Leech Seed|p2a: Starmie|[miss]
+|-miss|p1a: Tangrowth|p2a: Starmie
+|
+|-heal|p1a: Tangrowth|349\/404|[from] item: Leftovers
+|turn|42
+|callback|decision
+|
+|switch|p2a: Charizard|Charizard, M|122\/298
+|-formechange|p2a: Charizard|Charizard-Mega-Y
+|-weather|SunnyDay
+|move|p1a: Tangrowth|Protect|p1a: Tangrowth
+|-fail|p1a: Tangrowth
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Tangrowth|374\/404|[from] item: Leftovers
+|turn|43
+|callback|decision
+|
+|switch|p1a: Ditto|Ditto|226\/300
+|-damage|p1a: Ditto|189\/300|[from] Stealth Rock
+|-activate|p1a: Ditto|move: Sticky Web
+|-unboost|p1a: Ditto|spe|1
+|-transform|p1a: Ditto|p2a: Charizard
+|move|p2a: Charizard|Flamethrower|p1a: Ditto
+|-resisted|p1a: Ditto
+|-damage|p1a: Ditto|45\/300
+|
+|-weather|SunnyDay|[upkeep]
+|turn|44
+|callback|decision
+|
+|switch|p2a: Shuckle|Shuckle, F|123\/244 tox
+|move|p1a: Ditto|Dragon Pulse|p2a: Shuckle
+|-damage|p2a: Shuckle|76\/244 tox
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Shuckle|91\/244 tox|[from] item: Leftovers
+|-damage|p2a: Shuckle|76\/244 tox|[from] psn
+|turn|45
+|callback|decision
+|
+|move|p1a: Ditto|Dragon Pulse|p2a: Shuckle
+|-damage|p2a: Shuckle|30\/244 tox
+|move|p2a: Shuckle|Toxic|p1a: Ditto
+|-status|p1a: Ditto|tox
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Shuckle|45\/244 tox|[from] item: Leftovers
+|-damage|p1a: Ditto|27\/300 tox|[from] psn
+|-damage|p2a: Shuckle|15\/244 tox|[from] psn
+|turn|46
+|callback|decision
+|
+|move|p1a: Ditto|Dragon Pulse|p2a: Shuckle
+|-damage|p2a: Shuckle|0 fnt
+|faint|p2a: Shuckle
+|
+|-weather|none
+|-damage|p1a: Ditto|0 fnt|[from] psn
+|faint|p1a: Ditto
+|callback|decision
+|
+|switch|p2a: Charizard|Charizard, M|122\/298
+|-formechange|p2a: Charizard|Charizard-Mega-Y
+|switch|p1a: Mew|Mew|404\/404
+|-activate|p1a: Mew|move: Sticky Web
+|-unboost|p1a: Mew|spe|1
+|-damage|p1a: Mew|354\/404|[from] Stealth Rock
+|-weather|SunnyDay
+|turn|47
+|callback|decision
+|
+|move|p2a: Charizard|Flamethrower|p1a: Mew
+|-damage|p1a: Mew|149\/404
+|move|p1a: Mew|Transform|p2a: Charizard
+|-transform|p1a: Mew|p2a: Charizard
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Mew|174\/404|[from] item: Leftovers
+|turn|48
+|callback|decision
+|
+|move|p2a: Charizard|Dragon Pulse|p1a: Mew
+|-damage|p1a: Mew|68\/404
+|move|p1a: Mew|Flamethrower|p2a: Charizard
+|-resisted|p2a: Charizard
+|-damage|p2a: Charizard|0 fnt
+|faint|p2a: Charizard
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Mew|93\/404|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Lucario|Lucario, M|98\/282
+|turn|49
+|callback|decision
+|
+|move|p2a: Lucario|Extreme Speed|p1a: Mew
+|-damage|p1a: Mew|0 fnt
+|faint|p1a: Mew
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p1a: Tangrowth|Tangrowth, M|404\/404
+|-damage|p1a: Tangrowth|354\/404|[from] Stealth Rock
+|-activate|p1a: Tangrowth|move: Sticky Web
+|-unboost|p1a: Tangrowth|spe|1
+|turn|50
+|callback|decision
+|
+|switch|p2a: Trevenant|Trevenant, F|215\/374 brn
+|move|p1a: Tangrowth|Power Whip|p2a: Trevenant
+|-crit|p2a: Trevenant
+|-resisted|p2a: Trevenant
+|-damage|p2a: Trevenant|140\/374 brn
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|233\/374 brn|[from] item: Sitrus Berry
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Tangrowth|379\/404|[from] item: Leftovers
+|-damage|p2a: Trevenant|187\/374 brn|[from] brn
+|-item|p2a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|280\/374 brn|[from] item: Sitrus Berry
+|turn|51
+|callback|decision
+|
+|move|p2a: Trevenant|Will-O-Wisp|p1a: Tangrowth
+|-status|p1a: Tangrowth|brn
+|move|p1a: Tangrowth|Knock Off|p2a: Trevenant
+|-supereffective|p2a: Trevenant
+|-damage|p2a: Trevenant|244\/374 brn
+|
+|-weather|none
+|-heal|p1a: Tangrowth|404\/404 brn|[from] item: Leftovers
+|-damage|p2a: Trevenant|198\/374 brn|[from] brn
+|-damage|p1a: Tangrowth|354\/404 brn|[from] brn
+|-item|p2a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|turn|52
+|callback|decision
+|-message|SaunterDownwards forfeited.
+|
+|win|Vanilla Vanish
+|raw|Ladder updating...
+|leave|SaunterDownwards
+|player|p1
+|raw|SaunterDownwards's rating: 1309 &rarr; <strong>1279<\/strong><br \/>(-30 for losing)
+|raw|Vanilla Vanish's rating: 1242 &rarr; <strong>1272<\/strong><br \/>(+30 for winning)

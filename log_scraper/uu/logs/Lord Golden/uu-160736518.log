@@ -1,0 +1,547 @@
+|join|Lord Golden
+|join|rocksword
+|player|p1|Lord Golden|80
+|player|p2|rocksword|209
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Hydreigon, F
+|poke|p1|Metagross
+|poke|p1|Florges, F
+|poke|p1|Swampert, F
+|poke|p1|Flygon, F
+|poke|p1|Togekiss, M
+|poke|p2|Clawitzer, M, shiny
+|poke|p2|Absol, M
+|poke|p2|Roserade, F, shiny
+|poke|p2|Victini, shiny
+|poke|p2|Florges, F, shiny
+|poke|p2|Gligar, M, shiny
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Flygon|Flygon, F|301\/301
+|switch|p2a: Vicky|Victini, shiny|403\/403
+|turn|1
+|
+|switch|p2a: Mitch|Gligar, M, shiny|334\/334
+|move|p1a: Flygon|Earthquake|p2a: Mitch
+|-immune|p2a: Mitch|[msg]
+|
+|turn|2
+|
+|switch|p1a: Swampert|Swampert, F|404\/404
+|move|p2a: Mitch|Toxic|p1a: Swampert
+|-status|p1a: Swampert|tox
+|
+|-damage|p1a: Swampert|379\/404 tox|[from] psn
+|turn|3
+|
+|switch|p2a: Breann|Roserade, F, shiny|261\/261
+|move|p1a: Swampert|Stealth Rock|p2a: Breann
+|-sidestart|p2: rocksword|move: Stealth Rock
+|
+|-heal|p1a: Swampert|404\/404 tox|[from] item: Leftovers
+|-damage|p1a: Swampert|354\/404 tox|[from] psn
+|turn|4
+|
+|switch|p2a: Jenna|Florges, F, shiny|360\/360
+|-damage|p2a: Jenna|315\/360|[from] Stealth Rock
+|switch|p1a: Florges|Florges, F|360\/360
+|
+|-heal|p2a: Jenna|337\/360|[from] item: Leftovers
+|turn|5
+|
+|move|p2a: Jenna|Wish|p2a: Jenna
+|move|p1a: Florges|Toxic|p2a: Jenna
+|-status|p2a: Jenna|tox
+|
+|-heal|p2a: Jenna|359\/360 tox|[from] item: Leftovers
+|-damage|p2a: Jenna|337\/360 tox|[from] psn
+|turn|6
+|
+|switch|p1a: Metagross|Metagross|302\/302
+|switch|p2a: Vicky|Victini, shiny|403\/403
+|-damage|p2a: Vicky|303\/403|[from] Stealth Rock
+|
+|-heal|p2a: Vicky|403\/403|[from] move: Wish|[wisher] Jenna
+|turn|7
+|
+|switch|p1a: Swampert|Swampert, F|354\/404 tox
+|move|p2a: Vicky|V-create|p1a: Swampert
+|-resisted|p1a: Swampert
+|-damage|p1a: Swampert|246\/404 tox
+|-unboost|p2a: Vicky|def|1
+|-unboost|p2a: Vicky|spd|1
+|-unboost|p2a: Vicky|spe|1
+|
+|-heal|p1a: Swampert|271\/404 tox|[from] item: Leftovers
+|-damage|p1a: Swampert|246\/404 tox|[from] psn
+|turn|8
+|
+|switch|p2a: Mitch|Gligar, M, shiny|334\/334
+|-damage|p2a: Mitch|293\/334|[from] Stealth Rock
+|move|p1a: Swampert|Roar|p2a: Mitch
+|drag|p2a: Vicky|Victini, shiny|403\/403
+|-damage|p2a: Vicky|303\/403|[from] Stealth Rock
+|
+|-heal|p1a: Swampert|271\/404 tox|[from] item: Leftovers
+|-damage|p1a: Swampert|221\/404 tox|[from] psn
+|turn|9
+|
+|move|p2a: Vicky|U-turn|p1a: Swampert
+|-damage|p1a: Swampert|156\/404 tox
+|
+|switch|p2a: Mitch|Gligar, M, shiny|293\/334
+|-damage|p2a: Mitch|252\/334|[from] Stealth Rock
+|move|p1a: Swampert|Waterfall|p2a: Mitch
+|-supereffective|p2a: Mitch
+|-damage|p2a: Mitch|150\/334
+|
+|-heal|p1a: Swampert|181\/404 tox|[from] item: Leftovers
+|-damage|p1a: Swampert|106\/404 tox|[from] psn
+|turn|10
+|
+|switch|p1a: Hydreigon|Hydreigon, F|325\/325
+|move|p2a: Mitch|Roost|p2a: Mitch
+|-heal|p2a: Mitch|317\/334
+|
+|turn|11
+|
+|switch|p1a: Metagross|Metagross|302\/302
+|move|p2a: Mitch|Toxic|p1a: Metagross
+|-fail|p1a: Metagross
+|
+|turn|12
+|
+|switch|p2a: Vicky|Victini, shiny|303\/403
+|-damage|p2a: Vicky|203\/403|[from] Stealth Rock
+|switch|p1a: Hydreigon|Hydreigon, F|325\/325
+|
+|turn|13
+|
+|switch|p1a: Swampert|Swampert, F|106\/404 tox
+|move|p2a: Vicky|U-turn|p1a: Swampert
+|-damage|p1a: Swampert|51\/404 tox
+|
+|switch|p2a: Jared|Absol, M|271\/271
+|-damage|p2a: Jared|238\/271|[from] Stealth Rock
+|
+|-heal|p1a: Swampert|76\/404 tox|[from] item: Leftovers
+|-damage|p1a: Swampert|51\/404 tox|[from] psn
+|turn|14
+|
+|detailschange|p2a: Jared|Absol-Mega, M
+|message|Absol has Mega Evolved into Mega Absol!
+|move|p2a: Jared|Knock Off|p1a: Swampert
+|-damage|p1a: Swampert|0 fnt
+|-enditem|p1a: Swampert|Leftovers|[from] move: Knock Off|[of] p2a: Jared
+|faint|p1a: Swampert
+|
+|
+|switch|p1a: Togekiss|Togekiss, M|374\/374
+|turn|15
+|
+|switch|p2a: Jenna|Florges, F, shiny|337\/360 tox
+|-damage|p2a: Jenna|292\/360 tox|[from] Stealth Rock
+|move|p1a: Togekiss|Thunder Wave|p2a: Jenna
+|-fail|p2a: Jenna
+|
+|-heal|p2a: Jenna|314\/360 tox|[from] item: Leftovers
+|-damage|p2a: Jenna|292\/360 tox|[from] psn
+|turn|16
+|
+|switch|p1a: Metagross|Metagross|302\/302
+|move|p2a: Jenna|Moonblast|p1a: Metagross
+|-resisted|p1a: Metagross
+|-damage|p1a: Metagross|254\/302
+|
+|-heal|p2a: Jenna|314\/360 tox|[from] item: Leftovers
+|-damage|p2a: Jenna|270\/360 tox|[from] psn
+|turn|17
+|
+|switch|p2a: Mark|Clawitzer, M, shiny|346\/346
+|-damage|p2a: Mark|303\/346|[from] Stealth Rock
+|switch|p1a: Hydreigon|Hydreigon, F|325\/325
+|
+|turn|18
+|
+|move|p1a: Hydreigon|Dark Pulse|p2a: Mark
+|-damage|p2a: Mark|74\/346
+|move|p2a: Mark|Water Pulse|p1a: Hydreigon
+|-resisted|p1a: Hydreigon
+|-damage|p1a: Hydreigon|194\/325
+|-start|p1a: Hydreigon|confusion
+|
+|turn|19
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|switch|p2a: Mitch|Gligar, M, shiny|317\/334
+|-damage|p2a: Mitch|276\/334|[from] Stealth Rock
+|
+|turn|20
+|
+|move|p2a: Mitch|Defog|p1a: Florges
+|-unboost|p1a: Florges|evasion|1
+|-sideend|p2: rocksword|Stealth Rock|[from] move: Defog|[of] p2a: Mitch
+|move|p1a: Florges|Moonblast|p2a: Mitch
+|-damage|p2a: Mitch|165\/334
+|
+|turn|21
+|
+|move|p2a: Mitch|Roost|p2a: Mitch
+|-heal|p2a: Mitch|332\/334
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|turn|22
+|
+|switch|p1a: Hydreigon|Hydreigon, F|194\/325
+|move|p2a: Mitch|Toxic|p1a: Hydreigon
+|-status|p1a: Hydreigon|tox
+|
+|-heal|p1a: Hydreigon|325\/325 tox|[from] move: Wish|[wisher] Florges
+|-damage|p1a: Hydreigon|305\/325 tox|[from] psn
+|turn|23
+|
+|move|p1a: Hydreigon|Draco Meteor|p2a: Mitch
+|-damage|p2a: Mitch|32\/334
+|-unboost|p1a: Hydreigon|spa|2
+|move|p2a: Mitch|Roost|p2a: Mitch
+|-heal|p2a: Mitch|199\/334
+|
+|-damage|p1a: Hydreigon|265\/325 tox|[from] psn
+|turn|24
+|
+|switch|p1a: Togekiss|Togekiss, M|374\/374
+|switch|p2a: Vicky|Victini, shiny|203\/403
+|
+|turn|25
+|
+|move|p2a: Vicky|Bolt Strike|p1a: Togekiss
+|-supereffective|p1a: Togekiss
+|-damage|p1a: Togekiss|68\/374
+|move|p1a: Togekiss|Air Slash|p2a: Vicky
+|-damage|p2a: Vicky|113\/403
+|
+|-heal|p1a: Togekiss|91\/374|[from] item: Leftovers
+|turn|26
+|
+|switch|p1a: Flygon|Flygon, F|301\/301
+|move|p2a: Vicky|U-turn|p1a: Flygon
+|-damage|p1a: Flygon|210\/301
+|
+|switch|p2a: Mitch|Gligar, M, shiny|199\/334
+|
+|turn|27
+|
+|move|p1a: Flygon|U-turn|p2a: Mitch
+|-resisted|p2a: Mitch
+|-damage|p2a: Mitch|181\/334
+|
+|switch|p1a: Togekiss|Togekiss, M|91\/374
+|move|p2a: Mitch|Roost|p2a: Mitch
+|-heal|p2a: Mitch|334\/334
+|
+|-heal|p1a: Togekiss|114\/374|[from] item: Leftovers
+|turn|28
+|
+|move|p2a: Mitch|Toxic|p1a: Togekiss
+|-status|p1a: Togekiss|tox
+|move|p1a: Togekiss|Air Slash|p2a: Mitch|[miss]
+|-miss|p1a: Togekiss|p2a: Mitch
+|
+|-heal|p1a: Togekiss|137\/374 tox|[from] item: Leftovers
+|-damage|p1a: Togekiss|114\/374 tox|[from] psn
+|turn|29
+|
+|move|p2a: Mitch|Earthquake|p1a: Togekiss
+|-immune|p1a: Togekiss|[msg]
+|move|p1a: Togekiss|Air Slash|p2a: Mitch
+|-damage|p2a: Mitch|195\/334
+|
+|-heal|p1a: Togekiss|137\/374 tox|[from] item: Leftovers
+|-damage|p1a: Togekiss|91\/374 tox|[from] psn
+|turn|30
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Mitch|Roost|p2a: Mitch
+|-heal|p2a: Mitch|334\/334
+|
+|turn|31
+|
+|move|p2a: Mitch|Toxic|p1a: Florges
+|-status|p1a: Florges|tox
+|move|p1a: Florges|Toxic|p2a: Mitch
+|-status|p2a: Mitch|tox
+|
+|-damage|p2a: Mitch|314\/334 tox|[from] psn
+|-damage|p1a: Florges|338\/360 tox|[from] psn
+|turn|32
+|
+|switch|p2a: Breann|Roserade, F, shiny|261\/261
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p1a: Florges|360\/360 tox|[from] item: Leftovers
+|-damage|p1a: Florges|316\/360 tox|[from] psn
+|turn|33
+|
+|switch|p1a: Metagross|Metagross|254\/302
+|move|p2a: Breann|Hidden Power|p1a: Metagross
+|-supereffective|p1a: Metagross
+|-damage|p1a: Metagross|148\/302
+|
+|-heal|p1a: Metagross|302\/302|[from] move: Wish|[wisher] Florges
+|turn|34
+|
+|switch|p2a: Mitch|Gligar, M, shiny|314\/334 tox
+|move|p1a: Metagross|Meteor Mash|p2a: Mitch
+|-damage|p2a: Mitch|236\/334 tox
+|
+|-damage|p2a: Mitch|216\/334 tox|[from] psn
+|turn|35
+|
+|switch|p2a: Jenna|Florges, F, shiny|270\/360 tox
+|switch|p1a: Togekiss|Togekiss, M|91\/374 tox
+|
+|-heal|p1a: Togekiss|114\/374 tox|[from] item: Leftovers
+|-heal|p2a: Jenna|292\/360 tox|[from] item: Leftovers
+|-damage|p1a: Togekiss|91\/374 tox|[from] psn
+|-damage|p2a: Jenna|270\/360 tox|[from] psn
+|turn|36
+|
+|move|p1a: Togekiss|Roost|p1a: Togekiss
+|-heal|p1a: Togekiss|278\/374 tox
+|move|p2a: Jenna|Aromatherapy|p2a: Jenna
+|-cureteam|p2a: Jenna|[from] move: Aromatherapy
+|
+|-heal|p1a: Togekiss|301\/374 tox|[from] item: Leftovers
+|-heal|p2a: Jenna|292\/360|[from] item: Leftovers
+|-damage|p1a: Togekiss|255\/374 tox|[from] psn
+|turn|37
+|
+|move|p1a: Togekiss|Thunder Wave|p2a: Jenna
+|-status|p2a: Jenna|par
+|move|p2a: Jenna|Wish|p2a: Jenna
+|
+|-heal|p1a: Togekiss|278\/374 tox|[from] item: Leftovers
+|-heal|p2a: Jenna|314\/360 par|[from] item: Leftovers
+|-damage|p1a: Togekiss|209\/374 tox|[from] psn
+|turn|38
+|
+|switch|p2a: Vicky|Victini, shiny|113\/403
+|move|p1a: Togekiss|Air Slash|p2a: Vicky
+|-damage|p2a: Vicky|23\/403
+|
+|-heal|p2a: Vicky|203\/403|[from] move: Wish|[wisher] Jenna
+|-heal|p1a: Togekiss|232\/374 tox|[from] item: Leftovers
+|-damage|p1a: Togekiss|140\/374 tox|[from] psn
+|turn|39
+|
+|switch|p2a: Jenna|Florges, F, shiny|314\/360 par
+|move|p1a: Togekiss|Thunder Wave|p2a: Jenna
+|-fail|p2a: Jenna|par
+|
+|-heal|p1a: Togekiss|163\/374 tox|[from] item: Leftovers
+|-heal|p2a: Jenna|336\/360 par|[from] item: Leftovers
+|-damage|p1a: Togekiss|48\/374 tox|[from] psn
+|turn|40
+|
+|move|p1a: Togekiss|Air Slash|p2a: Jenna
+|-damage|p2a: Jenna|263\/360 par
+|move|p2a: Jenna|Wish|p2a: Jenna
+|
+|-heal|p1a: Togekiss|71\/374 tox|[from] item: Leftovers
+|-heal|p2a: Jenna|285\/360 par|[from] item: Leftovers
+|-damage|p1a: Togekiss|0 fnt|[from] psn
+|faint|p1a: Togekiss
+|
+|switch|p1a: Metagross|Metagross|302\/302
+|turn|41
+|
+|switch|p2a: Mark|Clawitzer, M, shiny|74\/346
+|move|p1a: Metagross|Zen Headbutt|p2a: Mark
+|-damage|p2a: Mark|0 fnt
+|faint|p2a: Mark
+|
+|
+|switch|p2a: Jared|Absol-Mega, M|238\/271
+|turn|42
+|
+|switch|p1a: Flygon|Flygon, F|210\/301
+|move|p2a: Jared|Swords Dance|p2a: Jared
+|-boost|p2a: Jared|atk|2
+|
+|turn|43
+|
+|move|p2a: Jared|Sucker Punch|p1a: Flygon
+|-damage|p1a: Flygon|0 fnt
+|faint|p1a: Flygon
+|
+|
+|switch|p1a: Florges|Florges, F|316\/360 tox
+|turn|44
+|
+|switch|p2a: Breann|Roserade, F, shiny|261\/261
+|move|p1a: Florges|Moonblast|p2a: Breann
+|-resisted|p2a: Breann
+|-damage|p2a: Breann|198\/261
+|
+|-heal|p1a: Florges|338\/360 tox|[from] item: Leftovers
+|-damage|p1a: Florges|316\/360 tox|[from] psn
+|turn|45
+|
+|move|p2a: Breann|Hidden Power|p1a: Florges
+|-damage|p1a: Florges|276\/360 tox
+|move|p1a: Florges|Toxic|p2a: Breann
+|-fail|p2a: Breann
+|
+|-heal|p1a: Florges|298\/360 tox|[from] item: Leftovers
+|-damage|p1a: Florges|254\/360 tox|[from] psn
+|turn|46
+|
+|switch|p2a: Vicky|Victini, shiny|203\/403
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p1a: Florges|276\/360 tox|[from] item: Leftovers
+|-damage|p1a: Florges|210\/360 tox|[from] psn
+|turn|47
+|
+|move|p2a: Vicky|U-turn|p1a: Florges
+|-resisted|p1a: Florges
+|-damage|p1a: Florges|157\/360 tox
+|
+|switch|p2a: Breann|Roserade, F, shiny|198\/261
+|move|p1a: Florges|Toxic|p2a: Breann
+|-fail|p2a: Breann
+|
+|-heal|p1a: Florges|337\/360 tox|[from] move: Wish|[wisher] Florges
+|-heal|p1a: Florges|359\/360 tox|[from] item: Leftovers
+|-damage|p1a: Florges|271\/360 tox|[from] psn
+|turn|48
+|
+|switch|p1a: Hydreigon|Hydreigon, F|265\/325 tox
+|move|p2a: Breann|Hidden Power|p1a: Hydreigon
+|-resisted|p1a: Hydreigon
+|-damage|p1a: Hydreigon|224\/325 tox
+|
+|-damage|p1a: Hydreigon|204\/325 tox|[from] psn
+|turn|49
+|
+|switch|p2a: Jenna|Florges, F, shiny|285\/360 par
+|switch|p1a: Metagross|Metagross|302\/302
+|
+|-heal|p2a: Jenna|307\/360 par|[from] item: Leftovers
+|turn|50
+|
+|switch|p2a: Mitch|Gligar, M, shiny|216\/334
+|move|p1a: Metagross|Meteor Mash|p2a: Mitch
+|-damage|p2a: Mitch|132\/334
+|
+|turn|51
+|
+|move|p2a: Mitch|Roost|p2a: Mitch
+|-heal|p2a: Mitch|299\/334
+|move|p1a: Metagross|Meteor Mash|p2a: Mitch|[miss]
+|-miss|p1a: Metagross|p2a: Mitch
+|
+|turn|52
+|
+|move|p2a: Mitch|Earthquake|p1a: Metagross
+|-supereffective|p1a: Metagross
+|-damage|p1a: Metagross|176\/302
+|move|p1a: Metagross|Meteor Mash|p2a: Mitch
+|-damage|p2a: Mitch|215\/334
+|
+|turn|53
+|
+|switch|p1a: Hydreigon|Hydreigon, F|204\/325 tox
+|move|p2a: Mitch|Earthquake|p1a: Hydreigon
+|-immune|p1a: Hydreigon|[msg]
+|
+|-damage|p1a: Hydreigon|184\/325 tox|[from] psn
+|turn|54
+|
+|switch|p1a: Metagross|Metagross|176\/302
+|switch|p2a: Vicky|Victini, shiny|203\/403
+|
+|turn|55
+|
+|move|p2a: Vicky|V-create|p1a: Metagross
+|-supereffective|p1a: Metagross
+|-damage|p1a: Metagross|0 fnt
+|-unboost|p2a: Vicky|def|1
+|-unboost|p2a: Vicky|spd|1
+|-unboost|p2a: Vicky|spe|1
+|faint|p1a: Metagross
+|
+|
+|switch|p1a: Hydreigon|Hydreigon, F|184\/325 tox
+|turn|56
+|
+|switch|p2a: Jenna|Florges, F, shiny|307\/360 par
+|move|p1a: Hydreigon|Dark Pulse|p2a: Jenna
+|-resisted|p2a: Jenna
+|-damage|p2a: Jenna|253\/360 par
+|
+|-heal|p2a: Jenna|275\/360 par|[from] item: Leftovers
+|-damage|p1a: Hydreigon|164\/325 tox|[from] psn
+|turn|57
+|
+|move|p1a: Hydreigon|Dark Pulse|p2a: Jenna
+|-resisted|p2a: Jenna
+|-damage|p2a: Jenna|217\/360 par
+|cant|p2a: Jenna|flinch
+|
+|-heal|p2a: Jenna|239\/360 par|[from] item: Leftovers
+|-damage|p1a: Hydreigon|124\/325 tox|[from] psn
+|turn|58
+|
+|move|p1a: Hydreigon|Dark Pulse|p2a: Jenna
+|-crit|p2a: Jenna
+|-resisted|p2a: Jenna
+|-damage|p2a: Jenna|155\/360 par
+|move|p2a: Jenna|Aromatherapy|p2a: Jenna
+|-cureteam|p2a: Jenna|[from] move: Aromatherapy
+|
+|-heal|p2a: Jenna|177\/360|[from] item: Leftovers
+|-damage|p1a: Hydreigon|64\/325 tox|[from] psn
+|turn|59
+|
+|switch|p1a: Florges|Florges, F|271\/360 tox
+|move|p2a: Jenna|Wish|p2a: Jenna
+|
+|-heal|p1a: Florges|293\/360 tox|[from] item: Leftovers
+|-heal|p2a: Jenna|199\/360|[from] item: Leftovers
+|-damage|p1a: Florges|271\/360 tox|[from] psn
+|turn|60
+|
+|switch|p2a: Breann|Roserade, F, shiny|198\/261
+|move|p1a: Florges|Moonblast|p2a: Breann
+|-resisted|p2a: Breann
+|-damage|p2a: Breann|141\/261
+|
+|-heal|p2a: Breann|261\/261|[from] move: Wish|[wisher] Jenna
+|-heal|p1a: Florges|293\/360 tox|[from] item: Leftovers
+|-damage|p1a: Florges|249\/360 tox|[from] psn
+|turn|61
+|c|âLord Golden|gg 
+|c|ârocksword|gg
+|-message|Lord Golden forfeited.
+|
+|win|rocksword
+|raw|Ladder updating...
+|leave|Lord Golden
+|player|p1
+|raw|Lord Golden's rating: 1407 &rarr; <strong>1384<\/strong><br \/>(-23 for losing)
+|raw|rocksword's rating: 1353 &rarr; <strong>1376<\/strong><br \/>(+23 for winning)

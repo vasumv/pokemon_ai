@@ -1,0 +1,95 @@
+|join|Meowiekins
+|join|Frizzle my nizzle
+|player|p1|Meowiekins|160
+|player|p2|Frizzle my nizzle|286
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Crobat, F
+|poke|p1|Raikou
+|poke|p1|Swampert, M
+|poke|p1|Celebi
+|poke|p1|Jirachi
+|poke|p1|Machamp, F
+|poke|p2|Seismitoad, F
+|poke|p2|Cresselia, F
+|poke|p2|Blissey, F
+|poke|p2|Steelix, M
+|poke|p2|Sigilyph, F
+|poke|p2|Vullaby, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Machamp|Machamp, F|322\/322
+|switch|p2a: Seismitoad|Seismitoad, F|405\/405
+|turn|1
+|
+|move|p1a: Machamp|Close Combat|p2a: Seismitoad
+|-damage|p2a: Seismitoad|86\/405
+|-unboost|p1a: Machamp|def|1
+|-unboost|p1a: Machamp|spd|1
+|move|p2a: Seismitoad|Knock Off|p1a: Machamp
+|-resisted|p1a: Machamp
+|-damage|p1a: Machamp|253\/322
+|-enditem|p1a: Machamp|Choice Band|[from] move: Knock Off|[of] p2a: Seismitoad
+|
+|-heal|p2a: Seismitoad|111\/405|[from] item: Leftovers
+|turn|2
+|
+|move|p1a: Machamp|Knock Off|p2a: Seismitoad
+|-damage|p2a: Seismitoad|1\/405
+|-enditem|p2a: Seismitoad|Leftovers|[from] move: Knock Off|[of] p1a: Machamp
+|move|p2a: Seismitoad|Scald|p1a: Machamp
+|-damage|p1a: Machamp|117\/322
+|-status|p1a: Machamp|brn
+|
+|-damage|p1a: Machamp|77\/322 brn|[from] brn
+|turn|3
+|
+|move|p1a: Machamp|Knock Off|p2a: Seismitoad
+|-damage|p2a: Seismitoad|0 fnt
+|faint|p2a: Seismitoad
+|
+|-damage|p1a: Machamp|37\/322 brn|[from] brn
+|
+|switch|p2a: Sigilyph|Sigilyph, F|286\/286
+|turn|4
+|
+|switch|p1a: Swampert|Swampert, M|404\/404
+|move|p2a: Sigilyph|Psyshock|p1a: Swampert
+|-damage|p1a: Swampert|307\/404
+|
+|-heal|p1a: Swampert|332\/404|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Vullaby|Vullaby, F|343\/343
+|switch|p1a: Jirachi|Jirachi|341\/341
+|
+|turn|6
+|
+|move|p1a: Jirachi|U-turn|p2a: Vullaby
+|-damage|p2a: Vullaby|298\/343
+|
+|switch|p1a: Raikou|Raikou|322\/322
+|-ability|p1a: Raikou|Pressure
+|move|p2a: Vullaby|Foul Play|p1a: Raikou
+|-damage|p1a: Raikou|217\/322
+|
+|-heal|p1a: Raikou|237\/322|[from] item: Leftovers
+|turn|7
+|-message|Meowiekins forfeited.
+|
+|win|Frizzle my nizzle
+|raw|Ladder updating...
+|leave|Meowiekins

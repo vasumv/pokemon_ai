@@ -1,0 +1,276 @@
+|join|JCOM
+|join|livEnwolC
+|player|p1|JCOM|163
+|player|p2|livEnwolC|59
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Ditto
+|poke|p1|Starmie
+|poke|p1|Primeape, M
+|poke|p1|Alakazam, M
+|poke|p1|Dragonite, M
+|poke|p1|Snorlax, M, shiny
+|poke|p2|Jumpluff, M
+|poke|p2|Greninja, F, shiny
+|poke|p2|Excadrill, F
+|poke|p2|Heatran, F
+|poke|p2|Lucario, F, shiny
+|poke|p2|Togekiss, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Primeape|Primeape, M|272\/272
+|switch|p2a: Jiraiya|Greninja, F, shiny|285\/285
+|turn|1
+|callback|decision
+|
+|switch|p2a: Token|Togekiss, M|374\/374
+|move|p1a: Primeape|Close Combat|p2a: Token
+|-resisted|p2a: Token
+|-damage|p2a: Token|318\/374
+|-unboost|p1a: Primeape|def|1
+|-unboost|p1a: Primeape|spd|1
+|
+|-heal|p2a: Token|341\/374|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p1a: Snorlax|Snorlax, M, shiny|524\/524
+|move|p2a: Token|Dazzling Gleam|p1a: Snorlax
+|-damage|p1a: Snorlax|380\/524
+|
+|-heal|p2a: Token|364\/374|[from] item: Leftovers
+|-heal|p1a: Snorlax|412\/524|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p2a: Luke Nuke|Lucario, F, shiny|281\/281
+|move|p1a: Snorlax|Double-Edge|p2a: Luke Nuke
+|-resisted|p2a: Luke Nuke
+|-damage|p2a: Luke Nuke|170\/281
+|-damage|p1a: Snorlax|375\/524|[from] recoil|[of] p2a: Luke Nuke
+|
+|-heal|p1a: Snorlax|407\/524|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|-formechange|p2a: Luke Nuke|Lucario-Mega
+|message|Lucario has Mega Evolved into Mega Lucario!
+|move|p2a: Luke Nuke|Close Combat|p1a: Snorlax
+|-supereffective|p1a: Snorlax
+|-damage|p1a: Snorlax|0 fnt
+|-unboost|p2a: Luke Nuke|def|1
+|-unboost|p2a: Luke Nuke|spd|1
+|faint|p1a: Snorlax
+|
+|callback|decision
+|
+|switch|p1a: Primeape|Primeape, M|272\/272
+|turn|5
+|callback|decision
+|
+|switch|p2a: Token|Togekiss, M|364\/374
+|move|p1a: Primeape|Thunder Punch|p2a: Token
+|-crit|p2a: Token
+|-supereffective|p2a: Token
+|-damage|p2a: Token|80\/374
+|
+|-heal|p2a: Token|103\/374|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, M|386\/386
+|switch|p2a: Diggersby Though|Excadrill, F|362\/362
+|-ability|p2a: Diggersby Though|Mold Breaker
+|
+|turn|7
+|callback|decision
+|
+|move|p2a: Diggersby Though|Rock Slide|p1a: Dragonite
+|-miss|p2a: Diggersby Though|p1a: Dragonite
+|move|p1a: Dragonite|Dragon Dance|p1a: Dragonite
+|-boost|p1a: Dragonite|atk|1
+|-boost|p1a: Dragonite|spe|1
+|
+|turn|8
+|callback|decision
+|
+|move|p2a: Diggersby Though|Rock Slide|p1a: Dragonite
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|188\/386
+|-enditem|p1a: Dragonite|Weakness Policy
+|-boost|p1a: Dragonite|atk|2|[from] item: Weakness Policy
+|-boost|p1a: Dragonite|spa|2|[from] item: Weakness Policy
+|move|p1a: Dragonite|Fire Punch|p2a: Diggersby Though
+|-supereffective|p2a: Diggersby Though
+|-damage|p2a: Diggersby Though|0 fnt
+|faint|p2a: Diggersby Though
+|
+|callback|decision
+|
+|switch|p2a: Lebron Flames|Heatran, F|386\/386
+|turn|9
+|callback|decision
+|
+|switch|p2a: Token|Togekiss, M|103\/374
+|move|p1a: Dragonite|Extreme Speed|p2a: Token
+|-damage|p2a: Token|0 fnt
+|faint|p2a: Token
+|
+|callback|decision
+|
+|switch|p2a: Lebron Flames|Heatran, F|386\/386
+|turn|10
+|callback|decision
+|
+|move|p1a: Dragonite|Dragon Claw|p2a: Lebron Flames
+|-resisted|p2a: Lebron Flames
+|-damage|p2a: Lebron Flames|216\/386
+|move|p2a: Lebron Flames|Ancient Power|p1a: Dragonite
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|30\/386
+|
+|-heal|p2a: Lebron Flames|240\/386|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p1a: Dragonite|Dragon Claw|p2a: Lebron Flames
+|-resisted|p2a: Lebron Flames
+|-damage|p2a: Lebron Flames|89\/386
+|move|p2a: Lebron Flames|Ancient Power|p1a: Dragonite
+|-supereffective|p1a: Dragonite
+|-damage|p1a: Dragonite|0 fnt
+|faint|p1a: Dragonite
+|
+|-heal|p2a: Lebron Flames|113\/386|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Primeape|Primeape, M|272\/272
+|turn|12
+|callback|decision
+|
+|switch|p2a: Tripod|Jumpluff, M|354\/354
+|move|p1a: Primeape|Close Combat|p2a: Tripod
+|-crit|p2a: Tripod
+|-resisted|p2a: Tripod
+|-damage|p2a: Tripod|141\/354
+|-unboost|p1a: Primeape|def|1
+|-unboost|p1a: Primeape|spd|1
+|
+|-heal|p2a: Tripod|163\/354|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: Primeape|Close Combat|p2a: Tripod
+|-resisted|p2a: Tripod
+|-damage|p2a: Tripod|25\/354
+|-unboost|p1a: Primeape|def|1
+|-unboost|p1a: Primeape|spd|1
+|move|p2a: Tripod|Leech Seed|p1a: Primeape
+|-start|p1a: Primeape|move: Leech Seed
+|
+|-heal|p2a: Tripod|47\/354|[from] item: Leftovers
+|-damage|p1a: Primeape|238\/272|[from] Leech Seed|[of] p2a: Tripod
+|-heal|p2a: Tripod|81\/354|[silent]
+|turn|14
+|callback|decision
+|
+|move|p1a: Primeape|Close Combat|p2a: Tripod
+|-resisted|p2a: Tripod
+|-damage|p2a: Tripod|0 fnt
+|-unboost|p1a: Primeape|def|1
+|-unboost|p1a: Primeape|spd|1
+|faint|p2a: Tripod
+|
+|callback|decision
+|
+|switch|p2a: Luke Nuke|Lucario, F, shiny|170\/281
+|-formechange|p2a: Luke Nuke|Lucario-Mega
+|turn|15
+|callback|decision
+|
+|move|p2a: Luke Nuke|Bullet Punch|p1a: Primeape
+|-damage|p1a: Primeape|0 fnt
+|faint|p1a: Primeape
+|
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie|262\/262
+|turn|16
+|callback|decision
+|
+|switch|p2a: Lebron Flames|Heatran, F|113\/386
+|move|p1a: Starmie|Hidden Power|p2a: Lebron Flames
+|-start|p2a: Lebron Flames|ability: Flash Fire
+|
+|-heal|p2a: Lebron Flames|137\/386|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Starmie|Surf|p2a: Lebron Flames
+|-supereffective|p2a: Lebron Flames
+|-damage|p2a: Lebron Flames|0 fnt
+|faint|p2a: Lebron Flames
+|
+|callback|decision
+|
+|switch|p2a: Jiraiya|Greninja, F, shiny|285\/285
+|turn|18
+|callback|decision
+|
+|-start|p2a: Jiraiya|typechange|Dark|[from] Protean
+|move|p2a: Jiraiya|Dark Pulse|p1a: Starmie
+|-supereffective|p1a: Starmie
+|-enditem|p1a: Starmie|Focus Sash
+|-damage|p1a: Starmie|1\/262
+|move|p1a: Starmie|Thunderbolt|p2a: Jiraiya
+|-damage|p2a: Jiraiya|166\/285
+|
+|turn|19
+|callback|decision
+|
+|move|p2a: Jiraiya|Dark Pulse|p1a: Starmie
+|-supereffective|p1a: Starmie
+|-damage|p1a: Starmie|0 fnt
+|faint|p1a: Starmie
+|
+|callback|decision
+|
+|switch|p1a: Ditto|Ditto|300\/300
+|-transform|p1a: Ditto|p2a: Jiraiya
+|turn|20
+|callback|decision
+|
+|-start|p1a: Ditto|typechange|Water|[from] Protean
+|move|p1a: Ditto|Surf|p2a: Jiraiya
+|-damage|p2a: Jiraiya|0 fnt
+|faint|p2a: Jiraiya
+|
+|callback|decision
+|
+|switch|p2a: Luke Nuke|Lucario, F, shiny|170\/281
+|-formechange|p2a: Luke Nuke|Lucario-Mega
+|turn|21
+|callback|decision
+|
+|move|p1a: Ditto|Surf|p2a: Luke Nuke
+|-damage|p2a: Luke Nuke|0 fnt
+|faint|p2a: Luke Nuke
+|
+|win|JCOM
+|raw|Ladder updating...
+|leave|livEnwolC
+|player|p2
+|raw|Ladder (probably) updated, but score could not be retrieved (timeout).
+|raw|Ladder (probably) updated, but score could not be retrieved (Error: socket hang up).

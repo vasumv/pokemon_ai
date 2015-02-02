@@ -1,0 +1,309 @@
+|join|Arqan
+|join|stormturtle
+|player|p1|Arqan|238
+|player|p2|stormturtle|25
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Umbreon, M
+|poke|p1|Blastoise, F
+|poke|p1|Infernape, F
+|poke|p1|Escavalier, M
+|poke|p1|Raikou
+|poke|p1|Celebi
+|poke|p2|Swampert, F
+|poke|p2|Roserade, F
+|poke|p2|Diancie
+|poke|p2|Entei, shiny
+|poke|p2|Crobat, M
+|poke|p2|Scrafty, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Celebi|Celebi|341\/341
+|switch|p2a: Crobat|Crobat, M|312\/312
+|turn|1
+|
+|switch|p1a: Umbreon|Umbreon, M|394\/394
+|move|p2a: Crobat|U-turn|p1a: Umbreon
+|-supereffective|p1a: Umbreon
+|-damage|p1a: Umbreon|264\/394
+|
+|switch|p2a: Roserade|Roserade, F|324\/324
+|
+|-heal|p1a: Umbreon|288\/394|[from] item: Leftovers
+|turn|2
+|
+|switch|p1a: Infernape|Infernape, F|293\/293
+|move|p2a: Roserade|Toxic|p1a: Infernape
+|-status|p1a: Infernape|tox
+|
+|-damage|p1a: Infernape|275\/293 tox|[from] psn
+|turn|3
+|
+|switch|p2a: Diancie|Diancie|304\/304
+|move|p1a: Infernape|Grass Knot|p2a: Diancie
+|-supereffective|p2a: Diancie
+|-damage|p2a: Diancie|273\/304
+|-damage|p1a: Infernape|246\/293 tox|[from] item: Life Orb
+|
+|-heal|p2a: Diancie|292\/304|[from] item: Leftovers
+|-damage|p1a: Infernape|210\/293 tox|[from] psn
+|turn|4
+|
+|switch|p1a: Blastoise|Blastoise, F|358\/358
+|move|p2a: Diancie|Stealth Rock|p1a: Blastoise
+|-sidestart|p1: Arqan|move: Stealth Rock
+|
+|-heal|p2a: Diancie|304\/304|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Roserade|Roserade, F|324\/324
+|detailschange|p1a: Blastoise|Blastoise-Mega, F
+|-mega|p1a: Blastoise|Blastoise|Blastoisinite
+|move|p1a: Blastoise|Water Pulse|p2a: Roserade
+|-resisted|p2a: Roserade
+|-damage|p2a: Roserade|265\/324
+|-start|p2a: Roserade|confusion
+|
+|-heal|p2a: Roserade|285\/324|[from] item: Black Sludge
+|turn|6
+|
+|switch|p1a: Umbreon|Umbreon, M|288\/394
+|-damage|p1a: Umbreon|239\/394|[from] Stealth Rock
+|-activate|p2a: Roserade|confusion
+|move|p2a: Roserade|Giga Drain|p1a: Umbreon
+|-damage|p1a: Umbreon|173\/394
+|-heal|p2a: Roserade|318\/324|[from] drain|[of] p1a: Umbreon
+|
+|-heal|p2a: Roserade|324\/324|[from] item: Black Sludge
+|-heal|p1a: Umbreon|197\/394|[from] item: Leftovers
+|turn|7
+|
+|-activate|p2a: Roserade|confusion
+|move|p2a: Roserade|Toxic|p1a: Umbreon
+|-status|p1a: Umbreon|tox
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p1a: Umbreon|221\/394 tox|[from] item: Leftovers
+|-damage|p1a: Umbreon|197\/394 tox|[from] psn
+|turn|8
+|
+|-activate|p2a: Roserade|confusion
+|move|p2a: Roserade|Spikes|p1a: Umbreon
+|-sidestart|p1: Arqan|Spikes
+|move|p1a: Umbreon|Heal Bell|p1a: Umbreon
+|-cureteam|p1a: Umbreon|[from] move: HealBell
+|
+|-heal|p1a: Umbreon|394\/394|[from] move: Wish|[wisher] Umbreon
+|turn|9
+|
+|switch|p1a: Blastoise|Blastoise-Mega, F|358\/358
+|-damage|p1a: Blastoise|314\/358|[from] Spikes
+|-damage|p1a: Blastoise|270\/358|[from] Stealth Rock
+|-activate|p2a: Roserade|confusion
+|-damage|p2a: Roserade|299\/324|[from] confusion
+|
+|-heal|p2a: Roserade|319\/324|[from] item: Black Sludge
+|turn|10
+|
+|-end|p2a: Roserade|confusion
+|move|p2a: Roserade|Toxic|p1a: Blastoise
+|-status|p1a: Blastoise|tox
+|move|p1a: Blastoise|Rapid Spin|p2a: Roserade
+|-damage|p2a: Roserade|299\/324
+|-sideend|p1: Arqan|Spikes|[from] move: Rapid Spin|[of] p1a: Blastoise
+|-sideend|p1: Arqan|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Blastoise
+|
+|-heal|p2a: Roserade|319\/324|[from] item: Black Sludge
+|-damage|p1a: Blastoise|248\/358 tox|[from] psn
+|turn|11
+|
+|switch|p1a: Umbreon|Umbreon, M|394\/394
+|move|p2a: Roserade|Giga Drain|p1a: Umbreon
+|-damage|p1a: Umbreon|330\/394
+|-heal|p2a: Roserade|324\/324|[from] drain|[of] p1a: Umbreon
+|
+|-heal|p1a: Umbreon|354\/394|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Roserade|Toxic|p1a: Umbreon
+|-status|p1a: Umbreon|tox
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p1a: Umbreon|378\/394 tox|[from] item: Leftovers
+|-damage|p1a: Umbreon|354\/394 tox|[from] psn
+|turn|13
+|
+|switch|p1a: Infernape|Infernape, F|210\/293
+|move|p2a: Roserade|Spikes|p1a: Infernape
+|-sidestart|p1: Arqan|Spikes
+|
+|-heal|p1a: Infernape|293\/293|[from] move: Wish|[wisher] Umbreon
+|turn|14
+|
+|switch|p2a: Crobat|Crobat, M|312\/312
+|move|p1a: Infernape|Overheat|p2a: Crobat
+|-crit|p2a: Crobat
+|-damage|p2a: Crobat|0 fnt
+|-unboost|p1a: Infernape|spa|2
+|-damage|p1a: Infernape|264\/293|[from] item: Life Orb
+|faint|p2a: Crobat
+|
+|
+|switch|p2a: Swampert|Swampert, F|372\/372
+|turn|15
+|
+|switch|p2a: Scrafty|Scrafty, F|271\/271
+|move|p1a: Infernape|Grass Knot|p2a: Scrafty
+|-damage|p2a: Scrafty|240\/271
+|-damage|p1a: Infernape|235\/293|[from] item: Life Orb
+|
+|-heal|p2a: Scrafty|256\/271|[from] item: Leftovers
+|turn|16
+|
+|switch|p1a: Escavalier|Escavalier, M|344\/344
+|-damage|p1a: Escavalier|301\/344|[from] Spikes
+|move|p2a: Scrafty|Dragon Dance|p2a: Scrafty
+|-boost|p2a: Scrafty|atk|1
+|-boost|p2a: Scrafty|spe|1
+|
+|-heal|p2a: Scrafty|271\/271|[from] item: Leftovers
+|turn|17
+|
+|move|p2a: Scrafty|Knock Off|p1a: Escavalier
+|-damage|p1a: Escavalier|94\/344
+|-enditem|p1a: Escavalier|Assault Vest|[from] move: Knock Off|[of] p2a: Scrafty
+|move|p1a: Escavalier|Megahorn|p2a: Scrafty
+|-damage|p2a: Scrafty|0 fnt
+|faint|p2a: Scrafty
+|
+|
+|switch|p2a: Entei|Entei, shiny|372\/372
+|-ability|p2a: Entei|Pressure
+|turn|18
+|
+|switch|p1a: Umbreon|Umbreon, M|354\/394 tox
+|-damage|p1a: Umbreon|305\/394 tox|[from] Spikes
+|move|p2a: Entei|Flare Blitz|p1a: Umbreon
+|-damage|p1a: Umbreon|110\/394 tox
+|-damage|p2a: Entei|308\/372|[from] recoil|[of] p1a: Umbreon
+|
+|-heal|p1a: Umbreon|134\/394 tox|[from] item: Leftovers
+|-damage|p1a: Umbreon|110\/394 tox|[from] psn
+|turn|19
+|
+|switch|p1a: Blastoise|Blastoise-Mega, F|248\/358 tox
+|-damage|p1a: Blastoise|204\/358 tox|[from] Spikes
+|move|p2a: Entei|Sacred Fire|p1a: Blastoise
+|-resisted|p1a: Blastoise
+|-damage|p1a: Blastoise|133\/358 tox
+|
+|-damage|p1a: Blastoise|111\/358 tox|[from] psn
+|turn|20
+|
+|switch|p2a: Roserade|Roserade, F|324\/324
+|move|p1a: Blastoise|Water Pulse|p2a: Roserade
+|-resisted|p2a: Roserade
+|-damage|p2a: Roserade|264\/324
+|
+|-heal|p2a: Roserade|284\/324|[from] item: Black Sludge
+|-damage|p1a: Blastoise|67\/358 tox|[from] psn
+|turn|21
+|
+|switch|p1a: Umbreon|Umbreon, M|110\/394 tox
+|-damage|p1a: Umbreon|61\/394 tox|[from] Spikes
+|move|p2a: Roserade|Giga Drain|p1a: Umbreon
+|-damage|p1a: Umbreon|0 fnt
+|-heal|p2a: Roserade|315\/324|[from] drain|[of] p1a: Umbreon
+|faint|p1a: Umbreon
+|
+|-heal|p2a: Roserade|324\/324|[from] item: Black Sludge
+|
+|switch|p1a: Infernape|Infernape, F|235\/293
+|-damage|p1a: Infernape|199\/293|[from] Spikes
+|turn|22
+|
+|switch|p2a: Diancie|Diancie|304\/304
+|move|p1a: Infernape|Overheat|p2a: Diancie|[miss]
+|-miss|p1a: Infernape|p2a: Diancie
+|
+|turn|23
+|
+|move|p1a: Infernape|Close Combat|p2a: Diancie
+|-damage|p2a: Diancie|171\/304
+|-unboost|p1a: Infernape|def|1
+|-unboost|p1a: Infernape|spd|1
+|-damage|p1a: Infernape|170\/293|[from] item: Life Orb
+|move|p2a: Diancie|Stealth Rock|p1a: Infernape
+|-sidestart|p1: Arqan|move: Stealth Rock
+|
+|-heal|p2a: Diancie|190\/304|[from] item: Leftovers
+|turn|24
+|
+|move|p1a: Infernape|Close Combat|p2a: Diancie
+|-damage|p2a: Diancie|69\/304
+|-unboost|p1a: Infernape|def|1
+|-unboost|p1a: Infernape|spd|1
+|-damage|p1a: Infernape|141\/293|[from] item: Life Orb
+|move|p2a: Diancie|Earth Power|p1a: Infernape
+|-supereffective|p1a: Infernape
+|-damage|p1a: Infernape|0 fnt
+|faint|p1a: Infernape
+|
+|-heal|p2a: Diancie|88\/304|[from] item: Leftovers
+|
+|switch|p1a: Raikou|Raikou|321\/321
+|-damage|p1a: Raikou|281\/321|[from] Stealth Rock
+|-damage|p1a: Raikou|241\/321|[from] Spikes
+|-ability|p1a: Raikou|Pressure
+|turn|25
+|
+|move|p1a: Raikou|Extrasensory|p2a: Diancie
+|-damage|p2a: Diancie|30\/304
+|move|p2a: Diancie|Earth Power|p1a: Raikou
+|-supereffective|p1a: Raikou
+|-damage|p1a: Raikou|145\/321
+|
+|-heal|p2a: Diancie|49\/304|[from] item: Leftovers
+|turn|26
+|
+|move|p1a: Raikou|Extrasensory|p2a: Diancie
+|-damage|p2a: Diancie|0 fnt
+|faint|p2a: Diancie
+|
+|
+|switch|p2a: Entei|Entei, shiny|308\/372
+|-ability|p2a: Entei|Pressure
+|turn|27
+|
+|move|p1a: Raikou|Thunderbolt|p2a: Entei
+|-damage|p2a: Entei|172\/372
+|move|p2a: Entei|Sacred Fire|p1a: Raikou
+|-damage|p1a: Raikou|0 fnt
+|faint|p1a: Raikou
+|
+|
+|switch|p1a: Blastoise|Blastoise-Mega, F|67\/358 tox
+|-damage|p1a: Blastoise|23\/358 tox|[from] Spikes
+|-damage|p1a: Blastoise|0 fnt|[from] Stealth Rock
+|faint|p1a: Blastoise
+|-message|Arqan forfeited.
+|
+|win|stormturtle
+|raw|Ladder updating...
+|leave|Arqan
+|player|p1
+|raw|Arqan's rating: 1271 &rarr; <strong>1249<\/strong><br \/>(-22 for losing)
+|raw|stormturtle's rating: 1311 &rarr; <strong>1329<\/strong><br \/>(+18 for winning)

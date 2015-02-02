@@ -1,0 +1,175 @@
+|join|Xiba
+|join|BASED AMBIPOM
+|player|p1|Xiba|4
+|player|p2|BASED AMBIPOM|66
+|gametype|singles
+|tier|UU (suspect test)
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Rotom-Heat
+|poke|p1|Crobat, M
+|poke|p1|Blastoise, F
+|poke|p1|Golurk
+|poke|p1|Roserade, F
+|poke|p1|Scrafty, M
+|poke|p2|Ambipom, F
+|poke|p2|Cofagrigus, M
+|poke|p2|Mienshao, F
+|poke|p2|Swampert, M
+|poke|p2|Smeargle, M
+|poke|p2|Sharpedo, M
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Crobat|Crobat, M|355\/355
+|switch|p2a: Smeargle|Smeargle, M|314\/314
+|turn|1
+|callback|decision
+|
+|move|p2a: Smeargle|Magic Coat|p2a: Smeargle
+|-singleturn|p2a: Smeargle|move: Magic Coat
+|move|p1a: Crobat|Taunt|p2a: Smeargle
+|move|p2a: Smeargle|Taunt|p1a: Crobat|[from]Magic Coat
+|-start|p1a: Crobat|move: Taunt
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Crobat|Brave Bird|p2a: Smeargle
+|-enditem|p2a: Smeargle|Focus Sash
+|-damage|p2a: Smeargle|1\/314
+|-damage|p1a: Crobat|252\/355|[from] recoil|[of] p2a: Smeargle
+|move|p2a: Smeargle|Spore|p1a: Crobat
+|-status|p1a: Crobat|slp
+|
+|-heal|p1a: Crobat|274\/355 slp|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|241\/241
+|move|p2a: Smeargle|Stealth Rock|p1a: Rotom-Heat
+|-sidestart|p1: Xiba|move: Stealth Rock
+|
+|turn|4
+|callback|decision
+|
+|switch|p2a: Swampert|Swampert, M|401\/401
+|move|p1a: Rotom-Heat|Volt Switch|p2a: Swampert
+|-immune|p2a: Swampert|[msg]
+|
+|turn|5
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, F|362\/362
+|-damage|p1a: Blastoise|317\/362|[from] Stealth Rock
+|switch|p2a: Cofagrigus|Cofagrigus, M|320\/320
+|
+|-heal|p1a: Blastoise|339\/362|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Cofagrigus|Nasty Plot|p2a: Cofagrigus
+|-boost|p2a: Cofagrigus|spa|2
+|move|p1a: Blastoise|Roar|p2a: Cofagrigus
+|drag|p2a: Swampert|Swampert, M|401\/401
+|
+|-heal|p1a: Blastoise|361\/362|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p2a: Swampert|Protect|p2a: Swampert
+|-singleturn|p2a: Swampert|Protect
+|move|p1a: Blastoise|Rapid Spin|p2a: Swampert
+|-activate|p2a: Swampert|Protect
+|
+|-heal|p1a: Blastoise|362\/362|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p1a: Blastoise|Foresight|p2a: Swampert
+|-start|p2a: Swampert|Foresight
+|move|p2a: Swampert|Earthquake|p1a: Blastoise
+|-crit|p1a: Blastoise
+|-damage|p1a: Blastoise|152\/362
+|
+|-heal|p1a: Blastoise|174\/362|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, F|324\/324
+|-damage|p1a: Roserade|284\/324|[from] Stealth Rock
+|switch|p2a: Cofagrigus|Cofagrigus, M|320\/320
+|
+|-heal|p1a: Roserade|304\/324|[from] item: Black Sludge
+|turn|10
+|callback|decision
+|
+|switch|p2a: Smeargle|Smeargle, M|1\/314
+|move|p1a: Roserade|Spikes|p2a: Smeargle
+|-sidestart|p2: BASED AMBIPOM|Spikes
+|
+|-heal|p1a: Roserade|324\/324|[from] item: Black Sludge
+|turn|11
+|callback|decision
+|
+|move|p2a: Smeargle|Spikes|p1a: Roserade
+|-sidestart|p1: Xiba|Spikes
+|move|p1a: Roserade|Giga Drain|p2a: Smeargle
+|-damage|p2a: Smeargle|0 fnt
+|faint|p2a: Smeargle
+|
+|callback|decision
+|
+|switch|p2a: Ambipom|Ambipom, F|291\/291
+|-damage|p2a: Ambipom|255\/291|[from] Spikes
+|turn|12
+|callback|decision
+|
+|switch|p1a: Golurk|Golurk|382\/382
+|-damage|p1a: Golurk|335\/382|[from] Spikes
+|-damage|p1a: Golurk|312\/382|[from] Stealth Rock
+|move|p2a: Ambipom|Beat Up|p1a: Golurk
+|-supereffective|p1a: Golurk
+|-damage|p1a: Golurk|239\/382
+|-supereffective|p1a: Golurk
+|-damage|p1a: Golurk|169\/382
+|-supereffective|p1a: Golurk
+|-damage|p1a: Golurk|94\/382
+|-supereffective|p1a: Golurk
+|-damage|p1a: Golurk|42\/382
+|-supereffective|p1a: Golurk
+|-damage|p1a: Golurk|0 fnt
+|-hitcount|p1a: Golurk|5
+|-damage|p2a: Ambipom|226\/291|[from] item: Life Orb
+|faint|p1a: Golurk
+|
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, F|174\/362
+|-damage|p1a: Blastoise|129\/362|[from] Spikes
+|-damage|p1a: Blastoise|84\/362|[from] Stealth Rock
+|turn|13
+|callback|decision
+|
+|move|p2a: Ambipom|Return|p1a: Blastoise
+|-damage|p1a: Blastoise|0 fnt
+|-damage|p2a: Ambipom|197\/291|[from] item: Life Orb
+|faint|p1a: Blastoise
+|
+|callback|decision
+|-message|Xiba forfeited.
+|
+|win|BASED AMBIPOM
+|raw|Ladder updating...
+|raw|Xiba's rating: 1647 &rarr; <strong>1644<\/strong><br \/>(-3 for losing)
+|raw|BASED AMBIPOM's rating: 1806 &rarr; <strong>1819<\/strong><br \/>(+13 for winning)
+|leave|Xiba
+|player|p1

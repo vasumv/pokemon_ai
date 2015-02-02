@@ -1,0 +1,306 @@
+|join|DrummerVim
+|join|swagborghini
+|player|p1|DrummerVim|238
+|player|p2|swagborghini|102
+|gametype|singles
+|gen|6
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Haxorus, F, shiny
+|poke|p1|Florges, F
+|poke|p1|Aggron, M
+|poke|p1|Chandelure, F
+|poke|p1|Krookodile, M
+|poke|p1|Tangrowth, M
+|poke|p2|Aggron, F
+|poke|p2|Deoxys-Defense
+|poke|p2|Chansey, F
+|poke|p2|Florges, F
+|poke|p2|Zapdos
+|poke|p2|Latias, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|chat|swagborghini|hf and go ham
+|
+|start
+|switch|p1a: Krookodile|Krookodile, M|332\/332
+|switch|p2a: Faggron|Aggron, F|344\/344
+|turn|1
+|callback|decision
+|
+|-formechange|p2a: Faggron|Aggron-Mega
+|message|Aggron has Mega Evolved into Mega Aggron!
+|move|p1a: Krookodile|Earthquake|p2a: Faggron
+|-supereffective|p2a: Faggron
+|-damage|p2a: Faggron|230\/344
+|move|p2a: Faggron|Stealth Rock|p1a: Krookodile
+|-sidestart|p1: DrummerVim|move: Stealth Rock
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Krookodile|Earthquake|p2a: Faggron
+|-supereffective|p2a: Faggron
+|-damage|p2a: Faggron|116\/344
+|move|p2a: Faggron|Roar|p1a: Krookodile
+|drag|p1a: Haxorus|Haxorus, F, shiny|356\/356
+|-damage|p1a: Haxorus|312\/356|[from] Stealth Rock
+|-ability|p1a: Haxorus|Mold Breaker
+|
+|-heal|p1a: Haxorus|334\/356|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p2a: Orgies|Florges, F|353\/353
+|move|p1a: Haxorus|Earthquake|p2a: Orgies
+|-damage|p2a: Orgies|218\/353
+|
+|-heal|p1a: Haxorus|356\/356|[from] item: Leftovers
+|-heal|p2a: Orgies|240\/353|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: Aggron|Aggron, M|344\/344
+|-damage|p1a: Aggron|323\/344|[from] Stealth Rock
+|move|p2a: Orgies|Moonblast|p1a: Aggron
+|-resisted|p1a: Aggron
+|-damage|p1a: Aggron|224\/344
+|-unboost|p1a: Aggron|spa|1
+|
+|-heal|p2a: Orgies|262\/353|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p2a: Zapdos|Zapdos|381\/381
+|-ability|p2a: Zapdos|Pressure
+|-formechange|p1a: Aggron|Aggron-Mega
+|message|Aggron has Mega Evolved into Mega Aggron!
+|move|p1a: Aggron|Stealth Rock|p2a: Zapdos
+|-sidestart|p2: swagborghini|move: Stealth Rock
+|
+|turn|6
+|callback|decision
+|
+|move|p2a: Zapdos|Heat Wave|p1a: Aggron
+|-supereffective|p1a: Aggron
+|-damage|p1a: Aggron|28\/344
+|-status|p1a: Aggron|brn
+|move|p1a: Aggron|Stone Edge|p2a: Zapdos|[miss]
+|-miss|p1a: Aggron|p2a: Zapdos
+|
+|-damage|p1a: Aggron|0 fnt|[from] brn
+|faint|p1a: Aggron
+|callback|decision
+|chat|swagborghini|:>
+|chat|DrummerVim|well :O
+|
+|switch|p1a: Chandelure|Chandelure, F|261\/261
+|-damage|p1a: Chandelure|196\/261|[from] Stealth Rock
+|turn|7
+|callback|decision
+|
+|move|p1a: Chandelure|Flamethrower|p2a: Zapdos
+|-damage|p2a: Zapdos|147\/381
+|-status|p2a: Zapdos|brn
+|-damage|p1a: Chandelure|170\/261|[from] item: Life Orb
+|move|p2a: Zapdos|Thunderbolt|p1a: Chandelure
+|-damage|p1a: Chandelure|0 fnt
+|faint|p1a: Chandelure
+|
+|-heal|p2a: Zapdos|170\/381 brn|[from] item: Leftovers
+|-damage|p2a: Zapdos|123\/381 brn|[from] brn
+|callback|decision
+|
+|switch|p1a: Krookodile|Krookodile, M|332\/332
+|-damage|p1a: Krookodile|312\/332|[from] Stealth Rock
+|turn|8
+|callback|decision
+|
+|switch|p2a: Chansay|Chansey, F|641\/641
+|-damage|p2a: Chansay|561\/641|[from] Stealth Rock
+|move|p1a: Krookodile|Crunch|p2a: Chansay
+|-damage|p2a: Chansay|83\/641
+|
+|turn|9
+|callback|decision
+|
+|switch|p1a: Haxorus|Haxorus, F, shiny|356\/356
+|-damage|p1a: Haxorus|312\/356|[from] Stealth Rock
+|-ability|p1a: Haxorus|Mold Breaker
+|switch|p2a: Orgies|Florges, F|262\/353
+|-damage|p2a: Orgies|218\/353|[from] Stealth Rock
+|
+|-heal|p1a: Haxorus|334\/356|[from] item: Leftovers
+|-heal|p2a: Orgies|240\/353|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p1a: Haxorus|Earthquake|p2a: Orgies
+|-damage|p2a: Orgies|108\/353
+|move|p2a: Orgies|Moonblast|p1a: Haxorus
+|-crit|p1a: Haxorus
+|-supereffective|p1a: Haxorus
+|-damage|p1a: Haxorus|0 fnt
+|faint|p1a: Haxorus
+|
+|-heal|p2a: Orgies|130\/353|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Krookodile|Krookodile, M|312\/332
+|-damage|p1a: Krookodile|292\/332|[from] Stealth Rock
+|turn|11
+|callback|decision
+|
+|move|p1a: Krookodile|Earthquake|p2a: Orgies
+|-damage|p2a: Orgies|0 fnt
+|faint|p2a: Orgies
+|-boost|p1a: Krookodile|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|switch|p2a: Deoxys-Definse|Deoxys-Defense|304\/304
+|-damage|p2a: Deoxys-Definse|266\/304|[from] Stealth Rock
+|-ability|p2a: Deoxys-Definse|Pressure
+|turn|12
+|callback|decision
+|
+|move|p1a: Krookodile|Earthquake|p2a: Deoxys-Definse
+|-damage|p2a: Deoxys-Definse|100\/304
+|move|p2a: Deoxys-Definse|Toxic|p1a: Krookodile
+|-status|p1a: Krookodile|tox
+|
+|-heal|p2a: Deoxys-Definse|119\/304|[from] item: Leftovers
+|-damage|p1a: Krookodile|272\/332 tox|[from] psn
+|turn|13
+|callback|decision
+|
+|move|p1a: Krookodile|Earthquake|p2a: Deoxys-Definse
+|-damage|p2a: Deoxys-Definse|0 fnt
+|faint|p2a: Deoxys-Definse
+|-boost|p1a: Krookodile|atk|1|[from] ability: Moxie
+|
+|-damage|p1a: Krookodile|232\/332 tox|[from] psn
+|callback|decision
+|
+|switch|p2a: I eat small childr|Latias, F|364\/364
+|-damage|p2a: I eat small childr|319\/364|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|-damage|p1a: Florges|315\/360|[from] Stealth Rock
+|move|p2a: I eat small childr|Dragon Pulse|p1a: Florges
+|-immune|p1a: Florges|[msg]
+|
+|-heal|p2a: I eat small childr|341\/364|[from] item: Leftovers
+|-heal|p1a: Florges|337\/360|[from] item: Leftovers
+|turn|15
+|callback|decision
+|chat|swagborghini|this team still needs work lol
+|
+|switch|p2a: Faggron|Aggron, F|116\/344
+|-formechange|p2a: Faggron|Aggron-Mega
+|-damage|p2a: Faggron|95\/344|[from] Stealth Rock
+|switch|p1a: Krookodile|Krookodile, M|232\/332 tox
+|-damage|p1a: Krookodile|212\/332 tox|[from] Stealth Rock
+|
+|-damage|p1a: Krookodile|192\/332 tox|[from] psn
+|turn|16
+|callback|decision
+|chat|DrummerVim|so does mine :)
+|chat|DrummerVim|I have always battled in OU never UU
+|
+|switch|p2a: I eat small childr|Latias, F|341\/364
+|-damage|p2a: I eat small childr|296\/364|[from] Stealth Rock
+|move|p1a: Krookodile|Crunch|p2a: I eat small childr
+|-supereffective|p2a: I eat small childr
+|-damage|p2a: I eat small childr|74\/364
+|
+|-heal|p2a: I eat small childr|96\/364|[from] item: Leftovers
+|-damage|p1a: Krookodile|152\/332 tox|[from] psn
+|turn|17
+|callback|decision
+|chat|swagborghini|i used to battle but i just made this team lol
+|
+|move|p1a: Krookodile|Crunch|p2a: I eat small childr
+|-supereffective|p2a: I eat small childr
+|-damage|p2a: I eat small childr|0 fnt
+|faint|p2a: I eat small childr
+|-boost|p1a: Krookodile|atk|1|[from] ability: Moxie
+|
+|-damage|p1a: Krookodile|92\/332 tox|[from] psn
+|callback|decision
+|chat|DrummerVim|im surprised Chansey is UU
+|chat|swagborghini|man wat is that things base speed
+|
+|switch|p2a: Zapdos|Zapdos|123\/381 brn
+|-damage|p2a: Zapdos|28\/381 brn|[from] Stealth Rock
+|-ability|p2a: Zapdos|Pressure
+|turn|18
+|callback|decision
+|
+|move|p1a: Krookodile|Crunch|p2a: Zapdos
+|-damage|p2a: Zapdos|0 fnt
+|faint|p2a: Zapdos
+|-boost|p1a: Krookodile|atk|1|[from] ability: Moxie
+|
+|-damage|p1a: Krookodile|12\/332 tox|[from] psn
+|callback|decision
+|
+|switch|p2a: Chansay|Chansey, F|83\/641
+|-damage|p2a: Chansay|3\/641|[from] Stealth Rock
+|turn|19
+|callback|decision
+|chat|DrummerVim|Base Speed 92
+|chat|DrummerVim|but im scarfed
+|
+|move|p1a: Krookodile|Crunch|p2a: Chansay
+|-damage|p2a: Chansay|0 fnt
+|faint|p2a: Chansay
+|-boost|p1a: Krookodile|atk|1|[from] ability: Moxie
+|
+|-damage|p1a: Krookodile|0 fnt|[from] psn
+|faint|p1a: Krookodile
+|callback|decision
+|chat|swagborghini|fuuckk
+|chat|swagborghini|i thought u werent at first
+|
+|switch|p1a: Tangrowth|Tangrowth, M|404\/404
+|-damage|p1a: Tangrowth|354\/404|[from] Stealth Rock
+|switch|p2a: Faggron|Aggron, F|95\/344
+|-formechange|p2a: Faggron|Aggron-Mega
+|-damage|p2a: Faggron|74\/344|[from] Stealth Rock
+|turn|20
+|callback|decision
+|chat|swagborghini|scarfed krookodile reks my team
+|chat|DrummerVim|the thing with krookodile is that the scarf set is probably the only good one
+|chat|DrummerVim|so it's predictable once u know that
+|
+|move|p2a: Faggron|Heavy Slam|p1a: Tangrowth
+|-damage|p1a: Tangrowth|266\/404
+|move|p1a: Tangrowth|Leech Seed|p2a: Faggron
+|-start|p2a: Faggron|move: Leech Seed
+|
+|-heal|p1a: Tangrowth|291\/404|[from] item: Leftovers
+|-damage|p2a: Faggron|31\/344|[from] Leech Seed|[of] p1a: Tangrowth
+|-heal|p1a: Tangrowth|334\/404|[silent]
+|turn|21
+|callback|decision
+|chat|swagborghini|gg tho
+|chat|DrummerVim|gg
+|-message|swagborghini forfeited.
+|
+|win|DrummerVim
+|raw|Ladder updating...
+|leave|swagborghini
+|player|p2
+|raw|DrummerVim's rating: 1047 &rarr; <strong>1070<\/strong><br \/>(+23 for winning)
+|raw|swagborghini's rating: 1025 &rarr; <strong>1002<\/strong><br \/>(-23 for losing)

@@ -1,0 +1,240 @@
+|join|ThisFireBurns
+|join|brewplanner
+|player|p1|ThisFireBurns|102
+|player|p2|brewplanner|163
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Scizor, M
+|poke|p1|Rotom-Wash
+|poke|p1|Bisharp, M
+|poke|p1|Gardevoir, F
+|poke|p1|Landorus-Therian, M
+|poke|p1|Talonflame, M
+|poke|p2|Latias, F
+|poke|p2|Keldeo-Resolute
+|poke|p2|Sylveon, F
+|poke|p2|Bisharp, F
+|poke|p2|Ferrothorn, M
+|poke|p2|Rotom-Wash
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|329\/329
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Ferrothorn
+|-unboost|p2a: Ferrothorn|atk|1
+|turn|1
+|
+|switch|p1a: Talonflame|Talonflame, M|297\/297
+|move|p2a: Ferrothorn|Stealth Rock|p1a: Talonflame
+|-sidestart|p1: ThisFireBurns|move: Stealth Rock
+|
+|turn|2
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|move|p1a: Talonflame|Flare Blitz|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|217\/304
+|-damage|p1a: Talonflame|268\/297|[from] recoil|[of] p2a: Rotom-Wash
+|
+|-heal|p2a: Rotom-Wash|236\/304|[from] item: Leftovers
+|turn|3
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|299\/299
+|-damage|p1a: Rotom-Wash|262\/299|[from] Stealth Rock
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|172\/299
+|
+|switch|p2a: Sylveon|Sylveon, F|392\/392
+|
+|turn|4
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Sylveon
+|-damage|p2a: Sylveon|313\/392
+|
+|switch|p1a: Scizor|Scizor, M|343\/343
+|-damage|p1a: Scizor|301\/343|[from] Stealth Rock
+|move|p2a: Sylveon|Hidden Power|p1a: Scizor
+|-supereffective|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|faint|p1a: Scizor
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|329\/329
+|-damage|p1a: Landorus-Therian|288\/329|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Sylveon
+|-unboost|p2a: Sylveon|atk|1
+|turn|5
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Ferrothorn
+|-sidestart|p2: brewplanner|move: Stealth Rock
+|
+|turn|6
+|
+|switch|p1a: Bisharp|Bisharp, M|271\/271
+|-damage|p1a: Bisharp|255\/271|[from] Stealth Rock
+|move|p2a: Ferrothorn|Leech Seed|p1a: Bisharp
+|-start|p1a: Bisharp|move: Leech Seed
+|
+|-damage|p1a: Bisharp|222\/271|[from] Leech Seed|[of] p2a: Ferrothorn
+|turn|7
+|
+|switch|p1a: Gardevoir|Gardevoir, F|277\/277
+|-damage|p1a: Gardevoir|243\/277|[from] Stealth Rock
+|-ability|p1a: Gardevoir|Iron Barbs|[from] ability: Trace|[of] p2a: Ferrothorn
+|move|p2a: Ferrothorn|Thunder Wave|p1a: Gardevoir
+|-status|p1a: Gardevoir|par
+|
+|turn|8
+|
+|move|p1a: Gardevoir|Focus Blast|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|96\/352
+|move|p2a: Ferrothorn|Leech Seed|p1a: Gardevoir
+|-start|p1a: Gardevoir|move: Leech Seed
+|
+|-damage|p1a: Gardevoir|209\/277 par|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|130\/352|[silent]
+|turn|9
+|
+|switch|p1a: Bisharp|Bisharp, M|222\/271
+|-damage|p1a: Bisharp|206\/271|[from] Stealth Rock
+|move|p2a: Ferrothorn|Protect|p2a: Ferrothorn
+|-fail|p2a: Ferrothorn
+|
+|turn|10
+|
+|move|p1a: Bisharp|Knock Off|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|-damage|p1a: Bisharp|173\/271|[from] ability: Iron Barbs|[of] p2a: Ferrothorn
+|-damage|p1a: Bisharp|128\/271|[from] item: Rocky Helmet|[of] p2a: Ferrothorn
+|-enditem|p2a: Ferrothorn|Rocky Helmet|[from] move: Knock Off|[of] p1a: Bisharp
+|-damage|p1a: Bisharp|101\/271|[from] item: Life Orb
+|faint|p2a: Ferrothorn
+|
+|
+|switch|p2a: Keldeo-Resolute|Keldeo-Resolute|323\/323
+|-damage|p2a: Keldeo-Resolute|303\/323|[from] Stealth Rock
+|turn|11
+|
+|move|p1a: Bisharp|Sucker Punch|p2a: Keldeo-Resolute
+|-resisted|p2a: Keldeo-Resolute
+|-damage|p2a: Keldeo-Resolute|200\/323
+|-boost|p2a: Keldeo-Resolute|atk|1|[from] ability: Justified
+|-damage|p1a: Bisharp|74\/271|[from] item: Life Orb
+|move|p2a: Keldeo-Resolute|Scald|p1a: Bisharp
+|-crit|p1a: Bisharp
+|-damage|p1a: Bisharp|0 fnt
+|faint|p1a: Bisharp
+|
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|172\/299
+|-damage|p1a: Rotom-Wash|135\/299|[from] Stealth Rock
+|turn|12
+|
+|move|p2a: Keldeo-Resolute|Scald|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|68\/299
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Keldeo-Resolute
+|-supereffective|p2a: Keldeo-Resolute
+|-damage|p2a: Keldeo-Resolute|0 fnt
+|faint|p2a: Keldeo-Resolute
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|288\/329
+|-damage|p1a: Landorus-Therian|247\/329|[from] Stealth Rock
+|
+|
+|switch|p2a: Latias|Latias, F|363\/363
+|-damage|p2a: Latias|318\/363|[from] Stealth Rock
+|turn|13
+|
+|detailschange|p2a: Latias|Latias-Mega, F
+|-mega|p2a: Latias|Latias|Latiasite
+|move|p1a: Landorus-Therian|U-turn|p2a: Latias
+|-crit|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|92\/363
+|
+|switch|p1a: Gardevoir|Gardevoir, F|209\/277 par
+|-damage|p1a: Gardevoir|175\/277 par|[from] Stealth Rock
+|-ability|p1a: Gardevoir|Levitate|[from] ability: Trace|[of] p2a: Latias
+|move|p2a: Latias|Roost|p2a: Latias
+|-heal|p2a: Latias|274\/363
+|
+|turn|14
+|
+|move|p2a: Latias|Calm Mind|p2a: Latias
+|-boost|p2a: Latias|spa|1
+|-boost|p2a: Latias|spd|1
+|move|p1a: Gardevoir|Moonblast|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|88\/363
+|
+|turn|15
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|247\/329
+|-damage|p1a: Landorus-Therian|206\/329|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Latias
+|-unboost|p2a: Latias|atk|1
+|move|p2a: Latias|Roost|p2a: Latias
+|-heal|p2a: Latias|270\/363
+|
+|turn|16
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|126\/363
+|
+|switch|p1a: Talonflame|Talonflame, M|268\/297
+|-damage|p1a: Talonflame|120\/297|[from] Stealth Rock
+|move|p2a: Latias|Roost|p2a: Latias
+|-heal|p2a: Latias|308\/363
+|
+|turn|17
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Latias
+|-damage|p2a: Latias|128\/363
+|-damage|p1a: Talonflame|61\/297|[from] recoil|[of] p2a: Latias
+|move|p2a: Latias|Roost|p2a: Latias
+|-heal|p2a: Latias|310\/363
+|
+|turn|18
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Latias
+|-damage|p2a: Latias|112\/363
+|-damage|p1a: Talonflame|0 fnt|[from] recoil|[of] p2a: Latias
+|faint|p1a: Talonflame
+|move|p2a: Latias|Roost|p2a: Latias
+|-heal|p2a: Latias|294\/363
+|
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|206\/329
+|-damage|p1a: Landorus-Therian|165\/329|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Latias
+|-unboost|p2a: Latias|atk|1
+|turn|19
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|146\/363
+|-message|ThisFireBurns forfeited.
+|
+|win|brewplanner
+|raw|Ladder updating...
+|leave|ThisFireBurns
+|player|p1
+|raw|ThisFireBurns's rating: 1778 &rarr; <strong>1752<\/strong><br \/>(-26 for losing)
+|raw|brewplanner's rating: 1677 &rarr; <strong>1702<\/strong><br \/>(+25 for winning)

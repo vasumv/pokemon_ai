@@ -1,0 +1,348 @@
+|join|Hugg Wild
+|join|lcplzlvme
+|player|p1|Hugg Wild|1
+|player|p2|lcplzlvme|101
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Reuniclus, M, shiny
+|poke|p1|Spiritomb, F, shiny
+|poke|p1|Machamp, F
+|poke|p1|Sharpedo, F
+|poke|p1|Froslass, F, shiny
+|poke|p1|Swampert, F
+|poke|p2|Ampharos, F
+|poke|p2|Umbreon, F, shiny
+|poke|p2|Doublade, F
+|poke|p2|Swampert, F
+|poke|p2|Rotom-Mow
+|poke|p2|Crobat, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Froslass|Froslass, F, shiny|344\/344
+|switch|p2a: Rotom-Mow|Rotom-Mow|241\/241
+|turn|1
+|
+|move|p2a: Rotom-Mow|Volt Switch|p1a: Froslass
+|-damage|p1a: Froslass|200\/344
+|-start|p2a: Rotom-Mow|Disable|Volt Switch
+|join|Superman0000
+|
+|switch|p2a: Crobat|Crobat, F|374\/374
+|move|p1a: Froslass|Icy Wind|p2a: Crobat
+|-supereffective|p2a: Crobat
+|-damage|p2a: Crobat|254\/374
+|-unboost|p2a: Crobat|spe|1
+|
+|-heal|p2a: Crobat|277\/374|[from] item: Black Sludge
+|turn|2
+|
+|move|p1a: Froslass|Spikes|p2a: Crobat
+|-sidestart|p2: lcplzlvme|Spikes
+|move|p2a: Crobat|Taunt|p1a: Froslass
+|-start|p1a: Froslass|move: Taunt
+|
+|-heal|p2a: Crobat|300\/374|[from] item: Black Sludge
+|turn|3
+|leave|Superman0000
+|
+|switch|p1a: Reuniclus|Reuniclus, M, shiny|409\/409
+|move|p2a: Crobat|Brave Bird|p1a: Reuniclus
+|-damage|p1a: Reuniclus|237\/409
+|-damage|p2a: Crobat|243\/374|[from] recoil|[of] p1a: Reuniclus
+|
+|-heal|p2a: Crobat|266\/374|[from] item: Black Sludge
+|turn|4
+|
+|switch|p2a: Rotom-Mow|Rotom-Mow|241\/241
+|move|p1a: Reuniclus|Trick Room|p1a: Reuniclus
+|-fieldstart|move: Trick Room|[of] p1a: Reuniclus
+|
+|turn|5
+|
+|move|p1a: Reuniclus|Psyshock|p2a: Rotom-Mow
+|-damage|p2a: Rotom-Mow|56\/241
+|move|p2a: Rotom-Mow|Volt Switch|p1a: Reuniclus
+|-damage|p1a: Reuniclus|110\/409
+|
+|switch|p2a: Doublade|Doublade, F|309\/309
+|-damage|p2a: Doublade|271\/309|[from] Spikes
+|
+|turn|6
+|
+|move|p2a: Doublade|Shadow Sneak|p1a: Reuniclus
+|-supereffective|p1a: Reuniclus
+|-damage|p1a: Reuniclus|0 fnt
+|faint|p1a: Reuniclus
+|
+|
+|switch|p1a: Spiritomb|Spiritomb, F, shiny|294\/294
+|turn|7
+|
+|move|p1a: Spiritomb|Will-O-Wisp|p2a: Doublade
+|-status|p2a: Doublade|brn
+|move|p2a: Doublade|Iron Head|p1a: Spiritomb
+|-damage|p1a: Spiritomb|228\/294
+|
+|-damage|p2a: Doublade|233\/309 brn|[from] brn
+|turn|8
+|
+|move|p1a: Spiritomb|Pursuit|p2a: Doublade|[from]Pursuit
+|-supereffective|p2a: Doublade
+|-damage|p2a: Doublade|87\/309 brn
+|switch|p2a: Umbreon|Umbreon, F, shiny|394\/394
+|-damage|p2a: Umbreon|345\/394|[from] Spikes
+|
+|-heal|p2a: Umbreon|369\/394|[from] item: Leftovers
+|-fieldend|move: Trick Room
+|turn|9
+|
+|move|p2a: Umbreon|Heal Bell|p2a: Umbreon
+|-cureteam|p2a: Umbreon|[from] move: HealBell
+|move|p1a: Spiritomb|Taunt|p2a: Umbreon
+|-start|p2a: Umbreon|move: Taunt
+|
+|-heal|p2a: Umbreon|393\/394|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Machamp|Machamp, F|364\/364
+|move|p2a: Umbreon|Foul Play|p1a: Machamp
+|-resisted|p1a: Machamp
+|-damage|p1a: Machamp|258\/364
+|
+|-heal|p2a: Umbreon|394\/394|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Machamp|Knock Off|p2a: Umbreon
+|-resisted|p2a: Umbreon
+|-damage|p2a: Umbreon|338\/394
+|-enditem|p2a: Umbreon|Leftovers|[from] move: Knock Off|[of] p1a: Machamp
+|move|p2a: Umbreon|Foul Play|p1a: Machamp
+|-resisted|p1a: Machamp
+|-damage|p1a: Machamp|144\/364
+|
+|turn|12
+|
+|switch|p2a: Doublade|Doublade, F|87\/309
+|-damage|p2a: Doublade|49\/309|[from] Spikes
+|move|p1a: Machamp|Close Combat|p2a: Doublade
+|-immune|p2a: Doublade|[msg]
+|
+|turn|13
+|
+|move|p2a: Doublade|Shadow Sneak|p1a: Machamp
+|-damage|p1a: Machamp|54\/364
+|move|p1a: Machamp|Knock Off|p2a: Doublade
+|-supereffective|p2a: Doublade
+|-damage|p2a: Doublade|0 fnt
+|-enditem|p2a: Doublade|Eviolite|[from] move: Knock Off|[of] p1a: Machamp
+|faint|p2a: Doublade
+|
+|
+|switch|p2a: Crobat|Crobat, F|266\/374
+|turn|14
+|
+|switch|p1a: Swampert|Swampert, F|403\/403
+|move|p2a: Crobat|Defog|p1a: Swampert
+|-unboost|p1a: Swampert|evasion|1
+|-sideend|p2: lcplzlvme|Spikes|[from] move: Defog|[of] p2a: Crobat
+|
+|-heal|p2a: Crobat|289\/374|[from] item: Black Sludge
+|turn|15
+|
+|move|p2a: Crobat|Taunt|p1a: Swampert
+|-start|p1a: Swampert|move: Taunt
+|move|p1a: Swampert|Scald|p2a: Crobat
+|-damage|p2a: Crobat|202\/374
+|
+|-heal|p2a: Crobat|225\/374|[from] item: Black Sludge
+|turn|16
+|
+|switch|p2a: Umbreon|Umbreon, F, shiny|338\/394
+|move|p1a: Swampert|Scald|p2a: Umbreon
+|-damage|p2a: Umbreon|290\/394
+|
+|turn|17
+|
+|move|p2a: Umbreon|Wish|p2a: Umbreon
+|move|p1a: Swampert|Earthquake|p2a: Umbreon
+|-damage|p2a: Umbreon|167\/394
+|
+|-end|p1a: Swampert|move: Taunt
+|turn|18
+|
+|move|p2a: Umbreon|Foul Play|p1a: Swampert
+|-crit|p1a: Swampert
+|-damage|p1a: Swampert|270\/403
+|move|p1a: Swampert|Stealth Rock|p2a: Umbreon
+|-sidestart|p2: lcplzlvme|move: Stealth Rock
+|
+|-heal|p2a: Umbreon|364\/394|[from] move: Wish|[wisher] Umbreon
+|-heal|p1a: Swampert|295\/403|[from] item: Leftovers
+|turn|19
+|
+|switch|p1a: Machamp|Machamp, F|54\/364
+|move|p2a: Umbreon|Foul Play|p1a: Machamp
+|-resisted|p1a: Machamp
+|-damage|p1a: Machamp|0 fnt
+|faint|p1a: Machamp
+|
+|
+|switch|p1a: Froslass|Froslass, F, shiny|200\/344
+|turn|20
+|
+|move|p1a: Froslass|Taunt|p2a: Umbreon
+|-start|p2a: Umbreon|move: Taunt
+|move|p2a: Umbreon|Foul Play|p1a: Froslass
+|-supereffective|p1a: Froslass
+|-damage|p1a: Froslass|20\/344
+|
+|turn|21
+|
+|move|p1a: Froslass|Destiny Bond|p1a: Froslass
+|-singlemove|p1a: Froslass|Destiny Bond
+|move|p2a: Umbreon|Foul Play|p1a: Froslass
+|-supereffective|p1a: Froslass
+|-damage|p1a: Froslass|0 fnt
+|faint|p1a: Froslass
+|-activate|p1a: Froslass|Destiny Bond
+|faint|p2a: Umbreon
+|
+|
+|switch|p2a: Crobat|Crobat, F|225\/374
+|switch|p1a: Sharpedo|Sharpedo, F|281\/281
+|-damage|p2a: Crobat|132\/374|[from] Stealth Rock
+|turn|22
+|
+|move|p1a: Sharpedo|Protect|p1a: Sharpedo
+|-singleturn|p1a: Sharpedo|Protect
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|319\/374
+|
+|-heal|p2a: Crobat|342\/374|[from] item: Black Sludge
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|23
+|
+|detailschange|p1a: Sharpedo|Sharpedo-Mega, F
+|message|Sharpedo has Mega Evolved into Mega Sharpedo!
+|move|p1a: Sharpedo|Ice Fang|p2a: Crobat
+|-supereffective|p2a: Crobat
+|-damage|p2a: Crobat|16\/374
+|-status|p2a: Crobat|frz
+|-curestatus|p2a: Crobat|frz
+|move|p2a: Crobat|Brave Bird|p1a: Sharpedo
+|-damage|p1a: Sharpedo|88\/281
+|-damage|p2a: Crobat|0 fnt|[from] recoil|[of] p1a: Sharpedo
+|faint|p2a: Crobat
+|
+|
+|switch|p2a: Swampert|Swampert, F|404\/404
+|-damage|p2a: Swampert|379\/404|[from] Stealth Rock
+|turn|24
+|
+|switch|p1a: Spiritomb|Spiritomb, F, shiny|228\/294
+|move|p2a: Swampert|Earthquake|p1a: Spiritomb
+|-damage|p1a: Spiritomb|113\/294
+|
+|-heal|p2a: Swampert|404\/404|[from] item: Leftovers
+|turn|25
+|
+|move|p2a: Swampert|Earthquake|p1a: Spiritomb
+|-damage|p1a: Spiritomb|0 fnt
+|faint|p1a: Spiritomb
+|
+|
+|switch|p1a: Swampert|Swampert, F|295\/403
+|turn|26
+|
+|switch|p2a: Rotom-Mow|Rotom-Mow|56\/241
+|-damage|p2a: Rotom-Mow|26\/241|[from] Stealth Rock
+|move|p1a: Swampert|Scald|p2a: Rotom-Mow
+|-resisted|p2a: Rotom-Mow
+|-damage|p2a: Rotom-Mow|0 fnt
+|faint|p2a: Rotom-Mow
+|
+|-heal|p1a: Swampert|320\/403|[from] item: Leftovers
+|
+|switch|p2a: Ampharos|Ampharos, F|384\/384
+|-damage|p2a: Ampharos|336\/384|[from] Stealth Rock
+|turn|27
+|
+|detailschange|p2a: Ampharos|Ampharos-Mega, F
+|message|Ampharos has Mega Evolved into Mega Ampharos!
+|-ability|p2a: Ampharos|Mold Breaker
+|move|p1a: Swampert|Earthquake|p2a: Ampharos
+|-supereffective|p2a: Ampharos
+|-damage|p2a: Ampharos|96\/384
+|move|p2a: Ampharos|Dragon Pulse|p1a: Swampert
+|-damage|p1a: Swampert|112\/403
+|
+|-heal|p1a: Swampert|137\/403|[from] item: Leftovers
+|turn|28
+|
+|move|p1a: Swampert|Earthquake|p2a: Ampharos
+|-supereffective|p2a: Ampharos
+|-damage|p2a: Ampharos|0 fnt
+|faint|p2a: Ampharos
+|
+|-heal|p1a: Swampert|162\/403|[from] item: Leftovers
+|
+|switch|p2a: Swampert|Swampert, F|404\/404
+|-damage|p2a: Swampert|379\/404|[from] Stealth Rock
+|turn|29
+|
+|move|p1a: Swampert|Scald|p2a: Swampert
+|-damage|p2a: Swampert|291\/404
+|move|p2a: Swampert|Scald|p1a: Swampert
+|-damage|p1a: Swampert|74\/403
+|
+|-heal|p1a: Swampert|99\/403|[from] item: Leftovers
+|-heal|p2a: Swampert|316\/404|[from] item: Leftovers
+|turn|30
+|
+|move|p1a: Swampert|Scald|p2a: Swampert
+|-damage|p2a: Swampert|237\/404
+|move|p2a: Swampert|Scald|p1a: Swampert
+|-damage|p1a: Swampert|12\/403
+|
+|-heal|p1a: Swampert|37\/403|[from] item: Leftovers
+|-heal|p2a: Swampert|262\/404|[from] item: Leftovers
+|turn|31
+|
+|move|p1a: Swampert|Scald|p2a: Swampert
+|-damage|p2a: Swampert|181\/404
+|move|p2a: Swampert|Scald|p1a: Swampert
+|-damage|p1a: Swampert|0 fnt
+|faint|p1a: Swampert
+|
+|-heal|p2a: Swampert|206\/404|[from] item: Leftovers
+|
+|switch|p1a: Sharpedo|Sharpedo-Mega, F|88\/281
+|turn|32
+|
+|move|p1a: Sharpedo|Crunch|p2a: Swampert
+|-damage|p2a: Swampert|19\/404
+|move|p2a: Swampert|Earthquake|p1a: Sharpedo
+|-damage|p1a: Sharpedo|0 fnt
+|faint|p1a: Sharpedo
+|
+|win|lcplzlvme
+|raw|Ladder updating...
+|c|âlcplzlvme|gg
+|c|âHugg Wild|gg
+|raw|Hugg Wild's rating: 1661 &rarr; <strong>1629<\/strong><br \/>(-32 for losing)
+|raw|lcplzlvme's rating: 1415 &rarr; <strong>1448<\/strong><br \/>(+33 for winning)
+|leave|Hugg Wild
+|player|p1

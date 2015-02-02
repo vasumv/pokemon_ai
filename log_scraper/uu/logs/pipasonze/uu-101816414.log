@@ -1,0 +1,421 @@
+|join|pipasonze
+|join|Mxgz
+|player|p1|pipasonze|120
+|player|p2|Mxgz|70
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|clearpoke
+|poke|p1|Jellicent, F
+|poke|p1|Zangoose, M
+|poke|p1|Manectric, M
+|poke|p1|Donphan, M
+|poke|p1|Tornadus-Therian, M
+|poke|p1|Toxicroak, F
+|poke|p2|Jirachi
+|poke|p2|Mienshao, F
+|poke|p2|Claydol
+|poke|p2|Umbreon, M
+|poke|p2|Flygon, F
+|poke|p2|Scrafty, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Tornadus-Therian|Tornadus-Therian, M|299\/299
+|switch|p2a: Jirachi|Jirachi|404\/404
+|turn|1
+|
+|move|p1a: Tornadus-Therian|Knock Off|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|244\/404
+|-enditem|p2a: Jirachi|Leftovers|[from] move: Knock Off|[of] p1a: Tornadus-Therian
+|move|p2a: Jirachi|Toxic|p1a: Tornadus-Therian
+|-status|p1a: Tornadus-Therian|tox
+|
+|-damage|p1a: Tornadus-Therian|281\/299 tox|[from] psn
+|turn|2
+|
+|move|p1a: Tornadus-Therian|U-turn|p2a: Jirachi
+|-damage|p2a: Jirachi|190\/404
+|
+|switch|p1a: Manectric|Manectric, M|281\/281
+|move|p2a: Jirachi|Stealth Rock|p1a: Manectric
+|-sidestart|p1: pipasonze|move: Stealth Rock
+|
+|turn|3
+|
+|switch|p2a: Claydol|Claydol|324\/324
+|-formechange|p1a: Manectric|Manectric-Mega
+|message|Manectric has Mega Evolved into Mega Manectric!
+|-ability|p1a: Manectric|Intimidate|[of] p2a: Claydol
+|-unboost|p2a: Claydol|atk|1
+|move|p1a: Manectric|Overheat|p2a: Claydol
+|-damage|p2a: Claydol|224\/324
+|-unboost|p1a: Manectric|spa|2
+|
+|-heal|p2a: Claydol|244\/324|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Donphan|Donphan, M|384\/384
+|-damage|p1a: Donphan|360\/384|[from] Stealth Rock
+|move|p2a: Claydol|Earthquake|p1a: Donphan
+|-damage|p1a: Donphan|320\/384
+|
+|-heal|p2a: Claydol|264\/324|[from] item: Leftovers
+|-heal|p1a: Donphan|344\/384|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Scrafty|Scrafty, F|334\/334
+|move|p1a: Donphan|Toxic|p2a: Scrafty
+|-status|p2a: Scrafty|tox
+|
+|-heal|p1a: Donphan|368\/384|[from] item: Leftovers
+|-damage|p2a: Scrafty|314\/334 tox|[from] psn
+|turn|6
+|
+|move|p2a: Scrafty|Bulk Up|p2a: Scrafty
+|-boost|p2a: Scrafty|atk|1
+|-boost|p2a: Scrafty|def|1
+|move|p1a: Donphan|Stealth Rock|p2a: Scrafty
+|-sidestart|p2: Mxgz|move: Stealth Rock
+|
+|-heal|p2a: Scrafty|334\/334 tox|[from] item: Leftovers
+|-heal|p1a: Donphan|384\/384|[from] item: Leftovers
+|-damage|p2a: Scrafty|294\/334 tox|[from] psn
+|turn|7
+|
+|move|p2a: Scrafty|High Jump Kick|p1a: Donphan
+|-damage|p1a: Donphan|183\/384
+|move|p1a: Donphan|Rapid Spin|p2a: Scrafty
+|-damage|p2a: Scrafty|282\/334 tox
+|-sideend|p1: pipasonze|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Donphan
+|
+|-activate|p2a: Scrafty|ability: Shed Skin
+|-curestatus|p2a: Scrafty|tox
+|-heal|p2a: Scrafty|302\/334|[from] item: Leftovers
+|-heal|p1a: Donphan|207\/384|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Toxicroak|Toxicroak, F|307\/307
+|move|p2a: Scrafty|Bulk Up|p2a: Scrafty
+|-boost|p2a: Scrafty|atk|1
+|-boost|p2a: Scrafty|def|1
+|
+|-heal|p2a: Scrafty|322\/334|[from] item: Leftovers
+|turn|9
+|
+|move|p1a: Toxicroak|Drain Punch|p2a: Scrafty
+|-supereffective|p2a: Scrafty
+|-damage|p2a: Scrafty|187\/334
+|-damage|p1a: Toxicroak|277\/307|[from] item: Life Orb
+|move|p2a: Scrafty|Crunch|p1a: Toxicroak
+|-resisted|p1a: Toxicroak
+|-damage|p1a: Toxicroak|102\/307
+|
+|-heal|p2a: Scrafty|207\/334|[from] item: Leftovers
+|turn|10
+|
+|move|p1a: Toxicroak|Drain Punch|p2a: Scrafty
+|-crit|p2a: Scrafty
+|-supereffective|p2a: Scrafty
+|-damage|p2a: Scrafty|0 fnt
+|-heal|p1a: Toxicroak|206\/307|[from] drain|[of] p2a: Scrafty
+|-damage|p1a: Toxicroak|176\/307|[from] item: Life Orb
+|faint|p2a: Scrafty
+|
+|
+|switch|p2a: Mienshao|Mienshao, F|271\/271
+|-damage|p2a: Mienshao|255\/271|[from] Stealth Rock
+|turn|11
+|
+|switch|p1a: Jellicent|Jellicent, F|404\/404
+|move|p2a: Mienshao|Aerial Ace|p1a: Jellicent
+|-damage|p1a: Jellicent|292\/404
+|-damage|p2a: Mienshao|228\/271|[from] item: Life Orb
+|
+|-heal|p1a: Jellicent|317\/404|[from] item: Leftovers
+|turn|12
+|chat|Mxgz|that crit mattered so much
+|
+|switch|p1a: Manectric|Manectric, M|281\/281
+|-formechange|p1a: Manectric|Manectric-Mega
+|-ability|p1a: Manectric|Intimidate|[of] p2a: Mienshao
+|-unboost|p2a: Mienshao|atk|1
+|move|p2a: Mienshao|U-turn|p1a: Manectric
+|-damage|p1a: Manectric|195\/281
+|-damage|p2a: Mienshao|201\/271|[from] item: Life Orb
+|
+|switch|p2a: Claydol|Claydol|264\/324
+|-damage|p2a: Claydol|244\/324|[from] Stealth Rock
+|
+|-heal|p2a: Claydol|264\/324|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: Jellicent|Jellicent, F|317\/404
+|move|p2a: Claydol|Stealth Rock|p1a: Jellicent
+|-sidestart|p1: pipasonze|move: Stealth Rock
+|
+|-heal|p2a: Claydol|284\/324|[from] item: Leftovers
+|-heal|p1a: Jellicent|342\/404|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Claydol|Rapid Spin|p1a: Jellicent
+|-immune|p1a: Jellicent|[msg]
+|move|p1a: Jellicent|Scald|p2a: Claydol
+|-supereffective|p2a: Claydol
+|-damage|p2a: Claydol|182\/324
+|-status|p2a: Claydol|brn
+|
+|-heal|p2a: Claydol|202\/324 brn|[from] item: Leftovers
+|-heal|p1a: Jellicent|367\/404|[from] item: Leftovers
+|-damage|p2a: Claydol|162\/324 brn|[from] brn
+|turn|15
+|
+|switch|p2a: Umbreon|Umbreon, M|394\/394
+|-damage|p2a: Umbreon|345\/394|[from] Stealth Rock
+|move|p1a: Jellicent|Shadow Ball|p2a: Umbreon
+|-crit|p2a: Umbreon
+|-resisted|p2a: Umbreon
+|-damage|p2a: Umbreon|309\/394
+|-unboost|p2a: Umbreon|spd|1
+|
+|-heal|p2a: Umbreon|333\/394|[from] item: Leftovers
+|-heal|p1a: Jellicent|392\/404|[from] item: Leftovers
+|turn|16
+|
+|switch|p1a: Toxicroak|Toxicroak, F|176\/307
+|-damage|p1a: Toxicroak|157\/307|[from] Stealth Rock
+|move|p2a: Umbreon|Heal Bell|p2a: Umbreon
+|-cureteam|p2a: Umbreon|[from] move: HealBell
+|
+|-heal|p2a: Umbreon|357\/394|[from] item: Leftovers
+|turn|17
+|
+|move|p2a: Umbreon|Protect|p2a: Umbreon
+|-singleturn|p2a: Umbreon|Protect
+|move|p1a: Toxicroak|Drain Punch|p2a: Umbreon
+|-activate|p2a: Umbreon|Protect
+|
+|-heal|p2a: Umbreon|381\/394|[from] item: Leftovers
+|turn|18
+|
+|switch|p2a: Mienshao|Mienshao, F|201\/271
+|-damage|p2a: Mienshao|185\/271|[from] Stealth Rock
+|move|p1a: Toxicroak|Swords Dance|p1a: Toxicroak
+|-boost|p1a: Toxicroak|atk|2
+|
+|turn|19
+|
+|switch|p1a: Donphan|Donphan, M|207\/384
+|-damage|p1a: Donphan|183\/384|[from] Stealth Rock
+|move|p2a: Mienshao|Stone Edge|p1a: Donphan|[miss]
+|-miss|p2a: Mienshao|p1a: Donphan
+|
+|-heal|p1a: Donphan|207\/384|[from] item: Leftovers
+|turn|20
+|
+|move|p2a: Mienshao|High Jump Kick|p1a: Donphan
+|-damage|p1a: Donphan|3\/384
+|-damage|p2a: Mienshao|158\/271|[from] item: Life Orb
+|move|p1a: Donphan|Rapid Spin|p2a: Mienshao
+|-damage|p2a: Mienshao|131\/271
+|-sideend|p1: pipasonze|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Donphan
+|
+|-heal|p1a: Donphan|27\/384|[from] item: Leftovers
+|turn|21
+|
+|move|p2a: Mienshao|U-turn|p1a: Donphan
+|-damage|p1a: Donphan|0 fnt
+|-damage|p2a: Mienshao|104\/271|[from] item: Life Orb
+|faint|p1a: Donphan
+|
+|switch|p2a: Claydol|Claydol|162\/324
+|-damage|p2a: Claydol|142\/324|[from] Stealth Rock
+|
+|-heal|p2a: Claydol|162\/324|[from] item: Leftovers
+|
+|switch|p1a: Tornadus-Therian|Tornadus-Therian, M|299\/299 tox
+|turn|22
+|
+|move|p1a: Tornadus-Therian|Knock Off|p2a: Claydol
+|-supereffective|p2a: Claydol
+|-damage|p2a: Claydol|6\/324
+|-enditem|p2a: Claydol|Leftovers|[from] move: Knock Off|[of] p1a: Tornadus-Therian
+|move|p2a: Claydol|Stealth Rock|p1a: Tornadus-Therian
+|-sidestart|p1: pipasonze|move: Stealth Rock
+|
+|-damage|p1a: Tornadus-Therian|281\/299 tox|[from] psn
+|turn|23
+|
+|move|p1a: Tornadus-Therian|U-turn|p2a: Claydol
+|-supereffective|p2a: Claydol
+|-damage|p2a: Claydol|0 fnt
+|faint|p2a: Claydol
+|
+|switch|p1a: Zangoose|Zangoose, M|287\/287
+|-damage|p1a: Zangoose|252\/287|[from] Stealth Rock
+|
+|-status|p1a: Zangoose|tox|[from] item: Toxic Orb
+|
+|switch|p2a: Flygon|Flygon, F|301\/301
+|-damage|p2a: Flygon|283\/301|[from] Stealth Rock
+|turn|24
+|
+|switch|p1a: Toxicroak|Toxicroak, F|157\/307
+|-damage|p1a: Toxicroak|138\/307|[from] Stealth Rock
+|move|p2a: Flygon|Outrage|p1a: Toxicroak
+|-damage|p1a: Toxicroak|0 fnt
+|faint|p1a: Toxicroak
+|
+|
+|switch|p1a: Jellicent|Jellicent, F|392\/404
+|-damage|p1a: Jellicent|342\/404|[from] Stealth Rock
+|turn|25
+|
+|move|p2a: Flygon|Outrage|p1a: Jellicent
+|-damage|p1a: Jellicent|83\/404
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Flygon
+|-status|p2a: Flygon|brn
+|
+|-end|p2a: Flygon|rampage
+|-start|p2a: Flygon|confusion
+|-heal|p1a: Jellicent|108\/404|[from] item: Leftovers
+|-damage|p2a: Flygon|246\/301 brn|[from] brn
+|turn|26
+|
+|switch|p2a: Umbreon|Umbreon, M|381\/394
+|-damage|p2a: Umbreon|332\/394|[from] Stealth Rock
+|move|p1a: Jellicent|Recover|p1a: Jellicent
+|-heal|p1a: Jellicent|310\/404
+|
+|-heal|p2a: Umbreon|356\/394|[from] item: Leftovers
+|-heal|p1a: Jellicent|335\/404|[from] item: Leftovers
+|turn|27
+|
+|switch|p1a: Tornadus-Therian|Tornadus-Therian, M|299\/299 tox
+|-damage|p1a: Tornadus-Therian|225\/299 tox|[from] Stealth Rock
+|move|p2a: Umbreon|Heal Bell|p2a: Umbreon
+|-cureteam|p2a: Umbreon|[from] move: HealBell
+|
+|-heal|p2a: Umbreon|380\/394|[from] item: Leftovers
+|-damage|p1a: Tornadus-Therian|207\/299 tox|[from] psn
+|turn|28
+|
+|move|p2a: Umbreon|Protect|p2a: Umbreon
+|-singleturn|p2a: Umbreon|Protect
+|move|p1a: Tornadus-Therian|Knock Off|p2a: Umbreon
+|-activate|p2a: Umbreon|Protect
+|
+|-heal|p2a: Umbreon|394\/394|[from] item: Leftovers
+|-damage|p1a: Tornadus-Therian|171\/299 tox|[from] psn
+|turn|29
+|
+|switch|p2a: Jirachi|Jirachi|190\/404
+|-damage|p2a: Jirachi|165\/404|[from] Stealth Rock
+|move|p1a: Tornadus-Therian|U-turn|p2a: Jirachi
+|-damage|p2a: Jirachi|108\/404
+|
+|switch|p1a: Zangoose|Zangoose, M|252\/287 tox
+|-damage|p1a: Zangoose|217\/287 tox|[from] Stealth Rock
+|
+|-damage|p1a: Zangoose|200\/287 tox|[from] psn
+|turn|30
+|
+|move|p1a: Zangoose|Knock Off|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|faint|p2a: Jirachi
+|
+|-damage|p1a: Zangoose|166\/287 tox|[from] psn
+|
+|switch|p2a: Mienshao|Mienshao, F|104\/271
+|-damage|p2a: Mienshao|88\/271|[from] Stealth Rock
+|turn|31
+|
+|move|p1a: Zangoose|Quick Attack|p2a: Mienshao
+|-damage|p2a: Mienshao|0 fnt
+|faint|p2a: Mienshao
+|
+|-damage|p1a: Zangoose|115\/287 tox|[from] psn
+|
+|switch|p2a: Flygon|Flygon, F|246\/301
+|-damage|p2a: Flygon|228\/301|[from] Stealth Rock
+|turn|32
+|
+|switch|p1a: Jellicent|Jellicent, F|335\/404
+|-damage|p1a: Jellicent|285\/404|[from] Stealth Rock
+|move|p2a: Flygon|Outrage|p1a: Jellicent
+|-damage|p1a: Jellicent|47\/404
+|
+|-heal|p1a: Jellicent|72\/404|[from] item: Leftovers
+|turn|33
+|
+|move|p2a: Flygon|Outrage|p1a: Jellicent
+|-damage|p1a: Jellicent|0 fnt
+|faint|p1a: Jellicent
+|
+|-end|p2a: Flygon|rampage
+|-start|p2a: Flygon|confusion
+|
+|switch|p1a: Tornadus-Therian|Tornadus-Therian, M|270\/299 tox
+|-damage|p1a: Tornadus-Therian|196\/299 tox|[from] Stealth Rock
+|turn|34
+|
+|-activate|p2a: Flygon|confusion
+|move|p2a: Flygon|Outrage|p1a: Tornadus-Therian
+|-damage|p1a: Tornadus-Therian|0 fnt
+|faint|p1a: Tornadus-Therian
+|
+|
+|switch|p1a: Manectric|Manectric, M|195\/281
+|-formechange|p1a: Manectric|Manectric-Mega
+|-damage|p1a: Manectric|160\/281|[from] Stealth Rock
+|-ability|p1a: Manectric|Intimidate|[of] p2a: Flygon
+|-unboost|p2a: Flygon|atk|1
+|turn|35
+|chat|Mxgz|no knock\/ u turn
+|chat|Mxgz|gets old after the first time
+|
+|-end|p2a: Flygon|confusion
+|move|p2a: Flygon|Outrage|p1a: Manectric
+|-damage|p1a: Manectric|27\/281
+|move|p1a: Manectric|Hidden Power|p2a: Flygon
+|-supereffective|p2a: Flygon
+|-damage|p2a: Flygon|0 fnt
+|faint|p2a: Flygon
+|
+|chat|Mxgz|gg 
+|
+|switch|p2a: Umbreon|Umbreon, M|394\/394
+|-damage|p2a: Umbreon|345\/394|[from] Stealth Rock
+|turn|36
+|chat|pipasonze|gg
+|
+|move|p1a: Manectric|Thunderbolt|p2a: Umbreon
+|-damage|p2a: Umbreon|246\/394
+|move|p2a: Umbreon|Foul Play|p1a: Manectric
+|-damage|p1a: Manectric|0 fnt
+|faint|p1a: Manectric
+|
+|-heal|p2a: Umbreon|270\/394|[from] item: Leftovers
+|
+|switch|p1a: Zangoose|Zangoose, M|115\/287 tox
+|-damage|p1a: Zangoose|80\/287 tox|[from] Stealth Rock
+|turn|37
+|
+|move|p1a: Zangoose|Facade|p2a: Umbreon
+|-damage|p2a: Umbreon|0 fnt
+|faint|p2a: Umbreon
+|
+|win|pipasonze
+|raw|Ladder updating...
+|raw|pipasonze's rating: 1169 &rarr; <strong>1190<\/strong><br \/>(+21 for winning)
+|raw|Mxgz's rating: 1117 &rarr; <strong>1096<\/strong><br \/>(-21 for losing)

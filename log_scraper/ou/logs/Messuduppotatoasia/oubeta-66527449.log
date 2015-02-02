@@ -1,0 +1,103 @@
+|join|Messuduppotatoasia
+|join|GreenAnder
+|player|p1|Messuduppotatoasia|169
+|player|p2|GreenAnder|20
+|gametype|singles
+|tier|OU (beta)
+|rated
+|clearpoke
+|poke|p1|Talonflame, F
+|poke|p1|Gengar, F
+|poke|p1|Azumarill, F
+|poke|p1|Garchomp, F
+|poke|p1|Tyranitar, M
+|poke|p1|Rotom-Wash
+|poke|p2|Ditto
+|poke|p2|Malamar, F
+|poke|p2|Ferrothorn, M
+|poke|p2|Gliscor, M
+|poke|p2|Chansey, F
+|poke|p2|Smeargle, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Garchomp|Garchomp, F|357\/357
+|switch|p2a: Smeargle|Smeargle, M|251\/251
+|turn|1
+|callback|decision
+|
+|move|p1a: Garchomp|Substitute|p1a: Garchomp
+|-start|p1a: Garchomp|Substitute
+|-damage|p1a: Garchomp|268\/357
+|move|p2a: Smeargle|Spore|p1a: Garchomp
+|
+|-heal|p1a: Garchomp|290\/357|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|move|p1a: Garchomp|Swords Dance|p1a: Garchomp
+|-boost|p1a: Garchomp|atk|2
+|move|p2a: Smeargle|Sticky Web|p1a: Garchomp
+|-sidestart|p1: Messuduppotatoasia|move: Sticky Web
+|
+|-heal|p1a: Garchomp|312\/357|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p1a: Garchomp|Swords Dance|p1a: Garchomp
+|-boost|p1a: Garchomp|atk|2
+|move|p2a: Smeargle|Gastro Acid|p1a: Garchomp
+|
+|-heal|p1a: Garchomp|334\/357|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|move|p1a: Garchomp|Swords Dance|p1a: Garchomp
+|-boost|p1a: Garchomp|atk|2
+|
+|-heal|p1a: Garchomp|356\/357|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p1a: Garchomp|Earthquake|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|faint|p2a: Ferrothorn
+|
+|-heal|p1a: Garchomp|357\/357|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354
+|turn|6
+|callback|decision
+|
+|move|p2a: Gliscor|Protect|p2a: Gliscor
+|-singleturn|p2a: Gliscor|Protect
+|move|p1a: Garchomp|Dragon Claw|p2a: Gliscor
+|-activate|p2a: Gliscor|Protect
+|
+|-activate|p2a: Gliscor|item: Toxic Orb
+|-status|p2a: Gliscor|tox
+|turn|7
+|callback|decision
+|
+|move|p1a: Garchomp|Dragon Claw|p2a: Gliscor
+|-damage|p2a: Gliscor|0 fnt
+|faint|p2a: Gliscor
+|
+|callback|decision
+|-message|GreenAnder forfeited.
+|
+|win|Messuduppotatoasia
+|raw|Ladder updating...
+|leave|GreenAnder
+|player|p2
+|raw|Messuduppotatoasia's rating: 1718 &rarr; <strong>1756<\/strong><br \/>(+38 for winning)
+|raw|GreenAnder's rating: 1590 &rarr; <strong>1589<\/strong><br \/>(-1 for losing)

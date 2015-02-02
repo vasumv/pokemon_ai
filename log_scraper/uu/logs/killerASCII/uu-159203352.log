@@ -1,0 +1,373 @@
+|join|killerASCII
+|join|AlmegaKrypthon
+|player|p1|killerASCII|163
+|player|p2|AlmegaKrypthon|163
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Shuckle, F
+|poke|p1|Donphan, F
+|poke|p1|Victini
+|poke|p1|Sableye, M
+|poke|p1|Braviary, M
+|poke|p1|Blastoise, F
+|poke|p2|Uxie
+|poke|p2|Cobalion
+|poke|p2|Blastoise, F
+|poke|p2|Roserade, M
+|poke|p2|Sableye, F
+|poke|p2|Houndoom, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Rotten|Shuckle, F|244\/244
+|switch|p2a: Sableye|Sableye, F|304\/304
+|turn|1
+|
+|move|p2a: Sableye|Taunt|p1a: Rotten
+|-start|p1a: Rotten|move: Taunt
+|move|p1a: Rotten|Knock Off|p2a: Sableye
+|-damage|p2a: Sableye|282\/304
+|-enditem|p2a: Sableye|Leftovers|[from] move: Knock Off|[of] p1a: Rotten
+|
+|turn|2
+|
+|move|p2a: Sableye|Knock Off|p1a: Rotten
+|-damage|p1a: Rotten|208\/244
+|-enditem|p1a: Rotten|Leftovers|[from] move: Knock Off|[of] p2a: Sableye
+|move|p1a: Rotten|Infestation|p2a: Sableye
+|-damage|p2a: Sableye|276\/304
+|-activate|p2a: Sableye|move: Infestation|[of] p1a: Rotten
+|
+|-damage|p2a: Sableye|238\/304|[from] move: Infestation|[partiallytrapped]
+|turn|3
+|
+|switch|p1a: Got Cannons?|Blastoise, F|362\/362
+|move|p2a: Sableye|Will-O-Wisp|p1a: Got Cannons?
+|-status|p1a: Got Cannons?|brn
+|
+|-damage|p1a: Got Cannons?|317\/362 brn|[from] brn
+|-end|p2a: Sableye|Infestation|[partiallytrapped]
+|turn|4
+|
+|switch|p2a: Roserade|Roserade, M|324\/324
+|detailschange|p1a: Got Cannons?|Blastoise-Mega, F
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p1a: Got Cannons?|Ice Beam|p2a: Roserade
+|-crit|p2a: Roserade
+|-supereffective|p2a: Roserade
+|-damage|p2a: Roserade|60\/324
+|
+|-heal|p2a: Roserade|80\/324|[from] item: Black Sludge
+|-damage|p1a: Got Cannons?|272\/362 brn|[from] brn
+|turn|5
+|
+|switch|p2a: Cobalion|Cobalion|323\/323
+|switch|p1a: Victini|Victini|341\/341
+|
+|turn|6
+|
+|switch|p2a: Uxie|Uxie|354\/354
+|move|p1a: Victini|V-create|p2a: Uxie
+|-damage|p2a: Uxie|185\/354
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|
+|-heal|p2a: Uxie|207\/354|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Twitch|Sableye, M|304\/304
+|move|p2a: Uxie|Rain Dance|p2a: Uxie
+|-weather|RainDance
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Uxie|229\/354|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: Twitch|Taunt|p2a: Uxie
+|-start|p2a: Uxie|move: Taunt
+|cant|p2a: Uxie|move: Taunt|Toxic
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Uxie|251\/354|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Houndoom|Houndoom, F|291\/291
+|move|p1a: Twitch|Will-O-Wisp|p2a: Houndoom
+|-start|p2a: Houndoom|ability: Flash Fire
+|
+|-weather|RainDance|[upkeep]
+|turn|10
+|
+|move|p2a: Houndoom|Pursuit|p1a: Twitch|[from]Pursuit
+|-damage|p1a: Twitch|121\/304
+|-damage|p2a: Houndoom|262\/291|[from] item: Life Orb
+|switch|p1a: Rotten|Shuckle, F|208\/244
+|
+|-weather|RainDance|[upkeep]
+|turn|11
+|
+|switch|p2a: Roserade|Roserade, M|80\/324
+|move|p1a: Rotten|Stealth Rock|p2a: Roserade
+|-sidestart|p2: AlmegaKrypthon|move: Stealth Rock
+|
+|-weather|none
+|-heal|p2a: Roserade|100\/324|[from] item: Black Sludge
+|turn|12
+|
+|move|p2a: Roserade|Leech Seed|p1a: Rotten
+|-start|p1a: Rotten|move: Leech Seed
+|move|p1a: Rotten|Infestation|p2a: Roserade
+|-damage|p2a: Roserade|96\/324
+|-activate|p2a: Roserade|move: Infestation|[of] p1a: Rotten
+|
+|-heal|p2a: Roserade|116\/324|[from] item: Black Sludge
+|-damage|p1a: Rotten|178\/244|[from] Leech Seed|[of] p2a: Roserade
+|-heal|p2a: Roserade|146\/324|[silent]
+|-damage|p2a: Roserade|106\/324|[from] move: Infestation|[partiallytrapped]
+|turn|13
+|
+|move|p2a: Roserade|Spikes|p1a: Rotten
+|-sidestart|p1: killerASCII|Spikes
+|move|p1a: Rotten|Knock Off|p2a: Roserade
+|-damage|p2a: Roserade|80\/324
+|-enditem|p2a: Roserade|Black Sludge|[from] move: Knock Off|[of] p1a: Rotten
+|
+|-damage|p1a: Rotten|148\/244|[from] Leech Seed|[of] p2a: Roserade
+|-heal|p2a: Roserade|110\/324|[silent]
+|-damage|p2a: Roserade|70\/324|[from] move: Infestation|[partiallytrapped]
+|turn|14
+|
+|switch|p1a: Merica|Braviary, M|341\/341
+|move|p2a: Roserade|Spikes|p1a: Merica
+|-sidestart|p1: killerASCII|Spikes
+|
+|-end|p2a: Roserade|Infestation|[partiallytrapped]
+|turn|15
+|
+|move|p1a: Merica|U-turn|p2a: Roserade
+|-damage|p2a: Roserade|0 fnt
+|faint|p2a: Roserade
+|
+|switch|p1a: Rotten|Shuckle, F|148\/244
+|-damage|p1a: Rotten|108\/244|[from] Spikes
+|
+|
+|switch|p2a: Blastoise|Blastoise, F|358\/358
+|-damage|p2a: Blastoise|314\/358|[from] Stealth Rock
+|turn|16
+|
+|detailschange|p2a: Blastoise|Blastoise-Mega, F
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Blastoise|Water Pulse|p1a: Rotten
+|-supereffective|p1a: Rotten
+|-damage|p1a: Rotten|0 fnt
+|faint|p1a: Rotten
+|
+|
+|switch|p1a: Victini|Victini|341\/341
+|-damage|p1a: Victini|285\/341|[from] Spikes
+|turn|17
+|
+|move|p1a: Victini|Bolt Strike|p2a: Blastoise
+|-supereffective|p2a: Blastoise
+|-damage|p2a: Blastoise|102\/358
+|move|p2a: Blastoise|Dark Pulse|p1a: Victini
+|-crit|p1a: Victini
+|-supereffective|p1a: Victini
+|-damage|p1a: Victini|0 fnt
+|faint|p1a: Victini
+|
+|
+|switch|p1a: Got Cannons?|Blastoise-Mega, F|272\/362 brn
+|-damage|p1a: Got Cannons?|212\/362 brn|[from] Spikes
+|turn|18
+|
+|move|p2a: Blastoise|Rapid Spin|p1a: Got Cannons?
+|-damage|p1a: Got Cannons?|198\/362 brn
+|-sideend|p2: AlmegaKrypthon|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Blastoise
+|move|p1a: Got Cannons?|Aura Sphere|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|-damage|p1a: Got Cannons?|153\/362 brn|[from] brn
+|
+|switch|p2a: Cobalion|Cobalion|323\/323
+|turn|19
+|
+|switch|p1a: Twitch|Sableye, M|121\/304
+|-damage|p1a: Twitch|71\/304|[from] Spikes
+|move|p2a: Cobalion|Close Combat|p1a: Twitch
+|-immune|p1a: Twitch|[msg]
+|
+|-heal|p1a: Twitch|90\/304|[from] item: Leftovers
+|turn|20
+|
+|switch|p1a: Goodyear|Donphan, F|384\/384
+|-damage|p1a: Goodyear|320\/384|[from] Spikes
+|move|p2a: Cobalion|Iron Head|p1a: Goodyear
+|-damage|p1a: Goodyear|230\/384
+|
+|-heal|p1a: Goodyear|254\/384|[from] item: Leftovers
+|turn|21
+|
+|switch|p2a: Uxie|Uxie|251\/354
+|move|p1a: Goodyear|Earthquake|p2a: Uxie
+|-immune|p2a: Uxie|[msg]
+|
+|-heal|p2a: Uxie|273\/354|[from] item: Leftovers
+|-heal|p1a: Goodyear|278\/384|[from] item: Leftovers
+|turn|22
+|
+|move|p2a: Uxie|Stealth Rock|p1a: Goodyear
+|-sidestart|p1: killerASCII|move: Stealth Rock
+|move|p1a: Goodyear|Rapid Spin|p2a: Uxie
+|-damage|p2a: Uxie|257\/354
+|-sideend|p1: killerASCII|Spikes|[from] move: Rapid Spin|[of] p1a: Goodyear
+|-sideend|p1: killerASCII|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Goodyear
+|
+|-heal|p2a: Uxie|279\/354|[from] item: Leftovers
+|-heal|p1a: Goodyear|302\/384|[from] item: Leftovers
+|turn|23
+|
+|move|p2a: Uxie|Toxic|p1a: Goodyear
+|-status|p1a: Goodyear|tox
+|move|p1a: Goodyear|Knock Off|p2a: Uxie
+|-supereffective|p2a: Uxie
+|-damage|p2a: Uxie|125\/354
+|-enditem|p2a: Uxie|Leftovers|[from] move: Knock Off|[of] p1a: Goodyear
+|
+|-heal|p1a: Goodyear|326\/384 tox|[from] item: Leftovers
+|-damage|p1a: Goodyear|302\/384 tox|[from] psn
+|turn|24
+|
+|move|p2a: Uxie|Psychic|p1a: Goodyear
+|-damage|p1a: Goodyear|173\/384 tox
+|move|p1a: Goodyear|Knock Off|p2a: Uxie
+|-supereffective|p2a: Uxie
+|-damage|p2a: Uxie|27\/354
+|
+|-heal|p1a: Goodyear|197\/384 tox|[from] item: Leftovers
+|-damage|p1a: Goodyear|149\/384 tox|[from] psn
+|turn|25
+|
+|move|p1a: Goodyear|Ice Shard|p2a: Uxie
+|-damage|p2a: Uxie|0 fnt
+|faint|p2a: Uxie
+|
+|-heal|p1a: Goodyear|173\/384 tox|[from] item: Leftovers
+|-damage|p1a: Goodyear|101\/384 tox|[from] psn
+|
+|switch|p2a: Houndoom|Houndoom, F|262\/291
+|turn|26
+|
+|move|p2a: Houndoom|Crunch|p1a: Goodyear
+|-damage|p1a: Goodyear|0 fnt
+|-damage|p2a: Houndoom|233\/291|[from] item: Life Orb
+|faint|p1a: Goodyear
+|
+|
+|switch|p1a: Got Cannons?|Blastoise-Mega, F|153\/362 brn
+|turn|27
+|
+|move|p2a: Houndoom|Sucker Punch|p1a: Got Cannons?
+|-damage|p1a: Got Cannons?|20\/362 brn
+|-damage|p2a: Houndoom|204\/291|[from] item: Life Orb
+|move|p1a: Got Cannons?|Water Pulse|p2a: Houndoom
+|-supereffective|p2a: Houndoom
+|-damage|p2a: Houndoom|0 fnt
+|faint|p2a: Houndoom
+|
+|-damage|p1a: Got Cannons?|0 fnt|[from] brn
+|faint|p1a: Got Cannons?
+|
+|switch|p1a: Twitch|Sableye, M|90\/304
+|switch|p2a: Sableye|Sableye, F|238\/304
+|turn|28
+|
+|move|p2a: Sableye|Taunt|p1a: Twitch
+|-start|p1a: Twitch|move: Taunt
+|cant|p1a: Twitch|move: Taunt|Taunt
+|
+|-heal|p1a: Twitch|109\/304|[from] item: Leftovers
+|turn|29
+|
+|move|p2a: Sableye|Will-O-Wisp|p1a: Twitch
+|-status|p1a: Twitch|brn
+|move|p1a: Twitch|Foul Play|p2a: Sableye
+|-damage|p2a: Sableye|184\/304
+|
+|-heal|p1a: Twitch|128\/304 brn|[from] item: Leftovers
+|-damage|p1a: Twitch|90\/304 brn|[from] brn
+|turn|30
+|
+|move|p1a: Twitch|Foul Play|p2a: Sableye
+|-damage|p2a: Sableye|129\/304
+|move|p2a: Sableye|Knock Off|p1a: Twitch
+|-damage|p1a: Twitch|0 fnt
+|-enditem|p1a: Twitch|Leftovers|[from] move: Knock Off|[of] p2a: Sableye
+|faint|p1a: Twitch
+|
+|
+|switch|p1a: Merica|Braviary, M|341\/341
+|turn|31
+|
+|move|p2a: Sableye|Will-O-Wisp|p1a: Merica
+|-status|p1a: Merica|brn
+|move|p1a: Merica|Brave Bird|p2a: Sableye
+|-crit|p2a: Sableye
+|-damage|p2a: Sableye|0 fnt
+|-damage|p1a: Merica|298\/341 brn|[from] recoil|[of] p2a: Sableye
+|faint|p2a: Sableye
+|
+|-damage|p1a: Merica|256\/341 brn|[from] brn
+|
+|switch|p2a: Cobalion|Cobalion|323\/323
+|turn|32
+|
+|move|p1a: Merica|Brave Bird|p2a: Cobalion
+|-damage|p2a: Cobalion|244\/323
+|-damage|p1a: Merica|230\/341 brn|[from] recoil|[of] p2a: Cobalion
+|move|p2a: Cobalion|Stone Edge|p1a: Merica|[miss]
+|-miss|p2a: Cobalion|p1a: Merica
+|
+|-damage|p1a: Merica|188\/341 brn|[from] brn
+|turn|33
+|c|âkillerASCII|gg
+|
+|move|p1a: Merica|Brave Bird|p2a: Cobalion
+|-damage|p2a: Cobalion|168\/323
+|-damage|p1a: Merica|163\/341 brn|[from] recoil|[of] p2a: Cobalion
+|move|p2a: Cobalion|Stone Edge|p1a: Merica|[miss]
+|-miss|p2a: Cobalion|p1a: Merica
+|
+|-damage|p1a: Merica|121\/341 brn|[from] brn
+|turn|34
+|
+|move|p1a: Merica|Brave Bird|p2a: Cobalion
+|-damage|p2a: Cobalion|78\/323
+|-damage|p1a: Merica|91\/341 brn|[from] recoil|[of] p2a: Cobalion
+|move|p2a: Cobalion|Stone Edge|p1a: Merica
+|-supereffective|p1a: Merica
+|-damage|p1a: Merica|0 fnt
+|faint|p1a: Merica
+|
+|win|AlmegaKrypthon
+|raw|Ladder updating...
+|raw|killerASCII's rating: 1063 &rarr; <strong>1042<\/strong><br \/>(-21 for losing)
+|raw|AlmegaKrypthon's rating: 1034 &rarr; <strong>1072<\/strong><br \/>(+38 for winning)
+|c|âAlmegaKrypthon|gg
+|leave|killerASCII
+|player|p1

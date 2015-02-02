@@ -1,0 +1,349 @@
+|join|Rayoflightning
+|join|igotaznhairdoyou
+|player|p1|Rayoflightning|170
+|player|p2|igotaznhairdoyou|92
+|gametype|singles
+|tier|UU
+|rated
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Blastoise, M
+|poke|p1|Magneton
+|poke|p1|Crobat, F
+|poke|p1|Piloswine, F
+|poke|p1|Darmanitan, F
+|poke|p1|Shaymin
+|poke|p2|Snorlax, F
+|poke|p2|Zapdos
+|poke|p2|Suicune
+|poke|p2|Roserade, M
+|poke|p2|Azelf, shiny
+|poke|p2|Heracross, M
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Darmanitan|Darmanitan, F|351\/351
+|switch|p2a: Azelf|Azelf, shiny|292\/292
+|turn|1
+|callback|decision
+|
+|switch|p2a: Suicune|Suicune|404\/404
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Darmanitan|U-turn|p2a: Suicune
+|-damage|p2a: Suicune|350\/404
+|callback|decision
+|
+|switch|p1a: Shaymin|Shaymin|341\/341
+|
+|-heal|p2a: Suicune|375\/404|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, F|524\/524
+|move|p1a: Shaymin|Seed Flare|p2a: Snorlax
+|-damage|p2a: Snorlax|317\/524
+|-damage|p1a: Shaymin|307\/341|[from] item: Life Orb
+|
+|turn|3
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M|362\/362
+|move|p2a: Snorlax|Ice Punch|p1a: Blastoise
+|-resisted|p1a: Blastoise
+|-damage|p1a: Blastoise|312\/362
+|
+|-heal|p1a: Blastoise|334\/362|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: Crobat|Crobat, F|311\/311
+|switch|p2a: Roserade|Roserade, M|324\/324
+|
+|turn|5
+|callback|decision
+|
+|switch|p2a: Zapdos|Zapdos|383\/383
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Crobat|Brave Bird|p2a: Zapdos
+|-resisted|p2a: Zapdos
+|-damage|p2a: Zapdos|287\/383
+|-damage|p1a: Crobat|279\/311|[from] recoil|[of] p2a: Zapdos
+|
+|-heal|p2a: Zapdos|310\/383|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p1a: Piloswine|Piloswine, F|404\/404
+|move|p2a: Zapdos|Heat Wave|p1a: Piloswine
+|-supereffective|p1a: Piloswine
+|-damage|p1a: Piloswine|314\/404
+|
+|-heal|p2a: Zapdos|333\/383|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p2a: Suicune|Suicune|375\/404
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Piloswine|Stealth Rock|p2a: Suicune
+|-sidestart|p2: igotaznhairdoyou|move: Stealth Rock
+|
+|-heal|p2a: Suicune|400\/404|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p1a: Shaymin|Shaymin|307\/341
+|move|p2a: Suicune|Scald|p1a: Shaymin
+|-resisted|p1a: Shaymin
+|-damage|p1a: Shaymin|262\/341
+|
+|-heal|p2a: Suicune|404\/404|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p2a: Roserade|Roserade, M|324\/324
+|-damage|p2a: Roserade|284\/324|[from] Stealth Rock
+|move|p1a: Shaymin|Seed Flare|p2a: Roserade
+|-resisted|p2a: Roserade
+|-damage|p2a: Roserade|243\/324
+|-damage|p1a: Shaymin|228\/341|[from] item: Life Orb
+|
+|-heal|p2a: Roserade|263\/324|[from] item: Black Sludge
+|turn|10
+|callback|decision
+|
+|switch|p1a: Crobat|Crobat, F|279\/311
+|move|p2a: Roserade|Spikes|p1a: Crobat
+|-sidestart|p1: Rayoflightning|Spikes
+|
+|-heal|p2a: Roserade|283\/324|[from] item: Black Sludge
+|turn|11
+|callback|decision
+|
+|switch|p2a: Zapdos|Zapdos|333\/383
+|-damage|p2a: Zapdos|238\/383|[from] Stealth Rock
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Crobat|U-turn|p2a: Zapdos
+|-resisted|p2a: Zapdos
+|-damage|p2a: Zapdos|196\/383
+|callback|decision
+|
+|switch|p1a: Piloswine|Piloswine, F|314\/404
+|-damage|p1a: Piloswine|264\/404|[from] Spikes
+|
+|-heal|p2a: Zapdos|219\/383|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: Zapdos|Roost|p2a: Zapdos
+|-heal|p2a: Zapdos|383\/383
+|move|p1a: Piloswine|Earthquake|p2a: Zapdos
+|-supereffective|p2a: Zapdos
+|-damage|p2a: Zapdos|137\/383
+|
+|-heal|p2a: Zapdos|160\/383|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: Piloswine|Ice Shard|p2a: Zapdos
+|-supereffective|p2a: Zapdos
+|-damage|p2a: Zapdos|56\/383
+|move|p2a: Zapdos|Heat Wave|p1a: Piloswine
+|-supereffective|p1a: Piloswine
+|-damage|p1a: Piloswine|172\/404
+|
+|-heal|p2a: Zapdos|79\/383|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: Piloswine|Ice Shard|p2a: Zapdos
+|-supereffective|p2a: Zapdos
+|-damage|p2a: Zapdos|0 fnt
+|faint|p2a: Zapdos
+|
+|callback|decision
+|chat|igotaznhairdoyou|well done
+|chat|Rayoflightning|thanks
+|
+|switch|p2a: Suicune|Suicune|404\/404
+|-damage|p2a: Suicune|354\/404|[from] Stealth Rock
+|-ability|p2a: Suicune|Pressure
+|turn|15
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M|334\/362
+|-damage|p1a: Blastoise|289\/362|[from] Spikes
+|move|p2a: Suicune|Roar|p1a: Blastoise
+|drag|p1a: Darmanitan|Darmanitan, F|351\/351
+|-damage|p1a: Darmanitan|308\/351|[from] Spikes
+|
+|-heal|p2a: Suicune|379\/404|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Darmanitan|U-turn|p2a: Suicune
+|-damage|p2a: Suicune|319\/404
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M|289\/362
+|-damage|p1a: Blastoise|244\/362|[from] Spikes
+|move|p2a: Suicune|Roar|p1a: Blastoise
+|drag|p1a: Crobat|Crobat, F|279\/311
+|
+|-heal|p2a: Suicune|344\/404|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Crobat|U-turn|p2a: Suicune
+|-damage|p2a: Suicune|283\/404
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M|244\/362
+|-damage|p1a: Blastoise|199\/362|[from] Spikes
+|move|p2a: Suicune|Roar|p1a: Blastoise
+|drag|p1a: Shaymin|Shaymin|228\/341
+|-damage|p1a: Shaymin|186\/341|[from] Spikes
+|
+|-heal|p2a: Suicune|308\/404|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|switch|p2a: Roserade|Roserade, M|283\/324
+|-damage|p2a: Roserade|243\/324|[from] Stealth Rock
+|move|p1a: Shaymin|Psychic|p2a: Roserade
+|-supereffective|p2a: Roserade
+|-damage|p2a: Roserade|79\/324
+|-damage|p1a: Shaymin|152\/341|[from] item: Life Orb
+|
+|-heal|p2a: Roserade|99\/324|[from] item: Black Sludge
+|turn|19
+|callback|decision
+|
+|move|p1a: Shaymin|Psychic|p2a: Roserade
+|-supereffective|p2a: Roserade
+|-damage|p2a: Roserade|0 fnt
+|-damage|p1a: Shaymin|118\/341|[from] item: Life Orb
+|faint|p2a: Roserade
+|
+|callback|decision
+|
+|switch|p2a: Azelf|Azelf, shiny|292\/292
+|-damage|p2a: Azelf|256\/292|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M|199\/362
+|-damage|p1a: Blastoise|154\/362|[from] Spikes
+|move|p2a: Azelf|Stealth Rock|p1a: Blastoise
+|-sidestart|p1: Rayoflightning|move: Stealth Rock
+|
+|-heal|p1a: Blastoise|176\/362|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p2a: Azelf|Explosion|p1a: Blastoise
+|-crit|p1a: Blastoise
+|-damage|p1a: Blastoise|0 fnt
+|faint|p1a: Blastoise
+|faint|p2a: Azelf
+|
+|callback|decision
+|
+|switch|p1a: Crobat|Crobat, F|279\/311
+|-damage|p1a: Crobat|202\/311|[from] Stealth Rock
+|switch|p2a: Heracross|Heracross, M|302\/302
+|-damage|p2a: Heracross|265\/302|[from] Stealth Rock
+|turn|22
+|callback|decision
+|
+|switch|p1a: Magneton|Magneton|294\/294
+|-damage|p1a: Magneton|276\/294|[from] Stealth Rock
+|-damage|p1a: Magneton|240\/294|[from] Spikes
+|move|p2a: Heracross|Stone Edge|p1a: Magneton|[miss]
+|-miss|p2a: Heracross|p1a: Magneton
+|
+|turn|23
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, F|317\/524
+|-damage|p2a: Snorlax|252\/524|[from] Stealth Rock
+|move|p1a: Magneton|Thunderbolt|p2a: Snorlax
+|-damage|p2a: Snorlax|108\/524
+|
+|turn|24
+|callback|decision
+|
+|move|p1a: Magneton|Magnet Rise|p1a: Magneton
+|-start|p1a: Magneton|Magnet Rise
+|move|p2a: Snorlax|Earthquake|p1a: Magneton
+|-immune|p1a: Magneton|[msg]
+|
+|turn|25
+|callback|decision
+|
+|move|p1a: Magneton|Substitute|p1a: Magneton
+|-start|p1a: Magneton|Substitute
+|-damage|p1a: Magneton|167\/294
+|move|p2a: Snorlax|Earthquake|p1a: Magneton
+|-immune|p1a: Magneton|[msg]
+|
+|turn|26
+|callback|decision
+|
+|move|p1a: Magneton|Thunderbolt|p2a: Snorlax
+|-damage|p2a: Snorlax|0 fnt
+|faint|p2a: Snorlax
+|
+|callback|decision
+|
+|switch|p2a: Heracross|Heracross, M|265\/302
+|-damage|p2a: Heracross|228\/302|[from] Stealth Rock
+|turn|27
+|callback|decision
+|
+|move|p2a: Heracross|Close Combat|p1a: Magneton
+|-supereffective|p1a: Magneton
+|-end|p1a: Magneton|Substitute
+|-unboost|p2a: Heracross|def|1
+|-unboost|p2a: Heracross|spd|1
+|move|p1a: Magneton|Substitute|p1a: Magneton
+|-start|p1a: Magneton|Substitute
+|-damage|p1a: Magneton|94\/294
+|
+|turn|28
+|callback|decision
+|
+|move|p2a: Heracross|Close Combat|p1a: Magneton
+|-supereffective|p1a: Magneton
+|-end|p1a: Magneton|Substitute
+|-unboost|p2a: Heracross|def|1
+|-unboost|p2a: Heracross|spd|1
+|move|p1a: Magneton|Thunderbolt|p2a: Heracross
+|-damage|p2a: Heracross|0 fnt
+|faint|p2a: Heracross
+|
+|-end|p1a: Magneton|Magnet Rise
+|callback|decision
+|
+|switch|p2a: Suicune|Suicune|308\/404
+|-damage|p2a: Suicune|258\/404|[from] Stealth Rock
+|-ability|p2a: Suicune|Pressure
+|turn|29
+|callback|decision
+|
+|move|p1a: Magneton|Thunderbolt|p2a: Suicune
+|-supereffective|p2a: Suicune
+|-damage|p2a: Suicune|0 fnt
+|faint|p2a: Suicune
+|
+|win|Rayoflightning
+|raw|Ladder updating...
+|raw|Rayoflightning's rating: 1726 &rarr; <strong>1735<\/strong><br \/>(+9 for winning)
+|raw|igotaznhairdoyou's rating: 1717 &rarr; <strong>1714<\/strong><br \/>(-3 for losing)
+|chat|igotaznhairdoyou|gg
+|chat|Rayoflightning|gg

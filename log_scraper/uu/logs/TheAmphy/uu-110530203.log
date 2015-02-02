@@ -1,0 +1,259 @@
+|join|Hogback_fosh_men
+|join|TheAmphy
+|player|p1|Hogback_fosh_men|266
+|player|p2|TheAmphy|286
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Porygon-Z
+|poke|p1|Blastoise, M
+|poke|p1|Galvantula, M, shiny
+|poke|p1|Florges, F, shiny
+|poke|p1|Jirachi
+|poke|p1|Darmanitan, M
+|poke|p2|Porygon-Z
+|poke|p2|Galvantula, M
+|poke|p2|Flygon, M
+|poke|p2|Darmanitan, F
+|poke|p2|Trevenant, F
+|poke|p2|Swampert, M
+|teampreview
+|
+|start
+|switch|p1a: O.P|Darmanitan, M|352\/352
+|switch|p2a: Galvantula|Galvantula, M|281\/281
+|turn|1
+|
+|switch|p2a: Swampert|Swampert, M|404\/404
+|move|p1a: O.P|Earthquake|p2a: Swampert
+|-damage|p2a: Swampert|300\/404
+|
+|-heal|p2a: Swampert|325\/404|[from] item: Leftovers
+|turn|2
+|
+|switch|p1a: SuperSoaker|Blastoise, M|362\/362
+|switch|p2a: Darmanitan|Darmanitan, F|351\/351
+|
+|turn|3
+|
+|-formechange|p1a: SuperSoaker|Blastoise-Mega
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Darmanitan|U-turn|p1a: SuperSoaker
+|-damage|p1a: SuperSoaker|283\/362
+|
+|switch|p2a: Trevenant|Trevenant, F|374\/374
+|move|p1a: SuperSoaker|Scald|p2a: Trevenant
+|-resisted|p2a: Trevenant
+|-damage|p2a: Trevenant|308\/374
+|
+|turn|4
+|
+|move|p1a: SuperSoaker|Dark Pulse|p2a: Trevenant
+|-supereffective|p2a: Trevenant
+|-damage|p2a: Trevenant|60\/374
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|153\/374|[from] item: Sitrus Berry
+|move|p2a: Trevenant|Leech Seed|p1a: SuperSoaker
+|-start|p1a: SuperSoaker|move: Leech Seed
+|
+|-damage|p1a: SuperSoaker|238\/362|[from] Leech Seed|[of] p2a: Trevenant
+|-heal|p2a: Trevenant|198\/374|[silent]
+|turn|5
+|
+|switch|p1a: EightLeggedFreak|Galvantula, M, shiny|282\/282
+|move|p2a: Trevenant|Protect|p2a: Trevenant
+|-fail|p2a: Trevenant
+|
+|turn|6
+|
+|move|p1a: EightLeggedFreak|Sticky Web|p2a: Trevenant
+|-sidestart|p2: TheAmphy|move: Sticky Web
+|move|p2a: Trevenant|Leech Seed|p1a: EightLeggedFreak
+|-start|p1a: EightLeggedFreak|move: Leech Seed
+|
+|-damage|p1a: EightLeggedFreak|247\/282|[from] Leech Seed|[of] p2a: Trevenant
+|-heal|p2a: Trevenant|233\/374|[silent]
+|-item|p2a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|turn|7
+|chat|TheAmphy|aka, a spider
+|
+|switch|p1a: PyramidHead|Jirachi|342\/342
+|move|p2a: Trevenant|Will-O-Wisp|p1a: PyramidHead
+|-status|p1a: PyramidHead|brn
+|
+|-damage|p1a: PyramidHead|300\/342 brn|[from] brn
+|turn|8
+|chat|Hogback_fosh_men|lol ikr
+|
+|switch|p2a: Galvantula|Galvantula, M|281\/281
+|-activate|p2a: Galvantula|move: Sticky Web
+|-unboost|p2a: Galvantula|spe|1
+|move|p1a: PyramidHead|Stealth Rock|p2a: Galvantula
+|-sidestart|p2: TheAmphy|move: Stealth Rock
+|
+|-heal|p1a: PyramidHead|321\/342 brn|[from] item: Leftovers
+|-damage|p1a: PyramidHead|279\/342 brn|[from] brn
+|turn|9
+|
+|move|p1a: PyramidHead|Iron Head|p2a: Galvantula
+|-resisted|p2a: Galvantula
+|-damage|p2a: Galvantula|231\/281
+|cant|p2a: Galvantula|flinch
+|
+|-heal|p1a: PyramidHead|300\/342 brn|[from] item: Leftovers
+|-damage|p1a: PyramidHead|258\/342 brn|[from] brn
+|turn|10
+|
+|move|p1a: PyramidHead|Iron Head|p2a: Galvantula
+|-resisted|p2a: Galvantula
+|-damage|p2a: Galvantula|180\/281
+|cant|p2a: Galvantula|flinch
+|
+|-heal|p1a: PyramidHead|279\/342 brn|[from] item: Leftovers
+|-damage|p1a: PyramidHead|237\/342 brn|[from] brn
+|turn|11
+|
+|move|p1a: PyramidHead|Iron Head|p2a: Galvantula
+|-resisted|p2a: Galvantula
+|-damage|p2a: Galvantula|127\/281
+|move|p2a: Galvantula|Sticky Web|p1a: PyramidHead
+|-sidestart|p1: Hogback_fosh_men|move: Sticky Web
+|
+|-heal|p1a: PyramidHead|258\/342 brn|[from] item: Leftovers
+|-damage|p1a: PyramidHead|216\/342 brn|[from] brn
+|turn|12
+|join|Juice Weasel
+|
+|move|p1a: PyramidHead|Body Slam|p2a: Galvantula
+|-damage|p2a: Galvantula|55\/281
+|move|p2a: Galvantula|Volt Switch|p1a: PyramidHead
+|-damage|p1a: PyramidHead|104\/342 brn
+|
+|switch|p2a: Flygon|Flygon, M|302\/302
+|-damage|p2a: Flygon|284\/302|[from] Stealth Rock
+|
+|-heal|p1a: PyramidHead|125\/342 brn|[from] item: Leftovers
+|-damage|p1a: PyramidHead|83\/342 brn|[from] brn
+|turn|13
+|
+|move|p2a: Flygon|U-turn|p1a: PyramidHead
+|-damage|p1a: PyramidHead|0 fnt
+|faint|p1a: PyramidHead
+|
+|switch|p2a: Porygon-Z|Porygon-Z|312\/312
+|-damage|p2a: Porygon-Z|273\/312|[from] Stealth Rock
+|-activate|p2a: Porygon-Z|move: Sticky Web
+|-unboost|p2a: Porygon-Z|spe|1
+|
+|
+|switch|p1a: UlikemySmell?|Florges, F, shiny|360\/360
+|-activate|p1a: UlikemySmell?|move: Sticky Web
+|-unboost|p1a: UlikemySmell?|spe|1
+|turn|14
+|
+|switch|p2a: Galvantula|Galvantula, M|55\/281
+|-activate|p2a: Galvantula|move: Sticky Web
+|-unboost|p2a: Galvantula|spe|1
+|-damage|p2a: Galvantula|0 fnt|[from] Stealth Rock
+|faint|p2a: Galvantula
+|move|p1a: UlikemySmell?|Wish|p1a: UlikemySmell?
+|
+|
+|switch|p2a: Flygon|Flygon, M|284\/302
+|-damage|p2a: Flygon|266\/302|[from] Stealth Rock
+|turn|15
+|
+|move|p2a: Flygon|Earthquake|p1a: UlikemySmell?
+|-damage|p1a: UlikemySmell?|86\/360
+|move|p1a: UlikemySmell?|Moonblast|p2a: Flygon
+|-supereffective|p2a: Flygon
+|-damage|p2a: Flygon|0 fnt
+|faint|p2a: Flygon
+|
+|-heal|p1a: UlikemySmell?|266\/360|[from] move: Wish|[wisher] UlikemySmell?
+|-heal|p1a: UlikemySmell?|288\/360|[from] item: Leftovers
+|
+|switch|p2a: Porygon-Z|Porygon-Z|273\/312
+|-damage|p2a: Porygon-Z|234\/312|[from] Stealth Rock
+|-activate|p2a: Porygon-Z|move: Sticky Web
+|-unboost|p2a: Porygon-Z|spe|1
+|turn|16
+|
+|move|p2a: Porygon-Z|Nasty Plot|p2a: Porygon-Z
+|-boost|p2a: Porygon-Z|spa|2
+|move|p1a: UlikemySmell?|Wish|p1a: UlikemySmell?
+|
+|-heal|p1a: UlikemySmell?|310\/360|[from] item: Leftovers
+|turn|17
+|
+|move|p2a: Porygon-Z|Nasty Plot|p2a: Porygon-Z
+|-boost|p2a: Porygon-Z|spa|2
+|move|p1a: UlikemySmell?|Moonblast|p2a: Porygon-Z
+|-damage|p2a: Porygon-Z|30\/312
+|
+|-heal|p1a: UlikemySmell?|360\/360|[from] move: Wish|[wisher] UlikemySmell?
+|turn|18
+|
+|move|p2a: Porygon-Z|Tri Attack|p1a: UlikemySmell?
+|-damage|p1a: UlikemySmell?|0 fnt
+|-damage|p2a: Porygon-Z|0 fnt|[from] item: Life Orb
+|faint|p1a: UlikemySmell?
+|faint|p2a: Porygon-Z
+|
+|
+|switch|p2a: Darmanitan|Darmanitan, F|351\/351
+|-activate|p2a: Darmanitan|move: Sticky Web
+|-unboost|p2a: Darmanitan|spe|1
+|-damage|p2a: Darmanitan|264\/351|[from] Stealth Rock
+|switch|p1a: SuperSoaker|Blastoise, M|238\/362
+|-formechange|p1a: SuperSoaker|Blastoise-Mega
+|-activate|p1a: SuperSoaker|move: Sticky Web
+|-unboost|p1a: SuperSoaker|spe|1
+|turn|19
+|
+|move|p2a: Darmanitan|U-turn|p1a: SuperSoaker
+|-damage|p1a: SuperSoaker|160\/362
+|
+|switch|p2a: Trevenant|Trevenant, F|233\/374
+|-activate|p2a: Trevenant|move: Sticky Web
+|-unboost|p2a: Trevenant|spe|1
+|-damage|p2a: Trevenant|187\/374|[from] Stealth Rock
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|280\/374|[from] item: Sitrus Berry
+|move|p1a: SuperSoaker|Scald|p2a: Trevenant
+|-resisted|p2a: Trevenant
+|-damage|p2a: Trevenant|211\/374
+|-status|p2a: Trevenant|brn
+|
+|-damage|p2a: Trevenant|165\/374 brn|[from] brn
+|-item|p2a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|-enditem|p2a: Trevenant|Sitrus Berry|[eat]
+|-heal|p2a: Trevenant|258\/374 brn|[from] item: Sitrus Berry
+|turn|20
+|
+|move|p1a: SuperSoaker|Dark Pulse|p2a: Trevenant
+|-supereffective|p2a: Trevenant
+|-damage|p2a: Trevenant|0 fnt
+|faint|p2a: Trevenant
+|
+|
+|switch|p2a: Darmanitan|Darmanitan, F|264\/351
+|-damage|p2a: Darmanitan|177\/351|[from] Stealth Rock
+|-activate|p2a: Darmanitan|move: Sticky Web
+|-unboost|p2a: Darmanitan|spe|1
+|turn|21
+|-message|TheAmphy forfeited.
+|
+|win|Hogback_fosh_men
+|raw|Ladder updating...
+|leave|TheAmphy
+|player|p2

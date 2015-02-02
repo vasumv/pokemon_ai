@@ -1,0 +1,217 @@
+|join|halp moi
+|join|kokoloko
+|player|p1|halp moi|289
+|player|p2|kokoloko|169
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Aerodactyl, M
+|poke|p1|Nidoqueen, F
+|poke|p1|Starmie
+|poke|p1|Lucario, F
+|poke|p1|Shaymin
+|poke|p1|Krookodile, M
+|poke|p2|Machamp, M
+|poke|p2|Alakazam, F
+|poke|p2|Jirachi
+|poke|p2|Crobat, M
+|poke|p2|Swampert, F
+|poke|p2|Sableye, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Shaymin|Shaymin|341\/341
+|switch|p2a: Swampert|Swampert, F|401\/401
+|turn|1
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|325\/325
+|move|p2a: Swampert|Protect|p2a: Swampert
+|-fail|p2a: Swampert
+|
+|turn|2
+|
+|switch|p1a: Starmie|Starmie|323\/323
+|move|p2a: Swampert|Earthquake|p1a: Starmie
+|-damage|p1a: Starmie|176\/323
+|
+|-heal|p1a: Starmie|196\/323|[from] item: Leftovers
+|turn|3
+|
+|switch|p2a: Jirachi|Jirachi|341\/341
+|move|p1a: Starmie|Scald|p2a: Jirachi
+|-damage|p2a: Jirachi|247\/341
+|
+|-heal|p1a: Starmie|216\/323|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|325\/325
+|move|p2a: Jirachi|U-turn|p1a: Nidoqueen
+|-resisted|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|283\/325
+|
+|switch|p2a: Alakazam|Alakazam, F|252\/252
+|
+|turn|5
+|
+|switch|p1a: Krookodile|Krookodile, M|331\/331
+|detailschange|p2a: Alakazam|Alakazam-Mega, F
+|message|Alakazam has Mega Evolved into Mega Alakazam!
+|-ability|p2a: Alakazam|Moxie|[from] ability: Trace|[of] p1a: Krookodile
+|move|p2a: Alakazam|Psychic|p1a: Krookodile
+|-immune|p1a: Krookodile|[msg]
+|
+|turn|6
+|
+|move|p2a: Alakazam|Protect|p2a: Alakazam
+|-singleturn|p2a: Alakazam|Protect
+|move|p1a: Krookodile|Pursuit|p2a: Alakazam
+|-activate|p2a: Alakazam|Protect
+|
+|turn|7
+|
+|move|p1a: Krookodile|Pursuit|p2a: Alakazam
+|-supereffective|p2a: Alakazam
+|-damage|p2a: Alakazam|60\/252
+|move|p2a: Alakazam|Dazzling Gleam|p1a: Krookodile
+|-supereffective|p1a: Krookodile
+|-damage|p1a: Krookodile|0 fnt
+|faint|p1a: Krookodile
+|-boost|p2a: Alakazam|atk|1|[from] ability: Moxie
+|
+|
+|switch|p1a: Lucario|Lucario, F|281\/281
+|turn|8
+|
+|switch|p2a: Swampert|Swampert, F|401\/401
+|move|p1a: Lucario|Extreme Speed|p2a: Swampert
+|-damage|p2a: Swampert|307\/401
+|-damage|p1a: Lucario|253\/281|[from] item: Life Orb
+|
+|-heal|p2a: Swampert|332\/401|[from] item: Leftovers
+|turn|9
+|
+|switch|p1a: Shaymin|Shaymin|341\/341
+|move|p2a: Swampert|Stealth Rock|p1a: Shaymin
+|-sidestart|p1: halp moi|move: Stealth Rock
+|
+|-heal|p2a: Swampert|357\/401|[from] item: Leftovers
+|turn|10
+|
+|move|p2a: Swampert|Protect|p2a: Swampert
+|-singleturn|p2a: Swampert|Protect
+|move|p1a: Shaymin|Seed Flare|p2a: Swampert
+|-activate|p2a: Swampert|Protect
+|
+|-heal|p2a: Swampert|382\/401|[from] item: Leftovers
+|turn|11
+|
+|switch|p2a: Crobat|Crobat, M|343\/343
+|move|p1a: Shaymin|Seed Flare|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|269\/343
+|-damage|p1a: Shaymin|307\/341|[from] item: Life Orb
+|
+|-heal|p2a: Crobat|290\/343|[from] item: Black Sludge
+|turn|12
+|
+|move|p2a: Crobat|Brave Bird|p1a: Shaymin
+|-supereffective|p1a: Shaymin
+|-damage|p1a: Shaymin|11\/341
+|-damage|p2a: Crobat|192\/343|[from] recoil|[of] p1a: Shaymin
+|move|p1a: Shaymin|Seed Flare|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|126\/343
+|-damage|p1a: Shaymin|0 fnt|[from] item: Life Orb
+|faint|p1a: Shaymin
+|
+|-heal|p2a: Crobat|147\/343|[from] item: Black Sludge
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|283\/325
+|-damage|p1a: Nidoqueen|263\/325|[from] Stealth Rock
+|turn|13
+|
+|move|p2a: Crobat|Brave Bird|p1a: Nidoqueen
+|-crit|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|1\/325
+|-damage|p2a: Crobat|61\/343|[from] recoil|[of] p1a: Nidoqueen
+|move|p1a: Nidoqueen|Ice Beam|p2a: Crobat
+|-supereffective|p2a: Crobat
+|-damage|p2a: Crobat|0 fnt
+|faint|p2a: Crobat
+|
+|c|âhalp moi|:(
+|
+|switch|p2a: Jirachi|Jirachi|247\/341
+|turn|14
+|
+|move|p2a: Jirachi|Healing Wish|p2a: Jirachi
+|faint|p2a: Jirachi
+|move|p1a: Nidoqueen|Earth Power|p2: Jirachi|[notarget]
+|-notarget
+|
+|
+|switch|p2a: Alakazam|Alakazam-Mega, F|60\/252
+|-heal|p2a: Alakazam|252\/252|[from] move: Healing Wish
+|-ability|p2a: Alakazam|Sheer Force|[from] ability: Trace|[of] p1a: Nidoqueen
+|turn|15
+|c|âkokoloko|not bad.
+|
+|move|p2a: Alakazam|Psychic|p1a: Nidoqueen
+|-supereffective|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|0 fnt
+|faint|p1a: Nidoqueen
+|
+|
+|switch|p1a: Lucario|Lucario, F|253\/281
+|-damage|p1a: Lucario|245\/281|[from] Stealth Rock
+|turn|16
+|c|âhalp moi|this monster needs to go
+|
+|move|p1a: Lucario|Extreme Speed|p2a: Alakazam
+|-damage|p2a: Alakazam|77\/252
+|-damage|p1a: Lucario|217\/281|[from] item: Life Orb
+|move|p2a: Alakazam|Psychic|p1a: Lucario
+|-damage|p1a: Lucario|0 fnt
+|faint|p1a: Lucario
+|
+|c|âkokoloko|lol yep
+|c|âhalp moi|gg
+|
+|switch|p1a: Aerodactyl|Aerodactyl, M|309\/309
+|-damage|p1a: Aerodactyl|232\/309|[from] Stealth Rock
+|-ability|p1a: Aerodactyl|Pressure
+|turn|17
+|c|âkokoloko|"its the same as LO timid zam"
+|c|âkokoloko|right.
+|c|âhalp moi|L
+|
+|move|p2a: Alakazam|Psychic|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|0 fnt
+|faint|p1a: Aerodactyl
+|
+|
+|switch|p1a: Starmie|Starmie|216\/323
+|-damage|p1a: Starmie|176\/323|[from] Stealth Rock
+|turn|18
+|c|âkokoloko|gg
+|
+|move|p2a: Alakazam|Shadow Ball|p1a: Starmie
+|-supereffective|p1a: Starmie
+|-damage|p1a: Starmie|0 fnt
+|faint|p1a: Starmie
+|
+|win|kokoloko
+|raw|Ladder updating...
+|raw|halp moi's rating: 1504 &rarr; <strong>1490<\/strong><br \/>(-14 for losing)
+|raw|kokoloko's rating: 1609 &rarr; <strong>1623<\/strong><br \/>(+14 for winning)

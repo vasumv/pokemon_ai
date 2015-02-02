@@ -1,0 +1,345 @@
+|join|FelixE
+|join|Phantom7DX
+|player|p1|FelixE|144
+|player|p2|Phantom7DX|267
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Politoed, F, shiny
+|poke|p1|Toxicroak, M
+|poke|p1|Thundurus-Therian, M
+|poke|p1|Gengar, F
+|poke|p1|Salamence, M
+|poke|p1|Jirachi, shiny
+|poke|p2|Kyurem-Black
+|poke|p2|Lucario, F
+|poke|p2|Gliscor, M
+|poke|p2|Mamoswine, F
+|poke|p2|Landorus-Therian, M
+|poke|p2|Volcarona, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Bailarbailar|Politoed, F, shiny|384\/384
+|switch|p2a: Kyurem-Black|Kyurem-Black|391\/391
+|-ability|p2a: Kyurem-Black|Teravolt
+|-weather|RainDance|[from] ability: Drizzle|[of] p1a: Bailarbailar
+|turn|1
+|callback|decision
+|
+|switch|p1a: King|Jirachi, shiny|404\/404
+|move|p2a: Kyurem-Black|Outrage|p1a: King
+|-resisted|p1a: King
+|-damage|p1a: King|222\/404
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: King|247\/404|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|move|p2a: Kyurem-Black|Outrage|p1a: King
+|-resisted|p1a: King
+|-damage|p1a: King|81\/404
+|move|p1a: King|Thunder|p2a: Kyurem-Black
+|-resisted|p2a: Kyurem-Black
+|-damage|p2a: Kyurem-Black|337\/391
+|
+|-end|p2a: Kyurem-Black|rampage
+|-start|p2a: Kyurem-Black|confusion
+|-weather|RainDance|[upkeep]
+|-heal|p1a: King|106\/404|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|-activate|p2a: Kyurem-Black|confusion
+|-damage|p2a: Kyurem-Black|254\/391
+|move|p1a: King|Substitute|p1a: King
+|-start|p1a: King|Substitute
+|-damage|p1a: King|5\/404
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: King|30\/404|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|-activate|p2a: Kyurem-Black|confusion
+|-damage|p2a: Kyurem-Black|166\/391
+|move|p1a: King|Psyshock|p2a: Kyurem-Black
+|-damage|p2a: Kyurem-Black|70\/391
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: King|55\/404|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|-activate|p2a: Kyurem-Black|confusion
+|move|p2a: Kyurem-Black|Outrage|p1a: King
+|-resisted|p1a: King
+|-end|p1a: King|Substitute
+|move|p1a: King|Psyshock|p2a: Kyurem-Black
+|-damage|p2a: Kyurem-Black|0 fnt
+|faint|p2a: Kyurem-Black
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: King|80\/404|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Mamoswine|Mamoswine, F|424\/424
+|turn|6
+|callback|decision
+|
+|switch|p1a: SlimShady|Gengar, F|261\/261
+|move|p2a: Mamoswine|Earthquake|p1a: SlimShady
+|-immune|p1a: SlimShady|[msg]
+|
+|-weather|RainDance|[upkeep]
+|turn|7
+|callback|decision
+|
+|move|p1a: SlimShady|Focus Blast|p2a: Mamoswine
+|-supereffective|p2a: Mamoswine
+|-enditem|p2a: Mamoswine|Focus Sash
+|-damage|p2a: Mamoswine|1\/424
+|-unboost|p2a: Mamoswine|spd|1
+|move|p2a: Mamoswine|Icicle Crash|p1a: SlimShady
+|-enditem|p1a: SlimShady|Focus Sash
+|-damage|p1a: SlimShady|1\/261
+|
+|-weather|RainDance|[upkeep]
+|turn|8
+|callback|decision
+|
+|move|p2a: Mamoswine|Ice Shard|p1a: SlimShady
+|-damage|p1a: SlimShady|0 fnt
+|faint|p1a: SlimShady
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Croky-chips|Toxicroak, M|370\/370
+|turn|9
+|callback|decision
+|
+|move|p1a: Croky-chips|Bulk Up|p1a: Croky-chips
+|-boost|p1a: Croky-chips|atk|1
+|-boost|p1a: Croky-chips|def|1
+|move|p2a: Mamoswine|Earthquake|p1a: Croky-chips
+|-supereffective|p1a: Croky-chips
+|-damage|p1a: Croky-chips|0 fnt
+|faint|p1a: Croky-chips
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: King|Jirachi, shiny|80\/404
+|turn|10
+|callback|decision
+|
+|switch|p1a: BuzzDraco|Thundurus-Therian, M|300\/300
+|move|p2a: Mamoswine|Ice Shard|p1a: BuzzDraco
+|-supereffective|p1a: BuzzDraco
+|-damage|p1a: BuzzDraco|70\/300
+|
+|-weather|RainDance|[upkeep]
+|turn|11
+|callback|decision
+|
+|switch|p1a: King|Jirachi, shiny|80\/404
+|move|p2a: Mamoswine|Ice Shard|p1a: King
+|-resisted|p1a: King
+|-damage|p1a: King|44\/404
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: King|69\/404|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: King
+|-unboost|p1a: King|atk|1
+|move|p1a: King|Psyshock|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|222\/319
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: King|94\/404|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p1a: Bailarbailar|Politoed, F, shiny|384\/384
+|move|p2a: Landorus-Therian|U-turn|p1a: Bailarbailar
+|-damage|p1a: Bailarbailar|305\/384
+|callback|decision
+|
+|switch|p2a: Volcarona|Volcarona, F|312\/312
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Bailarbailar|329\/384|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p2a: Volcarona|Giga Drain|p1a: Bailarbailar
+|-supereffective|p1a: Bailarbailar
+|-damage|p1a: Bailarbailar|135\/384
+|move|p1a: Bailarbailar|Scald|p2a: Volcarona
+|-supereffective|p2a: Volcarona
+|-damage|p2a: Volcarona|46\/312
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Bailarbailar|159\/384|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|switch|p1a: KJF|Salamence, M|332\/332
+|move|p2a: Volcarona|Giga Drain|p1a: KJF
+|-resisted|p1a: KJF
+|-damage|p1a: KJF|303\/332
+|-heal|p2a: Volcarona|61\/312|[from] drain|[of] p1a: KJF
+|
+|-weather|RainDance|[upkeep]
+|turn|16
+|callback|decision
+|
+|move|p1a: KJF|Earthquake|p2a: Volcarona
+|-damage|p2a: Volcarona|0 fnt
+|faint|p2a: Volcarona
+|-boost|p1a: KJF|atk|1|[from] ability: Moxie
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, M|337\/337
+|turn|17
+|callback|decision
+|
+|move|p1a: KJF|Outrage|p2a: Gliscor
+|-enditem|p1a: KJF|Dragon Gem|[from] gem|[move] Outrage
+|-damage|p2a: Gliscor|0 fnt
+|faint|p2a: Gliscor
+|-boost|p1a: KJF|atk|1|[from] ability: Moxie
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|222\/319
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: KJF
+|-unboost|p1a: KJF|atk|1
+|turn|18
+|callback|decision
+|
+|move|p2a: Landorus-Therian|Hidden Power|p1a: KJF
+|-supereffective|p1a: KJF
+|-damage|p1a: KJF|27\/332
+|move|p1a: KJF|Outrage|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|faint|p2a: Landorus-Therian
+|-boost|p1a: KJF|atk|1|[from] ability: Moxie
+|
+|-end|p1a: KJF|rampage
+|-start|p1a: KJF|confusion
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Mamoswine|Mamoswine, F|1\/424
+|turn|19
+|callback|decision
+|
+|-activate|p1a: KJF|confusion
+|move|p1a: KJF|Protect|p1a: KJF
+|-singleturn|p1a: KJF|Protect
+|move|p2a: Mamoswine|Ice Shard|p1a: KJF
+|-activate|p1a: KJF|Protect
+|
+|-weather|RainDance|[upkeep]
+|turn|20
+|callback|decision
+|
+|switch|p1a: Bailarbailar|Politoed, F, shiny|159\/384
+|move|p2a: Mamoswine|Ice Shard|p1a: Bailarbailar
+|-resisted|p1a: Bailarbailar
+|-damage|p1a: Bailarbailar|126\/384
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Bailarbailar|150\/384|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p2a: Mamoswine|Earthquake|p1a: Bailarbailar
+|-damage|p1a: Bailarbailar|0 fnt
+|faint|p1a: Bailarbailar
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: King|Jirachi, shiny|94\/404
+|turn|22
+|callback|decision
+|
+|move|p2a: Mamoswine|Ice Shard|p1a: King
+|-resisted|p1a: King
+|-damage|p1a: King|57\/404
+|move|p1a: King|Psyshock|p2a: Mamoswine
+|-damage|p2a: Mamoswine|0 fnt
+|faint|p2a: Mamoswine
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: King|82\/404|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Lucario|Lucario, F|281\/281
+|turn|23
+|callback|decision
+|
+|move|p2a: Lucario|Close Combat|p1a: King
+|-damage|p1a: King|0 fnt
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|faint|p1a: King
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: BuzzDraco|Thundurus-Therian, M|70\/300
+|turn|24
+|callback|decision
+|
+|move|p2a: Lucario|ExtremeSpeed|p1a: BuzzDraco
+|-damage|p1a: BuzzDraco|0 fnt
+|faint|p1a: BuzzDraco
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: KJF|Salamence, M|27\/332
+|turn|25
+|callback|decision
+|
+|move|p1a: KJF|Protect|p1a: KJF
+|-singleturn|p1a: KJF|Protect
+|move|p2a: Lucario|Ice Punch|p1a: KJF
+|-activate|p1a: KJF|Protect
+|
+|-weather|RainDance|[upkeep]
+|turn|26
+|callback|decision
+|
+|move|p2a: Lucario|Ice Punch|p1a: KJF
+|-supereffective|p1a: KJF
+|-damage|p1a: KJF|0 fnt
+|faint|p1a: KJF
+|
+|win|Phantom7DX
+|raw|Ladder updating...
+|raw|FelixE's rating: 1511 &rarr; <strong>1508<\/strong><br \/>(-3 for losing)
+|raw|Phantom7DX's rating: 1633 &rarr; <strong>1639<\/strong><br \/>(+6 for winning)
+|chat|Phantom7DX|gg
+|leave|FelixE
+|player|p1

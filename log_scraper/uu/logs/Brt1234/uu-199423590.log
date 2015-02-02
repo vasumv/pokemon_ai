@@ -1,0 +1,317 @@
+|join|CoolTrainerGary
+|join|Brt1234
+|player|p1|CoolTrainerGary|1
+|player|p2|Brt1234|101
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Drapion, M
+|poke|p1|Dragalge, M
+|poke|p1|Donphan, M
+|poke|p1|Vaporeon, M
+|poke|p1|Cresselia, F
+|poke|p1|Mienshao, F
+|poke|p2|Toxicroak, F
+|poke|p2|Chandelure, F
+|poke|p2|Empoleon, F
+|poke|p2|Sceptile, M
+|poke|p2|Hippowdon, M
+|poke|p2|Honchkrow, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Donphan|Donphan, M|364\/364
+|switch|p2a: Hippowdon|Hippowdon, M|420\/420
+|-weather|Sandstorm
+|turn|1
+|
+|move|p1a: Donphan|Knock Off|p2a: Hippowdon
+|-damage|p2a: Hippowdon|338\/420
+|-enditem|p2a: Hippowdon|Leftovers|[from] move: Knock Off|[of] p1a: Donphan
+|move|p2a: Hippowdon|Toxic|p1a: Donphan
+|-status|p1a: Donphan|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Donphan|342\/364 tox|[from] psn
+|turn|2
+|
+|move|p1a: Donphan|Stealth Rock|p2a: Hippowdon
+|-sidestart|p2: Brt1234|move: Stealth Rock
+|move|p2a: Hippowdon|Stealth Rock|p1a: Donphan
+|-sidestart|p1: CoolTrainerGary|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Donphan|364\/364 tox|[from] item: Leftovers
+|-damage|p1a: Donphan|320\/364 tox|[from] psn
+|turn|3
+|
+|move|p1a: Donphan|Rapid Spin|p2a: Hippowdon
+|-damage|p2a: Hippowdon|321\/420
+|-sideend|p1: CoolTrainerGary|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Donphan
+|move|p2a: Hippowdon|Earthquake|p1a: Donphan
+|-damage|p1a: Donphan|205\/364 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Donphan|227\/364 tox|[from] item: Leftovers
+|-damage|p1a: Donphan|161\/364 tox|[from] psn
+|turn|4
+|
+|switch|p1a: Vaporeon|Vaporeon, M|451\/451
+|move|p2a: Hippowdon|Stealth Rock|p1a: Vaporeon
+|-sidestart|p1: CoolTrainerGary|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Vaporeon|423\/451|[from] sandstorm
+|-heal|p1a: Vaporeon|451\/451|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Empoleon|Empoleon, F|372\/372
+|-damage|p2a: Empoleon|349\/372|[from] Stealth Rock
+|move|p1a: Vaporeon|Heal Bell|p1a: Vaporeon
+|-cureteam|p1a: Vaporeon|[from] move: HealBell
+|
+|-weather|none
+|-heal|p2a: Empoleon|372\/372|[from] item: Leftovers
+|turn|6
+|
+|move|p1a: Vaporeon|Scald|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|339\/372
+|move|p2a: Empoleon|Toxic|p1a: Vaporeon
+|-status|p1a: Vaporeon|tox
+|
+|-heal|p2a: Empoleon|362\/372|[from] item: Leftovers
+|-damage|p1a: Vaporeon|423\/451 tox|[from] psn
+|turn|7
+|
+|switch|p2a: Sceptile|Sceptile, M|281\/281
+|-damage|p2a: Sceptile|246\/281|[from] Stealth Rock
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|451\/451 tox|[from] item: Leftovers
+|-damage|p1a: Vaporeon|395\/451 tox|[from] psn
+|turn|8
+|
+|switch|p1a: Drapion|Drapion, M|343\/343
+|-damage|p1a: Drapion|301\/343|[from] Stealth Rock
+|detailschange|p2a: Sceptile|Sceptile-Mega, M
+|-mega|p2a: Sceptile|Sceptile|Sceptilite
+|move|p2a: Sceptile|Dragon Pulse|p1a: Drapion
+|-damage|p1a: Drapion|150\/343
+|
+|-heal|p1a: Drapion|343\/343|[from] move: Wish|[wisher] Vaporeon
+|turn|9
+|
+|switch|p2a: Hippowdon|Hippowdon, M|321\/420
+|-damage|p2a: Hippowdon|295\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p1a: Drapion|Toxic Spikes|p2a: Hippowdon
+|-sidestart|p2: Brt1234|move: Toxic Spikes
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Drapion|322\/343|[from] sandstorm
+|-heal|p1a: Drapion|343\/343|[from] item: Black Sludge
+|turn|10
+|
+|switch|p1a: Cresselia|Cresselia, F|443\/443
+|-damage|p1a: Cresselia|388\/443|[from] Stealth Rock
+|move|p2a: Hippowdon|Earthquake|p1a: Cresselia
+|-immune|p1a: Cresselia|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Cresselia|361\/443|[from] sandstorm
+|-heal|p1a: Cresselia|388\/443|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Cresselia|Substitute|p1a: Cresselia
+|-start|p1a: Cresselia|Substitute
+|-damage|p1a: Cresselia|278\/443
+|move|p2a: Hippowdon|Toxic|p1a: Cresselia
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Cresselia|251\/443|[from] sandstorm
+|-heal|p1a: Cresselia|278\/443|[from] item: Leftovers
+|turn|12
+|
+|switch|p1a: Donphan|Donphan, M|161\/364
+|-damage|p1a: Donphan|139\/364|[from] Stealth Rock
+|switch|p2a: Empoleon|Empoleon, F|362\/372
+|-damage|p2a: Empoleon|339\/372|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Donphan|161\/364|[from] item: Leftovers
+|-heal|p2a: Empoleon|362\/372|[from] item: Leftovers
+|turn|13
+|
+|move|p1a: Donphan|Earthquake|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|0 fnt
+|faint|p2a: Empoleon
+|
+|-weather|none
+|-heal|p1a: Donphan|183\/364|[from] item: Leftovers
+|
+|switch|p2a: Toxicroak|Toxicroak, F|307\/307
+|-sideend|p2: Brt1234|move: Toxic Spikes|[of] p2a: Toxicroak
+|-damage|p2a: Toxicroak|288\/307|[from] Stealth Rock
+|turn|14
+|
+|switch|p2a: Sceptile|Sceptile-Mega, M|246\/281
+|-damage|p2a: Sceptile|211\/281|[from] Stealth Rock
+|move|p1a: Donphan|Earthquake|p2a: Sceptile
+|-resisted|p2a: Sceptile
+|-damage|p2a: Sceptile|92\/281
+|
+|-heal|p1a: Donphan|205\/364|[from] item: Leftovers
+|turn|15
+|
+|switch|p1a: Drapion|Drapion, M|343\/343
+|-damage|p1a: Drapion|301\/343|[from] Stealth Rock
+|move|p2a: Sceptile|Dragon Pulse|p1a: Drapion
+|-damage|p1a: Drapion|151\/343
+|
+|-heal|p1a: Drapion|172\/343|[from] item: Black Sludge
+|turn|16
+|
+|move|p2a: Sceptile|Dragon Pulse|p1a: Drapion
+|-damage|p1a: Drapion|12\/343
+|move|p1a: Drapion|Poison Jab|p2a: Sceptile
+|-supereffective|p2a: Sceptile
+|-damage|p2a: Sceptile|0 fnt
+|faint|p2a: Sceptile
+|
+|-heal|p1a: Drapion|33\/343|[from] item: Black Sludge
+|
+|switch|p2a: Honchkrow|Honchkrow, M|403\/403
+|-damage|p2a: Honchkrow|303\/403|[from] Stealth Rock
+|turn|17
+|
+|move|p1a: Drapion|Toxic Spikes|p2a: Honchkrow
+|-sidestart|p2: Brt1234|move: Toxic Spikes
+|move|p2a: Honchkrow|Brave Bird|p1a: Drapion
+|-damage|p1a: Drapion|0 fnt
+|-damage|p2a: Honchkrow|292\/403|[from] recoil|[of] p1a: Drapion
+|-damage|p2a: Honchkrow|252\/403|[from] item: Life Orb
+|faint|p1a: Drapion
+|-boost|p2a: Honchkrow|atk|1|[from] ability: Moxie
+|
+|
+|switch|p1a: Mienshao|Mienshao, F|271\/271
+|-damage|p1a: Mienshao|255\/271|[from] Stealth Rock
+|turn|18
+|
+|move|p2a: Honchkrow|Sucker Punch|p1a: Mienshao
+|-crit|p1a: Mienshao
+|-resisted|p1a: Mienshao
+|-damage|p1a: Mienshao|0 fnt
+|-damage|p2a: Honchkrow|212\/403|[from] item: Life Orb
+|faint|p1a: Mienshao
+|-boost|p2a: Honchkrow|atk|1|[from] ability: Moxie
+|
+|c|âCoolTrainerGary|......
+|c|âCoolTrainerGary|+1 252+ Atk Life Orb Honchkrow Sucker Punch vs. 0 HP \/ 0 Def Mienshao: 205-242 (75.6 - 89.2%) -- guaranteed 2HKO
+|c|âCoolTrainerGary|that mattered
+|
+|switch|p1a: Cresselia|Cresselia, F|278\/443
+|-damage|p1a: Cresselia|223\/443|[from] Stealth Rock
+|turn|19
+|
+|move|p1a: Cresselia|Substitute|p1a: Cresselia
+|-start|p1a: Cresselia|Substitute
+|-damage|p1a: Cresselia|113\/443
+|move|p2a: Honchkrow|Brave Bird|p1a: Cresselia
+|-end|p1a: Cresselia|Substitute
+|-damage|p2a: Honchkrow|176\/403|[from] recoil|[of] p1a: Cresselia
+|-damage|p2a: Honchkrow|136\/403|[from] item: Life Orb
+|
+|-heal|p1a: Cresselia|140\/443|[from] item: Leftovers
+|turn|20
+|
+|move|p1a: Cresselia|Moonblast|p2a: Honchkrow
+|-supereffective|p2a: Honchkrow
+|-damage|p2a: Honchkrow|0 fnt
+|faint|p2a: Honchkrow
+|
+|-heal|p1a: Cresselia|167\/443|[from] item: Leftovers
+|
+|switch|p2a: Toxicroak|Toxicroak, F|288\/307
+|-sideend|p2: Brt1234|move: Toxic Spikes|[of] p2a: Toxicroak
+|-damage|p2a: Toxicroak|269\/307|[from] Stealth Rock
+|turn|21
+|
+|switch|p1a: Dragalge|Dragalge, M|333\/333
+|-damage|p1a: Dragalge|292\/333|[from] Stealth Rock
+|move|p2a: Toxicroak|Poison Jab|p1a: Dragalge
+|-resisted|p1a: Dragalge
+|-damage|p1a: Dragalge|197\/333
+|-damage|p2a: Toxicroak|239\/307|[from] item: Life Orb
+|
+|turn|22
+|
+|move|p2a: Toxicroak|Sucker Punch|p1a: Dragalge
+|-crit|p1a: Dragalge
+|-damage|p1a: Dragalge|32\/333
+|-damage|p2a: Toxicroak|209\/307|[from] item: Life Orb
+|move|p1a: Dragalge|Draco Meteor|p2a: Toxicroak
+|-damage|p2a: Toxicroak|0 fnt
+|-unboost|p1a: Dragalge|spa|2
+|faint|p2a: Toxicroak
+|
+|
+|switch|p2a: Chandelure|Chandelure, F|261\/261
+|-damage|p2a: Chandelure|196\/261|[from] Stealth Rock
+|turn|23
+|
+|move|p2a: Chandelure|Shadow Ball|p1a: Dragalge
+|-damage|p1a: Dragalge|0 fnt
+|faint|p1a: Dragalge
+|
+|
+|switch|p1a: Vaporeon|Vaporeon, M|395\/451 tox
+|-damage|p1a: Vaporeon|339\/451 tox|[from] Stealth Rock
+|turn|24
+|
+|switch|p2a: Hippowdon|Hippowdon, M|295\/420
+|-damage|p2a: Hippowdon|269\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p1a: Vaporeon|Scald|p2a: Hippowdon
+|-crit|p2a: Hippowdon
+|-supereffective|p2a: Hippowdon
+|-damage|p2a: Hippowdon|0 fnt
+|faint|p2a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Vaporeon|311\/451 tox|[from] sandstorm
+|-heal|p1a: Vaporeon|339\/451 tox|[from] item: Leftovers
+|-damage|p1a: Vaporeon|311\/451 tox|[from] psn
+|
+|switch|p2a: Chandelure|Chandelure, F|196\/261
+|-damage|p2a: Chandelure|131\/261|[from] Stealth Rock
+|turn|25
+|
+|move|p2a: Chandelure|Energy Ball|p1a: Vaporeon
+|-supereffective|p1a: Vaporeon
+|-damage|p1a: Vaporeon|107\/451 tox
+|move|p1a: Vaporeon|Scald|p2a: Chandelure
+|-crit|p2a: Chandelure
+|-supereffective|p2a: Chandelure
+|-damage|p2a: Chandelure|0 fnt
+|faint|p2a: Chandelure
+|
+|win|CoolTrainerGary
+|raw|Ladder updating...
+|raw|CoolTrainerGary's rating: 1371 &rarr; <strong>1385<\/strong><br \/>(+14 for winning)
+|raw|Brt1234's rating: 1275 &rarr; <strong>1257<\/strong><br \/>(-18 for losing)
+|c|âCoolTrainerGary|gg
+|c|âBrt1234|gg

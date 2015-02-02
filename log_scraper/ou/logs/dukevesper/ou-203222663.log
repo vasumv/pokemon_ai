@@ -1,0 +1,238 @@
+|join|dukevesper
+|join|taoke
+|player|p1|dukevesper|290
+|player|p2|taoke|1
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Gyarados, M
+|poke|p1|Landorus-Therian, M
+|poke|p1|Talonflame, F
+|poke|p1|Latios, M
+|poke|p1|Rotom-Wash
+|poke|p1|Gardevoir, M
+|poke|p2|Landorus-Therian, M
+|poke|p2|Scizor, M
+|poke|p2|Diancie
+|poke|p2|Talonflame, M
+|poke|p2|Azelf
+|poke|p2|Mew
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|382\/382
+|switch|p2a: Azelf|Azelf|291\/291
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Azelf
+|-unboost|p2a: Azelf|atk|1
+|turn|1
+|
+|move|p2a: Azelf|Stealth Rock|p1a: Landorus-Therian
+|-sidestart|p1: dukevesper|move: Stealth Rock
+|move|p1a: Landorus-Therian|Stealth Rock|p2a: Azelf
+|-sidestart|p2: taoke|move: Stealth Rock
+|
+|turn|2
+|
+|move|p2a: Azelf|Fire Blast|p1a: Landorus-Therian|[miss]
+|-miss|p2a: Azelf|p1a: Landorus-Therian
+|move|p1a: Landorus-Therian|Knock Off|p2a: Azelf
+|-supereffective|p2a: Azelf
+|-enditem|p2a: Azelf|Focus Sash
+|-damage|p2a: Azelf|1\/291
+|
+|turn|3
+|
+|move|p2a: Azelf|Explosion|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|204\/382
+|faint|p2a: Azelf
+|move|p1a: Landorus-Therian|U-turn|p2: Azelf|[notarget]
+|-notarget
+|
+|-heal|p1a: Landorus-Therian|227\/382|[from] item: Leftovers
+|
+|switch|p2a: Scizor|Scizor, M|335\/335
+|-damage|p2a: Scizor|294\/335|[from] Stealth Rock
+|turn|4
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|62\/382
+|move|p1a: Landorus-Therian|Earthquake|p2a: Scizor
+|-damage|p2a: Scizor|92\/335
+|
+|-heal|p1a: Landorus-Therian|85\/382|[from] item: Leftovers
+|turn|5
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|-damage|p1a: Rotom-Wash|266\/304|[from] Stealth Rock
+|move|p2a: Scizor|Bullet Punch|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|228\/304
+|
+|turn|6
+|
+|switch|p2a: Mew|Mew|404\/404
+|-damage|p2a: Mew|354\/404|[from] Stealth Rock
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Mew
+|-damage|p2a: Mew|230\/404
+|
+|-heal|p2a: Mew|255\/404|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Gardevoir|Gardevoir, M|278\/278
+|-damage|p1a: Gardevoir|244\/278|[from] Stealth Rock
+|-ability|p1a: Gardevoir|Synchronize|[from] ability: Trace|[of] p2a: Mew
+|move|p2a: Mew|Energy Ball|p1a: Gardevoir
+|-damage|p1a: Gardevoir|163\/278
+|
+|-heal|p2a: Mew|280\/404|[from] item: Leftovers
+|turn|8
+|
+|detailschange|p1a: Gardevoir|Gardevoir-Mega, M
+|-mega|p1a: Gardevoir|Gardevoir|Gardevoirite
+|move|p1a: Gardevoir|Hyper Voice|p2a: Mew
+|-damage|p2a: Mew|37\/404
+|move|p2a: Mew|Flamethrower|p1a: Gardevoir
+|-damage|p1a: Gardevoir|87\/278
+|
+|-heal|p2a: Mew|62\/404|[from] item: Leftovers
+|turn|9
+|
+|move|p1a: Gardevoir|Hyper Voice|p2a: Mew
+|-damage|p2a: Mew|0 fnt
+|faint|p2a: Mew
+|
+|
+|switch|p2a: Diancie|Diancie|241\/241
+|-damage|p2a: Diancie|211\/241|[from] Stealth Rock
+|turn|10
+|
+|detailschange|p2a: Diancie|Diancie-Mega
+|-mega|p2a: Diancie|Diancie|Diancite
+|move|p2a: Diancie|Protect|p2a: Diancie
+|-singleturn|p2a: Diancie|Protect
+|move|p1a: Gardevoir|Hyper Voice|p2a: Diancie
+|-activate|p2a: Diancie|Protect
+|
+|turn|11
+|
+|move|p2a: Diancie|Diamond Storm|p1a: Gardevoir
+|-damage|p1a: Gardevoir|0 fnt
+|faint|p1a: Gardevoir
+|
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|228\/304
+|-damage|p1a: Rotom-Wash|190\/304|[from] Stealth Rock
+|turn|12
+|
+|move|p2a: Diancie|Moonblast|p1a: Rotom-Wash
+|-crit|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|
+|c|âdukevesper|no crit lol
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|85\/382
+|-damage|p1a: Landorus-Therian|38\/382|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Diancie
+|-unboost|p2a: Diancie|atk|1
+|turn|13
+|
+|move|p2a: Diancie|Moonblast|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|faint|p1a: Landorus-Therian
+|
+|
+|switch|p1a: Gyarados|Gyarados, M|332\/332
+|-damage|p1a: Gyarados|249\/332|[from] Stealth Rock
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Diancie
+|-unboost|p2a: Diancie|atk|1
+|turn|14
+|
+|move|p2a: Diancie|Moonblast|p1a: Gyarados
+|-damage|p1a: Gyarados|59\/332
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|
+|-heal|p1a: Gyarados|79\/332|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Gyarados|Waterfall|p2a: Diancie
+|-supereffective|p2a: Diancie
+|-damage|p2a: Diancie|0 fnt
+|faint|p2a: Diancie
+|
+|-heal|p1a: Gyarados|99\/332|[from] item: Leftovers
+|
+|switch|p2a: Talonflame|Talonflame, M|297\/297
+|-damage|p2a: Talonflame|149\/297|[from] Stealth Rock
+|turn|16
+|
+|move|p2a: Talonflame|Brave Bird|p1a: Gyarados
+|-damage|p1a: Gyarados|0 fnt
+|-damage|p2a: Talonflame|116\/297|[from] recoil|[of] p1a: Gyarados
+|faint|p1a: Gyarados
+|
+|
+|switch|p1a: Talonflame|Talonflame, F|298\/298
+|-damage|p1a: Talonflame|149\/298|[from] Stealth Rock
+|turn|17
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Talonflame
+|-damage|p2a: Talonflame|0 fnt
+|-damage|p1a: Talonflame|111\/298|[from] recoil|[of] p2a: Talonflame
+|faint|p2a: Talonflame
+|
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-damage|p2a: Landorus-Therian|280\/319|[from] Stealth Rock
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Talonflame
+|-unboost|p1a: Talonflame|atk|1
+|turn|18
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|136\/319
+|-damage|p1a: Talonflame|63\/298|[from] recoil|[of] p2a: Landorus-Therian
+|move|p2a: Landorus-Therian|Stone Edge|p1a: Talonflame
+|-supereffective|p1a: Talonflame
+|-damage|p1a: Talonflame|0 fnt
+|faint|p1a: Talonflame
+|
+|
+|switch|p1a: Latios|Latios, M|301\/301
+|-damage|p1a: Latios|264\/301|[from] Stealth Rock
+|turn|19
+|
+|move|p2a: Landorus-Therian|Stone Edge|p1a: Latios
+|-damage|p1a: Latios|94\/301
+|move|p1a: Latios|Psyshock|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|-damage|p1a: Latios|64\/301|[from] item: Life Orb
+|faint|p2a: Landorus-Therian
+|
+|
+|switch|p2a: Scizor|Scizor, M|92\/335
+|-damage|p2a: Scizor|51\/335|[from] Stealth Rock
+|turn|20
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Latios
+|-damage|p1a: Latios|0 fnt
+|faint|p1a: Latios
+|
+|win|taoke
+|raw|Ladder updating...
+|raw|dukevesper's rating: 1491 &rarr; <strong>1464<\/strong><br \/>(-27 for losing)
+|raw|taoke's rating: 1361 &rarr; <strong>1388<\/strong><br \/>(+27 for winning)
+|leave|dukevesper
+|player|p1

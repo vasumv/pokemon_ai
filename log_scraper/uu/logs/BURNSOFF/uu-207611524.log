@@ -1,0 +1,393 @@
+|join|burnsOFF
+|join|aFINEWINE
+|player|p1|burnsOFF|164
+|player|p2|aFINEWINE|54
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Nidoqueen, F
+|poke|p1|Starmie
+|poke|p1|Infernape, F
+|poke|p1|Jirachi
+|poke|p1|Hydreigon, M
+|poke|p1|Ampharos, F
+|poke|p2|Azelf
+|poke|p2|Machamp, M
+|poke|p2|Empoleon, M
+|poke|p2|Hippowdon, M
+|poke|p2|Pidgeot, M
+|poke|p2|Jirachi
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|c|âburnsOFF|intresting team
+|c|âburnsOFF|GLHF
+|c|âaFINEWINE|you too
+|
+|start
+|switch|p1a: Nidoqueen|Nidoqueen, F|353\/353
+|switch|p2a: Hippowdon|Hippowdon, M|420\/420
+|turn|1
+|join|Pkmn Champ Lance
+|
+|switch|p1a: Hydreigon|Hydreigon, M|325\/325
+|move|p2a: Hippowdon|Earthquake|p1a: Hydreigon
+|-immune|p1a: Hydreigon|[msg]
+|
+|turn|2
+|
+|move|p1a: Hydreigon|U-turn|p2a: Hippowdon
+|-damage|p2a: Hippowdon|381\/420
+|
+|switch|p1a: Starmie|Starmie|261\/261
+|move|p2a: Hippowdon|Stealth Rock|p1a: Starmie
+|-sidestart|p1: burnsOFF|move: Stealth Rock
+|
+|-heal|p2a: Hippowdon|407\/420|[from] item: Leftovers
+|turn|3
+|
+|switch|p2a: Empoleon|Empoleon, M|371\/371
+|move|p1a: Starmie|Rapid Spin|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|362\/371
+|-sideend|p1: burnsOFF|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Starmie
+|-damage|p1a: Starmie|235\/261|[from] item: Life Orb
+|
+|-heal|p2a: Empoleon|371\/371|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|353\/353
+|move|p2a: Empoleon|Toxic|p1a: Nidoqueen
+|-fail|p1a: Nidoqueen
+|
+|turn|5
+|
+|move|p1a: Nidoqueen|Stealth Rock|p2a: Empoleon
+|-sidestart|p2: aFINEWINE|move: Stealth Rock
+|move|p2a: Empoleon|Scald|p1a: Nidoqueen
+|-supereffective|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|125\/353
+|
+|turn|6
+|
+|switch|p2a: Pidgeot|Pidgeot, M|307\/307
+|-damage|p2a: Pidgeot|231\/307|[from] Stealth Rock
+|move|p1a: Nidoqueen|Earth Power|p2a: Pidgeot
+|-immune|p2a: Pidgeot|[msg]
+|
+|turn|7
+|
+|switch|p1a: Ampharos|Ampharos, F|384\/384
+|detailschange|p2a: Pidgeot|Pidgeot-Mega, M
+|-mega|p2a: Pidgeot|Pidgeot|Pidgeotite
+|move|p2a: Pidgeot|U-turn|p1a: Ampharos
+|-damage|p1a: Ampharos|336\/384
+|
+|switch|p2a: Azelf|Azelf|291\/291
+|-damage|p2a: Azelf|255\/291|[from] Stealth Rock
+|
+|turn|8
+|
+|detailschange|p1a: Ampharos|Ampharos-Mega, F
+|-mega|p1a: Ampharos|Ampharos|Ampharosite
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p2a: Azelf|Psyshock|p1a: Ampharos
+|-damage|p1a: Ampharos|168\/384
+|-damage|p2a: Azelf|226\/291|[from] item: Life Orb
+|move|p1a: Ampharos|Dragon Pulse|p2a: Azelf
+|-damage|p2a: Azelf|0 fnt
+|faint|p2a: Azelf
+|
+|
+|switch|p2a: Machamp|Machamp, M|364\/364
+|-damage|p2a: Machamp|342\/364|[from] Stealth Rock
+|turn|9
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|125\/353
+|move|p2a: Machamp|Dynamic Punch|p1a: Nidoqueen
+|-resisted|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|9\/353
+|-start|p1a: Nidoqueen|confusion
+|
+|turn|10
+|
+|-activate|p1a: Nidoqueen|confusion
+|move|p1a: Nidoqueen|Earth Power|p2a: Machamp
+|-damage|p2a: Machamp|189\/364
+|move|p2a: Machamp|Knock Off|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|0 fnt
+|-enditem|p1a: Nidoqueen|Life Orb|[from] move: Knock Off|[of] p2a: Machamp
+|faint|p1a: Nidoqueen
+|
+|
+|switch|p1a: Infernape|Infernape, F|293\/293
+|turn|11
+|
+|switch|p2a: Hippowdon|Hippowdon, M|407\/420
+|-damage|p2a: Hippowdon|381\/420|[from] Stealth Rock
+|move|p1a: Infernape|Close Combat|p2a: Hippowdon
+|-damage|p2a: Hippowdon|192\/420
+|-unboost|p1a: Infernape|def|1
+|-unboost|p1a: Infernape|spd|1
+|
+|-heal|p2a: Hippowdon|218\/420|[from] item: Leftovers
+|turn|12
+|
+|switch|p1a: Starmie|Starmie|235\/261
+|move|p2a: Hippowdon|Slack Off|p2a: Hippowdon
+|-heal|p2a: Hippowdon|420\/420
+|
+|turn|13
+|
+|switch|p2a: Empoleon|Empoleon, M|371\/371
+|-damage|p2a: Empoleon|348\/371|[from] Stealth Rock
+|move|p1a: Starmie|Hydro Pump|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|270\/371
+|-damage|p1a: Starmie|209\/261|[from] item: Life Orb
+|
+|-heal|p2a: Empoleon|293\/371|[from] item: Leftovers
+|turn|14
+|
+|move|p1a: Starmie|Thunderbolt|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|127\/371
+|-damage|p1a: Starmie|183\/261|[from] item: Life Orb
+|move|p2a: Empoleon|Defog|p1a: Starmie
+|-unboost|p1a: Starmie|evasion|1
+|-sideend|p2: aFINEWINE|Stealth Rock|[from] move: Defog|[of] p2a: Empoleon
+|
+|-heal|p2a: Empoleon|150\/371|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Starmie|Thunderbolt|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|0 fnt
+|-damage|p1a: Starmie|157\/261|[from] item: Life Orb
+|faint|p2a: Empoleon
+|
+|
+|switch|p2a: Pidgeot|Pidgeot-Mega, M|231\/307
+|turn|16
+|
+|switch|p1a: Jirachi|Jirachi|341\/341
+|move|p2a: Pidgeot|Heat Wave|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|117\/341
+|
+|turn|17
+|
+|switch|p2a: Hippowdon|Hippowdon, M|420\/420
+|move|p1a: Jirachi|U-turn|p2a: Hippowdon
+|-damage|p2a: Hippowdon|371\/420
+|
+|switch|p1a: Hydreigon|Hydreigon, M|325\/325
+|
+|-heal|p2a: Hippowdon|397\/420|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Hydreigon|Draco Meteor|p2a: Hippowdon
+|-damage|p2a: Hippowdon|96\/420
+|-unboost|p1a: Hydreigon|spa|2
+|move|p2a: Hippowdon|Slack Off|p2a: Hippowdon
+|-heal|p2a: Hippowdon|306\/420
+|
+|-heal|p2a: Hippowdon|332\/420|[from] item: Leftovers
+|turn|19
+|
+|switch|p1a: Starmie|Starmie|157\/261
+|move|p2a: Hippowdon|Stealth Rock|p1a: Starmie
+|-sidestart|p1: burnsOFF|move: Stealth Rock
+|
+|-heal|p2a: Hippowdon|358\/420|[from] item: Leftovers
+|turn|20
+|
+|switch|p2a: Jirachi|Jirachi|341\/341
+|move|p1a: Starmie|Hydro Pump|p2a: Jirachi
+|-damage|p2a: Jirachi|111\/341
+|-damage|p1a: Starmie|131\/261|[from] item: Life Orb
+|
+|turn|21
+|
+|switch|p1a: Ampharos|Ampharos-Mega, F|168\/384
+|-damage|p1a: Ampharos|120\/384|[from] Stealth Rock
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p2a: Jirachi|U-turn|p1a: Ampharos
+|-damage|p1a: Ampharos|54\/384
+|
+|switch|p2a: Machamp|Machamp, M|189\/364
+|
+|turn|22
+|
+|move|p2a: Machamp|Knock Off|p1a: Ampharos
+|-damage|p1a: Ampharos|0 fnt
+|faint|p1a: Ampharos
+|
+|
+|switch|p1a: Infernape|Infernape, F|293\/293
+|-damage|p1a: Infernape|257\/293|[from] Stealth Rock
+|turn|23
+|
+|switch|p2a: Hippowdon|Hippowdon, M|358\/420
+|move|p1a: Infernape|Close Combat|p2a: Hippowdon
+|-damage|p2a: Hippowdon|196\/420
+|-unboost|p1a: Infernape|def|1
+|-unboost|p1a: Infernape|spd|1
+|
+|-heal|p2a: Hippowdon|222\/420|[from] item: Leftovers
+|turn|24
+|c|âburnsOFF|my god
+|
+|switch|p1a: Starmie|Starmie|131\/261
+|-damage|p1a: Starmie|99\/261|[from] Stealth Rock
+|move|p2a: Hippowdon|Slack Off|p2a: Hippowdon
+|-heal|p2a: Hippowdon|420\/420
+|
+|turn|25
+|
+|switch|p2a: Machamp|Machamp, M|189\/364
+|move|p1a: Starmie|Hydro Pump|p2a: Machamp
+|-damage|p2a: Machamp|20\/364
+|-damage|p1a: Starmie|73\/261|[from] item: Life Orb
+|
+|turn|26
+|
+|switch|p1a: Infernape|Infernape, F|257\/293
+|-damage|p1a: Infernape|221\/293|[from] Stealth Rock
+|switch|p2a: Jirachi|Jirachi|111\/341
+|
+|turn|27
+|
+|move|p1a: Infernape|Mach Punch|p2a: Jirachi
+|-damage|p2a: Jirachi|3\/341
+|move|p2a: Jirachi|U-turn|p1a: Infernape
+|-crit|p1a: Infernape
+|-resisted|p1a: Infernape
+|-damage|p1a: Infernape|189\/293
+|
+|switch|p2a: Hippowdon|Hippowdon, M|420\/420
+|
+|turn|28
+|
+|switch|p1a: Hydreigon|Hydreigon, M|325\/325
+|-damage|p1a: Hydreigon|285\/325|[from] Stealth Rock
+|move|p2a: Hippowdon|Whirlwind|p1a: Hydreigon
+|drag|p1a: Jirachi|Jirachi|117\/341
+|-damage|p1a: Jirachi|96\/341|[from] Stealth Rock
+|
+|turn|29
+|
+|move|p1a: Jirachi|Healing Wish|p1a: Jirachi
+|faint|p1a: Jirachi
+|move|p2a: Hippowdon|Earthquake|p1: Jirachi|[notarget]
+|-notarget
+|
+|
+|switch|p1a: Starmie|Starmie|73\/261
+|-heal|p1a: Starmie|261\/261|[from] move: Healing Wish
+|-damage|p1a: Starmie|229\/261|[from] Stealth Rock
+|turn|30
+|
+|switch|p2a: Machamp|Machamp, M|20\/364
+|move|p1a: Starmie|Rapid Spin|p2a: Machamp
+|-crit|p2a: Machamp
+|-damage|p2a: Machamp|0 fnt
+|-sideend|p1: burnsOFF|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Starmie
+|-damage|p1a: Starmie|203\/261|[from] item: Life Orb
+|faint|p2a: Machamp
+|
+|
+|switch|p2a: Pidgeot|Pidgeot-Mega, M|231\/307
+|turn|31
+|
+|switch|p1a: Infernape|Infernape, F|189\/293
+|move|p2a: Pidgeot|Hurricane|p1a: Infernape
+|-supereffective|p1a: Infernape
+|-damage|p1a: Infernape|0 fnt
+|faint|p1a: Infernape
+|
+|
+|switch|p1a: Hydreigon|Hydreigon, M|285\/325
+|turn|32
+|
+|switch|p2a: Hippowdon|Hippowdon, M|420\/420
+|move|p1a: Hydreigon|Dark Pulse|p2a: Hippowdon
+|-crit|p2a: Hippowdon
+|-damage|p2a: Hippowdon|147\/420
+|
+|-heal|p2a: Hippowdon|173\/420|[from] item: Leftovers
+|turn|33
+|
+|switch|p1a: Starmie|Starmie|203\/261
+|move|p2a: Hippowdon|Stealth Rock|p1a: Starmie
+|-sidestart|p1: burnsOFF|move: Stealth Rock
+|
+|-heal|p2a: Hippowdon|199\/420|[from] item: Leftovers
+|turn|34
+|
+|move|p1a: Starmie|Hydro Pump|p2a: Hippowdon
+|-supereffective|p2a: Hippowdon
+|-damage|p2a: Hippowdon|0 fnt
+|-damage|p1a: Starmie|177\/261|[from] item: Life Orb
+|faint|p2a: Hippowdon
+|
+|
+|switch|p2a: Pidgeot|Pidgeot-Mega, M|231\/307
+|turn|35
+|
+|move|p2a: Pidgeot|Hurricane|p1a: Starmie
+|-damage|p1a: Starmie|0 fnt
+|faint|p1a: Starmie
+|
+|
+|switch|p1a: Hydreigon|Hydreigon, M|285\/325
+|-damage|p1a: Hydreigon|245\/325|[from] Stealth Rock
+|turn|36
+|
+|move|p1a: Hydreigon|Dark Pulse|p2a: Pidgeot
+|-damage|p2a: Pidgeot|72\/307
+|move|p2a: Pidgeot|Roost|p2a: Pidgeot
+|-heal|p2a: Pidgeot|226\/307
+|
+|turn|37
+|
+|move|p1a: Hydreigon|Dark Pulse|p2a: Pidgeot
+|-damage|p2a: Pidgeot|61\/307
+|cant|p2a: Pidgeot|flinch
+|
+|turn|38
+|c| Pkmn Champ Lance|didn't matter
+|c|âburnsOFF|lol
+|c|âburnsOFF|scarf rachi in the back
+|
+|move|p1a: Hydreigon|Dark Pulse|p2a: Pidgeot
+|-damage|p2a: Pidgeot|0 fnt
+|faint|p2a: Pidgeot
+|
+|
+|switch|p2a: Jirachi|Jirachi|3\/341
+|turn|39
+|
+|move|p2a: Jirachi|Iron Head|p1a: Hydreigon
+|-damage|p1a: Hydreigon|109\/325
+|move|p1a: Hydreigon|Dark Pulse|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|faint|p2a: Jirachi
+|
+|win|burnsOFF
+|raw|Ladder updating...
+|raw|burnsOFF's rating: 1488 &rarr; <strong>1505<\/strong><br \/>(+17 for winning)
+|raw|aFINEWINE's rating: 1422 &rarr; <strong>1406<\/strong><br \/>(-16 for losing)
+|c|âaFINEWINE|gg
+|c|âburnsOFF|damn
+|c|âburnsOFF|gg

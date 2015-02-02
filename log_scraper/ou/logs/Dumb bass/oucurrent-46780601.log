@@ -1,0 +1,224 @@
+|join|Brown- Snorlax
+|join|Dumb bass
+|player|p1|Brown- Snorlax|265
+|player|p2|Dumb bass|29
+|gametype|singles
+|tier|OU (current)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Politoed, M
+|poke|p1|Thundurus-Therian, M
+|poke|p1|Keldeo-Resolute
+|poke|p1|Tornadus, M, shiny
+|poke|p1|Latios, M
+|poke|p1|Lucario, F
+|poke|p2|Salamence, M
+|poke|p2|Conkeldurr, M
+|poke|p2|Volcarona, F
+|poke|p2|Donphan, M
+|poke|p2|Thundurus-Therian, M
+|poke|p2|Rotom-Wash
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Politoed|Politoed, M|384\/384
+|switch|p2a: Rotom-Wash|Rotom-Wash|289\/289
+|-weather|RainDance|[from] ability: Drizzle|[of] p1a: Politoed
+|turn|1
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Politoed
+|-status|p1a: Politoed|brn
+|move|p1a: Politoed|Hydro Pump|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|154\/289
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1a: Politoed|336\/384 brn|[from] brn
+|turn|2
+|callback|decision
+|
+|switch|p1a: Thundurus-Therian|Thundurus-Therian, M|300\/300
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Thundurus-Therian
+|-damage|p1a: Thundurus-Therian|32\/300
+|
+|-weather|RainDance|[upkeep]
+|turn|3
+|callback|decision
+|
+|switch|p2a: Donphan|Donphan, M|384\/384
+|move|p1a: Thundurus-Therian|Focus Blast|p2a: Donphan
+|-damage|p2a: Donphan|6\/384
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Donphan|30\/384|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Donphan|Ice Shard|p1a: Thundurus-Therian
+|-supereffective|p1a: Thundurus-Therian
+|-damage|p1a: Thundurus-Therian|0 fnt
+|faint|p1a: Thundurus-Therian
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Donphan|54\/384|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Politoed|Politoed, M|336\/384 brn
+|turn|5
+|callback|decision
+|
+|move|p1a: Politoed|Hydro Pump|p2a: Donphan
+|-supereffective|p2a: Donphan
+|-damage|p2a: Donphan|0 fnt
+|faint|p2a: Donphan
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1a: Politoed|288\/384 brn|[from] brn
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|154\/289
+|turn|6
+|callback|decision
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Politoed
+|-supereffective|p1a: Politoed
+|-damage|p1a: Politoed|72\/384 brn
+|callback|decision
+|
+|switch|p2a: Salamence|Salamence, M|331\/331
+|move|p1a: Politoed|Hydro Pump|p2a: Salamence
+|-resisted|p2a: Salamence
+|-damage|p2a: Salamence|67\/331
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1a: Politoed|24\/384 brn|[from] brn
+|turn|7
+|callback|decision
+|
+|switch|p1a: Lucario|Lucario, F|281\/281
+|move|p2a: Salamence|Dragon Claw|p1a: Lucario
+|-resisted|p1a: Lucario
+|-damage|p1a: Lucario|198\/281
+|
+|-weather|RainDance|[upkeep]
+|turn|8
+|callback|decision
+|
+|move|p2a: Salamence|Dragon Claw|p1a: Lucario
+|-resisted|p1a: Lucario
+|-damage|p1a: Lucario|106\/281
+|move|p1a: Lucario|Aura Sphere|p2a: Salamence
+|-resisted|p2a: Salamence
+|-damage|p2a: Salamence|0 fnt
+|faint|p2a: Salamence
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|154\/289
+|turn|9
+|callback|decision
+|
+|move|p1a: Lucario|Aura Sphere|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Conkeldurr|Conkeldurr, M|380\/380
+|turn|10
+|callback|decision
+|
+|move|p1a: Lucario|Aura Sphere|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|101\/380
+|move|p2a: Conkeldurr|Drain Punch|p1a: Lucario
+|-supereffective|p1a: Lucario
+|-damage|p1a: Lucario|0 fnt
+|-heal|p2a: Conkeldurr|154\/380|[from] drain|[of] p1a: Lucario
+|faint|p1a: Lucario
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Conkeldurr|177\/380|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Politoed|Politoed, M|24\/384 brn
+|turn|11
+|callback|decision
+|
+|move|p2a: Conkeldurr|Mach Punch|p1a: Politoed
+|-damage|p1a: Politoed|0 fnt
+|faint|p1a: Politoed
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Conkeldurr|200\/380|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Tornadus|Tornadus, M, shiny|299\/299
+|turn|12
+|callback|decision
+|
+|move|p2a: Conkeldurr|Mach Punch|p1a: Tornadus
+|-resisted|p1a: Tornadus
+|-damage|p1a: Tornadus|234\/299
+|move|p1a: Tornadus|Hurricane|p2a: Conkeldurr
+|-supereffective|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|0 fnt
+|faint|p2a: Conkeldurr
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M|299\/299
+|turn|13
+|callback|decision
+|
+|move|p1a: Tornadus|Hurricane|p2a: Thundurus-Therian
+|-resisted|p2a: Thundurus-Therian
+|-damage|p2a: Thundurus-Therian|120\/299
+|move|p2a: Thundurus-Therian|Thunderbolt|p1a: Tornadus
+|-crit|p1a: Tornadus
+|-supereffective|p1a: Tornadus
+|-damage|p1a: Tornadus|0 fnt
+|faint|p1a: Tornadus
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Keldeo-Resolute|Keldeo-Resolute|323\/323
+|turn|14
+|callback|decision
+|
+|switch|p2a: Volcarona|Volcarona, F|311\/311
+|move|p1a: Keldeo-Resolute|Surf|p2a: Volcarona
+|-supereffective|p2a: Volcarona
+|-damage|p2a: Volcarona|0 fnt
+|faint|p2a: Volcarona
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M|120\/299
+|turn|15
+|callback|decision
+|
+|move|p1a: Keldeo-Resolute|Surf|p2a: Thundurus-Therian
+|-damage|p2a: Thundurus-Therian|0 fnt
+|faint|p2a: Thundurus-Therian
+|
+|win|Brown- Snorlax
+|raw|Ladder updating...
+|raw|Brown- Snorlax's rating: 1752 &rarr; <strong>1769<\/strong><br \/>(+17 for winning)
+|raw|Dumb bass's rating: 1839 &rarr; <strong>1832<\/strong><br \/>(-7 for losing)
+|chat|Brown- Snorlax|gg
+|leave|Dumb bass
+|player|p2

@@ -1,0 +1,223 @@
+|join|shabbir
+|join|Shiny Breloom
+|player|p1|shabbir|170
+|player|p2|Shiny Breloom|101
+|gametype|singles
+|tier|UU
+|rated
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Ambipom, F
+|poke|p1|Raikou, shiny
+|poke|p1|Victini
+|poke|p1|Weavile, M
+|poke|p1|Shaymin
+|poke|p1|Mienshao, M
+|poke|p2|Froslass, F
+|poke|p2|Registeel
+|poke|p2|Blastoise, F
+|poke|p2|Nidoking, M
+|poke|p2|Weavile, M
+|poke|p2|Umbreon, M
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Peace|Victini|341\/341
+|switch|p2a: Froslass|Froslass, F|344\/344
+|turn|1
+|callback|decision
+|
+|move|p1a: Peace|Blue Flare|p2a: Froslass
+|-supereffective|p2a: Froslass
+|-damage|p2a: Froslass|0 fnt
+|-start|p1a: Peace|Disable|Blue Flare
+|faint|p2a: Froslass
+|
+|callback|decision
+|
+|switch|p2a: Blastoise|Blastoise, F|362\/362
+|turn|2
+|callback|decision
+|
+|switch|p1a: Batman|Shaymin|404\/404
+|move|p2a: Blastoise|Scald|p1a: Batman
+|-resisted|p1a: Batman
+|-damage|p1a: Batman|365\/404
+|
+|turn|3
+|callback|decision
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|move|p1a: Batman|Seed Flare|p2a: Registeel
+|-resisted|p2a: Registeel
+|-damage|p2a: Registeel|299\/364
+|-damage|p1a: Batman|325\/404|[from] item: Life Orb
+|
+|-heal|p2a: Registeel|321\/364|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p1a: Batman|Earth Power|p2a: Registeel
+|-supereffective|p2a: Registeel
+|-damage|p2a: Registeel|179\/364
+|-damage|p1a: Batman|285\/404|[from] item: Life Orb
+|move|p2a: Registeel|Stealth Rock|p1a: Batman
+|-sidestart|p1: shabbir|move: Stealth Rock
+|
+|-heal|p2a: Registeel|201\/364|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p1a: Batman|Earth Power|p2a: Registeel
+|-supereffective|p2a: Registeel
+|-damage|p2a: Registeel|51\/364
+|-damage|p1a: Batman|245\/404|[from] item: Life Orb
+|move|p2a: Registeel|Thunder Wave|p1a: Batman
+|-status|p1a: Batman|par
+|
+|-heal|p2a: Registeel|73\/364|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p2a: Umbreon|Umbreon, M|394\/394
+|move|p1a: Batman|Earth Power|p2a: Umbreon
+|-crit|p2a: Umbreon
+|-damage|p2a: Umbreon|238\/394
+|-damage|p1a: Batman|205\/404 par|[from] item: Life Orb
+|
+|-heal|p2a: Umbreon|262\/394|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p2a: Umbreon|Foul Play|p1a: Batman
+|-damage|p1a: Batman|96\/404 par
+|move|p1a: Batman|Synthesis|p1a: Batman
+|-heal|p1a: Batman|298\/404 par
+|
+|-heal|p2a: Umbreon|286\/394|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p2a: Nidoking|Nidoking, M|304\/304
+|switch|p1a: Jack Sparrow|Raikou, shiny|322\/322
+|-damage|p1a: Jack Sparrow|282\/322|[from] Stealth Rock
+|-ability|p1a: Jack Sparrow|Pressure
+|
+|turn|9
+|callback|decision
+|
+|move|p1a: Jack Sparrow|Hidden Power|p2a: Nidoking
+|-supereffective|p2a: Nidoking
+|-damage|p2a: Nidoking|0 fnt
+|faint|p2a: Nidoking
+|
+|callback|decision
+|
+|switch|p2a: Weavile|Weavile, M|281\/281
+|-ability|p2a: Weavile|Pressure
+|turn|10
+|callback|decision
+|
+|switch|p1a: Robin Hood|Weavile, M|282\/282
+|-damage|p1a: Robin Hood|212\/282|[from] Stealth Rock
+|-ability|p1a: Robin Hood|Pressure
+|move|p2a: Weavile|Night Slash|p1a: Robin Hood
+|-resisted|p1a: Robin Hood
+|-damage|p1a: Robin Hood|105\/282
+|-damage|p2a: Weavile|253\/281|[from] item: Life Orb
+|
+|turn|11
+|callback|decision
+|
+|move|p2a: Weavile|Low Kick|p1a: Robin Hood
+|-supereffective|p1a: Robin Hood
+|-damage|p1a: Robin Hood|0 fnt
+|-damage|p2a: Weavile|225\/281|[from] item: Life Orb
+|faint|p1a: Robin Hood
+|
+|callback|decision
+|
+|switch|p1a: Shifu|Mienshao, M|271\/271
+|-damage|p1a: Shifu|255\/271|[from] Stealth Rock
+|turn|12
+|callback|decision
+|
+|switch|p2a: Blastoise|Blastoise, F|362\/362
+|move|p1a: Shifu|Hi Jump Kick|p2a: Blastoise
+|-damage|p2a: Blastoise|134\/362
+|
+|-heal|p2a: Blastoise|156\/362|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: Shifu|Hi Jump Kick|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|callback|decision
+|
+|switch|p2a: Umbreon|Umbreon, M|286\/394
+|turn|14
+|callback|decision
+|
+|switch|p1a: Jack Sparrow|Raikou, shiny|282\/322
+|-damage|p1a: Jack Sparrow|242\/322|[from] Stealth Rock
+|-ability|p1a: Jack Sparrow|Pressure
+|move|p2a: Umbreon|Protect|p2a: Umbreon
+|-fail|p2a: Umbreon
+|
+|-heal|p2a: Umbreon|310\/394|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1a: Jack Sparrow|Aura Sphere|p2a: Umbreon
+|-supereffective|p2a: Umbreon
+|-damage|p2a: Umbreon|118\/394
+|move|p2a: Umbreon|Wish|p2a: Umbreon
+|
+|-heal|p2a: Umbreon|142\/394|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p2a: Registeel|Registeel|73\/364
+|move|p1a: Jack Sparrow|Aura Sphere|p2a: Registeel
+|-supereffective|p2a: Registeel
+|-damage|p2a: Registeel|0 fnt
+|faint|p2a: Registeel
+|
+|callback|decision
+|
+|switch|p2a: Umbreon|Umbreon, M|142\/394
+|turn|17
+|callback|decision
+|
+|move|p1a: Jack Sparrow|Aura Sphere|p2a: Umbreon
+|-supereffective|p2a: Umbreon
+|-damage|p2a: Umbreon|0 fnt
+|faint|p2a: Umbreon
+|
+|callback|decision
+|
+|switch|p2a: Weavile|Weavile, M|225\/281
+|-ability|p2a: Weavile|Pressure
+|turn|18
+|callback|decision
+|
+|move|p2a: Weavile|Night Slash|p1a: Jack Sparrow
+|-damage|p1a: Jack Sparrow|38\/322
+|-damage|p2a: Weavile|197\/281|[from] item: Life Orb
+|move|p1a: Jack Sparrow|Aura Sphere|p2a: Weavile
+|-supereffective|p2a: Weavile
+|-damage|p2a: Weavile|0 fnt
+|faint|p2a: Weavile
+|
+|win|shabbir
+|raw|Ladder updating...
+|raw|shabbir's rating: 1624 &rarr; <strong>1629<\/strong><br \/>(+5 for winning)
+|raw|Shiny Breloom's rating: 1558 &rarr; <strong>1495<\/strong><br \/>(-63 for losing)

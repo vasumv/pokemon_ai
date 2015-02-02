@@ -1,0 +1,576 @@
+|join|tigers
+|join|SukopionNo Karudia
+|player|p1|tigers|93
+|player|p2|SukopionNo Karudia|285
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Hippowdon, M
+|poke|p1|Celebi
+|poke|p1|Forretress, M
+|poke|p1|Jellicent, M
+|poke|p1|Dragonite, M
+|poke|p1|Terrakion, shiny
+|poke|p2|Terrakion, shiny
+|poke|p2|Breloom, M, shiny
+|poke|p2|Tyranitar, M, shiny
+|poke|p2|Jirachi, shiny
+|poke|p2|Keldeo-Resolute, shiny
+|poke|p2|Latios, M, shiny
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Skinner!!|Forretress, M|354\/354
+|switch|p2a: Scarecrow|Breloom, M, shiny|261\/261
+|turn|1
+|callback|decision
+|
+|move|p2a: Scarecrow|Spore|p1a: Skinner!!
+|-status|p1a: Skinner!!|slp
+|cant|p1a: Skinner!!|slp
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: Dr. Feelgood|Tyranitar, M, shiny|404\/404
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Dr. Feelgood
+|switch|p1a: BOSS|Dragonite, M|386\/386
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BOSS|362\/386|[from] sandstorm
+|-heal|p1a: BOSS|386\/386|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p2a: Be Precious|Jirachi, shiny|341\/341
+|move|p1a: BOSS|Thunder Wave|p2a: Be Precious
+|-status|p2a: Be Precious|par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BOSS|362\/386|[from] sandstorm
+|-heal|p1a: BOSS|386\/386|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: BigMC|Jellicent, M|404\/404
+|move|p2a: Be Precious|Ice Punch|p1a: BigMC
+|-resisted|p1a: BigMC
+|-damage|p1a: BigMC|361\/404
+|-status|p1a: BigMC|frz
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BigMC|336\/404 frz|[from] sandstorm
+|-heal|p1a: BigMC|361\/404 frz|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p2a: Scarecrow|Breloom, M, shiny|261\/261
+|-curestatus|p1a: BigMC|frz
+|move|p1a: BigMC|Scald|p2a: Scarecrow
+|-resisted|p2a: Scarecrow
+|-damage|p2a: Scarecrow|199\/261
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Scarecrow|183\/261|[from] sandstorm
+|-damage|p1a: BigMC|336\/404|[from] sandstorm
+|-heal|p1a: BigMC|361\/404|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p1a: BOSS|Dragonite, M|386\/386
+|move|p2a: Scarecrow|Bullet Seed|p1a: BOSS
+|-resisted|p1a: BOSS
+|-damage|p1a: BOSS|379\/386
+|-resisted|p1a: BOSS
+|-damage|p1a: BOSS|365\/386
+|-hitcount|p1a: BOSS|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Scarecrow|167\/261|[from] sandstorm
+|-damage|p1a: BOSS|341\/386|[from] sandstorm
+|-heal|p1a: BOSS|365\/386|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p2a: Be Precious|Jirachi, shiny|341\/341 par
+|move|p1a: BOSS|Flamethrower|p2a: Be Precious
+|-supereffective|p2a: Be Precious
+|-damage|p2a: Be Precious|171\/341 par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BOSS|341\/386|[from] sandstorm
+|-heal|p1a: BOSS|365\/386|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p1a: BOSS|Roost|p1a: BOSS
+|-heal|p1a: BOSS|386\/386
+|cant|p2a: Be Precious|par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BOSS|362\/386|[from] sandstorm
+|-heal|p1a: BOSS|386\/386|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p1a: BigMC|Jellicent, M|361\/404
+|move|p2a: Be Precious|Ice Punch|p1a: BigMC
+|-resisted|p1a: BigMC
+|-damage|p1a: BigMC|315\/404
+|-status|p1a: BigMC|frz
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BigMC|290\/404 frz|[from] sandstorm
+|-heal|p1a: BigMC|315\/404 frz|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p2a: Dr. Feelgood|Tyranitar, M, shiny|404\/404
+|-curestatus|p1a: BigMC|frz
+|move|p1a: BigMC|Scald|p2a: Dr. Feelgood
+|-supereffective|p2a: Dr. Feelgood
+|-damage|p2a: Dr. Feelgood|320\/404
+|-status|p2a: Dr. Feelgood|brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BigMC|290\/404|[from] sandstorm
+|-heal|p1a: BigMC|315\/404|[from] item: Leftovers
+|-damage|p2a: Dr. Feelgood|270\/404 brn|[from] brn
+|turn|11
+|callback|decision
+|
+|move|p2a: Dr. Feelgood|Stealth Rock|p1a: BigMC
+|-sidestart|p1: tigers|move: Stealth Rock
+|move|p1a: BigMC|Recover|p1a: BigMC
+|-heal|p1a: BigMC|404\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BigMC|379\/404|[from] sandstorm
+|-heal|p1a: BigMC|404\/404|[from] item: Leftovers
+|-damage|p2a: Dr. Feelgood|220\/404 brn|[from] brn
+|turn|12
+|callback|decision
+|
+|switch|p1a: AngryHippo|Hippowdon, M|420\/420
+|-damage|p1a: AngryHippo|394\/420|[from] Stealth Rock
+|move|p2a: Dr. Feelgood|Crunch|p1a: AngryHippo
+|-damage|p1a: AngryHippo|348\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: AngryHippo|374\/420|[from] item: Leftovers
+|-damage|p2a: Dr. Feelgood|170\/404 brn|[from] brn
+|turn|13
+|callback|decision
+|
+|switch|p2a: MurciÃ©lago|Keldeo-Resolute, shiny|323\/323
+|move|p1a: AngryHippo|Stealth Rock|p2a: MurciÃ©lago
+|-sidestart|p2: SukopionNo Karudia|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: MurciÃ©lago|303\/323|[from] sandstorm
+|-heal|p1a: AngryHippo|400\/420|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p2a: Paris Kills|Terrakion, shiny|324\/324
+|-damage|p2a: Paris Kills|304\/324|[from] Stealth Rock
+|switch|p1a: BigMC|Jellicent, M|404\/404
+|-damage|p1a: BigMC|354\/404|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BigMC|329\/404|[from] sandstorm
+|-heal|p1a: BigMC|354\/404|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|switch|p1a: AngryHippo|Hippowdon, M|400\/420
+|-damage|p1a: AngryHippo|374\/420|[from] Stealth Rock
+|move|p2a: Paris Kills|Stone Edge|p1a: AngryHippo
+|-resisted|p1a: AngryHippo
+|-damage|p1a: AngryHippo|278\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: AngryHippo|304\/420|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p2a: Starscream|Latios, M, shiny|302\/302
+|-damage|p2a: Starscream|265\/302|[from] Stealth Rock
+|move|p1a: AngryHippo|Slack Off|p1a: AngryHippo
+|-heal|p1a: AngryHippo|420\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Starscream|247\/302|[from] sandstorm
+|turn|17
+|callback|decision
+|
+|switch|p1a: Peter Pan|Celebi|404\/404
+|-damage|p1a: Peter Pan|354\/404|[from] Stealth Rock
+|move|p2a: Starscream|Trick|p1a: Peter Pan
+|-activate|p2a: Starscream|move: Trick|[of] p1a: Peter Pan
+|-item|p1a: Peter Pan|Choice Scarf|[from] move: Trick
+|-item|p2a: Starscream|Leftovers|[from] move: Trick
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Peter Pan|329\/404|[from] sandstorm
+|-damage|p2a: Starscream|229\/302|[from] sandstorm
+|-heal|p2a: Starscream|247\/302|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|switch|p2a: Be Precious|Jirachi, shiny|171\/341 par
+|-damage|p2a: Be Precious|150\/341 par|[from] Stealth Rock
+|move|p1a: Peter Pan|Leaf Storm|p2a: Be Precious
+|-resisted|p2a: Be Precious
+|-damage|p2a: Be Precious|68\/341 par
+|-unboost|p1a: Peter Pan|spa|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Peter Pan|304\/404|[from] sandstorm
+|turn|19
+|callback|decision
+|
+|switch|p1a: BigMC|Jellicent, M|354\/404
+|-damage|p1a: BigMC|304\/404|[from] Stealth Rock
+|move|p2a: Be Precious|U-turn|p1a: BigMC
+|-resisted|p1a: BigMC
+|-damage|p1a: BigMC|264\/404
+|callback|decision
+|
+|switch|p2a: Paris Kills|Terrakion, shiny|304\/324
+|-damage|p2a: Paris Kills|284\/324|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BigMC|239\/404|[from] sandstorm
+|-heal|p1a: BigMC|264\/404|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|switch|p1a: AngryHippo|Hippowdon, M|420\/420
+|-damage|p1a: AngryHippo|394\/420|[from] Stealth Rock
+|move|p2a: Paris Kills|Close Combat|p1a: AngryHippo
+|-damage|p1a: AngryHippo|187\/420
+|-unboost|p2a: Paris Kills|def|1
+|-unboost|p2a: Paris Kills|spd|1
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: AngryHippo|213\/420|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p2a: Paris Kills|Close Combat|p1a: AngryHippo
+|-damage|p1a: AngryHippo|0 fnt
+|-unboost|p2a: Paris Kills|def|1
+|-unboost|p2a: Paris Kills|spd|1
+|faint|p1a: AngryHippo
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: BigMC|Jellicent, M|264\/404
+|-damage|p1a: BigMC|214\/404|[from] Stealth Rock
+|turn|22
+|callback|decision
+|
+|switch|p2a: Dr. Feelgood|Tyranitar, M, shiny|170\/404 brn
+|-damage|p2a: Dr. Feelgood|120\/404 brn|[from] Stealth Rock
+|move|p1a: BigMC|Recover|p1a: BigMC
+|-heal|p1a: BigMC|404\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BigMC|379\/404|[from] sandstorm
+|-heal|p1a: BigMC|404\/404|[from] item: Leftovers
+|-damage|p2a: Dr. Feelgood|70\/404 brn|[from] brn
+|turn|23
+|callback|decision
+|
+|move|p2a: Dr. Feelgood|Pursuit|p1a: BigMC
+|-supereffective|p1a: BigMC
+|-damage|p1a: BigMC|320\/404
+|move|p1a: BigMC|Scald|p2a: Dr. Feelgood
+|-supereffective|p2a: Dr. Feelgood
+|-damage|p2a: Dr. Feelgood|0 fnt
+|faint|p2a: Dr. Feelgood
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BigMC|295\/404|[from] sandstorm
+|-heal|p1a: BigMC|320\/404|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Scarecrow|Breloom, M, shiny|167\/261
+|-damage|p2a: Scarecrow|151\/261|[from] Stealth Rock
+|turn|24
+|callback|decision
+|
+|switch|p2a: Paris Kills|Terrakion, shiny|284\/324
+|-damage|p2a: Paris Kills|264\/324|[from] Stealth Rock
+|switch|p1a: BOSS|Dragonite, M|386\/386
+|-damage|p1a: BOSS|290\/386|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BOSS|266\/386|[from] sandstorm
+|-heal|p1a: BOSS|290\/386|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|switch|p1a: Skinner!!|Forretress, M|354\/354 slp
+|-damage|p1a: Skinner!!|310\/354 slp|[from] Stealth Rock
+|move|p2a: Paris Kills|Stone Edge|p1a: Skinner!!
+|-crit|p1a: Skinner!!
+|-damage|p1a: Skinner!!|0 fnt
+|faint|p1a: Skinner!!
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: 2fast4u|Terrakion, shiny|324\/324
+|-damage|p1a: 2fast4u|304\/324|[from] Stealth Rock
+|turn|26
+|callback|decision
+|
+|switch|p2a: Be Precious|Jirachi, shiny|68\/341 par
+|-damage|p2a: Be Precious|47\/341 par|[from] Stealth Rock
+|move|p1a: 2fast4u|Close Combat|p2a: Be Precious
+|-damage|p2a: Be Precious|0 fnt
+|-unboost|p1a: 2fast4u|def|1
+|-unboost|p1a: 2fast4u|spd|1
+|faint|p2a: Be Precious
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Starscream|Latios, M, shiny|247\/302
+|-damage|p2a: Starscream|210\/302|[from] Stealth Rock
+|turn|27
+|callback|decision
+|
+|switch|p1a: Peter Pan|Celebi|304\/404
+|-damage|p1a: Peter Pan|254\/404|[from] Stealth Rock
+|move|p2a: Starscream|Draco Meteor|p1a: Peter Pan
+|-damage|p1a: Peter Pan|68\/404
+|-unboost|p2a: Starscream|spa|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Peter Pan|43\/404|[from] sandstorm
+|-damage|p2a: Starscream|192\/302|[from] sandstorm
+|-heal|p2a: Starscream|210\/302|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|move|p1a: Peter Pan|Thunder Wave|p2a: Starscream
+|-status|p2a: Starscream|par
+|cant|p2a: Starscream|par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Peter Pan|18\/404|[from] sandstorm
+|-damage|p2a: Starscream|192\/302 par|[from] sandstorm
+|-heal|p2a: Starscream|210\/302 par|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|move|p1a: Peter Pan|Thunder Wave|p2a: Starscream
+|-fail|p2a: Starscream|par
+|move|p2a: Starscream|Psyshock|p1a: Peter Pan
+|-resisted|p1a: Peter Pan
+|-damage|p1a: Peter Pan|0 fnt
+|faint|p1a: Peter Pan
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Starscream|192\/302 par|[from] sandstorm
+|-heal|p2a: Starscream|210\/302 par|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: BOSS|Dragonite, M|290\/386
+|-damage|p1a: BOSS|194\/386|[from] Stealth Rock
+|turn|30
+|callback|decision
+|
+|move|p1a: BOSS|Roost|p1a: BOSS
+|-heal|p1a: BOSS|386\/386
+|move|p2a: Starscream|Draco Meteor|p1a: BOSS
+|-supereffective|p1a: BOSS
+|-damage|p1a: BOSS|282\/386
+|-unboost|p2a: Starscream|spa|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BOSS|258\/386|[from] sandstorm
+|-damage|p2a: Starscream|192\/302 par|[from] sandstorm
+|-heal|p1a: BOSS|282\/386|[from] item: Leftovers
+|-heal|p2a: Starscream|210\/302 par|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|switch|p2a: MurciÃ©lago|Keldeo-Resolute, shiny|303\/323
+|-damage|p2a: MurciÃ©lago|283\/323|[from] Stealth Rock
+|move|p1a: BOSS|Roost|p1a: BOSS
+|-heal|p1a: BOSS|386\/386
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: MurciÃ©lago|263\/323|[from] sandstorm
+|-damage|p1a: BOSS|362\/386|[from] sandstorm
+|-heal|p1a: BOSS|386\/386|[from] item: Leftovers
+|turn|32
+|callback|decision
+|
+|move|p2a: MurciÃ©lago|Icy Wind|p1a: BOSS
+|-miss|p2a: MurciÃ©lago|p1a: BOSS
+|move|p1a: BOSS|Thunder Wave|p2a: MurciÃ©lago
+|-status|p2a: MurciÃ©lago|par
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BOSS|362\/386|[from] sandstorm
+|-damage|p2a: MurciÃ©lago|243\/323 par|[from] sandstorm
+|-heal|p1a: BOSS|386\/386|[from] item: Leftovers
+|turn|33
+|callback|decision
+|
+|switch|p1a: BigMC|Jellicent, M|320\/404
+|-damage|p1a: BigMC|270\/404|[from] Stealth Rock
+|switch|p2a: Paris Kills|Terrakion, shiny|264\/324
+|-damage|p2a: Paris Kills|244\/324|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BigMC|245\/404|[from] sandstorm
+|-heal|p1a: BigMC|270\/404|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|move|p2a: Paris Kills|Stone Edge|p1a: BigMC|[miss]
+|-miss|p2a: Paris Kills|p1a: BigMC
+|move|p1a: BigMC|Scald|p2a: Paris Kills
+|-supereffective|p2a: Paris Kills
+|-damage|p2a: Paris Kills|128\/324
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BigMC|245\/404|[from] sandstorm
+|-heal|p1a: BigMC|270\/404|[from] item: Leftovers
+|turn|35
+|callback|decision
+|
+|switch|p1a: 2fast4u|Terrakion, shiny|304\/324
+|-damage|p1a: 2fast4u|284\/324|[from] Stealth Rock
+|move|p2a: Paris Kills|Stone Edge|p1a: 2fast4u
+|-resisted|p1a: 2fast4u
+|-damage|p1a: 2fast4u|146\/324
+|
+|-weather|Sandstorm|[upkeep]
+|turn|36
+|callback|decision
+|
+|switch|p2a: MurciÃ©lago|Keldeo-Resolute, shiny|243\/323 par
+|-damage|p2a: MurciÃ©lago|223\/323 par|[from] Stealth Rock
+|move|p1a: 2fast4u|Close Combat|p2a: MurciÃ©lago
+|-damage|p2a: MurciÃ©lago|12\/323 par
+|-unboost|p1a: 2fast4u|def|1
+|-unboost|p1a: 2fast4u|spd|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: MurciÃ©lago|0 fnt|[from] sandstorm
+|faint|p2a: MurciÃ©lago
+|callback|decision
+|
+|switch|p2a: Starscream|Latios, M, shiny|210\/302 par
+|-damage|p2a: Starscream|173\/302 par|[from] Stealth Rock
+|turn|37
+|callback|decision
+|
+|switch|p1a: BigMC|Jellicent, M|270\/404
+|-damage|p1a: BigMC|220\/404|[from] Stealth Rock
+|move|p2a: Starscream|Draco Meteor|p1a: BigMC
+|-damage|p1a: BigMC|21\/404
+|-unboost|p2a: Starscream|spa|2
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BigMC|0 fnt|[from] sandstorm
+|-damage|p2a: Starscream|155\/302 par|[from] sandstorm
+|-heal|p2a: Starscream|173\/302 par|[from] item: Leftovers
+|faint|p1a: BigMC
+|callback|decision
+|
+|switch|p1a: BOSS|Dragonite, M|386\/386
+|-damage|p1a: BOSS|290\/386|[from] Stealth Rock
+|turn|38
+|callback|decision
+|
+|switch|p2a: Scarecrow|Breloom, M, shiny|151\/261
+|-damage|p2a: Scarecrow|135\/261|[from] Stealth Rock
+|move|p1a: BOSS|Roost|p1a: BOSS
+|-heal|p1a: BOSS|386\/386
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Scarecrow|119\/261|[from] sandstorm
+|-damage|p1a: BOSS|362\/386|[from] sandstorm
+|-heal|p1a: BOSS|386\/386|[from] item: Leftovers
+|turn|39
+|callback|decision
+|
+|move|p2a: Scarecrow|Spore|p1a: BOSS
+|-status|p1a: BOSS|slp
+|cant|p1a: BOSS|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Scarecrow|103\/261|[from] sandstorm
+|-damage|p1a: BOSS|362\/386 slp|[from] sandstorm
+|-heal|p1a: BOSS|386\/386 slp|[from] item: Leftovers
+|turn|40
+|callback|decision
+|
+|switch|p2a: Paris Kills|Terrakion, shiny|128\/324
+|-damage|p2a: Paris Kills|108\/324|[from] Stealth Rock
+|cant|p1a: BOSS|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: BOSS|362\/386 slp|[from] sandstorm
+|-heal|p1a: BOSS|386\/386 slp|[from] item: Leftovers
+|turn|41
+|callback|decision
+|
+|move|p2a: Paris Kills|Stone Edge|p1a: BOSS
+|-crit|p1a: BOSS
+|-supereffective|p1a: BOSS
+|-damage|p1a: BOSS|0 fnt
+|faint|p1a: BOSS
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p1a: 2fast4u|Terrakion, shiny|146\/324
+|-damage|p1a: 2fast4u|126\/324|[from] Stealth Rock
+|turn|42
+|callback|decision
+|
+|move|p1a: 2fast4u|Close Combat|p2a: Paris Kills
+|-supereffective|p2a: Paris Kills
+|-damage|p2a: Paris Kills|0 fnt
+|-unboost|p1a: 2fast4u|def|1
+|-unboost|p1a: 2fast4u|spd|1
+|faint|p2a: Paris Kills
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|chat|tigers|fucking crits
+|
+|switch|p2a: Scarecrow|Breloom, M, shiny|103\/261
+|-damage|p2a: Scarecrow|87\/261|[from] Stealth Rock
+|turn|43
+|callback|decision
+|
+|move|p2a: Scarecrow|Mach Punch|p1a: 2fast4u
+|-supereffective|p1a: 2fast4u
+|-damage|p1a: 2fast4u|0 fnt
+|faint|p1a: 2fast4u
+|
+|win|SukopionNo Karudia
+|raw|Ladder updating...
+|raw|tigers's rating: 1884 &rarr; <strong>1881<\/strong><br \/>(-3 for losing)
+|raw|SukopionNo Karudia's rating: 1757 &rarr; <strong>1818<\/strong><br \/>(+61 for winning)
+|player|p1
+|leave|tigers

@@ -1,0 +1,309 @@
+|join|ArchPhantom
+|join|Snickered
+|player|p1|ArchPhantom|274
+|player|p2|Snickered|34
+|gametype|singles
+|gen|6
+|tier|OU
+|clearpoke
+|poke|p1|Greninja, F
+|poke|p1|Latias, F
+|poke|p1|Gallade, M
+|poke|p1|Empoleon, M
+|poke|p1|Landorus-Therian, M
+|poke|p1|Rotom-Wash
+|poke|p2|Mamoswine, F
+|poke|p2|Metagross
+|poke|p2|Keldeo-Resolute
+|poke|p2|Zapdos
+|poke|p2|Greninja, F
+|poke|p2|Wobbuffet, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|c|âArchPhantom|glhf
+|c|âSnickered|you too fam
+|
+|start
+|switch|p1a: Empoleon|Empoleon, M|372\/372
+|switch|p2a: Mamoswine|Mamoswine, F|361\/361
+|turn|1
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|303\/303
+|move|p2a: Mamoswine|Stealth Rock|p1a: Rotom-Wash
+|-sidestart|p1: ArchPhantom|move: Stealth Rock
+|
+|turn|2
+|
+|move|p2a: Mamoswine|Knock Off|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|213\/303
+|-enditem|p1a: Rotom-Wash|Leftovers|[from] move: Knock Off|[of] p2a: Mamoswine
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Mamoswine
+|-status|p2a: Mamoswine|brn
+|
+|-damage|p2a: Mamoswine|316\/361 brn|[from] brn
+|turn|3
+|
+|move|p2a: Mamoswine|Knock Off|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|177\/303
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Mamoswine
+|-supereffective|p2a: Mamoswine
+|-damage|p2a: Mamoswine|0 fnt
+|faint|p2a: Mamoswine
+|
+|
+|switch|p2a: Zapdos|Zapdos|322\/322
+|-ability|p2a: Zapdos|Pressure
+|turn|4
+|
+|move|p2a: Zapdos|Thunderbolt|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|23\/303
+|move|p1a: Rotom-Wash|Pain Split|p2a: Zapdos
+|-sethp|p2a: Zapdos|172\/322|p1a: Rotom-Wash|172\/303|[from] move: Pain Split
+|
+|turn|5
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|319\/319
+|-damage|p1a: Landorus-Therian|280\/319|[from] Stealth Rock
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Zapdos
+|-unboost|p2a: Zapdos|atk|1
+|move|p2a: Zapdos|Thunderbolt|p1a: Landorus-Therian
+|-immune|p1a: Landorus-Therian|[msg]
+|
+|turn|6
+|
+|switch|p2a: Keldeo-Resolute|Keldeo-Resolute|322\/322
+|move|p1a: Landorus-Therian|U-turn|p2a: Keldeo-Resolute
+|-resisted|p2a: Keldeo-Resolute
+|-damage|p2a: Keldeo-Resolute|276\/322
+|
+|switch|p1a: Latias|Latias, F|321\/321
+|-damage|p1a: Latias|281\/321|[from] Stealth Rock
+|
+|turn|7
+|
+|switch|p1a: Empoleon|Empoleon, M|372\/372
+|-damage|p1a: Empoleon|349\/372|[from] Stealth Rock
+|move|p2a: Keldeo-Resolute|Icy Wind|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|334\/372
+|-unboost|p1a: Empoleon|spe|1
+|
+|-heal|p1a: Empoleon|357\/372|[from] item: Leftovers
+|turn|8
+|
+|switch|p2a: Wobbuffet|Wobbuffet, F|522\/522
+|move|p1a: Empoleon|Defog|p2a: Wobbuffet
+|-unboost|p2a: Wobbuffet|evasion|1
+|-sideend|p1: ArchPhantom|Stealth Rock|[from] move: Defog|[of] p1a: Empoleon
+|
+|-heal|p1a: Empoleon|372\/372|[from] item: Leftovers
+|turn|9
+|
+|move|p1a: Empoleon|Stealth Rock|p2a: Wobbuffet
+|-sidestart|p2: Snickered|move: Stealth Rock
+|move|p2a: Wobbuffet|Encore|p1a: Empoleon
+|-start|p1a: Empoleon|Encore
+|
+|turn|10
+|
+|switch|p2a: Greninja|Greninja, F|285\/285
+|-damage|p2a: Greninja|250\/285|[from] Stealth Rock
+|move|p1a: Empoleon|Stealth Rock|p2a: Greninja
+|-fail|p2a: Greninja
+|
+|turn|11
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|172\/303
+|move|p2a: Greninja|Low Kick|p1a: Rotom-Wash
+|-start|p2a: Greninja|typechange|Fighting|[from] Protean
+|-damage|p1a: Rotom-Wash|149\/303
+|-damage|p2a: Greninja|222\/285|[from] item: Life Orb
+|
+|turn|12
+|
+|switch|p2a: Wobbuffet|Wobbuffet, F|522\/522
+|-damage|p2a: Wobbuffet|457\/522|[from] Stealth Rock
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Wobbuffet
+|-status|p2a: Wobbuffet|brn
+|
+|-heal|p2a: Wobbuffet|489\/522 brn|[from] item: Leftovers
+|-damage|p2a: Wobbuffet|424\/522 brn|[from] brn
+|turn|13
+|
+|switch|p2a: Zapdos|Zapdos|172\/322
+|-damage|p2a: Zapdos|92\/322|[from] Stealth Rock
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Zapdos
+|-damage|p2a: Zapdos|22\/322
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|280\/319
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Zapdos
+|-unboost|p2a: Zapdos|atk|1
+|
+|turn|14
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Zapdos
+|-resisted|p2a: Zapdos
+|-damage|p2a: Zapdos|0 fnt
+|faint|p2a: Zapdos
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|149\/303
+|
+|
+|switch|p2a: Metagross|Metagross|302\/302
+|-damage|p2a: Metagross|284\/302|[from] Stealth Rock
+|turn|15
+|
+|switch|p1a: Greninja|Greninja, F|285\/285
+|detailschange|p2a: Metagross|Metagross-Mega
+|message|Metagross has Mega Evolved into Mega Metagross!
+|move|p2a: Metagross|Zen Headbutt|p1a: Greninja
+|-immune|p1a: Greninja|[msg]
+|
+|turn|16
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|280\/319
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Metagross
+|-unboost|p2a: Metagross|atk|1
+|move|p2a: Metagross|Earthquake|p1a: Landorus-Therian
+|-immune|p1a: Landorus-Therian|[msg]
+|
+|turn|17
+|c|âSnickered|im getting destroyed lol
+|
+|move|p1a: Landorus-Therian|U-turn|p2a: Metagross
+|-damage|p2a: Metagross|224\/302
+|
+|switch|p1a: Empoleon|Empoleon, M|372\/372
+|move|p2a: Metagross|Zen Headbutt|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|311\/372
+|
+|-heal|p1a: Empoleon|334\/372|[from] item: Leftovers
+|turn|18
+|
+|switch|p2a: Keldeo-Resolute|Keldeo-Resolute|276\/322
+|-damage|p2a: Keldeo-Resolute|256\/322|[from] Stealth Rock
+|move|p1a: Empoleon|Scald|p2a: Keldeo-Resolute
+|-resisted|p2a: Keldeo-Resolute
+|-damage|p2a: Keldeo-Resolute|202\/322
+|
+|-heal|p1a: Empoleon|357\/372|[from] item: Leftovers
+|turn|19
+|
+|switch|p1a: Latias|Latias, F|281\/321
+|move|p2a: Keldeo-Resolute|Secret Sword|p1a: Latias
+|-resisted|p1a: Latias
+|-damage|p1a: Latias|204\/321
+|
+|turn|20
+|
+|switch|p2a: Greninja|Greninja, F|222\/285
+|-damage|p2a: Greninja|187\/285|[from] Stealth Rock
+|move|p1a: Latias|Psyshock|p2a: Greninja
+|-immune|p2a: Greninja|[msg]
+|
+|turn|21
+|
+|switch|p1a: Empoleon|Empoleon, M|357\/372
+|move|p2a: Greninja|Ice Beam|p1a: Empoleon
+|-start|p2a: Greninja|typechange|Ice|[from] Protean
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|319\/372
+|-damage|p2a: Greninja|159\/285|[from] item: Life Orb
+|
+|-heal|p1a: Empoleon|342\/372|[from] item: Leftovers
+|turn|22
+|
+|move|p2a: Greninja|Low Kick|p1a: Empoleon
+|-start|p2a: Greninja|typechange|Fighting|[from] Protean
+|-supereffective|p1a: Empoleon
+|-damage|p1a: Empoleon|124\/372
+|-damage|p2a: Greninja|131\/285|[from] item: Life Orb
+|move|p1a: Empoleon|Scald|p2a: Greninja
+|-damage|p2a: Greninja|0 fnt
+|faint|p2a: Greninja
+|
+|-heal|p1a: Empoleon|147\/372|[from] item: Leftovers
+|
+|switch|p2a: Metagross|Metagross-Mega|224\/302
+|-damage|p2a: Metagross|206\/302|[from] Stealth Rock
+|turn|23
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|280\/319
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Metagross
+|-unboost|p2a: Metagross|atk|1
+|move|p2a: Metagross|Earthquake|p1a: Landorus-Therian
+|-immune|p1a: Landorus-Therian|[msg]
+|
+|turn|24
+|
+|move|p1a: Landorus-Therian|Earthquake|p2a: Metagross
+|-supereffective|p2a: Metagross
+|-damage|p2a: Metagross|0 fnt
+|faint|p2a: Metagross
+|
+|
+|switch|p2a: Keldeo-Resolute|Keldeo-Resolute|202\/322
+|-damage|p2a: Keldeo-Resolute|182\/322|[from] Stealth Rock
+|turn|25
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|149\/303
+|move|p2a: Keldeo-Resolute|Secret Sword|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|29\/303
+|
+|turn|26
+|
+|switch|p1a: Gallade|Gallade, M|277\/277
+|move|p2a: Keldeo-Resolute|Secret Sword|p1a: Gallade
+|-resisted|p1a: Gallade
+|-damage|p1a: Gallade|177\/277
+|
+|turn|27
+|
+|switch|p2a: Wobbuffet|Wobbuffet, F|424\/522 brn
+|-damage|p2a: Wobbuffet|359\/522 brn|[from] Stealth Rock
+|detailschange|p1a: Gallade|Gallade-Mega, M
+|message|Gallade has Mega Evolved into Mega Gallade!
+|move|p1a: Gallade|Knock Off|p2a: Wobbuffet
+|-supereffective|p2a: Wobbuffet
+|-damage|p2a: Wobbuffet|31\/522 brn
+|-enditem|p2a: Wobbuffet|Leftovers|[from] move: Knock Off|[of] p1a: Gallade
+|
+|-damage|p2a: Wobbuffet|0 fnt|[from] brn
+|faint|p2a: Wobbuffet
+|
+|switch|p2a: Keldeo-Resolute|Keldeo-Resolute|182\/322
+|-damage|p2a: Keldeo-Resolute|162\/322|[from] Stealth Rock
+|turn|28
+|
+|switch|p1a: Latias|Latias, F|204\/321
+|move|p2a: Keldeo-Resolute|Hydro Pump|p1a: Latias
+|-resisted|p1a: Latias
+|-damage|p1a: Latias|131\/321
+|
+|turn|29
+|
+|move|p2a: Keldeo-Resolute|Hydro Pump|p1a: Latias
+|-resisted|p1a: Latias
+|-damage|p1a: Latias|48\/321
+|move|p1a: Latias|Psyshock|p2a: Keldeo-Resolute
+|-supereffective|p2a: Keldeo-Resolute
+|-damage|p2a: Keldeo-Resolute|0 fnt
+|-damage|p1a: Latias|16\/321|[from] item: Life Orb
+|faint|p2a: Keldeo-Resolute
+|
+|win|ArchPhantom
+|c|âArchPhantom|gg
+|c|âSnickered|ggg
+|c|âSnickered|gg*
+|leave|Snickered
+|player|p2

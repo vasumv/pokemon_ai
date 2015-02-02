@@ -1,0 +1,309 @@
+|join|WhiteQueen
+|join|Wolfhead69
+|player|p1|WhiteQueen|266
+|player|p2|Wolfhead69|266
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Abomasnow, F
+|poke|p1|Jirachi
+|poke|p1|Zygarde
+|poke|p1|Forretress, F
+|poke|p1|Mienshao, M
+|poke|p1|Vaporeon, F
+|poke|p2|Galvantula, M
+|poke|p2|Empoleon, F
+|poke|p2|Lucario, F
+|poke|p2|Aerodactyl, F
+|poke|p2|Donphan, F
+|poke|p2|Chandelure, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Zygarde|Zygarde|357\/357
+|switch|p2a: Galvantula|Galvantula, M|282\/282
+|-ability|p1a: Zygarde|Aura Break
+|turn|1
+|
+|move|p2a: Galvantula|Sticky Web|p1a: Zygarde
+|-sidestart|p1: WhiteQueen|move: Sticky Web
+|move|p1a: Zygarde|Earthquake|p2a: Galvantula
+|-damage|p2a: Galvantula|38\/282
+|
+|turn|2
+|
+|switch|p2a: Donphan|Donphan, F|384\/384
+|move|p1a: Zygarde|Extreme Speed|p2a: Donphan
+|-damage|p2a: Donphan|313\/384
+|
+|-heal|p2a: Donphan|337\/384|[from] item: Leftovers
+|turn|3
+|
+|switch|p1a: Forretress|Forretress, F|353\/353
+|-activate|p1a: Forretress|move: Sticky Web
+|-unboost|p1a: Forretress|spe|1
+|move|p2a: Donphan|Knock Off|p1a: Forretress
+|-damage|p1a: Forretress|281\/353
+|-enditem|p1a: Forretress|Leftovers|[from] move: Knock Off|[of] p2a: Donphan
+|
+|-heal|p2a: Donphan|361\/384|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Chandelure|Chandelure, F|262\/262
+|move|p1a: Forretress|Stealth Rock|p2a: Chandelure
+|-sidestart|p2: Wolfhead69|move: Stealth Rock
+|
+|turn|5
+|
+|switch|p1a: Vaporeon|Vaporeon, F|451\/451
+|-activate|p1a: Vaporeon|move: Sticky Web
+|-unboost|p1a: Vaporeon|spe|1
+|move|p2a: Chandelure|Trick|p1a: Vaporeon
+|-activate|p2a: Chandelure|move: Trick|[of] p1a: Vaporeon
+|-item|p1a: Vaporeon|Choice Scarf|[from] move: Trick
+|-item|p2a: Chandelure|Leftovers|[from] move: Trick
+|
+|turn|6
+|
+|move|p2a: Chandelure|Energy Ball|p1a: Vaporeon
+|-supereffective|p1a: Vaporeon
+|-damage|p1a: Vaporeon|233\/451
+|move|p1a: Vaporeon|Scald|p2a: Chandelure
+|-supereffective|p2a: Chandelure
+|-damage|p2a: Chandelure|44\/262
+|
+|-heal|p2a: Chandelure|60\/262|[from] item: Leftovers
+|turn|7
+|
+|switch|p2a: Empoleon|Empoleon, F|372\/372
+|-damage|p2a: Empoleon|349\/372|[from] Stealth Rock
+|move|p1a: Vaporeon|Scald|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|298\/372
+|-status|p2a: Empoleon|brn
+|
+|-heal|p2a: Empoleon|321\/372 brn|[from] item: Leftovers
+|-damage|p2a: Empoleon|275\/372 brn|[from] brn
+|turn|8
+|
+|move|p1a: Vaporeon|Scald|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|223\/372 brn
+|move|p2a: Empoleon|Stealth Rock|p1a: Vaporeon
+|-sidestart|p1: WhiteQueen|move: Stealth Rock
+|
+|-heal|p2a: Empoleon|246\/372 brn|[from] item: Leftovers
+|-damage|p2a: Empoleon|200\/372 brn|[from] brn
+|turn|9
+|
+|move|p1a: Vaporeon|Scald|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|154\/372 brn
+|move|p2a: Empoleon|Yawn|p1a: Vaporeon
+|-start|p1a: Vaporeon|move: Yawn|[of] p2a: Empoleon
+|
+|-heal|p2a: Empoleon|177\/372 brn|[from] item: Leftovers
+|-damage|p2a: Empoleon|131\/372 brn|[from] brn
+|turn|10
+|
+|move|p1a: Vaporeon|Scald|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|82\/372 brn
+|move|p2a: Empoleon|Scald|p1a: Vaporeon
+|-heal|p1a: Vaporeon|345\/451|[from] ability: Water Absorb|[of] p2a: Empoleon
+|
+|-status|p1a: Vaporeon|slp
+|-heal|p2a: Empoleon|105\/372 brn|[from] item: Leftovers
+|-damage|p2a: Empoleon|59\/372 brn|[from] brn
+|turn|11
+|
+|switch|p2a: Donphan|Donphan, F|361\/384
+|-damage|p2a: Donphan|337\/384|[from] Stealth Rock
+|cant|p1a: Vaporeon|slp
+|
+|-heal|p2a: Donphan|361\/384|[from] item: Leftovers
+|turn|12
+|
+|switch|p1a: Forretress|Forretress, F|281\/353
+|-damage|p1a: Forretress|237\/353|[from] Stealth Rock
+|-activate|p1a: Forretress|move: Sticky Web
+|-unboost|p1a: Forretress|spe|1
+|move|p2a: Donphan|Rapid Spin|p1a: Forretress
+|-resisted|p1a: Forretress
+|-damage|p1a: Forretress|229\/353
+|-sideend|p2: Wolfhead69|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Donphan
+|
+|-heal|p2a: Donphan|384\/384|[from] item: Leftovers
+|turn|13
+|
+|switch|p2a: Chandelure|Chandelure, F|60\/262
+|move|p1a: Forretress|Volt Switch|p2a: Chandelure
+|-damage|p2a: Chandelure|12\/262
+|
+|switch|p1a: Abomasnow|Abomasnow, F|373\/373
+|-damage|p1a: Abomasnow|280\/373|[from] Stealth Rock
+|-activate|p1a: Abomasnow|move: Sticky Web
+|-unboost|p1a: Abomasnow|spe|1
+|-weather|Hail
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Chandelure|0 fnt|[from] hail
+|faint|p2a: Chandelure
+|leave|Wolfhead69
+|join|Wolfhead69
+|player|p2
+|player|p2|Wolfhead69|266
+|
+|switch|p2a: Galvantula|Galvantula, M|38\/282
+|turn|14
+|
+|switch|p2a: Empoleon|Empoleon, F|59\/372 brn
+|detailschange|p1a: Abomasnow|Abomasnow-Mega, F
+|-mega|p1a: Abomasnow|Abomasnow|Abomasite
+|move|p1a: Abomasnow|Ice Shard|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|47\/372 brn
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Empoleon|24\/372 brn|[from] hail
+|-heal|p2a: Empoleon|47\/372 brn|[from] item: Leftovers
+|-damage|p2a: Empoleon|1\/372 brn|[from] brn
+|turn|15
+|
+|move|p1a: Abomasnow|Ice Shard|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|0 fnt
+|faint|p2a: Empoleon
+|
+|-weather|Hail|[upkeep]
+|
+|switch|p2a: Lucario|Lucario, F|282\/282
+|turn|16
+|
+|move|p2a: Lucario|Close Combat|p1a: Abomasnow
+|-supereffective|p1a: Abomasnow
+|-damage|p1a: Abomasnow|0 fnt
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|-damage|p2a: Lucario|254\/282|[from] item: Life Orb
+|faint|p1a: Abomasnow
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Lucario|237\/282|[from] hail
+|
+|switch|p1a: Forretress|Forretress, F|229\/353
+|-damage|p1a: Forretress|185\/353|[from] Stealth Rock
+|-activate|p1a: Forretress|move: Sticky Web
+|-unboost|p1a: Forretress|spe|1
+|turn|17
+|
+|move|p2a: Lucario|Swords Dance|p2a: Lucario
+|-boost|p2a: Lucario|atk|2
+|move|p1a: Forretress|Rapid Spin|p2a: Lucario
+|-resisted|p2a: Lucario
+|-damage|p2a: Lucario|224\/282
+|-sideend|p1: WhiteQueen|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Forretress
+|-sideend|p1: WhiteQueen|Sticky Web|[from] move: Rapid Spin|[of] p1a: Forretress
+|
+|-weather|none
+|turn|18
+|
+|switch|p1a: Vaporeon|Vaporeon, F|345\/451 slp
+|move|p2a: Lucario|Close Combat|p1a: Vaporeon
+|-damage|p1a: Vaporeon|0 fnt
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|-damage|p2a: Lucario|196\/282|[from] item: Life Orb
+|faint|p1a: Vaporeon
+|
+|
+|switch|p1a: Zygarde|Zygarde|357\/357
+|-ability|p1a: Zygarde|Aura Break
+|turn|19
+|
+|move|p1a: Zygarde|Earthquake|p2a: Lucario
+|-crit|p2a: Lucario
+|-supereffective|p2a: Lucario
+|-damage|p2a: Lucario|0 fnt
+|faint|p2a: Lucario
+|
+|
+|switch|p2a: Aerodactyl|Aerodactyl, F|302\/302
+|-ability|p2a: Aerodactyl|Unnerve|p1: WhiteQueen
+|turn|20
+|
+|detailschange|p2a: Aerodactyl|Aerodactyl-Mega, F
+|-mega|p2a: Aerodactyl|Aerodactyl|Aerodactylite
+|move|p2a: Aerodactyl|Aerial Ace|p1a: Zygarde
+|-damage|p1a: Zygarde|222\/357
+|move|p1a: Zygarde|Dragon Dance|p1a: Zygarde
+|-boost|p1a: Zygarde|atk|1
+|-boost|p1a: Zygarde|spe|1
+|
+|-heal|p1a: Zygarde|244\/357|[from] item: Leftovers
+|turn|21
+|
+|switch|p2a: Galvantula|Galvantula, M|38\/282
+|move|p1a: Zygarde|Outrage|p2a: Galvantula
+|-damage|p2a: Galvantula|0 fnt
+|faint|p2a: Galvantula
+|
+|-heal|p1a: Zygarde|266\/357|[from] item: Leftovers
+|leave|Wolfhead69
+|join|Wolfhead69
+|player|p2
+|player|p2|Wolfhead69|266
+|
+|switch|p2a: Donphan|Donphan, F|384\/384
+|turn|22
+|
+|move|p1a: Zygarde|Outrage|p2a: Donphan
+|-damage|p2a: Donphan|152\/384
+|move|p2a: Donphan|Knock Off|p1a: Zygarde
+|-damage|p1a: Zygarde|164\/357
+|-enditem|p1a: Zygarde|Leftovers|[from] move: Knock Off|[of] p2a: Donphan
+|
+|-end|p1a: Zygarde|rampage
+|-start|p1a: Zygarde|confusion
+|-heal|p2a: Donphan|176\/384|[from] item: Leftovers
+|turn|23
+|
+|-activate|p1a: Zygarde|confusion
+|move|p1a: Zygarde|Outrage|p2a: Donphan
+|-damage|p2a: Donphan|0 fnt
+|faint|p2a: Donphan
+|
+|
+|switch|p2a: Aerodactyl|Aerodactyl-Mega, F|302\/302
+|turn|24
+|
+|-activate|p1a: Zygarde|confusion
+|-damage|p1a: Zygarde|109\/357|[from] confusion
+|move|p2a: Aerodactyl|Hone Claws|p2a: Aerodactyl
+|-boost|p2a: Aerodactyl|atk|1
+|-boost|p2a: Aerodactyl|accuracy|1
+|
+|turn|25
+|
+|-end|p1a: Zygarde|confusion
+|move|p1a: Zygarde|Outrage|p2a: Aerodactyl
+|-damage|p2a: Aerodactyl|0 fnt
+|faint|p2a: Aerodactyl
+|
+|win|WhiteQueen
+|raw|Ladder updating...
+|raw|WhiteQueen's rating: 1633 &rarr; <strong>1657<\/strong><br \/>(+24 for winning)
+|raw|Wolfhead69's rating: 1708 &rarr; <strong>1684<\/strong><br \/>(-24 for losing)
+|leave|Wolfhead69
+|player|p2

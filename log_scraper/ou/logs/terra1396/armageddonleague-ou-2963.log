@@ -1,0 +1,181 @@
+|join|ALeaderWhimsicott
+|join|terra1396
+|player|p1|ALeaderWhimsicott|113
+|player|p2|terra1396|99
+|gametype|singles
+|tier|OU
+|clearpoke
+|poke|p1|Togekiss, F
+|poke|p1|Rotom-Fan
+|poke|p1|Aerodactyl, M
+|poke|p1|Skarmory, M
+|poke|p1|Hawlucha, M
+|poke|p1|Landorus-Therian, M
+|poke|p2|Zoroark, F
+|poke|p2|Bronzong, shiny
+|poke|p2|Scolipede, M
+|poke|p2|Garchomp, F
+|poke|p2|Genesect
+|poke|p2|Talonflame, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|switch|p2a: Bronzong|Bronzong, shiny|262\/262
+|turn|1
+|callback|decision
+|
+|move|p2a: Bronzong|Flamethrower|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|86\/334
+|move|p1a: Skarmory|Swords Dance|p1a: Skarmory
+|-boost|p1a: Skarmory|atk|2
+|
+|-heal|p1a: Skarmory|106\/334|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|move|p2a: Bronzong|Flamethrower|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|faint|p1a: Skarmory
+|
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|320\/320
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Bronzong
+|-unboost|p2a: Bronzong|atk|1
+|turn|3
+|callback|decision
+|
+|move|p1a: Landorus-Therian|Superpower|p2a: Bronzong
+|-supereffective|p2a: Bronzong
+|-enditem|p2a: Bronzong|Focus Sash
+|replace|p2a: Zoroark|Zoroark, F|262\/262
+|-damage|p2a: Zoroark|1\/262
+|-unboost|p1a: Landorus-Therian|atk|1
+|-unboost|p1a: Landorus-Therian|def|1
+|move|p2a: Zoroark|Night Daze|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|161\/320
+|
+|turn|4
+|callback|decision
+|
+|move|p1a: Landorus-Therian|Superpower|p2a: Zoroark
+|-supereffective|p2a: Zoroark
+|-damage|p2a: Zoroark|0 fnt
+|-unboost|p1a: Landorus-Therian|atk|1
+|-unboost|p1a: Landorus-Therian|def|1
+|faint|p2a: Zoroark
+|
+|callback|decision
+|
+|switch|p2a: Scolipede|Scolipede, M|324\/324
+|turn|5
+|callback|decision
+|
+|switch|p1a: Rotom-Fan|Rotom-Fan|304\/304
+|move|p2a: Scolipede|Swords Dance|p2a: Scolipede
+|-boost|p2a: Scolipede|atk|2
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|6
+|callback|decision
+|
+|move|p2a: Scolipede|Baton Pass|p2a: Scolipede
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, F|420\/420
+|move|p1a: Rotom-Fan|Confuse Ray|p2a: Garchomp
+|-start|p2a: Garchomp|confusion
+|
+|turn|7
+|callback|decision
+|
+|-activate|p2a: Garchomp|confusion
+|move|p2a: Garchomp|Stone Edge|p1a: Rotom-Fan
+|-supereffective|p1a: Rotom-Fan
+|-damage|p1a: Rotom-Fan|0 fnt
+|faint|p1a: Rotom-Fan
+|
+|callback|decision
+|
+|switch|p1a: Landorus-Therian|Landorus-Therian, M|161\/320
+|-ability|p1a: Landorus-Therian|Intimidate|[of] p2a: Garchomp
+|-unboost|p2a: Garchomp|atk|1
+|turn|8
+|callback|decision
+|
+|move|p1a: Landorus-Therian|Earthquake|p2a: Garchomp
+|-damage|p2a: Garchomp|276\/420
+|-end|p2a: Garchomp|confusion
+|move|p2a: Garchomp|Stone Edge|p1a: Landorus-Therian
+|-damage|p1a: Landorus-Therian|0 fnt
+|faint|p1a: Landorus-Therian
+|
+|callback|decision
+|
+|switch|p1a: Hawlucha|Hawlucha, M|298\/298
+|turn|9
+|callback|decision
+|
+|move|p2a: Garchomp|Stone Edge|p1a: Hawlucha
+|-damage|p1a: Hawlucha|102\/298
+|move|p1a: Hawlucha|High Jump Kick|p2a: Garchomp
+|-damage|p2a: Garchomp|104\/420
+|-damage|p1a: Hawlucha|65\/298|[from] ability: Rough Skin|[of] p2a: Garchomp
+|
+|turn|10
+|callback|decision
+|
+|move|p2a: Garchomp|Brick Break|p1a: Hawlucha
+|-resisted|p1a: Hawlucha
+|-damage|p1a: Hawlucha|0 fnt
+|faint|p1a: Hawlucha
+|
+|callback|decision
+|
+|switch|p1a: Togekiss|Togekiss, F|374\/374
+|turn|11
+|callback|decision
+|
+|move|p2a: Garchomp|Stone Edge|p1a: Togekiss
+|-supereffective|p1a: Togekiss
+|-damage|p1a: Togekiss|52\/374
+|move|p1a: Togekiss|Air Slash|p2a: Garchomp
+|-damage|p2a: Garchomp|31\/420
+|
+|-heal|p1a: Togekiss|75\/374|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: Garchomp|Stone Edge|p1a: Togekiss
+|-supereffective|p1a: Togekiss
+|-damage|p1a: Togekiss|0 fnt
+|faint|p1a: Togekiss
+|
+|callback|decision
+|
+|switch|p1a: Aerodactyl|Aerodactyl, M|302\/302
+|turn|13
+|callback|decision
+|
+|-formechange|p1a: Aerodactyl|Aerodactyl-Mega
+|message|Aerodactyl has Mega Evolved into Mega Aerodactyl!
+|move|p1a: Aerodactyl|Hone Claws|p1a: Aerodactyl
+|-boost|p1a: Aerodactyl|atk|1
+|-boost|p1a: Aerodactyl|accuracy|1
+|move|p2a: Garchomp|Outrage|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|0 fnt
+|faint|p1a: Aerodactyl
+|
+|win|terra1396
+|chat|terra1396|gg

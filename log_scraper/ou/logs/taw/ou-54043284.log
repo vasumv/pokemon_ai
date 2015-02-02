@@ -1,0 +1,121 @@
+|join|taw
+|join|Sharpteeth
+|player|p1|taw|257
+|player|p2|Sharpteeth|1
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Celebi
+|poke|p1|Alakazam, F
+|poke|p1|Chandelure, M
+|poke|p1|Forretress, F
+|poke|p1|Weavile, M
+|poke|p1|Garchomp, M
+|poke|p2|Politoed, M
+|poke|p2|Moltres
+|poke|p2|Tornadus, M
+|poke|p2|Donphan, M
+|poke|p2|Espeon, F
+|poke|p2|Celebi
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Garchomp|Garchomp, M|358\/358
+|switch|p2a: Politoed|Politoed, M|384\/384
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|turn|1
+|callback|decision
+|
+|move|p1a: Garchomp|Outrage|p2a: Politoed
+|-enditem|p1a: Garchomp|Dragon Gem|[from] gem|[move] Outrage
+|-damage|p2a: Politoed|105\/384
+|move|p2a: Politoed|Scald|p1a: Garchomp
+|-damage|p1a: Garchomp|219\/358
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Politoed|129\/384|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p2a: Donphan|Donphan, M|384\/384
+|move|p1a: Garchomp|Outrage|p2a: Donphan
+|-damage|p2a: Donphan|258\/384
+|
+|-end|p1a: Garchomp|rampage
+|-start|p1a: Garchomp|confusion
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Donphan|282\/384|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p2a: Donphan|Ice Shard|p1a: Garchomp
+|-supereffective|p1a: Garchomp
+|-damage|p1a: Garchomp|71\/358
+|-activate|p1a: Garchomp|confusion
+|move|p1a: Garchomp|Stealth Rock|p2a: Donphan
+|-sidestart|p2: Sharpteeth|move: Stealth Rock
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Donphan|306\/384|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: Celebi|Celebi|404\/404
+|move|p2a: Donphan|Earthquake|p1a: Celebi
+|-resisted|p1a: Celebi
+|-damage|p1a: Celebi|334\/404
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Celebi|359\/404|[from] item: Leftovers
+|-heal|p2a: Donphan|330\/384|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p2a: Espeon|Espeon, F|334\/334
+|-damage|p2a: Espeon|293\/334|[from] Stealth Rock
+|move|p1a: Celebi|Nasty Plot|p1a: Celebi
+|-boost|p1a: Celebi|spa|2
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Espeon|313\/334|[from] item: Leftovers
+|-heal|p1a: Celebi|384\/404|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Espeon|Calm Mind|p2a: Espeon
+|-boost|p2a: Espeon|spa|1
+|-boost|p2a: Espeon|spd|1
+|move|p1a: Celebi|Baton Pass|p1a: Celebi
+|callback|decision
+|
+|switch|p1a: Chandelure|Chandelure, M|261\/261
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Espeon|333\/334|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p1a: Chandelure|Shadow Ball|p2a: Espeon
+|-supereffective|p2a: Espeon
+|-damage|p2a: Espeon|0 fnt
+|faint|p2a: Espeon
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|-message|Sharpteeth forfeited.
+|
+|win|taw
+|raw|Ladder updating...
+|leave|Sharpteeth
+|player|p2
+|raw|taw's rating: 2004 &rarr; <strong>2007<\/strong><br \/>(+3 for winning)
+|raw|Sharpteeth's rating: 1973 &rarr; <strong>1970<\/strong><br \/>(-3 for losing)

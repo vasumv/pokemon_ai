@@ -1,0 +1,572 @@
+|join|keroluxray
+|join|Zedseayou
+|player|p1|keroluxray|126
+|player|p2|Zedseayou|102
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Scizor, M
+|poke|p1|Rotom-Wash
+|poke|p1|Gliscor, M
+|poke|p1|Blissey, F
+|poke|p1|Dusclops, M
+|poke|p1|Gyarados, M
+|poke|p2|Slowbro, M
+|poke|p2|Tornadus-Therian, M
+|poke|p2|Venusaur, F
+|poke|p2|Heatran, F
+|poke|p2|Skarmory, M
+|poke|p2|Chansey, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Rotom-Wash|Rotom-Wash|242\/242
+|switch|p2a: Heatran|Heatran, F|385\/385
+|turn|1
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Heatran
+|-supereffective|p2a: Heatran
+|-damage|p2a: Heatran|133\/385
+|move|p2a: Heatran|Stealth Rock|p1a: Rotom-Wash
+|-sidestart|p1: keroluxray|move: Stealth Rock
+|
+|-heal|p2a: Heatran|157\/385|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Chansey
+|-damage|p2a: Chansey|583\/704
+|
+|turn|3
+|callback|decision
+|join|I Crit My Panties
+|
+|switch|p1a: Gyarados|Gyarados, M|332\/332
+|-damage|p1a: Gyarados|249\/332|[from] Stealth Rock
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Chansey
+|-unboost|p2a: Chansey|atk|1
+|move|p2a: Chansey|Wish|p2a: Chansey
+|
+|-heal|p1a: Gyarados|269\/332|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p1a: Gyarados|Substitute|p1a: Gyarados
+|-start|p1a: Gyarados|Substitute
+|-damage|p1a: Gyarados|186\/332
+|move|p2a: Chansey|Toxic|p1a: Gyarados
+|
+|-heal|p2a: Chansey|704\/704|[from] move: Wish|[wisher] Chansey
+|-heal|p1a: Gyarados|206\/332|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p2a: Venusaur|Venusaur, F|364\/364
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|
+|-heal|p1a: Gyarados|226\/332|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|move|p2a: Venusaur|Roar|p1a: Gyarados
+|drag|p1a: Scizor|Scizor, M|344\/344
+|-damage|p1a: Scizor|301\/344|[from] Stealth Rock
+|
+|turn|7
+|callback|decision
+|
+|-formechange|p1a: Scizor|Scizor-Mega
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p1a: Scizor|Defog|p2a: Venusaur
+|-unboost|p2a: Venusaur|evasion|1
+|-sideend|p1: keroluxray|Stealth Rock|[from] move: Defog|[of] p1a: Scizor
+|move|p2a: Venusaur|Roar|p1a: Scizor
+|drag|p1a: Blissey|Blissey, F|652\/652
+|
+|turn|8
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, F|157\/385
+|move|p1a: Blissey|Seismic Toss|p2a: Heatran
+|-damage|p2a: Heatran|57\/385
+|
+|-heal|p2a: Heatran|81\/385|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M|299\/299
+|switch|p1a: Rotom-Wash|Rotom-Wash|242\/242
+|
+|turn|10
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Tornadus-Therian
+|-supereffective|p2a: Tornadus-Therian
+|-damage|p2a: Tornadus-Therian|141\/299
+|callback|decision
+|
+|switch|p1a: Blissey|Blissey, F|652\/652
+|move|p2a: Tornadus-Therian|Knock Off|p1a: Blissey
+|-damage|p1a: Blissey|545\/652
+|
+|turn|11
+|callback|decision
+|
+|move|p2a: Tornadus-Therian|Superpower|p1a: Blissey
+|-supereffective|p1a: Blissey
+|-damage|p1a: Blissey|145\/652
+|-unboost|p2a: Tornadus-Therian|atk|1
+|-unboost|p2a: Tornadus-Therian|def|1
+|move|p1a: Blissey|Toxic|p2a: Tornadus-Therian
+|-status|p2a: Tornadus-Therian|tox
+|
+|-damage|p2a: Tornadus-Therian|123\/299 tox|[from] psn
+|turn|12
+|callback|decision
+|chat|I Crit My Panties|it has roar
+|chat|I Crit My Panties|derp
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|242\/242
+|move|p2a: Tornadus-Therian|U-turn|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|198\/242
+|callback|decision
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|
+|turn|13
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Trick|p2a: Chansey
+|-activate|p1a: Rotom-Wash|move: Trick|[of] p2a: Chansey
+|-item|p2a: Chansey|Choice Scarf|[from] move: Trick
+|-item|p1a: Rotom-Wash|Eviolite|[from] move: Trick
+|move|p2a: Chansey|Heal Bell|p2a: Chansey
+|-cureteam|p2a: Chansey|[from] move: HealBell
+|
+|turn|14
+|callback|decision
+|chat|Zedseayou|UGH how did i forget you were scarved
+|
+|switch|p2a: Venusaur|Venusaur, F|364\/364
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Venusaur|[miss]
+|-miss|p1a: Rotom-Wash|p2a: Venusaur
+|
+|turn|15
+|callback|decision
+|
+|switch|p1a: Dusclops|Dusclops, M|284\/284
+|-ability|p1a: Dusclops|Pressure
+|move|p2a: Venusaur|Giga Drain|p1a: Dusclops
+|-damage|p1a: Dusclops|224\/284
+|
+|turn|16
+|callback|decision
+|
+|switch|p2a: Heatran|Heatran, F|81\/385
+|move|p1a: Dusclops|Night Shade|p2a: Heatran
+|-damage|p2a: Heatran|0 fnt
+|faint|p2a: Heatran
+|
+|callback|decision
+|
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M|222\/299
+|turn|17
+|callback|decision
+|
+|move|p2a: Tornadus-Therian|Knock Off|p1a: Dusclops
+|-supereffective|p1a: Dusclops
+|-damage|p1a: Dusclops|148\/284
+|-enditem|p1a: Dusclops|Eviolite|[from] move: Knock Off|[of] p2a: Tornadus-Therian
+|move|p1a: Dusclops|Will-O-Wisp|p2a: Tornadus-Therian|[miss]
+|-miss|p1a: Dusclops|p2a: Tornadus-Therian
+|
+|turn|18
+|callback|decision
+|
+|move|p2a: Tornadus-Therian|U-turn|p1a: Dusclops
+|-resisted|p1a: Dusclops
+|-damage|p1a: Dusclops|127\/284
+|callback|decision
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|move|p1a: Dusclops|Will-O-Wisp|p2a: Chansey
+|-status|p2a: Chansey|brn
+|
+|-damage|p2a: Chansey|616\/704 brn|[from] brn
+|turn|19
+|callback|decision
+|
+|move|p2a: Chansey|Toxic|p1a: Dusclops
+|-status|p1a: Dusclops|tox
+|move|p1a: Dusclops|Will-O-Wisp|p2a: Chansey|[miss]
+|-miss|p1a: Dusclops|p2a: Chansey
+|
+|-damage|p2a: Chansey|528\/704 brn|[from] brn
+|-damage|p1a: Dusclops|110\/284 tox|[from] psn
+|turn|20
+|callback|decision
+|
+|move|p2a: Chansey|Toxic|p1a: Dusclops
+|-fail|p1a: Dusclops|tox
+|move|p1a: Dusclops|Rest|p1a: Dusclops
+|-status|p1a: Dusclops|slp
+|-heal|p1a: Dusclops|284\/284 slp|[silent]
+|-status|p1a: Dusclops|slp|[from] move: Rest
+|
+|-damage|p2a: Chansey|440\/704 brn|[from] brn
+|turn|21
+|callback|decision
+|
+|switch|p2a: Skarmory|Skarmory, M|334\/334
+|cant|p1a: Dusclops|slp
+|
+|turn|22
+|callback|decision
+|
+|move|p2a: Skarmory|Taunt|p1a: Dusclops
+|-start|p1a: Dusclops|move: Taunt
+|cant|p1a: Dusclops|slp
+|
+|turn|23
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|198\/242
+|move|p2a: Skarmory|Brave Bird|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|145\/242
+|-damage|p2a: Skarmory|317\/334|[from] recoil|[of] p1a: Rotom-Wash
+|
+|turn|24
+|callback|decision
+|
+|switch|p2a: Venusaur|Venusaur, F|364\/364
+|-formechange|p2a: Venusaur|Venusaur-Mega
+|move|p1a: Rotom-Wash|Trick|p2a: Venusaur
+|-fail|p2a: Venusaur
+|
+|turn|25
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|322\/364
+|callback|decision
+|
+|switch|p1a: Dusclops|Dusclops, M|284\/284 slp
+|-ability|p1a: Dusclops|Pressure
+|move|p2a: Venusaur|Giga Drain|p1a: Dusclops
+|-crit|p1a: Dusclops
+|-damage|p1a: Dusclops|167\/284 slp
+|-heal|p2a: Venusaur|364\/364|[from] drain|[of] p1a: Dusclops
+|
+|turn|26
+|callback|decision
+|
+|move|p2a: Venusaur|Giga Drain|p1a: Dusclops
+|-damage|p1a: Dusclops|89\/284 slp
+|-curestatus|p1a: Dusclops|slp
+|move|p1a: Dusclops|Will-O-Wisp|p2a: Venusaur
+|-status|p2a: Venusaur|brn
+|
+|-damage|p2a: Venusaur|319\/364 brn|[from] brn
+|turn|27
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, M|301\/344
+|-formechange|p1a: Scizor|Scizor-Mega
+|move|p2a: Venusaur|Giga Drain|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|276\/344
+|-heal|p2a: Venusaur|332\/364 brn|[from] drain|[of] p1a: Scizor
+|
+|-damage|p2a: Venusaur|287\/364 brn|[from] brn
+|turn|28
+|callback|decision
+|
+|switch|p2a: Skarmory|Skarmory, M|317\/334
+|move|p1a: Scizor|Swords Dance|p1a: Scizor
+|-boost|p1a: Scizor|atk|2
+|
+|turn|29
+|callback|decision
+|
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|344\/344
+|move|p2a: Skarmory|Taunt|p1a: Scizor
+|-start|p1a: Scizor|move: Taunt
+|
+|turn|30
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|236\/334
+|-damage|p1a: Scizor|287\/344|[from] item: Rocky Helmet|[of] p2a: Skarmory
+|move|p2a: Skarmory|Brave Bird|p1a: Scizor
+|-damage|p1a: Scizor|191\/344
+|-damage|p2a: Skarmory|204\/334|[from] recoil|[of] p1a: Scizor
+|
+|turn|31
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|145\/242
+|move|p2a: Skarmory|Roost|p2a: Skarmory
+|-heal|p2a: Skarmory|334\/334
+|
+|turn|32
+|callback|decision
+|
+|switch|p2a: Chansey|Chansey, F|440\/704
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Chansey
+|-damage|p2a: Chansey|320\/704
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, M|191\/344
+|-formechange|p1a: Scizor|Scizor-Mega
+|
+|turn|33
+|callback|decision
+|
+|switch|p2a: Skarmory|Skarmory, M|334\/334
+|move|p1a: Scizor|Bullet Punch|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|295\/334
+|-damage|p1a: Scizor|134\/344|[from] item: Rocky Helmet|[of] p2a: Skarmory
+|
+|turn|34
+|callback|decision
+|
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|306\/344
+|move|p2a: Skarmory|Brave Bird|p1a: Scizor
+|-damage|p1a: Scizor|222\/344
+|-damage|p2a: Skarmory|267\/334|[from] recoil|[of] p1a: Scizor
+|
+|turn|35
+|callback|decision
+|
+|move|p1a: Scizor|Roost|p1a: Scizor
+|-heal|p1a: Scizor|344\/344
+|move|p2a: Skarmory|Taunt|p1a: Scizor
+|-start|p1a: Scizor|move: Taunt
+|
+|turn|36
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|145\/242
+|move|p2a: Skarmory|Brave Bird|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|90\/242
+|-damage|p2a: Skarmory|249\/334|[from] recoil|[of] p1a: Rotom-Wash
+|
+|turn|37
+|callback|decision
+|
+|switch|p2a: Chansey|Chansey, F|320\/704
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Chansey
+|-damage|p2a: Chansey|215\/704
+|callback|decision
+|
+|switch|p1a: Gyarados|Gyarados, M|226\/332
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Chansey
+|-unboost|p2a: Chansey|atk|1
+|
+|-heal|p1a: Gyarados|246\/332|[from] item: Leftovers
+|turn|38
+|callback|decision
+|
+|move|p1a: Gyarados|Waterfall|p2a: Chansey
+|-damage|p2a: Chansey|0 fnt
+|faint|p2a: Chansey
+|
+|-heal|p1a: Gyarados|266\/332|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|393\/393
+|turn|39
+|callback|decision
+|
+|move|p1a: Gyarados|Substitute|p1a: Gyarados
+|-start|p1a: Gyarados|Substitute
+|-damage|p1a: Gyarados|183\/332
+|move|p2a: Slowbro|Scald|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-activate|p1a: Gyarados|Substitute|[damage]
+|
+|-heal|p1a: Gyarados|203\/332|[from] item: Leftovers
+|turn|40
+|callback|decision
+|
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|move|p2a: Slowbro|Psyshock|p1a: Gyarados
+|-end|p1a: Gyarados|Substitute
+|
+|-heal|p1a: Gyarados|223\/332|[from] item: Leftovers
+|turn|41
+|callback|decision
+|
+|move|p1a: Gyarados|Bounce|p2a: Slowbro|[still]
+|-prepare|p1a: Gyarados|Bounce|p2a: Slowbro
+|move|p2a: Slowbro|Psyshock|p1a: Gyarados|[miss]
+|-miss|p2a: Slowbro|p1a: Gyarados
+|
+|-heal|p1a: Gyarados|243\/332|[from] item: Leftovers
+|turn|42
+|callback|decision
+|
+|switch|p2a: Skarmory|Skarmory, M|249\/334
+|move|p1a: Gyarados|Bounce|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|175\/334
+|-damage|p1a: Gyarados|188\/332|[from] item: Rocky Helmet|[of] p2a: Skarmory
+|
+|-heal|p1a: Gyarados|208\/332|[from] item: Leftovers
+|turn|43
+|callback|decision
+|
+|move|p1a: Gyarados|Substitute|p1a: Gyarados
+|-start|p1a: Gyarados|Substitute
+|-damage|p1a: Gyarados|125\/332
+|move|p2a: Skarmory|Roost|p2a: Skarmory
+|-heal|p2a: Skarmory|334\/334
+|
+|-heal|p1a: Gyarados|145\/332|[from] item: Leftovers
+|turn|44
+|callback|decision
+|
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|move|p2a: Skarmory|Taunt|p1a: Gyarados
+|-start|p1a: Gyarados|move: Taunt
+|
+|-heal|p1a: Gyarados|165\/332|[from] item: Leftovers
+|turn|45
+|callback|decision
+|
+|move|p1a: Gyarados|Bounce|p2a: Skarmory|[still]
+|-prepare|p1a: Gyarados|Bounce|p2a: Skarmory
+|move|p2a: Skarmory|Roost|p2a: Skarmory
+|-fail|p2a: Skarmory
+|
+|-heal|p1a: Gyarados|185\/332|[from] item: Leftovers
+|turn|46
+|callback|decision
+|
+|move|p1a: Gyarados|Bounce|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|246\/334
+|-damage|p1a: Gyarados|130\/332|[from] item: Rocky Helmet|[of] p2a: Skarmory
+|move|p2a: Skarmory|Brave Bird|p1a: Gyarados
+|-end|p1a: Gyarados|Substitute
+|-damage|p2a: Skarmory|219\/334|[from] recoil|[of] p1a: Gyarados
+|
+|-heal|p1a: Gyarados|150\/332|[from] item: Leftovers
+|turn|47
+|callback|decision
+|
+|move|p1a: Gyarados|Waterfall|p2a: Skarmory
+|-damage|p2a: Skarmory|36\/334
+|-damage|p1a: Gyarados|95\/332|[from] item: Rocky Helmet|[of] p2a: Skarmory
+|move|p2a: Skarmory|Roost|p2a: Skarmory
+|-heal|p2a: Skarmory|203\/334
+|
+|-heal|p1a: Gyarados|115\/332|[from] item: Leftovers
+|-end|p1a: Gyarados|move: Taunt
+|turn|48
+|callback|decision
+|
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|move|p2a: Skarmory|Taunt|p1a: Gyarados
+|-start|p1a: Gyarados|move: Taunt
+|
+|-heal|p1a: Gyarados|135\/332|[from] item: Leftovers
+|turn|49
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|393\/393
+|move|p1a: Gyarados|Waterfall|p2a: Slowbro
+|-resisted|p2a: Slowbro
+|-damage|p2a: Slowbro|263\/393
+|
+|-heal|p1a: Gyarados|155\/332|[from] item: Leftovers
+|turn|50
+|callback|decision
+|
+|move|p1a: Gyarados|Bounce|p2a: Slowbro|[still]
+|-prepare|p1a: Gyarados|Bounce|p2a: Slowbro
+|move|p2a: Slowbro|Psyshock|p1a: Gyarados|[miss]
+|-miss|p2a: Slowbro|p1a: Gyarados
+|
+|-heal|p1a: Gyarados|175\/332|[from] item: Leftovers
+|turn|51
+|callback|decision
+|
+|switch|p2a: Skarmory|Skarmory, M|203\/334
+|move|p1a: Gyarados|Bounce|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|90\/334
+|-damage|p1a: Gyarados|120\/332|[from] item: Rocky Helmet|[of] p2a: Skarmory
+|
+|-heal|p1a: Gyarados|140\/332|[from] item: Leftovers
+|-end|p1a: Gyarados|move: Taunt
+|turn|52
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|393\/393
+|move|p1a: Gyarados|Waterfall|p2a: Slowbro
+|-resisted|p2a: Slowbro
+|-damage|p2a: Slowbro|251\/393
+|
+|-heal|p1a: Gyarados|160\/332|[from] item: Leftovers
+|turn|53
+|callback|decision
+|
+|switch|p2a: Skarmory|Skarmory, M|90\/334
+|move|p1a: Gyarados|Bounce|p2a: Skarmory|[still]
+|-prepare|p1a: Gyarados|Bounce|p2a: Skarmory
+|
+|-heal|p1a: Gyarados|180\/332|[from] item: Leftovers
+|turn|54
+|callback|decision
+|
+|move|p1a: Gyarados|Bounce|p2a: Skarmory
+|-resisted|p2a: Skarmory
+|-damage|p2a: Skarmory|0 fnt
+|-damage|p1a: Gyarados|125\/332|[from] item: Rocky Helmet|[of] p2a: Skarmory
+|faint|p2a: Skarmory
+|
+|-heal|p1a: Gyarados|145\/332|[from] item: Leftovers
+|callback|decision
+|-message|Zedseayou forfeited.
+|
+|win|keroluxray
+|raw|Ladder updating...
+|leave|Zedseayou
+|player|p2
+|raw|Ladder (probably) updated, but score could not be retrieved (timeout).
+|raw|Ladder (probably) updated, but score could not be retrieved (Error: socket hang up).

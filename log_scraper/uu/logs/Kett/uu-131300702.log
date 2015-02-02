@@ -1,0 +1,353 @@
+|join|Kett
+|join|HungryHoothoot
+|player|p1|Kett|52
+|player|p2|HungryHoothoot|99
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Swampert, M
+|poke|p1|Scrafty, M
+|poke|p1|Roserade, F
+|poke|p1|Crobat, M
+|poke|p1|Arcanine, M
+|poke|p1|Reuniclus, M
+|poke|p2|Darmanitan, F
+|poke|p2|Blastoise, M
+|poke|p2|Celebi
+|poke|p2|Nidoking, M
+|poke|p2|Sableye, M
+|poke|p2|Metagross
+|teampreview
+|
+|start
+|switch|p1a: Rocks|Swampert, M|404\/404
+|switch|p2a: Metagross|Metagross|364\/364
+|turn|1
+|
+|move|p2a: Metagross|Stealth Rock|p1a: Rocks
+|-sidestart|p1: Kett|move: Stealth Rock
+|move|p1a: Rocks|Stealth Rock|p2a: Metagross
+|-sidestart|p2: HungryHoothoot|move: Stealth Rock
+|
+|turn|2
+|
+|switch|p2a: Celebi|Celebi|404\/404
+|-damage|p2a: Celebi|354\/404|[from] Stealth Rock
+|move|p1a: Rocks|Toxic|p2a: Celebi
+|-status|p2a: Celebi|tox
+|
+|-heal|p2a: Celebi|379\/404 tox|[from] item: Leftovers
+|-damage|p2a: Celebi|354\/404 tox|[from] psn
+|turn|3
+|
+|switch|p1a: Levi|Scrafty, M|334\/334
+|-damage|p1a: Levi|314\/334|[from] Stealth Rock
+|-ability|p1a: Levi|Intimidate|[of] p2a: Celebi
+|-unboost|p2a: Celebi|atk|1
+|move|p2a: Celebi|U-turn|p1a: Levi
+|-damage|p1a: Levi|283\/334
+|
+|switch|p2a: Nidoking|Nidoking, M|343\/343
+|-damage|p2a: Nidoking|322\/343|[from] Stealth Rock
+|
+|turn|4
+|
+|move|p2a: Nidoking|Sludge Wave|p1a: Levi
+|-damage|p1a: Levi|196\/334
+|move|p1a: Levi|Knock Off|p2a: Nidoking
+|-damage|p2a: Nidoking|151\/343
+|-enditem|p2a: Nidoking|Life Orb|[from] move: Knock Off|[of] p1a: Levi
+|
+|turn|5
+|chat|HungryHoothoot|this has attack evs
+|chat|HungryHoothoot|smh
+|
+|move|p2a: Nidoking|Sludge Wave|p1a: Levi
+|-damage|p1a: Levi|123\/334
+|move|p1a: Levi|Ice Punch|p2a: Nidoking
+|-supereffective|p2a: Nidoking
+|-damage|p2a: Nidoking|0 fnt
+|faint|p2a: Nidoking
+|
+|
+|switch|p2a: Blastoise|Blastoise, M|362\/362
+|-damage|p2a: Blastoise|317\/362|[from] Stealth Rock
+|turn|6
+|chat|Kett|well that must suck
+|
+|switch|p1a: Juliet|Roserade, F|261\/261
+|-damage|p1a: Juliet|229\/261|[from] Stealth Rock
+|detailschange|p2a: Blastoise|Blastoise-Mega, M
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Blastoise|Aura Sphere|p1a: Juliet
+|-resisted|p1a: Juliet
+|-damage|p1a: Juliet|159\/261
+|
+|turn|7
+|
+|switch|p2a: Metagross|Metagross|364\/364
+|-damage|p2a: Metagross|342\/364|[from] Stealth Rock
+|move|p1a: Juliet|Leaf Storm|p2a: Metagross
+|-resisted|p2a: Metagross
+|-damage|p2a: Metagross|176\/364
+|-unboost|p1a: Juliet|spa|2
+|
+|-heal|p2a: Metagross|198\/364|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Rocks|Swampert, M|404\/404
+|-damage|p1a: Rocks|379\/404|[from] Stealth Rock
+|move|p2a: Metagross|Earthquake|p1a: Rocks
+|-damage|p1a: Rocks|290\/404
+|
+|-heal|p2a: Metagross|220\/364|[from] item: Leftovers
+|-heal|p1a: Rocks|315\/404|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Sableye|Sableye, M|304\/304
+|-damage|p2a: Sableye|266\/304|[from] Stealth Rock
+|move|p1a: Rocks|Toxic|p2a: Sableye
+|-status|p2a: Sableye|tox
+|
+|-heal|p1a: Rocks|340\/404|[from] item: Leftovers
+|-heal|p2a: Sableye|285\/304 tox|[from] item: Leftovers
+|-damage|p2a: Sableye|266\/304 tox|[from] psn
+|turn|10
+|
+|switch|p1a: Zebra|Arcanine, M|339\/339
+|-damage|p1a: Zebra|255\/339|[from] Stealth Rock
+|switch|p2a: Blastoise|Blastoise-Mega, M|317\/362
+|-damage|p2a: Blastoise|272\/362|[from] Stealth Rock
+|
+|turn|11
+|
+|switch|p1a: Crobot|Crobat, M|325\/325
+|-damage|p1a: Crobot|244\/325|[from] Stealth Rock
+|move|p2a: Blastoise|Water Pulse|p1a: Crobot
+|-damage|p1a: Crobot|52\/325
+|
+|-heal|p1a: Crobot|72\/325|[from] item: Black Sludge
+|turn|12
+|
+|switch|p2a: Metagross|Metagross|220\/364
+|-damage|p2a: Metagross|198\/364|[from] Stealth Rock
+|move|p1a: Crobot|Brave Bird|p2a: Metagross
+|-resisted|p2a: Metagross
+|-damage|p2a: Metagross|129\/364
+|-damage|p1a: Crobot|49\/325|[from] recoil|[of] p2a: Metagross
+|
+|-heal|p1a: Crobot|69\/325|[from] item: Black Sludge
+|-heal|p2a: Metagross|151\/364|[from] item: Leftovers
+|turn|13
+|
+|move|p1a: Crobot|Defog|p2a: Metagross
+|-fail|p2a: Metagross|unboost|[from] ability: Clear Body|[of] p2a: Metagross
+|-sideend|p2: HungryHoothoot|Stealth Rock|[from] move: Defog|[of] p2a: Metagross
+|-sideend|p1: Kett|Stealth Rock|[from] move: Defog|[of] p1a: Crobot
+|move|p2a: Metagross|Meteor Mash|p1a: Crobot
+|-damage|p1a: Crobot|0 fnt
+|faint|p1a: Crobot
+|
+|-heal|p2a: Metagross|173\/364|[from] item: Leftovers
+|
+|switch|p1a: Zebra|Arcanine, M|255\/339
+|turn|14
+|
+|move|p1a: Zebra|Flare Blitz|p2a: Metagross
+|-supereffective|p2a: Metagross
+|-damage|p2a: Metagross|0 fnt
+|-damage|p1a: Zebra|198\/339|[from] recoil|[of] p2a: Metagross
+|-damage|p1a: Zebra|165\/339|[from] item: Life Orb
+|faint|p2a: Metagross
+|
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|272\/362
+|turn|15
+|
+|switch|p1a: Levi|Scrafty, M|123\/334
+|-ability|p1a: Levi|Intimidate|[of] p2a: Blastoise
+|-unboost|p2a: Blastoise|atk|1
+|move|p2a: Blastoise|Ice Beam|p1a: Levi
+|-damage|p1a: Levi|57\/334
+|
+|turn|16
+|
+|move|p2a: Blastoise|Aura Sphere|p1a: Levi
+|-supereffective|p1a: Levi
+|-damage|p1a: Levi|0 fnt
+|faint|p1a: Levi
+|
+|
+|switch|p1a: Juliet|Roserade, F|159\/261
+|turn|17
+|
+|switch|p2a: Sableye|Sableye, M|266\/304 tox
+|move|p1a: Juliet|Sludge Bomb|p2a: Sableye
+|-resisted|p2a: Sableye
+|-damage|p2a: Sableye|142\/304 tox
+|
+|-heal|p2a: Sableye|161\/304 tox|[from] item: Leftovers
+|-damage|p2a: Sableye|142\/304 tox|[from] psn
+|turn|18
+|
+|move|p1a: Juliet|Sludge Bomb|p2a: Sableye
+|-resisted|p2a: Sableye
+|-damage|p2a: Sableye|13\/304 tox
+|move|p2a: Sableye|Foul Play|p1a: Juliet
+|-damage|p1a: Juliet|45\/261
+|
+|-heal|p2a: Sableye|32\/304 tox|[from] item: Leftovers
+|-damage|p2a: Sableye|0 fnt|[from] psn
+|faint|p2a: Sableye
+|
+|switch|p2a: Darmanitan|Darmanitan, F|351\/351
+|turn|19
+|
+|switch|p1a: Rocks|Swampert, M|340\/404
+|move|p2a: Darmanitan|U-turn|p1a: Rocks
+|-damage|p1a: Rocks|263\/404
+|
+|switch|p2a: Celebi|Celebi|354\/404
+|
+|-heal|p2a: Celebi|379\/404|[from] item: Leftovers
+|-heal|p1a: Rocks|288\/404|[from] item: Leftovers
+|turn|20
+|
+|switch|p1a: Ridiculous|Reuniclus, M|424\/424
+|move|p2a: Celebi|U-turn|p1a: Ridiculous
+|-supereffective|p1a: Ridiculous
+|-damage|p1a: Ridiculous|324\/424
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|272\/362
+|
+|-heal|p1a: Ridiculous|350\/424|[from] item: Leftovers
+|turn|21
+|
+|switch|p1a: Rocks|Swampert, M|288\/404
+|move|p2a: Blastoise|Dark Pulse|p1a: Rocks
+|-damage|p1a: Rocks|116\/404
+|
+|-heal|p1a: Rocks|141\/404|[from] item: Leftovers
+|turn|22
+|
+|move|p2a: Blastoise|Dark Pulse|p1a: Rocks
+|-damage|p1a: Rocks|0 fnt
+|faint|p1a: Rocks
+|
+|
+|switch|p1a: Juliet|Roserade, F|45\/261
+|turn|23
+|
+|switch|p2a: Celebi|Celebi|379\/404
+|move|p1a: Juliet|Rest|p1a: Juliet
+|-status|p1a: Juliet|slp
+|-heal|p1a: Juliet|261\/261 slp|[silent]
+|-status|p1a: Juliet|slp|[from] move: Rest
+|
+|-heal|p2a: Celebi|404\/404|[from] item: Leftovers
+|turn|24
+|
+|switch|p1a: Ridiculous|Reuniclus, M|350\/424
+|move|p2a: Celebi|U-turn|p1a: Ridiculous
+|-supereffective|p1a: Ridiculous
+|-damage|p1a: Ridiculous|248\/424
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|272\/362
+|
+|-heal|p1a: Ridiculous|274\/424|[from] item: Leftovers
+|turn|25
+|
+|move|p2a: Blastoise|Dark Pulse|p1a: Ridiculous
+|-supereffective|p1a: Ridiculous
+|-damage|p1a: Ridiculous|0 fnt
+|faint|p1a: Ridiculous
+|
+|
+|switch|p1a: Juliet|Roserade, F|261\/261
+|turn|26
+|
+|switch|p2a: Celebi|Celebi|404\/404
+|move|p1a: Juliet|Sludge Bomb|p2a: Celebi
+|-supereffective|p2a: Celebi
+|-damage|p2a: Celebi|6\/404
+|
+|-heal|p2a: Celebi|31\/404|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: Juliet|Sludge Bomb|p2a: Celebi
+|-supereffective|p2a: Celebi
+|-damage|p2a: Celebi|0 fnt
+|faint|p2a: Celebi
+|
+|
+|switch|p2a: Darmanitan|Darmanitan, F|351\/351
+|turn|28
+|chat|HungryHoothoot|gg i think
+|
+|switch|p1a: Zebra|Arcanine, M|165\/339
+|move|p2a: Darmanitan|Flare Blitz|p1a: Zebra
+|-start|p1a: Zebra|ability: Flash Fire
+|
+|turn|29
+|chat|Kett|yeah
+|chat|HungryHoothoot|what
+|chat|HungryHoothoot|that was a misclick
+|chat|HungryHoothoot|i clicked eq
+|
+|switch|p2a: Blastoise|Blastoise-Mega, M|272\/362
+|move|p1a: Zebra|Extreme Speed|p2a: Blastoise
+|-damage|p2a: Blastoise|175\/362
+|-damage|p1a: Zebra|132\/339|[from] item: Life Orb
+|
+|turn|30
+|chat|Kett|yeah, figured you misclicked
+|chat|Kett|I dont think it really matters tho
+|
+|switch|p1a: Juliet|Roserade, F|261\/261
+|move|p2a: Blastoise|Ice Beam|p1a: Juliet
+|-supereffective|p1a: Juliet
+|-damage|p1a: Juliet|39\/261
+|
+|turn|31
+|
+|move|p1a: Juliet|Sludge Bomb|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|
+|switch|p2a: Darmanitan|Darmanitan, F|351\/351
+|turn|32
+|
+|move|p2a: Darmanitan|Earthquake|p1a: Juliet
+|-damage|p1a: Juliet|0 fnt
+|faint|p1a: Juliet
+|
+|
+|switch|p1a: Zebra|Arcanine, M|132\/339
+|turn|33
+|chat|HungryHoothoot|gg
+|
+|move|p1a: Zebra|Extreme Speed|p2a: Darmanitan
+|-damage|p2a: Darmanitan|152\/351
+|-damage|p1a: Zebra|99\/339|[from] item: Life Orb
+|move|p2a: Darmanitan|Earthquake|p1a: Zebra
+|-supereffective|p1a: Zebra
+|-damage|p1a: Zebra|0 fnt
+|faint|p1a: Zebra
+|
+|win|HungryHoothoot
+|raw|Ladder updating...
+|chat|Kett|gg
+|raw|Kett's rating: 1379 &rarr; <strong>1357<\/strong><br \/>(-22 for losing)
+|raw|HungryHoothoot's rating: 1347 &rarr; <strong>1369<\/strong><br \/>(+22 for winning)
+|leave|Kett
+|player|p1

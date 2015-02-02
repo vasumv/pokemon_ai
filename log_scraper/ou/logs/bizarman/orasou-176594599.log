@@ -1,0 +1,499 @@
+|join|tru
+|join|bizarman
+|player|p1|tru|2
+|player|p2|bizarman|42
+|gametype|singles
+|gen|6
+|tier|ORAS OU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Mew
+|poke|p1|Tyranitar, F, shiny
+|poke|p1|Greninja, F, shiny
+|poke|p1|Thundurus, M, shiny
+|poke|p1|Salamence, M
+|poke|p1|Clefable, F
+|poke|p2|Tyranitar, M
+|poke|p2|Steelix, M
+|poke|p2|Landorus-Therian, M
+|poke|p2|Alomomola, F
+|poke|p2|Latios, M
+|poke|p2|Breloom, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Salamence|Salamence, M|331\/331
+|switch|p2a: Harkonen|Tyranitar, M|403\/403
+|-ability|p1a: Salamence|Intimidate|[of] p2a: Harkonen
+|-unboost|p2a: Harkonen|atk|1
+|-weather|Sandstorm
+|turn|1
+|
+|detailschange|p1a: Salamence|Salamence-Mega, M
+|message|Salamence has Mega Evolved into Mega Salamence!
+|move|p1a: Salamence|Earthquake|p2a: Harkonen
+|-supereffective|p2a: Harkonen
+|-damage|p2a: Harkonen|227\/403
+|move|p2a: Harkonen|Stealth Rock|p1a: Salamence
+|-sidestart|p1: tru|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salamence|311\/331|[from] sandstorm
+|turn|2
+|
+|switch|p1a: Clefable|Clefable, F|394\/394
+|switch|p2a: Kwisatz Haderach|Landorus-Therian, M|320\/320
+|-ability|p2a: Kwisatz Haderach|Intimidate|[of] p1a: Clefable
+|-unboost|p1a: Clefable|atk|1
+|
+|-weather|Sandstorm|[upkeep]
+|turn|3
+|
+|move|p2a: Kwisatz Haderach|U-turn|p1a: Clefable
+|-resisted|p1a: Clefable
+|-damage|p1a: Clefable|346\/394
+|
+|switch|p2a: Shai-Hulud|Steelix, M|354\/354
+|move|p1a: Clefable|Stealth Rock|p2a: Shai-Hulud
+|-sidestart|p2: bizarman|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Clefable|370\/394|[from] item: Leftovers
+|turn|4
+|
+|detailschange|p2a: Shai-Hulud|Steelix-Mega, M
+|message|Steelix has Mega Evolved into Mega Steelix!
+|move|p1a: Clefable|Flamethrower|p2a: Shai-Hulud
+|-supereffective|p2a: Shai-Hulud
+|-damage|p2a: Shai-Hulud|216\/354
+|-status|p2a: Shai-Hulud|brn
+|move|p2a: Shai-Hulud|Gyro Ball|p1a: Clefable
+|-supereffective|p1a: Clefable
+|-damage|p1a: Clefable|188\/394
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Clefable|212\/394|[from] item: Leftovers
+|-damage|p2a: Shai-Hulud|172\/354 brn|[from] brn
+|turn|5
+|
+|switch|p2a: Spice|Breloom, M|323\/323
+|-damage|p2a: Spice|303\/323|[from] Stealth Rock
+|move|p1a: Clefable|Soft-Boiled|p1a: Clefable
+|-heal|p1a: Clefable|394\/394
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Spice|283\/323|[from] sandstorm
+|-status|p2a: Spice|tox|[from] item: Toxic Orb
+|turn|6
+|
+|move|p2a: Spice|Spore|p1a: Clefable
+|-status|p1a: Clefable|slp
+|cant|p1a: Clefable|slp
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Spice|263\/323 tox|[from] sandstorm
+|-heal|p2a: Spice|303\/323 tox|[from] ability: Poison Heal
+|turn|7
+|
+|switch|p1a: Mew|Mew|404\/404
+|-damage|p1a: Mew|354\/404|[from] Stealth Rock
+|move|p2a: Spice|Substitute|p2a: Spice
+|-start|p2a: Spice|Substitute
+|-damage|p2a: Spice|223\/323 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Mew|329\/404|[from] sandstorm
+|-damage|p2a: Spice|203\/323 tox|[from] sandstorm
+|-heal|p1a: Mew|354\/404|[from] item: Leftovers
+|-heal|p2a: Spice|243\/323 tox|[from] ability: Poison Heal
+|turn|8
+|
+|move|p1a: Mew|Taunt|p2a: Spice
+|-start|p2a: Spice|move: Taunt
+|cant|p2a: Spice|move: Taunt|Leech Seed
+|
+|-weather|none
+|-heal|p1a: Mew|379\/404|[from] item: Leftovers
+|-heal|p2a: Spice|283\/323 tox|[from] ability: Poison Heal
+|turn|9
+|
+|switch|p2a: Bene Gesserit|Alomomola, F|534\/534
+|-damage|p2a: Bene Gesserit|468\/534|[from] Stealth Rock
+|move|p1a: Mew|Knock Off|p2a: Bene Gesserit
+|-damage|p2a: Bene Gesserit|408\/534
+|-enditem|p2a: Bene Gesserit|Leftovers|[from] move: Knock Off|[of] p1a: Mew
+|
+|-heal|p1a: Mew|404\/404|[from] item: Leftovers
+|turn|10
+|
+|switch|p2a: Leto|Latios, M|302\/302
+|-damage|p2a: Leto|265\/302|[from] Stealth Rock
+|move|p1a: Mew|Will-O-Wisp|p2a: Leto
+|-status|p2a: Leto|brn
+|
+|-damage|p2a: Leto|228\/302 brn|[from] brn
+|turn|11
+|
+|move|p2a: Leto|Defog|p1a: Mew
+|-unboost|p1a: Mew|evasion|1
+|-sideend|p1: tru|Stealth Rock|[from] move: Defog|[of] p1a: Mew
+|-sideend|p2: bizarman|Stealth Rock|[from] move: Defog|[of] p2a: Leto
+|move|p1a: Mew|Knock Off|p2a: Leto
+|-supereffective|p2a: Leto
+|-damage|p2a: Leto|28\/302 brn
+|-enditem|p2a: Leto|Life Orb|[from] move: Knock Off|[of] p1a: Mew
+|
+|-damage|p2a: Leto|0 fnt|[from] brn
+|faint|p2a: Leto
+|
+|switch|p2a: Kwisatz Haderach|Landorus-Therian, M|320\/320
+|-ability|p2a: Kwisatz Haderach|Intimidate|[of] p1a: Mew
+|-unboost|p1a: Mew|atk|1
+|turn|12
+|
+|move|p2a: Kwisatz Haderach|U-turn|p1a: Mew
+|-supereffective|p1a: Mew
+|-damage|p1a: Mew|208\/404
+|
+|switch|p2a: Shai-Hulud|Steelix-Mega, M|172\/354 brn
+|move|p1a: Mew|Will-O-Wisp|p2a: Shai-Hulud
+|-fail|p2a: Shai-Hulud|brn
+|
+|-heal|p1a: Mew|233\/404|[from] item: Leftovers
+|-damage|p2a: Shai-Hulud|128\/354 brn|[from] brn
+|turn|13
+|
+|move|p1a: Mew|Soft-Boiled|p1a: Mew
+|-heal|p1a: Mew|404\/404
+|move|p2a: Shai-Hulud|Earthquake|p1a: Mew
+|-damage|p1a: Mew|308\/404
+|
+|-heal|p1a: Mew|333\/404|[from] item: Leftovers
+|-damage|p2a: Shai-Hulud|84\/354 brn|[from] brn
+|turn|14
+|
+|move|p1a: Mew|Will-O-Wisp|p2a: Shai-Hulud|[miss]
+|-miss|p1a: Mew|p2a: Shai-Hulud
+|move|p2a: Shai-Hulud|Gyro Ball|p1a: Mew
+|-damage|p1a: Mew|239\/404
+|
+|-heal|p1a: Mew|264\/404|[from] item: Leftovers
+|-damage|p2a: Shai-Hulud|40\/354 brn|[from] brn
+|turn|15
+|
+|switch|p2a: Harkonen|Tyranitar, M|227\/403
+|-weather|Sandstorm
+|move|p1a: Mew|Soft-Boiled|p1a: Mew
+|-heal|p1a: Mew|404\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Mew|379\/404|[from] sandstorm
+|-heal|p1a: Mew|404\/404|[from] item: Leftovers
+|turn|16
+|
+|move|p1a: Mew|Taunt|p2a: Harkonen
+|-start|p2a: Harkonen|move: Taunt
+|move|p2a: Harkonen|Crunch|p1a: Mew
+|-supereffective|p1a: Mew
+|-damage|p1a: Mew|150\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Mew|125\/404|[from] sandstorm
+|-heal|p1a: Mew|150\/404|[from] item: Leftovers
+|turn|17
+|
+|switch|p1a: Tyranitar|Tyranitar, F, shiny|404\/404
+|move|p2a: Harkonen|Crunch|p1a: Tyranitar
+|-resisted|p1a: Tyranitar
+|-damage|p1a: Tyranitar|358\/404
+|-unboost|p1a: Tyranitar|def|1
+|
+|-weather|Sandstorm|[upkeep]
+|turn|18
+|
+|switch|p2a: Kwisatz Haderach|Landorus-Therian, M|320\/320
+|-ability|p2a: Kwisatz Haderach|Intimidate|[of] p1a: Tyranitar
+|-unboost|p1a: Tyranitar|atk|1
+|move|p1a: Tyranitar|Ice Beam|p2a: Kwisatz Haderach
+|-supereffective|p2a: Kwisatz Haderach
+|-damage|p2a: Kwisatz Haderach|0 fnt
+|faint|p2a: Kwisatz Haderach
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Spice|Breloom, M|283\/323 tox
+|turn|19
+|
+|switch|p1a: Mew|Mew|150\/404
+|move|p2a: Spice|Leech Seed|p1a: Mew
+|-start|p1a: Mew|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Mew|125\/404|[from] sandstorm
+|-damage|p2a: Spice|263\/323 tox|[from] sandstorm
+|-heal|p1a: Mew|150\/404|[from] item: Leftovers
+|-damage|p1a: Mew|100\/404|[from] Leech Seed|[of] p2a: Spice
+|-heal|p2a: Spice|313\/323 tox|[silent]
+|-heal|p2a: Spice|323\/323 tox|[from] ability: Poison Heal
+|turn|20
+|
+|move|p1a: Mew|Soft-Boiled|p1a: Mew
+|-heal|p1a: Mew|302\/404
+|move|p2a: Spice|Drain Punch|p1a: Mew
+|-resisted|p1a: Mew
+|-damage|p1a: Mew|245\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Mew|220\/404|[from] sandstorm
+|-damage|p2a: Spice|303\/323 tox|[from] sandstorm
+|-heal|p1a: Mew|245\/404|[from] item: Leftovers
+|-damage|p1a: Mew|195\/404|[from] Leech Seed|[of] p2a: Spice
+|-heal|p2a: Spice|323\/323 tox|[silent]
+|turn|21
+|
+|switch|p1a: Salamence|Salamence-Mega, M|311\/331
+|move|p2a: Spice|Drain Punch|p1a: Salamence
+|-resisted|p1a: Salamence
+|-damage|p1a: Salamence|266\/331
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Salamence|246\/331|[from] sandstorm
+|-damage|p2a: Spice|303\/323 tox|[from] sandstorm
+|-heal|p2a: Spice|323\/323 tox|[from] ability: Poison Heal
+|turn|22
+|
+|switch|p2a: Shai-Hulud|Steelix-Mega, M|40\/354 brn
+|move|p1a: Salamence|Frustration|p2a: Shai-Hulud
+|-resisted|p2a: Shai-Hulud
+|-damage|p2a: Shai-Hulud|0 fnt
+|faint|p2a: Shai-Hulud
+|
+|-weather|none
+|
+|switch|p2a: Bene Gesserit|Alomomola, F|534\/534
+|turn|23
+|
+|move|p1a: Salamence|Dragon Dance|p1a: Salamence
+|-boost|p1a: Salamence|atk|1
+|-boost|p1a: Salamence|spe|1
+|move|p2a: Bene Gesserit|Toxic|p1a: Salamence
+|-status|p1a: Salamence|tox
+|
+|-damage|p1a: Salamence|226\/331 tox|[from] psn
+|turn|24
+|
+|move|p1a: Salamence|Frustration|p2a: Bene Gesserit
+|-damage|p2a: Bene Gesserit|227\/534
+|move|p2a: Bene Gesserit|Wish|p2a: Bene Gesserit
+|
+|-damage|p1a: Salamence|186\/331 tox|[from] psn
+|turn|25
+|
+|move|p2a: Bene Gesserit|Protect|p2a: Bene Gesserit
+|-singleturn|p2a: Bene Gesserit|Protect
+|move|p1a: Salamence|Dragon Dance|p1a: Salamence
+|-boost|p1a: Salamence|atk|1
+|-boost|p1a: Salamence|spe|1
+|
+|-heal|p2a: Bene Gesserit|494\/534|[from] move: Wish|[wisher] Bene Gesserit
+|-damage|p1a: Salamence|126\/331 tox|[from] psn
+|turn|26
+|
+|move|p1a: Salamence|Frustration|p2a: Bene Gesserit
+|-damage|p2a: Bene Gesserit|94\/534
+|move|p2a: Bene Gesserit|Wish|p2a: Bene Gesserit
+|
+|-damage|p1a: Salamence|46\/331 tox|[from] psn
+|turn|27
+|
+|switch|p1a: Thundurus|Thundurus, M, shiny|299\/299
+|move|p2a: Bene Gesserit|Protect|p2a: Bene Gesserit
+|-fail|p2a: Bene Gesserit
+|
+|-heal|p2a: Bene Gesserit|361\/534|[from] move: Wish|[wisher] Bene Gesserit
+|turn|28
+|
+|switch|p2a: Harkonen|Tyranitar, M|227\/403
+|-weather|Sandstorm
+|move|p1a: Thundurus|Thunderbolt|p2a: Harkonen
+|-damage|p2a: Harkonen|101\/403
+|-damage|p1a: Thundurus|270\/299|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Thundurus|252\/299|[from] sandstorm
+|turn|29
+|
+|move|p1a: Thundurus|Thunderbolt|p2a: Harkonen
+|-damage|p2a: Harkonen|0 fnt
+|-damage|p1a: Thundurus|223\/299|[from] item: Life Orb
+|faint|p2a: Harkonen
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Thundurus|205\/299|[from] sandstorm
+|
+|switch|p2a: Spice|Breloom, M|323\/323 tox
+|turn|30
+|
+|move|p1a: Thundurus|Hidden Power|p2a: Spice
+|-supereffective|p2a: Spice
+|-damage|p2a: Spice|159\/323 tox
+|-damage|p1a: Thundurus|176\/299|[from] item: Life Orb
+|move|p2a: Spice|Leech Seed|p1a: Thundurus
+|-start|p1a: Thundurus|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Thundurus|158\/299|[from] sandstorm
+|-damage|p2a: Spice|139\/323 tox|[from] sandstorm
+|-damage|p1a: Thundurus|121\/299|[from] Leech Seed|[of] p2a: Spice
+|-heal|p2a: Spice|176\/323 tox|[silent]
+|-heal|p2a: Spice|216\/323 tox|[from] ability: Poison Heal
+|turn|31
+|
+|switch|p1a: Mew|Mew|195\/404
+|move|p2a: Spice|Substitute|p2a: Spice
+|-start|p2a: Spice|Substitute
+|-damage|p2a: Spice|136\/323 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Mew|170\/404|[from] sandstorm
+|-damage|p2a: Spice|116\/323 tox|[from] sandstorm
+|-heal|p1a: Mew|195\/404|[from] item: Leftovers
+|-heal|p2a: Spice|156\/323 tox|[from] ability: Poison Heal
+|turn|32
+|
+|move|p1a: Mew|Taunt|p2a: Spice
+|-start|p2a: Spice|move: Taunt
+|move|p2a: Spice|Drain Punch|p1a: Mew
+|-resisted|p1a: Mew
+|-damage|p1a: Mew|135\/404
+|-heal|p2a: Spice|186\/323 tox|[from] drain|[of] p1a: Mew
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Mew|110\/404|[from] sandstorm
+|-damage|p2a: Spice|166\/323 tox|[from] sandstorm
+|-heal|p1a: Mew|135\/404|[from] item: Leftovers
+|-heal|p2a: Spice|206\/323 tox|[from] ability: Poison Heal
+|turn|33
+|
+|switch|p2a: Bene Gesserit|Alomomola, F|534\/534
+|move|p1a: Mew|Soft-Boiled|p1a: Mew
+|-heal|p1a: Mew|337\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Mew|312\/404|[from] sandstorm
+|-damage|p2a: Bene Gesserit|501\/534|[from] sandstorm
+|-heal|p1a: Mew|337\/404|[from] item: Leftovers
+|turn|34
+|
+|move|p1a: Mew|Will-O-Wisp|p2a: Bene Gesserit
+|-status|p2a: Bene Gesserit|brn
+|move|p2a: Bene Gesserit|Toxic|p1a: Mew
+|-status|p1a: Mew|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Mew|312\/404 tox|[from] sandstorm
+|-damage|p2a: Bene Gesserit|468\/534 brn|[from] sandstorm
+|-heal|p1a: Mew|337\/404 tox|[from] item: Leftovers
+|-damage|p1a: Mew|312\/404 tox|[from] psn
+|-damage|p2a: Bene Gesserit|402\/534 brn|[from] brn
+|turn|35
+|
+|switch|p1a: Salamence|Salamence-Mega, M|46\/331 tox
+|move|p2a: Bene Gesserit|Wish|p2a: Bene Gesserit
+|
+|-weather|none
+|-damage|p1a: Salamence|26\/331 tox|[from] psn
+|-damage|p2a: Bene Gesserit|336\/534 brn|[from] brn
+|turn|36
+|
+|switch|p1a: Greninja|Greninja, F, shiny|285\/285
+|move|p2a: Bene Gesserit|Protect|p2a: Bene Gesserit
+|-fail|p2a: Bene Gesserit
+|
+|-heal|p2a: Bene Gesserit|534\/534 brn|[from] move: Wish|[wisher] Bene Gesserit
+|-damage|p2a: Bene Gesserit|468\/534 brn|[from] brn
+|turn|37
+|
+|move|p1a: Greninja|Dark Pulse|p2a: Bene Gesserit
+|-start|p1a: Greninja|typechange|Dark|[from] Protean
+|-damage|p2a: Bene Gesserit|198\/534 brn
+|-damage|p1a: Greninja|257\/285|[from] item: Life Orb
+|move|p2a: Bene Gesserit|Toxic|p1a: Greninja
+|-status|p1a: Greninja|tox
+|
+|-damage|p1a: Greninja|240\/285 tox|[from] psn
+|-damage|p2a: Bene Gesserit|132\/534 brn|[from] brn
+|turn|38
+|
+|switch|p2a: Spice|Breloom, M|206\/323 tox
+|move|p1a: Greninja|Dark Pulse|p2a: Spice
+|-resisted|p2a: Spice
+|-damage|p2a: Spice|136\/323 tox
+|-damage|p1a: Greninja|212\/285 tox|[from] item: Life Orb
+|
+|-damage|p1a: Greninja|178\/285 tox|[from] psn
+|-heal|p2a: Spice|176\/323 tox|[from] ability: Poison Heal
+|turn|39
+|
+|switch|p2a: Bene Gesserit|Alomomola, F|310\/534 brn
+|move|p1a: Greninja|Ice Beam|p2a: Bene Gesserit
+|-start|p1a: Greninja|typechange|Ice|[from] Protean
+|-resisted|p2a: Bene Gesserit
+|-damage|p2a: Bene Gesserit|142\/534 brn
+|-damage|p1a: Greninja|150\/285 tox|[from] item: Life Orb
+|
+|-damage|p1a: Greninja|99\/285 tox|[from] psn
+|-damage|p2a: Bene Gesserit|76\/534 brn|[from] brn
+|turn|40
+|
+|switch|p1a: Thundurus|Thundurus, M, shiny|121\/299
+|switch|p2a: Spice|Breloom, M|176\/323 tox
+|
+|-heal|p2a: Spice|216\/323 tox|[from] ability: Poison Heal
+|turn|41
+|
+|move|p1a: Thundurus|Hidden Power|p2a: Spice
+|-supereffective|p2a: Spice
+|-damage|p2a: Spice|37\/323 tox
+|-damage|p1a: Thundurus|92\/299|[from] item: Life Orb
+|move|p2a: Spice|Leech Seed|p1a: Thundurus
+|-start|p1a: Thundurus|move: Leech Seed
+|
+|-damage|p1a: Thundurus|55\/299|[from] Leech Seed|[of] p2a: Spice
+|-heal|p2a: Spice|74\/323 tox|[silent]
+|-heal|p2a: Spice|114\/323 tox|[from] ability: Poison Heal
+|turn|42
+|
+|switch|p2a: Bene Gesserit|Alomomola, F|254\/534 brn
+|move|p1a: Thundurus|Thunderbolt|p2a: Bene Gesserit
+|-supereffective|p2a: Bene Gesserit
+|-damage|p2a: Bene Gesserit|0 fnt
+|-damage|p1a: Thundurus|26\/299|[from] item: Life Orb
+|faint|p2a: Bene Gesserit
+|
+|
+|switch|p2a: Spice|Breloom, M|114\/323 tox
+|turn|43
+|c|âbizarman|gg
+|
+|move|p1a: Thundurus|Hidden Power|p2a: Spice
+|-supereffective|p2a: Spice
+|-damage|p2a: Spice|0 fnt
+|-damage|p1a: Thundurus|0 fnt|[from] item: Life Orb
+|faint|p2a: Spice
+|faint|p1a: Thundurus
+|
+|win|tru
+|raw|Ladder updating...
+|raw|tru's rating: 1309 &rarr; <strong>1329<\/strong><br \/>(+20 for winning)
+|raw|bizarman's rating: 1303 &rarr; <strong>1283<\/strong><br \/>(-20 for losing)
+|c|âtru|gg

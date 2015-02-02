@@ -1,0 +1,367 @@
+|join|Godsend
+|join|Boleto
+|player|p1|Godsend|102
+|player|p2|Boleto|170
+|gametype|singles
+|tier|UU
+|rated
+|rule|Sleep Clause
+|rule|Species Clause
+|rule|OHKO Clause
+|rule|Moody Clause
+|rule|Evasion Clause
+|clearpoke
+|poke|p1|Froslass, F
+|poke|p1|Xatu, M
+|poke|p1|Volbeat, M
+|poke|p1|Raikou, shiny
+|poke|p1|Sharpedo, M
+|poke|p1|Mew
+|poke|p2|Cobalion
+|poke|p2|Heracross, M
+|poke|p2|Azumarill, F
+|poke|p2|Meloetta
+|poke|p2|Porygon-Z
+|poke|p2|Umbreon, F
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Froslass|Froslass, F| (100\/100)
+|switch|p2a: Cobalion|Cobalion| (100\/100)
+|turn|1
+|callback|decision
+|
+|move|p1a: Froslass|Taunt|p2a: Cobalion
+|-start|p2a: Cobalion|move: Taunt
+|cant|p2a: Cobalion|move: Taunt|Stealth Rock
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: Umbreon|Umbreon, F| (100\/100)
+|move|p1a: Froslass|Spikes|p2a: Umbreon
+|-sidestart|p2: Boleto|Spikes
+|
+|turn|3
+|callback|decision
+|
+|move|p1a: Froslass|Taunt|p2a: Umbreon
+|-start|p2a: Umbreon|move: Taunt
+|cant|p2a: Umbreon|move: Taunt|Toxic
+|
+|turn|4
+|callback|decision
+|
+|switch|p2a: Cobalion|Cobalion| (100\/100)
+|-damage|p2a: Cobalion|12 (88\/100)|[from] Spikes
+|move|p1a: Froslass|Spikes|p2a: Cobalion
+|-sidestart|p2: Boleto|Spikes
+|
+|-heal|p2a: Cobalion|6 (94\/100)|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p1a: Froslass|Spikes|p2a: Cobalion
+|-sidestart|p2: Boleto|Spikes
+|move|p2a: Cobalion|Iron Head|p1a: Froslass
+|-supereffective|p1a: Froslass
+|-damage|p1a: Froslass|86 (14\/100)
+|
+|-heal|p2a: Cobalion|6 (100\/100)|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p1a: Froslass|Destiny Bond|p1a: Froslass
+|-singlemove|p1a: Froslass|Destiny Bond
+|move|p2a: Cobalion|Stealth Rock|p1a: Froslass
+|-sidestart|p1: Godsend|move: Stealth Rock
+|
+|turn|7
+|callback|decision
+|
+|move|p1a: Froslass|Destiny Bond|p1a: Froslass
+|-singlemove|p1a: Froslass|Destiny Bond
+|move|p2a: Cobalion|Thunder Wave|p1a: Froslass
+|-status|p1a: Froslass|par
+|
+|turn|8
+|callback|decision
+|
+|switch|p2a: Heracross|Heracross, M| (100\/100)
+|-damage|p2a: Heracross|25 (75\/100)|[from] Spikes
+|cant|p1a: Froslass|par
+|
+|-heal|p2a: Heracross|6 (81\/100)|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p2a: Heracross|Swords Dance|p2a: Heracross
+|-boost|p2a: Heracross|atk|2
+|move|p1a: Froslass|Destiny Bond|p1a: Froslass
+|-singlemove|p1a: Froslass|Destiny Bond
+|
+|-heal|p2a: Heracross|6 (87\/100)|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p2a: Heracross|Swords Dance|p2a: Heracross
+|-boost|p2a: Heracross|atk|2
+|move|p1a: Froslass|Taunt|p2a: Heracross
+|-start|p2a: Heracross|move: Taunt
+|
+|-heal|p2a: Heracross|6 (93\/100)|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p2a: Cobalion|Cobalion| (100\/100)
+|-damage|p2a: Cobalion|25 (75\/100)|[from] Spikes
+|move|p1a: Froslass|Destiny Bond|p1a: Froslass
+|-singlemove|p1a: Froslass|Destiny Bond
+|
+|-heal|p2a: Cobalion|6 (81\/100)|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: Cobalion|Stealth Rock|p1a: Froslass
+|move|p1a: Froslass|Taunt|p2a: Cobalion
+|-start|p2a: Cobalion|move: Taunt
+|
+|-heal|p2a: Cobalion|6 (88\/100)|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p2a: Umbreon|Umbreon, F| (100\/100)
+|-damage|p2a: Umbreon|25 (75\/100)|[from] Spikes
+|switch|p1a: Xatu|Xatu, M| (100\/100)
+|-damage|p1a: Xatu|25 (75\/100)|[from] Stealth Rock
+|
+|-heal|p2a: Umbreon|6 (81\/100)|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: Xatu|U-turn|p2a: Umbreon
+|-supereffective|p2a: Umbreon
+|-damage|p2a: Umbreon|20 (61\/100)
+|callback|decision
+|
+|switch|p1a: Volbeat|Volbeat, M| (100\/100)
+|-damage|p1a: Volbeat|25 (75\/100)|[from] Stealth Rock
+|move|p2a: Umbreon|Foul Play|p1a: Volbeat
+|-damage|p1a: Volbeat|34 (41\/100)
+|
+|-heal|p1a: Volbeat|6 (47\/100)|[from] item: Leftovers
+|-heal|p2a: Umbreon|6 (68\/100)|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|switch|p2a: Porygon-Z|Porygon-Z| (100\/100)
+|-damage|p2a: Porygon-Z|25 (75\/100)|[from] Spikes
+|move|p1a: Volbeat|Tail Glow|p1a: Volbeat
+|-boost|p1a: Volbeat|spa|3
+|
+|-heal|p1a: Volbeat|6 (53\/100)|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Volbeat|Substitute|p1a: Volbeat
+|-start|p1a: Volbeat|Substitute
+|-damage|p1a: Volbeat|25 (28\/100)
+|move|p2a: Porygon-Z|Tri Attack|p1a: Volbeat
+|-crit|p1a: Volbeat
+|-end|p1a: Volbeat|Substitute
+|-damage|p2a: Porygon-Z|10 (65\/100)|[from] item: Life Orb
+|
+|-heal|p1a: Volbeat|6 (34\/100)|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|switch|p2a: Cobalion|Cobalion| (88\/100)
+|-damage|p2a: Cobalion|25 (63\/100)|[from] Spikes
+|move|p1a: Volbeat|Baton Pass|p1a: Volbeat
+|callback|decision
+|
+|switch|p1a: Sharpedo|Sharpedo, M| (100\/100)
+|-damage|p1a: Sharpedo|12 (88\/100)|[from] Stealth Rock
+|
+|-heal|p2a: Cobalion|6 (69\/100)|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p1a: Sharpedo|Protect|p1a: Sharpedo
+|-singleturn|p1a: Sharpedo|Protect
+|move|p2a: Cobalion|Thunder Wave|p1a: Sharpedo
+|-activate|p1a: Sharpedo|Protect
+|
+|-heal|p2a: Cobalion|6 (75\/100)|[from] item: Leftovers
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|19
+|callback|decision
+|
+|move|p1a: Sharpedo|Hydro Pump|p2a: Cobalion|[miss]
+|-miss|p1a: Sharpedo
+|move|p2a: Cobalion|Thunder Wave|p1a: Sharpedo
+|-status|p1a: Sharpedo|par
+|
+|-heal|p2a: Cobalion|6 (81\/100)|[from] item: Leftovers
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|20
+|callback|decision
+|
+|move|p2a: Cobalion|Iron Head|p1a: Sharpedo
+|-resisted|p1a: Sharpedo
+|-damage|p1a: Sharpedo|31 (56\/100 par)
+|move|p1a: Sharpedo|Hydro Pump|p2a: Cobalion
+|-damage|p2a: Cobalion|81 (0\/100 fnt)
+|-damage|p1a: Sharpedo|10 (46\/100 par)|[from] item: Life Orb
+|faint|p2a: Cobalion
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|callback|decision
+|callback|decision
+|
+|switch|p2a: Umbreon|Umbreon, F| (68\/100)
+|-damage|p2a: Umbreon|25 (43\/100)|[from] Spikes
+|turn|21
+|callback|decision
+|
+|move|p1a: Sharpedo|Hydro Pump|p2a: Umbreon|[miss]
+|-miss|p1a: Sharpedo
+|move|p2a: Umbreon|Wish|p2a: Umbreon
+|
+|-heal|p2a: Umbreon|6 (49\/100)|[from] item: Leftovers
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|22
+|callback|decision
+|
+|switch|p2a: Porygon-Z|Porygon-Z| (65\/100)
+|-damage|p2a: Porygon-Z|25 (40\/100)|[from] Spikes
+|move|p1a: Sharpedo|Hydro Pump|p2a: Porygon-Z
+|-damage|p2a: Porygon-Z|40 (0\/100 fnt)
+|-damage|p1a: Sharpedo|10 (36\/100 par)|[from] item: Life Orb
+|faint|p2a: Porygon-Z
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|callback|decision
+|callback|decision
+|
+|switch|p2a: Heracross|Heracross, M| (93\/100)
+|-damage|p2a: Heracross|25 (68\/100)|[from] Spikes
+|turn|23
+|callback|decision
+|
+|move|p1a: Sharpedo|Protect|p1a: Sharpedo
+|-singleturn|p1a: Sharpedo|Protect
+|move|p2a: Heracross|Swords Dance|p2a: Heracross
+|-boost|p2a: Heracross|atk|2
+|
+|-heal|p2a: Heracross|6 (74\/100)|[from] item: Leftovers
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|24
+|callback|decision
+|
+|cant|p1a: Sharpedo|par
+|move|p2a: Heracross|Megahorn|p1a: Sharpedo
+|-supereffective|p1a: Sharpedo
+|-damage|p1a: Sharpedo|36 (0\/100 fnt)
+|faint|p1a: Sharpedo
+|-boost|p2a: Heracross|atk|1|[from] ability: Moxie
+|
+|-heal|p2a: Heracross|6 (80\/100)|[from] item: Leftovers
+|callback|decision
+|callback|decision
+|
+|switch|p1a: Xatu|Xatu, M| (75\/100)
+|-damage|p1a: Xatu|25 (50\/100)|[from] Stealth Rock
+|turn|25
+|callback|decision
+|
+|move|p1a: Xatu|Thunder Wave|p2a: Heracross
+|-status|p2a: Heracross|par
+|move|p2a: Heracross|Stone Edge|p1a: Xatu
+|-supereffective|p1a: Xatu
+|-damage|p1a: Xatu|50 (0\/100 fnt)
+|faint|p1a: Xatu
+|-boost|p2a: Heracross|atk|1|[from] ability: Moxie
+|
+|-heal|p2a: Heracross|6 (86\/100 par)|[from] item: Leftovers
+|callback|decision
+|callback|decision
+|
+|switch|p1a: Mew|Mew| (100\/100)
+|-damage|p1a: Mew|12 (88\/100)|[from] Stealth Rock
+|turn|26
+|callback|decision
+|
+|move|p1a: Mew|Psyshock|p2a: Heracross
+|-supereffective|p2a: Heracross
+|-damage|p2a: Heracross|86 (0\/100 fnt)
+|faint|p2a: Heracross
+|
+|callback|decision
+|callback|decision
+|
+|switch|p2a: Umbreon|Umbreon, F| (49\/100)
+|-damage|p2a: Umbreon|25 (24\/100)|[from] Spikes
+|turn|27
+|callback|decision
+|
+|move|p1a: Mew|Fire Blast|p2a: Umbreon
+|-damage|p2a: Umbreon|17 (7\/100)
+|move|p2a: Umbreon|Wish|p2a: Umbreon
+|
+|-heal|p2a: Umbreon|6 (13\/100)|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|switch|p1a: Volbeat|Volbeat, M| (34\/100)
+|-damage|p1a: Volbeat|25 (9\/100)|[from] Stealth Rock
+|move|p2a: Umbreon|Foul Play|p1a: Volbeat
+|-crit|p1a: Volbeat
+|-damage|p1a: Volbeat|9 (0\/100 fnt)
+|faint|p1a: Volbeat
+|
+|-heal|p2a: Umbreon|50 (63\/100)|[from] move: Wish|[wisher] Umbreon
+|-heal|p2a: Umbreon|6 (69\/100)|[from] item: Leftovers
+|callback|decision
+|callback|decision
+|
+|switch|p1a: Raikou|Raikou, shiny| (100\/100)
+|-damage|p1a: Raikou|12 (88\/100)|[from] Stealth Rock
+|-ability|p1a: Raikou|Pressure
+|turn|29
+|callback|decision
+|
+|move|p1a: Raikou|Aura Sphere|p2a: Umbreon
+|-supereffective|p2a: Umbreon
+|-damage|p2a: Umbreon|32 (36\/100)
+|move|p2a: Umbreon|Wish|p2a: Umbreon
+|
+|-heal|p1a: Raikou|6 (94\/100)|[from] item: Leftovers
+|-heal|p2a: Umbreon|6 (42\/100)|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|move|p1a: Raikou|Aura Sphere|p2a: Umbreon
+|-supereffective|p2a: Umbreon
+|-damage|p2a: Umbreon|31 (11\/100)
+|move|p2a: Umbreon|Toxic|p1a: Raikou
+|-status|p1a: Raikou|tox
+|
+|-heal|p2a: Umbreon|50 (61\/100)|[from] move: Wish|[wisher] Umbreon
+|-heal|p1a: Raikou|6 (100\/100 tox)|[from] item: Leftovers
+|-heal|p2a: Umbreon|6 (67\/100)|[from] item: Leftovers
+|-damage|p1a: Raikou|6 (94\/100 tox)|[from] psn
+|turn|31
+|callback|decision
+Inactive players will forfeit in 150 seconds. (requested by Boleto)
+Inactive players will forfeit in 120 seconds.
+Inactive players will forfeit in 90 seconds.
+Inactive players will forfeit in 60 seconds.
+Inactive players will forfeit in 30 seconds.
+|-message|godsend lost because of their inactivity.
+|
+|win|Boleto
+|chatmsg-raw|Ladder updating...
+|raw|Godsend's rating: 1775 &rarr; <strong>1767<\/strong><br \/>(-8 for losing)
+|raw|Boleto's rating: 1186 &rarr; <strong>1240<\/strong><br \/>(+54 for winning)

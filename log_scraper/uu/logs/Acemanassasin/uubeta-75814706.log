@@ -1,0 +1,206 @@
+|join|Japanese Bird
+|join|Acemanassasin
+|player|p1|Japanese Bird|34
+|player|p2|Acemanassasin|266
+|gametype|singles
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Machamp, F
+|poke|p1|Electivire, F
+|poke|p1|Umbreon, M
+|poke|p1|Aggron, F
+|poke|p1|Scolipede, M
+|poke|p1|Kingdra, M
+|poke|p2|Dusclops, M
+|poke|p2|Xatu, M, shiny
+|poke|p2|Kyurem-Black
+|poke|p2|Medicham, F, shiny
+|poke|p2|Darmanitan, M
+|poke|p2|Suicune, shiny
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Scolipede|Scolipede, M|324\/324
+|switch|p2a: Dusclops|Dusclops, M|257\/257
+|-item|p1a: Scolipede|Air Balloon
+|-ability|p2a: Dusclops|Pressure
+|turn|1
+|callback|decision
+|
+|move|p1a: Scolipede|Protect|p1a: Scolipede
+|-singleturn|p1a: Scolipede|Protect
+|move|p2a: Dusclops|Curse|p1a: Scolipede
+|-start|p1a: Scolipede|Curse|[of] p2a: Dusclops
+|-damage|p2a: Dusclops|129\/257
+|
+|-damage|p1a: Scolipede|243\/324|[from] Curse
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|2
+|callback|decision
+|
+|move|p1a: Scolipede|Substitute|p1a: Scolipede
+|-start|p1a: Scolipede|Substitute
+|-damage|p1a: Scolipede|162\/324
+|move|p2a: Dusclops|Night Shade|p1a: Scolipede
+|-end|p1a: Scolipede|Substitute
+|-enditem|p1a: Scolipede|Air Balloon
+|
+|-damage|p1a: Scolipede|81\/324|[from] Curse
+|-boost|p1a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|3
+|callback|decision
+|
+|move|p1a: Scolipede|Baton Pass|p1a: Scolipede
+|callback|decision
+|
+|switch|p1a: Umbreon|Umbreon, M|332\/332
+|move|p2a: Dusclops|Pain Split|p1a: Umbreon
+|-sethp|p1a: Umbreon|230\/332|p2a: Dusclops|230\/257|[from] move: Pain Split
+|
+|-heal|p1a: Umbreon|250\/332|[from] item: Leftovers
+|-damage|p1a: Umbreon|167\/332|[from] Curse
+|turn|4
+|callback|decision
+|
+|move|p1a: Umbreon|Heal Bell|p1a: Umbreon
+|-cureteam|p1a: Umbreon|[from] move: HealBell
+|move|p2a: Dusclops|Will-O-Wisp|p1a: Umbreon
+|-status|p1a: Umbreon|brn
+|-status|p2a: Dusclops|brn
+|
+|-heal|p1a: Umbreon|187\/332 brn|[from] item: Leftovers
+|-damage|p1a: Umbreon|146\/332 brn|[from] brn
+|-damage|p2a: Dusclops|198\/257 brn|[from] brn
+|-damage|p1a: Umbreon|63\/332 brn|[from] Curse
+|turn|5
+|callback|decision
+|
+|move|p1a: Umbreon|Payback|p2a: Dusclops
+|-supereffective|p2a: Dusclops
+|-damage|p2a: Dusclops|172\/257 brn
+|move|p2a: Dusclops|Night Shade|p1a: Umbreon
+|-damage|p1a: Umbreon|0 fnt
+|faint|p1a: Umbreon
+|
+|-damage|p2a: Dusclops|140\/257 brn|[from] brn
+|callback|decision
+|
+|switch|p1a: Electivire|Electivire, F|292\/292
+|turn|6
+|callback|decision
+|
+|move|p1a: Electivire|Wild Charge|p2a: Dusclops
+|-damage|p2a: Dusclops|76\/257 brn
+|-damage|p1a: Electivire|276\/292|[from] recoil|[of] p2a: Dusclops
+|move|p2a: Dusclops|Will-O-Wisp|p1a: Electivire
+|-status|p1a: Electivire|brn
+|
+|-damage|p1a: Electivire|240\/292 brn|[from] brn
+|-damage|p2a: Dusclops|44\/257 brn|[from] brn
+|turn|7
+|callback|decision
+|
+|move|p1a: Electivire|Ice Punch|p2a: Dusclops
+|-damage|p2a: Dusclops|25\/257 brn
+|move|p2a: Dusclops|Pain Split|p1a: Electivire
+|-sethp|p1a: Electivire|132\/292 brn|p2a: Dusclops|132\/257 brn|[from] move: Pain Split
+|
+|-damage|p1a: Electivire|96\/292 brn|[from] brn
+|-damage|p2a: Dusclops|100\/257 brn|[from] brn
+|turn|8
+|callback|decision
+|
+|move|p1a: Electivire|Wild Charge|p2a: Dusclops
+|-damage|p2a: Dusclops|67\/257 brn
+|-damage|p1a: Electivire|88\/292 brn|[from] recoil|[of] p2a: Dusclops
+|move|p2a: Dusclops|Night Shade|p1a: Electivire
+|-damage|p1a: Electivire|0 fnt
+|faint|p1a: Electivire
+|
+|-damage|p2a: Dusclops|35\/257 brn|[from] brn
+|callback|decision
+|
+|switch|p1a: Machamp|Machamp, F|384\/384
+|turn|9
+|callback|decision
+|
+|move|p1a: Machamp|Bullet Punch|p2a: Dusclops
+|-damage|p2a: Dusclops|9\/257 brn
+|-damage|p1a: Machamp|346\/384|[from] item: Life Orb
+|move|p2a: Dusclops|Pain Split|p1a: Machamp
+|-sethp|p1a: Machamp|177\/384|p2a: Dusclops|177\/257 brn|[from] move: Pain Split
+|
+|-damage|p2a: Dusclops|145\/257 brn|[from] brn
+|turn|10
+|callback|decision
+|
+|switch|p1a: Kingdra|Kingdra, M|292\/292
+|move|p2a: Dusclops|Will-O-Wisp|p1a: Kingdra
+|-status|p1a: Kingdra|brn
+|
+|-damage|p1a: Kingdra|256\/292 brn|[from] brn
+|-damage|p2a: Dusclops|113\/257 brn|[from] brn
+|turn|11
+|callback|decision
+|
+|move|p1a: Kingdra|Draco Meteor|p2a: Dusclops
+|-damage|p2a: Dusclops|8\/257 brn
+|-unboost|p1a: Kingdra|spa|2
+|move|p2a: Dusclops|Curse|p1a: Kingdra
+|-start|p1a: Kingdra|Curse|[of] p2a: Dusclops
+|-damage|p2a: Dusclops|0 fnt
+|faint|p2a: Dusclops
+|
+|-damage|p1a: Kingdra|220\/292 brn|[from] brn
+|-damage|p1a: Kingdra|147\/292 brn|[from] Curse
+|callback|decision
+|
+|switch|p2a: Medicham|Medicham, F, shiny|324\/324
+|turn|12
+|callback|decision
+|
+|switch|p1a: Machamp|Machamp, F|177\/384
+|-formechange|p2a: Medicham|Medicham-Mega
+|message|Medicham has Mega Evolved into Mega Medicham!
+|move|p2a: Medicham|Fake Out|p1a: Machamp
+|-crit|p1a: Machamp
+|-damage|p1a: Machamp|13\/384
+|
+|turn|13
+|callback|decision
+|
+|move|p2a: Medicham|Bullet Punch|p1a: Machamp
+|-damage|p1a: Machamp|0 fnt
+|faint|p1a: Machamp
+|
+|callback|decision
+|
+|switch|p1a: Aggron|Aggron, F|282\/282
+|turn|14
+|callback|decision
+|
+|-formechange|p1a: Aggron|Aggron-Mega
+|message|Aggron has Mega Evolved into Mega Aggron!
+|move|p2a: Medicham|Drain Punch|p1a: Aggron
+|-supereffective|p1a: Aggron
+|-damage|p1a: Aggron|143\/282
+|move|p1a: Aggron|Head Smash|p2a: Medicham|[miss]
+|-miss|p1a: Aggron|p2a: Medicham
+|
+|turn|15
+|callback|decision
+|-message|Japanese Bird forfeited.
+|leave|Japanese Bird
+|
+|win|Acemanassasin
+|raw|Ladder updating...
+|player|p1

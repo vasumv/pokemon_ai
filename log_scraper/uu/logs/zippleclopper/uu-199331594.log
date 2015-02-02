@@ -1,0 +1,339 @@
+|join|zippleclopper
+|join|Bob the m8
+|player|p1|zippleclopper|1
+|player|p2|Bob the m8|23
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Hippowdon, F
+|poke|p1|Reuniclus, M
+|poke|p1|Doublade, F
+|poke|p1|Entei, shiny
+|poke|p1|Virizion
+|poke|p1|Blastoise, M
+|poke|p2|Celebi
+|poke|p2|Crobat, F
+|poke|p2|Aggron, M
+|poke|p2|Blissey, F
+|poke|p2|Alomomola, F
+|poke|p2|Krookodile, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Blastoise|Blastoise, M|355\/355
+|switch|p2a: Beta|Crobat, F|325\/325
+|turn|1
+|
+|switch|p2a: Tau|Blissey, F|714\/714
+|detailschange|p1a: Blastoise|Blastoise-Mega, M
+|-mega|p1a: Blastoise|Blastoise|Blastoisinite
+|move|p1a: Blastoise|Ice Beam|p2a: Tau
+|-damage|p2a: Tau|621\/714
+|
+|-heal|p2a: Tau|665\/714|[from] item: Leftovers
+|turn|2
+|
+|switch|p1a: Hippowdon|Hippowdon, F|419\/419
+|-weather|Sandstorm
+|switch|p2a: Phi|Krookodile, M|331\/331
+|-ability|p2a: Phi|Intimidate|[of] p1a: Hippowdon
+|-unboost|p1a: Hippowdon|atk|1
+|
+|-weather|Sandstorm|[upkeep]
+|turn|3
+|
+|move|p2a: Phi|Knock Off|p1a: Hippowdon
+|-damage|p1a: Hippowdon|205\/419
+|-enditem|p1a: Hippowdon|Leftovers|[from] move: Knock Off|[of] p2a: Phi
+|move|p1a: Hippowdon|Stealth Rock|p2a: Phi
+|-sidestart|p2: Bob the m8|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|4
+|
+|switch|p2a: Beta|Crobat, F|325\/325
+|-damage|p2a: Beta|244\/325|[from] Stealth Rock
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-heal|p1a: Hippowdon|415\/419
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Beta|224\/325|[from] sandstorm
+|-heal|p2a: Beta|244\/325|[from] item: Black Sludge
+|turn|5
+|
+|move|p2a: Beta|Defog|p1a: Hippowdon
+|-unboost|p1a: Hippowdon|evasion|1
+|-sideend|p2: Bob the m8|Stealth Rock|[from] move: Defog|[of] p2a: Beta
+|move|p1a: Hippowdon|Rock Slide|p2a: Beta
+|-miss|p1a: Hippowdon|p2a: Beta
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Beta|224\/325|[from] sandstorm
+|-heal|p2a: Beta|244\/325|[from] item: Black Sludge
+|turn|6
+|
+|move|p2a: Beta|Toxic|p1a: Hippowdon
+|-status|p1a: Hippowdon|tox
+|move|p1a: Hippowdon|Stealth Rock|p2a: Beta
+|-sidestart|p2: Bob the m8|move: Stealth Rock
+|
+|-weather|none
+|-heal|p2a: Beta|264\/325|[from] item: Black Sludge
+|-damage|p1a: Hippowdon|389\/419 tox|[from] psn
+|turn|7
+|
+|switch|p1a: Entei|Entei, shiny|371\/371
+|-ability|p1a: Entei|Pressure
+|move|p2a: Beta|Defog|p1a: Entei
+|-unboost|p1a: Entei|evasion|1
+|-sideend|p2: Bob the m8|Stealth Rock|[from] move: Defog|[of] p2a: Beta
+|
+|-heal|p2a: Beta|284\/325|[from] item: Black Sludge
+|turn|8
+|
+|switch|p2a: Delta|Alomomola, F|534\/534
+|move|p1a: Entei|Sacred Fire|p2a: Delta
+|-resisted|p2a: Delta
+|-damage|p2a: Delta|432\/534
+|-status|p2a: Delta|brn
+|
+|-damage|p2a: Delta|366\/534 brn|[from] brn
+|turn|9
+|
+|switch|p1a: Virizion|Virizion|324\/324
+|move|p2a: Delta|Knock Off|p1a: Virizion
+|-resisted|p1a: Virizion
+|-damage|p1a: Virizion|304\/324
+|-boost|p1a: Virizion|atk|1|[from] ability: Justified
+|-enditem|p1a: Virizion|Life Orb|[from] move: Knock Off|[of] p2a: Delta
+|
+|-damage|p2a: Delta|300\/534 brn|[from] brn
+|turn|10
+|
+|switch|p2a: Omega|Celebi|341\/341
+|move|p1a: Virizion|Stone Edge|p2a: Omega
+|-damage|p2a: Omega|209\/341
+|
+|-heal|p2a: Omega|230\/341|[from] item: Leftovers
+|turn|11
+|
+|switch|p1a: Doublade|Doublade, F|321\/321
+|move|p2a: Omega|Zen Headbutt|p1a: Doublade
+|-crit|p1a: Doublade
+|-resisted|p1a: Doublade
+|-damage|p1a: Doublade|278\/321
+|
+|-heal|p2a: Omega|251\/341|[from] item: Leftovers
+|turn|12
+|
+|switch|p2a: Phi|Krookodile, M|331\/331
+|-ability|p2a: Phi|Intimidate|[of] p1a: Doublade
+|-unboost|p1a: Doublade|atk|1
+|switch|p1a: Virizion|Virizion|304\/324
+|
+|turn|13
+|
+|switch|p2a: Beta|Crobat, F|284\/325
+|move|p1a: Virizion|Stone Edge|p2a: Beta
+|-supereffective|p2a: Beta
+|-damage|p2a: Beta|76\/325
+|
+|-heal|p2a: Beta|96\/325|[from] item: Black Sludge
+|turn|14
+|
+|switch|p1a: Entei|Entei, shiny|371\/371
+|-ability|p1a: Entei|Pressure
+|move|p2a: Beta|Roost|p2a: Beta
+|-heal|p2a: Beta|259\/325
+|
+|-heal|p2a: Beta|279\/325|[from] item: Black Sludge
+|turn|15
+|
+|switch|p2a: Delta|Alomomola, F|478\/534 brn
+|move|p1a: Entei|Sacred Fire|p2a: Delta
+|-resisted|p2a: Delta
+|-damage|p2a: Delta|370\/534 brn
+|
+|-damage|p2a: Delta|304\/534 brn|[from] brn
+|turn|16
+|
+|move|p1a: Entei|Sacred Fire|p2a: Delta
+|-resisted|p2a: Delta
+|-damage|p2a: Delta|188\/534 brn
+|move|p2a: Delta|Toxic|p1a: Entei
+|-status|p1a: Entei|tox
+|
+|-damage|p1a: Entei|348\/371 tox|[from] psn
+|-damage|p2a: Delta|122\/534 brn|[from] brn
+|turn|17
+|
+|switch|p2a: Tau|Blissey, F|665\/714
+|move|p1a: Entei|Sacred Fire|p2a: Tau
+|-damage|p2a: Tau|182\/714
+|
+|-heal|p2a: Tau|226\/714|[from] item: Leftovers
+|-damage|p1a: Entei|302\/371 tox|[from] psn
+|turn|18
+|
+|switch|p1a: Virizion|Virizion|304\/324
+|move|p2a: Tau|Protect|p2a: Tau
+|-fail|p2a: Tau
+|
+|-heal|p2a: Tau|270\/714|[from] item: Leftovers
+|turn|19
+|
+|switch|p2a: Beta|Crobat, F|279\/325
+|move|p1a: Virizion|Stone Edge|p2a: Beta
+|-supereffective|p2a: Beta
+|-damage|p2a: Beta|45\/325
+|
+|-heal|p2a: Beta|65\/325|[from] item: Black Sludge
+|turn|20
+|
+|switch|p1a: Doublade|Doublade, F|278\/321
+|move|p2a: Beta|Roost|p2a: Beta
+|-heal|p2a: Beta|228\/325
+|
+|-heal|p2a: Beta|248\/325|[from] item: Black Sludge
+|turn|21
+|
+|switch|p2a: Delta|Alomomola, F|300\/534 brn
+|move|p1a: Doublade|Swords Dance|p1a: Doublade
+|-boost|p1a: Doublade|atk|2
+|
+|-damage|p2a: Delta|234\/534 brn|[from] brn
+|turn|22
+|
+|move|p2a: Delta|Knock Off|p1a: Doublade
+|-supereffective|p1a: Doublade
+|-damage|p1a: Doublade|250\/321
+|-enditem|p1a: Doublade|Eviolite|[from] move: Knock Off|[of] p2a: Delta
+|move|p1a: Doublade|Sacred Sword|p2a: Delta
+|-damage|p2a: Delta|48\/534 brn
+|-damage|p1a: Doublade|197\/321|[from] item: Rocky Helmet|[of] p2a: Delta
+|
+|-damage|p2a: Delta|0 fnt|[from] brn
+|faint|p2a: Delta
+|
+|switch|p2a: Phi|Krookodile, M|331\/331
+|-ability|p2a: Phi|Intimidate|[of] p1a: Doublade
+|-unboost|p1a: Doublade|atk|1
+|turn|23
+|
+|move|p2a: Phi|Pursuit|p1a: Doublade
+|-supereffective|p1a: Doublade
+|-damage|p1a: Doublade|53\/321
+|move|p1a: Doublade|Sacred Sword|p2a: Phi
+|-supereffective|p2a: Phi
+|-damage|p2a: Phi|0 fnt
+|faint|p2a: Phi
+|
+|
+|switch|p2a: Rho|Aggron, M|344\/344
+|turn|24
+|
+|detailschange|p2a: Rho|Aggron-Mega, M
+|-mega|p2a: Rho|Aggron|Aggronite
+|move|p1a: Doublade|Sacred Sword|p2a: Rho
+|-supereffective|p2a: Rho
+|-damage|p2a: Rho|242\/344
+|move|p2a: Rho|Stealth Rock|p1a: Doublade
+|-sidestart|p1: zippleclopper|move: Stealth Rock
+|
+|turn|25
+|
+|move|p1a: Doublade|Sacred Sword|p2a: Rho
+|-supereffective|p2a: Rho
+|-damage|p2a: Rho|134\/344
+|move|p2a: Rho|Earthquake|p1a: Doublade
+|-supereffective|p1a: Doublade
+|-damage|p1a: Doublade|0 fnt
+|faint|p1a: Doublade
+|
+|
+|switch|p1a: Blastoise|Blastoise-Mega, M|355\/355
+|-damage|p1a: Blastoise|311\/355|[from] Stealth Rock
+|turn|26
+|
+|move|p1a: Blastoise|Hydro Pump|p2a: Rho
+|-damage|p2a: Rho|0 fnt
+|faint|p2a: Rho
+|
+|
+|switch|p2a: Tau|Blissey, F|270\/714
+|turn|27
+|
+|move|p1a: Blastoise|Rapid Spin|p2a: Tau
+|-damage|p2a: Tau|244\/714
+|-sideend|p1: zippleclopper|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Blastoise
+|move|p2a: Tau|Seismic Toss|p1a: Blastoise
+|-damage|p1a: Blastoise|211\/355
+|
+|-heal|p2a: Tau|288\/714|[from] item: Leftovers
+|turn|28
+|
+|switch|p1a: Virizion|Virizion|304\/324
+|move|p2a: Tau|Seismic Toss|p1a: Virizion
+|-damage|p1a: Virizion|204\/324
+|
+|-heal|p2a: Tau|332\/714|[from] item: Leftovers
+|turn|29
+|
+|move|p1a: Virizion|Close Combat|p2a: Tau
+|-supereffective|p2a: Tau
+|-damage|p2a: Tau|0 fnt
+|-unboost|p1a: Virizion|def|1
+|-unboost|p1a: Virizion|spd|1
+|faint|p2a: Tau
+|
+|
+|switch|p2a: Omega|Celebi|251\/341
+|turn|30
+|
+|move|p1a: Virizion|Swords Dance|p1a: Virizion
+|-boost|p1a: Virizion|atk|2
+|move|p2a: Omega|Zen Headbutt|p1a: Virizion
+|-supereffective|p1a: Virizion
+|-damage|p1a: Virizion|0 fnt
+|faint|p1a: Virizion
+|
+|-heal|p2a: Omega|272\/341|[from] item: Leftovers
+|
+|switch|p1a: Entei|Entei, shiny|302\/371 tox
+|-ability|p1a: Entei|Pressure
+|turn|31
+|
+|switch|p2a: Beta|Crobat, F|248\/325
+|move|p1a: Entei|Sacred Fire|p2a: Beta
+|-damage|p2a: Beta|0 fnt
+|faint|p2a: Beta
+|
+|-damage|p1a: Entei|279\/371 tox|[from] psn
+|
+|switch|p2a: Omega|Celebi|272\/341
+|turn|32
+|
+|move|p2a: Omega|Zen Headbutt|p1a: Entei
+|-damage|p1a: Entei|141\/371 tox
+|move|p1a: Entei|Sacred Fire|p2a: Omega
+|-supereffective|p2a: Omega
+|-damage|p2a: Omega|0 fnt
+|faint|p2a: Omega
+|
+|win|zippleclopper
+|raw|Ladder updating...
+|raw|zippleclopper's rating: 1563 &rarr; <strong>1585<\/strong><br \/>(+22 for winning)
+|raw|Bob the m8's rating: 1608 &rarr; <strong>1585<\/strong><br \/>(-23 for losing)
+|leave|Bob the m8
+|player|p2

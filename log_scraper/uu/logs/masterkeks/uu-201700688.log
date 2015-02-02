@@ -1,0 +1,239 @@
+|join|Serperior Test
+|join|masterkeks
+|player|p1|Serperior Test|114
+|player|p2|masterkeks|2
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Machamp, F
+|poke|p1|Yanmega, M, shiny
+|poke|p1|Empoleon, F, shiny
+|poke|p1|Florges, F, shiny
+|poke|p1|Arcanine, F, shiny
+|poke|p1|Serperior, M, shiny
+|poke|p2|Galvantula, M
+|poke|p2|Snorlax, F
+|poke|p2|Vaporeon, M
+|poke|p2|Donphan, F
+|poke|p2|Scrafty, M
+|poke|p2|Chandelure, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Machamp|Machamp, F|380\/380
+|switch|p2a: Galvantula|Galvantula, M|281\/281
+|turn|1
+|
+|move|p2a: Galvantula|Volt Switch|p1a: Machamp
+|-damage|p1a: Machamp|271\/380
+|
+|switch|p2a: Chandelure|Chandelure, F|262\/262
+|move|p1a: Machamp|Stone Edge|p2a: Chandelure|[miss]
+|-miss|p1a: Machamp|p2a: Chandelure
+|
+|turn|2
+|
+|switch|p2a: Donphan|Donphan, F|384\/384
+|move|p1a: Machamp|Knock Off|p2a: Donphan
+|-crit|p2a: Donphan
+|-damage|p2a: Donphan|259\/384
+|-enditem|p2a: Donphan|Leftovers|[from] move: Knock Off|[of] p1a: Machamp
+|
+|turn|3
+|
+|move|p1a: Machamp|Close Combat|p2a: Donphan
+|-damage|p2a: Donphan|120\/384
+|-unboost|p1a: Machamp|def|1
+|-unboost|p1a: Machamp|spd|1
+|move|p2a: Donphan|Stealth Rock|p1a: Machamp
+|-sidestart|p1: Serperior Test|move: Stealth Rock
+|
+|turn|4
+|
+|switch|p2a: Chandelure|Chandelure, F|262\/262
+|move|p1a: Machamp|Close Combat|p2a: Chandelure
+|-immune|p2a: Chandelure|[msg]
+|
+|turn|5
+|
+|switch|p1a: Empoleon|Empoleon, F, shiny|372\/372
+|-damage|p1a: Empoleon|349\/372|[from] Stealth Rock
+|move|p2a: Chandelure|Flamethrower|p1a: Empoleon
+|-damage|p1a: Empoleon|220\/372
+|
+|-heal|p1a: Empoleon|243\/372|[from] item: Leftovers
+|turn|6
+|
+|switch|p2a: Galvantula|Galvantula, M|281\/281
+|move|p1a: Empoleon|Defog|p2a: Galvantula
+|-unboost|p2a: Galvantula|evasion|1
+|-sideend|p1: Serperior Test|Stealth Rock|[from] move: Defog|[of] p1a: Empoleon
+|
+|-heal|p1a: Empoleon|266\/372|[from] item: Leftovers
+|turn|7
+|c|âmasterkeks|lag test
+|
+|move|p2a: Galvantula|Volt Switch|p1a: Empoleon
+|-supereffective|p1a: Empoleon
+|-damage|p1a: Empoleon|48\/372
+|
+|switch|p2a: Scrafty|Scrafty, M|272\/272
+|move|p1a: Empoleon|Stealth Rock|p2a: Scrafty
+|-sidestart|p2: masterkeks|move: Stealth Rock
+|
+|-heal|p1a: Empoleon|71\/372|[from] item: Leftovers
+|turn|8
+|
+|switch|p1a: Florges|Florges, F, shiny|360\/360
+|move|p2a: Scrafty|Drain Punch|p1a: Florges
+|-resisted|p1a: Florges
+|-damage|p1a: Florges|298\/360
+|-damage|p2a: Scrafty|245\/272|[from] item: Life Orb
+|
+|-heal|p1a: Florges|320\/360|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Vaporeon|Vaporeon, M|464\/464
+|-damage|p2a: Vaporeon|406\/464|[from] Stealth Rock
+|move|p1a: Florges|Moonblast|p2a: Vaporeon
+|-damage|p2a: Vaporeon|277\/464
+|-unboost|p2a: Vaporeon|spa|1
+|
+|-heal|p1a: Florges|342\/360|[from] item: Leftovers
+|-heal|p2a: Vaporeon|306\/464|[from] item: Leftovers
+|turn|10
+|
+|move|p1a: Florges|Wish|p1a: Florges
+|move|p2a: Vaporeon|Toxic|p1a: Florges
+|-status|p1a: Florges|tox
+|
+|-heal|p1a: Florges|360\/360 tox|[from] item: Leftovers
+|-heal|p2a: Vaporeon|335\/464|[from] item: Leftovers
+|-damage|p1a: Florges|338\/360 tox|[from] psn
+|turn|11
+|
+|switch|p1a: Empoleon|Empoleon, F, shiny|71\/372
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-heal|p1a: Empoleon|251\/372|[from] move: Wish|[wisher] Florges
+|-heal|p2a: Vaporeon|364\/464|[from] item: Leftovers
+|-heal|p1a: Empoleon|274\/372|[from] item: Leftovers
+|turn|12
+|
+|switch|p2a: Scrafty|Scrafty, M|245\/272
+|-damage|p2a: Scrafty|228\/272|[from] Stealth Rock
+|move|p1a: Empoleon|Ice Beam|p2a: Scrafty
+|-damage|p2a: Scrafty|153\/272
+|
+|-heal|p2a: Scrafty|272\/272|[from] move: Wish|[wisher] Vaporeon
+|-heal|p1a: Empoleon|297\/372|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: Florges|Florges, F, shiny|338\/360 tox
+|move|p2a: Scrafty|Drain Punch|p1a: Florges
+|-resisted|p1a: Florges
+|-damage|p1a: Florges|268\/360 tox
+|-damage|p2a: Scrafty|245\/272|[from] item: Life Orb
+|
+|-heal|p1a: Florges|290\/360 tox|[from] item: Leftovers
+|-damage|p1a: Florges|268\/360 tox|[from] psn
+|turn|14
+|
+|switch|p2a: Snorlax|Snorlax, F|523\/523
+|-damage|p2a: Snorlax|458\/523|[from] Stealth Rock
+|move|p1a: Florges|Aromatherapy|p1a: Florges
+|-cureteam|p1a: Florges|[from] move: Aromatherapy
+|
+|-heal|p1a: Florges|290\/360|[from] item: Leftovers
+|turn|15
+|
+|switch|p1a: Machamp|Machamp, F|271\/380
+|move|p2a: Snorlax|Body Slam|p1a: Machamp
+|-damage|p1a: Machamp|102\/380
+|
+|turn|16
+|
+|switch|p2a: Chandelure|Chandelure, F|262\/262
+|-damage|p2a: Chandelure|197\/262|[from] Stealth Rock
+|move|p1a: Machamp|Knock Off|p2a: Chandelure
+|-supereffective|p2a: Chandelure
+|-damage|p2a: Chandelure|0 fnt
+|-enditem|p2a: Chandelure|Leftovers|[from] move: Knock Off|[of] p1a: Machamp
+|faint|p2a: Chandelure
+|
+|
+|switch|p2a: Galvantula|Galvantula, M|281\/281
+|-damage|p2a: Galvantula|211\/281|[from] Stealth Rock
+|turn|17
+|
+|switch|p1a: Florges|Florges, F, shiny|290\/360
+|move|p2a: Galvantula|Thunder|p1a: Florges
+|-damage|p1a: Florges|125\/360
+|
+|-heal|p1a: Florges|147\/360|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Galvantula|Thunder|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-heal|p1a: Florges|169\/360|[from] item: Leftovers
+|turn|19
+|
+|switch|p1a: Serperior|Serperior, M, shiny|304\/304
+|move|p2a: Galvantula|Thunder|p1a: Serperior
+|-resisted|p1a: Serperior
+|-damage|p1a: Serperior|187\/304
+|
+|-heal|p1a: Serperior|206\/304|[from] item: Leftovers
+|turn|20
+|
+|switch|p2a: Snorlax|Snorlax, F|458\/523
+|-damage|p2a: Snorlax|393\/523|[from] Stealth Rock
+|move|p1a: Serperior|Leaf Storm|p2a: Snorlax
+|-damage|p2a: Snorlax|291\/523
+|-boost|p1a: Serperior|spa|2
+|
+|-heal|p1a: Serperior|225\/304|[from] item: Leftovers
+|turn|21
+|
+|move|p1a: Serperior|Leech Seed|p2a: Snorlax
+|-start|p2a: Snorlax|move: Leech Seed
+|move|p2a: Snorlax|Fire Punch|p1a: Serperior
+|-supereffective|p1a: Serperior
+|-damage|p1a: Serperior|53\/304
+|
+|-heal|p1a: Serperior|72\/304|[from] item: Leftovers
+|-damage|p2a: Snorlax|226\/523|[from] Leech Seed|[of] p1a: Serperior
+|-heal|p1a: Serperior|137\/304|[silent]
+|turn|22
+|
+|move|p1a: Serperior|Substitute|p1a: Serperior
+|-start|p1a: Serperior|Substitute
+|-damage|p1a: Serperior|61\/304
+|move|p2a: Snorlax|Fire Punch|p1a: Serperior
+|-supereffective|p1a: Serperior
+|-end|p1a: Serperior|Substitute
+|
+|-heal|p1a: Serperior|80\/304|[from] item: Leftovers
+|-damage|p2a: Snorlax|161\/523|[from] Leech Seed|[of] p1a: Serperior
+|-heal|p1a: Serperior|145\/304|[silent]
+|turn|23
+|-message|masterkeks forfeited.
+|leave|masterkeks
+|
+|win|Serperior Test
+|raw|Ladder updating...
+|player|p2

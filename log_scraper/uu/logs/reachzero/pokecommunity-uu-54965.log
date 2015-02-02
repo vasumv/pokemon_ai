@@ -1,0 +1,289 @@
+|join|reachzero
+|join|Mos Def
+|player|p1|reachzero|15
+|player|p2|Mos Def|253
+|gametype|singles
+|tier|UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Porygon2, shiny
+|poke|p1|Shaymin, shiny
+|poke|p1|Qwilfish, M
+|poke|p1|Chandelure, M
+|poke|p1|Swampert, F, shiny
+|poke|p1|Zapdos
+|poke|p2|Abomasnow, F
+|poke|p2|Raikou, shiny
+|poke|p2|Qwilfish, F
+|poke|p2|Nidoqueen, F
+|poke|p2|Suicune
+|poke|p2|Honchkrow, M
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Chandelure|Chandelure, M|301\/301
+|switch|p2a: Suicune|Suicune|341\/341
+|-ability|p2a: Suicune|Pressure
+|turn|1
+|callback|decision
+|
+|switch|p2a: Abomasnow|Abomasnow, F|347\/347
+|-weather|Hail|[from] ability: Snow Warning|[of] p2a: Abomasnow
+|move|p1a: Chandelure|Energy Ball|p2a: Abomasnow
+|-resisted|p2a: Abomasnow
+|-damage|p2a: Abomasnow|254\/347
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Chandelure|283\/301|[from] hail
+|turn|2
+|callback|decision
+|
+|switch|p1a: Qwilfish|Qwilfish, M|334\/334
+|-ability|p1a: Qwilfish|Intimidate|[of] p2a: Abomasnow
+|-unboost|p2a: Abomasnow|atk|1
+|move|p2a: Abomasnow|Swords Dance|p2a: Abomasnow
+|-boost|p2a: Abomasnow|atk|2
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Qwilfish|314\/334|[from] hail
+|-heal|p1a: Qwilfish|334\/334|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p1a: Qwilfish|Thunder Wave|p2a: Abomasnow
+|-status|p2a: Abomasnow|par
+|-enditem|p2a: Abomasnow|Lum Berry|[eat]
+|-curestatus|p2a: Abomasnow|par
+|move|p2a: Abomasnow|Earthquake|p1a: Qwilfish
+|-supereffective|p1a: Qwilfish
+|-damage|p1a: Qwilfish|66\/334
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Qwilfish|46\/334|[from] hail
+|-heal|p1a: Qwilfish|66\/334|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p1a: Qwilfish|Spikes|p2a: Abomasnow
+|-sidestart|p2: Mos Def|Spikes
+|move|p2a: Abomasnow|Swords Dance|p2a: Abomasnow
+|-boost|p2a: Abomasnow|atk|2
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Qwilfish|46\/334|[from] hail
+|-heal|p1a: Qwilfish|66\/334|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p2a: Abomasnow|Ice Shard|p1a: Qwilfish
+|-resisted|p1a: Qwilfish
+|-damage|p1a: Qwilfish|0 fnt
+|faint|p1a: Qwilfish
+|
+|-weather|Hail|[upkeep]
+|callback|decision
+|
+|switch|p1a: Chandelure|Chandelure, M|283\/301
+|turn|6
+|callback|decision
+|
+|move|p2a: Abomasnow|Ice Shard|p1a: Chandelure
+|-resisted|p1a: Chandelure
+|-damage|p1a: Chandelure|193\/301
+|move|p1a: Chandelure|Shadow Ball|p2a: Abomasnow
+|-damage|p2a: Abomasnow|0 fnt
+|faint|p2a: Abomasnow
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Chandelure|175\/301|[from] hail
+|callback|decision
+|
+|switch|p2a: Honchkrow|Honchkrow, M|341\/341
+|turn|7
+|callback|decision
+|
+|move|p2a: Honchkrow|Pursuit|p1a: Chandelure|[from]Pursuit
+|-supereffective|p1a: Chandelure
+|-damage|p1a: Chandelure|0 fnt
+|faint|p1a: Chandelure
+|-boost|p2a: Honchkrow|atk|1|[from] ability: Moxie
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Honchkrow|320\/341|[from] hail
+|-heal|p2a: Honchkrow|341\/341|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Zapdos|Zapdos|383\/383
+|-ability|p1a: Zapdos|Pressure
+|turn|8
+|callback|decision
+|
+|switch|p2a: Nidoqueen|Nidoqueen, F|346\/346
+|-damage|p2a: Nidoqueen|303\/346|[from] Spikes
+|move|p1a: Zapdos|Hidden Power|p2a: Nidoqueen
+|-damage|p2a: Nidoqueen|179\/346
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Zapdos|360\/383|[from] hail
+|-damage|p2a: Nidoqueen|158\/346|[from] hail
+|-heal|p1a: Zapdos|383\/383|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p1a: Porygon2|Porygon2, shiny|374\/374
+|-ability|p1a: Porygon2|Sheer Force|[from] ability: Trace|[of] p2a: Nidoqueen
+|move|p2a: Nidoqueen|Blizzard|p1a: Porygon2
+|-damage|p1a: Porygon2|257\/374
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Nidoqueen|137\/346|[from] hail
+|-damage|p1a: Porygon2|234\/374|[from] hail
+|turn|10
+|callback|decision
+|
+|move|p2a: Nidoqueen|Stealth Rock|p1a: Porygon2
+|-sidestart|p1: reachzero|move: Stealth Rock
+|move|p1a: Porygon2|Tri Attack|p2a: Nidoqueen
+|-damage|p2a: Nidoqueen|0 fnt
+|faint|p2a: Nidoqueen
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Porygon2|211\/374|[from] hail
+|callback|decision
+|
+|switch|p2a: Qwilfish|Qwilfish, F|334\/334
+|-damage|p2a: Qwilfish|293\/334|[from] Spikes
+|-ability|p2a: Qwilfish|Intimidate|[of] p1a: Porygon2
+|-unboost|p1a: Porygon2|atk|1
+|turn|11
+|callback|decision
+|
+|move|p2a: Qwilfish|Taunt|p1a: Porygon2
+|-start|p1a: Porygon2|move: Taunt
+|cant|p1a: Porygon2|move: Taunt|Recover
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Qwilfish|273\/334|[from] hail
+|-damage|p1a: Porygon2|188\/374|[from] hail
+|-heal|p2a: Qwilfish|293\/334|[from] item: Black Sludge
+|turn|12
+|callback|decision
+|
+|move|p2a: Qwilfish|Spikes|p1a: Porygon2
+|-sidestart|p1: reachzero|Spikes
+|move|p1a: Porygon2|Tri Attack|p2a: Qwilfish
+|-damage|p2a: Qwilfish|10\/334
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Qwilfish|0 fnt|[from] hail
+|-damage|p1a: Porygon2|165\/374|[from] hail
+|faint|p2a: Qwilfish
+|callback|decision
+|
+|switch|p2a: Raikou|Raikou, shiny|322\/322
+|-damage|p2a: Raikou|282\/322|[from] Spikes
+|-ability|p2a: Raikou|Pressure
+|turn|13
+|callback|decision
+|
+|move|p2a: Raikou|Volt Switch|p1a: Porygon2
+|-damage|p1a: Porygon2|81\/374
+|callback|decision
+|
+|switch|p2a: Honchkrow|Honchkrow, M|341\/341
+|move|p1a: Porygon2|Tri Attack|p2a: Honchkrow
+|-damage|p2a: Honchkrow|56\/341
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Honchkrow|35\/341|[from] hail
+|-damage|p1a: Porygon2|58\/374|[from] hail
+|-heal|p2a: Honchkrow|56\/341|[from] item: Leftovers
+|-end|p1a: Porygon2|move: Taunt
+|turn|14
+|callback|decision
+|
+|move|p2a: Honchkrow|Brave Bird|p1a: Porygon2
+|-damage|p1a: Porygon2|0 fnt
+|-damage|p2a: Honchkrow|37\/341|[from] recoil|[of] p1a: Porygon2
+|faint|p1a: Porygon2
+|-boost|p2a: Honchkrow|atk|1|[from] ability: Moxie
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Honchkrow|16\/341|[from] hail
+|-heal|p2a: Honchkrow|37\/341|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Zapdos|Zapdos|383\/383
+|-damage|p1a: Zapdos|288\/383|[from] Stealth Rock
+|-ability|p1a: Zapdos|Pressure
+|turn|15
+|callback|decision
+|
+|move|p1a: Zapdos|Substitute|p1a: Zapdos
+|-start|p1a: Zapdos|Substitute
+|-damage|p1a: Zapdos|193\/383
+|move|p2a: Honchkrow|Brave Bird|p1a: Zapdos
+|-resisted|p1a: Zapdos
+|-end|p1a: Zapdos|Substitute
+|-damage|p2a: Honchkrow|6\/341|[from] recoil|[of] p1a: Zapdos
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Zapdos|170\/383|[from] hail
+|-damage|p2a: Honchkrow|0 fnt|[from] hail
+|-heal|p1a: Zapdos|193\/383|[from] item: Leftovers
+|faint|p2a: Honchkrow
+|callback|decision
+|
+|switch|p2a: Raikou|Raikou, shiny|282\/322
+|-damage|p2a: Raikou|242\/322|[from] Spikes
+|-ability|p2a: Raikou|Pressure
+|turn|16
+|callback|decision
+|
+|move|p2a: Raikou|Weather Ball|p1a: Zapdos
+|-supereffective|p1a: Zapdos
+|-damage|p1a: Zapdos|0 fnt
+|faint|p1a: Zapdos
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Raikou|222\/322|[from] hail
+|callback|decision
+|
+|switch|p1a: Swampert|Swampert, F, shiny|404\/404
+|-damage|p1a: Swampert|379\/404|[from] Stealth Rock
+|-damage|p1a: Swampert|329\/404|[from] Spikes
+|turn|17
+|callback|decision
+|
+|move|p2a: Raikou|Hidden Power|p1a: Swampert
+|-supereffective|p1a: Swampert
+|-damage|p1a: Swampert|0 fnt
+|faint|p1a: Swampert
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Raikou|202\/322|[from] hail
+|callback|decision
+|chat|reachzero|gg
+|chat|Mos Def|gg
+|
+|switch|p1a: Shaymin|Shaymin, shiny|361\/361
+|-damage|p1a: Shaymin|316\/361|[from] Stealth Rock
+|-damage|p1a: Shaymin|271\/361|[from] Spikes
+|turn|18
+|callback|decision
+|
+|move|p2a: Raikou|Weather Ball|p1a: Shaymin
+|-supereffective|p1a: Shaymin
+|-damage|p1a: Shaymin|0 fnt
+|faint|p1a: Shaymin
+|
+|win|Mos Def
+|leave|reachzero
+|player|p1

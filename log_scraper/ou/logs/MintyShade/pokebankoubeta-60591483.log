@@ -1,0 +1,396 @@
+|join|MintyShade
+|join|JezzyJaay
+|player|p1|MintyShade|169
+|player|p2|JezzyJaay|161
+|gametype|singles
+|tier|Pokebank OU (beta)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Tyranitar, M
+|poke|p1|Escavalier, M
+|poke|p1|Togekiss, F
+|poke|p1|Greninja, M
+|poke|p1|Goodra, F
+|poke|p1|Aegislash, F
+|poke|p2|Charizard, M
+|poke|p2|Venusaur, F
+|poke|p2|Blastoise, F
+|poke|p2|Dragonite, M
+|poke|p2|Scizor, M
+|poke|p2|Weavile, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Goodra|Goodra, F|384\/384
+|switch|p2a: Charizard|Charizard, M|298\/298
+|turn|1
+|callback|decision
+|
+|-formechange|p2a: Charizard|Charizard-Mega-Y
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p2a: Charizard|Air Slash|p1a: Goodra
+|-damage|p1a: Goodra|281\/384
+|move|p1a: Goodra|Thunderbolt|p2a: Charizard
+|-supereffective|p2a: Charizard
+|-damage|p2a: Charizard|4\/298
+|
+|-weather|SunnyDay|[upkeep]
+|turn|2
+|callback|decision
+|
+|move|p2a: Charizard|Fire Blast|p1a: Goodra
+|-resisted|p1a: Goodra
+|-damage|p1a: Goodra|155\/384
+|-status|p1a: Goodra|brn
+|move|p1a: Goodra|Thunderbolt|p2a: Charizard
+|-supereffective|p2a: Charizard
+|-damage|p2a: Charizard|0 fnt
+|faint|p2a: Charizard
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Goodra|107\/384 brn|[from] brn
+|callback|decision
+|
+|switch|p2a: Venusaur|Venusaur, F|319\/319
+|turn|3
+|callback|decision
+|
+|switch|p1a: Togekiss|Togekiss, F|374\/374
+|move|p2a: Venusaur|Sludge Bomb|p1a: Togekiss
+|-supereffective|p1a: Togekiss
+|-damage|p1a: Togekiss|52\/374
+|-damage|p2a: Venusaur|288\/319|[from] item: Life Orb
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Togekiss|75\/374|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Venusaur|Giga Drain|p1a: Togekiss
+|-resisted|p1a: Togekiss
+|-damage|p1a: Togekiss|11\/374
+|-heal|p2a: Venusaur|319\/319|[from] drain|[of] p1a: Togekiss
+|-damage|p2a: Venusaur|288\/319|[from] item: Life Orb
+|move|p1a: Togekiss|Air Slash|p2a: Venusaur
+|-supereffective|p2a: Venusaur
+|-damage|p2a: Venusaur|82\/319
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Togekiss|34\/374|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, F|324\/324
+|move|p2a: Venusaur|Sludge Bomb|p1a: Aegislash
+|-immune|p1a: Aegislash|[msg]
+|
+|-weather|none
+|turn|6
+|callback|decision
+|
+|move|p2a: Venusaur|Hidden Power|p1a: Aegislash
+|-supereffective|p1a: Aegislash
+|-damage|p1a: Aegislash|223\/324
+|-damage|p2a: Venusaur|51\/319|[from] item: Life Orb
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Ball|p2a: Venusaur
+|-damage|p2a: Venusaur|0 fnt
+|faint|p2a: Venusaur
+|
+|callback|decision
+|
+|switch|p2a: Dragonite|Dragonite, M|324\/324
+|turn|7
+|callback|decision
+|
+|switch|p1a: Greninja|Greninja, M|285\/285
+|move|p2a: Dragonite|Fire Punch|p1a: Greninja
+|-resisted|p1a: Greninja
+|-damage|p1a: Greninja|178\/285
+|-status|p1a: Greninja|brn
+|
+|-heal|p1a: Greninja|195\/285 brn|[from] item: Leftovers
+|-damage|p1a: Greninja|160\/285 brn|[from] brn
+|turn|8
+|callback|decision
+|
+|switch|p2a: Blastoise|Blastoise, F|362\/362
+|-start|p1a: Greninja|typechange|Ground|[from] Protean
+|move|p1a: Greninja|Spikes|p2a: Blastoise
+|-sidestart|p2: JezzyJaay|Spikes
+|
+|-heal|p1a: Greninja|177\/285 brn|[from] item: Leftovers
+|-damage|p1a: Greninja|142\/285 brn|[from] brn
+|turn|9
+|callback|decision
+|
+|switch|p1a: Togekiss|Togekiss, F|34\/374
+|move|p2a: Blastoise|Rapid Spin|p1a: Togekiss
+|-damage|p1a: Togekiss|25\/374
+|-sideend|p2: JezzyJaay|Spikes|[from] move: Rapid Spin|[of] p2a: Blastoise
+|
+|-heal|p1a: Togekiss|48\/374|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p1a: Togekiss|Roost|p1a: Togekiss
+|-heal|p1a: Togekiss|235\/374
+|move|p2a: Blastoise|Scald|p1a: Togekiss
+|-crit|p1a: Togekiss
+|-damage|p1a: Togekiss|120\/374
+|
+|-heal|p1a: Togekiss|143\/374|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p1a: Togekiss|Roost|p1a: Togekiss
+|-heal|p1a: Togekiss|330\/374
+|move|p2a: Blastoise|Scald|p1a: Togekiss
+|-damage|p1a: Togekiss|252\/374
+|
+|-heal|p1a: Togekiss|275\/374|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Blastoise
+|-damage|p2a: Blastoise|271\/362
+|cant|p2a: Blastoise|flinch
+|
+|-heal|p1a: Togekiss|298\/374|[from] item: Leftovers
+|-heal|p2a: Blastoise|293\/362|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Blastoise
+|-damage|p2a: Blastoise|194\/362
+|cant|p2a: Blastoise|flinch
+|
+|-heal|p1a: Togekiss|321\/374|[from] item: Leftovers
+|-heal|p2a: Blastoise|216\/362|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Blastoise|[miss]
+|-miss|p1a: Togekiss|p2a: Blastoise
+|move|p2a: Blastoise|Scald|p1a: Togekiss
+|-damage|p1a: Togekiss|246\/374
+|-status|p1a: Togekiss|brn
+|
+|-heal|p1a: Togekiss|269\/374 brn|[from] item: Leftovers
+|-heal|p2a: Blastoise|238\/362|[from] item: Leftovers
+|-damage|p1a: Togekiss|223\/374 brn|[from] brn
+|turn|15
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Blastoise
+|-damage|p2a: Blastoise|132\/362
+|move|p2a: Blastoise|Scald|p1a: Togekiss
+|-damage|p1a: Togekiss|144\/374 brn
+|
+|-heal|p1a: Togekiss|167\/374 brn|[from] item: Leftovers
+|-heal|p2a: Blastoise|154\/362|[from] item: Leftovers
+|-damage|p1a: Togekiss|121\/374 brn|[from] brn
+|turn|16
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Blastoise
+|-crit|p2a: Blastoise
+|-damage|p2a: Blastoise|16\/362
+|move|p2a: Blastoise|Scald|p1a: Togekiss
+|-damage|p1a: Togekiss|19\/374 brn
+|
+|-heal|p1a: Togekiss|42\/374 brn|[from] item: Leftovers
+|-heal|p2a: Blastoise|38\/362|[from] item: Leftovers
+|-damage|p1a: Togekiss|0 fnt|[from] brn
+|faint|p1a: Togekiss
+|callback|decision
+|
+|switch|p1a: Greninja|Greninja, M|142\/285 brn
+|turn|17
+|callback|decision
+|
+|-start|p1a: Greninja|typechange|Ice|[from] Protean
+|move|p1a: Greninja|Ice Beam|p2a: Blastoise
+|-resisted|p2a: Blastoise
+|-damage|p2a: Blastoise|0 fnt
+|faint|p2a: Blastoise
+|
+|-heal|p1a: Greninja|159\/285 brn|[from] item: Leftovers
+|-damage|p1a: Greninja|124\/285 brn|[from] brn
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|344\/344
+|turn|18
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, F|223\/324
+|move|p2a: Scizor|U-turn|p1a: Aegislash
+|-resisted|p1a: Aegislash
+|-damage|p1a: Aegislash|193\/324
+|-damage|p2a: Scizor|310\/344|[from] item: Life Orb
+|callback|decision
+|
+|switch|p2a: Dragonite|Dragonite, M|324\/324
+|
+|turn|19
+|callback|decision
+|
+|move|p2a: Dragonite|Outrage|p1a: Aegislash
+|-resisted|p1a: Aegislash
+|-damage|p1a: Aegislash|81\/324
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Shadow Ball|p2a: Dragonite
+|-damage|p2a: Dragonite|249\/324
+|
+|turn|20
+|callback|decision
+|
+|-formechange|p1a: Aegislash|Aegislash
+|move|p1a: Aegislash|King's Shield|p1a: Aegislash
+|-singleturn|p1a: Aegislash|King's Shield
+|move|p2a: Dragonite|Outrage|p1a: Aegislash
+|-activate|p1a: Aegislash|King's Shield
+|-unboost|p2a: Dragonite|atk|2
+|
+|-end|p2a: Dragonite|rampage
+|-start|p2a: Dragonite|confusion
+|turn|21
+|callback|decision
+|
+|-activate|p2a: Dragonite|confusion
+|move|p2a: Dragonite|Outrage|p1a: Aegislash
+|-resisted|p1a: Aegislash
+|-damage|p1a: Aegislash|24\/324
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Sacred Sword|p2a: Dragonite
+|-resisted|p2a: Dragonite
+|-damage|p2a: Dragonite|195\/324
+|
+|turn|22
+|callback|decision
+|
+|-formechange|p1a: Aegislash|Aegislash
+|move|p1a: Aegislash|King's Shield|p1a: Aegislash
+|-singleturn|p1a: Aegislash|King's Shield
+|-activate|p2a: Dragonite|confusion
+|move|p2a: Dragonite|Outrage|p1a: Aegislash
+|-activate|p1a: Aegislash|King's Shield
+|-unboost|p2a: Dragonite|atk|2
+|
+|-end|p2a: Dragonite|rampage
+|turn|23
+|callback|decision
+|
+|switch|p1a: Tyranitar|Tyranitar, M|342\/342
+|-weather|Sandstorm
+|-end|p2a: Dragonite|confusion
+|move|p2a: Dragonite|Outrage|p1a: Tyranitar
+|-crit|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|faint|p1a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Dragonite|175\/324|[from] sandstorm
+|callback|decision
+|
+|switch|p1a: Escavalier|Escavalier, M|344\/344
+|turn|24
+|callback|decision
+|
+|move|p2a: Dragonite|Outrage|p1a: Escavalier
+|-resisted|p1a: Escavalier
+|-damage|p1a: Escavalier|291\/344
+|move|p1a: Escavalier|Iron Head|p2a: Dragonite
+|-damage|p2a: Dragonite|6\/324
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Dragonite|0 fnt|[from] sandstorm
+|faint|p2a: Dragonite
+|callback|decision
+|
+|switch|p2a: Weavile|Weavile, M|282\/282
+|-ability|p2a: Weavile|Pressure
+|turn|25
+|callback|decision
+|
+|move|p2a: Weavile|Ice Punch|p1a: Escavalier
+|-resisted|p1a: Escavalier
+|-damage|p1a: Escavalier|198\/344
+|move|p1a: Escavalier|Iron Head|p2a: Weavile
+|-supereffective|p2a: Weavile
+|-damage|p2a: Weavile|0 fnt
+|faint|p2a: Weavile
+|
+|-weather|Sandstorm|[upkeep]
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|310\/344
+|turn|26
+|callback|decision
+|
+|move|p2a: Scizor|Swords Dance|p2a: Scizor
+|-boost|p2a: Scizor|atk|2
+|move|p1a: Escavalier|Knock Off|p2a: Scizor
+|-damage|p2a: Scizor|228\/344
+|-enditem|p2a: Scizor|Life Orb|[from] move: Knock Off|[of] p1a: Escavalier
+|
+|-weather|Sandstorm|[upkeep]
+|turn|27
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Escavalier
+|-resisted|p1a: Escavalier
+|-damage|p1a: Escavalier|78\/344
+|move|p1a: Escavalier|Iron Head|p2a: Scizor
+|-resisted|p2a: Scizor
+|-damage|p2a: Scizor|144\/344
+|
+|-weather|none
+|turn|28
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Escavalier
+|-resisted|p1a: Escavalier
+|-damage|p1a: Escavalier|0 fnt
+|faint|p1a: Escavalier
+|
+|callback|decision
+|
+|switch|p1a: Aegislash|Aegislash, F|24\/324
+|turn|29
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Aegislash
+|-resisted|p1a: Aegislash
+|-damage|p1a: Aegislash|0 fnt
+|faint|p1a: Aegislash
+|
+|callback|decision
+|
+|switch|p1a: Greninja|Greninja, M|124\/285 brn
+|turn|30
+|callback|decision
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Greninja
+|-resisted|p1a: Greninja
+|-damage|p1a: Greninja|0 fnt
+|faint|p1a: Greninja
+|
+|callback|decision
+|-message|MintyShade forfeited.
+|
+|win|JezzyJaay
+|raw|Ladder updating...
+|raw|MintyShade's rating: 1513 &rarr; <strong>1508<\/strong><br \/>(-5 for losing)
+|raw|JezzyJaay's rating: 1548 &rarr; <strong>1554<\/strong><br \/>(+6 for winning)
+|leave|MintyShade
+|player|p1

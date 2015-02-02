@@ -1,0 +1,502 @@
+|join|Bob the Bro
+|join|Sweep
+|player|p1|Bob the Bro|23
+|player|p2|Sweep|2
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Celebi
+|poke|p1|Crobat, M
+|poke|p1|Aggron, M
+|poke|p1|Blissey, F
+|poke|p1|Alomomola, M
+|poke|p1|Krookodile, M
+|poke|p2|Hippowdon, M
+|poke|p2|Stoutland, F
+|poke|p2|Celebi
+|poke|p2|Arcanine, F
+|poke|p2|Starmie
+|poke|p2|Aerodactyl, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Rho|Aggron, M|344\/344
+|switch|p2a: Celebi|Celebi|341\/341
+|turn|1
+|
+|detailschange|p1a: Rho|Aggron-Mega, M
+|message|Aggron has Mega Evolved into Mega Aggron!
+|move|p2a: Celebi|U-turn|p1a: Rho
+|-resisted|p1a: Rho
+|-damage|p1a: Rho|332\/344
+|
+|switch|p2a: Hippowdon|Hippowdon, M|419\/419
+|-weather|Sandstorm
+|move|p1a: Rho|Stealth Rock|p2a: Hippowdon
+|-sidestart|p2: Sweep|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|2
+|
+|switch|p1a: Delta|Alomomola, M|534\/534
+|move|p2a: Hippowdon|Stealth Rock|p1a: Delta
+|-sidestart|p1: Bob the Bro|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Delta|501\/534|[from] sandstorm
+|turn|3
+|join|or not to Luna
+|
+|switch|p2a: Starmie|Starmie|263\/263
+|-damage|p2a: Starmie|231\/263|[from] Stealth Rock
+|move|p1a: Delta|Knock Off|p2a: Starmie
+|-supereffective|p2a: Starmie
+|-damage|p2a: Starmie|89\/263
+|-enditem|p2a: Starmie|Life Orb|[from] move: Knock Off|[of] p1a: Delta
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Starmie|73\/263|[from] sandstorm
+|-damage|p1a: Delta|468\/534|[from] sandstorm
+|turn|4
+|
+|move|p2a: Starmie|Rapid Spin|p1a: Delta
+|-damage|p1a: Delta|458\/534
+|-damage|p2a: Starmie|30\/263|[from] item: Rocky Helmet|[of] p1a: Delta
+|-sideend|p2: Sweep|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Starmie
+|move|p1a: Delta|Knock Off|p2a: Starmie
+|-supereffective|p2a: Starmie
+|-damage|p2a: Starmie|0 fnt
+|faint|p2a: Starmie
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Delta|425\/534|[from] sandstorm
+|
+|switch|p2a: Celebi|Celebi|341\/341
+|turn|5
+|
+|switch|p1a: Rho|Aggron-Mega, M|332\/344
+|-damage|p1a: Rho|311\/344|[from] Stealth Rock
+|move|p2a: Celebi|Leaf Storm|p1a: Rho
+|-resisted|p1a: Rho
+|-damage|p1a: Rho|226\/344
+|-unboost|p2a: Celebi|spa|2
+|
+|-weather|none
+|turn|6
+|
+|switch|p2a: Arcanine|Arcanine, F|383\/383
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Rho
+|-unboost|p1a: Rho|atk|1
+|move|p1a: Rho|Stealth Rock|p2a: Arcanine
+|-sidestart|p2: Sweep|move: Stealth Rock
+|
+|turn|7
+|
+|switch|p1a: Delta|Alomomola, M|534\/534
+|-damage|p1a: Delta|468\/534|[from] Stealth Rock
+|move|p2a: Arcanine|Flare Blitz|p1a: Delta
+|-resisted|p1a: Delta
+|-damage|p1a: Delta|402\/534
+|-damage|p2a: Arcanine|320\/383|[from] item: Rocky Helmet|[of] p1a: Delta
+|-damage|p2a: Arcanine|298\/383|[from] recoil|[of] p1a: Delta
+|
+|-heal|p2a: Arcanine|321\/383|[from] item: Leftovers
+|turn|8
+|
+|move|p2a: Arcanine|Will-O-Wisp|p1a: Delta
+|-status|p1a: Delta|brn
+|move|p1a: Delta|Toxic|p2a: Arcanine
+|-status|p2a: Arcanine|tox
+|
+|-heal|p2a: Arcanine|344\/383 tox|[from] item: Leftovers
+|-damage|p2a: Arcanine|321\/383 tox|[from] psn
+|-damage|p1a: Delta|336\/534 brn|[from] brn
+|turn|9
+|
+|switch|p2a: Celebi|Celebi|341\/341
+|-damage|p2a: Celebi|299\/341|[from] Stealth Rock
+|move|p1a: Delta|Wish|p1a: Delta
+|
+|-damage|p1a: Delta|270\/534 brn|[from] brn
+|turn|10
+|
+|switch|p1a: Rho|Aggron-Mega, M|226\/344
+|-damage|p1a: Rho|205\/344|[from] Stealth Rock
+|move|p2a: Celebi|U-turn|p1a: Rho
+|-resisted|p1a: Rho
+|-damage|p1a: Rho|193\/344
+|
+|switch|p2a: Arcanine|Arcanine, F|321\/383 tox
+|-damage|p2a: Arcanine|226\/383 tox|[from] Stealth Rock
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Rho
+|-unboost|p1a: Rho|atk|1
+|
+|-heal|p1a: Rho|344\/344|[from] move: Wish|[wisher] Delta
+|-heal|p2a: Arcanine|249\/383 tox|[from] item: Leftovers
+|-damage|p2a: Arcanine|226\/383 tox|[from] psn
+|turn|11
+|
+|switch|p1a: Tau|Blissey, F|714\/714
+|-damage|p1a: Tau|625\/714|[from] Stealth Rock
+|move|p2a: Arcanine|Morning Sun|p2a: Arcanine
+|-heal|p2a: Arcanine|383\/383 tox
+|
+|-heal|p1a: Tau|669\/714|[from] item: Leftovers
+|-damage|p2a: Arcanine|337\/383 tox|[from] psn
+|turn|12
+|
+|switch|p2a: Stoutland|Stoutland, F|311\/311
+|-damage|p2a: Stoutland|273\/311|[from] Stealth Rock
+|move|p1a: Tau|Wish|p1a: Tau
+|
+|-heal|p1a: Tau|713\/714|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: Rho|Aggron-Mega, M|344\/344
+|-damage|p1a: Rho|323\/344|[from] Stealth Rock
+|move|p2a: Stoutland|Return|p1a: Rho
+|-resisted|p1a: Rho
+|-damage|p1a: Rho|261\/344
+|
+|-heal|p1a: Rho|344\/344|[from] move: Wish|[wisher] Tau
+|turn|14
+|
+|switch|p2a: Hippowdon|Hippowdon, M|419\/419
+|-damage|p2a: Hippowdon|393\/419|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p1a: Rho|Heavy Slam|p2a: Hippowdon
+|-damage|p2a: Hippowdon|342\/419
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|368\/419|[from] item: Leftovers
+|turn|15
+|
+|switch|p1a: Omega|Celebi|341\/341
+|-damage|p1a: Omega|299\/341|[from] Stealth Rock
+|move|p2a: Hippowdon|Earthquake|p1a: Omega
+|-resisted|p1a: Omega
+|-damage|p1a: Omega|233\/341
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Omega|212\/341|[from] sandstorm
+|-heal|p1a: Omega|233\/341|[from] item: Leftovers
+|-heal|p2a: Hippowdon|394\/419|[from] item: Leftovers
+|turn|16
+|
+|switch|p2a: Celebi|Celebi|299\/341
+|-damage|p2a: Celebi|257\/341|[from] Stealth Rock
+|move|p1a: Omega|Seed Bomb|p2a: Celebi
+|-resisted|p2a: Celebi
+|-damage|p2a: Celebi|197\/341
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Celebi|176\/341|[from] sandstorm
+|-damage|p1a: Omega|212\/341|[from] sandstorm
+|-heal|p1a: Omega|233\/341|[from] item: Leftovers
+|turn|17
+|
+|switch|p1a: Tau|Blissey, F|713\/714
+|-damage|p1a: Tau|624\/714|[from] Stealth Rock
+|move|p2a: Celebi|U-turn|p1a: Tau
+|-damage|p1a: Tau|534\/714
+|
+|switch|p2a: Aerodactyl|Aerodactyl, M|301\/301
+|-damage|p2a: Aerodactyl|226\/301|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Tau|490\/714|[from] sandstorm
+|-heal|p1a: Tau|534\/714|[from] item: Leftovers
+|turn|18
+|
+|switch|p1a: Rho|Aggron-Mega, M|344\/344
+|-damage|p1a: Rho|323\/344|[from] Stealth Rock
+|detailschange|p2a: Aerodactyl|Aerodactyl-Mega, M
+|message|Aerodactyl has Mega Evolved into Mega Aerodactyl!
+|move|p2a: Aerodactyl|Earthquake|p1a: Rho
+|-supereffective|p1a: Rho
+|-damage|p1a: Rho|230\/344
+|
+|-weather|none
+|turn|19
+|
+|switch|p1a: Phi|Krookodile, M|331\/331
+|-damage|p1a: Phi|311\/331|[from] Stealth Rock
+|-ability|p1a: Phi|Intimidate|[of] p2a: Aerodactyl
+|-unboost|p2a: Aerodactyl|atk|1
+|move|p2a: Aerodactyl|Earthquake|p1a: Phi
+|-damage|p1a: Phi|210\/331
+|
+|turn|20
+|
+|move|p2a: Aerodactyl|Aqua Tail|p1a: Phi
+|-supereffective|p1a: Phi
+|-damage|p1a: Phi|0 fnt
+|faint|p1a: Phi
+|
+|
+|switch|p1a: Delta|Alomomola, M|448\/534 brn
+|-damage|p1a: Delta|382\/534 brn|[from] Stealth Rock
+|turn|21
+|
+|move|p2a: Aerodactyl|Stone Edge|p1a: Delta
+|-damage|p1a: Delta|280\/534 brn
+|move|p1a: Delta|Wish|p1a: Delta
+|
+|-damage|p1a: Delta|214\/534 brn|[from] brn
+|turn|22
+|
+|switch|p2a: Celebi|Celebi|176\/341
+|-damage|p2a: Celebi|134\/341|[from] Stealth Rock
+|switch|p1a: Rho|Aggron-Mega, M|230\/344
+|-damage|p1a: Rho|209\/344|[from] Stealth Rock
+|
+|-heal|p1a: Rho|344\/344|[from] move: Wish|[wisher] Delta
+|turn|23
+|
+|move|p2a: Celebi|U-turn|p1a: Rho
+|-resisted|p1a: Rho
+|-damage|p1a: Rho|332\/344
+|
+|switch|p2a: Arcanine|Arcanine, F|337\/383 tox
+|-damage|p2a: Arcanine|242\/383 tox|[from] Stealth Rock
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Rho
+|-unboost|p1a: Rho|atk|1
+|move|p1a: Rho|Heavy Slam|p2a: Arcanine
+|-resisted|p2a: Arcanine
+|-damage|p2a: Arcanine|213\/383 tox
+|
+|-heal|p2a: Arcanine|236\/383 tox|[from] item: Leftovers
+|-damage|p2a: Arcanine|213\/383 tox|[from] psn
+|turn|24
+|
+|switch|p1a: Delta|Alomomola, M|392\/534 brn
+|-damage|p1a: Delta|326\/534 brn|[from] Stealth Rock
+|move|p2a: Arcanine|Wild Charge|p1a: Delta
+|-supereffective|p1a: Delta
+|-damage|p1a: Delta|192\/534 brn
+|-damage|p2a: Arcanine|150\/383 tox|[from] item: Rocky Helmet|[of] p1a: Delta
+|-damage|p2a: Arcanine|116\/383 tox|[from] recoil|[of] p1a: Delta
+|
+|-heal|p2a: Arcanine|139\/383 tox|[from] item: Leftovers
+|-damage|p2a: Arcanine|93\/383 tox|[from] psn
+|-damage|p1a: Delta|126\/534 brn|[from] brn
+|turn|25
+|
+|switch|p1a: Tau|Blissey, F|534\/714
+|-damage|p1a: Tau|445\/714|[from] Stealth Rock
+|move|p2a: Arcanine|Flare Blitz|p1a: Tau
+|-damage|p1a: Tau|160\/714
+|-status|p1a: Tau|brn
+|-damage|p2a: Arcanine|0 fnt|[from] recoil|[of] p1a: Tau
+|faint|p2a: Arcanine
+|
+|-heal|p1a: Tau|204\/714 brn|[from] item: Leftovers
+|-damage|p1a: Tau|115\/714 brn|[from] brn
+|
+|switch|p2a: Stoutland|Stoutland, F|273\/311
+|-damage|p2a: Stoutland|235\/311|[from] Stealth Rock
+|turn|26
+|
+|switch|p1a: Rho|Aggron-Mega, M|332\/344
+|-damage|p1a: Rho|311\/344|[from] Stealth Rock
+|move|p2a: Stoutland|Return|p1a: Rho
+|-resisted|p1a: Rho
+|-damage|p1a: Rho|252\/344
+|
+|turn|27
+|
+|switch|p2a: Hippowdon|Hippowdon, M|394\/419
+|-damage|p2a: Hippowdon|368\/419|[from] Stealth Rock
+|-weather|Sandstorm
+|move|p1a: Rho|Heavy Slam|p2a: Hippowdon
+|-damage|p2a: Hippowdon|317\/419
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|343\/419|[from] item: Leftovers
+|turn|28
+|
+|switch|p2a: Aerodactyl|Aerodactyl-Mega, M|226\/301
+|-damage|p2a: Aerodactyl|151\/301|[from] Stealth Rock
+|switch|p1a: Beta|Crobat, M|325\/325
+|-damage|p1a: Beta|244\/325|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Beta|224\/325|[from] sandstorm
+|-heal|p1a: Beta|244\/325|[from] item: Black Sludge
+|turn|29
+|join|Happee
+|leave|Happee
+|
+|switch|p1a: Rho|Aggron-Mega, M|252\/344
+|-damage|p1a: Rho|231\/344|[from] Stealth Rock
+|move|p2a: Aerodactyl|Stone Edge|p1a: Rho
+|-resisted|p1a: Rho
+|-damage|p1a: Rho|186\/344
+|
+|-weather|Sandstorm|[upkeep]
+|turn|30
+|
+|switch|p2a: Hippowdon|Hippowdon, M|343\/419
+|-damage|p2a: Hippowdon|317\/419|[from] Stealth Rock
+|move|p1a: Rho|Heavy Slam|p2a: Hippowdon
+|-damage|p2a: Hippowdon|266\/419
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p2a: Hippowdon|292\/419|[from] item: Leftovers
+|turn|31
+|
+|switch|p1a: Omega|Celebi|233\/341
+|-damage|p1a: Omega|191\/341|[from] Stealth Rock
+|move|p2a: Hippowdon|Body Slam|p1a: Omega
+|-damage|p1a: Omega|122\/341
+|
+|-weather|none
+|-heal|p1a: Omega|143\/341|[from] item: Leftovers
+|-heal|p2a: Hippowdon|318\/419|[from] item: Leftovers
+|turn|32
+|
+|switch|p2a: Celebi|Celebi|134\/341
+|-damage|p2a: Celebi|92\/341|[from] Stealth Rock
+|move|p1a: Omega|Recover|p1a: Omega
+|-heal|p1a: Omega|314\/341
+|
+|-heal|p1a: Omega|335\/341|[from] item: Leftovers
+|turn|33
+|join|BenzMafia
+|
+|switch|p1a: Beta|Crobat, M|244\/325
+|-damage|p1a: Beta|163\/325|[from] Stealth Rock
+|move|p2a: Celebi|Trick|p1a: Beta
+|-activate|p2a: Celebi|move: Trick|[of] p1a: Beta
+|-item|p1a: Beta|Choice Scarf|[from] move: Trick
+|-item|p2a: Celebi|Black Sludge|[from] move: Trick
+|
+|-damage|p2a: Celebi|50\/341|[from] item: Black Sludge
+|turn|34
+|
+|move|p1a: Beta|Brave Bird|p2a: Celebi
+|-supereffective|p2a: Celebi
+|-damage|p2a: Celebi|0 fnt
+|-damage|p1a: Beta|146\/325|[from] recoil|[of] p2a: Celebi
+|faint|p2a: Celebi
+|
+|
+|switch|p2a: Hippowdon|Hippowdon, M|318\/419
+|-damage|p2a: Hippowdon|292\/419|[from] Stealth Rock
+|-weather|Sandstorm
+|turn|35
+|
+|switch|p1a: Delta|Alomomola, M|304\/534 brn
+|-damage|p1a: Delta|238\/534 brn|[from] Stealth Rock
+|switch|p2a: Stoutland|Stoutland, F|235\/311
+|-damage|p2a: Stoutland|197\/311|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Delta|205\/534 brn|[from] sandstorm
+|-damage|p1a: Delta|139\/534 brn|[from] brn
+|turn|36
+|
+|switch|p1a: Tau|Blissey, F|115\/714
+|-damage|p1a: Tau|26\/714|[from] Stealth Rock
+|move|p2a: Stoutland|Return|p1a: Tau
+|-damage|p1a: Tau|0 fnt
+|faint|p1a: Tau
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Omega|Celebi|335\/341
+|-damage|p1a: Omega|293\/341|[from] Stealth Rock
+|turn|37
+|
+|move|p2a: Stoutland|Return|p1a: Omega
+|-crit|p1a: Omega
+|-damage|p1a: Omega|0 fnt
+|faint|p1a: Omega
+|
+|-weather|Sandstorm|[upkeep]
+|c|âBob the Bro|fk me
+|join|Happee
+|leave|Happee
+|
+|switch|p1a: Rho|Aggron-Mega, M|186\/344
+|-damage|p1a: Rho|165\/344|[from] Stealth Rock
+|turn|38
+|
+|switch|p2a: Hippowdon|Hippowdon, M|292\/419
+|-damage|p2a: Hippowdon|266\/419|[from] Stealth Rock
+|switch|p1a: Delta|Alomomola, M|317\/534 brn
+|-damage|p1a: Delta|251\/534 brn|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Delta|218\/534 brn|[from] sandstorm
+|-heal|p2a: Hippowdon|292\/419|[from] item: Leftovers
+|-damage|p1a: Delta|152\/534 brn|[from] brn
+|turn|39
+|
+|move|p1a: Delta|Toxic|p2a: Hippowdon
+|-status|p2a: Hippowdon|tox
+|move|p2a: Hippowdon|Earthquake|p1a: Delta
+|-damage|p1a: Delta|44\/534 brn
+|
+|-weather|none
+|-heal|p2a: Hippowdon|318\/419 tox|[from] item: Leftovers
+|-damage|p1a: Delta|0 fnt|[from] brn
+|-damage|p2a: Hippowdon|292\/419 tox|[from] psn
+|faint|p1a: Delta
+|
+|switch|p1a: Rho|Aggron-Mega, M|165\/344
+|-damage|p1a: Rho|144\/344|[from] Stealth Rock
+|turn|40
+|
+|move|p2a: Hippowdon|Earthquake|p1a: Rho
+|-supereffective|p1a: Rho
+|-damage|p1a: Rho|45\/344
+|move|p1a: Rho|Heavy Slam|p2a: Hippowdon
+|-damage|p2a: Hippowdon|240\/419 tox
+|
+|-heal|p2a: Hippowdon|266\/419 tox|[from] item: Leftovers
+|-damage|p2a: Hippowdon|214\/419 tox|[from] psn
+|turn|41
+|
+|move|p2a: Hippowdon|Slack Off|p2a: Hippowdon
+|-heal|p2a: Hippowdon|419\/419 tox
+|move|p1a: Rho|Metal Burst|p2a: Hippowdon
+|-fail|p2a: Hippowdon
+|
+|-damage|p2a: Hippowdon|341\/419 tox|[from] psn
+|turn|42
+|
+|move|p2a: Hippowdon|Earthquake|p1a: Rho
+|-supereffective|p1a: Rho
+|-damage|p1a: Rho|0 fnt
+|faint|p1a: Rho
+|
+|-heal|p2a: Hippowdon|367\/419 tox|[from] item: Leftovers
+|-damage|p2a: Hippowdon|263\/419 tox|[from] psn
+|
+|switch|p1a: Beta|Crobat, M|146\/325
+|-damage|p1a: Beta|65\/325|[from] Stealth Rock
+|turn|43
+|
+|move|p1a: Beta|Brave Bird|p2a: Hippowdon
+|-damage|p2a: Hippowdon|128\/419 tox
+|-damage|p1a: Beta|20\/325|[from] recoil|[of] p2a: Hippowdon
+|move|p2a: Hippowdon|Body Slam|p1a: Beta
+|-damage|p1a: Beta|0 fnt
+|faint|p1a: Beta
+|
+|win|Sweep
+|raw|Ladder updating...
+|raw|Bob the Bro's rating: 1762 &rarr; <strong>1735<\/strong><br \/>(-27 for losing)
+|raw|Sweep's rating: 1641 &rarr; <strong>1668<\/strong><br \/>(+27 for winning)

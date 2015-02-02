@@ -1,0 +1,383 @@
+|join|Xiba
+|join|Tost
+|player|p1|Xiba|273
+|player|p2|Tost|7
+|gametype|singles
+|tier|UU (suspect test)
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Hitmontop, M
+|poke|p1|Crobat, F
+|poke|p1|Weavile, F, shiny
+|poke|p1|Kingdra, F
+|poke|p1|Meloetta, shiny
+|poke|p1|Swampert, M
+|poke|p2|Registeel
+|poke|p2|Regice
+|poke|p2|Regirock
+|poke|p2|Xatu, F
+|poke|p2|Heracross, M
+|poke|p2|Porygon-Z
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Weavile|Weavile, F, shiny|281\/281
+|switch|p2a: Regirock|Regirock|364\/364
+|-ability|p1a: Weavile|Pressure
+|turn|1
+|callback|decision
+|
+|switch|p1a: Hitmontop|Hitmontop, M|304\/304
+|-ability|p1a: Hitmontop|Intimidate|[of] p2a: Regirock
+|-fail|p2a: Regirock|unboost|[from] ability: Clear Body|[of] p2a: Regirock
+|move|p2a: Regirock|Stealth Rock|p1a: Hitmontop
+|-sidestart|p1: Xiba|move: Stealth Rock
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Hitmontop|Rapid Spin|p2a: Regirock
+|-crit|p2a: Regirock
+|-resisted|p2a: Regirock
+|-damage|p2a: Regirock|355\/364
+|-damage|p1a: Hitmontop|254\/304|[from] item: Rocky Helmet|[of] p2a: Regirock
+|-sideend|p1: Xiba|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Hitmontop
+|move|p2a: Regirock|Counter|p1a: Hitmontop
+|-damage|p1a: Hitmontop|236\/304
+|
+|-heal|p1a: Hitmontop|255\/304|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p1a: Hitmontop|Toxic|p2a: Regirock
+|-status|p2a: Regirock|tox
+|move|p2a: Regirock|Thunder Wave|p1a: Hitmontop
+|-status|p1a: Hitmontop|par
+|
+|-heal|p1a: Hitmontop|274\/304 par|[from] item: Leftovers
+|-damage|p2a: Regirock|333\/364 tox|[from] psn
+|turn|4
+|callback|decision
+|
+|switch|p1a: Swampert|Swampert, M|403\/403
+|move|p2a: Regirock|Stealth Rock|p1a: Swampert
+|-sidestart|p1: Xiba|move: Stealth Rock
+|
+|-damage|p2a: Regirock|289\/364 tox|[from] psn
+|turn|5
+|callback|decision
+|
+|switch|p1a: Meloetta|Meloetta, shiny|384\/384
+|-damage|p1a: Meloetta|336\/384|[from] Stealth Rock
+|switch|p2a: Xatu|Xatu, F|271\/271
+|
+|-heal|p1a: Meloetta|360\/384|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Xatu|Toxic|p1a: Meloetta
+|-status|p1a: Meloetta|tox
+|move|p1a: Meloetta|Substitute|p1a: Meloetta
+|-start|p1a: Meloetta|Substitute
+|-damage|p1a: Meloetta|264\/384 tox
+|
+|-heal|p1a: Meloetta|288\/384 tox|[from] item: Leftovers
+|-damage|p1a: Meloetta|264\/384 tox|[from] psn
+|turn|7
+|callback|decision
+|
+|move|p2a: Xatu|Psychic|p1a: Meloetta
+|-resisted|p1a: Meloetta
+|-activate|p1a: Meloetta|Substitute|[damage]
+|move|p1a: Meloetta|Thunderbolt|p2a: Xatu
+|-supereffective|p2a: Xatu
+|-damage|p2a: Xatu|0 fnt
+|faint|p2a: Xatu
+|
+|-heal|p1a: Meloetta|288\/384 tox|[from] item: Leftovers
+|-damage|p1a: Meloetta|240\/384 tox|[from] psn
+|callback|decision
+|
+|switch|p2a: Regice|Regice|364\/364
+|turn|8
+|callback|decision
+|
+|move|p1a: Meloetta|Psychic|p2a: Regice
+|-damage|p2a: Regice|268\/364
+|move|p2a: Regice|Charge Beam|p1a: Meloetta
+|-end|p1a: Meloetta|Substitute
+|-boost|p2a: Regice|spa|1
+|
+|-heal|p1a: Meloetta|264\/384 tox|[from] item: Leftovers
+|-heal|p2a: Regice|290\/364|[from] item: Leftovers
+|-damage|p1a: Meloetta|192\/384 tox|[from] psn
+|turn|9
+|callback|decision
+|
+|move|p1a: Meloetta|Psychic|p2a: Regice
+|-damage|p2a: Regice|199\/364
+|move|p2a: Regice|Ice Beam|p1a: Meloetta
+|-damage|p1a: Meloetta|8\/384 tox
+|
+|-heal|p1a: Meloetta|32\/384 tox|[from] item: Leftovers
+|-heal|p2a: Regice|221\/364|[from] item: Leftovers
+|-damage|p1a: Meloetta|0 fnt|[from] psn
+|faint|p1a: Meloetta
+|callback|decision
+|
+|switch|p1a: Weavile|Weavile, F, shiny|281\/281
+|-damage|p1a: Weavile|211\/281|[from] Stealth Rock
+|-ability|p1a: Weavile|Pressure
+|turn|10
+|callback|decision
+|
+|move|p1a: Weavile|Night Slash|p2a: Regice
+|-crit|p2a: Regice
+|-damage|p2a: Regice|0 fnt
+|-damage|p1a: Weavile|183\/281|[from] item: Life Orb
+|faint|p2a: Regice
+|
+|callback|decision
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|turn|11
+|callback|decision
+|
+|switch|p1a: Hitmontop|Hitmontop, M|274\/304 par
+|-damage|p1a: Hitmontop|255\/304 par|[from] Stealth Rock
+|-ability|p1a: Hitmontop|Intimidate|[of] p2a: Registeel
+|-fail|p2a: Registeel|unboost|[from] ability: Clear Body|[of] p2a: Registeel
+|move|p2a: Registeel|Curse|p2a: Registeel
+|-boost|p2a: Registeel|atk|1
+|-boost|p2a: Registeel|def|1
+|-unboost|p2a: Registeel|spe|1
+|
+|-heal|p1a: Hitmontop|274\/304 par|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: Registeel|Curse|p2a: Registeel
+|-boost|p2a: Registeel|atk|1
+|-boost|p2a: Registeel|def|1
+|-unboost|p2a: Registeel|spe|1
+|move|p1a: Hitmontop|Rapid Spin|p2a: Registeel
+|-resisted|p2a: Registeel
+|-damage|p2a: Registeel|361\/364
+|-sideend|p1: Xiba|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Hitmontop
+|
+|-heal|p2a: Registeel|364\/364|[from] item: Leftovers
+|-heal|p1a: Hitmontop|293\/304 par|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p1a: Swampert|Swampert, M|403\/403
+|move|p2a: Registeel|Iron Head|p1a: Swampert
+|-resisted|p1a: Swampert
+|-damage|p1a: Swampert|310\/403
+|
+|-heal|p1a: Swampert|335\/403|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: Swampert|Stealth Rock|p2a: Registeel
+|-sidestart|p2: Tost|move: Stealth Rock
+|move|p2a: Registeel|Curse|p2a: Registeel
+|-boost|p2a: Registeel|atk|1
+|-boost|p2a: Registeel|def|1
+|-unboost|p2a: Registeel|spe|1
+|
+|-heal|p1a: Swampert|360\/403|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p2a: Registeel|Iron Head|p1a: Swampert
+|-resisted|p1a: Swampert
+|-damage|p1a: Swampert|231\/403
+|move|p1a: Swampert|Roar|p2a: Registeel
+|drag|p2a: Heracross|Heracross, M|302\/302
+|-damage|p2a: Heracross|265\/302|[from] Stealth Rock
+|
+|-heal|p1a: Swampert|256\/403|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p1a: Crobat|Crobat, F|311\/311
+|move|p2a: Heracross|Close Combat|p1a: Crobat
+|-resisted|p1a: Crobat
+|-damage|p1a: Crobat|244\/311
+|-unboost|p2a: Heracross|def|1
+|-unboost|p2a: Heracross|spd|1
+|
+|turn|17
+|callback|decision
+|
+|switch|p2a: Regirock|Regirock|289\/364 tox
+|-damage|p2a: Regirock|244\/364 tox|[from] Stealth Rock
+|move|p1a: Crobat|U-turn|p2a: Regirock
+|-damage|p2a: Regirock|187\/364 tox
+|-damage|p1a: Crobat|193\/311|[from] item: Rocky Helmet|[of] p2a: Regirock
+|callback|decision
+|
+|switch|p1a: Kingdra|Kingdra, F|291\/291
+|
+|-damage|p2a: Regirock|165\/364 tox|[from] psn
+|turn|18
+|callback|decision
+|
+|move|p1a: Kingdra|Surf|p2a: Regirock
+|-supereffective|p2a: Regirock
+|-damage|p2a: Regirock|0 fnt
+|faint|p2a: Regirock
+|
+|callback|decision
+|
+|switch|p2a: Porygon-Z|Porygon-Z|311\/311
+|-damage|p2a: Porygon-Z|273\/311|[from] Stealth Rock
+|turn|19
+|callback|decision
+|
+|move|p2a: Porygon-Z|Tri Attack|p1a: Kingdra
+|-damage|p1a: Kingdra|0 fnt
+|faint|p1a: Kingdra
+|
+|callback|decision
+|
+|switch|p1a: Crobat|Crobat, F|193\/311
+|turn|20
+|callback|decision
+|
+|move|p1a: Crobat|Brave Bird|p2a: Porygon-Z
+|-damage|p2a: Porygon-Z|0 fnt
+|-damage|p1a: Crobat|103\/311|[from] recoil|[of] p2a: Porygon-Z
+|faint|p2a: Porygon-Z
+|
+|callback|decision
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|-damage|p2a: Registeel|342\/364|[from] Stealth Rock
+|turn|21
+|callback|decision
+|
+|switch|p1a: Swampert|Swampert, M|256\/403
+|move|p2a: Registeel|Curse|p2a: Registeel
+|-boost|p2a: Registeel|atk|1
+|-boost|p2a: Registeel|def|1
+|-unboost|p2a: Registeel|spe|1
+|
+|-heal|p1a: Swampert|281\/403|[from] item: Leftovers
+|-heal|p2a: Registeel|364\/364|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p1a: Swampert|Scald|p2a: Registeel
+|-damage|p2a: Registeel|300\/364
+|move|p2a: Registeel|Iron Head|p1a: Swampert
+|-resisted|p1a: Swampert
+|-damage|p1a: Swampert|212\/403
+|
+|-heal|p1a: Swampert|237\/403|[from] item: Leftovers
+|-heal|p2a: Registeel|322\/364|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p1a: Swampert|Scald|p2a: Registeel
+|-damage|p2a: Registeel|267\/364
+|move|p2a: Registeel|Curse|p2a: Registeel
+|-boost|p2a: Registeel|atk|1
+|-boost|p2a: Registeel|def|1
+|-unboost|p2a: Registeel|spe|1
+|
+|-heal|p1a: Swampert|262\/403|[from] item: Leftovers
+|-heal|p2a: Registeel|289\/364|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p1a: Swampert|Scald|p2a: Registeel
+|-damage|p2a: Registeel|226\/364
+|move|p2a: Registeel|Iron Head|p1a: Swampert
+|-resisted|p1a: Swampert
+|-damage|p1a: Swampert|158\/403
+|
+|-heal|p1a: Swampert|183\/403|[from] item: Leftovers
+|-heal|p2a: Registeel|248\/364|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p1a: Swampert|Scald|p2a: Registeel
+|-damage|p2a: Registeel|188\/364
+|move|p2a: Registeel|Iron Head|p1a: Swampert
+|-resisted|p1a: Swampert
+|-damage|p1a: Swampert|90\/403
+|
+|-heal|p1a: Swampert|115\/403|[from] item: Leftovers
+|-heal|p2a: Registeel|210\/364|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|move|p1a: Swampert|Scald|p2a: Registeel
+|-damage|p2a: Registeel|117\/364
+|move|p2a: Registeel|Iron Head|p1a: Swampert
+|-resisted|p1a: Swampert
+|-damage|p1a: Swampert|9\/403
+|
+|-heal|p1a: Swampert|34\/403|[from] item: Leftovers
+|-heal|p2a: Registeel|139\/364|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|move|p1a: Swampert|Scald|p2a: Registeel
+|-damage|p2a: Registeel|58\/364
+|move|p2a: Registeel|Rest|p2a: Registeel
+|-status|p2a: Registeel|slp
+|-heal|p2a: Registeel|364\/364 slp|[silent]
+|-status|p2a: Registeel|slp|[from] move: Rest
+|
+|-heal|p1a: Swampert|59\/403|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|cant|p2a: Registeel|slp
+|move|p2a: Registeel|Sleep Talk|p2a: Registeel
+|move|p2a: Registeel|Iron Head|p1a: Swampert|[from]Sleep Talk
+|-resisted|p1a: Swampert
+|-damage|p1a: Swampert|0 fnt
+|faint|p1a: Swampert
+|
+|callback|decision
+|
+|switch|p1a: Hitmontop|Hitmontop, M|293\/304 par
+|-ability|p1a: Hitmontop|Intimidate|[of] p2a: Registeel
+|-fail|p2a: Registeel|unboost|[from] ability: Clear Body|[of] p2a: Registeel
+|turn|29
+|callback|decision
+|
+|cant|p2a: Registeel|slp
+|move|p2a: Registeel|Sleep Talk|p2a: Registeel
+|move|p2a: Registeel|Curse|p2a: Registeel|[from]Sleep Talk
+|-boost|p2a: Registeel|atk|1
+|-boost|p2a: Registeel|def|1
+|-unboost|p2a: Registeel|spe|1
+|move|p1a: Hitmontop|Close Combat|p2a: Registeel
+|-supereffective|p2a: Registeel
+|-damage|p2a: Registeel|290\/364 slp
+|-unboost|p1a: Hitmontop|def|1
+|-unboost|p1a: Hitmontop|spd|1
+|
+|-heal|p2a: Registeel|312\/364 slp|[from] item: Leftovers
+|-heal|p1a: Hitmontop|304\/304 par|[from] item: Leftovers
+|turn|30
+|callback|decision
+|-message|Xiba forfeited.
+|
+|win|Tost
+|raw|Ladder updating...
+|leave|Xiba
+|player|p1

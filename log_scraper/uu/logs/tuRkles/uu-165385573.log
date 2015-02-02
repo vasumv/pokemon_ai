@@ -1,0 +1,167 @@
+|join|tuRkles
+|join|Jr Engima
+|player|p1|tuRkles|115
+|player|p2|Jr Engima|12
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Aerodactyl, F
+|poke|p1|Ampharos, F
+|poke|p1|Suicune
+|poke|p1|Hydreigon, F
+|poke|p1|Darmanitan, M
+|poke|p1|Lucario, F
+|poke|p2|Donphan, M
+|poke|p2|Milotic, F
+|poke|p2|Mienshao, F
+|poke|p2|Rotom-Heat
+|poke|p2|Heliolisk, F
+|poke|p2|Porygon-Z
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Aerodactyl|Aerodactyl, F|301\/301
+|switch|p2a: Mienshao|Mienshao, F|271\/271
+|-ability|p1a: Aerodactyl|Pressure
+|turn|1
+|
+|move|p2a: Mienshao|Fake Out|p1a: Aerodactyl
+|-crit|p1a: Aerodactyl
+|-resisted|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|241\/301
+|-damage|p2a: Mienshao|244\/271|[from] item: Life Orb
+|cant|p1a: Aerodactyl|flinch
+|
+|turn|2
+|
+|switch|p2a: Donphan|Donphan, M|384\/384
+|move|p1a: Aerodactyl|Stealth Rock|p2a: Donphan
+|-sidestart|p2: Jr Engima|move: Stealth Rock
+|
+|turn|3
+|
+|move|p1a: Aerodactyl|Taunt|p2a: Donphan
+|-start|p2a: Donphan|move: Taunt
+|move|p2a: Donphan|Rapid Spin|p1a: Aerodactyl
+|-resisted|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|223\/301
+|-sideend|p2: Jr Engima|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Donphan
+|
+|turn|4
+|
+|move|p2a: Donphan|Ice Shard|p1a: Aerodactyl
+|-supereffective|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|69\/301
+|move|p1a: Aerodactyl|Stealth Rock|p2a: Donphan
+|-sidestart|p2: Jr Engima|move: Stealth Rock
+|
+|turn|5
+|
+|switch|p1a: Ampharos|Ampharos, F|369\/369
+|move|p2a: Donphan|Rapid Spin|p1a: Ampharos
+|-damage|p1a: Ampharos|339\/369
+|-sideend|p2: Jr Engima|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Donphan
+|
+|-end|p2a: Donphan|move: Taunt
+|turn|6
+|
+|detailschange|p1a: Ampharos|Ampharos-Mega, F
+|message|Ampharos has Mega Evolved into Mega Ampharos!
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p1a: Ampharos|Dragon Pulse|p2a: Donphan
+|-damage|p2a: Donphan|108\/384
+|move|p2a: Donphan|Earthquake|p1a: Ampharos
+|-supereffective|p1a: Ampharos
+|-damage|p1a: Ampharos|0 fnt
+|faint|p1a: Ampharos
+|
+|-heal|p2a: Donphan|132\/384|[from] item: Leftovers
+|
+|switch|p1a: Darmanitan|Darmanitan, M|372\/372
+|turn|7
+|
+|switch|p2a: Milotic|Milotic, F|394\/394
+|move|p1a: Darmanitan|Flare Blitz|p2a: Milotic
+|-resisted|p2a: Milotic
+|-damage|p2a: Milotic|245\/394
+|-damage|p1a: Darmanitan|323\/372|[from] recoil|[of] p2a: Milotic
+|
+|-heal|p2a: Milotic|269\/394|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: Darmanitan|Flare Blitz|p2a: Milotic
+|-resisted|p2a: Milotic
+|-damage|p2a: Milotic|134\/394
+|-damage|p1a: Darmanitan|278\/372|[from] recoil|[of] p2a: Milotic
+|move|p2a: Milotic|Scald|p1a: Darmanitan
+|-supereffective|p1a: Darmanitan
+|-damage|p1a: Darmanitan|14\/372
+|
+|-heal|p2a: Milotic|158\/394|[from] item: Leftovers
+|turn|9
+|
+|move|p1a: Darmanitan|Flare Blitz|p2a: Milotic
+|-resisted|p2a: Milotic
+|-damage|p2a: Milotic|16\/394
+|-damage|p1a: Darmanitan|0 fnt|[from] recoil|[of] p2a: Milotic
+|faint|p1a: Darmanitan
+|move|p2a: Milotic|Rest|p2a: Milotic
+|-status|p2a: Milotic|slp
+|-heal|p2a: Milotic|394\/394 slp|[silent]
+|-status|p2a: Milotic|slp|[from] move: Rest
+|
+|
+|switch|p1a: Lucario|Lucario, F|281\/281
+|turn|10
+|
+|move|p1a: Lucario|Swords Dance|p1a: Lucario
+|-boost|p1a: Lucario|atk|2
+|cant|p2a: Milotic|slp
+|move|p2a: Milotic|Sleep Talk|p2a: Milotic
+|move|p2a: Milotic|Rest|p2a: Milotic|[from]Sleep Talk
+|-fail|p2a: Milotic
+|
+|turn|11
+|
+|move|p1a: Lucario|Swords Dance|p1a: Lucario
+|-boost|p1a: Lucario|atk|2
+|cant|p2a: Milotic|slp
+|move|p2a: Milotic|Sleep Talk|p2a: Milotic
+|move|p2a: Milotic|Scald|p1a: Lucario|[from]Sleep Talk
+|-damage|p1a: Lucario|148\/281
+|-status|p1a: Lucario|brn
+|
+|-damage|p1a: Lucario|113\/281 brn|[from] brn
+|turn|12
+|
+|move|p1a: Lucario|Close Combat|p2a: Milotic
+|-damage|p2a: Milotic|164\/394 slp
+|-unboost|p1a: Lucario|def|1
+|-unboost|p1a: Lucario|spd|1
+|-damage|p1a: Lucario|85\/281 brn|[from] item: Life Orb
+|-curestatus|p2a: Milotic|slp
+|move|p2a: Milotic|Scald|p1a: Lucario
+|-crit|p1a: Lucario
+|-damage|p1a: Lucario|0 fnt
+|faint|p1a: Lucario
+|
+|-heal|p2a: Milotic|188\/394|[from] item: Leftovers
+|-message|tuRkles forfeited.
+|
+|win|Jr Engima
+|raw|Ladder updating...
+|leave|tuRkles
+|player|p1
+|raw|tuRkles's rating: 1471 &rarr; <strong>1447<\/strong><br \/>(-24 for losing)
+|raw|Jr Engima's rating: 1391 &rarr; <strong>1416<\/strong><br \/>(+25 for winning)

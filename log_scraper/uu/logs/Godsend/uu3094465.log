@@ -1,0 +1,464 @@
+|join|Godsend
+|join|TrollFreak
+|player|p1|Godsend|101
+|player|p2|TrollFreak|102
+|tier|UU
+|rule|Sleep Clause
+|rule|Species Clause
+|rule|OHKO Clause
+|rule|Moody Clause
+|clearpoke
+|poke|p1|Meloetta
+|poke|p1|Raikou
+|poke|p1|Heracross, M
+|poke|p1|Crobat, M
+|poke|p1|Suicune
+|poke|p1|Nidoking, M
+|poke|p2|Virizion, shiny
+|poke|p2|Arcanine, M
+|poke|p2|Ditto
+|poke|p2|Krookodile, M
+|poke|p2|Empoleon, F
+|poke|p2|Zapdos
+|rule|Evasion Clause
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1: Crobat|Crobat, M| (100\/100)
+|switch|p2: Zapdos|Zapdos| (100\/100)
+|-ability|p2: Zapdos|Pressure
+|turn|1
+|callback|decision
+|
+|move|p1: Crobat|U-turn|p2: Zapdos
+|-resisted|p2: Zapdos
+|-damage|p2: Zapdos|11 (89\/100)
+|callback|decision
+|chat|Godsend|Zapdos is really good
+|
+|switch|p1: Raikou|Raikou| (100\/100)
+|-ability|p1: Raikou|Pressure
+|move|p2: Zapdos|Thunderbolt|p1: Raikou
+|-resisted|p1: Raikou
+|-damage|p1: Raikou|29 (71\/100)
+|-damage|p2: Zapdos|10 (79\/100)|[from] item: Life Orb
+|
+|-heal|p1: Raikou|6 (78\/100)|[from] item: Leftovers
+|turn|2
+|callback|decision
+|join|AcroNadus
+|
+|move|p1: Raikou|Hidden Power|p2: Zapdos
+|-supereffective|p2: Zapdos
+|-damage|p2: Zapdos|44 (35\/100)
+|move|p2: Zapdos|Heat Wave|p1: Raikou
+|-damage|p1: Raikou|45 (33\/100)
+|-damage|p2: Zapdos|10 (25\/100)|[from] item: Life Orb
+|
+|-heal|p1: Raikou|6 (39\/100)|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p2: Arcanine|Arcanine, M| (100\/100)
+|-ability|p2: Arcanine|Intimidate|[of] p1: Raikou
+|-unboost|p1: Raikou|atk|1
+|move|p1: Raikou|Thunderbolt|p2: Arcanine
+|-damage|p2: Arcanine|39 (61\/100)
+|-status|p2: Arcanine|par
+|
+|-heal|p2: Arcanine|6 (67\/100 par)|[from] item: Leftovers
+|-heal|p1: Raikou|6 (45\/100)|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1: Suicune|Suicune| (100\/100)
+|-ability|p1: Suicune|Pressure
+|move|p2: Arcanine|Flare Blitz|p1: Suicune
+|-resisted|p1: Suicune
+|-damage|p1: Suicune|15 (85\/100)
+|-damage|p2: Arcanine|5 (61\/100 par)|[from] recoil|[of] p1: Suicune
+|
+|-heal|p2: Arcanine|6 (67\/100 par)|[from] item: Leftovers
+|-heal|p1: Suicune|6 (91\/100)|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p2: Empoleon|Empoleon, F| (100\/100)
+|move|p1: Suicune|Hydro Pump|p2: Empoleon
+|-resisted|p2: Empoleon
+|-damage|p2: Empoleon|15 (85\/100)
+|
+|-heal|p2: Empoleon|6 (91\/100)|[from] item: Leftovers
+|-heal|p1: Suicune|6 (97\/100)|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p1: Heracross|Heracross, M| (100\/100)
+|move|p2: Empoleon|Stealth Rock|p1: Heracross
+|-sidestart|p1: Godsend|move: Stealth Rock
+|
+|-heal|p2: Empoleon|6 (97\/100)|[from] item: Leftovers
+|turn|7
+|callback|decision
+|chat|AcroNadus|Godsend
+|chat|Godsend|Yes
+|chat|AcroNadus|is this a modified version of 1 million watts?
+|chat|Godsend|?
+|chat|AcroNadus|out of curiosity
+|chat|Godsend|I have no idea what that is
+|
+|switch|p2: Arcanine|Arcanine, M| (67\/100 par)
+|-ability|p2: Arcanine|Intimidate|[of] p1: Heracross
+|-unboost|p1: Heracross|atk|1
+|move|p1: Heracross|Close Combat|p2: Arcanine
+|-damage|p2: Arcanine|46 (22\/100 par)
+|-unboost|p1: Heracross|def|1
+|-unboost|p1: Heracross|spd|1
+|
+|-heal|p2: Arcanine|6 (28\/100 par)|[from] item: Leftovers
+|turn|8
+|callback|decision
+|chat|AcroNadus|your RMT from like February .-.
+|chat|Godsend|I never had one called 1 million watts
+|chat|Godsend|lol
+|
+|cant|p2: Arcanine|par
+|move|p1: Heracross|Close Combat|p2: Arcanine
+|-damage|p2: Arcanine|28 (0\/100 fnt)
+|-unboost|p1: Heracross|def|1
+|-unboost|p1: Heracross|spd|1
+|faint|p2: Arcanine
+|
+|callback|decision
+|
+|switch|p2: Krookodile|Krookodile, M| (100\/100)
+|turn|9
+|callback|decision
+|
+|switch|p1: Suicune|Suicune| (97\/100)
+|-damage|p1: Suicune|12 (85\/100)|[from] Stealth Rock
+|-ability|p1: Suicune|Pressure
+|move|p2: Krookodile|Aerial Ace|p1: Suicune
+|-damage|p1: Suicune|13 (72\/100)
+|
+|-heal|p1: Suicune|6 (78\/100)|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p2: Virizion|Virizion, shiny| (100\/100)
+|move|p1: Suicune|Calm Mind|p1: Suicune
+|-boost|p1: Suicune|spa|1
+|-boost|p1: Suicune|spd|1
+|
+|-heal|p1: Suicune|6 (84\/100)|[from] item: Leftovers
+|turn|11
+|callback|decision
+|chat|AcroNadus|ah, thats right, different team
+|chat|AcroNadus|but they look and play a lot the same
+|
+|move|p2: Virizion|Hidden Power|p1: Suicune
+|-damage|p1: Suicune|11 (73\/100)
+|move|p1: Suicune|Ice Beam|p2: Virizion
+|-supereffective|p2: Virizion
+|-damage|p2: Virizion|63 (37\/100)
+|
+|-heal|p1: Suicune|6 (79\/100)|[from] item: Leftovers
+|-heal|p2: Virizion|6 (43\/100)|[from] item: Leftovers
+|turn|12
+|callback|decision
+|chat|Godsend|Thank you?
+|chat|Godsend|lol
+|
+|switch|p1: Crobat|Crobat, M| (100\/100)
+|-damage|p1: Crobat|25 (75\/100)|[from] Stealth Rock
+|move|p2: Virizion|Giga Drain|p1: Crobat
+|-resisted|p1: Crobat
+|-damage|p1: Crobat|8 (67\/100)
+|-heal|p2: Virizion|5 (48\/100)|[from] drain|[of] p1: Crobat
+|
+|-heal|p1: Crobat|6 (73\/100)|[from] item: Leftovers
+|-heal|p2: Virizion|6 (54\/100)|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p2: Empoleon|Empoleon, F| (97\/100)
+|move|p1: Crobat|Brave Bird|p2: Empoleon
+|-resisted|p2: Empoleon
+|-damage|p2: Empoleon|24 (73\/100)
+|-damage|p1: Crobat|8 (65\/100)|[from] recoil|[of] p2: Empoleon
+|
+|-heal|p2: Empoleon|6 (79\/100)|[from] item: Leftovers
+|-heal|p1: Crobat|6 (71\/100)|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1: Crobat|U-turn|p2: Empoleon
+|-resisted|p2: Empoleon
+|-damage|p2: Empoleon|10 (69\/100)
+|callback|decision
+|
+|switch|p1: Meloetta|Meloetta| (100\/100)
+|-damage|p1: Meloetta|12 (88\/100)|[from] Stealth Rock
+|move|p2: Empoleon|Scald|p1: Meloetta
+|-damage|p1: Meloetta|22 (66\/100)
+|-status|p1: Meloetta|brn
+|
+|-heal|p1: Meloetta|6 (72\/100 brn)|[from] item: Leftovers
+|-heal|p2: Empoleon|6 (75\/100)|[from] item: Leftovers
+|-damage|p1: Meloetta|12 (60\/100 brn)|[from] brn
+|turn|15
+|callback|decision
+|chat|Godsend|That was a bad play
+|chat|Godsend|lol
+|
+|switch|p1: Heracross|Heracross, M| (100\/100)
+|-damage|p1: Heracross|12 (88\/100)|[from] Stealth Rock
+|move|p2: Empoleon|Roar|p1: Heracross
+|drag|p1: Raikou|Raikou| (45\/100)
+|-damage|p1: Raikou|13 (33\/100)|[from] Stealth Rock
+|-ability|p1: Raikou|Pressure
+|
+|-heal|p1: Raikou|6 (39\/100)|[from] item: Leftovers
+|-heal|p2: Empoleon|6 (81\/100)|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|switch|p2: Ditto|Ditto| (100\/100)
+|-transform|p2: Ditto|p1: Raikou
+|move|p1: Raikou|Substitute|p1: Raikou
+|-start|p1: Raikou|Substitute
+|-damage|p1: Raikou|25 (14\/100)
+|
+|-heal|p1: Raikou|6 (20\/100)|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p2: Ditto|Hidden Power|p1: Raikou
+|-supereffective|p1: Raikou
+|-end|p1: Raikou|Substitute
+|move|p1: Raikou|Calm Mind|p1: Raikou
+|-boost|p1: Raikou|spa|1
+|-boost|p1: Raikou|spd|1
+|
+|-heal|p1: Raikou|6 (27\/100)|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p2: Ditto|Hidden Power|p1: Raikou
+|-crit|p1: Raikou
+|-supereffective|p1: Raikou
+|-damage|p1: Raikou|27 (0\/100 fnt)
+|faint|p1: Raikou
+|
+|callback|decision
+|
+|switch|p1: Heracross|Heracross, M| (88\/100)
+|-damage|p1: Heracross|12 (75\/100)|[from] Stealth Rock
+|turn|19
+|callback|decision
+|chat|TrollFreak|srry
+|chat|Godsend|np
+|chat|TrollFreak|idk if it mattered, but srry if it did
+|chat|Godsend|Didn't really matter
+|chat|Godsend|And I para'd Arc
+|chat|Godsend|Which did end up mattering
+|chat|TrollFreak|hmmmmmm
+|
+|switch|p2: Virizion|Virizion, shiny| (54\/100)
+|move|p1: Heracross|Close Combat|p2: Virizion
+|-damage|p2: Virizion|54 (0\/100 fnt)
+|-unboost|p1: Heracross|def|1
+|-unboost|p1: Heracross|spd|1
+|faint|p2: Virizion
+|
+|callback|decision
+|
+|switch|p2: Zapdos|Zapdos| (25\/100)
+|-ability|p2: Zapdos|Pressure
+|turn|20
+|callback|decision
+|
+|switch|p1: Nidoking|Nidoking, M| (100\/100)
+|-damage|p1: Nidoking|6 (94\/100)|[from] Stealth Rock
+|move|p2: Zapdos|Roost|p2: Zapdos
+|-heal|p2: Zapdos|50 (75\/100)
+|
+|turn|21
+|callback|decision
+|chat|Godsend|Melotta isn't that great
+|
+|switch|p2: Ditto|Ditto| (100\/100)
+|-transform|p2: Ditto|p1: Nidoking
+|move|p1: Nidoking|Sludge Wave|p2: Ditto
+|-resisted|p2: Ditto
+|-damage|p2: Ditto|18 (82\/100)
+|
+|turn|22
+|callback|decision
+|chat|Godsend|Sometimes it's good, others it is mega balls
+|chat|TrollFreak|lol
+|chat|AcroNadus|lmao
+|chat|Godsend|Hm?
+|
+|switch|p1: Crobat|Crobat, M| (71\/100)
+|-damage|p1: Crobat|25 (46\/100)|[from] Stealth Rock
+|move|p2: Ditto|Thunderbolt|p1: Crobat
+|-supereffective|p1: Crobat
+|-damage|p1: Crobat|46 (0\/100 fnt)
+|faint|p1: Crobat
+|
+|callback|decision
+|
+|switch|p1: Meloetta|Meloetta| (60\/100 brn)
+|-damage|p1: Meloetta|12 (47\/100 brn)|[from] Stealth Rock
+|turn|23
+|callback|decision
+|
+|move|p2: Ditto|Thunderbolt|p1: Meloetta
+|-damage|p1: Meloetta|22 (25\/100 brn)
+|move|p1: Meloetta|Hyper Voice|p2: Ditto
+|-damage|p2: Ditto|60 (22\/100)
+|
+|-heal|p1: Meloetta|6 (32\/100 brn)|[from] item: Leftovers
+|-damage|p1: Meloetta|12 (19\/100 brn)|[from] brn
+|turn|24
+|callback|decision
+|
+|move|p2: Ditto|Thunderbolt|p1: Meloetta
+|-damage|p1: Meloetta|19 (0\/100 fnt)
+|faint|p1: Meloetta
+|
+|callback|decision
+|chat|Godsend|omg
+|chat|Godsend|I'm so dumb
+|
+|switch|p1: Nidoking|Nidoking, M| (94\/100)
+|-damage|p1: Nidoking|6 (88\/100)|[from] Stealth Rock
+|turn|25
+|callback|decision
+|
+|switch|p2: Empoleon|Empoleon, F| (81\/100)
+|move|p1: Nidoking|Fire Blast|p2: Empoleon
+|-damage|p2: Empoleon|25 (56\/100)
+|
+|-heal|p2: Empoleon|6 (62\/100)|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|switch|p1: Suicune|Suicune| (79\/100)
+|-damage|p1: Suicune|12 (67\/100)|[from] Stealth Rock
+|-ability|p1: Suicune|Pressure
+|move|p2: Empoleon|Scald|p1: Suicune
+|-resisted|p1: Suicune
+|-damage|p1: Suicune|13 (54\/100)
+|-status|p1: Suicune|brn
+|
+|-heal|p1: Suicune|6 (60\/100 brn)|[from] item: Leftovers
+|-heal|p2: Empoleon|6 (69\/100)|[from] item: Leftovers
+|-damage|p1: Suicune|12 (48\/100 brn)|[from] brn
+|turn|27
+|callback|decision
+|chat|TrollFreak|srry
+|chat|Godsend|np
+|chat|Godsend|That's what Scald is for
+|chat|Godsend|lol
+|
+|move|p1: Suicune|Hydro Pump|p2: Empoleon
+|-resisted|p2: Empoleon
+|-damage|p2: Empoleon|15 (53\/100)
+|move|p2: Empoleon|Roar|p1: Suicune
+|drag|p1: Nidoking|Nidoking, M| (88\/100)
+|-damage|p1: Nidoking|6 (81\/100)|[from] Stealth Rock
+|
+|-heal|p2: Empoleon|6 (60\/100)|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|switch|p2: Zapdos|Zapdos| (75\/100)
+|-ability|p2: Zapdos|Pressure
+|move|p1: Nidoking|Earth Power|p2: Zapdos
+|-immune|p2: Zapdos|[msg]
+|
+|turn|29
+|callback|decision
+|chat|Godsend|gg
+|chat|TrollFreak|gg
+|
+|switch|p1: Suicune|Suicune| (48\/100 brn)
+|-damage|p1: Suicune|12 (36\/100 brn)|[from] Stealth Rock
+|-ability|p1: Suicune|Pressure
+|move|p2: Zapdos|Thunderbolt|p1: Suicune
+|-supereffective|p1: Suicune
+|-damage|p1: Suicune|36 (0\/100 fnt)
+|-damage|p2: Zapdos|10 (65\/100)|[from] item: Life Orb
+|faint|p1: Suicune
+|
+|callback|decision
+|
+|switch|p1: Nidoking|Nidoking, M| (81\/100)
+|-damage|p1: Nidoking|6 (75\/100)|[from] Stealth Rock
+|turn|30
+|callback|decision
+|
+|switch|p2: Empoleon|Empoleon, F| (60\/100)
+|move|p1: Nidoking|Fire Blast|p2: Empoleon
+|-damage|p2: Empoleon|27 (33\/100)
+|
+|-heal|p2: Empoleon|6 (39\/100)|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|switch|p1: Heracross|Heracross, M| (75\/100)
+|-damage|p1: Heracross|12 (63\/100)|[from] Stealth Rock
+|move|p2: Empoleon|Scald|p1: Heracross
+|-damage|p1: Heracross|33 (30\/100)
+|-status|p1: Heracross|brn
+|
+|-heal|p2: Empoleon|6 (45\/100)|[from] item: Leftovers
+|-damage|p1: Heracross|12 (18\/100 brn)|[from] brn
+|turn|32
+|callback|decision
+|chat|TrollFreak|wow
+|chat|TrollFreak|3\/3
+|chat|Godsend|lol
+|chat|TrollFreak|w\/ the scalds
+|
+|move|p1: Heracross|Close Combat|p2: Empoleon
+|-supereffective|p2: Empoleon
+|-damage|p2: Empoleon|45 (0\/100 fnt)
+|-unboost|p1: Heracross|def|1
+|-unboost|p1: Heracross|spd|1
+|faint|p2: Empoleon
+|
+|-damage|p1: Heracross|12 (5\/100 brn)|[from] brn
+|callback|decision
+|
+|switch|p2: Krookodile|Krookodile, M| (100\/100)
+|turn|33
+|callback|decision
+|chat|Godsend|I wish I had Ice Beam
+|
+|move|p2: Krookodile|Earthquake|p1: Heracross
+|-resisted|p1: Heracross
+|-damage|p1: Heracross|5 (0\/100 fnt)
+|faint|p1: Heracross
+|-boost|p2: Krookodile|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|switch|p1: Nidoking|Nidoking, M| (75\/100)
+|-damage|p1: Nidoking|6 (69\/100)|[from] Stealth Rock
+|turn|34
+|callback|decision
+|
+|move|p2: Krookodile|Earthquake|p1: Nidoking
+|-supereffective|p1: Nidoking
+|-damage|p1: Nidoking|69 (0\/100 fnt)
+|faint|p1: Nidoking
+|-boost|p2: Krookodile|atk|1|[from] ability: Moxie
+|
+|win|TrollFreak
+|chat|Godsend|gg
+|chat|TrollFreak|gg
+|chat|AcroNadus|Godsend

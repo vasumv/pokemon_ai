@@ -1,0 +1,168 @@
+|join|Neo-Rey
+|join|Doouchebag
+|player|p1|Neo-Rey|99
+|player|p2|Doouchebag|266
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Suicune, shiny
+|poke|p1|Goodra, F, shiny
+|poke|p1|Scrafty, F
+|poke|p1|Slurpuff, F
+|poke|p1|Aggron, F
+|poke|p1|Trevenant, M
+|poke|p2|Haxorus, M
+|poke|p2|Forretress, M
+|poke|p2|Florges, F
+|poke|p2|Jirachi
+|poke|p2|Swampert, M
+|poke|p2|Starmie
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Trevenant|Trevenant, M|374\/374
+|switch|p2a: Starmie|Starmie|261\/261
+|turn|1
+|
+|switch|p2a: Jirachi|Jirachi|404\/404
+|move|p1a: Trevenant|Leech Seed|p2a: Jirachi
+|-start|p2a: Jirachi|move: Leech Seed
+|
+|-damage|p2a: Jirachi|354\/404|[from] Leech Seed|[of] p1a: Trevenant
+|turn|2
+|
+|move|p2a: Jirachi|Toxic|p1a: Trevenant
+|-status|p1a: Trevenant|tox
+|-enditem|p1a: Trevenant|Lum Berry|[eat]
+|-curestatus|p1a: Trevenant|tox
+|move|p1a: Trevenant|Will-O-Wisp|p2a: Jirachi
+|-status|p2a: Jirachi|brn
+|
+|-heal|p2a: Jirachi|379\/404 brn|[from] item: Leftovers
+|-damage|p2a: Jirachi|329\/404 brn|[from] Leech Seed|[of] p1a: Trevenant
+|-damage|p2a: Jirachi|279\/404 brn|[from] brn
+|-item|p1a: Trevenant|Lum Berry|[from] ability: Harvest
+|turn|3
+|
+|switch|p2a: Florges|Florges, F|360\/360
+|move|p1a: Trevenant|Horn Leech|p2a: Florges
+|-damage|p2a: Florges|264\/360
+|
+|-heal|p2a: Florges|286\/360|[from] item: Leftovers
+|turn|4
+|
+|move|p2a: Florges|Moonblast|p1a: Trevenant
+|-crit|p1a: Trevenant
+|-damage|p1a: Trevenant|214\/374
+|move|p1a: Trevenant|Horn Leech|p2a: Florges
+|-damage|p2a: Florges|193\/360
+|-heal|p1a: Trevenant|261\/374|[from] drain|[of] p2a: Florges
+|
+|-heal|p2a: Florges|215\/360|[from] item: Leftovers
+|turn|5
+|
+|move|p2a: Florges|Moonblast|p1a: Trevenant
+|-damage|p1a: Trevenant|156\/374
+|move|p1a: Trevenant|Leech Seed|p2a: Florges
+|-start|p2a: Florges|move: Leech Seed
+|
+|-heal|p2a: Florges|237\/360|[from] item: Leftovers
+|-damage|p2a: Florges|192\/360|[from] Leech Seed|[of] p1a: Trevenant
+|-heal|p1a: Trevenant|201\/374|[silent]
+|turn|6
+|
+|switch|p2a: Starmie|Starmie|261\/261
+|move|p1a: Trevenant|Will-O-Wisp|p2a: Starmie
+|-status|p2a: Starmie|brn
+|
+|-damage|p2a: Starmie|229\/261 brn|[from] brn
+|turn|7
+|
+|move|p2a: Starmie|Psyshock|p1a: Trevenant
+|-damage|p1a: Trevenant|6\/374
+|-damage|p2a: Starmie|203\/261 brn|[from] item: Life Orb
+|move|p1a: Trevenant|Horn Leech|p2a: Starmie
+|-supereffective|p2a: Starmie
+|-damage|p2a: Starmie|0 fnt
+|-heal|p1a: Trevenant|108\/374|[from] drain|[of] p2a: Starmie
+|faint|p2a: Starmie
+|
+|
+|switch|p2a: Haxorus|Haxorus, M|324\/324
+|-ability|p2a: Haxorus|Mold Breaker
+|turn|8
+|
+|move|p2a: Haxorus|Dragon Dance|p2a: Haxorus
+|-boost|p2a: Haxorus|atk|1
+|-boost|p2a: Haxorus|spe|1
+|move|p1a: Trevenant|Will-O-Wisp|p2a: Haxorus
+|-status|p2a: Haxorus|brn
+|-enditem|p2a: Haxorus|Lum Berry|[eat]
+|-curestatus|p2a: Haxorus|brn
+|
+|turn|9
+|
+|move|p2a: Haxorus|Dual Chop|p1a: Trevenant
+|-damage|p1a: Trevenant|0 fnt
+|-hitcount|p1a: Trevenant|1
+|faint|p1a: Trevenant
+|
+|
+|switch|p1a: Suicune|Suicune, shiny|404\/404
+|-ability|p1a: Suicune|Pressure
+|turn|10
+|
+|move|p2a: Haxorus|Dragon Dance|p2a: Haxorus
+|-boost|p2a: Haxorus|atk|1
+|-boost|p2a: Haxorus|spe|1
+|move|p1a: Suicune|Scald|p2a: Haxorus
+|-resisted|p2a: Haxorus
+|-damage|p2a: Haxorus|262\/324
+|
+|turn|11
+|
+|move|p2a: Haxorus|Dual Chop|p1a: Suicune
+|-damage|p1a: Suicune|301\/404
+|-damage|p1a: Suicune|187\/404
+|-hitcount|p1a: Suicune|2
+|move|p1a: Suicune|Scald|p2a: Haxorus
+|-resisted|p2a: Haxorus
+|-damage|p2a: Haxorus|208\/324
+|
+|-heal|p1a: Suicune|212\/404|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Haxorus|Dual Chop|p1a: Suicune
+|-damage|p1a: Suicune|106\/404
+|-damage|p1a: Suicune|0 fnt
+|-hitcount|p1a: Suicune|2
+|faint|p1a: Suicune
+|
+|
+|switch|p1a: Aggron|Aggron, F|344\/344
+|turn|13
+|
+|move|p2a: Haxorus|Earthquake|p1a: Aggron
+|-supereffective|p1a: Aggron
+|-damage|p1a: Aggron|0 fnt
+|faint|p1a: Aggron
+|
+|-message|Neo-Rey forfeited.
+|leave|Neo-Rey
+|
+|win|Doouchebag
+|raw|Ladder updating...
+|player|p1
+|raw|Neo-Rey's rating: 1323 &rarr; <strong>1307<\/strong><br \/>(-16 for losing)
+|raw|Doouchebag's rating: 1401 &rarr; <strong>1416<\/strong><br \/>(+15 for winning)

@@ -1,0 +1,372 @@
+|join|Insaiyan
+|join|bange
+|player|p1|Insaiyan|162
+|player|p2|bange|142
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Abomasnow, M
+|poke|p1|Gliscor, M
+|poke|p1|Heatran, M
+|poke|p1|Alakazam, M
+|poke|p1|Scizor, M
+|poke|p1|Celebi
+|poke|p2|Hitmonchan, M
+|poke|p2|Kingdra, M
+|poke|p2|Porygon2
+|poke|p2|Uxie
+|poke|p2|Forretress, F, shiny
+|poke|p2|Rotom-Heat
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Abomasnow|Abomasnow, M|321\/321
+|switch|p2a: Uxie|Uxie|354\/354
+|-weather|Hail|[from] ability: Snow Warning|[of] p1a: Abomasnow
+|turn|1
+|callback|decision
+|
+|move|p2a: Uxie|Stealth Rock|p1a: Abomasnow
+|-sidestart|p1: Insaiyan|move: Stealth Rock
+|move|p1a: Abomasnow|Wood Hammer|p2a: Uxie
+|-damage|p2a: Uxie|215\/354
+|-damage|p1a: Abomasnow|275\/321|[from] recoil|[of] p2a: Uxie
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Uxie|193\/354|[from] hail
+|-heal|p2a: Uxie|215\/354|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|move|p2a: Uxie|U-turn|p1a: Abomasnow
+|-supereffective|p1a: Abomasnow
+|-damage|p1a: Abomasnow|153\/321
+|callback|decision
+|
+|switch|p2a: Forretress|Forretress, F, shiny|354\/354
+|move|p1a: Abomasnow|Wood Hammer|p2a: Forretress
+|-resisted|p2a: Forretress
+|-damage|p2a: Forretress|329\/354
+|-damage|p1a: Abomasnow|145\/321|[from] recoil|[of] p2a: Forretress
+|-damage|p1a: Abomasnow|92\/321|[from] item: Rocky Helmet|[of] p2a: Forretress
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Forretress|307\/354|[from] hail
+|turn|3
+|callback|decision
+|
+|switch|p2a: Uxie|Uxie|215\/354
+|move|p1a: Abomasnow|Hidden Power|p2a: Uxie
+|-damage|p2a: Uxie|182\/354
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Uxie|160\/354|[from] hail
+|-heal|p2a: Uxie|182\/354|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: Celebi|Celebi|404\/404
+|-damage|p1a: Celebi|354\/404|[from] Stealth Rock
+|move|p2a: Uxie|U-turn|p1a: Celebi
+|-supereffective|p1a: Celebi
+|-damage|p1a: Celebi|190\/404
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|241\/241
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Rotom-Heat|226\/241|[from] hail
+|-damage|p1a: Celebi|165\/404|[from] hail
+|-heal|p1a: Celebi|190\/404|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|386\/386
+|-damage|p1a: Heatran|338\/386|[from] Stealth Rock
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Heatran
+|-damage|p1a: Heatran|254\/386
+|callback|decision
+|
+|switch|p2a: Hitmonchan|Hitmonchan, M|295\/295
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Hitmonchan|277\/295|[from] hail
+|-damage|p1a: Heatran|230\/386|[from] hail
+|-heal|p1a: Heatran|254\/386|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p1a: Gliscor|Gliscor, M|354\/354
+|-damage|p1a: Gliscor|310\/354|[from] Stealth Rock
+|move|p2a: Hitmonchan|Agility|p2a: Hitmonchan
+|-boost|p2a: Hitmonchan|spe|2
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Hitmonchan|259\/295|[from] hail
+|-damage|p1a: Gliscor|288\/354|[from] hail
+|-activate|p1a: Gliscor|item: Toxic Orb
+|-status|p1a: Gliscor|tox
+|turn|7
+|callback|decision
+|
+|move|p1a: Gliscor|Protect|p1a: Gliscor
+|-singleturn|p1a: Gliscor|Protect
+|move|p2a: Hitmonchan|Ice Punch|p1a: Gliscor
+|-activate|p1a: Gliscor|Protect
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Hitmonchan|241\/295|[from] hail
+|-damage|p1a: Gliscor|266\/354 tox|[from] hail
+|-heal|p1a: Gliscor|310\/354 tox|[from] ability: Poison Heal
+|turn|8
+|callback|decision
+|
+|move|p2a: Hitmonchan|Ice Punch|p1a: Gliscor
+|-supereffective|p1a: Gliscor
+|-damage|p1a: Gliscor|0 fnt
+|-damage|p2a: Hitmonchan|212\/295|[from] item: Life Orb
+|faint|p1a: Gliscor
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Hitmonchan|194\/295|[from] hail
+|callback|decision
+|
+|switch|p1a: Alakazam|Alakazam, M|252\/252
+|turn|9
+|callback|decision
+|
+|switch|p2a: Porygon2|Porygon2|374\/374
+|-ability|p2a: Porygon2|Magic Guard|[from] ability: Trace|[of] p1a: Alakazam
+|move|p1a: Alakazam|Psyshock|p2a: Porygon2
+|-damage|p2a: Porygon2|257\/374
+|
+|-weather|Hail|[upkeep]
+|turn|10
+|callback|decision
+|
+|move|p1a: Alakazam|Focus Blast|p2a: Porygon2
+|-supereffective|p2a: Porygon2
+|-damage|p2a: Porygon2|36\/374
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|223\/374
+|
+|-weather|Hail|[upkeep]
+|turn|11
+|callback|decision
+|
+|move|p1a: Alakazam|Focus Blast|p2a: Porygon2
+|-supereffective|p2a: Porygon2
+|-damage|p2a: Porygon2|31\/374
+|move|p2a: Porygon2|Discharge|p1a: Alakazam
+|-damage|p1a: Alakazam|183\/252
+|-status|p1a: Alakazam|par
+|
+|-weather|Hail|[upkeep]
+|turn|12
+|callback|decision
+|
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|218\/374
+|move|p1a: Alakazam|Calm Mind|p1a: Alakazam
+|-boost|p1a: Alakazam|spa|1
+|-boost|p1a: Alakazam|spd|1
+|
+|-weather|Hail|[upkeep]
+|turn|13
+|callback|decision
+|
+|switch|p2a: Uxie|Uxie|182\/354
+|cant|p1a: Alakazam|par
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Uxie|160\/354|[from] hail
+|-heal|p2a: Uxie|182\/354|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p2a: Uxie|Knock Off|p1a: Alakazam
+|-crit|p1a: Alakazam
+|-supereffective|p1a: Alakazam
+|-damage|p1a: Alakazam|91\/252 par
+|-enditem|p1a: Alakazam|Life Orb|[from] move: Knock Off|[of] p2a: Uxie
+|move|p1a: Alakazam|Shadow Ball|p2a: Uxie
+|-supereffective|p2a: Uxie
+|-damage|p2a: Uxie|0 fnt
+|faint|p2a: Uxie
+|
+|-weather|Hail|[upkeep]
+|callback|decision
+|
+|switch|p2a: Hitmonchan|Hitmonchan, M|194\/295
+|turn|15
+|callback|decision
+|
+|move|p2a: Hitmonchan|Drain Punch|p1a: Alakazam
+|-resisted|p1a: Alakazam
+|-damage|p1a: Alakazam|0 fnt
+|-heal|p2a: Hitmonchan|240\/295|[from] drain|[of] p1a: Alakazam
+|-damage|p2a: Hitmonchan|211\/295|[from] item: Life Orb
+|faint|p1a: Alakazam
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Hitmonchan|193\/295|[from] hail
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, M|344\/344
+|-damage|p1a: Scizor|301\/344|[from] Stealth Rock
+|turn|16
+|callback|decision
+|
+|switch|p2a: Forretress|Forretress, F, shiny|307\/354
+|move|p1a: Scizor|Bullet Punch|p2a: Forretress
+|-resisted|p2a: Forretress
+|-damage|p2a: Forretress|256\/354
+|-damage|p1a: Scizor|244\/344|[from] item: Rocky Helmet|[of] p2a: Forretress
+|
+|-weather|Hail|[upkeep]
+|-damage|p1a: Scizor|223\/344|[from] hail
+|-damage|p2a: Forretress|234\/354|[from] hail
+|turn|17
+|callback|decision
+|
+|switch|p1a: Abomasnow|Abomasnow, M|92\/321
+|-damage|p1a: Abomasnow|12\/321|[from] Stealth Rock
+|move|p2a: Forretress|Volt Switch|p1a: Abomasnow
+|-resisted|p1a: Abomasnow
+|-damage|p1a: Abomasnow|0 fnt
+|faint|p1a: Abomasnow
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|226\/241
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Rotom-Heat|211\/241|[from] hail
+|callback|decision
+|
+|switch|p1a: Heatran|Heatran, M|254\/386
+|-damage|p1a: Heatran|206\/386|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|move|p2a: Rotom-Heat|Volt Switch|p1a: Heatran
+|-damage|p1a: Heatran|127\/386
+|callback|decision
+|
+|switch|p2a: Kingdra|Kingdra, M|291\/291
+|move|p1a: Heatran|Stealth Rock|p2a: Kingdra
+|-sidestart|p2: bange|move: Stealth Rock
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Kingdra|273\/291|[from] hail
+|-damage|p1a: Heatran|103\/386|[from] hail
+|-heal|p1a: Heatran|127\/386|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p2a: Kingdra|Dragon Dance|p2a: Kingdra
+|-boost|p2a: Kingdra|atk|1
+|-boost|p2a: Kingdra|spe|1
+|move|p1a: Heatran|Lava Plume|p2a: Kingdra
+|-resisted|p2a: Kingdra
+|-damage|p2a: Kingdra|240\/291
+|-status|p2a: Kingdra|brn
+|-enditem|p2a: Kingdra|Lum Berry|[eat]
+|-curestatus|p2a: Kingdra|brn
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Kingdra|222\/291|[from] hail
+|-damage|p1a: Heatran|103\/386|[from] hail
+|-heal|p1a: Heatran|127\/386|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p2a: Kingdra|Hydro Pump|p1a: Heatran|[miss]
+|-miss|p2a: Kingdra|p1a: Heatran
+|move|p1a: Heatran|Lava Plume|p2a: Kingdra
+|-resisted|p2a: Kingdra
+|-damage|p2a: Kingdra|187\/291
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Kingdra|169\/291|[from] hail
+|-damage|p1a: Heatran|103\/386|[from] hail
+|-heal|p1a: Heatran|127\/386|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p1a: Heatran|Protect|p1a: Heatran
+|-singleturn|p1a: Heatran|Protect
+|move|p2a: Kingdra|Hydro Pump|p1a: Heatran
+|-activate|p1a: Heatran|Protect
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Kingdra|151\/291|[from] hail
+|-damage|p1a: Heatran|103\/386|[from] hail
+|-heal|p1a: Heatran|127\/386|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p2a: Kingdra|Hydro Pump|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Kingdra|133\/291|[from] hail
+|callback|decision
+|
+|switch|p1a: Celebi|Celebi|190\/404
+|-damage|p1a: Celebi|140\/404|[from] Stealth Rock
+|turn|23
+|callback|decision
+|
+|move|p2a: Kingdra|Hidden Power|p1a: Celebi
+|-supereffective|p1a: Celebi
+|-damage|p1a: Celebi|38\/404
+|move|p1a: Celebi|Giga Drain|p2a: Kingdra
+|-damage|p2a: Kingdra|30\/291
+|-heal|p1a: Celebi|90\/404|[from] drain|[of] p2a: Kingdra
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Kingdra|12\/291|[from] hail
+|-damage|p1a: Celebi|65\/404|[from] hail
+|-heal|p1a: Celebi|90\/404|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p2a: Kingdra|Outrage|p1a: Celebi
+|-damage|p1a: Celebi|0 fnt
+|faint|p1a: Celebi
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Kingdra|0 fnt|[from] hail
+|faint|p2a: Kingdra
+|callback|decision
+|
+|switch|p2a: Rotom-Heat|Rotom-Heat|211\/241
+|-damage|p2a: Rotom-Heat|151\/241|[from] Stealth Rock
+|switch|p1a: Scizor|Scizor, M|223\/344
+|-damage|p1a: Scizor|180\/344|[from] Stealth Rock
+|turn|25
+|callback|decision
+|
+|move|p2a: Rotom-Heat|Overheat|p1a: Scizor
+|-supereffective|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|-unboost|p2a: Rotom-Heat|spa|2
+|faint|p1a: Scizor
+|
+|win|bange
+|raw|Ladder updating...
+|raw|Insaiyan's rating: 1699 &rarr; <strong>1696<\/strong><br \/>(-3 for losing)
+|raw|bange's rating: 1837 &rarr; <strong>1846<\/strong><br \/>(+9 for winning)
+|leave|Insaiyan
+|player|p1

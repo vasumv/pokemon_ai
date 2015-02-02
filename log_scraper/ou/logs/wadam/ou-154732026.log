@@ -1,0 +1,475 @@
+|join|Wadam
+|join|sheik main
+|player|p1|Wadam|1
+|player|p2|sheik main|150
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Pinsir, M
+|poke|p1|Skarmory, F
+|poke|p1|Magnezone
+|poke|p1|Thundurus, M
+|poke|p1|Azumarill, M
+|poke|p1|Latias, F
+|poke|p2|Mawile, F, shiny
+|poke|p2|Thundurus, M
+|poke|p2|Chansey, F
+|poke|p2|Gliscor, M
+|poke|p2|Tyranitar, F
+|poke|p2|Alomomola, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Azumarill|Azumarill, M|345\/345
+|switch|p2a: Thundurus|Thundurus, M|299\/299
+|turn|1
+|
+|move|p2a: Thundurus|Volt Switch|p1a: Azumarill
+|-supereffective|p1a: Azumarill
+|-damage|p1a: Azumarill|134\/345
+|-damage|p2a: Thundurus|270\/299|[from] item: Life Orb
+|
+|switch|p2a: Mawile|Mawile, F, shiny|301\/301
+|-ability|p2a: Mawile|Intimidate|[of] p1a: Azumarill
+|-unboost|p1a: Azumarill|atk|1
+|move|p1a: Azumarill|Play Rough|p2a: Mawile
+|-resisted|p2a: Mawile
+|-damage|p2a: Mawile|223\/301
+|
+|turn|2
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354
+|switch|p1a: Skarmory|Skarmory, F|334\/334
+|
+|-status|p2a: Gliscor|tox|[from] item: Toxic Orb
+|turn|3
+|
+|switch|p2a: Tyranitar|Tyranitar, F|404\/404
+|-weather|Sandstorm
+|move|p1a: Skarmory|Stealth Rock|p2a: Tyranitar
+|-sidestart|p2: sheik main|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|turn|4
+|
+|move|p2a: Tyranitar|Flamethrower|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|154\/334
+|move|p1a: Skarmory|Whirlwind|p2a: Tyranitar
+|drag|p2a: Alomomola|Alomomola, M|534\/534
+|-damage|p2a: Alomomola|468\/534|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Alomomola|435\/534|[from] sandstorm
+|-heal|p2a: Alomomola|468\/534|[from] item: Leftovers
+|turn|5
+|
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|321\/334
+|move|p2a: Alomomola|Scald|p1a: Skarmory
+|-crit|p1a: Skarmory
+|-damage|p1a: Skarmory|228\/334
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Alomomola|435\/534|[from] sandstorm
+|-heal|p2a: Alomomola|468\/534|[from] item: Leftovers
+|turn|6
+|
+|switch|p1a: Magnezone|Magnezone|282\/282
+|move|p2a: Alomomola|Scald|p1a: Magnezone
+|-damage|p1a: Magnezone|230\/282
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Alomomola|435\/534|[from] sandstorm
+|-heal|p2a: Alomomola|468\/534|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Thundurus|Thundurus, M|299\/299
+|move|p2a: Alomomola|Mirror Coat|p1a: Thundurus
+|-fail|p1a: Thundurus
+|
+|-weather|none
+|-heal|p2a: Alomomola|501\/534|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: Thundurus|Superpower|p2a: Alomomola
+|-damage|p2a: Alomomola|335\/534
+|-unboost|p1a: Thundurus|atk|1
+|-unboost|p1a: Thundurus|def|1
+|-damage|p1a: Thundurus|270\/299|[from] item: Life Orb
+|move|p2a: Alomomola|Toxic|p1a: Thundurus
+|-status|p1a: Thundurus|tox
+|
+|-heal|p2a: Alomomola|368\/534|[from] item: Leftovers
+|-damage|p1a: Thundurus|252\/299 tox|[from] psn
+|turn|9
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354 tox
+|-damage|p2a: Gliscor|310\/354 tox|[from] Stealth Rock
+|move|p1a: Thundurus|Thunderbolt|p2a: Gliscor
+|-immune|p2a: Gliscor|[msg]
+|
+|-damage|p1a: Thundurus|216\/299 tox|[from] psn
+|-heal|p2a: Gliscor|354\/354 tox|[from] ability: Poison Heal
+|turn|10
+|
+|switch|p1a: Magnezone|Magnezone|230\/282
+|switch|p2a: Tyranitar|Tyranitar, F|404\/404
+|-damage|p2a: Tyranitar|354\/404|[from] Stealth Rock
+|-weather|Sandstorm
+|
+|-weather|Sandstorm|[upkeep]
+|turn|11
+|
+|move|p1a: Magnezone|Flash Cannon|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|256\/404
+|move|p2a: Tyranitar|Crunch|p1a: Magnezone
+|-damage|p1a: Magnezone|125\/282
+|-unboost|p1a: Magnezone|def|1
+|
+|-weather|Sandstorm|[upkeep]
+|turn|12
+|
+|switch|p1a: Azumarill|Azumarill, M|134\/345
+|move|p2a: Tyranitar|Stone Edge|p1a: Azumarill
+|-damage|p1a: Azumarill|0 fnt
+|faint|p1a: Azumarill
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Thundurus|Thundurus, M|216\/299 tox
+|turn|13
+|
+|switch|p2a: Gliscor|Gliscor, M|354\/354 tox
+|-damage|p2a: Gliscor|310\/354 tox|[from] Stealth Rock
+|move|p1a: Thundurus|Hidden Power|p2a: Gliscor
+|-supereffective|p2a: Gliscor
+|-damage|p2a: Gliscor|0 fnt
+|-damage|p1a: Thundurus|187\/299 tox|[from] item: Life Orb
+|faint|p2a: Gliscor
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Thundurus|169\/299 tox|[from] sandstorm
+|-damage|p1a: Thundurus|151\/299 tox|[from] psn
+|
+|switch|p2a: Thundurus|Thundurus, M|270\/299
+|-damage|p2a: Thundurus|196\/299|[from] Stealth Rock
+|turn|14
+|
+|switch|p1a: Magnezone|Magnezone|125\/282
+|move|p2a: Thundurus|Hidden Power|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-damage|p1a: Magnezone|73\/282
+|-damage|p2a: Thundurus|167\/299|[from] item: Life Orb
+|
+|-weather|none
+|turn|15
+|
+|move|p1a: Magnezone|Volt Switch|p2a: Thundurus
+|-damage|p2a: Thundurus|14\/299
+|
+|switch|p1a: Latias|Latias, F|302\/302
+|move|p2a: Thundurus|Volt Switch|p1a: Latias
+|-resisted|p1a: Latias
+|-damage|p1a: Latias|236\/302
+|-damage|p2a: Thundurus|0 fnt|[from] item: Life Orb
+|faint|p2a: Thundurus
+|
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|-damage|p2a: Chansey|616\/704|[from] Stealth Rock
+|turn|16
+|chat|sheik main|hahahha
+|chat|sheik main|of course
+|chat|Wadam|what
+|chat|sheik main|no stealth rock
+|
+|switch|p1a: Skarmory|Skarmory, F|228\/334
+|move|p2a: Chansey|Wish|p2a: Chansey
+|
+|turn|17
+|
+|move|p2a: Chansey|Thunder Wave|p1a: Skarmory
+|-status|p1a: Skarmory|par
+|move|p1a: Skarmory|Whirlwind|p2a: Chansey
+|drag|p2a: Mawile|Mawile, F, shiny|223\/301
+|-damage|p2a: Mawile|205\/301|[from] Stealth Rock
+|-ability|p2a: Mawile|Intimidate|[of] p1a: Skarmory
+|-unboost|p1a: Skarmory|atk|1
+|
+|-heal|p2a: Mawile|301\/301|[from] move: Wish|[wisher] Chansey
+|turn|18
+|
+|detailschange|p2a: Mawile|Mawile-Mega, F, shiny
+|message|Mawile has Mega Evolved into Mega Mawile!
+|move|p2a: Mawile|Fire Fang|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|60\/334 par
+|-damage|p2a: Mawile|251\/301|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|227\/334 par
+|
+|turn|19
+|
+|move|p2a: Mawile|Swords Dance|p2a: Mawile
+|-boost|p2a: Mawile|atk|2
+|move|p1a: Skarmory|Whirlwind|p2a: Mawile
+|drag|p2a: Alomomola|Alomomola, M|534\/534
+|-damage|p2a: Alomomola|468\/534|[from] Stealth Rock
+|
+|-heal|p2a: Alomomola|501\/534|[from] item: Leftovers
+|turn|20
+|
+|move|p2a: Alomomola|Scald|p1a: Skarmory
+|-damage|p1a: Skarmory|163\/334 par
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|330\/334 par
+|
+|-heal|p2a: Alomomola|534\/534|[from] item: Leftovers
+|turn|21
+|
+|move|p2a: Alomomola|Scald|p1a: Skarmory
+|-damage|p1a: Skarmory|269\/334 par
+|cant|p1a: Skarmory|par
+|
+|turn|22
+|
+|move|p2a: Alomomola|Scald|p1a: Skarmory
+|-damage|p1a: Skarmory|206\/334 par
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334 par
+|
+|turn|23
+|
+|switch|p1a: Latias|Latias, F|236\/302
+|move|p2a: Alomomola|Scald|p1a: Latias
+|-crit|p1a: Latias
+|-resisted|p1a: Latias
+|-damage|p1a: Latias|205\/302
+|
+|turn|24
+|
+|switch|p1a: Magnezone|Magnezone|73\/282
+|move|p2a: Alomomola|Toxic|p1a: Magnezone
+|-fail|p1a: Magnezone
+|
+|turn|25
+|
+|move|p1a: Magnezone|Thunderbolt|p2a: Alomomola
+|-supereffective|p2a: Alomomola
+|-damage|p2a: Alomomola|160\/534
+|move|p2a: Alomomola|Mirror Coat|p1a: Magnezone
+|-damage|p1a: Magnezone|0 fnt
+|faint|p1a: Magnezone
+|
+|-heal|p2a: Alomomola|193\/534|[from] item: Leftovers
+|
+|switch|p1a: Pinsir|Pinsir, M|271\/271
+|-ability|p1a: Pinsir|Mold Breaker
+|turn|26
+|
+|switch|p2a: Tyranitar|Tyranitar, F|256\/404
+|-damage|p2a: Tyranitar|206\/404|[from] Stealth Rock
+|-weather|Sandstorm
+|detailschange|p1a: Pinsir|Pinsir-Mega, M
+|message|Pinsir has Mega Evolved into Mega Pinsir!
+|move|p1a: Pinsir|Frustration|p2a: Tyranitar
+|-resisted|p2a: Tyranitar
+|-damage|p2a: Tyranitar|89\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Pinsir|255\/271|[from] sandstorm
+|turn|27
+|
+|move|p1a: Pinsir|Earthquake|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Pinsir|239\/271|[from] sandstorm
+|
+|switch|p2a: Chansey|Chansey, F|616\/704
+|-damage|p2a: Chansey|528\/704|[from] Stealth Rock
+|turn|28
+|chat|sheik main|ugh gg
+|
+|switch|p1a: Thundurus|Thundurus, M|151\/299 tox
+|move|p2a: Chansey|Thunder Wave|p1a: Thundurus
+|-fail|p1a: Thundurus
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Thundurus|133\/299 tox|[from] sandstorm
+|-damage|p2a: Chansey|484\/704|[from] sandstorm
+|-damage|p1a: Thundurus|115\/299 tox|[from] psn
+|turn|29
+|
+|switch|p2a: Mawile|Mawile-Mega, F, shiny|251\/301
+|-damage|p2a: Mawile|233\/301|[from] Stealth Rock
+|move|p1a: Thundurus|Superpower|p2a: Mawile
+|-damage|p2a: Mawile|113\/301
+|-unboost|p1a: Thundurus|atk|1
+|-unboost|p1a: Thundurus|def|1
+|-damage|p1a: Thundurus|86\/299 tox|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Thundurus|68\/299 tox|[from] sandstorm
+|-damage|p1a: Thundurus|32\/299 tox|[from] psn
+|turn|30
+|
+|switch|p1a: Latias|Latias, F|205\/302
+|move|p2a: Mawile|Sucker Punch|p1a: Latias
+|-fail|p1a: Latias
+|
+|-weather|none
+|turn|31
+|
+|move|p2a: Mawile|Sucker Punch|p1a: Latias
+|-supereffective|p1a: Latias
+|-damage|p1a: Latias|0 fnt
+|faint|p1a: Latias
+|
+|
+|switch|p1a: Pinsir|Pinsir-Mega, M|239\/271
+|turn|32
+|
+|switch|p2a: Alomomola|Alomomola, M|371\/534
+|-damage|p2a: Alomomola|305\/534|[from] Stealth Rock
+|move|p1a: Pinsir|Earthquake|p2a: Alomomola
+|-damage|p2a: Alomomola|151\/534
+|
+|-heal|p2a: Alomomola|184\/534|[from] item: Leftovers
+|turn|33
+|
+|move|p1a: Pinsir|Frustration|p2a: Alomomola
+|-damage|p2a: Alomomola|0 fnt
+|faint|p2a: Alomomola
+|
+|
+|switch|p2a: Chansey|Chansey, F|484\/704
+|-damage|p2a: Chansey|396\/704|[from] Stealth Rock
+|turn|34
+|
+|switch|p1a: Thundurus|Thundurus, M|32\/299 tox
+|move|p2a: Chansey|Wish|p2a: Chansey
+|
+|-damage|p1a: Thundurus|14\/299 tox|[from] psn
+|turn|35
+|
+|move|p1a: Thundurus|Superpower|p2a: Chansey
+|-supereffective|p2a: Chansey
+|-damage|p2a: Chansey|40\/704
+|-unboost|p1a: Thundurus|atk|1
+|-unboost|p1a: Thundurus|def|1
+|-damage|p1a: Thundurus|0 fnt|[from] item: Life Orb
+|faint|p1a: Thundurus
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|392\/704
+|
+|-heal|p2a: Chansey|704\/704|[from] move: Wish|[wisher] Chansey
+|
+|switch|p1a: Pinsir|Pinsir-Mega, M|239\/271
+|turn|36
+|
+|move|p1a: Pinsir|Swords Dance|p1a: Pinsir
+|-boost|p1a: Pinsir|atk|2
+|move|p2a: Chansey|Thunder Wave|p1a: Pinsir
+|-status|p1a: Pinsir|par
+|
+|turn|37
+|
+|move|p2a: Chansey|Seismic Toss|p1a: Pinsir
+|-damage|p1a: Pinsir|139\/271 par
+|cant|p1a: Pinsir|par
+|
+|turn|38
+|
+|move|p2a: Chansey|Seismic Toss|p1a: Pinsir
+|-damage|p1a: Pinsir|39\/271 par
+|move|p1a: Pinsir|Frustration|p2a: Chansey
+|-damage|p2a: Chansey|13\/704
+|
+|turn|39
+|
+|cant|p1a: Pinsir|par
+|move|p2a: Chansey|Seismic Toss|p1a: Pinsir
+|-damage|p1a: Pinsir|0 fnt
+|faint|p1a: Pinsir
+|
+|chat|sheik main|cool
+|
+|switch|p1a: Skarmory|Skarmory, F|334\/334 par
+|turn|40
+|
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|365\/704
+|move|p1a: Skarmory|Whirlwind|p2a: Chansey
+|drag|p2a: Mawile|Mawile-Mega, F, shiny|113\/301
+|-damage|p2a: Mawile|95\/301|[from] Stealth Rock
+|
+|turn|41
+|
+|move|p2a: Mawile|Fire Fang|p1a: Skarmory|[miss]
+|-miss|p2a: Mawile|p1a: Skarmory
+|move|p1a: Skarmory|Whirlwind|p2a: Mawile
+|drag|p2a: Chansey|Chansey, F|365\/704
+|-damage|p2a: Chansey|277\/704|[from] Stealth Rock
+|
+|turn|42
+|
+|move|p2a: Chansey|Wish|p2a: Chansey
+|move|p1a: Skarmory|Whirlwind|p2a: Chansey
+|drag|p2a: Mawile|Mawile-Mega, F, shiny|95\/301
+|-damage|p2a: Mawile|77\/301|[from] Stealth Rock
+|
+|turn|43
+|
+|move|p2a: Mawile|Swords Dance|p2a: Mawile
+|-boost|p2a: Mawile|atk|2
+|move|p1a: Skarmory|Whirlwind|p2a: Mawile
+|drag|p2a: Chansey|Chansey, F|277\/704
+|-damage|p2a: Chansey|189\/704|[from] Stealth Rock
+|
+|-heal|p2a: Chansey|541\/704|[from] move: Wish|[wisher] Chansey
+|turn|44
+|
+|move|p2a: Chansey|Seismic Toss|p1a: Skarmory
+|-damage|p1a: Skarmory|234\/334 par
+|-damage|p2a: Chansey|424\/704|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|move|p1a: Skarmory|Whirlwind|p2a: Chansey
+|drag|p2a: Mawile|Mawile-Mega, F, shiny|77\/301
+|-damage|p2a: Mawile|59\/301|[from] Stealth Rock
+|
+|turn|45
+|
+|move|p2a: Mawile|Swords Dance|p2a: Mawile
+|-boost|p2a: Mawile|atk|2
+|cant|p1a: Skarmory|par
+|
+|turn|46
+|
+|move|p2a: Mawile|Fire Fang|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|-damage|p2a: Mawile|9\/301|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|faint|p1a: Skarmory
+|
+|win|sheik main
+|raw|Ladder updating...
+|chat|sheik main|gg
+|raw|Wadam's rating: 1725 &rarr; <strong>1706<\/strong><br \/>(-19 for losing)
+|raw|sheik main's rating: 1739 &rarr; <strong>1759<\/strong><br \/>(+20 for winning)
+|leave|Wadam
+|player|p1

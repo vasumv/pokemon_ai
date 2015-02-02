@@ -1,0 +1,308 @@
+|join|ivymo16
+|join|JJB
+|player|p1|ivymo16|170
+|player|p2|JJB|189
+|gametype|singles
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Crustle, F
+|poke|p1|Whimsicott, M, shiny
+|poke|p1|Chandelure, F
+|poke|p1|Linoone, M
+|poke|p1|Cacturne, F
+|poke|p1|Mew
+|poke|p2|Umbreon, M
+|poke|p2|Honchkrow, F
+|poke|p2|Hitmontop, M
+|poke|p2|Darmanitan, M
+|poke|p2|Mew
+|poke|p2|Mismagius, F
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Crustle|Crustle, F|344\/344
+|switch|p2a: Reddit|Mew|404\/404
+|turn|1
+|callback|decision
+|chat|JJB|good luck
+|
+|move|p2a: Reddit|Magic Coat|p2a: Reddit
+|-singleturn|p2a: Reddit|move: Magic Coat
+|move|p1a: Crustle|Stealth Rock|p2a: Reddit
+|move|p2a: Reddit|Stealth Rock|p1a: Crustle|[from]Magic Coat
+|-sidestart|p1: ivymo16|move: Stealth Rock
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Reddit|Taunt|p1a: Crustle
+|-start|p1a: Crustle|move: Taunt
+|cant|p1a: Crustle|move: Taunt|Stealth Rock
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Reddit|Knock Off|p1a: Crustle
+|-damage|p1a: Crustle|330\/344
+|-enditem|p1a: Crustle|Custap Berry|[from] move: Knock Off|[of] p2a: Reddit
+|move|p1a: Crustle|X-Scissor|p2a: Reddit
+|-supereffective|p2a: Reddit
+|-damage|p2a: Reddit|134\/404
+|
+|-heal|p2a: Reddit|159\/404|[from] item: Leftovers
+|turn|4
+|callback|decision
+|join|Ignismare
+|
+|switch|p2a: Tsuna-kun|Honchkrow, F|404\/404
+|move|p1a: Crustle|X-Scissor|p2a: Tsuna-kun
+|-damage|p2a: Tsuna-kun|173\/404
+|
+|-end|p1a: Crustle|move: Taunt
+|turn|5
+|callback|decision
+|
+|move|p2a: Tsuna-kun|Brave Bird|p1a: Crustle
+|-damage|p1a: Crustle|77\/344
+|-damage|p2a: Tsuna-kun|90\/404|[from] recoil|[of] p1a: Crustle
+|-damage|p2a: Tsuna-kun|50\/404|[from] item: Life Orb
+|move|p1a: Crustle|X-Scissor|p2a: Tsuna-kun
+|-damage|p2a: Tsuna-kun|0 fnt
+|faint|p2a: Tsuna-kun
+|
+|callback|decision
+|
+|switch|p2a: StallFo'Eons|Umbreon, M|394\/394
+|turn|6
+|callback|decision
+|
+|move|p2a: StallFo'Eons|Protect|p2a: StallFo'Eons
+|-singleturn|p2a: StallFo'Eons|Protect
+|move|p1a: Crustle|Stealth Rock|p2a: StallFo'Eons
+|-sidestart|p2: JJB|move: Stealth Rock
+|
+|turn|7
+|callback|decision
+|
+|move|p2a: StallFo'Eons|Foul Play|p1a: Crustle
+|-damage|p1a: Crustle|0 fnt
+|faint|p1a: Crustle
+|
+|callback|decision
+|
+|switch|p1a: Cacturne|Cacturne, F|281\/281
+|-damage|p1a: Cacturne|246\/281|[from] Stealth Rock
+|turn|8
+|callback|decision
+|
+|move|p2a: StallFo'Eons|Protect|p2a: StallFo'Eons
+|-singleturn|p2a: StallFo'Eons|Protect
+|move|p1a: Cacturne|Swords Dance|p1a: Cacturne
+|-boost|p1a: Cacturne|atk|2
+|
+|turn|9
+|callback|decision
+|
+|move|p1a: Cacturne|Seed Bomb|p2a: StallFo'Eons
+|-damage|p2a: StallFo'Eons|37\/394
+|-damage|p1a: Cacturne|218\/281|[from] item: Life Orb
+|move|p2a: StallFo'Eons|Foul Play|p1a: Cacturne
+|-resisted|p1a: Cacturne
+|-damage|p1a: Cacturne|0 fnt
+|faint|p1a: Cacturne
+|
+|-heal|p2a: StallFo'Eons|61\/394|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Mew|Mew|341\/341
+|-damage|p1a: Mew|299\/341|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|switch|p2a: OVER 9000!!!1!|Darmanitan, M|414\/414
+|-damage|p2a: OVER 9000!!!1!|311\/414|[from] Stealth Rock
+|move|p1a: Mew|Giga Drain|p2a: OVER 9000!!!1!
+|-resisted|p2a: OVER 9000!!!1!
+|-damage|p2a: OVER 9000!!!1!|227\/414
+|-heal|p1a: Mew|341\/341|[from] drain|[of] p2a: OVER 9000!!!1!
+|-damage|p1a: Mew|307\/341|[from] item: Life Orb
+|
+|turn|11
+|callback|decision
+|
+|move|p2a: OVER 9000!!!1!|U-turn|p1a: Mew
+|-supereffective|p1a: Mew
+|-damage|p1a: Mew|0 fnt
+|faint|p1a: Mew
+|callback|decision
+|
+|switch|p2a: Breakdance|Hitmontop, M|304\/304
+|-damage|p2a: Breakdance|285\/304|[from] Stealth Rock
+|
+|-heal|p2a: Breakdance|304\/304|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Chandelure|Chandelure, F|261\/261
+|-damage|p1a: Chandelure|196\/261|[from] Stealth Rock
+|turn|12
+|callback|decision
+|
+|move|p2a: Breakdance|Sucker Punch|p1a: Chandelure
+|-supereffective|p1a: Chandelure
+|-damage|p1a: Chandelure|68\/261
+|move|p1a: Chandelure|Shadow Ball|p2a: Breakdance
+|-damage|p2a: Breakdance|192\/304
+|
+|-heal|p2a: Breakdance|211\/304|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p1a: Whimsicott|Whimsicott, M, shiny|324\/324
+|-damage|p1a: Whimsicott|284\/324|[from] Stealth Rock
+|move|p2a: Breakdance|Toxic|p1a: Whimsicott
+|-status|p1a: Whimsicott|tox
+|
+|-heal|p1a: Whimsicott|304\/324 tox|[from] item: Leftovers
+|-heal|p2a: Breakdance|230\/304|[from] item: Leftovers
+|-damage|p1a: Whimsicott|284\/324 tox|[from] psn
+|turn|14
+|callback|decision
+|
+|move|p1a: Whimsicott|Encore|p2a: Breakdance
+|-start|p2a: Breakdance|Encore
+|move|p2a: Breakdance|Toxic|p1a: Whimsicott
+|-fail|p1a: Whimsicott|tox
+|
+|-heal|p1a: Whimsicott|304\/324 tox|[from] item: Leftovers
+|-heal|p2a: Breakdance|249\/304|[from] item: Leftovers
+|-damage|p1a: Whimsicott|264\/324 tox|[from] psn
+|turn|15
+|callback|decision
+|
+|switch|p2a: Reddit|Mew|159\/404
+|-damage|p2a: Reddit|109\/404|[from] Stealth Rock
+|move|p1a: Whimsicott|Memento|p2a: Reddit
+|-unboost|p2a: Reddit|atk|2
+|-unboost|p2a: Reddit|spa|2
+|faint|p1a: Whimsicott
+|
+|-heal|p2a: Reddit|134\/404|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Linoone|Linoone, M|297\/297
+|-damage|p1a: Linoone|260\/297|[from] Stealth Rock
+|turn|16
+|callback|decision
+|
+|move|p1a: Linoone|Belly Drum|p1a: Linoone
+|-damage|p1a: Linoone|112\/297
+|-setboost|p1a: Linoone|atk|6|[from] move: Belly Drum
+|-enditem|p1a: Linoone|Sitrus Berry|[eat]
+|-heal|p1a: Linoone|186\/297|[from] item: Sitrus Berry
+|move|p2a: Reddit|Taunt|p1a: Linoone
+|-start|p1a: Linoone|move: Taunt
+|
+|-heal|p2a: Reddit|159\/404|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|switch|p2a: Salem|Mismagius, F|262\/262
+|-damage|p2a: Salem|230\/262|[from] Stealth Rock
+|move|p1a: Linoone|ExtremeSpeed|p2a: Salem
+|-immune|p2a: Salem|[msg]
+|
+|-heal|p2a: Salem|246\/262|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p2a: Salem|Substitute|p2a: Salem
+|-start|p2a: Salem|Substitute
+|-damage|p2a: Salem|181\/262
+|move|p1a: Linoone|Shadow Claw|p2a: Salem
+|-crit|p2a: Salem
+|-supereffective|p2a: Salem
+|-end|p2a: Salem|Substitute
+|
+|-heal|p2a: Salem|197\/262|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p2a: Salem|Calm Mind|p2a: Salem
+|-boost|p2a: Salem|spa|1
+|-boost|p2a: Salem|spd|1
+|move|p1a: Linoone|Shadow Claw|p2a: Salem
+|-supereffective|p2a: Salem
+|-damage|p2a: Salem|0 fnt
+|faint|p2a: Salem
+|
+|-end|p1a: Linoone|move: Taunt
+|callback|decision
+|
+|switch|p2a: OVER 9000!!!1!|Darmanitan, M|227\/414
+|-damage|p2a: OVER 9000!!!1!|124\/414|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|move|p1a: Linoone|ExtremeSpeed|p2a: OVER 9000!!!1!
+|-damage|p2a: OVER 9000!!!1!|0 fnt
+|faint|p2a: OVER 9000!!!1!
+|
+|callback|decision
+|
+|switch|p2a: Breakdance|Hitmontop, M|249\/304
+|-damage|p2a: Breakdance|230\/304|[from] Stealth Rock
+|-ability|p2a: Breakdance|Intimidate|[of] p1a: Linoone
+|-unboost|p1a: Linoone|atk|1
+|turn|21
+|callback|decision
+|
+|move|p1a: Linoone|ExtremeSpeed|p2a: Breakdance
+|-damage|p2a: Breakdance|0 fnt
+|faint|p2a: Breakdance
+|
+|callback|decision
+|
+|switch|p2a: StallFo'Eons|Umbreon, M|61\/394
+|-damage|p2a: StallFo'Eons|12\/394|[from] Stealth Rock
+|turn|22
+|callback|decision
+|
+|move|p2a: StallFo'Eons|Protect|p2a: StallFo'Eons
+|-singleturn|p2a: StallFo'Eons|Protect
+|move|p1a: Linoone|Seed Bomb|p2a: StallFo'Eons
+|-activate|p2a: StallFo'Eons|Protect
+|
+|-heal|p2a: StallFo'Eons|36\/394|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p1a: Linoone|ExtremeSpeed|p2a: StallFo'Eons
+|-damage|p2a: StallFo'Eons|0 fnt
+|faint|p2a: StallFo'Eons
+|
+|callback|decision
+|chat|ivymo16|gg
+|
+|switch|p2a: Reddit|Mew|159\/404
+|-damage|p2a: Reddit|109\/404|[from] Stealth Rock
+|turn|24
+|callback|decision
+|chat|JJB|gg
+|
+|move|p1a: Linoone|ExtremeSpeed|p2a: Reddit
+|-damage|p2a: Reddit|0 fnt
+|faint|p2a: Reddit
+|
+|win|ivymo16
+|raw|Ladder updating...
+|raw|ivymo16's rating: 1487 &rarr; <strong>1499<\/strong><br \/>(+12 for winning)
+|raw|JJB's rating: 1348 &rarr; <strong>1344<\/strong><br \/>(-4 for losing)

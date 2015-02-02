@@ -1,0 +1,158 @@
+|join|RandomlyBattling
+|join|livEnwolC
+|player|p1|RandomlyBattling|253
+|player|p2|livEnwolC|59
+|gametype|doubles
+|gen|6
+|tier|Smogon Doubles
+|rated
+|clearpoke
+|poke|p1|Abomasnow, M, shiny
+|poke|p1|Regice, shiny
+|poke|p1|Breloom, F, shiny
+|poke|p1|Cresselia, F, shiny
+|poke|p1|Chandelure, F, shiny
+|poke|p1|Scrafty, M, shiny
+|poke|p2|Politoed, M
+|poke|p2|Tornadus, M
+|poke|p2|Lucario, F
+|poke|p2|Ludicolo, F
+|poke|p2|Raichu, M
+|poke|p2|Whimsicott, F
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Cresselia|Cresselia, F, shiny|444\/444
+|switch|p1b: Scrafty|Scrafty, M, shiny|331\/331
+|switch|p2a: Tornadus|Tornadus, M|300\/300
+|switch|p2b: Politoed|Politoed, M|384\/384
+|-weather|RainDance
+|-ability|p1b: Scrafty|Intimidate|[of] p2a: Tornadus
+|-unboost|p2a: Tornadus|atk|1
+|-ability|p1b: Scrafty|Intimidate|[of] p2b: Politoed
+|-unboost|p2b: Politoed|atk|1
+|turn|1
+|
+|move|p1b: Scrafty|Fake Out|p2a: Tornadus
+|-damage|p2a: Tornadus|248\/300
+|cant|p2a: Tornadus|flinch
+|move|p2b: Politoed|Toxic|p1a: Cresselia
+|-status|p1a: Cresselia|tox
+|move|p1a: Cresselia|Trick Room|p1a: Cresselia
+|-fieldstart|move: Trick Room|[of] p1a: Cresselia
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1a: Cresselia|417\/444 tox|[from] psn
+|turn|2
+|
+|move|p1b: Scrafty|Stone Edge|p2a: Tornadus
+|-supereffective|p2a: Tornadus
+|-damage|p2a: Tornadus|24\/300
+|move|p1a: Cresselia|Psyshock|p2b: Politoed
+|-damage|p2b: Politoed|323\/384
+|move|p2b: Politoed|Scald|p1b: Scrafty
+|-damage|p1b: Scrafty|261\/331
+|-status|p1b: Scrafty|brn
+|move|p2a: Tornadus|Hurricane|p1b: Scrafty
+|-crit|p1b: Scrafty
+|-supereffective|p1b: Scrafty
+|-damage|p1b: Scrafty|0 fnt
+|faint|p1b: Scrafty
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Cresselia|444\/444 tox|[from] item: Leftovers
+|-damage|p1a: Cresselia|390\/444 tox|[from] psn
+|
+|switch|p1b: Abomasnow|Abomasnow, M, shiny|373\/373
+|-weather|Hail
+|turn|3
+|
+|switch|p1a: Regice|Regice, shiny|364\/364
+|detailschange|p1b: Abomasnow|Abomasnow-Mega, M, shiny
+|message|Abomasnow has Mega Evolved into Mega Abomasnow!
+|move|p2b: Politoed|Protect|p2b: Politoed
+|-singleturn|p2b: Politoed|Protect
+|move|p1b: Abomasnow|Ice Shard|p2a: Tornadus
+|-supereffective|p2a: Tornadus
+|-damage|p2a: Tornadus|0 fnt
+|faint|p2a: Tornadus
+|
+|-weather|Hail|[upkeep]
+|-damage|p2b: Politoed|299\/384|[from] hail
+|
+|switch|p2a: Lucario|Lucario, F|281\/281
+|turn|4
+|
+|switch|p2b: Whimsicott|Whimsicott, F|261\/261
+|detailschange|p2a: Lucario|Lucario-Mega, F
+|message|Lucario has Mega Evolved into Mega Lucario!
+|move|p1b: Abomasnow|Blizzard|p2b: Whimsicott
+|-resisted|p2a: Lucario
+|-damage|p2a: Lucario|175\/281
+|-supereffective|p2b: Whimsicott
+|-enditem|p2b: Whimsicott|Focus Sash
+|-damage|p2b: Whimsicott|1\/261
+|-status|p2b: Whimsicott|frz
+|move|p1a: Regice|Hidden Power|p2a: Lucario
+|-damage|p2a: Lucario|83\/281
+|move|p2a: Lucario|Drain Punch|p1a: Regice
+|-supereffective|p1a: Regice
+|-damage|p1a: Regice|0 fnt
+|-heal|p2a: Lucario|265\/281|[from] drain|[of] p1a: Regice
+|faint|p1a: Regice
+|
+|-weather|Hail|[upkeep]
+|-damage|p2a: Lucario|248\/281|[from] hail
+|-damage|p2b: Whimsicott|0 fnt|[from] hail
+|faint|p2b: Whimsicott
+|
+|switch|p2b: Politoed|Politoed, M|299\/384
+|switch|p1a: Breloom|Breloom, F, shiny|301\/301
+|-weather|RainDance
+|turn|5
+|
+|move|p1a: Breloom|Mach Punch|p2a: Lucario
+|-supereffective|p2a: Lucario
+|-damage|p2a: Lucario|0 fnt
+|-damage|p1a: Breloom|271\/301|[from] item: Life Orb
+|faint|p2a: Lucario
+|move|p1b: Abomasnow|Giga Drain|p2b: Politoed
+|-supereffective|p2b: Politoed
+|-damage|p2b: Politoed|0 fnt
+|faint|p2b: Politoed
+|
+|-weather|RainDance|[upkeep]
+|-fieldend|move: Trick Room
+|
+|switch|p2b: Pika Pi|Raichu, M|261\/261
+|switch|p2a: Mega-Ludicolo|Ludicolo, F|302\/302
+|-item|p2b: Pika Pi|Air Balloon
+|turn|6
+|
+|switch|p1a: Cresselia|Cresselia, F, shiny|390\/444 tox
+|switch|p1b: Chandelure|Chandelure, F, shiny|321\/321
+|move|p2b: Pika Pi|Fake Out|p1b: Chandelure
+|-immune|p1b: Chandelure|[msg]
+|move|p2a: Mega-Ludicolo|Ice Beam|p1a: Cresselia
+|-damage|p1a: Cresselia|320\/444 tox
+|-damage|p2a: Mega-Ludicolo|272\/302|[from] item: Life Orb
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Cresselia|347\/444 tox|[from] item: Leftovers
+|-damage|p1a: Cresselia|320\/444 tox|[from] psn
+|turn|7
+|-message|livEnwolC forfeited.
+|
+|win|RandomlyBattling
+|raw|Ladder updating...
+|leave|livEnwolC
+|player|p2
+|raw|RandomlyBattling's rating: 1487 &rarr; <strong>1499<\/strong><br \/>(+12 for winning)
+|raw|livEnwolC's rating: 1329 &rarr; <strong>1317<\/strong><br \/>(-12 for losing)

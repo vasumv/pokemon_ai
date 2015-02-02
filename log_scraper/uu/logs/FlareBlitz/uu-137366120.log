@@ -1,0 +1,923 @@
+|join|FlareBlitz
+|join|Meruu
+|player|p1|FlareBlitz|2
+|player|p2|Meruu|253
+|gametype|singles
+|gen|6
+|tier|UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Aerodactyl, M
+|poke|p1|Sharpedo, F
+|poke|p1|Jirachi
+|poke|p1|Chesnaught, M
+|poke|p1|Victini
+|poke|p1|Aromatisse, M
+|poke|p2|Blissey, F
+|poke|p2|Alomomola, F
+|poke|p2|Mew
+|poke|p2|Arcanine, F
+|poke|p2|Aggron, M
+|poke|p2|Sableye, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit three PokÃ©mon knowing Baton Pass
+|teampreview
+|join|Nas
+|
+|start
+|switch|p1a: Victini|Victini|341\/341
+|switch|p2a: Aggron|Aggron, M|344\/344
+|turn|1
+|
+|move|p1a: Victini|V-create|p2a: Aggron
+|-damage|p2a: Aggron|145\/344
+|-unboost|p1a: Victini|def|1
+|-unboost|p1a: Victini|spd|1
+|-unboost|p1a: Victini|spe|1
+|move|p2a: Aggron|Stealth Rock|p1a: Victini
+|-sidestart|p1: FlareBlitz|move: Stealth Rock
+|
+|turn|2
+|
+|switch|p1a: Chesnaught|Chesnaught, M|379\/379
+|-damage|p1a: Chesnaught|356\/379|[from] Stealth Rock
+|switch|p2a: Alomomola|Alomomola, F|508\/508
+|
+|-heal|p1a: Chesnaught|379\/379|[from] item: Leftovers
+|turn|3
+|
+|switch|p2a: Mew|Mew|404\/404
+|move|p1a: Chesnaught|Spikes|p2a: Mew
+|-sidestart|p2: Meruu|Spikes
+|
+|turn|4
+|
+|move|p2a: Mew|Will-O-Wisp|p1a: Chesnaught
+|-status|p1a: Chesnaught|brn
+|move|p1a: Chesnaught|Leech Seed|p2a: Mew
+|-start|p2a: Mew|move: Leech Seed
+|
+|-damage|p2a: Mew|354\/404|[from] Leech Seed|[of] p1a: Chesnaught
+|-damage|p1a: Chesnaught|332\/379 brn|[from] brn
+|turn|5
+|join|Ricardo333
+|
+|switch|p2a: Sableye|Sableye, F|304\/304
+|-damage|p2a: Sableye|266\/304|[from] Spikes
+|switch|p1a: Aerodactyl|Aerodactyl, M|363\/363
+|-damage|p1a: Aerodactyl|273\/363|[from] Stealth Rock
+|-ability|p1a: Aerodactyl|Unnerve|p2: Meruu
+|
+|-heal|p2a: Sableye|285\/304|[from] item: Leftovers
+|turn|6
+|
+|switch|p1a: Aromatisse|Aromatisse, M|406\/406
+|-damage|p1a: Aromatisse|356\/406|[from] Stealth Rock
+|move|p2a: Sableye|Will-O-Wisp|p1a: Aromatisse
+|-status|p1a: Aromatisse|brn
+|
+|-heal|p2a: Sableye|304\/304|[from] item: Leftovers
+|-heal|p1a: Aromatisse|381\/406 brn|[from] item: Leftovers
+|-damage|p1a: Aromatisse|331\/406 brn|[from] brn
+|turn|7
+|
+|move|p2a: Sableye|Knock Off|p1a: Aromatisse
+|-resisted|p1a: Aromatisse
+|-damage|p1a: Aromatisse|295\/406 brn
+|-enditem|p1a: Aromatisse|Leftovers|[from] move: Knock Off|[of] p2a: Sableye
+|move|p1a: Aromatisse|Aromatherapy|p1a: Aromatisse
+|-cureteam|p1a: Aromatisse|[from] move: Aromatherapy
+|
+|turn|8
+|
+|switch|p2a: Mew|Mew|354\/404
+|-damage|p2a: Mew|304\/404|[from] Spikes
+|move|p1a: Aromatisse|Moonblast|p2a: Mew
+|-damage|p2a: Mew|229\/404
+|
+|-heal|p2a: Mew|254\/404|[from] item: Leftovers
+|turn|9
+|
+|switch|p1a: Victini|Victini|341\/341
+|-damage|p1a: Victini|256\/341|[from] Stealth Rock
+|move|p2a: Mew|Will-O-Wisp|p1a: Victini
+|-fail|p1a: Victini
+|
+|-heal|p2a: Mew|279\/404|[from] item: Leftovers
+|turn|10
+|
+|switch|p2a: Alomomola|Alomomola, F|508\/508
+|-damage|p2a: Alomomola|445\/508|[from] Spikes
+|move|p1a: Victini|Trick|p2a: Alomomola
+|-activate|p1a: Victini|move: Trick|[of] p2a: Alomomola
+|-item|p2a: Alomomola|Choice Band|[from] move: Trick
+|-item|p1a: Victini|Leftovers|[from] move: Trick
+|
+|-heal|p1a: Victini|277\/341|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Victini|Bolt Strike|p2a: Alomomola
+|-supereffective|p2a: Alomomola
+|-damage|p2a: Alomomola|247\/508
+|move|p2a: Alomomola|Toxic|p1a: Victini
+|-status|p1a: Victini|tox
+|
+|-heal|p1a: Victini|298\/341 tox|[from] item: Leftovers
+|-damage|p1a: Victini|277\/341 tox|[from] psn
+|turn|12
+|
+|switch|p2a: Arcanine|Arcanine, F|384\/384
+|-damage|p2a: Arcanine|336\/384|[from] Spikes
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Victini
+|-unboost|p1a: Victini|atk|1
+|move|p1a: Victini|U-turn|p2a: Arcanine
+|-resisted|p2a: Arcanine
+|-damage|p2a: Arcanine|318\/384
+|
+|switch|p1a: Aerodactyl|Aerodactyl, M|273\/363
+|-damage|p1a: Aerodactyl|183\/363|[from] Stealth Rock
+|-ability|p1a: Aerodactyl|Unnerve|p2: Meruu
+|
+|-heal|p2a: Arcanine|342\/384|[from] item: Leftovers
+|turn|13
+|
+|switch|p2a: Alomomola|Alomomola, F|416\/508
+|-damage|p2a: Alomomola|353\/508|[from] Spikes
+|detailschange|p1a: Aerodactyl|Aerodactyl-Mega, M
+|message|Aerodactyl has Mega Evolved into Mega Aerodactyl!
+|move|p1a: Aerodactyl|Taunt|p2a: Alomomola
+|-start|p2a: Alomomola|move: Taunt
+|
+|turn|14
+|
+|move|p1a: Aerodactyl|Toxic|p2a: Alomomola
+|-status|p2a: Alomomola|tox
+|move|p2a: Alomomola|Scald|p1a: Aerodactyl
+|-supereffective|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|79\/363
+|
+|-damage|p2a: Alomomola|322\/508 tox|[from] psn
+|turn|15
+|join|Pleasure Kitten
+|
+|move|p1a: Aerodactyl|Roost|p1a: Aerodactyl
+|-heal|p1a: Aerodactyl|261\/363
+|move|p2a: Alomomola|Scald|p1a: Aerodactyl
+|-supereffective|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|165\/363
+|-status|p1a: Aerodactyl|brn
+|
+|-damage|p1a: Aerodactyl|120\/363 brn|[from] brn
+|-damage|p2a: Alomomola|260\/508 tox|[from] psn
+|turn|16
+|
+|switch|p2a: Aggron|Aggron, M|145\/344
+|-damage|p2a: Aggron|102\/344|[from] Spikes
+|move|p1a: Aerodactyl|Roost|p1a: Aerodactyl
+|-heal|p1a: Aerodactyl|302\/363 brn
+|
+|-damage|p1a: Aerodactyl|257\/363 brn|[from] brn
+|turn|17
+|join|Limitless
+|
+|switch|p1a: Chesnaught|Chesnaught, M|332\/379
+|-damage|p1a: Chesnaught|309\/379|[from] Stealth Rock
+|detailschange|p2a: Aggron|Aggron-Mega, M
+|message|Aggron has Mega Evolved into Mega Aggron!
+|move|p2a: Aggron|Roar|p1a: Chesnaught
+|drag|p1a: Aromatisse|Aromatisse, M|295\/406
+|-damage|p1a: Aromatisse|245\/406|[from] Stealth Rock
+|
+|turn|18
+|
+|switch|p1a: Chesnaught|Chesnaught, M|309\/379
+|-damage|p1a: Chesnaught|286\/379|[from] Stealth Rock
+|move|p2a: Aggron|Roar|p1a: Chesnaught
+|drag|p1a: Sharpedo|Sharpedo, F|281\/281
+|-damage|p1a: Sharpedo|246\/281|[from] Stealth Rock
+|
+|turn|19
+|chat|Pleasure Kitten|hot
+|
+|move|p1a: Sharpedo|Waterfall|p2a: Aggron
+|-damage|p2a: Aggron|28\/344
+|-damage|p1a: Sharpedo|218\/281|[from] item: Life Orb
+|move|p2a: Aggron|Heavy Slam|p1a: Sharpedo
+|-resisted|p1a: Sharpedo
+|-damage|p1a: Sharpedo|38\/281
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|20
+|join|epic4eternity
+|
+|switch|p2a: Alomomola|Alomomola, F|429\/508 tox
+|-damage|p2a: Alomomola|366\/508 tox|[from] Spikes
+|move|p1a: Sharpedo|Crunch|p2a: Alomomola
+|-crit|p2a: Alomomola
+|-damage|p2a: Alomomola|103\/508 tox
+|-unboost|p2a: Alomomola|def|1
+|-damage|p1a: Sharpedo|10\/281|[from] item: Life Orb
+|
+|-damage|p2a: Alomomola|72\/508 tox|[from] psn
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|21
+|chat|FlareBlitz|Wallpedo
+|join|namehtmas
+|chat|Meruu|both
+|chat|Meruu|c
+|chat|Meruu|o
+|chat|Meruu|o
+|chat|Meruu|l
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|-damage|p2a: Blissey|625\/714|[from] Spikes
+|move|p1a: Sharpedo|Crunch|p2a: Blissey
+|-damage|p2a: Blissey|290\/714
+|-damage|p1a: Sharpedo|0 fnt|[from] item: Life Orb
+|faint|p1a: Sharpedo
+|
+|-heal|p2a: Blissey|334\/714|[from] item: Leftovers
+|chat|Pleasure Kitten|lol
+|
+|switch|p1a: Aromatisse|Aromatisse, M|245\/406
+|-damage|p1a: Aromatisse|195\/406|[from] Stealth Rock
+|turn|22
+|chat|epic4eternity|is this game 1
+|chat|FlareBlitz|Yes.
+|chat|namehtmas|is this for subparstars
+|
+|switch|p2a: Mew|Mew|279\/404
+|-damage|p2a: Mew|229\/404|[from] Spikes
+|move|p1a: Aromatisse|Wish|p1a: Aromatisse
+|
+|-heal|p2a: Mew|254\/404|[from] item: Leftovers
+|turn|23
+|chat|Meruu|its
+|chat|Meruu|xy
+|chat|namehtmas|or team trial w\/e
+|chat|Meruu|and you're asking
+|chat|Meruu|if its game 1
+|
+|move|p2a: Mew|Defog|p1a: Aromatisse
+|-unboost|p1a: Aromatisse|evasion|1
+|-sideend|p1: FlareBlitz|Stealth Rock|[from] move: Defog|[of] p1a: Aromatisse
+|-sideend|p2: Meruu|Spikes|[from] move: Defog|[of] p2a: Mew
+|move|p1a: Aromatisse|Calm Mind|p1a: Aromatisse
+|-boost|p1a: Aromatisse|spa|1
+|-boost|p1a: Aromatisse|spd|1
+|
+|-heal|p1a: Aromatisse|398\/406|[from] move: Wish|[wisher] Aromatisse
+|-heal|p2a: Mew|279\/404|[from] item: Leftovers
+|turn|24
+|chat|Pleasure Kitten|meru about to get
+|
+|switch|p2a: Blissey|Blissey, F|334\/714
+|move|p1a: Aromatisse|Calm Mind|p1a: Aromatisse
+|-boost|p1a: Aromatisse|spa|1
+|-boost|p1a: Aromatisse|spd|1
+|
+|-heal|p2a: Blissey|378\/714|[from] item: Leftovers
+|turn|25
+|chat|Pleasure Kitten|fucked up
+|chat|Pleasure Kitten|y\/y
+|join|Swamp Link
+|
+|move|p2a: Blissey|Toxic|p1a: Aromatisse
+|-status|p1a: Aromatisse|tox
+|move|p1a: Aromatisse|Moonblast|p2a: Blissey
+|-crit|p2a: Blissey
+|-damage|p2a: Blissey|134\/714
+|-unboost|p2a: Blissey|spa|1
+|
+|-heal|p2a: Blissey|178\/714|[from] item: Leftovers
+|-damage|p1a: Aromatisse|373\/406 tox|[from] psn
+|turn|26
+|
+|switch|p1a: Jirachi|Jirachi|403\/403
+|move|p2a: Blissey|Soft-Boiled|p2a: Blissey
+|-heal|p2a: Blissey|535\/714
+|
+|-heal|p2a: Blissey|579\/714|[from] item: Leftovers
+|turn|27
+|join|bouff
+|
+|switch|p2a: Arcanine|Arcanine, F|342\/384
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Jirachi
+|-unboost|p1a: Jirachi|atk|1
+|move|p1a: Jirachi|Stealth Rock|p2a: Arcanine
+|-sidestart|p2: Meruu|move: Stealth Rock
+|
+|-heal|p2a: Arcanine|366\/384|[from] item: Leftovers
+|turn|28
+|
+|move|p1a: Jirachi|Toxic|p2a: Arcanine
+|-status|p2a: Arcanine|tox
+|move|p2a: Arcanine|Flare Blitz|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|71\/403
+|-damage|p2a: Arcanine|256\/384 tox|[from] recoil|[of] p1a: Jirachi
+|
+|-heal|p1a: Jirachi|96\/403|[from] item: Leftovers
+|-heal|p2a: Arcanine|280\/384 tox|[from] item: Leftovers
+|-damage|p2a: Arcanine|256\/384 tox|[from] psn
+|turn|29
+|join|zTerribadTastic
+|chat|bouff|wtf flareblitz where is the rhyperior 
+|chat|FlareBlitz|wat
+|chat|bouff|you have one
+|chat|bouff|on every single team that ive seen you use
+|
+|switch|p1a: Aromatisse|Aromatisse, M|373\/406 tox
+|switch|p2a: Sableye|Sableye, F|304\/304
+|-damage|p2a: Sableye|266\/304|[from] Stealth Rock
+|
+|-heal|p2a: Sableye|285\/304|[from] item: Leftovers
+|-damage|p1a: Aromatisse|348\/406 tox|[from] psn
+|turn|30
+|chat|bouff|lol
+|
+|switch|p2a: Mew|Mew|279\/404
+|-damage|p2a: Mew|229\/404|[from] Stealth Rock
+|move|p1a: Aromatisse|Moonblast|p2a: Mew
+|-damage|p2a: Mew|150\/404
+|
+|-heal|p2a: Mew|175\/404|[from] item: Leftovers
+|-damage|p1a: Aromatisse|298\/406 tox|[from] psn
+|turn|31
+|chat|Ricardo333|One of the best battles i have ever seen
+|
+|move|p2a: Mew|Roost|p2a: Mew
+|-heal|p2a: Mew|377\/404
+|move|p1a: Aromatisse|Aromatherapy|p1a: Aromatisse
+|-cureteam|p1a: Aromatisse|[from] move: Aromatherapy
+|
+|-heal|p2a: Mew|402\/404|[from] item: Leftovers
+|turn|32
+|chat|bouff|i agree ricardo
+|chat|Pleasure Kitten|you need to see more battles
+|
+|switch|p1a: Victini|Victini|277\/341
+|move|p2a: Mew|Defog|p1a: Victini
+|-unboost|p1a: Victini|evasion|1
+|-sideend|p2: Meruu|Stealth Rock|[from] move: Defog|[of] p2a: Mew
+|
+|-heal|p1a: Victini|298\/341|[from] item: Leftovers
+|-heal|p2a: Mew|404\/404|[from] item: Leftovers
+|turn|33
+|
+|switch|p2a: Arcanine|Arcanine, F|256\/384 tox
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Victini
+|-unboost|p1a: Victini|atk|1
+|move|p1a: Victini|U-turn|p2a: Arcanine
+|-resisted|p2a: Arcanine
+|-damage|p2a: Arcanine|238\/384 tox
+|
+|switch|p1a: Aerodactyl|Aerodactyl-Mega, M|257\/363
+|
+|-heal|p2a: Arcanine|262\/384 tox|[from] item: Leftovers
+|-damage|p2a: Arcanine|238\/384 tox|[from] psn
+|turn|34
+|chat|Ricardo333|in this battle the predictions are awesome
+|chat|FlareBlitz|._.
+|chat|Meruu|I
+|chat|Meruu|shouldn't have let aggron lose health
+|chat|Meruu|derp
+|
+|switch|p2a: Mew|Mew|404\/404
+|move|p1a: Aerodactyl|Taunt|p2a: Mew
+|-start|p2a: Mew|move: Taunt
+|
+|turn|35
+|
+|move|p1a: Aerodactyl|Stone Edge|p2a: Mew|[miss]
+|-miss|p1a: Aerodactyl|p2a: Mew
+|move|p2a: Mew|Psychic|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|137\/363
+|
+|turn|36
+|
+|switch|p1a: Jirachi|Jirachi|96\/403
+|move|p2a: Mew|Psychic|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|68\/403
+|
+|-heal|p1a: Jirachi|93\/403|[from] item: Leftovers
+|turn|37
+|join|LUTSCHMEINSCHWANZ
+|
+|move|p1a: Jirachi|Toxic|p2a: Mew
+|-status|p2a: Mew|tox
+|move|p2a: Mew|Psychic|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|66\/403
+|
+|-heal|p1a: Jirachi|91\/403|[from] item: Leftovers
+|-damage|p2a: Mew|379\/404 tox|[from] psn
+|-end|p2a: Mew|move: Taunt
+|turn|38
+|
+|move|p1a: Jirachi|Iron Head|p2a: Mew
+|-damage|p2a: Mew|282\/404 tox
+|move|p2a: Mew|Will-O-Wisp|p1a: Jirachi
+|-status|p1a: Jirachi|brn
+|
+|-heal|p1a: Jirachi|116\/403 brn|[from] item: Leftovers
+|-heal|p2a: Mew|307\/404 tox|[from] item: Leftovers
+|-damage|p1a: Jirachi|66\/403 brn|[from] brn
+|-damage|p2a: Mew|257\/404 tox|[from] psn
+|turn|39
+|chat|Limitless|omg
+|chat|zTerribadTastic|Strong mew
+|
+|switch|p1a: Aromatisse|Aromatisse, M|298\/406
+|switch|p2a: Blissey|Blissey, F|579\/714
+|
+|-heal|p2a: Blissey|623\/714|[from] item: Leftovers
+|turn|40
+|chat|Limitless|are u using the bad koko set
+|chat|Pleasure Kitten|well trained
+|chat|Meruu|tg
+|chat|Limitless|?_?
+|chat|Pleasure Kitten|â¢ âÂ â¢
+|
+|move|p2a: Blissey|Heal Bell|p2a: Blissey
+|-cureteam|p2a: Blissey|[from] move: HealBell
+|move|p1a: Aromatisse|Aromatherapy|p1a: Aromatisse
+|-cureteam|p1a: Aromatisse|[from] move: Aromatherapy
+|
+|-heal|p2a: Blissey|667\/714|[from] item: Leftovers
+|turn|41
+|chat|bouff|LUTSCHMEINSCHWANZ joined.
+|
+|move|p2a: Blissey|Toxic|p1a: Aromatisse
+|-status|p1a: Aromatisse|tox
+|move|p1a: Aromatisse|Wish|p1a: Aromatisse
+|
+|-heal|p2a: Blissey|711\/714|[from] item: Leftovers
+|-damage|p1a: Aromatisse|273\/406 tox|[from] psn
+|turn|42
+|chat|epic4eternity|meruu has used the bad koko set too
+|chat|bouff|**M U S C H I**
+|
+|switch|p1a: Jirachi|Jirachi|66\/403
+|move|p2a: Blissey|Seismic Toss|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|faint|p1a: Jirachi
+|
+|-heal|p2a: Blissey|714\/714|[from] item: Leftovers
+|chat|Pleasure Kitten|Âº*â¢_â¢*Âª
+|
+|switch|p1a: Chesnaught|Chesnaught, M|286\/379
+|turn|43
+|chat|Meruu|o_o
+|
+|switch|p2a: Mew|Mew|257\/404
+|move|p1a: Chesnaught|Leech Seed|p2a: Mew
+|-start|p2a: Mew|move: Leech Seed
+|
+|-heal|p2a: Mew|282\/404|[from] item: Leftovers
+|-heal|p1a: Chesnaught|309\/379|[from] item: Leftovers
+|-damage|p2a: Mew|232\/404|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|359\/379|[silent]
+|turn|44
+|chat|Pleasure Kitten|Â¢_Â¢
+|chat|namehtmas|remember when chesnaught was good
+|leave|Limitless
+|
+|switch|p2a: Alomomola|Alomomola, F|241\/508
+|switch|p1a: Victini|Victini|298\/341
+|
+|-heal|p1a: Victini|319\/341|[from] item: Leftovers
+|turn|45
+|chat|Pleasure Kitten|no
+|join|chili verde
+|chat|bouff|like
+|
+|switch|p2a: Arcanine|Arcanine, F|238\/384
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Victini
+|-unboost|p1a: Victini|atk|1
+|move|p1a: Victini|Bolt Strike|p2a: Arcanine
+|-damage|p2a: Arcanine|165\/384
+|
+|-heal|p1a: Victini|340\/341|[from] item: Leftovers
+|-heal|p2a: Arcanine|189\/384|[from] item: Leftovers
+|turn|46
+|chat|bouff|5 months ago yeah
+|chat|Pleasure Kitten|Â¶rooting for meruÂ¶
+|chat|bouff|and even then
+|chat|Pleasure Kitten|Â¶wave the flagÂ¶
+|chat|bouff|it was just for craw
+|
+|move|p1a: Victini|U-turn|p2a: Arcanine
+|-resisted|p2a: Arcanine
+|-damage|p2a: Arcanine|170\/384
+|chat|namehtmas|it was real good early uu
+|
+|switch|p1a: Aerodactyl|Aerodactyl-Mega, M|137\/363
+|move|p2a: Arcanine|Morning Sun|p2a: Arcanine
+|-heal|p2a: Arcanine|362\/384
+|
+|-heal|p2a: Arcanine|384\/384|[from] item: Leftovers
+|turn|47
+|chat|Meruu|tbh i just stole this team from the guy who beat me in team trials
+|chat|bouff|Â¶lick my peen meruÂ¶
+|chat|Meruu|x]
+|chat|namehtmas|who beat u
+|chat|Pleasure Kitten|wasn't it
+|chat|Pleasure Kitten|sapientia
+|chat|epic4eternity|lowgock
+|chat|Pleasure Kitten|or was that badass
+|chat|Pleasure Kitten|oh lowgock
+|chat|Meruu|some dude who said "o this is my first uu battle evar"
+|join|Volbeatdown
+|join|6 v 6 sunkerns
+|chat|epic4eternity|bad ass loss to sapientia
+|chat|Pleasure Kitten|meru
+|chat|Pleasure Kitten|i'm ashamed
+|
+|switch|p2a: Sableye|Sableye, F|285\/304
+|move|p1a: Aerodactyl|Stone Edge|p2a: Sableye
+|-damage|p2a: Sableye|80\/304
+|
+|-heal|p2a: Sableye|99\/304|[from] item: Leftovers
+|turn|48
+|chat|Pleasure Kitten|oh damage
+|chat|LUTSCHMEINSCHWANZ|counter
+|join|smurfer
+|
+|move|p2a: Sableye|Will-O-Wisp|p1a: Aerodactyl
+|-status|p1a: Aerodactyl|brn
+|move|p1a: Aerodactyl|Stone Edge|p2a: Sableye
+|-damage|p2a: Sableye|9\/304
+|
+|-heal|p2a: Sableye|28\/304|[from] item: Leftovers
+|-damage|p1a: Aerodactyl|92\/363 brn|[from] brn
+|turn|49
+|chat|Meruu|y
+|chat|Pleasure Kitten|ah not bad
+|
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|180\/304
+|move|p1a: Aerodactyl|Toxic|p2a: Sableye
+|-status|p2a: Sableye|tox
+|
+|-heal|p2a: Sableye|199\/304 tox|[from] item: Leftovers
+|-damage|p1a: Aerodactyl|47\/363 brn|[from] brn
+|-damage|p2a: Sableye|180\/304 tox|[from] psn
+|turn|50
+|chat|Pleasure Kitten|Â¶sableyeÂ¶
+|leave|zTerribadTastic
+|
+|switch|p1a: Aromatisse|Aromatisse, M|273\/406 tox
+|switch|p2a: Aggron|Aggron-Mega, M|28\/344
+|
+|-damage|p1a: Aromatisse|248\/406 tox|[from] psn
+|turn|51
+|join|Garmanize29
+|chat|Meruu|is this over yet
+|chat|Pleasure Kitten|yes
+|chat|Pleasure Kitten|it is now
+|chat|Pleasure Kitten|tbh
+|chat|Meruu|tbh maggron gets a bad rap
+|chat|Meruu|it's pretty damn good
+|
+|switch|p1a: Victini|Victini|340\/341
+|move|p2a: Aggron|Stealth Rock|p1a: Victini
+|-sidestart|p1: FlareBlitz|move: Stealth Rock
+|
+|-heal|p1a: Victini|341\/341|[from] item: Leftovers
+|turn|52
+|chat|Pleasure Kitten|i wrote
+|chat|Pleasure Kitten|a fabulous analysis on it
+|leave|Garmanize29
+|chat|Pleasure Kitten|idk what ur talking about
+|chat|Meruu|nigga u havent even written rhyperior
+|
+|switch|p2a: Arcanine|Arcanine, F|384\/384
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Victini
+|-unboost|p1a: Victini|atk|1
+|move|p1a: Victini|Bolt Strike|p2a: Arcanine
+|-crit|p2a: Arcanine
+|-damage|p2a: Arcanine|231\/384
+|
+|-heal|p2a: Arcanine|255\/384|[from] item: Leftovers
+|turn|53
+|chat|Pleasure Kitten|yes i did
+|chat|Pleasure Kitten|it's in qc
+|chat|Pleasure Kitten|?.?
+|chat|Pleasure Kitten|i have to write infernape
+|chat|Pleasure Kitten|which will be
+|
+|move|p1a: Victini|Bolt Strike|p2a: Arcanine
+|-damage|p2a: Arcanine|178\/384
+|move|p2a: Arcanine|Morning Sun|p2a: Arcanine
+|-heal|p2a: Arcanine|370\/384
+|
+|-heal|p2a: Arcanine|384\/384|[from] item: Leftovers
+|turn|54
+|chat|Pleasure Kitten|a massive bitch
+|chat|Meruu|i have to kill this thing
+|chat|namehtmas|mmm luc
+|chat|Meruu|which will be
+|chat|namehtmas|all 2 sets
+|chat|Meruu|a massive bitch
+|join|Jaycee
+|chat|Pleasure Kitten|just
+|
+|switch|p2a: Alomomola|Alomomola, F|410\/508
+|move|p1a: Victini|U-turn|p2a: Alomomola
+|-crit|p2a: Alomomola
+|-damage|p2a: Alomomola|318\/508
+|chat|Pleasure Kitten|yeah
+|chat|Meruu|nerd
+|
+|switch|p1a: Chesnaught|Chesnaught, M|359\/379
+|-damage|p1a: Chesnaught|336\/379|[from] Stealth Rock
+|
+|-heal|p1a: Chesnaught|359\/379|[from] item: Leftovers
+|turn|55
+|join|zTerribadTastic
+|
+|move|p1a: Chesnaught|Leech Seed|p2a: Alomomola
+|-start|p2a: Alomomola|move: Leech Seed
+|move|p2a: Alomomola|Toxic|p1a: Chesnaught
+|-status|p1a: Chesnaught|tox
+|
+|-heal|p1a: Chesnaught|379\/379 tox|[from] item: Leftovers
+|-damage|p2a: Alomomola|255\/508|[from] Leech Seed|[of] p1a: Chesnaught
+|-damage|p1a: Chesnaught|356\/379 tox|[from] psn
+|turn|56
+|chat|Pleasure Kitten|ââââ victini's health bar
+|chat|Pleasure Kitten|Â¶victiniÂ¶
+|chat|Meruu|do i rly have to pp stall
+|chat|Jaycee|do it
+|chat|Pleasure Kitten|look at your team meru
+|chat|Pleasure Kitten|ur not allowed to complane
+|chat|Jaycee|if real
+|
+|switch|p2a: Mew|Mew|232\/404
+|move|p1a: Chesnaught|Leech Seed|p2a: Mew
+|-start|p2a: Mew|move: Leech Seed
+|
+|-heal|p2a: Mew|257\/404|[from] item: Leftovers
+|-heal|p1a: Chesnaught|379\/379 tox|[from] item: Leftovers
+|-damage|p2a: Mew|207\/404|[from] Leech Seed|[of] p1a: Chesnaught
+|-damage|p1a: Chesnaught|333\/379 tox|[from] psn
+|turn|57
+|
+|move|p2a: Mew|Psychic|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-damage|p1a: Chesnaught|75\/379 tox
+|move|p1a: Chesnaught|Spikes|p2a: Mew
+|-sidestart|p2: Meruu|Spikes
+|
+|-heal|p2a: Mew|232\/404|[from] item: Leftovers
+|-heal|p1a: Chesnaught|98\/379 tox|[from] item: Leftovers
+|-damage|p2a: Mew|182\/404|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|148\/379 tox|[silent]
+|-damage|p1a: Chesnaught|79\/379 tox|[from] psn
+|turn|58
+|chat|Pleasure Kitten|oo
+|chat|Pleasure Kitten|â
+|
+|switch|p1a: Aerodactyl|Aerodactyl-Mega, M|47\/363 brn
+|-damage|p1a: Aerodactyl|0 fnt|[from] Stealth Rock
+|faint|p1a: Aerodactyl
+|move|p2a: Mew|Defog|p1: Aerodactyl|[notarget]
+|-notarget
+|
+|-heal|p2a: Mew|207\/404|[from] item: Leftovers
+|
+|switch|p1a: Victini|Victini|341\/341
+|-damage|p1a: Victini|256\/341|[from] Stealth Rock
+|turn|59
+|chat|namehtmas|â
+|chat|Meruu|FUCKER
+|chat|Pleasure Kitten|well done
+|
+|switch|p2a: Arcanine|Arcanine, F|384\/384
+|-damage|p2a: Arcanine|336\/384|[from] Spikes
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Victini
+|-unboost|p1a: Victini|atk|1
+|move|p1a: Victini|Bolt Strike|p2a: Arcanine
+|-damage|p2a: Arcanine|259\/384
+|-status|p2a: Arcanine|par
+|
+|-heal|p1a: Victini|277\/341|[from] item: Leftovers
+|-heal|p2a: Arcanine|283\/384 par|[from] item: Leftovers
+|turn|60
+|chat|Pleasure Kitten|lol
+|chat|Meruu|x_x
+|
+|move|p2a: Arcanine|Extreme Speed|p1a: Victini
+|-damage|p1a: Victini|215\/341
+|move|p1a: Victini|U-turn|p2a: Arcanine
+|-resisted|p2a: Arcanine
+|-damage|p2a: Arcanine|264\/384 par
+|chat|zTerribadTastic|the comeback is real
+|chat|Pleasure Kitten|no
+|chat|Meruu|how tf
+|chat|Pleasure Kitten|rk9 just stays in atm
+|chat|Meruu|is he gonna come back
+|chat|Meruu|with this
+|chat|Pleasure Kitten|lol
+|
+|switch|p1a: Chesnaught|Chesnaught, M|79\/379 tox
+|-damage|p1a: Chesnaught|56\/379 tox|[from] Stealth Rock
+|
+|-heal|p1a: Chesnaught|79\/379 tox|[from] item: Leftovers
+|-heal|p2a: Arcanine|288\/384 par|[from] item: Leftovers
+|-damage|p1a: Chesnaught|56\/379 tox|[from] psn
+|turn|61
+|
+|move|p2a: Arcanine|Extreme Speed|p1a: Chesnaught
+|-damage|p1a: Chesnaught|13\/379 tox
+|move|p1a: Chesnaught|Leech Seed|p2a: Arcanine
+|-start|p2a: Arcanine|move: Leech Seed
+|
+|-heal|p1a: Chesnaught|36\/379 tox|[from] item: Leftovers
+|-heal|p2a: Arcanine|312\/384 par|[from] item: Leftovers
+|-damage|p2a: Arcanine|264\/384 par|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|84\/379 tox|[silent]
+|-damage|p1a: Chesnaught|38\/379 tox|[from] psn
+|turn|62
+|chat|LUTSCHMEINSCHWANZ|this is why theres cm chandy
+|chat|zTerribadTastic|Dude no idea, it looks like he's been 100% dead for like 40 turns now, but its more amusing ot asume high skill comeback
+|chat|zTerribadTastic|than 80 turns of god damnit stall stap
+|chat|Pleasure Kitten|stall confirmed overpowered
+|
+|switch|p2a: Mew|Mew|207\/404
+|-damage|p2a: Mew|157\/404|[from] Spikes
+|move|p1a: Chesnaught|Spikes|p2a: Mew
+|-sidestart|p2: Meruu|Spikes
+|
+|-heal|p2a: Mew|182\/404|[from] item: Leftovers
+|-heal|p1a: Chesnaught|61\/379 tox|[from] item: Leftovers
+|-damage|p1a: Chesnaught|0 fnt|[from] psn
+|faint|p1a: Chesnaught
+|chat|Meruu|zz
+|chat|Meruu|I don't want spikes
+|
+|switch|p1a: Victini|Victini|215\/341
+|-damage|p1a: Victini|130\/341|[from] Stealth Rock
+|turn|63
+|chat|Meruu|nerd
+|
+|switch|p2a: Arcanine|Arcanine, F|264\/384 par
+|-damage|p2a: Arcanine|200\/384 par|[from] Spikes
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Victini
+|-unboost|p1a: Victini|atk|1
+|move|p1a: Victini|Bolt Strike|p2a: Arcanine
+|-damage|p2a: Arcanine|125\/384 par
+|
+|-heal|p1a: Victini|151\/341|[from] item: Leftovers
+|-heal|p2a: Arcanine|149\/384 par|[from] item: Leftovers
+|turn|64
+|chat|LUTSCHMEINSCHWANZ|para here
+|chat|namehtmas|parahax x2
+|chat|zTerribadTastic|tini, go the distance
+|
+|move|p1a: Victini|Bolt Strike|p2a: Arcanine
+|-crit|p2a: Arcanine
+|-damage|p2a: Arcanine|0 fnt
+|faint|p2a: Arcanine
+|
+|-heal|p1a: Victini|172\/341|[from] item: Leftovers
+|chat|Meruu|zzzzzzz
+|chat|namehtmas|hahaha
+|chat|LUTSCHMEINSCHWANZ|not
+|
+|switch|p2a: Alomomola|Alomomola, F|424\/508
+|-damage|p2a: Alomomola|340\/508|[from] Spikes
+|turn|65
+|chat|FlareBlitz|._.
+|chat|zTerribadTastic|OH BABY
+|chat|LUTSCHMEINSCHWANZ|fcuking bad
+|chat|bouff|it is hele
+|chat|LUTSCHMEINSCHWANZ|MUSCHI
+|chat|6 v 6 sunkerns|RNG works differently
+|
+|move|p1a: Victini|U-turn|p2a: Alomomola
+|-damage|p2a: Alomomola|304\/508
+|
+|switch|p1a: Aromatisse|Aromatisse, M|248\/406 tox
+|-damage|p1a: Aromatisse|198\/406 tox|[from] Stealth Rock
+|move|p2a: Alomomola|Scald|p1a: Aromatisse
+|-damage|p1a: Aromatisse|147\/406 tox
+|
+|-damage|p1a: Aromatisse|122\/406 tox|[from] psn
+|turn|66
+|
+|switch|p2a: Blissey|Blissey, F|714\/714
+|-damage|p2a: Blissey|595\/714|[from] Spikes
+|move|p1a: Aromatisse|Wish|p1a: Aromatisse
+|
+|-heal|p2a: Blissey|639\/714|[from] item: Leftovers
+|-damage|p1a: Aromatisse|72\/406 tox|[from] psn
+|turn|67
+|
+|switch|p1a: Victini|Victini|172\/341
+|-damage|p1a: Victini|87\/341|[from] Stealth Rock
+|move|p2a: Blissey|Seismic Toss|p1a: Victini
+|-damage|p1a: Victini|0 fnt
+|faint|p1a: Victini
+|
+|-heal|p2a: Blissey|683\/714|[from] item: Leftovers
+|chat|FlareBlitz|Aww.
+|chat|Meruu|gg
+|chat|zTerribadTastic|RIP
+|chat|FlareBlitz|gg.
+|chat|Pleasure Kitten|Â¶new bloodÂ¶
+|chat|Swamp Link|lucky n bad
+|chat|Meruu|i know u hav
+|chat|Meruu|no protect
+|chat|Meruu|also this isnt
+|chat|Meruu|team trials
+|chat|Meruu|for like the 10th time
+|chat|Pleasure Kitten|ik
+|chat|FlareBlitz|lul
+|chat|Pleasure Kitten|but still
+|chat|Pleasure Kitten|=<)
+|chat|Pleasure Kitten|Â¶Â¶new bludÂ¶Â¶
+|chat|FlareBlitz|Game 2 BW?
+|chat|FlareBlitz|Ready?
+|chat|bouff|Â¶**MERU FUCK ME**Â¶
+|chat|bouff|Â¶**MERU FUCK ME**Â¶
+|chat|bouff|Â¶**MERU FUCK ME**Â¶
+|chat|bouff|Â¶**MERU FUCK ME**Â¶
+|chat|Meruu|0_0
+|chat|bouff|Â¶**MERU FUCK ME**Â¶
+|chat|bouff|Â¶**MERU FUCK ME**Â¶
+|chat|Meruu|I hate bw
+|chat|bouff|Â¶**MERU FUCK ME**Â¶
+|chat|namehtmas|steel-type city baby
+|chat|FlareBlitz|Er
+|chat|Meruu|I don't even know
+|chat|Meruu|the meta
+|chat|Meruu|at all
+|leave|smurfer
+|leave|Swamp Link
+|chat|Meruu|kitten give me a team
+|chat|FlareBlitz|We have to do BW lol
+|chat|Pleasure Kitten|i'm going
+|chat|bouff|implying
+|chat|FlareBlitz|Don't we?
+|chat|Pleasure Kitten|gn
+|chat|bouff|anyone knows the meta
+|leave|6 v 6 sunkerns
+|join|Swamp Link
+|leave|Swamp Link
+|leave|zTerribadTastic
+|chat|Meruu|finish this game so I can get replay
+|chat|Meruu|x_x
+|chat|FlareBlitz|Oh
+|chat|FlareBlitz|Sorry
+|chat|FlareBlitz|I thought alom was dead
+|
+|switch|p1a: Aromatisse|Aromatisse, M|72\/406 tox
+|-damage|p1a: Aromatisse|22\/406 tox|[from] Stealth Rock
+|turn|68
+|chat|Meruu|also dont use cm aromatisse
+|chat|Meruu|if you do, use drain kiss
+|chat|Meruu|B)
+|chat|FlareBlitz|Or aroma rather*
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Aromatisse
+|-damage|p1a: Aromatisse|0 fnt
+|faint|p1a: Aromatisse
+|
+|win|Meruu
+|chat|FlareBlitz|gg.
+|leave|FlareBlitz
+|player|p1
+|chat|Meruu|ya
+|leave|Meruu
+|player|p2
+|leave|epic4eternity
+|leave|bouff
+|leave|LUTSCHMEINSCHWANZ
+|leave|Volbeatdown
+|join|zTerribadTastic
+|join|Bud Hertz
+|join|LUTSCHMEINSCHWANZ
+|leave|zTerribadTastic
+|leave|LUTSCHMEINSCHWANZ
+|join|LUTSCHMEINSCHWANZ
+|leave|LUTSCHMEINSCHWANZ
+|join|wot4
+|join|BasedAaron
+|leave|BasedAaron
+|leave|Bud Hertz
+|leave|Jaycee
+|leave|Nas
+|leave|Ricardo333
+|leave|wot4
+|join|wot4
+|leave|wot4
+|join|wot4

@@ -1,0 +1,371 @@
+|join|Vanilla Vanish
+|join|Lady Barbie
+|player|p1|Vanilla Vanish|169
+|player|p2|Lady Barbie|78
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Charizard, F
+|poke|p1|Shuckle, M
+|poke|p1|Trevenant, M
+|poke|p1|Starmie
+|poke|p1|Lucario, F
+|poke|p1|Rotom-Wash
+|poke|p2|Miltank, F
+|poke|p2|Seismitoad, F
+|poke|p2|Mandibuzz, F
+|poke|p2|Darmanitan, M
+|poke|p2|Clefable, M
+|poke|p2|Amoonguss, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Shuckle|Shuckle, M|244\/244
+|switch|p2a: Seismitoad|Seismitoad, F|414\/414
+|turn|1
+|callback|decision
+|
+|move|p2a: Seismitoad|Stealth Rock|p1a: Shuckle
+|-sidestart|p1: Vanilla Vanish|move: Stealth Rock
+|move|p1a: Shuckle|Sticky Web|p2a: Seismitoad
+|-sidestart|p2: Lady Barbie|move: Sticky Web
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Seismitoad|Scald|p1a: Shuckle
+|-supereffective|p1a: Shuckle
+|-damage|p1a: Shuckle|178\/244
+|move|p1a: Shuckle|Stealth Rock|p2a: Seismitoad
+|-sidestart|p2: Lady Barbie|move: Stealth Rock
+|
+|-heal|p1a: Shuckle|193\/244|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie|261\/261
+|-damage|p1a: Starmie|229\/261|[from] Stealth Rock
+|move|p2a: Seismitoad|Scald|p1a: Starmie
+|-resisted|p1a: Starmie
+|-damage|p1a: Starmie|181\/261
+|
+|turn|4
+|callback|decision
+|
+|move|p1a: Starmie|Rapid Spin|p2a: Seismitoad
+|-damage|p2a: Seismitoad|393\/414
+|-sideend|p1: Vanilla Vanish|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Starmie
+|-damage|p1a: Starmie|155\/261|[from] item: Life Orb
+|move|p2a: Seismitoad|Earthquake|p1a: Starmie
+|-damage|p1a: Starmie|0 fnt
+|faint|p1a: Starmie
+|
+|-heal|p2a: Seismitoad|414\/414|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Charizard|Charizard, F|298\/298
+|turn|5
+|callback|decision
+|
+|switch|p2a: Miltank|Miltank, F|394\/394
+|-damage|p2a: Miltank|345\/394|[from] Stealth Rock
+|-activate|p2a: Miltank|move: Sticky Web
+|-unboost|p2a: Miltank|spe|1
+|-formechange|p1a: Charizard|Charizard-Mega-Y
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p1a: Charizard|Solar Beam|p2a: Miltank|[still]
+|-prepare|p1a: Charizard|Solar Beam|p2a: Miltank
+|-anim|p1a: Charizard|Solar Beam|p2a: Miltank
+|-boost|p2a: Miltank|atk|1|[from] ability: Sap Sipper
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Miltank|369\/394|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p1a: Charizard|Focus Blast|p2a: Miltank
+|-supereffective|p2a: Miltank
+|-damage|p2a: Miltank|0 fnt
+|faint|p2a: Miltank
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p2a: Amoonguss|Amoonguss, F|432\/432
+|-activate|p2a: Amoonguss|move: Sticky Web
+|-unboost|p2a: Amoonguss|spe|1
+|-damage|p2a: Amoonguss|378\/432|[from] Stealth Rock
+|turn|7
+|callback|decision
+|
+|move|p1a: Charizard|Flamethrower|p2a: Amoonguss
+|-crit|p2a: Amoonguss
+|-supereffective|p2a: Amoonguss
+|-damage|p2a: Amoonguss|0 fnt
+|faint|p2a: Amoonguss
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|
+|switch|p2a: Clefable|Clefable, M|394\/394
+|-activate|p2a: Clefable|move: Sticky Web
+|-unboost|p2a: Clefable|spe|1
+|turn|8
+|callback|decision
+|
+|switch|p1a: Shuckle|Shuckle, M|193\/244
+|move|p2a: Clefable|Thunderbolt|p1a: Shuckle
+|-damage|p1a: Shuckle|144\/244
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p1a: Shuckle|159\/244|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p2a: Mandibuzz|Mandibuzz, F|424\/424
+|-damage|p2a: Mandibuzz|318\/424|[from] Stealth Rock
+|move|p1a: Shuckle|Toxic|p2a: Mandibuzz
+|-status|p2a: Mandibuzz|tox
+|
+|-weather|none
+|-heal|p1a: Shuckle|174\/244|[from] item: Leftovers
+|-damage|p2a: Mandibuzz|292\/424 tox|[from] psn
+|turn|10
+|callback|decision
+|
+|move|p2a: Mandibuzz|Defog|p1a: Shuckle
+|-unboost|p1a: Shuckle|evasion|1
+|-sideend|p2: Lady Barbie|Stealth Rock|[from] move: Defog|[of] p2a: Mandibuzz
+|-sideend|p2: Lady Barbie|Sticky Web|[from] move: Defog|[of] p2a: Mandibuzz
+|move|p1a: Shuckle|Encore|p2a: Mandibuzz
+|-start|p2a: Mandibuzz|Encore
+|
+|-heal|p1a: Shuckle|189\/244|[from] item: Leftovers
+|-damage|p2a: Mandibuzz|240\/424 tox|[from] psn
+|turn|11
+|callback|decision
+|
+|switch|p2a: Darmanitan|Darmanitan, M|351\/351
+|move|p1a: Shuckle|Toxic|p2a: Darmanitan
+|-status|p2a: Darmanitan|tox
+|
+|-heal|p1a: Shuckle|204\/244|[from] item: Leftovers
+|-damage|p2a: Darmanitan|330\/351 tox|[from] psn
+|turn|12
+|callback|decision
+|
+|move|p2a: Darmanitan|Superpower|p1a: Shuckle
+|-damage|p1a: Shuckle|136\/244
+|-unboost|p2a: Darmanitan|atk|1
+|-unboost|p2a: Darmanitan|def|1
+|move|p1a: Shuckle|Sticky Web|p2a: Darmanitan
+|-sidestart|p2: Lady Barbie|move: Sticky Web
+|
+|-heal|p1a: Shuckle|151\/244|[from] item: Leftovers
+|-damage|p2a: Darmanitan|288\/351 tox|[from] psn
+|turn|13
+|callback|decision
+|
+|switch|p2a: Seismitoad|Seismitoad, F|414\/414
+|-activate|p2a: Seismitoad|move: Sticky Web
+|-unboost|p2a: Seismitoad|spe|1
+|move|p1a: Shuckle|Stealth Rock|p2a: Seismitoad
+|-sidestart|p2: Lady Barbie|move: Stealth Rock
+|
+|-heal|p1a: Shuckle|166\/244|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p2a: Seismitoad|Stealth Rock|p1a: Shuckle
+|-sidestart|p1: Vanilla Vanish|move: Stealth Rock
+|move|p1a: Shuckle|Toxic|p2a: Seismitoad
+|-status|p2a: Seismitoad|tox
+|
+|-heal|p1a: Shuckle|181\/244|[from] item: Leftovers
+|-damage|p2a: Seismitoad|389\/414 tox|[from] psn
+|turn|15
+|callback|decision
+|
+|move|p2a: Seismitoad|Scald|p1a: Shuckle
+|-supereffective|p1a: Shuckle
+|-damage|p1a: Shuckle|113\/244
+|move|p1a: Shuckle|Encore|p2a: Seismitoad
+|-start|p2a: Seismitoad|Encore
+|
+|-heal|p2a: Seismitoad|414\/414 tox|[from] item: Leftovers
+|-heal|p1a: Shuckle|128\/244|[from] item: Leftovers
+|-damage|p2a: Seismitoad|364\/414 tox|[from] psn
+|turn|16
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|241\/241
+|-damage|p1a: Rotom-Wash|211\/241|[from] Stealth Rock
+|move|p2a: Seismitoad|Scald|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|172\/241
+|-status|p1a: Rotom-Wash|brn
+|
+|-heal|p2a: Seismitoad|389\/414 tox|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|142\/241 brn|[from] brn
+|-damage|p2a: Seismitoad|314\/414 tox|[from] psn
+|turn|17
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Thunderbolt|p2a: Seismitoad
+|-immune|p2a: Seismitoad|[msg]
+|move|p2a: Seismitoad|Scald|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|102\/241 brn
+|
+|-heal|p2a: Seismitoad|339\/414 tox|[from] item: Leftovers
+|-damage|p1a: Rotom-Wash|72\/241 brn|[from] brn
+|-damage|p2a: Seismitoad|239\/414 tox|[from] psn
+|turn|18
+|callback|decision
+|
+|switch|p1a: Lucario|Lucario, F|282\/282
+|-damage|p1a: Lucario|274\/282|[from] Stealth Rock
+|move|p2a: Seismitoad|Scald|p1a: Lucario
+|-damage|p1a: Lucario|171\/282
+|-status|p1a: Lucario|brn
+|-enditem|p1a: Lucario|Lum Berry|[eat]
+|-curestatus|p1a: Lucario|brn
+|
+|-heal|p2a: Seismitoad|264\/414 tox|[from] item: Leftovers
+|-damage|p2a: Seismitoad|139\/414 tox|[from] psn
+|-end|p2a: Seismitoad|Encore
+|turn|19
+|callback|decision
+|
+|move|p1a: Lucario|Swords Dance|p1a: Lucario
+|-boost|p1a: Lucario|atk|2
+|move|p2a: Seismitoad|Earthquake|p1a: Lucario
+|-supereffective|p1a: Lucario
+|-damage|p1a: Lucario|0 fnt
+|faint|p1a: Lucario
+|
+|-heal|p2a: Seismitoad|164\/414 tox|[from] item: Leftovers
+|-damage|p2a: Seismitoad|14\/414 tox|[from] psn
+|callback|decision
+|
+|switch|p1a: Trevenant|Trevenant, M|374\/374
+|-damage|p1a: Trevenant|328\/374|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|move|p1a: Trevenant|Protect|p1a: Trevenant
+|-singleturn|p1a: Trevenant|Protect
+|move|p2a: Seismitoad|Earthquake|p1a: Trevenant
+|-activate|p1a: Trevenant|Protect
+|
+|-heal|p2a: Seismitoad|39\/414 tox|[from] item: Leftovers
+|-damage|p2a: Seismitoad|0 fnt|[from] psn
+|faint|p2a: Seismitoad
+|callback|decision
+|
+|switch|p2a: Clefable|Clefable, M|394\/394
+|-activate|p2a: Clefable|move: Sticky Web
+|-unboost|p2a: Clefable|spe|1
+|turn|21
+|callback|decision
+|
+|move|p1a: Trevenant|Leech Seed|p2a: Clefable|[miss]
+|-miss|p1a: Trevenant|p2a: Clefable
+|move|p2a: Clefable|Moonblast|p1a: Trevenant
+|-damage|p1a: Trevenant|108\/374
+|-unboost|p1a: Trevenant|spa|1
+|-enditem|p1a: Trevenant|Sitrus Berry|[eat]
+|-heal|p1a: Trevenant|201\/374|[from] item: Sitrus Berry
+|
+|-item|p1a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|turn|22
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|72\/241 brn
+|-damage|p1a: Rotom-Wash|42\/241 brn|[from] Stealth Rock
+|move|p2a: Clefable|Psyshock|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|0 fnt
+|faint|p1a: Rotom-Wash
+|
+|callback|decision
+|
+|switch|p1a: Trevenant|Trevenant, M|201\/374
+|-damage|p1a: Trevenant|155\/374|[from] Stealth Rock
+|-enditem|p1a: Trevenant|Sitrus Berry|[eat]
+|-heal|p1a: Trevenant|248\/374|[from] item: Sitrus Berry
+|turn|23
+|callback|decision
+|
+|move|p1a: Trevenant|Leech Seed|p2a: Clefable
+|-start|p2a: Clefable|move: Leech Seed
+|move|p2a: Clefable|Psyshock|p1a: Trevenant
+|-damage|p1a: Trevenant|154\/374
+|
+|-item|p1a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|-enditem|p1a: Trevenant|Sitrus Berry|[eat]
+|-heal|p1a: Trevenant|247\/374|[from] item: Sitrus Berry
+|turn|24
+|callback|decision
+|
+|move|p1a: Trevenant|Will-O-Wisp|p2a: Clefable
+|-status|p2a: Clefable|brn
+|move|p2a: Clefable|Moonblast|p1a: Trevenant
+|-damage|p1a: Trevenant|12\/374
+|
+|-item|p1a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|-enditem|p1a: Trevenant|Sitrus Berry|[eat]
+|-heal|p1a: Trevenant|105\/374|[from] item: Sitrus Berry
+|turn|25
+|callback|decision
+|
+|move|p1a: Trevenant|Protect|p1a: Trevenant
+|-singleturn|p1a: Trevenant|Protect
+|move|p2a: Clefable|Moonblast|p1a: Trevenant
+|-activate|p1a: Trevenant|Protect
+|
+|turn|26
+|callback|decision
+|
+|switch|p1a: Shuckle|Shuckle, M|128\/244
+|-damage|p1a: Shuckle|67\/244|[from] Stealth Rock
+|move|p2a: Clefable|Moonblast|p1a: Shuckle
+|-damage|p1a: Shuckle|0 fnt
+|faint|p1a: Shuckle
+|
+|callback|decision
+|
+|switch|p1a: Charizard|Charizard, F|298\/298
+|-formechange|p1a: Charizard|Charizard-Mega-Y
+|-damage|p1a: Charizard|149\/298|[from] Stealth Rock
+|-weather|SunnyDay
+|turn|27
+|callback|decision
+|
+|move|p1a: Charizard|Flamethrower|p2a: Clefable
+|-damage|p2a: Clefable|73\/394 brn
+|move|p2a: Clefable|Thunderbolt|p1a: Charizard
+|-supereffective|p1a: Charizard
+|-damage|p1a: Charizard|0 fnt
+|faint|p1a: Charizard
+|
+|-weather|SunnyDay|[upkeep]
+|callback|decision
+|-message|Vanilla Vanish forfeited.
+|
+|win|Lady Barbie
+|raw|Ladder updating...
+|leave|Vanilla Vanish
+|player|p1
+|raw|Vanilla Vanish's rating: 1243 &rarr; <strong>1217<\/strong><br \/>(-26 for losing)
+|raw|Lady Barbie's rating: 1228 &rarr; <strong>1254<\/strong><br \/>(+26 for winning)

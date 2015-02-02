@@ -1,0 +1,358 @@
+|join|KazThaFknBEST
+|join|bange
+|player|p1|KazThaFknBEST|266
+|player|p2|bange|142
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Dusclops, M
+|poke|p1|Ferrothorn, F
+|poke|p1|Politoed, F
+|poke|p1|Starmie
+|poke|p1|Jirachi
+|poke|p1|Dragonite, F
+|poke|p2|Zoroark, M, shiny
+|poke|p2|Reuniclus, M
+|poke|p2|Mamoswine, M
+|poke|p2|Ferrothorn, M
+|poke|p2|Jellicent, M
+|poke|p2|Xatu, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Politoed|Politoed, F|384\/384
+|switch|p2a: Xatu|Xatu, F|262\/262
+|-weather|RainDance|[from] ability: Drizzle|[of] p1a: Politoed
+|turn|1
+|callback|decision
+|
+|move|p2a: Xatu|U-turn|p1a: Politoed
+|-damage|p1a: Politoed|237\/384
+|callback|decision
+|
+|switch|p2a: Jellicent|Jellicent, M|404\/404
+|move|p1a: Politoed|Ice Beam|p2a: Jellicent
+|-resisted|p2a: Jellicent
+|-damage|p2a: Jellicent|348\/404
+|
+|-weather|RainDance|[upkeep]
+|turn|2
+|callback|decision
+|chat|KazThaFknBEST|thats a first
+|chat|KazThaFknBEST|banded xatu wow
+|
+|switch|p1a: Jirachi|Jirachi|404\/404
+|move|p2a: Jellicent|Scald|p1a: Jirachi
+|-damage|p1a: Jirachi|319\/404
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Jirachi|344\/404|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p2a: Mamoswine|Mamoswine, M|362\/362
+|move|p1a: Jirachi|Thunder|p2a: Mamoswine
+|-immune|p2a: Mamoswine|[msg]
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Jirachi|369\/404|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Mamoswine|Earthquake|p1a: Jirachi
+|-crit|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|faint|p1a: Jirachi
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie|261\/261
+|turn|5
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|352\/352
+|move|p1a: Starmie|Surf|p2a: Ferrothorn
+|-resisted|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|262\/352
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Ferrothorn|284\/352|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|352\/352
+|move|p2a: Ferrothorn|Stealth Rock|p1a: Ferrothorn
+|-sidestart|p1: KazThaFknBEST|move: Stealth Rock
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Ferrothorn|306\/352|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p1a: Politoed|Politoed, F|237\/384
+|-damage|p1a: Politoed|189\/384|[from] Stealth Rock
+|switch|p2a: Xatu|Xatu, F|327\/327
+|
+|-weather|RainDance|[upkeep]
+|turn|8
+|callback|decision
+|
+|switch|p2a: Jellicent|Jellicent, M|348\/404
+|move|p1a: Politoed|Hidden Power|p2a: Jellicent
+|-supereffective|p2a: Jellicent
+|-damage|p2a: Jellicent|174\/404
+|-enditem|p2a: Jellicent|Sitrus Berry|[eat]
+|-heal|p2a: Jellicent|275\/404|[from] item: Sitrus Berry
+|
+|-weather|RainDance|[upkeep]
+|turn|9
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|352\/352
+|-damage|p1a: Ferrothorn|330\/352|[from] Stealth Rock
+|switch|p2a: Ferrothorn|Ferrothorn, M|306\/352
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Ferrothorn|352\/352|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|328\/352|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p2a: Xatu|Xatu, F|327\/327
+|move|p1a: Ferrothorn|Spikes|p2a: Xatu
+|move|p2a: Xatu|Spikes|p1a: Ferrothorn|[from]Magic Bounce
+|-sidestart|p1: KazThaFknBEST|Spikes
+|
+|-weather|RainDance|[upkeep]
+|turn|11
+|callback|decision
+|
+|switch|p1a: Dusclops|Dusclops, M|222\/222
+|-damage|p1a: Dusclops|195\/222|[from] Stealth Rock
+|-damage|p1a: Dusclops|168\/222|[from] Spikes
+|-ability|p1a: Dusclops|Pressure
+|move|p2a: Xatu|Heat Wave|p1a: Dusclops
+|-damage|p1a: Dusclops|151\/222
+|
+|-weather|RainDance|[upkeep]
+|turn|12
+|callback|decision
+|
+|move|p2a: Xatu|Psychic|p1a: Dusclops
+|-damage|p1a: Dusclops|112\/222
+|move|p1a: Dusclops|Substitute|p1a: Dusclops
+|-start|p1a: Dusclops|Substitute
+|-damage|p1a: Dusclops|57\/222
+|
+|-weather|RainDance|[upkeep]
+|turn|13
+|callback|decision
+|
+|move|p2a: Xatu|Psychic|p1a: Dusclops
+|-activate|p1a: Dusclops|Substitute|[damage]
+|move|p1a: Dusclops|Pain Split|p2a: Xatu
+|-sethp|p2a: Xatu|192\/327|p1a: Dusclops|192\/222|[from] move: Pain Split
+|
+|-weather|RainDance|[upkeep]
+|turn|14
+|callback|decision
+|
+|move|p2a: Xatu|Psychic|p1a: Dusclops
+|-crit|p1a: Dusclops
+|-end|p1a: Dusclops|Substitute
+|move|p1a: Dusclops|Curse|p2a: Xatu
+|-start|p2a: Xatu|Curse|[of] p1a: Dusclops
+|-damage|p1a: Dusclops|81\/222
+|
+|-weather|RainDance|[upkeep]
+|-damage|p2a: Xatu|111\/327|[from] Curse
+|turn|15
+|callback|decision
+|
+|move|p2a: Xatu|U-turn|p1a: Dusclops
+|-resisted|p1a: Dusclops
+|-damage|p1a: Dusclops|72\/222
+|callback|decision
+|
+|switch|p2a: Jellicent|Jellicent, M|262\/262
+|move|p1a: Dusclops|Substitute|p1a: Dusclops
+|-start|p1a: Dusclops|Substitute
+|-damage|p1a: Dusclops|17\/222
+|
+|-weather|RainDance|[upkeep]
+|turn|16
+|callback|decision
+|
+|move|p2a: Jellicent|U-turn|p1a: Dusclops
+|-resisted|p1a: Dusclops
+|-activate|p1a: Dusclops|Substitute|[damage]
+|callback|decision
+|
+|switch|p2a: Xatu|Xatu, F|111\/327
+|move|p1a: Dusclops|Pain Split|p2a: Xatu
+|-sethp|p2a: Xatu|64\/327|p1a: Dusclops|64\/222|[from] move: Pain Split
+|
+|-weather|RainDance|[upkeep]
+|turn|17
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie|261\/261
+|-damage|p1a: Starmie|229\/261|[from] Spikes
+|-damage|p1a: Starmie|197\/261|[from] Stealth Rock
+|move|p2a: Xatu|Psychic|p1a: Starmie
+|-crit|p1a: Starmie
+|-resisted|p1a: Starmie
+|-damage|p1a: Starmie|84\/261
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Starmie|100\/261|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p1a: Starmie|Thunder|p2a: Xatu
+|-supereffective|p2a: Xatu
+|-damage|p2a: Xatu|0 fnt
+|faint|p2a: Xatu
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Starmie|116\/261|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Jellicent|Jellicent, M|262\/262
+|turn|19
+|callback|decision
+|
+|move|p2a: Jellicent|Sucker Punch|p1a: Starmie
+|-supereffective|p1a: Starmie
+|-damage|p1a: Starmie|0 fnt
+|faint|p1a: Starmie
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, F|324\/324
+|-damage|p1a: Dragonite|243\/324|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|move|p2a: Jellicent|Sucker Punch|p1a: Dragonite
+|-damage|p1a: Dragonite|48\/324
+|move|p1a: Dragonite|Dragon Claw|p2a: Jellicent
+|replace|p2a: Zoroark|Zoroark, M, shiny|262\/262
+|-damage|p2a: Zoroark|0 fnt
+|-damage|p1a: Dragonite|16\/324|[from] item: Life Orb
+|faint|p2a: Zoroark
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Mamoswine|Mamoswine, M|362\/362
+|turn|21
+|callback|decision
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|328\/352
+|switch|p1a: Ferrothorn|Ferrothorn, F|352\/352
+|-damage|p1a: Ferrothorn|330\/352|[from] Stealth Rock
+|-damage|p1a: Ferrothorn|286\/352|[from] Spikes
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Ferrothorn|308\/352|[from] item: Leftovers
+|-heal|p2a: Ferrothorn|350\/352|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|switch|p2a: Reuniclus|Reuniclus, M|366\/366
+|move|p1a: Ferrothorn|Spikes|p2a: Reuniclus
+|-sidestart|p2: bange|Spikes
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Ferrothorn|330\/352|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p1a: Ferrothorn|Spikes|p2a: Reuniclus
+|-sidestart|p2: bange|Spikes
+|move|p2a: Reuniclus|Trick Room|p2a: Reuniclus
+|-fieldstart|move: Trick Room|[of] p2a: Reuniclus
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Ferrothorn|352\/352|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p1a: Ferrothorn|Protect|p1a: Ferrothorn
+|-singleturn|p1a: Ferrothorn|Protect
+|move|p2a: Reuniclus|Focus Blast|p1a: Ferrothorn
+|-activate|p1a: Ferrothorn|Protect
+|
+|-weather|RainDance|[upkeep]
+|turn|25
+|callback|decision
+|
+|switch|p1a: Dragonite|Dragonite, F|16\/324
+|-damage|p1a: Dragonite|0 fnt|[from] Stealth Rock
+|faint|p1a: Dragonite
+|move|p2a: Reuniclus|Psychic|p1: Dragonite|[notarget]
+|-notarget
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Dusclops|Dusclops, M|64\/222
+|-damage|p1a: Dusclops|37\/222|[from] Stealth Rock
+|-damage|p1a: Dusclops|10\/222|[from] Spikes
+|-ability|p1a: Dusclops|Pressure
+|turn|26
+|callback|decision
+|
+|move|p2a: Reuniclus|Psychic|p1a: Dusclops
+|-damage|p1a: Dusclops|0 fnt
+|faint|p1a: Dusclops
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|352\/352
+|-damage|p1a: Ferrothorn|308\/352|[from] Spikes
+|-damage|p1a: Ferrothorn|286\/352|[from] Stealth Rock
+|turn|27
+|callback|decision
+|
+|move|p2a: Reuniclus|Focus Blast|p1a: Ferrothorn
+|-supereffective|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|0 fnt
+|faint|p1a: Ferrothorn
+|
+|-weather|RainDance|[upkeep]
+|-fieldend|move: Trick Room
+|callback|decision
+|
+|switch|p1a: Politoed|Politoed, F|189\/384
+|-damage|p1a: Politoed|141\/384|[from] Spikes
+|-damage|p1a: Politoed|93\/384|[from] Stealth Rock
+|turn|28
+|callback|decision
+|
+|move|p1a: Politoed|Surf|p2a: Reuniclus
+|-damage|p2a: Reuniclus|27\/366
+|move|p2a: Reuniclus|Psychic|p1a: Politoed
+|-damage|p1a: Politoed|0 fnt
+|faint|p1a: Politoed
+|
+|win|bange
+|raw|Ladder updating...
+|raw|KazThaFknBEST's rating: 1911 &rarr; <strong>1906<\/strong><br \/>(-5 for losing)
+|raw|bange's rating: 1805 &rarr; <strong>1850<\/strong><br \/>(+45 for winning)
+|leave|KazThaFknBEST
+|player|p1

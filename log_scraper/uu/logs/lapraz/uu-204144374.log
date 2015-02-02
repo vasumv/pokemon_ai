@@ -1,0 +1,1950 @@
+|join|destinyhero96
+|join|lapraz
+|player|p1|destinyhero96|2
+|player|p2|lapraz|157
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Donphan, M
+|poke|p1|Medicham, M
+|poke|p1|Porygon-Z
+|poke|p1|Vaporeon, M
+|poke|p1|Umbreon, F
+|poke|p1|Jellicent, M
+|poke|p2|Snorlax, M
+|poke|p2|Granbull, M
+|poke|p2|Blissey, F
+|poke|p2|Mantine, M
+|poke|p2|Gligar, F
+|poke|p2|Crobat, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Medicham|Medicham, M|261\/261
+|switch|p2a: Mantine|Mantine, M|334\/334
+|turn|1
+|
+|switch|p2a: Granbull|Granbull, M|384\/384
+|-ability|p2a: Granbull|Intimidate|[of] p1a: Medicham
+|-unboost|p1a: Medicham|atk|1
+|detailschange|p1a: Medicham|Medicham-Mega, M
+|-mega|p1a: Medicham|Medicham|Medichamite
+|move|p1a: Medicham|Zen Headbutt|p2a: Granbull
+|-damage|p2a: Granbull|228\/384
+|
+|-heal|p2a: Granbull|252\/384|[from] item: Leftovers
+|turn|2
+|
+|switch|p1a: Vaporeon|Vaporeon, M|463\/463
+|move|p2a: Granbull|Play Rough|p1a: Vaporeon
+|-damage|p1a: Vaporeon|339\/463
+|
+|-heal|p1a: Vaporeon|367\/463|[from] item: Leftovers
+|-heal|p2a: Granbull|276\/384|[from] item: Leftovers
+|turn|3
+|
+|switch|p2a: Mantine|Mantine, M|334\/334
+|move|p1a: Vaporeon|Scald|p2a: Mantine
+|-immune|p2a: Mantine|[msg]
+|
+|-heal|p1a: Vaporeon|395\/463|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Jellicent|Jellicent, M|403\/403
+|move|p2a: Mantine|Toxic|p1a: Jellicent|[miss]
+|-miss|p2a: Mantine|p1a: Jellicent
+|
+|turn|5
+|
+|move|p2a: Mantine|Toxic|p1a: Jellicent|[miss]
+|-miss|p2a: Mantine|p1a: Jellicent
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Mantine
+|-status|p2a: Mantine|brn
+|
+|-damage|p2a: Mantine|293\/334 brn|[from] brn
+|turn|6
+|
+|move|p2a: Mantine|Toxic|p1a: Jellicent
+|-status|p1a: Jellicent|tox
+|move|p1a: Jellicent|Hex|p2a: Mantine
+|-damage|p2a: Mantine|208\/334 brn
+|
+|-heal|p2a: Mantine|228\/334 brn|[from] item: Leftovers
+|-damage|p2a: Mantine|187\/334 brn|[from] brn
+|-damage|p1a: Jellicent|378\/403 tox|[from] psn
+|turn|7
+|
+|switch|p2a: Blissey|Blissey, F|657\/657
+|switch|p1a: Medicham|Medicham-Mega, M|261\/261
+|
+|turn|8
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|move|p1a: Medicham|High Jump Kick|p2a: Blissey
+|-activate|p2a: Blissey|Protect
+|-damage|p1a: Medicham|131\/261|[from] highjumpkick
+|
+|turn|9
+|
+|switch|p2a: Granbull|Granbull, M|276\/384
+|-ability|p2a: Granbull|Intimidate|[of] p1a: Medicham
+|-unboost|p1a: Medicham|atk|1
+|move|p1a: Medicham|High Jump Kick|p2a: Granbull
+|-resisted|p2a: Granbull
+|-damage|p2a: Granbull|153\/384
+|
+|-heal|p2a: Granbull|177\/384|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Vaporeon|Vaporeon, M|395\/463
+|move|p2a: Granbull|Rest|p2a: Granbull
+|-status|p2a: Granbull|slp
+|-heal|p2a: Granbull|384\/384 slp|[silent]
+|-status|p2a: Granbull|slp|[from] move: Rest
+|
+|-heal|p1a: Vaporeon|423\/463|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|cant|p2a: Granbull|slp
+|move|p2a: Granbull|Sleep Talk|p2a: Granbull
+|move|p2a: Granbull|Play Rough|p1a: Vaporeon|[from]Sleep Talk
+|-damage|p1a: Vaporeon|300\/463
+|
+|-heal|p1a: Vaporeon|328\/463|[from] item: Leftovers
+|turn|12
+|
+|move|p1a: Vaporeon|Scald|p2a: Granbull
+|-damage|p2a: Granbull|242\/384 slp
+|cant|p2a: Granbull|slp
+|move|p2a: Granbull|Sleep Talk|p2a: Granbull
+|move|p2a: Granbull|Rest|p2a: Granbull|[from]Sleep Talk
+|-fail|p2a: Granbull
+|
+|-heal|p1a: Vaporeon|463\/463|[from] move: Wish|[wisher] Vaporeon
+|-heal|p2a: Granbull|266\/384 slp|[from] item: Leftovers
+|turn|13
+|
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|-curestatus|p2a: Granbull|slp
+|move|p2a: Granbull|Heal Bell|p2a: Granbull
+|-cureteam|p2a: Granbull|[from] move: HealBell
+|
+|-heal|p2a: Granbull|290\/384|[from] item: Leftovers
+|turn|14
+|
+|move|p1a: Vaporeon|Scald|p2a: Granbull
+|-damage|p2a: Granbull|142\/384
+|move|p2a: Granbull|Play Rough|p1a: Vaporeon
+|-damage|p1a: Vaporeon|343\/463
+|
+|-heal|p1a: Vaporeon|463\/463|[from] move: Wish|[wisher] Vaporeon
+|-heal|p2a: Granbull|166\/384|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Vaporeon|Scald|p2a: Granbull
+|-damage|p2a: Granbull|0 fnt
+|faint|p2a: Granbull
+|
+|
+|switch|p2a: Snorlax|Snorlax, M|524\/524
+|turn|16
+|
+|move|p2a: Snorlax|Curse|p2a: Snorlax
+|-boost|p2a: Snorlax|atk|1
+|-boost|p2a: Snorlax|def|1
+|-unboost|p2a: Snorlax|spe|1
+|move|p1a: Vaporeon|Roar|p2a: Snorlax
+|drag|p2a: Gligar|Gligar, F|334\/334
+|
+|turn|17
+|
+|switch|p2a: Mantine|Mantine, M|187\/334
+|move|p1a: Vaporeon|Scald|p2a: Mantine
+|-heal|p2a: Mantine|270\/334|[from] ability: Water Absorb|[of] p1a: Vaporeon
+|
+|-heal|p2a: Mantine|290\/334|[from] item: Leftovers
+|turn|18
+|
+|switch|p1a: Umbreon|Umbreon, F|394\/394
+|move|p2a: Mantine|Toxic|p1a: Umbreon|[miss]
+|-miss|p2a: Mantine|p1a: Umbreon
+|
+|-heal|p2a: Mantine|310\/334|[from] item: Leftovers
+|turn|19
+|
+|switch|p2a: Snorlax|Snorlax, M|524\/524
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|turn|20
+|
+|switch|p1a: Medicham|Medicham-Mega, M|131\/261
+|move|p2a: Snorlax|Frustration|p1a: Medicham
+|-damage|p1a: Medicham|0 fnt
+|faint|p1a: Medicham
+|
+|
+|switch|p1a: Porygon-Z|Porygon-Z|311\/311
+|turn|21
+|
+|switch|p2a: Blissey|Blissey, F|657\/657
+|move|p1a: Porygon-Z|Trick|p2a: Blissey
+|-activate|p1a: Porygon-Z|move: Trick|[of] p2a: Blissey
+|-item|p2a: Blissey|Choice Specs|[from] move: Trick
+|-item|p1a: Porygon-Z|Leftovers|[from] move: Trick
+|
+|turn|22
+|
+|move|p1a: Porygon-Z|Substitute|p1a: Porygon-Z
+|-start|p1a: Porygon-Z|Substitute
+|-damage|p1a: Porygon-Z|234\/311
+|move|p2a: Blissey|Toxic|p1a: Porygon-Z
+|
+|-heal|p1a: Porygon-Z|253\/311|[from] item: Leftovers
+|turn|23
+|join|Celsius
+|
+|switch|p2a: Mantine|Mantine, M|310\/334
+|move|p1a: Porygon-Z|Tri Attack|p2a: Mantine
+|-damage|p2a: Mantine|188\/334
+|
+|-heal|p1a: Porygon-Z|272\/311|[from] item: Leftovers
+|-heal|p2a: Mantine|208\/334|[from] item: Leftovers
+|turn|24
+|
+|move|p2a: Mantine|Protect|p2a: Mantine
+|-singleturn|p2a: Mantine|Protect
+|move|p1a: Porygon-Z|Tri Attack|p2a: Mantine
+|-activate|p2a: Mantine|Protect
+|
+|-heal|p1a: Porygon-Z|291\/311|[from] item: Leftovers
+|-heal|p2a: Mantine|228\/334|[from] item: Leftovers
+|turn|25
+|
+|switch|p2a: Blissey|Blissey, F|657\/657
+|move|p1a: Porygon-Z|Tri Attack|p2a: Blissey
+|-damage|p2a: Blissey|507\/657
+|
+|-heal|p1a: Porygon-Z|310\/311|[from] item: Leftovers
+|turn|26
+|
+|move|p1a: Porygon-Z|Tri Attack|p2a: Blissey
+|-damage|p2a: Blissey|379\/657
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p1a: Porygon-Z|311\/311|[from] item: Leftovers
+|turn|27
+|
+|switch|p1a: Donphan|Donphan, M|321\/321
+|move|p2a: Blissey|Wish|p2a: Blissey
+|-fail|p2a: Blissey
+|
+|-heal|p2a: Blissey|657\/657|[from] move: Wish|[wisher] Blissey
+|turn|28
+|
+|switch|p2a: Mantine|Mantine, M|228\/334
+|move|p1a: Donphan|Knock Off|p2a: Mantine
+|-damage|p2a: Mantine|84\/334
+|-enditem|p2a: Mantine|Leftovers|[from] move: Knock Off|[of] p1a: Donphan
+|
+|turn|29
+|
+|switch|p2a: Gligar|Gligar, F|334\/334
+|move|p1a: Donphan|Gunk Shot|p2a: Gligar|[miss]
+|-miss|p1a: Donphan|p2a: Gligar
+|
+|turn|30
+|
+|switch|p2a: Blissey|Blissey, F|657\/657
+|move|p1a: Donphan|Knock Off|p2a: Blissey
+|-damage|p2a: Blissey|448\/657
+|-enditem|p2a: Blissey|Choice Specs|[from] move: Knock Off|[of] p1a: Donphan
+|
+|turn|31
+|
+|switch|p2a: Gligar|Gligar, F|334\/334
+|move|p1a: Donphan|Earthquake|p2a: Gligar
+|-immune|p2a: Gligar|[msg]
+|
+|turn|32
+|
+|move|p2a: Gligar|Knock Off|p1a: Donphan
+|-damage|p1a: Donphan|269\/321
+|-enditem|p1a: Donphan|Assault Vest|[from] move: Knock Off|[of] p2a: Gligar
+|move|p1a: Donphan|Knock Off|p2a: Gligar
+|-damage|p2a: Gligar|276\/334
+|-enditem|p2a: Gligar|Eviolite|[from] move: Knock Off|[of] p1a: Donphan
+|
+|turn|33
+|
+|move|p2a: Gligar|Earthquake|p1a: Donphan
+|-damage|p1a: Donphan|187\/321
+|move|p1a: Donphan|Knock Off|p2a: Gligar
+|-damage|p2a: Gligar|217\/334
+|
+|turn|34
+|
+|switch|p1a: Vaporeon|Vaporeon, M|463\/463
+|move|p2a: Gligar|Earthquake|p1a: Vaporeon
+|-damage|p1a: Vaporeon|375\/463
+|
+|-heal|p1a: Vaporeon|403\/463|[from] item: Leftovers
+|turn|35
+|
+|switch|p2a: Mantine|Mantine, M|84\/334
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|431\/463|[from] item: Leftovers
+|turn|36
+|
+|switch|p1a: Donphan|Donphan, M|187\/321
+|move|p2a: Mantine|Scald|p1a: Donphan
+|-supereffective|p1a: Donphan
+|-damage|p1a: Donphan|31\/321
+|-status|p1a: Donphan|brn
+|
+|-heal|p1a: Donphan|262\/321 brn|[from] move: Wish|[wisher] Vaporeon
+|-damage|p1a: Donphan|222\/321 brn|[from] brn
+|turn|37
+|
+|switch|p2a: Gligar|Gligar, F|217\/334
+|switch|p1a: Umbreon|Umbreon, F|394\/394
+|
+|turn|38
+|
+|move|p2a: Gligar|Stealth Rock|p1a: Umbreon
+|-sidestart|p1: destinyhero96|move: Stealth Rock
+|move|p1a: Umbreon|Heal Bell|p1a: Umbreon
+|-cureteam|p1a: Umbreon|[from] move: HealBell
+|
+|turn|39
+|
+|move|p2a: Gligar|Knock Off|p1a: Umbreon
+|-resisted|p1a: Umbreon
+|-damage|p1a: Umbreon|373\/394
+|-enditem|p1a: Umbreon|Leftovers|[from] move: Knock Off|[of] p2a: Gligar
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|turn|40
+|
+|switch|p1a: Donphan|Donphan, M|222\/321
+|-damage|p1a: Donphan|202\/321|[from] Stealth Rock
+|move|p2a: Gligar|Roost|p2a: Gligar
+|-heal|p2a: Gligar|334\/334
+|
+|-heal|p1a: Donphan|321\/321|[from] move: Wish|[wisher] Umbreon
+|turn|41
+|
+|move|p2a: Gligar|Earthquake|p1a: Donphan
+|-crit|p1a: Donphan
+|-damage|p1a: Donphan|192\/321
+|move|p1a: Donphan|Knock Off|p2a: Gligar
+|-damage|p2a: Gligar|280\/334
+|
+|turn|42
+|
+|move|p2a: Gligar|Earthquake|p1a: Donphan
+|-damage|p1a: Donphan|114\/321
+|move|p1a: Donphan|Rapid Spin|p2a: Gligar
+|-crit|p2a: Gligar
+|-damage|p2a: Gligar|251\/334
+|-sideend|p1: destinyhero96|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Donphan
+|
+|turn|43
+|
+|switch|p1a: Umbreon|Umbreon, F|373\/394
+|move|p2a: Gligar|Earthquake|p1a: Umbreon
+|-damage|p1a: Umbreon|304\/394
+|
+|turn|44
+|
+|move|p2a: Gligar|Stealth Rock|p1a: Umbreon
+|-sidestart|p1: destinyhero96|move: Stealth Rock
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|turn|45
+|
+|switch|p1a: Donphan|Donphan, M|114\/321
+|-damage|p1a: Donphan|94\/321|[from] Stealth Rock
+|move|p2a: Gligar|Knock Off|p1a: Donphan
+|-damage|p1a: Donphan|56\/321
+|
+|-heal|p1a: Donphan|253\/321|[from] move: Wish|[wisher] Umbreon
+|turn|46
+|
+|switch|p1a: Umbreon|Umbreon, F|304\/394
+|-damage|p1a: Umbreon|255\/394|[from] Stealth Rock
+|move|p2a: Gligar|Knock Off|p1a: Umbreon
+|-resisted|p1a: Umbreon
+|-damage|p1a: Umbreon|240\/394
+|
+|turn|47
+|
+|switch|p2a: Crobat|Crobat, F|373\/373
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|turn|48
+|
+|move|p2a: Crobat|Brave Bird|p1a: Umbreon
+|-crit|p1a: Umbreon
+|-damage|p1a: Umbreon|110\/394
+|-damage|p2a: Crobat|330\/373|[from] recoil|[of] p1a: Umbreon
+|move|p1a: Umbreon|Foul Play|p2a: Crobat
+|-damage|p2a: Crobat|200\/373
+|
+|-heal|p1a: Umbreon|307\/394|[from] move: Wish|[wisher] Umbreon
+|-heal|p2a: Crobat|223\/373|[from] item: Black Sludge
+|turn|49
+|
+|move|p2a: Crobat|Brave Bird|p1a: Umbreon
+|-damage|p1a: Umbreon|220\/394
+|-damage|p2a: Crobat|194\/373|[from] recoil|[of] p1a: Umbreon
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p2a: Crobat|217\/373|[from] item: Black Sludge
+|turn|50
+|
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|373\/373
+|move|p1a: Umbreon|Foul Play|p2a: Crobat
+|-damage|p2a: Crobat|235\/373
+|
+|-heal|p1a: Umbreon|394\/394|[from] move: Wish|[wisher] Umbreon
+|-heal|p2a: Crobat|258\/373|[from] item: Black Sludge
+|turn|51
+|
+|switch|p2a: Blissey|Blissey, F|448\/657
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|turn|52
+|
+|switch|p1a: Jellicent|Jellicent, M|378\/403
+|-damage|p1a: Jellicent|328\/403|[from] Stealth Rock
+|move|p2a: Blissey|Toxic|p1a: Jellicent|[miss]
+|-miss|p2a: Blissey|p1a: Jellicent
+|
+|-heal|p1a: Jellicent|403\/403|[from] move: Wish|[wisher] Umbreon
+|turn|53
+|
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Blissey|[miss]
+|-miss|p1a: Jellicent|p2a: Blissey
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|turn|54
+|
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Blissey
+|-status|p2a: Blissey|brn
+|move|p2a: Blissey|Toxic|p1a: Jellicent
+|-status|p1a: Jellicent|tox
+|
+|-heal|p2a: Blissey|657\/657 brn|[from] move: Wish|[wisher] Blissey
+|-damage|p1a: Jellicent|378\/403 tox|[from] psn
+|-damage|p2a: Blissey|575\/657 brn|[from] brn
+|turn|55
+|
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Blissey
+|-fail|p2a: Blissey|brn
+|move|p2a: Blissey|Toxic|p1a: Jellicent
+|-fail|p1a: Jellicent|tox
+|
+|-heal|p1a: Jellicent|403\/403 tox|[from] item: Leftovers
+|-damage|p1a: Jellicent|353\/403 tox|[from] psn
+|-damage|p2a: Blissey|493\/657 brn|[from] brn
+|turn|56
+|
+|switch|p1a: Donphan|Donphan, M|253\/321
+|-damage|p1a: Donphan|233\/321|[from] Stealth Rock
+|switch|p2a: Snorlax|Snorlax, M|524\/524
+|
+|turn|57
+|
+|move|p1a: Donphan|Knock Off|p2a: Snorlax
+|-crit|p2a: Snorlax
+|-damage|p2a: Snorlax|267\/524
+|-enditem|p2a: Snorlax|Leftovers|[from] move: Knock Off|[of] p1a: Donphan
+|move|p2a: Snorlax|Frustration|p1a: Donphan
+|-damage|p1a: Donphan|119\/321
+|
+|turn|58
+|
+|switch|p2a: Gligar|Gligar, F|251\/334
+|move|p1a: Donphan|Earthquake|p2a: Gligar
+|-immune|p2a: Gligar|[msg]
+|
+|turn|59
+|
+|move|p2a: Gligar|Earthquake|p1a: Donphan
+|-damage|p1a: Donphan|44\/321
+|move|p1a: Donphan|Rapid Spin|p2a: Gligar
+|-damage|p2a: Gligar|231\/334
+|-sideend|p1: destinyhero96|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Donphan
+|
+|turn|60
+|
+|switch|p1a: Porygon-Z|Porygon-Z|311\/311
+|move|p2a: Gligar|Stealth Rock|p1a: Porygon-Z
+|-sidestart|p1: destinyhero96|move: Stealth Rock
+|
+|turn|61
+|
+|switch|p2a: Blissey|Blissey, F|493\/657
+|move|p1a: Porygon-Z|Tri Attack|p2a: Blissey
+|-damage|p2a: Blissey|343\/657
+|-status|p2a: Blissey|par
+|
+|turn|62
+|
+|move|p1a: Porygon-Z|Substitute|p1a: Porygon-Z
+|-start|p1a: Porygon-Z|Substitute
+|-damage|p1a: Porygon-Z|234\/311
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p1a: Porygon-Z|253\/311|[from] item: Leftovers
+|turn|63
+|
+|move|p1a: Porygon-Z|Tri Attack|p2a: Blissey
+|-damage|p2a: Blissey|209\/657 par
+|move|p2a: Blissey|Seismic Toss|p1a: Porygon-Z
+|-end|p1a: Porygon-Z|Substitute
+|
+|-heal|p2a: Blissey|537\/657 par|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Porygon-Z|272\/311|[from] item: Leftovers
+|turn|64
+|
+|move|p1a: Porygon-Z|Tri Attack|p2a: Blissey
+|-damage|p2a: Blissey|387\/657 par
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p1a: Porygon-Z|291\/311|[from] item: Leftovers
+|turn|65
+|
+|move|p1a: Porygon-Z|Substitute|p1a: Porygon-Z
+|-start|p1a: Porygon-Z|Substitute
+|-damage|p1a: Porygon-Z|214\/311
+|move|p2a: Blissey|Toxic|p1a: Porygon-Z
+|
+|-heal|p2a: Blissey|657\/657 par|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Porygon-Z|233\/311|[from] item: Leftovers
+|turn|66
+|
+|move|p1a: Porygon-Z|Ice Beam|p2a: Blissey
+|-damage|p2a: Blissey|581\/657 par
+|move|p2a: Blissey|Seismic Toss|p1a: Porygon-Z
+|-end|p1a: Porygon-Z|Substitute
+|
+|-heal|p1a: Porygon-Z|252\/311|[from] item: Leftovers
+|turn|67
+|
+|switch|p1a: Vaporeon|Vaporeon, M|431\/463
+|-damage|p1a: Vaporeon|374\/463|[from] Stealth Rock
+|cant|p2a: Blissey|par
+|
+|-heal|p1a: Vaporeon|402\/463|[from] item: Leftovers
+|turn|68
+|leave|destinyhero96
+|player|p1
+|join|destinyhero96
+|player|p1|destinyhero96|2
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Blissey|Toxic|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Protect
+|
+|-heal|p1a: Vaporeon|430\/463|[from] item: Leftovers
+|turn|69
+|
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|cant|p2a: Blissey|par
+|
+|-heal|p1a: Vaporeon|458\/463|[from] item: Leftovers
+|turn|70
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Vaporeon
+|-damage|p1a: Vaporeon|358\/463
+|move|p1a: Vaporeon|Roar|p2a: Blissey
+|drag|p2a: Mantine|Mantine, M|84\/334
+|
+|-heal|p1a: Vaporeon|463\/463|[from] move: Wish|[wisher] Vaporeon
+|turn|71
+|
+|switch|p2a: Blissey|Blissey, F|581\/657
+|switch|p1a: Jellicent|Jellicent, M|353\/403 tox
+|-damage|p1a: Jellicent|303\/403 tox|[from] Stealth Rock
+|
+|-heal|p1a: Jellicent|328\/403 tox|[from] item: Leftovers
+|-damage|p1a: Jellicent|303\/403 tox|[from] psn
+|turn|72
+|join|waiv
+|
+|switch|p1a: Umbreon|Umbreon, F|394\/394
+|-damage|p1a: Umbreon|345\/394|[from] Stealth Rock
+|switch|p2a: Snorlax|Snorlax, M|267\/524
+|
+|turn|73
+|
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|move|p2a: Snorlax|Curse|p2a: Snorlax
+|-boost|p2a: Snorlax|atk|1
+|-boost|p2a: Snorlax|def|1
+|-unboost|p2a: Snorlax|spe|1
+|
+|turn|74
+|c| waiv|o
+|c| waiv|is megacham just broken
+|c| waiv|lapraz
+|c|âlapraz|a bit
+|c|âlapraz|it's not hard to wall though
+|join|DatGuyChuck
+|join|HappyPierrot
+|c| waiv|is granbulll the counter?
+|c|âlapraz|lol
+|c|âlapraz|it's not really a counter
+|leave|DatGuyChuck
+|c|âlapraz|but yeah
+|c|âlapraz|sorta
+|c|âlapraz|it gets 3hko'd
+|c| waiv|by BP?
+|join|watfor
+|c|âlapraz|zen headbutt
+|c| waiv|o
+|c|âlapraz|haven't seen bp yet
+|
+|move|p1a: Umbreon|Foul Play|p2a: Snorlax
+|-damage|p2a: Snorlax|95\/524
+|move|p2a: Snorlax|Frustration|p1a: Umbreon
+|-damage|p1a: Umbreon|203\/394
+|
+|-heal|p1a: Umbreon|394\/394|[from] move: Wish|[wisher] Umbreon
+|turn|75
+|c| waiv|weakO_o
+|c|âlapraz|wow
+|
+|switch|p2a: Gligar|Gligar, F|231\/334
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|turn|76
+|
+|switch|p1a: Jellicent|Jellicent, M|303\/403 tox
+|-damage|p1a: Jellicent|253\/403 tox|[from] Stealth Rock
+|move|p2a: Gligar|Earthquake|p1a: Jellicent
+|-crit|p1a: Jellicent
+|-damage|p1a: Jellicent|79\/403 tox
+|
+|-heal|p1a: Jellicent|276\/403 tox|[from] move: Wish|[wisher] Umbreon
+|-heal|p1a: Jellicent|301\/403 tox|[from] item: Leftovers
+|-damage|p1a: Jellicent|276\/403 tox|[from] psn
+|turn|77
+|c| watfor|tbh what is
+|c| watfor|mantine doing
+|
+|switch|p2a: Blissey|Blissey, F|581\/657
+|switch|p1a: Umbreon|Umbreon, F|394\/394
+|-damage|p1a: Umbreon|345\/394|[from] Stealth Rock
+|
+|turn|78
+|c| waiv|haha i just noticed that
+|c|âlapraz|lol
+|c| waiv|lapraz always has innovation
+|c|âlapraz|mantine's not great
+|
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|turn|79
+|c|âlapraz|it's better than i thought though
+|
+|switch|p2a: Mantine|Mantine, M|84\/334
+|move|p1a: Umbreon|Foul Play|p2a: Mantine
+|-damage|p2a: Mantine|21\/334
+|
+|-heal|p1a: Umbreon|394\/394|[from] move: Wish|[wisher] Umbreon
+|-heal|p2a: Mantine|334\/334|[from] move: Wish|[wisher] Blissey
+|turn|80
+|join|feng the bob
+|join|Pseudo-Yoik
+|
+|switch|p2a: Blissey|Blissey, F|581\/657
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|turn|81
+|leave|HappyPierrot
+|leave|feng the bob
+|leave|Pseudo-Yoik
+|
+|move|p1a: Umbreon|Foul Play|p2a: Blissey
+|-damage|p2a: Blissey|563\/657
+|move|p2a: Blissey|Seismic Toss|p1a: Umbreon
+|-damage|p1a: Umbreon|294\/394
+|
+|-heal|p1a: Umbreon|394\/394|[from] move: Wish|[wisher] Umbreon
+|turn|82
+|
+|switch|p2a: Crobat|Crobat, F|258\/373
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p2a: Crobat|281\/373|[from] item: Black Sludge
+|turn|83
+|
+|switch|p1a: Vaporeon|Vaporeon, M|463\/463
+|-damage|p1a: Vaporeon|406\/463|[from] Stealth Rock
+|move|p2a: Crobat|Brave Bird|p1a: Vaporeon
+|-damage|p1a: Vaporeon|274\/463
+|-damage|p2a: Crobat|237\/373|[from] recoil|[of] p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|463\/463|[from] move: Wish|[wisher] Umbreon
+|-heal|p2a: Crobat|260\/373|[from] item: Black Sludge
+|turn|84
+|
+|switch|p2a: Blissey|Blissey, F|563\/657
+|move|p1a: Vaporeon|Scald|p2a: Blissey
+|-damage|p2a: Blissey|496\/657
+|
+|turn|85
+|
+|switch|p1a: Umbreon|Umbreon, F|394\/394
+|-damage|p1a: Umbreon|345\/394|[from] Stealth Rock
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|turn|86
+|
+|switch|p2a: Crobat|Crobat, F|260\/373
+|move|p1a: Umbreon|Foul Play|p2a: Crobat
+|-damage|p2a: Crobat|127\/373
+|
+|-heal|p2a: Crobat|373\/373|[from] move: Wish|[wisher] Blissey
+|turn|87
+|
+|switch|p2a: Blissey|Blissey, F|496\/657
+|move|p1a: Umbreon|Foul Play|p2a: Blissey
+|-crit|p2a: Blissey
+|-damage|p2a: Blissey|466\/657
+|
+|turn|88
+|
+|move|p1a: Umbreon|Foul Play|p2a: Blissey
+|-damage|p2a: Blissey|444\/657
+|move|p2a: Blissey|Toxic|p1a: Umbreon
+|-status|p1a: Umbreon|tox
+|-status|p2a: Blissey|tox
+|
+|-damage|p1a: Umbreon|321\/394 tox|[from] psn
+|-damage|p2a: Blissey|403\/657 tox|[from] psn
+|turn|89
+|
+|switch|p1a: Vaporeon|Vaporeon, M|463\/463
+|-damage|p1a: Vaporeon|406\/463|[from] Stealth Rock
+|switch|p2a: Crobat|Crobat, F|373\/373
+|
+|-heal|p1a: Vaporeon|434\/463|[from] item: Leftovers
+|turn|90
+|
+|switch|p2a: Mantine|Mantine, M|334\/334
+|move|p1a: Vaporeon|Scald|p2a: Mantine
+|-immune|p2a: Mantine|[msg]
+|
+|-heal|p1a: Vaporeon|462\/463|[from] item: Leftovers
+|turn|91
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Mantine|Toxic|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Protect
+|
+|-heal|p1a: Vaporeon|463\/463|[from] item: Leftovers
+|turn|92
+|join|Pseudo-Yoik
+|
+|move|p2a: Mantine|Toxic|p1a: Vaporeon
+|-status|p1a: Vaporeon|tox
+|move|p1a: Vaporeon|Roar|p2a: Mantine
+|drag|p2a: Snorlax|Snorlax, M|95\/524
+|
+|-damage|p1a: Vaporeon|435\/463 tox|[from] psn
+|turn|93
+|leave|Pseudo-Yoik
+|join|Pseudo-Yoik
+|leave|Pseudo-Yoik
+|
+|move|p1a: Vaporeon|Scald|p2a: Snorlax
+|-damage|p2a: Snorlax|31\/524
+|move|p2a: Snorlax|Rest|p2a: Snorlax
+|-status|p2a: Snorlax|slp
+|-heal|p2a: Snorlax|524\/524 slp|[silent]
+|-status|p2a: Snorlax|slp|[from] move: Rest
+|
+|-heal|p1a: Vaporeon|463\/463 tox|[from] item: Leftovers
+|-damage|p1a: Vaporeon|407\/463 tox|[from] psn
+|turn|94
+|
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|cant|p2a: Snorlax|slp
+|
+|-heal|p1a: Vaporeon|435\/463 tox|[from] item: Leftovers
+|-damage|p1a: Vaporeon|351\/463 tox|[from] psn
+|turn|95
+|
+|switch|p1a: Donphan|Donphan, M|44\/321
+|-damage|p1a: Donphan|24\/321|[from] Stealth Rock
+|switch|p2a: Mantine|Mantine, M|334\/334
+|
+|-heal|p1a: Donphan|255\/321|[from] move: Wish|[wisher] Vaporeon
+|turn|96
+|
+|move|p2a: Mantine|Toxic|p1a: Donphan
+|-status|p1a: Donphan|tox
+|move|p1a: Donphan|Rapid Spin|p2a: Mantine
+|-damage|p2a: Mantine|306\/334
+|-sideend|p1: destinyhero96|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Donphan
+|
+|-damage|p1a: Donphan|235\/321 tox|[from] psn
+|turn|97
+|
+|switch|p2a: Gligar|Gligar, F|231\/334
+|switch|p1a: Porygon-Z|Porygon-Z|252\/311
+|
+|-heal|p1a: Porygon-Z|271\/311|[from] item: Leftovers
+|turn|98
+|
+|switch|p2a: Blissey|Blissey, F|403\/657
+|move|p1a: Porygon-Z|Ice Beam|p2a: Blissey
+|-crit|p2a: Blissey
+|-damage|p2a: Blissey|281\/657
+|
+|-heal|p1a: Porygon-Z|290\/311|[from] item: Leftovers
+|turn|99
+|
+|move|p1a: Porygon-Z|Ice Beam|p2a: Blissey
+|-damage|p2a: Blissey|198\/657
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p1a: Porygon-Z|309\/311|[from] item: Leftovers
+|turn|100
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|move|p1a: Porygon-Z|Substitute|p1a: Porygon-Z
+|-start|p1a: Porygon-Z|Substitute
+|-damage|p1a: Porygon-Z|232\/311
+|
+|-heal|p2a: Blissey|526\/657|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Porygon-Z|251\/311|[from] item: Leftovers
+|turn|101
+|
+|move|p1a: Porygon-Z|Ice Beam|p2a: Blissey
+|-damage|p2a: Blissey|443\/657
+|move|p2a: Blissey|Seismic Toss|p1a: Porygon-Z
+|-end|p1a: Porygon-Z|Substitute
+|
+|-heal|p1a: Porygon-Z|270\/311|[from] item: Leftovers
+|turn|102
+|
+|switch|p1a: Umbreon|Umbreon, F|321\/394 tox
+|move|p2a: Blissey|Seismic Toss|p1a: Umbreon
+|-damage|p1a: Umbreon|221\/394 tox
+|
+|-damage|p1a: Umbreon|197\/394 tox|[from] psn
+|turn|103
+|
+|move|p1a: Umbreon|Heal Bell|p1a: Umbreon
+|-cureteam|p1a: Umbreon|[from] move: HealBell
+|move|p2a: Blissey|Seismic Toss|p1a: Umbreon
+|-damage|p1a: Umbreon|97\/394
+|
+|turn|104
+|
+|switch|p1a: Jellicent|Jellicent, M|276\/403
+|move|p2a: Blissey|Seismic Toss|p1a: Jellicent
+|-immune|p1a: Jellicent|[msg]
+|
+|-heal|p1a: Jellicent|301\/403|[from] item: Leftovers
+|turn|105
+|
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Blissey
+|-status|p2a: Blissey|brn
+|move|p2a: Blissey|Toxic|p1a: Jellicent
+|-status|p1a: Jellicent|tox
+|
+|-heal|p1a: Jellicent|326\/403 tox|[from] item: Leftovers
+|-damage|p1a: Jellicent|301\/403 tox|[from] psn
+|-damage|p2a: Blissey|361\/657 brn|[from] brn
+|turn|106
+|
+|switch|p2a: Snorlax|Snorlax, M|524\/524 slp
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Snorlax
+|-fail|p2a: Snorlax
+|
+|-heal|p1a: Jellicent|326\/403 tox|[from] item: Leftovers
+|-damage|p1a: Jellicent|276\/403 tox|[from] psn
+|turn|107
+|
+|switch|p1a: Porygon-Z|Porygon-Z|270\/311
+|switch|p2a: Blissey|Blissey, F|361\/657
+|
+|-heal|p1a: Porygon-Z|289\/311|[from] item: Leftovers
+|turn|108
+|
+|move|p1a: Porygon-Z|Tri Attack|p2a: Blissey
+|-damage|p2a: Blissey|209\/657
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-heal|p1a: Porygon-Z|308\/311|[from] item: Leftovers
+|turn|109
+|
+|move|p1a: Porygon-Z|Tri Attack|p2a: Blissey
+|-damage|p2a: Blissey|65\/657
+|move|p2a: Blissey|Seismic Toss|p1a: Porygon-Z
+|-damage|p1a: Porygon-Z|208\/311
+|
+|-heal|p2a: Blissey|393\/657|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Porygon-Z|227\/311|[from] item: Leftovers
+|turn|110
+|
+|move|p1a: Porygon-Z|Tri Attack|p2a: Blissey
+|-damage|p2a: Blissey|247\/657
+|-status|p2a: Blissey|frz
+|cant|p2a: Blissey|frz
+|
+|-heal|p1a: Porygon-Z|246\/311|[from] item: Leftovers
+|turn|111
+|leave|watfor
+|
+|switch|p2a: Snorlax|Snorlax, M|524\/524 slp
+|move|p1a: Porygon-Z|Tri Attack|p2a: Snorlax
+|-damage|p2a: Snorlax|376\/524 slp
+|
+|-heal|p1a: Porygon-Z|265\/311|[from] item: Leftovers
+|turn|112
+|
+|switch|p2a: Crobat|Crobat, F|373\/373
+|move|p1a: Porygon-Z|Tri Attack|p2a: Crobat
+|-damage|p2a: Crobat|107\/373
+|
+|-heal|p2a: Crobat|130\/373|[from] item: Black Sludge
+|-heal|p1a: Porygon-Z|284\/311|[from] item: Leftovers
+|turn|113
+|
+|move|p2a: Crobat|Brave Bird|p1a: Porygon-Z
+|-damage|p1a: Porygon-Z|91\/311
+|-damage|p2a: Crobat|66\/373|[from] recoil|[of] p1a: Porygon-Z
+|move|p1a: Porygon-Z|Ice Beam|p2a: Crobat
+|-crit|p2a: Crobat
+|-supereffective|p2a: Crobat
+|-damage|p2a: Crobat|0 fnt
+|faint|p2a: Crobat
+|
+|-heal|p1a: Porygon-Z|110\/311|[from] item: Leftovers
+|
+|switch|p2a: Blissey|Blissey, F|247\/657
+|turn|114
+|
+|move|p1a: Porygon-Z|Ice Beam|p2a: Blissey
+|-damage|p2a: Blissey|167\/657
+|-status|p2a: Blissey|frz
+|cant|p2a: Blissey|frz
+|
+|-heal|p1a: Porygon-Z|129\/311|[from] item: Leftovers
+|turn|115
+|
+|switch|p1a: Donphan|Donphan, M|235\/321
+|switch|p2a: Mantine|Mantine, M|306\/334
+|
+|turn|116
+|
+|move|p2a: Mantine|Toxic|p1a: Donphan|[miss]
+|-miss|p2a: Mantine|p1a: Donphan
+|move|p1a: Donphan|Gunk Shot|p2a: Mantine|[miss]
+|-miss|p1a: Donphan|p2a: Mantine
+|
+|turn|117
+|
+|move|p2a: Mantine|Scald|p1a: Donphan
+|-supereffective|p1a: Donphan
+|-damage|p1a: Donphan|67\/321
+|move|p1a: Donphan|Gunk Shot|p2a: Mantine
+|-damage|p2a: Mantine|137\/334
+|
+|turn|118
+|
+|move|p2a: Mantine|Scald|p1a: Donphan
+|-supereffective|p1a: Donphan
+|-damage|p1a: Donphan|0 fnt
+|faint|p1a: Donphan
+|
+|
+|switch|p1a: Porygon-Z|Porygon-Z|129\/311
+|turn|119
+|
+|move|p1a: Porygon-Z|Tri Attack|p2a: Mantine
+|-damage|p2a: Mantine|7\/334
+|-status|p2a: Mantine|frz
+|-curestatus|p2a: Mantine|frz
+|move|p2a: Mantine|Scald|p1a: Porygon-Z
+|-damage|p1a: Porygon-Z|38\/311
+|
+|-heal|p1a: Porygon-Z|57\/311|[from] item: Leftovers
+|turn|120
+|
+|move|p1a: Porygon-Z|Ice Beam|p2a: Mantine
+|-damage|p2a: Mantine|0 fnt
+|faint|p2a: Mantine
+|
+|-heal|p1a: Porygon-Z|76\/311|[from] item: Leftovers
+|
+|switch|p2a: Blissey|Blissey, F|167\/657
+|turn|121
+|
+|move|p1a: Porygon-Z|Tri Attack|p2a: Blissey
+|-damage|p2a: Blissey|31\/657
+|move|p2a: Blissey|Seismic Toss|p1a: Porygon-Z
+|-damage|p1a: Porygon-Z|0 fnt
+|faint|p1a: Porygon-Z
+|
+|
+|switch|p1a: Vaporeon|Vaporeon, M|351\/463
+|turn|122
+|
+|switch|p2a: Snorlax|Snorlax, M|376\/524 slp
+|move|p1a: Vaporeon|Scald|p2a: Snorlax
+|-damage|p2a: Snorlax|310\/524 slp
+|
+|-heal|p1a: Vaporeon|379\/463|[from] item: Leftovers
+|turn|123
+|
+|move|p1a: Vaporeon|Scald|p2a: Snorlax
+|-damage|p2a: Snorlax|243\/524 slp
+|cant|p2a: Snorlax|slp
+|
+|-heal|p1a: Vaporeon|407\/463|[from] item: Leftovers
+|turn|124
+|
+|-curestatus|p2a: Snorlax|slp
+|move|p2a: Snorlax|Rest|p2a: Snorlax
+|-status|p2a: Snorlax|slp
+|-heal|p2a: Snorlax|524\/524 slp|[silent]
+|-status|p2a: Snorlax|slp|[from] move: Rest
+|move|p1a: Vaporeon|Roar|p2a: Snorlax
+|drag|p2a: Blissey|Blissey, F|31\/657
+|
+|-heal|p1a: Vaporeon|435\/463|[from] item: Leftovers
+|turn|125
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|move|p1a: Vaporeon|Scald|p2a: Blissey
+|-activate|p2a: Blissey|Protect
+|
+|-heal|p1a: Vaporeon|463\/463|[from] item: Leftovers
+|turn|126
+|
+|switch|p2a: Snorlax|Snorlax, M|524\/524 slp
+|move|p1a: Vaporeon|Scald|p2a: Snorlax
+|-damage|p2a: Snorlax|460\/524 slp
+|
+|turn|127
+|
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|cant|p2a: Snorlax|slp
+|
+|turn|128
+|
+|switch|p1a: Umbreon|Umbreon, F|97\/394
+|cant|p2a: Snorlax|slp
+|
+|-heal|p1a: Umbreon|328\/394|[from] move: Wish|[wisher] Vaporeon
+|turn|129
+|
+|switch|p1a: Vaporeon|Vaporeon, M|463\/463
+|switch|p2a: Blissey|Blissey, F|31\/657
+|
+|turn|130
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|move|p1a: Vaporeon|Scald|p2a: Blissey
+|-activate|p2a: Blissey|Protect
+|
+|turn|131
+|
+|switch|p2a: Snorlax|Snorlax, M|460\/524 slp
+|move|p1a: Vaporeon|Scald|p2a: Snorlax
+|-damage|p2a: Snorlax|393\/524 slp
+|
+|turn|132
+|join|Lucipurrr
+|
+|-curestatus|p2a: Snorlax|slp
+|move|p2a: Snorlax|Curse|p2a: Snorlax
+|-boost|p2a: Snorlax|atk|1
+|-boost|p2a: Snorlax|def|1
+|-unboost|p2a: Snorlax|spe|1
+|move|p1a: Vaporeon|Roar|p2a: Snorlax
+|drag|p2a: Blissey|Blissey, F|31\/657
+|
+|turn|133
+|leave|Lucipurrr
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|move|p1a: Vaporeon|Scald|p2a: Blissey
+|-activate|p2a: Blissey|Protect
+|
+|turn|134
+|
+|switch|p2a: Snorlax|Snorlax, M|393\/524
+|move|p1a: Vaporeon|Scald|p2a: Snorlax
+|-damage|p2a: Snorlax|323\/524
+|-status|p2a: Snorlax|brn
+|
+|-damage|p2a: Snorlax|258\/524 brn|[from] brn
+|turn|135
+|
+|switch|p1a: Jellicent|Jellicent, M|276\/403 tox
+|move|p2a: Snorlax|Rest|p2a: Snorlax
+|-status|p2a: Snorlax|slp
+|-heal|p2a: Snorlax|524\/524 slp|[silent]
+|-status|p2a: Snorlax|slp|[from] move: Rest
+|
+|-heal|p1a: Jellicent|301\/403 tox|[from] item: Leftovers
+|-damage|p1a: Jellicent|276\/403 tox|[from] psn
+|turn|136
+|join|Tf2Hunter
+|
+|switch|p1a: Umbreon|Umbreon, F|328\/394
+|cant|p2a: Snorlax|slp
+|
+|turn|137
+|c| Tf2Hunter|Turn 137 ?
+|c| Tf2Hunter|wat
+|
+|switch|p2a: Gligar|Gligar, F|231\/334
+|move|p1a: Umbreon|Foul Play|p2a: Gligar
+|-damage|p2a: Gligar|167\/334
+|
+|turn|138
+|c|âlapraz|ye
+|
+|move|p2a: Gligar|Roost|p2a: Gligar
+|-heal|p2a: Gligar|334\/334
+|move|p1a: Umbreon|Heal Bell|p1a: Umbreon
+|-cureteam|p1a: Umbreon|[from] move: HealBell
+|
+|turn|139
+|c| Tf2Hunter|this is cancer :B
+|c|âlapraz|yep
+|
+|switch|p1a: Vaporeon|Vaporeon, M|463\/463
+|move|p2a: Gligar|Stealth Rock|p1a: Vaporeon
+|-sidestart|p1: destinyhero96|move: Stealth Rock
+|
+|turn|140
+|
+|switch|p2a: Snorlax|Snorlax, M|524\/524 slp
+|move|p1a: Vaporeon|Scald|p2a: Snorlax
+|-damage|p2a: Snorlax|458\/524 slp
+|
+|turn|141
+|
+|cant|p2a: Snorlax|slp
+|move|p1a: Vaporeon|Roar|p2a: Snorlax
+|drag|p2a: Gligar|Gligar, F|334\/334
+|
+|turn|142
+|
+|switch|p2a: Snorlax|Snorlax, M|458\/524 slp
+|move|p1a: Vaporeon|Roar|p2a: Snorlax
+|drag|p2a: Blissey|Blissey, F|31\/657
+|
+|turn|143
+|
+|switch|p2a: Snorlax|Snorlax, M|458\/524 slp
+|move|p1a: Vaporeon|Scald|p2a: Snorlax
+|-damage|p2a: Snorlax|391\/524 slp
+|
+|turn|144
+|
+|switch|p1a: Jellicent|Jellicent, M|276\/403
+|-damage|p1a: Jellicent|226\/403|[from] Stealth Rock
+|-curestatus|p2a: Snorlax|slp
+|move|p2a: Snorlax|Frustration|p1a: Jellicent
+|-immune|p1a: Jellicent|[msg]
+|
+|-heal|p1a: Jellicent|251\/403|[from] item: Leftovers
+|turn|145
+|
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Snorlax
+|-status|p2a: Snorlax|brn
+|move|p2a: Snorlax|Earthquake|p1a: Jellicent
+|-damage|p1a: Jellicent|192\/403
+|
+|-heal|p1a: Jellicent|217\/403|[from] item: Leftovers
+|-damage|p2a: Snorlax|326\/524 brn|[from] brn
+|turn|146
+|
+|move|p1a: Jellicent|Recover|p1a: Jellicent
+|-heal|p1a: Jellicent|403\/403
+|move|p2a: Snorlax|Earthquake|p1a: Jellicent
+|-damage|p1a: Jellicent|342\/403
+|
+|-heal|p1a: Jellicent|367\/403|[from] item: Leftovers
+|-damage|p2a: Snorlax|261\/524 brn|[from] brn
+|turn|147
+|
+|move|p1a: Jellicent|Scald|p2a: Snorlax
+|-damage|p2a: Snorlax|207\/524 brn
+|move|p2a: Snorlax|Curse|p2a: Snorlax
+|-boost|p2a: Snorlax|atk|1
+|-boost|p2a: Snorlax|def|1
+|-unboost|p2a: Snorlax|spe|1
+|
+|-heal|p1a: Jellicent|392\/403|[from] item: Leftovers
+|-damage|p2a: Snorlax|142\/524 brn|[from] brn
+|turn|148
+|
+|move|p1a: Jellicent|Scald|p2a: Snorlax
+|-damage|p2a: Snorlax|90\/524 brn
+|move|p2a: Snorlax|Rest|p2a: Snorlax
+|-status|p2a: Snorlax|slp
+|-heal|p2a: Snorlax|524\/524 slp|[silent]
+|-status|p2a: Snorlax|slp|[from] move: Rest
+|
+|-heal|p1a: Jellicent|403\/403|[from] item: Leftovers
+|turn|149
+|
+|move|p1a: Jellicent|Scald|p2a: Snorlax
+|-damage|p2a: Snorlax|466\/524 slp
+|cant|p2a: Snorlax|slp
+|
+|turn|150
+|
+|move|p1a: Jellicent|Scald|p2a: Snorlax
+|-damage|p2a: Snorlax|406\/524 slp
+|cant|p2a: Snorlax|slp
+|
+|turn|151
+|leave|waiv
+|c|âdestinyhero96|!data lapraz
+No Pokemon, item, move, ability or nature named 'lapraz' was found. Showing the data of 'Lapras' instead.
+|c|~|\/data-pokemon Lapras
+
+|leave|Tf2Hunter
+|join|p9000f
+|
+|move|p1a: Jellicent|Scald|p2a: Snorlax
+|-damage|p2a: Snorlax|354\/524 slp
+|-curestatus|p2a: Snorlax|slp
+|move|p2a: Snorlax|Curse|p2a: Snorlax
+|-boost|p2a: Snorlax|atk|1
+|-boost|p2a: Snorlax|def|1
+|-unboost|p2a: Snorlax|spe|1
+|
+|turn|152
+|
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Snorlax
+|-status|p2a: Snorlax|brn
+|move|p2a: Snorlax|Earthquake|p1a: Jellicent
+|-damage|p1a: Jellicent|288\/403
+|
+|-heal|p1a: Jellicent|313\/403|[from] item: Leftovers
+|-damage|p2a: Snorlax|289\/524 brn|[from] brn
+|turn|153
+|
+|switch|p1a: Umbreon|Umbreon, F|328\/394
+|-damage|p1a: Umbreon|279\/394|[from] Stealth Rock
+|move|p2a: Snorlax|Rest|p2a: Snorlax
+|-status|p2a: Snorlax|slp
+|-heal|p2a: Snorlax|524\/524 slp|[silent]
+|-status|p2a: Snorlax|slp|[from] move: Rest
+|
+|turn|154
+|
+|move|p1a: Umbreon|Foul Play|p2a: Snorlax
+|-damage|p2a: Snorlax|365\/524 slp
+|cant|p2a: Snorlax|slp
+|
+|turn|155
+|
+|switch|p2a: Gligar|Gligar, F|334\/334
+|move|p1a: Umbreon|Foul Play|p2a: Gligar
+|-damage|p2a: Gligar|271\/334
+|
+|turn|156
+|
+|switch|p1a: Vaporeon|Vaporeon, M|463\/463
+|-damage|p1a: Vaporeon|406\/463|[from] Stealth Rock
+|move|p2a: Gligar|Knock Off|p1a: Vaporeon
+|-damage|p1a: Vaporeon|348\/463
+|-enditem|p1a: Vaporeon|Leftovers|[from] move: Knock Off|[of] p2a: Gligar
+|
+|turn|157
+|
+|switch|p2a: Snorlax|Snorlax, M|365\/524 slp
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|turn|158
+|
+|switch|p1a: Jellicent|Jellicent, M|313\/403
+|-damage|p1a: Jellicent|263\/403|[from] Stealth Rock
+|cant|p2a: Snorlax|slp
+|
+|-heal|p1a: Jellicent|403\/403|[from] move: Wish|[wisher] Vaporeon
+|turn|159
+|
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Snorlax
+|-fail|p2a: Snorlax
+|-curestatus|p2a: Snorlax|slp
+|move|p2a: Snorlax|Frustration|p1a: Jellicent
+|-immune|p1a: Jellicent|[msg]
+|
+|turn|160
+|leave|p9000f
+|
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Snorlax
+|-status|p2a: Snorlax|brn
+|move|p2a: Snorlax|Curse|p2a: Snorlax
+|-boost|p2a: Snorlax|atk|1
+|-boost|p2a: Snorlax|def|1
+|-unboost|p2a: Snorlax|spe|1
+|
+|-damage|p2a: Snorlax|300\/524 brn|[from] brn
+|turn|161
+|
+|move|p1a: Jellicent|Scald|p2a: Snorlax
+|-damage|p2a: Snorlax|243\/524 brn
+|move|p2a: Snorlax|Curse|p2a: Snorlax
+|-boost|p2a: Snorlax|atk|1
+|-boost|p2a: Snorlax|def|1
+|-unboost|p2a: Snorlax|spe|1
+|
+|-damage|p2a: Snorlax|178\/524 brn|[from] brn
+|turn|162
+|
+|switch|p1a: Vaporeon|Vaporeon, M|348\/463
+|-damage|p1a: Vaporeon|291\/463|[from] Stealth Rock
+|move|p2a: Snorlax|Rest|p2a: Snorlax
+|-status|p2a: Snorlax|slp
+|-heal|p2a: Snorlax|524\/524 slp|[silent]
+|-status|p2a: Snorlax|slp|[from] move: Rest
+|
+|turn|163
+|
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|cant|p2a: Snorlax|slp
+|
+|turn|164
+|
+|switch|p1a: Umbreon|Umbreon, F|279\/394
+|-damage|p1a: Umbreon|230\/394|[from] Stealth Rock
+|cant|p2a: Snorlax|slp
+|
+|-heal|p1a: Umbreon|394\/394|[from] move: Wish|[wisher] Vaporeon
+|turn|165
+|
+|move|p1a: Umbreon|Foul Play|p2a: Snorlax
+|-damage|p2a: Snorlax|361\/524 slp
+|-curestatus|p2a: Snorlax|slp
+|move|p2a: Snorlax|Frustration|p1a: Umbreon
+|-damage|p1a: Umbreon|213\/394
+|
+|turn|166
+|
+|move|p1a: Umbreon|Foul Play|p2a: Snorlax
+|-damage|p2a: Snorlax|196\/524
+|move|p2a: Snorlax|Curse|p2a: Snorlax
+|-boost|p2a: Snorlax|atk|1
+|-boost|p2a: Snorlax|def|1
+|-unboost|p2a: Snorlax|spe|1
+|
+|turn|167
+|
+|move|p1a: Umbreon|Foul Play|p2a: Snorlax
+|-damage|p2a: Snorlax|15\/524
+|move|p2a: Snorlax|Rest|p2a: Snorlax
+|-status|p2a: Snorlax|slp
+|-heal|p2a: Snorlax|524\/524 slp|[silent]
+|-status|p2a: Snorlax|slp|[from] move: Rest
+|
+|turn|168
+|
+|move|p1a: Umbreon|Foul Play|p2a: Snorlax
+|-damage|p2a: Snorlax|365\/524 slp
+|cant|p2a: Snorlax|slp
+|
+|turn|169
+|
+|move|p1a: Umbreon|Foul Play|p2a: Snorlax
+|-crit|p2a: Snorlax
+|-damage|p2a: Snorlax|0 fnt
+|faint|p2a: Snorlax
+|
+|join|p9000f
+|
+|switch|p2a: Blissey|Blissey, F|31\/657
+|turn|170
+|
+|move|p1a: Umbreon|Foul Play|p2a: Blissey
+|-damage|p2a: Blissey|12\/657
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|turn|171
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|move|p1a: Umbreon|Foul Play|p2a: Blissey
+|-activate|p2a: Blissey|Protect
+|
+|-heal|p2a: Blissey|340\/657|[from] move: Wish|[wisher] Blissey
+|turn|172
+|
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|turn|173
+|
+|move|p1a: Umbreon|Foul Play|p2a: Blissey
+|-damage|p2a: Blissey|321\/657
+|move|p2a: Blissey|Seismic Toss|p1a: Umbreon
+|-damage|p1a: Umbreon|113\/394
+|
+|-heal|p2a: Blissey|649\/657|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Umbreon|310\/394|[from] move: Wish|[wisher] Umbreon
+|turn|174
+|
+|switch|p2a: Gligar|Gligar, F|271\/334
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-fail|p1a: Umbreon
+|
+|turn|175
+|
+|switch|p1a: Vaporeon|Vaporeon, M|291\/463
+|-damage|p1a: Vaporeon|234\/463|[from] Stealth Rock
+|move|p2a: Gligar|Earthquake|p1a: Vaporeon
+|-damage|p1a: Vaporeon|144\/463
+|
+|turn|176
+|
+|switch|p2a: Blissey|Blissey, F|649\/657
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|turn|177
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Vaporeon
+|-damage|p1a: Vaporeon|44\/463
+|move|p1a: Vaporeon|Roar|p2a: Blissey
+|drag|p2a: Gligar|Gligar, F|271\/334
+|
+|-heal|p1a: Vaporeon|275\/463|[from] move: Wish|[wisher] Vaporeon
+|turn|178
+|
+|switch|p2a: Blissey|Blissey, F|649\/657
+|move|p1a: Vaporeon|Scald|p2a: Blissey
+|-damage|p2a: Blissey|588\/657
+|
+|turn|179
+|
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|move|p2a: Blissey|Toxic|p1a: Vaporeon
+|-status|p1a: Vaporeon|tox
+|
+|-damage|p1a: Vaporeon|247\/463 tox|[from] psn
+|turn|180
+|
+|move|p2a: Blissey|Seismic Toss|p1a: Vaporeon
+|-damage|p1a: Vaporeon|147\/463 tox
+|move|p1a: Vaporeon|Roar|p2a: Blissey
+|drag|p2a: Gligar|Gligar, F|271\/334
+|
+|-heal|p1a: Vaporeon|378\/463 tox|[from] move: Wish|[wisher] Vaporeon
+|-damage|p1a: Vaporeon|322\/463 tox|[from] psn
+|turn|181
+|
+|switch|p1a: Umbreon|Umbreon, F|310\/394
+|-damage|p1a: Umbreon|261\/394|[from] Stealth Rock
+|move|p2a: Gligar|Earthquake|p1a: Umbreon
+|-damage|p1a: Umbreon|194\/394
+|
+|turn|182
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Gligar|Knock Off|p1a: Umbreon
+|-activate|p1a: Umbreon|Protect
+|
+|turn|183
+|
+|move|p2a: Gligar|Stealth Rock|p1a: Umbreon
+|-fail|p1a: Umbreon
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|turn|184
+|
+|move|p2a: Gligar|Stealth Rock|p1a: Umbreon
+|-fail|p1a: Umbreon
+|move|p1a: Umbreon|Foul Play|p2a: Gligar
+|-damage|p2a: Gligar|207\/334
+|
+|-heal|p1a: Umbreon|391\/394|[from] move: Wish|[wisher] Umbreon
+|turn|185
+|join|Snowballin
+|
+|move|p2a: Gligar|Stealth Rock|p1a: Umbreon
+|-fail|p1a: Umbreon
+|move|p1a: Umbreon|Foul Play|p2a: Gligar
+|-damage|p2a: Gligar|150\/334
+|
+|turn|186
+|c| Snowballin|uh
+|c| Snowballin|ok
+|c| Snowballin|LOL
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Gligar|Roost|p2a: Gligar
+|-heal|p2a: Gligar|317\/334
+|
+|turn|187
+|c|âlapraz|the irony is
+|c|âlapraz|if mantine was still alive
+|c|âlapraz|i would have won
+|c|âdestinyhero96|i could say the same thing about medicham
+|c|âdestinyhero96|and i woulda won a long time ago
+|c| Snowballin|You don't treasure your mantine enough lapraz
+|c| Snowballin|;-;
+|c|âlapraz|what there was a medicham in this game
+|c|âlapraz|wtf
+|
+|switch|p1a: Jellicent|Jellicent, M|403\/403
+|-damage|p1a: Jellicent|353\/403|[from] Stealth Rock
+|move|p2a: Gligar|Stealth Rock|p1a: Jellicent
+|-fail|p1a: Jellicent
+|
+|-heal|p1a: Jellicent|378\/403|[from] item: Leftovers
+|turn|188
+|c| Snowballin|LOL
+|c|âdestinyhero96|first thing u killed?
+|
+|switch|p2a: Blissey|Blissey, F|588\/657
+|move|p1a: Jellicent|Scald|p2a: Blissey
+|-crit|p2a: Blissey
+|-damage|p2a: Blissey|500\/657
+|-status|p2a: Blissey|brn
+|
+|-heal|p1a: Jellicent|403\/403|[from] item: Leftovers
+|-damage|p2a: Blissey|418\/657 brn|[from] brn
+|turn|189
+|
+|move|p1a: Jellicent|Scald|p2a: Blissey
+|-damage|p2a: Blissey|361\/657 brn
+|move|p2a: Blissey|Toxic|p1a: Jellicent
+|-status|p1a: Jellicent|tox
+|
+|-damage|p1a: Jellicent|378\/403 tox|[from] psn
+|-damage|p2a: Blissey|279\/657 brn|[from] brn
+|turn|190
+|
+|switch|p1a: Umbreon|Umbreon, F|391\/394
+|-damage|p1a: Umbreon|342\/394|[from] Stealth Rock
+|switch|p2a: Gligar|Gligar, F|317\/334
+|
+|turn|191
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Gligar|Knock Off|p1a: Umbreon
+|-activate|p1a: Umbreon|Protect
+|
+|turn|192
+|
+|switch|p1a: Vaporeon|Vaporeon, M|322\/463 tox
+|-damage|p1a: Vaporeon|265\/463 tox|[from] Stealth Rock
+|move|p2a: Gligar|Knock Off|p1a: Vaporeon
+|-damage|p1a: Vaporeon|225\/463 tox
+|
+|-damage|p1a: Vaporeon|197\/463 tox|[from] psn
+|turn|193
+|
+|move|p2a: Gligar|Earthquake|p1a: Vaporeon
+|-damage|p1a: Vaporeon|104\/463 tox
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-damage|p1a: Vaporeon|48\/463 tox|[from] psn
+|turn|194
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Gligar|Stealth Rock|p1a: Vaporeon
+|-fail|p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|279\/463 tox|[from] move: Wish|[wisher] Vaporeon
+|-damage|p1a: Vaporeon|195\/463 tox|[from] psn
+|turn|195
+|
+|switch|p1a: Umbreon|Umbreon, F|342\/394
+|-damage|p1a: Umbreon|293\/394|[from] Stealth Rock
+|move|p2a: Gligar|Knock Off|p1a: Umbreon
+|-resisted|p1a: Umbreon
+|-damage|p1a: Umbreon|278\/394
+|
+|turn|196
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Gligar|Stealth Rock|p1a: Umbreon
+|-fail|p1a: Umbreon
+|
+|turn|197
+|
+|move|p2a: Gligar|Stealth Rock|p1a: Umbreon
+|-fail|p1a: Umbreon
+|move|p1a: Umbreon|Heal Bell|p1a: Umbreon
+|-cureteam|p1a: Umbreon|[from] move: HealBell
+|
+|turn|198
+|
+|switch|p1a: Jellicent|Jellicent, M|378\/403
+|-damage|p1a: Jellicent|328\/403|[from] Stealth Rock
+|move|p2a: Gligar|Knock Off|p1a: Jellicent
+|-supereffective|p1a: Jellicent
+|-damage|p1a: Jellicent|160\/403
+|-start|p2a: Gligar|Disable|Knock Off
+|-enditem|p1a: Jellicent|Leftovers|[from] move: Knock Off|[of] p2a: Gligar
+|
+|turn|199
+|
+|switch|p2a: Blissey|Blissey, F|279\/657
+|move|p1a: Jellicent|Recover|p1a: Jellicent
+|-heal|p1a: Jellicent|362\/403
+|
+|turn|200
+|
+|switch|p1a: Umbreon|Umbreon, F|278\/394
+|-damage|p1a: Umbreon|229\/394|[from] Stealth Rock
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|turn|201
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Blissey|Seismic Toss|p1a: Umbreon
+|-activate|p1a: Umbreon|Protect
+|
+|-heal|p2a: Blissey|607\/657|[from] move: Wish|[wisher] Blissey
+|turn|202
+|
+|switch|p1a: Jellicent|Jellicent, M|362\/403
+|-damage|p1a: Jellicent|312\/403|[from] Stealth Rock
+|move|p2a: Blissey|Toxic|p1a: Jellicent
+|-status|p1a: Jellicent|tox
+|
+|-damage|p1a: Jellicent|287\/403 tox|[from] psn
+|turn|203
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|move|p1a: Jellicent|Scald|p2a: Blissey
+|-activate|p2a: Blissey|Protect
+|
+|-damage|p1a: Jellicent|237\/403 tox|[from] psn
+|turn|204
+|join|feng the bob
+|
+|move|p1a: Jellicent|Recover|p1a: Jellicent
+|-heal|p1a: Jellicent|403\/403 tox
+|move|p2a: Blissey|Seismic Toss|p1a: Jellicent
+|-immune|p1a: Jellicent|[msg]
+|
+|-damage|p1a: Jellicent|328\/403 tox|[from] psn
+|turn|205
+|
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-singleturn|p2a: Blissey|Protect
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Blissey
+|-activate|p2a: Blissey|Protect
+|
+|-damage|p1a: Jellicent|228\/403 tox|[from] psn
+|turn|206
+|
+|switch|p1a: Vaporeon|Vaporeon, M|195\/463
+|-damage|p1a: Vaporeon|138\/463|[from] Stealth Rock
+|move|p2a: Blissey|Seismic Toss|p1a: Vaporeon
+|-damage|p1a: Vaporeon|38\/463
+|
+|turn|207
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Blissey|Seismic Toss|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Protect
+|
+|turn|208
+|
+|switch|p1a: Jellicent|Jellicent, M|228\/403 tox
+|-damage|p1a: Jellicent|178\/403 tox|[from] Stealth Rock
+|move|p2a: Blissey|Seismic Toss|p1a: Jellicent
+|-immune|p1a: Jellicent|[msg]
+|
+|-damage|p1a: Jellicent|153\/403 tox|[from] psn
+|turn|209
+|
+|switch|p2a: Gligar|Gligar, F|317\/334
+|move|p1a: Jellicent|Recover|p1a: Jellicent
+|-heal|p1a: Jellicent|355\/403 tox
+|
+|-damage|p1a: Jellicent|305\/403 tox|[from] psn
+|turn|210
+|c| Snowballin|Stall players are the most patient people alive
+|
+|switch|p2a: Blissey|Blissey, F|607\/657
+|move|p1a: Jellicent|Scald|p2a: Blissey
+|-damage|p2a: Blissey|555\/657
+|-status|p2a: Blissey|brn
+|
+|-damage|p1a: Jellicent|230\/403 tox|[from] psn
+|-damage|p2a: Blissey|473\/657 brn|[from] brn
+|turn|211
+|c|âlapraz|yep
+|c|âlapraz|fuck
+|c| Snowballin|like
+|c| feng the bob|does taunt jelli not win here
+|c|âdestinyhero96|this isnt even a stall team
+|c| Snowballin|If there was a cold war and stall players were in command
+|c| Snowballin|It would last forever.
+|
+|move|p1a: Jellicent|Recover|p1a: Jellicent
+|-heal|p1a: Jellicent|403\/403 tox
+|move|p2a: Blissey|Seismic Toss|p1a: Jellicent
+|-immune|p1a: Jellicent|[msg]
+|
+|-damage|p1a: Jellicent|303\/403 tox|[from] psn
+|-damage|p2a: Blissey|391\/657 brn|[from] brn
+|turn|212
+|
+|move|p1a: Jellicent|Scald|p2a: Blissey
+|-damage|p2a: Blissey|336\/657 brn
+|move|p2a: Blissey|Wish|p2a: Blissey
+|
+|-damage|p1a: Jellicent|178\/403 tox|[from] psn
+|-damage|p2a: Blissey|254\/657 brn|[from] brn
+|turn|213
+|
+|move|p1a: Jellicent|Recover|p1a: Jellicent
+|-heal|p1a: Jellicent|380\/403 tox
+|move|p2a: Blissey|Seismic Toss|p1a: Jellicent
+|-immune|p1a: Jellicent|[msg]
+|
+|-heal|p2a: Blissey|582\/657 brn|[from] move: Wish|[wisher] Blissey
+|-damage|p1a: Jellicent|230\/403 tox|[from] psn
+|-damage|p2a: Blissey|500\/657 brn|[from] brn
+|turn|214
+|
+|switch|p2a: Gligar|Gligar, F|317\/334
+|move|p1a: Jellicent|Recover|p1a: Jellicent
+|-heal|p1a: Jellicent|403\/403 tox
+|
+|-damage|p1a: Jellicent|228\/403 tox|[from] psn
+|turn|215
+|
+|switch|p1a: Vaporeon|Vaporeon, M|38\/463
+|-damage|p1a: Vaporeon|0 fnt|[from] Stealth Rock
+|faint|p1a: Vaporeon
+|move|p2a: Gligar|Knock Off|p1: Vaporeon|[notarget]
+|-notarget
+|
+|
+|switch|p1a: Umbreon|Umbreon, F|229\/394
+|-damage|p1a: Umbreon|180\/394|[from] Stealth Rock
+|turn|216
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Gligar|Stealth Rock|p1a: Umbreon
+|-fail|p1a: Umbreon
+|
+|turn|217
+|
+|move|p2a: Gligar|Stealth Rock|p1a: Umbreon
+|-fail|p1a: Umbreon
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|turn|218
+|
+|move|p2a: Gligar|Earthquake|p1a: Umbreon
+|-damage|p1a: Umbreon|122\/394
+|move|p1a: Umbreon|Foul Play|p2a: Gligar
+|-crit|p2a: Gligar
+|-damage|p2a: Gligar|227\/334
+|
+|-heal|p1a: Umbreon|319\/394|[from] move: Wish|[wisher] Umbreon
+|turn|219
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Gligar|Stealth Rock|p1a: Umbreon
+|-fail|p1a: Umbreon
+|
+|turn|220
+|
+|switch|p1a: Jellicent|Jellicent, M|228\/403 tox
+|-damage|p1a: Jellicent|178\/403 tox|[from] Stealth Rock
+|move|p2a: Gligar|Stealth Rock|p1a: Jellicent
+|-fail|p1a: Jellicent
+|
+|-damage|p1a: Jellicent|153\/403 tox|[from] psn
+|turn|221
+|
+|move|p2a: Gligar|Earthquake|p1a: Jellicent
+|-damage|p1a: Jellicent|33\/403 tox
+|move|p1a: Jellicent|Scald|p2a: Gligar
+|-supereffective|p2a: Gligar
+|-damage|p2a: Gligar|0 fnt
+|faint|p2a: Gligar
+|
+|-damage|p1a: Jellicent|0 fnt|[from] psn
+|faint|p1a: Jellicent
+|join|Pseudo-Yoik
+|
+|switch|p1a: Umbreon|Umbreon, F|319\/394
+|switch|p2a: Blissey|Blissey, F|500\/657
+|-damage|p1a: Umbreon|270\/394|[from] Stealth Rock
+|turn|222
+|c| Pseudo-Yoik|What
+|c| Pseudo-Yoik|It's still on going
+|c|âlapraz|i should use toxic now lol
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-fail|p2a: Blissey
+|
+|turn|223
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-fail|p1a: Umbreon
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-fail|p2a: Blissey
+|
+|turn|224
+|leave|Pseudo-Yoik
+|
+|move|p1a: Umbreon|Foul Play|p2a: Blissey
+|-damage|p2a: Blissey|482\/657
+|move|p2a: Blissey|Seismic Toss|p1a: Umbreon
+|-damage|p1a: Umbreon|170\/394
+|
+|turn|225
+|
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|move|p2a: Blissey|Seismic Toss|p1a: Umbreon
+|-damage|p1a: Umbreon|70\/394
+|
+|turn|226
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-fail|p2a: Blissey
+|
+|-heal|p1a: Umbreon|267\/394|[from] move: Wish|[wisher] Umbreon
+|turn|227
+|
+|move|p1a: Umbreon|Foul Play|p2a: Blissey
+|-damage|p2a: Blissey|461\/657
+|move|p2a: Blissey|Seismic Toss|p1a: Umbreon
+|-damage|p1a: Umbreon|167\/394
+|
+|turn|228
+|
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|move|p2a: Blissey|Seismic Toss|p1a: Umbreon
+|-damage|p1a: Umbreon|67\/394
+|
+|turn|229
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Blissey|Protect|p2a: Blissey
+|-fail|p2a: Blissey
+|
+|-heal|p1a: Umbreon|264\/394|[from] move: Wish|[wisher] Umbreon
+|turn|230
+|
+|move|p1a: Umbreon|Heal Bell|p1a: Umbreon
+|-cureteam|p1a: Umbreon|[from] move: HealBell
+|move|p2a: Blissey|Seismic Toss|p1a: Umbreon
+|-damage|p1a: Umbreon|164\/394
+|
+|turn|231
+|c|âlapraz|gg
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Blissey|Seismic Toss|p1a: Umbreon
+|-activate|p1a: Umbreon|Protect
+|
+|turn|232
+|c|âdestinyhero96|gg
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-fail|p1a: Umbreon
+|move|p2a: Blissey|Seismic Toss|p1a: Umbreon
+|-damage|p1a: Umbreon|64\/394
+|
+|turn|233
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Blissey|Seismic Toss|p1a: Umbreon
+|-activate|p1a: Umbreon|Protect
+|
+|turn|234
+|
+|move|p1a: Umbreon|Heal Bell|p1a: Umbreon
+|-cureteam|p1a: Umbreon|[from] move: HealBell
+|move|p2a: Blissey|Seismic Toss|p1a: Umbreon
+|-damage|p1a: Umbreon|0 fnt
+|faint|p1a: Umbreon
+|
+|win|lapraz
+|raw|Ladder updating...
+|raw|destinyhero96's rating: 1617 &rarr; <strong>1596<\/strong><br \/>(-21 for losing)
+|raw|lapraz's rating: 1583 &rarr; <strong>1605<\/strong><br \/>(+22 for winning)
+|c| Snowballin|How much PP does
+|c| Snowballin|S-toss have
+|c|âdestinyhero96|like 32
+|leave|feng the bob
+|c| Snowballin|o
+|c| Snowballin|wow almost stalled completely
+|c| Snowballin|LOL
+|c|âdestinyhero96|was annoyed cuz i lost medicham stupidly
+|c|âlapraz|that was so close
+|c|âlapraz|i don't even remember medicham lol
+|c|âdestinyhero96|first thing that died...
+|c|âlapraz|turn 20
+|c|âlapraz|so long ago
+|c|âdestinyhero96|u were scared of it
+|c|âdestinyhero96|so u tried to kill it immediately
+|c|âdestinyhero96|but i probs coulda won if i just subbed
+|c|âdestinyhero96|i just high jump kicked
+|c|âdestinyhero96|sub bulk up high jump kick zen headbutt
+|c|âlapraz|shit
+|c|âdestinyhero96|u just went protect if i predicted i probs coulda just swept right here
+|leave|Celsius
+|c|âdestinyhero96|there*
+|c|âlapraz|i don't think i could have beaten that
+|c|âlapraz|yeah
+|c|âdestinyhero96|gg
+|c|âlapraz|gg
+|leave|destinyhero96
+|player|p1

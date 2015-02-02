@@ -1,0 +1,262 @@
+|join|anger MANAGEMENT
+|join|Nickydicky
+|player|p1|anger MANAGEMENT|11
+|player|p2|Nickydicky|170
+|gametype|singles
+|gen|4
+|tier|[Gen 4] UU (beta)
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|
+|start
+|switch|p1a: Monferno|Monferno, M|238\/238
+|switch|p2a: Uxie|Uxie|354\/354
+|turn|1
+|
+|move|p1a: Monferno|Stealth Rock|p2a: Uxie
+|-sidestart|p2: Nickydicky|move: Stealth Rock
+|move|p2a: Uxie|Stealth Rock|p1a: Monferno
+|-sidestart|p1: anger MANAGEMENT|move: Stealth Rock
+|
+|turn|2
+|
+|move|p1a: Monferno|Overheat|p2a: Uxie|[miss]
+|-miss|p1a: Monferno|p2a: Uxie
+|move|p2a: Uxie|Sunny Day|p2a: Uxie
+|-weather|SunnyDay
+|
+|-weather|SunnyDay|[upkeep]
+|turn|3
+|
+|switch|p2a: Arcanine|Arcanine, F|384\/384
+|-damage|p2a: Arcanine|288\/384|[from] Stealth Rock
+|move|p1a: Monferno|Overheat|p2a: Arcanine
+|-start|p2a: Arcanine|ability: Flash Fire
+|
+|-weather|SunnyDay|[upkeep]
+|turn|4
+|
+|move|p1a: Monferno|Endeavor|p2a: Arcanine
+|-damage|p2a: Arcanine|238\/384
+|move|p2a: Arcanine|Flare Blitz|p1a: Monferno
+|-resisted|p1a: Monferno
+|-enditem|p1a: Monferno|Focus Sash
+|-damage|p1a: Monferno|1\/238
+|-damage|p2a: Arcanine|160\/384|[from] recoil|[of] p1a: Monferno
+|-damage|p2a: Arcanine|122\/384|[from] item: Life Orb
+|
+|-weather|SunnyDay|[upkeep]
+|turn|5
+|
+|move|p1a: Monferno|Vacuum Wave|p2a: Arcanine
+|-damage|p2a: Arcanine|61\/384
+|move|p2a: Arcanine|Extreme Speed|p1a: Monferno
+|-damage|p1a: Monferno|0 fnt
+|-damage|p2a: Arcanine|23\/384|[from] item: Life Orb
+|faint|p1a: Monferno
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p1a: Spiritomb|Spiritomb, F|302\/302
+|-damage|p1a: Spiritomb|265\/302|[from] Stealth Rock
+|-ability|p1a: Spiritomb|Pressure
+|turn|6
+|
+|move|p1a: Spiritomb|Shadow Sneak|p2a: Arcanine
+|-crit|p2a: Arcanine
+|-damage|p2a: Arcanine|0 fnt
+|faint|p2a: Arcanine
+|
+|-weather|none
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|-damage|p2a: Registeel|342\/364|[from] Stealth Rock
+|turn|7
+|
+|switch|p1a: Ursaring|Ursaring, M|321\/321
+|-damage|p1a: Ursaring|281\/321|[from] Stealth Rock
+|move|p2a: Registeel|Toxic|p1a: Ursaring
+|-status|p1a: Ursaring|tox
+|
+|-heal|p2a: Registeel|364\/364|[from] item: Leftovers
+|-damage|p1a: Ursaring|261\/321 tox|[from] psn
+|turn|8
+|
+|move|p1a: Ursaring|Swords Dance|p1a: Ursaring
+|-boost|p1a: Ursaring|atk|2
+|move|p2a: Registeel|Seismic Toss|p1a: Ursaring
+|-damage|p1a: Ursaring|161\/321 tox
+|
+|-damage|p1a: Ursaring|121\/321 tox|[from] psn
+|turn|9
+|
+|switch|p2a: Weezing|Weezing, M|334\/334
+|-damage|p2a: Weezing|293\/334|[from] Stealth Rock
+|move|p1a: Ursaring|Close Combat|p2a: Weezing
+|-resisted|p2a: Weezing
+|-damage|p2a: Weezing|186\/334
+|-unboost|p1a: Ursaring|def|1
+|-unboost|p1a: Ursaring|spd|1
+|
+|-heal|p2a: Weezing|206\/334|[from] item: Black Sludge
+|-damage|p1a: Ursaring|61\/321 tox|[from] psn
+|turn|10
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|-damage|p2a: Registeel|342\/364|[from] Stealth Rock
+|move|p1a: Ursaring|Facade|p2a: Registeel
+|-resisted|p2a: Registeel
+|-damage|p2a: Registeel|170\/364
+|
+|-heal|p2a: Registeel|192\/364|[from] item: Leftovers
+|-damage|p1a: Ursaring|0 fnt|[from] psn
+|faint|p1a: Ursaring
+|
+|switch|p1a: Blaziken|Blaziken, M|301\/301
+|-damage|p1a: Blaziken|264\/301|[from] Stealth Rock
+|turn|11
+|
+|move|p2a: Registeel|Protect|p2a: Registeel
+|-singleturn|p2a: Registeel|Protect
+|move|p1a: Blaziken|Flare Blitz|p2a: Registeel
+|-activate|p2a: Registeel|Protect
+|
+|-heal|p2a: Registeel|214\/364|[from] item: Leftovers
+|turn|12
+|join|BasedAaron
+|
+|move|p1a: Blaziken|Flare Blitz|p2a: Registeel
+|-supereffective|p2a: Registeel
+|-damage|p2a: Registeel|0 fnt
+|-damage|p1a: Blaziken|193\/301|[from] recoil|[of] p2a: Registeel
+|faint|p2a: Registeel
+|
+|
+|switch|p2a: Uxie|Uxie|354\/354
+|-damage|p2a: Uxie|310\/354|[from] Stealth Rock
+|turn|13
+|
+|switch|p1a: Spiritomb|Spiritomb, F|265\/302
+|-damage|p1a: Spiritomb|228\/302|[from] Stealth Rock
+|-ability|p1a: Spiritomb|Pressure
+|move|p2a: Uxie|Knock Off|p1a: Spiritomb
+|-damage|p1a: Spiritomb|216\/302
+|-enditem|p1a: Spiritomb|Black Glasses|[from] move: Knock Off|[of] p2a: Uxie
+|
+|-heal|p2a: Uxie|332\/354|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Uxie|U-turn|p1a: Spiritomb
+|-damage|p1a: Spiritomb|177\/302
+|join|calmed mind
+|
+|move|p1a: Spiritomb|Pursuit|p2a: Uxie|[from]Pursuit
+|-supereffective|p2a: Uxie
+|-damage|p2a: Uxie|140\/354
+|switch|p2a: Weezing|Weezing, M|206\/334
+|-damage|p2a: Weezing|165\/334|[from] Stealth Rock
+|
+|-heal|p2a: Weezing|185\/334|[from] item: Black Sludge
+|turn|15
+|
+|move|p2a: Weezing|Will-O-Wisp|p1a: Spiritomb
+|-status|p1a: Spiritomb|brn
+|move|p1a: Spiritomb|Shadow Ball|p2a: Weezing
+|-damage|p2a: Weezing|65\/334
+|-unboost|p2a: Weezing|spd|1
+|
+|-heal|p2a: Weezing|85\/334|[from] item: Black Sludge
+|-damage|p1a: Spiritomb|140\/302 brn|[from] brn
+|turn|16
+|
+|move|p2a: Weezing|Pain Split|p1a: Spiritomb
+|-sethp|p1a: Spiritomb|112\/302 brn|p2a: Weezing|112\/334|[from] move: Pain Split
+|move|p1a: Spiritomb|Shadow Ball|p2a: Weezing
+|-crit|p2a: Weezing
+|-damage|p2a: Weezing|0 fnt
+|faint|p2a: Weezing
+|
+|-damage|p1a: Spiritomb|75\/302 brn|[from] brn
+|
+|switch|p2a: Uxie|Uxie|140\/354
+|-damage|p2a: Uxie|96\/354|[from] Stealth Rock
+|turn|17
+|
+|move|p2a: Uxie|Sunny Day|p2a: Uxie
+|-weather|SunnyDay
+|move|p1a: Spiritomb|Shadow Ball|p2a: Uxie
+|-supereffective|p2a: Uxie
+|-damage|p2a: Uxie|0 fnt
+|faint|p2a: Uxie
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Spiritomb|38\/302 brn|[from] brn
+|join|KaiserAeros
+|
+|switch|p2a: Exeggutor|Exeggutor, M|332\/332
+|-damage|p2a: Exeggutor|291\/332|[from] Stealth Rock
+|turn|18
+|
+|move|p1a: Spiritomb|Sucker Punch|p2a: Exeggutor
+|-supereffective|p2a: Exeggutor
+|-damage|p2a: Exeggutor|163\/332
+|move|p2a: Exeggutor|Solar Beam|p1a: Spiritomb|[still]
+|-prepare|p2a: Exeggutor|Solar Beam|p1a: Spiritomb
+|-anim|p2a: Exeggutor|Solar Beam|p1a: Spiritomb
+|-damage|p1a: Spiritomb|0 fnt
+|-damage|p2a: Exeggutor|130\/332|[from] item: Life Orb
+|faint|p1a: Spiritomb
+|
+|-weather|SunnyDay|[upkeep]
+|chat|KaiserAeros|4th Gen UU :3
+|chat|anger MANAGEMENT|1 sec
+|
+|switch|p1a: Blaziken|Blaziken, M|193\/301
+|-damage|p1a: Blaziken|156\/301|[from] Stealth Rock
+|turn|19
+|
+|move|p2a: Exeggutor|Psychic|p1a: Blaziken
+|-supereffective|p1a: Blaziken
+|-damage|p1a: Blaziken|0 fnt
+|-damage|p2a: Exeggutor|97\/332|[from] item: Life Orb
+|faint|p1a: Blaziken
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p1a: Miltank|Miltank, F|331\/331
+|-damage|p1a: Miltank|290\/331|[from] Stealth Rock
+|turn|20
+|
+|move|p2a: Exeggutor|Solar Beam|p1a: Miltank|[still]
+|-prepare|p2a: Exeggutor|Solar Beam|p1a: Miltank
+|-anim|p2a: Exeggutor|Solar Beam|p1a: Miltank
+|-damage|p1a: Miltank|0 fnt
+|-damage|p2a: Exeggutor|64\/332|[from] item: Life Orb
+|faint|p1a: Miltank
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p1a: Tauros|Tauros, M|291\/291
+|-damage|p1a: Tauros|255\/291|[from] Stealth Rock
+|-ability|p1a: Tauros|Intimidate|[of] p2a: Exeggutor
+|-unboost|p2a: Exeggutor|atk|1
+|turn|21
+|chat|KaiserAeros|Pls why no Sap Sipper
+|chat|anger MANAGEMENT|gg
+|
+|move|p2a: Exeggutor|Solar Beam|p1a: Tauros|[still]
+|-prepare|p2a: Exeggutor|Solar Beam|p1a: Tauros
+|-anim|p2a: Exeggutor|Solar Beam|p1a: Tauros
+|-damage|p1a: Tauros|0 fnt
+|-damage|p2a: Exeggutor|31\/332|[from] item: Life Orb
+|faint|p1a: Tauros
+|
+|win|Nickydicky
+|leave|anger MANAGEMENT
+|player|p1
+|chat|Nickydicky|good game

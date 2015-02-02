@@ -1,0 +1,490 @@
+|join|o6east
+|join|Godsend
+|player|p1|o6east|169
+|player|p2|Godsend|169
+|gametype|singles
+|tier|UU
+|rated
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Crobat, F
+|poke|p1|Jumpluff, F
+|poke|p1|Bronzong
+|poke|p1|Slowbro, M
+|poke|p1|Porygon-Z
+|poke|p1|Nidoking, M
+|poke|p2|Weavile, M
+|poke|p2|Azumarill, M
+|poke|p2|Roserade, M
+|poke|p2|Gligar, M
+|poke|p2|Flygon, F
+|poke|p2|Hitmontop, M
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Out of Hell|Crobat, F| (100\/100)
+|switch|p2a: Flygon|Flygon, F| (100\/100)
+|turn|1
+|callback|decision
+|
+|move|p2a: Flygon|U-turn|p1a: Out of Hell
+|-resisted|p1a: Out of Hell
+|-damage|p1a: Out of Hell|8 (92\/100)
+|callback|decision
+|
+|switch|p2a: Azumarill|Azumarill, M| (100\/100)
+|move|p1a: Out of Hell|U-turn|p2a: Azumarill
+|-damage|p2a: Azumarill|36 (64\/100)
+|callback|decision
+|
+|switch|p1a: Bad Ass|Slowbro, M| (100\/100)
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: Roserade|Roserade, M| (100\/100)
+|move|p1a: Bad Ass|Thunder Wave|p2a: Roserade
+|-status|p2a: Roserade|par
+|
+|turn|3
+|callback|decision
+|
+|move|p1a: Bad Ass|Psychic|p2a: Roserade
+|-supereffective|p2a: Roserade
+|-damage|p2a: Roserade|58 (42\/100 par)
+|move|p2a: Roserade|Sludge Bomb|p1a: Bad Ass
+|-damage|p1a: Bad Ass|38 (62\/100)
+|
+|-heal|p1a: Bad Ass|6 (69\/100)|[from] item: Leftovers
+|-heal|p2a: Roserade|6 (49\/100 par)|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: Out of Hell|Crobat, F| (92\/100)
+|switch|p2a: Weavile|Weavile, M| (100\/100)
+|-ability|p2a: Weavile|Pressure
+|
+|turn|5
+|callback|decision
+|
+|switch|p2a: Gligar|Gligar, M| (100\/100)
+|move|p1a: Out of Hell|U-turn|p2a: Gligar
+|-resisted|p2a: Gligar
+|-damage|p2a: Gligar|7 (93\/100)
+|callback|decision
+|
+|switch|p1a: Cyberhex|Porygon-Z| (100\/100)
+|
+|turn|6
+|callback|decision
+|
+|move|p1a: Cyberhex|Trick|p2a: Gligar
+|-activate|p1a: Cyberhex|move: Trick|[of] p2a: Gligar
+|-item|p2a: Gligar|Choice Scarf|[from] move: Trick
+|-item|p1a: Cyberhex|Eviolite|[from] move: Trick
+|move|p2a: Gligar|U-turn|p1a: Cyberhex
+|-damage|p1a: Cyberhex|18 (82\/100)
+|callback|decision
+|
+|switch|p2a: Weavile|Weavile, M| (100\/100)
+|-ability|p2a: Weavile|Pressure
+|
+|turn|7
+|callback|decision
+|
+|move|p2a: Weavile|Low Kick|p1a: Cyberhex
+|-supereffective|p1a: Cyberhex
+|-damage|p1a: Cyberhex|82 (0\/100 fnt)
+|-damage|p2a: Weavile|10 (90\/100)|[from] item: Life Orb
+|faint|p1a: Cyberhex
+|
+|callback|decision
+|
+|switch|p1a: Out of Hell|Crobat, F| (92\/100)
+|turn|8
+|callback|decision
+|
+|switch|p2a: Gligar|Gligar, M| (93\/100)
+|move|p1a: Out of Hell|Brave Bird|p2a: Gligar
+|-damage|p2a: Gligar|51 (42\/100)
+|-damage|p1a: Out of Hell|18 (74\/100)|[from] recoil|[of] p2a: Gligar
+|
+|turn|9
+|callback|decision
+|
+|move|p1a: Out of Hell|Brave Bird|p2a: Gligar
+|-damage|p2a: Gligar|42 (0\/100 fnt)
+|-damage|p1a: Out of Hell|15 (59\/100)|[from] recoil|[of] p2a: Gligar
+|faint|p2a: Gligar
+|
+|callback|decision
+|
+|switch|p2a: Weavile|Weavile, M| (90\/100)
+|-ability|p2a: Weavile|Pressure
+|turn|10
+|callback|decision
+|
+|switch|p1a: Dingaling|Bronzong| (100\/100)
+|move|p2a: Weavile|Ice Shard|p1a: Dingaling
+|-resisted|p1a: Dingaling
+|-damage|p1a: Dingaling|12 (88\/100)
+|-damage|p2a: Weavile|10 (80\/100)|[from] item: Life Orb
+|
+|turn|11
+|callback|decision
+|
+|switch|p2a: Azumarill|Azumarill, M| (64\/100)
+|move|p1a: Dingaling|Stealth Rock|p2a: Azumarill
+|-sidestart|p2: Godsend|move: Stealth Rock
+|
+|turn|12
+|callback|decision
+|
+|move|p2a: Azumarill|Waterfall|p1a: Dingaling
+|-damage|p1a: Dingaling|62 (26\/100)
+|move|p1a: Dingaling|Reflect|p1a: Dingaling
+|-sidestart|p1: o6east|Reflect
+|
+|turn|13
+|callback|decision
+|
+|switch|p1a: Bad Ass|Slowbro, M| (100\/100)
+|move|p2a: Azumarill|Waterfall|p1a: Bad Ass
+|-resisted|p1a: Bad Ass
+|-damage|p1a: Bad Ass|9 (91\/100)
+|
+|-heal|p1a: Bad Ass|6 (97\/100)|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p2a: Hitmontop|Hitmontop, M| (100\/100)
+|-damage|p2a: Hitmontop|6 (94\/100)|[from] Stealth Rock
+|-ability|p2a: Hitmontop|Intimidate|[of] p1a: Bad Ass
+|-unboost|p1a: Bad Ass|atk|1
+|move|p1a: Bad Ass|Thunder Wave|p2a: Hitmontop
+|-status|p2a: Hitmontop|par
+|
+|-heal|p1a: Bad Ass|3 (100\/100)|[from] item: Leftovers
+|-heal|p2a: Hitmontop|6 (100\/100 par)|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1a: Bad Ass|Psychic|p2a: Hitmontop
+|-supereffective|p2a: Hitmontop
+|-damage|p2a: Hitmontop|70 (30\/100 par)
+|move|p2a: Hitmontop|Rapid Spin|p1a: Bad Ass
+|-crit|p1a: Bad Ass
+|-damage|p1a: Bad Ass|8 (92\/100)
+|-sideend|p2: Godsend|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Hitmontop
+|
+|-heal|p1a: Bad Ass|6 (98\/100)|[from] item: Leftovers
+|-heal|p2a: Hitmontop|6 (37\/100 par)|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p2a: Hitmontop|Sucker Punch|p1a: Bad Ass
+|-fail|p1a: Bad Ass
+|move|p1a: Bad Ass|Thunder Wave|p2a: Hitmontop
+|-fail|p2a: Hitmontop|par
+|
+|-heal|p1a: Bad Ass|2 (100\/100)|[from] item: Leftovers
+|-heal|p2a: Hitmontop|6 (43\/100 par)|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|switch|p1a: Out of Hell|Crobat, F| (59\/100)
+|cant|p2a: Hitmontop|par
+|
+|-heal|p2a: Hitmontop|6 (49\/100 par)|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|cant|p2a: Hitmontop|par
+|move|p1a: Out of Hell|Brave Bird|p2a: Hitmontop
+|-supereffective|p2a: Hitmontop
+|-damage|p2a: Hitmontop|49 (0\/100 fnt)
+|-damage|p1a: Out of Hell|16 (43\/100)|[from] recoil|[of] p2a: Hitmontop
+|faint|p2a: Hitmontop
+|
+|callback|decision
+|
+|switch|p2a: Weavile|Weavile, M| (80\/100)
+|-ability|p2a: Weavile|Pressure
+|turn|19
+|callback|decision
+|
+|move|p2a: Weavile|Ice Shard|p1a: Out of Hell
+|-supereffective|p1a: Out of Hell
+|-damage|p1a: Out of Hell|33 (10\/100)
+|-damage|p2a: Weavile|10 (70\/100)|[from] item: Life Orb
+|move|p1a: Out of Hell|Brave Bird|p2a: Weavile
+|-damage|p2a: Weavile|70 (0\/100 fnt)
+|-damage|p1a: Out of Hell|10 (0\/100 fnt)|[from] recoil|[of] p2a: Weavile
+|faint|p2a: Weavile
+|faint|p1a: Out of Hell
+|
+|-sideend|p1: o6east|Reflect
+|callback|decision
+|
+|switch|p1a: The Eliminator|Jumpluff, F| (100\/100)
+|switch|p2a: Azumarill|Azumarill, M| (64\/100)
+|turn|20
+|callback|decision
+|
+|move|p2a: Azumarill|Aqua Jet|p1a: The Eliminator
+|-resisted|p1a: The Eliminator
+|-damage|p1a: The Eliminator|24 (76\/100)
+|move|p1a: The Eliminator|Substitute|p1a: The Eliminator
+|-start|p1a: The Eliminator|Substitute
+|-damage|p1a: The Eliminator|25 (51\/100)
+|
+|-heal|p1a: The Eliminator|6 (58\/100)|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p2a: Azumarill|Aqua Jet|p1a: The Eliminator
+|-resisted|p1a: The Eliminator
+|-activate|p1a: The Eliminator|Substitute|[damage]
+|move|p1a: The Eliminator|Leech Seed|p2a: Azumarill
+|-start|p2a: Azumarill|move: Leech Seed
+|
+|-heal|p1a: The Eliminator|6 (64\/100)|[from] item: Leftovers
+|-damage|p2a: Azumarill|12 (51\/100)|[from] Leech Seed|[of] p1a: The Eliminator
+|-heal|p1a: The Eliminator|12 (76\/100)|[silent]
+|turn|22
+|callback|decision
+|
+|switch|p2a: Roserade|Roserade, M| (49\/100)
+|move|p1a: The Eliminator|Encore|p2a: Roserade
+|-fail|p2a: Roserade
+|
+|-heal|p1a: The Eliminator|6 (82\/100)|[from] item: Leftovers
+|-heal|p2a: Roserade|6 (55\/100)|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p1a: The Eliminator|Sleep Powder|p2a: Roserade|[miss]
+|-miss|p1a: The Eliminator
+|move|p2a: Roserade|Sludge Bomb|p1a: The Eliminator
+|-supereffective|p1a: The Eliminator
+|-end|p1a: The Eliminator|Substitute
+|
+|-heal|p1a: The Eliminator|6 (88\/100)|[from] item: Leftovers
+|-heal|p2a: Roserade|6 (61\/100)|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p1a: The Eliminator|Sleep Powder|p2a: Roserade|[miss]
+|-miss|p1a: The Eliminator
+|move|p2a: Roserade|Sludge Bomb|p1a: The Eliminator
+|-supereffective|p1a: The Eliminator
+|-damage|p1a: The Eliminator|71 (17\/100)
+|-status|p1a: The Eliminator|psn
+|
+|-heal|p1a: The Eliminator|6 (23\/100 psn)|[from] item: Leftovers
+|-heal|p2a: Roserade|6 (67\/100)|[from] item: Leftovers
+|-damage|p1a: The Eliminator|12 (11\/100 psn)|[from] psn
+|turn|25
+|callback|decision
+|chat|Godsend|soz
+|
+|move|p1a: The Eliminator|Sleep Powder|p2a: Roserade
+|-status|p2a: Roserade|slp
+|cant|p2a: Roserade|slp
+|
+|-heal|p1a: The Eliminator|6 (17\/100 psn)|[from] item: Leftovers
+|-heal|p2a: Roserade|6 (73\/100 slp)|[from] item: Leftovers
+|-damage|p1a: The Eliminator|12 (5\/100 psn)|[from] psn
+|turn|26
+|callback|decision
+|
+|switch|p1a: Boss Man|Nidoking, M| (100\/100)
+|switch|p2a: Flygon|Flygon, F| (100\/100)
+|
+|turn|27
+|callback|decision
+|
+|switch|p1a: Dingaling|Bronzong| (26\/100)
+|move|p2a: Flygon|Outrage|p1a: Dingaling
+|-resisted|p1a: Dingaling
+|-damage|p1a: Dingaling|25 (1\/100)
+|
+|turn|28
+|callback|decision
+|
+|move|p2a: Flygon|Outrage|p1a: Dingaling
+|-resisted|p1a: Dingaling
+|-damage|p1a: Dingaling|1 (0\/100 fnt)
+|faint|p1a: Dingaling
+|
+|-end|p2a: Flygon|rampage
+|-start|p2a: Flygon|confusion
+|callback|decision
+|
+|switch|p1a: Bad Ass|Slowbro, M| (100\/100)
+|turn|29
+|callback|decision
+|
+|switch|p2a: Roserade|Roserade, M| (73\/100)
+|move|p1a: Bad Ass|Scald|p2a: Roserade
+|-resisted|p2a: Roserade
+|-damage|p2a: Roserade|14 (60\/100)
+|-status|p2a: Roserade|brn
+|
+|-heal|p2a: Roserade|6 (66\/100 brn)|[from] item: Leftovers
+|-damage|p2a: Roserade|12 (54\/100 brn)|[from] brn
+|turn|30
+|callback|decision
+|
+|move|p2a: Roserade|Giga Drain|p1a: Bad Ass
+|-supereffective|p1a: Bad Ass
+|-damage|p1a: Bad Ass|69 (31\/100)
+|-heal|p2a: Roserade|42 (96\/100 brn)|[from] drain|[of] p1a: Bad Ass
+|move|p1a: Bad Ass|Psychic|p2a: Roserade
+|-supereffective|p2a: Roserade
+|-damage|p2a: Roserade|58 (38\/100 brn)
+|
+|-heal|p2a: Roserade|6 (44\/100 brn)|[from] item: Leftovers
+|-heal|p1a: Bad Ass|6 (37\/100)|[from] item: Leftovers
+|-damage|p2a: Roserade|12 (32\/100 brn)|[from] brn
+|turn|31
+|callback|decision
+|
+|switch|p2a: Flygon|Flygon, F| (100\/100)
+|switch|p1a: Boss Man|Nidoking, M| (100\/100)
+|
+|turn|32
+|callback|decision
+|
+|switch|p1a: The Eliminator|Jumpluff, F| (5\/100 psn)
+|move|p2a: Flygon|Outrage|p1a: The Eliminator
+|-crit|p1a: The Eliminator
+|-damage|p1a: The Eliminator|5 (0\/100 fnt)
+|faint|p1a: The Eliminator
+|
+|callback|decision
+|
+|switch|p1a: Bad Ass|Slowbro, M| (70\/100)
+|turn|33
+|callback|decision
+|
+|move|p2a: Flygon|Outrage|p1a: Bad Ass
+|-damage|p1a: Bad Ass|31 (39\/100)
+|move|p1a: Bad Ass|Slack Off|p1a: Bad Ass
+|-heal|p1a: Bad Ass|50 (89\/100)
+|
+|-end|p2a: Flygon|rampage
+|-start|p2a: Flygon|confusion
+|-heal|p1a: Bad Ass|6 (95\/100)|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|switch|p2a: Azumarill|Azumarill, M| (51\/100)
+|move|p1a: Bad Ass|Psychic|p2a: Azumarill
+|-damage|p2a: Azumarill|34 (17\/100)
+|
+|-heal|p1a: Bad Ass|5 (100\/100)|[from] item: Leftovers
+|turn|35
+|callback|decision
+|
+|move|p2a: Azumarill|Return|p1a: Bad Ass
+|-damage|p1a: Bad Ass|32 (68\/100)
+|move|p1a: Bad Ass|Psychic|p2a: Azumarill
+|-damage|p2a: Azumarill|17 (0\/100 fnt)
+|faint|p2a: Azumarill
+|
+|-heal|p1a: Bad Ass|6 (74\/100)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Roserade|Roserade, M| (32\/100)
+|turn|36
+|callback|decision
+|
+|switch|p1a: Boss Man|Nidoking, M| (100\/100)
+|move|p2a: Roserade|Giga Drain|p1a: Boss Man
+|-damage|p1a: Boss Man|46 (54\/100)
+|-heal|p2a: Roserade|22 (54\/100)|[from] drain|[of] p1a: Boss Man
+|
+|-heal|p2a: Roserade|6 (60\/100)|[from] item: Leftovers
+|turn|37
+|callback|decision
+|
+|switch|p2a: Flygon|Flygon, F| (100\/100)
+|move|p1a: Boss Man|Fire Blast|p2a: Flygon|[miss]
+|-miss|p1a: Boss Man
+|
+|turn|38
+|callback|decision
+|
+|move|p2a: Flygon|U-turn|p1a: Boss Man
+|-resisted|p1a: Boss Man
+|-damage|p1a: Boss Man|14 (39\/100)
+|callback|decision
+|
+|switch|p2a: Roserade|Roserade, M| (60\/100)
+|move|p1a: Boss Man|Sludge Wave|p2a: Roserade
+|-damage|p2a: Roserade|60 (0\/100 fnt)
+|faint|p2a: Roserade
+|
+|callback|decision
+|chat|Godsend|gg
+|chat|o6east|gg
+|
+|switch|p2a: Flygon|Flygon, F| (100\/100)
+|turn|39
+|callback|decision
+|
+|move|p2a: Flygon|Earthquake|p1a: Boss Man
+|-supereffective|p1a: Boss Man
+|-damage|p1a: Boss Man|39 (0\/100 fnt)
+|faint|p1a: Boss Man
+|
+|callback|decision
+|
+|switch|p1a: Bad Ass|Slowbro, M| (100\/100)
+|turn|40
+|callback|decision
+|
+|move|p2a: Flygon|Earthquake|p1a: Bad Ass
+|-crit|p1a: Bad Ass
+|-damage|p1a: Bad Ass|53 (47\/100)
+|move|p1a: Bad Ass|Scald|p2a: Flygon
+|-damage|p2a: Flygon|40 (60\/100)
+|
+|-heal|p1a: Bad Ass|6 (53\/100)|[from] item: Leftovers
+|turn|41
+|callback|decision
+|
+|move|p2a: Flygon|Earthquake|p1a: Bad Ass
+|-damage|p1a: Bad Ass|30 (23\/100)
+|move|p1a: Bad Ass|Slack Off|p1a: Bad Ass
+|-heal|p1a: Bad Ass|50 (73\/100)
+|
+|-heal|p1a: Bad Ass|6 (79\/100)|[from] item: Leftovers
+|turn|42
+|callback|decision
+|
+|move|p2a: Flygon|Earthquake|p1a: Bad Ass
+|-damage|p1a: Bad Ass|28 (51\/100)
+|move|p1a: Bad Ass|Scald|p2a: Flygon
+|-damage|p2a: Flygon|35 (25\/100)
+|
+|-heal|p1a: Bad Ass|6 (57\/100)|[from] item: Leftovers
+|turn|43
+|callback|decision
+|
+|move|p2a: Flygon|Earthquake|p1a: Bad Ass
+|-damage|p1a: Bad Ass|27 (30\/100)
+|move|p1a: Bad Ass|Scald|p2a: Flygon
+|-damage|p2a: Flygon|25 (0\/100 fnt)
+|faint|p2a: Flygon
+|
+|win|o6east
+|chatmsg-raw|Ladder updating...
+|raw|Ladder (probably) updated, but score could not be retrieved (corruption).

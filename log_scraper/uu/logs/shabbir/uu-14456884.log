@@ -1,0 +1,457 @@
+|join|Silimar
+|join|shabbir
+|player|p1|Silimar|170
+|player|p2|shabbir|102
+|gametype|singles
+|tier|UU
+|rated
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Porygon2
+|poke|p1|Snorlax, F
+|poke|p1|Suicune
+|poke|p1|Zapdos
+|poke|p1|Heracross, M
+|poke|p1|Chandelure, F
+|poke|p2|Ambipom, M
+|poke|p2|Raikou, shiny
+|poke|p2|Victini
+|poke|p2|Weavile, F
+|poke|p2|Shaymin
+|poke|p2|Mienshao, F
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Bidoofax|Snorlax, F|524\/524
+|switch|p2a: Jack Sparrow|Raikou, shiny|322\/322
+|-ability|p2a: Jack Sparrow|Pressure
+|turn|1
+|callback|decision
+|
+|move|p2a: Jack Sparrow|Volt Switch|p1a: Bidoofax
+|-crit|p1a: Bidoofax
+|-damage|p1a: Bidoofax|290\/524
+|callback|decision
+|
+|switch|p2a: Batman|Shaymin|404\/404
+|move|p1a: Bidoofax|Curse|p1a: Bidoofax
+|-boost|p1a: Bidoofax|atk|1
+|-boost|p1a: Bidoofax|def|1
+|-unboost|p1a: Bidoofax|spe|1
+|
+|-heal|p1a: Bidoofax|322\/524|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|move|p2a: Batman|Seed Flare|p1a: Bidoofax
+|-damage|p1a: Bidoofax|159\/524
+|-damage|p2a: Batman|364\/404|[from] item: Life Orb
+|move|p1a: Bidoofax|Curse|p1a: Bidoofax
+|-boost|p1a: Bidoofax|atk|1
+|-boost|p1a: Bidoofax|def|1
+|-unboost|p1a: Bidoofax|spe|1
+|
+|-heal|p1a: Bidoofax|191\/524|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p2a: Batman|Seed Flare|p1a: Bidoofax|[miss]
+|-miss|p2a: Batman|p1a: Bidoofax
+|move|p1a: Bidoofax|Rest|p1a: Bidoofax
+|-status|p1a: Bidoofax|slp
+|-heal|p1a: Bidoofax|524\/524 slp|[silent]
+|-status|p1a: Bidoofax|slp|[from] move: Rest
+|
+|turn|4
+|callback|decision
+|
+|move|p2a: Batman|Seed Flare|p1a: Bidoofax
+|-damage|p1a: Bidoofax|367\/524 slp
+|-damage|p2a: Batman|324\/404|[from] item: Life Orb
+|cant|p1a: Bidoofax|slp
+|move|p1a: Bidoofax|Sleep Talk|p1a: Bidoofax
+|move|p1a: Bidoofax|Rest|p1a: Bidoofax|[from]Sleep Talk
+|-fail|p1a: Bidoofax
+|
+|-heal|p1a: Bidoofax|399\/524 slp|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p2a: Batman|Seed Flare|p1a: Bidoofax
+|-damage|p1a: Bidoofax|240\/524 slp
+|-damage|p2a: Batman|284\/404|[from] item: Life Orb
+|cant|p1a: Bidoofax|slp
+|move|p1a: Bidoofax|Sleep Talk|p1a: Bidoofax
+|move|p1a: Bidoofax|Curse|p1a: Bidoofax|[from]Sleep Talk
+|-boost|p1a: Bidoofax|atk|1
+|-boost|p1a: Bidoofax|def|1
+|-unboost|p1a: Bidoofax|spe|1
+|
+|-heal|p1a: Bidoofax|272\/524 slp|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Batman|Seed Flare|p1a: Bidoofax
+|-damage|p1a: Bidoofax|107\/524 slp
+|-damage|p2a: Batman|244\/404|[from] item: Life Orb
+|-curestatus|p1a: Bidoofax|slp
+|move|p1a: Bidoofax|Rest|p1a: Bidoofax
+|-status|p1a: Bidoofax|slp
+|-heal|p1a: Bidoofax|524\/524 slp|[silent]
+|-status|p1a: Bidoofax|slp|[from] move: Rest
+|
+|turn|7
+|callback|decision
+|
+|move|p2a: Batman|Seed Flare|p1a: Bidoofax|[miss]
+|-miss|p2a: Batman|p1a: Bidoofax
+|cant|p1a: Bidoofax|slp
+|move|p1a: Bidoofax|Sleep Talk|p1a: Bidoofax
+|move|p1a: Bidoofax|Rest|p1a: Bidoofax|[from]Sleep Talk
+|-fail|p1a: Bidoofax
+|
+|turn|8
+|callback|decision
+|
+|move|p2a: Batman|Seed Flare|p1a: Bidoofax
+|-damage|p1a: Bidoofax|349\/524 slp
+|-damage|p2a: Batman|204\/404|[from] item: Life Orb
+|cant|p1a: Bidoofax|slp
+|move|p1a: Bidoofax|Sleep Talk|p1a: Bidoofax
+|move|p1a: Bidoofax|Rest|p1a: Bidoofax|[from]Sleep Talk
+|-fail|p1a: Bidoofax
+|
+|-heal|p1a: Bidoofax|381\/524 slp|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p2a: Batman|Seed Flare|p1a: Bidoofax
+|-damage|p1a: Bidoofax|213\/524 slp
+|-damage|p2a: Batman|164\/404|[from] item: Life Orb
+|-curestatus|p1a: Bidoofax|slp
+|move|p1a: Bidoofax|Curse|p1a: Bidoofax
+|-boost|p1a: Bidoofax|atk|1
+|-boost|p1a: Bidoofax|def|1
+|-unboost|p1a: Bidoofax|spe|1
+|
+|-heal|p1a: Bidoofax|245\/524|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p2a: Batman|Earth Power|p1a: Bidoofax
+|-damage|p1a: Bidoofax|151\/524
+|-damage|p2a: Batman|124\/404|[from] item: Life Orb
+|move|p1a: Bidoofax|Rest|p1a: Bidoofax
+|-status|p1a: Bidoofax|slp
+|-heal|p1a: Bidoofax|524\/524 slp|[silent]
+|-status|p1a: Bidoofax|slp|[from] move: Rest
+|
+|turn|11
+|callback|decision
+|
+|move|p2a: Batman|Synthesis|p2a: Batman
+|-heal|p2a: Batman|326\/404
+|cant|p1a: Bidoofax|slp
+|move|p1a: Bidoofax|Sleep Talk|p1a: Bidoofax
+|move|p1a: Bidoofax|Rest|p1a: Bidoofax|[from]Sleep Talk
+|-fail|p1a: Bidoofax
+|
+|turn|12
+|callback|decision
+|
+|move|p2a: Batman|Earth Power|p1a: Bidoofax
+|-damage|p1a: Bidoofax|440\/524 slp
+|-damage|p2a: Batman|286\/404|[from] item: Life Orb
+|cant|p1a: Bidoofax|slp
+|move|p1a: Bidoofax|Sleep Talk|p1a: Bidoofax
+|move|p1a: Bidoofax|Curse|p1a: Bidoofax|[from]Sleep Talk
+|-boost|p1a: Bidoofax|atk|1
+|-boost|p1a: Bidoofax|def|1
+|-unboost|p1a: Bidoofax|spe|1
+|
+|-heal|p1a: Bidoofax|472\/524 slp|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: Batman|Earth Power|p1a: Bidoofax
+|-damage|p1a: Bidoofax|385\/524 slp
+|-damage|p2a: Batman|246\/404|[from] item: Life Orb
+|-curestatus|p1a: Bidoofax|slp
+|move|p1a: Bidoofax|Return|p2a: Batman
+|-damage|p2a: Batman|0 fnt
+|faint|p2a: Batman
+|
+|-heal|p1a: Bidoofax|417\/524|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Jack Sparrow|Raikou, shiny|322\/322
+|-ability|p2a: Jack Sparrow|Pressure
+|turn|14
+|callback|decision
+|
+|move|p2a: Jack Sparrow|Aura Sphere|p1a: Bidoofax
+|-supereffective|p1a: Bidoofax
+|-damage|p1a: Bidoofax|203\/524
+|move|p1a: Bidoofax|Return|p2a: Jack Sparrow
+|-damage|p2a: Jack Sparrow|0 fnt
+|faint|p2a: Jack Sparrow
+|
+|-heal|p1a: Bidoofax|235\/524|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Peace|Victini|341\/341
+|turn|15
+|callback|decision
+|
+|move|p2a: Peace|Focus Blast|p1a: Bidoofax
+|-supereffective|p1a: Bidoofax
+|-damage|p1a: Bidoofax|75\/524
+|move|p1a: Bidoofax|Rest|p1a: Bidoofax
+|-status|p1a: Bidoofax|slp
+|-heal|p1a: Bidoofax|524\/524 slp|[silent]
+|-status|p1a: Bidoofax|slp|[from] move: Rest
+|
+|turn|16
+|callback|decision
+|
+|move|p2a: Peace|Focus Blast|p1a: Bidoofax
+|-supereffective|p1a: Bidoofax
+|-damage|p1a: Bidoofax|364\/524 slp
+|cant|p1a: Bidoofax|slp
+|move|p1a: Bidoofax|Sleep Talk|p1a: Bidoofax
+|move|p1a: Bidoofax|Rest|p1a: Bidoofax|[from]Sleep Talk
+|-fail|p1a: Bidoofax
+|
+|-heal|p1a: Bidoofax|396\/524 slp|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p2a: Peace|Focus Blast|p1a: Bidoofax
+|-supereffective|p1a: Bidoofax
+|-damage|p1a: Bidoofax|222\/524 slp
+|-unboost|p1a: Bidoofax|spd|1
+|cant|p1a: Bidoofax|slp
+|move|p1a: Bidoofax|Sleep Talk|p1a: Bidoofax
+|move|p1a: Bidoofax|Rest|p1a: Bidoofax|[from]Sleep Talk
+|-fail|p1a: Bidoofax
+|
+|-heal|p1a: Bidoofax|254\/524 slp|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p2a: Peace|Focus Blast|p1a: Bidoofax
+|-supereffective|p1a: Bidoofax
+|-damage|p1a: Bidoofax|0 fnt
+|faint|p1a: Bidoofax
+|
+|callback|decision
+|
+|switch|p1a: Bidoofcune|Suicune|404\/404
+|-ability|p1a: Bidoofcune|Pressure
+|turn|19
+|callback|decision
+|
+|move|p2a: Peace|Focus Blast|p1a: Bidoofcune
+|-damage|p1a: Bidoofcune|296\/404
+|move|p1a: Bidoofcune|Calm Mind|p1a: Bidoofcune
+|-boost|p1a: Bidoofcune|spa|1
+|-boost|p1a: Bidoofcune|spd|1
+|
+|-heal|p1a: Bidoofcune|321\/404|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p2a: Peace|Focus Blast|p1a: Bidoofcune
+|-damage|p1a: Bidoofcune|245\/404
+|move|p1a: Bidoofcune|Scald|p2a: Peace
+|-supereffective|p2a: Peace
+|-damage|p2a: Peace|59\/341
+|
+|-heal|p1a: Bidoofcune|270\/404|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|-activate|p2a: Peace|move: Struggle
+|move|p2a: Peace|Struggle|p1a: Bidoofcune
+|-damage|p1a: Bidoofcune|247\/404
+|-damage|p2a: Peace|0 fnt
+|faint|p2a: Peace
+|move|p1a: Bidoofcune|Calm Mind|p1a: Bidoofcune
+|-boost|p1a: Bidoofcune|spa|1
+|-boost|p1a: Bidoofcune|spd|1
+|
+|-heal|p1a: Bidoofcune|272\/404|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Abu|Ambipom, M|291\/291
+|turn|22
+|callback|decision
+|
+|move|p2a: Abu|Fake Out|p1a: Bidoofcune
+|-enditem|p2a: Abu|Normal Gem|[from] gem|[move] Fake Out
+|-damage|p1a: Bidoofcune|179\/404
+|cant|p1a: Bidoofcune|flinch
+|
+|-heal|p1a: Bidoofcune|204\/404|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p2a: Abu|Covet|p1a: Bidoofcune
+|-damage|p1a: Bidoofcune|114\/404
+|-item|p2a: Abu|Leftovers|[from] move: Covet|[of] p1a: Bidoofcune
+|move|p1a: Bidoofcune|Rest|p1a: Bidoofcune
+|-status|p1a: Bidoofcune|slp
+|-heal|p1a: Bidoofcune|404\/404 slp|[silent]
+|-status|p1a: Bidoofcune|slp|[from] move: Rest
+|
+|turn|24
+|callback|decision
+|
+|move|p2a: Abu|U-turn|p1a: Bidoofcune
+|-damage|p1a: Bidoofcune|359\/404 slp
+|callback|decision
+|
+|switch|p2a: Shifu|Mienshao, F|271\/271
+|cant|p1a: Bidoofcune|slp
+|move|p1a: Bidoofcune|Sleep Talk|p1a: Bidoofcune
+|move|p1a: Bidoofcune|Calm Mind|p1a: Bidoofcune|[from]Sleep Talk
+|-boost|p1a: Bidoofcune|spa|1
+|-boost|p1a: Bidoofcune|spd|1
+|
+|turn|25
+|callback|decision
+|
+|move|p2a: Shifu|Hi Jump Kick|p1a: Bidoofcune
+|-damage|p1a: Bidoofcune|163\/404 slp
+|cant|p1a: Bidoofcune|slp
+|move|p1a: Bidoofcune|Sleep Talk|p1a: Bidoofcune
+|move|p1a: Bidoofcune|Calm Mind|p1a: Bidoofcune|[from]Sleep Talk
+|-boost|p1a: Bidoofcune|spa|1
+|-boost|p1a: Bidoofcune|spd|1
+|
+|turn|26
+|callback|decision
+|
+|move|p2a: Shifu|Hi Jump Kick|p1a: Bidoofcune
+|-damage|p1a: Bidoofcune|0 fnt
+|faint|p1a: Bidoofcune
+|
+|callback|decision
+|
+|switch|p1a: Bidoofure|Chandelure, F|261\/261
+|turn|27
+|callback|decision
+|
+|switch|p2a: Abu|Ambipom, M|291\/291
+|move|p1a: Bidoofure|Psychic|p2a: Abu
+|-damage|p2a: Abu|106\/291
+|
+|-heal|p2a: Abu|124\/291|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|switch|p2a: Robin Hood|Weavile, F|282\/282
+|-ability|p2a: Robin Hood|Pressure
+|move|p1a: Bidoofure|Psychic|p2a: Robin Hood
+|-immune|p2a: Robin Hood|[msg]
+|
+|turn|29
+|callback|decision
+|
+|switch|p1a: Bidoofos|Zapdos|384\/384
+|-ability|p1a: Bidoofos|Pressure
+|move|p2a: Robin Hood|Night Slash|p1a: Bidoofos
+|-damage|p1a: Bidoofos|164\/384
+|
+|-heal|p1a: Bidoofos|188\/384|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|move|p2a: Robin Hood|Night Slash|p1a: Bidoofos
+|-damage|p1a: Bidoofos|0 fnt
+|faint|p1a: Bidoofos
+|
+|callback|decision
+|
+|switch|p1a: Bidoofure|Chandelure, F|261\/261
+|turn|31
+|callback|decision
+|
+|move|p1a: Bidoofure|Overheat|p2a: Robin Hood
+|-supereffective|p2a: Robin Hood
+|-damage|p2a: Robin Hood|0 fnt
+|-unboost|p1a: Bidoofure|spa|2
+|faint|p2a: Robin Hood
+|
+|callback|decision
+|
+|switch|p2a: Shifu|Mienshao, F|271\/271
+|turn|32
+|callback|decision
+|
+|move|p2a: Shifu|Stone Edge|p1a: Bidoofure
+|-supereffective|p1a: Bidoofure
+|-damage|p1a: Bidoofure|0 fnt
+|faint|p1a: Bidoofure
+|
+|callback|decision
+|
+|switch|p1a: Bidoofross|Heracross, M|302\/302
+|turn|33
+|callback|decision
+|
+|move|p2a: Shifu|Stone Edge|p1a: Bidoofross
+|-crit|p1a: Bidoofross
+|-damage|p1a: Bidoofross|0 fnt
+|faint|p1a: Bidoofross
+|
+|callback|decision
+|
+|switch|p1a: Bidoof2|Porygon2|374\/374
+|-boost|p1a: Bidoof2|atk|1|[from] ability: Download
+|turn|34
+|callback|decision
+|
+|switch|p2a: Abu|Ambipom, M|124\/291
+|move|p1a: Bidoof2|Discharge|p2a: Abu
+|-damage|p2a: Abu|0 fnt
+|faint|p2a: Abu
+|
+|callback|decision
+|
+|switch|p2a: Shifu|Mienshao, F|271\/271
+|turn|35
+|callback|decision
+|
+|move|p2a: Shifu|Hi Jump Kick|p1a: Bidoof2|[miss]
+|-miss|p2a: Shifu|p1a: Bidoof2
+|-damage|p2a: Shifu|136\/271|[from] hijumpkick
+|move|p1a: Bidoof2|Discharge|p2a: Shifu
+|-damage|p2a: Shifu|9\/271
+|-status|p2a: Shifu|par
+|
+|turn|36
+|callback|decision
+|chat|shabbir|ffs
+|chat|shabbir|really
+|chat|shabbir|fuck
+|chat|Silimar|x)
+|
+|move|p1a: Bidoof2|Ice Beam|p2a: Shifu
+|-damage|p2a: Shifu|0 fnt
+|faint|p2a: Shifu
+|
+|win|Silimar
+|raw|Ladder updating...
+|raw|Silimar's rating: 1759 &rarr; <strong>1766<\/strong><br \/>(+7 for winning)
+|raw|shabbir's rating: 1644 &rarr; <strong>1642<\/strong><br \/>(-2 for losing)
+|chat|Silimar|gg
+|chat|shabbir|gg
+|leave|Silimar
+|player|p1

@@ -1,0 +1,296 @@
+|inactive|Battle timer is ON: inactive players will automatically lose when time's up.
+|join|peere
+|join|Level 51
+|player|p1|peere|97
+|player|p2|Level 51|#level51
+|gametype|singles
+|gen|5
+|tier|[Gen 5] UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Clefable, F
+|poke|p1|Mew
+|poke|p1|Porygon2
+|poke|p1|Cofagrigus, F
+|poke|p1|Togekiss, M
+|poke|p1|Cresselia, F
+|poke|p2|Ludicolo, F
+|poke|p2|Kabutops, F
+|poke|p2|Kingdra, F
+|poke|p2|Empoleon, M
+|poke|p2|Azelf
+|poke|p2|Tornadus, M
+|teampreview
+|
+|start
+|switch|p1a: Mew|Mew|404\/404
+|switch|p2a: Tornadus|Tornadus, M|300\/300
+|turn|1
+|
+|move|p2a: Tornadus|Taunt|p1a: Mew
+|-start|p1a: Mew|move: Taunt
+|cant|p1a: Mew|move: Taunt|Transform
+|
+|turn|2
+|
+|switch|p1a: Porygon2|Porygon2|374\/374
+|-boost|p1a: Porygon2|atk|1|[from] ability: Download
+|move|p2a: Tornadus|Rain Dance|p2a: Tornadus
+|-weather|RainDance
+|
+|-weather|RainDance|[upkeep]
+|turn|3
+|
+|move|p2a: Tornadus|Hurricane|p1a: Porygon2
+|-damage|p1a: Porygon2|230\/374
+|-start|p1a: Porygon2|confusion
+|-activate|p1a: Porygon2|confusion
+|-damage|p1a: Porygon2|202\/374|[from] confusion
+|
+|-weather|RainDance|[upkeep]
+|turn|4
+|
+|move|p2a: Tornadus|Hurricane|p1a: Porygon2
+|-damage|p1a: Porygon2|48\/374
+|-activate|p1a: Porygon2|confusion
+|move|p1a: Porygon2|Ice Beam|p2a: Tornadus
+|-supereffective|p2a: Tornadus
+|-damage|p2a: Tornadus|22\/300
+|
+|-weather|RainDance|[upkeep]
+|turn|5
+|
+|move|p2a: Tornadus|Hurricane|p1a: Porygon2
+|-damage|p1a: Porygon2|0 fnt
+|faint|p1a: Porygon2
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p1a: Cresselia|Cresselia, F|439\/439
+|turn|6
+|
+|move|p2a: Tornadus|Hurricane|p1a: Cresselia
+|-damage|p1a: Cresselia|282\/439
+|move|p1a: Cresselia|Ice Beam|p2a: Tornadus
+|-supereffective|p2a: Tornadus
+|-damage|p2a: Tornadus|0 fnt
+|faint|p2a: Tornadus
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Cresselia|309\/439|[from] item: Leftovers
+|
+|switch|p2a: Ludicolo|Ludicolo, F|302\/302
+|turn|7
+|
+|move|p2a: Ludicolo|Hydro Pump|p1a: Cresselia
+|-damage|p1a: Cresselia|0 fnt
+|faint|p1a: Cresselia
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p1a: Mew|Mew|404\/404
+|turn|8
+|
+|move|p2a: Ludicolo|Hydro Pump|p1a: Mew|[miss]
+|-miss|p2a: Ludicolo|p1a: Mew
+|move|p1a: Mew|Transform|p2a: Ludicolo
+|-transform|p1a: Mew|p2a: Ludicolo
+|
+|-weather|RainDance|[upkeep]
+|turn|9
+|
+|move|p1a: Mew|Hydro Pump|p2a: Ludicolo
+|-resisted|p2a: Ludicolo
+|-damage|p2a: Ludicolo|233\/302
+|move|p2a: Ludicolo|Hydro Pump|p1a: Mew|[miss]
+|-miss|p2a: Ludicolo|p1a: Mew
+|
+|-weather|none
+|turn|10
+|
+|switch|p2a: Kingdra|Kingdra, F|291\/291
+|move|p1a: Mew|Hydro Pump|p2a: Kingdra
+|-resisted|p2a: Kingdra
+|-damage|p2a: Kingdra|246\/291
+|
+|turn|11
+|
+|switch|p1a: Clefable|Clefable, F|394\/394
+|move|p2a: Kingdra|Dragon Pulse|p1a: Clefable
+|-damage|p1a: Clefable|192\/394
+|
+|-status|p1a: Clefable|tox|[from] item: Toxic Orb
+|turn|12
+|
+|switch|p1a: Togekiss|Togekiss, M|371\/371
+|move|p2a: Kingdra|Dragon Pulse|p1a: Togekiss
+|-damage|p1a: Togekiss|212\/371
+|
+|-heal|p1a: Togekiss|235\/371|[from] item: Leftovers
+|turn|13
+|
+|switch|p2a: Empoleon|Empoleon, M|372\/372
+|move|p1a: Togekiss|Body Slam|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|341\/372
+|-status|p2a: Empoleon|par
+|
+|-heal|p1a: Togekiss|258\/371|[from] item: Leftovers
+|turn|14
+|
+|switch|p1a: Clefable|Clefable, F|192\/394 tox
+|move|p2a: Empoleon|Swords Dance|p2a: Empoleon
+|-boost|p2a: Empoleon|atk|2
+|
+|turn|15
+|
+|move|p2a: Empoleon|Aqua Jet|p1a: Clefable
+|-crit|p1a: Clefable
+|-damage|p1a: Clefable|0 fnt
+|faint|p1a: Clefable
+|
+|
+|switch|p1a: Cofagrigus|Cofagrigus, F|319\/319
+|turn|16
+|
+|move|p1a: Cofagrigus|Calm Mind|p1a: Cofagrigus
+|-boost|p1a: Cofagrigus|spa|1
+|-boost|p1a: Cofagrigus|spd|1
+|move|p2a: Empoleon|Swords Dance|p2a: Empoleon
+|-boost|p2a: Empoleon|atk|2
+|
+|turn|17
+|
+|move|p1a: Cofagrigus|Calm Mind|p1a: Cofagrigus
+|-boost|p1a: Cofagrigus|spa|1
+|-boost|p1a: Cofagrigus|spd|1
+|move|p2a: Empoleon|Swords Dance|p2a: Empoleon
+|-boost|p2a: Empoleon|atk|2
+|
+|turn|18
+|
+|move|p2a: Empoleon|Aqua Jet|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|192\/319
+|-ability|p2a: Empoleon|Mummy|[from] Mummy
+|move|p1a: Cofagrigus|Calm Mind|p1a: Cofagrigus
+|-boost|p1a: Cofagrigus|spa|1
+|-boost|p1a: Cofagrigus|spd|1
+|
+|turn|19
+|
+|move|p2a: Empoleon|Aqua Jet|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|59\/319
+|move|p1a: Cofagrigus|Rest|p1a: Cofagrigus
+|-status|p1a: Cofagrigus|slp
+|-heal|p1a: Cofagrigus|319\/319 slp|[silent]
+|-status|p1a: Cofagrigus|slp|[from] move: Rest
+|-enditem|p1a: Cofagrigus|Chesto Berry|[eat]
+|-curestatus|p1a: Cofagrigus|slp
+|
+|turn|20
+|
+|move|p1a: Cofagrigus|Hidden Power|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|77\/372 par
+|cant|p2a: Empoleon|par
+|
+|turn|21
+|
+|move|p2a: Empoleon|Aqua Jet|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|180\/319
+|move|p1a: Cofagrigus|Hidden Power|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|0 fnt
+|faint|p2a: Empoleon
+|
+|
+|switch|p2a: Azelf|Azelf|354\/354
+|turn|22
+|
+|move|p2a: Azelf|Rain Dance|p2a: Azelf
+|-weather|RainDance
+|move|p1a: Cofagrigus|Shadow Ball|p2a: Azelf
+|-supereffective|p2a: Azelf
+|-damage|p2a: Azelf|0 fnt
+|faint|p2a: Azelf
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p2a: Kabutops|Kabutops, F|262\/262
+|turn|23
+|
+|move|p2a: Kabutops|Waterfall|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|5\/319
+|-ability|p2a: Kabutops|Mummy|[from] Mummy
+|move|p1a: Cofagrigus|Shadow Ball|p2a: Kabutops
+|-damage|p2a: Kabutops|0 fnt
+|faint|p2a: Kabutops
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p2a: Kingdra|Kingdra, F|246\/291
+|turn|24
+|
+|move|p2a: Kingdra|Surf|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|0 fnt
+|faint|p1a: Cofagrigus
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p1a: Mew|Mew|404\/404
+|turn|25
+|
+|move|p2a: Kingdra|Surf|p1a: Mew
+|-damage|p1a: Mew|124\/404
+|move|p1a: Mew|Transform|p2a: Kingdra
+|-transform|p1a: Mew|p2a: Kingdra
+|
+|-weather|RainDance|[upkeep]
+|turn|26
+|
+|move|p1a: Mew|Dragon Pulse|p2a: Kingdra
+|-supereffective|p2a: Kingdra
+|-damage|p2a: Kingdra|0 fnt
+|faint|p2a: Kingdra
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p2a: Ludicolo|Ludicolo, F|233\/302
+|turn|27
+|
+|move|p1a: Mew|Dragon Pulse|p2a: Ludicolo
+|-damage|p2a: Ludicolo|95\/302
+|move|p2a: Ludicolo|Ice Beam|p1a: Mew
+|-damage|p1a: Mew|0 fnt
+|faint|p1a: Mew
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p1a: Togekiss|Togekiss, M|258\/371
+|turn|28
+|
+|move|p2a: Ludicolo|Ice Beam|p1a: Togekiss
+|-supereffective|p1a: Togekiss
+|-damage|p1a: Togekiss|24\/371
+|move|p1a: Togekiss|Air Slash|p2a: Ludicolo
+|-supereffective|p2a: Ludicolo
+|-damage|p2a: Ludicolo|0 fnt
+|faint|p2a: Ludicolo
+|
+|win|peere
+|chat|peere|ggs
+|chat|Level 51|ggs
+|leave|Level 51
+|player|p2
+|c|âpeere|!data tornadus
+|c|~|\/data-pokemon Tornadus
+
+|leave|peere
+|player|p1

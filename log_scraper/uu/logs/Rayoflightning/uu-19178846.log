@@ -1,0 +1,680 @@
+|join|Zarael
+|join|Rayoflightning
+|player|p1|Zarael|260
+|player|p2|Rayoflightning|170
+|gametype|singles
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Sigilyph, F
+|poke|p1|Azelf
+|poke|p1|Sableye, M
+|poke|p1|Togekiss, F
+|poke|p1|Scrafty, F
+|poke|p1|Milotic, M
+|poke|p2|Swampert, F
+|poke|p2|Shaymin
+|poke|p2|Mienshao, F
+|poke|p2|Bisharp, F
+|poke|p2|Zapdos
+|poke|p2|Qwilfish, M
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Azelf|Azelf|354\/354
+|switch|p2a: Zapdos|Zapdos|340\/340
+|-ability|p2a: Zapdos|Pressure
+|turn|1
+|callback|decision
+|
+|move|p1a: Azelf|Light Screen|p1a: Azelf
+|-sidestart|p1: Zarael|move: Light Screen
+|move|p2a: Zapdos|Thunderbolt|p1a: Azelf
+|-damage|p1a: Azelf|209\/354
+|-damage|p2a: Zapdos|306\/340|[from] item: Life Orb
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: Bisharp|Bisharp, F|289\/289
+|move|p1a: Azelf|Reflect|p1a: Azelf
+|-sidestart|p1: Zarael|Reflect
+|
+|turn|3
+|callback|decision
+|
+|move|p1a: Azelf|U-turn|p2a: Bisharp
+|-damage|p2a: Bisharp|225\/289
+|callback|decision
+|
+|switch|p1a: Scrafty|Scrafty, F|334\/334
+|move|p2a: Bisharp|Substitute|p2a: Bisharp
+|-start|p2a: Bisharp|Substitute
+|-damage|p2a: Bisharp|153\/289
+|
+|-heal|p2a: Bisharp|171\/289|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Bisharp|Iron Head|p1a: Scrafty
+|-damage|p1a: Scrafty|270\/334
+|cant|p1a: Scrafty|flinch
+|
+|-heal|p2a: Bisharp|189\/289|[from] item: Leftovers
+|-heal|p1a: Scrafty|290\/334|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p2a: Bisharp|Iron Head|p1a: Scrafty
+|-damage|p1a: Scrafty|224\/334
+|move|p1a: Scrafty|Bulk Up|p1a: Scrafty
+|-boost|p1a: Scrafty|atk|1
+|-boost|p1a: Scrafty|def|1
+|
+|-heal|p2a: Bisharp|207\/289|[from] item: Leftovers
+|-heal|p1a: Scrafty|244\/334|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Bisharp|Iron Head|p1a: Scrafty
+|-damage|p1a: Scrafty|199\/334
+|move|p1a: Scrafty|Bulk Up|p1a: Scrafty
+|-boost|p1a: Scrafty|atk|1
+|-boost|p1a: Scrafty|def|1
+|
+|-heal|p2a: Bisharp|225\/289|[from] item: Leftovers
+|-heal|p1a: Scrafty|219\/334|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p2a: Bisharp|Iron Head|p1a: Scrafty
+|-crit|p1a: Scrafty
+|-damage|p1a: Scrafty|0 fnt
+|faint|p1a: Scrafty
+|
+|-heal|p2a: Bisharp|243\/289|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Sigilyph|Sigilyph, F|348\/348
+|turn|8
+|callback|decision
+|
+|switch|p1a: Milotic|Milotic, M|393\/393
+|move|p2a: Bisharp|Iron Head|p1a: Milotic
+|-resisted|p1a: Milotic
+|-damage|p1a: Milotic|361\/393
+|
+|-heal|p2a: Bisharp|261\/289|[from] item: Leftovers
+|-heal|p1a: Milotic|385\/393|[from] item: Leftovers
+|-sideend|p1: Zarael|move: Light Screen
+|turn|9
+|callback|decision
+|
+|move|p2a: Bisharp|Iron Head|p1a: Milotic
+|-resisted|p1a: Milotic
+|-damage|p1a: Milotic|355\/393
+|move|p1a: Milotic|Scald|p2a: Bisharp
+|-end|p2a: Bisharp|Substitute
+|
+|-heal|p2a: Bisharp|279\/289|[from] item: Leftovers
+|-heal|p1a: Milotic|379\/393|[from] item: Leftovers
+|-sideend|p1: Zarael|Reflect
+|turn|10
+|callback|decision
+|
+|switch|p2a: Shaymin|Shaymin|341\/341
+|move|p1a: Milotic|Scald|p2a: Shaymin
+|-resisted|p2a: Shaymin
+|-damage|p2a: Shaymin|298\/341
+|
+|-heal|p1a: Milotic|393\/393|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p1a: Togekiss|Togekiss, F|374\/374
+|move|p2a: Shaymin|Seed Flare|p1a: Togekiss
+|-resisted|p1a: Togekiss
+|-damage|p1a: Togekiss|293\/374
+|-damage|p2a: Shaymin|264\/341|[from] item: Life Orb
+|
+|-heal|p1a: Togekiss|316\/374|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p2a: Swampert|Swampert, F|404\/404
+|move|p1a: Togekiss|Thunder Wave|p2a: Swampert
+|-immune|p2a: Swampert|[msg]
+|
+|-heal|p1a: Togekiss|339\/374|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Swampert|[miss]
+|-miss|p1a: Togekiss|p2a: Swampert
+|move|p2a: Swampert|Stealth Rock|p1a: Togekiss
+|-sidestart|p1: Zarael|move: Stealth Rock
+|
+|-heal|p1a: Togekiss|362\/374|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p2a: Zapdos|Zapdos|306\/340
+|-ability|p2a: Zapdos|Pressure
+|move|p1a: Togekiss|Air Slash|p2a: Zapdos|[miss]
+|-miss|p1a: Togekiss|p2a: Zapdos
+|
+|-heal|p1a: Togekiss|374\/374|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p2a: Zapdos|Thunderbolt|p1a: Togekiss
+|-supereffective|p1a: Togekiss
+|-damage|p1a: Togekiss|56\/374
+|-damage|p2a: Zapdos|272\/340|[from] item: Life Orb
+|move|p1a: Togekiss|Thunder Wave|p2a: Zapdos
+|-status|p2a: Zapdos|par
+|
+|-heal|p1a: Togekiss|79\/374|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Zapdos
+|-resisted|p2a: Zapdos
+|-damage|p2a: Zapdos|219\/340 par
+|cant|p2a: Zapdos|flinch
+|
+|-heal|p1a: Togekiss|102\/374|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Togekiss|Air Slash|p2a: Zapdos
+|-crit|p2a: Zapdos
+|-resisted|p2a: Zapdos
+|-damage|p2a: Zapdos|96\/340 par
+|move|p2a: Zapdos|Thunderbolt|p1a: Togekiss
+|-supereffective|p1a: Togekiss
+|-damage|p1a: Togekiss|0 fnt
+|-damage|p2a: Zapdos|62\/340 par|[from] item: Life Orb
+|faint|p1a: Togekiss
+|
+|callback|decision
+|
+|switch|p1a: Milotic|Milotic, M|393\/393
+|-damage|p1a: Milotic|344\/393|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|move|p1a: Milotic|Ice Beam|p2a: Zapdos
+|-supereffective|p2a: Zapdos
+|-damage|p2a: Zapdos|0 fnt
+|faint|p2a: Zapdos
+|
+|-heal|p1a: Milotic|368\/393|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Shaymin|Shaymin|264\/341
+|turn|19
+|callback|decision
+|
+|switch|p1a: Sigilyph|Sigilyph, F|348\/348
+|move|p2a: Shaymin|Seed Flare|p1a: Sigilyph
+|-resisted|p1a: Sigilyph
+|-damage|p1a: Sigilyph|210\/348
+|-unboost|p1a: Sigilyph|spd|2
+|-damage|p2a: Shaymin|230\/341|[from] item: Life Orb
+|
+|-activate|p1a: Sigilyph|item: Flame Orb
+|-status|p1a: Sigilyph|brn
+|turn|20
+|callback|decision
+|
+|switch|p2a: Swampert|Swampert, F|404\/404
+|move|p1a: Sigilyph|Cosmic Power|p1a: Sigilyph
+|-boost|p1a: Sigilyph|def|1
+|-boost|p1a: Sigilyph|spd|1
+|
+|turn|21
+|callback|decision
+|
+|move|p1a: Sigilyph|Cosmic Power|p1a: Sigilyph
+|-boost|p1a: Sigilyph|def|1
+|-boost|p1a: Sigilyph|spd|1
+|move|p2a: Swampert|Roar|p1a: Sigilyph
+|drag|p1a: Sableye|Sableye, M|304\/304
+|-damage|p1a: Sableye|266\/304|[from] Stealth Rock
+|
+|-heal|p1a: Sableye|285\/304|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p1a: Sableye|Will-O-Wisp|p2a: Swampert
+|-status|p2a: Swampert|brn
+|move|p2a: Swampert|Scald|p1a: Sableye
+|-damage|p1a: Sableye|194\/304
+|
+|-heal|p1a: Sableye|213\/304|[from] item: Leftovers
+|-damage|p2a: Swampert|354\/404 brn|[from] brn
+|turn|23
+|callback|decision
+|
+|move|p2a: Swampert|Scald|p1a: Sableye
+|-damage|p1a: Sableye|128\/304
+|move|p1a: Sableye|Night Shade|p2a: Swampert
+|-damage|p2a: Swampert|254\/404 brn
+|
+|-heal|p2a: Swampert|279\/404 brn|[from] item: Leftovers
+|-heal|p1a: Sableye|147\/304|[from] item: Leftovers
+|-damage|p2a: Swampert|229\/404 brn|[from] brn
+|turn|24
+|callback|decision
+|
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|299\/304
+|move|p2a: Swampert|Scald|p1a: Sableye
+|-damage|p1a: Sableye|215\/304
+|
+|-heal|p2a: Swampert|254\/404 brn|[from] item: Leftovers
+|-heal|p1a: Sableye|234\/304|[from] item: Leftovers
+|-damage|p2a: Swampert|204\/404 brn|[from] brn
+|turn|25
+|callback|decision
+|
+|move|p2a: Swampert|Scald|p1a: Sableye
+|-damage|p1a: Sableye|143\/304
+|-status|p1a: Sableye|brn
+|move|p1a: Sableye|Night Shade|p2a: Swampert
+|-damage|p2a: Swampert|104\/404 brn
+|
+|-heal|p2a: Swampert|129\/404 brn|[from] item: Leftovers
+|-heal|p1a: Sableye|162\/304 brn|[from] item: Leftovers
+|-damage|p2a: Swampert|79\/404 brn|[from] brn
+|-damage|p1a: Sableye|124\/304 brn|[from] brn
+|turn|26
+|callback|decision
+|
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|276\/304 brn
+|move|p2a: Swampert|Scald|p1a: Sableye
+|-damage|p1a: Sableye|153\/304 brn
+|
+|-heal|p2a: Swampert|104\/404 brn|[from] item: Leftovers
+|-heal|p1a: Sableye|172\/304 brn|[from] item: Leftovers
+|-damage|p2a: Swampert|54\/404 brn|[from] brn
+|-damage|p1a: Sableye|134\/304 brn|[from] brn
+|turn|27
+|callback|decision
+|
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|286\/304 brn
+|move|p2a: Swampert|Scald|p1a: Sableye
+|-damage|p1a: Sableye|163\/304 brn
+|
+|-heal|p2a: Swampert|79\/404 brn|[from] item: Leftovers
+|-heal|p1a: Sableye|182\/304 brn|[from] item: Leftovers
+|-damage|p2a: Swampert|29\/404 brn|[from] brn
+|-damage|p1a: Sableye|144\/304 brn|[from] brn
+|turn|28
+|callback|decision
+|
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|296\/304 brn
+|move|p2a: Swampert|Scald|p1a: Sableye
+|-damage|p1a: Sableye|157\/304 brn
+|
+|-heal|p2a: Swampert|54\/404 brn|[from] item: Leftovers
+|-heal|p1a: Sableye|176\/304 brn|[from] item: Leftovers
+|-damage|p2a: Swampert|4\/404 brn|[from] brn
+|-damage|p1a: Sableye|138\/304 brn|[from] brn
+|turn|29
+|callback|decision
+|
+|move|p1a: Sableye|Recover|p1a: Sableye
+|-heal|p1a: Sableye|290\/304 brn
+|move|p2a: Swampert|Scald|p1a: Sableye
+|-damage|p1a: Sableye|166\/304 brn
+|
+|-heal|p2a: Swampert|29\/404 brn|[from] item: Leftovers
+|-heal|p1a: Sableye|185\/304 brn|[from] item: Leftovers
+|-damage|p2a: Swampert|0 fnt|[from] brn
+|-damage|p1a: Sableye|147\/304 brn|[from] brn
+|faint|p2a: Swampert
+|callback|decision
+|
+|switch|p2a: Shaymin|Shaymin|230\/341
+|turn|30
+|callback|decision
+|
+|move|p1a: Sableye|Will-O-Wisp|p2a: Shaymin|[miss]
+|-miss|p1a: Sableye|p2a: Shaymin
+|move|p2a: Shaymin|Seed Flare|p1a: Sableye
+|-damage|p1a: Sableye|0 fnt
+|-damage|p2a: Shaymin|196\/341|[from] item: Life Orb
+|faint|p1a: Sableye
+|
+|callback|decision
+|
+|switch|p1a: Sigilyph|Sigilyph, F|210\/348 brn
+|turn|31
+|callback|decision
+|
+|switch|p2a: Qwilfish|Qwilfish, M|334\/334
+|-ability|p2a: Qwilfish|Intimidate|[of] p1a: Sigilyph
+|-unboost|p1a: Sigilyph|atk|1
+|move|p1a: Sigilyph|Roost|p1a: Sigilyph
+|-heal|p1a: Sigilyph|348\/348 brn
+|
+|turn|32
+|callback|decision
+|
+|move|p1a: Sigilyph|Cosmic Power|p1a: Sigilyph
+|-boost|p1a: Sigilyph|def|1
+|-boost|p1a: Sigilyph|spd|1
+|move|p2a: Qwilfish|Taunt|p1a: Sigilyph
+|-start|p1a: Sigilyph|move: Taunt
+|
+|turn|33
+|callback|decision
+|
+|switch|p2a: Bisharp|Bisharp, F|279\/289
+|move|p1a: Sigilyph|Stored Power|p2a: Bisharp
+|-immune|p2a: Bisharp|[msg]
+|
+|-heal|p2a: Bisharp|289\/289|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|switch|p1a: Milotic|Milotic, M|368\/393
+|-damage|p1a: Milotic|319\/393|[from] Stealth Rock
+|move|p2a: Bisharp|Substitute|p2a: Bisharp
+|-start|p2a: Bisharp|Substitute
+|-damage|p2a: Bisharp|217\/289
+|
+|-heal|p2a: Bisharp|235\/289|[from] item: Leftovers
+|-heal|p1a: Milotic|343\/393|[from] item: Leftovers
+|turn|35
+|callback|decision
+|
+|move|p2a: Bisharp|Swords Dance|p2a: Bisharp
+|-boost|p2a: Bisharp|atk|2
+|move|p1a: Milotic|Scald|p2a: Bisharp
+|-crit|p2a: Bisharp
+|-end|p2a: Bisharp|Substitute
+|
+|-heal|p2a: Bisharp|253\/289|[from] item: Leftovers
+|-heal|p1a: Milotic|367\/393|[from] item: Leftovers
+|turn|36
+|callback|decision
+|
+|move|p2a: Bisharp|Sucker Punch|p1a: Milotic
+|-damage|p1a: Milotic|103\/393
+|move|p1a: Milotic|Scald|p2a: Bisharp
+|-damage|p2a: Bisharp|123\/289
+|-status|p2a: Bisharp|brn
+|
+|-heal|p2a: Bisharp|141\/289 brn|[from] item: Leftovers
+|-heal|p1a: Milotic|127\/393|[from] item: Leftovers
+|-damage|p2a: Bisharp|105\/289 brn|[from] brn
+|turn|37
+|callback|decision
+|
+|switch|p2a: Shaymin|Shaymin|196\/341
+|move|p1a: Milotic|Recover|p1a: Milotic
+|-heal|p1a: Milotic|324\/393
+|
+|-heal|p1a: Milotic|348\/393|[from] item: Leftovers
+|turn|38
+|callback|decision
+|
+|switch|p1a: Sigilyph|Sigilyph, F|348\/348 brn
+|move|p2a: Shaymin|Synthesis|p2a: Shaymin
+|-heal|p2a: Shaymin|341\/341
+|
+|turn|39
+|callback|decision
+|
+|switch|p2a: Qwilfish|Qwilfish, M|334\/334
+|-ability|p2a: Qwilfish|Intimidate|[of] p1a: Sigilyph
+|-unboost|p1a: Sigilyph|atk|1
+|move|p1a: Sigilyph|Cosmic Power|p1a: Sigilyph
+|-boost|p1a: Sigilyph|def|1
+|-boost|p1a: Sigilyph|spd|1
+|
+|turn|40
+|callback|decision
+|
+|move|p1a: Sigilyph|Cosmic Power|p1a: Sigilyph
+|-boost|p1a: Sigilyph|def|1
+|-boost|p1a: Sigilyph|spd|1
+|move|p2a: Qwilfish|Taunt|p1a: Sigilyph
+|-start|p1a: Sigilyph|move: Taunt
+|
+|turn|41
+|callback|decision
+|
+|switch|p2a: Bisharp|Bisharp, F|105\/289 brn
+|move|p1a: Sigilyph|Stored Power|p2a: Bisharp
+|-immune|p2a: Bisharp|[msg]
+|
+|-heal|p2a: Bisharp|123\/289 brn|[from] item: Leftovers
+|-damage|p2a: Bisharp|87\/289 brn|[from] brn
+|turn|42
+|callback|decision
+|
+|switch|p1a: Milotic|Milotic, M|348\/393
+|-damage|p1a: Milotic|299\/393|[from] Stealth Rock
+|move|p2a: Bisharp|Swords Dance|p2a: Bisharp
+|-boost|p2a: Bisharp|atk|2
+|
+|-heal|p2a: Bisharp|105\/289 brn|[from] item: Leftovers
+|-heal|p1a: Milotic|323\/393|[from] item: Leftovers
+|-damage|p2a: Bisharp|69\/289 brn|[from] brn
+|turn|43
+|callback|decision
+|
+|move|p2a: Bisharp|Sucker Punch|p1a: Milotic
+|-fail|p1a: Milotic
+|move|p1a: Milotic|Recover|p1a: Milotic
+|-heal|p1a: Milotic|393\/393
+|
+|-heal|p2a: Bisharp|87\/289 brn|[from] item: Leftovers
+|-damage|p2a: Bisharp|51\/289 brn|[from] brn
+|turn|44
+|callback|decision
+|
+|move|p2a: Bisharp|Iron Head|p1a: Milotic
+|-resisted|p1a: Milotic
+|-damage|p1a: Milotic|331\/393
+|move|p1a: Milotic|Scald|p2a: Bisharp
+|-damage|p2a: Bisharp|0 fnt
+|faint|p2a: Bisharp
+|
+|-heal|p1a: Milotic|355\/393|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Shaymin|Shaymin|341\/341
+|turn|45
+|callback|decision
+|
+|switch|p1a: Sigilyph|Sigilyph, F|348\/348 brn
+|move|p2a: Shaymin|Seed Flare|p1a: Sigilyph
+|-resisted|p1a: Sigilyph
+|-damage|p1a: Sigilyph|215\/348 brn
+|-unboost|p1a: Sigilyph|spd|2
+|-damage|p2a: Shaymin|307\/341|[from] item: Life Orb
+|
+|turn|46
+|callback|decision
+|
+|move|p2a: Shaymin|Seed Flare|p1a: Sigilyph
+|-crit|p1a: Sigilyph
+|-resisted|p1a: Sigilyph
+|-damage|p1a: Sigilyph|0 fnt
+|-damage|p2a: Shaymin|273\/341|[from] item: Life Orb
+|faint|p1a: Sigilyph
+|
+|callback|decision
+|
+|switch|p1a: Azelf|Azelf|209\/354
+|-damage|p1a: Azelf|165\/354|[from] Stealth Rock
+|turn|47
+|callback|decision
+|
+|switch|p2a: Mienshao|Mienshao, F|271\/271
+|move|p1a: Azelf|Light Screen|p1a: Azelf
+|-sidestart|p1: Zarael|move: Light Screen
+|
+|turn|48
+|callback|decision
+|
+|move|p2a: Mienshao|U-turn|p1a: Azelf
+|-supereffective|p1a: Azelf
+|-damage|p1a: Azelf|0 fnt
+|faint|p1a: Azelf
+|callback|decision
+|
+|switch|p2a: Shaymin|Shaymin|273\/341
+|
+|callback|decision
+|
+|switch|p1a: Milotic|Milotic, M|355\/393
+|-damage|p1a: Milotic|306\/393|[from] Stealth Rock
+|turn|49
+|callback|decision
+|
+|move|p2a: Shaymin|Seed Flare|p1a: Milotic|[miss]
+|-miss|p2a: Shaymin|p1a: Milotic
+|move|p1a: Milotic|Ice Beam|p2a: Shaymin
+|-supereffective|p2a: Shaymin
+|-damage|p2a: Shaymin|131\/341
+|
+|-heal|p1a: Milotic|330\/393|[from] item: Leftovers
+|turn|50
+|callback|decision
+|
+|move|p2a: Shaymin|Synthesis|p2a: Shaymin
+|-heal|p2a: Shaymin|302\/341
+|move|p1a: Milotic|Ice Beam|p2a: Shaymin
+|-supereffective|p2a: Shaymin
+|-damage|p2a: Shaymin|164\/341
+|
+|-heal|p1a: Milotic|354\/393|[from] item: Leftovers
+|turn|51
+|callback|decision
+|
+|switch|p2a: Qwilfish|Qwilfish, M|334\/334
+|-ability|p2a: Qwilfish|Intimidate|[of] p1a: Milotic
+|-unboost|p1a: Milotic|atk|1
+|move|p1a: Milotic|Toxic|p2a: Qwilfish
+|
+|-heal|p1a: Milotic|378\/393|[from] item: Leftovers
+|turn|52
+|callback|decision
+|
+|move|p2a: Qwilfish|Taunt|p1a: Milotic
+|-start|p1a: Milotic|move: Taunt
+|move|p1a: Milotic|Scald|p2a: Qwilfish
+|-resisted|p2a: Qwilfish
+|-damage|p2a: Qwilfish|256\/334
+|
+|-heal|p2a: Qwilfish|276\/334|[from] item: Black Sludge
+|-heal|p1a: Milotic|393\/393|[from] item: Leftovers
+|turn|53
+|callback|decision
+|
+|move|p2a: Qwilfish|Waterfall|p1a: Milotic
+|-resisted|p1a: Milotic
+|-damage|p1a: Milotic|354\/393
+|move|p1a: Milotic|Scald|p2a: Qwilfish
+|-resisted|p2a: Qwilfish
+|-damage|p2a: Qwilfish|204\/334
+|-status|p2a: Qwilfish|brn
+|
+|-heal|p2a: Qwilfish|224\/334 brn|[from] item: Black Sludge
+|-heal|p1a: Milotic|378\/393|[from] item: Leftovers
+|-damage|p2a: Qwilfish|183\/334 brn|[from] brn
+|turn|54
+|callback|decision
+|
+|move|p2a: Qwilfish|Waterfall|p1a: Milotic
+|-resisted|p1a: Milotic
+|-damage|p1a: Milotic|358\/393
+|cant|p1a: Milotic|flinch
+|
+|-heal|p2a: Qwilfish|203\/334 brn|[from] item: Black Sludge
+|-heal|p1a: Milotic|382\/393|[from] item: Leftovers
+|-damage|p2a: Qwilfish|162\/334 brn|[from] brn
+|-end|p1a: Milotic|move: Taunt
+|-sideend|p1: Zarael|move: Light Screen
+|turn|55
+|callback|decision
+|
+|move|p2a: Qwilfish|Waterfall|p1a: Milotic
+|-resisted|p1a: Milotic
+|-damage|p1a: Milotic|362\/393
+|cant|p1a: Milotic|flinch
+|
+|-heal|p2a: Qwilfish|182\/334 brn|[from] item: Black Sludge
+|-heal|p1a: Milotic|386\/393|[from] item: Leftovers
+|-damage|p2a: Qwilfish|141\/334 brn|[from] brn
+|turn|56
+|callback|decision
+|
+|move|p2a: Qwilfish|Spikes|p1a: Milotic
+|-sidestart|p1: Zarael|Spikes
+|move|p1a: Milotic|Scald|p2a: Qwilfish
+|-resisted|p2a: Qwilfish
+|-damage|p2a: Qwilfish|60\/334 brn
+|
+|-heal|p2a: Qwilfish|80\/334 brn|[from] item: Black Sludge
+|-heal|p1a: Milotic|393\/393|[from] item: Leftovers
+|-damage|p2a: Qwilfish|39\/334 brn|[from] brn
+|turn|57
+|callback|decision
+|
+|move|p2a: Qwilfish|Taunt|p1a: Milotic
+|-start|p1a: Milotic|move: Taunt
+|move|p1a: Milotic|Scald|p2a: Qwilfish
+|-resisted|p2a: Qwilfish
+|-damage|p2a: Qwilfish|0 fnt
+|faint|p2a: Qwilfish
+|
+|callback|decision
+|
+|switch|p2a: Shaymin|Shaymin|164\/341
+|turn|58
+|callback|decision
+|
+|move|p2a: Shaymin|Seed Flare|p1a: Milotic
+|-supereffective|p1a: Milotic
+|-damage|p1a: Milotic|31\/393
+|-damage|p2a: Shaymin|130\/341|[from] item: Life Orb
+|move|p1a: Milotic|Ice Beam|p2a: Shaymin
+|-supereffective|p2a: Shaymin
+|-damage|p2a: Shaymin|0 fnt
+|faint|p2a: Shaymin
+|
+|-heal|p1a: Milotic|55\/393|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Mienshao|Mienshao, F|271\/271
+|turn|59
+|callback|decision
+|
+|move|p2a: Mienshao|U-turn|p1a: Milotic
+|-damage|p1a: Milotic|0 fnt
+|faint|p1a: Milotic
+|
+|win|Rayoflightning
+|raw|Ladder updating...
+|raw|Zarael's rating: 1493 &rarr; <strong>1490<\/strong><br \/>(-3 for losing)
+|raw|Rayoflightning's rating: 1753 &rarr; <strong>1756<\/strong><br \/>(+3 for winning)
+|chat|Zarael|gg
+|chat|Rayoflightning|gg

@@ -1,0 +1,362 @@
+|join|klos
+|join|meowiekings
+|player|p1|klos|249
+|player|p2|meowiekings|160
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Altaria, F
+|poke|p1|Crobat, F
+|poke|p1|Chandelure, M
+|poke|p1|Krookodile, F
+|poke|p1|Bronzong
+|poke|p1|Vaporeon, M
+|poke|p2|Glalie, F
+|poke|p2|Sableye, F
+|poke|p2|Roserade, F
+|poke|p2|Mienshao, M
+|poke|p2|Swampert, M
+|poke|p2|Salamence, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|join|Cell in a Hell
+|
+|start
+|switch|p1a: Bronzong|Bronzong|337\/337
+|switch|p2a: Glalie|Glalie, F|301\/301
+|turn|1
+|c|âklos|hf
+|
+|switch|p2a: Swampert|Swampert, M|404\/404
+|move|p1a: Bronzong|Stealth Rock|p2a: Swampert
+|-sidestart|p2: meowiekings|move: Stealth Rock
+|
+|turn|2
+|
+|move|p2a: Swampert|Stealth Rock|p1a: Bronzong
+|-sidestart|p1: klos|move: Stealth Rock
+|move|p1a: Bronzong|Toxic|p2a: Swampert|[miss]
+|-miss|p1a: Bronzong|p2a: Swampert
+|
+|turn|3
+|
+|move|p2a: Swampert|Scald|p1a: Bronzong
+|-damage|p1a: Bronzong|276\/337
+|move|p1a: Bronzong|Toxic|p2a: Swampert
+|-status|p2a: Swampert|tox
+|
+|-heal|p1a: Bronzong|297\/337|[from] item: Leftovers
+|-damage|p2a: Swampert|379\/404 tox|[from] psn
+|turn|4
+|
+|switch|p1a: Vaporeon|Vaporeon, M|449\/449
+|-damage|p1a: Vaporeon|393\/449|[from] Stealth Rock
+|move|p2a: Swampert|Scald|p1a: Vaporeon
+|-heal|p1a: Vaporeon|449\/449|[from] ability: Water Absorb|[of] p2a: Swampert
+|
+|-heal|p2a: Swampert|404\/404 tox|[from] item: Leftovers
+|-damage|p2a: Swampert|354\/404 tox|[from] psn
+|turn|5
+|
+|switch|p2a: Roserade|Roserade, F|261\/261
+|-damage|p2a: Roserade|229\/261|[from] Stealth Rock
+|move|p1a: Vaporeon|Scald|p2a: Roserade
+|-resisted|p2a: Roserade
+|-damage|p2a: Roserade|183\/261
+|
+|turn|6
+|
+|switch|p1a: Bronzong|Bronzong|297\/337
+|-damage|p1a: Bronzong|276\/337|[from] Stealth Rock
+|move|p2a: Roserade|Sleep Powder|p1a: Bronzong
+|-status|p1a: Bronzong|slp
+|
+|-heal|p1a: Bronzong|297\/337 slp|[from] item: Leftovers
+|turn|7
+|
+|switch|p2a: Salamence|Salamence, M|331\/331
+|-damage|p2a: Salamence|249\/331|[from] Stealth Rock
+|-ability|p2a: Salamence|Intimidate|[of] p1a: Bronzong
+|-unboost|p1a: Bronzong|atk|1
+|switch|p1a: Crobat|Crobat, F|373\/373
+|-damage|p1a: Crobat|280\/373|[from] Stealth Rock
+|
+|-heal|p1a: Crobat|303\/373|[from] item: Black Sludge
+|turn|8
+|
+|switch|p1a: Bronzong|Bronzong|297\/337 slp
+|-damage|p1a: Bronzong|276\/337 slp|[from] Stealth Rock
+|move|p2a: Salamence|Dragon Dance|p2a: Salamence
+|-boost|p2a: Salamence|atk|1
+|-boost|p2a: Salamence|spe|1
+|
+|-heal|p1a: Bronzong|297\/337 slp|[from] item: Leftovers
+|turn|9
+|c|âklos|hm
+|
+|move|p2a: Salamence|Fire Blast|p1a: Bronzong
+|-supereffective|p1a: Bronzong
+|-damage|p1a: Bronzong|125\/337 slp
+|-damage|p2a: Salamence|216\/331|[from] item: Life Orb
+|cant|p1a: Bronzong|slp
+|
+|-heal|p1a: Bronzong|146\/337 slp|[from] item: Leftovers
+|turn|10
+|
+|move|p2a: Salamence|Fire Blast|p1a: Bronzong
+|-supereffective|p1a: Bronzong
+|-damage|p1a: Bronzong|0 fnt
+|-damage|p2a: Salamence|183\/331|[from] item: Life Orb
+|faint|p1a: Bronzong
+|
+|
+|switch|p1a: Krookodile|Krookodile, F|394\/394
+|-damage|p1a: Krookodile|370\/394|[from] Stealth Rock
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Salamence
+|-unboost|p2a: Salamence|atk|1
+|turn|11
+|
+|move|p2a: Salamence|Outrage|p1a: Krookodile
+|-damage|p1a: Krookodile|54\/394
+|-damage|p2a: Salamence|150\/331|[from] item: Life Orb
+|move|p1a: Krookodile|Pursuit|p2a: Salamence
+|-damage|p2a: Salamence|35\/331
+|
+|turn|12
+|
+|switch|p1a: Vaporeon|Vaporeon, M|449\/449
+|-damage|p1a: Vaporeon|393\/449|[from] Stealth Rock
+|move|p2a: Salamence|Outrage|p1a: Vaporeon
+|-damage|p1a: Vaporeon|91\/449
+|-damage|p2a: Salamence|2\/331|[from] item: Life Orb
+|
+|-end|p2a: Salamence|rampage
+|-start|p2a: Salamence|confusion
+|-heal|p1a: Vaporeon|119\/449|[from] item: Leftovers
+|turn|13
+|
+|-activate|p2a: Salamence|confusion
+|-damage|p2a: Salamence|0 fnt|[from] confusion
+|faint|p2a: Salamence
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|147\/449|[from] item: Leftovers
+|
+|switch|p2a: Roserade|Roserade, F|183\/261
+|-damage|p2a: Roserade|151\/261|[from] Stealth Rock
+|turn|14
+|
+|move|p2a: Roserade|Sleep Powder|p1a: Vaporeon
+|-status|p1a: Vaporeon|slp
+|cant|p1a: Vaporeon|slp
+|
+|-heal|p1a: Vaporeon|371\/449 slp|[from] move: Wish|[wisher] Vaporeon
+|-heal|p1a: Vaporeon|399\/449 slp|[from] item: Leftovers
+|turn|15
+|
+|switch|p1a: Crobat|Crobat, F|303\/373
+|-damage|p1a: Crobat|210\/373|[from] Stealth Rock
+|move|p2a: Roserade|Giga Drain|p1a: Crobat
+|-resisted|p1a: Crobat
+|-damage|p1a: Crobat|161\/373
+|-heal|p2a: Roserade|176\/261|[from] drain|[of] p1a: Crobat
+|-damage|p2a: Roserade|150\/261|[from] item: Life Orb
+|
+|-heal|p1a: Crobat|184\/373|[from] item: Black Sludge
+|turn|16
+|
+|switch|p2a: Swampert|Swampert, M|354\/404 tox
+|-damage|p2a: Swampert|329\/404 tox|[from] Stealth Rock
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-heal|p1a: Crobat|371\/373
+|
+|-heal|p1a: Crobat|373\/373|[from] item: Black Sludge
+|-heal|p2a: Swampert|354\/404 tox|[from] item: Leftovers
+|-damage|p2a: Swampert|329\/404 tox|[from] psn
+|turn|17
+|
+|move|p1a: Crobat|U-turn|p2a: Swampert
+|-damage|p2a: Swampert|285\/404 tox
+|
+|switch|p1a: Vaporeon|Vaporeon, M|399\/449 slp
+|-damage|p1a: Vaporeon|343\/449 slp|[from] Stealth Rock
+|move|p2a: Swampert|Roar|p1a: Vaporeon
+|drag|p1a: Krookodile|Krookodile, F|54\/394
+|-damage|p1a: Krookodile|30\/394|[from] Stealth Rock
+|-ability|p1a: Krookodile|Intimidate|[of] p2a: Swampert
+|-unboost|p2a: Swampert|atk|1
+|
+|-heal|p2a: Swampert|310\/404 tox|[from] item: Leftovers
+|-damage|p2a: Swampert|260\/404 tox|[from] psn
+|turn|18
+|
+|move|p1a: Krookodile|Knock Off|p2a: Swampert
+|-damage|p2a: Swampert|103\/404 tox
+|-enditem|p2a: Swampert|Leftovers|[from] move: Knock Off|[of] p1a: Krookodile
+|move|p2a: Swampert|Scald|p1a: Krookodile
+|-supereffective|p1a: Krookodile
+|-damage|p1a: Krookodile|0 fnt
+|faint|p1a: Krookodile
+|
+|-damage|p2a: Swampert|28\/404 tox|[from] psn
+|
+|switch|p1a: Chandelure|Chandelure, M|261\/261
+|-damage|p1a: Chandelure|196\/261|[from] Stealth Rock
+|turn|19
+|
+|move|p1a: Chandelure|Shadow Ball|p2a: Swampert
+|-damage|p2a: Swampert|0 fnt
+|faint|p2a: Swampert
+|
+|
+|switch|p2a: Sableye|Sableye, F|304\/304
+|-damage|p2a: Sableye|266\/304|[from] Stealth Rock
+|turn|20
+|
+|switch|p1a: Vaporeon|Vaporeon, M|343\/449 slp
+|-damage|p1a: Vaporeon|287\/449 slp|[from] Stealth Rock
+|move|p2a: Sableye|Foul Play|p1a: Vaporeon
+|-damage|p1a: Vaporeon|206\/449 slp
+|
+|-heal|p1a: Vaporeon|234\/449 slp|[from] item: Leftovers
+|-heal|p2a: Sableye|285\/304|[from] item: Leftovers
+|turn|21
+|
+|move|p2a: Sableye|Taunt|p1a: Vaporeon
+|-start|p1a: Vaporeon|move: Taunt
+|-curestatus|p1a: Vaporeon|slp
+|cant|p1a: Vaporeon|move: Taunt|Wish
+|
+|-heal|p1a: Vaporeon|262\/449|[from] item: Leftovers
+|-heal|p2a: Sableye|304\/304|[from] item: Leftovers
+|turn|22
+|
+|move|p2a: Sableye|Will-O-Wisp|p1a: Vaporeon
+|-status|p1a: Vaporeon|brn
+|move|p1a: Vaporeon|Scald|p2a: Sableye
+|-damage|p2a: Sableye|199\/304
+|
+|-heal|p1a: Vaporeon|290\/449 brn|[from] item: Leftovers
+|-heal|p2a: Sableye|218\/304|[from] item: Leftovers
+|-damage|p1a: Vaporeon|234\/449 brn|[from] brn
+|turn|23
+|
+|move|p1a: Vaporeon|Scald|p2a: Sableye
+|-damage|p2a: Sableye|121\/304
+|-status|p2a: Sableye|brn
+|move|p2a: Sableye|Foul Play|p1a: Vaporeon
+|-damage|p1a: Vaporeon|197\/449 brn
+|
+|-heal|p1a: Vaporeon|225\/449 brn|[from] item: Leftovers
+|-heal|p2a: Sableye|140\/304 brn|[from] item: Leftovers
+|-damage|p1a: Vaporeon|169\/449 brn|[from] brn
+|-damage|p2a: Sableye|102\/304 brn|[from] brn
+|-end|p1a: Vaporeon|move: Taunt
+|turn|24
+|
+|move|p2a: Sableye|Taunt|p1a: Vaporeon
+|-start|p1a: Vaporeon|move: Taunt
+|move|p1a: Vaporeon|Scald|p2a: Sableye
+|-damage|p2a: Sableye|14\/304 brn
+|
+|-heal|p1a: Vaporeon|197\/449 brn|[from] item: Leftovers
+|-heal|p2a: Sableye|33\/304 brn|[from] item: Leftovers
+|-damage|p1a: Vaporeon|141\/449 brn|[from] brn
+|-damage|p2a: Sableye|0 fnt|[from] brn
+|faint|p2a: Sableye
+|
+|switch|p2a: Roserade|Roserade, F|150\/261
+|-damage|p2a: Roserade|118\/261|[from] Stealth Rock
+|turn|25
+|join|Bohb Rohss
+|
+|move|p2a: Roserade|Giga Drain|p1a: Vaporeon
+|-crit|p1a: Vaporeon
+|-supereffective|p1a: Vaporeon
+|-damage|p1a: Vaporeon|0 fnt
+|-heal|p2a: Roserade|189\/261|[from] drain|[of] p1a: Vaporeon
+|-damage|p2a: Roserade|163\/261|[from] item: Life Orb
+|faint|p1a: Vaporeon
+|
+|
+|switch|p1a: Crobat|Crobat, F|373\/373
+|-damage|p1a: Crobat|280\/373|[from] Stealth Rock
+|turn|26
+|
+|move|p1a: Crobat|Brave Bird|p2a: Roserade
+|-supereffective|p2a: Roserade
+|-damage|p2a: Roserade|0 fnt
+|-damage|p1a: Crobat|226\/373|[from] recoil|[of] p2a: Roserade
+|faint|p2a: Roserade
+|
+|-heal|p1a: Crobat|249\/373|[from] item: Black Sludge
+|
+|switch|p2a: Glalie|Glalie, F|301\/301
+|-damage|p2a: Glalie|226\/301|[from] Stealth Rock
+|turn|27
+|leave|Bohb Rohss
+|
+|detailschange|p2a: Glalie|Glalie-Mega, F
+|message|Glalie has Mega Evolved into Mega Glalie!
+|move|p1a: Crobat|Brave Bird|p2a: Glalie
+|-damage|p2a: Glalie|70\/301
+|-damage|p1a: Crobat|198\/373|[from] recoil|[of] p2a: Glalie
+|move|p2a: Glalie|Return|p1a: Crobat
+|-supereffective|p1a: Crobat
+|-damage|p1a: Crobat|0 fnt
+|faint|p1a: Crobat
+|
+|
+|switch|p1a: Chandelure|Chandelure, M|196\/261
+|-damage|p1a: Chandelure|131\/261|[from] Stealth Rock
+|turn|28
+|
+|move|p1a: Chandelure|Fire Blast|p2a: Glalie
+|-supereffective|p2a: Glalie
+|-damage|p2a: Glalie|0 fnt
+|faint|p2a: Glalie
+|
+|
+|switch|p2a: Mienshao|Mienshao, M|271\/271
+|-damage|p2a: Mienshao|255\/271|[from] Stealth Rock
+|turn|29
+|
+|move|p2a: Mienshao|Knock Off|p1a: Chandelure
+|-supereffective|p1a: Chandelure
+|-damage|p1a: Chandelure|0 fnt
+|-enditem|p1a: Chandelure|Choice Scarf|[from] move: Knock Off|[of] p2a: Mienshao
+|faint|p1a: Chandelure
+|
+|
+|switch|p1a: Altaria|Altaria, F|292\/292
+|-damage|p1a: Altaria|219\/292|[from] Stealth Rock
+|turn|30
+|
+|detailschange|p1a: Altaria|Altaria-Mega, F
+|message|Altaria has Mega Evolved into Mega Altaria!
+|move|p2a: Mienshao|Knock Off|p1a: Altaria
+|-resisted|p1a: Altaria
+|-damage|p1a: Altaria|182\/292
+|move|p1a: Altaria|Return|p2a: Mienshao
+|-supereffective|p2a: Mienshao
+|-damage|p2a: Mienshao|0 fnt
+|faint|p2a: Mienshao
+|
+|win|klos
+|raw|Ladder updating...
+|leave|meowiekings
+|player|p2
+|c|âklos|gg meowie
+|raw|klos's rating: 1356 &rarr; <strong>1376<\/strong><br \/>(+20 for winning)
+|raw|meowiekings's rating: 1349 &rarr; <strong>1330<\/strong><br \/>(-19 for losing)
+|leave|Cell in a Hell

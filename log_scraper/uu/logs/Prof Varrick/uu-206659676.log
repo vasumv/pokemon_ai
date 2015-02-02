@@ -1,0 +1,216 @@
+|join|Prof Varrick
+|join|holein3
+|player|p1|Prof Varrick|70
+|player|p2|holein3|266
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Tornadus, M
+|poke|p1|Swampert, M
+|poke|p1|Heliolisk, M
+|poke|p1|Gorebyss, F
+|poke|p1|Accelgor, M
+|poke|p1|Kabutops, F
+|poke|p2|Porygon-Z
+|poke|p2|Infernape, M
+|poke|p2|Roserade, F
+|poke|p2|Hydreigon, F
+|poke|p2|Jirachi
+|poke|p2|Suicune
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Accelgor|Accelgor, M|363\/363
+|switch|p2a: Roserade|Roserade, F|324\/324
+|turn|1
+|
+|switch|p2a: Porygon-Z|Porygon-Z|312\/312
+|move|p1a: Accelgor|Rain Dance|p1a: Accelgor
+|-weather|RainDance
+|
+|-weather|RainDance|[upkeep]
+|turn|2
+|
+|move|p1a: Accelgor|Final Gambit|p2a: Porygon-Z
+|-damage|p2a: Porygon-Z|0 fnt
+|faint|p1a: Accelgor
+|faint|p2a: Porygon-Z
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p1a: Tornadus|Tornadus, M|299\/299
+|switch|p2a: Suicune|Suicune|404\/404
+|-ability|p2a: Suicune|Pressure
+|turn|3
+|
+|move|p1a: Tornadus|Hurricane|p2a: Suicune
+|-damage|p2a: Suicune|256\/404
+|-start|p2a: Suicune|confusion
+|-activate|p2a: Suicune|confusion
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Suicune|281\/404|[from] item: Leftovers
+|turn|4
+|
+|move|p1a: Tornadus|Grass Knot|p2a: Suicune
+|-supereffective|p2a: Suicune
+|-damage|p2a: Suicune|171\/404
+|-end|p2a: Suicune|confusion
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|
+|-weather|RainDance|[upkeep]
+|turn|5
+|
+|switch|p1a: Heliolisk|Heliolisk, M|265\/265
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Rest|p2a: Suicune|[from]Sleep Talk
+|-fail|p2a: Suicune
+|
+|-weather|RainDance|[upkeep]
+|turn|6
+|
+|switch|p2a: Jirachi|Jirachi|342\/342
+|move|p1a: Heliolisk|Thunder|p2a: Jirachi
+|-damage|p2a: Jirachi|118\/342
+|-damage|p1a: Heliolisk|239\/265|[from] item: Life Orb
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Heliolisk|265\/265|[from] ability: Dry Skin
+|-heal|p2a: Jirachi|139\/342|[from] item: Leftovers
+|turn|7
+|
+|move|p1a: Heliolisk|Thunder|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|-damage|p1a: Heliolisk|239\/265|[from] item: Life Orb
+|faint|p2a: Jirachi
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Heliolisk|265\/265|[from] ability: Dry Skin
+|
+|switch|p2a: Roserade|Roserade, F|324\/324
+|turn|8
+|
+|move|p1a: Heliolisk|Hyper Voice|p2a: Roserade
+|-damage|p2a: Roserade|156\/324
+|-damage|p1a: Heliolisk|239\/265|[from] item: Life Orb
+|move|p2a: Roserade|Leech Seed|p1a: Heliolisk
+|-start|p1a: Heliolisk|move: Leech Seed
+|
+|-weather|none
+|-heal|p2a: Roserade|176\/324|[from] item: Black Sludge
+|-damage|p1a: Heliolisk|206\/265|[from] Leech Seed|[of] p2a: Roserade
+|-heal|p2a: Roserade|209\/324|[silent]
+|turn|9
+|
+|switch|p1a: Tornadus|Tornadus, M|299\/299
+|move|p2a: Roserade|Aromatherapy|p2a: Roserade
+|-cureteam|p2a: Roserade|[from] move: Aromatherapy
+|
+|-heal|p2a: Roserade|229\/324|[from] item: Black Sludge
+|turn|10
+|
+|switch|p2a: Hydreigon|Hydreigon, F|326\/326
+|move|p1a: Tornadus|Rain Dance|p1a: Tornadus
+|-weather|RainDance
+|
+|-weather|RainDance|[upkeep]
+|turn|11
+|
+|move|p2a: Hydreigon|Draco Meteor|p1a: Tornadus
+|-damage|p1a: Tornadus|0 fnt
+|-unboost|p2a: Hydreigon|spa|2
+|faint|p1a: Tornadus
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p1a: Gorebyss|Gorebyss, F|276\/276
+|turn|12
+|
+|switch|p2a: Roserade|Roserade, F|229\/324
+|move|p1a: Gorebyss|Shell Smash|p1a: Gorebyss
+|-boost|p1a: Gorebyss|atk|2
+|-boost|p1a: Gorebyss|spa|2
+|-boost|p1a: Gorebyss|spe|2
+|-unboost|p1a: Gorebyss|def|1
+|-unboost|p1a: Gorebyss|spd|1
+|-enditem|p1a: Gorebyss|White Herb
+|-restoreboost|p1a: Gorebyss|[silent]
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Roserade|249\/324|[from] item: Black Sludge
+|turn|13
+|
+|move|p1a: Gorebyss|Ice Beam|p2a: Roserade
+|-supereffective|p2a: Roserade
+|-damage|p2a: Roserade|0 fnt
+|faint|p2a: Roserade
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p2a: Infernape|Infernape, M|293\/293
+|turn|14
+|
+|move|p2a: Infernape|Fake Out|p1a: Gorebyss
+|-damage|p1a: Gorebyss|236\/276
+|cant|p1a: Gorebyss|flinch
+|
+|-weather|RainDance|[upkeep]
+|turn|15
+|
+|move|p2a: Infernape|Mach Punch|p1a: Gorebyss
+|-damage|p1a: Gorebyss|158\/276
+|move|p1a: Gorebyss|Surf|p2a: Infernape
+|-supereffective|p2a: Infernape
+|-damage|p2a: Infernape|0 fnt
+|faint|p2a: Infernape
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p2a: Suicune|Suicune|404\/404
+|-ability|p2a: Suicune|Pressure
+|turn|16
+|
+|move|p1a: Gorebyss|Baton Pass|p1a: Gorebyss
+|
+|switch|p1a: Heliolisk|Heliolisk, M|206\/265
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Heliolisk|239\/265|[from] ability: Dry Skin
+|turn|17
+|
+|move|p1a: Heliolisk|Thunder|p2a: Suicune
+|-supereffective|p2a: Suicune
+|-damage|p2a: Suicune|0 fnt
+|-damage|p1a: Heliolisk|213\/265|[from] item: Life Orb
+|faint|p2a: Suicune
+|
+|-weather|none
+|-message|holein3 forfeited.
+|leave|holein3
+|
+|win|Prof Varrick
+|raw|Ladder updating...
+|player|p2
+|raw|Prof Varrick's rating: 1356 &rarr; <strong>1371<\/strong><br \/>(+15 for winning)
+|raw|holein3's rating: 1269 &rarr; <strong>1250<\/strong><br \/>(-19 for losing)

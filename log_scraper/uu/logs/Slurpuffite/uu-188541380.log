@@ -1,0 +1,340 @@
+|join|Slurpuffite
+|join|Testamane
+|player|p1|Slurpuffite|1
+|player|p2|Testamane|165
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Camerupt, F
+|poke|p1|Slurpuff, F
+|poke|p1|Bronzong
+|poke|p1|Uxie
+|poke|p1|Crobat, F
+|poke|p1|Dragalge, M
+|poke|p2|Porygon2
+|poke|p2|Sigilyph, M
+|poke|p2|Suicune
+|poke|p2|Forretress, M
+|poke|p2|Florges, F, shiny
+|poke|p2|Trevenant, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Dragalge|Dragalge, M|334\/334
+|switch|p2a: Forretress|Forretress, M|354\/354
+|turn|1
+|
+|switch|p1a: Camerupt|Camerupt, F|344\/344
+|move|p2a: Forretress|Stealth Rock|p1a: Camerupt
+|-sidestart|p1: Slurpuffite|move: Stealth Rock
+|
+|turn|2
+|
+|switch|p2a: Suicune|Suicune|404\/404
+|-ability|p2a: Suicune|Pressure
+|detailschange|p1a: Camerupt|Camerupt-Mega, F
+|message|Camerupt has Mega Evolved into Mega Camerupt!
+|move|p1a: Camerupt|Earth Power|p2a: Suicune
+|-damage|p2a: Suicune|181\/404
+|
+|-heal|p2a: Suicune|206\/404|[from] item: Leftovers
+|turn|3
+|
+|switch|p2a: Sigilyph|Sigilyph, M|348\/348
+|switch|p1a: Dragalge|Dragalge, M|334\/334
+|-damage|p1a: Dragalge|293\/334|[from] Stealth Rock
+|
+|-status|p2a: Sigilyph|brn|[from] item: Flame Orb
+|turn|4
+|
+|switch|p1a: Camerupt|Camerupt-Mega, F|344\/344
+|-damage|p1a: Camerupt|301\/344|[from] Stealth Rock
+|move|p2a: Sigilyph|Cosmic Power|p2a: Sigilyph
+|-boost|p2a: Sigilyph|def|1
+|-boost|p2a: Sigilyph|spd|1
+|
+|turn|5
+|
+|move|p2a: Sigilyph|Cosmic Power|p2a: Sigilyph
+|-boost|p2a: Sigilyph|def|1
+|-boost|p2a: Sigilyph|spd|1
+|move|p1a: Camerupt|Rock Slide|p2a: Sigilyph
+|-supereffective|p2a: Sigilyph
+|-damage|p2a: Sigilyph|250\/348 brn
+|
+|turn|6
+|
+|move|p2a: Sigilyph|Cosmic Power|p2a: Sigilyph
+|-boost|p2a: Sigilyph|def|1
+|-boost|p2a: Sigilyph|spd|1
+|move|p1a: Camerupt|Flamethrower|p2a: Sigilyph
+|-damage|p2a: Sigilyph|156\/348 brn
+|
+|turn|7
+|
+|switch|p1a: Crobat|Crobat, F|373\/373
+|-damage|p1a: Crobat|280\/373|[from] Stealth Rock
+|move|p2a: Sigilyph|Roost|p2a: Sigilyph
+|-heal|p2a: Sigilyph|330\/348 brn
+|
+|-heal|p1a: Crobat|303\/373|[from] item: Black Sludge
+|turn|8
+|
+|move|p1a: Crobat|Taunt|p2a: Sigilyph
+|-start|p2a: Sigilyph|move: Taunt
+|move|p2a: Sigilyph|Stored Power|p1a: Crobat
+|-supereffective|p1a: Crobat
+|-damage|p1a: Crobat|0 fnt
+|faint|p1a: Crobat
+|
+|
+|switch|p1a: Bronzong|Bronzong|338\/338
+|-damage|p1a: Bronzong|317\/338|[from] Stealth Rock
+|turn|9
+|
+|move|p2a: Sigilyph|Stored Power|p1a: Bronzong
+|-resisted|p1a: Bronzong
+|-damage|p1a: Bronzong|289\/338
+|move|p1a: Bronzong|Stealth Rock|p2a: Sigilyph
+|-sidestart|p2: Testamane|move: Stealth Rock
+|
+|turn|10
+|
+|move|p2a: Sigilyph|Stored Power|p1a: Bronzong
+|-resisted|p1a: Bronzong
+|-damage|p1a: Bronzong|261\/338
+|move|p1a: Bronzong|Trick Room|p1a: Bronzong
+|-fieldstart|move: Trick Room|[of] p1a: Bronzong
+|
+|-end|p2a: Sigilyph|move: Taunt
+|turn|11
+|
+|move|p1a: Bronzong|Explosion|p2a: Sigilyph
+|-enditem|p1a: Bronzong|Normal Gem|[from] gem|[move] Explosion
+|-damage|p2a: Sigilyph|239\/348 brn
+|faint|p1a: Bronzong
+|move|p2a: Sigilyph|Psycho Shift|p1: Bronzong|[notarget]
+|-notarget
+|
+|
+|switch|p1a: Dragalge|Dragalge, M|293\/334
+|-damage|p1a: Dragalge|252\/334|[from] Stealth Rock
+|turn|12
+|
+|move|p1a: Dragalge|Draco Meteor|p2a: Sigilyph
+|-crit|p2a: Sigilyph
+|-damage|p2a: Sigilyph|0 fnt
+|-unboost|p1a: Dragalge|spa|2
+|-damage|p1a: Dragalge|219\/334|[from] item: Life Orb
+|faint|p2a: Sigilyph
+|
+|
+|switch|p2a: Suicune|Suicune|206\/404
+|-damage|p2a: Suicune|156\/404|[from] Stealth Rock
+|-ability|p2a: Suicune|Pressure
+|turn|13
+|
+|move|p1a: Dragalge|Draco Meteor|p2a: Suicune
+|-damage|p2a: Suicune|0 fnt
+|-unboost|p1a: Dragalge|spa|2
+|-damage|p1a: Dragalge|186\/334|[from] item: Life Orb
+|faint|p2a: Suicune
+|
+|
+|switch|p2a: Florges|Florges, F, shiny|360\/360
+|-damage|p2a: Florges|315\/360|[from] Stealth Rock
+|turn|14
+|
+|switch|p1a: Camerupt|Camerupt-Mega, F|301\/344
+|-damage|p1a: Camerupt|258\/344|[from] Stealth Rock
+|move|p2a: Florges|Moonblast|p1a: Camerupt
+|-resisted|p1a: Camerupt
+|-damage|p1a: Camerupt|204\/344
+|
+|-heal|p2a: Florges|337\/360|[from] item: Leftovers
+|-fieldend|move: Trick Room
+|turn|15
+|
+|move|p2a: Florges|Wish|p2a: Florges
+|move|p1a: Camerupt|Will-O-Wisp|p2a: Florges
+|-status|p2a: Florges|brn
+|
+|-heal|p2a: Florges|359\/360 brn|[from] item: Leftovers
+|-damage|p2a: Florges|314\/360 brn|[from] brn
+|turn|16
+|
+|move|p2a: Florges|Moonblast|p1a: Camerupt
+|-crit|p1a: Camerupt
+|-resisted|p1a: Camerupt
+|-damage|p1a: Camerupt|110\/344
+|move|p1a: Camerupt|Will-O-Wisp|p2a: Florges
+|-fail|p2a: Florges|brn
+|
+|-heal|p2a: Florges|360\/360 brn|[from] move: Wish|[wisher] Florges
+|-damage|p2a: Florges|315\/360 brn|[from] brn
+|turn|17
+|
+|move|p2a: Florges|Wish|p2a: Florges
+|move|p1a: Camerupt|Flamethrower|p2a: Florges
+|-damage|p2a: Florges|183\/360 brn
+|
+|-heal|p2a: Florges|205\/360 brn|[from] item: Leftovers
+|-damage|p2a: Florges|160\/360 brn|[from] brn
+|turn|18
+|
+|move|p2a: Florges|Moonblast|p1a: Camerupt
+|-resisted|p1a: Camerupt
+|-damage|p1a: Camerupt|46\/344
+|move|p1a: Camerupt|Flamethrower|p2a: Florges
+|-damage|p2a: Florges|33\/360 brn
+|
+|-heal|p2a: Florges|213\/360 brn|[from] move: Wish|[wisher] Florges
+|-heal|p2a: Florges|235\/360 brn|[from] item: Leftovers
+|-damage|p2a: Florges|190\/360 brn|[from] brn
+|turn|19
+|
+|move|p2a: Florges|Moonblast|p1a: Camerupt
+|-resisted|p1a: Camerupt
+|-damage|p1a: Camerupt|0 fnt
+|faint|p1a: Camerupt
+|
+|-heal|p2a: Florges|212\/360 brn|[from] item: Leftovers
+|-damage|p2a: Florges|167\/360 brn|[from] brn
+|
+|switch|p1a: Dragalge|Dragalge, M|186\/334
+|-damage|p1a: Dragalge|145\/334|[from] Stealth Rock
+|turn|20
+|
+|move|p2a: Florges|Aromatherapy|p2a: Florges
+|-cureteam|p2a: Florges|[from] move: Aromatherapy
+|move|p1a: Dragalge|Sludge Bomb|p2a: Florges
+|-crit|p2a: Florges
+|-supereffective|p2a: Florges
+|-damage|p2a: Florges|0 fnt
+|-damage|p1a: Dragalge|112\/334|[from] item: Life Orb
+|faint|p2a: Florges
+|
+|
+|switch|p2a: Porygon2|Porygon2|374\/374
+|-damage|p2a: Porygon2|328\/374|[from] Stealth Rock
+|-ability|p2a: Porygon2|Adaptability|[from] ability: Trace|[of] p1a: Dragalge
+|turn|21
+|
+|move|p2a: Porygon2|Charge Beam|p1a: Dragalge
+|-resisted|p1a: Dragalge
+|-damage|p1a: Dragalge|94\/334
+|-boost|p2a: Porygon2|spa|1
+|move|p1a: Dragalge|Sludge Bomb|p2a: Porygon2
+|-damage|p2a: Porygon2|198\/374
+|-damage|p1a: Dragalge|61\/334|[from] item: Life Orb
+|
+|turn|22
+|
+|move|p2a: Porygon2|Conversion 2|p1a: Dragalge
+|-start|p2a: Porygon2|typechange|Steel
+|move|p1a: Dragalge|Sludge Bomb|p2a: Porygon2
+|-immune|p2a: Porygon2|[msg]
+|
+|turn|23
+|
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|374\/374
+|move|p1a: Dragalge|Shadow Ball|p2a: Porygon2
+|-damage|p2a: Porygon2|322\/374
+|-damage|p1a: Dragalge|28\/334|[from] item: Life Orb
+|
+|turn|24
+|
+|move|p2a: Porygon2|Charge Beam|p1a: Dragalge
+|-resisted|p1a: Dragalge
+|-damage|p1a: Dragalge|0 fnt
+|-boost|p2a: Porygon2|spa|1
+|faint|p1a: Dragalge
+|
+|
+|switch|p1a: Uxie|Uxie|354\/354
+|-damage|p1a: Uxie|310\/354|[from] Stealth Rock
+|turn|25
+|
+|move|p2a: Porygon2|Magic Coat|p2a: Porygon2
+|-singleturn|p2a: Porygon2|move: Magic Coat
+|move|p1a: Uxie|Light Screen|p1a: Uxie
+|-sidestart|p1: Slurpuffite|move: Light Screen
+|
+|turn|26
+|
+|move|p1a: Uxie|Reflect|p1a: Uxie
+|-sidestart|p1: Slurpuffite|Reflect
+|move|p2a: Porygon2|Charge Beam|p1a: Uxie
+|-damage|p1a: Uxie|275\/354
+|-boost|p2a: Porygon2|spa|1
+|
+|turn|27
+|
+|move|p1a: Uxie|Memento|p2a: Porygon2
+|-unboost|p2a: Porygon2|atk|2
+|-unboost|p2a: Porygon2|spa|2
+|faint|p1a: Uxie
+|move|p2a: Porygon2|Charge Beam|p1: Uxie|[notarget]
+|-notarget
+|
+|
+|switch|p1a: Slurpuff|Slurpuff, F|304\/304
+|-damage|p1a: Slurpuff|266\/304|[from] Stealth Rock
+|turn|28
+|
+|move|p1a: Slurpuff|Belly Drum|p1a: Slurpuff
+|-damage|p1a: Slurpuff|114\/304
+|-setboost|p1a: Slurpuff|atk|6|[from] move: Belly Drum
+|-enditem|p1a: Slurpuff|Sitrus Berry|[eat]
+|-heal|p1a: Slurpuff|190\/304|[from] item: Sitrus Berry
+|move|p2a: Porygon2|Charge Beam|p1a: Slurpuff
+|-damage|p1a: Slurpuff|152\/304
+|-boost|p2a: Porygon2|spa|1
+|
+|turn|29
+|
+|move|p1a: Slurpuff|Drain Punch|p2a: Porygon2
+|-supereffective|p2a: Porygon2
+|-damage|p2a: Porygon2|0 fnt
+|-heal|p1a: Slurpuff|304\/304|[from] drain|[of] p2a: Porygon2
+|faint|p2a: Porygon2
+|
+|
+|switch|p2a: Trevenant|Trevenant, F|374\/374
+|-damage|p2a: Trevenant|328\/374|[from] Stealth Rock
+|turn|30
+|
+|move|p1a: Slurpuff|Play Rough|p2a: Trevenant
+|-damage|p2a: Trevenant|0 fnt
+|faint|p2a: Trevenant
+|
+|
+|switch|p2a: Forretress|Forretress, M|354\/354
+|-damage|p2a: Forretress|310\/354|[from] Stealth Rock
+|turn|31
+|
+|move|p1a: Slurpuff|Drain Punch|p2a: Forretress
+|-damage|p2a: Forretress|149\/354
+|move|p2a: Forretress|Counter|p1a: Slurpuff
+|-damage|p1a: Slurpuff|0 fnt
+|faint|p1a: Slurpuff
+|
+|win|Testamane
+|raw|Ladder updating...
+|raw|Slurpuffite's rating: 1297 &rarr; <strong>1268<\/strong><br \/>(-29 for losing)
+|raw|Testamane's rating: 1245 &rarr; <strong>1274<\/strong><br \/>(+29 for winning)
+|c|âTestamane|gg
+|leave|Slurpuffite
+|player|p1

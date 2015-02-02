@@ -1,0 +1,241 @@
+|join|Ligabue
+|join|TML
+|player|p1|Ligabue|115
+|player|p2|TML|1
+|gametype|singles
+|gen|4
+|tier|[Gen 4] OU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|
+|start
+|switch|p1a: Empoleon|Empoleon, M|371\/371
+|switch|p2a: Gallade|Gallade, M|277\/277
+|turn|1
+|
+|move|p2a: Gallade|Close Combat|p1a: Empoleon
+|-supereffective|p1a: Empoleon
+|-enditem|p1a: Empoleon|Focus Sash
+|-damage|p1a: Empoleon|1\/371
+|-unboost|p2a: Gallade|def|1
+|-unboost|p2a: Gallade|spd|1
+|move|p1a: Empoleon|Stealth Rock|p2a: Gallade
+|-sidestart|p2: TML|move: Stealth Rock
+|
+|turn|2
+|
+|switch|p1a: Gyarados|Gyarados, F|331\/331
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Gallade
+|-unboost|p2a: Gallade|atk|1
+|move|p2a: Gallade|Shadow Sneak|p1a: Gyarados
+|-damage|p1a: Gyarados|294\/331
+|
+|-heal|p1a: Gyarados|314\/331|[from] item: Leftovers
+|turn|3
+|
+|switch|p2a: Jirachi|Jirachi|397\/397
+|-damage|p2a: Jirachi|373\/397|[from] Stealth Rock
+|move|p1a: Gyarados|Waterfall|p2a: Jirachi
+|-damage|p2a: Jirachi|219\/397
+|
+|-heal|p2a: Jirachi|243\/397|[from] item: Leftovers
+|-heal|p1a: Gyarados|331\/331|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|241\/241
+|move|p2a: Jirachi|Wish|p2a: Jirachi
+|
+|-heal|p2a: Jirachi|267\/397|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Heatran|Heatran, F|386\/386
+|-damage|p2a: Heatran|338\/386|[from] Stealth Rock
+|move|p1a: Rotom-Heat|Trick|p2a: Heatran
+|-activate|p1a: Rotom-Heat|move: Trick|[of] p2a: Heatran
+|-item|p2a: Heatran|Choice Scarf|[from] move: Trick
+|-item|p1a: Rotom-Heat|Leftovers|[from] move: Trick
+|
+|-heal|p2a: Heatran|386\/386|[from] move: Wish|[wisher] Jirachi
+|turn|6
+|
+|switch|p1a: Gyarados|Gyarados, F|331\/331
+|-ability|p1a: Gyarados|Intimidate|[of] p2a: Heatran
+|-unboost|p2a: Heatran|atk|1
+|move|p2a: Heatran|Lava Plume|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-damage|p1a: Gyarados|277\/331
+|
+|-heal|p1a: Gyarados|297\/331|[from] item: Leftovers
+|turn|7
+|
+|move|p2a: Heatran|Lava Plume|p1a: Gyarados
+|-resisted|p1a: Gyarados
+|-damage|p1a: Gyarados|238\/331
+|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados
+|-boost|p1a: Gyarados|atk|1
+|-boost|p1a: Gyarados|spe|1
+|
+|-heal|p1a: Gyarados|258\/331|[from] item: Leftovers
+|turn|8
+|
+|switch|p2a: Starmie|Starmie|324\/324
+|-damage|p2a: Starmie|284\/324|[from] Stealth Rock
+|move|p1a: Gyarados|Waterfall|p2a: Starmie
+|-resisted|p2a: Starmie
+|-damage|p2a: Starmie|165\/324
+|
+|-heal|p1a: Gyarados|278\/331|[from] item: Leftovers
+|-heal|p2a: Starmie|185\/324|[from] item: Leftovers
+|turn|9
+|
+|switch|p2a: Breloom|Breloom, M|320\/320
+|-damage|p2a: Breloom|300\/320|[from] Stealth Rock
+|move|p1a: Gyarados|Stone Edge|p2a: Breloom
+|-resisted|p2a: Breloom
+|-damage|p2a: Breloom|215\/320
+|
+|-heal|p1a: Gyarados|298\/331|[from] item: Leftovers
+|-status|p2a: Breloom|tox|[from] item: Toxic Orb
+|turn|10
+|
+|switch|p1a: Empoleon|Empoleon, M|1\/371
+|move|p2a: Breloom|Seed Bomb|p1a: Empoleon
+|-damage|p1a: Empoleon|0 fnt
+|faint|p1a: Empoleon
+|
+|-heal|p2a: Breloom|255\/320 tox|[from] ability: Poison Heal
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|241\/241
+|turn|11
+|
+|switch|p2a: Heatran|Heatran, F|386\/386
+|-damage|p2a: Heatran|338\/386|[from] Stealth Rock
+|move|p1a: Rotom-Heat|Thunderbolt|p2a: Heatran
+|-damage|p2a: Heatran|242\/386
+|
+|turn|12
+|
+|move|p1a: Rotom-Heat|Thunderbolt|p2a: Heatran
+|-crit|p2a: Heatran
+|-damage|p2a: Heatran|20\/386
+|move|p2a: Heatran|Stealth Rock|p1a: Rotom-Heat
+|-sidestart|p1: Ligabue|move: Stealth Rock
+|
+|turn|13
+|
+|switch|p1a: Kingdra|Kingdra, F|291\/291
+|-damage|p1a: Kingdra|255\/291|[from] Stealth Rock
+|move|p2a: Heatran|Stealth Rock|p1a: Kingdra
+|-fail|p1a: Kingdra
+|
+|turn|14
+|
+|switch|p2a: Flygon|Flygon, F|302\/302
+|-damage|p2a: Flygon|284\/302|[from] Stealth Rock
+|move|p1a: Kingdra|Rain Dance|p1a: Kingdra
+|-weather|RainDance
+|
+|-weather|RainDance|[upkeep]
+|turn|15
+|
+|move|p1a: Kingdra|Hydro Pump|p2a: Flygon
+|-damage|p2a: Flygon|0 fnt
+|-damage|p1a: Kingdra|226\/291|[from] item: Life Orb
+|faint|p2a: Flygon
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p2a: Breloom|Breloom, M|255\/320 tox
+|-damage|p2a: Breloom|235\/320 tox|[from] Stealth Rock
+|turn|16
+|
+|move|p1a: Kingdra|Draco Meteor|p2a: Breloom
+|-damage|p2a: Breloom|0 fnt
+|-unboost|p1a: Kingdra|spa|2
+|-damage|p1a: Kingdra|197\/291|[from] item: Life Orb
+|faint|p2a: Breloom
+|
+|-weather|RainDance|[upkeep]
+|
+|switch|p2a: Starmie|Starmie|185\/324
+|-damage|p2a: Starmie|145\/324|[from] Stealth Rock
+|turn|17
+|
+|switch|p1a: Tyranitar|Tyranitar, F|403\/403
+|-damage|p1a: Tyranitar|353\/403|[from] Stealth Rock
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar
+|move|p2a: Starmie|Recover|p2a: Starmie
+|-heal|p2a: Starmie|307\/324
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Starmie|287\/324|[from] sandstorm
+|-heal|p2a: Starmie|307\/324|[from] item: Leftovers
+|turn|18
+|
+|move|p2a: Starmie|Rapid Spin|p1a: Tyranitar
+|-resisted|p1a: Tyranitar
+|-damage|p1a: Tyranitar|348\/403
+|-sideend|p2: TML|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Starmie
+|move|p1a: Tyranitar|Crunch|p2a: Starmie
+|-supereffective|p2a: Starmie
+|-damage|p2a: Starmie|0 fnt
+|faint|p2a: Starmie
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Gallade|Gallade, M|277\/277
+|turn|19
+|
+|move|p2a: Gallade|Close Combat|p1a: Tyranitar
+|-supereffective|p1a: Tyranitar
+|-damage|p1a: Tyranitar|0 fnt
+|-unboost|p2a: Gallade|def|1
+|-unboost|p2a: Gallade|spd|1
+|faint|p1a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Gallade|260\/277|[from] sandstorm
+|
+|switch|p1a: Rotom-Heat|Rotom-Heat|241\/241
+|-damage|p1a: Rotom-Heat|211\/241|[from] Stealth Rock
+|turn|20
+|
+|move|p2a: Gallade|Shadow Sneak|p1a: Rotom-Heat
+|-supereffective|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|115\/241
+|move|p1a: Rotom-Heat|Shadow Ball|p2a: Gallade
+|-supereffective|p2a: Gallade
+|-damage|p2a: Gallade|0 fnt
+|faint|p2a: Gallade
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-Heat|100\/241|[from] sandstorm
+|-heal|p1a: Rotom-Heat|115\/241|[from] item: Leftovers
+|
+|switch|p2a: Jirachi|Jirachi|267\/397
+|turn|21
+|
+|move|p1a: Rotom-Heat|Overheat|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|-unboost|p1a: Rotom-Heat|spa|2
+|faint|p2a: Jirachi
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Rotom-Heat|100\/241|[from] sandstorm
+|-heal|p1a: Rotom-Heat|115\/241|[from] item: Leftovers
+|c|âLigabue|gg
+|-message|TML forfeited.
+|
+|win|Ligabue
+|raw|Ladder updating...
+|leave|TML
+|player|p2
+|raw|Ligabue's rating: 1087 &rarr; <strong>1108<\/strong><br \/>(+21 for winning)
+|raw|TML's rating: 1000 &rarr; <strong>1000<\/strong><br \/>(+0 for losing)

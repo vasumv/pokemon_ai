@@ -1,0 +1,232 @@
+|join|UrfTheManatee
+|join|RSMessiii
+|player|p1|UrfTheManatee|80
+|player|p2|RSMessiii|101
+|gametype|singles
+|gen|6
+|tier|UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Infernape, F
+|poke|p1|Lucario, F
+|poke|p1|Blastoise, F
+|poke|p1|Crobat, F
+|poke|p1|Jirachi
+|poke|p1|Alakazam, F
+|poke|p2|Beedrill, M
+|poke|p2|Arcanine, F
+|poke|p2|Empoleon, F
+|poke|p2|Chesnaught, M
+|poke|p2|Hydreigon, F
+|poke|p2|Meloetta
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Blastoise|Blastoise, F|362\/362
+|switch|p2a: Meloetta|Meloetta|404\/404
+|turn|1
+|
+|switch|p2a: Hydreigon|Hydreigon, F|325\/325
+|detailschange|p1a: Blastoise|Blastoise-Mega, F
+|-mega|p1a: Blastoise|Blastoise|Blastoisinite
+|move|p1a: Blastoise|Dark Pulse|p2a: Hydreigon
+|-resisted|p2a: Hydreigon
+|-damage|p2a: Hydreigon|240\/325
+|
+|turn|2
+|
+|move|p2a: Hydreigon|U-turn|p1a: Blastoise
+|-damage|p1a: Blastoise|316\/362
+|
+|switch|p2a: Beedrill|Beedrill, M|271\/271
+|move|p1a: Blastoise|Ice Beam|p2a: Beedrill
+|-crit|p2a: Beedrill
+|-damage|p2a: Beedrill|55\/271
+|
+|turn|3
+|
+|switch|p1a: Crobat|Crobat, F|374\/374
+|detailschange|p2a: Beedrill|Beedrill-Mega, M
+|-mega|p2a: Beedrill|Beedrill|Beedrillite
+|move|p2a: Beedrill|U-turn|p1a: Crobat
+|-resisted|p1a: Crobat
+|-damage|p1a: Crobat|310\/374
+|
+|switch|p2a: Empoleon|Empoleon, F|371\/371
+|
+|-heal|p1a: Crobat|333\/374|[from] item: Black Sludge
+|turn|4
+|
+|move|p1a: Crobat|U-turn|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|342\/371
+|
+|switch|p1a: Blastoise|Blastoise-Mega, F|316\/362
+|move|p2a: Empoleon|Scald|p1a: Blastoise
+|-resisted|p1a: Blastoise
+|-damage|p1a: Blastoise|273\/362
+|-status|p1a: Blastoise|brn
+|
+|-heal|p2a: Empoleon|365\/371|[from] item: Leftovers
+|-damage|p1a: Blastoise|228\/362 brn|[from] brn
+|turn|5
+|
+|move|p1a: Blastoise|Dark Pulse|p2a: Empoleon
+|-damage|p2a: Empoleon|240\/371
+|move|p2a: Empoleon|Stealth Rock|p1a: Blastoise
+|-sidestart|p1: UrfTheManatee|move: Stealth Rock
+|
+|-heal|p2a: Empoleon|263\/371|[from] item: Leftovers
+|-damage|p1a: Blastoise|183\/362 brn|[from] brn
+|turn|6
+|
+|switch|p2a: Meloetta|Meloetta|404\/404
+|move|p1a: Blastoise|Rapid Spin|p2a: Meloetta
+|-damage|p2a: Meloetta|396\/404
+|-sideend|p1: UrfTheManatee|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Blastoise
+|
+|-heal|p2a: Meloetta|404\/404|[from] item: Leftovers
+|-damage|p1a: Blastoise|138\/362 brn|[from] brn
+|turn|7
+|
+|move|p2a: Meloetta|Hyper Voice|p1a: Blastoise
+|-damage|p1a: Blastoise|21\/362 brn
+|move|p1a: Blastoise|Dark Pulse|p2a: Meloetta
+|-supereffective|p2a: Meloetta
+|-damage|p2a: Meloetta|146\/404
+|
+|-heal|p2a: Meloetta|171\/404|[from] item: Leftovers
+|-damage|p1a: Blastoise|0 fnt|[from] brn
+|faint|p1a: Blastoise
+|
+|switch|p1a: Jirachi|Jirachi|341\/341
+|turn|8
+|
+|switch|p2a: Arcanine|Arcanine, F|383\/383
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Jirachi
+|-unboost|p1a: Jirachi|atk|1
+|move|p1a: Jirachi|U-turn|p2a: Arcanine
+|-resisted|p2a: Arcanine
+|-damage|p2a: Arcanine|364\/383
+|-damage|p1a: Jirachi|285\/341|[from] item: Rocky Helmet|[of] p2a: Arcanine
+|
+|switch|p1a: Alakazam|Alakazam, F|252\/252
+|
+|turn|9
+|
+|move|p1a: Alakazam|Psyshock|p2a: Arcanine
+|-damage|p2a: Arcanine|244\/383
+|move|p2a: Arcanine|Flare Blitz|p1a: Alakazam
+|-enditem|p1a: Alakazam|Focus Sash
+|-damage|p1a: Alakazam|1\/252
+|-damage|p2a: Arcanine|161\/383|[from] recoil|[of] p1a: Alakazam
+|
+|turn|10
+|
+|move|p2a: Arcanine|Extreme Speed|p1a: Alakazam
+|-damage|p1a: Alakazam|0 fnt
+|faint|p1a: Alakazam
+|
+|
+|switch|p1a: Infernape|Infernape, F|293\/293
+|turn|11
+|join|Nychillen
+|
+|switch|p2a: Meloetta|Meloetta|171\/404
+|move|p1a: Infernape|Swords Dance|p1a: Infernape
+|-boost|p1a: Infernape|atk|2
+|
+|-heal|p2a: Meloetta|196\/404|[from] item: Leftovers
+|turn|12
+|
+|switch|p2a: Arcanine|Arcanine, F|161\/383
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Infernape
+|-unboost|p1a: Infernape|atk|1
+|move|p1a: Infernape|Fire Punch|p2a: Arcanine
+|-resisted|p2a: Arcanine
+|-damage|p2a: Arcanine|71\/383
+|-damage|p1a: Infernape|245\/293|[from] item: Rocky Helmet|[of] p2a: Arcanine
+|
+|turn|13
+|
+|move|p2a: Arcanine|Extreme Speed|p1a: Infernape
+|-damage|p1a: Infernape|159\/293
+|move|p1a: Infernape|Swords Dance|p1a: Infernape
+|-boost|p1a: Infernape|atk|2
+|
+|turn|14
+|
+|move|p2a: Arcanine|Extreme Speed|p1a: Infernape
+|-damage|p1a: Infernape|65\/293
+|move|p1a: Infernape|Fire Punch|p2a: Arcanine
+|-resisted|p2a: Arcanine
+|-damage|p2a: Arcanine|0 fnt
+|-damage|p1a: Infernape|17\/293|[from] item: Rocky Helmet|[of] p2a: Arcanine
+|faint|p2a: Arcanine
+|
+|
+|switch|p2a: Chesnaught|Chesnaught, M|379\/379
+|turn|15
+|
+|move|p1a: Infernape|Fire Punch|p2a: Chesnaught
+|-supereffective|p2a: Chesnaught
+|-damage|p2a: Chesnaught|0 fnt
+|faint|p2a: Chesnaught
+|
+|c|âRSMessiii|yes should have known that u wouldnt fail for spiky shiled prentnder ^^
+|leave|Nychillen
+|
+|switch|p2a: Beedrill|Beedrill-Mega, M|55\/271
+|turn|16
+|c|âRSMessiii|pls dont have mach punch ..
+|c|âUrfTheManatee|To be fair, I think I've won every 50\/50 so far this tournament.
+|
+|move|p1a: Infernape|Mach Punch|p2a: Beedrill
+|-resisted|p2a: Beedrill
+|-damage|p2a: Beedrill|0 fnt
+|faint|p2a: Beedrill
+|
+|c|âRSMessiii|uh well thats it then, gg
+|
+|switch|p2a: Empoleon|Empoleon, F|263\/371
+|turn|17
+|
+|move|p1a: Infernape|Close Combat|p2a: Empoleon
+|-supereffective|p2a: Empoleon
+|-damage|p2a: Empoleon|0 fnt
+|-unboost|p1a: Infernape|def|1
+|-unboost|p1a: Infernape|spd|1
+|faint|p2a: Empoleon
+|
+|
+|switch|p2a: Meloetta|Meloetta|196\/404
+|turn|18
+|
+|move|p1a: Infernape|Close Combat|p2a: Meloetta
+|-damage|p2a: Meloetta|0 fnt
+|-unboost|p1a: Infernape|def|1
+|-unboost|p1a: Infernape|spd|1
+|faint|p2a: Meloetta
+|
+|
+|switch|p2a: Hydreigon|Hydreigon, F|240\/325
+|turn|19
+|c|âUrfTheManatee|gg. I'll post them.
+|
+|move|p1a: Infernape|Mach Punch|p2a: Hydreigon
+|-supereffective|p2a: Hydreigon
+|-damage|p2a: Hydreigon|0 fnt
+|faint|p2a: Hydreigon
+|
+|win|UrfTheManatee
+|c|âRSMessiii|kk
+|c|âRSMessiii|congrts
+|c|âUrfTheManatee|Thanks c:

@@ -1,0 +1,327 @@
+|join|st123
+|join|cookies r op
+|player|p1|st123|2
+|player|p2|cookies r op|184
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Froslass, F
+|poke|p1|Sableye, F
+|poke|p1|Lucario, F, shiny
+|poke|p1|Swampert, M
+|poke|p1|Roserade, F
+|poke|p1|Noivern, M
+|poke|p2|Absol, F
+|poke|p2|Infernape, M
+|poke|p2|Nidoqueen, F
+|poke|p2|Crobat, F
+|poke|p2|Slowbro, M
+|poke|p2|Blissey, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Noivern|Noivern, M|311\/311
+|switch|p2a: Infernape|Infernape, M|293\/293
+|turn|1
+|
+|switch|p2a: Blissey|Blissey, F|652\/652
+|move|p1a: Noivern|Taunt|p2a: Blissey
+|-start|p2a: Blissey|move: Taunt
+|
+|turn|2
+|
+|switch|p1a: Froslass|Froslass, F|301\/301
+|move|p2a: Blissey|Seismic Toss|p1a: Froslass
+|-immune|p1a: Froslass|[msg]
+|
+|turn|3
+|
+|switch|p2a: Absol|Absol, F|272\/272
+|move|p1a: Froslass|Spikes|p2a: Absol
+|-sidestart|p2: cookies r op|Spikes
+|
+|turn|4
+|
+|switch|p1a: Swampert|Swampert, M|404\/404
+|detailschange|p2a: Absol|Absol-Mega, F
+|message|Absol has Mega Evolved into Mega Absol!
+|move|p2a: Absol|Knock Off|p1a: Swampert
+|-damage|p1a: Swampert|245\/404
+|-enditem|p1a: Swampert|Leftovers|[from] move: Knock Off|[of] p2a: Absol
+|
+|turn|5
+|
+|switch|p2a: Slowbro|Slowbro, M|394\/394
+|-damage|p2a: Slowbro|345\/394|[from] Spikes
+|move|p1a: Swampert|Scald|p2a: Slowbro
+|-resisted|p2a: Slowbro
+|-damage|p2a: Slowbro|298\/394
+|
+|-heal|p2a: Slowbro|322\/394|[from] item: Leftovers
+|turn|6
+|
+|move|p1a: Swampert|Stealth Rock|p2a: Slowbro
+|-sidestart|p2: cookies r op|move: Stealth Rock
+|move|p2a: Slowbro|Scald|p1a: Swampert
+|-damage|p1a: Swampert|137\/404
+|-status|p1a: Swampert|brn
+|
+|-heal|p2a: Slowbro|346\/394|[from] item: Leftovers
+|-damage|p1a: Swampert|87\/404 brn|[from] brn
+|turn|7
+|
+|switch|p2a: Crobat|Crobat, F|373\/373
+|-damage|p2a: Crobat|280\/373|[from] Stealth Rock
+|move|p1a: Swampert|Scald|p2a: Crobat
+|-damage|p2a: Crobat|151\/373
+|
+|-heal|p2a: Crobat|174\/373|[from] item: Black Sludge
+|-damage|p1a: Swampert|37\/404 brn|[from] brn
+|turn|8
+|
+|move|p2a: Crobat|Defog|p1a: Swampert
+|-unboost|p1a: Swampert|evasion|1
+|-sideend|p2: cookies r op|Spikes|[from] move: Defog|[of] p2a: Crobat
+|-sideend|p2: cookies r op|Stealth Rock|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Swampert|Scald|p2a: Crobat
+|-damage|p2a: Crobat|53\/373
+|
+|-heal|p2a: Crobat|76\/373|[from] item: Black Sludge
+|-damage|p1a: Swampert|0 fnt|[from] brn
+|faint|p1a: Swampert
+|
+|switch|p1a: Noivern|Noivern, M|311\/311
+|turn|9
+|join|dingbat
+|
+|switch|p2a: Blissey|Blissey, F|652\/652
+|move|p1a: Noivern|Flamethrower|p2a: Blissey
+|-damage|p2a: Blissey|593\/652
+|
+|-heal|p2a: Blissey|633\/652|[from] item: Leftovers
+|turn|10
+|
+|switch|p1a: Roserade|Roserade, F|261\/261
+|move|p2a: Blissey|Seismic Toss|p1a: Roserade
+|-damage|p1a: Roserade|161\/261
+|
+|-heal|p2a: Blissey|652\/652|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Roserade|Sludge Bomb|p2a: Blissey
+|-damage|p2a: Blissey|510\/652
+|-damage|p1a: Roserade|135\/261|[from] item: Life Orb
+|move|p2a: Blissey|Seismic Toss|p1a: Roserade
+|-damage|p1a: Roserade|35\/261
+|
+|-heal|p2a: Blissey|550\/652|[from] item: Leftovers
+|turn|12
+|
+|move|p1a: Roserade|Sleep Powder|p2a: Blissey
+|-status|p2a: Blissey|slp
+|cant|p2a: Blissey|slp
+|
+|-heal|p2a: Blissey|590\/652 slp|[from] item: Leftovers
+|turn|13
+|
+|switch|p2a: Nidoqueen|Nidoqueen, F|383\/383
+|move|p1a: Roserade|Toxic Spikes|p2a: Nidoqueen
+|-sidestart|p2: cookies r op|move: Toxic Spikes
+|
+|turn|14
+|
+|move|p1a: Roserade|Sleep Powder|p2a: Nidoqueen
+|-status|p2a: Nidoqueen|slp
+|cant|p2a: Nidoqueen|slp
+|
+|turn|15
+|
+|switch|p2a: Crobat|Crobat, F|76\/373
+|move|p1a: Roserade|Giga Drain|p2a: Crobat
+|-crit|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|0 fnt
+|-heal|p1a: Roserade|73\/261|[from] drain|[of] p2a: Crobat
+|-damage|p1a: Roserade|47\/261|[from] item: Life Orb
+|faint|p2a: Crobat
+|
+|
+|switch|p2a: Absol|Absol-Mega, F|272\/272
+|-status|p2a: Absol|psn
+|turn|16
+|
+|switch|p1a: Froslass|Froslass, F|301\/301
+|move|p2a: Absol|Knock Off|p1a: Froslass
+|-supereffective|p1a: Froslass
+|-enditem|p1a: Froslass|Focus Sash
+|-damage|p1a: Froslass|1\/301
+|
+|-damage|p2a: Absol|238\/272 psn|[from] psn
+|turn|17
+|
+|move|p1a: Froslass|Ice Shard|p2a: Absol
+|-damage|p2a: Absol|160\/272 psn
+|move|p2a: Absol|Knock Off|p1a: Froslass
+|-supereffective|p1a: Froslass
+|-damage|p1a: Froslass|0 fnt
+|-start|p2a: Absol|Disable|Knock Off
+|faint|p1a: Froslass
+|
+|-damage|p2a: Absol|126\/272 psn|[from] psn
+|
+|switch|p1a: Lucario|Lucario, F, shiny|281\/281
+|turn|18
+|
+|switch|p2a: Nidoqueen|Nidoqueen, F|383\/383 slp
+|-sideend|p2: cookies r op|move: Toxic Spikes|[of] p2a: Nidoqueen
+|move|p1a: Lucario|Extreme Speed|p2a: Nidoqueen
+|-damage|p2a: Nidoqueen|295\/383 slp
+|-damage|p1a: Lucario|253\/281|[from] item: Life Orb
+|
+|-heal|p2a: Nidoqueen|318\/383 slp|[from] item: Black Sludge
+|turn|19
+|
+|switch|p1a: Sableye|Sableye, F|303\/303
+|cant|p2a: Nidoqueen|slp
+|
+|-heal|p2a: Nidoqueen|341\/383 slp|[from] item: Black Sludge
+|turn|20
+|
+|-curestatus|p2a: Nidoqueen|slp
+|move|p2a: Nidoqueen|Stealth Rock|p1a: Sableye
+|-sidestart|p1: st123|move: Stealth Rock
+|move|p1a: Sableye|Knock Off|p2a: Nidoqueen
+|-damage|p2a: Nidoqueen|274\/383
+|-enditem|p2a: Nidoqueen|Black Sludge|[from] move: Knock Off|[of] p1a: Sableye
+|
+|turn|21
+|
+|move|p1a: Sableye|Will-O-Wisp|p2a: Nidoqueen
+|-status|p2a: Nidoqueen|brn
+|move|p2a: Nidoqueen|Earth Power|p1a: Sableye
+|-damage|p1a: Sableye|204\/303
+|
+|-heal|p1a: Sableye|222\/303|[from] item: Leftovers
+|-damage|p2a: Nidoqueen|227\/383 brn|[from] brn
+|turn|22
+|
+|switch|p2a: Blissey|Blissey, F|590\/652
+|move|p1a: Sableye|Knock Off|p2a: Blissey
+|-crit|p2a: Blissey
+|-damage|p2a: Blissey|331\/652
+|-enditem|p2a: Blissey|Leftovers|[from] move: Knock Off|[of] p1a: Sableye
+|
+|-heal|p1a: Sableye|240\/303|[from] item: Leftovers
+|turn|23
+|
+|move|p1a: Sableye|Taunt|p2a: Blissey
+|-start|p2a: Blissey|move: Taunt
+|cant|p2a: Blissey|move: Taunt|Aromatherapy
+|
+|-heal|p1a: Sableye|258\/303|[from] item: Leftovers
+|turn|24
+|
+|switch|p2a: Infernape|Infernape, M|293\/293
+|switch|p1a: Noivern|Noivern, M|311\/311
+|-damage|p1a: Noivern|234\/311|[from] Stealth Rock
+|
+|turn|25
+|
+|switch|p1a: Roserade|Roserade, F|47\/261
+|-damage|p1a: Roserade|15\/261|[from] Stealth Rock
+|switch|p2a: Nidoqueen|Nidoqueen, F|227\/383 brn
+|
+|-damage|p2a: Nidoqueen|180\/383 brn|[from] brn
+|turn|26
+|
+|move|p1a: Roserade|Giga Drain|p2a: Nidoqueen
+|-damage|p2a: Nidoqueen|1\/383 brn
+|-heal|p1a: Roserade|105\/261|[from] drain|[of] p2a: Nidoqueen
+|-damage|p1a: Roserade|79\/261|[from] item: Life Orb
+|move|p2a: Nidoqueen|Earth Power|p1a: Roserade
+|-damage|p1a: Roserade|0 fnt
+|faint|p1a: Roserade
+|
+|-damage|p2a: Nidoqueen|0 fnt|[from] brn
+|faint|p2a: Nidoqueen
+|
+|switch|p1a: Noivern|Noivern, M|234\/311
+|-damage|p1a: Noivern|157\/311|[from] Stealth Rock
+|switch|p2a: Slowbro|Slowbro, M|394\/394
+|turn|27
+|
+|switch|p1a: Lucario|Lucario, F, shiny|253\/281
+|-damage|p1a: Lucario|245\/281|[from] Stealth Rock
+|switch|p2a: Blissey|Blissey, F|331\/652
+|
+|turn|28
+|
+|switch|p2a: Slowbro|Slowbro, M|394\/394
+|move|p1a: Lucario|Swords Dance|p1a: Lucario
+|-boost|p1a: Lucario|atk|2
+|
+|turn|29
+|
+|move|p1a: Lucario|Swords Dance|p1a: Lucario
+|-boost|p1a: Lucario|atk|2
+|move|p2a: Slowbro|Scald|p1a: Lucario
+|-damage|p1a: Lucario|130\/281
+|
+|turn|30
+|
+|move|p1a: Lucario|Crunch|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|0 fnt
+|-damage|p1a: Lucario|102\/281|[from] item: Life Orb
+|faint|p2a: Slowbro
+|
+|
+|switch|p2a: Infernape|Infernape, M|293\/293
+|turn|31
+|
+|move|p1a: Lucario|Extreme Speed|p2a: Infernape
+|-damage|p2a: Infernape|0 fnt
+|-damage|p1a: Lucario|74\/281|[from] item: Life Orb
+|faint|p2a: Infernape
+|
+|
+|switch|p2a: Absol|Absol-Mega, F|126\/272 psn
+|turn|32
+|
+|move|p1a: Lucario|Extreme Speed|p2a: Absol
+|-damage|p2a: Absol|0 fnt
+|-damage|p1a: Lucario|46\/281|[from] item: Life Orb
+|faint|p2a: Absol
+|
+|chat|cookies r op|gg
+|
+|switch|p2a: Blissey|Blissey, F|331\/652
+|turn|33
+|chat|st123|gg
+|
+|move|p1a: Lucario|Close Combat|p2a: Blissey
+|-supereffective|p2a: Blissey
+|-damage|p2a: Blissey|0 fnt
+|-unboost|p1a: Lucario|def|1
+|-unboost|p1a: Lucario|spd|1
+|-damage|p1a: Lucario|18\/281|[from] item: Life Orb
+|faint|p2a: Blissey
+|
+|win|st123
+|raw|Ladder updating...
+|raw|st123's rating: 1581 &rarr; <strong>1595<\/strong><br \/>(+14 for winning)
+|raw|cookies r op's rating: 1475 &rarr; <strong>1461<\/strong><br \/>(-14 for losing)
+|leave|cookies r op
+|player|p2
+|leave|dingbat

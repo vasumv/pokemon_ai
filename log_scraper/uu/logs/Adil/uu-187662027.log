@@ -1,0 +1,304 @@
+|join|Adil
+|join|Time Square
+|player|p1|Adil|1
+|player|p2|Time Square|115
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Lopunny, F
+|poke|p1|Jirachi
+|poke|p1|Alomomola, M
+|poke|p1|Blissey, F
+|poke|p1|Noivern, M
+|poke|p1|Forretress, M
+|poke|p2|Sableye, F
+|poke|p2|Snorlax, F
+|poke|p2|Swampert, F
+|poke|p2|Florges, F
+|poke|p2|Cresselia, F
+|poke|p2|Forretress, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Noivern|Noivern, M|311\/311
+|switch|p2a: Sableye|Sableye, F|303\/303
+|turn|1
+|
+|switch|p2a: Florges|Florges, F|359\/359
+|move|p1a: Noivern|Switcheroo|p2a: Florges
+|-activate|p1a: Noivern|move: Trick|[of] p2a: Florges
+|-item|p2a: Florges|Choice Specs|[from] Trick
+|-item|p1a: Noivern|Leftovers|[from] Trick
+|
+|turn|2
+|
+|switch|p2a: Sableye|Sableye, F|303\/303
+|move|p1a: Noivern|U-turn|p2a: Sableye
+|-damage|p2a: Sableye|276\/303
+|
+|switch|p1a: Lopunny|Lopunny, F|271\/271
+|
+|turn|3
+|
+|detailschange|p1a: Lopunny|Lopunny-Mega, F
+|message|Lopunny has Mega Evolved into Mega Lopunny!
+|move|p2a: Sableye|Will-O-Wisp|p1a: Lopunny
+|-status|p1a: Lopunny|brn
+|move|p1a: Lopunny|High Jump Kick|p2a: Sableye
+|-supereffective|p2a: Sableye
+|-damage|p2a: Sableye|70\/303
+|
+|-damage|p1a: Lopunny|238\/271 brn|[from] brn
+|turn|4
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|detailschange|p2a: Sableye|Sableye-Mega, F
+|message|Sableye has Mega Evolved into Mega Sableye!
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|222\/303
+|
+|turn|5
+|
+|move|p1a: Blissey|Aromatherapy|p1a: Blissey
+|-cureteam|p1a: Blissey|[from] move: Aromatherapy
+|move|p2a: Sableye|Taunt|p1a: Blissey
+|-start|p1a: Blissey|move: Taunt
+|
+|turn|6
+|
+|move|p1a: Blissey|Seismic Toss|p2a: Sableye
+|-immune|p2a: Sableye|[msg]
+|move|p2a: Sableye|Will-O-Wisp|p1a: Blissey
+|-status|p1a: Blissey|brn
+|
+|-damage|p1a: Blissey|625\/714 brn|[from] brn
+|turn|7
+|
+|switch|p1a: Lopunny|Lopunny-Mega, F|238\/271
+|move|p2a: Sableye|Will-O-Wisp|p1a: Lopunny
+|-status|p1a: Lopunny|brn
+|
+|-damage|p1a: Lopunny|205\/271 brn|[from] brn
+|turn|8
+|
+|switch|p1a: Alomomola|Alomomola, M|534\/534
+|move|p2a: Sableye|Taunt|p1a: Alomomola
+|-start|p1a: Alomomola|move: Taunt
+|
+|turn|9
+|
+|switch|p1a: Blissey|Blissey, F|625\/714
+|move|p2a: Sableye|Will-O-Wisp|p1a: Blissey
+|-status|p1a: Blissey|brn
+|
+|-heal|p1a: Blissey|669\/714 brn|[from] item: Leftovers
+|-damage|p1a: Blissey|580\/714 brn|[from] brn
+|turn|10
+|
+|switch|p2a: Forretress|Forretress, F|353\/353
+|move|p1a: Blissey|Aromatherapy|p1a: Blissey
+|-cureteam|p1a: Blissey|[from] move: Aromatherapy
+|
+|-heal|p1a: Blissey|624\/714|[from] item: Leftovers
+|turn|11
+|
+|switch|p1a: Lopunny|Lopunny-Mega, F|205\/271
+|move|p2a: Forretress|Toxic Spikes|p1a: Lopunny
+|-sidestart|p1: Adil|move: Toxic Spikes
+|
+|turn|12
+|
+|move|p1a: Lopunny|Power-Up Punch|p2a: Forretress
+|-crit|p2a: Forretress
+|-damage|p2a: Forretress|292\/353
+|-boost|p1a: Lopunny|atk|1
+|move|p2a: Forretress|Toxic Spikes|p1a: Lopunny
+|-sidestart|p1: Adil|move: Toxic Spikes
+|
+|-heal|p2a: Forretress|314\/353|[from] item: Leftovers
+|turn|13
+|
+|move|p1a: Lopunny|Power-Up Punch|p2a: Forretress
+|-damage|p2a: Forretress|251\/353
+|-boost|p1a: Lopunny|atk|1
+|move|p2a: Forretress|Gyro Ball|p1a: Lopunny
+|-damage|p1a: Lopunny|45\/271
+|
+|-heal|p2a: Forretress|273\/353|[from] item: Leftovers
+|turn|14
+|
+|move|p1a: Lopunny|High Jump Kick|p2a: Forretress
+|-damage|p2a: Forretress|21\/353
+|move|p2a: Forretress|Gyro Ball|p1a: Lopunny
+|-crit|p1a: Lopunny
+|-damage|p1a: Lopunny|0 fnt
+|faint|p1a: Lopunny
+|
+|-heal|p2a: Forretress|43\/353|[from] item: Leftovers
+|
+|switch|p1a: Noivern|Noivern, M|311\/311
+|turn|15
+|
+|move|p1a: Noivern|Draco Meteor|p2a: Forretress
+|-resisted|p2a: Forretress
+|-damage|p2a: Forretress|0 fnt
+|-unboost|p1a: Noivern|spa|2
+|faint|p2a: Forretress
+|
+|
+|switch|p2a: Sableye|Sableye-Mega, F|222\/303
+|turn|16
+|
+|switch|p1a: Jirachi|Jirachi|341\/341
+|move|p2a: Sableye|Night Shade|p1a: Jirachi
+|-damage|p1a: Jirachi|241\/341
+|
+|turn|17
+|
+|move|p1a: Jirachi|Iron Head|p2a: Sableye
+|-damage|p2a: Sableye|150\/303
+|cant|p2a: Sableye|flinch
+|
+|turn|18
+|
+|move|p1a: Jirachi|Iron Head|p2a: Sableye
+|-damage|p2a: Sableye|72\/303
+|cant|p2a: Sableye|flinch
+|
+|turn|19
+|
+|switch|p1a: Noivern|Noivern, M|311\/311
+|switch|p2a: Swampert|Swampert, F|401\/401
+|
+|turn|20
+|
+|move|p1a: Noivern|Hurricane|p2a: Swampert
+|-damage|p2a: Swampert|227\/401
+|move|p2a: Swampert|Stealth Rock|p1a: Noivern
+|-sidestart|p1: Adil|move: Stealth Rock
+|
+|-heal|p2a: Swampert|252\/401|[from] item: Leftovers
+|turn|21
+|
+|move|p1a: Noivern|U-turn|p2a: Swampert
+|-damage|p2a: Swampert|228\/401
+|
+|switch|p1a: Forretress|Forretress, M|354\/354
+|-damage|p1a: Forretress|310\/354|[from] Stealth Rock
+|move|p2a: Swampert|Roar|p1a: Forretress
+|drag|p1a: Alomomola|Alomomola, M|534\/534
+|-status|p1a: Alomomola|tox
+|-damage|p1a: Alomomola|468\/534 tox|[from] Stealth Rock
+|
+|-heal|p1a: Alomomola|501\/534 tox|[from] item: Leftovers
+|-heal|p2a: Swampert|253\/401|[from] item: Leftovers
+|-damage|p1a: Alomomola|468\/534 tox|[from] psn
+|turn|22
+|
+|move|p1a: Alomomola|Knock Off|p2a: Swampert
+|-damage|p2a: Swampert|202\/401
+|-enditem|p2a: Swampert|Leftovers|[from] move: Knock Off|[of] p1a: Alomomola
+|move|p2a: Swampert|Roar|p1a: Alomomola
+|drag|p1a: Blissey|Blissey, F|624\/714
+|-status|p1a: Blissey|tox
+|-damage|p1a: Blissey|535\/714 tox|[from] Stealth Rock
+|
+|-heal|p1a: Blissey|579\/714 tox|[from] item: Leftovers
+|-damage|p1a: Blissey|535\/714 tox|[from] psn
+|turn|23
+|
+|switch|p1a: Noivern|Noivern, M|311\/311
+|-damage|p1a: Noivern|234\/311|[from] Stealth Rock
+|switch|p2a: Sableye|Sableye-Mega, F|72\/303
+|
+|-heal|p1a: Noivern|253\/311|[from] item: Leftovers
+|turn|24
+|
+|switch|p2a: Snorlax|Snorlax, F|497\/497
+|move|p1a: Noivern|U-turn|p2a: Snorlax
+|-damage|p2a: Snorlax|465\/497
+|
+|switch|p1a: Forretress|Forretress, M|310\/354
+|-damage|p1a: Forretress|266\/354|[from] Stealth Rock
+|
+|-heal|p1a: Forretress|288\/354|[from] item: Leftovers
+|-heal|p2a: Snorlax|496\/497|[from] item: Leftovers
+|turn|25
+|
+|move|p1a: Forretress|Earthquake|p2a: Snorlax
+|-damage|p2a: Snorlax|410\/497
+|move|p2a: Snorlax|Curse|p2a: Snorlax
+|-boost|p2a: Snorlax|atk|1
+|-boost|p2a: Snorlax|def|1
+|-unboost|p2a: Snorlax|spe|1
+|
+|-heal|p1a: Forretress|310\/354|[from] item: Leftovers
+|-heal|p2a: Snorlax|441\/497|[from] item: Leftovers
+|turn|26
+|
+|switch|p2a: Sableye|Sableye-Mega, F|72\/303
+|move|p1a: Forretress|Rapid Spin|p2a: Sableye
+|-immune|p2a: Sableye|[msg]
+|
+|-heal|p1a: Forretress|332\/354|[from] item: Leftovers
+|turn|27
+|
+|switch|p1a: Jirachi|Jirachi|241\/341
+|-damage|p1a: Jirachi|220\/341|[from] Stealth Rock
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|224\/303
+|
+|turn|28
+|
+|switch|p2a: Swampert|Swampert, F|202\/401
+|move|p1a: Jirachi|Iron Head|p2a: Swampert
+|-resisted|p2a: Swampert
+|-damage|p2a: Swampert|153\/401
+|
+|turn|29
+|
+|move|p1a: Jirachi|Iron Head|p2a: Swampert
+|-resisted|p2a: Swampert
+|-damage|p2a: Swampert|108\/401
+|cant|p2a: Swampert|flinch
+|
+|turn|30
+|
+|move|p1a: Jirachi|Iron Head|p2a: Swampert
+|-resisted|p2a: Swampert
+|-damage|p2a: Swampert|63\/401
+|move|p2a: Swampert|Earthquake|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|faint|p1a: Jirachi
+|
+|
+|switch|p1a: Forretress|Forretress, M|332\/354
+|-damage|p1a: Forretress|288\/354|[from] Stealth Rock
+|turn|31
+|
+|switch|p2a: Sableye|Sableye-Mega, F|224\/303
+|move|p1a: Forretress|Earthquake|p2a: Sableye
+|-damage|p2a: Sableye|178\/303
+|
+|-heal|p1a: Forretress|310\/354|[from] item: Leftovers
+|turn|32
+|-message|Adil forfeited.
+|
+|win|Time Square
+|raw|Ladder updating...
+|leave|Adil
+|player|p1
+|raw|Adil's rating: 1540 &rarr; <strong>1515<\/strong><br \/>(-25 for losing)
+|raw|Time Square's rating: 1454 &rarr; <strong>1479<\/strong><br \/>(+25 for winning)

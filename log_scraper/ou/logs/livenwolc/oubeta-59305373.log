@@ -1,0 +1,267 @@
+|join|DraGar FTW
+|join|livEnwolC
+|player|p1|DraGar FTW|161
+|player|p2|livEnwolC|59
+|gametype|singles
+|tier|OU (beta)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Gengar, M
+|poke|p1|Garchomp, M
+|poke|p1|Goodra, F
+|poke|p1|Mamoswine, F
+|poke|p1|Magnezone
+|poke|p1|Salamence, M
+|poke|p2|Kangaskhan, F
+|poke|p2|Excadrill, M
+|poke|p2|Gengar, F
+|poke|p2|Rotom-Wash
+|poke|p2|Espeon, F
+|poke|p2|Florges, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|join|Gary2346
+|
+|start
+|switch|p1a: Gengar|Gengar, M|262\/262
+|switch|p2a: Momma Bear|Kangaskhan, F|414\/414
+|turn|1
+|callback|decision
+|join|ShootingStarmie
+|
+|switch|p1a: Garchomp|Garchomp, M|357\/357
+|move|p2a: Momma Bear|Fake Out|p1a: Garchomp
+|-damage|p1a: Garchomp|288\/357
+|-damage|p2a: Momma Bear|363\/414|[from] ability: Rough Skin|[of] p1a: Garchomp
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: Dishes|Rotom-Wash|304\/304
+|move|p1a: Garchomp|Earthquake|p2a: Dishes
+|-immune|p2a: Dishes|[msg]
+|
+|turn|3
+|callback|decision
+|
+|switch|p1a: Goodra|Goodra, F|384\/384
+|switch|p2a: Florges|Florges, M|360\/360
+|-ability|p2a: Florges|Flower Veil
+|
+|turn|4
+|callback|decision
+|
+|move|p1a: Goodra|Sludge Bomb|p2a: Florges
+|-supereffective|p2a: Florges
+|-damage|p2a: Florges|206\/360
+|move|p2a: Florges|Moonblast|p1a: Goodra
+|-supereffective|p1a: Goodra
+|-damage|p1a: Goodra|222\/384
+|
+|-heal|p2a: Florges|228\/360|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p1a: Goodra|Sludge Bomb|p2a: Florges
+|-supereffective|p2a: Florges
+|-damage|p2a: Florges|94\/360
+|move|p2a: Florges|Moonblast|p1a: Goodra
+|-supereffective|p1a: Goodra
+|-damage|p1a: Goodra|54\/384
+|
+|-heal|p2a: Florges|116\/360|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p2a: Pappa Bear|Excadrill, M|362\/362
+|-ability|p2a: Pappa Bear|Mold Breaker
+|move|p1a: Goodra|Sludge Bomb|p2a: Pappa Bear
+|-immune|p2a: Pappa Bear|[msg]
+|
+|turn|7
+|callback|decision
+|
+|switch|p1a: Salamence|Salamence, M|331\/331
+|move|p2a: Pappa Bear|Rock Slide|p1a: Salamence
+|-supereffective|p1a: Salamence
+|-damage|p1a: Salamence|67\/331
+|
+|turn|8
+|callback|decision
+|
+|move|p1a: Salamence|Fire Blast|p2a: Pappa Bear
+|-supereffective|p2a: Pappa Bear
+|-damage|p2a: Pappa Bear|76\/362
+|move|p2a: Pappa Bear|Rock Slide|p1a: Salamence
+|-supereffective|p1a: Salamence
+|-damage|p1a: Salamence|0 fnt
+|faint|p1a: Salamence
+|
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, M|288\/357
+|turn|9
+|callback|decision
+|
+|switch|p2a: Florges|Florges, M|116\/360
+|-ability|p2a: Florges|Flower Veil
+|move|p1a: Garchomp|Dragon Claw|p2a: Florges
+|-immune|p2a: Florges|[msg]
+|
+|-heal|p2a: Florges|138\/360|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p1a: Garchomp|Earthquake|p2a: Florges
+|-crit|p2a: Florges
+|-damage|p2a: Florges|0 fnt
+|faint|p2a: Florges
+|
+|callback|decision
+|chat|ShootingStarmie|CRIT
+|
+|switch|p2a: Dishes|Rotom-Wash|304\/304
+|turn|11
+|callback|decision
+|chat|ShootingStarmie|CRIT
+|chat|ShootingStarmie|CRIT
+|
+|move|p1a: Garchomp|Dragon Claw|p2a: Dishes
+|-damage|p2a: Dishes|168\/304
+|move|p2a: Dishes|Hydro Pump|p1a: Garchomp
+|-damage|p1a: Garchomp|120\/357
+|
+|-heal|p2a: Dishes|187\/304|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Garchomp|Dragon Claw|p2a: Dishes
+|-damage|p2a: Dishes|52\/304
+|move|p2a: Dishes|Hydro Pump|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|faint|p1a: Garchomp
+|
+|-heal|p2a: Dishes|71\/304|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, M|262\/262
+|turn|13
+|callback|decision
+|
+|-formechange|p1a: Gengar|Gengar-Mega
+|message|Gengar mega-evolved into Gengar-Mega!
+|move|p1a: Gengar|Shadow Ball|p2a: Dishes
+|-damage|p2a: Dishes|0 fnt
+|faint|p2a: Dishes
+|
+|callback|decision
+|
+|switch|p2a: Momma Bear|Kangaskhan, F|363\/414
+|turn|14
+|callback|decision
+|
+|switch|p1a: Mamoswine|Mamoswine, F|361\/361
+|move|p2a: Momma Bear|Fake Out|p1a: Mamoswine
+|-crit|p1a: Mamoswine
+|-damage|p1a: Mamoswine|243\/361
+|
+|turn|15
+|callback|decision
+|
+|-formechange|p2a: Momma Bear|Kangaskhan-Mega
+|message|Kangaskhan mega-evolved into Kangaskhan-Mega!
+|move|p1a: Mamoswine|Icicle Spear|p2a: Momma Bear
+|-damage|p2a: Momma Bear|293\/414
+|-damage|p2a: Momma Bear|227\/414
+|-damage|p2a: Momma Bear|165\/414
+|-hitcount|p2a: Momma Bear|3
+|-damage|p1a: Mamoswine|207\/361|[from] item: Life Orb
+|move|p2a: Momma Bear|Power-Up Punch|p1a: Mamoswine
+|-supereffective|p1a: Mamoswine
+|-damage|p1a: Mamoswine|91\/361
+|-boost|p2a: Momma Bear|atk|1
+|-supereffective|p1a: Mamoswine
+|-damage|p1a: Mamoswine|0 fnt
+|-boost|p2a: Momma Bear|atk|1
+|-hitcount|p1a: Mamoswine|2
+|faint|p1a: Mamoswine
+|
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, M|262\/262
+|-formechange|p1a: Gengar|Gengar-Mega
+|turn|16
+|callback|decision
+|
+|move|p2a: Momma Bear|Sucker Punch|p1a: Gengar
+|-fail|p1a: Gengar
+|move|p1a: Gengar|Substitute|p1a: Gengar
+|-start|p1a: Gengar|Substitute
+|-damage|p1a: Gengar|197\/262
+|
+|turn|17
+|callback|decision
+|
+|move|p2a: Momma Bear|Sucker Punch|p1a: Gengar
+|-supereffective|p1a: Gengar
+|-end|p1a: Gengar|Substitute
+|-supereffective|p1a: Gengar
+|-damage|p1a: Gengar|0 fnt
+|-hitcount|p1a: Gengar|2
+|faint|p1a: Gengar
+|
+|callback|decision
+|chat|livEnwolC|lol
+|chat|ShootingStarmie|lol
+|chat|DraGar FTW|lol
+|
+|switch|p1a: Magnezone|Magnezone|323\/323
+|turn|18
+|callback|decision
+|
+|move|p2a: Momma Bear|Earthquake|p1a: Magnezone
+|-supereffective|p1a: Magnezone
+|-damage|p1a: Magnezone|0 fnt
+|faint|p1a: Magnezone
+|
+|callback|decision
+|chat|livEnwolC|gg
+|chat|ShootingStarmie|gg
+|chat|ShootingStarmie|g
+|chat|DraGar FTW|fuck gg
+|chat|ShootingStarmie|gg
+|
+|switch|p1a: Goodra|Goodra, F|54\/384
+|turn|19
+|callback|decision
+|chat|ShootingStarmie|gg
+|chat|ShootingStarmie|gg
+|chat|ShootingStarmie|gg
+|chat|ShootingStarmie|gg
+|chat|ShootingStarmie|gg
+|chat|ShootingStarmie|ggg
+|chat|ShootingStarmie|SMASHED BY THE BABY
+|
+|move|p2a: Momma Bear|Power-Up Punch|p1a: Goodra
+|-damage|p1a: Goodra|0 fnt
+|-unboost|p2a: Momma Bear|spe|1|[from] ability: Gooey
+|-boost|p2a: Momma Bear|atk|1
+|-hitcount|p1a: Goodra|1
+|faint|p1a: Goodra
+|
+|win|livEnwolC
+|raw|Ladder updating...
+|raw|DraGar FTW's rating: 1500 &rarr; <strong>1446<\/strong><br \/>(-54 for losing)
+|raw|livEnwolC's rating: 1724 &rarr; <strong>1735<\/strong><br \/>(+11 for winning)
+|leave|DraGar FTW
+|player|p1
+|leave|ShootingStarmie
+|leave|livEnwolC
+|player|p2

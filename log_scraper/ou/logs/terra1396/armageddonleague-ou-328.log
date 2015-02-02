@@ -1,0 +1,327 @@
+|join|AElite-Scourage
+|join|Terra1396
+|player|p1|AElite-Scourage|226
+|player|p2|Terra1396|terra.png
+|gametype|singles
+|gen|6
+|tier|OU
+|clearpoke
+|poke|p1|Reuniclus, M
+|poke|p1|Jellicent, F
+|poke|p1|Kyurem-Black
+|poke|p1|Skarmory, F
+|poke|p1|Heatran, F
+|poke|p1|Blissey, F
+|poke|p2|Zoroark, F
+|poke|p2|Bronzong
+|poke|p2|Genesect
+|poke|p2|Talonflame, M
+|poke|p2|Garchomp, M
+|poke|p2|Scolipede, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: SayBalloonAndIKill|Heatran, F|386\/386
+|switch|p2a: Bronzong|Bronzong|262\/262
+|turn|1
+|callback|decision
+|
+|move|p2a: Bronzong|Focus Blast|p1a: SayBalloonAndIKill|[miss]
+|-miss|p2a: Bronzong|p1a: SayBalloonAndIKill
+|move|p1a: SayBalloonAndIKill|Stealth Rock|p2a: Bronzong
+|-sidestart|p2: Terra1396|move: Stealth Rock
+|
+|turn|2
+|callback|decision
+|join|Aleader Vionce
+|
+|switch|p1a: RisquÃ©Blisseh|Blissey, F|714\/714
+|move|p2a: Bronzong|Night Daze|p1a: RisquÃ©Blisseh
+|-damage|p1a: RisquÃ©Blisseh|594\/714
+|-unboost|p1a: RisquÃ©Blisseh|accuracy|1
+|
+|-heal|p1a: RisquÃ©Blisseh|638\/714|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p2a: Bronzong|Taunt|p1a: RisquÃ©Blisseh
+|-start|p1a: RisquÃ©Blisseh|move: Taunt
+|move|p1a: RisquÃ©Blisseh|Seismic Toss|p2a: Bronzong
+|replace|p2a: Zoroark|Zoroark, F|262\/262
+|-damage|p2a: Zoroark|162\/262
+|
+|-heal|p1a: RisquÃ©Blisseh|682\/714|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p2a: Bronzong|Bronzong|338\/338
+|-damage|p2a: Bronzong|317\/338|[from] Stealth Rock
+|move|p1a: RisquÃ©Blisseh|Seismic Toss|p2a: Bronzong|[miss]
+|-miss|p1a: RisquÃ©Blisseh|p2a: Bronzong
+|
+|-heal|p1a: RisquÃ©Blisseh|714\/714|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p1a: SayBalloonAndIKill|Heatran, F|386\/386
+|move|p2a: Bronzong|Reflect|p2a: Bronzong
+|-sidestart|p2: Terra1396|Reflect
+|
+|turn|6
+|callback|decision
+|join|Shyguywarrior
+|
+|switch|p1a: HiBlakeUMad?|Skarmory, F|334\/334
+|switch|p2a: Garchomp|Garchomp, M|420\/420
+|-damage|p2a: Garchomp|394\/420|[from] Stealth Rock
+|
+|turn|7
+|callback|decision
+|
+|switch|p2a: Zoroark|Zoroark, F|162\/262
+|-damage|p2a: Zoroark|130\/262|[from] Stealth Rock
+|move|p1a: HiBlakeUMad?|Whirlwind|p2a: Zoroark
+|drag|p2a: Garchomp|Garchomp, M|394\/420
+|-damage|p2a: Garchomp|368\/420|[from] Stealth Rock
+|
+|turn|8
+|callback|decision
+|
+|move|p2a: Garchomp|Stone Edge|p1a: HiBlakeUMad?
+|-damage|p1a: HiBlakeUMad?|269\/334
+|move|p1a: HiBlakeUMad?|Spikes|p2a: Garchomp
+|-sidestart|p2: Terra1396|Spikes
+|
+|-heal|p1a: HiBlakeUMad?|289\/334|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|switch|p2a: Zoroark|Zoroark, F|130\/262
+|-damage|p2a: Zoroark|98\/262|[from] Spikes
+|-damage|p2a: Zoroark|66\/262|[from] Stealth Rock
+|move|p1a: HiBlakeUMad?|Whirlwind|p2a: Zoroark
+|drag|p2a: Scolipede|Scolipede, M|324\/324
+|-damage|p2a: Scolipede|284\/324|[from] Spikes
+|-damage|p2a: Scolipede|203\/324|[from] Stealth Rock
+|
+|-heal|p1a: HiBlakeUMad?|309\/334|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p2a: Scolipede|Megahorn|p1a: HiBlakeUMad?
+|-resisted|p1a: HiBlakeUMad?
+|-damage|p1a: HiBlakeUMad?|286\/334
+|move|p1a: HiBlakeUMad?|Spikes|p2a: Scolipede
+|-sidestart|p2: Terra1396|Spikes
+|
+|-heal|p1a: HiBlakeUMad?|306\/334|[from] item: Leftovers
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|11
+|callback|decision
+|
+|switch|p2a: Genesect|Genesect|284\/284
+|-damage|p2a: Genesect|249\/284|[from] Stealth Rock
+|-damage|p2a: Genesect|202\/284|[from] Spikes
+|-boost|p2a: Genesect|spa|1|[from] ability: Download
+|move|p1a: HiBlakeUMad?|Spikes|p2a: Genesect
+|-sidestart|p2: Terra1396|Spikes
+|
+|-heal|p1a: HiBlakeUMad?|326\/334|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|switch|p1a: SayBalloonAndIKill|Heatran, F|386\/386
+|move|p2a: Genesect|Flash Cannon|p1a: SayBalloonAndIKill
+|-resisted|p1a: SayBalloonAndIKill
+|-damage|p1a: SayBalloonAndIKill|349\/386
+|
+|-heal|p1a: SayBalloonAndIKill|373\/386|[from] item: Leftovers
+|-sideend|p2: Terra1396|Reflect
+|turn|13
+|callback|decision
+|
+|switch|p2a: Garchomp|Garchomp, M|368\/420
+|-damage|p2a: Garchomp|342\/420|[from] Stealth Rock
+|-damage|p2a: Garchomp|237\/420|[from] Spikes
+|move|p1a: SayBalloonAndIKill|Lava Plume|p2a: Garchomp
+|-resisted|p2a: Garchomp
+|-damage|p2a: Garchomp|191\/420
+|
+|-heal|p1a: SayBalloonAndIKill|386\/386|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|switch|p2a: Genesect|Genesect|66\/262
+|-damage|p2a: Genesect|1\/262|[from] Spikes
+|-damage|p2a: Genesect|0 fnt|[from] Stealth Rock
+|faint|p2a: Genesect
+|switch|p1a: HiBlakeUMad?|Skarmory, F|326\/334
+|
+|-heal|p1a: HiBlakeUMad?|334\/334|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Talonflame|Talonflame, M|298\/298
+|-damage|p2a: Talonflame|149\/298|[from] Stealth Rock
+|turn|15
+|callback|decision
+|
+|switch|p1a: SayBalloonAndIKill|Heatran, F|386\/386
+|move|p2a: Talonflame|Swords Dance|p2a: Talonflame
+|-boost|p2a: Talonflame|atk|2
+|
+|turn|16
+|callback|decision
+|
+|move|p2a: Talonflame|Brave Bird|p1a: SayBalloonAndIKill
+|-resisted|p1a: SayBalloonAndIKill
+|-damage|p1a: SayBalloonAndIKill|186\/386
+|-damage|p2a: Talonflame|83\/298|[from] recoil|[of] p1a: SayBalloonAndIKill
+|-damage|p2a: Talonflame|54\/298|[from] item: Life Orb
+|move|p1a: SayBalloonAndIKill|Roar|p2a: Talonflame
+|drag|p2a: Scolipede|Scolipede, M|203\/324
+|-damage|p2a: Scolipede|122\/324|[from] Stealth Rock
+|-damage|p2a: Scolipede|41\/324|[from] Spikes
+|-enditem|p2a: Scolipede|Sitrus Berry|[eat]
+|-heal|p2a: Scolipede|122\/324|[from] item: Sitrus Berry
+|
+|-heal|p1a: SayBalloonAndIKill|210\/386|[from] item: Leftovers
+|turn|17
+|callback|decision
+|chat|Terra1396|gg
+|chat|Terra1396|I am so rusty
+|
+|switch|p1a: HiBlakeUMad?|Skarmory, F|334\/334
+|move|p2a: Scolipede|Earthquake|p1a: HiBlakeUMad?
+|-immune|p1a: HiBlakeUMad?|[msg]
+|
+|-boost|p2a: Scolipede|spe|1|[from] ability: Speed Boost
+|turn|18
+|callback|decision
+|chat|AElite-Scourage|Not over yet
+|chat|Terra1396|I have played like 2 battles in 3 days >_<
+|
+|move|p2a: Scolipede|Swords Dance|p2a: Scolipede
+|-boost|p2a: Scolipede|atk|2
+|move|p1a: HiBlakeUMad?|Whirlwind|p2a: Scolipede
+|drag|p2a: Garchomp|Garchomp, M|191\/420
+|-damage|p2a: Garchomp|86\/420|[from] Spikes
+|-damage|p2a: Garchomp|60\/420|[from] Stealth Rock
+|
+|turn|19
+|callback|decision
+|chat|AElite-Scourage|Meh
+|
+|move|p2a: Garchomp|Stone Edge|p1a: HiBlakeUMad?
+|-crit|p1a: HiBlakeUMad?
+|-damage|p1a: HiBlakeUMad?|232\/334
+|move|p1a: HiBlakeUMad?|Whirlwind|p2a: Garchomp
+|drag|p2a: Scolipede|Scolipede, M|122\/324
+|-damage|p2a: Scolipede|41\/324|[from] Spikes
+|-damage|p2a: Scolipede|0 fnt|[from] Stealth Rock
+|faint|p2a: Scolipede
+|
+|-heal|p1a: HiBlakeUMad?|252\/334|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Bronzong|Bronzong|317\/338
+|-damage|p2a: Bronzong|296\/338|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|move|p2a: Bronzong|Stealth Rock|p1a: HiBlakeUMad?
+|-sidestart|p1: AElite-Scourage|move: Stealth Rock
+|move|p1a: HiBlakeUMad?|Whirlwind|p2a: Bronzong
+|drag|p2a: Garchomp|Garchomp, M|60\/420
+|-damage|p2a: Garchomp|34\/420|[from] Stealth Rock
+|-damage|p2a: Garchomp|0 fnt|[from] Spikes
+|faint|p2a: Garchomp
+|
+|-heal|p1a: HiBlakeUMad?|272\/334|[from] item: Leftovers
+|callback|decision
+|chat|Terra1396|And I fricken forgot about stealth rock >_<
+|
+|switch|p2a: Genesect|Genesect|202\/284
+|-damage|p2a: Genesect|167\/284|[from] Stealth Rock
+|-damage|p2a: Genesect|96\/284|[from] Spikes
+|-boost|p2a: Genesect|spa|1|[from] ability: Download
+|turn|21
+|callback|decision
+|leave|Shyguywarrior
+|
+|switch|p1a: RisquÃ©Blisseh|Blissey, F|714\/714
+|-damage|p1a: RisquÃ©Blisseh|625\/714|[from] Stealth Rock
+|move|p2a: Genesect|Ice Beam|p1a: RisquÃ©Blisseh
+|-damage|p1a: RisquÃ©Blisseh|489\/714
+|
+|-heal|p1a: RisquÃ©Blisseh|533\/714|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p2a: Genesect|Ice Beam|p1a: RisquÃ©Blisseh
+|-damage|p1a: RisquÃ©Blisseh|415\/714
+|move|p1a: RisquÃ©Blisseh|Wish|p1a: RisquÃ©Blisseh
+|
+|-heal|p1a: RisquÃ©Blisseh|459\/714|[from] item: Leftovers
+|turn|23
+|callback|decision
+|leave|Aleader Vionce
+|chat|AElite-Scourage|I defog early game SRs
+|
+|move|p2a: Genesect|Ice Beam|p1a: RisquÃ©Blisseh
+|-damage|p1a: RisquÃ©Blisseh|330\/714
+|move|p1a: RisquÃ©Blisseh|Seismic Toss|p2a: Genesect
+|-damage|p2a: Genesect|0 fnt
+|faint|p2a: Genesect
+|
+|-heal|p1a: RisquÃ©Blisseh|687\/714|[from] move: Wish|[wisher] RisquÃ©Blisseh
+|-heal|p1a: RisquÃ©Blisseh|714\/714|[from] item: Leftovers
+|callback|decision
+|chat|Terra1396|ugh I prefer my ou team
+|
+|switch|p2a: Talonflame|Talonflame, M|54\/298
+|-damage|p2a: Talonflame|0 fnt|[from] Stealth Rock
+|faint|p2a: Talonflame
+|callback|decision
+|
+|switch|p2a: Bronzong|Bronzong|296\/338
+|-damage|p2a: Bronzong|275\/338|[from] Stealth Rock
+|turn|24
+|callback|decision
+|chat|AElite-Scourage|You didn't challenge with an OU team?
+|chat|AElite-Scourage|This looks pretty OU.
+|chat|Terra1396|I know let's rematch, I haven't played with this in awhile
+|
+|move|p1a: RisquÃ©Blisseh|Seismic Toss|p2a: Bronzong
+|-damage|p2a: Bronzong|175\/338
+|move|p2a: Bronzong|Toxic|p1a: RisquÃ©Blisseh
+|-status|p1a: RisquÃ©Blisseh|tox
+|
+|-damage|p1a: RisquÃ©Blisseh|670\/714 tox|[from] psn
+|turn|25
+|callback|decision
+|
+|move|p1a: RisquÃ©Blisseh|Seismic Toss|p2a: Bronzong
+|-damage|p2a: Bronzong|75\/338
+|move|p2a: Bronzong|Toxic|p1a: RisquÃ©Blisseh
+|-fail|p1a: RisquÃ©Blisseh|tox
+|
+|-heal|p1a: RisquÃ©Blisseh|714\/714 tox|[from] item: Leftovers
+|-damage|p1a: RisquÃ©Blisseh|626\/714 tox|[from] psn
+|turn|26
+|callback|decision
+|
+|move|p1a: RisquÃ©Blisseh|Seismic Toss|p2a: Bronzong
+|-damage|p2a: Bronzong|0 fnt
+|faint|p2a: Bronzong
+|
+|win|AElite-Scourage
+|leave|Terra1396
+|player|p2

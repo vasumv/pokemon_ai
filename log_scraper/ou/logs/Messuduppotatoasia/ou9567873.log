@@ -1,0 +1,299 @@
+|join|Messuduppotatoasia
+|join|XxOshawhatxX
+|player|p1|Messuduppotatoasia|265
+|player|p2|XxOshawhatxX|102
+|gametype|singles
+|tier|OU
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Garchomp, F
+|poke|p1|Scizor, M
+|poke|p1|Rotom-Wash
+|poke|p1|Gengar, M
+|poke|p1|Keldeo
+|poke|p1|Terrakion
+|poke|p2|Haxorus, F
+|poke|p2|Ninjask, F
+|poke|p2|Jellicent, F
+|poke|p2|Ferrothorn, F
+|poke|p2|Infernape, M
+|poke|p2|Alakazam, M
+|rule|Sleep Clause: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|teampreview
+|callback|decision
+|chat|Messuduppotatoasia|hi there
+|chat|Messuduppotatoasia|got everything working fine?
+|chat|XxOshawhatxX|yep
+|
+|start
+|switch|p1a: Halibel|Garchomp, F| (100\/100)
+|switch|p2a: Haxorus|Haxorus, F| (100\/100)
+|-ability|p2a: Haxorus|Mold Breaker
+|turn|1
+|callback|decision
+|chat|XxOshawhatxX|I hate how my sprite is a female trainer...
+|
+|move|p1a: Halibel|Stealth Rock|p2a: Haxorus
+|-sidestart|p2: XxOshawhatxX|move: Stealth Rock
+|move|p2a: Haxorus|Outrage|p1a: Halibel
+|-supereffective|p1a: Halibel
+|-damage|p1a: Halibel|100 (0\/100 fnt)
+|-damage|p2a: Haxorus|12 (88\/100)|[from] ability: Rough Skin|[of] p1a: Halibel
+|-damage|p2a: Haxorus|10 (78\/100)|[from] item: Life Orb
+|faint|p1a: Halibel
+|
+|callback|decision
+|chat|Messuduppotatoasia|that's not something major anyways xD
+|
+|switch|p1a: Terrakion|Terrakion| (100\/100)
+|turn|2
+|callback|decision
+|
+|move|p1a: Terrakion|Close Combat|p2a: Haxorus
+|-damage|p2a: Haxorus|75 (3\/100)
+|-unboost|p1a: Terrakion|def|1
+|-unboost|p1a: Terrakion|spd|1
+|move|p2a: Haxorus|Outrage|p1a: Terrakion
+|-damage|p1a: Terrakion|100 (0\/100 fnt)
+|-damage|p2a: Haxorus|3 (0\/100 fnt)|[from] item: Life Orb
+|faint|p1a: Terrakion
+|faint|p2a: Haxorus
+|
+|callback|decision
+|chat|Messuduppotatoasia|oh what
+|chat|XxOshawhatxX|lol
+|chat|XxOshawhatxX|aw wow
+|
+|switch|p1a: Shanks|Scizor, M| (100\/100)
+|switch|p2a: Jellicent|Jellicent, F| (100\/100)
+|-damage|p2a: Jellicent|12 (88\/100)|[from] Stealth Rock
+|turn|3
+|callback|decision
+|
+|move|p1a: Shanks|U-turn|p2a: Jellicent
+|-resisted|p2a: Jellicent
+|-damage|p2a: Jellicent|19 (68\/100)
+|-start|p1a: Shanks|Disable|U-turn
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash| (100\/100)
+|move|p2a: Jellicent|Scald|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|13 (87\/100)
+|
+|-heal|p1a: Rotom-Wash|6 (93\/100)|[from] item: Leftovers
+|-heal|p2a: Jellicent|6 (75\/100)|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Jellicent
+|-supereffective|p2a: Jellicent
+|-damage|p2a: Jellicent|33 (41\/100)
+|callback|decision
+|
+|switch|p1a: Gengar|Gengar, M| (100\/100)
+|move|p2a: Jellicent|Toxic|p1a: Gengar
+|
+|-heal|p2a: Jellicent|6 (48\/100)|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p1a: Gengar|Shadow Ball|p2a: Jellicent
+|-supereffective|p2a: Jellicent
+|-damage|p2a: Jellicent|48 (0\/100 fnt)
+|faint|p2a: Jellicent
+|
+|callback|decision
+|
+|switch|p2a: Alakazam|Alakazam, M| (100\/100)
+|turn|6
+|callback|decision
+|
+|switch|p1a: Shanks|Scizor, M| (100\/100)
+|move|p2a: Alakazam|Shadow Ball|p1a: Shanks
+|-resisted|p1a: Shanks
+|-damage|p1a: Shanks|20 (80\/100)
+|
+|turn|7
+|callback|decision
+|
+|move|p1a: Shanks|U-turn|p2a: Alakazam
+|-supereffective|p2a: Alakazam
+|-enditem|p2a: Alakazam|Focus Sash
+|-damage|p2a: Alakazam|100 (1\/100)
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash| (93\/100)
+|move|p2a: Alakazam|Hidden Power|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|13 (80\/100)
+|
+|-heal|p1a: Rotom-Wash|6 (86\/100)|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p2a: Alakazam|Psychic|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|54 (33\/100)
+|-unboost|p1a: Rotom-Wash|spd|1
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Alakazam
+|-damage|p2a: Alakazam|0 (0\/100 fnt)
+|faint|p2a: Alakazam
+|callback|decision
+|chat|Messuduppotatoasia|Scarf Scizor woot
+|
+|switch|p1a: Applejack|Keldeo| (100\/100)
+|
+|callback|decision
+|chat|XxOshawhatxX|lol brony alert
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F| (100\/100)
+|-damage|p2a: Ferrothorn|6 (94\/100)|[from] Stealth Rock
+|turn|9
+|callback|decision
+|chat|Messuduppotatoasia|btw, I 'Applejack' happens to be the only MLP name I knew
+|chat|Messuduppotatoasia|so I used it
+|chat|XxOshawhatxX|Fluttershy
+|chat|Messuduppotatoasia|and I couldn't think of good nicknames for Rotom, Gengar, and Terakion in time
+|chat|XxOshawhatxX|RainbowDash
+|chat|Messuduppotatoasia|I knew there was Rainbow something but I didn't want to make any mistakes
+|
+|switch|p1a: Gengar|Gengar, M| (100\/100)
+|move|p2a: Ferrothorn|Thunder Wave|p1a: Gengar
+|-status|p1a: Gengar|par
+|
+|turn|10
+|callback|decision
+|
+|cant|p1a: Gengar|par
+|move|p2a: Ferrothorn|Stealth Rock|p1a: Gengar
+|-sidestart|p1: Messuduppotatoasia|move: Stealth Rock
+|
+|turn|11
+|callback|decision
+|chat|Messuduppotatoasia|so you don't know Shanks or Halibel right?
+|
+|cant|p1a: Gengar|par
+|move|p2a: Ferrothorn|Spikes|p1a: Gengar
+|-sidestart|p1: Messuduppotatoasia|Spikes
+|
+|turn|12
+|callback|decision
+|
+|move|p1a: Gengar|Focus Blast|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|67 (27\/100)
+|move|p2a: Ferrothorn|Power Whip|p1a: Gengar
+|-resisted|p1a: Gengar
+|-damage|p1a: Gengar|38 (62\/100 par)
+|
+|-heal|p1a: Gengar|6 (68\/100 par)|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: Gengar|Will-O-Wisp|p2a: Ferrothorn
+|-status|p2a: Ferrothorn|brn
+|move|p2a: Ferrothorn|Power Whip|p1a: Gengar
+|-resisted|p1a: Gengar
+|-damage|p1a: Gengar|20 (48\/100 par)
+|
+|-heal|p1a: Gengar|6 (54\/100 par)|[from] item: Leftovers
+|-damage|p2a: Ferrothorn|13 (14\/100 brn)|[from] brn
+|turn|14
+|callback|decision
+|chat|XxOshawhatxX|This will take a while at this rate....
+|
+|move|p1a: Gengar|Substitute|p1a: Gengar
+|-start|p1a: Gengar|Substitute
+|-damage|p1a: Gengar|25 (29\/100 par)
+|move|p2a: Ferrothorn|Power Whip|p1a: Gengar
+|-resisted|p1a: Gengar
+|-activate|p1a: Gengar|Substitute|[damage]
+|
+|-heal|p1a: Gengar|6 (35\/100 par)|[from] item: Leftovers
+|-damage|p2a: Ferrothorn|13 (2\/100 brn)|[from] brn
+|turn|15
+|callback|decision
+|chat|Messuduppotatoasia|not really
+|chat|Messuduppotatoasia|what I call stall is something that takes like 30+ turns
+|chat|XxOshawhatxX|watch
+|chat|Messuduppotatoasia|or maybe not that much
+|chat|Messuduppotatoasia|10 turns or so?
+|
+|switch|p2a: Infernape|Infernape, M| (100\/100)
+|-damage|p2a: Infernape|12 (88\/100)|[from] Stealth Rock
+|cant|p1a: Gengar|par
+|
+|-heal|p1a: Gengar|6 (41\/100 par)|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p2a: Infernape|Flare Blitz|p1a: Gengar
+|-end|p1a: Gengar|Substitute
+|-damage|p2a: Infernape|2 (86\/100)|[from] recoil|[of] p1a: Gengar
+|cant|p1a: Gengar|par
+|
+|-heal|p1a: Gengar|6 (48\/100 par)|[from] item: Leftovers
+|turn|17
+|callback|decision
+|chat|XxOshawhatxX|f yeah
+|
+|move|p2a: Infernape|Flare Blitz|p1a: Gengar
+|-damage|p1a: Gengar|48 (0\/100 fnt)
+|-damage|p2a: Infernape|14 (72\/100)|[from] recoil|[of] p1a: Gengar
+|faint|p1a: Gengar
+|
+|callback|decision
+|
+|switch|p1a: Applejack|Keldeo| (100\/100)
+|-damage|p1a: Applejack|12 (88\/100)|[from] Spikes
+|-damage|p1a: Applejack|6 (81\/100)|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|move|p1a: Applejack|Surf|p2a: Infernape
+|-supereffective|p2a: Infernape
+|-damage|p2a: Infernape|72 (0\/100 fnt)
+|faint|p2a: Infernape
+|
+|-heal|p1a: Applejack|6 (88\/100)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Ninjask|Ninjask, F| (100\/100)
+|-damage|p2a: Ninjask|50 (50\/100)|[from] Stealth Rock
+|turn|19
+|callback|decision
+|
+|move|p2a: Ninjask|Protect|p2a: Ninjask
+|-singleturn|p2a: Ninjask|Protect
+|move|p1a: Applejack|Hidden Power|p2a: Ninjask
+|-activate|p2a: Ninjask|Protect
+|
+|-heal|p1a: Applejack|6 (94\/100)|[from] item: Leftovers
+|-boost|p2a: Ninjask|spe|1|[from] ability: Speed Boost
+|turn|20
+|callback|decision
+|chat|Messuduppotatoasia|that Ninjask best be the world's most fantastic Ninjask
+|
+|move|p2a: Ninjask|Swords Dance|p2a: Ninjask
+|-boost|p2a: Ninjask|atk|2
+|move|p1a: Applejack|Hidden Power|p2a: Ninjask
+|-supereffective|p2a: Ninjask
+|-damage|p2a: Ninjask|50 (0\/100 fnt)
+|faint|p2a: Ninjask
+|
+|-heal|p1a: Applejack|6 (100\/100)|[from] item: Leftovers
+|callback|decision
+|chat|XxOshawhatxX|uh oh
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F| (2\/100 brn)
+|-damage|p2a: Ferrothorn|2 (0\/100 fnt)|[from] Stealth Rock
+|faint|p2a: Ferrothorn
+|
+|win|Messuduppotatoasia
+|chat|XxOshawhatxX|lol
+|chat|Messuduppotatoasia|gg
+|chat|XxOshawhatxX|thx

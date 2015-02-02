@@ -1,0 +1,257 @@
+|join|Princess Faye
+|join|Messuduppotatoasia
+|player|p1|Princess Faye|23
+|player|p2|Messuduppotatoasia|1
+|gametype|singles
+|gen|6
+|tier|OU (suspect test)
+|rated
+|clearpoke
+|poke|p1|Charizard, M
+|poke|p1|Aegislash, M
+|poke|p1|Conkeldurr, M
+|poke|p1|Skarmory, M
+|poke|p1|Talonflame, F
+|poke|p1|Garchomp, M
+|poke|p2|Landorus-Therian, M
+|poke|p2|Scizor, F
+|poke|p2|Manaphy
+|poke|p2|Medicham, F
+|poke|p2|Rotom-Wash
+|poke|p2|Ditto
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|switch|p2a: Rotom-Wash|Rotom-Wash|299\/299
+|turn|1
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, M|368\/368
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Garchomp
+|-immune|p1a: Garchomp|[msg]
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|381\/381
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Garchomp
+|-unboost|p1a: Garchomp|atk|1
+|move|p1a: Garchomp|Substitute|p1a: Garchomp
+|-start|p1a: Garchomp|Substitute
+|-damage|p1a: Garchomp|276\/368
+|
+|-heal|p1a: Garchomp|299\/368|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|move|p1a: Garchomp|Swords Dance|p1a: Garchomp
+|-boost|p1a: Garchomp|atk|2
+|move|p2a: Landorus-Therian|Earthquake|p1a: Garchomp
+|-end|p1a: Garchomp|Substitute
+|
+|-heal|p1a: Garchomp|322\/368|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|move|p2a: Landorus-Therian|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|
+|turn|5
+|callback|decision
+|
+|move|p2a: Landorus-Therian|Knock Off|p1a: Skarmory
+|-damage|p1a: Skarmory|272\/334
+|-damage|p2a: Landorus-Therian|318\/381|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|-enditem|p1a: Skarmory|Rocky Helmet|[from] move: Knock Off|[of] p2a: Landorus-Therian
+|move|p1a: Skarmory|Toxic|p2a: Landorus-Therian
+|-status|p2a: Landorus-Therian|tox
+|
+|-heal|p2a: Landorus-Therian|341\/381 tox|[from] item: Leftovers
+|-damage|p2a: Landorus-Therian|318\/381 tox|[from] psn
+|turn|6
+|callback|decision
+|
+|move|p2a: Landorus-Therian|Stealth Rock|p1a: Skarmory
+|-sidestart|p1: Princess Faye|move: Stealth Rock
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334
+|
+|-heal|p2a: Landorus-Therian|341\/381 tox|[from] item: Leftovers
+|-damage|p2a: Landorus-Therian|295\/381 tox|[from] psn
+|turn|7
+|callback|decision
+|
+|move|p2a: Landorus-Therian|U-turn|p1a: Skarmory
+|-crit|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|318\/334
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|299\/299
+|move|p1a: Skarmory|Defog|p2a: Rotom-Wash
+|-unboost|p2a: Rotom-Wash|evasion|1
+|-sideend|p1: Princess Faye|Stealth Rock|[from] move: Defog|[of] p1a: Skarmory
+|
+|turn|8
+|callback|decision
+|
+|switch|p1a: Conkeldurr|Conkeldurr, M|352\/352
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|279\/352
+|callback|decision
+|
+|switch|p2a: Medicham|Medicham, F|261\/261
+|
+|turn|9
+|callback|decision
+|
+|switch|p1a: Skarmory|Skarmory, M|318\/334
+|-formechange|p2a: Medicham|Medicham-Mega
+|message|Medicham has Mega Evolved into Mega Medicham!
+|move|p2a: Medicham|Drain Punch|p1a: Skarmory
+|-damage|p1a: Skarmory|180\/334
+|
+|turn|10
+|callback|decision
+|
+|move|p2a: Medicham|High Jump Kick|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|faint|p1a: Skarmory
+|
+|callback|decision
+|
+|switch|p1a: Talonflame|Talonflame, F|309\/309
+|turn|11
+|callback|decision
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|295\/381 tox
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Talonflame
+|-unboost|p1a: Talonflame|atk|1
+|move|p1a: Talonflame|Brave Bird|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|157\/381 tox
+|-damage|p1a: Talonflame|263\/309|[from] recoil|[of] p2a: Landorus-Therian
+|
+|-heal|p2a: Landorus-Therian|180\/381 tox|[from] item: Leftovers
+|-damage|p2a: Landorus-Therian|157\/381 tox|[from] psn
+|turn|12
+|callback|decision
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|36\/381 tox
+|-damage|p1a: Talonflame|223\/309|[from] recoil|[of] p2a: Landorus-Therian
+|move|p2a: Landorus-Therian|Stealth Rock|p1a: Talonflame
+|-sidestart|p1: Princess Faye|move: Stealth Rock
+|
+|-heal|p2a: Landorus-Therian|59\/381 tox|[from] item: Leftovers
+|-damage|p2a: Landorus-Therian|13\/381 tox|[from] psn
+|turn|13
+|callback|decision
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|299\/299
+|move|p1a: Talonflame|Brave Bird|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|213\/299
+|-damage|p1a: Talonflame|195\/309|[from] recoil|[of] p2a: Rotom-Wash
+|
+|-heal|p2a: Rotom-Wash|231\/299|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|150\/299
+|-damage|p1a: Talonflame|168\/309|[from] recoil|[of] p2a: Rotom-Wash
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Talonflame
+|-supereffective|p1a: Talonflame
+|-damage|p1a: Talonflame|0 fnt
+|faint|p1a: Talonflame
+|callback|decision
+|
+|switch|p2a: Manaphy|Manaphy|341\/341
+|
+|callback|decision
+|
+|switch|p1a: Conkeldurr|Conkeldurr, M|279\/352
+|-damage|p1a: Conkeldurr|257\/352|[from] Stealth Rock
+|turn|15
+|callback|decision
+|
+|move|p2a: Manaphy|Tail Glow|p2a: Manaphy
+|-boost|p2a: Manaphy|spa|3
+|move|p1a: Conkeldurr|Drain Punch|p2a: Manaphy
+|-damage|p2a: Manaphy|181\/341
+|-heal|p1a: Conkeldurr|337\/352|[from] drain|[of] p2a: Manaphy
+|
+|-heal|p2a: Manaphy|202\/341|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Conkeldurr|Mach Punch|p2a: Manaphy
+|-damage|p2a: Manaphy|118\/341
+|move|p2a: Manaphy|Surf|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|102\/352
+|
+|-heal|p2a: Manaphy|139\/341|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Conkeldurr|Mach Punch|p2a: Manaphy
+|-damage|p2a: Manaphy|51\/341
+|move|p2a: Manaphy|Surf|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|0 fnt
+|faint|p1a: Conkeldurr
+|
+|-heal|p2a: Manaphy|72\/341|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, M|322\/368
+|-damage|p1a: Garchomp|299\/368|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|move|p1a: Garchomp|Substitute|p1a: Garchomp
+|-start|p1a: Garchomp|Substitute
+|-damage|p1a: Garchomp|207\/368
+|move|p2a: Manaphy|Ice Beam|p1a: Garchomp
+|-supereffective|p1a: Garchomp
+|-end|p1a: Garchomp|Substitute
+|
+|-heal|p1a: Garchomp|230\/368|[from] item: Leftovers
+|-heal|p2a: Manaphy|93\/341|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|switch|p2a: Landorus-Therian|Landorus-Therian, M|13\/381 tox
+|-ability|p2a: Landorus-Therian|Intimidate|[of] p1a: Garchomp
+|-unboost|p1a: Garchomp|atk|1
+|move|p1a: Garchomp|Earthquake|p2a: Landorus-Therian
+|-immune|p2a: Landorus-Therian|[msg]
+|
+|-heal|p1a: Garchomp|253\/368|[from] item: Leftovers
+|-heal|p2a: Landorus-Therian|36\/381 tox|[from] item: Leftovers
+|-damage|p2a: Landorus-Therian|13\/381 tox|[from] psn
+|turn|20
+|callback|decision
+|
+|move|p1a: Garchomp|Dragon Claw|p2a: Landorus-Therian
+|-damage|p2a: Landorus-Therian|0 fnt
+|faint|p2a: Landorus-Therian
+|
+|-heal|p1a: Garchomp|276\/368|[from] item: Leftovers
+|callback|decision
+|-message|Princess Faye forfeited.
+|
+|win|Messuduppotatoasia
+|raw|Ladder updating...
+|raw|Princess Faye's rating: 1251 &rarr; <strong>1226<\/strong><br \/>(-25 for losing)
+|raw|Messuduppotatoasia's rating: 1251 &rarr; <strong>1276<\/strong><br \/>(+25 for winning)

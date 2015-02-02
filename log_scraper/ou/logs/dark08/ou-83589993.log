@@ -1,0 +1,371 @@
+|join|BreederGangBoss
+|join|dark08
+|player|p1|BreederGangBoss|186
+|player|p2|dark08|153
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Talonflame, F
+|poke|p1|Tyranitar, F, shiny
+|poke|p1|Mandibuzz, F, shiny
+|poke|p1|Aegislash, F, shiny
+|poke|p1|Latias, F
+|poke|p1|Lucario, M
+|poke|p2|Lucario, M
+|poke|p2|Zoroark, M
+|poke|p2|Latios, M
+|poke|p2|Scizor, M
+|poke|p2|Espeon, M
+|poke|p2|Umbreon, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|chat|BreederGangBoss|my bad
+|
+|start
+|switch|p1a: Masamune|Aegislash, F, shiny|323\/323
+|switch|p2a: Umbreon|Umbreon, M|394\/394
+|turn|1
+|callback|decision
+|
+|move|p1a: Masamune|King's Shield|p1a: Masamune
+|-singleturn|p1a: Masamune|Protect
+|move|p2a: Umbreon|Foul Play|p1a: Masamune
+|-activate|p1a: Masamune|Protect
+|-unboost|p2a: Umbreon|atk|2
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Gojira|Tyranitar, F, shiny|404\/404
+|-weather|Sandstorm
+|move|p2a: Umbreon|Foul Play|p1a: Gojira
+|-resisted|p1a: Gojira
+|-damage|p1a: Gojira|334\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Umbreon|370\/394|[from] Sandstorm
+|-heal|p2a: Umbreon|394\/394|[from] item: Leftovers
+|-heal|p1a: Gojira|359\/404|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|344\/344
+|move|p1a: Gojira|Rock Tomb|p2a: Scizor
+|-damage|p2a: Scizor|253\/344
+|-unboost|p2a: Scizor|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Gojira|384\/404|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: Masamune|Aegislash, F, shiny|323\/323
+|move|p2a: Scizor|Bullet Punch|p1a: Masamune
+|-resisted|p1a: Masamune
+|-damage|p1a: Masamune|264\/323
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Masamune|284\/323|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p2a: Umbreon|Umbreon, M|394\/394
+|-formechange|p1a: Masamune|Aegislash-Blade
+|move|p1a: Masamune|Sacred Sword|p2a: Umbreon
+|-supereffective|p2a: Umbreon
+|-damage|p2a: Umbreon|208\/394
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Umbreon|184\/394|[from] Sandstorm
+|-heal|p2a: Umbreon|208\/394|[from] item: Leftovers
+|-heal|p1a: Masamune|304\/323|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|-formechange|p1a: Masamune|Aegislash
+|move|p1a: Masamune|King's Shield|p1a: Masamune
+|-singleturn|p1a: Masamune|Protect
+|move|p2a: Umbreon|Wish|p2a: Umbreon
+|
+|-weather|none
+|-heal|p2a: Umbreon|232\/394|[from] item: Leftovers
+|-heal|p1a: Masamune|323\/323|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p1a: Gojira|Tyranitar, F, shiny|384\/404
+|-weather|Sandstorm
+|move|p2a: Umbreon|Foul Play|p1a: Gojira
+|-resisted|p1a: Gojira
+|-damage|p1a: Gojira|321\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Umbreon|208\/394|[from] Sandstorm
+|-heal|p2a: Umbreon|394\/394|[from] move: Wish|[wisher] Umbreon
+|-heal|p1a: Gojira|346\/404|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p2a: Espeon|Espeon, M|334\/334
+|move|p1a: Gojira|Stealth Rock|p2a: Espeon
+|move|p2a: Espeon|Stealth Rock|p1a: Gojira|[from]Magic Bounce
+|-sidestart|p1: BreederGangBoss|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Espeon|314\/334|[from] Sandstorm
+|-heal|p1a: Gojira|371\/404|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p2a: Espeon|Reflect|p2a: Espeon
+|-sidestart|p2: dark08|Reflect
+|move|p1a: Gojira|Rock Tomb|p2a: Espeon
+|-damage|p2a: Espeon|243\/334
+|-unboost|p2a: Espeon|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Espeon|223\/334|[from] Sandstorm
+|-heal|p1a: Gojira|396\/404|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|switch|p2a: Scizor|Scizor, M|253\/344
+|move|p1a: Gojira|Rock Tomb|p2a: Scizor
+|-damage|p2a: Scizor|208\/344
+|-unboost|p2a: Scizor|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Gojira|404\/404|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p1a: Gojira|Flamethrower|p2a: Scizor
+|-supereffective|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|faint|p2a: Scizor
+|
+|-weather|none
+|callback|decision
+|
+|switch|p2a: Lucario|Lucario, M|262\/262
+|turn|12
+|callback|decision
+|
+|switch|p1a: Masamune|Aegislash, F, shiny|323\/323
+|-damage|p1a: Masamune|303\/323|[from] Stealth Rock
+|move|p2a: Lucario|Nasty Plot|p2a: Lucario
+|-boost|p2a: Lucario|spa|2
+|
+|-heal|p1a: Masamune|323\/323|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: Lucario|Dark Pulse|p1a: Masamune
+|-supereffective|p1a: Masamune
+|-damage|p1a: Masamune|0 fnt
+|faint|p1a: Masamune
+|
+|callback|decision
+|
+|switch|p1a: B^LoodMoon|Latias, F|301\/301
+|-damage|p1a: B^LoodMoon|264\/301|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|move|p1a: B^LoodMoon|Hidden Power|p2a: Lucario
+|replace|p2a: Zoroark|Zoroark, M|262\/262
+|-damage|p2a: Zoroark|127\/262
+|-damage|p1a: B^LoodMoon|234\/301|[from] item: Life Orb
+|move|p2a: Zoroark|Dark Pulse|p1a: B^LoodMoon
+|-supereffective|p1a: B^LoodMoon
+|-damage|p1a: B^LoodMoon|0 fnt
+|faint|p1a: B^LoodMoon
+|
+|callback|decision
+|
+|switch|p1a: Are You Done?|Mandibuzz, F, shiny|423\/423
+|-damage|p1a: Are You Done?|318\/423|[from] Stealth Rock
+|turn|15
+|callback|decision
+|
+|switch|p2a: Lucario|Lucario, M|282\/282
+|move|p1a: Are You Done?|Defog|p2a: Lucario
+|-unboost|p2a: Lucario|evasion|1
+|-sideend|p2: dark08|Reflect
+|-sideend|p2: dark08|Reflect|[from] move: Defog|[of] p2a: Lucario
+|-sideend|p1: BreederGangBoss|Stealth Rock|[from] move: Defog|[of] p1a: Are You Done?
+|
+|-heal|p1a: Are You Done?|344\/423|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p2a: Lucario|Swords Dance|p2a: Lucario
+|-boost|p2a: Lucario|atk|2
+|move|p1a: Are You Done?|Foul Play|p2a: Lucario
+|-resisted|p2a: Lucario
+|-damage|p2a: Lucario|97\/282
+|-boost|p2a: Lucario|atk|1|[from] ability: Justified
+|
+|-heal|p1a: Are You Done?|370\/423|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|-formechange|p2a: Lucario|Lucario-Mega
+|message|Lucario has Mega Evolved into Mega Lucario!
+|move|p2a: Lucario|Close Combat|p1a: Are You Done?
+|-damage|p1a: Are You Done?|0 fnt
+|-unboost|p2a: Lucario|def|1
+|-unboost|p2a: Lucario|spd|1
+|faint|p1a: Are You Done?
+|
+|callback|decision
+|
+|switch|p1a: kroma|Talonflame, F|345\/345
+|turn|18
+|callback|decision
+|
+|move|p2a: Lucario|Extreme Speed|p1a: kroma
+|-damage|p1a: kroma|21\/345
+|move|p1a: kroma|Brave Bird|p2a: Lucario
+|-damage|p2a: Lucario|0 fnt
+|-damage|p1a: kroma|0 fnt|[from] recoil|[of] p2a: Lucario
+|faint|p2a: Lucario
+|faint|p1a: kroma
+|
+|callback|decision
+|
+|switch|p2a: Espeon|Espeon, M|223\/334
+|switch|p1a: R.I.P.|Lucario, M|281\/281
+|turn|19
+|callback|decision
+|
+|-formechange|p1a: R.I.P.|Lucario-Mega
+|message|Lucario has Mega Evolved into Mega Lucario!
+|move|p1a: R.I.P.|Bullet Punch|p2a: Espeon
+|-damage|p2a: Espeon|79\/334
+|move|p2a: Espeon|Light Screen|p2a: Espeon
+|-sidestart|p2: dark08|move: Light Screen
+|
+|turn|20
+|callback|decision
+|
+|move|p1a: R.I.P.|Bullet Punch|p2a: Espeon
+|-damage|p2a: Espeon|0 fnt
+|faint|p2a: Espeon
+|
+|callback|decision
+|
+|switch|p2a: Latios|Latios, M|302\/302
+|turn|21
+|callback|decision
+|
+|switch|p1a: Gojira|Tyranitar, F, shiny|404\/404
+|-weather|Sandstorm
+|move|p2a: Latios|Surf|p1a: Gojira
+|-supereffective|p1a: Gojira
+|-damage|p1a: Gojira|262\/404
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latios|284\/302|[from] Sandstorm
+|-heal|p1a: Gojira|287\/404|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p1a: Gojira|Pursuit|p2a: Latios|[from]Pursuit
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|faint|p2a: Latios
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Gojira|312\/404|[from] item: Leftovers
+|callback|decision
+|chat|dark08|are u for or against banning mega lucario?
+|chat|BreederGangBoss|all for ir
+|chat|dark08|damn
+|chat|BreederGangBoss|look what we did to each other lolz
+|chat|BreederGangBoss|that shit aint fair lolz
+|chat|BreederGangBoss|im gonna win now only because lucario
+|chat|dark08|i kno lucario has just been my favorite since he came out
+|chat|BreederGangBoss|its not like LO luc is bad or naything lol
+|chat|dark08|i really just hope he doesn't get banned
+|chat|BreederGangBoss|hw will he should have been at this point
+|
+|switch|p2a: Zoroark|Zoroark, M|127\/262
+|turn|23
+|callback|decision
+|
+|move|p2a: Zoroark|Focus Blast|p1a: Gojira|[miss]
+|-miss|p2a: Zoroark|p1a: Gojira
+|move|p1a: Gojira|Rock Tomb|p2a: Zoroark
+|-damage|p2a: Zoroark|0 fnt
+|faint|p2a: Zoroark
+|
+|-weather|Sandstorm|[upkeep]
+|-heal|p1a: Gojira|337\/404|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Umbreon|Umbreon, M|394\/394
+|turn|24
+|callback|decision
+|
+|move|p2a: Umbreon|Foul Play|p1a: Gojira
+|-resisted|p1a: Gojira
+|-damage|p1a: Gojira|268\/404
+|move|p1a: Gojira|Rock Tomb|p2a: Umbreon
+|-damage|p2a: Umbreon|328\/394
+|-unboost|p2a: Umbreon|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Umbreon|304\/394|[from] Sandstorm
+|-heal|p1a: Gojira|293\/404|[from] item: Leftovers
+|-heal|p2a: Umbreon|328\/394|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|move|p1a: Gojira|Rock Tomb|p2a: Umbreon
+|-damage|p2a: Umbreon|264\/394
+|-unboost|p2a: Umbreon|spe|1
+|move|p2a: Umbreon|Foul Play|p1a: Gojira
+|-crit|p1a: Gojira
+|-resisted|p1a: Gojira
+|-damage|p1a: Gojira|191\/404
+|
+|-weather|none
+|-heal|p1a: Gojira|216\/404|[from] item: Leftovers
+|-heal|p2a: Umbreon|288\/394|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|switch|p1a: R.I.P.|Lucario, M|281\/281
+|-formechange|p1a: R.I.P.|Lucario-Mega
+|move|p2a: Umbreon|Wish|p2a: Umbreon
+|
+|-heal|p2a: Umbreon|312\/394|[from] item: Leftovers
+|-sideend|p2: dark08|move: Light Screen
+|turn|27
+|callback|decision
+|
+|move|p1a: R.I.P.|Close Combat|p2a: Umbreon
+|-supereffective|p2a: Umbreon
+|-damage|p2a: Umbreon|0 fnt
+|-unboost|p1a: R.I.P.|def|1
+|-unboost|p1a: R.I.P.|spd|1
+|faint|p2a: Umbreon
+|
+|win|BreederGangBoss
+|raw|Ladder updating...
+|chat|dark08|gg
+|chat|BreederGangBoss|gg boss
+|raw|Ladder (probably) updated, but score could not be retrieved (timeout).
+|raw|Ladder (probably) updated, but score could not be retrieved (Error: socket hang up).
+|chat|dark08|alright bro im out if u do vote pls choose not to ban him u probably will anyway but hey its worth a shot asking
+|chat|BreederGangBoss|i can do that

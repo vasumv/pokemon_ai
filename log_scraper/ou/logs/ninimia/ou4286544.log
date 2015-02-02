@@ -1,0 +1,285 @@
+|join|Arkgain
+|join|ninimia
+|player|p1|Arkgain|101
+|player|p2|ninimia|229
+|gametype|singles
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Empoleon, F
+|poke|p1|Latios, M
+|poke|p1|Skarmory, M
+|poke|p1|Chandelure, M
+|poke|p1|Donphan, M
+|poke|p1|Infernape, M
+|poke|p2|Aerodactyl, M
+|poke|p2|Keldeo
+|poke|p2|Thundurus-Therian, M
+|poke|p2|Espeon, M
+|poke|p2|Kingdra, F
+|poke|p2|Volbeat, M
+|rule|Sleep Clause
+|rule|Species Clause
+|rule|OHKO Clause
+|rule|Moody Clause
+|rule|Evasion Clause
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Empoleon|Empoleon, F| (100\/100)
+|switch|p2a: Espeon|Espeon, M| (100\/100)
+|turn|1
+|callback|decision
+|
+|move|p2a: Espeon|Light Screen|p2a: Espeon
+|-sidestart|p2: ninimia|move: Light Screen
+|move|p1a: Empoleon|Scald|p2a: Espeon
+|-damage|p2a: Espeon|17 (83\/100)
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Espeon|Reflect|p2a: Espeon
+|-sidestart|p2: ninimia|Reflect
+|move|p1a: Empoleon|Scald|p2a: Espeon
+|-damage|p2a: Espeon|17 (66\/100)
+|-status|p2: Espeon|brn
+|
+|-damage|p2a: Espeon|12 (54\/100 brn)|[from] brn
+|turn|3
+|callback|decision
+|
+|move|p2a: Espeon|Baton Pass|p2a: Espeon
+|callback|decision
+|
+|switch|p2a: Volbeat|Volbeat, M| (100\/100)
+|move|p1a: Empoleon|Stealth Rock|p2a: Volbeat
+|-sidestart|p2: ninimia|move: Stealth Rock
+|
+|turn|4
+|callback|decision
+|
+|move|p2a: Volbeat|Tail Glow|p2a: Volbeat
+|-boost|p2a: Volbeat|spa|3
+|move|p1a: Empoleon|Roar|p2a: Volbeat
+|drag|p2a: Keldeo|Keldeo| (100\/100)
+|-damage|p2a: Keldeo|6 (94\/100)|[from] Stealth Rock
+|
+|turn|5
+|callback|decision
+|
+|switch|p1a: Chandelure|Chandelure, M| (100\/100)
+|move|p2a: Keldeo|Secret Sword|p1a: Chandelure
+|-immune|p1a: Chandelure|[msg]
+|
+|turn|6
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M| (100\/100)
+|move|p2a: Keldeo|Calm Mind|p2a: Keldeo
+|-boost|p2a: Keldeo|spa|1
+|-boost|p2a: Keldeo|spd|1
+|
+|turn|7
+|callback|decision
+|
+|move|p1a: Latios|Draco Meteor|p2a: Keldeo
+|-damage|p2a: Keldeo|42 (52\/100)
+|-unboost|p1a: Latios|spa|2
+|move|p2a: Keldeo|Hidden Power|p1a: Latios
+|-supereffective|p1a: Latios
+|-damage|p1a: Latios|91 (9\/100)
+|-damage|p2a: Keldeo|10 (42\/100)|[from] item: Life Orb
+|
+|turn|8
+|callback|decision
+|
+|switch|p1a: Empoleon|Empoleon, F| (100\/100)
+|move|p2a: Keldeo|Surf|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|31 (69\/100)
+|-damage|p2a: Keldeo|10 (32\/100)|[from] item: Life Orb
+|
+|-heal|p1a: Empoleon|6 (75\/100)|[from] item: Leftovers
+|-sideend|p2: ninimia|move: Light Screen
+|turn|9
+|callback|decision
+|
+|switch|p1a: Chandelure|Chandelure, M| (100\/100)
+|move|p2a: Keldeo|Secret Sword|p1a: Chandelure
+|-immune|p1a: Chandelure|[msg]
+|
+|-sideend|p2: ninimia|Reflect
+|turn|10
+|callback|decision
+|
+|move|p1a: Chandelure|Shadow Ball|p2a: Keldeo
+|-crit|p2a: Keldeo
+|-damage|p2a: Keldeo|32 (0\/100 fnt)
+|faint|p2a: Keldeo
+|
+|callback|decision
+|
+|switch|p2a: Aerodactyl|Aerodactyl, M| (100\/100)
+|-damage|p2a: Aerodactyl|25 (75\/100)|[from] Stealth Rock
+|-ability|p2a: Aerodactyl|Pressure
+|turn|11
+|callback|decision
+|
+|move|p2a: Aerodactyl|Stealth Rock|p1a: Chandelure
+|-sidestart|p1: Arkgain|move: Stealth Rock
+|move|p1a: Chandelure|Shadow Ball|p2a: Aerodactyl
+|-damage|p2a: Aerodactyl|75 (0\/100 fnt)
+|faint|p2a: Aerodactyl
+|
+|callback|decision
+|
+|switch|p2a: Volbeat|Volbeat, M| (100\/100)
+|-damage|p2a: Volbeat|25 (75\/100)|[from] Stealth Rock
+|turn|12
+|callback|decision
+|
+|move|p2a: Volbeat|Rain Dance|p2a: Volbeat
+|-weather|RainDance
+|move|p1a: Chandelure|Shadow Ball|p2a: Volbeat
+|-damage|p2a: Volbeat|61 (14\/100)
+|
+|-weather|RainDance|[upkeep]
+|turn|13
+|callback|decision
+|
+|move|p2a: Volbeat|Tail Glow|p2a: Volbeat
+|-boost|p2a: Volbeat|spa|3
+|move|p1a: Chandelure|Shadow Ball|p2a: Volbeat
+|-damage|p2a: Volbeat|14 (0\/100 fnt)
+|faint|p2a: Volbeat
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Kingdra|Kingdra, F| (100\/100)
+|-damage|p2a: Kingdra|12 (88\/100)|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|switch|p1a: Latios|Latios, M| (9\/100)
+|-damage|p1a: Latios|9 (0\/100 fnt)|[from] Stealth Rock
+|faint|p1a: Latios
+|move|p2a: Kingdra|Surf|p1: Latios|[notarget]
+|-notarget
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Empoleon|Empoleon, F| (75\/100)
+|-damage|p1a: Empoleon|6 (69\/100)|[from] Stealth Rock
+|turn|15
+|callback|decision
+|
+|move|p1a: Empoleon|Protect|p1a: Empoleon
+|-singleturn|p1a: Empoleon|Protect
+|move|p2a: Kingdra|Surf|p1a: Empoleon
+|-activate|p1a: Empoleon|Protect
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Empoleon|6 (75\/100)|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p2a: Kingdra|Surf|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|26 (49\/100)
+|-damage|p2a: Kingdra|10 (78\/100)|[from] item: Life Orb
+|move|p1a: Empoleon|Scald|p2a: Kingdra
+|-resisted|p2a: Kingdra
+|-damage|p2a: Kingdra|14 (64\/100)
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Empoleon|6 (56\/100)|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p1a: Empoleon|Protect|p1a: Empoleon
+|-singleturn|p1a: Empoleon|Protect
+|move|p2a: Kingdra|Surf|p1a: Empoleon
+|-activate|p1a: Empoleon|Protect
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Empoleon|6 (62\/100)|[from] item: Leftovers
+|turn|18
+|callback|decision
+|
+|move|p2a: Kingdra|Surf|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|30 (32\/100)
+|-damage|p2a: Kingdra|10 (54\/100)|[from] item: Life Orb
+|move|p1a: Empoleon|Scald|p2a: Kingdra
+|-resisted|p2a: Kingdra
+|-damage|p2a: Kingdra|21 (33\/100)
+|-status|p2: Kingdra|brn
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Empoleon|6 (38\/100)|[from] item: Leftovers
+|-damage|p2a: Kingdra|12 (20\/100 brn)|[from] brn
+|turn|19
+|callback|decision
+|
+|move|p1a: Empoleon|Protect|p1a: Empoleon
+|-singleturn|p1a: Empoleon|Protect
+|move|p2a: Kingdra|Surf|p1a: Empoleon
+|-activate|p1a: Empoleon|Protect
+|
+|-weather|none
+|-heal|p1a: Empoleon|6 (45\/100)|[from] item: Leftovers
+|-damage|p2a: Kingdra|12 (8\/100 brn)|[from] brn
+|turn|20
+|callback|decision
+|
+|move|p2a: Kingdra|Surf|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|17 (27\/100)
+|-damage|p2a: Kingdra|8 (0\/100 fnt)|[from] item: Life Orb
+|faint|p2a: Kingdra
+|move|p1a: Empoleon|Roar|p2: Kingdra|[notarget]
+|-notarget
+|
+|-heal|p1a: Empoleon|6 (34\/100)|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Espeon|Espeon, M| (54\/100 brn)
+|-damage|p2a: Espeon|12 (41\/100 brn)|[from] Stealth Rock
+|turn|21
+|callback|decision
+|
+|move|p2a: Espeon|Reflect|p2a: Espeon
+|-sidestart|p2: ninimia|Reflect
+|move|p1a: Empoleon|Scald|p2a: Espeon
+|-damage|p2a: Espeon|30 (11\/100 brn)
+|
+|-heal|p1a: Empoleon|6 (40\/100)|[from] item: Leftovers
+|-damage|p2a: Espeon|11 (0\/100 fnt)|[from] brn
+|faint|p2a: Espeon
+|callback|decision
+|
+|switch|p2a: Thundurus-Therian|Thundurus-Therian, M| (100\/100)
+|-damage|p2a: Thundurus-Therian|25 (75\/100)|[from] Stealth Rock
+|turn|22
+|callback|decision
+|
+|move|p2a: Thundurus-Therian|Agility|p2a: Thundurus-Therian
+|-boost|p2a: Thundurus-Therian|spe|2
+|move|p1a: Empoleon|Scald|p2a: Thundurus-Therian
+|-damage|p2a: Thundurus-Therian|40 (35\/100)
+|
+|-heal|p1a: Empoleon|6 (46\/100)|[from] item: Leftovers
+|turn|23
+|callback|decision
+|-message|ninimia forfeited.
+|
+|win|Arkgain
+|chatmsg-raw|Ladder updating...
+|raw|Arkgain's rating: 1780 &rarr; <strong>1825<\/strong><br \/>(+45 for winning)
+|raw|ninimia's rating: 1648 &rarr; <strong>1622<\/strong><br \/>(-26 for losing)
+|leave|ninimia
+|player|p2

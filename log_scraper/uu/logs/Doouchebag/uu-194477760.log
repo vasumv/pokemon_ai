@@ -1,0 +1,287 @@
+|join|Swag test account
+|join|Doouchebag
+|player|p1|Swag test account|238
+|player|p2|Doouchebag|101
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Aggron, F
+|poke|p1|Blissey, F
+|poke|p1|Darmanitan, F
+|poke|p1|Nidoking, M, shiny
+|poke|p1|Honchkrow, F, shiny
+|poke|p1|Porygon-Z
+|poke|p2|Swampert, M
+|poke|p2|Crobat, M
+|poke|p2|Noivern, F
+|poke|p2|Vaporeon, F
+|poke|p2|Mienshao, F
+|poke|p2|Celebi
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Darmanitan|Darmanitan, F|351\/351
+|switch|p2a: Swampert|Swampert, M|404\/404
+|turn|1
+|
+|detailschange|p2a: Swampert|Swampert-Mega, M
+|message|Swampert has Mega Evolved into Mega Swampert!
+|move|p1a: Darmanitan|U-turn|p2a: Swampert
+|-damage|p2a: Swampert|319\/404
+|
+|switch|p1a: Aggron|Aggron, F|344\/344
+|move|p2a: Swampert|Waterfall|p1a: Aggron
+|-supereffective|p1a: Aggron
+|-damage|p1a: Aggron|194\/344
+|
+|turn|2
+|
+|detailschange|p1a: Aggron|Aggron-Mega, F
+|message|Aggron has Mega Evolved into Mega Aggron!
+|move|p2a: Swampert|Curse|p2a: Swampert
+|-boost|p2a: Swampert|atk|1
+|-boost|p2a: Swampert|def|1
+|-unboost|p2a: Swampert|spe|1
+|move|p1a: Aggron|Stealth Rock|p2a: Swampert
+|-sidestart|p2: Doouchebag|move: Stealth Rock
+|
+|turn|3
+|
+|move|p2a: Swampert|Waterfall|p1a: Aggron
+|-damage|p1a: Aggron|107\/344
+|move|p1a: Aggron|Roar|p2a: Swampert
+|drag|p2a: Celebi|Celebi|403\/403
+|-damage|p2a: Celebi|353\/403|[from] Stealth Rock
+|
+|-heal|p2a: Celebi|378\/403|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|move|p2a: Celebi|Stealth Rock|p1a: Blissey
+|-sidestart|p1: Swag test account|move: Stealth Rock
+|
+|-heal|p2a: Celebi|403\/403|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Swampert|Swampert-Mega, M|319\/404
+|-damage|p2a: Swampert|294\/404|[from] Stealth Rock
+|move|p1a: Blissey|Toxic|p2a: Swampert
+|-status|p2a: Swampert|tox
+|
+|-damage|p2a: Swampert|269\/404 tox|[from] psn
+|turn|6
+|
+|switch|p1a: Aggron|Aggron-Mega, F|107\/344
+|-damage|p1a: Aggron|86\/344|[from] Stealth Rock
+|move|p2a: Swampert|Waterfall|p1a: Aggron
+|-damage|p1a: Aggron|22\/344
+|
+|-damage|p2a: Swampert|219\/404 tox|[from] psn
+|turn|7
+|
+|move|p2a: Swampert|Rest|p2a: Swampert
+|-status|p2a: Swampert|slp
+|-heal|p2a: Swampert|404\/404 slp|[silent]
+|-status|p2a: Swampert|slp|[from] move: Rest
+|move|p1a: Aggron|Heavy Slam|p2a: Swampert
+|-resisted|p2a: Swampert
+|-damage|p2a: Swampert|347\/404 slp
+|
+|turn|8
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|-damage|p1a: Blissey|625\/714|[from] Stealth Rock
+|cant|p2a: Swampert|slp
+|move|p2a: Swampert|Sleep Talk|p2a: Swampert
+|move|p2a: Swampert|Waterfall|p1a: Blissey|[from]Sleep Talk
+|-damage|p1a: Blissey|370\/714
+|
+|-heal|p1a: Blissey|414\/714|[from] item: Leftovers
+|turn|9
+|
+|cant|p2a: Swampert|slp
+|move|p2a: Swampert|Sleep Talk|p2a: Swampert
+|move|p2a: Swampert|Waterfall|p1a: Blissey|[from]Sleep Talk
+|-damage|p1a: Blissey|174\/714
+|move|p1a: Blissey|Wish|p1a: Blissey
+|
+|-heal|p1a: Blissey|218\/714|[from] item: Leftovers
+|turn|10
+|
+|move|p1a: Blissey|Protect|p1a: Blissey
+|-singleturn|p1a: Blissey|Protect
+|-curestatus|p2a: Swampert|slp
+|move|p2a: Swampert|Waterfall|p1a: Blissey
+|-activate|p1a: Blissey|Protect
+|
+|-heal|p1a: Blissey|575\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Blissey|619\/714|[from] item: Leftovers
+|turn|11
+|
+|move|p2a: Swampert|Curse|p2a: Swampert
+|-boost|p2a: Swampert|atk|1
+|-boost|p2a: Swampert|def|1
+|-unboost|p2a: Swampert|spe|1
+|move|p1a: Blissey|Wish|p1a: Blissey
+|
+|-heal|p1a: Blissey|663\/714|[from] item: Leftovers
+|turn|12
+|
+|move|p1a: Blissey|Toxic|p2a: Swampert
+|-status|p2a: Swampert|tox
+|move|p2a: Swampert|Waterfall|p1a: Blissey
+|-damage|p1a: Blissey|285\/714
+|
+|-heal|p1a: Blissey|642\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Blissey|686\/714|[from] item: Leftovers
+|-damage|p2a: Swampert|322\/404 tox|[from] psn
+|turn|13
+|
+|move|p1a: Blissey|Wish|p1a: Blissey
+|move|p2a: Swampert|Curse|p2a: Swampert
+|-boost|p2a: Swampert|atk|1
+|-boost|p2a: Swampert|def|1
+|-unboost|p2a: Swampert|spe|1
+|
+|-heal|p1a: Blissey|714\/714|[from] item: Leftovers
+|-damage|p2a: Swampert|272\/404 tox|[from] psn
+|turn|14
+|
+|switch|p1a: Aggron|Aggron-Mega, F|22\/344
+|-damage|p1a: Aggron|1\/344|[from] Stealth Rock
+|move|p2a: Swampert|Waterfall|p1a: Aggron
+|-damage|p1a: Aggron|0 fnt
+|faint|p1a: Aggron
+|
+|-damage|p2a: Swampert|197\/404 tox|[from] psn
+|
+|switch|p1a: Porygon-Z|Porygon-Z|374\/374
+|-damage|p1a: Porygon-Z|328\/374|[from] Stealth Rock
+|turn|15
+|
+|switch|p2a: Celebi|Celebi|403\/403
+|-damage|p2a: Celebi|353\/403|[from] Stealth Rock
+|move|p1a: Porygon-Z|Tri Attack|p2a: Celebi
+|-damage|p2a: Celebi|117\/403
+|-status|p2a: Celebi|brn
+|
+|-heal|p2a: Celebi|142\/403 brn|[from] item: Leftovers
+|-damage|p2a: Celebi|92\/403 brn|[from] brn
+|turn|16
+|
+|move|p2a: Celebi|Recover|p2a: Celebi
+|-heal|p2a: Celebi|294\/403 brn
+|move|p1a: Porygon-Z|Tri Attack|p2a: Celebi
+|-damage|p2a: Celebi|78\/403 brn
+|
+|-heal|p2a: Celebi|103\/403 brn|[from] item: Leftovers
+|-damage|p2a: Celebi|53\/403 brn|[from] brn
+|turn|17
+|
+|move|p2a: Celebi|Giga Drain|p1a: Porygon-Z
+|-damage|p1a: Porygon-Z|225\/374
+|-heal|p2a: Celebi|105\/403 brn|[from] drain|[of] p1a: Porygon-Z
+|move|p1a: Porygon-Z|Tri Attack|p2a: Celebi
+|-damage|p2a: Celebi|0 fnt
+|faint|p2a: Celebi
+|
+|
+|switch|p2a: Mienshao|Mienshao, F|271\/271
+|-damage|p2a: Mienshao|255\/271|[from] Stealth Rock
+|turn|18
+|
+|move|p2a: Mienshao|High Jump Kick|p1a: Porygon-Z
+|-supereffective|p1a: Porygon-Z
+|-damage|p1a: Porygon-Z|0 fnt
+|faint|p1a: Porygon-Z
+|
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|-damage|p1a: Blissey|625\/714|[from] Stealth Rock
+|turn|19
+|
+|switch|p2a: Swampert|Swampert-Mega, M|197\/404 tox
+|-damage|p2a: Swampert|172\/404 tox|[from] Stealth Rock
+|move|p1a: Blissey|Protect|p1a: Blissey
+|-fail|p1a: Blissey
+|
+|-heal|p1a: Blissey|669\/714|[from] item: Leftovers
+|-damage|p2a: Swampert|147\/404 tox|[from] psn
+|turn|20
+|
+|move|p2a: Swampert|Rest|p2a: Swampert
+|-status|p2a: Swampert|slp
+|-heal|p2a: Swampert|404\/404 slp|[silent]
+|-status|p2a: Swampert|slp|[from] move: Rest
+|move|p1a: Blissey|Wish|p1a: Blissey
+|
+|-heal|p1a: Blissey|713\/714|[from] item: Leftovers
+|turn|21
+|
+|switch|p1a: Nidoking|Nidoking, M, shiny|304\/304
+|-damage|p1a: Nidoking|285\/304|[from] Stealth Rock
+|cant|p2a: Swampert|slp
+|move|p2a: Swampert|Sleep Talk|p2a: Swampert
+|move|p2a: Swampert|Curse|p2a: Swampert|[from]Sleep Talk
+|-boost|p2a: Swampert|atk|1
+|-boost|p2a: Swampert|def|1
+|-unboost|p2a: Swampert|spe|1
+|
+|-heal|p1a: Nidoking|304\/304|[from] move: Wish|[wisher] Blissey
+|turn|22
+|
+|move|p1a: Nidoking|Sludge Wave|p2a: Swampert
+|-crit|p2a: Swampert
+|-resisted|p2a: Swampert
+|-damage|p2a: Swampert|288\/404 slp
+|cant|p2a: Swampert|slp
+|move|p2a: Swampert|Sleep Talk|p2a: Swampert
+|move|p2a: Swampert|Curse|p2a: Swampert|[from]Sleep Talk
+|-boost|p2a: Swampert|atk|1
+|-boost|p2a: Swampert|def|1
+|-unboost|p2a: Swampert|spe|1
+|
+|turn|23
+|
+|move|p1a: Nidoking|Earth Power|p2a: Swampert
+|-damage|p2a: Swampert|139\/404 slp
+|-curestatus|p2a: Swampert|slp
+|move|p2a: Swampert|Waterfall|p1a: Nidoking
+|-supereffective|p1a: Nidoking
+|-damage|p1a: Nidoking|0 fnt
+|faint|p1a: Nidoking
+|
+|
+|switch|p1a: Honchkrow|Honchkrow, F, shiny|341\/341
+|-damage|p1a: Honchkrow|256\/341|[from] Stealth Rock
+|turn|24
+|
+|move|p1a: Honchkrow|Brave Bird|p2a: Swampert
+|-damage|p2a: Swampert|22\/404
+|-damage|p1a: Honchkrow|217\/341|[from] recoil|[of] p2a: Swampert
+|-damage|p1a: Honchkrow|183\/341|[from] item: Life Orb
+|move|p2a: Swampert|Rest|p2a: Swampert
+|-status|p2a: Swampert|slp
+|-heal|p2a: Swampert|404\/404 slp|[silent]
+|-status|p2a: Swampert|slp|[from] move: Rest
+|
+|turn|25
+|-message|Swag test account forfeited.
+|
+|win|Doouchebag
+|raw|Ladder updating...
+|leave|Swag test account
+|player|p1
+|raw|Swag test account's rating: 1286 &rarr; <strong>1264<\/strong><br \/>(-22 for losing)
+|raw|Doouchebag's rating: 1331 &rarr; <strong>1349<\/strong><br \/>(+18 for winning)

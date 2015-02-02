@@ -1,0 +1,344 @@
+|join|BenTheDemon
+|join|renzoslash
+|player|p1|BenTheDemon|240
+|player|p2|renzoslash|163
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Dragonite, M
+|poke|p1|Rotom-Wash
+|poke|p1|Aegislash, M
+|poke|p1|Charizard, M
+|poke|p1|Excadrill, M
+|poke|p1|Gengar, M
+|poke|p2|Metagross
+|poke|p2|Gyarados, M
+|poke|p2|Gastrodon, F
+|poke|p2|Porygon2
+|poke|p2|Kingdra, M
+|poke|p2|Donphan, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|chat|BenTheDemon|I hit 1700 if I win this one. :) GL hf.
+|chat|renzoslash|gl too
+|
+|start
+|switch|p1a: Elec Man|Rotom-Wash|304\/304
+|switch|p2a: Gastrodon|Gastrodon, F|426\/426
+|turn|1
+|
+|move|p1a: Elec Man|Will-O-Wisp|p2a: Gastrodon
+|-status|p2a: Gastrodon|brn
+|move|p2a: Gastrodon|Stockpile|p2a: Gastrodon
+|-start|p2a: Gastrodon|stockpile1
+|-boost|p2a: Gastrodon|def|1
+|-boost|p2a: Gastrodon|spd|1
+|
+|-damage|p2a: Gastrodon|373\/426 brn|[from] brn
+|turn|2
+|
+|switch|p1a: Flame Man|Charizard, M|297\/297
+|move|p2a: Gastrodon|Stockpile|p2a: Gastrodon
+|-start|p2a: Gastrodon|stockpile2
+|-boost|p2a: Gastrodon|def|1
+|-boost|p2a: Gastrodon|spd|1
+|
+|-heal|p2a: Gastrodon|399\/426 brn|[from] item: Leftovers
+|-damage|p2a: Gastrodon|346\/426 brn|[from] brn
+|turn|3
+|
+|-formechange|p1a: Flame Man|Charizard-Mega-Y
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p1a: Flame Man|Solar Beam|p2a: Gastrodon|[still]
+|-prepare|p1a: Flame Man|Solar Beam|p2a: Gastrodon
+|-anim|p1a: Flame Man|Solar Beam|p2a: Gastrodon
+|-supereffective|p2a: Gastrodon
+|-damage|p2a: Gastrodon|0 fnt
+|faint|p2a: Gastrodon
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p2a: Porygon2|Porygon2|311\/311
+|-ability|p2a: Porygon2|Drought|[from] ability: Trace|[of] p1a: Flame Man
+|turn|4
+|
+|move|p1a: Flame Man|Focus Blast|p2a: Porygon2
+|-supereffective|p2a: Porygon2
+|-damage|p2a: Porygon2|113\/311
+|move|p2a: Porygon2|Thunder Wave|p1a: Flame Man
+|-status|p1a: Flame Man|par
+|
+|-weather|SunnyDay|[upkeep]
+|turn|5
+|
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|269\/311
+|cant|p1a: Flame Man|par
+|
+|-weather|SunnyDay|[upkeep]
+|turn|6
+|
+|move|p2a: Porygon2|Charge Beam|p1a: Flame Man
+|-supereffective|p1a: Flame Man
+|-damage|p1a: Flame Man|217\/297 par
+|-boost|p2a: Porygon2|spa|1
+|move|p1a: Flame Man|Flamethrower|p2a: Porygon2
+|-damage|p2a: Porygon2|109\/311
+|
+|-weather|SunnyDay|[upkeep]
+|turn|7
+|
+|switch|p1a: Drill Man|Excadrill, M|405\/405
+|-ability|p1a: Drill Man|Mold Breaker
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|265\/311
+|
+|-weather|none
+|turn|8
+|
+|move|p1a: Drill Man|Stealth Rock|p2a: Porygon2
+|-sidestart|p2: renzoslash|move: Stealth Rock
+|move|p2a: Porygon2|Ice Beam|p1a: Drill Man
+|-damage|p1a: Drill Man|287\/405
+|
+|-heal|p1a: Drill Man|312\/405|[from] item: Leftovers
+|turn|9
+|
+|move|p1a: Drill Man|Iron Head|p2a: Porygon2
+|-damage|p2a: Porygon2|183\/311
+|move|p2a: Porygon2|Ice Beam|p1a: Drill Man
+|-damage|p1a: Drill Man|182\/405
+|-status|p1a: Drill Man|frz
+|
+|-heal|p1a: Drill Man|207\/405 frz|[from] item: Leftovers
+|turn|10
+|
+|cant|p1a: Drill Man|frz
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|311\/311
+|
+|-heal|p1a: Drill Man|232\/405 frz|[from] item: Leftovers
+|turn|11
+|
+|cant|p1a: Drill Man|frz
+|move|p2a: Porygon2|Ice Beam|p1a: Drill Man
+|-damage|p1a: Drill Man|117\/405 frz
+|
+|-heal|p1a: Drill Man|142\/405 frz|[from] item: Leftovers
+|turn|12
+|
+|cant|p1a: Drill Man|frz
+|move|p2a: Porygon2|Ice Beam|p1a: Drill Man
+|-damage|p1a: Drill Man|8\/405 frz
+|
+|-heal|p1a: Drill Man|33\/405 frz|[from] item: Leftovers
+|turn|13
+|
+|cant|p1a: Drill Man|frz
+|move|p2a: Porygon2|Ice Beam|p1a: Drill Man
+|-damage|p1a: Drill Man|0 fnt
+|faint|p1a: Drill Man
+|
+|
+|switch|p1a: Sword Man|Aegislash, M|324\/324
+|turn|14
+|
+|move|p2a: Porygon2|Thunder Wave|p1a: Sword Man
+|-status|p1a: Sword Man|par
+|-formechange|p1a: Sword Man|Aegislash-Blade
+|move|p1a: Sword Man|Sacred Sword|p2a: Porygon2
+|-supereffective|p2a: Porygon2
+|-damage|p2a: Porygon2|175\/311
+|
+|turn|15
+|
+|-formechange|p1a: Sword Man|Aegislash
+|move|p1a: Sword Man|King's Shield|p1a: Sword Man
+|-singleturn|p1a: Sword Man|Protect
+|move|p2a: Porygon2|Charge Beam|p1a: Sword Man
+|-activate|p1a: Sword Man|Protect
+|
+|turn|16
+|
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|311\/311
+|-formechange|p1a: Sword Man|Aegislash-Blade
+|cant|p1a: Sword Man|par
+|
+|turn|17
+|
+|-formechange|p1a: Sword Man|Aegislash
+|cant|p1a: Sword Man|par
+|move|p2a: Porygon2|Charge Beam|p1a: Sword Man
+|-damage|p1a: Sword Man|278\/324 par
+|-boost|p2a: Porygon2|spa|1
+|
+|turn|18
+|
+|move|p2a: Porygon2|Charge Beam|p1a: Sword Man|[miss]
+|-miss|p2a: Porygon2|p1a: Sword Man
+|-formechange|p1a: Sword Man|Aegislash-Blade
+|move|p1a: Sword Man|Sacred Sword|p2a: Porygon2
+|-supereffective|p2a: Porygon2
+|-damage|p2a: Porygon2|167\/311
+|
+|turn|19
+|
+|-formechange|p1a: Sword Man|Aegislash
+|move|p1a: Sword Man|King's Shield|p1a: Sword Man
+|-singleturn|p1a: Sword Man|Protect
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|311\/311
+|
+|turn|20
+|
+|move|p2a: Porygon2|Charge Beam|p1a: Sword Man
+|-damage|p1a: Sword Man|215\/324 par
+|-boost|p2a: Porygon2|spa|1
+|-formechange|p1a: Sword Man|Aegislash-Blade
+|move|p1a: Sword Man|Sacred Sword|p2a: Porygon2
+|-supereffective|p2a: Porygon2
+|-damage|p2a: Porygon2|169\/311
+|
+|turn|21
+|
+|switch|p1a: Yellow Devil|Dragonite, M|386\/386
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|311\/311
+|
+|turn|22
+|
+|move|p1a: Yellow Devil|Dragon Dance|p1a: Yellow Devil
+|-boost|p1a: Yellow Devil|atk|1
+|-boost|p1a: Yellow Devil|spe|1
+|move|p2a: Porygon2|Ice Beam|p1a: Yellow Devil
+|-supereffective|p1a: Yellow Devil
+|-damage|p1a: Yellow Devil|0 fnt
+|faint|p1a: Yellow Devil
+|
+|
+|switch|p1a: Elec Man|Rotom-Wash|304\/304
+|turn|23
+|chat|BenTheDemon|Shit...
+|
+|move|p1a: Elec Man|Will-O-Wisp|p2a: Porygon2
+|-status|p2a: Porygon2|brn
+|move|p2a: Porygon2|Charge Beam|p1a: Elec Man
+|-damage|p1a: Elec Man|207\/304
+|-boost|p2a: Porygon2|spa|1
+|
+|-heal|p1a: Elec Man|226\/304|[from] item: Leftovers
+|-damage|p2a: Porygon2|273\/311 brn|[from] brn
+|turn|24
+|
+|move|p1a: Elec Man|Hydro Pump|p2a: Porygon2|[miss]
+|-miss|p1a: Elec Man|p2a: Porygon2
+|move|p2a: Porygon2|Charge Beam|p1a: Elec Man
+|-damage|p1a: Elec Man|97\/304
+|-boost|p2a: Porygon2|spa|1
+|
+|-heal|p1a: Elec Man|116\/304|[from] item: Leftovers
+|-damage|p2a: Porygon2|235\/311 brn|[from] brn
+|turn|25
+|
+|move|p1a: Elec Man|Hydro Pump|p2a: Porygon2
+|-damage|p2a: Porygon2|144\/311 brn
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|300\/311 brn
+|
+|-heal|p1a: Elec Man|135\/304|[from] item: Leftovers
+|-damage|p2a: Porygon2|262\/311 brn|[from] brn
+|turn|26
+|
+|switch|p1a: Shadow Man|Gengar, M|262\/262
+|move|p2a: Porygon2|Charge Beam|p1a: Shadow Man
+|-damage|p1a: Shadow Man|72\/262
+|-boost|p2a: Porygon2|spa|1
+|
+|-damage|p2a: Porygon2|224\/311 brn|[from] brn
+|turn|27
+|
+|move|p1a: Shadow Man|Destiny Bond|p1a: Shadow Man
+|-singlemove|p1a: Shadow Man|Destiny Bond
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|311\/311 brn
+|
+|-damage|p2a: Porygon2|273\/311 brn|[from] brn
+|turn|28
+|
+|move|p1a: Shadow Man|Destiny Bond|p1a: Shadow Man
+|-singlemove|p1a: Shadow Man|Destiny Bond
+|move|p2a: Porygon2|Thunder Wave|p1a: Shadow Man
+|-status|p1a: Shadow Man|par
+|
+|-damage|p2a: Porygon2|235\/311 brn|[from] brn
+|turn|29
+|
+|move|p2a: Porygon2|Thunder Wave|p1a: Shadow Man
+|-fail|p1a: Shadow Man|par
+|move|p1a: Shadow Man|Destiny Bond|p1a: Shadow Man
+|-singlemove|p1a: Shadow Man|Destiny Bond
+|
+|-damage|p2a: Porygon2|197\/311 brn|[from] brn
+|turn|30
+|
+|move|p2a: Porygon2|Thunder Wave|p1a: Shadow Man
+|-fail|p1a: Shadow Man|par
+|move|p1a: Shadow Man|Destiny Bond|p1a: Shadow Man
+|-singlemove|p1a: Shadow Man|Destiny Bond
+|
+|-damage|p2a: Porygon2|159\/311 brn|[from] brn
+|turn|31
+|
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|311\/311 brn
+|move|p1a: Shadow Man|Taunt|p2a: Porygon2
+|-start|p2a: Porygon2|move: Taunt
+|
+|-damage|p2a: Porygon2|273\/311 brn|[from] brn
+|turn|32
+|
+|move|p2a: Porygon2|Ice Beam|p1a: Shadow Man
+|-damage|p1a: Shadow Man|0 fnt
+|faint|p1a: Shadow Man
+|
+|-damage|p2a: Porygon2|235\/311 brn|[from] brn
+|chat|BenTheDemon|Fuck.
+|
+|switch|p1a: Flame Man|Charizard, M|217\/297 par
+|-formechange|p1a: Flame Man|Charizard-Mega-Y
+|-weather|SunnyDay
+|turn|33
+|
+|move|p2a: Porygon2|Charge Beam|p1a: Flame Man
+|-supereffective|p1a: Flame Man
+|-damage|p1a: Flame Man|0 fnt
+|faint|p1a: Flame Man
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p2a: Porygon2|197\/311 brn|[from] brn
+|-message|BenTheDemon forfeited.
+|
+|win|renzoslash
+|raw|Ladder updating...
+|leave|BenTheDemon
+|player|p1
+|raw|BenTheDemon's rating: 1691 &rarr; <strong>1668<\/strong><br \/>(-23 for losing)
+|raw|renzoslash's rating: 1631 &rarr; <strong>1655<\/strong><br \/>(+24 for winning)
+|join|hipervinculo
+|join|SometimesC:
+|leave|renzoslash
+|player|p2
+|join|CarlosAgmez
+|leave|hipervinculo
+|leave|SometimesC:
+|join|SilverPory

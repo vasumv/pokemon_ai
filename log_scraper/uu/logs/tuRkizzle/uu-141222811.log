@@ -1,0 +1,620 @@
+|join|tuRkizzle
+|join|DJarr216
+|player|p1|tuRkizzle|115
+|player|p2|DJarr216|237
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Lucario, F
+|poke|p1|Suicune
+|poke|p1|Snorlax, M
+|poke|p1|Darmanitan, M
+|poke|p1|Hydreigon, M
+|poke|p1|Mew
+|poke|p2|Absol, M, shiny
+|poke|p2|Chesnaught, M
+|poke|p2|Darmanitan, F
+|poke|p2|Milotic, M
+|poke|p2|Porygon2
+|poke|p2|Noivern, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Darmanitan|Darmanitan, M|351\/351
+|switch|p2a: Porygon2|Porygon2|373\/373
+|-ability|p2a: Porygon2|Sheer Force|[from] ability: Trace|[of] p1a: Darmanitan
+|turn|1
+|
+|move|p1a: Darmanitan|U-turn|p2a: Porygon2
+|-damage|p2a: Porygon2|298\/373
+|
+|switch|p1a: Snorlax|Snorlax, M|524\/524
+|move|p2a: Porygon2|Tri Attack|p1a: Snorlax
+|-damage|p1a: Snorlax|409\/524
+|
+|-heal|p1a: Snorlax|441\/524|[from] item: Leftovers
+|turn|2
+|
+|switch|p2a: Chesnaught|Chesnaught, M|380\/380
+|move|p1a: Snorlax|Curse|p1a: Snorlax
+|-boost|p1a: Snorlax|atk|1
+|-boost|p1a: Snorlax|def|1
+|-unboost|p1a: Snorlax|spe|1
+|
+|-heal|p1a: Snorlax|473\/524|[from] item: Leftovers
+|turn|3
+|
+|move|p2a: Chesnaught|Leech Seed|p1a: Snorlax
+|-start|p1a: Snorlax|move: Leech Seed
+|move|p1a: Snorlax|Body Slam|p2a: Chesnaught
+|-damage|p2a: Chesnaught|278\/380
+|-status|p2a: Chesnaught|par
+|
+|-heal|p1a: Snorlax|505\/524|[from] item: Leftovers
+|-heal|p2a: Chesnaught|301\/380 par|[from] item: Leftovers
+|-damage|p1a: Snorlax|440\/524|[from] Leech Seed|[of] p2a: Chesnaught
+|-heal|p2a: Chesnaught|366\/380 par|[silent]
+|turn|4
+|
+|switch|p1a: Mew|Mew|404\/404
+|cant|p2a: Chesnaught|par
+|
+|-heal|p2a: Chesnaught|380\/380 par|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Darmanitan|Darmanitan, F|351\/351
+|move|p1a: Mew|Knock Off|p2a: Darmanitan
+|-damage|p2a: Darmanitan|217\/351
+|-enditem|p2a: Darmanitan|Choice Scarf|[from] move: Knock Off|[of] p1a: Mew
+|
+|turn|6
+|
+|move|p2a: Darmanitan|U-turn|p1a: Mew
+|-supereffective|p1a: Mew
+|-damage|p1a: Mew|220\/404
+|
+|switch|p2a: Absol|Absol, M, shiny|271\/271
+|move|p1a: Mew|Roost|p1a: Mew
+|-heal|p1a: Mew|404\/404
+|
+|turn|7
+|
+|detailschange|p2a: Absol|Absol-Mega, M, shiny
+|message|Absol has Mega Evolved into Mega Absol!
+|move|p2a: Absol|Hone Claws|p2a: Absol
+|-boost|p2a: Absol|atk|1
+|-boost|p2a: Absol|accuracy|1
+|move|p1a: Mew|Will-O-Wisp|p2a: Absol
+|move|p2a: Absol|Will-O-Wisp|p1a: Mew|[from]Magic Bounce
+|-status|p1a: Mew|brn
+|-status|p2a: Absol|brn
+|
+|-damage|p2a: Absol|238\/271 brn|[from] brn
+|-damage|p1a: Mew|354\/404 brn|[from] brn
+|turn|8
+|
+|switch|p1a: Suicune|Suicune|404\/404
+|-ability|p1a: Suicune|Pressure
+|move|p2a: Absol|Hone Claws|p2a: Absol
+|-boost|p2a: Absol|atk|1
+|-boost|p2a: Absol|accuracy|1
+|
+|-damage|p2a: Absol|205\/271 brn|[from] brn
+|turn|9
+|
+|move|p2a: Absol|Blizzard|p1a: Suicune
+|-crit|p1a: Suicune
+|-resisted|p1a: Suicune
+|-damage|p1a: Suicune|338\/404
+|move|p1a: Suicune|Calm Mind|p1a: Suicune
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|
+|-heal|p1a: Suicune|363\/404|[from] item: Leftovers
+|-damage|p2a: Absol|172\/271 brn|[from] brn
+|turn|10
+|
+|switch|p2a: Chesnaught|Chesnaught, M|380\/380 par
+|move|p1a: Suicune|Calm Mind|p1a: Suicune
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|
+|-heal|p1a: Suicune|388\/404|[from] item: Leftovers
+|turn|11
+|
+|move|p1a: Suicune|Scald|p2a: Chesnaught
+|-resisted|p2a: Chesnaught
+|-damage|p2a: Chesnaught|269\/380 par
+|move|p2a: Chesnaught|Leech Seed|p1a: Suicune
+|-start|p1a: Suicune|move: Leech Seed
+|
+|-heal|p1a: Suicune|404\/404|[from] item: Leftovers
+|-heal|p2a: Chesnaught|292\/380 par|[from] item: Leftovers
+|-damage|p1a: Suicune|354\/404|[from] Leech Seed|[of] p2a: Chesnaught
+|-heal|p2a: Chesnaught|342\/380 par|[silent]
+|turn|12
+|
+|move|p1a: Suicune|Calm Mind|p1a: Suicune
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|move|p2a: Chesnaught|Spikes|p1a: Suicune
+|-sidestart|p1: tuRkizzle|Spikes
+|
+|-heal|p1a: Suicune|379\/404|[from] item: Leftovers
+|-heal|p2a: Chesnaught|365\/380 par|[from] item: Leftovers
+|-damage|p1a: Suicune|329\/404|[from] Leech Seed|[of] p2a: Chesnaught
+|-heal|p2a: Chesnaught|380\/380 par|[silent]
+|turn|13
+|
+|move|p1a: Suicune|Calm Mind|p1a: Suicune
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|move|p2a: Chesnaught|Spikes|p1a: Suicune
+|-sidestart|p1: tuRkizzle|Spikes
+|
+|-heal|p1a: Suicune|354\/404|[from] item: Leftovers
+|-damage|p1a: Suicune|304\/404|[from] Leech Seed|[of] p2a: Chesnaught
+|turn|14
+|
+|move|p1a: Suicune|Scald|p2a: Chesnaught
+|-resisted|p2a: Chesnaught
+|-damage|p2a: Chesnaught|228\/380 par
+|move|p2a: Chesnaught|Hammer Arm|p1a: Suicune|[miss]
+|-miss|p2a: Chesnaught|p1a: Suicune
+|
+|-heal|p1a: Suicune|329\/404|[from] item: Leftovers
+|-heal|p2a: Chesnaught|251\/380 par|[from] item: Leftovers
+|-damage|p1a: Suicune|279\/404|[from] Leech Seed|[of] p2a: Chesnaught
+|-heal|p2a: Chesnaught|301\/380 par|[silent]
+|turn|15
+|
+|move|p1a: Suicune|Scald|p2a: Chesnaught
+|-resisted|p2a: Chesnaught
+|-damage|p2a: Chesnaught|140\/380 par
+|move|p2a: Chesnaught|Hammer Arm|p1a: Suicune
+|-damage|p1a: Suicune|189\/404
+|-unboost|p2a: Chesnaught|spe|1
+|
+|-heal|p1a: Suicune|214\/404|[from] item: Leftovers
+|-heal|p2a: Chesnaught|163\/380 par|[from] item: Leftovers
+|-damage|p1a: Suicune|164\/404|[from] Leech Seed|[of] p2a: Chesnaught
+|-heal|p2a: Chesnaught|213\/380 par|[silent]
+|turn|16
+|
+|cant|p2a: Chesnaught|par
+|move|p1a: Suicune|Scald|p2a: Chesnaught
+|-resisted|p2a: Chesnaught
+|-damage|p2a: Chesnaught|42\/380 par
+|
+|-heal|p1a: Suicune|189\/404|[from] item: Leftovers
+|-heal|p2a: Chesnaught|65\/380 par|[from] item: Leftovers
+|-damage|p1a: Suicune|139\/404|[from] Leech Seed|[of] p2a: Chesnaught
+|-heal|p2a: Chesnaught|115\/380 par|[silent]
+|turn|17
+|
+|move|p2a: Chesnaught|Spiky Shield|p2a: Chesnaught
+|-singleturn|p2a: Chesnaught|move: Protect
+|move|p1a: Suicune|Scald|p2a: Chesnaught
+|-activate|p2a: Chesnaught|move: Protect
+|
+|-heal|p1a: Suicune|164\/404|[from] item: Leftovers
+|-heal|p2a: Chesnaught|138\/380 par|[from] item: Leftovers
+|-damage|p1a: Suicune|114\/404|[from] Leech Seed|[of] p2a: Chesnaught
+|-heal|p2a: Chesnaught|188\/380 par|[silent]
+|turn|18
+|
+|switch|p2a: Milotic|Milotic, M|394\/394
+|move|p1a: Suicune|Rest|p1a: Suicune
+|-status|p1a: Suicune|slp
+|-heal|p1a: Suicune|404\/404 slp|[silent]
+|-status|p1a: Suicune|slp|[from] move: Rest
+|
+|-damage|p1a: Suicune|354\/404 slp|[from] Leech Seed|[of] p2a: Milotic
+|turn|19
+|
+|cant|p1a: Suicune|slp
+|move|p1a: Suicune|Sleep Talk|p1a: Suicune
+|move|p1a: Suicune|Calm Mind|p1a: Suicune|[from]Sleep Talk
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|move|p2a: Milotic|Mirror Coat|p1a: Suicune
+|-fail|p1a: Suicune
+|
+|-heal|p1a: Suicune|379\/404 slp|[from] item: Leftovers
+|-damage|p1a: Suicune|329\/404 slp|[from] Leech Seed|[of] p2a: Milotic
+|turn|20
+|
+|cant|p1a: Suicune|slp
+|move|p1a: Suicune|Sleep Talk|p1a: Suicune
+|move|p1a: Suicune|Calm Mind|p1a: Suicune|[from]Sleep Talk
+|-boost|p1a: Suicune|spa|1
+|-boost|p1a: Suicune|spd|1
+|move|p2a: Milotic|Mirror Coat|p1a: Suicune
+|-fail|p1a: Suicune
+|
+|-heal|p1a: Suicune|354\/404 slp|[from] item: Leftovers
+|-damage|p1a: Suicune|304\/404 slp|[from] Leech Seed|[of] p2a: Milotic
+|turn|21
+|
+|-curestatus|p1a: Suicune|slp
+|move|p1a: Suicune|Scald|p2a: Milotic
+|-resisted|p2a: Milotic
+|-damage|p2a: Milotic|295\/394
+|move|p2a: Milotic|Mirror Coat|p1a: Suicune
+|-damage|p1a: Suicune|106\/404
+|
+|-heal|p1a: Suicune|131\/404|[from] item: Leftovers
+|-heal|p2a: Milotic|319\/394|[from] item: Leftovers
+|-damage|p1a: Suicune|81\/404|[from] Leech Seed|[of] p2a: Milotic
+|-heal|p2a: Milotic|369\/394|[silent]
+|turn|22
+|
+|move|p1a: Suicune|Rest|p1a: Suicune
+|-status|p1a: Suicune|slp
+|-heal|p1a: Suicune|404\/404 slp|[silent]
+|-status|p1a: Suicune|slp|[from] move: Rest
+|move|p2a: Milotic|Scald|p1a: Suicune
+|-resisted|p1a: Suicune
+|-damage|p1a: Suicune|393\/404 slp
+|
+|-heal|p1a: Suicune|404\/404 slp|[from] item: Leftovers
+|-heal|p2a: Milotic|393\/394|[from] item: Leftovers
+|-damage|p1a: Suicune|354\/404 slp|[from] Leech Seed|[of] p2a: Milotic
+|-heal|p2a: Milotic|394\/394|[silent]
+|turn|23
+|
+|switch|p2a: Noivern|Noivern, M|311\/311
+|cant|p1a: Suicune|slp
+|move|p1a: Suicune|Sleep Talk|p1a: Suicune
+|move|p1a: Suicune|Calm Mind|p1a: Suicune|[from]Sleep Talk
+|-fail|p1a: Suicune
+|
+|-heal|p1a: Suicune|379\/404 slp|[from] item: Leftovers
+|-damage|p1a: Suicune|329\/404 slp|[from] Leech Seed|[of] p2a: Noivern
+|turn|24
+|
+|move|p2a: Noivern|Switcheroo|p1a: Suicune
+|-activate|p2a: Noivern|move: Trick|[of] p1a: Suicune
+|-item|p1a: Suicune|Choice Specs|[from] Trick
+|-item|p2a: Noivern|Leftovers|[from] Trick
+|cant|p1a: Suicune|slp
+|
+|-damage|p1a: Suicune|279\/404 slp|[from] Leech Seed|[of] p2a: Noivern
+|turn|25
+|
+|switch|p2a: Milotic|Milotic, M|394\/394
+|-curestatus|p1a: Suicune|slp
+|move|p1a: Suicune|Scald|p2a: Milotic
+|-resisted|p2a: Milotic
+|-damage|p2a: Milotic|239\/394
+|
+|-heal|p2a: Milotic|263\/394|[from] item: Leftovers
+|-damage|p1a: Suicune|229\/404|[from] Leech Seed|[of] p2a: Milotic
+|-heal|p2a: Milotic|313\/394|[silent]
+|turn|26
+|
+|move|p1a: Suicune|Scald|p2a: Milotic
+|-resisted|p2a: Milotic
+|-damage|p2a: Milotic|163\/394
+|move|p2a: Milotic|Mirror Coat|p1a: Suicune
+|-damage|p1a: Suicune|0 fnt
+|faint|p1a: Suicune
+|
+|-heal|p2a: Milotic|187\/394|[from] item: Leftovers
+|
+|switch|p1a: Hydreigon|Hydreigon, M|325\/325
+|turn|27
+|
+|move|p1a: Hydreigon|Draco Meteor|p2a: Milotic
+|-damage|p2a: Milotic|0 fnt
+|-unboost|p1a: Hydreigon|spa|2
+|faint|p2a: Milotic
+|
+|
+|switch|p2a: Noivern|Noivern, M|311\/311
+|turn|28
+|
+|switch|p1a: Mew|Mew|354\/404 brn
+|-damage|p1a: Mew|287\/404 brn|[from] Spikes
+|move|p2a: Noivern|Draco Meteor|p1a: Mew
+|-damage|p1a: Mew|160\/404 brn
+|-unboost|p2a: Noivern|spa|2
+|
+|-heal|p1a: Mew|185\/404 brn|[from] item: Leftovers
+|-damage|p1a: Mew|135\/404 brn|[from] brn
+|turn|29
+|
+|move|p2a: Noivern|Hurricane|p1a: Mew|[miss]
+|-miss|p2a: Noivern|p1a: Mew
+|move|p1a: Mew|Roost|p1a: Mew
+|-heal|p1a: Mew|337\/404 brn
+|
+|-heal|p1a: Mew|362\/404 brn|[from] item: Leftovers
+|-damage|p1a: Mew|312\/404 brn|[from] brn
+|turn|30
+|
+|switch|p2a: Darmanitan|Darmanitan, F|217\/351
+|move|p1a: Mew|Will-O-Wisp|p2a: Darmanitan
+|-fail|p2a: Darmanitan
+|
+|-heal|p1a: Mew|337\/404 brn|[from] item: Leftovers
+|-damage|p1a: Mew|287\/404 brn|[from] brn
+|turn|31
+|
+|move|p2a: Darmanitan|U-turn|p1a: Mew
+|-supereffective|p1a: Mew
+|-damage|p1a: Mew|107\/404 brn
+|
+|switch|p2a: Absol|Absol-Mega, M, shiny|172\/271 brn
+|move|p1a: Mew|Defog|p2a: Absol
+|move|p2a: Absol|Defog|p1a: Mew|[from]Magic Bounce
+|-unboost|p1a: Mew|evasion|1
+|-sideend|p1: tuRkizzle|Spikes|[from] move: Defog|[of] p1a: Mew
+|
+|-heal|p1a: Mew|132\/404 brn|[from] item: Leftovers
+|-damage|p2a: Absol|139\/271 brn|[from] brn
+|-damage|p1a: Mew|82\/404 brn|[from] brn
+|turn|32
+|
+|move|p2a: Absol|Blizzard|p1a: Mew
+|-damage|p1a: Mew|4\/404 brn
+|move|p1a: Mew|Roost|p1a: Mew
+|-heal|p1a: Mew|206\/404 brn
+|
+|-heal|p1a: Mew|231\/404 brn|[from] item: Leftovers
+|-damage|p2a: Absol|106\/271 brn|[from] brn
+|-damage|p1a: Mew|181\/404 brn|[from] brn
+|turn|33
+|
+|move|p2a: Absol|Play Rough|p1a: Mew
+|-damage|p1a: Mew|119\/404 brn
+|move|p1a: Mew|Roost|p1a: Mew
+|-heal|p1a: Mew|321\/404 brn
+|
+|-heal|p1a: Mew|346\/404 brn|[from] item: Leftovers
+|-damage|p2a: Absol|73\/271 brn|[from] brn
+|-damage|p1a: Mew|296\/404 brn|[from] brn
+|turn|34
+|
+|move|p2a: Absol|Blizzard|p1a: Mew
+|-damage|p1a: Mew|224\/404 brn
+|move|p1a: Mew|Roost|p1a: Mew
+|-heal|p1a: Mew|404\/404 brn
+|
+|-damage|p2a: Absol|40\/271 brn|[from] brn
+|-damage|p1a: Mew|354\/404 brn|[from] brn
+|turn|35
+|
+|switch|p2a: Darmanitan|Darmanitan, F|217\/351
+|move|p1a: Mew|Knock Off|p2a: Darmanitan
+|-crit|p2a: Darmanitan
+|-damage|p2a: Darmanitan|152\/351
+|
+|-heal|p1a: Mew|379\/404 brn|[from] item: Leftovers
+|-damage|p1a: Mew|329\/404 brn|[from] brn
+|turn|36
+|
+|move|p2a: Darmanitan|Flare Blitz|p1a: Mew
+|-damage|p1a: Mew|16\/404 brn
+|-damage|p2a: Darmanitan|49\/351|[from] recoil|[of] p1a: Mew
+|move|p1a: Mew|Knock Off|p2a: Darmanitan
+|-damage|p2a: Darmanitan|9\/351
+|
+|-heal|p1a: Mew|41\/404 brn|[from] item: Leftovers
+|-damage|p1a: Mew|0 fnt|[from] brn
+|faint|p1a: Mew
+|
+|switch|p1a: Darmanitan|Darmanitan, M|351\/351
+|turn|37
+|
+|move|p1a: Darmanitan|U-turn|p2a: Darmanitan
+|-resisted|p2a: Darmanitan
+|-damage|p2a: Darmanitan|0 fnt
+|faint|p2a: Darmanitan
+|
+|switch|p1a: Hydreigon|Hydreigon, M|325\/325
+|
+|
+|switch|p2a: Noivern|Noivern, M|311\/311
+|turn|38
+|
+|move|p2a: Noivern|Draco Meteor|p1a: Hydreigon
+|-supereffective|p1a: Hydreigon
+|-damage|p1a: Hydreigon|0 fnt
+|-unboost|p2a: Noivern|spa|2
+|faint|p1a: Hydreigon
+|
+|
+|switch|p1a: Snorlax|Snorlax, M|440\/524
+|turn|39
+|
+|switch|p2a: Chesnaught|Chesnaught, M|188\/380 par
+|move|p1a: Snorlax|Curse|p1a: Snorlax
+|-boost|p1a: Snorlax|atk|1
+|-boost|p1a: Snorlax|def|1
+|-unboost|p1a: Snorlax|spe|1
+|
+|-heal|p1a: Snorlax|472\/524|[from] item: Leftovers
+|-heal|p2a: Chesnaught|211\/380 par|[from] item: Leftovers
+|turn|40
+|
+|move|p1a: Snorlax|Body Slam|p2a: Chesnaught
+|-damage|p2a: Chesnaught|105\/380 par
+|cant|p2a: Chesnaught|par
+|
+|-heal|p1a: Snorlax|504\/524|[from] item: Leftovers
+|-heal|p2a: Chesnaught|128\/380 par|[from] item: Leftovers
+|turn|41
+|
+|move|p1a: Snorlax|Body Slam|p2a: Chesnaught
+|-damage|p2a: Chesnaught|32\/380 par
+|move|p2a: Chesnaught|Leech Seed|p1a: Snorlax
+|-start|p1a: Snorlax|move: Leech Seed
+|
+|-heal|p1a: Snorlax|524\/524|[from] item: Leftovers
+|-heal|p2a: Chesnaught|55\/380 par|[from] item: Leftovers
+|-damage|p1a: Snorlax|459\/524|[from] Leech Seed|[of] p2a: Chesnaught
+|-heal|p2a: Chesnaught|120\/380 par|[silent]
+|turn|42
+|
+|move|p1a: Snorlax|Body Slam|p2a: Chesnaught
+|-damage|p2a: Chesnaught|24\/380 par
+|move|p2a: Chesnaught|Spikes|p1a: Snorlax
+|-sidestart|p1: tuRkizzle|Spikes
+|
+|-heal|p1a: Snorlax|491\/524|[from] item: Leftovers
+|-heal|p2a: Chesnaught|47\/380 par|[from] item: Leftovers
+|-damage|p1a: Snorlax|426\/524|[from] Leech Seed|[of] p2a: Chesnaught
+|-heal|p2a: Chesnaught|112\/380 par|[silent]
+|turn|43
+|
+|move|p1a: Snorlax|Curse|p1a: Snorlax
+|-boost|p1a: Snorlax|atk|1
+|-boost|p1a: Snorlax|def|1
+|-unboost|p1a: Snorlax|spe|1
+|move|p2a: Chesnaught|Spikes|p1a: Snorlax
+|-sidestart|p1: tuRkizzle|Spikes
+|
+|-heal|p1a: Snorlax|458\/524|[from] item: Leftovers
+|-heal|p2a: Chesnaught|135\/380 par|[from] item: Leftovers
+|-damage|p1a: Snorlax|393\/524|[from] Leech Seed|[of] p2a: Chesnaught
+|-heal|p2a: Chesnaught|200\/380 par|[silent]
+|turn|44
+|
+|move|p2a: Chesnaught|Spiky Shield|p2a: Chesnaught
+|-singleturn|p2a: Chesnaught|move: Protect
+|move|p1a: Snorlax|Curse|p1a: Snorlax
+|-boost|p1a: Snorlax|atk|1
+|-boost|p1a: Snorlax|def|1
+|-unboost|p1a: Snorlax|spe|1
+|
+|-heal|p2a: Chesnaught|223\/380 par|[from] item: Leftovers
+|-heal|p1a: Snorlax|425\/524|[from] item: Leftovers
+|-damage|p1a: Snorlax|360\/524|[from] Leech Seed|[of] p2a: Chesnaught
+|-heal|p2a: Chesnaught|288\/380 par|[silent]
+|turn|45
+|
+|move|p2a: Chesnaught|Spikes|p1a: Snorlax
+|-sidestart|p1: tuRkizzle|Spikes
+|move|p1a: Snorlax|Body Slam|p2a: Chesnaught
+|-damage|p2a: Chesnaught|114\/380 par
+|
+|-heal|p2a: Chesnaught|137\/380 par|[from] item: Leftovers
+|-heal|p1a: Snorlax|392\/524|[from] item: Leftovers
+|-damage|p1a: Snorlax|327\/524|[from] Leech Seed|[of] p2a: Chesnaught
+|-heal|p2a: Chesnaught|202\/380 par|[silent]
+|turn|46
+|
+|move|p2a: Chesnaught|Hammer Arm|p1a: Snorlax
+|-supereffective|p1a: Snorlax
+|-damage|p1a: Snorlax|189\/524
+|-unboost|p2a: Chesnaught|spe|1
+|move|p1a: Snorlax|Curse|p1a: Snorlax
+|-boost|p1a: Snorlax|atk|1
+|-boost|p1a: Snorlax|def|1
+|-unboost|p1a: Snorlax|spe|1
+|
+|-heal|p1a: Snorlax|221\/524|[from] item: Leftovers
+|-heal|p2a: Chesnaught|225\/380 par|[from] item: Leftovers
+|-damage|p1a: Snorlax|156\/524|[from] Leech Seed|[of] p2a: Chesnaught
+|-heal|p2a: Chesnaught|290\/380 par|[silent]
+|turn|47
+|
+|move|p1a: Snorlax|Rest|p1a: Snorlax
+|-status|p1a: Snorlax|slp
+|-heal|p1a: Snorlax|524\/524 slp|[silent]
+|-status|p1a: Snorlax|slp|[from] move: Rest
+|move|p2a: Chesnaught|Hammer Arm|p1a: Snorlax|[miss]
+|-miss|p2a: Chesnaught|p1a: Snorlax
+|
+|-heal|p2a: Chesnaught|313\/380 par|[from] item: Leftovers
+|-damage|p1a: Snorlax|459\/524 slp|[from] Leech Seed|[of] p2a: Chesnaught
+|-heal|p2a: Chesnaught|378\/380 par|[silent]
+|turn|48
+|
+|cant|p1a: Snorlax|slp
+|move|p1a: Snorlax|Sleep Talk|p1a: Snorlax
+|move|p1a: Snorlax|Curse|p1a: Snorlax|[from]Sleep Talk
+|-boost|p1a: Snorlax|atk|1
+|-boost|p1a: Snorlax|def|1
+|-unboost|p1a: Snorlax|spe|1
+|move|p2a: Chesnaught|Hammer Arm|p1a: Snorlax
+|-crit|p1a: Snorlax
+|-supereffective|p1a: Snorlax
+|-damage|p1a: Snorlax|0 fnt
+|-unboost|p2a: Chesnaught|spe|1
+|faint|p1a: Snorlax
+|
+|-heal|p2a: Chesnaught|380\/380 par|[from] item: Leftovers
+|
+|switch|p1a: Darmanitan|Darmanitan, M|351\/351
+|-damage|p1a: Darmanitan|264\/351|[from] Spikes
+|turn|49
+|
+|cant|p2a: Chesnaught|par
+|move|p1a: Darmanitan|Flare Blitz|p2a: Chesnaught
+|-supereffective|p2a: Chesnaught
+|-damage|p2a: Chesnaught|0 fnt
+|-damage|p1a: Darmanitan|139\/351|[from] recoil|[of] p2a: Chesnaught
+|faint|p2a: Chesnaught
+|
+|
+|switch|p2a: Absol|Absol-Mega, M, shiny|40\/271 brn
+|turn|50
+|
+|switch|p1a: Lucario|Lucario, F|281\/281
+|-damage|p1a: Lucario|211\/281|[from] Spikes
+|move|p2a: Absol|Sucker Punch|p1a: Lucario
+|-fail|p1a: Lucario
+|
+|-damage|p2a: Absol|7\/271 brn|[from] brn
+|turn|51
+|
+|move|p1a: Lucario|Extreme Speed|p2a: Absol
+|-damage|p2a: Absol|0 fnt
+|-damage|p1a: Lucario|183\/281|[from] item: Life Orb
+|faint|p2a: Absol
+|
+|
+|switch|p2a: Noivern|Noivern, M|311\/311
+|turn|52
+|
+|move|p1a: Lucario|Extreme Speed|p2a: Noivern
+|-damage|p2a: Noivern|182\/311
+|-damage|p1a: Lucario|155\/281|[from] item: Life Orb
+|move|p2a: Noivern|Flamethrower|p1a: Lucario
+|-supereffective|p1a: Lucario
+|-damage|p1a: Lucario|0 fnt
+|faint|p1a: Lucario
+|
+|-heal|p2a: Noivern|201\/311|[from] item: Leftovers
+|
+|switch|p1a: Darmanitan|Darmanitan, M|139\/351
+|-damage|p1a: Darmanitan|52\/351|[from] Spikes
+|turn|53
+|
+|move|p1a: Darmanitan|Flare Blitz|p2a: Noivern
+|-resisted|p2a: Noivern
+|-damage|p2a: Noivern|11\/311
+|-damage|p1a: Darmanitan|0 fnt|[from] recoil|[of] p2a: Noivern
+|faint|p1a: Darmanitan
+|
+|win|DJarr216
+|raw|Ladder updating...
+|raw|tuRkizzle's rating: 1528 &rarr; <strong>1502<\/strong><br \/>(-26 for losing)
+|raw|DJarr216's rating: 1416 &rarr; <strong>1442<\/strong><br \/>(+26 for winning)
+|chat|tuRkizzle|gg
+|chat|DJarr216|gg
+|leave|tuRkizzle
+|player|p1

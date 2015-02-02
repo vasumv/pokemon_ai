@@ -1,0 +1,288 @@
+|join|too much water
+|join|Mliok
+|player|p1|too much water|265
+|player|p2|Mliok|2
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Doublade, F
+|poke|p1|Ninjask, M
+|poke|p1|Altaria, M
+|poke|p1|Swampert, M
+|poke|p1|Milotic, M
+|poke|p1|Rotom-Heat
+|poke|p2|Sceptile, M
+|poke|p2|Empoleon, M
+|poke|p2|Chandelure, M
+|poke|p2|Florges, F
+|poke|p2|Gligar, F
+|poke|p2|Haxorus, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Rotom-Heat|Rotom-Heat|303\/303
+|switch|p2a: Haxorus|Haxorus, F|294\/294
+|-ability|p2a: Haxorus|Mold Breaker
+|turn|1
+|
+|move|p2a: Haxorus|Earthquake|p1a: Rotom-Heat
+|-supereffective|p1a: Rotom-Heat
+|-damage|p1a: Rotom-Heat|0 fnt
+|-damage|p2a: Haxorus|265\/294|[from] item: Life Orb
+|faint|p1a: Rotom-Heat
+|
+|
+|switch|p1a: Ninjask|Ninjask, M|325\/325
+|turn|2
+|
+|move|p1a: Ninjask|Substitute|p1a: Ninjask
+|-start|p1a: Ninjask|Substitute
+|-damage|p1a: Ninjask|244\/325
+|move|p2a: Haxorus|Dragon Dance|p2a: Haxorus
+|-boost|p2a: Haxorus|atk|1
+|-boost|p2a: Haxorus|spe|1
+|
+|-heal|p1a: Ninjask|264\/325|[from] item: Leftovers
+|-boost|p1a: Ninjask|spe|1|[from] ability: Speed Boost
+|turn|3
+|
+|move|p1a: Ninjask|Protect|p1a: Ninjask
+|-singleturn|p1a: Ninjask|Protect
+|move|p2a: Haxorus|Dragon Claw|p1a: Ninjask
+|-activate|p1a: Ninjask|Protect
+|
+|-heal|p1a: Ninjask|284\/325|[from] item: Leftovers
+|-boost|p1a: Ninjask|spe|1|[from] ability: Speed Boost
+|turn|4
+|
+|move|p1a: Ninjask|Baton Pass|p1a: Ninjask
+|
+|switch|p1a: Altaria|Altaria, M|349\/349
+|move|p2a: Haxorus|Dragon Claw|p1a: Altaria
+|-supereffective|p1a: Altaria
+|-end|p1a: Altaria|Substitute
+|-damage|p2a: Haxorus|236\/294|[from] item: Life Orb
+|
+|turn|5
+|
+|detailschange|p1a: Altaria|Altaria-Mega, M
+|message|Altaria has Mega Evolved into Mega Altaria!
+|move|p2a: Haxorus|Dragon Claw|p1a: Altaria
+|-immune|p1a: Altaria|[msg]
+|move|p1a: Altaria|Cotton Guard|p1a: Altaria
+|-boost|p1a: Altaria|def|3
+|
+|turn|6
+|
+|move|p2a: Haxorus|Poison Jab|p1a: Altaria
+|-supereffective|p1a: Altaria
+|-damage|p1a: Altaria|188\/349
+|-damage|p2a: Haxorus|207\/294|[from] item: Life Orb
+|move|p1a: Altaria|Return|p2a: Haxorus
+|-crit|p2a: Haxorus
+|-supereffective|p2a: Haxorus
+|-damage|p2a: Haxorus|0 fnt
+|faint|p2a: Haxorus
+|
+|
+|switch|p2a: Gligar|Gligar, F|334\/334
+|turn|7
+|
+|move|p1a: Altaria|Return|p2a: Gligar
+|-damage|p2a: Gligar|258\/334
+|move|p2a: Gligar|Toxic|p1a: Altaria
+|-status|p1a: Altaria|tox
+|
+|-damage|p1a: Altaria|167\/349 tox|[from] psn
+|turn|8
+|
+|move|p1a: Altaria|Roost|p1a: Altaria
+|-heal|p1a: Altaria|342\/349 tox
+|move|p2a: Gligar|Knock Off|p1a: Altaria
+|-resisted|p1a: Altaria
+|-damage|p1a: Altaria|335\/349 tox
+|
+|-damage|p1a: Altaria|293\/349 tox|[from] psn
+|turn|9
+|
+|switch|p1a: Swampert|Swampert, M|342\/342
+|move|p2a: Gligar|Knock Off|p1a: Swampert
+|-damage|p1a: Swampert|287\/342
+|-enditem|p1a: Swampert|Leftovers|[from] move: Knock Off|[of] p2a: Gligar
+|
+|turn|10
+|
+|move|p2a: Gligar|Toxic|p1a: Swampert|[miss]
+|-miss|p2a: Gligar|p1a: Swampert
+|move|p1a: Swampert|Ice Punch|p2a: Gligar
+|-supereffective|p2a: Gligar
+|-damage|p2a: Gligar|130\/334
+|
+|turn|11
+|
+|switch|p1a: Milotic|Milotic, M|331\/331
+|move|p2a: Gligar|Roost|p2a: Gligar
+|-heal|p2a: Gligar|297\/334
+|
+|turn|12
+|
+|switch|p2a: Florges|Florges, F|360\/360
+|move|p1a: Milotic|Ice Beam|p2a: Florges
+|-damage|p2a: Florges|303\/360
+|-damage|p1a: Milotic|298\/331|[from] item: Life Orb
+|
+|-heal|p2a: Florges|325\/360|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: Swampert|Swampert, M|287\/342
+|move|p2a: Florges|Moonblast|p1a: Swampert
+|-damage|p1a: Swampert|184\/342
+|
+|-heal|p2a: Florges|347\/360|[from] item: Leftovers
+|turn|14
+|
+|switch|p2a: Gligar|Gligar, F|297\/334
+|move|p1a: Swampert|Toxic|p2a: Gligar
+|-fail|p2a: Gligar
+|
+|turn|15
+|
+|switch|p1a: Milotic|Milotic, M|298\/331
+|move|p2a: Gligar|Toxic|p1a: Milotic|[miss]
+|-miss|p2a: Gligar|p1a: Milotic
+|
+|turn|16
+|
+|switch|p1a: Doublade|Doublade, F|322\/322
+|switch|p2a: Florges|Florges, F|347\/360
+|
+|-heal|p2a: Florges|360\/360|[from] item: Leftovers
+|turn|17
+|
+|switch|p2a: Gligar|Gligar, F|297\/334
+|move|p1a: Doublade|Swords Dance|p1a: Doublade
+|-boost|p1a: Doublade|atk|2
+|
+|turn|18
+|
+|move|p2a: Gligar|Knock Off|p1a: Doublade
+|-supereffective|p1a: Doublade
+|-damage|p1a: Doublade|262\/322
+|-enditem|p1a: Doublade|Eviolite|[from] move: Knock Off|[of] p2a: Gligar
+|move|p1a: Doublade|Swords Dance|p1a: Doublade
+|-boost|p1a: Doublade|atk|2
+|
+|turn|19
+|
+|move|p2a: Gligar|Earthquake|p1a: Doublade
+|-crit|p1a: Doublade
+|-supereffective|p1a: Doublade
+|-damage|p1a: Doublade|56\/322
+|move|p1a: Doublade|Swords Dance|p1a: Doublade
+|-boost|p1a: Doublade|atk|2
+|
+|turn|20
+|
+|move|p1a: Doublade|Shadow Sneak|p2a: Gligar
+|-damage|p2a: Gligar|156\/334
+|move|p2a: Gligar|Earthquake|p1a: Doublade
+|-supereffective|p1a: Doublade
+|-damage|p1a: Doublade|0 fnt
+|faint|p1a: Doublade
+|
+|
+|switch|p1a: Milotic|Milotic, M|298\/331
+|turn|21
+|
+|switch|p1a: Ninjask|Ninjask, M|284\/325
+|switch|p2a: Florges|Florges, F|360\/360
+|
+|-heal|p1a: Ninjask|304\/325|[from] item: Leftovers
+|turn|22
+|
+|move|p1a: Ninjask|Substitute|p1a: Ninjask
+|-start|p1a: Ninjask|Substitute
+|-damage|p1a: Ninjask|223\/325
+|move|p2a: Florges|Moonblast|p1a: Ninjask
+|-end|p1a: Ninjask|Substitute
+|
+|-heal|p1a: Ninjask|243\/325|[from] item: Leftovers
+|-boost|p1a: Ninjask|spe|1|[from] ability: Speed Boost
+|turn|23
+|
+|move|p1a: Ninjask|Protect|p1a: Ninjask
+|-singleturn|p1a: Ninjask|Protect
+|move|p2a: Florges|Moonblast|p1a: Ninjask
+|-activate|p1a: Ninjask|Protect
+|
+|-heal|p1a: Ninjask|263\/325|[from] item: Leftovers
+|-boost|p1a: Ninjask|spe|1|[from] ability: Speed Boost
+|turn|24
+|
+|move|p1a: Ninjask|Swords Dance|p1a: Ninjask
+|-boost|p1a: Ninjask|atk|2
+|move|p2a: Florges|Moonblast|p1a: Ninjask
+|-damage|p1a: Ninjask|38\/325
+|
+|-heal|p1a: Ninjask|58\/325|[from] item: Leftovers
+|-boost|p1a: Ninjask|spe|1|[from] ability: Speed Boost
+|turn|25
+|
+|move|p1a: Ninjask|Protect|p1a: Ninjask
+|-singleturn|p1a: Ninjask|Protect
+|move|p2a: Florges|Moonblast|p1a: Ninjask
+|-activate|p1a: Ninjask|Protect
+|
+|-heal|p1a: Ninjask|78\/325|[from] item: Leftovers
+|-boost|p1a: Ninjask|spe|1|[from] ability: Speed Boost
+|turn|26
+|
+|move|p1a: Ninjask|Baton Pass|p1a: Ninjask
+|
+|switch|p1a: Swampert|Swampert, M|184\/342
+|move|p2a: Florges|Moonblast|p1a: Swampert
+|-damage|p1a: Swampert|88\/342
+|-unboost|p1a: Swampert|spa|1
+|
+|turn|27
+|
+|switch|p2a: Gligar|Gligar, F|156\/334
+|move|p1a: Swampert|Earthquake|p2a: Gligar
+|-immune|p2a: Gligar|[msg]
+|
+|turn|28
+|
+|move|p1a: Swampert|Ice Punch|p2a: Gligar
+|-supereffective|p2a: Gligar
+|-damage|p2a: Gligar|0 fnt
+|faint|p2a: Gligar
+|
+|-message|Mliok forfeited.
+|leave|Mliok
+|
+|switch|p2a: Empoleon|Empoleon, M|310\/310
+|turn|29
+|
+|win|too much water
+|raw|Ladder updating...
+|player|p2
+|c|âtoo much water|cunt
+|raw|too much water's rating: 1052 &rarr; <strong>1093<\/strong><br \/>(+41 for winning)
+|raw|Mliok's rating: 1146 &rarr; <strong>1115<\/strong><br \/>(-31 for losing)
+|join|Friendshit
+|leave|Friendshit
+|c|âtoo much water|yh
+|leave|too much water
+|player|p1
+|join|too much water

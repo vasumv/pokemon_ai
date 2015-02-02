@@ -1,0 +1,169 @@
+|join|ninimia
+|join|OffDaCheney
+|player|p1|ninimia|2
+|player|p2|OffDaCheney|76
+|gametype|singles
+|tier|Pokebank OU (beta)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Gorebyss, M
+|poke|p1|Deoxys
+|poke|p1|Volbeat, M
+|poke|p1|Ludicolo, M
+|poke|p1|Empoleon, M
+|poke|p1|Thundurus-Therian, M
+|poke|p2|Eelektross, F, shiny
+|poke|p2|Quagsire, F, shiny
+|poke|p2|Goodra, F, shiny
+|poke|p2|Togekiss, F, shiny
+|poke|p2|Conkeldurr, M, shiny
+|poke|p2|Ursaring, M, shiny
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Deoxys|Deoxys|242\/242
+|switch|p2a: Ursa Major|Ursaring, M, shiny|321\/321
+|-ability|p1a: Deoxys|Pressure
+|turn|1
+|callback|decision
+|
+|move|p1a: Deoxys|Stealth Rock|p2a: Ursa Major
+|-sidestart|p2: OffDaCheney|move: Stealth Rock
+|move|p2a: Ursa Major|Swords Dance|p2a: Ursa Major
+|-boost|p2a: Ursa Major|atk|2
+|
+|-activate|p2a: Ursa Major|item: Flame Orb
+|-status|p2a: Ursa Major|brn
+|turn|2
+|callback|decision
+|
+|move|p1a: Deoxys|Superpower|p2a: Ursa Major
+|-crit|p2a: Ursa Major
+|-supereffective|p2a: Ursa Major
+|-damage|p2a: Ursa Major|0 fnt
+|-unboost|p1a: Deoxys|atk|1
+|-unboost|p1a: Deoxys|def|1
+|faint|p2a: Ursa Major
+|
+|callback|decision
+|
+|switch|p2a: Muckinite|Goodra, F, shiny|384\/384
+|-damage|p2a: Muckinite|336\/384|[from] Stealth Rock
+|turn|3
+|callback|decision
+|
+|switch|p1a: Volbeat|Volbeat, M|333\/333
+|move|p2a: Muckinite|Dragon Pulse|p1a: Volbeat
+|-damage|p1a: Volbeat|149\/333
+|
+|turn|4
+|callback|decision
+|
+|move|p1a: Volbeat|Rain Dance|p1a: Volbeat
+|-weather|RainDance
+|move|p2a: Muckinite|Dragon Pulse|p1a: Volbeat
+|-damage|p1a: Volbeat|0 fnt
+|faint|p1a: Volbeat
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Gorebyss|Gorebyss, M|314\/314
+|turn|5
+|callback|decision
+|
+|move|p1a: Gorebyss|Shell Smash|p1a: Gorebyss
+|-boost|p1a: Gorebyss|atk|2
+|-boost|p1a: Gorebyss|spa|2
+|-boost|p1a: Gorebyss|spe|2
+|-unboost|p1a: Gorebyss|def|1
+|-unboost|p1a: Gorebyss|spd|1
+|-enditem|p1a: Gorebyss|White Herb
+|-restoreboost|p1a: Gorebyss|[silent]
+|move|p2a: Muckinite|Thunderbolt|p1a: Gorebyss
+|-supereffective|p1a: Gorebyss
+|-damage|p1a: Gorebyss|62\/314
+|
+|-weather|RainDance|[upkeep]
+|turn|6
+|callback|decision
+|
+|move|p1a: Gorebyss|Baton Pass|p1a: Gorebyss
+|callback|decision
+|
+|switch|p1a: Ludicolo|Ludicolo, M|301\/301
+|move|p2a: Muckinite|Thunderbolt|p1a: Ludicolo
+|-damage|p1a: Ludicolo|203\/301
+|
+|-weather|RainDance|[upkeep]
+|turn|7
+|callback|decision
+|
+|move|p1a: Ludicolo|Hydro Pump|p2a: Muckinite
+|-resisted|p2a: Muckinite
+|-damage|p2a: Muckinite|189\/384
+|-damage|p1a: Ludicolo|173\/301|[from] item: Life Orb
+|move|p2a: Muckinite|Dragon Pulse|p1a: Ludicolo
+|-damage|p1a: Ludicolo|22\/301
+|
+|-weather|RainDance|[upkeep]
+|turn|8
+|callback|decision
+|
+|move|p1a: Ludicolo|Ice Beam|p2a: Muckinite
+|-supereffective|p2a: Muckinite
+|-damage|p2a: Muckinite|0 fnt
+|-damage|p1a: Ludicolo|0 fnt|[from] item: Life Orb
+|faint|p2a: Muckinite
+|faint|p1a: Ludicolo
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Gorebyss|Gorebyss, M|62\/314
+|switch|p2a: Daedalus|Conkeldurr, M, shiny|414\/414
+|-damage|p2a: Daedalus|389\/414|[from] Stealth Rock
+|turn|9
+|callback|decision
+|
+|move|p2a: Daedalus|Mach Punch|p1a: Gorebyss
+|-damage|p1a: Gorebyss|0 fnt
+|faint|p1a: Gorebyss
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Daedalus|414\/414|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Deoxys|Deoxys|242\/242
+|-ability|p1a: Deoxys|Pressure
+|turn|10
+|callback|decision
+|
+|move|p1a: Deoxys|Superpower|p2a: Daedalus
+|-damage|p2a: Daedalus|227\/414
+|-unboost|p1a: Deoxys|atk|1
+|-unboost|p1a: Deoxys|def|1
+|move|p2a: Daedalus|Bulk Up|p2a: Daedalus
+|-boost|p2a: Daedalus|atk|1
+|-boost|p2a: Daedalus|def|1
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Daedalus|252\/414|[from] item: Leftovers
+|turn|11
+|callback|decision
+|-message|ninimia forfeited.
+|
+|win|OffDaCheney
+|raw|Ladder updating...
+|raw|ninimia's rating: 1472 &rarr; <strong>1464<\/strong><br \/>(-8 for losing)
+|raw|OffDaCheney's rating: 1207 &rarr; <strong>1330<\/strong><br \/>(+123 for winning)
+|leave|ninimia
+|player|p1

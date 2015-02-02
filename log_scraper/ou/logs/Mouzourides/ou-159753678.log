@@ -1,0 +1,225 @@
+|join|Mouzourides
+|join|kgfskjj
+|player|p1|Mouzourides|290
+|player|p2|kgfskjj|146
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Charizard, M
+|poke|p1|Skarmory, M
+|poke|p1|Heatran, F
+|poke|p1|Thundurus, M
+|poke|p1|Azumarill, F
+|poke|p1|Garchomp, M
+|poke|p2|Gliscor, F
+|poke|p2|Gengar, M
+|poke|p2|Venusaur, F
+|poke|p2|Heatran, F
+|poke|p2|Sylveon, M
+|poke|p2|Tyranitar, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Heatran|Heatran, F|385\/385
+|switch|p2a: Gliscor|Gliscor, F|352\/352
+|turn|1
+|
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|move|p2a: Gliscor|Earthquake|p1a: Skarmory
+|-immune|p1a: Skarmory|[msg]
+|
+|-status|p2a: Gliscor|tox|[from] item: Toxic Orb
+|turn|2
+|
+|move|p2a: Gliscor|Taunt|p1a: Skarmory
+|-start|p1a: Skarmory|move: Taunt
+|cant|p1a: Skarmory|move: Taunt|Whirlwind
+|
+|turn|3
+|
+|move|p2a: Gliscor|Stealth Rock|p1a: Skarmory
+|-sidestart|p1: Mouzourides|move: Stealth Rock
+|move|p1a: Skarmory|Counter|p2a: Gliscor
+|-fail|p2a: Gliscor
+|
+|turn|4
+|
+|switch|p1a: Heatran|Heatran, F|385\/385
+|-damage|p1a: Heatran|337\/385|[from] Stealth Rock
+|move|p2a: Gliscor|Knock Off|p1a: Heatran
+|-damage|p1a: Heatran|265\/385
+|-enditem|p1a: Heatran|Leftovers|[from] move: Knock Off|[of] p2a: Gliscor
+|
+|turn|5
+|
+|switch|p1a: Thundurus|Thundurus, M|300\/300
+|-damage|p1a: Thundurus|225\/300|[from] Stealth Rock
+|move|p2a: Gliscor|Earthquake|p1a: Thundurus
+|-immune|p1a: Thundurus|[msg]
+|
+|turn|6
+|
+|switch|p2a: Sylveon|Sylveon, M|394\/394
+|move|p1a: Thundurus|Hidden Power|p2a: Sylveon
+|-damage|p2a: Sylveon|342\/394
+|-damage|p1a: Thundurus|195\/300|[from] item: Life Orb
+|
+|-heal|p2a: Sylveon|366\/394|[from] item: Leftovers
+|turn|7
+|
+|switch|p1a: Heatran|Heatran, F|265\/385
+|-damage|p1a: Heatran|217\/385|[from] Stealth Rock
+|switch|p2a: Gliscor|Gliscor, F|352\/352 tox
+|
+|turn|8
+|
+|move|p2a: Gliscor|Earthquake|p1a: Heatran
+|-supereffective|p1a: Heatran
+|-damage|p1a: Heatran|0 fnt
+|faint|p1a: Heatran
+|
+|
+|switch|p1a: Azumarill|Azumarill, F|345\/345
+|-damage|p1a: Azumarill|302\/345|[from] Stealth Rock
+|turn|9
+|
+|switch|p2a: Venusaur|Venusaur, F|364\/364
+|move|p1a: Azumarill|Waterfall|p2a: Venusaur
+|-resisted|p2a: Venusaur
+|-damage|p2a: Venusaur|256\/364
+|
+|turn|10
+|
+|switch|p1a: Skarmory|Skarmory, M|334\/334
+|-damage|p1a: Skarmory|293\/334|[from] Stealth Rock
+|detailschange|p2a: Venusaur|Venusaur-Mega, F
+|message|Venusaur has Mega Evolved into Mega Venusaur!
+|move|p2a: Venusaur|Sleep Powder|p1a: Skarmory|[miss]
+|-miss|p2a: Venusaur|p1a: Skarmory
+|
+|turn|11
+|
+|switch|p2a: Gliscor|Gliscor, F|352\/352 tox
+|move|p1a: Skarmory|Defog|p2a: Gliscor
+|-unboost|p2a: Gliscor|evasion|1
+|-sideend|p1: Mouzourides|Stealth Rock|[from] move: Defog|[of] p1a: Skarmory
+|
+|turn|12
+|
+|move|p2a: Gliscor|Stealth Rock|p1a: Skarmory
+|-sidestart|p1: Mouzourides|move: Stealth Rock
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334
+|
+|turn|13
+|
+|move|p2a: Gliscor|Taunt|p1a: Skarmory
+|-start|p1a: Skarmory|move: Taunt
+|cant|p1a: Skarmory|move: Taunt|Defog
+|
+|turn|14
+|
+|move|p2a: Gliscor|Knock Off|p1a: Skarmory
+|-damage|p1a: Skarmory|293\/334
+|-damage|p2a: Gliscor|294\/352 tox|[from] item: Rocky Helmet|[of] p1a: Skarmory
+|-enditem|p1a: Skarmory|Rocky Helmet|[from] move: Knock Off|[of] p2a: Gliscor
+|move|p1a: Skarmory|Counter|p2a: Gliscor
+|-damage|p2a: Gliscor|212\/352 tox
+|
+|-heal|p2a: Gliscor|256\/352 tox|[from] ability: Poison Heal
+|turn|15
+|
+|switch|p1a: Garchomp|Garchomp, M|357\/357
+|-damage|p1a: Garchomp|335\/357|[from] Stealth Rock
+|move|p2a: Gliscor|Earthquake|p1a: Garchomp
+|-crit|p1a: Garchomp
+|-damage|p1a: Garchomp|145\/357
+|
+|-heal|p2a: Gliscor|300\/352 tox|[from] ability: Poison Heal
+|turn|16
+|
+|switch|p1a: Skarmory|Skarmory, M|293\/334
+|-damage|p1a: Skarmory|252\/334|[from] Stealth Rock
+|switch|p2a: Sylveon|Sylveon, M|366\/394
+|
+|-heal|p2a: Sylveon|390\/394|[from] item: Leftovers
+|turn|17
+|
+|switch|p2a: Gliscor|Gliscor, F|300\/352 tox
+|move|p1a: Skarmory|Defog|p2a: Gliscor
+|-unboost|p2a: Gliscor|evasion|1
+|-sideend|p1: Mouzourides|Stealth Rock|[from] move: Defog|[of] p1a: Skarmory
+|
+|-heal|p2a: Gliscor|344\/352 tox|[from] ability: Poison Heal
+|turn|18
+|
+|switch|p1a: Charizard|Charizard, M|298\/298
+|move|p2a: Gliscor|Stealth Rock|p1a: Charizard
+|-sidestart|p1: Mouzourides|move: Stealth Rock
+|
+|-heal|p2a: Gliscor|352\/352 tox|[from] ability: Poison Heal
+|turn|19
+|
+|switch|p2a: Sylveon|Sylveon, M|390\/394
+|move|p1a: Charizard|Dragon Dance|p1a: Charizard
+|-boost|p1a: Charizard|atk|1
+|-boost|p1a: Charizard|spe|1
+|
+|-heal|p2a: Sylveon|394\/394|[from] item: Leftovers
+|turn|20
+|
+|move|p1a: Charizard|Dragon Dance|p1a: Charizard
+|-boost|p1a: Charizard|atk|1
+|-boost|p1a: Charizard|spe|1
+|move|p2a: Sylveon|Wish|p2a: Sylveon
+|
+|turn|21
+|
+|switch|p2a: Tyranitar|Tyranitar, F|404\/404
+|-weather|Sandstorm
+|move|p1a: Charizard|Dragon Dance|p1a: Charizard
+|-boost|p1a: Charizard|atk|1
+|-boost|p1a: Charizard|spe|1
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Charizard|280\/298|[from] sandstorm
+|turn|22
+|
+|detailschange|p1a: Charizard|Charizard-Mega-X, M
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p1a: Charizard|Earthquake|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Charizard|262\/298|[from] sandstorm
+|
+|switch|p2a: Gliscor|Gliscor, F|352\/352 tox
+|turn|23
+|
+|move|p1a: Charizard|Dragon Claw|p2a: Gliscor
+|-damage|p2a: Gliscor|0 fnt
+|faint|p2a: Gliscor
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Charizard|244\/298|[from] sandstorm
+|-message|kgfskjj forfeited.
+|
+|win|Mouzourides
+|raw|Ladder updating...
+|raw|Mouzourides's rating: 1577 &rarr; <strong>1598<\/strong><br \/>(+21 for winning)
+|raw|kgfskjj's rating: 1593 &rarr; <strong>1573<\/strong><br \/>(-20 for losing)
+|leave|kgfskjj
+|player|p2

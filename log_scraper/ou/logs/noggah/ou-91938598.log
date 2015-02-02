@@ -1,0 +1,248 @@
+|join|noggah
+|join|Asdfghjklqwerty
+|player|p1|noggah|282
+|player|p2|Asdfghjklqwerty|290
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Aegislash, F
+|poke|p1|Rotom-Wash
+|poke|p1|Kyurem-Black
+|poke|p1|Garchomp, M
+|poke|p1|Conkeldurr, M
+|poke|p1|Mawile, F
+|poke|p2|Gyarados, M
+|poke|p2|Latios, M
+|poke|p2|Infernape, M
+|poke|p2|Rotom-Wash
+|poke|p2|Blissey, F
+|poke|p2|Skarmory, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: CHOMPER|Garchomp, M|357\/357
+|switch|p2a: Infernape|Infernape, M|293\/293
+|turn|1
+|
+|move|p2a: Infernape|U-turn|p1a: CHOMPER
+|-damage|p1a: CHOMPER|289\/357
+|-damage|p2a: Infernape|257\/293|[from] ability: Rough Skin|[of] p1a: CHOMPER
+|
+|switch|p2a: Skarmory|Skarmory, F|334\/334
+|move|p1a: CHOMPER|Earthquake|p2a: Skarmory
+|-immune|p2a: Skarmory|[msg]
+|
+|turn|2
+|
+|move|p1a: CHOMPER|Fire Blast|p2a: Skarmory
+|-supereffective|p2a: Skarmory
+|-damage|p2a: Skarmory|104\/334
+|move|p2a: Skarmory|Stealth Rock|p1a: CHOMPER
+|-sidestart|p1: noggah|move: Stealth Rock
+|
+|-heal|p2a: Skarmory|124\/334|[from] item: Leftovers
+|turn|3
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|move|p1a: CHOMPER|Stealth Rock|p2a: Rotom-Wash
+|-sidestart|p2: Asdfghjklqwerty|move: Stealth Rock
+|
+|turn|4
+|
+|move|p1a: CHOMPER|Draco Meteor|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|157\/304
+|-unboost|p1a: CHOMPER|spa|2
+|move|p2a: Rotom-Wash|Volt Switch|p1a: CHOMPER
+|-immune|p1a: CHOMPER|[msg]
+|
+|turn|5
+|
+|move|p1a: CHOMPER|Earthquake|p2a: Rotom-Wash
+|-immune|p2a: Rotom-Wash|[msg]
+|move|p2a: Rotom-Wash|Volt Switch|p1a: CHOMPER
+|-immune|p1a: CHOMPER|[msg]
+|
+|turn|6
+|
+|move|p1a: CHOMPER|Draco Meteor|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|90\/304
+|-unboost|p1a: CHOMPER|spa|2
+|move|p2a: Rotom-Wash|Volt Switch|p1a: CHOMPER
+|-immune|p1a: CHOMPER|[msg]
+|
+|turn|7
+|
+|switch|p1a: THE CONK|Conkeldurr, M|351\/351
+|-damage|p1a: THE CONK|330\/351|[from] Stealth Rock
+|move|p2a: Rotom-Wash|Rest|p2a: Rotom-Wash
+|-status|p2a: Rotom-Wash|slp
+|-heal|p2a: Rotom-Wash|304\/304 slp|[silent]
+|-status|p2a: Rotom-Wash|slp|[from] move: Rest
+|-enditem|p2a: Rotom-Wash|Chesto Berry|[eat]
+|-curestatus|p2a: Rotom-Wash|slp
+|
+|turn|8
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: THE CONK
+|-damage|p1a: THE CONK|231\/351
+|move|p1a: THE CONK|Knock Off|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|239\/304
+|
+|turn|9
+|
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: THE CONK
+|-damage|p1a: THE CONK|143\/351
+|move|p1a: THE CONK|Drain Punch|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|110\/304
+|-heal|p1a: THE CONK|208\/351|[from] drain|[of] p2a: Rotom-Wash
+|
+|turn|10
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: THE CONK
+|-damage|p1a: THE CONK|151\/351
+|
+|switch|p2a: Gyarados|Gyarados, M|339\/339
+|-damage|p2a: Gyarados|255\/339|[from] Stealth Rock
+|-ability|p2a: Gyarados|Intimidate|[of] p1a: THE CONK
+|-unboost|p1a: THE CONK|atk|1
+|move|p1a: THE CONK|Drain Punch|p2a: Gyarados
+|-resisted|p2a: Gyarados
+|-damage|p2a: Gyarados|192\/339
+|-heal|p1a: THE CONK|183\/351|[from] drain|[of] p2a: Gyarados
+|
+|turn|11
+|
+|move|p2a: Gyarados|Dragon Dance|p2a: Gyarados
+|-boost|p2a: Gyarados|atk|1
+|-boost|p2a: Gyarados|spe|1
+|move|p1a: THE CONK|Knock Off|p2a: Gyarados
+|-damage|p2a: Gyarados|121\/339
+|
+|turn|12
+|
+|move|p2a: Gyarados|Waterfall|p1a: THE CONK
+|-damage|p1a: THE CONK|0 fnt
+|faint|p1a: THE CONK
+|
+|
+|switch|p1a: WASH THIS|Rotom-Wash|303\/303
+|-damage|p1a: WASH THIS|266\/303|[from] Stealth Rock
+|turn|13
+|
+|-formechange|p2a: Gyarados|Gyarados-Mega
+|message|Gyarados has Mega Evolved into Mega Gyarados!
+|-ability|p2a: Gyarados|Mold Breaker
+|move|p2a: Gyarados|Earthquake|p1a: WASH THIS
+|-supereffective|p1a: WASH THIS
+|-damage|p1a: WASH THIS|0 fnt
+|faint|p1a: WASH THIS
+|
+|
+|switch|p1a: CHOMPER|Garchomp, M|289\/357
+|-damage|p1a: CHOMPER|267\/357|[from] Stealth Rock
+|turn|14
+|
+|move|p2a: Gyarados|Waterfall|p1a: CHOMPER
+|-damage|p1a: CHOMPER|5\/357
+|-damage|p2a: Gyarados|79\/339|[from] ability: Rough Skin|[of] p1a: CHOMPER
+|move|p1a: CHOMPER|Draco Meteor|p2a: Gyarados|[miss]
+|-miss|p1a: CHOMPER|p2a: Gyarados
+|
+|turn|15
+|
+|move|p2a: Gyarados|Earthquake|p1a: CHOMPER
+|-damage|p1a: CHOMPER|0 fnt
+|faint|p1a: CHOMPER
+|
+|
+|switch|p1a: born2beWILE|Mawile, F|303\/303
+|-damage|p1a: born2beWILE|285\/303|[from] Stealth Rock
+|-ability|p1a: born2beWILE|Intimidate|[of] p2a: Gyarados
+|-unboost|p2a: Gyarados|atk|1
+|turn|16
+|
+|move|p2a: Gyarados|Earthquake|p1a: born2beWILE
+|-supereffective|p1a: born2beWILE
+|-damage|p1a: born2beWILE|0 fnt
+|faint|p1a: born2beWILE
+|
+|
+|switch|p1a: master sword|Aegislash, F|301\/301
+|-damage|p1a: master sword|283\/301|[from] Stealth Rock
+|-item|p1a: master sword|Air Balloon
+|turn|17
+|
+|move|p2a: Gyarados|Dragon Dance|p2a: Gyarados
+|-boost|p2a: Gyarados|atk|1
+|-boost|p2a: Gyarados|spe|1
+|-formechange|p1a: master sword|Aegislash-Blade
+|move|p1a: master sword|Shadow Ball|p2a: Gyarados
+|-resisted|p2a: Gyarados
+|-damage|p2a: Gyarados|16\/339
+|-unboost|p2a: Gyarados|spd|1
+|
+|turn|18
+|
+|move|p1a: master sword|Shadow Sneak|p2a: Gyarados
+|-resisted|p2a: Gyarados
+|-damage|p2a: Gyarados|0 fnt
+|faint|p2a: Gyarados
+|
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|110\/304
+|-damage|p2a: Rotom-Wash|72\/304|[from] Stealth Rock
+|turn|19
+|
+|move|p1a: master sword|Shadow Sneak|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|17\/304
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: master sword
+|-status|p1a: master sword|brn
+|
+|-damage|p1a: master sword|246\/301 brn|[from] brn
+|turn|20
+|
+|move|p1a: master sword|Shadow Sneak|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|-damage|p1a: master sword|209\/301 brn|[from] brn
+|
+|switch|p2a: Latios|Latios, M|302\/302
+|-damage|p2a: Latios|265\/302|[from] Stealth Rock
+|turn|21
+|
+|move|p2a: Latios|Thunderbolt|p1a: master sword
+|-crit|p1a: master sword
+|-damage|p1a: master sword|0 fnt
+|-enditem|p1a: master sword|Air Balloon
+|-damage|p2a: Latios|235\/302|[from] item: Life Orb
+|faint|p1a: master sword
+|
+|
+|switch|p1a: WRECK-IT RALPH|Kyurem-Black|405\/405
+|-damage|p1a: WRECK-IT RALPH|304\/405|[from] Stealth Rock
+|-ability|p1a: WRECK-IT RALPH|Teravolt
+|turn|22
+|
+|move|p2a: Latios|Draco Meteor|p1a: WRECK-IT RALPH
+|-supereffective|p1a: WRECK-IT RALPH
+|-damage|p1a: WRECK-IT RALPH|0 fnt
+|-unboost|p2a: Latios|spa|2
+|-damage|p2a: Latios|205\/302|[from] item: Life Orb
+|faint|p1a: WRECK-IT RALPH
+|
+|win|Asdfghjklqwerty
+|raw|Ladder updating...
+|raw|noggah's rating: 1537 &rarr; <strong>1519<\/strong><br \/>(-18 for losing)
+|raw|Asdfghjklqwerty's rating: 1566 &rarr; <strong>1584<\/strong><br \/>(+18 for winning)
+|leave|noggah
+|player|p1

@@ -1,0 +1,441 @@
+|join|Damnosaur
+|join|y0loswaginsx
+|player|p1|Damnosaur|220
+|player|p2|y0loswaginsx|14
+|gametype|singles
+|tier|UU (current)
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Dusclops, M
+|poke|p1|Roserade, F
+|poke|p1|Rhyperior, F
+|poke|p1|Blastoise, M
+|poke|p1|Umbreon, F
+|poke|p1|Darmanitan, F
+|poke|p2|Empoleon, F, shiny
+|poke|p2|Heracross, M, shiny
+|poke|p2|Houndoom, F
+|poke|p2|Flygon, M, shiny
+|poke|p2|Porygon-Z, shiny
+|poke|p2|Dusclops, F, shiny
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Darmanitan|Darmanitan, F|351\/351
+|switch|p2a: Empoleon|Empoleon, F, shiny|352\/352
+|turn|1
+|callback|decision
+|chat|y0loswaginsx|hey
+|chat|y0loswaginsx|im new to uu
+|
+|move|p1a: Darmanitan|Flare Blitz|p2a: Empoleon
+|-damage|p2a: Empoleon|37\/352
+|-damage|p1a: Darmanitan|247\/351|[from] recoil|[of] p2a: Empoleon
+|move|p2a: Empoleon|Hydro Pump|p1a: Darmanitan|[miss]
+|-miss|p2a: Empoleon|p1a: Darmanitan
+|
+|-heal|p2a: Empoleon|59\/352|[from] item: Leftovers
+|turn|2
+|callback|decision
+|chat|Damnosaur|oh
+|chat|Damnosaur|UU is fun
+|chat|y0loswaginsx|better than ou
+|
+|switch|p1a: Blastoise|Blastoise, M|362\/362
+|switch|p2a: Flygon|Flygon, M, shiny|301\/301
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Flygon|U-turn|p1a: Blastoise
+|-crit|p1a: Blastoise
+|-damage|p1a: Blastoise|221\/362
+|callback|decision
+|
+|switch|p2a: Dusclops|Dusclops, F, shiny|284\/284
+|-ability|p2a: Dusclops|Pressure
+|move|p1a: Blastoise|Roar|p2a: Dusclops
+|drag|p2a: Heracross|Heracross, M, shiny|301\/301
+|
+|-heal|p1a: Blastoise|243\/362|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: Rhyperior|Rhyperior, F|434\/434
+|move|p2a: Heracross|Megahorn|p1a: Rhyperior
+|-damage|p1a: Rhyperior|298\/434
+|
+|-heal|p1a: Rhyperior|325\/434|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p2a: Porygon-Z|Porygon-Z, shiny|312\/312
+|-boost|p2a: Porygon-Z|spa|1|[from] ability: Download
+|move|p1a: Rhyperior|Stealth Rock|p2a: Porygon-Z
+|-sidestart|p2: y0loswaginsx|move: Stealth Rock
+|
+|-heal|p1a: Rhyperior|352\/434|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M|243\/362
+|move|p2a: Porygon-Z|Hidden Power|p1a: Blastoise
+|-damage|p1a: Blastoise|120\/362
+|-damage|p2a: Porygon-Z|281\/312|[from] item: Life Orb
+|
+|-heal|p1a: Blastoise|142\/362|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p1a: Dusclops|Dusclops, M|284\/284
+|-ability|p1a: Dusclops|Pressure
+|move|p2a: Porygon-Z|Tri Attack|p1a: Dusclops
+|-immune|p1a: Dusclops|[msg]
+|
+|turn|8
+|callback|decision
+|
+|move|p2a: Porygon-Z|Dark Pulse|p1a: Dusclops
+|-supereffective|p1a: Dusclops
+|-damage|p1a: Dusclops|63\/284
+|-damage|p2a: Porygon-Z|250\/312|[from] item: Life Orb
+|cant|p1a: Dusclops|flinch
+|
+|turn|9
+|callback|decision
+|
+|move|p2a: Porygon-Z|Dark Pulse|p1a: Dusclops
+|-supereffective|p1a: Dusclops
+|-damage|p1a: Dusclops|0 fnt
+|-damage|p2a: Porygon-Z|219\/312|[from] item: Life Orb
+|faint|p1a: Dusclops
+|
+|callback|decision
+|
+|switch|p1a: Darmanitan|Darmanitan, F|247\/351
+|turn|10
+|callback|decision
+|chat|y0loswaginsx|shiiet
+|
+|switch|p2a: Flygon|Flygon, M, shiny|301\/301
+|-damage|p2a: Flygon|283\/301|[from] Stealth Rock
+|move|p1a: Darmanitan|U-turn|p2a: Flygon
+|-damage|p2a: Flygon|185\/301
+|callback|decision
+|
+|switch|p1a: Rhyperior|Rhyperior, F|352\/434
+|
+|-heal|p1a: Rhyperior|379\/434|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p2a: Flygon|Earthquake|p1a: Rhyperior
+|-supereffective|p1a: Rhyperior
+|-damage|p1a: Rhyperior|243\/434
+|move|p1a: Rhyperior|Rock Blast|p2a: Flygon
+|-resisted|p2a: Flygon
+|-damage|p2a: Flygon|161\/301
+|-resisted|p2a: Flygon
+|-damage|p2a: Flygon|139\/301
+|-resisted|p2a: Flygon
+|-damage|p2a: Flygon|116\/301
+|-resisted|p2a: Flygon
+|-damage|p2a: Flygon|92\/301
+|-resisted|p2a: Flygon
+|-damage|p2a: Flygon|68\/301
+|-hitcount|p2a: Flygon|5
+|
+|-heal|p1a: Rhyperior|270\/434|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: Flygon|Earthquake|p1a: Rhyperior
+|-supereffective|p1a: Rhyperior
+|-damage|p1a: Rhyperior|147\/434
+|move|p1a: Rhyperior|Rock Blast|p2a: Flygon
+|-resisted|p2a: Flygon
+|-damage|p2a: Flygon|44\/301
+|-resisted|p2a: Flygon
+|-damage|p2a: Flygon|21\/301
+|-hitcount|p2a: Flygon|2
+|
+|-heal|p1a: Rhyperior|174\/434|[from] item: Leftovers
+|turn|13
+|callback|decision
+|chat|y0loswaginsx|wow rhyperior is good
+|chat|Damnosaur|solid roc
+|
+|switch|p2a: Heracross|Heracross, M, shiny|301\/301
+|-damage|p2a: Heracross|264\/301|[from] Stealth Rock
+|move|p1a: Rhyperior|Rock Blast|p2a: Heracross
+|-damage|p2a: Heracross|215\/301
+|-damage|p2a: Heracross|167\/301
+|-hitcount|p2a: Heracross|2
+|
+|-heal|p1a: Rhyperior|201\/434|[from] item: Leftovers
+|turn|14
+|callback|decision
+|chat|Damnosaur|rock
+|chat|y0loswaginsx|lol
+|
+|move|p2a: Heracross|Close Combat|p1a: Rhyperior
+|-supereffective|p1a: Rhyperior
+|-damage|p1a: Rhyperior|0 fnt
+|-unboost|p2a: Heracross|def|1
+|-unboost|p2a: Heracross|spd|1
+|faint|p1a: Rhyperior
+|-boost|p2a: Heracross|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|switch|p1a: Darmanitan|Darmanitan, F|247\/351
+|turn|15
+|callback|decision
+|
+|switch|p2a: Dusclops|Dusclops, F, shiny|284\/284
+|-damage|p2a: Dusclops|249\/284|[from] Stealth Rock
+|-ability|p2a: Dusclops|Pressure
+|move|p1a: Darmanitan|U-turn|p2a: Dusclops
+|-resisted|p2a: Dusclops
+|-damage|p2a: Dusclops|225\/284
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, F|261\/261
+|
+|turn|16
+|callback|decision
+|
+|move|p1a: Roserade|Spikes|p2a: Dusclops
+|-sidestart|p2: y0loswaginsx|Spikes
+|move|p2a: Dusclops|Mega Kick|p1a: Roserade
+|-damage|p1a: Roserade|150\/261
+|
+|turn|17
+|callback|decision
+|chat|Damnosaur|o.O that's new
+|
+|move|p1a: Roserade|Giga Drain|p2a: Dusclops
+|-damage|p2a: Dusclops|159\/284
+|-heal|p1a: Roserade|183\/261|[from] drain|[of] p2a: Dusclops
+|-damage|p1a: Roserade|157\/261|[from] item: Life Orb
+|move|p2a: Dusclops|Will-O-Wisp|p1a: Roserade
+|-status|p1a: Roserade|brn
+|
+|-damage|p1a: Roserade|125\/261 brn|[from] brn
+|turn|18
+|callback|decision
+|chat|y0loswaginsx|yeah
+|chat|y0loswaginsx|i like unusual sets
+|
+|move|p1a: Roserade|Spikes|p2a: Dusclops
+|-sidestart|p2: y0loswaginsx|Spikes
+|move|p2a: Dusclops|Mega Kick|p1a: Roserade|[miss]
+|-miss|p2a: Dusclops|p1a: Roserade
+|
+|-damage|p1a: Roserade|93\/261 brn|[from] brn
+|turn|19
+|callback|decision
+|
+|switch|p1a: Umbreon|Umbreon, F|394\/394
+|move|p2a: Dusclops|Mega Kick|p1a: Umbreon
+|-damage|p1a: Umbreon|328\/394
+|
+|-heal|p1a: Umbreon|352\/394|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|switch|p2a: Porygon-Z|Porygon-Z, shiny|219\/312
+|-damage|p2a: Porygon-Z|167\/312|[from] Spikes
+|-damage|p2a: Porygon-Z|128\/312|[from] Stealth Rock
+|-boost|p2a: Porygon-Z|atk|1|[from] ability: Download
+|move|p1a: Umbreon|Wish|p1a: Umbreon
+|
+|-heal|p1a: Umbreon|376\/394|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p2a: Porygon-Z|Tri Attack|p1a: Umbreon
+|-damage|p1a: Umbreon|250\/394
+|-damage|p2a: Porygon-Z|97\/312|[from] item: Life Orb
+|move|p1a: Umbreon|Foul Play|p2a: Porygon-Z
+|-damage|p2a: Porygon-Z|0 fnt
+|faint|p2a: Porygon-Z
+|
+|-heal|p1a: Umbreon|394\/394|[from] move: Wish|[wisher] Umbreon
+|callback|decision
+|
+|switch|p2a: Houndoom|Houndoom, F|291\/291
+|-damage|p2a: Houndoom|243\/291|[from] Spikes
+|-damage|p2a: Houndoom|171\/291|[from] Stealth Rock
+|turn|22
+|callback|decision
+|
+|move|p2a: Houndoom|Nasty Plot|p2a: Houndoom
+|-boost|p2a: Houndoom|spa|2
+|move|p1a: Umbreon|Foul Play|p2a: Houndoom
+|-resisted|p2a: Houndoom
+|-damage|p2a: Houndoom|79\/291
+|
+|turn|23
+|callback|decision
+|chat|y0loswaginsx|apparently sr has been nered
+|
+|move|p2a: Houndoom|Fire Blast|p1a: Umbreon
+|-damage|p1a: Umbreon|90\/394
+|-damage|p2a: Houndoom|50\/291|[from] item: Life Orb
+|move|p1a: Umbreon|Foul Play|p2a: Houndoom
+|-resisted|p2a: Houndoom
+|-damage|p2a: Houndoom|0 fnt
+|faint|p2a: Houndoom
+|
+|-heal|p1a: Umbreon|114\/394|[from] item: Leftovers
+|callback|decision
+|chat|Damnosaur|in gen 6?
+|
+|switch|p2a: Heracross|Heracross, M, shiny|167\/301
+|-damage|p2a: Heracross|117\/301|[from] Spikes
+|-damage|p2a: Heracross|80\/301|[from] Stealth Rock
+|turn|24
+|callback|decision
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Heracross|Megahorn|p1a: Umbreon
+|-activate|p1a: Umbreon|Protect
+|
+|-heal|p1a: Umbreon|138\/394|[from] item: Leftovers
+|turn|25
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M|142\/362
+|move|p2a: Heracross|Megahorn|p1a: Blastoise
+|-damage|p1a: Blastoise|0 fnt
+|faint|p1a: Blastoise
+|-boost|p2a: Heracross|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|switch|p1a: Darmanitan|Darmanitan, F|247\/351
+|turn|26
+|callback|decision
+|
+|switch|p2a: Dusclops|Dusclops, F, shiny|159\/284
+|-damage|p2a: Dusclops|112\/284|[from] Spikes
+|-damage|p2a: Dusclops|77\/284|[from] Stealth Rock
+|-ability|p2a: Dusclops|Pressure
+|move|p1a: Darmanitan|Flare Blitz|p2a: Dusclops
+|-crit|p2a: Dusclops
+|-damage|p2a: Dusclops|0 fnt
+|-damage|p1a: Darmanitan|222\/351|[from] recoil|[of] p2a: Dusclops
+|faint|p2a: Dusclops
+|
+|callback|decision
+|
+|switch|p2a: Empoleon|Empoleon, F, shiny|59\/352
+|-damage|p2a: Empoleon|37\/352|[from] Stealth Rock
+|-damage|p2a: Empoleon|0 fnt|[from] Spikes
+|faint|p2a: Empoleon
+|callback|decision
+|
+|switch|p2a: Flygon|Flygon, M, shiny|21\/301
+|-damage|p2a: Flygon|3\/301|[from] Stealth Rock
+|turn|27
+|callback|decision
+|chat|Damnosaur|hazards are useful
+|chat|y0loswaginsx|gg
+|chat|y0loswaginsx|oh wow
+|chat|Damnosaur|not yet
+|chat|y0loswaginsx|lool not yet
+|chat|Damnosaur|cos
+|chat|Damnosaur|if youre scarfed
+|chat|Damnosaur|you outspeed me
+|chat|y0loswaginsx|yeah
+|
+|move|p2a: Flygon|Earthquake|p1a: Darmanitan
+|-supereffective|p1a: Darmanitan
+|-damage|p1a: Darmanitan|0 fnt
+|faint|p1a: Darmanitan
+|
+|callback|decision
+|chat|Damnosaur|mmm
+|
+|switch|p1a: Umbreon|Umbreon, F|138\/394
+|turn|28
+|callback|decision
+|chat|y0loswaginsx|i hate darmanitan
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Flygon|Earthquake|p1a: Umbreon
+|-activate|p1a: Umbreon|Protect
+|
+|-heal|p1a: Umbreon|162\/394|[from] item: Leftovers
+|turn|29
+|callback|decision
+|chat|Damnosaur|it's a nice poke
+|chat|y0loswaginsx|what is it
+|
+|switch|p1a: Roserade|Roserade, F|93\/261
+|move|p2a: Flygon|Earthquake|p1a: Roserade
+|-damage|p1a: Roserade|0 fnt
+|faint|p1a: Roserade
+|
+|callback|decision
+|chat|Damnosaur|mine was scarfed
+|
+|switch|p1a: Umbreon|Umbreon, F|162\/394
+|turn|30
+|callback|decision
+|
+|move|p1a: Umbreon|Protect|p1a: Umbreon
+|-singleturn|p1a: Umbreon|Protect
+|move|p2a: Flygon|Earthquake|p1a: Umbreon
+|-activate|p1a: Umbreon|Protect
+|
+|-heal|p1a: Umbreon|186\/394|[from] item: Leftovers
+|turn|31
+|callback|decision
+|chat|y0loswaginsx|doooood
+|chat|Damnosaur|cmon this is my only chance
+|
+|move|p2a: Flygon|Earthquake|p1a: Umbreon
+|-damage|p1a: Umbreon|36\/394
+|move|p1a: Umbreon|Foul Play|p2a: Flygon
+|-damage|p2a: Flygon|0 fnt
+|faint|p2a: Flygon
+|
+|-heal|p1a: Umbreon|60\/394|[from] item: Leftovers
+|callback|decision
+|chat|Damnosaur|hell yeah
+|chat|Damnosaur|ahaha
+|chat|Damnosaur|sorry i did that
+|chat|y0loswaginsx|lol wow
+|chat|y0loswaginsx|dude dont apologise its cool
+|chat|Damnosaur|haha
+|
+|switch|p2a: Heracross|Heracross, M, shiny|80\/301
+|-damage|p2a: Heracross|30\/301|[from] Spikes
+|-damage|p2a: Heracross|0 fnt|[from] Stealth Rock
+|faint|p2a: Heracross
+|
+|win|Damnosaur
+|raw|Ladder updating...
+|raw|Damnosaur's rating: 830 &rarr; <strong>992<\/strong><br \/>(+162 for winning)
+|raw|y0loswaginsx's rating: 1007 &rarr; <strong>730<\/strong><br \/>(-277 for losing)
+|chat|y0loswaginsx|rocks crush bugs
+|chat|y0loswaginsx|wow
+|chat|y0loswaginsx|gg
+|chat|Damnosaur|gg dude
+|chat|y0loswaginsx|such a close match
+|chat|Damnosaur|wow i didnt know i was so low on the ladder
+|chat|Damnosaur|havent used this alt in ages
+|chat|y0loswaginsx|lool
+|chat|y0loswaginsx|yeah dude this is the first time im using this accoutn

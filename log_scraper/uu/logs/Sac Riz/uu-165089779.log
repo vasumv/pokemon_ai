@@ -1,0 +1,396 @@
+|join|Sac Riz
+|join|MicAttacks
+|player|p1|Sac Riz|266
+|player|p2|MicAttacks|160
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Absol, M
+|poke|p1|Nidoqueen, F
+|poke|p1|Chandelure, M
+|poke|p1|Vaporeon, M
+|poke|p1|Haxorus, F
+|poke|p1|Togetic, F
+|poke|p2|Chesnaught, F
+|poke|p2|Hitmonlee, M
+|poke|p2|Kingdra, F
+|poke|p2|Snorlax, M
+|poke|p2|Aerodactyl, M
+|poke|p2|Haxorus, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Nidoqueen|Nidoqueen, F|384\/384
+|switch|p2a: Hitmonlee|Hitmonlee, M|242\/242
+|turn|1
+|
+|switch|p2a: Snorlax|Snorlax, M|524\/524
+|switch|p1a: Togetic|Togetic, F|314\/314
+|
+|turn|2
+|
+|move|p1a: Togetic|Thunder Wave|p2a: Snorlax
+|-status|p2a: Snorlax|par
+|move|p2a: Snorlax|Body Slam|p1a: Togetic
+|-damage|p1a: Togetic|206\/314
+|
+|turn|3
+|
+|switch|p1a: Chandelure|Chandelure, M|262\/262
+|cant|p2a: Snorlax|par
+|
+|turn|4
+|
+|move|p1a: Chandelure|Substitute|p1a: Chandelure
+|-start|p1a: Chandelure|Substitute
+|-damage|p1a: Chandelure|197\/262
+|move|p2a: Snorlax|Crunch|p1a: Chandelure
+|-supereffective|p1a: Chandelure
+|-end|p1a: Chandelure|Substitute
+|
+|-heal|p1a: Chandelure|213\/262|[from] item: Leftovers
+|turn|5
+|
+|switch|p1a: Haxorus|Haxorus, F|294\/294
+|-ability|p1a: Haxorus|Mold Breaker
+|move|p2a: Snorlax|Crunch|p1a: Haxorus
+|-damage|p1a: Haxorus|193\/294
+|
+|turn|6
+|
+|switch|p2a: Chesnaught|Chesnaught, F|380\/380
+|move|p1a: Haxorus|Dragon Dance|p1a: Haxorus
+|-boost|p1a: Haxorus|atk|1
+|-boost|p1a: Haxorus|spe|1
+|
+|turn|7
+|
+|move|p2a: Chesnaught|Spiky Shield|p2a: Chesnaught
+|-singleturn|p2a: Chesnaught|move: Protect
+|move|p1a: Haxorus|Dragon Dance|p1a: Haxorus
+|-boost|p1a: Haxorus|atk|1
+|-boost|p1a: Haxorus|spe|1
+|
+|turn|8
+|
+|move|p1a: Haxorus|Poison Jab|p2a: Chesnaught
+|-supereffective|p2a: Chesnaught
+|-damage|p2a: Chesnaught|60\/380
+|-damage|p1a: Haxorus|164\/294|[from] item: Life Orb
+|move|p2a: Chesnaught|Leech Seed|p1a: Haxorus
+|-start|p1a: Haxorus|move: Leech Seed
+|
+|-heal|p2a: Chesnaught|83\/380|[from] item: Leftovers
+|-damage|p1a: Haxorus|128\/294|[from] Leech Seed|[of] p2a: Chesnaught
+|-heal|p2a: Chesnaught|119\/380|[silent]
+|turn|9
+|
+|move|p1a: Haxorus|Dragon Dance|p1a: Haxorus
+|-boost|p1a: Haxorus|atk|1
+|-boost|p1a: Haxorus|spe|1
+|move|p2a: Chesnaught|Synthesis|p2a: Chesnaught
+|-heal|p2a: Chesnaught|309\/380
+|
+|-heal|p2a: Chesnaught|332\/380|[from] item: Leftovers
+|-damage|p1a: Haxorus|92\/294|[from] Leech Seed|[of] p2a: Chesnaught
+|-heal|p2a: Chesnaught|368\/380|[silent]
+|turn|10
+|
+|move|p2a: Chesnaught|Spiky Shield|p2a: Chesnaught
+|-singleturn|p2a: Chesnaught|move: Protect
+|move|p1a: Haxorus|Dragon Dance|p1a: Haxorus
+|-boost|p1a: Haxorus|atk|1
+|-boost|p1a: Haxorus|spe|1
+|
+|-heal|p2a: Chesnaught|380\/380|[from] item: Leftovers
+|-damage|p1a: Haxorus|56\/294|[from] Leech Seed|[of] p2a: Chesnaught
+|turn|11
+|
+|move|p2a: Chesnaught|Spiky Shield|p2a: Chesnaught
+|-singleturn|p2a: Chesnaught|move: Protect
+|move|p1a: Haxorus|Dragon Dance|p1a: Haxorus
+|-boost|p1a: Haxorus|atk|1
+|-boost|p1a: Haxorus|spe|1
+|
+|-damage|p1a: Haxorus|20\/294|[from] Leech Seed|[of] p2a: Chesnaught
+|turn|12
+|
+|move|p2a: Chesnaught|Spiky Shield|p2a: Chesnaught
+|-fail|p2a: Chesnaught
+|move|p1a: Haxorus|Outrage|p2a: Chesnaught
+|-damage|p2a: Chesnaught|0 fnt
+|-damage|p1a: Haxorus|0 fnt|[from] item: Life Orb
+|faint|p2a: Chesnaught
+|faint|p1a: Haxorus
+|
+|
+|switch|p2a: Hitmonlee|Hitmonlee, M|242\/242
+|switch|p1a: Requiem|Absol, M|271\/271
+|turn|13
+|
+|switch|p1a: Nidoqueen|Nidoqueen, F|384\/384
+|move|p2a: Hitmonlee|Knock Off|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|220\/384
+|-enditem|p1a: Nidoqueen|Life Orb|[from] move: Knock Off|[of] p2a: Hitmonlee
+|-damage|p2a: Hitmonlee|218\/242|[from] item: Life Orb
+|
+|turn|14
+|
+|switch|p2a: Snorlax|Snorlax, M|524\/524 par
+|move|p1a: Nidoqueen|Stealth Rock|p2a: Snorlax
+|-sidestart|p2: MicAttacks|move: Stealth Rock
+|
+|turn|15
+|
+|move|p1a: Nidoqueen|Earth Power|p2a: Snorlax
+|-damage|p2a: Snorlax|434\/524 par
+|cant|p2a: Snorlax|par
+|
+|turn|16
+|
+|move|p1a: Nidoqueen|Earth Power|p2a: Snorlax
+|-damage|p2a: Snorlax|338\/524 par
+|move|p2a: Snorlax|Earthquake|p1a: Nidoqueen
+|-supereffective|p1a: Nidoqueen
+|-damage|p1a: Nidoqueen|0 fnt
+|faint|p1a: Nidoqueen
+|
+|
+|switch|p1a: Chandelure|Chandelure, M|213\/262
+|turn|17
+|
+|move|p1a: Chandelure|Substitute|p1a: Chandelure
+|-start|p1a: Chandelure|Substitute
+|-damage|p1a: Chandelure|148\/262
+|move|p2a: Snorlax|Earthquake|p1a: Chandelure
+|-supereffective|p1a: Chandelure
+|-end|p1a: Chandelure|Substitute
+|
+|-heal|p1a: Chandelure|164\/262|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Chandelure|Substitute|p1a: Chandelure
+|-start|p1a: Chandelure|Substitute
+|-damage|p1a: Chandelure|99\/262
+|move|p2a: Snorlax|Body Slam|p1a: Chandelure
+|-immune|p1a: Chandelure|[msg]
+|
+|-heal|p1a: Chandelure|115\/262|[from] item: Leftovers
+|turn|19
+|
+|move|p1a: Chandelure|Calm Mind|p1a: Chandelure
+|-boost|p1a: Chandelure|spa|1
+|-boost|p1a: Chandelure|spd|1
+|move|p2a: Snorlax|Earthquake|p1a: Chandelure
+|-supereffective|p1a: Chandelure
+|-end|p1a: Chandelure|Substitute
+|
+|-heal|p1a: Chandelure|131\/262|[from] item: Leftovers
+|turn|20
+|
+|move|p1a: Chandelure|Fire Blast|p2a: Snorlax
+|-damage|p2a: Snorlax|229\/524 par
+|move|p2a: Snorlax|Earthquake|p1a: Chandelure
+|-supereffective|p1a: Chandelure
+|-damage|p1a: Chandelure|0 fnt
+|faint|p1a: Chandelure
+|
+|
+|switch|p1a: Requiem|Absol, M|271\/271
+|turn|21
+|
+|detailschange|p1a: Requiem|Absol-Mega, M
+|message|Absol has Mega Evolved into Mega Absol!
+|move|p1a: Requiem|Swords Dance|p1a: Requiem
+|-boost|p1a: Requiem|atk|2
+|move|p2a: Snorlax|Body Slam|p1a: Requiem
+|-damage|p1a: Requiem|36\/271
+|-status|p1a: Requiem|par
+|
+|turn|22
+|
+|move|p1a: Requiem|Sucker Punch|p2a: Snorlax
+|-damage|p2a: Snorlax|0 fnt
+|faint|p2a: Snorlax
+|
+|
+|switch|p2a: Hitmonlee|Hitmonlee, M|218\/242
+|-damage|p2a: Hitmonlee|203\/242|[from] Stealth Rock
+|turn|23
+|
+|move|p2a: Hitmonlee|Mach Punch|p1a: Requiem
+|-supereffective|p1a: Requiem
+|-damage|p1a: Requiem|0 fnt
+|-damage|p2a: Hitmonlee|179\/242|[from] item: Life Orb
+|faint|p1a: Requiem
+|
+|
+|switch|p1a: Vaporeon|Vaporeon, M|464\/464
+|turn|24
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Hitmonlee|Rapid Spin|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Protect
+|
+|turn|25
+|
+|move|p2a: Hitmonlee|Rapid Spin|p1a: Vaporeon
+|-damage|p1a: Vaporeon|434\/464
+|-sideend|p2: MicAttacks|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Hitmonlee
+|-damage|p2a: Hitmonlee|155\/242|[from] item: Life Orb
+|move|p1a: Vaporeon|Scald|p2a: Hitmonlee
+|-damage|p2a: Hitmonlee|64\/242
+|
+|-heal|p1a: Vaporeon|463\/464|[from] item: Leftovers
+|turn|26
+|
+|move|p2a: Hitmonlee|Knock Off|p1a: Vaporeon
+|-damage|p1a: Vaporeon|316\/464
+|-enditem|p1a: Vaporeon|Leftovers|[from] move: Knock Off|[of] p2a: Hitmonlee
+|-damage|p2a: Hitmonlee|40\/242|[from] item: Life Orb
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|turn|27
+|
+|move|p2a: Hitmonlee|High Jump Kick|p1a: Vaporeon
+|-damage|p1a: Vaporeon|59\/464
+|-damage|p2a: Hitmonlee|16\/242|[from] item: Life Orb
+|move|p1a: Vaporeon|Scald|p2a: Hitmonlee
+|-damage|p2a: Hitmonlee|0 fnt
+|faint|p2a: Hitmonlee
+|
+|-heal|p1a: Vaporeon|291\/464|[from] move: Wish|[wisher] Vaporeon
+|
+|switch|p2a: Kingdra|Kingdra, F|291\/291
+|turn|28
+|
+|switch|p1a: Togetic|Togetic, F|206\/314
+|move|p2a: Kingdra|Dragon Pulse|p1a: Togetic
+|-immune|p1a: Togetic|[msg]
+|
+|turn|29
+|
+|switch|p2a: Aerodactyl|Aerodactyl, M|302\/302
+|move|p1a: Togetic|Thunder Wave|p2a: Aerodactyl
+|-status|p2a: Aerodactyl|par
+|
+|turn|30
+|
+|switch|p1a: Vaporeon|Vaporeon, M|291\/464
+|detailschange|p2a: Aerodactyl|Aerodactyl-Mega, M
+|message|Aerodactyl has Mega Evolved into Mega Aerodactyl!
+|move|p2a: Aerodactyl|Stealth Rock|p1a: Vaporeon
+|-sidestart|p1: Sac Riz|move: Stealth Rock
+|
+|turn|31
+|
+|switch|p2a: Kingdra|Kingdra, F|291\/291
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|turn|32
+|
+|move|p2a: Kingdra|Draco Meteor|p1a: Vaporeon
+|-damage|p1a: Vaporeon|113\/464
+|-unboost|p2a: Kingdra|spa|2
+|move|p1a: Vaporeon|Scald|p2a: Kingdra
+|-resisted|p2a: Kingdra
+|-damage|p2a: Kingdra|263\/291
+|
+|-heal|p1a: Vaporeon|345\/464|[from] move: Wish|[wisher] Vaporeon
+|turn|33
+|
+|switch|p2a: Aerodactyl|Aerodactyl-Mega, M|302\/302 par
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|turn|34
+|
+|move|p1a: Vaporeon|Scald|p2a: Aerodactyl
+|-supereffective|p2a: Aerodactyl
+|-damage|p2a: Aerodactyl|84\/302 par
+|cant|p2a: Aerodactyl|par
+|
+|-heal|p1a: Vaporeon|464\/464|[from] move: Wish|[wisher] Vaporeon
+|turn|35
+|
+|move|p1a: Vaporeon|Scald|p2a: Aerodactyl
+|-supereffective|p2a: Aerodactyl
+|-damage|p2a: Aerodactyl|0 fnt
+|faint|p2a: Aerodactyl
+|
+|
+|switch|p2a: Haxorus|Haxorus, F|302\/302
+|-ability|p2a: Haxorus|Mold Breaker
+|turn|36
+|
+|move|p2a: Haxorus|Dragon Dance|p2a: Haxorus
+|-boost|p2a: Haxorus|atk|1
+|-boost|p2a: Haxorus|spe|1
+|move|p1a: Vaporeon|Scald|p2a: Haxorus
+|-resisted|p2a: Haxorus
+|-damage|p2a: Haxorus|231\/302
+|
+|turn|37
+|
+|move|p2a: Haxorus|Outrage|p1a: Vaporeon
+|-crit|p1a: Vaporeon
+|-damage|p1a: Vaporeon|0 fnt
+|-damage|p2a: Haxorus|201\/302|[from] item: Life Orb
+|faint|p1a: Vaporeon
+|
+|
+|switch|p1a: Togetic|Togetic, F|206\/314
+|-damage|p1a: Togetic|128\/314|[from] Stealth Rock
+|turn|38
+|
+|move|p2a: Haxorus|Outrage|p1a: Togetic
+|-immune|p1a: Togetic|[msg]
+|move|p1a: Togetic|Thunder Wave|p2a: Haxorus
+|-status|p2a: Haxorus|par
+|
+|-end|p2a: Haxorus|rampage
+|-start|p2a: Haxorus|confusion
+|turn|39
+|
+|move|p1a: Togetic|Roost|p1a: Togetic
+|-heal|p1a: Togetic|285\/314
+|-activate|p2a: Haxorus|confusion
+|-damage|p2a: Haxorus|76\/302 par|[from] confusion
+|
+|turn|40
+|
+|move|p1a: Togetic|Dazzling Gleam|p2a: Haxorus
+|-crit|p2a: Haxorus
+|-supereffective|p2a: Haxorus
+|-damage|p2a: Haxorus|0 fnt
+|faint|p2a: Haxorus
+|
+|
+|switch|p2a: Kingdra|Kingdra, F|263\/291
+|turn|41
+|
+|move|p2a: Kingdra|Hydro Pump|p1a: Togetic
+|-damage|p1a: Togetic|213\/314
+|move|p1a: Togetic|Thunder Wave|p2a: Kingdra
+|-status|p2a: Kingdra|par
+|
+|turn|42
+|-message|MicAttacks forfeited.
+|
+|win|Sac Riz
+|raw|Ladder updating...
+|leave|MicAttacks
+|player|p2
+|raw|Sac Riz's rating: 1436 &rarr; <strong>1451<\/strong><br \/>(+15 for winning)
+|raw|MicAttacks's rating: 1360 &rarr; <strong>1345<\/strong><br \/>(-15 for losing)

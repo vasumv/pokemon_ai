@@ -1,0 +1,407 @@
+|join|teamtest239852
+|join|AdorableAphid
+|player|p1|teamtest239852|42
+|player|p2|AdorableAphid|1
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Sceptile, M, shiny
+|poke|p1|Blissey, F
+|poke|p1|Entei, shiny
+|poke|p1|Forretress, M, shiny
+|poke|p1|Galvantula, F
+|poke|p1|Machamp, M
+|poke|p2|Goodra, M, shiny
+|poke|p2|Honchkrow, M, shiny
+|poke|p2|Rotom-Heat, shiny
+|poke|p2|Machamp, M, shiny
+|poke|p2|Donphan, M, shiny
+|poke|p2|Cresselia, F, shiny
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Blissey|Blissey, F|714\/714
+|switch|p2a: EasyBake|Rotom-Heat, shiny|241\/241
+|turn|1
+|
+|switch|p2a: GetShrekt|Machamp, M, shiny|322\/322
+|move|p1a: Blissey|Protect|p1a: Blissey
+|-fail|p1a: Blissey
+|
+|turn|2
+|
+|move|p1a: Blissey|Protect|p1a: Blissey
+|-singleturn|p1a: Blissey|Protect
+|move|p2a: GetShrekt|Dynamic Punch|p1a: Blissey
+|-activate|p1a: Blissey|Protect
+|
+|turn|3
+|
+|switch|p1a: Forretress|Forretress, M, shiny|354\/354
+|move|p2a: GetShrekt|Dynamic Punch|p1a: Forretress
+|-damage|p1a: Forretress|248\/354
+|-damage|p2a: GetShrekt|269\/322|[from] item: Rocky Helmet|[of] p1a: Forretress
+|-start|p1a: Forretress|confusion
+|
+|turn|4
+|
+|switch|p2a: EasyBake|Rotom-Heat, shiny|241\/241
+|-activate|p1a: Forretress|confusion
+|move|p1a: Forretress|Stealth Rock|p2a: EasyBake
+|-sidestart|p2: AdorableAphid|move: Stealth Rock
+|
+|turn|5
+|
+|switch|p1a: Entei|Entei, shiny|372\/372
+|-ability|p1a: Entei|Pressure
+|move|p2a: EasyBake|Trick|p1a: Entei
+|-activate|p2a: EasyBake|move: Trick|[of] p1a: Entei
+|-item|p1a: Entei|Choice Scarf|[from] move: Trick
+|-item|p2a: EasyBake|Assault Vest|[from] move: Trick
+|
+|turn|6
+|
+|move|p1a: Entei|Stone Edge|p2a: EasyBake
+|-supereffective|p2a: EasyBake
+|-damage|p2a: EasyBake|3\/241
+|move|p2a: EasyBake|Discharge|p1a: Entei
+|-damage|p1a: Entei|221\/372
+|
+|turn|7
+|
+|move|p1a: Entei|Stone Edge|p2a: EasyBake|[miss]
+|-miss|p1a: Entei|p2a: EasyBake
+|move|p2a: EasyBake|Discharge|p1a: Entei
+|-damage|p1a: Entei|61\/372
+|
+|turn|8
+|
+|move|p1a: Entei|Stone Edge|p2a: EasyBake|[miss]
+|-miss|p1a: Entei|p2a: EasyBake
+|move|p2a: EasyBake|Discharge|p1a: Entei
+|-damage|p1a: Entei|0 fnt
+|faint|p1a: Entei
+|
+|
+|switch|p1a: Sceptile|Sceptile, M, shiny|282\/282
+|turn|9
+|
+|detailschange|p1a: Sceptile|Sceptile-Mega, M, shiny
+|-mega|p1a: Sceptile|Sceptile|Sceptilite
+|move|p1a: Sceptile|Dragon Claw|p2a: EasyBake
+|-damage|p2a: EasyBake|0 fnt
+|faint|p2a: EasyBake
+|
+|
+|switch|p2a: SuchABoar|Donphan, M, shiny|384\/384
+|-damage|p2a: SuchABoar|360\/384|[from] Stealth Rock
+|turn|10
+|
+|switch|p1a: Machamp|Machamp, M|384\/384
+|move|p2a: SuchABoar|Ice Shard|p1a: Machamp
+|-damage|p1a: Machamp|325\/384
+|
+|turn|11
+|
+|move|p1a: Machamp|Dynamic Punch|p2a: SuchABoar
+|-damage|p2a: SuchABoar|195\/384
+|-start|p2a: SuchABoar|confusion
+|-activate|p2a: SuchABoar|confusion
+|move|p2a: SuchABoar|Rapid Spin|p1a: Machamp
+|-damage|p1a: Machamp|295\/384
+|-sideend|p2: AdorableAphid|Stealth Rock|[from] move: Rapid Spin|[of] p2a: SuchABoar
+|
+|turn|12
+|
+|switch|p2a: MoonMoon|Cresselia, F, shiny|444\/444
+|move|p1a: Machamp|Dynamic Punch|p2a: MoonMoon
+|-resisted|p2a: MoonMoon
+|-damage|p2a: MoonMoon|387\/444
+|-start|p2a: MoonMoon|confusion
+|
+|-heal|p2a: MoonMoon|414\/444|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: Forretress|Forretress, M, shiny|248\/354
+|-activate|p2a: MoonMoon|confusion
+|move|p2a: MoonMoon|Moonblast|p1a: Forretress
+|-resisted|p1a: Forretress
+|-damage|p1a: Forretress|204\/354
+|
+|-heal|p2a: MoonMoon|441\/444|[from] item: Leftovers
+|turn|14
+|
+|switch|p2a: SuchABoar|Donphan, M, shiny|195\/384
+|move|p1a: Forretress|Stealth Rock|p2a: SuchABoar
+|-sidestart|p2: AdorableAphid|move: Stealth Rock
+|
+|turn|15
+|
+|move|p2a: SuchABoar|Rapid Spin|p1a: Forretress
+|-resisted|p1a: Forretress
+|-damage|p1a: Forretress|197\/354
+|-damage|p2a: SuchABoar|131\/384|[from] item: Rocky Helmet|[of] p1a: Forretress
+|-sideend|p2: AdorableAphid|Stealth Rock|[from] move: Rapid Spin|[of] p2a: SuchABoar
+|move|p1a: Forretress|Spikes|p2a: SuchABoar
+|-sidestart|p2: AdorableAphid|Spikes
+|
+|turn|16
+|-activate|p2a: SuchABoar|item: Quick Claw
+|
+|move|p2a: SuchABoar|Earthquake|p1a: Forretress
+|-damage|p1a: Forretress|98\/354
+|move|p1a: Forretress|Stealth Rock|p2a: SuchABoar
+|-sidestart|p2: AdorableAphid|move: Stealth Rock
+|
+|turn|17
+|
+|move|p2a: SuchABoar|Earthquake|p1a: Forretress
+|-damage|p1a: Forretress|0 fnt
+|faint|p1a: Forretress
+|
+|
+|switch|p1a: Machamp|Machamp, M|295\/384
+|turn|18
+|-activate|p2a: SuchABoar|item: Quick Claw
+|
+|move|p2a: SuchABoar|Rapid Spin|p1a: Machamp
+|-crit|p1a: Machamp
+|-damage|p1a: Machamp|248\/384
+|-sideend|p2: AdorableAphid|Spikes|[from] move: Rapid Spin|[of] p2a: SuchABoar
+|-sideend|p2: AdorableAphid|Stealth Rock|[from] move: Rapid Spin|[of] p2a: SuchABoar
+|move|p1a: Machamp|Dynamic Punch|p2a: SuchABoar
+|-damage|p2a: SuchABoar|0 fnt
+|faint|p2a: SuchABoar
+|
+|
+|switch|p2a: MoonMoon|Cresselia, F, shiny|441\/444
+|turn|19
+|
+|move|p2a: MoonMoon|Moonblast|p1a: Machamp
+|-crit|p1a: Machamp
+|-supereffective|p1a: Machamp
+|-damage|p1a: Machamp|36\/384
+|-enditem|p1a: Machamp|Sitrus Berry|[eat]
+|-heal|p1a: Machamp|132\/384|[from] item: Sitrus Berry
+|move|p1a: Machamp|Dynamic Punch|p2a: MoonMoon
+|-resisted|p2a: MoonMoon
+|-damage|p2a: MoonMoon|374\/444
+|-start|p2a: MoonMoon|confusion
+|
+|-heal|p2a: MoonMoon|401\/444|[from] item: Leftovers
+|turn|20
+|
+|switch|p1a: Blissey|Blissey, F|714\/714
+|-activate|p2a: MoonMoon|confusion
+|move|p2a: MoonMoon|Psyshock|p1a: Blissey
+|-damage|p1a: Blissey|573\/714
+|
+|-heal|p2a: MoonMoon|428\/444|[from] item: Leftovers
+|-heal|p1a: Blissey|617\/714|[from] item: Leftovers
+|turn|21
+|
+|switch|p2a: PimpCrow|Honchkrow, M, shiny|404\/404
+|move|p1a: Blissey|Toxic|p2a: PimpCrow
+|-status|p2a: PimpCrow|tox
+|
+|-heal|p1a: Blissey|661\/714|[from] item: Leftovers
+|-damage|p2a: PimpCrow|379\/404 tox|[from] psn
+|turn|22
+|
+|move|p1a: Blissey|Protect|p1a: Blissey
+|-singleturn|p1a: Blissey|Protect
+|move|p2a: PimpCrow|Brave Bird|p1a: Blissey
+|-activate|p1a: Blissey|Protect
+|
+|-heal|p1a: Blissey|705\/714|[from] item: Leftovers
+|-damage|p2a: PimpCrow|329\/404 tox|[from] psn
+|turn|23
+|
+|switch|p1a: Galvantula|Galvantula, F|281\/281
+|move|p2a: PimpCrow|Superpower|p1a: Galvantula
+|-resisted|p1a: Galvantula
+|-damage|p1a: Galvantula|142\/281
+|-unboost|p2a: PimpCrow|atk|1
+|-unboost|p2a: PimpCrow|def|1
+|-damage|p2a: PimpCrow|289\/404 tox|[from] item: Life Orb
+|
+|-damage|p2a: PimpCrow|214\/404 tox|[from] psn
+|turn|24
+|
+|switch|p2a: ThatBass|Goodra, M, shiny|384\/384
+|move|p1a: Galvantula|Sticky Web|p2a: ThatBass
+|-sidestart|p2: AdorableAphid|move: Sticky Web
+|
+|turn|25
+|
+|switch|p1a: Blissey|Blissey, F|705\/714
+|move|p2a: ThatBass|Flamethrower|p1a: Blissey
+|-damage|p1a: Blissey|648\/714
+|
+|-heal|p1a: Blissey|692\/714|[from] item: Leftovers
+|turn|26
+|
+|switch|p2a: PimpCrow|Honchkrow, M, shiny|214\/404 tox
+|move|p1a: Blissey|Wish|p1a: Blissey
+|
+|-heal|p1a: Blissey|714\/714|[from] item: Leftovers
+|-damage|p2a: PimpCrow|189\/404 tox|[from] psn
+|turn|27
+|
+|move|p2a: PimpCrow|Brave Bird|p1a: Blissey
+|-damage|p1a: Blissey|191\/714
+|-damage|p2a: PimpCrow|16\/404 tox|[from] recoil|[of] p1a: Blissey
+|-damage|p2a: PimpCrow|0 fnt|[from] item: Life Orb
+|faint|p2a: PimpCrow
+|move|p1a: Blissey|Toxic|p2: PimpCrow|[notarget]
+|-notarget
+|
+|-heal|p1a: Blissey|548\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p1a: Blissey|592\/714|[from] item: Leftovers
+|
+|switch|p2a: GetShrekt|Machamp, M, shiny|269\/322
+|-activate|p2a: GetShrekt|move: Sticky Web
+|-unboost|p2a: GetShrekt|spe|1
+|turn|28
+|
+|move|p1a: Blissey|Protect|p1a: Blissey
+|-singleturn|p1a: Blissey|Protect
+|move|p2a: GetShrekt|Dynamic Punch|p1a: Blissey
+|-activate|p1a: Blissey|Protect
+|
+|-heal|p1a: Blissey|636\/714|[from] item: Leftovers
+|turn|29
+|
+|switch|p1a: Galvantula|Galvantula, F|142\/281
+|move|p2a: GetShrekt|Dynamic Punch|p1a: Galvantula
+|-resisted|p1a: Galvantula
+|-damage|p1a: Galvantula|4\/281
+|-start|p1a: Galvantula|confusion
+|
+|turn|30
+|
+|switch|p2a: ThatBass|Goodra, M, shiny|384\/384
+|-activate|p2a: ThatBass|move: Sticky Web
+|-unboost|p2a: ThatBass|spe|1
+|-activate|p1a: Galvantula|confusion
+|-damage|p1a: Galvantula|0 fnt|[from] confusion
+|faint|p1a: Galvantula
+|
+|
+|switch|p1a: Sceptile|Sceptile-Mega, M, shiny|282\/282
+|turn|31
+|
+|switch|p2a: MoonMoon|Cresselia, F, shiny|428\/444
+|move|p1a: Sceptile|Dragon Claw|p2a: MoonMoon
+|-damage|p2a: MoonMoon|352\/444
+|
+|-heal|p2a: MoonMoon|379\/444|[from] item: Leftovers
+|turn|32
+|
+|switch|p1a: Blissey|Blissey, F|636\/714
+|move|p2a: MoonMoon|Calm Mind|p2a: MoonMoon
+|-boost|p2a: MoonMoon|spa|1
+|-boost|p2a: MoonMoon|spd|1
+|
+|-heal|p2a: MoonMoon|406\/444|[from] item: Leftovers
+|-heal|p1a: Blissey|680\/714|[from] item: Leftovers
+|turn|33
+|
+|move|p2a: MoonMoon|Calm Mind|p2a: MoonMoon
+|-boost|p2a: MoonMoon|spa|1
+|-boost|p2a: MoonMoon|spd|1
+|move|p1a: Blissey|Toxic|p2a: MoonMoon
+|-status|p2a: MoonMoon|tox
+|
+|-heal|p2a: MoonMoon|433\/444 tox|[from] item: Leftovers
+|-heal|p1a: Blissey|714\/714|[from] item: Leftovers
+|-damage|p2a: MoonMoon|406\/444 tox|[from] psn
+|turn|34
+|
+|move|p2a: MoonMoon|Calm Mind|p2a: MoonMoon
+|-boost|p2a: MoonMoon|spa|1
+|-boost|p2a: MoonMoon|spd|1
+|move|p1a: Blissey|Wish|p1a: Blissey
+|
+|-heal|p2a: MoonMoon|433\/444 tox|[from] item: Leftovers
+|-damage|p2a: MoonMoon|379\/444 tox|[from] psn
+|turn|35
+|
+|move|p2a: MoonMoon|Calm Mind|p2a: MoonMoon
+|-boost|p2a: MoonMoon|spa|1
+|-boost|p2a: MoonMoon|spd|1
+|move|p1a: Blissey|Toxic|p2a: MoonMoon|[miss]
+|-miss|p1a: Blissey|p2a: MoonMoon
+|
+|-heal|p2a: MoonMoon|406\/444 tox|[from] item: Leftovers
+|-damage|p2a: MoonMoon|325\/444 tox|[from] psn
+|turn|36
+|
+|move|p2a: MoonMoon|Psyshock|p1a: Blissey
+|-damage|p1a: Blissey|287\/714
+|move|p1a: Blissey|Wish|p1a: Blissey
+|
+|-heal|p2a: MoonMoon|352\/444 tox|[from] item: Leftovers
+|-heal|p1a: Blissey|331\/714|[from] item: Leftovers
+|-damage|p2a: MoonMoon|244\/444 tox|[from] psn
+|turn|37
+|
+|move|p1a: Blissey|Protect|p1a: Blissey
+|-singleturn|p1a: Blissey|Protect
+|move|p2a: MoonMoon|Calm Mind|p2a: MoonMoon
+|-boost|p2a: MoonMoon|spa|1
+|-boost|p2a: MoonMoon|spd|1
+|
+|-heal|p1a: Blissey|688\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p2a: MoonMoon|271\/444 tox|[from] item: Leftovers
+|-heal|p1a: Blissey|714\/714|[from] item: Leftovers
+|-damage|p2a: MoonMoon|136\/444 tox|[from] psn
+|turn|38
+|
+|move|p2a: MoonMoon|Psyshock|p1a: Blissey
+|-damage|p1a: Blissey|272\/714
+|move|p1a: Blissey|Wish|p1a: Blissey
+|
+|-heal|p2a: MoonMoon|163\/444 tox|[from] item: Leftovers
+|-heal|p1a: Blissey|316\/714|[from] item: Leftovers
+|-damage|p2a: MoonMoon|1\/444 tox|[from] psn
+|turn|39
+|
+|move|p1a: Blissey|Protect|p1a: Blissey
+|-singleturn|p1a: Blissey|Protect
+|move|p2a: MoonMoon|Moonlight|p2a: MoonMoon
+|-heal|p2a: MoonMoon|223\/444 tox
+|
+|-heal|p1a: Blissey|673\/714|[from] move: Wish|[wisher] Blissey
+|-heal|p2a: MoonMoon|250\/444 tox|[from] item: Leftovers
+|-heal|p1a: Blissey|714\/714|[from] item: Leftovers
+|-damage|p2a: MoonMoon|61\/444 tox|[from] psn
+|turn|40
+|
+|move|p2a: MoonMoon|Psyshock|p1a: Blissey
+|-damage|p1a: Blissey|255\/714
+|move|p1a: Blissey|Wish|p1a: Blissey
+|
+|-heal|p2a: MoonMoon|88\/444 tox|[from] item: Leftovers
+|-heal|p1a: Blissey|299\/714|[from] item: Leftovers
+|-damage|p2a: MoonMoon|0 fnt|[from] psn
+|faint|p2a: MoonMoon
+|-message|AdorableAphid forfeited.
+|
+|win|teamtest239852
+|raw|Ladder updating...
+|leave|AdorableAphid
+|player|p2
+|raw|teamtest239852's rating: 1407 &rarr; <strong>1422<\/strong><br \/>(+15 for winning)
+|raw|AdorableAphid's rating: 1319 &rarr; <strong>1304<\/strong><br \/>(-15 for losing)

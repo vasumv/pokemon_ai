@@ -1,0 +1,212 @@
+|join|Tawd
+|join|ronconcamy
+|player|p1|Tawd|293
+|player|p2|ronconcamy|190
+|gametype|singles
+|gen|6
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Vivillon, F
+|poke|p1|Ampharos, F
+|poke|p1|Darmanitan, M
+|poke|p1|Ditto
+|poke|p1|Umbreon, F
+|poke|p1|Porygon2
+|poke|p2|Absol, M, shiny
+|poke|p2|Milotic, F
+|poke|p2|Kingdra, F
+|poke|p2|Umbreon, F
+|poke|p2|Arcanine, M
+|poke|p2|Porygon2
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Ditto|Ditto|299\/299
+|switch|p2a: Porygon2|Porygon2|374\/374
+|-transform|p1a: Ditto|p2a: Porygon2
+|turn|1
+|
+|switch|p1a: Umbreon|Umbreon, F|394\/394
+|-ability|p2a: Porygon2|Synchronize|[from] ability: Trace|[of] p1a: Umbreon
+|move|p2a: Porygon2|Toxic|p1a: Umbreon
+|-status|p1a: Umbreon|tox
+|-status|p2a: Porygon2|tox
+|
+|-damage|p1a: Umbreon|370\/394 tox|[from] psn
+|-damage|p2a: Porygon2|351\/374 tox|[from] psn
+|turn|2
+|
+|move|p1a: Umbreon|Heal Bell|p1a: Umbreon
+|-cureteam|p1a: Umbreon|[from] move: HealBell
+|move|p2a: Porygon2|Tri Attack|p1a: Umbreon
+|-damage|p1a: Umbreon|312\/394
+|
+|-heal|p1a: Umbreon|336\/394|[from] item: Leftovers
+|-damage|p2a: Porygon2|305\/374 tox|[from] psn
+|turn|3
+|
+|switch|p1a: Ampharos|Ampharos, F|384\/384
+|switch|p2a: Arcanine|Arcanine, M|322\/322
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Ampharos
+|-unboost|p1a: Ampharos|atk|1
+|
+|turn|4
+|
+|-formechange|p1a: Ampharos|Ampharos-Mega
+|message|Ampharos has Mega Evolved into Mega Ampharos!
+|-ability|p1a: Ampharos|Mold Breaker
+|move|p2a: Arcanine|Extreme Speed|p1a: Ampharos
+|-damage|p1a: Ampharos|277\/384
+|-damage|p2a: Arcanine|290\/322|[from] item: Life Orb
+|move|p1a: Ampharos|Charge Beam|p2a: Arcanine
+|-damage|p2a: Arcanine|155\/322
+|
+|turn|5
+|
+|move|p2a: Arcanine|Morning Sun|p2a: Arcanine
+|-heal|p2a: Arcanine|316\/322
+|move|p1a: Ampharos|Charge Beam|p2a: Arcanine|[miss]
+|-miss|p1a: Ampharos|p2a: Arcanine
+|
+|turn|6
+|
+|move|p2a: Arcanine|Flare Blitz|p1a: Ampharos
+|-resisted|p1a: Ampharos
+|-damage|p1a: Ampharos|155\/384
+|-damage|p2a: Arcanine|276\/322|[from] recoil|[of] p1a: Ampharos
+|-damage|p2a: Arcanine|244\/322|[from] item: Life Orb
+|move|p1a: Ampharos|Charge Beam|p2a: Arcanine
+|-damage|p2a: Arcanine|115\/322
+|
+|turn|7
+|
+|move|p2a: Arcanine|Morning Sun|p2a: Arcanine
+|-heal|p2a: Arcanine|276\/322
+|move|p1a: Ampharos|Rest|p1a: Ampharos
+|-status|p1a: Ampharos|slp
+|-heal|p1a: Ampharos|384\/384 slp|[silent]
+|-status|p1a: Ampharos|slp|[from] move: Rest
+|
+|turn|8
+|
+|move|p2a: Arcanine|Extreme Speed|p1a: Ampharos
+|-crit|p1a: Ampharos
+|-damage|p1a: Ampharos|199\/384 slp
+|-damage|p2a: Arcanine|244\/322|[from] item: Life Orb
+|cant|p1a: Ampharos|slp
+|move|p1a: Ampharos|Sleep Talk|p1a: Ampharos
+|move|p1a: Ampharos|Charge Beam|p2a: Arcanine|[from]Sleep Talk
+|-damage|p2a: Arcanine|97\/322
+|-boost|p1a: Ampharos|spa|1
+|
+|turn|9
+|
+|move|p2a: Arcanine|Morning Sun|p2a: Arcanine
+|-heal|p2a: Arcanine|258\/322
+|cant|p1a: Ampharos|slp
+|move|p1a: Ampharos|Sleep Talk|p1a: Ampharos
+|move|p1a: Ampharos|Rest|p1a: Ampharos|[from]Sleep Talk
+|-fail|p1a: Ampharos
+|
+|turn|10
+|
+|move|p2a: Arcanine|Extreme Speed|p1a: Ampharos
+|-damage|p1a: Ampharos|86\/384 slp
+|-damage|p2a: Arcanine|226\/322|[from] item: Life Orb
+|-curestatus|p1a: Ampharos|slp
+|move|p1a: Ampharos|Rest|p1a: Ampharos
+|-status|p1a: Ampharos|slp
+|-heal|p1a: Ampharos|384\/384 slp|[silent]
+|-status|p1a: Ampharos|slp|[from] move: Rest
+|
+|turn|11
+|
+|switch|p2a: Kingdra|Kingdra, F|291\/291
+|cant|p1a: Ampharos|slp
+|move|p1a: Ampharos|Sleep Talk|p1a: Ampharos
+|move|p1a: Ampharos|Dragon Pulse|p2a: Kingdra|[from]Sleep Talk
+|-supereffective|p2a: Kingdra
+|-damage|p2a: Kingdra|0 fnt
+|faint|p2a: Kingdra
+|
+|
+|switch|p2a: vitamin c|Absol, M, shiny|272\/272
+|turn|12
+|
+|move|p2a: vitamin c|Psycho Cut|p1a: Ampharos
+|-crit|p1a: Ampharos
+|-damage|p1a: Ampharos|267\/384 slp
+|cant|p1a: Ampharos|slp
+|move|p1a: Ampharos|Sleep Talk|p1a: Ampharos
+|move|p1a: Ampharos|Dragon Pulse|p2a: vitamin c|[from]Sleep Talk
+|-damage|p2a: vitamin c|0 fnt
+|faint|p2a: vitamin c
+|
+|
+|switch|p2a: Umbreon|Umbreon, F|394\/394
+|turn|13
+|
+|move|p2a: Umbreon|Foul Play|p1a: Ampharos
+|-damage|p1a: Ampharos|209\/384 slp
+|-curestatus|p1a: Ampharos|slp
+|move|p1a: Ampharos|Rest|p1a: Ampharos
+|-status|p1a: Ampharos|slp
+|-heal|p1a: Ampharos|384\/384 slp|[silent]
+|-status|p1a: Ampharos|slp|[from] move: Rest
+|
+|turn|14
+|
+|move|p2a: Umbreon|Confuse Ray|p1a: Ampharos
+|-start|p1a: Ampharos|confusion
+|cant|p1a: Ampharos|slp
+|-activate|p1a: Ampharos|confusion
+|-damage|p1a: Ampharos|367\/384 slp|[from] confusion
+|
+|turn|15
+|
+|move|p2a: Umbreon|Foul Play|p1a: Ampharos
+|-damage|p1a: Ampharos|301\/384 slp
+|cant|p1a: Ampharos|slp
+|-end|p1a: Ampharos|confusion
+|move|p1a: Ampharos|Sleep Talk|p1a: Ampharos
+|move|p1a: Ampharos|Charge Beam|p2a: Umbreon|[from]Sleep Talk|[miss]
+|-miss|p1a: Ampharos|p2a: Umbreon
+|
+|turn|16
+|
+|move|p2a: Umbreon|Confuse Ray|p1a: Ampharos
+|-start|p1a: Ampharos|confusion
+|-curestatus|p1a: Ampharos|slp
+|-activate|p1a: Ampharos|confusion
+|move|p1a: Ampharos|Rest|p1a: Ampharos
+|-status|p1a: Ampharos|slp
+|-heal|p1a: Ampharos|384\/384 slp|[silent]
+|-status|p1a: Ampharos|slp|[from] move: Rest
+|
+|turn|17
+|
+|move|p2a: Umbreon|Foul Play|p1a: Ampharos
+|-damage|p1a: Ampharos|324\/384 slp
+|cant|p1a: Ampharos|slp
+|-activate|p1a: Ampharos|confusion
+|move|p1a: Ampharos|Sleep Talk|p1a: Ampharos
+|move|p1a: Ampharos|Dragon Pulse|p2a: Umbreon|[from]Sleep Talk
+|-damage|p2a: Umbreon|172\/394
+|
+|turn|18
+|-message|ronconcamy forfeited.
+|
+|win|Tawd
+|raw|Ladder updating...
+|leave|ronconcamy
+|player|p2
+|raw|Tawd's rating: 1115 &rarr; <strong>1146<\/strong><br \/>(+31 for winning)
+|raw|ronconcamy's rating: 1208 &rarr; <strong>1176<\/strong><br \/>(-32 for losing)

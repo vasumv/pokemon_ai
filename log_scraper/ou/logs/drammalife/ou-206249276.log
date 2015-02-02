@@ -1,0 +1,319 @@
+|join|drammalife
+|join|shrkattack
+|player|p1|drammalife|1
+|player|p2|shrkattack|265
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Scizor, M
+|poke|p1|Froslass, F
+|poke|p1|Azelf
+|poke|p1|Bisharp, F
+|poke|p1|Raikou
+|poke|p1|Latios, M
+|poke|p2|Landorus-Therian, M
+|poke|p2|Charizard, M
+|poke|p2|Latios, M
+|poke|p2|Sableye, F
+|poke|p2|Gengar, M
+|poke|p2|Rotom-Wash
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Azelf|Azelf|291\/291
+|switch|p2a: Sableye|Sableye, F|304\/304
+|turn|1
+|
+|switch|p1a: Raikou|Raikou|321\/321
+|-ability|p1a: Raikou|Pressure
+|move|p2a: Sableye|Taunt|p1a: Raikou
+|-start|p1a: Raikou|move: Taunt
+|
+|turn|2
+|
+|move|p2a: Sableye|Will-O-Wisp|p1a: Raikou
+|-status|p1a: Raikou|brn
+|move|p1a: Raikou|Hidden Power|p2a: Sableye
+|-damage|p2a: Sableye|215\/304
+|
+|-heal|p2a: Sableye|234\/304|[from] item: Leftovers
+|-damage|p1a: Raikou|281\/321 brn|[from] brn
+|turn|3
+|
+|switch|p1a: Latios|Latios, M|301\/301
+|move|p2a: Sableye|Will-O-Wisp|p1a: Latios
+|-status|p1a: Latios|brn
+|
+|-heal|p2a: Sableye|253\/304|[from] item: Leftovers
+|-damage|p1a: Latios|264\/301 brn|[from] brn
+|turn|4
+|
+|move|p2a: Sableye|Confuse Ray|p1a: Latios
+|-start|p1a: Latios|confusion
+|-activate|p1a: Latios|confusion
+|move|p1a: Latios|Calm Mind|p1a: Latios
+|-boost|p1a: Latios|spa|1
+|-boost|p1a: Latios|spd|1
+|
+|-heal|p2a: Sableye|272\/304|[from] item: Leftovers
+|-damage|p1a: Latios|227\/301 brn|[from] brn
+|turn|5
+|
+|move|p2a: Sableye|Taunt|p1a: Latios
+|-start|p1a: Latios|move: Taunt
+|-activate|p1a: Latios|confusion
+|-damage|p1a: Latios|205\/301 brn|[from] confusion
+|
+|-heal|p2a: Sableye|291\/304|[from] item: Leftovers
+|-damage|p1a: Latios|168\/301 brn|[from] brn
+|turn|6
+|
+|move|p2a: Sableye|Recover|p2a: Sableye
+|-heal|p2a: Sableye|304\/304
+|-activate|p1a: Latios|confusion
+|-damage|p1a: Latios|149\/301 brn|[from] confusion
+|
+|-damage|p1a: Latios|112\/301 brn|[from] brn
+|turn|7
+|
+|move|p2a: Sableye|Will-O-Wisp|p1a: Latios
+|-fail|p1a: Latios|brn
+|-activate|p1a: Latios|confusion
+|-damage|p1a: Latios|91\/301 brn|[from] confusion
+|
+|-damage|p1a: Latios|54\/301 brn|[from] brn
+|-end|p1a: Latios|move: Taunt
+|turn|8
+|
+|move|p2a: Sableye|Taunt|p1a: Latios
+|-start|p1a: Latios|move: Taunt
+|-end|p1a: Latios|confusion
+|move|p1a: Latios|Draco Meteor|p2a: Sableye
+|-damage|p2a: Sableye|0 fnt
+|-unboost|p1a: Latios|spa|2
+|-damage|p1a: Latios|24\/301 brn|[from] item: Life Orb
+|faint|p2a: Sableye
+|
+|-damage|p1a: Latios|0 fnt|[from] brn
+|faint|p1a: Latios
+|
+|switch|p1a: Azelf|Azelf|291\/291
+|switch|p2a: Charizard|Charizard, M|359\/359
+|turn|9
+|
+|detailschange|p2a: Charizard|Charizard-Mega-Y, M
+|-mega|p2a: Charizard|Charizard|Charizardite Y
+|-weather|SunnyDay
+|move|p1a: Azelf|Stealth Rock|p2a: Charizard
+|-sidestart|p2: shrkattack|move: Stealth Rock
+|move|p2a: Charizard|Flare Blitz|p1a: Azelf
+|-enditem|p1a: Azelf|Focus Sash
+|-damage|p1a: Azelf|1\/291
+|-damage|p2a: Charizard|263\/359|[from] recoil|[of] p1a: Azelf
+|
+|-weather|SunnyDay|[upkeep]
+|turn|10
+|
+|switch|p1a: Raikou|Raikou|281\/321 brn
+|-ability|p1a: Raikou|Pressure
+|switch|p2a: Gengar|Gengar, M|261\/261
+|-damage|p2a: Gengar|229\/261|[from] Stealth Rock
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Raikou|241\/321 brn|[from] brn
+|turn|11
+|
+|move|p1a: Raikou|Shadow Ball|p2a: Gengar
+|-supereffective|p2a: Gengar
+|-damage|p2a: Gengar|0 fnt
+|faint|p2a: Gengar
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Raikou|201\/321 brn|[from] brn
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|303\/303
+|-damage|p2a: Rotom-Wash|266\/303|[from] Stealth Rock
+|turn|12
+|
+|move|p1a: Raikou|Shadow Ball|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|187\/303
+|move|p2a: Rotom-Wash|Hidden Power|p1a: Raikou
+|-damage|p1a: Raikou|149\/321 brn
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Raikou|109\/321 brn|[from] brn
+|turn|13
+|
+|move|p1a: Raikou|Shadow Ball|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|104\/303
+|-unboost|p2a: Rotom-Wash|spd|1
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Raikou
+|-damage|p1a: Raikou|40\/321 brn
+|
+|-weather|none
+|-damage|p1a: Raikou|0 fnt|[from] brn
+|faint|p1a: Raikou
+|
+|switch|p1a: Froslass|Froslass, F|281\/281
+|turn|14
+|
+|move|p1a: Froslass|Icy Wind|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|68\/303
+|-unboost|p2a: Rotom-Wash|spe|1
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Froslass
+|-damage|p1a: Froslass|157\/281
+|
+|switch|p2a: Charizard|Charizard-Mega-Y, M|263\/359
+|-damage|p2a: Charizard|84\/359|[from] Stealth Rock
+|-weather|SunnyDay
+|
+|-weather|SunnyDay|[upkeep]
+|turn|15
+|
+|move|p1a: Froslass|Destiny Bond|p1a: Froslass
+|-singlemove|p1a: Froslass|Destiny Bond
+|move|p2a: Charizard|Roost|p2a: Charizard
+|-heal|p2a: Charizard|264\/359
+|
+|-weather|SunnyDay|[upkeep]
+|turn|16
+|
+|move|p1a: Froslass|Taunt|p2a: Charizard
+|-start|p2a: Charizard|move: Taunt
+|cant|p2a: Charizard|move: Taunt|Roost
+|
+|-weather|SunnyDay|[upkeep]
+|turn|17
+|
+|switch|p2a: Latios|Latios, M|301\/301
+|-damage|p2a: Latios|264\/301|[from] Stealth Rock
+|move|p1a: Froslass|Destiny Bond|p1a: Froslass
+|-singlemove|p1a: Froslass|Destiny Bond
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Latios|282\/301|[from] item: Leftovers
+|turn|18
+|
+|move|p2a: Latios|Defog|p1a: Froslass
+|-unboost|p1a: Froslass|evasion|1
+|-sideend|p2: shrkattack|Stealth Rock|[from] move: Defog|[of] p2a: Latios
+|move|p1a: Froslass|Icy Wind|p2a: Latios
+|-supereffective|p2a: Latios
+|-damage|p2a: Latios|156\/301
+|-unboost|p2a: Latios|spe|1
+|
+|-weather|none
+|-heal|p2a: Latios|174\/301|[from] item: Leftovers
+|turn|19
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|68\/303
+|move|p1a: Froslass|Taunt|p2a: Rotom-Wash
+|-start|p2a: Rotom-Wash|move: Taunt
+|
+|turn|20
+|
+|move|p1a: Froslass|Icy Wind|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|45\/303
+|-unboost|p2a: Rotom-Wash|spe|1
+|move|p2a: Rotom-Wash|Discharge|p1a: Froslass
+|-damage|p1a: Froslass|24\/281
+|
+|turn|21
+|
+|switch|p2a: Charizard|Charizard-Mega-Y, M|264\/359
+|-weather|SunnyDay
+|move|p1a: Froslass|Destiny Bond|p1a: Froslass
+|-singlemove|p1a: Froslass|Destiny Bond
+|
+|-weather|SunnyDay|[upkeep]
+|turn|22
+|
+|move|p1a: Froslass|Taunt|p2a: Charizard
+|-start|p2a: Charizard|move: Taunt
+|cant|p2a: Charizard|move: Taunt|Roost
+|
+|-weather|SunnyDay|[upkeep]
+|turn|23
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|45\/303
+|move|p1a: Froslass|Icy Wind|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|24\/303
+|-unboost|p2a: Rotom-Wash|spe|1
+|
+|-weather|SunnyDay|[upkeep]
+|turn|24
+|
+|move|p1a: Froslass|Destiny Bond|p1a: Froslass
+|-singlemove|p1a: Froslass|Destiny Bond
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Froslass
+|-damage|p1a: Froslass|0 fnt
+|faint|p1a: Froslass
+|-activate|p1a: Froslass|Destiny Bond
+|faint|p2a: Rotom-Wash
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p1a: Azelf|Azelf|1\/291
+|switch|p2a: Charizard|Charizard-Mega-Y, M|264\/359
+|turn|25
+|
+|move|p1a: Azelf|Stealth Rock|p2a: Charizard
+|-sidestart|p2: shrkattack|move: Stealth Rock
+|move|p2a: Charizard|Flare Blitz|p1a: Azelf
+|-damage|p1a: Azelf|0 fnt
+|-damage|p2a: Charizard|263\/359|[from] recoil|[of] p1a: Azelf
+|faint|p1a: Azelf
+|
+|-weather|none
+|
+|switch|p1a: Bisharp|Bisharp, F|271\/271
+|turn|26
+|
+|switch|p1a: Scizor|Scizor, M|281\/281
+|move|p2a: Charizard|Flare Blitz|p1a: Scizor
+|-supereffective|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|-damage|p2a: Charizard|170\/359|[from] recoil|[of] p1a: Scizor
+|faint|p1a: Scizor
+|
+|
+|switch|p1a: Bisharp|Bisharp, F|271\/271
+|turn|27
+|
+|move|p1a: Bisharp|Sucker Punch|p2a: Charizard
+|-fail|p2a: Charizard
+|move|p2a: Charizard|Roost|p2a: Charizard
+|-heal|p2a: Charizard|350\/359
+|
+|turn|28
+|
+|move|p1a: Bisharp|Sucker Punch|p2a: Charizard
+|-damage|p2a: Charizard|95\/359
+|-damage|p1a: Bisharp|244\/271|[from] item: Life Orb
+|move|p2a: Charizard|Flare Blitz|p1a: Bisharp
+|-supereffective|p1a: Bisharp
+|-damage|p1a: Bisharp|0 fnt
+|-damage|p2a: Charizard|14\/359|[from] recoil|[of] p1a: Bisharp
+|faint|p1a: Bisharp
+|
+|win|shrkattack
+|raw|Ladder updating...
+|raw|drammalife's rating: 1465 &rarr; <strong>1446<\/strong><br \/>(-19 for losing)
+|raw|shrkattack's rating: 1470 &rarr; <strong>1490<\/strong><br \/>(+20 for winning)
+|c|âshrkattack|gg
+|leave|drammalife
+|player|p1

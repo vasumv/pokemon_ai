@@ -1,0 +1,494 @@
+|join|Hogback_fosh_men
+|join|reachzero
+|player|p1|Hogback_fosh_men|2
+|player|p2|reachzero|15
+|gametype|singles
+|gen|6
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Ampharos, F
+|poke|p1|Arcanine, M
+|poke|p1|Shaymin, shiny
+|poke|p1|Staraptor, F
+|poke|p1|Empoleon, F
+|poke|p1|Machamp, F
+|poke|p2|Nidoking, M, shiny
+|poke|p2|Heracross, F, shiny
+|poke|p2|Chansey, F, shiny
+|poke|p2|Slowbro, F, shiny
+|poke|p2|Mismagius, F, shiny
+|poke|p2|Aggron, M, shiny
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: ULiftBro?|Machamp, F|369\/369
+|switch|p2a: Heracross|Heracross, F, shiny|302\/302
+|turn|1
+|callback|decision
+|
+|move|p2a: Heracross|Close Combat|p1a: ULiftBro?
+|-damage|p1a: ULiftBro?|122\/369
+|-unboost|p2a: Heracross|def|1
+|-unboost|p2a: Heracross|spd|1
+|move|p1a: ULiftBro?|Knock Off|p2a: Heracross
+|-resisted|p2a: Heracross
+|-damage|p2a: Heracross|158\/302
+|-enditem|p2a: Heracross|Choice Scarf|[from] move: Knock Off|[of] p1a: ULiftBro?
+|-damage|p1a: ULiftBro?|86\/369|[from] item: Life Orb
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: BattleWolf|Arcanine, M|372\/372
+|-ability|p1a: BattleWolf|Intimidate|[of] p2a: Heracross
+|-unboost|p2a: Heracross|atk|1
+|move|p2a: Heracross|Close Combat|p1a: BattleWolf
+|-damage|p1a: BattleWolf|245\/372
+|-unboost|p2a: Heracross|def|1
+|-unboost|p2a: Heracross|spd|1
+|
+|-heal|p1a: BattleWolf|268\/372|[from] item: Leftovers
+|turn|3
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, F, shiny|394\/394
+|move|p1a: BattleWolf|Will-O-Wisp|p2a: Slowbro
+|-status|p2a: Slowbro|brn
+|
+|-heal|p1a: BattleWolf|291\/372|[from] item: Leftovers
+|-damage|p2a: Slowbro|345\/394 brn|[from] brn
+|turn|4
+|callback|decision
+|
+|switch|p2a: Heracross|Heracross, F, shiny|158\/302
+|move|p1a: BattleWolf|Snarl|p2a: Heracross
+|-crit|p2a: Heracross
+|-resisted|p2a: Heracross
+|-damage|p2a: Heracross|119\/302
+|-unboost|p2a: Heracross|spa|1
+|
+|-heal|p1a: BattleWolf|314\/372|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p2a: Heracross|Stone Edge|p1a: BattleWolf
+|-crit|p1a: BattleWolf
+|-supereffective|p1a: BattleWolf
+|-damage|p1a: BattleWolf|0 fnt
+|faint|p1a: BattleWolf
+|-boost|p2a: Heracross|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|switch|p1a: Starapetor|Staraptor, F|312\/312
+|turn|6
+|callback|decision
+|
+|switch|p2a: Aggron|Aggron, M, shiny|344\/344
+|move|p1a: Starapetor|Brave Bird|p2a: Aggron
+|-resisted|p2a: Aggron
+|-damage|p2a: Aggron|308\/344
+|-damage|p1a: Starapetor|300\/312|[from] recoil|[of] p2a: Aggron
+|
+|turn|7
+|callback|decision
+|
+|switch|p1a: Empoleon|Empoleon, F|364\/364
+|-formechange|p2a: Aggron|Aggron-Mega
+|message|Aggron has Mega Evolved into Mega Aggron!
+|move|p2a: Aggron|Heavy Slam|p1a: Empoleon
+|-resisted|p1a: Empoleon
+|-damage|p1a: Empoleon|310\/364
+|
+|-heal|p1a: Empoleon|332\/364|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p2a: Chansey|Chansey, F, shiny|704\/704
+|move|p1a: Empoleon|Scald|p2a: Chansey
+|-damage|p2a: Chansey|617\/704
+|
+|-heal|p1a: Empoleon|354\/364|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p1a: Empoleon|Stealth Rock|p2a: Chansey
+|-sidestart|p2: reachzero|move: Stealth Rock
+|move|p2a: Chansey|Toxic|p1a: Empoleon
+|-fail|p1a: Empoleon
+|
+|-heal|p1a: Empoleon|364\/364|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p1a: Empoleon|Scald|p2a: Chansey
+|-damage|p2a: Chansey|530\/704
+|move|p2a: Chansey|Seismic Toss|p1a: Empoleon
+|-damage|p1a: Empoleon|264\/364
+|
+|-heal|p1a: Empoleon|286\/364|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p1a: Empoleon|Scald|p2a: Chansey
+|-damage|p2a: Chansey|445\/704
+|move|p2a: Chansey|Seismic Toss|p1a: Empoleon
+|-damage|p1a: Empoleon|186\/364
+|
+|-heal|p1a: Empoleon|208\/364|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Empoleon|Scald|p2a: Chansey
+|-damage|p2a: Chansey|360\/704
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|704\/704
+|
+|-heal|p1a: Empoleon|230\/364|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p1a: Shaymin|Shaymin, shiny|381\/381
+|move|p2a: Chansey|Seismic Toss|p1a: Shaymin
+|-damage|p1a: Shaymin|281\/381
+|
+|-heal|p1a: Shaymin|304\/381|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: Shaymin|Leech Seed|p2a: Chansey
+|-start|p2a: Chansey|move: Leech Seed
+|move|p2a: Chansey|Toxic|p1a: Shaymin
+|-status|p1a: Shaymin|tox
+|
+|-heal|p1a: Shaymin|327\/381 tox|[from] item: Leftovers
+|-damage|p2a: Chansey|616\/704|[from] Leech Seed|[of] p1a: Shaymin
+|-heal|p1a: Shaymin|381\/381 tox|[silent]
+|-damage|p1a: Shaymin|358\/381 tox|[from] psn
+|turn|15
+|callback|decision
+|
+|switch|p1a: ULiftBro?|Machamp, F|86\/369
+|move|p2a: Chansey|Heal Bell|p2a: Chansey
+|-cureteam|p2a: Chansey|[from] move: HealBell
+|
+|-damage|p2a: Chansey|528\/704|[from] Leech Seed|[of] p1a: ULiftBro?
+|-heal|p1a: ULiftBro?|174\/369|[silent]
+|turn|16
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, F, shiny|394\/394
+|-damage|p2a: Slowbro|345\/394|[from] Stealth Rock
+|move|p1a: ULiftBro?|Knock Off|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|137\/394
+|-enditem|p2a: Slowbro|Leftovers|[from] move: Knock Off|[of] p1a: ULiftBro?
+|-damage|p1a: ULiftBro?|138\/369|[from] item: Life Orb
+|
+|turn|17
+|callback|decision
+|
+|move|p1a: ULiftBro?|Knock Off|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|0 fnt
+|-damage|p1a: ULiftBro?|102\/369|[from] item: Life Orb
+|faint|p2a: Slowbro
+|
+|callback|decision
+|
+|switch|p2a: Heracross|Heracross, F, shiny|119\/302
+|-damage|p2a: Heracross|82\/302|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|move|p1a: ULiftBro?|Bullet Punch|p2a: Heracross
+|-damage|p2a: Heracross|0 fnt
+|-damage|p1a: ULiftBro?|66\/369|[from] item: Life Orb
+|faint|p2a: Heracross
+|
+|callback|decision
+|
+|switch|p2a: Nidoking|Nidoking, M, shiny|335\/335
+|-damage|p2a: Nidoking|315\/335|[from] Stealth Rock
+|turn|19
+|callback|decision
+|
+|move|p1a: ULiftBro?|Bullet Punch|p2a: Nidoking
+|-damage|p2a: Nidoking|229\/335
+|-damage|p1a: ULiftBro?|30\/369|[from] item: Life Orb
+|move|p2a: Nidoking|Sludge Wave|p1a: ULiftBro?
+|-damage|p1a: ULiftBro?|0 fnt
+|faint|p1a: ULiftBro?
+|
+|callback|decision
+|
+|switch|p1a: Starapetor|Staraptor, F|300\/312
+|turn|20
+|callback|decision
+|
+|move|p1a: Starapetor|U-turn|p2a: Nidoking
+|-resisted|p2a: Nidoking
+|-damage|p2a: Nidoking|179\/335
+|callback|decision
+|
+|switch|p1a: Empoleon|Empoleon, F|230\/364
+|move|p2a: Nidoking|Sludge Wave|p1a: Empoleon
+|-immune|p1a: Empoleon|[msg]
+|
+|-heal|p1a: Empoleon|252\/364|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p2a: Nidoking|Earth Power|p1a: Empoleon
+|-supereffective|p1a: Empoleon
+|-damage|p1a: Empoleon|0 fnt
+|faint|p1a: Empoleon
+|
+|callback|decision
+|
+|switch|p1a: Starapetor|Staraptor, F|300\/312
+|turn|22
+|callback|decision
+|
+|move|p1a: Starapetor|Brave Bird|p2a: Nidoking
+|-crit|p2a: Nidoking
+|-damage|p2a: Nidoking|0 fnt
+|-damage|p1a: Starapetor|241\/312|[from] recoil|[of] p2a: Nidoking
+|faint|p2a: Nidoking
+|
+|callback|decision
+|
+|switch|p2a: Aggron|Aggron, M, shiny|308\/344
+|-formechange|p2a: Aggron|Aggron-Mega
+|-damage|p2a: Aggron|287\/344|[from] Stealth Rock
+|turn|23
+|callback|decision
+|
+|switch|p1a: Amphy|Ampharos, F|366\/366
+|move|p2a: Aggron|Heavy Slam|p1a: Amphy
+|-resisted|p1a: Amphy
+|-damage|p1a: Amphy|246\/366
+|
+|turn|24
+|callback|decision
+|
+|switch|p2a: Chansey|Chansey, F, shiny|528\/704
+|-damage|p2a: Chansey|440\/704|[from] Stealth Rock
+|-formechange|p1a: Amphy|Ampharos-Mega
+|message|Ampharos has Mega Evolved into Mega Ampharos!
+|-ability|p1a: Amphy|Mold Breaker
+|move|p1a: Amphy|Thunderbolt|p2a: Chansey
+|-damage|p2a: Chansey|325\/704
+|
+|turn|25
+|callback|decision
+|
+|move|p2a: Chansey|Toxic|p1a: Amphy
+|-status|p1a: Amphy|tox
+|move|p1a: Amphy|Thunder Wave|p2a: Chansey
+|-status|p2a: Chansey|par
+|
+|-damage|p1a: Amphy|224\/366 tox|[from] psn
+|turn|26
+|callback|decision
+|
+|move|p1a: Amphy|Volt Switch|p2a: Chansey
+|-crit|p2a: Chansey
+|-damage|p2a: Chansey|184\/704 par
+|callback|decision
+|
+|switch|p1a: Shaymin|Shaymin, shiny|358\/381
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|536\/704 par
+|
+|-heal|p1a: Shaymin|381\/381|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|move|p1a: Shaymin|Leech Seed|p2a: Chansey
+|-start|p2a: Chansey|move: Leech Seed
+|move|p2a: Chansey|Toxic|p1a: Shaymin
+|-status|p1a: Shaymin|tox
+|
+|-damage|p2a: Chansey|448\/704 par|[from] Leech Seed|[of] p1a: Shaymin
+|-damage|p1a: Shaymin|358\/381 tox|[from] psn
+|turn|28
+|callback|decision
+|
+|switch|p1a: Starapetor|Staraptor, F|241\/312
+|switch|p2a: Mismagius|Mismagius, F, shiny|262\/262
+|-damage|p2a: Mismagius|230\/262|[from] Stealth Rock
+|
+|turn|29
+|callback|decision
+|
+|switch|p2a: Chansey|Chansey, F, shiny|448\/704
+|-damage|p2a: Chansey|360\/704|[from] Stealth Rock
+|move|p1a: Starapetor|U-turn|p2a: Chansey
+|-damage|p2a: Chansey|227\/704
+|callback|decision
+|
+|switch|p1a: Shaymin|Shaymin, shiny|358\/381
+|
+|-heal|p1a: Shaymin|381\/381|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|move|p1a: Shaymin|Leech Seed|p2a: Chansey
+|-start|p2a: Chansey|move: Leech Seed
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|579\/704
+|
+|-damage|p2a: Chansey|491\/704|[from] Leech Seed|[of] p1a: Shaymin
+|turn|31
+|callback|decision
+|
+|switch|p1a: Starapetor|Staraptor, F|241\/312
+|move|p2a: Chansey|Toxic|p1a: Starapetor
+|-status|p1a: Starapetor|tox
+|
+|-damage|p2a: Chansey|403\/704|[from] Leech Seed|[of] p1a: Starapetor
+|-heal|p1a: Starapetor|312\/312 tox|[silent]
+|-damage|p1a: Starapetor|293\/312 tox|[from] psn
+|turn|32
+|callback|decision
+|
+|move|p1a: Starapetor|U-turn|p2a: Chansey
+|-crit|p2a: Chansey
+|-damage|p2a: Chansey|226\/704
+|callback|decision
+|
+|switch|p1a: Shaymin|Shaymin, shiny|381\/381
+|move|p2a: Chansey|Soft-Boiled|p2a: Chansey
+|-heal|p2a: Chansey|578\/704
+|
+|-damage|p2a: Chansey|490\/704|[from] Leech Seed|[of] p1a: Shaymin
+|turn|33
+|callback|decision
+|
+|move|p1a: Shaymin|Seed Flare|p2a: Chansey
+|-damage|p2a: Chansey|370\/704
+|move|p2a: Chansey|Toxic|p1a: Shaymin
+|-status|p1a: Shaymin|tox
+|
+|-damage|p2a: Chansey|282\/704|[from] Leech Seed|[of] p1a: Shaymin
+|-damage|p1a: Shaymin|358\/381 tox|[from] psn
+|turn|34
+|callback|decision
+|
+|switch|p1a: Amphy|Ampharos, F|224\/366 tox
+|-formechange|p1a: Amphy|Ampharos-Mega
+|-ability|p1a: Amphy|Mold Breaker
+|switch|p2a: Mismagius|Mismagius, F, shiny|230\/262
+|-damage|p2a: Mismagius|198\/262|[from] Stealth Rock
+|
+|-damage|p1a: Amphy|202\/366 tox|[from] psn
+|turn|35
+|callback|decision
+|
+|move|p2a: Mismagius|Shadow Ball|p1a: Amphy
+|-damage|p1a: Amphy|39\/366 tox
+|-unboost|p1a: Amphy|spd|1
+|move|p1a: Amphy|Volt Switch|p2a: Mismagius
+|-damage|p2a: Mismagius|27\/262
+|callback|decision
+|
+|switch|p1a: Starapetor|Staraptor, F|293\/312 tox
+|
+|-damage|p1a: Starapetor|274\/312 tox|[from] psn
+|turn|36
+|callback|decision
+|
+|move|p1a: Starapetor|U-turn|p2a: Mismagius
+|-resisted|p2a: Mismagius
+|-damage|p2a: Mismagius|0 fnt
+|faint|p2a: Mismagius
+|callback|decision
+|
+|switch|p1a: Shaymin|Shaymin, shiny|358\/381
+|
+|-heal|p1a: Shaymin|381\/381|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Aggron|Aggron, M, shiny|287\/344
+|-formechange|p2a: Aggron|Aggron-Mega
+|-damage|p2a: Aggron|266\/344|[from] Stealth Rock
+|turn|37
+|callback|decision
+|
+|move|p1a: Shaymin|Leech Seed|p2a: Aggron
+|-start|p2a: Aggron|move: Leech Seed
+|move|p2a: Aggron|Stealth Rock|p1a: Shaymin
+|-sidestart|p1: Hogback_fosh_men|move: Stealth Rock
+|
+|-damage|p2a: Aggron|223\/344|[from] Leech Seed|[of] p1a: Shaymin
+|turn|38
+|callback|decision
+|
+|switch|p2a: Chansey|Chansey, F, shiny|282\/704
+|-damage|p2a: Chansey|194\/704|[from] Stealth Rock
+|move|p1a: Shaymin|Seed Flare|p2a: Chansey
+|-damage|p2a: Chansey|68\/704
+|
+|turn|39
+|callback|decision
+|
+|move|p1a: Shaymin|Seed Flare|p2a: Chansey
+|-damage|p2a: Chansey|0 fnt
+|faint|p2a: Chansey
+|
+|callback|decision
+|
+|switch|p2a: Aggron|Aggron, M, shiny|223\/344
+|-formechange|p2a: Aggron|Aggron-Mega
+|-damage|p2a: Aggron|202\/344|[from] Stealth Rock
+|turn|40
+|callback|decision
+|
+|move|p1a: Shaymin|Leech Seed|p2a: Aggron
+|-start|p2a: Aggron|move: Leech Seed
+|move|p2a: Aggron|Heavy Slam|p1a: Shaymin
+|-damage|p1a: Shaymin|128\/381
+|
+|-heal|p1a: Shaymin|151\/381|[from] item: Leftovers
+|-damage|p2a: Aggron|159\/344|[from] Leech Seed|[of] p1a: Shaymin
+|-heal|p1a: Shaymin|194\/381|[silent]
+|turn|41
+|callback|decision
+|chat|reachzero|gg
+|
+|move|p1a: Shaymin|Seed Flare|p2a: Aggron
+|-resisted|p2a: Aggron
+|-damage|p2a: Aggron|44\/344
+|move|p2a: Aggron|Heavy Slam|p1a: Shaymin
+|-damage|p1a: Shaymin|0 fnt
+|faint|p1a: Shaymin
+|
+|callback|decision
+|chat|Hogback_fosh_men|gg
+|
+|switch|p1a: Starapetor|Staraptor, F|274\/312 tox
+|-damage|p1a: Starapetor|196\/312 tox|[from] Stealth Rock
+|turn|42
+|callback|decision
+|
+|move|p1a: Starapetor|Close Combat|p2a: Aggron
+|-supereffective|p2a: Aggron
+|-damage|p2a: Aggron|0 fnt
+|-unboost|p1a: Starapetor|def|1
+|-unboost|p1a: Starapetor|spd|1
+|faint|p2a: Aggron
+|
+|win|Hogback_fosh_men
+|raw|Ladder updating...
+|raw|Hogback_fosh_men's rating: 1531 &rarr; <strong>1547<\/strong><br \/>(+16 for winning)
+|raw|reachzero's rating: 1393 &rarr; <strong>1377<\/strong><br \/>(-16 for losing)

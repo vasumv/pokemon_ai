@@ -1,0 +1,302 @@
+|join|gobosox56
+|join|Mr. Cupro
+|player|p1|gobosox56|99
+|player|p2|Mr. Cupro|2
+|gametype|singles
+|tier|UU (current)
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Sableye, F, shiny
+|poke|p1|Gorebyss, M
+|poke|p1|Ludicolo, F
+|poke|p1|Kingdra, M
+|poke|p1|Huntail, F
+|poke|p1|Tornadus, M
+|poke|p2|Arcanine, M
+|poke|p2|Roserade, F
+|poke|p2|Mismagius, F
+|poke|p2|Empoleon, M
+|poke|p2|Heracross, M
+|poke|p2|Umbreon, F
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Tornadus|Tornadus, M|362\/362
+|switch|p2a: Heracross|Heracross, M|302\/302
+|turn|1
+|callback|decision
+|
+|move|p1a: Tornadus|Rain Dance|p1a: Tornadus
+|-weather|RainDance
+|move|p2a: Heracross|Stone Edge|p1a: Tornadus
+|-supereffective|p1a: Tornadus
+|-damage|p1a: Tornadus|26\/362
+|
+|-weather|RainDance|[upkeep]
+|turn|2
+|callback|decision
+|
+|move|p2a: Heracross|Stone Edge|p1a: Tornadus
+|-crit|p1a: Tornadus
+|-supereffective|p1a: Tornadus
+|-damage|p1a: Tornadus|0 fnt
+|faint|p1a: Tornadus
+|-boost|p2a: Heracross|atk|1|[from] ability: Moxie
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Gorebyss|Gorebyss, M|252\/252
+|turn|3
+|callback|decision
+|
+|move|p2a: Heracross|Stone Edge|p1a: Gorebyss
+|-damage|p1a: Gorebyss|90\/252
+|move|p1a: Gorebyss|Surf|p2a: Heracross
+|-damage|p2a: Heracross|43\/302
+|
+|-weather|RainDance|[upkeep]
+|turn|4
+|callback|decision
+|
+|move|p2a: Heracross|Stone Edge|p1a: Gorebyss
+|-damage|p1a: Gorebyss|0 fnt
+|faint|p1a: Gorebyss
+|-boost|p2a: Heracross|atk|1|[from] ability: Moxie
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p1a: Huntail|Huntail, F|252\/252
+|turn|5
+|callback|decision
+|
+|move|p2a: Heracross|Stone Edge|p1a: Huntail
+|-damage|p1a: Huntail|24\/252
+|move|p1a: Huntail|Shell Smash|p1a: Huntail
+|-boost|p1a: Huntail|atk|2
+|-boost|p1a: Huntail|spa|2
+|-boost|p1a: Huntail|spe|2
+|-unboost|p1a: Huntail|def|1
+|-unboost|p1a: Huntail|spd|1
+|
+|-weather|RainDance|[upkeep]
+|turn|6
+|callback|decision
+|
+|move|p1a: Huntail|Waterfall|p2a: Heracross
+|-damage|p2a: Heracross|0 fnt
+|faint|p2a: Heracross
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Umbreon|Umbreon, F|394\/394
+|turn|7
+|callback|decision
+|
+|move|p1a: Huntail|Waterfall|p2a: Umbreon
+|-damage|p2a: Umbreon|46\/394
+|move|p2a: Umbreon|Foul Play|p1a: Huntail
+|-damage|p1a: Huntail|0 fnt
+|faint|p1a: Huntail
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Umbreon|70\/394|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Ludicolo|Ludicolo, F|301\/301
+|turn|8
+|callback|decision
+|join|bad plays good
+|
+|move|p1a: Ludicolo|Surf|p2a: Umbreon
+|-damage|p2a: Umbreon|0 fnt
+|-damage|p1a: Ludicolo|271\/301|[from] item: Life Orb
+|faint|p2a: Umbreon
+|
+|-weather|none
+|callback|decision
+|
+|switch|p2a: Empoleon|Empoleon, M|372\/372
+|turn|9
+|callback|decision
+|
+|move|p1a: Ludicolo|Rain Dance|p1a: Ludicolo
+|-weather|RainDance
+|move|p2a: Empoleon|Toxic|p1a: Ludicolo
+|-status|p1a: Ludicolo|tox
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1a: Ludicolo|253\/301 tox|[from] psn
+|turn|10
+|callback|decision
+|
+|move|p1a: Ludicolo|Giga Drain|p2a: Empoleon
+|-damage|p2a: Empoleon|258\/372
+|-heal|p1a: Ludicolo|301\/301 tox|[from] drain|[of] p2a: Empoleon
+|-damage|p1a: Ludicolo|271\/301 tox|[from] item: Life Orb
+|move|p2a: Empoleon|Stealth Rock|p1a: Ludicolo
+|-sidestart|p1: gobosox56|move: Stealth Rock
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Empoleon|281\/372|[from] item: Leftovers
+|-damage|p1a: Ludicolo|235\/301 tox|[from] psn
+|turn|11
+|callback|decision
+|
+|switch|p2a: Roserade|Roserade, F|324\/324
+|move|p1a: Ludicolo|Surf|p2a: Roserade
+|-resisted|p2a: Roserade
+|-damage|p2a: Roserade|234\/324
+|-damage|p1a: Ludicolo|205\/301 tox|[from] item: Life Orb
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Roserade|254\/324|[from] item: Leftovers
+|-damage|p1a: Ludicolo|151\/301 tox|[from] psn
+|turn|12
+|callback|decision
+|
+|move|p1a: Ludicolo|Ice Beam|p2a: Roserade
+|-supereffective|p2a: Roserade
+|-damage|p2a: Roserade|93\/324
+|-damage|p1a: Ludicolo|121\/301 tox|[from] item: Life Orb
+|move|p2a: Roserade|Spikes|p1a: Ludicolo
+|-sidestart|p1: gobosox56|Spikes
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Roserade|113\/324|[from] item: Leftovers
+|-damage|p1a: Ludicolo|49\/301 tox|[from] psn
+|turn|13
+|callback|decision
+|
+|switch|p2a: Empoleon|Empoleon, M|281\/372
+|move|p1a: Ludicolo|Ice Beam|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|260\/372
+|-damage|p1a: Ludicolo|19\/301 tox|[from] item: Life Orb
+|
+|-weather|none
+|-heal|p2a: Empoleon|283\/372|[from] item: Leftovers
+|-damage|p1a: Ludicolo|0 fnt|[from] psn
+|faint|p1a: Ludicolo
+|callback|decision
+|join|Calloflochie
+|
+|switch|p1a: Sableye|Sableye, F, shiny|303\/303
+|-damage|p1a: Sableye|266\/303|[from] Stealth Rock
+|-damage|p1a: Sableye|229\/303|[from] Spikes
+|turn|14
+|callback|decision
+|leave|Calloflochie
+|
+|move|p1a: Sableye|Rain Dance|p1a: Sableye
+|-weather|RainDance
+|move|p2a: Empoleon|Toxic|p1a: Sableye
+|-status|p1a: Sableye|tox
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Empoleon|306\/372|[from] item: Leftovers
+|-damage|p1a: Sableye|211\/303 tox|[from] psn
+|turn|15
+|callback|decision
+|
+|move|p1a: Sableye|Will-O-Wisp|p2a: Empoleon
+|-status|p2a: Empoleon|brn
+|move|p2a: Empoleon|Toxic|p1a: Sableye
+|-fail|p1a: Sableye|tox
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Empoleon|329\/372 brn|[from] item: Leftovers
+|-damage|p2a: Empoleon|283\/372 brn|[from] brn
+|-damage|p1a: Sableye|175\/303 tox|[from] psn
+|turn|16
+|callback|decision
+|join|barba atun
+|
+|move|p1a: Sableye|Taunt|p2a: Empoleon
+|-start|p2a: Empoleon|move: Taunt
+|move|p2a: Empoleon|Scald|p1a: Sableye
+|-damage|p1a: Sableye|22\/303 tox
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Empoleon|306\/372 brn|[from] item: Leftovers
+|-damage|p2a: Empoleon|260\/372 brn|[from] brn
+|-damage|p1a: Sableye|0 fnt|[from] psn
+|faint|p1a: Sableye
+|callback|decision
+|
+|switch|p1a: Kingdra|Kingdra, M|291\/291
+|-damage|p1a: Kingdra|255\/291|[from] Stealth Rock
+|-damage|p1a: Kingdra|219\/291|[from] Spikes
+|turn|17
+|callback|decision
+|
+|move|p1a: Kingdra|Surf|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|140\/372 brn
+|move|p2a: Empoleon|Scald|p1a: Kingdra
+|-resisted|p1a: Kingdra
+|-damage|p1a: Kingdra|175\/291
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Empoleon|163\/372 brn|[from] item: Leftovers
+|-damage|p2a: Empoleon|117\/372 brn|[from] brn
+|turn|18
+|callback|decision
+|
+|move|p1a: Kingdra|Surf|p2a: Empoleon
+|-resisted|p2a: Empoleon
+|-damage|p2a: Empoleon|0 fnt
+|faint|p2a: Empoleon
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Roserade|Roserade, F|113\/324
+|turn|19
+|callback|decision
+|
+|move|p1a: Kingdra|Surf|p2a: Roserade
+|-resisted|p2a: Roserade
+|-damage|p2a: Roserade|0 fnt
+|faint|p2a: Roserade
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Arcanine|Arcanine, M|384\/384
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Kingdra
+|-unboost|p1a: Kingdra|atk|1
+|turn|20
+|callback|decision
+|
+|move|p1a: Kingdra|Surf|p2a: Arcanine
+|-supereffective|p2a: Arcanine
+|-damage|p2a: Arcanine|0 fnt
+|faint|p2a: Arcanine
+|
+|-weather|RainDance|[upkeep]
+|callback|decision
+|
+|switch|p2a: Mismagius|Mismagius, F|262\/262
+|turn|21
+|callback|decision
+|
+|move|p1a: Kingdra|Surf|p2a: Mismagius
+|-damage|p2a: Mismagius|0 fnt
+|faint|p2a: Mismagius
+|
+|win|gobosox56
+|raw|Ladder updating...
+|raw|gobosox56's rating: 1989 &rarr; <strong>2002<\/strong><br \/>(+13 for winning)
+|raw|Mr. Cupro's rating: 1595 &rarr; <strong>1575<\/strong><br \/>(-20 for losing)
+|chat|gobosox56|gg

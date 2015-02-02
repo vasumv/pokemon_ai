@@ -1,0 +1,433 @@
+|join|bange
+|join|Project Orion
+|player|p1|bange|142
+|player|p2|Project Orion|80
+|gametype|singles
+|tier|Pokebank OU (beta)
+|rated
+|clearpoke
+|poke|p1|Florges, F
+|poke|p1|Magnezone, shiny
+|poke|p1|Charizard, M
+|poke|p1|Rotom-Wash
+|poke|p1|Gliscor, M
+|poke|p1|Thundurus, M
+|poke|p2|Thundurus, M, shiny
+|poke|p2|Bisharp, F, shiny
+|poke|p2|Greninja, F
+|poke|p2|Rotom-Heat
+|poke|p2|Celebi
+|poke|p2|Forretress, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|Moody Clause: Moody is banned
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Magnezone|Magnezone, shiny|320\/320
+|switch|p2a: Clown-y|Thundurus, M, shiny|299\/299
+|turn|1
+|callback|decision
+|
+|move|p2a: Clown-y|Taunt|p1a: Magnezone
+|-start|p1a: Magnezone|move: Taunt
+|move|p1a: Magnezone|Volt Switch|p2a: Clown-y
+|-damage|p2a: Clown-y|61\/299
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|
+|-heal|p2a: Clown-y|79\/299|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|move|p2a: Clown-y|Thunderbolt|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|172\/304
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Clown-y
+|-damage|p2a: Clown-y|0 fnt
+|faint|p2a: Clown-y
+|
+|callback|decision
+|
+|switch|p2a: Perishable|Celebi|401\/401
+|turn|3
+|callback|decision
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Perishable|Giga Drain|p1a: Florges
+|-damage|p1a: Florges|306\/360
+|
+|-heal|p1a: Florges|328\/360|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|move|p2a: Perishable|Thunder Wave|p1a: Florges
+|-status|p1a: Florges|par
+|cant|p1a: Florges|par
+|
+|-heal|p1a: Florges|350\/360 par|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|switch|p2a: I HAVE CANNONS|Forretress, F|354\/354
+|cant|p1a: Florges|par
+|
+|-heal|p1a: Florges|360\/360 par|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p1a: Magnezone|Magnezone, shiny|320\/320
+|move|p2a: I HAVE CANNONS|Stealth Rock|p1a: Magnezone
+|-sidestart|p1: bange|move: Stealth Rock
+|
+|turn|7
+|callback|decision
+|
+|move|p1a: Magnezone|Thunderbolt|p2a: I HAVE CANNONS
+|-damage|p2a: I HAVE CANNONS|14\/354
+|-enditem|p2a: I HAVE CANNONS|Red Card|[of] p1a: Magnezone
+|drag|p1a: Thundurus|Thundurus, M|330\/330
+|-damage|p1a: Thundurus|248\/330|[from] Stealth Rock
+|move|p2a: I HAVE CANNONS|Toxic Spikes|p1a: Thundurus
+|-sidestart|p1: bange|move: Toxic Spikes
+|
+|-heal|p1a: Thundurus|268\/330|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p1a: Thundurus|Thunderbolt|p2a: I HAVE CANNONS
+|-damage|p2a: I HAVE CANNONS|0 fnt
+|faint|p2a: I HAVE CANNONS
+|
+|-heal|p1a: Thundurus|288\/330|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Vanguard|Greninja, F|286\/286
+|turn|9
+|callback|decision
+|
+|move|p1a: Thundurus|Thunder Wave|p2a: Vanguard
+|-status|p2a: Vanguard|par
+|-start|p2a: Vanguard|typechange|Ice|[from] Protean
+|move|p2a: Vanguard|Ice Beam|p1a: Thundurus
+|-supereffective|p1a: Thundurus
+|-damage|p1a: Thundurus|0 fnt
+|faint|p1a: Thundurus
+|
+|callback|decision
+|
+|switch|p1a: Magnezone|Magnezone, shiny|320\/320
+|-damage|p1a: Magnezone|300\/320|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|switch|p2a: Calcifer|Rotom-Heat|304\/304
+|move|p1a: Magnezone|Flash Cannon|p2a: Calcifer
+|-resisted|p2a: Calcifer
+|-damage|p2a: Calcifer|270\/304
+|
+|-heal|p2a: Calcifer|289\/304|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p1a: Florges|Florges, F|360\/360 par
+|-damage|p1a: Florges|315\/360 par|[from] Stealth Rock
+|move|p2a: Calcifer|Will-O-Wisp|p1a: Florges
+|-fail|p1a: Florges
+|
+|-heal|p2a: Calcifer|304\/304|[from] item: Leftovers
+|-heal|p1a: Florges|337\/360 par|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: Calcifer|Volt Switch|p1a: Florges
+|-damage|p1a: Florges|280\/360 par
+|callback|decision
+|
+|switch|p2a: Blue Ranger|Bisharp, F, shiny|272\/272
+|cant|p1a: Florges|par
+|
+|-heal|p1a: Florges|302\/360 par|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|172\/304
+|-damage|p1a: Rotom-Wash|134\/304|[from] Stealth Rock
+|-enditem|p1a: Rotom-Wash|Sitrus Berry|[eat]
+|-heal|p1a: Rotom-Wash|210\/304|[from] item: Sitrus Berry
+|move|p2a: Blue Ranger|Iron Head|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|175\/304
+|-damage|p2a: Blue Ranger|245\/272|[from] item: Life Orb
+|
+|turn|14
+|callback|decision
+|
+|move|p2a: Blue Ranger|Knock Off|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|49\/304
+|-damage|p2a: Blue Ranger|218\/272|[from] item: Life Orb
+|move|p1a: Rotom-Wash|Pain Split|p2a: Blue Ranger
+|-sethp|p2a: Blue Ranger|133\/272|p1a: Rotom-Wash|133\/304|[from] move: Pain Split
+|
+|turn|15
+|callback|decision
+|
+|move|p2a: Blue Ranger|Power-Up Punch|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|89\/304
+|-boost|p2a: Blue Ranger|atk|1
+|-damage|p2a: Blue Ranger|106\/272|[from] item: Life Orb
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Blue Ranger
+|-status|p2a: Blue Ranger|brn
+|
+|-damage|p2a: Blue Ranger|72\/272 brn|[from] brn
+|turn|16
+|callback|decision
+|
+|move|p2a: Blue Ranger|Knock Off|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|7\/304
+|-damage|p2a: Blue Ranger|45\/272 brn|[from] item: Life Orb
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Blue Ranger
+|-damage|p2a: Blue Ranger|0 fnt
+|faint|p2a: Blue Ranger
+|callback|decision
+|
+|switch|p1a: Magnezone|Magnezone, shiny|300\/320
+|-damage|p1a: Magnezone|280\/320|[from] Stealth Rock
+|
+|callback|decision
+|
+|switch|p2a: Calcifer|Rotom-Heat|304\/304
+|turn|17
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|7\/304
+|-damage|p1a: Rotom-Wash|0 fnt|[from] Stealth Rock
+|faint|p1a: Rotom-Wash
+|move|p2a: Calcifer|Will-O-Wisp|p1: Rotom-Wash|[notarget]
+|-notarget
+|
+|callback|decision
+|
+|switch|p1a: Florges|Florges, F|302\/360 par
+|-damage|p1a: Florges|257\/360 par|[from] Stealth Rock
+|turn|18
+|callback|decision
+|
+|move|p2a: Calcifer|Overheat|p1a: Florges
+|-damage|p1a: Florges|163\/360 par
+|-unboost|p2a: Calcifer|spa|2
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p1a: Florges|185\/360 par|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p2a: Calcifer|Volt Switch|p1a: Florges
+|-crit|p1a: Florges
+|-damage|p1a: Florges|109\/360 par
+|callback|decision
+|
+|switch|p2a: Vanguard|Greninja, F|286\/286 par
+|move|p1a: Florges|Moonblast|p2a: Vanguard
+|-crit|p2a: Vanguard
+|-supereffective|p2a: Vanguard
+|-damage|p2a: Vanguard|0 fnt
+|faint|p2a: Vanguard
+|
+|-heal|p1a: Florges|289\/360 par|[from] move: Wish|[wisher] Florges
+|-heal|p1a: Florges|311\/360 par|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Perishable|Celebi|401\/401
+|turn|20
+|callback|decision
+|
+|move|p2a: Perishable|Psychic|p1a: Florges
+|-damage|p1a: Florges|242\/360 par
+|cant|p1a: Florges|par
+|
+|-heal|p1a: Florges|264\/360 par|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|move|p2a: Perishable|Psychic|p1a: Florges
+|-crit|p1a: Florges
+|-damage|p1a: Florges|171\/360 par
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p1a: Florges|193\/360 par|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p1a: Florges|Protect|p1a: Florges
+|-singleturn|p1a: Florges|Protect
+|move|p2a: Perishable|Psychic|p1a: Florges
+|-activate|p1a: Florges|Protect
+|
+|-heal|p1a: Florges|360\/360 par|[from] move: Wish|[wisher] Florges
+|turn|23
+|callback|decision
+|
+|move|p2a: Perishable|Psychic|p1a: Florges
+|-damage|p1a: Florges|293\/360 par
+|move|p1a: Florges|Wish|p1a: Florges
+|
+|-heal|p1a: Florges|315\/360 par|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|switch|p1a: Magnezone|Magnezone, shiny|280\/320
+|-damage|p1a: Magnezone|260\/320|[from] Stealth Rock
+|move|p2a: Perishable|Psychic|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-damage|p1a: Magnezone|198\/320
+|
+|-heal|p1a: Magnezone|320\/320|[from] move: Wish|[wisher] Florges
+|turn|25
+|callback|decision
+|
+|move|p2a: Perishable|Psychic|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-damage|p1a: Magnezone|261\/320
+|move|p1a: Magnezone|Volt Switch|p2a: Perishable
+|-resisted|p2a: Perishable
+|-damage|p2a: Perishable|314\/401
+|callback|decision
+|
+|switch|p1a: Charizard|Charizard, M|297\/297
+|-damage|p1a: Charizard|149\/297|[from] Stealth Rock
+|
+|-heal|p2a: Perishable|339\/401|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|-formechange|p1a: Charizard|Charizard-Mega-X
+|message|Charizard has Mega Evolved into Mega Charizard!
+|move|p1a: Charizard|Dragon Dance|p1a: Charizard
+|-boost|p1a: Charizard|atk|1
+|-boost|p1a: Charizard|spe|1
+|move|p2a: Perishable|Thunder Wave|p1a: Charizard
+|-status|p1a: Charizard|par
+|
+|-heal|p2a: Perishable|364\/401|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|switch|p2a: Calcifer|Rotom-Heat|304\/304
+|move|p1a: Charizard|Flare Blitz|p2a: Calcifer
+|-crit|p2a: Calcifer
+|-resisted|p2a: Calcifer
+|-damage|p2a: Calcifer|0 fnt
+|-damage|p1a: Charizard|49\/297 par|[from] recoil|[of] p2a: Calcifer
+|faint|p2a: Calcifer
+|
+|callback|decision
+|
+|switch|p2a: Perishable|Celebi|364\/401
+|turn|28
+|callback|decision
+|
+|move|p2a: Perishable|Psychic|p1a: Charizard
+|-damage|p1a: Charizard|0 fnt
+|faint|p1a: Charizard
+|
+|-heal|p2a: Perishable|389\/401|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Magnezone|Magnezone, shiny|261\/320
+|-damage|p1a: Magnezone|241\/320|[from] Stealth Rock
+|turn|29
+|callback|decision
+|
+|move|p2a: Perishable|Psychic|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-damage|p1a: Magnezone|185\/320
+|move|p1a: Magnezone|Flash Cannon|p2a: Perishable
+|-crit|p2a: Perishable
+|-damage|p2a: Perishable|79\/401
+|
+|-heal|p2a: Perishable|104\/401|[from] item: Leftovers
+|turn|30
+|callback|decision
+|
+|move|p2a: Perishable|Recover|p2a: Perishable
+|-heal|p2a: Perishable|305\/401
+|move|p1a: Magnezone|Flash Cannon|p2a: Perishable
+|-damage|p2a: Perishable|112\/401
+|
+|-heal|p2a: Perishable|137\/401|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|move|p2a: Perishable|Recover|p2a: Perishable
+|-heal|p2a: Perishable|338\/401
+|move|p1a: Magnezone|Flash Cannon|p2a: Perishable
+|-damage|p2a: Perishable|136\/401
+|
+|-heal|p2a: Perishable|161\/401|[from] item: Leftovers
+|turn|32
+|callback|decision
+|
+|move|p2a: Perishable|Recover|p2a: Perishable
+|-heal|p2a: Perishable|362\/401
+|move|p1a: Magnezone|Flash Cannon|p2a: Perishable
+|-crit|p2a: Perishable
+|-damage|p2a: Perishable|73\/401
+|
+|-heal|p2a: Perishable|98\/401|[from] item: Leftovers
+|turn|33
+|callback|decision
+|
+|move|p2a: Perishable|Recover|p2a: Perishable
+|-heal|p2a: Perishable|299\/401
+|move|p1a: Magnezone|Flash Cannon|p2a: Perishable
+|-damage|p2a: Perishable|106\/401
+|
+|-heal|p2a: Perishable|131\/401|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|move|p2a: Perishable|Recover|p2a: Perishable
+|-heal|p2a: Perishable|332\/401
+|move|p1a: Magnezone|Flash Cannon|p2a: Perishable
+|-damage|p2a: Perishable|116\/401
+|
+|-heal|p2a: Perishable|141\/401|[from] item: Leftovers
+|turn|35
+|callback|decision
+|
+|move|p2a: Perishable|Recover|p2a: Perishable
+|-heal|p2a: Perishable|342\/401
+|move|p1a: Magnezone|Flash Cannon|p2a: Perishable
+|-damage|p2a: Perishable|149\/401
+|
+|-heal|p2a: Perishable|174\/401|[from] item: Leftovers
+|turn|36
+|callback|decision
+|
+|move|p2a: Perishable|Recover|p2a: Perishable
+|-heal|p2a: Perishable|375\/401
+|move|p1a: Magnezone|Flash Cannon|p2a: Perishable
+|-damage|p2a: Perishable|180\/401
+|
+|-heal|p2a: Perishable|205\/401|[from] item: Leftovers
+|turn|37
+|callback|decision
+|
+|move|p2a: Perishable|Psychic|p1a: Magnezone
+|-resisted|p1a: Magnezone
+|-damage|p1a: Magnezone|130\/320
+|move|p1a: Magnezone|Flash Cannon|p2a: Perishable
+|-damage|p2a: Perishable|0 fnt
+|faint|p2a: Perishable
+|
+|win|bange
+|raw|Ladder updating...
+|raw|bange's rating: 1702 &rarr; <strong>1720<\/strong><br \/>(+18 for winning)
+|raw|Project Orion's rating: 1734 &rarr; <strong>1730<\/strong><br \/>(-4 for losing)
+|chat|Project Orion|gg
+|chat|bange|gg

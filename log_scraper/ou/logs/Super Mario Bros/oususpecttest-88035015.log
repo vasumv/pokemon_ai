@@ -1,0 +1,419 @@
+|join|Capt'n Scoop
+|join|Super Mario Bros
+|player|p1|Capt'n Scoop|1
+|player|p2|Super Mario Bros|155
+|gametype|singles
+|gen|6
+|tier|OU (suspect test)
+|rated
+|clearpoke
+|poke|p1|Klefki, F, shiny
+|poke|p1|Aegislash, M, shiny
+|poke|p1|Skarmory, F, shiny
+|poke|p1|Terrakion, shiny
+|poke|p1|Excadrill, M, shiny
+|poke|p1|Volcarona, F, shiny
+|poke|p2|Medicham, F, shiny
+|poke|p2|Suicune, shiny
+|poke|p2|Ditto, shiny
+|poke|p2|Jirachi, shiny
+|poke|p2|Machamp, M
+|poke|p2|Diggersby, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Klefki|Klefki, F, shiny|300\/300
+|switch|p2a: Machamp|Machamp, M|384\/384
+|turn|1
+|
+|move|p1a: Klefki|Reflect|p1a: Klefki
+|-sidestart|p1: Capt'n Scoop|Reflect
+|move|p2a: Machamp|Dynamic Punch|p1a: Klefki
+|-damage|p1a: Klefki|209\/300
+|-start|p1a: Klefki|confusion
+|
+|turn|2
+|
+|switch|p1a: Aegislash|Aegislash, M, shiny|324\/324
+|move|p2a: Machamp|Dynamic Punch|p1a: Aegislash
+|-immune|p1a: Aegislash|[msg]
+|
+|turn|3
+|
+|move|p1a: Aegislash|Swords Dance|p1a: Aegislash
+|-boost|p1a: Aegislash|atk|2
+|move|p2a: Machamp|Knock Off|p1a: Aegislash
+|-supereffective|p1a: Aegislash
+|-damage|p1a: Aegislash|238\/324
+|-enditem|p1a: Aegislash|Weakness Policy
+|-boost|p1a: Aegislash|atk|2|[from] item: Weakness Policy
+|-boost|p1a: Aegislash|spa|2|[from] item: Weakness Policy
+|
+|turn|4
+|
+|-formechange|p1a: Aegislash|Aegislash-Blade
+|move|p1a: Aegislash|Sacred Sword|p2a: Machamp
+|-damage|p2a: Machamp|0 fnt
+|faint|p2a: Machamp
+|
+|join|eq live
+|
+|switch|p2a: Suicune|Suicune, shiny|404\/404
+|-ability|p2a: Suicune|Pressure
+|turn|5
+|
+|move|p1a: Aegislash|Shadow Sneak|p2a: Suicune
+|-damage|p2a: Suicune|232\/404
+|move|p2a: Suicune|Scald|p1a: Aegislash
+|-damage|p1a: Aegislash|91\/324
+|-status|p1a: Aegislash|brn
+|
+|-heal|p2a: Suicune|257\/404|[from] item: Leftovers
+|-damage|p1a: Aegislash|51\/324 brn|[from] brn
+|turn|6
+|
+|move|p1a: Aegislash|Shadow Sneak|p2a: Suicune
+|-damage|p2a: Suicune|169\/404
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-heal|p2a: Suicune|194\/404|[from] item: Leftovers
+|-damage|p1a: Aegislash|11\/324 brn|[from] brn
+|turn|7
+|leave|eq live
+|
+|move|p1a: Aegislash|Shadow Sneak|p2a: Suicune
+|-damage|p2a: Suicune|104\/404
+|move|p2a: Suicune|Rest|p2a: Suicune
+|-status|p2a: Suicune|slp
+|-heal|p2a: Suicune|404\/404 slp|[silent]
+|-status|p2a: Suicune|slp|[from] move: Rest
+|
+|-damage|p1a: Aegislash|0 fnt|[from] brn
+|faint|p1a: Aegislash
+|
+|switch|p1a: Klefki|Klefki, F, shiny|209\/300
+|turn|8
+|
+|move|p1a: Klefki|Spikes|p2a: Suicune
+|-sidestart|p2: Super Mario Bros|Spikes
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Calm Mind|p2a: Suicune|[from]Sleep Talk
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|
+|-sideend|p1: Capt'n Scoop|Reflect
+|turn|9
+|
+|switch|p1a: Skarmory|Skarmory, F, shiny|334\/334
+|cant|p2a: Suicune|slp
+|move|p2a: Suicune|Sleep Talk|p2a: Suicune
+|move|p2a: Suicune|Rest|p2a: Suicune|[from]Sleep Talk
+|-fail|p2a: Suicune
+|
+|turn|10
+|
+|-curestatus|p2a: Suicune|slp
+|move|p2a: Suicune|Scald|p1a: Skarmory
+|-damage|p1a: Skarmory|172\/334
+|move|p1a: Skarmory|Whirlwind|p2a: Suicune
+|drag|p2a: Jirachi|Jirachi, shiny|404\/404
+|-damage|p2a: Jirachi|354\/404|[from] Spikes
+|
+|-heal|p2a: Jirachi|379\/404|[from] item: Leftovers
+|-heal|p1a: Skarmory|192\/334|[from] item: Leftovers
+|turn|11
+|
+|move|p2a: Jirachi|Stealth Rock|p1a: Skarmory
+|-sidestart|p1: Capt'n Scoop|move: Stealth Rock
+|move|p1a: Skarmory|Stealth Rock|p2a: Jirachi
+|-sidestart|p2: Super Mario Bros|move: Stealth Rock
+|
+|-heal|p2a: Jirachi|404\/404|[from] item: Leftovers
+|-heal|p1a: Skarmory|212\/334|[from] item: Leftovers
+|turn|12
+|
+|switch|p2a: Medicham|Medicham, F, shiny|261\/261
+|-damage|p2a: Medicham|229\/261|[from] Spikes
+|-damage|p2a: Medicham|213\/261|[from] Stealth Rock
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|334\/334
+|
+|turn|13
+|join|si.tole
+|
+|-formechange|p2a: Medicham|Medicham-Mega
+|message|Medicham has Mega Evolved into Mega Medicham!
+|move|p2a: Medicham|Fire Punch|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|118\/334
+|move|p1a: Skarmory|Whirlwind|p2a: Medicham
+|drag|p2a: Jirachi|Jirachi, shiny|404\/404
+|-damage|p2a: Jirachi|354\/404|[from] Spikes
+|-damage|p2a: Jirachi|329\/404|[from] Stealth Rock
+|
+|-heal|p2a: Jirachi|354\/404|[from] item: Leftovers
+|-heal|p1a: Skarmory|138\/334|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Jirachi|Thunder Wave|p1a: Skarmory
+|-status|p1a: Skarmory|par
+|move|p1a: Skarmory|Roost|p1a: Skarmory
+|-heal|p1a: Skarmory|305\/334 par
+|
+|-heal|p2a: Jirachi|379\/404|[from] item: Leftovers
+|-heal|p1a: Skarmory|325\/334 par|[from] item: Leftovers
+|turn|15
+|
+|move|p2a: Jirachi|Iron Head|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|292\/334 par
+|cant|p1a: Skarmory|flinch
+|
+|-heal|p2a: Jirachi|404\/404|[from] item: Leftovers
+|-heal|p1a: Skarmory|312\/334 par|[from] item: Leftovers
+|turn|16
+|
+|move|p2a: Jirachi|Iron Head|p1a: Skarmory
+|-resisted|p1a: Skarmory
+|-damage|p1a: Skarmory|276\/334 par
+|cant|p1a: Skarmory|par
+|
+|-heal|p1a: Skarmory|296\/334 par|[from] item: Leftovers
+|turn|17
+|
+|switch|p1a: Excadrill|Excadrill, M, shiny|361\/361
+|-damage|p1a: Excadrill|350\/361|[from] Stealth Rock
+|-ability|p1a: Excadrill|Mold Breaker
+|move|p2a: Jirachi|Iron Head|p1a: Excadrill
+|-resisted|p1a: Excadrill
+|-damage|p1a: Excadrill|283\/361
+|
+|turn|18
+|
+|switch|p2a: Suicune|Suicune, shiny|404\/404
+|-damage|p2a: Suicune|354\/404|[from] Spikes
+|-damage|p2a: Suicune|304\/404|[from] Stealth Rock
+|-ability|p2a: Suicune|Pressure
+|move|p1a: Excadrill|Rapid Spin|p2a: Suicune
+|-damage|p2a: Suicune|286\/404
+|-sideend|p1: Capt'n Scoop|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Excadrill
+|
+|-heal|p2a: Suicune|311\/404|[from] item: Leftovers
+|turn|19
+|
+|move|p1a: Excadrill|Earthquake|p2a: Suicune
+|-damage|p2a: Suicune|178\/404
+|move|p2a: Suicune|Scald|p1a: Excadrill
+|-crit|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-damage|p1a: Excadrill|41\/361
+|
+|-heal|p2a: Suicune|203\/404|[from] item: Leftovers
+|turn|20
+|
+|switch|p1a: Skarmory|Skarmory, F, shiny|296\/334 par
+|move|p2a: Suicune|Scald|p1a: Skarmory
+|-damage|p1a: Skarmory|217\/334 par
+|
+|-heal|p2a: Suicune|228\/404|[from] item: Leftovers
+|-heal|p1a: Skarmory|237\/334 par|[from] item: Leftovers
+|turn|21
+|join|TalkingDinosaur
+|
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|cant|p1a: Skarmory|par
+|
+|-heal|p2a: Suicune|253\/404|[from] item: Leftovers
+|-heal|p1a: Skarmory|257\/334 par|[from] item: Leftovers
+|turn|22
+|
+|move|p2a: Suicune|Scald|p1a: Skarmory
+|-damage|p1a: Skarmory|130\/334 par
+|move|p1a: Skarmory|Whirlwind|p2a: Suicune
+|drag|p2a: Jirachi|Jirachi, shiny|404\/404
+|-damage|p2a: Jirachi|354\/404|[from] Spikes
+|-damage|p2a: Jirachi|329\/404|[from] Stealth Rock
+|
+|-heal|p2a: Jirachi|354\/404|[from] item: Leftovers
+|-heal|p1a: Skarmory|150\/334 par|[from] item: Leftovers
+|turn|23
+|
+|switch|p1a: Volcarona|Volcarona, F, shiny|311\/311
+|move|p2a: Jirachi|Stealth Rock|p1a: Volcarona
+|-sidestart|p1: Capt'n Scoop|move: Stealth Rock
+|
+|-heal|p2a: Jirachi|379\/404|[from] item: Leftovers
+|turn|24
+|
+|move|p1a: Volcarona|Quiver Dance|p1a: Volcarona
+|-boost|p1a: Volcarona|spa|1
+|-boost|p1a: Volcarona|spd|1
+|-boost|p1a: Volcarona|spe|1
+|move|p2a: Jirachi|Thunder Wave|p1a: Volcarona
+|-status|p1a: Volcarona|par
+|-enditem|p1a: Volcarona|Lum Berry|[eat]
+|-curestatus|p1a: Volcarona|par
+|
+|-heal|p2a: Jirachi|404\/404|[from] item: Leftovers
+|turn|25
+|
+|move|p1a: Volcarona|Fiery Dance|p2a: Jirachi
+|-supereffective|p2a: Jirachi
+|-damage|p2a: Jirachi|0 fnt
+|faint|p2a: Jirachi
+|
+|
+|switch|p2a: Diggersby|Diggersby, M|311\/311
+|-damage|p2a: Diggersby|292\/311|[from] Stealth Rock
+|-damage|p2a: Diggersby|254\/311|[from] Spikes
+|turn|26
+|
+|move|p2a: Diggersby|Quick Attack|p1a: Volcarona
+|-damage|p1a: Volcarona|167\/311
+|move|p1a: Volcarona|Bug Buzz|p2a: Diggersby
+|-damage|p2a: Diggersby|0 fnt
+|faint|p2a: Diggersby
+|
+|
+|switch|p2a: Ditto|Ditto, shiny|300\/300
+|-damage|p2a: Ditto|263\/300|[from] Spikes
+|-damage|p2a: Ditto|226\/300|[from] Stealth Rock
+|-transform|p2a: Ditto|p1a: Volcarona
+|turn|27
+|
+|move|p2a: Ditto|Fiery Dance|p1a: Volcarona
+|-damage|p1a: Volcarona|22\/311
+|-boost|p2a: Ditto|spa|1
+|move|p1a: Volcarona|Fiery Dance|p2a: Ditto
+|-damage|p2a: Ditto|87\/300
+|
+|turn|28
+|join|Aspiring Master
+|
+|move|p2a: Ditto|Fiery Dance|p1a: Volcarona
+|-damage|p1a: Volcarona|0 fnt
+|-boost|p2a: Ditto|spa|1
+|faint|p1a: Volcarona
+|
+|chat|TalkingDinosaur|lol
+|chat|TalkingDinosaur|double proc
+|
+|switch|p1a: Klefki|Klefki, F, shiny|209\/300
+|-damage|p1a: Klefki|191\/300|[from] Stealth Rock
+|turn|29
+|
+|move|p1a: Klefki|Light Screen|p1a: Klefki
+|-sidestart|p1: Capt'n Scoop|move: Light Screen
+|move|p2a: Ditto|Fiery Dance|p1a: Klefki
+|-supereffective|p1a: Klefki
+|-damage|p1a: Klefki|0 fnt
+|faint|p1a: Klefki
+|
+|
+|switch|p1a: Terrakion|Terrakion, shiny|323\/323
+|-damage|p1a: Terrakion|303\/323|[from] Stealth Rock
+|turn|30
+|
+|move|p1a: Terrakion|Quick Attack|p2a: Ditto
+|-damage|p2a: Ditto|0 fnt
+|faint|p2a: Ditto
+|
+|
+|switch|p2a: Suicune|Suicune, shiny|253\/404
+|-damage|p2a: Suicune|203\/404|[from] Spikes
+|-damage|p2a: Suicune|153\/404|[from] Stealth Rock
+|-ability|p2a: Suicune|Pressure
+|turn|31
+|
+|switch|p1a: Skarmory|Skarmory, F, shiny|150\/334 par
+|-damage|p1a: Skarmory|109\/334 par|[from] Stealth Rock
+|move|p2a: Suicune|Scald|p1a: Skarmory
+|-damage|p1a: Skarmory|73\/334 par
+|
+|-heal|p2a: Suicune|178\/404|[from] item: Leftovers
+|-heal|p1a: Skarmory|93\/334 par|[from] item: Leftovers
+|turn|32
+|
+|move|p2a: Suicune|Calm Mind|p2a: Suicune
+|-boost|p2a: Suicune|spa|1
+|-boost|p2a: Suicune|spd|1
+|cant|p1a: Skarmory|par
+|
+|-heal|p2a: Suicune|203\/404|[from] item: Leftovers
+|-heal|p1a: Skarmory|113\/334 par|[from] item: Leftovers
+|turn|33
+|
+|move|p2a: Suicune|Scald|p1a: Skarmory
+|-damage|p1a: Skarmory|53\/334 par
+|cant|p1a: Skarmory|par
+|
+|-heal|p2a: Suicune|228\/404|[from] item: Leftovers
+|-heal|p1a: Skarmory|73\/334 par|[from] item: Leftovers
+|turn|34
+|
+|move|p2a: Suicune|Scald|p1a: Skarmory
+|-damage|p1a: Skarmory|11\/334 par
+|move|p1a: Skarmory|Whirlwind|p2a: Suicune
+|drag|p2a: Medicham|Medicham, F, shiny|213\/261
+|-formechange|p2a: Medicham|Medicham-Mega
+|-damage|p2a: Medicham|181\/261|[from] Spikes
+|-damage|p2a: Medicham|165\/261|[from] Stealth Rock
+|
+|-heal|p1a: Skarmory|31\/334 par|[from] item: Leftovers
+|turn|35
+|
+|move|p2a: Medicham|Fire Punch|p1a: Skarmory
+|-supereffective|p1a: Skarmory
+|-damage|p1a: Skarmory|0 fnt
+|faint|p1a: Skarmory
+|
+|
+|switch|p1a: Excadrill|Excadrill, M, shiny|41\/361
+|-damage|p1a: Excadrill|30\/361|[from] Stealth Rock
+|-ability|p1a: Excadrill|Mold Breaker
+|turn|36
+|
+|move|p2a: Medicham|Fire Punch|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-damage|p1a: Excadrill|0 fnt
+|faint|p1a: Excadrill
+|
+|-sideend|p1: Capt'n Scoop|move: Light Screen
+|
+|switch|p1a: Terrakion|Terrakion, shiny|303\/323
+|-damage|p1a: Terrakion|283\/323|[from] Stealth Rock
+|turn|37
+|
+|move|p2a: Medicham|Bullet Punch|p1a: Terrakion
+|-supereffective|p1a: Terrakion
+|-damage|p1a: Terrakion|123\/323
+|move|p1a: Terrakion|Stone Edge|p2a: Medicham
+|-resisted|p2a: Medicham
+|-damage|p2a: Medicham|1\/261
+|
+|turn|38
+|
+|move|p2a: Medicham|Bullet Punch|p1a: Terrakion
+|-supereffective|p1a: Terrakion
+|-damage|p1a: Terrakion|0 fnt
+|faint|p1a: Terrakion
+|
+|win|Super Mario Bros
+|raw|Ladder updating...
+|raw|Capt&apos;n Scoop's rating: 1176 &rarr; <strong>1167<\/strong><br \/>(-9 for losing)
+|raw|Super Mario Bros's rating: 1428 &rarr; <strong>1435<\/strong><br \/>(+7 for winning)
+|leave|TalkingDinosaur
+|leave|Capt'n Scoop
+|player|p1

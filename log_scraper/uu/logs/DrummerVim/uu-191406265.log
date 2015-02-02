@@ -1,0 +1,965 @@
+|join|LivingTarget
+|join|DrummerVim
+|player|p1|LivingTarget|238
+|player|p2|DrummerVim|265
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Chesnaught, F
+|poke|p1|Haxorus, F
+|poke|p1|Steelix, M
+|poke|p1|Donphan, M
+|poke|p1|Porygon2
+|poke|p1|Vaporeon, F
+|poke|p2|Beedrill, F
+|poke|p2|Raikou
+|poke|p2|Mienshao, M
+|poke|p2|Forretress, M
+|poke|p2|Darmanitan, M
+|poke|p2|Vaporeon, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Donphan|Donphan, M|384\/384
+|switch|p2a: Darmanitan|Darmanitan, M|351\/351
+|turn|1
+|
+|move|p2a: Darmanitan|U-turn|p1a: Donphan
+|-damage|p1a: Donphan|308\/384
+|
+|switch|p2a: Vaporeon|Vaporeon, M|464\/464
+|move|p1a: Donphan|Earthquake|p2a: Vaporeon
+|-damage|p2a: Vaporeon|172\/464
+|
+|-heal|p2a: Vaporeon|201\/464|[from] item: Leftovers
+|-heal|p1a: Donphan|332\/384|[from] item: Leftovers
+|turn|2
+|
+|switch|p2a: Forretress|Forretress, M|354\/354
+|switch|p1a: Porygon2|Porygon2|374\/374
+|
+|turn|3
+|
+|switch|p1a: Vaporeon|Vaporeon, F|464\/464
+|move|p2a: Forretress|Stealth Rock|p1a: Vaporeon
+|-sidestart|p1: LivingTarget|move: Stealth Rock
+|
+|turn|4
+|
+|switch|p2a: Vaporeon|Vaporeon, M|201\/464
+|move|p1a: Vaporeon|Scald|p2a: Vaporeon
+|-heal|p2a: Vaporeon|317\/464|[from] ability: Water Absorb|[of] p1a: Vaporeon
+|
+|-heal|p2a: Vaporeon|346\/464|[from] item: Leftovers
+|turn|5
+|
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-heal|p2a: Vaporeon|375\/464|[from] item: Leftovers
+|turn|6
+|
+|switch|p1a: Chesnaught|Chesnaught, F|380\/380
+|-damage|p1a: Chesnaught|357\/380|[from] Stealth Rock
+|move|p2a: Vaporeon|Baton Pass|p2a: Vaporeon
+|
+|switch|p2a: Forretress|Forretress, M|354\/354
+|
+|-heal|p1a: Chesnaught|380\/380|[from] move: Wish|[wisher] Vaporeon
+|turn|7
+|
+|move|p1a: Chesnaught|Leech Seed|p2a: Forretress
+|-start|p2a: Forretress|move: Leech Seed
+|move|p2a: Forretress|Spikes|p1a: Chesnaught
+|-sidestart|p1: LivingTarget|Spikes
+|
+|-damage|p2a: Forretress|310\/354|[from] Leech Seed|[of] p1a: Chesnaught
+|turn|8
+|
+|switch|p2a: Vaporeon|Vaporeon, M|375\/464
+|move|p1a: Chesnaught|Spikes|p2a: Vaporeon
+|-sidestart|p2: DrummerVim|Spikes
+|
+|-heal|p2a: Vaporeon|404\/464|[from] item: Leftovers
+|turn|9
+|
+|move|p2a: Vaporeon|Ice Beam|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-damage|p1a: Chesnaught|178\/380
+|move|p1a: Chesnaught|Leech Seed|p2a: Vaporeon
+|-start|p2a: Vaporeon|move: Leech Seed
+|
+|-heal|p2a: Vaporeon|433\/464|[from] item: Leftovers
+|-heal|p1a: Chesnaught|201\/380|[from] item: Leftovers
+|-damage|p2a: Vaporeon|375\/464|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|259\/380|[silent]
+|turn|10
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-singleturn|p1a: Chesnaught|move: Protect
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-heal|p2a: Vaporeon|404\/464|[from] item: Leftovers
+|-heal|p1a: Chesnaught|282\/380|[from] item: Leftovers
+|-damage|p2a: Vaporeon|346\/464|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|340\/380|[silent]
+|turn|11
+|
+|move|p2a: Vaporeon|Baton Pass|p2a: Vaporeon
+|
+|switch|p2a: Forretress|Forretress, M|310\/354
+|-damage|p2a: Forretress|266\/354|[from] Spikes
+|move|p1a: Chesnaught|Drain Punch|p2a: Forretress
+|-damage|p2a: Forretress|214\/354
+|-heal|p1a: Chesnaught|366\/380|[from] drain|[of] p2a: Forretress
+|
+|-heal|p2a: Forretress|354\/354|[from] move: Wish|[wisher] Vaporeon
+|-heal|p1a: Chesnaught|380\/380|[from] item: Leftovers
+|-damage|p2a: Forretress|310\/354|[from] Leech Seed|[of] p1a: Chesnaught
+|turn|12
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-singleturn|p1a: Chesnaught|move: Protect
+|move|p2a: Forretress|Rapid Spin|p1a: Chesnaught
+|-activate|p1a: Chesnaught|move: Protect
+|-damage|p2a: Forretress|266\/354|[from] Spiky Shield|[of] p1a: Chesnaught
+|
+|-heal|p2a: Forretress|288\/354|[from] item: Leftovers
+|-damage|p2a: Forretress|244\/354|[from] Leech Seed|[of] p1a: Chesnaught
+|turn|13
+|
+|move|p1a: Chesnaught|Spikes|p2a: Forretress
+|-sidestart|p2: DrummerVim|Spikes
+|move|p2a: Forretress|Rapid Spin|p1a: Chesnaught
+|-damage|p1a: Chesnaught|371\/380
+|-end|p2a: Forretress|Leech Seed|[from] move: Rapid Spin|[of] p2a: Forretress
+|-sideend|p2: DrummerVim|Spikes|[from] move: Rapid Spin|[of] p2a: Forretress
+|
+|-heal|p1a: Chesnaught|380\/380|[from] item: Leftovers
+|-heal|p2a: Forretress|266\/354|[from] item: Leftovers
+|turn|14
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-singleturn|p1a: Chesnaught|move: Protect
+|move|p2a: Forretress|Spikes|p1a: Chesnaught
+|-sidestart|p1: LivingTarget|Spikes
+|
+|-heal|p2a: Forretress|288\/354|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Chesnaught|Leech Seed|p2a: Forretress
+|-start|p2a: Forretress|move: Leech Seed
+|move|p2a: Forretress|Volt Switch|p1a: Chesnaught
+|-resisted|p1a: Chesnaught
+|-damage|p1a: Chesnaught|356\/380
+|
+|switch|p2a: Beedrill|Beedrill, F|271\/271
+|
+|-heal|p1a: Chesnaught|379\/380|[from] item: Leftovers
+|turn|16
+|
+|switch|p1a: Donphan|Donphan, M|332\/384
+|-damage|p1a: Donphan|268\/384|[from] Spikes
+|-damage|p1a: Donphan|244\/384|[from] Stealth Rock
+|detailschange|p2a: Beedrill|Beedrill-Mega, F
+|message|Beedrill has Mega Evolved into Mega Beedrill!
+|move|p2a: Beedrill|Protect|p2a: Beedrill
+|-fail|p2a: Beedrill
+|
+|-heal|p1a: Donphan|268\/384|[from] item: Leftovers
+|turn|17
+|
+|move|p2a: Beedrill|U-turn|p1a: Donphan
+|-crit|p1a: Donphan
+|-damage|p1a: Donphan|20\/384
+|
+|switch|p2a: Mienshao|Mienshao, M|272\/272
+|move|p1a: Donphan|Rapid Spin|p2a: Mienshao
+|-damage|p2a: Mienshao|235\/272
+|-sideend|p1: LivingTarget|Spikes|[from] move: Rapid Spin|[of] p1a: Donphan
+|-sideend|p1: LivingTarget|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Donphan
+|
+|-heal|p1a: Donphan|44\/384|[from] item: Leftovers
+|turn|18
+|
+|switch|p1a: Chesnaught|Chesnaught, F|379\/380
+|move|p2a: Mienshao|U-turn|p1a: Chesnaught
+|-damage|p1a: Chesnaught|331\/380
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|271\/271
+|
+|-heal|p1a: Chesnaught|354\/380|[from] item: Leftovers
+|turn|19
+|
+|switch|p1a: Steelix|Steelix, M|354\/354
+|move|p2a: Beedrill|Protect|p2a: Beedrill
+|-fail|p2a: Beedrill
+|
+|turn|20
+|
+|switch|p1a: Haxorus|Haxorus, F|302\/302
+|-ability|p1a: Haxorus|Mold Breaker
+|move|p2a: Beedrill|U-turn|p1a: Haxorus
+|-damage|p1a: Haxorus|86\/302
+|
+|switch|p2a: Darmanitan|Darmanitan, M|351\/351
+|
+|turn|21
+|
+|switch|p1a: Vaporeon|Vaporeon, F|464\/464
+|move|p2a: Darmanitan|U-turn|p1a: Vaporeon
+|-damage|p1a: Vaporeon|373\/464
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|271\/271
+|
+|-heal|p1a: Vaporeon|402\/464|[from] item: Leftovers
+|turn|22
+|
+|switch|p1a: Steelix|Steelix, M|354\/354
+|move|p2a: Beedrill|U-turn|p1a: Steelix
+|-crit|p1a: Steelix
+|-resisted|p1a: Steelix
+|-damage|p1a: Steelix|288\/354
+|
+|switch|p2a: Vaporeon|Vaporeon, M|346\/464
+|
+|-heal|p2a: Vaporeon|375\/464|[from] item: Leftovers
+|turn|23
+|
+|switch|p1a: Vaporeon|Vaporeon, F|402\/464
+|move|p2a: Vaporeon|Scald|p1a: Vaporeon
+|-heal|p1a: Vaporeon|464\/464|[from] ability: Water Absorb|[of] p2a: Vaporeon
+|
+|-heal|p2a: Vaporeon|404\/464|[from] item: Leftovers
+|turn|24
+|
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|
+|-heal|p2a: Vaporeon|433\/464|[from] item: Leftovers
+|turn|25
+|
+|switch|p1a: Haxorus|Haxorus, F|86\/302
+|-ability|p1a: Haxorus|Mold Breaker
+|move|p2a: Vaporeon|Baton Pass|p2a: Vaporeon
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|271\/271
+|
+|-heal|p1a: Haxorus|302\/302|[from] move: Wish|[wisher] Vaporeon
+|turn|26
+|
+|switch|p1a: Steelix|Steelix, M|288\/354
+|move|p2a: Beedrill|U-turn|p1a: Steelix
+|-resisted|p1a: Steelix
+|-damage|p1a: Steelix|246\/354
+|
+|switch|p2a: Vaporeon|Vaporeon, M|433\/464
+|
+|-heal|p2a: Vaporeon|462\/464|[from] item: Leftovers
+|turn|27
+|
+|detailschange|p1a: Steelix|Steelix-Mega, M
+|message|Steelix has Mega Evolved into Mega Steelix!
+|move|p2a: Vaporeon|Scald|p1a: Steelix
+|-supereffective|p1a: Steelix
+|-damage|p1a: Steelix|30\/354
+|move|p1a: Steelix|Dragon Tail|p2a: Vaporeon
+|-damage|p2a: Vaporeon|375\/464
+|drag|p2a: Beedrill|Beedrill-Mega, F|271\/271
+|
+|turn|28
+|
+|move|p2a: Beedrill|Drill Run|p1a: Steelix|[miss]
+|-miss|p2a: Beedrill|p1a: Steelix
+|move|p1a: Steelix|Rest|p1a: Steelix
+|-status|p1a: Steelix|slp
+|-heal|p1a: Steelix|354\/354 slp|[silent]
+|-status|p1a: Steelix|slp|[from] move: Rest
+|
+|turn|29
+|
+|move|p2a: Beedrill|U-turn|p1a: Steelix
+|-resisted|p1a: Steelix
+|-damage|p1a: Steelix|315\/354 slp
+|
+|switch|p2a: Vaporeon|Vaporeon, M|375\/464
+|cant|p1a: Steelix|slp
+|move|p1a: Steelix|Sleep Talk|p1a: Steelix
+|move|p1a: Steelix|Earthquake|p2a: Vaporeon|[from]Sleep Talk
+|-damage|p2a: Vaporeon|173\/464
+|
+|-heal|p2a: Vaporeon|202\/464|[from] item: Leftovers
+|turn|30
+|
+|switch|p1a: Haxorus|Haxorus, F|302\/302
+|-ability|p1a: Haxorus|Mold Breaker
+|move|p2a: Vaporeon|Scald|p1a: Haxorus
+|-resisted|p1a: Haxorus
+|-damage|p1a: Haxorus|230\/302
+|
+|-heal|p2a: Vaporeon|231\/464|[from] item: Leftovers
+|turn|31
+|
+|move|p1a: Haxorus|Dragon Dance|p1a: Haxorus
+|-boost|p1a: Haxorus|atk|1
+|-boost|p1a: Haxorus|spe|1
+|move|p2a: Vaporeon|Ice Beam|p1a: Haxorus
+|-supereffective|p1a: Haxorus
+|-damage|p1a: Haxorus|24\/302
+|
+|-heal|p2a: Vaporeon|260\/464|[from] item: Leftovers
+|turn|32
+|
+|switch|p2a: Forretress|Forretress, M|288\/354
+|move|p1a: Haxorus|Earthquake|p2a: Forretress
+|-damage|p2a: Forretress|132\/354
+|-damage|p1a: Haxorus|0 fnt|[from] item: Life Orb
+|faint|p1a: Haxorus
+|
+|-heal|p2a: Forretress|154\/354|[from] item: Leftovers
+|
+|switch|p1a: Vaporeon|Vaporeon, F|464\/464
+|turn|33
+|
+|switch|p2a: Vaporeon|Vaporeon, M|260\/464
+|move|p1a: Vaporeon|Scald|p2a: Vaporeon
+|-heal|p2a: Vaporeon|376\/464|[from] ability: Water Absorb|[of] p1a: Vaporeon
+|
+|-heal|p2a: Vaporeon|405\/464|[from] item: Leftovers
+|turn|34
+|
+|switch|p1a: Porygon2|Porygon2|374\/374
+|move|p2a: Vaporeon|Baton Pass|p2a: Vaporeon
+|
+|switch|p2a: Mienshao|Mienshao, M|235\/272
+|
+|turn|35
+|
+|switch|p1a: Chesnaught|Chesnaught, F|354\/380
+|move|p2a: Mienshao|High Jump Kick|p1a: Chesnaught
+|-damage|p1a: Chesnaught|183\/380
+|
+|-heal|p1a: Chesnaught|206\/380|[from] item: Leftovers
+|turn|36
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|271\/271
+|move|p1a: Chesnaught|Leech Seed|p2a: Beedrill
+|-start|p2a: Beedrill|move: Leech Seed
+|
+|-heal|p1a: Chesnaught|229\/380|[from] item: Leftovers
+|-damage|p2a: Beedrill|238\/271|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|262\/380|[silent]
+|turn|37
+|
+|switch|p2a: Vaporeon|Vaporeon, M|405\/464
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-fail|p1a: Chesnaught
+|
+|-heal|p2a: Vaporeon|434\/464|[from] item: Leftovers
+|-heal|p1a: Chesnaught|285\/380|[from] item: Leftovers
+|turn|38
+|
+|move|p2a: Vaporeon|Ice Beam|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-damage|p1a: Chesnaught|83\/380
+|move|p1a: Chesnaught|Leech Seed|p2a: Vaporeon|[miss]
+|-miss|p1a: Chesnaught|p2a: Vaporeon
+|
+|-heal|p2a: Vaporeon|463\/464|[from] item: Leftovers
+|-heal|p1a: Chesnaught|106\/380|[from] item: Leftovers
+|turn|39
+|
+|switch|p1a: Vaporeon|Vaporeon, F|464\/464
+|move|p2a: Vaporeon|Ice Beam|p1a: Vaporeon
+|-resisted|p1a: Vaporeon
+|-damage|p1a: Vaporeon|425\/464
+|
+|-heal|p2a: Vaporeon|464\/464|[from] item: Leftovers
+|-heal|p1a: Vaporeon|454\/464|[from] item: Leftovers
+|turn|40
+|
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|464\/464|[from] item: Leftovers
+|turn|41
+|
+|switch|p1a: Donphan|Donphan, M|44\/384
+|move|p2a: Vaporeon|Ice Beam|p1a: Donphan
+|-supereffective|p1a: Donphan
+|-damage|p1a: Donphan|0 fnt
+|faint|p1a: Donphan
+|
+|
+|switch|p1a: Porygon2|Porygon2|374\/374
+|turn|42
+|
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|move|p1a: Porygon2|Toxic|p2a: Vaporeon
+|-status|p2a: Vaporeon|tox
+|
+|-damage|p2a: Vaporeon|435\/464 tox|[from] psn
+|turn|43
+|join|DatGuyChuck
+|
+|switch|p2a: Mienshao|Mienshao, M|235\/272
+|move|p1a: Porygon2|Tri Attack|p2a: Mienshao
+|-damage|p2a: Mienshao|34\/272
+|
+|-heal|p2a: Mienshao|266\/272|[from] move: Wish|[wisher] Vaporeon
+|turn|44
+|
+|switch|p1a: Vaporeon|Vaporeon, F|464\/464
+|move|p2a: Mienshao|High Jump Kick|p1a: Vaporeon
+|-damage|p1a: Vaporeon|203\/464
+|
+|-heal|p1a: Vaporeon|232\/464|[from] item: Leftovers
+|turn|45
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Mienshao|High Jump Kick|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Protect
+|-damage|p2a: Mienshao|130\/272|[from] highjumpkick
+|
+|-heal|p1a: Vaporeon|261\/464|[from] item: Leftovers
+|turn|46
+|
+|switch|p1a: Chesnaught|Chesnaught, F|106\/380
+|move|p2a: Mienshao|High Jump Kick|p1a: Chesnaught
+|-damage|p1a: Chesnaught|0 fnt
+|faint|p1a: Chesnaught
+|
+|c| DatGuyChuck|dub protect
+|
+|switch|p1a: Vaporeon|Vaporeon, F|261\/464
+|turn|47
+|c|âDrummerVim|was hoping u didnt have protect on vape
+|
+|switch|p2a: Vaporeon|Vaporeon, M|435\/464 tox
+|move|p1a: Vaporeon|Scald|p2a: Vaporeon
+|-heal|p2a: Vaporeon|464\/464 tox|[from] ability: Water Absorb|[of] p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|290\/464|[from] item: Leftovers
+|-damage|p2a: Vaporeon|435\/464 tox|[from] psn
+|turn|48
+|
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|319\/464|[from] item: Leftovers
+|-heal|p2a: Vaporeon|464\/464 tox|[from] item: Leftovers
+|-damage|p2a: Vaporeon|406\/464 tox|[from] psn
+|turn|49
+|
+|move|p2a: Vaporeon|Baton Pass|p2a: Vaporeon
+|
+|switch|p2a: Raikou|Raikou|322\/322
+|-ability|p2a: Raikou|Pressure
+|move|p1a: Vaporeon|Scald|p2a: Raikou
+|-damage|p2a: Raikou|216\/322
+|
+|-heal|p2a: Raikou|322\/322|[from] move: Wish|[wisher] Vaporeon
+|-heal|p1a: Vaporeon|464\/464|[from] move: Wish|[wisher] Vaporeon
+|turn|50
+|
+|switch|p2a: Vaporeon|Vaporeon, M|406\/464 tox
+|switch|p1a: Steelix|Steelix-Mega, M|315\/354 slp
+|
+|-heal|p2a: Vaporeon|435\/464 tox|[from] item: Leftovers
+|-damage|p2a: Vaporeon|406\/464 tox|[from] psn
+|turn|51
+|
+|switch|p1a: Vaporeon|Vaporeon, F|464\/464
+|move|p2a: Vaporeon|Scald|p1a: Vaporeon
+|-immune|p1a: Vaporeon|[msg]
+|
+|-heal|p2a: Vaporeon|435\/464 tox|[from] item: Leftovers
+|-damage|p2a: Vaporeon|377\/464 tox|[from] psn
+|turn|52
+|
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|move|p2a: Vaporeon|Baton Pass|p2a: Vaporeon
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|238\/271
+|
+|turn|53
+|
+|switch|p1a: Steelix|Steelix-Mega, M|315\/354 slp
+|move|p2a: Beedrill|U-turn|p1a: Steelix
+|-resisted|p1a: Steelix
+|-damage|p1a: Steelix|277\/354 slp
+|
+|switch|p2a: Vaporeon|Vaporeon, M|377\/464 tox
+|
+|-heal|p1a: Steelix|354\/354 slp|[from] move: Wish|[wisher] Vaporeon
+|-heal|p2a: Vaporeon|406\/464 tox|[from] item: Leftovers
+|-damage|p2a: Vaporeon|377\/464 tox|[from] psn
+|turn|54
+|
+|switch|p1a: Vaporeon|Vaporeon, F|464\/464
+|move|p2a: Vaporeon|Baton Pass|p2a: Vaporeon
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|238\/271
+|
+|turn|55
+|
+|move|p2a: Beedrill|Drill Run|p1a: Vaporeon
+|-damage|p1a: Vaporeon|359\/464
+|move|p1a: Vaporeon|Scald|p2a: Beedrill
+|-damage|p2a: Beedrill|105\/271
+|
+|-heal|p1a: Vaporeon|388\/464|[from] item: Leftovers
+|turn|56
+|
+|switch|p1a: Steelix|Steelix-Mega, M|354\/354 slp
+|move|p2a: Beedrill|U-turn|p1a: Steelix
+|-resisted|p1a: Steelix
+|-damage|p1a: Steelix|315\/354 slp
+|
+|switch|p2a: Forretress|Forretress, M|154\/354
+|
+|-heal|p2a: Forretress|176\/354|[from] item: Leftovers
+|turn|57
+|
+|move|p2a: Forretress|Stealth Rock|p1a: Steelix
+|-sidestart|p1: LivingTarget|move: Stealth Rock
+|cant|p1a: Steelix|slp
+|move|p1a: Steelix|Sleep Talk|p1a: Steelix
+|move|p1a: Steelix|Rest|p1a: Steelix|[from]Sleep Talk
+|-fail|p1a: Steelix
+|
+|-heal|p2a: Forretress|198\/354|[from] item: Leftovers
+|turn|58
+|
+|move|p2a: Forretress|Spikes|p1a: Steelix
+|-sidestart|p1: LivingTarget|Spikes
+|-curestatus|p1a: Steelix|slp
+|move|p1a: Steelix|Earthquake|p2a: Forretress
+|-damage|p2a: Forretress|110\/354
+|
+|-heal|p2a: Forretress|132\/354|[from] item: Leftovers
+|turn|59
+|
+|move|p2a: Forretress|Spikes|p1a: Steelix
+|-sidestart|p1: LivingTarget|Spikes
+|move|p1a: Steelix|Earthquake|p2a: Forretress
+|-damage|p2a: Forretress|57\/354
+|
+|-heal|p2a: Forretress|79\/354|[from] item: Leftovers
+|turn|60
+|
+|move|p2a: Forretress|Spikes|p1a: Steelix
+|-sidestart|p1: LivingTarget|Spikes
+|move|p1a: Steelix|Earthquake|p2a: Forretress
+|-crit|p2a: Forretress
+|-damage|p2a: Forretress|0 fnt
+|faint|p2a: Forretress
+|
+|
+|switch|p2a: Vaporeon|Vaporeon, M|377\/464 tox
+|turn|61
+|
+|switch|p1a: Vaporeon|Vaporeon, F|388\/464
+|-damage|p1a: Vaporeon|330\/464|[from] Stealth Rock
+|-damage|p1a: Vaporeon|214\/464|[from] Spikes
+|move|p2a: Vaporeon|Scald|p1a: Vaporeon
+|-heal|p1a: Vaporeon|330\/464|[from] ability: Water Absorb|[of] p2a: Vaporeon
+|
+|-heal|p1a: Vaporeon|359\/464|[from] item: Leftovers
+|-heal|p2a: Vaporeon|406\/464 tox|[from] item: Leftovers
+|-damage|p2a: Vaporeon|377\/464 tox|[from] psn
+|turn|62
+|
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|388\/464|[from] item: Leftovers
+|-heal|p2a: Vaporeon|406\/464 tox|[from] item: Leftovers
+|-damage|p2a: Vaporeon|348\/464 tox|[from] psn
+|turn|63
+|
+|move|p1a: Vaporeon|Scald|p2a: Vaporeon
+|-heal|p2a: Vaporeon|464\/464 tox|[from] ability: Water Absorb|[of] p1a: Vaporeon
+|move|p2a: Vaporeon|Baton Pass|p2a: Vaporeon
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|105\/271
+|
+|-heal|p2a: Beedrill|271\/271|[from] move: Wish|[wisher] Vaporeon
+|-heal|p1a: Vaporeon|464\/464|[from] move: Wish|[wisher] Vaporeon
+|turn|64
+|
+|switch|p1a: Steelix|Steelix-Mega, M|315\/354
+|-damage|p1a: Steelix|304\/354|[from] Stealth Rock
+|-damage|p1a: Steelix|216\/354|[from] Spikes
+|move|p2a: Beedrill|U-turn|p1a: Steelix
+|-resisted|p1a: Steelix
+|-damage|p1a: Steelix|174\/354
+|leave|DatGuyChuck
+|
+|switch|p2a: Mienshao|Mienshao, M|130\/272
+|
+|turn|65
+|
+|move|p2a: Mienshao|High Jump Kick|p1a: Steelix|[miss]
+|-miss|p2a: Mienshao|p1a: Steelix
+|-damage|p2a: Mienshao|0 fnt|[from] highjumpkick
+|faint|p2a: Mienshao
+|move|p1a: Steelix|Rest|p1a: Steelix
+|-status|p1a: Steelix|slp
+|-heal|p1a: Steelix|354\/354 slp|[silent]
+|-status|p1a: Steelix|slp|[from] move: Rest
+|
+|c|âDrummerVim|no
+|
+|switch|p2a: Vaporeon|Vaporeon, M|464\/464 tox
+|turn|66
+|
+|switch|p1a: Vaporeon|Vaporeon, F|464\/464
+|-damage|p1a: Vaporeon|406\/464|[from] Stealth Rock
+|-damage|p1a: Vaporeon|290\/464|[from] Spikes
+|move|p2a: Vaporeon|Baton Pass|p2a: Vaporeon
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|271\/271
+|
+|-heal|p1a: Vaporeon|319\/464|[from] item: Leftovers
+|turn|67
+|
+|move|p2a: Beedrill|U-turn|p1a: Vaporeon
+|-damage|p1a: Vaporeon|105\/464
+|
+|switch|p2a: Vaporeon|Vaporeon, M|464\/464 tox
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|134\/464|[from] item: Leftovers
+|-damage|p2a: Vaporeon|435\/464 tox|[from] psn
+|turn|68
+|
+|move|p2a: Vaporeon|Baton Pass|p2a: Vaporeon
+|
+|switch|p2a: Raikou|Raikou|322\/322
+|-ability|p2a: Raikou|Pressure
+|move|p1a: Vaporeon|Scald|p2a: Raikou
+|-damage|p2a: Raikou|211\/322
+|
+|-heal|p1a: Vaporeon|366\/464|[from] move: Wish|[wisher] Vaporeon
+|-heal|p1a: Vaporeon|395\/464|[from] item: Leftovers
+|turn|69
+|
+|switch|p1a: Porygon2|Porygon2|374\/374
+|-damage|p1a: Porygon2|328\/374|[from] Stealth Rock
+|-damage|p1a: Porygon2|235\/374|[from] Spikes
+|move|p2a: Raikou|Shadow Ball|p1a: Porygon2
+|-immune|p1a: Porygon2|[msg]
+|
+|turn|70
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|271\/271
+|move|p1a: Porygon2|Tri Attack|p2a: Beedrill
+|-damage|p2a: Beedrill|124\/271
+|
+|turn|71
+|
+|move|p2a: Beedrill|U-turn|p1a: Porygon2
+|-crit|p1a: Porygon2
+|-damage|p1a: Porygon2|11\/374
+|
+|switch|p2a: Vaporeon|Vaporeon, M|435\/464 tox
+|move|p1a: Porygon2|Recover|p1a: Porygon2
+|-heal|p1a: Porygon2|198\/374
+|
+|-heal|p2a: Vaporeon|464\/464 tox|[from] item: Leftovers
+|-damage|p2a: Vaporeon|435\/464 tox|[from] psn
+|turn|72
+|
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|move|p1a: Porygon2|Tri Attack|p2a: Vaporeon
+|-damage|p2a: Vaporeon|345\/464 tox
+|
+|-heal|p2a: Vaporeon|374\/464 tox|[from] item: Leftovers
+|-damage|p2a: Vaporeon|316\/464 tox|[from] psn
+|turn|73
+|
+|move|p2a: Vaporeon|Baton Pass|p2a: Vaporeon
+|
+|switch|p2a: Darmanitan|Darmanitan, M|351\/351
+|move|p1a: Porygon2|Tri Attack|p2a: Darmanitan
+|-damage|p2a: Darmanitan|129\/351
+|-status|p2a: Darmanitan|frz
+|
+|-heal|p2a: Darmanitan|351\/351 frz|[from] move: Wish|[wisher] Vaporeon
+|turn|74
+|
+|-curestatus|p2a: Darmanitan|frz
+|move|p2a: Darmanitan|Flare Blitz|p1a: Porygon2
+|-damage|p1a: Porygon2|0 fnt
+|-damage|p2a: Darmanitan|286\/351|[from] recoil|[of] p1a: Porygon2
+|faint|p1a: Porygon2
+|
+|
+|switch|p1a: Vaporeon|Vaporeon, F|395\/464
+|-damage|p1a: Vaporeon|279\/464|[from] Spikes
+|-damage|p1a: Vaporeon|221\/464|[from] Stealth Rock
+|turn|75
+|
+|switch|p2a: Vaporeon|Vaporeon, M|316\/464 tox
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-heal|p2a: Vaporeon|345\/464 tox|[from] item: Leftovers
+|-heal|p1a: Vaporeon|250\/464|[from] item: Leftovers
+|-damage|p2a: Vaporeon|316\/464 tox|[from] psn
+|turn|76
+|
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|move|p1a: Vaporeon|Scald|p2a: Vaporeon
+|-heal|p2a: Vaporeon|432\/464 tox|[from] ability: Water Absorb|[of] p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|464\/464|[from] move: Wish|[wisher] Vaporeon
+|-heal|p2a: Vaporeon|461\/464 tox|[from] item: Leftovers
+|-damage|p2a: Vaporeon|403\/464 tox|[from] psn
+|turn|77
+|
+|move|p1a: Vaporeon|Scald|p2a: Vaporeon
+|-heal|p2a: Vaporeon|464\/464 tox|[from] ability: Water Absorb|[of] p1a: Vaporeon
+|move|p2a: Vaporeon|Baton Pass|p2a: Vaporeon
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|124\/271
+|
+|-heal|p2a: Beedrill|271\/271|[from] move: Wish|[wisher] Vaporeon
+|turn|78
+|
+|move|p2a: Beedrill|U-turn|p1a: Vaporeon
+|-damage|p1a: Vaporeon|278\/464
+|
+|switch|p2a: Raikou|Raikou|211\/322
+|-ability|p2a: Raikou|Pressure
+|move|p1a: Vaporeon|Scald|p2a: Raikou
+|-damage|p2a: Raikou|99\/322
+|-status|p2a: Raikou|brn
+|
+|-heal|p1a: Vaporeon|307\/464|[from] item: Leftovers
+|-damage|p2a: Raikou|59\/322 brn|[from] brn
+|turn|79
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Raikou|Thunderbolt|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Protect
+|
+|-heal|p1a: Vaporeon|336\/464|[from] item: Leftovers
+|-damage|p2a: Raikou|19\/322 brn|[from] brn
+|turn|80
+|
+|switch|p2a: Vaporeon|Vaporeon, M|464\/464 tox
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|365\/464|[from] item: Leftovers
+|-damage|p2a: Vaporeon|435\/464 tox|[from] psn
+|turn|81
+|
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|move|p1a: Vaporeon|Heal Bell|p1a: Vaporeon
+|-cureteam|p1a: Vaporeon|[from] move: HealBell
+|
+|-heal|p1a: Vaporeon|464\/464|[from] move: Wish|[wisher] Vaporeon
+|-heal|p2a: Vaporeon|464\/464 tox|[from] item: Leftovers
+|-damage|p2a: Vaporeon|406\/464 tox|[from] psn
+|turn|82
+|
+|move|p2a: Vaporeon|Baton Pass|p2a: Vaporeon
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|271\/271
+|move|p1a: Vaporeon|Scald|p2a: Beedrill
+|-damage|p2a: Beedrill|150\/271
+|
+|-heal|p2a: Beedrill|271\/271|[from] move: Wish|[wisher] Vaporeon
+|turn|83
+|
+|switch|p1a: Steelix|Steelix-Mega, M|354\/354
+|-damage|p1a: Steelix|343\/354|[from] Stealth Rock
+|-damage|p1a: Steelix|255\/354|[from] Spikes
+|move|p2a: Beedrill|U-turn|p1a: Steelix
+|-resisted|p1a: Steelix
+|-damage|p1a: Steelix|219\/354
+|
+|switch|p2a: Darmanitan|Darmanitan, M|286\/351
+|
+|turn|84
+|
+|move|p2a: Darmanitan|Superpower|p1a: Steelix
+|-supereffective|p1a: Steelix
+|-damage|p1a: Steelix|91\/354
+|-unboost|p2a: Darmanitan|atk|1
+|-unboost|p2a: Darmanitan|def|1
+|move|p1a: Steelix|Earthquake|p2a: Darmanitan
+|-supereffective|p2a: Darmanitan
+|-damage|p2a: Darmanitan|0 fnt
+|faint|p2a: Darmanitan
+|
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|271\/271
+|turn|85
+|
+|move|p2a: Beedrill|Drill Run|p1a: Steelix
+|-supereffective|p1a: Steelix
+|-damage|p1a: Steelix|0 fnt
+|faint|p1a: Steelix
+|
+|
+|switch|p1a: Vaporeon|Vaporeon, F|464\/464
+|-damage|p1a: Vaporeon|406\/464|[from] Stealth Rock
+|-damage|p1a: Vaporeon|290\/464|[from] Spikes
+|turn|86
+|
+|move|p2a: Beedrill|Poison Jab|p1a: Vaporeon
+|-damage|p1a: Vaporeon|62\/464
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|91\/464|[from] item: Leftovers
+|turn|87
+|
+|switch|p2a: Raikou|Raikou|19\/322 brn
+|-ability|p2a: Raikou|Pressure
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-fail|p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|323\/464|[from] move: Wish|[wisher] Vaporeon
+|-heal|p1a: Vaporeon|352\/464|[from] item: Leftovers
+|-damage|p2a: Raikou|0 fnt|[from] brn
+|faint|p2a: Raikou
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|271\/271
+|turn|88
+|
+|move|p2a: Beedrill|U-turn|p1a: Vaporeon
+|-damage|p1a: Vaporeon|144\/464
+|
+|switch|p2a: Vaporeon|Vaporeon, M|406\/464 tox
+|move|p1a: Vaporeon|Scald|p2a: Vaporeon
+|-heal|p2a: Vaporeon|464\/464 tox|[from] ability: Water Absorb|[of] p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|173\/464|[from] item: Leftovers
+|-damage|p2a: Vaporeon|435\/464 tox|[from] psn
+|turn|89
+|
+|move|p2a: Vaporeon|Baton Pass|p2a: Vaporeon
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|271\/271
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|202\/464|[from] item: Leftovers
+|turn|90
+|
+|move|p1a: Vaporeon|Protect|p1a: Vaporeon
+|-singleturn|p1a: Vaporeon|Protect
+|move|p2a: Beedrill|U-turn|p1a: Vaporeon
+|-activate|p1a: Vaporeon|Protect
+|
+|-heal|p1a: Vaporeon|434\/464|[from] move: Wish|[wisher] Vaporeon
+|-heal|p1a: Vaporeon|463\/464|[from] item: Leftovers
+|turn|91
+|join|LiLo383
+|
+|move|p2a: Beedrill|U-turn|p1a: Vaporeon
+|-damage|p1a: Vaporeon|263\/464
+|
+|switch|p2a: Vaporeon|Vaporeon, M|435\/464 tox
+|move|p1a: Vaporeon|Heal Bell|p1a: Vaporeon
+|-cureteam|p1a: Vaporeon|[from] move: HealBell
+|
+|-heal|p1a: Vaporeon|292\/464|[from] item: Leftovers
+|-heal|p2a: Vaporeon|464\/464 tox|[from] item: Leftovers
+|-damage|p2a: Vaporeon|435\/464 tox|[from] psn
+|turn|92
+|
+|move|p2a: Vaporeon|Wish|p2a: Vaporeon
+|move|p1a: Vaporeon|Scald|p2a: Vaporeon
+|-heal|p2a: Vaporeon|464\/464 tox|[from] ability: Water Absorb|[of] p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|321\/464|[from] item: Leftovers
+|-damage|p2a: Vaporeon|406\/464 tox|[from] psn
+|turn|93
+|
+|move|p2a: Vaporeon|Ice Beam|p1a: Vaporeon
+|-resisted|p1a: Vaporeon
+|-damage|p1a: Vaporeon|283\/464
+|-status|p1a: Vaporeon|frz
+|-curestatus|p1a: Vaporeon|frz
+|move|p1a: Vaporeon|Scald|p2a: Vaporeon
+|-heal|p2a: Vaporeon|464\/464 tox|[from] ability: Water Absorb|[of] p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|312\/464|[from] item: Leftovers
+|-damage|p2a: Vaporeon|377\/464 tox|[from] psn
+|turn|94
+|
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|move|p2a: Vaporeon|Baton Pass|p2a: Vaporeon
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|271\/271
+|
+|-heal|p1a: Vaporeon|341\/464|[from] item: Leftovers
+|turn|95
+|
+|move|p2a: Beedrill|U-turn|p1a: Vaporeon
+|-damage|p1a: Vaporeon|127\/464
+|
+|switch|p2a: Vaporeon|Vaporeon, M|377\/464 tox
+|move|p1a: Vaporeon|Scald|p2a: Vaporeon
+|-heal|p2a: Vaporeon|464\/464 tox|[from] ability: Water Absorb|[of] p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|359\/464|[from] move: Wish|[wisher] Vaporeon
+|-heal|p1a: Vaporeon|388\/464|[from] item: Leftovers
+|-damage|p2a: Vaporeon|435\/464 tox|[from] psn
+|turn|96
+|
+|move|p2a: Vaporeon|Ice Beam|p1a: Vaporeon
+|-resisted|p1a: Vaporeon
+|-damage|p1a: Vaporeon|348\/464
+|move|p1a: Vaporeon|Heal Bell|p1a: Vaporeon
+|-cureteam|p1a: Vaporeon|[from] move: HealBell
+|
+|-heal|p1a: Vaporeon|377\/464|[from] item: Leftovers
+|-heal|p2a: Vaporeon|464\/464 tox|[from] item: Leftovers
+|-damage|p2a: Vaporeon|406\/464 tox|[from] psn
+|turn|97
+|
+|move|p1a: Vaporeon|Heal Bell|p1a: Vaporeon
+|-cureteam|p1a: Vaporeon|[from] move: HealBell
+|move|p2a: Vaporeon|Baton Pass|p2a: Vaporeon
+|
+|switch|p2a: Beedrill|Beedrill-Mega, F|271\/271
+|
+|-heal|p1a: Vaporeon|406\/464|[from] item: Leftovers
+|turn|98
+|
+|move|p2a: Beedrill|Poison Jab|p1a: Vaporeon
+|-damage|p1a: Vaporeon|196\/464
+|move|p1a: Vaporeon|Wish|p1a: Vaporeon
+|
+|-heal|p1a: Vaporeon|225\/464|[from] item: Leftovers
+|turn|99
+|
+|move|p2a: Beedrill|Poison Jab|p1a: Vaporeon
+|-damage|p1a: Vaporeon|0 fnt
+|faint|p1a: Vaporeon
+|
+|win|DrummerVim
+|raw|Ladder updating...
+|raw|LivingTarget's rating: 1140 &rarr; <strong>1118<\/strong><br \/>(-22 for losing)
+|raw|DrummerVim's rating: 1183 &rarr; <strong>1205<\/strong><br \/>(+22 for winning)
+|c|âLivingTarget|gg
+|leave|LivingTarget
+|player|p1
+|leave|LiLo383
+|c|âDrummerVim|gg

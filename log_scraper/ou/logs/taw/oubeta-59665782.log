@@ -1,0 +1,280 @@
+|join|mistermystery
+|join|taw
+|player|p1|mistermystery|170
+|player|p2|taw|257
+|gametype|singles
+|tier|OU (beta)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Rotom-Wash
+|poke|p1|Garchomp, M
+|poke|p1|Scizor, F
+|poke|p1|Forretress, M
+|poke|p1|Chandelure, M
+|poke|p1|Magnezone
+|poke|p2|Crobat, F
+|poke|p2|Diggersby, F
+|poke|p2|Greninja, F
+|poke|p2|Breloom, F
+|poke|p2|Talonflame, M
+|poke|p2|Malamar, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Forretress|Forretress, M|354\/354
+|switch|p2a: Breloom|Breloom, F|262\/262
+|turn|1
+|callback|decision
+|
+|move|p2a: Breloom|Spore|p1a: Forretress
+|-status|p1a: Forretress|slp
+|cant|p1a: Forretress|slp
+|
+|turn|2
+|callback|decision
+|
+|switch|p1a: Chandelure|Chandelure, M|278\/278
+|move|p2a: Breloom|Swords Dance|p2a: Breloom
+|-boost|p2a: Breloom|atk|2
+|
+|turn|3
+|callback|decision
+|
+|move|p2a: Breloom|Bullet Seed|p1a: Chandelure
+|-resisted|p1a: Chandelure
+|-damage|p1a: Chandelure|211\/278
+|-resisted|p1a: Chandelure
+|-damage|p1a: Chandelure|139\/278
+|-resisted|p1a: Chandelure
+|-damage|p1a: Chandelure|65\/278
+|-hitcount|p1a: Chandelure|3
+|move|p1a: Chandelure|Fire Blast|p2a: Breloom
+|-crit|p2a: Breloom
+|-supereffective|p2a: Breloom
+|-enditem|p2a: Breloom|Focus Sash
+|-damage|p2a: Breloom|1\/262
+|-damage|p1a: Chandelure|38\/278|[from] item: Life Orb
+|
+|turn|4
+|callback|decision
+|
+|switch|p1a: Forretress|Forretress, M|354\/354 slp
+|move|p2a: Breloom|Bullet Seed|p1a: Forretress
+|-resisted|p1a: Forretress
+|-damage|p1a: Forretress|337\/354 slp
+|-resisted|p1a: Forretress
+|-damage|p1a: Forretress|318\/354 slp
+|-hitcount|p1a: Forretress|2
+|
+|-heal|p1a: Forretress|340\/354 slp|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p2a: Breloom|Swords Dance|p2a: Breloom
+|-boost|p2a: Breloom|atk|2
+|-curestatus|p1a: Forretress|slp
+|move|p1a: Forretress|Stealth Rock|p2a: Breloom
+|-sidestart|p2: taw|move: Stealth Rock
+|
+|-heal|p1a: Forretress|354\/354|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|move|p2a: Breloom|Spore|p1a: Forretress
+|-status|p1a: Forretress|slp
+|cant|p1a: Forretress|slp
+|
+|turn|7
+|callback|decision
+|
+|move|p2a: Breloom|Mach Punch|p1a: Forretress
+|-damage|p1a: Forretress|156\/354 slp
+|cant|p1a: Forretress|slp
+|
+|-heal|p1a: Forretress|178\/354 slp|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|move|p2a: Breloom|Mach Punch|p1a: Forretress
+|-damage|p1a: Forretress|7\/354 slp
+|-curestatus|p1a: Forretress|slp
+|move|p1a: Forretress|Rapid Spin|p2a: Breloom
+|-damage|p2a: Breloom|0 fnt
+|faint|p2a: Breloom
+|
+|-heal|p1a: Forretress|29\/354|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Crobat|Crobat, F|374\/374
+|-damage|p2a: Crobat|281\/374|[from] Stealth Rock
+|turn|9
+|callback|decision
+|
+|move|p2a: Crobat|Brave Bird|p1a: Forretress
+|-damage|p1a: Forretress|0 fnt
+|-damage|p2a: Crobat|271\/374|[from] recoil|[of] p1a: Forretress
+|faint|p1a: Forretress
+|
+|-heal|p2a: Crobat|294\/374|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|303\/303
+|turn|10
+|callback|decision
+|
+|move|p2a: Crobat|Defog|p1a: Rotom-Wash
+|-unboost|p1a: Rotom-Wash|evasion|1
+|-sideend|p2: taw|Stealth Rock|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Crobat
+|-supereffective|p2a: Crobat
+|-damage|p2a: Crobat|84\/374
+|callback|decision
+|
+|switch|p1a: Magnezone|Magnezone|324\/324
+|
+|-heal|p2a: Crobat|107\/374|[from] item: Black Sludge
+|turn|11
+|callback|decision
+|
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|294\/374
+|move|p1a: Magnezone|Thunderbolt|p2a: Crobat
+|-crit|p2a: Crobat
+|-damage|p2a: Crobat|0 fnt
+|faint|p2a: Crobat
+|
+|callback|decision
+|
+|switch|p2a: Malamar|Malamar, M|376\/376
+|turn|12
+|callback|decision
+|
+|move|p1a: Magnezone|Thunderbolt|p2a: Malamar
+|-damage|p2a: Malamar|52\/376
+|move|p2a: Malamar|Switcheroo|p1a: Magnezone
+|-activate|p2a: Malamar|move: Trick|[of] p1a: Magnezone
+|-item|p1a: Magnezone|Choice Band|[from] Trick
+|-item|p2a: Malamar|Choice Specs|[from] Trick
+|
+|turn|13
+|callback|decision
+|
+|switch|p2a: Diggersby|Diggersby, F|374\/374
+|move|p1a: Magnezone|Volt Switch|p2a: Diggersby
+|-immune|p2a: Diggersby|[msg]
+|
+|turn|14
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, M|358\/358
+|move|p2a: Diggersby|Return|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|-damage|p2a: Diggersby|328\/374|[from] ability: Rough Skin|[of] p1a: Garchomp
+|faint|p1a: Garchomp
+|
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|281\/281
+|turn|15
+|callback|decision
+|
+|switch|p2a: Talonflame|Talonflame, M|298\/298
+|move|p1a: Scizor|Bullet Punch|p2a: Talonflame
+|-resisted|p2a: Talonflame
+|-damage|p2a: Talonflame|182\/298
+|
+|turn|16
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|303\/303
+|move|p2a: Talonflame|Swords Dance|p2a: Talonflame
+|-boost|p2a: Talonflame|atk|2
+|
+|turn|17
+|callback|decision
+|
+|move|p2a: Talonflame|Brave Bird|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|125\/303
+|-damage|p2a: Talonflame|123\/298|[from] recoil|[of] p1a: Rotom-Wash
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Talonflame
+|-supereffective|p2a: Talonflame
+|-damage|p2a: Talonflame|0 fnt
+|faint|p2a: Talonflame
+|
+|-heal|p1a: Rotom-Wash|143\/303|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Greninja|Greninja, F|286\/286
+|turn|18
+|callback|decision
+|
+|-start|p2a: Greninja|typechange|Dark|[from] Protean
+|move|p2a: Greninja|Dark Pulse|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|22\/303
+|-damage|p2a: Greninja|258\/286|[from] item: Life Orb
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Greninja
+|-damage|p2a: Greninja|143\/286
+|callback|decision
+|
+|switch|p1a: Magnezone|Magnezone|324\/324
+|
+|turn|19
+|callback|decision
+|
+|-start|p2a: Greninja|typechange|Fighting|[from] Protean
+|move|p2a: Greninja|Hidden Power|p1a: Magnezone
+|-supereffective|p1a: Magnezone
+|-damage|p1a: Magnezone|67\/324
+|-damage|p2a: Greninja|115\/286|[from] item: Life Orb
+|move|p1a: Magnezone|Thunderbolt|p2a: Greninja
+|-damage|p2a: Greninja|0 fnt
+|faint|p2a: Greninja
+|
+|callback|decision
+|
+|switch|p2a: Diggersby|Diggersby, F|328\/374
+|turn|20
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|281\/281
+|move|p2a: Diggersby|Stone Edge|p1a: Scizor
+|-damage|p1a: Scizor|47\/281
+|
+|turn|21
+|callback|decision
+|
+|move|p1a: Scizor|Bullet Punch|p2a: Diggersby
+|-damage|p2a: Diggersby|115\/374
+|move|p2a: Diggersby|Stone Edge|p1a: Scizor
+|-damage|p1a: Scizor|0 fnt
+|faint|p1a: Scizor
+|
+|callback|decision
+|
+|switch|p1a: Chandelure|Chandelure, M|38\/278
+|turn|22
+|callback|decision
+|
+|move|p1a: Chandelure|Fire Blast|p2a: Diggersby
+|-damage|p2a: Diggersby|0 fnt
+|-damage|p1a: Chandelure|11\/278|[from] item: Life Orb
+|faint|p2a: Diggersby
+|
+|callback|decision
+|-message|taw forfeited.
+|
+|win|mistermystery
+|raw|Ladder updating...
+|leave|taw
+|player|p2
+|raw|mistermystery's rating: 1239 &rarr; <strong>1420<\/strong><br \/>(+181 for winning)
+|raw|taw's rating: 1573 &rarr; <strong>1558<\/strong><br \/>(-15 for losing)

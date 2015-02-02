@@ -1,0 +1,390 @@
+|join|Xuvez
+|join|taw
+|player|p1|Xuvez|275
+|player|p2|taw|257
+|gametype|singles
+|tier|OU (beta)
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Gogoat, M
+|poke|p1|Malamar, F
+|poke|p1|Klefki, M
+|poke|p1|Talonflame, M
+|poke|p1|Greninja, M
+|poke|p1|Dragalge, F
+|poke|p2|Crobat, F
+|poke|p2|Aegislash, F
+|poke|p2|Diggersby, M
+|poke|p2|Greninja, M
+|poke|p2|Pyroar, M
+|poke|p2|Breloom, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Dragalge|Dragalge, F|334\/334
+|switch|p2a: Breloom|Breloom, F|262\/262
+|turn|1
+|callback|decision
+|
+|move|p2a: Breloom|Spore|p1a: Dragalge
+|-status|p1a: Dragalge|slp
+|cant|p1a: Dragalge|slp
+|move|p1a: Dragalge|Sleep Talk|p1a: Dragalge
+|move|p1a: Dragalge|Rest|p1a: Dragalge|[from]Sleep Talk
+|-fail|p1a: Dragalge
+|
+|turn|2
+|callback|decision
+|
+|move|p2a: Breloom|Swords Dance|p2a: Breloom
+|-boost|p2a: Breloom|atk|2
+|cant|p1a: Dragalge|slp
+|move|p1a: Dragalge|Sleep Talk|p1a: Dragalge
+|move|p1a: Dragalge|Sludge Bomb|p2a: Breloom|[from]Sleep Talk
+|-supereffective|p2a: Breloom
+|-enditem|p2a: Breloom|Focus Sash
+|-damage|p2a: Breloom|1\/262
+|-status|p2a: Breloom|psn
+|
+|-damage|p2a: Breloom|0 fnt|[from] psn
+|faint|p2a: Breloom
+|callback|decision
+|
+|switch|p2a: Diggersby|Diggersby, M|374\/374
+|turn|3
+|callback|decision
+|
+|switch|p1a: Klefki|Klefki, M|320\/320
+|move|p2a: Diggersby|Stone Edge|p1a: Klefki
+|-resisted|p1a: Klefki
+|-damage|p1a: Klefki|225\/320
+|
+|turn|4
+|callback|decision
+|
+|switch|p2a: Aegislash|Aegislash, F|324\/324
+|move|p1a: Klefki|Reflect|p1a: Klefki
+|-sidestart|p1: Xuvez|Reflect
+|
+|turn|5
+|callback|decision
+|
+|switch|p1a: Malamar|Malamar, F|376\/376
+|move|p2a: Aegislash|Swords Dance|p2a: Aegislash
+|-boost|p2a: Aegislash|atk|2
+|
+|turn|6
+|callback|decision
+|
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Shadow Claw|p1a: Malamar
+|-damage|p1a: Malamar|210\/376
+|move|p1a: Malamar|Trick Room|p1a: Malamar
+|-fieldstart|move: Trick Room|[of] p1a: Malamar
+|
+|turn|7
+|callback|decision
+|
+|move|p1a: Malamar|Topsy-turvy|p2a: Aegislash
+|-invertboost|p2a: Aegislash|[from] move: Topsy-turvy
+|move|p2a: Aegislash|Shadow Claw|p1a: Malamar
+|-damage|p1a: Malamar|169\/376
+|
+|turn|8
+|callback|decision
+|
+|-formechange|p2a: Aegislash|Aegislash
+|move|p2a: Aegislash|King's Shield|p2a: Aegislash
+|-singleturn|p2a: Aegislash|King's Shield
+|move|p1a: Malamar|Superpower|p2a: Aegislash
+|-immune|p2a: Aegislash|[msg]
+|
+|turn|9
+|callback|decision
+|
+|move|p1a: Malamar|Night Slash|p2a: Aegislash
+|-supereffective|p2a: Aegislash
+|-damage|p2a: Aegislash|156\/324
+|move|p2a: Aegislash|Swords Dance|p2a: Aegislash
+|-boost|p2a: Aegislash|atk|2
+|
+|-heal|p2a: Aegislash|176\/324|[from] item: Leftovers
+|turn|10
+|callback|decision
+|
+|move|p2a: Aegislash|King's Shield|p2a: Aegislash
+|-singleturn|p2a: Aegislash|King's Shield
+|move|p1a: Malamar|Night Slash|p2a: Aegislash
+|-activate|p2a: Aegislash|King's Shield
+|-boost|p1a: Malamar|atk|2
+|
+|-heal|p2a: Aegislash|196\/324|[from] item: Leftovers
+|-fieldend|move: Trick Room
+|turn|11
+|callback|decision
+|
+|-formechange|p2a: Aegislash|Aegislash-Blade
+|move|p2a: Aegislash|Gyro Ball|p1a: Malamar
+|-damage|p1a: Malamar|150\/376
+|move|p1a: Malamar|Night Slash|p2a: Aegislash
+|-supereffective|p2a: Aegislash
+|-damage|p2a: Aegislash|0 fnt
+|faint|p2a: Aegislash
+|
+|-sideend|p1: Xuvez|Reflect
+|callback|decision
+|
+|switch|p2a: Greninja|Greninja, M|286\/286
+|turn|12
+|callback|decision
+|
+|switch|p1a: Klefki|Klefki, M|225\/320
+|-start|p2a: Greninja|typechange|Water|[from] Protean
+|move|p2a: Greninja|Surf|p1a: Klefki
+|-damage|p1a: Klefki|69\/320
+|-damage|p2a: Greninja|258\/286|[from] item: Life Orb
+|
+|turn|13
+|callback|decision
+|
+|move|p1a: Klefki|Thunder Wave|p2a: Greninja
+|-status|p2a: Greninja|par
+|cant|p2a: Greninja|par
+|
+|turn|14
+|callback|decision
+|
+|move|p1a: Klefki|Light Screen|p1a: Klefki
+|-sidestart|p1: Xuvez|move: Light Screen
+|move|p2a: Greninja|Surf|p1a: Klefki
+|-damage|p1a: Klefki|0 fnt
+|-damage|p2a: Greninja|230\/286 par|[from] item: Life Orb
+|faint|p1a: Klefki
+|
+|callback|decision
+|
+|switch|p1a: Gogoat|Gogoat, M|450\/450
+|turn|15
+|callback|decision
+|
+|switch|p2a: Pyroar|Pyroar, M|313\/313
+|move|p1a: Gogoat|Bulk Up|p1a: Gogoat
+|-boost|p1a: Gogoat|atk|1
+|-boost|p1a: Gogoat|def|1
+|
+|turn|16
+|callback|decision
+|
+|move|p2a: Pyroar|Flame Charge|p1a: Gogoat
+|-crit|p1a: Gogoat
+|-supereffective|p1a: Gogoat
+|-damage|p1a: Gogoat|214\/450
+|-boost|p2a: Pyroar|spe|1
+|move|p1a: Gogoat|Earthquake|p2a: Pyroar
+|-supereffective|p2a: Pyroar
+|-damage|p2a: Pyroar|0 fnt
+|faint|p2a: Pyroar
+|
+|-heal|p1a: Gogoat|242\/450|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Crobat|Crobat, F|374\/374
+|turn|17
+|callback|decision
+|
+|switch|p1a: Dragalge|Dragalge, F|334\/334 slp
+|move|p2a: Crobat|Brave Bird|p1a: Dragalge
+|-damage|p1a: Dragalge|226\/334 slp
+|-damage|p2a: Crobat|338\/374|[from] recoil|[of] p1a: Dragalge
+|
+|-heal|p2a: Crobat|361\/374|[from] item: Black Sludge
+|-heal|p1a: Dragalge|246\/334 slp|[from] item: Black Sludge
+|turn|18
+|callback|decision
+|
+|switch|p2a: Greninja|Greninja, M|230\/286 par
+|cant|p1a: Dragalge|slp
+|
+|-heal|p1a: Dragalge|266\/334 slp|[from] item: Black Sludge
+|turn|19
+|callback|decision
+|
+|-start|p2a: Greninja|typechange|Ice|[from] Protean
+|move|p2a: Greninja|Ice Beam|p1a: Dragalge
+|-supereffective|p1a: Dragalge
+|-damage|p1a: Dragalge|126\/334 slp
+|-damage|p2a: Greninja|202\/286 par|[from] item: Life Orb
+|-curestatus|p1a: Dragalge|slp
+|move|p1a: Dragalge|Dragon Tail|p2a: Greninja
+|-damage|p2a: Greninja|104\/286 par
+|drag|p2a: Crobat|Crobat, F|361\/374
+|
+|-heal|p2a: Crobat|374\/374|[from] item: Black Sludge
+|-heal|p1a: Dragalge|146\/334|[from] item: Black Sludge
+|turn|20
+|callback|decision
+|
+|move|p2a: Crobat|Brave Bird|p1a: Dragalge
+|-damage|p1a: Dragalge|28\/334
+|-damage|p2a: Crobat|335\/374|[from] recoil|[of] p1a: Dragalge
+|move|p1a: Dragalge|Dragon Tail|p2a: Crobat
+|-damage|p2a: Crobat|239\/374
+|drag|p2a: Diggersby|Diggersby, M|374\/374
+|
+|-heal|p1a: Dragalge|48\/334|[from] item: Black Sludge
+|turn|21
+|callback|decision
+|
+|move|p2a: Diggersby|Stone Edge|p1a: Dragalge
+|-crit|p1a: Dragalge
+|-damage|p1a: Dragalge|0 fnt
+|faint|p1a: Dragalge
+|
+|-sideend|p1: Xuvez|move: Light Screen
+|callback|decision
+|
+|switch|p1a: Gogoat|Gogoat, M|242\/450
+|turn|22
+|callback|decision
+|
+|move|p2a: Diggersby|Stone Edge|p1a: Gogoat|[miss]
+|-miss|p2a: Diggersby|p1a: Gogoat
+|move|p1a: Gogoat|Horn Leech|p2a: Diggersby
+|-supereffective|p2a: Diggersby
+|-damage|p2a: Diggersby|156\/374
+|-heal|p1a: Gogoat|351\/450|[from] drain|[of] p2a: Diggersby
+|
+|-heal|p1a: Gogoat|379\/450|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p2a: Diggersby|Stone Edge|p1a: Gogoat
+|-damage|p1a: Gogoat|141\/450
+|move|p1a: Gogoat|Horn Leech|p2a: Diggersby
+|-supereffective|p2a: Diggersby
+|-damage|p2a: Diggersby|0 fnt
+|-heal|p1a: Gogoat|219\/450|[from] drain|[of] p2a: Diggersby
+|faint|p2a: Diggersby
+|
+|-heal|p1a: Gogoat|247\/450|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Crobat|Crobat, F|239\/374
+|turn|24
+|callback|decision
+|
+|switch|p1a: Greninja|Greninja, M|287\/287
+|move|p2a: Crobat|Cross Poison|p1a: Greninja
+|-damage|p1a: Greninja|191\/287
+|-status|p1a: Greninja|psn
+|
+|-heal|p2a: Crobat|262\/374|[from] item: Black Sludge
+|-damage|p1a: Greninja|156\/287 psn|[from] psn
+|turn|25
+|callback|decision
+|
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|374\/374
+|-start|p1a: Greninja|typechange|Electric|[from] Protean
+|move|p1a: Greninja|Hidden Power|p2a: Crobat
+|-damage|p2a: Crobat|268\/374
+|
+|-heal|p2a: Crobat|291\/374|[from] item: Black Sludge
+|-damage|p1a: Greninja|121\/287 psn|[from] psn
+|turn|26
+|callback|decision
+|
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|374\/374
+|-start|p1a: Greninja|typechange|Ice|[from] Protean
+|move|p1a: Greninja|Ice Beam|p2a: Crobat
+|-damage|p2a: Crobat|197\/374
+|
+|-heal|p2a: Crobat|220\/374|[from] item: Black Sludge
+|-damage|p1a: Greninja|86\/287 psn|[from] psn
+|turn|27
+|callback|decision
+|
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|374\/374
+|move|p1a: Greninja|Ice Beam|p2a: Crobat
+|-damage|p2a: Crobat|220\/374
+|
+|-heal|p2a: Crobat|243\/374|[from] item: Black Sludge
+|-damage|p1a: Greninja|51\/287 psn|[from] psn
+|turn|28
+|callback|decision
+|
+|move|p2a: Crobat|Cross Poison|p1a: Greninja
+|-crit|p1a: Greninja
+|-damage|p1a: Greninja|0 fnt
+|faint|p1a: Greninja
+|
+|-heal|p2a: Crobat|266\/374|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p1a: Malamar|Malamar, F|150\/376
+|turn|29
+|callback|decision
+|
+|move|p2a: Crobat|Brave Bird|p1a: Malamar
+|-damage|p1a: Malamar|5\/376
+|-damage|p2a: Crobat|218\/374|[from] recoil|[of] p1a: Malamar
+|move|p1a: Malamar|Trick Room|p1a: Malamar
+|-fieldstart|move: Trick Room|[of] p1a: Malamar
+|
+|-heal|p2a: Crobat|241\/374|[from] item: Black Sludge
+|turn|30
+|callback|decision
+|
+|move|p1a: Malamar|Night Slash|p2a: Crobat
+|-damage|p2a: Crobat|102\/374
+|move|p2a: Crobat|Cross Poison|p1a: Malamar
+|-damage|p1a: Malamar|0 fnt
+|faint|p1a: Malamar
+|
+|-heal|p2a: Crobat|125\/374|[from] item: Black Sludge
+|callback|decision
+|
+|switch|p1a: Talonflame|Talonflame, M|323\/323
+|turn|31
+|callback|decision
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Crobat
+|-damage|p2a: Crobat|0 fnt
+|-damage|p1a: Talonflame|282\/323|[from] recoil|[of] p2a: Crobat
+|-damage|p1a: Talonflame|250\/323|[from] item: Life Orb
+|faint|p2a: Crobat
+|
+|callback|decision
+|
+|switch|p2a: Greninja|Greninja, M|104\/286 par
+|turn|32
+|callback|decision
+|
+|move|p1a: Talonflame|Brave Bird|p2a: Greninja
+|-damage|p2a: Greninja|0 fnt
+|-damage|p1a: Talonflame|216\/323|[from] recoil|[of] p2a: Greninja
+|-damage|p1a: Talonflame|184\/323|[from] item: Life Orb
+|faint|p2a: Greninja
+|
+|win|Xuvez
+|raw|Ladder updating...
+|raw|Xuvez's rating: 1244 &rarr; <strong>1367<\/strong><br \/>(+123 for winning)
+|raw|taw's rating: 1525 &rarr; <strong>1503<\/strong><br \/>(-22 for losing)
+|chat|taw|wut
+|chat|Xuvez|gg
+|chat|taw|trick room doesn't work?
+|chat|taw|I was def slower
+|chat|Xuvez|Priority
+|leave|taw
+|player|p2
+|chat|Xuvez|Gale Wings

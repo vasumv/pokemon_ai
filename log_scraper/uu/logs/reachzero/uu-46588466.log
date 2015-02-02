@@ -1,0 +1,280 @@
+|join|JabbaTheGriffin
+|join|reachzero
+|player|p1|JabbaTheGriffin|101
+|player|p2|reachzero|15
+|gametype|singles
+|tier|UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Meloetta
+|poke|p1|Victini
+|poke|p1|Crustle, M
+|poke|p1|Cofagrigus, F
+|poke|p1|Snorlax, F
+|poke|p1|Raikou, shiny
+|poke|p2|Roserade, F, shiny
+|poke|p2|Victini, shiny
+|poke|p2|Zapdos
+|poke|p2|Porygon2, shiny
+|poke|p2|Heracross, F, shiny
+|poke|p2|Rhyperior, M
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Crustle|Crustle, M|250\/250
+|switch|p2a: Rhyperior|Rhyperior, M|434\/434
+|turn|1
+|callback|decision
+|
+|move|p1a: Crustle|Stealth Rock|p2a: Rhyperior
+|-sidestart|p2: reachzero|move: Stealth Rock
+|move|p2a: Rhyperior|Rock Blast|p1a: Crustle
+|-supereffective|p1a: Crustle
+|-damage|p1a: Crustle|172\/250
+|-supereffective|p1a: Crustle
+|-damage|p1a: Crustle|86\/250
+|-hitcount|p1a: Crustle|2
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Crustle|Spikes|p2a: Rhyperior
+|-sidestart|p2: reachzero|Spikes
+|move|p2a: Rhyperior|Stealth Rock|p1a: Crustle
+|-sidestart|p1: JabbaTheGriffin|move: Stealth Rock
+|
+|turn|3
+|callback|decision
+|
+|move|p1a: Crustle|Spikes|p2a: Rhyperior
+|-sidestart|p2: reachzero|Spikes
+|move|p2a: Rhyperior|Rock Blast|p1a: Crustle
+|-supereffective|p1a: Crustle
+|-damage|p1a: Crustle|6\/250
+|-supereffective|p1a: Crustle
+|-damage|p1a: Crustle|0 fnt
+|-hitcount|p1a: Crustle|2
+|faint|p1a: Crustle
+|
+|callback|decision
+|
+|switch|p1a: Victini|Victini|341\/341
+|-damage|p1a: Victini|256\/341|[from] Stealth Rock
+|turn|4
+|callback|decision
+|
+|switch|p2a: Porygon2|Porygon2, shiny|374\/374
+|-damage|p2a: Porygon2|312\/374|[from] Spikes
+|-damage|p2a: Porygon2|266\/374|[from] Stealth Rock
+|-ability|p2a: Porygon2|Victory Star|[from] ability: Trace|[of] p1a: Victini
+|move|p1a: Victini|Energy Ball|p2a: Porygon2
+|-damage|p2a: Porygon2|225\/374
+|
+|turn|5
+|callback|decision
+|
+|move|p1a: Victini|U-turn|p2a: Porygon2
+|-damage|p2a: Porygon2|178\/374
+|callback|decision
+|
+|switch|p1a: Snorlax|Snorlax, F|524\/524
+|-damage|p1a: Snorlax|459\/524|[from] Stealth Rock
+|move|p2a: Porygon2|Tri Attack|p1a: Snorlax
+|-damage|p1a: Snorlax|341\/524
+|
+|turn|6
+|callback|decision
+|join|Kidogo
+|
+|move|p2a: Porygon2|Recover|p2a: Porygon2
+|-heal|p2a: Porygon2|365\/374
+|move|p1a: Snorlax|Body Slam|p2a: Porygon2
+|-damage|p2a: Porygon2|190\/374
+|
+|turn|7
+|callback|decision
+|chat|Kidogo|ooh
+|
+|move|p2a: Porygon2|Tri Attack|p1a: Snorlax
+|-damage|p1a: Snorlax|215\/524
+|move|p1a: Snorlax|Body Slam|p2a: Porygon2
+|-damage|p2a: Porygon2|34\/374
+|-status|p2a: Porygon2|par
+|
+|turn|8
+|callback|decision
+|chat|Kidogo|what is this for?
+|
+|move|p1a: Snorlax|Body Slam|p2a: Porygon2
+|-crit|p2a: Porygon2
+|-damage|p2a: Porygon2|0 fnt
+|faint|p2a: Porygon2
+|
+|callback|decision
+|
+|switch|p2a: Rhyperior|Rhyperior, M|434\/434
+|-damage|p2a: Rhyperior|407\/434|[from] Stealth Rock
+|-damage|p2a: Rhyperior|335\/434|[from] Spikes
+|turn|9
+|callback|decision
+|
+|move|p2a: Rhyperior|Earthquake|p1a: Snorlax
+|-damage|p1a: Snorlax|0 fnt
+|faint|p1a: Snorlax
+|
+|-heal|p2a: Rhyperior|362\/434|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Victini|Victini|256\/341
+|-damage|p1a: Victini|171\/341|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|switch|p2a: Victini|Victini, shiny|341\/341
+|-damage|p2a: Victini|256\/341|[from] Stealth Rock
+|-damage|p2a: Victini|200\/341|[from] Spikes
+|move|p1a: Victini|Energy Ball|p2a: Victini
+|-resisted|p2a: Victini
+|-damage|p2a: Victini|167\/341
+|
+|turn|11
+|callback|decision
+|
+|move|p2a: Victini|V-create|p1a: Victini
+|-resisted|p1a: Victini
+|-damage|p1a: Victini|0 fnt
+|-unboost|p2a: Victini|def|1
+|-unboost|p2a: Victini|spd|1
+|-unboost|p2a: Victini|spe|1
+|faint|p1a: Victini
+|
+|callback|decision
+|
+|switch|p1a: Meloetta|Meloetta|342\/342
+|-damage|p1a: Meloetta|300\/342|[from] Stealth Rock
+|turn|12
+|callback|decision
+|
+|switch|p2a: Roserade|Roserade, F, shiny|324\/324
+|-damage|p2a: Roserade|284\/324|[from] Stealth Rock
+|-damage|p2a: Roserade|230\/324|[from] Spikes
+|move|p1a: Meloetta|Relic Song|p2a: Roserade
+|-damage|p2a: Roserade|131\/324
+|-damage|p1a: Meloetta|266\/342|[from] item: Life Orb
+|-formechange|p1a: Meloetta|Meloetta-Pirouette
+|
+|-heal|p2a: Roserade|151\/324|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p1a: Meloetta|Zen Headbutt|p2a: Roserade
+|-supereffective|p2a: Roserade
+|-damage|p2a: Roserade|0 fnt
+|-damage|p1a: Meloetta|232\/342|[from] item: Life Orb
+|faint|p2a: Roserade
+|
+|callback|decision
+|
+|switch|p2a: Zapdos|Zapdos|383\/383
+|-damage|p2a: Zapdos|288\/383|[from] Stealth Rock
+|-ability|p2a: Zapdos|Pressure
+|turn|14
+|callback|decision
+|
+|move|p1a: Meloetta|Zen Headbutt|p2a: Zapdos
+|-damage|p2a: Zapdos|152\/383
+|-damage|p1a: Meloetta|198\/342|[from] item: Life Orb
+|move|p2a: Zapdos|Hidden Power|p1a: Meloetta
+|-supereffective|p1a: Meloetta
+|-damage|p1a: Meloetta|0 fnt
+|faint|p1a: Meloetta
+|
+|-heal|p2a: Zapdos|175\/383|[from] item: Leftovers
+|callback|decision
+|join|Oiawesome
+|
+|switch|p1a: Cofagrigus|Cofagrigus, F|320\/320
+|-damage|p1a: Cofagrigus|280\/320|[from] Stealth Rock
+|turn|15
+|callback|decision
+|join|nooberboober
+|
+|move|p2a: Zapdos|Thunderbolt|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|154\/320
+|-status|p1a: Cofagrigus|par
+|move|p1a: Cofagrigus|Trick Room|p1a: Cofagrigus
+|-fieldstart|move: Trick Room|[of] p1a: Cofagrigus
+|
+|-heal|p1a: Cofagrigus|174\/320 par|[from] item: Leftovers
+|-heal|p2a: Zapdos|198\/383|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Cofagrigus|Nasty Plot|p1a: Cofagrigus
+|-boost|p1a: Cofagrigus|spa|2
+|move|p2a: Zapdos|Roost|p2a: Zapdos
+|-heal|p2a: Zapdos|383\/383
+|
+|-heal|p1a: Cofagrigus|194\/320 par|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|cant|p1a: Cofagrigus|par
+|move|p2a: Zapdos|Thunderbolt|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|55\/320 par
+|
+|-heal|p1a: Cofagrigus|75\/320 par|[from] item: Leftovers
+|turn|18
+|callback|decision
+|chat|JabbaTheGriffin|:(
+|
+|move|p1a: Cofagrigus|Shadow Ball|p2a: Zapdos
+|-damage|p2a: Zapdos|109\/383
+|move|p2a: Zapdos|Thunderbolt|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|0 fnt
+|faint|p1a: Cofagrigus
+|
+|-heal|p2a: Zapdos|132\/383|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Raikou|Raikou, shiny|322\/322
+|-damage|p1a: Raikou|282\/322|[from] Stealth Rock
+|-ability|p1a: Raikou|Pressure
+|turn|19
+|callback|decision
+|
+|move|p2a: Zapdos|Thunderbolt|p1a: Raikou
+|-crit|p1a: Raikou
+|-resisted|p1a: Raikou
+|-damage|p1a: Raikou|119\/322
+|move|p1a: Raikou|Hidden Power|p2a: Zapdos
+|-supereffective|p2a: Zapdos
+|-damage|p2a: Zapdos|0 fnt
+|faint|p2a: Zapdos
+|
+|-fieldend|move: Trick Room
+|callback|decision
+|
+|switch|p2a: Heracross|Heracross, F, shiny|302\/302
+|-damage|p2a: Heracross|252\/302|[from] Spikes
+|-damage|p2a: Heracross|215\/302|[from] Stealth Rock
+|turn|20
+|callback|decision
+|
+|move|p1a: Raikou|Hidden Power|p2a: Heracross
+|-damage|p2a: Heracross|134\/302
+|move|p2a: Heracross|Earthquake|p1a: Raikou
+|-supereffective|p1a: Raikou
+|-damage|p1a: Raikou|0 fnt
+|faint|p1a: Raikou
+|-boost|p2a: Heracross|atk|1|[from] ability: Moxie
+|
+|win|reachzero
+|chat|JabbaTheGriffin|gg

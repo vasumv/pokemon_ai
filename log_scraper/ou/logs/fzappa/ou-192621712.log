@@ -1,0 +1,402 @@
+|join|fzappa
+|join|unlimited b8work
+|player|p1|fzappa|101
+|player|p2|unlimited b8work|170
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Victini
+|poke|p1|Gliscor, M
+|poke|p1|Rotom-Wash
+|poke|p1|Lucario, M
+|poke|p1|Ferrothorn, M
+|poke|p1|Sableye, M
+|poke|p2|Tornadus-Therian, M
+|poke|p2|Chesnaught, M
+|poke|p2|Slowbro, M
+|poke|p2|Sableye, M
+|poke|p2|Tentacruel, M
+|poke|p2|Clefable, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|teampreview
+|
+|start
+|switch|p1a: Gliscor|Gliscor, M|352\/352
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M|337\/337
+|turn|1
+|
+|switch|p1a: Sableye|Sableye, M|304\/304
+|move|p2a: Tornadus-Therian|Knock Off|p1a: Sableye
+|-damage|p1a: Sableye|261\/304
+|
+|turn|2
+|
+|switch|p2a: Clefable|Clefable, F|394\/394
+|move|p1a: Sableye|Will-O-Wisp|p2a: Clefable
+|-status|p2a: Clefable|brn
+|
+|-damage|p2a: Clefable|345\/394 brn|[from] brn
+|turn|3
+|
+|switch|p1a: Gliscor|Gliscor, M|352\/352
+|move|p2a: Clefable|Moonblast|p1a: Gliscor
+|-damage|p1a: Gliscor|253\/352
+|-unboost|p1a: Gliscor|spa|1
+|
+|-heal|p2a: Clefable|369\/394 brn|[from] item: Leftovers
+|-damage|p2a: Clefable|320\/394 brn|[from] brn
+|-status|p1a: Gliscor|tox|[from] item: Toxic Orb
+|turn|4
+|
+|switch|p2a: Slowbro|Slowbro, M|394\/394
+|move|p1a: Gliscor|Taunt|p2a: Slowbro
+|-start|p2a: Slowbro|move: Taunt
+|
+|-heal|p1a: Gliscor|297\/352 tox|[from] ability: Poison Heal
+|turn|5
+|
+|move|p1a: Gliscor|Toxic|p2a: Slowbro
+|-status|p2a: Slowbro|tox
+|move|p2a: Slowbro|Scald|p1a: Gliscor
+|-supereffective|p1a: Gliscor
+|-damage|p1a: Gliscor|127\/352 tox
+|
+|-heal|p1a: Gliscor|171\/352 tox|[from] ability: Poison Heal
+|-damage|p2a: Slowbro|370\/394 tox|[from] psn
+|turn|6
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|352\/352
+|move|p2a: Slowbro|Scald|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|315\/352
+|
+|-heal|p1a: Ferrothorn|337\/352|[from] item: Leftovers
+|-damage|p2a: Slowbro|322\/394 tox|[from] psn
+|turn|7
+|
+|move|p2a: Slowbro|Flamethrower|p1a: Ferrothorn
+|-supereffective|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|133\/352
+|move|p1a: Ferrothorn|Stealth Rock|p2a: Slowbro
+|-sidestart|p2: unlimited b8work|move: Stealth Rock
+|
+|-heal|p1a: Ferrothorn|155\/352|[from] item: Leftovers
+|-damage|p2a: Slowbro|250\/394 tox|[from] psn
+|-end|p2a: Slowbro|move: Taunt
+|turn|8
+|
+|switch|p2a: Sableye|Sableye, M|304\/304
+|-damage|p2a: Sableye|266\/304|[from] Stealth Rock
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|
+|turn|9
+|
+|switch|p2a: Clefable|Clefable, F|320\/394 brn
+|-damage|p2a: Clefable|271\/394 brn|[from] Stealth Rock
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Clefable|[miss]
+|-miss|p1a: Rotom-Wash|p2a: Clefable
+|
+|-heal|p2a: Clefable|295\/394 brn|[from] item: Leftovers
+|-damage|p2a: Clefable|246\/394 brn|[from] brn
+|turn|10
+|
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Clefable
+|-damage|p2a: Clefable|149\/394 brn
+|
+|switch|p1a: Gliscor|Gliscor, M|171\/352 tox
+|move|p2a: Clefable|Stealth Rock|p1a: Gliscor
+|-sidestart|p1: fzappa|move: Stealth Rock
+|
+|-heal|p2a: Clefable|173\/394 brn|[from] item: Leftovers
+|-heal|p1a: Gliscor|215\/352 tox|[from] ability: Poison Heal
+|-damage|p2a: Clefable|124\/394 brn|[from] brn
+|turn|11
+|
+|move|p1a: Gliscor|Taunt|p2a: Clefable
+|-start|p2a: Clefable|move: Taunt
+|cant|p2a: Clefable|move: Taunt|Heal Bell
+|
+|-heal|p2a: Clefable|148\/394 brn|[from] item: Leftovers
+|-heal|p1a: Gliscor|259\/352 tox|[from] ability: Poison Heal
+|-damage|p2a: Clefable|99\/394 brn|[from] brn
+|turn|12
+|
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M|337\/337
+|-damage|p2a: Tornadus-Therian|253\/337|[from] Stealth Rock
+|move|p1a: Gliscor|Roost|p1a: Gliscor
+|-heal|p1a: Gliscor|352\/352 tox
+|
+|turn|13
+|
+|move|p2a: Tornadus-Therian|Hurricane|p1a: Gliscor|[miss]
+|-miss|p2a: Tornadus-Therian|p1a: Gliscor
+|move|p1a: Gliscor|Knock Off|p2a: Tornadus-Therian
+|-damage|p2a: Tornadus-Therian|170\/337
+|-enditem|p2a: Tornadus-Therian|Assault Vest|[from] move: Knock Off|[of] p1a: Gliscor
+|
+|turn|14
+|
+|move|p2a: Tornadus-Therian|U-turn|p1a: Gliscor
+|-resisted|p1a: Gliscor
+|-damage|p1a: Gliscor|332\/352 tox
+|
+|switch|p2a: Tentacruel|Tentacruel, M|364\/364
+|-damage|p2a: Tentacruel|319\/364|[from] Stealth Rock
+|move|p1a: Gliscor|Knock Off|p2a: Tentacruel
+|-damage|p2a: Tentacruel|207\/364
+|-enditem|p2a: Tentacruel|Black Sludge|[from] move: Knock Off|[of] p1a: Gliscor
+|
+|-heal|p1a: Gliscor|352\/352 tox|[from] ability: Poison Heal
+|turn|15
+|
+|switch|p1a: Sableye|Sableye, M|261\/304
+|-damage|p1a: Sableye|223\/304|[from] Stealth Rock
+|move|p2a: Tentacruel|Rapid Spin|p1a: Sableye
+|-immune|p1a: Sableye|[msg]
+|
+|turn|16
+|
+|detailschange|p1a: Sableye|Sableye-Mega, M
+|message|Sableye has Mega Evolved into Mega Sableye!
+|move|p1a: Sableye|Calm Mind|p1a: Sableye
+|-boost|p1a: Sableye|spa|1
+|-boost|p1a: Sableye|spd|1
+|move|p2a: Tentacruel|Acid Spray|p1a: Sableye
+|-resisted|p1a: Sableye
+|-damage|p1a: Sableye|211\/304
+|-unboost|p1a: Sableye|spd|2
+|
+|turn|17
+|
+|move|p2a: Tentacruel|Acid Spray|p1a: Sableye
+|-resisted|p1a: Sableye
+|-damage|p1a: Sableye|183\/304
+|-unboost|p1a: Sableye|spd|2
+|move|p1a: Sableye|Will-O-Wisp|p2a: Tentacruel|[miss]
+|-miss|p1a: Sableye|p2a: Tentacruel
+|
+|turn|18
+|
+|move|p2a: Tentacruel|Scald|p1a: Sableye
+|-damage|p1a: Sableye|0 fnt
+|faint|p1a: Sableye
+|
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|-damage|p1a: Rotom-Wash|266\/304|[from] Stealth Rock
+|turn|19
+|
+|switch|p2a: Clefable|Clefable, F|99\/394 brn
+|-damage|p2a: Clefable|50\/394 brn|[from] Stealth Rock
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Clefable
+|-damage|p2a: Clefable|0 fnt
+|faint|p2a: Clefable
+|
+|switch|p1a: Victini|Victini|404\/404
+|-damage|p1a: Victini|303\/404|[from] Stealth Rock
+|
+|-heal|p1a: Victini|328\/404|[from] item: Leftovers
+|
+|switch|p2a: Slowbro|Slowbro, M|381\/394 tox
+|-damage|p2a: Slowbro|332\/394 tox|[from] Stealth Rock
+|turn|20
+|
+|move|p1a: Victini|Substitute|p1a: Victini
+|-start|p1a: Victini|Substitute
+|-damage|p1a: Victini|227\/404
+|move|p2a: Slowbro|Scald|p1a: Victini
+|-supereffective|p1a: Victini
+|-end|p1a: Victini|Substitute
+|
+|-heal|p1a: Victini|252\/404|[from] item: Leftovers
+|-damage|p2a: Slowbro|308\/394 tox|[from] psn
+|turn|21
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|266\/304
+|-damage|p1a: Rotom-Wash|228\/304|[from] Stealth Rock
+|move|p2a: Slowbro|Scald|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|186\/304
+|
+|-heal|p1a: Rotom-Wash|205\/304|[from] item: Leftovers
+|-damage|p2a: Slowbro|260\/394 tox|[from] psn
+|turn|22
+|
+|switch|p2a: Chesnaught|Chesnaught, M|380\/380
+|-damage|p2a: Chesnaught|357\/380|[from] Stealth Rock
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Chesnaught
+|-resisted|p2a: Chesnaught
+|-damage|p2a: Chesnaught|277\/380
+|
+|switch|p1a: Victini|Victini|252\/404
+|-damage|p1a: Victini|151\/404|[from] Stealth Rock
+|
+|-heal|p1a: Victini|176\/404|[from] item: Leftovers
+|-heal|p2a: Chesnaught|300\/380|[from] item: Leftovers
+|turn|23
+|
+|switch|p2a: Slowbro|Slowbro, M|391\/394 tox
+|-damage|p2a: Slowbro|342\/394 tox|[from] Stealth Rock
+|move|p1a: Victini|Substitute|p1a: Victini
+|-start|p1a: Victini|Substitute
+|-damage|p1a: Victini|75\/404
+|
+|-heal|p1a: Victini|100\/404|[from] item: Leftovers
+|-damage|p2a: Slowbro|318\/394 tox|[from] psn
+|turn|24
+|
+|move|p1a: Victini|Searing Shot|p2a: Slowbro
+|-resisted|p2a: Slowbro
+|-damage|p2a: Slowbro|232\/394 tox
+|move|p2a: Slowbro|Scald|p1a: Victini
+|-supereffective|p1a: Victini
+|-end|p1a: Victini|Substitute
+|
+|-heal|p1a: Victini|125\/404|[from] item: Leftovers
+|-damage|p2a: Slowbro|184\/394 tox|[from] psn
+|turn|25
+|
+|switch|p2a: Tentacruel|Tentacruel, M|207\/364
+|-damage|p2a: Tentacruel|162\/364|[from] Stealth Rock
+|move|p1a: Victini|Substitute|p1a: Victini
+|-start|p1a: Victini|Substitute
+|-damage|p1a: Victini|24\/404
+|
+|-heal|p1a: Victini|49\/404|[from] item: Leftovers
+|turn|26
+|
+|move|p1a: Victini|Searing Shot|p2a: Tentacruel
+|-resisted|p2a: Tentacruel
+|-damage|p2a: Tentacruel|120\/364
+|move|p2a: Tentacruel|Rapid Spin|p1a: Victini
+|-activate|p1a: Victini|Substitute|[damage]
+|-sideend|p2: unlimited b8work|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Tentacruel
+|
+|-heal|p1a: Victini|74\/404|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: Victini|Searing Shot|p2a: Tentacruel
+|-resisted|p2a: Tentacruel
+|-damage|p2a: Tentacruel|77\/364
+|move|p2a: Tentacruel|Scald|p1a: Victini
+|-supereffective|p1a: Victini
+|-end|p1a: Victini|Substitute
+|
+|-heal|p1a: Victini|99\/404|[from] item: Leftovers
+|turn|28
+|
+|move|p1a: Victini|Searing Shot|p2a: Tentacruel
+|-resisted|p2a: Tentacruel
+|-damage|p2a: Tentacruel|35\/364
+|move|p2a: Tentacruel|Scald|p1a: Victini
+|-supereffective|p1a: Victini
+|-damage|p1a: Victini|0 fnt
+|faint|p1a: Victini
+|
+|
+|switch|p1a: Ferrothorn|Ferrothorn, M|155\/352
+|-damage|p1a: Ferrothorn|133\/352|[from] Stealth Rock
+|turn|29
+|
+|switch|p2a: Chesnaught|Chesnaught, M|300\/380
+|move|p1a: Ferrothorn|Stealth Rock|p2a: Chesnaught
+|-sidestart|p2: unlimited b8work|move: Stealth Rock
+|
+|-heal|p2a: Chesnaught|323\/380|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|155\/352|[from] item: Leftovers
+|turn|30
+|
+|switch|p1a: Gliscor|Gliscor, M|352\/352 tox
+|-damage|p1a: Gliscor|308\/352 tox|[from] Stealth Rock
+|move|p2a: Chesnaught|Drain Punch|p1a: Gliscor
+|-resisted|p1a: Gliscor
+|-damage|p1a: Gliscor|266\/352 tox
+|-heal|p2a: Chesnaught|344\/380|[from] drain|[of] p1a: Gliscor
+|
+|-heal|p2a: Chesnaught|367\/380|[from] item: Leftovers
+|-heal|p1a: Gliscor|310\/352 tox|[from] ability: Poison Heal
+|turn|31
+|
+|switch|p2a: Tentacruel|Tentacruel, M|35\/364
+|-damage|p2a: Tentacruel|0 fnt|[from] Stealth Rock
+|faint|p2a: Tentacruel
+|move|p1a: Gliscor|Toxic|p2: Tentacruel|[notarget]
+|-notarget
+|
+|-heal|p1a: Gliscor|352\/352 tox|[from] ability: Poison Heal
+|
+|switch|p2a: Sableye|Sableye, M|266\/304
+|-damage|p2a: Sableye|228\/304|[from] Stealth Rock
+|turn|32
+|
+|detailschange|p2a: Sableye|Sableye-Mega, M
+|message|Sableye has Mega Evolved into Mega Sableye!
+|move|p2a: Sableye|Calm Mind|p2a: Sableye
+|-boost|p2a: Sableye|spa|1
+|-boost|p2a: Sableye|spd|1
+|move|p1a: Gliscor|Toxic|p2a: Sableye
+|move|p2a: Sableye|Toxic|p1a: Gliscor|[from]Magic Bounce
+|-fail|p1a: Gliscor|tox
+|
+|turn|33
+|
+|switch|p1a: Lucario|Lucario, M|281\/281
+|-damage|p1a: Lucario|273\/281|[from] Stealth Rock
+|move|p2a: Sableye|Dark Pulse|p1a: Lucario
+|-resisted|p1a: Lucario
+|-damage|p1a: Lucario|194\/281
+|
+|turn|34
+|
+|move|p1a: Lucario|Nasty Plot|p1a: Lucario
+|-boost|p1a: Lucario|spa|2
+|move|p2a: Sableye|Will-O-Wisp|p1a: Lucario
+|-status|p1a: Lucario|brn
+|
+|-damage|p1a: Lucario|159\/281 brn|[from] brn
+|turn|35
+|
+|switch|p2a: Slowbro|Slowbro, M|315\/394 tox
+|-damage|p2a: Slowbro|266\/394 tox|[from] Stealth Rock
+|move|p1a: Lucario|Flash Cannon|p2a: Slowbro
+|-resisted|p2a: Slowbro
+|-damage|p2a: Slowbro|57\/394 tox
+|-damage|p1a: Lucario|131\/281 brn|[from] item: Life Orb
+|
+|-damage|p1a: Lucario|96\/281 brn|[from] brn
+|-damage|p2a: Slowbro|33\/394 tox|[from] psn
+|turn|36
+|
+|move|p1a: Lucario|Flash Cannon|p2a: Slowbro
+|-resisted|p2a: Slowbro
+|-damage|p2a: Slowbro|0 fnt
+|-damage|p1a: Lucario|68\/281 brn|[from] item: Life Orb
+|faint|p2a: Slowbro
+|
+|-damage|p1a: Lucario|33\/281 brn|[from] brn
+|
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M|282\/337
+|-damage|p2a: Tornadus-Therian|198\/337|[from] Stealth Rock
+|turn|37
+|
+|move|p2a: Tornadus-Therian|Heat Wave|p1a: Lucario
+|-supereffective|p1a: Lucario
+|-damage|p1a: Lucario|0 fnt
+|faint|p1a: Lucario
+|
+|-message|fzappa forfeited.
+|
+|win|unlimited b8work
+|raw|Ladder updating...
+|leave|fzappa
+|player|p1

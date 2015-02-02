@@ -1,0 +1,291 @@
+|join|Dragonicwarior
+|join|Avi42
+|player|p1|Dragonicwarior|101
+|player|p2|Avi42|163
+|gametype|singles
+|tier|OU
+|rated
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Garchomp, F
+|poke|p1|Scizor, F
+|poke|p1|Gengar, M
+|poke|p1|Rotom-Wash
+|poke|p1|Ferrothorn, M
+|poke|p1|Starmie
+|poke|p2|Dragonite, M
+|poke|p2|Weavile, M
+|poke|p2|Metagross
+|poke|p2|Hydreigon, M
+|poke|p2|Gliscor, F
+|poke|p2|Tentacruel, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|switch|p2a: Hydreigon|Hydreigon, M|326\/326
+|turn|1
+|callback|decision
+|
+|switch|p2a: Tentacruel|Tentacruel, M|359\/359
+|switch|p1a: Ferrothorn|Ferrothorn, M|352\/352
+|
+|turn|2
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, F|354\/354
+|move|p1a: Ferrothorn|Stealth Rock|p2a: Gliscor
+|-sidestart|p2: Avi42|move: Stealth Rock
+|
+|-activate|p2a: Gliscor|item: Toxic Orb
+|-status|p2a: Gliscor|tox
+|turn|3
+|callback|decision
+|
+|move|p2a: Gliscor|Stealth Rock|p1a: Ferrothorn
+|-sidestart|p1: Dragonicwarior|move: Stealth Rock
+|move|p1a: Ferrothorn|Spikes|p2a: Gliscor
+|-sidestart|p2: Avi42|Spikes
+|
+|turn|4
+|callback|decision
+|
+|switch|p2a: Tentacruel|Tentacruel, M|359\/359
+|-damage|p2a: Tentacruel|315\/359|[from] Spikes
+|-damage|p2a: Tentacruel|271\/359|[from] Stealth Rock
+|move|p1a: Ferrothorn|Spikes|p2a: Tentacruel
+|-sidestart|p2: Avi42|Spikes
+|
+|-heal|p2a: Tentacruel|293\/359|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p2a: Tentacruel|Scald|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|319\/352
+|-status|p1a: Ferrothorn|brn
+|move|p1a: Ferrothorn|Power Whip|p2a: Tentacruel
+|-crit|p2a: Tentacruel
+|-damage|p2a: Tentacruel|104\/359
+|
+|-heal|p2a: Tentacruel|126\/359|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|341\/352 brn|[from] item: Leftovers
+|-damage|p1a: Ferrothorn|297\/352 brn|[from] brn
+|turn|6
+|callback|decision
+|
+|move|p2a: Tentacruel|Rapid Spin|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|293\/352 brn
+|-damage|p2a: Tentacruel|82\/359|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|-sideend|p2: Avi42|Spikes|[from] move: Rapid Spin|[of] p2a: Tentacruel
+|-sideend|p2: Avi42|Stealth Rock|[from] move: Rapid Spin|[of] p2a: Tentacruel
+|move|p1a: Ferrothorn|Stealth Rock|p2a: Tentacruel
+|-sidestart|p2: Avi42|move: Stealth Rock
+|
+|-heal|p2a: Tentacruel|104\/359|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|315\/352 brn|[from] item: Leftovers
+|-damage|p1a: Ferrothorn|271\/352 brn|[from] brn
+|turn|7
+|callback|decision
+|
+|switch|p2a: Hydreigon|Hydreigon, M|326\/326
+|-damage|p2a: Hydreigon|286\/326|[from] Stealth Rock
+|move|p1a: Ferrothorn|Power Whip|p2a: Hydreigon
+|-crit|p2a: Hydreigon
+|-resisted|p2a: Hydreigon
+|-damage|p2a: Hydreigon|212\/326
+|
+|-heal|p2a: Hydreigon|232\/326|[from] item: Leftovers
+|-heal|p1a: Ferrothorn|293\/352 brn|[from] item: Leftovers
+|-damage|p1a: Ferrothorn|249\/352 brn|[from] brn
+|turn|8
+|callback|decision
+|chat|Dragonicwarior|all the crits while I'm burned XD
+|
+|switch|p1a: Garchomp|Garchomp, F|358\/358
+|-damage|p1a: Garchomp|336\/358|[from] Stealth Rock
+|move|p2a: Hydreigon|Substitute|p2a: Hydreigon
+|-start|p2a: Hydreigon|Substitute
+|-damage|p2a: Hydreigon|151\/326
+|
+|-heal|p2a: Hydreigon|171\/326|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p1a: Garchomp|Dual Chop|p2a: Hydreigon
+|-supereffective|p2a: Hydreigon
+|-end|p2a: Hydreigon|Substitute
+|-supereffective|p2a: Hydreigon
+|-damage|p2a: Hydreigon|19\/326
+|-hitcount|p2a: Hydreigon|2
+|move|p2a: Hydreigon|Dragon Pulse|p1a: Garchomp
+|-supereffective|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|faint|p1a: Garchomp
+|
+|-heal|p2a: Hydreigon|39\/326|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|291\/291
+|-damage|p1a: Scizor|255\/291|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|switch|p2a: Metagross|Metagross|364\/364
+|-damage|p2a: Metagross|342\/364|[from] Stealth Rock
+|move|p1a: Scizor|Bullet Punch|p2a: Metagross
+|-resisted|p2a: Metagross
+|-damage|p2a: Metagross|272\/364
+|
+|-heal|p2a: Metagross|294\/364|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|304\/304
+|-damage|p1a: Rotom-Wash|266\/304|[from] Stealth Rock
+|move|p2a: Metagross|Earthquake|p1a: Rotom-Wash
+|-immune|p1a: Rotom-Wash|[msg]
+|
+|-heal|p1a: Rotom-Wash|285\/304|[from] item: Leftovers
+|-heal|p2a: Metagross|316\/364|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Metagross|[miss]
+|-miss|p1a: Rotom-Wash|p2a: Metagross
+|move|p2a: Metagross|Meteor Mash|p1a: Rotom-Wash
+|-resisted|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|240\/304
+|
+|-heal|p1a: Rotom-Wash|259\/304|[from] item: Leftovers
+|-heal|p2a: Metagross|338\/364|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|switch|p2a: Gliscor|Gliscor, F|354\/354 tox
+|-damage|p2a: Gliscor|310\/354 tox|[from] Stealth Rock
+|move|p1a: Rotom-Wash|Hydro Pump|p2a: Gliscor
+|-supereffective|p2a: Gliscor
+|-damage|p2a: Gliscor|0 fnt
+|faint|p2a: Gliscor
+|
+|-heal|p1a: Rotom-Wash|278\/304|[from] item: Leftovers
+|callback|decision
+|chat|Dragonicwarior|You just got predicted :)
+|
+|switch|p2a: Tentacruel|Tentacruel, M|104\/359
+|-damage|p2a: Tentacruel|60\/359|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|move|p2a: Tentacruel|Protect|p2a: Tentacruel
+|-singleturn|p2a: Tentacruel|Protect
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Tentacruel
+|-activate|p2a: Tentacruel|Protect
+|
+|-heal|p1a: Rotom-Wash|297\/304|[from] item: Leftovers
+|-heal|p2a: Tentacruel|82\/359|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|switch|p2a: Hydreigon|Hydreigon, M|39\/326
+|-damage|p2a: Hydreigon|0 fnt|[from] Stealth Rock
+|faint|p2a: Hydreigon
+|move|p1a: Rotom-Wash|Volt Switch|p2: Hydreigon|[notarget]
+|-notarget
+|
+|-heal|p1a: Rotom-Wash|304\/304|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Weavile|Weavile, M|281\/281
+|-damage|p2a: Weavile|211\/281|[from] Stealth Rock
+|turn|16
+|callback|decision
+|
+|move|p2a: Weavile|Pursuit|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|243\/304
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Weavile|[miss]
+|-miss|p1a: Rotom-Wash|p2a: Weavile
+|
+|-heal|p1a: Rotom-Wash|262\/304|[from] item: Leftovers
+|turn|17
+|callback|decision
+|
+|move|p2a: Weavile|Pursuit|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|202\/304
+|move|p1a: Rotom-Wash|Volt Switch|p2a: Weavile
+|-damage|p2a: Weavile|115\/281
+|callback|decision
+|
+|switch|p1a: Scizor|Scizor, F|255\/291
+|-damage|p1a: Scizor|219\/291|[from] Stealth Rock
+|
+|turn|18
+|callback|decision
+|
+|move|p2a: Weavile|Ice Shard|p1a: Scizor
+|-resisted|p1a: Scizor
+|-damage|p1a: Scizor|182\/291
+|move|p1a: Scizor|U-turn|p2a: Weavile
+|-supereffective|p2a: Weavile
+|-damage|p2a: Weavile|0 fnt
+|faint|p2a: Weavile
+|callback|decision
+|
+|switch|p1a: Starmie|Starmie|261\/261
+|-damage|p1a: Starmie|229\/261|[from] Stealth Rock
+|
+|callback|decision
+|
+|switch|p2a: Metagross|Metagross|338\/364
+|-damage|p2a: Metagross|316\/364|[from] Stealth Rock
+|turn|19
+|callback|decision
+|
+|switch|p1a: Rotom-Wash|Rotom-Wash|202\/304
+|-damage|p1a: Rotom-Wash|164\/304|[from] Stealth Rock
+|move|p2a: Metagross|Earthquake|p1a: Rotom-Wash
+|-immune|p1a: Rotom-Wash|[msg]
+|
+|-heal|p1a: Rotom-Wash|183\/304|[from] item: Leftovers
+|-heal|p2a: Metagross|338\/364|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Will-O-Wisp|p2a: Metagross
+|-status|p2a: Metagross|brn
+|move|p2a: Metagross|Zen Headbutt|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|104\/304
+|
+|-heal|p1a: Rotom-Wash|123\/304|[from] item: Leftovers
+|-heal|p2a: Metagross|360\/364 brn|[from] item: Leftovers
+|-damage|p2a: Metagross|315\/364 brn|[from] brn
+|turn|21
+|callback|decision
+|
+|move|p1a: Rotom-Wash|Pain Split|p2a: Metagross
+|-sethp|p2a: Metagross|219\/364 brn|p1a: Rotom-Wash|219\/304|[from] move: Pain Split
+|move|p2a: Metagross|Zen Headbutt|p1a: Rotom-Wash
+|-damage|p1a: Rotom-Wash|138\/304
+|
+|-heal|p1a: Rotom-Wash|157\/304|[from] item: Leftovers
+|-heal|p2a: Metagross|241\/364 brn|[from] item: Leftovers
+|-damage|p2a: Metagross|196\/364 brn|[from] brn
+|turn|22
+|callback|decision
+|-message|Avi42 forfeited.
+|
+|win|Dragonicwarior
+|raw|Ladder updating...
+|raw|Dragonicwarior's rating: 1752 &rarr; <strong>1776<\/strong><br \/>(+24 for winning)
+|raw|Avi42's rating: 1896 &rarr; <strong>1880<\/strong><br \/>(-16 for losing)
+|leave|Avi42
+|player|p2

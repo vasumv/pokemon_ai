@@ -1,0 +1,189 @@
+|join|pelucas
+|join|get that paper
+|player|p1|pelucas|266
+|player|p2|get that paper|214
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Entei, shiny
+|poke|p1|Mienshao, M
+|poke|p1|Kingdra, M
+|poke|p1|Tentacruel, F
+|poke|p1|Combusken, F
+|poke|p1|Gligar, F
+|poke|p2|Aromatisse, M, shiny
+|poke|p2|Doublade, M, shiny
+|poke|p2|Blissey, F, shiny
+|poke|p2|Dragalge, F, shiny
+|poke|p2|Crobat, M
+|poke|p2|Gastrodon, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Tentacruel|Tentacruel, F|364\/364
+|switch|p2a: Blissey|Blissey, F, shiny|714\/714
+|turn|1
+|
+|switch|p1a: Gligar|Gligar, F|334\/334
+|move|p2a: Blissey|Stealth Rock|p1a: Gligar
+|-sidestart|p1: pelucas|move: Stealth Rock
+|
+|turn|2
+|
+|switch|p2a: Gastrodon|Gastrodon, F|426\/426
+|move|p1a: Gligar|Stealth Rock|p2a: Gastrodon
+|-sidestart|p2: get that paper|move: Stealth Rock
+|
+|turn|3
+|
+|move|p1a: Gligar|U-turn|p2a: Gastrodon
+|-damage|p2a: Gastrodon|382\/426
+|
+|switch|p1a: Tentacruel|Tentacruel, F|364\/364
+|-damage|p1a: Tentacruel|319\/364|[from] Stealth Rock
+|move|p2a: Gastrodon|Earthquake|p1a: Tentacruel
+|-supereffective|p1a: Tentacruel
+|-damage|p1a: Tentacruel|119\/364
+|
+|-heal|p1a: Tentacruel|141\/364|[from] item: Black Sludge
+|-heal|p2a: Gastrodon|408\/426|[from] item: Leftovers
+|turn|4
+|
+|move|p1a: Tentacruel|Giga Drain|p2a: Gastrodon
+|-supereffective|p2a: Gastrodon
+|-damage|p2a: Gastrodon|212\/426
+|-heal|p1a: Tentacruel|239\/364|[from] drain|[of] p2a: Gastrodon
+|move|p2a: Gastrodon|Earthquake|p1a: Tentacruel
+|-supereffective|p1a: Tentacruel
+|-damage|p1a: Tentacruel|39\/364
+|
+|-heal|p1a: Tentacruel|61\/364|[from] item: Black Sludge
+|-heal|p2a: Gastrodon|238\/426|[from] item: Leftovers
+|turn|5
+|
+|switch|p2a: Doublade|Doublade, M, shiny|319\/319
+|-damage|p2a: Doublade|300\/319|[from] Stealth Rock
+|move|p1a: Tentacruel|Giga Drain|p2a: Doublade
+|-resisted|p2a: Doublade
+|-damage|p2a: Doublade|273\/319
+|-heal|p1a: Tentacruel|75\/364|[from] drain|[of] p2a: Doublade
+|
+|-heal|p1a: Tentacruel|97\/364|[from] item: Black Sludge
+|turn|6
+|
+|move|p1a: Tentacruel|Scald|p2a: Doublade
+|-damage|p2a: Doublade|191\/319
+|move|p2a: Doublade|Sacred Sword|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|48\/364
+|
+|-heal|p1a: Tentacruel|70\/364|[from] item: Black Sludge
+|turn|7
+|
+|switch|p2a: Crobat|Crobat, M|373\/373
+|-damage|p2a: Crobat|280\/373|[from] Stealth Rock
+|move|p1a: Tentacruel|Scald|p2a: Crobat
+|-damage|p2a: Crobat|192\/373
+|-status|p2a: Crobat|brn
+|
+|-heal|p2a: Crobat|215\/373 brn|[from] item: Black Sludge
+|-heal|p1a: Tentacruel|92\/364|[from] item: Black Sludge
+|-damage|p2a: Crobat|169\/373 brn|[from] brn
+|turn|8
+|
+|move|p2a: Crobat|Defog|p1a: Tentacruel
+|-fail|p1a: Tentacruel|unboost|[from] ability: Clear Body|[of] p1a: Tentacruel
+|-sideend|p1: pelucas|Stealth Rock|[from] move: Defog|[of] p1a: Tentacruel
+|-sideend|p2: get that paper|Stealth Rock|[from] move: Defog|[of] p2a: Crobat
+|move|p1a: Tentacruel|Scald|p2a: Crobat
+|-damage|p2a: Crobat|79\/373 brn
+|
+|-heal|p2a: Crobat|102\/373 brn|[from] item: Black Sludge
+|-heal|p1a: Tentacruel|114\/364|[from] item: Black Sludge
+|-damage|p2a: Crobat|56\/373 brn|[from] brn
+|turn|9
+|
+|switch|p1a: Entei|Entei, shiny|431\/431
+|-ability|p1a: Entei|Pressure
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|243\/373 brn
+|
+|-heal|p2a: Crobat|266\/373 brn|[from] item: Black Sludge
+|-damage|p2a: Crobat|220\/373 brn|[from] brn
+|turn|10
+|
+|switch|p2a: Gastrodon|Gastrodon, F|238\/426
+|move|p1a: Entei|Hidden Power|p2a: Gastrodon
+|-supereffective|p2a: Gastrodon
+|-damage|p2a: Gastrodon|90\/426
+|
+|-heal|p2a: Gastrodon|116\/426|[from] item: Leftovers
+|turn|11
+|
+|switch|p2a: Aromatisse|Aromatisse, M, shiny|406\/406
+|move|p1a: Entei|Sacred Fire|p2a: Aromatisse
+|-damage|p2a: Aromatisse|240\/406
+|
+|-heal|p2a: Aromatisse|265\/406|[from] item: Leftovers
+|turn|12
+|
+|move|p1a: Entei|Sacred Fire|p2a: Aromatisse
+|-damage|p2a: Aromatisse|103\/406
+|move|p2a: Aromatisse|Wish|p2a: Aromatisse
+|
+|-heal|p2a: Aromatisse|128\/406|[from] item: Leftovers
+|turn|13
+|
+|move|p2a: Aromatisse|Protect|p2a: Aromatisse
+|-singleturn|p2a: Aromatisse|Protect
+|move|p1a: Entei|Hidden Power|p2a: Aromatisse
+|-activate|p2a: Aromatisse|Protect
+|
+|-heal|p2a: Aromatisse|331\/406|[from] move: Wish|[wisher] Aromatisse
+|-heal|p2a: Aromatisse|356\/406|[from] item: Leftovers
+|turn|14
+|
+|switch|p1a: Combusken|Combusken, F|261\/261
+|move|p2a: Aromatisse|Wish|p2a: Aromatisse
+|
+|-heal|p2a: Aromatisse|381\/406|[from] item: Leftovers
+|turn|15
+|
+|move|p1a: Combusken|Swords Dance|p1a: Combusken
+|-boost|p1a: Combusken|atk|2
+|move|p2a: Aromatisse|Moonblast|p1a: Combusken
+|-damage|p1a: Combusken|86\/261
+|
+|-heal|p2a: Aromatisse|406\/406|[from] move: Wish|[wisher] Aromatisse
+|-boost|p1a: Combusken|spe|1|[from] ability: Speed Boost
+|turn|16
+|
+|move|p1a: Combusken|Baton Pass|p1a: Combusken
+|
+|switch|p1a: Entei|Entei, shiny|431\/431
+|-ability|p1a: Entei|Pressure
+|move|p2a: Aromatisse|Moonblast|p1a: Entei
+|-resisted|p1a: Entei
+|-damage|p1a: Entei|385\/431
+|-unboost|p1a: Entei|spa|1
+|
+|turn|17
+|-message|get that paper forfeited.
+|
+|win|pelucas
+|raw|Ladder updating...
+|leave|get that paper
+|player|p2
+|raw|pelucas's rating: 1504 &rarr; <strong>1515<\/strong><br \/>(+11 for winning)
+|raw|get that paper's rating: 1317 &rarr; <strong>1307<\/strong><br \/>(-10 for losing)

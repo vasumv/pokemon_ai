@@ -1,0 +1,354 @@
+|join|pipasonze
+|join|glumacthegreat
+|player|p1|pipasonze|120
+|player|p2|glumacthegreat|70
+|gametype|singles
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Metagross
+|poke|p1|Blastoise, F
+|poke|p1|Celebi
+|poke|p1|Rotom-Heat
+|poke|p1|Hippowdon, M
+|poke|p1|Bisharp, F
+|poke|p2|Arcanine, M
+|poke|p2|Mienshao, M
+|poke|p2|Slowbro, M
+|poke|p2|Manectric, M
+|poke|p2|Tornadus-Therian, M
+|poke|p2|Celebi
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Hippowdon|Hippowdon, M|420\/420
+|switch|p2a: Mienshao|Mienshao, M|271\/271
+|-weather|Sandstorm
+|turn|1
+|callback|decision
+|
+|move|p2a: Mienshao|Fake Out|p1a: Hippowdon
+|-damage|p1a: Hippowdon|375\/420
+|-damage|p2a: Mienshao|244\/271|[from] item: Life Orb
+|cant|p1a: Hippowdon|flinch
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Mienshao|228\/271|[from] sandstorm
+|-heal|p1a: Hippowdon|401\/420|[from] item: Leftovers
+|turn|2
+|callback|decision
+|
+|move|p2a: Mienshao|Knock Off|p1a: Hippowdon
+|-damage|p1a: Hippowdon|293\/420
+|-enditem|p1a: Hippowdon|Leftovers|[from] move: Knock Off|[of] p2a: Mienshao
+|-damage|p2a: Mienshao|201\/271|[from] item: Life Orb
+|move|p1a: Hippowdon|Stealth Rock|p2a: Mienshao
+|-sidestart|p2: glumacthegreat|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Mienshao|185\/271|[from] sandstorm
+|turn|3
+|callback|decision
+|
+|move|p2a: Mienshao|U-turn|p1a: Hippowdon
+|-damage|p1a: Hippowdon|206\/420
+|-damage|p2a: Mienshao|158\/271|[from] item: Life Orb
+|callback|decision
+|
+|switch|p2a: Celebi|Celebi|404\/404
+|-damage|p2a: Celebi|354\/404|[from] Stealth Rock
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-heal|p1a: Hippowdon|416\/420
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Celebi|329\/404|[from] sandstorm
+|-heal|p2a: Celebi|354\/404|[from] item: Leftovers
+|turn|4
+|callback|decision
+|
+|switch|p1a: Bisharp|Bisharp, F|284\/284
+|move|p2a: Celebi|Stealth Rock|p1a: Bisharp
+|-sidestart|p1: pipasonze|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Celebi|329\/404|[from] sandstorm
+|-heal|p2a: Celebi|354\/404|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p2a: Celebi|U-turn|p1a: Bisharp
+|-damage|p1a: Bisharp|229\/284
+|callback|decision
+|
+|switch|p2a: Mienshao|Mienshao, M|248\/271
+|-damage|p2a: Mienshao|232\/271|[from] Stealth Rock
+|move|p1a: Bisharp|Knock Off|p2a: Mienshao
+|-resisted|p2a: Mienshao
+|-damage|p2a: Mienshao|45\/271
+|-enditem|p2a: Mienshao|Life Orb|[from] move: Knock Off|[of] p1a: Bisharp
+|-damage|p1a: Bisharp|201\/284|[from] item: Life Orb
+|
+|-weather|none
+|turn|6
+|callback|decision
+|
+|move|p2a: Mienshao|Fake Out|p1a: Bisharp
+|-resisted|p1a: Bisharp
+|-damage|p1a: Bisharp|177\/284
+|cant|p1a: Bisharp|flinch
+|
+|turn|7
+|callback|decision
+|
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M|299\/299
+|-damage|p2a: Tornadus-Therian|225\/299|[from] Stealth Rock
+|move|p1a: Bisharp|Sucker Punch|p2a: Tornadus-Therian
+|-fail|p2a: Tornadus-Therian
+|
+|turn|8
+|callback|decision
+|
+|move|p1a: Bisharp|Sucker Punch|p2a: Tornadus-Therian
+|-damage|p2a: Tornadus-Therian|0 fnt
+|-damage|p1a: Bisharp|149\/284|[from] item: Life Orb
+|faint|p2a: Tornadus-Therian
+|
+|callback|decision
+|
+|switch|p2a: Slowbro|Slowbro, M|394\/394
+|-damage|p2a: Slowbro|345\/394|[from] Stealth Rock
+|turn|9
+|callback|decision
+|
+|move|p1a: Bisharp|Knock Off|p2a: Slowbro
+|-supereffective|p2a: Slowbro
+|-damage|p2a: Slowbro|0 fnt
+|-damage|p1a: Bisharp|121\/284|[from] item: Life Orb
+|faint|p2a: Slowbro
+|
+|callback|decision
+|
+|switch|p2a: Mienshao|Mienshao, M|135\/271
+|-damage|p2a: Mienshao|119\/271|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, F|362\/362
+|-damage|p1a: Blastoise|317\/362|[from] Stealth Rock
+|move|p2a: Mienshao|Fake Out|p1a: Blastoise
+|-damage|p1a: Blastoise|268\/362
+|
+|turn|11
+|callback|decision
+|
+|-formechange|p1a: Blastoise|Blastoise-Mega
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Mienshao|U-turn|p1a: Blastoise
+|-damage|p1a: Blastoise|196\/362
+|callback|decision
+|
+|switch|p2a: Celebi|Celebi|354\/404
+|-damage|p2a: Celebi|304\/404|[from] Stealth Rock
+|move|p1a: Blastoise|Rapid Spin|p2a: Celebi
+|-damage|p2a: Celebi|288\/404
+|-sideend|p1: pipasonze|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Blastoise
+|
+|-heal|p2a: Celebi|313\/404|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p2a: Celebi|Stealth Rock|p1a: Blastoise
+|-sidestart|p1: pipasonze|move: Stealth Rock
+|move|p1a: Blastoise|Dark Pulse|p2a: Celebi
+|-supereffective|p2a: Celebi
+|-damage|p2a: Celebi|77\/404
+|
+|-heal|p2a: Celebi|102\/404|[from] item: Leftovers
+|turn|13
+|callback|decision
+|
+|move|p2a: Celebi|Giga Drain|p1a: Blastoise
+|-supereffective|p1a: Blastoise
+|-damage|p1a: Blastoise|38\/362
+|-heal|p2a: Celebi|181\/404|[from] drain|[of] p1a: Blastoise
+|move|p1a: Blastoise|Dark Pulse|p2a: Celebi
+|-supereffective|p2a: Celebi
+|-damage|p2a: Celebi|0 fnt
+|faint|p2a: Celebi
+|
+|callback|decision
+|
+|switch|p2a: Mienshao|Mienshao, M|209\/271
+|-damage|p2a: Mienshao|193\/271|[from] Stealth Rock
+|turn|14
+|callback|decision
+|
+|move|p2a: Mienshao|U-turn|p1a: Blastoise
+|-damage|p1a: Blastoise|0 fnt
+|faint|p1a: Blastoise
+|callback|decision
+|
+|switch|p2a: Manectric|Manectric, M|281\/281
+|-damage|p2a: Manectric|246\/281|[from] Stealth Rock
+|
+|callback|decision
+|
+|switch|p1a: Hippowdon|Hippowdon, M|416\/420
+|-damage|p1a: Hippowdon|390\/420|[from] Stealth Rock
+|-weather|Sandstorm
+|turn|15
+|callback|decision
+|
+|switch|p2a: Arcanine|Arcanine, M|384\/384
+|-damage|p2a: Arcanine|288\/384|[from] Stealth Rock
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Hippowdon
+|-unboost|p1a: Hippowdon|atk|1
+|move|p1a: Hippowdon|Earthquake|p2a: Arcanine
+|-supereffective|p2a: Arcanine
+|-damage|p2a: Arcanine|150\/384
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Arcanine|126\/384|[from] sandstorm
+|-heal|p2a: Arcanine|150\/384|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p2a: Arcanine|Will-O-Wisp|p1a: Hippowdon
+|-status|p1a: Hippowdon|brn
+|move|p1a: Hippowdon|Whirlwind|p2a: Arcanine
+|drag|p2a: Mienshao|Mienshao, M|271\/271
+|-damage|p2a: Mienshao|255\/271|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Mienshao|239\/271|[from] sandstorm
+|-damage|p1a: Hippowdon|338\/420 brn|[from] brn
+|turn|17
+|callback|decision
+|
+|move|p2a: Mienshao|High Jump Kick|p1a: Hippowdon
+|-damage|p1a: Hippowdon|163\/420 brn
+|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
+|-heal|p1a: Hippowdon|373\/420 brn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Mienshao|223\/271|[from] sandstorm
+|-damage|p1a: Hippowdon|321\/420 brn|[from] brn
+|turn|18
+|callback|decision
+|
+|move|p2a: Mienshao|U-turn|p1a: Hippowdon
+|-damage|p1a: Hippowdon|262\/420 brn
+|callback|decision
+|
+|switch|p2a: Arcanine|Arcanine, M|150\/384
+|-damage|p2a: Arcanine|54\/384|[from] Stealth Rock
+|-ability|p2a: Arcanine|Intimidate|[of] p1a: Hippowdon
+|-unboost|p1a: Hippowdon|atk|1
+|move|p1a: Hippowdon|Whirlwind|p2a: Arcanine
+|drag|p2a: Manectric|Manectric, M|246\/281
+|-damage|p2a: Manectric|211\/281|[from] Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Manectric|194\/281|[from] sandstorm
+|-damage|p1a: Hippowdon|210\/420 brn|[from] brn
+|turn|19
+|callback|decision
+|
+|-formechange|p2a: Manectric|Manectric-Mega
+|message|Manectric has Mega Evolved into Mega Manectric!
+|-ability|p2a: Manectric|Intimidate|[of] p1a: Hippowdon
+|-unboost|p1a: Hippowdon|atk|1
+|move|p2a: Manectric|Hidden Power|p1a: Hippowdon
+|-supereffective|p1a: Hippowdon
+|-damage|p1a: Hippowdon|78\/420 brn
+|move|p1a: Hippowdon|Earthquake|p2a: Manectric
+|-supereffective|p2a: Manectric
+|-damage|p2a: Manectric|126\/281
+|
+|-weather|none
+|-damage|p1a: Hippowdon|26\/420 brn|[from] brn
+|turn|20
+|callback|decision
+|
+|move|p2a: Manectric|Hidden Power|p1a: Hippowdon
+|-supereffective|p1a: Hippowdon
+|-damage|p1a: Hippowdon|0 fnt
+|faint|p1a: Hippowdon
+|
+|callback|decision
+|
+|switch|p1a: Bisharp|Bisharp, F|121\/284
+|-damage|p1a: Bisharp|104\/284|[from] Stealth Rock
+|turn|21
+|callback|decision
+|
+|move|p1a: Bisharp|Sucker Punch|p2a: Manectric
+|-damage|p2a: Manectric|0 fnt
+|-damage|p1a: Bisharp|76\/284|[from] item: Life Orb
+|faint|p2a: Manectric
+|
+|callback|decision
+|
+|switch|p2a: Mienshao|Mienshao, M|271\/271
+|-damage|p2a: Mienshao|255\/271|[from] Stealth Rock
+|turn|22
+|callback|decision
+|
+|move|p2a: Mienshao|Fake Out|p1a: Bisharp
+|-resisted|p1a: Bisharp
+|-damage|p1a: Bisharp|55\/284
+|cant|p1a: Bisharp|flinch
+|
+|turn|23
+|callback|decision
+|
+|move|p1a: Bisharp|Sucker Punch|p2a: Mienshao
+|-resisted|p2a: Mienshao
+|-damage|p2a: Mienshao|94\/271
+|-damage|p1a: Bisharp|27\/284|[from] item: Life Orb
+|move|p2a: Mienshao|U-turn|p1a: Bisharp
+|-damage|p1a: Bisharp|0 fnt
+|faint|p1a: Bisharp
+|callback|decision
+|
+|switch|p2a: Arcanine|Arcanine, M|54\/384
+|-damage|p2a: Arcanine|0 fnt|[from] Stealth Rock
+|faint|p2a: Arcanine
+|
+|callback|decision
+|
+|switch|p2a: Mienshao|Mienshao, M|184\/271
+|-damage|p2a: Mienshao|168\/271|[from] Stealth Rock
+|switch|p1a: Metagross|Metagross|364\/364
+|-damage|p1a: Metagross|342\/364|[from] Stealth Rock
+|turn|24
+|callback|decision
+|
+|move|p1a: Metagross|Bullet Punch|p2a: Mienshao
+|-damage|p2a: Mienshao|2\/271
+|move|p2a: Mienshao|Knock Off|p1a: Metagross
+|-supereffective|p1a: Metagross
+|-damage|p1a: Metagross|170\/364
+|-enditem|p1a: Metagross|Choice Band|[from] move: Knock Off|[of] p2a: Mienshao
+|
+|turn|25
+|callback|decision
+|
+|move|p1a: Metagross|Bullet Punch|p2a: Mienshao
+|-damage|p2a: Mienshao|0 fnt
+|faint|p2a: Mienshao
+|
+|win|pipasonze
+|raw|Ladder updating...
+|raw|pipasonze's rating: 2107 &rarr; <strong>2112<\/strong><br \/>(+5 for winning)
+|raw|glumacthegreat's rating: 1759 &rarr; <strong>1757<\/strong><br \/>(-2 for losing)
+|leave|glumacthegreat
+|player|p2

@@ -1,0 +1,738 @@
+|join|Veya
+|join|MrSpecial
+|player|p1|Veya|292
+|player|p2|MrSpecial|160
+|gametype|singles
+|tier|UU (beta)
+|rated
+|clearpoke
+|poke|p1|Nidoking, M
+|poke|p1|Porygon2
+|poke|p1|Slowbro, F
+|poke|p1|Florges, F
+|poke|p1|Medicham, F, shiny
+|poke|p1|Sigilyph, F
+|poke|p2|Drapion, F
+|poke|p2|Crobat, F
+|poke|p2|Slowking, M
+|poke|p2|Spiritomb, M
+|poke|p2|Claydol
+|poke|p2|Wigglytuff, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Medicham|Medicham, F, shiny|261\/261
+|switch|p2a: Claydol|Claydol|324\/324
+|turn|1
+|callback|decision
+|
+|switch|p2a: Drapion|Drapion, F|343\/343
+|-formechange|p1a: Medicham|Medicham-Mega
+|message|Medicham has Mega Evolved into Mega Medicham!
+|move|p1a: Medicham|Fake Out|p2a: Drapion
+|-damage|p2a: Drapion|270\/343
+|
+|-heal|p2a: Drapion|291\/343|[from] item: Black Sludge
+|turn|2
+|callback|decision
+|
+|move|p1a: Medicham|Drain Punch|p2a: Drapion
+|-damage|p2a: Drapion|86\/343
+|move|p2a: Drapion|Knock Off|p1a: Medicham
+|-damage|p1a: Medicham|179\/261
+|
+|-heal|p2a: Drapion|107\/343|[from] item: Black Sludge
+|turn|3
+|callback|decision
+|
+|switch|p2a: Spiritomb|Spiritomb, M|304\/304
+|-ability|p2a: Spiritomb|Pressure
+|move|p1a: Medicham|Drain Punch|p2a: Spiritomb
+|-immune|p2a: Spiritomb|[msg]
+|
+|turn|4
+|callback|decision
+|
+|move|p1a: Medicham|Thunder Punch|p2a: Spiritomb
+|-damage|p2a: Spiritomb|175\/304
+|-status|p2a: Spiritomb|par
+|move|p2a: Spiritomb|Smokescreen|p1a: Medicham
+|-unboost|p1a: Medicham|accuracy|1
+|
+|-heal|p2a: Spiritomb|194\/304 par|[from] item: Leftovers
+|turn|5
+|callback|decision
+|
+|move|p1a: Medicham|Thunder Punch|p2a: Spiritomb
+|-damage|p2a: Spiritomb|47\/304 par
+|move|p2a: Spiritomb|Rest|p2a: Spiritomb
+|-status|p2a: Spiritomb|slp
+|-heal|p2a: Spiritomb|304\/304 slp|[silent]
+|-status|p2a: Spiritomb|slp|[from] move: Rest
+|
+|turn|6
+|callback|decision
+|
+|switch|p1a: Sigilyph|Sigilyph, F|348\/348
+|cant|p2a: Spiritomb|slp
+|move|p2a: Spiritomb|Sleep Talk|p2a: Spiritomb
+|move|p2a: Spiritomb|Rest|p2a: Spiritomb|[from]Sleep Talk
+|-fail|p2a: Spiritomb
+|
+|-activate|p1a: Sigilyph|item: Flame Orb
+|-status|p1a: Sigilyph|brn
+|turn|7
+|callback|decision
+|chat|Veya|Hm, I tend to forget Evasion clause don't apply to accuracy moves
+|
+|switch|p2a: Drapion|Drapion, F|107\/343
+|move|p1a: Sigilyph|Cosmic Power|p1a: Sigilyph
+|-boost|p1a: Sigilyph|def|1
+|-boost|p1a: Sigilyph|spd|1
+|
+|-heal|p2a: Drapion|128\/343|[from] item: Black Sludge
+|turn|8
+|callback|decision
+|
+|move|p1a: Sigilyph|Psycho Shift|p2a: Drapion
+|-status|p2a: Drapion|brn
+|-curestatus|p1a: Sigilyph|brn
+|move|p2a: Drapion|Knock Off|p1a: Sigilyph
+|-crit|p1a: Sigilyph
+|-supereffective|p1a: Sigilyph
+|-damage|p1a: Sigilyph|142\/348
+|-enditem|p1a: Sigilyph|Flame Orb|[from] move: Knock Off|[of] p2a: Drapion
+|
+|-heal|p2a: Drapion|149\/343 brn|[from] item: Black Sludge
+|-damage|p2a: Drapion|107\/343 brn|[from] brn
+|turn|9
+|callback|decision
+|
+|move|p1a: Sigilyph|Roost|p1a: Sigilyph
+|-heal|p1a: Sigilyph|316\/348
+|move|p2a: Drapion|Knock Off|p1a: Sigilyph
+|-supereffective|p1a: Sigilyph
+|-damage|p1a: Sigilyph|256\/348
+|
+|-heal|p2a: Drapion|128\/343 brn|[from] item: Black Sludge
+|-damage|p2a: Drapion|86\/343 brn|[from] brn
+|turn|10
+|callback|decision
+|
+|move|p1a: Sigilyph|Cosmic Power|p1a: Sigilyph
+|-boost|p1a: Sigilyph|def|1
+|-boost|p1a: Sigilyph|spd|1
+|move|p2a: Drapion|Whirlwind|p1a: Sigilyph
+|drag|p1a: Nidoking|Nidoking, M|304\/304
+|
+|-heal|p2a: Drapion|107\/343 brn|[from] item: Black Sludge
+|-damage|p2a: Drapion|65\/343 brn|[from] brn
+|turn|11
+|callback|decision
+|
+|move|p1a: Nidoking|Sludge Wave|p2a: Drapion
+|-resisted|p2a: Drapion
+|-damage|p2a: Drapion|0 fnt
+|faint|p2a: Drapion
+|
+|callback|decision
+|
+|switch|p2a: Slowking|Slowking, M|394\/394
+|turn|12
+|callback|decision
+|
+|move|p1a: Nidoking|Thunderbolt|p2a: Slowking
+|-supereffective|p2a: Slowking
+|-damage|p2a: Slowking|155\/394
+|-enditem|p2a: Slowking|Sitrus Berry|[eat]
+|-heal|p2a: Slowking|253\/394|[from] item: Sitrus Berry
+|move|p2a: Slowking|Belly Drum|p2a: Slowking
+|-damage|p2a: Slowking|56\/394
+|-setboost|p2a: Slowking|atk|6|[from] move: Belly Drum
+|
+|turn|13
+|callback|decision
+|
+|switch|p2a: Wigglytuff|Wigglytuff, F|484\/484
+|-item|p1a: Nidoking|Life Orb|[from] ability: Frisk|[of] p2a: Wigglytuff|[identify]
+|move|p1a: Nidoking|Thunderbolt|p2a: Wigglytuff
+|-damage|p2a: Wigglytuff|296\/484
+|
+|-heal|p2a: Wigglytuff|326\/484|[from] item: Leftovers
+|turn|14
+|callback|decision
+|
+|move|p1a: Nidoking|Sludge Wave|p2a: Wigglytuff
+|-supereffective|p2a: Wigglytuff
+|-damage|p2a: Wigglytuff|0 fnt
+|faint|p2a: Wigglytuff
+|
+|callback|decision
+|
+|switch|p2a: Claydol|Claydol|324\/324
+|turn|15
+|callback|decision
+|
+|move|p1a: Nidoking|Ice Beam|p2a: Claydol
+|-supereffective|p2a: Claydol
+|-damage|p2a: Claydol|90\/324
+|move|p2a: Claydol|Earthquake|p1a: Nidoking
+|-crit|p1a: Nidoking
+|-supereffective|p1a: Nidoking
+|-damage|p1a: Nidoking|0 fnt
+|faint|p1a: Nidoking
+|
+|-heal|p2a: Claydol|110\/324|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Porygon2|Porygon2|374\/374
+|turn|16
+|callback|decision
+|
+|switch|p2a: Slowking|Slowking, M|187\/394
+|move|p1a: Porygon2|Ice Beam|p2a: Slowking
+|-resisted|p2a: Slowking
+|-damage|p2a: Slowking|132\/394
+|
+|turn|17
+|callback|decision
+|
+|move|p1a: Porygon2|Discharge|p2a: Slowking
+|-supereffective|p2a: Slowking
+|-damage|p2a: Slowking|0 fnt
+|faint|p2a: Slowking
+|
+|callback|decision
+|
+|switch|p2a: Spiritomb|Spiritomb, M|304\/304 slp
+|-ability|p2a: Spiritomb|Pressure
+|turn|18
+|callback|decision
+|
+|move|p1a: Porygon2|Ice Beam|p2a: Spiritomb
+|-damage|p2a: Spiritomb|231\/304 slp
+|cant|p2a: Spiritomb|slp
+|move|p2a: Spiritomb|Sleep Talk|p2a: Spiritomb
+|move|p2a: Spiritomb|Smokescreen|p1a: Porygon2|[from]Sleep Talk
+|-unboost|p1a: Porygon2|accuracy|1
+|
+|-heal|p2a: Spiritomb|250\/304 slp|[from] item: Leftovers
+|turn|19
+|callback|decision
+|
+|move|p1a: Porygon2|Ice Beam|p2a: Spiritomb
+|-damage|p2a: Spiritomb|186\/304 slp
+|-curestatus|p2a: Spiritomb|slp
+|move|p2a: Spiritomb|Smokescreen|p1a: Porygon2
+|-unboost|p1a: Porygon2|accuracy|1
+|
+|-heal|p2a: Spiritomb|205\/304|[from] item: Leftovers
+|turn|20
+|callback|decision
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Spiritomb|Spite|p1a: Florges
+|-fail|p1a: Florges
+|
+|-heal|p2a: Spiritomb|224\/304|[from] item: Leftovers
+|turn|21
+|callback|decision
+|
+|switch|p2a: Crobat|Crobat, F|374\/374
+|move|p1a: Florges|Moonblast|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|314\/374
+|-unboost|p2a: Crobat|spa|1
+|
+|turn|22
+|callback|decision
+|
+|switch|p1a: Slowbro|Slowbro, F|394\/394
+|move|p2a: Crobat|Acrobatics|p1a: Slowbro
+|-damage|p1a: Slowbro|318\/394
+|
+|-heal|p1a: Slowbro|342\/394|[from] item: Leftovers
+|turn|23
+|callback|decision
+|
+|move|p2a: Crobat|U-turn|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|278\/394
+|callback|decision
+|
+|switch|p2a: Spiritomb|Spiritomb, M|224\/304
+|-ability|p2a: Spiritomb|Pressure
+|move|p1a: Slowbro|Scald|p2a: Spiritomb
+|-damage|p2a: Spiritomb|152\/304
+|
+|-heal|p2a: Spiritomb|171\/304|[from] item: Leftovers
+|-heal|p1a: Slowbro|302\/394|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p2a: Spiritomb|Smokescreen|p1a: Slowbro
+|-unboost|p1a: Slowbro|accuracy|1
+|move|p1a: Slowbro|Scald|p2a: Spiritomb
+|-damage|p2a: Spiritomb|104\/304
+|-status|p2a: Spiritomb|brn
+|
+|-heal|p2a: Spiritomb|123\/304 brn|[from] item: Leftovers
+|-heal|p1a: Slowbro|326\/394|[from] item: Leftovers
+|-damage|p2a: Spiritomb|85\/304 brn|[from] brn
+|turn|25
+|callback|decision
+|
+|move|p2a: Spiritomb|Rest|p2a: Spiritomb
+|-status|p2a: Spiritomb|slp
+|-heal|p2a: Spiritomb|304\/304 slp|[silent]
+|-status|p2a: Spiritomb|slp|[from] move: Rest
+|move|p1a: Slowbro|Scald|p2a: Spiritomb
+|-damage|p2a: Spiritomb|240\/304 slp
+|
+|-heal|p2a: Spiritomb|259\/304 slp|[from] item: Leftovers
+|-heal|p1a: Slowbro|350\/394|[from] item: Leftovers
+|turn|26
+|callback|decision
+|
+|cant|p2a: Spiritomb|slp
+|move|p2a: Spiritomb|Sleep Talk|p2a: Spiritomb
+|move|p2a: Spiritomb|Smokescreen|p1a: Slowbro|[from]Sleep Talk
+|-unboost|p1a: Slowbro|accuracy|1
+|move|p1a: Slowbro|Calm Mind|p1a: Slowbro
+|-boost|p1a: Slowbro|spa|1
+|-boost|p1a: Slowbro|spd|1
+|
+|-heal|p2a: Spiritomb|278\/304 slp|[from] item: Leftovers
+|-heal|p1a: Slowbro|374\/394|[from] item: Leftovers
+|turn|27
+|callback|decision
+|
+|cant|p2a: Spiritomb|slp
+|move|p2a: Spiritomb|Sleep Talk|p2a: Spiritomb
+|move|p2a: Spiritomb|Spite|p1a: Slowbro|[from]Sleep Talk
+|-activate|p1a: Slowbro|move: Spite|calmmind|4
+|move|p1a: Slowbro|Calm Mind|p1a: Slowbro
+|-boost|p1a: Slowbro|spa|1
+|-boost|p1a: Slowbro|spd|1
+|
+|-heal|p2a: Spiritomb|297\/304 slp|[from] item: Leftovers
+|-heal|p1a: Slowbro|394\/394|[from] item: Leftovers
+|turn|28
+|callback|decision
+|
+|-curestatus|p2a: Spiritomb|slp
+|move|p2a: Spiritomb|Smokescreen|p1a: Slowbro
+|-unboost|p1a: Slowbro|accuracy|1
+|move|p1a: Slowbro|Calm Mind|p1a: Slowbro
+|-boost|p1a: Slowbro|spa|1
+|-boost|p1a: Slowbro|spd|1
+|
+|-heal|p2a: Spiritomb|304\/304|[from] item: Leftovers
+|turn|29
+|callback|decision
+|
+|move|p2a: Spiritomb|Smokescreen|p1a: Slowbro
+|-unboost|p1a: Slowbro|accuracy|1
+|move|p1a: Slowbro|Scald|p2a: Spiritomb
+|-damage|p2a: Spiritomb|130\/304
+|-status|p2a: Spiritomb|brn
+|
+|-heal|p2a: Spiritomb|149\/304 brn|[from] item: Leftovers
+|-damage|p2a: Spiritomb|111\/304 brn|[from] brn
+|turn|30
+|callback|decision
+|
+|move|p2a: Spiritomb|Rest|p2a: Spiritomb
+|-status|p2a: Spiritomb|slp
+|-heal|p2a: Spiritomb|304\/304 slp|[silent]
+|-status|p2a: Spiritomb|slp|[from] move: Rest
+|move|p1a: Slowbro|Scald|p2a: Spiritomb
+|-damage|p2a: Spiritomb|139\/304 slp
+|
+|-heal|p2a: Spiritomb|158\/304 slp|[from] item: Leftovers
+|turn|31
+|callback|decision
+|
+|cant|p2a: Spiritomb|slp
+|move|p2a: Spiritomb|Sleep Talk|p2a: Spiritomb
+|move|p2a: Spiritomb|Spite|p1a: Slowbro|[from]Sleep Talk
+|-activate|p1a: Slowbro|move: Spite|scald|4
+|move|p1a: Slowbro|Scald|p2a: Spiritomb|[miss]
+|-miss|p1a: Slowbro|p2a: Spiritomb
+|
+|-heal|p2a: Spiritomb|177\/304 slp|[from] item: Leftovers
+|turn|32
+|callback|decision
+|
+|cant|p2a: Spiritomb|slp
+|move|p2a: Spiritomb|Sleep Talk|p2a: Spiritomb
+|move|p2a: Spiritomb|Rest|p2a: Spiritomb|[from]Sleep Talk
+|-fail|p2a: Spiritomb
+|move|p1a: Slowbro|Scald|p2a: Spiritomb|[miss]
+|-miss|p1a: Slowbro|p2a: Spiritomb
+|
+|-heal|p2a: Spiritomb|196\/304 slp|[from] item: Leftovers
+|turn|33
+|callback|decision
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|-curestatus|p2a: Spiritomb|slp
+|move|p2a: Spiritomb|Smokescreen|p1a: Florges
+|-unboost|p1a: Florges|accuracy|1
+|
+|-heal|p2a: Spiritomb|215\/304|[from] item: Leftovers
+|turn|34
+|callback|decision
+|
+|switch|p1a: Medicham|Medicham, F, shiny|179\/261
+|-formechange|p1a: Medicham|Medicham-Mega
+|switch|p2a: Crobat|Crobat, F|314\/374
+|
+|turn|35
+|callback|decision
+|
+|move|p1a: Medicham|Fake Out|p2a: Crobat
+|-damage|p2a: Crobat|223\/374
+|cant|p2a: Crobat|flinch
+|
+|turn|36
+|callback|decision
+|
+|switch|p1a: Slowbro|Slowbro, F|394\/394
+|move|p2a: Crobat|Acrobatics|p1a: Slowbro
+|-damage|p1a: Slowbro|313\/394
+|
+|-heal|p1a: Slowbro|337\/394|[from] item: Leftovers
+|turn|37
+|callback|decision
+|
+|move|p2a: Crobat|U-turn|p1a: Slowbro
+|-supereffective|p1a: Slowbro
+|-damage|p1a: Slowbro|265\/394
+|callback|decision
+|
+|switch|p2a: Spiritomb|Spiritomb, M|215\/304
+|-ability|p2a: Spiritomb|Pressure
+|move|p1a: Slowbro|Toxic|p2a: Spiritomb|[miss]
+|-miss|p1a: Slowbro|p2a: Spiritomb
+|
+|-heal|p2a: Spiritomb|234\/304|[from] item: Leftovers
+|-heal|p1a: Slowbro|289\/394|[from] item: Leftovers
+|turn|38
+|callback|decision
+|
+|move|p2a: Spiritomb|Smokescreen|p1a: Slowbro
+|-unboost|p1a: Slowbro|accuracy|1
+|move|p1a: Slowbro|Scald|p2a: Spiritomb|[miss]
+|-miss|p1a: Slowbro|p2a: Spiritomb
+|
+|-heal|p2a: Spiritomb|253\/304|[from] item: Leftovers
+|-heal|p1a: Slowbro|313\/394|[from] item: Leftovers
+|turn|39
+|callback|decision
+|
+|move|p2a: Spiritomb|Smokescreen|p1a: Slowbro
+|-unboost|p1a: Slowbro|accuracy|1
+|move|p1a: Slowbro|Scald|p2a: Spiritomb
+|-damage|p2a: Spiritomb|193\/304
+|
+|-heal|p2a: Spiritomb|212\/304|[from] item: Leftovers
+|-heal|p1a: Slowbro|337\/394|[from] item: Leftovers
+|turn|40
+|callback|decision
+|
+|move|p2a: Spiritomb|Smokescreen|p1a: Slowbro
+|-unboost|p1a: Slowbro|accuracy|1
+|move|p1a: Slowbro|Calm Mind|p1a: Slowbro
+|-boost|p1a: Slowbro|spa|1
+|-boost|p1a: Slowbro|spd|1
+|
+|-heal|p2a: Spiritomb|231\/304|[from] item: Leftovers
+|-heal|p1a: Slowbro|361\/394|[from] item: Leftovers
+|turn|41
+|callback|decision
+|
+|move|p2a: Spiritomb|Smokescreen|p1a: Slowbro
+|-unboost|p1a: Slowbro|accuracy|1
+|move|p1a: Slowbro|Calm Mind|p1a: Slowbro
+|-boost|p1a: Slowbro|spa|1
+|-boost|p1a: Slowbro|spd|1
+|
+|-heal|p2a: Spiritomb|250\/304|[from] item: Leftovers
+|-heal|p1a: Slowbro|385\/394|[from] item: Leftovers
+|turn|42
+|callback|decision
+|
+|move|p2a: Spiritomb|Smokescreen|p1a: Slowbro
+|-unboost|p1a: Slowbro|accuracy|1
+|move|p1a: Slowbro|Calm Mind|p1a: Slowbro
+|-boost|p1a: Slowbro|spa|1
+|-boost|p1a: Slowbro|spd|1
+|
+|-heal|p2a: Spiritomb|269\/304|[from] item: Leftovers
+|-heal|p1a: Slowbro|394\/394|[from] item: Leftovers
+|turn|43
+|callback|decision
+|
+|move|p2a: Spiritomb|Smokescreen|p1a: Slowbro
+|-unboost|p1a: Slowbro|accuracy|1
+|move|p1a: Slowbro|Calm Mind|p1a: Slowbro
+|-boost|p1a: Slowbro|spa|1
+|-boost|p1a: Slowbro|spd|1
+|
+|-heal|p2a: Spiritomb|288\/304|[from] item: Leftovers
+|turn|44
+|callback|decision
+|chat|Veya|Largest gamble ever here...
+|
+|move|p2a: Spiritomb|Spite|p1a: Slowbro
+|-activate|p1a: Slowbro|move: Spite|calmmind|4
+|move|p1a: Slowbro|Calm Mind|p1a: Slowbro
+|-boost|p1a: Slowbro|spa|1
+|-boost|p1a: Slowbro|spd|1
+|
+|-heal|p2a: Spiritomb|304\/304|[from] item: Leftovers
+|turn|45
+|callback|decision
+|
+|move|p2a: Spiritomb|Spite|p1a: Slowbro
+|-activate|p1a: Slowbro|move: Spite|calmmind|4
+|move|p1a: Slowbro|Calm Mind|p1a: Slowbro
+|-boost|p1a: Slowbro|spa|1
+|-boost|p1a: Slowbro|spd|1
+|
+|turn|46
+|callback|decision
+|
+|move|p2a: Spiritomb|Spite|p1a: Slowbro
+|-activate|p1a: Slowbro|move: Spite|calmmind|4
+|move|p1a: Slowbro|Toxic|p2a: Spiritomb|[miss]
+|-miss|p1a: Slowbro|p2a: Spiritomb
+|
+|turn|47
+|callback|decision
+|
+|move|p2a: Spiritomb|Spite|p1a: Slowbro
+|-activate|p1a: Slowbro|move: Spite|toxic|4
+|move|p1a: Slowbro|Toxic|p2a: Spiritomb|[miss]
+|-miss|p1a: Slowbro|p2a: Spiritomb
+|
+|turn|48
+|callback|decision
+|
+|move|p2a: Spiritomb|Spite|p1a: Slowbro
+|-activate|p1a: Slowbro|move: Spite|toxic|4
+|move|p1a: Slowbro|Toxic|p2a: Spiritomb|[miss]
+|-miss|p1a: Slowbro|p2a: Spiritomb
+|
+|turn|49
+|callback|decision
+|
+|move|p2a: Spiritomb|Spite|p1a: Slowbro
+|-fail|p1a: Slowbro
+|move|p1a: Slowbro|Scald|p2a: Spiritomb|[miss]
+|-miss|p1a: Slowbro|p2a: Spiritomb
+|
+|turn|50
+|callback|decision
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Spiritomb|Spite|p1a: Florges
+|-fail|p1a: Florges
+|
+|turn|51
+|callback|decision
+|
+|switch|p2a: Crobat|Crobat, F|223\/374
+|move|p1a: Florges|Moonblast|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|163\/374
+|-unboost|p2a: Crobat|spa|1
+|
+|turn|52
+|callback|decision
+|
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|350\/374
+|move|p1a: Florges|Moonblast|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|287\/374
+|-unboost|p2a: Crobat|spa|1
+|
+|turn|53
+|callback|decision
+|
+|switch|p1a: Porygon2|Porygon2|374\/374
+|move|p2a: Crobat|Acrobatics|p1a: Porygon2
+|-damage|p1a: Porygon2|289\/374
+|
+|turn|54
+|callback|decision
+|
+|move|p2a: Crobat|Acrobatics|p1a: Porygon2
+|-damage|p1a: Porygon2|204\/374
+|move|p1a: Porygon2|Discharge|p2a: Crobat
+|-supereffective|p2a: Crobat
+|-damage|p2a: Crobat|51\/374
+|
+|turn|55
+|callback|decision
+|
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|238\/374
+|move|p1a: Porygon2|Ice Beam|p2a: Crobat
+|-damage|p2a: Crobat|104\/374
+|
+|turn|56
+|callback|decision
+|
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|291\/374
+|move|p1a: Porygon2|Discharge|p2a: Crobat
+|-damage|p2a: Crobat|179\/374
+|-status|p2a: Crobat|par
+|
+|turn|57
+|callback|decision
+|
+|switch|p2a: Spiritomb|Spiritomb, M|304\/304
+|-ability|p2a: Spiritomb|Pressure
+|move|p1a: Porygon2|Ice Beam|p2a: Spiritomb
+|-damage|p2a: Spiritomb|206\/304
+|
+|-heal|p2a: Spiritomb|225\/304|[from] item: Leftovers
+|turn|58
+|callback|decision
+|
+|move|p1a: Porygon2|Discharge|p2a: Spiritomb
+|-damage|p2a: Spiritomb|160\/304
+|move|p2a: Spiritomb|Smokescreen|p1a: Porygon2
+|-unboost|p1a: Porygon2|accuracy|1
+|
+|-heal|p2a: Spiritomb|179\/304|[from] item: Leftovers
+|turn|59
+|callback|decision
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|move|p2a: Spiritomb|Smokescreen|p1a: Florges
+|-unboost|p1a: Florges|accuracy|1
+|
+|-heal|p2a: Spiritomb|198\/304|[from] item: Leftovers
+|turn|60
+|callback|decision
+|
+|switch|p2a: Crobat|Crobat, F|179\/374 par
+|move|p1a: Florges|Moonblast|p2a: Crobat
+|-crit|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|87\/374 par
+|-unboost|p2a: Crobat|spa|1
+|
+|turn|61
+|callback|decision
+|
+|move|p1a: Florges|Moonblast|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|19\/374 par
+|cant|p2a: Crobat|par
+|
+|turn|62
+|callback|decision
+|
+|move|p1a: Florges|Moonblast|p2a: Crobat
+|-resisted|p2a: Crobat
+|-damage|p2a: Crobat|0 fnt
+|faint|p2a: Crobat
+|
+|callback|decision
+|
+|switch|p2a: Spiritomb|Spiritomb, M|198\/304
+|-ability|p2a: Spiritomb|Pressure
+|turn|63
+|callback|decision
+|chat|Veya|THE CIRCLE OF EVIL IS OVER!
+|
+|switch|p1a: Medicham|Medicham, F, shiny|179\/261
+|-formechange|p1a: Medicham|Medicham-Mega
+|move|p2a: Spiritomb|Smokescreen|p1a: Medicham
+|-unboost|p1a: Medicham|accuracy|1
+|
+|-heal|p2a: Spiritomb|217\/304|[from] item: Leftovers
+|turn|64
+|callback|decision
+|
+|move|p1a: Medicham|Thunder Punch|p2a: Spiritomb
+|-damage|p2a: Spiritomb|76\/304
+|move|p2a: Spiritomb|Smokescreen|p1a: Medicham
+|-unboost|p1a: Medicham|accuracy|1
+|
+|-heal|p2a: Spiritomb|95\/304|[from] item: Leftovers
+|turn|65
+|callback|decision
+|
+|move|p1a: Medicham|Thunder Punch|p2a: Spiritomb|[miss]
+|-miss|p1a: Medicham|p2a: Spiritomb
+|move|p2a: Spiritomb|Rest|p2a: Spiritomb
+|-status|p2a: Spiritomb|slp
+|-heal|p2a: Spiritomb|304\/304 slp|[silent]
+|-status|p2a: Spiritomb|slp|[from] move: Rest
+|
+|turn|66
+|callback|decision
+|
+|switch|p1a: Florges|Florges, F|360\/360
+|cant|p2a: Spiritomb|slp
+|move|p2a: Spiritomb|Sleep Talk|p2a: Spiritomb
+|move|p2a: Spiritomb|Spite|p1a: Florges|[from]Sleep Talk
+|-fail|p1a: Florges
+|
+|turn|67
+|callback|decision
+|
+|move|p1a: Florges|Moonblast|p2a: Spiritomb
+|-supereffective|p2a: Spiritomb
+|-damage|p2a: Spiritomb|140\/304 slp
+|cant|p2a: Spiritomb|slp
+|move|p2a: Spiritomb|Sleep Talk|p2a: Spiritomb
+|move|p2a: Spiritomb|Spite|p1a: Florges|[from]Sleep Talk
+|-activate|p1a: Florges|move: Spite|moonblast|4
+|
+|-heal|p2a: Spiritomb|159\/304 slp|[from] item: Leftovers
+|turn|68
+|callback|decision
+|
+|move|p1a: Florges|Moonblast|p2a: Spiritomb
+|-supereffective|p2a: Spiritomb
+|-damage|p2a: Spiritomb|0 fnt
+|faint|p2a: Spiritomb
+|
+|callback|decision
+|
+|switch|p2a: Claydol|Claydol|110\/324
+|turn|69
+|callback|decision
+|chat|Veya|Godamn finally
+|
+|move|p2a: Claydol|Earthquake|p1a: Florges
+|-damage|p1a: Florges|230\/360
+|move|p1a: Florges|Energy Ball|p2a: Claydol
+|-supereffective|p2a: Claydol
+|-damage|p2a: Claydol|0 fnt
+|faint|p2a: Claydol
+|
+|win|Veya
+|raw|Ladder updating...
+|raw|Veya's rating: 1313 &rarr; <strong>1329<\/strong><br \/>(+16 for winning)
+|raw|MrSpecial's rating: 1136 &rarr; <strong>1124<\/strong><br \/>(-12 for losing)
+|chat|MrSpecial|gg
+|chat|Veya|gg
+|leave|MrSpecial
+|player|p2

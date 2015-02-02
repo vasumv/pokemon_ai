@@ -1,0 +1,439 @@
+|join|killerASCII
+|join|Grumpy Gyarados
+|player|p1|killerASCII|163
+|player|p2|Grumpy Gyarados|101
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Steelix, M
+|poke|p1|Hippowdon, M
+|poke|p1|Jellicent, F
+|poke|p1|Reuniclus, F
+|poke|p1|Hydreigon, F
+|poke|p1|Gigalith, M
+|poke|p2|Raikou
+|poke|p2|Chesnaught, M
+|poke|p2|Absol, M
+|poke|p2|Milotic, M
+|poke|p2|Crobat, F
+|poke|p2|Chandelure, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Hippowdon|Hippowdon, M|420\/420
+|switch|p2a: Chesnaught|Chesnaught, M|380\/380
+|-weather|Sandstorm
+|turn|1
+|
+|move|p2a: Chesnaught|Spikes|p1a: Hippowdon
+|-sidestart|p1: killerASCII|Spikes
+|move|p1a: Hippowdon|Toxic|p2a: Chesnaught
+|-status|p2a: Chesnaught|tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Chesnaught|357\/380 tox|[from] sandstorm
+|-heal|p2a: Chesnaught|380\/380 tox|[from] item: Leftovers
+|-damage|p2a: Chesnaught|357\/380 tox|[from] psn
+|turn|2
+|
+|switch|p1a: Reuniclus|Reuniclus, F|424\/424
+|move|p2a: Chesnaught|Leech Seed|p1a: Reuniclus
+|-start|p1a: Reuniclus|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Chesnaught|334\/380 tox|[from] sandstorm
+|-heal|p2a: Chesnaught|357\/380 tox|[from] item: Leftovers
+|-damage|p2a: Chesnaught|311\/380 tox|[from] psn
+|turn|3
+|
+|switch|p2a: Chandelure|Chandelure, F|262\/262
+|move|p1a: Reuniclus|Trick Room|p1a: Reuniclus
+|-fieldstart|move: Trick Room|[of] p1a: Reuniclus
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Chandelure|246\/262|[from] sandstorm
+|turn|4
+|
+|switch|p1a: Gigalith|Gigalith, M|374\/374
+|-damage|p1a: Gigalith|328\/374|[from] Spikes
+|move|p2a: Chandelure|Shadow Ball|p1a: Gigalith
+|-damage|p1a: Gigalith|164\/374
+|-damage|p2a: Chandelure|220\/262|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Chandelure|204\/262|[from] sandstorm
+|turn|5
+|
+|switch|p2a: Chesnaught|Chesnaught, M|311\/380 tox
+|move|p1a: Gigalith|Stone Edge|p2a: Chesnaught
+|-resisted|p2a: Chesnaught
+|-damage|p2a: Chesnaught|188\/380 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Chesnaught|165\/380 tox|[from] sandstorm
+|-heal|p2a: Chesnaught|188\/380 tox|[from] item: Leftovers
+|-damage|p2a: Chesnaught|165\/380 tox|[from] psn
+|turn|6
+|
+|switch|p1a: Reuniclus|Reuniclus, F|424\/424
+|move|p2a: Chesnaught|Synthesis|p2a: Chesnaught
+|-heal|p2a: Chesnaught|260\/380 tox
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Chesnaught|237\/380 tox|[from] sandstorm
+|-heal|p2a: Chesnaught|260\/380 tox|[from] item: Leftovers
+|-damage|p2a: Chesnaught|214\/380 tox|[from] psn
+|turn|7
+|
+|move|p1a: Reuniclus|Psyshock|p2a: Chesnaught
+|-supereffective|p2a: Chesnaught
+|-damage|p2a: Chesnaught|0 fnt
+|faint|p2a: Chesnaught
+|
+|-weather|Sandstorm|[upkeep]
+|-fieldend|move: Trick Room
+|
+|switch|p2a: Absol|Absol, M|272\/272
+|-ability|p2a: Absol|Pressure
+|turn|8
+|
+|detailschange|p2a: Absol|Absol-Mega, M
+|-mega|p2a: Absol|Absol|Absolite
+|move|p2a: Absol|Pursuit|p1a: Reuniclus|[from]Pursuit
+|-supereffective|p1a: Reuniclus
+|-damage|p1a: Reuniclus|20\/424
+|switch|p1a: Hippowdon|Hippowdon, M|420\/420
+|-damage|p1a: Hippowdon|368\/420|[from] Spikes
+|
+|-weather|none
+|turn|9
+|
+|switch|p2a: Crobat|Crobat, F|373\/373
+|move|p1a: Hippowdon|Earthquake|p2a: Crobat
+|-immune|p2a: Crobat|[msg]
+|
+|turn|10
+|
+|move|p2a: Crobat|Taunt|p1a: Hippowdon
+|-start|p1a: Hippowdon|move: Taunt
+|cant|p1a: Hippowdon|move: Taunt|Stealth Rock
+|
+|turn|11
+|
+|switch|p1a: Steelix|Steelix, M|354\/354
+|-damage|p1a: Steelix|310\/354|[from] Spikes
+|move|p2a: Crobat|Super Fang|p1a: Steelix
+|-damage|p1a: Steelix|155\/354
+|
+|turn|12
+|
+|switch|p2a: Milotic|Milotic, M|394\/394
+|detailschange|p1a: Steelix|Steelix-Mega, M
+|-mega|p1a: Steelix|Steelix|Steelixite
+|move|p1a: Steelix|Stone Edge|p2a: Milotic
+|-damage|p2a: Milotic|236\/394
+|
+|-heal|p2a: Milotic|260\/394|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: Jellicent|Jellicent, F|404\/404
+|-damage|p1a: Jellicent|354\/404|[from] Spikes
+|move|p2a: Milotic|Scald|p1a: Jellicent
+|-heal|p1a: Jellicent|404\/404|[from] ability: Water Absorb|[of] p2a: Milotic
+|
+|-heal|p2a: Milotic|284\/394|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Milotic|Toxic|p1a: Jellicent
+|-status|p1a: Jellicent|tox
+|move|p1a: Jellicent|Trick Room|p1a: Jellicent
+|-fieldstart|move: Trick Room|[of] p1a: Jellicent
+|
+|-heal|p2a: Milotic|308\/394|[from] item: Leftovers
+|-damage|p1a: Jellicent|379\/404 tox|[from] psn
+|turn|15
+|
+|switch|p1a: Reuniclus|Reuniclus, F|20\/424
+|move|p2a: Milotic|Recover|p2a: Milotic
+|-heal|p2a: Milotic|394\/394
+|
+|turn|16
+|
+|move|p1a: Reuniclus|Psyshock|p2a: Milotic
+|-damage|p2a: Milotic|155\/394
+|move|p2a: Milotic|Toxic|p1a: Reuniclus|[miss]
+|-miss|p2a: Milotic|p1a: Reuniclus
+|
+|-heal|p2a: Milotic|179\/394|[from] item: Leftovers
+|turn|17
+|
+|switch|p2a: Absol|Absol-Mega, M|272\/272
+|move|p1a: Reuniclus|Psyshock|p2a: Absol
+|-immune|p2a: Absol|[msg]
+|
+|turn|18
+|c|âGrumpy Gyarados|...
+|
+|move|p2a: Absol|Sucker Punch|p1a: Reuniclus
+|-supereffective|p1a: Reuniclus
+|-damage|p1a: Reuniclus|0 fnt
+|faint|p1a: Reuniclus
+|
+|-fieldend|move: Trick Room
+|
+|switch|p1a: Hippowdon|Hippowdon, M|368\/420
+|-damage|p1a: Hippowdon|316\/420|[from] Spikes
+|-weather|Sandstorm
+|turn|19
+|c|âkillerASCII|Can safely say I've never seen Pursuit Absol
+|c|âGrumpy Gyarados|its dope
+|
+|switch|p2a: Crobat|Crobat, F|373\/373
+|move|p1a: Hippowdon|Earthquake|p2a: Crobat
+|-immune|p2a: Crobat|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Crobat|350\/373|[from] sandstorm
+|-heal|p2a: Crobat|373\/373|[from] item: Black Sludge
+|turn|20
+|c|âkillerASCII|Cause nobody expects it
+|
+|switch|p1a: Gigalith|Gigalith, M|164\/374
+|-damage|p1a: Gigalith|118\/374|[from] Spikes
+|move|p2a: Crobat|Taunt|p1a: Gigalith
+|-start|p1a: Gigalith|move: Taunt
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Crobat|350\/373|[from] sandstorm
+|-heal|p2a: Crobat|373\/373|[from] item: Black Sludge
+|turn|21
+|c|âGrumpy Gyarados|exactly
+|
+|switch|p2a: Milotic|Milotic, M|179\/394
+|move|p1a: Gigalith|Stone Edge|p2a: Milotic
+|-damage|p2a: Milotic|0 fnt
+|faint|p2a: Milotic
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Absol|Absol-Mega, M|272\/272
+|turn|22
+|c|âkillerASCII|Since when did Crobat carry Super fang anyway? I've been away from UU for a while, but now it's everywhere
+|
+|move|p2a: Absol|Superpower|p1a: Gigalith
+|-supereffective|p1a: Gigalith
+|-damage|p1a: Gigalith|0 fnt
+|-unboost|p2a: Absol|atk|1
+|-unboost|p2a: Absol|def|1
+|faint|p1a: Gigalith
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Absol|255\/272|[from] sandstorm
+|c|âGrumpy Gyarados|ive always ran this set idk
+|c|âGrumpy Gyarados|its been a while
+|
+|switch|p1a: Hippowdon|Hippowdon, M|316\/420
+|-damage|p1a: Hippowdon|264\/420|[from] Spikes
+|turn|23
+|c|âGrumpy Gyarados|its a really nice set
+|
+|switch|p2a: Crobat|Crobat, F|373\/373
+|move|p1a: Hippowdon|Stealth Rock|p2a: Crobat
+|-sidestart|p2: Grumpy Gyarados|move: Stealth Rock
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Crobat|350\/373|[from] sandstorm
+|-heal|p2a: Crobat|373\/373|[from] item: Black Sludge
+|turn|24
+|c|âGrumpy Gyarados|really does well against alot of stall teams
+|c|âkillerASCII|Screw stall
+|
+|switch|p1a: Jellicent|Jellicent, F|379\/404 tox
+|-damage|p1a: Jellicent|329\/404 tox|[from] Spikes
+|move|p2a: Crobat|Super Fang|p1a: Jellicent
+|-immune|p1a: Jellicent|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Crobat|350\/373|[from] sandstorm
+|-damage|p1a: Jellicent|304\/404 tox|[from] sandstorm
+|-heal|p2a: Crobat|373\/373|[from] item: Black Sludge
+|-heal|p1a: Jellicent|329\/404 tox|[from] item: Leftovers
+|-damage|p1a: Jellicent|304\/404 tox|[from] psn
+|turn|25
+|
+|move|p2a: Crobat|Brave Bird|p1a: Jellicent
+|-damage|p1a: Jellicent|126\/404 tox
+|-damage|p2a: Crobat|314\/373|[from] recoil|[of] p1a: Jellicent
+|move|p1a: Jellicent|Scald|p2a: Crobat
+|-damage|p2a: Crobat|223\/373
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Crobat|200\/373|[from] sandstorm
+|-damage|p1a: Jellicent|101\/404 tox|[from] sandstorm
+|-heal|p2a: Crobat|223\/373|[from] item: Black Sludge
+|-heal|p1a: Jellicent|126\/404 tox|[from] item: Leftovers
+|-damage|p1a: Jellicent|76\/404 tox|[from] psn
+|turn|26
+|c|âkillerASCII|Last time I saw a SF crobat, it lacked BB
+|c|âkillerASCII|I lost now
+|
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-heal|p2a: Crobat|373\/373
+|move|p1a: Jellicent|Trick Room|p1a: Jellicent
+|-fieldstart|move: Trick Room|[of] p1a: Jellicent
+|
+|-weather|none
+|-heal|p1a: Jellicent|101\/404 tox|[from] item: Leftovers
+|-damage|p1a: Jellicent|26\/404 tox|[from] psn
+|turn|27
+|c|âGrumpy Gyarados|brave bird is essential
+|c|âkillerASCII|It was a stall team
+|c|âGrumpy Gyarados|ahh
+|c|âGrumpy Gyarados|crobat is the mvp of this team i swear
+|c|âGrumpy Gyarados|hes an absolute boss
+|c|âkillerASCII|So SF was its only non status
+|c|âkillerASCII|I love bulky Crobat in UU
+|c|âGrumpy Gyarados|thats odd
+|c|âkillerASCII|I don't know why someone ever thought to make a bulk set for it, but it's awesome
+|
+|move|p1a: Jellicent|Will-O-Wisp|p2a: Crobat
+|-status|p2a: Crobat|brn
+|move|p2a: Crobat|Roost|p2a: Crobat
+|-fail|p2a: Crobat
+|
+|-heal|p1a: Jellicent|51\/404 tox|[from] item: Leftovers
+|-damage|p1a: Jellicent|0 fnt|[from] psn
+|-damage|p2a: Crobat|327\/373 brn|[from] brn
+|faint|p1a: Jellicent
+|c|âGrumpy Gyarados|god damn i knew you had that
+|c|âGrumpy Gyarados|i shoulda taunted
+|
+|switch|p1a: Steelix|Steelix-Mega, M|155\/354
+|-damage|p1a: Steelix|111\/354|[from] Spikes
+|turn|28
+|
+|move|p1a: Steelix|Stone Edge|p2a: Crobat
+|-supereffective|p2a: Crobat
+|-damage|p2a: Crobat|29\/373 brn
+|move|p2a: Crobat|Super Fang|p1a: Steelix
+|-damage|p1a: Steelix|56\/354
+|
+|-heal|p2a: Crobat|52\/373 brn|[from] item: Black Sludge
+|-damage|p2a: Crobat|6\/373 brn|[from] brn
+|turn|29
+|
+|move|p1a: Steelix|Stone Edge|p2a: Crobat
+|-supereffective|p2a: Crobat
+|-damage|p2a: Crobat|0 fnt
+|faint|p2a: Crobat
+|
+|
+|switch|p2a: Raikou|Raikou|322\/322
+|-damage|p2a: Raikou|282\/322|[from] Stealth Rock
+|-ability|p2a: Raikou|Pressure
+|turn|30
+|
+|move|p1a: Steelix|Earthquake|p2a: Raikou
+|-supereffective|p2a: Raikou
+|-damage|p2a: Raikou|0 fnt
+|faint|p2a: Raikou
+|
+|-fieldend|move: Trick Room
+|
+|switch|p2a: Chandelure|Chandelure, F|204\/262
+|-damage|p2a: Chandelure|139\/262|[from] Stealth Rock
+|turn|31
+|c|âkillerASCII|Not sure why you did that when you had Absol
+|
+|switch|p1a: Hippowdon|Hippowdon, M|264\/420
+|-damage|p1a: Hippowdon|212\/420|[from] Spikes
+|-weather|Sandstorm
+|move|p2a: Chandelure|Flame Charge|p1a: Hippowdon
+|-damage|p1a: Hippowdon|187\/420
+|-boost|p2a: Chandelure|spe|1
+|-damage|p2a: Chandelure|113\/262|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Chandelure|97\/262|[from] sandstorm
+|turn|32
+|c|âkillerASCII|The heck is this Chandy?
+|c|âGrumpy Gyarados|:)
+|
+|move|p2a: Chandelure|Energy Ball|p1a: Hippowdon
+|-supereffective|p1a: Hippowdon
+|-damage|p1a: Hippowdon|0 fnt
+|-damage|p2a: Chandelure|71\/262|[from] item: Life Orb
+|faint|p1a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Chandelure|55\/262|[from] sandstorm
+|c|âGrumpy Gyarados|its so strong
+|
+|switch|p1a: Hydreigon|Hydreigon, F|326\/326
+|turn|33
+|c|âGrumpy Gyarados|flame charge on swap
+|
+|move|p1a: Hydreigon|Draco Meteor|p2a: Chandelure|[miss]
+|-miss|p1a: Hydreigon|p2a: Chandelure
+|move|p2a: Chandelure|Shadow Ball|p1a: Hydreigon
+|-resisted|p1a: Hydreigon
+|-damage|p1a: Hydreigon|210\/326
+|-damage|p2a: Chandelure|29\/262|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Hydreigon|190\/326|[from] sandstorm
+|-damage|p2a: Chandelure|13\/262|[from] sandstorm
+|turn|34
+|c|âkillerASCII|of course I miss
+|c|âkillerASCII|My luck
+|c|âGrumpy Gyarados|that sucks
+|
+|switch|p1a: Steelix|Steelix-Mega, M|56\/354
+|-damage|p1a: Steelix|12\/354|[from] Spikes
+|move|p2a: Chandelure|Shadow Ball|p1a: Steelix
+|-damage|p1a: Steelix|0 fnt
+|-damage|p2a: Chandelure|0 fnt|[from] item: Life Orb
+|faint|p1a: Steelix
+|faint|p2a: Chandelure
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Hydreigon|Hydreigon, F|190\/326
+|switch|p2a: Absol|Absol-Mega, M|255\/272
+|-damage|p2a: Absol|221\/272|[from] Stealth Rock
+|turn|35
+|c|âGrumpy Gyarados|you might have this actually
+|c|âGrumpy Gyarados|damn
+|c|âGrumpy Gyarados|you win
+|c|âGrumpy Gyarados|gg
+|c|âGrumpy Gyarados|scarf dreg too stronk
+|
+|move|p2a: Absol|Sucker Punch|p1a: Hydreigon
+|-resisted|p1a: Hydreigon
+|-damage|p1a: Hydreigon|110\/326
+|move|p1a: Hydreigon|Draco Meteor|p2a: Absol
+|-damage|p2a: Absol|0 fnt
+|-unboost|p1a: Hydreigon|spa|2
+|faint|p2a: Absol
+|
+|win|killerASCII
+|raw|Ladder updating...
+|raw|killerASCII's rating: 1318 &rarr; <strong>1330<\/strong><br \/>(+12 for winning)
+|raw|Grumpy Gyarados's rating: 1170 &rarr; <strong>1155<\/strong><br \/>(-15 for losing)
+|c|âkillerASCII|gg
+|c|âGrumpy Gyarados|shouldnt have let you burn crobat
+|c|âGrumpy Gyarados|that lost it for me
+|c|âkillerASCII|yeah, crobat walled almost my entire team
+|c|âkillerASCII|Or at least half of it
+|c|âkillerASCII|But most of what was left

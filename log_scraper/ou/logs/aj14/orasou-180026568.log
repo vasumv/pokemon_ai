@@ -1,0 +1,417 @@
+|join|MogTest
+|join|aj14
+|player|p1|MogTest|101
+|player|p2|aj14|190
+|gametype|singles
+|gen|6
+|tier|ORAS OU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Sharpedo, M
+|poke|p1|Gothitelle, M
+|poke|p1|Zapdos
+|poke|p1|Ferrothorn, F
+|poke|p1|Conkeldurr, F
+|poke|p1|Mamoswine, M
+|poke|p2|Gyarados, F
+|poke|p2|Ferrothorn, M
+|poke|p2|Infernape, F
+|poke|p2|Tyranitar, M
+|poke|p2|Latias, F
+|poke|p2|Excadrill, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Zapdos|Zapdos|383\/383
+|switch|p2a: Infernape|Infernape, F|294\/294
+|-ability|p1a: Zapdos|Pressure
+|turn|1
+|
+|move|p2a: Infernape|U-turn|p1a: Zapdos
+|-resisted|p1a: Zapdos
+|-damage|p1a: Zapdos|354\/383
+|
+|switch|p2a: Tyranitar|Tyranitar, M|404\/404
+|-weather|Sandstorm
+|move|p1a: Zapdos|Volt Switch|p2a: Tyranitar
+|-damage|p2a: Tyranitar|329\/404
+|
+|switch|p1a: Mamoswine|Mamoswine, M|361\/361
+|
+|-weather|Sandstorm|[upkeep]
+|turn|2
+|
+|switch|p2a: Ferrothorn|Ferrothorn, M|351\/351
+|move|p1a: Mamoswine|Freeze-Dry|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|277\/351
+|-damage|p1a: Mamoswine|325\/361|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|turn|3
+|
+|switch|p1a: Gothitelle|Gothitelle, M|281\/281
+|move|p2a: Ferrothorn|Leech Seed|p1a: Gothitelle
+|-start|p1a: Gothitelle|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gothitelle|264\/281|[from] sandstorm
+|-damage|p1a: Gothitelle|229\/281|[from] Leech Seed|[of] p2a: Ferrothorn
+|-heal|p2a: Ferrothorn|312\/351|[silent]
+|turn|4
+|
+|move|p1a: Gothitelle|Hidden Power|p2a: Ferrothorn
+|-crit|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|faint|p2a: Ferrothorn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gothitelle|212\/281|[from] sandstorm
+|
+|switch|p2a: Gyarados|Gyarados, F|331\/331
+|turn|5
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|352\/352
+|detailschange|p2a: Gyarados|Gyarados-Mega, F
+|message|Gyarados has Mega Evolved into Mega Gyarados!
+|-ability|p2a: Gyarados|Mold Breaker
+|move|p2a: Gyarados|Crunch|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|237\/352
+|-damage|p2a: Gyarados|290\/331|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Gyarados|270\/331|[from] sandstorm
+|turn|6
+|
+|switch|p2a: Infernape|Infernape, F|294\/294
+|move|p1a: Ferrothorn|Leech Seed|p2a: Infernape|[miss]
+|-miss|p1a: Ferrothorn|p2a: Infernape
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Infernape|276\/294|[from] sandstorm
+|turn|7
+|join|DoomX
+|
+|switch|p1a: Zapdos|Zapdos|354\/383
+|-ability|p1a: Zapdos|Pressure
+|move|p2a: Infernape|Flare Blitz|p1a: Zapdos
+|-damage|p1a: Zapdos|192\/383
+|-damage|p2a: Infernape|223\/294|[from] recoil|[of] p1a: Zapdos
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Infernape|205\/294|[from] sandstorm
+|-damage|p1a: Zapdos|169\/383|[from] sandstorm
+|-heal|p1a: Zapdos|192\/383|[from] item: Leftovers
+|turn|8
+|
+|switch|p2a: Tyranitar|Tyranitar, M|329\/404
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|383\/383
+|
+|-weather|none
+|turn|9
+|
+|move|p1a: Zapdos|Volt Switch|p2a: Tyranitar
+|-damage|p2a: Tyranitar|223\/404
+|
+|switch|p1a: Conkeldurr|Conkeldurr, F|351\/351
+|move|p2a: Tyranitar|Stone Edge|p1a: Conkeldurr
+|-resisted|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|266\/351
+|
+|turn|10
+|
+|switch|p2a: Infernape|Infernape, F|205\/294
+|move|p1a: Conkeldurr|Knock Off|p2a: Infernape
+|-resisted|p2a: Infernape
+|-damage|p2a: Infernape|123\/294
+|-enditem|p2a: Infernape|Choice Scarf|[from] move: Knock Off|[of] p1a: Conkeldurr
+|
+|turn|11
+|
+|switch|p1a: Zapdos|Zapdos|383\/383
+|-ability|p1a: Zapdos|Pressure
+|move|p2a: Infernape|Flare Blitz|p1a: Zapdos
+|-damage|p1a: Zapdos|236\/383
+|-damage|p2a: Infernape|74\/294|[from] recoil|[of] p1a: Zapdos
+|
+|-heal|p1a: Zapdos|259\/383|[from] item: Leftovers
+|turn|12
+|
+|move|p2a: Infernape|Flare Blitz|p1a: Zapdos
+|-damage|p1a: Zapdos|13\/383
+|-damage|p2a: Infernape|0 fnt|[from] recoil|[of] p1a: Zapdos
+|faint|p2a: Infernape
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|205\/383
+|
+|-heal|p1a: Zapdos|228\/383|[from] item: Leftovers
+|
+|switch|p2a: Tyranitar|Tyranitar, M|223\/404
+|-weather|Sandstorm
+|turn|13
+|
+|switch|p2a: Latias|Latias, F|317\/317
+|move|p1a: Zapdos|Volt Switch|p2a: Latias
+|-resisted|p2a: Latias
+|-damage|p2a: Latias|276\/317
+|
+|switch|p1a: Sharpedo|Sharpedo, M|281\/281
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|257\/317|[from] sandstorm
+|-damage|p1a: Sharpedo|264\/281|[from] sandstorm
+|turn|14
+|
+|switch|p2a: Excadrill|Excadrill, F|369\/369
+|switch|p1a: Ferrothorn|Ferrothorn, F|237\/352
+|
+|-weather|Sandstorm|[upkeep]
+|turn|15
+|
+|switch|p1a: Zapdos|Zapdos|228\/383
+|-ability|p1a: Zapdos|Pressure
+|move|p2a: Excadrill|Earthquake|p1a: Zapdos
+|-immune|p1a: Zapdos|[msg]
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Zapdos|205\/383|[from] sandstorm
+|-heal|p1a: Zapdos|228\/383|[from] item: Leftovers
+|turn|16
+|
+|move|p2a: Excadrill|Rock Slide|p1a: Zapdos
+|-supereffective|p1a: Zapdos
+|-damage|p1a: Zapdos|30\/383
+|-damage|p2a: Excadrill|333\/369|[from] item: Life Orb
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|222\/383
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Zapdos|199\/383|[from] sandstorm
+|-heal|p1a: Zapdos|222\/383|[from] item: Leftovers
+|turn|17
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|237\/352
+|move|p2a: Excadrill|Iron Head|p1a: Ferrothorn
+|-resisted|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|171\/352
+|-damage|p2a: Excadrill|287\/369|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|-damage|p2a: Excadrill|251\/369|[from] item: Life Orb
+|
+|-weather|Sandstorm|[upkeep]
+|turn|18
+|
+|move|p2a: Excadrill|Earthquake|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|3\/352
+|-damage|p2a: Excadrill|215\/369|[from] item: Life Orb
+|move|p1a: Ferrothorn|Leech Seed|p2a: Excadrill
+|-start|p2a: Excadrill|move: Leech Seed
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Excadrill|169\/369|[from] Leech Seed|[of] p1a: Ferrothorn
+|-heal|p1a: Ferrothorn|49\/352|[silent]
+|turn|19
+|
+|switch|p2a: Gyarados|Gyarados-Mega, F|270\/331
+|-ability|p2a: Gyarados|Mold Breaker
+|move|p1a: Ferrothorn|Protect|p1a: Ferrothorn
+|-fail|p1a: Ferrothorn
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Gyarados|250\/331|[from] sandstorm
+|turn|20
+|
+|move|p2a: Gyarados|Substitute|p2a: Gyarados
+|-start|p2a: Gyarados|Substitute
+|-damage|p2a: Gyarados|168\/331
+|move|p1a: Ferrothorn|Power Whip|p2a: Gyarados|[miss]
+|-miss|p1a: Ferrothorn|p2a: Gyarados
+|
+|-weather|none
+|turn|21
+|
+|move|p2a: Gyarados|Crunch|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|0 fnt
+|-damage|p2a: Gyarados|127\/331|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|faint|p1a: Ferrothorn
+|
+|
+|switch|p1a: Conkeldurr|Conkeldurr, F|266\/351
+|turn|22
+|
+|move|p2a: Gyarados|Waterfall|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|95\/351
+|cant|p1a: Conkeldurr|flinch
+|
+|turn|23
+|c|âMogTest|lol
+|c|âMogTest|this is bullshit
+|
+|move|p1a: Conkeldurr|Mach Punch|p2a: Gyarados
+|-supereffective|p2a: Gyarados
+|-end|p2a: Gyarados|Substitute
+|move|p2a: Gyarados|Waterfall|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|0 fnt
+|faint|p1a: Conkeldurr
+|
+|
+|switch|p1a: Zapdos|Zapdos|222\/383
+|-ability|p1a: Zapdos|Pressure
+|turn|24
+|
+|switch|p2a: Tyranitar|Tyranitar, M|223\/404
+|-weather|Sandstorm
+|move|p1a: Zapdos|Roost|p1a: Zapdos
+|-heal|p1a: Zapdos|383\/383
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Zapdos|360\/383|[from] sandstorm
+|-heal|p1a: Zapdos|383\/383|[from] item: Leftovers
+|turn|25
+|
+|move|p1a: Zapdos|Volt Switch|p2a: Tyranitar
+|-damage|p2a: Tyranitar|157\/404
+|
+|switch|p1a: Gothitelle|Gothitelle, M|212\/281
+|move|p2a: Tyranitar|Stone Edge|p1a: Gothitelle
+|-damage|p1a: Gothitelle|43\/281
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gothitelle|26\/281|[from] sandstorm
+|turn|26
+|join|Dildo Delivery
+|
+|move|p1a: Gothitelle|Energy Ball|p2a: Tyranitar
+|-supereffective|p2a: Tyranitar
+|-damage|p2a: Tyranitar|0 fnt
+|faint|p2a: Tyranitar
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Gothitelle|9\/281|[from] sandstorm
+|
+|switch|p2a: Excadrill|Excadrill, F|169\/369
+|turn|27
+|
+|move|p2a: Excadrill|Iron Head|p1a: Gothitelle
+|-damage|p1a: Gothitelle|0 fnt
+|-damage|p2a: Excadrill|133\/369|[from] item: Life Orb
+|faint|p1a: Gothitelle
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p1a: Mamoswine|Mamoswine, M|325\/361
+|turn|28
+|
+|move|p1a: Mamoswine|Ice Shard|p2a: Excadrill
+|-damage|p2a: Excadrill|0 fnt
+|-damage|p1a: Mamoswine|289\/361|[from] item: Life Orb
+|faint|p2a: Excadrill
+|
+|-weather|Sandstorm|[upkeep]
+|
+|switch|p2a: Gyarados|Gyarados-Mega, F|127\/331
+|-ability|p2a: Gyarados|Mold Breaker
+|turn|29
+|
+|move|p2a: Gyarados|Waterfall|p1a: Mamoswine
+|-supereffective|p1a: Mamoswine
+|-damage|p1a: Mamoswine|0 fnt
+|faint|p1a: Mamoswine
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Gyarados|107\/331|[from] sandstorm
+|
+|switch|p1a: Zapdos|Zapdos|383\/383
+|-ability|p1a: Zapdos|Pressure
+|turn|30
+|
+|switch|p2a: Latias|Latias, F|257\/317
+|move|p1a: Zapdos|Volt Switch|p2a: Latias
+|-resisted|p2a: Latias
+|-damage|p2a: Latias|217\/317
+|
+|switch|p1a: Sharpedo|Sharpedo, M|264\/281
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p2a: Latias|198\/317|[from] sandstorm
+|-damage|p1a: Sharpedo|247\/281|[from] sandstorm
+|turn|31
+|
+|move|p1a: Sharpedo|Protect|p1a: Sharpedo
+|-singleturn|p1a: Sharpedo|Protect
+|move|p2a: Latias|Healing Wish|p2a: Latias
+|faint|p2a: Latias
+|
+|-weather|none
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|
+|switch|p2a: Gyarados|Gyarados-Mega, F|107\/331
+|-heal|p2a: Gyarados|331\/331|[from] move: Healing Wish
+|-ability|p2a: Gyarados|Mold Breaker
+|turn|32
+|
+|move|p1a: Sharpedo|Crunch|p2a: Gyarados
+|-resisted|p2a: Gyarados
+|-damage|p2a: Gyarados|262\/331
+|move|p2a: Gyarados|Dragon Dance|p2a: Gyarados
+|-boost|p2a: Gyarados|atk|1
+|-boost|p2a: Gyarados|spe|1
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|33
+|
+|detailschange|p1a: Sharpedo|Sharpedo-Mega, M
+|message|Sharpedo has Mega Evolved into Mega Sharpedo!
+|move|p1a: Sharpedo|Crunch|p2a: Gyarados
+|-resisted|p2a: Gyarados
+|-damage|p2a: Gyarados|145\/331
+|move|p2a: Gyarados|Dragon Dance|p2a: Gyarados
+|-boost|p2a: Gyarados|atk|1
+|-boost|p2a: Gyarados|spe|1
+|
+|turn|34
+|
+|move|p1a: Sharpedo|Crunch|p2a: Gyarados
+|-resisted|p2a: Gyarados
+|-damage|p2a: Gyarados|25\/331
+|-unboost|p2a: Gyarados|def|1
+|move|p2a: Gyarados|Dragon Dance|p2a: Gyarados
+|-boost|p2a: Gyarados|atk|1
+|-boost|p2a: Gyarados|spe|1
+|
+|turn|35
+|
+|move|p2a: Gyarados|Waterfall|p1a: Sharpedo
+|-resisted|p1a: Sharpedo
+|-damage|p1a: Sharpedo|0 fnt
+|faint|p1a: Sharpedo
+|
+|
+|switch|p1a: Zapdos|Zapdos|383\/383
+|-ability|p1a: Zapdos|Pressure
+|turn|36
+|
+|move|p2a: Gyarados|Waterfall|p1a: Zapdos
+|-damage|p1a: Zapdos|37\/383
+|move|p1a: Zapdos|Volt Switch|p2a: Gyarados
+|-supereffective|p2a: Gyarados
+|-damage|p2a: Gyarados|0 fnt
+|faint|p2a: Gyarados
+|
+|win|MogTest
+|raw|Ladder updating...
+|raw|MogTest's rating: 1214 &rarr; <strong>1241<\/strong><br \/>(+27 for winning)
+|raw|aj14's rating: 1245 &rarr; <strong>1218<\/strong><br \/>(-27 for losing)
+|leave|aj14
+|player|p2
+|leave|DoomX
+|c|âMogTest|fucking hax

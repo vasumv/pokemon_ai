@@ -1,0 +1,371 @@
+|join|Damnosaur
+|join|AcoLysis
+|player|p1|Damnosaur|220
+|player|p2|AcoLysis|76
+|gametype|singles
+|tier|[Gen 5] UU
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|HP Percentage Mod: HP is reported as percentages
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|clearpoke
+|poke|p1|Darmanitan, F
+|poke|p1|Blastoise, M
+|poke|p1|Roserade, F
+|poke|p1|Machamp, M
+|poke|p1|Rhyperior, M
+|poke|p1|Cofagrigus, M
+|poke|p2|Registeel
+|poke|p2|Ambipom, F
+|poke|p2|Milotic, F
+|poke|p2|Chandelure, M
+|poke|p2|Scrafty, M
+|poke|p2|Raikou
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Machamp|Machamp, M|384\/384
+|switch|p2a: Ambipom|Ambipom, F|291\/291
+|turn|1
+|callback|decision
+|
+|move|p2a: Ambipom|Shadow Claw|p1a: Machamp
+|-damage|p1a: Machamp|284\/384
+|-damage|p2a: Ambipom|262\/291|[from] item: Life Orb
+|move|p1a: Machamp|Stone Edge|p2a: Ambipom
+|-crit|p2a: Ambipom
+|-damage|p2a: Ambipom|0 fnt
+|faint|p2a: Ambipom
+|
+|-heal|p1a: Machamp|308\/384|[from] item: Leftovers
+|callback|decision
+|chat|Damnosaur|oops
+|chat|AcoLysis|oh dear
+|
+|switch|p2a: Milotic|Milotic, F|393\/393
+|turn|2
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, F|261\/261
+|move|p2a: Milotic|Scald|p1a: Roserade
+|-resisted|p1a: Roserade
+|-damage|p1a: Roserade|216\/261
+|
+|turn|3
+|callback|decision
+|
+|switch|p2a: Registeel|Registeel|364\/364
+|move|p1a: Roserade|Spikes|p2a: Registeel
+|-sidestart|p2: AcoLysis|Spikes
+|
+|turn|4
+|callback|decision
+|chat|AcoLysis|shit
+|chat|AcoLysis|my com is starting to flash again
+|chat|AcoLysis|.__.
+|
+|move|p1a: Roserade|Hidden Power|p2a: Registeel
+|-supereffective|p2a: Registeel
+|-damage|p2a: Registeel|260\/364
+|-damage|p1a: Roserade|190\/261|[from] item: Life Orb
+|move|p2a: Registeel|Stealth Rock|p1a: Roserade
+|-sidestart|p1: Damnosaur|move: Stealth Rock
+|
+|-heal|p2a: Registeel|282\/364|[from] item: Leftovers
+|turn|5
+|callback|decision
+|chat|Damnosaur|dont scare me
+|chat|AcoLysis|srs
+|chat|Damnosaur|walao
+|
+|switch|p2a: Raikou|Raikou|322\/322
+|-damage|p2a: Raikou|282\/322|[from] Spikes
+|-ability|p2a: Raikou|Pressure
+|move|p1a: Roserade|Spikes|p2a: Raikou
+|-sidestart|p2: AcoLysis|Spikes
+|
+|-heal|p2a: Raikou|302\/322|[from] item: Leftovers
+|turn|6
+|callback|decision
+|
+|switch|p1a: Cofagrigus|Cofagrigus, M|320\/320
+|-damage|p1a: Cofagrigus|280\/320|[from] Stealth Rock
+|move|p2a: Raikou|Calm Mind|p2a: Raikou
+|-boost|p2a: Raikou|spa|1
+|-boost|p2a: Raikou|spd|1
+|
+|-heal|p2a: Raikou|322\/322|[from] item: Leftovers
+|-heal|p1a: Cofagrigus|300\/320|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|move|p2a: Raikou|Thunderbolt|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|89\/320
+|move|p1a: Cofagrigus|Shadow Ball|p2a: Raikou
+|-damage|p2a: Raikou|237\/322
+|
+|-heal|p2a: Raikou|257\/322|[from] item: Leftovers
+|-heal|p1a: Cofagrigus|109\/320|[from] item: Leftovers
+|turn|8
+|callback|decision
+|chat|Damnosaur|damn
+|
+|move|p2a: Raikou|Substitute|p2a: Raikou
+|-start|p2a: Raikou|Substitute
+|-damage|p2a: Raikou|177\/322
+|move|p1a: Cofagrigus|Trick Room|p1a: Cofagrigus
+|-fieldstart|move: Trick Room|[of] p1a: Cofagrigus
+|
+|-heal|p1a: Cofagrigus|129\/320|[from] item: Leftovers
+|-heal|p2a: Raikou|197\/322|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p1a: Cofagrigus|Shadow Ball|p2a: Raikou
+|-end|p2a: Raikou|Substitute
+|move|p2a: Raikou|Thunderbolt|p1a: Cofagrigus
+|-damage|p1a: Cofagrigus|0 fnt
+|faint|p1a: Cofagrigus
+|
+|-heal|p2a: Raikou|217\/322|[from] item: Leftovers
+|callback|decision
+|
+|switch|p1a: Rhyperior|Rhyperior, M|434\/434
+|-damage|p1a: Rhyperior|407\/434|[from] Stealth Rock
+|turn|10
+|callback|decision
+|
+|switch|p2a: Milotic|Milotic, F|393\/393
+|-damage|p2a: Milotic|328\/393|[from] Spikes
+|move|p1a: Rhyperior|Earthquake|p2a: Milotic
+|-damage|p2a: Milotic|201\/393
+|
+|-heal|p1a: Rhyperior|434\/434|[from] item: Leftovers
+|-heal|p2a: Milotic|225\/393|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M|362\/362
+|-damage|p1a: Blastoise|317\/362|[from] Stealth Rock
+|move|p2a: Milotic|Recover|p2a: Milotic
+|-heal|p2a: Milotic|393\/393
+|
+|-heal|p1a: Blastoise|339\/362|[from] item: Leftovers
+|turn|12
+|callback|decision
+|
+|move|p1a: Blastoise|Toxic|p2a: Milotic
+|-status|p2a: Milotic|tox
+|move|p2a: Milotic|Scald|p1a: Blastoise
+|-resisted|p1a: Blastoise
+|-damage|p1a: Blastoise|295\/362
+|-status|p1a: Blastoise|brn
+|
+|-heal|p1a: Blastoise|317\/362 brn|[from] item: Leftovers
+|-damage|p1a: Blastoise|272\/362 brn|[from] brn
+|-damage|p2a: Milotic|369\/393 tox|[from] psn
+|-fieldend|move: Trick Room
+|turn|13
+|callback|decision
+|
+|switch|p2a: Raikou|Raikou|217\/322
+|-damage|p2a: Raikou|164\/322|[from] Spikes
+|-ability|p2a: Raikou|Pressure
+|move|p1a: Blastoise|Scald|p2a: Raikou
+|-damage|p2a: Raikou|79\/322
+|
+|-heal|p2a: Raikou|99\/322|[from] item: Leftovers
+|-heal|p1a: Blastoise|294\/362 brn|[from] item: Leftovers
+|-damage|p1a: Blastoise|249\/362 brn|[from] brn
+|turn|14
+|callback|decision
+|
+|move|p2a: Raikou|Substitute|p2a: Raikou
+|-start|p2a: Raikou|Substitute
+|-damage|p2a: Raikou|19\/322
+|move|p1a: Blastoise|Rapid Spin|p2a: Raikou
+|-activate|p2a: Raikou|Substitute|[damage]
+|-sideend|p1: Damnosaur|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Blastoise
+|
+|-heal|p2a: Raikou|39\/322|[from] item: Leftovers
+|-heal|p1a: Blastoise|271\/362 brn|[from] item: Leftovers
+|-damage|p1a: Blastoise|226\/362 brn|[from] brn
+|turn|15
+|callback|decision
+|
+|move|p2a: Raikou|Thunderbolt|p1a: Blastoise
+|-supereffective|p1a: Blastoise
+|-damage|p1a: Blastoise|0 fnt
+|faint|p1a: Blastoise
+|
+|-heal|p2a: Raikou|59\/322|[from] item: Leftovers
+|callback|decision
+|chat|AcoLysis|yay
+|
+|switch|p1a: Rhyperior|Rhyperior, M|434\/434
+|turn|16
+|callback|decision
+|
+|move|p2a: Raikou|Hidden Power|p1a: Rhyperior
+|-crit|p1a: Rhyperior
+|-supereffective|p1a: Rhyperior
+|-damage|p1a: Rhyperior|197\/434
+|move|p1a: Rhyperior|Rock Blast|p2a: Raikou
+|-activate|p2a: Raikou|Substitute|[damage]
+|-end|p2a: Raikou|Substitute
+|-damage|p2a: Raikou|8\/322
+|-hitcount|p2a: Raikou|3
+|
+|-heal|p2a: Raikou|28\/322|[from] item: Leftovers
+|-heal|p1a: Rhyperior|224\/434|[from] item: Leftovers
+|turn|17
+|callback|decision
+|chat|Damnosaur|walao
+|
+|move|p2a: Raikou|Hidden Power|p1a: Rhyperior
+|-supereffective|p1a: Rhyperior
+|-damage|p1a: Rhyperior|110\/434
+|move|p1a: Rhyperior|Earthquake|p2a: Raikou
+|-crit|p2a: Raikou
+|-supereffective|p2a: Raikou
+|-damage|p2a: Raikou|0 fnt
+|faint|p2a: Raikou
+|
+|-heal|p1a: Rhyperior|137\/434|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Chandelure|Chandelure, M|278\/278
+|-damage|p2a: Chandelure|232\/278|[from] Spikes
+|turn|18
+|callback|decision
+|
+|move|p2a: Chandelure|Shadow Ball|p1a: Rhyperior
+|-damage|p1a: Rhyperior|0 fnt
+|-damage|p2a: Chandelure|205\/278|[from] item: Life Orb
+|faint|p1a: Rhyperior
+|
+|callback|decision
+|
+|switch|p1a: Darmanitan|Darmanitan, F|351\/351
+|turn|19
+|callback|decision
+|
+|move|p1a: Darmanitan|Earthquake|p2a: Chandelure
+|-crit|p2a: Chandelure
+|-supereffective|p2a: Chandelure
+|-damage|p2a: Chandelure|0 fnt
+|faint|p2a: Chandelure
+|
+|callback|decision
+|
+|switch|p2a: Milotic|Milotic, F|369\/393 tox
+|-damage|p2a: Milotic|304\/393 tox|[from] Spikes
+|turn|20
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, F|190\/261
+|move|p2a: Milotic|Scald|p1a: Roserade
+|-resisted|p1a: Roserade
+|-damage|p1a: Roserade|145\/261
+|
+|-heal|p2a: Milotic|328\/393 tox|[from] item: Leftovers
+|-damage|p2a: Milotic|304\/393 tox|[from] psn
+|turn|21
+|callback|decision
+|
+|switch|p2a: Registeel|Registeel|282\/364
+|-damage|p2a: Registeel|222\/364|[from] Spikes
+|move|p1a: Roserade|Spikes|p2a: Registeel
+|-sidestart|p2: AcoLysis|Spikes
+|
+|-heal|p2a: Registeel|244\/364|[from] item: Leftovers
+|turn|22
+|callback|decision
+|
+|move|p1a: Roserade|Giga Drain|p2a: Registeel
+|-resisted|p2a: Registeel
+|-damage|p2a: Registeel|201\/364
+|-heal|p1a: Roserade|167\/261|[from] drain|[of] p2a: Registeel
+|-damage|p1a: Roserade|141\/261|[from] item: Life Orb
+|move|p2a: Registeel|Toxic|p1a: Roserade|[miss]
+|-miss|p2a: Registeel|p1a: Roserade
+|
+|-heal|p2a: Registeel|223\/364|[from] item: Leftovers
+|turn|23
+|callback|decision
+|chat|AcoLysis|shit
+|
+|move|p1a: Roserade|Giga Drain|p2a: Registeel
+|-resisted|p2a: Registeel
+|-damage|p2a: Registeel|180\/364
+|-heal|p1a: Roserade|163\/261|[from] drain|[of] p2a: Registeel
+|-damage|p1a: Roserade|137\/261|[from] item: Life Orb
+|move|p2a: Registeel|Stealth Rock|p1a: Roserade
+|-sidestart|p1: Damnosaur|move: Stealth Rock
+|
+|-heal|p2a: Registeel|202\/364|[from] item: Leftovers
+|turn|24
+|callback|decision
+|
+|move|p1a: Roserade|Hidden Power|p2a: Registeel
+|-crit|p2a: Registeel
+|-supereffective|p2a: Registeel
+|-damage|p2a: Registeel|0 fnt
+|-damage|p1a: Roserade|111\/261|[from] item: Life Orb
+|faint|p2a: Registeel
+|
+|callback|decision
+|chat|Damnosaur|oh
+|chat|Damnosaur|oops
+|
+|switch|p2a: Scrafty|Scrafty, M|271\/271
+|-damage|p2a: Scrafty|204\/271|[from] Spikes
+|turn|25
+|callback|decision
+|
+|move|p1a: Roserade|Sludge Bomb|p2a: Scrafty
+|-damage|p2a: Scrafty|39\/271
+|-damage|p1a: Roserade|85\/261|[from] item: Life Orb
+|move|p2a: Scrafty|High Jump Kick|p1a: Roserade
+|-crit|p1a: Roserade
+|-resisted|p1a: Roserade
+|-damage|p1a: Roserade|0 fnt
+|-damage|p2a: Scrafty|12\/271|[from] item: Life Orb
+|faint|p1a: Roserade
+|-boost|p2a: Scrafty|atk|1|[from] ability: Moxie
+|
+|callback|decision
+|
+|switch|p1a: Machamp|Machamp, M|308\/384
+|-damage|p1a: Machamp|284\/384|[from] Stealth Rock
+|turn|26
+|callback|decision
+|
+|move|p1a: Machamp|Bullet Punch|p2a: Scrafty
+|-damage|p2a: Scrafty|0 fnt
+|faint|p2a: Scrafty
+|
+|-heal|p1a: Machamp|308\/384|[from] item: Leftovers
+|callback|decision
+|chat|AcoLysis|gg
+|
+|switch|p2a: Milotic|Milotic, F|304\/393 tox
+|-damage|p2a: Milotic|206\/393 tox|[from] Spikes
+|turn|27
+|callback|decision
+|chat|Damnosaur|gg
+|
+|move|p2a: Milotic|Scald|p1a: Machamp
+|-damage|p1a: Machamp|205\/384
+|move|p1a: Machamp|Dynamic Punch|p2a: Milotic
+|-crit|p2a: Milotic
+|-damage|p2a: Milotic|0 fnt
+|faint|p2a: Milotic
+|
+|win|Damnosaur
+|leave|AcoLysis
+|player|p2

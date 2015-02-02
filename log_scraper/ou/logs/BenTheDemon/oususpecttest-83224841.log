@@ -1,0 +1,539 @@
+|join|Scoobydoohan
+|join|BenTheDemon
+|player|p1|Scoobydoohan|290
+|player|p2|BenTheDemon|240
+|gametype|singles
+|gen|6
+|tier|OU (suspect test)
+|rated
+|clearpoke
+|poke|p1|Ferrothorn, F
+|poke|p1|Togekiss, F
+|poke|p1|Chansey, F
+|poke|p1|Absol, M
+|poke|p1|Garchomp, M
+|poke|p1|Trevenant, M
+|poke|p2|Dragonite, M
+|poke|p2|Rotom-Wash
+|poke|p2|Scizor, M
+|poke|p2|Talonflame, M
+|poke|p2|Excadrill, M
+|poke|p2|Gengar, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Trevenant|Trevenant, M|374\/374
+|switch|p2a: Metal Man|Scizor, M|344\/344
+|turn|1
+|callback|decision
+|
+|switch|p2a: Flame Man|Talonflame, M|328\/328
+|move|p1a: Trevenant|Will-O-Wisp|p2a: Flame Man|[miss]
+|-miss|p1a: Trevenant|p2a: Flame Man
+|
+|turn|2
+|callback|decision
+|
+|move|p1a: Trevenant|Protect|p1a: Trevenant
+|-singleturn|p1a: Trevenant|Protect
+|move|p2a: Flame Man|Brave Bird|p1a: Trevenant
+|-activate|p1a: Trevenant|Protect
+|
+|turn|3
+|callback|decision
+|
+|switch|p1a: Ferrothorn|Ferrothorn, F|352\/352
+|move|p2a: Flame Man|Swords Dance|p2a: Flame Man
+|-boost|p2a: Flame Man|atk|2
+|
+|turn|4
+|callback|decision
+|
+|move|p2a: Flame Man|Swords Dance|p2a: Flame Man
+|-boost|p2a: Flame Man|atk|2
+|move|p1a: Ferrothorn|Knock Off|p2a: Flame Man
+|-damage|p2a: Flame Man|201\/328
+|-enditem|p2a: Flame Man|Leftovers|[from] move: Knock Off|[of] p1a: Ferrothorn
+|
+|turn|5
+|callback|decision
+|
+|move|p2a: Flame Man|Swords Dance|p2a: Flame Man
+|-boost|p2a: Flame Man|atk|2
+|move|p1a: Ferrothorn|Knock Off|p2a: Flame Man
+|-damage|p2a: Flame Man|108\/328
+|
+|turn|6
+|callback|decision
+|
+|move|p2a: Flame Man|Roost|p2a: Flame Man
+|-heal|p2a: Flame Man|272\/328
+|move|p1a: Ferrothorn|Gyro Ball|p2a: Flame Man
+|-resisted|p2a: Flame Man
+|-damage|p2a: Flame Man|130\/328
+|
+|turn|7
+|callback|decision
+|
+|move|p2a: Flame Man|Roost|p2a: Flame Man
+|-heal|p2a: Flame Man|294\/328
+|move|p1a: Ferrothorn|Gyro Ball|p2a: Flame Man
+|-resisted|p2a: Flame Man
+|-damage|p2a: Flame Man|147\/328
+|
+|turn|8
+|callback|decision
+|
+|move|p2a: Flame Man|Roost|p2a: Flame Man
+|-heal|p2a: Flame Man|311\/328
+|move|p1a: Ferrothorn|Gyro Ball|p2a: Flame Man
+|-crit|p2a: Flame Man
+|-resisted|p2a: Flame Man
+|-damage|p2a: Flame Man|62\/328
+|
+|turn|9
+|callback|decision
+|
+|move|p2a: Flame Man|Roost|p2a: Flame Man
+|-heal|p2a: Flame Man|226\/328
+|move|p1a: Ferrothorn|Gyro Ball|p2a: Flame Man
+|-resisted|p2a: Flame Man
+|-damage|p2a: Flame Man|70\/328
+|
+|turn|10
+|callback|decision
+|
+|move|p2a: Flame Man|Roost|p2a: Flame Man
+|-heal|p2a: Flame Man|234\/328
+|move|p1a: Ferrothorn|Gyro Ball|p2a: Flame Man
+|-resisted|p2a: Flame Man
+|-damage|p2a: Flame Man|84\/328
+|
+|turn|11
+|callback|decision
+|
+|move|p2a: Flame Man|Roost|p2a: Flame Man
+|-heal|p2a: Flame Man|248\/328
+|move|p1a: Ferrothorn|Knock Off|p2a: Flame Man
+|-damage|p2a: Flame Man|156\/328
+|
+|turn|12
+|callback|decision
+|
+|move|p2a: Flame Man|Roost|p2a: Flame Man
+|-heal|p2a: Flame Man|320\/328
+|move|p1a: Ferrothorn|Gyro Ball|p2a: Flame Man
+|-resisted|p2a: Flame Man
+|-damage|p2a: Flame Man|152\/328
+|
+|turn|13
+|callback|decision
+|
+|move|p2a: Flame Man|Roost|p2a: Flame Man
+|-heal|p2a: Flame Man|316\/328
+|move|p1a: Ferrothorn|Knock Off|p2a: Flame Man
+|-damage|p2a: Flame Man|221\/328
+|
+|turn|14
+|callback|decision
+|
+|move|p2a: Flame Man|Flare Blitz|p1a: Ferrothorn
+|-supereffective|p1a: Ferrothorn
+|-damage|p1a: Ferrothorn|0 fnt
+|-damage|p2a: Flame Man|105\/328|[from] recoil|[of] p1a: Ferrothorn
+|-damage|p2a: Flame Man|64\/328|[from] ability: Iron Barbs|[of] p1a: Ferrothorn
+|faint|p1a: Ferrothorn
+|
+|callback|decision
+|
+|switch|p1a: Garchomp|Garchomp, M|420\/420
+|turn|15
+|callback|decision
+|
+|move|p2a: Flame Man|Brave Bird|p1a: Garchomp
+|-damage|p1a: Garchomp|0 fnt
+|-damage|p2a: Flame Man|0 fnt|[from] recoil|[of] p1a: Garchomp
+|faint|p1a: Garchomp
+|faint|p2a: Flame Man
+|
+|callback|decision
+|
+|switch|p2a: Drill Man|Excadrill, M|405\/405
+|switch|p1a: Trevenant|Trevenant, M|374\/374
+|-ability|p2a: Drill Man|Mold Breaker
+|turn|16
+|callback|decision
+|
+|move|p2a: Drill Man|Iron Head|p1a: Trevenant
+|-damage|p1a: Trevenant|200\/374
+|move|p1a: Trevenant|Leech Seed|p2a: Drill Man
+|-start|p2a: Drill Man|move: Leech Seed
+|
+|-damage|p2a: Drill Man|355\/405|[from] Leech Seed|[of] p1a: Trevenant
+|-heal|p1a: Trevenant|250\/374|[silent]
+|turn|17
+|callback|decision
+|
+|move|p2a: Drill Man|Iron Head|p1a: Trevenant
+|-damage|p1a: Trevenant|67\/374
+|-enditem|p1a: Trevenant|Sitrus Berry|[eat]
+|-heal|p1a: Trevenant|160\/374|[from] item: Sitrus Berry
+|cant|p1a: Trevenant|flinch
+|
+|-heal|p2a: Drill Man|380\/405|[from] item: Leftovers
+|-damage|p2a: Drill Man|330\/405|[from] Leech Seed|[of] p1a: Trevenant
+|-heal|p1a: Trevenant|210\/374|[silent]
+|-item|p1a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|turn|18
+|callback|decision
+|
+|move|p1a: Trevenant|Protect|p1a: Trevenant
+|-singleturn|p1a: Trevenant|Protect
+|move|p2a: Drill Man|Iron Head|p1a: Trevenant
+|-activate|p1a: Trevenant|Protect
+|
+|-heal|p2a: Drill Man|355\/405|[from] item: Leftovers
+|-damage|p2a: Drill Man|305\/405|[from] Leech Seed|[of] p1a: Trevenant
+|-heal|p1a: Trevenant|260\/374|[silent]
+|turn|19
+|callback|decision
+|
+|move|p2a: Drill Man|Iron Head|p1a: Trevenant
+|-damage|p1a: Trevenant|80\/374
+|-enditem|p1a: Trevenant|Sitrus Berry|[eat]
+|-heal|p1a: Trevenant|173\/374|[from] item: Sitrus Berry
+|move|p1a: Trevenant|Will-O-Wisp|p2a: Drill Man
+|-status|p2a: Drill Man|brn
+|
+|-heal|p2a: Drill Man|330\/405 brn|[from] item: Leftovers
+|-damage|p2a: Drill Man|280\/405 brn|[from] Leech Seed|[of] p1a: Trevenant
+|-heal|p1a: Trevenant|223\/374|[silent]
+|-damage|p2a: Drill Man|230\/405 brn|[from] brn
+|-item|p1a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|turn|20
+|callback|decision
+|
+|switch|p2a: Shadow Man|Gengar, M|262\/262
+|move|p1a: Trevenant|Protect|p1a: Trevenant
+|-fail|p1a: Trevenant
+|
+|turn|21
+|callback|decision
+|
+|switch|p1a: Chansey|Chansey, F|704\/704
+|move|p2a: Shadow Man|Sludge Wave|p1a: Chansey
+|-damage|p1a: Chansey|599\/704
+|
+|turn|22
+|callback|decision
+|
+|switch|p2a: Elec Man|Rotom-Wash|304\/304
+|move|p1a: Chansey|Wish|p1a: Chansey
+|
+|turn|23
+|callback|decision
+|
+|switch|p1a: Absol|Absol, M|271\/271
+|-ability|p1a: Absol|Pressure
+|move|p2a: Elec Man|Will-O-Wisp|p1a: Absol
+|-status|p1a: Absol|brn
+|
+|-damage|p1a: Absol|238\/271 brn|[from] brn
+|turn|24
+|callback|decision
+|
+|switch|p1a: Chansey|Chansey, F|599\/704
+|move|p2a: Elec Man|Thunderbolt|p1a: Chansey
+|-damage|p1a: Chansey|515\/704
+|-status|p1a: Chansey|par
+|
+|turn|25
+|callback|decision
+|
+|move|p2a: Elec Man|Pain Split|p1a: Chansey
+|-sethp|p1a: Chansey|409\/704 par|p2a: Elec Man|304\/304|[from] move: Pain Split
+|move|p1a: Chansey|Heal Bell|p1a: Chansey
+|-cureteam|p1a: Chansey|[from] move: HealBell
+|
+|turn|26
+|callback|decision
+|
+|move|p2a: Elec Man|Will-O-Wisp|p1a: Chansey
+|-status|p1a: Chansey|brn
+|move|p1a: Chansey|Wish|p1a: Chansey
+|
+|-damage|p1a: Chansey|321\/704 brn|[from] brn
+|turn|27
+|callback|decision
+|
+|move|p2a: Elec Man|Hydro Pump|p1a: Chansey
+|-damage|p1a: Chansey|213\/704 brn
+|move|p1a: Chansey|Seismic Toss|p2a: Elec Man
+|-damage|p2a: Elec Man|204\/304
+|
+|-heal|p1a: Chansey|565\/704 brn|[from] move: Wish|[wisher] Chansey
+|-heal|p2a: Elec Man|223\/304|[from] item: Leftovers
+|-damage|p1a: Chansey|477\/704 brn|[from] brn
+|turn|28
+|callback|decision
+|
+|move|p2a: Elec Man|Pain Split|p1a: Chansey
+|-sethp|p1a: Chansey|350\/704 brn|p2a: Elec Man|304\/304|[from] move: Pain Split
+|move|p1a: Chansey|Wish|p1a: Chansey
+|
+|-damage|p1a: Chansey|262\/704 brn|[from] brn
+|turn|29
+|callback|decision
+|
+|switch|p1a: Trevenant|Trevenant, M|223\/374
+|move|p2a: Elec Man|Thunderbolt|p1a: Trevenant
+|-resisted|p1a: Trevenant
+|-damage|p1a: Trevenant|166\/374
+|-enditem|p1a: Trevenant|Sitrus Berry|[eat]
+|-heal|p1a: Trevenant|259\/374|[from] item: Sitrus Berry
+|
+|-heal|p1a: Trevenant|374\/374|[from] move: Wish|[wisher] Chansey
+|turn|30
+|callback|decision
+|
+|move|p2a: Elec Man|Will-O-Wisp|p1a: Trevenant
+|-status|p1a: Trevenant|brn
+|move|p1a: Trevenant|Leech Seed|p2a: Elec Man
+|-start|p2a: Elec Man|move: Leech Seed
+|
+|-damage|p2a: Elec Man|266\/304|[from] Leech Seed|[of] p1a: Trevenant
+|-damage|p1a: Trevenant|328\/374 brn|[from] brn
+|turn|31
+|callback|decision
+|
+|switch|p2a: Drill Man|Excadrill, M|230\/405 brn
+|-ability|p2a: Drill Man|Mold Breaker
+|move|p1a: Trevenant|Will-O-Wisp|p2a: Drill Man
+|-fail|p2a: Drill Man|brn
+|
+|-heal|p2a: Drill Man|255\/405 brn|[from] item: Leftovers
+|-damage|p2a: Drill Man|205\/405 brn|[from] brn
+|-damage|p1a: Trevenant|282\/374 brn|[from] brn
+|-item|p1a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|turn|32
+|callback|decision
+|
+|move|p2a: Drill Man|Stealth Rock|p1a: Trevenant
+|-sidestart|p1: Scoobydoohan|move: Stealth Rock
+|move|p1a: Trevenant|Leech Seed|p2a: Drill Man
+|-start|p2a: Drill Man|move: Leech Seed
+|
+|-heal|p2a: Drill Man|230\/405 brn|[from] item: Leftovers
+|-damage|p2a: Drill Man|180\/405 brn|[from] Leech Seed|[of] p1a: Trevenant
+|-heal|p1a: Trevenant|332\/374 brn|[silent]
+|-damage|p2a: Drill Man|130\/405 brn|[from] brn
+|-damage|p1a: Trevenant|286\/374 brn|[from] brn
+|turn|33
+|callback|decision
+|
+|switch|p2a: Shadow Man|Gengar, M|262\/262
+|move|p1a: Trevenant|Shadow Claw|p2a: Shadow Man
+|-supereffective|p2a: Shadow Man
+|-damage|p2a: Shadow Man|124\/262
+|
+|-damage|p1a: Trevenant|240\/374 brn|[from] brn
+|turn|34
+|callback|decision
+|
+|switch|p1a: Chansey|Chansey, F|262\/704
+|-damage|p1a: Chansey|174\/704|[from] Stealth Rock
+|move|p2a: Shadow Man|Sludge Wave|p1a: Chansey
+|-damage|p1a: Chansey|62\/704
+|
+|turn|35
+|callback|decision
+|
+|move|p1a: Chansey|Protect|p1a: Chansey
+|-singleturn|p1a: Chansey|Protect
+|move|p2a: Shadow Man|Sludge Wave|p1a: Chansey
+|-activate|p1a: Chansey|Protect
+|
+|turn|36
+|callback|decision
+|
+|move|p2a: Shadow Man|Sludge Wave|p1a: Chansey
+|-damage|p1a: Chansey|0 fnt
+|faint|p1a: Chansey
+|
+|callback|decision
+|
+|switch|p1a: Absol|Absol, M|238\/271
+|-damage|p1a: Absol|205\/271|[from] Stealth Rock
+|-ability|p1a: Absol|Pressure
+|turn|37
+|callback|decision
+|
+|switch|p2a: Metal Man|Scizor, M|344\/344
+|-formechange|p1a: Absol|Absol-Mega
+|message|Absol has Mega Evolved into Mega Absol!
+|move|p1a: Absol|Swords Dance|p1a: Absol
+|-boost|p1a: Absol|atk|2
+|
+|turn|38
+|callback|decision
+|
+|-formechange|p2a: Metal Man|Scizor-Mega
+|message|Scizor has Mega Evolved into Mega Scizor!
+|move|p1a: Absol|Sucker Punch|p2a: Metal Man
+|-damage|p2a: Metal Man|124\/344
+|move|p2a: Metal Man|Bug Bite|p1a: Absol
+|-supereffective|p1a: Absol
+|-damage|p1a: Absol|0 fnt
+|faint|p1a: Absol
+|
+|callback|decision
+|
+|switch|p1a: Togekiss|Togekiss, F|374\/374
+|-damage|p1a: Togekiss|281\/374|[from] Stealth Rock
+|turn|39
+|callback|decision
+|
+|move|p2a: Metal Man|Bullet Punch|p1a: Togekiss
+|-supereffective|p1a: Togekiss
+|-damage|p1a: Togekiss|17\/374
+|move|p1a: Togekiss|Flamethrower|p2a: Metal Man
+|-supereffective|p2a: Metal Man
+|-damage|p2a: Metal Man|0 fnt
+|faint|p2a: Metal Man
+|
+|-heal|p1a: Togekiss|40\/374|[from] item: Leftovers
+|callback|decision
+|
+|switch|p2a: Shadow Man|Gengar, M|124\/262
+|turn|40
+|callback|decision
+|
+|move|p2a: Shadow Man|Sludge Wave|p1a: Togekiss
+|-supereffective|p1a: Togekiss
+|-damage|p1a: Togekiss|0 fnt
+|faint|p1a: Togekiss
+|
+|callback|decision
+|
+|switch|p1a: Trevenant|Trevenant, M|240\/374 brn
+|-damage|p1a: Trevenant|194\/374 brn|[from] Stealth Rock
+|turn|41
+|callback|decision
+|
+|move|p2a: Shadow Man|Sludge Wave|p1a: Trevenant
+|-damage|p1a: Trevenant|40\/374 brn
+|-enditem|p1a: Trevenant|Sitrus Berry|[eat]
+|-heal|p1a: Trevenant|133\/374 brn|[from] item: Sitrus Berry
+|move|p1a: Trevenant|Shadow Claw|p2a: Shadow Man
+|-crit|p2a: Shadow Man
+|-supereffective|p2a: Shadow Man
+|-damage|p2a: Shadow Man|0 fnt
+|faint|p2a: Shadow Man
+|
+|-damage|p1a: Trevenant|87\/374 brn|[from] brn
+|-item|p1a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|callback|decision
+|
+|switch|p2a: Drill Man|Excadrill, M|130\/405 brn
+|-enditem|p1a: Trevenant|Sitrus Berry|[eat]
+|-heal|p1a: Trevenant|180\/374 brn|[from] item: Sitrus Berry
+|-ability|p2a: Drill Man|Mold Breaker
+|turn|42
+|callback|decision
+|
+|move|p2a: Drill Man|Iron Head|p1a: Trevenant
+|-crit|p1a: Trevenant
+|-damage|p1a: Trevenant|57\/374 brn
+|cant|p1a: Trevenant|flinch
+|
+|-heal|p2a: Drill Man|155\/405 brn|[from] item: Leftovers
+|-damage|p2a: Drill Man|105\/405 brn|[from] brn
+|-damage|p1a: Trevenant|11\/374 brn|[from] brn
+|-item|p1a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|-enditem|p1a: Trevenant|Sitrus Berry|[eat]
+|-heal|p1a: Trevenant|104\/374 brn|[from] item: Sitrus Berry
+|turn|43
+|callback|decision
+|
+|move|p2a: Drill Man|Iron Head|p1a: Trevenant
+|-damage|p1a: Trevenant|22\/374 brn
+|move|p1a: Trevenant|Leech Seed|p2a: Drill Man
+|-start|p2a: Drill Man|move: Leech Seed
+|
+|-heal|p2a: Drill Man|130\/405 brn|[from] item: Leftovers
+|-damage|p2a: Drill Man|80\/405 brn|[from] Leech Seed|[of] p1a: Trevenant
+|-heal|p1a: Trevenant|72\/374 brn|[silent]
+|-damage|p2a: Drill Man|30\/405 brn|[from] brn
+|-damage|p1a: Trevenant|26\/374 brn|[from] brn
+|-item|p1a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|-enditem|p1a: Trevenant|Sitrus Berry|[eat]
+|-heal|p1a: Trevenant|119\/374 brn|[from] item: Sitrus Berry
+|turn|44
+|callback|decision
+|leave|Scoobydoohan
+|player|p1
+|join|Scoobydoohan
+|player|p1|Scoobydoohan|290
+|callback|decision
+|
+|move|p1a: Trevenant|Protect|p1a: Trevenant
+|-singleturn|p1a: Trevenant|Protect
+|move|p2a: Drill Man|Iron Head|p1a: Trevenant
+|-activate|p1a: Trevenant|Protect
+|
+|-heal|p2a: Drill Man|55\/405 brn|[from] item: Leftovers
+|-damage|p2a: Drill Man|5\/405 brn|[from] Leech Seed|[of] p1a: Trevenant
+|-heal|p1a: Trevenant|169\/374 brn|[silent]
+|-damage|p2a: Drill Man|0 fnt|[from] brn
+|-damage|p1a: Trevenant|123\/374 brn|[from] brn
+|-item|p1a: Trevenant|Sitrus Berry|[from] ability: Harvest
+|faint|p2a: Drill Man
+|callback|decision
+|
+|switch|p2a: Yellow Devil|Dragonite, M|386\/386
+|-enditem|p1a: Trevenant|Sitrus Berry|[eat]
+|-heal|p1a: Trevenant|216\/374 brn|[from] item: Sitrus Berry
+|turn|45
+|callback|decision
+|
+|move|p2a: Yellow Devil|Dragon Claw|p1a: Trevenant
+|-damage|p1a: Trevenant|47\/374 brn
+|move|p1a: Trevenant|Leech Seed|p2a: Yellow Devil
+|-start|p2a: Yellow Devil|move: Leech Seed
+|
+|-damage|p2a: Yellow Devil|338\/386|[from] Leech Seed|[of] p1a: Trevenant
+|-heal|p1a: Trevenant|95\/374 brn|[silent]
+|-damage|p1a: Trevenant|49\/374 brn|[from] brn
+|turn|46
+|callback|decision
+|
+|move|p1a: Trevenant|Protect|p1a: Trevenant
+|-singleturn|p1a: Trevenant|Protect
+|move|p2a: Yellow Devil|Dragon Claw|p1a: Trevenant
+|-activate|p1a: Trevenant|Protect
+|
+|-damage|p2a: Yellow Devil|290\/386|[from] Leech Seed|[of] p1a: Trevenant
+|-heal|p1a: Trevenant|97\/374 brn|[silent]
+|-damage|p1a: Trevenant|51\/374 brn|[from] brn
+|turn|47
+|callback|decision
+|
+|move|p1a: Trevenant|Protect|p1a: Trevenant
+|-fail|p1a: Trevenant
+|move|p2a: Yellow Devil|Dragon Claw|p1a: Trevenant
+|-damage|p1a: Trevenant|0 fnt
+|faint|p1a: Trevenant
+|
+|win|BenTheDemon
+|raw|Ladder updating...
+|raw|Scoobydoohan's rating: 1026 &rarr; <strong>1006<\/strong><br \/>(-20 for losing)
+|raw|BenTheDemon's rating: 1099 &rarr; <strong>1119<\/strong><br \/>(+20 for winning)
+|chat|Scoobydoohan|gg

@@ -1,0 +1,205 @@
+|join|smoking_bean
+|join|benito camelo
+|player|p1|smoking_bean|134
+|player|p2|benito camelo|209
+|gametype|singles
+|gen|6
+|tier|OU
+|rated
+|clearpoke
+|poke|p1|Landorus, M
+|poke|p1|Conkeldurr, F
+|poke|p1|Garchomp, F
+|poke|p1|Charizard, F
+|poke|p1|Swampert, M
+|poke|p1|Dragonite, F
+|poke|p2|Azumarill, F
+|poke|p2|Scizor, F
+|poke|p2|Skarmory, F
+|poke|p2|Charizard, F
+|poke|p2|Manaphy
+|poke|p2|Chansey, F
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Conkeldurr|Conkeldurr, F|414\/414
+|switch|p2a: Scizor|Scizor, F|344\/344
+|turn|1
+|
+|move|p2a: Scizor|U-turn|p1a: Conkeldurr
+|-resisted|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|300\/414
+|
+|switch|p2a: Skarmory|Skarmory, F|334\/334
+|move|p1a: Conkeldurr|Knock Off|p2a: Skarmory
+|-damage|p2a: Skarmory|258\/334
+|-damage|p1a: Conkeldurr|231\/414|[from] item: Rocky Helmet|[of] p2a: Skarmory
+|-enditem|p2a: Skarmory|Rocky Helmet|[from] move: Knock Off|[of] p1a: Conkeldurr
+|
+|turn|2
+|
+|move|p2a: Skarmory|Brave Bird|p1a: Conkeldurr
+|-supereffective|p1a: Conkeldurr
+|-damage|p1a: Conkeldurr|0 fnt
+|-damage|p2a: Skarmory|182\/334|[from] recoil|[of] p1a: Conkeldurr
+|faint|p1a: Conkeldurr
+|
+|
+|switch|p1a: Charizard|Charizard, F|298\/298
+|turn|3
+|
+|switch|p2a: Chansey|Chansey, F|704\/704
+|-formechange|p1a: Charizard|Charizard-Mega-Y
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p1a: Charizard|Solar Beam|p2a: Chansey|[still]
+|-prepare|p1a: Charizard|Solar Beam|p2a: Chansey
+|-anim|p1a: Charizard|Solar Beam|p2a: Chansey
+|-damage|p2a: Chansey|595\/704
+|
+|-weather|SunnyDay|[upkeep]
+|turn|4
+|
+|switch|p1a: Garchomp|Garchomp, F|358\/358
+|move|p2a: Chansey|Stealth Rock|p1a: Garchomp
+|-sidestart|p1: smoking_bean|move: Stealth Rock
+|
+|-weather|SunnyDay|[upkeep]
+|turn|5
+|
+|switch|p2a: Skarmory|Skarmory, F|182\/334
+|move|p1a: Garchomp|Swords Dance|p1a: Garchomp
+|-boost|p1a: Garchomp|atk|2
+|
+|-weather|SunnyDay|[upkeep]
+|turn|6
+|
+|move|p1a: Garchomp|Fire Fang|p2a: Skarmory
+|-supereffective|p2a: Skarmory
+|-damage|p2a: Skarmory|0 fnt
+|-damage|p1a: Garchomp|323\/358|[from] item: Life Orb
+|faint|p2a: Skarmory
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p2a: Azumarill|Azumarill, F|404\/404
+|turn|7
+|
+|move|p1a: Garchomp|Earthquake|p2a: Azumarill
+|-damage|p2a: Azumarill|0 fnt
+|-damage|p1a: Garchomp|288\/358|[from] item: Life Orb
+|faint|p2a: Azumarill
+|
+|-weather|none
+|
+|switch|p2a: Manaphy|Manaphy|341\/341
+|turn|8
+|
+|move|p1a: Garchomp|Earthquake|p2a: Manaphy
+|-damage|p2a: Manaphy|0 fnt
+|-damage|p1a: Garchomp|253\/358|[from] item: Life Orb
+|faint|p2a: Manaphy
+|
+|
+|switch|p2a: Scizor|Scizor, F|344\/344
+|turn|9
+|
+|move|p2a: Scizor|Bullet Punch|p1a: Garchomp
+|-damage|p1a: Garchomp|60\/358
+|-damage|p2a: Scizor|301\/344|[from] ability: Rough Skin|[of] p1a: Garchomp
+|move|p1a: Garchomp|Fire Fang|p2a: Scizor
+|-supereffective|p2a: Scizor
+|-damage|p2a: Scizor|0 fnt
+|-damage|p1a: Garchomp|25\/358|[from] item: Life Orb
+|faint|p2a: Scizor
+|
+|
+|switch|p2a: Chansey|Chansey, F|595\/704
+|turn|10
+|
+|move|p1a: Garchomp|Outrage|p2a: Chansey
+|-damage|p2a: Chansey|0 fnt
+|-damage|p1a: Garchomp|0 fnt|[from] item: Life Orb
+|faint|p2a: Chansey
+|faint|p1a: Garchomp
+|
+|chat|benito camelo|garchomp sweep
+|
+|switch|p2a: Charizard|Charizard, F|298\/298
+|switch|p1a: Swampert|Swampert, M|401\/401
+|-damage|p1a: Swampert|376\/401|[from] Stealth Rock
+|turn|11
+|
+|-formechange|p2a: Charizard|Charizard-Mega-Y
+|message|Charizard has Mega Evolved into Mega Charizard!
+|-weather|SunnyDay
+|move|p2a: Charizard|Solar Beam|p1a: Swampert|[still]
+|-prepare|p2a: Charizard|Solar Beam|p1a: Swampert
+|-anim|p2a: Charizard|Solar Beam|p1a: Swampert
+|-supereffective|p1a: Swampert
+|-damage|p1a: Swampert|0 fnt
+|faint|p1a: Swampert
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p1a: Dragonite|Dragonite, F|324\/324
+|-damage|p1a: Dragonite|243\/324|[from] Stealth Rock
+|turn|12
+|
+|move|p2a: Charizard|Air Slash|p1a: Dragonite
+|-crit|p1a: Dragonite
+|-damage|p1a: Dragonite|0 fnt
+|faint|p1a: Dragonite
+|
+|-weather|SunnyDay|[upkeep]
+|chat|benito camelo|lol
+|
+|switch|p1a: Landorus|Landorus, M|320\/320
+|-damage|p1a: Landorus|280\/320|[from] Stealth Rock
+|turn|13
+|
+|move|p1a: Landorus|Psychic|p2a: Charizard
+|-damage|p2a: Charizard|151\/298
+|move|p2a: Charizard|Fire Blast|p1a: Landorus|[miss]
+|-miss|p2a: Charizard|p1a: Landorus
+|
+|-weather|SunnyDay|[upkeep]
+|turn|14
+|
+|move|p1a: Landorus|Psychic|p2a: Charizard
+|-damage|p2a: Charizard|11\/298
+|move|p2a: Charizard|Fire Blast|p1a: Landorus
+|-damage|p1a: Landorus|0 fnt
+|faint|p1a: Landorus
+|
+|-weather|SunnyDay|[upkeep]
+|
+|switch|p1a: Charizard|Charizard, F|298\/298
+|-formechange|p1a: Charizard|Charizard-Mega-Y
+|-damage|p1a: Charizard|149\/298|[from] Stealth Rock
+|turn|15
+|
+|move|p2a: Charizard|Air Slash|p1a: Charizard
+|-damage|p1a: Charizard|19\/298
+|cant|p1a: Charizard|flinch
+|
+|-weather|none
+|turn|16
+|
+|move|p2a: Charizard|Air Slash|p1a: Charizard
+|-damage|p1a: Charizard|0 fnt
+|faint|p1a: Charizard
+|
+|win|benito camelo
+|raw|Ladder updating...
+|raw|smoking_bean's rating: 1331 &rarr; <strong>1314<\/strong><br \/>(-17 for losing)
+|raw|benito camelo's rating: 1371 &rarr; <strong>1389<\/strong><br \/>(+18 for winning)
+|chat|benito camelo|AJAJAJJA
+|chat|benito camelo|GG XD

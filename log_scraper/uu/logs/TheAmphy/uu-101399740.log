@@ -1,0 +1,399 @@
+|join|TheAmphy
+|join|blackmagicDF
+|player|p1|TheAmphy|101
+|player|p2|blackmagicDF|265
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|clearpoke
+|poke|p1|Heliolisk, F
+|poke|p1|Darmanitan, M
+|poke|p1|Tentacruel, M
+|poke|p1|Chesnaught, F
+|poke|p1|Umbreon, F
+|poke|p1|Azelf
+|poke|p2|Darmanitan, F
+|poke|p2|Blastoise, M
+|poke|p2|Registeel
+|poke|p2|Slurpuff, M
+|poke|p2|Gogoat, M
+|poke|p2|Heracross, M
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|teampreview
+|
+|start
+|switch|p1a: Heliolisk|Heliolisk, F|265\/265
+|switch|p2a: Registeel|Registeel|364\/364
+|turn|1
+|
+|move|p1a: Heliolisk|Volt Switch|p2a: Registeel
+|-damage|p2a: Registeel|289\/364
+|-damage|p1a: Heliolisk|239\/265|[from] item: Life Orb
+|
+|switch|p1a: Tentacruel|Tentacruel, M|363\/363
+|move|p2a: Registeel|Stealth Rock|p1a: Tentacruel
+|-sidestart|p1: TheAmphy|move: Stealth Rock
+|
+|-heal|p2a: Registeel|311\/364|[from] item: Leftovers
+|turn|2
+|
+|switch|p2a: Blastoise|Blastoise, M|362\/362
+|move|p1a: Tentacruel|Rapid Spin|p2a: Blastoise
+|-damage|p2a: Blastoise|352\/362
+|-sideend|p1: TheAmphy|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Tentacruel
+|
+|turn|3
+|
+|switch|p2a: Heracross|Heracross, M|302\/302
+|move|p1a: Tentacruel|Scald|p2a: Heracross
+|-damage|p2a: Heracross|224\/302
+|-status|p2a: Heracross|brn
+|
+|-damage|p2a: Heracross|187\/302 brn|[from] brn
+|turn|4
+|
+|switch|p2a: Slurpuff|Slurpuff, M|368\/368
+|switch|p1a: Chesnaught|Chesnaught, F|380\/380
+|
+|turn|5
+|
+|move|p2a: Slurpuff|Aromatherapy|p2a: Slurpuff
+|-cureteam|p2a: Slurpuff|[from] move: Aromatherapy
+|move|p1a: Chesnaught|Leech Seed|p2a: Slurpuff
+|-start|p2a: Slurpuff|move: Leech Seed
+|
+|-damage|p2a: Slurpuff|322\/368|[from] Leech Seed|[of] p1a: Chesnaught
+|turn|6
+|
+|switch|p1a: Tentacruel|Tentacruel, M|363\/363
+|move|p2a: Slurpuff|Dazzling Gleam|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|309\/363
+|
+|-heal|p1a: Tentacruel|331\/363|[from] item: Black Sludge
+|-heal|p2a: Slurpuff|345\/368|[from] item: Leftovers
+|-damage|p2a: Slurpuff|299\/368|[from] Leech Seed|[of] p1a: Tentacruel
+|-heal|p1a: Tentacruel|363\/363|[silent]
+|turn|7
+|
+|switch|p2a: Registeel|Registeel|311\/364
+|move|p1a: Tentacruel|Toxic Spikes|p2a: Registeel
+|-sidestart|p2: blackmagicDF|move: Toxic Spikes
+|
+|-heal|p2a: Registeel|333\/364|[from] item: Leftovers
+|turn|8
+|
+|move|p1a: Tentacruel|Knock Off|p2a: Registeel
+|-damage|p2a: Registeel|304\/364
+|-enditem|p2a: Registeel|Leftovers|[from] move: Knock Off|[of] p1a: Tentacruel
+|move|p2a: Registeel|Stealth Rock|p1a: Tentacruel
+|-sidestart|p1: TheAmphy|move: Stealth Rock
+|
+|turn|9
+|
+|move|p1a: Tentacruel|Rapid Spin|p2a: Registeel
+|-crit|p2a: Registeel
+|-resisted|p2a: Registeel
+|-damage|p2a: Registeel|299\/364
+|-sideend|p1: TheAmphy|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Tentacruel
+|move|p2a: Registeel|Thunder Wave|p1a: Tentacruel
+|-status|p1a: Tentacruel|par
+|
+|turn|10
+|
+|switch|p2a: Blastoise|Blastoise, M|352\/362
+|-status|p2a: Blastoise|psn
+|move|p1a: Tentacruel|Toxic Spikes|p2a: Blastoise
+|-sidestart|p2: blackmagicDF|move: Toxic Spikes
+|
+|-damage|p2a: Blastoise|307\/362 psn|[from] psn
+|turn|11
+|
+|switch|p1a: Heliolisk|Heliolisk, F|239\/265
+|-formechange|p2a: Blastoise|Blastoise-Mega
+|message|Blastoise has Mega Evolved into Mega Blastoise!
+|move|p2a: Blastoise|Rapid Spin|p1a: Heliolisk
+|-damage|p1a: Heliolisk|213\/265
+|-sideend|p2: blackmagicDF|Toxic Spikes|[from] move: Rapid Spin|[of] p2a: Blastoise
+|
+|-damage|p2a: Blastoise|262\/362 psn|[from] psn
+|turn|12
+|
+|switch|p2a: Gogoat|Gogoat, M|449\/449
+|move|p1a: Heliolisk|Thunderbolt|p2a: Gogoat
+|-resisted|p2a: Gogoat
+|-damage|p2a: Gogoat|348\/449
+|-damage|p1a: Heliolisk|187\/265|[from] item: Life Orb
+|
+|-heal|p2a: Gogoat|376\/449|[from] item: Leftovers
+|turn|13
+|
+|switch|p1a: Umbreon|Umbreon, F|394\/394
+|move|p2a: Gogoat|Earthquake|p1a: Umbreon
+|-damage|p1a: Umbreon|304\/394
+|
+|-heal|p2a: Gogoat|404\/449|[from] item: Leftovers
+|-heal|p1a: Umbreon|328\/394|[from] item: Leftovers
+|turn|14
+|
+|move|p2a: Gogoat|Bulk Up|p2a: Gogoat
+|-boost|p2a: Gogoat|atk|1
+|-boost|p2a: Gogoat|def|1
+|move|p1a: Umbreon|Foul Play|p2a: Gogoat
+|-damage|p2a: Gogoat|229\/449
+|
+|-heal|p2a: Gogoat|257\/449|[from] item: Leftovers
+|-heal|p1a: Umbreon|352\/394|[from] item: Leftovers
+|turn|15
+|
+|move|p2a: Gogoat|Horn Leech|p1a: Umbreon
+|-damage|p1a: Umbreon|199\/394
+|-heal|p2a: Gogoat|334\/449|[from] drain|[of] p1a: Umbreon
+|move|p1a: Umbreon|Foul Play|p2a: Gogoat
+|-damage|p2a: Gogoat|150\/449
+|
+|-heal|p2a: Gogoat|178\/449|[from] item: Leftovers
+|-heal|p1a: Umbreon|223\/394|[from] item: Leftovers
+|turn|16
+|
+|switch|p1a: Tentacruel|Tentacruel, M|363\/363 par
+|move|p2a: Gogoat|Horn Leech|p1a: Tentacruel
+|-damage|p1a: Tentacruel|209\/363 par
+|-damage|p2a: Gogoat|101\/449|[from] ability: Liquid Ooze|[of] p1a: Tentacruel
+|
+|-heal|p2a: Gogoat|129\/449|[from] item: Leftovers
+|-heal|p1a: Tentacruel|231\/363 par|[from] item: Black Sludge
+|turn|17
+|
+|switch|p1a: Azelf|Azelf|291\/291
+|move|p2a: Gogoat|Horn Leech|p1a: Azelf
+|-damage|p1a: Azelf|92\/291
+|-heal|p2a: Gogoat|229\/449|[from] drain|[of] p1a: Azelf
+|
+|-heal|p2a: Gogoat|257\/449|[from] item: Leftovers
+|turn|18
+|
+|move|p1a: Azelf|Fire Blast|p2a: Gogoat
+|-supereffective|p2a: Gogoat
+|-damage|p2a: Gogoat|0 fnt
+|faint|p2a: Gogoat
+|
+|
+|switch|p2a: Darmanitan|Darmanitan, F|352\/352
+|turn|19
+|
+|move|p1a: Azelf|Psyshock|p2a: Darmanitan
+|-damage|p2a: Darmanitan|147\/352
+|move|p2a: Darmanitan|U-turn|p1a: Azelf
+|-supereffective|p1a: Azelf
+|-damage|p1a: Azelf|0 fnt
+|faint|p1a: Azelf
+|
+|switch|p2a: Slurpuff|Slurpuff, M|299\/368
+|
+|-heal|p2a: Slurpuff|322\/368|[from] item: Leftovers
+|
+|switch|p1a: Tentacruel|Tentacruel, M|231\/363 par
+|turn|20
+|
+|move|p2a: Slurpuff|Aromatherapy|p2a: Slurpuff
+|-cureteam|p2a: Slurpuff|[from] move: Aromatherapy
+|move|p1a: Tentacruel|Scald|p2a: Slurpuff
+|-damage|p2a: Slurpuff|223\/368
+|
+|-heal|p2a: Slurpuff|246\/368|[from] item: Leftovers
+|-heal|p1a: Tentacruel|253\/363 par|[from] item: Black Sludge
+|turn|21
+|
+|move|p2a: Slurpuff|Light Screen|p2a: Slurpuff
+|-sidestart|p2: blackmagicDF|move: Light Screen
+|move|p1a: Tentacruel|Knock Off|p2a: Slurpuff
+|-resisted|p2a: Slurpuff
+|-damage|p2a: Slurpuff|223\/368
+|-enditem|p2a: Slurpuff|Leftovers|[from] move: Knock Off|[of] p1a: Tentacruel
+|
+|-heal|p1a: Tentacruel|275\/363 par|[from] item: Black Sludge
+|turn|22
+|
+|switch|p2a: Heracross|Heracross, M|187\/302
+|cant|p1a: Tentacruel|par
+|
+|-heal|p1a: Tentacruel|297\/363 par|[from] item: Black Sludge
+|turn|23
+|
+|switch|p1a: Chesnaught|Chesnaught, F|380\/380
+|move|p2a: Heracross|Close Combat|p1a: Chesnaught
+|-damage|p1a: Chesnaught|229\/380
+|-unboost|p2a: Heracross|def|1
+|-unboost|p2a: Heracross|spd|1
+|
+|-heal|p1a: Chesnaught|252\/380|[from] item: Leftovers
+|turn|24
+|
+|switch|p2a: Slurpuff|Slurpuff, M|223\/368
+|move|p1a: Chesnaught|Leech Seed|p2a: Slurpuff
+|-start|p2a: Slurpuff|move: Leech Seed
+|
+|-heal|p1a: Chesnaught|275\/380|[from] item: Leftovers
+|-damage|p2a: Slurpuff|177\/368|[from] Leech Seed|[of] p1a: Chesnaught
+|-heal|p1a: Chesnaught|321\/380|[silent]
+|turn|25
+|
+|switch|p2a: Heracross|Heracross, M|187\/302
+|move|p1a: Chesnaught|Seed Bomb|p2a: Heracross
+|-resisted|p2a: Heracross
+|-damage|p2a: Heracross|118\/302
+|
+|-heal|p1a: Chesnaught|344\/380|[from] item: Leftovers
+|-sideend|p2: blackmagicDF|move: Light Screen
+|turn|26
+|
+|move|p2a: Heracross|Close Combat|p1a: Chesnaught
+|-damage|p1a: Chesnaught|194\/380
+|-unboost|p2a: Heracross|def|1
+|-unboost|p2a: Heracross|spd|1
+|move|p1a: Chesnaught|Leech Seed|p2a: Heracross|[miss]
+|-miss|p1a: Chesnaught|p2a: Heracross
+|
+|-heal|p1a: Chesnaught|217\/380|[from] item: Leftovers
+|turn|27
+|
+|move|p1a: Chesnaught|Spiky Shield|p1a: Chesnaught
+|-singleturn|p1a: Chesnaught|move: Protect
+|move|p2a: Heracross|Close Combat|p1a: Chesnaught
+|-activate|p1a: Chesnaught|move: Protect
+|-damage|p2a: Heracross|81\/302|[from] Spiky Shield|[of] p1a: Chesnaught
+|
+|-heal|p1a: Chesnaught|240\/380|[from] item: Leftovers
+|turn|28
+|
+|switch|p1a: Tentacruel|Tentacruel, M|297\/363 par
+|move|p2a: Heracross|Close Combat|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|177\/363 par
+|-unboost|p2a: Heracross|def|1
+|-unboost|p2a: Heracross|spd|1
+|
+|-heal|p1a: Tentacruel|199\/363 par|[from] item: Black Sludge
+|turn|29
+|
+|move|p2a: Heracross|Close Combat|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|89\/363 par
+|-unboost|p2a: Heracross|def|1
+|-unboost|p2a: Heracross|spd|1
+|move|p1a: Tentacruel|Scald|p2a: Heracross
+|-damage|p2a: Heracross|0 fnt
+|faint|p2a: Heracross
+|
+|-heal|p1a: Tentacruel|111\/363 par|[from] item: Black Sludge
+|
+|switch|p2a: Darmanitan|Darmanitan, F|147\/352
+|turn|30
+|
+|move|p2a: Darmanitan|Flare Blitz|p1a: Tentacruel
+|-resisted|p1a: Tentacruel
+|-damage|p1a: Tentacruel|0 fnt
+|-damage|p2a: Darmanitan|110\/352|[from] recoil|[of] p1a: Tentacruel
+|faint|p1a: Tentacruel
+|
+|
+|switch|p1a: Heliolisk|Heliolisk, F|187\/265
+|turn|31
+|
+|switch|p2a: Registeel|Registeel|299\/364
+|move|p1a: Heliolisk|Volt Switch|p2a: Registeel
+|-damage|p2a: Registeel|217\/364
+|-damage|p1a: Heliolisk|161\/265|[from] item: Life Orb
+|
+|switch|p1a: Darmanitan|Darmanitan, M|351\/351
+|
+|turn|32
+|
+|move|p1a: Darmanitan|Superpower|p2a: Registeel
+|-supereffective|p2a: Registeel
+|-damage|p2a: Registeel|21\/364
+|-unboost|p1a: Darmanitan|atk|1
+|-unboost|p1a: Darmanitan|def|1
+|move|p2a: Registeel|Thunder Wave|p1a: Darmanitan
+|-status|p1a: Darmanitan|par
+|
+|turn|33
+|
+|switch|p1a: Umbreon|Umbreon, F|223\/394
+|move|p2a: Registeel|Explosion|p1a: Umbreon
+|-damage|p1a: Umbreon|85\/394
+|faint|p2a: Registeel
+|
+|-heal|p1a: Umbreon|109\/394|[from] item: Leftovers
+|
+|switch|p2a: Darmanitan|Darmanitan, F|110\/352
+|turn|34
+|
+|move|p2a: Darmanitan|U-turn|p1a: Umbreon
+|-supereffective|p1a: Umbreon
+|-damage|p1a: Umbreon|0 fnt
+|faint|p1a: Umbreon
+|
+|switch|p2a: Slurpuff|Slurpuff, M|177\/368
+|
+|
+|switch|p1a: Heliolisk|Heliolisk, F|161\/265
+|turn|35
+|
+|move|p1a: Heliolisk|Volt Switch|p2a: Slurpuff
+|-damage|p2a: Slurpuff|5\/368
+|-damage|p1a: Heliolisk|135\/265|[from] item: Life Orb
+|
+|switch|p1a: Chesnaught|Chesnaught, F|240\/380
+|move|p2a: Slurpuff|Dazzling Gleam|p1a: Chesnaught
+|-supereffective|p1a: Chesnaught
+|-damage|p1a: Chesnaught|0 fnt
+|faint|p1a: Chesnaught
+|
+|
+|switch|p1a: Heliolisk|Heliolisk, F|135\/265
+|turn|36
+|
+|move|p1a: Heliolisk|Thunderbolt|p2a: Slurpuff
+|-damage|p2a: Slurpuff|0 fnt
+|-damage|p1a: Heliolisk|109\/265|[from] item: Life Orb
+|faint|p2a: Slurpuff
+|
+|
+|switch|p2a: Blastoise|Blastoise, M|262\/362
+|-formechange|p2a: Blastoise|Blastoise-Mega
+|turn|37
+|
+|move|p1a: Heliolisk|Thunderbolt|p2a: Blastoise
+|-supereffective|p2a: Blastoise
+|-damage|p2a: Blastoise|20\/362
+|-damage|p1a: Heliolisk|83\/265|[from] item: Life Orb
+|move|p2a: Blastoise|Dragon Pulse|p1a: Heliolisk
+|-damage|p1a: Heliolisk|0 fnt
+|faint|p1a: Heliolisk
+|
+|chat|TheAmphy|wtf!!!
+|
+|switch|p1a: Darmanitan|Darmanitan, M|351\/351 par
+|turn|38
+|
+|move|p2a: Blastoise|Water Pulse|p1a: Darmanitan
+|-supereffective|p1a: Darmanitan
+|-damage|p1a: Darmanitan|0 fnt
+|faint|p1a: Darmanitan
+|
+|win|blackmagicDF
+|raw|Ladder updating...
+|raw|TheAmphy's rating: 1312 &rarr; <strong>1288<\/strong><br \/>(-24 for losing)
+|raw|blackmagicDF's rating: 1246 &rarr; <strong>1276<\/strong><br \/>(+30 for winning)
+|chat|blackmagicDF|gg
+|leave|TheAmphy
+|player|p1

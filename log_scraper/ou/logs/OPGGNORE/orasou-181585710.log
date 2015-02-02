@@ -1,0 +1,316 @@
+|join|OPGGNORE
+|join|notgangar
+|player|p1|OPGGNORE|102
+|player|p2|notgangar|294
+|gametype|singles
+|gen|6
+|tier|ORAS OU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Salamence, M
+|poke|p1|Magneton
+|poke|p1|Wobbuffet, F
+|poke|p1|Excadrill, M
+|poke|p1|Clefable, M
+|poke|p1|Dugtrio, M
+|poke|p2|Salamence, F
+|poke|p2|Rotom-Wash
+|poke|p2|Magnezone
+|poke|p2|Tornadus-Therian, M
+|poke|p2|Ferrothorn, F
+|poke|p2|Latios, M
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Excadrill|Excadrill, M|362\/362
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|-item|p1a: Excadrill|Air Balloon
+|turn|1
+|
+|move|p1a: Excadrill|Earthquake|p2a: Rotom-Wash
+|-immune|p2a: Rotom-Wash|[msg]
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Excadrill|[miss]
+|-miss|p2a: Rotom-Wash|p1a: Excadrill
+|
+|turn|2
+|c|âOPGGNORE|wooooooooooow
+|
+|move|p1a: Excadrill|Stealth Rock|p2a: Rotom-Wash
+|-sidestart|p2: notgangar|move: Stealth Rock
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Excadrill
+|-supereffective|p1a: Excadrill
+|-damage|p1a: Excadrill|0 fnt
+|-enditem|p1a: Excadrill|Air Balloon
+|faint|p1a: Excadrill
+|
+|
+|switch|p1a: Clefable|Clefable, M|394\/394
+|turn|3
+|c|ânotgangar|woow
+|
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Clefable
+|-damage|p1a: Clefable|300\/394
+|
+|switch|p2a: Magnezone|Magnezone|344\/344
+|-damage|p2a: Magnezone|323\/344|[from] Stealth Rock
+|move|p1a: Clefable|Flamethrower|p2a: Magnezone
+|-supereffective|p2a: Magnezone
+|-damage|p2a: Magnezone|167\/344
+|
+|-heal|p1a: Clefable|324\/394|[from] item: Leftovers
+|turn|4
+|
+|switch|p1a: Dugtrio|Dugtrio, M|212\/212
+|move|p2a: Magnezone|Flash Cannon|p1a: Dugtrio
+|-enditem|p1a: Dugtrio|Focus Sash
+|-damage|p1a: Dugtrio|1\/212
+|
+|turn|5
+|
+|move|p1a: Dugtrio|Earthquake|p2a: Magnezone
+|-supereffective|p2a: Magnezone
+|-damage|p2a: Magnezone|0 fnt
+|faint|p2a: Magnezone
+|
+|
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M|300\/300
+|-damage|p2a: Tornadus-Therian|225\/300|[from] Stealth Rock
+|turn|6
+|
+|move|p2a: Tornadus-Therian|Substitute|p2a: Tornadus-Therian
+|-start|p2a: Tornadus-Therian|Substitute
+|-damage|p2a: Tornadus-Therian|150\/300
+|move|p1a: Dugtrio|Stone Edge|p2a: Tornadus-Therian
+|-supereffective|p2a: Tornadus-Therian
+|-end|p2a: Tornadus-Therian|Substitute
+|
+|turn|7
+|
+|move|p2a: Tornadus-Therian|Acrobatics|p1a: Dugtrio
+|-damage|p1a: Dugtrio|0 fnt
+|faint|p1a: Dugtrio
+|
+|
+|switch|p1a: Wobbuffet|Wobbuffet, F|584\/584
+|turn|8
+|
+|move|p2a: Tornadus-Therian|Substitute|p2a: Tornadus-Therian
+|-start|p2a: Tornadus-Therian|Substitute
+|-damage|p2a: Tornadus-Therian|75\/300
+|move|p1a: Wobbuffet|Encore|p2a: Tornadus-Therian
+|-start|p2a: Tornadus-Therian|Encore
+|
+|turn|9
+|
+|switch|p1a: Salamence|Salamence, M|387\/387
+|-activate|p2a: Tornadus-Therian|Substitute|ability: Intimidate|[of] p1a: Salamence
+|move|p2a: Tornadus-Therian|Substitute|p2a: Tornadus-Therian
+|-fail|p2a: Tornadus-Therian|move: Substitute
+|
+|turn|10
+|
+|switch|p2a: Ferrothorn|Ferrothorn, F|352\/352
+|-damage|p2a: Ferrothorn|330\/352|[from] Stealth Rock
+|move|p1a: Salamence|Dragon Dance|p1a: Salamence
+|-boost|p1a: Salamence|atk|1
+|-boost|p1a: Salamence|spe|1
+|
+|turn|11
+|
+|switch|p1a: Magneton|Magneton|242\/242
+|move|p2a: Ferrothorn|Gyro Ball|p1a: Magneton
+|-resisted|p1a: Magneton
+|-damage|p1a: Magneton|202\/242
+|
+|turn|12
+|
+|move|p2a: Ferrothorn|Protect|p2a: Ferrothorn
+|-singleturn|p2a: Ferrothorn|Protect
+|move|p1a: Magneton|Hidden Power|p2a: Ferrothorn
+|-activate|p2a: Ferrothorn|Protect
+|
+|turn|13
+|
+|move|p1a: Magneton|Hidden Power|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|86\/352
+|move|p2a: Ferrothorn|Stealth Rock|p1a: Magneton
+|-sidestart|p1: OPGGNORE|move: Stealth Rock
+|
+|turn|14
+|
+|move|p2a: Ferrothorn|Protect|p2a: Ferrothorn
+|-singleturn|p2a: Ferrothorn|Protect
+|move|p1a: Magneton|Hidden Power|p2a: Ferrothorn
+|-activate|p2a: Ferrothorn|Protect
+|
+|turn|15
+|
+|move|p1a: Magneton|Hidden Power|p2a: Ferrothorn
+|-supereffective|p2a: Ferrothorn
+|-damage|p2a: Ferrothorn|0 fnt
+|faint|p2a: Ferrothorn
+|
+|
+|switch|p2a: Salamence|Salamence, F|331\/331
+|-damage|p2a: Salamence|249\/331|[from] Stealth Rock
+|-ability|p2a: Salamence|Intimidate|[of] p1a: Magneton
+|-unboost|p1a: Magneton|atk|1
+|turn|16
+|
+|switch|p1a: Clefable|Clefable, M|324\/394
+|detailschange|p2a: Salamence|Salamence-Mega, F
+|message|Salamence has Mega Evolved into Mega Salamence!
+|move|p2a: Salamence|Earthquake|p1a: Clefable
+|-crit|p1a: Clefable
+|-damage|p1a: Clefable|133\/394
+|
+|-heal|p1a: Clefable|157\/394|[from] item: Leftovers
+|turn|17
+|c|âOPGGNORE|nice crit
+|
+|move|p2a: Salamence|Return|p1a: Clefable
+|-damage|p1a: Clefable|0 fnt
+|faint|p1a: Clefable
+|
+|
+|switch|p1a: Magneton|Magneton|202\/242
+|-damage|p1a: Magneton|187\/242|[from] Stealth Rock
+|turn|18
+|c|ânotgangar|doubt it mattered with aerate return
+|
+|move|p1a: Magneton|Volt Switch|p2a: Salamence
+|-damage|p2a: Salamence|131\/331
+|c|âOPGGNORE|mebe
+|
+|switch|p1a: Wobbuffet|Wobbuffet, F|584\/584
+|-damage|p1a: Wobbuffet|511\/584|[from] Stealth Rock
+|move|p2a: Salamence|Earthquake|p1a: Wobbuffet
+|-damage|p1a: Wobbuffet|344\/584
+|
+|-heal|p1a: Wobbuffet|380\/584|[from] item: Leftovers
+|turn|19
+|
+|move|p2a: Salamence|Return|p1a: Wobbuffet
+|-crit|p1a: Wobbuffet
+|-damage|p1a: Wobbuffet|0 fnt
+|faint|p1a: Wobbuffet
+|
+|c|âOPGGNORE|ok
+|c|âOPGGNORE|that mattered
+|
+|switch|p1a: Magneton|Magneton|187\/242
+|-damage|p1a: Magneton|172\/242|[from] Stealth Rock
+|turn|20
+|c|ânotgangar|soz
+|
+|move|p1a: Magneton|Thunderbolt|p2a: Salamence
+|-damage|p2a: Salamence|0 fnt
+|faint|p2a: Salamence
+|
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|304\/304
+|-damage|p2a: Rotom-Wash|266\/304|[from] Stealth Rock
+|turn|21
+|
+|move|p1a: Magneton|Thunderbolt|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|167\/304
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Magneton
+|-status|p1a: Magneton|brn
+|
+|-heal|p2a: Rotom-Wash|186\/304|[from] item: Leftovers
+|-damage|p1a: Magneton|142\/242 brn|[from] brn
+|turn|22
+|
+|move|p1a: Magneton|Thunderbolt|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|75\/304
+|move|p2a: Rotom-Wash|Hydro Pump|p1a: Magneton
+|-damage|p1a: Magneton|0 fnt
+|faint|p1a: Magneton
+|
+|-heal|p2a: Rotom-Wash|94\/304|[from] item: Leftovers
+|
+|switch|p1a: Salamence|Salamence, M|387\/387
+|-damage|p1a: Salamence|291\/387|[from] Stealth Rock
+|-ability|p1a: Salamence|Intimidate|[of] p2a: Rotom-Wash
+|-unboost|p2a: Rotom-Wash|atk|1
+|turn|23
+|
+|detailschange|p1a: Salamence|Salamence-Mega, M
+|message|Salamence has Mega Evolved into Mega Salamence!
+|move|p1a: Salamence|Substitute|p1a: Salamence
+|-start|p1a: Salamence|Substitute
+|-damage|p1a: Salamence|195\/387
+|move|p2a: Rotom-Wash|Will-O-Wisp|p1a: Salamence
+|
+|-heal|p2a: Rotom-Wash|113\/304|[from] item: Leftovers
+|turn|24
+|
+|move|p1a: Salamence|Roost|p1a: Salamence
+|-heal|p1a: Salamence|387\/387
+|move|p2a: Rotom-Wash|Volt Switch|p1a: Salamence
+|-crit|p1a: Salamence
+|-resisted|p1a: Salamence
+|-activate|p1a: Salamence|Substitute|[damage]
+|
+|switch|p2a: Tornadus-Therian|Tornadus-Therian, M|175\/300
+|-damage|p2a: Tornadus-Therian|100\/300|[from] Stealth Rock
+|
+|turn|25
+|
+|move|p2a: Tornadus-Therian|Acrobatics|p1a: Salamence
+|-end|p1a: Salamence|Substitute
+|move|p1a: Salamence|Dragon Dance|p1a: Salamence
+|-boost|p1a: Salamence|atk|1
+|-boost|p1a: Salamence|spe|1
+|
+|turn|26
+|
+|move|p1a: Salamence|Dragon Dance|p1a: Salamence
+|-boost|p1a: Salamence|atk|1
+|-boost|p1a: Salamence|spe|1
+|move|p2a: Tornadus-Therian|Acrobatics|p1a: Salamence
+|-damage|p1a: Salamence|263\/387
+|
+|turn|27
+|
+|move|p1a: Salamence|Return|p2a: Tornadus-Therian
+|-crit|p2a: Tornadus-Therian
+|-damage|p2a: Tornadus-Therian|0 fnt
+|faint|p2a: Tornadus-Therian
+|
+|
+|switch|p2a: Latios|Latios, M|301\/301
+|-damage|p2a: Latios|264\/301|[from] Stealth Rock
+|turn|28
+|
+|move|p1a: Salamence|Return|p2a: Latios
+|-crit|p2a: Latios
+|-damage|p2a: Latios|0 fnt
+|faint|p2a: Latios
+|
+|
+|switch|p2a: Rotom-Wash|Rotom-Wash|113\/304
+|-damage|p2a: Rotom-Wash|75\/304|[from] Stealth Rock
+|turn|29
+|c|ânotgangar|gg
+|c|âOPGGNORE|gg
+|
+|move|p1a: Salamence|Return|p2a: Rotom-Wash
+|-resisted|p2a: Rotom-Wash
+|-damage|p2a: Rotom-Wash|0 fnt
+|faint|p2a: Rotom-Wash
+|
+|win|OPGGNORE
+|raw|Ladder updating...
+|raw|OPGGNORE's rating: 1413 &rarr; <strong>1424<\/strong><br \/>(+11 for winning)
+|raw|notgangar's rating: 1249 &rarr; <strong>1235<\/strong><br \/>(-14 for losing)

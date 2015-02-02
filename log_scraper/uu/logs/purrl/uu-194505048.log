@@ -1,0 +1,406 @@
+|join|purrl
+|join|aqbf
+|player|p1|purrl|8
+|player|p2|aqbf|4
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each PokÃ©mon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Sharpedo, M
+|poke|p1|Entei, shiny
+|poke|p1|Jirachi
+|poke|p1|Crobat, F, shiny
+|poke|p1|Swampert, M
+|poke|p1|Toxicroak, M
+|poke|p2|Toxicroak, F
+|poke|p2|Chandelure, F
+|poke|p2|Aerodactyl, F, shiny
+|poke|p2|Krookodile, F
+|poke|p2|Swampert, F
+|poke|p2|Whimsicott, F
+|rule|Swagger Clause: Swagger is banned
+|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
+|teampreview
+|
+|start
+|switch|p1a: Crobat|Crobat, F, shiny|373\/373
+|switch|p2a: Whimsicott|Whimsicott, F|261\/261
+|turn|1
+|
+|switch|p2a: Ridley|Aerodactyl, F, shiny|331\/331
+|-ability|p2a: Ridley|Pressure
+|move|p1a: Crobat|Toxic|p2a: Ridley
+|-status|p2a: Ridley|tox
+|
+|-damage|p2a: Ridley|311\/331 tox|[from] psn
+|turn|2
+|
+|switch|p1a: Swampert|Swampert, M|401\/401
+|detailschange|p2a: Ridley|Aerodactyl-Mega, F, shiny
+|message|Aerodactyl has Mega Evolved into Mega Aerodactyl!
+|move|p2a: Ridley|Aqua Tail|p1a: Swampert
+|-damage|p1a: Swampert|285\/401
+|
+|-heal|p1a: Swampert|310\/401|[from] item: Leftovers
+|-damage|p2a: Ridley|271\/331 tox|[from] psn
+|turn|3
+|
+|switch|p2a: Whimsicott|Whimsicott, F|261\/261
+|move|p1a: Swampert|Stealth Rock|p2a: Whimsicott
+|-sidestart|p2: aqbf|move: Stealth Rock
+|
+|-heal|p1a: Swampert|335\/401|[from] item: Leftovers
+|turn|4
+|
+|switch|p2a: Kraid|Swampert, F|404\/404
+|-damage|p2a: Kraid|379\/404|[from] Stealth Rock
+|switch|p1a: Crobat|Crobat, F, shiny|373\/373
+|
+|-heal|p2a: Kraid|404\/404|[from] item: Leftovers
+|turn|5
+|
+|move|p1a: Crobat|Toxic|p2a: Kraid
+|-status|p2a: Kraid|tox
+|move|p2a: Kraid|Stealth Rock|p1a: Crobat
+|-sidestart|p1: purrl|move: Stealth Rock
+|
+|-damage|p2a: Kraid|379\/404 tox|[from] psn
+|turn|6
+|
+|move|p1a: Crobat|Defog|p2a: Kraid
+|-unboost|p2a: Kraid|evasion|1
+|-sideend|p2: aqbf|Stealth Rock|[from] move: Defog|[of] p2a: Kraid
+|-sideend|p1: purrl|Stealth Rock|[from] move: Defog|[of] p1a: Crobat
+|move|p2a: Kraid|Scald|p1a: Crobat
+|-damage|p1a: Crobat|270\/373
+|-status|p1a: Crobat|brn
+|
+|-heal|p1a: Crobat|293\/373 brn|[from] item: Black Sludge
+|-heal|p2a: Kraid|404\/404 tox|[from] item: Leftovers
+|-damage|p1a: Crobat|247\/373 brn|[from] brn
+|-damage|p2a: Kraid|354\/404 tox|[from] psn
+|turn|7
+|
+|switch|p2a: Crocomire|Krookodile, F|332\/332
+|move|p1a: Crobat|Roost|p1a: Crobat
+|-heal|p1a: Crobat|373\/373 brn
+|
+|-damage|p1a: Crobat|327\/373 brn|[from] brn
+|turn|8
+|
+|move|p2a: Crocomire|Knock Off|p1a: Crobat
+|-damage|p1a: Crobat|117\/373 brn
+|-enditem|p1a: Crobat|Black Sludge|[from] move: Knock Off|[of] p2a: Crocomire
+|move|p1a: Crobat|Toxic|p2a: Crocomire
+|-status|p2a: Crocomire|tox
+|
+|-damage|p2a: Crocomire|312\/332 tox|[from] psn
+|-damage|p1a: Crobat|71\/373 brn|[from] brn
+|turn|9
+|
+|switch|p1a: Swampert|Swampert, M|335\/401
+|move|p2a: Crocomire|Knock Off|p1a: Swampert
+|-damage|p1a: Swampert|212\/401
+|-enditem|p1a: Swampert|Leftovers|[from] move: Knock Off|[of] p2a: Crocomire
+|
+|-damage|p2a: Crocomire|272\/332 tox|[from] psn
+|turn|10
+|
+|switch|p2a: Phantoon|Chandelure, F|289\/289
+|switch|p1a: Crobat|Crobat, F, shiny|71\/373 brn
+|
+|-damage|p1a: Crobat|25\/373 brn|[from] brn
+|turn|11
+|
+|move|p1a: Crobat|Toxic|p2a: Phantoon
+|-status|p2a: Phantoon|tox
+|move|p2a: Phantoon|Substitute|p2a: Phantoon
+|-start|p2a: Phantoon|Substitute
+|-damage|p2a: Phantoon|217\/289 tox
+|
+|-heal|p2a: Phantoon|235\/289 tox|[from] item: Leftovers
+|-damage|p1a: Crobat|0 fnt|[from] brn
+|-damage|p2a: Phantoon|217\/289 tox|[from] psn
+|faint|p1a: Crobat
+|
+|switch|p1a: Sharpedo|Sharpedo, M|281\/281
+|turn|12
+|
+|move|p1a: Sharpedo|Crunch|p2a: Phantoon
+|-supereffective|p2a: Phantoon
+|-end|p2a: Phantoon|Substitute
+|move|p2a: Phantoon|Flamethrower|p1a: Sharpedo
+|-resisted|p1a: Sharpedo
+|-damage|p1a: Sharpedo|117\/281
+|
+|-heal|p2a: Phantoon|235\/289 tox|[from] item: Leftovers
+|-damage|p2a: Phantoon|199\/289 tox|[from] psn
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|13
+|
+|switch|p2a: Toxicroak|Toxicroak, F|328\/328
+|move|p1a: Sharpedo|Ice Fang|p2a: Toxicroak
+|-damage|p2a: Toxicroak|223\/328
+|
+|-boost|p1a: Sharpedo|spe|1|[from] ability: Speed Boost
+|turn|14
+|
+|switch|p1a: Entei|Entei, shiny|371\/371
+|-ability|p1a: Entei|Pressure
+|move|p2a: Toxicroak|Drain Punch|p1a: Entei
+|-damage|p1a: Entei|172\/371
+|-heal|p2a: Toxicroak|323\/328|[from] drain|[of] p1a: Entei
+|-damage|p2a: Toxicroak|291\/328|[from] item: Life Orb
+|
+|turn|15
+|
+|switch|p2a: Phantoon|Chandelure, F|199\/289 tox
+|move|p1a: Entei|Sacred Fire|p2a: Phantoon
+|-start|p2a: Phantoon|ability: Flash Fire
+|
+|-heal|p2a: Phantoon|217\/289 tox|[from] item: Leftovers
+|-damage|p2a: Phantoon|199\/289 tox|[from] psn
+|turn|16
+|
+|switch|p1a: Swampert|Swampert, M|212\/401
+|switch|p2a: Kraid|Swampert, F|354\/404 tox
+|
+|-heal|p2a: Kraid|379\/404 tox|[from] item: Leftovers
+|-damage|p2a: Kraid|354\/404 tox|[from] psn
+|turn|17
+|
+|switch|p2a: Whimsicott|Whimsicott, F|261\/261
+|move|p1a: Swampert|Stealth Rock|p2a: Whimsicott
+|-sidestart|p2: aqbf|move: Stealth Rock
+|
+|turn|18
+|join|i ran away
+|
+|switch|p1a: Entei|Entei, shiny|172\/371
+|-ability|p1a: Entei|Pressure
+|move|p2a: Whimsicott|Giga Drain|p1a: Entei
+|-resisted|p1a: Entei
+|-damage|p1a: Entei|94\/371
+|-damage|p2a: Whimsicott|235\/261|[from] item: Life Orb
+|
+|turn|19
+|
+|switch|p2a: Kraid|Swampert, F|354\/404 tox
+|-damage|p2a: Kraid|329\/404 tox|[from] Stealth Rock
+|move|p1a: Entei|Stone Edge|p2a: Kraid
+|-resisted|p2a: Kraid
+|-damage|p2a: Kraid|264\/404 tox
+|
+|-heal|p2a: Kraid|289\/404 tox|[from] item: Leftovers
+|-damage|p2a: Kraid|264\/404 tox|[from] psn
+|turn|20
+|
+|switch|p1a: Sharpedo|Sharpedo, M|117\/281
+|move|p2a: Kraid|Earthquake|p1a: Sharpedo
+|-damage|p1a: Sharpedo|0 fnt
+|faint|p1a: Sharpedo
+|
+|-heal|p2a: Kraid|289\/404 tox|[from] item: Leftovers
+|-damage|p2a: Kraid|239\/404 tox|[from] psn
+|
+|switch|p1a: Swampert|Swampert, M|212\/401
+|turn|21
+|
+|switch|p2a: Ridley|Aerodactyl-Mega, F, shiny|271\/331 tox
+|-damage|p2a: Ridley|189\/331 tox|[from] Stealth Rock
+|move|p1a: Swampert|Earthquake|p2a: Ridley
+|-immune|p2a: Ridley|[msg]
+|
+|-damage|p2a: Ridley|169\/331 tox|[from] psn
+|turn|22
+|
+|move|p2a: Ridley|Defog|p1a: Swampert
+|-unboost|p1a: Swampert|evasion|1
+|-sideend|p2: aqbf|Stealth Rock|[from] move: Defog|[of] p2a: Ridley
+|move|p1a: Swampert|Scald|p2a: Ridley
+|-supereffective|p2a: Ridley
+|-damage|p2a: Ridley|0 fnt
+|faint|p2a: Ridley
+|
+|
+|switch|p2a: Whimsicott|Whimsicott, F|235\/261
+|turn|23
+|
+|switch|p1a: Jirachi|Jirachi|341\/341
+|move|p2a: Whimsicott|Giga Drain|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|283\/341
+|-heal|p2a: Whimsicott|261\/261|[from] drain|[of] p1a: Jirachi
+|-damage|p2a: Whimsicott|235\/261|[from] item: Life Orb
+|
+|turn|24
+|
+|switch|p2a: Kraid|Swampert, F|239\/404 tox
+|move|p1a: Jirachi|U-turn|p2a: Kraid
+|-damage|p2a: Kraid|184\/404 tox
+|
+|switch|p1a: Swampert|Swampert, M|212\/401
+|
+|-heal|p2a: Kraid|209\/404 tox|[from] item: Leftovers
+|-damage|p2a: Kraid|184\/404 tox|[from] psn
+|turn|25
+|
+|move|p2a: Kraid|Scald|p1a: Swampert
+|-damage|p1a: Swampert|116\/401
+|-status|p1a: Swampert|brn
+|move|p1a: Swampert|Stealth Rock|p2a: Kraid
+|-sidestart|p2: aqbf|move: Stealth Rock
+|
+|-heal|p2a: Kraid|209\/404 tox|[from] item: Leftovers
+|-damage|p1a: Swampert|66\/401 brn|[from] brn
+|-damage|p2a: Kraid|159\/404 tox|[from] psn
+|turn|26
+|
+|move|p1a: Swampert|Scald|p2a: Kraid
+|-damage|p2a: Kraid|65\/404 tox
+|move|p2a: Kraid|Stealth Rock|p1a: Swampert
+|-sidestart|p1: purrl|move: Stealth Rock
+|
+|-heal|p2a: Kraid|90\/404 tox|[from] item: Leftovers
+|-damage|p1a: Swampert|16\/401 brn|[from] brn
+|-damage|p2a: Kraid|15\/404 tox|[from] psn
+|turn|27
+|
+|move|p2a: Kraid|Earthquake|p1a: Swampert
+|-damage|p1a: Swampert|0 fnt
+|faint|p1a: Swampert
+|
+|-heal|p2a: Kraid|40\/404 tox|[from] item: Leftovers
+|-damage|p2a: Kraid|0 fnt|[from] psn
+|faint|p2a: Kraid
+|
+|switch|p1a: Jirachi|Jirachi|283\/341
+|switch|p2a: Crocomire|Krookodile, F|272\/332 tox
+|-damage|p1a: Jirachi|262\/341|[from] Stealth Rock
+|-damage|p2a: Crocomire|252\/332 tox|[from] Stealth Rock
+|turn|28
+|
+|move|p1a: Jirachi|U-turn|p2a: Crocomire
+|-supereffective|p2a: Crocomire
+|-damage|p2a: Crocomire|72\/332 tox
+|
+|switch|p1a: Entei|Entei, shiny|94\/371
+|-damage|p1a: Entei|2\/371|[from] Stealth Rock
+|-ability|p1a: Entei|Pressure
+|move|p2a: Crocomire|Earthquake|p1a: Entei
+|-supereffective|p1a: Entei
+|-damage|p1a: Entei|0 fnt
+|faint|p1a: Entei
+|-boost|p2a: Crocomire|atk|1|[from] ability: Moxie
+|
+|-damage|p2a: Crocomire|52\/332 tox|[from] psn
+|
+|switch|p1a: Toxicroak|Toxicroak, M|307\/307
+|-damage|p1a: Toxicroak|288\/307|[from] Stealth Rock
+|turn|29
+|
+|move|p1a: Toxicroak|Sucker Punch|p2a: Crocomire
+|-resisted|p2a: Crocomire
+|-damage|p2a: Crocomire|0 fnt
+|-damage|p1a: Toxicroak|258\/307|[from] item: Life Orb
+|faint|p2a: Crocomire
+|
+|
+|switch|p2a: Whimsicott|Whimsicott, F|235\/261
+|-damage|p2a: Whimsicott|203\/261|[from] Stealth Rock
+|turn|30
+|
+|switch|p1a: Jirachi|Jirachi|262\/341
+|-damage|p1a: Jirachi|241\/341|[from] Stealth Rock
+|move|p2a: Whimsicott|Moonblast|p1a: Jirachi
+|-resisted|p1a: Jirachi
+|-damage|p1a: Jirachi|162\/341
+|-damage|p2a: Whimsicott|177\/261|[from] item: Life Orb
+|
+|turn|31
+|
+|move|p2a: Whimsicott|Tailwind|p2a: Whimsicott
+|-sidestart|p2: aqbf|move: Tailwind
+|move|p1a: Jirachi|Iron Head|p2a: Whimsicott
+|-supereffective|p2a: Whimsicott
+|-damage|p2a: Whimsicott|0 fnt
+|faint|p2a: Whimsicott
+|
+|
+|switch|p2a: Phantoon|Chandelure, F|199\/289 tox
+|-damage|p2a: Phantoon|127\/289 tox|[from] Stealth Rock
+|turn|32
+|
+|move|p2a: Phantoon|Shadow Ball|p1a: Jirachi
+|-crit|p1a: Jirachi
+|-supereffective|p1a: Jirachi
+|-damage|p1a: Jirachi|0 fnt
+|faint|p1a: Jirachi
+|
+|-heal|p2a: Phantoon|145\/289 tox|[from] item: Leftovers
+|-damage|p2a: Phantoon|127\/289 tox|[from] psn
+|
+|switch|p1a: Toxicroak|Toxicroak, M|258\/307
+|-damage|p1a: Toxicroak|239\/307|[from] Stealth Rock
+|turn|33
+|
+|move|p2a: Phantoon|Substitute|p2a: Phantoon
+|-start|p2a: Phantoon|Substitute
+|-damage|p2a: Phantoon|55\/289 tox
+|move|p1a: Toxicroak|Gunk Shot|p2a: Phantoon
+|-resisted|p2a: Phantoon
+|-end|p2a: Phantoon|Substitute
+|-damage|p1a: Toxicroak|209\/307|[from] item: Life Orb
+|
+|-heal|p2a: Phantoon|73\/289 tox|[from] item: Leftovers
+|-damage|p2a: Phantoon|37\/289 tox|[from] psn
+|turn|34
+|
+|move|p1a: Toxicroak|Sucker Punch|p2a: Phantoon
+|-crit|p2a: Phantoon
+|-supereffective|p2a: Phantoon
+|-damage|p2a: Phantoon|0 fnt
+|-damage|p1a: Toxicroak|179\/307|[from] item: Life Orb
+|faint|p2a: Phantoon
+|
+|-sideend|p2: aqbf|move: Tailwind
+|
+|switch|p2a: Toxicroak|Toxicroak, F|291\/328
+|-damage|p2a: Toxicroak|271\/328|[from] Stealth Rock
+|turn|35
+|
+|move|p1a: Toxicroak|Drain Punch|p2a: Toxicroak
+|-resisted|p2a: Toxicroak
+|-damage|p2a: Toxicroak|158\/328
+|-heal|p1a: Toxicroak|236\/307|[from] drain|[of] p2a: Toxicroak
+|-damage|p1a: Toxicroak|206\/307|[from] item: Life Orb
+|move|p2a: Toxicroak|Gunk Shot|p1a: Toxicroak|[miss]
+|-miss|p2a: Toxicroak|p1a: Toxicroak
+|
+|turn|36
+|c|âaqbf|ugh
+|c|âpurrl|dw i'll miss too
+|c|âaqbf|you won't
+|
+|move|p1a: Toxicroak|Gunk Shot|p2a: Toxicroak
+|-resisted|p2a: Toxicroak
+|-damage|p2a: Toxicroak|0 fnt
+|-damage|p1a: Toxicroak|176\/307|[from] item: Life Orb
+|faint|p2a: Toxicroak
+|
+|win|purrl
+|raw|Ladder updating...
+|raw|purrl's rating: 1670 &rarr; <strong>1677<\/strong><br \/>(+7 for winning)
+|raw|aqbf's rating: 1393 &rarr; <strong>1386<\/strong><br \/>(-7 for losing)
+|c|âpurrl|gg sorreh
+|leave|purrl
+|player|p1
+|c|âaqbf|gg

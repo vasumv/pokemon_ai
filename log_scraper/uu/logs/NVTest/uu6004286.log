@@ -1,0 +1,293 @@
+|join|NVTest
+|join|dkajfsddsafk
+|player|p1|NVTest|170
+|player|p2|dkajfsddsafk|2
+|gametype|singles
+|tier|UU
+|rated
+|rule|Sleep Clause
+|rule|Species Clause
+|rule|OHKO Clause
+|rule|Moody Clause
+|rule|Evasion Clause
+|clearpoke
+|poke|p1|Roserade, F
+|poke|p1|Rhyperior, M
+|poke|p1|Zapdos
+|poke|p1|Blastoise, M
+|poke|p1|Weavile, F
+|poke|p1|Darmanitan, F
+|poke|p2|Gligar, F
+|poke|p2|Snorlax, M
+|poke|p2|Heracross, M
+|poke|p2|Victini
+|poke|p2|Shaymin
+|poke|p2|Kingdra, F
+|teampreview
+|callback|decision
+|
+|start
+|switch|p1a: Blastoise|Blastoise, M| (100\/100)
+|switch|p2a: Victini|Victini| (100\/100)
+|turn|1
+|callback|decision
+|
+|move|p2a: Victini|U-turn|p1a: Blastoise
+|-damage|p1a: Blastoise|15 (85\/100)
+|callback|decision
+|
+|switch|p2a: Shaymin|Shaymin| (100\/100)
+|move|p1a: Blastoise|Scald|p2a: Shaymin
+|-resisted|p2a: Shaymin
+|-damage|p2a: Shaymin|13 (87\/100)
+|-status|p2a: Shaymin|brn
+|
+|-heal|p1a: Blastoise|6 (91\/100)|[from] item: Leftovers
+|-damage|p2a: Shaymin|12 (75\/100 brn)|[from] brn
+|turn|2
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, F| (100\/100)
+|move|p2a: Shaymin|Hidden Power|p1a: Roserade
+|-supereffective|p1a: Roserade
+|-damage|p1a: Roserade|58 (42\/100)
+|
+|-damage|p2a: Shaymin|12 (63\/100 brn)|[from] brn
+|turn|3
+|callback|decision
+|
+|switch|p1a: Darmanitan|Darmanitan, F| (100\/100)
+|move|p2a: Shaymin|Hidden Power|p1a: Darmanitan
+|-crit|p1a: Darmanitan
+|-resisted|p1a: Darmanitan
+|-damage|p1a: Darmanitan|30 (70\/100)
+|
+|-damage|p2a: Shaymin|12 (50\/100 brn)|[from] brn
+|turn|4
+|callback|decision
+|
+|switch|p2a: Gligar|Gligar, F| (100\/100)
+|move|p1a: Darmanitan|U-turn|p2a: Gligar
+|-resisted|p2a: Gligar
+|-damage|p2a: Gligar|7 (93\/100)
+|callback|decision
+|
+|switch|p1a: Roserade|Roserade, F| (42\/100)
+|
+|turn|5
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, M| (100\/100)
+|move|p1a: Roserade|Synthesis|p1a: Roserade
+|-heal|p1a: Roserade|50 (92\/100)
+|
+|turn|6
+|callback|decision
+|
+|switch|p1a: Rhyperior|Rhyperior, M| (100\/100)
+|move|p2a: Snorlax|Body Slam|p1a: Rhyperior
+|-resisted|p1a: Rhyperior
+|-damage|p1a: Rhyperior|11 (89\/100)
+|
+|-heal|p1a: Rhyperior|6 (95\/100)|[from] item: Leftovers
+|turn|7
+|callback|decision
+|
+|switch|p2a: Gligar|Gligar, F| (93\/100)
+|move|p1a: Rhyperior|Stealth Rock|p2a: Gligar
+|-sidestart|p2: dkajfsddsafk|move: Stealth Rock
+|
+|-heal|p1a: Rhyperior|5 (100\/100)|[from] item: Leftovers
+|turn|8
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M| (91\/100)
+|move|p2a: Gligar|Stealth Rock|p1a: Blastoise
+|-sidestart|p1: NVTest|move: Stealth Rock
+|
+|-heal|p1a: Blastoise|6 (98\/100)|[from] item: Leftovers
+|turn|9
+|callback|decision
+|
+|move|p2a: Gligar|Knock Off|p1a: Blastoise
+|-damage|p1a: Blastoise|2 (95\/100)
+|-enditem|p1a: Blastoise|Leftovers|[from] move: Knock Off|[of] p2a: Gligar
+|move|p1a: Blastoise|Ice Beam|p2a: Gligar
+|-supereffective|p2a: Gligar
+|-damage|p2a: Gligar|58 (35\/100)
+|
+|turn|10
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, M| (100\/100)
+|-damage|p2a: Snorlax|12 (88\/100)|[from] Stealth Rock
+|move|p1a: Blastoise|Rapid Spin|p2a: Snorlax
+|-damage|p2a: Snorlax|3 (85\/100)
+|-sideend|p1: NVTest|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Blastoise
+|
+|-heal|p2a: Snorlax|6 (91\/100)|[from] item: Leftovers
+|turn|11
+|callback|decision
+|
+|move|p2a: Snorlax|Body Slam|p1a: Blastoise
+|-damage|p1a: Blastoise|20 (75\/100)
+|move|p1a: Blastoise|Roar|p2a: Snorlax
+|drag|p2a: Victini|Victini| (100\/100)
+|-damage|p2a: Victini|25 (75\/100)|[from] Stealth Rock
+|
+|turn|12
+|callback|decision
+|
+|move|p2a: Victini|U-turn|p1a: Blastoise
+|-damage|p1a: Blastoise|15 (60\/100)
+|callback|decision
+|
+|switch|p2a: Shaymin|Shaymin| (50\/100)
+|-damage|p2a: Shaymin|12 (38\/100)|[from] Stealth Rock
+|move|p1a: Blastoise|Scald|p2a: Shaymin
+|-resisted|p2a: Shaymin
+|-damage|p2a: Shaymin|12 (26\/100)
+|
+|turn|13
+|callback|decision
+|
+|switch|p1a: Zapdos|Zapdos| (100\/100)
+|-ability|p1a: Zapdos|Pressure
+|move|p2a: Shaymin|Rest|p2a: Shaymin
+|-status|p2a: Shaymin|slp
+|-heal|p2a: Shaymin|74 (100\/100 slp)|[silent]
+|-status|p2a: Shaymin|slp|[from] move: Rest
+|
+|turn|14
+|callback|decision
+|
+|switch|p2a: Snorlax|Snorlax, M| (91\/100)
+|-damage|p2a: Snorlax|12 (78\/100)|[from] Stealth Rock
+|switch|p1a: Weavile|Weavile, F| (100\/100)
+|-ability|p1a: Weavile|Pressure
+|
+|-heal|p2a: Snorlax|6 (85\/100)|[from] item: Leftovers
+|turn|15
+|callback|decision
+|
+|move|p1a: Weavile|Low Kick|p2a: Snorlax
+|-supereffective|p2a: Snorlax
+|-damage|p2a: Snorlax|83 (2\/100)
+|-damage|p1a: Weavile|10 (90\/100)|[from] item: Life Orb
+|move|p2a: Snorlax|Body Slam|p1a: Weavile
+|-damage|p1a: Weavile|57 (33\/100)
+|
+|-heal|p2a: Snorlax|6 (8\/100)|[from] item: Leftovers
+|turn|16
+|callback|decision
+|
+|move|p1a: Weavile|Pursuit|p2a: Snorlax
+|-damage|p2a: Snorlax|8 (0\/100 fnt)
+|-damage|p1a: Weavile|10 (23\/100)|[from] item: Life Orb
+|faint|p2a: Snorlax
+|
+|callback|decision
+|callback|decision
+|
+|switch|p2a: Heracross|Heracross, M| (100\/100)
+|-damage|p2a: Heracross|12 (88\/100)|[from] Stealth Rock
+|turn|17
+|callback|decision
+|
+|switch|p1a: Blastoise|Blastoise, M| (60\/100)
+|move|p2a: Heracross|Substitute|p2a: Heracross
+|-start|p2a: Heracross|Substitute
+|-damage|p2a: Heracross|25 (63\/100)
+|
+|turn|18
+|callback|decision
+|
+|move|p2a: Heracross|Close Combat|p1a: Blastoise
+|-damage|p1a: Blastoise|43 (17\/100)
+|-unboost|p2a: Heracross|def|1
+|-unboost|p2a: Heracross|spd|1
+|move|p1a: Blastoise|Roar|p2a: Heracross
+|drag|p2a: Shaymin|Shaymin| (100\/100)
+|-damage|p2a: Shaymin|12 (88\/100)|[from] Stealth Rock
+|
+|turn|19
+|callback|decision
+|
+|move|p2a: Shaymin|Seed Flare|p1a: Blastoise
+|-supereffective|p1a: Blastoise
+|-damage|p1a: Blastoise|17 (0\/100 fnt)
+|faint|p1a: Blastoise
+|
+|callback|decision
+|callback|decision
+|
+|switch|p1a: Zapdos|Zapdos| (100\/100)
+|-ability|p1a: Zapdos|Pressure
+|turn|20
+|callback|decision
+|
+|move|p2a: Shaymin|Hidden Power|p1a: Zapdos
+|-supereffective|p1a: Zapdos
+|-damage|p1a: Zapdos|47 (53\/100)
+|move|p1a: Zapdos|Agility|p1a: Zapdos
+|-boost|p1a: Zapdos|spe|2
+|
+|turn|21
+|callback|decision
+|
+|move|p1a: Zapdos|Hidden Power|p2a: Shaymin
+|-supereffective|p2a: Shaymin
+|-damage|p2a: Shaymin|88 (0\/100 fnt)
+|-damage|p1a: Zapdos|10 (43\/100)|[from] item: Life Orb
+|faint|p2a: Shaymin
+|
+|callback|decision
+|callback|decision
+|
+|switch|p2a: Kingdra|Kingdra, F| (100\/100)
+|-damage|p2a: Kingdra|12 (88\/100)|[from] Stealth Rock
+|turn|22
+|callback|decision
+|
+|move|p1a: Zapdos|Thunderbolt|p2a: Kingdra
+|-damage|p2a: Kingdra|88 (0\/100 fnt)
+|-damage|p1a: Zapdos|10 (33\/100)|[from] item: Life Orb
+|faint|p2a: Kingdra
+|
+|callback|decision
+|callback|decision
+|
+|switch|p2a: Victini|Victini| (75\/100)
+|-damage|p2a: Victini|25 (50\/100)|[from] Stealth Rock
+|turn|23
+|callback|decision
+|
+|move|p1a: Zapdos|Thunderbolt|p2a: Victini
+|-crit|p2a: Victini
+|-damage|p2a: Victini|50 (0\/100 fnt)
+|-damage|p1a: Zapdos|10 (23\/100)|[from] item: Life Orb
+|faint|p2a: Victini
+|
+|callback|decision
+|callback|decision
+|
+|switch|p2a: Gligar|Gligar, F| (35\/100)
+|-damage|p2a: Gligar|12 (23\/100)|[from] Stealth Rock
+|turn|24
+|callback|decision
+|
+|move|p1a: Zapdos|Hidden Power|p2a: Gligar
+|-damage|p2a: Gligar|23 (0\/100 fnt)
+|-damage|p1a: Zapdos|10 (13\/100)|[from] item: Life Orb
+|faint|p2a: Gligar
+|
+|callback|decision
+|callback|decision
+|-message|dkajfsddsafk forfeited.
+|
+|win|NVTest
+|chatmsg-raw|Ladder updating...
+|leave|dkajfsddsafk
+|player|p2
+|raw|NVTest's rating: 1693 &rarr; <strong>1765<\/strong><br \/>(+72 for winning)
+|raw|dkajfsddsafk's rating: 1581 &rarr; <strong>1553<\/strong><br \/>(-28 for losing)
