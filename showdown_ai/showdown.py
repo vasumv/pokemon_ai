@@ -159,9 +159,12 @@ class Showdown():
             except:
                 pass
 
-    def play_game(self, lobby_game=False):
+    def play_game(self, challenge=None):
         self.selenium.choose_tier()
-        self.selenium.start_battle()
+        if challenge:
+            self.selenium.start_challenge_battle(challenge)
+        else:
+            self.selenium.start_ladder_battle()
         self.selenium.wait_for_move()
         self.battle_url = self.selenium.driver.current_url
         self.update_monitor()
@@ -188,7 +191,7 @@ class Showdown():
             self.update_latest_turn(gamestate)
             self.correct_gamestate(gamestate)
 
-    def run(self, num_games=1):
+    def run(self, num_games=1, challenge=None):
         self.init()
         self.scores = {
             'wins': 0,
@@ -203,7 +206,7 @@ class Showdown():
             self.simulator.log.reset()
             result, error = None, None
             try:
-                self.play_game(True)
+                self.play_game(challenge=challenge)
             except SeleniumException:
                 log = SimulatorLog.parse(self.selenium.get_log())
                 _, over_event = log.is_over()
@@ -254,6 +257,7 @@ def main():
     argparser.add_argument('--password', default='seleniumpython')
     argparser.add_argument('--iterations', type=int, default=1)
     argparser.add_argument('--monitor_url', type=str, default='http://54.149.105.175:9000')
+    argparser.add_argument('--challenge', type=str)
     args = argparser.parse_args()
 
     with open(args.team) as fp:
@@ -267,4 +271,4 @@ def main():
         password=args.password,
         monitor_url=args.monitor_url
     )
-    showdown.run(args.iterations)
+    showdown.run(args.iterations, challenge=args.challenge)
