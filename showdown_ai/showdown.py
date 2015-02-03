@@ -20,8 +20,8 @@ import cPickle as pickle
 
 class Showdown():
     def __init__(self, team_text, agent, username, data, bw_data, graph, password=None, driver_path="./chromedriver",
-                 monitor_url=None):
-        self.selenium = Selenium(driver_path=driver_path)
+                 monitor_url=None, proxy=False):
+        self.selenium = Selenium(driver_path=driver_path, proxy=proxy)
         self.agent = agent
         self.username = username
         self.password = password
@@ -247,6 +247,7 @@ def main():
     argparser.add_argument('--iterations', type=int, default=1)
     argparser.add_argument('--monitor_url', type=str, default='http://54.149.105.175:9000')
     argparser.add_argument('--challenge', type=str)
+    argparser.add_argument('--proxy', action='store_true')
     argparser.add_argument('--data_dir', type=str, default='data/')
     args = argparser.parse_args()
 
