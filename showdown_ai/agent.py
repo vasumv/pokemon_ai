@@ -30,9 +30,9 @@ class HumanAgent(Agent):
 
 class MinimaxAgent(Agent):
 
-    def __init__(self, depth):
+    def __init__(self, depth, data, bw_data, graph):
         self.depth = depth
-        self.simulator = Simulator()
+        self.simulator = Simulator(data, bw_data, graph)
         self.cache = {}
         self.hit_count = 0
         self.prune_count = 0

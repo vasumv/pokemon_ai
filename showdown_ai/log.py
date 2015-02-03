@@ -498,8 +498,6 @@ class SimulatorLog():
             event['type'] = type
             event['details'] = details
             event['poke'] = poke
-            print "my_poke", my_poke
-            print "opp_poke", opp_poke
             mega_name = None
             if player == 1:
                 if opp_poke == "charizard-mega-x":
@@ -525,8 +523,6 @@ class SimulatorLog():
                     mega_name = self.nicknames[player][old_poke] + "-Mega"
             self.nicknames[player][old_poke] = mega_name
             event['details']['mega'] = mega_name
-            print event
-            print self.nicknames
             return SimulatorEvent.from_dict(event)
 
         match = re.match(LADDER, line)

@@ -5,7 +5,9 @@ from log import SimulatorLog
 from simulator import Simulator
 from gamestate import GameState
 from smogon import Smogon
+from agent import OptimisticMinimaxAgent, PessimisticMinimaxAgent, HumanAgent
 from naive_bayes import get_moves
+from data import NAME_CORRECTIONS, load_data
 
 import sys
 import time
@@ -16,22 +18,8 @@ import re
 import traceback
 import cPickle as pickle
 
-from agent import OptimisticMinimaxAgent, PessimisticMinimaxAgent, HumanAgent
-
-NAME_CORRECTIONS = {"Keldeo-Resolute": "Keldeo",
-                    "Pikachu-Belle": "Pikachu",
-                    "Pikachu-Cosplay": "Pikachu",
-                    "Pikachu-Libre": "Pikachu",
-                    "Pikachu-PhD": "Pikachu",
-                    "Pikachu-Pop-Star": "Pikachu",
-                    "Pikachu-Rock-Star": "Pikachu",
-                    "Meowstic": "Meowstic-M",
-                    "Gourgeist-*": "Gourgeist"}
-with open("data/graph.json") as fp:
-    graph = json.loads(fp.read())
-
 class Showdown():
-    def __init__(self, team_text, agent, username, password=None, driver_path="./chromedriver",
+    def __init__(self, team_text, agent, username, data, bw_data, graph, password=None, driver_path="./chromedriver",
                  monitor_url=None):
         self.selenium = Selenium(driver_path=driver_path)
         self.agent = agent
@@ -39,17 +27,12 @@ class Showdown():
         self.password = password
         self.team_text = team_text
         self.monitor_url = monitor_url
-        with open("data/poke2.json") as f:
-            data = f.read()
-        with open("data/poke_bw.json") as f2:
-            data2 = f2.read()
-        poke_data = json.loads(data)
-        poke_bw_data = json.loads(data2)
-        self.data = Smogon.convert_to_dict(poke_data)
-        self.bw_data = Smogon.convert_to_dict(poke_bw_data)
+        self.data = data
+        self.bw_data = bw_data
+        self.graph = graph
         self.my_team = Team.make_team(team_text, self.data)
         self.opp_team = None
-        self.simulator = Simulator()
+        self.simulator = Simulator(data, bw_data, graph)
 
     def reset(self):
         self.selenium.reset()
@@ -83,7 +66,7 @@ class Showdown():
                 moveset = SmogonMoveset.from_dict(moveset[1])
             else:
                 moveset = SmogonMoveset.from_dict(moveset[0])
-            moves = [x for x in get_moves(poke_name, [], graph) if x != "Hidden Power"][:4]
+            moves = [x for x in get_moves(poke_name, [], self.graph, self.data)][:4]
             moveset.moves = [move[0] for move in moves]
             typing = self.data[poke_name].typing
             stats = self.data[poke_name].stats
@@ -264,17 +247,22 @@ def main():
     argparser.add_argument('--iterations', type=int, default=1)
     argparser.add_argument('--monitor_url', type=str, default='http://54.149.105.175:9000')
     argparser.add_argument('--challenge', type=str)
+    argparser.add_argument('--data_dir', type=str, default='data/')
     args = argparser.parse_args()
 
     with open(args.team) as fp:
         team_text = fp.read()
 
+    data, bw_data, graph = load_data(args.data_dir)
 
     showdown = Showdown(
         team_text,
-        PessimisticMinimaxAgent(2),
+        PessimisticMinimaxAgent(2, data, bw_data, graph),
         args.username,
+        data,
+        bw_data,
+        graph,
         password=args.password,
-        monitor_url=args.monitor_url
+        monitor_url=args.monitor_url,
     )
     showdown.run(args.iterations, challenge=args.challenge)

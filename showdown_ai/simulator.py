@@ -2,21 +2,17 @@ from move_list import moves as MOVES
 from mega_items import mega_items as MEGA_ITEMS
 from naive_bayes import get_moves
 from log import SimulatorLog
+from data import MOVE_CORRECTIONS, get_hidden_power, correct_mega
+import smogon
 import json
-
-import logging
-logging.basicConfig()
-MOVE_CORRECTIONS = {"ExtremeSpeed": "Extreme Speed",
-                    "ThunderPunch": "Thunder Punch",
-                    "SolarBeam": "Solar Beam",
-                    "DynamicPunch": "Dynamic Punch"}
-with open("data/graph.json") as fp:
-    graph = json.loads(fp.read())
 
 class Simulator():
 
-    def __init__(self):
+    def __init__(self, data, bw_data, graph):
         self.log = SimulatorLog()
+        self.data = data
+        self.bw_data = bw_data
+        self.graph = graph
 
     def append_log(self, gamestate, lines, my_poke=None, opp_poke=None):
         for line in lines:
@@ -49,7 +45,6 @@ class Simulator():
             poke.item = get_mega_item(event.details['mega'])
             team = gamestate.get_team(player)
             team.poke_list[team.primary_poke] = poke.mega_evolve()
-            print poke.ability
             print "%s mega evolved!" % (poke)
         elif type == "damage":
             hp = poke.final_stats['hp']
@@ -59,19 +54,23 @@ class Simulator():
             print "%s used %s." % (poke, event.details['move'])
             if player == 1:
                 move = event.details['move']
+                poke_name = correct_mega(poke.name)
+
                 if move in MOVE_CORRECTIONS:
                     move = MOVE_CORRECTIONS[move]
+                if move == "Hidden Power":
+                    hidden_power = get_hidden_power(poke_name, self.data)
+                    if hidden_power:
+                        move = hidden_power
+                    else:
+                        return
                 if move not in poke.moveset.known_moves:
                     poke.moveset.known_moves.append(move)
-                    poke_name = poke.name
-                    if poke_name == "Charizard-Mega-X" or poke_name == "Charizard-Mega-Y":
-                        poke_name = "Charizard"
-                    elif poke_name[:-5] == "-Mega":
-                        poke_name = poke_name[:-5]
-                    guess_moves = [x[0] for x in get_moves(poke_name, poke.moveset.known_moves, graph) if x[0] != "Hidden Power"][:4-len(poke.moveset.known_moves)]
+                    guess_moves = [x[0] for x in get_moves(poke_name, poke.moveset.known_moves, self.graph, self.data)][:4-len(poke.moveset.known_moves)]
                     poke.moveset.moves = poke.moveset.known_moves + guess_moves
+
             if poke.item in ["Choice Scarf", "Choice Specs", "Choice Band"]:
-                moves = ["Hidden Power" if "Hidden Power" in m else m for m in poke.moveset.moves]
+                moves = poke.moveset.moves
                 try:
                     moves.index(event.details['move'])
                     poke.choiced = True

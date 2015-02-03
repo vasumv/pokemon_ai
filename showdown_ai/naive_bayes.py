@@ -1,9 +1,8 @@
 import json
-def get_moves(poke, known_moves, graph, alpha=1.0):
-    if poke == "Charizard-Mega-X" or poke == "Charizard-Mega-Y":
-        poke = "Charizard"
-    if poke[-5:] == "-Mega":
-        poke = poke[:-5]
+from data import MOVE_CORRECTIONS, correct_mega
+
+def get_moves(poke, known_moves, graph, data, alpha=1.0):
+    poke = correct_mega(poke)
     co = graph['cooccurences']
     freq = graph['frequencies']
     probs = {}
@@ -15,14 +14,15 @@ def get_moves(poke, known_moves, graph, alpha=1.0):
                 continue
             total = float(sum(co[poke][move].values()))
             for othermove in co[poke][move]:
+                if othermove in MOVE_CORRECTIONS:
+                    probs[MOVE_CORRECTIONS[othermove]] = probs[othermove]
+                    del probs[move]
                 if othermove in known_moves:
                     continue
                 prob = co[poke][move][othermove] / total
                 if othermove not in probs:
                     probs[othermove] = 1
                 probs[othermove] *= prob
-    if "Hidden Power" in probs:
-        del probs["Hidden Power"]
     if probs == {}:
         probs = get_freqs(poke, freq)
     return sorted(probs.items(), key=lambda x: -x[1])
@@ -36,5 +36,7 @@ def get_freqs(poke, freq):
     return probs
 
 if __name__ == "__main__":
-    with open("../data/graph.json") as fp:
-        graph = json.load(fp)
+    from data import load_data
+    data, bw_data, graph = load_data('../data')
+    def foo(x, y):
+        return get_moves(x, y, graph, data)
