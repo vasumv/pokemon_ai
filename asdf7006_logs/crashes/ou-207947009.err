@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "c:\users\vikram\pokemon_ai\showdown_ai\showdown.py", line 192, in run
+    self.play_game(challenge=challenge)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\showdown.py", line 168, in play_game
+    move = self.agent.get_action(gamestate, 0)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\agent.py", line 42, in get_action
+    best_action, value, opp_action = self.minimax(state, self.depth, who, log=log)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\agent.py", line 82, in minimax
+    new_action, state_value, _ = self.minimax(new_state, depth - 1, who)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\agent.py", line 76, in minimax
+    new_state = self.simulator.simulate(state, actions, who)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\simulator.py", line 199, in simulate
+    opp_move = MOVES[opp_poke.moveset.moves[opp_action.move_index]]
+KeyError: u'SolarBeam'

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "c:\users\vikram\pokemon_ai\showdown_ai\showdown.py", line 192, in run
+    self.play_game(challenge=challenge)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\showdown.py", line 174, in play_game
+    self.update_latest_turn(gamestate)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\showdown.py", line 118, in update_latest_turn
+    self.simulator.append_log(gamestate, turns[-1], my_poke=my_poke, opp_poke=opp_poke)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\simulator.py", line 22, in append_log
+    self.handle_event(gamestate, event)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\simulator.py", line 69, in handle_event
+    guess_moves = [x[0] for x in get_moves(poke_name, poke.moveset.known_moves, self.graph, self.data)][:4-len(poke.moveset.known_moves)]
+  File "c:\users\vikram\pokemon_ai\showdown_ai\naive_bayes.py", line 13, in get_moves
+    if move not in co[poke]:
+KeyError: 'Keldeo-Resolute'
