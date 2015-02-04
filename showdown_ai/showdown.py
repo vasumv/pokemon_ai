@@ -20,8 +20,8 @@ import cPickle as pickle
 
 class Showdown():
     def __init__(self, team_text, agent, username, data, bw_data, graph, password=None, driver_path="./chromedriver",
-                 monitor_url=None):
-        self.selenium = Selenium(driver_path=driver_path)
+                 monitor_url=None, proxy=False):
+        self.selenium = Selenium(driver_path=driver_path, proxy=proxy)
         self.agent = agent
         self.username = username
         self.password = password
@@ -32,9 +32,10 @@ class Showdown():
         self.graph = graph
         self.my_team = Team.make_team(team_text, self.data)
         self.opp_team = None
-        self.simulator = Simulator(data, bw_data, graph)
+        self.simulator = Simulator(data, bw_data, graph, score, total)
 
     def reset(self):
+        self.score = 0
         self.selenium.reset()
         self.opp_team = None
         self.my_team = Team.make_team(self.team_text, self.data)
@@ -115,7 +116,7 @@ class Showdown():
                 buffer.append(line)
         my_poke = self.selenium.get_my_primary()
         opp_poke = self.selenium.get_opp_primary()
-        self.simulator.append_log(gamestate, turns[-1], my_poke=my_poke, opp_poke=opp_poke)
+        self.frequency = self.simulator.append_log(gamestate, turns[-1], my_poke=my_poke, opp_poke=opp_poke)
 
     def init(self):
         self.selenium.start_driver()
@@ -247,6 +248,7 @@ def main():
     argparser.add_argument('--iterations', type=int, default=1)
     argparser.add_argument('--monitor_url', type=str, default='http://54.149.105.175:9000')
     argparser.add_argument('--challenge', type=str)
+    argparser.add_argument('--proxy', action='store_true')
     argparser.add_argument('--data_dir', type=str, default='data/')
     args = argparser.parse_args()
 
@@ -263,6 +265,7 @@ def main():
         bw_data,
         graph,
         password=args.password,
+        proxy=args.proxy,
         monitor_url=args.monitor_url,
     )
     showdown.run(args.iterations, challenge=args.challenge)

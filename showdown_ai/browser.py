@@ -7,15 +7,17 @@ from selenium.webdriver.common.keys import Keys
 class Selenium():
     BASE_URL="http://play.pokemonshowdown.com"
     #BASE_URL="http://frost.psim.us"
-    def __init__(self, url=BASE_URL, driver_path="/home/vasu/Downloads/chromedriver", timer_on=False):
+    def __init__(self, url=BASE_URL, driver_path="/home/vasu/Downloads/chromedriver", timer_on=False, proxy=False):
         self.url = url
         self.driver_path = driver_path
         self.timer_on = timer_on
-        #PROXY = "127.0.0.1:9666"
-        #chrome_options = webdriver.ChromeOptions()
-        #chrome_options.add_argument('--proxy-server=%s' % PROXY)
-        #self.driver = webdriver.Chrome(executable_path=self.driver_path, chrome_options=chrome_options)
-        self.driver = webdriver.Chrome(executable_path=self.driver_path)
+        if proxy:
+            PROXY = "127.0.0.1:9666"
+            chrome_options = webdriver.ChromeOptions()
+            chrome_options.add_argument('--proxy-server=%s' % PROXY)
+            self.driver = webdriver.Chrome(executable_path=self.driver_path, chrome_options=chrome_options)
+        else:
+            self.driver = webdriver.Chrome(executable_path=self.driver_path)
         #self.driver = webdriver.PhantomJS()
 
         self.state = None

@@ -55,7 +55,6 @@ class Simulator():
             if player == 1:
                 move = event.details['move']
                 poke_name = correct_mega(poke.name)
-
                 if move in MOVE_CORRECTIONS:
                     move = MOVE_CORRECTIONS[move]
                 if move == "Hidden Power":
@@ -68,7 +67,6 @@ class Simulator():
                     poke.moveset.known_moves.append(move)
                     guess_moves = [x[0] for x in get_moves(poke_name, poke.moveset.known_moves, self.graph, self.data)][:4-len(poke.moveset.known_moves)]
                     poke.moveset.moves = poke.moveset.known_moves + guess_moves
-
             if poke.item in ["Choice Scarf", "Choice Specs", "Choice Band"]:
                 moves = poke.moveset.moves
                 try:

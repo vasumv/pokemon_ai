@@ -141,6 +141,9 @@ class DamagingMove(Move):
         if move_type == "Electric" and defender.ability == "Lightning Rod":
             other *= 0
             defender.increase_stage('spatk', 1)
+        if move_type == "Electric" and defender.ability == "Motor Drive":
+            other *= 0
+            defender.increase_stage('spe', 1)
         if move_type == "Fire" and defender.ability == "Flash Fire":
             other *= 0
         type_multipliers = [get_multiplier(x, move_type, attacker.ability=="Scrappy") for x in defender.typing]
