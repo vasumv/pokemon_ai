@@ -18,7 +18,6 @@ class Selenium():
             self.driver = webdriver.Chrome(executable_path=self.driver_path, chrome_options=chrome_options)
         else:
             self.driver = webdriver.Chrome(executable_path=self.driver_path)
-        #self.driver = webdriver.PhantomJS()
 
         self.state = None
         self.poke_map = {
@@ -274,8 +273,10 @@ class Selenium():
         move_exists = self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[1]")
         #self.start_timer()
         while move_exists == False:
-            if not self.timer_on:
-                self.start_timer()
+	    try:
+	        self.start_timer()
+	    except:
+	        pass
             #print "waiting for their move"
             time.sleep(2)
             move_exists = self.check_exists_by_xpath("/html/body/div[4]/div[5]/div/div[2]/div[2]/button[1]")
