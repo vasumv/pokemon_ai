@@ -19,7 +19,7 @@ import traceback
 import cPickle as pickle
 
 class Showdown():
-    def __init__(self, team_text, agent, username, data, bw_data, graph, password=None, driver_path="./chromedriver",
+    def __init__(self, team_text, agent, username, data, bw_data, graph, score=0, total=0, frequency=0, password=None, driver_path="./chromedriver",
                  monitor_url=None, proxy=False):
         self.selenium = Selenium(driver_path=driver_path, proxy=proxy)
         self.agent = agent
@@ -30,11 +30,15 @@ class Showdown():
         self.data = data
         self.bw_data = bw_data
         self.graph = graph
+        self.score = score
+        self.total = total
+        self.frequency = frequency
         self.my_team = Team.make_team(team_text, self.data)
         self.opp_team = None
-        self.simulator = Simulator(data, bw_data, graph)
+        self.simulator = Simulator(data, bw_data, graph, score, total)
 
     def reset(self):
+        self.score = 0
         self.selenium.reset()
         self.opp_team = None
         self.my_team = Team.make_team(self.team_text, self.data)
@@ -115,7 +119,7 @@ class Showdown():
                 buffer.append(line)
         my_poke = self.selenium.get_my_primary()
         opp_poke = self.selenium.get_opp_primary()
-        self.simulator.append_log(gamestate, turns[-1], my_poke=my_poke, opp_poke=opp_poke)
+        self.frequency = self.simulator.append_log(gamestate, turns[-1], my_poke=my_poke, opp_poke=opp_poke)
 
     def init(self):
         self.selenium.start_driver()
@@ -223,6 +227,8 @@ class Showdown():
                     fp.write(log)
                 with open('logs/crashes/%s.err' % id, 'w') as fp:
                     fp.write(error)
+                with open('accuracy.txt', 'w') as fp:
+                    fp.write(str(self.frequency) + "\n")
             events = SimulatorLog.parse(self.selenium.get_log())
             for event in events:
                 if event.type == "ladder":
@@ -264,6 +270,7 @@ def main():
         bw_data,
         graph,
         password=args.password,
+        proxy=args.proxy,
         monitor_url=args.monitor_url,
     )
     showdown.run(args.iterations, challenge=args.challenge)

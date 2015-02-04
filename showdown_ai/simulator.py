@@ -8,11 +8,13 @@ import json
 
 class Simulator():
 
-    def __init__(self, data, bw_data, graph):
+    def __init__(self, data, bw_data, graph, guess_correct, total):
         self.log = SimulatorLog()
         self.data = data
         self.bw_data = bw_data
         self.graph = graph
+        self.guess_correct = guess_correct
+        self.total = total
 
     def append_log(self, gamestate, lines, my_poke=None, opp_poke=None):
         for line in lines:
@@ -20,6 +22,7 @@ class Simulator():
             if not event:
                 continue
             self.handle_event(gamestate, event)
+        return float(self.guess_correct / self.total)
 
     def handle_event(self, gamestate, event):
         def get_pokemon(team, name):
@@ -53,9 +56,9 @@ class Simulator():
         elif type == "move":
             print "%s used %s." % (poke, event.details['move'])
             if player == 1:
+                self.total += 1
                 move = event.details['move']
                 poke_name = correct_mega(poke.name)
-
                 if move in MOVE_CORRECTIONS:
                     move = MOVE_CORRECTIONS[move]
                 if move == "Hidden Power":
@@ -68,6 +71,8 @@ class Simulator():
                     poke.moveset.known_moves.append(move)
                     guess_moves = [x[0] for x in get_moves(poke_name, poke.moveset.known_moves, self.graph, self.data)][:4-len(poke.moveset.known_moves)]
                     poke.moveset.moves = poke.moveset.known_moves + guess_moves
+                else:
+                    self.score += 1
 
             if poke.item in ["Choice Scarf", "Choice Specs", "Choice Band"]:
                 moves = poke.moveset.moves
