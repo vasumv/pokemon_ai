@@ -2,7 +2,7 @@ from move_list import moves as MOVES
 from mega_items import mega_items as MEGA_ITEMS
 from naive_bayes import get_moves
 from log import SimulatorLog
-from data import MOVE_CORRECTIONS, get_hidden_power, correct_mega
+from data import MOVE_CORRECTIONS, get_hidden_power, correct_mega, get_move
 import smogon
 import json
 
@@ -13,12 +13,15 @@ class Simulator():
         self.data = data
         self.bw_data = bw_data
         self.graph = graph
+        self.latest_turn = None
 
     def append_log(self, gamestate, lines, my_poke=None, opp_poke=None):
+        self.latest_turn = []
         for line in lines:
             event = self.log.add_event(line, my_poke=my_poke, opp_poke=opp_poke)
             if not event:
                 continue
+            self.latest_turn.append(event)
             self.handle_event(gamestate, event)
 
     def handle_event(self, gamestate, event):
@@ -145,21 +148,15 @@ class Simulator():
             print "%s has mold breaker!" % poke
 
 
-
-
-    def simulate(self, gamestate, actions, who, log=False):
-        assert not gamestate.is_over()
-        gamestate = gamestate.deep_copy()
-
+    def get_first(self, gamestate, moves, who=0):
+        my_move = moves[who]
+        opp_move = moves[1 - who]
 
         my_team = gamestate.get_team(who)
         opp_team = gamestate.get_team(1 - who)
 
         my_poke = my_team.primary()
         opp_poke = opp_team.primary()
-
-        my_action = actions[who]
-        opp_action = actions[1 - who]
 
         my_speed = my_poke.get_stage('spe')
         opp_speed = opp_poke.get_stage('spe')
@@ -169,7 +166,6 @@ class Simulator():
 
         my_spe_multiplier = my_spe_buffs if my_speed > 0 else 1 / my_spe_buffs
         opp_spe_multiplier = opp_spe_buffs if opp_speed > 0 else 1 / opp_spe_buffs
-
 
         if my_poke.item == "Choice Scarf":
             my_spe_multiplier *= 1.5
@@ -181,20 +177,6 @@ class Simulator():
 
         my_final_speed = my_poke.get_stat("spe") * my_spe_multiplier * my_paralyze
         opp_final_speed = opp_poke.get_stat("spe") * opp_spe_multiplier * opp_paralyze
-
-        if my_action.is_switch():
-            gamestate.switch_pokemon(my_action.switch_index, who, log=log)
-            my_move = MOVES["Noop"]
-            my_poke = my_team.primary()
-        if opp_action.is_switch():
-            gamestate.switch_pokemon(opp_action.switch_index, 1 - who, log=log)
-            opp_move = MOVES["Noop"]
-            opp_poke = opp_team.primary()
-
-        if my_action.is_move():
-            my_move = MOVES[my_poke.moveset.moves[my_action.move_index]]
-        if opp_action.is_move():
-            opp_move = MOVES[opp_poke.moveset.moves[opp_action.move_index]]
 
         if my_poke.ability == "Gale Wings":
             if my_move.type == "Flying":
@@ -210,9 +192,6 @@ class Simulator():
                 opp_move.priority += 1
 
         first = None
-        if log:
-            print "Player 1 speed", my_final_speed
-            print "Player 2 speed", opp_final_speed
         if my_move.priority > opp_move.priority:
             first = who
         elif opp_move.priority > my_move.priority:
@@ -223,11 +202,38 @@ class Simulator():
             elif opp_final_speed > my_final_speed:
                 first = 1 - who
             else:
-                first = 1#who
+                first = 1
+        return first
+
+    def simulate(self, gamestate, actions, who, log=False):
+        assert not gamestate.is_over()
+        my_team = gamestate.get_team(who)
+        opp_team = gamestate.get_team(1 - who)
+        my_poke = my_team.primary()
+        opp_poke = opp_team.primary()
+        gamestate = gamestate.deep_copy()
+        my_action = actions[who]
+        opp_action = actions[1 - who]
+        if my_action.is_switch():
+            gamestate.switch_pokemon(my_action.switch_index, who, log=log)
+            my_move = MOVES["Noop"]
+            my_poke = my_team.primary()
+        if opp_action.is_switch():
+            gamestate.switch_pokemon(opp_action.switch_index, 1 - who, log=log)
+            opp_move = MOVES["Noop"]
+            opp_poke = opp_team.primary()
+
+        if my_action.is_move():
+            my_move = get_move(my_poke.moveset.moves[my_action.move_index])
+        if opp_action.is_move():
+            opp_move = get_move(opp_poke.moveset.moves[opp_action.move_index])
 
         moves = [None, None]
         moves[who] = my_move
         moves[1 - who] = opp_move
+
+        first = self.get_first(gamestate, moves, who)
+
         self.make_move(gamestate, moves, actions, first, who, log=log)
         return gamestate
 

@@ -1,5 +1,6 @@
 import json
 from smogon import Smogon
+from move_list import moves as MOVES
 MOVE_CORRECTIONS = {"ExtremeSpeed": "Extreme Speed",
                     "ThunderPunch": "Thunder Punch",
                     "SolarBeam": "Solar Beam",
@@ -21,7 +22,8 @@ def correct_mega(poke):
     if poke[-5:] == "-Mega":
         poke = poke[:-5]
     return poke
-
+def get_move(move):
+    return MOVES[move]
 def correct_name(poke):
     if poke in NAME_CORRECTIONS:
         return NAME_CORRECTIONS[poke]

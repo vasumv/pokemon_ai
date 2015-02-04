@@ -7,7 +7,7 @@ from gamestate import GameState
 from smogon import Smogon
 from agent import OptimisticMinimaxAgent, PessimisticMinimaxAgent, HumanAgent
 from naive_bayes import get_moves
-from data import NAME_CORRECTIONS, load_data
+from data import NAME_CORRECTIONS, load_data, get_move
 
 import sys
 import time
@@ -32,7 +32,7 @@ class Showdown():
         self.graph = graph
         self.my_team = Team.make_team(team_text, self.data)
         self.opp_team = None
-        self.simulator = Simulator(data, bw_data, graph, score, total)
+        self.simulator = Simulator(data, bw_data, graph)
 
     def reset(self):
         self.score = 0
@@ -94,12 +94,14 @@ class Showdown():
         return gamestate
 
     def correct_gamestate(self, gamestate):
+        gamestate = gamestate.deep_copy()
         my_poke_health = self.selenium.get_my_primary_health()
         opp_poke_health = self.selenium.get_opp_primary_health()
         my_team = gamestate.get_team(0)
         opp_team = gamestate.get_team(1)
         my_team.primary().health = my_poke_health / 100.0 * my_team.primary().final_stats['hp']
         opp_team.primary().health = opp_poke_health / 100.0 * opp_team.primary().final_stats['hp']
+        return gamestate
 
 
     def update_latest_turn(self, gamestate):
@@ -114,9 +116,30 @@ class Showdown():
                 buffer = []
             else:
                 buffer.append(line)
-        my_poke = self.selenium.get_my_primary()
-        opp_poke = self.selenium.get_opp_primary()
-        self.frequency = self.simulator.append_log(gamestate, turns[-1], my_poke=my_poke, opp_poke=opp_poke)
+        my_poke_name = self.selenium.get_my_primary()
+        opp_poke_name = self.selenium.get_opp_primary()
+
+        old_gamestate = gamestate
+        gamestate = gamestate.deep_copy()
+
+        self.simulator.append_log(gamestate, turns[-1], my_poke=my_poke_name, opp_poke=opp_poke_name)
+        move_events = []
+        for event in self.simulator.latest_turn:
+            if event.type == "move":
+                move_events.append(event)
+        print move_events
+        if len(move_events) > 0:
+            print move_events[0]
+        if len(move_events) == 2 and move_events[0].player == 1:
+            print self.simulator.get_first(old_gamestate, [get_move(move_events[0].details['move']), get_move(move_events[1].details['move'])], 0)
+            if move_events[0].player != self.simulator.get_first(old_gamestate, [get_move(move_events[0].details['move']), get_move(move_events[1].details['move'])], 0):
+                opp_poke = old_gamestate.get_team(1).primary()
+                for poke in gamestate.get_team(1).poke_list:
+                    if poke.name == opp_poke.name:
+                        poke.item = "Choice Scarf"
+        return gamestate
+
+
 
     def init(self):
         self.selenium.start_driver()
@@ -154,7 +177,7 @@ class Showdown():
         self.update_monitor()
         self.selenium.switch_initial(0, 0)
         gamestate = self.create_initial_gamestate()
-        self.update_latest_turn(gamestate)
+        gamestate = self.update_latest_turn(gamestate)
         with open('cur_gs.gs', 'wb') as fp:
             pickle.dump(gamestate, fp)
         over = False
@@ -167,13 +190,12 @@ class Showdown():
             print "Their ability: ", gamestate.get_team(1).primary().ability
             print "My move:",
             move = self.agent.get_action(gamestate, 0)
-
             if move.is_switch():
                 self.selenium.switch(move.switch_index, move.backup_switch)
             else:
                 self.selenium.move(move.move_index, move.backup_switch, mega=move.mega, volt_turn=move.volt_turn)
-            self.update_latest_turn(gamestate)
-            self.correct_gamestate(gamestate)
+            gamestate = self.update_latest_turn(gamestate)
+            gamestate = self.correct_gamestate(gamestate)
 
     def run(self, num_games=1, challenge=None):
         self.init()
@@ -198,6 +220,9 @@ class Showdown():
             except:
                 error = traceback.format_exc()
                 print "Error", error
+                log = SimulatorLog.parse(self.selenium.get_log())
+                _, over_event = log.is_over()
+                result = over_event.details['username'] == self.username
             log = self.selenium.get_log()
             id = self.selenium.get_battle_id()
             battle_url = "http://replay.pokemonshowdown.com/battle-%s" % id
