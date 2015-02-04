@@ -127,11 +127,7 @@ class Showdown():
         for event in self.simulator.latest_turn:
             if event.type == "move":
                 move_events.append(event)
-        print move_events
-        if len(move_events) > 0:
-            print move_events[0]
         if len(move_events) == 2 and move_events[0].player == 1:
-            print self.simulator.get_first(old_gamestate, [get_move(move_events[0].details['move']), get_move(move_events[1].details['move'])], 0)
             if move_events[0].player != self.simulator.get_first(old_gamestate, [get_move(move_events[0].details['move']), get_move(move_events[1].details['move'])], 0):
                 opp_poke = old_gamestate.get_team(1).primary()
                 for poke in gamestate.get_team(1).poke_list:
@@ -222,7 +218,8 @@ class Showdown():
                 print "Error", error
                 log = SimulatorLog.parse(self.selenium.get_log())
                 _, over_event = log.is_over()
-                result = over_event.details['username'] == self.username
+                if over_event is not None:
+                    result = over_event.details['username'] == self.username
             log = self.selenium.get_log()
             id = self.selenium.get_battle_id()
             battle_url = "http://replay.pokemonshowdown.com/battle-%s" % id
