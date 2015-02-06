@@ -252,7 +252,7 @@ class Showdown():
                     fp.write(log)
                 with open('logs/crashes/%s.err' % id, 'w') as fp:
                     fp.write(error)
-                with open('logs/%s-score.txt') as fp:
+                with open('logs/%s-score.txt' % id, 'w') as fp:
                     fp.write(str(self.simulator.score))
                     fp.write(str(self.simulator.total))
             events = SimulatorLog.parse(self.selenium.get_log())
