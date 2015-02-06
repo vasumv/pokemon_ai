@@ -7,17 +7,20 @@ from selenium.webdriver.common.keys import Keys
 class Selenium():
     BASE_URL="http://play.pokemonshowdown.com"
     #BASE_URL="http://frost.psim.us"
-    def __init__(self, url=BASE_URL, driver_path="/home/vasu/Downloads/chromedriver", timer_on=False, proxy=False):
+    def __init__(self, url=BASE_URL, driver_path="/home/vasu/Downloads/chromedriver", timer_on=False, proxy=False, firefox=False):
         self.url = url
         self.driver_path = driver_path
         self.timer_on = timer_on
-        if proxy:
-            PROXY = "127.0.0.1:9666"
-            chrome_options = webdriver.ChromeOptions()
-            chrome_options.add_argument('--proxy-server=%s' % PROXY)
-            self.driver = webdriver.Chrome(executable_path=self.driver_path, chrome_options=chrome_options)
+        if firefox:
+            self.driver = webdriver.Firefox()
         else:
-            self.driver = webdriver.Chrome(executable_path=self.driver_path)
+            if proxy:
+                PROXY = "127.0.0.1:9666"
+                chrome_options = webdriver.ChromeOptions()
+                chrome_options.add_argument('--proxy-server=%s' % PROXY)
+                self.driver = webdriver.Chrome(executable_path=self.driver_path, chrome_options=chrome_options)
+            else:
+                self.driver = webdriver.Chrome(executable_path=self.driver_path)
 
         self.state = None
         self.poke_map = {
@@ -59,14 +62,14 @@ class Selenium():
         time.sleep(1)
 
     def choose_tier(self, tier='ou'):
-        form = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div[2]/div[1]/form/p[1]/button")
+        form = self.driver.find_element_by_css_selector(".select.formatselect")
         form.click()
-        ou = self.driver.find_element_by_xpath("/html/body/div[4]/ul[1]/li[4]/button")
-        ou.click()
+        tier = self.driver.find_element_by_css_selector("[name='selectFormat'][value='%s']" % tier)
+        tier.click()
 
     def start_ladder_battle(self):
         url1 = self.driver.current_url
-        battle = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div[2]/div[1]/form/p[3]/button")
+        battle = self.driver.find_element_by_css_selector(".button.big")
         battle.click()
         battle_click = True
         time.sleep(1)
@@ -77,30 +80,32 @@ class Selenium():
         while url1 == self.driver.current_url and self.check_exists_by_name("login"):
             time.sleep(1)
         if url1 == self.driver.current_url and not battle_click:
-            battle = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div[2]/div[1]/form/p[3]/button")
+            battle = self.driver.find_element_by_css_selector(".button.big")
             battle.click()
             time.sleep(1)
         while url1 == self.driver.current_url:
             time.sleep(1.5)
 
-    def start_challenge_battle(self, name):
-        lobby = self.driver.find_element_by_xpath("/html/body/div[3]/div/div/div[1]/a")
+    def start_challenge_battle(self, name, tier='ou'):
+        lobby = self.driver.find_element_by_css_selector(".ilink[href='/lobby']")
         lobby.click()
         time.sleep(2)
-        name = self.driver.find_element_by_xpath("//*[@id='lobby-userlist-user-%s']/button/span" % name)
+        name = self.driver.find_element_by_css_selector(".userbutton.username[data-name=' %s']" % name)
         name.click()
         time.sleep(2)
-        challenge = self.driver.find_element_by_xpath("/html/body/div[5]/p/button[1]")
+        challenge = self.driver.find_element_by_css_selector("[name='challenge']")
         challenge.click()
-        form = self.driver.find_element_by_xpath("//*[@id='mainmenu']/div/div[1]/div[1]/div/div[1]/div[1]/form/p[2]/button")
+        time.sleep(2)
+        pm_window = self.driver.find_element_by_css_selector(".pm-window")
+        form = pm_window.find_element_by_css_selector(".select.formatselect")
         form.click()
         time.sleep(2)
-        ou = self.driver.find_element_by_xpath("/html/body/div[5]/ul[1]/li[3]/button")
-        ou.click()
+        tier = self.driver.find_element_by_css_selector("[name='selectFormat'][value='%s']" % tier)
+        tier.click()
         time.sleep(2)
-        make_challenge = self.driver.find_element_by_xpath("//*[@id='mainmenu']/div/div[1]/div[1]/div/div[1]/div[1]/form/p[4]/button[1]")
+        make_challenge = pm_window.find_element_by_css_selector("[name='makeChallenge']")
         make_challenge.click()
-        lobby_quit = self.driver.find_element_by_xpath("//*[@id='header']/div[2]/div/ul[2]/li[1]/a[2]")
+        lobby_quit = self.driver.find_element_by_css_selector(".closebutton[href='/lobby']")
         lobby_quit.click()
 
     def get_battle_id(self):
