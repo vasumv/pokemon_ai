@@ -67,9 +67,11 @@ class Simulator():
                 known_moves = poke.moveset.known_moves
                 if move not in known_moves:
                     self.total += 1
+                    print "adding total by 1"
                     old_guess_moves = [x[0] for x in poke.predict_moves(known_moves)][:4 - len(known_moves)]
                     if move in old_guess_moves:
                         self.score += 1
+                        print "adding score by 1"
                     known_moves.append(move)
                     guess_moves = [x[0] for x in poke.predict_moves(known_moves)][:4 - len(known_moves)]
                     poke.moveset.moves = poke.moveset.known_moves + guess_moves

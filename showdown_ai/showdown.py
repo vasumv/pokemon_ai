@@ -252,9 +252,10 @@ class Showdown():
                     fp.write(log)
                 with open('logs/crashes/%s.err' % id, 'w') as fp:
                     fp.write(error)
-                with open('logs/%s-score.txt' % id, 'w') as fp:
-                    fp.write(str(self.simulator.score))
-                    fp.write(str(self.simulator.total))
+            print self.simulator.score, self.simulator.total
+            with open('logs/%s-score.txt' % id, 'w') as fp:
+                print >>fp, self.simulator.score
+                print >>fp, self.simulator.total
             events = SimulatorLog.parse(self.selenium.get_log())
             for event in events:
                 if event.type == "ladder":
