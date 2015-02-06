@@ -16,14 +16,25 @@ NAME_CORRECTIONS = {"Keldeo-Resolute": "Keldeo",
                     "Meowstic": "Meowstic-M",
                     "Gourgeist-*": "Gourgeist"}
 
+class PokeData(object):
+    def __init__(self, smogon_data, smogon_bw_data, graph, graph_poke, move_list):
+        self.smogon_data = smogon_data
+        self.smogon_bw_data = smogon_bw_data
+        self.graph = graph
+        self.graph_poke = graph_poke
+        self.move_list = move_list
+
+
 def correct_mega(poke):
     if poke == "Charizard-Mega-X" or poke == "Charizard-Mega-Y":
         poke = "Charizard"
     if poke[-5:] == "-Mega":
         poke = poke[:-5]
     return poke
+
 def get_move(move):
     return MOVES[move]
+
 def correct_name(poke):
     if poke in NAME_CORRECTIONS:
         return NAME_CORRECTIONS[poke]
@@ -77,5 +88,5 @@ def load_data(data_dir):
                     old_value = graph['cooccurences'][poke][move]['Hidden Power']
                     graph['cooccurences'][poke][move][hidden_power] = old_value
                 del graph['cooccurences'][poke][move]['Hidden Power']
-    return data, bw_data, graph
+    return PokeData(data, bw_data, graph, None, MOVES)
 

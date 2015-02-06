@@ -13,7 +13,7 @@ with open("data/poke_megas.json") as f:
 
 
 class Pokemon():
-    def __init__(self, name, typing, stats, moveset, alive=True, status=None, calculate=False, is_mega=False, old_typing=None):
+    def __init__(self, name, typing, stats, moveset, predictor, alive=True, status=None, calculate=False, is_mega=False, old_typing=None):
         self.name = name
         self.typing = typing
         if old_typing is not None:
@@ -21,6 +21,7 @@ class Pokemon():
         else:
             self.old_typing = typing
         self.stats = stats
+        self.predictor = predictor
         self.moveset = moveset
         self.final_stats = {}
         self.item = moveset.item
@@ -115,7 +116,7 @@ class Pokemon():
             ability = mega_poke.movesets[0]['ability']
             moveset = smogon.SmogonMoveset(self.moveset.name, None, ability, self.moveset.evs, self.moveset.nature, self.moveset.moves, tag=self.moveset.tag)
             status = self.status
-            poke = Pokemon(name, typing, stats, moveset, status=status, old_typing=None, calculate=True, is_mega=True)
+            poke = Pokemon(name, typing, stats, moveset, self.predictor, status=status, old_typing=None, calculate=True, is_mega=True)
             poke.health = self.health
             if log:
                 print "%s mega evolved into %s." % (
@@ -125,8 +126,13 @@ class Pokemon():
             return poke
         return self
 
+    def predict_moves(self, known_moves):
+        return self.predictor(self.name, known_moves)
+
     def copy(self):
-        poke = Pokemon(self.name, self.typing[:], self.stats, self.moveset, status=self.status, alive=self.alive,
+        poke = Pokemon(self.name, self.typing[:],
+                       self.stats, self.moveset, self.predictor,
+                       status=self.status, alive=self.alive,
                        calculate=False, old_typing=self.old_typing)
         poke.final_stats = self.final_stats
         poke.health = self.health
@@ -140,11 +146,6 @@ class Pokemon():
         return poke
     def to_tuple(self):
         return (self.name, self.item, self.health, tuple(self.typing), self.status, tuple(self.stages.values()))
-
-    @staticmethod
-    def from_tuple(tupl):
-        poke = Pokemon(tupl[0], tupl[1], tupl[2], tupl[3], tupl[4], tupl[5])
-        return poke
 
     def __repr__(self):
         return "%s(%u)" % (self.name, self.health)
@@ -299,7 +300,7 @@ class Team():
             moveset = smogon.SmogonMoveset(name, item, ability, evs, nature, moves, tag=None)
             typing = data[name].typing
             stats = data[name].stats
-            poke = Pokemon(name, typing, stats, moveset, calculate=True)
+            poke = Pokemon(name, typing, stats, moveset, None, calculate=True)
             poke_list.append(poke)
         return Team(poke_list)
 

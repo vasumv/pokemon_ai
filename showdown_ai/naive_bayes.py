@@ -1,6 +1,5 @@
 import json
 from data import MOVE_CORRECTIONS, correct_mega
-
 def get_moves(poke, known_moves, graph, data, alpha=1.0):
     poke = correct_mega(poke)
     co = graph['cooccurences']

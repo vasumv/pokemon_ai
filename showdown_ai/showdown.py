@@ -8,6 +8,7 @@ from smogon import Smogon
 from agent import OptimisticMinimaxAgent, PessimisticMinimaxAgent, HumanAgent
 from naive_bayes import get_moves
 from data import NAME_CORRECTIONS, load_data, get_move
+from move_predict import create_predictor
 
 import sys
 import time
@@ -19,26 +20,29 @@ import traceback
 import cPickle as pickle
 
 class Showdown():
-    def __init__(self, team_text, agent, username, data, bw_data, graph, password=None, driver_path="./chromedriver",
-                 monitor_url=None, proxy=False, firefox=False):
+    def __init__(self, team_text, agent, username, pokedata, password=None, driver_path="./chromedriver",
+                 monitor_url=None, proxy=False, firefox=False, predictor_name='FrequencyPokePredictor'):
         self.selenium = Selenium(driver_path=driver_path, proxy=proxy, firefox=firefox)
         self.agent = agent
         self.username = username
         self.password = password
         self.team_text = team_text
+        self.predictor_name = predictor_name
         self.monitor_url = monitor_url
-        self.data = data
-        self.bw_data = bw_data
-        self.graph = graph
-        self.my_team = Team.make_team(team_text, self.data)
+        self.pokedata = pokedata
+        self.smogon_data = pokedata.smogon_data
+        self.smogon_bw_data = pokedata.smogon_bw_data
+        self.graph = pokedata.graph
+        self.graph_poke = pokedata.graph_poke
+        self.my_team = Team.make_team(team_text, self.smogon_data)
         self.opp_team = None
-        self.simulator = Simulator(data, bw_data, graph)
+        self.simulator = Simulator(pokedata)
 
     def reset(self):
         self.score = 0
         self.selenium.reset()
         self.opp_team = None
-        self.my_team = Team.make_team(self.team_text, self.data)
+        self.my_team = Team.make_team(self.team_text, self.smogon_data)
 
     def create_initial_gamestate(self):
         my_pokes = self.my_team.copy()
@@ -59,7 +63,7 @@ class Showdown():
             poke_name = name
             if poke_name in NAME_CORRECTIONS:
                 poke_name = NAME_CORRECTIONS[poke_name]
-            moveset = [m for m in self.data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag']]
+            moveset = [m for m in self.smogon_data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag']]
             if not len(moveset):
                 moveset = [m for m in self.bw_data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag']]
             assert len(moveset), "No candidate movesets for %s" % name
@@ -67,11 +71,13 @@ class Showdown():
                 moveset = SmogonMoveset.from_dict(moveset[1])
             else:
                 moveset = SmogonMoveset.from_dict(moveset[0])
-            moves = [x for x in get_moves(poke_name, [], self.graph, self.data)][:4]
-            moveset.moves = [move[0] for move in moves]
-            typing = self.data[poke_name].typing
-            stats = self.data[poke_name].stats
-            poke = Pokemon(name, typing, stats, moveset, calculate=True)
+            moveset.moves = None
+            typing = self.smogon_data[poke_name].typing
+            stats = self.smogon_data[poke_name].stats
+            predictor = create_predictor(self.predictor_name, self.pokedata)
+            poke = Pokemon(name, typing, stats, moveset, predictor, calculate=True)
+            moves = [x[0] for x in poke.predict_moves([])]
+            poke.moveset.moves = moves[:4]
             poke.health = poke.final_stats['hp']
             poke.alive = True
             opp_poke_list.append(poke)
@@ -273,23 +279,23 @@ def main():
     argparser.add_argument('--proxy', action='store_true')
     argparser.add_argument('--firefox', action='store_true')
     argparser.add_argument('--data_dir', type=str, default='data/')
+    argparser.add_argument('--predictor', default='FrequencyPokePredictor')
     args = argparser.parse_args()
 
     with open(args.team) as fp:
         team_text = fp.read()
 
-    data, bw_data, graph = load_data(args.data_dir)
+    pokedata = load_data(args.data_dir)
 
     showdown = Showdown(
         team_text,
-        PessimisticMinimaxAgent(2, data, bw_data, graph),
+        PessimisticMinimaxAgent(2, pokedata),
         args.username,
-        data,
-        bw_data,
-        graph,
+        pokedata,
         password=args.password,
         proxy=args.proxy,
         firefox=args.firefox,
         monitor_url=args.monitor_url,
+        predictor_name=args.predictor
     )
     showdown.run(args.iterations, challenge=args.challenge)

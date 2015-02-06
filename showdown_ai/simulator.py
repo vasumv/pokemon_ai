@@ -1,18 +1,14 @@
 from move_list import moves as MOVES
 from mega_items import mega_items as MEGA_ITEMS
-from naive_bayes import get_moves
 from log import SimulatorLog
 from data import MOVE_CORRECTIONS, get_hidden_power, correct_mega, get_move
-import smogon
-import json
 
 class Simulator():
 
-    def __init__(self, data, bw_data, graph):
+    def __init__(self, pokedata):
         self.log = SimulatorLog()
-        self.data = data
-        self.bw_data = bw_data
-        self.graph = graph
+        self.smogon_data = pokedata.smogon_data
+        self.pokedata = pokedata
         self.latest_turn = None
 
     def append_log(self, gamestate, lines, my_poke=None, opp_poke=None):
@@ -61,14 +57,15 @@ class Simulator():
                 if move in MOVE_CORRECTIONS:
                     move = MOVE_CORRECTIONS[move]
                 if move == "Hidden Power":
-                    hidden_power = get_hidden_power(poke_name, self.data)
+                    hidden_power = get_hidden_power(poke_name, self.smogon_data)
                     if hidden_power:
                         move = hidden_power
                     else:
                         return
-                if move not in poke.moveset.known_moves:
-                    poke.moveset.known_moves.append(move)
-                    guess_moves = [x[0] for x in get_moves(poke_name, poke.moveset.known_moves, self.graph, self.data)][:4-len(poke.moveset.known_moves)]
+                known_moves = poke.moveset.known_moves
+                if move not in known_moves:
+                    known_moves.append(move)
+                    guess_moves = [x[0] for x in poke.predict_moves(known_moves)][:4 - len(known_moves)]
                     poke.moveset.moves = poke.moveset.known_moves + guess_moves
             if poke.item in ["Choice Scarf", "Choice Specs", "Choice Band"]:
                 moves = poke.moveset.moves
