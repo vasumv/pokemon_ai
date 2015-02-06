@@ -9,6 +9,8 @@ class Simulator():
         self.log = SimulatorLog()
         self.smogon_data = pokedata.smogon_data
         self.pokedata = pokedata
+        self.score = 0
+        self.total = 0
         self.latest_turn = None
 
     def append_log(self, gamestate, lines, my_poke=None, opp_poke=None):
@@ -64,6 +66,10 @@ class Simulator():
                         return
                 known_moves = poke.moveset.known_moves
                 if move not in known_moves:
+                    self.total += 1
+                    old_guess_moves = [x[0] for x in poke.predict_moves(known_moves)][:4 - len(known_moves)]
+                    if move in old_guess_moves:
+                        self.score += 1
                     known_moves.append(move)
                     guess_moves = [x[0] for x in poke.predict_moves(known_moves)][:4 - len(known_moves)]
                     poke.moveset.moves = poke.moveset.known_moves + guess_moves
