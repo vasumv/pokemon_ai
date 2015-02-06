@@ -64,6 +64,7 @@ class Selenium():
     def choose_tier(self, tier='ou'):
         form = self.driver.find_element_by_css_selector(".select.formatselect")
         form.click()
+        time.sleep(2)
         tier = self.driver.find_element_by_css_selector("[name='selectFormat'][value='%s']" % tier)
         tier.click()
 
