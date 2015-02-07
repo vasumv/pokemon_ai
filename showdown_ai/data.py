@@ -17,12 +17,13 @@ NAME_CORRECTIONS = {"Keldeo-Resolute": "Keldeo",
                     "Gourgeist-*": "Gourgeist"}
 
 class PokeData(object):
-    def __init__(self, smogon_data, smogon_bw_data, graph, graph_poke, move_list):
+    def __init__(self, smogon_data, smogon_bw_data, graph, graph_poke, move_list, poke_moves):
         self.smogon_data = smogon_data
         self.smogon_bw_data = smogon_bw_data
         self.graph = graph
         self.graph_poke = graph_poke
         self.move_list = move_list
+        self.poke_moves = poke_moves
 
 
 def correct_mega(poke):
@@ -61,6 +62,8 @@ def load_data(data_dir):
     with open("%s/poke_bw.json" % data_dir) as fp:
         bw_data = json.loads(fp.read())
         bw_data = Smogon.convert_to_dict(bw_data)
+    with open("%s/poke_moves.json" % data_dir) as fp:
+        poke_moves = json.loads(fp.read())
 
     poke_list = graph['frequencies'].keys()
     for poke in poke_list:
@@ -88,5 +91,5 @@ def load_data(data_dir):
                     old_value = graph['cooccurences'][poke][move]['Hidden Power']
                     graph['cooccurences'][poke][move][hidden_power] = old_value
                 del graph['cooccurences'][poke][move]['Hidden Power']
-    return PokeData(data, bw_data, graph, None, MOVES)
+    return PokeData(data, bw_data, graph, None, MOVES, poke_moves)
 

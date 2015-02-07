@@ -73,7 +73,7 @@ class Simulator():
                         self.score += 1
                         print "adding score by 1"
                     known_moves.append(move)
-                    guess_moves = [x[0] for x in poke.predict_moves(known_moves)][:4 - len(known_moves)]
+                    guess_moves = [x[0] for x in poke.predict_moves(known_moves) if x[0] not in known_moves][:4 - len(known_moves)]
                     poke.moveset.moves = poke.moveset.known_moves + guess_moves
             if poke.item in ["Choice Scarf", "Choice Specs", "Choice Band"]:
                 moves = poke.moveset.moves

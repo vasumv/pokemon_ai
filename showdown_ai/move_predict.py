@@ -1,8 +1,9 @@
 import random
 
 class MovePredictor(object):
-    def __init__(self, pokedata):
+    def __init__(self, poke, pokedata):
         self.pokedata = pokedata
+        self.poke = poke
 
     def get_moves(self, poke, known_moves):
         raise NotImplementedError
@@ -12,23 +13,19 @@ class MovePredictor(object):
 
 class RandomMovePredictor(MovePredictor):
 
-    def __init__(self, pokedata):
-        super(RandomMovePredictor, self).__init__(pokedata)
-        move_list = list(self.pokedata.move_list.keys())
-        random.shuffle(move_list)
-
-        prob = 1.0 / len(move_list)
-        self.predictions = [(x, prob) for x in move_list]
+    def __init__(self, poke, pokedata):
+        super(RandomMovePredictor, self).__init__(poke, pokedata)
+        poke_moves = self.pokedata.poke_moves[self.poke]
+        random.shuffle(poke_moves)
+        prob = 1.0 / len(poke_moves)
+        self.predictions = [(x, prob) for x in poke_moves]
 
     def get_moves(self, poke, known_moves):
         return self.predictions
 
 
-
-
-
-def create_predictor(name, pokedata):
-    return PREDICTORS[name](pokedata)
+def create_predictor(name, poke, pokedata):
+    return PREDICTORS[name](poke, pokedata)
 
 PREDICTORS = {
     'RandomMovePredictor': RandomMovePredictor

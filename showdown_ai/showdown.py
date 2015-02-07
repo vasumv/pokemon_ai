@@ -34,6 +34,7 @@ class Showdown():
         self.smogon_bw_data = pokedata.smogon_bw_data
         self.graph = pokedata.graph
         self.graph_poke = pokedata.graph_poke
+        self.poke_moves = pokedata.poke_moves
         self.my_team = Team.make_team(team_text, self.smogon_data)
         self.opp_team = None
         self.simulator = Simulator(pokedata)
@@ -74,7 +75,7 @@ class Showdown():
             moveset.moves = None
             typing = self.smogon_data[poke_name].typing
             stats = self.smogon_data[poke_name].stats
-            predictor = create_predictor(self.predictor_name, self.pokedata)
+            predictor = create_predictor(self.predictor_name, name, self.pokedata)
             poke = Pokemon(name, typing, stats, moveset, predictor, calculate=True)
             moves = [x[0] for x in poke.predict_moves([])]
             poke.moveset.moves = moves[:4]
