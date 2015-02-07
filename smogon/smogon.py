@@ -18,7 +18,6 @@ class Smogon():
         query = {"pokemonalt":{"gen":"bw"}, "$": fields}
         params = {"q": json.dumps(query)}
         output = requests.get(self.url, params=params)
-        print output
         output = output.json()
         names = output['result']
         poke_names = []
@@ -33,7 +32,8 @@ class Smogon():
                                                 {"abilities":["alias","name","gen"]},
                                                 {"evconfigs":["hp","patk","pdef","spatk","spdef","spe"]},
                                                 {"natures":["hp","patk","pdef","spatk","spdef","spe"]},
-                                                {"$groupby":"slot","moveslots":["slot",{"move":["name","alias","gen"]}]},"description"]},{"moves":["name","alias","gen","category","power","accuracy","pp","description",{"type":["alias","name","gen"]}]}
+                                                {"$groupby":"slot","moveslots":["slot",{"move":["name","alias","gen"]}]},"description"]},
+                                                {"moves":["name","alias","gen","category","power","accuracy","pp","description",{"type":["alias","name","gen"]}]}
                                                 ]
         moveset_query = {"pokemon":{"gen":"bw","name":"%s" % pokemon}, "$": moveset_fields}
         moveset_params = {"q": json.dumps(moveset_query)}
@@ -52,6 +52,9 @@ class Smogon():
         abilities = meta_results[0]['abilities']
         type_list = []
         types = meta_results[0]['types']
+        poke_moves = []
+        for move in moveset_results[0]['moves']:
+            poke_moves.append(move['name'])
         for poke_type in types:
             type_list.append(poke_type['name'])
         if "Mega" in pokemon:
@@ -96,8 +99,7 @@ class Smogon():
             poke_moveset = SmogonMoveset("","",ability,"","","")
             poke_movesets.append(poke_moveset)
         poke = SmogonPokemon(pokemon, type_list, stats, poke_movesets)
-        return poke
-
+        return poke, poke_moves
 
 class SmogonPokemon():
     def __init__(self, name, typing, stats, movesets):
@@ -153,15 +155,20 @@ class SmogonMoveset():
 if __name__ == "__main__":
     smogon = Smogon()
     pokes = smogon.get_all_pokemon()
+    poke_names = []
     poke_objects = []
-    for poke in pokes:
-        try:
-            if "Mega" not in poke:
-                print poke
-                poke, typing, movesets = smogon.get_pokemon_info(poke)
-                poke_obj = smogon.convert_to_pokemon(poke, typing, movesets)
-                poke_objects.append(poke_obj.to_dict())
-        except IndexError:
-            print "error: " + poke
-    with open('data/poke_bw.json', 'a') as f:
-        f.write(json.dumps(poke_objects, sort_keys=True,indent=4, separators=(',', ': ')))
+    pokes_moves = {}
+    poke, typing, movesets = smogon.get_pokemon_info("Sylveon")
+    poke_moves = smogon.convert_to_pokemon(poke, typing, movesets)[1]
+    pokes_moves[poke] = poke_moves
+    #for poke in pokes:
+        #try:
+            #if "Mega" not in poke:
+                #print poke
+                #poke, typing, movesets = smogon.get_pokemon_info(poke)
+                #poke_moves = smogon.convert_to_pokemon(poke, typing, movesets)[1]
+                #pokes_moves[poke] = poke_moves
+        #except IndexError:
+            #print "error: " + poke
+    #with open('../data/poke_moves.json', 'a') as f:
+        #f.write(json.dumps(pokes_moves, sort_keys=True,indent=4, separators=(',', ': ')))
