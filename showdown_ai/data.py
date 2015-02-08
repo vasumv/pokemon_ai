@@ -33,6 +33,11 @@ def correct_mega(poke):
         poke = poke[:-5]
     return poke
 
+def correct_move(move):
+    if move in MOVE_CORRECTIONS:
+        move = MOVE_CORRECTIONS[move]
+    return move
+
 def get_move(move):
     if move in MOVE_CORRECTIONS:
         move = MOVE_CORRECTIONS[move]

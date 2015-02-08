@@ -130,10 +130,6 @@ class SimulatorLog():
 
         match = re.match(DAMAGE, line)
         if match:
-            print match.group(1)
-            print match.group(2)
-            print match.group(3)
-            print match.group(4)
             self.event_count += 1
             event['type'] = 'damage'
             event['index'] = self.event_count
