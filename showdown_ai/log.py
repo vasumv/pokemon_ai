@@ -23,7 +23,7 @@ ABILITY_STAT_CHANGE = r"(?P<opposing>The opposing )?(?P<poke>.+?)'s (?P<ability>
 MOVE_STAT_CHANGE = r"(?P<opposing2>The opposing )?(?P<poke2>.+?)'s (?P<stat2>%s) (?P<modifier2>%s)?(?P<direction2>%s)!" % (STATS, STAT_MODIFIER, MOVE_STAT_DIRECTION)
 
 STAT_CHANGE = r'%s|%s' % (ABILITY_STAT_CHANGE, MOVE_STAT_CHANGE)
-DAMAGE_MODIFIER = "(It's not very effective... |It's super effective! )"
+DAMAGE_MODIFIER = "(It's not very effective... |It's super effective! | A critical hit! )"
 
 POKE_NAME = '((?P<pokename>[^ ]+?)|(?P<nickname>.+?) \((?P<pokename2>[^ ]+?)\))'
 
