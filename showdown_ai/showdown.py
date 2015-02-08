@@ -6,7 +6,7 @@ from simulator import Simulator
 from gamestate import GameState
 from smogon import Smogon
 from agent import OptimisticMinimaxAgent, PessimisticMinimaxAgent, HumanAgent
-from data import NAME_CORRECTIONS, MOVE_CORRECTIONS, load_data, get_move, correct_name
+from data import NAME_CORRECTIONS, MOVE_CORRECTIONS, load_data, get_move, correct_name, get_hidden_power
 from move_predict import create_predictor
 from path import Path
 
@@ -146,12 +146,18 @@ class Showdown():
             if event.type == "move":
                 move_events.append(event)
         if len(move_events) == 2 and move_events[0].player == 1:
-            my_move = get_move(move_events[1].details['move'])
-            opp_move = get_move(move_events[0].details['move'])
+            my_move = move_events[1].details['move']
+            opp_move = move_events[0].details['move']
+            if my_move == "Hidden Power":
+                my_move = get_hidden_power(move_events[1].poke, self.smogon_data)
+            if opp_move == "Hidden Power":
+                opp_move = get_hidden_power(move_events[0].poke, self.smogon_data)
             if my_move in MOVE_CORRECTIONS:
                 my_move = MOVE_CORRECTIONS[my_move]
             if opp_move in MOVE_CORRECTIONS:
                 opp_move = MOVE_CORRECTIONS[opp_move]
+            my_move = get_move(my_move)
+            opp_move = get_move(opp_move)
             if move_events[0].player != self.simulator.get_first(old_gamestate, [my_move, opp_move], 0):
                 opp_poke = old_gamestate.get_team(1).primary()
                 for poke in gamestate.get_team(1).poke_list:

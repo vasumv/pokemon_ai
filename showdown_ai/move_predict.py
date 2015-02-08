@@ -17,7 +17,7 @@ class RandomMovePredictor(MovePredictor):
 
     def __init__(self, poke, pokedata):
         super(RandomMovePredictor, self).__init__(poke, pokedata)
-        poke_moves = self.pokedata.poke_moves[self.poke]
+        poke_moves = self.pokedata.poke_moves[correct_mega(correct_name(self.poke))]
         random.shuffle(poke_moves)
         prob = 1.0 / len(poke_moves)
         self.predictions = [(x, prob) for x in poke_moves]
@@ -30,7 +30,7 @@ class MoveFrequencyPredictor(MovePredictor):
     def __init__(self, poke, pokedata):
         super(MoveFrequencyPredictor, self).__init__(poke, pokedata)
         graph_move = self.pokedata.graph_move
-        self.poke_moves = self.pokedata.poke_moves[self.poke]
+        self.poke_moves = self.pokedata.poke_moves[correct_mega(correct_name(self.poke))]
         self.co = graph_move['cooccurences']
         self.freq = graph_move['frequencies']
 
@@ -56,7 +56,7 @@ class MoveCoPredictor(MovePredictor):
     def __init__(self, poke, pokedata):
         super(MoveCoPredictor, self).__init__(poke, pokedata)
         graph_move = self.pokedata.graph_move
-        self.poke_moves = self.pokedata.poke_moves[self.poke]
+        self.poke_moves = self.pokedata.poke_moves[correct_mega(correct_name(self.poke))]
         self.co = graph_move['cooccurences']
         self.freq = graph_move['frequencies']
 
