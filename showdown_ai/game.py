@@ -6,6 +6,8 @@ from team import Team
 from gamestate import GameState
 from simulator import Simulator
 from agent import HumanAgent, PessimisticMinimaxAgent, OptimisticMinimaxAgent
+from data import load_data
+from simulator import Action
 
 def main():
     from argparse import ArgumentParser
@@ -16,10 +18,11 @@ def main():
     argparser.add_argument('--gamestate', type=str)
     argparser.add_argument('--player', type=int, default=0)
     args = argparser.parse_args()
+    pokedata = load_data("data")
 
     players = [None, None]
     players[args.player] = HumanAgent()
-    players[1 - args.player] = PessimisticMinimaxAgent(2)
+    players[1 - args.player] = PessimisticMinimaxAgent(2, pokedata)
 
     with open(args.team1) as f1, open(args.team2) as f2, open("data/poke2.json") as f3:
         data = json.loads(f3.read())
@@ -32,7 +35,11 @@ def main():
             gamestate = pickle.load(fp)
     with open('cur2.gs', 'wb') as fp:
         pickle.dump(gamestate, fp)
-    simulator = Simulator()
+    simulator = Simulator(pokedata)
+    my_action = Action.create("move 0 1 True")
+    opp_action = Action.create("move 0 1 False")
+    simulator.simulate(gamestate, [my_action, opp_action], 0, log=True)
+    '''
     while not gamestate.is_over():
         print "=========================================================================================="
         print "Player 1 primary:", gamestate.get_team(0).primary()
@@ -50,3 +57,4 @@ def main():
         print "You lose!"
         print "Congrats to", gamestate.my_team
         print "Sucks for", gamestate.opp_team
+    '''

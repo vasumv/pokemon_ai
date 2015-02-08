@@ -54,8 +54,8 @@ def get_hidden_power(poke, data):
     return hidden_power
 
 def load_data(data_dir):
-    with open("%s/graph.json" % data_dir) as fp:
-        graph = json.loads(fp.read())
+    with open("%s/graph_poke.json" % data_dir) as fp:
+        graph_poke = json.loads(fp.read())
     with open("%s/poke2.json" % data_dir) as fp:
         data = json.loads(fp.read())
         data = Smogon.convert_to_dict(data)
@@ -65,7 +65,7 @@ def load_data(data_dir):
     with open("%s/poke_moves.json" % data_dir) as fp:
         poke_moves = json.loads(fp.read())
 
-    poke_list = graph['frequencies'].keys()
+    poke_list = graph_poke['frequencies'].keys()
     for poke in poke_list:
         if poke != "Meowstic":
             poke = correct_name(poke)
@@ -73,23 +73,23 @@ def load_data(data_dir):
             continue
         hidden_power = get_hidden_power(poke, data)
 
-        if "Hidden Power" in graph['frequencies'][poke]:
+        if "Hidden Power" in graph_poke['frequencies'][poke]:
             if hidden_power:
-                old_value = graph['frequencies'][poke]['Hidden Power']
-                graph['frequencies'][poke][hidden_power] = old_value
-            del graph['frequencies'][poke]['Hidden Power']
+                old_value = graph_poke['frequencies'][poke]['Hidden Power']
+                graph_poke['frequencies'][poke][hidden_power] = old_value
+            del graph_poke['frequencies'][poke]['Hidden Power']
 
-        if "Hidden Power" in graph['cooccurences'][poke]:
+        if "Hidden Power" in graph_poke['cooccurences'][poke]:
             if hidden_power:
-                old_value = graph['cooccurences'][poke]['Hidden Power']
-                graph['cooccurences'][poke][hidden_power] = old_value
-            del graph['cooccurences'][poke]['Hidden Power']
+                old_value = graph_poke['cooccurences'][poke]['Hidden Power']
+                graph_poke['cooccurences'][poke][hidden_power] = old_value
+            del graph_poke['cooccurences'][poke]['Hidden Power']
 
-        for move,moves in graph['cooccurences'][poke].items():
+        for move,moves in graph_poke['cooccurences'][poke].items():
             if "Hidden Power" in moves:
                 if hidden_power:
-                    old_value = graph['cooccurences'][poke][move]['Hidden Power']
-                    graph['cooccurences'][poke][move][hidden_power] = old_value
-                del graph['cooccurences'][poke][move]['Hidden Power']
-    return PokeData(data, bw_data, graph, None, MOVES, poke_moves)
+                    old_value = graph_poke['cooccurences'][poke][move]['Hidden Power']
+                    graph_poke['cooccurences'][poke][move][hidden_power] = old_value
+                del graph_poke['cooccurences'][poke][move]['Hidden Power']
+    return PokeData(data, bw_data, None, graph_poke, MOVES, poke_moves)
 
