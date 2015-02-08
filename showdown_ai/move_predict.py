@@ -25,6 +25,76 @@ class RandomMovePredictor(MovePredictor):
     def get_moves(self, known_moves):
         return self.predictions
 
+class MoveFrequencyPredictor(MovePredictor):
+
+    def __init__(self, poke, pokedata):
+        super(MoveFrequencyPredictor, self).__init__(poke, pokedata)
+        graph_move = self.pokedata.graph_move
+        self.poke_moves = self.pokedata.poke_moves[self.poke]
+        self.co = graph_move['cooccurences']
+        self.freq = graph_move['frequencies']
+
+    def get_freqs(self, freq):
+        probs = {}
+        total = float(sum(freq.values()))
+        for move in freq:
+            prob = freq[move] / total
+            probs[move] = prob
+        return probs
+
+    def get_moves(self, known_moves):
+        move_freq = sorted(self.get_freqs(self.freq).items(), key=lambda x: -x[1])
+        new_move_freq = []
+        for move in move_freq:
+            if move[0] in self.poke_moves:
+                new_move_freq.append(move)
+        self.predictions = new_move_freq
+        return self.predictions
+
+class MoveCoPredictor(MovePredictor):
+
+    def __init__(self, poke, pokedata):
+        super(MoveCoPredictor, self).__init__(poke, pokedata)
+        graph_move = self.pokedata.graph_move
+        self.poke_moves = self.pokedata.poke_moves[self.poke]
+        self.co = graph_move['cooccurences']
+        self.freq = graph_move['frequencies']
+
+    def get_freqs(self, freq):
+        probs = {}
+        total = float(sum(freq.values()))
+        for move in freq:
+            if move in self.poke_moves:
+                prob = freq[move] / total
+                probs[move] = prob
+        return probs
+
+    def get_moves(self, known_moves):
+        probs = {}
+        if len(known_moves) == 0:
+            probs = self.get_freqs(self.freq)
+        else:
+            for move in known_moves:
+                if move not in self.co:
+                    continue
+                total = float(sum(self.co[move].values()))
+                for othermove in self.co[move]:
+                    if othermove in MOVE_CORRECTIONS:
+                        probs[MOVE_CORRECTIONS[othermove]] = probs[othermove]
+                        del probs[move]
+                    if othermove not in self.poke_moves:
+                        continue
+                    if othermove in known_moves:
+                        continue
+                    prob = self.co[move][othermove] / total
+                    if othermove not in probs:
+                        probs[othermove] = 1
+                    probs[othermove] *= prob
+        if probs == {}:
+            probs = self.get_freqs(self.freq)
+        self.predictions = sorted(probs.items(), key=lambda x: -x[1])
+        return self.predictions
+
 class PokeFrequencyPredictor(MovePredictor):
 
     def __init__(self, poke, pokedata):
@@ -74,13 +144,15 @@ def create_predictor(name, poke, pokedata):
 
 PREDICTORS = {
     'RandomMovePredictor': RandomMovePredictor,
-    'PokeFrequencyPredictor': PokeFrequencyPredictor
+    'PokeFrequencyPredictor': PokeFrequencyPredictor,
+    'MoveFrequencyPredictor': MoveFrequencyPredictor,
+    'MoveCoPredictor': MoveCoPredictor
 }
 
 if __name__ == "__main__":
     pokedata = load_data("data")
     def foo(poke, moves):
-        return PokeFrequencyPredictor(poke, pokedata)(moves)
-    movepredictor = PokeFrequencyPredictor("Meganium", pokedata)
+        return MoveCoPredictor(poke, pokedata)(moves)
+    movepredictor = MoveCoPredictor("Heatran", pokedata)
 
 

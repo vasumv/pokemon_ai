@@ -17,10 +17,10 @@ NAME_CORRECTIONS = {"Keldeo-Resolute": "Keldeo",
                     "Gourgeist-*": "Gourgeist"}
 
 class PokeData(object):
-    def __init__(self, smogon_data, smogon_bw_data, graph, graph_poke, move_list, poke_moves):
+    def __init__(self, smogon_data, smogon_bw_data, graph_move, graph_poke, move_list, poke_moves):
         self.smogon_data = smogon_data
         self.smogon_bw_data = smogon_bw_data
-        self.graph = graph
+        self.graph_move = graph_move
         self.graph_poke = graph_poke
         self.move_list = move_list
         self.poke_moves = poke_moves
@@ -63,8 +63,10 @@ def get_hidden_power(poke, data):
     return hidden_power
 
 def load_data(data_dir):
-    with open("%s/graph_poke.json" % data_dir) as fp:
+    with open("%s/graph_poke2.json" % data_dir) as fp:
         graph_poke = json.loads(fp.read())
+    with open("%s/graph_move.json" % data_dir) as fp:
+        graph_move = json.loads(fp.read())
     with open("%s/poke3.json" % data_dir) as fp:
         data = json.loads(fp.read())
         data = Smogon.convert_to_dict(data)
@@ -100,5 +102,5 @@ def load_data(data_dir):
                     old_value = graph_poke['cooccurences'][poke][move]['Hidden Power']
                     graph_poke['cooccurences'][poke][move][hidden_power] = old_value
                 del graph_poke['cooccurences'][poke][move]['Hidden Power']
-    return PokeData(data, bw_data, None, graph_poke, MOVES, poke_moves)
+    return PokeData(data, bw_data, graph_move, graph_poke, MOVES, poke_moves)
 

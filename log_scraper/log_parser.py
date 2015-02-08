@@ -7,6 +7,10 @@ POKE = r"\|poke\|p(?P<player>.+?)\|(?P<poke>.+)"
 SWITCH = r"\|switch\|p(?P<player>.+?)a: (?P<nickname>.+?)\|(?P<pokename>.+)\|.+?"
 DRAG = r"\|drag\|p(?P<player>.+?)a: (?P<nickname>.+?)\|(?P<pokename>.+)\|.+?"
 MOVE = r"\|move\|p(?P<player>.+?)a: (?P<poke>.+?)\|(?P<move>.+?)\|.+?"
+MOVE_CORRECTIONS = {"ExtremeSpeed": "Extreme Speed",
+                    "ThunderPunch": "Thunder Punch",
+                    "SolarBeam": "Solar Beam",
+                    "DynamicPunch": "Dynamic Punch"}
 
 def handle_line(username, line):
     line = line.strip()
@@ -71,17 +75,66 @@ def handle_line(username, line):
             if match.group("move") not in opp_team[opp_nicknames[poke]]:
                 opp_team[opp_nicknames[poke]].append(match.group("move"))
 
+def make_graph_move(opp_team, graph_move, graph_move_frequencies):
+    for poke in opp_team:
+        for move in opp_team[poke]:
+            if move in MOVE_CORRECTIONS:
+                move = MOVE_CORRECTIONS[move]
+            if move not in graph_move_frequencies:
+                graph_move_frequencies[move] = 0
+            if move not in graph_move:
+                graph_move[move] = {}
+            graph_move_frequencies[move] += 1
+            for othermove in opp_team[poke]:
+                if othermove in MOVE_CORRECTIONS:
+                    othermove = MOVE_CORRECTIONS[othermove]
+                if move == othermove:
+                    continue
+                if othermove in graph_move[move]:
+                    graph_move[move][othermove] += 1
+                else:
+                    graph_move[move][othermove] = 1
+    return graph_move, graph_move_frequencies
+
+
+def make_graph_poke(opp_team, graph_poke, graph_frequencies):
+    for poke in opp_team:
+        if poke not in graph_poke:
+            graph_poke[poke] = {}
+        if poke not in graph_frequencies:
+            graph_frequencies[poke] = {}
+        for move in opp_team[poke]:
+            if move in MOVE_CORRECTIONS:
+                move = MOVE_CORRECTIONS[move]
+            if move not in graph_poke[poke]:
+                graph_poke[poke][move] = {}
+            if move not in graph_frequencies[poke]:
+                graph_frequencies[poke][move] = 0
+            graph_frequencies[poke][move] += 1
+            for othermove in opp_team[poke]:
+                if othermove in MOVE_CORRECTIONS:
+                    othermove = MOVE_CORRECTIONS[othermove]
+                if move == othermove:
+                    continue
+                if othermove in graph_poke[poke][move]:
+                    graph_poke[poke][move][othermove] += 1
+                else:
+                    graph_poke[poke][move][othermove] = 1
+    return graph_poke, graph_frequencies
+
 class Zoroark(Exception):
     pass
 
 if __name__ == "__main__":
     graph_poke = {}
+    graph_move = {}
+    graph_move_frequencies = {}
     graph_frequencies = {}
     names = path("./uu/logs").listdir() + path('./ou/logs').listdir()
     for username in names:
-        directory = path("%s" % username.decode("utf-8"))
+        directory = username
         for log in directory.files():
-            if "uu-186975396" in log or "uu-197134198" in log or "uu-202631332" in log or "uu-190650459" in log:
+            if "uu-186975396" in log or "uu-197134198" in log or "uu-202631332" in log or "uu-190650459" in log or "ou-203216292" in log or "ou-202070019" in log or "ou-147740692" in log:
                 continue
             if "gen4" in log or "gen3" in log or "gen2" in log or "gen1" in log or "pandora" in log:
                 continue
@@ -104,28 +157,10 @@ if __name__ == "__main__":
                     break
             if skip:
                 continue
-            for poke in opp_team:
-                if poke not in graph_poke:
-                    graph_poke[poke] = {}
-                if poke not in graph_frequencies:
-                    graph_frequencies[poke] = {}
-                for move in opp_team[poke]:
-                    if move not in graph_poke[poke]:
-                        graph_poke[poke][move] = {}
-                    if move not in graph_frequencies[poke]:
-                        graph_frequencies[poke][move] = 0
-                    graph_frequencies[poke][move] += 1
-                    for othermove in opp_team[poke]:
-                        if move == othermove:
-                            continue
-                        if othermove in graph_poke[poke][move]:
-                            graph_poke[poke][move][othermove] += 1
-                        else:
-                            graph_poke[poke][move][othermove] = 1
-
+            graph_move, graph_move_frequencies = make_graph_move(opp_team, graph_move, graph_move_frequencies)
     poke_graph = {
-        'frequencies': graph_frequencies,
-        'cooccurences': graph_poke,
+        'frequencies': graph_move_frequencies,
+        'cooccurences': graph_move,
     }
-    with open("graph.json", "w") as f:
+    with open("graph_move.json", "w") as f:
         f.write(json.dumps(poke_graph, sort_keys=True,indent=4, separators=(',', ': ')))

@@ -31,7 +31,7 @@ class Showdown():
         self.pokedata = pokedata
         self.smogon_data = pokedata.smogon_data
         self.smogon_bw_data = pokedata.smogon_bw_data
-        self.graph = pokedata.graph
+        self.graph_move = pokedata.graph_move
         self.graph_poke = pokedata.graph_poke
         self.poke_moves = pokedata.poke_moves
         self.my_team = Team.make_team(team_text, self.smogon_data)
@@ -66,14 +66,14 @@ class Showdown():
                 moveset = [m for m in self.smogon_data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag'] or 'PU' in m['tag']]
                 if len(moveset) > 1:
                     moveset = SmogonMoveset.from_dict(moveset[1])
+                elif len(moveset) == 1:
+                    moveset = SmogonMoveset.from_dict(moveset[0])
                 else:
+                    moveset = [m for m in self.smogon_bw_data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag'] or 'PU' in m['tag']]
                     moveset = SmogonMoveset.from_dict(moveset[0])
             elif poke_name not in self.smogon_data and poke_name in self.smogon_bw_data:
                 moveset = [m for m in self.smogon_bw_data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag'] or 'PU' in m['tag']]
-                if len(moveset) > 1:
-                    moveset = SmogonMoveset.from_dict(moveset[1])
-                else:
-                    moveset = SmogonMoveset.from_dict(moveset[0])
+                moveset = SmogonMoveset.from_dict(moveset[0])
             else:
                 moveset = SmogonMoveset(None, None, None, {'hp': 88, 'patk': 84, 'pdef': 84, 'spatk': 84, 'spdef': 84, 'spe': 84}, {'hp': 1.0, 'patk': 1.0, 'pdef': 1.0, 'spatk': 1.0, 'spdef': 1.0, 'spe': 1.0}, None, 'ou')
             moveset.moves = None
