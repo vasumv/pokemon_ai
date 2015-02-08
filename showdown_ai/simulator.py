@@ -57,7 +57,9 @@ class Simulator():
                 move = event.details['move']
                 poke_name = correct_mega(poke.name)
                 if move in MOVE_CORRECTIONS:
+                    print move
                     move = MOVE_CORRECTIONS[move]
+                    print move
                 if move == "Hidden Power":
                     hidden_power = get_hidden_power(poke_name, self.smogon_data)
                     if hidden_power:
@@ -153,7 +155,7 @@ class Simulator():
             print "%s has mold breaker!" % poke
 
 
-    def get_first(self, gamestate, moves, who=0):
+    def get_first(self, gamestate, moves, who=0, log=False):
         my_move = moves[who]
         opp_move = moves[1 - who]
 
@@ -197,6 +199,10 @@ class Simulator():
                 opp_move.priority += 1
 
         first = None
+        if log:
+            print my_move, my_move.priority
+            print opp_move, opp_move.priority
+            print who
         if my_move.priority > opp_move.priority:
             first = who
         elif opp_move.priority > my_move.priority:

@@ -34,6 +34,8 @@ def correct_mega(poke):
     return poke
 
 def get_move(move):
+    if move in MOVE_CORRECTIONS:
+        move = MOVE_CORRECTIONS[move]
     return MOVES[move]
 
 def correct_name(poke):

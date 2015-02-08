@@ -7,7 +7,7 @@ from gamestate import GameState
 from smogon import Smogon
 from agent import OptimisticMinimaxAgent, PessimisticMinimaxAgent, HumanAgent
 from naive_bayes import get_moves
-from data import NAME_CORRECTIONS, load_data, get_move
+from data import NAME_CORRECTIONS, MOVE_CORRECTIONS, load_data, get_move
 from move_predict import create_predictor
 
 import sys
@@ -136,7 +136,13 @@ class Showdown():
             if event.type == "move":
                 move_events.append(event)
         if len(move_events) == 2 and move_events[0].player == 1:
-            if move_events[0].player != self.simulator.get_first(old_gamestate, [get_move(move_events[0].details['move']), get_move(move_events[1].details['move'])], 0):
+            my_move = get_move(move_events[1].details['move'])
+            opp_move = get_move(move_events[0].details['move'])
+            if my_move in MOVE_CORRECTIONS:
+                my_move = MOVE_CORRECTIONS[my_move]
+            if opp_move in MOVE_CORRECTIONS:
+                opp_move = MOVE_CORRECTIONS[opp_move]
+            if move_events[0].player != self.simulator.get_first(old_gamestate, [my_move, opp_move], 0):
                 opp_poke = old_gamestate.get_team(1).primary()
                 for poke in gamestate.get_team(1).poke_list:
                     if poke.name == opp_poke.name:
@@ -285,7 +291,7 @@ def main():
     argparser.add_argument('--proxy', action='store_true')
     argparser.add_argument('--firefox', action='store_true')
     argparser.add_argument('--data_dir', type=str, default='data/')
-    argparser.add_argument('--predictor', default='FrequencyPokePredictor')
+    argparser.add_argument('--predictor', default='PokeFrequencyPredictor')
     args = argparser.parse_args()
 
     with open(args.team) as fp:

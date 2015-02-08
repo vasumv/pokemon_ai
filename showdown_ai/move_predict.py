@@ -45,6 +45,9 @@ class PokeFrequencyPredictor(MovePredictor):
                 total = float(sum(self.co[poke][move].values()))
                 for othermove in self.co[poke][move]:
                     if othermove in MOVE_CORRECTIONS:
+                        print othermove
+                        print MOVE_CORRECTIONS[othermove]
+                        print probs[othermove]
                         probs[MOVE_CORRECTIONS[othermove]] = probs[othermove]
                         del probs[move]
                     if othermove in known_moves:

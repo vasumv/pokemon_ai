@@ -132,9 +132,9 @@ class Selenium():
         time.sleep(2)
 
     def turn_off_sound(self):
-        sound = self.driver.find_element_by_xpath("//*[@id='header']/div[3]/button[2]")
+        sound = self.driver.find_element_by_css_selector(".icon[name='openSounds']")
         sound.click()
-        mute = self.driver.find_element_by_xpath("/html/body/div[4]/p[3]/label/input")
+        mute = self.driver.find_element_by_css_selector("[name='muted']")
         mute.click()
 
     def get_my_primary(self):
