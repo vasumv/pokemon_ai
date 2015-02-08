@@ -23,6 +23,7 @@ ABILITY_STAT_CHANGE = r"(?P<opposing>The opposing )?(?P<poke>.+?)'s (?P<ability>
 MOVE_STAT_CHANGE = r"(?P<opposing2>The opposing )?(?P<poke2>.+?)'s (?P<stat2>%s) (?P<modifier2>%s)?(?P<direction2>%s)!" % (STATS, STAT_MODIFIER, MOVE_STAT_DIRECTION)
 
 STAT_CHANGE = r'%s|%s' % (ABILITY_STAT_CHANGE, MOVE_STAT_CHANGE)
+DAMAGE_MODIFIER = "(It's not very effective... |It's super effective! )"
 
 POKE_NAME = '((?P<pokename>[^ ]+?)|(?P<nickname>.+?) \((?P<pokename2>[^ ]+?)\))'
 
@@ -35,7 +36,7 @@ MOVE = r'(?P<opposing>The opposing )?(?P<poke>.+?) used (?P<move>.+?)!'
 MEGA_EVOLVE = r"(?P<opposing>The opposing )?(?P<poke>.+?) has Mega Evolved into Mega (?P<mega>.+?)!"
 TURN = r'Turn (.+?)'
 LOST_ITEM = r".+? knocked off (?P<opposing>the opposing )?(?P<poke>.+?)'s .+?!"
-DAMAGE = r'(?P<opposing>The opposing )?(?P<poke>.+?) lost (?P<damage>[0-9]+(\.[0-9]+)?)% of its health!'
+DAMAGE = r"%s?(?P<opposing>The opposing )?(?P<poke>.+?) lost (?P<damage>[0-9]+(\.[0-9]+)?)%% of its health!" % DAMAGE_MODIFIER
 FAINTED = r'(?P<opposing>The opposing )?(?P<poke>.+?) fainted!'
 GAIN_HEALTH = r'(?P<opposing>The opposing )?(?P<poke>.+?) regained health!'
 LEFTOVERS = r'(?P<opposing>The opposing )?(?P<poke>.+?) restored a little HP using its (?P<item>.+?)!'

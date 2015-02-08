@@ -62,7 +62,6 @@ class Showdown():
             if not name:
                 continue
             poke_name = correct_name(name)
-            print self.smogon_data[poke_name].movesets
             if poke_name in self.smogon_data:
                 moveset = [m for m in self.smogon_data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag'] or 'PU' in m['tag']]
                 if len(moveset) > 1:
