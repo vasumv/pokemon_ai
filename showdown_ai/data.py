@@ -49,6 +49,8 @@ def correct_name(poke):
     return poke
 
 def get_hidden_power(poke, data):
+    poke = correct_name(poke)
+    poke = correct_mega(poke)
     movesets = data[poke].movesets
     hidden_power = None
     for moveset in movesets:
