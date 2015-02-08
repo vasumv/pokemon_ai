@@ -35,7 +35,7 @@ MOVE = r'(?P<opposing>The opposing )?(?P<poke>.+?) used (?P<move>.+?)!'
 MEGA_EVOLVE = r"(?P<opposing>The opposing )?(?P<poke>.+?) has Mega Evolved into Mega (?P<mega>.+?)!"
 TURN = r'Turn (.+?)'
 LOST_ITEM = r".+? knocked off (?P<opposing>the opposing )?(?P<poke>.+?)'s .+?!"
-DAMAGE = r'(.*[\.!] )?(?P<opposing>The opposing )?(?P<poke>.+?) lost (?P<damage>[0-9]+(\.[0-9]+)?)% of its health!'
+DAMAGE = r'(?P<opposing>The opposing )?(?P<poke>.+?) lost (?P<damage>[0-9]+(\.[0-9]+)?)% of its health!'
 FAINTED = r'(?P<opposing>The opposing )?(?P<poke>.+?) fainted!'
 GAIN_HEALTH = r'(?P<opposing>The opposing )?(?P<poke>.+?) regained health!'
 LEFTOVERS = r'(?P<opposing>The opposing )?(?P<poke>.+?) restored a little HP using its (?P<item>.+?)!'
@@ -129,6 +129,10 @@ class SimulatorLog():
 
         match = re.match(DAMAGE, line)
         if match:
+            print match.group(1)
+            print match.group(2)
+            print match.group(3)
+            print match.group(4)
             self.event_count += 1
             event['type'] = 'damage'
             event['index'] = self.event_count

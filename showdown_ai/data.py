@@ -60,7 +60,7 @@ def get_hidden_power(poke, data):
 def load_data(data_dir):
     with open("%s/graph_poke.json" % data_dir) as fp:
         graph_poke = json.loads(fp.read())
-    with open("%s/poke2.json" % data_dir) as fp:
+    with open("%s/poke3.json" % data_dir) as fp:
         data = json.loads(fp.read())
         data = Smogon.convert_to_dict(data)
     with open("%s/poke_bw.json" % data_dir) as fp:

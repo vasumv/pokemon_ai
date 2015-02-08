@@ -57,7 +57,7 @@ class Smogon():
             poke_moves.append(move['name'])
         for poke_type in types:
             type_list.append(poke_type['name'])
-        if "Mega" in pokemon:
+        if "-Mega" in pokemon:
             movesets = ""
         else:
             movesets = moveset_results[0]['movesets']
@@ -69,7 +69,7 @@ class Smogon():
         stats['spatk'] = meta_results[0]['spatk']
         stats['spdef'] = meta_results[0]['spdef']
         stats['spe'] = meta_results[0]['spe']
-        if "Mega" not in pokemon:
+        if "-Mega" not in pokemon:
             for moveset in movesets:
                 tag = moveset['tags'][0]['name']
                 if len(moveset['abilities']) != 0:
@@ -158,14 +158,19 @@ if __name__ == "__main__":
     poke_names = []
     poke_objects = []
     pokes_moves = {}
-    for poke in pokes:
-        try:
-            if "Mega" not in poke:
-                print poke
-                poke, typing, movesets = smogon.get_pokemon_info(poke)
-                poke_moves = smogon.convert_to_pokemon(poke, typing, movesets)[1]
-                pokes_moves[poke] = poke_moves
-        except IndexError:
-            print "error: " + poke
-    with open('../data/poke_moves.json', 'a') as f:
-        f.write(json.dumps(pokes_moves, sort_keys=True,indent=4, separators=(',', ': ')))
+    poke, typing, movesets = smogon.get_pokemon_info('Meganium')
+    poke_obj = smogon.convert_to_pokemon(poke, typing, movesets)[0]
+    with open("meganium.json", "w") as f:
+        f.write(json.dumps(poke_obj.to_dict(), sort_keys=True,indent=4, separators=(',', ': ')))
+
+    #for poke in pokes:
+        #try:
+            #if "Mega" not in poke:
+                #print poke
+                #poke, typing, movesets = smogon.get_pokemon_info(poke)
+                #poke_obj = smogon.convert_to_pokemon(poke, typing, movesets)[0]
+                #poke_objects.append(poke_obj.to_dict())
+        #except IndexError:
+            #print "error: " + poke
+    #with open('../data/poke3.json', 'w') as f:
+        #f.write(json.dumps(poke_objects, sort_keys=True,indent=4, separators=(',', ': ')))
