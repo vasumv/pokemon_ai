@@ -40,7 +40,8 @@ class Showdown():
         self.simulator = Simulator(pokedata)
 
     def reset(self):
-        self.score = 0
+        self.simulator.score = 0
+        self.simulator.total = 0
         self.selenium.reset()
         self.opp_team = None
         self.my_team = Team.make_team(self.team_text, self.smogon_data)
