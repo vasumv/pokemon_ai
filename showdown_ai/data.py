@@ -53,6 +53,8 @@ def get_hidden_power(poke, data):
                 break
         if hidden_power:
             break
+    if not hidden_power:
+        hidden_power = "Hidden Power [Ice]"
     return hidden_power
 
 def load_data(data_dir):

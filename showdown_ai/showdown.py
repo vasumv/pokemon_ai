@@ -6,12 +6,11 @@ from simulator import Simulator
 from gamestate import GameState
 from smogon import Smogon
 from agent import OptimisticMinimaxAgent, PessimisticMinimaxAgent, HumanAgent
-from naive_bayes import get_moves
 from data import NAME_CORRECTIONS, MOVE_CORRECTIONS, load_data, get_move
 from move_predict import create_predictor
+from path import Path
 
 import sys
-import time
 import signal
 import requests
 import json
@@ -67,8 +66,9 @@ class Showdown():
                 poke_name = NAME_CORRECTIONS[poke_name]
             moveset = [m for m in self.smogon_data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag']]
             if not len(moveset):
-                moveset = [m for m in self.bw_data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag']]
-            assert len(moveset), "No candidate movesets for %s" % name
+                moveset = [m for m in self.smogon_bw_data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag']]
+            if not len(moveset):
+                moveset = SmogonMoveset(None, None, None, None, {'hp': 88, 'patk': 84, 'pdef': 84, 'spatk': 84, 'spdef': 84, 'spe': 84}, {'hp': 1.0, 'patk': 1.0, 'pdef': 1.0, 'spatk': 1.0, 'spdef': 1.0, 'spe': 1.0}, None, 'ou')
             if len(moveset) > 1:
                 moveset = SmogonMoveset.from_dict(moveset[1])
             else:
@@ -237,38 +237,50 @@ class Showdown():
             log = self.selenium.get_log()
             id = self.selenium.get_battle_id()
             battle_url = "http://replay.pokemonshowdown.com/battle-%s" % id
+            user_folder = Path(".") / self.username
+            if not user_folder.exists():
+                user_folder.mkdir()
+            if not (user_folder / "wins").exists():
+                (user_folder / "wins").mkdir()
+            if not (user_folder / "losses").exists():
+                (user_folder / "losses").mkdir()
+            if not (user_folder / "crashes").exists():
+                (user_folder / "crashes").mkdir()
             if result == True:
                 print "---------------"
                 print "Won the battle! - %s" % battle_url
                 print "---------------"
                 self.scores['wins'] += 1
-                with open('logs/wins/%s.log' % id, 'w') as fp:
+                with open(user_folder / "wins" / ("%s.log" % id), 'w') as fp:
                     fp.write(log)
+                with open(user_folder / "wins" / ("%s.score" % id), 'w') as fp:
+                    print >>fp, self.simulator.score
+                    print >>fp, self.simulator.total
             elif result == False:
                 print "---------------"
                 print "Lost the battle! - %s" % battle_url
                 print "---------------"
                 self.scores['losses'] += 1
-                with open('logs/losses/%s.log' % id, 'w') as fp:
+                with open(user_folder / "losses" / ("%s.log" % id), 'w') as fp:
                     fp.write(log)
+                with open(user_folder / "losses" / ("%s.score" % id), 'w') as fp:
+                    print >>fp, self.simulator.score
+                    print >>fp, self.simulator.total
             else:
                 print "---------------"
                 print "Crashed! - %s" % id
                 print "---------------"
                 self.scores['crashes'] += 1
-                with open('logs/crashes/%s.log' % id, 'w') as fp:
+                with open(user_folder / "crashes" / ("%s.log" % id), 'w') as fp:
                     fp.write(log)
-                with open('logs/crashes/%s.err' % id, 'w') as fp:
+                with open(user_folder / "crashes" / ("%s.err" % id), 'w') as fp:
                     fp.write(error)
             print self.simulator.score, self.simulator.total
-            with open('logs/%s-score.txt' % id, 'w') as fp:
-                print >>fp, self.simulator.score
-                print >>fp, self.simulator.total
             events = SimulatorLog.parse(self.selenium.get_log())
             for event in events:
                 if event.type == "ladder":
                     if event.details['username'] == self.username:
-                        with open("ladder_ratings.txt", "a") as fp:
+                        with open(user_folder / "ladder_ratings.txt", "a") as fp:
                             fp.write(event.details['ladder'] + "\n")
             self.reset()
         self.update_monitor(done=True)

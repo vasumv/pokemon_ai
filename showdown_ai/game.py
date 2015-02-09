@@ -36,10 +36,6 @@ def main():
     with open('cur2.gs', 'wb') as fp:
         pickle.dump(gamestate, fp)
     simulator = Simulator(pokedata)
-    my_action = Action.create("move 0 1 True")
-    opp_action = Action.create("move 0 1 False")
-    simulator.simulate(gamestate, [my_action, opp_action], 0, log=True)
-    '''
     while not gamestate.is_over():
         print "=========================================================================================="
         print "Player 1 primary:", gamestate.get_team(0).primary()
@@ -57,4 +53,3 @@ def main():
         print "You lose!"
         print "Congrats to", gamestate.my_team
         print "Sucks for", gamestate.opp_team
-    '''

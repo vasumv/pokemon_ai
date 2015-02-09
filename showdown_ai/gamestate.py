@@ -10,7 +10,7 @@ class GameState():
         self.rocks = [False, False]
         self.spikes = [0, 0]
 
-    def dump(path):
+    def dump(self, path):
         with open(path, 'wb') as fp:
             pickle.dump(self, fp)
 
@@ -83,6 +83,8 @@ class GameState():
     def switch_pokemon(self, switch_index, who, log=False, hazards=True):
         my_team = self.get_team(who)
         opp_team = self.get_team(1 - who)
+        if my_team.primary().name == "Meloetta":
+            my_team.primary().meloetta_reset()
         my_team.set_primary(switch_index)
         my_poke = my_team.primary()
         opp_poke = opp_team.primary()

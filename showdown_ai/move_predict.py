@@ -1,5 +1,5 @@
 import random
-from data import MOVE_CORRECTIONS
+from data import MOVE_CORRECTIONS, load_data, correct_name
 from data import correct_mega
 
 class MovePredictor(object):
@@ -33,8 +33,9 @@ class PokeFrequencyPredictor(MovePredictor):
         self.co = graph_poke['cooccurences']
         self.freq = graph_poke['frequencies']
 
-    def get_moves(self, poke, known_moves):
-        poke = correct_mega(poke)
+    def get_moves(self, known_moves):
+        poke = correct_name(self.poke)
+        poke = correct_mega(self.poke)
         probs = {}
         if len(known_moves) == 0:
             probs = self.get_freqs(poke, self.freq)
@@ -62,7 +63,8 @@ class PokeFrequencyPredictor(MovePredictor):
         return self.predictions
 
     def get_freqs(self, poke, freq):
-        poke = correct_mega(poke)
+        poke = correct_name(self.poke)
+        poke = correct_mega(self.poke)
         probs = {}
         total = float(sum(freq[poke].values()))
         for move in freq[poke]:
@@ -77,4 +79,11 @@ PREDICTORS = {
     'RandomMovePredictor': RandomMovePredictor,
     'PokeFrequencyPredictor': PokeFrequencyPredictor
 }
+
+if __name__ == "__main__":
+    pokedata = load_data("data")
+    def foo(poke, moves):
+        return PokeFrequencyPredictor(poke, pokedata)(moves)
+    movepredictor = PokeFrequencyPredictor("Meganium", pokedata)
+
 

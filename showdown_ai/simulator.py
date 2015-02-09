@@ -53,6 +53,11 @@ class Simulator():
             print "%s got damaged: %f" % (poke, event.details['damage'])
         elif type == "move":
             print "%s used %s." % (poke, event.details['move'])
+            if event.details['move'] == "Relic Song":
+                my_poke = gamestate.get_team(player).primary()
+                evolved = my_poke.meloetta_evolve()
+                primary_poke = gamestate.get_team(player).primary_poke
+                gamestate.get_team(player).poke_list[primary_poke] = evolved
             if player == 1:
                 move = event.details['move']
                 poke_name = correct_mega(poke.name)
@@ -96,6 +101,8 @@ class Simulator():
                 poke.decrease_stage(event.details['stat'], abs(stages))
                 print "%s decreased its %s by %d stages" % (poke, event.details['stat'], stages)
         elif type == "switch":
+            if poke == "Meloetta":
+                poke = poke.meloetta_reset()
             team.set_primary(team.poke_list.index(poke))
             print "Player %d switched in %s" % (player, poke)
         elif type == "regain_health":
