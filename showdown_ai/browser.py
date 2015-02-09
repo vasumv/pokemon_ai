@@ -62,6 +62,8 @@ class Selenium():
         time.sleep(1)
 
     def choose_tier(self, tier='ou'):
+        while not self.check_exists_by_css_selector(".select.formatselect"):
+            time.sleep(1)
         form = self.driver.find_element_by_css_selector(".select.formatselect")
         form.click()
         time.sleep(2)
@@ -263,6 +265,12 @@ class Selenium():
             return False
         return True
 
+    def check_exists_by_css_selector(self, css):
+        try:
+            self.driver.find_elements_by_css_selector(css)
+        except NoSuchElementException:
+            return False
+        return True
 
     def start_timer(self):
         if self.check_exists_by_name("setTimer"):

@@ -154,5 +154,3 @@ if __name__ == "__main__":
     def foo(poke, moves):
         return MoveCoPredictor(poke, pokedata)(moves)
     movepredictor = MoveCoPredictor("Heatran", pokedata)
-
-
