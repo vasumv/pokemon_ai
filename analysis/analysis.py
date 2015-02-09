@@ -16,9 +16,11 @@ def get_frequencies():
     for folder in directory.listdir():
         if "asdf7016" not in folder:
             continue
-        score = 0
-        total = 0
+        if str(folder.name) not in freqs:
+            freqs[str(folder.name)] = {}
         for subfolder in folder.listdir():
+            score = 0
+            total = 0
             if "ladder" in subfolder or "crashes" in subfolder:
                 continue
             for file in subfolder.listdir():
@@ -30,7 +32,8 @@ def get_frequencies():
                     t = float(scores[1])
                     score += s
                     total += t
-            freqs[str(folder.name)] = score / total
+            freqs[str(folder.name)][str(subfolder.name)] = 1 - score / total
+    print freqs
     return freqs
 
 def get_ratings():
@@ -59,7 +62,7 @@ def graph_frequencies(freqs):
     ind = list(map(lambda x: x+width, xrange(4)))  # the x locations for the groups
     for classifier in MAP.keys():
         classifiers.append(classifier)
-        errors.append(1 - freqs[classifier])
+        errors.append(freqs[classifier])
     plt.xlabel('Classifiers')
     plt.ylabel('Prediction Error Rate')
     plt.xticks(list(map(lambda x: x+width, ind)), ("A", "B", "C", "D"))
@@ -70,11 +73,11 @@ def graph_frequencies(freqs):
 def graph_ratings(rating_dict):
     plt.figure()
     labels = ['A', 'B', 'C', 'D']
-    for classifier, label in zip(rating_dict.keys(), labels):
+    for classifier, label in zip(MAP.keys(), labels):
         rating_list = rating_dict[classifier]
         rating_list = map(int, rating_list)
         rating_list = [1000] + rating_list
-        plt.plot(range(len(rating_list)), rating_list, label=MAP[classifier])
+        plt.plot(range(len(rating_list)), rating_list, label="Bot " + MAP[classifier])
     plt.xlabel('Number of Games')
     plt.ylabel('Ladder Ratings')
     plt.title('Ladder Ratings of Move Classifiers')
@@ -87,8 +90,9 @@ def ttest(rating1, rating2):
 if __name__ == "__main__":
     freqs = get_frequencies()
     ratings = get_ratings()
-    rating1 = map(int, ratings['asdf7016pokefreq'])[1:]
-    rating2 = map(int, ratings['asdf7016random'])[1:]
+    print ratings
+    #rating1 = map(int, ratings['asdf7016pokefreq'])[1:]
+    #rating2 = map(int, ratings['asdf7016random'])[1:]
     graph_frequencies(freqs)
     print rating1, rating2
     _, p = ttest_ind(rating1, rating2)
