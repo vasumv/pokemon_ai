@@ -22,7 +22,7 @@ class RandomMovePredictor(MovePredictor):
         prob = 1.0 / len(poke_moves)
         self.predictions = [(x, prob) for x in poke_moves]
 
-    def get_moves(self, poke, known_moves):
+    def get_moves(self, known_moves):
         return self.predictions
 
 class PokeFrequencyPredictor(MovePredictor):
