@@ -62,13 +62,18 @@ class Selenium():
         time.sleep(1)
 
     def choose_tier(self, tier='ou'):
-        while not self.check_exists_by_css_selector(".select.formatselect"):
-            time.sleep(1)
-        form = self.driver.find_element_by_css_selector(".select.formatselect")
-        form.click()
-        time.sleep(2)
-        tier = self.driver.find_element_by_css_selector("[name='selectFormat'][value='%s']" % tier)
-        tier.click()
+        while True:
+            try:
+                while not self.check_exists_by_css_selector(".select.formatselect"):
+                    time.sleep(1)
+                form = self.driver.find_element_by_css_selector(".select.formatselect")
+                form.click()
+                time.sleep(2)
+                tier = self.driver.find_element_by_css_selector("[name='selectFormat'][value='%s']" % tier)
+                tier.click()
+            except SeleniumException:
+                self.driver.refresh()
+
 
     def start_ladder_battle(self):
         url1 = self.driver.current_url
