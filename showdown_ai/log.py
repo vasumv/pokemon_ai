@@ -55,6 +55,7 @@ NEW_ITEM = r"(?P<opposing>The opposing )?(?P<poke>.+?) obtained one (?P<item>.+)
 BELLY_DRUM = r"(?P<opposing>The opposing )?(?P<poke>.+?) cut its own HP and maximized its Attack!"
 MOLD_BREAKER = r"(?P<opposing>The opposing )?(?P<poke>.+?) breaks the mold!"
 LIFE_ORB = r"(?P<opposing>The opposing )?(?P<poke>.+?) lost some of its HP!"
+TAUNT = r"(?P<opposing>The opposing )?(?P<poke>.+?) fell for the taunt!"
 DISABLED = r"(?P<opposing>The opposing )?(?P<poke>.+?)'s (?P<move>.+?) was disabled!"
 NOT_DISABLED = r"(?P<opposing>The opposing )?(?P<poke>.+?) is disabled no more!"
 IS_OVER = r"(?P<username>.+?) won the battle!"
@@ -207,6 +208,20 @@ class SimulatorLog():
             self.event_count += 1
             event['index'] = self.event_count
             event['type'] = 'life_orb'
+            poke = match.group('poke')
+            player = 1 if match.group('opposing') is not None else 0
+            poke = self.nicknames[player][poke]
+            event['player'] = player
+            event['poke'] = poke
+            details = {}
+            event['details'] = details
+            return SimulatorEvent.from_dict(event)
+
+        match = re.match(TAUNT, line)
+        if match:
+            self.event_count += 1
+            event['index'] = self.event_count
+            event['type'] = 'taunt'
             poke = match.group('poke')
             player = 1 if match.group('opposing') is not None else 0
             poke = self.nicknames[player][poke]

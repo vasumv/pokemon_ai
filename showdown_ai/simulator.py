@@ -155,9 +155,12 @@ class Simulator():
             poke.ability = "Mold Breaker"
             print "%s has mold breaker!" % poke
         elif type == "disabled":
-            poke.ability = "Mold Breaker"
             move = event.details['move']
+            poke.disabled = move
             print "%s has mold breaker!" % poke
+        elif type == "taunt":
+            poke.set_taunt(True)
+            print "%s just got taunted!" % poke
 
 
     def get_first(self, gamestate, moves, who=0, log=False):

@@ -1,6 +1,7 @@
 import pickle
 from simulator import Action
 from type import get_multiplier
+from data import MOVES
 import logging
 logging.basicConfig()
 
@@ -87,6 +88,8 @@ class GameState():
             my_team.primary().meloetta_reset()
         my_team.set_primary(switch_index)
         my_poke = my_team.primary()
+        my_poke.reset_taunt()
+        my_poke.reset_disabled()
         opp_poke = opp_team.primary()
         if log:
             print (
@@ -174,4 +177,8 @@ class GameState():
             switches = []
         elif opp_poke.ability == "Arena Trap" and "Ghost" not in my_poke.typing and "Flying" not in my_poke.typing:
             switches = []
+        if my_poke.taunt:
+            moves = [move for move in moves if MOVES[my_poke.moveset.moves[move.move_index]].category != "Non-Damaging"]
+        if my_poke.disabled is not None:
+            moves = [move for move in moves if my_poke.moveset.moves[move.move_index] != my_poke.disabled]
         return moves + switches
