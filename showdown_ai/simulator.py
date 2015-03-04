@@ -80,6 +80,10 @@ class Simulator():
                     known_moves.append(move)
                     guess_moves = [x[0] for x in poke.predict_moves(known_moves) if x[0] not in known_moves][:4 - len(known_moves)]
                     poke.moveset.moves = poke.moveset.known_moves + guess_moves
+            if player == 0:
+                my_poke = gamestate.get_team(player).primary()
+		my_poke.last_move = event.details['move']
+	        
             if poke.item in ["Choice Scarf", "Choice Specs", "Choice Band"]:
                 moves = poke.moveset.moves
                 try:
@@ -161,6 +165,9 @@ class Simulator():
         elif type == "taunt":
             poke.set_taunt(True)
             print "%s just got taunted!" % poke
+        elif type == "encore":
+            poke.set_encore(True)
+            print "%s just got encored!" % poke
 
 
     def get_first(self, gamestate, moves, who=0, log=False):

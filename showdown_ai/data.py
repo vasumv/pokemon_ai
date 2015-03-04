@@ -46,7 +46,8 @@ def get_move(move):
 def correct_name(poke):
     if poke in NAME_CORRECTIONS:
         return NAME_CORRECTIONS[poke]
-    return poke
+    else:
+        return poke
 
 def get_hidden_power(poke, data):
     poke = correct_name(poke)

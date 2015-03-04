@@ -13,7 +13,7 @@ with open("data/poke_megas.json") as f:
 
 
 class Pokemon():
-    def __init__(self, name, typing, stats, moveset, predictor, alive=True, status=None, calculate=False, is_mega=False, old_typing=None, taunt=False, disabled=None):
+    def __init__(self, name, typing, stats, moveset, predictor, alive=True, status=None, calculate=False, is_mega=False, old_typing=None, taunt=False, disabled=None, last_move=None, encore=False):
         self.name = name
         self.typing = typing
         if old_typing is not None:
@@ -27,6 +27,8 @@ class Pokemon():
         self.status = status
         self.taunt = taunt
         self.disabled = disabled
+	self.last_move = last_move
+	self.encore = encore
         self.is_mega = is_mega
         self.ability = moveset.ability
         self.alive = alive
@@ -139,6 +141,12 @@ class Pokemon():
         if self.status is None:
             self.status = status
 
+    def set_last_move(self, move):
+        self.last_move = move
+
+    def set_encore(self, encore):
+        self.encore = encore 
+
     def set_disabled(self, move):
         self.disabled = move
 
@@ -153,6 +161,12 @@ class Pokemon():
 
     def reset_disabled(self):
         self.set_disabled(None)
+
+    def reset_last_move(self):
+        self.set_last_move(None)
+
+    def reset_encore(self):
+        self.set_encore(False)
 
     def can_evolve(self):
         if self.is_mega:
@@ -173,7 +187,9 @@ class Pokemon():
             status = self.status
             disabled = self.disabled
             taunt = self.taunt
-            poke = Pokemon(name, typing, stats, moveset, self.predictor, status=status, old_typing=None, calculate=True, is_mega=True, taunt=taunt, disabled=disabled)
+	    last_move = self.last_move
+	    encore = self.last_move
+            poke = Pokemon(name, typing, stats, moveset, self.predictor, status=status, old_typing=None, calculate=True, is_mega=True, taunt=taunt, disabled=disabled, last_move=last_move, encore=encore)
             poke.health = self.health
             if log:
                 print "%s mega evolved into %s." % (
@@ -189,7 +205,7 @@ class Pokemon():
     def copy(self):
         poke = Pokemon(self.name, self.typing[:],
                        self.stats, self.moveset, self.predictor,
-                       status=self.status, taunt=self.taunt, disabled=self.disabled, alive=self.alive,
+                       status=self.status, taunt=self.taunt, disabled=self.disabled, last_move=self.last_move, encore=self.encore, alive=self.alive,
                        calculate=False, old_typing=self.old_typing)
         poke.final_stats = self.final_stats
         poke.health = self.health
@@ -202,7 +218,7 @@ class Pokemon():
             poke.move_choice = self.move_choice
         return poke
     def to_tuple(self):
-        return (self.name, self.item, self.health, tuple(self.typing), self.status, self.taunt, self.disabled, tuple(self.stages.values()))
+        return (self.name, self.item, self.health, tuple(self.typing), self.status, self.taunt, self.disabled, self.last_move, self.encore, tuple(self.stages.values()))
 
     def __repr__(self):
         return "%s(%u)" % (self.name, self.health)

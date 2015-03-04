@@ -90,6 +90,8 @@ class GameState():
         my_poke = my_team.primary()
         my_poke.reset_taunt()
         my_poke.reset_disabled()
+	my_poke.reset_last_move()
+	my_poke.reset_encore()
         opp_poke = opp_team.primary()
         if log:
             print (
@@ -181,4 +183,8 @@ class GameState():
             moves = [move for move in moves if MOVES[my_poke.moveset.moves[move.move_index]].category != "Non-Damaging"]
         if my_poke.disabled is not None:
             moves = [move for move in moves if my_poke.moveset.moves[move.move_index] != my_poke.disabled]
+	if my_poke.encore:
+            moves = [move for move in moves if my_poke.moveset.moves[move.move_index] == my_poke.last_move]
+	    
+
         return moves + switches

@@ -37,11 +37,14 @@ class Selenium():
         else:
             return "lobby"
 
-    def login(self, username, password):
-        time.sleep(1)
+    def wait_home_page(self):
         while(self.driver.find_element_by_xpath("//*[@id='mainmenu']/div/div[1]/div[2]/div[1]/form/p[1]/button").get_attribute("value") != "randombattle"):
             print self.driver.find_element_by_xpath("//*[@id='mainmenu']/div/div[1]/div[2]/div[1]/form/p[1]/button").get_attribute("value")
             time.sleep(1)
+
+    def login(self, username, password):
+        time.sleep(1)
+	self.wait_home_page()
         #button = driver.find_element_by_xpath("//*[@id='mainmenu']/div/div[1]/div[2]/div[1]/form/p[1]/button")
         #text = button.text
         #if text != "Random Battle":
@@ -62,17 +65,13 @@ class Selenium():
         time.sleep(1)
 
     def choose_tier(self, tier='ou'):
-        while True:
-            try:
-                while not self.check_exists_by_css_selector(".select.formatselect"):
-                    time.sleep(1)
-                form = self.driver.find_element_by_css_selector(".select.formatselect")
-                form.click()
-                time.sleep(2)
-                tier = self.driver.find_element_by_css_selector("[name='selectFormat'][value='%s']" % tier)
-                tier.click()
-            except SeleniumException:
-                self.driver.refresh()
+	while not self.check_exists_by_css_selector(".select.formatselect"):
+	    time.sleep(1)
+	form = self.driver.find_element_by_css_selector(".select.formatselect")
+	form.click()
+	time.sleep(2)
+	tier = self.driver.find_element_by_css_selector("[name='selectFormat'][value='%s']" % tier)
+	tier.click()
 
 
     def start_ladder_battle(self):

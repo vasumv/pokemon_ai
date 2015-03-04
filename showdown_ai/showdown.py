@@ -193,11 +193,19 @@ class Showdown():
                 pass
 
     def play_game(self, challenge=None):
-        self.selenium.choose_tier()
-        if challenge:
-            self.selenium.start_challenge_battle(challenge)
-        else:
-            self.selenium.start_ladder_battle()
+	tier_click = False
+	while not tier_click:
+	    try:
+		self.selenium.choose_tier()
+		if challenge:
+		    self.selenium.start_challenge_battle(challenge)
+		else:
+		    self.selenium.start_ladder_battle()
+		tier_click = True
+	    except Error as e:
+	        print e
+		self.selenium.driver.refresh()
+		self.selenium.wait_home_page()
         self.selenium.wait_for_move()
         self.battle_url = self.selenium.driver.current_url
         self.update_monitor()
