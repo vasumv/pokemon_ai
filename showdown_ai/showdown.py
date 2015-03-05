@@ -62,6 +62,7 @@ class Showdown():
             if not name:
                 continue
             poke_name = correct_name(name)
+	    print "Corrected to:", poke_name
             if poke_name in self.smogon_data:
                 moveset = [m for m in self.smogon_data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag'] or 'PU' in m['tag']]
                 if len(moveset) > 1:
@@ -202,7 +203,7 @@ class Showdown():
 		else:
 		    self.selenium.start_ladder_battle()
 		tier_click = True
-	    except Error as e:
+	    except Exception as e:
 	        print e
 		self.selenium.driver.refresh()
 		self.selenium.wait_home_page()
@@ -249,6 +250,12 @@ class Showdown():
                 self.play_game(challenge=challenge)
             except SeleniumException:
                 log = SimulatorLog.parse(self.selenium.get_log())
+		disconnected = log.disconnected()
+		if disconnected:
+		    over,_ = log.is_over()
+		    while not over:
+		        time.sleep(5)
+			over,_ = log.is_over()
                 _, over_event = log.is_over()
                 result = over_event.details['username'] == self.username
             except:

@@ -60,6 +60,7 @@ ENCORE = r"(?P<opposing>The opposing )?(?P<poke>.+?) received an encore!"
 DISABLED = r"(?P<opposing>The opposing )?(?P<poke>.+?)'s (?P<move>.+?) was disabled!"
 NOT_DISABLED = r"(?P<opposing>The opposing )?(?P<poke>.+?) is disabled no more!"
 IS_OVER = r"(?P<username>.+?) won the battle!"
+DISCONNECTED = r".+? disconnected and has a minute to reconnect!"
 LADDER = r"(?P<username>.+?)'s rating: .+? (?P<ladder>\d+)"
 class SimulatorLog():
 
@@ -386,6 +387,17 @@ class SimulatorLog():
             event['details'] = details
             return SimulatorEvent.from_dict(event)
 
+        match = re.match(DISCONNECTED, line)
+        if match:
+            self.event_count += 1
+            event['index'] = self.event_count
+            event['type'] = 'disconnected'
+            details = {}
+            event['details'] = details
+            event['player'] = None
+            event['poke'] = None
+            return SimulatorEvent.from_dict(event)
+
         match = re.match(IS_OVER, line)
         if match:
             self.event_count += 1
@@ -581,6 +593,12 @@ class SimulatorLog():
             if event.type == "over":
                 return True, event
         return False, None
+
+    def disconnected(self):
+        for event in self.events:
+	    if event.type == "disconnected":
+	        return True
+	return False
 
     def reset(self):
         self.events = []
