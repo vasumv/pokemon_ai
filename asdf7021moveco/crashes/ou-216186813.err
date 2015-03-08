@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "c:\users\vikram\pokemon_ai\showdown_ai\showdown.py", line 258, in run
+    self.play_game(challenge=challenge)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\showdown.py", line 222, in play_game
+    gamestate = self.create_initial_gamestate()
+  File "c:\users\vikram\pokemon_ai\showdown_ai\showdown.py", line 73, in create_initial_gamestate
+    moveset = [m for m in self.smogon_bw_data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag'] or 'PU' in m['tag']]
+KeyError: 'Dedenne'

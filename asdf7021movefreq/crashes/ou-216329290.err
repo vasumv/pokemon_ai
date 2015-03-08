@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "c:\users\vikram\pokemon_ai\showdown_ai\showdown.py", line 258, in run
+    self.play_game(challenge=challenge)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\showdown.py", line 240, in play_game
+    gamestate = self.update_latest_turn(gamestate)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\showdown.py", line 144, in update_latest_turn
+    self.simulator.append_log(gamestate, turns[-1], my_poke=my_poke_name, opp_poke=opp_poke_name)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\simulator.py", line 23, in append_log
+    self.handle_event(gamestate, event)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\simulator.py", line 108, in handle_event
+    team.set_primary(team.poke_list.index(poke))
+ValueError: None is not in list

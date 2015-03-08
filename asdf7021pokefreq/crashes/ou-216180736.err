@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "c:\users\vikram\pokemon_ai\showdown_ai\showdown.py", line 258, in run
+    self.play_game(challenge=challenge)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\showdown.py", line 240, in play_game
+    gamestate = self.update_latest_turn(gamestate)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\showdown.py", line 144, in update_latest_turn
+    self.simulator.append_log(gamestate, turns[-1], my_poke=my_poke_name, opp_poke=opp_poke_name)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\simulator.py", line 23, in append_log
+    self.handle_event(gamestate, event)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\simulator.py", line 81, in handle_event
+    guess_moves = [x[0] for x in poke.predict_moves(known_moves) if x[0] not in known_moves][:4 - len(known_moves)]
+  File "c:\users\vikram\pokemon_ai\showdown_ai\team.py", line 203, in predict_moves
+    return self.predictor(known_moves)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\move_predict.py", line 14, in __call__
+    return self.get_moves(*args)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\move_predict.py", line 119, in get_moves
+    probs[MOVE_CORRECTIONS[othermove]] = probs[othermove]
+KeyError: u'Softboiled'
