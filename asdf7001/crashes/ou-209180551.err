@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/showdown.py", line 231, in run
+    self.play_game(challenge=challenge)
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/showdown.py", line 214, in play_game
+    gamestate = self.correct_gamestate(gamestate)
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/showdown.py", line 111, in correct_gamestate
+    gamestate = gamestate.deep_copy()
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/gamestate.py", line 24, in deep_copy
+    state = GameState([x.copy() for x in self.teams])
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/team.py", line 200, in copy
+    team = Team([p.copy() for p in self.poke_list])
+AttributeError: 'NoneType' object has no attribute 'copy'

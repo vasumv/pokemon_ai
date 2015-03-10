@@ -306,6 +306,9 @@ class Showdown():
                     fp.write(log)
                 with open(user_folder / "crashes" / ("%s.err" % id), 'w') as fp:
                     fp.write(error)
+                with open(user_folder / "crashes" / ("%s.score" % id), 'w') as fp:
+                    print >>fp, self.simulator.score
+                    print >>fp, self.simulator.total
             print self.simulator.score, self.simulator.total
             events = SimulatorLog.parse(self.selenium.get_log())
             for event in events:

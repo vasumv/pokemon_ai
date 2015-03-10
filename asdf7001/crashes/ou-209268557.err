@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/showdown.py", line 235, in run
+    self.play_game(challenge=challenge)
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/showdown.py", line 199, in play_game
+    gamestate = self.create_initial_gamestate()
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/showdown.py", line 89, in create_initial_gamestate
+    predictor = create_predictor(self.predictor_name, name, self.pokedata)
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/move_predict.py", line 93, in create_predictor
+    return PREDICTORS[name](poke, pokedata)
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/move_predict.py", line 31, in __init__
+    super(PokeFrequencyPredictor, self).__init__(poke, pokedata)
+TypeError: super(type, obj): obj must be an instance or subtype of type

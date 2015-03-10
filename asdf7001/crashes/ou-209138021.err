@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/showdown.py", line 225, in run
+    self.play_game(challenge=challenge)
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/showdown.py", line 190, in play_game
+    gamestate = self.update_latest_turn(gamestate)
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/showdown.py", line 131, in update_latest_turn
+    gamestate = gamestate.deep_copy()
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/gamestate.py", line 24, in deep_copy
+    state = GameState([x.copy() for x in self.teams])
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/team.py", line 199, in copy
+    team = Team([p.copy() for p in self.poke_list])
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/team.py", line 174, in copy
+    self.stats, self.moveset, self.predictor,
+AttributeError: Pokemon instance has no attribute 'stats'

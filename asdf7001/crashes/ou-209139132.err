@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/showdown.py", line 225, in run
+    self.play_game(challenge=challenge)
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/showdown.py", line 202, in play_game
+    move = self.agent.get_action(gamestate, 0)
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/agent.py", line 42, in get_action
+    best_action, value, opp_action = self.minimax(state, self.depth, who, log=log)
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/agent.py", line 82, in minimax
+    new_action, state_value, _ = self.minimax(new_state, depth - 1, who)
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/agent.py", line 77, in minimax
+    tuple_state = new_state.to_tuple()
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/gamestate.py", line 39, in to_tuple
+    return (tuple(x.to_tuple() for x in self.teams), (self.rocks[0], self.rocks[1], self.spikes[0], self.spikes[1]))
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/gamestate.py", line 39, in <genexpr>
+    return (tuple(x.to_tuple() for x in self.teams), (self.rocks[0], self.rocks[1], self.spikes[0], self.spikes[1]))
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/team.py", line 205, in to_tuple
+    return (self.primary_poke, tuple(x.to_tuple() for x in self.poke_list))
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/team.py", line 205, in <genexpr>
+    return (self.primary_poke, tuple(x.to_tuple() for x in self.poke_list))
+AttributeError: 'NoneType' object has no attribute 'to_tuple'

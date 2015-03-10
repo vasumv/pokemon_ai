@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/showdown.py", line 241, in run
+    self.play_game(challenge=challenge)
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/showdown.py", line 218, in play_game
+    move = self.agent.get_action(gamestate, 0)
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/agent.py", line 42, in get_action
+    best_action, value, opp_action = self.minimax(state, self.depth, who, log=log)
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/agent.py", line 64, in minimax
+    my_legal_actions = state.get_legal_actions(who)
+  File "/home/vasu/Work/pokemon_ai/showdown_ai/gamestate.py", line 180, in get_legal_actions
+    if my_poke.moveset.moves[move.move_index].category == "Non-Damaging":
+AttributeError: 'str' object has no attribute 'category'
