@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "c:\users\vikram\pokemon_ai\showdown_ai\showdown.py", line 250, in run
+    self.play_game(challenge=challenge)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\showdown.py", line 215, in play_game
+    gamestate = self.update_latest_turn(gamestate)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\showdown.py", line 139, in update_latest_turn
+    opp_poke_name = self.selenium.get_opp_primary()
+  File "c:\users\vikram\pokemon_ai\showdown_ai\browser.py", line 154, in get_opp_primary
+    img = self.driver.find_element_by_xpath("/html/body/div[4]/div[1]/div/div[4]/div[1]/img[6]")
+  File "c:\Users\vikram\pokemon_ai\venv\lib\site-packages\selenium-2.44.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 230, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "c:\Users\vikram\pokemon_ai\venv\lib\site-packages\selenium-2.44.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 662, in find_element
+    {'using': by, 'value': value})['value']
+  File "c:\Users\vikram\pokemon_ai\venv\lib\site-packages\selenium-2.44.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 173, in execute
+    self.error_handler.check_response(response)
+  File "c:\Users\vikram\pokemon_ai\venv\lib\site-packages\selenium-2.44.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 166, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div[1]/div/div[4]/div[1]/img[6]"}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///c:/users/vikram/appdata/local/temp/tmpbrptjo/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:26)
+    at FirefoxDriver.prototype.findElement (file:///c:/users/vikram/appdata/local/temp/tmpbrptjo/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/vikram/appdata/local/temp/tmpbrptjo/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/vikram/appdata/local/temp/tmpbrptjo/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/vikram/appdata/local/temp/tmpbrptjo/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)

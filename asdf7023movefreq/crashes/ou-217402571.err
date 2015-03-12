@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "c:\users\vikram\pokemon_ai\showdown_ai\showdown.py", line 250, in run
+    self.play_game(challenge=challenge)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\showdown.py", line 214, in play_game
+    gamestate = self.create_initial_gamestate()
+  File "c:\users\vikram\pokemon_ai\showdown_ai\showdown.py", line 90, in create_initial_gamestate
+    predictor = create_predictor(self.predictor_name, name, self.pokedata)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\move_predict.py", line 143, in create_predictor
+    return PREDICTORS[name](poke, pokedata)
+  File "c:\users\vikram\pokemon_ai\showdown_ai\move_predict.py", line 33, in __init__
+    self.poke_moves = self.pokedata.poke_moves[correct_mega(correct_name(self.poke))]
+KeyError: 'Meganium'
