@@ -133,8 +133,8 @@ class PokeFrequencyPredictor(MovePredictor):
                     continue
                 prob = 1.0
                 for othermove in known_moves:
-                    print move, othermove
                     if othermove not in self.co[poke][move]:
+                        prob *= 0
                         continue
                     prob *= self.co[poke][move][othermove]
                 if move in MOVE_CORRECTIONS:
