@@ -36,9 +36,8 @@ class MoveFrequencyPredictor(MovePredictor):
 
     def get_freqs(self, freq):
         probs = {}
-        total = float(sum(freq.values()))
         for move in freq:
-            prob = freq[move] / total
+            prob = freq[move]
             probs[move] = prob
         return probs
 
@@ -62,10 +61,9 @@ class MoveCoPredictor(MovePredictor):
 
     def get_freqs(self, freq):
         probs = {}
-        total = float(sum(freq.values()))
         for move in freq:
             if move in self.poke_moves:
-                prob = freq[move] / total
+                prob = freq[move]
                 probs[move] = prob
         return probs
 
@@ -75,18 +73,26 @@ class MoveCoPredictor(MovePredictor):
             probs = self.get_freqs(self.freq)
         else:
             for move in self.co:
+                print move
                 if move in known_moves:
                     continue
                 if move not in self.poke_moves:
                     continue
                 prob = 1.0
                 for othermove in known_moves:
+                    if othermove not in self.co[move]:
+                        prob *= 0
+                        continue
                     prob *= self.co[move][othermove]
                 if move in MOVE_CORRECTIONS:
                     probs[MOVE_CORRECTIONS[othermove]] = probs[othermove]
                     del probs[move]
                 prob *= self.freq[move]
                 probs[move] = prob
+        if probs == {}:
+            probs = self.get_freqs(self.freq)
+        self.predictions = sorted(probs.items(), key=lambda x: -x[1])
+        return self.predictions
 
     def get_moves_assumption_two(self, known_moves):
         probs = {}
@@ -97,6 +103,7 @@ class MoveCoPredictor(MovePredictor):
                 if move not in self.co:
                     continue
                 for othermove in self.co[move]:
+                    prob = 1.0
                     if othermove in MOVE_CORRECTIONS:
                         probs[MOVE_CORRECTIONS[othermove]] = probs[othermove]
                         del probs[move]
@@ -208,5 +215,5 @@ PREDICTORS = {
 if __name__ == "__main__":
     pokedata = load_data("data")
     def foo(poke, moves):
-        return PokeFrequencyPredictor(poke, pokedata)(moves)
-    movepredictor = PokeFrequencyPredictor("Charizard", pokedata)
+        return MoveCoPredictor(poke, pokedata)(moves)
+    movepredictor = MoveCoPredictor("Charizard", pokedata)
