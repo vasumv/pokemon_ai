@@ -68,8 +68,18 @@ def get_hidden_power(poke, data):
 def load_data(data_dir):
     with open("%s/graph_poke2.json" % data_dir) as fp:
         graph_poke = json.loads(fp.read())
+        for poke in graph_poke['cooccurences']:
+            for move in graph_poke['cooccurences'][poke]:
+                total = float(sum(graph_poke['cooccurences'][poke][move].values()))
+                for othermove in graph_poke['cooccurences'][poke][move]:
+                    graph_poke['cooccurences'][poke][move][othermove] /= total
+
     with open("%s/graph_move.json" % data_dir) as fp:
         graph_move = json.loads(fp.read())
+        for move in graph_poke['cooccurences']:
+            total = float(sum(graph_poke['cooccurences'][move].values()))
+            for othermove in graph_poke['cooccurences'][move]:
+                graph_poke['cooccurences'][move][othermove] /= total
     with open("%s/poke3.json" % data_dir) as fp:
         data = json.loads(fp.read())
         data = Smogon.convert_to_dict(data)
