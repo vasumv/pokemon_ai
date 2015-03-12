@@ -73,13 +73,19 @@ def load_data(data_dir):
                 total = float(sum(graph_poke['cooccurences'][poke][move].values()))
                 for othermove in graph_poke['cooccurences'][poke][move]:
                     graph_poke['cooccurences'][poke][move][othermove] /= total
-
+        for poke in graph_poke['frequencies']:
+            total = float(sum(graph_poke['frequencies'][poke].values()))
+            for move in graph_poke['frequencies'][poke]:
+                graph_poke['frequencies'][poke][move] /= total
     with open("%s/graph_move.json" % data_dir) as fp:
         graph_move = json.loads(fp.read())
-        for move in graph_poke['cooccurences']:
-            total = float(sum(graph_poke['cooccurences'][move].values()))
-            for othermove in graph_poke['cooccurences'][move]:
-                graph_poke['cooccurences'][move][othermove] /= total
+        for move in graph_move['cooccurences']:
+            total = float(sum(graph_move['cooccurences'][move].values()))
+            for othermove in graph_move['cooccurences'][move]:
+                graph_move['cooccurences'][move][othermove] /= total
+        total = float(sum(graph_move['frequencies'].values()))
+        for move in graph_move['frequencies']:
+            graph_move['frequencies'][move] /= total
     with open("%s/poke3.json" % data_dir) as fp:
         data = json.loads(fp.read())
         data = Smogon.convert_to_dict(data)

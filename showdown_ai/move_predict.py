@@ -74,10 +74,28 @@ class MoveCoPredictor(MovePredictor):
         if len(known_moves) == 0:
             probs = self.get_freqs(self.freq)
         else:
+            for move in self.co:
+                if move in known_moves:
+                    continue
+                if move not in self.poke_moves:
+                    continue
+                prob = 1.0
+                for othermove in known_moves:
+                    prob *= self.co[move][othermove]
+                if move in MOVE_CORRECTIONS:
+                    probs[MOVE_CORRECTIONS[othermove]] = probs[othermove]
+                    del probs[move]
+                prob *= self.freq[move]
+                probs[move] = prob
+
+    def get_moves_assumption_two(self, known_moves):
+        probs = {}
+        if len(known_moves) == 0:
+            probs = self.get_freqs(self.freq)
+        else:
             for move in known_moves:
                 if move not in self.co:
                     continue
-                total = float(sum(self.co[move].values()))
                 for othermove in self.co[move]:
                     if othermove in MOVE_CORRECTIONS:
                         probs[MOVE_CORRECTIONS[othermove]] = probs[othermove]
@@ -86,7 +104,7 @@ class MoveCoPredictor(MovePredictor):
                         continue
                     if othermove in known_moves:
                         continue
-                    prob = self.co[move][othermove] / total
+                    prob = self.co[move][othermove]
                     if othermove not in probs:
                         probs[othermove] = 1
                     probs[othermove] *= prob
@@ -110,17 +128,56 @@ class PokeFrequencyPredictor(MovePredictor):
         if len(known_moves) == 0:
             probs = self.get_freqs(poke, self.freq)
         else:
+            for move in self.co[poke]:
+                if move in known_moves:
+                    continue
+                prob = 1.0
+                for othermove in known_moves:
+                    print move, othermove
+                    if othermove not in self.co[poke][move]:
+                        continue
+                    prob *= self.co[poke][move][othermove]
+                if move in MOVE_CORRECTIONS:
+                    probs[MOVE_CORRECTIONS[othermove]] = probs[othermove]
+                    del probs[move]
+                prob *= self.freq[poke][move]
+                probs[move] = prob
+        #else:
+            #for move in known_moves:
+                #if move not in self.co[poke]:
+                    #continue
+                #for othermove in self.co[poke][move]:
+                    #if othermove in MOVE_CORRECTIONS:
+                        #probs[MOVE_CORRECTIONS[othermove]] = probs[othermove]
+                        #del probs[move]
+                    #if othermove in known_moves:
+                        #continue
+                    #prob = self.co[poke][move][othermove]
+                    #if othermove not in probs:
+                        #probs[othermove] = 1
+                    #probs[othermove] *= prob
+        if probs == {}:
+            probs = self.get_freqs(poke, self.freq)
+        self.predictions = sorted(probs.items(), key=lambda x: -x[1])
+        return self.predictions
+
+    def get_moves_assumption_two(self, known_moves):
+        poke = correct_name(self.poke)
+        poke = correct_mega(self.poke)
+        probs = {}
+        if len(known_moves) == 0:
+            probs = self.get_freqs(poke, self.freq)
+        else:
             for move in known_moves:
                 if move not in self.co[poke]:
                     continue
-                total = float(sum(self.co[poke][move].values()))
                 for othermove in self.co[poke][move]:
                     if othermove in MOVE_CORRECTIONS:
                         probs[MOVE_CORRECTIONS[othermove]] = probs[othermove]
                         del probs[move]
                     if othermove in known_moves:
                         continue
-                    prob = self.co[poke][move][othermove] / total
+                    prob = self.co[poke][move][othermove]
                     if othermove not in probs:
                         probs[othermove] = 1
                     probs[othermove] *= prob
@@ -133,9 +190,8 @@ class PokeFrequencyPredictor(MovePredictor):
         poke = correct_name(self.poke)
         poke = correct_mega(self.poke)
         probs = {}
-        total = float(sum(freq[poke].values()))
         for move in freq[poke]:
-            prob = freq[poke][move] / total
+            prob = freq[poke][move]
             probs[move] = prob
         return probs
 
@@ -152,5 +208,5 @@ PREDICTORS = {
 if __name__ == "__main__":
     pokedata = load_data("data")
     def foo(poke, moves):
-        return MoveCoPredictor(poke, pokedata)(moves)
-    movepredictor = MoveCoPredictor("Heatran", pokedata)
+        return PokeFrequencyPredictor(poke, pokedata)(moves)
+    movepredictor = PokeFrequencyPredictor("Charizard", pokedata)
