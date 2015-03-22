@@ -1,6 +1,7 @@
 from simulator import Simulator, Action
 
 import logging
+import time
 logging.basicConfig()
 
 class Agent():
@@ -30,16 +31,24 @@ class HumanAgent(Agent):
 
 class MinimaxAgent(Agent):
 
-    def __init__(self, depth, pokedata):
+    def __init__(self, depth, pokedata, use_cache=True, alphabet=True, log_file=None):
         self.depth = depth
         self.simulator = Simulator(pokedata)
         self.cache = {}
         self.hit_count = 0
         self.prune_count = 0
+        self.use_cache = use_cache
+        self.alphabet = alphabet
+        self.log_file = log_file
 
     def get_action(self, state, who, log=True):
-        #print "My Legal Actions:", state.get_legal_actions(who)
+        start = time.time()
         best_action, value, opp_action = self.minimax(state, self.depth, who, log=log)
+        end = time.time()
+        elapsed = end - start
+        if self.log_file is not None:
+            with open(self.log_file, 'a') as fp:
+                print >>fp, elapsed
         if best_action:
             if best_action.is_move():
                 my_move_name = state.get_team(who).primary().moveset.moves[best_action.move_index]
@@ -75,7 +84,7 @@ class PessimisticMinimaxAgent(MinimaxAgent):
                 actions[1 - who] = opp_action
                 new_state = self.simulator.simulate(state, actions, who)
                 tuple_state = new_state.to_tuple()
-                if (depth, tuple_state) in self.cache:
+                if self.use_cache and (depth, tuple_state) in self.cache:
                     new_action, state_value = self.cache[(depth, tuple_state)]
                     self.hit_count += 1
                 else:
@@ -84,7 +93,7 @@ class PessimisticMinimaxAgent(MinimaxAgent):
                 if opp_v >= state_value:
                     opp_v = state_value
                     best_opp_action = opp_action
-                if state_value < my_v:
+                if self.alphabet and state_value < my_v:
                     self.prune_count += 1
                     break
             if opp_v > my_v:

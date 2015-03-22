@@ -21,8 +21,9 @@ def main():
     pokedata = load_data("data")
 
     players = [None, None]
-    players[args.player] = HumanAgent()
-    players[1 - args.player] = PessimisticMinimaxAgent(2, pokedata)
+    #players[args.player] = HumanAgent()
+    players[args.player] = PessimisticMinimaxAgent(2, pokedata, log_file="normal.txt")
+    players[1 - args.player] = PessimisticMinimaxAgent(2, pokedata, log_file="no_cache.txt", use_cache=False)
 
     with open(args.team1) as f1, open(args.team2) as f2, open("data/poke2.json") as f3:
         data = json.loads(f3.read())
