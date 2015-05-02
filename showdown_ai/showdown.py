@@ -1,14 +1,15 @@
 from smogon import SmogonMoveset
 from team import Team, Pokemon
-from browser import Selenium, SeleniumException
+from browser import Selenium
 from log import SimulatorLog
 from simulator import Simulator
 from gamestate import GameState
-from smogon import Smogon
-from agent import OptimisticMinimaxAgent, PessimisticMinimaxAgent, HumanAgent
+from agent import PessimisticMinimaxAgent
 from data import NAME_CORRECTIONS, MOVE_CORRECTIONS, load_data, get_move, correct_name, get_hidden_power
 from move_predict import create_predictor
 from path import Path
+from exceptions import *
+import time
 
 import sys
 import signal
@@ -17,11 +18,14 @@ import json
 import re
 import traceback
 import cPickle as pickle
+import logging
+
 
 class Showdown():
     def __init__(self, team_text, agent, username, pokedata, password=None, driver_path="./chromedriver",
-                 monitor_url=None, proxy=False, firefox=False, predictor_name='FrequencyPokePredictor'):
-        self.selenium = Selenium(driver_path=driver_path, proxy=proxy, firefox=firefox)
+                 monitor_url=None, proxy=False, browser='phantomjs', predictor_name='FrequencyPokePredictor',
+                 verbose=False):
+        self.selenium = Selenium(driver_path=driver_path, proxy=proxy, browser=browser)
         self.agent = agent
         self.username = username
         self.password = password
@@ -37,8 +41,14 @@ class Showdown():
         self.my_team = Team.make_team(team_text, self.smogon_data)
         self.opp_team = None
         self.simulator = Simulator(pokedata)
+        self.verbose = verbose
+        self.logger = logging.getLogger("showdown")
+        self.logger.setLevel(level=logging.INFO)
+        if self.verbose:
+            self.logger.setLevel(level=logging.DEBUG)
 
     def reset(self):
+        self.logger.info("Resetting...")
         self.simulator.score = 0
         self.simulator.total = 0
         self.selenium.reset()
@@ -46,6 +56,7 @@ class Showdown():
         self.my_team = Team.make_team(self.team_text, self.smogon_data)
 
     def create_initial_gamestate(self):
+        self.logger.info("Creating initial gamestate...")
         my_pokes = self.my_team.copy()
         for i, poke in enumerate(my_pokes.poke_list):
             poke_name = poke.name
@@ -62,7 +73,7 @@ class Showdown():
             if not name:
                 continue
             poke_name = correct_name(name)
-	    print "Corrected to:", poke_name
+            "Corrected to:", poke_name
             if poke_name in self.smogon_data:
                 moveset = [m for m in self.smogon_data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag'] or 'PU' in m['tag']]
                 if len(moveset) > 1:
@@ -94,6 +105,7 @@ class Showdown():
             poke.health = poke.final_stats['hp']
             poke.alive = True
             opp_poke_list.append(poke)
+        my_primary = None
         for event in log.events:
             if event.type == "switch" and event.player == 0:
                 for poke in my_pokes.poke_list:
@@ -104,6 +116,7 @@ class Showdown():
                     if poke.name == event.poke:
                         opp_primary = opp_poke_list.index(poke)
 
+        assert my_primary != None
         self.opp_team = Team(opp_poke_list)
         opp_pokes = self.opp_team.copy()
         my_pokes.primary_poke = my_primary
@@ -113,6 +126,7 @@ class Showdown():
         return gamestate
 
     def correct_gamestate(self, gamestate):
+        self.logger.info("Correcting Pokemon health...")
         gamestate = gamestate.deep_copy()
         my_poke_health = self.selenium.get_my_primary_health()
         opp_poke_health = self.selenium.get_opp_primary_health()
@@ -124,6 +138,7 @@ class Showdown():
 
 
     def update_latest_turn(self, gamestate):
+        self.logger.info("Updating with latest information...")
         text_log = self.selenium.get_log()
         text_list = text_log.split("\n")
         buffer = []
@@ -166,16 +181,22 @@ class Showdown():
                         poke.item = "Choice Scarf"
         return gamestate
 
-
-
     def init(self):
+        self.logger.info("Initializing showdown")
         self.selenium.start_driver()
+        self.selenium.clear_cookies()
+        self.selenium.driver.refresh()
+        self.selenium.screenshot('log.png')
         self.selenium.turn_off_sound()
         self.selenium.login(self.username, self.password)
+        self.selenium.screenshot('log.png')
         self.selenium.make_team(self.team_text)
+        self.selenium.screenshot('log.png')
 
     def update_monitor(self, done=False):
         if self.monitor_url is not None:
+            self.logger.info("Updating online monitor at: %s",
+                             self.monitor_url)
             if done:
                 status = 'done'
             else:
@@ -189,50 +210,60 @@ class Showdown():
             try:
                 url = self.monitor_url + "/api/update"
                 headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
-                r = requests.post(url, data=json.dumps(data), headers=headers)
+                requests.post(url, data=json.dumps(data), headers=headers)
             except:
                 pass
 
     def play_game(self, challenge=None):
-	tier_click = False
-	while not tier_click:
-	    try:
-		self.selenium.choose_tier()
-		if challenge:
-		    self.selenium.start_challenge_battle(challenge)
-		else:
-		    self.selenium.start_ladder_battle()
-		tier_click = True
-	    except Exception as e:
-	        print e
-		self.selenium.driver.refresh()
-		self.selenium.wait_home_page()
-        self.selenium.wait_for_move()
-        self.battle_url = self.selenium.driver.current_url
-        self.update_monitor()
-        self.selenium.switch_initial(0, 0)
-        gamestate = self.create_initial_gamestate()
-        gamestate = self.update_latest_turn(gamestate)
-        with open('cur_gs.gs', 'wb') as fp:
-            pickle.dump(gamestate, fp)
-        over = False
-        while not over:
-            print "=========================================================================================="
-            print "My primary:", gamestate.get_team(0).primary()
-            print "Their primary:", gamestate.get_team(1).primary()
-            print "Their moves: ", gamestate.get_team(1).primary().moveset.moves
-            print "Their item: ", gamestate.get_team(1).primary().item
-            print "Their ability: ", gamestate.get_team(1).primary().ability
-            print "My move:",
-            move = self.agent.get_action(gamestate, 0)
-            if move.is_switch():
-                self.selenium.switch(move.switch_index, move.backup_switch)
-            else:
-                self.selenium.move(move.move_index, move.backup_switch, mega=move.mega, volt_turn=move.volt_turn)
+        self.logger.info("Finding a game...")
+        self.selenium.screenshot('log.png')
+        tier_click = False
+        while not tier_click:
+            try:
+                self.selenium.choose_tier()
+                self.selenium.screenshot('log.png')
+                if challenge:
+                    self.selenium.start_challenge_battle(challenge)
+                else:
+                    self.selenium.start_ladder_battle()
+                self.selenium.screenshot('log.png')
+                tier_click = True
+            except TierException:
+                logger.warning("Unable to click tier. Trying again...")
+            self.selenium.screenshot('log.png')
+            self.battle_url = self.selenium.driver.current_url
+            self.selenium.screenshot('log.png')
+            self.logger.info("Found game: %s", self.battle_url)
+            self.update_monitor()
+            self.selenium.wait_for_move()
+            self.selenium.chat("gl hf!")
+            self.selenium.switch_initial(0, 0)
+            self.selenium.screenshot('log.png')
+            gamestate = self.create_initial_gamestate()
             gamestate = self.update_latest_turn(gamestate)
-            gamestate = self.correct_gamestate(gamestate)
+            over = False
+            while not over:
+                print "=========================================================================================="
+                print "My primary:", gamestate.get_team(0).primary()
+                print "Their primary:", gamestate.get_team(1).primary()
+                print "Their moves: ", gamestate.get_team(1).primary().moveset.moves
+                print "Their item: ", gamestate.get_team(1).primary().item
+                print "Their ability: ", gamestate.get_team(1).primary().ability
+                print "My move:",
+                move = self.agent.get_action(gamestate, 0)
+                if move.is_switch():
+                    self.selenium.switch(move.switch_index, move.backup_switch)
+                else:
+                    self.selenium.move(move.move_index, move.backup_switch, mega=move.mega, volt_turn=move.volt_turn)
+                gamestate = self.update_latest_turn(gamestate)
+                gamestate = self.correct_gamestate(gamestate)
+                self.selenium.screenshot('log.png')
 
     def run(self, num_games=1, challenge=None):
+        if challenge:
+            self.logger.info("Set to challenge: %s", challenge)
+        else:
+            self.logger.info("Set to play %u games", num_games)
         self.init()
         self.scores = {
             'wins': 0,
@@ -248,16 +279,20 @@ class Showdown():
             result, error = None, None
             try:
                 self.play_game(challenge=challenge)
-            except SeleniumException:
+            except GameOverException:
                 log = SimulatorLog.parse(self.selenium.get_log())
-		disconnected = log.disconnected()
-		if disconnected:
-		    over,_ = log.is_over()
-		    while not over:
-		        time.sleep(5)
-			over,_ = log.is_over()
+                disconnected = log.disconnected()
+                if disconnected:
+                    over,_ = log.is_over()
+                    while not over:
+                        time.sleep(5)
+                        over,_ = log.is_over()
                 _, over_event = log.is_over()
                 result = over_event.details['username'] == self.username
+            except UserNotOnlineException:
+                self.logger.error("User not online: %s", challenge)
+                self.logger.info("Exiting...")
+                return
             except:
                 error = traceback.format_exc()
                 print "Error", error
@@ -268,6 +303,7 @@ class Showdown():
             log = self.selenium.get_log()
             id = self.selenium.get_battle_id()
             battle_url = "http://replay.pokemonshowdown.com/battle-%s" % id
+            self.logger.info("Finished game! Replay can be found at: %s", battle_url)
             user_folder = Path(".") / self.username
             if not user_folder.exists():
                 user_folder.mkdir()
@@ -319,10 +355,7 @@ class Showdown():
             self.reset()
         self.update_monitor(done=True)
         self.selenium.close()
-        print self.scores
-
-
-
+        self.logger.info("Done!")
 
 
 def main():
@@ -335,9 +368,11 @@ def main():
     argparser.add_argument('--monitor_url', type=str, default='http://54.149.105.175:9000')
     argparser.add_argument('--challenge', type=str)
     argparser.add_argument('--proxy', action='store_true')
-    argparser.add_argument('--firefox', action='store_true')
+    argparser.add_argument('--browser', type=str, default='phantomjs')
     argparser.add_argument('--data_dir', type=str, default='data/')
     argparser.add_argument('--predictor', default='PokeFrequencyPredictor')
+    argparser.add_argument("-v", "--verbose", help="increase output verbosity",
+                                            action="store_true")
     args = argparser.parse_args()
 
     with open(args.team) as fp:
@@ -352,8 +387,9 @@ def main():
         pokedata,
         password=args.password,
         proxy=args.proxy,
-        firefox=args.firefox,
+        browser=args.browser,
         monitor_url=args.monitor_url,
-        predictor_name=args.predictor
+        predictor_name=args.predictor,
+        verbose=args.verbose,
     )
     showdown.run(args.iterations, challenge=args.challenge)
