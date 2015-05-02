@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/home/vasu/Work/pokemon_ai/showdown_ai/showdown.py", line 225, in run
-    self.play_game(challenge=challenge)
-  File "/home/vasu/Work/pokemon_ai/showdown_ai/showdown.py", line 189, in play_game
-    gamestate = self.create_initial_gamestate()
-  File "/home/vasu/Work/pokemon_ai/showdown_ai/showdown.py", line 67, in create_initial_gamestate
-    moveset = [m for m in self.smogon_data[poke_name].movesets if 'Overused' == m['tag'] or 'Underused' == m['tag'] or 'Rarelyused' == m['tag'] or 'Neverused' == m['tag'] or 'Unreleased' == m['tag'] or 'Ubers' == m['tag']]
-KeyError: 'Meganium'
