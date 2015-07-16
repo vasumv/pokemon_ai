@@ -1,5 +1,5 @@
 # -*- mode: python -*-
-a = Analysis(['server/main.py'],
+a = Analysis(['server/showdownai.py'],
              pathex=['/home/vasu/Work/pokemon_ai'],
              hiddenimports=[],
              hookspath=None,
@@ -8,7 +8,7 @@ pyz = PYZ(a.pure)
 exe = EXE(pyz,
           a.scripts,
           exclude_binaries=True,
-          name='main',
+          name='showdownai',
           debug=False,
           strip=None,
           upx=True,
@@ -21,4 +21,4 @@ coll = COLLECT(exe,
                a.datas,
                strip=None,
                upx=True,
-               name='main')
+               name='showdownai')
