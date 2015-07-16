@@ -17,7 +17,7 @@ reqs = [str(ir.req) for ir in install_reqs]
 # string in below ...
 
 setup(
-    name = "showdown_ai",
+    name = "showdownai",
     version = "0.0.1",
     author = "Vasu Vikram",
     author_email = "vasumvikram@gmail.com",
@@ -26,13 +26,17 @@ setup(
     keywords = "",
     url = "",
     packages=find_packages(include=[
-        'showdown_ai'
+        'showdownai',
+        'smogon',
+        'server'
     ]),
     entry_points={
         'console_scripts': [
-            'showdownai=showdown_ai.showdown:main',
-            'simulator=showdown_ai.game:main',
+            'showdownai=showdownai.showdown:main',
+            'simulator=showdownai.game:main',
             'showdownmonitor=pokemonitor.__init__:main',
+            'multitest=showdownai.multitest:run',
+            'showdownserver=server.server:main'
         ],
     },
     install_requires=reqs,
