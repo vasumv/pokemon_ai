@@ -1,4 +1,5 @@
 compile:
+	python setup.py install
 	pyinstaller showdownai.spec
 
 clean:

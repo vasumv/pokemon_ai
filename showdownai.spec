@@ -1,5 +1,5 @@
 # -*- mode: python -*-
-a = Analysis(['server/showdownai.py'],
+a = Analysis(['server/showdownbot.py'],
              pathex=['/home/vasu/Work/pokemon_ai'],
              hiddenimports=[],
              hookspath=None,
@@ -8,7 +8,7 @@ pyz = PYZ(a.pure)
 exe = EXE(pyz,
           a.scripts,
           exclude_binaries=True,
-          name='showdownai',
+          name='showdownbot',
           debug=False,
           strip=None,
           upx=True,
