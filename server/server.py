@@ -1,9 +1,9 @@
 from flask import Flask, jsonify
 from webargs import Arg
 from webargs.flaskparser import use_args
-from showdown_ai import Showdown
-from showdown_ai import PessimisticMinimaxAgent
-from showdown_ai import load_data
+from showdownai import Showdown
+from showdownai import PessimisticMinimaxAgent
+from showdownai import load_data
 from argparse import ArgumentParser
 from path import Path
 from threading import Thread, Timer
@@ -60,8 +60,8 @@ class Server():
         url = "http://127.0.0.1:{0}".format(port)
         host = '0.0.0.0'
         chromepath = '/usr/bin/google-chrome %s'
-        Timer(1.25, lambda: webbrowser.get(chromepath).open(url) ).start()
-        self.app.run(debug=True, host=host, port=port)
+        Timer(1.25, lambda: webbrowser.get(chromepath).open(url)).start()
+        self.app.run(debug=True, host=host, port=port, use_reloader=False)
 
     def add_id(self, showdown):
         self.counter += 1
@@ -77,8 +77,8 @@ class Server():
 
 def main():
     argparse = ArgumentParser()
-    argparse.add_argument("teamdir")
-    argparse.add_argument("datadir")
+    argparse.add_argument("--teamdir", default='teams')
+    argparse.add_argument("--datadir", default='data')
     arguments = argparse.parse_args()
     teamdir = arguments.teamdir
     datadir = arguments.datadir
