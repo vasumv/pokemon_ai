@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, send_from_directory
 from webargs import Arg
 from webargs.flaskparser import use_args
 from showdownai import Showdown
@@ -17,11 +17,13 @@ class Server():
         self.pokedata = load_data(datadir)
         self.ids = {}
         self.counter = 0
-        self.app = app = Flask(__name__, static_url_path='')
+        self.app = app = Flask(__name__, static_url_path='',
+                               static_folder='static',
+                               template_folder='templates')
 
         @app.route("/")
         def index():
-            return self.app.send_static_file('index.html')
+            return send_from_directory(app.static_folder, 'index.html')
 
         @app.route("/api/showdown/<int:id>", methods=['get'])
         def get_showdown(id):

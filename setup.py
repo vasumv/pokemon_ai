@@ -30,6 +30,11 @@ setup(
         'smogon',
         'server'
     ]),
+    include_package_data=True,
+    package_data={
+        'static': 'server/static/*',
+        'templates': 'server/templates/*'
+    },
     entry_points={
         'console_scripts': [
             'showdownai=showdownai.showdown:main',

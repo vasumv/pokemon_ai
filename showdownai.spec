@@ -14,9 +14,11 @@ exe = EXE(pyz,
           upx=True,
           console=True )
 dict_tree = Tree("data/", prefix="data")
+static_tree = Tree("server/static/", prefix="static")
 coll = COLLECT(exe,
                a.binaries,
                dict_tree,
+               static_tree,
                a.zipfiles,
                a.datas,
                strip=None,
