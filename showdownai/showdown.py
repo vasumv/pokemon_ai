@@ -195,7 +195,10 @@ class Showdown():
         self.logger.info("Initializing showdown")
         self.selenium.start_driver()
         self.selenium.clear_cookies()
+<<<<<<< HEAD
         #self.selenium.driver.refresh()
+=======
+>>>>>>> 14add57ec31df621103355af5e41d398692bcd48
         self.selenium.screenshot('log.png')
         self.selenium.turn_off_sound()
         self.selenium.login(self.username, self.password)

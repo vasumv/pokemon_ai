@@ -1,53 +1,0 @@
-|join|Lusch
-|join|ParaSlam
-|player|p1|Lusch|153
-|player|p2|ParaSlam|266
-|gametype|singles
-|gen|1
-|tier|[Gen 1] OU
-|rule|Sleep Clause Mod: Limit one foe put to sleep
-|rule|Freeze Clause Mod: Limit one foe frozen
-|rule|Species Clause: Limit one of each PokÃ©mon
-|rule|OHKO Clause: OHKO moves are banned
-|rule|Evasion Moves Clause: Evasion moves are banned
-|rule|HP Percentage Mod: HP is shown in percentages
-|
-|start
-|switch|p1a: Dragonite|Dragonite|385\/385
-|switch|p2a: Bulbasaur|Bulbasaur, L2|15\/15
-|turn|1
-|
-|move|p1a: Dragonite|Agility|p1a: Dragonite
-|-boost|p1a: Dragonite|spe|2
-|move|p2a: Bulbasaur|Substitute|p2a: Bulbasaur
-|-start|p2a: Bulbasaur|Substitute
-|-damage|p2a: Bulbasaur|12\/15
-|
-|turn|2
-|
-|move|p1a: Dragonite|Wrap|p2a: Bulbasaur
-|-activate|p2a: Bulbasaur|move: Wrap|[of] p1a: Dragonite
-|-end|p2a: Bulbasaur|Substitute
-|cant|p2a: Bulbasaur|partiallytrapped
-|
-|turn|3
-|c|âParaSlam|use something else now ?
-|c|âLusch|i can
-|c|âLusch|choose
-|
-|move|p1a: Dragonite|Agility|p1a: Dragonite
-|-boost|p1a: Dragonite|spe|2
-|cant|p2a: Bulbasaur|partiallytrapped
-|
-|-end|p2a: Bulbasaur|Wrap|[partiallytrapped]
-|turn|4
-|c|âParaSlam|ok
-|c|âParaSlam|I'll report it
-|c|âParaSlam|thank you =)
-|c|âLusch|wrong right?
-|c|âParaSlam|yup
-|c|âLusch|ok
-|-message|ParaSlam forfeited.
-|leave|Lusch
-|
-|win|Lusch
