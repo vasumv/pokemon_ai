@@ -9,27 +9,35 @@ from exceptions import *
 
 class Selenium():
     BASE_URL="http://play.pokemonshowdown.com"
-    #BASE_URL="http://frost.psim.us"
-    def __init__(self, url=BASE_URL, driver_path="/home/vasu/Downloads/chromedriver", timer_on=False, proxy=False, browser='phantomjs'):
+    def __init__(self, url=BASE_URL, timer_on=False, proxy=False, browser='phantomjs', lib_dir="lib"):
         self.url = url
         self.logger = logging.getLogger("showdown.browser")
-        self.driver_path = driver_path
         self.timer_on = timer_on
         self.browser = browser
+	self.lib_dir = lib_dir
+	print "WAT"
+        self.logger.info("Browser: %s" % browser)
         if browser == "firefox":
+	    self.logger.info("Selecting Firefox to use as browser...")
             self.driver = webdriver.Firefox()
         elif browser == "chrome":
-            self.driver = webdriver.Chrome(executable_path=self.driver_path)
+	    self.logger.info("Selecting Chrome to use as browser...")
+	    chrome_path = "%s\chromedriver.exe" % self.lib_dir
+            self.driver = webdriver.Chrome(executable_path=chrome_path)
         elif browser == "phantomjs":
-            self.driver = webdriver.PhantomJS()
+	    self.logger.info("Selecting PhantomJS to use as browser...")
+	    phantom_path = "%s\phantomjs.exe" % self.lib_dir
+	    self.logger.info(phantom_path)
+            self.driver = webdriver.PhantomJS(executable_path=phantom_path)
             self.driver.set_window_size(1400,1000)
         else:
             if proxy:
                 PROXY = "127.0.0.1:9666"
                 if browser == "chrome":
+		    chrome_path = "%s\chromedriver.exe" % self.lib_dir
                     chrome_options = webdriver.ChromeOptions()
                     chrome_options.add_argument('--proxy-server=%s' % PROXY)
-                    self.driver = webdriver.Chrome(executable_path=self.driver_path, chrome_options=chrome_options)
+                    self.driver = webdriver.Chrome(executable_path=chrome_path, chrome_options=chrome_options)
                 elif browser == "phantomjs":
                     service_args = [
                         '--proxy=127.0.0.1:9666',
@@ -55,10 +63,11 @@ class Selenium():
 
     def wait_home_page(self):
         self.logger.info("Waiting for home page to load...")
-        while(self.driver.find_element_by_xpath("//*[@id='mainmenu']/div/div[1]/div[2]/div[1]/form/p[1]/button").get_attribute("value") != "randombattle"):
+        while self.driver.find_element_by_css_selector(".select.formatselect").get_attribute('value') != "randombattle":
             time.sleep(1)
 
     def login(self, username, password):
+    	self.wait_home_page()
         time.sleep(1)
         self.logger.info("Logging in...")
         elem = self.driver.find_element_by_name("login")

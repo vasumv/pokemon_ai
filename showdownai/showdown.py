@@ -23,10 +23,12 @@ import logging
 KERNEL_STATE = "state.json"
 
 class Showdown():
-    def __init__(self, team_text, agent, username, pokedata, password=None, driver_path="./chromedriver",
+    def __init__(self, team_text, agent, username, pokedata, password=None,
                  monitor_url=None, proxy=False, browser='phantomjs', predictor_name='PokeFrequencyPredictor',
-                 verbose=False, kernel_dir="kernel", kernel=False):
-        self.selenium = Selenium(driver_path=driver_path, proxy=proxy, browser=browser)
+                 verbose=False, kernel_dir="kernel", kernel=False, lib_dir="lib"):
+        self.logger = logging.getLogger("showdown")
+        self.logger.setLevel(level=logging.INFO)
+        self.selenium = Selenium(proxy=proxy, browser=browser, lib_dir=lib_dir)
         self.agent = agent
         self.username = username
         self.password = password
@@ -43,9 +45,8 @@ class Showdown():
         self.my_team = Team.make_team(team_text, self.smogon_data)
         self.opp_team = None
         self.simulator = Simulator(pokedata)
+	self.lib_dir = lib_dir
         self.verbose = verbose
-        self.logger = logging.getLogger("showdown")
-        self.logger.setLevel(level=logging.INFO)
         self.kernel_dir = Path(kernel_dir)
         self.kernel = kernel
         if self.kernel and not self.kernel_dir.exists():
@@ -194,7 +195,7 @@ class Showdown():
         self.logger.info("Initializing showdown")
         self.selenium.start_driver()
         self.selenium.clear_cookies()
-        self.selenium.driver.refresh()
+        #self.selenium.driver.refresh()
         self.selenium.screenshot('log.png')
         self.selenium.turn_off_sound()
         self.selenium.login(self.username, self.password)
@@ -384,6 +385,7 @@ def main():
     argparser.add_argument('--proxy', action='store_true')
     argparser.add_argument('--browser', type=str, default='phantomjs')
     argparser.add_argument('--data_dir', type=str, default='data/')
+    argparser.add_argument('--lib_dir', type=str, default='lib/')
     argparser.add_argument('--kernel_dir', type=str, default='kernel/')
     argparser.add_argument('--kernel', action='store_true')
     argparser.add_argument('--predictor', default='PokeFrequencyPredictor')
@@ -398,7 +400,7 @@ def main():
 
     showdown = Showdown(
         team_text,
-        PessimisticMinimaxAgent(2, pokedata),
+        OptimistcMinimax(2, pokedata),
         args.username,
         pokedata,
         password=args.password,
@@ -407,6 +409,8 @@ def main():
         monitor_url=args.monitor_url,
         predictor_name=args.predictor,
         verbose=args.verbose,
+	data_dir=args.data_dir,
+	lib_dir=args.lib_dir,
         kernel_dir=args.kernel_dir,
         kernel=args.kernel
     )
