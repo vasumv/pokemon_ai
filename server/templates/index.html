@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% set active_page = "index" %}
+{% block body %} <script src="/js/index.js"></script>
+<link href="/css/index.css" rel="stylesheet">
+<div class="container" id="botform">
+
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="form-group">
+                <label>Showdown Username</label>
+                <input type="email" class="form-control" id="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <label>Showdown Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label>Browser</label>
+                <select id="browser" class="form-control">
+                  <option value="chrome">Chrome</option>
+                  <option value="firefox">Firefox</option>
+                  <option value="phantomjs">Phantom JS</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="form-group">
+                <label>Team (from file)</label>
+                <select id="teamfile" class="form-control">
+                    {% for file in teamfiles %}
+                    <option value="{{ file }}"> {{ file }} </option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Team (from text)</label>
+                <textarea class="form-control" rows="10" name="team" id="teamtext" placeholder="Team"></textarea>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="form-group">
+                <label>Iterations</label>
+                <input type="text" class="form-control" id="iterations" value="1">
+            </div>
+            <div class="form-group">
+                <label>Challenge</label>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <input type="checkbox" aria-label="..." id="challengebutton">
+                    </span>
+                    <input type="text" class="form-control" id="challengetext" aria-label="..." placeholder="Username">
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="form-group">
+                <button id="playbutton" type="button" class="btn btn-success btn-lg">Play!</button>
+            </div>
+        </div>
+    </div> <!-- /container -->
+    {% endblock %}

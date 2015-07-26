@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+{% set navigation_bar = [
+    ('/', 'index', 'Home'),
+    ('/bots', 'bots', 'Bots'),
+    ('/contact', 'contact', 'Contact')
+] -%}
+{% set active_page = active_page|default('index') -%}
+<html>
+  <head>
+    <script src="/js/jquery-1.11.3.min.js"></script>
+    <script src="/js/layout.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+
+    <title>Justified Nav Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/justified-nav.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="page">
+        <div class='container'>
+            <div class="masthead">
+                <h3 class="text-muted">Pokemon Showdown Bot</h3>
+                <nav>
+                <ul class="nav nav-justified">
+                {% for href, id, caption in navigation_bar %}
+                  <li{% if id == active_page %} class="active"{% endif
+                  %}><a href="{{ href|e }}">{{ caption|e }}</a></li>
+                {% endfor %}
+                </ul>
+                </nav>
+            </div>
+        {% block body %}{% endblock %}
+          <footer class="footer">
+            <p>&copy; Company 2014</p>
+          </footer>
+        </div>
+  </div>
+</body>
+</html>

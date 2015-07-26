@@ -1,10 +1,11 @@
 $( document ).ready(function() {
-    console.log( "ready!" );
-    $( "#play" ).click(function() {
+    $( "#playbutton" ).click(function() {
         data = {
             'username': $("#username").val(),
             'password': $("#password").val(),
-            'team': $("#team").val(),
+            'teamfile': $("#teamfile").val(),
+            'teamtext': $("#teamtext").val(),
+            'browser': $("#browser").val(),
             'iterations': parseInt($("#iterations").val())
         }
         if($("#challengebutton").is(':checked') == true){

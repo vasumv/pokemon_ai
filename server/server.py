@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, send_from_directory
+from flask import Flask, jsonify, send_from_directory, render_template
 from webargs import Arg
 from webargs.flaskparser import use_args
 from showdownai import Showdown
@@ -12,7 +12,7 @@ import webbrowser
 class Server():
 
     def __init__(self, teamdir, datadir):
-        self.teamdir = teamdir
+        self.teamdir = Path(teamdir)
         self.datadir = datadir
         self.pokedata = load_data(datadir)
         self.ids = {}
@@ -23,7 +23,12 @@ class Server():
 
         @app.route("/")
         def index():
-            return send_from_directory(app.static_folder, 'index.html')
+            files = self.get_team_files()
+            return render_template('index.html', teamfiles=files)
+
+        @app.route("/bots")
+        def bots():
+            return render_template('bots.html')
 
         @app.route("/api/showdown/<int:id>", methods=['get'])
         def get_showdown(id):
@@ -40,13 +45,18 @@ class Server():
             'iterations': Arg(int, default=1),
             'username': Arg(str, required=True),
             'password': Arg(str, required=True),
-            'team': Arg(str, required=True),
+            'teamfile': Arg(str, required=True),
+            'teamtext': Arg(str, required=True),
             'challenge': Arg(str, default=None),
             'browser': Arg(str, default="phantomjs"),
         })
         def play_game(args):
+            if args['teamtext'] != "":
+                team_text = args['team_text']
+            else:
+                team_text = (self.teamdir / args['teamfile']).text()
             showdown = Showdown(
-                (Path(teamdir) / args['team']).text(),
+                team_text,
                 PessimisticMinimaxAgent(2, self.pokedata),
                 args['username'],
                 self.pokedata,
@@ -76,6 +86,11 @@ class Server():
                     'challenge': args['challenge']
                 }).start()
         return self.add_id(showdown)
+
+    def get_team_files(self):
+        files = self.teamdir.files()
+        files = [file.name for file in files]
+        return files
 
 def main():
     argparse = ArgumentParser()

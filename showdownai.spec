@@ -15,10 +15,12 @@ exe = EXE(pyz,
           console=True )
 dict_tree = Tree("data/", prefix="data")
 static_tree = Tree("server/static/", prefix="static")
+template_tree = Tree("server/templates/", prefix="templates")
 coll = COLLECT(exe,
                a.binaries,
                dict_tree,
                static_tree,
+               template_tree,
                a.zipfiles,
                a.datas,
                strip=None,
