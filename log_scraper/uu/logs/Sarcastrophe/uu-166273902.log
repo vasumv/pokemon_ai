@@ -1,683 +1,0 @@
-|join|Sarcastrophe
-|join|Mob Barley
-|player|p1|Sarcastrophe|101
-|player|p2|Mob Barley|2
-|gametype|singles
-|gen|6
-|tier|UU
-|rated
-|rule|Sleep Clause Mod: Limit one foe put to sleep
-|rule|Species Clause: Limit one of each PokÃ©mon
-|rule|OHKO Clause: OHKO moves are banned
-|rule|Moody Clause: Moody is banned
-|rule|Evasion Moves Clause: Evasion moves are banned
-|rule|Endless Battle Clause: Forcing endless battles is banned
-|rule|HP Percentage Mod: HP is shown in percentages
-|clearpoke
-|poke|p1|Nidoking, M
-|poke|p1|Milotic, M
-|poke|p1|Aerodactyl, M
-|poke|p1|Infernape, F
-|poke|p1|Celebi
-|poke|p1|Forretress, F
-|poke|p2|Noivern, M, shiny
-|poke|p2|Granbull, M
-|poke|p2|Swampert, M
-|poke|p2|Roserade, F
-|poke|p2|Lucario, M, shiny
-|poke|p2|Chandelure, M, shiny
-|rule|Swagger Clause: Swagger is banned
-|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
-|teampreview
-|
-|start
-|switch|p1a: Celebi|Celebi|342\/342
-|switch|p2a: Swamp King|Swampert, M|404\/404
-|turn|1
-|
-|switch|p2a: Poison Ivy|Roserade, F|323\/323
-|move|p1a: Celebi|Nasty Plot|p1a: Celebi
-|-boost|p1a: Celebi|spa|2
-|
-|turn|2
-|
-|move|p1a: Celebi|Earth Power|p2a: Poison Ivy
-|-damage|p2a: Poison Ivy|142\/323
-|-damage|p1a: Celebi|308\/342|[from] item: Life Orb
-|move|p2a: Poison Ivy|Sludge Bomb|p1a: Celebi
-|-supereffective|p1a: Celebi
-|-damage|p1a: Celebi|56\/342
-|
-|-heal|p2a: Poison Ivy|162\/323|[from] item: Black Sludge
-|turn|3
-|
-|switch|p2a: Gargoyle|Noivern, M, shiny|311\/311
-|move|p1a: Celebi|Earth Power|p2a: Gargoyle
-|-immune|p2a: Gargoyle|[msg]
-|
-|turn|4
-|
-|switch|p1a: Milotic|Milotic, M|394\/394
-|move|p2a: Gargoyle|Flamethrower|p1a: Milotic
-|-resisted|p1a: Milotic
-|-damage|p1a: Milotic|345\/394
-|-status|p1a: Milotic|brn
-|
-|-heal|p1a: Milotic|369\/394 brn|[from] item: Leftovers
-|-damage|p1a: Milotic|320\/394 brn|[from] brn
-|turn|5
-|
-|switch|p2a: Poison Ivy|Roserade, F|162\/323
-|move|p1a: Milotic|Ice Beam|p2a: Poison Ivy
-|-supereffective|p2a: Poison Ivy
-|-damage|p2a: Poison Ivy|44\/323
-|
-|-heal|p2a: Poison Ivy|64\/323|[from] item: Black Sludge
-|-heal|p1a: Milotic|344\/394 brn|[from] item: Leftovers
-|-damage|p1a: Milotic|295\/394 brn|[from] brn
-|turn|6
-|
-|switch|p1a: Forretress|Forretress, F|354\/354
-|move|p2a: Poison Ivy|Synthesis|p2a: Poison Ivy
-|-heal|p2a: Poison Ivy|225\/323
-|
-|-heal|p2a: Poison Ivy|245\/323|[from] item: Black Sludge
-|turn|7
-|
-|move|p2a: Poison Ivy|Spikes|p1a: Forretress
-|-sidestart|p1: Sarcastrophe|Spikes
-|move|p1a: Forretress|Stealth Rock|p2a: Poison Ivy
-|-sidestart|p2: Mob Barley|move: Stealth Rock
-|
-|-heal|p2a: Poison Ivy|265\/323|[from] item: Black Sludge
-|turn|8
-|
-|switch|p2a: Spook Show|Chandelure, M, shiny|261\/261
-|-damage|p2a: Spook Show|196\/261|[from] Stealth Rock
-|move|p1a: Forretress|Rapid Spin|p2a: Spook Show
-|-immune|p2a: Spook Show|[msg]
-|
-|turn|9
-|
-|switch|p1a: Aerodactyl|Aerodactyl, M|302\/302
-|-ability|p1a: Aerodactyl|Pressure
-|move|p2a: Spook Show|Substitute|p2a: Spook Show
-|-start|p2a: Spook Show|Substitute
-|-damage|p2a: Spook Show|131\/261
-|
-|turn|10
-|
-|detailschange|p1a: Aerodactyl|Aerodactyl-Mega, M
-|message|Aerodactyl has Mega Evolved into Mega Aerodactyl!
-|move|p1a: Aerodactyl|Earthquake|p2a: Spook Show
-|-supereffective|p2a: Spook Show
-|-end|p2a: Spook Show|Substitute
-|move|p2a: Spook Show|Substitute|p2a: Spook Show
-|-start|p2a: Spook Show|Substitute
-|-damage|p2a: Spook Show|66\/261
-|
-|turn|11
-|
-|move|p1a: Aerodactyl|Earthquake|p2a: Spook Show
-|-supereffective|p2a: Spook Show
-|-end|p2a: Spook Show|Substitute
-|move|p2a: Spook Show|Substitute|p2a: Spook Show
-|-start|p2a: Spook Show|Substitute
-|-damage|p2a: Spook Show|1\/261
-|
-|turn|12
-|
-|move|p1a: Aerodactyl|Earthquake|p2a: Spook Show
-|-supereffective|p2a: Spook Show
-|-end|p2a: Spook Show|Substitute
-|move|p2a: Spook Show|Pain Split|p1a: Aerodactyl
-|-sethp|p1a: Aerodactyl|151\/302|p2a: Spook Show|151\/261|[from] move: Pain Split
-|
-|turn|13
-|
-|switch|p2a: Swamp King|Swampert, M|404\/404
-|-damage|p2a: Swamp King|379\/404|[from] Stealth Rock
-|move|p1a: Aerodactyl|Crunch|p2a: Swamp King
-|-damage|p2a: Swamp King|285\/404
-|-unboost|p2a: Swamp King|def|1
-|
-|-heal|p2a: Swamp King|310\/404|[from] item: Leftovers
-|turn|14
-|
-|switch|p1a: Forretress|Forretress, F|354\/354
-|-damage|p1a: Forretress|310\/354|[from] Spikes
-|move|p2a: Swamp King|Stealth Rock|p1a: Forretress
-|-sidestart|p1: Sarcastrophe|move: Stealth Rock
-|
-|-heal|p2a: Swamp King|335\/404|[from] item: Leftovers
-|-heal|p1a: Forretress|332\/354|[from] item: Leftovers
-|turn|15
-|
-|switch|p2a: Spook Show|Chandelure, M, shiny|151\/261
-|-damage|p2a: Spook Show|86\/261|[from] Stealth Rock
-|move|p1a: Forretress|Volt Switch|p2a: Spook Show
-|-damage|p2a: Spook Show|47\/261
-|
-|switch|p1a: Nidoking|Nidoking, M|304\/304
-|-damage|p1a: Nidoking|266\/304|[from] Spikes
-|-damage|p1a: Nidoking|247\/304|[from] Stealth Rock
-|
-|turn|16
-|
-|move|p1a: Nidoking|Sludge Wave|p2a: Spook Show
-|-resisted|p2a: Spook Show
-|-damage|p2a: Spook Show|0 fnt
-|faint|p2a: Spook Show
-|
-|
-|switch|p2a: Gargoyle|Noivern, M, shiny|311\/311
-|-damage|p2a: Gargoyle|234\/311|[from] Stealth Rock
-|turn|17
-|
-|move|p2a: Gargoyle|Flamethrower|p1a: Nidoking
-|-damage|p1a: Nidoking|76\/304
-|move|p1a: Nidoking|Ice Beam|p2a: Gargoyle
-|-supereffective|p2a: Gargoyle
-|-damage|p2a: Gargoyle|0 fnt
-|faint|p2a: Gargoyle
-|
-|
-|switch|p2a: Swamp King|Swampert, M|335\/404
-|-damage|p2a: Swamp King|310\/404|[from] Stealth Rock
-|turn|18
-|
-|switch|p1a: Milotic|Milotic, M|295\/394 brn
-|-damage|p1a: Milotic|246\/394 brn|[from] Stealth Rock
-|-damage|p1a: Milotic|197\/394 brn|[from] Spikes
-|move|p2a: Swamp King|Scald|p1a: Milotic
-|-resisted|p1a: Milotic
-|-damage|p1a: Milotic|163\/394 brn
-|
-|-heal|p1a: Milotic|187\/394 brn|[from] item: Leftovers
-|-heal|p2a: Swamp King|335\/404|[from] item: Leftovers
-|-damage|p1a: Milotic|138\/394 brn|[from] brn
-|turn|19
-|join|illestt
-|leave|illestt
-|
-|switch|p2a: Poison Ivy|Roserade, F|265\/323
-|-damage|p2a: Poison Ivy|225\/323|[from] Stealth Rock
-|move|p1a: Milotic|Recover|p1a: Milotic
-|-heal|p1a: Milotic|335\/394 brn
-|
-|-heal|p2a: Poison Ivy|245\/323|[from] item: Black Sludge
-|-heal|p1a: Milotic|359\/394 brn|[from] item: Leftovers
-|-damage|p1a: Milotic|310\/394 brn|[from] brn
-|turn|20
-|
-|switch|p2a: Anubis|Lucario, M, shiny|281\/281
-|-damage|p2a: Anubis|273\/281|[from] Stealth Rock
-|switch|p1a: Forretress|Forretress, F|332\/354
-|-damage|p1a: Forretress|288\/354|[from] Stealth Rock
-|-damage|p1a: Forretress|244\/354|[from] Spikes
-|
-|-heal|p1a: Forretress|266\/354|[from] item: Leftovers
-|turn|21
-|c|âMob Barley|can u pls turn off the timer for like one second
-|c|âMob Barley|I'm helping someone handicapped
-|c|âSarcastrophe|...
-|c|âMob Barley|im not doing this on purpose
-|c|âSarcastrophe|Sorry, but no. >_>
-|c|âMob Barley|you can be a dick or a nice guy, i'll let u decide
-|c|âMob Barley|WOW
-|join|Lum_Beri
-|c|âSarcastrophe|"Handicapped" is not a fucking reason to care.
-|join|Helen Keller VEVO
-|join|Albacore
-|join|CleanerThanRotom-W
-|join|Weezybird
-|join|Drop Top Lexus
-|join|Draeden
-|c| Lum_Beri|lol
-|c| Lum_Beri|such salt
-|c|âMob Barley|is that unbelivable
-|join|AceStarThe3rd
-|c| Weezybird|wow
-|c| Weezybird|what a dick
-|join|LT2K Gizmo
-|
-|move|p2a: Anubis|Aura Sphere|p1a: Forretress
-|-crit|p1a: Forretress
-|-damage|p1a: Forretress|0 fnt
-|-damage|p2a: Anubis|245\/281|[from] item: Life Orb
-|faint|p1a: Forretress
-|
-|join|Ebrake.
-|join|AcceleratorGod
-|c|âSarcastrophe|I have a few of them, and I really don't care for people to mention them.
-|c|âMob Barley|FUCK UR HAZARDS
-|
-|switch|p1a: Infernape|Infernape, F|294\/294
-|-damage|p1a: Infernape|258\/294|[from] Spikes
-|-damage|p1a: Infernape|222\/294|[from] Stealth Rock
-|turn|22
-|c|âMob Barley|stupid asshole
-|join|ox the box
-|leave|Draeden
-|c| Helen Keller VEVO|what an asshole
-|
-|switch|p2a: Swamp King|Swampert, M|335\/404
-|-damage|p2a: Swamp King|310\/404|[from] Stealth Rock
-|move|p1a: Infernape|Mach Punch|p2a: Swamp King
-|-damage|p2a: Swamp King|222\/404
-|
-|-heal|p2a: Swamp King|247\/404|[from] item: Leftovers
-|turn|23
-|c| LT2K Gizmo|this is sad and hilarious
-|join|IHSAHN
-|leave|Drop Top Lexus
-|c| AceStarThe3rd|Pokemon is more important obviously
-|
-|switch|p1a: Milotic|Milotic, M|310\/394 brn
-|-damage|p1a: Milotic|261\/394 brn|[from] Spikes
-|-damage|p1a: Milotic|212\/394 brn|[from] Stealth Rock
-|move|p2a: Swamp King|Earthquake|p1a: Milotic
-|-damage|p1a: Milotic|145\/394 brn
-|
-|-heal|p1a: Milotic|169\/394 brn|[from] item: Leftovers
-|-heal|p2a: Swamp King|272\/404|[from] item: Leftovers
-|-damage|p1a: Milotic|120\/394 brn|[from] brn
-|turn|24
-|c| AceStarThe3rd|lol
-|c|âSarcastrophe|Since you actually moved and all.
-|join|ou fan
-|c|âMob Barley|you're a dick pal
-|c|âMob Barley|plain and simple
-|c|âSarcastrophe|Seriously though, the word "handicap" is basically "LOLIWANTECUSE"
-|c|âMob Barley|what a simple request
-|c|âSarcastrophe|*EXCUSE
-|c| Lum_Beri|Such hate
-|c| Ebrake.|get reckt \
-|join|aerggeaeq3
-|c|âMob Barley|and u couldn't even do it
-|
-|switch|p2a: Poison Ivy|Roserade, F|245\/323
-|-damage|p2a: Poison Ivy|205\/323|[from] Stealth Rock
-|move|p1a: Milotic|Scald|p2a: Poison Ivy
-|-resisted|p2a: Poison Ivy
-|-damage|p2a: Poison Ivy|166\/323
-|
-|-heal|p2a: Poison Ivy|186\/323|[from] item: Black Sludge
-|-heal|p1a: Milotic|144\/394 brn|[from] item: Leftovers
-|-damage|p1a: Milotic|95\/394 brn|[from] brn
-|turn|25
-|c|âMob Barley|you are a terrible person
-|c| Helen Keller VEVO|BETTER NOT LET SOMEONE HAVE TIME
-|leave|Ebrake.
-|c|âSarcastrophe|After you just had me waste about 5 minutes?
-|c|âMob Barley|IM HELPING SOMEONE WHO WAS HANDICAPPED
-|c|âMob Barley|you fucking asshole
-|c|âSarcastrophe|See above.
-|c|âMob Barley|and you said "sorry, no"\
-|c|âMob Barley|go to hell dude
-|
-|move|p2a: Poison Ivy|Spikes|p1a: Milotic
-|-sidestart|p1: Sarcastrophe|Spikes
-|move|p1a: Milotic|Ice Beam|p2a: Poison Ivy
-|-supereffective|p2a: Poison Ivy
-|-damage|p2a: Poison Ivy|84\/323
-|
-|-heal|p2a: Poison Ivy|104\/323|[from] item: Black Sludge
-|-heal|p1a: Milotic|119\/394 brn|[from] item: Leftovers
-|-damage|p1a: Milotic|70\/394 brn|[from] brn
-|turn|26
-|
-|move|p2a: Poison Ivy|Synthesis|p2a: Poison Ivy
-|-heal|p2a: Poison Ivy|265\/323
-|move|p1a: Milotic|Ice Beam|p2a: Poison Ivy
-|-supereffective|p2a: Poison Ivy
-|-damage|p2a: Poison Ivy|153\/323
-|
-|-heal|p2a: Poison Ivy|173\/323|[from] item: Black Sludge
-|-heal|p1a: Milotic|94\/394 brn|[from] item: Leftovers
-|-damage|p1a: Milotic|45\/394 brn|[from] brn
-|turn|27
-|c|âSarcastrophe|See, it's pretty convenient that I will already be going to hell.
-|
-|move|p2a: Poison Ivy|Spikes|p1a: Milotic
-|-sidestart|p1: Sarcastrophe|Spikes
-|move|p1a: Milotic|Ice Beam|p2a: Poison Ivy
-|-supereffective|p2a: Poison Ivy
-|-damage|p2a: Poison Ivy|67\/323
-|
-|-heal|p2a: Poison Ivy|87\/323|[from] item: Black Sludge
-|-heal|p1a: Milotic|69\/394 brn|[from] item: Leftovers
-|-damage|p1a: Milotic|20\/394 brn|[from] brn
-|turn|28
-|c|âMob Barley|yeah not surprised
-|c|âMob Barley|scumbad
-|c| Weezybird|im not surprise
-|c| Weezybird|d
-|raw|<div class="broadcast-red"><b>Moderated chat was set to +!<\/b><br \/>Only users of rank + and higher can talk.<\/div>
-|c|âMob Barley|im not making drama
-|c|âSarcastrophe|I don't care for religion, so.
-|c|âMob Barley|i just wanted everyone to see
-|c|âMob Barley|what an awful person this guy is
-|c|âMob Barley|i put on mod chat btw if anyone was wondering
-|
-|move|p2a: Poison Ivy|Synthesis|p2a: Poison Ivy
-|-heal|p2a: Poison Ivy|248\/323
-|move|p1a: Milotic|Ice Beam|p2a: Poison Ivy
-|-supereffective|p2a: Poison Ivy
-|-damage|p2a: Poison Ivy|126\/323
-|
-|-heal|p2a: Poison Ivy|146\/323|[from] item: Black Sludge
-|-heal|p1a: Milotic|44\/394 brn|[from] item: Leftovers
-|-damage|p1a: Milotic|0 fnt|[from] brn
-|faint|p1a: Milotic
-|c|âSarcastrophe|Again, if I can't see it I don't really care.  You already wasted my time.
-|
-|switch|p1a: Infernape|Infernape, F|222\/294
-|-damage|p1a: Infernape|186\/294|[from] Stealth Rock
-|-damage|p1a: Infernape|113\/294|[from] Spikes
-|turn|29
-|join|bunnytokki
-|leave|CleanerThanRotom-W
-|c|âSarcastrophe|It's midnight.  I'm tired.  Handicaps, whatever they may be, are no excuse for anything.  Ever.
-|c|âSarcastrophe|... Ok.
-|c|âSarcastrophe|Not quite that bad.
-|c|âSarcastrophe|They're used far too often for excuses.
-|leave|Weezybird
-|join|blitzleiter
-|c|âMob Barley|WHAT
-|join|Disorient
-|c|âMob Barley|you are an evil son of a bitch
-|c|âMob Barley|i must say
-|raw|<div class="broadcast-blue"><b>Moderated chat was disabled!<\/b><br \/>Anyone may talk now.<\/div>
-|c| Messenger of Jesus|Hello.
-|c|âMob Barley|you're messed up
-|c|âMob Barley|I'm done with u
-|c| Messenger of Jesus|Would you like to learn about the lord?
-|leave|Disorient
-|c| Lum_Beri|Get hazard'd
-|c| blitzleiter|Weezybird: what a dick
-|c| blitzleiter|âSarcastrophe: I have a few of them
-|c| Lum_Beri|lol
-|
-|switch|p2a: Swamp King|Swampert, M|272\/404
-|-damage|p2a: Swamp King|247\/404|[from] Stealth Rock
-|move|p1a: Infernape|Flare Blitz|p2a: Swamp King
-|-resisted|p2a: Swamp King
-|-damage|p2a: Swamp King|136\/404
-|-damage|p1a: Infernape|76\/294|[from] recoil|[of] p2a: Swamp King
-|
-|-heal|p2a: Swamp King|161\/404|[from] item: Leftovers
-|turn|30
-|c| blitzleiter|mob barley is a nice guy
-|c| blitzleiter|he helps handicapped people
-|c| Messenger of Jesus|I help homosexual people convert to Christianity.
-|c| AcceleratorGod|is that why he was trying to help sarca to not being a jerk?
-|join|Weezybird
-|c| Messenger of Jesus|Not only the physically handicapped need help, but the mentally handicapped as well.
-|c|âSarcastrophe|...
-|c|âSarcastrophe|Ok, so can we agree I'm not the only dick here at least?
-|c|âMob Barley|you are
-|c| Lum_Beri|I'm a dick.
-|c| AcceleratorGod|messanger is a troll
-|c|âMob Barley|the biggest scumbag i've met here, and i've met everyone
-|
-|move|p1a: Infernape|Flare Blitz|p2a: Swamp King
-|-resisted|p2a: Swamp King
-|-damage|p2a: Swamp King|42\/404
-|-damage|p1a: Infernape|37\/294|[from] recoil|[of] p2a: Swamp King
-|move|p2a: Swamp King|Scald|p1a: Infernape
-|-supereffective|p1a: Infernape
-|-damage|p1a: Infernape|0 fnt
-|faint|p1a: Infernape
-|
-|-heal|p2a: Swamp King|67\/404|[from] item: Leftovers
-|c|âMob Barley|heres your timer
-|c| JTangarang|lol
-|c|âSarcastrophe|YES
-|
-|switch|p1a: Aerodactyl|Aerodactyl-Mega, M|151\/302
-|-damage|p1a: Aerodactyl|76\/302|[from] Stealth Rock
-|turn|31
-|c|âSarcastrophe|WE MIGHT FINISH
-|
-|move|p1a: Aerodactyl|Aerial Ace|p2a: Swamp King
-|-damage|p2a: Swamp King|0 fnt
-|faint|p2a: Swamp King
-|
-|c| ox the box|YES
-|c| ox the box|YOURE A DICK
-|join|Wheeezer
-|
-|switch|p2a: Jaw Breaker|Granbull, M|384\/384
-|-damage|p2a: Jaw Breaker|336\/384|[from] Stealth Rock
-|-ability|p2a: Jaw Breaker|Intimidate|[of] p1a: Aerodactyl
-|-unboost|p1a: Aerodactyl|atk|1
-|turn|32
-|c| Messenger of Jesus|No, youre a dick for rejecting the lord.
-|c|âMob Barley|you lost on top of all your scumbag ways
-|c| Messenger of Jesus|Fucking cunt.
-|c|âSarcastrophe|Oh, so I didn't let him... do what exactly?
-|c| ox the box|ffs
-|join|AsianMustaches
-|c| ox the box|when did I say I wasnt religous
-|c| Messenger of Jesus|I'm talking to him.
-|c|âMob Barley|lets recap
-|c|âMob Barley|âMob Barley: can u pls turn off the timer for like one second
-|c|âMob Barley|âMob Barley: I'm helping someone handicapped
-|
-|switch|p2a: Poison Ivy|Roserade, F|146\/323
-|-damage|p2a: Poison Ivy|106\/323|[from] Stealth Rock
-|move|p1a: Aerodactyl|Aerial Ace|p2a: Poison Ivy
-|-supereffective|p2a: Poison Ivy
-|-damage|p2a: Poison Ivy|0 fnt
-|faint|p2a: Poison Ivy
-|
-|c|âMob Barley|âSarcastrophe: ...
-|join|candres
-|c|âMob Barley|âSarcastrophe: Sorry, but no. >_>
-|
-|switch|p2a: Jaw Breaker|Granbull, M|336\/384
-|-damage|p2a: Jaw Breaker|288\/384|[from] Stealth Rock
-|-ability|p2a: Jaw Breaker|Intimidate|[of] p1a: Aerodactyl
-|-unboost|p1a: Aerodactyl|atk|1
-|turn|33
-|c|âSarcastrophe|OH HEY LET'S IGNORE THE REASONING!
-|c| Wheeezer|this is somewhat hilarious
-|join|h@lloween
-|c|âMob Barley|you're just a terrible person
-|c|âMob Barley|plain and simple
-|c|âSarcastrophe|If one has no legs, does that stop him singing?
-|leave|ou fan
-|c| Wheeezer|yea
-|join|TheFogHornChannel
-|join|Disorient
-|c|âSarcastrophe|I seriously hate the idea of "helping someone handicapped" being automatically good and important.
-|c|âMob Barley|ITS EVEN WORSE YOUR JUSTIFYING YOUR DISGUSTING BEHAVIOUR
-|leave|Disorient
-|leave|TheFogHornChannel
-|c|âMob Barley|YOU'RE SICK
-|
-|move|p1a: Aerodactyl|Aerial Ace|p2a: Jaw Breaker
-|-damage|p2a: Jaw Breaker|188\/384
-|move|p2a: Jaw Breaker|Thunder Wave|p1a: Aerodactyl
-|-status|p1a: Aerodactyl|par
-|
-|-heal|p2a: Jaw Breaker|212\/384|[from] item: Leftovers
-|turn|34
-|c| h@lloween|BREAD COMES IN, TOAST COMES OUT... YOU CANT EXPLAIN THAT
-|c| candres|what the hell is this lol
-|c| Wheeezer|idk
-|c| AcceleratorGod|yes, he can't reach the microphone
-|c| Wheeezer|just joined
-|c|âSarcastrophe|for the second time
-|
-|move|p2a: Jaw Breaker|Earthquake|p1a: Aerodactyl
-|-immune|p1a: Aerodactyl|[msg]
-|move|p1a: Aerodactyl|Aerial Ace|p2a: Jaw Breaker
-|-damage|p2a: Jaw Breaker|119\/384
-|
-|-heal|p2a: Jaw Breaker|143\/384|[from] item: Leftovers
-|turn|35
-|
-|move|p2a: Jaw Breaker|Earthquake|p1a: Aerodactyl
-|-immune|p1a: Aerodactyl|[msg]
-|move|p1a: Aerodactyl|Aerial Ace|p2a: Jaw Breaker
-|-damage|p2a: Jaw Breaker|56\/384
-|
-|-heal|p2a: Jaw Breaker|80\/384|[from] item: Leftovers
-|turn|36
-|c| candres|next level plays
-|join|f i n g l e
-|c| Wheeezer|lol AcceleratorGod
-|c|âSarcastrophe|Ok seriously, taking the piss.
-|
-|move|p2a: Jaw Breaker|Earthquake|p1a: Aerodactyl
-|-immune|p1a: Aerodactyl|[msg]
-|cant|p1a: Aerodactyl|par
-|
-|-heal|p2a: Jaw Breaker|104\/384|[from] item: Leftovers
-|turn|37
-|c| AcceleratorGod|did you see what i did there?
-|c| AcceleratorGod|lol
-|c| Wheeezer|yup
-|c|âSarcastrophe|Yes, you completely ignored the point.  Like everyone else here, it would seem.
-|
-|move|p2a: Jaw Breaker|Earthquake|p1a: Aerodactyl
-|-immune|p1a: Aerodactyl|[msg]
-|move|p1a: Aerodactyl|Aerial Ace|p2a: Jaw Breaker
-|-damage|p2a: Jaw Breaker|5\/384
-|
-|-heal|p2a: Jaw Breaker|29\/384|[from] item: Leftovers
-|turn|38
-|c| Wheeezer|u no roost?
-|c| AcceleratorGod|why are you EQing so much lol
-|
-|move|p2a: Jaw Breaker|Earthquake|p1a: Aerodactyl
-|-immune|p1a: Aerodactyl|[msg]
-|cant|p1a: Aerodactyl|par
-|
-|-heal|p2a: Jaw Breaker|53\/384|[from] item: Leftovers
-|turn|39
-|c| Wheeezer|because roost
-|c| candres|in case he roosts
-|c| f i n g l e|nido
-|c| f i n g l e|no
-|c| f i n g l e|for nido
-|c| f i n g l e|he roosts second
-|c| f i n g l e|so eq wont affect
-|c| AcceleratorGod|nope
-|leave|h@lloween
-|c| AcceleratorGod|yup
-|c| candres|Luke probably has this depending what that Celebi is
-|c| AcceleratorGod|eq won't hit aero
-|c| f i n g l e|hes going for nido
-|c| Albacore|or maybe celebi will just die?
-|c| Wheeezer|nah, Mob has this
-|c| Albacore|and nido too?
-|c| f i n g l e|not definately rofl
-|c| Wheeezer|celebi 17%
-|c| candres|oh
-|
-|move|p2a: Jaw Breaker|Earthquake|p1a: Aerodactyl
-|-immune|p1a: Aerodactyl|[msg]
-|move|p1a: Aerodactyl|Aerial Ace|p2a: Jaw Breaker
-|-damage|p2a: Jaw Breaker|0 fnt
-|faint|p2a: Jaw Breaker
-|
-|c| candres|didnt see that
-|c| AcceleratorGod|yeah, they would both die
-|c|âMob Barley|if anyone was wondering why on earth i sat there and eq'd it was so i can set up and kill his nidoking, which timid outspeeds my modest luke
-|c| Wheeezer|and nido 25%
-|
-|switch|p2a: Anubis|Lucario, M, shiny|245\/281
-|-damage|p2a: Anubis|237\/281|[from] Stealth Rock
-|turn|40
-|
-|move|p2a: Anubis|Nasty Plot|p2a: Anubis
-|-boost|p2a: Anubis|spa|2
-|move|p1a: Aerodactyl|Earthquake|p2a: Anubis
-|-supereffective|p2a: Anubis
-|-damage|p2a: Anubis|71\/281
-|
-|turn|41
-|c| Lum_Beri|bullet punch kills
-|c| Albacore|nide dies
-|c| Albacore|on switchin
-|c| Lum_Beri|rest die to hazards
-|c| Albacore|js
-|
-|move|p2a: Anubis|Flash Cannon|p1a: Aerodactyl
-|-supereffective|p1a: Aerodactyl
-|-damage|p1a: Aerodactyl|0 fnt
-|-damage|p2a: Anubis|43\/281|[from] item: Life Orb
-|faint|p1a: Aerodactyl
-|
-|c| Wheeezer|but spikes
-|c| Albacore|*nido
-|c| Wheeezer|mod, u didnt see that?
-|c| ox the box|#teammob
-|c| f i n g l e|rip team
-|
-|switch|p1a: Nidoking|Nidoking, M|76\/304
-|-damage|p1a: Nidoking|57\/304|[from] Stealth Rock
-|-damage|p1a: Nidoking|0 fnt|[from] Spikes
-|faint|p1a: Nidoking
-|c|âSarcastrophe|Yeah that.]
-|c|âSarcastrophe|gg anyway, man.
-|c|âMob Barley|oh i thought it was higher
-|c|âMob Barley|wtf
-|c|âMob Barley|gg?
-|c| Wheeezer|LOL
-|c| f i n g l e|nasty plot luke is so good in uu
-|leave|Albacore
-|c| AcceleratorGod|LOL
-|c|âMob Barley|did he say gg
-|c|âMob Barley|you scumbag
-|leave|Lum_Beri
-|c| candres|i prefer sd tbh
-|c|âMob Barley|go fuck yourself
-|c| Wheeezer|lmao
-|c|âSarcastrophe|Whatever.
-|c|âSarcastrophe|Well played.
-|c| Wheeezer|mob barley is mad
-|c|âMob Barley|fuck off
-|c| Helen Keller VEVO|mob calm down
-|c|âMob Barley|LOL
-|join|csfrank27
-|c| Helen Keller VEVO|he said gg
-|c| f i n g l e|wth mob
-|c| f i n g l e|calm urself
-|c|âMob Barley|can u all read
-|c|âMob Barley|the comments
-|c| candres|welp im gone lol
-|c|âMob Barley|before u blast me'
-|leave|candres
-|c| Helen Keller VEVO|regardless of whether or not hes a dick, it can still be a gg
-|c|âSarcastrophe|Can you?
-|
-|switch|p1a: Celebi|Celebi|56\/342
-|-damage|p1a: Celebi|0 fnt|[from] Spikes
-|faint|p1a: Celebi
-|
-|win|Mob Barley
-|raw|Ladder updating...
-|join|candres
-|raw|Sarcastrophe's rating: 1532 &rarr; <strong>1508<\/strong><br \/>(-24 for losing)
-|raw|Mob Barley's rating: 1472 &rarr; <strong>1495<\/strong><br \/>(+23 for winning)
-|leave|Mob Barley
-|player|p2
-|c| csfrank27|hey
-|leave|candres
-|leave|AsianMustaches
-|leave|csfrank27
-|leave|f i n g l e
-|c|âSarcastrophe|This is why the internet sucks.
-|leave|AcceleratorGod
-|leave|Wheeezer
-|leave|Sarcastrophe
-|player|p1
-|leave|LT2K Gizmo
-|leave|bunnytokki
-|leave|Helen Keller VEVO
-|leave|aerggeaeq3
-|leave|ox the box

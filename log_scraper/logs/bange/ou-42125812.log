@@ -1,209 +1,0 @@
-|join|bange
-|join|kkdas
-|player|p1|bange|142
-|player|p2|kkdas|7
-|gametype|singles
-|tier|OU
-|rule|Evasion Abilities Clause: Evasion abilities are banned
-|clearpoke
-|poke|p1|Scizor, M
-|poke|p1|Skarmory, M
-|poke|p1|Espeon, F
-|poke|p1|Seismitoad, M, shiny
-|poke|p1|Azelf
-|poke|p1|Heatran, M
-|poke|p2|Landorus-Therian, M, shiny
-|poke|p2|Heatran, M, shiny
-|poke|p2|Ninetales, M
-|poke|p2|Gastrodon, F
-|poke|p2|Venusaur, M
-|poke|p2|Starmie
-|rule|Sleep Clause Mod: Limit one foe put to sleep
-|rule|Species Clause: Limit one of each Pokemon
-|rule|OHKO Clause: OHKO moves are banned
-|rule|Moody Clause: Moody is banned
-|rule|Evasion Moves Clause: Evasion moves are banned
-|rule|HP Percentage Mod: HP is reported as percentages
-|teampreview
-|callback|decision
-|
-|start
-|switch|p1a: Azelf|Azelf|291\/291
-|switch|p2a: í¬ëíë¼ì´ë²|Ninetales, M|288\/288
-|-weather|SunnyDay|[from] ability: Drought|[of] p2a: í¬ëíë¼ì´ë²
-|turn|1
-|callback|decision
-|chat|kkdas|í
-|chat|kkdas|ê°ì²  ì±ì íí°
-|chat|bange|ãã
-|
-|move|p1a: Azelf|U-turn|p2a: í¬ëíë¼ì´ë²
-|-resisted|p2a: í¬ëíë¼ì´ë²
-|-damage|p2a: í¬ëíë¼ì´ë²|242\/288
-|callback|decision
-|
-|switch|p1a: Heatran|Heatran, M|323\/323
-|-item|p1a: Heatran|Air Balloon
-|move|p2a: í¬ëíë¼ì´ë²|Fire Blast|p1a: Heatran
-|-start|p1a: Heatran|ability: Flash Fire
-|
-|-weather|SunnyDay|[upkeep]
-|turn|2
-|callback|decision
-|chat|kkdas|ã ã 
-|chat|kkdas|ë ì§¸ê° ìë¬
-|
-|switch|p2a: ë°©ì´ë°ë³´|Landorus-Therian, M, shiny|319\/319
-|-ability|p2a: ë°©ì´ë°ë³´|Intimidate|[of] p1a: Heatran
-|-unboost|p1a: Heatran|atk|1
-|move|p1a: Heatran|Fire Blast|p2a: ë°©ì´ë°ë³´
-|-crit|p2a: ë°©ì´ë°ë³´
-|-damage|p2a: ë°©ì´ë°ë³´|0 fnt
-|faint|p2a: ë°©ì´ë°ë³´
-|
-|-weather|SunnyDay|[upkeep]
-|callback|decision
-|chat|bange|ë°ë³´ ã ã !
-|chat|kkdas|í¹ìí ë¬´ìì ã ã 
-|
-|switch|p2a: ì¬ëì|Venusaur, M|301\/301
-|turn|3
-|callback|decision
-|
-|switch|p1a: Espeon|Espeon, F|272\/272
-|move|p2a: ì¬ëì|Sleep Powder|p1a: Espeon
-|move|p1a: Espeon|Sleep Powder|p2a: ì¬ëì|[from]Magic Bounce
-|-status|p2a: ì¬ëì|slp
-|
-|-weather|SunnyDay|[upkeep]
-|turn|4
-|callback|decision
-|chat|kkdas|íí° ê¹ë¨¸ê¸ ãã
-|chat|kkdas|ããããã
-|chat|bange|ãã;;
-|
-|switch|p2a: ã·ã·ã±|Heatran, M, shiny|386\/386
-|switch|p1a: Heatran|Heatran, M|323\/323
-|-item|p1a: Heatran|Air Balloon
-|
-|-weather|SunnyDay|[upkeep]
-|turn|5
-|callback|decision
-|chat|kkdas|ë ë°ë³´ì§ í¨ ã ãã ã 
-|
-|move|p2a: ã·ã·ã±|Protect|p2a: ã·ã·ã±
-|-singleturn|p2a: ã·ã·ã±|Protect
-|move|p1a: Heatran|Earth Power|p2a: ã·ã·ã±
-|-activate|p2a: ã·ã·ã±|Protect
-|
-|-weather|SunnyDay|[upkeep]
-|turn|6
-|callback|decision
-|
-|switch|p2a: ì ì¬ë°¥ ã ã |Starmie|324\/324
-|move|p1a: Heatran|Earth Power|p2a: ì ì¬ë°¥ ã ã 
-|-crit|p2a: ì ì¬ë°¥ ã ã 
-|-damage|p2a: ì ì¬ë°¥ ã ã |100\/324
-|
-|-weather|SunnyDay|[upkeep]
-|turn|7
-|callback|decision
-|
-|switch|p1a: Seismitoad|Seismitoad, M, shiny|414\/414
-|move|p2a: ì ì¬ë°¥ ã ã |Recover|p2a: ì ì¬ë°¥ ã ã 
-|-heal|p2a: ì ì¬ë°¥ ã ã |262\/324
-|
-|-weather|SunnyDay|[upkeep]
-|turn|8
-|callback|decision
-|
-|switch|p2a: ããã|Gastrodon, F|426\/426
-|move|p1a: Seismitoad|Stealth Rock|p2a: ããã
-|-sidestart|p2: kkdas|move: Stealth Rock
-|
-|-weather|SunnyDay|[upkeep]
-|turn|9
-|callback|decision
-|
-|switch|p1a: Espeon|Espeon, F|272\/272
-|move|p2a: ããã|Toxic|p1a: Espeon
-|move|p1a: Espeon|Toxic|p2a: ããã|[from]Magic Bounce
-|-status|p2a: ããã|tox
-|
-|-weather|SunnyDay|[upkeep]
-|-damage|p2a: ããã|400\/426 tox|[from] psn
-|turn|10
-|callback|decision
-|chat|kkdas|ìë¸ì´ ë¯¸ì
-|
-|move|p1a: Espeon|Calm Mind|p1a: Espeon
-|-boost|p1a: Espeon|spa|1
-|-boost|p1a: Espeon|spd|1
-|move|p2a: ããã|Surf|p1a: Espeon
-|-damage|p1a: Espeon|238\/272
-|
-|-weather|SunnyDay|[upkeep]
-|-heal|p1a: Espeon|255\/272|[from] item: Leftovers
-|-damage|p2a: ããã|348\/426 tox|[from] psn
-|turn|11
-|callback|decision
-|chat|bange|ì§±ì§±ê°í ìë¸ì´><
-|
-|switch|p2a: í¬ëíë¼ì´ë²|Ninetales, M|242\/288
-|-damage|p2a: í¬ëíë¼ì´ë²|170\/288|[from] Stealth Rock
-|move|p1a: Espeon|Grass Knot|p2a: í¬ëíë¼ì´ë²
-|-resisted|p2a: í¬ëíë¼ì´ë²
-|-damage|p2a: í¬ëíë¼ì´ë²|128\/288
-|
-|-weather|SunnyDay|[upkeep]
-|-heal|p1a: Espeon|272\/272|[from] item: Leftovers
-|turn|12
-|callback|decision
-|chat|kkdas|ì´ë²í ìì  ë°ë³´ ã ã 
-|
-|move|p2a: í¬ëíë¼ì´ë²|SolarBeam|p1a: Espeon|[still]
-|-prepare|p2a: í¬ëíë¼ì´ë²|SolarBeam|p1a: Espeon
-|-anim|p2a: í¬ëíë¼ì´ë²|SolarBeam|p1a: Espeon
-|-damage|p1a: Espeon|172\/272
-|move|p1a: Espeon|Psyshock|p2a: í¬ëíë¼ì´ë²
-|-damage|p2a: í¬ëíë¼ì´ë²|0 fnt
-|faint|p2a: í¬ëíë¼ì´ë²
-|
-|-weather|SunnyDay|[upkeep]
-|-heal|p1a: Espeon|189\/272|[from] item: Leftovers
-|callback|decision
-|chat|kkdas|êµì± ì ìí¨ ã¡ã¡
-|
-|switch|p2a: ã·ã·ã±|Heatran, M, shiny|386\/386
-|-damage|p2a: ã·ã·ã±|338\/386|[from] Stealth Rock
-|turn|13
-|callback|decision
-|chat|bange|ëªìì´ë¼ìì ã;
-|
-|switch|p2a: ì ì¬ë°¥ ã ã |Starmie|262\/324
-|-damage|p2a: ì ì¬ë°¥ ã ã |222\/324|[from] Stealth Rock
-|move|p1a: Espeon|Calm Mind|p1a: Espeon
-|-boost|p1a: Espeon|spa|1
-|-boost|p1a: Espeon|spd|1
-|
-|-weather|SunnyDay|[upkeep]
-|-heal|p1a: Espeon|206\/272|[from] item: Leftovers
-|turn|14
-|callback|decision
-|chat|kkdas|ì  ëì¸íì¼ ìê²½ì¸ë° ã¡ã¡
-|
-|move|p1a: Espeon|Grass Knot|p2a: ì ì¬ë°¥ ã ã 
-|-supereffective|p2a: ì ì¬ë°¥ ã ã 
-|-damage|p2a: ì ì¬ë°¥ ã ã |0 fnt
-|-damage|p1a: Espeon|161\/272|[from] item: Rocky Helmet|[of] p2a: ì ì¬ë°¥ ã ã 
-|faint|p2a: ì ì¬ë°¥ ã ã 
-|
-|-weather|SunnyDay|[upkeep]
-|-heal|p1a: Espeon|178\/272|[from] item: Leftovers
-|callback|decision
-|chat|bange|í;
-|leave|kkdas
-|player|p2
-|-message|Player 2 lost due to inactivity.
-|
-|win|bange

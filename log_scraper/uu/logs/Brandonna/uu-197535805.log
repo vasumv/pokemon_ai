@@ -1,409 +1,0 @@
-|join|Brandonna
-|join|Innately
-|player|p1|Brandonna|35
-|player|p2|Innately|169
-|gametype|singles
-|gen|6
-|tier|UU
-|rated
-|rule|Sleep Clause Mod: Limit one foe put to sleep
-|rule|Species Clause: Limit one of each PokÃ©mon
-|rule|OHKO Clause: OHKO moves are banned
-|rule|Moody Clause: Moody is banned
-|rule|Evasion Moves Clause: Evasion moves are banned
-|rule|Endless Battle Clause: Forcing endless battles is banned
-|rule|HP Percentage Mod: HP is shown in percentages
-|clearpoke
-|poke|p1|Froslass, F
-|poke|p1|Lucario, M
-|poke|p1|Zygarde
-|poke|p1|Beedrill, F
-|poke|p1|Hippowdon, M
-|poke|p1|Hydreigon, F
-|poke|p2|Absol, F
-|poke|p2|Crobat, F
-|poke|p2|Empoleon, F
-|poke|p2|Hydreigon, M
-|poke|p2|Florges, F
-|poke|p2|Roserade, M
-|rule|Swagger Clause: Swagger is banned
-|rule|Baton Pass Clause: Limit one PokÃ©mon knowing Baton Pass
-|teampreview
-|
-|start
-|switch|p1a: Beedrill|Beedrill, F|271\/271
-|switch|p2a: Absol|Absol, F|271\/271
-|turn|1
-|
-|detailschange|p2a: Absol|Absol-Mega, F
-|-mega|p2a: Absol|Absol|Absolite
-|detailschange|p1a: Beedrill|Beedrill-Mega, F
-|-mega|p1a: Beedrill|Beedrill|Beedrillite
-|move|p1a: Beedrill|Protect|p1a: Beedrill
-|-singleturn|p1a: Beedrill|Protect
-|move|p2a: Absol|Sucker Punch|p1a: Beedrill
-|-fail|p1a: Beedrill
-|
-|turn|2
-|
-|move|p2a: Absol|Sucker Punch|p1a: Beedrill
-|-damage|p1a: Beedrill|0 fnt
-|faint|p1a: Beedrill
-|
-|c|âBrandonna|lel
-|
-|switch|p1a: Hydreigon|Hydreigon, F|325\/325
-|turn|3
-|
-|switch|p2a: Florges|Florges, F|360\/360
-|move|p1a: Hydreigon|U-turn|p2a: Florges
-|-resisted|p2a: Florges
-|-damage|p2a: Florges|328\/360
-|
-|switch|p1a: Froslass|Froslass, F|343\/343
-|
-|-heal|p2a: Florges|350\/360|[from] item: Leftovers
-|turn|4
-|
-|switch|p2a: Absol|Absol-Mega, F|271\/271
-|move|p1a: Froslass|Icy Wind|p2a: Absol
-|-damage|p2a: Absol|184\/271
-|-unboost|p2a: Absol|spe|1
-|
-|turn|5
-|
-|switch|p1a: Hydreigon|Hydreigon, F|325\/325
-|move|p2a: Absol|Sucker Punch|p1a: Hydreigon
-|-fail|p1a: Hydreigon
-|
-|turn|6
-|
-|switch|p2a: Empoleon|Empoleon, F|372\/372
-|move|p1a: Hydreigon|U-turn|p2a: Empoleon
-|-crit|p2a: Empoleon
-|-resisted|p2a: Empoleon
-|-damage|p2a: Empoleon|327\/372
-|
-|switch|p1a: Lucario|Lucario, M|281\/281
-|
-|-heal|p2a: Empoleon|350\/372|[from] item: Leftovers
-|turn|7
-|
-|switch|p2a: Crobat|Crobat, F|374\/374
-|move|p1a: Lucario|Close Combat|p2a: Crobat
-|-resisted|p2a: Crobat
-|-damage|p2a: Crobat|291\/374
-|-unboost|p1a: Lucario|def|1
-|-unboost|p1a: Lucario|spd|1
-|-damage|p1a: Lucario|253\/281|[from] item: Life Orb
-|
-|-heal|p2a: Crobat|314\/374|[from] item: Black Sludge
-|turn|8
-|
-|switch|p1a: Hippowdon|Hippowdon, M|420\/420
-|-weather|Sandstorm
-|move|p2a: Crobat|U-turn|p1a: Hippowdon
-|-damage|p1a: Hippowdon|387\/420
-|
-|switch|p2a: Roserade|Roserade, M|261\/261
-|
-|-weather|Sandstorm|[upkeep]
-|-damage|p2a: Roserade|245\/261|[from] sandstorm
-|-heal|p2a: Roserade|261\/261|[from] item: Black Sludge
-|-heal|p1a: Hippowdon|413\/420|[from] item: Leftovers
-|turn|9
-|
-|move|p2a: Roserade|Sleep Powder|p1a: Hippowdon
-|-status|p1a: Hippowdon|slp
-|cant|p1a: Hippowdon|slp
-|
-|-weather|Sandstorm|[upkeep]
-|-damage|p2a: Roserade|245\/261|[from] sandstorm
-|-heal|p2a: Roserade|261\/261|[from] item: Black Sludge
-|-heal|p1a: Hippowdon|420\/420 slp|[from] item: Leftovers
-|turn|10
-|
-|move|p2a: Roserade|Spikes|p1a: Hippowdon
-|-sidestart|p1: Brandonna|Spikes
-|cant|p1a: Hippowdon|slp
-|
-|-weather|Sandstorm|[upkeep]
-|-damage|p2a: Roserade|245\/261|[from] sandstorm
-|-heal|p2a: Roserade|261\/261|[from] item: Black Sludge
-|turn|11
-|
-|move|p2a: Roserade|Spikes|p1a: Hippowdon
-|-sidestart|p1: Brandonna|Spikes
-|-curestatus|p1a: Hippowdon|slp
-|move|p1a: Hippowdon|Stealth Rock|p2a: Roserade
-|-sidestart|p2: Innately|move: Stealth Rock
-|
-|-weather|Sandstorm|[upkeep]
-|-damage|p2a: Roserade|245\/261|[from] sandstorm
-|-heal|p2a: Roserade|261\/261|[from] item: Black Sludge
-|turn|12
-|
-|switch|p1a: Hydreigon|Hydreigon, F|325\/325
-|move|p2a: Roserade|Giga Drain|p1a: Hydreigon
-|-resisted|p1a: Hydreigon
-|-damage|p1a: Hydreigon|254\/325
-|
-|-weather|none
-|turn|13
-|
-|switch|p2a: Florges|Florges, F|350\/360
-|-damage|p2a: Florges|305\/360|[from] Stealth Rock
-|move|p1a: Hydreigon|Draco Meteor|p2a: Florges
-|-immune|p2a: Florges|[msg]
-|
-|-heal|p2a: Florges|327\/360|[from] item: Leftovers
-|turn|14
-|
-|switch|p1a: Froslass|Froslass, F|343\/343
-|-damage|p1a: Froslass|286\/343|[from] Spikes
-|move|p2a: Florges|Moonblast|p1a: Froslass
-|-damage|p1a: Froslass|121\/343
-|-unboost|p1a: Froslass|spa|1
-|
-|-heal|p2a: Florges|349\/360|[from] item: Leftovers
-|turn|15
-|
-|move|p1a: Froslass|Destiny Bond|p1a: Froslass
-|-singlemove|p1a: Froslass|Destiny Bond
-|move|p2a: Florges|Moonblast|p1a: Froslass
-|-damage|p1a: Froslass|0 fnt
-|-start|p2a: Florges|Disable|Moonblast
-|faint|p1a: Froslass
-|-activate|p1a: Froslass|Destiny Bond
-|faint|p2a: Florges
-|
-|
-|switch|p1a: Hydreigon|Hydreigon, F|254\/325
-|switch|p2a: Empoleon|Empoleon, F|350\/372
-|-damage|p2a: Empoleon|327\/372|[from] Stealth Rock
-|turn|16
-|
-|move|p1a: Hydreigon|Superpower|p2a: Empoleon
-|-supereffective|p2a: Empoleon
-|-damage|p2a: Empoleon|107\/372
-|-unboost|p1a: Hydreigon|atk|1
-|-unboost|p1a: Hydreigon|def|1
-|move|p2a: Empoleon|Stealth Rock|p1a: Hydreigon
-|-sidestart|p1: Brandonna|move: Stealth Rock
-|
-|-heal|p2a: Empoleon|130\/372|[from] item: Leftovers
-|turn|17
-|
-|switch|p1a: Lucario|Lucario, M|253\/281
-|-damage|p1a: Lucario|207\/281|[from] Spikes
-|-damage|p1a: Lucario|199\/281|[from] Stealth Rock
-|switch|p2a: Roserade|Roserade, M|261\/261
-|-damage|p2a: Roserade|229\/261|[from] Stealth Rock
-|
-|-heal|p2a: Roserade|245\/261|[from] item: Black Sludge
-|turn|18
-|
-|move|p1a: Lucario|Extreme Speed|p2a: Roserade
-|-crit|p2a: Roserade
-|-damage|p2a: Roserade|5\/261
-|-damage|p1a: Lucario|171\/281|[from] item: Life Orb
-|move|p2a: Roserade|Sleep Powder|p1a: Lucario|[miss]
-|-miss|p2a: Roserade|p1a: Lucario
-|
-|-heal|p2a: Roserade|21\/261|[from] item: Black Sludge
-|turn|19
-|
-|move|p1a: Lucario|Extreme Speed|p2a: Roserade
-|-damage|p2a: Roserade|0 fnt
-|-damage|p1a: Lucario|143\/281|[from] item: Life Orb
-|faint|p2a: Roserade
-|
-|
-|switch|p2a: Hydreigon|Hydreigon, M|325\/325
-|-damage|p2a: Hydreigon|285\/325|[from] Stealth Rock
-|turn|20
-|
-|switch|p1a: Hippowdon|Hippowdon, M|420\/420
-|-damage|p1a: Hippowdon|350\/420|[from] Spikes
-|-damage|p1a: Hippowdon|324\/420|[from] Stealth Rock
-|-weather|Sandstorm
-|move|p2a: Hydreigon|Fire Blast|p1a: Hippowdon
-|-damage|p1a: Hippowdon|158\/420
-|
-|-weather|Sandstorm|[upkeep]
-|-damage|p2a: Hydreigon|265\/325|[from] sandstorm
-|-heal|p1a: Hippowdon|184\/420|[from] item: Leftovers
-|turn|21
-|
-|switch|p2a: Empoleon|Empoleon, F|130\/372
-|-damage|p2a: Empoleon|107\/372|[from] Stealth Rock
-|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon
-|-heal|p1a: Hippowdon|394\/420
-|
-|-weather|Sandstorm|[upkeep]
-|-heal|p2a: Empoleon|130\/372|[from] item: Leftovers
-|-heal|p1a: Hippowdon|420\/420|[from] item: Leftovers
-|turn|22
-|
-|move|p2a: Empoleon|Scald|p1a: Hippowdon
-|-supereffective|p1a: Hippowdon
-|-damage|p1a: Hippowdon|172\/420
-|-status|p1a: Hippowdon|brn
-|move|p1a: Hippowdon|Earthquake|p2a: Empoleon
-|-supereffective|p2a: Empoleon
-|-damage|p2a: Empoleon|0 fnt
-|faint|p2a: Empoleon
-|
-|-weather|Sandstorm|[upkeep]
-|-heal|p1a: Hippowdon|198\/420 brn|[from] item: Leftovers
-|-damage|p1a: Hippowdon|146\/420 brn|[from] brn
-|
-|switch|p2a: Hydreigon|Hydreigon, M|265\/325
-|-damage|p2a: Hydreigon|225\/325|[from] Stealth Rock
-|turn|23
-|
-|move|p2a: Hydreigon|Dark Pulse|p1a: Hippowdon
-|-damage|p1a: Hippowdon|0 fnt
-|faint|p1a: Hippowdon
-|
-|-weather|Sandstorm|[upkeep]
-|-damage|p2a: Hydreigon|205\/325|[from] sandstorm
-|join|Senpai DM
-|
-|switch|p1a: Lucario|Lucario, M|143\/281
-|-damage|p1a: Lucario|97\/281|[from] Spikes
-|-damage|p1a: Lucario|89\/281|[from] Stealth Rock
-|turn|24
-|
-|move|p2a: Hydreigon|Dark Pulse|p1a: Lucario
-|-resisted|p1a: Lucario
-|-damage|p1a: Lucario|0 fnt
-|faint|p1a: Lucario
-|
-|-weather|none
-|
-|switch|p1a: Hydreigon|Hydreigon, F|254\/325
-|-damage|p1a: Hydreigon|214\/325|[from] Stealth Rock
-|turn|25
-|
-|switch|p2a: Crobat|Crobat, F|314\/374
-|-damage|p2a: Crobat|221\/374|[from] Stealth Rock
-|move|p1a: Hydreigon|Draco Meteor|p2a: Crobat
-|-crit|p2a: Crobat
-|-damage|p2a: Crobat|0 fnt
-|-unboost|p1a: Hydreigon|spa|2
-|faint|p2a: Crobat
-|
-|
-|switch|p2a: Absol|Absol-Mega, F|184\/271
-|-damage|p2a: Absol|151\/271|[from] Stealth Rock
-|turn|26
-|
-|switch|p1a: Zygarde|Zygarde|357\/357
-|-damage|p1a: Zygarde|298\/357|[from] Spikes
-|-damage|p1a: Zygarde|276\/357|[from] Stealth Rock
-|-ability|p1a: Zygarde|Aura Break
-|move|p2a: Absol|Play Rough|p1a: Zygarde|[miss]
-|-miss|p2a: Absol|p1a: Zygarde
-|
-|turn|27
-|
-|move|p2a: Absol|Play Rough|p1a: Zygarde
-|-supereffective|p1a: Zygarde
-|-damage|p1a: Zygarde|68\/357
-|move|p1a: Zygarde|Dragon Dance|p1a: Zygarde
-|-boost|p1a: Zygarde|atk|1
-|-boost|p1a: Zygarde|spe|1
-|
-|turn|28
-|
-|move|p1a: Zygarde|Extreme Speed|p2a: Absol
-|-damage|p2a: Absol|0 fnt
-|faint|p2a: Absol
-|
-|c|âInnately|woooow
-|c|âBrandonna|wut
-|c|âBrandonna|2 dragon pulse from hydrei still kil lyou :]
-|c|âInnately|it would have been speed tie
-|c|âInnately|mines timid scarf as well
-|
-|switch|p2a: Hydreigon|Hydreigon, M|205\/325
-|-damage|p2a: Hydreigon|165\/325|[from] Stealth Rock
-|turn|29
-|c|âBrandonna|ok lets speed tie it
-|c|âInnately|cant
-|c|âBrandonna|why
-|c|âInnately|ill get sp att drop
-|c|âBrandonna|and....
-|c|âInnately|i run eteor
-|c|âBrandonna|anddd
-|c|âBrandonna|-2 252 SpA Hydreigon Draco Meteor vs. 0 HP \/ 0- SpD Hydreigon: 252-296 (77.5 - 91%) -- guaranteed 2HKO
-|c|âBrandonna|its like u dunno wat power is
-|c|âInnately|nvm okies
-|c|âInnately|im underestimating this thing o.o
-|c|âBrandonna|i am too lol
-|c|âBrandonna|thought luc cud take a dpulsre
-|
-|move|p1a: Zygarde|Extreme Speed|p2a: Hydreigon
-|-damage|p2a: Hydreigon|14\/325
-|move|p2a: Hydreigon|Draco Meteor|p1a: Zygarde|[miss]
-|-miss|p2a: Hydreigon|p1a: Zygarde
-|
-|turn|30
-|c|âBrandonna|!dt hydreigon
-|c|~|\/data-pokemon Hydreigon
-|raw|<font size="1"><font color=#585858>Dex#:<\/font> 635&nbsp;|&ThickSpace;<font color=#585858>Height:<\/font> 1.8 m&nbsp;|&ThickSpace;<font color=#585858>Weight:<\/font> 160 kg <em>(100 BP)<\/em>&nbsp;|&ThickSpace;<font color=#585858>Dex Colour:<\/font> Blue&nbsp;|&ThickSpace;<font color=#585858>Egg Group(s):<\/font> Dragon&nbsp;|&ThickSpace;<font color=#585858><font color=#585858>Does Not Evolve<\/font><\/font><\/font>
-|c|âBrandonna|wow
-|c|âInnately|wooooooooooow
-|c|âInnately|wooooooooooooooooooooooooooow
-|c|âBrandonna|arceus really wants you to lose
-|c|âBrandonna|its all up to da speed tie now
-|c|âBrandonna|going for dd
-|
-|move|p2a: Hydreigon|Draco Meteor|p1a: Zygarde
-|-supereffective|p1a: Zygarde
-|-damage|p1a: Zygarde|0 fnt
-|-unboost|p2a: Hydreigon|spa|2
-|faint|p1a: Zygarde
-|
-|c|âInnately|in b4 miss again
-|c|âInnately|i bet ill win the speed tie
-|c|âInnately|and miss
-|c|âBrandonna|inb4 i miss
-|
-|switch|p1a: Hydreigon|Hydreigon, F|214\/325
-|-damage|p1a: Hydreigon|174\/325|[from] Stealth Rock
-|turn|31
-|c|âBrandonna|is ther justice
-|
-|move|p2a: Hydreigon|Draco Meteor|p1a: Hydreigon
-|-crit|p1a: Hydreigon
-|-supereffective|p1a: Hydreigon
-|-damage|p1a: Hydreigon|0 fnt
-|-unboost|p2a: Hydreigon|spa|2
-|faint|p1a: Hydreigon
-|
-|win|Innately
-|raw|Ladder updating...
-|c|âInnately|wa
-|c|âBrandonna|crit justice gg
-|c|âInnately|o
-|leave|Senpai DM
-|raw|Brandonna's rating: 1485 &rarr; <strong>1458<\/strong><br \/>(-27 for losing)
-|raw|Innately's rating: 1345 &rarr; <strong>1373<\/strong><br \/>(+28 for winning)
-|c|âBrandonna|all dose misses
-|c|âBrandonna|for this one crit
-|c|âInnately|waowao
-|c|âBrandonna|that didnt matter LOL
-|c|âInnately|play miss
-|c|âInnately|dragon miss
-|c|âBrandonna|play rough didnt matter imo
-|c|âBrandonna|i can take a sucker
-|join|Senpai DM
-|c|âInnately|o.o
-|c|âInnately|how bulky
-|c|âInnately|is dis
-|c|âBrandonna|92 hp 90 def
-|c|âBrandonna|:] too strong
-|c|âInnately|:O underestimating hyrei
-|leave|Brandonna

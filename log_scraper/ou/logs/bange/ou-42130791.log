@@ -1,463 +1,0 @@
-|join|kkdas
-|join|bange
-|player|p1|kkdas|7
-|player|p2|bange|142
-|gametype|singles
-|tier|OU
-|rule|Evasion Abilities Clause: Evasion abilities are banned
-|clearpoke
-|poke|p1|Ninetales, F
-|poke|p1|Venusaur, M, shiny
-|poke|p1|Forretress, M, shiny
-|poke|p1|Blissey, F, shiny
-|poke|p1|Espeon, F
-|poke|p1|Garchomp, M
-|poke|p2|Bastiodon, M
-|poke|p2|Weavile, M
-|poke|p2|Latias, F
-|poke|p2|Terrakion
-|poke|p2|Mantine, F, shiny
-|poke|p2|Claydol
-|rule|Sleep Clause Mod: Limit one foe put to sleep
-|rule|Species Clause: Limit one of each Pokemon
-|rule|OHKO Clause: OHKO moves are banned
-|rule|Moody Clause: Moody is banned
-|rule|Evasion Moves Clause: Evasion moves are banned
-|rule|HP Percentage Mod: HP is reported as percentages
-|teampreview
-|callback|decision
-|chat|kkdas|íì!
-|
-|start
-|switch|p1a: mother|Ninetales, F|350\/350
-|switch|p2a: Terrakion|Terrakion|324\/324
-|-weather|SunnyDay|[from] ability: Drought|[of] p1a: mother
-|turn|1
-|callback|decision
-|
-|switch|p2a: Bastiodon|Bastiodon, M|324\/324
-|switch|p1a: me|Forretress, M, shiny|354\/354
-|
-|-weather|SunnyDay|[upkeep]
-|turn|2
-|callback|decision
-|chat|kkdas|í ì§ì¤ë ¥ 100%
-|
-|move|p2a: Bastiodon|Magic Coat|p2a: Bastiodon
-|-singleturn|p2a: Bastiodon|move: Magic Coat
-|move|p1a: me|Volt Switch|p2a: Bastiodon
-|-damage|p2a: Bastiodon|299\/324
-|callback|decision
-|chat|kkdas|ì¤ëêµ° ì§í ì¤ì ã¡ã¡
-|
-|switch|p1a: Garchomp|Garchomp, M|357\/357
-|
-|-weather|SunnyDay|[upkeep]
-|turn|3
-|callback|decision
-|chat|kkdas|ëê° ììì¤ ìê³  í¥
-|chat|bange|ìì´ì  ã ã 
-|
-|switch|p1a: grandmother|Espeon, F|334\/334
-|switch|p2a: Claydol|Claydol|324\/324
-|
-|-weather|SunnyDay|[upkeep]
-|turn|4
-|callback|decision
-|chat|kkdas|ë©ë¡±ë©ë¡±
-|
-|switch|p2a: Weavile|Weavile, M|282\/282
-|-ability|p2a: Weavile|Pressure
-|move|p1a: grandmother|Calm Mind|p1a: grandmother
-|-boost|p1a: grandmother|spa|1
-|-boost|p1a: grandmother|spd|1
-|
-|-weather|SunnyDay|[upkeep]
-|turn|5
-|callback|decision
-|
-|move|p2a: Weavile|Pursuit|p1a: grandmother
-|-supereffective|p1a: grandmother
-|-damage|p1a: grandmother|142\/334
-|-damage|p2a: Weavile|235\/282|[from] item: Rocky Helmet|[of] p1a: grandmother
-|move|p1a: grandmother|Baton Pass|p1a: grandmother
-|callback|decision
-|chat|kkdas|í
-|
-|switch|p1a: father|Venusaur, M, shiny|302\/302
-|
-|-weather|SunnyDay|[upkeep]
-|turn|6
-|callback|decision
-|chat|kkdas|íí
-|
-|switch|p2a: Mantine|Mantine, F, shiny|334\/334
-|move|p1a: father|Hidden Power|p2a: Mantine
-|-resisted|p2a: Mantine
-|-damage|p2a: Mantine|290\/334
-|
-|-weather|SunnyDay|[upkeep]
-|turn|7
-|callback|decision
-|
-|move|p1a: father|Sleep Powder|p2a: Mantine
-|-status|p2a: Mantine|slp
-|-enditem|p2a: Mantine|Lum Berry|[eat]
-|-curestatus|p2a: Mantine|slp
-|move|p2a: Mantine|Aqua Ring|p2a: Mantine
-|-start|p2a: Mantine|Aqua Ring
-|
-|-weather|SunnyDay|[upkeep]
-|-heal|p2a: Mantine|310\/334|[from] Aqua Ring
-|turn|8
-|callback|decision
-|chat|kkdas|ë©ë¡±
-|
-|move|p1a: father|Sleep Powder|p2a: Mantine
-|-status|p2a: Mantine|slp
-|cant|p2a: Mantine|slp
-|
-|-weather|SunnyDay|[upkeep]
-|-heal|p2a: Mantine|330\/334 slp|[from] Aqua Ring
-|turn|9
-|callback|decision
-|chat|kkdas|ë£¸ë² ë¦¬
-|
-|move|p1a: father|Growth|p1a: father
-|-boost|p1a: father|atk|2
-|-boost|p1a: father|spa|2
-|-curestatus|p2a: Mantine|slp
-|move|p2a: Mantine|Scald|p1a: father
-|-resisted|p1a: father
-|-damage|p1a: father|290\/302
-|
-|-weather|SunnyDay|[upkeep]
-|-heal|p2a: Mantine|334\/334|[from] Aqua Ring
-|turn|10
-|callback|decision
-|chat|kkdas|ìì§êº¼ì ã¡ã¡
-|chat|kkdas|ì§±ë¹¨ë¦¬ê¹¨;;
-|
-|move|p1a: father|Sleep Powder|p2a: Mantine
-|-status|p2a: Mantine|slp
-|cant|p2a: Mantine|slp
-|
-|-weather|SunnyDay|[upkeep]
-|turn|11
-|callback|decision
-|chat|bange|ë¶ì§ë°í¨ ^ã^
-|
-|cant|p2a: Mantine|slp
-|move|p1a: father|Growth|p1a: father
-|-boost|p1a: father|atk|2
-|-boost|p1a: father|spa|2
-|
-|-weather|SunnyDay|[upkeep]
-|turn|12
-|callback|decision
-|
-|move|p1a: father|SolarBeam|p2a: Mantine|[still]
-|-prepare|p1a: father|SolarBeam|p2a: Mantine
-|-anim|p1a: father|SolarBeam|p2a: Mantine
-|-damage|p2a: Mantine|4\/334 slp
-|cant|p2a: Mantine|slp
-|
-|-weather|SunnyDay|[upkeep]
-|-heal|p2a: Mantine|24\/334 slp|[from] Aqua Ring
-|turn|13
-|callback|decision
-|chat|kkdas|ê°ë¤!
-|chat|kkdas|íì
-|chat|kkdas|í
-|chat|kkdas|ì§±ë¨ë¨
-|
-|-curestatus|p2a: Mantine|slp
-|move|p2a: Mantine|Protect|p2a: Mantine
-|-singleturn|p2a: Mantine|Protect
-|move|p1a: father|SolarBeam|p2a: Mantine|[still]
-|-prepare|p1a: father|SolarBeam|p2a: Mantine
-|-anim|p1a: father|SolarBeam|p2a: Mantine
-|-activate|p2a: Mantine|Protect
-|
-|-weather|SunnyDay|[upkeep]
-|-heal|p2a: Mantine|44\/334|[from] Aqua Ring
-|turn|14
-|callback|decision
-|chat|bange|ë¯¸ë¬ì½í¸ã ã 
-|
-|move|p1a: father|Sleep Powder|p2a: Mantine|[miss]
-|-miss|p1a: father|p2a: Mantine
-|move|p2a: Mantine|Scald|p1a: father
-|-resisted|p1a: father
-|-damage|p1a: father|276\/302
-|-status|p1a: father|brn
-|
-|-weather|SunnyDay|[upkeep]
-|-heal|p2a: Mantine|64\/334|[from] Aqua Ring
-|-damage|p1a: father|239\/302 brn|[from] brn
-|turn|15
-|callback|decision
-|chat|kkdas|í ã¡ã¡
-|
-|move|p2a: Mantine|Protect|p2a: Mantine
-|-singleturn|p2a: Mantine|Protect
-|move|p1a: father|SolarBeam|p2a: Mantine|[still]
-|-prepare|p1a: father|SolarBeam|p2a: Mantine
-|-anim|p1a: father|SolarBeam|p2a: Mantine
-|-activate|p2a: Mantine|Protect
-|
-|-weather|SunnyDay|[upkeep]
-|-heal|p2a: Mantine|84\/334|[from] Aqua Ring
-|-damage|p1a: father|202\/302 brn|[from] brn
-|turn|16
-|callback|decision
-|chat|kkdas|ì¼ìììì
-|chat|kkdas|íëë¤
-|chat|kkdas|ã£ãã´ãë¦¬ãã´ì¼ ãëãã´ã
-|chat|kkdas|'ã´ã´
-|chat|kkdas|ãã´ã¹;ã´ë¼ã£ã´ã¹;
-|chat|kkdas|ã£ãëë;ã
-|
-|move|p2a: Mantine|Protect|p2a: Mantine
-|-singleturn|p2a: Mantine|Protect
-|move|p1a: father|SolarBeam|p2a: Mantine|[still]
-|-prepare|p1a: father|SolarBeam|p2a: Mantine
-|-anim|p1a: father|SolarBeam|p2a: Mantine
-|-activate|p2a: Mantine|Protect
-|
-|-weather|SunnyDay|[upkeep]
-|-heal|p2a: Mantine|104\/334|[from] Aqua Ring
-|-damage|p1a: father|165\/302 brn|[from] brn
-|turn|17
-|callback|decision
-|chat|kkdas|ã¡ã¡
-|chat|kkdas|ã£í¤ãíí
-|chat|kkdas|ã´
-|chat|kkdas|ãã´
-|chat|kkdas|ããã¹
-|chat|kkdas|ããã¹
-|chat|kkdas|ã´ã
-|chat|kkdas|ã
-|chat|kkdas|ãëãã´ã¹
-|chat|kkdas|ã´ ';
-|
-|move|p1a: father|SolarBeam|p2a: Mantine|[still]
-|-prepare|p1a: father|SolarBeam|p2a: Mantine
-|-anim|p1a: father|SolarBeam|p2a: Mantine
-|-damage|p2a: Mantine|0 fnt
-|faint|p2a: Mantine
-|
-|-weather|SunnyDay|[upkeep]
-|-damage|p1a: father|128\/302 brn|[from] brn
-|callback|decision
-|chat|kkdas|2ë°©ì´ ããµã'ã·ã± 21
-|chat|kkdas|' ã¹ã·ã´ã¹ã´ãã¹ã´ãã¹ã´ã
-|chat|kkdas|ã¹ã´ã
-|chat|kkdas|ã¹ã´ã
-|chat|kkdas|ã¹ã´ã
-|chat|kkdas|ã¹
-|chat|kkdas|ã´ã¹
-|chat|kkdas|2ë°©ì´
-|chat|kkdas|ã»ãã´ã¹
-|chat|kkdas|ã´ãã¹
-|chat|kkdas|ãã´ã¹
-|chat|kkdas|ã´ã¹
-|chat|kkdas|ã´
-|chat|kkdas|ã¹ã´ã
-|
-|switch|p2a: Weavile|Weavile, M|235\/282
-|-ability|p2a: Weavile|Pressure
-|turn|18
-|callback|decision
-|chat|kkdas|ã¹
-|
-|switch|p1a: me|Forretress, M, shiny|354\/354
-|move|p2a: Weavile|Ice Shard|p1a: me
-|-resisted|p1a: me
-|-damage|p1a: me|325\/354
-|
-|-weather|SunnyDay|[upkeep]
-|-heal|p1a: me|347\/354|[from] item: Leftovers
-|turn|19
-|callback|decision
-|
-|switch|p2a: Claydol|Claydol|324\/324
-|switch|p1a: dog|Blissey, F, shiny|714\/714
-|
-|-weather|SunnyDay|[upkeep]
-|turn|20
-|callback|decision
-|chat|kkdas|í¥
-|
-|move|p2a: Claydol|Magic Coat|p2a: Claydol
-|-singleturn|p2a: Claydol|move: Magic Coat
-|move|p1a: dog|Aromatherapy|p1a: dog
-|-cureteam|p1a: dog|[from] move: Aromatherapy
-|
-|-weather|SunnyDay|[upkeep]
-|turn|21
-|callback|decision
-|chat|kkdas|ëê° ììì¤ ìê³ 
-|chat|kkdas|ë©ë¡±ë©ë¡± 
-|chat|bange|ì ë¶ ì¤í¨ ã ã 
-|
-|switch|p1a: mother|Ninetales, F|350\/350
-|move|p2a: Claydol|Ice Beam|p1a: mother
-|-resisted|p1a: mother
-|-damage|p1a: mother|328\/350
-|
-|-weather|SunnyDay|[upkeep]
-|turn|22
-|callback|decision
-|chat|kkdas|í¥
-|
-|move|p2a: Claydol|Magic Coat|p2a: Claydol
-|-singleturn|p2a: Claydol|move: Magic Coat
-|move|p1a: mother|Will-O-Wisp|p2a: Claydol
-|move|p2a: Claydol|Will-O-Wisp|p1a: mother|[from]Magic Coat|[miss]
-|-miss|p2a: Claydol|p1a: mother
-|
-|-weather|SunnyDay|[upkeep]
-|turn|23
-|callback|decision
-|chat|kkdas|í¤í¤í¤
-|
-|move|p1a: mother|SolarBeam|p2a: Claydol|[still]
-|-prepare|p1a: mother|SolarBeam|p2a: Claydol
-|-anim|p1a: mother|SolarBeam|p2a: Claydol
-|-supereffective|p2a: Claydol
-|-damage|p2a: Claydol|188\/324
-|move|p2a: Claydol|Earth Power|p1a: mother
-|-supereffective|p1a: mother
-|-damage|p1a: mother|196\/350
-|
-|-weather|SunnyDay|[upkeep]
-|turn|24
-|callback|decision
-|chat|kkdas|ë¶íìì ìê° ì ì´ì´ì´ì´ì´ì´ì¼
-|
-|move|p1a: mother|Will-O-Wisp|p2a: Claydol
-|-status|p2a: Claydol|brn
-|move|p2a: Claydol|Earth Power|p1a: mother
-|-supereffective|p1a: mother
-|-damage|p1a: mother|52\/350
-|-enditem|p1a: mother|Sitrus Berry|[eat]
-|-heal|p1a: mother|139\/350|[from] item: Sitrus Berry
-|
-|-weather|SunnyDay|[upkeep]
-|-damage|p2a: Claydol|148\/324 brn|[from] brn
-|-enditem|p2a: Claydol|Sitrus Berry|[eat]
-|-heal|p2a: Claydol|229\/324 brn|[from] item: Sitrus Berry
-|turn|25
-|callback|decision
-|chat|kkdas|ë³í ëì¸íì¼ì ìëí¨ì ëê²¨ë¼!
-|
-|switch|p2a: Latias|Latias, F|321\/321
-|move|p1a: mother|SolarBeam|p2a: Latias|[still]
-|-prepare|p1a: mother|SolarBeam|p2a: Latias
-|-anim|p1a: mother|SolarBeam|p2a: Latias
-|-crit|p2a: Latias
-|-resisted|p2a: Latias
-|-damage|p2a: Latias|260\/321
-|
-|-weather|SunnyDay|[upkeep]
-|-heal|p2a: Latias|280\/321|[from] item: Leftovers
-|turn|26
-|callback|decision
-|chat|kkdas|ì± í¹ë°© 252ì ìëí¨ì!
-|
-|move|p2a: Latias|Substitute|p2a: Latias
-|-start|p2a: Latias|Substitute
-|-damage|p2a: Latias|200\/321
-|move|p1a: mother|Toxic|p2a: Latias
-|
-|-weather|SunnyDay|[upkeep]
-|-heal|p2a: Latias|220\/321|[from] item: Leftovers
-|turn|27
-|callback|decision
-|chat|kkdas|í ã¡ã¡
-|chat|kkdas|[ãã¶ãã´ã´
-|chat|kkdas|ã
-|chat|kkdas|ãã
-|chat|kkdas|ãã´
-|chat|kkdas|ã´ã
-|chat|kkdas|ã´ã
-|chat|bange|ë©ë 
-|
-|move|p2a: Latias|Calm Mind|p2a: Latias
-|-boost|p2a: Latias|spa|1
-|-boost|p2a: Latias|spd|1
-|move|p1a: mother|Fire Blast|p2a: Latias
-|-resisted|p2a: Latias
-|-activate|p2a: Latias|Substitute|[damage]
-|
-|-weather|SunnyDay|[upkeep]
-|-heal|p2a: Latias|240\/321|[from] item: Leftovers
-|turn|28
-|callback|decision
-|chat|kkdas|ì¼ì
-|chat|kkdas|ã
-|chat|kkdas|=êµ³0]ã
-|
-|switch|p1a: Garchomp|Garchomp, M|357\/357
-|move|p2a: Latias|Calm Mind|p2a: Latias
-|-boost|p2a: Latias|spa|1
-|-boost|p2a: Latias|spd|1
-|
-|-weather|SunnyDay|[upkeep]
-|-heal|p2a: Latias|260\/321|[from] item: Leftovers
-|turn|29
-|callback|decision
-|chat|kkdas|ì¤ì¹´í ëë¸ìµ¸ã!!!
-|
-|move|p1a: Garchomp|Outrage|p2a: Latias
-|-supereffective|p2a: Latias
-|-end|p2a: Latias|Substitute
-|move|p2a: Latias|Dragon Pulse|p1a: Garchomp
-|-supereffective|p1a: Garchomp
-|-damage|p1a: Garchomp|0 fnt
-|faint|p1a: Garchomp
-|
-|-weather|SunnyDay|[upkeep]
-|-heal|p2a: Latias|280\/321|[from] item: Leftovers
-|callback|decision
-|chat|kkdas|ì ìë¤
-|chat|kkdas|ãã
-|
-|switch|p1a: father|Venusaur, M, shiny|128\/302
-|turn|30
-|callback|decision
-|
-|move|p1a: father|Sleep Powder|p2a: Latias
-|-status|p2a: Latias|slp
-|cant|p2a: Latias|slp
-|
-|-weather|SunnyDay|[upkeep]
-|-heal|p2a: Latias|300\/321 slp|[from] item: Leftovers
-|turn|31
-|callback|decision
-|chat|bange|ìí
-|
-|switch|p1a: mother|Ninetales, F|139\/350
-|-curestatus|p2a: Latias|slp
-|move|p2a: Latias|Psyshock|p1a: mother
-|-damage|p1a: mother|0 fnt
-|faint|p1a: mother
-|
-|-weather|SunnyDay|[upkeep]
-|-heal|p2a: Latias|320\/321|[from] item: Leftovers
-|callback|decision
-|chat|kkdas|ë¼í°ìì¤ ëíê¹ëê±° ì§±ì¤ì ã¡ã¡
-|chat|bange|ë¶ì§ë°í ê²½ìì´
-|chat|kkdas|í
-|chat|kkdas|ê°ì¼í ë¯
-|chat|kkdas|ãããããã
-|chat|kkdas|í­ë³µ!!!
-|chat|bange|ë´ ãã;;
-|chat|kkdas|ãããã
-|chat|kkdas|ë°©ì´ë ë ìí¨ ã ã 
-|leave|kkdas
-|player|p1
-|-message|Player 1 lost due to inactivity.
-|
-|win|bange
