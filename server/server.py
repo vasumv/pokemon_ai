@@ -52,7 +52,7 @@ class Server():
         })
         def play_game(args):
             if args['teamtext'] != "":
-                team_text = args['team_text']
+                team_text = args['teamtext']
             else:
                 team_text = (self.teamdir / args['teamfile']).text()
             showdown = Showdown(
@@ -71,8 +71,7 @@ class Server():
         port = 5000
         url = "http://127.0.0.1:{0}".format(port)
         host = '0.0.0.0'
-        chromepath = '/usr/bin/google-chrome %s'
-        Timer(1.25, lambda: webbrowser.get(chromepath).open(url)).start()
+        Timer(1.25, lambda: webbrowser.open(url)).start()
         self.app.run(debug=True, host=host, port=port, use_reloader=False)
 
     def add_id(self, showdown):
@@ -88,6 +87,8 @@ class Server():
         return self.add_id(showdown)
 
     def get_team_files(self):
+    	if not self.teamdir.exists():
+	    self.teamdir.mkdir()
         files = self.teamdir.files()
         files = [file.name for file in files]
         return files
