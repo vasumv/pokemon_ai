@@ -13,6 +13,7 @@ from state import KernelState
 import time
 
 import sys
+import platform
 import signal
 import requests
 import json
@@ -22,13 +23,21 @@ import logging
 
 KERNEL_STATE = "state.json"
 
+OS_MAP = {
+    '64bit' : {
+        'ELF' : 'linux64'
+    },
+    '32bit': {
+        'ELF' : 'linux32'
+    }
+}
+
 class Showdown():
     def __init__(self, team_text, agent, username, pokedata, password=None,
                  monitor_url=None, proxy=False, browser='phantomjs', predictor_name='PokeFrequencyPredictor',
                  verbose=False, kernel_dir="kernel", kernel=False, lib_dir="lib"):
         self.logger = logging.getLogger("showdown")
         self.logger.setLevel(level=logging.INFO)
-        self.selenium = Selenium(proxy=proxy, browser=browser, lib_dir=lib_dir)
         self.agent = agent
         self.username = username
         self.password = password
@@ -45,7 +54,9 @@ class Showdown():
         self.my_team = Team.make_team(team_text, self.smogon_data)
         self.opp_team = None
         self.simulator = Simulator(pokedata)
-	self.lib_dir = lib_dir
+        arch = platform.architecture()
+        self.lib_dir = Path(lib_dir) / OS_MAP[arch[0]][arch[1]]
+        self.selenium = Selenium(proxy=proxy, browser=browser, lib_dir=self.lib_dir)
         self.verbose = verbose
         self.kernel_dir = Path(kernel_dir)
         self.kernel = kernel
@@ -195,10 +206,6 @@ class Showdown():
         self.logger.info("Initializing showdown")
         self.selenium.start_driver()
         self.selenium.clear_cookies()
-<<<<<<< HEAD
-        #self.selenium.driver.refresh()
-=======
->>>>>>> 14add57ec31df621103355af5e41d398692bcd48
         self.selenium.screenshot('log.png')
         self.selenium.turn_off_sound()
         self.selenium.login(self.username, self.password)
@@ -399,11 +406,12 @@ def main():
     with open(args.team) as fp:
         team_text = fp.read()
 
+
     pokedata = load_data(args.data_dir)
 
     showdown = Showdown(
         team_text,
-        OptimistcMinimax(2, pokedata),
+        OptimisticMinimax(2, pokedata),
         args.username,
         pokedata,
         password=args.password,
@@ -412,8 +420,8 @@ def main():
         monitor_url=args.monitor_url,
         predictor_name=args.predictor,
         verbose=args.verbose,
-	data_dir=args.data_dir,
-	lib_dir=args.lib_dir,
+        data_dir=args.data_dir,
+        lib_dir=args.lib_dir,
         kernel_dir=args.kernel_dir,
         kernel=args.kernel
     )

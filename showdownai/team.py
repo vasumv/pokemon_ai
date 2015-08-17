@@ -331,10 +331,10 @@ class Team():
             if tl.strip() == "":
                 continue
             line = tl.strip().split('\n')
-            #if "(M)" in line[0]:
-                #line[0] = line[0].replace(" (M)", "")
-            #if "(F)" in line[0]:
-                #line[0] = line[0].replace(" (F)", "")
+            if "(M)" in line[0]:
+                line[0] = line[0].replace(" (M)", "")
+            if "(F)" in line[0]:
+                line[0] = line[0].replace(" (F)", "")
             match = re.search(r'(.+?)\s*(\((.+?)\))?\s*(@ (.+?))?$', line[0])
             nickname = match.group(1)
             name = match.group(3)
