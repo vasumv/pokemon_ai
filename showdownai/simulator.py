@@ -113,7 +113,6 @@ class Simulator():
         elif type == "leftovers":
             poke.item = "Leftovers"
             poke.heal(1.0 / 16)
-            print event
             print "%s regained health due to leftovers" % poke
         elif type == "life_orb":
             poke.item = "Life Orb"
@@ -155,7 +154,6 @@ class Simulator():
         elif type == "belly_drum":
             poke.increase_stage('patk', 9999)
         elif type == "mold_breaker":
-            print poke
             poke.ability = "Mold Breaker"
             print "%s has mold breaker!" % poke
         elif type == "disabled":
@@ -214,10 +212,6 @@ class Simulator():
                 opp_move.priority += 1
 
         first = None
-        if log:
-            print my_move, my_move.priority
-            print opp_move, opp_move.priority
-            print who
         if my_move.priority > opp_move.priority:
             first = who
         elif opp_move.priority > my_move.priority:

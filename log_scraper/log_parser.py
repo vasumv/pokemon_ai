@@ -157,10 +157,10 @@ if __name__ == "__main__":
                     break
             if skip:
                 continue
-            graph_move, graph_move_frequencies = make_graph_move(opp_team, graph_move, graph_move_frequencies)
+            graph_poke, graph_move_frequencies = make_graph_poke(opp_team, graph_poke, graph_move_frequencies)
     poke_graph = {
         'frequencies': graph_move_frequencies,
-        'cooccurences': graph_move,
+        'cooccurences': graph_poke,
     }
     with open("graph_move.json", "w") as f:
         f.write(json.dumps(poke_graph, sort_keys=True,indent=4, separators=(',', ': ')))

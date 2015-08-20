@@ -16,7 +16,7 @@ exe = EXE(pyz,
 dict_tree = Tree("data/", prefix="data")
 static_tree = Tree("server/static/", prefix="static")
 template_tree = Tree("server/templates/", prefix="templates")
-selenium_tree = Tree("venv/lib/python2.7/site-packages/selenium-2.44.0-py2.7.egg/selenium/", prefix="selenium")
+selenium_tree = Tree("venv/lib/python2.7/site-packages/selenium/", prefix="selenium")
 teams_tree = Tree("empty_teams/", prefix="teams")
 lib_tree = Tree("lib/", prefix="lib")
 coll = COLLECT(exe,
@@ -25,6 +25,7 @@ coll = COLLECT(exe,
                static_tree,
                template_tree,
                selenium_tree,
+               lib_tree,
                teams_tree,
                a.zipfiles,
                a.datas,
