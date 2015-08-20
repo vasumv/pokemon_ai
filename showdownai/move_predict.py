@@ -1,5 +1,5 @@
 import random
-from data import MOVE_CORRECTIONS, load_data, correct_name, correct_move
+from data import MOVE_CORRECTIONS, NAME_CORRECTIONS, load_data, correct_name, correct_move
 from data import correct_mega
 
 class MovePredictor(object):
@@ -128,12 +128,21 @@ class PokeFrequencyPredictor(MovePredictor):
         self.co = graph_poke['cooccurences']
         self.freq = graph_poke['frequencies']
 
+    def get_freqs(self, freq):
+        poke = correct_name(self.poke)
+        poke = correct_mega(poke)
+        probs = {}
+        for move in freq[poke]:
+            prob = freq[poke][move]
+            probs[move] = prob
+        return probs
+
     def get_moves(self, known_moves):
         poke = correct_name(self.poke)
-        poke = correct_mega(self.poke)
+        poke = correct_mega(poke)
         probs = {}
         if len(known_moves) == 0:
-            probs = self.get_freqs(poke, self.freq)
+            probs = self.get_freqs(self.freq)
         else:
             for move in self.co[poke]:
                 if move in known_moves:
@@ -192,15 +201,6 @@ class PokeFrequencyPredictor(MovePredictor):
             probs = self.get_freqs(poke, self.freq)
         self.predictions = sorted(probs.items(), key=lambda x: -x[1])
         return self.predictions
-
-    def get_freqs(self, poke, freq):
-        poke = correct_name(self.poke)
-        poke = correct_mega(self.poke)
-        probs = {}
-        for move in freq[poke]:
-            prob = freq[poke][move]
-            probs[move] = prob
-        return probs
 
 def create_predictor(name, poke, pokedata):
     return PREDICTORS[name](poke, pokedata)

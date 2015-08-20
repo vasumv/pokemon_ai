@@ -68,7 +68,7 @@ def get_hidden_power(poke, data):
     return hidden_power
 
 def load_data(data_dir):
-    with open("%s/graph_poke2.json" % data_dir) as fp:
+    with open("%s/graph_poke3.json" % data_dir) as fp:
         graph_poke = json.loads(fp.read())
         for poke in graph_poke['cooccurences']:
             for move in graph_poke['cooccurences'][poke]:

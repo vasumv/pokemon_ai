@@ -26,7 +26,6 @@ class Selenium():
         elif browser == "phantomjs":
             self.logger.info("Selecting PhantomJS to use as browser...")
             phantom_path = self.lib_dir / "phantomjs"
-            self.driver = webdriver.Chrome(executable_path=chrome_path)
             self.logger.info(phantom_path)
             self.driver = webdriver.PhantomJS(executable_path=phantom_path)
             self.driver.set_window_size(1400,1000)
