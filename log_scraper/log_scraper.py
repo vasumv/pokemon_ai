@@ -3,22 +3,26 @@ from path import Path
 import requests
 
 def get_usernames():
-    with open("uu/ladder_names.txt") as f:
+    with open("ou/ladder_names.txt") as f:
         usernames = f.read().split("\n")
     return usernames
 
 def get_log_usernames():
-    names = Path("./uu/logs")
+    names = Path("./ou/logs")
     return names.listdir()
 
 
 def get_user_replays(username):
-    USERNAME_URL = "http://replay.pokemonshowdown.com/search/?output=html&user=%s" % username
-    html = requests.get(USERNAME_URL).text
-    soup = BeautifulSoup(html)
-    links = soup.find_all('a')
-    links = [link.get("href").encode("utf-8") for link in links if "uu" in link.get("href")]
-    return links
+    final_links = []
+    for page in range(1, 5):
+        USERNAME_URL = "http://replay.pokemonshowdown.com/search/?output=html&user=%s&format=&page=%d&output=html" % (username, page)
+        html = requests.get(USERNAME_URL).text
+        soup = BeautifulSoup(html)
+        links = soup.find_all('a')
+        for link in links:
+            if "ou" in link.get("href"):
+                final_links.append(link.get("href").encode("utf-8"))
+    return final_links
 
 def get_logs(link):
     html = requests.get("http://replay.pokemonshowdown.com" + link).text
@@ -33,7 +37,7 @@ if __name__ == "__main__":
     for user in usernames:
         if user == "metaang":
             continue
-        user_path = Path("uu/logs") / user.decode("utf-8")
+        user_path = Path("ou/logs") / user.decode("utf-8")
         if not user_path.exists():
             print 'making new directory'
             user_path.mkdir()
@@ -45,10 +49,9 @@ if __name__ == "__main__":
             if (link[1:] + ".log") in log_names:
                 continue
             print link
-            directory = Path("uu/logs/") / user
+            directory = Path("ou/logs/") / user
             log = get_logs(link)
             if not directory.exists():
                 directory.makedirs()
-            with open("uu/logs/%s/%s.log" % (user, link[1:]), 'w') as f:
+            with open("ou/logs/%s/%s.log" % (user, link[1:]), 'w') as f:
                 f.write(log)
-
